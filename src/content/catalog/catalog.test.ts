@@ -58,11 +58,31 @@ describe('real planning catalog (planning/catalog/swechan-catalog.v1.json)', () 
     expect(JSON.stringify(again.modules)).toBe(JSON.stringify(index.modules));
   });
 
-  it('keeps all five published modules and their IDs, placed without a false 1:1 mapping', () => {
-    expect(publishedIds.sort()).toEqual(['m.atomer-molekyler', 'm.hemmet-vardag', 'm.krig-forsvar', 'm.material-amnen', 'm.medeltida-borgar']);
-    expect(index.mapping.links).toEqual([]);
+  it('keeps all five original published modules and their IDs, placed without a false 1:1 mapping', () => {
+    const original = ['m.atomer-molekyler', 'm.hemmet-vardag', 'm.krig-forsvar', 'm.material-amnen', 'm.medeltida-borgar'];
+    for (const id of original) expect(publishedIds).toContain(id);
+    const linked = new Set(index.mapping.links.map((l) => l.moduleId));
+    for (const id of original) expect(linked.has(id)).toBe(false);
     expect(index.menuItems('R04-A02').filter((i) => i.kind === 'published').map((i) => i.id)).toEqual(['m.krig-forsvar', 'm.medeltida-borgar']);
     expect(index.countBelow('R04').published).toBe(2);
+  });
+
+  it('links the 0.4 modules 1:1 to exactly the catalog entries they were written for', () => {
+    expect(index.mapping.links.map((l) => [l.catalogId, l.moduleId])).toEqual([
+      ['SWC-VAR-02-01-01', 'm.vanliga-gronsaker'],
+      ['SWC-VAR-02-03-01', 'm.skara-och-hacka'],
+      ['SWC-VAR-02-03-02', 'm.koka-och-sjuda'],
+    ]);
+    for (const l of index.mapping.links) {
+      const entry = index.getModule(l.catalogId)!;
+      expect(getContent().getModule(l.moduleId)!.titleSv).toBe(entry.titleSv);
+      expect(index.publishedModuleFor(l.catalogId)).toBe(l.moduleId);
+      expect(index.isStartable(l.moduleId)).toBe(true);
+    }
+    // the topic group still shows at most 7 modules: the link replaces the planned entry
+    const items = index.menuItems('R01-A02-T03');
+    expect(items.length).toBeLessThanOrEqual(7);
+    expect(items.filter((i) => i.kind === 'published').map((i) => i.id)).toEqual(['m.skara-och-hacka', 'm.koka-och-sjuda']);
   });
 
   it('search uses metadata only and finds real titles', () => {

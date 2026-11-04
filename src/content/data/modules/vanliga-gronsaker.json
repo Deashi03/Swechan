@@ -1,0 +1,179 @@
+{
+ "id": "m.vanliga-gronsaker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-04",
+ "titleSv": "Vanliga grönsaker",
+ "titleJa": "よく{食|た}べる{野菜|やさい}",
+ "descriptionSv": "Grönsaker man köper och äter i Sverige, och ord för att beskriva dem. Första delen i en kedja om matlagning.",
+ "descriptionJa": "スウェーデンでよく{買|か}って{食|た}べる{野菜|やさい}と、{野菜|やさい}を{説明|せつめい}する{言葉|ことば}。{料理|りょうり}のシリーズの1つ{目|め}です。",
+ "categoryId": "R01-A02-T01",
+ "tags": [
+  "mat",
+  "vardag",
+  "matlagning"
+ ],
+ "level": "A2",
+ "prerequisites": [],
+ "related": [
+  "m.skara-och-hacka"
+ ],
+ "recommendedOrder": 6,
+ "words": [
+  {
+   "senseId": "s.grönsak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.potatis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.morot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vitlök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tomat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gurka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.paprika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ärta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sallad.2",
+   "active": true
+  },
+  {
+   "senseId": "s.svamp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.odla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färsk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skala.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Grönsaker i affären",
+  "paragraphs": [
+   "Det är lördag, och Aiko och Erik går till en liten affär för att köpa grönsaker. Mannen i affären säljer mat som han själv har odlat.",
+   "Först köper de potatis och morötter. ”Är potatisen färsk?” frågar Aiko. ”Ja, vi tog upp den från jorden i går”, säger mannen.",
+   "Sedan tittar de på tomater, gurka och paprika. Paprikorna är röda, gula och gröna. Aiko väljer en röd paprika och två tomater. Erik tar en stor sallad och en gurka.",
+   "Längre in i affären finns lök och vitlök. Där finns också kål, ärtor och svamp från skogen. ”I Japan äter vi mycket svamp”, säger Aiko.",
+   "Hemma skalar Erik potatisen och morötterna. Skalet lägger han i en påse. Aiko äter en morot rå. ”Morötter är goda även när de är råa”, säger hon.",
+   "Erik vill odla egna grönsaker nästa sommar. ”Tomater och sallad kan man odla på balkongen”, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför är potatisen färsk?",
+    "options": [
+     "Mannen tog upp den från jorden i går.",
+     "Den har legat i en påse länge.",
+     "Erik har odlat den själv.",
+     "Den kommer från Japan."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mannen säger: ”Vi tog upp den från jorden i går.”",
+    "explanationJa": "{昨日|きのう}{土|つち}から{掘|ほ}り{出|だ}したばかりだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka grönsaker köper Aiko?",
+    "options": [
+     "En röd paprika och två tomater",
+     "En sallad och en gurka",
+     "Kål och ärtor",
+     "Svamp och vitlök"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko väljer en röd paprika och två tomater. Erik tar salladen och gurkan.",
+    "explanationJa": "アイコは{赤|あか}いパプリカ1つとトマト2つを{選|えら}びます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "usage",
+    "statementSv": "Aiko äter moroten rå. Det betyder att hon har kokat den först.",
+    "correct": false,
+    "explanationSv": "Rå betyder att maten inte är kokt eller stekt.",
+    "explanationJa": "rå は「ゆでたり{焼|や}いたりしていない」という{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Erik ”skalar” potatisen. Vad gör han?",
+    "options": [
+     "Han tar bort det tunna skalet.",
+     "Han skär potatisen i två delar.",
+     "Han lägger potatisen i jorden.",
+     "Han köper mer potatis."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Att skala är att ta bort skalet.",
+    "explanationJa": "skala は{皮|かわ}をむくことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tror att man inte behöver en trädgård för att odla tomater.",
+    "correct": true,
+    "explanationSv": "Han säger att man kan odla tomater och sallad på balkongen.",
+    "explanationJa": "トマトやレタスはベランダでも{育|そだ}てられる、と{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden utöver allmänt kända grönsaker i svensk dagligvaruhandel."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om grönsaker: vilka du tycker om och inte tycker om, vilka grönsaker som är vanliga i Sverige och i Japan, och om du har odlat något själv.",
+  "discussionPoints": [
+   "Vilka grönsaker äter du oftast, och vilka tycker du inte om?",
+   "Vilka grönsaker är vanliga i Japan men ovanliga i Sverige, eller tvärtom?",
+   "Äter du hellre grönsaker råa eller kokta?",
+   "Har du odlat grönsaker? Vad skulle du vilja odla?"
+  ]
+ }
+}

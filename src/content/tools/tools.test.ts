@@ -16,13 +16,14 @@ const core = CoreVocabularyFile.parse(coreJson);
 
 describe('module:new / drafts', () => {
   it('creates a draft from a real planned catalog entry (catalog title, 18 target words)', () => {
-    const d = createDraft(catalog, 'SWC-VAR-02-03-01', repo);
-    expect(d).toMatchObject({ draft: true, catalogId: 'SWC-VAR-02-03-01', titleSv: 'Skära och hacka', moduleId: 'm.skara-och-hacka', targetWordCount: 18, plannedWords: [] });
+    const d = createDraft(catalog, 'SWC-VAR-02-03-03', repo);
+    expect(d).toMatchObject({ draft: true, catalogId: 'SWC-VAR-02-03-03', titleSv: 'Steka och bryna', moduleId: 'm.steka-och-bryna', targetWordCount: 18, plannedWords: [] });
     expect(() => createDraft(catalog, 'SWC-FINNS-INTE', repo)).toThrow();
+    expect(() => createDraft(catalog, 'SWC-VAR-02-03-01', repo)).toThrow(/redan publicerad/); // linked to m.skara-och-hacka
     expect(slugify('Kött, fisk & vegetariskt')).toBe('kott-fisk-vegetariskt');
   });
   it('reports what is missing and catches errors', () => {
-    const d = createDraft(catalog, 'SWC-VAR-02-03-01', repo);
+    const d = createDraft(catalog, 'SWC-VAR-02-03-03', repo);
     expect(validateDraft(d, catalog, repo)).toEqual([{ level: 'todo', message: '0 planerade målord – behöver 15–20' }]);
     const words = Array.from({ length: 16 }, (_, i) => ({ lemma: `ord${i}` }));
     expect(validateDraft({ ...d, plannedWords: words }, catalog, repo)).toEqual([]);
@@ -39,7 +40,7 @@ describe('module:validate', () => {
     for (const m of repo.modules) expect(checkModule(m.id, repo, core, catalog).errors, m.id).toEqual([]);
   });
   it('rejects planned and unknown IDs', () => {
-    expect(checkModule('SWC-VAR-02-03-01', repo, core, catalog).errors[0]).toMatch(/finns inte/);
+    expect(checkModule('SWC-VAR-02-03-03', repo, core, catalog).errors[0]).toMatch(/finns inte/);
   });
 });
 

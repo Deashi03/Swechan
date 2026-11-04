@@ -59,7 +59,7 @@ describe('exercise generation', () => {
     const ex = genContextChoice(repo.getSense('s.städa.1')!, ctx())!;
     expect(ex.prompt).toBe('Vi ＿＿＿ lägenheten varje lördag.');
     expect(ex.options[ex.correctIndex]!.label).toBe('städar');
-    expect(ex.options.every((o) => /r$/.test(o.label))).toBe(true); // all present tense
+    expect(ex.options.every((o) => /r$/.test(o.label.split(' ')[0]!))).toBe(true); // all present tense (particle verbs: "ger upp")
     expect(ex.subPrompt).toBeUndefined(); // translation would give the answer away – only as hint/result
     expect(ex.hint?.lang).toBe('ja');
   });

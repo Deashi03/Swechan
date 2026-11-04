@@ -158,8 +158,8 @@ describe('learning path (modules build on each other)', () => {
   it('follows the recommended order for a beginner', async () => {
     await setupTestEnv();
     const order: string[] = [];
-    for (let i = 0; i < 5; i++) { const m = (await recommendedModule())!; order.push(m.id); await complete(m.id); }
-    expect(order).toEqual(['m.hemmet-vardag', 'm.material-amnen', 'm.atomer-molekyler', 'm.krig-forsvar', 'm.medeltida-borgar']);
+    for (let i = 0; i < 8; i++) { const m = (await recommendedModule())!; order.push(m.id); await complete(m.id); }
+    expect(order).toEqual(['m.hemmet-vardag', 'm.material-amnen', 'm.atomer-molekyler', 'm.krig-forsvar', 'm.medeltida-borgar', 'm.vanliga-gronsaker', 'm.skara-och-hacka', 'm.koka-och-sjuda']);
     expect(await recommendedModule()).toBeUndefined();
   });
 });

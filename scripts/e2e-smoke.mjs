@@ -88,7 +88,7 @@ async function runExercises(doneText, { dictCheckAt = -1 } = {}) {
   throw new Error(`never reached "${doneText}"`);
 }
 
-async function doModule(moduleTitleRe, { checks = false } = {}) {
+async function doModule(moduleTitleRe, { checks = false, promptIncludes = null } = {}) {
   // Step 1
   // Home's primary button goes straight into the next step; from a module page, start step 1.
   const startBtn = page.getByRole('button', { name: /Starta: Lär dig orden|Fortsätt: Lär dig orden/ });
@@ -126,6 +126,7 @@ async function doModule(moduleTitleRe, { checks = false } = {}) {
     assert(clip.includes('Du är min svenska samtalspartner') && clip.includes('- städa – 掃除（そうじ）する'), 'conversation prompt copied with target words');
     await shot('05-converse');
   }
+  if (promptIncludes) assert(clip.includes(promptIncludes), `conversation prompt contains "${promptIncludes}"`);
   await click('Jag har genomfört samtalet');
   assert(await visible(page.getByText('Modulen är klar!')), `module completed (${moduleTitleRe})`);
   await click('Till startsidan');
@@ -200,6 +201,39 @@ try {
   const file = await dl.path();
   const backup = JSON.parse(fs.readFileSync(file, 'utf8'));
   assert(backup.format === 'swechan-backup' && backup.data.cards.length > 40 && backup.data.dailySessions.length === 2, 'export contains progress');
+
+  // 0.4 phase F: the new prerequisite chain, reached through the catalog menu ------------
+  await page.clock.setSystemTime(new Date('2026-11-04T08:30:00+01:00'));
+  await page.goto(`${BASE}#/explore`);
+  await page.getByRole('link', { name: /Vardag & hem/ }).first().click();
+  await page.getByRole('link', { name: /Mat & måltider/ }).first().click();
+  await page.getByRole('link', { name: /Matlagningens verb/ }).first().click();
+  assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
+  assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
+  await page.getByRole('link', { name: /Steka och bryna/ }).first().click();
+  assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
+  assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
+  await page.goBack();
+  await page.goBack();
+  await page.getByRole('link', { name: /Råvaror & skafferi/ }).first().click();
+  await page.getByRole('link', { name: /Vanliga grönsaker/ }).first().click();
+  await shot('10-module-gronsaker');
+  await doModule('Vanliga grönsaker', { promptIncludes: '- potatis – じゃがいも' });
+  await page.goto(`${BASE}#/explore`);
+  await page.getByLabel('Global sökning').fill('Skära och hacka');
+  await page.getByRole('link', { name: /Skära och hacka/ }).first().click();
+  assert(await visible(page.getByRole('button', { name: /Starta: Lär dig orden/ })), 'next module in the chain can be started once its prerequisite is done');
+  await page.clock.setSystemTime(new Date('2026-11-05T08:30:00+01:00'));
+  await page.goto(BASE);
+  await page.reload();
+  await click('Starta dagens pass');
+  await runExercises('Dagens repetition är klar!');
+  await page.goto(`${BASE}#/settings`);
+  const [dl2] = await Promise.all([page.waitForEvent('download'), click('Exportera progression')]);
+  const backup2 = JSON.parse(fs.readFileSync(await dl2.path(), 'utf8'));
+  const newCards = backup2.data.cards.filter((c) => ['s.potatis.1', 's.morot.1', 's.skala.1'].includes(c.senseId));
+  assert(newCards.length >= 3, `words from the new module became review cards (${newCards.length})`);
+  assert(backup2.data.reviewEvents.some((e) => e.date === '2026-11-05'), 'day 4 review completed with events');
 
   const relevantErrors = errors.filter((e) => !/favicon|speechSynthesis/i.test(e));
   assert(relevantErrors.length === 0, `no console/page errors (${relevantErrors.join(' | ')})`);

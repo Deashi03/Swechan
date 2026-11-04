@@ -520,6 +520,272 @@
     }
    ],
    "bodyFile": "medeltida-borgar.json"
+  },
+  {
+   "id": "m.vanliga-gronsaker",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-04",
+   "titleSv": "Vanliga grönsaker",
+   "titleJa": "よく{食|た}べる{野菜|やさい}",
+   "descriptionSv": "Grönsaker man köper och äter i Sverige, och ord för att beskriva dem. Första delen i en kedja om matlagning.",
+   "descriptionJa": "スウェーデンでよく{買|か}って{食|た}べる{野菜|やさい}と、{野菜|やさい}を{説明|せつめい}する{言葉|ことば}。{料理|りょうり}のシリーズの1つ{目|め}です。",
+   "categoryId": "R01-A02-T01",
+   "tags": [
+    "mat",
+    "vardag",
+    "matlagning"
+   ],
+   "level": "A2",
+   "prerequisites": [],
+   "related": [
+    "m.skara-och-hacka"
+   ],
+   "recommendedOrder": 6,
+   "words": [
+    {
+     "senseId": "s.grönsak.1",
+     "active": true
+    },
+    {
+     "senseId": "s.potatis.1",
+     "active": true
+    },
+    {
+     "senseId": "s.morot.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lök.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vitlök.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tomat.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gurka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.paprika.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kål.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ärta.1",
+     "active": false
+    },
+    {
+     "senseId": "s.sallad.2",
+     "active": true
+    },
+    {
+     "senseId": "s.svamp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.odla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.färsk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rå.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skal.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skala.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "vanliga-gronsaker.json"
+  },
+  {
+   "id": "m.skara-och-hacka",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-04",
+   "titleSv": "Skära och hacka",
+   "titleJa": "{切|き}る・{刻|きざ}む",
+   "descriptionSv": "Hur man skär grönsaker och annan mat: i skivor, strimlor och tärningar, fint eller grovt. Bygger på Vanliga grönsaker.",
+   "descriptionJa": "{野菜|やさい}などの{切|き}り{方|かた}：{薄切|うすぎ}り、{細切|ほそぎ}り、さいの{目|め}、{細|こま}かく・{粗|あら}く。「よく{食|た}べる{野菜|やさい}」の{続|つづ}きです。",
+   "categoryId": "R01-A02-T03",
+   "tags": [
+    "mat",
+    "matlagning",
+    "vardag"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.vanliga-gronsaker"
+   ],
+   "related": [
+    "m.koka-och-sjuda"
+   ],
+   "recommendedOrder": 7,
+   "words": [
+    {
+     "senseId": "s.skära.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skärbräda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vass.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slö.1",
+     "active": false
+    },
+    {
+     "senseId": "s.försiktig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.finger.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sax.1",
+     "active": false
+    },
+    {
+     "senseId": "s.skölja.1",
+     "active": true
+    },
+    {
+     "senseId": "s.halvera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hacka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.grov.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skiva.1",
+     "active": true
+    },
+    {
+     "senseId": "s.strimla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tärning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.klyfta.1",
+     "active": false
+    },
+    {
+     "senseId": "s.riva.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "skara-och-hacka.json"
+  },
+  {
+   "id": "m.koka-och-sjuda",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-04",
+   "titleSv": "Koka och sjuda",
+   "titleJa": "ゆでる・{煮|に}る",
+   "descriptionSv": "Att koka vatten, potatis och soppa, och skillnaden mellan att koka och att sjuda. Bygger på Skära och hacka.",
+   "descriptionJa": "お{湯|ゆ}を{沸|わ}かす、じゃがいもをゆでる、スープを{煮|に}る。{強|つよ}く{煮|に}ることと{弱火|よわび}で{煮|に}ることの{違|ちが}い。「{切|き}る・{刻|きざ}む」の{続|つづ}きです。",
+   "categoryId": "R01-A02-T03",
+   "tags": [
+    "mat",
+    "matlagning",
+    "vardag"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.skara-och-hacka"
+   ],
+   "related": [],
+   "recommendedOrder": 8,
+   "words": [
+    {
+     "senseId": "s.bubbla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.koka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.koka.2",
+     "active": true
+    },
+    {
+     "senseId": "s.spis.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lock.1",
+     "active": true
+    },
+    {
+     "senseId": "s.salta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kokpunkt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.sila.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spad.1",
+     "active": false
+    },
+    {
+     "senseId": "s.soppa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.buljong.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gryta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sjuda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.puttra.1",
+     "active": false
+    }
+   ],
+   "bodyFile": "koka-och-sjuda.json"
   }
  ]
 }
