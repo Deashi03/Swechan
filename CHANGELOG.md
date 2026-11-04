@@ -47,6 +47,14 @@
 - Nya moduler får placeras direkt i en katalogkategori (`categoryId` R…); gamla `c.*` fungerar fortfarande.
 - CI kör nu även `content:index -- --check` och `catalog:validate`.
 
+### Fas F – tre nya moduler i en förkunskapskedja (PR "0.4 fas F")
+- **Vanliga grönsaker** (`m.vanliga-gronsaker`, 17 ord) → **Skära och hacka** (`m.skara-och-hacka`, 16 ord) → **Koka och sjuda** (`m.koka-och-sjuda`, 15 ord), skrivna för katalogposterna SWC-VAR-02-01-01, SWC-VAR-02-03-01 och SWC-VAR-02-03-02. De är de första **verifierade 1:1-kopplingarna** i `publishedMapping.json` (samma titel, ämne och placering).
+- Ny ordboksfil `src/content/data/dictionary/food.json` (47 uppslagsord, inga dubbletter av befintliga poster). Flera ord har flera betydelser (sallad, svamp, tärning, riva, koka, gryta, slö) med tydliga etiketter. Fyra kärnord tillagda (orange, smak, blad, hälla).
+- **AI-utkast:** alla nya ord har `quality.status: ai-draft`; ingen mänsklig språkgranskning har gjorts.
+- Alla tre klarar kontrollerat ordförråd, `module:validate`, `validate:content` och `catalog:validate`.
+- E2E-flödet går nu även igenom kedjan: Kurser → Vardag & hem → Mat & måltider → ämnesgrupp (planerad post utan Starta-knapp) → Vanliga grönsaker → lär → läs → samtalsprompt → nästa dags repetition med de nya korten.
+- Tester uppdaterade för åtta moduler (rekommenderad ordning, katalogkopplingar, `module:new` mot en fortfarande planerad post).
+
 ## 0.3.1 – 2026-11-04
 Utvecklings- och testvänlighet (önskemål från produktägaren).
 

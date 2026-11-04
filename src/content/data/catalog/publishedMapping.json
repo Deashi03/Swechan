@@ -1,35 +1,81 @@
 {
-  "_comment": "Koppling mellan planeringskatalogen (planning/catalog/swechan-catalog.v1.json) och redan publicerade lektioner. Ingen av de fem publicerade modulerna motsvarar exakt EN katalogpost; därför används kompatibilitetsplacering (modulen behåller sitt m.*-ID, catalogId saknas). overlapsCatalogIds anger ämnesöverlapp, inte likvärdighet. links fylls bara efter verifierad 1:1-matchning.",
-  "links": [],
+  "_comment": "Koppling mellan planeringskatalogen (planning/catalog/swechan-catalog.v1.json) och redan publicerade lektioner. Ingen av de fem publicerade modulerna motsvarar exakt EN katalogpost; därför används kompatibilitetsplacering (modulen behåller sitt m.*-ID, catalogId saknas). overlapsCatalogIds anger ämnesöverlapp, inte likvärdighet. links fylls bara efter verifierad 1:1-matchning: modulen är skriven direkt för katalogposten (samma titel, ämne och placering).",
+  "links": [
+    {
+      "catalogId": "SWC-VAR-02-01-01",
+      "moduleId": "m.vanliga-gronsaker",
+      "verifiedBy": "Skriven för katalogposten i 0.4 fas F: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Första delen i kedjan grönsaker → skära → koka."
+    },
+    {
+      "catalogId": "SWC-VAR-02-03-01",
+      "moduleId": "m.skara-och-hacka",
+      "verifiedBy": "Skriven för katalogposten i 0.4 fas F: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.vanliga-gronsaker."
+    },
+    {
+      "catalogId": "SWC-VAR-02-03-02",
+      "moduleId": "m.koka-och-sjuda",
+      "verifiedBy": "Skriven för katalogposten i 0.4 fas F: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.skara-och-hacka."
+    }
+  ],
   "compatibilityPlacements": [
     {
       "moduleId": "m.hemmet-vardag",
       "catalogCategoryId": "R01-A01",
-      "overlapsCatalogIds": ["SWC-VAR-01-01-02", "SWC-VAR-01-05-02", "SWC-VAR-01-05-03", "SWC-VAR-01-05-04", "SWC-VAR-01-05-07"],
+      "overlapsCatalogIds": [
+        "SWC-VAR-01-01-02",
+        "SWC-VAR-01-05-02",
+        "SWC-VAR-01-05-03",
+        "SWC-VAR-01-05-04",
+        "SWC-VAR-01-05-07"
+      ],
       "reason": "Bred modul om rum och hushållssysslor; spänner över ämnesgrupperna Bostadstyper & rum och Städning & underhåll."
     },
     {
       "moduleId": "m.material-amnen",
       "catalogCategoryId": "R06-A04",
-      "overlapsCatalogIds": ["SWC-VET-04-01-02", "SWC-VET-04-01-05"],
+      "overlapsCatalogIds": [
+        "SWC-VET-04-01-02",
+        "SWC-VET-04-01-05"
+      ],
       "reason": "Grundmodul om ämnen, material och aggregationsformer före Atomer och molekyler; ingen katalogpost motsvarar den."
     },
     {
       "moduleId": "m.atomer-molekyler",
       "catalogCategoryId": "R06-A04",
-      "overlapsCatalogIds": ["SWC-VET-04-01-01", "SWC-VET-04-01-02", "SWC-VET-04-02-01", "SWC-VET-04-02-02", "SWC-VET-04-03-01"],
+      "overlapsCatalogIds": [
+        "SWC-VET-04-01-01",
+        "SWC-VET-04-01-02",
+        "SWC-VET-04-02-01",
+        "SWC-VET-04-02-02",
+        "SWC-VET-04-03-01"
+      ],
       "reason": "Spänner över Atomer & periodiska systemet, Molekyler & kemiska bindningar och Kemiska reaktioner."
     },
     {
       "moduleId": "m.krig-forsvar",
       "catalogCategoryId": "R04-A02",
-      "overlapsCatalogIds": ["SWC-HIS-02-02-05", "SWC-HIS-02-03-02"],
+      "overlapsCatalogIds": [
+        "SWC-HIS-02-02-05",
+        "SWC-HIS-02-03-02"
+      ],
       "reason": "Allmän grundmodul om krig och försvar före Medeltida slott och belägringar; ingen katalogpost motsvarar den."
     },
     {
       "moduleId": "m.medeltida-borgar",
       "catalogCategoryId": "R04-A02",
-      "overlapsCatalogIds": ["SWC-HIS-02-02-01", "SWC-HIS-02-02-02", "SWC-HIS-02-02-03", "SWC-HIS-02-03-01", "SWC-HIS-02-03-02", "SWC-HIS-02-03-05", "SWC-HIS-02-03-06", "SWC-HIS-02-03-07"],
+      "overlapsCatalogIds": [
+        "SWC-HIS-02-02-01",
+        "SWC-HIS-02-02-02",
+        "SWC-HIS-02-02-03",
+        "SWC-HIS-02-03-01",
+        "SWC-HIS-02-03-02",
+        "SWC-HIS-02-03-05",
+        "SWC-HIS-02-03-06",
+        "SWC-HIS-02-03-07"
+      ],
       "reason": "Spänner över Medeltida slott & fästningar och Medeltida belägringar."
     }
   ]

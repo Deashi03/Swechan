@@ -12,6 +12,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas C klar** (gren `claude/swechan-0.4-phase-c`, bygger på fas B): Kurser och sökning på den riktiga katalogen, högst åtta val per skärm, planerade moduler har informationsvy utan Starta-knapp. Komponenttester i `src/ui/screens/Explore.test.tsx`.
 - **Fas E klar** (gren `claude/swechan-0.4-phase-e`): CLI-verktyg `catalog:validate`, `module:new`, `module:validate`, `content:report` (se README/CONTENT_GUIDELINES).
 - **Fas D klar** (gren `claude/swechan-0.4-phase-d`): modulindex + `loadModuleBody`, läs/samtal laddar lat, förladdning för offline, uppmätt bundle/laddtid (se CHANGELOG). **Kom ihåg `npm run content:index` efter ändring i en modulfil.**
+- **Fas F klar** (gren `claude/swechan-0.4-phase-f`, bygger på fas E): tre nya moduler i en kedja – *Vanliga grönsaker* → *Skära och hacka* → *Koka och sjuda* – med verifierade 1:1-kopplingar till sina katalogposter; ny ordboksfil `food.json` (47 ord, AI-utkast). E2E går igenom kedjan via Kurser-menyn.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
 ## ⚠️ Utvecklingsläge är PÅ (0.3.1)
