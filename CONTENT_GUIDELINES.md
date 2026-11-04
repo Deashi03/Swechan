@@ -50,6 +50,8 @@ Ordningen i `words` är alltså också **inlärningsordningen**. Lägg grundläg
 - En publicerad lektion får ett eget `m.*`-ID. När den motsvarar exakt en katalogpost: lägg en post i `links` i `publishedMapping.json` (med `verifiedBy`). Annars: `compatibilityPlacements` i en kategori där menyskärmen fortfarande har högst åtta val (kontrolleras av `npm run catalog:validate`).
 - Japanska titlar i katalogen är `null` tills en människa har översatt och granskat dem. AI-förslag får inte markeras som granskade.
 
+Exempel på en kedja (0.4 fas F): *Vanliga grönsaker* (SWC-VAR-02-01-01) → *Skära och hacka* (SWC-VAR-02-03-01) → *Koka och sjuda* (SWC-VAR-02-03-02). Varje modul har den föregående som förkunskap, så att senare förklaringar och texter får använda dess ord.
+
 ## Verktyg (0.4)
 
 ```bash
@@ -95,4 +97,4 @@ Möjliga öppna resurser att undersöka (kontrollera licens före import):
 - **JMdict** (EDRDG, CC BY-SA 4.0) – japansk lexikal resurs för kontroll av läsningar.
 
 ## Status
-Allt innehåll (v0.1–0.2) är producerat med AI-stöd och markerat `ai-draft`. Det har kontrollerats automatiskt (schema, furigana-täckning, referenser, målord i texter) men **inte granskats av en människa**. Prioritera granskning av japanska översättningar och läsningar.
+Allt innehåll (v0.1–0.4, inklusive de tre matlagningsmodulerna) är producerat med AI-stöd och markerat `ai-draft`. Det har kontrollerats automatiskt (schema, furigana-täckning, referenser, målord i texter) men **inte granskats av en människa**. Prioritera granskning av japanska översättningar och läsningar.

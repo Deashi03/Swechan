@@ -26,7 +26,7 @@ npm run dev          # utvecklingsserver, öppna adressen som visas
 | `npm run module:new -- <SWC-…>` | Skapar ett utkast i `content/drafts/` för en planerad katalogmodul |
 | `npm run module:validate -- <m.id \| utkast.json>` | Kontrollerar en modul eller ett utkast |
 | `npm run content:report [-- --out fil.md]` | Innehållsrapport: status, brutna referenser, ointroducerade ord, dubbletter, saknade översättningar |
-| `npm run e2e` | End-to-end-test av hela acceptansflödet i Chromium med iPhone-emulering (kör `npm run build` först; kräver att `playwright` finns globalt installerat) |
+| `npm run e2e` | End-to-end-test av hela acceptansflödet i Chromium med iPhone-emulering (kör `npm run build` först; kräver att `playwright` finns globalt installerat – CI-jobbet `e2e` visar hur) |
 
 ## Använda appen på iPhone
 

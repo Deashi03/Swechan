@@ -1,10 +1,10 @@
 # Projektstatus – överlämning
 
-**Version:** 0.3.1 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `claude/swechan-0.3.1` (publiceras via GitHub Pages från `main`)
+**Version:** 0.4.0 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `main` (publiceras via GitHub Pages; 0.4 utvecklades i grenarna `claude/swechan-0.4-phase-a` … `-phase-g`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
 
-## 0.4 – pågående arbete (ej släppt)
+## 0.4 – släppt 2026-11-04
 
 Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-catalog.v1.json` (344 kategorier, 2 016 **planerade** moduler).
 - **Fas A klar** (gren `claude/swechan-0.4-phase-a`): baslinje grön; två buggar i versionsnollställningen rättade (se CHANGELOG); granskningstester.
@@ -13,9 +13,10 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas E klar** (gren `claude/swechan-0.4-phase-e`): CLI-verktyg `catalog:validate`, `module:new`, `module:validate`, `content:report` (se README/CONTENT_GUIDELINES).
 - **Fas D klar** (gren `claude/swechan-0.4-phase-d`): modulindex + `loadModuleBody`, läs/samtal laddar lat, förladdning för offline, uppmätt bundle/laddtid (se CHANGELOG). **Kom ihåg `npm run content:index` efter ändring i en modulfil.**
 - **Fas F klar** (gren `claude/swechan-0.4-phase-f`, bygger på fas E): tre nya moduler i en kedja – *Vanliga grönsaker* → *Skära och hacka* → *Koka och sjuda* – med verifierade 1:1-kopplingar till sina katalogposter; ny ordboksfil `food.json` (47 ord, AI-utkast). E2E går igenom kedjan via Kurser-menyn.
+- **Fas G klar**: version 0.4.0, migreringstest 0.3.1→0.4 med nollställningen på och av, e2e-jobb i CI, dokumentation. WebKit/fysisk iPhone: EJ TESTAT.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
-## ⚠️ Utvecklingsläge är PÅ (0.3.1)
+## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.4.0)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
 
@@ -67,6 +68,13 @@ Användarens feedback på 0.1: (1) förklaringar använde svårare ord än ordet
 
 \* `word_mastered` finns i händelsetypen men emitteras ännu inte (se Återstår).
 
+## Testat (version 0.4.0)
+
+- `npm run typecheck` OK · `npm test` **141 tester gröna** · `validate:content` 21/21 · `catalog:validate` OK · `content:index -- --check` OK · `npm run build` OK.
+- `npm run e2e` **passerar** (Chromium, iPhone 13-emulering). Det täcker nu även Kurser-menyn (≤ 8 val, planerad post utan Starta-knapp) och kedjan *Vanliga grönsaker* → lär → läs → samtalsprompt → nästa dags repetition.
+- Migrering 0.3.1→0.4.0 med fullständig datamängd och `resetProgressOnUpdate` på och av: `src/dev/release04.migration.test.ts`.
+- **EJ TESTAT:** WebKit/Safari, fysisk iPhone och verklig TTS.
+
 ## Testat (version 0.3.1)
 
 - `npm run typecheck` OK · `npm test` **95 tester gröna** (nya: nollställning vid versionsbyte + återställningspunkt, tidsresa, upplåsning, genvägar, "Del X av Y", passiva ord) · `npm run build` OK · `npm run e2e` **passerar** · skärmbilder av startsida, inlärning och utvecklarpanel granskade.
@@ -112,6 +120,8 @@ Användarens feedback på 0.1: (1) förklaringar använde svårare ord än ordet
 Se `ROADMAP.md`. Kortsiktigt viktigast: test på fysisk iPhone, mänsklig innehållsgranskning, fler moduler, stödordbok för lästexter.
 
 ## Nästa rekommenderade arbetsuppgift
+
+(0.4) 1. Testa 0.4 på iPhone: Kurser-menyn, sökningen och kedjan grönsaker → skära → koka. 2. Mänsklig granskning av matlagningsmodulerna. 3. Nästa avgränsade PR: fortsätt *Matlagningens verb* (t.ex. SWC-VAR-02-03-03 Steka och bryna) med `module:new`. 4. Japanska katalogtitlar. 5. Bestäm när `resetProgressOnUpdate` ska stängas av.
 
 (0.3) 1. Testa Fjord-designen på iPhone (särskilt resultatpanelen längst ner och tangentbordet i skrivövningar). 2. Mänsklig granskning av innehållet. 3. Fler moduler. 4. Ta fram Jonathan-avataren (illustration) och koppla in den i `Jonathan.tsx`.
 

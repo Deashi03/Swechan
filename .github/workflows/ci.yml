@@ -29,6 +29,22 @@ jobs:
         with:
           path: dist
 
+  e2e:
+    # Reproducible end-to-end run (Chromium with iPhone emulation). Not a deploy gate:
+    # the deploy depends only on the test job, so a flaky browser run never blocks a release.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm install -g playwright@1.63.0
+      - run: playwright install --with-deps chromium
+      - run: npm run build
+      - run: NODE_PATH="$(npm root -g)" npm run e2e
+
   deploy:
     # Requires: repository Settings → Pages → Source = "GitHub Actions".
     if: github.ref == 'refs/heads/main'

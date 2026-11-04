@@ -14,10 +14,16 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - Kontroll som jämför förklaringar mot användarens *faktiska* inlärda ord (inte bara modulens förkunskaper).
 - Inställning för fast tidszon i UI; ljudeffekter kopplade till händelsebussen (med av/på).
 
-## v0.4 – Skalning av innehåll
-- Katalogindex + lazy-laddade modulkroppar.
-- Verktyg (CLI) för modulproduktion: skelettgenerator, utökad validering (t.ex. andel okända ord i lästext mot användarens nivå).
-- Morfologisk analys baserad på SALDO (känna igen delade partikelverb, s-passiv, sammansättningar).
+## v0.4 – Skalning av innehåll (klar)
+- Produktägarens planeringskatalog (344 kategorier, 2 016 planerade moduler) i Kurser, högst åtta val per skärm, global sökning.
+- Modulindex + lazy-laddade lektionskroppar, offlineförladdning.
+- CLI för innehållsproduktion: `catalog:validate`, `module:new`, `module:validate`, `content:report`.
+- Tre nya moduler i en kedja (grönsaker → skära → koka), de första 1:1-kopplade till katalogen.
+
+## v0.4.x / v0.5 – nästa steg för innehållet
+- Fler moduler ur katalogen, kedja för kedja (t.ex. resten av *Matlagningens verb*), med mänsklig granskning.
+- Japanska katalogtitlar (översättning + granskning).
+- Utökad validering (andel okända ord i lästext mot användarens nivå); morfologisk analys baserad på SALDO.
 
 ## v0.5 – Personalisering
 - FSRS-parameteroptimering per användare när tillräcklig historik finns.

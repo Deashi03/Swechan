@@ -222,7 +222,7 @@ try {
   await page.goto(`${BASE}#/explore`);
   await page.getByLabel('Global sökning').fill('Skära och hacka');
   await page.getByRole('link', { name: /Skära och hacka/ }).first().click();
-  assert(await visible(page.getByRole('button', { name: /Starta: Lär dig orden/ })), 'next module in the chain can be started once its prerequisite is done');
+  assert(await visible(page.getByRole('button', { name: /Starta: Lär dig orden/ })), 'next module in the chain is found by search and can be started');
   await page.clock.setSystemTime(new Date('2026-11-05T08:30:00+01:00'));
   await page.goto(BASE);
   await page.reload();
