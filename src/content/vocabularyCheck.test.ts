@@ -1,5 +1,5 @@
 import coreJson from './data/core/coreVocabulary.json';
-import { getContent } from './repository';
+import { toolingRepository as getContent } from './tooling';
 import { checkVocabulary, CoreVocabularyFile, VocabularyChecker } from './vocabularyCheck';
 
 const core = CoreVocabularyFile.parse(coreJson);

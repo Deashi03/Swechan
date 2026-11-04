@@ -10,7 +10,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas A klar** (gren `claude/swechan-0.4-phase-a`): baslinje grön; två buggar i versionsnollställningen rättade (se CHANGELOG); granskningstester.
 - **Fas B klar** (gren `claude/swechan-0.4-phase-b`, bygger på fas A): katalogindex från den riktiga katalogfilen, validator, kompatibilitetsplaceringar för de fem modulerna, spärrar mot att starta planerade moduler. Ännu inget UI som använder katalogen (det är fas C: Utforska/Kurser med högst åtta val per skärm).
 - **Fas C klar** (gren `claude/swechan-0.4-phase-c`, bygger på fas B): Kurser och sökning på den riktiga katalogen, högst åtta val per skärm, planerade moduler har informationsvy utan Starta-knapp. Komponenttester i `src/ui/screens/Explore.test.tsx`.
-- **Nästa: fas D** (lat laddning av publicerade lektionskroppar) och **fas E** (CLI-verktyg för innehållsproduktion).
+- **Fas D klar** (gren `claude/swechan-0.4-phase-d`): modulindex + `loadModuleBody`, läs/samtal laddar lat, förladdning för offline, uppmätt bundle/laddtid (se CHANGELOG). **Kom ihåg `npm run content:index` efter ändring i en modulfil.**
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
 ## ⚠️ Utvecklingsläge är PÅ (0.3.1)

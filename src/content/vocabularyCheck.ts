@@ -16,7 +16,7 @@
 import { z } from 'zod';
 import { allForms, tokenize } from './morphology';
 import type { ContentRepository } from './repository';
-import type { Module } from './schema';
+import type { Module, ModuleMeta } from './schema';
 
 export const CoreVocabularyFile = z.object({
   lemmas: z.array(z.string()),
@@ -84,8 +84,8 @@ function formsOfSenses(repo: ContentRepository, senseIds: string[]): Set<string>
   return set;
 }
 
-export function prerequisiteClosure(repo: ContentRepository, m: Module, seen = new Set<string>()): Module[] {
-  const out: Module[] = [];
+export function prerequisiteClosure(repo: ContentRepository, m: Pick<ModuleMeta, 'prerequisites'>, seen = new Set<string>()): ModuleMeta[] {
+  const out: ModuleMeta[] = [];
   for (const id of m.prerequisites) {
     if (seen.has(id)) continue;
     seen.add(id);
@@ -107,16 +107,18 @@ export function checkVocabulary(repo: ContentRepository, core: CoreVocabulary): 
     if (unknown.length) issues.push({ where, unknown: [...new Set(unknown)], text });
   };
   const union = (...sets: Set<string>[]) => new Set(sets.flatMap((s) => [...s]));
-  const moduleOfSense = new Map<string, Module>();
+  const moduleOfSense = new Map<string, ModuleMeta>();
 
-  for (const m of repo.modules) {
+  for (const meta of repo.modules) {
+    const m: Module | undefined = repo.getLoadedModuleBody(meta.id);
+    if (!m) { issues.push({ where: meta.id, unknown: [], text: 'Lektionskroppen är inte laddad (använd toolingRepository())' }); continue; }
     const base = formsOfSenses(repo, prerequisiteClosure(repo, m).flatMap((p) => p.words.map((w) => w.senseId)));
     const ids = m.words.map((w) => w.senseId);
     const all = union(base, formsOfSenses(repo, ids));
     m.words.forEach((w, k) => {
       const ref = repo.getSense(w.senseId);
       if (!ref) return;
-      if (!moduleOfSense.has(w.senseId)) moduleOfSense.set(w.senseId, m);
+      if (!moduleOfSense.has(w.senseId)) moduleOfSense.set(w.senseId, meta);
       const before = union(base, formsOfSenses(repo, ids.slice(0, k)));
       const self = union(before, new Set(allForms(ref.entry)));
       const s = ref.sense;

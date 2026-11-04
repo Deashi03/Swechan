@@ -10,21 +10,31 @@
  * catalog index eager. See ARCHITECTURE.md.
  */
 import {
-  CategoriesFile, ComparisonsFile, DictionaryFile, GrammarNotesFile, Module, PlacementFile,
+  CategoriesFile, ComparisonsFile, DictionaryFile, GrammarNotesFile, Module, ModuleIndexFile, ModuleMeta, PlacementFile,
   type Category, type Comparison, type GrammarNote, type PlacementItem, type VocabularyEntry, type WordSense,
 } from './schema';
-import type { Module as ModuleT } from './schema';
+import type { Module as ModuleBody } from './schema';
+
+/** Index entry of a published module (no lesson body). */
+type ModuleT = ModuleMeta;
 
 export type SenseRef = { entry: VocabularyEntry; sense: WordSense; senseIndex: number };
 
 export type RawContent = {
   dictionaries: unknown[];
   categories: unknown;
-  modules: unknown[];
+  /** Lightweight module index (moduleIndex.json). */
+  moduleIndex?: unknown;
+  /** Lazy loader for a module body by its bodyFile name. */
+  loadBody?: (bodyFile: string) => Promise<unknown>;
+  /** Full modules (tests/tooling): index and bodies are derived from these. */
+  modules?: unknown[];
   grammarNotes: unknown;
   comparisons: unknown;
   placement: unknown;
 };
+
+export class ModuleNotAvailableError extends Error {}
 
 export class ContentRepository {
   readonly entries: VocabularyEntry[];
@@ -42,10 +52,24 @@ export class ContentRepository {
   private modulesBySense = new Map<string, string[]>();
   private comparisonsBySense = new Map<string, Comparison[]>();
 
+  private bodyCache = new Map<string, Promise<ModuleBody>>();
+  private bodyReady = new Map<string, ModuleBody>();
+  private loadBody: (bodyFile: string) => Promise<unknown>;
+
   constructor(raw: RawContent) {
     this.entries = raw.dictionaries.flatMap((d) => DictionaryFile.parse(d).entries);
     this.categories = CategoriesFile.parse(raw.categories).categories;
-    this.modules = raw.modules.map((m) => Module.parse(m)).sort((a, b) => a.recommendedOrder - b.recommendedOrder);
+    if (raw.modules) {
+      // Full modules given (tests/tooling): derive the index, keep the bodies in memory.
+      const full = raw.modules.map((m) => Module.parse(m));
+      this.modules = full.map((m) => { const { reading, conversation, ...meta } = m; void reading; void conversation; return { ...meta, bodyFile: `${m.id.slice(2)}.json` }; });
+      for (const m of full) this.bodyReady.set(m.id, m);
+      this.loadBody = async (f) => full.find((m) => `${m.id.slice(2)}.json` === f);
+    } else {
+      this.modules = ModuleIndexFile.parse(raw.moduleIndex).modules;
+      this.loadBody = raw.loadBody ?? (() => Promise.reject(new Error('No module body loader')));
+    }
+    this.modules.sort((a, b) => a.recommendedOrder - b.recommendedOrder);
     this.grammarNotes = GrammarNotesFile.parse(raw.grammarNotes).notes;
     this.comparisons = ComparisonsFile.parse(raw.comparisons).comparisons;
     this.placementItems = PlacementFile.parse(raw.placement).items;
@@ -66,7 +90,36 @@ export class ContentRepository {
 
   getEntry(id: string) { return this.entryById.get(id); }
   getSense(id: string) { return this.senseById.get(id); }
+  /** Index entry (metadata + words) of a published module; undefined for unknown/planned IDs. */
   getModule(id: string) { return this.moduleById.get(id); }
+
+  /**
+   * Full lesson (reading text + conversation) of a published module.
+   * Lazy-loaded per module, validated, cached; a failed load can be retried.
+   * Planned catalog entries and unknown IDs are rejected.
+   */
+  loadModuleBody(id: string): Promise<ModuleBody> {
+    const meta = this.moduleById.get(id);
+    if (!meta) return Promise.reject(new ModuleNotAvailableError(`Modulen ${id} är inte publicerad`));
+    const ready = this.bodyReady.get(id);
+    if (ready) return Promise.resolve(ready);
+    let p = this.bodyCache.get(id);
+    if (!p) {
+      p = this.loadBody(meta.bodyFile).then((raw) => {
+        const body = Module.parse(raw);
+        if (body.id !== id) throw new Error(`Fel modulfil för ${id}`);
+        if (body.contentVersion !== meta.contentVersion) throw new Error(`Modulindexet är inaktuellt för ${id} (kör npm run content:index)`);
+        this.bodyReady.set(id, body);
+        return body;
+      });
+      p.catch(() => this.bodyCache.delete(id)); // allow retry
+      this.bodyCache.set(id, p);
+    }
+    return p;
+  }
+
+  /** The lesson body if it has already been loaded in this session. */
+  getLoadedModuleBody(id: string): ModuleBody | undefined { return this.bodyReady.get(id); }
   getCategory(id: string) { return this.categoryById.get(id); }
   getGrammarNote(id: string) { return this.noteById.get(id); }
   modulesForSense(senseId: string): ModuleT[] {
@@ -105,11 +158,16 @@ let instance: ContentRepository | null = null;
 
 export function loadBundledContent(): RawContent {
   const dicts = import.meta.glob('./data/dictionary/*.json', { eager: true, import: 'default' });
-  const mods = import.meta.glob('./data/modules/*.json', { eager: true, import: 'default' });
+  const index = import.meta.glob('./data/moduleIndex.json', { eager: true, import: 'default' });
+  const bodies = import.meta.glob('./data/modules/*.json', { import: 'default' });
   const single = import.meta.glob(['./data/categories.json', './data/grammarNotes.json', './data/comparisons.json', './data/placement.json'], { eager: true, import: 'default' });
   return {
     dictionaries: Object.values(dicts),
-    modules: Object.values(mods),
+    moduleIndex: index['./data/moduleIndex.json'],
+    loadBody: (bodyFile: string) => {
+      const loader = bodies[`./data/modules/${bodyFile}`];
+      return loader ? loader() : Promise.reject(new Error(`Saknar modulfil ${bodyFile}`));
+    },
     categories: single['./data/categories.json'],
     grammarNotes: single['./data/grammarNotes.json'],
     comparisons: single['./data/comparisons.json'],

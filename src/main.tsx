@@ -33,6 +33,12 @@ void start();
 
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch((err) => console.warn('Service worker registration failed', err));
+    navigator.serviceWorker
+      .register('./sw.js', { updateViaCache: 'none' })
+      .then((reg) => {
+        // Look for a new app version when the app returns to the foreground (PWA on iPhone stays open for days).
+        document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') reg.update().catch(() => {}); });
+      })
+      .catch((err) => console.warn('Service worker registration failed', err));
   });
 }

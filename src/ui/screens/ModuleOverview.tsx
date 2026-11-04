@@ -2,6 +2,7 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useState } from 'react';
 import type { CatalogIndex } from '../../content/catalog/catalogIndex';
 import { loadCatalog } from '../../content/catalog/loadCatalog';
+import { isModuleOffline } from '../../content/offlineModules';
 
 /** Catalog path of a published module (verified link or compatibility placement). */
 function placementPath(catalog: CatalogIndex | null, moduleId: string) {
@@ -12,7 +13,7 @@ function placementPath(catalog: CatalogIndex | null, moduleId: string) {
   return p ? catalog.path(p.catalogCategoryId) : [];
 }
 import { getContent } from '../../content/repository';
-import type { Module } from '../../content/schema';
+import type { ModuleMeta as Module } from '../../content/schema';
 import { getModuleProgress, isStepUnlocked } from '../../modules/moduleService';
 import { getDb } from '../../storage/db';
 import type { ModuleProgressRecord, StepId } from '../../storage/types';
@@ -75,6 +76,7 @@ export function ModuleOverview({ id }: { id: string }) {
         <div className="row wrap" style={{ gap: 6 }}>
           <span className="badge">Nivå {m.level}</span>
           <span className="badge">{m.words.length} ord</span>
+          {isModuleOffline(m.id) && <span className="badge" title="Lektionen är sparad på enheten och fungerar utan internet">Sparad offline</span>}
           {m.tags.map((t) => <span key={t} className="badge">#{t}</span>)}
         </div>
       </header>

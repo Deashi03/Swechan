@@ -29,6 +29,15 @@
 - Modulsidans brödsmulor följer modulens placering i katalogen.
 - Katalogdelen (352 kB, 39 kB gzip) laddas först när Kurser öppnas; startpaketet växte ~8 kB (Kurser-koden). Laddningsfel visar "Försök igen".
 
+### Fas D – lat laddning av lektioner (PR "0.4 fas D")
+- **Modulindex** `src/content/data/moduleIndex.json` (genereras med `npm run content:index` från `src/content/data/modules/*.json`; ett test underkänner ett inaktuellt index). Indexet innehåller metadata och ord, inte lästext och samtal.
+- `ContentRepository.loadModuleBody(id)` laddar en lektion lat (egen del per modul), validerar den, cachar den och tillåter nytt försök efter fel; planerade katalog-ID:n och okända moduler avvisas (`ModuleNotAvailableError`). `getModule(id)` returnerar nu indexposten.
+- Läs- och samtalssteget laddar lektionen via `useModuleBody` med laddning, fel och "Försök igen" (särskilt meddelande offline).
+- **Offline:** alla publicerade lektioner förladdas när webbläsaren är ledig (service workern cachar dem); modulsidan visar *Sparad offline*. Service workern letar efter nya versioner när appen kommer till förgrunden.
+- Validatorer och tester använder `toolingRepository()` (alla lektioner i minnet); appkoden importerar aldrig den.
+- **Uppmätt** (vite build): startinnehållet 140,1 → 121,5 kB (gzip 36,2 → 30,3 kB); appkoden +3 kB; varje lektion är en egen del på ~5 kB. Laddtid tills välkomstskärmen (Chromium, iPhone-emulering, 1,6 Mbit/s, 150 ms latens, median av 5): fas C 1 473 ms → fas D 1 448 ms (−2 %). Liten vinst med fem moduler; poängen är att startpaketet inte växer med antalet lektioner.
+- `@types/node` tillagt (utvecklingsberoende) för test/verktyg.
+
 ## 0.3.1 – 2026-11-04
 Utvecklings- och testvänlighet (önskemål från produktägaren).
 

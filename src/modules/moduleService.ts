@@ -5,7 +5,7 @@
  * completed, its words enter the review pool, and the daily session is told.
  */
 import { getContent } from '../content/repository';
-import type { Module } from '../content/schema';
+import type { ModuleMeta as Module } from '../content/schema';
 import { registerModuleCompletion } from '../daily/dailySession';
 import { emit } from '../feedback/events';
 import { dimensionsForWord, newLearnSession } from '../learning/learnPlan';
