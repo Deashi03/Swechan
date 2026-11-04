@@ -218,11 +218,12 @@ try {
   await page.getByRole('link', { name: /Råvaror & skafferi/ }).first().click();
   await page.getByRole('link', { name: /Vanliga grönsaker/ }).first().click();
   await shot('10-module-gronsaker');
+  await page.getByRole('button', { name: /Starta: Lär dig orden/ }).waitFor({ timeout: 15000 }); // CI is slower than local runs
   await doModule('Vanliga grönsaker', { promptIncludes: '- potatis – じゃがいも' });
   await page.goto(`${BASE}#/explore`);
   await page.getByLabel('Global sökning').fill('Skära och hacka');
   await page.getByRole('link', { name: /Skära och hacka/ }).first().click();
-  assert(await visible(page.getByRole('button', { name: /Starta: Lär dig orden/ })), 'next module in the chain can be started once its prerequisite is done');
+  assert(await visible(page.getByRole('button', { name: /Starta: Lär dig orden/ })), 'next module in the chain is found by search and can be started');
   await page.clock.setSystemTime(new Date('2026-11-05T08:30:00+01:00'));
   await page.goto(BASE);
   await page.reload();

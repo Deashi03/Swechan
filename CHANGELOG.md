@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.0 – under utveckling (ej släppt)
+## 0.4.0 – 2026-11-04
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är på även vid 0.4-releasen (produktägarens beslut under systemutvecklingen).
 
@@ -54,6 +54,13 @@
 - Alla tre klarar kontrollerat ordförråd, `module:validate`, `validate:content` och `catalog:validate`.
 - E2E-flödet går nu även igenom kedjan: Kurser → Vardag & hem → Mat & måltider → ämnesgrupp (planerad post utan Starta-knapp) → Vanliga grönsaker → lär → läs → samtalsprompt → nästa dags repetition med de nya korten.
 - Tester uppdaterade för åtta moduler (rekommenderad ordning, katalogkopplingar, `module:new` mot en fortfarande planerad post).
+
+### Fas G – release
+- `APP_VERSION` 0.4.0, `package.json` 0.4.0, service workerns cache `swechan-v5`.
+- **Obs! Uppdateringen nollställer progressionen** (produktägarens beslut, utvecklingsläget är på). En återställningspunkt sparas: Inställningar → Säkerhetskopia → Ångra.
+- Nytt releasetest `src/dev/release04.migration.test.ts`: en fullständig 0.3.1-användare (klar modul, påbörjat modulsteg, FSRS-kort med historik, två dagliga sessioner, streak, sparat ord, inställningar). Med regeln **av** blir all data oförändrad och steget kan fortsättas. Med regeln **på** töms progressionen men inställningarna behålls, och Ångra återställer allt utan att det nollställs igen vid nästa start.
+- CI har ett separat e2e-jobb (Playwright 1.63.0, Chromium med iPhone-emulering). Det blockerar inte publiceringen.
+- WebKit/Safari och fysisk iPhone: **EJ TESTAT** (finns inte i utvecklingsmiljön).
 
 ## 0.3.1 – 2026-11-04
 Utvecklings- och testvänlighet (önskemål från produktägaren).
