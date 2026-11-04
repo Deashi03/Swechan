@@ -50,6 +50,18 @@ Ordningen i `words` är alltså också **inlärningsordningen**. Lägg grundläg
 - En publicerad lektion får ett eget `m.*`-ID. När den motsvarar exakt en katalogpost: lägg en post i `links` i `publishedMapping.json` (med `verifiedBy`). Annars: `compatibilityPlacements` i en kategori där menyskärmen fortfarande har högst åtta val (kontrolleras av `npm run catalog:validate`).
 - Japanska titlar i katalogen är `null` tills en människa har översatt och granskat dem. AI-förslag får inte markeras som granskade.
 
+## Verktyg (0.4)
+
+```bash
+npm run module:new -- SWC-VAR-02-03-01        # utkast från katalogen (titel och storlek från katalogen)
+npm run module:validate -- content/drafts/skara-och-hacka.json   # vad saknas i utkastet?
+npm run content:index                          # efter att lektionen skrivits i src/content/data/modules/
+npm run module:validate -- m.skara-och-hacka   # schema, referenser, furigana, böjning, textens ordtäckning, frågor, ordförråd, katalog
+npm run content:report                         # helhetsbild
+```
+
+Utkast i `content/drafts/` ingår aldrig i appen. Status `reviewed` på en betydelse kräver `reviewer` och `date` och får bara sättas efter verklig mänsklig granskning; verktygen och AI sätter den aldrig.
+
 ## Process för en ny modul
 
 1. **Välj ämne** och placera det i kategoriträdet (lägg till kategorier vid behov; `parentId`, `order`, svenska + japanska namn).
