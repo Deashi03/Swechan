@@ -44,6 +44,12 @@ Ordningen i `words` är alltså också **inlärningsordningen**. Lägg grundläg
 - Böjningsövningar använder fasta, naturliga meningar ("Jag tänker på den/det ___.", "… två ___.", "… de ___."; "Hon ___ nu / i går", "Hon har ___"; "Det är ___.", "De är ___."). För verb där "Hon" blir konstigt: ange `frame` på betydelsen, t.ex. `{"subject": "Armén", "complement": "staden"}`. Ramen kontrolleras av språkkontrollen.
 - Kontextövningar bygger på betydelsens exempelmeningar. Ge varje betydelse en `tags`-etikett för ämnet (t.ex. "hemmet", "kemi", "krig"); distraktorer väljs från *andra* ämnen så att bara ett ord passar. Skriv exempelmeningar där målordet är tydligt bestämt av sammanhanget.
 
+## Planeringskatalogen (0.4)
+
+- Nya moduler hämtar ämne och svensk titel från `planning/catalog/swechan-catalog.v1.json`. Hitta aldrig på modulnamn eller ämnen utanför katalogen.
+- En publicerad lektion får ett eget `m.*`-ID. När den motsvarar exakt en katalogpost: lägg en post i `links` i `publishedMapping.json` (med `verifiedBy`). Annars: `compatibilityPlacements` i en kategori där menyskärmen fortfarande har högst åtta val (kontrolleras av `npm run catalog:validate`).
+- Japanska titlar i katalogen är `null` tills en människa har översatt och granskat dem. AI-förslag får inte markeras som granskade.
+
 ## Process för en ny modul
 
 1. **Välj ämne** och placera det i kategoriträdet (lägg till kategorier vid behov; `parentId`, `order`, svenska + japanska namn).

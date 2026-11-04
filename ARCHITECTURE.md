@@ -97,6 +97,7 @@ ui  ──►  daily / modules / dictionary / conversation / stats / audio / fee
 17. **Jonathan som stabil komponent** (0.3) – avatarens plats, storlek och händelsereaktioner är fasta; bara grafiken byts senare.
 18. **Övningar utan auto-avancemang** (0.3) – resultatet visas i en bottenpanel och kräver "Fortsätt"; säkrare (ordboken, läsning av förklaringen) till priset av ett tryck.
 19. **Utvecklingsläge** (0.3.1) – `devConfig`: nollställning vid varje versionsbyte (uttryckligt undantag från regel 1 under utvecklingen, med återställningspunkt) och utvecklarverktyg. Klockan har en förskjutning (`setClockOffsetDays`) som alla tjänster använder via `now()`. Stäng av före riktig användning.
+20. **Planeringskatalog separat från lektioner** (0.4 fas B) – `planning/catalog/swechan-catalog.v1.json` (produktägarens, auktoritativ) läses av `src/content/catalog/` med egna Zod-scheman. `CatalogIndex` är rena metadata (titel, placering, status, målordsantal); bara lektioner i `ContentRepository` kan startas. Publicerade `m.*`-moduler kopplas till katalogen antingen med verifierad 1:1-länk (`links`) eller kompatibilitetsplacering (`compatibilityPlacements`) i `src/content/data/catalog/publishedMapping.json`. Katalogen laddas lat som egen del.
 15. **Förkunskaper styr rekommendationen, inte åtkomsten** (0.2) – `recommendedModule()` föreslår bara moduler vars förkunskaper är klara; moduler låses aldrig.
 
 ## Regler för vidareutveckling
