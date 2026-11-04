@@ -1,0 +1,82 @@
+/* Swechan design tokens – the ONLY place where raw colours, sizes and radii live. */
+:root {
+  /* Palette */
+  --c-bg: #fbf8f3;            /* warm soft white */
+  --c-surface: #ffffff;
+  --c-surface-2: #f5f0e8;
+  --c-border: #ece5da;
+  --c-text: #3a3a40;          /* dark grey */
+  --c-text-muted: #6e6b72;
+  --c-text-faint: #9a96a0;
+
+  --c-primary: #2e7d4f;       /* accessible green for text/buttons on white */
+  --c-primary-soft: #7cc49a;  /* mild green accent */
+  --c-primary-tint: #e3f4ea;
+  --c-on-primary: #ffffff;
+
+  --c-accent: #e8796b;        /* coral */
+  --c-accent-soft: #f7b6ad;
+  --c-accent-tint: #fde9e5;
+
+  --c-success: #2e7d4f;
+  --c-success-tint: #e3f4ea;
+  --c-error: #c0453a;
+  --c-error-tint: #fbe6e3;
+  --c-warning-tint: #fff4dc;
+
+  --c-streak: #f2a33a;
+  --c-streak-tint: #fff1dc;
+  --c-freeze: #4f9fd8;
+  --c-freeze-tint: #e3f1fb;
+
+  /* Activity pastels */
+  --c-review: #e3f4ea;
+  --c-module: #fde7e1;
+  --c-read: #ece7fb;
+  --c-converse: #e2f0fb;
+
+  --c-highlight: #fff3b8;
+  --c-overlay: rgba(40, 36, 44, 0.38);
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Segoe UI', Roboto, sans-serif;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-md: 1.0625rem;  /* base reading size (≥16px avoids iOS zoom on inputs) */
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.625rem;
+  --fs-2xl: 2.125rem;
+  --fw-normal: 400;
+  --fw-medium: 560;
+  --fw-bold: 700;
+  --lh-tight: 1.25;
+  --lh-normal: 1.55;
+  --lh-ja: 1.95;       /* extra room so furigana never collides */
+
+  /* Spacing (4px scale) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+
+  /* Shape */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(60, 50, 40, 0.06), 0 2px 6px rgba(60, 50, 40, 0.05);
+  --shadow-md: 0 4px 16px rgba(60, 50, 40, 0.1);
+
+  /* Motion */
+  --t-fast: 120ms;
+  --t-normal: 200ms;
+
+  /* Layout */
+  --content-max: 560px;
+  --tabbar-h: 64px;
+  --tap-min: 44px;
+}

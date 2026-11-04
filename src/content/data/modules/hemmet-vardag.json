@@ -1,0 +1,208 @@
+{
+ "id": "m.hemmet-vardag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-04",
+ "titleSv": "Hemmet och vardagliga aktiviteter",
+ "titleJa": "{家|いえ}と{毎日|まいにち}の{家事|かじ}",
+ "descriptionSv": "Rum, saker och sysslor i hemmet: att städa, tvätta, diska och laga mat.",
+ "descriptionJa": "{家|いえ}の{部屋|へや}や{物|もの}、{掃除|そうじ}・{洗濯|せんたく}・{皿洗|さらあら}い・{料理|りょうり}などの{家事|かじ}に{関|かん}する{言葉|ことば}。",
+ "categoryId": "c.vardag.hemmet",
+ "tags": [
+  "vardag",
+  "hemmet",
+  "hushållsarbete"
+ ],
+ "level": "A2",
+ "prerequisites": [],
+ "related": [],
+ "recommendedOrder": 1,
+ "words": [
+  {
+   "senseId": "s.kök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sovrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.badrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättmaskin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.golv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fönster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.städa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dammsuga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bädda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slänga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plocka-undan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smutsig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ren.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stökig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diskmaskin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dammsugare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.soppåse.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En städdag hemma",
+  "paragraphs": [
+   "Det är lördag morgon, och lägenheten är stökig. Aiko och Erik bestämmer att de ska städa tillsammans.",
+   "Först bäddar Aiko sängen i sovrummet. Sedan ska hon plocka undan kläder och böcker som ligger på golvet. Erik tar hand om köket. Där står smutsiga tallrikar och glas, så han diskar det som inte får plats i diskmaskinen.",
+   "Efter frukost tvättar de. Tvättmaskinen står i badrummet. När den är klar hänger Aiko tvätten vid fönstret. Erik viker den rena tvätten från i går.",
+   "Sedan dammsuger Erik alla rum. Dammsugaren är gammal och låter mycket, men den fungerar. Aiko putsar fönstren.",
+   "På eftermiddagen slänger de soporna. Erik bär ut två fulla soppåsar. Sedan går de till affären och handlar mat.",
+   "På kvällen lagar de middag i det rena köket. ”Nu är allt rent igen”, säger Aiko glatt. ”Men hur länge?” skrattar Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko först?",
+    "options": [
+     "Hon bäddar sängen.",
+     "Hon dammsuger.",
+     "Hon handlar mat.",
+     "Hon diskar."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Texten säger: ”Först bäddar Aiko sängen i sovrummet.”"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför diskar Erik en del av disken för hand?",
+    "options": [
+     "Allt får inte plats i diskmaskinen.",
+     "Diskmaskinen är trasig.",
+     "Aiko vill inte använda diskmaskinen.",
+     "Han tycker om att diska."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han diskar ”det som inte får plats i diskmaskinen”.",
+    "explanationJa": "{全部|ぜんぶ}は{食器洗|しょっきあら}い{機|き}に{入|はい}らないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Tvättmaskinen står i köket.",
+    "correct": false,
+    "explanationSv": "Tvättmaskinen står i badrummet.",
+    "explanationJa": "{洗濯機|せんたくき}はバスルームにあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Erik ”viker den rena tvätten”. Vad gör han?",
+    "options": [
+     "Han lägger ihop kläderna så att de blir små och prydliga.",
+     "Han tvättar kläderna en gång till.",
+     "Han hänger kläderna vid fönstret.",
+     "Han slänger kläderna."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Att vika tvätt betyder att lägga ihop kläder.",
+    "explanationJa": "vika tvätt は{洗濯物|せんたくもの}をたたむことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tror att lägenheten kommer att vara ren för alltid.",
+    "correct": false,
+    "explanationSv": "Erik skämtar: ”Men hur länge?” Han tror att det snart blir stökigt igen.",
+    "explanationJa": "エリックは「でも、いつまで？」と{冗談|じょうだん}を{言|い}っています。またすぐ{散|ち}らかると{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hushållsarbete: hur man delar upp sysslorna hemma, vad man tycker om och inte tycker om att göra, och skillnader mellan hem i Sverige och Japan.",
+  "discussionPoints": [
+   "Vilka sysslor gör du helst, och vilka gör du minst gärna?",
+   "Hur ser en vanlig städdag ut hemma hos dig?",
+   "Skillnader mellan svenska och japanska hem (till exempel tvättstuga, badrum, att ta av sig skorna).",
+   "Hur delar man upp hushållsarbetet på ett rättvist sätt?"
+  ]
+ }
+}
