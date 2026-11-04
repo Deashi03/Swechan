@@ -9,6 +9,8 @@ Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det förs
 Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-catalog.v1.json` (344 kategorier, 2 016 **planerade** moduler).
 - **Fas A klar** (gren `claude/swechan-0.4-phase-a`): baslinje grön; två buggar i versionsnollställningen rättade (se CHANGELOG); granskningstester.
 - **Fas B klar** (gren `claude/swechan-0.4-phase-b`, bygger på fas A): katalogindex från den riktiga katalogfilen, validator, kompatibilitetsplaceringar för de fem modulerna, spärrar mot att starta planerade moduler. Ännu inget UI som använder katalogen (det är fas C: Utforska/Kurser med högst åtta val per skärm).
+- **Fas C klar** (gren `claude/swechan-0.4-phase-c`, bygger på fas B): Kurser och sökning på den riktiga katalogen, högst åtta val per skärm, planerade moduler har informationsvy utan Starta-knapp. Komponenttester i `src/ui/screens/Explore.test.tsx`.
+- **Nästa: fas D** (lat laddning av publicerade lektionskroppar) och **fas E** (CLI-verktyg för innehållsproduktion).
 - **Viktigt inför 0.4-release:** att höja `APP_VERSION` till 0.4.0 nollställer all progression så länge `devConfig.resetProgressOnUpdate = true` (återställningspunkt sparas och kan nu ångras utan att data försvinner igen). Produktägaren måste besluta om regeln ska vara på eller av vid releasen.
 
 ## ⚠️ Utvecklingsläge är PÅ (0.3.1)

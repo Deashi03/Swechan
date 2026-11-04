@@ -20,6 +20,13 @@
 - Planerade moduler kan inte startas: de finns inte i lektionsrepositoriet, `startOrResumeLearn` avvisar dem och `recommendedModule` föreslår dem aldrig (testat).
 - Katalogen laddas lat (`loadCatalog`) som en egen del och ingår inte i startpaketet. Nya skript: `npm run catalog:validate`; katalogtesterna ingår i `npm run validate:content`.
 
+### Fas C – Kurser och global sökning (PR "0.4 fas C")
+- Fliken **Kurser** bygger nu på den riktiga katalogen: 8 områden → underområden → ämnesgrupper → moduler, högst åtta val per skärm. Rotnivåns lista "Alla moduler" är borttagen.
+- Varje val visar hur många moduler som är **klara att studera** respektive **planerade**. Publicerade lektioner visas som modulkort och kan startas; planerade moduler är märkta *Planerad* och leder till en **informationsvy utan Starta-knapp** ("Den här modulen är inte färdig än"), med närliggande publicerade moduler.
+- **Global sökning** i katalogens metadata (ämnen och planerade moduler) plus publicerade moduler och ord, i typade sektioner med **sidindelning (8 per sida)**.
+- Modulsidans brödsmulor följer modulens placering i katalogen.
+- Katalogdelen (352 kB, 39 kB gzip) laddas först när Kurser öppnas; startpaketet växte ~8 kB (Kurser-koden). Laddningsfel visar "Försök igen".
+
 ## 0.3.1 – 2026-11-04
 Utvecklings- och testvänlighet (önskemål från produktägaren).
 

@@ -1,4 +1,16 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { useEffect, useState } from 'react';
+import type { CatalogIndex } from '../../content/catalog/catalogIndex';
+import { loadCatalog } from '../../content/catalog/loadCatalog';
+
+/** Catalog path of a published module (verified link or compatibility placement). */
+function placementPath(catalog: CatalogIndex | null, moduleId: string) {
+  if (!catalog) return [];
+  const link = catalog.mapping.links.find((l) => l.moduleId === moduleId);
+  if (link) { const cm = catalog.getModule(link.catalogId); return cm ? catalog.path(cm.catalogCategoryId) : []; }
+  const p = catalog.mapping.compatibilityPlacements.find((x) => x.moduleId === moduleId);
+  return p ? catalog.path(p.catalogCategoryId) : [];
+}
 import { getContent } from '../../content/repository';
 import type { Module } from '../../content/schema';
 import { getModuleProgress, isStepUnlocked } from '../../modules/moduleService';
@@ -44,14 +56,16 @@ export function ModuleOverview({ id }: { id: string }) {
   const progress = useLiveQuery(() => getModuleProgress(id), [id]);
   const completedIds = useLiveQuery(async () => new Set((await getDb().moduleProgress.where('status').equals('completed').toArray()).map((p) => p.moduleId)), [], new Set<string>());
   const dict = useDictionarySheet();
+  const [catalog, setCatalog] = useState<CatalogIndex | null>(null);
+  useEffect(() => { loadCatalog().then(setCatalog).catch(() => setCatalog(null)); }, []);
   if (!m) return <p>Modulen finns inte.</p>;
-  const path = repo.categoryPath(m.categoryId);
+  const catPath = placementPath(catalog, m.id);
   const missingPrereq = m.prerequisites.filter((p) => !completedIds.has(p));
   return (
     <div className="stack">
       <nav className="crumbs" aria-label="Kategori">
         <a href={href({ name: 'explore' })}>Kurser</a>
-        {path.map((c) => <span key={c.id}>› <a href={href({ name: 'explore', categoryId: c.id })}>{c.nameSv}</a></span>)}
+        {catPath.map((c) => <span key={c.catalogCategoryId}>› <a href={href({ name: 'explore', categoryId: c.catalogCategoryId })}>{c.titleSv}</a></span>)}
       </nav>
       <header>
         <h1>{m.titleSv}</h1>
