@@ -105,6 +105,8 @@ export const WordSense = z.object({
   synonyms: z.array(SynonymRelation).optional(),
   /** Ids of reusable Japanese-language grammar notes (grammarNotes.json). */
   grammarNotes: z.array(z.string()).optional(),
+  /** Sentence frame parts for form exercises, e.g. subject "Isen" for "smälta" (default subject "Hon"). */
+  frame: z.object({ subject: z.string().optional(), complement: z.string().optional() }).optional(),
   /** Tags (topic labels) for search and grouping. */
   tags: z.array(z.string()).optional(),
   quality: ReviewStatus,

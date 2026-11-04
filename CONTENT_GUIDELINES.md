@@ -39,6 +39,11 @@ Ordningen i `words` är alltså också **inlärningsordningen**. Lägg grundläg
 - Ge varje betydelse en kort `labelSv` (t.ex. "substans", "skolämne"). Etiketten visas i ordintroduktionen och ordboken.
 - Skriv **inte** "ordet har två betydelser" i `usageNote` – appen visar alla betydelser automatiskt i en egen sektion.
 
+## Övningar som bara har ett rätt svar (0.3)
+
+- Böjningsövningar använder fasta, naturliga meningar ("Jag tänker på den/det ___.", "… två ___.", "… de ___."; "Hon ___ nu / i går", "Hon har ___"; "Det är ___.", "De är ___."). För verb där "Hon" blir konstigt: ange `frame` på betydelsen, t.ex. `{"subject": "Armén", "complement": "staden"}`. Ramen kontrolleras av språkkontrollen.
+- Kontextövningar bygger på betydelsens exempelmeningar. Ge varje betydelse en `tags`-etikett för ämnet (t.ex. "hemmet", "kemi", "krig"); distraktorer väljs från *andra* ämnen så att bara ett ord passar. Skriv exempelmeningar där målordet är tydligt bestämt av sammanhanget.
+
 ## Process för en ny modul
 
 1. **Välj ämne** och placera det i kategoriträdet (lägg till kategorier vid behov; `parentId`, `order`, svenska + japanska namn).

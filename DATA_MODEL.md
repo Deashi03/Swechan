@@ -28,6 +28,7 @@ PlacementItem (p.*)  nivåtestets frågor
 - **Moduler refererar betydelser** (`senseId`), aldrig kopior. Samma betydelse kan finnas i flera moduler; en rättelse slår igenom överallt.
 - **Inflection** är en diskriminerad union per ordklass (`noun`, `verb`, `adjective`, `none`). Alla former lagras explicit; `variants` håller godtagna alternativ (t.ex. *dammsög / dammsugde*). Partikelverb har `particle`; substantiv utan plural har `indefPl: null`.
 - **Japansk text** använder furigana-markering `{分子|ぶんし}`; varje kanji måste ha läsning (valideras).
+- **frame** (valfri) på en betydelse: `{ subject?, complement? }` för böjningsövningarnas meningsramar, t.ex. `{ subject: "Isen" }` för *smälta* → "Isen ___ i går." Standardsubjekt är "Hon".
 - **labelSv** (valfri) är en kort etikett per betydelse ("substans", "skolämne") som visas i ordintroduktion och ordbok.
 - **Ordningen i `Module.words`** är inlärningsordningen och styr vilka ord en definition får använda.
 - **Synonymrelationer** ligger på betydelsenivå (`synonym | near | antonym | related`) med valfria förklaringar.

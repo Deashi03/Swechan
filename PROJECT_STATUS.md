@@ -1,8 +1,16 @@
 # Projektstatus – överlämning
 
-**Version:** 0.2.0 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `claude/swechan-0.2` (0.1 är publicerad via GitHub Pages från `main`)
+**Version:** 0.3.0 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `claude/swechan-0.3` (0.2 är publicerad via GitHub Pages från `main`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## Nytt i 0.3
+
+- **Designen "Fjord"** (användarens val efter tre omgångar skisser; skisserna togs fram utanför repot). Tokens i `src/ui/styles/tokens.css`, typsnitt Manrope i `public/fonts/` (OFL). Startsida `src/ui/screens/Home.tsx`, övningar `src/ui/exercises/ExerciseView.tsx` (resultatpanel längst ner, inget auto-avancemang).
+- **Jonathan** (`src/ui/components/Jonathan.tsx`): platshållare (monogram) med stämningar och händelsereaktioner. Den riktiga avataren ersätter bara komponentens innehåll.
+- **Dagens svenska ord** (`src/daily/wordOfTheDay.ts`): deterministiskt per datum.
+- **Pedagogiska rättningar**: kontextövningar med distraktorer från annat ämne, samma form och genus, och översättningen dold tills ledtråd/svar; böjningsövningar med naturliga meningsramar utan grammatiktermer (`inflectionFramesFor`, valfritt `frame` på betydelser); testade i `learning.test.ts`.
+- Användarens önskemål om designen: proffsig läroplattform, avslappnad, lätt svenskt tema (inte för tematiskt), lite plats för gullighet. Övningsvyer i stil med ordkort + kontextmening + knappar med djup uppskattades.
 
 ## Nytt i 0.2 (efter användartest på iPhone)
 
@@ -38,7 +46,11 @@ Användarens feedback på 0.1: (1) förklaringar använde svårare ord än ordet
 
 \* `word_mastered` finns i händelsetypen men emitteras ännu inte (se Återstår).
 
-## Testat (faktiskt genomfört 2026-11-04, version 0.2)
+## Testat (faktiskt genomfört 2026-11-04, version 0.3)
+
+- `npm run typecheck` OK · `npm test` **88 tester gröna** (nya: distraktorer från annat ämne och samma genus, meningsramar utan "alla" och grammatiktermer, inget auto-avancemang) · `npm run build` OK · `npm run e2e` **passerar** med nya designen · skärmbilder av startsida, ordintro, flerval, kontextövning och skrivövning granskade.
+
+## Testat (version 0.2)
 
 - `npm run typecheck` OK · `npm test` **85 tester gröna** (inkl. språkkontrollen över allt innehåll och inlärningskedjan) · `npm run build` OK · `npm run e2e` **passerar** (inkl. ny kontroll av "Hoppa över") · skärmbilder av nya ordintroduktioner granskade.
 
@@ -60,7 +72,7 @@ Användarens feedback på 0.1: (1) förklaringar använde svårare ord än ordet
 2c. Språkkontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig (en användare kan hoppa över kedjan).
 3. Morfologin känner bara igen lagrade former: delade partikelverb ("plockar hon undan"), s-passiv ("belägrades") och sammansättningar ("vattenmolekyl") länkas inte.
 4. Inget IPA-uttal; uttal endast via enhetens talsyntes (iPhone kan behöva ladda ner en svensk röst).
-5. Efter ett rätt svar på första försöket går övningen vidare automatiskt efter 0,85 s; öppnar man ordboken inom den tiden byter övningen bakom arket.
+5. (Åtgärdat i 0.3: inget automatiskt avancemang längre.) Kontextövningarnas felalternativ kan komma från moduler som eleven ännu inte gjort (de väljs från andra ämnen för att vara entydiga).
 6. Ändrat "repetitioner per dag" gäller först nästa dag (dagens plan är fryst).
 7. Extrarepetitionens urval sparas inte (varje svar sparas dock).
 8. Fast tidszon stöds i datamodell och logik men kan inte väljas i UI.
@@ -75,6 +87,8 @@ Användarens feedback på 0.1: (1) förklaringar använde svårare ord än ordet
 Se `ROADMAP.md`. Kortsiktigt viktigast: test på fysisk iPhone, mänsklig innehållsgranskning, fler moduler, stödordbok för lästexter.
 
 ## Nästa rekommenderade arbetsuppgift
+
+(0.3) 1. Testa Fjord-designen på iPhone (särskilt resultatpanelen längst ner och tangentbordet i skrivövningar). 2. Mänsklig granskning av innehållet. 3. Fler moduler. 4. Ta fram Jonathan-avataren (illustration) och koppla in den i `Jonathan.tsx`.
 
 (0.2) 1. Merga 0.2 till `main` (publiceras automatiskt) och testa på iPhone: gå igenom *Material och ämnen* och kontrollera att förklaringarna känns begripliga. 2. Mänsklig granskning av innehållet. 3. Fler moduler i kedjor enligt `CONTENT_GUIDELINES.md` (kontrollerat ordförråd).
 

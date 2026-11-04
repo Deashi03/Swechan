@@ -1,19 +1,41 @@
+/**
+ * Home ("Hem") – Fjord layout (0.3):
+ *   header (Jonathan + greeting + streak) → "Dagens pass" hero card with both
+ *   parts and ONE primary action → week → "Dagens svenska ord" → notices.
+ */
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useState } from 'react';
 import { getContent } from '../../content/repository';
 import { ensureDailySession, reviewLoad } from '../../daily/dailySession';
-import { getModuleProgress, recommendedModule } from '../../modules/moduleService';
+import { wordOfTheDay } from '../../daily/wordOfTheDay';
+import { getModuleProgress, isStepUnlocked, recommendedModule } from '../../modules/moduleService';
 import { calendarDays } from '../../streak/streak';
-import { computeStats } from '../../stats/stats';
 import { getDb, getMeta } from '../../storage/db';
+import type { ModuleProgressRecord, StepId } from '../../storage/types';
 import { weekOf, weekdayShortSv } from '../../lib/date';
-import { href, navigate } from '../app/router';
+import { href, navigate, type Route } from '../app/router';
 import { useStreak, useToday } from '../app/hooks';
-import { Avatar, useAvatarMood } from '../components/Avatar';
+import { Jonathan, useJonathanMood } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
 import { Ja } from '../components/Ja';
 import { ProgressBar } from '../components/Progress';
-import { moduleStatusLabel } from './ModuleOverview';
+import { useDictionarySheet } from '../dictionary/DictionarySheet';
+
+const MARK_SV = { completed: 'klar', frozen: 'skyddad av freeze', missed: 'missad', today: 'idag, inte klar än', 'today-done': 'idag, klar', future: 'kommande', 'before-start': 'före start' } as const;
+const DATE_FMT = new Intl.DateTimeFormat('sv-SE', { weekday: 'long', day: 'numeric', month: 'long' });
+
+const capitalize = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+
+function greeting(hour: number): string {
+  if (hour < 10) return 'God morgon!';
+  if (hour < 17) return 'Hej!';
+  return 'God kväll!';
+}
+
+function nextModuleStep(p: ModuleProgressRecord | undefined): StepId {
+  for (const s of ['learn', 'read', 'converse'] as StepId[]) if (p?.steps[s] !== 'completed' && isStepUnlocked(p, s)) return s;
+  return 'learn';
+}
 
 export function Home() {
   const today = useToday();
@@ -24,125 +46,106 @@ export function Home() {
   const installDate = useLiveQuery(() => getMeta<string>('installDate'), []);
   const rec = useLiveQuery(() => recommendedModule(), [day?.modulesCompleted.length]);
   const recProgress = useLiveQuery(() => (rec ? getModuleProgress(rec.id) : undefined), [rec?.id]);
-  const stats = useLiveQuery(() => computeStats(), [day?.reviewIndex, day?.modulesCompleted.length]);
   const load = useLiveQuery(() => (ready ? reviewLoad() : undefined), [ready, day?.reviewIndex]);
+  const dict = useDictionarySheet();
+
   const reviewDone = !!day?.reviewCompletedAt;
   const moduleDone = (day?.modulesCompleted.length ?? 0) > 0;
   const allDone = !!day?.completedAt;
-  const { mood, pulse } = useAvatarMood(allDone ? 'happy' : 'idle');
+  const { mood, pulse } = useJonathanMood(allDone ? 'happy' : 'idle');
   const doneModule = day?.modulesCompleted[0] ? getContent().getModule(day.modulesCompleted[0]) : undefined;
+  const now = new Date();
+  const partsLeft = (reviewDone ? 0 : 1) + (moduleDone ? 0 : 1);
+  const modSteps = recProgress ? Object.values(recProgress.steps).filter((s) => s === 'completed').length : 0;
 
-  const greeting = allDone
-    ? { sv: 'Dagens Swechan är klar! Bra jobbat!', ja: '{今日|きょう}の Swechan は{完了|かんりょう}！よくがんばりました！' }
-    : reviewDone || moduleDone
-      ? { sv: 'En sak kvar idag – du klarar det!', ja: 'あと1つ！がんばって！' }
-      : { sv: 'Hej! Två saker idag: repetition och en ny modul.', ja: '{今日|きょう}は{復習|ふくしゅう}と{新|あたら}しいモジュールの2つです。' };
+  // ONE primary action: continue with whatever comes next.
+  const next: { label: string; route: Route } | null = !reviewDone
+    ? { label: (day?.reviewIndex ?? 0) > 0 ? 'Fortsätt där du slutade' : 'Starta dagens pass', route: { name: 'reviewSession', mode: 'daily' } }
+    : !moduleDone && rec
+      ? { label: recProgress ? 'Fortsätt med modulen' : 'Starta dagens modul', route: { name: nextModuleStep(recProgress), id: rec.id } }
+      : null;
+
+  const wotd = today ? wordOfTheDay(today) : undefined;
 
   return (
     <div className="stack">
-      <header className="row between">
-        <div className="row" style={{ gap: 6 }}>
-          <strong style={{ fontSize: 'var(--fs-xl)', color: 'var(--c-primary)' }}>Swechan</strong>
+      <header className="row" style={{ gap: 12 }}>
+        <Jonathan mood={mood} pulse={pulse} size={48} />
+        <div className="grow">
+          <div style={{ fontWeight: 800, fontSize: 'var(--fs-lg)', lineHeight: 1.2 }}>{greeting(now.getHours())}</div>
+          <div className="small muted">{capitalize(DATE_FMT.format(now))}</div>
         </div>
-        <div className="row" style={{ gap: 6 }}>
-          <span className="chip streak" aria-label={`Streak: ${streak?.current ?? 0} ${streak?.current === 1 ? "dag" : "dagar"}`}>🔥 {streak?.current ?? 0}</span>
-          <span className="chip freeze" aria-label={`${streak?.freezes ?? 0} streak freeze`}>❄️ {streak?.freezes ?? 0}</span>
-          <a className="icon-btn" href={href({ name: 'settings' })} aria-label="Inställningar och statistik"><Icon name="gear" /></a>
-        </div>
+        <span className="chip streak" aria-label={`Streak: ${streak?.current ?? 0} ${streak?.current === 1 ? 'dag' : 'dagar'}`}>🔥 {streak?.current ?? 0}</span>
+        <a className="icon-btn" href={href({ name: 'settings' })} aria-label="Inställningar och statistik"><Icon name="gear" /></a>
       </header>
 
-      <div className="avatar-wrap">
-        <Avatar mood={mood} pulse={pulse} size={72} />
-        <div className="bubble"><div>{greeting.sv}</div><Ja text={greeting.ja} className="xsmall muted" as="div" /></div>
-      </div>
-
-      <section className="card stack" aria-labelledby="today-title">
-        <div className="row between">
-          <h2 id="today-title" style={{ margin: 0 }}>Dagens Swechan</h2>
-          {allDone && <span className="chip done">Klar ✓</span>}
-        </div>
-
-        <div className="card tint-review stack-sm" style={{ boxShadow: 'none' }}>
-          <div className="row between">
-            <strong>A. Repetition</strong>
-            {reviewDone && <span className="chip done"><Icon name="check" size={14} /> Klar</span>}
+      <section className="card primary stack-sm" aria-labelledby="today-title" style={{ padding: 18, borderRadius: 'var(--r-xl)' }}>
+        <span className="hero-glow" aria-hidden />
+        <div className="xsmall" style={{ fontWeight: 800, letterSpacing: '0.08em', opacity: 0.85 }}>DAGENS PASS</div>
+        <h2 id="today-title" style={{ margin: 0, fontSize: 'var(--fs-xl)' }}>
+          {allDone ? 'Klart för idag! 🎉' : partsLeft === 2 ? '2 delar · ca 20 min' : '1 del kvar'}
+        </h2>
+        <div className="hero-seg" style={{ marginTop: 6 }}>
+          <div>
+            <div className="row between"><strong className="small">Repetition</strong>{reviewDone && <Icon name="check" size={16} />}</div>
+            <div className="xsmall" style={{ opacity: 0.85 }}>
+              {day?.noReviewMaterial ? 'Inga tidigare ord ännu' : `${day?.reviewIndex ?? 0} av ${day?.reviewTarget ?? 0} ord`}
+            </div>
+            <div style={{ marginTop: 8 }}><ProgressBar value={day?.noReviewMaterial ? 1 : day?.reviewIndex ?? 0} max={day?.noReviewMaterial ? 1 : day?.reviewTarget ?? 0} label="Repetition" onPrimary /></div>
           </div>
-          {day?.noReviewMaterial ? (
-            <p className="small muted" style={{ margin: 0 }}>Inga tidigare inlärda ord att repetera ännu – räknas som klar idag.</p>
-          ) : (
-            <>
-              <div className="small">{day?.reviewIndex ?? 0}/{day?.reviewTarget ?? 0} ord repeterade</div>
-              <ProgressBar value={day?.reviewIndex ?? 0} max={day?.reviewTarget ?? 0} label="Repetition" />
-              {!reviewDone && <button className="btn block" onClick={() => navigate({ name: 'reviewSession', mode: 'daily' })}>{(day?.reviewIndex ?? 0) > 0 ? 'Fortsätt repetitionen' : 'Starta repetitionen'}</button>}
-            </>
-          )}
-        </div>
-
-        <div className="card tint-module stack-sm" style={{ boxShadow: 'none' }}>
-          <div className="row between">
-            <strong>B. Dagens modul</strong>
-            {moduleDone && <span className="chip done"><Icon name="check" size={14} /> Klar</span>}
+          <div>
+            <div className="row between"><strong className="small">{moduleDone ? 'Modul klar' : 'Ny modul'}</strong>{moduleDone && <Icon name="check" size={16} />}</div>
+            <div className="xsmall" style={{ opacity: 0.85 }}>{moduleDone ? doneModule?.titleSv : rec?.titleSv ?? 'Alla moduler klara'}</div>
+            <div style={{ marginTop: 8 }}><ProgressBar value={moduleDone ? 3 : modSteps} max={3} label="Dagens modul" onPrimary /></div>
           </div>
-          {moduleDone && doneModule ? (
-            <div className="small">{doneModule.titleSv} <span className="muted">– genomförd</span></div>
-          ) : rec ? (
-            <>
-              <div>{rec.titleSv}</div>
-              <Ja text={rec.titleJa} className="small muted" as="div" />
-              <div className="xsmall muted">{moduleStatusLabel(recProgress)}</div>
-              <ProgressBar value={recProgress ? Object.values(recProgress.steps).filter((s) => s === 'completed').length : 0} max={3} label="Modulens steg" accent />
-              <div className="row">
-                <button className="btn grow" onClick={() => navigate({ name: 'module', id: rec.id })}>{recProgress ? 'Fortsätt modulen' : 'Starta modulen'}</button>
-                <a className="btn ghost small" href={href({ name: 'explore' })}>Välj annan</a>
-              </div>
-            </>
-          ) : (
-            <p className="small muted" style={{ margin: 0 }}>Du har gjort alla moduler som finns just nu! Fler kommer.</p>
-          )}
         </div>
-        {allDone && (
-          <div className="celebrate" style={{ padding: 'var(--sp-2)' }}>
-            <div className="big-emoji" aria-hidden>🎉</div>
-            <strong>Streaken är uppdaterad: {streak?.current} {streak?.current === 1 ? 'dag' : 'dagar'}!</strong>
-          </div>
+        {next ? (
+          <button className="btn light block" style={{ marginTop: 10 }} onClick={() => navigate(next.route)}>{next.label}</button>
+        ) : (
+          <div className="small" style={{ marginTop: 6, opacity: 0.9 }}>Streaken är {streak?.current} {streak?.current === 1 ? 'dag' : 'dagar'}. Vill du göra mer? Prova extra repetition eller en ny modul.</div>
+        )}
+        {!moduleDone && rec && reviewDone === false && (
+          <a href={href({ name: 'module', id: rec.id })} className="xsmall" style={{ color: '#fff', opacity: 0.85, textAlign: 'center' }}>Gå direkt till modulen</a>
         )}
       </section>
 
       {load && load.debt > 0 && reviewDone && (
-        <div className={`card ${load.warn ? 'tint-warning' : ''} small stack-sm`}>
-          <div><strong>{load.debt} förfallna ord</strong> ryms inte i dagens repetition.</div>
-          <a className="btn secondary small" href={href({ name: 'review' })}>Extra repetition</a>
+        <div className={`card ${load.warn ? 'tint-warning' : ''} small row between`}>
+          <span><strong>{load.debt} förfallna ord</strong> ryms inte i dagens repetition.</span>
+          <a className="btn secondary small" href={href({ name: 'review' })}>Extra</a>
         </div>
       )}
 
-      {streak && today && (
-        <section className="card stack-sm" aria-label="Veckans streak">
-          <div className="row between small">
-            <span>🔥 Streak <strong>{streak.current}</strong></span>
-            <span className="muted">Längsta: {streak.longest} · ❄️ {streak.freezes}</span>
-          </div>
-          <div className="week">
-            {calendarDays(streak, weekOf(today), today, installDate ?? today).map((d) => (
-              <div key={d.date} className="day">
-                <span className={`dot ${d.mark}`} aria-label={`${d.date}: ${MARK_SV[d.mark]}`}>{d.mark === 'completed' || d.mark === 'today-done' ? '✓' : d.mark === 'frozen' ? '❄' : ''}</span>
-                {weekdayShortSv(d.date)}
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+      <div>
+        <div className="section-head"><span>Veckan</span><a href={href({ name: 'stats' })}>Statistik</a></div>
+        {streak && today && (
+          <section className="card row between" aria-label="Veckans streak">
+            <div className="week" style={{ flex: 1, maxWidth: 250 }}>
+              {calendarDays(streak, weekOf(today), today, installDate ?? today).map((d) => (
+                <div key={d.date} className="day">
+                  <span className={`dot ${d.mark}`} aria-label={`${d.date}: ${MARK_SV[d.mark]}`}>{d.mark === 'frozen' ? '❄' : d.mark === 'completed' || d.mark === 'today-done' ? '✓' : ''}</span>
+                  {weekdayShortSv(d.date)}
+                </div>
+              ))}
+            </div>
+            <div style={{ textAlign: 'right' }}>
+              <div style={{ fontSize: 22, fontWeight: 800, lineHeight: 1 }}>{streak.current}</div>
+              <div className="xsmall muted">dagar · ❄ {streak.freezes}</div>
+            </div>
+          </section>
+        )}
+      </div>
 
-      {stats && (
-        <a className="card clickable row" href={href({ name: 'stats' })} style={{ textDecoration: 'none' }}>
-          <div className="grow small">
-            <div><strong>{stats.levels.introduced}</strong> ord introducerade · <strong>{stats.levels.active}</strong> aktivt behärskade</div>
-            <div className="muted">{stats.modulesCompleted} moduler klara</div>
-          </div>
-          <Icon name="chart" />
-        </a>
+      {wotd && (
+        <button className="card clickable word-of-day" style={{ display: "flex", alignItems: "center", gap: 12 }} onClick={() => dict.open({ senseId: wotd.sense.id })}>
+          <span className="flag-mini" aria-hidden />
+          <span className="grow">
+            <strong>Dagens svenska ord: {wotd.entry.lemma}</strong><br />
+            <Ja text={wotd.sense.ja} className="small muted" />
+          </span>
+          <Icon name="chevron" size={18} />
+        </button>
       )}
     </div>
   );
 }
-
-const MARK_SV = { completed: 'klar', frozen: 'skyddad av freeze', missed: 'missad', today: 'idag, inte klar än', 'today-done': 'idag, klar', future: 'kommande', 'before-start': 'före start' } as const;

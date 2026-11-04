@@ -93,6 +93,9 @@ ui  ──►  daily / modules / dictionary / conversation / stats / audio / fee
 12. **Ordbokssökning utan externt bibliotek**: exakt Map + prefix via binärsökning + begränsad delsträngsskanning. Testat med 20 000 syntetiska poster.
 13. **Konversation via adapter** (`ConversationProvider`) – v0.1 kopierar prompt till ChatGPT; en framtida inbyggd chatt implementerar samma gränssnitt.
 14. **Kontrollerat ordförråd som automatisk kvalitetskontroll** (0.2) – `content/vocabularyCheck.ts` + `data/core/coreVocabulary.json`. Grundord känns igen med suffixregler (bara en QA-heuristik), målord via lagrade former. Testet `vocabularyCheck.test.ts` underkänner bygget om en text använder okända ord.
+16. **Designsystem "Fjord"** (0.3) – alla färger/typografi/former som tokens; Manrope självhostad för offline och integritet (inga anrop till Google).
+17. **Jonathan som stabil komponent** (0.3) – avatarens plats, storlek och händelsereaktioner är fasta; bara grafiken byts senare.
+18. **Övningar utan auto-avancemang** (0.3) – resultatet visas i en bottenpanel och kräver "Fortsätt"; säkrare (ordboken, läsning av förklaringen) till priset av ett tryck.
 15. **Förkunskaper styr rekommendationen, inte åtkomsten** (0.2) – `recommendedModule()` föreslår bara moduler vars förkunskaper är klara; moduler låses aldrig.
 
 ## Regler för vidareutveckling

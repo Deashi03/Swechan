@@ -24,7 +24,7 @@ export function Explore({ categoryId }: { categoryId?: string }) {
 
   return (
     <div className="stack">
-      <h1>Utforska</h1>
+      <h1>Kurser</h1>
       <div className="row">
         <input className="input search grow" type="search" placeholder="Sök moduler, ämnen och ord" value={q} onChange={(e) => setQ(e.target.value)} aria-label="Global sökning" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
       </div>

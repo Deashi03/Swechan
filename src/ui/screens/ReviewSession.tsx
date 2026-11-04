@@ -12,7 +12,7 @@ import { hashString } from '../../lib/random';
 import { getDb } from '../../storage/db';
 import type { Dimension } from '../../storage/types';
 import { navigate } from '../app/router';
-import { Avatar, useAvatarMood } from '../components/Avatar';
+import { Jonathan } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
 import { ProgressBar } from '../components/Progress';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
@@ -32,7 +32,6 @@ export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
   const [extra, setExtra] = useState<{ ids: string[]; index: number } | null>(null);
   const [busy, setBusy] = useState(false);
   const dict = useDictionarySheet();
-  const { mood, pulse } = useAvatarMood('idle');
   useEffect(() => {
     ensureDailySession().then((d) => setDate(d.date));
     if (mode === 'extra') planExtraReviews(10).then((ids) => setExtra({ ids, index: 0 }));
@@ -67,7 +66,7 @@ export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
   if (!currentId) {
     return (
       <div className="celebrate stack">
-        <Avatar mood="cheer" size={96} />
+        <Jonathan mood="cheer" size={96} />
         <h1>{ids.length === 0 ? 'Inget att repetera just nu' : mode === 'daily' ? 'Dagens repetition är klar!' : 'Extra repetition klar!'}</h1>
         <p className="muted">{ids.length > 0 && `${ids.length} uppgifter genomförda.`}</p>
         <button className="btn block" onClick={() => navigate({ name: 'home' })}>Till startsidan</button>
@@ -80,9 +79,8 @@ export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
       <div className="session-bar">
         <button className="icon-btn" onClick={() => navigate({ name: mode === 'daily' ? 'home' : 'review' })} aria-label="Pausa"><Icon name="close" /></button>
         <ProgressBar value={index} max={ids.length} label={`${index} av ${ids.length}`} />
-        <span className="xsmall muted">{index}/{ids.length}</span>
+        <span className="xsmall muted" style={{ fontWeight: 800 }}>{index}/{ids.length}</span>
         <button className="icon-btn" onClick={() => dict.open()} aria-label="Öppna ordboken"><Icon name="book" /></button>
-        <Avatar mood={mood} pulse={pulse} size={40} />
       </div>
       {exercise ? <ExerciseView key={`${currentId}-${index}`} exercise={exercise} onDone={onDone} />
         : card && card.id === currentId ? <div className="stack"><p className="muted">Det här ordet finns inte längre i innehållet och kan inte visas.</p><button className="btn" onClick={() => navigate({ name: 'home' })}>Till startsidan</button></div>

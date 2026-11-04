@@ -56,6 +56,20 @@ describe('ExerciseView', () => {
     expect(results[0]).toMatchObject({ outcome: 'retry', confusedWithSenseId: ex.options[wrongIdx]!.senseId });
   });
 
+  it('choice: a first-try correct answer shows the result sheet and waits for "Fortsätt" (no auto-advance)', () => {
+    vi.useFakeTimers();
+    const results: ExerciseResult[] = [];
+    const ex = genReverseChoice(repo.getSense('s.säng.1')!, ctx)!;
+    render(<DictionarySheetProvider><ExerciseView exercise={ex} onDone={(r) => results.push(r)} /></DictionarySheetProvider>);
+    fireEvent.click(screen.getAllByRole('button').filter((b) => b.classList.contains('option'))[ex.correctIndex]!);
+    vi.advanceTimersByTime(5000);
+    expect(results).toEqual([]);
+    expect(screen.getByText(/Rätt!/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: 'Fortsätt' }));
+    expect(results[0]).toMatchObject({ outcome: 'first' });
+    vi.useRealTimers();
+  });
+
   it('opening and closing the dictionary keeps the typed answer', () => {
     const ex = genSpelling(repo.getSense('s.kök.1')!, ctx);
     render(<DictionarySheetProvider><OpenDict /><ExerciseView exercise={ex} onDone={() => {}} /></DictionarySheetProvider>);

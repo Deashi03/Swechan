@@ -30,6 +30,8 @@ export type ChoiceExercise = Base & {
   hint?: { text: string; lang: 'sv' | 'ja' };
   /** Shown with the result. */
   explanation?: { text: string; lang: 'sv' | 'ja' };
+  /** Extra line shown with the result (e.g. the Japanese translation of a context sentence). */
+  note?: { text: string; lang: 'sv' | 'ja' };
   comparisonId?: string;
 };
 

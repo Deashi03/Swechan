@@ -4,7 +4,7 @@ import { checkTypedAnswer } from '../../learning/answerCheck';
 import { scorePlacement } from '../../learning/placement';
 import { setMeta } from '../../storage/db';
 import { navigate } from '../app/router';
-import { Avatar } from '../components/Avatar';
+import { Jonathan } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
 import { Ja } from '../components/Ja';
 import { ProgressBar } from '../components/Progress';
@@ -41,7 +41,7 @@ export function PlacementScreen() {
   if (result) {
     return (
       <div className="stack celebrate">
-        <Avatar mood="happy" size={96} />
+        <Jonathan mood="happy" size={96} />
         <h1>Tack!</h1>
         <p>{result.estimatedLevel ? <>Ditt ordförråd verkar ligga ungefär på nivå <strong>{result.estimatedLevel}</strong>.</> : 'Vi börjar från grunden.'}</p>
         <p className="small muted">Det här är en grov uppskattning från ett kort test – inte en officiell eller validerad CEFR-bedömning. Den används för att föreslå moduler, anpassa samtalsprompten och korta ner introduktionen av mycket enkla ord. Du kan göra om testet i inställningarna.</p>
@@ -91,7 +91,7 @@ export function PlacementScreen() {
 export function WelcomeScreen() {
   return (
     <div className="stack celebrate">
-      <Avatar mood="happy" size={120} />
+      <Jonathan mood="happy" size={120} />
       <h1>Välkommen till Swechan!</h1>
       <Ja as="p" text="Swechan へようこそ！{毎日|まいにち}{少|すこ}しずつ、スウェーデン{語|ご}の{言葉|ことば}を{増|ふ}やしていきましょう。" />
       <p className="muted">Varje dag: repetera tidigare ord och lär dig en ny modul med 20–30 ord.</p>

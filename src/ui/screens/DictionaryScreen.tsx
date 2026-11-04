@@ -23,7 +23,7 @@ export function DictionaryScreen({ entryId, tab }: { entryId?: string; tab?: 'sa
   }
   return (
     <div className="stack">
-      <h1>Ordlista</h1>
+      <h1>Ordbok</h1>
       <div className="row" role="tablist">
         <a role="tab" aria-selected={tab !== 'saved'} className={`btn small ${tab === 'saved' ? 'secondary' : ''}`} href={href({ name: 'dictionary' })}>Sök</a>
         <a role="tab" aria-selected={tab === 'saved'} className={`btn small ${tab === 'saved' ? '' : 'secondary'}`} href={href({ name: 'dictionary', tab: 'saved' })}>Sparade ord ({saved.length})</a>

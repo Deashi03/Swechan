@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.3.0 – 2026-11-04
+Fokus: ny visuell design ("Fjord") och tydligare övningar.
+
+### Ändrat – design
+- Ny designriktning **Fjord** (vald bland 31 skisser): professionell läroplattform med lugn vit/grå grund, en stark blå huvudfärg och en liten gul accent som lätt svenskt inslag. Typsnittet Manrope (lokalt i appen, fungerar offline).
+- Ny startsida: hälsning med Jonathan, kortet **Dagens pass** med båda delarna och *en* knapp som alltid fortsätter med nästa sak, veckokort med streak, **Dagens svenska ord**.
+- Ny övningsvy: ordkort med exempelmening, svarsalternativ med A–D, resultat i en panel längst ner med "Fortsätt".
+- Flikarna heter nu Hem, Kurser, Repetition och Ordbok.
+- **Jonathan**: den tillfälliga figuren är ersatt av en Jonathan-platshållare (monogram) som redan reagerar på inlärningshändelser; den riktiga avataren kan bytas in utan att layouten ändras.
+
+### Rättat – pedagogik (från användartest)
+- **Tvetydiga kontextfrågor**: felalternativen hämtas nu från ett annat ämnesområde och har samma ordklass, form och genus som målordet – bara ett alternativ passar i meningen, och grammatiken avslöjar inte svaret. Den japanska översättningen visas först som ledtråd eller efter svaret.
+- **Böjningsövningar** använder naturliga meningar där bara en form passar ("Jag tänker på de ___.", "Isen ___ i går.") i stället för "alla ___" (som godtog både *sängar* och *sängarna*). Inga grammatiktermer i instruktionerna ("bestämd plural", "grundform, substantiv" m.m. är borta). Ordets egna meningsramar kan anges i innehållet (`frame`).
+- Övningen går inte längre vidare automatiskt efter rätt svar (det kunde byta övning bakom ordboken).
+
 ## 0.2.0 – 2026-11-04
 Fokus: pedagogiskt innehåll som bygger på vad eleven redan kan.
 
