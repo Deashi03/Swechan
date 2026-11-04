@@ -10,8 +10,9 @@
     "typecheck": "tsc -b",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate:content": "vitest run src/content/contentValidation.test.ts src/content/vocabularyCheck.test.ts",
-    "e2e": "node scripts/e2e-smoke.mjs"
+    "validate:content": "vitest run src/content/contentValidation.test.ts src/content/vocabularyCheck.test.ts src/content/catalog/catalog.test.ts",
+    "e2e": "node scripts/e2e-smoke.mjs",
+    "catalog:validate": "vitest run src/content/catalog/catalog.test.ts"
   },
   "dependencies": {
     "dexie": "4.0.11",

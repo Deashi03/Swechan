@@ -11,6 +11,15 @@
 - README: 15–20 ord per modul (stod 20–30).
 - Ingen ändring av FSRS, streak, IndexedDB-schema, ord- eller modul-ID:n. `APP_VERSION` är oförändrad (0.3.1) för att inte utlösa någon nollställning.
 
+### Fas B – planerad katalog (PR "0.4 fas B")
+- **Den riktiga katalogen** `planning/catalog/swechan-catalog.v1.json` (344 kategorier, 2 016 planerade moduler) är nu datakällan för katalogindexet. Inga syntetiska produktionsdata; syntetiska fall finns bara i isolerade tester.
+- Separata Zod-scheman för planerade katalogposter (`src/content/catalog/schema.ts`), helt skilda från `Module`-lektioner.
+- `CatalogIndex`: deterministisk uppbyggnad i katalogens ordning, menyval per skärm, sökning i metadata, översättningsstatus.
+- `validateCatalog`: unika ID:n, trädstruktur, högst tre kategorinivåer, moduler bara i ämnesgrupper, **högst åtta val per menyskärm** (högst sju moduler per ämnesgrupp), 15–20 målord, kopplingar och att inga planerade poster är startbara.
+- **De fem publicerade modulerna** behåller sina `m.*`-ID:n och får **kompatibilitetsplaceringar** (`src/content/data/catalog/publishedMapping.json`) i Hem & boende, Kemi och Militärhistoria. Ingen motsvarar exakt en katalogpost, så inga 1:1-kopplingar görs; ämnesöverlapp dokumenteras separat.
+- Planerade moduler kan inte startas: de finns inte i lektionsrepositoriet, `startOrResumeLearn` avvisar dem och `recommendedModule` föreslår dem aldrig (testat).
+- Katalogen laddas lat (`loadCatalog`) som en egen del och ingår inte i startpaketet. Nya skript: `npm run catalog:validate`; katalogtesterna ingår i `npm run validate:content`.
+
 ## 0.3.1 – 2026-11-04
 Utvecklings- och testvänlighet (önskemål från produktägaren).
 

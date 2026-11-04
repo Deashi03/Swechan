@@ -38,6 +38,22 @@ PlacementItem (p.*)  nivåtestets frågor
 ### Innehållsversioner
 Varje modul har `contentVersion` och `updatedAt`. Användarens `ModuleProgress.contentVersion` sparar vilken version hen började med. (Hantering av ändrad version under pågående modul: se PROJECT_STATUS – planerat.)
 
+## Planeringskatalog (0.4)
+
+`planning/catalog/swechan-catalog.v1.json` – produktägarens auktoritativa planeringsdata (ändras inte av appen):
+
+```
+CatalogCategory  catalogCategoryId (R01 · R01-A01 · R01-A01-T01), parentCatalogCategoryId, titleSv, titleJa (null = ej granskad)
+CatalogModule    catalogId (SWC-XXX-nn-nn-nn), catalogCategoryId (alltid en ämnesgrupp), titleSv, titleJa, status planned|published, targetWordCount 15–20
+```
+8 rotområden → 48 underområden → 288 ämnesgrupper → 2 016 moduler (7 per ämnesgrupp). En planerad post har inga ord, texter eller övningar och kan aldrig startas.
+
+`src/content/data/catalog/publishedMapping.json` – appens koppling till publicerade lektioner:
+- `links`: verifierad 1:1 `catalogId` ⇔ `moduleId` (tom i 0.4 fas B).
+- `compatibilityPlacements`: publicerad `m.*`-modul som visas i en katalogkategori utan att påstå ett `catalogId`; `overlapsCatalogIds` anger ämnesöverlapp (inte likvärdighet).
+
+`catalogId` (planering) och `moduleId` (publicerad lektion) är olika identiteter. Användardata refererar alltid `moduleId`/`senseId`, aldrig `catalogId`.
+
 ## Användardata (IndexedDB `swechan`, Dexie-version 1)
 
 | Tabell | Nyckel | Innehåll |
