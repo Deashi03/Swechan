@@ -24,6 +24,8 @@ Moduler kan bygga på varandra (`prerequisites`). En förkunskapsmodul lär ut d
 
 ## Designval (rimliga men inte direkt bevisade i just denna form)
 
+- **15–20 ord per modul och förlopp per del** (0.3.1): användaren upplevde 25 ord och "32/122" som demoraliserande. Kortare moduler och en stapel som bara visar den aktuella delen (~5 ord) gör framstegen tydligare utan att minska antalet repetitioner per ord.
+
 - **Batchar om 5 ord i steg 1** med introduktion → igenkänning → kontext/produktion → form/nyans. Varierade övningstyper och omkastad ordning så att samma ord inte kommer två gånger i rad (inspirerat av forskning om varierad övning/interleaving, men effekten för just ordinlärning i detta format är inte fastställd).
 - **Initialt FSRS-betyg från steg 1**: första-försöket-rätt → *Good*, rätt efter ledtråd → *Hard*, fel → *Again*. Ord som inte övats i en dimension får *Hard*.
 - **Max 2 försök** innan facit visas (konfigurerbart i `learnConfig.maxAttempts`), samt alltid möjlighet att välja "Visa svaret".

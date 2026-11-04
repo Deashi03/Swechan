@@ -7,7 +7,15 @@ import { useMemo, useState } from 'react';
 import { getContent } from '../../content/repository';
 import { generateExercise } from '../../learning/exercises/generate';
 import type { ExerciseResult } from '../../learning/exercises/types';
-import { advanceLearnSession, isLearnSessionDone, learnProgress } from '../../learning/learnPlan';
+import { advanceLearnSession, batchProgress, isLearnSessionDone } from '../../learning/learnPlan';
+import { devConfig } from '../../config/appConfig';
+
+/** Developer shortcut: finish the session as if every exercise was answered correctly. */
+function finishAllForDev(s: LearnSessionState): LearnSessionState {
+  const results = { ...s.results };
+  for (const it of s.plan) if (it.kind === 'exercise' && !results[`${it.senseId}|${it.dimension}`]) results[`${it.senseId}|${it.dimension}`] = 'first';
+  return { ...s, results, index: s.plan.length };
+}
 import { isWellBelowLevel } from '../../learning/placement';
 import { now, todayStudyDate } from '../../lib/clock';
 import { logLearnEvent } from '../../repetition/reviewService';
@@ -36,7 +44,7 @@ export function LearnSession({ state: initial, poolSenseIds, onSave, onExit, onF
   const placement = useLiveQuery(() => getMeta<PlacementResult>('placement'), []);
   const repo = getContent();
   const item = state.plan[state.index];
-  const { done, total } = learnProgress(state);
+  const bp = batchProgress(state);
 
   const exercise = useMemo(() => {
     if (!item || item.kind !== 'exercise') return null;
@@ -79,8 +87,19 @@ export function LearnSession({ state: initial, poolSenseIds, onSave, onExit, onF
     <div>
       <div className="session-bar">
         <button className="icon-btn" onClick={onExit} aria-label="Pausa och gå tillbaka"><Icon name="close" /></button>
-        <ProgressBar value={done} max={total} label={`${done} av ${total}`} />
-        <span className="xsmall muted" style={{ fontWeight: 800 }}>{done}/{total}</span>
+        <div className="grow stack-sm" style={{ gap: 4 }}>
+          <ProgressBar value={bp.doneInPart} max={bp.sizeOfPart} label={`Del ${bp.part} av ${bp.parts}`} />
+          <div className="row" style={{ gap: 4 }} aria-hidden>
+            {Array.from({ length: bp.parts }, (_, i) => (
+              <span key={i} style={{ width: 6, height: 6, borderRadius: 3, background: i < bp.part - 1 ? 'var(--c-primary)' : i === bp.part - 1 ? 'var(--c-primary-soft)' : 'var(--c-border)' }} />
+            ))}
+          </div>
+        </div>
+        <span className="xsmall muted" style={{ fontWeight: 800 }}>Del {bp.part} av {bp.parts}</span>
+        {devConfig.toolsEnabled && (
+          <button className="icon-btn" title="Hoppa över steget (utvecklare)" aria-label="Hoppa över steget (utvecklare)"
+            onClick={async () => { const fin = finishAllForDev(state); await onSave(fin); setState(fin); }}>⏭</button>
+        )}
         <button className="icon-btn" onClick={() => dict.open()} aria-label="Öppna ordboken"><Icon name="book" /></button>
       </div>
       {item?.kind === 'intro' && <WordIntro key={`${state.index}`} senseId={item.senseId} compact={compact} onNext={() => advance('seen')} />}

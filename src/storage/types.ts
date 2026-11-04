@@ -66,8 +66,8 @@ export const STEP_IDS: readonly StepId[] = ['learn', 'read', 'converse'];
 export type StepStatus = 'not_started' | 'in_progress' | 'completed';
 
 export type LearnPlanItem =
-  | { kind: 'intro'; senseId: string }
-  | { kind: 'exercise'; senseId: string; exerciseType: string; dimension: Dimension; retry?: boolean };
+  | { kind: 'intro'; senseId: string; batch?: number }
+  | { kind: 'exercise'; senseId: string; exerciseType: string; dimension: Dimension; retry?: boolean; batch?: number };
 
 /** Outcome of a sense/dimension during an introduction session. */
 export type LearnOutcome = 'first' | 'retry' | 'failed';
@@ -147,4 +147,4 @@ export type PlacementResult = {
   perLevel: Partial<Record<Level, { correct: number; total: number }>>;
 };
 
-export type MetaKey = 'settings' | 'streak' | 'placement' | 'installDate' | 'restorePoint' | 'personalLearn' | 'onboarded';
+export type MetaKey = 'settings' | 'streak' | 'placement' | 'installDate' | 'restorePoint' | 'personalLearn' | 'onboarded' | 'appVersion' | 'dev' | 'resetNotice';

@@ -152,3 +152,18 @@ describe('placement', () => {
     expect(isWellBelowLevel('A2', 'B1')).toBe(false);
   });
 });
+
+import { newLearnSession, batchProgress, advanceLearnSession } from './learnPlan';
+describe('learner-facing progress', () => {
+  it('shows the current part (batch) instead of the long total', () => {
+    const m = repo.modules[0]!;
+    let s = newLearnSession(m.words, repo, 1);
+    let bp = batchProgress(s);
+    expect(bp).toMatchObject({ part: 1, parts: Math.ceil(m.words.length / 5), doneInPart: 0 });
+    expect(bp.sizeOfPart).toBeLessThan(40);
+    while (batchProgress(s).part === 1) s = advanceLearnSession(s, 'first');
+    bp = batchProgress(s);
+    expect(bp.part).toBe(2);
+    expect(bp.doneInPart).toBe(0);
+  });
+});

@@ -96,6 +96,7 @@ ui  ──►  daily / modules / dictionary / conversation / stats / audio / fee
 16. **Designsystem "Fjord"** (0.3) – alla färger/typografi/former som tokens; Manrope självhostad för offline och integritet (inga anrop till Google).
 17. **Jonathan som stabil komponent** (0.3) – avatarens plats, storlek och händelsereaktioner är fasta; bara grafiken byts senare.
 18. **Övningar utan auto-avancemang** (0.3) – resultatet visas i en bottenpanel och kräver "Fortsätt"; säkrare (ordboken, läsning av förklaringen) till priset av ett tryck.
+19. **Utvecklingsläge** (0.3.1) – `devConfig`: nollställning vid varje versionsbyte (uttryckligt undantag från regel 1 under utvecklingen, med återställningspunkt) och utvecklarverktyg. Klockan har en förskjutning (`setClockOffsetDays`) som alla tjänster använder via `now()`. Stäng av före riktig användning.
 15. **Förkunskaper styr rekommendationen, inte åtkomsten** (0.2) – `recommendedModule()` föreslår bara moduler vars förkunskaper är klara; moduler låses aldrig.
 
 ## Regler för vidareutveckling

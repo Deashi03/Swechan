@@ -153,10 +153,11 @@ export function checkVocabulary(repo: ContentRepository, core: CoreVocabulary): 
     for (const it of c.items) { check(`${c.id} › ${it.senseId} note`, it.noteSv, ctx); check(`${c.id} › ${it.senseId} example`, it.exampleSv, ctx); }
   }
 
-  // Words outside any module (standalone dictionary entries): core + the word itself.
+  // Words outside any module (dictionary-only entries): core + all module words + the word itself.
+  const allModuleWords = formsOfSenses(repo, repo.modules.flatMap((m) => m.words.map((w) => w.senseId)));
   for (const e of repo.entries) {
     if (e.senses.some((s) => moduleOfSense.has(s.id))) continue;
-    const own = new Set(allForms(e));
+    const own = union(allModuleWords, new Set(allForms(e)));
     for (const s of e.senses) {
       check(`${s.id} defSv`, s.defSv, own);
       s.examples.forEach((ex, i) => check(`${s.id} example ${i + 1}`, ex.sv, own));

@@ -6,6 +6,8 @@
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useState } from 'react';
 import { getContent } from '../../content/repository';
+import { APP_VERSION } from '../../config/appConfig';
+import { now as clockNow } from '../../lib/clock';
 import { ensureDailySession, reviewLoad } from '../../daily/dailySession';
 import { wordOfTheDay } from '../../daily/wordOfTheDay';
 import { getModuleProgress, isStepUnlocked, recommendedModule } from '../../modules/moduleService';
@@ -54,7 +56,8 @@ export function Home() {
   const allDone = !!day?.completedAt;
   const { mood, pulse } = useJonathanMood(allDone ? 'happy' : 'idle');
   const doneModule = day?.modulesCompleted[0] ? getContent().getModule(day.modulesCompleted[0]) : undefined;
-  const now = new Date();
+  const now = clockNow();
+  const resetNotice = useLiveQuery(() => getMeta<string>('resetNotice'), []);
   const partsLeft = (reviewDone ? 0 : 1) + (moduleDone ? 0 : 1);
   const modSteps = recProgress ? Object.values(recProgress.steps).filter((s) => s === 'completed').length : 0;
 
@@ -72,12 +75,22 @@ export function Home() {
       <header className="row" style={{ gap: 12 }}>
         <Jonathan mood={mood} pulse={pulse} size={48} />
         <div className="grow">
-          <div style={{ fontWeight: 800, fontSize: 'var(--fs-lg)', lineHeight: 1.2 }}>{greeting(now.getHours())}</div>
+          <div className="row" style={{ gap: 8 }}>
+            <span style={{ fontWeight: 800, fontSize: 'var(--fs-lg)', lineHeight: 1.2 }}>{greeting(now.getHours())}</span>
+            <span className="badge" title="Version" aria-label={`Version ${APP_VERSION}`}>v{APP_VERSION}</span>
+          </div>
           <div className="small muted">{capitalize(DATE_FMT.format(now))}</div>
         </div>
         <span className="chip streak" aria-label={`Streak: ${streak?.current ?? 0} ${streak?.current === 1 ? 'dag' : 'dagar'}`}>🔥 {streak?.current ?? 0}</span>
         <a className="icon-btn" href={href({ name: 'settings' })} aria-label="Inställningar och statistik"><Icon name="gear" /></a>
       </header>
+
+      {resetNotice && (
+        <div className="card tint-warning small row between" role="status">
+          <span>{resetNotice}</span>
+          <button className="btn ghost small" onClick={() => getDb().meta.delete('resetNotice')}>OK</button>
+        </div>
+      )}
 
       <section className="card primary stack-sm" aria-labelledby="today-title" style={{ padding: 18, borderRadius: 'var(--r-xl)' }}>
         <span className="hero-glow" aria-hidden />

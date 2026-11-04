@@ -2,7 +2,19 @@
  * Central, non-UI configuration. Pedagogical and gamification rules live
  * here (or in user settings) — never hard-coded inside components.
  */
-export const APP_VERSION = '0.3.0';
+export const APP_VERSION = '0.3.1';
+
+/**
+ * Development-phase switches (decided with the product owner in 0.3.1).
+ * resetProgressOnUpdate: every new APP_VERSION starts all users from zero
+ *   (a restore point is saved first). MUST be set to false before real use –
+ *   it intentionally overrides the "preserve user data" rule.
+ * toolsEnabled: shows the developer tools (time travel, unlock, shortcuts).
+ */
+export const devConfig = {
+  resetProgressOnUpdate: true,
+  toolsEnabled: true,
+} as const;
 
 export const streakConfig = {
   /** Freezes a brand-new user starts with. */
