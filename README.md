@@ -20,7 +20,12 @@ npm run dev          # utvecklingsserver, öppna adressen som visas
 | `npm run preview` | Servera `dist/` lokalt |
 | `npm test` | Alla enhets-, integrations- och komponenttester (Vitest) |
 | `npm run typecheck` | Endast TypeScript-kontroll |
-| `npm run validate:content` | Validerar allt innehåll (schema, furigana, referenser, målord i lästexter) |
+| `npm run validate:content` | Validerar allt innehåll (schema, furigana, referenser, målord i lästexter, kontrollerat ordförråd, katalog) |
+| `npm run content:index` | Genererar modulindexet efter ändringar i `src/content/data/modules/*.json` |
+| `npm run catalog:validate` | Kontrollerar planeringskatalogen: träd, unika ID:n, högst 8 val per skärm, översättningsstatus |
+| `npm run module:new -- <SWC-…>` | Skapar ett utkast i `content/drafts/` för en planerad katalogmodul |
+| `npm run module:validate -- <m.id \| utkast.json>` | Kontrollerar en modul eller ett utkast |
+| `npm run content:report [-- --out fil.md]` | Innehållsrapport: status, brutna referenser, ointroducerade ord, dubbletter, saknade översättningar |
 | `npm run e2e` | End-to-end-test av hela acceptansflödet i Chromium med iPhone-emulering (kör `npm run build` först; kräver att `playwright` finns globalt installerat) |
 
 ## Använda appen på iPhone

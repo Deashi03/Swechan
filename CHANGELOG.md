@@ -38,6 +38,15 @@
 - **Uppmätt** (vite build): startinnehållet 140,1 → 121,5 kB (gzip 36,2 → 30,3 kB); appkoden +3 kB; varje lektion är en egen del på ~5 kB. Laddtid tills välkomstskärmen (Chromium, iPhone-emulering, 1,6 Mbit/s, 150 ms latens, median av 5): fas C 1 473 ms → fas D 1 448 ms (−2 %). Liten vinst med fem moduler; poängen är att startpaketet inte växer med antalet lektioner.
 - `@types/node` tillagt (utvecklingsberoende) för test/verktyg.
 
+### Fas E – verktyg för innehållsproduktion (PR "0.4 fas E")
+- Körbara kommandon (via `vite-node`): `catalog:validate`, `module:new`, `module:validate`, `content:report`. Logiken ligger i `src/content/tools/` och är enhetstestad.
+- `module:new` skapar ett utkast från en **planerad katalogpost** (katalogens titel och målordsantal; föreslår `m.<slug>`); utkastschemat kräver 15–20 planerade målord och föreslår återanvändning av befintliga betydelser.
+- `module:validate` kontrollerar ett utkast eller en publicerad modul: schema, betydelsereferenser, furigana, böjning, att målorden finns i texten, frågor, kontrollerat ordförråd och katalogplacering.
+- `content:report`: publicerat/planerat, granskningsstatus, saknade japanska titlar, brutna referenser, ointroducerade ord, dubbletter, katalogproblem.
+- Ny regel: `quality.status: reviewed` kräver `reviewer` och `date`.
+- Nya moduler får placeras direkt i en katalogkategori (`categoryId` R…); gamla `c.*` fungerar fortfarande.
+- CI kör nu även `content:index -- --check` och `catalog:validate`.
+
 ## 0.3.1 – 2026-11-04
 Utvecklings- och testvänlighet (önskemål från produktägaren).
 

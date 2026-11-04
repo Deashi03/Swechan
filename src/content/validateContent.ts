@@ -46,6 +46,8 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
         ja(`${s.id}.synonyms`, r.noteJa);
       }
       for (const g of s.grammarNotes ?? []) if (!repo.getGrammarNote(g)) add(s.id, `Okänd grammatiknotering ${g}`);
+      // "reviewed" is a human statement: it needs who and when. AI tools never set it.
+      if (s.quality.status === 'reviewed' && (!s.quality.reviewer || !s.quality.date)) add(s.id, 'Status reviewed kräver reviewer och date (mänsklig granskning)');
     }
   }
 
@@ -71,7 +73,8 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
   for (const m of repo.modules) {
     unique(m.id, m.id);
     ja(m.id, m.titleJa); ja(m.id, m.descriptionJa);
-    if (!repo.getCategory(m.categoryId)) add(m.id, `Okänd kategori ${m.categoryId}`);
+    // Legacy c.* category or (0.4) a catalog category ID; the catalog placement itself is checked by catalog:validate.
+    if (!repo.getCategory(m.categoryId) && !/^R\d{2}(-A\d{2}(-T\d{2})?)?$/.test(m.categoryId)) add(m.id, `Okänd kategori ${m.categoryId}`);
     for (const p of [...m.prerequisites, ...m.related]) if (!repo.getModule(p)) add(m.id, `Okänd modul ${p}`);
     const senseIds = new Set<string>();
     const body = repo.getLoadedModuleBody(m.id);
