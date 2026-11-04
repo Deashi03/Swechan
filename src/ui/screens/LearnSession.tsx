@@ -13,7 +13,7 @@ import { now, todayStudyDate } from '../../lib/clock';
 import { logLearnEvent } from '../../repetition/reviewService';
 import { getMeta } from '../../storage/db';
 import type { LearnSessionState, PlacementResult } from '../../storage/types';
-import { Avatar, useAvatarMood } from '../components/Avatar';
+import { Jonathan } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
 import { ProgressBar } from '../components/Progress';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
@@ -33,7 +33,6 @@ export function LearnSession({ state: initial, poolSenseIds, onSave, onExit, onF
   const [state, setState] = useState(initial);
   const [busy, setBusy] = useState(false);
   const dict = useDictionarySheet();
-  const { mood, pulse } = useAvatarMood('idle');
   const placement = useLiveQuery(() => getMeta<PlacementResult>('placement'), []);
   const repo = getContent();
   const item = state.plan[state.index];
@@ -63,7 +62,7 @@ export function LearnSession({ state: initial, poolSenseIds, onSave, onExit, onF
     const first = results.filter((r) => r === 'first').length;
     return (
       <div className="stack celebrate">
-        <Avatar mood="cheer" size={96} />
+        <Jonathan mood="cheer" size={96} />
         <h1>Bra jobbat!</h1>
         <p className="muted">{first} av {results.length} övningar rätt på första försöket.</p>
         <button className="btn block" onClick={onFinished}>{finishedLabel}</button>
@@ -81,8 +80,8 @@ export function LearnSession({ state: initial, poolSenseIds, onSave, onExit, onF
       <div className="session-bar">
         <button className="icon-btn" onClick={onExit} aria-label="Pausa och gå tillbaka"><Icon name="close" /></button>
         <ProgressBar value={done} max={total} label={`${done} av ${total}`} />
+        <span className="xsmall muted" style={{ fontWeight: 800 }}>{done}/{total}</span>
         <button className="icon-btn" onClick={() => dict.open()} aria-label="Öppna ordboken"><Icon name="book" /></button>
-        <Avatar mood={mood} pulse={pulse} size={40} />
       </div>
       {item?.kind === 'intro' && <WordIntro key={`${state.index}`} senseId={item.senseId} compact={compact} onNext={() => advance('seen')} />}
       {item?.kind === 'exercise' && exercise && (

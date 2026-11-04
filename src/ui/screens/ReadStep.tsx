@@ -14,7 +14,7 @@ import { emit } from '../../feedback/events';
 import { completeStep, getModuleProgress, saveReadState } from '../../modules/moduleService';
 import { navigate } from '../app/router';
 import { useSettings } from '../app/hooks';
-import { Avatar } from '../components/Avatar';
+import { Jonathan } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
 import { Ja } from '../components/Ja';
 import { ProgressBar } from '../components/Progress';
@@ -50,7 +50,7 @@ export function ReadStep({ id }: { id: string }) {
       {phase === 'questions' && <Questions moduleId={id} questions={m.reading.questions} initial={progress?.read} onDone={() => setPhase('done')} />}
       {phase === 'done' && (
         <div className="celebrate stack">
-          <Avatar mood="cheer" size={88} />
+          <Jonathan mood="cheer" size={88} />
           <h1>Läsningen är klar!</h1>
           <button className="btn block" onClick={() => navigate({ name: 'converse', id }, { replace: true })}>Vidare till samtalet</button>
           <button className="btn ghost" onClick={() => setPhase('text')}>Läs texten igen</button>

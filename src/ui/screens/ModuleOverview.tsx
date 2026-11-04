@@ -50,7 +50,7 @@ export function ModuleOverview({ id }: { id: string }) {
   return (
     <div className="stack">
       <nav className="crumbs" aria-label="Kategori">
-        <a href={href({ name: 'explore' })}>Utforska</a>
+        <a href={href({ name: 'explore' })}>Kurser</a>
         {path.map((c) => <span key={c.id}>› <a href={href({ name: 'explore', categoryId: c.id })}>{c.nameSv}</a></span>)}
       </nav>
       <header>

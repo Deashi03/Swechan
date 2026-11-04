@@ -3,9 +3,9 @@ import { Icon } from './Icon';
 
 const TABS: { route: Route; label: string; icon: string; match: Route['name'][] }[] = [
   { route: { name: 'home' }, label: 'Hem', icon: 'home', match: ['home', 'settings', 'stats'] },
-  { route: { name: 'explore' }, label: 'Utforska', icon: 'explore', match: ['explore', 'module'] },
+  { route: { name: 'explore' }, label: 'Kurser', icon: 'explore', match: ['explore', 'module'] },
   { route: { name: 'review' }, label: 'Repetition', icon: 'review', match: ['review'] },
-  { route: { name: 'dictionary' }, label: 'Ordlista', icon: 'book', match: ['dictionary'] },
+  { route: { name: 'dictionary' }, label: 'Ordbok', icon: 'book', match: ['dictionary'] },
 ];
 
 export function TabBar({ current }: { current: Route }) {

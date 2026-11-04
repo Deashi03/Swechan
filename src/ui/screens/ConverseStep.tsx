@@ -11,7 +11,7 @@ import { completeStep, getModuleProgress } from '../../modules/moduleService';
 import { getDb, getMeta } from '../../storage/db';
 import type { PlacementResult } from '../../storage/types';
 import { navigate } from '../app/router';
-import { Avatar } from '../components/Avatar';
+import { Jonathan } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
 import { Ja } from '../components/Ja';
 import { toast } from '../components/Toast';
@@ -33,7 +33,7 @@ export function ConverseStep({ id }: { id: string }) {
   if (finished || ctx.progress?.status === 'completed') {
     return (
       <div className="celebrate stack">
-        <Avatar mood="cheer" size={110} />
+        <Jonathan mood="cheer" size={110} />
         <h1>Modulen är klar! 🎉</h1>
         <p className="muted">Orden från ”{m.titleSv}” finns nu i din repetition.</p>
         <button className="btn block" onClick={() => navigate({ name: 'home' })}>Till startsidan</button>

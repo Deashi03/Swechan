@@ -46,7 +46,7 @@ const click = (text, opts = {}) => page.getByRole('button', { name: text, exact:
 async function runExercises(doneText, { dictCheckAt = -1 } = {}) {
   for (let i = 0; i < 400; i++) {
     if (await page.getByText(doneText).first().isVisible().catch(() => false)) return i;
-    if (i >= dictCheckAt && dictCheckAt >= 0 && await page.getByRole('button', { name: 'Jag vet inte – visa svaret' }).isVisible().catch(() => false) && !(await page.locator('.option.wrong, .option.correct').count())) {
+    if (i >= dictCheckAt && dictCheckAt >= 0 && await page.getByRole('button', { name: 'Jag vet inte' }).isVisible().catch(() => false) && !(await page.locator('.option.wrong, .option.correct').count())) {
       dictCheckAt = -1;
       const before = await page.locator('main').innerText();
       await page.getByRole('button', { name: 'Öppna ordboken' }).click();
@@ -59,12 +59,12 @@ async function runExercises(doneText, { dictCheckAt = -1 } = {}) {
     const btn = (name) => page.getByRole('button', { name, exact: true }).first();
     const tryClick = (loc) => loc.click({ timeout: 1500 }).then(() => true, () => false);
     if (await btn('Jag förstår – nästa').isVisible().catch(() => false)) { await tryClick(btn('Jag förstår – nästa')); continue; }
-    if (await btn('Jag vet inte – visa svaret').isVisible().catch(() => false)) {
+    if (await btn('Jag vet inte').isVisible().catch(() => false)) {
       // choice exercise: pick the first option; after two wrong picks the answer is revealed
       await tryClick(page.locator('.option:not([disabled])').first());
       await page.waitForTimeout(60);
       if (await page.locator('.option.correct').count()) {
-        await page.clock.runFor(1000); // first-try correct auto-advances
+        await page.waitForTimeout(30); // result sheet appears; continue below
         await page.waitForTimeout(60);
         if (await btn('Fortsätt').isVisible().catch(() => false)) await tryClick(btn('Fortsätt'));
         continue;
@@ -90,7 +90,9 @@ async function runExercises(doneText, { dictCheckAt = -1 } = {}) {
 
 async function doModule(moduleTitleRe, { checks = false } = {}) {
   // Step 1
-  await page.getByRole('button', { name: /Starta: Lär dig orden|Fortsätt: Lär dig orden/ }).click();
+  // Home's primary button goes straight into the next step; from a module page, start step 1.
+  const startBtn = page.getByRole('button', { name: /Starta: Lär dig orden|Fortsätt: Lär dig orden/ });
+  if (await startBtn.isVisible().catch(() => false)) await startBtn.click();
   const n = await runExercises('Bra jobbat!', { dictCheckAt: checks ? 8 : -1 });
   log(`step 1 finished after ${n} interactions`);
   await click('Vidare till läsningen');
@@ -145,49 +147,49 @@ try {
     const p2 = await context.browser().newContext({ ...devices['iPhone 13'], deviceScaleFactor: 1 }).then((c) => c.newPage());
     await p2.goto(BASE);
     await p2.getByRole('button', { name: 'Hoppa över' }).click();
-    assert(await visible(p2.getByText('Dagens Swechan')), '"Hoppa över" on the welcome screen leads to the home screen');
+    assert(await visible(p2.getByText('DAGENS PASS', { exact: true })), '"Hoppa över" on the welcome screen leads to the home screen');
     await p2.context().close();
   }
 
   // 3–4: home with streak + two tasks ------------------------------------
-  await page.getByText('Dagens Swechan').waitFor();
-  assert(await visible(page.getByText('Inga tidigare inlärda ord att repetera ännu')), 'day 1: no review material → review counts as done');
+  await page.getByText('DAGENS PASS', { exact: true }).waitFor();
+  assert(await visible(page.getByText('Inga tidigare ord ännu')), 'day 1: no review material → review counts as done');
   assert(await visible(page.getByLabel(/Streak: 0 dagar/)), 'streak starts at 0');
   await shot('02-home-day1');
 
   // 5–15: complete module A ------------------------------------------------
-  await click('Starta modulen');
+  await click('Starta dagens modul');
   await doModule('Hemmet', { checks: true });
 
   // 18–19: day completed, streak updated ------------------------------------
-  assert(await visible(page.getByText('Dagens Swechan är klar!')), 'daily session completed');
+  assert(await visible(page.getByText('Klart för idag!')), 'daily session completed');
   assert(await visible(page.getByLabel(/Streak: 1 dag$/)), 'streak is 1 after day 1');
   await shot('06-home-day1-done');
 
   // 21: persists after closing the app --------------------------------------
   await page.reload();
-  await page.getByText('Dagens Swechan').waitFor();
+  await page.getByText('DAGENS PASS', { exact: true }).waitFor();
   assert(await visible(page.getByLabel(/Streak: 1 dag$/)), 'progress survives reload');
 
   // 20: next day – review earlier words + new module --------------------------
   await page.clock.setSystemTime(new Date('2026-11-03T08:30:00+01:00'));
   await page.reload();
-  assert(await visible(page.getByText('0/25 ord repeterade')), 'day 2: 25 review tasks from yesterday\'s words');
+  assert(await visible(page.getByText('0 av 25 ord')), 'day 2: 25 review tasks from yesterday\'s words');
   await shot('07-home-day2');
-  await click('Starta repetitionen');
+  await click('Starta dagens pass');
   await runExercises('Dagens repetition är klar!');
   await shot('08-review-done');
   await click('Till startsidan');
-  assert(await visible(page.getByText('En sak kvar idag')), 'only module left on day 2');
-  await click('Starta modulen');
+  assert(await visible(page.getByText('1 del kvar')), 'only module left on day 2');
+  await click('Starta dagens modul');
   await doModule('Material');
   assert(await visible(page.getByLabel(/Streak: 2 dagar/)), 'streak is 2 after day 2');
 
   // Explore + dictionary tabs -------------------------------------------------
-  await page.getByRole('link', { name: 'Utforska' }).click();
+  await page.getByRole('link', { name: 'Kurser' }).click();
   await page.getByLabel('Global sökning').fill('分子');
   assert(await visible(page.getByText('molekyl', { exact: true })), 'global search finds Swedish word from Japanese kanji');
-  await page.getByRole('link', { name: 'Ordlista' }).click();
+  await page.getByRole('link', { name: 'Ordbok' }).click();
   await page.getByLabel('Sök i ordboken').fill('molekylerna');
   assert(await visible(page.getByRole('button', { name: /molekyl/ }).first()), 'dictionary finds lemma from inflected form');
   await shot('09-dictionary');

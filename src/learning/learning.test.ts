@@ -1,7 +1,7 @@
 import { getContent } from '../content/repository';
 import { stripFurigana } from '../content/furigana';
 import { checkTypedAnswer } from './answerCheck';
-import { generateExercise, genContextChoice, genInflection, genSpelling, type GenContext } from './exercises/generate';
+import { generateExercise, genContextChoice, genInflection, genSpelling, inflectionFramesFor, type GenContext } from './exercises/generate';
 import { isChoice, type ExerciseType } from './exercises/types';
 import { knowledgeLevel, difficultItems, confusedPairs } from './knowledge';
 import { scorePlacement, isWellBelowLevel } from './placement';
@@ -60,13 +60,53 @@ describe('exercise generation', () => {
     expect(ex.prompt).toBe('Vi ＿＿＿ lägenheten varje lördag.');
     expect(ex.options[ex.correctIndex]!.label).toBe('städar');
     expect(ex.options.every((o) => /r$/.test(o.label))).toBe(true); // all present tense
+    expect(ex.subPrompt).toBeUndefined(); // translation would give the answer away – only as hint/result
+    expect(ex.hint?.lang).toBe('ja');
+  });
+  it('context exercise distractors never come from the same topic (only one option fits)', () => {
+    for (const m of repo.modules) {
+      for (const w of m.words) {
+        for (let seed = 0; seed < 5; seed++) {
+          const ref = repo.getSense(w.senseId)!;
+          const ex = genContextChoice(ref, { repo, poolSenseIds: m.words.map((x) => x.senseId), seed });
+          if (!ex) continue;
+          const tags = new Set(ref.sense.tags ?? []);
+          for (const o of ex.options) {
+            if (o.senseId === w.senseId) continue;
+            const other = repo.getSense(o.senseId!)!;
+            expect((other.sense.tags ?? []).some((t) => tags.has(t)), `${w.senseId} vs ${o.senseId}`).toBe(false);
+            if (ref.entry.inflection.kind === 'noun' && other.entry.inflection.kind === 'noun') expect(other.entry.inflection.gender).toBe(ref.entry.inflection.gender);
+          }
+        }
+      }
+    }
+  });
+  it('form exercises use natural one-answer frames without grammar terms', () => {
+    const GRAMMAR = /bestämd|obestämd|plural|singular|preteritum|supinum|presens|komparativ|infinitiv|imperativ/i;
+    for (const m of repo.modules) {
+      for (const w of m.words.filter((x) => x.active)) {
+        const ref = repo.getSense(w.senseId)!;
+        for (const f of inflectionFramesFor(ref)) {
+          expect(f.sentence).not.toMatch(/\balla\b/); // "alla ___" accepts both sängar and sängarna
+          expect(f.sentence).not.toMatch(GRAMMAR);
+        }
+        for (let seed = 0; seed < 4; seed++) {
+          const ex = genInflection(ref, { ...ctx(), seed });
+          if (ex) expect(ex.instructionSv).not.toMatch(GRAMMAR);
+        }
+        expect(genSpelling(ref, ctx()).instructionSv).not.toMatch(/grundform|substantiv|verb|adjektiv/);
+      }
+    }
+    const säng = inflectionFramesFor(repo.getSense('s.säng.1')!).map((f) => f.sentence);
+    expect(säng).toEqual(['Jag tänker på den sängen.', 'Jag tänker på två sängar.', 'Jag tänker på de sängarna.']);
+    expect(inflectionFramesFor(repo.getSense('s.smälta.1')!).map((f) => f.sentence)).toEqual(['Isen smälter nu.', 'Isen smälte i går.', 'Isen har smält.']);
   });
   it('spelling accepts the noun with or without article; inflection uses stored forms incl. variants', () => {
     const sp = genSpelling(repo.getSense('s.fönster.1')!, ctx());
     expect(sp.accepted).toEqual(['fönster', 'ett fönster']);
     for (let seed = 0; seed < 30; seed++) {
       const inf = genInflection(repo.getSense('s.dammsuga.1')!, { ...ctx(), seed })!;
-      if (inf.instructionSv.includes('preteritum')) { expect(inf.accepted).toEqual(['dammsög', 'dammsugde']); return; }
+      if (inf.frame?.[1].includes('i går')) { expect(inf.accepted).toEqual(['dammsög', 'dammsugde']); return; }
     }
   });
   it('Japanese prompts carry furigana markup, not parentheses', () => {

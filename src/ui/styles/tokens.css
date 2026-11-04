@@ -1,57 +1,81 @@
-/* Swechan design tokens – the ONLY place where raw colours, sizes and radii live. */
+/* Swechan design tokens – "Fjord" (0.3). The ONLY place for raw colours, sizes and radii.
+   Professional learning platform: calm white/grey, one strong blue, a small yellow accent
+   (the light Swedish touch), soft rounded shapes. */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/fonts/manrope-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/fonts/manrope-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
   /* Palette */
-  --c-bg: #fbf8f3;            /* warm soft white */
+  --c-bg: #f7f8fa;
   --c-surface: #ffffff;
-  --c-surface-2: #f5f0e8;
-  --c-border: #ece5da;
-  --c-text: #3a3a40;          /* dark grey */
-  --c-text-muted: #6e6b72;
-  --c-text-faint: #9a96a0;
+  --c-surface-2: #f1f3f7;
+  --c-border: #e3e7ee;
+  --c-text: #14213a;
+  --c-text-muted: #6b7488;
+  --c-text-faint: #9aa2b3;
 
-  --c-primary: #2e7d4f;       /* accessible green for text/buttons on white */
-  --c-primary-soft: #7cc49a;  /* mild green accent */
-  --c-primary-tint: #e3f4ea;
+  --c-primary: #2a5bd7;        /* fjord blue */
+  --c-primary-strong: #1f47ad;
+  --c-primary-soft: #8fb0f0;
+  --c-primary-tint: #eef3ff;
   --c-on-primary: #ffffff;
 
-  --c-accent: #e8796b;        /* coral */
-  --c-accent-soft: #f7b6ad;
-  --c-accent-tint: #fde9e5;
+  --c-accent: #ffd54a;         /* sun yellow – small Swedish accent */
+  --c-accent-soft: #fff4cc;
+  --c-accent-ink: #8a6400;
+  --c-accent-tint: #fffbea;
 
-  --c-success: #2e7d4f;
-  --c-success-tint: #e3f4ea;
-  --c-error: #c0453a;
-  --c-error-tint: #fbe6e3;
-  --c-warning-tint: #fff4dc;
+  --c-success: #1f9d6a;
+  --c-success-tint: #e9f8f1;
+  --c-error: #d0453b;
+  --c-error-tint: #fdeceb;
+  --c-warning-tint: #fff7e0;
 
-  --c-streak: #f2a33a;
-  --c-streak-tint: #fff1dc;
-  --c-freeze: #4f9fd8;
-  --c-freeze-tint: #e3f1fb;
+  --c-streak: #f08c2b;
+  --c-streak-tint: #fff1e3;
+  --c-freeze: #3b82d6;
+  --c-freeze-tint: #e4efff;
 
-  /* Activity pastels */
-  --c-review: #e3f4ea;
-  --c-module: #fde7e1;
-  --c-read: #ece7fb;
-  --c-converse: #e2f0fb;
+  /* Activity tints (subtle) */
+  --c-review: #eef3ff;
+  --c-module: #fff7e0;
+  --c-read: #f2efff;
+  --c-converse: #e9f7f6;
 
-  --c-highlight: #fff3b8;
-  --c-overlay: rgba(40, 36, 44, 0.38);
+  --c-jonathan-bg: #fff4cc;    /* Jonathan avatar slot */
+  --c-jonathan-fg: #b98400;
+
+  --c-highlight: #fff1b3;
+  --c-overlay: rgba(20, 33, 58, 0.36);
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Rounded', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Segoe UI', Roboto, sans-serif;
   --fs-xs: 0.8125rem;
   --fs-sm: 0.9375rem;
-  --fs-md: 1.0625rem;  /* base reading size (≥16px avoids iOS zoom on inputs) */
+  --fs-md: 1.0625rem;  /* ≥16px avoids iOS zoom on inputs */
   --fs-lg: 1.25rem;
-  --fs-xl: 1.625rem;
-  --fs-2xl: 2.125rem;
-  --fw-normal: 400;
-  --fw-medium: 560;
-  --fw-bold: 700;
-  --lh-tight: 1.25;
-  --lh-normal: 1.55;
-  --lh-ja: 1.95;       /* extra room so furigana never collides */
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2.375rem;
+  --fw-normal: 500;
+  --fw-medium: 600;
+  --fw-bold: 800;
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-ja: 1.95;
 
   /* Spacing (4px scale) */
   --sp-1: 4px;
@@ -67,9 +91,11 @@
   --r-sm: 10px;
   --r-md: 16px;
   --r-lg: 22px;
+  --r-xl: 26px;
   --r-pill: 999px;
-  --shadow-sm: 0 1px 2px rgba(60, 50, 40, 0.06), 0 2px 6px rgba(60, 50, 40, 0.05);
-  --shadow-md: 0 4px 16px rgba(60, 50, 40, 0.1);
+  --shadow-sm: 0 1px 2px rgba(20, 33, 58, 0.04);
+  --shadow-md: 0 8px 24px rgba(20, 33, 58, 0.10);
+  --shadow-press: 0 3px 0 var(--c-border);
 
   /* Motion */
   --t-fast: 120ms;
@@ -77,6 +103,6 @@
 
   /* Layout */
   --content-max: 560px;
-  --tabbar-h: 64px;
+  --tabbar-h: 66px;
   --tap-min: 44px;
 }

@@ -123,6 +123,7 @@ export function checkVocabulary(repo: ContentRepository, core: CoreVocabulary): 
       check(`${m.id} › ${s.id} defSv`, s.defSv, self);
       s.examples.forEach((ex, i) => check(`${m.id} › ${s.id} example ${i + 1}`, ex.sv, self));
       check(`${m.id} › ${s.id} usageNote`, s.usageNote?.sv, all);
+      if (s.frame) check(`${m.id} › ${s.id} övningsram`, `${s.frame.subject ?? ''} ${s.frame.complement ?? ''}`, self);
       // other senses of the same headword are shown in the introduction
       for (const other of ref.entry.senses) {
         if (other.id === s.id || ids.includes(other.id)) continue;

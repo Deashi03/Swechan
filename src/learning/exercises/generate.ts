@@ -139,6 +139,12 @@ function formOf(infl: Inflection, key: string | null, lemma: string): string | n
   return typeof v === 'string' ? v : null;
 }
 
+/** Do two senses belong to the same topic? Then one may fit the other's sentence just as well. */
+function sameTopic(a: SenseRef, b: SenseRef): boolean {
+  const ta = new Set(a.sense.tags ?? []);
+  return (b.sense.tags ?? []).some((t) => ta.has(t));
+}
+
 export function genContextChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise | null {
   const rng = createRng(ctx.seed + 2);
   for (const ex of ref.sense.examples) {
@@ -146,7 +152,13 @@ export function genContextChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise
     if (!hit) continue;
     const surface = ex.sv.slice(hit.start, hit.end);
     const keepCase = (w: string) => (surface[0] === surface[0]!.toUpperCase() ? w[0]!.toUpperCase() + w.slice(1) : w);
-    const wrong = distractors(ref, ctx, learnConfig.choiceCount - 1, rng, (r) => r.entry.pos === ref.entry.pos && formOf(r.entry.inflection, hit.formKey, r.entry.lemma) !== null);
+    const sameGender = (r: SenseRef) =>
+      ref.entry.inflection.kind !== 'noun' || (r.entry.inflection.kind === 'noun' && r.entry.inflection.gender === ref.entry.inflection.gender);
+    // Same word class, same form AND (for nouns) same gender, so grammar never gives the answer away.
+    const sameForm = (r: SenseRef) => r.entry.pos === ref.entry.pos && sameGender(r) && formOf(r.entry.inflection, hit.formKey, r.entry.lemma) !== null;
+    // Distractors come from OTHER topics, so only the target fits the sentence
+    // ("Det ligger leksaker på ___": not säng/bord, which would also fit).
+    const wrong = distractors(ref, ctx, learnConfig.choiceCount - 1, rng, (r) => sameForm(r) && !sameTopic(ref, r));
     if (wrong.length < 2) continue;
     const { options, correctIndex } = assemble(
       { senseId: ref.sense.id, label: keepCase(surface), lang: 'sv' },
@@ -156,11 +168,12 @@ export function genContextChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise
     return {
       type: 'context_choice', senseId: ref.sense.id, dimension: 'meaning',
       prompt: `${ex.sv.slice(0, hit.start)}＿＿＿${ex.sv.slice(hit.end)}`, promptLang: 'sv',
-      subPrompt: ex.ja, subPromptLang: 'ja',
       instructionSv: 'Vilket ord passar i meningen?', instructionJa: '{文|ぶん}に{合|あ}う{言葉|ことば}はどれですか。',
       options, correctIndex,
-      hint: { text: ref.sense.ja, lang: 'ja' },
+      // The Japanese translation would give the answer away – it is a hint and shown with the result.
+      hint: { text: ex.ja, lang: 'ja' },
       explanation: { text: ex.sv, lang: 'sv' },
+      note: { text: ex.ja, lang: 'ja' },
     };
   }
   return null;
@@ -192,8 +205,8 @@ export function genSpelling(ref: SenseRef, ctx: GenContext): TypedExercise {
   return {
     type: 'spelling', senseId: ref.sense.id, dimension: 'spelling',
     prompt: ref.sense.ja, promptLang: 'ja', subPrompt: ref.sense.defJa, subPromptLang: 'ja',
-    instructionSv: `Skriv det svenska ordet (grundform, ${posSv(e.pos)}).`,
-    instructionJa: 'スウェーデン{語|ご}で{書|か}いてください（{基本形|きほんけい}）。',
+    instructionSv: 'Skriv ordet på svenska.',
+    instructionJa: 'スウェーデン{語|ご}で{書|か}いてください。',
     accepted,
     otherForms: allForms(e).filter((f) => !accepted.map((a) => a.toLowerCase()).includes(f)),
     hint: `Börjar på ”${e.lemma.slice(0, 1)}” · ${e.lemma.replace(/ /g, '').length} bokstäver`,
@@ -201,29 +214,41 @@ export function genSpelling(ref: SenseRef, ctx: GenContext): TypedExercise {
   };
 }
 
-type InflectionTarget = { key: string; frame?: [string, string] };
+type InflectionTarget = { key: string; frame: [string, string] };
 
-function inflectionTargets(e: VocabularyEntry): InflectionTarget[] {
+/**
+ * Natural sentence frames in which exactly ONE form fits – no grammar terms.
+ *   noun:  "Jag tänker på den/det ___."  "… på två ___."  "… på de ___."
+ *   verb:  "Hon ___ (complement) nu."  "… i går."  "Hon har ___ …"
+ *   adj:   "Det är ___."  "De är ___."  "Den här är ___ än den där."
+ * A sense may override the verb subject/complement (`frame`), e.g. "Isen" for smälta.
+ */
+function inflectionTargets(e: VocabularyEntry, frame?: { subject?: string; complement?: string }): InflectionTarget[] {
   const i = e.inflection;
   switch (i.kind) {
-    case 'noun':
+    case 'noun': {
+      const art = i.gender === 'en' ? 'den' : 'det';
       return [
-        { key: 'defSg' },
-        ...(i.indefPl ? [{ key: 'indefPl', frame: ['två ', ''] as [string, string] }] : []),
-        ...(i.defPl ? [{ key: 'defPl', frame: ['alla ', ''] as [string, string] }] : []),
+        { key: 'defSg', frame: [`Jag tänker på ${art} `, '.'] },
+        ...(i.indefPl ? [{ key: 'indefPl', frame: ['Jag tänker på två ', '.'] as [string, string] }] : []),
+        ...(i.defPl ? [{ key: 'defPl', frame: ['Jag tänker på de ', '.'] as [string, string] }] : []),
       ];
-    case 'verb':
+    }
+    case 'verb': {
+      const subject = frame?.subject ?? 'Hon';
+      const c = frame?.complement ? ` ${frame.complement}` : '';
       return [
-        { key: 'present', frame: ['Hon ', ' varje dag.'] },
-        { key: 'past', frame: ['I går ', ' hon.'] },
-        { key: 'supine', frame: ['Hon har ', '.'] },
+        { key: 'present', frame: [`${subject} `, `${c} nu.`] },
+        { key: 'past', frame: [`${subject} `, `${c} i går.`] },
+        { key: 'supine', frame: [`${subject} har `, `${c}.`] },
       ];
+    }
     case 'adjective':
       if (i.indeclinable) return [];
       return [
-        { key: 'neuter', frame: ['ett ', ' …'] },
-        { key: 'plural', frame: ['två ', ' …'] },
-        ...(i.comparative ? [{ key: 'comparative' }] : []),
+        { key: 'neuter', frame: ['Det är ', '.'] },
+        { key: 'plural', frame: ['De är ', '.'] },
+        ...(i.comparative ? [{ key: 'comparative', frame: ['Den här är ', ' än den där.'] as [string, string] }] : []),
       ];
     default:
       return [];
@@ -234,31 +259,32 @@ export function hasInflectionExercise(e: VocabularyEntry): boolean {
   return inflectionTargets(e).length > 0;
 }
 
+/** All frames for a sense (used by the content validator and tests). */
+export function inflectionFramesFor(ref: SenseRef): { key: string; sentence: string; accepted: string[] }[] {
+  return inflectionTargets(ref.entry, ref.sense.frame).map((t) => {
+    const accepted = acceptedForms(ref.entry.inflection, t.key);
+    return { key: t.key, sentence: `${t.frame[0]}${accepted[0]}${t.frame[1]}`, accepted };
+  });
+}
+
 export function genInflection(ref: SenseRef, ctx: GenContext): TypedExercise | null {
   const e = ref.entry;
-  const targets = inflectionTargets(e);
+  const targets = inflectionTargets(e, ref.sense.frame);
   if (!targets.length) return null;
   const rng = createRng(ctx.seed + 4);
   const t = targets[Math.floor(rng() * targets.length)]!;
-  const info = inflectionForms(e.inflection).find((f) => f.key === t.key)!;
   const accepted = acceptedForms(e.inflection, t.key);
-  // Particle verbs: "I går plockade undan hon" is wrong word order – use neutral frame.
-  const frame = e.inflection.kind === 'verb' && e.inflection.particle && t.key === 'past' ? (['Hon ', ' i går.'] as [string, string]) : t.frame;
-  const genderHint = e.inflection.kind === 'noun' ? ` (${e.inflection.gender}-ord)` : '';
   return {
     type: 'inflection', senseId: ref.sense.id, dimension: 'inflection',
-    prompt: `${e.lemma}${genderHint}`, promptLang: 'sv',
+    prompt: lemmaLabel(e), promptLang: 'sv',
     subPrompt: ref.sense.ja, subPromptLang: 'ja',
-    instructionSv: `Skriv formen: ${info.labelSv}`,
-    instructionJa: `${info.labelJa}を{書|か}いてください。`,
-    frame,
+    instructionSv: 'Skriv ordet i den form som passar i meningen.',
+    instructionJa: '{文|ぶん}に{合|あ}う{形|かたち}で{書|か}いてください。',
+    frame: t.frame,
     accepted,
     otherForms: allForms(e).filter((f) => !accepted.map((a) => a.toLowerCase()).includes(f)),
     hint: `Börjar på ”${accepted[0]!.slice(0, Math.min(3, accepted[0]!.length - 1))}…”`,
-    explanation: {
-      text: inflectionForms(e.inflection).map((f) => f.form).join(' – '),
-      lang: 'sv',
-    },
+    explanation: { text: inflectionForms(e.inflection).map((f) => f.form).join(' – '), lang: 'sv' },
   };
 }
 

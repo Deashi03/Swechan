@@ -2,7 +2,7 @@
  * Central, non-UI configuration. Pedagogical and gamification rules live
  * here (or in user settings) — never hard-coded inside components.
  */
-export const APP_VERSION = '0.2.0';
+export const APP_VERSION = '0.3.0';
 
 export const streakConfig = {
   /** Freezes a brand-new user starts with. */
