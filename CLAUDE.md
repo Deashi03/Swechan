@@ -11,3 +11,5 @@
 ## Nästa utvecklingsetapp: Swechan 0.4
 
 Inför arbete med 0.4: läs även [`SWECHAN_0_4_CLAUDE_HANDOFF.md`](SWECHAN_0_4_CLAUDE_HANDOFF.md). Där finns en kodbasanpassad fasplan och särskilda regler för katalogen med 2 016 **planerade** moduler, max åtta val per menyskärm, 15–20 ord per publicerad modul, och riskerna kring versionsbunden utvecklingsnollställning. Katalogens fullständiga JSON-filer tillhandahålls separat av produktägaren; rekonstruera dem inte genom gissning. Bevara alltid befintliga publicerade `m.*`- och `s.*`-ID:n.
+
+**Katalog 0.4 finns i GitHub:** [`planning/catalog/swechan-catalog.v1.json`](planning/catalog/swechan-catalog.v1.json) innehåller samtliga **344 kategorier och 2 016 planerade moduler**. Använd den verkliga filen; syntetisk data endast i isolerade tester. Äldre arbetsgrenar hämtar filen från `origin/main`. Schemat för planerade katalogposter måste hållas separat från färdiga `Module`-lektioner. Moduler har 15–20 ord.
