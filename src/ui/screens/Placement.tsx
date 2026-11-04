@@ -3,6 +3,7 @@ import { getContent } from '../../content/repository';
 import { checkTypedAnswer } from '../../learning/answerCheck';
 import { scorePlacement } from '../../learning/placement';
 import { setMeta } from '../../storage/db';
+import { APP_VERSION } from '../../config/appConfig';
 import { navigate } from '../app/router';
 import { Jonathan } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
@@ -94,7 +95,8 @@ export function WelcomeScreen() {
       <Jonathan mood="happy" size={120} />
       <h1>Välkommen till Swechan!</h1>
       <Ja as="p" text="Swechan へようこそ！{毎日|まいにち}{少|すこ}しずつ、スウェーデン{語|ご}の{言葉|ことば}を{増|ふ}やしていきましょう。" />
-      <p className="muted">Varje dag: repetera tidigare ord och lär dig en ny modul med 20–30 ord.</p>
+      <p className="muted">Varje dag: repetera tidigare ord och lär dig en ny modul med 15–20 ord.</p>
+      <span className="badge">Version {APP_VERSION}</span>
       <button className="btn block" onClick={() => navigate({ name: 'placement' }, { replace: true })}>Gör ett kort nivåtest</button>
       <button className="btn ghost block" onClick={async () => {
         await setMeta('placement', { takenAt: Date.now(), skipped: true, estimatedLevel: null, perLevel: {} });

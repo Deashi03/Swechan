@@ -1,8 +1,18 @@
 # Projektstatus – överlämning
 
-**Version:** 0.3.0 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `claude/swechan-0.3` (0.2 är publicerad via GitHub Pages från `main`)
+**Version:** 0.3.1 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `claude/swechan-0.3.1` (publiceras via GitHub Pages från `main`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## ⚠️ Utvecklingsläge är PÅ (0.3.1)
+
+`devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
+
+## Nytt i 0.3.1
+- Moduler 15–20 ord (schema + alla moduler nedkortade till 20).
+- Inlärningen visar "Del X av Y" i stället för totalen (`batchProgress` i `learnPlan.ts`).
+- Versionsnummer på startsidan och välkomstsidan.
+- Utvecklarverktyg (`src/dev/devTools.ts`, `src/ui/screens/DevTools.tsx`): tidsresa via klockförskjutning (`lib/clock.ts`), upplåsning av steg, genvägar för repetition, nollställning.
 
 ## Nytt i 0.3
 
@@ -46,7 +56,11 @@ Användarens feedback på 0.1: (1) förklaringar använde svårare ord än ordet
 
 \* `word_mastered` finns i händelsetypen men emitteras ännu inte (se Återstår).
 
-## Testat (faktiskt genomfört 2026-11-04, version 0.3)
+## Testat (version 0.3.1)
+
+- `npm run typecheck` OK · `npm test` **95 tester gröna** (nya: nollställning vid versionsbyte + återställningspunkt, tidsresa, upplåsning, genvägar, "Del X av Y", passiva ord) · `npm run build` OK · `npm run e2e` **passerar** · skärmbilder av startsida, inlärning och utvecklarpanel granskade.
+
+## Testat (version 0.3)
 
 - `npm run typecheck` OK · `npm test` **88 tester gröna** (nya: distraktorer från annat ämne och samma genus, meningsramar utan "alla" och grammatiktermer, inget auto-avancemang) · `npm run build` OK · `npm run e2e` **passerar** med nya designen · skärmbilder av startsida, ordintro, flerval, kontextövning och skrivövning granskade.
 

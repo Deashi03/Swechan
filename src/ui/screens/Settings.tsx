@@ -10,6 +10,7 @@ import type { PlacementResult } from '../../storage/types';
 import { useSettings } from '../app/hooks';
 import { href, navigate } from '../app/router';
 import { toast } from '../components/Toast';
+import { DevToolsPanel } from './DevTools';
 
 export function SettingsScreen() {
   const s = useSettings();
@@ -95,6 +96,8 @@ export function SettingsScreen() {
           {!persisted && <button className="btn ghost small" onClick={async () => setPersisted(await requestPersistentStorage())}>Begär skydd</button>}
         </div>
       </section>
+
+      <DevToolsPanel />
 
       <a className="card clickable" href={href({ name: 'stats' })} style={{ textDecoration: 'none' }}><strong>Statistik och kunskapsutveckling ›</strong></a>
 

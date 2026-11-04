@@ -65,9 +65,19 @@ describe('module flow and daily session', () => {
     const m = getContent().getModule(MOD)!;
     const cards = await getDb().cards.toArray();
     expect(new Set(cards.map((c) => c.senseId)).size).toBe(m.words.length);
-    // passive words get only a meaning card
-    const passive = m.words.find((w) => !w.active)!;
-    expect(cards.filter((c) => c.senseId === passive.senseId).map((c) => c.dimension)).toEqual(['meaning']);
+    // active words get production cards too
+    const active = m.words.find((w) => w.active)!;
+    expect(cards.filter((c) => c.senseId === active.senseId).map((c) => c.dimension)).toContain('spelling');
+  });
+
+  it('passive words only get a meaning card', async () => {
+    await setupTestEnv();
+    const mod = getContent().modules.find((x) => x.words.some((w) => !w.active))!;
+    await finishLearn(mod.id);
+    for (const st of ['learn', 'read', 'converse'] as const) await completeStep(mod.id, st);
+    const passive = mod.words.find((w) => !w.active)!;
+    const cards = await getDb().cards.where('senseId').equals(passive.senseId).toArray();
+    expect(cards.map((c) => c.dimension)).toEqual(['meaning']);
   });
 
   it('a completed module + review completes the day and increments the streak (acceptance flow, 2 days)', async () => {

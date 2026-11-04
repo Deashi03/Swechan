@@ -14,6 +14,7 @@ import { now as clockNow, todayStudyDate } from '../lib/clock';
 import { hashString } from '../lib/random';
 import { addWordsToReview, outcomeToRating } from '../repetition/reviewService';
 import { getDb, getMeta } from '../storage/db';
+import { isUnlockAll } from '../dev/devTools';
 import type { Dimension, LearnSessionState, ModuleProgressRecord, PlacementResult, Rating, StepId } from '../storage/types';
 
 export async function getModuleProgress(moduleId: string): Promise<ModuleProgressRecord | undefined> {
@@ -65,7 +66,7 @@ export async function saveReadState(moduleId: string, read: NonNullable<ModulePr
 
 /** Is the step available? Steps unlock in order (pedagogical sequence), all are always visible. */
 export function isStepUnlocked(p: ModuleProgressRecord | undefined, step: StepId): boolean {
-  if (step === 'learn') return true;
+  if (step === 'learn' || isUnlockAll()) return true;
   if (step === 'read') return p?.steps.learn === 'completed';
   return p?.steps.read === 'completed';
 }

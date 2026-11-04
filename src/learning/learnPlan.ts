@@ -39,7 +39,10 @@ export function buildLearnPlan(words: ModuleWord[], repo: ContentRepository, see
       if (w.active && hasInflectionExercise(ref.entry)) r3.push(ex(w.senseId, 'inflection'));
       if (repo.comparisonsForSense(w.senseId).length) r3.push(ex(w.senseId, 'synonym_choice'));
     });
+    const batchNo = b / learnConfig.batchSize;
+    const start = plan.length;
     for (const round of [r1, r2, r3]) plan.push(...spreadBySense(shuffle(round, rng)));
+    for (let i = start - batch.length; i < plan.length; i++) plan[i] = { ...plan[i]!, batch: batchNo };
   }
   return plan;
 }
@@ -75,6 +78,22 @@ export function isLearnSessionDone(state: LearnSessionState): boolean {
 
 export function learnProgress(state: LearnSessionState): { done: number; total: number } {
   return { done: Math.min(state.index, state.plan.length), total: state.plan.length };
+}
+
+/**
+ * Progress shown to the learner: only the current part (batch of ~5 words),
+ * never the long total ("32/122" was demoralising – feedback 0.3.1).
+ */
+export function batchProgress(state: LearnSessionState): { part: number; parts: number; doneInPart: number; sizeOfPart: number } {
+  const batchOf = (i: number) => state.plan[i]?.batch ?? 0;
+  const parts = state.plan.length ? Math.max(...state.plan.map((p) => p.batch ?? 0)) + 1 : 1;
+  const idx = Math.min(state.index, state.plan.length - 1);
+  const part = batchOf(idx);
+  let first = idx;
+  while (first > 0 && batchOf(first - 1) === part) first--;
+  let last = idx;
+  while (last + 1 < state.plan.length && batchOf(last + 1) === part) last++;
+  return { part: part + 1, parts, doneInPart: Math.max(0, state.index - first), sizeOfPart: last - first + 1 };
 }
 
 /** Dimensions that get their own review card for a word. */

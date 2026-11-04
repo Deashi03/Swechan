@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.3.1 – 2026-11-04
+Utvecklings- och testvänlighet (önskemål från produktägaren).
+
+### Ändrat
+- **Moduler har 15–20 ord** (tidigare 20–30). Alla fem moduler är nedkortade till 20 ord; borttagna ord finns kvar i ordboken. Lästexter och frågor justerade.
+- **Inget "32/122"**: inlärningen visar bara den del du är i ("Del 2 av 4") med en stapel för delen och prickar för delarna.
+- **Versionsnumret syns** på startsidan (bredvid hälsningen) och på välkomstsidan.
+
+### Tillagt – utvecklingsläge (`devConfig` i `src/config/appConfig.ts`)
+- **Nollställning vid varje ny version**: all progression (moduler, repetition, streak, nivåtest) nollställs när appen uppdateras; inställningar behålls och en återställningspunkt sparas (Inställningar → Säkerhetskopia → Ångra). Ett meddelande visas på startsidan.
+- **Utvecklarverktyg** i Inställningar: simulera datum (±1 dag), lås upp alla modulsteg, lägg alla ord i repetitionen, gör alla kort förfallna, planera dagens repetition på nytt, slutför dagens repetition direkt, nollställ manuellt. ⏭-knapp i inlärningen för att hoppa över ett steg.
+
 ## 0.3.0 – 2026-11-04
 Fokus: ny visuell design ("Fjord") och tydligare övningar.
 

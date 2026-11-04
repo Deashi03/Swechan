@@ -47,7 +47,7 @@ Ordningen i `words` är alltså också **inlärningsordningen**. Lägg grundläg
 ## Process för en ny modul
 
 1. **Välj ämne** och placera det i kategoriträdet (lägg till kategorier vid behov; `parentId`, `order`, svenska + japanska namn).
-2. **Välj 20–30 målord** (standard 25). Blanda ordklasser. Markera ~60 % som `active: true` (ska kunna användas) och resten som `active: false` (främst förstå).
+2. **Välj 15–20 målord** (från 0.3.1; kortare moduler är mindre tunga att ta sig igenom). Blanda ordklasser. Markera ~60 % som `active: true` (ska kunna användas) och resten som `active: false` (främst förstå).
 3. **Sök i ordboken först** (`npm run dev` → Ordlista, eller grep i `dictionary/`). Finns betydelsen redan: referera dess `senseId`. Finns ordet men inte betydelsen: lägg till en ny `sense` i samma post. Skapa annars en ny post.
 4. **Kontrollera betydelse och böjning** mot en auktoritativ källa (SAOL/SO via svenska.se, Språkbankens Karp/SALDO). Alla former skrivs explicit; alternativa former i `variants`.
 5. **Skriv förklaringar**: `defSv` och `defJa` ska bygga på **samma faktaunderlag** och säga samma sak. Korta, pedagogiska, sakligt korrekta. Sätt `concept: true` för tekniska/historiska/abstrakta begrepp.

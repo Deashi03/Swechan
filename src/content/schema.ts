@@ -234,7 +234,8 @@ export const Module = z.object({
   related: z.array(z.string()),
   /** Order hint for "Dagens modul" recommendations (lower first). */
   recommendedOrder: z.number(),
-  words: z.array(ModuleWord).min(20).max(30),
+  /** 15–20 words per module (shorter modules are less demoralising; decided in 0.3.1). */
+  words: z.array(ModuleWord).min(15).max(20),
   reading: ReadingText,
   conversation: ConversationConfig,
 });
