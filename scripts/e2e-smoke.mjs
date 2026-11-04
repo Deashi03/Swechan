@@ -218,6 +218,7 @@ try {
   await page.getByRole('link', { name: /Råvaror & skafferi/ }).first().click();
   await page.getByRole('link', { name: /Vanliga grönsaker/ }).first().click();
   await shot('10-module-gronsaker');
+  await page.getByRole('button', { name: /Starta: Lär dig orden/ }).waitFor({ timeout: 15000 }); // CI is slower than local runs
   await doModule('Vanliga grönsaker', { promptIncludes: '- potatis – じゃがいも' });
   await page.goto(`${BASE}#/explore`);
   await page.getByLabel('Global sökning').fill('Skära och hacka');
