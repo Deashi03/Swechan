@@ -91,6 +91,10 @@ async function replaceAll(data: Backup['data'], restorePoint?: Backup['data']) {
     await db.dailySessions.bulkPut(data.dailySessions);
     await db.savedWords.bulkPut(data.savedWords);
     if (restorePoint) await db.meta.put({ key: 'restorePoint', value: { createdAt: Date.now(), data: restorePoint } });
+    // Restored/imported data has been migrated to this app version (migrateBackup). Mark it as
+    // belonging to the running version, otherwise the development reset (applyVersionReset)
+    // would wipe an undo or an imported backup again at the next start (0.4 audit finding).
+    await db.meta.put({ key: 'appVersion', value: APP_VERSION });
   });
 }
 

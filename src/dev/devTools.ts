@@ -53,10 +53,17 @@ export async function resetAllProgress(reason: string): Promise<void> {
  * new app version starts from zero. Returns true if a reset happened.
  */
 export async function applyVersionReset(): Promise<boolean> {
+  return applyVersionResetWith(devConfig);
+}
+
+/** Same as applyVersionReset with an explicit config (tests: resetProgressOnUpdate true/false). */
+export async function applyVersionResetWith(cfg: { resetProgressOnUpdate: boolean }): Promise<boolean> {
   const stored = await getMeta<string>('appVersion');
   if (stored === APP_VERSION) return false;
-  const hasData = (await getDb().cards.count()) + (await getDb().moduleProgress.count()) + (await getDb().dailySessions.count()) > 0;
-  if (devConfig.resetProgressOnUpdate && hasData) {
+  const db = getDb();
+  const counts = await Promise.all([db.cards.count(), db.moduleProgress.count(), db.dailySessions.count(), db.savedWords.count(), db.reviewEvents.count()]);
+  const hasData = counts.some((n) => n > 0);
+  if (cfg.resetProgressOnUpdate && hasData) {
     await resetAllProgress(`Ny version ${APP_VERSION}: all progression har nollställts (utvecklingsläge).`);
     return true;
   }
