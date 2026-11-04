@@ -1,7 +1,7 @@
 {
   "name": "swechan",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "typecheck": "tsc -b",
     "test": "vitest run",
     "test:watch": "vitest",
-    "validate:content": "vitest run src/content/contentValidation.test.ts",
+    "validate:content": "vitest run src/content/contentValidation.test.ts src/content/vocabularyCheck.test.ts",
     "e2e": "node scripts/e2e-smoke.mjs"
   },
   "dependencies": {

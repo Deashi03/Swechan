@@ -1,5 +1,5 @@
 import { useLiveQuery } from 'dexie-react-hooks';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { getMeta, requestPersistentStorage } from '../../storage/db';
 import { DictionarySheetProvider } from '../dictionary/DictionarySheet';
 import { TabBar } from '../components/TabBar';
@@ -53,8 +53,14 @@ export function App() {
 
   useEffect(() => { requestPersistentStorage(); }, []);
 
+  // Send a brand-new user to the welcome screen ONCE, when the onboarding flag
+  // first loads. (Re-checking on every route change raced with the flag being
+  // saved, which bounced "Hoppa över" back to the welcome screen.)
+  const onboardingChecked = useRef(false);
   useEffect(() => {
-    if (onboarded === false && route.name !== 'welcome' && route.name !== 'placement') navigate({ name: 'welcome' }, { replace: true });
+    if (onboarded === undefined || onboardingChecked.current) return;
+    onboardingChecked.current = true;
+    if (!onboarded && route.name !== 'welcome' && route.name !== 'placement') navigate({ name: 'welcome' }, { replace: true });
   }, [onboarded, route.name]);
 
   if (onboarded === undefined) return null;

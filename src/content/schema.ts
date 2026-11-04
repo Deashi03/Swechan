@@ -88,6 +88,8 @@ export const ReviewStatus = z.object({
 
 export const WordSense = z.object({
   id: z.string().regex(/^s\.[\wåäöé-]+\.\d+$/),
+  /** Short label distinguishing this sense from the headword's other senses, e.g. "substans", "skolämne". */
+  labelSv: z.string().optional(),
   /** Japanese gloss with furigana markup. */
   ja: JaText,
   /** Extra Japanese search keys (plain text or markup), e.g. alternative translations. */

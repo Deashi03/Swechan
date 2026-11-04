@@ -1,11 +1,11 @@
 {
  "id": "m.atomer-molekyler",
- "contentVersion": 1,
+ "contentVersion": 2,
  "updatedAt": "2026-11-04",
  "titleSv": "Atomer och molekyler",
  "titleJa": "{原子|げんし}と{分子|ぶんし}",
- "descriptionSv": "Vad allting består av: atomens delar, grundämnen, molekyler, kemiska föreningar och reaktioner.",
- "descriptionJa": "すべてのものは{何|なに}でできているのか。{原子|げんし}のしくみ、{元素|げんそ}、{分子|ぶんし}、{化合物|かごうぶつ}、{化学反応|かがくはんのう}について{学|まな}びます。",
+ "descriptionSv": "Vad ämnen består av: atomens delar, grundämnen, molekyler, kemiska föreningar och reaktioner.",
+ "descriptionJa": "{物質|ぶっしつ}は{何|なに}でできているのか。{原子|げんし}のしくみ、{元素|げんそ}、{分子|ぶんし}、{化合物|かごうぶつ}、{化学反応|かがくはんのう}について{学|まな}びます。",
  "categoryId": "c.stem.fysik.partiklar",
  "tags": [
   "kemi",
@@ -13,40 +13,54 @@
   "naturvetenskap"
  ],
  "level": "B1",
- "prerequisites": [],
+ "prerequisites": [
+  "m.material-amnen"
+ ],
  "related": [],
- "recommendedOrder": 2,
+ "recommendedOrder": 3,
  "words": [
+  {
+   "senseId": "s.partikel.1",
+   "active": true
+  },
   {
    "senseId": "s.atom.1",
    "active": true
   },
   {
-   "senseId": "s.molekyl.1",
-   "active": true
-  },
-  {
-   "senseId": "s.grundämne.1",
-   "active": true
-  },
-  {
-   "senseId": "s.ämne.1",
-   "active": true
+   "senseId": "s.atomkärna.1",
+   "active": false
   },
   {
    "senseId": "s.laddning.1",
    "active": true
   },
   {
-   "senseId": "s.bestå.1",
+   "senseId": "s.proton.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elektron.1",
+   "active": false
+  },
+  {
+   "senseId": "s.neutron.1",
+   "active": false
+  },
+  {
+   "senseId": "s.neutral.1",
    "active": true
   },
   {
-   "senseId": "s.binda.1",
-   "active": true
+   "senseId": "s.kretsa.1",
+   "active": false
   },
   {
-   "senseId": "s.syre.1",
+   "senseId": "s.massa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grundämne.1",
    "active": true
   },
   {
@@ -54,8 +68,36 @@
    "active": true
   },
   {
+   "senseId": "s.syre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kol.1",
+   "active": false
+  },
+  {
+   "senseId": "s.binda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bindning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.molekyl.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kemisk.1",
+   "active": true
+  },
+  {
    "senseId": "s.förening.1",
    "active": true
+  },
+  {
+   "senseId": "s.formel.1",
+   "active": false
   },
   {
    "senseId": "s.reagera.1",
@@ -64,66 +106,18 @@
   {
    "senseId": "s.reaktion.1",
    "active": true
-  },
-  {
-   "senseId": "s.partikel.1",
-   "active": true
-  },
-  {
-   "senseId": "s.kemisk.1",
-   "active": true
-  },
-  {
-   "senseId": "s.neutral.1",
-   "active": true
-  },
-  {
-   "senseId": "s.atomkärna.1",
-   "active": false
-  },
-  {
-   "senseId": "s.proton.1",
-   "active": false
-  },
-  {
-   "senseId": "s.neutron.1",
-   "active": false
-  },
-  {
-   "senseId": "s.elektron.1",
-   "active": false
-  },
-  {
-   "senseId": "s.bindning.1",
-   "active": false
-  },
-  {
-   "senseId": "s.kol.1",
-   "active": false
-  },
-  {
-   "senseId": "s.massa.1",
-   "active": false
-  },
-  {
-   "senseId": "s.formel.1",
-   "active": false
-  },
-  {
-   "senseId": "s.kretsa.1",
-   "active": false
   }
  ],
  "reading": {
   "titleSv": "Allt består av atomer",
   "paragraphs": [
-   "Allt omkring oss består av små partiklar som kallas atomer. En atom är så liten att man inte kan se den, inte ens i ett vanligt mikroskop.",
-   "I mitten av atomen finns atomkärnan. Den består av protoner och neutroner. Protonerna har positiv laddning, medan neutronerna saknar laddning. Runt kärnan finns elektroner, som har negativ laddning. I en enkel modell kretsar elektronerna runt kärnan ungefär som planeter runt solen, men i verkligheten är det mer komplicerat. Nästan hela atomens massa finns i kärnan.",
-   "En atom har lika många elektroner som protoner. Därför tar laddningarna ut varandra, och atomen är neutral.",
-   "Antalet protoner bestämmer vilket grundämne atomen tillhör. Alla atomer med en proton är väte, och alla atomer med åtta protoner är syre. I dag känner man till 118 grundämnen.",
-   "Atomer kan binda till varandra. När två eller flera atomer hålls ihop av kemiska bindningar bildar de en molekyl. En vattenmolekyl består till exempel av två väteatomer och en syreatom. Därför skriver man vattnets formel som H₂O.",
-   "Ett ämne som består av atomer från minst två olika grundämnen kallas en kemisk förening. Vatten är alltså en förening. Kol kan bilda väldigt många olika föreningar, och kol finns i alla levande organismer.",
-   "När ämnen reagerar med varandra bryts vissa bindningar, och nya bildas. Atomerna försvinner inte, men de ordnas på ett nytt sätt. Vid en kemisk reaktion bildas alltså nya ämnen."
+   "Allt omkring oss består av mycket små partiklar som heter atomer. En atom är så liten att man inte kan se den, inte ens i ett vanligt mikroskop.",
+   "I mitten av atomen finns atomkärnan. Den består av protoner och neutroner. Protonerna har positiv laddning, och neutronerna har ingen laddning. Runt kärnan finns elektroner. De har negativ laddning. I en enkel modell kretsar elektronerna runt kärnan, ungefär som planeter runt solen. I verkligheten är det svårare än så. Nästan hela atomens massa finns i kärnan.",
+   "En atom har lika många elektroner som protoner. Den positiva och den negativa laddningen är därför lika stora, och atomen är neutral.",
+   "Antalet protoner bestämmer vilket grundämne atomen är. Alla atomer med en proton är väte, och alla atomer med åtta protoner är syre. I dag känner man till 118 grundämnen.",
+   "Atomer kan binda till varandra. När två eller flera atomer sitter ihop med kemiska bindningar, blir de en molekyl. I vatten sitter två atomer väte ihop med en atom syre. Därför är vattnets formel H₂O.",
+   "Ett ämne med atomer från minst två olika grundämnen heter en kemisk förening. Vatten är alltså en förening. Kol kan bilda väldigt många olika föreningar, och det finns kol i allt som lever.",
+   "När ämnen reagerar med varandra, går några bindningar sönder, och nya bindningar bildas. Atomerna försvinner inte, men de byter plats. Vid en kemisk reaktion blir det alltså nya ämnen."
   ],
   "questions": [
    {
@@ -148,19 +142,19 @@
     "promptSv": "Varför är en atom neutral?",
     "options": [
      "Den har lika många elektroner som protoner.",
-     "Den saknar elektroner.",
+     "Den har inga elektroner.",
      "Neutronerna tar bort all laddning.",
      "Den är för liten för att ha laddning."
     ],
     "correctIndex": 0,
-    "explanationSv": "Lika många positiva protoner och negativa elektroner gör att laddningarna tar ut varandra.",
-    "explanationJa": "プラスの{陽子|ようし}とマイナスの{電子|でんし}が{同|おな}じ{数|かず}なので、{電荷|でんか}が{打|う}ち{消|け}し{合|あ}います。"
+    "explanationSv": "Den positiva och den negativa laddningen är lika stora.",
+    "explanationJa": "プラスとマイナスの{電荷|でんか}が{同|おな}じ{大|おお}きさだからです。"
    },
    {
     "kind": "truefalse",
     "id": "q3",
     "focus": "detail",
-    "statementSv": "Det är antalet neutroner som bestämmer vilket grundämne en atom tillhör.",
+    "statementSv": "Det är antalet neutroner som bestämmer vilket grundämne en atom är.",
     "correct": false,
     "explanationSv": "Det är antalet protoner som bestämmer grundämnet.",
     "explanationJa": "{元素|げんそ}を{決|き}めるのは{陽子|ようし}の{数|かず}です。"
@@ -169,24 +163,24 @@
     "kind": "choice",
     "id": "q4",
     "focus": "usage",
-    "promptSv": "I texten står det att vatten är en ”förening”. Vad betyder ordet här?",
+    "promptSv": "Texten säger att vatten är en ”förening”. Vad betyder ordet här?",
     "options": [
      "Ett ämne med atomer från minst två olika grundämnen",
-     "En grupp människor med ett gemensamt intresse",
+     "En grupp människor som har samma intresse",
      "En enda atom",
      "En blandning av vatten och luft"
     ],
     "correctIndex": 0,
-    "explanationSv": "I kemi betyder förening ett ämne av minst två olika grundämnen som är kemiskt bundna. Betydelsen 'klubb' passar inte här.",
-    "explanationJa": "ここでは「{化合物|かごうぶつ}」の{意味|いみ}です。「クラブ」の{意味|いみ}ではありません。"
+    "explanationSv": "Här är förening ett kemiskt ord. Betydelsen ”grupp människor” passar inte.",
+    "explanationJa": "ここでは「{化合物|かごうぶつ}」の{意味|いみ}です。「グループ」の{意味|いみ}ではありません。"
    },
    {
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Vid en kemisk reaktion försvinner en del av atomerna.",
+    "statementSv": "Vid en kemisk reaktion försvinner några atomer.",
     "correct": false,
-    "explanationSv": "Atomerna försvinner inte – de ordnas på ett nytt sätt.",
+    "explanationSv": "Atomerna försvinner inte. De byter plats.",
     "explanationJa": "{原子|げんし}は{消|き}えません。{並|なら}び{方|かた}が{変|か}わるだけです。"
    }
   ],
@@ -195,7 +189,7 @@
   ]
  },
  "conversation": {
-  "scenarioSv": "Ni pratar om vad saker består av – från vatten och luft till människokroppen – och om hur kemi syns i vardagen, till exempel i matlagning, rost och förbränning.",
+  "scenarioSv": "Ni pratar om vad saker består av – från vatten och luft till människokroppen – och om hur kemi syns i vardagen, till exempel i matlagning, rost och eld.",
   "discussionPoints": [
    "Förklara med egna ord vad skillnaden mellan en atom och en molekyl är.",
    "Exempel på kemiska reaktioner i vardagen (matlagning, rost, eld).",

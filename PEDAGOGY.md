@@ -12,10 +12,15 @@ Nedan skiljs tydligt mellan **forskningsstödda principer** och **designval/expe
 | **Utspridd repetition** (spacing) | Cepeda m.fl. (2006), metaanalys | FSRS schemalägger varje kort individuellt utifrån svarshistorik (`repetition/`). |
 | **Separata aspekter av ordkunskap** (form, betydelse, användning; receptiv vs produktiv) | Nation (2013), *Learning Vocabulary in Another Language* | Separata kort för betydelse, stavning och böjning; aktiva vs passiva ord. |
 | **Ord i meningsfulla sammanhang** | Nation (2013); Webb & Nation (2017) | Exempelmeningar, kontextövningar, sammanhängande lästext där alla målord förekommer. |
-| **Hög textförståelse för läsning** (~95–98 % kända ord) | Laufer (1989); Hu & Nation (2000) | Riktlinje i `CONTENT_GUIDELINES.md`: ämnet får vara avancerat, språket ska vara enkelt utöver målorden. |
+| **Hög textförståelse för läsning** (~95–98 % kända ord) | Laufer (1989); Hu & Nation (2000) | Automatisk kontroll (`vocabularyCheck.ts`): lästexter och frågor får bara innehålla grundord, förkunskapsord och modulens målord. |
+| **Begränsat definitionsordförråd** | Inlärarordböcker som *Longman* och *Oxford Advanced Learner's* definierar med ~2 000–3 000 vanliga ord; en definition med okända ord hjälper inte | Definitioner får bara använda grundordförrådet och redan inlärda ord; ordningen i modulen är inlärningsordningen. |
 | **Återkoppling som hjälper vidare** | Hattie & Timperley (2007); Shute (2008) | Fel svar → uppmuntran + ledtråd, *inte* direkt facit; andra felet → rätt svar + förklaring. Specifik återkoppling för å/ä/ö, fel böjningsform och stavfel. |
 | **Explicit undervisning av ord + förklaring av begrepp** | Nation (2013) | Ordintroduktion med definition på svenska och japanska; begreppsord (`concept: true`) får fylligare förklaring. |
 | **Modersmålsstöd för förståelse** | Nation (2013) om L1-glosor för betydelse | Japanska glosor och förklaringar med furigana; frivilliga japanska grammatiknoteringar om skillnader (genus, bestämd form, partikelverb …). |
+
+## Inlärningskedjor (0.2)
+
+Moduler kan bygga på varandra (`prerequisites`). En förkunskapsmodul lär ut de ord som en svårare modul behöver för sina förklaringar och texter (t.ex. *Material och ämnen* → *Atomer och molekyler*). Kedjan är en **rekommendation**: *Dagens modul* följer den, men alla moduler kan öppnas när som helst (spec 12.4). Ord från tidigare moduler som förekommer i förklaringar går att trycka på för uppslagning.
 
 ## Designval (rimliga men inte direkt bevisade i just denna form)
 

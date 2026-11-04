@@ -15,6 +15,30 @@ Innehållskorrekthet är en kärnfunktion. Felaktiga översättningar, böjninga
 
 Ingen kodändring behövs för en ny modul, kategori eller ordpost. Kör alltid `npm run validate:content` (och `npm test`).
 
+## Grundregel: kontrollerat ordförråd (från 0.2)
+
+Förklaringar, exempel, lästexter och frågor får **bara** använda ord som eleven redan kan:
+
+1. **Grundordförrådet** (`src/content/data/core/coreVocabulary.json`, ungefär A1–A2, ~920 ord). Regelbundna böjningar känns igen automatiskt; oregelbundna former listas i `irregularForms`, egennamn i `names`.
+2. **Målord i förkunskapsmodulerna** (`prerequisites`, transitivt).
+3. **Målord i samma modul**:
+   - en *definition* får bara använda ord som kommer **tidigare** i modulens ordlista,
+   - ett *exempel* får dessutom använda ordet självt,
+   - *lästext och frågor* får använda alla modulens ord.
+
+Ordningen i `words` är alltså också **inlärningsordningen**. Lägg grundläggande begrepp först (t.ex. *partikel* före *atom*, *atom* före *molekyl*).
+`npm run validate:content` kör kontrollen och listar varje text med okända ord. Lösningen är nästan alltid att **skriva enklare**, inte att lägga till ord i grundordförrådet. Lägg bara till verkligt grundläggande ord (A1–A2) där.
+
+**Behövs ett svårare ord?** Gör det till ett målord tidigare i modulen, eller bygg en **förkunskapsmodul** (som *Material och ämnen* före *Atomer och molekyler*, och *Krig och försvar* före *Medeltida borgar*). Moduler bildar på så sätt inlärningskedjor; *Dagens modul* föreslår bara moduler vars förkunskaper är klara.
+
+**Stil för definitioner:** korta meningar, konkreta exempel, inga facktermer som inte redan lärts in. Djupare fakta hör hemma i lästexten. Den japanska definitionen ska säga samma sak som den svenska.
+
+## Flera betydelser
+
+- Alla vanliga betydelser av ett uppslagsord ska finnas som egna `senses` (t.ex. *ämne*: substans, skolämne, samtalsämne, material att göra något av, "ämne till"). Kontrollera mot SO/SAOL.
+- Ge varje betydelse en kort `labelSv` (t.ex. "substans", "skolämne"). Etiketten visas i ordintroduktionen och ordboken.
+- Skriv **inte** "ordet har två betydelser" i `usageNote` – appen visar alla betydelser automatiskt i en egen sektion.
+
 ## Process för en ny modul
 
 1. **Välj ämne** och placera det i kategoriträdet (lägg till kategorier vid behov; `parentId`, `order`, svenska + japanska namn).
@@ -24,7 +48,7 @@ Ingen kodändring behövs för en ny modul, kategori eller ordpost. Kör alltid 
 5. **Skriv förklaringar**: `defSv` och `defJa` ska bygga på **samma faktaunderlag** och säga samma sak. Korta, pedagogiska, sakligt korrekta. Sätt `concept: true` för tekniska/historiska/abstrakta begrepp.
 6. **Furigana**: varje kanji i japansk text inom `{漢字|かんじ}`. Läsningen ska stämma i *sammanhanget* (t.ex. `{何|なん}か{月|げつ}`). Validatorn hittar saknad furigana men **inte fel läsning** – det kräver mänsklig granskning.
 7. **Exempelmeningar**: naturlig svenska, gärna med vanlig kollokation; japansk översättning som är naturlig (inte ord-för-ord).
-8. **Lästext**: alla målord ska förekomma (valfri böjningsform). Ämnet får vara avancerat, men utöver målorden ska språket vara enkelt (sikta på att > 95 % av övriga ord är kända för en elev på modulens nivå). Kontrollera fakta och ange `factSources`.
+8. **Lästext**: alla målord ska förekomma (valfri böjningsform). Ämnet får vara avancerat, men övriga ord ska vara grundord eller förkunskapsord – detta kontrolleras automatiskt. Kontrollera fakta och ange `factSources`.
 9. **Kontrollera målorden mot texten**: `npm run validate:content` rapporterar målord som saknas. Obs: delade partikelverb ("plockar hon undan") och passiv på -s känns inte igen – skriv om eller använd en sammanhängande form.
 10. **Läsförståelsefrågor**: minst 3, helst 5. Blanda `detail`, `cause`, `usage` (hur ett målord används, t.ex. rätt betydelse av ett flertydigt ord) och `inference`. Frågorna ska testa förståelse, inte bara ordigenkänning. Ge förklaring (gärna även japansk).
 11. **Konversationsunderlag**: `scenarioSv` + 3–4 `discussionPoints`. Prompten genereras automatiskt.
@@ -47,5 +71,5 @@ Möjliga öppna resurser att undersöka (kontrollera licens före import):
 - **Kelly-listan** (svensk frekvenslista, CC BY-NC-SA 2.0 eller motsvarande – kontrollera; *NC* kan begränsa användning).
 - **JMdict** (EDRDG, CC BY-SA 4.0) – japansk lexikal resurs för kontroll av läsningar.
 
-## Status i v0.1
-Allt innehåll i v0.1 är producerat med AI-stöd och markerat `ai-draft`. Det har kontrollerats automatiskt (schema, furigana-täckning, referenser, målord i texter) men **inte granskats av en människa**. Prioritera granskning av japanska översättningar och läsningar.
+## Status
+Allt innehåll (v0.1–0.2) är producerat med AI-stöd och markerat `ai-draft`. Det har kontrollerats automatiskt (schema, furigana-täckning, referenser, målord i texter) men **inte granskats av en människa**. Prioritera granskning av japanska översättningar och läsningar.

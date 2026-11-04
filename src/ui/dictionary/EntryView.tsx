@@ -12,6 +12,7 @@ import { Ja } from '../components/Ja';
 import { SpeakButton } from '../components/SpeakButton';
 import { toast } from '../components/Toast';
 import { ComparisonView } from './ComparisonView';
+import { SvText } from '../components/SvText';
 
 const LEVEL_SV = { introduced: 'Introducerat', understood: 'Förstått', active: 'Aktivt behärskat', consolidated: 'Långsiktigt befäst' } as const;
 const REGISTER_SV: Record<string, string> = { informal: 'vardagligt', formal: 'formellt', technical: 'fackspråk', historical: 'historiskt', literary: 'litterärt' };
@@ -67,21 +68,30 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
         {entry.pronunciationNote && <p className="small muted" style={{ marginTop: 6 }}>Uttal: {entry.pronunciationNote}</p>}
       </header>
 
+      {entry.senses.length > 1 && (
+        <nav className="card small" aria-label="Betydelser">
+          <strong>{entry.senses.length} betydelser:</strong>{' '}
+          {entry.senses.map((s, i) => <span key={s.id}>{i > 0 && ' · '}{i + 1}. {s.labelSv ?? <Ja text={s.ja} />}</span>)}
+        </nav>
+      )}
       {entry.senses.map((s, i) => {
         const comparisons = repo.comparisonsForSense(s.id);
         const notes = repo.grammarNotesFor(s.id);
         return (
           <section key={s.id} className="card stack-sm" style={focusSenseId === s.id && entry.senses.length > 1 ? { borderColor: 'var(--c-primary-soft)', borderWidth: 2 } : undefined}>
             <div className="row">
-              {entry.senses.length > 1 && <span className="badge">{i + 1}</span>}
-              <Ja text={s.ja} className="prompt-ja grow" />
+              {entry.senses.length > 1 && <span className="sense-num current">{i + 1}</span>}
+              <div className="grow">
+                {s.labelSv && entry.senses.length > 1 && <div className="small muted">{s.labelSv}</div>}
+                <Ja text={s.ja} className="prompt-ja" />
+              </div>
               {s.register !== 'neutral' && <span className="badge">{REGISTER_SV[s.register]}</span>}
             </div>
-            <p>{s.defSv}</p>
+            <p><SvText text={s.defSv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></p>
             <Ja text={s.defJa} as="p" className="muted" />
             {s.examples.map((ex, k) => (
               <div key={k} className="stack-sm" style={{ borderLeft: '3px solid var(--c-primary-tint)', paddingLeft: 10 }}>
-                <div className="row"><span className="grow">{ex.sv}</span><SpeakButton text={ex.sv} label="Lyssna på meningen" /></div>
+                <div className="row"><span className="grow"><SvText text={ex.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></span><SpeakButton text={ex.sv} label="Lyssna på meningen" /></div>
                 <Ja text={ex.ja} as="div" className="small muted" />
               </div>
             ))}
