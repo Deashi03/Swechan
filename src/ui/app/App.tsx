@@ -6,7 +6,7 @@ import { TabBar } from '../components/TabBar';
 import { ToastHost } from '../components/Toast';
 import { ConverseStep } from '../screens/ConverseStep';
 import { DictionaryScreen } from '../screens/DictionaryScreen';
-import { Explore } from '../screens/Explore';
+import { CatalogModuleView, Explore } from '../screens/Explore';
 import { Home } from '../screens/Home';
 import { ModuleLearnScreen } from '../screens/ModuleSteps';
 import { ModuleOverview } from '../screens/ModuleOverview';
@@ -25,6 +25,7 @@ function Screen({ route }: { route: Route }) {
     case 'home': return <Home />;
     case 'explore': return <Explore key={route.categoryId ?? 'root'} categoryId={route.categoryId} />;
     case 'module': return <ModuleOverview id={route.id} />;
+    case 'catalogModule': return <CatalogModuleView key={route.id} id={route.id} />;
     case 'learn': return <ModuleLearnScreen id={route.id} />;
     case 'read': return <ReadStep id={route.id} />;
     case 'converse': return <ConverseStep id={route.id} />;

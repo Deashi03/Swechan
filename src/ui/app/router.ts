@@ -7,6 +7,7 @@ export type Route =
   | { name: 'home' }
   | { name: 'explore'; categoryId?: string }
   | { name: 'module'; id: string }
+  | { name: 'catalogModule'; id: string }
   | { name: 'learn'; id: string }
   | { name: 'read'; id: string }
   | { name: 'converse'; id: string }
@@ -36,6 +37,7 @@ export function parseHash(hash: string): Route {
     case 'dictionary':
       if (b === 'saved') return { name: 'dictionary', tab: 'saved' };
       return b ? { name: 'dictionary', entryId: b } : { name: 'dictionary' };
+    case 'catalog': return b ? { name: 'catalogModule', id: b } : { name: 'explore' };
     case 'settings': return { name: 'settings' };
     case 'stats': return { name: 'stats' };
     case 'placement': return { name: 'placement' };
@@ -50,6 +52,7 @@ export function href(r: Route): string {
     case 'home': return '#/';
     case 'explore': return r.categoryId ? `#/explore/${e(r.categoryId)}` : '#/explore';
     case 'module': return `#/module/${e(r.id)}`;
+    case 'catalogModule': return `#/catalog/${e(r.id)}`;
     case 'learn': case 'read': case 'converse': return `#/module/${e(r.id)}/${r.name}`;
     case 'review': return '#/review';
     case 'reviewSession': return `#/review/session/${r.mode}`;
