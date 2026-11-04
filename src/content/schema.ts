@@ -241,6 +241,17 @@ export const Module = z.object({
 });
 export type Module = z.infer<typeof Module>;
 
+/**
+ * Module index entry (0.4 phase D): everything except the lesson body
+ * (reading text + conversation). Loaded eagerly; bodies are lazy-loaded.
+ */
+export const ModuleMeta = Module.omit({ reading: true, conversation: true }).extend({
+  /** File name of the full lesson in src/content/data/modules/. */
+  bodyFile: z.string().regex(/^[\w.-]+\.json$/),
+});
+export type ModuleMeta = z.infer<typeof ModuleMeta>;
+export const ModuleIndexFile = z.object({ modules: z.array(ModuleMeta) });
+
 export const PlacementItem = z.object({
   id: z.string(),
   level: Level,

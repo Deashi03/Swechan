@@ -12,7 +12,8 @@
     "test:watch": "vitest",
     "validate:content": "vitest run src/content/contentValidation.test.ts src/content/vocabularyCheck.test.ts src/content/catalog/catalog.test.ts",
     "e2e": "node scripts/e2e-smoke.mjs",
-    "catalog:validate": "vitest run src/content/catalog/catalog.test.ts"
+    "catalog:validate": "vitest run src/content/catalog/catalog.test.ts",
+    "content:index": "node scripts/build-module-index.mjs"
   },
   "dependencies": {
     "dexie": "4.0.11",
@@ -26,6 +27,7 @@
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.3.0",
     "@testing-library/user-event": "14.6.1",
+    "@types/node": "22.15.3",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "@vitejs/plugin-react": "4.5.2",

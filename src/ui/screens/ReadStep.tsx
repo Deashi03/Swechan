@@ -13,6 +13,7 @@ import { segmentText } from '../../dictionary/segmentText';
 import { emit } from '../../feedback/events';
 import { completeStep, getModuleProgress, saveReadState } from '../../modules/moduleService';
 import { navigate } from '../app/router';
+import { useModuleBody } from '../app/useModuleBody';
 import { useSettings } from '../app/hooks';
 import { Jonathan } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
@@ -27,9 +28,15 @@ function useSwedishVoice() {
   return ok;
 }
 
+function LessonLoadError({ error, retry }: { error: string; retry: () => void }) {
+  return <div className="card stack-sm"><p>Lektionen kunde inte laddas.</p><p className="small muted">{error}</p><button className="btn secondary small" onClick={retry}>Försök igen</button></div>;
+}
+export { LessonLoadError };
+
 export function ReadStep({ id }: { id: string }) {
   const repo = getContent();
-  const m = repo.getModule(id);
+  const meta = repo.getModule(id);
+  const { body: m, error, retry } = useModuleBody(id);
   const progress = useLiveQuery(() => getModuleProgress(id), [id]);
   const [phase, setPhase] = useState<'text' | 'questions' | 'done' | null>(null);
   useEffect(() => {
@@ -38,8 +45,9 @@ export function ReadStep({ id }: { id: string }) {
     if (progress?.steps.read === 'completed') setPhase('done');
     else setPhase(read?.textRead ? 'questions' : 'text');
   }, [progress, phase]);
-  if (!m) return <p>Modulen finns inte.</p>;
-  if (!phase) return <p className="muted">Laddar…</p>;
+  if (!meta) return <p>Modulen finns inte.</p>;
+  if (error && !m) return <LessonLoadError error={error} retry={retry} />;
+  if (!phase || !m) return <p className="muted">Laddar…</p>;
   return (
     <div className="stack">
       <div className="session-bar">
@@ -62,7 +70,7 @@ export function ReadStep({ id }: { id: string }) {
 
 function ReadingText({ moduleId, onDone }: { moduleId: string; onDone: () => void }) {
   const repo = getContent();
-  const m = repo.getModule(moduleId)!;
+  const m = repo.getLoadedModuleBody(moduleId)!; // loaded by ReadStep before rendering
   const dict = useDictionarySheet();
   const settings = useSettings();
   const voice = useSwedishVoice();

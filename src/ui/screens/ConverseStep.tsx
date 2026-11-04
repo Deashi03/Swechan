@@ -11,6 +11,8 @@ import { completeStep, getModuleProgress } from '../../modules/moduleService';
 import { getDb, getMeta } from '../../storage/db';
 import type { PlacementResult } from '../../storage/types';
 import { navigate } from '../app/router';
+import { useModuleBody } from '../app/useModuleBody';
+import { LessonLoadError } from './ReadStep';
 import { Jonathan } from '../components/Jonathan';
 import { Icon } from '../components/Icon';
 import { Ja } from '../components/Ja';
@@ -18,7 +20,8 @@ import { toast } from '../components/Toast';
 
 export function ConverseStep({ id }: { id: string }) {
   const repo = getContent();
-  const m = repo.getModule(id);
+  const meta = repo.getModule(id);
+  const { body: m, error, retry } = useModuleBody(id);
   const ctx = useLiveQuery(async () => ({
     placement: await getMeta<PlacementResult>('placement'),
     known: new Set((await getDb().cards.toArray()).map((c) => c.senseId)).size,
@@ -27,7 +30,9 @@ export function ConverseStep({ id }: { id: string }) {
   const [copied, setCopied] = useState(false);
   const [finished, setFinished] = useState(false);
   const prompt = useMemo(() => (m && ctx ? buildConversationPrompt(m, repo, { estimatedLevel: ctx.placement?.estimatedLevel ?? null, knownWordCount: ctx.known }) : ''), [m, ctx, repo]);
-  if (!m) return <p>Modulen finns inte.</p>;
+  if (!meta) return <p>Modulen finns inte.</p>;
+  if (error && !m) return <LessonLoadError error={error} retry={retry} />;
+  if (!m) return <p className="muted">Laddar…</p>;
   if (!ctx) return <p className="muted">Laddar…</p>;
 
   if (finished || ctx.progress?.status === 'completed') {

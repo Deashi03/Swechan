@@ -63,7 +63,7 @@ Ordningen i `words` är alltså också **inlärningsordningen**. Lägg grundläg
 9. **Kontrollera målorden mot texten**: `npm run validate:content` rapporterar målord som saknas. Obs: delade partikelverb ("plockar hon undan") och passiv på -s känns inte igen – skriv om eller använd en sammanhängande form.
 10. **Läsförståelsefrågor**: minst 3, helst 5. Blanda `detail`, `cause`, `usage` (hur ett målord används, t.ex. rätt betydelse av ett flertydigt ord) och `inference`. Frågorna ska testa förståelse, inte bara ordigenkänning. Ge förklaring (gärna även japansk).
 11. **Konversationsunderlag**: `scenarioSv` + 3–4 `discussionPoints`. Prompten genereras automatiskt.
-12. **Validera och publicera**: `npm run validate:content && npm test`. Öka `contentVersion` och `updatedAt` vid ändring av en befintlig modul.
+12. **Validera och publicera**: `npm run content:index && npm run validate:content && npm test`. Öka `contentVersion` och `updatedAt` vid ändring av en befintlig modul.
 
 ## Regler för ordposter
 

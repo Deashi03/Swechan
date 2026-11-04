@@ -1,4 +1,4 @@
-import { getContent } from './repository';
+import { toolingRepository as getContent } from './tooling';
 import { validateContent } from './validateContent';
 
 describe('content validation', () => {

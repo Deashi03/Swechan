@@ -1,9 +1,10 @@
-import { getContent } from '../content/repository';
+import { toolingRepository } from '../content/tooling';
 import { buildConversationPrompt } from './promptBuilder';
 
 describe('conversation prompt', () => {
-  const repo = getContent();
-  for (const m of repo.modules) {
+  const repo = toolingRepository();
+  for (const meta of repo.modules) {
+    const m = repo.getLoadedModuleBody(meta.id)!;
     it(`contains all target words and key instructions for ${m.id}`, () => {
       const p = buildConversationPrompt(m, repo, { estimatedLevel: 'B1', knownWordCount: 120 });
       for (const w of m.words) expect(p).toContain(`- ${repo.getSense(w.senseId)!.entry.lemma} – `);
@@ -15,7 +16,7 @@ describe('conversation prompt', () => {
     });
   }
   it('lists active words before passive words', () => {
-    const m = repo.getModule('m.atomer-molekyler')!;
+    const m = repo.getLoadedModuleBody('m.atomer-molekyler')!;
     const p = buildConversationPrompt(m, repo, { estimatedLevel: null, knownWordCount: 0 });
     expect(p.indexOf('- atom –')).toBeLessThan(p.indexOf('- proton –'));
   });

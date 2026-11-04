@@ -18,6 +18,7 @@ import { ReviewSession } from '../screens/ReviewSession';
 import { SettingsScreen } from '../screens/Settings';
 import { StatsScreen } from '../screens/Stats';
 import { useSettings } from './hooks';
+import { prefetchModuleBodies } from './useModuleBody';
 import { isFocusRoute, navigate, useRoute, type Route } from './router';
 
 function Screen({ route }: { route: Route }) {
@@ -52,7 +53,7 @@ export function App() {
     html.classList.toggle('full-motion', settings.reducedMotion === 'full');
   }, [settings.furigana, settings.reducedMotion]);
 
-  useEffect(() => { requestPersistentStorage(); }, []);
+  useEffect(() => { requestPersistentStorage(); prefetchModuleBodies(); }, []);
 
   // Send a brand-new user to the welcome screen ONCE, when the onboarding flag
   // first loads. (Re-checking on every route change raced with the flag being

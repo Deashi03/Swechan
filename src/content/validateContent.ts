@@ -74,7 +74,9 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
     if (!repo.getCategory(m.categoryId)) add(m.id, `Okänd kategori ${m.categoryId}`);
     for (const p of [...m.prerequisites, ...m.related]) if (!repo.getModule(p)) add(m.id, `Okänd modul ${p}`);
     const senseIds = new Set<string>();
-    const fullText = m.reading.paragraphs.join('\n');
+    const body = repo.getLoadedModuleBody(m.id);
+    if (!body) { add(m.id, 'Lektionskroppen är inte laddad (validera med toolingRepository())'); continue; }
+    const fullText = body.reading.paragraphs.join('\n');
     for (const w of m.words) {
       if (senseIds.has(w.senseId)) add(m.id, `Målordet ${w.senseId} förekommer två gånger`);
       senseIds.add(w.senseId);
@@ -82,7 +84,7 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
       if (!ref) { add(m.id, `Okänd betydelse ${w.senseId}`); continue; }
       if (!entryOccursIn(fullText, ref.entry)) add(m.id, `Målordet "${ref.entry.lemma}" saknas i lästexten (ingen känd böjningsform hittades)`);
     }
-    for (const q of m.reading.questions) {
+    for (const q of body.reading.questions) {
       if (q.kind === 'choice' && q.correctIndex >= q.options.length) add(`${m.id}.${q.id}`, 'correctIndex utanför alternativen');
       ja(`${m.id}.${q.id}`, q.explanationJa);
     }

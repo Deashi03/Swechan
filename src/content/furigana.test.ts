@@ -1,5 +1,6 @@
 import { checkFurigana, normalizeJapanese, parseFurigana, stripFurigana, toKanaReading, toParenthesized } from './furigana';
 import { ContentRepository, loadBundledContent } from './repository';
+import { loadAllModuleBodiesEager } from './tooling';
 import { validateContent } from './validateContent';
 
 describe('furigana markup', () => {
@@ -23,7 +24,8 @@ describe('furigana markup', () => {
 
 describe('content validator catches real problems', () => {
   it('detects a missing target word and bad furigana', () => {
-    const raw = structuredClone(loadBundledContent()) as ReturnType<typeof loadBundledContent>;
+    const base = loadBundledContent();
+    const raw = { ...base, moduleIndex: undefined, loadBody: undefined, modules: structuredClone(loadAllModuleBodiesEager()), dictionaries: structuredClone(base.dictionaries) };
     const mod = (raw.modules as { id: string; reading: { paragraphs: string[] } }[]).find((x) => x.id === 'm.atomer-molekyler')!;
     mod.reading.paragraphs = mod.reading.paragraphs.map((p) => p.replace(/molekyl\w*/g, 'sak'));
     const dict = (raw.dictionaries as { entries: { senses: { defJa: string }[] }[] }[])[0]!;

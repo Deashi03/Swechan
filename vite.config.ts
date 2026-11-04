@@ -15,6 +15,8 @@ export default defineConfig({
         // Separate chunks so app updates don't invalidate cached libraries/content.
         manualChunks(id) {
           if (id.includes('node_modules')) return 'vendor';
+          // Lesson bodies are lazy-loaded: let each become its own chunk (0.4 phase D).
+          if (id.includes('/src/content/data/modules/')) return undefined;
           if (id.includes('/src/content/data/')) return 'content';
         },
       },
