@@ -1,5 +1,9 @@
 # Swechan 0.4 — instruktioner till Claude Code
 
+> **Uppdatering 2026-11-04: Katalogen finns nu i repot!**
+> Autentisk och validerad planeringskatalog: [planning/catalog/swechan-catalog.v1.json](planning/catalog/swechan-catalog.v1.json) på `main`: **344 kategorier, 2 016 planerade moduler**. Den innehåller riktiga svenska titlar, stabila SWC-ID:n, 18 planerade målord/modul (tillåtet 15–20), och `titleJa: null` för ännu ej granskad japanska. **Använd denna fil, inte syntetisk katalogdata**, utom i isolerade tester. Claude på äldre arbetsgren: kör `git fetch origin main` och `git restore --source=origin/main -- planning/catalog/swechan-catalog.v1.json`. Importera katalogen som metadata; publicera inte planerade moduler som färdiga lektioner. Ditt arbete på andra filer ska behållas.
+
+
 **Status:** Planerings- och överlämningsdokument. Ingen implementation av 0.4 har genomförts genom detta dokument.
 **Baslinje:** main vid commit aa1cdbf74845583a9090a06bf86ad4dfc924d3d6 (0.3.1, 2026-11-04).
 **Produktägarkrav:** Utveckla befintliga Swechan, skriv inte om den från grunden.
@@ -22,7 +26,7 @@
 
 ## 3. Den planerade katalogen är inte 2 016 färdiga lektioner
 
-Det finns en separat produktägarplaneringskatalog med **8 rotområden, 48 underområden, 288 ämnesgrupper och 2 016 planerade moduler**. Hierarki: 8 → 6 → 6 → 7. De två JSON-filerna i det separata Swechan 0.4-utvecklingspaketet heter Swechan_0.1_alla_moduler.json och Swechan_0.1_modulregister.json. Projektets katalogdata saknas ännu i 0.3.1-repot; begär källfilerna från produktägaren om de inte tillhandahållits i Claude-sessionen, i stället för att rekonstruera 2 016 titlar ur minnet.
+Det finns en separat produktägarplaneringskatalog med **8 rotområden, 48 underområden, 288 ämnesgrupper och 2 016 planerade moduler**. Hierarki: 8 → 6 → 6 → 7. Katalogen finns från och med nu på `main` i `planning/catalog/swechan-catalog.v1.json`. Använd exakt den och bevara dess stabila kategorier och `SWC-*`-ID:n. Om en arbetsgren är äldre, hämta filen från `origin/main`; skapa inte syntetiskt innehåll för faktisk katalogintegration.
 
 - En planerad katalogpost har endast namn, placering, status och önskat antal ord (18 som standard, 15–20 tillåtet); inga färdiga ord, lästexter eller övningar.
 - Svenska titlar och hierarkiska ID:n i katalogen är auktoritativa planeringsuppgifter. Japanska titlar saknas (null); fabricera aldrig en mänskligt granskad översättning.
@@ -47,7 +51,7 @@ Nuvarande src/ui/screens/Explore.tsx visar även sektionen Alla moduler på rotn
 ### Fas B — strukturerad planerad katalog
 
 - Skapa egna Zod-typer och ett katalogindex för planerade ämnen/moduler.
-- Importera de auktoritativa katalogfilerna med deterministisk transformering, unika/stabila ID:n och automatisk kontroll av 8-valstaket, 344 kategorier och 2 016 moduler.
+- Importera `planning/catalog/swechan-catalog.v1.json` med deterministisk transformering, unika/stabila ID:n och automatisk kontroll av 8-valstaket, 344 kategorier och 2 016 moduler.
 - Koppla befintliga fem modulernas ID:n utan felaktig eller ungefärlig 1:1-mappning.
 - Bevara dagens fem kompletta moduler intakta.
 
