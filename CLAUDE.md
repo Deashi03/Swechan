@@ -7,3 +7,7 @@
 5. Ändrar du lagrade användardata: lägg till en ny `db.version(n)` med `upgrade()` och uppdatera `migrateBackup` + `DATA_MODEL.md`.
 6. Uppdatera `PROJECT_STATUS.md` och `CHANGELOG.md` efter varje betydelsefull etapp.
 7. Användargränssnittet är på svenska; japanska texter med kanji ska alltid ha furigana via `{漢字|かんじ}`-markering och renderas med `<Ja>`.
+
+## Nästa utvecklingsetapp: Swechan 0.4
+
+Inför arbete med 0.4: läs även [`SWECHAN_0_4_CLAUDE_HANDOFF.md`](SWECHAN_0_4_CLAUDE_HANDOFF.md). Där finns en kodbasanpassad fasplan och särskilda regler för katalogen med 2 016 **planerade** moduler, max åtta val per menyskärm, 15–20 ord per publicerad modul, och riskerna kring versionsbunden utvecklingsnollställning. Katalogens fullständiga JSON-filer tillhandahålls separat av produktägaren; rekonstruera dem inte genom gissning. Bevara alltid befintliga publicerade `m.*`- och `s.*`-ID:n.
