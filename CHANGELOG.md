@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.4.0 – under utveckling (ej släppt)
+
+### Fas A – säker baslinje (PR "0.4 fas A")
+- Baslinje före ändringar: `npm ci`, `typecheck`, 95/95 tester, `validate:content` 4/4, `build` – alla gröna.
+- **Rättat:** att ångra en utvecklingsnollställning (eller importera en äldre säkerhetskopia) återställde också det gamla versionsnumret, så nästa start nollställde allt igen och ångringen gick förlorad. Återställd/importerad data markeras nu med den körande versionen.
+- **Rättat:** en användare med enbart sparade ord eller enbart svarshistorik räknades inte som "har data" vid versionsbyte.
+- `applyVersionResetWith(cfg)` gör nollställningsregeln testbar med `resetProgressOnUpdate` både `true` och `false`.
+- Nya granskningstester (`src/dev/versionReset.audit.test.ts`): ångra, import av äldre backup, bara sparade ord, användare utan lagrad version, återställningspunktens innehåll (en generation, aldrig nästlad), regeln avstängd.
+- README: 15–20 ord per modul (stod 20–30).
+- Ingen ändring av FSRS, streak, IndexedDB-schema, ord- eller modul-ID:n. `APP_VERSION` är oförändrad (0.3.1) för att inte utlösa någon nollställning.
+
 ## 0.3.1 – 2026-11-04
 Utvecklings- och testvänlighet (önskemål från produktägaren).
 

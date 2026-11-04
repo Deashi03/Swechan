@@ -4,6 +4,12 @@
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
 
+## 0.4 – pågående arbete (ej släppt)
+
+Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-catalog.v1.json` (344 kategorier, 2 016 **planerade** moduler).
+- **Fas A klar** (gren `claude/swechan-0.4-phase-a`): baslinje grön; två buggar i versionsnollställningen rättade (se CHANGELOG); granskningstester.
+- **Viktigt inför 0.4-release:** att höja `APP_VERSION` till 0.4.0 nollställer all progression så länge `devConfig.resetProgressOnUpdate = true` (återställningspunkt sparas och kan nu ångras utan att data försvinner igen). Produktägaren måste besluta om regeln ska vara på eller av vid releasen.
+
 ## ⚠️ Utvecklingsläge är PÅ (0.3.1)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.

@@ -1,6 +1,6 @@
 # Swechan
 
-Swechan är en mobilanpassad webbapp (PWA) för att bygga ett stort svenskt ordförråd, särskilt utformad för en japansktalande användare. Varje dag består av **(A) repetition** av tidigare inlärda ord och **(B) en ny modul** med 20–30 ord i tre steg: lära sig orden → läsa en text → använda orden i samtal (via ChatGPT i v0.1).
+Swechan är en mobilanpassad webbapp (PWA) för att bygga ett stort svenskt ordförråd, särskilt utformad för en japansktalande användare. Varje dag består av **(A) repetition** av tidigare inlärda ord och **(B) en ny modul** med 15–20 ord i tre steg: lära sig orden → läsa en text → använda orden i samtal (via ChatGPT).
 
 > **Ny AI-session?** Läs [`PROJECT_STATUS.md`](PROJECT_STATUS.md) först, sedan [`ARCHITECTURE.md`](ARCHITECTURE.md).
 
