@@ -19,6 +19,7 @@ import { Icon } from '../components/Icon';
 import { Ja } from '../components/Ja';
 import { ProgressBar } from '../components/Progress';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
+import { SvText } from '../components/SvText';
 
 function useSwedishVoice() {
   const [ok, setOk] = useState<boolean | null>(null);
@@ -151,7 +152,7 @@ function Questions({ moduleId, questions, initial, onDone }: { moduleId: string;
     <div className="stack">
       <ProgressBar value={index} max={questions.length} label={`Fråga ${index + 1} av ${questions.length}`} accent />
       <div className="small muted">Fråga {index + 1} av {questions.length} · {q.kind === 'truefalse' ? 'Sant eller falskt?' : 'Välj rätt svar'}</div>
-      <div className="card"><strong lang="sv">{q.kind === 'choice' ? q.promptSv : q.statementSv}</strong></div>
+      <div className="card"><strong><SvText text={q.kind === 'choice' ? q.promptSv : q.statementSv} /></strong></div>
       <div className="options">
         {options.map((o, i) => (
           <button key={i} className={`option ${answered && i === correctIndex ? 'correct' : answered && i === picked ? 'wrong' : answered ? 'dim' : ''}`} disabled={answered}
@@ -163,7 +164,7 @@ function Questions({ moduleId, questions, initial, onDone }: { moduleId: string;
       {answered && (
         <div className={`feedback ${picked === correctIndex ? 'ok' : 'fail'} stack-sm`} aria-live="polite">
           <strong>{picked === correctIndex ? 'Rätt!' : 'Inte riktigt.'}</strong>
-          <div className="small">{q.explanationSv}</div>
+          <div className="small"><SvText text={q.explanationSv} /></div>
           {q.explanationJa && <Ja text={q.explanationJa} as="div" className="small muted" />}
         </div>
       )}

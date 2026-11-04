@@ -29,7 +29,7 @@ describe('dictionary search', () => {
     expect(index.search('修理')[0]?.senseId).toBe('s.laga.2');
   });
   it('the same sense is shared by modules (no duplication)', () => {
-    expect(repo.modulesForSense('s.ämne.1').map((m) => m.id)).toEqual(['m.atomer-molekyler']);
+    expect(repo.modulesForSense('s.ämne.1').map((m) => m.id)).toEqual(['m.material-amnen']);
     expect(repo.getSense('s.förråd.2')!.entry.id).toBe(repo.getSense('s.förråd.1')!.entry.id);
   });
   it('resolves synonym relations and comparisons per sense', () => {
@@ -57,7 +57,7 @@ describe('text segmentation', () => {
   it('links inflected words and particle verbs to entries', () => {
     const spans = segmentText('Sedan ska hon plocka undan kläder. Armén belägrade staden.', index);
     const linked = spans.filter((s) => s.entryIds.length);
-    expect(linked.map((s) => s.text)).toEqual(['plocka undan', 'belägrade']);
+    expect(linked.map((s) => s.text)).toEqual(['plocka undan', 'Armén', 'belägrade']);
     expect(spans.map((s) => s.text).join('')).toBe('Sedan ska hon plocka undan kläder. Armén belägrade staden.');
   });
 });

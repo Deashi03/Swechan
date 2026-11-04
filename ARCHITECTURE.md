@@ -28,6 +28,7 @@ src/
     furigana.ts             {漢字|かんじ}-markering, parsning, kvalitetskontroll
     morphology.ts           böjningsformer från lagrade tabeller, tokenisering
     validateContent.ts      utvecklarverktyg: kvalitetskontroller
+    vocabularyCheck.ts      kontrollerat ordförråd (grundord + förkunskaper + inlärningsordning)
   dictionary/             DICTIONARY SYSTEM: sökindex, global sökning, textsegmentering
   learning/               LEARNING ENGINE
     exercises/              övningstyper: generatorer + standardiserat resultatformat
@@ -91,6 +92,8 @@ ui  ──►  daily / modules / dictionary / conversation / stats / audio / fee
 11. **Allt innehåll laddas ivrigt i v0.1** (~100 kB). Vid tusentals moduler: dela upp i katalogindex (ivrigt) + modulkroppar (lazy `import.meta.glob`) bakom samma `ContentRepository`-API.
 12. **Ordbokssökning utan externt bibliotek**: exakt Map + prefix via binärsökning + begränsad delsträngsskanning. Testat med 20 000 syntetiska poster.
 13. **Konversation via adapter** (`ConversationProvider`) – v0.1 kopierar prompt till ChatGPT; en framtida inbyggd chatt implementerar samma gränssnitt.
+14. **Kontrollerat ordförråd som automatisk kvalitetskontroll** (0.2) – `content/vocabularyCheck.ts` + `data/core/coreVocabulary.json`. Grundord känns igen med suffixregler (bara en QA-heuristik), målord via lagrade former. Testet `vocabularyCheck.test.ts` underkänner bygget om en text använder okända ord.
+15. **Förkunskaper styr rekommendationen, inte åtkomsten** (0.2) – `recommendedModule()` föreslår bara moduler vars förkunskaper är klara; moduler låses aldrig.
 
 ## Regler för vidareutveckling
 

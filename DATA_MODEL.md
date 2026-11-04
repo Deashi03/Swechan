@@ -17,6 +17,7 @@ Module (m.*) ── words[] ──► ModuleWord { senseId, active }
                           VocabularyEntry (e.<lemma>)
                             lemma, pos, level, inflection (per ordklass), pronunciationNote
 
+coreVocabulary.json  grundordförråd (lemman, oregelbundna former, egennamn) för språkkontrollen
 GrammarNote (gn.*)   återanvändbara japanska förklaringar (genus, bestämd form, partikelverb …)
 Comparison (cmp.*)   jämförelse av närliggande betydelser (intensitet, formalitet, nyans)
 PlacementItem (p.*)  nivåtestets frågor
@@ -27,6 +28,8 @@ PlacementItem (p.*)  nivåtestets frågor
 - **Moduler refererar betydelser** (`senseId`), aldrig kopior. Samma betydelse kan finnas i flera moduler; en rättelse slår igenom överallt.
 - **Inflection** är en diskriminerad union per ordklass (`noun`, `verb`, `adjective`, `none`). Alla former lagras explicit; `variants` håller godtagna alternativ (t.ex. *dammsög / dammsugde*). Partikelverb har `particle`; substantiv utan plural har `indefPl: null`.
 - **Japansk text** använder furigana-markering `{分子|ぶんし}`; varje kanji måste ha läsning (valideras).
+- **labelSv** (valfri) är en kort etikett per betydelse ("substans", "skolämne") som visas i ordintroduktion och ordbok.
+- **Ordningen i `Module.words`** är inlärningsordningen och styr vilka ord en definition får använda.
 - **Synonymrelationer** ligger på betydelsenivå (`synonym | near | antonym | related`) med valfria förklaringar.
 - **quality.status** (`ai-draft | reviewed`) markerar granskningsstatus per betydelse.
 - **ID-format**: `e.<lemma>`, `s.<lemma>.<n>`, `m.<slug>`, `c.<sökväg>`; mellanslag i lemma → bindestreck (`e.plocka-undan`). ID:n får aldrig återanvändas för ett annat begrepp.

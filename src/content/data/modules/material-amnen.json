@@ -1,0 +1,196 @@
+{
+ "id": "m.material-amnen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-04",
+ "titleSv": "Material och ämnen",
+ "titleJa": "{材料|ざいりょう}と{物質|ぶっしつ}",
+ "descriptionSv": "Vad saker är gjorda av: ämnen, material, fast, flytande och gas. En grund för modulen om atomer.",
+ "descriptionJa": "ものは{何|なに}でできているのか。{物質|ぶっしつ}、{材料|ざいりょう}、{固体|こたい}・{液体|えきたい}・{気体|きたい}について{学|まな}びます。「{原子|げんし}と{分子|ぶんし}」の{準備|じゅんび}になるモジュールです。",
+ "categoryId": "c.stem.fysik",
+ "tags": [
+  "kemi",
+  "fysik",
+  "vardag",
+  "naturvetenskap"
+ ],
+ "level": "A2",
+ "prerequisites": [],
+ "related": [
+  "m.atomer-molekyler"
+ ],
+ "recommendedOrder": 2,
+ "words": [
+  {
+   "senseId": "s.ämne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bestå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.material.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egenskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flytande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vätska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.temperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smälta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ånga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.metall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.järn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trä.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.väga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blandning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blanda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förändring.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Fast, flytande eller gas",
+  "paragraphs": [
+   "Allt omkring oss består av olika ämnen. Vatten, salt och socker är ämnen. Varje ämne har sina egna egenskaper. Ett ämne kan vara tungt eller lätt, hårt eller mjukt.",
+   "Många ämnen kan vara fasta, flytande eller gaser. Det är temperaturen som bestämmer. Vatten är ett bra exempel. Under noll grader är vatten fast – då är det is. När temperaturen går upp, smälter isen och blir en vätska. Vid hundra grader kokar vattnet, och det kommer ånga från det. Ånga är vatten som gas.",
+   "När is smälter, blir vattnet inte ett nytt ämne. Det är samma ämne, men formen är ny. Det är en förändring av formen, inte av ämnet.",
+   "Människor gör saker av olika material. Hus och bord gör man ofta av trä. Broar och skepp bygger man av järn, en stark metall. Påsar och leksaker är ofta gjorda av plast. Man väljer material efter vad det ska användas till.",
+   "Om man blandar två ämnen, får man en blandning. Luft är en blandning av olika gaser. Om man blandar salt i vatten, kan man inte se saltet längre. På vattnets yta finns inget salt, men vattnet smakar salt.",
+   "Om man väger vattnet och saltet först, och sedan väger blandningen, väger det lika mycket. Saltet finns kvar i vattnet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer med is när temperaturen går upp?",
+    "options": [
+     "Den smälter och blir en vätska.",
+     "Den blir till järn.",
+     "Den blir tyngre.",
+     "Den blir en gas direkt."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När temperaturen går upp, smälter isen och blir en vätska.",
+    "explanationJa": "{温度|おんど}が{上|あ}がると、{氷|こおり}は{溶|と}けて{液体|えきたい}になります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför bygger man broar av järn?",
+    "options": [
+     "Järn är en stark metall.",
+     "Järn är lätt att blanda.",
+     "Järn smälter i solen.",
+     "Järn är ett mjukt material."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Järn är en stark metall.",
+    "explanationJa": "{鉄|てつ}は{強|つよ}い{金属|きんぞく}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "När is smälter, blir det ett nytt ämne.",
+    "correct": false,
+    "explanationSv": "Det är samma ämne. Bara formen är ny.",
+    "explanationJa": "{同|おな}じ{物質|ぶっしつ}です。{形|かたち}が{変|か}わるだけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "I texten står det: ”Varje ämne har sina egna egenskaper.” Vad betyder ”ämne” här?",
+    "options": [
+     "Det som saker är gjorda av",
+     "Det man läser i skolan",
+     "Det man pratar om",
+     "En person som kan bli något bra"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Här betyder ämne det som saker är gjorda av, till exempel salt eller vatten.",
+    "explanationJa": "ここでの ämne は「{物質|ぶっしつ}」の{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Vatten med salt i väger lika mycket som vattnet och saltet väger tillsammans.",
+    "correct": true,
+    "explanationSv": "Saltet finns kvar i blandningen. Därför väger allt lika mycket.",
+    "explanationJa": "{塩|しお}は{水|みず}の{中|なか}に{残|のこ}っているので、{重|おも}さは{同|おな}じです。"
+   }
+  ],
+  "factSources": [
+   "Allmän skolkemi och skolfysik: vattnets fasövergångar vid normalt lufttryck (0 °C, 100 °C), massans bevarande vid lösning."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om material och ämnen i vardagen: vad saker hemma är gjorda av, vad som händer när man värmer eller kyler saker (till exempel i matlagning), och vilka material man tycker om.",
+  "discussionPoints": [
+   "Vad är saker i ditt kök gjorda av?",
+   "Vad händer med smör, is och vatten när de blir varma?",
+   "Varför gör man vissa saker av trä och andra av metall eller plast?",
+   "Vad blandar du när du lagar mat?"
+  ]
+ }
+}

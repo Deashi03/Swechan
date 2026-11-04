@@ -107,8 +107,10 @@ export async function completeStep(moduleId: string, step: StepId, at: Date = cl
 
 /**
  * "Dagens modul": a module in progress if there is one (most recently
- * started), otherwise the first uncompleted module in recommended order,
- * preferring modules near the learner's estimated level.
+ * started); otherwise the first uncompleted module whose recommended
+ * prerequisites are done (modules build on each other), in recommended
+ * order, preferring modules near the learner's estimated level.
+ * Prerequisites are recommendations only – any module can still be opened.
  */
 export async function recommendedModule(): Promise<Module | undefined> {
   const repo = getContent();
@@ -117,9 +119,16 @@ export async function recommendedModule(): Promise<Module | undefined> {
   for (const p of inProgress) { const m = repo.getModule(p.moduleId); if (m) return m; }
   const done = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.moduleId));
   const open = repo.modules.filter((m) => !done.has(m.id));
+  const ready = open.filter((m) => m.prerequisites.every((id) => done.has(id) || !repo.getModule(id)));
+  const candidates = ready.length ? ready : open;
   const placement = await getMeta<PlacementResult>('placement');
   const lvl = levelIndex(placement?.estimatedLevel);
-  if (lvl < 0) return open[0];
-  // Stable sort by distance to estimated level, then recommended order.
-  return [...open].sort((a, b) => Math.abs(levelIndex(a.level) - lvl) - Math.abs(levelIndex(b.level) - lvl) || a.recommendedOrder - b.recommendedOrder)[0];
+  if (lvl < 0) return candidates[0];
+  return [...candidates].sort((a, b) => Math.abs(levelIndex(a.level) - lvl) - Math.abs(levelIndex(b.level) - lvl) || a.recommendedOrder - b.recommendedOrder)[0];
+}
+
+/** Recommended prerequisites of a module that are not yet completed. */
+export function missingPrerequisites(m: Module, completed: Set<string>): Module[] {
+  const repo = getContent();
+  return m.prerequisites.filter((id) => !completed.has(id)).map((id) => repo.getModule(id)).filter((x): x is Module => !!x);
 }

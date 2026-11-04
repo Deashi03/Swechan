@@ -11,6 +11,8 @@ import { posSv } from '../../learning/exercises/generate';
 import { Ja } from '../components/Ja';
 import { SpeakButton } from '../components/SpeakButton';
 import { ComparisonView } from '../dictionary/ComparisonView';
+import { SvText } from '../components/SvText';
+import { OtherSenses } from './OtherSenses';
 
 export function WordIntro({ senseId, compact, onNext }: { senseId: string; compact: boolean; onNext: () => void }) {
   const repo = getContent();
@@ -26,6 +28,7 @@ export function WordIntro({ senseId, compact, onNext }: { senseId: string; compa
   return (
     <div className="stack">
       <div className="small muted">Nytt ord · <Ja text="{新|あたら}しい{言葉|ことば}" className="xsmall" /></div>
+      <p className="xsmall faint" style={{ margin: 0 }}>Tips: tryck på ett understruket ord för att slå upp det.</p>
       <div className="card stack-sm">
         <div className="row">
           <div className="grow">
@@ -35,22 +38,24 @@ export function WordIntro({ senseId, compact, onNext }: { senseId: string; compa
           <SpeakButton text={entry.lemma} />
         </div>
         <Ja text={sense.ja} className="prompt-ja" as="div" />
+        {entry.senses.length > 1 && sense.labelSv && <div className="xsmall muted">Betydelse {entry.senses.findIndex((x) => x.id === senseId) + 1} av {entry.senses.length}: {sense.labelSv}</div>}
         {forms.length > 1 && <div className="small" lang="sv">{forms.map((f) => f.form).join(' – ')}</div>}
       </div>
       <div className="card stack-sm">
-        <p style={{ margin: 0 }}>{sense.defSv}</p>
+        <p style={{ margin: 0 }}><SvText text={sense.defSv} exclude={[entry.id]} /></p>
         {(sense.concept || !compact) && <Ja text={sense.defJa} as="p" className="muted" />}
         <div className="stack-sm" style={{ borderLeft: '3px solid var(--c-primary-tint)', paddingLeft: 10 }}>
-          <div className="row"><span className="grow" lang="sv">{sense.examples[0]!.sv}</span><SpeakButton text={sense.examples[0]!.sv} label="Lyssna på meningen" /></div>
+          <div className="row"><span className="grow"><SvText text={sense.examples[0]!.sv} exclude={[entry.id]} /></span><SpeakButton text={sense.examples[0]!.sv} label="Lyssna på meningen" /></div>
           <Ja text={sense.examples[0]!.ja} as="div" className="small muted" />
         </div>
         {sense.usageNote && (
           <div className="card tint-warning small stack-sm" style={{ boxShadow: 'none' }}>
-            <div>{sense.usageNote.sv}</div>
+            <div><SvText text={sense.usageNote.sv} exclude={[entry.id]} /></div>
             <Ja text={sense.usageNote.ja} as="div" />
           </div>
         )}
       </div>
+      <OtherSenses entry={entry} currentSenseId={senseId} />
       {(notes.length > 0 || cmp) && (
         <details>
           <summary>Mer om ordet <Ja text="（{文法|ぶんぽう}・{似|に}た{言葉|ことば}）" className="small" /></summary>

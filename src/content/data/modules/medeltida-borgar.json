@@ -1,11 +1,11 @@
 {
  "id": "m.medeltida-borgar",
- "contentVersion": 1,
+ "contentVersion": 2,
  "updatedAt": "2026-11-04",
  "titleSv": "Medeltida slott och belägringar",
  "titleJa": "{中世|ちゅうせい}の{城|しろ}と{包囲戦|ほういせん}",
- "descriptionSv": "Hur medeltida borgar var byggda, hur de försvarades och hur angripare försökte erövra dem.",
- "descriptionJa": "{中世|ちゅうせい}の{城|しろ}のつくり、{守|まも}り{方|かた}、そして{攻|せ}める{側|がわ}がどのように{城|しろ}を{攻|せ}め{落|お}とそうとしたかを{学|まな}びます。",
+ "descriptionSv": "Hur medeltida borgar var byggda, hur de försvarades och hur angripare försökte erövra dem. Bygger på modulen Krig och försvar.",
+ "descriptionJa": "{中世|ちゅうせい}の{城|しろ}のつくり、{守|まも}り{方|かた}、そして{攻|せ}める{側|がわ}がどのように{城|しろ}を{攻|せ}め{落|お}とそうとしたかを{学|まな}びます。「{戦争|せんそう}と{防衛|ぼうえい}」のあとに{学|まな}ぶモジュールです。",
  "categoryId": "c.humaniora.historia.militar.medeltid.borgar",
  "tags": [
   "historia",
@@ -14,10 +14,20 @@
   "arkitektur"
  ],
  "level": "B2",
- "prerequisites": [],
+ "prerequisites": [
+  "m.krig-forsvar"
+ ],
  "related": [],
- "recommendedOrder": 3,
+ "recommendedOrder": 5,
  "words": [
+  {
+   "senseId": "s.medeltida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torn.1",
+   "active": true
+  },
   {
    "senseId": "s.borg.1",
    "active": true
@@ -31,51 +41,7 @@
    "active": true
   },
   {
-   "senseId": "s.torn.1",
-   "active": true
-  },
-  {
-   "senseId": "s.belägra.1",
-   "active": true
-  },
-  {
-   "senseId": "s.belägring.1",
-   "active": true
-  },
-  {
-   "senseId": "s.storma.1",
-   "active": true
-  },
-  {
-   "senseId": "s.försvara.1",
-   "active": true
-  },
-  {
-   "senseId": "s.anfalla.1",
-   "active": true
-  },
-  {
-   "senseId": "s.vapen.1",
-   "active": true
-  },
-  {
-   "senseId": "s.svält.1",
-   "active": true
-  },
-  {
-   "senseId": "s.förråd.1",
-   "active": true
-  },
-  {
-   "senseId": "s.kapitulera.1",
-   "active": true
-  },
-  {
-   "senseId": "s.erövra.1",
-   "active": true
-  },
-  {
-   "senseId": "s.medeltida.1",
+   "senseId": "s.port.1",
    "active": true
   },
   {
@@ -91,6 +57,38 @@
    "active": false
   },
   {
+   "senseId": "s.adelsman.1",
+   "active": false
+  },
+  {
+   "senseId": "s.riddare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belägra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belägring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kapitulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storma.1",
+   "active": true
+  },
+  {
    "senseId": "s.försvarare.1",
    "active": false
   },
@@ -99,12 +97,12 @@
    "active": false
   },
   {
-   "senseId": "s.riddare.1",
+   "senseId": "s.katapult.1",
    "active": false
   },
   {
-   "senseId": "s.katapult.1",
-   "active": false
+   "senseId": "s.erövra.1",
+   "active": true
   },
   {
    "senseId": "s.befästa.1",
@@ -118,27 +116,27 @@
  "reading": {
   "titleSv": "När borgen belägrades",
   "paragraphs": [
-   "Under medeltiden byggde kungar och adelsmän borgar över hela Europa. En borg var både ett hem och en fästning. Den skulle skydda ägaren och hans familj, men också visa hans makt.",
-   "En typisk borg hade en tjock ringmur med flera torn. Från tornen kunde man se fienden på långt avstånd. Utanför muren fanns ofta en vallgrav med vatten. För att komma in måste man gå över en vindbrygga, som kunde dras upp om fienden närmade sig. Många ägare befäste dessutom sina borgar med extra murar och portar.",
-   "Det var svårt att anfalla en sådan borg. Därför valde angriparna ofta att belägra den i stället. De omringade borgen så att ingen kunde komma in eller ut. Människorna inne i borgen fick leva på sitt förråd av mat och vatten. En belägring kunde pågå i flera månader, och till slut hotade svält. Många borgar kapitulerade därför utan någon stor strid.",
-   "Ibland försökte angriparna i stället storma borgen. Med stegar och belägringstorn klättrade riddare och soldater upp mot murarna. Försvararna gjorde allt för att försvara borgen: de sköt pilar och kastade stenar ner på angriparna. Angriparna använde också kastmaskiner, till exempel katapulter, för att slå sönder murarna.",
-   "Angriparna kunde alltså erövra även en borg som såg ointaglig ut. Under senmedeltiden blev kanonerna allt bättre. Krut och nya vapen gjorde att även tjocka murar kunde förstöras, och borgarna förlorade mycket av sin militära betydelse. Många byggdes senare om till bekväma slott. Kalmar slott är ett svenskt exempel på en medeltida borg som blev ett slott."
+   "Under medeltiden byggde kungar och adelsmän borgar i hela Europa. En borg var både ett hem och en fästning. Den skulle skydda familjen, men den skulle också visa att ägaren hade makt.",
+   "En borg hade ofta en tjock ringmur med flera torn. Från tornen kunde man se fienden långt borta. Utanför muren fanns ofta en vallgrav med vatten. För att komma in måste man gå över en vindbrygga och genom en stor port. Om fienden kom, kunde man dra upp vindbryggan. Många adelsmän befäste sina borgar med fler murar och torn.",
+   "Det var svårt att anfalla en sådan borg. Därför valde angriparna ofta att belägra den. Armén omringade borgen, så att ingen kunde komma in eller ut. Människorna i borgen fick leva på sitt förråd av mat och vatten. En belägring kunde hålla på i flera månader, och till slut kom svälten. Därför kapitulerade många borgar utan någon stor strid.",
+   "Ibland försökte angriparna storma borgen i stället. Riddare och soldater klättrade upp på murarna. Försvararna gjorde allt för att försvara borgen: de sköt pilar och kastade stenar på angriparna. Angriparna hade också katapulter, som kastade stora stenar mot murarna.",
+   "En borg kunde se ointaglig ut, men angriparna kunde ändå erövra den. I slutet av medeltiden kom kanoner, som kunde förstöra även tjocka murar. Då blev borgarna mindre viktiga i krig. Många byggdes om till fina slott. Kalmar slott i Sverige är ett exempel på en medeltida borg som blev ett slott."
   ],
   "questions": [
    {
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "Vad var vindbryggans uppgift?",
+    "promptSv": "Vad gjorde man med vindbryggan när fienden kom?",
     "options": [
-     "Den kunde dras upp så att fienden inte kom över vallgraven.",
-     "Den användes för att skjuta pilar.",
-     "Den var en väg upp till tornen.",
-     "Den förde vatten till vallgraven."
+     "Man drog upp den.",
+     "Man förstörde den.",
+     "Man byggde en ny.",
+     "Man gick över den."
     ],
     "correctIndex": 0,
-    "explanationSv": "Vindbryggan gick över vallgraven och kunde dras upp när fienden närmade sig.",
-    "explanationJa": "はね{橋|ばし}は{堀|ほり}の{上|うえ}にかかっていて、{敵|てき}が{来|く}ると{上|あ}げることができました。"
+    "explanationSv": "Om fienden kom, kunde man dra upp vindbryggan.",
+    "explanationJa": "{敵|てき}が{来|く}ると、はね{橋|ばし}を{上|あ}げることができました。"
    },
    {
     "kind": "choice",
@@ -146,22 +144,22 @@
     "focus": "cause",
     "promptSv": "Varför kapitulerade många borgar utan någon stor strid?",
     "options": [
-     "Maten tog slut under belägringen och svält hotade.",
-     "Försvararna hade inga vapen alls.",
-     "Kungen förbjöd strider.",
-     "Vallgraven torkade ut."
+     "Maten tog slut, och svälten kom.",
+     "Försvararna hade inga vapen.",
+     "Kungen ville inte ha krig.",
+     "Vallgraven hade inget vatten."
     ],
     "correctIndex": 0,
-    "explanationSv": "Under en lång belägring tog förrådet slut, och svält hotade.",
-    "explanationJa": "{長|なが}い{包囲戦|ほういせん}で{蓄|たくわ}えがなくなり、{飢|う}えの{危険|きけん}があったからです。"
+    "explanationSv": "Under en lång belägring tog förrådet slut, och till slut kom svälten.",
+    "explanationJa": "{長|なが}い{包囲戦|ほういせん}で{蓄|たくわ}えがなくなり、{飢|う}えが{来|き}たからです。"
    },
    {
     "kind": "truefalse",
     "id": "q3",
     "focus": "detail",
-    "statementSv": "Försvararna kastade stenar ner på angriparna.",
+    "statementSv": "Försvararna kastade stenar på angriparna.",
     "correct": true,
-    "explanationSv": "Ja, försvararna sköt pilar och kastade stenar ner på angriparna."
+    "explanationSv": "Ja. De sköt pilar och kastade stenar på angriparna."
    },
    {
     "kind": "choice",
@@ -169,29 +167,29 @@
     "focus": "usage",
     "promptSv": "Vad betyder ”storma borgen” i texten?",
     "options": [
-     "Försöka ta borgen genom ett snabbt och direkt anfall",
+     "Anfalla borgen snabbt och hårt",
      "Det blåser mycket runt borgen",
      "Bygga om borgen till ett slott",
-     "Lämna borgen i hemlighet"
+     "Lämna borgen på natten"
     ],
     "correctIndex": 0,
-    "explanationSv": "Här betyder storma att anfalla snabbt och våldsamt. Betydelsen 'det blåser mycket' passar inte i sammanhanget.",
+    "explanationSv": "Här betyder storma att anfalla snabbt och hårt. Betydelsen ”det blåser mycket” passar inte.",
     "explanationJa": "ここでは「{突撃|とつげき}する」という{意味|いみ}です。「{嵐|あらし}が{吹|ふ}く」という{意味|いみ}ではありません。"
    },
    {
     "kind": "choice",
     "id": "q5",
     "focus": "cause",
-    "promptSv": "Varför förlorade borgarna mycket av sin militära betydelse?",
+    "promptSv": "Varför blev borgarna mindre viktiga i krig?",
     "options": [
-     "Kanoner och krut kunde förstöra även tjocka murar.",
-     "Det fanns inga fler kungar.",
-     "Riddarna slutade bära rustning.",
-     "Borgarna blev för dyra att städa."
+     "Kanoner kunde förstöra även tjocka murar.",
+     "Det fanns inga kungar längre.",
+     "Riddarna ville inte ha rustning.",
+     "Borgarna var för små."
     ],
     "correctIndex": 0,
-    "explanationSv": "Under senmedeltiden blev kanonerna så bra att murarna inte längre gav samma skydd.",
-    "explanationJa": "{中世|ちゅうせい}の{終|お}わりごろ、{大砲|たいほう}が{発達|はったつ}して、{厚|あつ}い{城壁|じょうへき}も{壊|こわ}せるようになったからです。"
+    "explanationSv": "I slutet av medeltiden kom kanoner, som kunde förstöra även tjocka murar.",
+    "explanationJa": "{中世|ちゅうせい}の{終|お}わりごろ、{厚|あつ}い{城壁|じょうへき}も{壊|こわ}せる{大砲|たいほう}が{登場|とうじょう}したからです。"
    }
   ],
   "factSources": [

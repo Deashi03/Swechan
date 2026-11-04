@@ -140,6 +140,15 @@ try {
   assert(await visible(page.getByText('inte en officiell eller validerad CEFR-bedömning')), 'placement result shown with honest disclaimer');
   await click('Till Swechan');
 
+  // Skipping onboarding must also work (regression: 0.1 bounced back to welcome)
+  {
+    const p2 = await context.browser().newContext({ ...devices['iPhone 13'], deviceScaleFactor: 1 }).then((c) => c.newPage());
+    await p2.goto(BASE);
+    await p2.getByRole('button', { name: 'Hoppa över' }).click();
+    assert(await visible(p2.getByText('Dagens Swechan')), '"Hoppa över" on the welcome screen leads to the home screen');
+    await p2.context().close();
+  }
+
   // 3–4: home with streak + two tasks ------------------------------------
   await page.getByText('Dagens Swechan').waitFor();
   assert(await visible(page.getByText('Inga tidigare inlärda ord att repetera ännu')), 'day 1: no review material → review counts as done');
@@ -171,7 +180,7 @@ try {
   await click('Till startsidan');
   assert(await visible(page.getByText('En sak kvar idag')), 'only module left on day 2');
   await click('Starta modulen');
-  await doModule('Atomer');
+  await doModule('Material');
   assert(await visible(page.getByLabel(/Streak: 2 dagar/)), 'streak is 2 after day 2');
 
   // Explore + dictionary tabs -------------------------------------------------

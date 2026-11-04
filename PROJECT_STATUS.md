@@ -1,8 +1,18 @@
 # Projektstatus – överlämning
 
-**Version:** 0.1.0 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `claude/swechan-0.1`
+**Version:** 0.2.0 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `claude/swechan-0.2` (0.1 är publicerad via GitHub Pages från `main`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## Nytt i 0.2 (efter användartest på iPhone)
+
+Användarens feedback på 0.1: (1) förklaringar använde svårare ord än ordet som lärdes in, (2) flera betydelser (t.ex. *ämne*) visades otydligt och ofullständigt, (3) frågor använde ord som eleven inte gått igenom. Åtgärder:
+
+- **Kontrollerat ordförråd** (`src/content/vocabularyCheck.ts`, `data/core/coreVocabulary.json`): ett test underkänner varje förklaring, exempel, lästext eller fråga som använder ord utanför grundordförrådet + förkunskapsmoduler + tidigare ord i modulen. 196 problemtexter i 0.1 → 0.
+- **Inlärningskedjor**: nya grundmoduler *Material och ämnen* → *Atomer och molekyler*, *Krig och försvar* → *Medeltida borgar*. *Dagens modul* respekterar kedjan.
+- **Betydelser**: `labelSv` per betydelse; sektionen "”ämne” har 5 betydelser" i ordintroduktionen; översikt i ordboken.
+- **Uppslagbara ord** i förklaringar, exempel och läsfrågor (`SvText`).
+- **Buggfix**: "Hoppa över" på välkomstsidan fungerade inte.
 
 ## Färdigbyggt (fungerar)
 
@@ -24,11 +34,15 @@ Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det förs
 - **Inställningar**: repetitioner per dag (10–60), furigana av/på, animationer (system/minska/alla), uppläsning (röststatus, test, tempo).
 - **PWA**: manifest, ikoner (inkl. apple-touch-icon), service worker (offline), safe-area-stöd, tabbar för tummen, fokusläge utan tabbar i sessioner, å/ä/ö-knappar vid skrivning (bra med japanskt tangentbord).
 - **Feedback System**: händelsebuss (`answer_correct`, `answer_incorrect`, `review_completed`, `module_completed`, `daily_session_completed`, `streak_increased`, `streak_freeze_used`, `streak_freeze_earned`, `word_mastered`*) + platshållaravatar "Swe-kun" med stämningar.
-- **Innehåll**: 3 moduler (25, 24, 24 ord), 77 ordposter / 86 betydelser (inkl. 4 fristående känsloord för jämförelse/egna ord), 4 jämförelser, 8 grammatiknoteringar.
+- **Innehåll**: 5 moduler i två kedjor + en fristående (Hemmet 25, Material och ämnen 21, Atomer och molekyler 22, Krig och försvar 21, Medeltida borgar 23 ord), 116 ordposter / 129 betydelser (inkl. 4 fristående känsloord), 5 jämförelser, 8 grammatiknoteringar, grundordförråd ~920 ord.
 
 \* `word_mastered` finns i händelsetypen men emitteras ännu inte (se Återstår).
 
-## Testat (faktiskt genomfört 2026-11-04)
+## Testat (faktiskt genomfört 2026-11-04, version 0.2)
+
+- `npm run typecheck` OK · `npm test` **85 tester gröna** (inkl. språkkontrollen över allt innehåll och inlärningskedjan) · `npm run build` OK · `npm run e2e` **passerar** (inkl. ny kontroll av "Hoppa över") · skärmbilder av nya ordintroduktioner granskade.
+
+### Från 0.1
 
 - `npm run typecheck` – inga fel.
 - `npm test` – **79 tester gröna** (11 filer): innehållsvalidering (och att validatorn fångar fel), furigana, datum/tidszon/sommartid, streak (13 fall enligt spec §22.1), repetition (separata dimensioner, förfallna, otillräckligt antal, fler än gränsen, skuld, felaktiga svar, ingen historikförlust, dubbelinskick), modulflöde (paus/återupptagning, steg i ordning, registrering i dagens session, tvådagars acceptansflöde, ingen dubbelräkning, data kvar efter omöppning), sparade ord, övningsgenerering för alla ord × typer, entydiga distraktorer, kunskapsnivåer, nivåtest, ordbok (svenska, japanska, kana, böjningar, flera betydelser, delade betydelser, synonymer, 20 000 poster), konversationsprompt, backup (rundtur, ogiltiga filer, framtida version, återställningspunkt), övningskomponenter (återkopplingssteg, å/ä/ö, ordbok bevarar inmatning).
@@ -40,8 +54,10 @@ Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det förs
 
 ## Kända problem och begränsningar
 
-1. **Innehållet är AI-utkast** (`quality.status: ai-draft`) och inte granskat av människa. Japanska läsningar/översättningar och fakta bör granskas – detta är den viktigaste kvalitetsrisken.
-2. Ord i lästexterna som inte är målord finns oftast inte i ordboken; uppslagning visar då "Ordet finns ännu inte i Swechans ordbok".
+1. **Innehållet är AI-utkast** (även 0.2-omskrivningen) (`quality.status: ai-draft`) och inte granskat av människa. Japanska läsningar/översättningar och fakta bör granskas – detta är den viktigaste kvalitetsrisken.
+2. Grundord (t.ex. *gjord*, *salt*) finns inte i ordboken och kan inte slås upp; texterna innehåller nu bara grundord och inlärda ord, men grundorden saknar japanska glosor.
+2b. Språkkontrollens igenkänning av grundord är en heuristik (suffixregler); den kan i sällsynta fall godkänna ett ord som inte är ett grundord. Grundordförrådet är egenkomponerat (ingen licensierad frekvenslista) och bör granskas.
+2c. Språkkontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig (en användare kan hoppa över kedjan).
 3. Morfologin känner bara igen lagrade former: delade partikelverb ("plockar hon undan"), s-passiv ("belägrades") och sammansättningar ("vattenmolekyl") länkas inte.
 4. Inget IPA-uttal; uttal endast via enhetens talsyntes (iPhone kan behöva ladda ner en svensk röst).
 5. Efter ett rätt svar på första försöket går övningen vidare automatiskt efter 0,85 s; öppnar man ordboken inom den tiden byter övningen bakom arket.
@@ -59,6 +75,10 @@ Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det förs
 Se `ROADMAP.md`. Kortsiktigt viktigast: test på fysisk iPhone, mänsklig innehållsgranskning, fler moduler, stödordbok för lästexter.
 
 ## Nästa rekommenderade arbetsuppgift
+
+(0.2) 1. Merga 0.2 till `main` (publiceras automatiskt) och testa på iPhone: gå igenom *Material och ämnen* och kontrollera att förklaringarna känns begripliga. 2. Mänsklig granskning av innehållet. 3. Fler moduler i kedjor enligt `CONTENT_GUIDELINES.md` (kontrollerat ordförråd).
+
+### Tidigare (0.1)
 
 1. **Publicera och testa på iPhone**: slå på GitHub Pages (Settings → Pages → Source: GitHub Actions), merga till `main`, öppna i Safari, lägg till på hemskärmen och gå igenom en hel dag. Notera problem med tangentbord, röst och layout.
 2. **Granska innehållet** med en person som kan svenska och japanska; sätt `quality.status: reviewed`.

@@ -128,6 +128,32 @@ describe('module flow and daily session', () => {
   });
 });
 
+describe('learning path (modules build on each other)', () => {
+  async function complete(id: string) {
+    await finishLearn(id);
+    for (const st of ['learn', 'read', 'converse'] as const) await completeStep(id, st);
+  }
+  it('recommends a module only after its prerequisites, even for an advanced learner', async () => {
+    await setupTestEnv();
+    const { setMeta } = await import('../storage/db');
+    await setMeta('placement', { takenAt: 0, skipped: false, estimatedLevel: 'B2', perLevel: {} });
+    // B2 learner: the B2 castle module must not be suggested before "Krig och försvar"
+    let rec = (await recommendedModule())!;
+    expect(rec.id).not.toBe('m.medeltida-borgar');
+    expect(rec.id).not.toBe('m.atomer-molekyler');
+    await complete('m.krig-forsvar');
+    rec = (await recommendedModule())!;
+    expect(rec.id).toBe('m.medeltida-borgar');
+  });
+  it('follows the recommended order for a beginner', async () => {
+    await setupTestEnv();
+    const order: string[] = [];
+    for (let i = 0; i < 5; i++) { const m = (await recommendedModule())!; order.push(m.id); await complete(m.id); }
+    expect(order).toEqual(['m.hemmet-vardag', 'm.material-amnen', 'm.atomer-molekyler', 'm.krig-forsvar', 'm.medeltida-borgar']);
+    expect(await recommendedModule()).toBeUndefined();
+  });
+});
+
 describe('saved words', () => {
   it('saves, queues and learns a word outside a module', async () => {
     await setupTestEnv();

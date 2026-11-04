@@ -27,6 +27,9 @@ export function ModuleCard({ m, progress }: { m: Module; progress?: ModuleProgre
     <a className="card clickable" href={href({ name: 'module', id: m.id })} style={{ textDecoration: 'none' }}>
       <div className="row between"><strong>{m.titleSv}</strong><span className="badge">{m.level}</span></div>
       <Ja text={m.titleJa} className="small muted" as="div" />
+      {m.prerequisites.length > 0 && (
+        <div className="xsmall muted" style={{ marginTop: 4 }}>Bygger på: {m.prerequisites.map((id) => getContent().getModule(id)?.titleSv).filter(Boolean).join(', ')}</div>
+      )}
       <div className="row between xsmall muted" style={{ marginTop: 4 }}>
         <span>{m.words.length} ord</span>
         <span>{moduleStatusLabel(progress)}</span>
@@ -62,8 +65,10 @@ export function ModuleOverview({ id }: { id: string }) {
         </div>
       </header>
       {missingPrereq.length > 0 && (
-        <div className="card tint-warning small">
-          Rekommenderat att göra först: {missingPrereq.map((p) => repo.getModule(p)?.titleSv).join(', ')}. Du kan ändå börja direkt.
+        <div className="card tint-warning small stack-sm">
+          <div><strong>Den här modulen bygger på:</strong> {missingPrereq.map((p) => <a key={p} href={href({ name: 'module', id: p })}>{repo.getModule(p)?.titleSv}</a>)}</div>
+          <div>Förklaringarna använder ord från den modulen. Gör den gärna först – men du kan också börja direkt.</div>
+          <Ja as="div" className="xsmall muted" text="このモジュールの{説明|せつめい}には、{前|まえ}のモジュールの{言葉|ことば}が{使|つか}われています。" />
         </div>
       )}
       {STEPS.map((s, i) => {
