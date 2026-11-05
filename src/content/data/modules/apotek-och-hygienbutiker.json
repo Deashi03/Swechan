@@ -1,0 +1,171 @@
+{
+ "id": "m.apotek-och-hygienbutiker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Apotek och hygienbutiker",
+ "titleJa": "{薬局|やっきょく}とドラッグストア",
+ "descriptionSv": "På apoteket och i hygienbutiken: apotek, receptfri, halstablett, kosttillskott, plåster, handsprit, hygienbutik, hygienartikel, oparfymerad, solkräm, våtservett, bomullspinne, blöja, mensskydd och tampong.",
+ "descriptionJa": "{薬局|やっきょく}とドラッグストアで：{薬局|やっきょく}、{市販|しはん}の、のど{飴|あめ}、サプリメント、ばんそうこう、{手指|しゅし}{消毒|しょうどく}{液|えき}、ドラッグストア、{衛生|えいせい}{用品|ようひん}、{無香料|むこうりょう}、{日焼|ひや}け{止|ど}め、ウェットティッシュ、{綿棒|めんぼう}、おむつ、{生理用品|せいりようひん}、タンポン。",
+ "categoryId": "R01-A05-T03",
+ "tags": [
+  "handel",
+  "butik",
+  "hygien"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.elektronikbutiker"
+ ],
+ "related": [],
+ "recommendedOrder": 517,
+ "words": [
+  {
+   "senseId": "s.apotek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.receptfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halstablett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kosttillskott.1",
+   "active": false
+  },
+  {
+   "senseId": "s.plåster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handsprit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hygienbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hygienartikel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oparfymerad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solkräm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våtservett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bomullspinne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blöja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mensskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tampong.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Inköpslista",
+  "paragraphs": [
+   "Aiko har en lista med saker som hon ska köpa. Först går hon till apoteket. Hon har ont i halsen och köper halstabletter. Det är receptfritt.",
+   "Hon frågar också om vitaminer. ”Många tar dem som kosttillskott på vintern”, säger personalen. Hon köper också plåster och en liten flaska handsprit.",
+   "Sedan går hon till en hygienbutik. Där är hygienartiklar billigare än på apoteket. Hon köper schampo, tandkräm och oparfymerad tvål, eftersom Mia har känslig hud.",
+   "Till semestern behöver familjen solkräm och våtservetter. Bomullspinnar har de slut på också.",
+   "Aikos kollega har fått en bebis, och Aiko köper ett paket blöjor som present.",
+   "Mensskydd finns bredvid tvålen. Hon tar ett paket tamponger. Nu är listan klar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför köper Aiko halstabletter?",
+    "options": [
+     "Mia är sjuk",
+     "De är på extrapris",
+     "Hon är trött",
+     "Hon har ont i halsen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon har ont i halsen och köper halstabletter.",
+    "explanationJa": "のどが{痛|いた}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tar många som kosttillskott på vintern?",
+    "options": [
+     "Halstabletter",
+     "Vitaminer",
+     "Handsprit",
+     "Solkräm"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Många tar dem som kosttillskott på vintern.”",
+    "explanationJa": "ビタミンです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför köper hon oparfymerad tvål?",
+    "options": [
+     "Den är billigast",
+     "Den luktar gott",
+     "Erik vill det",
+     "Mia har känslig hud"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon köper oparfymerad tvål, eftersom Mia har känslig hud.",
+    "explanationJa": "ミアの{肌|はだ}が{敏感|びんかん}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Hygienartiklar är dyrare i hygienbutiken än på apoteket.",
+    "correct": false,
+    "explanationSv": "Där är hygienartiklar billigare än på apoteket.",
+    "explanationJa": "ドラッグストアのほうが{安|やす}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Blöjorna är till Aikos egen familj.",
+    "correct": false,
+    "explanationSv": "Aikos kollega har fått en bebis, och Aiko köper ett paket blöjor som present.",
+    "explanationJa": "{同僚|どうりょう}へのプレゼントです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om apotek och hygienbutiker: vad ni köper där, vad som är receptfritt och hur det är i Japan.",
+  "discussionPoints": [
+   "Vad köper du oftast på apoteket?",
+   "Köper du hygienartiklar på apoteket, i mataffären eller i en hygienbutik?",
+   "Använder du solkräm på sommaren?",
+   "Hur skiljer sig japanska apotek och drugstores från svenska?"
+  ]
+ }
+}

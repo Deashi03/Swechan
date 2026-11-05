@@ -1,0 +1,170 @@
+{
+ "id": "m.bokhandlar-och-presentbutiker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bokhandlar och presentbutiker",
+ "titleJa": "{書店|しょてん}とギフトショップ",
+ "descriptionSv": "I bokhandeln och presentbutiken: bokhandel, pocketbok, inbunden, bästsäljare, bokrea, presentbutik, souvenir, prydnad, ge bort, presentpapper, slå in, presentinslagning, rosett, gratulationskort och byteslapp.",
+ "descriptionJa": "{書店|しょてん}とギフトショップで：{本屋|ほんや}、{文庫本|ぶんこぼん}、ハードカバー、ベストセラー、{本|ほん}のセール、ギフトショップ、お{土産|みやげ}、{置物|おきもの}、あげる、{包装紙|ほうそうし}、{包|つつ}む、ギフト{包装|ほうそう}、リボン、お{祝|いわ}いカード、{交換|こうかん}{券|けん}。",
+ "categoryId": "R01-A05-T03",
+ "tags": [
+  "handel",
+  "butik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.apotek-och-hygienbutiker"
+ ],
+ "related": [],
+ "recommendedOrder": 518,
+ "words": [
+  {
+   "senseId": "s.bokhandel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pocketbok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inbunden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bästsäljare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bokrea.1",
+   "active": true
+  },
+  {
+   "senseId": "s.presentbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.souvenir.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prydnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ge-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.presentpapper.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.presentinslagning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rosett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gratulationskort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byteslapp.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En present till mormor",
+  "paragraphs": [
+   "Mormor fyller sjuttio år, och Aiko och Mia ska köpa en present. Först går de till en bokhandel. Bästsäljarna står vid ingången.",
+   "Mormor läser mycket. En inbunden bok kostar 299 kronor, och samma bok som pocketbok kostar 99. ”Vänta till bokrean i februari”, säger Mia. ”Då är allt billigare.”",
+   "De går vidare till en presentbutik. Där finns prydnader, ljus och souvenirer från hela Sverige. Mia hittar en fin liten fågel av glas.",
+   "”Vi ger bort både boken och fågeln”, säger Aiko. ”Kan du slå in dem?” frågar hon. ”Presentinslagning är gratis”, säger personalen.",
+   "Personalen slår in presenterna i blått presentpapper och sätter en röd rosett på paketet. ”Vill du ha en byteslapp?” Aiko tar en, om mormor redan har boken.",
+   "Till sist köper de ett gratulationskort. Mia skriver: ”Grattis, mormor!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur gammal blir mormor?",
+    "options": [
+     "Sextio år",
+     "Åttio år",
+     "Sjuttio år",
+     "Femtio år"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mormor fyller sjuttio år.",
+    "explanationJa": "70{歳|さい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kostar boken som pocketbok?",
+    "options": [
+     "299 kronor",
+     "99 kronor",
+     "199 kronor",
+     "Ingenting"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Samma bok som pocketbok kostar 99.",
+    "explanationJa": "99クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad hittar Mia i presentbutiken?",
+    "options": [
+     "Ett ljus",
+     "En liten fågel av glas",
+     "En souvenir",
+     "En bok"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mia hittar en fin liten fågel av glas.",
+    "explanationJa": "ガラスの{小|ちい}さな{鳥|とり}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Presentinslagning kostar extra.",
+    "correct": false,
+    "explanationSv": "”Presentinslagning är gratis.”",
+    "explanationJa": "{無料|むりょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor kan byta boken om hon redan har den.",
+    "correct": true,
+    "explanationSv": "Aiko tar en byteslapp, om mormor redan har boken.",
+    "explanationJa": "{交換|こうかん}{券|けん}があります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bokhandlar och presenter: vilka böcker ni köper, vad ni ger bort och hur man slår in presenter.",
+  "discussionPoints": [
+   "Köper du helst inbundna böcker eller pocketböcker?",
+   "Vad är en bra present till någon som fyller år?",
+   "Vilken souvenir från Sverige skulle du ge bort i Japan?",
+   "Är det vanligt med presentinslagning i japanska butiker?"
+  ]
+ }
+}
