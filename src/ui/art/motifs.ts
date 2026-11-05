@@ -405,6 +405,38 @@ export const MOTIFS: Record<string, Motif> = {
     q(40, 20, 4, 24, 'line', 1), p('M34 20 L38 10 H46 L50 20 Z', 'accent', H.yellow),
     p('M50 44 V34 M50 34 C46 28 46 24 50 20 C54 24 54 28 50 34', 'main', H.green), q(46, 38, 8, 6, 'main', 1, H.orange),
   ] },
+  // ── Hem & boende: Kök & hushållsredskap ─────────────────────
+  stove: { parts: [
+    q(10, 18, 44, 38, 'main', 3, H.grey), q(10, 12, 44, 8, 'accent', 2, H.grey),
+    c(22, 16, 2, 'line'), c(32, 16, 2, 'line'), c(42, 16, 2, 'line'),
+    q(16, 26, 32, 22, 'light', 2), q(20, 30, 24, 14, 'main', 2, H.orange), q(22, 22, 20, 2, 'line', 1),
+  ] },
+  utensils: { parts: [
+    q(14, 30, 4, 26, 'main', 2, H.brown), p('M10 10 H22 V30 H10 Z', 'light'), p('M13 12 V26 M16 12 V26 M19 12 V26', 'line'),
+    q(30, 30, 4, 26, 'main', 2, H.brown), c(32, 18, 9, 'accent'),
+    q(46, 28, 4, 28, 'main', 2, H.brown), p('M42 8 C42 20 54 20 54 8 Z', 'light'), p('M48 8 V22', 'line'),
+  ] },
+  cups: { parts: [
+    q(8, 26, 20, 22, 'light', 3), p('M28 30 C34 30 34 40 28 40', 'line'), q(6, 48, 26, 4, 'accent2', 2),
+    p('M36 16 H56 L52 52 H40 Z', 'main', H.blue), q(38, 22, 16, 4, 'light', 1), c(46, 38, 4, 'light'),
+  ] },
+  containers: { parts: [
+    q(8, 28, 22, 26, 'light', 3), q(6, 22, 26, 7, 'main', 2), q(12, 36, 14, 12, 'accent', 2, H.yellow),
+    q(34, 18, 22, 36, 'light', 3), q(32, 12, 26, 7, 'accent', 2), q(38, 28, 14, 20, 'main', 2, H.brown),
+  ] },
+  counter: { parts: [
+    q(6, 28, 52, 8, 'main', 2, H.grey), q(8, 36, 48, 20, 'accent', 2, H.brown), p('M32 38 V54 M24 44 V48 M40 44 V48', 'line'),
+    q(36, 16, 16, 12, 'light', 2), p('M14 28 V20 Q14 14 20 14 H24', 'line'), c(26, 16, 2, 'accent2'),
+  ] },
+  setting: { parts: [
+    c(32, 32, 16, 'light'), c(32, 32, 11, 'accent2'),
+    q(8, 16, 3, 32, 'main', 1.5, H.grey), p('M6 16 V24 M9.5 16 V24 M13 16 V24', 'line'),
+    q(52, 16, 4, 32, 'main', 1.5, H.grey), p('M42 10 L48 16 L46 18 L40 12 Z', 'accent', H.blue),
+  ] },
+  fireext: { parts: [
+    q(22, 18, 20, 38, 'main', 6, H.red), q(26, 10, 12, 10, 'main', 2, H.grey),
+    p('M38 12 H50 L54 18', 'line'), q(26, 30, 12, 12, 'light', 2), p('M29 36 H35', 'line'),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -434,6 +466,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-01-01-05': 'blueprint', 'SWC-VAR-01-01-06': 'boxes', 'SWC-VAR-01-01-07': 'cabin',
   'SWC-VAR-01-02-01': 'sofa', 'SWC-VAR-01-02-02': 'chair', 'SWC-VAR-01-02-03': 'bed', 'SWC-VAR-01-02-04': 'shelf',
   'SWC-VAR-01-02-05': 'lamp', 'SWC-VAR-01-02-06': 'swatch', 'SWC-VAR-01-02-07': 'roomset',
+  'SWC-VAR-01-03-01': 'stove', 'SWC-VAR-01-03-02': 'utensils', 'SWC-VAR-01-03-03': 'cups', 'SWC-VAR-01-03-04': 'containers',
+  'SWC-VAR-01-03-05': 'counter', 'SWC-VAR-01-03-06': 'setting', 'SWC-VAR-01-03-07': 'fireext',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };
