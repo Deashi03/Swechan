@@ -1,0 +1,170 @@
+{
+ "id": "m.cykelvagar-och-cykelbanor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Cykelvägar och cykelbanor",
+ "titleJa": "{自転車|じてんしゃ}{道|どう}",
+ "descriptionSv": "Cykelvägar och cykelbanor: cykelväg, cykelfält, trafikseparerad, cykelöverfart, cykelpassage, cykelställ, cykelled, cykelpendlare, cykelvänlig, hyrcykel, elcykel, lådcykel, cykeltur, ta cykeln och sida vid sida.",
+ "descriptionJa": "{自転車|じてんしゃ}{道|どう}：{自転車|じてんしゃ}{道|どう}、{自転車|じてんしゃ}{専用|せんよう}{車線|しゃせん}、{車|くるま}と{分離|ぶんり}された、{自転車|じてんしゃ}{横断帯|おうだんたい}（{優先|ゆうせん}あり）、{自転車|じてんしゃ}{横断帯|おうだんたい}（{優先|ゆうせん}なし）、{駐輪|ちゅうりん}ラック、サイクリングルート、{自転車|じてんしゃ}{通勤者|つうきんしゃ}、{自転車|じてんしゃ}にやさしい、レンタサイクル、{電動|でんどう}{自転車|じてんしゃ}、カーゴバイク、サイクリング、{自転車|じてんしゃ}で{行|い}く、{並|なら}んで。",
+ "categoryId": "R01-A06-T04",
+ "tags": [
+  "resor",
+  "cykel"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.cykelns-delar"
+ ],
+ "related": [],
+ "recommendedOrder": 632,
+ "words": [
+  {
+   "senseId": "s.cykelväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikseparerad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelöverfart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelpassage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelställ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelled.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelpendlare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelvänlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyrcykel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elcykel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lådcykel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykeltur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-cykeln.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sida-vid-sida.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En cykelvänlig stad",
+  "paragraphs": [
+   "Leo bor i Malmö, en mycket cykelvänlig stad. Han är cykelpendlare och tar cykeln till jobbet varje dag.",
+   "Det mesta av vägen cyklar han på en trafikseparerad cykelväg. Bara i centrum måste han cykla i ett cykelfält på gatan, bredvid bilarna.",
+   "Vid en stor gata finns en cykelöverfart. Där stannar bilarna för honom. Men vid nästa gata är det en cykelpassage, och där får Leo vänta.",
+   "På morgonen cyklar många sida vid sida. Leos granne kör sina barn i en lådcykel, och hans kollega har en elcykel.",
+   "Vid jobbet ställer Leo cykeln i cykelstället. Turister tar hyrcyklar från stationen.",
+   "På helgen gör Leo och hans vänner en lång cykeltur på en cykelled längs havet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var bor Leo?",
+    "options": [
+     "I Lund",
+     "I Stockholm",
+     "I Kyoto",
+     "I Malmö"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leo bor i Malmö.",
+    "explanationJa": "マルメです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var cyklar Leo i centrum?",
+    "options": [
+     "På en cykelled",
+     "På trottoaren",
+     "I en park",
+     "I ett cykelfält"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… i ett cykelfält på gatan.",
+    "explanationJa": "{自転車|じてんしゃ}{専用|せんよう}{車線|しゃせん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Vid cykelpassagen stannar bilarna för Leo.",
+    "correct": false,
+    "explanationSv": "Vid nästa gata är det en cykelpassage, och där får Leo vänta.",
+    "explanationJa": "{待|ま}つのはレオです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har Leos kollega?",
+    "options": [
+     "En lådcykel",
+     "En elcykel",
+     "En hyrcykel",
+     "En bil"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… hans kollega har en elcykel.",
+    "explanationJa": "{電動|でんどう}{自転車|じてんしゃ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo cyklar både på vardagar och på helgen.",
+    "correct": true,
+    "explanationSv": "Han tar cykeln till jobbet varje dag … På helgen gör Leo … en lång cykeltur.",
+    "explanationJa": "{平日|へいじつ}も{週末|しゅうまつ}も{乗|の}ります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att cykla i staden: vägar, regler och olika slags cyklar.",
+  "discussionPoints": [
+   "Är din stad cykelvänlig?",
+   "Tar du cykeln till skolan eller jobbet?",
+   "Har du provat en elcykel eller en hyrcykel?",
+   "Var skulle du vilja göra en lång cykeltur?"
+  ]
+ }
+}

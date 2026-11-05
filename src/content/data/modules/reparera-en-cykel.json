@@ -1,0 +1,171 @@
+{
+ "id": "m.reparera-en-cykel",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Reparera en cykel",
+ "titleJa": "{自転車|じてんしゃ}の{修理|しゅうり}",
+ "descriptionSv": "Reparera en cykel: cykelverkstad, pumpa, laga punktering, lagningssats, däckjärn, byta slang, skiftnyckel, insexnyckel, mutter, dra åt, lossa, hoppa av, bromskloss, gnissla och rostig.",
+ "descriptionJa": "{自転車|じてんしゃ}の{修理|しゅうり}：{自転車|じてんしゃ}{修理|しゅうり}{店|てん}、{空気|くうき}を{入|い}れる、パンクを{直|なお}す、パンク{修理|しゅうり}キット、タイヤレバー、チューブを{交換|こうかん}する、モンキーレンチ、{六角|ろっかく}レンチ、ナット、{締|し}める、ゆるめる、{外|はず}れる、ブレーキシュー、キーキー{鳴|な}る、さびた。",
+ "categoryId": "R01-A06-T04",
+ "tags": [
+  "resor",
+  "cykel",
+  "reparation"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hjalmar-och-reflexer"
+ ],
+ "related": [],
+ "recommendedOrder": 636,
+ "words": [
+  {
+   "senseId": "s.cykelverkstad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pumpa-verb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laga-punktering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagningssats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.däckjärn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-slang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skiftnyckel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insexnyckel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mutter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-åt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lossa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hoppa-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromskloss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gnissla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rostig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Erik lagar sin cykel",
+  "paragraphs": [
+   "Eriks gamla cykel har många problem. Han vill inte betala för cykelverkstaden, så han lagar den själv.",
+   "Först har bakhjulet punktering. Erik lossar muttrarna med en skiftnyckel och tar av hjulet. Med två däckjärn får han av däcket.",
+   "Han tar fram en lagningssats. Men slangen har ett stort hål, så det är svårt att laga punktering. Han bestämmer sig för att byta slang i stället. Sedan pumpar han däcket.",
+   "Kedjan är rostig och hoppar av när han cyklar. Han tar olja på den. Sadeln sitter löst, så han tar en insexnyckel för att dra åt skruven.",
+   "Till sist gnisslar bromsarna. Bromsklossarna är helt slitna, så han byter dem.",
+   "Efter tre timmar är cykeln som ny. – Det var billigare än verkstaden, säger Erik glatt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför lagar Erik cykeln själv?",
+    "options": [
+     "Verkstaden är stängd",
+     "Han är mekaniker",
+     "Han vill inte betala för verkstaden",
+     "Hans pappa säger det"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han vill inte betala för cykelverkstaden.",
+    "explanationJa": "{修理|しゅうり}{代|だい}を{払|はら}いたくないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad använder Erik för att få av däcket?",
+    "options": [
+     "En skiftnyckel",
+     "Två däckjärn",
+     "En insexnyckel",
+     "En pump"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Med två däckjärn får han av däcket.",
+    "explanationJa": "タイヤレバー{二本|にほん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik lagar hålet i slangen.",
+    "correct": false,
+    "explanationSv": "Han bestämmer sig för att byta slang i stället.",
+    "explanationJa": "チューブを{交換|こうかん}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför gnisslar bromsarna?",
+    "options": [
+     "Kedjan är rostig",
+     "Hjulet är löst",
+     "Bromsklossarna är slitna",
+     "Det är kallt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Bromsklossarna är helt slitna.",
+    "explanationJa": "ブレーキシューがすり{減|へ}っているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik är nöjd med resultatet.",
+    "correct": true,
+    "explanationSv": "… säger Erik glatt.",
+    "explanationJa": "{満足|まんぞく}しています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att laga cyklar och andra saker själv.",
+  "discussionPoints": [
+   "Kan du laga punktering på en cykel?",
+   "Vilka verktyg har du hemma?",
+   "Lagar du saker själv eller lämnar du dem till en verkstad?",
+   "Vad är det svåraste du har lagat?"
+  ]
+ }
+}
