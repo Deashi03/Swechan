@@ -1,0 +1,169 @@
+{
+ "id": "m.sma-reparationer-hemma",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Små reparationer hemma",
+ "titleJa": "{家|いえ}でのちょっとした{修理|しゅうり}",
+ "descriptionSv": "Att laga saker hemma: verktyg, hammare, skruv, borra, limma och montera möbler.",
+ "descriptionJa": "{家|いえ}での{修理|しゅうり}：{工具|こうぐ}、ハンマー、ねじ、ドリル、{接着|せっちゃく}、{家具|かぐ}の{組|く}み{立|た}て。",
+ "categoryId": "R01-A01-T05",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.sortera-och-slanga-sopor"
+ ],
+ "related": [],
+ "recommendedOrder": 233,
+ "words": [
+  {
+   "senseId": "s.spik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hammare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verktyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verktygslåda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skruv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skruvmejsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borr.1",
+   "active": false
+  },
+  {
+   "senseId": "s.borra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plugg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lim.1",
+   "active": true
+  },
+  {
+   "senseId": "s.limma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.montera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bruksanvisning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laga.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Erik lagar saker",
+  "paragraphs": [
+   "Erik tycker om att laga saker själv. I förrådet har han en stor verktygslåda med alla verktyg man behöver.",
+   "Först ska han sätta upp en hylla. Han borrar hål i väggen med borren och sätter i pluggar. Sedan skruvar han fast hyllan med skruvar och en skruvmejsel.",
+   "Aiko vill hänga upp en tavla. Erik slår in en spik med hammaren. ”I trä kan man spika, men i betong måste man borra”, säger han.",
+   "Sedan monterar de en ny bokhylla. Erik läser inte bruksanvisningen. Efter en timme har han tre skruvar över. ”Läs bruksanvisningen först nästa gång!” skrattar Aiko.",
+   "En kopp har gått sönder. Aiko limmar ihop den med lim. ”Den är fin igen”, säger hon.",
+   "Men när tvättmaskinen går sönder ringer de en hantverkare. ”Vissa saker kan man inte laga själv”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var har Erik sina verktyg?",
+    "options": [
+     "I köket",
+     "I en verktygslåda i förrådet",
+     "Hos grannen",
+     "I bilen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han har en stor verktygslåda i förrådet.",
+    "explanationJa": "{物置|ものおき}の{工具箱|こうぐばこ}に{入|い}れています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Erik innan han skruvar fast hyllan?",
+    "options": [
+     "Han limmar den.",
+     "Han borrar hål och sätter i pluggar.",
+     "Han spikar den.",
+     "Han läser bruksanvisningen."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han borrar hål i väggen och sätter i pluggar.",
+    "explanationJa": "{壁|かべ}に{穴|あな}をあけてアンカーを{入|い}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik läser bruksanvisningen till bokhyllan.",
+    "correct": false,
+    "explanationSv": "Erik läser inte bruksanvisningen, och han har tre skruvar över.",
+    "explanationJa": "{説明書|せつめいしょ}を{読|よ}まなかったので、ねじが3{本|ぼん}{余|あま}りました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur lagar Aiko koppen?",
+    "options": [
+     "Hon spikar den.",
+     "Hon skruvar den.",
+     "Hon limmar ihop den.",
+     "Hon köper en ny."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko limmar ihop den med lim.",
+    "explanationJa": "{接着剤|せっちゃくざい}でくっつけます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik lagar tvättmaskinen själv.",
+    "correct": false,
+    "explanationSv": "När tvättmaskinen går sönder ringer de en hantverkare.",
+    "explanationJa": "{洗濯機|せんたくき}は{職人|しょくにん}さんに{頼|たの}みます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att laga saker hemma: verktyg, att montera möbler, och vad man gör själv eller låter en hantverkare göra.",
+  "discussionPoints": [
+   "Lagar du saker själv?",
+   "Vilka verktyg har du hemma?",
+   "Läser du bruksanvisningen innan du monterar en möbel?",
+   "Vad är det svåraste du har lagat?"
+  ]
+ }
+}
