@@ -34,4 +34,19 @@ describe('content validator catches real problems', () => {
     expect(issues.some((i) => i.message.includes('"molekyl" saknas'))).toBe(true);
     expect(issues.some((i) => i.message.includes('Kanji utan furigana'))).toBe(true);
   });
+
+  it('requires an explanation for hard words (B2+) and checks its quality (0.8)', () => {
+    const base = loadBundledContent();
+    const raw = { ...base, moduleIndex: undefined, loadBody: undefined, modules: structuredClone(loadAllModuleBodiesEager()), dictionaries: structuredClone(base.dictionaries) };
+    type S = { id: string; defSv: string; explanation?: { sv: string; ja: string } };
+    const senses = (raw.dictionaries as { entries: { level: string; senses: S[] }[] }[]).flatMap((d) => d.entries.flatMap((e) => e.senses));
+    const spec = senses.find((s) => s.id === 's.specificerad.1')!;
+    expect(spec.explanation?.sv).toMatch(/kvitto/);
+    delete spec.explanation;
+    const belägring = senses.find((s) => s.id === 's.belägring.1')!;
+    belägring.explanation = { sv: belägring.defSv, ja: '{包囲戦|ほういせん}' };
+    const issues = validateContent(new ContentRepository(raw));
+    expect(issues.some((i) => i.message.includes('"specificerad" (B2)') && i.message.includes('förklaring'))).toBe(true);
+    expect(issues.some((i) => i.where === 's.belägring.1.explanation' && i.message.includes('upprepa definitionen'))).toBe(true);
+  });
 });

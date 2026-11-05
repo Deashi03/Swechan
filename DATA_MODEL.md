@@ -12,7 +12,7 @@ Module (m.*) ── words[] ──► ModuleWord { senseId, active }
    │                              │
    ├─ reading: ReadingText        ▼
    │    paragraphs[], questions[]  WordSense (s.<lemma>.<n>) ◄── synonyms[] (per betydelse)
-   └─ conversation                 ▲   examples[], defSv/defJa, usageNote, grammarNotes[]
+   └─ conversation                 ▲   examples[], defSv/defJa, explanation (0.8), usageNote, grammarNotes[]
                                    │ senses[]
                           VocabularyEntry (e.<lemma>)
                             lemma, pos, level, inflection (per ordklass), pronunciationNote
