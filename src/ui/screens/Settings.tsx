@@ -2,6 +2,8 @@ import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useRef, useState } from 'react';
 import { getSpeech } from '../../audio/speech';
 import { APP_VERSION, sessionConfig } from '../../config/appConfig';
+import { allWordImages } from '../../content/images';
+import { getContent } from '../../content/repository';
 import { getScheduler } from '../../repetition/fsrsScheduler';
 import { downloadJson, exportBackup, hasRestorePoint, importBackup, undoLastImport } from '../../storage/backup';
 import { getMeta, requestPersistentStorage } from '../../storage/db';
@@ -100,6 +102,18 @@ export function SettingsScreen() {
       <DevToolsPanel />
 
       <a className="card clickable" href={href({ name: 'stats' })} style={{ textDecoration: 'none' }}><strong>Statistik och kunskapsutveckling ›</strong></a>
+
+      <details className="card small">
+        <summary><strong>Bildkällor</strong></summary>
+        <p className="muted">Illustrationerna är ritade för Swechan. Fotona är fritt licensierade:</p>
+        <ul className="stack-sm" style={{ paddingLeft: 18, margin: 0 }}>
+          {allWordImages().map((img) => img.kind === 'photo' && (
+            <li key={img.senseId}>
+              <span lang="sv">{getContent().getSense(img.senseId)?.entry.lemma}</span>: <a href={img.credit.source} target="_blank" rel="noreferrer">{img.credit.title}</a> av {img.credit.creator}, <a href={img.credit.licenseUrl} target="_blank" rel="noreferrer">{img.credit.license}</a> (beskuren och komprimerad)
+            </li>
+          ))}
+        </ul>
+      </details>
 
       <section className="small muted stack-sm">
         <div>Swechan {APP_VERSION}</div>

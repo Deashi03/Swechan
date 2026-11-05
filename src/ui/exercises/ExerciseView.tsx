@@ -12,6 +12,7 @@ import { checkTypedAnswer, type NearMiss } from '../../learning/answerCheck';
 import { isChoice, type ChoiceExercise, type ExerciseInstance, type ExerciseResult, type TypedExercise } from '../../learning/exercises/types';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
 import { Ja, LangText } from '../components/Ja';
+import { WordImage } from '../components/WordImage';
 
 type Props = { exercise: ExerciseInstance; onDone: (r: ExerciseResult) => void };
 
@@ -76,22 +77,31 @@ function ChoiceView({ ex, onDone }: { ex: ChoiceExercise; onDone: (r: ExerciseRe
 
   const correct = ex.options[ex.correctIndex]!;
   const wordCard = ex.promptLang === 'sv' && (ex.type === 'meaning_choice');
+  const pictures = ex.options.some((o) => o.image);
   return (
     <div className="stack">
       <Instruction sv={ex.instructionSv} ja={ex.instructionJa} />
       <div className="card stack-sm" style={{ padding: '22px 20px', borderRadius: 'var(--r-xl)' }}>
-        <LangText text={ex.prompt} lang={ex.promptLang} className={ex.promptLang === 'ja' ? 'prompt-ja' : wordCard ? 'prompt-word' : ''} />
+        {ex.image && <div className="picture-prompt"><WordImage senseId={ex.image} size={200} /></div>}
+        {ex.prompt && <LangText text={ex.prompt} lang={ex.promptLang} className={ex.promptLang === 'ja' ? 'prompt-ja' : wordCard || ex.type === 'image_pick' ? 'prompt-word' : ''} />}
         {ex.subPrompt && (
           <div className="small" style={{ background: 'var(--c-primary-tint)', borderRadius: 12, padding: '10px 12px' }}>
             <LangText text={ex.subPrompt} lang={ex.subPromptLang ?? 'sv'} />
           </div>
         )}
       </div>
-      <div className="options" role="group" aria-label="Svarsalternativ">
+      <div className={`options ${pictures ? 'image-grid' : ''}`} role="group" aria-label="Svarsalternativ">
         {ex.options.map((o, i) => {
           const cls = (state !== 'answering' && i === ex.correctIndex) ? 'correct' : wrong.includes(i) ? 'wrong' : state !== 'answering' ? 'dim' : '';
-          return (
-            <button key={i} className={`option ${cls}`} onClick={() => choose(i)} disabled={state !== 'answering' || wrong.includes(i)}>
+          const answered = state !== 'answering' || wrong.includes(i);
+          return o.image ? (
+            <button key={i} className={`option image-option ${cls}`} onClick={() => choose(i)} disabled={answered} aria-label={answered ? o.label : `Bild ${KEYS[i]}`}>
+              <WordImage senseId={o.image} size={140} label={answered ? o.label : `Bild ${KEYS[i]}`} />
+              {answered && <span className="opt-label" lang="sv">{o.label}</span>}
+              <span className="opt-key" aria-hidden>{cls === 'correct' ? '✓' : KEYS[i]}</span>
+            </button>
+          ) : (
+            <button key={i} className={`option ${cls}`} onClick={() => choose(i)} disabled={answered}>
               <LangText text={o.label} lang={o.lang} />
               <span className="opt-key" aria-hidden>{cls === 'correct' ? '✓' : KEYS[i]}</span>
             </button>
@@ -185,6 +195,7 @@ function TypedView({ ex, onDone }: { ex: TypedExercise; onDone: (r: ExerciseResu
     <div className="stack">
       <Instruction sv={ex.instructionSv} ja={ex.instructionJa} />
       <div className="card stack-sm" style={{ padding: '20px', borderRadius: 'var(--r-xl)' }}>
+        {ex.image && <div className="picture-prompt"><WordImage senseId={ex.image} size={150} /></div>}
         <LangText text={ex.prompt} lang={ex.promptLang} className={ex.promptLang === 'ja' ? 'prompt-ja' : 'prompt-word'} />
         {ex.subPrompt && <div className="small muted"><LangText text={ex.subPrompt} lang={ex.subPromptLang ?? 'sv'} /></div>}
       </div>

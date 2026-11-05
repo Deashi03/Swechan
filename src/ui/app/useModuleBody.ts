@@ -1,3 +1,4 @@
+import { allWordImages, photoUrl } from '../../content/images';
 import { useEffect, useState } from 'react';
 import { markModuleOffline } from '../../content/offlineModules';
 import { getContent } from '../../content/repository';
@@ -25,6 +26,9 @@ export function prefetchModuleBodies(): void {
   const run = () => {
     const repo = getContent();
     for (const m of repo.modules) repo.loadModuleBody(m.id).then(() => markModuleOffline(m.id)).catch(() => { /* retried on open */ });
+    // Word pictures (0.6): the illustration chunk and the photos, so that they are cached by the service worker.
+    import('../wordArt/render').catch(() => undefined);
+    for (const img of allWordImages()) if (img.kind === 'photo') fetch(photoUrl(img.file)).catch(() => undefined);
   };
   const w = window as Window & { requestIdleCallback?: (cb: () => void) => void };
   if (w.requestIdleCallback) w.requestIdleCallback(run); else setTimeout(run, 2000);

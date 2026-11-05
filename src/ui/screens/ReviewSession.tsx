@@ -4,10 +4,11 @@
  */
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useEffect, useMemo, useState } from 'react';
+import { quizImageFor } from '../../content/images';
 import { getContent } from '../../content/repository';
 import { completeExtraReview, completeReviewItem, ensureDailySession, planExtraReviews } from '../../daily/dailySession';
 import { generateExercise } from '../../learning/exercises/generate';
-import type { ExerciseResult, ExerciseType } from '../../learning/exercises/types';
+import { IMAGE_TYPES, type ExerciseResult, type ExerciseType } from '../../learning/exercises/types';
 import { hashString } from '../../lib/random';
 import { getDb } from '../../storage/db';
 import type { Dimension } from '../../storage/types';
@@ -19,12 +20,14 @@ import { useDictionarySheet } from '../dictionary/DictionarySheet';
 import { ExerciseView } from '../exercises/ExerciseView';
 
 const MEANING_TYPES: ExerciseType[] = ['meaning_choice', 'reverse_choice', 'context_choice', 'synonym_choice'];
+const MEANING_TYPES_WITH_PICTURE: ExerciseType[] = [...MEANING_TYPES, ...IMAGE_TYPES];
 
-/** Vary exercise types for the meaning dimension deterministically per card and day. */
-export function exerciseTypeFor(cardIdValue: string, dimension: Dimension, date: string): ExerciseType {
+/** Vary exercise types for the meaning dimension deterministically per card and day; words with an unambiguous picture also get picture exercises. */
+export function exerciseTypeFor(cardIdValue: string, dimension: Dimension, date: string, hasPicture = false): ExerciseType {
   if (dimension === 'spelling') return 'spelling';
   if (dimension === 'inflection') return 'inflection';
-  return MEANING_TYPES[hashString(cardIdValue + date) % MEANING_TYPES.length]!;
+  const types = hasPicture ? MEANING_TYPES_WITH_PICTURE : MEANING_TYPES;
+  return types[hashString(cardIdValue + date) % types.length]!;
 }
 
 export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
@@ -45,7 +48,7 @@ export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
   const card = useLiveQuery(() => (currentId ? getDb().cards.get(currentId) : undefined), [currentId]);
   const exercise = useMemo(() => {
     if (!card || !date || card.id !== currentId) return null;
-    return generateExercise(exerciseTypeFor(card.id, card.dimension, date), card.senseId, { repo: getContent(), poolSenseIds: pool, seed: hashString(card.id + date) });
+    return generateExercise(exerciseTypeFor(card.id, card.dimension, date, !!quizImageFor(card.senseId)), card.senseId, { repo: getContent(), poolSenseIds: pool, seed: hashString(card.id + date) });
   }, [card, date, pool, currentId]);
 
   const onDone = async (r: ExerciseResult) => {

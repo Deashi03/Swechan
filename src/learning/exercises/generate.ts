@@ -3,6 +3,7 @@
  */
 import { stripFurigana } from '../../content/furigana';
 import { acceptedForms, allForms, inflectionForms, tokenize } from '../../content/morphology';
+import { imageDistractorAllowed, imageFor, quizImageFor } from '../../content/images';
 import type { ContentRepository, SenseRef } from '../../content/repository';
 import type { Inflection, VocabularyEntry } from '../../content/schema';
 import { learnConfig } from '../../config/appConfig';
@@ -239,6 +240,7 @@ export function genSpelling(ref: SenseRef, ctx: GenContext): TypedExercise {
   const accepted = e.inflection.kind === 'noun' ? [e.lemma, `${e.inflection.gender} ${e.lemma}`] : [e.lemma];
   return {
     type: 'spelling', senseId: ref.sense.id, dimension: 'spelling',
+    ...(imageFor(ref.sense.id) ? { image: ref.sense.id } : {}),
     prompt: maskAnswer(ref.sense.ja, ref.entry), promptLang: 'ja', subPrompt: maskAnswer(ref.sense.defJa, ref.entry), subPromptLang: 'ja',
     instructionSv: 'Skriv ordet på svenska.',
     instructionJa: 'スウェーデン{語|ご}で{書|か}いてください。',
@@ -323,11 +325,57 @@ export function genInflection(ref: SenseRef, ctx: GenContext): TypedExercise | n
   };
 }
 
+/** Wrong options for a picture exercise: only senses whose picture can never be mistaken for the target (see content/images). */
+function imageDistractors(ref: SenseRef, ctx: GenContext, rng: () => number): SenseRef[] | null {
+  if (!quizImageFor(ref.sense.id)) return null;
+  const wrong = distractors(ref, ctx, learnConfig.choiceCount - 1, rng, (r) => imageDistractorAllowed(ref.sense.id, r.sense.id));
+  return wrong.length < learnConfig.choiceCount - 1 ? null : wrong;
+}
+
+/** Picture → word (0.6). */
+export function genImageChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise | null {
+  const rng = createRng(ctx.seed + 5);
+  const wrong = imageDistractors(ref, ctx, rng);
+  if (!wrong) return null;
+  const { options, correctIndex } = assemble(
+    { senseId: ref.sense.id, label: lemmaLabel(ref.entry), lang: 'sv' },
+    wrong.map((w) => ({ senseId: w.sense.id, label: lemmaLabel(w.entry), lang: 'sv' as const })),
+    rng,
+  );
+  return {
+    type: 'image_choice', senseId: ref.sense.id, dimension: 'meaning', image: ref.sense.id,
+    prompt: '', promptLang: 'sv',
+    instructionSv: 'Vilket ord passar till bilden?', instructionJa: '{絵|え}に{合|あ}う{言葉|ことば}はどれですか。',
+    options, correctIndex,
+    explanation: { text: ref.sense.ja, lang: 'ja' },
+    note: { text: ref.sense.examples[0]!.sv, lang: 'sv' },
+  };
+}
+
+/** Word → picture (0.6). */
+export function genImagePick(ref: SenseRef, ctx: GenContext): ChoiceExercise | null {
+  const rng = createRng(ctx.seed + 6);
+  const wrong = imageDistractors(ref, ctx, rng);
+  if (!wrong) return null;
+  const opt = (r: SenseRef): ChoiceOption => ({ senseId: r.sense.id, label: lemmaLabel(r.entry), lang: 'sv', image: r.sense.id });
+  const { options, correctIndex } = assemble(opt(ref), wrong.map(opt), rng);
+  return {
+    type: 'image_pick', senseId: ref.sense.id, dimension: 'meaning',
+    prompt: lemmaLabel(ref.entry), promptLang: 'sv',
+    instructionSv: 'Vilken bild passar till ordet?', instructionJa: '{言葉|ことば}に{合|あ}う{絵|え}はどれですか。',
+    options, correctIndex,
+    explanation: { text: ref.sense.ja, lang: 'ja' },
+    note: { text: ref.sense.examples[0]!.sv, lang: 'sv' },
+  };
+}
+
 const GENERATORS: Record<ExerciseType, (ref: SenseRef, ctx: GenContext) => ExerciseInstance | null> = {
   meaning_choice: genMeaningChoice,
   reverse_choice: genReverseChoice,
   context_choice: genContextChoice,
   synonym_choice: genSynonymChoice,
+  image_choice: genImageChoice,
+  image_pick: genImagePick,
   spelling: genSpelling,
   inflection: genInflection,
 };

@@ -1,8 +1,16 @@
 # Projektstatus – överlämning
 
-**Version:** 0.5.0 · **Senast uppdaterad:** 2026-11-05 · **Gren:** `main` (publiceras via GitHub Pages; 0.5 utvecklades i grenen `claude/swechan-0.5-art-styles`)
+**Version:** 0.6.0 · **Senast uppdaterad:** 2026-11-05 · **Gren:** `main` (publiceras via GitHub Pages; 0.6 utvecklades i grenen `claude/swechan-0.6-word-images`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.6 – släppt 2026-11-05 (pilot: bilder på orden)
+
+- **Pilot:** alla ord i *Vardagskläder* har bild, plus fotona *bryna*, *mocka*, *manchester*. Produktägaren utvärderar piloten innan resten görs.
+- **Beslut (produktägaren):** en bild per ord; bilden i introduktionen och i vissa övningar; bildfrågor där alternativen inte går att blanda ihop. Abstrakta ord får symbol om en lämplig, kulturellt överförbar scen finns, annars ingen bild. **Claude ansvarar för hela bildflödet** – produktägaren ska inte generera bilder.
+- **Stilval:** illustrationer som kod (bilderbok, `src/ui/wordArt/`) för form; fritt licensierade foton för yta/tillstånd. Foton hämtas via Openverse (`api.openverse.org`, tillåten i miljön); Wikimedias API ger ofta 429 från molnmiljön och Flickrs bildserver är inte tillåten, så Openverse-förhandsbilder (≤ 600 px) används. Licens CC0/PDM/CC BY, aldrig BY-SA/NC.
+- **Ny bild för ett ord:** motiv i `src/ui/wordArt/motifs.ts` + rad i `src/content/data/images/wordImages.json` med `group`, `quiz` och `confusableWith`. Granska med `npm run art:words`. `images.test.ts` kontrollerar distraktorreglerna.
+- **Nästa steg efter godkänd pilot:** övriga klädmoduler, sedan Hem & boende och Mat & måltider (där behövs fler foton: tillagning, råvaror, konsistenser).
 
 ## 0.5 – släppt 2026-11-05
 
@@ -26,7 +34,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas G klar**: version 0.4.0, migreringstest 0.3.1→0.4 med nollställningen på och av, e2e-jobb i CI, dokumentation. WebKit/fysisk iPhone: EJ TESTAT.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
-## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.5.0)
+## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.6.0)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
 

@@ -3,13 +3,14 @@
  *
  * Words are introduced in small batches (default 5). Each batch:
  *   1. short introduction card per word (longer for concept words),
- *   2. recognition round (meaning or reverse choice),
+ *   2. recognition round (meaning or reverse choice; picture → word / word → picture when the word has an unambiguous picture),
  *   3. context/production round (context choice; spelling for active words),
  *   4. form/nuance round (inflection for active words; synonym nuance where a comparison exists).
  * Exercise types vary between words; items are interleaved so the same word
  * is not practised twice in a row. Failed items are re-queued a few steps later.
  */
 import { learnConfig } from '../config/appConfig';
+import { quizImageFor } from '../content/images';
 import type { ContentRepository } from '../content/repository';
 import type { ModuleWord } from '../content/schema';
 import { createRng, shuffle } from '../lib/random';
@@ -33,7 +34,8 @@ export function buildLearnPlan(words: ModuleWord[], repo: ContentRepository, see
     batch.forEach((w, i) => {
       const ref = repo.getSense(w.senseId);
       if (!ref) return;
-      r1.push(ex(w.senseId, i % 2 === 0 ? 'meaning_choice' : 'reverse_choice'));
+      const picture = !!quizImageFor(w.senseId);
+      r1.push(ex(w.senseId, picture ? (i % 2 === 0 ? 'image_choice' : 'image_pick') : i % 2 === 0 ? 'meaning_choice' : 'reverse_choice'));
       r2.push(ex(w.senseId, i % 2 === 0 ? 'context_choice' : 'reverse_choice'));
       if (w.active) r2.push(ex(w.senseId, 'spelling'));
       if (w.active && hasInflectionExercise(ref.entry)) r3.push(ex(w.senseId, 'inflection'));

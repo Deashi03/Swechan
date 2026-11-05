@@ -13,6 +13,8 @@ import { SpeakButton } from '../components/SpeakButton';
 import { ComparisonView } from '../dictionary/ComparisonView';
 import { SvText } from '../components/SvText';
 import { OtherSenses } from './OtherSenses';
+import { PhotoCredit, WordImage } from '../components/WordImage';
+import { imageFor } from '../../content/images';
 
 export function WordIntro({ senseId, compact, onNext }: { senseId: string; compact: boolean; onNext: () => void }) {
   const repo = getContent();
@@ -30,6 +32,7 @@ export function WordIntro({ senseId, compact, onNext }: { senseId: string; compa
       <div className="small muted">Nytt ord · <Ja text="{新|あたら}しい{言葉|ことば}" className="xsmall" /></div>
       <p className="xsmall faint" style={{ margin: 0 }}>Tips: tryck på ett understruket ord för att slå upp det.</p>
       <div className="card stack-sm">
+        {imageFor(senseId) && <div className="intro-picture"><WordImage senseId={senseId} size={180} label={entry.lemma} /><PhotoCredit senseId={senseId} /></div>}
         <div className="row">
           <div className="grow">
             <div className="prompt-word" lang="sv">{infl.kind === 'noun' && <span className="muted" style={{ fontWeight: 400 }}>{infl.gender} </span>}{entry.lemma}</div>

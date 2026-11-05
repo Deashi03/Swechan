@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { getContent } from '../../content/repository';
-import { genSpelling, genReverseChoice } from '../../learning/exercises/generate';
+import { genSpelling, genReverseChoice, genImageChoice, genImagePick } from '../../learning/exercises/generate';
 import type { ExerciseResult } from '../../learning/exercises/types';
 import { DictionarySheetProvider, useDictionarySheet } from '../dictionary/DictionarySheet';
 import { ExerciseView } from './ExerciseView';
@@ -12,6 +12,28 @@ function OpenDict() {
   const d = useDictionarySheet();
   return <button onClick={() => d.open()}>open-dict</button>;
 }
+
+describe('ExerciseView – pictures (0.6)', () => {
+  const pool = repo.getModule('m.trojor-och-skjortor')!.words.map((w) => w.senseId);
+  it('picture → word: shows the picture and four words', () => {
+    const ex = genImageChoice(repo.getSense('s.kofta.1')!, { repo, poolSenseIds: pool, seed: 2 })!;
+    render(<DictionarySheetProvider><ExerciseView exercise={ex} onDone={() => undefined} /></DictionarySheetProvider>);
+    expect(screen.getByText('Vilket ord passar till bilden?')).toBeInTheDocument();
+    expect(screen.getAllByRole('img').length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByRole('button').filter((b) => b.classList.contains('option'))).toHaveLength(4);
+  });
+  it('word → picture: four picture options, names hidden until answered', () => {
+    const results: ExerciseResult[] = [];
+    const ex = genImagePick(repo.getSense('s.kofta.1')!, { repo, poolSenseIds: pool, seed: 2 })!;
+    render(<DictionarySheetProvider><ExerciseView exercise={ex} onDone={(r) => results.push(r)} /></DictionarySheetProvider>);
+    const opts = screen.getAllByRole('button').filter((b) => b.classList.contains('image-option'));
+    expect(opts).toHaveLength(4);
+    for (const o of ex.options) if (o.senseId !== 's.kofta.1') expect(screen.queryByText(o.label)).toBeNull();
+    fireEvent.click(opts[ex.correctIndex]!);
+    fireEvent.click(screen.getByRole('button', { name: 'Fortsätt' }));
+    expect(results).toEqual([expect.objectContaining({ outcome: 'first', exerciseType: 'image_pick', dimension: 'meaning' })]);
+  });
+});
 
 describe('ExerciseView', () => {
   it('typed: å/ä/ö near miss gives a hint (answer hidden), second miss reveals the answer', () => {
