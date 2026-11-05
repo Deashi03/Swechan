@@ -1,0 +1,171 @@
+{
+ "id": "m.missforstand-i-hemmet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Missförstånd i hemmet",
+ "titleJa": "{家|いえ}での{誤解|ごかい}",
+ "descriptionSv": "Missförstånd i hemmet: missförstå, ta fel, förväxla, blanda ihop, höra fel, prata förbi varandra, oklar, reda ut, upprepa, förtydliga, uppfatta, syfta på, på skämt och på allvar.",
+ "descriptionJa": "{家|いえ}での{誤解|ごかい}：{誤解|ごかい}する、{間違|まちが}える、{取|と}り{違|ちが}える、{混同|こんどう}する、{聞|き}き{間違|まちが}える、{話|はなし}がかみ{合|あ}わない、はっきりしない、{誤解|ごかい}を{解|と}く、くり{返|かえ}す、はっきりさせる、{聞|き}き{取|と}る、〜のことを{言|い}う、{冗談|じょうだん}で、{本気|ほんき}で。",
+ "categoryId": "R01-A04-T06",
+ "tags": [
+  "vardag",
+  "problem",
+  "kommunikation"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.nagot-gar-sonder"
+ ],
+ "related": [],
+ "recommendedOrder": 438,
+ "words": [
+  {
+   "senseId": "s.missförstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.missförstå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förväxla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blanda-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höra-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prata-förbi-varandra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oklar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reda-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förtydliga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppfatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.syfta-på.1",
+   "active": false
+  },
+  {
+   "senseId": "s.på-skämt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-allvar.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mjölk eller mjöl?",
+  "paragraphs": [
+   "Aiko ringer Erik från jobbet. ”Kan du köpa mjöl?” Erik uppfattar inte riktigt vad hon säger. Han hör fel och köper mjölk.",
+   "När Aiko kommer hem blir det ett missförstånd. ”Varför köpte du mjölk?” – ”Du sa ju mjölk!” – ”Nej, du missförstod mig.”",
+   "De pratar förbi varandra en stund. Erik tror att Aiko syftar på mjölken i kylen, men hon menar kakan som hon ska baka.",
+   "”Kan du upprepa vad du sa i telefon?” frågar Erik. ”Får jag förtydliga? Mjöl, inte mjölk”, säger Aiko. Nu kan de reda ut saken.",
+   "Samma kväll är det Leo som tar fel på väskorna. Han förväxlar sin väska med Mias. Han blandar ihop allt i den. Vems böcker är vems? Det är oklart.",
+   "”Du lyssnar aldrig”, säger Aiko till Erik – men bara på skämt. ”Menar du det på allvar?” – ”Nej då!” Och de skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ville Aiko att Erik skulle köpa?",
+    "options": [
+     "Mjölk",
+     "Bröd",
+     "Ägg",
+     "Mjöl"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Kan du köpa mjöl?”",
+    "explanationJa": "{小麦粉|こむぎこ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad köpte Erik?",
+    "options": [
+     "Mjöl",
+     "Mjölk",
+     "En kaka",
+     "Socker"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han hör fel och köper mjölk.",
+    "explanationJa": "{牛乳|ぎゅうにゅう}を{買|か}いました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik och Aiko reder ut saken.",
+    "correct": true,
+    "explanationSv": "Nu kan de reda ut saken.",
+    "explanationJa": "{誤解|ごかい}は{解|と}けました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Leo?",
+    "options": [
+     "Förväxlar väskorna",
+     "Köper mjöl",
+     "Bakar en kaka",
+     "Ringer Aiko"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han förväxlar sin väska med Mias.",
+    "explanationJa": "かばんを{取|と}り{違|ちが}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko är riktigt arg på Erik i slutet.",
+    "correct": false,
+    "explanationSv": "Hon säger det bara på skämt, och de skrattar.",
+    "explanationJa": "{冗談|じょうだん}で{言|い}っただけで、{二人|ふたり}は{笑|わら}います。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om missförstånd: när ni har hört fel, missförstått någon eller pratat förbi varandra, och hur ni redde ut det.",
+  "discussionPoints": [
+   "Har du hört fel på ett svenskt ord någon gång?",
+   "Vilka svenska ord blandar du ihop?",
+   "Vad säger du när du inte uppfattar vad någon säger?",
+   "Är det lätt att se om någon menar något på skämt eller på allvar?"
+  ]
+ }
+}

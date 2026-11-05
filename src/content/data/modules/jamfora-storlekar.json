@@ -1,0 +1,169 @@
+{
+ "id": "m.jamfora-storlekar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Jämföra storlekar",
+ "titleJa": "{大|おお}きさの{比較|ひかく}",
+ "descriptionSv": "Att jämföra storlekar: jämförelse, lika stor, dubbelt så, hälften så, betydligt, motsvara, mellanstor, jättestor, pytteliten, enorm, gigantisk och miniatyr.",
+ "descriptionJa": "{大|おお}きさの{比較|ひかく}：{比較|ひかく}、{同|おな}じ{大|おお}きさ、2{倍|ばい}、{半分|はんぶん}、ずっと、{相当|そうとう}する、{中|ちゅう}ぐらい、ものすごく{大|おお}きい、ちっちゃな、{巨大|きょだい}、ミニチュア。",
+ "categoryId": "R01-A04-T05",
+ "tags": [
+  "mått"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.delar-och-andelar"
+ ],
+ "related": [],
+ "recommendedOrder": 435,
+ "words": [
+  {
+   "senseId": "s.jämförelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-jämförelse-med.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lika-stor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbelt-så.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälften-så.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betydligt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motsvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-storlek-med.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mellanstor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jättestor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pytteliten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enorm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gigantisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.miniatyr.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ungefär-lika.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Stort och litet",
+  "paragraphs": [
+   "Aiko visar bilder från Tokyo. ”I jämförelse med Tokyo är Stockholm pytteliten”, säger hon. ”Tokyo har tre gånger fler människor än hela Sverige.”",
+   "Mia är nästan lika stor som Aiko nu. ”Snart är du dubbelt så stor som Leo”, skrattar Erik.",
+   "Mormor har en jättestor trädgård med gigantiska träd. Hennes hund är mellanstor, och katten är ungefär lika stor som hunden.",
+   "Leo bygger ett hus i miniatyr. Fönstren är i storlek med ett riskorn.",
+   "I affären jämför Aiko två mobiler. Den nya är hälften så tung, men betydligt dyrare. ”Det är en enorm skillnad i pris”, säger hon.",
+   "”En japansk tatami motsvarar ungefär en och en halv kvadratmeter”, förklarar Aiko. ”Det är en bra jämförelse när man pratar om rum.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tycker Aiko om Stockholm i jämförelse med Tokyo?",
+    "options": [
+     "Att Stockholm är enorm",
+     "Att de är lika stora",
+     "Att Stockholm är större",
+     "Att Stockholm är pytteliten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”I jämförelse med Tokyo är Stockholm pytteliten.”",
+    "explanationJa": "ちっちゃいと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur stor är mormors hund?",
+    "options": [
+     "Jättestor",
+     "Pytteliten",
+     "Gigantisk",
+     "Mellanstor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hennes hund är mellanstor.",
+    "explanationJa": "{中型|ちゅうがた}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Den nya mobilen är billigare.",
+    "correct": false,
+    "explanationSv": "Den nya är hälften så tung, men betydligt dyrare.",
+    "explanationJa": "ずっと{高|たか}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur stora är fönstren i Leos hus?",
+    "options": [
+     "I storlek med en katt",
+     "I storlek med ett riskorn",
+     "Lika stora som riktiga fönster",
+     "Dubbelt så stora"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Fönstren är i storlek med ett riskorn.",
+    "explanationJa": "{米粒|こめつぶ}ぐらいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko använder japanska mått för att förklara rum.",
+    "correct": true,
+    "explanationSv": "”En japansk tatami motsvarar ungefär en och en halv kvadratmeter.”",
+    "explanationJa": "{畳|たたみ}で{説明|せつめい}しています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni jämför storlekar: städer, länder, rum och saker i Sverige och Japan.",
+  "discussionPoints": [
+   "Hur stor är din stad i jämförelse med Stockholm?",
+   "Vad är det största du har sett?",
+   "Hur mäter man rum i Japan?",
+   "Har du något i miniatyr hemma?"
+  ]
+ }
+}

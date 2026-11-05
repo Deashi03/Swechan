@@ -1,0 +1,169 @@
+{
+ "id": "m.parfym-och-doft",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Parfym och doft",
+ "titleJa": "{香水|こうすい}と{香|かお}り",
+ "descriptionSv": "Parfym och doft: parfymflaska, eau de toilette, doftnot, citrus, mysk, intensiv, hålla i sig, doftfri och doftljus.",
+ "descriptionJa": "{香水|こうすい}と{香|かお}り：{香水瓶|こうすいびん}、オードトワレ、{香調|こうちょう}、シトラス、ムスク、{強烈|きょうれつ}、{持続|じぞく}する、{無香|むこう}、アロマキャンドル。",
+ "categoryId": "R01-A03-T06",
+ "tags": [
+  "skönhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.smink-och-kosmetika"
+ ],
+ "related": [],
+ "recommendedOrder": 340,
+ "words": [
+  {
+   "senseId": "s.parfymeri.1",
+   "active": false
+  },
+  {
+   "senseId": "s.parfymflaska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eau-de-toilette.1",
+   "active": false
+  },
+  {
+   "senseId": "s.doftprov.1",
+   "active": false
+  },
+  {
+   "senseId": "s.citrus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.doftnot.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mysk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.träig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.intensiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-i-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överdriva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parfymerad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.doftfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.doftljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rumsdoft.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En present till mormor",
+  "paragraphs": [
+   "Mormor fyller år, och Mia och Aiko går till ett parfymeri för att köpa en present.",
+   "Det finns hundratals vackra parfymflaskor. Försäljaren förklarar att varje parfym har olika doftnoter, till exempel citrus, blommor, vanilj eller mysk.",
+   "Mia testar en träig doft. ”Den är för intensiv”, säger hon. Aiko gillar en lätt eau de toilette med citrus. ”Kommer doften att hålla i sig hela dagen?” frågar hon.",
+   "De får några doftprov med sig hem. ”Överdriv inte när du testar”, säger Aiko, ”annars känner du inte skillnad på dofterna.”",
+   "Mormor tycker inte om parfymerade saker, och Leo är allergisk. Därför köper de en doftfri handkräm i stället.",
+   "Till sig själv köper Aiko ett doftljus och en rumsdoft med lavendel."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går Mia och Aiko till parfymeriet?",
+    "options": [
+     "För att köpa en present till mormor",
+     "För att köpa smink",
+     "För att jobba",
+     "För att köpa ett doftljus till Leo"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mormor fyller år, och de går för att köpa en present.",
+    "explanationJa": "おばあちゃんへのプレゼントを{買|か}うためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tycker Mia om den träiga doften?",
+    "options": [
+     "Den är för svag.",
+     "Den är perfekt.",
+     "Den är för intensiv.",
+     "Den luktar citrus."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Den är för intensiv”, säger hon.",
+    "explanationJa": "{強|つよ}すぎると{思|おも}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko gillar en eau de toilette med citrus.",
+    "correct": true,
+    "explanationSv": "Aiko gillar en lätt eau de toilette med citrus.",
+    "explanationJa": "シトラスのオードトワレが{好|す}きです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad köper de till mormor till slut?",
+    "options": [
+     "En parfym",
+     "Ett doftljus",
+     "En rumsdoft",
+     "En doftfri handkräm"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Därför köper de en doftfri handkräm i stället.",
+    "explanationJa": "{無香|むこう}のハンドクリームです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De tänker på mormor och Leo när de väljer present.",
+    "correct": true,
+    "explanationSv": "Mormor tycker inte om parfymerade saker, och Leo är allergisk.",
+    "explanationJa": "おばあちゃんとレオのことを{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om parfym och dofter: vilka dofter ni tycker om och när man använder parfym, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Använder du parfym? När?",
+   "Vilka dofter tycker du om?",
+   "Är det vanligt med parfym i Japan?",
+   "Finns det dofter som påminner dig om något särskilt?"
+  ]
+ }
+}

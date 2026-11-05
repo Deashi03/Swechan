@@ -1,0 +1,169 @@
+{
+ "id": "m.paketombud-och-utlamning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Paketombud och utlämning",
+ "titleJa": "{荷物|にもつ}の{受|う}け{取|と}り",
+ "descriptionSv": "Paketombud och utlämning: ombud, paketombud, kiosk, utlämningsställe, paketskåp, lucka, hämtningskod, hämta ut, utlämning, legitimation, id-kort, personligen, fullmakt, liggetid och kvittens.",
+ "descriptionJa": "{荷物|にもつ}の{受|う}け{取|と}り：{取次店|とりつぎてん}、{受|う}け{取|と}り{窓口|まどぐち}、キオスク、{受取場所|うけとりばしょ}、{宅配|たくはい}ロッカー、{扉|とびら}、{受取|うけとり}コード、{受|う}け{取|と}る、{引|ひ}き{渡|わた}し、{身分|みぶん}{証明書|しょうめいしょ}、IDカード、{本人|ほんにん}が、{委任状|いにんじょう}、{保管|ほかん}{期間|きかん}、{受領|じゅりょう}{証明|しょうめい}。",
+ "categoryId": "R01-A05-T05",
+ "tags": [
+  "post"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.paketstorlekar"
+ ],
+ "related": [],
+ "recommendedOrder": 532,
+ "words": [
+  {
+   "senseId": "s.ombud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.paketombud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kiosk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utlämningsställe.1",
+   "active": false
+  },
+  {
+   "senseId": "s.paketskåp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lucka-dörr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hämtningskod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hämta-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utlämning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.legitimation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.id-kort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personligen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fullmakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.liggetid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvittens.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Hämta ett paket",
+  "paragraphs": [
+   "Mamma har skickat ett paket från Japan. Aiko får en avisering: paketet finns på hennes paketombud. Ombudet är en kiosk nära skolan.",
+   "Man kan välja utlämningsställe. Ibland kommer paket till ett paketskåp i stället. Då får man en hämtningskod, och luckan öppnar sig när man skriver koden.",
+   "Aiko går för att hämta ut paketet. Utlämningen sker i kassan. ”Kan jag få se din legitimation?” frågar personalen. Aiko visar sitt id-kort.",
+   "Nästa vecka kommer ett paket till, men Aiko är bortrest. Paketet måste hämtas av henne personligen, eller av någon med fullmakt.",
+   "Erik får en fullmakt från Aiko och hämtar paketet åt henne. Han får en kvittens i mejlen.",
+   "Det var tur, för liggetiden är bara sju dagar. Sedan skickas paketet tillbaka till avsändaren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var är Aikos paketombud?",
+    "options": [
+     "På ett postkontor",
+     "I ett paketskåp",
+     "Hemma hos grannen",
+     "I en kiosk nära skolan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ombudet är en kiosk nära skolan.",
+    "explanationJa": "{学校|がっこう}の{近|ちか}くのキオスクです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad behöver man för att öppna ett paketskåp?",
+    "options": [
+     "En legitimation",
+     "En fullmakt",
+     "En hämtningskod",
+     "Ett kvitto"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Då får man en hämtningskod, och luckan öppnar sig när man skriver koden.",
+    "explanationJa": "{受取|うけとり}コードです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad visar Aiko i kassan?",
+    "options": [
+     "Sitt bankkort",
+     "Sitt id-kort",
+     "Ett kvitto",
+     "Sin mobil"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko visar sitt id-kort.",
+    "explanationJa": "IDカードです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Erik kan hämta paketet utan fullmakt.",
+    "correct": false,
+    "explanationSv": "Paketet måste hämtas av henne personligen, eller av någon med fullmakt.",
+    "explanationJa": "{委任状|いにんじょう}が{必要|ひつよう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Paketet hade skickats tillbaka om ingen hade hämtat det inom sju dagar.",
+    "correct": true,
+    "explanationSv": "Liggetiden är bara sju dagar. Sedan skickas paketet tillbaka.",
+    "explanationJa": "7{日|か}で{送|おく}り{返|かえ}されます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att hämta paket: paketombud, paketskåp, legitimation och vad man gör om man inte kan hämta själv.",
+  "discussionPoints": [
+   "Var ligger ditt närmaste paketombud?",
+   "Hämtar du hellre i ett paketskåp eller hos ett ombud?",
+   "Vilken legitimation har du med dig?",
+   "Hur hämtar man paket i Japan, till exempel på ett konbini?"
+  ]
+ }
+}

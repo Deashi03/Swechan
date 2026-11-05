@@ -1,0 +1,169 @@
+{
+ "id": "m.antal-och-ordningstal",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Antal och ordningstal",
+ "titleJa": "{数|かず}と{序数|じょすう}",
+ "descriptionSv": "Antal och ordningstal: tal, ordningstal, nolla, dussin, tiotal, tusentals, miljard, summa, totalt, sammanlagt, räkna ut och i nummerordning.",
+ "descriptionJa": "{数|かず}と{序数|じょすう}：{数|かず}、{序数|じょすう}、ゼロ、ダース、10ぐらい、{何千|なんぜん}もの、10{億|おく}、{合計|ごうけい}、{全部|ぜんぶ}で、{計算|けいさん}する、{番号順|ばんごうじゅん}。",
+ "categoryId": "R01-A04-T05",
+ "tags": [
+  "mått"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.behova-och-vilja"
+ ],
+ "related": [],
+ "recommendedOrder": 429,
+ "words": [
+  {
+   "senseId": "s.tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordningstal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dussin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tiotal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tusentals.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljard.1",
+   "active": true
+  },
+  {
+   "senseId": "s.summa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.totalt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanlagt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flertal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tvåsiffrig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-nummerordning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kalaset i siffror",
+  "paragraphs": [
+   "Leo fyller nio. Han vill räkna ut hur många som kommer på kalaset. Ett tiotal kompisar har sagt ja, och dessutom kommer mormor, morfar och kusinerna. Totalt blir det femton.",
+   "Aiko köper ett dussin ägg och två paket saft. Sammanlagt kostar maten tre hundra kronor. ”Kassören räknade fel”, säger Erik. ”Summan ska vara två hundra.”",
+   "Leo har lärt sig ordningstal i skolan. ”Jag är den första som fyller år i klassen i år, och Mia är den tredje i sin klass.”",
+   "Han kan också räkna med tvåsiffriga tal. ”En miljon har sex nollor, och en miljard har nio!”",
+   "Till lekarna lägger Leo korten i nummerordning. Ett flertal gäster vill spela.",
+   "”I världen finns tusentals olika lekar”, säger morfar. ”Men det här är den bästa.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många kommer på kalaset totalt?",
+    "options": [
+     "Tio",
+     "Nio",
+     "Femton",
+     "Tjugo"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Totalt blir det femton.",
+    "explanationJa": "15{人|にん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad köper Aiko?",
+    "options": [
+     "En tårta",
+     "Ett dussin ägg och två paket saft",
+     "Tio ägg",
+     "Glass"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko köper ett dussin ägg och två paket saft.",
+    "explanationJa": "{卵|たまご}1ダースとジュース2パックです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Kassören räknade rätt.",
+    "correct": false,
+    "explanationSv": "”Kassören räknade fel”, säger Erik.",
+    "explanationJa": "{計算|けいさん}を{間違|まちが}えました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur många nollor har en miljard?",
+    "options": [
+     "Nio",
+     "Sex",
+     "Tre",
+     "Tolv"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”En miljard har nio!”",
+    "explanationJa": "9つです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo är bra på siffror.",
+    "correct": true,
+    "explanationSv": "Han kan räkna med tvåsiffriga tal och vet hur många nollor en miljard har.",
+    "explanationJa": "{数字|すうじ}が{得意|とくい}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tal och siffror i vardagen: att räkna, ordningstal och stora tal.",
+  "discussionPoints": [
+   "Är du bra på att räkna i huvudet?",
+   "Vilka tal har tur eller otur i Japan?",
+   "Hur säger man stora tal på japanska?",
+   "Har du någon gång märkt att någon räknat fel i kassan?"
+  ]
+ }
+}

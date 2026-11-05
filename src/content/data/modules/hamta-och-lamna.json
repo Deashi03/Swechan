@@ -1,0 +1,170 @@
+{
+ "id": "m.hamta-och-lamna",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hämta och lämna",
+ "titleJa": "{迎|むか}えと{送|おく}り",
+ "descriptionSv": "Att hämta och lämna: hämta upp, lämna av, släppa av, skjutsa, skjuts, fritids, bära in, bära ut, ta hem, lämna kvar och säga till.",
+ "descriptionJa": "{迎|むか}えと{送|おく}り：{迎|むか}えに{行|い}く、{送|おく}り{届|とど}ける、{降|お}ろす、{車|くるま}で{送|おく}る、{学童|がくどう}、{運|はこ}び{入|い}れる・{出|だ}す、{持|も}ち{帰|かえ}る、{置|お}いていく、{知|し}らせる。",
+ "categoryId": "R01-A04-T04",
+ "tags": [
+  "vardag",
+  "verb"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.planera-en-ledig-dag"
+ ],
+ "related": [],
+ "recommendedOrder": 422,
+ "words": [
+  {
+   "senseId": "s.hämta-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släppa-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjutsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjuts.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hämtning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fritids.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bära-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bära-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-hem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-kvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överenskommelse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-tur-och-ordning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.köra-hem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säga-till.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem hämtar?",
+  "paragraphs": [
+   "Erik och Aiko har en överenskommelse: Erik lämnar av barnen på morgonen, och Aiko har hämtningen på eftermiddagen.",
+   "Erik skjutsar Mia till skolan och släpper av henne vid hörnet, för hon vill inte att kompisarna ska se pappa. Leo lämnar han av vid skolans dörr.",
+   "Klockan fem åker Aiko för att hämta upp Leo på fritids. Barnen går hem i tur och ordning. ”Ta hem din gympapåse”, säger läraren. ”Du har lämnat kvar den i en vecka!”",
+   "Mia ska till fotbollen. ”Kan jag få skjuts?” frågar hon. ”Säg till i god tid nästa gång”, säger Aiko.",
+   "Hemma hjälper Leo till att bära in kassarna från bilen, och Mia bär ut soporna.",
+   "På kvällen ska Mia på kalas. ”Ring när det är slut, så ska jag köra hem dig”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem har hämtningen på eftermiddagen?",
+    "options": [
+     "Erik",
+     "Mormor",
+     "Mia",
+     "Aiko"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko har hämtningen på eftermiddagen.",
+    "explanationJa": "アイコです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var släpper Erik av Mia?",
+    "options": [
+     "Vid skolans dörr",
+     "På fritids",
+     "Vid hörnet",
+     "Hemma"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han släpper av henne vid hörnet.",
+    "explanationJa": "{角|かど}で{降|お}ろします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo har lämnat kvar gympapåsen i en vecka.",
+    "correct": true,
+    "explanationSv": "”Du har lämnat kvar den i en vecka!”",
+    "explanationJa": "1{週間置|しゅうかんお}きっぱなしです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Mia hemma?",
+    "options": [
+     "Hon hjälper till att bära in kassarna.",
+     "Hon lagar mat.",
+     "Hon bär ut soporna.",
+     "Hon städar."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mia bär ut soporna.",
+    "explanationJa": "ごみを{外|そと}に{出|だ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia vill att kompisarna ser hennes pappa.",
+    "correct": false,
+    "explanationSv": "Hon vill inte att kompisarna ska se pappa.",
+    "explanationJa": "{見|み}られたくありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att hämta och lämna: vem som skjutsar vem, och överenskommelser i familjen.",
+  "discussionPoints": [
+   "Vem skjutsade dig när du var liten?",
+   "Har ni överenskommelser hemma om vem som gör vad?",
+   "Går barn själva till skolan i Japan?",
+   "Har du lämnat kvar något viktigt någonstans?"
+  ]
+ }
+}

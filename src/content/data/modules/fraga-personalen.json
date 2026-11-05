@@ -1,0 +1,171 @@
+{
+ "id": "m.fraga-personalen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Fråga personalen",
+ "titleJa": "{店員|てんいん}に{聞|き}く",
+ "descriptionSv": "Att fråga personalen: butiksbiträde, expedit, kan jag hjälpa dig, jag tittar bara, titta runt, ingen fara, lager, i lager, kolla upp, kolla med, beställa hem, hålla undan, fråga om råd, rekommendera och visa vägen.",
+ "descriptionJa": "{店員|てんいん}に{聞|き}く：{店員|てんいん}、{販売員|はんばいいん}、{何|なに}かお{探|さが}しですか、{見|み}ているだけです、{見|み}て{回|まわ}る、{大丈夫|だいじょうぶ}です、{倉庫|そうこ}、{在庫|ざいこ}あり、{調|しら}べる、{確認|かくにん}する、{取|と}り{寄|よ}せる、{取|と}り{置|お}き、アドバイスを{求|もと}める、すすめる、{道|みち}を{案内|あんない}する。",
+ "categoryId": "R01-A05-T03",
+ "tags": [
+  "handel",
+  "butik",
+  "artighet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.provrum-och-koer"
+ ],
+ "related": [],
+ "recommendedOrder": 521,
+ "words": [
+  {
+   "senseId": "s.butiksbiträde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.expedit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kan-jag-hjälpa-dig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jag-tittar-bara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.titta-runt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingen-fara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lager-förråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-lager.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolla-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolla-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beställa-hem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-undan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fråga-om-råd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rekommendera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visa-vägen.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Har ni den i lager?",
+  "paragraphs": [
+   "Aiko går in i en skobutik. Ett butiksbiträde kommer fram. ”Hej! Kan jag hjälpa dig med något?” – ”Nej tack, jag tittar bara.”",
+   "Hon vill titta runt lite först. Sedan ser hon ett par fina kängor. Hon vill fråga om råd och går till en expedit.",
+   "”Vilka skor kan du rekommendera för vintern?” frågar hon. ”De här är bra”, säger expediten. ”Finns de i storlek 37?” – ”Jag ska kolla upp det.”",
+   "Expediten går ut på lagret. ”Tyvärr har vi inte storlek 37 i lager. Jag ska kolla med min kollega.” Kollegan säger att de kan beställa hem skorna till fredag.",
+   "”Vi kan också hålla undan ett par i en annan butik”, säger expediten. ”Förlåt att det tar tid.” – ”Ingen fara”, säger Aiko.",
+   "Aiko frågar efter toaletten, och expediten visar vägen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad svarar Aiko först?",
+    "options": [
+     "Ja, tack",
+     "Jag tittar bara",
+     "Var är kassan?",
+     "Har ni kängor?"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Nej tack, jag tittar bara.”",
+    "explanationJa": "{見|み}ているだけだと{答|こた}えます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken storlek vill Aiko ha?",
+    "options": [
+     "38",
+     "36",
+     "37",
+     "39"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Finns de i storlek 37?”",
+    "explanationJa": "37です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Butiken har storlek 37 i lager.",
+    "correct": false,
+    "explanationSv": "”Tyvärr har vi inte storlek 37 i lager.”",
+    "explanationJa": "{在庫|ざいこ}がありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "När kan skorna komma?",
+    "options": [
+     "I morgon",
+     "På fredag",
+     "Nästa månad",
+     "I dag"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De kan beställa hem skorna till fredag.",
+    "explanationJa": "{金曜日|きんようび}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko är arg på expediten.",
+    "correct": false,
+    "explanationSv": "”Ingen fara”, säger Aiko.",
+    "explanationJa": "{怒|おこ}っていません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att fråga personalen: vad man säger när man behöver hjälp, när man bara tittar och om man kan beställa hem varor.",
+  "discussionPoints": [
+   "Vad säger du när du bara vill titta runt?",
+   "Frågar du gärna personalen om råd?",
+   "Har en butik någon gång beställt hem något åt dig?",
+   "Hur hälsar personalen på kunderna i japanska butiker?"
+  ]
+ }
+}

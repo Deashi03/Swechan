@@ -1,0 +1,170 @@
+{
+ "id": "m.ta-fram-och-lagga-undan",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ta fram och lägga undan",
+ "titleJa": "{取|と}り{出|だ}すこととしまうこと",
+ "descriptionSv": "Att ta fram och lägga undan: plocka fram, leta fram, lägga undan, ställa undan, gömma undan, lägga tillbaka, ta bort, på sin plats, få plats och rörig.",
+ "descriptionJa": "{取|と}り{出|だ}す・しまう：{出|だ}す、{探|さが}し{出|だ}す、{片付|かたづ}ける、{隠|かく}す、{元|もと}に{戻|もど}す、どける、{決|き}まった{場所|ばしょ}、{入|はい}る、{散|ち}らかった。",
+ "categoryId": "R01-A04-T04",
+ "tags": [
+  "vardag",
+  "verb"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hamta-och-lamna"
+ ],
+ "related": [],
+ "recommendedOrder": 423,
+ "words": [
+  {
+   "senseId": "s.leksak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plocka-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leta-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-undan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ställa-undan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gömma-undan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röja-undan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lägga-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ställa-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-sin-plats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.få-plats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordningsam.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är saxen?",
+  "paragraphs": [
+   "Aiko är ordningsam. Hos henne ligger allt på sin plats. Resten av familjen är inte lika noga.",
+   "”Var är saxen?” frågar Erik. ”Den ska ligga i lådan”, säger Aiko. ”Kom ihåg att lägga tillbaka den!” Men ingen hittar den. Leo får leta fram den under soffan.",
+   "Leos leksaker ligger överallt. ”Nu måste du lägga undan dem”, säger Aiko. ”Allt kan inte få plats i lådan”, säger Leo.",
+   "Mias rum är rörigt. Hon har plockat fram alla kläder för att välja en tröja till festen.",
+   "Före middagen måste de röja undan på bordet och ta bort Eriks papper. ”Ta fram tallrikarna”, säger Aiko. Erik ska ställa undan cykeln i förrådet och ställa tillbaka mjölken i kylskåpet.",
+   "Aiko har gömt undan godiset högst upp i skåpet. Det är bara hon som vet var."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var ska saxen ligga?",
+    "options": [
+     "Under soffan",
+     "I förrådet",
+     "I kylskåpet",
+     "I lådan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Den ska ligga i lådan.”",
+    "explanationJa": "{引|ひ}き{出|だ}しです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var hittar Leo saxen?",
+    "options": [
+     "I lådan",
+     "I Mias rum",
+     "På bordet",
+     "Under soffan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leo får leta fram den under soffan.",
+    "explanationJa": "ソファの{下|した}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mias rum är i ordning.",
+    "correct": false,
+    "explanationSv": "Mias rum är rörigt.",
+    "explanationJa": "{散|ち}らかっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför har Mia plockat fram alla kläder?",
+    "options": [
+     "För att välja en tröja till festen",
+     "För att tvätta dem",
+     "För att sälja dem",
+     "För att städa"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon har plockat fram alla kläder för att välja en tröja till festen.",
+    "explanationJa": "パーティー{用|よう}のセーターを{選|えら}ぶためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Barnen vet var godiset finns.",
+    "correct": false,
+    "explanationSv": "Det är bara hon som vet var.",
+    "explanationJa": "アイコしか{知|し}りません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ordning hemma: att ta fram, lägga undan och hitta saker.",
+  "discussionPoints": [
+   "Är du ordningsam eller rörig?",
+   "Vad har du svårast att hitta hemma?",
+   "Har du något gömt undan?",
+   "Lägger du alltid tillbaka saker på sin plats?"
+  ]
+ }
+}

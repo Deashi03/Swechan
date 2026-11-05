@@ -1,0 +1,169 @@
+{
+ "id": "m.smink-och-kosmetika",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Smink och kosmetika",
+ "titleJa": "メイクと{化粧品|けしょうひん}",
+ "descriptionSv": "Smink och kosmetika: sminka sig, foundation, concealer, puder, rouge, ögonskugga, kajal, mascara, läppstift och sminkborttagning.",
+ "descriptionJa": "メイクと{化粧品|けしょうひん}：{化粧|けしょう}する、ファンデーション、コンシーラー、パウダー、チーク、アイシャドウ、アイライナー、マスカラ、{口紅|くちべに}、メイク{落|お}とし。",
+ "categoryId": "R01-A03-T06",
+ "tags": [
+  "skönhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hudvardsrutiner"
+ ],
+ "related": [],
+ "recommendedOrder": 339,
+ "words": [
+  {
+   "senseId": "s.smink.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sminka-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.osminkad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kosmetika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.foundation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.concealer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.puder.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rouge.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ögonskugga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kajal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mascara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läppstift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läppglans.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sminkborste.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sminkborttagning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Första gången",
+  "paragraphs": [
+   "Mia ska på skolans fest och vill sminka sig för första gången. Aiko tar fram sin låda med kosmetika.",
+   "”Börja med lite foundation, i samma färg som din hud. Och lite concealer på finnen”, säger Aiko. ”Sedan puder på näsan, så att den inte blir blank.”",
+   "Mia vill ha mycket smink: svart kajal, blå ögonskugga och mycket mascara. ”Mindre är ofta mer”, säger Aiko. Hon tar lite rouge med en sminkborste.",
+   "Till sist får Mia välja mellan läppstift och läppglans. Hon tar läppglans. Leo vill också ha.",
+   "”Kom ihåg sminkborttagning innan du lägger dig”, säger Aiko. ”Annars mår huden inte bra.”",
+   "Erik tittar på Mia. ”Du är fin, men du är lika fin osminkad”, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Mia sminka sig?",
+    "options": [
+     "Hon ska på jobbet.",
+     "Hon ska på bröllop.",
+     "Hon ska på skolans fest.",
+     "Hon ska träna."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mia ska på skolans fest och vill sminka sig för första gången.",
+    "explanationJa": "{学校|がっこう}のパーティーに{行|い}くからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför ska Mia ha puder på näsan?",
+    "options": [
+     "Så att den blir röd",
+     "Så att finnen syns",
+     "Så att den blir mörk",
+     "Så att den inte blir blank"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Sedan puder på näsan, så att den inte blir blank.”",
+    "explanationJa": "てからないようにです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko tycker att Mia ska ha mycket smink.",
+    "correct": false,
+    "explanationSv": "”Mindre är ofta mer”, säger Aiko.",
+    "explanationJa": "{少|すく}ないほうがいいと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad väljer Mia till läpparna?",
+    "options": [
+     "Läppstift",
+     "Läppglans",
+     "Rouge",
+     "Ingenting"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon tar läppglans.",
+    "explanationJa": "リップグロスです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att Mia inte behöver smink.",
+    "correct": true,
+    "explanationSv": "”Du är lika fin osminkad.”",
+    "explanationJa": "メイクしなくてもきれいだと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om smink och kosmetika: vad ni använder, när ni sminkar er, och skillnader mellan Sverige och Japan.",
+  "discussionPoints": [
+   "Sminkar du dig? När?",
+   "Vilken kosmetika är populär i Japan?",
+   "Ska man sminka sig på jobbet, tycker du?",
+   "När började du sminka dig, eller när började dina vänner?"
+  ]
+ }
+}

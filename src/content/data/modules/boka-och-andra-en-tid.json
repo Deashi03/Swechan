@@ -1,0 +1,169 @@
+{
+ "id": "m.boka-och-andra-en-tid",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Boka och ändra en tid",
+ "titleJa": "{時間|じかん}の{予約|よやく}と{変更|へんこう}",
+ "descriptionSv": "Att boka och ändra en tid: tidsbokning, ledig tid, upptagen, fullbokad, tidigast, föreslå, boka om, bekräfta och bekräftelse.",
+ "descriptionJa": "{予約|よやく}と{変更|へんこう}：{予約|よやく}、{空|あ}き{時間|じかん}、ふさがっている、{予約|よやく}でいっぱい、{早|はや}くても、{提案|ていあん}する、{予約変更|よやくへんこう}、{確認|かくにん}する、{確認|かくにん}の{連絡|れんらく}。",
+ "categoryId": "R01-A04-T01",
+ "tags": [
+  "tid"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tidsfrister-och-deadlines"
+ ],
+ "related": [],
+ "recommendedOrder": 407,
+ "words": [
+  {
+   "senseId": "s.tandläkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidsbokning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.telefontid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ledig-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fullbokad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidigast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föreslå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.alternativ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boka-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ombokning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bokningsnummer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bekräfta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bekräftelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återkomma.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En ny tid hos tandläkaren",
+  "paragraphs": [
+   "Aiko har en tid hos tandläkaren på onsdag, men då har hon ett viktigt möte. Hon måste boka om tiden.",
+   "Telefontiden är mellan åtta och tio. Hon ringer klockan åtta, men det är upptaget. Till slut kommer hon fram.",
+   "”Har ni någon ledig tid nästa vecka?” frågar hon. ”Tyvärr är vi fullbokade nästa vecka. Tidigast om två veckor”, säger kvinnan i telefonen. ”Jag kan föreslå två alternativ: tisdag klockan nio eller torsdag klockan tre.”",
+   "”Jag återkommer”, säger Aiko. Hon kollar sin kalender och ringer igen. ”Torsdag passar bra.”",
+   "”Har du ditt bokningsnummer?” Aiko läser upp det. ”Kan du bekräfta tiden?” ”Ja, torsdag klockan tre. Ombokningen är klar. Du får en bekräftelse på sms.”",
+   "Nästa gång ska hon använda tidsbokningen på nätet. ”Det går snabbare”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför måste Aiko boka om tiden?",
+    "options": [
+     "Hon är sjuk.",
+     "Tandläkaren är sjuk.",
+     "Hon ska resa.",
+     "Hon har ett viktigt möte."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Då har hon ett viktigt möte.",
+    "explanationJa": "{大事|だいじ}な{会議|かいぎ}があるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När är telefontiden?",
+    "options": [
+     "Mellan nio och tolv",
+     "Hela dagen",
+     "Mellan åtta och tio",
+     "På kvällen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Telefontiden är mellan åtta och tio.",
+    "explanationJa": "8{時|じ}から10{時|じ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Tandläkaren har lediga tider nästa vecka.",
+    "correct": false,
+    "explanationSv": "”Tyvärr är vi fullbokade nästa vecka.”",
+    "explanationJa": "{来週|らいしゅう}はいっぱいです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vilket alternativ väljer Aiko?",
+    "options": [
+     "Tisdag klockan nio",
+     "Onsdag",
+     "Torsdag klockan tre",
+     "Om en månad"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Torsdag passar bra.”",
+    "explanationJa": "{木曜日|もくようび}の3{時|じ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att det är lättare att boka på nätet.",
+    "correct": true,
+    "explanationSv": "”Det går snabbare”, säger Erik.",
+    "explanationJa": "ネットのほうが{早|はや}いと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att boka och ändra tider hos tandläkare, frisör och andra, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Hur brukar du boka tider: på nätet eller per telefon?",
+   "Har du behövt boka om en tid?",
+   "Får du bekräftelse på sms eller mejl?",
+   "Är det lätt att få en tid hos tandläkaren där du bor?"
+  ]
+ }
+}

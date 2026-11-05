@@ -1,0 +1,170 @@
+{
+ "id": "m.planera-en-ledig-dag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Planera en ledig dag",
+ "titleJa": "{休|やす}みの{日|ひ}の{計画|けいかく}",
+ "descriptionSv": "En ledig dag: ta ledigt, ledighet, ta det lugnt, lata sig, hitta på, aktivitet, förslag, spontan, oplanerad, picknick, dagstur och vardagslyx.",
+ "descriptionJa": "{休|やす}みの{日|ひ}：{休|やす}みをとる、{休暇|きゅうか}、のんびり、ごろごろ、{何|なに}かする、{活動|かつどう}、{提案|ていあん}、{思|おも}いつき、{予定外|よていがい}、ピクニック、{日帰|ひがえ}り{旅行|りょこう}、ささやかなぜいたく。",
+ "categoryId": "R01-A04-T03",
+ "tags": [
+  "vardag",
+  "planering"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.att-hinna-och-forsena-sig"
+ ],
+ "related": [],
+ "recommendedOrder": 421,
+ "words": [
+  {
+   "senseId": "s.ledig-dag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-ledigt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-det-lugnt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lata-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hitta-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.aktivitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spontan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oplanerad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.picknick.1",
+   "active": true
+  },
+  {
+   "senseId": "s.badplats.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dagstur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utflyktsmål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vardagslyx.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En ledig fredag",
+  "paragraphs": [
+   "Aiko och Erik har tagit ledigt på fredag. Barnen är i skolan, så de har en hel ledig dag för sig själva.",
+   "”Vad ska vi hitta på?” frågar Erik. ”Har du något förslag?” Aiko vill ta det lugnt. Erik vill ha en aktivitet.",
+   "Erik föreslår en dagstur till skärgården. ”Det är ett populärt utflyktsmål”, säger han. Men Aiko vill hellre lata sig hemma eller gå till badplatsen.",
+   "Till slut gör de något spontant: de köper smörgåsar och har picknick i parken med en termos kaffe.",
+   "Sedan går de på bio mitt på dagen. ”Det känns som vardagslyx”, säger Aiko.",
+   "”En oplanerad dag kan bli den bästa”, säger Erik. ”Nästa ledighet ska vi inte planera alls.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför har Aiko och Erik en dag för sig själva?",
+    "options": [
+     "Barnen är hos mormor.",
+     "Barnen är på läger.",
+     "Barnen är i skolan.",
+     "Barnen är sjuka."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Barnen är i skolan, så de har en hel ledig dag för sig själva.",
+    "explanationJa": "{子|こ}どもたちが{学校|がっこう}にいるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad vill Aiko göra?",
+    "options": [
+     "Göra en dagstur",
+     "Ta det lugnt",
+     "Träna",
+     "Städa"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko vill ta det lugnt.",
+    "explanationJa": "のんびりしたいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "De åker till skärgården.",
+    "correct": false,
+    "explanationSv": "De har picknick i parken.",
+    "explanationJa": "{公園|こうえん}でピクニックをします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör de på eftermiddagen?",
+    "options": [
+     "Går på bio",
+     "Åker hem",
+     "Hämtar barnen",
+     "Handlar"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sedan går de på bio mitt på dagen.",
+    "explanationJa": "{映画|えいが}を{見|み}に{行|い}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tyckte om den oplanerade dagen.",
+    "correct": true,
+    "explanationSv": "”En oplanerad dag kan bli den bästa.”",
+    "explanationJa": "{予定|よてい}のない{日|ひ}がよかったと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om lediga dagar: om ni planerar eller är spontana, och vad som är vardagslyx för er.",
+  "discussionPoints": [
+   "Vad gör du på en ledig dag?",
+   "Planerar du dina lediga dagar eller är du spontan?",
+   "Vilket utflyktsmål tycker du om?",
+   "Vad är vardagslyx för dig?"
+  ]
+ }
+}

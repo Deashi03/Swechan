@@ -1,0 +1,171 @@
+{
+ "id": "m.oppettider-och-kundservice",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Öppettider och kundservice",
+ "titleJa": "{営業|えいぎょう}{時間|じかん}とサービスカウンター",
+ "descriptionSv": "Öppettider och kundservice: öppettid, på vardagar, kvällsöppet, söndagsöppet, hålla öppet, lunchstängt, stängningsdags, dygnet runt, avvikande, mellandagarna, storhelg, inventering, kundservice, informationsdisk och hitta hit.",
+ "descriptionJa": "{営業|えいぎょう}{時間|じかん}とサービスカウンター：{営業|えいぎょう}{時間|じかん}、{平日|へいじつ}に、{夜間|やかん}{営業|えいぎょう}、{日曜|にちよう}{営業|えいぎょう}、{営業|えいぎょう}する、{昼休|ひるやす}み、{閉店|へいてん}{時間|じかん}、24{時間|じかん}、{通常|つうじょう}と{異|こと}なる、{年末|ねんまつ}、{大型|おおがた}{連休|れんきゅう}、{棚卸|たなおろ}し、サービスカウンター、インフォメーション、ここまで{来|こ}られる。",
+ "categoryId": "R01-A05-T03",
+ "tags": [
+  "handel",
+  "butik",
+  "tid"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bokhandlar-och-presentbutiker"
+ ],
+ "related": [],
+ "recommendedOrder": 519,
+ "words": [
+  {
+   "senseId": "s.öppettid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-vardagar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvällsöppet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.söndagsöppet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-öppet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lunchstängt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stängningsdags.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dygnet-runt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvikande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mellandagarna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storhelg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inventering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kundservice.1",
+   "active": true
+  },
+  {
+   "senseId": "s.informationsdisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hitta-hit.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När har de öppet?",
+  "paragraphs": [
+   "Erik ska köpa nya skor. Han kollar butikens öppettider på nätet. På vardagar har de öppet 10–19, och på torsdagar har de kvällsöppet till 21.",
+   "Butiken har också söndagsöppet, men den håller öppet kortare på helgen. Banken bredvid har lunchstängt mellan tolv och ett.",
+   "Det är snart jul, och då gäller avvikande öppettider. På storhelger är butiken stängd, men i mellandagarna är det öppet som vanligt – och rea.",
+   "Erik kommer till köpcentrumet på måndag. Men på dörren står det: ”Stängt i dag på grund av inventering.” Han går till informationsdisken.",
+   "”Det finns en annan skobutik på andra sidan stan. Den har öppet till åtta”, säger mannen där. Mataffären bredvid har öppet dygnet runt, men den säljer inga skor.",
+   "Erik ringer skobutikens kundservice. ”Många har svårt att hitta hit”, säger de och förklarar vägen. Men när Erik kommer fram är det redan stängningsdags."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När har butiken kvällsöppet?",
+    "options": [
+     "På söndagar",
+     "På måndagar",
+     "Varje dag",
+     "På torsdagar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På torsdagar har de kvällsöppet till 21.",
+    "explanationJa": "{木曜日|もくようび}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När har banken lunchstängt?",
+    "options": [
+     "Mellan elva och tolv",
+     "Mellan tolv och ett",
+     "Hela dagen",
+     "På kvällen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Banken bredvid har lunchstängt mellan tolv och ett.",
+    "explanationJa": "12{時|じ}から1{時|じ}までです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Butiken är stängd i mellandagarna.",
+    "correct": false,
+    "explanationSv": "I mellandagarna är det öppet som vanligt.",
+    "explanationJa": "{営業|えいぎょう}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför är butiken stängd på måndag?",
+    "options": [
+     "Storhelg",
+     "Lunch",
+     "Rea",
+     "Inventering"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Stängt i dag på grund av inventering.”",
+    "explanationJa": "{棚卸|たなおろ}しのためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik får köpa skor den här dagen.",
+    "correct": false,
+    "explanationSv": "När Erik kommer fram är det redan stängningsdags.",
+    "explanationJa": "もう{閉店|へいてん}{時間|じかん}でした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om öppettider: när butiker har öppet i Sverige och Japan, kvällsöppet och söndagsöppet, och var man får hjälp.",
+  "discussionPoints": [
+   "Vilka butiker har öppet dygnet runt där du bor?",
+   "Har butikerna kvällsöppet och söndagsöppet i Japan?",
+   "Vad gör du i mellandagarna?",
+   "Vart vänder du dig om du inte hittar en butik i ett köpcentrum?"
+  ]
+ }
+}

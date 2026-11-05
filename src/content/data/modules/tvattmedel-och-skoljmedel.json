@@ -1,0 +1,170 @@
+{
+ "id": "m.tvattmedel-och-skoljmedel",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tvättmedel och sköljmedel",
+ "titleJa": "{洗剤|せんざい}と{柔軟剤|じゅうなんざい}",
+ "descriptionSv": "Tvättmedel: dosera, dosering, tvättkapsel, koncentrerad, parfymfri, kalk, hårt och mjukt vatten, lödder och blekmedel.",
+ "descriptionJa": "{洗剤|せんざい}：{計量|けいりょう}、{使用量|しようりょう}、ジェルボール、{濃縮|のうしゅく}、{無香料|むこうりょう}、カルキ、{硬水|こうすい}と{軟水|なんすい}、{泡|あわ}、{漂白剤|ひょうはくざい}。",
+ "categoryId": "R01-A03-T05",
+ "tags": [
+  "kläder",
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sortera-efter-farg-och-material"
+ ],
+ "related": [],
+ "recommendedOrder": 331,
+ "words": [
+  {
+   "senseId": "s.dosera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dosering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överdosera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mätlock.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tvättkapsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koncentrerad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.parfymfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mjukgörande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kalk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårt-vatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mjukt-vatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lödder.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skumma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.blekmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klorin.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mycket lödder",
+  "paragraphs": [
+   "Leo har tvättat själv igen. Maskinen skummar och det kommer lödder ut på golvet! ”Hur mycket tvättmedel tog du?” frågar Aiko. ”Hela mätlocket, två gånger”, säger Leo.",
+   "”Man ska inte överdosera”, säger Aiko. ”Det här tvättmedlet är koncentrerat. Doseringen står på förpackningen, och man ska dosera efter hur smutsig tvätten är.”",
+   "I Stockholm har man mjukt vatten, men hos mormor i Skåne är det hårt vatten med mycket kalk. Där behöver man lite mer tvättmedel.",
+   "Familjen använder parfymfritt tvättmedel, för Leo är allergisk mot parfym. Aiko vill inte ha sköljmedel heller, fast det är mjukgörande.",
+   "Erik har tvättkapslar till resor. ”De måste ligga högt upp, så att små barn inte når dem”, säger han.",
+   "Till vita handdukar använder Aiko ibland blekmedel. ”Men aldrig klorin på färgade kläder!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför kommer det lödder ur maskinen?",
+    "options": [
+     "Leo tog för mycket tvättmedel.",
+     "Maskinen är trasig.",
+     "Vattnet är hårt.",
+     "Leo glömde tvättmedlet."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Hela mätlocket, två gånger”, säger Leo.",
+    "explanationJa": "{洗剤|せんざい}を{入|い}れすぎたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var står doseringen?",
+    "options": [
+     "På maskinen",
+     "I tvättstugan",
+     "På förpackningen",
+     "På lappen i tröjan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Doseringen står på förpackningen.",
+    "explanationJa": "パッケージに{書|か}いてあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Hos mormor är vattnet mjukt.",
+    "correct": false,
+    "explanationSv": "Hos mormor i Skåne är det hårt vatten med mycket kalk.",
+    "explanationJa": "{硬水|こうすい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför använder familjen parfymfritt tvättmedel?",
+    "options": [
+     "Leo är allergisk mot parfym.",
+     "Det är billigare.",
+     "Det är koncentrerat.",
+     "Det ger mer lödder."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo är allergisk mot parfym.",
+    "explanationJa": "レオが{香料|こうりょう}アレルギーだからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Tvättkapslar kan vara farliga för små barn.",
+    "correct": true,
+    "explanationSv": "”De måste ligga högt upp, så att små barn inte når dem.”",
+    "explanationJa": "{子|こ}どもの{手|て}が{届|とど}かない{所|ところ}に{置|お}きます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tvättmedel och sköljmedel: hur mycket man ska ta, parfym, allergier och vatten.",
+  "discussionPoints": [
+   "Vilket tvättmedel använder du?",
+   "Tycker du om sköljmedel?",
+   "Vet du om vattnet där du bor är hårt eller mjukt?",
+   "Är tvättmedel i Japan annorlunda än i Sverige?"
+  ]
+ }
+}

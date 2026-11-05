@@ -1,0 +1,170 @@
+{
+ "id": "m.folja-med-och-ga-hem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Följa med och gå hem",
+ "titleJa": "いっしょに{行|い}くことと{帰|かえ}ること",
+ "descriptionSv": "Att följa med och gå hem: komma med, hänga med, följa hem, gå iväg, ge sig av, smita, stanna kvar, gå förbi, titta in, hälsa på och bjuda hem.",
+ "descriptionJa": "{行|い}く・{帰|かえ}る：いっしょに{来|く}る、ついていく、{家|いえ}まで{送|おく}る、{立|た}ち{去|さ}る、{出発|しゅっぱつ}する、{抜|ぬ}け{出|だ}す、{残|のこ}る、{立|た}ち{寄|よ}る、{訪|たず}ねる、{家|いえ}に{招|まね}く。",
+ "categoryId": "R01-A04-T04",
+ "tags": [
+  "vardag",
+  "verb"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.satta-pa-och-stanga-av"
+ ],
+ "related": [],
+ "recommendedOrder": 425,
+ "words": [
+  {
+   "senseId": "s.följa-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänga-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-hem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.följa-hem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vända-hem.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gå-iväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ge-sig-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-iväg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.smita.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stanna-kvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-förbi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.titta-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälsa-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bjuda-hem.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En lördag",
+  "paragraphs": [
+   "På lördag ska familjen hälsa på mormor. ”Vill du följa med?” frågar Aiko Mia. ”Nej, jag ska hänga med Karin till stan”, säger Mia.",
+   "De ger sig av klockan tio. På vägen vill Erik gå förbi affären och köpa blommor.",
+   "Hos mormor brukar grannen titta in på en kopp kaffe. Leo smiter ut i trädgården när de vuxna pratar.",
+   "Efter lunch vill Leo gå hem, men Aiko vill stanna kvar en stund. Erik och Leo tar en promenad, men det börjar regna, så de vänder hem till mormor igen.",
+   "På kvällen vill mormor bjuda hem dem på middag nästa helg också. ”Kan Mia komma med då?” frågar hon.",
+   "När det är dags att dra iväg vill mormor följa hem dem till bilen. ”Det är bara tio meter”, skrattar Erik, men mormor går iväg med dem ändå."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart ska familjen på lördag?",
+    "options": [
+     "Till stan",
+     "Till Karin",
+     "Till affären",
+     "Till mormor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På lördag ska familjen hälsa på mormor.",
+    "explanationJa": "おばあちゃんの{家|いえ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför vill Mia inte följa med?",
+    "options": [
+     "Hon är sjuk.",
+     "Hon ska till stan med Karin.",
+     "Hon ska träna.",
+     "Hon ska jobba."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Nej, jag ska hänga med Karin till stan.”",
+    "explanationJa": "カリンと{町|まち}に{行|い}くからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo är med när de vuxna pratar.",
+    "correct": false,
+    "explanationSv": "Leo smiter ut i trädgården när de vuxna pratar.",
+    "explanationJa": "こっそり{庭|にわ}に{出|で}ます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför vänder Erik och Leo hem?",
+    "options": [
+     "Leo är trött.",
+     "Mormor ringer.",
+     "De blir hungriga.",
+     "Det börjar regna."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det börjar regna, så de vänder hem till mormor igen.",
+    "explanationJa": "{雨|あめ}が{降|ふ}り{始|はじ}めたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor vill träffa familjen snart igen.",
+    "correct": true,
+    "explanationSv": "Mormor vill bjuda hem dem på middag nästa helg också.",
+    "explanationJa": "{来週|らいしゅう}も{招|まね}きたいです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att följa med, hälsa på och gå hem: vem ni hälsar på och hur ni brukar säga när ni går.",
+  "discussionPoints": [
+   "Vem hälsar du på oftast?",
+   "Bjuder du ofta hem vänner?",
+   "Hur säger man att man vill gå hem på ett artigt sätt?",
+   "Följer man hem gäster till dörren i Japan?"
+  ]
+ }
+}

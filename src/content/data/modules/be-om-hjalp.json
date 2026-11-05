@@ -1,0 +1,171 @@
+{
+ "id": "m.be-om-hjalp",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Be om hjälp",
+ "titleJa": "{助|たす}けを{求|もと}める",
+ "descriptionSv": "Att be om hjälp: hjälpa till, hjälpas åt, ställa upp, hugga i, tjänst, be om en tjänst, erbjuda sig, hjälpsam, tacksam, klara sig själv, till besvär, tacka för hjälpen, det var så lite och ingen orsak.",
+ "descriptionJa": "{助|たす}けを{求|もと}める：{手伝|てつだ}う、{助|たす}け{合|あ}う、{力|ちから}になる、{手|て}を{貸|か}す、{親切|しんせつ}、お{願|ねが}いをする、{申|もう}し{出|で}る、{親切|しんせつ}な、{感謝|かんしゃ}している、{一人|ひとり}でできる、{迷惑|めいわく}で、お{礼|れい}を{言|い}う、どういたしまして。",
+ "categoryId": "R01-A04-T06",
+ "tags": [
+  "vardag",
+  "problem",
+  "artighet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bli-forsenad"
+ ],
+ "related": [],
+ "recommendedOrder": 440,
+ "words": [
+  {
+   "senseId": "s.be-om-hjälp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjälpa-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjälpas-åt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ställa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hugga-i.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tjänst-favor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.be-om-en-tjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.erbjuda-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjälpsam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tacksam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klara-sig-själv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.till-besvär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tacka-för-hjälpen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.det-var-så-lite.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingen-orsak.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Flyttdagen",
+  "paragraphs": [
+   "Aikos kollega Sara ska flytta på lördag. ”Får jag be om en tjänst?” frågar hon. ”Kan du hjälpa till med flytten?”",
+   "Aiko ställer upp direkt, och Erik erbjuder sig också att komma. ”Vi hjälps åt, så går det fort”, säger han.",
+   "Sara har en tung soffa. Hon vill klara sig själv, men den går inte att bära ensam. Till slut går hon ut och ber om hjälp, och alla hugger i.",
+   "Grannen är också hjälpsam. Han kommer med vatten och kaffe. ”Jag vill inte vara till besvär”, säger Sara. ”Ingen orsak”, säger grannen.",
+   "På kvällen är allt klart. ”Jag är så tacksam!” säger Sara. ”Nästa gång är det jag som hjälper er.”",
+   "Dagen efter ringer hon för att tacka för hjälpen igen. ”Det var så lite”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför behöver Sara hjälp?",
+    "options": [
+     "Hon är sjuk",
+     "Hon ska flytta",
+     "Hon ska baka",
+     "Hon har tappat nycklarna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aikos kollega Sara ska flytta på lördag.",
+    "explanationJa": "{引|ひ}っ{越|こ}しをするからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem erbjuder sig också att komma?",
+    "options": [
+     "Leo",
+     "Mia",
+     "Grannen",
+     "Erik"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik erbjuder sig också att komma.",
+    "explanationJa": "エリックです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Sara bär soffan ensam.",
+    "correct": false,
+    "explanationSv": "Den går inte att bära ensam. Till slut ber hon om hjälp.",
+    "explanationJa": "{一人|ひとり}では{運|はこ}べませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör grannen?",
+    "options": [
+     "Kommer med vatten och kaffe",
+     "Bär soffan",
+     "Kör bilen",
+     "Ringer Sara"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han kommer med vatten och kaffe.",
+    "explanationJa": "{水|みず}とコーヒーを{持|も}ってきます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara vill hjälpa Aiko och Erik en annan gång.",
+    "correct": true,
+    "explanationSv": "”Nästa gång är det jag som hjälper er.”",
+    "explanationJa": "{次|つぎ}は{自分|じぶん}が{手伝|てつだ}うと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att be om hjälp och hjälpa andra: när ni ber om hjälp, när ni ställer upp och vad man säger när någon tackar.",
+  "discussionPoints": [
+   "Är det lätt eller svårt för dig att be om hjälp?",
+   "När ställde du upp för någon senast?",
+   "Vad säger du när någon tackar för hjälpen?",
+   "Vill man helst klara sig själv i Japan, eller ber man gärna om hjälp?"
+  ]
+ }
+}

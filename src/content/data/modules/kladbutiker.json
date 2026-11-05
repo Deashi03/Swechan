@@ -1,0 +1,171 @@
+{
+ "id": "m.kladbutiker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Klädbutiker",
+ "titleJa": "{洋服店|ようふくてん}",
+ "descriptionSv": "I klädbutiken: köpcentrum, shoppa, gå i affärer, fönstershoppa, klädbutik, butikskedja, skyltfönster, skyltdocka, kollektion, damavdelning, herravdelning, barnavdelning, klädställning, hänga tillbaka och larmbricka.",
+ "descriptionJa": "{洋服店|ようふくてん}で：ショッピングセンター、ショッピングする、{店|みせ}を{見|み}て{回|まわ}る、ウィンドウショッピング、{洋服店|ようふくてん}、チェーン{店|てん}、ショーウィンドウ、マネキン、コレクション、{婦人服|ふじんふく}・{紳士服|しんしふく}・{子供服|こどもふく}{売|う}り{場|ば}、ハンガーラック、かけて{戻|もど}す、{防犯|ぼうはん}タグ。",
+ "categoryId": "R01-A05-T03",
+ "tags": [
+  "handel",
+  "butik",
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.att-jamfora-priser"
+ ],
+ "related": [],
+ "recommendedOrder": 515,
+ "words": [
+  {
+   "senseId": "s.köpcentrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.shoppa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-i-affärer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fönstershoppa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klädbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.butikskedja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyltfönster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyltdocka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kollektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.damavdelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.herravdelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnavdelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klädställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänga-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larmbricka.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag i köpcentrumet",
+  "paragraphs": [
+   "Aiko och hennes kompis Sara åker till köpcentrumet. De ska gå i affärer hela dagen. Sara älskar att shoppa, men Aiko vill mest fönstershoppa.",
+   "Det finns många klädbutiker. De flesta är butikskedjor som finns i hela Sverige. I ett skyltfönster står en skyltdocka i en vacker grön kappa.",
+   "”Vårens nya kollektion har kommit!” står det på en skylt. Damavdelningen ligger på övervåningen, och herravdelningen och barnavdelningen ligger på bottenvåningen.",
+   "Vid ingången står en klädställning med kläder på rea. Sara tittar på en kjol men hänger tillbaka den. ”För dyr”, säger hon.",
+   "Aiko köper till slut kappan. Men när hon går ut ur butiken börjar det pipa. Kassören glömde att ta bort larmbrickan!",
+   "Aiko går tillbaka in. ”Förlåt”, säger kassören och tar bort den. Alla tittar på henne."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad vill Aiko mest göra?",
+    "options": [
+     "Shoppa mycket",
+     "Äta",
+     "Byta kläder",
+     "Fönstershoppa"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko vill mest fönstershoppa.",
+    "explanationJa": "ウィンドウショッピングです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har skyltdockan på sig?",
+    "options": [
+     "En röd klänning",
+     "En grön kappa",
+     "En kjol",
+     "En tröja"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I ett skyltfönster står en skyltdocka i en vacker grön kappa.",
+    "explanationJa": "{緑|みどり}のコートです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var ligger damavdelningen?",
+    "options": [
+     "På bottenvåningen",
+     "Vid ingången",
+     "Längst in",
+     "På övervåningen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Damavdelningen ligger på övervåningen.",
+    "explanationJa": "{上|うえ}の{階|かい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sara köper kjolen.",
+    "correct": false,
+    "explanationSv": "Sara tittar på en kjol men hänger tillbaka den.",
+    "explanationJa": "{戻|もど}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det piper för att larmbrickan sitter kvar på kappan.",
+    "correct": true,
+    "explanationSv": "Kassören glömde att ta bort larmbrickan!",
+    "explanationJa": "{防犯|ぼうはん}タグがついたままでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att handla kläder: vilka klädbutiker ni gillar, om ni shoppar eller fönstershoppar och hur köpcentrum ser ut i Japan.",
+  "discussionPoints": [
+   "Gillar du att gå i affärer?",
+   "Handlar du helst i små butiker eller i stora butikskedjor?",
+   "Har det någon gång börjat pipa när du gick ut ur en butik?",
+   "Hur ser ett köpcentrum ut i Japan?"
+  ]
+ }
+}

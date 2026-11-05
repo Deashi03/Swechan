@@ -1,0 +1,173 @@
+{
+ "id": "m.stil-och-tillfalle",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Stil och tillfälle",
+ "titleJa": "スタイルと{場面|ばめん}",
+ "descriptionSv": "Kläder och tillfälle: klädkod, mörk kostym, festlig, uppklädd, överklädd, lämplig, anpassa och intryck.",
+ "descriptionJa": "{服|ふく}と{場面|ばめん}：ドレスコード、ダークスーツ、{華|はな}やか、おしゃれ、{着飾|きかざ}りすぎ、ふさわしい、{合|あ}わせる、{印象|いんしょう}。",
+ "categoryId": "R01-A03-T04",
+ "tags": [
+  "kläder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.fargmatchning"
+ ],
+ "related": [],
+ "recommendedOrder": 328,
+ "words": [
+  {
+   "senseId": "s.tillställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klädkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mörk-kostym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högtidsdräkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.festlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppklädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.finklädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överklädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underklädd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avslappnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diskret.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sticka-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämplig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.olämplig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anpassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intryck.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad ska jag ha på mig?",
+  "paragraphs": [
+   "Erik och Aiko är bjudna på en fin tillställning: Eriks kollega Anna fyller femtio år. På inbjudan står det: ”Klädkod: mörk kostym.”",
+   "”Det är inte högtidsdräkt, så jag behöver inte det allra finaste”, säger Erik. Han tar sin marinblå kostym. Aiko väljer en festlig men diskret klänning.",
+   "På festen är alla uppklädda. En kollega har kommit i jeans och tröja och känner sig underklädd. ”Jag trodde att det var avslappnat”, säger han.",
+   "Förra året var Erik på en grillfest i kostym. Då var han överklädd. ”Man måste anpassa kläderna efter tillfället”, säger Aiko.",
+   "En gäst har en mycket gul kostym. Han vill verkligen sticka ut. ”Är det lämpligt?” säger Aiko tyst. ”Det ger i alla fall ett starkt intryck”, säger Erik.",
+   "Nästa dag frågar Leo: ”Varför var ni så finklädda i går?” Shorts hade varit olämpliga, tycker Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är klädkoden på festen?",
+    "options": [
+     "Högtidsdräkt",
+     "Avslappnad",
+     "Mörk kostym",
+     "Ingen klädkod"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På inbjudan står det: ”Klädkod: mörk kostym.”",
+    "explanationJa": "ダークスーツです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken klänning väljer Aiko?",
+    "options": [
+     "En gäll och kort",
+     "En lång till högtidsdräkt",
+     "En festlig men diskret",
+     "En avslappnad"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko väljer en festlig men diskret klänning.",
+    "explanationJa": "{華|はな}やかだけど{控|ひか}えめなワンピースです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Kollegan i jeans känner sig överklädd.",
+    "correct": false,
+    "explanationSv": "En kollega har kommit i jeans och tröja och känner sig underklädd.",
+    "explanationJa": "くだけすぎだと{感|かん}じています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "När var Erik överklädd?",
+    "options": [
+     "På Annas fest",
+     "På ett bröllop",
+     "På jobbet",
+     "På en grillfest i kostym"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Förra året var Erik på en grillfest i kostym.",
+    "explanationJa": "グリルパーティーにスーツで{行|い}ったときです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Gästen i den gula kostymen syns mycket.",
+    "correct": true,
+    "explanationSv": "Han vill verkligen sticka ut.",
+    "explanationJa": "とても{目立|めだ}ちます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om klädkoder och vad som passar vid olika tillfällen i Sverige och i Japan.",
+  "discussionPoints": [
+   "Har du varit på en fest med klädkod?",
+   "Har du någon gång känt dig överklädd eller underklädd?",
+   "Vad har man på sig på jobbet där du arbetar?",
+   "Vilka klädkoder finns i Japan?"
+  ]
+ }
+}

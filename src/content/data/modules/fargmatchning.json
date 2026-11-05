@@ -1,0 +1,170 @@
+{
+ "id": "m.fargmatchning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Färgmatchning",
+ "titleJa": "{色|いろ}の{組|く}み{合|あ}わせ",
+ "descriptionSv": "Att matcha färger: gå ihop, nyans, kontrast, ton i ton, accentfärg, dämpad, gäll och färgnamn.",
+ "descriptionJa": "{色|いろ}の{組|く}み{合|あ}わせ：{合|あ}う、{色合|いろあ}い、コントラスト、{同系色|どうけいしょく}、{差|さ}し{色|いろ}、{落|お}ち{着|つ}いた{色|いろ}、どぎつい{色|いろ}、{色|いろ}の{名前|なまえ}。",
+ "categoryId": "R01-A03-T04",
+ "tags": [
+  "kläder",
+  "färger"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.andra-och-laga-plagg"
+ ],
+ "related": [],
+ "recommendedOrder": 327,
+ "words": [
+  {
+   "senseId": "s.matcha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nyans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgskala.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ton-i-ton.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontrast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.accentfärg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.färgglad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dämpad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gäll.1",
+   "active": false
+  },
+  {
+   "senseId": "s.marinblå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinröd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.senapsgul.1",
+   "active": false
+  },
+  {
+   "senseId": "s.olivgrön.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hudton.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vilka färger går ihop?",
+  "paragraphs": [
+   "Mia och Aiko pratar om färger. Mia vill gärna ha färgglada kläder, men hon vet inte vilka färger som går ihop.",
+   "”Svart och vitt ger en stark kontrast”, säger Aiko. ”Om du vill ha något lugnare kan du klä dig ton i ton, i olika nyanser av samma färg.”",
+   "Aiko själv gillar dämpade färger: beige, grått och olivgrönt. Hon har ofta en marinblå kavaj och en röd scarf som accentfärg.",
+   "Mia provar en gäll grön tröja. ”Den matchar inte dina byxor”, säger Aiko. ”Prova den vinröda i stället.”",
+   "Mormor säger att man ska välja färger efter sin hudton. ”Till dig passar senapsgult och varma färger.”",
+   "Till sist gör Mia en egen färgskala: tre färger som hon tycker om och som går ihop."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ger svart och vitt enligt Aiko?",
+    "options": [
+     "Ton i ton",
+     "En dämpad färgskala",
+     "En stark kontrast",
+     "En accentfärg"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Svart och vitt ger en stark kontrast.”",
+    "explanationJa": "{強|つよ}いコントラストです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka färger gillar Aiko?",
+    "options": [
+     "Gälla färger",
+     "Färgglada färger",
+     "Bara svart",
+     "Dämpade färger"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko själv gillar dämpade färger.",
+    "explanationJa": "{落|お}ち{着|つ}いた{色|いろ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Den gröna tröjan matchar Mias byxor.",
+    "correct": false,
+    "explanationSv": "”Den matchar inte dina byxor.”",
+    "explanationJa": "{合|あ}っていません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ska man enligt mormor välja färger efter?",
+    "options": [
+     "Vädret",
+     "Hudtonen",
+     "Priset",
+     "Modet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mormor säger att man ska välja färger efter sin hudton.",
+    "explanationJa": "{肌|はだ}の{色|いろ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia lär sig att kombinera färger.",
+    "correct": true,
+    "explanationSv": "Till sist gör Mia en egen färgskala.",
+    "explanationJa": "{自分|じぶん}の{色|いろ}の{組|く}み{合|あ}わせを{作|つく}ります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om färger på kläder: vilka färger ni gillar, vad som går ihop och vad som passar er.",
+  "discussionPoints": [
+   "Vilka färger har du mest i garderoben?",
+   "Gillar du färgglada eller dämpade färger?",
+   "Vilka färger passar ihop, tycker du?",
+   "Finns det färger som man inte har på sig vid vissa tillfällen i Japan?"
+  ]
+ }
+}

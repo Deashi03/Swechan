@@ -1,0 +1,171 @@
+{
+ "id": "m.elektronikbutiker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Elektronikbutiker",
+ "titleJa": "{家電|かでん}{量販店|りょうはんてん}",
+ "descriptionSv": "I elektronikbutiken: elektronikbutik, hemelektronik, märkesvara, hörlurar, brusreducerande, trådlös, högtalare, surfplatta, pekskärm, skrivare, laddsladd, batteritid, utställningsexemplar, garantitid och förlängd garanti.",
+ "descriptionJa": "{家電|かでん}{量販店|りょうはんてん}で：{電器店|でんきてん}、{家電|かでん}、ブランド{品|ひん}、ヘッドホン、ノイズキャンセリング、ワイヤレス、スピーカー、タブレット、タッチパネル、プリンター、{充電|じゅうでん}ケーブル、バッテリーの{持|も}ち、{展示品|てんじひん}、{保証|ほしょう}{期間|きかん}、{延長|えんちょう}{保証|ほしょう}。",
+ "categoryId": "R01-A05-T03",
+ "tags": [
+  "handel",
+  "butik",
+  "elektronik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kladbutiker"
+ ],
+ "related": [],
+ "recommendedOrder": 516,
+ "words": [
+  {
+   "senseId": "s.elektronikbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högtalare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemelektronik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.märkesvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörlur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brusreducerande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trådlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.surfplatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pekskärm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddsladd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.batteritid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utställningsexemplar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.garantitid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlängd-garanti.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Nya hörlurar",
+  "paragraphs": [
+   "Erik behöver nya hörlurar före en resa till Japan. Han går till en elektronikbutik i köpcentrumet. Hemelektronik finns på andra våningen.",
+   "Det finns många märkesvaror. Erik vill ha trådlösa och brusreducerande hörlurar, så att han kan sova på flyget. ”Batteritiden är trettio timmar”, säger säljaren.",
+   "Bredvid finns högtalare, surfplattor och skrivare. Mia vill ha en surfplatta med stor pekskärm, men den är för dyr.",
+   "Erik hittar ett par hörlurar som har stått i butiken. ”Det är ett utställningsexemplar”, säger säljaren. ”Det kostar hälften.”",
+   "”Garantitiden är två år. Vill du köpa förlängd garanti?” Erik säger nej tack.",
+   "På flyget märker han att han har glömt sin laddsladd hemma. Efter tio timmar är hörlurarna tysta."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Erik ha brusreducerande hörlurar?",
+    "options": [
+     "För att kunna sova på flyget",
+     "För att lyssna på radio",
+     "För att de är billiga",
+     "För att Mia vill det"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Erik vill ha brusreducerande hörlurar, så att han kan sova på flyget.",
+    "explanationJa": "{飛行機|ひこうき}で{寝|ね}るためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång är batteritiden?",
+    "options": [
+     "Tio timmar",
+     "Två år",
+     "Tjugo timmar",
+     "Trettio timmar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Batteritiden är trettio timmar.”",
+    "explanationJa": "30{時間|じかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia får en surfplatta.",
+    "correct": false,
+    "explanationSv": "Mia vill ha en surfplatta med stor pekskärm, men den är för dyr.",
+    "explanationJa": "{高|たか}すぎます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför är hörlurarna billigare?",
+    "options": [
+     "De är trasiga",
+     "De är gamla",
+     "De har ingen garanti",
+     "De är ett utställningsexemplar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Det är ett utställningsexemplar. Det kostar hälften.”",
+    "explanationJa": "{展示品|てんじひん}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Hörlurarna slutar fungera eftersom batteriet tar slut.",
+    "correct": true,
+    "explanationSv": "Han har glömt sin laddsladd hemma. Efter tio timmar är hörlurarna tysta.",
+    "explanationJa": "{充電|じゅうでん}できなかったからです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om elektronikbutiker: vad ni köper, om ni köper märkesvaror och om ni köper förlängd garanti.",
+  "discussionPoints": [
+   "Vilken hemelektronik använder du varje dag?",
+   "Har du trådlösa hörlurar?",
+   "Köper du förlängd garanti? Varför eller varför inte?",
+   "Vilka stora elektronikbutiker finns det i Japan?"
+  ]
+ }
+}

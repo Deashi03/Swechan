@@ -1,0 +1,170 @@
+{
+ "id": "m.angerratt-och-retur",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ångerrätt och retur",
+ "titleJa": "クーリングオフと{返品|へんぴん}",
+ "descriptionSv": "Ångerrätt och retur: distansköp, ångerrätt, ångra sig, retur, returnera, skicka tillbaka, anmäla retur, returformulär, returskäl, returetikett, returfrakt, fri retur, originalförpackning, oanvänd och nyskick.",
+ "descriptionJa": "クーリングオフと{返品|へんぴん}：{通信|つうしん}{販売|はんばい}、クーリングオフ、{気|き}が{変|か}わる、{返品|へんぴん}、{返品|へんぴん}する、{送|おく}り{返|かえ}す、{返品|へんぴん}を{申|もう}し{込|こ}む、{返品|へんぴん}{用紙|ようし}、{返品|へんぴん}{理由|りゆう}、{返送|へんそう}ラベル、{返送|へんそう}{料|りょう}、{返品|へんぴん}{無料|むりょう}、{元|もと}の{箱|はこ}、{未使用|みしよう}、{新品|しんぴん}{同様|どうよう}。",
+ "categoryId": "R01-A05-T04",
+ "tags": [
+  "handel",
+  "internet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.paket-och-sparning"
+ ],
+ "related": [],
+ "recommendedOrder": 527,
+ "words": [
+  {
+   "senseId": "s.ångerrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.distansköp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ångra-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.retur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.returnera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anmäla-retur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.returformulär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.returskäl.1",
+   "active": false
+  },
+  {
+   "senseId": "s.returetikett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.returfrakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fri-retur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.originalförpackning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oanvänd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nyskick.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Skorna är för små",
+  "paragraphs": [
+   "Mia har köpt ett par skor på nätet. När hon provar dem är de för små. Men det är ingen fara. Vid distansköp har man fjorton dagars ångerrätt i Sverige.",
+   "”Om man ångrar sig kan man returnera skorna”, säger Aiko. ”Vi ska skicka tillbaka dem.”",
+   "Först måste Mia anmäla retur på butikens hemsida. Hon fyller i ett returformulär och väljer returskäl: ”För liten”.",
+   "Returetiketten ligger i paketet. Butiken har fri retur, så Mia behöver inte betala returfrakten. I en annan butik kostar det 59 kronor.",
+   "Skorna måste vara oanvända och i nyskick. Mia lägger dem i originalförpackningen och tejpar ihop kartongen.",
+   "En vecka senare får hon pengarna tillbaka. ”Nästa gång tittar jag i storleksguiden”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Mia skicka tillbaka skorna?",
+    "options": [
+     "De är trasiga",
+     "Hon gillar inte färgen",
+     "De är för små",
+     "De kom för sent"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När hon provar dem är de för små.",
+    "explanationJa": "{小|ちい}さすぎるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge har man ångerrätt i Sverige?",
+    "options": [
+     "Fjorton dagar",
+     "Sju dagar",
+     "Trettio dagar",
+     "Ett år"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vid distansköp har man fjorton dagars ångerrätt i Sverige.",
+    "explanationJa": "14{日間|にちかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia måste betala returfrakten.",
+    "correct": false,
+    "explanationSv": "Butiken har fri retur, så Mia behöver inte betala returfrakten.",
+    "explanationJa": "{無料|むりょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur måste skorna vara?",
+    "options": [
+     "Rena och torra",
+     "I en ny kartong",
+     "Oanvända och i nyskick",
+     "Med en rosett"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Skorna måste vara oanvända och i nyskick.",
+    "explanationJa": "{未使用|みしよう}で{新品|しんぴん}{同様|どうよう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia valde fel storlek.",
+    "correct": true,
+    "explanationSv": "”Nästa gång tittar jag i storleksguiden.”",
+    "explanationJa": "サイズを{間違|まちが}えました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ångerrätt och retur: när ni har skickat tillbaka något, hur det går till och om det finns liknande regler i Japan.",
+  "discussionPoints": [
+   "Har du returnerat något som du köpt på nätet?",
+   "Väljer du butiker med fri retur?",
+   "Vad gör du med originalförpackningen?",
+   "Finns det ångerrätt vid nätköp i Japan?"
+  ]
+ }
+}

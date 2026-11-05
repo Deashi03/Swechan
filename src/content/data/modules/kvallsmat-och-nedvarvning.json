@@ -1,0 +1,169 @@
+{
+ "id": "m.kvallsmat-och-nedvarvning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kvällsmat och nedvarvning",
+ "titleJa": "{夕食|ゆうしょく}とくつろぎ",
+ "descriptionSv": "Kvällen: varva ner, koppla av, slå sig ner, mysa, mysig, tända ljus, titta på tv, serie, avsnitt, skärmtid och läsa högt.",
+ "descriptionJa": "{夜|よる}の{時間|じかん}：リラックス、くつろぐ、{腰|こし}を{下|お}ろす、{居心地|いごこち}のいい、ろうそく、テレビ、ドラマ、{一話|いちわ}、スクリーンタイム、{読|よ}み{聞|き}かせ。",
+ "categoryId": "R01-A04-T02",
+ "tags": [
+  "vardag"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.pendla-hemifran"
+ ],
+ "related": [],
+ "recommendedOrder": 412,
+ "words": [
+  {
+   "senseId": "s.varva-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvällspromenad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nedvarvning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koppla-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avkopplande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slå-sig-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mysa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvällste.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tända-ljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.titta-på-tv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.serie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avsnitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärmtid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lägga-ifrån-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsa-högt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kvällen hemma",
+  "paragraphs": [
+   "Efter kvällsmaten diskar Erik och Mia, och Aiko plockar undan. Sedan är det dags att varva ner.",
+   "Mormor tar en kvällspromenad varje dag. ”Det är bra för nedvarvningen”, säger hon.",
+   "Familjen slår sig ner i soffan och tänder ljus. Det är mysigt. De tittar på tv, en ny serie. ”Bara ett avsnitt till!” säger Mia.",
+   "Leo får en timme skärmtid per dag. Efter det måste han lägga ifrån sig mobilen.",
+   "Sedan ska Erik läsa högt för Leo. Det tycker båda är avkopplande.",
+   "Aiko vill koppla av med ett varmt bad och ett kvällste. ”Nu kan jag mysa resten av kvällen”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör mormor varje kväll?",
+    "options": [
+     "Tittar på tv",
+     "Läser högt",
+     "Tar en kvällspromenad",
+     "Tar ett bad"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mormor tar en kvällspromenad varje dag.",
+    "explanationJa": "{夜|よる}の{散歩|さんぽ}をします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad säger Mia om serien?",
+    "options": [
+     "”Den är tråkig.”",
+     "”Jag vill sova.”",
+     "”Bara ett avsnitt till!”",
+     "”Stäng av tv:n.”"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Bara ett avsnitt till!” säger Mia.",
+    "explanationJa": "「あと{一話|いちわ}だけ！」と{言|い}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo får titta på skärmar hur länge han vill.",
+    "correct": false,
+    "explanationSv": "Leo får en timme skärmtid per dag.",
+    "explanationJa": "1{日|にち}1{時間|じかん}だけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko för att koppla av?",
+    "options": [
+     "Med en kvällspromenad",
+     "Med en serie",
+     "Med att läsa högt",
+     "Med ett varmt bad"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko vill koppla av med ett varmt bad och ett kvällste.",
+    "explanationJa": "{温|あたた}かいお{風呂|ふろ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Familjen tycker om sina kvällar tillsammans.",
+    "correct": true,
+    "explanationSv": "Familjen slår sig ner i soffan och tänder ljus. Det är mysigt.",
+    "explanationJa": "{居心地|いごこち}がいいと{感|かん}じています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kvällarna: hur ni varvar ner, skärmtid och vad som är mysigt.",
+  "discussionPoints": [
+   "Vad gör du på kvällen för att varva ner?",
+   "Hur mycket skärmtid har du per dag?",
+   "Vad tycker du är mysigt?",
+   "Vilken serie tittar du på just nu?"
+  ]
+ }
+}

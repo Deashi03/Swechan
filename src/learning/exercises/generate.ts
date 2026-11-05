@@ -71,10 +71,15 @@ function distractors(target: SenseRef, ctx: GenContext, n: number, rng: () => nu
   ];
   const out: SenseRef[] = [];
   const seenEntries = new Set<string>();
+  const seenGloss = new Set<string>(glossSet(target));
   for (const r of ordered) {
     if (out.length >= n) break;
     if (seenEntries.has(r.entry.id)) continue;
+    // two distractors with the same Japanese gloss would show the same label twice
+    const g = glossSet(r);
+    if ([...g].some((x) => seenGloss.has(x))) continue;
     seenEntries.add(r.entry.id);
+    for (const x of g) seenGloss.add(x);
     out.push(r);
   }
   return out;

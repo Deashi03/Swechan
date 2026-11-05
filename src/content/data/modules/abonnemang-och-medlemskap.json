@@ -1,0 +1,170 @@
+{
+ "id": "m.abonnemang-och-medlemskap",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Abonnemang och medlemskap",
+ "titleJa": "{契約|けいやく}と{会員|かいいん}",
+ "descriptionSv": "Abonnemang och medlemskap: abonnemang, mobilabonnemang, operatör, kontantkort, surf, obegränsad, bindningstid, månadsvis, medlemskap, bli medlem, gå ur, medlemsavgift, årsavgift, medlemskort och gymkort.",
+ "descriptionJa": "{契約|けいやく}と{会員|かいいん}：プラン、{携帯|けいたい}の{契約|けいやく}、キャリア、プリペイドSIM、データ{通信量|つうしんりょう}、{無制限|むせいげん}、{契約|けいやく}の{縛|しば}り、{月|つき}ごとに、{会員|かいいん}{資格|しかく}、{入会|にゅうかい}する、{退会|たいかい}する、{会費|かいひ}、{年会費|ねんかいひ}、{会員証|かいいんしょう}、ジムの{会員証|かいいんしょう}。",
+ "categoryId": "R01-A05-T06",
+ "tags": [
+  "tjänster",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bokningar-och-avbokningar"
+ ],
+ "related": [],
+ "recommendedOrder": 541,
+ "words": [
+  {
+   "senseId": "s.abonnemang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mobilabonnemang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.operatör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontantkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.surf.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obegränsad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bindningstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.månadsvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medlemskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bli-medlem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medlemsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.årsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medlemskort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gymkort.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Nytt mobilabonnemang",
+  "paragraphs": [
+   "Erik vill ha ett nytt mobilabonnemang. Hans gamla abonnemang är för dyrt. Han jämför olika operatörer på nätet.",
+   "Ett abonnemang har obegränsade samtal och mycket surf för 199 kronor i månaden. Men det har tolv månaders bindningstid. Ett annat kan man säga upp månadsvis.",
+   "Erik väljer det utan bindningstid. Aikos mamma, som hälsar på från Japan, köper ett kontantkort i stället.",
+   "Aiko vill bli medlem på ett gym. Medlemskapet kostar 300 kronor i månaden, och det finns ingen årsavgift. Hon får ett gymkort och ett medlemskort till gymmets kafé.",
+   "Erik har också betalat medlemsavgift till en klubb i flera år. Men han går aldrig dit.",
+   "”Då kan du lika gärna gå ur klubben”, säger Aiko. Erik säger upp sitt medlemskap samma dag."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Erik byta abonnemang?",
+    "options": [
+     "Det gamla är för dyrt",
+     "Han har ingen surf",
+     "Han flyttar",
+     "Operatören är dålig"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hans gamla abonnemang är för dyrt.",
+    "explanationJa": "{高|たか}すぎるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång bindningstid har det första abonnemanget?",
+    "options": [
+     "Tolv månader",
+     "Ingen",
+     "En månad",
+     "Två år"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det har tolv månaders bindningstid.",
+    "explanationJa": "12か{月|げつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aikos mamma köper ett kontantkort.",
+    "correct": true,
+    "explanationSv": "Aikos mamma köper ett kontantkort i stället.",
+    "explanationJa": "プリペイドSIMを{買|か}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad kostar gymmet?",
+    "options": [
+     "199 kronor i månaden",
+     "En årsavgift",
+     "300 kronor i månaden",
+     "Ingenting"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Medlemskapet kostar 300 kronor i månaden.",
+    "explanationJa": "{月|つき}300クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik har betalat för en klubb som han inte använder.",
+    "correct": true,
+    "explanationSv": "Erik har betalat medlemsavgift till en klubb i flera år. Men han går aldrig dit.",
+    "explanationJa": "{使|つか}っていないのに{払|はら}っていました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om abonnemang och medlemskap: vilket mobilabonnemang ni har, om ni är medlemmar i något och vad ni betalar varje månad.",
+  "discussionPoints": [
+   "Har du abonnemang eller kontantkort?",
+   "Hur mycket surf behöver du i månaden?",
+   "Är du medlem i något, till exempel ett gym eller en klubb?",
+   "Har mobilabonnemang i Japan ofta lång bindningstid?"
+  ]
+ }
+}

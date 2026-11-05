@@ -1,0 +1,170 @@
+{
+ "id": "m.att-jamfora-priser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Att jämföra priser",
+ "titleJa": "{値段|ねだん}を{比|くら}べる",
+ "descriptionSv": "Att jämföra priser: prismedveten, prisjämförelse, jämförelsesajt, prisskillnad, prisnivå, dyr i drift, i längden, löna sig, vara värd, kosta skjortan, impulsköp, överpris, ocker, spara in och fynda.",
+ "descriptionJa": "{値段|ねだん}を{比|くら}べる：{値段|ねだん}に{敏感|びんかん}、{価格|かかく}{比較|ひかく}、{比較|ひかく}サイト、{価格差|かかくさ}、{物価|ぶっか}、{維持費|いじひ}が{高|たか}い、{長|なが}い{目|め}で{見|み}れば、{得|とく}になる、{価値|かち}がある、ものすごく{高|たか}い、{衝動買|しょうどうが}い、{法外|ほうがい}な{値段|ねだん}、ぼったくり、{節約|せつやく}する、{掘|ほ}り{出|だ}し{物|もの}を{見|み}つける。",
+ "categoryId": "R01-A05-T02",
+ "tags": [
+  "handel",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.prenumerationer"
+ ],
+ "related": [],
+ "recommendedOrder": 514,
+ "words": [
+  {
+   "senseId": "s.prismedveten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.prisjämförelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämförelsesajt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prisskillnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prisnivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dyr-i-drift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-längden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.löna-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vara-värd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kosta-skjortan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.impulsköp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ocker.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spara-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fynda.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Det lönar sig att jämföra",
+  "paragraphs": [
+   "Aiko ska köpa en ny dammsugare. Hon är prismedveten och gör alltid en prisjämförelse först. På en jämförelsesajt ser hon att prisskillnaden mellan två butiker är 800 kronor.",
+   "Den billigaste dammsugaren är dyr i drift, eftersom påsarna kostar mycket. Den dyrare har inga påsar och håller längre. ”Det blir billigare i längden”, säger hon.",
+   "”Det lönar sig alltid att jämföra”, säger Aiko. ”Den dyra dammsugaren är värd pengarna.”",
+   "Erik är inte lika noga. Förra veckan köpte han en ny mobil som kostade skjortan. Det var ett impulsköp.",
+   "På flygplatsen kostar en kaffe sextio kronor. ”Det är ju ocker!” säger Erik. ”De säljer allt till överpris.” Prisnivån i Sverige är hög, men flygplatsen är ännu dyrare.",
+   "Nu vill familjen spara in på kaffe och ta med sig från hemma. På lördag ska de fynda på loppis."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur stor är prisskillnaden mellan butikerna?",
+    "options": [
+     "80 kronor",
+     "8 000 kronor",
+     "Ingen",
+     "800 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Prisskillnaden mellan två butiker är 800 kronor.",
+    "explanationJa": "800クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför är den billigaste dammsugaren dyr i drift?",
+    "options": [
+     "Den drar mycket el",
+     "Den går ofta sönder",
+     "Den är tung",
+     "Påsarna kostar mycket"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den billigaste dammsugaren är dyr i drift, eftersom påsarna kostar mycket.",
+    "explanationJa": "{袋|ふくろ}が{高|たか}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko tycker att den dyra dammsugaren är värd pengarna.",
+    "correct": true,
+    "explanationSv": "”Den dyra dammsugaren är värd pengarna.”",
+    "explanationJa": "それだけの{価値|かち}があると{思|おも}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad var den nya mobilen?",
+    "options": [
+     "Ett impulsköp",
+     "Ett fynd",
+     "En present",
+     "Ett lockerbjudande"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det var ett impulsköp.",
+    "explanationJa": "{衝動買|しょうどうが}いでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att kaffet på flygplatsen är billigt.",
+    "correct": false,
+    "explanationSv": "”Det är ju ocker!” säger Erik.",
+    "explanationJa": "{高|たか}すぎると{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att jämföra priser: om ni jämför innan ni köper, vad som lönar sig i längden och prisnivån i Sverige och Japan.",
+  "discussionPoints": [
+   "Gör du en prisjämförelse innan du köper något dyrt?",
+   "Vilket impulsköp ångrar du?",
+   "Vad tycker du är ocker i Sverige?",
+   "Är prisnivån högre i Sverige eller i Japan?"
+  ]
+ }
+}

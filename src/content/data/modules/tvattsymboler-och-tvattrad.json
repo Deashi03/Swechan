@@ -1,0 +1,178 @@
+{
+ "id": "m.tvattsymboler-och-tvattrad",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tvättsymboler och tvättråd",
+ "titleJa": "{洗濯表示|せんたくひょうじ}とお{手入|てい}れ{方法|ほうほう}",
+ "descriptionSv": "Tvättsymboler och tvättråd: skötselråd, balja, kryss, maskintvätt, handtvätt, fintvätt, torktumla och kemtvätta.",
+ "descriptionJa": "{洗濯表示|せんたくひょうじ}：お{手入|てい}れ{方法|ほうほう}、たらい、バツ{印|じるし}、{洗濯機洗|せんたくきあら}い、{手洗|てあら}い、デリケート{洗|あら}い、{乾燥機|かんそうき}、ドライクリーニング。",
+ "categoryId": "R01-A03-T05",
+ "tags": [
+  "kläder",
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.stil-och-tillfalle"
+ ],
+ "related": [],
+ "recommendedOrder": 329,
+ "words": [
+  {
+   "senseId": "s.symbol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skötselråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.balja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.punkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.program.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maskintvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handtvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fintvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättemperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kemtvätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torktumla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torktumling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.plantorka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hängtorka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tål-ej.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad betyder symbolerna?",
+  "paragraphs": [
+   "Leo ska tvätta sina kläder själv för första gången. Han tittar på lappen i tröjan och ser fem små symboler. ”Vad betyder de?” frågar han.",
+   "”Det är skötselråd”, säger Erik. ”Baljan betyder att tröjan tål maskintvätt. Siffran i baljan är den högsta tvättemperaturen, här 40 grader.”",
+   "”Om det finns en hand i baljan betyder det handtvätt. Ett streck under baljan betyder fintvätt, alltså ett försiktigt program.”",
+   "”Och krysset?” ”Ett kryss över en symbol betyder att man inte får göra det. Här står det ’tål ej’ torktumling, så du får inte torktumla tröjan. Du ska hängtorka den.”",
+   "Punkterna i strykjärnet visar hur varmt man får stryka. En cirkel betyder att man kan kemtvätta plagget.",
+   "Mias ylletröja ska man plantorka, och Eriks kostym måste man kemtvätta. ”Det är som ett eget språk”, säger Leo."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad betyder baljan?",
+    "options": [
+     "Att man ska stryka",
+     "Att man ska kemtvätta",
+     "Att tröjan tål maskintvätt",
+     "Att man inte får tvätta"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Baljan betyder att tröjan tål maskintvätt.”",
+    "explanationJa": "{洗濯機|せんたくき}で{洗|あら}えるという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken är den högsta tvättemperaturen för Leos tröja?",
+    "options": [
+     "60 grader",
+     "30 grader",
+     "90 grader",
+     "40 grader"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Siffran i baljan är den högsta tvättemperaturen, här 40 grader.",
+    "explanationJa": "40{度|ど}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo får torktumla tröjan.",
+    "correct": false,
+    "explanationSv": "Här står det ’tål ej’ torktumling, så du får inte torktumla tröjan.",
+    "explanationJa": "{乾燥機|かんそうき}はだめです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad visar punkterna i strykjärnet?",
+    "options": [
+     "Hur länge man ska tvätta",
+     "Vilket program man ska välja",
+     "Hur varmt man får stryka",
+     "Hur mycket tvättmedel man behöver"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Punkterna i strykjärnet visar hur varmt man får stryka.",
+    "explanationJa": "アイロンの{温度|おんど}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo tycker att symbolerna är lätta att förstå.",
+    "correct": false,
+    "explanationSv": "”Det är som ett eget språk”, säger Leo.",
+    "explanationJa": "{独自|どくじ}の{言語|げんご}のようだと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tvättsymboler och skötselråd: hur man vet hur ett plagg ska tvättas, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Läser du tvättråden innan du tvättar?",
+   "Vilka symboler känner du igen?",
+   "Har du förstört ett plagg i tvätten?",
+   "Ser tvättsymbolerna likadana ut i Japan?"
+  ]
+ }
+}

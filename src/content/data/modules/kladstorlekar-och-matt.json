@@ -1,0 +1,169 @@
+{
+ "id": "m.kladstorlekar-och-matt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Klädstorlekar och mått",
+ "titleJa": "{服|ふく}のサイズと{寸法|すんぽう}",
+ "descriptionSv": "Klädstorlekar och mått: storlekstabell, måttband, midjemått, tum, barnstorlek och skostorlek.",
+ "descriptionJa": "{服|ふく}のサイズと{寸法|すんぽう}：サイズ{表|ひょう}、メジャー、ウエスト、インチ、{子|こ}ども{服|ふく}のサイズ、{靴|くつ}のサイズ。",
+ "categoryId": "R01-A03-T04",
+ "tags": [
+  "kläder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.att-kanna-igen-kvalitet"
+ ],
+ "related": [],
+ "recommendedOrder": 322,
+ "words": [
+  {
+   "senseId": "s.måttband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storlekstabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.midjemått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höftmått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bröstmått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.innerbenslängd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnstorlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.damstorlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.herrstorlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.unisex.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skostorlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.liten-i-storleken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stor-i-storleken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växa-ur.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vilken storlek?",
+  "paragraphs": [
+   "Leo har vuxit ur alla sina byxor. Aiko ska beställa nya på internet, men först måste hon veta hans mått.",
+   "Hon tar fram ett måttband. Leo är 130 centimeter lång, och hans midjemått är 58 centimeter. I storlekstabellen står det att han ska ha barnstorlek 134.",
+   "Mia vill också ha nya jeans. Hon har damstorlek 36, men jeansen har storlek i tum. ”Du behöver veta innerbenslängden också”, säger Aiko.",
+   "Erik letar efter en skjorta. Herrstorlekarna går från liten till mycket stor, och han väljer efter bröstmåttet. Han väljer en t-shirt som är unisex till Mia också.",
+   "När paketet kommer är Leos tröja stor i storleken, men Mias kjol är liten i storleken. ”Höftmåttet stämmer inte”, säger Mia.",
+   "Till sist behöver Leo nya skor. ”Vilken skostorlek har du nu?” frågar Erik. ”Jag vet inte”, säger Leo."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför behöver Leo nya byxor?",
+    "options": [
+     "Han har vuxit ur dem.",
+     "De är smutsiga.",
+     "De har hål.",
+     "De är omoderna."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo har vuxit ur alla sina byxor.",
+    "explanationJa": "{成長|せいちょう}してズボンが{小|ちい}さくなったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur mäter Aiko Leo?",
+    "options": [
+     "Med en storlekstabell",
+     "Med ett måttband",
+     "Med en sax",
+     "Med en spegel"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon tar fram ett måttband.",
+    "explanationJa": "メジャーで{測|はか}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mias jeans har storlek i tum.",
+    "correct": true,
+    "explanationSv": "Hon har damstorlek 36, men jeansen har storlek i tum.",
+    "explanationJa": "ジーンズのサイズはインチです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur är Mias kjol när den kommer?",
+    "options": [
+     "Liten i storleken",
+     "Stor i storleken",
+     "Perfekt",
+     "För lång"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mias kjol är liten i storleken.",
+    "explanationJa": "{小|ちい}さめです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo vet sin skostorlek.",
+    "correct": false,
+    "explanationSv": "”Jag vet inte”, säger Leo.",
+    "explanationJa": "{知|し}りません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om storlekar och mått: hur man väljer rätt storlek, och skillnader mellan storlekar i Sverige och Japan.",
+  "discussionPoints": [
+   "Vet du dina egna mått?",
+   "Brukar kläder vara små eller stora i storleken för dig?",
+   "Är storlekarna olika i Japan och Sverige?",
+   "Hur gör du när du köper kläder på internet?"
+  ]
+ }
+}

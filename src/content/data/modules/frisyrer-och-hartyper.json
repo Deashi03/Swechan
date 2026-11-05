@@ -1,0 +1,169 @@
+{
+ "id": "m.frisyrer-och-hartyper",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Frisyrer och hårtyper",
+ "titleJa": "ヘアスタイルと{髪質|かみしつ}",
+ "descriptionSv": "Frisyrer och hårtyper: lockig, vågig, tovig, hästsvans, fläta, lugg, bena, page, kortklippt och skallig.",
+ "descriptionJa": "ヘアスタイルと{髪質|かみしつ}：{巻|ま}き{毛|げ}、ウェーブ、もつれた{髪|かみ}、ポニーテール、{三|み}つ{編|あ}み、{前髪|まえがみ}、{分|わ}け{目|め}、ボブ、{短髪|たんぱつ}、はげ。",
+ "categoryId": "R01-A03-T06",
+ "tags": [
+  "skönhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.laga-knappar-och-sommar"
+ ],
+ "related": [],
+ "recommendedOrder": 336,
+ "words": [
+  {
+   "senseId": "s.frisyr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårtyp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lockig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vågig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tovig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hästsvans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårknut.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lugg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bena.1",
+   "active": false
+  },
+  {
+   "senseId": "s.page.1",
+   "active": false
+  },
+  {
+   "senseId": "s.snagg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kortklippt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långhårig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skallig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Gamla foton",
+  "paragraphs": [
+   "Familjen tittar på gamla foton. Det är roligt att se alla frisyrer genom åren.",
+   "Morfar var långhårig när han var ung. Han hade vågigt hår och bena i mitten. Nu är han nästan skallig.",
+   "Mormor hade en lång fläta, och senare en hårknut. ”Det var praktiskt”, säger hon.",
+   "Aiko har rakt, tjockt svart hår. Förr hade hon lugg, men nu har hon klippt sig i page. Mia har lockigt hår som ofta blir tovigt. När hon tränar har hon hästsvans.",
+   "Leo var kortklippt hela förra sommaren. Han hade snagg.",
+   "”Alla har olika hårtyp”, säger frisören Sara. ”Därför passar olika frisyrer olika personer.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur var morfars hår när han var ung?",
+    "options": [
+     "Kort och lockigt",
+     "Han var skallig",
+     "Han hade snagg",
+     "Långt och vågigt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Morfar var långhårig när han var ung. Han hade vågigt hår.",
+    "explanationJa": "{長|なが}くてウェーブがかかっていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken frisyr har Aiko nu?",
+    "options": [
+     "Page",
+     "Lugg",
+     "Fläta",
+     "Hästsvans"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Nu har hon klippt sig i page.",
+    "explanationJa": "ボブです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mias hår är rakt.",
+    "correct": false,
+    "explanationSv": "Mia har lockigt hår som ofta blir tovigt.",
+    "explanationJa": "{巻|ま}き{毛|げ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har Mia när hon tränar?",
+    "options": [
+     "Hårknut",
+     "Fläta",
+     "Snagg",
+     "Hästsvans"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "När hon tränar har hon hästsvans.",
+    "explanationJa": "ポニーテールです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Frisören tycker att samma frisyr passar alla.",
+    "correct": false,
+    "explanationSv": "”Därför passar olika frisyrer olika personer.”",
+    "explanationJa": "{人|ひと}によって{合|あ}う{髪型|かみがた}は{違|ちが}います。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om frisyrer och hårtyper: vilket hår ni har och vilka frisyrer ni har haft.",
+  "discussionPoints": [
+   "Vilken hårtyp har du?",
+   "Vilken frisyr hade du som barn?",
+   "Har du någon gång haft en frisyr som du ångrar?",
+   "Vilka frisyrer är populära i Japan just nu?"
+  ]
+ }
+}

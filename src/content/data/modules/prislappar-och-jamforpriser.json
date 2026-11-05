@@ -1,0 +1,171 @@
+{
+ "id": "m.prislappar-och-jamforpriser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Prislappar och jämförpriser",
+ "titleJa": "{値札|ねふだ}と{単位|たんい}{価格|かかく}",
+ "descriptionSv": "Prislappar och jämförpriser: prisskylt, hyllkant, jämförpris, kilopris, per styck, styckpris, ordinarie pris, prisvärd, moms, inklusive, exklusive, streckkod, avrunda och prisfel.",
+ "descriptionJa": "{値札|ねふだ}と{単位|たんい}{価格|かかく}：{価格|かかく}{表示|ひょうじ}、{棚|たな}の{縁|ふち}、{単位|たんい}{価格|かかく}、キロあたりの{値段|ねだん}、{一個|いっこ}あたり、{通常|つうじょう}{価格|かかく}、お{買|か}い{得|どく}、{消費税|しょうひぜい}、{税込|ぜいこ}み、{税抜|ぜいぬ}き、バーコード、{四捨五入|ししゃごにゅう}する、{価格|かかく}の{間違|まちが}い。",
+ "categoryId": "R01-A05-T01",
+ "tags": [
+  "handel",
+  "butik",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.butikens-avdelningar"
+ ],
+ "related": [],
+ "recommendedOrder": 502,
+ "words": [
+  {
+   "senseId": "s.prislapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prisskylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyllkant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämförpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilopris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.per-styck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styckpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordinarie-pris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prisvärd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.moms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inklusive.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exklusive.1",
+   "active": false
+  },
+  {
+   "senseId": "s.streckkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avrunda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prisfel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vilket kaffe är billigast?",
+  "paragraphs": [
+   "Erik står framför kaffet. Det finns många olika paket, och alla har en prislapp. Priserna står på en prisskylt på hyllkanten.",
+   "Ett stort paket kostar 89 kronor och ett litet 49 kronor. Men vilket är billigast? Erik tittar på jämförpriset. Det står som kilopris på skylten.",
+   "Det stora paketet är mer prisvärt. Bananerna kostar tre kronor per styck, men en hel klase har ett lägre styckpris.",
+   "På osten står det: ”Ordinarie pris 79 kronor.” Alla priser i butiken är inklusive moms. I en annan butik för företag står priserna exklusive moms.",
+   "När Erik betalar läser maskinen av streckkoden på osten. Men den kostar 89 kronor, inte 79! Det är ett prisfel.",
+   "Erik pratar med personalen och betalar det pris som stod på skylten. Butiken brukar avrunda summan till hela kronor, eftersom det inte finns några ören längre."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var står priserna?",
+    "options": [
+     "På dörren",
+     "På hyllkanten",
+     "I tidningen",
+     "På golvet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Priserna står på en prisskylt på hyllkanten.",
+    "explanationJa": "{棚|たな}の{縁|ふち}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tittar Erik på för att se vilket kaffe som är billigast?",
+    "options": [
+     "Färgen",
+     "Storleken",
+     "Jämförpriset",
+     "Namnet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik tittar på jämförpriset.",
+    "explanationJa": "{単位|たんい}{価格|かかく}を{見|み}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det lilla paketet är mest prisvärt.",
+    "correct": false,
+    "explanationSv": "Det stora paketet är mer prisvärt.",
+    "explanationJa": "{大|おお}きいパックのほうがお{買|か}い{得|どく}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är det för fel på osten?",
+    "options": [
+     "Den kostar mer än på skylten",
+     "Den är för gammal",
+     "Den har ingen streckkod",
+     "Den är exklusive moms"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den kostar 89 kronor, inte 79! Det är ett prisfel.",
+    "explanationJa": "{表示|ひょうじ}より{高|たか}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan inte betala med ören i Sverige i dag.",
+    "correct": true,
+    "explanationSv": "Butiken brukar avrunda summan till hela kronor, eftersom det inte finns några ören längre.",
+    "explanationJa": "もうオーレはありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om priser i butiken: hur man läser en prisskylt, varför jämförpris är bra och hur det är med moms och priser i Japan.",
+  "discussionPoints": [
+   "Tittar du på jämförpriset när du handlar?",
+   "Har du någon gång hittat ett prisfel?",
+   "Står priserna i japanska butiker med eller utan moms?",
+   "Vilken vara tycker du är mest prisvärd?"
+  ]
+ }
+}

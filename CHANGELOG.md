@@ -1,5 +1,45 @@
 # Changelog
 
+## 0.7.0 – 2026-11-05
+
+**Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.6.0 → 0.7.0 nollställer progressionen (återställningspunkt sparas).
+
+**Bilder:** inga nya bilder i den här versionen (produktägarens beslut). Piloten från 0.6 ligger kvar oförändrad. Bilder och animationer läggs till när den nya infrastrukturen finns.
+
+### 105 nya moduler (AI-utkast, ett överämne i taget)
+Alla moduler är skrivna för sina katalogposter med verifierade 1:1-kopplingar. Varje modul har 15 ord, kontrollerat ordförråd och en linjär förkunskapskedja (`recommendedOrder` 322–328 för kläder, 401–442 för tid och 501–542 för handel). Ord som hör till senare överämnen har medvetet hållits utanför, till exempel biljett/hållplats (resor), lön/lån/försäkring (samhälle och ekonomi), sömn/stress/kroppsdelar (människan), recept/läkemedel (hälsa) och logga in/lösenord (datorer). Undantag som ligger nära senare ämnen men behövs här: *receptfri* och *halstablett* (Apotek och hygienbutiker), *klicka* och *sökfält* (Söka efter en vara) samt *tull* (Skicka utomlands). Totalt finns nu **215 publicerade moduler** och 1 541 nya ordposter.
+
+- **Kläder & personlig stil** (21 moduler, området är nu helt publicerat)
+  - *Storlek & passform*: Klädstorlekar och mått, Plagg som sitter löst eller tajt, Prova kläder, Sömmar och detaljer, Ändra och laga plagg, Färgmatchning, Stil och tillfälle
+  - *Tvätt & klädvård*: Tvättsymboler och tvättråd, Sortera efter färg och material, Tvättmedel och sköljmedel, Torka och stryka, Fläckar och fläckborttagning, Vårda ull och siden, Laga knappar och sömmar
+  - *Skönhet & grooming*: Frisyrer och hårtyper, Hårvårdsprodukter, Hudvårdsrutiner, Smink och kosmetika, Parfym och doft, Nagelvård och rakning, Besöka frisören
+- **Tid & vardagsrutiner** (42 moduler, helt publicerat)
+  - *Tid & kalender*: Klockslag och tidpunkter, Veckodagar och månader, Årstider och datum, Före och efter, Tidsspann och varaktighet, Tidsfrister och deadlines, Boka och ändra en tid
+  - *Morgon & kväll*: Vakna och stiga upp, Göra sig i ordning, Frukost på morgonen, Pendla hemifrån, Kvällsmat och nedvarvning, Lägga sig och somna, Morgon- och kvällsvanor
+  - *Planering & ärenden*: Att göra-listor, Prioritera uppgifter, Påminnelser och kalender, Boka möten, Skjuta upp och flytta fram, Att hinna och försena sig, Planera en ledig dag
+  - *Vanliga vardagsverb*: Hämta och lämna, Ta fram och lägga undan, Sätta på och stänga av, Följa med och gå hem, Komma ihåg och glömma, Börja och sluta, Behöva och vilja
+  - *Mått & mängder*: Antal och ordningstal, Vikt och volym, Längd och avstånd, Hastighet och temperatur, Ungefärliga mängder, Delar och andelar, Jämföra storlekar
+  - *Problem i vardagen*: Tappa bort saker, Något går sönder, Missförstånd i hemmet, Bli försenad, Be om hjälp, Låna och lämna tillbaka, Lösa vardagliga konflikter
+- **Handel & vardagstjänster** (42 moduler, helt publicerat)
+  - *Livsmedelsbutiken*: Butikens avdelningar, Prislappar och jämförpriser, Köpa frukt och grönsaker, Hitta rätt produkt, Kassa och betalning, Erbjudanden och rabatter, Reklamera livsmedel
+  - *Pengar & betalning*: Sedlar och mynt, Bankkort och kontanter, Kvitton och fakturor, Swish och digital betalning, Växel och återbetalning, Prenumerationer, Att jämföra priser
+  - *Butiker & köpcentrum*: Klädbutiker, Elektronikbutiker, Apotek och hygienbutiker, Bokhandlar och presentbutiker, Öppettider och kundservice, Provrum och köer, Fråga personalen
+  - *Köp på internet*: Söka efter en vara, Produktbeskrivningar och recensioner, Varukorg och kassa, Leveransalternativ, Paket och spårning, Ångerrätt och retur, Bedrägerier vid nätköp
+  - *Post & paket*: Brev och vykort, Kuvert och frimärken, Paketstorlekar, Paketombud och utlämning, Skicka utomlands, Adress och postnummer, Försenat eller saknat paket
+  - *Vardagliga tjänster*: Boka hantverkare, Kemtvätt och skrädderi, Kundtjänst och support, Bibliotekstjänster, Bokningar och avbokningar, Abonnemang och medlemskap, Klaga och begära ersättning
+
+### Rättat
+- **Repetitionen kunde fastna på ett ord som inte längre finns.** Om ett kort pekade på en betydelse som tagits bort ur innehållet visade repetitionen "Det här ordet finns inte längre" utan att gå att fortsätta. Sådana kort kan komma tillbaka via återställningspunkten eller en gammal säkerhetskopia. Dagens plan, extrarepetitionen och repetitionsskulden bortser nu från dem (`liveCards()` i `dailySession.ts`). Test i `moduleFlow.test.ts`.
+- **Borttagen betydelse `s.nopprig.1` / `e.nopprig`** (publicerad i 0.5–0.6). Det var en felstavad dubblett av *noppig*. *Att känna igen kvalitet* använder nu den befintliga `s.noppig.1`. Gamla kort för `s.nopprig.1` ligger kvar i databasen men visas aldrig (se punkten ovan). Inga andra publicerade `m.*`- eller `s.*`-ID:n har ändrats.
+- **Felalternativ med samma japanska glosa** valdes ibland samtidigt, vilket gav två likadana svarsknappar (t.ex. *lägga tillbaka* och *ställa tillbaka*). Distraktorvalet hoppar nu över en kandidat vars glosa överlappar ett redan valt alternativ.
+- Japanska glosor justerade så att sökningen på 修理 fortsätter att hitta *laga* först (*lagning*, *reparation*).
+
+### Övrigt
+- Moduler utan bild tillåts: `art.test.ts` kräver bara en egen bild för varje rotområde, och att de bilder som finns är unika.
+- Testet för grammatiktermer i meningsramar matchar inte längre ord som *bestämde* (falsklarm).
+- Grundordförrådet utökat med vanliga ord och namn som texterna behöver (t.ex. *kod*, *konto*, *nyhet*, *följa*, *anmäla*, *beslut*, *yen*, *PostNord*).
+- `APP_VERSION` 0.7.0, service workerns cache `swechan-v8`.
+
 ## 0.6.0 – 2026-11-05
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.5.0 → 0.6.0 nollställer progressionen (återställningspunkt sparas).

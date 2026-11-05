@@ -1,0 +1,170 @@
+{
+ "id": "m.att-gora-listor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Att göra-listor",
+ "titleJa": "やることリスト",
+ "descriptionSv": "Att göra-listor och ärenden: göromål, skriva upp, anteckna, glömma bort, bocka av, uträtta, ärenderunda, veckohandla och överblick.",
+ "descriptionJa": "やることリスト：{用事|ようじ}、{書|か}き{留|と}める、メモ、{忘|わす}れる、チェックを{入|い}れる、{用事|ようじ}を{済|す}ませる、まとめ{買|が}い、{全体像|ぜんたいぞう}。",
+ "categoryId": "R01-A04-T03",
+ "tags": [
+  "vardag",
+  "planering"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.morgon-och-kvallsvanor"
+ ],
+ "related": [],
+ "recommendedOrder": 415,
+ "words": [
+  {
+   "senseId": "s.att-göra-lista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.göromål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.punktlista.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skriva-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anteckna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anteckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glömma-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bocka-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uträtta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ärenderunda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.veckohandla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.steg-för-steg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rimlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.struktur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överblick.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Listan på kylskåpet",
+  "paragraphs": [
+   "På kylskåpet hänger familjens att göra-lista. Aiko skriver den som en punktlista. ”Annars kommer jag att glömma bort hälften”, säger hon.",
+   "I dag står det: veckohandla, köpa present till mormor, hämta Leo, betala räkningar. Det är många göromål.",
+   "Erik antecknar allt i mobilen. ”Mina anteckningar är alltid med mig”, säger han. Men han glömmer ofta att läsa dem.",
+   "På lördag gör Aiko en ärenderunda på stan. Hon har flera ärenden att uträtta. Hon tar dem steg för steg.",
+   "Varje gång hon är klar med något får hon bocka av det. ”Det känns så skönt!”",
+   "”Tolv saker på en dag är inte rimligt”, säger Erik. ”Men listan ger dagen struktur och överblick”, svarar Aiko. ”Skriv upp det på listan, så pratar vi om det i morgon.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var hänger att göra-listan?",
+    "options": [
+     "I hallen",
+     "I mobilen",
+     "På kylskåpet",
+     "På jobbet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På kylskåpet hänger familjens att göra-lista.",
+    "explanationJa": "{冷蔵庫|れいぞうこ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var antecknar Erik allt?",
+    "options": [
+     "På kylskåpet",
+     "I en bok",
+     "I mobilen",
+     "På en lapp"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik antecknar allt i mobilen.",
+    "explanationJa": "{携帯|けいたい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik läser alltid sina anteckningar.",
+    "correct": false,
+    "explanationSv": "Men han glömmer ofta att läsa dem.",
+    "explanationJa": "よく{読|よ}むのを{忘|わす}れます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko när hon är klar med något?",
+    "options": [
+     "Hon skriver upp det.",
+     "Hon glömmer bort det.",
+     "Hon ringer Erik.",
+     "Hon bockar av det."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Varje gång hon är klar med något får hon bocka av det.",
+    "explanationJa": "チェックを{入|い}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att Aikos lista är för lång.",
+    "correct": true,
+    "explanationSv": "”Tolv saker på en dag är inte rimligt”, säger Erik.",
+    "explanationJa": "{多|おお}すぎると{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att göra-listor och ärenden: hur ni planerar och kommer ihåg vad ni ska göra.",
+  "discussionPoints": [
+   "Skriver du att göra-listor?",
+   "Antecknar du på papper eller i mobilen?",
+   "Vilka ärenden har du den här veckan?",
+   "Vad gör du när du har för många göromål?"
+  ]
+ }
+}

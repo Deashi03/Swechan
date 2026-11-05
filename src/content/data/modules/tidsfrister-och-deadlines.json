@@ -1,0 +1,169 @@
+{
+ "id": "m.tidsfrister-och-deadlines",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tidsfrister och deadlines",
+ "titleJa": "{期限|きげん}と{締|し}め{切|き}り",
+ "descriptionSv": "Tidsfrister och deadlines: senast, sista dag, i tid, lämna in, skicka in, gå ut, giltig, förseningsavgift, anstånd och brådskande.",
+ "descriptionJa": "{期限|きげん}と{締|し}め{切|き}り：{遅|おそ}くとも、{最終日|さいしゅうび}、{期限内|きげんない}に、{提出|ていしゅつ}する、{送|おく}る、{期限|きげん}が{切|き}れる、{有効|ゆうこう}、{延滞料|えんたいりょう}、{猶予|ゆうよ}、{緊急|きんきゅう}。",
+ "categoryId": "R01-A04-T01",
+ "tags": [
+  "tid"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tidsspann-och-varaktighet"
+ ],
+ "related": [],
+ "recommendedOrder": 406,
+ "words": [
+  {
+   "senseId": "s.tidsfrist.1",
+   "active": false
+  },
+  {
+   "senseId": "s.deadline.1",
+   "active": true
+  },
+  {
+   "senseId": "s.senast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sista-dag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inlämning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gå-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.giltig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förseningsavgift.1",
+   "active": false
+  },
+  {
+   "senseId": "s.anstånd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brådskande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-sista-stund.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påbörja.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Allt på en gång",
+  "paragraphs": [
+   "Den här veckan är stressig för hela familjen. Mia har en deadline i skolan: hon måste lämna in ett skolarbete senast fredag.",
+   "Hon har inte ens påbörjat det. ”Kan jag få anstånd?” frågar hon läraren. ”Nej, tidsfristen går ut på fredag”, svarar läraren. ”Inlämning sker på internet.”",
+   "Erik måste skicka in ett papper till Skatteverket. I dag är sista dag. ”Det är brådskande!” säger han.",
+   "Aiko har glömt att betala en räkning. Nu kommer det en förseningsavgift.",
+   "Leos busskort är bara giltigt till söndag. Han måste köpa ett nytt i tid.",
+   "På fredag kväll är allt klart. ”Nästa gång börjar vi i tid”, säger Aiko. Alla skrattar, för de gör allt i sista stund varje gång."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När måste Mia lämna in skolarbetet?",
+    "options": [
+     "Senast måndag",
+     "I dag",
+     "Senast fredag",
+     "I morgon"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon måste lämna in ett skolarbete senast fredag.",
+    "explanationJa": "{遅|おそ}くとも{金曜日|きんようび}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Mia får anstånd.",
+    "correct": false,
+    "explanationSv": "”Nej, tidsfristen går ut på fredag”, svarar läraren.",
+    "explanationJa": "{延長|えんちょう}はもらえません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför måste Aiko betala en förseningsavgift?",
+    "options": [
+     "Hon kom för sent till jobbet.",
+     "Hon tappade busskortet.",
+     "Hon har glömt att betala en räkning.",
+     "Hon lämnade in för sent."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko har glömt att betala en räkning.",
+    "explanationJa": "{請求書|せいきゅうしょ}の{支払|しはら}いを{忘|わす}れたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Till när är Leos busskort giltigt?",
+    "options": [
+     "Till fredag",
+     "I en månad",
+     "Till söndag",
+     "Till måndag"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Leos busskort är bara giltigt till söndag.",
+    "explanationJa": "{日曜日|にちようび}までです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Familjen brukar göra saker i sista stund.",
+    "correct": true,
+    "explanationSv": "De gör allt i sista stund varje gång.",
+    "explanationJa": "いつもぎりぎりになります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tidsfrister och deadlines: hur ni planerar och vad som händer om man är för sen.",
+  "discussionPoints": [
+   "Brukar du göra saker i tid eller i sista stund?",
+   "Har du betalat en förseningsavgift någon gång?",
+   "Hur gör du när du har många deadlines samtidigt?",
+   "Är det vanligt att få anstånd i Japan?"
+  ]
+ }
+}

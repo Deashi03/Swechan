@@ -1,0 +1,170 @@
+{
+ "id": "m.paminnelser-och-kalender",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Påminnelser och kalender",
+ "titleJa": "リマインダーとカレンダー",
+ "descriptionSv": "Påminnelser och kalender: notis, almanacka, familjekalender, lägga in, synka, markera, återkommande, dubbelbokad, krocka och tacka ja eller nej.",
+ "descriptionJa": "リマインダーとカレンダー：{通知|つうち}、{手帳|てちょう}、{家族|かぞく}のカレンダー、{予定|よてい}を{入|い}れる、{同期|どうき}、{印|しるし}、{定期的|ていきてき}、ダブルブッキング、{重|かさ}なる、{招待|しょうたい}を{受|う}ける・{断|ことわ}る。",
+ "categoryId": "R01-A04-T03",
+ "tags": [
+  "vardag",
+  "planering"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.prioritera-uppgifter"
+ ],
+ "related": [],
+ "recommendedOrder": 417,
+ "words": [
+  {
+   "senseId": "s.påminnelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.notis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.almanacka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.familjekalender.1",
+   "active": true
+  },
+  {
+   "senseId": "s.planering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.markera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bläddra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återkommande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.heldag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dubbelbokad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.krocka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tacka-ja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tacka-nej.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Familjekalendern",
+  "paragraphs": [
+   "I köket hänger familjekalendern. Där markerar alla sina tider med olika färger. Leos träning i fotboll är återkommande varje tisdag.",
+   "Erik och Aiko synkar också sina kalendrar i mobilen. När Erik lägger in en tid får Aiko en notis.",
+   "Mormor använder inte mobilen. Hon bläddrar i sin gamla almanacka och skriver med penna.",
+   "I dag får Aiko en påminnelse: ”Tandläkaren klockan 15.” Men det krockar med ett möte! Hon är dubbelbokad.",
+   "Samtidigt kommer en inbjudan till en fest på lördag. Aiko vill tacka ja, men Erik har en kurs som är en heldag. ”Då får vi tacka nej”, säger han.",
+   "”Bra planering är allt”, säger Aiko trött."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var hänger familjekalendern?",
+    "options": [
+     "I hallen",
+     "I sovrummet",
+     "På jobbet",
+     "I köket"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I köket hänger familjekalendern.",
+    "explanationJa": "{台所|だいどころ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer när Erik lägger in en tid?",
+    "options": [
+     "Mormor ringer.",
+     "Leo får en påminnelse.",
+     "Ingenting.",
+     "Aiko får en notis."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "När Erik lägger in en tid får Aiko en notis.",
+    "explanationJa": "アイコに{通知|つうち}が{届|とど}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mormor har kalendern i mobilen.",
+    "correct": false,
+    "explanationSv": "Hon bläddrar i sin gamla almanacka och skriver med penna.",
+    "explanationJa": "{手帳|てちょう}を{使|つか}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad krockar tandläkaren med?",
+    "options": [
+     "Ett möte",
+     "En fest",
+     "Leos träning",
+     "En kurs"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Men det krockar med ett möte!",
+    "explanationJa": "{会議|かいぎ}と{重|かさ}なっています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Familjen går på festen på lördag.",
+    "correct": false,
+    "explanationSv": "”Då får vi tacka nej”, säger han.",
+    "explanationJa": "{断|ことわ}ります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kalendrar och påminnelser: hur ni håller koll på tider, i mobilen eller på papper.",
+  "discussionPoints": [
+   "Använder du kalender i mobilen eller på papper?",
+   "Har du varit dubbelbokad någon gång?",
+   "Hur många påminnelser får du per dag?",
+   "När tackar du nej till en inbjudan?"
+  ]
+ }
+}

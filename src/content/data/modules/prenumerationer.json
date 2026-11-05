@@ -1,0 +1,170 @@
+{
+ "id": "m.prenumerationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Prenumerationer",
+ "titleJa": "{定期|ていき}{購読|こうどく}",
+ "descriptionSv": "Prenumerationer: prenumeration, prenumerera, teckna, provperiod, kostnadsfri, lockerbjudande, förnya, per månad, månadskostnad, streamingtjänst, papperstidning, e-tidning, nyhetsbrev, matkasse och uppsägning.",
+ "descriptionJa": "{定期|ていき}{購読|こうどく}：サブスクリプション、{定期|ていき}{購読|こうどく}する、{申|もう}し{込|こ}む、お{試|ため}し{期間|きかん}、{無料|むりょう}の、{特別|とくべつ}オファー、{更新|こうしん}する、{月|つき}に、{月額|げつがく}{料金|りょうきん}、{配信|はいしん}サービス、{紙|かみ}の{新聞|しんぶん}、{電子|でんし}{版|ばん}の{新聞|しんぶん}、メールマガジン、ミールキット、{解約|かいやく}。",
+ "categoryId": "R01-A05-T02",
+ "tags": [
+  "handel",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vaxel-och-aterbetalning"
+ ],
+ "related": [],
+ "recommendedOrder": 513,
+ "words": [
+  {
+   "senseId": "s.prenumeration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prenumerera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.teckna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.provperiod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kostnadsfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lockerbjudande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förnya.1",
+   "active": true
+  },
+  {
+   "senseId": "s.per-månad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.månadskostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.streamingtjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.papperstidning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.e-tidning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nyhetsbrev.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matkasse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppsägning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "För många prenumerationer",
+  "paragraphs": [
+   "Erik tittar på kontot och blir förvånad. Varje månad dras det pengar för många olika prenumerationer.",
+   "Familjen har tre streamingtjänster. Den första månaden var en kostnadsfri provperiod, men sedan kostade de 129 kronor per månad. Appen förnyar prenumerationen automatiskt.",
+   "De prenumererar också på en matkasse, och Erik har en e-tidning. Morfar vill hellre läsa papperstidningen.",
+   "Förra året tecknade Aiko en prenumeration på en tidning: tre månader för en krona. Det var ett lockerbjudande. Nu har månadskostnaden blivit mycket högre.",
+   "Erik bestämmer sig för att säga upp två streamingtjänster. Uppsägningen är lätt – han trycker på en knapp i appen. Men uppsägningstiden är en månad.",
+   "Han får också många nyhetsbrev från butiker. ”Dem läser jag aldrig”, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många streamingtjänster har familjen?",
+    "options": [
+     "Tre",
+     "En",
+     "Två",
+     "Fyra"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Familjen har tre streamingtjänster.",
+    "explanationJa": "{三|みっ}つです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kostade den första månaden?",
+    "options": [
+     "129 kronor",
+     "Ingenting",
+     "En krona",
+     "Tre kronor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den första månaden var en kostnadsfri provperiod.",
+    "explanationJa": "{無料|むりょう}でした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Morfar läser hellre en e-tidning.",
+    "correct": false,
+    "explanationSv": "Morfar vill hellre läsa papperstidningen.",
+    "explanationJa": "{紙|かみ}の{新聞|しんぶん}が{好|す}きです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad var ”tre månader för en krona”?",
+    "options": [
+     "En provperiod",
+     "En uppsägning",
+     "Ett nyhetsbrev",
+     "Ett lockerbjudande"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det var ett lockerbjudande.",
+    "explanationJa": "{客|きゃく}{寄|よ}せのオファーでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik slutar betala för de två tjänsterna direkt.",
+    "correct": false,
+    "explanationSv": "Uppsägningstiden är en månad.",
+    "explanationJa": "{解約|かいやく}{予告|よこく}{期間|きかん}が1か{月|げつ}あります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om prenumerationer: vad ni prenumererar på, vad det kostar per månad och om det är lätt att säga upp.",
+  "discussionPoints": [
+   "Vilka prenumerationer har du?",
+   "Läser du nyheter i en papperstidning eller en e-tidning?",
+   "Har du glömt att säga upp en provperiod någon gång?",
+   "Finns det matkassar i Japan?"
+  ]
+ }
+}

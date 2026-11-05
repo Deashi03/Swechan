@@ -1,5 +1,5 @@
 import { getContent } from '../content/repository';
-import { completeReviewItem, ensureDailySession } from '../daily/dailySession';
+import { completeReviewItem, ensureDailySession, reviewLoad } from '../daily/dailySession';
 import { subscribe, type LearningEvent } from '../feedback/events';
 import { advanceLearnSession, isLearnSessionDone } from '../learning/learnPlan';
 import { getDb, getMeta } from '../storage/db';
@@ -125,6 +125,21 @@ describe('module flow and daily session', () => {
       for (const st of ['learn', 'read', 'converse'] as const) await completeStep(id, st);
     }
     expect((await getMeta<StreakState>('streak'))!.current).toBe(1);
+  });
+
+  it('cards for a sense that no longer exists (e.g. restored from an old backup) never enter a review plan', async () => {
+    const env = await setupTestEnv();
+    await finishLearn(MOD);
+    for (const st of ['learn', 'read', 'converse'] as const) await completeStep(MOD, st);
+    const db = getDb();
+    const live = (await db.cards.toArray())[0]!;
+    expect(live.sched).toBeDefined();
+    await db.cards.add({ ...live, id: 's.nopprig.1|meaning', senseId: 's.nopprig.1', dimension: 'meaning' }); // removed in 0.7
+    env.advanceDays(30);
+    const day = await ensureDailySession();
+    expect(day.reviewPlan.length).toBeGreaterThan(0);
+    expect(day.reviewPlan.some((id) => id.startsWith('s.nopprig.1'))).toBe(false);
+    expect((await reviewLoad()).dueToday).toBe((await db.cards.count()) - 1);
   });
 
   it('progress survives reopening the database (app closed)', async () => {

@@ -1,0 +1,169 @@
+{
+ "id": "m.gora-sig-i-ordning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Göra sig i ordning",
+ "titleJa": "{身支度|みじたく}",
+ "descriptionSv": "Att göra sig i ordning: badrumskö, borsta tänderna, tandtråd, kamma sig, fixa håret, skynda sig, redo, kolla och låsa.",
+ "descriptionJa": "{身支度|みじたく}：{洗面所|せんめんじょ}の{順番待|じゅんばんま}ち、{歯磨|はみが}き、デンタルフロス、{髪|かみ}をとかす、{髪|かみ}を{整|ととの}える、{急|いそ}ぐ、{準備|じゅんび}ができた、{確|たし}かめる、カギをかける。",
+ "categoryId": "R01-A04-T02",
+ "tags": [
+  "vardag"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vakna-och-stiga-upp"
+ ],
+ "related": [],
+ "recommendedOrder": 409,
+ "words": [
+  {
+   "senseId": "s.göra-sig-i-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.badrumskö.1",
+   "active": false
+  },
+  {
+   "senseId": "s.borsta-tänderna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandtråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.munskölj.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kamma-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fixa-håret.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fräscha-upp-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nyduschad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skynda-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.redo.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stå-på-tur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ha-bråttom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvätta-ansiktet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Badrumskö",
+  "paragraphs": [
+   "Varje morgon är det badrumskö hemma hos familjen. Alla ska göra sig i ordning samtidigt.",
+   "Aiko är först. Hon kommer ut nyduschad efter tio minuter. ”Vem står på tur?” frågar hon.",
+   "Mia vill fixa håret och sminka sig, men Leo måste bara tvätta ansiktet och borsta tänderna. Erik använder tandtråd och munskölj, för tandläkaren har sagt det.",
+   "Leo vill inte kamma sig. ”Det blir ändå tovigt”, säger han.",
+   "”Nu måste alla skynda sig, vi har bråttom!” säger Aiko. Klockan är kvart i åtta. ”Är alla redo?”",
+   "Erik kollar att alla har sina nycklar och ska låsa ytterdörren. Då säger Leo: ”Vänta, Mia vill bara fräscha upp sig!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför är det badrumskö?",
+    "options": [
+     "Badrummet är trasigt.",
+     "Det finns bara en dusch.",
+     "Mia duschar länge.",
+     "Alla ska göra sig i ordning samtidigt."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Alla ska göra sig i ordning samtidigt.",
+    "explanationJa": "みんなが{同時|どうじ}に{身支度|みじたく}をするからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem är först i badrummet?",
+    "options": [
+     "Erik",
+     "Mia",
+     "Leo",
+     "Aiko"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko är först.",
+    "explanationJa": "アイコです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik använder tandtråd.",
+    "correct": true,
+    "explanationSv": "Erik använder tandtråd och munskölj.",
+    "explanationJa": "デンタルフロスを{使|つか}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför vill Leo inte kamma sig?",
+    "options": [
+     "Han har ingen kam.",
+     "Han har bråttom.",
+     "Han ska klippa sig.",
+     "Håret blir ändå tovigt."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Det blir ändå tovigt”, säger han.",
+    "explanationJa": "どうせもつれるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia är den som tar längst tid.",
+    "correct": true,
+    "explanationSv": "”Vänta, Mia vill bara fräscha upp sig!”",
+    "explanationJa": "{最後|さいご}まで{時間|じかん}がかかっています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni gör er i ordning på morgonen och hur lång tid det tar.",
+  "discussionPoints": [
+   "Hur lång tid tar det för dig att göra dig i ordning?",
+   "Är det badrumskö där du bor?",
+   "Vad gör du först på morgonen?",
+   "Kollar du alltid att du har låst dörren?"
+  ]
+ }
+}

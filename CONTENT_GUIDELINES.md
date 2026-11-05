@@ -70,7 +70,10 @@ Utkast i `content/drafts/` ingår aldrig i appen. Status `reviewed` på en betyd
 - **Rätt ord i rätt ämne.** Sök i katalogen (`planning/catalog/swechan-catalog.v1.json`) efter titlar som passar ordet bättre innan det görs till målord; spara t.ex. ekonomiord till Samhälle → Privatekonomi och kroppsord till Människan.
 - **Sammansättningar** av två kända ord godtas av ordförrådskontrollen (`fläskfilé`, `vardagsmat`), men målordet självt räknas bara om det står i sin egen form i lästexten. Partikelverb måste stå sammanhängande ("hoppa över", inte "hoppar Erik över"); passiv form och delade partiklar känns inte igen.
 - **Pluraliska ord** (*sopor*, *jeans* m.fl.): använd singularlemma om det finns, annars en post utan böjning (`kind: none`) och bara grundformen i texterna. Reflexiva verb (*ta på sig*) har ingen `particle`.
-- **Bild:** varje ny modul får ett motiv i `src/ui/art/motifs.ts` (stil "Platt"). Granska med `npm run art:sheet`.
+- **Bild:** från 0.7 läggs moduler till utan bild (produktägarens beslut i väntan på ny bild- och animationsinfrastruktur). Lägg inte till nya motiv eller ordbilder utan nytt beslut. `art.test.ts` kräver bara att de bilder som finns är unika.
+- **Omvänd ordföljd** ("Har du jämnt?", "fyller hon ut") bryter målord som består av flera ord. Skriv om till rak ordföljd ("Det är bra om du har jämnt", "hon måste fylla ut"). Genitiv ("mottagarens") och reflexiv i andra person ("ångrar dig") känns inte heller igen.
+- **Kolla både singular och plural** med `known.py`/ordboken innan ett ord görs till målord (*torrvaror* → finns som *torrvara*, *arbetsdagar* → *arbetsdag*).
+- **Ta inte bort publicerade `s.*`-ID:n.** Måste en dubblett slås ihop (som `s.nopprig.1` → `s.noppig.1` i 0.7): dokumentera det i CHANGELOG. Gamla kort för den borttagna betydelsen ignoreras av repetitionen (`liveCards()`).
 - **Japansk glosa:** undvik att lägga ett annat ords huvudglosa inom parentes (t.ex. 「靴屋（修理）」) – parentesdelen blir en egen sökterm i ordboken.
 
 ## Bilder på orden (0.6)

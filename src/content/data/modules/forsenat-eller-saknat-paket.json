@@ -1,0 +1,170 @@
+{
+ "id": "m.forsenat-eller-saknat-paket",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Försenat eller saknat paket",
+ "titleJa": "{遅|おく}れた・{届|とど}かない{荷物|にもつ}",
+ "descriptionSv": "Försenat eller saknat paket: leveransproblem, dröja, stå still, saknad, försvunnen, komma bort, felsorterad, spårlöst, fraktbolag, efterforska, efterforskning, missad leverans, skadad, transportskada och skicka ett nytt.",
+ "descriptionJa": "{遅|おく}れた・{届|とど}かない{荷物|にもつ}：{配送|はいそう}トラブル、{時間|じかん}がかかる、{止|と}まったまま、{届|とど}いていない、{行方不明|ゆくえふめい}、{紛失|ふんしつ}する、{仕分|しわ}けミス、{跡形|あとかた}もなく、{運送|うんそう}{会社|がいしゃ}、{調査|ちょうさ}する、{調査|ちょうさ}、{不在|ふざい}{配達|はいたつ}、{破損|はそん}した、{輸送中|ゆそうちゅう}の{破損|はそん}、{新|あたら}しく{送|おく}る。",
+ "categoryId": "R01-A05-T05",
+ "tags": [
+  "post",
+  "problem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.adress-och-postnummer"
+ ],
+ "related": [],
+ "recommendedOrder": 535,
+ "words": [
+  {
+   "senseId": "s.leveransproblem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dröja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stå-still.1",
+   "active": true
+  },
+  {
+   "senseId": "s.saknad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försvunnen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felsorterad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spårlöst.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fraktbolag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.efterforska.1",
+   "active": false
+  },
+  {
+   "senseId": "s.efterforskning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.missad-leverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transportskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-ett-nytt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är paketet?",
+  "paragraphs": [
+   "Erik har beställt en ny lampa. Leveranstiden skulle vara tre dagar, men nu har det dröjt två veckor. Spårningen har stått still i fem dagar.",
+   "På butikens sida står det: ”Vi har tyvärr leveransproblem just nu.” Erik ringer och säger att han vill anmäla ett saknat paket. ”Det är försvunnet”, säger han.",
+   "Butiken kontaktar fraktbolaget. Paketet har kommit bort. Kanske var det felsorterat och åkte till fel stad. ”Vi ska efterforska paketet”, säger de. Efterforskningen kan ta två veckor.",
+   "Grannen säger: ”Jag fick en lapp om missad leverans förra veckan. Kanske var det ditt paket?” Men det var grannens eget.",
+   "Till slut är det butiken som skickar ett nytt paket. Det kommer efter tre dagar. Men kartongen är skadad, och lampan har en transportskada.",
+   "Och det första paketet? Det har försvunnit spårlöst. ”Paket är som katter”, säger Erik. ”De kommer när de vill.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge har Erik väntat?",
+    "options": [
+     "Tre dagar",
+     "Två veckor",
+     "Fem dagar",
+     "En månad"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nu har det dröjt två veckor.",
+    "explanationJa": "2{週間|しゅうかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad står det på butikens sida?",
+    "options": [
+     "Att de har leveransproblem",
+     "Att paketet är levererat",
+     "Att lampan är slutsåld",
+     "Att butiken är stängd"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Vi har tyvärr leveransproblem just nu.”",
+    "explanationJa": "{配送|はいそう}トラブルがあることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Grannens lapp gällde Eriks paket.",
+    "correct": false,
+    "explanationSv": "Men det var grannens eget.",
+    "explanationJa": "{隣|となり}の{人|ひと}{自身|じしん}の{荷物|にもつ}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är fel med det nya paketet?",
+    "options": [
+     "Det är fel lampa",
+     "Det kom till fel adress",
+     "Det är tomt",
+     "Lampan har en transportskada"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Kartongen är skadad, och lampan har en transportskada.",
+    "explanationJa": "{輸送中|ゆそうちゅう}に{壊|こわ}れました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik hittade det första paketet till slut.",
+    "correct": false,
+    "explanationSv": "Det har försvunnit spårlöst.",
+    "explanationJa": "{見|み}つかりませんでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om paket som är försenade eller har kommit bort: vad ni gör, vem ni kontaktar och hur länge ni väntar.",
+  "discussionPoints": [
+   "Har ett paket kommit bort för dig någon gång?",
+   "Vem kontaktar du först – butiken eller fraktbolaget?",
+   "Har du fått ett paket med en transportskada?",
+   "Kommer paket ofta bort i Japan?"
+  ]
+ }
+}

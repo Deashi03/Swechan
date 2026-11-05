@@ -1,0 +1,169 @@
+{
+ "id": "m.harvardsprodukter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hårvårdsprodukter",
+ "titleJa": "ヘアケア{製品|せいひん}",
+ "descriptionSv": "Hårvård: hårinpackning, hårolja, torrschampo, hårspray, hårvax, hårfärg, slingor, hårtork, föna, plattång och locktång.",
+ "descriptionJa": "ヘアケア：ヘアパック、ヘアオイル、ドライシャンプー、ヘアスプレー、ワックス、ヘアカラー、メッシュ、ドライヤー、ストレートアイロン、カールアイロン。",
+ "categoryId": "R01-A03-T06",
+ "tags": [
+  "skönhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.frisyrer-och-hartyper"
+ ],
+ "related": [],
+ "recommendedOrder": 337,
+ "words": [
+  {
+   "senseId": "s.hårinpackning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hårolja.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hårsnodd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mjäll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torrschampo.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spraya.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårspray.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårvax.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårfärg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slinga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hårtork.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plattång.1",
+   "active": false
+  },
+  {
+   "senseId": "s.locktång.1",
+   "active": false
+  },
+  {
+   "senseId": "s.värmeskydd.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Badrumshyllan",
+  "paragraphs": [
+   "Badrumshyllan är full av saker för håret. Där står schampo och balsam, men också hårinpackning, hårolja och torrschampo.",
+   "Erik har bara ett schampo mot mjäll och lite hårvax. ”Mer behöver jag inte”, säger han.",
+   "Mia har lockigt hår och har alltid en hårsnodd på handleden. Ibland vill hon ha håret rakt. Då använder hon plattång. ”Glöm inte att spraya värmeskydd först”, säger Aiko.",
+   "Aiko själv fönar håret varje morgon med hårtorken. Till fest gör hon håret lockigt med locktången och sprayar hårspray.",
+   "Mia har färgat rosa slingor i håret. ”Vilken hårfärg ska jag ha nästa gång?” frågar hon.",
+   "Mormor säger att för mycket värme ger slitna toppar. ”Lite olja i topparna hjälper”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har Erik på badrumshyllan?",
+    "options": [
+     "Hårolja och plattång",
+     "Schampo mot mjäll och hårvax",
+     "Locktång och hårspray",
+     "Hårinpackning"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik har bara ett schampo mot mjäll och lite hårvax.",
+    "explanationJa": "ふけ{用|よう}シャンプーとワックスです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad använder Mia för att göra håret rakt?",
+    "options": [
+     "Locktång",
+     "Hårtork",
+     "Hårspray",
+     "Plattång"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Då använder hon plattång.",
+    "explanationJa": "ストレートアイロンです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Man ska spraya värmeskydd innan man använder plattång.",
+    "correct": true,
+    "explanationSv": "”Glöm inte att spraya värmeskydd först.”",
+    "explanationJa": "{先|さき}に{熱|ねつ}ダメージ{防止剤|ぼうしざい}をスプレーします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vilken färg har Mias slingor?",
+    "options": [
+     "Blå",
+     "Rosa",
+     "Ljusa",
+     "Gröna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mia har färgat rosa slingor i håret.",
+    "explanationJa": "ピンクです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor tycker att man ska vara försiktig med värme.",
+    "correct": true,
+    "explanationSv": "Mormor säger att för mycket värme ger slitna toppar.",
+    "explanationJa": "{熱|ねつ}が{多|おお}すぎると{毛先|けさき}が{傷|いた}むと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hårvård: vilka produkter ni använder och hur ni tar hand om håret.",
+  "discussionPoints": [
+   "Hur många hårprodukter har du hemma?",
+   "Fönar du håret varje dag?",
+   "Har du färgat håret någon gång?",
+   "Vilka hårprodukter är populära i Japan?"
+  ]
+ }
+}

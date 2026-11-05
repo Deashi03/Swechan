@@ -1,0 +1,169 @@
+{
+ "id": "m.fore-och-efter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Före och efter",
+ "titleJa": "{前|まえ}と{後|あと}",
+ "descriptionSv": "Före och efter: i förväg, strax, så fort, samtidigt, under tiden, därefter, innan dess, fram till, sedan dess och i efterhand.",
+ "descriptionJa": "{時|とき}の{前後|ぜんご}：{前|まえ}もって、まもなく、〜したらすぐ、{同時|どうじ}に、その{間|あいだ}に、そのあと、それより{前|まえ}、〜まで、それ{以来|いらい}、あとになって。",
+ "categoryId": "R01-A04-T01",
+ "tags": [
+  "tid"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.arstider-och-datum"
+ ],
+ "related": [],
+ "recommendedOrder": 404,
+ "words": [
+  {
+   "senseId": "s.i-förväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strax.1",
+   "active": true
+  },
+  {
+   "senseId": "s.så-fort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samtidigt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.under-tiden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.därefter.1",
+   "active": false
+  },
+  {
+   "senseId": "s.innan-dess.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dessförinnan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.till-dess.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fram-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sedan-dess.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-efterhand.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-förrgår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-övermorgon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förrförra.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett kalas att planera",
+  "paragraphs": [
+   "Leo fyller nio år i övermorgon. Aiko och Erik har planerat kalaset i förväg. Inbjudan skickade de förrförra veckan.",
+   "”Kalaset börjar klockan två och pågår fram till fem”, säger Aiko. ”Innan dess måste vi handla, städa och baka.”",
+   "Erik bakar tårtan. Under tiden dukar Mia bordet. Leo vill hjälpa till med allt samtidigt.",
+   "”Först kommer gästerna, därefter leker vi, och sedan blir det tårta”, säger Aiko. ”Dessförinnan ska alla tvätta händerna”, skrattar Erik.",
+   "I förrgår ringde mormor. Hon kommer strax efter lunch. ”Ring mig så fort du är framme”, säger Aiko.",
+   "Förra året blev det kaos, men i efterhand var alla glada. Sedan dess vill Leo ha kalas varje år. ”Till dess får du vänta lite”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När fyller Leo år?",
+    "options": [
+     "I förrgår",
+     "I övermorgon",
+     "I morgon",
+     "I dag"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Leo fyller nio år i övermorgon.",
+    "explanationJa": "あさってです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När skickade de inbjudan?",
+    "options": [
+     "Förra veckan",
+     "I går",
+     "I förrgår",
+     "Förrförra veckan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Inbjudan skickade de förrförra veckan.",
+    "explanationJa": "{先々週|せんせんしゅう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Kalaset pågår fram till fem.",
+    "correct": true,
+    "explanationSv": "”Kalaset börjar klockan två och pågår fram till fem.”",
+    "explanationJa": "5{時|じ}までです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Mia medan Erik bakar?",
+    "options": [
+     "Hon städar.",
+     "Hon dukar bordet.",
+     "Hon handlar.",
+     "Hon ringer mormor."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik bakar tårtan. Under tiden dukar Mia bordet.",
+    "explanationJa": "テーブルの{用意|ようい}をします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Förra årets kalas blev ett bra minne.",
+    "correct": true,
+    "explanationSv": "Förra året blev det kaos, men i efterhand var alla glada.",
+    "explanationJa": "あとになってみんな{喜|よろこ}びました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ordning i tid: vad som händer före, under och efter, när ni planerar något.",
+  "discussionPoints": [
+   "Brukar du planera saker i förväg?",
+   "Vad gör du innan du går till jobbet eller skolan?",
+   "Kan du göra två saker samtidigt?",
+   "Har du ändrat åsikt om något i efterhand?"
+  ]
+ }
+}

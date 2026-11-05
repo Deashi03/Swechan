@@ -1,0 +1,169 @@
+{
+ "id": "m.plagg-som-sitter-lost-eller-tajt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Plagg som sitter löst eller tajt",
+ "titleJa": "ゆったりした{服|ふく}とぴったりした{服|ふく}",
+ "descriptionSv": "Hur kläder sitter: passform, tajt, löst, säckig, oversize, sitta åt och sitta som gjuten.",
+ "descriptionJa": "{服|ふく}の{着|き}{心地|ごこち}：フィット{感|かん}、タイト、ゆったり、だぶだぶ、オーバーサイズ、きつい、ぴったり。",
+ "categoryId": "R01-A03-T04",
+ "tags": [
+  "kläder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kladstorlekar-och-matt"
+ ],
+ "related": [],
+ "recommendedOrder": 323,
+ "words": [
+  {
+   "senseId": "s.passform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tajt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åtsittande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säckig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oversize.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slimmad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.figurnära.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sitta-åt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strama.1",
+   "active": false
+  },
+  {
+   "senseId": "s.glappa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pösa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stretchig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sitta-som-gjuten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörelsefrihet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Sitter den bra?",
+  "paragraphs": [
+   "Erik ska köpa en ny kavaj till jobbet. Han vill ha en bra passform, men det är svårt att hitta.",
+   "Den första kavajen är slimmad. Den sitter åt när han knäpper den, och den stramar över ryggen när han lyfter armarna. ”Jag har ingen rörelsefrihet”, säger han. ”Ta en stretchig modell”, säger försäljaren.",
+   "Den andra är för stor. Den glappar vid halsen och pöser vid magen. ”Den ser säckig ut”, säger Aiko.",
+   "Mia provar också. Hon gillar oversize tröjor som sitter löst, men Aiko tycker om figurnära och åtsittande kläder.",
+   "”Tajt eller löst, det är en fråga om stil”, säger försäljaren.",
+   "Till sist hittar Erik en kavaj i rätt storlek. ”Den sitter som gjuten!” säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är problemet med den första kavajen?",
+    "options": [
+     "Den är för stor.",
+     "Den har fel färg.",
+     "Den är för dyr.",
+     "Den sitter åt och stramar."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den sitter åt när han knäpper den, och den stramar över ryggen.",
+    "explanationJa": "きつくてつっぱります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur är den andra kavajen?",
+    "options": [
+     "För liten",
+     "Perfekt",
+     "För kort",
+     "För stor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den andra är för stor.",
+    "explanationJa": "{大|おお}きすぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia gillar kläder som sitter löst.",
+    "correct": true,
+    "explanationSv": "Hon gillar oversize tröjor som sitter löst.",
+    "explanationJa": "ゆったりした{服|ふく}が{好|す}きです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad tycker Aiko om?",
+    "options": [
+     "Oversize tröjor",
+     "Säckiga kläder",
+     "Kavajer",
+     "Figurnära och åtsittande kläder"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko tycker om figurnära och åtsittande kläder.",
+    "explanationJa": "{体|からだ}にぴったりした{服|ふく}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik hittar en kavaj som passar perfekt.",
+    "correct": true,
+    "explanationSv": "”Den sitter som gjuten!”",
+    "explanationJa": "ぴったりです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur kläder sitter: tajt eller löst, passform och vad som känns skönt.",
+  "discussionPoints": [
+   "Tycker du om kläder som sitter tajt eller löst?",
+   "Har du köpt något som inte satt bra?",
+   "Vad är viktigast för dig: att ett plagg är snyggt eller skönt?",
+   "Är oversize kläder populära i Japan?"
+  ]
+ }
+}

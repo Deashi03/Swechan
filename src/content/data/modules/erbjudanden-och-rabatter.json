@@ -1,0 +1,171 @@
+{
+ "id": "m.erbjudanden-och-rabatter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Erbjudanden och rabatter",
+ "titleJa": "お{買|か}い{得|どく}と{割引|わりびき}",
+ "descriptionSv": "Erbjudanden och rabatter: reklamblad, erbjudande, kampanj, extrapris, rabatt, nedsatt, halva priset, tre för två, rea, medlemspris, bonus, kupong, per hushåll, slå till och passa på.",
+ "descriptionJa": "お{買|か}い{得|どく}と{割引|わりびき}：チラシ、お{買|か}い{得|どく}{品|ひん}、キャンペーン、{特売|とくばい}{価格|かかく}、{割引|わりびき}、{値下|ねさ}げ、{半額|はんがく}、{三|みっ}つで{二|ふた}つ{分|ぶん}、セール、{会員|かいいん}{価格|かかく}、ポイント、クーポン、{一世帯|いっせたい}あたり、{飛|と}びつく、この{機会|きかい}に。",
+ "categoryId": "R01-A05-T01",
+ "tags": [
+  "handel",
+  "butik",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kassa-och-betalning"
+ ],
+ "related": [],
+ "recommendedOrder": 506,
+ "words": [
+  {
+   "senseId": "s.reklamblad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.erbjudande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kampanj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.extrapris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rabatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nedsatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halva-priset.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tre-för-två.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rea.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medlemspris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bonus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kupong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.per-hushåll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passa-på.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Veckans erbjudanden",
+  "paragraphs": [
+   "På söndag ligger ett reklamblad i brevlådan. Aiko läser om veckans erbjudanden. Det är kampanj på kaffe: det är på extrapris, högst tre paket per hushåll.",
+   "”Vi måste passa på!” säger hon. När de kommer till butiken finns det inte så många paket kvar. Erik slår till och tar tre direkt.",
+   "Det är också tre för två på yoghurt. Brödet från i går är nedsatt, och allt kött är till halva priset eftersom det har sista förbrukningsdag i dag.",
+   "Aiko är medlem i butikens klubb. Hon får medlemspris på ost och bonus varje gång hon handlar. I appen har hon också en kupong som ger tjugo kronor rabatt.",
+   "Erik vill gå till rean i en butik bredvid. ”Allt är billigare där nu”, säger han.",
+   "”Men vi behöver inga nya kläder”, säger Aiko. ”Det är inte billigt om man inte behöver det!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var läser Aiko om erbjudandena?",
+    "options": [
+     "I tidningen",
+     "På tv",
+     "I ett reklamblad",
+     "På jobbet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko läser om veckans erbjudanden i reklambladet.",
+    "explanationJa": "チラシで{読|よ}みます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur många paket kaffe får man köpa?",
+    "options": [
+     "Hur många som helst",
+     "Högst tre per hushåll",
+     "Ett per person",
+     "Två per hushåll"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det är på extrapris, högst tre paket per hushåll.",
+    "explanationJa": "{一世帯|いっせたい}3パックまでです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför är köttet till halva priset?",
+    "options": [
+     "Det har sista förbrukningsdag i dag",
+     "Det är kampanj",
+     "Det är rea",
+     "Det är medlemspris"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Allt kött är till halva priset eftersom det har sista förbrukningsdag i dag.",
+    "explanationJa": "{消費|しょうひ}{期限|きげん}が{今日|きょう}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aiko har en kupong i appen.",
+    "correct": true,
+    "explanationSv": "I appen har hon också en kupong som ger tjugo kronor rabatt.",
+    "explanationJa": "アプリにクーポンがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko vill gå till rean.",
+    "correct": false,
+    "explanationSv": "”Men vi behöver inga nya kläder”, säger Aiko.",
+    "explanationJa": "アイコは{行|い}きたくありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om erbjudanden och rabatter: om ni läser reklamblad, om ni är medlemmar i någon klubb och om ni handlar på rea.",
+  "discussionPoints": [
+   "Läser du reklamblad eller tittar på erbjudanden i en app?",
+   "Köper du mer när det är tre för två?",
+   "Vad köper du helst på rea?",
+   "Finns det halva priset på mat på kvällen i Japan?"
+  ]
+ }
+}

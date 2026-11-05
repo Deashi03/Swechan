@@ -1,0 +1,171 @@
+{
+ "id": "m.kassa-och-betalning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kassa och betalning",
+ "titleJa": "レジと{支払|しはら}い",
+ "descriptionSv": "I kassan: kassa, kassör, snabbkassa, scanna, självscanning, handskanner, stickprov, kassaband, varuavdelare, kortterminal, blippa, godkänd, packa ner, bärkasse och papperspåse.",
+ "descriptionJa": "レジで：レジ、レジ{係|がかり}、{少量|しょうりょう}{専用|せんよう}レジ、スキャンする、セルフスキャン、ハンドスキャナー、{抜|ぬ}き{取|と}り{検査|けんさ}、ベルト、{仕切|しき}り{棒|ぼう}、カード{端末|たんまつ}、かざして{払|はら}う、{承認|しょうにん}、{詰|つ}める、{買|か}い{物|もの}{袋|ぶくろ}、{紙袋|かみぶくろ}。",
+ "categoryId": "R01-A05-T01",
+ "tags": [
+  "handel",
+  "butik",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hitta-ratt-produkt"
+ ],
+ "related": [],
+ "recommendedOrder": 505,
+ "words": [
+  {
+   "senseId": "s.kassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kassör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snabbkassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.scanna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självscanning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handskanner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stickprov.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kassaband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varuavdelare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kortterminal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blippa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.packa-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bärkasse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.papperspåse.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "I kassan",
+  "paragraphs": [
+   "Erik och Mia har handlat klart. Det är lång kö till alla kassor. ”Vi har för många varor för snabbkassan”, säger Erik.",
+   "Aiko brukar använda självscanning. Då tar hon en handskanner vid ingången och scannar varorna medan hon handlar. Ibland blir det stickprov.",
+   "Men i dag ställer sig Erik och Mia i kö. Mia lägger varorna på kassabandet, och Erik lägger en varuavdelare efter dem.",
+   "Kassören hälsar och läser av streckkoderna. ”Det blir 412 kronor. Vill du ha en bärkasse?” – ”Två papperspåsar, tack.”",
+   "Erik blippar sitt kort på kortterminalen. ”Godkänt”, står det.",
+   "Mia packar ner varorna. Mjölken och köttet lägger hon i samma påse, så att det håller sig kallt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går de inte till snabbkassan?",
+    "options": [
+     "Den är stängd",
+     "Det är lång kö där",
+     "Mia vill inte",
+     "De har för många varor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Vi har för många varor för snabbkassan.”",
+    "explanationJa": "{商品|しょうひん}が{多|おお}すぎるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad brukar Aiko använda?",
+    "options": [
+     "Snabbkassan",
+     "Kortterminalen",
+     "Självscanning",
+     "En bärkasse"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko brukar använda självscanning.",
+    "explanationJa": "セルフスキャンです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik lägger en varuavdelare efter varorna.",
+    "correct": true,
+    "explanationSv": "Erik lägger en varuavdelare efter dem.",
+    "explanationJa": "{仕切|しき}り{棒|ぼう}を{置|お}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur betalar Erik?",
+    "options": [
+     "Med kontanter",
+     "Han blippar sitt kort",
+     "Med mobilen",
+     "Mia betalar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik blippar sitt kort på kortterminalen.",
+    "explanationJa": "カードをかざします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik och Mia får bärkassar.",
+    "correct": false,
+    "explanationSv": "”Två papperspåsar, tack.”",
+    "explanationJa": "{紙袋|かみぶくろ}をもらいます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kassan i mataffären: kö, självscanning, hur ni betalar och vilka påsar ni använder.",
+  "discussionPoints": [
+   "Använder du självscanning? Varför eller varför inte?",
+   "Hur betalar du oftast i kassan?",
+   "Tar du med en egen kasse, eller köper du en påse?",
+   "Hur ser kassan ut i en japansk mataffär?"
+  ]
+ }
+}

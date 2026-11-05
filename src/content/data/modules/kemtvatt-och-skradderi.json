@@ -1,0 +1,170 @@
+{
+ "id": "m.kemtvatt-och-skradderi",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kemtvätt och skrädderi",
+ "titleJa": "クリーニングと{洋服|ようふく}{直|なお}し",
+ "descriptionSv": "Kemtvätt och skrädderi: kemtvätt, tvätteri, skjorttvätt, fläckbehandling, inlämningslapp, skrädderi, skräddare, ändringssömnad, korta, sy in, sy om, byta dragkedja, lagningsbar, måttsydd och provning.",
+ "descriptionJa": "クリーニングと{洋服|ようふく}{直|なお}し：ドライクリーニング、クリーニング{店|てん}、ワイシャツのクリーニング、しみ{抜|ぬ}き、{引換券|ひきかえけん}、{仕立|した}て{屋|や}、{仕立|した}て{職人|しょくにん}、お{直|なお}し、{裾|すそ}を{詰|つ}める、{細|ほそ}くする、{仕立|した}て{直|なお}す、ファスナー{交換|こうかん}、{直|なお}せる、オーダーメイド、{試着|しちゃく}。",
+ "categoryId": "R01-A05-T06",
+ "tags": [
+  "tjänster",
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.boka-hantverkare"
+ ],
+ "related": [],
+ "recommendedOrder": 537,
+ "words": [
+  {
+   "senseId": "s.kemtvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvätteri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjorttvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläckbehandling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inlämningslapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrädderi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skräddare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ändringssömnad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.korta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sy-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sy-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-dragkedja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagningsbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.måttsydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.provning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Före bröllopet",
+  "paragraphs": [
+   "Erik ska på bröllop. Hans kostym har en fläck, så han tar den till kemtvätten. Fläckbehandling kostar extra. Han lämnar också fem skjortor till skjorttvätt.",
+   "Han får en inlämningslapp. ”Kostymen är klar på torsdag. Glöm inte lappen”, säger personalen. Täcket lämnar Aiko på ett tvätteri.",
+   "Bredvid kemtvätten ligger ett skrädderi. På skylten står det: ”Ändringssömnad”. Erik vill korta byxorna, och skräddaren mäter hans ben.",
+   "Aikos klänning är lite för stor. Skräddaren ska sy in den. Mormor har en gammal klänning som hon vill sy om till en kjol.",
+   "Leos jacka har en trasig dragkedja. ”Är den lagningsbar?” frågar Aiko. ”Ja, vi kan byta dragkedja för 300 kronor.”",
+   "Brudgummen har en måttsydd kostym. Han har varit på provning tre gånger."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför tar Erik kostymen till kemtvätten?",
+    "options": [
+     "Den har en fläck",
+     "Den är för stor",
+     "Den är trasig",
+     "Den är ny"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hans kostym har en fläck, så han tar den till kemtvätten.",
+    "explanationJa": "しみがあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När är kostymen klar?",
+    "options": [
+     "På fredag",
+     "I morgon",
+     "Om en vecka",
+     "På torsdag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Kostymen är klar på torsdag.”",
+    "explanationJa": "{木曜日|もくようび}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad vill Erik göra med byxorna?",
+    "options": [
+     "Korta dem",
+     "Sy in dem",
+     "Byta dragkedja",
+     "Tvätta dem"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Erik vill korta byxorna.",
+    "explanationJa": "{裾|すそ}を{詰|つ}めたいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Leos jacka går inte att laga.",
+    "correct": false,
+    "explanationSv": "”Ja, vi kan byta dragkedja för 300 kronor.”",
+    "explanationJa": "{直|なお}せます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Brudgummens kostym är sydd efter hans mått.",
+    "correct": true,
+    "explanationSv": "Brudgummen har en måttsydd kostym.",
+    "explanationJa": "オーダーメイドです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kemtvätt och skrädderi: vad ni lämnar till kemtvätt, om ni lagar kläder och om ni har något måttsytt.",
+  "discussionPoints": [
+   "Vad lämnar du till kemtvätt?",
+   "Har du kortat byxor eller bytt dragkedja hos en skräddare?",
+   "Lagar du kläder själv eller köper du nytt?",
+   "Är det vanligt med kemtvätt i Japan?"
+  ]
+ }
+}

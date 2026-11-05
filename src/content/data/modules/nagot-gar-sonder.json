@@ -1,0 +1,170 @@
+{
+ "id": "m.nagot-gar-sonder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Något går sönder",
+ "titleJa": "{何|なに}かが{壊|こわ}れる",
+ "descriptionSv": "När något går sönder: gå av, gå i bitar, slå sönder, krångla, strejka, ur funktion, skärva, sopa upp, utsliten, tejpa och limma ihop, reservdel, reparation och lämna in på lagning.",
+ "descriptionJa": "{何|なに}かが{壊|こわ}れたとき：{折|お}れる、こなごなになる、{割|わ}る、{調子|ちょうし}が{悪|わる}い、{故障中|こしょうちゅう}、{破片|はへん}、{掃|は}き{集|あつ}める、すり{切|き}れた、テープや{接着剤|せっちゃくざい}で{直|なお}す、{部品|ぶひん}、{修理|しゅうり}、{修理|しゅうり}に{出|だ}す。",
+ "categoryId": "R01-A04-T06",
+ "tags": [
+  "vardag",
+  "problem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.tappa-bort-saker"
+ ],
+ "related": [],
+ "recommendedOrder": 437,
+ "words": [
+  {
+   "senseId": "s.gå-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-i-bitar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-sönder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krångla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strejka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ur-funktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.olyckligtvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sopa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsliten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tejpa-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.limma-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservdel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-in-på-lagning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reparation.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag när allt går sönder",
+  "paragraphs": [
+   "Det börjar redan på morgonen. Olyckligtvis tappar Aiko en tallrik, och den går i bitar på golvet. Erik sopar upp skärvorna.",
+   "Sedan ska Leo öppna en låda, men handtaget går av. ”Vi kan limma ihop det”, säger Erik. Leo tejpar ihop sin trasiga bok också.",
+   "Mia spelar boll inne och slår sönder en lampa. Samtidigt krånglar datorn, och mitt i tvätten strejkar tvättmaskinen.",
+   "Erik ringer en butik. ”Vi har inga reservdelar till så gamla maskiner”, säger de. Reparationen blir dyr.",
+   "I huset är hissen dessutom ur funktion, så Aiko får bära allt i trappan. Hennes gamla skor är helt utslitna.",
+   "På kvällen säger Erik: ”Datorn måste jag lämna in på lagning. I morgon blir en bättre dag.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad går i bitar på morgonen?",
+    "options": [
+     "En lampa",
+     "En kopp",
+     "Ett glas",
+     "En tallrik"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko tappar en tallrik, och den går i bitar.",
+    "explanationJa": "お{皿|さら}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem sopar upp skärvorna?",
+    "options": [
+     "Aiko",
+     "Leo",
+     "Erik",
+     "Mia"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik sopar upp skärvorna.",
+    "explanationJa": "エリックです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia slår sönder en lampa.",
+    "correct": true,
+    "explanationSv": "Mia spelar boll inne och slår sönder en lampa.",
+    "explanationJa": "ミアがランプを{割|わ}りました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför får Aiko gå i trappan?",
+    "options": [
+     "Hon vill träna",
+     "Hissen är ur funktion",
+     "Hissen är full",
+     "Hon har bråttom"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hissen är ur funktion, så Aiko får bära allt i trappan.",
+    "explanationJa": "エレベーターが{故障中|こしょうちゅう}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är lätt att laga tvättmaskinen.",
+    "correct": false,
+    "explanationSv": "De har inga reservdelar, och reparationen blir dyr.",
+    "explanationJa": "{部品|ぶひん}がなく、{修理|しゅうり}は{高|たか}くなります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker som går sönder: vad som har gått sönder hemma, om ni lagar själva eller lämnar in på lagning.",
+  "discussionPoints": [
+   "Vad gick sönder senast hemma hos dig?",
+   "Lagar du saker själv, till exempel med lim eller tejp?",
+   "Har du någon gång slagit sönder något av misstag?",
+   "Är det vanligt att man lämnar in saker på lagning i Japan?"
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "id": "m.bankkort-och-kontanter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bankkort och kontanter",
+ "titleJa": "カードと{現金|げんきん}",
+ "descriptionSv": "Bankkort och kontanter: bankkort, betalkort, kreditkort, kortnummer, pinkod, knappa in, kontaktlös, neka, täckning, ta ut pengar, uttagsautomat, kontantfri, kontant, ta emot och ta betalt.",
+ "descriptionJa": "カードと{現金|げんきん}：キャッシュカード、デビットカード、クレジットカード、カード{番号|ばんごう}、{暗証番号|あんしょうばんごう}、{入力|にゅうりょく}する、タッチ{決済|けっさい}、{拒否|きょひ}する、{残高|ざんだか}、{引|ひ}き{出|だ}す、ATM、キャッシュレス、{現金|げんきん}の、{受|う}け{付|つ}ける、{代金|だいきん}を{取|と}る。",
+ "categoryId": "R01-A05-T02",
+ "tags": [
+  "handel",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.sedlar-och-mynt"
+ ],
+ "related": [],
+ "recommendedOrder": 509,
+ "words": [
+  {
+   "senseId": "s.bankkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betalkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kreditkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pinkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knappa-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontaktlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.neka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.täckning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-ut-pengar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uttagsautomat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontantfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-emot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-betalt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mamma i Sverige",
+  "paragraphs": [
+   "Aikos mamma hälsar på från Japan. Hon har med sig många kontanter, men i Sverige betalar nästan alla med bankkort eller mobilen.",
+   "På ett kafé står det: ”Vi är kontantfria.” Man kan inte betala kontant, eftersom kaféet bara vill ta emot kort. ”Tar ni betalkort?” frågar mamma. Hon har ett japanskt kreditkort.",
+   "Hon håller kortet mot kortterminalen. Små köp kan man betala kontaktlöst. Men sedan nekar maskinen kortet. ”Knappa in din pinkod”, säger personalen.",
+   "Mamma har glömt sin pinkod. Aiko betalar i stället. ”Det kanske inte finns täckning på kortet”, säger Erik på skämt.",
+   "Nästa dag vill mamma ta ut pengar. Det tar lång tid att hitta en uttagsautomat. ”Förr fanns det en i varje gata”, säger Erik. Banken vill också ta betalt för uttaget.",
+   "”Och ge aldrig ditt kortnummer till någon i telefon”, säger Aiko. ”Inte här och inte i Japan.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har mamma med sig?",
+    "options": [
+     "Inga pengar",
+     "Många kontanter",
+     "Ett svenskt bankkort",
+     "Bara mobilen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon har med sig många kontanter.",
+    "explanationJa": "{現金|げんきん}をたくさん{持|も}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Kaféet tar emot kontanter.",
+    "correct": false,
+    "explanationSv": "Man kan inte betala kontant, eftersom kaféet bara vill ta emot kort.",
+    "explanationJa": "{現金|げんきん}は{使|つか}えません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför kan mamma inte betala till slut?",
+    "options": [
+     "Hon har glömt sin pinkod",
+     "Kortet är trasigt",
+     "Hon har inga pengar",
+     "Kaféet är stängt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mamma har glömt sin pinkod.",
+    "explanationJa": "{暗証番号|あんしょうばんごう}を{忘|わす}れたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är svårt nästa dag?",
+    "options": [
+     "Att hitta ett kafé",
+     "Att knappa in koden",
+     "Att ringa banken",
+     "Att hitta en uttagsautomat"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det tar lång tid att hitta en uttagsautomat.",
+    "explanationJa": "ATMを{見|み}つけることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik menar på allvar att det inte finns täckning på kortet.",
+    "correct": false,
+    "explanationSv": "”Det kanske inte finns täckning på kortet”, säger Erik på skämt.",
+    "explanationJa": "{冗談|じょうだん}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bankkort och kontanter: hur ni betalar, om ni har kontanter med er och hur det är i Sverige jämfört med Japan.",
+  "discussionPoints": [
+   "Har du kontanter i plånboken just nu?",
+   "Betalar du oftast kontaktlöst eller med pinkod?",
+   "Var tar du ut pengar?",
+   "Är Japan på väg att bli kontantfritt?"
+  ]
+ }
+}

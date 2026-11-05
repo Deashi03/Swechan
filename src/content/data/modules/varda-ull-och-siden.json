@@ -1,0 +1,170 @@
+{
+ "id": "m.varda-ull-och-siden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Vårda ull och siden",
+ "titleJa": "ウールとシルクの{手入|てい}れ",
+ "descriptionSv": "Att vårda ull och siden: ylletvättmedel, handvarmt vatten, krama ur, filta sig, klädborste, mal och förvaring.",
+ "descriptionJa": "ウールとシルクの{手入|てい}れ：ウール{用洗剤|ようせんざい}、ぬるま{湯|ゆ}、{押|お}し{絞|しぼ}り、フェルト{化|か}、{洋服|ようふく}ブラシ、{衣蛾|いが}、{保管|ほかん}。",
+ "categoryId": "R01-A03-T05",
+ "tags": [
+  "kläder",
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.flackar-och-flackborttagning"
+ ],
+ "related": [],
+ "recommendedOrder": 334,
+ "words": [
+  {
+   "senseId": "s.vårda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ylletvättmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ylleprogram.1",
+   "active": false
+  },
+  {
+   "senseId": "s.handvarm.1",
+   "active": false
+  },
+  {
+   "senseId": "s.krama-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vrida-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filta-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lanolin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klädborste.1",
+   "active": true
+  },
+  {
+   "senseId": "s.noppborttagare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.malhål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.cederträ.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lavendel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omsorg.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ull och siden behöver omsorg",
+  "paragraphs": [
+   "Aiko har en dyr kofta av ull och en blus av siden. ”De måste man vårda med omsorg”, säger mormor.",
+   "”Tvätta ullen på ylleprogrammet eller för hand i handvarmt vatten, med ylletvättmedel. Ett tvättmedel med lanolin är bäst.”",
+   "”Sedan ska du krama ur vattnet. Du får inte vrida ur plagget, och vattnet får inte vara för varmt, för då kan ullen filta sig.”",
+   "Ull behöver inte tvättas så ofta. Det räcker ofta att vädra och använda en klädborste. Om tröjan är noppig kan man använda en noppborttagare.",
+   "Förra året hittade Aiko mal i garderoben, och hennes favorittröja fick malhål. Nu har hon cederträ och påsar med lavendel bland kläderna.",
+   "”Före förvaring över sommaren ska allt vara rent”, säger mormor. ”Malen gillar smutsiga kläder.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket vatten ska man tvätta ull i för hand?",
+    "options": [
+     "Kokande vatten",
+     "Mycket kallt vatten",
+     "Hårt vatten",
+     "Handvarmt vatten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Tvätta ullen ... i handvarmt vatten.”",
+    "explanationJa": "ぬるま{湯|ゆ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Man ska vrida ur ylletröjor.",
+    "correct": false,
+    "explanationSv": "”Du får inte vrida ur plagget.”",
+    "explanationJa": "ねじって{絞|しぼ}ってはいけません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad kan hända om vattnet är för varmt?",
+    "options": [
+     "Ullen kan bli vit.",
+     "Färgen blir starkare.",
+     "Ullen blir mjukare.",
+     "Ullen kan filta sig."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Vattnet får inte vara för varmt, för då kan ullen filta sig.”",
+    "explanationJa": "フェルトのようになることがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad använder Aiko mot mal nu?",
+    "options": [
+     "Ylletvättmedel",
+     "Cederträ och lavendel",
+     "En klädborste",
+     "En noppborttagare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nu har hon cederträ och påsar med lavendel bland kläderna.",
+    "explanationJa": "シダー{材|ざい}とラベンダーです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mal tycker om smutsiga kläder.",
+    "correct": true,
+    "explanationSv": "”Malen gillar smutsiga kläder.”",
+    "explanationJa": "{衣蛾|いが}は{汚|よご}れた{服|ふく}が{好|す}きです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att ta hand om plagg av ull och siden: tvätt, vädring, mal och förvaring.",
+  "discussionPoints": [
+   "Har du kläder av ull eller siden?",
+   "Hur tvättar du dem?",
+   "Har du haft problem med mal?",
+   "Hur förvarar man vinterkläder på sommaren i Japan?"
+  ]
+ }
+}

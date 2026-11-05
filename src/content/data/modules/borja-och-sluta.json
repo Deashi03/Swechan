@@ -1,0 +1,170 @@
+{
+ "id": "m.borja-och-sluta",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Börja och sluta",
+ "titleJa": "{始|はじ}めることとやめること",
+ "descriptionSv": "Att börja och sluta: sätta igång, komma igång, starta, start, börja om, avbrott, ta paus, pausa, sluta med, slutföra, avslutning och fortsättning.",
+ "descriptionJa": "{始|はじ}める・やめる：{始|はじ}める、エンジンがかかる、スタート、やり{直|なお}す、{中断|ちゅうだん}、{休憩|きゅうけい}、{一時停止|いちじていし}、やめる、やり{遂|と}げる、{終業式|しゅうぎょうしき}、{続|つづ}き。",
+ "categoryId": "R01-A04-T04",
+ "tags": [
+  "vardag",
+  "verb"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.komma-ihag-och-glomma"
+ ],
+ "related": [],
+ "recommendedOrder": 427,
+ "words": [
+  {
+   "senseId": "s.sätta-igång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-igång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-igång.1",
+   "active": false
+  },
+  {
+   "senseId": "s.starta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.start.1",
+   "active": true
+  },
+  {
+   "senseId": "s.börja-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omstart.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avbrott.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-paus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pausa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sluta-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upphöra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slutföra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avslutning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fortsättning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från start till slut",
+  "paragraphs": [
+   "Det är den sista veckan före sommaren. På fredag är det avslutning i skolan, och Mia vill slutföra sitt skolarbete innan dess.",
+   "Men hon har svårt att komma igång. ”Nu ska jag sätta igång!” säger hon till sist. Efter en timme vill hon ta paus.",
+   "Mitt i arbetet blir det ett avbrott i elen. Datorn stängs av. Efter en omstart är hälften borta. ”Nu får jag börja om!”",
+   "Leo springer ett lopp på lördag. Starten är vid skolan. Loppet startar klockan tio.",
+   "På kvällen vill Erik titta på film. ”Pausa filmen, jag ska hämta glass”, säger Aiko. Filmen slutar mitt i, och det kommer en fortsättning.",
+   "Erik har bestämt att han ska sluta med godis. ”Från i dag ska allt godis upphöra”, säger han. Mia skrattar. Festen på lördag drar igång klockan åtta, och där finns det godis."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer på fredag?",
+    "options": [
+     "Avslutning i skolan",
+     "Ett lopp",
+     "En fest",
+     "Ett avbrott i elen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På fredag är det avslutning i skolan.",
+    "explanationJa": "{学校|がっこう}の{終業式|しゅうぎょうしき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Det är lätt för Mia att komma igång.",
+    "correct": false,
+    "explanationSv": "Men hon har svårt att komma igång.",
+    "explanationJa": "なかなか{始|はじ}められません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför måste Mia börja om?",
+    "options": [
+     "Hon glömde bort det.",
+     "Läraren sa det.",
+     "Hon tappade datorn.",
+     "Det blev ett avbrott i elen."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Mitt i arbetet blir det ett avbrott i elen. Efter en omstart är hälften borta.",
+    "explanationJa": "{停電|ていでん}があったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "När startar Leos lopp?",
+    "options": [
+     "Klockan åtta",
+     "På fredag",
+     "Klockan tio",
+     "På kvällen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Loppet startar klockan tio.",
+    "explanationJa": "10{時|じ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia tror att Erik kommer att sluta med godis.",
+    "correct": false,
+    "explanationSv": "Mia skrattar. Festen på lördag drar igång klockan åtta, och där finns det godis.",
+    "explanationJa": "{信|しん}じていません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att börja och sluta med saker: att komma igång, ta paus och sluta med vanor.",
+  "discussionPoints": [
+   "Är det lätt för dig att komma igång på morgonen?",
+   "Hur ofta tar du paus när du arbetar?",
+   "Har du slutat med något? Vad?",
+   "Hur firar man skolavslutning i Japan?"
+  ]
+ }
+}

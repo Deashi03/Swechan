@@ -1,0 +1,170 @@
+{
+ "id": "m.vaxel-och-aterbetalning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Växel och återbetalning",
+ "titleJa": "おつりと{返金|へんきん}",
+ "descriptionSv": "Växel och återbetalning: växel, jämna pengar, ha jämnt, växla, växla in, slå fel, räkna fel, originalkvitto, öppet köp, bytesrätt, byta till, återbetalning, återbetala, tillgodokvitto och presentkort.",
+ "descriptionJa": "おつりと{返金|へんきん}：おつり、ちょうどの{金額|きんがく}、ちょうど{持|も}っている、くずす、{換金|かんきん}する、{打|う}ち{間違|まちが}える、{計算|けいさん}を{間違|まちが}える、レシート{原本|げんぽん}、{返品|へんぴん}{保証|ほしょう}、{交換|こうかん}{保証|ほしょう}、{替|か}える、{返金|へんきん}、{払|はら}い{戻|もど}す、{預|あず}かり{証|しょう}、ギフトカード。",
+ "categoryId": "R01-A05-T02",
+ "tags": [
+  "handel",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.swish-och-digital-betalning"
+ ],
+ "related": [],
+ "recommendedOrder": 512,
+ "words": [
+  {
+   "senseId": "s.växel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämna-pengar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ha-jämnt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växla-in.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slå-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.originalkvitto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öppet-köp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bytesrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återbetalning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återbetala.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tillgodokvitto.1",
+   "active": false
+  },
+  {
+   "senseId": "s.presentkort.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Byta en tröja",
+  "paragraphs": [
+   "Mia köper glass för 23 kronor. Hon betalar med en femtiolapp och får 27 kronor i växel. ”Det är bra om du har jämnt nästa gång”, säger kassören. ”Vi har ont om mynt.”",
+   "Leo vill köpa en tidning, men han har bara en hundralapp. ”Kan du växla?” frågar han. ”Tyvärr, betala gärna med jämna pengar.”",
+   "Aiko köpte en tröja förra veckan, men den är för liten. Hon vill byta till en större storlek. Hon tar med originalkvittot.",
+   "”Vi har 30 dagars öppet köp”, säger personalen. ”Du kan få en återbetalning eller byta.” I en annan butik har de bara bytesrätt. Där får man ett tillgodokvitto i stället för pengar.",
+   "Aiko ser på kvittot att kassören slog fel – hon betalade för två tröjor! Personalen har räknat fel. ”Vi återbetalar den andra tröjan direkt till ditt kort.”",
+   "Hon har också ett presentkort från jobbet. Och hemma har hon några yen kvar, som hon ska växla in på banken."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket växel får Mia?",
+    "options": [
+     "27 kronor",
+     "23 kronor",
+     "50 kronor",
+     "Ingen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon betalar med en femtiolapp och får 27 kronor i växel.",
+    "explanationJa": "27クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Kassören kan växla Leos hundralapp.",
+    "correct": false,
+    "explanationSv": "”Tyvärr, betala gärna med jämna pengar.”",
+    "explanationJa": "くずせません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför vill Aiko byta tröjan?",
+    "options": [
+     "Den är trasig",
+     "Hon gillar inte färgen",
+     "Den är för liten",
+     "Den var för dyr"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den är för liten.",
+    "explanationJa": "{小|ちい}さすぎるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad får man i butiken med bytesrätt?",
+    "options": [
+     "Ett tillgodokvitto",
+     "Pengarna tillbaka",
+     "Ett presentkort",
+     "En ny tröja gratis"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Där får man ett tillgodokvitto i stället för pengar.",
+    "explanationJa": "{店|みせ}で{使|つか}える{伝票|でんぴょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko får tillbaka pengar för en tröja.",
+    "correct": true,
+    "explanationSv": "”Vi återbetalar den andra tröjan direkt till ditt kort.”",
+    "explanationJa": "1{枚|まい}{分|ぶん}が{返金|へんきん}されます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om växel och att byta varor: om ni har jämna pengar, hur öppet köp fungerar och vad ni gör om kassören slår fel.",
+  "discussionPoints": [
+   "Brukar du ha jämnt när du betalar kontant?",
+   "Har du någon gång bytt en vara? Vad hände?",
+   "Vad är skillnaden mellan öppet köp och bytesrätt?",
+   "Kan man byta varor lika lätt i Japan?"
+  ]
+ }
+}

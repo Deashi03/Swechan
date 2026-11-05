@@ -1,0 +1,169 @@
+{
+ "id": "m.kuvert-och-frimarken",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kuvert och frimärken",
+ "titleJa": "{封筒|ふうとう}と{切手|きって}",
+ "descriptionSv": "Kuvert och frimärken: kuvert, brevpapper, fönsterkuvert, vadderat kuvert, försegla, frimärke, frimärksark, klistra på, uppe till höger, porto, portokod, frankera, brevvåg, övervikt och adressetikett.",
+ "descriptionJa": "{封筒|ふうとう}と{切手|きって}：{封筒|ふうとう}、{便箋|びんせん}、{窓|まど}つき{封筒|ふうとう}、クッション{封筒|ふうとう}、{封|ふう}をする、{切手|きって}、{切手|きって}シート、{貼|は}りつける、{右上|みぎうえ}に、{郵便|ゆうびん}{料金|りょうきん}、{料金|りょうきん}コード、{切手|きって}を{貼|は}る、{郵便|ゆうびん}はかり、{重量|じゅうりょう}オーバー、{宛名|あてな}ラベル。",
+ "categoryId": "R01-A05-T05",
+ "tags": [
+  "post"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.brev-och-vykort"
+ ],
+ "related": [],
+ "recommendedOrder": 530,
+ "words": [
+  {
+   "senseId": "s.kuvert.2",
+   "active": true
+  },
+  {
+   "senseId": "s.brevpapper.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fönsterkuvert.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vadderat-kuvert.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försegla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.frimärke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frimärksark.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klistra-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppe-till-höger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.porto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.portokod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frankera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brevvåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.adressetikett.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Frimärken och kuvert",
+  "paragraphs": [
+   "Mia ska skicka ett nytt brev till Yui. Hon skriver på fint brevpapper och lägger det i ett kuvert. Fakturor kommer ofta i fönsterkuvert, men Mia vill ha ett vackert kuvert.",
+   "Hon skickar också en liten bok. Den lägger hon i ett vadderat kuvert, så att den inte går sönder. Sedan förseglar hon båda kuverten.",
+   "Mia behöver frimärken. Erik har ett frimärksark i lådan. ”Klistra på frimärket uppe till höger”, säger han.",
+   "Portot till Japan är dyrare än i Sverige. Mia väger brevet på en brevvåg. Det har övervikt, så hon behöver två frimärken.",
+   "Erik använder hellre en portokod. Han köper den i en app och skriver koden på kuvertet. ”Ett brev som inte är frankerat kommer inte fram”, säger han.",
+   "Till boken skriver Mia ut en adressetikett. Sedan går hon till postlådan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad lägger Mia boken i?",
+    "options": [
+     "Ett fönsterkuvert",
+     "En kartong",
+     "Ett vadderat kuvert",
+     "En påse"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den lägger hon i ett vadderat kuvert, så att den inte går sönder.",
+    "explanationJa": "クッション{封筒|ふうとう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var ska frimärket sitta?",
+    "options": [
+     "Nere till vänster",
+     "På baksidan",
+     "Uppe till höger",
+     "I mitten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Klistra på frimärket uppe till höger.”",
+    "explanationJa": "{右上|みぎうえ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför behöver Mia två frimärken?",
+    "options": [
+     "Portot är gratis",
+     "Hon har två brev",
+     "Brevet har övervikt",
+     "Erik säger det"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det har övervikt, så hon behöver två frimärken.",
+    "explanationJa": "{重量|じゅうりょう}オーバーだからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Erik köper en portokod i en app.",
+    "correct": true,
+    "explanationSv": "Han köper den i en app och skriver koden på kuvertet.",
+    "explanationJa": "アプリで{買|か}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ett brev utan frimärke eller portokod kommer fram ändå.",
+    "correct": false,
+    "explanationSv": "”Ett brev som inte är frankerat kommer inte fram.”",
+    "explanationJa": "{届|とど}きません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kuvert och frimärken: hur man frankerar ett brev i Sverige och Japan och vad det kostar.",
+  "discussionPoints": [
+   "Har du frimärken hemma?",
+   "Vet du vad portot är för ett brev inom Sverige?",
+   "Har du använt en portokod?",
+   "Hur ser japanska frimärken ut?"
+  ]
+ }
+}

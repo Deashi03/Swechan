@@ -1,0 +1,170 @@
+{
+ "id": "m.boka-moten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Boka möten",
+ "titleJa": "{会|あ}う{約束|やくそく}をする",
+ "descriptionSv": "Att boka möten och träffar: möte, träffas, ses, stämma träff, boka in, tidsförslag, funka, komma överens, höra av sig och dyka upp.",
+ "descriptionJa": "{会|あ}う{約束|やくそく}：{面談|めんだん}、{会|あ}う、{待|ま}ち{合|あ}わせ、{予定|よてい}を{入|い}れる、{候補|こうほ}、{都合|つごう}がいい、{合意|ごうい}する、{連絡|れんらく}する、{来|く}る。",
+ "categoryId": "R01-A04-T03",
+ "tags": [
+  "vardag",
+  "planering"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.paminnelser-och-kalender"
+ ],
+ "related": [],
+ "recommendedOrder": 418,
+ "words": [
+  {
+   "senseId": "s.möte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träffas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ses.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träff.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stämma-träff.1",
+   "active": false
+  },
+  {
+   "senseId": "s.boka-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidsförslag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.funka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.få-ihop.1",
+   "active": false
+  },
+  {
+   "senseId": "s.komma-överens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höra-av-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vi-hörs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luncha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dyka-upp.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När ska vi ses?",
+  "paragraphs": [
+   "Aiko vill träffas med sina gamla kompisar från kursen. Det var länge sedan deras senaste träff. ”Ska vi luncha nästa vecka?” smsar hon.",
+   "Karin svarar: ”Gärna! Skicka några tidsförslag.” Aiko föreslår tisdag, onsdag eller torsdag.",
+   "”Tisdag funkar inte för mig”, svarar Sara. ”Onsdag passar bäst.” Det är svårt att få ihop en tid som passar alla.",
+   "Till slut kan de komma överens om torsdag klockan tolv. Aiko bokar in lunchen i kalendern. ”Vi ses på torsdag! Vi hörs.”",
+   "På torsdag morgon ringer Sara för att höra av sig: hon är sjuk. Karin dyker upp tio minuter sent.",
+   "Samma eftermiddag har Aiko ett möte med Mias lärare. De stämde träff för två veckor sedan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur frågar Aiko sina kompisar?",
+    "options": [
+     "Hon ringer.",
+     "Hon smsar.",
+     "Hon skriver ett brev.",
+     "Hon frågar på jobbet."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Ska vi luncha nästa vecka?” smsar hon.",
+    "explanationJa": "ショートメッセージで{聞|き}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken dag funkar inte för Sara?",
+    "options": [
+     "Onsdag",
+     "Torsdag",
+     "Tisdag",
+     "Fredag"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Tisdag funkar inte för mig”, svarar Sara.",
+    "explanationJa": "{火曜日|かようび}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "De kommer överens om onsdag.",
+    "correct": false,
+    "explanationSv": "Till slut kan de komma överens om torsdag klockan tolv.",
+    "explanationJa": "{木曜日|もくようび}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför kommer Sara inte?",
+    "options": [
+     "Hon är sjuk.",
+     "Hon har ett möte.",
+     "Hon glömde bort det.",
+     "Hon är dubbelbokad."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På torsdag morgon ringer Sara för att höra av sig: hon är sjuk.",
+    "explanationJa": "{病気|びょうき}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko har en hel dag med träffar på torsdag.",
+    "correct": true,
+    "explanationSv": "Samma eftermiddag har Aiko ett möte med Mias lärare.",
+    "explanationJa": "{午後|ごご}にも{面談|めんだん}があります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att bestämma träff med vänner och andra: hur ni föreslår tider och kommer överens.",
+  "discussionPoints": [
+   "Hur brukar du bestämma träff med vänner?",
+   "Är det lätt att få ihop en tid som passar alla?",
+   "Smsar eller ringer du oftast?",
+   "Vad gör du om någon inte dyker upp?"
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "m.besoka-frisoren",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Besöka frisören",
+ "titleJa": "{美容院|びよういん}に{行|い}く",
+ "descriptionSv": "Hos frisören: frisörsalong, drop-in, önskemål, klippning, klippa sig, toppa, tunna ur, trimma, färgning och permanenta.",
+ "descriptionJa": "{美容院|びよういん}で：サロン、{予約|よやく}なし、{希望|きぼう}、カット、{髪|かみ}を{切|き}る、{毛先|けさき}を{揃|そろ}える、すく、{整|ととの}える、カラー、パーマ。",
+ "categoryId": "R01-A03-T06",
+ "tags": [
+  "skönhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.nagelvard-och-rakning"
+ ],
+ "related": [],
+ "recommendedOrder": 342,
+ "words": [
+  {
+   "senseId": "s.frisör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frisörsalong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drop-in.1",
+   "active": false
+  },
+  {
+   "senseId": "s.frisörstol.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klippning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddskappa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hårtvätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.önskemål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klippa-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.toppa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trimma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tunna-ur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.färgning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.permanenta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.missnöjd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hos frisören",
+  "paragraphs": [
+   "Leos lugg går ner i ögonen. ”Leo måste klippa sig”, säger Aiko. På lördag har frisörsalongen på hörnet drop-in.",
+   "Leo sätter sig i frisörstolen, och frisören Sara sätter en skyddskappa runt honom. ”Har du några önskemål?” frågar hon.",
+   "”Kort, men inte snagg”, säger Leo. Klippningen tar en kvart. Leo snurrar i stolen hela tiden.",
+   "Efter Leo är det Aikos tur. Hon vill bara toppa håret, men det är så tjockt att Sara vill tunna ur det också. Klippning med hårtvätt kostar mer än utan.",
+   "Mia vill ha färgning, men det tar för lång tid i dag. Morfar kommer in och vill att Sara ska trimma hans skägg.",
+   "Mormor berättar att hon ofta permanentade håret förr. ”En gång var jag så missnöjd att jag grät”, skrattar hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför måste Leo klippa sig?",
+    "options": [
+     "Han ska på fest.",
+     "Han har tovigt hår.",
+     "Han vill ha snagg.",
+     "Luggen går ner i ögonen."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leos lugg går ner i ögonen.",
+    "explanationJa": "{前髪|まえがみ}が{目|め}に{入|はい}るからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad sätter frisören runt Leo?",
+    "options": [
+     "En handduk",
+     "En hårsnodd",
+     "En mössa",
+     "En skyddskappa"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Frisören Sara sätter en skyddskappa runt honom.",
+    "explanationJa": "ケープです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko vill ha en kort frisyr.",
+    "correct": false,
+    "explanationSv": "Hon vill bara toppa håret.",
+    "explanationJa": "{毛先|けさき}を{揃|そろ}えるだけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad vill morfar?",
+    "options": [
+     "Att Sara trimmar skägget",
+     "En färgning",
+     "En klippning",
+     "En hårtvätt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Morfar vill att Sara ska trimma hans skägg.",
+    "explanationJa": "ひげを{整|ととの}えてほしいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor var en gång mycket ledsen över en frisyr.",
+    "correct": true,
+    "explanationSv": "”En gång var jag så missnöjd att jag grät.”",
+    "explanationJa": "{泣|な}くほど{不満|ふまん}でした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att gå till frisören: hur ofta, vad ni brukar be om, och skillnader mellan frisörer i Sverige och Japan.",
+  "discussionPoints": [
+   "Hur ofta klipper du dig?",
+   "Vad säger du till frisören?",
+   "Har du varit missnöjd med en klippning?",
+   "Hur skiljer sig frisörer i Japan och Sverige?"
+  ]
+ }
+}

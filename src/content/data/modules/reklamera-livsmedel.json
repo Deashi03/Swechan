@@ -1,0 +1,171 @@
+{
+ "id": "m.reklamera-livsmedel",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Reklamera livsmedel",
+ "titleJa": "{食品|しょくひん}のクレーム",
+ "descriptionSv": "Att reklamera livsmedel: reklamera, möglig, lukta illa, smaka konstigt, surna, felaktig, glasbit, främmande föremål, obruten, visa upp, reklamation, ta tillbaka, pengarna tillbaka, butikschef och kontakta.",
+ "descriptionJa": "{食品|しょくひん}のクレーム：{申|もう}し{出|で}る、カビの{生|は}えた、{嫌|いや}なにおい、{変|へん}な{味|あじ}、{酸|す}っぱくなる、{欠陥|けっかん}のある、ガラスのかけら、{異物|いぶつ}、{未開封|みかいふう}、{見|み}せる、クレーム、{引|ひ}き{取|と}る、{返金|へんきん}、{店長|てんちょう}、{連絡|れんらく}する。",
+ "categoryId": "R01-A05-T01",
+ "tags": [
+  "handel",
+  "butik",
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.erbjudanden-och-rabatter"
+ ],
+ "related": [],
+ "recommendedOrder": 507,
+ "words": [
+  {
+   "senseId": "s.reklamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.möglig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lukta-illa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smaka-konstigt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.surna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felaktig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glasbit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.främmande-föremål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.obruten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.visa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reklamation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pengarna-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.butikschef.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontakta.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Sur mjölk och en glasbit",
+  "paragraphs": [
+   "Aiko öppnar en ny mjölk. Den luktar illa och smakar konstigt. Mjölken har surnat, fast det är fem dagar kvar till datumet.",
+   "Brödet som hon köpte i går är redan mögligt. Och i sylten ligger det en glasbit! Det är ett främmande föremål som inte får finnas i mat.",
+   "Aiko tar med varorna till butiken. Hon vill reklamera dem. ”Man kan alltid lämna tillbaka felaktiga varor”, säger Erik.",
+   "Kassören ber Aiko visa upp förpackningarna. Sylten var obruten när hon köpte den. ”Vi tar tillbaka alla tre”, säger hon. ”Vill du ha pengarna tillbaka eller nya varor?”",
+   "Aiko tar nya varor. Butikschefen kommer och pratar med henne om glasbiten. ”Det är en allvarlig reklamation. Vi kontaktar företaget som gör sylten.”",
+   "Nästa vecka får Aiko ett brev från företaget och ett presentkort."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är det för fel på mjölken?",
+    "options": [
+     "Den är möglig",
+     "Den har surnat",
+     "Den har en glasbit",
+     "Den är för gammal"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mjölken har surnat, fast det är fem dagar kvar till datumet.",
+    "explanationJa": "{酸|す}っぱくなっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad hittar Aiko i sylten?",
+    "options": [
+     "Mögel",
+     "Ett hår",
+     "Plast",
+     "En glasbit"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I sylten ligger det en glasbit!",
+    "explanationJa": "ガラスのかけらです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Butiken tar tillbaka varorna.",
+    "correct": true,
+    "explanationSv": "”Vi tar tillbaka alla tre”, säger hon.",
+    "explanationJa": "{三|みっ}つとも{引|ひ}き{取|と}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad väljer Aiko?",
+    "options": [
+     "Nya varor",
+     "Pengarna tillbaka",
+     "Ett presentkort",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko tar nya varor.",
+    "explanationJa": "{新|あたら}しい{商品|しょうひん}をもらいます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Butikschefen tycker att glasbiten är ett litet problem.",
+    "correct": false,
+    "explanationSv": "”Det är en allvarlig reklamation.”",
+    "explanationJa": "{深刻|しんこく}なクレームだと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att reklamera mat: vad som kan vara fel på en vara, hur man gör och om man får pengarna tillbaka.",
+  "discussionPoints": [
+   "Har du någon gång köpt mat som luktade illa eller var möglig?",
+   "Brukar du reklamera felaktiga varor, eller slänger du dem?",
+   "Vad ska man visa upp när man reklamerar?",
+   "Hur reklamerar man mat i Japan?"
+  ]
+ }
+}

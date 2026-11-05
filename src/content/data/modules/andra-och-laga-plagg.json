@@ -1,0 +1,173 @@
+{
+ "id": "m.andra-och-laga-plagg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ändra och laga plagg",
+ "titleJa": "{服|ふく}の{直|なお}しと{修繕|しゅうぜん}",
+ "descriptionSv": "Att ändra och laga kläder: förkorta, ta in, släppa ut, lappa, knappnål, symaskin och sömmerska.",
+ "descriptionJa": "{服|ふく}の{直|なお}し：{短|みじか}くする、{詰|つ}める、{出|だ}す、つぎを{当|あ}てる、{待|ま}ち{針|ばり}、ミシン、お{針子|はりこ}さん。",
+ "categoryId": "R01-A03-T04",
+ "tags": [
+  "kläder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sommar-och-detaljer"
+ ],
+ "related": [],
+ "recommendedOrder": 326,
+ "words": [
+  {
+   "senseId": "s.ändring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömmerska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.symaskin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förkorta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fålla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släppa-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tråckla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knappnål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetsnål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sprätta-upp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.reva.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lappa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.få-duga.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Laga i stället för att slänga",
+  "paragraphs": [
+   "Mia har en hög med kläder som inte passar eller är trasiga. ”Ska jag slänga dem?” frågar hon. ”Nej, vi gör ändringar och lagningar”, säger mormor.",
+   "Mias nya jeans är för långa. Mormor tar fram nål och tråd. Hon sätter knappnålar där byxorna ska sluta, sprättar upp den gamla fållen och tråcklar en ny. Sedan förkortar hon byxorna och fållar dem på symaskinen.",
+   "Leos byxor har ett hål i knät. ”Det kan vi lappa”, säger mormor och syr en tygbit över hålet.",
+   "Eriks kostymbyxor har blivit för små. ”Jag kan släppa ut dem lite, det finns sömsmån”, säger mormor. Aikos kjol är för stor, så den ska mormor ta in.",
+   "Erik har en lång reva i sin regnjacka. Den är svår att laga, så han lämnar den till en sömmerska.",
+   "Till sist hittar Leo en jacka där en knapp saknas. Han stänger den med en säkerhetsnål. ”Det får duga”, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tycker mormor att Mia ska göra med kläderna?",
+    "options": [
+     "Slänga dem",
+     "Sälja dem",
+     "Ge bort dem",
+     "Ändra och laga dem"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Nej, vi gör ändringar och lagningar.”",
+    "explanationJa": "{直|なお}して{使|つか}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör mormor med Mias jeans?",
+    "options": [
+     "Hon förkortar dem.",
+     "Hon tar in dem.",
+     "Hon lappar dem.",
+     "Hon släpper ut dem."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sedan förkortar hon byxorna på symaskinen.",
+    "explanationJa": "{短|みじか}くします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur lagar mormor hålet i Leos byxor?",
+    "options": [
+     "Hon tråcklar det.",
+     "Hon lappar det.",
+     "Hon sätter en säkerhetsnål.",
+     "Hon lämnar dem till en sömmerska."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Det kan vi lappa.”",
+    "explanationJa": "つぎを{当|あ}てます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aikos kjol är för liten.",
+    "correct": false,
+    "explanationSv": "Aikos kjol är för stor, så den ska mormor ta in.",
+    "explanationJa": "{大|おお}きすぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo lagar jackan ordentligt.",
+    "correct": false,
+    "explanationSv": "Han stänger den med en säkerhetsnål. ”Det får duga.”",
+    "explanationJa": "{安全|あんぜん}ピンで{間|ま}に{合|あ}わせただけです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att ändra och laga kläder: att förkorta, ta in och lappa, och om att laga i stället för att slänga.",
+  "discussionPoints": [
+   "Brukar du laga kläder eller köpa nya?",
+   "Har du lämnat kläder till en sömmerska?",
+   "Kan du använda en symaskin?",
+   "Lagar man kläder mycket i Japan?"
+  ]
+ }
+}

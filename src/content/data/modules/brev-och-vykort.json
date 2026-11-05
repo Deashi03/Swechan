@@ -1,0 +1,169 @@
+{
+ "id": "m.brev-och-vykort",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Brev och vykort",
+ "titleJa": "{手紙|てがみ}とはがき",
+ "descriptionSv": "Brev och vykort: vykort, julkort, handskriven, kära, hälsning, allt gott, tack för senast, avsändare, mottagare, posta, postlåda, brevinkast, brevbärare, postkontor och penvän.",
+ "descriptionJa": "{手紙|てがみ}とはがき：{絵|え}はがき、クリスマスカード、{手書|てが}き、{親愛|しんあい}なる、{挨拶|あいさつ}、お{元気|げんき}で、この{間|あいだ}はありがとう、{差出人|さしだしにん}、{受取人|うけとりにん}、{投函|とうかん}する、ポスト、{郵便受|ゆうびんう}け、{郵便|ゆうびん}{配達員|はいたついん}、{郵便局|ゆうびんきょく}、ペンフレンド。",
+ "categoryId": "R01-A05-T05",
+ "tags": [
+  "post"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bedragerier-vid-natkop"
+ ],
+ "related": [],
+ "recommendedOrder": 529,
+ "words": [
+  {
+   "senseId": "s.vykort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.julkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handskriven.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kära.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälsning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allt-gott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tack-för-senast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avsändare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mottagare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.posta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.postlåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brevinkast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brevbärare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.postkontor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.penvän.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett brev till Japan",
+  "paragraphs": [
+   "Mia har en penvän i Japan som heter Yui. De skriver handskrivna brev till varandra. Mia tycker att det är roligare än att skicka mejl.",
+   "Hon börjar brevet: ”Kära Yui! Tack för senast! Det var så roligt att träffa dig i sommar.” Sedan skriver hon om skolan och om snön.",
+   "Hon slutar: ”Många hälsningar och allt gott, Mia.” Hon lägger också ett vykort från Stockholm och ett julkort i kuvertet.",
+   "På kuvertet skriver hon adressen till mottagaren. Avsändaren skriver hon på baksidan.",
+   "Det finns nästan inga postkontor kvar i Sverige. Mia går till en gul postlåda på gatan och postar brevet.",
+   "Tre veckor senare kommer brevbäraren. Ett brev från Yui faller in genom brevinkastet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var bor Mias penvän?",
+    "options": [
+     "I Stockholm",
+     "I Kina",
+     "I Göteborg",
+     "I Japan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Mia har en penvän i Japan som heter Yui.",
+    "explanationJa": "{日本|にほん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur börjar Mia brevet?",
+    "options": [
+     "Kära Yui!",
+     "Hej Yui!",
+     "Allt gott!",
+     "Många hälsningar!"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon börjar brevet: ”Kära Yui!”",
+    "explanationJa": "「Kära Yui!」です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia skriver avsändaren på framsidan.",
+    "correct": false,
+    "explanationSv": "Avsändaren skriver hon på baksidan.",
+    "explanationJa": "{裏|うら}に{書|か}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var postar Mia brevet?",
+    "options": [
+     "På ett postkontor",
+     "I mataffären",
+     "I en postlåda på gatan",
+     "Hos brevbäraren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mia går till en gul postlåda på gatan och postar brevet.",
+    "explanationJa": "{道|みち}のポストです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia och Yui har träffats.",
+    "correct": true,
+    "explanationSv": "”Det var så roligt att träffa dig i sommar.”",
+    "explanationJa": "{夏|なつ}に{会|あ}いました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om brev och vykort: om ni skriver brev, vem ni skickar vykort till och hur man börjar och slutar ett brev på svenska och japanska.",
+  "discussionPoints": [
+   "När skrev du ett handskrivet brev senast?",
+   "Skickar du vykort när du reser?",
+   "Hur börjar och slutar man ett brev på japanska?",
+   "Skickar ni julkort eller nyårskort i din familj?"
+  ]
+ }
+}

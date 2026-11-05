@@ -82,7 +82,7 @@ describe('exercise generation', () => {
     }
   });
   it('form exercises use natural one-answer frames without grammar terms', () => {
-    const GRAMMAR = /bestämd|obestämd|plural|singular|preteritum|supinum|presens|komparativ|infinitiv|imperativ/i;
+    const GRAMMAR = /o?bestämd form|plural|singular|preteritum|supinum|presens|komparativ|infinitiv|imperativ/i; // "bestämde" (verb) is fine
     for (const m of repo.modules) {
       for (const w of m.words.filter((x) => x.active)) {
         const ref = repo.getSense(w.senseId)!;

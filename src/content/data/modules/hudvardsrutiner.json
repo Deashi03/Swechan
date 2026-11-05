@@ -1,0 +1,169 @@
+{
+ "id": "m.hudvardsrutiner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hudvårdsrutiner",
+ "titleJa": "スキンケアの{習慣|しゅうかん}",
+ "descriptionSv": "Hudvårdsrutiner: rengöring, ansiktsvatten, fuktkräm, nattkräm, solskydd, hudtyp, porer, finnar och rynkor.",
+ "descriptionJa": "スキンケア：クレンジング、{化粧水|けしょうすい}、{保湿|ほしつ}クリーム、ナイトクリーム、{日焼|ひや}け{止|ど}め、{肌質|はだしつ}、{毛穴|けあな}、にきび、しわ。",
+ "categoryId": "R01-A03-T06",
+ "tags": [
+  "skönhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.harvardsprodukter"
+ ],
+ "related": [],
+ "recommendedOrder": 338,
+ "words": [
+  {
+   "senseId": "s.hudvård.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hy.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hudtyp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rengöring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansiktsvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fuktkräm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nattkräm.1",
+   "active": false
+  },
+  {
+   "senseId": "s.smörja-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solskyddsfaktor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.por.1",
+   "active": false
+  },
+  {
+   "senseId": "s.finne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rynka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.peeling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ansiktsmask.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Kvällsrutinen",
+  "paragraphs": [
+   "Aiko har en lång rutin för hudvård på kvällen. Först kommer rengöring. Sedan använder hon ansiktsvatten, som många gör i Japan, och till sist nattkräm.",
+   "”Varför gör du så mycket?” frågar Erik. ”Alla har olika hudtyp. Jag har torr hy, så jag behöver mycket fuktkräm”, säger Aiko.",
+   "Leo har fått en finne på näsan. ”Tvätta ansiktet, men rör inte finnen”, säger Aiko. ”Rengöring gör också porerna renare.”",
+   "På fredagar har Aiko och Mia ansiktsmask, och en gång i veckan gör de peeling.",
+   "På sommaren måste alla smörja in sig med solskydd. Barnen ska ha hög solskyddsfaktor.",
+   "Mormor skrattar: ”Jag har rynkor, men de kommer från att jag har skrattat mycket i livet.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko först på kvällen?",
+    "options": [
+     "Nattkräm",
+     "Rengöring",
+     "Ansiktsmask",
+     "Peeling"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Först kommer rengöring.",
+    "explanationJa": "クレンジングです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken hudtyp har Aiko?",
+    "options": [
+     "Fet hy",
+     "Torr hy",
+     "Känslig hy",
+     "Normal hy"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Jag har torr hy.”",
+    "explanationJa": "{乾燥肌|かんそうはだ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko säger att Leo ska röra finnen.",
+    "correct": false,
+    "explanationSv": "”Tvätta ansiktet, men rör inte finnen.”",
+    "explanationJa": "さわらないように{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad behöver barnen på sommaren?",
+    "options": [
+     "Nattkräm",
+     "Ansiktsvatten",
+     "Peeling",
+     "Hög solskyddsfaktor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Barnen ska ha hög solskyddsfaktor.",
+    "explanationJa": "{高|たか}いSPFです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor är inte ledsen över sina rynkor.",
+    "correct": true,
+    "explanationSv": "”De kommer från att jag har skrattat mycket i livet.”",
+    "explanationJa": "たくさん{笑|わら}ったしるしだと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hudvård: era rutiner, hudtyp, solskydd och skillnader mellan Sverige och Japan.",
+  "discussionPoints": [
+   "Har du en rutin för hudvård?",
+   "Vilken hudtyp har du?",
+   "Använder du solskydd varje dag?",
+   "Varför är hudvård så populärt i Japan?"
+  ]
+ }
+}

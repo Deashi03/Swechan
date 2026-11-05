@@ -7,6 +7,7 @@
  * are never part of today's mandatory review.
  */
 import { sessionConfig } from '../config/appConfig';
+import { getContent } from '../content/repository';
 import { emit } from '../feedback/events';
 import type { ExerciseResult } from '../learning/exercises/types';
 import { now as clockNow, todayStudyDate } from '../lib/clock';
@@ -19,12 +20,22 @@ import { getDb } from '../storage/db';
 import { getSettings } from '../storage/settings';
 import type { DailySessionRecord } from '../storage/types';
 
+/**
+ * Cards whose sense still exists in the content. A sense can disappear from a
+ * release (e.g. a misspelt duplicate merged into the correct entry); its old
+ * cards may come back through a restore point or a backup and must never block
+ * a review session.
+ */
+async function liveCards() {
+  const repo = getContent();
+  return (await getDb().cards.toArray()).filter((c) => !!repo.getSense(c.senseId));
+}
+
 async function planReview(at: Date, today: string, limit: number, exclude?: Set<string>) {
-  const db = getDb();
   const settings = await getSettings();
   const sch = getScheduler();
   return selectReviewCards({
-    cards: await db.cards.toArray(),
+    cards: await liveCards(),
     now: at,
     today,
     timeZone: settings.timeZone,
@@ -127,7 +138,7 @@ export async function reviewLoad(at: Date = clockNow()): Promise<ReviewLoad> {
   const today = rec.date;
   const reviewedToday = new Set((await db.reviewEvents.where('date').equals(today).toArray()).map((e) => e.cardId));
   const remainingPlan = new Set(rec.reviewPlan.slice(rec.reviewIndex));
-  const due = (await db.cards.toArray()).filter((c) => c.createdDate < today && isDue(c, today, settings.timeZone) && !reviewedToday.has(c.id));
+  const due = (await liveCards()).filter((c) => c.createdDate < today && isDue(c, today, settings.timeZone) && !reviewedToday.has(c.id));
   const debt = due.filter((c) => !remainingPlan.has(c.id)).length;
   return { dueToday: due.length, coveredToday: rec.reviewPlan.length, debt, warn: debt >= sessionConfig.debtWarningThreshold };
 }

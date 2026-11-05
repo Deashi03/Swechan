@@ -1,0 +1,170 @@
+{
+ "id": "m.flackar-och-flackborttagning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Fläckar och fläckborttagning",
+ "titleJa": "しみとしみ{抜|ぬ}き",
+ "descriptionSv": "Fläckar och fläckborttagning: spilla, stänka, kaffefläck, gräsfläck, fettfläck, behandla, badda, gnugga och gallsåpa.",
+ "descriptionJa": "しみとしみ{抜|ぬ}き：こぼす、はねる、コーヒーのしみ、{草|くさ}のしみ、{油|あぶら}じみ、{処理|しょり}する、たたく、こする、{胆汁|たんじゅう}せっけん。",
+ "categoryId": "R01-A03-T05",
+ "tags": [
+  "kläder",
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.torka-och-stryka"
+ ],
+ "related": [],
+ "recommendedOrder": 333,
+ "words": [
+  {
+   "senseId": "s.fläckborttagning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spilla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kaffefläck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rödvinsfläck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gräsfläck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fettfläck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingrodd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.behandla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.badda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gnugga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hushållspapper.1",
+   "active": true
+  },
+  {
+   "senseId": "s.såpa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gallsåpa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bikarbonat.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Fläckar överallt",
+  "paragraphs": [
+   "Det har varit en lång helg. Erik spillde kaffe på sin vita skjorta, och på middagen stänkte det rödvin på duken.",
+   "Leo spelade fotboll och fick gräsfläckar på knäna. Mia åt pizza och har en fettfläck på tröjan.",
+   "Mormor är bäst på fläckborttagning. ”Det viktigaste är att man behandlar fläcken snabbt, innan den blir ingrodd”, säger hon.",
+   "”Ta först bort det mesta med hushållspapper. Kaffefläcken ska du sedan badda med kallt vatten. Gnugga inte, då blir fläcken större.” På rödvinsfläcken strör hon salt.",
+   "”Gräsfläckar tar man bort med gallsåpa, och fettfläcken med lite bikarbonat eller såpa.”",
+   "På måndag kommer tvätten ut ur maskinen. Nästan alla fläckar har gått bort. Bara en gammal fläck på Eriks skjorta finns kvar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad spillde Erik på skjortan?",
+    "options": [
+     "Kaffe",
+     "Rödvin",
+     "Pizza",
+     "Saft"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Erik spillde kaffe på sin vita skjorta.",
+    "explanationJa": "コーヒーです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var fick Leo gräsfläckar?",
+    "options": [
+     "På tröjan",
+     "På skorna",
+     "På ryggen",
+     "På knäna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leo fick gräsfläckar på knäna.",
+    "explanationJa": "ひざです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mormor säger att man ska gnugga fläcken hårt.",
+    "correct": false,
+    "explanationSv": "”Gnugga inte, då blir fläcken större.”",
+    "explanationJa": "こすらないように{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad använder mormor mot gräsfläckar?",
+    "options": [
+     "Gallsåpa",
+     "Salt",
+     "Bikarbonat",
+     "Kallt vatten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Gräsfläckar tar man bort med gallsåpa.”",
+    "explanationJa": "{胆汁|たんじゅう}せっけんです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är svårare att få bort gamla fläckar.",
+    "correct": true,
+    "explanationSv": "Bara en gammal fläck på Eriks skjorta finns kvar.",
+    "explanationJa": "{古|ふる}いしみだけが{残|のこ}りました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fläckar på kläder och knep för att få bort dem, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vilka fläckar är svårast att få bort?",
+   "Har du något bra knep mot fläckar?",
+   "Vad gör du om du spiller på någon annans kläder?",
+   "Finns det särskilda fläckmedel i Japan?"
+  ]
+ }
+}

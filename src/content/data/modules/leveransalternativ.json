@@ -1,0 +1,171 @@
+{
+ "id": "m.leveransalternativ",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Leveransalternativ",
+ "titleJa": "{配送|はいそう}{方法|ほうほう}",
+ "descriptionSv": "Leveransalternativ: leverans, leverera, leveransalternativ, leveranstid, arbetsdag, standardleverans, expressleverans, hemleverans, kvällsleverans, tidsfönster, budfirma, kvittera, utanför dörren, hämta i butik och beställningsvara.",
+ "descriptionJa": "{配送|はいそう}{方法|ほうほう}：{配達|はいたつ}、{届|とど}ける、{配送|はいそう}{方法|ほうほう}、お{届|とど}け{日数|にっすう}、{営業日|えいぎょうび}、{通常|つうじょう}{配送|はいそう}、{速達|そくたつ}、{自宅|じたく}{配送|はいそう}、{夜間|やかん}{配達|はいたつ}、{時間帯|じかんたい}、{宅配|たくはい}{業者|ぎょうしゃ}、サインをする、{玄関先|げんかんさき}に、{店舗|てんぽ}{受|う}け{取|と}り、{取|と}り{寄|よ}せ{品|ひん}。",
+ "categoryId": "R01-A05-T04",
+ "tags": [
+  "handel",
+  "internet",
+  "post"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.varukorg-och-kassa"
+ ],
+ "related": [],
+ "recommendedOrder": 525,
+ "words": [
+  {
+   "senseId": "s.leverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leverera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leveransalternativ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leveranstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetsdag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.standardleverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.expressleverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemleverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvällsleverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidsfönster.1",
+   "active": false
+  },
+  {
+   "senseId": "s.budfirma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvittera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utanför-dörren.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hämta-i-butik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beställningsvara.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur ska paketet komma?",
+  "paragraphs": [
+   "Erik har köpt en ny soffa och några lampor på nätet. Nu ska han välja leverans. Det finns fyra leveransalternativ.",
+   "Standardleverans är gratis, och leveranstiden är tre till fem arbetsdagar. Med expressleverans kommer lamporna redan i morgon, men det kostar 99 kronor.",
+   "Han kan också hämta i butik. Men soffan är en beställningsvara, och butiken ligger långt bort. Därför väljer han hemleverans för soffan.",
+   "Han väljer kvällsleverans, eftersom han jobbar på dagen. Han får välja ett tidsfönster mellan 17 och 21. En budfirma ska leverera soffan.",
+   "När soffan kommer måste Erik kvittera den. Han skriver sitt namn på en liten skärm.",
+   "Lamporna kommer med standardleverans. När Erik kommer hem står paketet utanför dörren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många leveransalternativ finns det?",
+    "options": [
+     "Två",
+     "Tre",
+     "Fyra",
+     "Fem"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det finns fyra leveransalternativ.",
+    "explanationJa": "4つです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kostar expressleverans?",
+    "options": [
+     "Ingenting",
+     "99 kronor",
+     "49 kronor",
+     "79 kronor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Med expressleverans kommer lamporna redan i morgon, men det kostar 99 kronor.",
+    "explanationJa": "99クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik hämtar soffan i butik.",
+    "correct": false,
+    "explanationSv": "Därför väljer han hemleverans för soffan.",
+    "explanationJa": "{自宅|じたく}{配送|はいそう}を{選|えら}びます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför väljer han kvällsleverans?",
+    "options": [
+     "Det är billigast",
+     "Han jobbar på dagen",
+     "Budfirman vill det",
+     "Aiko är hemma då"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han väljer kvällsleverans, eftersom han jobbar på dagen.",
+    "explanationJa": "{昼間|ひるま}は{働|はたら}いているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik behövde inte kvittera lamporna.",
+    "correct": true,
+    "explanationSv": "När Erik kommer hem står paketet utanför dörren.",
+    "explanationJa": "{荷物|にもつ}は{玄関先|げんかんさき}に{置|お}いてありました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om leveransalternativ: hur ni vill få era paket, hur lång leveranstid ni accepterar och hur det fungerar i Japan.",
+  "discussionPoints": [
+   "Väljer du oftast hemleverans eller hämtar du själv?",
+   "Betalar du extra för expressleverans ibland?",
+   "Hur många arbetsdagar kan du vänta på ett paket?",
+   "Hur fungerar leveranser i Japan, till exempel med tidsfönster?"
+  ]
+ }
+}

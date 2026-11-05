@@ -1,0 +1,169 @@
+{
+ "id": "m.prova-klader",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Prova kläder",
+ "titleJa": "{服|ふく}の{試着|しちゃく}",
+ "descriptionSv": "Att prova kläder: provhytt, testa, en storlek mindre eller större, spegelbild, tveka och bestämma sig.",
+ "descriptionJa": "{服|ふく}の{試着|しちゃく}：{試着室|しちゃくしつ}、{試|ため}す、ワンサイズ{小|ちい}さい・{大|おお}きい、{鏡|かがみ}の{姿|すがた}、{迷|まよ}う、{決|き}める。",
+ "categoryId": "R01-A03-T04",
+ "tags": [
+  "kläder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.plagg-som-sitter-lost-eller-tajt"
+ ],
+ "related": [],
+ "recommendedOrder": 324,
+ "words": [
+  {
+   "senseId": "s.plocka-med-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.provhytt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.draperi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.testa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-storlek-mindre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-storlek-större.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spegelbild.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vända-sig-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framifrån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakifrån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smickrande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.åsikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tveka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bestämma-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ångra.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "I provhytten",
+  "paragraphs": [
+   "Mia och Aiko är i en affär med kläder. Mia plockar med sig fyra byxor och två tröjor och går till provhytterna.",
+   "Hon drar för draperiet och provar de första byxorna. De är för små. ”Kan du hämta en storlek större?” säger hon högt.",
+   "Aiko kommer med nya byxor. Mia tittar på sin spegelbild. Framifrån ser byxorna bra ut. ”Vänd dig om”, säger Aiko. Bakifrån är de lite långa.",
+   "”Vad är din åsikt?” frågar Mia. ”Den gröna tröjan är smickrande för dig”, säger Aiko. ”Testa den i en storlek mindre också.”",
+   "Mia tvekar länge. Hon gillar båda tröjorna. Till slut kan hon bestämma sig: hon tar den gröna.",
+   "”Jag tror inte att jag kommer att ångra det här köpet”, säger hon nöjd."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många plagg tar Mia med till provhytten?",
+    "options": [
+     "Fyra",
+     "Två",
+     "Tre",
+     "Sex"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Mia plockar med sig fyra byxor och två tröjor.",
+    "explanationJa": "6{着|ちゃく}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är fel med de första byxorna?",
+    "options": [
+     "De är för stora.",
+     "De har fel färg.",
+     "De är för dyra.",
+     "De är för små."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "De är för små.",
+    "explanationJa": "{小|ちい}さすぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Byxorna är lite långa bakifrån.",
+    "correct": true,
+    "explanationSv": "Bakifrån är de lite långa.",
+    "explanationJa": "{後|うし}ろから{見|み}ると{少|すこ}し{長|なが}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vilken tröja väljer Mia?",
+    "options": [
+     "Den gröna",
+     "Den blå",
+     "Båda",
+     "Ingen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Till slut kan hon bestämma sig: hon tar den gröna.",
+    "explanationJa": "{緑|みどり}のです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia är glad över köpet.",
+    "correct": true,
+    "explanationSv": "”Jag tror inte att jag kommer att ångra det här köpet”, säger hon.",
+    "explanationJa": "{後悔|こうかい}しないと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att prova kläder: i provhytten, att fråga om andras åsikt och att bestämma sig.",
+  "discussionPoints": [
+   "Provar du alltid kläder innan du köper dem?",
+   "Vem frågar du om åsikt när du köper kläder?",
+   "Har du ångrat ett klädköp?",
+   "Är det lätt eller svårt för dig att bestämma dig?"
+  ]
+ }
+}

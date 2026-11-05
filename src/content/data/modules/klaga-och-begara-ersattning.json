@@ -1,0 +1,170 @@
+{
+ "id": "m.klaga-och-begara-ersattning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Klaga och begära ersättning",
+ "titleJa": "{苦情|くじょう}と{補償|ほしょう}の{請求|せいきゅう}",
+ "descriptionSv": "Att klaga och begära ersättning: klaga, konsument, rättighet, ersättning, begära, kräva, skriftlig, skälig, kompensera, acceptera, avslå, stå på sig, konsumentvägledare, ARN och få rätt.",
+ "descriptionJa": "{苦情|くじょう}と{補償|ほしょう}の{請求|せいきゅう}：{苦情|くじょう}を{言|い}う、{消費者|しょうひしゃ}、{権利|けんり}、{補償|ほしょう}、{求|もと}める、{要求|ようきゅう}する、{書面|しょめん}の、{妥当|だとう}な、{埋|う}め{合|あ}わせる、{受|う}け{入|い}れる、{却下|きゃっか}する、{主張|しゅちょう}を{曲|ま}げない、{消費生活|しょうひせいかつ}{相談員|そうだんいん}、{苦情|くじょう}{処理|しょり}{委員会|いいんかい}、{正|ただ}しいと{認|みと}められる。",
+ "categoryId": "R01-A05-T06",
+ "tags": [
+  "tjänster",
+  "problem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.abonnemang-och-medlemskap"
+ ],
+ "related": [],
+ "recommendedOrder": 542,
+ "words": [
+  {
+   "senseId": "s.klaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konsument.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ersättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.begära.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kräva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriftlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skälig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kompensera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.acceptera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avslå.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stå-på-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konsumentvägledare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ARN.1",
+   "active": false
+  },
+  {
+   "senseId": "s.få-rätt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Den trasiga tvättmaskinen",
+  "paragraphs": [
+   "Aiko och Erik köpte en ny tvättmaskin för ett halvår sedan. Nu har den gått sönder två gånger. Erik ringer butiken för att klaga.",
+   "”Som konsument har man rättigheter”, säger Aiko. ”Vi har rätt att reklamera i tre år.” Erik kräver en ny maskin och vill begära ersättning för tvätten som blev förstörd.",
+   "Butiken vill att han skickar ett skriftligt klagomål. Han skriver ett mejl och förklarar allt. Han tycker att 1 000 kronor är en skälig ersättning.",
+   "Butiken svarar att de kan kompensera med en rabatt på 200 kronor. ”Det accepterar vi inte”, säger Aiko. Sedan avslår butiken deras krav helt.",
+   "Aiko vill stå på sig. Hon ringer kommunens konsumentvägledare, som ger gratis råd. ”Ni kan gå vidare till ARN”, säger han.",
+   "Efter tre månader kommer beslutet från ARN. Aiko och Erik får rätt, och butiken måste ge dem en ny tvättmaskin."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur gammal är tvättmaskinen?",
+    "options": [
+     "Tre år",
+     "En månad",
+     "Två år",
+     "Ett halvår"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko och Erik köpte en ny tvättmaskin för ett halvår sedan.",
+    "explanationJa": "{半年|はんとし}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge har man rätt att reklamera?",
+    "options": [
+     "I ett år",
+     "I en månad",
+     "I tio år",
+     "I tre år"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Vi har rätt att reklamera i tre år.”",
+    "explanationJa": "3{年間|ねんかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad erbjuder butiken först?",
+    "options": [
+     "En rabatt på 200 kronor",
+     "En ny maskin",
+     "1 000 kronor",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Butiken svarar att de kan kompensera med en rabatt på 200 kronor.",
+    "explanationJa": "200クローナの{割引|わりびき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aiko och Erik accepterar rabatten.",
+    "correct": false,
+    "explanationSv": "”Det accepterar vi inte”, säger Aiko.",
+    "explanationJa": "{受|う}け{入|い}れません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det lönade sig för Aiko att stå på sig.",
+    "correct": true,
+    "explanationSv": "Aiko och Erik får rätt, och butiken måste ge dem en ny tvättmaskin.",
+    "explanationJa": "{新|あたら}しい{洗濯機|せんたくき}をもらえました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att klaga och begära ersättning: när ni har klagat, vilka rättigheter man har som konsument och hur det fungerar i Japan.",
+  "discussionPoints": [
+   "När klagade du senast? Vad hände?",
+   "Står du på dig om ett företag säger nej?",
+   "Vilka rättigheter har man som konsument i Sverige?",
+   "Vart vänder man sig i Japan om ett företag inte lyssnar?"
+  ]
+ }
+}
