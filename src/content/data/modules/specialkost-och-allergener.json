@@ -1,0 +1,169 @@
+{
+ "id": "m.specialkost-och-allergener",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Specialkost och allergener",
+ "titleJa": "{特別食|とくべつしょく}とアレルゲン",
+ "descriptionSv": "Specialkost och allergier: gluten, nötter, laktos, halal och att läsa etiketter noga.",
+ "descriptionJa": "{特別食|とくべつしょく}とアレルギー：グルテン、ナッツ、{乳糖|にゅうとう}、ハラール、ラベルをよく{読|よ}むこと。",
+ "categoryId": "R01-A02-T06",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.mat-fran-olika-varldsdelar"
+ ],
+ "related": [],
+ "recommendedOrder": 136,
+ "words": [
+  {
+   "senseId": "s.allergi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.specialkost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allergisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nötallergi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allergen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.reaktion.2",
+   "active": true
+  },
+  {
+   "senseId": "s.gluten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glutenfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.celiaki.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överkänslig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spår.1",
+   "active": false
+  },
+  {
+   "senseId": "s.varna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.halal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kosher.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mat för alla",
+  "paragraphs": [
+   "Aiko och Erik ska ha fest för tolv personer. Aiko frågar alla gäster om specialkost. Det visar sig att många inte kan äta allt.",
+   "Eriks syster har celiaki och tål inte gluten. Hon måste äta glutenfritt. En kollega är allergisk mot nötter. ”Det är en farlig allergi”, säger Erik. ”Han kan få en stark reaktion.”",
+   "Yuki är överkänslig mot mjölk, och en vän äter bara halal mat. En annan vän är jude och äter kosher. ”Min pappa har en diet utan socker”, säger en tredje.",
+   "Aiko läser alla etiketter noga. Allergener står med fet stil. På en påse med choklad står det: ”Kan innehålla spår av nötter.” ”Den kan vi inte ha”, säger hon.",
+   "Hon lagar en stor gryta utan nötter, mjölk och gluten, och utan fläsk. Bredvid skriver hon vad som finns i maten.",
+   "När gästerna kommer varnar hon för en kaka med mandel. ”Den är bara till dem som inte har nötallergi.” Alla kan äta, och alla är nöjda."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför frågar Aiko gästerna om specialkost?",
+    "options": [
+     "För att hon vill ha recept.",
+     "För att festen är dyr.",
+     "För att alla ska kunna äta maten.",
+     "För att Erik vill det."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon frågar för att många inte kan äta allt.",
+    "explanationJa": "{全員|ぜんいん}が{食|た}べられるようにするためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tål inte Eriks syster?",
+    "options": [
+     "Gluten",
+     "Nötter",
+     "Mjölk",
+     "Socker"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Eriks syster har celiaki och tål inte gluten.",
+    "explanationJa": "エリックのお{姉|ねえ}さんはグルテンを{受|う}けつけません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Allergener står med fet stil på förpackningen.",
+    "correct": true,
+    "explanationSv": "Texten säger att allergener står med fet stil.",
+    "explanationJa": "アレルゲンは{太字|ふとじ}で{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför kan Aiko inte ha chokladen?",
+    "options": [
+     "Den har gluten.",
+     "Den är för söt.",
+     "Den kan innehålla spår av nötter.",
+     "Den har fläsk."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På påsen står det att den kan innehålla spår av nötter.",
+    "explanationJa": "ナッツが{微量|びりょう}{含|ふく}まれている{可能性|かのうせい}があるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Alla gäster kan äta kakan med mandel.",
+    "correct": false,
+    "explanationSv": "Aiko varnar och säger att kakan bara är till dem som inte har nötallergi.",
+    "explanationJa": "アーモンドのケーキはナッツアレルギーのない{人|ひと}だけ{食|た}べられます。"
+   }
+  ],
+  "factSources": [
+   "EU:s regler: allergener ska framhävas (t.ex. fet stil) i ingrediensförteckningen."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om specialkost och allergier: vad man inte kan eller vill äta, hur man läser etiketter, och hur man lagar mat så att alla kan äta.",
+  "discussionPoints": [
+   "Har du eller någon du känner en allergi?",
+   "Hur märker man allergener i Japan?",
+   "Vad tänker du på när du lagar mat till gäster?",
+   "Hur vanligt är vegetarisk, halal eller glutenfri mat i Japan?"
+  ]
+ }
+}

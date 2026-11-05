@@ -98,6 +98,8 @@ export class VocabularyChecker {
     const words = tokenize(text).filter((t) => t.isWord).map((t) => t.text);
     const out: string[] = [];
     for (let i = 0; i < words.length; i++) {
+      const triple = i + 2 < words.length ? `${words[i]} ${words[i + 1]} ${words[i + 2]}`.toLowerCase() : '';
+      if (triple && extra.has(triple)) { i += 2; continue; } // "pytt i panna", "tack för maten"
       const pair = i + 1 < words.length ? `${words[i]} ${words[i + 1]}`.toLowerCase() : '';
       if (pair && extra.has(pair)) { i++; continue; }
       if (!this.isKnown(words[i]!, extra)) out.push(words[i]!);

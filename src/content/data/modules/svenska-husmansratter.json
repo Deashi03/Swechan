@@ -1,0 +1,169 @@
+{
+ "id": "m.svenska-husmansratter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Svenska husmansrätter",
+ "titleJa": "スウェーデンの{家庭料理|かていりょうり}",
+ "descriptionSv": "Klassisk svensk vardagsmat: kåldolmar, pytt i panna, raggmunk, kalops och falukorv.",
+ "descriptionJa": "スウェーデンの{定番家庭料理|ていばんかていりょうり}：ロールキャベツ、ピッティパンナ、ラッグムンク、カロップス、ファールコルヴ。",
+ "categoryId": "R01-A02-T06",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.matbordets-samtal"
+ ],
+ "related": [],
+ "recommendedOrder": 133,
+ "words": [
+  {
+   "senseId": "s.husmanskost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gammaldags.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klassiker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kåldolme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pytt-i-panna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.raggmunk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kalops.1",
+   "active": false
+  },
+  {
+   "senseId": "s.makaron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stuva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.falukorv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kålrot.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rotmos.1",
+   "active": false
+  },
+  {
+   "senseId": "s.blodpudding.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kroppkaka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.löksås.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mormors husmanskost",
+  "paragraphs": [
+   "Eriks mormor har lagat husmanskost i sextio år. Aiko får komma och lära sig. ”Det är gammaldags mat, men alla tycker om den”, säger mormor.",
+   "På måndag gör de kåldolmar. Mormor rullar in köttfärs i kålblad. ”Kåldolmar kom från Turkiet för länge sedan”, berättar hon.",
+   "På tisdag blir det kalops, som får puttra i flera timmar. På onsdag gör de raggmunk med fläsk och lingon.",
+   "På torsdag är det ärtsoppa, förstås. På fredag lagar de falukorv med stuvade makaroner. ”Det åt jag när jag var liten”, säger Erik.",
+   "Mormor berättar om mat från andra delar av Sverige: kroppkakor från Öland, blodpudding och rotmos av kålrot. Till sist gör hon stekt fläsk med löksås.",
+   "På lördag bjuder Aiko mormor på pytt i panna, som hon har lagat själv. ”En riktig klassiker”, säger mormor. ”Nu kan du laga svensk mat!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge har mormor lagat husmanskost?",
+    "options": [
+     "I sex år",
+     "I tjugo år",
+     "I sextio år",
+     "I ett år"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mormor har lagat husmanskost i sextio år.",
+    "explanationJa": "60{年間|ねんかん}{作|つく}ってきました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var kom kåldolmar ifrån, enligt mormor?",
+    "options": [
+     "Från Japan",
+     "Från Turkiet",
+     "Från Öland",
+     "Från Italien"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mormor berättar att kåldolmar kom från Turkiet.",
+    "explanationJa": "ロールキャベツはトルコから{来|き}たと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "På fredag äter de falukorv med stuvade makaroner.",
+    "correct": true,
+    "explanationSv": "På fredag lagar de falukorv med stuvade makaroner.",
+    "explanationJa": "{金曜日|きんようび}はファールコルヴとマカロニのクリーム{煮|に}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Mormor säger att maten är ”gammaldags”. Vad betyder det?",
+    "options": [
+     "Man gjorde den så förr.",
+     "Den är dyr.",
+     "Den är ny och modern.",
+     "Den är gammal och dålig."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Gammaldags betyder att man gjorde så förr.",
+    "explanationJa": "gammaldags は「{昔|むかし}ながらの」という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor tycker om Aikos pytt i panna.",
+    "correct": true,
+    "explanationSv": "Hon säger att det är en riktig klassiker och att Aiko kan laga svensk mat nu.",
+    "explanationJa": "とてもほめています。"
+   }
+  ],
+  "factSources": [
+   "Kåldolmar sägs ha kommit till Sverige efter Karl XII:s tid i Osmanska riket; kroppkakor förknippas med Öland (allmänt kända)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om traditionell vardagsmat: svensk husmanskost, japansk hemmamat, och rätter som din familj har lagat länge.",
+  "discussionPoints": [
+   "Vilken svensk husmanskost har du ätit eller vill du smaka?",
+   "Vad är japansk husmanskost?",
+   "Vilken rätt lagade dina föräldrar eller far- och morföräldrar ofta?",
+   "Varför tror du att gammaldags mat fortfarande är populär?"
+  ]
+ }
+}

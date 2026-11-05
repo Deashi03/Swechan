@@ -1,0 +1,169 @@
+{
+ "id": "m.naringsamnen-i-maten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Näringsämnen i maten",
+ "titleJa": "{食|た}べ{物|もの}の{栄養素|えいようそ}",
+ "descriptionSv": "Näringsämnen och hälsosam mat: kolhydrater, protein, vitaminer, fiber och tallriksmodellen.",
+ "descriptionJa": "{栄養素|えいようそ}と{健康的|けんこうてき}な{食事|しょくじ}：{炭水化物|たんすいかぶつ}、たんぱく{質|しつ}、ビタミン、{食物繊維|しょくもつせんい}、{皿|さら}モデル。",
+ "categoryId": "R01-A02-T06",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.specialkost-och-allergener"
+ ],
+ "related": [],
+ "recommendedOrder": 137,
+ "words": [
+  {
+   "senseId": "s.näring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näringsämne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livsmedel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolhydrat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vitamin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mineral.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kalcium.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fiber.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fullkorn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kalori.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälsosam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.onyttig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.balanserad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tallriksmodell.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad finns i maten?",
+  "paragraphs": [
+   "Aikos systerson har lärt sig om näring i skolan. Han visar tallriksmodellen: en halv tallrik grönsaker, en fjärdedel kolhydrater som potatis eller pasta, och en fjärdedel protein.",
+   "”Alla näringsämnen behövs”, säger han. ”Kolhydrater ger energi, protein gör musklerna starka, och vitaminer och mineraler håller oss friska.”",
+   "”Mjölk har kalcium för benen”, fortsätter han. ”Och bröd av fullkorn har mycket fiber, som är bra för magen.”",
+   "Erik läser på förpackningen till en läsk. ”Den har massor av kalorier och inga näringsämnen”, säger han. ”Den är onyttig.”",
+   "Aiko berättar att japansk kost är känd för att vara hälsosam. ”Mycket fisk, ris, grönsaker och soja”, säger hon. ”Men också mycket salt.”",
+   "Myndigheten för livsmedel säger att en balanserad måltid är viktigare än att räkna kalorier. ”Ät lite av allt”, säger systersonen. ”Och godis bara på lördagar!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket av tallriken ska vara grönsaker enligt tallriksmodellen?",
+    "options": [
+     "En fjärdedel",
+     "Hela tallriken",
+     "En halv tallrik",
+     "Ingenting"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En halv tallrik ska vara grönsaker.",
+    "explanationJa": "{皿|さら}の{半分|はんぶん}を{野菜|やさい}にします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad ger kolhydrater kroppen, enligt systersonen?",
+    "options": [
+     "Kalcium",
+     "Fiber",
+     "Energi",
+     "Vitaminer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han säger att kolhydrater ger energi.",
+    "explanationJa": "{炭水化物|たんすいかぶつ}はエネルギーを{与|あた}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läsken har många näringsämnen.",
+    "correct": false,
+    "explanationSv": "Erik säger att den har massor av kalorier och inga näringsämnen.",
+    "explanationJa": "カロリーは{多|おお}いけれど、{栄養素|えいようそ}はありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är problemet med japansk kost, enligt Aiko?",
+    "options": [
+     "Den har för lite fisk.",
+     "Den har för mycket socker.",
+     "Den har inga grönsaker.",
+     "Den har mycket salt."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko säger att japansk kost också har mycket salt.",
+    "explanationJa": "{塩分|えんぶん}が{多|おお}いと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det viktigaste är att äta lite av allt.",
+    "correct": true,
+    "explanationSv": "Texten säger att en balanserad måltid är viktigare än att räkna kalorier.",
+    "explanationJa": "カロリーを{数|かぞ}えるより、バランスが{大切|たいせつ}です。"
+   }
+  ],
+  "factSources": [
+   "Livsmedelsverkets tallriksmodell; allmän näringslära (kolhydrater energi, kalcium för skelettet, fiber för tarmen)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om näringsämnen och hälsosam mat: vad olika näringsämnen gör i kroppen, svenska och japanska råd om kost, och dina egna matvanor.",
+  "discussionPoints": [
+   "Vad tycker du att hälsosam mat är?",
+   "Finns det något som liknar tallriksmodellen i Japan?",
+   "Räknar du kalorier? Varför eller varför inte?",
+   "Vilken onyttig mat har du svårt att låta bli?"
+  ]
+ }
+}
