@@ -1,0 +1,170 @@
+{
+ "id": "m.komma-ihag-och-glomma",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Komma ihåg och glömma",
+ "titleJa": "{覚|おぼ}えていることと{忘|わす}れること",
+ "descriptionSv": "Att komma ihåg och glömma: komma på, lägga på minnet, ha för sig, minnas fel, ligga på tungan, minneslapp, glömsk, minnesgod, utantill och tappa tråden.",
+ "descriptionJa": "{記憶|きおく}と{物忘|ものわす}れ：{思|おも}いつく、{覚|おぼ}えておく、{確|たし}か〜と{思|おも}う、{記憶違|きおくちが}い、のどまで{出|で}かかる、メモ、{忘|わす}れっぽい、{記憶力|きおくりょく}がいい、{暗記|あんき}、{話|はなし}の{筋|すじ}を{見失|みうしな}う。",
+ "categoryId": "R01-A04-T04",
+ "tags": [
+  "vardag",
+  "verb"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.folja-med-och-ga-hem"
+ ],
+ "related": [],
+ "recommendedOrder": 426,
+ "words": [
+  {
+   "senseId": "s.komma-ihåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påminna-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lägga-på-minnet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dra-sig-till-minnes.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ha-för-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.minnas-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ligga-på-tungan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.minneslapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glömsk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glömska.1",
+   "active": false
+  },
+  {
+   "senseId": "s.minnesgod.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utantill.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tappa-tråden.1",
+   "active": false
+  },
+  {
+   "senseId": "s.minnesbild.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är nycklarna?",
+  "paragraphs": [
+   "Erik är glömsk. Han kan aldrig komma ihåg var han har lagt nycklarna. Aiko har satt upp minneslappar på kylskåpet åt honom.",
+   "”Lägg på minnet var du lägger dem!” säger hon. Erik har för sig att de ligger i jackan, men där är de inte. Han måste ha mints fel.",
+   "Plötsligt kan han komma på det: de ligger i bilen! Han har en tydlig minnesbild av att han lade dem där i går.",
+   "Mia är minnesgod. Hon kan alla sina kompisars telefonnummer utantill. Morfar däremot kan inte dra sig till minnes vad grannen heter. ”Det ligger på tungan!”",
+   "Mitt i en historia kan morfar tappa tråden. ”Vad var det jag skulle säga?” ”Glömska kommer med åldern”, säger han och skrattar.",
+   "På kvällen påminner sig Erik om att han måste ringa mamma. Den här gången skriver han en lapp."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad glömmer Erik ofta?",
+    "options": [
+     "Telefonnummer",
+     "Var han har lagt nycklarna",
+     "Grannens namn",
+     "Att äta"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han kan aldrig komma ihåg var han har lagt nycklarna.",
+    "explanationJa": "カギをどこに{置|お}いたかです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var ligger nycklarna till slut?",
+    "options": [
+     "I jackan",
+     "I bilen",
+     "På kylskåpet",
+     "I lådan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De ligger i bilen!",
+    "explanationJa": "{車|くるま}の{中|なか}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia kan telefonnummer utantill.",
+    "correct": true,
+    "explanationSv": "Hon kan alla sina kompisars telefonnummer utantill.",
+    "explanationJa": "{暗記|あんき}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad kan morfar inte dra sig till minnes?",
+    "options": [
+     "Vad grannen heter",
+     "Var nycklarna är",
+     "Mias nummer",
+     "Vilken dag det är"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Morfar kan inte dra sig till minnes vad grannen heter.",
+    "explanationJa": "{隣|となり}の{人|ひと}の{名前|なまえ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik har lärt sig något.",
+    "correct": true,
+    "explanationSv": "Den här gången skriver han en lapp.",
+    "explanationJa": "{今回|こんかい}はメモを{書|か}きます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att komma ihåg och glömma: knep för att minnas, och saker ni har glömt.",
+  "discussionPoints": [
+   "Är du glömsk eller minnesgod?",
+   "Vad glömmer du oftast?",
+   "Hur gör du för att komma ihåg saker?",
+   "Kan du något utantill, till exempel en dikt eller en sång?"
+  ]
+ }
+}

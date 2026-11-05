@@ -1,0 +1,170 @@
+{
+ "id": "m.behova-och-vilja",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Behöva och vilja",
+ "titleJa": "{必要|ひつよう}なことと{望|のぞ}むこと",
+ "descriptionSv": "Behöva och vilja: behov, tvungen, obligatorisk, frivillig, slippa, ha lust, känna för, sugen, längta, önskan, föredra, vägra och ha råd.",
+ "descriptionJa": "{必要|ひつよう}と{願望|がんぼう}：ニーズ、〜せざるを{得|え}ない、{必須|ひっす}、{任意|にんい}、しなくて{済|す}む、したい{気分|きぶん}、{食|た}べたい、{待|ま}ち{遠|どお}しい、{願|ねが}い、{好|この}む、{拒|こば}む、{余裕|よゆう}がある。",
+ "categoryId": "R01-A04-T04",
+ "tags": [
+  "vardag",
+  "verb"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.borja-och-sluta"
+ ],
+ "related": [],
+ "recommendedOrder": 428,
+ "words": [
+  {
+   "senseId": "s.behov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvungen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obligatorisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.frivillig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slippa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ha-lust.1",
+   "active": true
+  },
+  {
+   "senseId": "s.känna-för.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sugen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.längta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.längtan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.önskan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.önskelista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föredra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ha-råd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Önskelistan",
+  "paragraphs": [
+   "Leo fyller år snart och har skrivit en lång önskelista. Hans största önskan är en hund. ”Vi kommer inte att ha råd med allt”, säger Erik.",
+   "”Behöver du verkligen en ny cykel?” frågar Aiko. ”Ja, det är ett behov, inte bara en önskan”, säger Leo. Hans gamla cykel är för liten.",
+   "Mia längtar efter sommarlovet. Hon är tvungen att plugga till ett prov. Läxan i matte är frivillig, men provet är obligatoriskt.",
+   "”Skulle du ha lust att gå på bio i kväll?” frågar Erik. ”Nej, jag känner för att vara hemma”, säger Aiko. ”Men jag är sugen på glass.”",
+   "Leo vägrar äta fisk till middag. Han föredrar korv. ”Om du äter fisken slipper du diska”, säger Erik.",
+   "Aiko har en stor längtan hem till Japan. I sommar ska familjen åka dit."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är Leos största önskan?",
+    "options": [
+     "En cykel",
+     "Glass",
+     "En hund",
+     "En bil"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hans största önskan är en hund.",
+    "explanationJa": "{犬|いぬ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför behöver Leo en ny cykel?",
+    "options": [
+     "Den gamla är trasig.",
+     "Den gamla är för liten.",
+     "Han har ingen cykel.",
+     "Den är omodern."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hans gamla cykel är för liten.",
+    "explanationJa": "{古|ふる}い{自転車|じてんしゃ}が{小|ちい}さすぎるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mias prov är frivilligt.",
+    "correct": false,
+    "explanationSv": "Läxan i matte är frivillig, men provet är obligatoriskt.",
+    "explanationJa": "{試験|しけん}は{必須|ひっす}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är Aiko sugen på?",
+    "options": [
+     "Pizza",
+     "Glass",
+     "Fisk",
+     "Korv"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Men jag är sugen på glass.”",
+    "explanationJa": "アイスです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko saknar Japan.",
+    "correct": true,
+    "explanationSv": "Aiko har en stor längtan hem till Japan.",
+    "explanationJa": "{日本|にほん}が{恋|こい}しいです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om behov och önskningar: vad ni vill ha, vad ni behöver och vad ni slipper göra.",
+  "discussionPoints": [
+   "Vad står på din önskelista just nu?",
+   "Vad längtar du efter?",
+   "Vad är du sugen på just nu?",
+   "Vad skulle du helst slippa göra?"
+  ]
+ }
+}
