@@ -21,6 +21,7 @@ import { Icon } from '../components/Icon';
 import { Ja } from '../components/Ja';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
 import { ModuleCard } from './ModuleOverview';
+import { Art } from '../art/Art';
 
 /** Results per search section page (search results are a menu → paginate). */
 export const SEARCH_PAGE_SIZE = 8;
@@ -67,6 +68,7 @@ function MenuRow({ item, progress }: { item: MenuItem; progress: Map<string, Mod
     return (
       <li>
         <a className="list-item" href={href({ name: 'explore', categoryId: item.id })}>
+          <Art id={item.id} size={item.id.length === 3 ? 52 : 40} />
           <span className="grow"><strong>{item.titleSv}</strong><br /><CountLine planned={item.plannedCount} published={item.publishedCount} /></span>
           <Icon name="chevron" size={18} />
         </a>
@@ -81,6 +83,7 @@ function MenuRow({ item, progress }: { item: MenuItem; progress: Map<string, Mod
   return (
     <li>
       <a className="list-item" href={href({ name: 'catalogModule', id: item.id })} aria-label={`${item.titleSv} – planerad, inte klar än`}>
+        <Art id={item.id} size={40} />
         <span className="grow"><span className="muted">{item.titleSv}</span></span>
         <span className="badge">Planerad</span>
       </a>
