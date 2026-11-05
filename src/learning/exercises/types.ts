@@ -8,14 +8,20 @@
  */
 import type { Dimension } from '../../storage/types';
 
-export type ExerciseType = 'meaning_choice' | 'reverse_choice' | 'context_choice' | 'synonym_choice' | 'spelling' | 'inflection';
+export type ExerciseType = 'meaning_choice' | 'reverse_choice' | 'context_choice' | 'synonym_choice' | 'image_choice' | 'image_pick' | 'spelling' | 'inflection';
 
-export type ChoiceOption = { senseId: string | null; label: string; lang: 'sv' | 'ja' };
+/** Picture exercises (0.6): picture → word, word → picture. */
+export const IMAGE_TYPES: ExerciseType[] = ['image_choice', 'image_pick'];
+
+/** `image`: sense id whose picture is the option (image_pick); the label is revealed with the result. */
+export type ChoiceOption = { senseId: string | null; label: string; lang: 'sv' | 'ja'; image?: string };
 
 type Base = { senseId: string; dimension: Dimension };
 
 export type ChoiceExercise = Base & {
-  type: 'meaning_choice' | 'reverse_choice' | 'context_choice' | 'synonym_choice';
+  type: 'meaning_choice' | 'reverse_choice' | 'context_choice' | 'synonym_choice' | 'image_choice' | 'image_pick';
+  /** Sense id whose picture is shown as (part of) the prompt. */
+  image?: string;
   /** Main prompt (Swedish text or Japanese markup). */
   prompt: string;
   promptLang: 'sv' | 'ja';
@@ -37,6 +43,8 @@ export type ChoiceExercise = Base & {
 
 export type TypedExercise = Base & {
   type: 'spelling' | 'inflection';
+  /** Sense id whose picture is shown with the prompt. */
+  image?: string;
   prompt: string;
   promptLang: 'sv' | 'ja';
   subPrompt?: string;
@@ -63,6 +71,8 @@ export const DIMENSION_OF: Record<ExerciseType, Dimension> = {
   reverse_choice: 'meaning',
   context_choice: 'meaning',
   synonym_choice: 'meaning',
+  image_choice: 'meaning',
+  image_pick: 'meaning',
   spelling: 'spelling',
   inflection: 'inflection',
 };

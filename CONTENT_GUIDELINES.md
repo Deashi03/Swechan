@@ -73,7 +73,15 @@ Utkast i `content/drafts/` ingår aldrig i appen. Status `reviewed` på en betyd
 - **Bild:** varje ny modul får ett motiv i `src/ui/art/motifs.ts` (stil "Platt"). Granska med `npm run art:sheet`.
 - **Japansk glosa:** undvik att lägga ett annat ords huvudglosa inom parentes (t.ex. 「靴屋（修理）」) – parentesdelen blir en egen sökterm i ordboken.
 
-## Process för en ny modul
+## Bilder på orden (0.6)
+
+- **En bild per betydelse** där den hjälper. Form → illustration (`src/ui/wordArt/motifs.ts`, med plaggverktygen i `kit.ts`); yta/tillstånd (tillagning, material, mognad) → foto.
+- **Gör skillnaden tydlig:** överdriv det som skiljer ordet från närliggande ord (knappar på *kofta*, dragkedja och huva på *munkjacka*, hög krage på *polotröja*). Markera en del av ett plagg med orange kontur (*ärm*, *krage*).
+- **Abstrakta ord:** en kulturellt neutral scen som knyter an till exempelmeningen – inga västerländska metaforer (uggla = visdom, lejon = mod). Finns ingen tydlig scen: ingen bild. Symbolbilder är aldrig `quiz`.
+- **`quiz: true` bara om bilden entydigt visar ordet.** Allmänna ord (*långbyxor*, *underkläder*) och nästan identiska ord (*mysbyxor* bredvid *mjukisbyxor*) får `quiz: false`.
+- **`group`** samlar ord som liknar varandra visuellt (överdelar, byxor, jackor …); distraktorer tas aldrig från samma grupp. **`confusableWith`** anger förväxlingar över gränserna (*brud* ↔ *brudklänning*, *bryna* ↔ *steka*).
+- **Foton:** bara CC0, public domain eller CC BY (aldrig NC eller SA). Ange titel, upphovsperson, licens och källsida. Neutral bakgrund, motivet centrerat, inga igenkännbara personer, ingen text. 400 × 400 webp under 80 kB.
+
 
 1. **Välj ämne** och placera det i kategoriträdet (lägg till kategorier vid behov; `parentId`, `order`, svenska + japanska namn).
 2. **Välj 15–20 målord** (från 0.3.1; kortare moduler är mindre tunga att ta sig igenom). Blanda ordklasser. Markera ~60 % som `active: true` (ska kunna användas) och resten som `active: false` (främst förstå).

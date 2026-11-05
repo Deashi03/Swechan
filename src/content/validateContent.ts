@@ -6,6 +6,7 @@
  */
 import { checkFurigana } from './furigana';
 import { entryOccursIn } from './morphology';
+import { allWordImages } from './images';
 import type { ContentRepository } from './repository';
 
 export type ContentIssue = { where: string; message: string };
@@ -101,5 +102,16 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
     p.options?.forEach((o) => ja(p.id, o));
     if (p.kind === 'meaning' && !(p.options ?? []).includes(p.answers[0]!)) add(p.id, 'Rätt svar saknas bland alternativen');
   }
+  // Word images (0.6)
+  const imageSeen = new Set<string>();
+  for (const img of allWordImages()) {
+    const w = `bild ${img.senseId}`;
+    if (imageSeen.has(img.senseId)) add(w, 'Betydelsen har flera bilder');
+    imageSeen.add(img.senseId);
+    if (!repo.getSense(img.senseId)) add(w, 'Okänd betydelse');
+    for (const c of img.confusableWith ?? []) if (!repo.getSense(c)) add(w, `confusableWith pekar på okänd betydelse ${c}`);
+    if (img.symbol && img.quiz) add(w, 'En symbolbild får inte användas i bildövningar (quiz)');
+  }
+
   return issues;
 }

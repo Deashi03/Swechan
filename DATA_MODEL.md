@@ -52,7 +52,9 @@ CatalogModule    catalogId (SWC-XXX-nn-nn-nn), catalogCategoryId (alltid en ämn
 - `links`: verifierad 1:1 `catalogId` ⇔ `moduleId` med `verifiedBy` (0.4: de tre matlagningsmodulerna; 0.5: 105 kopplingar). Den publicerade lektionen ersätter då den planerade posten i ämnesgruppens meny.
 - `compatibilityPlacements`: publicerad `m.*`-modul som visas i en katalogkategori utan att påstå ett `catalogId`; `overlapsCatalogIds` anger ämnesöverlapp (inte likvärdighet). Från 0.5 måste kategorin vara en ämnesgrupp (utan underkategorier).
 
-0.5 ändrar inte användardata (Dexie-versionen är oförändrad). Illustrationerna är kod (`src/ui/art/`) och lagras inte.
+0.5 ändrar inte användardata (Dexie-versionen är oförändrad).
+
+**Bilder (0.6):** `src/content/data/images/wordImages.json` – `{ senseId, kind: illustration|photo, motif | file+credit, group, quiz, confusableWith?, symbol? }`, högst en bild per betydelse. Innehåll, inte användardata. Nya `exerciseType`-värden i svarshistoriken: `image_choice`, `image_pick` (fältet är redan en fri sträng i schema och säkerhetskopia, så ingen migrering behövs). Illustrationerna är kod (`src/ui/art/`) och lagras inte.
 
 `catalogId` (planering) och `moduleId` (publicerad lektion) är olika identiteter. Användardata refererar alltid `moduleId`/`senseId`, aldrig `catalogId`.
 

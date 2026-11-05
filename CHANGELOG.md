@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.6.0 – 2026-11-05
+
+**Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.5.0 → 0.6.0 nollställer progressionen (återställningspunkt sparas).
+
+### Bilder på orden – pilot (användarens önskemål efter stickprov i 0.5)
+- **En bild per betydelse** för alla 107 ord i *Vardagskläder* (7 moduler) plus tre fotoord för att prova blandningen: *bryna*, *mocka* och *manchester*.
+- **Illustrationer som kod** i en ny, mer detaljerad bilderboksstil (`src/ui/wordArt/`): en verktygslåda för plagg (`kit.ts`) där det som skiljer orden åt är tydligt – krage, ärmar, huva, dragkedja, knappar, längd. Verb visas med händer och pilar, abstrakta ord med en kulturellt neutral scen (t.ex. *originell* = en färgglad figur bland grå, *tidlös* = vit skjorta och timglas). Illustrationerna laddas lat som egen del (28 kB, 10 kB gzip).
+- **Foton** endast där skillnaden ligger i yta eller tillstånd. Fritt licensierade (CC0/CC BY) via Openverse, beskurna till 400 × 400 och komprimerade (24–41 kB). Upphovsperson och licens visas vid ordet och under Inställningar → Bildkällor.
+- **Bildregister** `src/content/data/images/wordImages.json`: bildtyp, `quiz` (bilden är entydig nog för bildfrågor), visuell `group` och `confusableWith`. Validering: kända betydelser, symbolbilder aldrig i bildfrågor; test: motiv finns, fotofiler finns och är små, licens anges.
+
+### Var bilderna visas
+- **Ordintroduktionen**: alltid när ordet har en bild.
+- **Nya övningar**: *bild → fyra ord* (`image_choice`) och *ord → fyra bilder* (`image_pick`, namnen visas först efter svaret). I steg 1 ersätter de igenkänningsrundan för ord med entydig bild; i repetitionen ingår de bland betydelseövningarna. De räknas som betydelseövningar (ingen ny korttyp, oförändrat antal repetitioner).
+- **Stavning**: bilden visas tillsammans med den japanska ledtråden.
+- **Inte** i luckmeningar, böjningsövningar eller japanska → svenska (bilden skulle avslöja svaret eller ersätta översättningsträningen).
+
+### Alternativ som inte går att blanda ihop
+- Distraktorer i bildövningar måste ha en entydig bild, komma från en **annan visuell grupp** och får inte vara **deklarerat förväxlingsbara** åt något håll. Bilden på en brynt biff får alltså aldrig alternativet *steka*; *kofta* och *munkjacka* (samma grupp) visas aldrig tillsammans; allmänna ord som *långbyxor* och *underkläder* är aldrig alternativ.
+- Ord utan entydig bild (t.ex. *klädstil*, *ha på sig*, detaljer som *ärm*) får bild i introduktionen men inga bildfrågor.
+- Tester genererar varje bildövning med flera slumpfrön och underkänner varje otillåtet alternativ.
+
+### Övrigt
+- `npm run art:words` skriver ett kontaktark med alla ordbilder för granskning.
+- Bilderna förladdas för offline tillsammans med lektionerna.
+- `APP_VERSION` 0.6.0, service workerns cache `swechan-v7`.
+
 ## 0.5.0 – 2026-11-05
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.4.0 → 0.5.0 nollställer progressionen (återställningspunkt sparas, Inställningar → Säkerhetskopia → Ångra).

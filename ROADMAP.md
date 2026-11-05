@@ -25,7 +25,11 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - Bilder i stilen "Platt" för områden och alla publicerade moduler.
 - Rättat: svaret syntes i frågan; äldre moduler i fel överkategori.
 
-## v0.6 – nästa steg för innehållet
+## v0.6 – Bilder på orden (pilot klar)
+- Bild per betydelse i Vardagskläder, bildövningar med förväxlingsfria alternativ, foton där yta/tillstånd avgör.
+
+## v0.7 – nästa steg för innehållet
+- Bilder för resten av de publicerade modulerna (efter produktägarens utvärdering av piloten).
 - Resten av *Kläder & personlig stil*, sedan nästa överämne, ett i taget.
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
 - Japanska katalogtitlar (översättning + granskning).
