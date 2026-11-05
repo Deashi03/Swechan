@@ -1,0 +1,173 @@
+{
+ "id": "m.trojor-och-skjortor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tröjor och skjortor",
+ "titleJa": "セーターとシャツ",
+ "descriptionSv": "Tröjor och skjortor: skjorta, blus, kofta, huvtröja, krage och ärmar, och att ta på och av sig.",
+ "descriptionJa": "セーターとシャツ：シャツ、ブラウス、カーディガン、パーカー、{襟|えり}と{袖|そで}、{服|ふく}の{着|き}{脱|ぬ}ぎ。",
+ "categoryId": "R01-A03-T01",
+ "tags": [
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.flyttdag-och-adressandring"
+ ],
+ "related": [],
+ "recommendedOrder": 301,
+ "words": [
+  {
+   "senseId": "s.skjorta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ärm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.t-shirt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kofta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvtröja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.polotröja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.topp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortärmad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långärmad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäppa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäppa-upp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kavla-upp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-på-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-av-sig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad ska jag ha på mig?",
+  "paragraphs": [
+   "Det är måndag morgon och Erik står framför garderoben. Han ska på ett viktigt möte på jobbet och vill ha en skjorta.",
+   "Han tar på sig en ljusblå skjorta med vit krage. Ärmarna är lite för långa, men det gör inget. Han knäpper alla knappar utom den översta.",
+   "Aiko har en svart polotröja och en grå kofta. ”Är det inte för varmt?” frågar Erik. ”Nej, det är kallt på jobbet”, säger hon.",
+   "Deras dotter Mia kommer ut från sitt rum i en huvtröja. ”Du kan inte ha den i skolan i dag, de ska ta bilder av alla barn”, säger Aiko. Mia tar av sig huvtröjan och tar på sig en vit blus i stället.",
+   "På eftermiddagen blir det varmt. Erik knäpper upp skjortan och kavlar upp ärmarna. Han önskar att han hade en kortärmad skjorta.",
+   "På kvällen har alla bara t-shirt eller topp. ”I morgon tar jag en långärmad t-shirt i stället för skjorta”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Erik ha en skjorta?",
+    "options": [
+     "Det är kallt.",
+     "Han ska på fest.",
+     "Han ska på ett viktigt möte.",
+     "Mia vill det."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han ska på ett viktigt möte på jobbet och vill ha en skjorta.",
+    "explanationJa": "{大事|だいじ}な{会議|かいぎ}があるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Erik knäpper alla knappar på skjortan.",
+    "correct": false,
+    "explanationSv": "Han knäpper alla knappar utom den översta.",
+    "explanationJa": "{一番上|いちばんうえ}のボタン{以外|いがい}を{留|と}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför har Aiko kofta?",
+    "options": [
+     "Det regnar.",
+     "Hon har ingen annan tröja.",
+     "Hon ska träna.",
+     "Det är kallt på jobbet."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Nej, det är kallt på jobbet”, säger hon.",
+    "explanationJa": "オフィスが{寒|さむ}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har Mia på sig till slut?",
+    "options": [
+     "En huvtröja",
+     "En vit blus",
+     "En polotröja",
+     "En topp"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mia tar av sig huvtröjan och tar på sig en vit blus i stället.",
+    "explanationJa": "{白|しろ}いブラウスを{着|き}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tyckte att det var för varmt i skjortan på eftermiddagen.",
+    "correct": true,
+    "explanationSv": "Han knäpper upp skjortan och kavlar upp ärmarna.",
+    "explanationJa": "{暑|あつ}かったのでボタンを{外|はず}して{袖|そで}をまくりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tröjor och skjortor: vad ni har på er till jobbet, i skolan och hemma, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vad har du på dig i dag?",
+   "Har du skjorta på jobbet eller i skolan?",
+   "Vilken tröja tycker du bäst om?",
+   "Vad har man på sig på kontor i Japan på sommaren?"
+  ]
+ }
+}

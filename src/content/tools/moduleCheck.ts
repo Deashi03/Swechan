@@ -25,7 +25,9 @@ export function checkModules(moduleIds: string[], repo: ContentRepository, core:
     const meta = repo.getModule(moduleId);
     if (!meta) return { moduleId, errors: [`Modulen ${moduleId} finns inte bland publicerade moduler`] };
     const senseIds = [...new Set(meta.words.map((w) => w.senseId))];
-    const mine = (where: string) => where.startsWith(moduleId) || senseIds.some((s) => where.startsWith(s));
+    const entryIds = [...new Set(senseIds.map((s) => repo.getSense(s)?.entry.id).filter((e): e is string => !!e))];
+    const isOrStarts = (where: string, id: string) => where === id || (where.startsWith(id) && /^[\s:›.]/.test(where.slice(id.length)));
+    const mine = (where: string) => where.startsWith(moduleId) || senseIds.some((s) => where.startsWith(s)) || entryIds.some((e) => isOrStarts(where, e));
     for (const i of content) if (mine(i.where)) errors.push(`${i.where}: ${i.message}`);
     for (const i of vocab) if (i.where.startsWith(moduleId)) errors.push(`${i.where}: okända ord [${i.unknown.join(', ')}]`);
     for (const i of cat) if (i.where === moduleId) errors.push(`katalog: ${i.message}`);

@@ -540,6 +540,91 @@ export const MOTIFS: Record<string, Motif> = {
     q(42, 29, 8, 7, 'light', 1), c(16, 48, 6, 'main', H.grey), c(48, 48, 6, 'main', H.grey),
     c(16, 48, 2.5, 'light'), c(48, 48, 2.5, 'light'), q(12, 24, 12, 10, 'accent2', 1, H.brown),
   ] },
+  // ── Kläder & personlig stil: Vardagskläder ──────────────────
+  buttonshirt: { parts: [
+    p('M22 10 L10 16 L6 30 L14 32 L18 24 V56 H46 V24 L50 32 L58 30 L54 16 L42 10 L32 18 Z', 'main', H.blue),
+    p('M22 10 L32 18 L28 24 Z M42 10 L32 18 L36 24 Z', 'light'),
+    p('M32 20 V56', 'line'), c(35, 30, 1.6, 'line'), c(35, 39, 1.6, 'line'), c(35, 48, 1.6, 'line'),
+  ] },
+  trousers: { parts: [
+    p('M18 8 H46 L50 58 H36 L32 26 L28 58 H14 Z', 'main', H.blue), q(18, 8, 28, 6, 'accent', 1, H.blue),
+    p('M32 14 V24 M22 14 L24 20 M42 14 L40 20', 'line'),
+  ] },
+  dress: { parts: [
+    p('M26 6 L24 18 C20 24 22 28 24 30 L12 58 H52 L40 30 C42 28 44 24 40 18 L38 6 L32 12 Z', 'main', H.red),
+    q(22, 28, 20, 4, 'accent', 1.5, H.red), c(32, 44, 2, 'light'), c(24, 50, 2, 'light'), c(40, 50, 2, 'light'),
+  ] },
+  sock: { parts: [
+    p('M22 6 H38 V36 L52 46 C58 50 56 60 48 58 L26 50 C20 48 22 44 22 40 Z', 'main', H.purple),
+    q(22, 6, 16, 7, 'light', 1), p('M38 38 L28 46', 'line'), c(50, 52, 4, 'accent', H.purple),
+  ] },
+  coat: { parts: [
+    p('M24 8 L12 14 L8 56 H22 V30 L24 56 H40 L42 30 V56 H56 L52 14 L40 8 L32 20 Z', 'main', H.brown),
+    p('M24 8 L32 20 L26 26 L22 12 Z M40 8 L32 20 L38 26 L42 12 Z', 'accent', H.brown),
+    c(29, 34, 1.8, 'line'), c(29, 44, 1.8, 'line'), q(42, 40, 8, 5, 'light', 1),
+  ] },
+  hoodie: { parts: [
+    p('M22 14 C22 4 42 4 42 14 L54 20 L58 38 L50 40 L48 30 V56 H16 V30 L14 40 L6 38 L10 20 Z', 'main', H.green),
+    p('M26 14 C26 8 38 8 38 14 C38 18 26 18 26 14 Z', 'line'), q(22, 40, 20, 8, 'accent', 3, H.green),
+    p('M30 18 V26 M34 18 V26', 'line'),
+  ] },
+  hanger: { parts: [
+    p('M32 22 V16 C32 12 38 12 38 8 C38 4 30 4 30 8', 'line'), p('M32 22 L6 40 H58 Z', 'main', H.grey),
+    q(14, 42, 14, 16, 'accent', 2, H.red), q(30, 42, 10, 16, 'accent', 2, H.blue), q(42, 42, 10, 16, 'accent', 2, H.yellow),
+  ] },
+  // ── Kläder & personlig stil: Skor & accessoarer ─────────────
+  boot: { parts: [
+    p('M18 6 H36 V38 L54 44 C60 46 60 56 56 56 H12 V48 C14 40 18 36 18 30 Z', 'main', H.brown),
+    q(12, 52, 46, 6, 'line', 1), p('M22 14 H32 M22 21 H32 M22 28 H32', 'light'),
+  ] },
+  heel: { parts: [
+    p('M10 28 C10 22 18 22 20 28 L30 42 C34 47 42 47 48 45 C55 43 59 47 59 52 V55 H30 L20 42 V58 H13 V40 C11 36 10 32 10 28 Z', 'main', H.red),
+    p('M30 55 H59', 'line'), c(44, 50, 2, 'light'),
+  ] },
+  beanie: { parts: [
+    p('M12 44 C12 22 52 22 52 44 Z', 'main', H.red), q(10, 42, 44, 10, 'accent', 3, H.red),
+    c(32, 18, 6, 'light'), p('M20 30 V42 M28 28 V42 M36 28 V42 M44 30 V42', 'line'),
+  ] },
+  scarf: { parts: [
+    p('M14 14 C24 22 40 22 50 14 L52 22 C42 30 22 30 12 22 Z', 'main', H.blue),
+    p('M38 26 L46 56 H36 L32 28 Z', 'main', H.blue), p('M36 56 V60 M40 56 V60 M44 56 V60', 'line'),
+    c(16, 42, 7, 'accent', H.red), q(10, 42, 6, 12, 'accent', 3, H.red),
+  ] },
+  backpack: { parts: [
+    p('M24 14 C24 4 40 4 40 14', 'line'), q(14, 12, 36, 46, 'main', 8, H.orange),
+    q(20, 34, 24, 18, 'accent', 4, H.orange), p('M20 40 H44', 'line'), c(32, 22, 2, 'light'),
+  ] },
+  watch: { parts: [
+    q(24, 4, 16, 56, 'main', 4, H.brown), c(32, 32, 14, 'line'), c(32, 32, 12, 'light'),
+    p('M32 32 V24 M32 32 L38 35', 'line'), c(32, 32, 1.5, 'accent2'),
+  ] },
+  belt: { parts: [
+    q(4, 26, 56, 12, 'main', 2, H.brown), q(22, 22, 18, 20, 'line', 3), q(25, 25, 12, 14, 'light', 2),
+    p('M31 32 H46', 'line'), c(50, 32, 1.5, 'light'), c(55, 32, 1.5, 'light'),
+  ] },
+  // ── Kläder & personlig stil: Textilier & material ───────────
+  cotton: { parts: [
+    p('M32 58 V34', 'line'), p('M32 40 L22 46 M32 44 L42 50', 'line'),
+    c(32, 22, 10, 'light'), c(22, 26, 8, 'light'), c(42, 26, 8, 'light'), c(27, 16, 7, 'light'), c(37, 16, 7, 'light'),
+    p('M20 32 L32 38 L44 32', 'main', H.leaf),
+  ] },
+  yarn: { parts: [
+    c(28, 36, 18, 'main', H.purple), p('M14 28 C22 38 34 44 44 40 M12 38 C22 48 32 52 40 50 M18 20 C26 28 38 30 46 28', 'line'),
+    p('M44 48 L58 58', 'line'), p('M46 14 L56 4 M50 18 L60 8', 'line'),
+  ] },
+  fleece: { parts: [
+    p('M22 10 L10 16 L6 30 L14 32 L18 24 V56 H46 V24 L50 32 L58 30 L54 16 L42 10 Z', 'main', H.blue),
+    p('M32 10 V56', 'line'), q(28, 8, 8, 6, 'accent', 1, H.blue),
+    c(22, 36, 2, 'light'), c(42, 44, 2, 'light'), c(24, 48, 2, 'light'), c(40, 30, 2, 'light'),
+  ] },
+  leather: { parts: [
+    p('M14 10 C22 14 26 6 32 10 C38 6 42 14 50 10 C48 20 56 26 52 32 C56 40 48 46 50 54 C42 50 38 58 32 54 C26 58 22 50 14 54 C16 46 8 40 12 32 C8 26 16 20 14 10 Z', 'main', H.brown),
+    p('M20 20 H24 M30 20 H34 M40 20 H44 M20 44 H24 M30 44 H34 M40 44 H44 M18 28 V32 M46 28 V32 M18 36 V40 M46 36 V40', 'line'),
+  ] },
+  pattern: { parts: [
+    q(10, 10, 44, 44, 'light', 4), q(10, 10, 11, 44, 'main', 0, H.red), q(32, 10, 11, 44, 'main', 0, H.red),
+    q(10, 21, 44, 11, 'accent', 0, H.red), q(10, 43, 44, 11, 'accent', 0, H.red),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -577,6 +662,12 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-01-05-05': 'hammer', 'SWC-VAR-01-05-06': 'crackwall', 'SWC-VAR-01-05-07': 'checklist',
   'SWC-VAR-01-06-01': 'forsale', 'SWC-VAR-01-06-02': 'contract', 'SWC-VAR-01-06-03': 'coins', 'SWC-VAR-01-06-04': 'coop',
   'SWC-VAR-01-06-05': 'noise', 'SWC-VAR-01-06-06': 'service', 'SWC-VAR-01-06-07': 'movingtruck',
+  'SWC-VAR-03-01-01': 'buttonshirt', 'SWC-VAR-03-01-02': 'trousers', 'SWC-VAR-03-01-03': 'dress', 'SWC-VAR-03-01-04': 'sock',
+  'SWC-VAR-03-01-05': 'coat', 'SWC-VAR-03-01-06': 'hoodie', 'SWC-VAR-03-01-07': 'hanger',
+  'SWC-VAR-03-02-01': 'boot', 'SWC-VAR-03-02-02': 'heel', 'SWC-VAR-03-02-03': 'beanie', 'SWC-VAR-03-02-04': 'scarf',
+  'SWC-VAR-03-02-05': 'backpack', 'SWC-VAR-03-02-06': 'watch', 'SWC-VAR-03-02-07': 'belt',
+  'SWC-VAR-03-03-01': 'cotton', 'SWC-VAR-03-03-02': 'yarn', 'SWC-VAR-03-03-03': 'fleece', 'SWC-VAR-03-03-04': 'leather',
+  'SWC-VAR-03-03-05': 'pattern',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };
