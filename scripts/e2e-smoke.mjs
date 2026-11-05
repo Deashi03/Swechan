@@ -212,9 +212,9 @@ try {
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   await page.goBack();
   await page.goBack();
-  await page.getByRole('link', { name: /Kläder & personlig stil/ }).first().click();
-  await page.getByRole('link', { name: /Storlek & passform/ }).first().click();
-  await page.getByRole('link', { name: /Prova kläder/ }).first().click();
+  await page.getByRole('link', { name: /Resor & lokaltrafik/ }).first().click(); // still planned in 0.7
+  await page.getByRole('link', { name: /Kollektivtrafik/ }).first().click();
+  await page.getByRole('link', { name: /Buss och hållplats/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goBack();

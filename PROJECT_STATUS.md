@@ -11,6 +11,7 @@ Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det förs
 - **Kedjor:** `recommendedOrder` 4xx tid (401–442), 5xx handel (501–542). Nästa område är *Resor & lokaltrafik* (R01-A06). Dess första modul, *Buss och hållplats* (SWC-VAR-06-01-01), ska ha *Klaga och begära ersättning* (`m.klaga-och-begara-ersattning`) som förkunskap och ordning 601.
 - **Ord som sparats till senare överämnen:** biljett, hållplats, tunnelbana, station, trafik, parkering, körkort, pass (resor); lön, lån, ränta, försäkring, folkbokföring, polisanmälan (samhälle); sömn, stress, kroppsdelar, midja, känslor som besviken/nyfiken (människan); recept, läkemedel, feber (hälsa); logga in, lösenord (datorer). Kontrollera katalogtitlarna innan ett ord görs till målord.
 - **Rättat:** repetitionen kunde fastna på kort vars betydelse tagits bort (nu `liveCards()`). Den felstavade dubbletten `s.nopprig.1` togs bort (`s.noppig.1` används). Distraktorer med samma glosa väljs inte längre samtidigt.
+- **E2E:** den planerade katalogposten i e2e-skriptet är nu *Resor & lokaltrafik → Kollektivtrafik → Buss och hållplats*; byt till en annan planerad post när den publiceras.
 - **Push-tips:** remoten är `github.com/Deashi03/swechan` (gemener). Om GitHub svarar "fatal error in commit_refs_rules", pusha till den kanoniska adressen: `git push https://github.com/Deashi03/Swechan.git HEAD:<gren>`.
 
 ## 0.6 – släppt 2026-11-05 (pilot: bilder på orden)
