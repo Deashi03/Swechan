@@ -1,0 +1,171 @@
+{
+ "id": "m.avstand-och-riktningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Avstånd och riktningar",
+ "titleJa": "{距離|きょり}と{方向|ほうこう}",
+ "descriptionSv": "Avstånd och riktningar: hur långt, långt bort, en bit, i närheten, runt hörnet, nära till, promenera, halvvägs, fram och tillbaka, fågelvägen, avlägsen, nordost, nordväst, sydost och sydväst.",
+ "descriptionJa": "{距離|きょり}と{方向|ほうこう}：どのくらい、{遠|とお}くに、{少|すこ}し、{近|ちか}くに、すぐ{近|ちか}くに、〜まで{近|ちか}い、{散歩|さんぽ}する、{途中|とちゅう}まで、{往復|おうふく}で、{直線|ちょくせん}{距離|きょり}で、{遠|とお}く{離|はな}れた、{北東|ほくとう}、{北西|ほくせい}、{南東|なんとう}、{南西|なんせい}。",
+ "categoryId": "R01-A06-T02",
+ "tags": [
+  "resor",
+  "vägbeskrivning",
+  "avstånd"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kartor-och-orientering"
+ ],
+ "related": [],
+ "recommendedOrder": 615,
+ "words": [
+  {
+   "senseId": "s.hur-långt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långt-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-bit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-närheten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.runt-hörnet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nära-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.promenera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvvägs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fram-och-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fågelvägen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlägsen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nordost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nordväst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sydost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sydväst.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var ska vi bo?",
+  "paragraphs": [
+   "Aiko och Leo letar efter en stuga för sommaren. De tittar på tre stugor på nätet.",
+   "Den första stugan ligger sydväst om stan. – Hur långt är det till stranden? frågar Leo. – Det är nära till stranden, står det. Och en affär finns i närheten, precis runt hörnet.",
+   "Den andra stugan ligger nordost om stan. Den är billig, men den ligger långt bort. Det är tre kilometer fågelvägen till närmaste by, men tio kilometer på vägen.",
+   "Den tredje ligger på en avlägsen ö i nordväst. – Där kan vi inte promenera någonstans, säger Aiko.",
+   "– Men stugan i sydväst är dyr. Kanske kan vi ta en stuga i sydost? Den ligger halvvägs mellan stan och havet. Till stranden är det en bit, men vi kan cykla fram och tillbaka.",
+   "Till sist väljer de stugan i sydost."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur långt är det från den första stugan till stranden?",
+    "options": [
+     "Tre kilometer",
+     "Det är nära",
+     "Tio kilometer",
+     "En timme"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det är nära till stranden, står det.",
+    "explanationJa": "{近|ちか}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Den andra stugan är dyr.",
+    "correct": false,
+    "explanationSv": "Den är billig, men den ligger långt bort.",
+    "explanationJa": "{安|やす}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur långt är det på vägen till byn från den andra stugan?",
+    "options": [
+     "Tre kilometer",
+     "Fem kilometer",
+     "Tio kilometer",
+     "En bit"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… men tio kilometer på vägen.",
+    "explanationJa": "10キロです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var ligger den tredje stugan?",
+    "options": [
+     "I sydost",
+     "På en ö i nordväst",
+     "Nära stranden",
+     "I stan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den tredje ligger på en avlägsen ö i nordväst.",
+    "explanationJa": "{北西|ほくせい}の{島|しま}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko och Leo väljer den billigaste stugan.",
+    "correct": false,
+    "explanationSv": "Till sist väljer de stugan i sydost.",
+    "explanationJa": "{一番|いちばん}{安|やす}いのは{二|ふた}つ{目|め}ですが、{南東|なんとう}のを{選|えら}びました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om avstånd: hur långt det är till olika platser och hur ni tar er dit.",
+  "discussionPoints": [
+   "Hur långt är det från ditt hem till närmaste affär?",
+   "Vad finns i närheten av där du bor?",
+   "Bor du nära eller långt bort från din familj?",
+   "Gillar du att promenera?"
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "id": "m.hitta-en-adress",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hitta en adress",
+ "titleJa": "{住所|じゅうしょ}を{探|さが}す",
+ "descriptionSv": "Hitta en adress: bo på, kvarter, gatuskylt, hörnhus, udda nummer, jämna nummer, på baksidan, gårdshus, på gården, porttelefon, slå koden, ringa på, en trappa upp, våningsplan och hitta fram.",
+ "descriptionJa": "{住所|じゅうしょ}を{探|さが}す：〜に{住|す}んでいる、ブロック、{通|とお}りの{名前|なまえ}の{標識|ひょうしき}、{角|かど}の{建物|たてもの}、{奇数|きすう}{番地|ばんち}、{偶数|ぐうすう}{番地|ばんち}、{裏側|うらがわ}に、{裏|うら}の{建物|たてもの}、{中庭|なかにわ}で、インターホン、コードを{押|お}す、{呼|よ}び{鈴|りん}を{鳴|な}らす、2{階|かい}、フロア、たどり{着|つ}く。",
+ "categoryId": "R01-A06-T02",
+ "tags": [
+  "resor",
+  "vägbeskrivning",
+  "adress"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.avstand-och-riktningar"
+ ],
+ "related": [],
+ "recommendedOrder": 616,
+ "words": [
+  {
+   "senseId": "s.bo-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvarter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gatuskylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörnhus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.udda-nummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämna-nummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-baksidan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gårdshus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-gården.1",
+   "active": true
+  },
+  {
+   "senseId": "s.porttelefon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-koden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ringa-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-trappa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våningsplan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hitta-fram.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Middag hos Erik",
+  "paragraphs": [
+   "Yui ska äta middag hos sin vän Erik. Han har skickat ett sms: ”Jag bor på Storgatan 7. Det är tre kvarter från stationen.”",
+   "Yui hittar ingen gatuskylt, så hon frågar en kvinna. – Storgatan börjar vid det gula hörnhuset, säger kvinnan.",
+   "På Storgatan ser Yui att udda nummer ligger på vänster sida och jämna nummer på höger sida.",
+   "Erik skrev också: ”Jag bor i gårdshuset, på baksidan. Slå koden 4512 vid porten. Gå sedan in på gården. Mitt hus är det röda.”",
+   "Vid gårdshuset finns en porttelefon. Yui ringer på. – Kom upp! Jag bor en trappa upp, säger Erik.",
+   "I hissen står det våningsplan 0, 1 och 2. Yui trycker på 1. Erik öppnar dörren. – Bra att du hittade fram!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur långt från stationen bor Erik?",
+    "options": [
+     "Tre kilometer",
+     "Tre kvarter",
+     "Ett kvarter",
+     "Långt bort"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det är tre kvarter från stationen.",
+    "explanationJa": "3ブロックです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var börjar Storgatan?",
+    "options": [
+     "Vid stationen",
+     "Vid porten",
+     "Vid parken",
+     "Vid det gula hörnhuset"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Storgatan börjar vid det gula hörnhuset.",
+    "explanationJa": "{角|かど}の{黄色|きいろ}い{建物|たてもの}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Nummer 7 ligger på vänster sida.",
+    "correct": true,
+    "explanationSv": "Udda nummer ligger på vänster sida.",
+    "explanationJa": "{奇数|きすう}なので{左|ひだり}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Yui vid porten?",
+    "options": [
+     "Ringer på",
+     "Väntar",
+     "Ringer Erik",
+     "Slår koden"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Slå koden 4512 vid porten.",
+    "explanationJa": "コードを{押|お}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yui trycker på 2 i hissen.",
+    "correct": false,
+    "explanationSv": "Yui trycker på 1.",
+    "explanationJa": "1を{押|お}します。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni förklarar för varandra hur man hittar till era hem: gata, nummer, kod och våning.",
+  "discussionPoints": [
+   "Vilken gata bor du på?",
+   "Behöver man slå en kod för att komma in hos dig?",
+   "Bor du en trappa upp eller högre?",
+   "Hur räknar man våningar i Japan?"
+  ]
+ }
+}
