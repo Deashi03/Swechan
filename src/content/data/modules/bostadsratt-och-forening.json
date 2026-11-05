@@ -1,0 +1,184 @@
+{
+ "id": "m.bostadsratt-och-forening",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bostadsrätt och förening",
+ "titleJa": "{分譲|ぶんじょう}マンション{利用権|りようけん}と{住宅組合|じゅうたくくみあい}",
+ "descriptionSv": "Att köpa och äga en bostadsrätt: bostadsrättsförening, månadsavgift, kontantinsats, årsredovisning och tillstånd.",
+ "descriptionJa": "{分譲|ぶんじょう}マンション{利用権|りようけん}の{購入|こうにゅう}と{所有|しょゆう}：{住宅組合|じゅうたくくみあい}、{管理費|かんりひ}、{頭金|あたまきん}、{年次報告書|ねんじほうこくしょ}、{許可|きょか}。",
+ "categoryId": "R01-A01-T06",
+ "tags": [
+  "hemmet",
+  "ekonomi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.avgifter-och-boendekostnader"
+ ],
+ "related": [],
+ "recommendedOrder": 239,
+ "words": [
+  {
+   "senseId": "s.bostadsrättsförening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.månadsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgiftshöjning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontantinsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bostadsmarknad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bostadspris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ekonomi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.årsredovisning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.underhållsplan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stambyte.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tillstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andrahandsuthyrning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ombildning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Aiko vill köpa",
+  "paragraphs": [
+   "Aiko och Erik funderar på att köpa en bostadsrätt. Bostadsmarknaden är svår och bostadspriserna är höga, men de har sparat ihop en kontantinsats.",
+   "De hittar en trea i ett gammalt hus. Huset var hyresrätter förut, men efter en ombildning är det nu en bostadsrättsförening.",
+   "Mäklaren säger att månadsavgiften är fem tusen kronor. Aiko läser årsredovisningen. Bostadsrättsföreningen har en god ekonomi.",
+   "I underhållsplanen står det att det blir stambyte om tre år. ”Då kommer det nog en avgiftshöjning”, säger Erik.",
+   "Erik frågar om man kan riva väggen mellan köket och vardagsrummet. ”Ja, men ni måste ansöka om tillstånd först”, säger mäklaren. Andrahandsuthyrning är också möjlig, om bostadsrättsföreningen godkänner den.",
+   "”Lägenheten är stor, så den har en stor andel av huset”, säger mäklaren. Aiko tänker på lägenhetens värde om tio år."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad var huset förut?",
+    "options": [
+     "En skola",
+     "En affär",
+     "Ett hus med bostadsrätter",
+     "Ett hus med hyresrätter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Huset var hyresrätter förut, men efter en ombildning är det en bostadsrättsförening.",
+    "explanationJa": "{以前|いぜん}は{賃貸住宅|ちんたいじゅうたく}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur mycket är månadsavgiften?",
+    "options": [
+     "Fyra tusen kronor",
+     "Tre tusen kronor",
+     "Femtio tusen kronor",
+     "Fem tusen kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Mäklaren säger att månadsavgiften är fem tusen kronor.",
+    "explanationJa": "5000クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Bostadsrättsföreningen har dålig ekonomi.",
+    "correct": false,
+    "explanationSv": "Aiko läser årsredovisningen. Bostadsrättsföreningen har en god ekonomi.",
+    "explanationJa": "{財政|ざいせい}は{健全|けんぜん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "inference",
+    "promptSv": "Varför tror Erik att avgiften kommer att gå upp?",
+    "options": [
+     "För att det blir stambyte om tre år",
+     "För att bostadspriserna är höga",
+     "För att lägenheten är stor",
+     "För att huset är nytt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I underhållsplanen står det att det blir stambyte om tre år.",
+    "explanationJa": "3{年後|ねんご}に{配管工事|はいかんこうじ}があるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "focus": "detail",
+    "promptSv": "Vad måste de göra innan de river väggen?",
+    "options": [
+     "Betala en kontantinsats",
+     "Sälja lägenheten",
+     "Ringa elbolaget",
+     "Ansöka om tillstånd"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Ni måste ansöka om tillstånd först.”",
+    "explanationJa": "まず{許可|きょか}を{申請|しんせい}しなければなりません。"
+   }
+  ],
+  "factSources": [
+   "I en bostadsrättsförening äger medlemmarna huset gemensamt; andrahandsuthyrning och större ombyggnader kräver föreningens godkännande."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att köpa och äga en bostad: bostadsrätt, månadsavgift, kontantinsats och bostadsmarknaden i Sverige och Japan.",
+  "discussionPoints": [
+   "Vill du hellre hyra eller köpa en bostad? Varför?",
+   "Vad ska man kontrollera innan man köper en lägenhet?",
+   "Hur är bostadsmarknaden där du kommer ifrån?",
+   "Finns det något som liknar bostadsrätt i Japan?"
+  ]
+ }
+}

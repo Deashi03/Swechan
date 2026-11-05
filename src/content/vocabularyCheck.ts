@@ -54,7 +54,7 @@ export class VocabularyChecker {
     return false;
   }
 
-  isKnown(token: string, extra: Set<string>): boolean {
+  isKnown(token: string, extra: KnownSet): boolean {
     if (token.length <= 1) return true; // symbols like H, O, C
     if (this.names.has(token) || (token.endsWith('s') && this.names.has(token.slice(0, -1)))) return true; // names, incl. genitive (Aikos)
     const w = token.toLowerCase();
@@ -62,12 +62,12 @@ export class VocabularyChecker {
     return this.simpleKnown(w, extra) || this.compoundKnown(w, extra);
   }
 
-  private simpleKnown(w: string, extra: Set<string>): boolean {
+  private simpleKnown(w: string, extra: KnownSet): boolean {
     return extra.has(w) || (w.endsWith('s') && extra.has(w.slice(0, -1))) || this.coreKnown(w);
   }
 
   /** The last part of a compound: an exact known word or a known noun with a regular ending. */
-  private compoundHeadKnown(w: string, extra: Set<string>): boolean {
+  private compoundHeadKnown(w: string, extra: KnownSet): boolean {
     if (this.surface.has(w) || extra.has(w)) return true;
     for (const s of ['arna', 'erna', 'orna', 'ens', 'ets', 'ar', 'er', 'or', 'en', 'et', 'na', 'n', 't', 's']) {
       if (w.endsWith(s) && (this.lemmas.has(w.slice(0, -s.length)) || extra.has(w.slice(0, -s.length)))) return true;
@@ -79,7 +79,7 @@ export class VocabularyChecker {
    * Compounds of two known words ("fläskfilé", "vardagsmat" with linking -s-):
    * a learner who knows both parts can read the compound. Parts ≥ 3 letters.
    */
-  private compoundKnown(w: string, extra: Set<string>): boolean {
+  private compoundKnown(w: string, extra: KnownSet): boolean {
     if (w.length < 6) return false;
     const leftKnown = (x: string) => this.lemmas.has(x) || this.surface.has(x) || extra.has(x) || (x.endsWith('a') && (this.lemmas.has(x) || extra.has(x)));
     for (let i = 3; i <= w.length - 3; i++) {
@@ -94,7 +94,7 @@ export class VocabularyChecker {
   }
 
   /** Unknown words in `text`. Multi-word target forms (particle verbs) are matched first. */
-  unknownWords(text: string, extra: Set<string>): string[] {
+  unknownWords(text: string, extra: KnownSet): string[] {
     const words = tokenize(text).filter((t) => t.isWord).map((t) => t.text);
     const out: string[] = [];
     for (let i = 0; i < words.length; i++) {
@@ -129,17 +129,22 @@ export function prerequisiteClosure(repo: ContentRepository, m: Pick<ModuleMeta,
   return out;
 }
 
+/** Anything that can answer "is this form known?" – a Set or a layered view of several sets. */
+export type KnownSet = { has(w: string): boolean };
+/** A read-only union of several sets without copying them. */
+const layered = (...sets: KnownSet[]): KnownSet => ({ has: (w) => sets.some((s) => s.has(w)) });
+
 export type VocabIssue = { where: string; unknown: string[]; text: string };
 
 export function checkVocabulary(repo: ContentRepository, core: CoreVocabulary): VocabIssue[] {
   const checker = new VocabularyChecker(core);
   const issues: VocabIssue[] = [];
-  const check = (where: string, text: string | undefined, known: Set<string>) => {
+  const check = (where: string, text: string | undefined, known: KnownSet) => {
     if (!text) return;
     const unknown = checker.unknownWords(text, known);
     if (unknown.length) issues.push({ where, unknown: [...new Set(unknown)], text });
   };
-  const union = (...sets: Set<string>[]) => new Set(sets.flatMap((s) => [...s]));
+  const union = (...sets: KnownSet[]) => layered(...sets);
   const moduleOfSense = new Map<string, ModuleMeta>();
 
   for (const meta of repo.modules) {
@@ -152,8 +157,8 @@ export function checkVocabulary(repo: ContentRepository, core: CoreVocabulary): 
       const ref = repo.getSense(w.senseId);
       if (!ref) return;
       if (!moduleOfSense.has(w.senseId)) moduleOfSense.set(w.senseId, meta);
-      const before = union(base, formsOfSenses(repo, ids.slice(0, k)));
-      const self = union(before, new Set(allForms(ref.entry)));
+      const ownForms = new Set(allForms(ref.entry));
+      const self = union(base, formsOfSenses(repo, ids.slice(0, k)), ownForms);
       const s = ref.sense;
       check(`${m.id} › ${s.id} defSv`, s.defSv, self);
       s.examples.forEach((ex, i) => check(`${m.id} › ${s.id} example ${i + 1}`, ex.sv, self));
@@ -162,8 +167,8 @@ export function checkVocabulary(repo: ContentRepository, core: CoreVocabulary): 
       // other senses of the same headword are shown in the introduction
       for (const other of ref.entry.senses) {
         if (other.id === s.id || ids.includes(other.id)) continue;
-        check(`${m.id} › ${other.id} (annan betydelse) defSv`, other.defSv, union(all, new Set(allForms(ref.entry))));
-        other.examples.forEach((ex, i) => check(`${m.id} › ${other.id} (annan betydelse) example ${i + 1}`, ex.sv, union(all, new Set(allForms(ref.entry)))));
+        check(`${m.id} › ${other.id} (annan betydelse) defSv`, other.defSv, union(all, ownForms));
+        other.examples.forEach((ex, i) => check(`${m.id} › ${other.id} (annan betydelse) example ${i + 1}`, ex.sv, union(all, ownForms)));
       }
     });
     m.reading.paragraphs.forEach((p, i) => check(`${m.id} › lästext stycke ${i + 1}`, p, all));

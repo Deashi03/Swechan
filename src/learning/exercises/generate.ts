@@ -26,26 +26,47 @@ function glossTerms(markup: string): string[] {
   return stripFurigana(markup).split(/[、；;,（）()]/).map((s) => s.trim()).filter((s) => s.length > 0);
 }
 
-/** Senses that must not be used as distractors because they could also be a correct answer. */
-function conflicts(target: SenseRef, cand: SenseRef): boolean {
-  if (cand.sense.id === target.sense.id || cand.entry.id === target.entry.id) return true;
+const glossCache = new WeakMap<object, Set<string>>();
+/** Gloss terms of a sense, cached per sense object (the repository's data is immutable). */
+function glossSet(r: SenseRef): Set<string> {
+  let s = glossCache.get(r.sense);
+  if (!s) { s = new Set(glossTerms(r.sense.ja)); glossCache.set(r.sense, s); }
+  return s;
+}
+
+/** Senses that must not be offered together with `target` (same word, synonym, shared Japanese gloss). */
+function conflictsWith(target: SenseRef): (cand: SenseRef) => boolean {
   const rel = new Set((target.sense.synonyms ?? []).filter((r) => r.relation !== 'antonym').map((r) => r.senseId));
-  if (rel.has(cand.sense.id)) return true;
-  if ((cand.sense.synonyms ?? []).some((r) => r.senseId === target.sense.id && r.relation !== 'antonym')) return true;
-  const t = new Set(glossTerms(target.sense.ja));
-  return glossTerms(cand.sense.ja).some((x) => t.has(x)) || cand.entry.lemma === target.entry.lemma;
+  const t = glossSet(target);
+  return (cand) => {
+    if (cand.sense.id === target.sense.id || cand.entry.id === target.entry.id) return true;
+    if (rel.has(cand.sense.id)) return true;
+    if ((cand.sense.synonyms ?? []).some((r) => r.senseId === target.sense.id && r.relation !== 'antonym')) return true;
+    if (cand.entry.lemma === target.entry.lemma) return true;
+    for (const x of glossSet(cand)) if (t.has(x)) return true;
+    return false;
+  };
+}
+
+const allSensesCache = new WeakMap<object, SenseRef[]>();
+function allSenses(repo: ContentRepository): SenseRef[] {
+  let a = allSensesCache.get(repo);
+  if (!a) { a = repo.entries.flatMap((e) => e.senses.map((s) => repo.getSense(s.id)!)); allSensesCache.set(repo, a); }
+  return a;
 }
 
 function distractors(target: SenseRef, ctx: GenContext, n: number, rng: () => number, filter?: (r: SenseRef) => boolean): SenseRef[] {
   const pool = ctx.poolSenseIds.map((id) => ctx.repo.getSense(id)).filter((r): r is SenseRef => !!r);
-  const all = ctx.repo.entries.flatMap((e) => e.senses.map((_, i) => ctx.repo.getSense(e.senses[i]!.id)!));
-  const ok = (r: SenseRef) => !conflicts(target, r) && (!filter || filter(r));
+  const conflicts = conflictsWith(target);
+  const ok = (r: SenseRef) => !conflicts(r) && (!filter || filter(r));
   const samePos = (r: SenseRef) => r.entry.pos === target.entry.pos;
+  const poolOk = pool.filter(ok);
+  const allOk = allSenses(ctx.repo).filter(ok);
   const ordered = [
-    ...shuffle(pool.filter((r) => ok(r) && samePos(r)), rng),
-    ...shuffle(all.filter((r) => ok(r) && samePos(r)), rng),
-    ...shuffle(pool.filter(ok), rng),
-    ...shuffle(all.filter(ok), rng),
+    ...shuffle(poolOk.filter(samePos), rng),
+    ...shuffle(allOk.filter(samePos), rng),
+    ...shuffle(poolOk, rng),
+    ...shuffle(allOk, rng),
   ];
   const out: SenseRef[] = [];
   const seenEntries = new Set<string>();

@@ -1,0 +1,174 @@
+{
+ "id": "m.avgifter-och-boendekostnader",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Avgifter och boendekostnader",
+ "titleJa": "{住居費|じゅうきょひ}と{各種料金|かくしゅりょうきん}",
+ "descriptionSv": "Vad det kostar att bo: hyra, el, uppvärmning, bredband, avgifter och räkningar.",
+ "descriptionJa": "{住|す}むためにかかるお{金|かね}：{家賃|やちん}、{電気|でんき}、{暖房|だんぼう}、ブロードバンド、{各種料金|かくしゅりょうきん}と{請求書|せいきゅうしょ}。",
+ "categoryId": "R01-A01-T06",
+ "tags": [
+  "hemmet",
+  "ekonomi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hyresavtal-och-hyresvard"
+ ],
+ "related": [],
+ "recommendedOrder": 238,
+ "words": [
+  {
+   "senseId": "s.kostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boendekostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elräkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elbolag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elavtal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rörlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förbrukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppvärmning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bredband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parkeringsplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sophämtning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kvartal.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad kostar det att bo?",
+  "paragraphs": [
+   "Aiko och Erik vill veta hur stor deras boendekostnad är. De sätter sig vid bordet med alla räkningar.",
+   "Hyran är den största kostnaden. Uppvärmning och varmvatten ingår i hyran, men inte el och bredband.",
+   "Elräkningen kommer varje månad från elbolaget. På vintern är den högre, för då är förbrukningen större och elpriset ofta högre.",
+   "Erik har ett elavtal med rörligt pris. ”Kanske ska vi byta till fast pris”, säger Aiko. Hon går ner i källaren och tittar på mätaren.",
+   "De hyr också en parkeringsplats på gården. Avgiften för den är fyra hundra kronor i månaden. Sophämtning betalar de inte, den ingår.",
+   "Erik skriver allt i en lista. ”Vattnet betalar vi en gång per kvartal i det gamla huset, men här ingår det”, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken är den största kostnaden?",
+    "options": [
+     "Elen",
+     "Bredbandet",
+     "Parkeringsplatsen",
+     "Hyran"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hyran är den största kostnaden.",
+    "explanationJa": "{家賃|やちん}が{一番大|いちばんおお}きな{費用|ひよう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Bredband ingår i hyran.",
+    "correct": false,
+    "explanationSv": "Uppvärmning och varmvatten ingår, men inte el och bredband.",
+    "explanationJa": "ブロードバンドは{含|ふく}まれていません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför är elräkningen högre på vintern?",
+    "options": [
+     "De använder mer el och priset är ofta högre.",
+     "De har bytt elbolag.",
+     "Hyran har gått upp.",
+     "De har köpt en bil."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På vintern är förbrukningen större och elpriset ofta högre.",
+    "explanationJa": "{冬|ふゆ}は{使用量|しようりょう}が{多|おお}く、{電気料金|でんきりょうきん}も{高|たか}いことが{多|おお}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur mycket kostar parkeringsplatsen?",
+    "options": [
+     "Fyra hundra kronor i månaden",
+     "Tre hundra kronor i månaden",
+     "Fyra tusen kronor om året",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Avgiften är fyra hundra kronor i månaden.",
+    "explanationJa": "{月|つき}400クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att elavtalet kanske ska ändras.",
+    "correct": true,
+    "explanationSv": "Hon säger att de kanske ska byta till fast pris.",
+    "explanationJa": "{固定料金|こていりょうきん}に{変|か}えたほうがいいかもしれないと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "I många svenska hyresrätter ingår värme och varmvatten i hyran medan hushållsel och bredband betalas separat."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad det kostar att bo: hyra, el, uppvärmning, bredband och andra avgifter, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vad är din största boendekostnad?",
+   "Vad ingår i hyran där du bor?",
+   "Är elen dyr i Japan på vintern eller på sommaren?",
+   "Hur betalar du dina räkningar?"
+  ]
+ }
+}

@@ -7,7 +7,7 @@ import { loadAllModuleBodiesEager, toolingRepository } from '../tooling';
 import { validateContent } from '../validateContent';
 import { CoreVocabularyFile } from '../vocabularyCheck';
 import { createDraft, slugify, validateDraft } from './drafts';
-import { checkModule } from './moduleCheck';
+import { checkModule, checkModules } from './moduleCheck';
 import { buildContentReport } from './report';
 
 const repo = toolingRepository();
@@ -41,7 +41,7 @@ describe('module:new / drafts', () => {
 
 describe('module:validate', () => {
   it('every published module passes all checks', () => {
-    for (const m of repo.modules) expect(checkModule(m.id, repo, core, catalog).errors, m.id).toEqual([]);
+    for (const r of checkModules(repo.modules.map((m) => m.id), repo, core, catalog)) expect(r.errors, r.moduleId).toEqual([]);
   });
   it('rejects planned and unknown IDs', () => {
     expect(checkModule(PLANNED.catalogId, repo, core, catalog).errors[0]).toMatch(/finns inte/);
