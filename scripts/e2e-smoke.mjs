@@ -210,11 +210,17 @@ try {
   await page.getByRole('link', { name: /Matlagningens verb/ }).first().click();
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
-  await page.getByRole('link', { name: /Steka och bryna/ }).first().click();
+  await page.goBack();
+  await page.goBack();
+  await page.getByRole('link', { name: /Kläder & personlig stil/ }).first().click();
+  await page.getByRole('link', { name: /Storlek & passform/ }).first().click();
+  await page.getByRole('link', { name: /Prova kläder/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goBack();
   await page.goBack();
+  await page.goBack();
+  await page.getByRole('link', { name: /Mat & måltider/ }).first().click();
   await page.getByRole('link', { name: /Råvaror & skafferi/ }).first().click();
   await page.getByRole('link', { name: /Vanliga grönsaker/ }).first().click();
   await shot('10-module-gronsaker');

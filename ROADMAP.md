@@ -20,12 +20,18 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - CLI för innehållsproduktion: `catalog:validate`, `module:new`, `module:validate`, `content:report`.
 - Tre nya moduler i en kedja (grönsaker → skära → koka), de första 1:1-kopplade till katalogen.
 
-## v0.4.x / v0.5 – nästa steg för innehållet
-- Fler moduler ur katalogen, kedja för kedja (t.ex. resten av *Matlagningens verb*), med mänsklig granskning.
+## v0.5 – Innehåll i stor skala och bilder (klar)
+- 102 nya moduler: Mat & måltider och Hem & boende helt publicerade, Kläder & personlig stil till hälften.
+- Bilder i stilen "Platt" för områden och alla publicerade moduler.
+- Rättat: svaret syntes i frågan; äldre moduler i fel överkategori.
+
+## v0.6 – nästa steg för innehållet
+- Resten av *Kläder & personlig stil*, sedan nästa överämne, ett i taget.
+- Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
 - Japanska katalogtitlar (översättning + granskning).
 - Utökad validering (andel okända ord i lästext mot användarens nivå); morfologisk analys baserad på SALDO.
 
-## v0.5 – Personalisering
+## Senare: personalisering
 - FSRS-parameteroptimering per användare när tillräcklig historik finns.
 - Rekommendationer baserade på kunskapsmodell och intressen.
 - Fler övningstyper (t.ex. lyssna-och-skriv, kollokationer, ordbildning).
