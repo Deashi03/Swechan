@@ -1,0 +1,173 @@
+{
+ "id": "m.smycken-och-klockor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Smycken och klockor",
+ "titleJa": "アクセサリーと{腕時計|うでどけい}",
+ "descriptionSv": "Smycken och klockor: halsband, armband, ringar, örhängen, pärlor och armbandsur.",
+ "descriptionJa": "アクセサリーと{時計|とけい}：ネックレス、ブレスレット、{指輪|ゆびわ}、ピアス、{真珠|しんじゅ}、{腕時計|うでどけい}。",
+ "categoryId": "R01-A03-T02",
+ "tags": [
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vaskor-och-ryggsackar"
+ ],
+ "related": [],
+ "recommendedOrder": 313,
+ "words": [
+  {
+   "senseId": "s.smycke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smyckeskrin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vigselring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlovningsring.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kedja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halsband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänge.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pärla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.armband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.örhänge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brosch.1",
+   "active": false
+  },
+  {
+   "senseId": "s.äkta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glittra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.armbandsur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visare.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mormors smyckeskrin",
+  "paragraphs": [
+   "Mormor har ett gammalt smyckeskrin. En söndag när det regnar får Mia titta på alla smycken.",
+   "Där ligger ett halsband med pärlor. ”Är pärlorna äkta?” frågar Mia. ”Ja, jag fick det av min mamma”, säger mormor.",
+   "Det finns också en tunn kedja av guld med ett litet hänge, två armband och många par örhängen. Allt glittrar.",
+   "Mormor visar sin förlovningsring och sin vigselring. ”Morfar gav mig ringarna för femtio år sedan”, säger hon.",
+   "Längst ner ligger morfars gamla armbandsur. Visarna rör sig inte. ”Det behöver ett nytt batteri”, säger mormor. Och en gammal brosch som var hennes mormors.",
+   "Mia gör egna armband av pärlor i plast. ”En dag ska jag också ha ett smyckeskrin”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var har mormor fått pärlhalsbandet ifrån?",
+    "options": [
+     "Från sin mamma",
+     "Från morfar",
+     "Från en affär",
+     "Från Mia"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Ja, jag fick det av min mamma”, säger mormor.",
+    "explanationJa": "お{母|かあ}さんからもらいました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När fick mormor ringarna?",
+    "options": [
+     "För fem år sedan",
+     "I söndags",
+     "När hon var liten",
+     "För femtio år sedan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Morfar gav mig ringarna för femtio år sedan.”",
+    "explanationJa": "50{年前|ねんまえ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Morfars armbandsur går.",
+    "correct": false,
+    "explanationSv": "Visarna rör sig inte. ”Det behöver ett nytt batteri.”",
+    "explanationJa": "{針|はり}が{止|と}まっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Mia själv?",
+    "options": [
+     "Örhängen av guld",
+     "Ett smyckeskrin",
+     "Armband av pärlor i plast",
+     "En brosch"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mia gör egna armband av pärlor i plast.",
+    "explanationJa": "プラスチックのビーズでブレスレットを{作|つく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Smyckena är viktiga minnen för mormor.",
+    "correct": true,
+    "explanationSv": "Hon berättar varifrån smyckena kommer och vem som gav dem.",
+    "explanationJa": "{誰|だれ}からもらったかを{話|はな}しています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om smycken och klockor: vad ni har på er, vad ni har fått av andra och vad smycken betyder.",
+  "discussionPoints": [
+   "Har du några smycken på dig nu?",
+   "Har du fått ett smycke som betyder mycket för dig?",
+   "Har du armbandsur eller tittar du på mobilen?",
+   "Ger man förlovningsringar i Japan?"
+  ]
+ }
+}

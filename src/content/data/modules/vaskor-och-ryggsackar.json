@@ -1,0 +1,169 @@
+{
+ "id": "m.vaskor-och-ryggsackar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Väskor och ryggsäckar",
+ "titleJa": "かばんとリュック",
+ "descriptionSv": "Väskor: ryggsäck, handväska, axelväska, resväska, necessär och kassar, och fack, remmar och innerfickor.",
+ "descriptionJa": "かばん：リュック、ハンドバッグ、ショルダーバッグ、スーツケース、{洗面用具入|せんめんようぐい}れ、{袋|ふくろ}、{仕切|しき}り、ストラップ、{内|うち}ポケット。",
+ "categoryId": "R01-A03-T02",
+ "tags": [
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.halsdukar-och-handskar"
+ ],
+ "related": [],
+ "recommendedOrder": 312,
+ "words": [
+  {
+   "senseId": "s.ryggsäck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handväska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plånbok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.axelväska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.midjeväska.1",
+   "active": false
+  },
+  {
+   "senseId": "s.datorväska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resväska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.necessär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kasse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tygkasse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gympapåse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.innerficka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rymma.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En väska för allt",
+  "paragraphs": [
+   "Varje morgon packar familjen sina väskor. Leo och Mia har ryggsäck till skolan, och på tisdagar tar Leo också med sin gympapåse.",
+   "Aiko har en svart handväska och en datorväska. Datorväskan är tung. ”Jag vill ha en ryggsäck i stället”, säger hon. ”Den är bättre för ryggen.”",
+   "Erik har en brun axelväska. Remmen är gammal och sliten. Han har nycklarna i ett fack och mobilen i en innerficka.",
+   "När de handlar mat har de alltid tygkassar. ”En kasse av plast kostar pengar och är dålig för naturen”, säger Mia.",
+   "I sommar ska familjen till Japan. Erik tar fram resväskorna. Den stora resväskan rymmer kläder för alla fyra.",
+   "Aiko packar sin necessär. Erik vill ha en midjeväska för plånboken. ”Det är inte snyggt”, säger Mia. ”Men det är bra!” säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tar Leo med på tisdagar?",
+    "options": [
+     "En resväska",
+     "En datorväska",
+     "En tygkasse",
+     "Sin gympapåse"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På tisdagar tar Leo också med sin gympapåse.",
+    "explanationJa": "{体操着入|たいそうぎい}れです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför vill Aiko ha en ryggsäck?",
+    "options": [
+     "Den är snyggare.",
+     "Den är billigare.",
+     "Den är bättre för ryggen.",
+     "Den rymmer mer."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Den är bättre för ryggen.”",
+    "explanationJa": "{背中|せなか}にいいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var har Erik mobilen?",
+    "options": [
+     "I ett fack",
+     "I handväskan",
+     "I en innerficka",
+     "I gympapåsen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han har mobilen i en innerficka.",
+    "explanationJa": "{内|うち}ポケットです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Familjen använder plastkassar när de handlar.",
+    "correct": false,
+    "explanationSv": "När de handlar mat har de alltid tygkassar.",
+    "explanationJa": "いつもエコバッグを{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia tycker att midjeväskor är fula.",
+    "correct": true,
+    "explanationSv": "”Det är inte snyggt”, säger Mia.",
+    "explanationJa": "かっこよくないと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om väskor: vilka väskor ni använder till jobbet, skolan, när ni handlar och när ni reser.",
+  "discussionPoints": [
+   "Vilken väska använder du varje dag?",
+   "Vad har du i din väska just nu?",
+   "Har du tygkasse när du handlar?",
+   "Hur många resväskor tar du med på en resa?"
+  ]
+ }
+}

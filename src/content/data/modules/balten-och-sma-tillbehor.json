@@ -1,0 +1,169 @@
+{
+ "id": "m.balten-och-sma-tillbehor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bälten och små tillbehör",
+ "titleJa": "ベルトと{小物|こもの}",
+ "descriptionSv": "Bälten och små tillbehör: bälte, spänne, hängslen, solglasögon, fodral, nyckelring och paraply.",
+ "descriptionJa": "ベルトと{小物|こもの}：ベルト、バックル、サスペンダー、サングラス、ケース、キーホルダー、{傘|かさ}。",
+ "categoryId": "R01-A03-T02",
+ "tags": [
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.smycken-och-klockor"
+ ],
+ "related": [],
+ "recommendedOrder": 314,
+ "words": [
+  {
+   "senseId": "s.bälte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spänne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hängslen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slipsnål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.manschettknapp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.solglasögon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fodral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mobilskal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korthållare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nyckelring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nyckelknippa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.paraply.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fälla-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fälla-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glömma-kvar.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är mina saker?",
+  "paragraphs": [
+   "Erik har många små saker som han alltid letar efter. I dag ska han på bröllop igen.",
+   "Han hittar inte sitt bälte. ”Ta hängslen som farfar”, skrattar Mia. Till slut hittar han bältet under sängen. Spännet är lite trasigt, men det får gå.",
+   "Till den fina skjortan behöver han manschettknappar och en slipsnål. De ligger i en liten låda i badrummet.",
+   "Aiko har solglasögon i ett fodral och mobilen i ett nytt mobilskal. Hon har bara en korthållare, ingen plånbok.",
+   "Leo vill ha en ny nyckelring med en liten bil. Hans nyckelknippa har bara två nycklar, men den är tung av alla saker på ringen.",
+   "När de går ut börjar det regna. Erik fäller upp sitt stora svarta paraply. ”Bra att jag hittade det, i alla fall!” säger han. ”Nu får du inte glömma kvar det på bröllopet”, säger Aiko. Vid kyrkan måste Erik fälla ihop paraplyet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var hittar Erik bältet?",
+    "options": [
+     "I badrummet",
+     "I hallen",
+     "Under sängen",
+     "I bilen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Till slut hittar han bältet under sängen.",
+    "explanationJa": "ベッドの{下|した}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är fel på bältet?",
+    "options": [
+     "Det är för kort.",
+     "Det är smutsigt.",
+     "Det är för stort.",
+     "Spännet är lite trasigt."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Spännet är lite trasigt, men det får gå.",
+    "explanationJa": "バックルが{少|すこ}し{壊|こわ}れています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko har en plånbok.",
+    "correct": false,
+    "explanationSv": "Hon har bara en korthållare, ingen plånbok.",
+    "explanationJa": "カードケースだけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför är Leos nyckelknippa tung?",
+    "options": [
+     "Den har många nycklar.",
+     "Det finns många saker på ringen.",
+     "Den är av guld.",
+     "Den är blöt."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den är tung av alla saker på ringen.",
+    "explanationJa": "キーホルダーに{物|もの}がたくさんついているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det var bra att Erik hade paraplyet med sig.",
+    "correct": true,
+    "explanationSv": "När de går ut börjar det regna. Erik fäller upp paraplyet.",
+    "explanationJa": "{雨|あめ}が{降|ふ}ってきたので{役|やく}に{立|た}ちました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om små saker som man har med sig varje dag: bälte, solglasögon, paraply, nycklar och mobilskal.",
+  "discussionPoints": [
+   "Vad har du alltid med dig när du går ut?",
+   "Har du bälte eller hängslen?",
+   "Vad har du på din nyckelring?",
+   "Har du ofta paraply med dig?"
+  ]
+ }
+}
