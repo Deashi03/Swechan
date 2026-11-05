@@ -1,0 +1,170 @@
+{
+ "id": "m.tvatta-klader-och-textilier",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tvätta kläder och textilier",
+ "titleJa": "{衣類|いるい}・{布製品|ぬのせいひん}の{洗濯|せんたく}",
+ "descriptionSv": "Att ta hand om kläder: tvättråd, handtvätt, ylle och siden, fläckmedel, stryka och vädra.",
+ "descriptionJa": "{衣類|いるい}の{手入|てい}れ：{洗濯表示|せんたくひょうじ}、{手洗|てあら}い、ウールとシルク、しみ{抜|ぬ}き、アイロンがけ、{干|ほ}すこと。",
+ "categoryId": "R01-A01-T05",
+ "tags": [
+  "hemmet",
+  "städning"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.dammsuga-och-torka-golv"
+ ],
+ "related": [],
+ "recommendedOrder": 231,
+ "words": [
+  {
+   "senseId": "s.tvättråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättsymbol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handtvätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ylle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linne.1",
+   "active": false
+  },
+  {
+   "senseId": "s.siden.1",
+   "active": false
+  },
+  {
+   "senseId": "s.syntet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fläckmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stryka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strykjärn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strykbräda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skrynklig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.noppig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kemtvätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vädra.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Tvättråd",
+  "paragraphs": [
+   "Aiko har en fin tröja av ylle från sin mamma. Innan hon tvättar den läser hon tvättråden. Tvättsymbolen visar en hand. ”Den måste jag handtvätta”, säger hon.",
+   "Eriks favorittröja har fått en fläck av vin. Han har på fläckmedel innan han tvättar den.",
+   "Efter tvätten är tröjan skrynklig. Erik ställer fram strykbrädan och stryker den med strykjärnet. Aiko tycker inte om att stryka.",
+   "Kläder av olika material behöver olika tvätt. Linne och siden är känsliga. Syntet torkar snabbt.",
+   "Eriks fina jacka tål inte vatten. Den lämnar han på kemtvätten. En gammal tröja har blivit noppig, men Aiko tycker ändå om den.",
+   "På våren vädrar de täcken och kuddar på balkongen. ”I Japan vädrar vi futon i solen”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar tvättsymbolen på Aikos tröja?",
+    "options": [
+     "En maskin",
+     "En sol",
+     "En hand",
+     "En jacka"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Tvättsymbolen visar en hand, så hon måste handtvätta.",
+    "explanationJa": "{手|て}の{絵|え}なので{手洗|てあら}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Erik med fläcken?",
+    "options": [
+     "Han stryker den.",
+     "Han lämnar tröjan på kemtvätten.",
+     "Han slänger tröjan.",
+     "Han har på fläckmedel."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han har på fläckmedel innan han tvättar.",
+    "explanationJa": "{洗|あら}う{前|まえ}にしみ{抜|ぬ}き{剤|ざい}をつけます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko tycker om att stryka.",
+    "correct": false,
+    "explanationSv": "Aiko tycker inte om att stryka.",
+    "explanationJa": "アイコはアイロンがけが{好|す}きではありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför lämnar Erik jackan på kemtvätten?",
+    "options": [
+     "Den tål inte vatten.",
+     "Den är noppig.",
+     "Han har ingen tid.",
+     "Den är skrynklig."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Jackan tål inte vatten.",
+    "explanationJa": "{水|みず}で{洗|あら}えないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man vädrar sängkläder både i Sverige och i Japan.",
+    "correct": true,
+    "explanationSv": "De vädrar täcken på balkongen, och Aiko säger att man vädrar futon i Japan.",
+    "explanationJa": "どちらの{国|くに}でも{布団|ふとん}を{干|ほ}します。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att ta hand om kläder: tvättråd och material, att stryka, fläckar, och att vädra futon och täcken.",
+  "discussionPoints": [
+   "Läser du tvättråden innan du tvättar?",
+   "Stryker du dina kläder?",
+   "Hur tar du bort fläckar?",
+   "Hur ofta vädrar man futon i Japan?"
+  ]
+ }
+}
