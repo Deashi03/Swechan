@@ -374,6 +374,37 @@ export const MOTIFS: Record<string, Motif> = {
     q(18, 36, 10, 9, 'light', 1), q(36, 38, 10, 16, 'light', 1), p('M23 36 V45 M18 40.5 H28', 'line'),
     q(42, 16, 5, 9, 'main', 1, H.grey),
   ] },
+  // ── Hem & boende: Möbler & inredning ────────────────────────
+  sofa: { parts: [
+    q(10, 22, 44, 18, 'main', 6), q(6, 30, 10, 20, 'accent', 4), q(48, 30, 10, 20, 'accent', 4),
+    q(14, 34, 36, 12, 'main', 3), q(16, 26, 12, 8, 'light', 3), q(10, 50, 4, 6, 'line', 1), q(50, 50, 4, 6, 'line', 1),
+  ] },
+  chair: { parts: [
+    q(18, 8, 28, 26, 'main', 3, H.brown), p('M23 12 V30 M30 12 V30 M37 12 V30 M42 12 V30', 'line'),
+    q(14, 32, 36, 6, 'accent', 2, H.brown), q(17, 38, 4, 18, 'main', 1, H.brown), q(43, 38, 4, 18, 'main', 1, H.brown),
+  ] },
+  bed: { parts: [
+    q(6, 18, 8, 38, 'main', 2, H.brown), q(10, 34, 46, 14, 'light', 2), q(12, 28, 14, 8, 'light', 3),
+    q(24, 30, 32, 18, 'main', 3), q(6, 46, 52, 4, 'accent', 1, H.brown), q(54, 40, 4, 16, 'main', 2, H.brown),
+  ] },
+  shelf: { parts: [
+    q(10, 8, 44, 48, 'main', 2, H.brown), q(14, 12, 36, 12, 'light', 1), q(14, 28, 36, 12, 'light', 1), q(14, 44, 36, 8, 'light', 1),
+    q(16, 14, 4, 10, 'accent'), q(21, 15, 4, 9, 'accent2'), q(26, 13, 3, 11, 'main'), c(42, 36, 4, 'main', H.green), q(18, 30, 10, 10, 'accent', 1),
+  ] },
+  lamp: { parts: [
+    p('M20 26 L26 8 H38 L44 26 Z', 'accent', H.yellow), q(30, 26, 4, 24, 'main', 1), q(20, 50, 24, 6, 'main', 3),
+    p('M14 32 L10 36 M50 32 L54 36 M32 32 V36', 'line'),
+  ] },
+  swatch: { parts: [
+    q(10, 10, 14, 34, 'main', 3, H.blue), q(25, 10, 14, 34, 'main', 3, H.yellow), q(40, 10, 14, 34, 'main', 3, H.green),
+    q(8, 44, 48, 12, 'light', 3), p('M14 50 H50', 'line'),
+  ] },
+  roomset: { parts: [
+    q(6, 44, 52, 4, 'main', 1, H.brown),
+    q(8, 32, 22, 12, 'main', 3), q(8, 26, 6, 18, 'accent', 3),
+    q(40, 20, 4, 24, 'line', 1), p('M34 20 L38 10 H46 L50 20 Z', 'accent', H.yellow),
+    p('M50 44 V34 M50 34 C46 28 46 24 50 20 C54 24 54 28 50 34', 'main', H.green), q(46, 38, 8, 6, 'main', 1, H.orange),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -401,6 +432,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-02-06-05': 'apple', 'SWC-VAR-02-06-06': 'compost', 'SWC-VAR-02-06-07': 'candles',
   'SWC-VAR-01-01-01': 'apartment', 'SWC-VAR-01-01-02': 'door', 'SWC-VAR-01-01-03': 'elevator', 'SWC-VAR-01-01-04': 'househeart',
   'SWC-VAR-01-01-05': 'blueprint', 'SWC-VAR-01-01-06': 'boxes', 'SWC-VAR-01-01-07': 'cabin',
+  'SWC-VAR-01-02-01': 'sofa', 'SWC-VAR-01-02-02': 'chair', 'SWC-VAR-01-02-03': 'bed', 'SWC-VAR-01-02-04': 'shelf',
+  'SWC-VAR-01-02-05': 'lamp', 'SWC-VAR-01-02-06': 'swatch', 'SWC-VAR-01-02-07': 'roomset',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };

@@ -1,0 +1,169 @@
+{
+ "id": "m.forvaring-och-hyllor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Förvaring och hyllor",
+ "titleJa": "{収納|しゅうのう}と{棚|たな}",
+ "descriptionSv": "Förvaring hemma: hyllor, byrå, galgar, krokar, korgar och att hålla ordning.",
+ "descriptionJa": "{家|いえ}の{収納|しゅうのう}：{棚|たな}、たんす、ハンガー、フック、かご、そして{整理整頓|せいりせいとん}。",
+ "categoryId": "R01-A01-T02",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.sangar-och-sovrumsmobler"
+ ],
+ "related": [],
+ "recommendedOrder": 211,
+ "words": [
+  {
+   "senseId": "s.hylla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvaring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bokhylla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägghylla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.byrå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.galge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klädhängare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.korg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvaringslåda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skrubb.1",
+   "active": false
+  },
+  {
+   "senseId": "s.röra-noun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänga-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överfull.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Plats för allt",
+  "paragraphs": [
+   "I det nya huset finns inte så mycket förvaring. Alla flyttkartonger står i vardagsrummet. ”Vilken röra!” säger Aiko.",
+   "De köper en stor bokhylla till vardagsrummet och sätter upp vägghyllor i köket. Där ställer de glas och koppar. På den översta hyllan står fina skålar.",
+   "I sovrummet finns en garderob, men den blir snart överfull. De köper en byrå för tröjor och byxor. Aiko hänger upp jackorna på galgar.",
+   "I hallen sätter Erik upp krokar och en klädhängare för jackor. Mössor och vantar lägger de i en korg.",
+   "Saker som de inte använder så ofta, till exempel julsaker, packar de i förvaringslådor och bär ner i källaren. Dammsugaren får stå i en liten skrubb under trappan.",
+   "Efter en vecka står den sista kartongen tom. ”Nu är allt i ordning”, säger Erik. ”Tills vi köper mer saker”, skrattar Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför säger Aiko ”Vilken röra!”?",
+    "options": [
+     "Alla flyttkartonger står i vardagsrummet.",
+     "Erik har inte städat.",
+     "Huset är smutsigt.",
+     "De har inga möbler."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Alla flyttkartonger står i vardagsrummet.",
+    "explanationJa": "{段|だん}ボール{箱|ばこ}が{全部|ぜんぶ}リビングにあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var ställer de glas och koppar?",
+    "options": [
+     "I bokhyllan",
+     "På vägghyllorna i köket",
+     "I byrån",
+     "I källaren"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De sätter upp vägghyllor i köket och ställer glas och koppar där.",
+    "explanationJa": "{台所|だいどころ}の{壁掛|かべか}け{棚|だな}に{置|お}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Garderoben räcker till alla kläder.",
+    "correct": false,
+    "explanationSv": "Garderoben blir snart överfull, så de köper en byrå.",
+    "explanationJa": "クローゼットはすぐいっぱいになったので、たんすを{買|か}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var får dammsugaren stå?",
+    "options": [
+     "I en skrubb under trappan",
+     "I hallen",
+     "På vinden",
+     "I garderoben"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Dammsugaren får stå i en liten skrubb under trappan.",
+    "explanationJa": "{掃除機|そうじき}は{階段|かいだん}の{下|した}の{物置|ものおき}に{置|お}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tror att de kommer att behöva mer förvaring i framtiden.",
+    "correct": true,
+    "explanationSv": "Hon skrattar och säger ”Tills vi köper mer saker”.",
+    "explanationJa": "またものを{買|か}えば{収納|しゅうのう}が{足|た}りなくなると{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om förvaring hemma: skåp, hyllor och lådor, hur man håller ordning, och hur man förvarar saker i små japanska bostäder.",
+  "discussionPoints": [
+   "Har du tillräckligt med förvaring hemma?",
+   "Hur håller du ordning på dina saker?",
+   "Vilka smarta sätt att förvara saker finns i japanska hem?",
+   "Är du en person som sparar saker eller slänger dem?"
+  ]
+ }
+}
