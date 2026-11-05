@@ -1,0 +1,169 @@
+{
+ "id": "m.matsvinn-och-rester",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Matsvinn och rester",
+ "titleJa": "{食品|しょくひん}ロスと{残|のこ}り{物|もの}",
+ "descriptionSv": "Matsvinn och rester: planera, ta vara på mat, matavfall, kompost och biogas.",
+ "descriptionJa": "{食品|しょくひん}ロスと{残|のこ}り{物|もの}：{計画|けいかく}を{立|た}てる、{無駄|むだ}にしない、{生|なま}ごみ、コンポスト、バイオガス。",
+ "categoryId": "R01-A02-T06",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.naringsamnen-i-maten"
+ ],
+ "related": [],
+ "recommendedOrder": 138,
+ "words": [
+  {
+   "senseId": "s.matsvinn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rest.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överbliven.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-vara-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slösa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.planera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inköpslista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utgången.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slänga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrapa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.matavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompost.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kompostera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.biogas.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klimat.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Kampen mot matsvinn",
+  "paragraphs": [
+   "En vanlig svensk familj slänger mycket mat varje år. Det kallas matsvinn, och det är dåligt för klimatet.",
+   "Aiko och Erik vill slösa mindre. På söndag planerar de veckans middagar och skriver en inköpslista. Då köper de bara det de behöver.",
+   "De tar vara på rester. Överbliven potatis blir pytt i panna, och gammalt bröd blir krutonger. ”I Japan säger man mottainai – det är synd att slösa”, säger Aiko.",
+   "Erik hittar en yoghurt som är utgången. Han luktar och smakar. Den är fin, så han slänger den inte.",
+   "Efter maten skrapar de tallrikarna. Matavfallet, till exempel skal, lägger de i en brun påse. Kommunen gör biogas av det, och bussarna går på gasen.",
+   "Eriks mamma komposterar i sin trädgård. ”Komposten blir till ny jord, där jag odlar grönsaker”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko och Erik på söndag?",
+    "options": [
+     "De slänger gammal mat.",
+     "De äter ute.",
+     "De gör biogas.",
+     "De planerar veckans middagar och skriver en inköpslista."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På söndag planerar de middagarna och skriver en inköpslista.",
+    "explanationJa": "{日曜日|にちようび}に{夕食|ゆうしょく}の{計画|けいかく}を{立|た}てて{買|か}い{物|もの}リストを{作|つく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör de av överbliven potatis?",
+    "options": [
+     "Krutonger",
+     "Biogas",
+     "Soppa",
+     "Pytt i panna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Överbliven potatis blir pytt i panna.",
+    "explanationJa": "{残|のこ}ったじゃがいもはピッティパンナにします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik slänger yoghurten för att den är utgången.",
+    "correct": false,
+    "explanationSv": "Han luktar och smakar, och den är fin, så han slänger den inte.",
+    "explanationJa": "においと{味|あじ}を{確|たし}かめて、{捨|す}てませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör kommunen av matavfallet?",
+    "options": [
+     "Biogas",
+     "Ny mat",
+     "Jord till parker",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kommunen gör biogas av matavfallet.",
+    "explanationJa": "{自治体|じちたい}は{生|なま}ごみからバイオガスを{作|つく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Både Aiko och Erik tycker att man inte ska slösa med mat.",
+    "correct": true,
+    "explanationSv": "De vill slösa mindre, och Aiko berättar om mottainai.",
+    "explanationJa": "{二人|ふたり}とも{食|た}べ{物|もの}を{無駄|むだ}にしたくないと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "I flera svenska kommuner rötas matavfall till biogas som används i bussar (allmän kunskap)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om matsvinn: hur mycket mat man slänger, hur man tar vara på rester, och vad man gör med matavfall i Sverige och i Japan.",
+  "discussionPoints": [
+   "Slänger du mycket mat? Vad brukar det vara?",
+   "Vad betyder mottainai, och hur skulle du förklara det på svenska?",
+   "Hur sorterar man matavfall där du bor?",
+   "Vilken rätt brukar du laga av rester?"
+  ]
+ }
+}
