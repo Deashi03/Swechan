@@ -1,0 +1,170 @@
+{
+ "id": "m.butikens-avdelningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Butikens avdelningar",
+ "titleJa": "{店|みせ}の{売|う}り{場|ば}",
+ "descriptionSv": "Butikens avdelningar: mataffär, vara, avdelning, sortiment, kundvagn, ingång, utgång, längst in, frukt och grönt, chark, kyldisk, frysdisk, färskvara, kylvara och kryddhylla.",
+ "descriptionJa": "{店|みせ}の{売|う}り{場|ば}：スーパー、{商品|しょうひん}、{売|う}り{場|ば}、{品揃|しなぞろ}え、カート、{入|い}り{口|ぐち}、{出口|でぐち}、いちばん{奥|おく}、{青果|せいか}、ハム・ソーセージ、{冷蔵|れいぞう}ケース、{冷凍|れいとう}ケース、{生鮮食品|せいせんしょくひん}、{要冷蔵|ようれいぞう}{食品|しょくひん}、スパイス{棚|だな}。",
+ "categoryId": "R01-A05-T01",
+ "tags": [
+  "handel",
+  "butik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.losa-vardagliga-konflikter"
+ ],
+ "related": [],
+ "recommendedOrder": 501,
+ "words": [
+  {
+   "senseId": "s.mataffär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vara-produkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avdelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortiment.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kundvagn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.längst-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frukt-och-grönt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chark.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kyldisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frysdisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färskvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kylvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryddhylla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En runda i mataffären",
+  "paragraphs": [
+   "Aiko och Leo går till mataffären på lördag. Butiken är stor och har ett brett sortiment. Vid ingången tar de en kundvagn.",
+   "Först kommer de till frukt och grönt. Där köper de äpplen och tomater. Sedan går de vidare till nästa avdelning.",
+   "På charken köper de korv och skinka. Ost och mjölk finns i kyldisken längst in i butiken. Kylvaror och färskvaror ska alltid ligga kallt.",
+   "Leo vill ha glass. ”Den ligger i frysdisken”, säger Aiko. ”Men vi tar den sist, så att den inte smälter.”",
+   "På en annan hylla hittar de ris, pasta och mjöl. Aiko letar efter kanel på kryddhyllan.",
+   "Till slut har de alla varor på listan. Man betalar vid utgången."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tar de vid ingången?",
+    "options": [
+     "En korg",
+     "En lista",
+     "En påse",
+     "En kundvagn"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Vid ingången tar de en kundvagn.",
+    "explanationJa": "カートを{取|と}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var köper de korv och skinka?",
+    "options": [
+     "I frysdisken",
+     "Bland torrvarorna",
+     "Vid ingången",
+     "På charken"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På charken köper de korv och skinka.",
+    "explanationJa": "ハム・ソーセージ{売|う}り{場|ば}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mjölken finns längst in i butiken.",
+    "correct": true,
+    "explanationSv": "Ost och mjölk finns i kyldisken längst in i butiken.",
+    "explanationJa": "いちばん{奥|おく}の{冷蔵|れいぞう}ケースにあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför tar de glassen sist?",
+    "options": [
+     "För att den är dyr",
+     "För att Leo vill det",
+     "För att den ligger vid utgången",
+     "Så att den inte smälter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Vi tar den sist, så att den inte smälter.”",
+    "explanationJa": "{溶|と}けないようにです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kanel finns i kyldisken.",
+    "correct": false,
+    "explanationSv": "Aiko letar efter kanel på kryddhyllan.",
+    "explanationJa": "シナモンはスパイス{棚|だな}にあります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om mataffären: vilka avdelningar som finns, var man hittar olika varor och hur en mataffär i Japan ser ut.",
+  "discussionPoints": [
+   "Vilken avdelning går du till först?",
+   "Var i butiken ligger mjölken där du handlar?",
+   "Har din mataffär ett stort sortiment?",
+   "Vad är annorlunda i en japansk mataffär?"
+  ]
+ }
+}

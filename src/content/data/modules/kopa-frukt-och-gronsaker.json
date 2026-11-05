@@ -1,0 +1,171 @@
+{
+ "id": "m.kopa-frukt-och-gronsaker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Köpa frukt och grönsaker",
+ "titleJa": "{果物|くだもの}と{野菜|やさい}を{買|か}う",
+ "descriptionSv": "Att köpa frukt och grönsaker: lösvikt, fruktpåse, väga, våg, etikett, klase, knippe, ask, styckvis, känna på, stött, mosig, närodlad, i säsong och torghandel.",
+ "descriptionJa": "{果物|くだもの}と{野菜|やさい}を{買|か}う：{量|はか}り{売|う}り、ポリ{袋|ぶくろ}、{量|はか}る、はかり、ラベル、{房|ふさ}、{束|たば}、パック、ばら{売|う}り、{触|さわ}ってみる、{傷|いた}んだ、ぐにゃぐにゃの、{地元|じもと}{産|さん}、{旬|しゅん}の、{青空市場|あおぞらいちば}。",
+ "categoryId": "R01-A05-T01",
+ "tags": [
+  "handel",
+  "butik",
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.prislappar-och-jamforpriser"
+ ],
+ "related": [],
+ "recommendedOrder": 503,
+ "words": [
+  {
+   "senseId": "s.lösvikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fruktpåse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.etikett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klase.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knippe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ask.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styckvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.känna-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stött.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mosig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närodlad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-säsong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torghandel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Frukt och grönt",
+  "paragraphs": [
+   "Aiko handlar frukt och grönsaker. Potatis och lök säljs i lösvikt. Hon lägger potatisen i en fruktpåse.",
+   "I den här butiken väger man själv. Aiko lägger påsen på vågen och trycker på bilden av en potatis. Sedan sätter hon etiketten på påsen.",
+   "Bananerna köper hon i en klase. Hon tar också ett knippe dill och en ask jordgubbar. Jordgubbarna är billiga nu när de är i säsong.",
+   "Mango säljs styckvis. Aiko känner på dem för att se om de är mogna. Ett äpple är stött, och några bananer är bruna och mosiga. Dem tar hon inte.",
+   "Hon väljer gärna närodlade grönsaker, men gurkan kommer från Spanien.",
+   "På lördag ska hon gå till torghandeln i stan. Där finns det ofta billig frukt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur säljs potatisen?",
+    "options": [
+     "Styckvis",
+     "I en ask",
+     "I ett knippe",
+     "I lösvikt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Potatis och lök säljs i lösvikt.",
+    "explanationJa": "{量|はか}り{売|う}りです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem väger potatisen?",
+    "options": [
+     "Personalen",
+     "Erik",
+     "Aiko själv",
+     "Ingen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I den här butiken väger man själv.",
+    "explanationJa": "アイコが{自分|じぶん}で{量|はか}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför är jordgubbarna billiga?",
+    "options": [
+     "De är i säsong",
+     "De är mosiga",
+     "De är stötta",
+     "De är från Spanien"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Jordgubbarna är billiga nu när de är i säsong.",
+    "explanationJa": "{旬|しゅん}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aiko köper de mosiga bananerna.",
+    "correct": false,
+    "explanationSv": "Några bananer är bruna och mosiga. Dem tar hon inte.",
+    "explanationJa": "{買|か}いません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Gurkan är inte närodlad.",
+    "correct": true,
+    "explanationSv": "Gurkan kommer från Spanien.",
+    "explanationJa": "スペイン{産|さん}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att köpa frukt och grönsaker: lösvikt eller styckvis, hur man väljer mogen frukt och om ni köper närodlat.",
+  "discussionPoints": [
+   "Hur ser du om en avokado är mogen?",
+   "Köper du frukt i lösvikt eller i förpackning?",
+   "Vilka frukter är i säsong just nu?",
+   "Finns det torghandel där du bor?"
+  ]
+ }
+}

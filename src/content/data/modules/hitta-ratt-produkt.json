@@ -1,0 +1,171 @@
+{
+ "id": "m.hitta-ratt-produkt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hitta rätt produkt",
+ "titleJa": "{正|ただ}しい{商品|しょうひん}を{見|み}つける",
+ "descriptionSv": "Att hitta rätt produkt: märke, eget märke, variant, storpack, smaksatt, naturell, osötad, innehållsförteckning, tillsats, spår av, näringsvärde, sista förbrukningsdag, slutsåld, fråga efter och leta upp.",
+ "descriptionJa": "{正|ただ}しい{商品|しょうひん}を{見|み}つける：メーカー、プライベートブランド、{種類|しゅるい}、{大容量|だいようりょう}パック、{味|あじ}つき、プレーン、{無糖|むとう}、{原材料|げんざいりょう}{表示|ひょうじ}、{添加物|てんかぶつ}、{微量|びりょう}{含有|がんゆう}、{栄養|えいよう}{成分|せいぶん}、{消費|しょうひ}{期限|きげん}、{売|う}り{切|き}れ、〜があるか{尋|たず}ねる、{探|さが}し{出|だ}す。",
+ "categoryId": "R01-A05-T01",
+ "tags": [
+  "handel",
+  "butik",
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kopa-frukt-och-gronsaker"
+ ],
+ "related": [],
+ "recommendedOrder": 504,
+ "words": [
+  {
+   "senseId": "s.märke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eget-märke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.variant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storpack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smaksatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.naturell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.osötad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.innehållsförteckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spår-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näringsvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sista-förbrukningsdag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutsåld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fråga-efter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leta-upp.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rätt yoghurt",
+  "paragraphs": [
+   "Erik ska köpa yoghurt, men det finns så många märken och varianter. Mia vill ha smaksatt yoghurt med jordgubbar. Aiko vill ha naturell.",
+   "Butikens eget märke är billigare än de andra, och det finns också i storpack. Erik tar ett stort paket naturell yoghurt.",
+   "Leo kan inte äta nötter. Därför läser Erik innehållsförteckningen. Där står det: ”Kan innehålla spår av nötter.” Den yoghurten tar han inte.",
+   "Aiko vill ha mat utan tillsatser. Hon tittar också på näringsvärdet: hur mycket socker finns det? Hon vill ha osötad havredryck.",
+   "På köttet tittar Erik på sista förbrukningsdag. Den är i morgon, så han tar ett annat paket.",
+   "Men havredrycken är slutsåld. Erik frågar efter den i butiken, och personalen letar upp en låda längst in i butiken."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken yoghurt vill Mia ha?",
+    "options": [
+     "Naturell",
+     "Osötad",
+     "Smaksatt",
+     "Laktosfri"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mia vill ha smaksatt yoghurt med jordgubbar.",
+    "explanationJa": "{味|あじ}つきです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför läser Erik innehållsförteckningen?",
+    "options": [
+     "Han vill veta priset",
+     "Han letar efter märket",
+     "Aiko bad honom",
+     "Leo kan inte äta nötter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leo kan inte äta nötter. Därför läser Erik innehållsförteckningen.",
+    "explanationJa": "レオがナッツを{食|た}べられないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Butikens eget märke är dyrare.",
+    "correct": false,
+    "explanationSv": "Butikens eget märke är billigare än de andra.",
+    "explanationJa": "プライベートブランドのほうが{安|やす}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är slutsålt?",
+    "options": [
+     "Havredrycken",
+     "Yoghurten",
+     "Köttet",
+     "Brödet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Men havredrycken är slutsåld.",
+    "explanationJa": "オーツミルクです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik får till slut havredryck.",
+    "correct": true,
+    "explanationSv": "Personalen letar upp en låda längst in i butiken.",
+    "explanationJa": "{店員|てんいん}が{店|みせ}の{奥|おく}で{見|み}つけてくれます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att hitta rätt produkt: hur ni väljer märke, om ni läser innehållsförteckningen och vad ni gör när en vara är slutsåld.",
+  "discussionPoints": [
+   "Köper du butikens eget märke eller kända märken?",
+   "Läser du innehållsförteckningen? När?",
+   "Vad är skillnaden mellan bäst före och sista förbrukningsdag?",
+   "Vad gör du om en vara är slutsåld?"
+  ]
+ }
+}

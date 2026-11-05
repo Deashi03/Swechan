@@ -14481,6 +14481,593 @@
     }
    ],
    "bodyFile": "losa-vardagliga-konflikter.json"
+  },
+  {
+   "id": "m.butikens-avdelningar",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Butikens avdelningar",
+   "titleJa": "{店|みせ}の{売|う}り{場|ば}",
+   "descriptionSv": "Butikens avdelningar: mataffär, vara, avdelning, sortiment, kundvagn, ingång, utgång, längst in, frukt och grönt, chark, kyldisk, frysdisk, färskvara, kylvara och kryddhylla.",
+   "descriptionJa": "{店|みせ}の{売|う}り{場|ば}：スーパー、{商品|しょうひん}、{売|う}り{場|ば}、{品揃|しなぞろ}え、カート、{入|い}り{口|ぐち}、{出口|でぐち}、いちばん{奥|おく}、{青果|せいか}、ハム・ソーセージ、{冷蔵|れいぞう}ケース、{冷凍|れいとう}ケース、{生鮮食品|せいせんしょくひん}、{要冷蔵|ようれいぞう}{食品|しょくひん}、スパイス{棚|だな}。",
+   "categoryId": "R01-A05-T01",
+   "tags": [
+    "handel",
+    "butik"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.losa-vardagliga-konflikter"
+   ],
+   "related": [],
+   "recommendedOrder": 501,
+   "words": [
+    {
+     "senseId": "s.mataffär.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vara-produkt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avdelning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sortiment.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ingång.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utgång.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kundvagn.1",
+     "active": true
+    },
+    {
+     "senseId": "s.längst-in.1",
+     "active": true
+    },
+    {
+     "senseId": "s.frukt-och-grönt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.chark.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kyldisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.frysdisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.färskvara.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kylvara.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kryddhylla.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "butikens-avdelningar.json"
+  },
+  {
+   "id": "m.prislappar-och-jamforpriser",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Prislappar och jämförpriser",
+   "titleJa": "{値札|ねふだ}と{単位|たんい}{価格|かかく}",
+   "descriptionSv": "Prislappar och jämförpriser: prisskylt, hyllkant, jämförpris, kilopris, per styck, styckpris, ordinarie pris, prisvärd, moms, inklusive, exklusive, streckkod, avrunda och prisfel.",
+   "descriptionJa": "{値札|ねふだ}と{単位|たんい}{価格|かかく}：{価格|かかく}{表示|ひょうじ}、{棚|たな}の{縁|ふち}、{単位|たんい}{価格|かかく}、キロあたりの{値段|ねだん}、{一個|いっこ}あたり、{通常|つうじょう}{価格|かかく}、お{買|か}い{得|どく}、{消費税|しょうひぜい}、{税込|ぜいこ}み、{税抜|ぜいぬ}き、バーコード、{四捨五入|ししゃごにゅう}する、{価格|かかく}の{間違|まちが}い。",
+   "categoryId": "R01-A05-T01",
+   "tags": [
+    "handel",
+    "butik",
+    "pengar"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.butikens-avdelningar"
+   ],
+   "related": [],
+   "recommendedOrder": 502,
+   "words": [
+    {
+     "senseId": "s.prislapp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prisskylt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hyllkant.1",
+     "active": true
+    },
+    {
+     "senseId": "s.jämförpris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kilopris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.per-styck.1",
+     "active": true
+    },
+    {
+     "senseId": "s.styckpris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ordinarie-pris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prisvärd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.moms.1",
+     "active": true
+    },
+    {
+     "senseId": "s.inklusive.1",
+     "active": true
+    },
+    {
+     "senseId": "s.exklusive.1",
+     "active": false
+    },
+    {
+     "senseId": "s.streckkod.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avrunda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prisfel.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "prislappar-och-jamforpriser.json"
+  },
+  {
+   "id": "m.kopa-frukt-och-gronsaker",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Köpa frukt och grönsaker",
+   "titleJa": "{果物|くだもの}と{野菜|やさい}を{買|か}う",
+   "descriptionSv": "Att köpa frukt och grönsaker: lösvikt, fruktpåse, väga, våg, etikett, klase, knippe, ask, styckvis, känna på, stött, mosig, närodlad, i säsong och torghandel.",
+   "descriptionJa": "{果物|くだもの}と{野菜|やさい}を{買|か}う：{量|はか}り{売|う}り、ポリ{袋|ぶくろ}、{量|はか}る、はかり、ラベル、{房|ふさ}、{束|たば}、パック、ばら{売|う}り、{触|さわ}ってみる、{傷|いた}んだ、ぐにゃぐにゃの、{地元|じもと}{産|さん}、{旬|しゅん}の、{青空市場|あおぞらいちば}。",
+   "categoryId": "R01-A05-T01",
+   "tags": [
+    "handel",
+    "butik",
+    "mat"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.prislappar-och-jamforpriser"
+   ],
+   "related": [],
+   "recommendedOrder": 503,
+   "words": [
+    {
+     "senseId": "s.lösvikt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fruktpåse.1",
+     "active": true
+    },
+    {
+     "senseId": "s.väga.1",
+     "active": true
+    },
+    {
+     "senseId": "s.våg.1",
+     "active": true
+    },
+    {
+     "senseId": "s.etikett.1",
+     "active": true
+    },
+    {
+     "senseId": "s.klase.1",
+     "active": true
+    },
+    {
+     "senseId": "s.knippe.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ask.1",
+     "active": true
+    },
+    {
+     "senseId": "s.styckvis.1",
+     "active": true
+    },
+    {
+     "senseId": "s.känna-på.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stött.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mosig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.närodlad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.i-säsong.1",
+     "active": true
+    },
+    {
+     "senseId": "s.torghandel.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "kopa-frukt-och-gronsaker.json"
+  },
+  {
+   "id": "m.hitta-ratt-produkt",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Hitta rätt produkt",
+   "titleJa": "{正|ただ}しい{商品|しょうひん}を{見|み}つける",
+   "descriptionSv": "Att hitta rätt produkt: märke, eget märke, variant, storpack, smaksatt, naturell, osötad, innehållsförteckning, tillsats, spår av, näringsvärde, sista förbrukningsdag, slutsåld, fråga efter och leta upp.",
+   "descriptionJa": "{正|ただ}しい{商品|しょうひん}を{見|み}つける：メーカー、プライベートブランド、{種類|しゅるい}、{大容量|だいようりょう}パック、{味|あじ}つき、プレーン、{無糖|むとう}、{原材料|げんざいりょう}{表示|ひょうじ}、{添加物|てんかぶつ}、{微量|びりょう}{含有|がんゆう}、{栄養|えいよう}{成分|せいぶん}、{消費|しょうひ}{期限|きげん}、{売|う}り{切|き}れ、〜があるか{尋|たず}ねる、{探|さが}し{出|だ}す。",
+   "categoryId": "R01-A05-T01",
+   "tags": [
+    "handel",
+    "butik",
+    "mat"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.kopa-frukt-och-gronsaker"
+   ],
+   "related": [],
+   "recommendedOrder": 504,
+   "words": [
+    {
+     "senseId": "s.märke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.eget-märke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.variant.1",
+     "active": true
+    },
+    {
+     "senseId": "s.storpack.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smaksatt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.naturell.1",
+     "active": true
+    },
+    {
+     "senseId": "s.osötad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.innehållsförteckning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tillsats.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spår-av.1",
+     "active": true
+    },
+    {
+     "senseId": "s.näringsvärde.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sista-förbrukningsdag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slutsåld.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fråga-efter.1",
+     "active": true
+    },
+    {
+     "senseId": "s.leta-upp.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "hitta-ratt-produkt.json"
+  },
+  {
+   "id": "m.kassa-och-betalning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Kassa och betalning",
+   "titleJa": "レジと{支払|しはら}い",
+   "descriptionSv": "I kassan: kassa, kassör, snabbkassa, scanna, självscanning, handskanner, stickprov, kassaband, varuavdelare, kortterminal, blippa, godkänd, packa ner, bärkasse och papperspåse.",
+   "descriptionJa": "レジで：レジ、レジ{係|がかり}、{少量|しょうりょう}{専用|せんよう}レジ、スキャンする、セルフスキャン、ハンドスキャナー、{抜|ぬ}き{取|と}り{検査|けんさ}、ベルト、{仕切|しき}り{棒|ぼう}、カード{端末|たんまつ}、かざして{払|はら}う、{承認|しょうにん}、{詰|つ}める、{買|か}い{物|もの}{袋|ぶくろ}、{紙袋|かみぶくろ}。",
+   "categoryId": "R01-A05-T01",
+   "tags": [
+    "handel",
+    "butik",
+    "pengar"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.hitta-ratt-produkt"
+   ],
+   "related": [],
+   "recommendedOrder": 505,
+   "words": [
+    {
+     "senseId": "s.kassa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kassör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.snabbkassa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.scanna.1",
+     "active": true
+    },
+    {
+     "senseId": "s.självscanning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.handskanner.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stickprov.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kassaband.1",
+     "active": true
+    },
+    {
+     "senseId": "s.varuavdelare.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kortterminal.1",
+     "active": true
+    },
+    {
+     "senseId": "s.blippa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.godkänd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.packa-ner.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bärkasse.1",
+     "active": true
+    },
+    {
+     "senseId": "s.papperspåse.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "kassa-och-betalning.json"
+  },
+  {
+   "id": "m.erbjudanden-och-rabatter",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Erbjudanden och rabatter",
+   "titleJa": "お{買|か}い{得|どく}と{割引|わりびき}",
+   "descriptionSv": "Erbjudanden och rabatter: reklamblad, erbjudande, kampanj, extrapris, rabatt, nedsatt, halva priset, tre för två, rea, medlemspris, bonus, kupong, per hushåll, slå till och passa på.",
+   "descriptionJa": "お{買|か}い{得|どく}と{割引|わりびき}：チラシ、お{買|か}い{得|どく}{品|ひん}、キャンペーン、{特売|とくばい}{価格|かかく}、{割引|わりびき}、{値下|ねさ}げ、{半額|はんがく}、{三|みっ}つで{二|ふた}つ{分|ぶん}、セール、{会員|かいいん}{価格|かかく}、ポイント、クーポン、{一世帯|いっせたい}あたり、{飛|と}びつく、この{機会|きかい}に。",
+   "categoryId": "R01-A05-T01",
+   "tags": [
+    "handel",
+    "butik",
+    "pengar"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.kassa-och-betalning"
+   ],
+   "related": [],
+   "recommendedOrder": 506,
+   "words": [
+    {
+     "senseId": "s.reklamblad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.erbjudande.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kampanj.1",
+     "active": true
+    },
+    {
+     "senseId": "s.extrapris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rabatt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nedsatt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.halva-priset.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tre-för-två.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rea.1",
+     "active": true
+    },
+    {
+     "senseId": "s.medlemspris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bonus.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kupong.1",
+     "active": true
+    },
+    {
+     "senseId": "s.per-hushåll.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slå-till.1",
+     "active": true
+    },
+    {
+     "senseId": "s.passa-på.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "erbjudanden-och-rabatter.json"
+  },
+  {
+   "id": "m.reklamera-livsmedel",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Reklamera livsmedel",
+   "titleJa": "{食品|しょくひん}のクレーム",
+   "descriptionSv": "Att reklamera livsmedel: reklamera, möglig, lukta illa, smaka konstigt, surna, felaktig, glasbit, främmande föremål, obruten, visa upp, reklamation, ta tillbaka, pengarna tillbaka, butikschef och kontakta.",
+   "descriptionJa": "{食品|しょくひん}のクレーム：{申|もう}し{出|で}る、カビの{生|は}えた、{嫌|いや}なにおい、{変|へん}な{味|あじ}、{酸|す}っぱくなる、{欠陥|けっかん}のある、ガラスのかけら、{異物|いぶつ}、{未開封|みかいふう}、{見|み}せる、クレーム、{引|ひ}き{取|と}る、{返金|へんきん}、{店長|てんちょう}、{連絡|れんらく}する。",
+   "categoryId": "R01-A05-T01",
+   "tags": [
+    "handel",
+    "butik",
+    "mat"
+   ],
+   "level": "A2",
+   "prerequisites": [
+    "m.erbjudanden-och-rabatter"
+   ],
+   "related": [],
+   "recommendedOrder": 507,
+   "words": [
+    {
+     "senseId": "s.reklamera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.möglig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lukta-illa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smaka-konstigt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.surna.1",
+     "active": true
+    },
+    {
+     "senseId": "s.felaktig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.glasbit.1",
+     "active": true
+    },
+    {
+     "senseId": "s.främmande-föremål.1",
+     "active": false
+    },
+    {
+     "senseId": "s.obruten.1",
+     "active": false
+    },
+    {
+     "senseId": "s.visa-upp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.reklamation.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ta-tillbaka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pengarna-tillbaka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.butikschef.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kontakta.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "reklamera-livsmedel.json"
   }
  ]
 }
