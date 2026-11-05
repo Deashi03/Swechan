@@ -505,6 +505,41 @@ export const MOTIFS: Record<string, Motif> = {
     p('M20 22 L23 25 L28 19 M20 34 L23 37 L28 31', 'line'), q(20, 44, 8, 6, 'accent', 1),
     p('M32 22 H44 M32 34 H44 M32 47 H44', 'line'),
   ] },
+  // ── Hem & boende: Bostadsmarknad & hyra ────────────────────
+  forsale: { parts: [
+    p('M14 6 V58', 'line'), q(14, 12, 40, 26, 'main', 3),
+    q(20, 18, 28, 6, 'light', 1), q(20, 28, 18, 4, 'light', 1),
+    p('M44 44 L52 36 L60 44 V58 H44 Z', 'accent2'), q(50, 50, 4, 8, 'light', 0.5),
+  ] },
+  contract: { parts: [
+    q(12, 6, 34, 50, 'light', 3), p('M18 16 H40 M18 24 H40 M18 32 H34', 'line'),
+    p('M18 46 C22 40 26 50 30 44', 'line'),
+    p('M52 18 L58 24 L36 50 L28 54 L30 46 Z', 'main'), p('M28 54 L30 46 L36 50 Z', 'accent'),
+  ] },
+  coins: { parts: [
+    c(24, 40, 14, 'main', H.yellow), c(24, 40, 9, 'accent', H.yellow),
+    c(42, 26, 14, 'main', H.yellow), c(42, 26, 9, 'light', H.yellow),
+    p('M38 20 V32 M38 26 L46 20 M38 26 L46 32', 'line'),
+  ] },
+  coop: { parts: [
+    q(10, 18, 44, 40, 'main', 2), p('M6 20 L32 6 L58 20 Z', 'accent'),
+    q(16, 26, 8, 8, 'light', 1), q(28, 26, 8, 8, 'light', 1), q(40, 26, 8, 8, 'light', 1),
+    q(16, 40, 8, 8, 'light', 1), q(40, 40, 8, 8, 'light', 1), q(28, 42, 8, 16, 'accent2', 1),
+  ] },
+  noise: { parts: [
+    q(8, 10, 22, 44, 'main', 2), q(32, 10, 22, 44, 'light', 2),
+    p('M36 24 C40 28 40 36 36 40 M42 18 C50 26 50 38 42 46', 'line'),
+    c(19, 30, 4, 'accent2'), p('M16 40 H22', 'line'),
+  ] },
+  service: { parts: [
+    q(16, 6, 32, 52, 'main', 4), q(20, 12, 24, 36, 'light', 2),
+    c(32, 53, 2.5, 'light'), p('M26 24 L30 28 L38 20', 'line'), q(24, 34, 16, 4, 'accent', 1),
+  ] },
+  movingtruck: { parts: [
+    q(4, 18, 34, 28, 'main', 2), p('M38 26 H50 L58 36 V46 H38 Z', 'accent'),
+    q(42, 29, 8, 7, 'light', 1), c(16, 48, 6, 'main', H.grey), c(48, 48, 6, 'main', H.grey),
+    c(16, 48, 2.5, 'light'), c(48, 48, 2.5, 'light'), q(12, 24, 12, 10, 'accent2', 1, H.brown),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -540,6 +575,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-01-04-05': 'washer', 'SWC-VAR-01-04-06': 'faucet', 'SWC-VAR-01-04-07': 'wrench',
   'SWC-VAR-01-05-01': 'spray', 'SWC-VAR-01-05-02': 'mop', 'SWC-VAR-01-05-03': 'shirt', 'SWC-VAR-01-05-04': 'recycle',
   'SWC-VAR-01-05-05': 'hammer', 'SWC-VAR-01-05-06': 'crackwall', 'SWC-VAR-01-05-07': 'checklist',
+  'SWC-VAR-01-06-01': 'forsale', 'SWC-VAR-01-06-02': 'contract', 'SWC-VAR-01-06-03': 'coins', 'SWC-VAR-01-06-04': 'coop',
+  'SWC-VAR-01-06-05': 'noise', 'SWC-VAR-01-06-06': 'service', 'SWC-VAR-01-06-07': 'movingtruck',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };
