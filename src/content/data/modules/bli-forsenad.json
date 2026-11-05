@@ -1,0 +1,171 @@
+{
+ "id": "m.bli-forsenad",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bli försenad",
+ "titleJa": "{遅|おく}れる",
+ "descriptionSv": "Att bli försenad: försening, komma för sent, bli sen, komma i väg, strul, strula, otur, enligt plan, uppehålla, förvarna, meddela, ursäkt, be om ursäkt och beklaga.",
+ "descriptionJa": "{遅|おく}れる：{遅|おく}れ、{遅刻|ちこく}する、{遅|おそ}くなる、{出|で}かける、トラブル、うまくいかない、ついていない、{予定|よてい}どおりに、{引|ひ}き{止|と}める、{前|まえ}もって{知|し}らせる、{連絡|れんらく}する、{言|い}い{訳|わけ}、{謝|あやま}る、お{詫|わ}びする。",
+ "categoryId": "R01-A04-T06",
+ "tags": [
+  "vardag",
+  "problem",
+  "tid"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.missforstand-i-hemmet"
+ ],
+ "related": [],
+ "recommendedOrder": 439,
+ "words": [
+  {
+   "senseId": "s.försenad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-för-sent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bli-sen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-i-väg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strul.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strula.1",
+   "active": true
+  },
+  {
+   "senseId": "s.otur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enligt-plan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppehålla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förvarna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.meddela.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ursäkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.be-om-ursäkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beklaga.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En morgon med strul",
+  "paragraphs": [
+   "Erik ska träffa en ny kund klockan nio. Men ingenting går enligt plan. Först strular det med kaffebryggaren.",
+   "Sedan tappar Leo sin mössa, och klockan är halv nio när de kommer i väg. Grannen vill prata en stund. ”Jag ska inte uppehålla dig”, säger hon, men det tar tio minuter.",
+   "På vägen står det på skylten att bussen är försenad. Där står det också: ”Vi beklagar förseningen.” Vilken otur!",
+   "Erik skickar ett sms till kunden för att förvarna henne: ”Förlåt, jag blir sen. Det har varit mycket strul i morse.”",
+   "Han kommer för sent – kvart över nio. ”Jag ber om ursäkt”, säger han. ”Ingen fara”, svarar kunden. ”Det var bra att du meddelade mig.”",
+   "På kvällen säger Aiko: ”Bussen är ingen ursäkt. Gå en kvart tidigare i morgon!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När ska Erik träffa kunden?",
+    "options": [
+     "Halv nio",
+     "Kvart över nio",
+     "Klockan nio",
+     "Klockan tio"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik ska träffa en ny kund klockan nio.",
+    "explanationJa": "{九時|くじ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Grannen uppehåller Erik i tio minuter.",
+    "correct": true,
+    "explanationSv": "”Jag ska inte uppehålla dig”, säger hon, men det tar tio minuter.",
+    "explanationJa": "{隣|となり}の{人|ひと}と{十分|じゅっぷん}{話|はな}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör Erik när han vet att han blir sen?",
+    "options": [
+     "Springer",
+     "Cyklar",
+     "Går hem",
+     "Skickar ett sms"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik skickar ett sms till kunden för att förvarna henne.",
+    "explanationJa": "SMSを{送|おく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur sent kommer Erik?",
+    "options": [
+     "Halv tio",
+     "Kvart över nio",
+     "Nio",
+     "Tio"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han kommer för sent – kvart över nio.",
+    "explanationJa": "{九時十五分|くじじゅうごふん}に{着|つ}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kunden är arg på Erik.",
+    "correct": false,
+    "explanationSv": "”Ingen fara”, svarar kunden.",
+    "explanationJa": "「{大丈夫|だいじょうぶ}」と{答|こた}えています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att bli försenad: varför man kommer för sent, hur man meddelar det och vad man säger när man ber om ursäkt.",
+  "discussionPoints": [
+   "När kom du för sent senast? Varför?",
+   "Hur meddelar du att du blir sen?",
+   "Vad är en bra ursäkt, och vad är en dålig ursäkt?",
+   "Hur ber man om ursäkt för en försening i Japan?"
+  ]
+ }
+}

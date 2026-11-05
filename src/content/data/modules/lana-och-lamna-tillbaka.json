@@ -1,0 +1,170 @@
+{
+ "id": "m.lana-och-lamna-tillbaka",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Låna och lämna tillbaka",
+ "titleJa": "{貸|か}し{借|か}り",
+ "descriptionSv": "Att låna och lämna tillbaka: låna ut, få låna, ge tillbaka, få tillbaka, återlämna, utlånad, behålla, ta hand om, vara rädd om, skick, slarvig, pålitlig, skyldig och kvitt.",
+ "descriptionJa": "{貸|か}し{借|か}り：{貸|か}す、{借|か}りてもいい、{返|かえ}す、{返|かえ}してもらう、{返却|へんきゃく}する、{貸|か}し{出|だ}し{中|ちゅう}、とっておく、{大事|だいじ}にする、{状態|じょうたい}、いいかげんな、{信頼|しんらい}できる、{借|か}りている、{貸|か}し{借|か}りなし。",
+ "categoryId": "R01-A04-T06",
+ "tags": [
+  "vardag",
+  "problem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.be-om-hjalp"
+ ],
+ "related": [],
+ "recommendedOrder": 441,
+ "words": [
+  {
+   "senseId": "s.låna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.få-låna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återlämna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ge-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.få-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utlånad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.behålla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-hand-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vara-rädd-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skick.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slarvig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pålitlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyldig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvitt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mias cykel",
+  "paragraphs": [
+   "Leo frågar om han får låna Mias cykel. Mia är rädd om den, men Leo brukar vara pålitlig. ”Okej, jag lånar ut den. Ta hand om den!”",
+   "Leo är lite slarvig. Han lämnar cykeln ute i regnet, och den är inte i lika gott skick efteråt.",
+   "”När kan du lämna tillbaka den?” frågar Mia. ”I morgon”, säger Leo. Men nästa dag är cykeln utlånad till hans kompis.",
+   "Till slut är det dags: Mia får tillbaka sin cykel. Leo tvättar den och ger tillbaka den med en kaka. ”Förlåt. Nu är jag skyldig dig en tjänst.”",
+   "Samtidigt har Aiko lånat böcker som hon måste återlämna i dag. En av dem är så bra att hon vill behålla den.",
+   "Leo hjälper Mia med läxan nästa vecka. ”Nu är vi kvitt”, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad lånar Leo av Mia?",
+    "options": [
+     "Hennes cykel",
+     "Hennes bok",
+     "Hennes penna",
+     "Hennes jacka"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo frågar om han får låna Mias cykel.",
+    "explanationJa": "{自転車|じてんしゃ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Leo lämnar cykeln ute i regnet.",
+    "correct": true,
+    "explanationSv": "Han lämnar cykeln ute i regnet.",
+    "explanationJa": "{雨|あめ}の{中|なか}に{置|お}いたままにしました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var är cykeln nästa dag?",
+    "options": [
+     "Hemma hos Mia",
+     "Utlånad till Leos kompis",
+     "På lagning",
+     "I garaget"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nästa dag är cykeln utlånad till hans kompis.",
+    "explanationJa": "レオの{友|とも}だちに{貸|か}されています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad måste Aiko göra i dag?",
+    "options": [
+     "Laga en cykel",
+     "Baka en kaka",
+     "Återlämna böcker",
+     "Hjälpa Leo"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko har lånat böcker som hon måste återlämna i dag.",
+    "explanationJa": "{本|ほん}を{返却|へんきゃく}しなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo och Mia är vänner igen i slutet.",
+    "correct": true,
+    "explanationSv": "”Nu är vi kvitt”, säger han.",
+    "explanationJa": "{貸|か}し{借|か}りがなくなりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att låna och lämna tillbaka saker: vad ni lånar ut, vem ni lånar av och om ni får tillbaka det.",
+  "discussionPoints": [
+   "Vad lånar du gärna ut, och vad lånar du aldrig ut?",
+   "Har du någon gång inte fått tillbaka något som du lånat ut?",
+   "Är du rädd om saker som du har lånat?",
+   "Lånar man ofta saker av grannar i Japan?"
+  ]
+ }
+}

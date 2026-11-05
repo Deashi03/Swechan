@@ -1,0 +1,171 @@
+{
+ "id": "m.losa-vardagliga-konflikter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Lösa vardagliga konflikter",
+ "titleJa": "{日常|にちじょう}のもめごとを{解決|かいけつ}する",
+ "descriptionSv": "Att lösa vardagliga konflikter: osams, sams, tjata, säga ifrån, rättvis, orättvis, lugna ner sig, medla, lösning, kompromiss, kompromissa, ge med sig, be om förlåtelse och förlåta.",
+ "descriptionJa": "{日常|にちじょう}のもめごとを{解決|かいけつ}する：{仲|なか}たがい、{仲直|なかなお}り、しつこく{言|い}う、はっきり{言|い}う、{公平|こうへい}な、{不公平|ふこうへい}な、{落|お}ち{着|つ}く、{仲裁|ちゅうさい}する、{解決|かいけつ}{策|さく}、{妥協|だきょう}、{折|お}れる、{謝|あやま}る、{許|ゆる}す。",
+ "categoryId": "R01-A04-T06",
+ "tags": [
+  "vardag",
+  "problem",
+  "relationer"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.lana-och-lamna-tillbaka"
+ ],
+ "related": [],
+ "recommendedOrder": 442,
+ "words": [
+  {
+   "senseId": "s.konflikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.osams.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säga-ifrån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orättvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lugna-ner-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kompromiss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompromissa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ge-med-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.be-om-förlåtelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlåta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sams.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vems tur är det?",
+  "paragraphs": [
+   "Hemma hos Aiko och Erik blir det ofta konflikter om disken. I kväll är Leo och Mia osams igen.",
+   "”Det är orättvist! Jag diskade i går”, säger Mia. ”Sluta tjata”, svarar Leo. Mia säger ifrån: ”Nej, nu är det din tur.”",
+   "Erik kommer in i köket. ”Nu får ni lugna ner er”, säger han. Barnen är arga, men de lugnar ner sig efter en stund.",
+   "Aiko får medla. ”Vi måste hitta en lösning som är rättvis för alla.” Leo vill inte diska, och Mia vill inte heller.",
+   "Till slut blir det en kompromiss: Leo diskar i dag, och i morgon diskar Mia och Leo tillsammans. ”Ibland måste man kompromissa”, säger Aiko. Leo ger med sig.",
+   "Efteråt vill Leo be om förlåtelse. ”Förlåt att jag var så sur.” – ”Jag förlåter dig”, säger Mia. Nu är de sams igen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad blir det ofta konflikter om?",
+    "options": [
+     "Datorn",
+     "Tvätten",
+     "Maten",
+     "Disken"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det blir ofta konflikter om disken.",
+    "explanationJa": "{皿洗|さらあら}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför tycker Mia att det är orättvist?",
+    "options": [
+     "Hon är trött",
+     "Hon diskade i går",
+     "Hon har läxor",
+     "Hon vill titta på tv"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Det är orättvist! Jag diskade i går.”",
+    "explanationJa": "{昨日|きのう}{自分|じぶん}が{洗|あら}ったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vem medlar mellan barnen?",
+    "options": [
+     "Erik",
+     "Leo",
+     "Aiko",
+     "Grannen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko får medla.",
+    "explanationJa": "アイコです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Leo diskar i dag.",
+    "correct": true,
+    "explanationSv": "Leo diskar i dag, och i morgon diskar Mia och Leo tillsammans.",
+    "explanationJa": "{今日|きょう}はレオが{洗|あら}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia är fortfarande arg på Leo i slutet.",
+    "correct": false,
+    "explanationSv": "”Jag förlåter dig”, säger Mia. Nu är de sams igen.",
+    "explanationJa": "ミアはレオを{許|ゆる}しました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vardagliga konflikter: vad man blir osams om hemma, hur man säger ifrån och hur man hittar en kompromiss.",
+  "discussionPoints": [
+   "Vad blir man ofta osams om hemma?",
+   "Är det lätt för dig att säga ifrån?",
+   "Hur brukar ni hitta en lösning när ni är osams?",
+   "Hur ber man om förlåtelse i Japan?"
+  ]
+ }
+}

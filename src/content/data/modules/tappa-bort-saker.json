@@ -1,0 +1,170 @@
+{
+ "id": "m.tappa-bort-saker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tappa bort saker",
+ "titleJa": "{物|もの}をなくす",
+ "descriptionSv": "Att tappa bort saker: försvunnen, leta efter, leta igenom, tänka efter, hitta igen, ligga kvar, spärra, efterlysa, belöning, någonstans och ingenstans.",
+ "descriptionJa": "{物|もの}をなくす：{行方不明|ゆくえふめい}、{探|さが}す、くまなく{探|さが}す、よく{考|かんが}える、また{見|み}つける、{置|お}いたまま、カードを{止|と}める、{探|さが}している、{謝礼|しゃれい}、どこかに、どこにも〜ない。",
+ "categoryId": "R01-A04-T06",
+ "tags": [
+  "vardag",
+  "problem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.jamfora-storlekar"
+ ],
+ "related": [],
+ "recommendedOrder": 436,
+ "words": [
+  {
+   "senseId": "s.tappa-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försvunnen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leta-efter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leta-igenom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vända-upp-och-ner-på.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tänka-efter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hitta-igen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ligga-kvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spärra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upphittad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.efterlysa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.belöning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turligt-nog.1",
+   "active": true
+  },
+  {
+   "senseId": "s.någonstans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingenstans.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är plånboken?",
+  "paragraphs": [
+   "Erik har tappat bort sin plånbok. Den är försvunnen. ”Den måste ligga någonstans”, säger han, men han hittar den ingenstans.",
+   "Hela familjen letar efter den. De letar igenom hans jacka och väska, och vänder upp och ner på hela lägenheten.",
+   "”Tänk efter var du var senast”, säger Aiko. ”På bussen”, säger Erik. ”Du måste spärra kortet direkt!”",
+   "Erik ringer och frågar. Upphittade saker lämnas på en särskild plats. Turligt nog har någon lämnat in plånboken. Den låg kvar på bussen.",
+   "Samtidigt efterlyser grannen sin katt på anslagstavlan. Den som hittar katten får en belöning.",
+   "På kvällen kommer Erik hem med plånboken. ”Jag har hittat igen den!” Och katten sitter på trappan. Leo får belöningen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har Erik tappat bort?",
+    "options": [
+     "Sin plånbok",
+     "Sina nycklar",
+     "Sin mobil",
+     "Sin katt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Erik har tappat bort sin plånbok.",
+    "explanationJa": "{財布|さいふ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var var Erik senast?",
+    "options": [
+     "På jobbet",
+     "I affären",
+     "På bussen",
+     "Hemma"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”På bussen”, säger Erik.",
+    "explanationJa": "バスの{中|なか}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik måste spärra kortet.",
+    "correct": true,
+    "explanationSv": "”Du måste spärra kortet direkt!”",
+    "explanationJa": "すぐにカードを{止|と}めるように{言|い}われました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör grannen?",
+    "options": [
+     "Efterlyser sin katt",
+     "Hittar plånboken",
+     "Spärrar kortet",
+     "Ringer och frågar"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Grannen efterlyser sin katt på anslagstavlan.",
+    "explanationJa": "{猫|ねこ}を{探|さが}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo hittade grannens katt.",
+    "correct": true,
+    "explanationSv": "Katten sitter på trappan. Leo får belöningen.",
+    "explanationJa": "レオが{謝礼|しゃれい}をもらいます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att tappa bort saker: vad ni har tappat bort, var ni letade och om ni hittade det igen.",
+  "discussionPoints": [
+   "Vad tappar du oftast bort?",
+   "Var letar du först?",
+   "Har du tappat bort något viktigt, som en plånbok?",
+   "Lämnar man in upphittade saker till polisen i Japan?"
+  ]
+ }
+}
