@@ -1,0 +1,171 @@
+{
+ "id": "m.swish-och-digital-betalning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Swish och digital betalning",
+ "titleJa": "スウィッシュとデジタル{決済|けっさい}",
+ "descriptionSv": "Swish och digital betalning: Swish, mobilnummer, skicka pengar, swisha, överföring, BankID, legitimera sig, godkänna, betalapp, mobilbetalning, digital plånbok, QR-kod, avgiftsfri, lägga ut och betala tillbaka.",
+ "descriptionJa": "スウィッシュとデジタル{決済|けっさい}：スウィッシュ、{携帯|けいたい}{番号|ばんごう}、{送金|そうきん}する、{送金|そうきん}、バンクID、{本人|ほんにん}{確認|かくにん}、{承認|しょうにん}する、{決済|けっさい}アプリ、モバイル{決済|けっさい}、デジタルウォレット、QRコード、{手数料|てすうりょう}{無料|むりょう}、{立|た}て{替|か}える、{返|かえ}す。",
+ "categoryId": "R01-A05-T02",
+ "tags": [
+  "handel",
+  "pengar",
+  "digitalt"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kvitton-och-fakturor"
+ ],
+ "related": [],
+ "recommendedOrder": 511,
+ "words": [
+  {
+   "senseId": "s.Swish.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mobilnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-pengar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.swisha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överföring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.BankID.1",
+   "active": true
+  },
+  {
+   "senseId": "s.legitimera-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betalapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mobilbetalning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.digital-plånbok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.QR-kod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgiftsfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betala-tillbaka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Swisha mig!",
+  "paragraphs": [
+   "Erik och tre kompisar ska köpa en present till en vän som fyller år. Erik köper presenten på nätet. Han lägger ut för alla fyra.",
+   "”Ni kan betala tillbaka med Swish”, skriver han. ”Mitt mobilnummer är 070-123 45 67.” Det är avgiftsfritt att swisha till vänner.",
+   "Hans kompis vill skicka pengar direkt. Han öppnar appen och skriver beloppet. Sedan måste han legitimera sig med BankID och godkänna betalningen. Överföringen går på en sekund.",
+   "Aiko köper en lampa på en loppis. Där finns en QR-kod på bordet. Hon scannar den och swishar 50 kronor.",
+   "I mataffären betalar hon med mobilen. Hon har sitt bankkort i en digital plånbok. Mobilbetalning är vanligt i Sverige.",
+   "Aikos mamma i Japan har också en betalapp. ”Men där kan jag inte swisha till dig”, skrattar hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem lägger ut för presenten?",
+    "options": [
+     "Aiko",
+     "En kompis",
+     "Mamma",
+     "Erik"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik köper presenten på nätet. Han lägger ut för alla fyra.",
+    "explanationJa": "エリックです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ska kompisarna betala tillbaka?",
+    "options": [
+     "Med kontanter",
+     "Med Swish",
+     "Med kreditkort",
+     "Med faktura"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Ni kan betala tillbaka med Swish.”",
+    "explanationJa": "スウィッシュです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad måste kompisen göra efter att han har skrivit beloppet?",
+    "options": [
+     "Legitimera sig med BankID",
+     "Ringa banken",
+     "Scanna en QR-kod",
+     "Skicka ett mejl"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sedan måste han legitimera sig med BankID och godkänna betalningen.",
+    "explanationJa": "バンクIDで{本人|ほんにん}{確認|かくにん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aiko betalar lampan med kontanter.",
+    "correct": false,
+    "explanationSv": "Hon scannar den och swishar 50 kronor.",
+    "explanationJa": "スウィッシュで{払|はら}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan swisha från Japan till Sverige.",
+    "correct": false,
+    "explanationSv": "”Men där kan jag inte swisha till dig.”",
+    "explanationJa": "{日本|にほん}からはスウィッシュできません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om digital betalning: Swish, betalappar och mobilbetalning i Sverige och Japan.",
+  "discussionPoints": [
+   "Har du Swish? Vad swishar du för?",
+   "Vilken betalapp använder du i Japan?",
+   "Har du bankkortet i en digital plånbok?",
+   "Brukar du lägga ut för vänner? Hur betalar de tillbaka?"
+  ]
+ }
+}

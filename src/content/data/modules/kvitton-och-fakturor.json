@@ -1,0 +1,170 @@
+{
+ "id": "m.kvitton-och-fakturor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kvitton och fakturor",
+ "titleJa": "レシートと{請求書|せいきゅうしょ}",
+ "descriptionSv": "Kvitton och fakturor: kvitto, kopia, specificerad, faktura, fakturera, e-faktura, pappersfaktura, belopp, förfallodag, betala in, bankgiro, OCR-nummer, autogiro, påminnelseavgift och inkasso.",
+ "descriptionJa": "レシートと{請求書|せいきゅうしょ}：レシート、{控|ひか}え、{明細|めいさい}つき、{請求書|せいきゅうしょ}、{請求|せいきゅう}する、{電子|でんし}{請求書|せいきゅうしょ}、{紙|かみ}の{請求書|せいきゅうしょ}、{金額|きんがく}、{支払|しはら}い{期日|きじつ}、{振|ふ}り{込|こ}む、バンクジーロ、OCR{番号|ばんごう}、{自動|じどう}{引|ひ}き{落|お}とし、{督促|とくそく}{手数料|てすうりょう}、{債権|さいけん}{回収|かいしゅう}。",
+ "categoryId": "R01-A05-T02",
+ "tags": [
+  "handel",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bankkort-och-kontanter"
+ ],
+ "related": [],
+ "recommendedOrder": 510,
+ "words": [
+  {
+   "senseId": "s.kvitto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kopia.1",
+   "active": true
+  },
+  {
+   "senseId": "s.specificerad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.faktura.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fakturera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.e-faktura.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pappersfaktura.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förfallodag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betala-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bankgiro.1",
+   "active": false
+  },
+  {
+   "senseId": "s.OCR-nummer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.autogiro.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påminnelseavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inkasso.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Fakturor i brevlådan",
+  "paragraphs": [
+   "Erik sparar alltid kvittot när han köper något dyrt. Han tar också en kopia med mobilen. Efter middagen med jobbet ber han om ett specificerat kvitto.",
+   "Varje månad kommer det fakturor. Elbolaget fakturerar dem varje månad. Aiko och Erik har e-faktura, för en pappersfaktura kostar extra.",
+   "På fakturan står beloppet, förfallodagen, ett bankgiro och ett OCR-nummer. Erik betalar in pengarna i appen och skriver OCR-numret noga.",
+   "Hyran betalar de med autogiro. Då dras pengarna automatiskt den sista dagen i månaden.",
+   "En gång glömde Erik att betala en faktura i tid. Då kom det en påminnelse med en påminnelseavgift på 60 kronor.",
+   "”Om man inte betalar efter påminnelsen kan fakturan gå till inkasso”, säger Aiko. ”Det vill vi inte!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ber Erik om efter middagen?",
+    "options": [
+     "En faktura",
+     "En kopia",
+     "Ett specificerat kvitto",
+     "En påminnelse"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han ber om ett specificerat kvitto.",
+    "explanationJa": "{明細|めいさい}つきのレシートです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför har de e-faktura?",
+    "options": [
+     "De har ingen brevlåda",
+     "Banken vill det",
+     "En pappersfaktura kostar extra",
+     "Det är snabbare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko och Erik har e-faktura, för en pappersfaktura kostar extra.",
+    "explanationJa": "{紙|かみ}の{請求書|せいきゅうしょ}は{追加|ついか}{料金|りょうきん}がかかるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur betalar de hyran?",
+    "options": [
+     "Med kontanter",
+     "Med kreditkort",
+     "Med autogiro",
+     "Med e-faktura"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hyran betalar de med autogiro.",
+    "explanationJa": "{自動|じどう}{引|ひ}き{落|お}としです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Påminnelseavgiften var 60 kronor.",
+    "correct": true,
+    "explanationSv": "Då kom det en påminnelse med en påminnelseavgift på 60 kronor.",
+    "explanationJa": "60クローナでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Inkasso är något bra.",
+    "correct": false,
+    "explanationSv": "”Det vill vi inte!”",
+    "explanationJa": "{避|さ}けたいものです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kvitton och fakturor: om ni sparar kvitton, hur ni betalar fakturor och hur det fungerar i Japan.",
+  "discussionPoints": [
+   "Sparar du kvitton? Vilka?",
+   "Har du e-faktura eller pappersfaktura?",
+   "Har du någon gång fått en påminnelseavgift?",
+   "Hur betalar man räkningar i Japan, till exempel på ett konbini?"
+  ]
+ }
+}

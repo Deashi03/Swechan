@@ -1,0 +1,170 @@
+{
+ "id": "m.sedlar-och-mynt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Sedlar och mynt",
+ "titleJa": "{紙幣|しへい}と{硬貨|こうか}",
+ "descriptionSv": "Sedlar och mynt: sedel, mynt, enkrona, femkrona, tiokrona, tjugolapp, hundralapp, femhundralapp, portmonnä, myntfack, småpengar, slant, spargris, ogiltig och Riksbanken.",
+ "descriptionJa": "{紙幣|しへい}と{硬貨|こうか}：お{札|さつ}、コイン、1・5・10クローナ{硬貨|こうか}、20・100・500クローナ{札|さつ}、{小銭入|こぜにい}れ、{小銭|こぜに}、{貯金箱|ちょきんばこ}、{無効|むこう}の、スウェーデン{国立|こくりつ}{銀行|ぎんこう}。",
+ "categoryId": "R01-A05-T02",
+ "tags": [
+  "handel",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.reklamera-livsmedel"
+ ],
+ "related": [],
+ "recommendedOrder": 508,
+ "words": [
+  {
+   "senseId": "s.sedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mynt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enkrona.1",
+   "active": true
+  },
+  {
+   "senseId": "s.femkrona.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tiokrona.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjugolapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hundralapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.femhundralapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.portmonnä.1",
+   "active": true
+  },
+  {
+   "senseId": "s.myntfack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.småpengar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slant.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spargris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ogiltig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Riksbanken.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Leos spargris",
+  "paragraphs": [
+   "Leo har sparat pengar i sin spargris i tre år. I dag ska han räkna dem. Han tar ut alla mynt och sedlar och lägger dem på bordet.",
+   "Det är mest småpengar: många enkronor och femkronor, och några tiokronor. Tiokronan är guldfärgad och lite tyngre.",
+   "Det finns också några sedlar. Mormor har gett honom en tjugolapp varje födelsedag, och en gång fick han en hundralapp. På sedlarna finns bilder av kända svenskar.",
+   "Längst ner ligger en gammal femhundralapp. ”Den är tyvärr ogiltig”, säger Erik. ”Riksbanken har bytt ut sedlarna. Men man kan kanske lösa in den på banken.”",
+   "Leo räknar till 843 kronor. Han vill köpa en ny cykel, men han har inte en slant mer.",
+   "Aiko ger honom en portmonnä i present. Mynten lägger han i myntfacket och sedlarna bredvid."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge har Leo sparat?",
+    "options": [
+     "I tre år",
+     "I ett år",
+     "I en månad",
+     "I tio år"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo har sparat pengar i sin spargris i tre år.",
+    "explanationJa": "{三年間|さんねんかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket mynt är guldfärgat?",
+    "options": [
+     "Tiokronan",
+     "Enkronan",
+     "Femkronan",
+     "Inget"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Tiokronan är guldfärgad och lite tyngre.",
+    "explanationJa": "10クローナ{硬貨|こうか}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad får Leo av mormor varje födelsedag?",
+    "options": [
+     "En tjugolapp",
+     "En hundralapp",
+     "En femkrona",
+     "En spargris"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mormor har gett honom en tjugolapp varje födelsedag.",
+    "explanationJa": "20クローナ{札|さつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Den gamla femhundralappen går att betala med i affären.",
+    "correct": false,
+    "explanationSv": "”Den är tyvärr ogiltig.”",
+    "explanationJa": "もう{使|つか}えません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo har tillräckligt med pengar för en ny cykel.",
+    "correct": false,
+    "explanationSv": "Han vill köpa en ny cykel, men han har inte en slant mer.",
+    "explanationJa": "もうお{金|かね}がありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sedlar och mynt: vilka som finns i Sverige och Japan, om ni använder kontanter och om ni sparade pengar som barn.",
+  "discussionPoints": [
+   "Vilka svenska mynt och sedlar har du sett?",
+   "Hade du en spargris när du var liten?",
+   "Har du småpengar i plånboken just nu?",
+   "Vilka bilder finns på japanska sedlar?"
+  ]
+ }
+}
