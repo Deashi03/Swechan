@@ -1,0 +1,171 @@
+{
+ "id": "m.paket-och-sparning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Paket och spårning",
+ "titleJa": "{荷物|にもつ}と{追跡|ついせき}",
+ "descriptionSv": "Paket och spårning: försändelse, spåra, spårning, spårningsnummer, spårningslänk, status, uppdatering, på väg, sorteringsterminal, under transport, ute för leverans, beräknad, avisera, avisering och levererad.",
+ "descriptionJa": "{荷物|にもつ}と{追跡|ついせき}：{発送物|はっそうぶつ}、{追跡|ついせき}する、{追跡|ついせき}、{追跡|ついせき}{番号|ばんごう}、{追跡|ついせき}リンク、ステータス、{更新|こうしん}、{配送中|はいそうちゅう}、{仕分|しわ}けセンター、{輸送中|ゆそうちゅう}、{配達中|はいたつちゅう}、{予定|よてい}の、{通知|つうち}する、{通知|つうち}、{配達済|はいたつず}み。",
+ "categoryId": "R01-A05-T04",
+ "tags": [
+  "handel",
+  "internet",
+  "post"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.leveransalternativ"
+ ],
+ "related": [],
+ "recommendedOrder": 526,
+ "words": [
+  {
+   "senseId": "s.försändelse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spåra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårningsnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårningslänk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.status.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdatering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-väg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sorteringsterminal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.under-transport.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ute-för-leverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beräknad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avisera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avisering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.levererad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är paketet?",
+  "paragraphs": [
+   "Leo väntar på sin nya jacka. Han får ett mejl: ”Din försändelse har skickats.” I mejlet finns ett spårningsnummer och en spårningslänk.",
+   "Leo vill spåra paketet. Han klickar på länken. Spårningen visar att paketet är på väg. Statusen säger ”Under transport”.",
+   "Nästa dag har paketet kommit till en sorteringsterminal i Göteborg. Beräknad leverans är på torsdag.",
+   "Men på onsdag och torsdag kommer ingen uppdatering. Leo tittar i appen hela tiden. ”Det tar så lång tid!” säger han.",
+   "På fredag morgon står det: ”Ditt paket är ute för leverans.” Företaget aviserar honom med sms när paketet har kommit.",
+   "Klockan tre får Leo en avisering i mobilen. Status: levererad. Jackan ligger i brevlådan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad finns i mejlet?",
+    "options": [
+     "En faktura",
+     "En rabattkod",
+     "Ett spårningsnummer och en spårningslänk",
+     "En bild på jackan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I mejlet finns ett spårningsnummer och en spårningslänk.",
+    "explanationJa": "{追跡|ついせき}{番号|ばんごう}とリンクです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var är paketet nästa dag?",
+    "options": [
+     "I brevlådan",
+     "I butiken",
+     "Hos grannen",
+     "I en sorteringsterminal"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Nästa dag har paketet kommit till en sorteringsterminal i Göteborg.",
+    "explanationJa": "{仕分|しわ}けセンターです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "När är beräknad leverans?",
+    "options": [
+     "På fredag",
+     "På onsdag",
+     "På torsdag",
+     "På måndag"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Beräknad leverans är på torsdag.",
+    "explanationJa": "{木曜日|もくようび}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Leo får en uppdatering på onsdag.",
+    "correct": false,
+    "explanationSv": "Men på onsdag och torsdag kommer ingen uppdatering.",
+    "explanationJa": "{更新|こうしん}はありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Paketet kom en dag senare än beräknat.",
+    "correct": true,
+    "explanationSv": "Beräknad leverans är på torsdag … Klockan tre på fredag: levererad.",
+    "explanationJa": "{予定|よてい}より1{日|にち}{遅|おく}れました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om paket och spårning: om ni spårar era paket, hur ni får aviseringar och hur det känns att vänta.",
+  "discussionPoints": [
+   "Spårar du dina paket? Hur ofta tittar du?",
+   "Får du aviseringar med sms eller i en app?",
+   "Har ett paket någon gång stått still utan uppdatering länge?",
+   "Hur snabbt brukar paket komma i Japan?"
+  ]
+ }
+}

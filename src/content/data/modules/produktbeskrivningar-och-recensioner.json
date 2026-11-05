@@ -1,0 +1,170 @@
+{
+ "id": "m.produktbeskrivningar-och-recensioner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Produktbeskrivningar och recensioner",
+ "titleJa": "{商品|しょうひん}{説明|せつめい}とレビュー",
+ "descriptionSv": "Produktbeskrivningar och recensioner: produktbeskrivning, utförlig, specifikation, stämma med, recension, betyg, omdöme, kundomdöme, recensera, betygsätta, verifierad, trovärdig, överdriven, sponsrad och leva upp till.",
+ "descriptionJa": "{商品|しょうひん}{説明|せつめい}とレビュー：{商品|しょうひん}{説明|せつめい}、{詳|くわ}しい、{仕様|しよう}、{一致|いっち}する、レビュー、{評価|ひょうか}、{感想|かんそう}、{購入者|こうにゅうしゃ}のレビュー、レビューを{書|か}く、{評価|ひょうか}をつける、{確認済|かくにんず}み、{信用|しんよう}できる、{大|おお}げさな、スポンサーつき、{期待|きたい}に{応|こた}える。",
+ "categoryId": "R01-A05-T04",
+ "tags": [
+  "handel",
+  "internet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.soka-efter-en-vara"
+ ],
+ "related": [],
+ "recommendedOrder": 523,
+ "words": [
+  {
+   "senseId": "s.produktbeskrivning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utförlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.specifikation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stämma-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.recension.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omdöme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kundomdöme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.recensera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betygsätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verifierad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trovärdig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överdriven.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sponsrad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.leva-upp-till.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kan man lita på recensionerna?",
+  "paragraphs": [
+   "Aiko vill köpa en ny ryggsäck på nätet. Hon läser produktbeskrivningen. Den är utförlig, och specifikationen säger att väskan väger ett kilo och är vattentät.",
+   "Sedan läser hon recensionerna. Väskan har ett bra betyg: fyra av fem stjärnor. De flesta omdömen är positiva.",
+   "Ett kundomdöme säger: ”Färgen på bilden stämmer med verkligheten.” Ett annat säger: ”Världens bästa väska! Jag har aldrig sett något bättre!” Det låter lite överdrivet.",
+   "Vid vissa recensioner står det ”verifierat köp”. De verkar mer trovärdiga. En recension på en annan sida var sponsrad – företaget hade betalat för den.",
+   "Aiko köper väskan. Efter en vecka kan hon själv recensera den och betygsätta den med stjärnor.",
+   "Hon ger tre stjärnor. Väskan är bra, men den kan inte riktigt leva upp till beskrivningen: den är inte helt vattentät."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad säger specifikationen?",
+    "options": [
+     "Väskan är blå",
+     "Väskan väger ett kilo",
+     "Väskan är billig",
+     "Väskan är stor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Specifikationen säger att väskan väger ett kilo och är vattentät.",
+    "explanationJa": "1キロです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket betyg har väskan?",
+    "options": [
+     "Fem av fem stjärnor",
+     "Tre av fem stjärnor",
+     "Fyra av fem stjärnor",
+     "Två av fem stjärnor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Väskan har ett bra betyg: fyra av fem stjärnor.",
+    "explanationJa": "{星|ほし}4つです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Recensionen på den andra sidan var sponsrad.",
+    "correct": true,
+    "explanationSv": "En recension på en annan sida var sponsrad.",
+    "explanationJa": "スポンサーつきでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vilka recensioner verkar mer trovärdiga?",
+    "options": [
+     "De med ”verifierat köp”",
+     "De som är överdrivna",
+     "De som är sponsrade",
+     "De som är korta"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vid vissa recensioner står det ”verifierat köp”. De verkar mer trovärdiga.",
+    "explanationJa": "「{購入|こうにゅう}{確認済|かくにんず}み」のものです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko är helt nöjd med väskan.",
+    "correct": false,
+    "explanationSv": "Den kan inte riktigt leva upp till beskrivningen: den är inte helt vattentät.",
+    "explanationJa": "{完全|かんぜん}には{満足|まんぞく}していません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om produktbeskrivningar och recensioner: om ni läser kundomdömen, vilka recensioner ni litar på och om ni själva skriver recensioner.",
+  "discussionPoints": [
+   "Läser du kundomdömen innan du köper något?",
+   "Hur ser du om en recension är trovärdig?",
+   "Har du själv recenserat en vara?",
+   "Har en vara någon gång inte levt upp till beskrivningen?"
+  ]
+ }
+}

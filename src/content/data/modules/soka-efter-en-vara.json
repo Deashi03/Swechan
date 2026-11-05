@@ -1,0 +1,170 @@
+{
+ "id": "m.soka-efter-en-vara",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Söka efter en vara",
+ "titleJa": "{商品|しょうひん}を{検索|けんさく}する",
+ "descriptionSv": "Att söka efter en vara på nätet: handla på nätet, online, e-handel, nätbutik, sökfält, sökord, sökresultat, klicka, kategori, filtrera, sortera efter, lägsta pris, produktbild, storleksguide och önskelista.",
+ "descriptionJa": "{商品|しょうひん}を{検索|けんさく}する：ネットで{買|か}う、オンラインで、ネット{通販|つうはん}、オンラインショップ、{検索|けんさく}{欄|らん}、キーワード、{検索|けんさく}{結果|けっか}、クリックする、カテゴリー、{絞|しぼ}り{込|こ}む、〜{順|じゅん}に{並|なら}べる、{最安値|さいやすね}、{商品|しょうひん}{画像|がぞう}、サイズガイド、ほしいものリスト。",
+ "categoryId": "R01-A05-T04",
+ "tags": [
+  "handel",
+  "internet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.fraga-personalen"
+ ],
+ "related": [],
+ "recommendedOrder": 522,
+ "words": [
+  {
+   "senseId": "s.handla-på-nätet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.online.1",
+   "active": true
+  },
+  {
+   "senseId": "s.e-handel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökresultat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klicka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kategori.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filtrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera-efter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägsta-pris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.produktbild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storleksguide.1",
+   "active": true
+  },
+  {
+   "senseId": "s.önskelista.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En ny vinterjacka",
+  "paragraphs": [
+   "Leo behöver en ny vinterjacka. Han vill gärna handla på nätet, så han letar online. E-handeln är stor i Sverige, och många butiker har en nätbutik.",
+   "Han skriver ”vinterjacka” i sökfältet. Det blir 2 000 sökresultat! Han provar ett annat sökord: ”vinterjacka barn”.",
+   "Sedan klickar han på kategorin ”Barn”. Där kan han filtrera på storlek och färg. Han vill ha en blå jacka i storlek 146.",
+   "Han sorterar efter pris och väljer ”lägsta pris först”. En jacka kostar bara 399 kronor. Men på produktbilden ser den mer grå ut än blå.",
+   "Han tittar i storleksguiden. Jackan är liten i storleken, så han behöver 152.",
+   "Leo kan inte bestämma sig. Han lägger jackan på sin önskelista och visar den för Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad skriver Leo först i sökfältet?",
+    "options": [
+     "Vinterjacka barn",
+     "Vinterjacka",
+     "Blå jacka",
+     "Storlek 146"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han skriver ”vinterjacka” i sökfältet.",
+    "explanationJa": "「{冬|ふゆ}のジャケット」です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur många sökresultat blir det först?",
+    "options": [
+     "500",
+     "146",
+     "399",
+     "2 000"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det blir 2 000 sökresultat!",
+    "explanationJa": "2000{件|けん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur sorterar Leo jackorna?",
+    "options": [
+     "Efter färg",
+     "Efter storlek",
+     "Efter märke",
+     "Efter pris"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han sorterar efter pris och väljer ”lägsta pris först”.",
+    "explanationJa": "{値段|ねだん}{順|じゅん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Leo behöver en större storlek än han trodde.",
+    "correct": true,
+    "explanationSv": "Jackan är liten i storleken, så han behöver 152.",
+    "explanationJa": "{大|おお}きいサイズが{必要|ひつよう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo köper jackan direkt.",
+    "correct": false,
+    "explanationSv": "Leo kan inte bestämma sig. Han lägger jackan på sin önskelista.",
+    "explanationJa": "まだ{買|か}いません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att söka efter varor på nätet: vad ni handlar online, hur ni söker och hur ni hittar rätt storlek.",
+  "discussionPoints": [
+   "Vad handlar du helst på nätet?",
+   "Hur gör du för att hitta rätt vara bland många sökresultat?",
+   "Tittar du i storleksguiden när du köper kläder online?",
+   "Vilka nätbutiker är stora i Japan?"
+  ]
+ }
+}

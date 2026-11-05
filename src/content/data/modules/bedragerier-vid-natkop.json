@@ -1,0 +1,171 @@
+{
+ "id": "m.bedragerier-vid-natkop",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bedrägerier vid nätköp",
+ "titleJa": "ネット{通販|つうはん}の{詐欺|さぎ}",
+ "descriptionSv": "Bedrägerier vid nätköp: bedrägeri, lura, bedragare, bluff, bluffsajt, för bra för att vara sant, varningstecken, misstänksam, seriös, oseriös, kontaktuppgift, lita på, förskottsbetalning, personuppgift och nätfiske.",
+ "descriptionJa": "ネット{通販|つうはん}の{詐欺|さぎ}：{詐欺|さぎ}、だます、{詐欺師|さぎし}、いんちき、{詐欺|さぎ}サイト、うますぎる{話|はなし}、{危険|きけん}のサイン、あやしいと{思|おも}う、まともな、いいかげんな、{連絡先|れんらくさき}、{信|しん}じる、{前払|まえばら}い、{個人|こじん}{情報|じょうほう}、フィッシング{詐欺|さぎ}。",
+ "categoryId": "R01-A05-T04",
+ "tags": [
+  "handel",
+  "internet",
+  "säkerhet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.angerratt-och-retur"
+ ],
+ "related": [],
+ "recommendedOrder": 528,
+ "words": [
+  {
+   "senseId": "s.lura.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bedrägeri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bedragare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bluff.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bluffsajt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.för-bra-för-att-vara-sant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningstecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.misstänksam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.seriös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oseriös.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontaktuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lita-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förskottsbetalning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.personuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätfiske.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "För billigt",
+  "paragraphs": [
+   "Erik hittar en nätbutik som säljer dyra hörlurar för bara 299 kronor. Priset är för bra för att vara sant. Är det en bluff?",
+   "Aiko blir misstänksam. ”Det finns flera varningstecken”, säger hon. ”Butiken har inga kontaktuppgifter, och sidan har många fel i språket. Den verkar oseriös.”",
+   "Erik söker på butikens namn. Andra skriver att det är en bluffsajt. Bedragarna tar betalt men skickar aldrig några varor. Det är ett bedrägeri.",
+   "Samma vecka får Aiko ett sms: ”Ditt paket väntar. Betala 19 kronor på länken.” Hon väntar inte på något paket. Det är nätfiske – någon försöker lura henne.",
+   "Ge aldrig dina personuppgifter eller ditt kortnummer på en sida som du inte litar på. Var också försiktig om en säljare vill ha förskottsbetalning.",
+   "Erik köper hörlurarna i en seriös butik i stället. De kostar mer, men han vet att de kommer."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad kostar hörlurarna i nätbutiken?",
+    "options": [
+     "2 999 kronor",
+     "19 kronor",
+     "299 kronor",
+     "Ingenting"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En nätbutik som säljer dyra hörlurar för bara 299 kronor.",
+    "explanationJa": "299クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket varningstecken nämner Aiko?",
+    "options": [
+     "Butiken har inga kontaktuppgifter",
+     "Butiken har för få varor",
+     "Priset är för högt",
+     "Sidan är för snygg"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Butiken har inga kontaktuppgifter.",
+    "explanationJa": "{連絡先|れんらくさき}がないことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Bluffsajten skickar varorna sent.",
+    "correct": false,
+    "explanationSv": "Bedragarna tar betalt men skickar aldrig några varor.",
+    "explanationJa": "{商品|しょうひん}は{送|おく}られてきません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är meddelandet som Aiko får?",
+    "options": [
+     "Nätfiske",
+     "En avisering",
+     "En orderbekräftelse",
+     "En faktura"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är nätfiske – någon försöker lura henne.",
+    "explanationJa": "フィッシング{詐欺|さぎ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik betalar mer men känner sig säker.",
+    "correct": true,
+    "explanationSv": "De kostar mer, men han vet att de kommer.",
+    "explanationJa": "{高|たか}いけれど{確実|かくじつ}に{届|とど}きます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bedrägerier på nätet: hur man ser att en sida är en bluff, vad nätfiske är och hur man skyddar sig.",
+  "discussionPoints": [
+   "Har du fått ett sms eller mejl som var nätfiske?",
+   "Vilka varningstecken tittar du efter när du handlar på nätet?",
+   "Vad gör du om du blir misstänksam?",
+   "Finns det liknande bedrägerier i Japan?"
+  ]
+ }
+}

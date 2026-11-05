@@ -1,0 +1,170 @@
+{
+ "id": "m.varukorg-och-kassa",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Varukorg och kassa",
+ "titleJa": "カートと{会計|かいけい}",
+ "descriptionSv": "Varukorg och kassa på nätet: varukorg, rabattkod, frakt, fraktfri, totalsumma, gå till kassan, skapa ett konto, handla som gäst, fylla i, kryssa i, bekräfta, betalsätt, delbetalning, orderbekräftelse och ordernummer.",
+ "descriptionJa": "カートと{会計|かいけい}：ショッピングカート、{割引|わりびき}コード、{送料|そうりょう}、{送料|そうりょう}{無料|むりょう}、{合計|ごうけい}{金額|きんがく}、{会計|かいけい}に{進|すす}む、アカウントを{作|つく}る、ゲスト{購入|こうにゅう}、{記入|きにゅう}する、チェックを{入|い}れる、{確認|かくにん}する、{支払|しはら}い{方法|ほうほう}、{分割|ぶんかつ}{払|ばら}い、{注文|ちゅうもん}{確認|かくにん}、{注文|ちゅうもん}{番号|ばんごう}。",
+ "categoryId": "R01-A05-T04",
+ "tags": [
+  "handel",
+  "internet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.produktbeskrivningar-och-recensioner"
+ ],
+ "related": [],
+ "recommendedOrder": 524,
+ "words": [
+  {
+   "senseId": "s.varukorg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rabattkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fraktfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.totalsumma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-till-kassan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skapa-ett-konto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handla-som-gäst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fylla-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryssa-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bekräfta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betalsätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delbetalning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.orderbekräftelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordernummer.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Köpet",
+  "paragraphs": [
+   "Leo har bestämt sig för jackan. Han lägger den i varukorgen. Han har också en rabattkod från ett nyhetsbrev, som ger tio procent rabatt.",
+   "Frakten kostar 49 kronor, men det är fraktfritt över 500 kronor. Därför lägger Leo till ett par vantar. Nu blir totalsumman 612 kronor.",
+   "Han klickar för att gå till kassan. Där kan man skapa ett konto eller handla som gäst. Leo vill handla som gäst.",
+   "Han måste fylla i namn, adress och mobilnummer. Sedan ska han kryssa i en ruta och bekräfta att han har läst villkoren.",
+   "Han kan välja betalsätt: kort, Swish, faktura eller delbetalning. Aiko betalar med sitt kort.",
+   "Efter en minut kommer en orderbekräftelse i mejlen med ett ordernummer. ”Spara den”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ger rabattkoden?",
+    "options": [
+     "Fri frakt",
+     "En present",
+     "Halva priset",
+     "Tio procent rabatt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han har också en rabattkod som ger tio procent rabatt.",
+    "explanationJa": "10パーセント{割引|わりびき}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför köper Leo också vantar?",
+    "options": [
+     "För att få fri frakt",
+     "För att det är kallt",
+     "För att Aiko vill det",
+     "För att de är på rea"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är fraktfritt över 500 kronor. Därför lägger Leo till ett par vantar.",
+    "explanationJa": "{送料|そうりょう}{無料|むりょう}にするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo skapar ett konto.",
+    "correct": false,
+    "explanationSv": "Leo vill handla som gäst.",
+    "explanationJa": "ゲストとして{購入|こうにゅう}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vem betalar?",
+    "options": [
+     "Aiko",
+     "Leo",
+     "Erik",
+     "Mia"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko betalar med sitt kort.",
+    "explanationJa": "アイコです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Butiken har fått Leos beställning.",
+    "correct": true,
+    "explanationSv": "Efter en minut kommer en orderbekräftelse i mejlen med ett ordernummer.",
+    "explanationJa": "{注文|ちゅうもん}{確認|かくにん}のメールが{届|とど}きます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att betala på nätet: varukorg, frakt, rabattkoder och vilka betalsätt ni väljer.",
+  "discussionPoints": [
+   "Handlar du som gäst eller skapar du ett konto?",
+   "Köper du något extra för att få fri frakt?",
+   "Vilket betalsätt väljer du oftast på nätet?",
+   "Sparar du orderbekräftelser?"
+  ]
+ }
+}
