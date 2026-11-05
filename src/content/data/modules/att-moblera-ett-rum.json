@@ -1,0 +1,169 @@
+{
+ "id": "m.att-moblera-ett-rum",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Att möblera ett rum",
+ "titleJa": "{部屋|へや}に{家具|かぐ}を{置|お}く",
+ "descriptionSv": "Att möblera och dekorera ett rum: placera möbler, matta, gardiner, tavlor och krukväxter.",
+ "descriptionJa": "{部屋|へや}の{家具|かぐ}の{配置|はいち}と{飾|かざ}りつけ：{家具|かぐ}を{置|お}く、じゅうたん、カーテン、{絵|え}、{鉢植|はちう}え。",
+ "categoryId": "R01-A01-T02",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.farger-och-inredningsstilar"
+ ],
+ "related": [],
+ "recommendedOrder": 214,
+ "words": [
+  {
+   "senseId": "s.möblera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ommöblera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.placera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.golvyta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.matta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gardin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rullgardin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fönsterbräda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.krukväxt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tavla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spegel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prydnadssak.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dekorera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rumsavdelare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.symmetrisk.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Att möblera vardagsrummet",
+  "paragraphs": [
+   "Nu har Aiko och Erik alla möbler. Men hur ska de möblera vardagsrummet?",
+   "Först placerar de soffan mot väggen och bordet framför. ”Då får vi mycket golvyta”, säger Erik. De lägger en stor matta under bordet.",
+   "Vid fönstret hänger de långa gardiner, och i sovrummet sätter de upp en rullgardin. På fönsterbrädan ställer Aiko krukväxter.",
+   "Över soffan hänger de en tavla, och i hallen en stor spegel. På bokhyllan ställer de några prydnadssaker från Japan. Bokhyllan blir också en rumsavdelare mellan vardagsrummet och matplatsen.",
+   "Erik vill att allt ska vara symmetriskt, med två lika lampor på var sida om soffan. Aiko tycker att det är tråkigt.",
+   "Efter en månad ommöblerar de. ”Det är roligt att dekorera”, säger Aiko. ”Ett hem blir aldrig helt färdigt.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var placerar de soffan?",
+    "options": [
+     "Mitt i rummet",
+     "Vid fönstret",
+     "Mot väggen",
+     "I hallen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De placerar soffan mot väggen.",
+    "explanationJa": "ソファを{壁|かべ}ぎわに{置|お}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad ställer Aiko på fönsterbrädan?",
+    "options": [
+     "Krukväxter",
+     "Prydnadssaker",
+     "En spegel",
+     "En lampa"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På fönsterbrädan ställer Aiko krukväxter.",
+    "explanationJa": "{窓台|まどだい}に{鉢植|はちう}えを{置|お}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Bokhyllan blir en rumsavdelare.",
+    "correct": true,
+    "explanationSv": "Bokhyllan blir en rumsavdelare mellan vardagsrummet och matplatsen.",
+    "explanationJa": "{本棚|ほんだな}が{間仕切|まじき}りになります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad vill Erik att allt ska vara?",
+    "options": [
+     "Symmetriskt",
+     "Mönstrat",
+     "Lila",
+     "Lantligt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Erik vill att allt ska vara symmetriskt.",
+    "explanationJa": "エリックは{何|なに}でも{左右対称|さゆうたいしょう}にしたいと{思|おも}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att man kan fortsätta att ändra i ett hem.",
+    "correct": true,
+    "explanationSv": "Hon säger att ett hem aldrig blir helt färdigt.",
+    "explanationJa": "{家|いえ}は{完全|かんぜん}には{完成|かんせい}しないと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att möblera och inreda: var möblerna ska stå, gardiner, mattor och växter, och hur ofta man ommöblerar.",
+  "discussionPoints": [
+   "Hur har du möblerat ditt vardagsrum?",
+   "Ommöblerar du ofta?",
+   "Vilka saker gör ett rum mysigt, tycker du?",
+   "Har du prydnadssaker från ett annat land hemma?"
+  ]
+ }
+}
