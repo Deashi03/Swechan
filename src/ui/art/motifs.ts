@@ -437,6 +437,39 @@ export const MOTIFS: Record<string, Motif> = {
     q(22, 18, 20, 38, 'main', 6, H.red), q(26, 10, 12, 10, 'main', 2, H.grey),
     p('M38 12 H50 L54 18', 'line'), q(26, 30, 12, 12, 'light', 2), p('M29 36 H35', 'line'),
   ] },
+  // ── Hem & boende: Badrum & hygienutrymmen ───────────────────
+  toilet: { parts: [
+    q(30, 8, 20, 18, 'light', 3), q(30, 8, 20, 5, 'accent2', 2),
+    p('M12 28 H50 C50 40 42 46 34 46 H26 C18 46 12 40 12 28 Z', 'light'), q(10, 26, 42, 5, 'accent2', 2.5),
+    p('M24 46 L22 56 H40 L38 46 Z', 'light'), q(18, 56, 26, 3, 'line', 1.5),
+  ] },
+  shower: { parts: [
+    p('M14 56 V14 Q14 8 20 8 H38', 'line'), q(32, 10, 14, 6, 'main', 3, H.grey),
+    p('M34 22 L32 30 M39 22 L39 32 M44 22 L46 30 M36 34 L34 42 M42 34 L44 42', 'line'),
+    c(39, 50, 5, 'accent2'), q(8, 54, 48, 4, 'accent', 2),
+  ] },
+  towel: { parts: [
+    q(10, 10, 44, 6, 'main', 3, H.brown), q(14, 16, 18, 34, 'main', 2), q(32, 16, 18, 28, 'accent', 2),
+    p('M14 44 H32 M32 38 H50', 'line'),
+  ] },
+  toothbrush: { parts: [
+    q(10, 36, 18, 22, 'light', 4), q(10, 36, 18, 22, 'accent2', 4),
+    p('M16 38 L22 8 L26 9 L20 38 Z', 'main'), q(20, 6, 8, 8, 'light', 2),
+    p('M34 30 H52 C55 30 56 33 54 35 L40 52 Q38 54 36 52 Z', 'accent'), q(42, 22, 6, 9, 'main', 1.5),
+  ] },
+  washer: { parts: [
+    q(12, 8, 40, 48, 'light', 4), q(12, 8, 40, 10, 'accent2', 4),
+    c(32, 38, 14, 'main', H.grey), c(32, 38, 10, 'main', H.blue), p('M24 40 C28 36 36 44 40 38', 'line'), c(44, 13, 2, 'light'),
+  ] },
+  faucet: { parts: [
+    q(26, 8, 12, 5, 'accent', 2), q(30, 12, 4, 10, 'main', 1, H.grey),
+    p('M14 22 H44 Q50 22 50 28 V34 H42 V30 H14 Z', 'main', H.grey),
+    p('M46 38 C42 44 44 48 46 48 C48 48 50 44 46 38 Z', 'accent2'), p('M46 52 C44 55 45 57 46 57 C47 57 48 55 46 52 Z', 'accent2'),
+  ] },
+  wrench: { parts: [
+    p('M44 8 C36 8 32 16 34 22 L12 44 C9 47 9 51 12 54 C15 57 19 57 22 54 L44 32 C50 34 58 30 58 22 L50 28 L42 24 L40 16 Z', 'main', H.grey),
+    c(16, 50, 3, 'light'), p('M48 44 L56 52 M44 48 L52 56', 'line'),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -468,6 +501,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-01-02-05': 'lamp', 'SWC-VAR-01-02-06': 'swatch', 'SWC-VAR-01-02-07': 'roomset',
   'SWC-VAR-01-03-01': 'stove', 'SWC-VAR-01-03-02': 'utensils', 'SWC-VAR-01-03-03': 'cups', 'SWC-VAR-01-03-04': 'containers',
   'SWC-VAR-01-03-05': 'counter', 'SWC-VAR-01-03-06': 'setting', 'SWC-VAR-01-03-07': 'fireext',
+  'SWC-VAR-01-04-01': 'toilet', 'SWC-VAR-01-04-02': 'shower', 'SWC-VAR-01-04-03': 'towel', 'SWC-VAR-01-04-04': 'toothbrush',
+  'SWC-VAR-01-04-05': 'washer', 'SWC-VAR-01-04-06': 'faucet', 'SWC-VAR-01-04-07': 'wrench',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };
