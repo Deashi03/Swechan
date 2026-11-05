@@ -1,0 +1,171 @@
+{
+ "id": "m.enkla-bilproblem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Enkla bilproblem",
+ "titleJa": "{車|くるま}のよくあるトラブル",
+ "descriptionSv": "Enkla bilproblem: punktering, punka, reservhjul, domkraft, varningslampa, motorstopp, startkabel, starthjälp, verkstad, mekaniker, service, oljebyte, kylarvätska, bärgningsbil och krock.",
+ "descriptionJa": "{車|くるま}のよくあるトラブル：パンク、パンク（くだけた{言|い}い{方|かた}）、スペアタイヤ、ジャッキ、{警告|けいこく}{灯|とう}、エンスト、ブースターケーブル、{始動|しどう}{補助|ほじょ}、{修理|しゅうり}{工場|こうじょう}、{整備士|せいびし}、{点検|てんけん}、オイル{交換|こうかん}、{冷却水|れいきゃくすい}、レッカー{車|しゃ}、{衝突|しょうとつ}。",
+ "categoryId": "R01-A06-T03",
+ "tags": [
+  "resor",
+  "bil",
+  "problem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.trafikskyltar-i-vardagen"
+ ],
+ "related": [],
+ "recommendedOrder": 627,
+ "words": [
+  {
+   "senseId": "s.punktering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.punka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservhjul.1",
+   "active": true
+  },
+  {
+   "senseId": "s.domkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningslampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motorstopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.startkabel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.starthjälp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verkstad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mekaniker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.service.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oljebyte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kylarvätska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bärgningsbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krock.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dålig vecka för bilen",
+  "paragraphs": [
+   "På måndagen fick Erik punktering på väg till jobbet. Han tog fram domkraften och satte på reservhjulet. – Bara en punka, tänkte han.",
+   "På onsdagen var det tjugo grader kallt. Bilen startade inte. Grannen kom med startkablar och gav honom starthjälp.",
+   "På torsdagen började en varningslampa lysa. Det var kylarvätskan. Erik stannade och lät motorn bli kall. Sedan fick han motorstopp två gånger.",
+   "Han ringde efter en bärgningsbil som körde bilen till verkstaden. Mekanikern sa: – Bilen behöver service och ett oljebyte. Och kylarvätskan läcker.",
+   "På fredagen var bilen klar. När Erik körde hem, krockade en annan bil nästan med honom. Men det blev ingen krock.",
+   "– Nästa vecka tar jag bussen, sa Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hände på måndagen?",
+    "options": [
+     "Bilen startade inte",
+     "Erik fick punktering",
+     "En lampa lyste",
+     "Erik krockade"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På måndagen fick Erik punktering.",
+    "explanationJa": "パンクしました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem hjälpte Erik på onsdagen?",
+    "options": [
+     "Mekanikern",
+     "Hans pappa",
+     "En polis",
+     "Grannen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Grannen kom med startkablar och gav honom starthjälp.",
+    "explanationJa": "{近所|きんじょ}の{人|ひと}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Varningslampan gällde kylarvätskan.",
+    "correct": true,
+    "explanationSv": "Det var kylarvätskan.",
+    "explanationJa": "{冷却水|れいきゃくすい}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad behövde bilen enligt mekanikern?",
+    "options": [
+     "Service och oljebyte",
+     "Nya däck",
+     "Ett nytt batteri",
+     "En ny motor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Bilen behöver service och ett oljebyte.",
+    "explanationJa": "{点検|てんけん}とオイル{交換|こうかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik krockade på fredagen.",
+    "correct": false,
+    "explanationSv": "Men det blev ingen krock.",
+    "explanationJa": "{衝突|しょうとつ}しませんでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om problem med bilar och cyklar, och vad man gör när något går sönder.",
+  "discussionPoints": [
+   "Har du fått punktering någon gång?",
+   "Kan du byta hjul själv?",
+   "Vem ringer du om bilen går sönder?",
+   "Vad är det värsta som har hänt med din bil eller cykel?"
+  ]
+ }
+}

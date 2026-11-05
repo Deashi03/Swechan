@@ -1,0 +1,174 @@
+{
+ "id": "m.bilens-delar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bilens delar",
+ "titleJa": "{車|くるま}の{部品|ぶひん}",
+ "descriptionSv": "Bilens delar: ratt, motor, gaspedal, broms, backspegel, sidospegel, vindruta, vindrutetorkare, strålkastare, blinkers, baksäte, säkerhetsbälte, bagagelucka, registreringsskylt, motorhuv och instrumentbräda.",
+ "descriptionJa": "{車|くるま}の{部品|ぶひん}：ハンドル、エンジン、アクセル、ブレーキ、バックミラー、サイドミラー、フロントガラス、ワイパー、ヘッドライト、ウインカー、{後部|こうぶ}{座席|ざせき}、シートベルト、トランク、ナンバープレート、ボンネット、ダッシュボード。",
+ "categoryId": "R01-A06-T03",
+ "tags": [
+  "resor",
+  "bil"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.beskriva-en-fardvag"
+ ],
+ "related": [],
+ "recommendedOrder": 621,
+ "words": [
+  {
+   "senseId": "s.ratt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gaspedal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.broms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.backspegel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sidospegel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindruta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindrutetorkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strålkastare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blinkers.1",
+   "active": true
+  },
+  {
+   "senseId": "s.baksäte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetsbälte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagagelucka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.registreringsskylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motorhuv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.instrumentbräda.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Erik köper en gammal bil",
+  "paragraphs": [
+   "Erik ska köpa en gammal bil. Hans pappa följer med och tittar på den.",
+   "Först går de runt bilen. En sidospegel är lite trasig, och det finns en liten skada på vindrutan. Registreringsskylten sitter fast.",
+   "Pappa öppnar motorhuven. – Motorn ser bra ut, säger han.",
+   "Sedan sätter sig Erik bakom ratten. Han tar på sig säkerhetsbältet och ställer in backspegeln. Han testar strålkastarna, blinkers och vindrutetorkarna. Allt fungerar.",
+   "På instrumentbrädan lyser inga röda lampor. Erik kör bilen en bit för att testa den. Gaspedalen och bromsen känns bra.",
+   "Till sist öppnar de bagageluckan. Den är stor, och baksätet är rent. – Jag tar den! säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem följer med Erik?",
+    "options": [
+     "Hans mamma",
+     "En vän",
+     "Ingen",
+     "Hans pappa"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hans pappa följer med.",
+    "explanationJa": "お{父|とう}さんです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är trasigt på bilen?",
+    "options": [
+     "Motorn",
+     "Bromsen",
+     "En sidospegel",
+     "Ratten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En sidospegel är lite trasig.",
+    "explanationJa": "サイドミラーです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det lyser en röd lampa på instrumentbrädan.",
+    "correct": false,
+    "explanationSv": "På instrumentbrädan lyser inga röda lampor.",
+    "explanationJa": "ついていません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Erik innan han testar lamporna?",
+    "options": [
+     "Öppnar bagageluckan",
+     "Tvättar bilen",
+     "Ringer säljaren",
+     "Tar på sig säkerhetsbältet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han tar på sig säkerhetsbältet och ställer in backspegeln.",
+    "explanationJa": "シートベルトをします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik bestämmer sig för att köpa bilen.",
+    "correct": true,
+    "explanationSv": "Jag tar den! säger Erik.",
+    "explanationJa": "{買|か}うことにしました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bilar: vilka delar ni känner till, och vad man ska titta på när man köper en bil.",
+  "discussionPoints": [
+   "Har du eller din familj en bil?",
+   "Vilka delar på bilen kan du nämna på svenska?",
+   "Var sitter ratten i bilar i Japan?",
+   "Vad ska man titta på när man köper en gammal bil?"
+  ]
+ }
+}

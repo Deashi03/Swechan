@@ -1,0 +1,174 @@
+{
+ "id": "m.starta-och-kora",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Starta och köra",
+ "titleJa": "{発進|はっしん}と{運転|うんてん}",
+ "descriptionSv": "Starta och köra: körkort, förare, spänna fast sig, starta motorn, handbroms, gasa, bromsa, backa, körfält, byta fil, köra om, hastighetsgräns, motorväg, landsväg, manuell växellåda och automatväxlad.",
+ "descriptionJa": "{発進|はっしん}と{運転|うんてん}：{運転免許|うんてんめんきょ}、{運転手|うんてんしゅ}、シートベルトを{締|し}める、エンジンをかける、ハンドブレーキ、アクセルを{踏|ふ}む、ブレーキをかける、バックする、{車線|しゃせん}、{車線|しゃせん}を{変|か}える、{追|お}い{越|こ}す、{制限速度|せいげんそくど}、{高速道路|こうそくどうろ}、{一般道|いっぱんどう}、マニュアル、オートマの。",
+ "categoryId": "R01-A06-T03",
+ "tags": [
+  "resor",
+  "bil"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bilens-delar"
+ ],
+ "related": [],
+ "recommendedOrder": 622,
+ "words": [
+  {
+   "senseId": "s.körkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spänna-fast-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.starta-motorn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handbroms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gasa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.backa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.körfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-fil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köra-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighetsgräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motorväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landsväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.automatväxlad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.manuell-växellåda.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Första lektionen",
+  "paragraphs": [
+   "Aiko ska ta körkort. I dag har hon sin första lektion med en lärare. Bilen är automatväxlad, för Aiko vill inte lära sig manuell växellåda.",
+   "Aiko spänner fast sig först. – Se efter att handbromsen är på, säger läraren. Nu kan du starta motorn.",
+   "Aiko backar ut från gården. Sedan gasar hon försiktigt. Vid ett rött ljus bromsar hon mjukt.",
+   "Efter en stund kör de ut på landsvägen. Hastighetsgränsen är 70. En gammal bil kör långsamt framför dem. – Ska jag köra om? frågar Aiko. – Inte här, säger läraren.",
+   "Till sist kör de en kort bit på motorvägen. Hon håller sig i högra körfältet. Aiko lär sig att byta fil och att alltid titta i backspegeln först.",
+   "– Bra, säger läraren. Du blir en bra förare. Vi ses på torsdag."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför har bilen ingen manuell växellåda?",
+    "options": [
+     "Aiko vill inte lära sig det",
+     "Den är för dyr",
+     "Läraren tycker inte om det",
+     "Den är trasig"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko vill inte lära sig manuell växellåda.",
+    "explanationJa": "アイコが{学|まな}びたくないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko först?",
+    "options": [
+     "Startar motorn",
+     "Spänner fast sig",
+     "Gasar",
+     "Backar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko spänner fast sig först.",
+    "explanationJa": "シートベルトを{締|し}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko kör om den gamla bilen.",
+    "correct": false,
+    "explanationSv": "Ska jag köra om? … Inte här.",
+    "explanationJa": "{追|お}い{越|こ}しません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad lär sig Aiko på motorvägen?",
+    "options": [
+     "Att parkera",
+     "Att backa",
+     "Att tanka",
+     "Att byta fil"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko lär sig att byta fil.",
+    "explanationJa": "{車線|しゃせん}の{変更|へんこう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Läraren är nöjd med Aiko.",
+    "correct": true,
+    "explanationSv": "Bra … Du blir en bra förare.",
+    "explanationJa": "{満足|まんぞく}しています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att köra bil och ta körkort, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Har du körkort, eller vill du ta det?",
+   "Är det dyrt att ta körkort i Japan?",
+   "Kör du hellre på motorväg eller landsväg?",
+   "Är det svårt att köra bil med manuell växellåda?"
+  ]
+ }
+}

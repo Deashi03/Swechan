@@ -1,0 +1,171 @@
+{
+ "id": "m.trafikskyltar-i-vardagen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Trafikskyltar i vardagen",
+ "titleJa": "{身近|みぢか}な{交通|こうつう}{標識|ひょうしき}",
+ "descriptionSv": "Trafikskyltar i vardagen: trafikskylt, stoppskylt, varningsskylt, förbudsskylt, påbudsskylt, enkelriktad, återvändsgata, infart förbjuden, parkering förbjuden, stannande förbjudet, huvudled, vägarbete, gångfartsområde, vägvisare och motortrafikled.",
+ "descriptionJa": "{身近|みぢか}な{交通|こうつう}{標識|ひょうしき}：{交通|こうつう}{標識|ひょうしき}、{一時停止|いちじていし}の{標識|ひょうしき}、{警戒|けいかい}{標識|ひょうしき}、{禁止|きんし}{標識|ひょうしき}、{指示|しじ}{標識|ひょうしき}、{一方通行|いっぽうつうこう}の、{行|い}き{止|ど}まり、{進入禁止|しんにゅうきんし}、{駐車禁止|ちゅうしゃきんし}、{駐停車禁止|ちゅうていしゃきんし}、{優先道路|ゆうせんどうろ}、{道路|どうろ}{工事|こうじ}、{歩行者|ほこうしゃ}{優先|ゆうせん}{区域|くいき}、{案内|あんない}{標識|ひょうしき}、{自動車|じどうしゃ}{専用|せんよう}{道路|どうろ}。",
+ "categoryId": "R01-A06-T03",
+ "tags": [
+  "resor",
+  "bil",
+  "trafik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.dack-och-vaglag"
+ ],
+ "related": [],
+ "recommendedOrder": 626,
+ "words": [
+  {
+   "senseId": "s.trafikskylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stoppskylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningsskylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbudsskylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påbudsskylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enkelriktad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvändsgata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.infart-förbjuden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parkering-förbjuden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stannande-förbjudet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvudled.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägarbete.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångfartsområde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägvisare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motortrafikled.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Provet",
+  "paragraphs": [
+   "Aiko övar inför provet för körkortet. Hennes vän Leo frågar om trafikskyltar.",
+   "– Vad betyder en röd skylt med STOP? – Stoppskylt. Där måste man stanna helt, säger Aiko.",
+   "– Och en gul triangel med röd kant? – Det är en varningsskylt. En rund skylt med röd kant är en förbudsskylt, och en blå rund skylt är en påbudsskylt.",
+   "– Bra! Vad gör du om det står infart förbjuden? – Då kan gatan vara enkelriktad. Jag får inte köra in. Och om det är en återvändsgata, måste jag vända.",
+   "– Vad är skillnaden mellan parkering förbjuden och stannande förbjudet? – Vid stannande förbjudet får man inte ens stanna en kort stund.",
+   "– Sista frågan: du kör på en huvudled och ser vägarbete och en vägvisare mot en motortrafikled. Sedan kommer ett gångfartsområde. Hur fort får du köra där? – Bara lika fort som man går! säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem frågar Aiko om skyltarna?",
+    "options": [
+     "Hennes vän Leo",
+     "Hennes lärare",
+     "Hennes mamma",
+     "En polis"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hennes vän Leo frågar om trafikskyltar.",
+    "explanationJa": "{弟|おとうと}のレオです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ser en påbudsskylt ut?",
+    "options": [
+     "Blå och rund",
+     "Gul triangel",
+     "Röd med STOP",
+     "Rund med röd kant"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En blå rund skylt är en påbudsskylt.",
+    "explanationJa": "{青|あお}くて{丸|まる}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Vid stannande förbjudet får man stanna en kort stund.",
+    "correct": false,
+    "explanationSv": "Vid stannande förbjudet får man inte ens stanna en kort stund.",
+    "explanationJa": "{少|すこ}しの{間|あいだ}も{止|と}まれません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad måste man göra i en återvändsgata?",
+    "options": [
+     "Stanna",
+     "Köra fort",
+     "Vända",
+     "Parkera"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… om det är en återvändsgata, måste jag vända.",
+    "explanationJa": "{引|ひ}き{返|かえ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko kan svara på alla frågor.",
+    "correct": true,
+    "explanationSv": "Bra! … Bara lika fort som man går! säger Aiko.",
+    "explanationJa": "{全部|ぜんぶ}{答|こた}えられます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om trafikskyltar och om skillnader mellan skyltar i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vilken färg har stoppskylten i Japan?",
+   "Vilken trafikskylt tycker du är svårast att förstå?",
+   "Finns det många enkelriktade gator där du bor?",
+   "Vad finns det för varningsskyltar i Japan?"
+  ]
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "id": "m.tankning-och-laddning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tankning och laddning",
+ "titleJa": "{給油|きゅうゆ}と{充電|じゅうでん}",
+ "descriptionSv": "Tankning och laddning: tanka, bensin, diesel, bränsle, bensinstation, mack, pump, tanklock, tanka fullt, spolarvätska, elbil, laddstolpe, laddkabel, snabbladdare, räckvidd och laddhybrid.",
+ "descriptionJa": "{給油|きゅうゆ}と{充電|じゅうでん}：{給油|きゅうゆ}する、ガソリン、{軽油|けいゆ}、{燃料|ねんりょう}、ガソリンスタンド、スタンド、{給油機|きゅうゆき}、{給油口|きゅうゆこう}のふた、{満|まん}タンにする、ウォッシャー{液|えき}、{電気自動車|でんきじどうしゃ}、{充電|じゅうでん}スタンド、{充電|じゅうでん}ケーブル、{急速|きゅうそく}{充電器|じゅうでんき}、{航続距離|こうぞくきょり}、プラグインハイブリッド{車|しゃ}。",
+ "categoryId": "R01-A06-T03",
+ "tags": [
+  "resor",
+  "bil"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.parkera-och-betala"
+ ],
+ "related": [],
+ "recommendedOrder": 624,
+ "words": [
+  {
+   "senseId": "s.tanka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bensin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diesel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bensinstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tanklock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tanka-fullt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spolarvätska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddstolpe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddkabel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snabbladdare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räckvidd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddhybrid.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "På väg norrut",
+  "paragraphs": [
+   "Leos familj ska köra till en stuga i norra Sverige. Pappa kör den gamla bilen, och mamma kör deras nya elbil.",
+   "Efter två timmar stannar pappa på en bensinstation. Han ställer sig vid en pump och öppnar tanklocket. Bilen går på diesel, inte bensin. Han tankar fullt och fyller på spolarvätska. Sedan köper han kaffe på macken.",
+   "Mamma kör till en snabbladdare. Hon tar fram laddkabeln och kopplar in bilen. Det tar fyrtio minuter.",
+   "– Elbilens räckvidd är kortare på vintern, säger hon. Det är kallt nu.",
+   "– Nästa gång kanske vi ska köpa en laddhybrid, säger pappa. Då kan vi använda både el och bränsle.",
+   "Vid stugan finns en laddstolpe. Där kan mamma ladda bilen över natten."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad går pappas bil på?",
+    "options": [
+     "Bensin",
+     "Diesel",
+     "El",
+     "Gas"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Bilen går på diesel, inte bensin.",
+    "explanationJa": "ディーゼルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör pappa vid pumpen?",
+    "options": [
+     "Laddar bilen",
+     "Köper en ny bil",
+     "Byter en lampa",
+     "Tankar fullt och fyller på spolarvätska"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han tankar fullt och fyller på spolarvätska.",
+    "explanationJa": "{満|まん}タンにしてウォッシャー{液|えき}を{補充|ほじゅう}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur lång tid tar det att ladda vid snabbladdaren?",
+    "options": [
+     "Två timmar",
+     "Tio minuter",
+     "Fyrtio minuter",
+     "En hel natt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det tar fyrtio minuter.",
+    "explanationJa": "40{分|ぷん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Räckvidden är längre på vintern.",
+    "correct": false,
+    "explanationSv": "Elbilens räckvidd är kortare på vintern.",
+    "explanationJa": "{冬|ふゆ}は{短|みじか}くなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mamma kan ladda bilen vid stugan.",
+    "correct": true,
+    "explanationSv": "Vid stugan finns en laddstolpe.",
+    "explanationJa": "{充電|じゅうでん}スタンドがあります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bensin, diesel och elbilar.",
+  "discussionPoints": [
+   "Är elbilar vanliga i Japan?",
+   "Vad kostar bensin i Japan?",
+   "Skulle du vilja ha en elbil? Varför?",
+   "Vad köper man på en bensinstation i Japan?"
+  ]
+ }
+}
