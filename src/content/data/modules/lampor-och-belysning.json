@@ -1,0 +1,169 @@
+{
+ "id": "m.lampor-och-belysning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Lampor och belysning",
+ "titleJa": "ランプと{照明|しょうめい}",
+ "descriptionSv": "Lampor och ljus hemma: taklampa, golvlampa, tända och släcka, stearinljus och mysbelysning.",
+ "descriptionJa": "{家|いえ}の{明|あか}かり：{天井|てんじょう}の{照明|しょうめい}、フロアランプ、つける・{消|け}す、ろうそく、くつろぎの{照明|しょうめい}。",
+ "categoryId": "R01-A01-T02",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.forvaring-och-hyllor"
+ ],
+ "related": [],
+ "recommendedOrder": 212,
+ "words": [
+  {
+   "senseId": "s.belysning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tända.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släcka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.strömbrytare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.taklampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.golvlampa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bordslampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lampskärm.1",
+   "active": false
+  },
+  {
+   "senseId": "s.glödlampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sladd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dimmer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lysa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stearinljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljusstake.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mysbelysning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ljus i mörkret",
+  "paragraphs": [
+   "I november blir det mörkt redan klockan fyra i Sverige. Därför är belysningen hemma mycket viktig.",
+   "I det nya huset har vardagsrummet bara en taklampa. ”Den lyser för starkt. Det är inte mysigt”, säger Aiko.",
+   "De köper en golvlampa till hörnan och en bordslampa med en lampskärm av papper. De sätter också in en dimmer, så att de kan ha svagt ljus på kvällen.",
+   "Lampan i hallen fungerar inte. Erik byter glödlampan, men den lyser ändå inte. Till slut ser han att sladden inte sitter i väggen.",
+   "På kvällen tänder Aiko stearinljus i en ljusstake på matbordet. ”Mysbelysning”, säger Erik. ”Det har alla svenskar på vintern.”",
+   "När de går och lägger sig släcker de alla lampor. Strömbrytaren sitter bredvid dörren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför är belysningen viktig i Sverige på vintern?",
+    "options": [
+     "Lampor är billiga.",
+     "Det blir mörkt redan klockan fyra.",
+     "Det är varmt ute.",
+     "Solen lyser hela natten."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I november blir det mörkt redan klockan fyra.",
+    "explanationJa": "11{月|がつ}は4{時|じ}にはもう{暗|くら}くなるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tycker Aiko om taklampan?",
+    "options": [
+     "Den är för svag.",
+     "Den är trasig.",
+     "Den är för dyr.",
+     "Den lyser för starkt."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko säger att taklampan lyser för starkt.",
+    "explanationJa": "{明|あか}るすぎると{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Lampan i hallen fungerade inte för att glödlampan var trasig.",
+    "correct": false,
+    "explanationSv": "Sladden satt inte i väggen.",
+    "explanationJa": "コードがコンセントに{入|はい}っていなかったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var tänder Aiko stearinljus?",
+    "options": [
+     "I en ljusstake på matbordet",
+     "I hallen",
+     "På balkongen",
+     "I sovrummet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon tänder stearinljus i en ljusstake på matbordet.",
+    "explanationJa": "ダイニングテーブルのろうそく{立|た}てに{灯|とも}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mysbelysning är vanligt i Sverige på vintern.",
+    "correct": true,
+    "explanationSv": "Erik säger att alla svenskar har det på vintern.",
+    "explanationJa": "{冬|ふゆ}にはみんなくつろぎの{照明|しょうめい}を{使|つか}うと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ljus och lampor hemma: vilka lampor du har, mörka svenska vintrar, stearinljus och vad som är mysig belysning.",
+  "discussionPoints": [
+   "Vilka lampor har du hemma?",
+   "Hur ser belysningen ut i ett vanligt japanskt hem?",
+   "Tänder du stearinljus? När?",
+   "Hur påverkar mörkret på vintern dig?"
+  ]
+ }
+}

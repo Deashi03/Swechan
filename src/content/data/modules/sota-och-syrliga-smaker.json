@@ -1,0 +1,169 @@
+{
+ "id": "m.sota-och-syrliga-smaker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Söta och syrliga smaker",
+ "titleJa": "{甘|あま}い{味|あじ}と{甘酸|あまず}っぱい{味|あじ}",
+ "descriptionSv": "Söta och syrliga smaker: godis, choklad, lakrits, sorbet och mindre socker.",
+ "descriptionJa": "{甘|あま}い{味|あじ}と{甘酸|あまず}っぱい{味|あじ}：お{菓子|かし}、チョコレート、リコリス、シャーベット、{砂糖|さとう}を{減|へ}らす{工夫|くふう}。",
+ "categoryId": "R01-A02-T04",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.grundsmaker-och-dofter"
+ ],
+ "related": [],
+ "recommendedOrder": 120,
+ "words": [
+  {
+   "senseId": "s.syrlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sötsur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sockrig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.karamell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lördagsgodis.1",
+   "active": false
+  },
+  {
+   "senseId": "s.choklad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lakrits.1",
+   "active": true
+  },
+  {
+   "senseId": "s.salmiak.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rabarber.1",
+   "active": false
+  },
+  {
+   "senseId": "s.marmelad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sorbet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sockerfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sötningsmedel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sötsak.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lördagsgodis",
+  "paragraphs": [
+   "I Sverige äter många barn bara godis på lördagar. Det kallas lördagsgodis. Erik har gjort det sedan han var liten.",
+   "En lördag går han och Aiko till godisaffären. Där finns hundratals sorters godis: choklad, karameller, sura och söta saker. ”Det här är som en dröm”, säger Aiko.",
+   "Erik väljer lakrits och salmiak. Aiko provar en bit salmiak. ”Usch! Det är så salt!” säger hon. ”De flesta utlänningar tycker inte om salmiak”, skrattar Erik.",
+   "Aiko tycker bättre om syrliga smaker. Hon väljer sötsura godisar som smakar citron. ”Den här chokladen är för sockrig för mig”, säger hon.",
+   "Hemma gör de en sorbet av rabarber från trädgården. Den är både söt och syrlig. Till frukost nästa dag äter Aiko rostat bröd med marmelad.",
+   "Eriks pappa har en sjukdom och får inte äta mycket socker. Han äter sockerfria sötsaker med sötningsmedel. ”De smakar nästan likadant”, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är lördagsgodis?",
+    "options": [
+     "Godis som är gratis på lördagar",
+     "En sorts choklad",
+     "En affär som bara är öppen på lördagar",
+     "Godis som många barn äter bara på lördagar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Många svenska barn äter bara godis på lördagar.",
+    "explanationJa": "{多|おお}くの{子|こ}どもが{土曜日|どようび}だけ{食|た}べるお{菓子|かし}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tycker Aiko om salmiak?",
+    "options": [
+     "Hon tycker att den är för söt.",
+     "Hon tycker att den är för salt.",
+     "Hon tycker mycket om den.",
+     "Hon har aldrig smakat den."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko säger: ”Usch! Det är så salt!”",
+    "explanationJa": "とてもしょっぱいと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko tycker bäst om syrliga smaker.",
+    "correct": true,
+    "explanationSv": "Texten säger att Aiko tycker bättre om syrliga smaker.",
+    "explanationJa": "アイコは{甘酸|あまず}っぱい{味|あじ}のほうが{好|す}きです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Av vad gör de sorbeten?",
+    "options": [
+     "Choklad",
+     "Apelsin",
+     "Lakrits",
+     "Rabarber"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "De gör en sorbet av rabarber från trädgården.",
+    "explanationJa": "{庭|にわ}のルバーブでシャーベットを{作|つく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Eriks pappa äter inga söta saker alls.",
+    "correct": false,
+    "explanationSv": "Han äter sockerfria sötsaker med sötningsmedel.",
+    "explanationJa": "{甘味料|かんみりょう}を{使|つか}ったシュガーフリーのお{菓子|かし}を{食|た}べています。"
+   }
+  ],
+  "factSources": [
+   "Lördagsgodis rekommenderades av Medicinalstyrelsen 1959 efter Vipeholmsstudien om socker och karies."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om söta och syrliga smaker: godis i Sverige och Japan, lördagsgodis, lakrits och salmiak, och hur mycket socker man äter.",
+  "discussionPoints": [
+   "Vilket godis tycker du bäst om?",
+   "Har du smakat salmiak eller lakrits? Vad tyckte du?",
+   "Vad tycker du om idén med lördagsgodis?",
+   "Vilka söta saker är typiska för Japan?"
+  ]
+ }
+}

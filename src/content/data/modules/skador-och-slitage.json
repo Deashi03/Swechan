@@ -1,0 +1,169 @@
+{
+ "id": "m.skador-och-slitage",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Skador och slitage",
+ "titleJa": "{損傷|そんしょう}と{摩耗|まもう}",
+ "descriptionSv": "Skador och slitage: gå sönder, rost, blekna, flagna, buckla, garanti och att reklamera.",
+ "descriptionJa": "{損傷|そんしょう}と{摩耗|まもう}：{壊|こわ}れる、さび、{色|いろ}あせ、はがれ、へこみ、{保証|ほしょう}、{不良品|ふりょうひん}の{申|もう}し{出|で}。",
+ "categoryId": "R01-A01-T05",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sma-reparationer-hemma"
+ ],
+ "related": [],
+ "recommendedOrder": 234,
+ "words": [
+  {
+   "senseId": "s.slitage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gå-sönder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rosta.2",
+   "active": false
+  },
+  {
+   "senseId": "s.blekna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flagna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.buckla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nött.1",
+   "active": false
+  },
+  {
+   "senseId": "s.livslängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garanti.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reklamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sliten.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När saker går sönder",
+  "paragraphs": [
+   "Radhuset är trettio år gammalt. Överallt finns det slitage. Färgen flagnar på fasaden, och gardinerna har bleknat i solen. I golvet finns en stor skada.",
+   "Soffan som de fick av Eriks föräldrar är nött och sliten. På den gamla cykeln är det rost. ”Den har rostat i regnet”, säger Erik.",
+   "Kylskåpet har en buckla, men det fungerar. ”Ett kylskåp har en livslängd på femton år”, säger Erik. ”Det här är tjugo år gammalt.”",
+   "Den nya tvättmaskinen går sönder efter en månad. Som tur är har den två års garanti. Aiko reklamerar den i affären, och de får en ny.",
+   "Ett paket med en lampa kommer skadat. Glaset har gått sönder. De byter ut lampan mot en ny.",
+   "”Allt går sönder till slut”, säger Erik. ”Men det mesta kan man laga eller byta ut.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har hänt med gardinerna?",
+    "options": [
+     "De har rostat.",
+     "De har flagnat.",
+     "De har gått sönder.",
+     "De har bleknat i solen."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Gardinerna har bleknat i solen.",
+    "explanationJa": "カーテンは{日光|にっこう}で{色|いろ}あせました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är det rost på cykeln?",
+    "options": [
+     "Den är ny.",
+     "Den har en buckla.",
+     "Erik har målat den.",
+     "Den har stått i regnet."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik säger att den har rostat i regnet.",
+    "explanationJa": "{雨|あめ}でさびたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Kylskåpet är äldre än livslängden.",
+    "correct": true,
+    "explanationSv": "Kylskåpet är tjugo år gammalt, men livslängden är femton år.",
+    "explanationJa": "{冷蔵庫|れいぞうこ}は{寿命|じゅみょう}より{古|ふる}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför får de en ny tvättmaskin?",
+    "options": [
+     "Den har garanti, och Aiko reklamerar den.",
+     "De köper en ny själva.",
+     "Grannen ger dem en.",
+     "Erik lagar den gamla."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den har två års garanti, och Aiko reklamerar den.",
+    "explanationJa": "{保証|ほしょう}があるので、{店|みせ}に{申|もう}し{出|で}て{交換|こうかん}してもらいます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att det mesta går att laga eller byta ut.",
+    "correct": true,
+    "explanationSv": "Han säger: ”Det mesta kan man laga eller byta ut.”",
+    "explanationJa": "ほとんどは{修理|しゅうり}か{交換|こうかん}ができると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker som blir slitna eller går sönder: slitage, garanti och reklamation, och om man lagar saker eller köper nya.",
+  "discussionPoints": [
+   "Vad har gått sönder hemma hos dig senast?",
+   "Har du reklamerat något? Hur gick det?",
+   "Lagar du gamla saker eller köper du hellre nya?",
+   "Hur länge tycker du att en tvättmaskin borde hålla?"
+  ]
+ }
+}

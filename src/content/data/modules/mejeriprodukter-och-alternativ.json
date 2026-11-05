@@ -1,0 +1,173 @@
+{
+ "id": "m.mejeriprodukter-och-alternativ",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Mejeriprodukter och alternativ",
+ "titleJa": "{乳製品|にゅうせいひん}とその{代替品|だいたいひん}",
+ "descriptionSv": "Mjölk, grädde, yoghurt och ost – och alternativ för den som inte tål laktos.",
+ "descriptionJa": "{牛乳|ぎゅうにゅう}、{生|なま}クリーム、ヨーグルト、チーズ、そして{乳糖|にゅうとう}が{合|あ}わない{人|ひと}のための{代替品|だいたいひん}。",
+ "categoryId": "R01-A02-T02",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vegetariska-proteinkallor"
+ ],
+ "related": [],
+ "recommendedOrder": 111,
+ "words": [
+  {
+   "senseId": "s.mjölka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mejeri.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fetthalt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lättmjölk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellanmjölk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grädde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gräddfil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filmjölk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yoghurt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvarg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.keso.1",
+   "active": false
+  },
+  {
+   "senseId": "s.margarin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.laktos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tåla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laktosfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.havredryck.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mjölk på många sätt",
+  "paragraphs": [
+   "I Sverige dricker man mycket mjölk. Bönderna mjölkar korna, och mjölken åker till ett mejeri. Där gör man ost, smör, grädde och mycket mer.",
+   "I affären står Aiko och tittar på all mjölk. ”Varför finns det så många sorter?” frågar hon. ”Det är olika fetthalt”, säger Erik. ”Lättmjölk har nästan inget fett. Mellanmjölk har lite mer.”",
+   "Bredvid står filmjölk och yoghurt. ”Filmjölk äter man till frukost, med flingor eller müsli”, säger Erik. Aiko tar också kvarg och keso.",
+   "Aikos vän Yuki tål inte laktos. ”Många i Japan tål inte laktos”, säger Aiko. ”Men här finns laktosfri mjölk och havredryck.”",
+   "Till middag gör Erik en sås med grädde. Till potatisen har de gräddfil med gräslök. Yuki får en sås utan grädde och margarin i stället för smör.",
+   "”I Sverige är mjölk nästan i all mat”, säger Yuki. ”Ja, men nu finns det alltid något annat att välja”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart åker mjölken från gården?",
+    "options": [
+     "Till en slaktare",
+     "Till ett mejeri",
+     "Till ett skafferi",
+     "Till Japan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mjölken åker till ett mejeri, där man gör ost och smör.",
+    "explanationJa": "{乳製品工場|にゅうせいひんこうじょう}へ{運|はこ}ばれます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför finns det många sorters mjölk i affären?",
+    "options": [
+     "De kommer från olika länder.",
+     "De har olika fetthalt.",
+     "De har olika färg.",
+     "De är olika gamla."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik säger att det är olika fetthalt.",
+    "explanationJa": "{脂肪分|しぼうぶん}が{違|ちが}うからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Lättmjölk har mer fett än mellanmjölk.",
+    "correct": false,
+    "explanationSv": "Lättmjölk har nästan inget fett. Mellanmjölk har lite mer.",
+    "explanationJa": "{低脂肪乳|ていしぼうにゅう}は{脂肪|しぼう}がほとんどありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Yuki ”tål inte laktos”. Vad betyder det?",
+    "options": [
+     "Hon mår dåligt om hon äter laktos.",
+     "Hon tycker inte om smaken.",
+     "Hon vet inte vad laktos är.",
+     "Hon vill äta mer laktos."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Att inte tåla något betyder att man mår dåligt av det.",
+    "explanationJa": "{乳糖|にゅうとう}をとると{体|からだ}の{調子|ちょうし}が{悪|わる}くなるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yuki kan äta middag med de andra.",
+    "correct": true,
+    "explanationSv": "Hon får en sås utan grädde och margarin i stället för smör.",
+    "explanationJa": "{生|なま}クリームなしのソースとマーガリンで、みんなと{食事|しょくじ}ができます。"
+   }
+  ],
+  "factSources": [
+   "Svensk mjölkmärkning (lättmjölk under 0,5 %, mellanmjölk 1,5 %); havredryck utvecklades i Sverige; laktosintolerans är vanlig i Östasien (allmän kunskap)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om mjölk och mejeriprodukter: vad du äter och dricker, skillnader mellan Sverige och Japan, och alternativ för den som inte tål laktos.",
+  "discussionPoints": [
+   "Dricker du mjölk? Vilken sort?",
+   "Har du smakat filmjölk eller kvarg? Vad tyckte du?",
+   "Varför tål många i Asien inte laktos, tror du?",
+   "Vad använder du i stället för mjölk eller grädde?"
+  ]
+ }
+}

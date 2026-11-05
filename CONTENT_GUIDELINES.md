@@ -64,6 +64,15 @@ npm run content:report                         # helhetsbild
 
 Utkast i `content/drafts/` ingår aldrig i appen. Status `reviewed` på en betydelse kräver `reviewer` och `date` och får bara sättas efter verklig mänsklig granskning; verktygen och AI sätter den aldrig.
 
+## Produktion i stor skala (0.5)
+
+- **Ett överämne i taget.** Gör klart en ämnesgrupp (alla sju moduler) innan nästa påbörjas.
+- **Rätt ord i rätt ämne.** Sök i katalogen (`planning/catalog/swechan-catalog.v1.json`) efter titlar som passar ordet bättre innan det görs till målord; spara t.ex. ekonomiord till Samhälle → Privatekonomi och kroppsord till Människan.
+- **Sammansättningar** av två kända ord godtas av ordförrådskontrollen (`fläskfilé`, `vardagsmat`), men målordet självt räknas bara om det står i sin egen form i lästexten. Partikelverb måste stå sammanhängande ("hoppa över", inte "hoppar Erik över"); passiv form och delade partiklar känns inte igen.
+- **Pluraliska ord** (*sopor*, *jeans* m.fl.): använd singularlemma om det finns, annars en post utan böjning (`kind: none`) och bara grundformen i texterna. Reflexiva verb (*ta på sig*) har ingen `particle`.
+- **Bild:** varje ny modul får ett motiv i `src/ui/art/motifs.ts` (stil "Platt"). Granska med `npm run art:sheet`.
+- **Japansk glosa:** undvik att lägga ett annat ords huvudglosa inom parentes (t.ex. 「靴屋（修理）」) – parentesdelen blir en egen sökterm i ordboken.
+
 ## Process för en ny modul
 
 1. **Välj ämne** och placera det i kategoriträdet (lägg till kategorier vid behov; `parentId`, `order`, svenska + japanska namn).

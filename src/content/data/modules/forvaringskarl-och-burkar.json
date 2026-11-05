@@ -1,0 +1,170 @@
+{
+ "id": "m.forvaringskarl-och-burkar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Förvaringskärl och burkar",
+ "titleJa": "{保存容器|ほぞんようき}と{瓶|びん}",
+ "descriptionSv": "Burkar, lådor och påsar i köket: lock, täta kärl, fryspåsar, sylta och konservera.",
+ "descriptionJa": "{台所|だいどころ}の{容器|ようき}と{袋|ふくろ}：ふた、{密閉容器|みっぺいようき}、{冷凍用|れいとうよう}の{袋|ふくろ}、ジャム{作|づく}り、{保存食|ほぞんしょく}。",
+ "categoryId": "R01-A01-T03",
+ "tags": [
+  "hemmet",
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.porslin-och-bestick"
+ ],
+ "related": [],
+ "recommendedOrder": 218,
+ "words": [
+  {
+   "senseId": "s.kärl.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glasburk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plastburk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plastlåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvaringsburk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skruvlock.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plastpåse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fryspåse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gummisnodd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.påsklämma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stapelbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sylta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konservera.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Burkar och lådor",
+  "paragraphs": [
+   "Aiko öppnar köksskåpet. Det är fullt av plastlådor och plastburkar, men inga lock passar. ”Vi måste städa här”, säger hon.",
+   "De köper nya kärl. Plastlådorna är stapelbara, så de tar mindre plats. Locken är täta, så inget läcker i väskan.",
+   "Till torrvaror köper de förvaringsburkar av glas för mjöl, socker och kaffe. I glasburkar med skruvlock har de sylt.",
+   "I höstas syltade Eriks mormor lingon och plommon. ”Förr konserverade man mat för hela vintern”, berättar hon.",
+   "Bär som de har plockat lägger de i fryspåsar. Öppna chipspåsar stänger de med en påsklämma eller en gummisnodd.",
+   "Aiko sparar plastpåsar från affären. ”Man kan använda dem många gånger”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är problemet i köksskåpet?",
+    "options": [
+     "Det finns inga lådor.",
+     "Inga lock passar till lådorna.",
+     "Skåpet är trasigt.",
+     "Det luktar illa."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Skåpet är fullt av plastlådor och burkar, men inga lock passar.",
+    "explanationJa": "ふたがどれも{合|あ}いません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför tar de nya plastlådorna mindre plats?",
+    "options": [
+     "De är mycket små.",
+     "De är av glas.",
+     "De är stapelbara.",
+     "De har inga lock."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Plastlådorna är stapelbara, så de tar mindre plats.",
+    "explanationJa": "{積|つ}み{重|かさ}ねられるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "De har sylt i glasburkar med skruvlock.",
+    "correct": true,
+    "explanationSv": "I glasburkar med skruvlock har de sylt.",
+    "explanationJa": "ジャムはねじぶたのガラス{瓶|びん}に{入|い}れています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad lägger de bären i?",
+    "options": [
+     "Glasburkar",
+     "Plastpåsar från affären",
+     "Fryspåsar",
+     "Förvaringsburkar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Bär som de har plockat lägger de i fryspåsar.",
+    "explanationJa": "ベリーは{冷凍用|れいとうよう}の{袋|ふくろ}に{入|い}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko slänger plastpåsarna efter en gång.",
+    "correct": false,
+    "explanationSv": "Hon sparar dem och säger att man kan använda dem många gånger.",
+    "explanationJa": "{何度|なんど}も{使|つか}えるので{取|と}っておきます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man förvarar mat: burkar, lådor och påsar, att sylta och konservera, och att använda saker flera gånger.",
+  "discussionPoints": [
+   "Hur förvarar du rester och torrvaror?",
+   "Har du syltat eller konserverat något själv?",
+   "Vilka förvaringskärl är vanliga i japanska kök?",
+   "Sparar du plastpåsar och burkar?"
+  ]
+ }
+}

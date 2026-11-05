@@ -1,0 +1,170 @@
+{
+ "id": "m.tygers-egenskaper",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tygers egenskaper",
+ "titleJa": "{布|ぬの}の{特性|とくせい}",
+ "descriptionSv": "Tygers egenskaper: vattentät, vindtät, andas, varmhållande, snabbtorkande, töjbar, tålig och genomskinlig.",
+ "descriptionJa": "{布|ぬの}の{特性|とくせい}：{防水|ぼうすい}、{防風|ぼうふう}、{通気性|つうきせい}、{保温性|ほおんせい}、{速乾性|そっかんせい}、{伸縮性|しんしゅくせい}、{丈夫|じょうぶ}さ、{透|す}け{感|かん}。",
+ "categoryId": "R01-A03-T03",
+ "tags": [
+  "kläder",
+  "material"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.monster-och-texturer"
+ ],
+ "related": [],
+ "recommendedOrder": 320,
+ "words": [
+  {
+   "senseId": "s.egenskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattentät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindtät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andas.2",
+   "active": true
+  },
+  {
+   "senseId": "s.luftig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmhållande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.isolera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snabbtorkande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.töjbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elastisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tålig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genomskinlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smutsavvisande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brandfarlig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rätt tyg för bergen",
+  "paragraphs": [
+   "Familjen ska åka till bergen i påsk. Erik går till en sportaffär för att köpa nya kläder. Försäljaren berättar om olika tygers egenskaper.",
+   "”Den här jackan är vattentät och vindtät, men den andas också”, säger hon. ”Då blir du inte svettig när du går.”",
+   "”Under jackan ska du ha ull. Ull är varmhållande, också när den är fuktig.” Dunjackan isolerar bra mot kyla, men den är inte bra i regn.",
+   "Till Mia köper de snabbtorkande byxor som är töjbara och har ett elastiskt band runt magen. Leo behöver tåliga kläder, för han ramlar hela tiden. Byxorna är också smutsavvisande.",
+   "”Akta dig för elden”, säger försäljaren. ”Syntetiska material kan vara brandfarliga.”",
+   "På sommaren vill Aiko ha luftiga kläder av linne. Hennes nya blus är lite genomskinlig, och de nya jeansen är styva. ”De blir mjuka med tiden”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är bra med jackan som försäljaren visar?",
+    "options": [
+     "Den är billig.",
+     "Den är luftig och genomskinlig.",
+     "Den är av linne.",
+     "Den är vattentät, vindtät och andas."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Den här jackan är vattentät och vindtät, men den andas också.”",
+    "explanationJa": "{防水|ぼうすい}・{防風|ぼうふう}で{通気性|つうきせい}もあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Ull håller en varm även när den är fuktig.",
+    "correct": true,
+    "explanationSv": "Ull är varmhållande, också när den är fuktig.",
+    "explanationJa": "ぬれていても{暖|あたた}かいです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför behöver Leo tåliga kläder?",
+    "options": [
+     "Han växer snabbt.",
+     "Han spelar fotboll.",
+     "Han ramlar hela tiden.",
+     "Han tycker om mönster."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Leo behöver tåliga kläder, för han ramlar hela tiden.",
+    "explanationJa": "いつも{転|ころ}ぶからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad säger försäljaren om syntetiska material?",
+    "options": [
+     "De är alltid vattentäta.",
+     "De kan vara brandfarliga.",
+     "De kliar.",
+     "De är varmhållande."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Syntetiska material kan vara brandfarliga.”",
+    "explanationJa": "{燃|も}えやすいことがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tror att jeansen kommer att bli skönare.",
+    "correct": true,
+    "explanationSv": "”De blir mjuka med tiden”, säger hon.",
+    "explanationJa": "{時間|じかん}がたつと{柔|やわ}らかくなると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tygers egenskaper: vilka kläder man behöver för regn, kyla, sport och sommar, och vad som är viktigt för er.",
+  "discussionPoints": [
+   "Vilka kläder har du när det regnar mycket?",
+   "Vad är viktigast för dig: att kläderna är varma, sköna eller tåliga?",
+   "Vilka tyger är bra när det är varmt och fuktigt i Japan?",
+   "Har du kläder som andas till sport?"
+  ]
+ }
+}

@@ -1,11 +1,341 @@
 {
-  "_comment": "Koppling mellan planeringskatalogen (planning/catalog/swechan-catalog.v1.json) och redan publicerade lektioner. Ingen av de fem publicerade modulerna motsvarar exakt EN katalogpost; därför används kompatibilitetsplacering (modulen behåller sitt m.*-ID, catalogId saknas). overlapsCatalogIds anger ämnesöverlapp, inte likvärdighet. links fylls bara efter verifierad 1:1-matchning: modulen är skriven direkt för katalogposten (samma titel, ämne och placering).",
+  "_comment": "Koppling mellan planeringskatalogen (planning/catalog/swechan-catalog.v1.json) och redan publicerade lektioner. Ingen av de fem publicerade modulerna motsvarar exakt EN katalogpost; därför används kompatibilitetsplacering i en ämnesgrupp (modulen behåller sitt m.*-ID, catalogId saknas; från 0.5 alltid i en ämnesgrupp, aldrig direkt i ett område). overlapsCatalogIds anger ämnesöverlapp, inte likvärdighet. links fylls bara efter verifierad 1:1-matchning: modulen är skriven direkt för katalogposten (samma titel, ämne och placering).",
   "links": [
+    {
+      "catalogId": "SWC-VAR-01-01-01",
+      "moduleId": "m.hus-och-lagenheter",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hogtidsmat-och-traditioner"
+    },
+    {
+      "catalogId": "SWC-VAR-01-01-02",
+      "moduleId": "m.husets-olika-rum",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hus-och-lagenheter"
+    },
+    {
+      "catalogId": "SWC-VAR-01-01-03",
+      "moduleId": "m.utrymmen-i-flerbostadshus",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.husets-olika-rum"
+    },
+    {
+      "catalogId": "SWC-VAR-01-01-04",
+      "moduleId": "m.att-beskriva-en-bostad",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.utrymmen-i-flerbostadshus"
+    },
+    {
+      "catalogId": "SWC-VAR-01-01-05",
+      "moduleId": "m.planlosning-och-boyta",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.att-beskriva-en-bostad"
+    },
+    {
+      "catalogId": "SWC-VAR-01-01-06",
+      "moduleId": "m.flytta-till-ny-bostad",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.planlosning-och-boyta"
+    },
+    {
+      "catalogId": "SWC-VAR-01-01-07",
+      "moduleId": "m.boendeformer-i-sverige",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.flytta-till-ny-bostad"
+    },
+    {
+      "catalogId": "SWC-VAR-01-02-01",
+      "moduleId": "m.soffor-och-fatoljer",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.boendeformer-i-sverige"
+    },
+    {
+      "catalogId": "SWC-VAR-01-02-02",
+      "moduleId": "m.bord-och-stolar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.soffor-och-fatoljer"
+    },
+    {
+      "catalogId": "SWC-VAR-01-02-03",
+      "moduleId": "m.sangar-och-sovrumsmobler",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.bord-och-stolar"
+    },
+    {
+      "catalogId": "SWC-VAR-01-02-04",
+      "moduleId": "m.forvaring-och-hyllor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.sangar-och-sovrumsmobler"
+    },
+    {
+      "catalogId": "SWC-VAR-01-02-05",
+      "moduleId": "m.lampor-och-belysning",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.forvaring-och-hyllor"
+    },
+    {
+      "catalogId": "SWC-VAR-01-02-06",
+      "moduleId": "m.farger-och-inredningsstilar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.lampor-och-belysning"
+    },
+    {
+      "catalogId": "SWC-VAR-01-02-07",
+      "moduleId": "m.att-moblera-ett-rum",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.farger-och-inredningsstilar"
+    },
+    {
+      "catalogId": "SWC-VAR-01-03-01",
+      "moduleId": "m.kokets-storre-apparater",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.att-moblera-ett-rum"
+    },
+    {
+      "catalogId": "SWC-VAR-01-03-02",
+      "moduleId": "m.redskap-for-matlagning",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.kokets-storre-apparater"
+    },
+    {
+      "catalogId": "SWC-VAR-01-03-03",
+      "moduleId": "m.porslin-och-bestick",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.redskap-for-matlagning"
+    },
+    {
+      "catalogId": "SWC-VAR-01-03-04",
+      "moduleId": "m.forvaringskarl-och-burkar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.porslin-och-bestick"
+    },
+    {
+      "catalogId": "SWC-VAR-01-03-05",
+      "moduleId": "m.koksmaterial-och-ytor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.forvaringskarl-och-burkar"
+    },
+    {
+      "catalogId": "SWC-VAR-01-03-06",
+      "moduleId": "m.att-duka-ett-bord",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.koksmaterial-och-ytor"
+    },
+    {
+      "catalogId": "SWC-VAR-01-03-07",
+      "moduleId": "m.sakerhet-i-koket",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.att-duka-ett-bord"
+    },
+    {
+      "catalogId": "SWC-VAR-01-04-01",
+      "moduleId": "m.toalett-och-handfat",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.sakerhet-i-koket"
+    },
+    {
+      "catalogId": "SWC-VAR-01-04-02",
+      "moduleId": "m.dusch-och-badkar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.toalett-och-handfat"
+    },
+    {
+      "catalogId": "SWC-VAR-01-04-03",
+      "moduleId": "m.handdukar-och-badrumstextil",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.dusch-och-badkar"
+    },
+    {
+      "catalogId": "SWC-VAR-01-04-04",
+      "moduleId": "m.hygienartiklar-hemma",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.handdukar-och-badrumstextil"
+    },
+    {
+      "catalogId": "SWC-VAR-01-04-05",
+      "moduleId": "m.tvattstuga-och-tvattmaskiner",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hygienartiklar-hemma"
+    },
+    {
+      "catalogId": "SWC-VAR-01-04-06",
+      "moduleId": "m.avlopp-och-vattenkranar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.tvattstuga-och-tvattmaskiner"
+    },
+    {
+      "catalogId": "SWC-VAR-01-04-07",
+      "moduleId": "m.badrumsproblem-och-reparation",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.avlopp-och-vattenkranar"
+    },
+    {
+      "catalogId": "SWC-VAR-01-05-01",
+      "moduleId": "m.stadredskap-och-rengoringsmedel",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.badrumsproblem-och-reparation"
+    },
+    {
+      "catalogId": "SWC-VAR-01-05-02",
+      "moduleId": "m.dammsuga-och-torka-golv",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.stadredskap-och-rengoringsmedel"
+    },
+    {
+      "catalogId": "SWC-VAR-01-05-03",
+      "moduleId": "m.tvatta-klader-och-textilier",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.dammsuga-och-torka-golv"
+    },
+    {
+      "catalogId": "SWC-VAR-01-05-04",
+      "moduleId": "m.sortera-och-slanga-sopor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.tvatta-klader-och-textilier"
+    },
+    {
+      "catalogId": "SWC-VAR-01-05-05",
+      "moduleId": "m.sma-reparationer-hemma",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.sortera-och-slanga-sopor"
+    },
+    {
+      "catalogId": "SWC-VAR-01-05-06",
+      "moduleId": "m.skador-och-slitage",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.sma-reparationer-hemma"
+    },
+    {
+      "catalogId": "SWC-VAR-01-05-07",
+      "moduleId": "m.veckostadning-och-rutiner",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.skador-och-slitage"
+    },
+    {
+      "catalogId": "SWC-VAR-01-06-01",
+      "moduleId": "m.bostadsannonser-och-visningar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.veckostadning-och-rutiner"
+    },
+    {
+      "catalogId": "SWC-VAR-01-06-02",
+      "moduleId": "m.hyresavtal-och-hyresvard",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.bostadsannonser-och-visningar"
+    },
+    {
+      "catalogId": "SWC-VAR-01-06-03",
+      "moduleId": "m.avgifter-och-boendekostnader",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hyresavtal-och-hyresvard"
+    },
+    {
+      "catalogId": "SWC-VAR-01-06-04",
+      "moduleId": "m.bostadsratt-och-forening",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.avgifter-och-boendekostnader"
+    },
+    {
+      "catalogId": "SWC-VAR-01-06-05",
+      "moduleId": "m.grannar-och-storningar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.bostadsratt-och-forening"
+    },
+    {
+      "catalogId": "SWC-VAR-01-06-06",
+      "moduleId": "m.felanmalan-och-service",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.grannar-och-storningar"
+    },
+    {
+      "catalogId": "SWC-VAR-01-06-07",
+      "moduleId": "m.flyttdag-och-adressandring",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.felanmalan-och-service"
+    },
     {
       "catalogId": "SWC-VAR-02-01-01",
       "moduleId": "m.vanliga-gronsaker",
       "verifiedBy": "Skriven för katalogposten i 0.4 fas F: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
       "note": "Första delen i kedjan grönsaker → skära → koka."
+    },
+    {
+      "catalogId": "SWC-VAR-02-01-02",
+      "moduleId": "m.frukter-och-bar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.vanliga-gronsaker, m.hemmet-vardag"
+    },
+    {
+      "catalogId": "SWC-VAR-02-01-03",
+      "moduleId": "m.spannmal-och-gryn",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.frukter-och-bar"
+    },
+    {
+      "catalogId": "SWC-VAR-02-01-04",
+      "moduleId": "m.bonor-och-linser",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.spannmal-och-gryn"
+    },
+    {
+      "catalogId": "SWC-VAR-02-01-05",
+      "moduleId": "m.notter-och-fron",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.bonor-och-linser"
+    },
+    {
+      "catalogId": "SWC-VAR-02-01-06",
+      "moduleId": "m.kryddor-och-orter",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.notter-och-fron"
+    },
+    {
+      "catalogId": "SWC-VAR-02-01-07",
+      "moduleId": "m.torrvaror-och-konserver",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.kryddor-och-orter"
+    },
+    {
+      "catalogId": "SWC-VAR-02-02-01",
+      "moduleId": "m.styckningsdelar-och-kottsorter",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.torrvaror-och-konserver, m.koka-och-sjuda"
+    },
+    {
+      "catalogId": "SWC-VAR-02-02-02",
+      "moduleId": "m.fagel-och-agg",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.styckningsdelar-och-kottsorter"
+    },
+    {
+      "catalogId": "SWC-VAR-02-02-03",
+      "moduleId": "m.fiskarter-och-skaldjur",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.fagel-och-agg"
+    },
+    {
+      "catalogId": "SWC-VAR-02-02-04",
+      "moduleId": "m.vegetariska-proteinkallor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.fiskarter-och-skaldjur"
+    },
+    {
+      "catalogId": "SWC-VAR-02-02-05",
+      "moduleId": "m.mejeriprodukter-och-alternativ",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.vegetariska-proteinkallor"
+    },
+    {
+      "catalogId": "SWC-VAR-02-02-06",
+      "moduleId": "m.att-valja-ravaror",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.mejeriprodukter-och-alternativ"
+    },
+    {
+      "catalogId": "SWC-VAR-02-02-07",
+      "moduleId": "m.hallbarhet-och-forvaring",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.att-valja-ravaror"
     },
     {
       "catalogId": "SWC-VAR-02-03-01",
@@ -18,12 +348,294 @@
       "moduleId": "m.koka-och-sjuda",
       "verifiedBy": "Skriven för katalogposten i 0.4 fas F: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
       "note": "Förkunskap: m.skara-och-hacka."
+    },
+    {
+      "catalogId": "SWC-VAR-02-03-03",
+      "moduleId": "m.steka-och-bryna",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.koka-och-sjuda, m.hallbarhet-och-forvaring"
+    },
+    {
+      "catalogId": "SWC-VAR-02-03-04",
+      "moduleId": "m.gradda-och-baka",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.steka-och-bryna"
+    },
+    {
+      "catalogId": "SWC-VAR-02-03-05",
+      "moduleId": "m.vispa-och-rora",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.gradda-och-baka"
+    },
+    {
+      "catalogId": "SWC-VAR-02-03-06",
+      "moduleId": "m.krydda-och-smaka-av",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.vispa-och-rora"
+    },
+    {
+      "catalogId": "SWC-VAR-02-03-07",
+      "moduleId": "m.tillaga-och-servera",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.krydda-och-smaka-av"
+    },
+    {
+      "catalogId": "SWC-VAR-02-04-01",
+      "moduleId": "m.grundsmaker-och-dofter",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.tillaga-och-servera"
+    },
+    {
+      "catalogId": "SWC-VAR-02-04-02",
+      "moduleId": "m.sota-och-syrliga-smaker",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.grundsmaker-och-dofter"
+    },
+    {
+      "catalogId": "SWC-VAR-02-04-03",
+      "moduleId": "m.starka-och-milda-smaker",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.sota-och-syrliga-smaker"
+    },
+    {
+      "catalogId": "SWC-VAR-02-04-04",
+      "moduleId": "m.krispigt-och-knaprigt",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.starka-och-milda-smaker"
+    },
+    {
+      "catalogId": "SWC-VAR-02-04-05",
+      "moduleId": "m.mjukt-och-segt",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.krispigt-och-knaprigt"
+    },
+    {
+      "catalogId": "SWC-VAR-02-04-06",
+      "moduleId": "m.farskhet-och-mognad",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.mjukt-och-segt"
+    },
+    {
+      "catalogId": "SWC-VAR-02-04-07",
+      "moduleId": "m.beskriva-en-matratt",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.farskhet-och-mognad"
+    },
+    {
+      "catalogId": "SWC-VAR-02-05-01",
+      "moduleId": "m.frukostmat-och-frukostvanor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.beskriva-en-matratt"
+    },
+    {
+      "catalogId": "SWC-VAR-02-05-02",
+      "moduleId": "m.lunch-och-middag",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.frukostmat-och-frukostvanor"
+    },
+    {
+      "catalogId": "SWC-VAR-02-05-03",
+      "moduleId": "m.mellanmal-och-fika",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.lunch-och-middag"
+    },
+    {
+      "catalogId": "SWC-VAR-02-05-04",
+      "moduleId": "m.portioner-och-tillbehor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.mellanmal-och-fika"
+    },
+    {
+      "catalogId": "SWC-VAR-02-05-05",
+      "moduleId": "m.restaurangmenyer",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.portioner-och-tillbehor"
+    },
+    {
+      "catalogId": "SWC-VAR-02-05-06",
+      "moduleId": "m.bestalla-och-betala-pa-restaurang",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.restaurangmenyer"
+    },
+    {
+      "catalogId": "SWC-VAR-02-05-07",
+      "moduleId": "m.matbordets-samtal",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.bestalla-och-betala-pa-restaurang"
+    },
+    {
+      "catalogId": "SWC-VAR-02-06-01",
+      "moduleId": "m.svenska-husmansratter",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.matbordets-samtal"
+    },
+    {
+      "catalogId": "SWC-VAR-02-06-02",
+      "moduleId": "m.japansk-mat-pa-svenska",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.svenska-husmansratter"
+    },
+    {
+      "catalogId": "SWC-VAR-02-06-03",
+      "moduleId": "m.mat-fran-olika-varldsdelar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.japansk-mat-pa-svenska"
+    },
+    {
+      "catalogId": "SWC-VAR-02-06-04",
+      "moduleId": "m.specialkost-och-allergener",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.mat-fran-olika-varldsdelar"
+    },
+    {
+      "catalogId": "SWC-VAR-02-06-05",
+      "moduleId": "m.naringsamnen-i-maten",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.specialkost-och-allergener"
+    },
+    {
+      "catalogId": "SWC-VAR-02-06-06",
+      "moduleId": "m.matsvinn-och-rester",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.naringsamnen-i-maten"
+    },
+    {
+      "catalogId": "SWC-VAR-02-06-07",
+      "moduleId": "m.hogtidsmat-och-traditioner",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.matsvinn-och-rester"
+    },
+    {
+      "catalogId": "SWC-VAR-03-01-01",
+      "moduleId": "m.trojor-och-skjortor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.flyttdag-och-adressandring"
+    },
+    {
+      "catalogId": "SWC-VAR-03-01-02",
+      "moduleId": "m.byxor-och-kjolar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.trojor-och-skjortor"
+    },
+    {
+      "catalogId": "SWC-VAR-03-01-03",
+      "moduleId": "m.klanningar-och-kostymer",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.byxor-och-kjolar"
+    },
+    {
+      "catalogId": "SWC-VAR-03-01-04",
+      "moduleId": "m.underklader-och-strumpor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.klanningar-och-kostymer"
+    },
+    {
+      "catalogId": "SWC-VAR-03-01-05",
+      "moduleId": "m.jackor-och-ytterplagg",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.underklader-och-strumpor"
+    },
+    {
+      "catalogId": "SWC-VAR-03-01-06",
+      "moduleId": "m.sportiga-vardagsklader",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.jackor-och-ytterplagg"
+    },
+    {
+      "catalogId": "SWC-VAR-03-01-07",
+      "moduleId": "m.att-beskriva-en-outfit",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.sportiga-vardagsklader"
+    },
+    {
+      "catalogId": "SWC-VAR-03-02-01",
+      "moduleId": "m.vardagsskor-och-kangor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.att-beskriva-en-outfit"
+    },
+    {
+      "catalogId": "SWC-VAR-03-02-02",
+      "moduleId": "m.finskor-och-klackar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.vardagsskor-och-kangor"
+    },
+    {
+      "catalogId": "SWC-VAR-03-02-03",
+      "moduleId": "m.mossor-och-hattar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.finskor-och-klackar"
+    },
+    {
+      "catalogId": "SWC-VAR-03-02-04",
+      "moduleId": "m.halsdukar-och-handskar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.mossor-och-hattar"
+    },
+    {
+      "catalogId": "SWC-VAR-03-02-05",
+      "moduleId": "m.vaskor-och-ryggsackar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.halsdukar-och-handskar"
+    },
+    {
+      "catalogId": "SWC-VAR-03-02-06",
+      "moduleId": "m.smycken-och-klockor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.vaskor-och-ryggsackar"
+    },
+    {
+      "catalogId": "SWC-VAR-03-02-07",
+      "moduleId": "m.balten-och-sma-tillbehor",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.smycken-och-klockor"
+    },
+    {
+      "catalogId": "SWC-VAR-03-03-01",
+      "moduleId": "m.bomull-och-linne",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.balten-och-sma-tillbehor"
+    },
+    {
+      "catalogId": "SWC-VAR-03-03-02",
+      "moduleId": "m.ull-och-silke",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.bomull-och-linne"
+    },
+    {
+      "catalogId": "SWC-VAR-03-03-03",
+      "moduleId": "m.syntetiska-textilmaterial",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.ull-och-silke"
+    },
+    {
+      "catalogId": "SWC-VAR-03-03-04",
+      "moduleId": "m.lader-och-mocka",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.syntetiska-textilmaterial"
+    },
+    {
+      "catalogId": "SWC-VAR-03-03-05",
+      "moduleId": "m.monster-och-texturer",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.lader-och-mocka"
+    },
+    {
+      "catalogId": "SWC-VAR-03-03-06",
+      "moduleId": "m.tygers-egenskaper",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.monster-och-texturer"
+    },
+    {
+      "catalogId": "SWC-VAR-03-03-07",
+      "moduleId": "m.att-kanna-igen-kvalitet",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.tygers-egenskaper"
     }
   ],
   "compatibilityPlacements": [
     {
       "moduleId": "m.hemmet-vardag",
-      "catalogCategoryId": "R01-A01",
+      "catalogCategoryId": "R01-A01-T05",
       "overlapsCatalogIds": [
         "SWC-VAR-01-01-02",
         "SWC-VAR-01-05-02",
@@ -31,20 +643,20 @@
         "SWC-VAR-01-05-04",
         "SWC-VAR-01-05-07"
       ],
-      "reason": "Bred modul om rum och hushållssysslor; spänner över ämnesgrupperna Bostadstyper & rum och Städning & underhåll."
+      "reason": "Bred modul om rum och hushållssysslor; placerad i Städning & underhåll, där de flesta av orden hör hemma."
     },
     {
       "moduleId": "m.material-amnen",
-      "catalogCategoryId": "R06-A04",
+      "catalogCategoryId": "R06-A04-T01",
       "overlapsCatalogIds": [
         "SWC-VET-04-01-02",
         "SWC-VET-04-01-05"
       ],
-      "reason": "Grundmodul om ämnen, material och aggregationsformer före Atomer och molekyler; ingen katalogpost motsvarar den."
+      "reason": "Grundmodul om ämnen, material och aggregationsformer före Atomer och molekyler; placerad i Atomer & periodiska systemet."
     },
     {
       "moduleId": "m.atomer-molekyler",
-      "catalogCategoryId": "R06-A04",
+      "catalogCategoryId": "R06-A04-T02",
       "overlapsCatalogIds": [
         "SWC-VET-04-01-01",
         "SWC-VET-04-01-02",
@@ -52,20 +664,20 @@
         "SWC-VET-04-02-02",
         "SWC-VET-04-03-01"
       ],
-      "reason": "Spänner över Atomer & periodiska systemet, Molekyler & kemiska bindningar och Kemiska reaktioner."
+      "reason": "Spänner över atomer, molekyler, bindningar och reaktioner; placerad i Molekyler & kemiska bindningar."
     },
     {
       "moduleId": "m.krig-forsvar",
-      "catalogCategoryId": "R04-A02",
+      "catalogCategoryId": "R04-A02-T03",
       "overlapsCatalogIds": [
         "SWC-HIS-02-02-05",
         "SWC-HIS-02-03-02"
       ],
-      "reason": "Allmän grundmodul om krig och försvar före Medeltida slott och belägringar; ingen katalogpost motsvarar den."
+      "reason": "Allmän grundmodul om krig och försvar (anfalla, försvara, belägra) före Medeltida slott och belägringar; placerad i Medeltida belägringar."
     },
     {
       "moduleId": "m.medeltida-borgar",
-      "catalogCategoryId": "R04-A02",
+      "catalogCategoryId": "R04-A02-T02",
       "overlapsCatalogIds": [
         "SWC-HIS-02-02-01",
         "SWC-HIS-02-02-02",
@@ -76,7 +688,7 @@
         "SWC-HIS-02-03-06",
         "SWC-HIS-02-03-07"
       ],
-      "reason": "Spänner över Medeltida slott & fästningar och Medeltida belägringar."
+      "reason": "Spänner över Medeltida slott & fästningar och belägringar; placerad i Medeltida slott & fästningar."
     }
   ]
 }

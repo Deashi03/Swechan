@@ -59,7 +59,7 @@ describe('exercise generation', () => {
     const ex = genContextChoice(repo.getSense('s.städa.1')!, ctx())!;
     expect(ex.prompt).toBe('Vi ＿＿＿ lägenheten varje lördag.');
     expect(ex.options[ex.correctIndex]!.label).toBe('städar');
-    expect(ex.options.every((o) => /r$/.test(o.label.split(' ')[0]!))).toBe(true); // all present tense (particle verbs: "ger upp")
+    expect(ex.options.every((o) => /(r|s)$/.test(o.label.split(' ')[0]!))).toBe(true); // all present tense (particle verbs: "ger upp"; deponent verbs: "svettas")
     expect(ex.subPrompt).toBeUndefined(); // translation would give the answer away – only as hint/result
     expect(ex.hint?.lang).toBe('ja');
   });
@@ -165,5 +165,20 @@ describe('learner-facing progress', () => {
     bp = batchProgress(s);
     expect(bp.part).toBe(2);
     expect(bp.doneInPart).toBe(0);
+  });
+});
+
+describe('the answer is never shown in a recall prompt (feedback 0.4)', () => {
+  it('reverse choice and spelling hide every form of the answer in prompt, sub-prompt and hint', async () => {
+    const { genReverseChoice, genSpelling, maskAnswer } = await import('./exercises/generate');
+    const { entryOccursIn } = await import('../content/morphology');
+    const { stripFurigana } = await import('../content/furigana');
+    expect(maskAnswer('bestå av: vara gjord av något.', repo.getSense('s.bestå.1')!.entry)).toBe('＿＿＿ av: vara gjord av något.');
+    for (const m of repo.modules) for (const w of m.words) {
+      const ref = repo.getSense(w.senseId)!;
+      const pool = { repo, poolSenseIds: m.words.map((x) => x.senseId), seed: 1 };
+      const texts = [genReverseChoice(ref, pool), genSpelling(ref, pool)].flatMap((x) => (x ? [x.prompt, x.subPrompt ?? '', typeof x.hint === 'string' ? '' : x.hint?.text ?? ''] : []));
+      for (const t of texts) expect(entryOccursIn(stripFurigana(t), ref.entry), `${w.senseId}: ${t}`).toBe(false);
+    }
   });
 });

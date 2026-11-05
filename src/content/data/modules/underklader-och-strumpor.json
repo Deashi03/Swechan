@@ -1,0 +1,169 @@
+{
+ "id": "m.underklader-och-strumpor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Underkläder och strumpor",
+ "titleJa": "{下着|したぎ}と{靴下|くつした}",
+ "descriptionSv": "Underkläder, strumpor och nattkläder: trosor, kalsonger, strumpbyxor, pyjamas, och att klä på och av sig.",
+ "descriptionJa": "{下着|したぎ}、{靴下|くつした}、{寝間着|ねまき}：ショーツ、パンツ、タイツ、パジャマ、{服|ふく}の{着|き}{脱|ぬ}ぎ。",
+ "categoryId": "R01-A03-T01",
+ "tags": [
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.klanningar-och-kostymer"
+ ],
+ "related": [],
+ "recommendedOrder": 304,
+ "words": [
+  {
+   "senseId": "s.par.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underkläder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trosor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kalsonger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bh.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strumpa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.udda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knästrumpa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.raggsocka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.strumpbyxor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pyjamas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nattlinne.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klä-på-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klä-av-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-om.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Packa för lägret",
+  "paragraphs": [
+   "Mia och Leo ska på sommarläger i fem dagar. Aiko och Erik hjälper dem att packa.",
+   "”Ta underkläder för varje dag”, säger Aiko. Mia packar fem par trosor och en bh. Leo packar sina kalsonger, men bara tre. ”Fem!” säger Erik.",
+   "Sedan är det strumporna. Leo hittar bara udda strumpor i lådan. ”Det gör inget”, säger han. Till fotbollen behöver han också knästrumpor.",
+   "På kvällarna kan det bli kallt, så de tar med raggsockor. Mia vill ha strumpbyxor till en kjol, om det blir fest.",
+   "Leo packar sin pyjamas med bilar på. Mia har ett nattlinne i stället.",
+   "På lägret ska de klä på sig själva varje morgon. Efter fotbollen måste de byta om, och på kvällen ska alla klä av sig och gå och lägga sig tidigt. I alla fall nästan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge ska Mia och Leo vara på läger?",
+    "options": [
+     "Tre dagar",
+     "En vecka",
+     "Två veckor",
+     "Fem dagar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "De ska på sommarläger i fem dagar.",
+    "explanationJa": "5{日間|かかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför säger Erik ”Fem!”?",
+    "options": [
+     "Leo packar fem par strumpor.",
+     "Mia packar för mycket.",
+     "Lägret är fem dagar långt, men de har inga kläder.",
+     "Leo packar bara tre kalsonger."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leo packar sina kalsonger, men bara tre.",
+    "explanationJa": "レオがパンツを3{枚|まい}しか{詰|つ}めないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo hittar många strumpor som hör ihop.",
+    "correct": false,
+    "explanationSv": "Leo hittar bara udda strumpor i lådan.",
+    "explanationJa": "{左右|さゆう}そろっていない{靴下|くつした}しかありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför tar de med raggsockor?",
+    "options": [
+     "De ska spela fotboll.",
+     "Det kan bli kallt på kvällarna.",
+     "Det blir fest.",
+     "Mormor vill det."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På kvällarna kan det bli kallt, så de tar med raggsockor.",
+    "explanationJa": "{夜|よる}は{寒|さむ}くなることがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Barnen kanske inte går och lägger sig så tidigt som de ska.",
+    "correct": true,
+    "explanationSv": "På kvällen ska alla gå och lägga sig tidigt. I alla fall nästan.",
+    "explanationJa": "「ほぼ」{早|はや}く{寝|ね}ます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om underkläder, strumpor och nattkläder: vad man packar för en resa och vad man har på sig hemma.",
+  "discussionPoints": [
+   "Vad sover du i?",
+   "Har du raggsockor eller tofflor hemma?",
+   "Vad packar du när du reser i en vecka?",
+   "Har man skor eller strumpor inne i Japan?"
+  ]
+ }
+}

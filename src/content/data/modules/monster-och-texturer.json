@@ -1,0 +1,170 @@
+{
+ "id": "m.monster-och-texturer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Mönster och texturer",
+ "titleJa": "{模様|もよう}と{質感|しつかん}",
+ "descriptionSv": "Mönster och texturer: prickig, blommig, rutmönster, tryck, sträv, luddig, glansig, matt, sammet och spets.",
+ "descriptionJa": "{模様|もよう}と{質感|しつかん}：{水玉|みずたま}、{花柄|はながら}、チェック、プリント、ざらざら、ふわふわ、つやあり、つや{消|け}し、ベルベット、レース。",
+ "categoryId": "R01-A03-T03",
+ "tags": [
+  "kläder",
+  "material"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.lader-och-mocka"
+ ],
+ "related": [],
+ "recommendedOrder": 319,
+ "words": [
+  {
+   "senseId": "s.prickig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blommig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ruta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rutmönster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leopardmönster.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.textur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sträv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luddig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glansig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ribbad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sammet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spets.1",
+   "active": true
+  },
+  {
+   "senseId": "s.paljett.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mönster i garderoben",
+  "paragraphs": [
+   "Mia ska rensa sin garderob. Hon lägger alla kläder på sängen och delar upp dem efter mönster.",
+   "Det finns randiga tröjor, en blommig klänning, en prickig blus, en skjorta med små blå rutor och en kjol med rött rutmönster. Hon har också en väska med leopardmönster som hon fick av mormor.",
+   "Leo har mest t-shirts med tryck: bilar, djur och fotboll. ”Jag gillar inte enfärgade kläder”, säger han.",
+   "Mia tycker om att känna på tygerna. Den gamla handduken är sträv, mössan är ribbad och den nya tröjan är luddig. Hennes favoritklänning är av sammet, och den har en krage av spets.",
+   "Till nyårsfesten vill hon ha något som glittrar. Hon hittar en topp med paljetter. ”Glansigt eller matt?” frågar Aiko. ”Glansigt!” säger Mia.",
+   "”Kläder handlar inte bara om färg och mönster”, säger Aiko. ”Texturen är också viktig.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur delar Mia upp kläderna?",
+    "options": [
+     "Efter färg",
+     "Efter storlek",
+     "Efter mönster",
+     "Efter pris"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon delar upp dem efter mönster.",
+    "explanationJa": "{模様|もよう}で{分|わ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har Leo mest?",
+    "options": [
+     "Enfärgade tröjor",
+     "Blommiga skjortor",
+     "Randiga tröjor",
+     "T-shirts med tryck"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leo har mest t-shirts med tryck.",
+    "explanationJa": "プリントのTシャツです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Den gamla handduken är len och mjuk.",
+    "correct": false,
+    "explanationSv": "Den gamla handduken är sträv.",
+    "explanationJa": "ごわごわしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad hittar Mia till nyårsfesten?",
+    "options": [
+     "En topp med paljetter",
+     "En klänning av sammet",
+     "En prickig blus",
+     "En ribbad mössa"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon hittar en topp med paljetter.",
+    "explanationJa": "スパンコールのトップスです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att det är viktigt hur ett tyg känns.",
+    "correct": true,
+    "explanationSv": "”Texturen är också viktig.”",
+    "explanationJa": "{質感|しつかん}も{大切|たいせつ}だと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om mönster och texturer: vilka mönster ni tycker om, hur olika tyger känns, och vad som är populärt.",
+  "discussionPoints": [
+   "Har du mest enfärgade kläder eller kläder med mönster?",
+   "Vilket mönster tycker du bäst om?",
+   "Vilket tyg tycker du känns skönast?",
+   "Finns det traditionella japanska mönster på kläder?"
+  ]
+ }
+}

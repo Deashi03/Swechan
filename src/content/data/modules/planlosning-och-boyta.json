@@ -1,0 +1,169 @@
+{
+ "id": "m.planlosning-och-boyta",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Planlösning och boyta",
+ "titleJa": "{間取|まど}りと{居住面積|きょじゅうめんせき}",
+ "descriptionSv": "Planlösning och storlek: kvadratmeter, boyta, etta, tvåa och trea, och att läsa en ritning.",
+ "descriptionJa": "{間取|まど}りと{広|ひろ}さ：{平方|へいほう}メートル、{居住面積|きょじゅうめんせき}、1{部屋|へや}・2{部屋|へや}・3{部屋|へや}、{図面|ずめん}の{読|よ}み{方|かた}。",
+ "categoryId": "R01-A01-T01",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.att-beskriva-en-bostad"
+ ],
+ "related": [],
+ "recommendedOrder": 205,
+ "words": [
+  {
+   "senseId": "s.i-förhållande-till.1",
+   "active": false
+  },
+  {
+   "senseId": "s.planlösning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öppen-planlösning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ritning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mått.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kvadratmeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boyta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.etta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvåa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trea.1",
+   "active": true
+  },
+  {
+   "senseId": "s.takhöjd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.söderläge.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hörna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riva.2",
+   "active": true
+  },
+  {
+   "senseId": "s.vind.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ritningen",
+  "paragraphs": [
+   "Aiko och Erik har fått ritningen över radhuset. De sitter vid köksbordet och tittar på planlösningen, alltså hur rummen ligger i förhållande till varandra.",
+   "Boytan är 110 kvadratmeter. ”Det är nästan dubbelt så stort som vår trea”, säger Aiko. ”När jag kom till Sverige bodde jag i en etta. Sedan hade vi en tvåa.”",
+   "Köket och vardagsrummet är två rum med en vägg emellan. ”Vi kan riva väggen och få öppen planlösning”, säger Erik. ”Det är modernt.”",
+   "Aiko mäter rummen och skriver upp alla mått. Sovrummet är tre gånger fyra meter, alltså tolv kvadratmeter. Takhöjden är två och en halv meter.",
+   "Uteplatsen har söderläge och får sol hela dagen. ”I den hörnan kan vi ha bordet”, säger Aiko och pekar på ritningen.",
+   "På vinden finns det också plats. ”Där kan vi göra ett arbetsrum en dag”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur stor är boytan i radhuset?",
+    "options": [
+     "60 kvadratmeter",
+     "110 kvadratmeter",
+     "12 kvadratmeter",
+     "85 kvadratmeter"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Boytan är 110 kvadratmeter.",
+    "explanationJa": "{居住面積|きょじゅうめんせき}は110{平方|へいほう}メートルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var bodde Aiko när hon kom till Sverige?",
+    "options": [
+     "I en trea",
+     "I en villa",
+     "I en etta",
+     "I ett radhus"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon bodde i en etta när hon kom till Sverige.",
+    "explanationJa": "スウェーデンに{来|き}たときはワンルームに{住|す}んでいました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik vill ha en vägg mellan köket och vardagsrummet.",
+    "correct": false,
+    "explanationSv": "Erik vill riva väggen och få öppen planlösning.",
+    "explanationJa": "{壁|かべ}を{取|と}り{壊|こわ}してオープンな{間取|まど}りにしたいと{思|おも}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur stort är sovrummet?",
+    "options": [
+     "Tre kvadratmeter",
+     "Fyra kvadratmeter",
+     "Tjugo kvadratmeter",
+     "Tolv kvadratmeter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sovrummet är tre gånger fyra meter, alltså tolv kvadratmeter.",
+    "explanationJa": "{寝室|しんしつ}は3×4メートルで、12{平方|へいほう}メートルです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Uteplatsen får mycket sol.",
+    "correct": true,
+    "explanationSv": "Uteplatsen har söderläge och får sol hela dagen.",
+    "explanationJa": "{南向|みなみむ}きで、{一日中|いちにちじゅう}{日|ひ}が{当|あ}たります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om planlösningar och storlekar: hur man räknar rum i Sverige och i Japan, öppen planlösning, och hur stor bostad man behöver.",
+  "discussionPoints": [
+   "Hur många rum har din bostad, räknat på svenskt sätt?",
+   "Hur anger man storlek på bostäder i Japan, till exempel med tatami eller 1LDK?",
+   "Tycker du om öppen planlösning? Varför eller varför inte?",
+   "Hur många kvadratmeter behöver en person, tycker du?"
+  ]
+ }
+}

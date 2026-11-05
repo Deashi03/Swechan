@@ -1,0 +1,169 @@
+{
+ "id": "m.sakerhet-i-koket",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Säkerhet i köket",
+ "titleJa": "{台所|だいどころ}の{安全|あんぜん}",
+ "descriptionSv": "Säkerhet i köket: brandvarnare, brandsläckare, brandfilt, brännskador och barnsäkert.",
+ "descriptionJa": "{台所|だいどころ}の{安全|あんぜん}：{火災報知器|かさいほうちき}、{消火器|しょうかき}、{消火|しょうか}ブランケット、やけど、チャイルドロック。",
+ "categoryId": "R01-A01-T03",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.att-duka-ett-bord"
+ ],
+ "related": [],
+ "recommendedOrder": 221,
+ "words": [
+  {
+   "senseId": "s.olycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brinna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandvarnare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.batteri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandsläckare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandfilt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spisvakt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brännskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kyla-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.giftig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnsäker.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Eld i pannan",
+  "paragraphs": [
+   "Den första december testar Aiko och Erik sin brandvarnare. Den piper inte. ”Batteriet är slut”, säger Erik och byter det.",
+   "De flesta olyckor hemma händer i köket. Därför köper de en brandsläckare och en brandfilt. Mormor har en spisvakt, som stänger av spisen om den har varit på för länge.",
+   "En kväll steker Erik bacon. Plötsligt brinner det i pannan! Larmet går. Aiko tar brandfilten och lägger den över pannan. Elden slocknar.",
+   "”Häll aldrig vatten på brinnande olja”, säger Aiko. ”Då kan det bli en stor brand.”",
+   "Erik har fått en liten brännskada på handen. Aiko säger att han ska kyla ner den med kallt vatten i tjugo minuter.",
+   "Eriks syster har små barn. Därför gör de skåpet med diskmedel barnsäkert. ”Diskmedel är giftigt”, säger Aiko. ”Säkerheten är viktigast.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför piper inte brandvarnaren?",
+    "options": [
+     "Den är ny.",
+     "Det finns ingen rök.",
+     "Den sitter fel.",
+     "Batteriet är slut."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik säger att batteriet är slut.",
+    "explanationJa": "{電池|でんち}が{切|き}れているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko när det brinner i pannan?",
+    "options": [
+     "Hon lägger brandfilten över pannan.",
+     "Hon häller vatten på pannan.",
+     "Hon springer ut.",
+     "Hon ringer mormor."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko tar brandfilten och lägger den över pannan.",
+    "explanationJa": "{消火|しょうか}ブランケットをフライパンにかぶせます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Man ska hälla vatten på brinnande olja.",
+    "correct": false,
+    "explanationSv": "Aiko säger att man aldrig ska hälla vatten på brinnande olja.",
+    "explanationJa": "{燃|も}えている{油|あぶら}に{水|みず}をかけてはいけません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur länge ska Erik kyla ner handen?",
+    "options": [
+     "I två minuter",
+     "I en timme",
+     "I fem sekunder",
+     "I tjugo minuter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han ska kyla ner den med kallt vatten i tjugo minuter.",
+    "explanationJa": "20{分間|ぷんかん}{冷|ひ}やします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De gör skåpet barnsäkert för att skydda Eriks systers barn.",
+    "correct": true,
+    "explanationSv": "Systern har små barn, och diskmedel är giftigt.",
+    "explanationJa": "{小|ちい}さな{子|こ}どもを{守|まも}るためです。"
+   }
+  ],
+  "factSources": [
+   "MSB: testa brandvarnaren regelbundet, Brandvarnarens dag den 1 december; häll aldrig vatten på brinnande olja; kyl brännskador med ljummet vatten i ca 20 minuter (1177)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om säkerhet i köket: brandvarnare och brandsläckare, vad man gör vid eld eller brännskador, och barnsäkert hem.",
+  "discussionPoints": [
+   "Har du en brandvarnare hemma? När testade du den senast?",
+   "Vad gör man om det brinner i en kastrull?",
+   "Vad gör man i Japan för att vara säker vid jordbävningar och bränder?",
+   "Har du varit med om en olycka i köket?"
+  ]
+ }
+}

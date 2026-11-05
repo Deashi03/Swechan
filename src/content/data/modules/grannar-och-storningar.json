@@ -1,0 +1,174 @@
+{
+ "id": "m.grannar-och-storningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Grannar och störningar",
+ "titleJa": "{近所付|きんじょづ}き{合|あ}いと{騒音|そうおん}",
+ "descriptionSv": "Grannar och störningar: ljud, klagomål, ordningsregler och att visa hänsyn.",
+ "descriptionJa": "{近所|きんじょ}の{人|ひと}と{迷惑行為|めいわくこうい}：{騒音|そうおん}、{苦情|くじょう}、{規則|きそく}、{配慮|はいりょ}。",
+ "categoryId": "R01-A01-T06",
+ "tags": [
+  "hemmet",
+  "samhälle"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.bostadsratt-och-forening"
+ ],
+ "related": [],
+ "recommendedOrder": 240,
+ "words": [
+  {
+   "senseId": "s.störa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klagomål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.störning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oväsen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyhörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordningsregel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänsyn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anslagstavla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.festa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvällstid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dunka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skälla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vänlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ursäkta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sänka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grannsämja.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Musik genom väggen",
+  "paragraphs": [
+   "Huset där Aiko och Erik bor är lyhört. En lördag kväll festar grannarna under dem. Basen dunkar genom golvet och de hör oväsen ända till klockan två.",
+   "Aiko kan inte sova. ”Ska vi ringa hyresvärden och göra ett klagomål?” frågar hon. ”Nej, vi pratar med dem först”, säger Erik.",
+   "Nästa dag knackar de på. ”Hej, vi bor ovanför er. Det var lite högt i går”, säger Erik vänligt. ”Ursäkta om vi störde er! Vi tänkte inte på det”, säger grannen. ”Vi ska sänka musiken nästa gång.”",
+   "På anslagstavlan i trappan sitter ordningsreglerna. Där står det att man inte får borra kvällstid och att det ska vara tyst efter klockan tio.",
+   "Det finns också en annan störning: en hund på tredje våningen skäller när ägaren är borta.",
+   "Erik skriver en vänlig lapp till hundens ägare. ”Om alla visar lite hänsyn blir det god grannsämja”, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hör Aiko och Erik på lördagen?",
+    "options": [
+     "En hund som skäller",
+     "Musik från en fest",
+     "Någon som borrar",
+     "Barn som springer"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Grannarna festar och basen dunkar genom golvet.",
+    "explanationJa": "{下|した}の{人|ひと}たちのパーティーの{音楽|おんがく}が{聞|き}こえます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Erik vill först prata med grannarna.",
+    "correct": true,
+    "explanationSv": "”Nej, vi pratar med dem först”, säger Erik.",
+    "explanationJa": "まず{直接話|ちょくせつはな}したいと{思|おも}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad säger grannen?",
+    "options": [
+     "Att de ska flytta",
+     "Att de inte hörde något",
+     "Att Aiko ska ringa hyresvärden",
+     "Att de ska sänka musiken nästa gång"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Vi ska sänka musiken nästa gång.”",
+    "explanationJa": "{次|つぎ}は{音|おと}を{小|ちい}さくすると{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "När ska det vara tyst enligt ordningsreglerna?",
+    "options": [
+     "Efter klockan två",
+     "Hela helgen",
+     "Efter klockan tio",
+     "Före klockan sju"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det ska vara tyst efter klockan tio.",
+    "explanationJa": "10{時以降|じいこう}は{静|しず}かにします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik är arg och skriver en arg lapp.",
+    "correct": false,
+    "explanationSv": "Erik skriver en vänlig lapp.",
+    "explanationJa": "{丁寧|ていねい}なメモを{書|か}きます。"
+   }
+  ],
+  "factSources": [
+   "Hyresvärdar och bostadsrättsföreningar har ofta ordningsregler om tystnad nattetid; störningar kan i allvarliga fall leda till uppsägning."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om grannar och störningar: ljud, ordningsregler och hur man säger till på ett vänligt sätt, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Hör du dina grannar där du bor?",
+   "Vad gör du om en granne stör dig?",
+   "Vilka regler finns det i flerbostadshus i Japan?",
+   "Hur blir man en bra granne?"
+  ]
+ }
+}

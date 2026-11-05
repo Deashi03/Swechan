@@ -12,8 +12,12 @@ import { CatalogFile, PublishedMapping, type CatalogCategory, type CatalogModule
 
 /** Maximum number of choices on one menu screen (product requirement). */
 export const MAX_MENU_CHOICES = 8;
-/** At the module level: max seven modules (+ a back button). */
-export const MAX_MODULES_PER_TOPIC = 7;
+/**
+ * At the module level: the catalog plans seven modules per topic group; a
+ * compatibility-placed older module may add an eighth choice (0.5 – old
+ * modules live inside a topic group, never directly in an area).
+ */
+export const MAX_MODULES_PER_TOPIC = 8;
 
 export type MenuItem =
   | { kind: 'category'; id: string; titleSv: string; titleJa: string | null; plannedCount: number; publishedCount: number }

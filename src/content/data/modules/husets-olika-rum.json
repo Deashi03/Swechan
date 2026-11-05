@@ -1,0 +1,169 @@
+{
+ "id": "m.husets-olika-rum",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Husets olika rum",
+ "titleJa": "{家|いえ}の{部屋|へや}",
+ "descriptionSv": "Rummen i ett hus: hall, vardagsrum, arbetsrum, källare, vind och våningar.",
+ "descriptionJa": "{家|いえ}の{部屋|へや}：{玄関|げんかん}、リビング、{書斎|しょさい}、{地下室|ちかしつ}、{屋根裏|やねうら}、{階|かい}。",
+ "categoryId": "R01-A01-T01",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hus-och-lagenheter"
+ ],
+ "related": [],
+ "recommendedOrder": 202,
+ "words": [
+  {
+   "senseId": "s.vardagsrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.entré.1",
+   "active": false
+  },
+  {
+   "senseId": "s.arbetsrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gästrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allrum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.matplats.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grovkök.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klädkammare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.källare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vind.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervåning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bottenvåning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.veranda.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vi tittar på radhuset",
+  "paragraphs": [
+   "Aiko och Erik tittar på radhuset de vill köpa. En kvinna som säljer hus visar dem runt.",
+   "De kommer in genom entrén till en stor hall. ”Här tar man av sig skorna, som i Japan”, säger Aiko. Bredvid hallen finns ett grovkök med tvättmaskin.",
+   "På bottenvåningen finns köket med en matplats och ett ljust vardagsrum. Från vardagsrummet går man ut på en veranda.",
+   "På övervåningen ligger tre sovrum. Ett kan bli barnrum och ett gästrum. Det finns också en liten klädkammare. ”Och det sista rummet kan bli mitt arbetsrum”, säger Erik.",
+   "Under huset finns en källare med ett allrum. Högst upp finns en vind. ”Där kan vi ha gamla saker”, säger Aiko.",
+   "När de går ut blåser det en kall vind. ”Det här huset vill jag ha”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör man i hallen, enligt Aiko?",
+    "options": [
+     "Man lagar mat.",
+     "Man tar av sig skorna.",
+     "Man sover.",
+     "Man tvättar."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko säger att man tar av sig skorna i hallen.",
+    "explanationJa": "{玄関|げんかん}で{靴|くつ}を{脱|ぬ}ぐと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var ligger sovrummen?",
+    "options": [
+     "På bottenvåningen",
+     "I källaren",
+     "På vinden",
+     "På övervåningen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På övervåningen ligger tre sovrum.",
+    "explanationJa": "{寝室|しんしつ}は2{階|かい}にあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Allrummet finns i källaren.",
+    "correct": true,
+    "explanationSv": "Under huset finns en källare med ett allrum.",
+    "explanationJa": "{地下室|ちかしつ}に{団|だん}らん{室|しつ}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "”Högst upp finns en vind.” Vad betyder ”vind” här?",
+    "options": [
+     "Kall luft ute",
+     "Ett fönster",
+     "Utrymmet under taket",
+     "En trappa"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Här betyder vind utrymmet högst upp i huset.",
+    "explanationJa": "ここでの vind は{屋根裏|やねうら}のことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik vill arbeta hemma ibland.",
+    "correct": true,
+    "explanationSv": "Han säger att ett rum kan bli hans arbetsrum.",
+    "explanationJa": "1{部屋|へや}を{自分|じぶん}の{書斎|しょさい}にしたいと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om rummen i en bostad: vilka rum du har, hur japanska och svenska hem är indelade, och vilket rum du tycker mest om.",
+  "discussionPoints": [
+   "Vilka rum finns i din bostad?",
+   "Vilket rum tillbringar du mest tid i?",
+   "Hur skiljer sig japanska hem från svenska, till exempel genkan och hall?",
+   "Om du fick ett extra rum, vad skulle du använda det till?"
+  ]
+ }
+}

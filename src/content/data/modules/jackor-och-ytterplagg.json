@@ -1,0 +1,169 @@
+{
+ "id": "m.jackor-och-ytterplagg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Jackor och ytterplagg",
+ "titleJa": "ジャケットとアウター",
+ "descriptionSv": "Jackor och ytterkläder för olika väder: vinterjacka, dunjacka, regnställ, overall, huva och dragkedja.",
+ "descriptionJa": "{天気|てんき}に{合|あ}わせたジャケットとアウター：{冬|ふゆ}のジャケット、ダウン、レインスーツ、スノースーツ、フード、ファスナー。",
+ "categoryId": "R01-A03-T01",
+ "tags": [
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.underklader-och-strumpor"
+ ],
+ "related": [],
+ "recommendedOrder": 305,
+ "words": [
+  {
+   "senseId": "s.ytterkläder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kappa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinterjacka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.täckjacka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dunjacka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vårjacka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.regnjacka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regnbyxor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regnställ.1",
+   "active": false
+  },
+  {
+   "senseId": "s.galonbyxor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.overall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dragkedja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-ner.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rätt jacka för vädret",
+  "paragraphs": [
+   "I Sverige ändras vädret ofta. Därför har familjen många ytterkläder i hallen.",
+   "I oktober regnar det mycket. Leo har regnställ: regnjacka och galonbyxor. Han älskar att hoppa i vattnet. Mia vill inte ha regnbyxor, bara regnjacka.",
+   "När det regnar säger Aiko alltid: ”Dra upp huvan!” Men Mia vill inte, för håret blir fult.",
+   "I november tar de fram vinterjackorna. Leo har en blå täckjacka och Mia en vit dunjacka. Lillasyster Ella har en röd overall, för hon är bara två år.",
+   "Aiko har en lång svart kappa till jobbet. Erik har en gammal vinterjacka, och dragkedjan har gått sönder. ”Jag kan inte dra upp den”, säger han. ”Köp en ny!” säger Aiko.",
+   "I april kan alla dra ner dragkedjorna och ta fram vårjackorna. ”Äntligen!” säger Mia."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har Leo på sig när det regnar?",
+    "options": [
+     "En kappa",
+     "Regnställ",
+     "En dunjacka",
+     "En overall"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Leo har regnställ: regnjacka och galonbyxor.",
+    "explanationJa": "レインスーツを{着|き}ています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför vill Mia inte dra upp huvan?",
+    "options": [
+     "Det är för varmt.",
+     "Håret blir fult.",
+     "Huvan är trasig.",
+     "Hon har mössa."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mia vill inte, för håret blir fult.",
+    "explanationJa": "{髪|かみ}がくずれるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vem har en overall?",
+    "options": [
+     "Ella",
+     "Leo",
+     "Mia",
+     "Aiko"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Lillasyster Ella har en röd overall.",
+    "explanationJa": "エラです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Eriks vinterjacka har en trasig dragkedja.",
+    "correct": true,
+    "explanationSv": "Dragkedjan har gått sönder.",
+    "explanationJa": "ファスナーが{壊|こわ}れています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia är glad när det blir vår.",
+    "correct": true,
+    "explanationSv": "”Äntligen!” säger Mia.",
+    "explanationJa": "「やっと！」と{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om jackor och ytterkläder för olika väder och årstider, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Hur många jackor har du?",
+   "Vad har du på dig när det regnar?",
+   "Behöver man dunjacka i Tokyo?",
+   "Vilken årstid tycker du bäst om, och vad har du på dig då?"
+  ]
+ }
+}

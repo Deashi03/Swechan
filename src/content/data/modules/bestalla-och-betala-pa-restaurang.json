@@ -1,0 +1,169 @@
+{
+ "id": "m.bestalla-och-betala-pa-restaurang",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Beställa och betala på restaurang",
+ "titleJa": "レストランでの{注文|ちゅうもん}と{支払|しはら}い",
+ "descriptionSv": "Att boka bord, beställa, klaga och betala på restaurang – med kort, Swish eller kontant.",
+ "descriptionJa": "レストランで{予約|よやく}・{注文|ちゅうもん}・{苦情|くじょう}・{支払|しはら}いをすること：カード、スウィッシュ、{現金|げんきん}。",
+ "categoryId": "R01-A02-T05",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.restaurangmenyer"
+ ],
+ "related": [],
+ "recommendedOrder": 131,
+ "words": [
+  {
+   "senseId": "s.boka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bokning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ledig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beställa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.servitör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nota.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betalning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.swisha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvitto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dricks.1",
+   "active": true
+  },
+  {
+   "senseId": "s.var-för-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-på-notan.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kan vi få notan?",
+  "paragraphs": [
+   "Aiko har bokat ett bord på en restaurang för sex vänner. ”Jag har en bokning i namnet Sato”, säger hon. Servitören visar dem till ett ledigt bord vid fönstret.",
+   "Alla läser menyn. Efter en stund kommer servitören och tar beställningen. Aiko beställer fisk, och de andra tar pasta och kött.",
+   "Erik får sin soppa, men den är kall. Han klagar, och servitören ger honom en ny. ”Förlåt!” säger hon.",
+   "När de har ätit, ber Aiko om notan. ”Ska vi dela på notan, eller betala var för sig?” frågar Erik. De bestämmer sig för att dela.",
+   "Aiko betalar med kort, för restaurangen tar inte kontant betalning. De andra swishar henne sin del. Hon tar kvittot och lägger det i väskan.",
+   "”Ska man ge dricks i Sverige?” frågar Aiko. ”Man måste inte, men om man är nöjd kan man ge lite”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många vänner har Aiko bokat bord för?",
+    "options": [
+     "Sex",
+     "Två",
+     "Fyra",
+     "Tio"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko har bokat ett bord för sex vänner.",
+    "explanationJa": "6{人|にん}{分|ぶん}の{席|せき}を{予約|よやく}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför klagar Erik?",
+    "options": [
+     "Han får fel mat.",
+     "Soppan är kall.",
+     "Det tar för lång tid.",
+     "Notan är för hög."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik klagar för att soppan är kall.",
+    "explanationJa": "スープが{冷|つめ}たかったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Vännerna betalar var för sig.",
+    "correct": false,
+    "explanationSv": "De bestämmer sig för att dela på notan.",
+    "explanationJa": "{割|わ}り{勘|かん}にすることにしました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur får Aiko pengar från de andra?",
+    "options": [
+     "De ger henne kontanter.",
+     "De betalar med kort till servitören.",
+     "De swishar henne.",
+     "De betalar nästa gång."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De andra swishar henne sin del.",
+    "explanationJa": "{他|ほか}の{人|ひと}たちはスウィッシュで{送金|そうきん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man måste inte ge dricks i Sverige.",
+    "correct": true,
+    "explanationSv": "Erik säger att man inte måste, men att man kan ge lite om man är nöjd.",
+    "explanationJa": "{必須|ひっす}ではないけれど、{満足|まんぞく}したら{少|すこ}し{渡|わた}せると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Swish och kortbetalning dominerar i Sverige; dricks är frivillig (allmän kunskap)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att beställa och betala på restaurang: att boka bord, klaga, dela på notan, dricks och betalning i Sverige och i Japan.",
+  "discussionPoints": [
+   "Brukar du boka bord, eller går du bara dit?",
+   "Hur betalar man på restaurang i Japan? Delar man på notan?",
+   "Vad tycker du om dricks?",
+   "Har du klagat på en restaurang någon gång?"
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "m.avlopp-och-vattenkranar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Avlopp och vattenkranar",
+ "titleJa": "{排水|はいすい}と{蛇口|じゃぐち}",
+ "descriptionSv": "Vatten i huset: kranar, rör, avlopp, golvbrunn, stopp och att rensa.",
+ "descriptionJa": "{家|いえ}の{水回|みずまわ}り：{蛇口|じゃぐち}、パイプ、{排水|はいすい}、{排水口|はいすいこう}、つまり、{掃除|そうじ}。",
+ "categoryId": "R01-A01-T04",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tvattstuga-och-tvattmaskiner"
+ ],
+ "related": [],
+ "recommendedOrder": 227,
+ "words": [
+  {
+   "senseId": "s.rör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dricksvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kallvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenkran.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blandare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.huvudkran.1",
+   "active": true
+  },
+  {
+   "senseId": "s.droppa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smutsvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.golvbrunn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenlås.1",
+   "active": false
+  },
+  {
+   "senseId": "s.propp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rensa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Stopp i avloppet",
+  "paragraphs": [
+   "Vattnet rinner inte ur badkaret. ”Det är stopp i avloppet”, säger Erik. Smutsvattnet står kvar.",
+   "Han rensar golvbrunnen i badrummet. Den är full av hår. Sedan skruvar han av vattenlåset under handfatet. Där hittar han Aikos gamla ring!",
+   "I köket droppar vattenkranen hela natten. ”Vi måste byta blandaren”, säger Aiko. Innan Erik börjar, stänger han av huvudkranen, så att inget vatten kommer.",
+   "En granne berättar att vattenledningarna i huset är gamla. ”Rören kan gå sönder”, säger han. ”Häll aldrig fett i avloppet, då blir det en propp.”",
+   "När allt fungerar igen, dricker Aiko ett glas vatten direkt från kranen. ”I Sverige är kranvattnet bra dricksvatten”, säger Erik.",
+   "På vintern är kallvattnet så kallt att det gör ont i händerna."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför rinner vattnet inte ur badkaret?",
+    "options": [
+     "Kranen är stängd.",
+     "Huvudkranen är trasig.",
+     "Det är stopp i avloppet.",
+     "Det är för mycket vatten."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik säger att det är stopp i avloppet.",
+    "explanationJa": "{排水|はいすい}がつまっているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad hittar Erik i vattenlåset?",
+    "options": [
+     "Aikos gamla ring",
+     "Mycket fett",
+     "En tandborste",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Under handfatet hittar han Aikos gamla ring.",
+    "explanationJa": "アイコの{古|ふる}い{指輪|ゆびわ}を{見|み}つけます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik stänger av huvudkranen innan han byter blandaren.",
+    "correct": true,
+    "explanationSv": "Innan Erik börjar stänger han av huvudkranen.",
+    "explanationJa": "{作業|さぎょう}の{前|まえ}に{元栓|もとせん}を{閉|し}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför ska man inte hälla fett i avloppet?",
+    "options": [
+     "Det luktar gott.",
+     "Rören blir varma.",
+     "Det blir en propp.",
+     "Vattnet blir varmt."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Grannen säger att det blir en propp.",
+    "explanationJa": "つまりの{原因|げんいん}になるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan dricka vatten från kranen i Sverige.",
+    "correct": true,
+    "explanationSv": "Erik säger att kranvattnet är bra dricksvatten.",
+    "explanationJa": "{水道水|すいどうすい}は{飲|の}めると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vatten i huset: kranar, avlopp och stopp, kranvatten i Sverige och i Japan, och vad du gör när något går sönder.",
+  "discussionPoints": [
+   "Dricker du vatten från kranen?",
+   "Har du haft stopp i avloppet? Vad gjorde du?",
+   "Vet du var huvudkranen sitter där du bor?",
+   "Kan du laga en droppande kran själv?"
+  ]
+ }
+}

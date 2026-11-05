@@ -1,0 +1,169 @@
+{
+ "id": "m.farger-och-inredningsstilar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Färger och inredningsstilar",
+ "titleJa": "{色|いろ}とインテリアスタイル",
+ "descriptionSv": "Färger, mönster och inredningsstilar: skandinavisk, minimalistisk, lantlig, tapet, randig och rutig.",
+ "descriptionJa": "{色|いろ}・{模様|もよう}・インテリアスタイル：{北欧|ほくおう}、ミニマル、カントリー、{壁紙|かべがみ}、ストライプ、チェック。",
+ "categoryId": "R01-A01-T02",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.lampor-och-belysning"
+ ],
+ "related": [],
+ "recommendedOrder": 213,
+ "words": [
+  {
+   "senseId": "s.inredning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inredningsstil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skandinavisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minimalistisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lantlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tapet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tapetsera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enfärgad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mönstrad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.randig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rutig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beige.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turkos.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lila.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pastell.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vilken stil?",
+  "paragraphs": [
+   "Nu ska Aiko och Erik bestämma inredningen. De har olika smak.",
+   "Erik gillar skandinavisk inredningsstil: vita väggar, ljust trä och enfärgade möbler i grått och beige. Aiko tycker också om det, men hon vill ha lite mer färg.",
+   "”I Japan är många minimalistiska”, säger hon. ”Men jag tycker om färg.” Hon vill tapetsera sovrummet med en mönstrad tapet med blommor.",
+   "Till köket vill Erik ha en lantlig stil med gamla möbler. Aiko lägger en rutig duk på bordet och en randig matta på golvet.",
+   "Barnrummet målar de i pastell, och badrummet blir turkost. Eriks syster säger att den lila soffan är för mycket. ”Den är ju fin!” säger Aiko.",
+   "Till slut blir det en blandning av stilar. ”Det viktigaste är att det känns som vårt hem”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken inredningsstil gillar Erik?",
+    "options": [
+     "Lantlig överallt",
+     "Skandinavisk",
+     "Japansk",
+     "Minimalistisk"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik gillar skandinavisk inredningsstil.",
+    "explanationJa": "エリックは{北欧|ほくおう}スタイルが{好|す}きです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur vill Aiko göra i sovrummet?",
+    "options": [
+     "Måla det vitt",
+     "Tapetsera med en mönstrad tapet",
+     "Ha det minimalistiskt",
+     "Ha en lila soffa där"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon vill tapetsera sovrummet med en mönstrad tapet med blommor.",
+    "explanationJa": "{花柄|はながら}の{壁紙|かべがみ}を{貼|は}りたいと{思|おも}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Badrummet blir turkost.",
+    "correct": true,
+    "explanationSv": "Texten säger att badrummet blir turkost.",
+    "explanationJa": "バスルームはターコイズブルーになります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Erik vill ha ”enfärgade” möbler. Hur ser de ut?",
+    "options": [
+     "De har ränder.",
+     "De har många färger.",
+     "De är rutiga.",
+     "De har bara en färg och inget mönster."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Enfärgad betyder med bara en färg och utan mönster.",
+    "explanationJa": "enfärgad は{無地|むじ}という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko och Erik väljer bara en stil i hela huset.",
+    "correct": false,
+    "explanationSv": "Det blir en blandning av stilar.",
+    "explanationJa": "いろいろなスタイルの{組|く}み{合|あ}わせになりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om färger och inredning: vilken stil du gillar, skandinavisk och japansk inredning, och vilka färger du har hemma.",
+  "discussionPoints": [
+   "Vilken inredningsstil gillar du?",
+   "Varför tror du att skandinavisk stil är populär i Japan?",
+   "Vilka färger har du på väggarna hemma?",
+   "Tycker du om mönster eller enfärgat?"
+  ]
+ }
+}

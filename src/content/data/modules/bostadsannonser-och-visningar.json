@@ -1,0 +1,170 @@
+{
+ "id": "m.bostadsannonser-och-visningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bostadsannonser och visningar",
+ "titleJa": "{住宅広告|じゅうたくこうこく}と{内覧|ないらん}",
+ "descriptionSv": "Att köpa bostad: annons, visning, mäklare, budgivning, slutpris och bolån.",
+ "descriptionJa": "{住|す}まいの{購入|こうにゅう}：{広告|こうこく}、{内覧|ないらん}、{不動産業者|ふどうさんぎょうしゃ}、{入札|にゅうさつ}、{最終価格|さいしゅうかかく}、{住宅|じゅうたく}ローン。",
+ "categoryId": "R01-A01-T06",
+ "tags": [
+  "hemmet",
+  "ekonomi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.veckostadning-och-rutiner"
+ ],
+ "related": [],
+ "recommendedOrder": 236,
+ "words": [
+  {
+   "senseId": "s.annons.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäklare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.objekt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.intresserad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spekulant.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utgångspris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.buda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.budgivning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säljare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köpare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bolån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillträde.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Budgivningen",
+  "paragraphs": [
+   "Innan Aiko och Erik köpte radhuset såg de en annons på internet. Utgångspriset var tre miljoner kronor.",
+   "På visningen på söndagen kom många spekulanter. Mäklaren visade objektet och berättade om huset. ”Många är intresserade”, sa hon.",
+   "Efter visningen började budgivningen. Aiko och Erik lade ett första bud. Sedan budade en annan familj högre. Det fortsatte i en vecka.",
+   "”I Japan har vi inte budgivning på det här sättet”, sa Aiko. ”Man betalar oftast det pris som står.” I Sverige blir slutpriset ofta högre än utgångspriset.",
+   "Till slut vann de. Slutpriset blev tre komma fyra miljoner. Banken gav dem ett bolån. Säljaren var nöjd, och köparna var glada.",
+   "Tillträdet var den första juni. Då fick de nycklarna av mäklaren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var hittade de huset först?",
+    "options": [
+     "Hos grannen",
+     "I tidningen",
+     "I en annons på internet",
+     "På en visning"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De såg en annons på internet.",
+    "explanationJa": "インターネットの{広告|こうこく}で{見|み}つけました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge pågick budgivningen?",
+    "options": [
+     "I en vecka",
+     "I en dag",
+     "I en månad",
+     "I ett år"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det fortsatte i en vecka.",
+    "explanationJa": "1{週間|しゅうかん}{続|つづ}きました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Slutpriset blev lägre än utgångspriset.",
+    "correct": false,
+    "explanationSv": "Slutpriset blev tre komma fyra miljoner, högre än utgångspriset på tre miljoner.",
+    "explanationJa": "{最終価格|さいしゅうかかく}は{売|う}り{出|だ}し{価格|かかく}より{高|たか}くなりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är annorlunda i Japan, enligt Aiko?",
+    "options": [
+     "Man lägger alltid många bud.",
+     "Det finns inga mäklare.",
+     "Man får inget bolån.",
+     "Man betalar oftast det pris som står."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko säger att man oftast betalar det pris som står.",
+    "explanationJa": "{表示|ひょうじ}された{値段|ねだん}で{買|か}うことが{多|おお}いと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko och Erik fick köpa huset.",
+    "correct": true,
+    "explanationSv": "De vann budgivningen och fick nycklarna vid tillträdet.",
+    "explanationJa": "{入札|にゅうさつ}に{勝|か}って{鍵|かぎ}を{受|う}け{取|と}りました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att köpa bostad: annonser, visningar, budgivning och bolån, och hur det fungerar i Japan jämfört med Sverige.",
+  "discussionPoints": [
+   "Har du varit på en visning?",
+   "Vad tycker du om svensk budgivning?",
+   "Hur köper man en bostad i Japan?",
+   "Vad tittar du på först i en bostadsannons?"
+  ]
+ }
+}

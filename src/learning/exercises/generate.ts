@@ -26,26 +26,47 @@ function glossTerms(markup: string): string[] {
   return stripFurigana(markup).split(/[、；;,（）()]/).map((s) => s.trim()).filter((s) => s.length > 0);
 }
 
-/** Senses that must not be used as distractors because they could also be a correct answer. */
-function conflicts(target: SenseRef, cand: SenseRef): boolean {
-  if (cand.sense.id === target.sense.id || cand.entry.id === target.entry.id) return true;
+const glossCache = new WeakMap<object, Set<string>>();
+/** Gloss terms of a sense, cached per sense object (the repository's data is immutable). */
+function glossSet(r: SenseRef): Set<string> {
+  let s = glossCache.get(r.sense);
+  if (!s) { s = new Set(glossTerms(r.sense.ja)); glossCache.set(r.sense, s); }
+  return s;
+}
+
+/** Senses that must not be offered together with `target` (same word, synonym, shared Japanese gloss). */
+function conflictsWith(target: SenseRef): (cand: SenseRef) => boolean {
   const rel = new Set((target.sense.synonyms ?? []).filter((r) => r.relation !== 'antonym').map((r) => r.senseId));
-  if (rel.has(cand.sense.id)) return true;
-  if ((cand.sense.synonyms ?? []).some((r) => r.senseId === target.sense.id && r.relation !== 'antonym')) return true;
-  const t = new Set(glossTerms(target.sense.ja));
-  return glossTerms(cand.sense.ja).some((x) => t.has(x)) || cand.entry.lemma === target.entry.lemma;
+  const t = glossSet(target);
+  return (cand) => {
+    if (cand.sense.id === target.sense.id || cand.entry.id === target.entry.id) return true;
+    if (rel.has(cand.sense.id)) return true;
+    if ((cand.sense.synonyms ?? []).some((r) => r.senseId === target.sense.id && r.relation !== 'antonym')) return true;
+    if (cand.entry.lemma === target.entry.lemma) return true;
+    for (const x of glossSet(cand)) if (t.has(x)) return true;
+    return false;
+  };
+}
+
+const allSensesCache = new WeakMap<object, SenseRef[]>();
+function allSenses(repo: ContentRepository): SenseRef[] {
+  let a = allSensesCache.get(repo);
+  if (!a) { a = repo.entries.flatMap((e) => e.senses.map((s) => repo.getSense(s.id)!)); allSensesCache.set(repo, a); }
+  return a;
 }
 
 function distractors(target: SenseRef, ctx: GenContext, n: number, rng: () => number, filter?: (r: SenseRef) => boolean): SenseRef[] {
   const pool = ctx.poolSenseIds.map((id) => ctx.repo.getSense(id)).filter((r): r is SenseRef => !!r);
-  const all = ctx.repo.entries.flatMap((e) => e.senses.map((_, i) => ctx.repo.getSense(e.senses[i]!.id)!));
-  const ok = (r: SenseRef) => !conflicts(target, r) && (!filter || filter(r));
+  const conflicts = conflictsWith(target);
+  const ok = (r: SenseRef) => !conflicts(r) && (!filter || filter(r));
   const samePos = (r: SenseRef) => r.entry.pos === target.entry.pos;
+  const poolOk = pool.filter(ok);
+  const allOk = allSenses(ctx.repo).filter(ok);
   const ordered = [
-    ...shuffle(pool.filter((r) => ok(r) && samePos(r)), rng),
-    ...shuffle(all.filter((r) => ok(r) && samePos(r)), rng),
-    ...shuffle(pool.filter(ok), rng),
-    ...shuffle(all.filter(ok), rng),
+    ...shuffle(poolOk.filter(samePos), rng),
+    ...shuffle(allOk.filter(samePos), rng),
+    ...shuffle(poolOk, rng),
+    ...shuffle(allOk, rng),
   ];
   const out: SenseRef[] = [];
   const seenEntries = new Set<string>();
@@ -64,6 +85,20 @@ function assemble(correct: ChoiceOption, wrong: ChoiceOption[], rng: () => numbe
 }
 
 const lemmaLabel = (e: VocabularyEntry) => (e.inflection.kind === 'noun' ? `${e.inflection.gender} ${e.lemma}` : e.lemma);
+
+/**
+ * Hide every form of the answer word in a text shown with a recall exercise
+ * (feedback 0.4: "the answer is in the question"). Multi-word forms first.
+ */
+export function maskAnswer(text: string, entry: VocabularyEntry): string {
+  const forms = [...new Set([entry.lemma, ...allForms(entry)].map((f) => f.toLowerCase()))].sort((a, b) => b.length - a.length);
+  let out = text;
+  for (const f of forms) {
+    const esc = f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+');
+    out = out.replace(new RegExp(`(^|[^\\p{L}])${esc}(?=$|[^\\p{L}])`, 'giu'), '$1＿＿＿');
+  }
+  return out;
+}
 
 function contextLine(ref: SenseRef): string | undefined {
   // Multi-sense headwords: show an example so the intended meaning is unambiguous.
@@ -103,10 +138,10 @@ export function genReverseChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise
   );
   return {
     type: 'reverse_choice', senseId: ref.sense.id, dimension: 'meaning',
-    prompt: ref.sense.ja, promptLang: 'ja', subPrompt: ref.sense.defJa, subPromptLang: 'ja',
+    prompt: maskAnswer(ref.sense.ja, ref.entry), promptLang: 'ja', subPrompt: maskAnswer(ref.sense.defJa, ref.entry), subPromptLang: 'ja',
     instructionSv: 'Vilket svenskt ord passar?', instructionJa: 'どのスウェーデン{語|ご}ですか。',
     options, correctIndex,
-    hint: { text: ref.sense.defSv, lang: 'sv' },
+    hint: { text: maskAnswer(ref.sense.defSv, ref.entry), lang: 'sv' },
     explanation: { text: ref.sense.examples[0]!.sv, lang: 'sv' },
   };
 }
@@ -204,7 +239,7 @@ export function genSpelling(ref: SenseRef, ctx: GenContext): TypedExercise {
   const accepted = e.inflection.kind === 'noun' ? [e.lemma, `${e.inflection.gender} ${e.lemma}`] : [e.lemma];
   return {
     type: 'spelling', senseId: ref.sense.id, dimension: 'spelling',
-    prompt: ref.sense.ja, promptLang: 'ja', subPrompt: ref.sense.defJa, subPromptLang: 'ja',
+    prompt: maskAnswer(ref.sense.ja, ref.entry), promptLang: 'ja', subPrompt: maskAnswer(ref.sense.defJa, ref.entry), subPromptLang: 'ja',
     instructionSv: 'Skriv ordet på svenska.',
     instructionJa: 'スウェーデン{語|ご}で{書|か}いてください。',
     accepted,

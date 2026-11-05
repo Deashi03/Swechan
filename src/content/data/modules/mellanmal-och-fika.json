@@ -1,0 +1,169 @@
+{
+ "id": "m.mellanmal-och-fika",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Mellanmål och fika",
+ "titleJa": "{間食|かんしょく}とフィーカ",
+ "descriptionSv": "Fika och mellanmål: kafferast, kaffebröd, påtår, semlor och att bjuda på fika.",
+ "descriptionJa": "フィーカとおやつ：コーヒー{休憩|きゅうけい}、{焼|や}き{菓子|がし}、おかわり、セムラ、そしてごちそうすること。",
+ "categoryId": "R01-A02-T05",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.lunch-och-middag"
+ ],
+ "related": [],
+ "recommendedOrder": 128,
+ "words": [
+  {
+   "senseId": "s.fika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fika-verb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kafferast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellanmål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kafé.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konditori.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kaffebröd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.småkaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påtår.1",
+   "active": false
+  },
+  {
+   "senseId": "s.semla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.marsipan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.prinsesstårta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dammsugare.2",
+   "active": false
+  },
+  {
+   "senseId": "s.latte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bjuda-på.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ska vi fika?",
+  "paragraphs": [
+   "Det första svenska ord Aiko lärde sig var fika. ”Ska vi fika?” frågar kollegorna varje dag klockan tre. Då har de kafferast.",
+   "På jobbet dricker de kaffe och äter kaffebröd: kanelbullar eller småkakor. ”Förr skulle man ha sju sorters kakor”, berättar en äldre kollega.",
+   "En lördag går Aiko och Erik till ett konditori, ett kafé i gamla stan. Där finns prinsesstårta med grön marsipan och dammsugare, gröna kakor med choklad.",
+   "Aiko tar en latte, och Erik tar vanligt kaffe. ”Påtår är gratis”, säger han och hämtar en kopp till.",
+   "Det är februari, så de delar på en semla. ”I Japan äter vi inte så mycket grädde”, säger Aiko, men hon tycker att den är god.",
+   "Erik bjuder på fikat. ”Nästa gång bjuder jag”, säger Aiko. Hemma ger hon sin systerson en banan som mellanmål. ”Inget kaffebröd före middagen!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När har kollegorna kafferast?",
+    "options": [
+     "Klockan tre",
+     "Klockan tolv",
+     "På morgonen",
+     "På kvällen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kollegorna frågar varje dag klockan tre, och då har de kafferast.",
+    "explanationJa": "{毎日|まいにち}3{時|じ}にコーヒー{休憩|きゅうけい}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är en dammsugare på konditoriet?",
+    "options": [
+     "En maskin",
+     "En sorts bröd",
+     "En grön kaka med choklad",
+     "En kopp kaffe"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Dammsugare är gröna kakor med choklad.",
+    "explanationJa": "{緑|みどり}のチョコレート{菓子|がし}のことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik måste betala för en kopp kaffe till.",
+    "correct": false,
+    "explanationSv": "Påtår är gratis.",
+    "explanationJa": "おかわりは{無料|むりょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför delar de på en semla?",
+    "options": [
+     "Det är februari, och då äter man semlor.",
+     "Aiko tycker inte om grädde.",
+     "Den är för stor.",
+     "Det finns bara en."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är februari, och då äter man semlor.",
+    "explanationJa": "2{月|がつ}はセムラを{食|た}べる{時期|じき}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko ska betala nästa gång de fikar.",
+    "correct": true,
+    "explanationSv": "Hon säger: ”Nästa gång bjuder jag.”",
+    "explanationJa": "「{次|つぎ}は{私|わたし}がおごる」と{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Svenska fikatraditioner: semlor kring fettisdagen, sju sorters kakor, gratis påtår (allmänt kända)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fika: hur fika fungerar i Sverige, kaffe och kakor, kaféer och konditorier, och om det finns något liknande i Japan.",
+  "discussionPoints": [
+   "Fikar du? Med vem och hur ofta?",
+   "Finns det något som liknar fika i Japan?",
+   "Vilket svenskt kaffebröd vill du smaka?",
+   "Vad äter du som mellanmål?"
+  ]
+ }
+}

@@ -1,4 +1,5 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { Art } from '../art/Art';
 import { useEffect, useState } from 'react';
 import type { CatalogIndex } from '../../content/catalog/catalogIndex';
 import { loadCatalog } from '../../content/catalog/loadCatalog';
@@ -38,8 +39,13 @@ export function moduleStatusLabel(p: ModuleProgressRecord | undefined): string {
 export function ModuleCard({ m, progress }: { m: Module; progress?: ModuleProgressRecord }) {
   return (
     <a className="card clickable" href={href({ name: 'module', id: m.id })} style={{ textDecoration: 'none' }}>
-      <div className="row between"><strong>{m.titleSv}</strong><span className="badge">{m.level}</span></div>
-      <Ja text={m.titleJa} className="small muted" as="div" />
+      <div className="row" style={{ gap: 'var(--sp-3)', alignItems: 'flex-start' }}>
+        <Art id={m.id} size={56} />
+        <div className="grow">
+          <div className="row between"><strong>{m.titleSv}</strong><span className="badge">{m.level}</span></div>
+          <Ja text={m.titleJa} className="small muted" as="div" />
+        </div>
+      </div>
       {m.prerequisites.length > 0 && (
         <div className="xsmall muted" style={{ marginTop: 4 }}>Bygger på: {m.prerequisites.map((id) => getContent().getModule(id)?.titleSv).filter(Boolean).join(', ')}</div>
       )}

@@ -1,8 +1,18 @@
 # Projektstatus – överlämning
 
-**Version:** 0.4.0 · **Senast uppdaterad:** 2026-11-04 · **Gren:** `main` (publiceras via GitHub Pages; 0.4 utvecklades i grenarna `claude/swechan-0.4-phase-a` … `-phase-g`)
+**Version:** 0.5.0 · **Senast uppdaterad:** 2026-11-05 · **Gren:** `main` (publiceras via GitHub Pages; 0.5 utvecklades i grenen `claude/swechan-0.5-art-styles`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.5 – släppt 2026-11-05
+
+- **Rättat:** svaret syntes i frågan (omvända val/stavning) – `maskAnswer()` + valideringsregel; äldre moduler låg i fel överkategori – nu i ämnesgrupper, och validatorn kräver det.
+- **Bilder, stil "Platt"** (användarens val av fem varianter): `src/ui/art/`. **Varje ny modul måste få ett eget motiv** i `motifs.ts` (`MOTIFS` + `MODULE_MOTIF[catalogId]`), annars fallerar `art.test.ts`. Granska med `npm run art:sheet`.
+- **102 nya moduler**: Mat & måltider (39) och Hem & boende (42) är helt publicerade; Kläder & personlig stil har Vardagskläder, Skor & accessoarer och Textilier & material klara (21). Totalt 110 publicerade moduler. Alla ord är AI-utkast (`ai-draft`), ingen mänsklig granskning.
+- **Kedjor:** en linjär förkunskapskedja per område (`recommendedOrder` 1xx mat, 2xx hem, 3xx kläder). Klädkedjan börjar efter *Flyttdag och adressändring*; nästa klädmodul (*Klädstorlekar och mått*, SWC-VAR-03-04-01) ska ha *Att känna igen kvalitet* som förkunskap och ordning 322.
+- **Kvar i Kläder & personlig stil:** Storlek & passform, Tvätt & klädvård, Skönhet & grooming (21 planerade). Ord som medvetet sparats till dem: storlek/mått/midja, löst/tajt, prova, söm, dragkedjans detaljer, krympa, skrynklig, stryka, fläck, nål, frisyr, smink, rakning m.m.
+- **Ord som hör till senare överämnen** har hållits utanför (budget, lån, ränta, försäkring, folkbokföring, konflikt, glasögon, väva/sticka, mikroplast, abonnemang …). Kontrollera katalogtitlarna innan ett ord görs till målord.
+- Testsviten: 248 tester, ~25 s. `module:validate` och distraktorvalet är optimerade (se CHANGELOG).
 
 ## 0.4 – släppt 2026-11-04
 
@@ -16,7 +26,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas G klar**: version 0.4.0, migreringstest 0.3.1→0.4 med nollställningen på och av, e2e-jobb i CI, dokumentation. WebKit/fysisk iPhone: EJ TESTAT.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
-## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.4.0)
+## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.5.0)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
 

@@ -1,0 +1,169 @@
+{
+ "id": "m.hus-och-lagenheter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hus och lägenheter",
+ "titleJa": "{一戸建|いっこだ}てとアパート",
+ "descriptionSv": "Olika sorters bostäder: lägenhet, villa, radhus och parhus, och delar av huset utomhus.",
+ "descriptionJa": "いろいろな{住|す}まい：アパート、{一戸建|いっこだ}て、テラスハウス、{二戸建|にこだ}て、そして{家|いえ}の{外|そと}まわり。",
+ "categoryId": "R01-A01-T01",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hogtidsmat-och-traditioner"
+ ],
+ "related": [],
+ "recommendedOrder": 201,
+ "words": [
+  {
+   "senseId": "s.lägenhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyreshus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höghus.1",
+   "active": false
+  },
+  {
+   "senseId": "s.villa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radhus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parhus.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tomt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.balkong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uteplats.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fasad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tegel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grind.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Var vill du bo?",
+  "paragraphs": [
+   "Aiko och Erik bor i en lägenhet i ett hyreshus i centrum. Den ligger på fjärde våningen och har en liten balkong. Nu vill de flytta till något större.",
+   "De åker runt och tittar på olika hus. Först tittar de på ett höghus. ”Utsikten är fin, men det är så högt”, säger Aiko.",
+   "Sedan åker de ut till en förort. Där finns radhus som sitter ihop i långa rader, och några parhus. ”I ett radhus har man grannar på båda sidor”, säger Erik.",
+   "Längre bort ligger villor med stora tomter. Eriks föräldrar bor i en gammal villa av tegel med gul fasad. De har ett garage och en uteplats bakom huset.",
+   "”En villa är dyr, och man måste klippa gräset”, säger Erik. ”Men barn kan leka i trädgården, bakom grinden”, säger Aiko.",
+   "De bestämmer sig för ett radhus. Det har tre våningar, en liten tomt och en uteplats. ”Perfekt”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var bor Aiko och Erik nu?",
+    "options": [
+     "I en lägenhet på fjärde våningen",
+     "I en villa",
+     "I ett radhus",
+     "I ett höghus utanför stan"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De bor i en lägenhet i ett hyreshus, på fjärde våningen.",
+    "explanationJa": "{今|いま}はアパートの4{階|かい}に{住|す}んでいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har man i ett radhus, enligt Erik?",
+    "options": [
+     "Grannar på båda sidor",
+     "En stor tomt",
+     "Ett stort garage",
+     "Utsikt över hela stan"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Erik säger att man har grannar på båda sidor i ett radhus.",
+    "explanationJa": "テラスハウスでは{両隣|りょうどなり}に{隣人|りんじん}がいると{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Eriks föräldrar bor i en villa av tegel.",
+    "correct": true,
+    "explanationSv": "De bor i en gammal villa av tegel med gul fasad.",
+    "explanationJa": "れんが{造|づく}りの{古|ふる}い{一戸建|いっこだ}てです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför tycker Erik inte om villor?",
+    "options": [
+     "De är för små.",
+     "De ligger för nära centrum.",
+     "De är dyra, och man måste klippa gräset.",
+     "De har ingen trädgård."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik säger att en villa är dyr och att man måste klippa gräset.",
+    "explanationJa": "{高|たか}いし、{芝刈|しばか}りをしなければならないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Till slut väljer de ett hus som är mitt emellan en lägenhet och en villa.",
+    "correct": true,
+    "explanationSv": "De väljer ett radhus, med en liten tomt och en uteplats.",
+    "explanationJa": "テラスハウスを{選|えら}びました。アパートと{一戸建|いっこだ}ての{中間|ちゅうかん}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om olika sorters bostäder: lägenheter, villor och radhus i Sverige och i Japan, och hur du bor eller skulle vilja bo.",
+  "discussionPoints": [
+   "Bor du i en lägenhet eller i ett hus?",
+   "Hur ser ett vanligt bostadsområde ut i Japan?",
+   "Vad är bra och dåligt med att bo i en villa?",
+   "Hur skulle ditt drömhus se ut?"
+  ]
+ }
+}

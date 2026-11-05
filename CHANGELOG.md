@@ -1,5 +1,53 @@
 # Changelog
 
+## 0.5.0 – 2026-11-05
+
+**Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.4.0 → 0.5.0 nollställer progressionen (återställningspunkt sparas, Inställningar → Säkerhetskopia → Ångra).
+
+### Rättat (användarens feedback på 0.4)
+- **Svaret syntes i frågan.** Omvända val (japanska → svenska) och stavning visade ibland svenska ordet i japansk definition, exempel eller ledtråd. `maskAnswer()` döljer nu alla former av svaret (＿＿＿) i fråga, underrubrik och ledtråd, och valideringen underkänner en japansk översättning/definition som innehåller det svenska ordet. Sex betydelser skrevs om (konstruktionen flyttad till `usageNote`). Nytt test: inget återkallningsprompt innehåller någon form av svaret.
+- **Moduler under fel överkategori.** De fem äldre modulerna låg direkt i underområden och syntes i flera menyer. De ligger nu i ämnesgrupper (t.ex. *Hemmet och vardagliga aktiviteter* i Hem & boende → Städning & underhåll, *Material och ämnen* i Kemi → Atomer & periodiska systemet). `validateCatalog` underkänner en placering i en kategori som har underkategorier, och en ämnesgrupp får högst åtta val totalt.
+
+### Bilder (stil "Platt", användarens val av fem varianter)
+- Egna SVG-illustrationer (inga emojis) för de åtta rotområdena och **varje publicerad modul**: `src/ui/art/` (`motifs.ts` med motiv på ett 64×64-rutnät, `render.ts`, `<Art>`). Visas i Kurser (områden och ämnesgrupper) och på modulkort.
+- Test: varje publicerad modul har en egen, unik bild. `npm run art:sheet` skriver ett kontaktark för granskning.
+
+### 102 nya moduler (AI-utkast, ett överämne i taget)
+Alla skrivna för sina katalogposter med verifierade 1:1-kopplingar, 15–20 ord, kontrollerat ordförråd och en linjär förkunskapskedja per område. Ord som hör hemma i senare ämnen (t.ex. budget, lån, försäkring, folkbokföring, konflikt, glasögon, väva/sticka, mikroplast) har medvetet hållits utanför.
+
+- **Hem & boende** (42 moduler)
+  - *Bostadstyper & rum*: Hus och lägenheter, Husets olika rum, Utrymmen i flerbostadshus, Att beskriva en bostad, Planlösning och boyta, Flytta till ny bostad, Boendeformer i Sverige
+  - *Möbler & inredning*: Soffor och fåtöljer, Bord och stolar, Sängar och sovrumsmöbler, Förvaring och hyllor, Lampor och belysning, Färger och inredningsstilar, Att möblera ett rum
+  - *Kök & hushållsredskap*: Kökets större apparater, Redskap för matlagning, Porslin och bestick, Förvaringskärl och burkar, Köksmaterial och ytor, Att duka ett bord, Säkerhet i köket
+  - *Badrum & hygienutrymmen*: Toalett och handfat, Dusch och badkar, Handdukar och badrumstextil, Hygienartiklar hemma, Tvättstuga och tvättmaskiner, Avlopp och vattenkranar, Badrumsproblem och reparation
+  - *Städning & underhåll*: Städredskap och rengöringsmedel, Dammsuga och torka golv, Tvätta kläder och textilier, Sortera och slänga sopor, Små reparationer hemma, Skador och slitage, Veckostädning och rutiner
+  - *Hyra, köpa & grannar*: Bostadsannonser och visningar, Hyresavtal och hyresvärd, Avgifter och boendekostnader, Bostadsrätt och förening, Grannar och störningar, Felanmälan och service, Flyttdag och adressändring
+- **Mat & måltider** (39 moduler)
+  - *Råvaror & skafferi*: Frukter och bär, Spannmål och gryn, Bönor och linser, Nötter och frön, Kryddor och örter, Torrvaror och konserver
+  - *Kött, fisk & vegetariskt*: Styckningsdelar och köttsorter, Fågel och ägg, Fiskarter och skaldjur, Vegetariska proteinkällor, Mejeriprodukter och alternativ, Att välja råvaror, Hållbarhet och förvaring
+  - *Matlagningens verb*: Steka och bryna, Grädda och baka, Vispa och röra, Krydda och smaka av, Tillaga och servera
+  - *Smaker & konsistenser*: Grundsmaker och dofter, Söta och syrliga smaker, Starka och milda smaker, Krispigt och knaprigt, Mjukt och segt, Färskhet och mognad, Beskriva en maträtt
+  - *Måltider & servering*: Frukostmat och frukostvanor, Lunch och middag, Mellanmål och fika, Portioner och tillbehör, Restaurangmenyer, Beställa och betala på restaurang, Matbordets samtal
+  - *Kost & matkultur*: Svenska husmansrätter, Japansk mat på svenska, Mat från olika världsdelar, Specialkost och allergener, Näringsämnen i maten, Matsvinn och rester, Högtidsmat och traditioner
+- **Kläder & personlig stil** (21 moduler)
+  - *Vardagskläder*: Tröjor och skjortor, Byxor och kjolar, Klänningar och kostymer, Underkläder och strumpor, Jackor och ytterplagg, Sportiga vardagskläder, Att beskriva en outfit
+  - *Skor & accessoarer*: Vardagsskor och kängor, Finskor och klackar, Mössor och hattar, Halsdukar och handskar, Väskor och ryggsäckar, Smycken och klockor, Bälten och små tillbehör
+  - *Textilier & material*: Bomull och linne, Ull och silke, Syntetiska textilmaterial, Läder och mocka, Mönster och texturer, Tygers egenskaper, Att känna igen kvalitet
+
+Hem & boende och Mat & måltider är **helt publicerade** (inga planerade poster kvar). Ordboken har nu 1 695 uppslagsord / 1 734 betydelser, alla `ai-draft` (ingen mänsklig granskning). Inga uppslagsord dubblerade; nya betydelser lades till befintliga poster där ordet redan fanns (t.ex. *kök* matkultur, *släcka* lampa, *tång* redskap).
+
+### Innehållsverktyg och kontroller
+- Grundordförrådet utökat med verkligt grundläggande A1–A2-ord, oregelbundna former och namn som texterna behövde.
+- Ordförrådskontrollen godtar sammansättningar av två kända ord (med fogemorfem -s- och stamform av -a/-e-ord; huvudordet måste vara känt), namn i genitiv och flerordsuttryck med tre ord.
+- `module:validate` rapporterar även fel på modulens ordposter (`e.*`), och flera moduler kan kontrolleras i ett svep (`checkModules`): testet för alla moduler gick från 66 s till 4 s.
+- Distraktorvalet cachar glosor och listan över alla betydelser (snabbare övningsgenerering i appen; testsviten 110 s → 23 s).
+- Tester som räknade med ett visst antal moduler eller en viss planerad post är nu oberoende av hur många moduler som publiceras.
+- Modul-ID får innehålla ü.
+
+### Release
+- `APP_VERSION` 0.5.0, `package.json` 0.5.0, service workerns cache `swechan-v6`.
+- E2E använder en fortfarande planerad post (*Prova kläder*) för kontrollen att planerade moduler saknar Starta-knapp.
+
 ## 0.4.0 – 2026-11-04
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är på även vid 0.4-releasen (produktägarens beslut under systemutvecklingen).

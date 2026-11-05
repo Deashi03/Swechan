@@ -1,0 +1,170 @@
+{
+ "id": "m.lader-och-mocka",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Läder och mocka",
+ "titleJa": "{革|かわ}とスエード",
+ "descriptionSv": "Läder, mocka och päls: skinn, nubuck, fårskinn, fuskpäls och konstläder, och att impregnera och smörja.",
+ "descriptionJa": "{革|かわ}、スエード、{毛皮|けがわ}：{皮|かわ}、ヌバック、ムートン、フェイクファー、{合成皮革|ごうせいひかく}、{防水加工|ぼうすいかこう}と{手入|てい}れ。",
+ "categoryId": "R01-A03-T03",
+ "tags": [
+  "kläder",
+  "material"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.syntetiska-textilmaterial"
+ ],
+ "related": [],
+ "recommendedOrder": 318,
+ "words": [
+  {
+   "senseId": "s.skinn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garva.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skinnjacka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mocka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nubuck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fårskinn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.päls.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pälsmössa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fuskpäls.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konstläder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.impregnera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spray.1",
+   "active": true
+  },
+  {
+   "senseId": "s.impregneringsspray.1",
+   "active": false
+  },
+  {
+   "senseId": "s.läderfett.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mjukna.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Gamla kängor och ny jacka",
+  "paragraphs": [
+   "Erik har haft samma kängor i tio år. De är gjorda av skinn som man har garvat, och de har blivit mjuka. ”Läder mjuknar ju mer man använder det”, säger han.",
+   "Varje höst smörjer han kängorna med läderfett. Aikos nya skor är av mocka och nubuck. ”De måste du impregnera”, säger Erik och ger henne en impregneringsspray. Sprayen luktar starkt, så Aiko går ut på balkongen.",
+   "Mia vill ha en skinnjacka. ”En jacka av äkta läder är dyr”, säger Aiko. ”Det finns jackor av konstläder också.” Mia är vegan, så hon väljer konstläder.",
+   "Mormor har en gammal päls och en pälsmössa från när hon var ung. ”I dag vill inte så många ha päls”, säger hon. ”Många har fuskpäls i stället.”",
+   "Leo har ett fårskinn i sängen. Det är mjukt och varmt, och han har haft det sedan han var liten.",
+   "”Läder och skinn håller länge om man tar hand om dem”, säger Erik och tittar glatt på sina gamla kängor."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge har Erik haft sina kängor?",
+    "options": [
+     "I ett år",
+     "I två år",
+     "I tjugo år",
+     "I tio år"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik har haft samma kängor i tio år.",
+    "explanationJa": "10{年|ねん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Erik med kängorna varje höst?",
+    "options": [
+     "Han tvättar dem i maskinen.",
+     "Han säljer dem.",
+     "Han impregnerar dem med spray.",
+     "Han smörjer dem med läderfett."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Varje höst smörjer han kängorna med läderfett.",
+    "explanationJa": "{保革油|ほかくゆ}を{塗|ぬ}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia köper en jacka av äkta läder.",
+    "correct": false,
+    "explanationSv": "Mia är vegan, så hon väljer konstläder.",
+    "explanationJa": "{合成皮革|ごうせいひかく}を{選|えら}びます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har Leo i sängen?",
+    "options": [
+     "En päls",
+     "Ett fårskinn",
+     "En pälsmössa",
+     "En skinnjacka"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Leo har ett fårskinn i sängen.",
+    "explanationJa": "ムートンです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att man ska ta hand om läder.",
+    "correct": true,
+    "explanationSv": "”Läder och skinn håller länge om man tar hand om dem.”",
+    "explanationJa": "{手入|てい}れすれば{長|なが}もちすると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om läder, mocka och päls: vad ni har av läder, hur man tar hand om det, och vad ni tycker om päls och konstläder.",
+  "discussionPoints": [
+   "Har du något av läder?",
+   "Hur tar du hand om dina skor?",
+   "Vad tycker du om päls?",
+   "Är konstläder lika bra som äkta läder?"
+  ]
+ }
+}

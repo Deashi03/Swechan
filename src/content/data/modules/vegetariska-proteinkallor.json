@@ -1,0 +1,169 @@
+{
+ "id": "m.vegetariska-proteinkallor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Vegetariska proteinkällor",
+ "titleJa": "{植物性|しょくぶつせい}たんぱく{質|しつ}",
+ "descriptionSv": "Mat utan kött: vegetarisk och vegansk mat, tofu, falafel och skälen till att avstå från kött.",
+ "descriptionJa": "{肉|にく}を{使|つか}わない{食事|しょくじ}：ベジタリアン・ヴィーガン{料理|りょうり}、{豆腐|とうふ}、ファラフェル、そして{肉|にく}を{控|ひか}える{理由|りゆう}。",
+ "categoryId": "R01-A02-T02",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.fiskarter-och-skaldjur"
+ ],
+ "related": [],
+ "recommendedOrder": 110,
+ "words": [
+  {
+   "senseId": "s.vegetarisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vegetarian.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vegan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vegansk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.köttfri.1",
+   "active": false
+  },
+  {
+   "senseId": "s.växtbaserad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tofu.1",
+   "active": true
+  },
+  {
+   "senseId": "s.falafel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.halloumi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.burgare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.marinera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.marinad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avstå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skäl.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lida.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En köttfri vecka",
+  "paragraphs": [
+   "Aikos kusin Mika är vegetarian. Hon äter inte kött eller fisk. Hennes vän Jonas är vegan. Han avstår från allt som kommer från djur, till och med ägg och mjölk. Han äter bara vegansk mat.",
+   "Mika och Jonas hälsar på Aiko och Erik i en vecka. ”Vi provar att äta köttfritt hela veckan”, säger Erik.",
+   "Första dagen gör Aiko tofu. Hon gör en marinad av soja, ingefära och vitlök och marinerar tofun i en timme. Sedan steker hon den.",
+   "Andra dagen grillar de halloumi, men Jonas äter falafel i stället, för halloumi är en ost. Tredje dagen gör Erik vegetariska burgare av bönor.",
+   "”Varför är ni vegetarianer?” frågar Erik. ”Det finns många skäl”, säger Mika. ”Det är bättre för miljön.” Jonas säger: ”Jag vill inte att djur ska lida.”",
+   "Efter veckan säger Erik: ”Jag trodde att jag skulle vara hungrig, men jag har varit mätt hela tiden.” Nu äter de växtbaserad mat två dagar i veckan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad äter inte Jonas?",
+    "options": [
+     "Bara kött",
+     "Bara fisk",
+     "Grönsaker",
+     "Allt som kommer från djur"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Jonas är vegan och avstår från allt som kommer från djur.",
+    "explanationJa": "ヨナスはヴィーガンで、{動物|どうぶつ}からとれるものを{何|なに}も{食|た}べません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge marinerar Aiko tofun?",
+    "options": [
+     "En dag",
+     "En timme",
+     "Fem minuter",
+     "En vecka"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon marinerar tofun i en timme.",
+    "explanationJa": "1{時間|じかん}{漬|つ}けこみます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför äter Jonas inte halloumi?",
+    "options": [
+     "Han tycker inte om att grilla.",
+     "Halloumi är en ost, och ost kommer från djur.",
+     "Den är för salt.",
+     "Den är för dyr."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Halloumi är en ost, och Jonas äter inget från djur.",
+    "explanationJa": "ハルーミはチーズなので、ヴィーガンのヨナスは{食|た}べません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mika säger att ett skäl att vara vegetarian är miljön.",
+    "correct": true,
+    "explanationSv": "Mika säger: ”Det är bättre för miljön.”",
+    "explanationJa": "ミカは「{環境|かんきょう}にいい」と{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik slutar helt att äta kött efter veckan.",
+    "correct": false,
+    "explanationSv": "De äter växtbaserad mat två dagar i veckan, inte hela tiden.",
+    "explanationJa": "{週|しゅう}に2{日|にち}だけ{植物性|しょくぶつせい}の{食事|しょくじ}にしています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vegetarisk mat: varför människor väljer att inte äta kött, vilka rätter utan kött du tycker om, och hur vanligt det är i Japan och i Sverige.",
+  "discussionPoints": [
+   "Känner du någon som är vegetarian eller vegan?",
+   "Vilka skäl finns det att äta mindre kött?",
+   "Vilka japanska rätter är vegetariska?",
+   "Skulle du kunna äta köttfritt en vecka?"
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "m.att-valja-ravaror",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Att välja råvaror",
+ "titleJa": "{食材|しょくざい}の{選|えら}び{方|かた}",
+ "descriptionSv": "Hur man väljer bra råvaror: kvalitet, pris, ursprung, säsong och ekologisk mat.",
+ "descriptionJa": "よい{食材|しょくざい}の{選|えら}び{方|かた}：{品質|ひんしつ}、{値段|ねだん}、{原産地|げんさんち}、{旬|しゅん}、オーガニック。",
+ "categoryId": "R01-A02-T02",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.mejeriprodukter-och-alternativ"
+ ],
+ "related": [],
+ "recommendedOrder": 112,
+ "words": [
+  {
+   "senseId": "s.råvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvalitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilopris.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säsong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ursprung.1",
+   "active": false
+  },
+  {
+   "senseId": "s.märkning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.importera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.odlad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närproducerad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ekologisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utländsk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transport.1",
+   "active": false
+  },
+  {
+   "senseId": "s.smakprov.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "I matbutiken",
+  "paragraphs": [
+   "Aiko vill laga en riktigt god middag. ”Bra mat börjar med bra råvaror”, säger hon. Hon och Erik går till en stor matbutik, där man säljer mat av hög kvalitet.",
+   "Först tittar de på lax. Det finns vild lax och odlad lax från Norge. Den vilda är dyrare. Aiko läser märkningen och ser fiskens ursprung.",
+   "Sedan jämför de tomater. Några är importerade från Spanien, några är närproducerade. ”Svenska tomater har säsong nu i augusti”, säger säljaren. ”Smaka!” Aiko får ett smakprov. Det är mycket gott.",
+   "Erik vill köpa ekologisk mjölk. ”Den är dyrare”, säger Aiko. ”Men titta på kilopriset för osten – den utländska är billigare än den svenska.”",
+   "”Jag tycker att närproducerat är viktigt”, säger Erik. ”Lång transport är dåligt för miljön.” Aiko håller med, men säger: ”Bananer och kaffe måste man importera.”",
+   "På kvällen äter de lax och svenska tomater. ”Det smakar mer när man har valt allt själv”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går de till den stora matbutiken?",
+    "options": [
+     "Där är allt gratis.",
+     "Där finns bara ekologisk mat.",
+     "De ska äta lunch där.",
+     "Där säljer man mat av hög kvalitet."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där säljer man mat av hög kvalitet.",
+    "explanationJa": "その{店|みせ}では{品質|ひんしつ}の{高|たか}い{食|た}べ{物|もの}が{売|う}られています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur vet Aiko var laxen kommer ifrån?",
+    "options": [
+     "Hon frågar en vän.",
+     "Hon smakar på den.",
+     "Hon läser märkningen.",
+     "Den är rosa."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko läser märkningen och ser fiskens ursprung.",
+    "explanationJa": "{表示|ひょうじ}を{読|よ}んで{原産地|げんさんち}を{確|たし}かめます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "De svenska tomaterna har säsong i augusti.",
+    "correct": true,
+    "explanationSv": "Säljaren säger att svenska tomater har säsong nu i augusti.",
+    "explanationJa": "スウェーデンのトマトは8{月|がつ}が{旬|しゅん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför tycker Erik att närproducerad mat är viktig?",
+    "options": [
+     "Den är alltid billigare.",
+     "Den är alltid ekologisk.",
+     "Han tycker inte om utländsk mat.",
+     "Lång transport är dåligt för miljön."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik säger att lång transport är dåligt för miljön.",
+    "explanationJa": "{長距離|ちょうきょり}の{輸送|ゆそう}は{環境|かんきょう}に{悪|わる}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att man aldrig ska köpa mat från andra länder.",
+    "correct": false,
+    "explanationSv": "Hon säger att bananer och kaffe måste man importera.",
+    "explanationJa": "バナナやコーヒーは{輸入|ゆにゅう}するしかないと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man väljer råvaror: pris, kvalitet, ursprung, säsong och ekologisk mat, och om det är skillnad mellan Sverige och Japan.",
+  "discussionPoints": [
+   "Vad tittar du på när du köper mat: pris, kvalitet eller ursprung?",
+   "Vilka råvaror har säsong i Japan just nu?",
+   "Köper du ekologisk eller närproducerad mat? Varför eller varför inte?",
+   "Är importerad mat dyrare eller billigare i Japan än i Sverige?"
+  ]
+ }
+}

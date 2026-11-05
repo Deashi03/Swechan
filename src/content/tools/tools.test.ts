@@ -7,23 +7,27 @@ import { loadAllModuleBodiesEager, toolingRepository } from '../tooling';
 import { validateContent } from '../validateContent';
 import { CoreVocabularyFile } from '../vocabularyCheck';
 import { createDraft, slugify, validateDraft } from './drafts';
-import { checkModule } from './moduleCheck';
+import { checkModule, checkModules } from './moduleCheck';
 import { buildContentReport } from './report';
 
 const repo = toolingRepository();
 const catalog = new CatalogIndex(catalogFile, mapping, repo.modules.map((m) => m.id));
 const core = CoreVocabularyFile.parse(coreJson);
 
+/** A real catalog entry that is still only planned (the last one in the catalog). */
+const PLANNED = [...catalog.modules].reverse().find((m) => !catalog.publishedModuleFor(m.catalogId))!;
+
 describe('module:new / drafts', () => {
   it('creates a draft from a real planned catalog entry (catalog title, 18 target words)', () => {
-    const d = createDraft(catalog, 'SWC-VAR-02-03-03', repo);
-    expect(d).toMatchObject({ draft: true, catalogId: 'SWC-VAR-02-03-03', titleSv: 'Steka och bryna', moduleId: 'm.steka-och-bryna', targetWordCount: 18, plannedWords: [] });
+    const d = createDraft(catalog, PLANNED.catalogId, repo);
+    expect(d).toMatchObject({ draft: true, catalogId: PLANNED.catalogId, titleSv: PLANNED.titleSv, targetWordCount: 18, plannedWords: [] });
+    expect(d.moduleId).toBe(`m.${slugify(PLANNED.titleSv)}`);
     expect(() => createDraft(catalog, 'SWC-FINNS-INTE', repo)).toThrow();
     expect(() => createDraft(catalog, 'SWC-VAR-02-03-01', repo)).toThrow(/redan publicerad/); // linked to m.skara-och-hacka
     expect(slugify('Kött, fisk & vegetariskt')).toBe('kott-fisk-vegetariskt');
   });
   it('reports what is missing and catches errors', () => {
-    const d = createDraft(catalog, 'SWC-VAR-02-03-03', repo);
+    const d = createDraft(catalog, PLANNED.catalogId, repo);
     expect(validateDraft(d, catalog, repo)).toEqual([{ level: 'todo', message: '0 planerade målord – behöver 15–20' }]);
     const words = Array.from({ length: 16 }, (_, i) => ({ lemma: `ord${i}` }));
     expect(validateDraft({ ...d, plannedWords: words }, catalog, repo)).toEqual([]);
@@ -37,10 +41,10 @@ describe('module:new / drafts', () => {
 
 describe('module:validate', () => {
   it('every published module passes all checks', () => {
-    for (const m of repo.modules) expect(checkModule(m.id, repo, core, catalog).errors, m.id).toEqual([]);
+    for (const r of checkModules(repo.modules.map((m) => m.id), repo, core, catalog)) expect(r.errors, r.moduleId).toEqual([]);
   });
   it('rejects planned and unknown IDs', () => {
-    expect(checkModule('SWC-VAR-02-03-03', repo, core, catalog).errors[0]).toMatch(/finns inte/);
+    expect(checkModule(PLANNED.catalogId, repo, core, catalog).errors[0]).toMatch(/finns inte/);
   });
 });
 

@@ -1,0 +1,182 @@
+{
+ "id": "m.frukter-och-bar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Frukter och bär",
+ "titleJa": "{果物|くだもの}とベリー",
+ "descriptionSv": "Frukter och bär som är vanliga i Sverige, och vad man gör av dem: sylt, saft och mogen frukt.",
+ "descriptionJa": "スウェーデンでよく{見|み}る{果物|くだもの}とベリー、そしてジャムやジュースなどの{作|つく}り{方|かた}。",
+ "categoryId": "R01-A02-T01",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vanliga-gronsaker",
+  "m.hemmet-vardag"
+ ],
+ "related": [],
+ "recommendedOrder": 101,
+ "words": [
+  {
+   "senseId": "s.banan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.apelsin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.citron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.päron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plommon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.druva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.melon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.körsbär.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mogen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plocka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sylt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.saft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jordgubbe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hallon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.blåbär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lingon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pressa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Bär i skogen",
+  "paragraphs": [
+   "I Sverige kan alla gå ut i skogen och plocka bär. Det är en del av en vanlig svensk sommar och höst.",
+   "En lördag tar Erik med Aiko till skogen. De har två stora påsar med sig. Först hittar de blåbär. ”Titta på mina händer, de är helt blå!” skrattar Aiko.",
+   "Längre in i skogen finns det lingon. Aiko smakar ett. ”Det är surt!” säger hon. ”Man äter inte lingon direkt”, säger Erik. ”Man gör sylt av dem.”",
+   "Hemma kokar de sylt av lingonen och lite socker. Av hallonen från trädgården gör de saft. Till kaffet äter de jordgubbar.",
+   "På kvällen äter de frukt. Erik pressar apelsiner, och Aiko skär en melon och några päron. På bordet ligger också druvor, körsbär och några plommon. Till teet tar Aiko en bit citron. ”Är bananerna mogna?” frågar Erik. ”Inte än. De är fortfarande gröna”, säger Aiko.",
+   "”I Japan är frukt dyr, särskilt melon”, säger hon. ”Här kan man få bär gratis i skogen.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför blir Aikos händer blå?",
+    "options": [
+     "Hon har plockat blåbär.",
+     "Hon har gjort saft.",
+     "Hon har ätit lingon.",
+     "Hon har skurit en melon."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Händerna blir blå av blåbären.",
+    "explanationJa": "ブルーベリーを{摘|つ}んだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför äter man inte lingon direkt, enligt Erik?",
+    "options": [
+     "De är farliga att äta.",
+     "De är inte mogna.",
+     "De är sura, och man gör sylt av dem.",
+     "De är för dyra."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Lingon är sura. Erik säger att man gör sylt av dem.",
+    "explanationJa": "コケモモは{酸|す}っぱいので、ジャムにします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "De gör saft av lingonen.",
+    "correct": false,
+    "explanationSv": "De gör sylt av lingonen och saft av hallonen.",
+    "explanationJa": "コケモモはジャムに、ラズベリーはジュースにします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "”Är bananerna mogna?” – ”Inte än.” Hur är bananerna?",
+    "options": [
+     "De är inte färdiga att äta.",
+     "De är för söta.",
+     "De är gamla.",
+     "De är slut."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Bananerna är gröna och inte mogna än.",
+    "explanationJa": "バナナはまだ{緑|みどり}で、{熟|じゅく}していません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att det är bra att man kan plocka bär gratis i Sverige.",
+    "correct": true,
+    "explanationSv": "Hon jämför med Japan, där frukt är dyr.",
+    "explanationJa": "{果物|くだもの}が{高|たか}い{日本|にほん}と{比|くら}べています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om frukt och bär: vilka du tycker om, vad som är vanligt och dyrt i Japan och i Sverige, och om att plocka bär i skogen.",
+  "discussionPoints": [
+   "Vilken frukt eller vilka bär äter du oftast?",
+   "Vad kostar frukt i Japan jämfört med i Sverige?",
+   "Har du plockat bär eller svamp i skogen? Hur var det?",
+   "Vad gör man av frukt och bär, till exempel sylt eller saft?"
+  ]
+ }
+}

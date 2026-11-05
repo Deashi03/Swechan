@@ -1,0 +1,169 @@
+{
+ "id": "m.boendeformer-i-sverige",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Boendeformer i Sverige",
+ "titleJa": "スウェーデンの{住居形態|じゅうきょけいたい}",
+ "descriptionSv": "Hur man bor i Sverige: hyresrätt, bostadsrätt, bostadskö, kollektiv och sommarstuga.",
+ "descriptionJa": "スウェーデンの{住|す}まい{方|かた}：{賃貸|ちんたい}、{分譲|ぶんじょう}マンション{利用権|りようけん}、{順番待|じゅんばんま}ち、シェアハウス、サマーハウス。",
+ "categoryId": "R01-A01-T01",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.flytta-till-ny-bostad"
+ ],
+ "related": [],
+ "recommendedOrder": 207,
+ "words": [
+  {
+   "senseId": "s.boendeform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ägare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyresrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bostadsrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äganderätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bostadskö.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bostadsbrist.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-andra-hand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inneboende.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kollektiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.studentkorridor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.äldreboende.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sommarstuga.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur bor svenskarna?",
+  "paragraphs": [
+   "I Sverige finns det tre vanliga boendeformer. Man kan bo i en hyresrätt, äga en bostadsrätt, eller ha äganderätt, till exempel till en villa.",
+   "I en hyresrätt betalar man hyra varje månad. För att få en hyresrätt i Stockholm måste man stå i bostadskö, ibland i tio år eller mer. Det är bostadsbrist.",
+   "Därför hyr många unga i andra hand. Andra bor som inneboende hos någon, eller i kollektiv med vänner. Studenter bor ofta i studentkorridor.",
+   "I en bostadsrätt köper man rätten att bo i lägenheten. Huset ägs av alla som bor där tillsammans. Ägarna bestämmer tillsammans om huset.",
+   "Eriks farfar bor på ett äldreboende. Familjen har också en sommarstuga på landet, där de bor i juli.",
+   "”I Japan hyr många, men man köper också hus”, säger Aiko. ”Men jag har aldrig behövt köa i tio år för en lägenhet!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många vanliga boendeformer finns det i Sverige, enligt texten?",
+    "options": [
+     "Två",
+     "Tre",
+     "Fem",
+     "En"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Texten säger att det finns tre vanliga boendeformer.",
+    "explanationJa": "3つの{一般的|いっぱんてき}な{住居形態|じゅうきょけいたい}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför måste man stå i bostadskö i Stockholm?",
+    "options": [
+     "Hyrorna är låga.",
+     "Alla vill bo på landet.",
+     "Det finns för många lägenheter.",
+     "Det är bostadsbrist."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det är bostadsbrist i Stockholm.",
+    "explanationJa": "{住宅不足|じゅうたくぶそく}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Studenter bor ofta i studentkorridor.",
+    "correct": true,
+    "explanationSv": "Texten säger att studenter ofta bor i studentkorridor.",
+    "explanationJa": "{学生|がくせい}はよく{学生寮|がくせいりょう}に{住|す}みます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vem äger huset när man har en bostadsrätt?",
+    "options": [
+     "Staten",
+     "En enda person",
+     "Alla som bor där tillsammans",
+     "Ingen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Huset ägs av alla som bor där tillsammans. Ägarna bestämmer tillsammans om huset.",
+    "explanationJa": "{建物|たてもの}は{住民全員|じゅうみんぜんいん}で{所有|しょゆう}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att det är konstigt att man måste vänta så länge på en lägenhet i Sverige.",
+    "correct": true,
+    "explanationSv": "Hon säger att hon aldrig har behövt köa i tio år för en lägenhet.",
+    "explanationJa": "10{年|ねん}も{並|なら}んだことはないと{驚|おどろ}いています。"
+   }
+  ],
+  "factSources": [
+   "Svenska upplåtelseformer (hyresrätt, bostadsrätt, äganderätt); långa bostadsköer i Stockholm; cirka 600 000 fritidshus i Sverige (SCB)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om olika sätt att bo: hyra eller äga, bostadskö och bostadsbrist, kollektiv och sommarstugor, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Hyr du eller äger du din bostad?",
+   "Hur hittar man en hyreslägenhet i Japan?",
+   "Skulle du vilja bo i kollektiv? Varför eller varför inte?",
+   "Vad tycker du om den svenska traditionen med sommarstugor?"
+  ]
+ }
+}

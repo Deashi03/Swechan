@@ -1,0 +1,169 @@
+{
+ "id": "m.badrumsproblem-och-reparation",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Badrumsproblem och reparation",
+ "titleJa": "バスルームのトラブルと{修理|しゅうり}",
+ "descriptionSv": "Problem i badrummet: fukt, mögel, sprickor, läckage, vattenskada och att anlita hantverkare.",
+ "descriptionJa": "バスルームのトラブル：{湿気|しっけ}、カビ、ひび、{水|みず}もれ、{水漏|みずも}れ{被害|ひがい}、{職人|しょくにん}への{依頼|いらい}。",
+ "categoryId": "R01-A01-T04",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.avlopp-och-vattenkranar"
+ ],
+ "related": [],
+ "recommendedOrder": 228,
+ "words": [
+  {
+   "senseId": "s.fukt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ventilation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mögla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fog.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spricka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läckage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reparera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hantverkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörmokare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.offert.1",
+   "active": false
+  },
+  {
+   "senseId": "s.försäkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.renovering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torka-ut.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vatten där det inte ska vara",
+  "paragraphs": [
+   "Badrummet har dålig ventilation. Fläkten är gammal, och efter duschen är luften full av fukt. I hörnet av duschen möglar det, och fogarna är svarta.",
+   "En dag ser Erik en spricka i kaklet. Sedan märker han att det finns ett läckage under badkaret. Vattnet har runnit ner i golvet.",
+   "Grannen ringer. ”Det droppar från mitt tak!” Det har blivit en vattenskada.",
+   "De ringer en rörmokare som reparerar röret. Väggen och golvet måste torka ut i två veckor. Sedan behövs en renovering av hela badrummet.",
+   "Aiko ber tre hantverkare om en offert. De väljer den som verkar bäst, inte den billigaste. Som tur är betalar försäkringen det mesta.",
+   "”Nästa gång köper vi en ny fläkt med en gång”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är problemet i duschen?",
+    "options": [
+     "Det finns inget vatten.",
+     "Duschen är för liten.",
+     "Det möglar, och fogarna är svarta.",
+     "Kaklet är nytt."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I hörnet av duschen möglar det, och fogarna är svarta.",
+    "explanationJa": "シャワーの{隅|すみ}にカビが{生|は}え、{目地|めじ}が{黒|くろ}くなっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför ringer grannen?",
+    "options": [
+     "Det droppar från hennes tak.",
+     "Det luktar mögel.",
+     "Musiken är för hög.",
+     "Hon behöver en rörmokare."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Grannen säger att det droppar från taket.",
+    "explanationJa": "{天井|てんじょう}から{水|みず}が{落|お}ちてくるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Väggen och golvet måste torka ut i två veckor.",
+    "correct": true,
+    "explanationSv": "Texten säger att väggen och golvet måste torka ut i två veckor.",
+    "explanationJa": "{壁|かべ}と{床|ゆか}を2{週間|しゅうかん}{乾|かわ}かす{必要|ひつよう}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vem betalar det mesta?",
+    "options": [
+     "Grannen",
+     "Rörmokaren",
+     "Försäkringen",
+     "Erik och Aiko själva"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Försäkringen betalar det mesta.",
+    "explanationJa": "{保険|ほけん}がほとんどを{払|はら}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De väljer den billigaste hantverkaren.",
+    "correct": false,
+    "explanationSv": "De väljer den som verkar bäst, inte den billigaste.",
+    "explanationJa": "いちばん{安|やす}いところではなく、いちばんよさそうなところを{選|えら}びました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om problem i badrummet: fukt och mögel, läckage, att anlita hantverkare och om försäkringar.",
+  "discussionPoints": [
+   "Har du haft problem med fukt eller mögel hemma?",
+   "Reparerar du saker själv eller ringer du en hantverkare?",
+   "Hur hittar man en bra hantverkare?",
+   "Vad gör man i Japan om det blir en vattenskada?"
+  ]
+ }
+}

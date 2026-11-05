@@ -1,0 +1,169 @@
+{
+ "id": "m.kryddor-och-orter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kryddor och örter",
+ "titleJa": "スパイスとハーブ",
+ "descriptionSv": "Vanliga kryddor och örter i ett svenskt kök, och vad man har dem till.",
+ "descriptionJa": "スウェーデンの{台所|だいどころ}でよく{使|つか}うスパイスとハーブ、そしてその{使|つか}い{道|みち}。",
+ "categoryId": "R01-A02-T01",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.notter-och-fron"
+ ],
+ "related": [],
+ "recommendedOrder": 105,
+ "words": [
+  {
+   "senseId": "s.peppar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krydda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ört.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kruka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.chili.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingefära.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kanel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kardemumma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.saffran.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vanilj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dill.1",
+   "active": true
+  },
+  {
+   "senseId": "s.persilja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.basilika.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gräslök.1",
+   "active": false
+  },
+  {
+   "senseId": "s.timjan.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Örter i fönstret",
+  "paragraphs": [
+   "Aiko har gjort en liten trädgård i fönstret i köket. Där står fem krukor med örter: dill, persilja, basilika, gräslök och timjan. ”Färska örter är bäst”, säger hon.",
+   "Erik lagar fisk med potatis. Han tar dill från fönstret. ”Dill och fisk är typiskt svenskt”, säger han. Aiko klipper lite gräslök över potatisen.",
+   "Sedan tittar de på alla kryddor de har i köket. Det finns salt och peppar, men också kanel, kardemumma, ingefära och chili.",
+   "”I Sverige har man kardemumma och kanel i bröd”, säger Erik. ”I Japan har vi mer ingefära”, säger Aiko. ”Och ibland chili, men inte så mycket.”",
+   "I köket finns också en liten påse saffran. ”Den var mycket dyr”, säger Erik. ”Vi ska baka gult bröd med den i december.”",
+   "Efter maten äter de glass. Erik väljer vanilj, men Aiko vill ha kanel på sin."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var odlar Aiko örterna?",
+    "options": [
+     "I trädgården bakom huset",
+     "På en åker",
+     "I krukor i fönstret i köket",
+     "I skogen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon har fem krukor med örter i fönstret i köket.",
+    "explanationJa": "{台所|だいどころ}の{窓|まど}の{鉢|はち}で{育|そだ}てています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken ört tar Erik till fisken?",
+    "options": [
+     "Basilika",
+     "Timjan",
+     "Dill",
+     "Persilja"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik tar dill från fönstret till fisken.",
+    "explanationJa": "{魚|さかな}にはディルを{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik och Aiko har inga kryddor i köket.",
+    "correct": false,
+    "explanationSv": "De har många kryddor, till exempel kanel, kardemumma och chili.",
+    "explanationJa": "シナモンやカルダモン、{唐辛子|とうがらし}などたくさんあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför ska de vänta med saffranen?",
+    "options": [
+     "Den är gammal.",
+     "Den smakar inte gott.",
+     "De ska baka gult bröd med den i december.",
+     "Aiko tycker inte om den."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik säger att de ska baka gult bröd med den i december.",
+    "explanationJa": "12{月|がつ}に{黄色|きいろ}いパンを{焼|や}くためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att kanel passar till glass.",
+    "correct": true,
+    "explanationSv": "Hon vill ha kanel på sin glass.",
+    "explanationJa": "アイスにシナモンをかけたいと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Svenska mattraditioner: dill till fisk och potatis, kardemumma i bröd, saffransbröd i december (allmänt kända)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kryddor och örter: vilka du har hemma, vilka som är typiska för svensk och japansk mat, och om du odlar något själv.",
+  "discussionPoints": [
+   "Vilka kryddor använder du mest?",
+   "Vilka kryddor eller örter är typiska för japansk mat?",
+   "Har du smakat svenskt bröd med kardemumma eller saffran?",
+   "Odlar du örter hemma? Vilka skulle du vilja odla?"
+  ]
+ }
+}

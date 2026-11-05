@@ -38,6 +38,9 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
       unique(s.id, s.id);
       if (!s.id.startsWith(`s.${e.id.slice(2)}.`)) add(s.id, `Betydelse-ID ska börja med s.${e.id.slice(2)}.`);
       ja(`${s.id}.ja`, s.ja);
+      // The Japanese gloss and definition are recall prompts: the Swedish answer must not appear in them (0.5).
+      for (const [k, t] of [['ja', s.ja], ['defJa', s.defJa]] as const)
+        if (entryOccursIn(t, e)) add(`${s.id}.${k}`, 'Den japanska texten innehåller det svenska ordet (svaret syns i frågan) – flytta konstruktionen till usageNote');
       ja(`${s.id}.defJa`, s.defJa);
       s.examples.forEach((x, i) => ja(`${s.id}.examples[${i}]`, x.ja));
       ja(`${s.id}.usageNote`, s.usageNote?.ja);

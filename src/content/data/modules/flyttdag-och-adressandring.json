@@ -1,0 +1,175 @@
+{
+ "id": "m.flyttdag-och-adressandring",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Flyttdag och adressändring",
+ "titleJa": "{引|ひ}っ{越|こ}しの{日|ひ}と{住所変更|じゅうしょへんこう}",
+ "descriptionSv": "Flyttdagen: hyrbil, flytthjälp, flyttlass, besiktning, nycklar och adressändring.",
+ "descriptionJa": "{引|ひ}っ{越|こ}しの{日|ひ}：レンタカー、{手伝|てつだ}い、{荷物|にもつ}の{運搬|うんぱん}、{点検|てんけん}、カギの{引|ひ}き{渡|わた}し、{住所変更|じゅうしょへんこう}。",
+ "categoryId": "R01-A01-T06",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.felanmalan-och-service"
+ ],
+ "related": [],
+ "recommendedOrder": 242,
+ "words": [
+  {
+   "senseId": "s.flyttdag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utflyttning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inflyttning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flytthjälp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyrbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släpvagn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lasta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lasta-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flyttlass.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svettig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kaos.1",
+   "active": false
+  },
+  {
+   "senseId": "s.besiktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-över.1",
+   "active": true
+  },
+  {
+   "senseId": "s.adressändring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eftersändning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Flyttdagen",
+  "paragraphs": [
+   "Aiko och Erik har köpt bostadsrätten och nu är det flyttdag. Inflyttning i den nya lägenheten är klockan tio, och utflyttning från den gamla måste vara klar samma dag.",
+   "Erik hämtar en hyrbil med släpvagn klockan sju. Fyra vänner kommer och ger flytthjälp. Alla lastar kartonger och möbler.",
+   "De kör tre flyttlass. Vid den nya lägenheten börjar de lasta av och bär upp allt i trappan, för hissen är för liten för soffan.",
+   "På eftermiddagen är alla trötta och svettiga. Det är kaos i den nya lägenheten, med kartonger överallt. Aiko bjuder på pizza som tack för hjälpen.",
+   "Sedan åker Erik tillbaka till den gamla lägenheten. Vid besiktningen tittar vicevärden på golven och väggarna. Allt ser bra ut. Erik lämnar över nycklarna.",
+   "På kvällen gör Aiko en adressändring på internet. Hon beställer också eftersändning, så att post till den gamla adressen kommer till den nya."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hämtar Erik klockan sju?",
+    "options": [
+     "Nycklarna",
+     "Pizza",
+     "Kartonger",
+     "En hyrbil med släpvagn"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik hämtar en hyrbil med släpvagn klockan sju.",
+    "explanationJa": "7{時|じ}にトレーラー{付|つ}きのレンタカーを{取|と}りに{行|い}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur många flyttlass kör de?",
+    "options": [
+     "Ett",
+     "Tre",
+     "Två",
+     "Fyra"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De kör tre flyttlass.",
+    "explanationJa": "3{回|かい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför bär de soffan i trappan?",
+    "options": [
+     "Hissen är för liten.",
+     "Hissen är trasig.",
+     "Det finns ingen hiss.",
+     "Soffan är lätt."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hissen är för liten för soffan.",
+    "explanationJa": "エレベーターがソファには{小|ちい}さすぎるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vicevärden hittar skador vid besiktningen.",
+    "correct": false,
+    "explanationSv": "Allt ser bra ut.",
+    "explanationJa": "すべて{問題|もんだい}ありませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "focus": "detail",
+    "promptSv": "Varför beställer Aiko eftersändning?",
+    "options": [
+     "För att få nya nycklar",
+     "För att hyra en bil",
+     "För att betala hyran",
+     "För att post till den gamla adressen ska komma till den nya"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Så att post till den gamla adressen kommer till den nya.",
+    "explanationJa": "{古|ふる}い{住所|じゅうしょ}への{郵便|ゆうびん}が{新|あたら}しい{住所|じゅうしょ}に{届|とど}くようにです。"
+   }
+  ],
+  "factSources": [
+   "Adressändring och eftersändning beställs i Sverige hos PostNord/Svensk Adressändring; flyttanmälan till Skatteverket behandlas i en senare modul."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om flyttdagen: att hyra bil, få flytthjälp, lämna över nycklar och göra adressändring, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Hur många gånger har du flyttat?",
+   "Vem hjälpte dig när du flyttade senast?",
+   "Vad måste man göra i Japan när man byter adress?",
+   "Vad är det jobbigaste med en flyttdag?"
+  ]
+ }
+}

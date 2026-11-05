@@ -1,0 +1,169 @@
+{
+ "id": "m.starka-och-milda-smaker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Starka och milda smaker",
+ "titleJa": "{辛|から}い{味|あじ}とマイルドな{味|あじ}",
+ "descriptionSv": "Starka och milda smaker: kryddstark mat, wasabi, att svettas och att vänja sig.",
+ "descriptionJa": "{辛|から}い{味|あじ}とマイルドな{味|あじ}：{辛|から}い{料理|りょうり}、わさび、{汗|あせ}をかくこと、{慣|な}れること。",
+ "categoryId": "R01-A02-T04",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sota-och-syrliga-smaker"
+ ],
+ "related": [],
+ "recommendedOrder": 121,
+ "words": [
+  {
+   "senseId": "s.curry.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryddstark.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryddig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pikant.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svettas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mustig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.eftersmak.1",
+   "active": false
+  },
+  {
+   "senseId": "s.wasabi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pepparrot.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vänja-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tår.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur stark får det vara?",
+  "paragraphs": [
+   "Erik och Aiko går på en indisk restaurang. Erik vill ha en kryddstark curry. Aiko tycker mer om milda rätter.",
+   "Maten kommer. Erik tar en stor bit. Efter några sekunder börjar det svida i munnen. Han svettas och får tårar i ögonen. ”Vatten!” säger han.",
+   "”Vatten hjälper inte”, säger kocken och ger honom ett glas mjölk. ”Mjölk släcker bättre.”",
+   "Aikos curry är kryddig men inte stark. Den har en mustig och kraftig smak av ingefära och vitlök. Det finns en lätt eftersmak av kanel.",
+   "”I Japan har vi wasabi”, säger Aiko. ”Den är stark på ett annat sätt. Det bränner i näsan, inte i munnen.” ”Som pepparrot”, säger Erik.",
+   "”Man vänjer sig vid stark mat”, säger kocken. ”Börja med något pikant, inte det starkaste.” Erik nickar. Nästa gång ska han välja något mildare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken sorts mat tycker Aiko om?",
+    "options": [
+     "Mycket starka rätter",
+     "Söta rätter",
+     "Kalla rätter",
+     "Milda rätter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko tycker mer om milda rätter.",
+    "explanationJa": "アイコはマイルドな{料理|りょうり}が{好|す}きです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer med Erik när han äter curryn?",
+    "options": [
+     "Han blir mätt direkt.",
+     "Han tycker att den är fadd.",
+     "Det svider, han svettas och får tårar i ögonen.",
+     "Han somnar."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det svider i munnen, och han svettas och får tårar.",
+    "explanationJa": "{口|くち}がひりひりして、{汗|あせ}と{涙|なみだ}が{出|で}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Kocken säger att vatten släcker bäst.",
+    "correct": false,
+    "explanationSv": "Kocken säger att mjölk släcker bättre än vatten.",
+    "explanationJa": "コックは{水|みず}より{牛乳|ぎゅうにゅう}がいいと{言|い}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur är wasabi stark, enligt Aiko?",
+    "options": [
+     "Det bränner i magen.",
+     "Det bränner i näsan.",
+     "Det svider i ögonen.",
+     "Det är inte starkt alls."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko säger att wasabi bränner i näsan, inte i munnen.",
+    "explanationJa": "わさびは{口|くち}ではなく{鼻|はな}にくると{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik ska välja en mildare rätt nästa gång.",
+    "correct": true,
+    "explanationSv": "Han ska välja något mildare nästa gång.",
+    "explanationJa": "{次|つぎ}はもっとマイルドなものを{選|えら}ぶつもりです。"
+   }
+  ],
+  "factSources": [
+   "Mjölk dämpar känslan av chili bättre än vatten (kasein binder capsaicin) – allmän kunskap."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om starka och milda smaker: hur stark mat du tål, wasabi och chili, och vad man gör när det bränner i munnen.",
+  "discussionPoints": [
+   "Hur stark mat tycker du om?",
+   "Vilka starka smaker finns i japansk mat?",
+   "Vad gör du när maten är för stark?",
+   "Tror du att man kan vänja sig vid stark mat?"
+  ]
+ }
+}

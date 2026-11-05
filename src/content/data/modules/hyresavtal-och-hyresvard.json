@@ -1,0 +1,170 @@
+{
+ "id": "m.hyresavtal-och-hyresvard",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hyresavtal och hyresvärd",
+ "titleJa": "{賃貸借契約|ちんたいしゃくけいやく}と{大家|おおや}",
+ "descriptionSv": "Att hyra bostad: hyra, hyresvärd, hyresavtal, deposition, villkor och uppsägningstid.",
+ "descriptionJa": "{住|す}まいを{借|か}りること：{家賃|やちん}、{大家|おおや}、{賃貸契約|ちんたいけいやく}、{敷金|しききん}、{条件|じょうけん}、{解約予告期間|かいやくよこくきかん}。",
+ "categoryId": "R01-A01-T06",
+ "tags": [
+  "hemmet",
+  "ekonomi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.bostadsannonser-och-visningar"
+ ],
+ "related": [],
+ "recommendedOrder": 237,
+ "words": [
+  {
+   "senseId": "s.hyra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyra-noun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyresvärd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyresgäst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyresavtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förstahandskontrakt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriva-under.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deposition.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hyreshöjning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förlänga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säga-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppsägningstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-andra-hand.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett nytt kontrakt",
+  "paragraphs": [
+   "Eriks syster ska hyra en ny lägenhet. Hon har stått i bostadskö i sju år och har äntligen fått ett förstahandskontrakt. Förut hyrde hon i andra hand.",
+   "Hyresvärden är ett stort företag. Systern läser hyresavtalet noga. Hyran är nio tusen kronor i månaden. Ett villkor är att man inte får röka i lägenheten.",
+   "Hon behöver inte betala någon deposition. ”Det är vanligt när man hyr i andra hand, men inte här”, säger Erik.",
+   "I hyresavtalet står det att uppsägningstiden är tre månader. ”Om du vill flytta måste du säga upp lägenheten i tid”, säger Erik.",
+   "Systern skriver under kontraktet. Hon får också ett brev om att det blir en liten hyreshöjning i januari, som för alla hyresgäster i huset.",
+   "Hennes förra kontrakt i andra hand kunde hon inte förlänga. ”Nu kan jag bo kvar så länge jag vill”, säger hon glatt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge har systern stått i bostadskö?",
+    "options": [
+     "I sju månader",
+     "I ett år",
+     "I tre år",
+     "I sju år"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon har stått i bostadskö i sju år.",
+    "explanationJa": "7{年間|ねんかん}{順番|じゅんばん}を{待|ま}っていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket villkor finns i hyresavtalet?",
+    "options": [
+     "Man måste ha en hund.",
+     "Man får inte ha gäster.",
+     "Man får inte röka i lägenheten.",
+     "Man måste betala deposition."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett villkor är att man inte får röka i lägenheten.",
+    "explanationJa": "アパートでたばこを{吸|す}ってはいけません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Uppsägningstiden är tre månader.",
+    "correct": true,
+    "explanationSv": "I hyresavtalet står det att uppsägningstiden är tre månader.",
+    "explanationJa": "{解約予告期間|かいやくよこくきかん}は3か{月|げつ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad händer i januari?",
+    "options": [
+     "Systern flyttar.",
+     "Det blir en liten hyreshöjning.",
+     "Kontraktet slutar.",
+     "Hyran blir lägre."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det blir en liten hyreshöjning i januari.",
+    "explanationJa": "1{月|がつ}に{家賃|やちん}が{少|すこ}し{上|あ}がります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Systern är glad över det nya kontraktet.",
+    "correct": true,
+    "explanationSv": "Hon säger glatt att hon kan bo kvar så länge hon vill.",
+    "explanationJa": "ずっと{住|す}めるので{喜|よろこ}んでいます。"
+   }
+  ],
+  "factSources": [
+   "Hyreslagen: normalt tre månaders uppsägningstid för hyresgäst; deposition förekommer främst vid andrahandsuthyrning."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att hyra bostad: hyresavtal, hyresvärd, deposition och uppsägningstid, och hur det fungerar i Japan.",
+  "discussionPoints": [
+   "Hyr du din bostad? Hur hittade du den?",
+   "Vad ska man tänka på när man skriver under ett hyresavtal?",
+   "Hur fungerar deposition och nyckelpengar i Japan?",
+   "Har du haft problem med en hyresvärd?"
+  ]
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "id": "m.styckningsdelar-och-kottsorter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Styckningsdelar och köttsorter",
+ "titleJa": "{肉|にく}の{部位|ぶい}と{種類|しゅるい}",
+ "descriptionSv": "Sorter av kött och delar av djuret: nötkött, fläsk, lamm, filé, biff och köttfärs.",
+ "descriptionJa": "{肉|にく}の{種類|しゅるい}と{部位|ぶい}：{牛肉|ぎゅうにく}、{豚肉|ぶたにく}、ラム、ヒレ、ステーキ、ひき{肉|にく}。",
+ "categoryId": "R01-A02-T02",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.torrvaror-och-konserver",
+  "m.koka-och-sjuda"
+ ],
+ "related": [],
+ "recommendedOrder": 107,
+ "words": [
+  {
+   "senseId": "s.nötkött.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläsk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lamm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kalv.2",
+   "active": false
+  },
+  {
+   "senseId": "s.slakta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slaktare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köttfärs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köttbulle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biff.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kotlett.1",
+   "active": false
+  },
+  {
+   "senseId": "s.filé.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stek.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mager.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skinka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bacon.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hos slaktaren",
+  "paragraphs": [
+   "Erik vill laga en fin middag till Aikos föräldrar, som är på besök från Japan. Han och Aiko går till en slaktare i stan.",
+   "I disken finns många sorters kött: nötkött, fläsk, lamm och kalv. Det finns biffar, kotletter och en stor stek. ”Vad är skillnaden mellan en biff och en filé?” frågar Aiko. ”Filé är den finaste delen, utan ben”, säger slaktaren.",
+   "”Min pappa äter inte så mycket fett”, säger Aiko. Slaktaren visar ett magert kött. ”Det här är fläskfilé. Den är mager och mör.”",
+   "Erik köper också köttfärs. ”Vi gör köttbullar”, säger han. ”Det är typisk svensk mat.” Aiko tar korv och skinka till frukost, och ett paket bacon.",
+   "Slaktaren berättar att han köper djuren från gårdar i närheten. ”Vi slaktar dem här i stan, så köttet är alltid färskt.”",
+   "På kvällen äter alla fläskfilé och köttbullar med potatis. Aikos pappa äter tre köttbullar. ”Mycket gott!” säger han på svenska."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är en filé, enligt slaktaren?",
+    "options": [
+     "Den finaste delen, utan ben",
+     "En stor bit kött med ben",
+     "Malet kött",
+     "En sorts korv"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Slaktaren säger att filé är den finaste delen, utan ben.",
+    "explanationJa": "いちばん{上等|じょうとう}な{骨|ほね}のない{部分|ぶぶん}だと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför vill Aiko ha magert kött?",
+    "options": [
+     "Det är billigare.",
+     "Hon tycker inte om fläsk.",
+     "Hennes pappa äter inte så mycket fett.",
+     "Erik vill ha det."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko säger att hennes pappa inte äter så mycket fett.",
+    "explanationJa": "お{父|とう}さんがあまり{脂肪|しぼう}を{食|た}べないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik köper köttfärs för att göra köttbullar.",
+    "correct": true,
+    "explanationSv": "Han säger: ”Vi gör köttbullar.”",
+    "explanationJa": "ミートボールを{作|つく}るためにひき{肉|にく}を{買|か}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför är köttet alltid färskt hos slaktaren?",
+    "options": [
+     "Han säljer bara korv.",
+     "Djuren kommer från gårdar i närheten och slaktas i stan.",
+     "Han har en stor frys.",
+     "Köttet kommer från Japan."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Djuren kommer från gårdar i närheten och slaktas i stan.",
+    "explanationJa": "{近|ちか}くの{農場|のうじょう}の{動物|どうぶつ}を{町|まち}で{処理|しょり}するからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aikos pappa tyckte om köttbullarna.",
+    "correct": true,
+    "explanationSv": "Han äter tre köttbullar och säger ”Mycket gott!”.",
+    "explanationJa": "ミートボールを3つ{食|た}べて「とてもおいしい」と{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kött: vilka sorter du äter, vad som är dyrt eller billigt i Sverige och i Japan, och svenska kötträtter som köttbullar.",
+  "discussionPoints": [
+   "Vilket kött äter du oftast?",
+   "Är något kött mycket dyrt i Japan, till exempel nötkött?",
+   "Har du ätit svenska köttbullar? Vad tyckte du?",
+   "Brukar du köpa kött i affären eller hos en slaktare?"
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "m.tillaga-och-servera",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tillaga och servera",
+ "titleJa": "{調理|ちょうり}と{盛|も}り{付|つ}け",
+ "descriptionSv": "Att tillaga, lägga upp och servera mat – och vad man säger när man bjuder gäster.",
+ "descriptionJa": "{料理|りょうり}を{仕上|しあ}げて、{盛|も}り{付|つ}けて、{出|だ}すこと。そしてお{客|きゃく}さんをもてなすときの{言葉|ことば}。",
+ "categoryId": "R01-A02-T03",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.krydda-och-smaka-av"
+ ],
+ "related": [],
+ "recommendedOrder": 118,
+ "words": [
+  {
+   "senseId": "s.kock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbereda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garnera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.servera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gäst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.buffé.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-för-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värma-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljummen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rykande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.smaklig-måltid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Middag för åtta",
+  "paragraphs": [
+   "Aiko och Erik har bjudit åtta gäster på middag. Erik är ingen kock, men han tycker om att laga mat för många.",
+   "På förmiddagen förbereder de allt. Erik skär grönsaker och gör en sås. Laxen ska de tillaga i ugnen precis innan gästerna kommer.",
+   "Klockan sju kommer gästerna. Laxen är klar, och Aiko lägger upp den på ett stort fat. Hon garnerar med dill och citron. ”Så vackert!” säger en gäst.",
+   "De serverar inte maten vid bordet. I stället blir det buffé i köket. ”Varsågoda!” säger Erik. Alla får ta för sig själva.",
+   "Soppan har hunnit bli ljummen, så Aiko värmer upp den. Nu är den rykande het igen. ”Smaklig måltid!” säger hon.",
+   "Till sist kommer tårtan. Den räcker inte riktigt till alla, så några delar på en bit. ”Nästa gång gör vi två”, skrattar Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var ska de tillaga laxen?",
+    "options": [
+     "I ugnen",
+     "I en stekpanna",
+     "I en gryta",
+     "I en kastrull"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Laxen ska de tillaga i ugnen.",
+    "explanationJa": "サーモンはオーブンで{調理|ちょうり}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Aiko ”garnerar med dill och citron”. Varför gör hon det?",
+    "options": [
+     "För att maten ska bli varm.",
+     "För att det ska bli mer mat.",
+     "För att maten ska se fin ut.",
+     "För att laxen är fadd."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Att garnera är att lägga något vackert på maten så att den ser fin ut.",
+    "explanationJa": "garnera は{料理|りょうり}を{見|み}た{目|め}よくするために{飾|かざ}ることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik serverar maten vid bordet.",
+    "correct": false,
+    "explanationSv": "Det blir buffé i köket, där gästerna tar för sig.",
+    "explanationJa": "{台所|だいどころ}でビュッフェにして、お{客|きゃく}さんが{自分|じぶん}で{取|と}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför värmer Aiko upp soppan?",
+    "options": [
+     "Den är fadd.",
+     "Den är för tjock.",
+     "Den har blivit ljummen.",
+     "Den är svart."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Soppan har hunnit bli ljummen.",
+    "explanationJa": "スープがぬるくなったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det fanns för lite tårta.",
+    "correct": true,
+    "explanationSv": "Tårtan räcker inte till alla, och några delar på en bit.",
+    "explanationJa": "ケーキが{全員|ぜんいん}に{足|た}りなかったので、{分|わ}け{合|あ}いました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att bjuda på mat: hur man förbereder en middag, hur man serverar i Sverige och i Japan, och vad man säger vid bordet.",
+  "discussionPoints": [
+   "Brukar du bjuda vänner på mat? Vad lagar du?",
+   "Vad säger man i Japan innan man äter? Jämför med svenska.",
+   "Tycker du bäst om buffé eller om att få maten serverad?",
+   "Hur viktigt är det att maten ser fin ut på tallriken?"
+  ]
+ }
+}

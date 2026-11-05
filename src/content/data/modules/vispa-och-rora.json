@@ -1,0 +1,169 @@
+{
+ "id": "m.vispa-och-rora",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Vispa och röra",
+ "titleJa": "{泡立|あわだ}てる・{混|ま}ぜる",
+ "descriptionSv": "Att röra, vispa och mixa: visp, elvisp, mixer, klumpar och fluffig grädde.",
+ "descriptionJa": "{混|ま}ぜる・{泡立|あわだ}てる・ミキサーにかける：{泡立|あわだ}て{器|き}、ハンドミキサー、ミキサー、だま、ふわふわのクリーム。",
+ "categoryId": "R01-A02-T03",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.gradda-och-baka"
+ ],
+ "related": [],
+ "recommendedOrder": 116,
+ "words": [
+  {
+   "senseId": "s.röra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slev.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vispa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elvisp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vispgrädde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fluffig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.maräng.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mixer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mixa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smoothie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våffla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Våffeldagen",
+  "paragraphs": [
+   "Den 25 mars är det våffeldagen i Sverige. Aiko och Erik bjuder sina vänner på våfflor.",
+   "Erik gör smeten. Han rör ihop mjöl, mjölk och ägg i en stor skål. ”Det blir klumpar!” säger Aiko. ”Ingen fara”, säger Erik. Han vispar med en visp tills smeten är helt jämn.",
+   "Aiko vispar vispgrädde. Med en vanlig visp tar det lång tid. Med elvispen går det fort, och grädden blir fluffig.",
+   "Av äggvitorna som blev över gör Aiko maränger. ”Vispa tills det blir ett fast skum”, säger receptet. Sedan torkar de i ugnen.",
+   "Hennes vän Yuki dricker inte kaffe. Aiko gör en smoothie i mixern i stället. Hon mixar banan, blåbär och mjölk.",
+   "Erik tar upp smeten med en slev och häller den i våffeljärnet. Snart sitter alla vid bordet och äter våfflor med sylt och grädde."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När är våffeldagen?",
+    "options": [
+     "Den fjärde oktober",
+     "På midsommar",
+     "Den 25 mars",
+     "På jul"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den 25 mars är det våffeldagen i Sverige.",
+    "explanationJa": "3{月|がつ}25{日|にち}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför vispar Erik smeten?",
+    "options": [
+     "Det är klumpar i den, och den ska bli jämn.",
+     "Den är för tunn.",
+     "Den ska bli kall.",
+     "Den ska bli varm."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko ser klumpar, och Erik vispar tills smeten är jämn.",
+    "explanationJa": "だまがあったので、なめらかになるまで{混|ま}ぜます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det går snabbare att vispa grädde med elvisp.",
+    "correct": true,
+    "explanationSv": "Med en vanlig visp tar det lång tid, med elvispen går det fort.",
+    "explanationJa": "ハンドミキサーのほうが{速|はや}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko av äggvitorna som blev över?",
+    "options": [
+     "En smoothie",
+     "Maränger",
+     "Våfflor",
+     "Grädde"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Av äggvitorna gör hon maränger.",
+    "explanationJa": "{残|のこ}った{卵白|らんぱく}でメレンゲを{作|つく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yuki får något annat att dricka än de andra.",
+    "correct": true,
+    "explanationSv": "Yuki dricker inte kaffe, så Aiko gör en smoothie till henne.",
+    "explanationJa": "ユキはコーヒーを{飲|の}まないので、スムージーをもらいます。"
+   }
+  ],
+  "factSources": [
+   "Våffeldagen den 25 mars (Vårfrudagen) är en svensk tradition."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att vispa, röra och mixa i köket: vilka redskap du har, vad du gör av ägg och grädde, och våfflor och andra söta saker.",
+  "discussionPoints": [
+   "Vilka redskap har du i ditt kök: visp, elvisp eller mixer?",
+   "Har du ätit svenska våfflor?",
+   "Vad brukar du göra i mixern?",
+   "Vilka söta saker gör man med vispad grädde i Japan?"
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "m.att-beskriva-en-outfit",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Att beskriva en outfit",
+ "titleJa": "コーディネートを{描写|びょうしゃ}する",
+ "descriptionSv": "Att beskriva kläder och stil: outfit, klädstil, mode, trendig, tidlös, klädsam och hur man klär sig.",
+ "descriptionJa": "{服|ふく}とスタイルを{描写|びょうしゃ}する：コーディネート、ファッションスタイル、{流行|りゅうこう}、トレンディー、タイムレス、{似合|にあ}う、{服|ふく}の{着|き}こなし。",
+ "categoryId": "R01-A03-T01",
+ "tags": [
+  "kläder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sportiga-vardagsklader"
+ ],
+ "related": [],
+ "recommendedOrder": 307,
+ "words": [
+  {
+   "senseId": "s.klä-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.outfit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klädstil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mode.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trendig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omodern.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidlös.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klädsam.1",
+   "active": false
+  },
+  {
+   "senseId": "s.välklädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stilig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cool.1",
+   "active": true
+  },
+  {
+   "senseId": "s.originell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.modemedveten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.favoritplagg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uttrycka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mias nya stil",
+  "paragraphs": [
+   "Mia är tretton år och har blivit modemedveten. Hon läser om mode på internet och tittar på andras outfits.",
+   "”Pappa, din skjorta är omodern”, säger hon. ”Den är tidlös”, svarar Erik. ”Nej, den ser gammal ut”, säger Mia.",
+   "Mia vill ha en egen klädstil. Hon tycker att trendiga kläder är roliga, men hon vill också vara originell. Med kläderna vill hon uttrycka vem hon är.",
+   "I dag har hon på sig en stor svart blazer, en vit t-shirt och jeans. ”Vilken cool outfit!” säger Aiko. ”Svart är klädsamt på dig.”",
+   "Morfar Lars kommer på besök. Han klär sig alltid fint och är välklädd, med kavaj och slips. ”Du är stilig, morfar”, säger Mia.",
+   "Mias favoritplagg är ändå en gammal kofta som var mormors. ”Den passar till allt”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tycker Mia om Eriks skjorta?",
+    "options": [
+     "Att den är cool",
+     "Att den är tidlös",
+     "Att den är för stor",
+     "Att den är omodern"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Pappa, din skjorta är omodern”, säger hon.",
+    "explanationJa": "{時代遅|じだいおく}れだと{思|おも}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Mia vill bara ha trendiga kläder som alla andra.",
+    "correct": false,
+    "explanationSv": "Hon tycker att trendiga kläder är roliga, men hon vill också vara originell.",
+    "explanationJa": "ユニークでもありたいと{思|おも}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad har Mia på sig i dag?",
+    "options": [
+     "En klänning och en kofta",
+     "Mjukisbyxor och en huvtröja",
+     "En svart blazer, en vit t-shirt och jeans",
+     "En kostym och slips"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I dag har hon på sig en stor svart blazer, en vit t-shirt och jeans.",
+    "explanationJa": "{黒|くろ}いブレザー、{白|しろ}いTシャツとジーンズです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur är morfar Lars klädd?",
+    "options": [
+     "I mjukisbyxor",
+     "Med kavaj och slips",
+     "I regnställ",
+     "I t-shirt och shorts"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han klär sig alltid fint och är välklädd, med kavaj och slips.",
+    "explanationJa": "ジャケットとネクタイです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia tycker om gamla kläder också.",
+    "correct": true,
+    "explanationSv": "Mias favoritplagg är en gammal kofta som var mormors.",
+    "explanationJa": "お{気|き}に{入|い}りはおばあちゃんの{古|ふる}いカーディガンです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni beskriver kläder och stil: era egna outfits, er klädstil och vad som är trendigt i Sverige och Japan.",
+  "discussionPoints": [
+   "Hur skulle du beskriva din klädstil?",
+   "Vilket är ditt favoritplagg? Varför?",
+   "Vad är trendigt i Japan just nu?",
+   "Bryr du dig om mode?"
+  ]
+ }
+}

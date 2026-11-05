@@ -1,0 +1,169 @@
+{
+ "id": "m.flytta-till-ny-bostad",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Flytta till ny bostad",
+ "titleJa": "{新|あたら}しい{住|す}まいへの{引|ひ}っ{越|こ}し",
+ "descriptionSv": "Att flytta: packa, flyttkartonger, flyttfirma, flyttstäda och inflyttningsfest.",
+ "descriptionJa": "{引|ひ}っ{越|こ}し：{荷造|にづく}り、{段|だん}ボール{箱|ばこ}、{引|ひ}っ{越|こ}し{業者|ぎょうしゃ}、{退去|たいきょ}{時|じ}の{掃除|そうじ}、{引|ひ}っ{越|こ}し{祝|いわ}い。",
+ "categoryId": "R01-A01-T01",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.planlosning-och-boyta"
+ ],
+ "related": [],
+ "recommendedOrder": 206,
+ "words": [
+  {
+   "senseId": "s.flytta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.packa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.packa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flyttkartong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.märka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ömtålig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bubbelplast.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tejp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tejpa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flyttfirma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flyttbil.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flyttstäda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sakna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inflyttningsfest.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Flyttdagen närmar sig",
+  "paragraphs": [
+   "Om två veckor ska Aiko och Erik flytta till radhuset. Varje kväll packar de. De har köpt fyrtio flyttkartonger.",
+   "Aiko märker varje låda med namnet på rummet: ”kök”, ”sovrum”, ”arbetsrum”. Glas och tallrikar är ömtåliga, så de lägger dem i bubbelplast. Erik tejpar lådorna. ”Vi behöver mer tejp!” säger han.",
+   "De har bokat en flyttfirma som kommer med en stor flyttbil. ”De bär alla tunga saker”, säger Erik. ”Vi behöver bara ta de små lådorna.”",
+   "När lägenheten är tom ska de flyttstäda. I Sverige måste man städa mycket noga, även ugnen och kylskåpet, innan man lämnar nycklarna.",
+   "”Jag kommer att sakna den här lägenheten”, säger Aiko. ”Vi har bott här i fem år.”",
+   "I det nya huset ska de packa upp. När allt är klart vill de ha en inflyttningsfest för vänner och grannar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många flyttkartonger har de köpt?",
+    "options": [
+     "Fyrtio",
+     "Fyra",
+     "Fjorton",
+     "Hundra"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De har köpt fyrtio flyttkartonger.",
+    "explanationJa": "{段|だん}ボール{箱|ばこ}を40{個|こ}{買|か}いました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför lägger de glas i bubbelplast?",
+    "options": [
+     "Glas är tungt.",
+     "Glas är smutsigt.",
+     "Glas är ömtåligt.",
+     "De har för lite tejp."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Glas och tallrikar är ömtåliga.",
+    "explanationJa": "ガラスは{壊|こわ}れやすいからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko och Erik bär alla tunga saker själva.",
+    "correct": false,
+    "explanationSv": "Flyttfirman bär alla tunga saker.",
+    "explanationJa": "{重|おも}いものは{引|ひ}っ{越|こ}し{業者|ぎょうしゃ}が{運|はこ}びます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad måste man göra innan man lämnar nycklarna?",
+    "options": [
+     "Ha en fest",
+     "Packa upp",
+     "Flyttstäda noga",
+     "Köpa en ny soffa"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Man måste städa mycket noga, även ugnen och kylskåpet.",
+    "explanationJa": "{念入|ねんい}りに{退去|たいきょ}{時|じ}の{掃除|そうじ}をしなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko är lite ledsen över att flytta.",
+    "correct": true,
+    "explanationSv": "Hon säger att hon kommer att sakna lägenheten.",
+    "explanationJa": "アパートが{恋|こい}しくなると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att flytta: hur man packar, flyttfirmor och flyttstädning, och hur det är att flytta i Japan jämfört med i Sverige.",
+  "discussionPoints": [
+   "Hur många gånger har du flyttat?",
+   "Vad är det jobbigaste med att flytta?",
+   "Hur fungerar det att flytta ut ur en lägenhet i Japan?",
+   "Har du haft en inflyttningsfest?"
+  ]
+ }
+}

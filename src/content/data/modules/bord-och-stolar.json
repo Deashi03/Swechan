@@ -1,0 +1,169 @@
+{
+ "id": "m.bord-och-stolar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bord och stolar",
+ "titleJa": "テーブルと{椅子|いす}",
+ "descriptionSv": "Bord och stolar: matbord, skrivbord, pall, utdragbart och fällbart, och möbler av ek.",
+ "descriptionJa": "テーブルと{椅子|いす}：ダイニングテーブル、{机|つくえ}、スツール、{伸長式|しんちょうしき}と{折|お}りたたみ{式|しき}、オーク{材|ざい}の{家具|かぐ}。",
+ "categoryId": "R01-A01-T02",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.soffor-och-fatoljer"
+ ],
+ "related": [],
+ "recommendedOrder": 209,
+ "words": [
+  {
+   "senseId": "s.matbord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köksbord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrivbord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bordsskiva.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bordsben.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinglig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utdragbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fällbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stapla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sits.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnstol.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pinnstol.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.massiv.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett bord från loppis",
+  "paragraphs": [
+   "Aiko och Erik letar efter ett matbord. Nya bord är dyra, så de åker till en loppis.",
+   "Där hittar de ett gammalt matbord av massiv ek. Bordsskivan är fin, men ett bordsben är kortare än de andra, så bordet är vingligt. ”Det kan jag laga”, säger Erik.",
+   "Bordet är utdragbart, så det passar både två personer och åtta. De köper också fyra gamla pinnstolar och en pall till köket.",
+   "Hemma ställer de bordet vid fönstret. Det gamla köksbordet blir Aikos skrivbord i arbetsrummet.",
+   "Eriks syster har en bebis. När hon kommer på middag lånar de en barnstol av grannen.",
+   "Till inflyttningsfesten behövs fler stolar. Erik köper tio fällbara stolar. ”Efter festen kan vi stapla dem i källaren”, säger han. Men sitsen är hård, så Aiko köper kuddar till dem."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför åker de till en loppis?",
+    "options": [
+     "De vill sälja saker.",
+     "Nya bord är dyra.",
+     "Loppisen är nära.",
+     "Grannen tipsade dem."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nya bord är dyra, så de åker till en loppis.",
+    "explanationJa": "{新品|しんぴん}のテーブルは{高|たか}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är bordet vingligt?",
+    "options": [
+     "Ett bordsben är kortare än de andra.",
+     "Bordsskivan är trasig.",
+     "Det är av glas.",
+     "Det är för litet."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ett bordsben är kortare än de andra.",
+    "explanationJa": "{脚|あし}が1{本|ぽん}だけ{短|みじか}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det gamla köksbordet blir Aikos skrivbord.",
+    "correct": true,
+    "explanationSv": "Det gamla köksbordet blir Aikos skrivbord i arbetsrummet.",
+    "explanationJa": "{古|ふる}いキッチンテーブルはアイコの{机|つくえ}になります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Bordet är ”utdragbart”. Vad betyder det?",
+    "options": [
+     "Man kan göra det längre.",
+     "Man kan vika ihop det.",
+     "Det har hjul.",
+     "Det är av ek."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Utdragbart betyder att man kan dra ut det och göra det längre.",
+    "explanationJa": "{引|ひ}き{出|だ}して{長|なが}くできるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De fällbara stolarna är bekväma att sitta på.",
+    "correct": false,
+    "explanationSv": "Sitsen är hård, så Aiko köper kuddar till dem.",
+    "explanationJa": "{座面|ざめん}が{固|かた}いのでクッションを{買|か}います。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bord och stolar: vilka bord du har hemma, att köpa begagnade möbler på loppis, och hur man sitter vid bordet i Japan.",
+  "discussionPoints": [
+   "Hur ser ditt matbord ut, och hur många kan sitta där?",
+   "Har du köpt något på loppis?",
+   "Sitter man på stolar eller på golvet vid bordet hemma i Japan?",
+   "Var arbetar eller studerar du hemma?"
+  ]
+ }
+}

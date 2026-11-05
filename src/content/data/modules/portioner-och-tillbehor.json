@@ -1,0 +1,169 @@
+{
+ "id": "m.portioner-och-tillbehor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Portioner och tillbehör",
+ "titleJa": "{量|りょう}とつけ{合|あ}わせ",
+ "descriptionSv": "Portioner och tillbehör: stora och små portioner, potatis, såser och att ta om.",
+ "descriptionJa": "{料理|りょうり}の{量|りょう}とつけ{合|あ}わせ：{大盛|おおも}りと{少|すく}なめ、じゃがいも、ソース、おかわり。",
+ "categoryId": "R01-A02-T05",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.mellanmal-och-fika"
+ ],
+ "related": [],
+ "recommendedOrder": 129,
+ "words": [
+  {
+   "senseId": "s.portion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnportion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.generös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räcka-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påfyllning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tillbehör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pommes-frites.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klyftpotatis.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rotfrukt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grönsallad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dressing.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gräddsås.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brunsås.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Stora och små portioner",
+  "paragraphs": [
+   "Aiko och Erik äter lunch på en restaurang. Där är portionerna generösa. ”Jag kommer aldrig att bli mätt på en japansk portion igen”, skrattar Erik.",
+   "Till huvudrätten kan man välja tillbehör: kokt potatis, pommes frites eller klyftpotatis. Det finns också rotfrukter från ugnen.",
+   "Erik tar köttbullar med gräddsås. Aiko tar fisk, och till den finns det en grönsallad med dressing. Vid bordet bredvid sitter en familj. Barnen får barnportioner.",
+   "På vissa restauranger får man ta om. ”Får jag ta om?” frågar Erik. ”Javisst”, säger kocken. Det finns också gratis påfyllning av kaffe.",
+   "På kvällen äter de på en annan restaurang. Där är det tvärtom. Portionerna är små, och de är snåla med såsen. ”Det här räcker till ett barn, men inte till mig”, säger Erik.",
+   "Hemma gör de egen brunsås till potatisen. ”Hemma kan man ta så mycket sås man vill”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur är portionerna på restaurangen vid lunch?",
+    "options": [
+     "Generösa",
+     "Snåla",
+     "Små",
+     "Kalla"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Portionerna är generösa.",
+    "explanationJa": "{量|りょう}はたっぷりです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka tillbehör kan man välja?",
+    "options": [
+     "Kokt potatis, pommes frites eller klyftpotatis",
+     "Bara ris",
+     "Bara bröd",
+     "Sallad eller soppa"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Man kan välja kokt potatis, pommes frites eller klyftpotatis.",
+    "explanationJa": "ゆでたじゃがいも、フライドポテト、くし{形|がた}のポテトから{選|えら}べます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Barnen vid bordet bredvid får vuxenportioner.",
+    "correct": false,
+    "explanationSv": "Barnen får barnportioner.",
+    "explanationJa": "{子|こ}どもたちはお{子様|こさま}{用|よう}の{量|りょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Restaurangen på kvällen är ”snål med såsen”. Vad betyder det?",
+    "options": [
+     "De ger mycket sås.",
+     "De ger lite sås.",
+     "Såsen är gratis.",
+     "Såsen är för salt."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Snål betyder här att man får lite.",
+    "explanationJa": "ここでの snål は「{少|すく}ない」という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik blev inte riktigt mätt på kvällen.",
+    "correct": true,
+    "explanationSv": "Han säger att maten inte räcker till honom.",
+    "explanationJa": "{量|りょう}が{足|た}りないと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om portioner och tillbehör: hur stora portioner är i Sverige och i Japan, vad du helst äter till maten, och om man får ta om.",
+  "discussionPoints": [
+   "Är portionerna större i Sverige eller i Japan?",
+   "Vilket tillbehör väljer du helst?",
+   "Är det artigt att ta om i Japan?",
+   "Har du ätit på en restaurang som var snål med maten?"
+  ]
+ }
+}

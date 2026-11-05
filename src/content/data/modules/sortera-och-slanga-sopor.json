@@ -1,0 +1,170 @@
+{
+ "id": "m.sortera-och-slanga-sopor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Sortera och slänga sopor",
+ "titleJa": "ごみの{分別|ぶんべつ}と{処分|しょぶん}",
+ "descriptionSv": "Sopor och återvinning: källsortera, återvinningsstation, pant, grovsopor och farligt avfall.",
+ "descriptionJa": "ごみとリサイクル：{分別|ぶんべつ}、リサイクルステーション、デポジット、{粗大|そだい}ごみ、{有害|ゆうがい}ごみ。",
+ "categoryId": "R01-A01-T05",
+ "tags": [
+  "hemmet",
+  "miljö"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.tvatta-klader-och-textilier"
+ ],
+ "related": [],
+ "recommendedOrder": 232,
+ "words": [
+  {
+   "senseId": "s.sopor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvinna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.källsortera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvinningsstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvinningscentral.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grovsopor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.farligt-avfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.panta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.soprum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sopbil.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hushållssopor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.returpapper.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Sopor i Sverige",
+  "paragraphs": [
+   "I Sverige källsorterar nästan alla. Aiko var förvånad första veckan. ”Hur många sorters sopor finns det?” frågade hon.",
+   "I lägenheten fanns ett soprum på gården. Där sorterade man hushållssopor, matavfall, plast, papper och glas. Gamla tidningar lade man i returpapper.",
+   "I radhuset finns ingen sådan plats. De tar plast, glas och metall till en återvinningsstation nära affären. Sopbilen hämtar hushållssopor på tisdagar.",
+   "Burkar och flaskor har pant. Aiko pantar dem i affären och får pengar tillbaka. ”Barnen samlar burkar och köper godis för panten”, säger Erik.",
+   "Den gamla soffan och andra grovsopor kör de till återvinningscentralen. Där lämnar de också farligt avfall, till exempel batterier och färg.",
+   "”Man kan återvinna nästan allt avfall”, säger Erik. ”I Japan sorterar vi också mycket”, säger Aiko. ”Men reglerna är olika i varje stad.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var låg soprummet när de bodde i lägenheten?",
+    "options": [
+     "I källaren",
+     "I köket",
+     "På vinden",
+     "På gården"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I lägenheten fanns ett soprum på gården.",
+    "explanationJa": "ごみ{置|お}き{場|ば}は{中庭|なかにわ}にありました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När hämtar sopbilen hushållssopor?",
+    "options": [
+     "På tisdagar",
+     "Varje dag",
+     "På lördagar",
+     "En gång i månaden"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sopbilen hämtar hushållssopor på tisdagar.",
+    "explanationJa": "{火曜日|かようび}に{集|あつ}めに{来|き}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Man får pengar när man pantar burkar.",
+    "correct": true,
+    "explanationSv": "Aiko pantar dem i affären och får pengar tillbaka.",
+    "explanationJa": "{缶|かん}を{返却|へんきゃく}するとお{金|かね}が{戻|もど}ってきます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var lämnar de batterier?",
+    "options": [
+     "På återvinningscentralen",
+     "I soprummet",
+     "Bland hushållssopor",
+     "På återvinningsstationen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Farligt avfall som batterier lämnar de på återvinningscentralen.",
+    "explanationJa": "{電池|でんち}はリサイクルセンターに{出|だ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Reglerna för att sortera sopor är likadana i hela Japan.",
+    "correct": false,
+    "explanationSv": "Aiko säger att reglerna är olika i varje stad.",
+    "explanationJa": "{町|まち}ごとにルールが{違|ちが}うと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Svenskt pantsystem för burkar och PET-flaskor (Returpack); återvinningsstationer och återvinningscentraler drivs av FTI och kommuner."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sopor och återvinning: hur man sorterar i Sverige och i Japan, pant, och vad som är svårt att veta var man ska slänga.",
+  "discussionPoints": [
+   "Hur sorterar du dina sopor?",
+   "Hur fungerar sopsortering i din stad i Japan?",
+   "Vad tycker du om pantsystemet?",
+   "Vad är svårast att veta hur man ska slänga?"
+  ]
+ }
+}

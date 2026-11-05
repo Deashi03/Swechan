@@ -1,0 +1,170 @@
+{
+ "id": "m.hygienartiklar-hemma",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hygienartiklar hemma",
+ "titleJa": "{家|いえ}の{衛生用品|えいせいようひん}",
+ "descriptionSv": "Saker i badrumsskåpet: tandborste, schampo, deodorant, rakhyvel, kam och hudkräm.",
+ "descriptionJa": "{洗面所|せんめんじょ}の{戸棚|とだな}の{物|もの}：{歯|は}ブラシ、シャンプー、デオドラント、かみそり、くし、{保湿|ほしつ}クリーム。",
+ "categoryId": "R01-A01-T04",
+ "tags": [
+  "hemmet",
+  "hygien"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.handdukar-och-badrumstextil"
+ ],
+ "related": [],
+ "recommendedOrder": 225,
+ "words": [
+  {
+   "senseId": "s.borsta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandborste.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandkräm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårborste.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kam.1",
+   "active": false
+  },
+  {
+   "senseId": "s.schampo.1",
+   "active": true
+  },
+  {
+   "senseId": "s.balsam.1",
+   "active": false
+  },
+  {
+   "senseId": "s.duschtvål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deodorant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rakhyvel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.raka-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nagelsax.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tops.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hudkräm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.toalettväska.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Badrumsskåpet",
+  "paragraphs": [
+   "Badrumsskåpet är fullt. Aiko och Erik har mycket saker, och nu ska de dela samma skåp.",
+   "På översta hyllan står Aikos schampo och balsam från Japan. Bredvid står Eriks duschtvål och hans deodorant.",
+   "Erik rakar sig varje morgon. Hans rakhyvel ligger på mellersta hyllan. Där ligger också en nagelsax, en kam och en burk med tops.",
+   "Tandborstarna står i ett glas. De borstar tänderna morgon och kväll. Tandkrämen är nästan slut.",
+   "Aiko använder hudkräm varje dag på vintern. ”Den svenska luften är så torr”, säger hon. Hennes hårborste hittar hon inte. Den ligger i Eriks toalettväska!",
+   "”Vi behöver ett större skåp”, säger Aiko. ”Eller färre saker”, skrattar Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står på översta hyllan?",
+    "options": [
+     "Eriks rakhyvel",
+     "Tandborstarna",
+     "Aikos schampo och balsam",
+     "Hudkrämen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På översta hyllan står Aikos schampo och balsam.",
+    "explanationJa": "いちばん{上|うえ}の{棚|たな}にはアイコのシャンプーとリンスがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ofta rakar sig Erik?",
+    "options": [
+     "En gång i veckan",
+     "Aldrig",
+     "Varje morgon",
+     "På kvällen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik rakar sig varje morgon.",
+    "explanationJa": "{毎朝|まいあさ}そります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Tandkrämen är nästan slut.",
+    "correct": true,
+    "explanationSv": "Texten säger att tandkrämen nästan är slut.",
+    "explanationJa": "{歯|は}みがき{粉|こ}はもうすぐなくなります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför använder Aiko hudkräm?",
+    "options": [
+     "Hon har varit i solen.",
+     "Luften i Sverige är torr.",
+     "Den luktar gott.",
+     "Erik ger henne den."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko säger att den svenska luften är så torr.",
+    "explanationJa": "スウェーデンの{空気|くうき}がとても{乾燥|かんそう}しているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aikos hårborste ligger på sin vanliga plats.",
+    "correct": false,
+    "explanationSv": "Den ligger i Eriks toalettväska.",
+    "explanationJa": "エリックのポーチに{入|はい}っていました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hygienartiklar: vad du har i badrummet, japanska och svenska märken och vanor, och vad du packar när du reser.",
+  "discussionPoints": [
+   "Vad har du i ditt badrumsskåp?",
+   "Vilka hygienartiklar köper du helst från Japan?",
+   "Vad packar du alltid i toalettväskan?",
+   "Hur ofta byter du tandborste?"
+  ]
+ }
+}

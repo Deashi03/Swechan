@@ -1,0 +1,170 @@
+{
+ "id": "m.att-kanna-igen-kvalitet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Att känna igen kvalitet",
+ "titleJa": "{品質|ひんしつ}を{見分|みわ}ける",
+ "descriptionSv": "Att känna igen kvalitet: granska, slitstark, noppa sig, skavank, prislapp, secondhand och fynd.",
+ "descriptionJa": "{品質|ひんしつ}を{見分|みわ}ける：よく{調|しら}べる、{丈夫|じょうぶ}、{毛玉|けだま}、きず、{値札|ねふだ}、{古着|ふるぎ}、{掘|ほ}り{出|だ}し{物|もの}。",
+ "categoryId": "R01-A03-T03",
+ "tags": [
+  "kläder",
+  "ekonomi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tygers-egenskaper"
+ ],
+ "related": [],
+ "recommendedOrder": 321,
+ "words": [
+  {
+   "senseId": "s.granska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slitstark.1",
+   "active": true
+  },
+  {
+   "senseId": "s.noppa-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nopprig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skavank.1",
+   "active": false
+  },
+  {
+   "senseId": "s.prislapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lågpris.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slit-och-släng.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tillverkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljömärkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klädköp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.secondhand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vintage.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fynd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Billigt eller bra?",
+  "paragraphs": [
+   "Mia vill köpa en ny tröja. I en affär med lågpris kostar en tröja bara hundra kronor. På en annan affär kostar en liknande tröja sex hundra kronor.",
+   "”Granska båda”, säger Aiko. ”Titta på tyget och kontrollera att allt sitter fast.” Den billiga tröjan är tunn, och det finns redan en liten skavank på ärmen.",
+   "”Billiga tröjor noppar sig snabbt”, säger Aiko och visar sin gamla kofta. Den är nopprig fast den bara är ett år gammal. Hennes dyra ylletröja är tio år och fortfarande fin. ”Den är slitstark.”",
+   "Mia tittar på prislappen igen. ”Men sex hundra är mycket pengar!” Aiko berättar om slit och släng: tillverkningen av kläder kostar mycket vatten och energi.",
+   "”Man kan köpa bra kläder secondhand också”, säger Aiko. De går till en affär med vintage. Där hittar Mia en tröja av ull för hundrafemtio kronor. ”Ett riktigt fynd!”",
+   "Mia bestämmer att hon ska tänka mer på sina klädköp och leta efter miljömärkta kläder."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket kostar tröjan i affären med lågpris?",
+    "options": [
+     "Sex hundra kronor",
+     "Hundrafemtio kronor",
+     "Hundra kronor",
+     "Tusen kronor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I en affär med lågpris kostar en tröja bara hundra kronor.",
+    "explanationJa": "100クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är fel på den billiga tröjan?",
+    "options": [
+     "Den är för stor.",
+     "Den är nopprig.",
+     "Den har fel färg.",
+     "Den har en liten skavank på ärmen."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det finns redan en liten skavank på ärmen.",
+    "explanationJa": "{袖|そで}に{小|ちい}さなきずがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aikos dyra ylletröja är fortfarande fin efter tio år.",
+    "correct": true,
+    "explanationSv": "Hennes dyra ylletröja är tio år och fortfarande fin.",
+    "explanationJa": "10{年|ねん}たってもまだきれいです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var hittar Mia ett fynd?",
+    "options": [
+     "I en affär med vintage",
+     "I affären med lågpris",
+     "På internet",
+     "Hos mormor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De går till en affär med vintage. Där hittar Mia en tröja av ull.",
+    "explanationJa": "ヴィンテージの{店|みせ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia har lärt sig något om kvalitet.",
+    "correct": true,
+    "explanationSv": "Mia bestämmer att hon ska tänka mer på sina klädköp.",
+    "explanationJa": "{服|ふく}を{買|か}うことをもっと{考|かんが}えようと{決|き}めました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kvalitet på kläder: hur man ser om något är bra, billigt mot dyrt, secondhand och hållbara klädköp.",
+  "discussionPoints": [
+   "Hur ser du om ett plagg har bra kvalitet?",
+   "Köper du hellre billigt eller dyrt? Varför?",
+   "Har du köpt något secondhand?",
+   "Vilket är ditt bästa fynd?"
+  ]
+ }
+}
