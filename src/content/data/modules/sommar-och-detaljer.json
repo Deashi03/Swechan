@@ -1,0 +1,169 @@
+{
+ "id": "m.sommar-och-detaljer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Sömmar och detaljer",
+ "titleJa": "{縫|ぬ}い{目|め}とディテール",
+ "descriptionSv": "Detaljer på kläder: söm, fåll, foder, ficklock, knapphål, tryckknapp, kardborreband, resår och veck.",
+ "descriptionJa": "{服|ふく}のディテール：{縫|ぬ}い{目|め}、すそ、{裏地|うらじ}、ポケットのふた、ボタン{穴|あな}、スナップ、マジックテープ、ゴム、ひだ。",
+ "categoryId": "R01-A03-T04",
+ "tags": [
+  "kläder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.prova-klader"
+ ],
+ "related": [],
+ "recommendedOrder": 325,
+ "words": [
+  {
+   "senseId": "s.detalj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.söm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömsmån.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fåll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.foder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fodrad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ficklock.1",
+   "active": false
+  },
+  {
+   "senseId": "s.axelvadd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.knapphål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckknapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kardborreband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dragsko.1",
+   "active": false
+  },
+  {
+   "senseId": "s.veck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nit.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Det är detaljerna som räknas",
+  "paragraphs": [
+   "Mormor har sytt kläder i hela sitt liv. När Mia visar sin nya jacka tittar mormor först på detaljerna.",
+   "”Titta på sömmarna. De är raka och starka. Och jackan är fodrad, fodret är av bomull”, säger hon.",
+   "Jackan har fickor med ficklock och tryckknappar, och dragskor i huvan. ”Det är praktiskt när det blåser.”",
+   "Sedan tittar hon på Mias gamla byxor. Fållen har släppt, och det finns lite sömsmån kvar. ”Dem kan jag laga.”",
+   "Leos byxor har resår och hans skor har kardborreband. ”Bra för barn som inte kan knyta”, säger mormor.",
+   "Mormor har också en gammal kavaj med stora axelvaddar och ett tydligt veck i byxorna. ”Så var det förr”, skrattar hon. Hennes jeans har nitar och knapphål som hon har sytt för hand."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tittar mormor på först?",
+    "options": [
+     "Färgen",
+     "Priset",
+     "Detaljerna",
+     "Storleken"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mormor tittar först på detaljerna.",
+    "explanationJa": "ディテールです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Mias nya jacka har inget foder.",
+    "correct": false,
+    "explanationSv": "Jackan är fodrad, fodret är av bomull.",
+    "explanationJa": "{裏地|うらじ}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad är fel på Mias gamla byxor?",
+    "options": [
+     "Fållen har släppt.",
+     "De har hål.",
+     "Resåren är trasig.",
+     "En nit har lossnat."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Fållen har släppt.",
+    "explanationJa": "すそがほつれています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför är kardborreband bra för barn?",
+    "options": [
+     "De är billiga.",
+     "De kan inte knyta.",
+     "De är snygga.",
+     "De är varma."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Bra för barn som inte kan knyta.”",
+    "explanationJa": "ひもを{結|むす}べないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor kan sy.",
+    "correct": true,
+    "explanationSv": "Mormor har sytt kläder i hela sitt liv.",
+    "explanationJa": "{一生|いっしょう}{服|ふく}を{縫|ぬ}ってきました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om detaljer på kläder: sömmar, foder, fickor, knappar och annat som visar kvalitet.",
+  "discussionPoints": [
+   "Vilka detaljer tittar du på när du köper kläder?",
+   "Föredrar du knappar, dragkedja eller tryckknappar?",
+   "Kan du sy?",
+   "Vilka detaljer var populära förr?"
+  ]
+ }
+}
