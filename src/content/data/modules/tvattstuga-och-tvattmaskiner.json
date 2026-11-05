@@ -1,0 +1,169 @@
+{
+ "id": "m.tvattstuga-och-tvattmaskiner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tvättstuga och tvättmaskiner",
+ "titleJa": "{洗濯室|せんたくしつ}と{洗濯機|せんたくき}",
+ "descriptionSv": "Att tvätta: tvättstuga och tvättid, tvättmedel, sortera tvätt, krympa och torka.",
+ "descriptionJa": "{洗濯|せんたく}：{共同洗濯室|きょうどうせんたくしつ}と{予約|よやく}、{洗剤|せんざい}、{洗濯物|せんたくもの}の{仕分|しわ}け、{縮|ちぢ}み、{乾|かわ}かし{方|かた}。",
+ "categoryId": "R01-A01-T04",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hygienartiklar-hemma"
+ ],
+ "related": [],
+ "recommendedOrder": 226,
+ "words": [
+  {
+   "senseId": "s.tvättstuga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättkorg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sköljmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättprogram.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kulörtvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vittvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.missfärga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.krympa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.centrifugera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.torktumlare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torkskåp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.torkställ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klädnypa.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "I tvättstugan",
+  "paragraphs": [
+   "När Aiko och Erik bodde i lägenheten, tvättade de i tvättstugan i källaren. Man måste boka en tvättid. ”Tvättstugan är den svenskaste platsen som finns”, säger Erik.",
+   "En gång glömde Aiko att hon hade tvättid. Grannen blev arg och satte upp en lapp. ”Tvättstugan är ofta orsak till bråk”, skrattar Erik.",
+   "Nu har de en egen tvättmaskin och en torktumlare. Tvättkorgen blir full fort. Aiko sorterar i vittvätt och kulörtvätt.",
+   "Hon har i tvättmedel och lite sköljmedel och väljer tvättprogram. Maskinen tvättar och centrifugerar.",
+   "Erik tvättade en gång en röd tröja med de vita lakanen. Tröjan missfärgade lakanen, och de blev rosa. En annan tröja krympte i torktumlaren.",
+   "På sommaren hänger de tvätten på ett torkställ ute med klädnypor. I tvättstugan i det gamla huset fanns ett torkskåp, men det saknar de inte."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad måste man göra för att tvätta i tvättstugan?",
+    "options": [
+     "Betala grannen",
+     "Ha egen tvättmaskin",
+     "Tvätta på natten",
+     "Boka en tvättid"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Man måste boka en tvättid.",
+    "explanationJa": "{洗濯室|せんたくしつ}の{時間|じかん}を{予約|よやく}しなければなりません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blev grannen arg?",
+    "options": [
+     "Aiko tvättade för länge.",
+     "Erik var för högljudd.",
+     "Aiko glömde sin tvättid.",
+     "Tvätten var smutsig."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko glömde att hon hade tvättid.",
+    "explanationJa": "アイコが{予約時間|よやくじかん}を{忘|わす}れたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko sorterar tvätten i vittvätt och kulörtvätt.",
+    "correct": true,
+    "explanationSv": "Aiko sorterar i vittvätt och kulörtvätt.",
+    "explanationJa": "{白物|しろもの}と{色物|いろもの}に{分|わ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför blev lakanen rosa?",
+    "options": [
+     "De krympte.",
+     "En röd tröja missfärgade dem.",
+     "Aiko hade för mycket sköljmedel.",
+     "De hängde i solen."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den röda tröjan missfärgade lakanen.",
+    "explanationJa": "{赤|あか}いセーターが{色移|いろうつ}りしたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De saknar torkskåpet från tvättstugan.",
+    "correct": false,
+    "explanationSv": "Texten säger att de inte saknar det.",
+    "explanationJa": "{乾燥|かんそう}キャビネットはなくても{困|こま}っていません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att tvätta: tvättstuga och egen tvättmaskin, hur man sorterar tvätt, och hur man torkar tvätt i Sverige och i Japan.",
+  "discussionPoints": [
+   "Var tvättar du dina kläder?",
+   "Hur torkar man tvätt i Japan?",
+   "Har du råkat missfärga eller krympa kläder?",
+   "Vad tycker du om svenska tvättstugor med bokade tider?"
+  ]
+ }
+}
