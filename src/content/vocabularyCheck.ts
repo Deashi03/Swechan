@@ -59,7 +59,38 @@ export class VocabularyChecker {
     if (this.names.has(token) || (token.endsWith('s') && this.names.has(token.slice(0, -1)))) return true; // names, incl. genitive (Aikos)
     const w = token.toLowerCase();
     // target words: stored forms, plus genitive -s ("atomens", "fiendens")
+    return this.simpleKnown(w, extra) || this.compoundKnown(w, extra);
+  }
+
+  private simpleKnown(w: string, extra: Set<string>): boolean {
     return extra.has(w) || (w.endsWith('s') && extra.has(w.slice(0, -1))) || this.coreKnown(w);
+  }
+
+  /** The last part of a compound: an exact known word or a known noun with a regular ending. */
+  private compoundHeadKnown(w: string, extra: Set<string>): boolean {
+    if (this.surface.has(w) || extra.has(w)) return true;
+    for (const s of ['arna', 'erna', 'orna', 'ens', 'ets', 'ar', 'er', 'or', 'en', 'et', 'na', 'n', 't', 's']) {
+      if (w.endsWith(s) && (this.lemmas.has(w.slice(0, -s.length)) || extra.has(w.slice(0, -s.length)))) return true;
+    }
+    return false;
+  }
+
+  /**
+   * Compounds of two known words ("fläskfilé", "vardagsmat" with linking -s-):
+   * a learner who knows both parts can read the compound. Parts ≥ 3 letters.
+   */
+  private compoundKnown(w: string, extra: Set<string>): boolean {
+    if (w.length < 6) return false;
+    const leftKnown = (x: string) => this.lemmas.has(x) || this.surface.has(x) || extra.has(x) || (x.endsWith('a') && (this.lemmas.has(x) || extra.has(x)));
+    for (let i = 3; i <= w.length - 3; i++) {
+      const left = w.slice(0, i);
+      const right = w.slice(i);
+      if (!this.compoundHeadKnown(right, extra)) continue;
+      if (leftKnown(left) || (left.endsWith('s') && left.length > 3 && leftKnown(left.slice(0, -1)))) return true;
+      // stem without final -a/-e: "skol-", "flick-" (skola, flicka)
+      if (this.lemmas.has(`${left}a`) || extra.has(`${left}a`) || this.lemmas.has(`${left}e`) || extra.has(`${left}e`)) return true;
+    }
+    return false;
   }
 
   /** Unknown words in `text`. Multi-word target forms (particle verbs) are matched first. */

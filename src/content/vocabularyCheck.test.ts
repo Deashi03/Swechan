@@ -19,3 +19,14 @@ describe('controlled vocabulary', () => {
     expect(issues).toEqual([]);
   });
 });
+
+describe('compound words', () => {
+  it('accepts compounds of known words, with or without linking -s-', async () => {
+    const { VocabularyChecker, CoreVocabularyFile } = await import('./vocabularyCheck');
+    const core = CoreVocabularyFile.parse({ lemmas: ['vardag', 'mat', 'fläsk', 'jul'], irregularForms: [], names: [] });
+    const c = new VocabularyChecker(core);
+    const extra = new Set(['filé']);
+    expect(c.unknownWords('vardagsmat fläskfilé julmat', extra)).toEqual([]);
+    expect(c.unknownWords('xyzmat', extra)).toEqual(['xyzmat']);
+  });
+});

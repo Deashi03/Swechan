@@ -186,6 +186,43 @@ export const MOTIFS: Record<string, Motif> = {
     p('M38 28 H56 V54 H38 Z', 'main'), p('M38 28 H56 V33 H38 Z M38 49 H56 V54 H38 Z', 'accent2'),
     q(41, 37, 12, 8, 'light', 1),
   ] },
+  // ── Kött, fisk & vegetariskt ─────────────────────────────────
+  steak: { parts: [
+    p('M10 30 C10 18 24 12 36 14 C50 16 56 26 54 36 C52 48 38 54 24 52 C14 50 10 42 10 30 Z', 'main', H.red),
+    p('M18 30 C18 23 26 19 34 20 C44 21 48 28 46 35 C44 42 34 46 26 44 C20 42 18 36 18 30 Z', 'accent', H.red),
+    c(40, 28, 5, 'light'), c(40, 28, 2.5, 'line'),
+  ] },
+  eggs: { parts: [
+    p('M6 50 H58 C58 54 54 57 50 57 H14 C10 57 6 54 6 50 Z', 'main', H.brown),
+    p('M14 50 C14 38 18 28 23 28 C28 28 32 38 32 50 Z', 'light'),
+    p('M30 50 C30 36 35 24 41 24 C47 24 52 36 52 50 Z', 'accent', H.yellow),
+    c(20, 18, 6, 'main', H.yellow), p('M15 14 L12 12 M25 14 L28 12', 'line'), c(18, 17, 1, 'line'),
+  ] },
+  fish: { parts: [
+    p('M8 32 C16 20 34 16 46 26 L58 18 L56 32 L58 46 L46 38 C34 48 16 44 8 32 Z', 'main', H.blue),
+    p('M14 34 C22 40 34 42 44 36 C34 38 22 38 14 34 Z', 'light'),
+    c(18, 29, 2.6, 'line'),
+    p('M30 22 C34 28 34 36 30 42', 'line'),
+  ] },
+  tofu: { parts: [
+    p('M10 30 L28 22 L48 30 L30 38 Z', 'light'), p('M10 30 V44 L30 52 V38 Z', 'light', H.yellow), p('M48 30 V44 L30 52 V38 Z', 'accent', H.yellow),
+    p('M40 22 C40 12 48 8 56 8 C56 16 50 22 40 22 Z', 'main', H.green), p('M40 22 C44 17 48 13 53 11', 'line'),
+  ] },
+  milk: { parts: [
+    p('M20 18 L32 8 L44 18 V56 H20 Z', 'light'), p('M20 18 L32 8 L44 18 Z', 'accent2'),
+    q(20, 30, 24, 14, 'main', 0, H.blue), c(32, 37, 4, 'light'),
+    p('M44 18 L50 14 V52 L44 56 Z', 'accent2'),
+  ] },
+  basket: { parts: [
+    c(22, 26, 7, 'main', H.red), c(34, 22, 7, 'main', H.green), c(44, 28, 6, 'main', H.orange),
+    p('M8 30 H56 L50 54 Q49 56 47 56 H17 Q15 56 14 54 Z', 'main', H.brown),
+    p('M14 38 H50 M16 46 H48 M24 30 V56 M32 30 V56 M40 30 V56', 'line'),
+  ] },
+  fridge: { parts: [
+    q(16, 6, 32, 52, 'light', 5), q(16, 6, 32, 52, 'main', 5, H.blue),
+    q(19, 9, 26, 14, 'light', 3), q(19, 26, 26, 29, 'light', 3),
+    p('M40 13 V19 M40 30 V40', 'line'), c(38, 48, 4, 'accent', H.orange),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -203,6 +240,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   // catalog entries
   'SWC-VAR-02-01-01': 'carrot', 'SWC-VAR-02-01-02': 'cherries', 'SWC-VAR-02-01-03': 'wheat', 'SWC-VAR-02-01-04': 'beanpod',
   'SWC-VAR-02-01-05': 'acorn', 'SWC-VAR-02-01-06': 'herbpot', 'SWC-VAR-02-01-07': 'jar',
+  'SWC-VAR-02-02-01': 'steak', 'SWC-VAR-02-02-02': 'eggs', 'SWC-VAR-02-02-03': 'fish', 'SWC-VAR-02-02-04': 'tofu',
+  'SWC-VAR-02-02-05': 'milk', 'SWC-VAR-02-02-06': 'basket', 'SWC-VAR-02-02-07': 'fridge',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };
