@@ -3301,6 +3301,170 @@
     }
    ],
    "bodyFile": "restaurangmenyer.json"
+  },
+  {
+   "id": "m.bestalla-och-betala-pa-restaurang",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Beställa och betala på restaurang",
+   "titleJa": "レストランでの{注文|ちゅうもん}と{支払|しはら}い",
+   "descriptionSv": "Att boka bord, beställa, klaga och betala på restaurang – med kort, Swish eller kontant.",
+   "descriptionJa": "レストランで{予約|よやく}・{注文|ちゅうもん}・{苦情|くじょう}・{支払|しはら}いをすること：カード、スウィッシュ、{現金|げんきん}。",
+   "categoryId": "R01-A02-T05",
+   "tags": [
+    "mat"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.restaurangmenyer"
+   ],
+   "related": [],
+   "recommendedOrder": 131,
+   "words": [
+    {
+     "senseId": "s.boka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bokning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ledig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.beställa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.beställning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.servitör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.klaga.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nota.1",
+     "active": true
+    },
+    {
+     "senseId": "s.betalning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kontant.1",
+     "active": true
+    },
+    {
+     "senseId": "s.swisha.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kvitto.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dricks.1",
+     "active": true
+    },
+    {
+     "senseId": "s.var-för-sig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dela-på-notan.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "bestalla-och-betala-pa-restaurang.json"
+  },
+  {
+   "id": "m.matbordets-samtal",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-05",
+   "titleSv": "Matbordets samtal",
+   "titleJa": "{食卓|しょくたく}での{会話|かいわ}",
+   "descriptionSv": "Bordsskick och samtal vid matbordet: skåla, skicka saltet, tacka för maten och vad som är oartigt.",
+   "descriptionJa": "{食卓|しょくたく}のマナーと{会話|かいわ}：{乾杯|かんぱい}、{塩|しお}を{回|まわ}す、ごちそうさま、{失礼|しつれい}なこと。",
+   "categoryId": "R01-A02-T05",
+   "tags": [
+    "mat"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.bestalla-och-betala-pa-restaurang"
+   ],
+   "related": [],
+   "recommendedOrder": 132,
+   "words": [
+    {
+     "senseId": "s.skicka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.servett.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bordsskick.1",
+     "active": true
+    },
+    {
+     "senseId": "s.oartig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.armbåge.1",
+     "active": false
+    },
+    {
+     "senseId": "s.sörpla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smaska.1",
+     "active": false
+    },
+    {
+     "senseId": "s.vänta-in.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skåla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tack-för-maten.1",
+     "active": true
+    },
+    {
+     "senseId": "s.samtalsämne.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avbryta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skämta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tystnad.1",
+     "active": false
+    }
+   ],
+   "bodyFile": "matbordets-samtal.json"
   }
  ]
 }
