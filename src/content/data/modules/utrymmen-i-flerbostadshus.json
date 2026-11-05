@@ -1,0 +1,169 @@
+{
+ "id": "m.utrymmen-i-flerbostadshus",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Utrymmen i flerbostadshus",
+ "titleJa": "{集合住宅|しゅうごうじゅうたく}の{共用部|きょうようぶ}",
+ "descriptionSv": "Delar av ett flerbostadshus: port, portkod, trapphus, hiss, förråd och innergård.",
+ "descriptionJa": "{集合住宅|しゅうごうじゅうたく}の{各部|かくぶ}：{入|い}り{口|ぐち}、{暗証番号|あんしょうばんごう}、{階段室|かいだんしつ}、エレベーター、{物置|ものおき}、{中庭|なかにわ}。",
+ "categoryId": "R01-A01-T01",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.husets-olika-rum"
+ ],
+ "related": [],
+ "recommendedOrder": 203,
+ "words": [
+  {
+   "senseId": "s.flerbostadshus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.port.1",
+   "active": true
+  },
+  {
+   "senseId": "s.portkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hiss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trapphus.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ytterdörr.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ringklocka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.namnskylt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brevlåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.källarförråd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vindsförråd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.cykelrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.innergård.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lekplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gemensam.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Välkommen till huset",
+  "paragraphs": [
+   "Innan Aiko och Erik flyttar till radhuset hälsar de på Eriks syster. Hon bor i ett stort flerbostadshus i stan.",
+   "Vid porten trycker de in portkoden. I trapphuset finns en hiss, men den är trasig. De går uppför trappan till femte våningen.",
+   "På systerns ytterdörr sitter en namnskylt. De trycker på ringklockan. ”Välkommen!” säger systern. Under namnskylten finns en brevlåda i dörren.",
+   "Systern visar dem huset. I källaren har hon ett källarförråd, och på vinden ett vindsförråd. Det finns också ett cykelrum.",
+   "Mellan husen finns en stor innergård med en lekplats och en gemensam grill. ”På sommaren grillar alla grannar tillsammans”, säger systern.",
+   "”Det låter trevligt”, säger Aiko. ”I ett flerbostadshus träffar man fler människor än i ett radhus.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur kommer de in genom porten?",
+    "options": [
+     "De ringer på ringklockan.",
+     "De trycker in portkoden.",
+     "Systern öppnar.",
+     "Porten är öppen."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De trycker in portkoden vid porten.",
+    "explanationJa": "{暗証番号|あんしょうばんごう}を{押|お}して{入|はい}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför går de i trappan?",
+    "options": [
+     "De vill motionera.",
+     "Det finns ingen hiss.",
+     "Hissen är trasig.",
+     "Systern bor på första våningen."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hissen är trasig.",
+    "explanationJa": "エレベーターが{故障|こしょう}しているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Systerns brevlåda sitter i ytterdörren.",
+    "correct": true,
+    "explanationSv": "Under namnskylten finns en brevlåda i dörren.",
+    "explanationJa": "{郵便受|ゆうびんう}けは{玄関|げんかん}のドアについています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Grillen på innergården är ”gemensam”. Vad betyder det?",
+    "options": [
+     "Den är ny.",
+     "Den tillhör systern.",
+     "Alla grannar har den tillsammans.",
+     "Den är trasig."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Gemensam betyder att flera har något tillsammans.",
+    "explanationJa": "gemensam は「みんなでいっしょにもっている」という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att man träffar fler människor i ett flerbostadshus.",
+    "correct": true,
+    "explanationSv": "Hon säger att man träffar fler människor där än i ett radhus.",
+    "explanationJa": "テラスハウスより{多|おお}くの{人|ひと}に{会|あ}えると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att bo i ett flerbostadshus: trapphus, hiss, förråd och gemensamma utrymmen, och hur det är i Japan.",
+  "discussionPoints": [
+   "Har du bott i ett flerbostadshus? Hur var det?",
+   "Vad finns i ett japanskt flerbostadshus som inte finns i ett svenskt, eller tvärtom?",
+   "Vad tycker du om gemensamma utrymmen som innergård och grill?",
+   "Känner du dina grannar?"
+  ]
+ }
+}

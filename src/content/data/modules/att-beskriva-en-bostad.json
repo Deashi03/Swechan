@@ -1,0 +1,169 @@
+{
+ "id": "m.att-beskriva-en-bostad",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Att beskriva en bostad",
+ "titleJa": "{住|す}まいを{説明|せつめい}する",
+ "descriptionSv": "Ord för att beskriva en bostad: rymlig, trång, mysig, modern, sliten, läge och ljus.",
+ "descriptionJa": "{住|す}まいを{表|あらわ}す{言葉|ことば}：{広|ひろ}い、{狭|せま}い、{居心地|いごこち}のよい、モダンな、{古|ふる}びた、{立地|りっち}、{日当|ひあ}たり。",
+ "categoryId": "R01-A01-T01",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.utrymmen-i-flerbostadshus"
+ ],
+ "related": [],
+ "recommendedOrder": 204,
+ "words": [
+  {
+   "senseId": "s.rymlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mysig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.modern.1",
+   "active": true
+  },
+  {
+   "senseId": "s.renovera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nybyggd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sliten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.charmig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.praktisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.central.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bullrig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.solig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dragig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.högt-i-tak.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Två lägenheter",
+  "paragraphs": [
+   "Eriks syster vill byta lägenhet. Hon har hittat två lägenheter på internet och frågar Aiko och Erik vad de tycker.",
+   "Den första lägenheten ligger centralt, med ett bra läge nära allt. Den är gammal och charmig, med högt i tak. Men den är sliten och lite dragig vid fönstren. Gatan utanför är bullrig.",
+   "Den andra är nybyggd och ligger i en förort. Den är modern, ljus och rymlig, och balkongen är solig hela dagen. Köket är litet men praktiskt.",
+   "”Den gamla är mysig”, säger Aiko. ”Men man måste renovera badrummet.” ”Den nya är tråkig”, säger systern. ”Men den gamla är för trång för mig och min hund.”",
+   "Erik tycker att läget är viktigast. ”Du jobbar i centrum. Det tar en timme att åka från förorten.”",
+   "Systern tänker länge. Till slut väljer hon den nya. ”Jag vill ha plats och sol. Mysigt kan jag göra det själv!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var ligger den första lägenheten?",
+    "options": [
+     "Centralt, nära allt",
+     "I en förort",
+     "Vid havet",
+     "På landet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den första lägenheten ligger centralt, med ett bra läge.",
+    "explanationJa": "{中心部|ちゅうしんぶ}にあって{立地|りっち}がいいです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är problemet med den gamla lägenheten?",
+    "options": [
+     "Den är sliten, dragig och har en bullrig gata.",
+     "Den är för ny.",
+     "Den har ingen balkong.",
+     "Den ligger för långt bort."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den är sliten, dragig vid fönstren och gatan är bullrig.",
+    "explanationJa": "{古|ふる}くてすきま{風|かぜ}が{入|はい}り、{通|とお}りがうるさいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Den nya lägenheten är rymlig och solig.",
+    "correct": true,
+    "explanationSv": "Den är modern, ljus och rymlig, och balkongen är solig.",
+    "explanationJa": "{新|あたら}しいほうは{広|ひろ}くて{日当|ひあ}たりがいいです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför tycker Erik att läget är viktigast?",
+    "options": [
+     "Han tycker inte om förorter.",
+     "Den nya är för dyr.",
+     "Systern jobbar i centrum.",
+     "Han vill bo nära systern."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik säger att systern jobbar i centrum och att det tar en timme från förorten.",
+    "explanationJa": "お{姉|ねえ}さんが{中心部|ちゅうしんぶ}で{働|はたら}いているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Systern väljer den lägenhet som har mer plats.",
+    "correct": true,
+    "explanationSv": "Hon väljer den nya, rymliga lägenheten och säger att hon vill ha plats och sol.",
+    "explanationJa": "{広|ひろ}い{新|あたら}しいほうを{選|えら}びました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man beskriver en bostad: stor eller liten, gammal eller ny, läget och vad som gör ett hem mysigt.",
+  "discussionPoints": [
+   "Beskriv din bostad med fem ord.",
+   "Vad är viktigast för dig: läge, storlek eller pris?",
+   "Vad gör ett hem mysigt, tycker du?",
+   "Skulle du hellre bo i något gammalt och charmigt eller nytt och modernt?"
+  ]
+ }
+}

@@ -341,6 +341,39 @@ export const MOTIFS: Record<string, Motif> = {
     p('M45 18 C40 24 42 30 45 30 C48 30 50 24 45 18 Z', 'accent', H.yellow),
     q(8, 54, 48, 4, 'main', 2, H.red),
   ] },
+  // ── Hem & boende: Bostadstyper & rum ────────────────────────
+  apartment: { parts: [
+    q(14, 10, 36, 46, 'main', 2),
+    q(19, 16, 7, 7, 'light', 1), q(29, 16, 7, 7, 'light', 1), q(39, 16, 7, 7, 'light', 1),
+    q(19, 27, 7, 7, 'light', 1), q(29, 27, 7, 7, 'accent', 1), q(39, 27, 7, 7, 'light', 1),
+    q(19, 38, 7, 7, 'accent', 1), q(39, 38, 7, 7, 'light', 1), q(28, 42, 8, 14, 'accent2', 1),
+  ] },
+  door: { parts: [
+    q(16, 8, 32, 48, 'main', 2), p('M20 12 L38 16 V56 L20 52 Z', 'accent2'), c(34, 34, 2, 'light'),
+    p('M8 56 H56', 'line'),
+  ] },
+  elevator: { parts: [
+    q(12, 8, 40, 48, 'main', 3), q(16, 16, 15, 38, 'light', 1), q(33, 16, 15, 38, 'light', 1),
+    p('M30 11 L32 9 L34 11 Z', 'accent'), p('M24 32 L20 36 M24 32 L28 36 M40 36 L36 32 M40 36 L44 32', 'line'),
+  ] },
+  househeart: { parts: [
+    p('M10 30 L32 12 L54 30 V54 H10 Z', 'main'), p('M6 32 L32 10 L58 32', 'line'),
+    p('M32 48 C22 42 20 36 23 32 C26 28 30 30 32 33 C34 30 38 28 41 32 C44 36 42 42 32 48 Z', 'accent', H.red),
+  ] },
+  blueprint: { parts: [
+    q(8, 10, 48, 44, 'main', 2, H.blue),
+    p('M14 16 H50 V48 H14 Z M30 16 V34 M14 34 H40 M40 34 V48', 'line'),
+    q(32, 18, 6, 4, 'light', 1), q(18, 38, 8, 4, 'light', 1),
+  ] },
+  boxes: { parts: [
+    q(8, 32, 26, 22, 'main', 2, H.brown), q(30, 18, 26, 36, 'accent', 2, H.brown), q(16, 14, 18, 18, 'main', 2, H.brown),
+    p('M8 38 H34 M30 26 H56 M16 20 H34', 'line'), q(37, 32, 12, 6, 'light', 1),
+  ] },
+  cabin: { parts: [
+    p('M12 30 H52 V54 H12 Z', 'main', H.red), p('M8 32 L32 14 L56 32 Z', 'main', H.grey),
+    q(18, 36, 10, 9, 'light', 1), q(36, 38, 10, 16, 'light', 1), p('M23 36 V45 M18 40.5 H28', 'line'),
+    q(42, 16, 5, 9, 'main', 1, H.grey),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -366,6 +399,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-02-05-05': 'menu', 'SWC-VAR-02-05-06': 'receipt', 'SWC-VAR-02-05-07': 'chat',
   'SWC-VAR-02-06-01': 'meatballs', 'SWC-VAR-02-06-02': 'sushi', 'SWC-VAR-02-06-03': 'globe', 'SWC-VAR-02-06-04': 'warning',
   'SWC-VAR-02-06-05': 'apple', 'SWC-VAR-02-06-06': 'compost', 'SWC-VAR-02-06-07': 'candles',
+  'SWC-VAR-01-01-01': 'apartment', 'SWC-VAR-01-01-02': 'door', 'SWC-VAR-01-01-03': 'elevator', 'SWC-VAR-01-01-04': 'househeart',
+  'SWC-VAR-01-01-05': 'blueprint', 'SWC-VAR-01-01-06': 'boxes', 'SWC-VAR-01-01-07': 'cabin',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };
