@@ -1,0 +1,170 @@
+{
+ "id": "m.syntetiska-textilmaterial",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Syntetiska textilmaterial",
+ "titleJa": "{合成繊維|ごうせいせんい}の{素材|そざい}",
+ "descriptionSv": "Syntetiska material: polyester, nylon, akryl, elastan, viskos och fleece, och återvunna och miljövänliga kläder.",
+ "descriptionJa": "{合成素材|ごうせいそざい}：ポリエステル、ナイロン、アクリル、ポリウレタン、レーヨン、フリース、リサイクル{素材|そざい}と{環境|かんきょう}に{優|やさ}しい{服|ふく}。",
+ "categoryId": "R01-A03-T03",
+ "tags": [
+  "kläder",
+  "material"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.ull-och-silke"
+ ],
+ "related": [],
+ "recommendedOrder": 317,
+ "words": [
+  {
+   "senseId": "s.syntetisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.polyester.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konstfiber.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nylon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.akryl.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elastan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.cellulosa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.viskos.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fleece.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindjacka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.baddräkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.badbyxor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.petflaska.1",
+   "active": false
+  },
+  {
+   "senseId": "s.återvunnen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljövänlig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad står det på lappen?",
+  "paragraphs": [
+   "Efter skolarbetet om bomull tittar Mia på lapparna i alla sina kläder. Många kläder är inte av naturfiber, utan av syntetiska material.",
+   "Hennes tröja av fleece är gjord av polyester. Strumpbyxorna är av nylon, och den varma mössan är av akryl, inte ull. Hennes jeans har två procent elastan, så de är sköna.",
+   "Hennes favoritklänning är av viskos. ”Viskos är en konstfiber, men man gör den av cellulosa från trä”, förklarar Aiko.",
+   "Syntetiska material är bra till sport och regn. Erik har en tunn vindjacka av nylon, och Mias baddräkt och Leos badbyxor är av polyester och elastan.",
+   "Men syntetiska material görs ofta av olja. ”Är de dåliga för naturen?” frågar Mia. ”Ja, ofta”, säger Aiko. ”Men det finns jackor av återvunnen plast, till exempel gamla petflaskor.”",
+   "Mia bestämmer sig för att försöka köpa mer miljövänliga kläder."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är Mias fleecetröja gjord av?",
+    "options": [
+     "Polyester",
+     "Bomull",
+     "Ull",
+     "Nylon"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hennes tröja av fleece är gjord av polyester.",
+    "explanationJa": "ポリエステルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför är Mias jeans sköna?",
+    "options": [
+     "De är av viskos.",
+     "De har lite elastan.",
+     "De är stora.",
+     "De är gamla."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hennes jeans har två procent elastan, så de är sköna.",
+    "explanationJa": "ポリウレタンが{少|すこ}し{入|はい}っているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Viskos görs av olja.",
+    "correct": false,
+    "explanationSv": "Man gör den av cellulosa från trä.",
+    "explanationJa": "{木|き}のセルロースから{作|つく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad kan man göra jackor av?",
+    "options": [
+     "Cellulosa",
+     "Pärlor",
+     "Lin",
+     "Återvunnen plast"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det finns jackor av återvunnen plast, till exempel gamla petflaskor.",
+    "explanationJa": "リサイクルプラスチックです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia vill tänka mer på naturen när hon köper kläder.",
+    "correct": true,
+    "explanationSv": "Mia bestämmer sig för att försöka köpa mer miljövänliga kläder.",
+    "explanationJa": "{環境|かんきょう}に{優|やさ}しい{服|ふく}を{買|か}おうと{決|き}めました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om syntetiska material: vad era kläder är gjorda av, för- och nackdelar, och miljövänliga kläder.",
+  "discussionPoints": [
+   "Titta på lappen i en tröja: vad är den gjord av?",
+   "Varför tror du att många sportkläder är syntetiska?",
+   "Tänker du på miljön när du köper kläder?",
+   "Har du något plagg av återvunnet material?"
+  ]
+ }
+}

@@ -625,6 +625,15 @@ export const MOTIFS: Record<string, Motif> = {
     q(10, 10, 44, 44, 'light', 4), q(10, 10, 11, 44, 'main', 0, H.red), q(32, 10, 11, 44, 'main', 0, H.red),
     q(10, 21, 44, 11, 'accent', 0, H.red), q(10, 43, 44, 11, 'accent', 0, H.red),
   ] },
+  fabricroll: { parts: [
+    p('M10 20 H44 V52 H10 Z', 'main', H.blue), c(44, 36, 16, 'accent', H.blue), c(44, 36, 6, 'light'),
+    p('M10 28 H40 M10 36 H36 M10 44 H40', 'line'), c(44, 36, 2, 'line'),
+  ] },
+  magnifier: { parts: [
+    q(8, 22, 28, 34, 'main', 3, H.orange), c(14, 28, 2.5, 'light'), p('M14 28 L4 14', 'line'),
+    c(40, 26, 13, 'light'), c(40, 26, 13, 'line'), p('M49 35 L58 46', 'line'),
+    p('M36 22 L44 30 M44 22 L36 30', 'accent2'),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -667,7 +676,7 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-03-02-01': 'boot', 'SWC-VAR-03-02-02': 'heel', 'SWC-VAR-03-02-03': 'beanie', 'SWC-VAR-03-02-04': 'scarf',
   'SWC-VAR-03-02-05': 'backpack', 'SWC-VAR-03-02-06': 'watch', 'SWC-VAR-03-02-07': 'belt',
   'SWC-VAR-03-03-01': 'cotton', 'SWC-VAR-03-03-02': 'yarn', 'SWC-VAR-03-03-03': 'fleece', 'SWC-VAR-03-03-04': 'leather',
-  'SWC-VAR-03-03-05': 'pattern',
+  'SWC-VAR-03-03-05': 'pattern', 'SWC-VAR-03-03-06': 'fabricroll', 'SWC-VAR-03-03-07': 'magnifier',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };
