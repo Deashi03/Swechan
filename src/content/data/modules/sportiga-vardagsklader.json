@@ -1,0 +1,169 @@
+{
+ "id": "m.sportiga-vardagsklader",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Sportiga vardagskläder",
+ "titleJa": "スポーティーな{普段着|ふだんぎ}",
+ "descriptionSv": "Sköna och sportiga kläder: mjukisbyxor, collegetröja, munkjacka, träningskläder, reflex och omklädningsrum.",
+ "descriptionJa": "{楽|らく}でスポーティーな{服|ふく}：スウェットパンツ、トレーナー、ジップパーカー、トレーニングウェア、{反射材|はんしゃざい}、{更衣室|こういしつ}。",
+ "categoryId": "R01-A03-T01",
+ "tags": [
+  "kläder"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.jackor-och-ytterplagg"
+ ],
+ "related": [],
+ "recommendedOrder": 306,
+ "words": [
+  {
+   "senseId": "s.sportig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mjukisbyxor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mysbyxor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slappa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.collegetröja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.munkjacka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träningskläder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träningsbyxor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träningsoverall.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sportbh.1",
+   "active": false
+  },
+  {
+   "senseId": "s.cykelbyxor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pannband.1",
+   "active": false
+  },
+  {
+   "senseId": "s.reflex.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reflexväst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omklädningsrum.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mjukt och sportigt",
+  "paragraphs": [
+   "Erik älskar sköna kläder. På helgen har han mjukisbyxor och en gammal collegetröja. ”I dag ska jag bara slappa”, säger han.",
+   "Aiko har en sportig stil, men hon tränar också mycket. Hon cyklar till jobbet i cykelbyxor och en munkjacka.",
+   "På kvällen springer hon i skogen. Hon har träningskläder, en sportbh och ett pannband över öronen när det är kallt.",
+   "I november är det mörkt redan klockan fyra. Därför har hon alltid reflex, och Leo har en gul reflexväst på väg till skolan.",
+   "Mia tränar fotboll på tisdagar. Hon tar med träningsbyxor och byter om i omklädningsrummet. Alla i laget har blå träningsoveraller.",
+   "På kvällen byter alla om till mysbyxor och sätter sig i soffan. ”Det här är min favoritstil”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska Erik göra på helgen?",
+    "options": [
+     "Träna",
+     "Cykla till jobbet",
+     "Spela fotboll",
+     "Slappa"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”I dag ska jag bara slappa”, säger han.",
+    "explanationJa": "のんびりします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur tar sig Aiko till jobbet?",
+    "options": [
+     "Hon springer.",
+     "Hon tar bussen.",
+     "Hon går.",
+     "Hon cyklar."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon cyklar till jobbet i cykelbyxor och en munkjacka.",
+    "explanationJa": "{自転車|じてんしゃ}で{行|い}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko har pannband när det är varmt.",
+    "correct": false,
+    "explanationSv": "Hon har ett pannband över öronen när det är kallt.",
+    "explanationJa": "{寒|さむ}いときにつけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför har Leo reflexväst?",
+    "options": [
+     "Det regnar.",
+     "Han spelar fotboll.",
+     "Det är mörkt tidigt i november.",
+     "Det är kallt."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I november är det mörkt redan klockan fyra.",
+    "explanationJa": "11{月|がつ}は4{時|じ}にはもう{暗|くら}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker bäst om sköna kläder.",
+    "correct": true,
+    "explanationSv": "Erik älskar sköna kläder. ”Det här är min favoritstil.”",
+    "explanationJa": "{楽|らく}な{服|ふく}が{一番好|いちばんす}きです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sköna och sportiga kläder: vad ni har på er hemma, när ni tränar och när det är mörkt ute.",
+  "discussionPoints": [
+   "Vad har du på dig när du slappar hemma?",
+   "Vad har du på dig när du tränar?",
+   "Använder man reflex i Japan?",
+   "Har du en favorittröja?"
+  ]
+ }
+}
