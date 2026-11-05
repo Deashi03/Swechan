@@ -1,0 +1,170 @@
+{
+ "id": "m.torka-och-stryka",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Torka och stryka",
+ "titleJa": "{干|ほ}すこととアイロンがけ",
+ "descriptionSv": "Att torka och stryka: lufttorka, klädstreck, släta ut, vika ihop, strykfri, ångstrykjärn, stryklapp och avigsida.",
+ "descriptionJa": "{干|ほ}すこととアイロン：{自然乾燥|しぜんかんそう}、{物干|ものほ}しロープ、しわを{伸|の}ばす、たたむ、ノーアイロン、スチームアイロン、あて{布|ぬの}、{裏側|うらがわ}。",
+ "categoryId": "R01-A03-T05",
+ "tags": [
+  "kläder",
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tvattmedel-och-skoljmedel"
+ ],
+ "related": [],
+ "recommendedOrder": 332,
+ "words": [
+  {
+   "senseId": "s.lufttorka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klädstreck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torkvinda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.torktid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skrynkla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släta-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vika-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strykfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ångstrykjärn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stryklapp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avigsida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rätsida.1",
+   "active": false
+  },
+  {
+   "senseId": "s.glans.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenspray.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mangla.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Tvättdag hos mormor",
+  "paragraphs": [
+   "På sommaren hänger mormor all tvätt på klädstrecket eller på torkvindan i trädgården. ”Det är bäst att lufttorka”, säger hon.",
+   "Jeans har lång torktid, men i solen går det fort. Innan Mia hänger upp en skjorta vill hon släta ut den med händerna. ”Då blir den inte så skrynklig”, säger mormor.",
+   "Sedan ska Mia stryka. Mormor har ett ångstrykjärn och en vattenspray. ”Stryk blusen på avigsidan, och använd en stryklapp på ullen.”",
+   "Erik strök en gång sina kostymbyxor för varmt på rätsidan, och de fick glans. Nu köper han bara strykfria skjortor.",
+   "Mormor manglar också lakanen och dukarna, som man gjorde förr.",
+   "Till sist ska alla vika ihop tvätten. ”Skrynkla inte ihop den!” säger mormor till Leo."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var torkar mormor tvätten på sommaren?",
+    "options": [
+     "I torktumlaren",
+     "Ute i trädgården",
+     "I källaren",
+     "I badrummet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mormor hänger all tvätt på klädstrecket eller på torkvindan i trädgården.",
+    "explanationJa": "{庭|にわ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför slätar Mia ut skjortan?",
+    "options": [
+     "Så att den inte blir så skrynklig",
+     "Så att den torkar fortare",
+     "Så att den inte krymper",
+     "Så att den blir varm"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Då blir den inte så skrynklig.”",
+    "explanationJa": "しわになりにくくするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Man ska stryka blusen på rätsidan.",
+    "correct": false,
+    "explanationSv": "”Stryk blusen på avigsidan.”",
+    "explanationJa": "{裏側|うらがわ}からです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad hände med Eriks kostymbyxor?",
+    "options": [
+     "De fick glans.",
+     "De krympte.",
+     "De blev skrynkliga.",
+     "De färgade av sig."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De fick glans.",
+    "explanationJa": "てかりが{出|で}ました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor gör som man gjorde förr.",
+    "correct": true,
+    "explanationSv": "Mormor manglar också lakanen och dukarna, som man gjorde förr.",
+    "explanationJa": "{昔|むかし}のやり{方|かた}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att torka och stryka tvätt: ute eller inne, strykjärn och hur man undviker skrynkliga kläder.",
+  "discussionPoints": [
+   "Hur torkar du din tvätt?",
+   "Tycker du om att stryka?",
+   "Har du strykfria skjortor?",
+   "Torkar man tvätt ute på balkongen i Japan?"
+  ]
+ }
+}

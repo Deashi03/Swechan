@@ -1,0 +1,170 @@
+{
+ "id": "m.sortera-efter-farg-och-material",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Sortera efter färg och material",
+ "titleJa": "{色|いろ}と{素材|そざい}で{分|わ}ける",
+ "descriptionSv": "Att sortera tvätt: dela upp, ljus och mörk tvätt, färga av sig, färgäkta, separat, vända ut och in och tvättpåse.",
+ "descriptionJa": "{洗濯物|せんたくもの}の{仕分|しわ}け：{分|わ}ける、{淡色|たんしょく}と{濃色|のうしょく}、{色落|いろお}ち、{別洗|べつあら}い、{裏返|うらがえ}す、{洗濯|せんたく}ネット。",
+ "categoryId": "R01-A03-T05",
+ "tags": [
+  "kläder",
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tvattsymboler-och-tvattrad"
+ ],
+ "related": [],
+ "recommendedOrder": 330,
+ "words": [
+  {
+   "senseId": "s.tvätthög.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mörk-tvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljus-tvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bomullstvätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.syntettvätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.färga-av-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgäkta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.färgfångare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nyköpt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.separat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vända-ut-och-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättpåse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.misslyckad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En rosa skjorta",
+  "paragraphs": [
+   "Erik tar hela tvätthögen och lägger den i maskinen. När han tar ut den är hans vita skjorta rosa. ”Vilken misslyckad tvätt”, säger han.",
+   "En ny röd tröja har färgat av sig. ”Nyköpta kläder ska man tvätta separat första gången”, säger Aiko. ”Alla kläder är inte färgäkta.”",
+   "Hon visar hur man gör. Först ska man dela upp tvätten: vit tvätt, ljus tvätt och mörk tvätt. Sedan ska man tänka på materialet: bomullstvätt och syntettvätt har olika program.",
+   "”Du ska vända ut och in på jeansen, då bleknar de inte så fort. Och lägg bh:n och ömtåliga plagg i en tvättpåse.”",
+   "”Kan man inte tvätta allt tillsammans?” frågar Erik. ”Ja, om du använder en färgfångare, men inte vitt med rött.”",
+   "Till sist läser Erik på lappen i den röda tröjan. Den är tvättbar i 40 grader, men det står också: ”Tvättas separat”."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hände med Eriks vita skjorta?",
+    "options": [
+     "Den blev rosa.",
+     "Den krympte.",
+     "Den fick hål.",
+     "Den blev grå."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När han tar ut den är hans vita skjorta rosa. ”Vilken misslyckad tvätt”, säger han.",
+    "explanationJa": "ピンクになりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ska man tvätta nyköpta kläder första gången?",
+    "options": [
+     "Med vit tvätt",
+     "I tvättpåse",
+     "Separat",
+     "På fintvätt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Nyköpta kläder ska man tvätta separat första gången.”",
+    "explanationJa": "{別|べつ}に{洗|あら}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko delar upp tvätten i tre högar efter färg.",
+    "correct": true,
+    "explanationSv": "Först ska man dela upp tvätten: vit tvätt, ljus tvätt och mörk tvätt.",
+    "explanationJa": "{白|しろ}、{淡色|たんしょく}、{濃色|のうしょく}に{分|わ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför ska man vända jeansen ut och in?",
+    "options": [
+     "Så att de inte krymper",
+     "Så att de blir mjuka",
+     "Så att de torkar fort",
+     "Så att de inte bleknar så fort"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Du ska vända ut och in på jeansen, då bleknar de inte så fort.”",
+    "explanationJa": "{色|いろ}あせを{防|ふせ}ぐためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik borde ha läst lappen tidigare.",
+    "correct": true,
+    "explanationSv": "Det stod ”Tvättas separat” på lappen.",
+    "explanationJa": "ラベルに「{別洗|べつあら}い」と{書|か}いてありました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att sortera tvätt efter färg och material, och om misslyckade tvättar.",
+  "discussionPoints": [
+   "Hur sorterar du din tvätt?",
+   "Har något plagg färgat av sig i din tvätt?",
+   "Använder du tvättpåse?",
+   "Sorterar man tvätten på samma sätt i Japan?"
+  ]
+ }
+}

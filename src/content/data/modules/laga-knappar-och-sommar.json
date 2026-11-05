@@ -1,0 +1,170 @@
+{
+ "id": "m.laga-knappar-och-sommar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Laga knappar och sömmar",
+ "titleJa": "ボタンつけと{縫|ぬ}い{目|め}の{修理|しゅうり}",
+ "descriptionSv": "Att sy i knappar och laga sömmar: sylåda, sytråd, trä på, knut, stygn, sy i, sy fast, fästa och klippa av.",
+ "descriptionJa": "ボタンつけと{縫|ぬ}い{目|め}の{修理|しゅうり}：{裁縫箱|さいほうばこ}、{縫|ぬ}い{糸|いと}、{糸通|いとどお}し、{結|むす}び{目|め}、{針目|はりめ}、ボタンをつける、{縫|ぬ}いつける、{留|と}める、{切|き}る。",
+ "categoryId": "R01-A03-T05",
+ "tags": [
+  "kläder",
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.varda-ull-och-siden"
+ ],
+ "related": [],
+ "recommendedOrder": 335,
+ "words": [
+  {
+   "senseId": "s.sylåda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sytråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nålsöga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trä-på.1",
+   "active": false
+  },
+  {
+   "senseId": "s.knut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fingerborg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stygn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sy-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sy-fast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänga-löst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservknapp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gå-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klippa-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fästa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handsöm.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En knapp och en söm",
+  "paragraphs": [
+   "En knapp på Eriks kavaj hänger löst, och på morgonen lossnar den helt. Sömmen i Leos byxor har också gått upp.",
+   "”Nu lär ni er att sy”, säger mormor och hämtar sin sylåda.",
+   "Först väljer hon en sytråd i samma färg som kavajen. Leo får trä på tråden, men nålsögat är så litet. Till slut går det. Sedan gör mormor en knut i änden.",
+   "Erik ska sy i knappen. Han hittar en reservknapp på insidan av kavajen. Han syr några stygn genom knapphålen och använder en fingerborg.",
+   "”Fäst tråden ordentligt och klipp av den nära knappen”, säger mormor.",
+   "Leo ska sy fast sömmen i byxorna för hand. Det blir ingen fin handsöm, men den håller. ”Nu kan ni klara er själva”, säger mormor."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har hänt med Leos byxor?",
+    "options": [
+     "En knapp har lossnat.",
+     "De har krympt.",
+     "De har fått en fläck.",
+     "Sömmen har gått upp."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sömmen i Leos byxor har också gått upp.",
+    "explanationJa": "{縫|ぬ}い{目|め}がほつれました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför är det svårt för Leo att trä på tråden?",
+    "options": [
+     "Nålsögat är så litet.",
+     "Tråden är för tjock.",
+     "Han har ingen nål.",
+     "Det är mörkt."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo får trä på tråden, men nålsögat är så litet.",
+    "explanationJa": "{針穴|はりあな}がとても{小|ちい}さいからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik hittar en reservknapp på insidan av kavajen.",
+    "correct": true,
+    "explanationSv": "Han hittar en reservknapp på insidan av kavajen.",
+    "explanationJa": "{内側|うちがわ}に{予備|よび}のボタンがありました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ska man göra med tråden till sist?",
+    "options": [
+     "Göra en knut och dra",
+     "Trä på den igen",
+     "Fästa den och klippa av den",
+     "Tvätta den"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Fäst tråden ordentligt och klipp av den nära knappen.”",
+    "explanationJa": "{留|と}めて{切|き}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leos söm är perfekt.",
+    "correct": false,
+    "explanationSv": "Det blir ingen fin handsöm, men den håller.",
+    "explanationJa": "{少|すこ}しでこぼこですが、もちます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att sy i knappar och laga sömmar själv.",
+  "discussionPoints": [
+   "Kan du sy i en knapp?",
+   "Vem lärde dig att sy?",
+   "Har du en sylåda hemma?",
+   "Lär man sig sy i skolan i Japan?"
+  ]
+ }
+}
