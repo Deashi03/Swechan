@@ -1,0 +1,170 @@
+{
+ "id": "m.stadredskap-och-rengoringsmedel",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Städredskap och rengöringsmedel",
+ "titleJa": "{掃除道具|そうじどうぐ}と{洗剤|せんざい}",
+ "descriptionSv": "Städredskap och rengöringsmedel: trasa, hink, diskborste, allrengöring, gummihandskar och städskåp.",
+ "descriptionJa": "{掃除道具|そうじどうぐ}と{洗剤|せんざい}：ぞうきん、バケツ、{食器|しょっき}{洗|あら}いブラシ、{万能洗剤|ばんのうせんざい}、ゴム{手袋|てぶくろ}、{掃除用具入|そうじようぐい}れ。",
+ "categoryId": "R01-A01-T05",
+ "tags": [
+  "hemmet",
+  "städning"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.badrumsproblem-och-reparation"
+ ],
+ "related": [],
+ "recommendedOrder": 229,
+ "words": [
+  {
+   "senseId": "s.trasa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.disktrasa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diskborste.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skurborste.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hink.1",
+   "active": true
+  },
+  {
+   "senseId": "s.damm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dammtrasa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rengöringsmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allrengöring.1",
+   "active": false
+  },
+  {
+   "senseId": "s.diskmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sprayflaska.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gummihandske.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frätande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.städskåp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svamp.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Städskåpet",
+  "paragraphs": [
+   "Aiko och Erik ska städa ordentligt för första gången i det nya huset. De öppnar städskåpet.",
+   "Där finns en hink, trasor och en dammtrasa för allt damm på hyllorna. Det finns också en skurborste för golvet.",
+   "I köket finns en disktrasa och en diskborste vid diskbänken. ”I Japan diskar vi ofta med en svamp”, säger Aiko. ”Svenskar använder diskborste.”",
+   "Erik har köpt många olika rengöringsmedel. ”Vi behöver inte så många”, säger Aiko. ”Allrengöring räcker till det mesta, och diskmedel till disken.”",
+   "Medlet till toaletten är frätande. Aiko tar på sig gummihandskar innan hon använder det. Medlet till fönstren finns i en sprayflaska.",
+   "Efter tre timmar är allt rent. ”Nu ska vi bara hålla det rent”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad använder man till dammet på hyllorna?",
+    "options": [
+     "En dammtrasa",
+     "En skurborste",
+     "Diskmedel",
+     "En hink"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det finns en dammtrasa för allt damm på hyllorna.",
+    "explanationJa": "{棚|たな}のほこりにはほこり{取|と}りを{使|つか}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad diskar man ofta med i Japan, enligt Aiko?",
+    "options": [
+     "En diskborste",
+     "En skurborste",
+     "En trasa",
+     "En svamp"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko säger att man i Japan ofta diskar med en svamp.",
+    "explanationJa": "{日本|にほん}ではスポンジで{洗|あら}うことが{多|おお}いと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko tycker att de behöver många olika rengöringsmedel.",
+    "correct": false,
+    "explanationSv": "Hon säger att allrengöring räcker till det mesta.",
+    "explanationJa": "{万能洗剤|ばんのうせんざい}でたいてい{十分|じゅうぶん}だと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför tar Aiko på sig gummihandskar?",
+    "options": [
+     "Det är kallt.",
+     "Medlet är frätande.",
+     "Hon vill inte bli blöt.",
+     "Handskarna är fina."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Medlet till toaletten är frätande.",
+    "explanationJa": "トイレ{用|よう}の{洗剤|せんざい}は{腐食性|ふしょくせい}があるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det tog lång tid att städa.",
+    "correct": true,
+    "explanationSv": "Efter tre timmar är allt rent.",
+    "explanationJa": "3{時間|じかん}かかりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om städredskap och rengöringsmedel: vad du använder, skillnader mellan Sverige och Japan, och miljövänlig städning.",
+  "discussionPoints": [
+   "Vilka städredskap har du hemma?",
+   "Diskar du med svamp eller diskborste?",
+   "Hur många rengöringsmedel har du? Behöver man så många?",
+   "Vad tycker du är jobbigast att städa?"
+  ]
+ }
+}

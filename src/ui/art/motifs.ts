@@ -470,6 +470,41 @@ export const MOTIFS: Record<string, Motif> = {
     p('M44 8 C36 8 32 16 34 22 L12 44 C9 47 9 51 12 54 C15 57 19 57 22 54 L44 32 C50 34 58 30 58 22 L50 28 L42 24 L40 16 Z', 'main', H.grey),
     c(16, 50, 3, 'light'), p('M48 44 L56 52 M44 48 L52 56', 'line'),
   ] },
+  // ── Hem & boende: Städning & underhåll ──────────────────────
+  spray: { parts: [
+    p('M22 24 H42 V52 Q42 56 38 56 H26 Q22 56 22 52 Z', 'main'), q(26, 14, 12, 10, 'accent', 2),
+    p('M38 16 H48 L46 20 H38 Z', 'accent'), q(26, 34, 12, 12, 'light', 2),
+    c(54, 14, 1.5, 'accent2'), c(56, 19, 1.5, 'accent2'), c(53, 23, 1.5, 'accent2'),
+  ] },
+  mop: { parts: [
+    p('M40 6 L28 40', 'line'), q(16, 40, 24, 6, 'main', 2, H.grey),
+    p('M16 46 L12 58 M21 46 L19 58 M26 46 L26 58 M31 46 L33 58 M36 46 L40 58', 'line'),
+    c(48, 50, 4, 'accent2'), c(54, 44, 2.5, 'accent2'),
+  ] },
+  shirt: { parts: [
+    p('M22 10 L12 16 L6 28 L14 32 L18 26 V56 H46 V26 L50 32 L58 28 L52 16 L42 10 C40 16 24 16 22 10 Z', 'main'),
+    c(14, 46, 4, 'light'), c(52, 50, 5, 'light'), c(48, 40, 2.5, 'light'),
+  ] },
+  recycle: { parts: [
+    q(6, 26, 16, 30, 'main', 2, H.green), q(24, 26, 16, 30, 'main', 2, H.blue), q(42, 26, 16, 30, 'main', 2, H.yellow),
+    q(4, 22, 20, 5, 'accent', 2, H.green), q(22, 22, 20, 5, 'accent', 2, H.blue), q(40, 22, 20, 5, 'accent', 2, H.yellow),
+    p('M32 6 L38 14 H26 Z', 'accent2'),
+  ] },
+  hammer: { parts: [
+    p('M14 54 L36 28 L42 33 L20 58 Z', 'main', H.brown),
+    p('M30 14 L46 10 L58 22 L52 28 L46 24 L40 30 L30 20 Z', 'main', H.grey),
+    c(12, 20, 3, 'accent2'), p('M8 12 L16 16 M18 8 L20 14', 'line'),
+  ] },
+  crackwall: { parts: [
+    q(8, 8, 48, 48, 'light', 3), q(8, 8, 48, 48, 'accent', 3),
+    p('M30 8 L26 20 L34 26 L28 38 L36 46 L32 56', 'line'),
+    q(36, 16, 14, 8, 'main', 2, H.yellow),
+  ] },
+  checklist: { parts: [
+    q(14, 8, 36, 48, 'light', 3), q(24, 4, 16, 8, 'main', 2),
+    p('M20 22 L23 25 L28 19 M20 34 L23 37 L28 31', 'line'), q(20, 44, 8, 6, 'accent', 1),
+    p('M32 22 H44 M32 34 H44 M32 47 H44', 'line'),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -503,6 +538,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-01-03-05': 'counter', 'SWC-VAR-01-03-06': 'setting', 'SWC-VAR-01-03-07': 'fireext',
   'SWC-VAR-01-04-01': 'toilet', 'SWC-VAR-01-04-02': 'shower', 'SWC-VAR-01-04-03': 'towel', 'SWC-VAR-01-04-04': 'toothbrush',
   'SWC-VAR-01-04-05': 'washer', 'SWC-VAR-01-04-06': 'faucet', 'SWC-VAR-01-04-07': 'wrench',
+  'SWC-VAR-01-05-01': 'spray', 'SWC-VAR-01-05-02': 'mop', 'SWC-VAR-01-05-03': 'shirt', 'SWC-VAR-01-05-04': 'recycle',
+  'SWC-VAR-01-05-05': 'hammer', 'SWC-VAR-01-05-06': 'crackwall', 'SWC-VAR-01-05-07': 'checklist',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };

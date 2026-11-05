@@ -1,0 +1,170 @@
+{
+ "id": "m.dammsuga-och-torka-golv",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Dammsuga och torka golv",
+ "titleJa": "{掃除機|そうじき}がけと{床|ゆか}ふき",
+ "descriptionSv": "Att städa golv: dammsuga, sopa, moppa och våttorka, och olika sorters golv.",
+ "descriptionJa": "{床|ゆか}の{掃除|そうじ}：{掃除機|そうじき}をかける、{掃|は}く、モップがけ、{水|みず}ぶき、いろいろな{床|ゆか}。",
+ "categoryId": "R01-A01-T05",
+ "tags": [
+  "hemmet",
+  "städning"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.stadredskap-och-rengoringsmedel"
+ ],
+ "related": [],
+ "recommendedOrder": 230,
+ "words": [
+  {
+   "senseId": "s.smuts.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sopa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyffel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dammråtta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.munstycke.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dammsugarpåse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sladdlös.1",
+   "active": false
+  },
+  {
+   "senseId": "s.robotdammsugare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.moppa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våttorka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parkett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klinker.1",
+   "active": false
+  },
+  {
+   "senseId": "s.heltäckningsmatta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.golvlist.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Golvet",
+  "paragraphs": [
+   "På lördagar städar Aiko och Erik golven. Först dammsuger Erik. Han använder det smala munstycket vid golvlisterna och i hörnen, där dammet samlas.",
+   "Under sängen hittar han stora dammråttor. Sedan är dammsugarpåsen full, och han måste byta den.",
+   "Golvet i vardagsrummet är parkett. I hallen är det klinker, som är lätt att våttorka. Där sopar Aiko upp smuts och grus på en skyffel.",
+   "Sedan moppar de köket med varmt vatten och lite allrengöring. Moppen hänger de i städskåpet efteråt.",
+   "Eriks föräldrar hade heltäckningsmatta i sovrummet förr. ”Den var svår att hålla ren”, säger Erik.",
+   "Aiko vill köpa en robotdammsugare. ”Då kan den dammsuga medan vi fikar”, säger hon. Erik vill hellre ha en sladdlös dammsugare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var använder Erik det smala munstycket?",
+    "options": [
+     "Under sängen",
+     "I badkaret",
+     "Vid golvlisterna och i hörnen",
+     "På bordet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han använder det smala munstycket vid golvlisterna och i hörnen.",
+    "explanationJa": "{幅木|はばき}や{隅|すみ}に{細|ほそ}いノズルを{使|つか}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad hittar Erik under sängen?",
+    "options": [
+     "En dammsugarpåse",
+     "En mopp",
+     "Klinker",
+     "Stora dammråttor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Under sängen hittar han stora dammråttor.",
+    "explanationJa": "ベッドの{下|した}に{大|おお}きな{綿|わた}ぼこりがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Golvet i vardagsrummet är klinker.",
+    "correct": false,
+    "explanationSv": "Vardagsrummet har parkett. Klinker finns i hallen.",
+    "explanationJa": "リビングはフローリングで、タイルは{玄関|げんかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför vill Aiko ha en robotdammsugare?",
+    "options": [
+     "Den är billig.",
+     "Den är tyst.",
+     "Erik vill det.",
+     "Den kan dammsuga medan de fikar."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko säger att den kan dammsuga medan de fikar.",
+    "explanationJa": "フィーカしている{間|あいだ}に{掃除|そうじ}してくれるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Heltäckningsmatta var svår att hålla ren.",
+    "correct": true,
+    "explanationSv": "Erik säger att den var svår att hålla ren.",
+    "explanationJa": "{掃除|そうじ}が{大変|たいへん}だったと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att städa golv: dammsuga, sopa och moppa, olika golv i japanska och svenska hem, och robotdammsugare.",
+  "discussionPoints": [
+   "Hur ofta dammsuger du?",
+   "Vilka golv har du hemma: parkett, klinker eller tatami?",
+   "Har du en robotdammsugare? Vad tycker du om den?",
+   "Hur städar man ett tatamigolv?"
+  ]
+ }
+}
