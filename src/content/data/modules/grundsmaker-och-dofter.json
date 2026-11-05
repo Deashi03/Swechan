@@ -1,0 +1,169 @@
+{
+ "id": "m.grundsmaker-och-dofter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Grundsmaker och dofter",
+ "titleJa": "{基本|きほん}の{味|あじ}と{香|かお}り",
+ "descriptionSv": "De fem grundsmakerna och ord för lukt och doft.",
+ "descriptionJa": "5つの{基本味|きほんみ}と、におい・{香|かお}りを{表|あらわ}す{言葉|ことば}。",
+ "categoryId": "R01-A02-T04",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tillaga-och-servera"
+ ],
+ "related": [],
+ "recommendedOrder": 119,
+ "words": [
+  {
+   "senseId": "s.tunga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smaklök.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sötma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.syra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sälta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.besk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bitter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.umami.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundsmak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lukt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.doft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dofta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stinka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arom.1",
+   "active": false
+  },
+  {
+   "senseId": "s.känna.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Fem smaker",
+  "paragraphs": [
+   "Aiko och Erik går på en kurs om smak. Läraren säger att tungan känner fem grundsmaker: sött, surt, salt, beskt och umami.",
+   "”Umami är ett japanskt ord”, säger läraren. Aiko blir glad. ”Umami finns i buljong, soja och ost”, säger hon.",
+   "De får smaka på olika saker. Honung har mycket sötma. Citron har mycket syra. Ost har sälta. Mörk choklad och kaffe är beska. ”Kaffet är bittert”, säger Erik och tar socker.",
+   "Sedan blundar de och luktar. ”Mycket av det vi tror är smak är egentligen lukt”, säger läraren. Kaffe har en stark arom. Kanel har en söt doft, och färskt bröd doftar gott.",
+   "Till sist får de lukta på en gammal ost. ”Den stinker!” säger Erik. Men när han smakar på den är den god.",
+   "”Smaklökarna sitter på tungan”, säger läraren. ”Men vi känner smaken med hela munnen och näsan.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många grundsmaker känner tungan, enligt läraren?",
+    "options": [
+     "Tre",
+     "Fyra",
+     "Sex",
+     "Fem"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Läraren säger att tungan känner fem grundsmaker.",
+    "explanationJa": "{舌|した}は5つの{基本味|きほんみ}を{感|かん}じます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir Aiko glad?",
+    "options": [
+     "Umami är ett japanskt ord.",
+     "Hon tycker om ost.",
+     "Läraren är japansk.",
+     "Kursen är gratis."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Läraren säger att umami är ett japanskt ord.",
+    "explanationJa": "umami は{日本語|にほんご}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Citron har mycket sötma.",
+    "correct": false,
+    "explanationSv": "Honung har mycket sötma. Citron har mycket syra.",
+    "explanationJa": "{甘|あま}いのははちみつで、レモンは{酸味|さんみ}が{強|つよ}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Erik säger att osten ”stinker”. Vad menar han?",
+    "options": [
+     "Den doftar gott.",
+     "Den smakar sött.",
+     "Den luktar mycket illa.",
+     "Den är gammal och torr."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Att stinka betyder att lukta mycket illa.",
+    "explanationJa": "stinka はひどくにおうという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Något kan lukta illa men ändå smaka gott.",
+    "correct": true,
+    "explanationSv": "Osten stinker, men när Erik smakar är den god.",
+    "explanationJa": "チーズはひどいにおいでしたが、{食|た}べるとおいしかったです。"
+   }
+  ],
+  "factSources": [
+   "De fem grundsmakerna (sött, surt, salt, beskt, umami); umami beskrevs av Kikunae Ikeda 1908."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om smak och lukt: de fem grundsmakerna, umami i japansk mat, och vilka smaker och dofter du tycker om eller inte tål.",
+  "discussionPoints": [
+   "Vilken grundsmak tycker du mest om?",
+   "Vilka japanska livsmedel har mycket umami?",
+   "Finns det någon mat som luktar illa men smakar gott?",
+   "Vilken doft påminner dig om barndomen?"
+  ]
+ }
+}

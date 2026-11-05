@@ -1,0 +1,169 @@
+{
+ "id": "m.farskhet-och-mognad",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Färskhet och mognad",
+ "titleJa": "{鮮度|せんど}と{熟|じゅく}し{具合|ぐあい}",
+ "descriptionSv": "Om färsk och gammal mat: mogen, omogen, möglig, rutten och skämd.",
+ "descriptionJa": "{新鮮|しんせん}な{食|た}べ{物|もの}と{古|ふる}い{食|た}べ{物|もの}：{熟|じゅく}した、{未熟|みじゅく}な、カビの{生|は}えた、{腐|くさ}った、{傷|いた}んだ。",
+ "categoryId": "R01-A02-T04",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.mjukt-och-segt"
+ ],
+ "related": [],
+ "recommendedOrder": 124,
+ "words": [
+  {
+   "senseId": "s.mogna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omogen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övermogen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fräsch.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nybakad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dagsfärsk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vissen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slokig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mögel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.möglig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ruttna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rutten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skämd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.härsken.1",
+   "active": false
+  },
+  {
+   "senseId": "s.unken.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Är det här fortfarande bra?",
+  "paragraphs": [
+   "Aiko och Erik har varit borta på resa i två veckor. Nu öppnar de kylskåpet. ”Oj”, säger Erik.",
+   "Salladen har blivit slokig, och persiljan är vissen. Det är mögel på en bit ost. ”Släng den mögliga osten”, säger Aiko.",
+   "Mjölken luktar konstigt. ”Den är skämd”, säger Erik. I skafferiet hittar de en påse nötter som smakar illa. ”Härskna”, säger Aiko. Skafferiet luktar unket, så de öppnar fönstret.",
+   "På bordet låg det bananer. Nu är de bruna och övermogna. ”De kan vi baka bananbröd av”, säger Aiko. Men ett äpple har ruttnat. Det ruttna äpplet slänger de.",
+   "De går och handlar. I affären köper de dagsfärsk fisk, fräsch sallad och nybakat bröd. Bananerna är gröna och omogna.",
+   "”De får mogna hemma”, säger Erik. ”Om två dagar är de perfekta.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge har de varit borta?",
+    "options": [
+     "Två veckor",
+     "Två dagar",
+     "En månad",
+     "En helg"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De har varit borta på resa i två veckor.",
+    "explanationJa": "2{週間|しゅうかん}{留守|るす}にしていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är det för fel på osten?",
+    "options": [
+     "Den är för gammal att lukta på.",
+     "Den är härsken.",
+     "Det är mögel på den.",
+     "Den är omogen."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det är mögel på en bit ost.",
+    "explanationJa": "チーズにカビが{生|は}えています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "De slänger de övermogna bananerna.",
+    "correct": false,
+    "explanationSv": "De ska baka bananbröd av dem. Det ruttna äpplet slänger de.",
+    "explanationJa": "バナナはパンにして、{腐|くさ}ったりんごだけ{捨|す}てます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför öppnar de fönstret?",
+    "options": [
+     "Det är varmt.",
+     "De vill se ut.",
+     "Skafferiet luktar unket.",
+     "Brödet är nybakat."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Skafferiet luktar unket, så de öppnar fönstret.",
+    "explanationJa": "パントリーがかび{臭|くさ}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De nya bananerna är inte färdiga att äta än.",
+    "correct": true,
+    "explanationSv": "De är gröna och omogna, och de ska mogna hemma.",
+    "explanationJa": "{青|あお}くて{熟|じゅく}していないので、{家|いえ}で{熟|じゅく}させます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man vet om mat är färsk eller gammal: mogen och omogen frukt, mögel, och vad man kan göra av mat som snart blir dålig.",
+  "discussionPoints": [
+   "Hur vet du att frukt är mogen?",
+   "Vad gör du med övermogna bananer eller gammalt bröd?",
+   "Har du hittat något möglig eller skämt i kylskåpet?",
+   "Var köper du dagsfärsk fisk eller nybakat bröd?"
+  ]
+ }
+}

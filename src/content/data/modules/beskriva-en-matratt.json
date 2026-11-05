@@ -1,0 +1,169 @@
+{
+ "id": "m.beskriva-en-matratt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Beskriva en maträtt",
+ "titleJa": "{料理|りょうり}を{言葉|ことば}で{表|あらわ}す",
+ "descriptionSv": "Ord för att beskriva mat: aptitlig, utsökt, äcklig, mättande, och hur smaker passar ihop.",
+ "descriptionJa": "{料理|りょうり}を{表|あらわ}す{言葉|ことば}：おいしそう、{絶品|ぜっぴん}、まずい、おなかにたまる、そして{味|あじ}の{組|く}み{合|あ}わせ。",
+ "categoryId": "R01-A02-T04",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.farskhet-och-mognad"
+ ],
+ "related": [],
+ "recommendedOrder": 125,
+ "words": [
+  {
+   "senseId": "s.beskriva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.aptitlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äcklig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsökt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smaskig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.välsmakande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mättande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kombination.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kombinera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.påminna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.favorit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.recension.1",
+   "active": false
+  },
+  {
+   "senseId": "s.betyg.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Aiko skriver en recension",
+  "paragraphs": [
+   "Aiko har börjat skriva om mat på internet. I dag ska hon beskriva en ny restaurang. Hon och Erik väljer tre rätter.",
+   "Den första rätten är en sallad med äpple och ost. ”Den ser aptitlig ut”, säger Erik. Kombinationen av sött och salt är mycket god.",
+   "Den andra rätten är en gryta. Den är mustig och mättande. ”Den påminner om min mammas gryta”, säger Erik. Aiko tycker att den är utsökt.",
+   "Den tredje rätten är fisk med en grön sås. Såsen passar inte riktigt till fisken. ”Den är lite äcklig”, säger Erik tyst. Aiko skriver att den inte är hennes favorit.",
+   "Kocken kombinerar svenska och japanska smaker. Till efterrätt får de en smaskig kaka med matcha. ”En enkel men välsmakande efterrätt”, skriver Aiko.",
+   "På kvällen skriver hon sin recension. Hon ger restaurangen betyget fyra av fem."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska Aiko göra på restaurangen?",
+    "options": [
+     "Arbeta där",
+     "Beskriva den i en recension",
+     "Fira sin födelsedag",
+     "Lära sig laga mat"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon ska beskriva en ny restaurang.",
+    "explanationJa": "{新|あたら}しいレストランについて{書|か}くためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad påminner grytan Erik om?",
+    "options": [
+     "En japansk rätt",
+     "En gryta från en annan restaurang",
+     "Hans mammas gryta",
+     "Hans mormors kaka"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik säger att grytan påminner om hans mammas gryta.",
+    "explanationJa": "お{母|かあ}さんの{煮込|にこ}み{料理|りょうり}を{思|おも}い{出|だ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Den gröna såsen passar bra till fisken.",
+    "correct": false,
+    "explanationSv": "Såsen passar inte riktigt till fisken.",
+    "explanationJa": "ソースは{魚|さかな}にあまり{合|あ}っていません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Erik säger att grytan är ”mättande”. Vad betyder det?",
+    "options": [
+     "Den är för salt.",
+     "Man blir mätt av den.",
+     "Den är kall.",
+     "Den är äcklig."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mättande betyder att man blir mätt.",
+    "explanationJa": "mättande は「おなかがいっぱいになる」という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att restaurangen är bra men inte perfekt.",
+    "correct": true,
+    "explanationSv": "Hon ger betyget fyra av fem.",
+    "explanationJa": "5{点中|てんちゅう}4{点|てん}なので、よいけれど{完璧|かんぺき}ではありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man beskriver mat: ord för gott och äckligt, vad som passar ihop, och om du läser eller skriver recensioner av restauranger.",
+  "discussionPoints": [
+   "Beskriv din favoriträtt så att jag blir hungrig.",
+   "Vilka smaker tycker du passar bra ihop?",
+   "Läser du recensioner innan du går på restaurang?",
+   "Vilken mat påminner dig om din barndom?"
+  ]
+ }
+}
