@@ -1,0 +1,169 @@
+{
+ "id": "m.finskor-och-klackar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Finskor och klackar",
+ "titleJa": "ドレスシューズとヒール",
+ "descriptionSv": "Finskor och klackar: pumps, kilklack, ballerinaskor, lågskor och snörskor, och att klacka om hos skomakaren.",
+ "descriptionJa": "ドレスシューズとヒール：パンプス、ウェッジヒール、フラットシューズ、{短靴|たんぐつ}、ひも{靴|ぐつ}、{靴|くつ}の{修理|しゅうり}。",
+ "categoryId": "R01-A03-T02",
+ "tags": [
+  "kläder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.vardagsskor-och-kangor"
+ ],
+ "related": [],
+ "recommendedOrder": 309,
+ "words": [
+  {
+   "senseId": "s.finsko.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högklackad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klacksko.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilklack.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pumps.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ballerinasko.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lågsko.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snörsko.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lacksko.1",
+   "active": false
+  },
+  {
+   "senseId": "s.obekväm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nöta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vingla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skomakare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klacka-om.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Skor till festen",
+  "paragraphs": [
+   "Aiko och Erik ska på julfest med Aikos jobb. Aiko vill ha högklackade skor till sin nya klänning.",
+   "I affären provar hon ett par pumps med höga klackar. Hon vinglar när hon går. ”De är snygga, men obekväma”, säger hon.",
+   "Försäljaren visar klackskor med kilklack. ”De är lättare att gå i”, säger hon. Aiko köper dem. Hon tar också med sig ballerinaskor i väskan, för att kunna dansa.",
+   "Erik har en kostym, men hans finskor är gamla. Han har nött klackarna. Han går till skomakaren och frågar om han kan klacka om dem.",
+   "”Ja, men de är av gammalt läder. Du kanske ska köpa nya lågskor i stället”, säger skomakaren. Erik köper ett par bruna snörskor.",
+   "På festen har en kollega smoking och lackskor. ”Han är finast av alla”, säger Aiko tyst till Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur är pumpsen som Aiko provar?",
+    "options": [
+     "Billiga och sköna",
+     "För stora",
+     "Snygga men obekväma",
+     "För låga"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”De är snygga, men obekväma”, säger hon.",
+    "explanationJa": "すてきだけど{履|は}き{心地|ごこち}が{悪|わる}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad köper Aiko till slut?",
+    "options": [
+     "Pumps",
+     "Lackskor",
+     "Gympaskor",
+     "Klackskor med kilklack"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Försäljaren visar klackskor med kilklack. Aiko köper dem.",
+    "explanationJa": "ウェッジヒールの{靴|くつ}を{買|か}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför tar Aiko med ballerinaskor?",
+    "options": [
+     "För att det regnar",
+     "För att klackarna är trasiga",
+     "För att Erik vill det",
+     "För att kunna dansa"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon tar också med sig ballerinaskor i väskan, för att kunna dansa.",
+    "explanationJa": "ダンスをするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Skomakaren tycker att Erik ska köpa nya skor.",
+    "correct": true,
+    "explanationSv": "”Du kanske ska köpa nya lågskor i stället”, säger skomakaren.",
+    "explanationJa": "{新|あたら}しい{靴|くつ}を{買|か}うように{勧|すす}めています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kollegan är mycket fint klädd.",
+    "correct": true,
+    "explanationSv": "En kollega har smoking och lackskor.",
+    "explanationJa": "タキシードとエナメル{靴|ぐつ}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om finskor och klackar: vad man har på fötterna på fest och på jobbet, och om det är skönt eller inte.",
+  "discussionPoints": [
+   "Har du några finskor? När har du dem?",
+   "Kan du gå i höga klackar?",
+   "Vad har man på fötterna på jobbet i Japan?",
+   "Har du lämnat skor till en skomakare?"
+  ]
+ }
+}
