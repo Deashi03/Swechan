@@ -146,6 +146,46 @@ export const MOTIFS: Record<string, Motif> = {
     p('M32 34 V14', 'line'), p('M32 14 L44 18 L32 22 Z', 'accent2'),
     q(13, 36, 4, 6, 'light', 1), q(47, 36, 4, 6, 'light', 1),
   ] },
+  // ── Råvaror & skafferi ───────────────────────────────────────
+  cherries: { parts: [
+    p('M22 40 C24 28 30 18 40 12 M42 40 C42 28 41 20 40 12', 'line'),
+    p('M40 12 C46 8 54 10 56 14 C50 17 44 16 40 12 Z', 'main', H.green),
+    c(21, 44, 9, 'main', H.red), c(42, 44, 9, 'main', H.red), c(18, 41, 2.5, 'light'), c(39, 41, 2.5, 'light'),
+  ] },
+  wheat: { parts: [
+    p('M32 56 V14', 'line'),
+    p('M32 18 C26 16 24 10 26 6 C31 8 33 13 32 18 Z M32 18 C38 16 40 10 38 6 C33 8 31 13 32 18 Z', 'main', H.yellow),
+    p('M32 28 C25 26 22 20 23 15 C29 17 32 22 32 28 Z M32 28 C39 26 42 20 41 15 C35 17 32 22 32 28 Z', 'main', H.yellow),
+    p('M32 39 C25 37 21 31 22 26 C28 28 32 33 32 39 Z M32 39 C39 37 43 31 42 26 C36 28 32 33 32 39 Z', 'accent', H.yellow),
+    p('M20 50 C26 46 30 48 32 52 M44 50 C38 46 34 48 32 52', 'line'),
+  ] },
+  beanpod: { parts: [
+    p('M8 38 C14 22 40 14 56 20 C52 34 26 46 8 38 Z', 'main', H.green),
+    p('M12 37 C20 28 38 22 52 23 C48 31 28 40 12 37 Z', 'light', H.green),
+    c(20, 34, 4, 'accent', H.green), c(30, 30, 4.5, 'accent', H.green), c(41, 27, 4, 'accent', H.green),
+    c(18, 50, 4, 'main', H.red), c(28, 52, 4, 'main', H.brown), c(38, 50, 4, 'accent2'),
+  ] },
+  acorn: { parts: [
+    p('M18 30 C18 46 26 54 32 56 C38 54 46 46 46 30 Z', 'main', H.brown),
+    p('M14 30 C14 20 22 15 32 15 C42 15 50 20 50 30 Z', 'accent', H.brown),
+    p('M32 15 V8', 'line'),
+    p('M20 25 H44 M18 21 H46', 'line'), c(24, 38, 3, 'light'),
+  ] },
+  herbpot: { parts: [
+    p('M32 34 C30 24 24 18 16 18 C18 26 24 32 32 34 Z', 'main', H.green),
+    p('M32 34 C34 22 42 14 50 14 C48 24 40 32 32 34 Z', 'main', H.leaf),
+    p('M32 34 C30 22 32 12 36 8 C38 16 36 26 32 34 Z', 'accent', H.green),
+    p('M18 34 H46 L42 54 Q42 56 40 56 H24 Q22 56 22 54 Z', 'main', H.orange),
+    q(16, 33, 32, 6, 'accent', 2, H.orange),
+  ] },
+  jar: { parts: [
+    p('M14 22 H34 V52 Q34 55 31 55 H17 Q14 55 14 52 Z', 'light'),
+    p('M15 32 H33 V52 Q33 54 31 54 H17 Q15 54 15 52 Z', 'main', H.red),
+    q(12, 15, 24, 8, 'accent', 2),
+    q(17, 37, 14, 9, 'light', 1.5),
+    p('M38 28 H56 V54 H38 Z', 'main'), p('M38 28 H56 V33 H38 Z M38 49 H56 V54 H38 Z', 'accent2'),
+    q(41, 37, 12, 8, 'light', 1),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -161,7 +201,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   // published m.* modules without a 1:1 catalog link
   'm.hemmet-vardag': 'bucket', 'm.material-amnen': 'cubes', 'm.atomer-molekyler': 'atom', 'm.krig-forsvar': 'shield', 'm.medeltida-borgar': 'castle',
   // catalog entries
-  'SWC-VAR-02-01-01': 'carrot',
+  'SWC-VAR-02-01-01': 'carrot', 'SWC-VAR-02-01-02': 'cherries', 'SWC-VAR-02-01-03': 'wheat', 'SWC-VAR-02-01-04': 'beanpod',
+  'SWC-VAR-02-01-05': 'acorn', 'SWC-VAR-02-01-06': 'herbpot', 'SWC-VAR-02-01-07': 'jar',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };

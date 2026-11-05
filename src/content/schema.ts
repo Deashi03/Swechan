@@ -87,7 +87,7 @@ export const ReviewStatus = z.object({
 });
 
 export const WordSense = z.object({
-  id: z.string().regex(/^s\.[\wåäöé-]+\.\d+$/),
+  id: z.string().regex(/^s\.[\wåäöéü-]+\.\d+$/),
   /** Short label distinguishing this sense from the headword's other senses, e.g. "substans", "skolämne". */
   labelSv: z.string().optional(),
   /** Japanese gloss with furigana markup. */
@@ -114,7 +114,7 @@ export const WordSense = z.object({
 export type WordSense = z.infer<typeof WordSense>;
 
 export const VocabularyEntry = z.object({
-  id: z.string().regex(/^e\.[\wåäöé-]+$/),
+  id: z.string().regex(/^e\.[\wåäöéü-]+$/),
   lemma: z.string(),
   pos: PartOfSpeech,
   level: Level,

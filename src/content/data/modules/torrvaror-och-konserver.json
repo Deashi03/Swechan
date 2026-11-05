@@ -1,0 +1,173 @@
+{
+ "id": "m.torrvaror-och-konserver",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Torrvaror och konserver",
+ "titleJa": "{乾物|かんぶつ}と{缶詰|かんづめ}",
+ "descriptionSv": "Mat som håller länge: torrvaror, konserver och förpackningar, och att ha ett förråd för en kris.",
+ "descriptionJa": "{長|なが}くもつ{食|た}べ{物|もの}：{乾物|かんぶつ}、{缶詰|かんづめ}、{包装|ほうそう}、そして{非常時|ひじょうじ}のための{備蓄|びちく}。",
+ "categoryId": "R01-A02-T01",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kryddor-och-orter"
+ ],
+ "related": [],
+ "recommendedOrder": 106,
+ "words": [
+  {
+   "senseId": "s.skafferi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torrvara.1",
+   "active": false
+  },
+  {
+   "senseId": "s.plåt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.burk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konserv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konservöppnare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.paket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kartong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förpackning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.etikett.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ingrediens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.olja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.honung.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tonfisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kris.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mat för en kris",
+  "paragraphs": [
+   "I Sverige säger man att alla ska ha mat hemma för en vecka, om det blir kris. Aiko och Erik bestämmer sig för att titta i skafferiet.",
+   "Där finns torrvaror: ett paket pasta, två påsar ris, mjöl och havre. Det finns också honung, olja och några burkar med tonfisk och tomater.",
+   "”Konserver håller länge”, säger Erik. ”Men vi har ingen konservöppnare!” Aiko skrattar. ”De flesta burkar kan man öppna utan.”",
+   "Aiko läser etiketten på en burk. ”Här står alla ingredienser och hur länge den håller.” På en kartong med mjölk står ett datum. ”Mjölk håller inte så länge”, säger hon.",
+   "De köper fler konserver. Erik väljer burkar av plåt, och Aiko tar sylt i glas. ”Förpackningen spelar roll”, säger hon. ”Glas kan man se igenom.”",
+   "Nu har de ett litet förråd av mat. ”Om det blir kris, klarar vi oss en vecka”, säger Erik nöjd."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge ska man kunna klara sig på maten hemma, enligt texten?",
+    "options": [
+     "En dag",
+     "En månad",
+     "Ett år",
+     "En vecka"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Man ska ha mat för en vecka, säger texten.",
+    "explanationJa": "1{週間|しゅうかん}{分|ぶん}の{食|た}べ{物|もの}を{用意|ようい}するように{言|い}われています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad saknar de i köket?",
+    "options": [
+     "En konservöppnare",
+     "Olja",
+     "Honung",
+     "Pasta"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Erik säger: ”Men vi har ingen konservöppnare!”",
+    "explanationJa": "{缶切|かんき}りがありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "På etiketten står det vilka ingredienser som finns i burken.",
+    "correct": true,
+    "explanationSv": "Aiko läser att alla ingredienser står på etiketten.",
+    "explanationJa": "ラベルには{材料|ざいりょう}がすべて{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför tar Aiko sylt i glas?",
+    "options": [
+     "Man kan se igenom glas.",
+     "Glas är billigare.",
+     "Plåt är farligt.",
+     "Sylt finns inte i plåt."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko säger: ”Glas kan man se igenom.”",
+    "explanationJa": "ガラスは{中|なか}が{見|み}えるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mjölk är en bra mat att ha i ett förråd för en kris.",
+    "correct": false,
+    "explanationSv": "Aiko säger att mjölk inte håller så länge.",
+    "explanationJa": "{牛乳|ぎゅうにゅう}は{長|なが}くもたないと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "MSB:s råd att ha mat och vatten hemma för en vecka (broschyren Om krisen eller kriget kommer)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om mat som håller länge: vad du har i ditt skafferi, vad man rekommenderar i Sverige och Japan för kriser, och om du läser etiketter.",
+  "discussionPoints": [
+   "Vad har du alltid hemma i skafferiet?",
+   "Hur förbereder man sig för en kris eller en jordbävning i Japan?",
+   "Läser du ingredienserna på förpackningen när du handlar?",
+   "Vilka konserver tycker du om?"
+  ]
+ }
+}

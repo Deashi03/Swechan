@@ -1,0 +1,177 @@
+{
+ "id": "m.spannmal-och-gryn",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Spannmål och gryn",
+ "titleJa": "{穀物|こくもつ}とひき{割|わ}り",
+ "descriptionSv": "Spannmål och vad man gör av den: mjöl, gryn, gröt, flingor, pasta och knäckebröd.",
+ "descriptionJa": "{穀物|こくもつ}と、それから{作|つく}るもの：{小麦粉|こむぎこ}、ひき{割|わ}り、おかゆ、シリアル、パスタ、クネッケ。",
+ "categoryId": "R01-A02-T01",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.frukter-och-bar"
+ ],
+ "related": [],
+ "recommendedOrder": 102,
+ "words": [
+  {
+   "senseId": "s.åker.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bonde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skörda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spannmål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.korn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vete.1",
+   "active": true
+  },
+  {
+   "senseId": "s.råg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.havre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvarn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mala.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mjöl.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gryn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gröt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flinga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pasta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäckebröd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från åker till frukost",
+  "paragraphs": [
+   "Erik har en farbror som är bonde. Han har stora åkrar med spannmål: vete, råg, havre och korn. En dag i augusti hälsar Aiko och Erik på honom.",
+   "”Nu skördar vi”, säger farbrodern. ”Kornen är torra och hårda. Då är de färdiga.”",
+   "Förr malde man korn i en kvarn nära gården. I dag åker spannmålen till en stor fabrik. Där maler man den till mjöl eller gör gryn och flingor av den.",
+   "På morgonen äter de frukost tillsammans. Farbrodern äter gröt av havre, och Erik äter flingor med mjölk. På bordet finns också knäckebröd av råg.",
+   "”Vad äter man till frukost i Japan?” frågar farbrodern. ”Ofta ris och fisk”, säger Aiko. ”Men ris odlar man inte i Sverige. Här är det för kallt.”",
+   "Till middag kokar de pasta. ”Den är också gjord av vete”, säger Erik. ”Ja, nästan allt vi har ätit i dag kommer från en åker”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur vet farbrodern att kornen är färdiga?",
+    "options": [
+     "De är torra och hårda.",
+     "De är gröna och mjuka.",
+     "De har blivit mjöl.",
+     "De är söta."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han säger: ”Kornen är torra och hårda. Då är de färdiga.”",
+    "explanationJa": "{粒|つぶ}が{乾|かわ}いて{固|かた}くなっているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör man med spannmålen i fabriken?",
+    "options": [
+     "Man maler den till mjöl eller gör gryn och flingor.",
+     "Man kokar gröt av den.",
+     "Man odlar den.",
+     "Man gör den torr."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I fabriken maler man spannmålen eller gör gryn och flingor av den.",
+    "explanationJa": "{工場|こうじょう}で{粉|こな}にひいたり、ひき{割|わ}りやシリアルにしたりします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik äter gröt till frukost.",
+    "correct": false,
+    "explanationSv": "Det är farbrodern som äter gröt. Erik äter flingor.",
+    "explanationJa": "おかゆを{食|た}べるのはおじさんで、エリックはシリアルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför odlar man inte ris i Sverige, enligt Aiko?",
+    "options": [
+     "Ingen äter ris där.",
+     "Det är för kallt.",
+     "Det finns inga åkrar.",
+     "Ris är för dyrt."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko säger att det är för kallt i Sverige.",
+    "explanationJa": "スウェーデンは{寒|さむ}すぎるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Pastan de äter till middag kommer också från spannmål.",
+    "correct": true,
+    "explanationSv": "Erik säger att pastan är gjord av vete, och vete är spannmål.",
+    "explanationJa": "パスタは{小麦|こむぎ}、つまり{穀物|こくもつ}からできています。"
+   }
+  ],
+  "factSources": [
+   "Allmän kunskap: pasta görs av vete; risodling förekommer inte kommersiellt i Sverige (klimatet)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om spannmål och frukost: vad man äter till frukost i Sverige och i Japan, bröd och ris, och var maten kommer ifrån.",
+  "discussionPoints": [
+   "Vad äter du helst till frukost?",
+   "Hur viktigt är ris i Japan, och vad motsvarar det i Sverige?",
+   "Har du ätit gröt eller knäckebröd? Vad tyckte du?",
+   "Vet du var maten du äter kommer ifrån?"
+  ]
+ }
+}

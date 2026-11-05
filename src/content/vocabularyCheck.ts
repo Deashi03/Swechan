@@ -56,7 +56,7 @@ export class VocabularyChecker {
 
   isKnown(token: string, extra: Set<string>): boolean {
     if (token.length <= 1) return true; // symbols like H, O, C
-    if (this.names.has(token)) return true;
+    if (this.names.has(token) || (token.endsWith('s') && this.names.has(token.slice(0, -1)))) return true; // names, incl. genitive (Aikos)
     const w = token.toLowerCase();
     // target words: stored forms, plus genitive -s ("atomens", "fiendens")
     return extra.has(w) || (w.endsWith('s') && extra.has(w.slice(0, -1))) || this.coreKnown(w);
