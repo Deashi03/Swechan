@@ -1,0 +1,169 @@
+{
+ "id": "m.paketstorlekar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Paketstorlekar",
+ "titleJa": "{荷物|にもつ}のサイズ",
+ "descriptionSv": "Paketstorlekar och packning: paketstorlek, maxmått, maxvikt, omkrets, skrymmande, storbrev, varubrev, packa in, bubbelplast, kartong, fylla ut, tomrum, packtejp, tejpa igen och varsamt.",
+ "descriptionJa": "{荷物|にもつ}のサイズと{梱包|こんぽう}：サイズ、{最大|さいだい}サイズ、{最大|さいだい}{重量|じゅうりょう}、{周囲|しゅうい}の{長|なが}さ、かさばる、{定形外|ていけいがい}{郵便|ゆうびん}、{小型|こがた}{物品|ぶっぴん}{郵便|ゆうびん}、{梱包|こんぽう}する、プチプチ、{段|だん}ボール{箱|ばこ}、すき{間|ま}を{埋|う}める、すき{間|ま}、{梱包|こんぽう}テープ、テープで{閉|と}じる、{丁寧|ていねい}に。",
+ "categoryId": "R01-A05-T05",
+ "tags": [
+  "post"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kuvert-och-frimarken"
+ ],
+ "related": [],
+ "recommendedOrder": 531,
+ "words": [
+  {
+   "senseId": "s.paketstorlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maxmått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maxvikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omkrets.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skrymmande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.storbrev.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varubrev.1",
+   "active": false
+  },
+  {
+   "senseId": "s.packa-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bubbelplast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kartong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fylla-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tomrum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.packtejp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tejpa-igen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varsamt.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett paket till Japan",
+  "paragraphs": [
+   "Aiko ska skicka saker till sin mamma i Japan. Priset beror på paketstorleken och vikten. På PostNords sida står maxmått och maxvikt för varje storlek.",
+   "Hon har en kudde och tre koppar. Kudden är lätt men skrymmande. Ett mellanstort paket räcker. Längd plus omkrets får inte vara för mycket.",
+   "Hon packar in kopparna i bubbelplast. Sedan måste hon fylla ut med tidningspapper, så att det inte finns något tomrum i kartongen.",
+   "Hon tejpar igen kartongen med packtejp. På paketet skriver hon: ”Hanteras varsamt”.",
+   "Dokumenten till banken skickar hon som storbrev. En liten bok till Yui skickar Mia som varubrev, eftersom det är billigare.",
+   "Paketet väger fyra kilo. ”Det kostar mer än sakerna”, skrattar Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad beror priset på?",
+    "options": [
+     "Färgen på kartongen",
+     "Vilken dag man skickar",
+     "Avsändaren",
+     "Paketstorleken och vikten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Priset beror på paketstorleken och vikten.",
+    "explanationJa": "サイズと{重|おも}さです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur är kudden?",
+    "options": [
+     "Lätt men skrymmande",
+     "Tung och liten",
+     "Ömtålig",
+     "Stor och tung"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kudden är lätt men skrymmande.",
+    "explanationJa": "{軽|かる}いけれどかさばります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad packar Aiko in kopparna i?",
+    "options": [
+     "Tidningspapper",
+     "En kudde",
+     "Packtejp",
+     "Bubbelplast"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon packar in kopparna i bubbelplast.",
+    "explanationJa": "プチプチです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mia skickar boken som storbrev.",
+    "correct": false,
+    "explanationSv": "En liten bok till Yui skickar Mia som varubrev.",
+    "explanationJa": "{小型|こがた}{物品|ぶっぴん}{郵便|ゆうびん}で{送|おく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är dyrt att skicka paketet.",
+    "correct": true,
+    "explanationSv": "”Det kostar mer än sakerna”, skrattar Aiko.",
+    "explanationJa": "{中身|なかみ}より{高|たか}いです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om paketstorlekar och att packa: hur man packar ömtåliga saker och vad det kostar att skicka paket.",
+  "discussionPoints": [
+   "Hur packar du något som kan gå sönder?",
+   "Har du skickat ett paket till Japan? Vad kostade det?",
+   "Sparar du kartonger och bubbelplast?",
+   "Vilka paketstorlekar finns hos posten i Japan?"
+  ]
+ }
+}

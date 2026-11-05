@@ -1,0 +1,169 @@
+{
+ "id": "m.skicka-utomlands",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Skicka utomlands",
+ "titleJa": "{海外|かいがい}に{送|おく}る",
+ "descriptionSv": "Att skicka utomlands: utlandet, utrikes, inrikes, internationell, EU, tull, tullavgift, tulldeklaration, deklarera, värde, hanteringsavgift, förbjuden, spårbar, flygpost och rekommenderat brev.",
+ "descriptionJa": "{海外|かいがい}に{送|おく}る：{海外|かいがい}、{海外|かいがい}{向|む}け、{国内|こくない}、{国際的|こくさいてき}な、EU、{税関|ぜいかん}、{関税|かんぜい}、{税関|ぜいかん}{告知書|こくちしょ}、{申告|しんこく}する、{価値|かち}、{手数料|てすうりょう}、{禁止|きんし}された、{追跡|ついせき}できる、{航空便|こうくうびん}、{書留|かきとめ}。",
+ "categoryId": "R01-A05-T05",
+ "tags": [
+  "post"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.paketombud-och-utlamning"
+ ],
+ "related": [],
+ "recommendedOrder": 533,
+ "words": [
+  {
+   "senseId": "s.utlandet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utrikes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inrikes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.internationell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.EU.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tull.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tullavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tulldeklaration.1",
+   "active": false
+  },
+  {
+   "senseId": "s.deklarera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hanteringsavgift.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förbjuden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flygpost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rekommenderat-brev.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett paket till utlandet",
+  "paragraphs": [
+   "Aiko ska skicka ett paket till sin mamma i Japan. Att skicka till utlandet är dyrare än inrikes. Utrikes paket kostar mycket mer.",
+   "Japan ligger utanför EU. Därför måste Aiko fylla i en tulldeklaration. Hon måste deklarera vad som finns i paketet och vilket värde sakerna har.",
+   "Vissa saker är förbjudna att skicka, till exempel vissa batterier. Aiko skickar bara kläder och choklad.",
+   "Hon väljer flygpost och ett spårbart paket. Det tar ungefär en vecka. Viktiga papper till banken skickar hon som rekommenderat brev.",
+   "När paket kommer från ett land utanför EU kan man få betala tullavgift och moms. Förra året fastnade ett paket från Japan i tullen.",
+   "Aiko fick betala en hanteringsavgift på 75 kronor. ”Internationella paket är dyra”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var bor Aikos mamma?",
+    "options": [
+     "I Sverige",
+     "I Peru",
+     "I Kina",
+     "I Japan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko ska skicka ett paket till sin mamma i Japan.",
+    "explanationJa": "{日本|にほん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför måste Aiko fylla i en tulldeklaration?",
+    "options": [
+     "Paketet är tungt",
+     "Hon skickar batterier",
+     "Det är ett rekommenderat brev",
+     "Japan ligger utanför EU"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Japan ligger utanför EU. Därför måste Aiko fylla i en tulldeklaration.",
+    "explanationJa": "EUの{外|そと}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad skickar Aiko?",
+    "options": [
+     "Batterier",
+     "Pengar",
+     "Kläder och choklad",
+     "Böcker"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko skickar bara kläder och choklad.",
+    "explanationJa": "{服|ふく}とチョコレートです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aiko väljer flygpost.",
+    "correct": true,
+    "explanationSv": "Hon väljer flygpost och ett spårbart paket.",
+    "explanationJa": "{航空便|こうくうびん}を{選|えら}びます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är gratis att få paket från Japan.",
+    "correct": false,
+    "explanationSv": "Aiko fick betala en hanteringsavgift på 75 kronor.",
+    "explanationJa": "{手数料|てすうりょう}がかかりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att skicka saker utomlands: vad som är förbjudet, tull och vad det kostar att skicka till Japan.",
+  "discussionPoints": [
+   "Har du skickat ett paket till utlandet?",
+   "Har du någon gång fått betala tullavgift?",
+   "Vad får man inte skicka med posten?",
+   "Vad skickar du gärna till familjen i Japan?"
+  ]
+ }
+}
