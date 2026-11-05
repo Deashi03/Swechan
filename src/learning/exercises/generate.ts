@@ -65,6 +65,20 @@ function assemble(correct: ChoiceOption, wrong: ChoiceOption[], rng: () => numbe
 
 const lemmaLabel = (e: VocabularyEntry) => (e.inflection.kind === 'noun' ? `${e.inflection.gender} ${e.lemma}` : e.lemma);
 
+/**
+ * Hide every form of the answer word in a text shown with a recall exercise
+ * (feedback 0.4: "the answer is in the question"). Multi-word forms first.
+ */
+export function maskAnswer(text: string, entry: VocabularyEntry): string {
+  const forms = [...new Set([entry.lemma, ...allForms(entry)].map((f) => f.toLowerCase()))].sort((a, b) => b.length - a.length);
+  let out = text;
+  for (const f of forms) {
+    const esc = f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+');
+    out = out.replace(new RegExp(`(^|[^\\p{L}])${esc}(?=$|[^\\p{L}])`, 'giu'), '$1＿＿＿');
+  }
+  return out;
+}
+
 function contextLine(ref: SenseRef): string | undefined {
   // Multi-sense headwords: show an example so the intended meaning is unambiguous.
   return ref.entry.senses.length > 1 ? ref.sense.examples[0]!.sv : undefined;
@@ -103,10 +117,10 @@ export function genReverseChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise
   );
   return {
     type: 'reverse_choice', senseId: ref.sense.id, dimension: 'meaning',
-    prompt: ref.sense.ja, promptLang: 'ja', subPrompt: ref.sense.defJa, subPromptLang: 'ja',
+    prompt: maskAnswer(ref.sense.ja, ref.entry), promptLang: 'ja', subPrompt: maskAnswer(ref.sense.defJa, ref.entry), subPromptLang: 'ja',
     instructionSv: 'Vilket svenskt ord passar?', instructionJa: 'どのスウェーデン{語|ご}ですか。',
     options, correctIndex,
-    hint: { text: ref.sense.defSv, lang: 'sv' },
+    hint: { text: maskAnswer(ref.sense.defSv, ref.entry), lang: 'sv' },
     explanation: { text: ref.sense.examples[0]!.sv, lang: 'sv' },
   };
 }
@@ -204,7 +218,7 @@ export function genSpelling(ref: SenseRef, ctx: GenContext): TypedExercise {
   const accepted = e.inflection.kind === 'noun' ? [e.lemma, `${e.inflection.gender} ${e.lemma}`] : [e.lemma];
   return {
     type: 'spelling', senseId: ref.sense.id, dimension: 'spelling',
-    prompt: ref.sense.ja, promptLang: 'ja', subPrompt: ref.sense.defJa, subPromptLang: 'ja',
+    prompt: maskAnswer(ref.sense.ja, ref.entry), promptLang: 'ja', subPrompt: maskAnswer(ref.sense.defJa, ref.entry), subPromptLang: 'ja',
     instructionSv: 'Skriv ordet på svenska.',
     instructionJa: 'スウェーデン{語|ご}で{書|か}いてください。',
     accepted,

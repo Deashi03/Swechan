@@ -1,5 +1,5 @@
 {
-  "_comment": "Koppling mellan planeringskatalogen (planning/catalog/swechan-catalog.v1.json) och redan publicerade lektioner. Ingen av de fem publicerade modulerna motsvarar exakt EN katalogpost; därför används kompatibilitetsplacering (modulen behåller sitt m.*-ID, catalogId saknas). overlapsCatalogIds anger ämnesöverlapp, inte likvärdighet. links fylls bara efter verifierad 1:1-matchning: modulen är skriven direkt för katalogposten (samma titel, ämne och placering).",
+  "_comment": "Koppling mellan planeringskatalogen (planning/catalog/swechan-catalog.v1.json) och redan publicerade lektioner. Ingen av de fem publicerade modulerna motsvarar exakt EN katalogpost; därför används kompatibilitetsplacering i en ämnesgrupp (modulen behåller sitt m.*-ID, catalogId saknas; från 0.5 alltid i en ämnesgrupp, aldrig direkt i ett område). overlapsCatalogIds anger ämnesöverlapp, inte likvärdighet. links fylls bara efter verifierad 1:1-matchning: modulen är skriven direkt för katalogposten (samma titel, ämne och placering).",
   "links": [
     {
       "catalogId": "SWC-VAR-02-01-01",
@@ -23,7 +23,7 @@
   "compatibilityPlacements": [
     {
       "moduleId": "m.hemmet-vardag",
-      "catalogCategoryId": "R01-A01",
+      "catalogCategoryId": "R01-A01-T05",
       "overlapsCatalogIds": [
         "SWC-VAR-01-01-02",
         "SWC-VAR-01-05-02",
@@ -31,20 +31,20 @@
         "SWC-VAR-01-05-04",
         "SWC-VAR-01-05-07"
       ],
-      "reason": "Bred modul om rum och hushållssysslor; spänner över ämnesgrupperna Bostadstyper & rum och Städning & underhåll."
+      "reason": "Bred modul om rum och hushållssysslor; placerad i Städning & underhåll, där de flesta av orden hör hemma."
     },
     {
       "moduleId": "m.material-amnen",
-      "catalogCategoryId": "R06-A04",
+      "catalogCategoryId": "R06-A04-T01",
       "overlapsCatalogIds": [
         "SWC-VET-04-01-02",
         "SWC-VET-04-01-05"
       ],
-      "reason": "Grundmodul om ämnen, material och aggregationsformer före Atomer och molekyler; ingen katalogpost motsvarar den."
+      "reason": "Grundmodul om ämnen, material och aggregationsformer före Atomer och molekyler; placerad i Atomer & periodiska systemet."
     },
     {
       "moduleId": "m.atomer-molekyler",
-      "catalogCategoryId": "R06-A04",
+      "catalogCategoryId": "R06-A04-T02",
       "overlapsCatalogIds": [
         "SWC-VET-04-01-01",
         "SWC-VET-04-01-02",
@@ -52,20 +52,20 @@
         "SWC-VET-04-02-02",
         "SWC-VET-04-03-01"
       ],
-      "reason": "Spänner över Atomer & periodiska systemet, Molekyler & kemiska bindningar och Kemiska reaktioner."
+      "reason": "Spänner över atomer, molekyler, bindningar och reaktioner; placerad i Molekyler & kemiska bindningar."
     },
     {
       "moduleId": "m.krig-forsvar",
-      "catalogCategoryId": "R04-A02",
+      "catalogCategoryId": "R04-A02-T03",
       "overlapsCatalogIds": [
         "SWC-HIS-02-02-05",
         "SWC-HIS-02-03-02"
       ],
-      "reason": "Allmän grundmodul om krig och försvar före Medeltida slott och belägringar; ingen katalogpost motsvarar den."
+      "reason": "Allmän grundmodul om krig och försvar (anfalla, försvara, belägra) före Medeltida slott och belägringar; placerad i Medeltida belägringar."
     },
     {
       "moduleId": "m.medeltida-borgar",
-      "catalogCategoryId": "R04-A02",
+      "catalogCategoryId": "R04-A02-T02",
       "overlapsCatalogIds": [
         "SWC-HIS-02-02-01",
         "SWC-HIS-02-02-02",
@@ -76,7 +76,7 @@
         "SWC-HIS-02-03-06",
         "SWC-HIS-02-03-07"
       ],
-      "reason": "Spänner över Medeltida slott & fästningar och Medeltida belägringar."
+      "reason": "Spänner över Medeltida slott & fästningar och belägringar; placerad i Medeltida slott & fästningar."
     }
   ]
 }

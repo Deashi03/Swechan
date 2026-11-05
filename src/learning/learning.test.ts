@@ -167,3 +167,18 @@ describe('learner-facing progress', () => {
     expect(bp.doneInPart).toBe(0);
   });
 });
+
+describe('the answer is never shown in a recall prompt (feedback 0.4)', () => {
+  it('reverse choice and spelling hide every form of the answer in prompt, sub-prompt and hint', async () => {
+    const { genReverseChoice, genSpelling, maskAnswer } = await import('./exercises/generate');
+    const { entryOccursIn } = await import('../content/morphology');
+    const { stripFurigana } = await import('../content/furigana');
+    expect(maskAnswer('bestå av: vara gjord av något.', repo.getSense('s.bestå.1')!.entry)).toBe('＿＿＿ av: vara gjord av något.');
+    for (const m of repo.modules) for (const w of m.words) {
+      const ref = repo.getSense(w.senseId)!;
+      const pool = { repo, poolSenseIds: m.words.map((x) => x.senseId), seed: 1 };
+      const texts = [genReverseChoice(ref, pool), genSpelling(ref, pool)].flatMap((x) => (x ? [x.prompt, x.subPrompt ?? '', typeof x.hint === 'string' ? '' : x.hint?.text ?? ''] : []));
+      for (const t of texts) expect(entryOccursIn(stripFurigana(t), ref.entry), `${w.senseId}: ${t}`).toBe(false);
+    }
+  });
+});

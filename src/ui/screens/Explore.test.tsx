@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, within } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import { DictionarySheetProvider } from '../dictionary/DictionarySheet';
 import { setupTestEnv } from '../../test/helpers';
 import { CatalogModuleView, Explore, SEARCH_PAGE_SIZE } from './Explore';
@@ -17,20 +17,22 @@ describe('Kurser (catalog navigation)', () => {
     expect(screen.queryByText(/Alla moduler/)).toBeNull();
   });
 
-  it('an area with published modules shows its topic groups plus the lessons (8 choices)', async () => {
+  it('an area shows only its topic groups; older lessons sit inside their topic group (8 choices)', async () => {
     wrap(<Explore categoryId="R04-A02" />);
-    const items = await choices();
-    expect(items.length).toBe(8);
+    expect((await choices()).length).toBe(6);
+    expect(screen.queryByText('Medeltida slott och belägringar')).toBeNull();
+    cleanup();
+    wrap(<Explore categoryId="R04-A02-T02" />);
+    expect((await choices()).length).toBe(8);
     expect(screen.getByText('Medeltida slott och belägringar')).toBeInTheDocument();
-    expect(screen.getByText('Krig och försvar')).toBeInTheDocument();
   });
 
   it('a topic group lists its seven planned modules, clearly marked and not startable', async () => {
-    wrap(<Explore categoryId="R04-A02-T03" />);
+    wrap(<Explore categoryId="R04-A02-T04" />);
     const items = await choices();
     expect(items.length).toBe(7);
     expect(screen.getAllByText('Planerad').length).toBeGreaterThanOrEqual(7);
-    expect(screen.getByText('Kapitulation och undsättning')).toBeInTheDocument();
+    expect(screen.getByText('Karl XII:s karoliner')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
   });
 

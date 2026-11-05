@@ -6,15 +6,15 @@
  *   line = stroke-only detail (steam, cuts, code…).
  */
 export type Role = 'main' | 'accent' | 'accent2' | 'light' | 'line';
-export type Part =
-  | { t: 'path'; d: string; r: Role }
-  | { t: 'circle'; cx: number; cy: number; rad: number; r: Role }
-  | { t: 'rect'; x: number; y: number; w: number; h: number; rx?: number; r: Role };
+/** `hue` (optional) fixes a natural colour for one part, e.g. green leaves, independent of the area colour. */
+export type Part = ({ t: 'path'; d: string } | { t: 'circle'; cx: number; cy: number; rad: number } | { t: 'rect'; x: number; y: number; w: number; h: number; rx?: number }) & { r: Role; hue?: number };
 export type Motif = { parts: Part[] };
 
-const p = (d: string, r: Role): Part => ({ t: 'path', d, r });
-const c = (cx: number, cy: number, rad: number, r: Role): Part => ({ t: 'circle', cx, cy, rad, r });
-const q = (x: number, y: number, w: number, h: number, r: Role, rx = 1.5): Part => ({ t: 'rect', x, y, w, h, rx, r });
+const p = (d: string, r: Role, hue?: number): Part => ({ t: 'path', d, r, hue });
+const c = (cx: number, cy: number, rad: number, r: Role, hue?: number): Part => ({ t: 'circle', cx, cy, rad, r, hue });
+const q = (x: number, y: number, w: number, h: number, r: Role, rx = 1.5, hue?: number): Part => ({ t: 'rect', x, y, w, h, rx, r, hue });
+/** Natural hues for food and nature motifs. */
+export const H = { green: 115, leaf: 95, orange: 26, red: 6, yellow: 46, brown: 28, blue: 210, grey: 220, purple: 285 } as const;
 
 export const MOTIFS: Record<string, Motif> = {
   // ── root areas ──────────────────────────────────────────────
@@ -106,6 +106,46 @@ export const MOTIFS: Record<string, Motif> = {
     c(32, 19, 3.5, 'accent2'),
     p('M18 41 Q18 31 27 28', 'line'),
   ] },
+  // ── published modules before 0.5 ─────────────────────────────
+  carrot: { parts: [
+    p('M30 20 L42 22 L26 54 Q24 57 23 53 Z', 'main', H.orange),
+    p('M28 30 L33 31 M26 38 L30 39 M24 46 L27 47', 'line'),
+    p('M36 21 C34 13 38 8 42 6 C42 12 40 17 37 21 Z', 'main', H.green),
+    p('M38 22 C42 15 48 13 53 14 C50 19 45 22 39 23 Z', 'main', H.green),
+    p('M35 21 C30 15 24 14 20 16 C24 20 29 22 34 22 Z', 'main', H.green),
+  ] },
+  bucket: { parts: [
+    p('M14 26 H44 L40 52 Q40 54 38 54 H20 Q18 54 18 52 Z', 'main'),
+    q(12, 23, 34, 5, 'accent', 2.5),
+    p('M17 25 C17 10 41 10 41 25', 'line'),
+    q(48, 8, 4, 34, 'accent2', 2), p('M44 40 H56 L58 54 H42 Z', 'accent'),
+    p('M46 44 V52 M50 44 V52 M54 44 V52', 'line'),
+    c(26, 18, 3, 'light'), c(33, 15, 2, 'light'),
+  ] },
+  cubes: { parts: [
+    p('M10 36 L22 30 L34 36 L22 42 Z', 'light'), p('M10 36 V50 L22 56 V42 Z', 'main'), p('M34 36 V50 L22 56 V42 Z', 'accent'),
+    p('M38 30 C38 22 46 14 46 14 C46 14 54 22 54 30 C54 35 50 38 46 38 C42 38 38 35 38 30 Z', 'accent2'),
+    c(43, 29, 2, 'light'),
+    p('M18 12 Q14 18 18 22 M26 10 Q22 16 26 22', 'line'),
+  ] },
+  atom: { parts: [
+    p('M32 13 C46 13 56 22 56 32 C56 42 46 51 32 51 C18 51 8 42 8 32 C8 22 18 13 32 13 Z M32 18 C21 18 13 24 13 32 C13 40 21 46 32 46 C43 46 51 40 51 32 C51 24 43 18 32 18 Z', 'main'),
+    p('M15 15 C25 8 46 30 49 49 C39 56 18 34 15 15 Z M18 18 C22 28 34 44 45 46 C42 36 30 20 18 18 Z', 'accent'),
+    c(32, 32, 6, 'accent2'), c(56, 32, 3, 'light'), c(15, 15, 3, 'light'),
+  ] },
+  shield: { parts: [
+    p('M32 8 L52 15 V30 C52 43 43 51 32 56 C21 51 12 43 12 30 V15 Z', 'main'),
+    p('M32 8 L52 15 V30 C52 43 43 51 32 56 Z', 'accent'),
+    p('M32 18 V46 M20 28 H44', 'line'),
+    c(32, 28, 4, 'light'),
+  ] },
+  castle: { parts: [
+    p('M8 54 V26 H13 V30 H17 V26 H22 V54 Z', 'main'), p('M42 54 V26 H47 V30 H51 V26 H56 V54 Z', 'main'),
+    p('M20 54 V34 H44 V54 Z', 'accent'),
+    p('M27 54 V46 Q32 40 37 46 V54 Z', 'line'), p('M27 54 V46 Q32 40 37 46 V54 Z', 'accent2'),
+    p('M32 34 V14', 'line'), p('M32 14 L44 18 L32 22 Z', 'accent2'),
+    q(13, 36, 4, 6, 'light', 1), q(47, 36, 4, 6, 'light', 1),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -118,6 +158,10 @@ export const ROOT_HUE: Record<string, number> = {
 };
 /** Motif per planned/published catalog module (filled in as modules get art). */
 export const MODULE_MOTIF: Record<string, string> = {
+  // published m.* modules without a 1:1 catalog link
+  'm.hemmet-vardag': 'bucket', 'm.material-amnen': 'cubes', 'm.atomer-molekyler': 'atom', 'm.krig-forsvar': 'shield', 'm.medeltida-borgar': 'castle',
+  // catalog entries
+  'SWC-VAR-02-01-01': 'carrot',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };

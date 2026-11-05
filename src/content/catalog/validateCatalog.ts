@@ -57,6 +57,7 @@ export function validateCatalog(index: CatalogIndex, publishedModuleIds: Iterabl
   for (const p of index.mapping.compatibilityPlacements) {
     if (!published.has(p.moduleId)) add(p.moduleId, 'Placering för en modul som inte är publicerad');
     if (!index.getCategory(p.catalogCategoryId)) add(p.moduleId, `Placering i okänd kategori ${p.catalogCategoryId}`);
+    else if (index.childCategories(p.catalogCategoryId).length > 0) add(p.moduleId, `Placering i ${p.catalogCategoryId}, som har underkategorier – en modul ska ligga i en ämnesgrupp`);
     if (placed.has(p.moduleId)) add(p.moduleId, 'Modulen är placerad flera gånger');
     placed.add(p.moduleId);
     for (const o of p.overlapsCatalogIds) if (!index.getModule(o)) add(p.moduleId, `Överlapp mot okänt katalog-ID ${o}`);
