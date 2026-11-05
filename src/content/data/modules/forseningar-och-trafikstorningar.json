@@ -1,0 +1,171 @@
+{
+ "id": "m.forseningar-och-trafikstorningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Förseningar och trafikstörningar",
+ "titleJa": "{遅延|ちえん}と{運行|うんこう}{障害|しょうがい}",
+ "descriptionSv": "Förseningar och trafikstörningar: trafikstörning, trafikinformation, stopp i trafiken, signalfel, växelfel, spårarbete, som vanligt, ersättningsbuss, omledning, avstängd, utrop, inställd, förseningsersättning, resegaranti och taxi.",
+ "descriptionJa": "{遅延|ちえん}と{運行|うんこう}{障害|しょうがい}：{運行|うんこう}{障害|しょうがい}、{運行|うんこう}{情報|じょうほう}、{運転|うんてん}{見合|みあ}わせ、{信号|しんごう}{故障|こしょう}、ポイント{故障|こしょう}、{線路|せんろ}{工事|こうじ}、いつもどおり、{代行|だいこう}バス、{迂回|うかい}、{通行止|つうこうど}め、アナウンス、{運休|うんきゅう}、{遅延|ちえん}{補償|ほしょう}、{交通|こうつう}{保証|ほしょう}、タクシー。",
+ "categoryId": "R01-A06-T01",
+ "tags": [
+  "resor",
+  "kollektivtrafik",
+  "problem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.tidtabeller-och-byten"
+ ],
+ "related": [],
+ "recommendedOrder": 606,
+ "words": [
+  {
+   "senseId": "s.trafikstörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikinformation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stopp-i-trafiken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.signalfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växelfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårarbete.1",
+   "active": true
+  },
+  {
+   "senseId": "s.som-vanligt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ersättningsbuss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avstängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utrop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inställd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.taxi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förseningsersättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resegaranti.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dålig morgon",
+  "paragraphs": [
+   "Erik kollar trafikinformationen. Det är trafikstörningar på pendeltåget. På grund av signalfel är det stopp i trafiken i tjugo minuter.",
+   "Igår var det ett växelfel, och i helgen blir det spårarbete. Då går inga tåg, bara ersättningsbussar.",
+   "På stationen hör Erik ett utrop: ”Tåget mot stan är inställt.” Han går till bussen i stället.",
+   "Men en gata är avstängd, så bussen kör en omledning. Den stannar inte vid Eriks vanliga hållplats.",
+   "Erik kommer fram en timme för sent. Enligt resegarantin kunde han ha tagit taxi och fått pengarna tillbaka. Nu ansöker han om förseningsersättning i stället.",
+   "Nästa dag går allt som vanligt igen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför är det stopp i trafiken?",
+    "options": [
+     "Spårarbete",
+     "Snö",
+     "Signalfel",
+     "En olycka"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På grund av signalfel är det stopp i trafiken.",
+    "explanationJa": "{信号|しんごう}{故障|こしょう}のためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad går i helgen i stället för tåg?",
+    "options": [
+     "Taxi",
+     "Ersättningsbussar",
+     "Spårvagnar",
+     "Ingenting"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Då går inga tåg, bara ersättningsbussar.",
+    "explanationJa": "{代行|だいこう}バスです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Bussen stannar vid Eriks vanliga hållplats.",
+    "correct": false,
+    "explanationSv": "Den stannar inte vid Eriks vanliga hållplats.",
+    "explanationJa": "{止|と}まりません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ansöker Erik om?",
+    "options": [
+     "Förseningsersättning",
+     "Ett nytt kort",
+     "Ett periodkort",
+     "En taxi"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Nu ansöker han om förseningsersättning.",
+    "explanationJa": "{遅延|ちえん}{補償|ほしょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tog inte taxi.",
+    "correct": true,
+    "explanationSv": "Han kunde ha tagit taxi … Nu ansöker han om förseningsersättning i stället.",
+    "explanationJa": "タクシーには{乗|の}りませんでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om förseningar och störningar i trafiken: vad som brukar hända, hur man får information och om man kan få pengar tillbaka.",
+  "discussionPoints": [
+   "Har du varit med om en stor trafikstörning?",
+   "Var kollar du trafikinformation?",
+   "Finns det ersättningsbussar i Japan?",
+   "Kan man få förseningsersättning i Japan?"
+  ]
+ }
+}

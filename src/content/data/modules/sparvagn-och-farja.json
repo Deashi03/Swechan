@@ -1,0 +1,170 @@
+{
+ "id": "m.sparvagn-och-farja",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Spårvagn och färja",
+ "titleJa": "{路面電車|ろめんでんしゃ}とフェリー",
+ "descriptionSv": "Spårvagn och färja: spårvagn, färja, bilfärja, pendelbåt, skärgård, kaj, brygga, lägga till, gå ombord, gå i land, överfart, hytt, sjögång, sjösjuk och ta färjan.",
+ "descriptionJa": "{路面電車|ろめんでんしゃ}とフェリー：{路面電車|ろめんでんしゃ}、フェリー、カーフェリー、{水上|すいじょう}バス、{群島|ぐんとう}、{岸壁|がんぺき}、{桟橋|さんばし}、{着岸|ちゃくがん}する、{乗|の}りこむ、{上陸|じょうりく}する、{渡航|とこう}、{客室|きゃくしつ}、しけ、{船酔|ふなよ}い、フェリーで{行|い}く。",
+ "categoryId": "R01-A06-T01",
+ "tags": [
+  "resor",
+  "kollektivtrafik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.tunnelbana-och-pendeltag"
+ ],
+ "related": [],
+ "recommendedOrder": 603,
+ "words": [
+  {
+   "senseId": "s.spårvagn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bilfärja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pendelbåt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärgård.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kaj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brygga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-ombord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-i-land.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överfart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hytt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjösjuk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjögång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-färjan.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Till Gotland",
+  "paragraphs": [
+   "Familjen ska åka till Gotland på semester. Först åker de spårvagn till stationen och sedan pendeltåg till hamnen. De har bokat plats på en bilfärja.",
+   "Färjan ligger vid kajen. De går ombord tjugo minuter före avgång. Överfarten tar tre timmar.",
+   "Det blåser, och det är lite sjögång. Mia blir sjösjuk och vill ligga ner. Nästa gång ska de boka en hytt.",
+   "När färjan lägger till i Visby, är det dags att gå i land. Leo vill bada direkt.",
+   "En dag gör de en tur i skärgården med en liten pendelbåt. Båten stannar vid många små bryggor.",
+   "”Det är mycket trevligare att ta färjan än att flyga”, säger Erik. Mia är inte lika säker."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart ska familjen?",
+    "options": [
+     "Till Göteborg",
+     "Till Gotland",
+     "Till Japan",
+     "Till skärgården"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Familjen ska åka till Gotland på semester.",
+    "explanationJa": "ゴットランド{島|とう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång är överfarten?",
+    "options": [
+     "En timme",
+     "Tre timmar",
+     "Tjugo minuter",
+     "En dag"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Överfarten tar tre timmar.",
+    "explanationJa": "3{時間|じかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia blir sjösjuk.",
+    "correct": true,
+    "explanationSv": "Mia blir sjösjuk och vill ligga ner.",
+    "explanationJa": "{船酔|ふなよ}いします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var stannar den lilla båten i skärgården?",
+    "options": [
+     "Vid kajen i Visby",
+     "Vid många små bryggor",
+     "På stationen",
+     "Ingenstans"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Båten stannar vid många små bryggor.",
+    "explanationJa": "たくさんの{小|ちい}さな{桟橋|さんばし}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia tycker också att färjan är bäst.",
+    "correct": false,
+    "explanationSv": "Mia är inte lika säker.",
+    "explanationJa": "ミアはそう{思|おも}っていません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om spårvagn och båt: om ni har åkt färja, blivit sjösjuka och hur man reser på vatten i Sverige och Japan.",
+  "discussionPoints": [
+   "Har du åkt spårvagn? Var?",
+   "Har du åkt färja? Vart?",
+   "Blir du sjösjuk?",
+   "Vilka öar i Japan åker man färja till?"
+  ]
+ }
+}

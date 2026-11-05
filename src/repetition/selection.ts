@@ -63,11 +63,17 @@ export function selectReviewCards(input: SelectionInput): SelectionResult {
   const difficult = input.difficultCardIds ?? new Set<string>();
   const exclude = input.excludeCardIds ?? new Set<string>();
   const eligible = input.cards.filter((c) => c.createdDate < today && !exclude.has(c.id));
-  const score = (c: ReviewCardRecord) => input.retrievability(c) - (difficult.has(c.id) ? 0.15 : 0);
-  const byScore = (a: ReviewCardRecord, b: ReviewCardRecord) => score(a) - score(b) || a.id.localeCompare(b.id);
+  // Score and due-state are computed once per card: the comparator runs O(n log n) times, and both
+  // retrievability and study-date conversion are too costly to repeat for large card pools.
+  const scores = new Map<string, number>();
+  for (const c of eligible) scores.set(c.id, input.retrievability(c) - (difficult.has(c.id) ? 0.15 : 0));
+  const byScore = (a: ReviewCardRecord, b: ReviewCardRecord) => scores.get(a.id)! - scores.get(b.id)! || a.id.localeCompare(b.id);
 
-  const due = eligible.filter((c) => isDue(c, today, timeZone)).sort(byScore);
-  const notDue = eligible.filter((c) => !isDue(c, today, timeZone)).sort(byScore);
+  const due: ReviewCardRecord[] = [];
+  const notDue: ReviewCardRecord[] = [];
+  for (const c of eligible) (isDue(c, today, timeZone) ? due : notDue).push(c);
+  due.sort(byScore);
+  notDue.sort(byScore);
 
   let picked = pickDistinct(due, limit, []);
   const dueTaken = picked.length;

@@ -1,0 +1,170 @@
+{
+ "id": "m.buss-och-hallplats",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Buss och hållplats",
+ "titleJa": "バスと{停留所|ていりゅうじょ}",
+ "descriptionSv": "Att åka buss: kollektivtrafik, hållplats, busskur, busschaufför, framdörr, mittdörr, barnvagn, stiga på, stiga av, stoppknapp, ståplats, resenär, avgå, avgång och ändhållplats.",
+ "descriptionJa": "バスに{乗|の}る：{公共交通機関|こうきょうこうつうきかん}、{停留所|ていりゅうじょ}、{待合|まちあい}{小屋|ごや}、{運転手|うんてんしゅ}、{前|まえ}のドア、{真|ま}ん{中|なか}のドア、ベビーカー、{乗|の}る、{降|お}りる、{降車|こうしゃ}ボタン、{立|た}ち{席|せき}、{乗客|じょうきゃく}、{発車|はっしゃ}する、{発車|はっしゃ}、{終点|しゅうてん}。",
+ "categoryId": "R01-A06-T01",
+ "tags": [
+  "resor",
+  "kollektivtrafik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.klaga-och-begara-ersattning"
+ ],
+ "related": [],
+ "recommendedOrder": 601,
+ "words": [
+  {
+   "senseId": "s.kollektivtrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hållplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.busskur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.busschaufför.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framdörr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnvagn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mittdörr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stiga-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stiga-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stoppknapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ståplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resenär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ändhållplats.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Med buss till jobbet",
+  "paragraphs": [
+   "Aiko åker kollektivtrafik till jobbet. Hållplatsen ligger två minuter från huset. När det regnar väntar hon i busskuren.",
+   "Bussen avgår klockan 7.15. Aiko stiger på genom framdörren och blippar sitt kort. Busschauffören säger hej.",
+   "En pappa med barnvagn stiger på genom mittdörren. I Stockholm åker man gratis med barnvagn.",
+   "Bussen är full av resenärer, och det finns bara ståplatser. Aiko håller i sig när bussen kör.",
+   "Före sin hållplats trycker Aiko på stoppknappen. Hon stiger av vid jobbet. Bussen kör vidare till ändhållplatsen.",
+   "På kvällen missar hon bussen hem. Men nästa avgång är bara tio minuter senare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När avgår bussen?",
+    "options": [
+     "Klockan 7.15",
+     "Klockan 7.05",
+     "Klockan 8.15",
+     "Klockan 7.50"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Bussen avgår klockan 7.15.",
+    "explanationJa": "7{時|じ}15{分|ふん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken dörr går pappan med barnvagnen på genom?",
+    "options": [
+     "Framdörren",
+     "Mittdörren",
+     "Bakdörren",
+     "Ingen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "En pappa med barnvagn stiger på genom mittdörren.",
+    "explanationJa": "{真|ま}ん{中|なか}のドアです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det finns många lediga sittplatser.",
+    "correct": false,
+    "explanationSv": "Bussen är full av resenärer, och det finns bara ståplatser.",
+    "explanationJa": "{立|た}つ{場所|ばしょ}しかありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko före sin hållplats?",
+    "options": [
+     "Trycker på stoppknappen",
+     "Pratar i telefon",
+     "Byter buss",
+     "Sätter sig"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Före sin hållplats trycker Aiko på stoppknappen.",
+    "explanationJa": "{降車|こうしゃ}ボタンを{押|お}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko behöver inte vänta länge på nästa buss hem.",
+    "correct": true,
+    "explanationSv": "Nästa avgång är bara tio minuter senare.",
+    "explanationJa": "10{分後|ぷんご}に{次|つぎ}のバスがあります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att åka buss: hur man stiger på och av, vad man gör på bussen och hur bussar fungerar i Sverige och Japan.",
+  "discussionPoints": [
+   "Åker du buss ofta? Vart?",
+   "Går man på genom framdörren i japanska bussar också?",
+   "Vad gör du om det bara finns ståplatser?",
+   "Hur vet man vilken hållplats man ska stiga av vid?"
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "id": "m.tidtabeller-och-byten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tidtabeller och byten",
+ "titleJa": "{時刻表|じこくひょう}と{乗|の}り{換|か}え",
+ "descriptionSv": "Tidtabeller och byten: tidtabell, avgångstavla, ankomst, ankomma, byte, bytestid, hinna med, direktbuss, realtid, var tionde minut, turtäthet, gles, nattbuss, helgtrafik och sista bussen.",
+ "descriptionJa": "{時刻表|じこくひょう}と{乗|の}り{換|か}え：{時刻表|じこくひょう}、{発車|はっしゃ}{案内|あんない}{板|ばん}、{到着|とうちゃく}、{到着|とうちゃく}する、{乗|の}り{換|か}え、{乗|の}り{換|か}え{時間|じかん}、{間|ま}に{合|あ}う、{直行|ちょっこう}バス、リアルタイム、10{分|ぷん}ごと、{運行|うんこう}{本数|ほんすう}、まばらな、{深夜|しんや}バス、{休日|きゅうじつ}ダイヤ、{終|しゅう}バス。",
+ "categoryId": "R01-A06-T01",
+ "tags": [
+  "resor",
+  "kollektivtrafik",
+  "tid"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.biljetter-och-periodkort"
+ ],
+ "related": [],
+ "recommendedOrder": 605,
+ "words": [
+  {
+   "senseId": "s.tidtabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgångstavla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ankomst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ankomma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bytestid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hinna-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.direktbuss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.realtid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.var-tionde-minut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turtäthet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gles.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nattbuss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.helgtrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sista-bussen.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hinner vi bytet?",
+  "paragraphs": [
+   "Aiko och Leo ska till mormor i en annan stad. Enligt tidtabellen går bussen 8.10. Ankomst till mormors by är 10.25.",
+   "Resan har ett byte. Bytestiden är bara fyra minuter, så de måste skynda sig för att hinna med den andra bussen. Det finns ingen direktbuss.",
+   "På avgångstavlan står det att bussen är fem minuter sen. Aiko kollar i appen, som visar bussarna i realtid. Där ser hon att bussen snart ankommer.",
+   "I stan går bussarna var tionde minut. Turtätheten är hög. Men på landet är avgångarna glesa, och på söndagar är det helgtrafik med ännu färre bussar.",
+   "De hinner bytet, men bara precis. Hos mormor äter de och pratar länge.",
+   "På kvällen missar de sista bussen. ”Det finns en nattbuss”, säger mormor. ”Men den går klockan ett.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När går bussen enligt tidtabellen?",
+    "options": [
+     "10.25",
+     "8.10",
+     "8.25",
+     "9.10"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Enligt tidtabellen går bussen 8.10.",
+    "explanationJa": "8{時|じ}10{分|ぷん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång är bytestiden?",
+    "options": [
+     "Tio minuter",
+     "Fyra minuter",
+     "Fem minuter",
+     "En timme"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Bytestiden är bara fyra minuter.",
+    "explanationJa": "4{分|ぷん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det finns en direktbuss till mormor.",
+    "correct": false,
+    "explanationSv": "Det finns ingen direktbuss.",
+    "explanationJa": "{直行|ちょっこう}バスはありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur ofta går bussarna i stan?",
+    "options": [
+     "En gång i timmen",
+     "Var tionde minut",
+     "Var femte minut",
+     "Bara på helgen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I stan går bussarna var tionde minut.",
+    "explanationJa": "10{分|ぷん}おきです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko och Leo måste vänta länge om de vill åka hem samma kväll.",
+    "correct": true,
+    "explanationSv": "De missar sista bussen. Nattbussen går klockan ett.",
+    "explanationJa": "{深夜|しんや}バスは1{時|じ}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tidtabeller och byten: hur ofta bussarna går där ni bor, om ni hinner byten och hur ni planerar resor.",
+  "discussionPoints": [
+   "Hur ofta går bussen eller tåget där du bor?",
+   "Använder du en app med realtid?",
+   "Har du missat ett byte eller sista bussen någon gång?",
+   "Finns det nattbussar i din stad?"
+  ]
+ }
+}

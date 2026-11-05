@@ -1,0 +1,177 @@
+{
+ "id": "m.fraga-efter-ratt-linje",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Fråga efter rätt linje",
+ "titleJa": "{正|ただ}しい{路線|ろせん}を{聞|き}く",
+ "descriptionSv": "Fråga efter rätt linje: riktning, åt vilket håll, åt andra hållet, mittemot, på andra sidan, varifrån, linjenummer, via, ändstation, hållplatsläge, kliva på, kliva av, åka fel, vilse, ta sig till och stationsvärd.",
+ "descriptionJa": "{正|ただ}しい{路線|ろせん}を{聞|き}く：{方向|ほうこう}、どちらの{方向|ほうこう}に、{反対|はんたい}{方向|ほうこう}に、{向|む}かいに、{向|む}こう{側|がわ}に、どこから、{路線|ろせん}{番号|ばんごう}、{経由|けいゆ}で、{終点|しゅうてん}、{乗|の}り{場|ば}、{乗|の}る、{降|お}りる、{乗|の}り{間違|まちが}える、{道|みち}に{迷|まよ}って、たどり{着|つ}く、{駅|えき}の{案内係|あんないがかり}。",
+ "categoryId": "R01-A06-T01",
+ "tags": [
+  "resor",
+  "kollektivtrafik",
+  "fråga"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.forseningar-och-trafikstorningar"
+ ],
+ "related": [],
+ "recommendedOrder": 607,
+ "words": [
+  {
+   "senseId": "s.riktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åt-vilket-håll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åt-andra-hållet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mittemot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-andra-sidan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varifrån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjenummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.via.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ändstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hållplatsläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kliva-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kliva-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åka-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vilse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-sig-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stationsvärd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Yui frågar om vägen",
+  "paragraphs": [
+   "Yui ska ta sig till ett museum i en stad hon inte känner. Hon står vid hållplatsen och vet inte vilken buss hon ska ta.",
+   "– Ursäkta, varifrån går bussen till museet? frågar hon en kvinna.",
+   "– Du står fel. Den här bussen går åt andra hållet. Du måste stå på andra sidan gatan, mittemot kiosken.",
+   "– Vilket linjenummer ska jag ta?",
+   "– Ta 12, den går via torget. Den går från hållplatsläge B. Kliv av vid torget och byt till tunnelbanan.",
+   "I tunnelbanan vet Yui inte åt vilket håll hon ska åka. Hon frågar en stationsvärd.",
+   "– Ta tåget i riktning mot ändstationen Norra skogen. Det är tre stationer.",
+   "Yui kliver på tåget. Hon åkte fel i går och gick vilse, men i dag kommer hon fram."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart ska Yui?",
+    "options": [
+     "Till ett museum",
+     "Till skolan",
+     "Till flygplatsen",
+     "Till torget"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Yui ska ta sig till ett museum.",
+    "explanationJa": "{博物館|はくぶつかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Yui står på rätt sida av gatan från början.",
+    "correct": false,
+    "explanationSv": "Du står fel. Den här bussen går åt andra hållet.",
+    "explanationJa": "{反対側|はんたいがわ}に{立|た}つ{必要|ひつよう}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken buss ska Yui ta?",
+    "options": [
+     "12",
+     "4",
+     "B",
+     "3"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ta 12, den går via torget.",
+    "explanationJa": "12{番|ばん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vem frågar Yui i tunnelbanan?",
+    "options": [
+     "En kvinna",
+     "En stationsvärd",
+     "En busschaufför",
+     "En kontrollant"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon frågar en stationsvärd.",
+    "explanationJa": "{駅|えき}の{案内係|あんないがかり}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det gick bättre för Yui i dag än i går.",
+    "correct": true,
+    "explanationSv": "Hon åkte fel i går och gick vilse, men i dag kommer hon fram.",
+    "explanationJa": "{昨日|きのう}は{迷|まよ}いましたが、{今日|きょう}は{着|つ}きました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni övar på att fråga efter rätt buss eller tåg. En av er är turist och den andra hjälper till.",
+  "discussionPoints": [
+   "Ursäkta, varifrån går bussen till stationen?",
+   "Åt vilket håll ska jag åka?",
+   "Har du gått vilse någon gång?",
+   "Vem frågar du om du har åkt fel?"
+  ]
+ }
+}
