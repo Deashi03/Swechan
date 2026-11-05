@@ -27,5 +27,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
     css: false,
+    // content-wide tests iterate over every module word; they grow with the content
+    testTimeout: 60_000,
   },
 });
