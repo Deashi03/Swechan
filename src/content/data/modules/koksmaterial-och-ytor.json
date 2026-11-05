@@ -1,0 +1,169 @@
+{
+ "id": "m.koksmaterial-och-ytor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Köksmaterial och ytor",
+ "titleJa": "{台所|だいどころ}の{素材|そざい}と{表面|ひょうめん}",
+ "descriptionSv": "Material och ytor i köket: bänkskiva, diskbänk, kakel, rostfritt stål, marmor och repor.",
+ "descriptionJa": "{台所|だいどころ}の{素材|そざい}と{表面|ひょうめん}：{作業台|さぎょうだい}、{流|なが}し{台|だい}、タイル、ステンレス、{大理石|だいりせき}、ひっかき{傷|きず}。",
+ "categoryId": "R01-A01-T03",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.forvaringskarl-och-burkar"
+ ],
+ "related": [],
+ "recommendedOrder": 219,
+ "words": [
+  {
+   "senseId": "s.bänkskiva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diskho.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diskbänk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kakel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rostfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laminat.1",
+   "active": false
+  },
+  {
+   "senseId": "s.marmor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.granit.1",
+   "active": false
+  },
+  {
+   "senseId": "s.repa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.repig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.värmetålig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lättskött.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torka-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläckig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett nytt kök?",
+  "paragraphs": [
+   "Köket i radhuset är gammalt. Bänkskivan av laminat är repig och fläckig. Aiko och Erik funderar på att bygga om.",
+   "De går till en köksaffär. Där finns bänkskivor av trä, marmor och granit. ”Marmor är vackert, men det blir lätt fläckar”, säger säljaren. ”Granit är mycket hårt och värmetåligt.”",
+   "Erik tycker om trä. ”Men trä måste man olja ofta”, säger säljaren. ”Laminat är billigt och lättskött, men man får lätt repor.”",
+   "Diskbänken ska vara av rostfritt stål, med en stor diskho. Bakom spisen vill Aiko ha vitt kakel. ”Det är lätt att torka av”, säger hon.",
+   "De räknar på priset. Ett helt nytt kök är dyrt. Till slut bestämmer de sig för att bara byta bänkskivan och kaklet.",
+   "”Resten får vänta”, säger Erik. ”Köket fungerar ju.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur ser den gamla bänkskivan ut?",
+    "options": [
+     "Ny och fin",
+     "Av marmor",
+     "Av granit",
+     "Repig och fläckig"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Bänkskivan av laminat är repig och fläckig.",
+    "explanationJa": "{古|ふる}い{作業台|さぎょうだい}は{傷|きず}だらけでしみがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad säger säljaren om granit?",
+    "options": [
+     "Det får lätt fläckar.",
+     "Man måste olja det ofta.",
+     "Det är billigt.",
+     "Det är mycket hårt och värmetåligt."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Säljaren säger att granit är mycket hårt och värmetåligt.",
+    "explanationJa": "{御影石|みかげいし}はとても{固|かた}くて{熱|ねつ}に{強|つよ}いと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Diskbänken ska vara av trä.",
+    "correct": false,
+    "explanationSv": "Diskbänken ska vara av rostfritt stål.",
+    "explanationJa": "{流|なが}し{台|だい}はステンレスにします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför vill Aiko ha kakel bakom spisen?",
+    "options": [
+     "Det är billigt.",
+     "Det är varmt.",
+     "Det är mjukt.",
+     "Det är lätt att torka av."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko säger att kakel är lätt att torka av.",
+    "explanationJa": "ふき{取|と}りやすいからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De bygger ett helt nytt kök.",
+    "correct": false,
+    "explanationSv": "Ett helt nytt kök är dyrt, så de byter bara bänkskivan och kaklet.",
+    "explanationJa": "{全部|ぜんぶ}{新|あたら}しくするのは{高|たか}いので、{作業台|さぎょうだい}とタイルだけ{替|か}えます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om material i köket: trä, sten, stål och laminat, vad som är lättskött, och hur ett japanskt kök ser ut.",
+  "discussionPoints": [
+   "Vilket material har din bänkskiva?",
+   "Vilket material skulle du välja till ett nytt kök? Varför?",
+   "Hur ser ett vanligt japanskt kök ut?",
+   "Vad är viktigast i ett kök: utseende eller att det är lättskött?"
+  ]
+ }
+}
