@@ -1,0 +1,169 @@
+{
+ "id": "m.dusch-och-badkar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Dusch och badkar",
+ "titleJa": "シャワーと{浴槽|よくそう}",
+ "descriptionSv": "Dusch och badkar: duscha, bada, varmvatten, vattentryck, imma och att halka.",
+ "descriptionJa": "シャワーとバスタブ：シャワーを{浴|あ}びる、お{風呂|ふろ}に{入|はい}る、お{湯|ゆ}、{水圧|すいあつ}、くもり、{滑|すべ}ること。",
+ "categoryId": "R01-A01-T04",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.toalett-och-handfat"
+ ],
+ "related": [],
+ "recommendedOrder": 223,
+ "words": [
+  {
+   "senseId": "s.dusch.1",
+   "active": true
+  },
+  {
+   "senseId": "s.duscha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.duschkabin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.duschdraperi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.duschmunstycke.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.badkar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skumbad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.varmvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattentryck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kalldusch.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stänka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.imma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rinna.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Badkar eller dusch?",
+  "paragraphs": [
+   "I Japan badar många varje kväll. Aiko saknar det. ”I Sverige duschar alla bara”, säger hon. Därför är hon glad att radhuset har ett badkar.",
+   "På fredag tar Aiko ett skumbad med levande ljus. Badrummet blir varmt, och det blir imma på spegeln.",
+   "Erik duschar alltid, men duschen är gammal. Vattentrycket är svagt, och ibland är varmvattnet slut. ”Jag fick en kalldusch i morse”, klagar han.",
+   "De byter duschmunstycket och köper ett nytt duschdraperi. ”I mitt förra hem hade jag en duschkabin”, säger Erik. ”Den var lättare att hålla ren.”",
+   "När Eriks systers barn badar, stänker de vatten överallt. En av dem halkar på det blöta golvet, men det går bra.",
+   "Efter badet rinner vattnet långsamt ur badkaret. ”Det är något fel”, säger Erik. ”Det får vi titta på.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför är Aiko glad att radhuset har ett badkar?",
+    "options": [
+     "Hon tycker inte om att duscha.",
+     "Badkaret är nytt.",
+     "Erik vill bada.",
+     "Hon saknar att bada som i Japan."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I Japan badar många varje kväll, och Aiko saknar det.",
+    "explanationJa": "{日本|にほん}のように{毎晩|まいばん}お{風呂|ふろ}に{入|はい}りたいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är problemet med duschen?",
+    "options": [
+     "Den är för stor.",
+     "Den har ingen kran.",
+     "Den läcker.",
+     "Vattentrycket är svagt, och ibland är varmvattnet slut."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Vattentrycket är svagt, och ibland är varmvattnet slut.",
+    "explanationJa": "{水圧|すいあつ}が{弱|よわ}く、ときどきお{湯|ゆ}が{出|で}ません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik fick en kalldusch i morse.",
+    "correct": true,
+    "explanationSv": "Han klagar: ”Jag fick en kalldusch i morse.”",
+    "explanationJa": "{今朝|けさ}{冷|つめ}たいシャワーを{浴|あ}びたと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför halkar ett av barnen?",
+    "options": [
+     "Golvet är blött.",
+     "Badkaret är fullt.",
+     "Det är mörkt.",
+     "Duschdraperiet är borta."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Barnen stänker vatten, och ett av dem halkar på det blöta golvet.",
+    "explanationJa": "{床|ゆか}がぬれていたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är något problem med badkaret.",
+    "correct": true,
+    "explanationSv": "Vattnet rinner långsamt ur badkaret, och Erik säger att det är något fel.",
+    "explanationJa": "お{湯|ゆ}がゆっくりしか{流|なが}れないので、{排水|はいすい}に{問題|もんだい}があります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att bada och duscha: japanska och svenska vanor, ofuro och dusch, och vad som är det bästa med badrummet.",
+  "discussionPoints": [
+   "Badar eller duschar du helst?",
+   "Hur skiljer sig ett japanskt badrum från ett svenskt?",
+   "Hur ofta badar man i Japan, och varför?",
+   "Har du testat bastu och kalldusch?"
+  ]
+ }
+}

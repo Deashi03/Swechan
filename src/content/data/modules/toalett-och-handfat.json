@@ -1,0 +1,169 @@
+{
+ "id": "m.toalett-och-handfat",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Toalett och handfat",
+ "titleJa": "トイレと{洗面台|せんめんだい}",
+ "descriptionSv": "Toalett och handfat: spola, toalettpapper, tvål, upptagen och hygien.",
+ "descriptionJa": "トイレと{洗面台|せんめんだい}：{水|みず}を{流|なが}す、トイレットペーパー、{石|せっ}けん、{使用中|しようちゅう}、{衛生|えいせい}。",
+ "categoryId": "R01-A01-T04",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.sakerhet-i-koket"
+ ],
+ "related": [],
+ "recommendedOrder": 222,
+ "words": [
+  {
+   "senseId": "s.toalett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.toalettstol.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gästtoalett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spola.1",
+   "active": true
+  },
+  {
+   "senseId": "s.toalettpapper.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pappershållare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.toalettborste.1",
+   "active": false
+  },
+  {
+   "senseId": "s.handfat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvättställ.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tvål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hygien.1",
+   "active": true
+  },
+  {
+   "senseId": "s.papperskorg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upptagen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.potta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.torkpapper.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Två toaletter",
+  "paragraphs": [
+   "I lägenheten hade Aiko och Erik bara en toalett. På morgonen var den alltid upptagen. Radhuset har en gästtoalett också, nära hallen.",
+   "Badrummet har en toalettstol, ett tvättställ med en stor spegel och en dusch. På gästtoaletten finns bara toalett och ett litet handfat.",
+   "”I Japan har många toaletter knappar och varm sits”, säger Aiko. ”Här spolar man bara.” Erik skrattar.",
+   "De köper tvål, toalettpapper och torkpapper. Erik sätter upp en pappershållare och ställer en toalettborste bredvid toaletten.",
+   "Eriks syster kommer på besök med sin dotter. Flickan är tre år och använder fortfarande en potta. ”God hygien är viktigt”, säger systern och tvättar dotterns händer med tvål.",
+   "På dörren till gästtoaletten sätter Aiko en lapp: ”Släng inte papper i toaletten, utan i papperskorgen.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför var det svårt på morgonen i lägenheten?",
+    "options": [
+     "Det fanns inget vatten.",
+     "Toaletten var alltid upptagen.",
+     "Toaletten var trasig.",
+     "Det fanns ingen spegel."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De hade bara en toalett, och den var alltid upptagen.",
+    "explanationJa": "トイレが1つしかなく、いつも{使用中|しようちゅう}だったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad finns på gästtoaletten?",
+    "options": [
+     "En dusch och ett badkar",
+     "En toalett och ett litet handfat",
+     "En tvättmaskin",
+     "Ett stort tvättställ med spegel"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På gästtoaletten finns bara toalett och ett litet handfat.",
+    "explanationJa": "{来客用|らいきゃくよう}トイレには{便器|べんき}と{小|ちい}さな{洗面台|せんめんだい}しかありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko säger att toaletter i Japan ofta har varm sits.",
+    "correct": true,
+    "explanationSv": "Hon säger att många toaletter i Japan har knappar och varm sits.",
+    "explanationJa": "{日本|にほん}のトイレは{便座|べんざ}が{温|あたた}かいことが{多|おお}いと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad använder systerns dotter?",
+    "options": [
+     "En toalettborste",
+     "En potta",
+     "En gästtoalett",
+     "En papperskorg"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Flickan använder fortfarande en potta.",
+    "explanationJa": "{女|おんな}の{子|こ}はまだおまるを{使|つか}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko vill att gästerna slänger papper i toaletten.",
+    "correct": false,
+    "explanationSv": "Hon skriver att man inte ska slänga papper i toaletten, utan i papperskorgen.",
+    "explanationJa": "{紙|かみ}はトイレではなくごみ{箱|ばこ}に{捨|す}てるように{書|か}いています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om toaletter och badrum: skillnader mellan japanska och svenska toaletter, hygien, och vad man har i ett badrum.",
+  "discussionPoints": [
+   "Hur många toaletter har du hemma?",
+   "Vad är speciellt med japanska toaletter?",
+   "Vad tycker du om svenska toaletter?",
+   "Hur lär man barn att använda toaletten i Japan?"
+  ]
+ }
+}
