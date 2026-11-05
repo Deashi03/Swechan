@@ -1,0 +1,170 @@
+{
+ "id": "m.satta-pa-och-stanga-av",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Sätta på och stänga av",
+ "titleJa": "つけることと{消|け}すこと",
+ "descriptionSv": "Att sätta på och stänga av: slå på, slå av, volym, skruva upp, skruva ner, ljudlös, trycka på, fjärrkontroll, kontakt, sätta i, dra ur, ladda och laddare.",
+ "descriptionJa": "つける・{消|け}す：スイッチを{入|い}れる・{切|き}る、{音量|おんりょう}、{上|あ}げる・{下|さ}げる、マナーモード、ボタンを{押|お}す、リモコン、プラグ、{差|さ}す・{抜|ぬ}く、{充電|じゅうでん}、{充電器|じゅうでんき}。",
+ "categoryId": "R01-A04-T04",
+ "tags": [
+  "vardag",
+  "verb"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.ta-fram-och-lagga-undan"
+ ],
+ "related": [],
+ "recommendedOrder": 424,
+ "words": [
+  {
+   "senseId": "s.sätta-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stänga-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skruva-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skruva-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljudlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trycka-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrkontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sätta-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Allt på samtidigt",
+  "paragraphs": [
+   "När Erik kommer hem är alla lampor tända, tv:n och radion är på, och datorn står på. ”Varför är allt på?” frågar han.",
+   "Leo hittar inte fjärrkontrollen, så han kan inte stänga av tv:n. Han får trycka på knappen på själva tv:n.",
+   "Mia lyssnar på musik. ”Skruva ner volymen!” säger Erik. Hon skruvar ner den lite, men sedan vill hon skruva upp den igen.",
+   "Erik går runt och slår av lamporna. ”Den som går ut ur ett rum ska slå av ljuset, och slå på det bara när man behöver”, säger han.",
+   "Aikos mobil är nästan död. Hon måste ladda den. ”Var är min laddare?” Hon ska sätta i kontakten, men uttaget är fullt. Hon får dra ur kontakten till brödrosten först.",
+   "På kvällen har alla mobilen på ljudlöst. Bara Erik vill sätta på radion en stund innan han somnar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är på när Erik kommer hem?",
+    "options": [
+     "Bara tv:n",
+     "Lamporna, tv:n, radion och datorn",
+     "Ingenting",
+     "Bara lamporna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Alla lampor är tända, tv:n och radion är på, och datorn står på.",
+    "explanationJa": "{電気|でんき}、テレビ、ラジオ、パソコンです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför kan Leo inte stänga av tv:n med fjärrkontrollen?",
+    "options": [
+     "Den är trasig.",
+     "Han hittar inte fjärrkontrollen.",
+     "Den har inget batteri.",
+     "Mia har den."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Leo hittar inte fjärrkontrollen.",
+    "explanationJa": "リモコンが{見|み}つからないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia vill ha låg volym.",
+    "correct": false,
+    "explanationSv": "Sedan vill hon skruva upp den igen.",
+    "explanationJa": "また{音量|おんりょう}を{上|あ}げたいです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad måste Aiko göra innan hon kan ladda mobilen?",
+    "options": [
+     "Dra ur kontakten till brödrosten",
+     "Köpa en ny laddare",
+     "Slå på lampan",
+     "Stänga av datorn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon får dra ur kontakten till brödrosten först.",
+    "explanationJa": "トースターのプラグを{抜|ぬ}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik vill spara el.",
+    "correct": true,
+    "explanationSv": "Erik går runt och slår av lamporna.",
+    "explanationJa": "{電気|でんき}を{消|け}して{回|まわ}ります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att sätta på och stänga av saker hemma: lampor, tv, mobil och laddare.",
+  "discussionPoints": [
+   "Vad sätter du på först när du kommer hem?",
+   "Stänger du av mobilen på natten?",
+   "Har du ofta problem med laddare?",
+   "Hur sparar du el hemma?"
+  ]
+ }
+}
