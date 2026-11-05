@@ -1,0 +1,169 @@
+{
+ "id": "m.pendla-hemifran",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Pendla hemifrån",
+ "titleJa": "{家|いえ}からの{通勤|つうきん}",
+ "descriptionSv": "Att pendla: pendlare, restid, dörr till dörr, rusningstid, trängsel, samåka, cykelpendla, jobba hemifrån och podd.",
+ "descriptionJa": "{通勤|つうきん}：{通勤者|つうきんしゃ}、{移動時間|いどうじかん}、ドア・ツー・ドア、ラッシュアワー、{混雑|こんざつ}、{相乗|あいの}り、{自転車通勤|じてんしゃつうきん}、{在宅勤務|ざいたくきんむ}、ポッドキャスト。",
+ "categoryId": "R01-A04-T02",
+ "tags": [
+  "vardag"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.frukost-pa-morgonen"
+ ],
+ "related": [],
+ "recommendedOrder": 411,
+ "words": [
+  {
+   "senseId": "s.pendla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pendlare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pendling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.restid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dörr-till-dörr.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rusningstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trängsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidsödande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.smidig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samåka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.cykelpendla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hemifrån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jobba-hemifrån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemmakontor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.podd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Till jobbet",
+  "paragraphs": [
+   "Erik pendlar till Uppsala varje dag. Han går hemifrån halv sju. Restiden är en timme dörr till dörr.",
+   "I rusningstid är det trängsel. Erik får sällan sitta. Han lyssnar på en podd för att tiden ska gå fortare.",
+   "Ibland samåker han med en kollega. Det är smidigt, men bilköerna är tidsödande.",
+   "Aiko jobbar närmare. På sommaren cykelpendlar hon. ”Det är min träning”, säger hon.",
+   "På fredagar jobbar Aiko hemifrån. Hon har ett litet hemmakontor i sovrummet. Då behöver hon inte tänka på pendlingen.",
+   "Många pendlare vill jobba hemifrån oftare. ”Men jag saknar mina kollegor”, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång är Eriks restid?",
+    "options": [
+     "En timme",
+     "En halvtimme",
+     "Två timmar",
+     "Tjugo minuter"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Restiden är en timme dörr till dörr.",
+    "explanationJa": "1{時間|じかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Erik på tåget?",
+    "options": [
+     "Han lyssnar på en podd.",
+     "Han sover.",
+     "Han jobbar.",
+     "Han äter frukost."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han lyssnar på en podd för att tiden ska gå fortare.",
+    "explanationJa": "ポッドキャストを{聞|き}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko cykelpendlar på vintern.",
+    "correct": false,
+    "explanationSv": "På sommaren cykelpendlar hon.",
+    "explanationJa": "{夏|なつ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var har Aiko sitt hemmakontor?",
+    "options": [
+     "I köket",
+     "I källaren",
+     "I sovrummet",
+     "I vardagsrummet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon har ett litet hemmakontor i sovrummet.",
+    "explanationJa": "{寝室|しんしつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik vill inte jobba hemifrån hela tiden.",
+    "correct": true,
+    "explanationSv": "”Men jag saknar mina kollegor”, säger Erik.",
+    "explanationJa": "{同僚|どうりょう}がいなくてさびしいです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att pendla och jobba hemifrån: restid, rusningstid och vad ni gör under resan.",
+  "discussionPoints": [
+   "Hur tar du dig till jobbet eller skolan?",
+   "Hur lång är din restid?",
+   "Vad gör du när du pendlar?",
+   "Jobbar du hemifrån ibland? Vad tycker du om det?"
+  ]
+ }
+}

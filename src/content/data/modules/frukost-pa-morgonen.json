@@ -1,0 +1,170 @@
+{
+ "id": "m.frukost-pa-morgonen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Frukost på morgonen",
+ "titleJa": "{朝|あさ}の{朝食|ちょうしょく}",
+ "descriptionSv": "Frukost på morgonen: frukostdags, laga och äta frukost, duka fram, hälla upp, rostat bröd, i lugn och ro, på språng och lunchlåda.",
+ "descriptionJa": "{朝|あさ}ごはん：{朝食|ちょうしょく}の{時間|じかん}、{朝食|ちょうしょく}を{作|つく}る・{食|た}べる、{並|なら}べる、{注|つ}ぐ、トースト、ゆっくり、{急|いそ}いで、お{弁当|べんとう}。",
+ "categoryId": "R01-A04-T02",
+ "tags": [
+  "vardag",
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.gora-sig-i-ordning"
+ ],
+ "related": [],
+ "recommendedOrder": 410,
+ "words": [
+  {
+   "senseId": "s.frukostdags.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laga-frukost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äta-frukost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frukostbord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fil.1",
+   "active": false
+  },
+  {
+   "senseId": "s.duka-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälla-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rostat-bröd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ostskiva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-lugn-och-ro.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-språng.1",
+   "active": false
+  },
+  {
+   "senseId": "s.näringsrik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matsäck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lunchlåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-med-sig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vardag och söndag",
+  "paragraphs": [
+   "På vardagar är det frukostdags klockan sju. Aiko dukar fram fil, flingor, bröd och ost. Erik häller upp kaffe.",
+   "Leo vill ha rostat bröd med två ostskivor. Mia äter ofta på språng: en macka på väg till bussen.",
+   "”En näringsrik frukost är viktig”, säger Aiko. ”Ät frukost ordentligt!”",
+   "Aiko packar en lunchlåda åt sig själv, och Leo ska ta med sig matsäck till skolans utflykt.",
+   "På söndagar är det Erik som lagar frukost: ägg, gröt och nybakat bröd. Frukostbordet är fullt.",
+   "Då äter familjen i lugn och ro och pratar länge. ”Det här är veckans bästa stund”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad dukar Aiko fram på vardagar?",
+    "options": [
+     "Ägg och gröt",
+     "Pizza",
+     "Rostat bröd och juice",
+     "Fil, flingor, bröd och ost"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko dukar fram fil, flingor, bröd och ost.",
+    "explanationJa": "フィール、シリアル、パン、チーズです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur äter Mia ofta frukost?",
+    "options": [
+     "På språng",
+     "I lugn och ro",
+     "I sängen",
+     "På jobbet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mia äter ofta på språng.",
+    "explanationJa": "{急|いそ}いで{食|た}べます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo ska ta med sig matsäck till en utflykt.",
+    "correct": true,
+    "explanationSv": "Leo ska ta med sig matsäck till skolans utflykt.",
+    "explanationJa": "{遠足|えんそく}にお{弁当|べんとう}を{持|も}っていきます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vem lagar frukost på söndagar?",
+    "options": [
+     "Aiko",
+     "Mia",
+     "Erik",
+     "Mormor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På söndagar är det Erik som lagar frukost.",
+    "explanationJa": "エリックです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Familjen tycker om söndagsfrukosten.",
+    "correct": true,
+    "explanationSv": "”Det här är veckans bästa stund.”",
+    "explanationJa": "{一週間|いっしゅうかん}で{一番|いちばん}いい{時間|じかん}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om frukost på vardagar och helger, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vad äter du till frukost?",
+   "Hinner du äta frukost i lugn och ro på vardagar?",
+   "Tar du med dig lunchlåda till jobbet eller skolan?",
+   "Hur ser en vanlig japansk frukost ut?"
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "m.vakna-och-stiga-upp",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Vakna och stiga upp",
+ "titleJa": "{目覚|めざ}めと{起床|きしょう}",
+ "descriptionSv": "Att vakna och stiga upp: stiga upp, kliva ur sängen, snooza, försova sig, gäspa, sträcka på sig, sömnig och pigg.",
+ "descriptionJa": "{目覚|めざ}めと{起床|きしょう}：{起|お}きる、ベッドから{出|で}る、スヌーズ、{寝坊|ねぼう}、あくび、{伸|の}び、{眠|ねむ}い、すっきり。",
+ "categoryId": "R01-A04-T02",
+ "tags": [
+  "vardag"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.boka-och-andra-en-tid"
+ ],
+ "related": [],
+ "recommendedOrder": 408,
+ "words": [
+  {
+   "senseId": "s.stiga-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kliva-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snooza.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försova-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gäspa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträcka-på-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömnig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yrvaken.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pigg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-morse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.morgonsol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.morgonhumör.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidigt-uppe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-sista-minuten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vända-sig.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En vanlig morgon",
+  "paragraphs": [
+   "Väckarklockan ringer klockan sex. Erik snoozar, vänder sig och somnar igen. Han har alltid dåligt morgonhumör.",
+   "Aiko är tidigt uppe. Hon stiger upp, sträcker på sig och drar upp rullgardinen. Morgonsolen lyser in. Hon är pigg direkt.",
+   "Leo kliver ur sängen och kommer yrvaken till köket. Han gäspar och är fortfarande sömnig.",
+   "Mia har sovmorgon, för skolan börjar senare i dag.",
+   "I morse försov sig Erik. Han hann till bussen i sista minuten, utan frukost.",
+   "”I morgon ska jag stiga upp när väckarklockan ringer”, säger han. Aiko skrattar. Det säger han varje dag."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Erik när väckarklockan ringer?",
+    "options": [
+     "Han stiger upp direkt.",
+     "Han snoozar.",
+     "Han duschar.",
+     "Han äter frukost."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik snoozar, vänder sig och somnar igen.",
+    "explanationJa": "スヌーズします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur är Aiko på morgonen?",
+    "options": [
+     "Sömnig",
+     "Yrvaken",
+     "Pigg direkt",
+     "På dåligt morgonhumör"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon är pigg direkt.",
+    "explanationJa": "すぐに{元気|げんき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo är pigg när han kommer till köket.",
+    "correct": false,
+    "explanationSv": "Han gäspar och är fortfarande sömnig.",
+    "explanationJa": "まだ{眠|ねむ}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad hände med Erik i morse?",
+    "options": [
+     "Han kom för sent till skolan.",
+     "Han var tidigt uppe.",
+     "Han åt en stor frukost.",
+     "Han försov sig."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I morse försov sig Erik.",
+    "explanationJa": "{寝坊|ねぼう}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik brukar stiga upp när väckarklockan ringer.",
+    "correct": false,
+    "explanationSv": "Det säger han varje dag.",
+    "explanationJa": "{毎日同|まいにちおな}じことを{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om morgnar: när ni stiger upp, om ni är pigga eller sömniga, och om att snooza.",
+  "discussionPoints": [
+   "När stiger du upp på vardagar?",
+   "Brukar du snooza?",
+   "Är du pigg eller sömnig på morgonen?",
+   "Har du någon gång försovit dig till något viktigt?"
+  ]
+ }
+}

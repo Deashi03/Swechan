@@ -1,0 +1,169 @@
+{
+ "id": "m.morgon-och-kvallsvanor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Morgon- och kvällsvanor",
+ "titleJa": "{朝|あさ}と{夜|よる}の{習慣|しゅうかん}",
+ "descriptionSv": "Vanor: morgonmänniska, kvällsmänniska, nattuggla, morgonrutin, kvällsrutin, regelbunden, sovmorgon, ovana, för det mesta, sällan och undantag.",
+ "descriptionJa": "{習慣|しゅうかん}：{朝型|あさがた}、{夜型|よるがた}、{夜|よ}ふかし、{朝|あさ}・{夜|よる}の{習慣|しゅうかん}、{規則正|きそくただ}しい、ゆっくり{寝|ね}られる{朝|あさ}、{悪|わる}い{癖|くせ}、たいてい、めったに〜ない、{例外|れいがい}。",
+ "categoryId": "R01-A04-T02",
+ "tags": [
+  "vardag"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.lagga-sig-och-somna"
+ ],
+ "related": [],
+ "recommendedOrder": 414,
+ "words": [
+  {
+   "senseId": "s.morgonmänniska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvällsmänniska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nattuggla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.morgonrutin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvällsrutin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ritual.1",
+   "active": false
+  },
+  {
+   "senseId": "s.regelbunden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oregelbunden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sovmorgon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ovana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bryta-en-vana.1",
+   "active": false
+  },
+  {
+   "senseId": "s.för-det-mesta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oftast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.då-och-då.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undantag.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Olika vanor",
+  "paragraphs": [
+   "Aiko är en riktig morgonmänniska. Hon vaknar för det mesta klockan sex, även på helgen. Hennes morgonrutin är träning, dusch och te.",
+   "Erik är tvärtom en kvällsmänniska. Han har oregelbundna tider på jobbet och vill gärna ha sovmorgon på lördagar.",
+   "Mia har blivit en nattuggla. Hon tittar på mobilen i sängen. ”Det är en ovana”, säger Aiko. ”Det är svårt att bryta en vana”, svarar Mia.",
+   "Leo har en regelbunden kvällsrutin: bad, pyjamas, godnattsaga och sedan sova. Det är nästan en ritual.",
+   "Oftast äter familjen middag tillsammans. De äter sällan framför tv:n, men då och då äter de ute.",
+   "Men på fredagar gör de ett undantag och äter pizza i soffan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är Aikos morgonrutin?",
+    "options": [
+     "Träning, dusch och te",
+     "Kaffe och tidning",
+     "Sovmorgon",
+     "Mobilen i sängen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hennes morgonrutin är träning, dusch och te.",
+    "explanationJa": "ヨガ、シャワー、お{茶|ちゃ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är Erik?",
+    "options": [
+     "En morgonmänniska",
+     "En nattuggla",
+     "En kvällsmänniska",
+     "Pigg på morgonen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik är tvärtom en kvällsmänniska.",
+    "explanationJa": "{夜型人間|よるがたにんげん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko tycker att det är bra att titta på mobilen i sängen.",
+    "correct": false,
+    "explanationSv": "”Det är en ovana”, säger Aiko.",
+    "explanationJa": "{悪|わる}い{癖|くせ}だと{思|おも}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur ser Leos kvällsrutin ut?",
+    "options": [
+     "Bad, pyjamas, godnattsaga och sova",
+     "Mobilen i sängen",
+     "Tv och pizza",
+     "Träning och te"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo har en regelbunden kvällsrutin: bad, pyjamas, godnattsaga och sedan sova.",
+    "explanationJa": "お{風呂|ふろ}、パジャマ、お{話|はなし}、そして{寝|ね}ることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Familjen äter alltid vid bordet.",
+    "correct": false,
+    "explanationSv": "Men på fredagar gör de ett undantag och äter pizza i soffan.",
+    "explanationJa": "{金曜日|きんようび}は{例外|れいがい}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vanor på morgonen och kvällen: om ni är morgon- eller kvällsmänniskor, rutiner och ovanor.",
+  "discussionPoints": [
+   "Är du en morgonmänniska eller en kvällsmänniska?",
+   "Vilken morgonrutin har du?",
+   "Har du någon ovana som du vill bryta?",
+   "När brukar du göra ett undantag från dina vanor?"
+  ]
+ }
+}

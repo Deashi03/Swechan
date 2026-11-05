@@ -1,0 +1,169 @@
+{
+ "id": "m.lagga-sig-och-somna",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Lägga sig och somna",
+ "titleJa": "{寝|ね}ることと{眠|ねむ}りにつくこと",
+ "descriptionSv": "Att lägga sig och somna: läggdags, natta, stoppa om, godnattsaga, nattlampa, gosedjur, god natt, ligga vaken, somna om, drömma och snarka.",
+ "descriptionJa": "{就寝|しゅうしん}：{寝|ね}る{時間|じかん}、{寝|ね}かしつけ、{布団|ふとん}をかける、お{話|はなし}、{常夜灯|じょうやとう}、ぬいぐるみ、おやすみ、{眠|ねむ}れない、{二度寝|にどね}、{夢|ゆめ}、いびき。",
+ "categoryId": "R01-A04-T02",
+ "tags": [
+  "vardag"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kvallsmat-och-nedvarvning"
+ ],
+ "related": [],
+ "recommendedOrder": 413,
+ "words": [
+  {
+   "senseId": "s.lägga-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läggdags.1",
+   "active": true
+  },
+  {
+   "senseId": "s.natta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stoppa-om.1",
+   "active": false
+  },
+  {
+   "senseId": "s.godnattsaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nattlampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gosedjur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.god-natt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sov-gott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vaken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ligga-vaken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.somna-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drömma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snarka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sova-över.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "God natt!",
+  "paragraphs": [
+   "Klockan åtta säger Aiko: ”Nu är det läggdags, Leo!” Leo borstar tänderna och tar på sig pyjamasen.",
+   "Erik nattar Leo. Han läser en godnattsaga och stoppar om honom. Leo håller sitt gosedjur och vill ha nattlampan tänd. ”God natt, sov gott!”",
+   "Mia ska sova över hos en kompis. ”Ring om du inte kan somna”, säger Aiko.",
+   "Erik och Aiko ska lägga sig klockan elva. Men Aiko ligger vaken länge. Hon tänker på jobbet.",
+   "Mitt i natten vaknar hon igen. Morfar sover hos dem och snarkar så att det hörs i hela huset. Hon kan inte somna om.",
+   "På morgonen frågar Leo: ”Var du vaken i natt? Jag drömde att jag kunde flyga!”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När är det läggdags för Leo?",
+    "options": [
+     "Klockan tio",
+     "Klockan elva",
+     "Klockan sju",
+     "Klockan åtta"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Klockan åtta säger Aiko: ”Nu är det läggdags, Leo!”",
+    "explanationJa": "8{時|じ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad vill Leo ha när han sover?",
+    "options": [
+     "Sitt gosedjur och nattlampan tänd",
+     "En kvällste",
+     "Musik",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo håller sitt gosedjur och vill ha nattlampan tänd.",
+    "explanationJa": "ぬいぐるみと{常夜灯|じょうやとう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia sover hemma den här natten.",
+    "correct": false,
+    "explanationSv": "Mia ska sova över hos en kompis.",
+    "explanationJa": "{友達|ともだち}の{家|いえ}に{泊|と}まります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför kan Aiko inte somna om?",
+    "options": [
+     "Leo gråter.",
+     "Nattlampan lyser.",
+     "Morfar snarkar.",
+     "Mia ringer."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Morfar sover hos dem och snarkar så att det hörs i hela huset.",
+    "explanationJa": "おじいちゃんがいびきをかくからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo sov bra.",
+    "correct": true,
+    "explanationSv": "”Jag drömde att jag kunde flyga!”",
+    "explanationJa": "{楽|たの}しい{夢|ゆめ}を{見|み}ました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kvällar och sömn: när ni lägger er, godnattsagor och om att inte kunna somna.",
+  "discussionPoints": [
+   "När lägger du dig på vardagar?",
+   "Läste någon godnattsagor för dig när du var liten?",
+   "Vad gör du om du inte kan somna?",
+   "Brukar du komma ihåg vad du drömmer?"
+  ]
+ }
+}
