@@ -89,6 +89,13 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
             </div>
             <p><SvText text={s.defSv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></p>
             <Ja text={s.defJa} as="p" className="muted" />
+            {s.explanation && (
+              <div className="card tint-primary stack-sm small" style={{ boxShadow: 'none' }}>
+                <div className="xsmall muted" style={{ fontWeight: 800 }}>Förklaring · <Ja text="{詳|くわ}しい{説明|せつめい}" /></div>
+                <div><SvText text={s.explanation.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></div>
+                <Ja text={s.explanation.ja} as="div" className="muted" />
+              </div>
+            )}
             {s.examples.map((ex, k) => (
               <div key={k} className="stack-sm" style={{ borderLeft: '3px solid var(--c-primary-tint)', paddingLeft: 10 }}>
                 <div className="row"><span className="grow"><SvText text={ex.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></span><SpeakButton text={ex.sv} label="Lyssna på meningen" /></div>

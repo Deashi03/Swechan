@@ -8,6 +8,7 @@ import { checkFurigana } from './furigana';
 import { entryOccursIn } from './morphology';
 import { allWordImages } from './images';
 import type { ContentRepository } from './repository';
+import { needsExplanation } from './schema';
 
 export type ContentIssue = { where: string; message: string };
 
@@ -45,6 +46,11 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
       ja(`${s.id}.defJa`, s.defJa);
       s.examples.forEach((x, i) => ja(`${s.id}.examples[${i}]`, x.ja));
       ja(`${s.id}.usageNote`, s.usageNote?.ja);
+      ja(`${s.id}.explanation`, s.explanation?.ja);
+      if (s.explanation) {
+        if (s.explanation.sv.trim() === s.defSv.trim()) add(`${s.id}.explanation`, 'Förklaringen får inte bara upprepa definitionen');
+        if (s.explanation.sv.length < 60) add(`${s.id}.explanation`, 'Förklaringen är för kort – förklara vad ordet betyder i praktiken och när det används');
+      }
       for (const r of s.synonyms ?? []) {
         if (!repo.getSense(r.senseId)) add(s.id, `Synonym pekar på okänd betydelse ${r.senseId}`);
         ja(`${s.id}.synonyms`, r.noteJa);
@@ -89,6 +95,8 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
       senseIds.add(w.senseId);
       const ref = repo.getSense(w.senseId);
       if (!ref) { add(m.id, `Okänd betydelse ${w.senseId}`); continue; }
+      if (needsExplanation(ref.entry.level) && !ref.sense.explanation)
+        add(m.id, `"${ref.entry.lemma}" (${ref.entry.level}) är svårt för en genomsnittlig elev i årskurs 9 och behöver en förklaring (explanation) på ${w.senseId}`);
       if (!entryOccursIn(fullText, ref.entry)) add(m.id, `Målordet "${ref.entry.lemma}" saknas i lästexten (ingen känd böjningsform hittades)`);
     }
     for (const q of body.reading.questions) {
