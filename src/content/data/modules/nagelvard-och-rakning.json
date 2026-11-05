@@ -1,0 +1,169 @@
+{
+ "id": "m.nagelvard-och-rakning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Nagelvård och rakning",
+ "titleJa": "ネイルケアとひげ{剃|そ}り",
+ "descriptionSv": "Nagelvård och rakning: nagelfil, fila, nagellack, manikyr, skägg, mustasch, skäggstubb, rakapparat, raklödder och vaxa.",
+ "descriptionJa": "ネイルケアとひげ{剃|そ}り：{爪|つめ}やすり、やすりをかける、マニキュア、ネイルケア、あごひげ、{口|くち}ひげ、{無精|ぶしょう}ひげ、{電気|でんき}かみそり、シェービングフォーム、ワックス{脱毛|だつもう}。",
+ "categoryId": "R01-A03-T06",
+ "tags": [
+  "skönhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.parfym-och-doft"
+ ],
+ "related": [],
+ "recommendedOrder": 341,
+ "words": [
+  {
+   "senseId": "s.nagelfil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fila.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nagelband.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nagellack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.manikyr.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pedikyr.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skägg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mustasch.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skäggstubb.1",
+   "active": false
+  },
+  {
+   "senseId": "s.orakad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rakapparat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trimmer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.raklödder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rakvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vaxa.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Badrummet på morgonen",
+  "paragraphs": [
+   "På morgonen är det kö till badrummet. Erik ska raka sig. Han har raklödder i ansiktet och en ny rakhyvel. Efteråt tar han lite rakvatten, och det svider.",
+   "Morfar har vitt skägg och en mustasch. Han använder en trimmer och en rakapparat i stället för rakhyvel.",
+   "På helgen är Erik orakad. ”Lite skäggstubb är okej”, säger Aiko.",
+   "Mia sitter vid köksbordet och filar naglarna med en nagelfil. Sedan målar hon dem med blått nagellack.",
+   "Aiko smörjer in nagelbanden med olja. Ibland går hon på manikyr, och till mormors födelsedag ger hon henne en pedikyr i present.",
+   "Mias kompis vill vaxa benen, men Mia tycker att det låter som att det gör ont."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad använder Erik för att raka sig?",
+    "options": [
+     "Rakapparat",
+     "Trimmer",
+     "Rakhyvel och raklödder",
+     "Nagelfil"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han har raklödder i ansiktet och en ny rakhyvel.",
+    "explanationJa": "カミソリとシェービングフォームです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ser morfar ut?",
+    "options": [
+     "Han har vitt skägg och mustasch.",
+     "Han är orakad.",
+     "Han har skäggstubb.",
+     "Han har inget skägg."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Morfar har vitt skägg och en mustasch.",
+    "explanationJa": "{白|しろ}いあごひげと{口|くち}ひげがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko tycker att lite skäggstubb är okej.",
+    "correct": true,
+    "explanationSv": "”Lite skäggstubb är okej”, säger Aiko.",
+    "explanationJa": "{少|すこ}しの{無精|ぶしょう}ひげはいいと{思|おも}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vilken färg har Mias nagellack?",
+    "options": [
+     "Rött",
+     "Rosa",
+     "Svart",
+     "Blått"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sedan målar hon dem med blått nagellack.",
+    "explanationJa": "{青|あお}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia vill också vaxa benen.",
+    "correct": false,
+    "explanationSv": "Mia tycker att det låter som att det gör ont.",
+    "explanationJa": "{痛|いた}そうだと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om nagelvård och rakning: vad ni gör varje dag och vad som är vanligt i Sverige och Japan.",
+  "discussionPoints": [
+   "Hur ofta klipper du naglarna?",
+   "Har du provat manikyr?",
+   "Vad tycker du om skägg?",
+   "Är det vanligt med skägg i Japan?"
+  ]
+ }
+}
