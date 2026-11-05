@@ -1,0 +1,173 @@
+{
+ "id": "m.krydda-och-smaka-av",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Krydda och smaka av",
+ "titleJa": "{味|あじ}つけ・{味見|あじみ}",
+ "descriptionSv": "Att krydda och smaka av: mått i recept, salta, peppra och få rätt smak.",
+ "descriptionJa": "{味|あじ}つけと{味見|あじみ}：レシピの{分量|ぶんりょう}、{塩|しお}・こしょう、ちょうどよい{味|あじ}にすること。",
+ "categoryId": "R01-A02-T03",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vispa-och-rora"
+ ],
+ "related": [],
+ "recommendedOrder": 117,
+ "words": [
+  {
+   "senseId": "s.krydda-verb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.peppra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.söta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smaka-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.provsmaka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.justera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fadd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smakrik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deciliter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matsked.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tesked.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryddmått.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nypa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinäger.1",
+   "active": false
+  },
+  {
+   "senseId": "s.senap.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett recept från mormor",
+  "paragraphs": [
+   "Aiko har fått ett gammalt recept från Eriks mormor: köttbullar med sås. Hon läser: ”Två deciliter mjölk, en tesked salt, ett kryddmått peppar.”",
+   "”Vad är ett kryddmått?” frågar hon. Erik visar måtten i lådan. ”Det minsta är ett kryddmått. Sedan kommer tesked och matsked.”",
+   "Aiko gör köttbullarna. Hon saltar och pepprar köttfärsen och rör i en nypa socker. ”Det står att man ska söta lite”, säger hon.",
+   "Sedan gör hon såsen. Hon provsmakar. ”Den är fadd”, säger hon. Erik smakar också. ”Smaka av med lite mer salt och en matsked soja”, säger han. Hon justerar, och nu blir såsen smakrik.",
+   "Erik gör en sallad och kryddar den med olja och vinäger. Till sist tar han fram senap. ”Mormor har alltid senap till köttbullarna”, säger han.",
+   "När de äter säger Erik: ”Det smakar precis som hos mormor!” Aiko är stolt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket mått är minst?",
+    "options": [
+     "Ett kryddmått",
+     "En tesked",
+     "En matsked",
+     "En deciliter"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Erik säger att det minsta är ett kryddmått.",
+    "explanationJa": "いちばん{小|ちい}さいのは kryddmått です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Aiko säger att såsen är ”fadd”. Vad menar hon?",
+    "options": [
+     "Den smakar nästan ingenting.",
+     "Den är för salt.",
+     "Den är för söt.",
+     "Den är för varm."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Fadd betyder att maten nästan inte smakar något.",
+    "explanationJa": "fadd は{味|あじ}がほとんどしないという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik säger att Aiko ska smaka av såsen med salt och soja.",
+    "correct": true,
+    "explanationSv": "Erik säger: ”Smaka av med lite mer salt och en matsked soja.”",
+    "explanationJa": "{塩|しお}としょうゆで{味|あじ}を{整|ととの}えるように{言|い}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad kryddar Erik salladen med?",
+    "options": [
+     "Senap",
+     "Socker",
+     "Olja och vinäger",
+     "Soja"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han kryddar salladen med olja och vinäger.",
+    "explanationJa": "オイルと{酢|す}で{味|あじ}をつけます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Köttbullarna blev inte som mormors.",
+    "correct": false,
+    "explanationSv": "Erik säger att det smakar precis som hos mormor.",
+    "explanationJa": "おばあちゃんの{味|あじ}とそっくりだと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Svenska receptmått: krm (1 ml), tsk (5 ml), msk (15 ml), dl (100 ml)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att krydda och smaka av mat: mått i svenska och japanska recept, hur du vet att maten är färdig, och kryddor du alltid använder.",
+  "discussionPoints": [
+   "Följer du recept noga, eller smakar du dig fram?",
+   "Vilka mått använder man i japanska recept?",
+   "Vad gör du när maten är fadd?",
+   "Vilka smaker är viktigast i japansk mat?"
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "id": "m.steka-och-bryna",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Steka och bryna",
+ "titleJa": "{焼|や}く・{焼|や}き{色|いろ}をつける",
+ "descriptionSv": "Att steka mat i panna: fett, värme, att vända, bryna och inte bränna maten.",
+ "descriptionJa": "フライパンで{焼|や}くこと：{油|あぶら}、{火加減|ひかげん}、{裏返|うらがえ}す、{焼|や}き{色|いろ}をつける、{焦|こ}がさない。",
+ "categoryId": "R01-A02-T03",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.koka-och-sjuda",
+  "m.hallbarhet-och-forvaring"
+ ],
+ "related": [],
+ "recommendedOrder": 114,
+ "words": [
+  {
+   "senseId": "s.steka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stekpanna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.platta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smälta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fräsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bryna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gyllenbrun.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vända.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stekspade.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bränna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skvätta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.smet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omelett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pannkaka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Pannkakor och biff",
+  "paragraphs": [
+   "Det är fredag kväll, och Erik ska lära Aiko att steka svenska pannkakor. Han sätter stekpannan på den stora plattan och lägger i lite smör. Smöret smälter och börjar fräsa.",
+   "Erik häller i smeten. ”Pannkakan ska vara tunn”, säger han. Efter en stund vänder han den med en stekspade. Den är gyllenbrun.",
+   "Nu är det Aikos tur. Den första pannkakan bränner hon. ”Den första blir alltid dålig”, skrattar Erik. Den andra blir perfekt.",
+   "Till middag gör de också biff. Erik bryner köttet på hög värme. Fettet skvätter, och Aiko går ett steg bakåt. ”Akta så att du inte bränner dig!” säger Erik.",
+   "Sedan fräser han lök i samma panna. Det luktar mycket gott i hela köket.",
+   "På lördag morgon gör Aiko en omelett helt själv. ”Jag är inte så bra på att laga mat”, säger hon, ”men steka kan jag nu.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer med smöret i pannan?",
+    "options": [
+     "Det blir hårt.",
+     "Det bränns direkt.",
+     "Det smälter och börjar fräsa.",
+     "Det blir kallt."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Smöret smälter och börjar fräsa.",
+    "explanationJa": "バターが{溶|と}けてジュージューいい{始|はじ}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Erik ”vänder” pannkakan. Vad gör han?",
+    "options": [
+     "Han tar ut den ur pannan.",
+     "Han äter den.",
+     "Han gör den tunnare.",
+     "Han lägger den så att den andra sidan kommer upp."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Att vända är att lägga något så att den andra sidan kommer upp.",
+    "explanationJa": "vända は{反対側|はんたいがわ}を{上|うえ}にすることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aikos första pannkaka blir perfekt.",
+    "correct": false,
+    "explanationSv": "Hon bränner den första. Den andra blir perfekt.",
+    "explanationJa": "{最初|さいしょ}のは{焦|こ}がし、2{枚目|まいめ}がうまくいきました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför går Aiko ett steg bakåt?",
+    "options": [
+     "Det luktar illa.",
+     "Pannan är kall.",
+     "Erik vill ha plats.",
+     "Fettet skvätter."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Fettet skvätter när Erik bryner köttet.",
+    "explanationJa": "{油|あぶら}がはねたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko har lärt sig något under helgen.",
+    "correct": true,
+    "explanationSv": "Hon gör en omelett helt själv och säger att hon kan steka nu.",
+    "explanationJa": "{一人|ひとり}でオムレツを{作|つく}り、もう{焼|や}けると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att steka mat: vad du brukar steka, svenska pannkakor och japanska rätter som steks, och vad som kan gå fel i köket.",
+  "discussionPoints": [
+   "Vad steker du oftast?",
+   "Vilka japanska rätter steker man i panna?",
+   "Har du bränt maten någon gång? Vad hände?",
+   "Steker du hellre i smör eller i olja?"
+  ]
+ }
+}

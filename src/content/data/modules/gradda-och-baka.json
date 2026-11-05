@@ -1,0 +1,169 @@
+{
+ "id": "m.gradda-och-baka",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Grädda och baka",
+ "titleJa": "（オーブンで）{焼|や}く・パンを{焼|や}く",
+ "descriptionSv": "Att baka bröd och kakor: deg, jäst, knåda, kavla och grädda i ugnen.",
+ "descriptionJa": "パンやお{菓子|かし}を{焼|や}くこと：{生地|きじ}、イースト、こねる、のばす、オーブンで{焼|や}く。",
+ "categoryId": "R01-A02-T03",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.steka-och-bryna"
+ ],
+ "related": [],
+ "recommendedOrder": 115,
+ "words": [
+  {
+   "senseId": "s.bulle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jäst.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jäsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kavel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kavla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakplåt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.form.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grädda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ugnshandske.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kanelbulle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.limpa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sockerkaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tårta.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kanelbullens dag",
+  "paragraphs": [
+   "Den fjärde oktober är det kanelbullens dag i Sverige. Aiko och Erik vill baka egna kanelbullar.",
+   "Först gör de en deg av mjöl, mjölk, smör, socker och jäst. Aiko knådar degen i tio minuter. Sedan får den jäsa under en handduk. Efter en timme är den dubbelt så stor.",
+   "Erik kavlar ut degen med en kavel. Han har smör, socker och kanel på den, och sedan rullar han ihop den och skär bitar. Bullarna lägger de på en bakplåt.",
+   "De gräddar bullarna i tio minuter. Aiko tar ut plåten med en ugnshandske. Det luktar fantastiskt i köket.",
+   "Medan bullarna blir kalla bakar Erik en sockerkaka i en rund form. Aiko vill göra en tårta till hans mammas födelsedag nästa vecka. ”En tårta är svårare än en kaka”, säger Erik.",
+   "På kvällen ringer grannen på. ”Det luktar bullar ända ut i trappan!” Hon får två bullar och en skiva limpa med smör."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När är det kanelbullens dag?",
+    "options": [
+     "På midsommar",
+     "På jul",
+     "Den första maj",
+     "Den fjärde oktober"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den fjärde oktober är det kanelbullens dag.",
+    "explanationJa": "10{月|がつ}4{日|か}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Degen får ”jäsa”. Vad händer med den?",
+    "options": [
+     "Den blir hård.",
+     "Den blir svart.",
+     "Den blir mindre.",
+     "Den blir större."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Efter en timme är degen dubbelt så stor.",
+    "explanationJa": "1{時間|じかん}で{生地|きじ}が{倍|ばい}の{大|おお}きさになります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko kavlar ut degen.",
+    "correct": false,
+    "explanationSv": "Det är Erik som kavlar ut degen. Aiko knådar den.",
+    "explanationJa": "{生地|きじ}をのばすのはエリックで、アイコはこねます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför använder Aiko en ugnshandske?",
+    "options": [
+     "Plåten är het.",
+     "Hon har kalla händer.",
+     "Bullarna är mjuka.",
+     "Hon vill inte bli smutsig."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Man tar heta saker ur ugnen med en ugnshandske.",
+    "explanationJa": "{天板|てんばん}が{熱|あつ}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Grannen kom för att hon kände lukten av bullarna.",
+    "correct": true,
+    "explanationSv": "Hon säger att det luktar bullar ända ut i trappan.",
+    "explanationJa": "{階段|かいだん}までパンのにおいがしたと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Kanelbullens dag den 4 oktober (instiftad 1999 av Hembakningsrådet)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att baka: vad du bakar, svensk fika med kanelbullar och kakor, och bakverk i Japan.",
+  "discussionPoints": [
+   "Bakar du själv? Vad i så fall?",
+   "Har du ätit en svensk kanelbulle? Vad tyckte du?",
+   "Vilka bakverk är populära i Japan?",
+   "Vad äter man på en födelsedag i Japan och i Sverige?"
+  ]
+ }
+}
