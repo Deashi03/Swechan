@@ -1,0 +1,169 @@
+{
+ "id": "m.lunch-och-middag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Lunch och middag",
+ "titleJa": "{昼食|ちゅうしょく}と{夕食|ゆうしょく}",
+ "descriptionSv": "Lunch och middag i Sverige: dagens rätt, matlåda, skolmat, hämtmat och fredagsmys.",
+ "descriptionJa": "スウェーデンの{昼食|ちゅうしょく}と{夕食|ゆうしょく}：{日替|ひが}わり、お{弁当|べんとう}、{給食|きゅうしょく}、テイクアウト、{金曜日|きんようび}のくつろぎ。",
+ "categoryId": "R01-A02-T05",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.frukostmat-och-frukostvanor"
+ ],
+ "related": [],
+ "recommendedOrder": 127,
+ "words": [
+  {
+   "senseId": "s.måltid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lunchrast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matsal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skolmat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självservering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.personalrum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mikrovågsugn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dagens-rätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvällsmat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hämtmat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pizza.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äta-ute.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sällskap.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fredagsmys.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lunch på jobbet, middag hemma",
+  "paragraphs": [
+   "I Sverige är lunchen en varm måltid. På lunchrasten äter många dagens rätt på en restaurang nära jobbet.",
+   "Erik tar ofta med matlåda. Han mikrar den i mikrovågsugnen i personalrummet. ”Det står alltid kö till mikron klockan tolv”, säger han.",
+   "Aikos systerson går i skolan. Där är skolmaten gratis. Barnen äter i en stor matsal, och det är självservering.",
+   "Svenskar äter kvällsmat tidigt, ofta klockan sex. ”I Japan äter vi senare”, säger Aiko.",
+   "På fredag kväll har de fredagsmys. De äter tacos framför tv:n. Ibland tar de hämtmat, till exempel pizza.",
+   "På lördag ska de äta ute med vänner. ”Mat smakar bäst i sällskap”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad äter många svenskar på lunchrasten?",
+    "options": [
+     "Bara kaffe",
+     "Pizza hemma",
+     "Dagens rätt på en restaurang",
+     "Ingenting"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Många äter dagens rätt på en restaurang nära jobbet.",
+    "explanationJa": "{職場|しょくば}の{近|ちか}くのレストランで{日替|ひが}わりを{食|た}べます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var mikrar Erik sin matlåda?",
+    "options": [
+     "I matsalen",
+     "Hemma",
+     "I personalrummet",
+     "På restaurangen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han mikrar den i mikrovågsugnen i personalrummet.",
+    "explanationJa": "{休憩室|きゅうけいしつ}の{電子|でんし}レンジで{温|あたた}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Barnen måste betala för skolmaten.",
+    "correct": false,
+    "explanationSv": "Skolmaten är gratis.",
+    "explanationJa": "{給食|きゅうしょく}は{無料|むりょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad är fredagsmys?",
+    "options": [
+     "Att äta ute på fredag",
+     "Att laga mat till hela veckan",
+     "Att äta något gott och ha det skönt hemma på fredag kväll",
+     "En fest på jobbet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På fredagsmys äter man något gott, till exempel tacos, hemma.",
+    "explanationJa": "{金曜日|きんようび}の{夜|よる}に{家|いえ}でおいしいものを{食|た}べてくつろぐことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker om att äta tillsammans med andra.",
+    "correct": true,
+    "explanationSv": "Hon säger att mat smakar bäst i sällskap.",
+    "explanationJa": "{誰|だれ}かといっしょに{食|た}べるのがいちばんおいしいと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Kostnadsfri skollunch i svensk grundskola (skollagen)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om lunch och middag: vad man äter på jobbet och i skolan, när man äter middag i Sverige och i Japan, och svenska vanor som fredagsmys.",
+  "discussionPoints": [
+   "Vad äter du till lunch en vanlig dag?",
+   "Hur fungerar skolmat i Japan jämfört med Sverige?",
+   "När äter du middag, och med vem?",
+   "Vad tycker du om idén med fredagsmys?"
+  ]
+ }
+}

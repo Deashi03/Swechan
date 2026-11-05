@@ -1,0 +1,169 @@
+{
+ "id": "m.frukostmat-och-frukostvanor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Frukostmat och frukostvanor",
+ "titleJa": "{朝食|ちょうしょく}と{朝|あさ}の{習慣|しゅうかん}",
+ "descriptionSv": "Svensk frukost och morgonvanor: pålägg, macka, kaviar och att vara morgonpigg eller morgontrött.",
+ "descriptionJa": "スウェーデンの{朝食|ちょうしょく}と{朝|あさ}の{習慣|しゅうかん}：パンの{具|ぐ}、オープンサンド、たらこペースト、{朝型|あさがた}と{夜型|よるがた}。",
+ "categoryId": "R01-A02-T05",
+ "tags": [
+  "mat"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.beskriva-en-matratt"
+ ],
+ "related": [],
+ "recommendedOrder": 126,
+ "words": [
+  {
+   "senseId": "s.pålägg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.macka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brödrost.1",
+   "active": false
+  },
+  {
+   "senseId": "s.juice.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kaviar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leverpastej.1",
+   "active": false
+  },
+  {
+   "senseId": "s.äggkopp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kaffebryggare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.termos.1",
+   "active": false
+  },
+  {
+   "senseId": "s.snabbkaffe.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stressig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hoppa-över.1",
+   "active": true
+  },
+  {
+   "senseId": "s.morgonpigg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.morgontrött.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Två sorters morgnar",
+  "paragraphs": [
+   "Aiko är morgonpigg. Hon vaknar klockan sex, sätter på kaffebryggaren och ställer fram frukost i lugn och ro.",
+   "Erik är morgontrött. Han stänger av klockan tre gånger och kommer upp i sista minuten. Hans morgnar är alltid stressiga.",
+   "Aiko äter en svensk frukost: ett kokt ägg i en äggkopp, rostat bröd från brödrosten och ett glas juice. Hon breder smör på brödet och har kaviar på ägget. ”Kaviar är som tarako, men sötare”, säger hon.",
+   "Erik gör en macka med det pålägg som finns: ost och lite leverpastej. Han hinner inte dricka kaffe hemma, så han häller det i en termos och tar med sig.",
+   "Erik brukar hoppa över frukosten ibland. ”Det är inte bra”, säger Aiko. ”Frukost är dagens viktigaste måltid.”",
+   "På helgen har Erik tid. Då äter de frukost tillsammans i en timme. Men kaffet är snabbkaffe, för kaffebryggaren är trasig."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko först på morgonen?",
+    "options": [
+     "Hon stänger av klockan tre gånger.",
+     "Hon hoppar över frukosten.",
+     "Hon sätter på kaffebryggaren.",
+     "Hon dricker snabbkaffe."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko vaknar klockan sex och sätter på kaffebryggaren.",
+    "explanationJa": "6{時|じ}に{起|お}きて、コーヒーメーカーのスイッチを{入|い}れます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Erik är ”morgontrött”. Vad betyder det?",
+    "options": [
+     "Han tycker om morgnar.",
+     "Han har svårt att vakna på morgonen.",
+     "Han sover på dagen.",
+     "Han äter mycket till frukost."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Morgontrött betyder att man har svårt att vakna på morgonen.",
+    "explanationJa": "{朝|あさ}なかなか{起|お}きられないという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko har kaviar på ägget.",
+    "correct": true,
+    "explanationSv": "Hon har kaviar på ägget och säger att det är som tarako.",
+    "explanationJa": "{卵|たまご}にたらこペーストをのせています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför tar Erik med sig kaffet i en termos?",
+    "options": [
+     "Det är för varmt.",
+     "Aiko vill det.",
+     "Han tycker inte om kaffe.",
+     "Han hinner inte dricka det hemma."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han hinner inte dricka kaffe hemma.",
+    "explanationJa": "{家|いえ}で{飲|の}む{時間|じかん}がないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "På helgen dricker de kaffe från kaffebryggaren.",
+    "correct": false,
+    "explanationSv": "De dricker snabbkaffe, eftersom kaffebryggaren är trasig.",
+    "explanationJa": "コーヒーメーカーが{壊|こわ}れているので、インスタントです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om frukost: vad man äter i Sverige och i Japan, om du är morgonpigg eller morgontrött, och hur din morgon brukar se ut.",
+  "discussionPoints": [
+   "Vad äter du till frukost en vanlig dag?",
+   "Är du morgonpigg eller morgontrött?",
+   "Hur ser en traditionell japansk frukost ut?",
+   "Hoppar du ibland över frukosten? Varför?"
+  ]
+ }
+}

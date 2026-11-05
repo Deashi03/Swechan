@@ -1,0 +1,169 @@
+{
+ "id": "m.restaurangmenyer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Restaurangmenyer",
+ "titleJa": "レストランのメニュー",
+ "descriptionSv": "Ord på en restaurangmeny: förrätt, varmrätt, efterrätt, vinlista och specialitet.",
+ "descriptionJa": "レストランのメニューの{言葉|ことば}：{前菜|ぜんさい}、メイン、デザート、ワインリスト、{名物料理|めいぶつりょうり}。",
+ "categoryId": "R01-A02-T05",
+ "tags": [
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.portioner-och-tillbehor"
+ ],
+ "related": [],
+ "recommendedOrder": 130,
+ "words": [
+  {
+   "senseId": "s.meny.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urval.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.efterrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dessert.1",
+   "active": false
+  },
+  {
+   "senseId": "s.smårätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.barnmeny.1",
+   "active": false
+  },
+  {
+   "senseId": "s.specialitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rekommendera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinlista.1",
+   "active": false
+  },
+  {
+   "senseId": "s.alkoholfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avsmakningsmeny.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inklusive.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad står på menyn?",
+  "paragraphs": [
+   "För Aikos födelsedag går Erik och Aiko till en fin restaurang. Kocken ger dem menyn. Det finns ett stort urval.",
+   "Menyn har förrätter, varmrätter och efterrätter. Det finns också smårätter att dela och en barnmeny. ”Vad kan du rekommendera?” frågar Erik.",
+   "”Vår specialitet är lax från Norrland”, säger kocken. ”Och avsmakningsmenyn har sju rätter, inklusive dessert.”",
+   "Aiko väljer avsmakningsmenyn. Erik tar soppa till förrätt och lax som varmrätt.",
+   "Kocken ger dem vinlistan. Erik vill ha ett glas vitt vin. Aiko ska köra bil hem, så hon tar en alkoholfri dryck.",
+   "Efterrätten är en sorbet av lingon. ”Det här är den bästa födelsedagen”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför går de till restaurangen?",
+    "options": [
+     "Erik arbetar där.",
+     "De har inget hemma.",
+     "De ska träffa vänner.",
+     "Det är Aikos födelsedag."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "De går dit för Aikos födelsedag.",
+    "explanationJa": "アイコの{誕生日|たんじょうび}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är restaurangens specialitet?",
+    "options": [
+     "Köttbullar",
+     "Pizza",
+     "Sushi",
+     "Lax från Norrland"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Kocken säger att specialiteten är lax från Norrland.",
+    "explanationJa": "{店|みせ}の{名物|めいぶつ}はノルランド{産|さん}のサーモンです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Desserten ingår i avsmakningsmenyn.",
+    "correct": true,
+    "explanationSv": "Avsmakningsmenyn har sju rätter, inklusive dessert.",
+    "explanationJa": "テイスティングコースにはデザートが{含|ふく}まれています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför dricker Aiko något utan alkohol?",
+    "options": [
+     "Hon tycker inte om vin.",
+     "Hon är för ung.",
+     "Det finns inget vin.",
+     "Hon ska köra bil hem."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko ska köra bil hem.",
+    "explanationJa": "{車|くるま}を{運転|うんてん}して{帰|かえ}るからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tyckte om kvällen.",
+    "correct": true,
+    "explanationSv": "Hon säger att det är den bästa födelsedagen.",
+    "explanationJa": "{最高|さいこう}の{誕生日|たんじょうび}だと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om restaurangmenyer: förrätt, varmrätt och efterrätt, hur menyer ser ut i Japan och i Sverige, och vad du brukar välja.",
+  "discussionPoints": [
+   "Vad väljer du först när du läser en meny?",
+   "Hur ser en meny ut på en japansk restaurang?",
+   "Har du ätit en avsmakningsmeny? Hur var det?",
+   "Vilken efterrätt tycker du bäst om?"
+  ]
+ }
+}
