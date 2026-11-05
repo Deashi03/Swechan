@@ -297,6 +297,50 @@ export const MOTIFS: Record<string, Motif> = {
     p('M24 28 H54 C57 28 58 30 58 32 V46 C58 49 56 50 54 50 H50 V56 L42 50 H28 C25 50 24 48 24 46 Z', 'accent'),
     c(16, 25, 2, 'light'), c(24, 25, 2, 'light'), c(32, 25, 2, 'light'),
   ] },
+  // ── Kost & matkultur ────────────────────────────────────────
+  meatballs: { parts: [
+    p('M8 34 H56 C56 46 46 54 32 54 C18 54 8 46 8 34 Z', 'light'),
+    c(22, 30, 7, 'main', H.brown), c(34, 27, 7, 'main', H.brown), c(44, 32, 6, 'main', H.brown),
+    c(28, 36, 5, 'accent', H.red), c(39, 38, 3.5, 'accent', H.red),
+    p('M8 34 H56', 'line'),
+  ] },
+  sushi: { parts: [
+    q(6, 40, 52, 8, 'main', 3, H.brown),
+    q(10, 28, 20, 12, 'light', 4), p('M10 30 C14 24 26 24 30 30 V34 H10 Z', 'main', H.orange),
+    c(44, 32, 9, 'main', H.grey), c(44, 32, 6, 'light'), c(44, 32, 3, 'accent', H.red),
+    p('M14 12 L38 26 M20 10 L42 24', 'line'),
+  ] },
+  globe: { parts: [
+    c(32, 32, 22, 'main', H.blue),
+    p('M18 18 C24 20 26 26 22 30 C18 34 20 40 16 42 C12 36 12 24 18 18 Z', 'main', H.green),
+    p('M36 14 C42 16 46 22 44 28 C40 26 36 30 38 36 C34 40 30 36 32 30 C34 24 30 18 36 14 Z', 'main', H.green),
+    p('M40 44 C44 42 48 44 46 48 C42 50 38 48 40 44 Z', 'main', H.green),
+    c(26, 22, 2, 'light'),
+  ] },
+  warning: { parts: [
+    p('M32 6 L58 52 H6 Z', 'main', H.yellow), p('M32 14 L51 48 H13 Z', 'light'),
+    p('M26 34 C26 28 30 26 32 28 C34 26 38 28 38 34 C38 40 34 42 32 40 C30 42 26 40 26 34 Z', 'main', H.brown),
+    p('M29 33 H35 M29 37 H35', 'line'),
+  ] },
+  apple: { parts: [
+    p('M32 20 C24 14 10 18 12 34 C14 48 24 56 32 52 C40 56 50 48 52 34 C54 18 40 14 32 20 Z', 'main', H.red),
+    p('M32 20 C32 14 34 10 38 8', 'line'),
+    p('M34 16 C36 8 46 8 48 10 C46 16 40 18 34 16 Z', 'main', H.green),
+    c(22, 30, 3, 'light'),
+  ] },
+  compost: { parts: [
+    p('M14 22 H50 L46 56 H18 Z', 'main', H.green), q(10, 16, 44, 7, 'accent', 3, H.green),
+    p('M26 2 L34 8 M34 2 L28 10', 'line'),
+    p('M24 32 C28 28 36 28 40 32 C36 36 28 36 24 32 Z', 'light'),
+    p('M32 34 L28 44 H36 Z', 'light'), p('M26 46 C28 40 36 40 38 46', 'line'),
+  ] },
+  candles: { parts: [
+    q(14, 30, 10, 26, 'light', 2), q(27, 22, 10, 34, 'light', 2), q(40, 30, 10, 26, 'light', 2),
+    p('M19 22 C16 26 22 28 19 22 Z M19 18 C14 24 16 30 19 30 C22 30 24 24 19 18 Z', 'accent', H.yellow),
+    p('M32 10 C27 16 29 22 32 22 C35 22 37 16 32 10 Z', 'accent', H.yellow),
+    p('M45 18 C40 24 42 30 45 30 C48 30 50 24 45 18 Z', 'accent', H.yellow),
+    q(8, 54, 48, 4, 'main', 2, H.red),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
@@ -320,6 +364,8 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-02-04-05': 'jelly', 'SWC-VAR-02-04-06': 'banana', 'SWC-VAR-02-04-07': 'dish',
   'SWC-VAR-02-05-01': 'toast', 'SWC-VAR-02-05-02': 'lunchbox', 'SWC-VAR-02-05-03': 'bun', 'SWC-VAR-02-05-04': 'plate',
   'SWC-VAR-02-05-05': 'menu', 'SWC-VAR-02-05-06': 'receipt', 'SWC-VAR-02-05-07': 'chat',
+  'SWC-VAR-02-06-01': 'meatballs', 'SWC-VAR-02-06-02': 'sushi', 'SWC-VAR-02-06-03': 'globe', 'SWC-VAR-02-06-04': 'warning',
+  'SWC-VAR-02-06-05': 'apple', 'SWC-VAR-02-06-06': 'compost', 'SWC-VAR-02-06-07': 'candles',
   'SWC-VAR-02-03-01': 'knife', 'SWC-VAR-02-03-02': 'pot', 'SWC-VAR-02-03-03': 'pan', 'SWC-VAR-02-03-04': 'bread',
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
 };
