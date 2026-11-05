@@ -1,0 +1,170 @@
+{
+ "id": "m.redskap-for-matlagning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Redskap för matlagning",
+ "titleJa": "{調理器具|ちょうりきぐ}",
+ "descriptionSv": "Köksredskap: durkslag, rivjärn, osthyvel, slickepott, tång och grytlapp.",
+ "descriptionJa": "{台所|だいどころ}の{道具|どうぐ}：ざる、おろし{金|がね}、チーズスライサー、ゴムべら、トング、{鍋|なべ}つかみ。",
+ "categoryId": "R01-A01-T03",
+ "tags": [
+  "hemmet",
+  "mat"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kokets-storre-apparater"
+ ],
+ "related": [],
+ "recommendedOrder": 216,
+ "words": [
+  {
+   "senseId": "s.redskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.durkslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sil.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rivjärn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.potatisskalare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.osthyvel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slickepott.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mortel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vitlökspress.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ugnsform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grillspett.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grytlapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kökshandduk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brödkniv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tång.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lådan med redskap",
+  "paragraphs": [
+   "Aiko packar upp alla redskap till köket. Det finns många saker som hon inte vet vad de heter på svenska. Erik förklarar.",
+   "”Det här är ett durkslag. Där häller man pastan. Och det här är en sil, för te.” Aiko visar ett rivjärn. ”Det har vi i Japan också, för ingefära.”",
+   "Sedan hittar hon en osthyvel. ”Den finns i alla svenska hem”, säger Erik. ”Man skär tunna skivor ost till frukost.” Bredvid ligger en potatisskalare och en brödkniv.",
+   "”Och den här mjuka saken?” ”Det är en slickepott. Den tar ut det sista ur skålen.” Aiko skrattar. ”Vilket roligt ord!”",
+   "Aiko har med sig en mortel från Japan, för sesam. Erik har en vitlökspress och en tång för att vända mat. Till grillen finns grillspett.",
+   "Till sist hänger de upp kökshanddukar och grytlappar. Ugnsformarna ställer de i skåpet under spisen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad häller man pastan i?",
+    "options": [
+     "En sil",
+     "En mortel",
+     "En ugnsform",
+     "Ett durkslag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik säger att man häller pastan i ett durkslag.",
+    "explanationJa": "パスタはざるにあけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har Aiko använt ett rivjärn till i Japan?",
+    "options": [
+     "Ost",
+     "Bröd",
+     "Potatis",
+     "Ingefära"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon säger att de har det i Japan också, för ingefära.",
+    "explanationJa": "{日本|にほん}ではしょうがに{使|つか}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "En osthyvel är ovanlig i Sverige.",
+    "correct": false,
+    "explanationSv": "Erik säger att den finns i alla svenska hem.",
+    "explanationJa": "スウェーデンではどの{家|いえ}にもあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad gör man med en slickepott?",
+    "options": [
+     "Man skär bröd.",
+     "Man river ost.",
+     "Man tar ut det sista ur skålen.",
+     "Man vänder mat på grillen."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik säger att slickepotten tar ut det sista ur skålen.",
+    "explanationJa": "ボウルから{最後|さいご}まで{取|と}り{出|だ}すために{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko har tagit med sig ett redskap från Japan.",
+    "correct": true,
+    "explanationSv": "Hon har med sig en mortel från Japan, för sesam.",
+    "explanationJa": "{日本|にほん}からすり{鉢|ばち}を{持|も}ってきました。"
+   }
+  ],
+  "factSources": [
+   "Osthyveln uppfanns av norrmannen Thor Bjørklund 1925."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om köksredskap: vilka du använder mest, svenska redskap som osthyvel, och japanska redskap som är ovanliga i Sverige.",
+  "discussionPoints": [
+   "Vilket köksredskap använder du mest?",
+   "Vilka japanska köksredskap finns inte i ett svenskt kök?",
+   "Vad tycker du om osthyveln?",
+   "Vilket redskap skulle du ta med dig om du flyttade utomlands?"
+  ]
+ }
+}

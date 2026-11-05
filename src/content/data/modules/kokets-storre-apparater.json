@@ -1,0 +1,169 @@
+{
+ "id": "m.kokets-storre-apparater",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kökets större apparater",
+ "titleJa": "{台所|だいどころ}の{大型家電|おおがたかでん}",
+ "descriptionSv": "Köksapparater och vitvaror: kylfrys, häll, spisfläkt, diskmaskin, uttag och stickkontakt.",
+ "descriptionJa": "{台所|だいどころ}の{家電|かでん}：{冷凍冷蔵庫|れいとうれいぞうこ}、クッキングヒーター、{換気扇|かんきせん}、{食器洗|しょっきあら}い{機|き}、コンセント、プラグ。",
+ "categoryId": "R01-A01-T03",
+ "tags": [
+  "hemmet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.att-moblera-ett-rum"
+ ],
+ "related": [],
+ "recommendedOrder": 215,
+ "words": [
+  {
+   "senseId": "s.apparat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vitvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kylfrys.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frysbox.1",
+   "active": false
+  },
+  {
+   "senseId": "s.häll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spisfläkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenkokare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.timer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inbyggd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.energisnål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stickkontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uttag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brumma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koppla-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diskmaskin.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Nya vitvaror",
+  "paragraphs": [
+   "Köket i radhuset är gammalt. Kylskåpet brummar högt, och spisen har gamla plattor. Aiko och Erik bestämmer sig för att köpa nya vitvaror.",
+   "De köper en stor kylfrys och en ny spis med en häll av glas. ”På den här hällen blir bara kastrullen varm”, säger säljaren. Ugnen ska vara inbyggd i ett skåp.",
+   "Över spisen sätter de en spisfläkt. ”Då luktar det inte stekt fisk i hela huset”, säger Aiko. I källaren ställer de en frysbox för bär och bröd.",
+   "De köper också en diskmaskin. Den är energisnål och tyst. En vän som kan el kommer och kopplar in den.",
+   "Problemet är att det finns för få uttag i köket. Vattenkokaren, kaffebryggaren och brödrosten vill alla ha en plats. Erik drar ut en stickkontakt för att sätta i en annan.",
+   "Till sist köper Aiko en timer till köket. ”Med så många apparater måste man hålla koll på tiden”, skrattar hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför köper de nya vitvaror?",
+    "options": [
+     "Köket är gammalt, och kylskåpet brummar högt.",
+     "De har vunnit pengar.",
+     "De gamla är för stora.",
+     "Säljaren ringde dem."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Köket är gammalt, kylskåpet brummar högt och spisen har gamla plattor.",
+    "explanationJa": "{台所|だいどころ}が{古|ふる}く、{冷蔵庫|れいぞうこ}がうるさいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför vill Aiko ha en spisfläkt?",
+    "options": [
+     "Så att köket blir varmare.",
+     "Så att ugnen blir snabbare.",
+     "Så att det blir tyst.",
+     "Så att det inte luktar stekt fisk i hela huset."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko säger att det då inte luktar stekt fisk i hela huset.",
+    "explanationJa": "{家中|いえじゅう}が{焼|や}き{魚|ざかな}のにおいにならないようにです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik kopplar in diskmaskinen själv.",
+    "correct": false,
+    "explanationSv": "En vän som kan el kommer och kopplar in den.",
+    "explanationJa": "{電気|でんき}に{詳|くわ}しい{友人|ゆうじん}がつないでくれます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är problemet i köket?",
+    "options": [
+     "Diskmaskinen är för stor.",
+     "Det finns för få uttag.",
+     "Vattenkokaren är trasig.",
+     "Det finns ingen el."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det finns för få uttag i köket.",
+    "explanationJa": "{台所|だいどころ}にコンセントが{少|すく}なすぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko köper en timer för att inte glömma tiden när hon lagar mat.",
+    "correct": true,
+    "explanationSv": "Hon säger att man måste hålla koll på tiden med så många apparater.",
+    "explanationJa": "{時間|じかん}を{管理|かんり}するためにタイマーを{買|か}います。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om köksapparater: vilka vitvaror du har, vad som är vanligt i japanska och svenska kök, och vilken apparat du inte klarar dig utan.",
+  "discussionPoints": [
+   "Vilka apparater har du i ditt kök?",
+   "Har man ugn i ett vanligt japanskt kök?",
+   "Vilken köksapparat använder du mest?",
+   "Vad tänker du på när du köper en ny vitvara?"
+  ]
+ }
+}
