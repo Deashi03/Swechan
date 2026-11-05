@@ -1,0 +1,169 @@
+{
+ "id": "m.tidsspann-och-varaktighet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tidsspann och varaktighet",
+ "titleJa": "{期間|きかん}と{長|なが}さ",
+ "descriptionSv": "Tidsspann och varaktighet: hålla på, ta tid, dröja, ett tag, halvtimme, evighet, i åratal, kortvarig, långvarig, tillfällig och permanent.",
+ "descriptionJa": "{期間|きかん}と{長|なが}さ：{続|つづ}く、{時間|じかん}がかかる、{遅|おく}れる、しばらく、30{分|ぷん}、{永遠|えいえん}、{何年|なんねん}も、{短期|たんき}、{長期|ちょうき}、{一時的|いちじてき}、{永久|えいきゅう}。",
+ "categoryId": "R01-A04-T01",
+ "tags": [
+  "tid"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.fore-och-efter"
+ ],
+ "related": [],
+ "recommendedOrder": 405,
+ "words": [
+  {
+   "senseId": "s.tidsspann.1",
+   "active": false
+  },
+  {
+   "senseId": "s.varaktighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hålla-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dröja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ett-tag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvtimme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.evighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-åratal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livstid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kortvarig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.långvarig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillfällig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.permanent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dygnet-runt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur lång tid tar det?",
+  "paragraphs": [
+   "Erik har ont i ryggen och ringer till vårdcentralen. ”Det dröjer två veckor innan du kan få en tid”, säger de. ”Två veckor? Det är en evighet!” säger Erik.",
+   "Medan han väntar tar han en tillfällig medicin. ”Är det här permanent?” frågar han. ”Nej, det är nog kortvarigt”, säger Aiko.",
+   "Aiko läser en kurs i svenska. Kursens tidsspann är från januari till mars, och dess varaktighet är tio veckor, och varje lektion håller på i en halvtimme. ”Det tar tid att lära sig ett språk”, säger läraren.",
+   "Mormor och hennes kompis Karin har varit vänner i åratal. Det är en långvarig tradition att de fikar varje fredag. ”Det är det finaste som finns”, säger mormor.",
+   "Leo vill ha en hund. ”En hund är för livstiden, inte bara ett tag”, säger Erik.",
+   "Affären på hörnet har öppet dygnet runt. Det är praktiskt när man har glömt mjölken."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge måste Erik vänta på en tid?",
+    "options": [
+     "Två veckor",
+     "Två dagar",
+     "En halvtimme",
+     "Ett år"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Det dröjer två veckor innan du kan få en tid.”",
+    "explanationJa": "2{週間|しゅうかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge håller en lektion på?",
+    "options": [
+     "En timme",
+     "En halvtimme",
+     "Tio veckor",
+     "Hela dagen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Varje lektion håller på i en halvtimme.",
+    "explanationJa": "30{分|ぷん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mormor och Karin har känt varandra länge.",
+    "correct": true,
+    "explanationSv": "Mormor och hennes kompis Karin har varit vänner i åratal.",
+    "explanationJa": "{何年|なんねん}も{友達|ともだち}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför tvekar Erik om en hund?",
+    "options": [
+     "Hundar är dyra.",
+     "Han är allergisk.",
+     "En hund är för livstiden.",
+     "Lägenheten är för liten."
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”En hund är för livstiden, inte bara ett tag.”",
+    "explanationJa": "{一生|いっしょう}のことだからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Affären på hörnet är alltid öppen.",
+    "correct": true,
+    "explanationSv": "Affären på hörnet har öppet dygnet runt.",
+    "explanationJa": "24{時間開|じかんあ}いています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur lång tid saker tar och håller på: att vänta, att lära sig och långa vänskaper.",
+  "discussionPoints": [
+   "Vad har tagit lång tid för dig att lära dig?",
+   "Har du väntat en evighet på något?",
+   "Har du en vän som du har känt i åratal?",
+   "Finns det affärer som har öppet dygnet runt där du bor?"
+  ]
+ }
+}

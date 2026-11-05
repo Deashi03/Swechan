@@ -1,0 +1,169 @@
+{
+ "id": "m.veckodagar-och-manader",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Veckodagar och månader",
+ "titleJa": "{曜日|ようび}と{月|つき}",
+ "descriptionSv": "Veckor och dagar: veckodag, arbetsdag, helgdag, röd dag, klämdag, i måndags, på måndag, varannan, veckonummer och i fjol.",
+ "descriptionJa": "{週|しゅう}と{日|ひ}：{曜日|ようび}、{勤務日|きんむび}、{祝日|しゅくじつ}、{赤|あか}い{日|ひ}、{飛|と}び{石|いし}の{平日|へいじつ}、この{前|まえ}の{月曜日|げつようび}、{今度|こんど}の{月曜日|げつようび}、{一|ひと}つおき、{週番号|しゅうばんごう}、{去年|きょねん}。",
+ "categoryId": "R01-A04-T01",
+ "tags": [
+  "tid"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.klockslag-och-tidpunkter"
+ ],
+ "related": [],
+ "recommendedOrder": 402,
+ "words": [
+  {
+   "senseId": "s.veckodag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetsdag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.helgdag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röd-dag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klämdag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.storhelg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-måndags.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-måndag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varannan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.veckonummer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dagligen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.veckovis.1",
+   "active": false
+  },
+  {
+   "senseId": "s.månadsskifte.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-år.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-fjol.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Aikos kalender",
+  "paragraphs": [
+   "Aiko tittar i sin kalender. I Sverige pratar man ofta om veckonummer. ”Vi ses vecka 18”, säger kollegorna, och Aiko måste titta efter vilken vecka det är.",
+   "Första maj är en röd dag, alltså en helgdag. I år kommer den på en torsdag. Fredagen blir en klämdag, och många tar ledigt.",
+   "”I fjol jobbade jag på klämdagen”, säger Erik. ”I år tar jag ledigt.”",
+   "Familjen betalar räkningarna runt månadsskiftet. Aiko arbetar fem arbetsdagar i veckan, men varannan fredag jobbar hon hemifrån.",
+   "Leo tränar fotboll dagligen på sommaren. På sommaren hyr mormor en stuga veckovis. Mia gick till tandläkaren i måndags och ska till frisören på måndag.",
+   "Under storhelgerna, som jul och midsommar, är många affärer stängda. ”Vilken veckodag är julafton i år?” frågar Leo."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur pratar kollegorna om tid?",
+    "options": [
+     "Med veckonummer",
+     "Med datum",
+     "Med månader",
+     "Med klockslag"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Vi ses vecka 18”, säger kollegorna.",
+    "explanationJa": "{週番号|しゅうばんごう}を{使|つか}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är fredagen efter första maj i år?",
+    "options": [
+     "En klämdag",
+     "En röd dag",
+     "En storhelg",
+     "En helgdag"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Fredagen blir en klämdag.",
+    "explanationJa": "{飛|と}び{石|いし}の{平日|へいじつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik jobbade på klämdagen i fjol.",
+    "correct": true,
+    "explanationSv": "”I fjol jobbade jag på klämdagen”, säger Erik.",
+    "explanationJa": "{去年|きょねん}は{働|はたら}きました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "När ska Mia till frisören?",
+    "options": [
+     "I måndags",
+     "På fredag",
+     "På måndag",
+     "Varannan dag"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mia ska till frisören på måndag.",
+    "explanationJa": "{今度|こんど}の{月曜日|げつようび}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är lätt för Aiko att förstå veckonummer.",
+    "correct": false,
+    "explanationSv": "Aiko måste titta efter vilken vecka det är.",
+    "explanationJa": "{確|たし}かめないとわかりません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om veckor, dagar och helgdagar i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vilken veckodag tycker du bäst om?",
+   "Vilka röda dagar finns det i Japan?",
+   "Använder man veckonummer i Japan?",
+   "Vad gör du på storhelgerna?"
+  ]
+ }
+}

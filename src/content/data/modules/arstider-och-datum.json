@@ -1,0 +1,169 @@
+{
+ "id": "m.arstider-och-datum",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Årstider och datum",
+ "titleJa": "{季節|きせつ}と{日付|ひづけ}",
+ "descriptionSv": "Årstider och datum: årstid, dagens datum, födelsedatum, årtal, skottår, halvår, sommartid, ställa om, midnattssol och mörker.",
+ "descriptionJa": "{季節|きせつ}と{日付|ひづけ}：{季節|きせつ}、{今日|きょう}の{日付|ひづけ}、{生年月日|せいねんがっぴ}、{年号|ねんごう}、うるう{年|どし}、{半年|はんとし}、{夏時間|なつじかん}、{時計|とけい}を{合|あ}わせる、{白夜|びゃくや}、{暗|くら}さ。",
+ "categoryId": "R01-A04-T01",
+ "tags": [
+  "tid"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.veckodagar-och-manader"
+ ],
+ "related": [],
+ "recommendedOrder": 403,
+ "words": [
+  {
+   "senseId": "s.årstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dagens-datum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.födelsedatum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.årtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.årsdag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skottår.1",
+   "active": false
+  },
+  {
+   "senseId": "s.halvår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decennium.1",
+   "active": false
+  },
+  {
+   "senseId": "s.årsskifte.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sommartid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vintertid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ställa-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dagjämning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.midnattssol.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skymning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ljus och mörker",
+  "paragraphs": [
+   "Aiko har bott i Sverige i nästan ett decennium, men hon har fortfarande svårt med årstiderna. ”På vintern kommer skymningen redan klockan tre!”",
+   "På sommaren är det tvärtom. Långt norrut, i Kiruna, kan man se midnattssolen. Familjen ska åka dit om ett halvår.",
+   "Två gånger om året måste man ställa om klockan. I mars går Sverige över till sommartid, och i oktober blir det vintertid igen. I Japan gör man inte så.",
+   "I Japan är dagjämningen på våren och på hösten en röd dag. Aiko saknar det.",
+   "Mia ska fylla i ett papper i skolan. Hon skriver dagens datum och sitt födelsedatum. Hennes kompis är född den 29 februari, ett skottår.",
+   "Vid årsskiftet firar Aiko och Erik årsdagen av sitt första möte. ”Vilket årtal var det?” frågar Leo. ”För nästan femton år sedan”, säger Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tycker Aiko är svårt med den svenska vintern?",
+    "options": [
+     "Att det är mörkt så tidigt",
+     "Att det är varmt",
+     "Att det är ljust på natten",
+     "Att det snöar för lite"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”På vintern kommer skymningen redan klockan tre!”",
+    "explanationJa": "とても{早|はや}く{暗|くら}くなることです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När går Sverige över till sommartid?",
+    "options": [
+     "I oktober",
+     "I juni",
+     "I mars",
+     "I januari"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I mars går Sverige över till sommartid.",
+    "explanationJa": "3{月|がつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Man ställer om klockan i Japan också.",
+    "correct": false,
+    "explanationSv": "I Japan gör man inte så.",
+    "explanationJa": "{日本|にほん}ではしません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är speciellt med Mias kompis födelsedag?",
+    "options": [
+     "Den är den 29 februari.",
+     "Den är på midsommar.",
+     "Den är vid årsskiftet.",
+     "Den är en röd dag."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hennes kompis är född den 29 februari, ett skottår.",
+    "explanationJa": "2{月|がつ}29{日|にち}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko och Erik har känt varandra i många år.",
+    "correct": true,
+    "explanationSv": "”För nästan femton år sedan”, säger Aiko.",
+    "explanationJa": "15{年近|ねんちか}く{前|まえ}からです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om årstider, datum och ljus och mörker i Sverige och Japan.",
+  "discussionPoints": [
+   "Vilken årstid tycker du bäst om?",
+   "Hur skriver man datum i Japan?",
+   "Vad tycker du om sommartid och vintertid?",
+   "Hur är det med ljus och mörker där du kommer ifrån?"
+  ]
+ }
+}

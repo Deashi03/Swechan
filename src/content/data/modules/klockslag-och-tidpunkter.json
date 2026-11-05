@@ -1,0 +1,169 @@
+{
+ "id": "m.klockslag-och-tidpunkter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Klockslag och tidpunkter",
+ "titleJa": "{時刻|じこく}とタイミング",
+ "descriptionSv": "Klockan: klockan är, kvart över, kvart i, fem över, halv tre, midnatt, analog och digital klocka och tidszon.",
+ "descriptionJa": "{時刻|じこく}の{言|い}い{方|かた}：〜{時|じ}です、15{分|ふん}、15{分前|ふんまえ}、5{分|ふん}、2{時半|じはん}、{真夜中|まよなか}、アナログとデジタル、タイムゾーン。",
+ "categoryId": "R01-A04-T01",
+ "tags": [
+  "tid"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.besoka-frisoren"
+ ],
+ "related": [],
+ "recommendedOrder": 401,
+ "words": [
+  {
+   "senseId": "s.klockan-är.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klockslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvart-över.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvart-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fem-över.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fem-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halv-tre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.midnatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mitt-på-dagen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.analog.1",
+   "active": true
+  },
+  {
+   "senseId": "s.digital.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urtavla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidszon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-slaget.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad är klockan?",
+  "paragraphs": [
+   "Leo håller på att lära sig klockan i skolan. Han har en analog klocka med en vit urtavla. ”Det är lättare med en digital klocka”, säger han.",
+   "”Vad är klockan nu?” frågar Erik. Leo tittar noga. ”Klockan är kvart över fyra.” ”Rätt!”",
+   "”På svenska säger man halv och nästa timme”, förklarar Erik. ”Halv tre betyder två och trettio.” Aiko tycker att det är svårt. På japanska säger man tvärtom.",
+   "Bussen till fotbollen går kvart i sex. Leo vill vara där fem i, men bussen kommer fem över.",
+   "Aiko ringer sin mamma i Japan. Men vilken tidpunkt är bra? Sverige och Japan ligger i olika tidszoner. När det är mitt på dagen i Sverige är det kväll i Japan, och ibland nästan midnatt.",
+   "Mormor kommer alltid på slaget. ”Klockslaget är viktigt”, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken klocka har Leo?",
+    "options": [
+     "En digital klocka",
+     "En analog klocka",
+     "Ingen klocka",
+     "En mobil"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han har en analog klocka med en vit urtavla.",
+    "explanationJa": "アナログ{時計|どけい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad betyder halv tre?",
+    "options": [
+     "Tre och trettio",
+     "Två och femton",
+     "Tre och femton",
+     "Två och trettio"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Halv tre betyder två och trettio.”",
+    "explanationJa": "2{時|じ}30{分|ぷん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Bussen kommer i tid.",
+    "correct": false,
+    "explanationSv": "Bussen till fotbollen går kvart i sex, men bussen kommer fem över.",
+    "explanationJa": "{遅|おく}れて{来|き}ます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är det i Japan när det är mitt på dagen i Sverige?",
+    "options": [
+     "Morgon",
+     "Mitt på dagen",
+     "Kväll",
+     "Förmiddag"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När det är mitt på dagen i Sverige är det kväll i Japan.",
+    "explanationJa": "{夜|よる}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor kommer aldrig för sent.",
+    "correct": true,
+    "explanationSv": "Mormor kommer alltid på slaget.",
+    "explanationJa": "いつもちょうどに{来|き}ます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om klockan och tider: hur man säger klockslag på svenska och japanska, och tidsskillnaden mellan Sverige och Japan.",
+  "discussionPoints": [
+   "Vad är klockan nu där du är?",
+   "Är det svårt att säga klockan på svenska?",
+   "Har du en analog eller digital klocka?",
+   "Hur många timmars skillnad är det mellan Sverige och Japan?"
+  ]
+ }
+}
