@@ -1,0 +1,170 @@
+{
+ "id": "m.skjuta-upp-och-flytta-fram",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Skjuta upp och flytta fram",
+ "titleJa": "{延期|えんき}と{日時変更|にちじへんこう}",
+ "descriptionSv": "Att skjuta upp och flytta fram: uppskjuten, senarelägga, tidigarelägga, ställa in, inställd, på grund av, tills vidare, dra ut på tiden, bli av och besked.",
+ "descriptionJa": "{延期|えんき}と{変更|へんこう}：{延期|えんき}、{後|あと}にずらす、{遅|おく}らせる、{早|はや}める、{中止|ちゅうし}、〜のために、{当分|とうぶん}、{長引|ながび}く、{実現|じつげん}する、{知|し}らせ。",
+ "categoryId": "R01-A04-T03",
+ "tags": [
+  "vardag",
+  "planering"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.boka-moten"
+ ],
+ "related": [],
+ "recommendedOrder": 419,
+ "words": [
+  {
+   "senseId": "s.skjuta-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskjuten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flytta-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framflyttad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.senarelägga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidigarelägga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ställa-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inställd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-grund-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oväntad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tills-vidare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dra-ut-på-tiden.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bli-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjuta-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besked.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Allt blir ändrat",
+  "paragraphs": [
+   "Det har snöat mycket. På grund av snön är Leos match i fotboll inställd. ”Den är inte inställd, bara uppskjuten”, säger tränaren. ”Ni får besked i morgon.”",
+   "Mias skolresa kommer inte att bli av heller. Skolan ställde in den på grund av ett oväntat problem med bussen.",
+   "Erik skulle ha haft ett möte klockan nio, men en kollega vill flytta fram det till två. Sedan kommer ett nytt mejl: kollegan vill senarelägga det igen, till tre. Det framflyttade mötet blir kort.",
+   "Badrummet hemma ska renoveras, men det drar ut på tiden. Hantverkarna har skjutit upp jobbet två gånger. Nu är det stängt tills vidare.",
+   "Mormor vill i stället tidigarelägga sitt besök, och komma redan på fredag.",
+   "Aiko skjuter på att städa. ”Det kan också vänta”, säger hon och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför är Leos match inställd?",
+    "options": [
+     "På grund av regnet",
+     "På grund av snön",
+     "För att tränaren är sjuk",
+     "För att bussen är trasig"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På grund av snön är Leos match i fotboll inställd.",
+    "explanationJa": "{雪|ゆき}のためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Mias skolresa blir av som planerat.",
+    "correct": false,
+    "explanationSv": "Mias skolresa kommer inte att bli av heller.",
+    "explanationJa": "{行|い}けなくなりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Till när flyttas Eriks möte till slut?",
+    "options": [
+     "Till två",
+     "Till nio",
+     "Till i morgon",
+     "Till tre"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Kollegan vill senarelägga det igen, till tre.",
+    "explanationJa": "3{時|じ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad vill mormor göra?",
+    "options": [
+     "Skjuta upp besöket",
+     "Komma redan på fredag",
+     "Ställa in besöket",
+     "Renovera badrummet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mormor vill tidigarelägga sitt besök, och komma redan på fredag.",
+    "explanationJa": "{金曜日|きんようび}に{来|き}たいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko vill inte städa just nu.",
+    "correct": true,
+    "explanationSv": "Aiko skjuter på att städa.",
+    "explanationJa": "{掃除|そうじ}を{先|さき}{延|の}ばしにしています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om när planer ändras: att skjuta upp, flytta fram och ställa in saker.",
+  "discussionPoints": [
+   "Har något du planerat blivit inställt nyligen?",
+   "Vad brukar du skjuta på?",
+   "Hur känns det när planer ändras i sista stund?",
+   "Säger man ”flytta fram” om tidigare eller senare där du bor?"
+  ]
+ }
+}

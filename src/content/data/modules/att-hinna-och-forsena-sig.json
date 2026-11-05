@@ -1,0 +1,170 @@
+{
+ "id": "m.att-hinna-och-forsena-sig",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Att hinna och försena sig",
+ "titleJa": "{間|ま}に{合|あ}うことと{遅|おく}れること",
+ "descriptionSv": "Att hinna och försena sig: hinna med, hinna fram, i god tid, marginal, punktlig, tidsoptimist, sinka, missa, ligga efter, komma ikapp och ta igen.",
+ "descriptionJa": "{間|ま}に{合|あ}う・{遅|おく}れる：こなす、{着|つ}く、{余裕|よゆう}をもって、{余裕|よゆう}、{時間|じかん}に{正確|せいかく}、{楽観的|らっかんてき}な{人|ひと}、{遅|おく}らせる、{逃|のが}す、{遅|おく}れている、{追|お}いつく、{取|と}り{戻|もど}す。",
+ "categoryId": "R01-A04-T03",
+ "tags": [
+  "vardag",
+  "planering"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.skjuta-upp-och-flytta-fram"
+ ],
+ "related": [],
+ "recommendedOrder": 420,
+ "words": [
+  {
+   "senseId": "s.hinna-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hinna-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-god-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.marginal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.punktlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-sekunden.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidsoptimist.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidsbrist.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jäkta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.försena-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sinka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.missa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ligga-efter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-ikapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-igen.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Tidsoptimisten",
+  "paragraphs": [
+   "Erik är en riktig tidsoptimist. Han tror alltid att han ska hinna med allt. Han har aldrig någon marginal.",
+   "I dag ska han till ett möte klockan nio. Han går hemifrån tio i, och trafiken sinkar honom. Han missar bussen och kommer inte att hinna fram i tid.",
+   "Aiko är tvärtom mycket punktlig. Hon kommer alltid i god tid. ”Japanska tåg går på sekunden”, säger hon.",
+   "Mia ligger efter med skolan på grund av tidsbrist. Hon har haft många matcher. I helgen ska hon komma ikapp och ta igen det hon har missat.",
+   "”Vi behöver inte jäkta”, säger Aiko. ”Men vi måste planera.”",
+   "Erik lovar att gå hemifrån tidigare. Han säger att han bara försenade sig den här gången. Ingen tror honom."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är Erik?",
+    "options": [
+     "Punktlig",
+     "En morgonmänniska",
+     "Alltid i god tid",
+     "En tidsoptimist"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik är en riktig tidsoptimist.",
+    "explanationJa": "{時間|じかん}の{見積|みつ}もりが{甘|あま}い{人|ひと}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför hinner Erik inte fram i tid?",
+    "options": [
+     "Han försover sig.",
+     "Trafiken sinkar honom och han missar bussen.",
+     "Han glömmer mötet.",
+     "Han går fel."
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Trafiken sinkar honom. Han missar bussen.",
+    "explanationJa": "{交通|こうつう}で{遅|おく}れ、バスに{乗|の}り{遅|おく}れたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko kommer ofta för sent.",
+    "correct": false,
+    "explanationSv": "Aiko är tvärtom mycket punktlig.",
+    "explanationJa": "{時間|じかん}に{正確|せいかく}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför ligger Mia efter med skolan?",
+    "options": [
+     "Hon har varit sjuk.",
+     "Hon har jobbat.",
+     "Hon har rest.",
+     "Hon har haft många matcher."
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon har haft många matcher.",
+    "explanationJa": "{試合|しあい}がたくさんあったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Familjen tror att Erik kommer att ändra sig.",
+    "correct": false,
+    "explanationSv": "Ingen tror honom.",
+    "explanationJa": "{誰|だれ}も{信|しん}じていません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tid: att hinna, att komma för sent, och om man är tidsoptimist eller punktlig.",
+  "discussionPoints": [
+   "Är du punktlig eller en tidsoptimist?",
+   "Vad gör du om du ligger efter med något?",
+   "Har du missat ett tåg eller ett flyg någon gång?",
+   "Varför är tåg i Japan så punktliga?"
+  ]
+ }
+}

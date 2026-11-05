@@ -1,0 +1,170 @@
+{
+ "id": "m.prioritera-uppgifter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Prioritera uppgifter",
+ "titleJa": "{優先順位|ゆうせんじゅんい}をつける",
+ "descriptionSv": "Att prioritera: prioritering, först och främst, i första hand, angelägen, huvudsak, bisak, ta tag i, vänta med, strunta i och välja bort.",
+ "descriptionJa": "{優先順位|ゆうせんじゅんい}：まず{第一|だいいち}に、{急|いそ}ぎの、{一番大事|いちばんだいじ}なこと、ささいなこと、{取|と}りかかる、{後回|あとまわ}し、{放|ほう}っておく、やめておく。",
+ "categoryId": "R01-A04-T03",
+ "tags": [
+  "vardag",
+  "planering"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.att-gora-listor"
+ ],
+ "related": [],
+ "recommendedOrder": 416,
+ "words": [
+  {
+   "senseId": "s.prioritera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prioritering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.prio.1",
+   "active": false
+  },
+  {
+   "senseId": "s.först-och-främst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-första-hand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.angelägen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avgörande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.huvudsak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bisak.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rangordna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-tag-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vänta-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strunta-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-åt-sidan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.välja-bort.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "För mycket att göra",
+  "paragraphs": [
+   "Det är fredag och Aiko har för mycket att göra. ”Jag måste prioritera”, säger hon och tar fram sin lista.",
+   "Hon börjar rangordna uppgifterna. Först och främst måste hon skicka in ett papper till banken, för det är angeläget. Det har högsta prio.",
+   "I första hand ska hon också hämta Leo. Städningen kan vänta med till söndag. ”Strunta i dammet”, säger Erik.",
+   "Mia har en stor uppgift i skolan, men i en vecka har hon velat lägga åt sidan allt som har med skolan att göra. ”Nu måste du ta tag i den”, säger Aiko. ”Det är avgörande för betyget.”",
+   "Kvällens middag är en bisak. De väljer bort att laga mat och köper pizza.",
+   "”Huvudsaken är att vi hinner det viktigaste”, säger Aiko. ”Resten är en fråga om prioritering.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko först?",
+    "options": [
+     "Städar",
+     "Lagar middag",
+     "Skickar in ett papper till banken",
+     "Hämtar Mia"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Först och främst måste hon skicka in ett papper till banken.",
+    "explanationJa": "{銀行|ぎんこう}に{書類|しょるい}を{送|おく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När ska de städa?",
+    "options": [
+     "I dag",
+     "I morgon",
+     "Aldrig",
+     "På söndag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Städningen kan vänta med till söndag.",
+    "explanationJa": "{日曜日|にちようび}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia har jobbat med sin uppgift varje dag.",
+    "correct": false,
+    "explanationSv": "I en vecka har hon velat lägga åt sidan allt som har med skolan att göra.",
+    "explanationJa": "1{週間|しゅうかん}{放|ほう}っておきました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad äter familjen till middag?",
+    "options": [
+     "Fisk",
+     "Ingenting",
+     "Pizza",
+     "Gröt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De väljer bort att laga mat och köper pizza.",
+    "explanationJa": "ピザです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att man inte måste göra allt.",
+    "correct": true,
+    "explanationSv": "”Huvudsaken är att vi hinner det viktigaste.”",
+    "explanationJa": "{一番大事|いちばんだいじ}なことができればいいと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att prioritera: vad som är viktigt, vad som kan vänta och vad man kan strunta i.",
+  "discussionPoints": [
+   "Hur prioriterar du när du har mycket att göra?",
+   "Vad brukar du vänta med?",
+   "Vad kan man strunta i när man har bråttom?",
+   "Vad är huvudsaken för dig en vanlig dag?"
+  ]
+ }
+}
