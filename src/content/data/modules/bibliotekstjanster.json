@@ -1,0 +1,170 @@
+{
+ "id": "m.bibliotekstjanster",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bibliotekstjänster",
+ "titleJa": "{図書館|としょかん}のサービス",
+ "descriptionSv": "Bibliotekstjänster: bibliotek, bibliotekskort, bibliotekarie, lånetid, låna om, förseningsavgift, reservera, ljudbok, e-bok, låneautomat, återlämningsautomat, läsesal, studieplats, fjärrlån och språkcafé.",
+ "descriptionJa": "{図書館|としょかん}のサービス：{図書館|としょかん}、{図書館|としょかん}カード、{司書|ししょ}、{貸出|かしだし}{期間|きかん}、{延長|えんちょう}する、{延滞|えんたい}{料|りょう}、{予約|よやく}する、オーディオブック、{電子|でんし}{書籍|しょせき}、{自動|じどう}{貸出機|かしだしき}、{自動|じどう}{返却機|へんきゃくき}、{閲覧室|えつらんしつ}、{自習|じしゅう}{席|せき}、{取|と}り{寄|よ}せ{貸出|かしだし}、{言語|げんご}カフェ。",
+ "categoryId": "R01-A05-T06",
+ "tags": [
+  "tjänster",
+  "bibliotek"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kundtjanst-och-support"
+ ],
+ "related": [],
+ "recommendedOrder": 539,
+ "words": [
+  {
+   "senseId": "s.bibliotek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bibliotekskort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bibliotekarie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lånetid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.låna-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förseningsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljudbok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.e-bok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.låneautomat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återlämningsautomat.1",
+   "active": false
+  },
+  {
+   "senseId": "s.läsesal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.studieplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrlån.1",
+   "active": false
+  },
+  {
+   "senseId": "s.språkcafé.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag på biblioteket",
+  "paragraphs": [
+   "Aiko går till biblioteket. Hon har ett bibliotekskort och lånar ofta böcker på svenska. Lånetiden är fyra veckor.",
+   "En bok har hon inte läst klart. Hon kan låna om den i appen. Om man lämnar tillbaka en bok för sent kan man få en förseningsavgift.",
+   "Aiko frågar bibliotekarien efter en japansk bok. ”Den finns inte här, men du kan beställa ett fjärrlån.” En annan bok är utlånad, så hon reserverar den.",
+   "Biblioteket har också ljudböcker och e-böcker. Aiko lånar en ljudbok som hon lyssnar på när hon går till jobbet. Hon lånar böckerna i låneautomaten vid dörren.",
+   "Leo pluggar på en studieplats, och Erik läser tidningen i läsesalen, där man måste vara tyst. De gamla böckerna lämnar Aiko i återlämningsautomaten.",
+   "På kvällen går hon på språkcaféet. Där övar hon svenska med andra som lär sig språket."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång är lånetiden?",
+    "options": [
+     "Två veckor",
+     "Fyra veckor",
+     "En månad",
+     "En vecka"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Lånetiden är fyra veckor.",
+    "explanationJa": "4{週間|しゅうかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kan Aiko göra med den japanska boken?",
+    "options": [
+     "Låna om den",
+     "Köpa den",
+     "Lyssna på den",
+     "Beställa ett fjärrlån"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "”Den finns inte här, men du kan beställa ett fjärrlån.”",
+    "explanationJa": "{取|と}り{寄|よ}せができます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko reserverar en bok som är utlånad.",
+    "correct": true,
+    "explanationSv": "En annan bok är utlånad, så hon reserverar den.",
+    "explanationJa": "{予約|よやく}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var läser Erik tidningen?",
+    "options": [
+     "På en studieplats",
+     "I läsesalen",
+     "Hemma",
+     "På språkcaféet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik läser tidningen i läsesalen.",
+    "explanationJa": "{閲覧室|えつらんしつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko går på språkcaféet för att öva svenska.",
+    "correct": true,
+    "explanationSv": "Där övar hon svenska med andra som lär sig språket.",
+    "explanationJa": "スウェーデン{語|ご}を{練習|れんしゅう}するためです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om biblioteket: vad ni lånar, om ni lyssnar på ljudböcker och vilka tjänster biblioteket har i Sverige och Japan.",
+  "discussionPoints": [
+   "Har du ett bibliotekskort?",
+   "Lånar du hellre böcker, ljudböcker eller e-böcker?",
+   "Har du varit på ett språkcafé?",
+   "Hur skiljer sig japanska bibliotek från svenska?"
+  ]
+ }
+}

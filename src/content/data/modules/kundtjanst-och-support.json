@@ -1,0 +1,170 @@
+{
+ "id": "m.kundtjanst-och-support",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kundtjänst och support",
+ "titleJa": "カスタマーサービスとサポート",
+ "descriptionSv": "Kundtjänst och support: kundtjänst, support, knappval, vänligen, vänta i telefon, köplats, ringa tillbaka, chatt, chatta, chattbot, koppla vidare, handläggare, ärendenummer, felsöka och starta om.",
+ "descriptionJa": "カスタマーサービスとサポート：お{客|きゃく}{様|さま}{窓口|まどぐち}、サポート、{番号|ばんごう}{選択|せんたく}、どうぞ〜ください、{電話|でんわ}で{待|ま}つ、{待|ま}ち{順番|じゅんばん}、{折|お}り{返|かえ}し{電話|でんわ}、チャット、チャットする、チャットボット、{別|べつ}の{人|ひと}につなぐ、{担当者|たんとうしゃ}、{受付|うけつけ}{番号|ばんごう}、{原因|げんいん}を{調|しら}べる、{再起動|さいきどう}する。",
+ "categoryId": "R01-A05-T06",
+ "tags": [
+  "tjänster",
+  "kommunikation"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.kemtvatt-och-skradderi"
+ ],
+ "related": [],
+ "recommendedOrder": 538,
+ "words": [
+  {
+   "senseId": "s.kundtjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.support.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knappval.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vänligen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vänta-i-telefon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ringa-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chattbot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-vidare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handläggare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ärendenummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.starta-om.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Internet fungerar inte",
+  "paragraphs": [
+   "Erik har inget internet hemma. Han ringer kundtjänst hos företaget. ”Gör ett knappval: tryck 1 för faktura, tryck 2 för support”, säger telefonen. Erik trycker 2.",
+   "”Vänligen vänta. Du har köplats nummer tolv.” Erik får vänta i telefon i fyrtio minuter. Till slut väljer han att de ska ringa tillbaka.",
+   "Under tiden försöker Aiko chatta med kundtjänst på nätet. Först svarar en chattbot, men den förstår inte frågan. ”Jag kopplar vidare till en person”, skriver den.",
+   "En handläggare tar över chatten. Hon ger Aiko ett ärendenummer. ”Prova att starta om routern”, skriver hon.",
+   "Det hjälper inte. ”Vi ska felsöka problemet och återkomma”, säger företaget när de ringer tillbaka.",
+   "Nästa dag fungerar internet igen. Det var ett fel på hela gatan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken siffra trycker Erik?",
+    "options": [
+     "1",
+     "12",
+     "2",
+     "40"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik trycker 2.",
+    "explanationJa": "2です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge väntar Erik i telefon?",
+    "options": [
+     "Tolv minuter",
+     "En timme",
+     "Fyrtio minuter",
+     "Fem minuter"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik får vänta i telefon i fyrtio minuter.",
+    "explanationJa": "40{分|ぷん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Chattboten kan svara på Aikos fråga.",
+    "correct": false,
+    "explanationSv": "Först svarar en chattbot, men den förstår inte frågan.",
+    "explanationJa": "{理解|りかい}できません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad säger handläggaren att Aiko ska göra?",
+    "options": [
+     "Ringa kundtjänst",
+     "Starta om routern",
+     "Köpa en ny router",
+     "Vänta en vecka"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Prova att starta om routern.”",
+    "explanationJa": "ルーターを{再起動|さいきどう}することです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Felet fanns inte bara hos Erik och Aiko.",
+    "correct": true,
+    "explanationSv": "Det var ett fel på hela gatan.",
+    "explanationJa": "{通|とお}り{全体|ぜんたい}の{問題|もんだい}でした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kundtjänst: hur länge ni väntar i telefon, om ni hellre chattar och vad ni tycker om chattbotar.",
+  "discussionPoints": [
+   "När ringde du kundtjänst senast? Varför?",
+   "Väntar du i telefon eller vill du att de ringer tillbaka?",
+   "Vad tycker du om chattbotar?",
+   "Är kundtjänst i Japan annorlunda än i Sverige?"
+  ]
+ }
+}

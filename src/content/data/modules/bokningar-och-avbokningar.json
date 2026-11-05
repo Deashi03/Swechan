@@ -1,0 +1,170 @@
+{
+ "id": "m.bokningar-och-avbokningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bokningar och avbokningar",
+ "titleJa": "{予約|よやく}とキャンセル",
+ "descriptionSv": "Bokningar och avbokningar: boka online, bokningssystem, fullbokad, boka upp, väntelista, bokningsbekräftelse, boka om, avboka, avbokning, avbokningsregel, sen avbokning, avbokningsavgift, utebliven, återbud och lämna återbud.",
+ "descriptionJa": "{予約|よやく}とキャンセル：ネットで{予約|よやく}、{予約|よやく}システム、{予約|よやく}でいっぱい、{予約|よやく}で{埋|う}める、キャンセル{待|ま}ち、{予約|よやく}{確認|かくにん}、{予約|よやく}を{変更|へんこう}する、キャンセルする、キャンセル、キャンセル{規定|きてい}、{直前|ちょくぜん}のキャンセル、キャンセル{料|りょう}、{無断|むだん}キャンセル、{欠席|けっせき}の{連絡|れんらく}、{断|ことわ}りの{連絡|れんらく}をする。",
+ "categoryId": "R01-A05-T06",
+ "tags": [
+  "tjänster",
+  "tid"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bibliotekstjanster"
+ ],
+ "related": [],
+ "recommendedOrder": 540,
+ "words": [
+  {
+   "senseId": "s.boka-online.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bokningssystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fullbokad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boka-upp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avboka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väntelista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bokningsbekräftelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boka-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avbokning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avbokningsregel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sen-avbokning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avbokningsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utebliven.1",
+   "active": false
+  },
+  {
+   "senseId": "s.återbud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-återbud.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Avboka i tid",
+  "paragraphs": [
+   "Aiko vill klippa sig. Man kan boka online i frisörens bokningssystem. Men frisören är fullbokad hela veckan. Någon har bokat upp alla tider.",
+   "Aiko ställer sig på väntelistan. På onsdag får hon ett sms: ”En tid är ledig på fredag klockan tio.” Hon bokar den och får en bokningsbekräftelse.",
+   "På torsdag blir Leo sjuk, och Aiko måste stanna hemma. Hon vill boka om tiden. Om det inte går måste hon avboka.",
+   "Hon läser avbokningsreglerna: ”Avbokningen är gratis fram till 24 timmar innan. Vid sen avbokning tar vi ut en avbokningsavgift på 300 kronor. För ett uteblivet besök får man betala hela priset.”",
+   "Det är fortfarande mer än 24 timmar kvar, så Aiko avbokar gratis. Någon på väntelistan blir glad.",
+   "Samma vecka har Erik bjudit vänner på middag. Två lämnar återbud, eftersom de är sjuka. ”Två återbud – då blir det mer mat till oss!” säger Leo."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför står Aiko på väntelistan?",
+    "options": [
+     "Hon vill avboka",
+     "Hon är sjuk",
+     "Bokningssystemet fungerar inte",
+     "Frisören är fullbokad"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men frisören är fullbokad hela veckan.",
+    "explanationJa": "{予約|よやく}がいっぱいだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När blir en tid ledig?",
+    "options": [
+     "På fredag klockan tio",
+     "På onsdag",
+     "På torsdag",
+     "På lördag"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”En tid är ledig på fredag klockan tio.”",
+    "explanationJa": "{金曜日|きんようび}の10{時|じ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad kostar en sen avbokning?",
+    "options": [
+     "Ingenting",
+     "300 kronor",
+     "Hela priset",
+     "24 kronor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Vid sen avbokning tar vi ut en avbokningsavgift på 300 kronor.",
+    "explanationJa": "300クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aiko måste betala för avbokningen.",
+    "correct": false,
+    "explanationSv": "Det är fortfarande mer än 24 timmar kvar, så Aiko avbokar gratis.",
+    "explanationJa": "{無料|むりょう}でキャンセルできます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo är glad att några lämnar återbud.",
+    "correct": true,
+    "explanationSv": "”Två återbud – då blir det mer mat till oss!” säger Leo.",
+    "explanationJa": "{食|た}べ{物|もの}が{増|ふ}えるので{喜|よろこ}んでいます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bokningar och avbokningar: hur ni bokar tider, vad som händer om man avbokar sent och hur man lämnar återbud.",
+  "discussionPoints": [
+   "Bokar du helst online eller i telefon?",
+   "Har du någon gång fått betala en avbokningsavgift?",
+   "Har du stått på en väntelista?",
+   "Hur lämnar man återbud artigt i Japan?"
+  ]
+ }
+}

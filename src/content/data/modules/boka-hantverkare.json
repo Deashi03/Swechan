@@ -1,0 +1,170 @@
+{
+ "id": "m.boka-hantverkare",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Boka hantverkare",
+ "titleJa": "{職人|しょくにん}を{頼|たの}む",
+ "descriptionSv": "Att boka hantverkare: anlita, elektriker, snickare, målare, behörig, uppdrag, hembesök, på plats, kostnadsförslag, timpris, arbetskostnad, materialkostnad, fast pris, ROT-avdrag och svartjobb.",
+ "descriptionJa": "{職人|しょくにん}を{頼|たの}む：{依頼|いらい}する、{電気|でんき}{工事士|こうじし}、{大工|だいく}、ペンキ{屋|や}、{資格|しかく}のある、{仕事|しごと}、{訪問|ほうもん}、{現地|げんち}で、{見積|みつ}もり、1{時間|じかん}あたりの{料金|りょうきん}、{工賃|こうちん}、{材料|ざいりょう}{費|ひ}、{固定|こてい}{料金|りょうきん}、ROT{控除|こうじょ}、{闇|やみ}{仕事|しごと}。",
+ "categoryId": "R01-A05-T06",
+ "tags": [
+  "tjänster",
+  "hem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.forsenat-eller-saknat-paket"
+ ],
+ "related": [],
+ "recommendedOrder": 536,
+ "words": [
+  {
+   "senseId": "s.elektriker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snickare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.målare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anlita.1",
+   "active": true
+  },
+  {
+   "senseId": "s.behörig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hembesök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-plats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kostnadsförslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.timpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetskostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.materialkostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fast-pris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ROT-avdrag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svartjobb.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett nytt kök",
+  "paragraphs": [
+   "Aiko och Erik ska renovera köket. De vill anlita hantverkare: en snickare, en målare och en elektriker.",
+   "”Anlita alltid en behörig elektriker”, säger grannen. ”Det är farligt att arbeta med el själv.”",
+   "Snickaren har många uppdrag, men han kan komma på ett hembesök. Han tittar på köket på plats och skickar sedan ett kostnadsförslag.",
+   "Timpriset är 650 kronor. Arbetskostnaden blir 40 000 kronor, och materialkostnaden kommer till. Erik frågar om de kan få ett fast pris. ”Det går bra”, säger snickaren.",
+   "Med ROT-avdrag blir det billigare, eftersom staten betalar en del av arbetskostnaden.",
+   "En kompis säger att han känner någon som kan göra det billigare utan kvitto. ”Nej tack”, säger Aiko. ”Svartjobb är förbjudet.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka hantverkare vill de anlita?",
+    "options": [
+     "En snickare, en målare och en elektriker",
+     "Bara en snickare",
+     "En rörmokare",
+     "En målare och en rörmokare"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De vill anlita hantverkare: en snickare, en målare och en elektriker.",
+    "explanationJa": "{大工|だいく}、ペンキ{屋|や}、{電気|でんき}{工事士|こうじし}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är timpriset?",
+    "options": [
+     "40 000 kronor",
+     "4 000 kronor",
+     "65 kronor",
+     "650 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Timpriset är 650 kronor.",
+    "explanationJa": "650クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Snickaren går med på ett fast pris.",
+    "correct": true,
+    "explanationSv": "”Det går bra”, säger snickaren.",
+    "explanationJa": "{固定|こてい}{料金|りょうきん}にしてくれます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför blir det billigare med ROT-avdrag?",
+    "options": [
+     "Materialet blir gratis",
+     "Staten betalar en del av arbetskostnaden",
+     "Snickaren ger rabatt",
+     "Man betalar utan kvitto"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Med ROT-avdrag blir det billigare, eftersom staten betalar en del av arbetskostnaden.",
+    "explanationJa": "{国|くに}が{一部|いちぶ}を{払|はら}うからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko vill inte betala utan kvitto.",
+    "correct": true,
+    "explanationSv": "”Nej tack”, säger Aiko. ”Svartjobb är förbjudet.”",
+    "explanationJa": "{闇|やみ}{仕事|しごと}は{断|ことわ}ります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att boka hantverkare: när man behöver en, hur man jämför kostnadsförslag och vad ROT-avdrag är.",
+  "discussionPoints": [
+   "Har du anlitat en hantverkare någon gång? Vad gjorde den?",
+   "Vad gör du själv hemma, och vad låter du en hantverkare göra?",
+   "Varför ska man inte betala för svartjobb?",
+   "Finns det något som liknar ROT-avdrag i Japan?"
+  ]
+ }
+}
