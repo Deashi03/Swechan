@@ -1,0 +1,169 @@
+{
+ "id": "m.hastighet-och-temperatur",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hastighet och temperatur",
+ "titleJa": "{速度|そくど}と{温度|おんど}",
+ "descriptionSv": "Hastighet och temperatur: hastighet, fart, kilometer i timmen, tempo, i full fart, sakta ner, termometer, minusgrader, plusgrader, fryspunkt, kylig, iskall och kokhet.",
+ "descriptionJa": "{速度|そくど}と{温度|おんど}：{速度|そくど}、スピード、{時速|じそく}、ペース、{全速力|ぜんそくりょく}、スピードを{落|お}とす、{温度計|おんどけい}、{氷点下|ひょうてんか}、プラス、{氷点|ひょうてん}、{肌寒|はだざむ}い、{冷|つめ}たい、{熱|あつ}い。",
+ "categoryId": "R01-A04-T05",
+ "tags": [
+  "mått"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.langd-och-avstand"
+ ],
+ "related": [],
+ "recommendedOrder": 432,
+ "words": [
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilometer-i-timmen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tempo.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-full-fart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snigelfart.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sakta-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.termometer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minusgrader.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plusgrader.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fryspunkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kylig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.iskall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kokhet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svalna.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kallt ute, varmt inne",
+  "paragraphs": [
+   "En morgon i januari visar termometern femton minusgrader. ”Det är iskallt!” säger Leo.",
+   "Erik kör Leo till skolan. På grund av snön går trafiken i snigelfart. ”Här får man bara köra 30 kilometer i timmen”, säger Erik och saktar ner vid skolan.",
+   "Mia cyklar ändå, i full fart. ”Sänk farten när det är halt!” säger Aiko högt efter henne.",
+   "På eftermiddagen går temperaturen upp till fryspunkten, och dagen efter är det äntligen plusgrader. Men det är fortfarande kyligt.",
+   "Hemma dricker alla kokhett te. ”Låt det svalna lite”, säger Aiko till Leo.",
+   "I Japan har tågen en mycket hög hastighet, berättar Aiko. ”Men här hemma vill jag leva i ett lugnt tempo.”"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar termometern på morgonen?",
+    "options": [
+     "Femton plusgrader",
+     "Femton minusgrader",
+     "Noll grader",
+     "Trettio grader"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Termometern visar femton minusgrader.",
+    "explanationJa": "{氷点下|ひょうてんか}15{度|ど}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur går trafiken på grund av snön?",
+    "options": [
+     "I snigelfart",
+     "I full fart",
+     "Som vanligt",
+     "Den står helt stilla"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Trafiken går i snigelfart.",
+    "explanationJa": "のろのろです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mia cyklar långsamt.",
+    "correct": false,
+    "explanationSv": "Mia cyklar ändå, i full fart.",
+    "explanationJa": "{全速力|ぜんそくりょく}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad säger Aiko till Leo om teet?",
+    "options": [
+     "Låt det svalna lite.",
+     "Drick fort.",
+     "Det är för kallt.",
+     "Ta mer socker."
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Låt det svalna lite”, säger Aiko till Leo.",
+    "explanationJa": "{少|すこ}し{冷|さ}ましなさいと{言|い}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko vill inte ha ett stressigt liv.",
+    "correct": true,
+    "explanationSv": "”Här hemma vill jag leva i ett lugnt tempo.”",
+    "explanationJa": "ゆっくりしたペースで{暮|く}らしたいです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hastighet och temperatur: väder, trafik och hur varmt eller kallt ni tycker om det.",
+  "discussionPoints": [
+   "Hur kallt blir det där du bor på vintern?",
+   "Tycker du om iskallt eller kokhett?",
+   "Hur fort får man köra i städer i Japan?",
+   "Lever du i ett lugnt eller snabbt tempo?"
+  ]
+ }
+}

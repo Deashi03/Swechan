@@ -1,0 +1,169 @@
+{
+ "id": "m.delar-och-andelar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Delar och andelar",
+ "titleJa": "{部分|ぶぶん}と{割合|わりあい}",
+ "descriptionSv": "Delar och andelar: hälften, tredjedel, fjärdedel, femtedel, bråkdel, största delen, dela på, dela lika, lika delar, fördela, per person, var sin och bit för bit.",
+ "descriptionJa": "{部分|ぶぶん}と{割合|わりあい}：{半分|はんぶん}、3{分|ぶん}の1、4{分|ぶん}の1、5{分|ぶん}の1、ごく{一部|いちぶ}、{大部分|だいぶぶん}、{分|わ}け{合|あ}う、{均等|きんとう}に、{等分|とうぶん}、{配分|はいぶん}、{一人|ひとり}あたり、{一|ひと}つずつ、{少|すこ}しずつ。",
+ "categoryId": "R01-A04-T05",
+ "tags": [
+  "mått"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.ungefarliga-mangder"
+ ],
+ "related": [],
+ "recommendedOrder": 434,
+ "words": [
+  {
+   "senseId": "s.hälften.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tredjedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärdedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.femtedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bråkdel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.största-delen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvuddel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dela-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-lika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lika-delar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördela.1",
+   "active": true
+  },
+  {
+   "senseId": "s.per-person.1",
+   "active": true
+  },
+  {
+   "senseId": "s.var-sin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mitt-itu.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bit-för-bit.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lika för alla",
+  "paragraphs": [
+   "Familjen beställer pizza. ”Vi delar på tre pizzor”, säger Erik. Han skär varje pizza i åtta lika delar.",
+   "Leo äter hälften av en pizza själv. Mia äter bara en fjärdedel. Efteråt är en tredjedel av den tredje pizzan kvar.",
+   "Barnen får var sin glass till efterrätt. Leo vill dela lika på den sista glassen, men den går mitt itu när han öppnar den.",
+   "Aiko räknar på månadens pengar. Huvuddelen går till hyran, och en femtedel går till mat. Godis är bara en bråkdel.",
+   "På helgen ska de måla staketet. ”Vi fördelar jobbet”, säger Erik. ”Vi tar det bit för bit.”",
+   "De ska åka på bio. Det kostar hundra kronor per person. Största delen av familjen vill se en film om rymden."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många delar skär Erik varje pizza i?",
+    "options": [
+     "Fyra delar",
+     "Två delar",
+     "Tolv delar",
+     "Åtta lika delar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han skär varje pizza i åtta lika delar.",
+    "explanationJa": "8{等分|とうぶん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur mycket pizza äter Leo?",
+    "options": [
+     "Hälften av en pizza",
+     "En fjärdedel",
+     "En tredjedel",
+     "En hel pizza"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo äter hälften av en pizza själv.",
+    "explanationJa": "{半分|はんぶん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Den sista glassen går mitt itu.",
+    "correct": true,
+    "explanationSv": "Den går mitt itu när han öppnar den.",
+    "explanationJa": "{真|ま}っ{二|ぷた}つになりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad går huvuddelen av pengarna till?",
+    "options": [
+     "Hyran",
+     "Mat",
+     "Godis",
+     "Bio"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Huvuddelen går till hyran.",
+    "explanationJa": "{家賃|やちん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Alla i familjen vill se samma film.",
+    "correct": false,
+    "explanationSv": "Största delen av familjen vill se en film om rymden.",
+    "explanationJa": "ほとんどですが、{全員|ぜんいん}ではありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om delar och andelar: att dela rättvist, och hur man delar upp pengar och arbete.",
+  "discussionPoints": [
+   "Hur delar ni upp arbetet hemma?",
+   "Delar ni lika på notan när ni äter ute med vänner?",
+   "Hur stor del av dina pengar går till boende?",
+   "Är det viktigt att allt delas lika?"
+  ]
+ }
+}

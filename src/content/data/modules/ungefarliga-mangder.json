@@ -1,0 +1,169 @@
+{
+ "id": "m.ungefarliga-mangder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ungefärliga mängder",
+ "titleJa": "おおよその{量|りょう}",
+ "descriptionSv": "Ungefärliga mängder: knappt, drygt, uppåt, ett par, ett fåtal, en hel del, en handfull, en aning, en nypa, en klick, styck, uppskatta och ungefärlig.",
+ "descriptionJa": "おおよその{量|りょう}：〜{弱|じゃく}、〜{余|あま}り、〜{近|ちか}く、2、3の、わずかの、かなり、ひとつかみ、ほんの{少|すこ}し、ひとつまみ、〜{個|こ}、{見積|みつ}もる、おおよその。",
+ "categoryId": "R01-A04-T05",
+ "tags": [
+  "mått"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hastighet-och-temperatur"
+ ],
+ "related": [],
+ "recommendedOrder": 433,
+ "words": [
+  {
+   "senseId": "s.knappt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drygt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-runda-tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ett-par.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ett-fåtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-hel-del.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-handfull.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-aning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-skvätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.en-nypa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-klick.1",
+   "active": false
+  },
+  {
+   "senseId": "s.en-gnutta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.styck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ungefärlig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mormors recept",
+  "paragraphs": [
+   "Mormor skriver aldrig exakta mått i sina recept. ”En nypa salt, en skvätt mjölk och en klick smör”, säger hon.",
+   "Aiko vill ha ett ungefärligt mått. ”Hur mycket mjöl?” ”En hel del”, säger mormor. ”Uppskatta själv!”",
+   "Soppan blir en aning för salt. ”Det fanns inte en gnutta socker kvar”, säger mormor, ”men den är god ändå.”",
+   "Till fikat köper Erik bullar. De kostar tolv kronor styck. Han köper drygt tjugo, för det kommer ett par grannar.",
+   "Det blir i runda tal trettio gäster. Leo tar en handfull kakor innan någon ser det.",
+   "Till slut kommer bara ett fåtal grannar, och de äter knappt hälften. ”Nu har vi bullar i en vecka”, skrattar Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur skriver mormor sina recept?",
+    "options": [
+     "Med gram och deciliter",
+     "På engelska",
+     "Utan exakta mått",
+     "Hon skriver inga recept"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mormor skriver aldrig exakta mått i sina recept.",
+    "explanationJa": "{正確|せいかく}な{分量|ぶんりょう}は{書|か}きません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur är soppan?",
+    "options": [
+     "En aning för salt",
+     "För söt",
+     "Kall",
+     "Perfekt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Soppan blir en aning för salt.",
+    "explanationJa": "ちょっと{塩辛|しおから}すぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Bullarna kostar tolv kronor styck.",
+    "correct": true,
+    "explanationSv": "De kostar tolv kronor styck.",
+    "explanationJa": "{一個|いっこ}12クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Leo?",
+    "options": [
+     "Tar en handfull kakor",
+     "Bakar bullar",
+     "Lagar soppa",
+     "Köper bullar"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo tar en handfull kakor innan någon ser det.",
+    "explanationJa": "クッキーをひとつかみ{取|と}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik köpte för många bullar.",
+    "correct": true,
+    "explanationSv": "De äter knappt hälften. ”Nu har vi bullar i en vecka.”",
+    "explanationJa": "{多|おお}すぎました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ungefärliga mängder: i recept, när man handlar och när man gissar hur mycket något är.",
+  "discussionPoints": [
+   "Följer du recept exakt eller tar du ungefär?",
+   "Hur säger man ”en nypa salt” på japanska?",
+   "Är du bra på att uppskatta hur mycket något kostar?",
+   "Har du köpt för mycket mat någon gång?"
+  ]
+ }
+}

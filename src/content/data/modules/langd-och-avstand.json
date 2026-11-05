@@ -1,0 +1,169 @@
+{
+ "id": "m.langd-och-avstand",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Längd och avstånd",
+ "titleJa": "{長|なが}さと{距離|きょり}",
+ "descriptionSv": "Längd och avstånd: bredd, höjd, tjocklek, millimeter, decimeter, kilometer, mil, avstånd, sträcka, gångavstånd, på håll, längs med och linjal.",
+ "descriptionJa": "{長|なが}さと{距離|きょり}：{幅|はば}、{高|たか}さ、{厚|あつ}さ、ミリ、10センチ、キロ、10キロ（mil）、{距離|きょり}、{区間|くかん}、{徒歩圏内|とほけんない}、{遠|とお}くから、〜に{沿|そ}って、{定規|じょうぎ}。",
+ "categoryId": "R01-A04-T05",
+ "tags": [
+  "mått"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vikt-och-volym"
+ ],
+ "related": [],
+ "recommendedOrder": 431,
+ "words": [
+  {
+   "senseId": "s.bredd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjocklek.1",
+   "active": false
+  },
+  {
+   "senseId": "s.millimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decimeter.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kilometer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångavstånd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ett-stenkast.1",
+   "active": false
+  },
+  {
+   "senseId": "s.på-håll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.längs-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäta-upp.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur långt är det?",
+  "paragraphs": [
+   "Familjen ska hyra en stuga i sommar. ”Hur långt är det dit?” frågar Leo. ”Ungefär tjugo mil”, säger Erik. ”En svensk mil är tio kilometer.”",
+   "Avståndet till närmaste affär är kort. Den ligger på gångavstånd, och badplatsen ligger bara ett stenkast från stugan.",
+   "Varje morgon springer Aiko samma sträcka längs med vattnet. Fem kilometer.",
+   "I stugan vill Erik bygga en hylla. Han måste mäta upp väggen. Bredden är 120 centimeter och höjden två meter.",
+   "Leo har en linjal och mäter allt han ser. Ett riskorn är tre millimeter, och hans fot är två decimeter.",
+   "På vintern mäter morfar isens tjocklek på sjön innan han går ut. Man ser den gamla stugan redan på håll."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur långt är det till stugan?",
+    "options": [
+     "Ungefär tjugo mil",
+     "Tjugo kilometer",
+     "Fem kilometer",
+     "Två mil"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "”Ungefär tjugo mil”, säger Erik.",
+    "explanationJa": "{約|やく}200キロです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur långt är det till badplatsen?",
+    "options": [
+     "Fem kilometer",
+     "Tjugo mil",
+     "Två kilometer",
+     "Ett stenkast"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Badplatsen ligger bara ett stenkast från stugan.",
+    "explanationJa": "すぐ{近|ちか}くです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "En svensk mil är tio kilometer.",
+    "correct": true,
+    "explanationSv": "”En svensk mil är tio kilometer.”",
+    "explanationJa": "10キロです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är väggens bredd?",
+    "options": [
+     "Två meter",
+     "120 centimeter",
+     "Fem kilometer",
+     "Tre millimeter"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Bredden är 120 centimeter.",
+    "explanationJa": "120センチです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Morfar är försiktig på isen.",
+    "correct": true,
+    "explanationSv": "Morfar mäter isens tjocklek innan han går ut.",
+    "explanationJa": "{氷|こおり}の{厚|あつ}さを{測|はか}ります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om längd och avstånd: hur långt det är till olika ställen och hur man mäter i Sverige och Japan.",
+  "discussionPoints": [
+   "Hur långt har du till jobbet eller skolan?",
+   "Visste du att en svensk mil är tio kilometer?",
+   "Vad har du på gångavstånd där du bor?",
+   "Hur mäter man längd i Japan?"
+  ]
+ }
+}
