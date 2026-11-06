@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.10.0 – 2026-11-06
+
+**Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.9.0 → 0.10.0 nollställer progressionen (återställningspunkt sparas).
+
+**Bilder:** inga nya bilder eller animationer (produktägarens beslut står fast).
+
+### 42 nya moduler: *Hälsa & sjukvård* (helt publicerat)
+Det andra överämnet i rotområdet *Människan & hälsa*. Kedjan har `recommendedOrder` 801–857 och börjar efter *Beskriva smärta och obehag*. Totalt finns nu **341 publicerade moduler** och 630 nya ordposter (AI-utkast). Alla modulord på B2 eller högre har förklaringar från början (259 nya förklaringar, 1 306 totalt).
+- *Symtom & besvär*: Feber och frossa, Hosta och halsont, Ont i magen, Huvudvärk och yrsel, Trötthet och svaghet, Hudutslag och klåda, Beskriva symtom för vården
+- *Vårdbesök*: Vårdcentral och mottagning, Boka läkartid, Beskriva sjukdomshistoria, Undersökning och provtagning, Remiss och specialist, Besked och uppföljning, Patientens frågor
+- *Sjukdomar & diagnoser*: Förkylning och influensa, Infektionssjukdomar, Allergier och astma, Hjärt-kärlsjukdomar, Diabetes och ämnesomsättning, Kroniska sjukdomar, Skillnaden mellan symtom och diagnos
+- *Läkemedel & behandling*: Tabletter och kapslar, Recept och apotek, Dosering och intervall, Biverkningar och varningar, Salvor och inhalatorer, Vaccination och injektion, Följa en behandling
+- *Första hjälpen & olyckor*: Sår och blödningar, Stukning och fraktur, Brännskador, Medvetslöshet, HLR och livräddning, Larma 112, Ge en tydlig skadebeskrivning
+- *Förebyggande hälsa*: Motion och återhämtning, Näring och kostvanor, Sömnvanor, Stresshantering, Mun- och tandhälsa, Hälsoundersökningar, Riskfaktorer och hälsoval
+
+Drygt 100 flerordsuttryck är egna poster, till exempel *boka tid*, *förnya ett recept*, *hosta i armvecket*, *hålla linjen*, *lägga på*, *allvarligt skadad*, *rakt på sak*, *gå in i väggen*, *dra ner på* och *passiv rökning*. Svensk vårdkultur förklaras där den behövs: 1177, vårdcentral, remiss, e-recept, högkostnadsskydd, SOS Alarm, Nyckelhålet, snus och screening.
+
+**Homografer:** egna poster med nyckel för annan ordklass eller annan betydelse: `e.hosta-noun`, `e.blåsa-hud` och `e.var-sår`.
+
+Inga publicerade `m.*`- eller `s.*`-ID:n har ändrats.
+
+### Övrigt
+- Grundordförrådet har fått vanliga ord som vårdtexterna behöver, till exempel *gravid*, *kontroll*, *laboratorium*, *utbildning*, *forskning*, *samhälle*, *effekt*, *åtgärd*, *fysisk*, *passiv*, *tobak*, *cigarett* och *helikopter*, samt namn och förkortningar som *BVC*, *MRI*, *ADHD* och *Livsmedelsverket*.
+- E2E: den planerade katalogposten ligger nu i *Människan & hälsa → Känslor & psykologi → Grundkänslor → Glädje och lycka*, eftersom hela *Hälsa & sjukvård* är publicerat.
+
 ## 0.9.0 – 2026-11-06
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.8.0 → 0.9.0 nollställer progressionen (återställningspunkt sparas).

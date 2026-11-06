@@ -39,9 +39,12 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.9 – Kroppen & sinnena (klar)
 - 42 nya moduler: *Människan & hälsa → Kroppen & sinnena* helt publicerat (299 moduler totalt).
 
-## v0.10 – nästa steg
+## v0.10 – Hälsa & sjukvård (klar)
+- 42 nya moduler: *Människan & hälsa → Hälsa & sjukvård* helt publicerat (341 moduler totalt).
+
+## v0.11 – nästa steg
 - Infrastruktur för bilder och animationer enligt produktägarens kommande instruktion; därefter bilder för de publicerade modulerna.
-- Nästa överämne, ett i taget: *Människan & hälsa → Hälsa & sjukvård* (R02-A02).
+- Nästa överämne, ett i taget: *Människan & hälsa → Känslor & psykologi* (R02-A03).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
 - Japanska katalogtitlar (översättning + granskning).
 - Utökad validering (andel okända ord i lästext mot användarens nivå); morfologisk analys baserad på SALDO.
