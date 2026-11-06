@@ -1,0 +1,169 @@
+{
+ "id": "m.huvud-och-ansikte",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Huvud och ansikte",
+ "titleJa": "{頭|あたま}と{顔|かお}",
+ "descriptionSv": "Huvud och ansikte: skalle, hjässa, bakhuvud, tinning, nacke, haka, käke, ögonbryn, ögonfrans, ögonlock, näsrygg, näsborre, mungipa, smilgrop och ansiktsdrag.",
+ "descriptionJa": "{頭|あたま}と{顔|かお}：{頭蓋骨|ずがいこつ}、{頭頂部|とうちょうぶ}、{後頭部|こうとうぶ}、こめかみ、うなじ、あご、あごの{骨|ほね}、まゆ{毛|げ}、まつげ、まぶた、{鼻筋|はなすじ}、{鼻|はな}の{穴|あな}、{口角|こうかく}、えくぼ、{顔立|かおだ}ち。",
+ "categoryId": "R02-A01-T01",
+ "tags": [
+  "kropp"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.in-och-utcheckning"
+ ],
+ "related": [],
+ "recommendedOrder": 701,
+ "words": [
+  {
+   "senseId": "s.skalle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjässa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakhuvud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tinning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nacke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.haka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.käke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonbryn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonfrans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonlock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näsrygg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näsborre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mungipa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smilgrop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansiktsdrag.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem är det på bilden?",
+  "paragraphs": [
+   "Yui och Erik tittar på ett gammalt foto av Eriks morfar.",
+   "– Han har dina ansiktsdrag, säger Yui. Samma näsrygg och samma haka.",
+   "– Men han hade inget hår på hjässan, säger Erik och skrattar. Bara lite grått hår vid tinningarna och i nacken.",
+   "Yui tittar noga. Morfar har stora ögonbryn och långa ögonfransar. Hans ögonlock är lite tunga, och näsborrarna är stora. När han ler får han smilgropar, precis som Erik.",
+   "– Han hade ett märke på bakhuvudet, säger Erik. Han slog skallen i en dörr som barn. Och han hade alltid ont i käken.",
+   "På bilden går mungiporna upp. – Han ser glad ut, säger Yui. Erik nickar. – Det var han alltid."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem är det på fotot?",
+    "options": [
+     "Eriks pappa",
+     "Yuis morfar",
+     "Erik",
+     "Eriks morfar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… ett gammalt foto av Eriks morfar.",
+    "explanationJa": "エリックのおじいさんです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har Erik gemensamt med morfar enligt Yui?",
+    "options": [
+     "Håret på hjässan",
+     "Märket",
+     "Ögonfärgen",
+     "Näsryggen och hakan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Samma näsrygg och samma haka.",
+    "explanationJa": "{鼻筋|はなすじ}とあごです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Morfar hade mycket hår på hjässan.",
+    "correct": false,
+    "explanationSv": "… han hade inget hår på hjässan.",
+    "explanationJa": "ありませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var hade morfar ett märke?",
+    "options": [
+     "På hakan",
+     "Vid tinningen",
+     "På bakhuvudet",
+     "På näsan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han hade ett märke på bakhuvudet.",
+    "explanationJa": "{後頭部|こうとうぶ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Morfar ler på bilden.",
+    "correct": true,
+    "explanationSv": "På bilden går mungiporna upp.",
+    "explanationJa": "{笑|わら}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni beskriver ansikten: era egna, någon i familjen eller en känd person.",
+  "discussionPoints": [
+   "Vem i familjen liknar du mest?",
+   "Har du smilgropar?",
+   "Vad lägger du märke till först i ett ansikte?",
+   "Hur skulle du beskriva ansiktsdragen hos en känd person?"
+  ]
+ }
+}

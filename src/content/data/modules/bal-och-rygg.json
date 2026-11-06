@@ -1,0 +1,169 @@
+{
+ "id": "m.bal-och-rygg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bål och rygg",
+ "titleJa": "{胴体|どうたい}と{背中|せなか}",
+ "descriptionSv": "Bål och rygg: överkropp, underkropp, bål, bröst, midja, höft, navel, buk, ljumske, skulderblad, korsrygg, ländrygg, svank, rumpa och stjärt.",
+ "descriptionJa": "{胴体|どうたい}と{背中|せなか}：{上半身|じょうはんしん}、{下半身|かはんしん}、{胴体|どうたい}、{胸|むね}、ウエスト、{腰|こし}、へそ、{腹部|ふくぶ}、{脚|あし}のつけ{根|ね}、{肩甲骨|けんこうこつ}、{腰|こし}、{腰部|ようぶ}、{腰|こし}の{反|そ}り、お{尻|しり}、お{尻|しり}（{上品|じょうひん}な{言|い}い{方|かた}）。",
+ "categoryId": "R02-A01-T01",
+ "tags": [
+  "kropp"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.ben-och-fotter"
+ ],
+ "related": [],
+ "recommendedOrder": 704,
+ "words": [
+  {
+   "senseId": "s.bröst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.midja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överkropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underkropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.navel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.buk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljumske.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skulderblad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korsrygg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ländrygg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svank.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rumpa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stjärt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ont i ryggen",
+  "paragraphs": [
+   "Erik sitter vid datorn hela dagarna. Nu har han ont i korsryggen och mellan skulderbladen.",
+   "Han går till en läkare. Läkaren känner på hans buk och rygg. – Det sitter i ländryggen, säger hon. Du har för stor svank när du sitter.",
+   "– Du behöver träna bålen, inte bara överkroppen. Och underkroppen också: rumpan och benen.",
+   "Hon visar en övning. – Ligg på rygg. Lägg händerna på höfterna och lyft stjärten. Håll midjan stilla.",
+   "Erik försöker. Det gör ont i ljumsken. – Ta det lugnt, säger läkaren. Andas med bröstet och magen. Tänk på naveln: dra in den lite.",
+   "Efter en månad med övningar har Erik mindre ont."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var har Erik ont?",
+    "options": [
+     "I korsryggen och mellan skulderbladen",
+     "I nacken",
+     "I armarna",
+     "I fötterna"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Nu har han ont i korsryggen och mellan skulderbladen.",
+    "explanationJa": "{腰|こし}と{肩甲骨|けんこうこつ}の{間|あいだ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför har Erik ont enligt läkaren?",
+    "options": [
+     "Han springer för mycket",
+     "Han har för stor svank när han sitter",
+     "Han äter dåligt",
+     "Han sover för lite"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Du har för stor svank när du sitter.",
+    "explanationJa": "{座|すわ}るとき{腰|こし}が{反|そ}りすぎているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läkaren säger att Erik bara ska träna överkroppen.",
+    "correct": false,
+    "explanationSv": "Du behöver träna bålen, inte bara överkroppen.",
+    "explanationJa": "{体幹|たいかん}も{鍛|きた}えます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var gör det ont när Erik försöker övningen?",
+    "options": [
+     "I bröstet",
+     "I naveln",
+     "I höften",
+     "I ljumsken"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det gör ont i ljumsken.",
+    "explanationJa": "{脚|あし}のつけ{根|ね}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Övningarna hjälper Erik.",
+    "correct": true,
+    "explanationSv": "Efter en månad med övningar har Erik mindre ont.",
+    "explanationJa": "{楽|らく}になりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om rygg och kropp, och om hur man sitter och tränar.",
+  "discussionPoints": [
+   "Har du ont i ryggen ibland?",
+   "Hur sitter du när du arbetar?",
+   "Vilka övningar gör du för kroppen?",
+   "Vad gör du om du har suttit för länge?"
+  ]
+ }
+}

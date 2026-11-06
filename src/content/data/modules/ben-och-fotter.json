@@ -1,0 +1,169 @@
+{
+ "id": "m.ben-och-fotter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ben och fötter",
+ "titleJa": "{脚|あし}と{足|あし}",
+ "descriptionSv": "Ben och fötter: tå, stortå, lilltå, häl, fotsula, fotvalv, plattfot, fotled, vrist, smalben, vad, knäskål, knäveck, barfota och på tå.",
+ "descriptionJa": "{脚|あし}と{足|あし}：{足|あし}の{指|ゆび}、{足|あし}の{親指|おやゆび}、{足|あし}の{小指|こゆび}、かかと、{足|あし}の{裏|うら}、{土|つち}ふまず、{扁平足|へんぺいそく}、{足首|あしくび}、{足首|あしくび}・{足|あし}の{甲|こう}、すね、ふくらはぎ、ひざの{皿|さら}、ひざの{裏|うら}、はだしで、つま{先立|さきだ}ちで。",
+ "categoryId": "R02-A01-T01",
+ "tags": [
+  "kropp"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.armar-och-hander"
+ ],
+ "related": [],
+ "recommendedOrder": 703,
+ "words": [
+  {
+   "senseId": "s.tå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stortå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lilltå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.häl.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotsula.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotvalv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plattfot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotled.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vrist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smalben.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vad-kropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäskål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäveck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barfota.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-tå.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Leo springer barfota",
+  "paragraphs": [
+   "Leo har börjat springa barfota på stranden. Han tycker att det känns skönt under fotsulorna.",
+   "Men efter en vecka har han ont. Han går till en läkare.",
+   "– Du har lite plattfot, säger hon. Ditt fotvalv är lågt. Därför tar hälen emot allt när du springer.",
+   "Hon känner på hans fotled och vrist. – Och du har ont i vaderna och på smalbenet, eller hur? Leo nickar. – Det kliar också i knävecket, säger han.",
+   "– Börja långsamt, säger hon. Gå på tå tio gånger om dagen. Det är bra för vaderna. Och titta på din stortå: den är röd. Lilltån också.",
+   "Leo lovar att ta det lugnt. Han slår knäskålen i bordet när han reser sig. – Nej! Idag är inte min dag, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var springer Leo barfota?",
+    "options": [
+     "På stranden",
+     "I skogen",
+     "På gatan",
+     "I parken"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo har börjat springa barfota på stranden.",
+    "explanationJa": "{浜辺|はまべ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad säger läkaren om Leos fötter?",
+    "options": [
+     "Han har för högt fotvalv",
+     "Han har brutit tån",
+     "Allt är bra",
+     "Han har lite plattfot"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Du har lite plattfot.",
+    "explanationJa": "{軽|かる}い{扁平足|へんぺいそく}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo har ont i vaderna.",
+    "correct": true,
+    "explanationSv": "Och du har ont i vaderna … Leo nickar.",
+    "explanationJa": "そうです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ska Leo göra tio gånger om dagen?",
+    "options": [
+     "Springa barfota",
+     "Gå på tå",
+     "Böja knäna",
+     "Vila"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Gå på tå tio gånger om dagen.",
+    "explanationJa": "つま{先立|さきだ}ちで{歩|ある}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo har en bra dag.",
+    "correct": false,
+    "explanationSv": "Idag är inte min dag.",
+    "explanationJa": "ついていない{日|ひ}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ben och fötter.",
+  "discussionPoints": [
+   "Tycker du om att gå barfota?",
+   "Har du vrickat fotleden någon gång?",
+   "Vilka skor är bäst för dina fötter?",
+   "Har du ont i benen efter en lång promenad?"
+  ]
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "id": "m.armar-och-hander",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Armar och händer",
+ "titleJa": "{腕|うで}と{手|て}",
+ "descriptionSv": "Armar och händer: överarm, underarm, armhåla, handled, handflata, handrygg, knoge, knytnäve, fingertopp, pekfinger, långfinger, ringfinger, lillfinger, högerhänt och vänsterhänt.",
+ "descriptionJa": "{腕|うで}と{手|て}：{二|に}の{腕|うで}、{前腕|ぜんわん}、わきの{下|した}、{手首|てくび}、{手|て}のひら、{手|て}の{甲|こう}、{関節|かんせつ}、{握|にぎ}りこぶし、{指先|ゆびさき}、{人差|ひとさ}し{指|ゆび}、{中指|なかゆび}、{薬指|くすりゆび}、{小指|こゆび}、{右利|みぎき}きの、{左利|ひだりき}きの。",
+ "categoryId": "R02-A01-T01",
+ "tags": [
+  "kropp"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.huvud-och-ansikte"
+ ],
+ "related": [],
+ "recommendedOrder": 702,
+ "words": [
+  {
+   "senseId": "s.överarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.armhåla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handled.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handflata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handrygg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knoge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knytnäve.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fingertopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pekfinger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långfinger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lillfinger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ringfinger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högerhänt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vänsterhänt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Handen berättar",
+  "paragraphs": [
+   "Aiko har en bok om händer. Hon läser högt för sin pappa.",
+   "– Varje hand har en tumme, ett pekfinger, ett långfinger, ett ringfinger och ett lillfinger. Insidan heter handflatan, och utsidan heter handryggen.",
+   "– Handen sitter ihop med armen vid handleden. Mellan handleden och armbågen är underarmen, och mellan armbågen och axeln är överarmen. Under axeln finns armhålan.",
+   "– Om man böjer in alla fingertoppar mot handflatan, får man en knytnäve. Då syns knogarna tydligt.",
+   "Pappa visar sin vänstra hand. Han har en ring på ringfingret. – Jag är vänsterhänt, säger han. Mamma och du är högerhänta.",
+   "– Ungefär en av tio människor är vänsterhänt, läser Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad heter insidan av handen?",
+    "options": [
+     "Handryggen",
+     "Handleden",
+     "Knogen",
+     "Handflatan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Insidan heter handflatan.",
+    "explanationJa": "{手|て}のひらです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var är överarmen?",
+    "options": [
+     "Mellan handleden och armbågen",
+     "Under axeln",
+     "På handen",
+     "Mellan armbågen och axeln"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… mellan armbågen och axeln är överarmen.",
+    "explanationJa": "ひじと{肩|かた}の{間|あいだ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "När man gör en knytnäve syns knogarna.",
+    "correct": true,
+    "explanationSv": "Då syns knogarna tydligt.",
+    "explanationJa": "そうです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var har pappa sin ring?",
+    "options": [
+     "På lillfingret",
+     "På pekfingret",
+     "På tummen",
+     "På ringfingret"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han har en ring på ringfingret.",
+    "explanationJa": "{薬指|くすりゆび}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko är vänsterhänt.",
+    "correct": false,
+    "explanationSv": "Mamma och du är högerhänta.",
+    "explanationJa": "{右利|みぎき}きです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om händer och armar.",
+  "discussionPoints": [
+   "Är du högerhänt eller vänsterhänt?",
+   "Har du en ring? På vilket finger?",
+   "Vad gör du mest med händerna varje dag?",
+   "Har du brutit armen eller handleden någon gång?"
+  ]
+ }
+}
