@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.13.0 – 2026-11-06
+
+**Pilot klar:** hela *Människan & hälsa → Kroppen & sinnena* (42 moduler, 631 modulord) har nu en bild i ordintroduktionen och övningarna – **374 illustrationer** och **257 animationer**. Alla är AI-utkast och väntar på produktägarens stickprov.
+
+**Beslut (Claude, ändrar ADR 35 – se ADR 37):** Animation_tool- har inga mallar för stillbilder eller kroppsdelar, och sessionen kunde inte pusha dit. Konkreta saker, kroppsdelar och diagram ritas därför som kodillustrationer i Swechan. Handlingar, tillstånd och gester skrivs som scendata i spelarens format i `scripts/scenes/`. De kan flyttas till verktyget utan ändringar.
+
+**Beslut:** utvecklingsnollställningen är fortfarande på; 0.12.0 → 0.13.0 nollställer progressionen (återställningspunkt sparas).
+
+### Illustrationer (src/ui/wordArt)
+- Ett kroppskit där en ritning per vy används för många ord: den del ordet betyder får accentfärg och pekas ut med en pil. Vyerna är huvud och ansikte, händer, armar, ben och fötter, bål fram och bak, skelett, knäled, muskler, senor, organkarta, hjärta, kärl, hals och hjärna, urinvägar, fortplantningsorgan, ögat och örat.
+- Figurer med justerbar kroppsbyggnad visar ord som *långväxt*, *knubbig* och *axelbred*, med en grå jämförelsefigur.
+- Dessutom finns hud och hår, syn- och hörselhjälpmedel, sjukvårdssaker (gips, krycka, mitella, inhalator, insulinpenna), blodceller, matsmältning, hormoner, immunförsvar och smärtsymboler.
+
+### Animationer (scripts/scenes)
+- **130 verb:** kroppsrörelser, balans, skador, andning, sinnen, beröring, lyft och grepp, miner, gester, smärta, temperatur och sömn.
+- **113 tillstånd och personord:** hållning, rörlighet, sömn, temperatur, sjukdomstecken, miner och kroppsspråk.
+- Scenerna byggs med poser, ansiktsuttryck, ikoner och ljudmarkeringar ur spelarens schema; definitionen tas ur ordboken. Ansiktsord visas i närbild.
+- `npm run scenes:build -- --out dist/scenes [--strips fil.html] [--only ord]` bygger och validerar och kan skriva bildremsor för granskning. Importen sker med `npm run visuals:import dist/scenes`.
+
+### Tester
+- `sceneDefs.test.ts`: varje scendefinition tolkas och kompileras utan varningar och stämmer med den skeppade scenfilen.
+
+### Storlek
+- Huvudpaketet är oförändrat. Illustrationsdelen `render` som laddas vid behov växte från 10 till 42 kB gzip. 243 nya scenfiler är på 1–3,7 kB vardera.
+
+Inga ordposter, moduler eller publicerade ID:n har ändrats.
+
 ## 0.12.0 – 2026-11-06
 
 **Beslut (produktägaren, 2026-11-06):** alla ordposter ska få en visualisering (animation, scen eller symbol) som används i ordintroduktionen och i övningarna. Det tidigare stoppet för nya bilder och animationer är hävt. AI-utkast får visas i appen under arbetet. Mallarna i Animation_tool- (`registry/templates.json`) godkänns av Claude och stickprovas av produktägaren i piloten.
