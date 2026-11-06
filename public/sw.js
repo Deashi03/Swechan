@@ -2,7 +2,7 @@
  * Strategy: network-first for navigations (always get the newest app when
  * online, fall back to cache offline); cache-first for hashed build assets.
  * User data lives in IndexedDB and is never touched by the service worker. */
-const CACHE = 'swechan-v13';
+const CACHE = 'swechan-v14';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', './index.html', './manifest.webmanifest', './icon.svg'])).then(() => self.skipWaiting()));

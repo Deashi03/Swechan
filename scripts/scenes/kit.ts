@@ -21,9 +21,10 @@ export type Def = {
   posterMs?: number;
   loop?: boolean;
   env?: 'neutral' | 'room' | 'bedroom' | 'kitchen' | 'outdoors.park' | 'street';
-  actors?: SceneInput['actors'];
-  props?: SceneInput['props'];
-  shapes?: SceneInput['shapes'];
+  // loosely typed on purpose: the player schema (Scene.safeParse in build.ts and in the test) is the real check
+  actors?: Record<string, unknown>[];
+  props?: Record<string, unknown>[];
+  shapes?: Record<string, unknown>[];
   timeline: Action[];
   feature: string;
   note?: string;
@@ -71,5 +72,5 @@ export function build(d: Def): SceneInput {
     focus: { targets: ['p'], feature: d.feature },
     pedagogy: { quizEligible: d.quiz ?? false, group: d.group, confusableWith: d.confusable ?? [], reviewStatus: 'ai-draft', note: d.note ?? 'Utkast skrivet som data i Swechan (scripts/scenes).' },
     label: { show: 'optional' },
-  } as SceneInput;
+  } as unknown as SceneInput;
 }

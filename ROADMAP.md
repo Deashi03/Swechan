@@ -48,8 +48,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.12 – Animationer: grunden (klar)
 - Spelaren från Animation_tool-, registret `wordVisuals.json`, animation i introduktionen och posterbild i bildövningar, offline per modul, visualiseringsplan för alla betydelser.
 
-## v0.13 – Pilot: Kroppen & sinnena helt visualiserat
-- Granska planen per modul, producera scener i Animation_tool-, blindtesta, importera; mät tid och kvalitet per modul.
+## v0.13 – Pilot: Kroppen & sinnena helt visualiserat (klar)
+- Alla 631 modulord i *Kroppen & sinnena* har en bild: 374 kodillustrationer (kroppsdelar, organ, diagram, hjälpmedel, symboler) och 257 animationer (243 nya scener skrivna som data i `scripts/scenes`).
+- Kvar: stickprov av produktägaren, flytta scenerna och kroppsdelsmallarna till Animation_tool- när en session har pushbehörighet där, dela `render`-delen per överämne.
 
 ## v0.14 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.

@@ -1,8 +1,31 @@
 # Projektstatus – överlämning
 
-**Version:** 0.12.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.12 utvecklades i grenen `claude/swechan-0.12`)
+**Version:** 0.13.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.13 utvecklades i grenen `claude/swechan-0.13`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.13 – släppt 2026-11-06 (pilot: Kroppen & sinnena helt visualiserat)
+
+- **Läge:** alla 631 modulord i *Kroppen & sinnena* har en bild (374 illustrationer, 257 animationer). I hela appen har 797 av 5 758 modulord en visualisering.
+- **Hur det gjordes (ADR 37):**
+  - Kroppsdelar, organ, diagram, hjälpmedel och symboler är kodillustrationer i `src/ui/wordArt/`. Kitet består av `body`, `limbs`, `anatomy`, `organs`, `senses`, `figures` och `medical`, och motiven ligger i `bodyMotifs.ts`.
+  - Verb och tillstånd är scendata i `scripts/scenes/kropp.scenes.ts` (verb) och `kropp2.scenes.ts` (tillstånd).
+  - Arbetsflödet är `npm run scenes:build -- --out dist/scenes --strips /tmp/remsor.html`. Titta på remsorna och kör sedan `npm run visuals:import dist/scenes`.
+  - Planraderna för pilotens ord har `by: manual`.
+- **Erfarenheter (mätt i piloten):**
+  - Ett gemensamt kit per vy gör att ett nytt kroppsord oftast kostar en rad.
+  - Scener som data går snabbt för poser, miner och gester, men rigg och perspektiv sätter gränser. I framvy böjs armbågen bara framåt, så båda händerna kan inte nå öronen. Huvudet kan inte vridas, och blicken kan inte gå uppåt. Sådana ord fick en kompromiss eller en stillbild.
+  - Granskning med bildremsor i 4 rutor per scen räckte för att hitta felaktiga poser.
+- **Inte gjort:**
+  - Produktägarens stickprov återstår, och alla bilder är `ai-draft`.
+  - Inget blindtest i Animation_tool- är gjort för de nya scenerna.
+- **Animation_tool-:**
+  - Det går fortfarande inte att pusha dit från den här sessionen.
+  - Scenerna i `scripts/scenes` kan flyttas dit oförändrade.
+  - Den lokala grenen `claude/swechan-ga-och-springa` finns bara i containern.
+- **Nästa steg (0.14):**
+  - Två spår: *Relationer & familj* (första modul *Föräldrar och barn*, förkunskap `m.att-uppmuntra-andra`, order 1001) med bilder från början, och påfyllning av *Vardag & hem*.
+  - Dela `render`-delen per överämne innan nästa områdes motiv läggs till.
 
 ## 0.12 – släppt 2026-11-06 (animationer: grunden)
 
