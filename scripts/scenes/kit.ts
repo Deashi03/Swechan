@@ -12,7 +12,7 @@ type Action = Record<string, unknown> & { t: number; action: string };
 
 export type Def = {
   sense: string; // senseId
-  hint: string; // meaningHint (Swedish definition)
+  hint?: string; // meaningHint (Swedish definition); taken from the dictionary when left out
   group: string;
   category?: 'action' | 'state' | 'emotion' | 'property';
   quiz?: boolean;
@@ -30,10 +30,10 @@ export type Def = {
 };
 
 /** The main actor "p": standing at x, facing right by default. `close` = scale 1.7, head big in the frame (faces). */
-export const P = (o: { x?: number; y?: number; facing?: 'left' | 'right'; close?: boolean; top?: string; bottom?: string; hair?: string; hairStyle?: 'short' | 'long' | 'bun' | 'curly'; id?: string; variant?: 'a' | 'b' | 'c'; shorts?: boolean; face?: Face } = {}) => ({
+export const P = (o: { x?: number; y?: number; facing?: 'left' | 'right'; close?: boolean; top?: string; bottom?: string; hair?: string; hairStyle?: 'short' | 'long' | 'bun' | 'curly'; id?: string; variant?: 'a' | 'b' | 'c'; shorts?: boolean; face?: Face; skin?: string } = {}) => ({
   id: o.id ?? 'p', asset: 'character.base' as const, variant: o.variant ?? 'a',
   at: { x: o.x ?? 60, y: o.y ?? (o.close ? 186 : 104) }, facing: o.facing ?? 'right', scale: o.close ? 1.7 : 1,
-  wardrobe: { top: o.top ?? 'teal', bottom: o.bottom ?? 'dark', ...(o.hair ? { hair: o.hair } : {}), ...(o.hairStyle ? { hairStyle: o.hairStyle } : {}), ...(o.shorts ? { shorts: true } : {}) },
+  wardrobe: { top: o.top ?? 'teal', bottom: o.bottom ?? 'dark', ...(o.hair ? { hair: o.hair } : {}), ...(o.hairStyle ? { hairStyle: o.hairStyle } : {}), ...(o.shorts ? { shorts: true } : {}), ...(o.skin ? { skin: o.skin } : {}) },
   ...(o.face ? { face: o.face } : {}),
 });
 
@@ -63,8 +63,8 @@ export function build(d: Def): SceneInput {
   const durationMs = d.durationMs ?? 3200;
   return {
     schemaVersion: 1, assetsVersion: 1, motionsVersion: 1,
-    animationId: `anim.${lemma}.${n}`, kind: 'word', template: 'body', senseId: d.sense,
-    titleSv: lemma.replace(/-/g, ' '), meaningHint: d.hint, category: d.category ?? 'action',
+    animationId: `anim.${lemma.replace(/[éè]/g, 'e').replace(/ü/g, 'u')}.${n}`, kind: 'word', template: 'body', senseId: d.sense,
+    titleSv: lemma.replace(/-/g, ' '), meaningHint: d.hint ?? '', category: d.category ?? 'action',
     durationMs, loop: d.loop ?? false, holdMs: 400, posterMs: d.posterMs ?? Math.round(durationMs * 0.6),
     canvas: { w: 120, h: 120 }, environment: { id: d.env ?? 'neutral', time: 'day' },
     actors: d.actors ?? [P()], props: d.props ?? [], shapes: d.shapes ?? [], timeline: d.timeline,
