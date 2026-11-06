@@ -1,0 +1,171 @@
+{
+ "id": "m.ge-en-tydlig-skadebeskrivning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ge en tydlig skadebeskrivning",
+ "titleJa": "けがの{状況|じょうきょう}をはっきり{伝|つた}える",
+ "descriptionSv": "Ge en tydlig skadebeskrivning: trafikolycka, singelolycka, fallolycka, vittne, inblandad, påkörd, fastklämd, klämskada, allvarligt skadad, lindrigt skadad, livshotande, skadebeskrivning, kortfattad, rakt på sak och hålla sig lugn.",
+ "descriptionJa": "けがの{状況|じょうきょう}をはっきり{伝|つた}える：{交通事故|こうつうじこ}、{単独事故|たんどくじこ}、{転倒事故|てんとうじこ}、{目撃者|もくげきしゃ}、{関|かか}わった、はねられた、{挟|はさ}まれて{動|うご}けない、{挟|はさ}まれたけが、{重傷|じゅうしょう}の、{軽傷|けいしょう}の、{命|いのち}にかかわる、けがの{状況|じょうきょう}{説明|せつめい}、{簡潔|かんけつ}な、{単刀直入|たんとうちょくにゅう}に、{落|お}ち{着|つ}いている。",
+ "categoryId": "R02-A02-T05",
+ "tags": [
+  "hälsa",
+  "första hjälpen",
+  "nödsituation"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.larma-112"
+ ],
+ "related": [],
+ "recommendedOrder": 847,
+ "words": [
+  {
+   "senseId": "s.trafikolycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.singelolycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fallolycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vittne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inblandad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påkörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fastklämd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klämskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allvarligt-skadad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lindrigt-skadad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livshotande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadebeskrivning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortfattad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rakt-på-sak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-sig-lugn.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad har hänt?",
+  "paragraphs": [
+   "Max kör hem från jobbet när han ser en trafikolycka. En bil har kört på en cyklist. Det är inte en singelolycka, för två personer är inblandade.",
+   "Max stannar bilen och ringer 112. Han försöker hålla sig lugn. Larmoperatören ber honom att ge en skadebeskrivning.",
+   "– Var kortfattad och säg det viktigaste, säger larmoperatören. Max svarar rakt på sak: – Cyklisten är påkörd och ligger på marken. Han andas, men han är allvarligt skadad och blöder mycket från benet.",
+   "– Hur är det med föraren? Max går fram till bilen. Föraren sitter fastklämd, för dörren går inte att öppna. Hon har ont i benen och kan ha en klämskada. Men hon är vaken och pratar, så hon verkar bara lindrigt skadad.",
+   "– Är någon av dem i livshotande fara? frågar larmoperatören. – Jag tror att cyklisten kan vara det, säger Max.",
+   "En kvinna som såg olyckan kommer fram. Hon är ett vittne och kan berätta för polisen vad som hände. På vägen hem tänker Max på sin mormor. Förra året ramlade hon i trappan hemma. Det var också en olycka, en fallolycka."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har hänt?",
+    "options": [
+     "En bil har kört på en cyklist",
+     "En cyklist har ramlat själv",
+     "En kvinna har ramlat i trappan",
+     "En buss har kört av vägen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En bil har kört på en cyklist.",
+    "explanationJa": "{車|くるま}が{自転車|じてんしゃ}の{人|ひと}をはねました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Det är en singelolycka.",
+    "correct": false,
+    "explanationSv": "Det är inte en singelolycka, för två personer är inblandade.",
+    "explanationJa": "2{人|り}が{関|かか}わっているので{単独事故|たんどくじこ}ではありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad ber larmoperatören Max om?",
+    "options": [
+     "En bild",
+     "Hans namn",
+     "Att han åker hem",
+     "En skadebeskrivning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Larmoperatören ber honom att ge en skadebeskrivning.",
+    "explanationJa": "けがの{状況|じょうきょう}{説明|せつめい}を{求|もと}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför kan föraren inte komma ut?",
+    "options": [
+     "Hon sover",
+     "Dörren går inte att öppna",
+     "Hon vill stanna i bilen",
+     "Polisen säger nej"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Föraren sitter fastklämd, för dörren går inte att öppna.",
+    "explanationJa": "ドアが{開|あ}かないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Cyklisten är mer skadad än föraren.",
+    "correct": true,
+    "explanationSv": "… han är allvarligt skadad … hon verkar bara lindrigt skadad.",
+    "explanationJa": "{自転車|じてんしゃ}の{人|ひと}は{重傷|じゅうしょう}、{運転手|うんてんしゅ}は{軽傷|けいしょう}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni övar på att beskriva en olycka i telefonen.",
+  "discussionPoints": [
+   "Vad säger du först när du ringer om en olycka?",
+   "Hur tar man reda på om någon är allvarligt skadad?",
+   "Är det lätt för dig att hålla dig lugn när något händer?",
+   "Har du varit vittne till en olycka?"
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "id": "m.brannskador",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Brännskador",
+ "titleJa": "やけど",
+ "descriptionSv": "Brännskador: skållhet, skålla sig, ljummet vatten, kranvatten, brännblåsa, solbränna, ytlig, plastfolie, frätskada, elolycka, rökförgiftning, brandrisk, eldfarlig, svedd och glöd.",
+ "descriptionJa": "やけど：やけどするほど{熱|あつ}い、{熱湯|ねっとう}でやけどする、ぬるま{湯|ゆ}、{水道水|すいどうすい}、やけどの{水|みず}ぶくれ、{日焼|ひや}け、{浅|あさ}い、ラップ、{化学熱傷|かがくねっしょう}、{感電事故|かんでんじこ}、{煙|けむり}による{中毒|ちゅうどく}、{火災|かさい}の{危険|きけん}、{燃|も}えやすい、{焦|こ}げた、{残|のこ}り{火|び}。",
+ "categoryId": "R02-A02-T05",
+ "tags": [
+  "hälsa",
+  "första hjälpen",
+  "brännskada"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.stukning-och-fraktur"
+ ],
+ "related": [],
+ "recommendedOrder": 843,
+ "words": [
+  {
+   "senseId": "s.skållhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skålla-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljummet-vatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kranvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brännblåsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solbränna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ytlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plastfolie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frätskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elolycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rökförgiftning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eldfarlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svedd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glöd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Varmt och farligt",
+  "paragraphs": [
+   "Lillebror Max drar ner en kopp skållhett te från bordet och skållar sig på armen. Mamma kyler armen med ljummet vatten från kranen i tjugo minuter. Kranvatten är bäst, säger hon.",
+   "Efter en stund blir det en brännblåsa. – Stick inte hål på den, säger mamma. Hon täcker skadan löst med plastfolie. Den är ytlig och läker på en vecka.",
+   "Förra sommaren fick Aiko svår solbränna. Huden var röd och ömmade, och det kom små blåsor.",
+   "Grannen fick en frätskada när han rensade avloppet med ett starkt medel. En annan gång var det en elolycka, när en trasig sladd gav honom ström.",
+   "Det är stor brandrisk i skogen just nu, så man får inte grilla. Förra året sprang en kille in i ett brinnande hus. Han fick rökförgiftning, och hans hår var svett.",
+   "Efter grillfesten häller pappa vatten på glöden. – Glöden kan vara het länge, säger han. Och bensin är eldfarligt, så den ska inte stå nära grillen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur skadar sig Max?",
+    "options": [
+     "Han ramlar",
+     "Han skär sig",
+     "Han skållar sig på te",
+     "Han får solbränna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… och skållar sig på armen.",
+    "explanationJa": "お{茶|ちゃ}でやけどします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge kyler mamma armen?",
+    "options": [
+     "I en minut",
+     "I en timme",
+     "I tjugo minuter",
+     "Inte alls"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mamma kyler armen med ljummet vatten från kranen i tjugo minuter.",
+    "explanationJa": "20{分|ぷん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mamma sticker hål på brännblåsan.",
+    "correct": false,
+    "explanationSv": "– Stick inte hål på den, säger mamma.",
+    "explanationJa": "つぶしません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför får man inte grilla i skogen?",
+    "options": [
+     "Det är stor brandrisk",
+     "Det regnar",
+     "Det är för kallt",
+     "Det är förbjudet att äta där"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är stor brandrisk i skogen just nu, så man får inte grilla.",
+    "explanationJa": "{火災|かさい}の{危険|きけん}が{高|たか}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man ska vara försiktig med glöd även när elden är borta.",
+    "correct": true,
+    "explanationSv": "– Glöden kan vara het länge …",
+    "explanationJa": "{長|なが}く{熱|あつ}いままです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om brännskador och brandsäkerhet.",
+  "discussionPoints": [
+   "Har du bränt dig någon gång?",
+   "Vad gör man med en brännskada?",
+   "Får man grilla i skogen där du bor?",
+   "Hur skyddar du dig mot solbränna?"
+  ]
+ }
+}

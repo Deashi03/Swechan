@@ -1,0 +1,170 @@
+{
+ "id": "m.medvetsloshet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Medvetslöshet",
+ "titleJa": "{意識|いしき}を{失|うしな}う",
+ "descriptionSv": "Medvetslöshet: svimning, medvetande, medvetslös, vid medvetande, medvetslöshet, vakna till, ruska, tilltala, känna efter, andas normalt, lyfta hakan, fria luftvägar, stabilt sidoläge, chock och chockad.",
+ "descriptionJa": "{意識|いしき}を{失|うしな}う：{失神|しっしん}、{意識|いしき}、{意識|いしき}のない、{意識|いしき}がある、{意識不明|いしきふめい}、{意識|いしき}が{戻|もど}る、ゆさぶる、{呼|よ}びかける、{確|たし}かめる、ふつうに{呼吸|こきゅう}する、あごを{持|も}ち{上|あ}げる、{気道確保|きどうかくほ}、{回復体位|かいふくたいい}、ショック、ショックを{受|う}けた。",
+ "categoryId": "R02-A02-T05",
+ "tags": [
+  "hälsa",
+  "första hjälpen"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.brannskador"
+ ],
+ "related": [],
+ "recommendedOrder": 844,
+ "words": [
+  {
+   "senseId": "s.svimning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medvetande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medvetslös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vid-medvetande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medvetslöshet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vakna-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ruska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tilltala.1",
+   "active": true
+  },
+  {
+   "senseId": "s.känna-efter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andas-normalt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyfta-hakan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fria-luftvägar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stabilt-sidoläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chockad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Någon ligger på marken",
+  "paragraphs": [
+   "På väg hem från skolan ser Aiko och Leo en man som ligger på marken. De blir chockade, men de minns vad de har lärt sig i första hjälpen.",
+   "Först tilltalar Aiko mannen med hög röst. – Hallå, hör du mig? Han svarar inte. Leo ruskar honom försiktigt i axlarna. Mannen är medvetslös.",
+   "Aiko böjer hans huvud bakåt och lyfter hakan, så att han har fria luftvägar. Sedan ska hon känna efter om han andas. Han andas normalt.",
+   "De lägger honom i stabilt sidoläge, och Leo ringer 112. – Är han vid medvetande? frågar kvinnan i telefonen. – Nej, men han andas, säger Leo.",
+   "Efter några minuter ser de att mannen vaknar till. Han säger att han inte har ätit på hela dagen. Kanske var det en svimning, eller så hade han lågt blodsocker.",
+   "När hjälpen kommer säger personalen att medvetslöshet alltid är allvarligt. Mannen är lite i chock, men han har fått tillbaka medvetandet. – Ni gjorde precis rätt, säger de till Aiko och Leo."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko först?",
+    "options": [
+     "Hon ringer 112",
+     "Hon lyfter hakan",
+     "Hon tilltalar mannen med hög röst",
+     "Hon springer därifrån"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Först tilltalar Aiko mannen med hög röst.",
+    "explanationJa": "まず{大|おお}きな{声|こえ}で{呼|よ}びかけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför lyfter Aiko hakan?",
+    "options": [
+     "För att se hans ansikte",
+     "För att väcka honom",
+     "För att han fryser",
+     "För att han ska ha fria luftvägar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… och lyfter hakan, så att han har fria luftvägar.",
+    "explanationJa": "{気道|きどう}を{確保|かくほ}するためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mannen andas inte.",
+    "correct": false,
+    "explanationSv": "Han andas normalt.",
+    "explanationJa": "ふつうに{呼吸|こきゅう}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur lägger de mannen?",
+    "options": [
+     "På magen",
+     "I stabilt sidoläge",
+     "Sittande",
+     "På rygg med benen upp"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De lägger honom i stabilt sidoläge …",
+    "explanationJa": "{回復体位|かいふくたいい}にします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko och Leo hjälpte mannen på rätt sätt.",
+    "correct": true,
+    "explanationSv": "– Ni gjorde precis rätt …",
+    "explanationJa": "{正|ただ}しい{行動|こうどう}でした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad man gör om någon är medvetslös.",
+  "discussionPoints": [
+   "Har du lärt dig stabilt sidoläge?",
+   "Vad skulle du göra om någon låg på marken?",
+   "Har du svimmat någon gång?",
+   "Varför är fria luftvägar så viktiga?"
+  ]
+ }
+}
