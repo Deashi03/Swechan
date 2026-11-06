@@ -1,0 +1,170 @@
+{
+ "id": "m.ogats-delar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ögats delar",
+ "titleJa": "{目|め}の{部位|ぶい}",
+ "descriptionSv": "Ögats delar: ögonglob, ögonhåla, ögonvita, ögonfärg, iris, pupill, hornhinna, lins, näthinna, synnerv, tårkanal, tårvätska, ögondroppe, blinka och kisa.",
+ "descriptionJa": "{目|め}の{部位|ぶい}：{眼球|がんきゅう}、{眼窩|がんか}、{白目|しろめ}、{目|め}の{色|いろ}、{虹彩|こうさい}、{瞳孔|どうこう}、{角膜|かくまく}、{水晶体|すいしょうたい}、{網膜|もうまく}、{視神経|ししんけい}、{涙管|るいかん}、{涙液|るいえき}、{目薬|めぐすり}、まばたきする、{目|め}を{細|ほそ}める。",
+ "categoryId": "R02-A01-T04",
+ "tags": [
+  "kropp",
+  "syn"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.fortplantningsorgan"
+ ],
+ "related": [],
+ "recommendedOrder": 731,
+ "words": [
+  {
+   "senseId": "s.ögonhåla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonglob.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonvita.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonfärg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pupill.1",
+   "active": true
+  },
+  {
+   "senseId": "s.iris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hornhinna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lins.2",
+   "active": true
+  },
+  {
+   "senseId": "s.synnerv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näthinna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tårkanal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blinka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tårvätska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögondroppe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kisa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hos ögonläkaren",
+  "paragraphs": [
+   "Yuis ögon har varit torra och röda i en vecka. Hon går till en läkare för ögon.",
+   "Läkaren lyser med en lampa. – Titta rakt fram. Blinka inte. Hon tittar på hornhinnan, irisen och pupillen. Pupillen blir mindre i det starka ljuset.",
+   "– Dina ögonvitor är röda, säger hon. Du har för lite tårvätska. Det är vanligt när man sitter vid en skärm. Man blinkar för sällan.",
+   "Sedan tittar läkaren längst in i ögat, på näthinnan och synnerven. Där är allt bra. Linsen ser också bra ut.",
+   "– Du kan använda ögondroppar, säger läkaren. Och ta pauser. Om du kisar mycket mot skärmen kanske du behöver glasögon.",
+   "Yui frågar varför hennes ögonfärg är brun. – Det beror på irisen, säger läkaren. Hela ögongloben ligger skyddad i ögonhålan, men bara irisen har färg. Och tårkanalen leder tårarna ner till näsan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går Yui till läkaren?",
+    "options": [
+     "Hon ser dåligt",
+     "Hon har ont i huvudet",
+     "Hon behöver nya glasögon",
+     "Hennes ögon är torra och röda"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Yuis ögon har varit torra och röda i en vecka.",
+    "explanationJa": "{目|め}が{乾|かわ}いて{赤|あか}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer med pupillen i starkt ljus?",
+    "options": [
+     "Den blir mindre",
+     "Den blir större",
+     "Den blir röd",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Pupillen blir mindre i det starka ljuset.",
+    "explanationJa": "{小|ちい}さくなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Yui har för mycket tårvätska.",
+    "correct": false,
+    "explanationSv": "Du har för lite tårvätska.",
+    "explanationJa": "{少|すく}なすぎます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad föreslår läkaren?",
+    "options": [
+     "En operation",
+     "Ögondroppar och pauser",
+     "Nya linser",
+     "Att sova mer"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Du kan använda ögondroppar … Och ta pauser.",
+    "explanationJa": "{目薬|めぐすり}と{休憩|きゅうけい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Näthinnan är frisk.",
+    "correct": true,
+    "explanationSv": "… på näthinnan och synnerven. Där är allt bra.",
+    "explanationJa": "{健康|けんこう}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ögon och hur man tar hand om dem.",
+  "discussionPoints": [
+   "Vilken ögonfärg har du?",
+   "Får du torra ögon av skärmar?",
+   "Hur ofta tar du pauser från skärmen?",
+   "Har du varit hos en läkare för ögonen?"
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "id": "m.orats-delar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Örats delar",
+ "titleJa": "{耳|みみ}の{部位|ぶい}",
+ "descriptionSv": "Örats delar: ytteröra, örsnibb, hörselgång, öronvax, trumhinna, mellanöra, hörselben, inneröra, snäcka, balansorgan, öroninflammation, örsprång, öronpropp, lock för öronen och tryck i öronen.",
+ "descriptionJa": "{耳|みみ}の{部位|ぶい}：{外耳|がいじ}、{耳|みみ}たぶ、{外耳道|がいじどう}、{耳垢|みみあか}、{鼓膜|こまく}、{中耳|ちゅうじ}、{耳小骨|じしょうこつ}、{内耳|ないじ}、{蝸牛|かぎゅう}、{平衡器官|へいこうきかん}、{中耳炎|ちゅうじえん}、{耳|みみ}のひどい{痛|いた}み、{耳栓|みみせん}、{耳|みみ}が{詰|つ}まった{感|かん}じ、{耳|みみ}の{圧迫感|あっぱくかん}。",
+ "categoryId": "R02-A01-T04",
+ "tags": [
+  "kropp",
+  "hörsel"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.seende-och-synfel"
+ ],
+ "related": [],
+ "recommendedOrder": 733,
+ "words": [
+  {
+   "senseId": "s.ytteröra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.örsnibb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öronvax.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörselgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trumhinna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellanöra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörselben.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inneröra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snäcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.balansorgan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öroninflammation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.örsprång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öronpropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lock-för-öronen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryck-i-öronen.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ont i öronen",
+  "paragraphs": [
+   "Aikos lillebror vaknar med örsprång. Han har varit förkyld i en vecka. Mamma tar honom till läkaren.",
+   "Läkaren tittar in i hörselgången med en lampa. – Det är öroninflammation i mellanörat, säger hon. Trumhinnan är röd.",
+   "Hon förklarar för Aiko: – Ytterörat är den del vi ser, med örsnibben längst ner. Sedan kommer hörselgången, där öronvaxet bildas. Bakom trumhinnan finns mellanörat med tre små hörselben.",
+   "– Längst in är innerörat. Där finns snäckan, som gör ljudet till signaler, och balansorganet.",
+   "Två veckor senare ska familjen flyga. När planet landar får lillebror tryck i öronen. Efteråt har han lock för öronen en stund.",
+   "På hotellet är det mycket ljud från gatan. Aiko sover med öronproppar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går lillebror till läkaren?",
+    "options": [
+     "Han har ont i magen",
+     "Han har örsprång",
+     "Han har brutit armen",
+     "Han ser dåligt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aikos lillebror vaknar med örsprång.",
+    "explanationJa": "{耳|みみ}がひどく{痛|いた}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var sitter hörselbenen?",
+    "options": [
+     "I ytterörat",
+     "I mellanörat",
+     "I hörselgången",
+     "I örsnibben"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Bakom trumhinnan finns mellanörat med tre små hörselben.",
+    "explanationJa": "{中耳|ちゅうじ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Balansorganet sitter i innerörat.",
+    "correct": true,
+    "explanationSv": "Längst in är innerörat. Där finns … balansorganet.",
+    "explanationJa": "そうです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad händer när planet landar?",
+    "options": [
+     "Aiko somnar",
+     "Lillebror får tryck i öronen",
+     "Lillebror gråter",
+     "Inget"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När planet landar får lillebror tryck i öronen.",
+    "explanationJa": "{耳|みみ}に{圧迫感|あっぱくかん}が{出|で}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är tyst på hotellet.",
+    "correct": false,
+    "explanationSv": "På hotellet är det mycket ljud från gatan.",
+    "explanationJa": "うるさいです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om öron och om att skydda hörseln.",
+  "discussionPoints": [
+   "Har du haft öroninflammation?",
+   "Får du tryck i öronen när du flyger?",
+   "Sover du med öronproppar?",
+   "Har du hål i örsnibbarna?"
+  ]
+ }
+}
