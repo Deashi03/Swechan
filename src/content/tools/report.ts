@@ -5,6 +5,7 @@
 import type { CatalogIndex } from '../catalog/catalogIndex';
 import { validateCatalog } from '../catalog/validateCatalog';
 import type { ContentRepository } from '../repository';
+import { visualCoverage } from '../visualPlan';
 import { validateContent } from '../validateContent';
 import { checkVocabulary, type CoreVocabulary } from '../vocabularyCheck';
 
@@ -34,6 +35,8 @@ export function buildContentReport(repo: ContentRepository, core: CoreVocabulary
   const unintroducedWords = checkVocabulary(repo, core).map((i) => `${i.where}: [${i.unknown.join(', ')}]`);
   const catalogIssues = validateCatalog(catalog, repo.modules.map((m) => m.id)).map((i) => `${i.where}: ${i.message}`);
   const tr = catalog.translationStatus();
+  const moduleSenses = [...new Set(repo.modules.flatMap((m) => m.words.map((w) => w.senseId)))];
+  const vis = visualCoverage(moduleSenses);
   const r = {
     publishedModules: repo.modules.length,
     plannedModules: catalog.modules.filter((m) => m.status === 'planned' && !catalog.publishedModuleFor(m.catalogId)).length,
@@ -59,6 +62,7 @@ export function buildContentReport(repo: ContentRepository, core: CoreVocabulary
 - Planerade katalogmoduler som inte är publicerade: **${r.plannedModules}** av ${catalog.modules.length}
 - Ordposter: ${r.entries} · betydelser: ${r.senses}
 - Granskningsstatus för betydelser: **${r.sensesReviewed} mänskligt granskade**, ${r.sensesAiDraft} AI-utkast
+- Visualisering av modulord (0.12): **${vis.produced} av ${vis.total} klara** · plan: animation ${vis.planned.animation}, scen ${vis.planned.scene}, symbol ${vis.planned.symbol}, ingen ${vis.planned.none}${vis.missingPlan ? ` · **${vis.missingPlan} saknar plan**` : ''}
 - Japanska katalogtitlar: kategorier ${tr.categoriesWithJa}/${catalog.categories.length}, moduler ${tr.modulesWithJa}/${catalog.modules.length} (saknade titler får inte fabriceras)
 
 ## Publicerade moduler

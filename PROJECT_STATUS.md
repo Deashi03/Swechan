@@ -1,8 +1,18 @@
 # Projektstatus – överlämning
 
-**Version:** 0.11.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.11 utvecklades i grenen `claude/swechan-0.11`)
+**Version:** 0.12.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.12 utvecklades i grenen `claude/swechan-0.12`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.12 – släppt 2026-11-06 (animationer: grunden)
+
+- **Beslut (produktägaren):** varje ordpost ska få en visualisering som används i introduktion och övningar. Stoppet för bilder/animationer är hävt; AI-utkast får visas. Claude godkänner mallarna i Animation_tool-; produktägaren stickprovar i piloten.
+- **Plan (godkänd av produktägaren):** 0.12 grunden → 0.13 pilot *Kroppen & sinnena* helt visualiserat (~630 poster) → från 0.14 två spår per release: ett nytt överämne som är "klart" först när varje modulord har visualisering, plus ett befintligt överämne som fylls på (Vardag & hem först, sedan kedjans ordning).
+- **Arbetsflöde för bilder:** producera/ändra scener i Animation_tool- (`npm run anim:batch`, `anim:validate`, blindtest) → `npm run anim:export` där → i Swechan `npm run visuals:import <sökväg>/dist/swechan` → `npm test`. Nya ord: `npm run visuals:plan` (validatorn stoppar annars). Ändra aldrig `senseId`; `animationId` med å/ä/ö får ASCII-säkert filnamn automatiskt.
+- **Läge:** 84 animationer importerade; 180 av 5 758 modulord har visualisering (inklusive de gamla kodillustrationerna). Plan: animation 1 145, scen 3 036, symbol 1 617, ingen 1 (AI-utkast).
+- **Animation_tool-:** sessionen kan inte pusha dit. Grenen `claude/swechan-ga-och-springa` (14 scener + gångsätt) finns bara lokalt i den här containern och som bundle i scratchpad – scenerna själva är dock bevarade i Swechan (`public/anim/scenes/`, rå scen = källan). Nästa session bör ha båda repona med pushbehörighet.
+- **Nästa steg (0.13):** pilot *Kroppen & sinnena*: gå igenom planen modul för modul (rätta `by: manual`), producera scener med recept/batch i Animation_tool-, blindtesta ett stickprov per ämnesgrupp, importera, mät tid per modul.
+- **Kända begränsningar:** spelarpaketet är 52 kB gzip (målet var 15 kB; föremålsbiblioteket står för det mesta). Heuristiken klassar många konkreta adjektiv (*rostig*, *vissen*) som symbol – justeras i produktionen.
 
 ## 0.11 – släppt 2026-11-06 (Känslor & psykologi)
 
@@ -61,7 +71,7 @@ Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det förs
 - **Pilot:** alla ord i *Vardagskläder* har bild, plus fotona *bryna*, *mocka*, *manchester*. Produktägaren utvärderar piloten innan resten görs.
 - **Beslut (produktägaren):** en bild per ord; bilden i introduktionen och i vissa övningar; bildfrågor där alternativen inte går att blanda ihop. Abstrakta ord får symbol om en lämplig, kulturellt överförbar scen finns, annars ingen bild. **Claude ansvarar för hela bildflödet** – produktägaren ska inte generera bilder.
 - **Stilval:** illustrationer som kod (bilderbok, `src/ui/wordArt/`) för form; fritt licensierade foton för yta/tillstånd. Foton hämtas via Openverse (`api.openverse.org`, tillåten i miljön); Wikimedias API ger ofta 429 från molnmiljön och Flickrs bildserver är inte tillåten, så Openverse-förhandsbilder (≤ 600 px) används. Licens CC0/PDM/CC BY, aldrig BY-SA/NC.
-- **Ny bild för ett ord:** motiv i `src/ui/wordArt/motifs.ts` + rad i `src/content/data/images/wordImages.json` med `group`, `quiz` och `confusableWith`. Granska med `npm run art:words`. `images.test.ts` kontrollerar distraktorreglerna.
+- **Ny bild för ett ord (före 0.12):** motiv i `src/ui/wordArt/motifs.ts` + rad i `src/content/data/images/wordVisuals.json` (från 0.12 görs nya bilder som scener i Animation_tool-, se 0.12-avsnittet) med `group`, `quiz` och `confusableWith`. Granska med `npm run art:words`. `images.test.ts` kontrollerar distraktorreglerna.
 - **Nästa steg efter godkänd pilot:** övriga klädmoduler, sedan Hem & boende och Mat & måltider (där behövs fler foton: tillagning, råvaror, konsistenser).
 
 ## 0.5 – släppt 2026-11-05
@@ -86,7 +96,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas G klar**: version 0.4.0, migreringstest 0.3.1→0.4 med nollställningen på och av, e2e-jobb i CI, dokumentation. WebKit/fysisk iPhone: EJ TESTAT.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
-## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.11.0)
+## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.12.0)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
 

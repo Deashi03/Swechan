@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.12.0 – 2026-11-06
+
+**Beslut (produktägaren, 2026-11-06):** alla ordposter ska få en visualisering (animation, scen eller symbol) som används i ordintroduktionen och i övningarna. Det tidigare stoppet för nya bilder och animationer är hävt. AI-utkast får visas i appen under arbetet. Mallarna i Animation_tool- (`registry/templates.json`) godkänns av Claude och stickprovas av produktägaren i piloten.
+
+**Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.11.0 → 0.12.0 nollställer progressionen (återställningspunkt sparas).
+
+### Animationer i appen (Animation_tool-)
+- **Spelaren** från Animation_tool- ligger i `src/ui/anim/` och laddas som en egen del (52 kB gzip) först när en animation visas.
+- **84 animationer** är importerade (bland annat hela *Gå och springa* och ord ur *Kroppen & sinnena* och *Vardag & hem*). Scenerna ligger i `public/anim/scenes/` (cirka 1,3 kB per ord); posterbilden ritas ur scenen i stället för att lagras som egen fil.
+- **Ordintroduktionen** spelar animationen en gång; ▶ spelar den igen. Med reducerad rörelse (systeminställningen eller appens inställning) börjar den pausad på posterbilden.
+- **Bildövningar och stavning** visar bara posterbilden, så att alla alternativ visas på samma villkor. Distraktorreglerna är oförändrade.
+- **Offline:** scenerna för en moduls ord hämtas när modulen öppnas och cachas av service workern.
+- **Reserv:** finns ingen animation används kodillustrationen; kan en scen inte laddas visas illustrationen (om det finns en) eller ingen bild.
+- Registret heter nu `src/content/data/images/wordVisuals.json` och har typen `animation` (med `animationId`, `file`, `reviewStatus`, `fallbackMotif`). `visualFor` är det nya namnet på `imageFor`.
+
+### Visualiseringsplan för alla ord
+- `src/content/data/images/visualPlan.json` anger för **alla 5 799 betydelser** vilken sorts bild de ska få: animation (1 145, handlingar), scen (3 036, konkreta saker), symbol (1 617, abstrakta ord, känslor, egenskaper och idiom – symbolisk scen med japansk glosa, aldrig i bildövningar) och ingen (1). Klassningen är ett AI-utkast (`by: heuristic`) som justeras per överämne när scenerna produceras.
+- Validatorn kräver en plan för varje modulord, och innehållsrapporten visar hur många modulord som har en färdig visualisering (180 av 5 758 just nu).
+
+### Verktyg
+- `npm run visuals:import <dist/swechan>` importerar en export från Animation_tool- (`npm run anim:export`): ASCII-säkra filnamn, en version per betydelse, förväxlingslistor filtreras mot Swechans ordbok, oanvända scenfiler tas bort.
+- `npm run visuals:plan` lägger till plan för nya betydelser (`--recompute` klassar om rader som fortfarande är heuristiska).
+
+### Tester
+- Varje scenfil finns, är liten, tolkas, kompileras och renderar en SVG-bild; inga föräldralösa filer; reservmotiv finns; bildövningar fungerar med posterbilder.
+- Komponenttest: animationen spelas i introduktionen, bara posterbilden visas i övningar, och en scen som inte går att ladda ger reserven.
+
+Inga ordposter, moduler eller publicerade ID:n har ändrats.
+
 ## 0.11.0 – 2026-11-06
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.10.0 → 0.11.0 nollställer progressionen (återställningspunkt sparas).

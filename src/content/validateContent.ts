@@ -7,6 +7,7 @@
 import { checkFurigana } from './furigana';
 import { entryOccursIn } from './morphology';
 import { allWordImages } from './images';
+import { allPlannedVisuals, plannedVisual } from './visualPlan';
 import type { ContentRepository } from './repository';
 import { needsExplanation } from './schema';
 
@@ -119,7 +120,11 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
     if (!repo.getSense(img.senseId)) add(w, 'Okänd betydelse');
     for (const c of img.confusableWith ?? []) if (!repo.getSense(c)) add(w, `confusableWith pekar på okänd betydelse ${c}`);
     if (img.symbol && img.quiz) add(w, 'En symbolbild får inte användas i bildövningar (quiz)');
+    if (img.kind === 'animation' && img.quiz && plannedVisual(img.senseId)?.kind === 'symbol') add(w, 'En symbolisk scen (glosa) får inte användas i bildövningar (quiz)');
   }
+  // Visual plan (0.12): every module word has a planned kind; every row points at a known sense
+  for (const m of repo.modules) for (const wd of m.words) if (!plannedVisual(wd.senseId)) add(`${m.id} › ${wd.senseId}`, 'Visualiseringsplan saknas – kör npm run visuals:plan');
+  for (const id of Object.keys(allPlannedVisuals())) if (!repo.getSense(id)) add(`visualiseringsplan ${id}`, 'Okänd betydelse');
 
   return issues;
 }

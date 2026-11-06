@@ -8,6 +8,7 @@ import { buildLearnPlan } from '../learning/learnPlan';
 import { WORD_MOTIFS } from '../ui/wordArt/motifs';
 import { renderWordArt } from '../ui/wordArt/render';
 import { exerciseTypeFor } from '../ui/screens/ReviewSession';
+import { Scene, migrateScene, compileScene, renderFrame, frameToSvg } from '../ui/anim/player';
 
 const repo = getContent();
 /** 0.6 pilot: every word in these modules has a picture. */
@@ -35,6 +36,45 @@ describe('word images – data', () => {
   });
   it('symbol pictures (abstract words) are never used in picture exercises', () => {
     for (const img of allWordImages()) if (img.symbol) expect(img.quiz, img.senseId).toBe(false);
+  });
+});
+
+describe('word animations (0.12)', () => {
+  const anims = allWordImages().filter((i) => i.kind === 'animation');
+  it('there are imported animations', () => {
+    expect(anims.length).toBeGreaterThan(50);
+  });
+  it('every animation scene file exists, is small, parses, compiles and renders an SVG frame', () => {
+    for (const a of anims) {
+      if (a.kind !== 'animation') continue;
+      const file = path.join('public/anim/scenes', `${a.file}.json`);
+      expect(fs.existsSync(file), file).toBe(true);
+      expect(fs.statSync(file).size, file).toBeLessThan(20_000);
+      const parsed = Scene.safeParse(migrateScene(JSON.parse(fs.readFileSync(file, 'utf8'))));
+      expect(parsed.success, a.animationId).toBe(true);
+      const compiled = compileScene(parsed.data!);
+      expect(frameToSvg(renderFrame(compiled, compiled.posterMs)), a.animationId).toContain('<svg');
+      expect(parsed.data!.senseId, a.animationId).toBe(a.senseId);
+    }
+  });
+  it('a fallback motif, when given, exists', () => {
+    for (const a of anims) if (a.kind === 'animation' && a.fallbackMotif) expect(WORD_MOTIFS[a.fallbackMotif], a.fallbackMotif).toBeDefined();
+  });
+  it('scene files in public/anim are all referenced by the registry (no orphans)', () => {
+    const referenced = new Set(anims.map((a) => (a.kind === 'animation' ? `${a.file}.json` : '')));
+    for (const f of fs.readdirSync('public/anim/scenes')) expect(referenced.has(f), f).toBe(true);
+  });
+  it('picture exercises work when the visuals are animations (poster frames)', () => {
+    const quizAnims = anims.filter((a) => a.quiz);
+    for (const a of quizAnims.slice(0, 20)) {
+      const pool = quizAnims.map((x) => x.senseId);
+      for (let seed = 0; seed < 5; seed++) {
+        const ex = generateExercise('image_pick', a.senseId, { repo, poolSenseIds: pool, seed });
+        if (!ex || !isChoice(ex)) continue;
+        expect(ex.options[ex.correctIndex]!.senseId).toBe(a.senseId);
+        for (const o of ex.options) if (o.senseId !== a.senseId) expect(imageDistractorAllowed(a.senseId, o.senseId!)).toBe(true);
+      }
+    }
   });
 });
 

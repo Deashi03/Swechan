@@ -54,7 +54,11 @@ CatalogModule    catalogId (SWC-XXX-nn-nn-nn), catalogCategoryId (alltid en ämn
 
 0.5 ändrar inte användardata (Dexie-versionen är oförändrad).
 
-**Bilder (0.6):** `src/content/data/images/wordImages.json` – `{ senseId, kind: illustration|photo, motif | file+credit, group, quiz, confusableWith?, symbol? }`, högst en bild per betydelse. Innehåll, inte användardata. Nya `exerciseType`-värden i svarshistoriken: `image_choice`, `image_pick` (fältet är redan en fri sträng i schema och säkerhetskopia, så ingen migrering behövs). Illustrationerna är kod (`src/ui/art/`) och lagras inte.
+**Bilder (0.6) och animationer (0.12):** `src/content/data/images/wordVisuals.json` (hette `wordImages.json` före 0.12) – `{ senseId, kind: illustration|photo|animation, motif | file+credit | animationId+file+reviewStatus+fallbackMotif?, group, quiz, confusableWith?, symbol? }`, högst en visualisering per betydelse. En `animation` pekar på `public/anim/scenes/<file>.json` (rå scen från Animation_tool-; `file` är ett ASCII-säkert namn, `animationId` kan innehålla å/ä/ö); `fallbackMotif` är kodillustrationen som visas om scenen inte kan laddas.
+
+**Visualiseringsplan (0.12):** `src/content/data/images/visualPlan.json` – `{ plan: { [senseId]: { kind: animation|scene|symbol|none, by: heuristic|manual } } }`. Anger vilken sorts bild varje betydelse ska få (handling → animation, konkret sak → scen, abstrakt ord/känsla/egenskap/idiom → symbolisk scen med japansk glosa som aldrig används i bildövningar, funktionsord → ingen). `heuristic` = AI-utkast från `npm run visuals:plan`; `manual` = granskad. Validatorn kräver en rad för varje modulord. Läses bara av verktyg (`content/visualPlan.ts`), inte av appen.
+
+Båda filerna är innehåll, inte användardata; ingen Dexie-version behövs. Innehåll, inte användardata. Nya `exerciseType`-värden i svarshistoriken: `image_choice`, `image_pick` (fältet är redan en fri sträng i schema och säkerhetskopia, så ingen migrering behövs). Illustrationerna är kod (`src/ui/art/`) och lagras inte.
 
 `catalogId` (planering) och `moduleId` (publicerad lektion) är olika identiteter. Användardata refererar alltid `moduleId`/`senseId`, aldrig `catalogId`.
 
