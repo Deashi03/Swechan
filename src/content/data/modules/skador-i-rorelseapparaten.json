@@ -1,0 +1,170 @@
+{
+ "id": "m.skador-i-rorelseapparaten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Skador i rörelseapparaten",
+ "titleJa": "{運動器|うんどうき}のけが",
+ "descriptionSv": "Skador i rörelseapparaten: bryta benet, benbrott, fraktur, vricka, stukning, sträckning, muskelbristning, röntga, gips, gipsa, krycka, mitella, stödbandage, sjukgymnast och rehabilitering.",
+ "descriptionJa": "{運動器|うんどうき}のけが：{脚|あし}を{骨折|こっせつ}する、{骨折|こっせつ}、{骨折|こっせつ}（{医学用語|いがくようご}）、くじく、ねんざ、{筋|すじ}を{痛|いた}めること、{肉離|にくばな}れ、レントゲンを{撮|と}る、ギプス、ギプスで{固定|こてい}する、{松葉杖|まつばづえ}、{三角巾|さんかくきん}、サポーター、{理学療法士|りがくりょうほうし}、リハビリ。",
+ "categoryId": "R02-A01-T02",
+ "tags": [
+  "kropp",
+  "skada"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.rorelser-och-rorelseomfang"
+ ],
+ "related": [],
+ "recommendedOrder": 717,
+ "words": [
+  {
+   "senseId": "s.sjukgymnast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bryta-benet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.benbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fraktur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vricka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.muskelbristning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röntga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gips.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gipsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mitella.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stödbandage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rehabilitering.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En vinter på sjukhuset",
+  "paragraphs": [
+   "Leos familj har haft en dålig vinter. Först vrickade pappa foten på isen. Läkaren röntgade den. – Det är ingen fraktur, bara en stukning, sa hon. Han fick ett stödbandage.",
+   "Sedan var det Erik som bröt benet när han åkte i backen. Det var ett riktigt benbrott. De gipsade benet, och han gick med kryckor i sex veckor.",
+   "Mamma halkade och föll på armen. Hon fick en spricka i handleden och gick med armen i mitella.",
+   "Till sist fick Eriks syster en sträckning i låret på träningen. Först trodde de att det var en muskelbristning, men det var inte så farligt.",
+   "Efter gipset behövde Erik rehabilitering. Han tränade två gånger i veckan med en sjukgymnast.",
+   "– Nästa vinter stannar vi inne, skrattar pappa."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hände med pappas fot?",
+    "options": [
+     "En stukning",
+     "En fraktur",
+     "En muskelbristning",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är ingen fraktur, bara en stukning.",
+    "explanationJa": "ねんざです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge gick Erik med kryckor?",
+    "options": [
+     "Två veckor",
+     "Ett år",
+     "Sex veckor",
+     "En dag"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… han gick med kryckor i sex veckor.",
+    "explanationJa": "6{週間|しゅうかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mamma bröt benet.",
+    "correct": false,
+    "explanationSv": "Hon fick en spricka i handleden.",
+    "explanationJa": "{手首|てくび}にひびが{入|はい}りました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vem tränade Erik med?",
+    "options": [
+     "En läkare",
+     "En sjukgymnast",
+     "Pappa",
+     "En tränare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han tränade … med en sjukgymnast.",
+    "explanationJa": "{理学療法士|りがくりょうほうし}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Systerns skada var mindre allvarlig än de trodde.",
+    "correct": true,
+    "explanationSv": "Först trodde de att det var en muskelbristning, men det var inte så farligt.",
+    "explanationJa": "{思|おも}ったほど{重|おも}くありませんでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om skador: vad som har hänt och hur man blir bra igen.",
+  "discussionPoints": [
+   "Har du brutit något ben?",
+   "Har du gått med kryckor?",
+   "Hur kan man undvika skador när man tränar?",
+   "Vad gör du om du vrickar foten?"
+  ]
+ }
+}

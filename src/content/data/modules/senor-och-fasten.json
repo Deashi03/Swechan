@@ -1,0 +1,170 @@
+{
+ "id": "m.senor-och-fasten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Senor och fästen",
+ "titleJa": "{腱|けん}と{付着部|ふちゃくぶ}",
+ "descriptionSv": "Senor och fästen: sena, hälsena, muskelfäste, senskida, seninflammation, belastning, överbelasta, tennisarmbåge, musarm, spänd, ömma, stretching, stretcha, töja och återhämtning.",
+ "descriptionJa": "{腱|けん}と{付着部|ふちゃくぶ}：{腱|けん}、アキレス{腱|けん}、{筋肉|きんにく}の{付着部|ふちゃくぶ}、{腱鞘|けんしょう}、{腱炎|けんえん}、{負荷|ふか}、{負担|ふたん}をかけすぎる、テニス{肘|ひじ}、マウス{腕|うで}、こわばった、{痛|いた}む、ストレッチ、ストレッチする、{伸|の}ばす、{回復|かいふく}。",
+ "categoryId": "R02-A01-T02",
+ "tags": [
+  "kropp",
+  "muskler"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.muskelgrupper"
+ ],
+ "related": [],
+ "recommendedOrder": 714,
+ "words": [
+  {
+   "senseId": "s.sena.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälsena.1",
+   "active": true
+  },
+  {
+   "senseId": "s.muskelfäste.1",
+   "active": true
+  },
+  {
+   "senseId": "s.senskida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.seninflammation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belastning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överbelasta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tennisarmbåge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.musarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spänd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ömma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.töja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stretching.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stretcha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återhämtning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "För mycket, för snabbt",
+  "paragraphs": [
+   "Yui har börjat springa. Efter tre veckor ömmar det i hälsenan. Hon går till en läkare.",
+   "– Du har seninflammation, säger läkaren. Du har överbelastat senan. Belastningen ökade för snabbt.",
+   "Läkaren förklarar att en sena håller fast muskeln vid benet, och att det ofta gör ont vid muskelfästet.",
+   "– Du måste vila och ge kroppen tid för återhämtning. Sedan kan du börja springa igen, långsamt. Och glöm inte stretching. Töj vaderna efter varje runda.",
+   "Yuis kollega Erik har också problem. Han sitter vid datorn hela dagen och har fått musarm. Hans axlar är spända. Hans pappa har tennisarmbåge, och mamma har inflammation i en senskida i handleden.",
+   "– Hela familjen borde stretcha mer, skrattar Yui."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var ömmar det för Yui?",
+    "options": [
+     "I knät",
+     "I hälsenan",
+     "I armbågen",
+     "I axeln"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… ömmar det i hälsenan.",
+    "explanationJa": "アキレス{腱|けん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför har Yui fått seninflammation?",
+    "options": [
+     "Hon har ramlat",
+     "Hon sitter för mycket",
+     "Belastningen ökade för snabbt",
+     "Hon har fel skor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Belastningen ökade för snabbt.",
+    "explanationJa": "{負荷|ふか}を{急|きゅう}に{増|ふ}やしたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läkaren säger att Yui ska sluta springa för alltid.",
+    "correct": false,
+    "explanationSv": "Sedan kan du börja springa igen, långsamt.",
+    "explanationJa": "またゆっくり{走|はし}れます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har Erik fått?",
+    "options": [
+     "Tennisarmbåge",
+     "Seninflammation",
+     "Musarm",
+     "Träningsvärk"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… har fått musarm.",
+    "explanationJa": "マウス{腕|うで}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Flera i Eriks familj har problem med senor.",
+    "correct": true,
+    "explanationSv": "Hans pappa har tennisarmbåge, och mamma har inflammation i en senskida.",
+    "explanationJa": "そうです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om överbelastning, vila och stretching.",
+  "discussionPoints": [
+   "Stretchar du efter träning?",
+   "Har du haft ont av att sitta vid datorn?",
+   "Hur vilar du efter en hård vecka?",
+   "Har du någon gång tränat för mycket för snabbt?"
+  ]
+ }
+}
