@@ -1,0 +1,170 @@
+{
+ "id": "m.somnvanor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Sömnvanor",
+ "titleJa": "{睡眠習慣|すいみんしゅうかん}",
+ "descriptionSv": "Sömnvanor: insomningsproblem, nattsömn, sömnvana, sömnbehov, sömndagbok, sömnstörning, sömnhygien, sömnrutin, läggtid, sova ut, koffein, dra ner på, skärmfri, mörkläggningsgardin och sömnkvalitet.",
+ "descriptionJa": "{睡眠習慣|すいみんしゅうかん}：{寝|ね}つきの{悪|わる}さ、{夜|よる}の{睡眠|すいみん}、{睡眠習慣|すいみんしゅうかん}、{必要|ひつよう}な{睡眠時間|すいみんじかん}、{睡眠日誌|すいみんにっし}、{睡眠障害|すいみんしょうがい}、{睡眠衛生|すいみんえいせい}、{睡眠|すいみん}のリズム、{就寝時刻|しゅうしんじこく}、ゆっくり{寝|ね}る、カフェイン、{減|へ}らす、{画面|がめん}を{見|み}ない、{遮光|しゃこう}カーテン、{睡眠|すいみん}の{質|しつ}。",
+ "categoryId": "R02-A02-T06",
+ "tags": [
+  "hälsa",
+  "förebyggande",
+  "sömn"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.naring-och-kostvanor"
+ ],
+ "related": [],
+ "recommendedOrder": 853,
+ "words": [
+  {
+   "senseId": "s.insomningsproblem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nattsömn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömnvana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömnbehov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömndagbok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömnstörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömnhygien.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömnrutin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läggtid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sova-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koffein.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-ner-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärmfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mörkläggningsgardin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sömnkvalitet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Aiko sover dåligt",
+  "paragraphs": [
+   "Aiko har sovit dåligt i flera veckor. Hon har insomningsproblem och ligger vaken länge varje kväll. På morgonen är hon trött. Hennes nattsömn är bara fem eller sex timmar.",
+   "Läkaren frågar om hennes sömnvanor. – Alla har olika sömnbehov, men de flesta vuxna behöver sju till nio timmar, säger läkaren. Skriv en sömndagbok i två veckor, så ser vi om du har en sömnstörning.",
+   "Läkaren ger också råd om sömnhygien. – Ha en fast sömnrutin och samma läggtid varje kväll, också på helgen. Det är bättre än att sova ut på lördagen.",
+   "– Försök att dra ner på koffein efter lunch. Låt den sista timmen före sömnen vara skärmfri, och se till att sovrummet är mörkt och tyst.",
+   "Aiko köper en mörkläggningsgardin och slutar dricka kaffe på eftermiddagen. Efter några veckor är hennes sömnkvalitet mycket bättre."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket problem har Aiko?",
+    "options": [
+     "Hon snarkar",
+     "Hon har mardrömmar",
+     "Hon sover för mycket",
+     "Hon har svårt att somna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon har insomningsproblem och ligger vaken länge varje kväll.",
+    "explanationJa": "{寝|ね}つきが{悪|わる}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur länge ska Aiko skriva sömndagbok?",
+    "options": [
+     "I en natt",
+     "I ett år",
+     "I två dagar",
+     "I två veckor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Skriv en sömndagbok i två veckor …",
+    "explanationJa": "2{週間|しゅうかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läkaren tycker att det är bäst att sova ut på helgen.",
+    "correct": false,
+    "explanationSv": "Det är bättre än att sova ut på lördagen.",
+    "explanationJa": "{毎晩同|まいばんおな}じ{時間|じかん}に{寝|ね}るほうがよいと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "När ska Aiko dra ner på koffein?",
+    "options": [
+     "Efter lunch",
+     "På morgonen",
+     "Före frukost",
+     "På helgen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "– Försök att dra ner på koffein efter lunch.",
+    "explanationJa": "{昼食後|ちゅうしょくご}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Aiko sover bättre efter några veckor.",
+    "correct": true,
+    "explanationSv": "Efter några veckor är hennes sömnkvalitet mycket bättre.",
+    "explanationJa": "{睡眠|すいみん}の{質|しつ}がよくなりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni sover.",
+  "discussionPoints": [
+   "Hur många timmar sover du en vanlig natt?",
+   "Har du en fast läggtid?",
+   "Brukar du sova ut på helgen?",
+   "Vad gör du om du inte kan somna?"
+  ]
+ }
+}
