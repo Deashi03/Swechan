@@ -1,0 +1,171 @@
+{
+ "id": "m.vardcentral-och-mottagning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Vårdcentral och mottagning",
+ "titleJa": "{診療所|しんりょうじょ}と{外来|がいらい}",
+ "descriptionSv": "Vårdcentral och mottagning: vårdcentral, mottagning, öppettider, läkarbesök, väntrum, personnummer, patientavgift, frikort, sjuksköterska, allmänläkare, listad, barnavårdscentral, akutmottagning, akuten och jourcentral.",
+ "descriptionJa": "{診療所|しんりょうじょ}と{外来|がいらい}：{診療所|しんりょうじょ}、{外来|がいらい}、{受付時間|うけつけじかん}、{受診|じゅしん}、{待合室|まちあいしつ}、{個人番号|こじんばんごう}、{診察料|しんさつりょう}、{医療費|いりょうひ}{免除|めんじょ}カード、{看護師|かんごし}、{一般医|いっぱんい}、{登録|とうろく}された、{乳幼児健診|にゅうようじけんしん}センター、{救急外来|きゅうきゅうがいらい}、{救急|きゅうきゅう}、{夜間|やかん}・{休日診療所|きゅうじつしんりょうじょ}。",
+ "categoryId": "R02-A02-T02",
+ "tags": [
+  "hälsa",
+  "vård",
+  "vårdbesök"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.beskriva-symtom-for-varden"
+ ],
+ "related": [],
+ "recommendedOrder": 811,
+ "words": [
+  {
+   "senseId": "s.vårdcentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mottagning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öppettider.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkarbesök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väntrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.patientavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frikort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjuksköterska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allmänläkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.listad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnavårdscentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.akutmottagning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.akuten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jourcentral.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "På vårdcentralen",
+  "paragraphs": [
+   "Aiko har haft ont i örat i flera dagar. Hon är listad på vårdcentralen nära skolan. Mottagningen har öppettider från åtta till fem. Hon har aldrig gjort ett läkarbesök i Sverige förut.",
+   "I receptionen sitter en receptionist. – Vad är ditt personnummer? frågar hon. Aiko har bara bott i Sverige i ett år, men hon har redan ett personnummer.",
+   "Aiko är under 18 år, så hon behöver inte betala någon patientavgift. Hennes mormor, som bor hos dem, har ett frikort, för hon har varit hos läkaren många gånger i år.",
+   "I väntrummet sitter en mamma med en liten bebis. Hon berättar att de var på barnavårdscentralen i går, och att bebisen växer som den ska.",
+   "Först träffar Aiko en sjuksköterska som tittar i örat. Sedan kommer en allmänläkare. – Det är en infektion i örat, säger han. Om det blir värre i helgen kan du gå till jourcentralen.",
+   "– Men om du får mycket hög feber eller svårt att andas ska du åka till akutmottagningen på sjukhuset, säger läkaren. Aiko hoppas att hon aldrig behöver åka till akuten."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går Aiko till vårdcentralen?",
+    "options": [
+     "Hon har brutit armen",
+     "Hon behöver vaccin",
+     "Hon har ont i örat",
+     "Hon har ont i magen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko har haft ont i örat i flera dagar.",
+    "explanationJa": "{耳|みみ}が{痛|いた}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför betalar inte Aiko någon patientavgift?",
+    "options": [
+     "Hon har frikort",
+     "Hon har ett personnummer",
+     "Läkaren är ny",
+     "Hon är under 18 år"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko är under 18 år, så hon behöver inte betala någon patientavgift.",
+    "explanationJa": "18{歳|さい}{未満|みまん}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko träffar läkaren först.",
+    "correct": false,
+    "explanationSv": "Först träffar Aiko en sjuksköterska …",
+    "explanationJa": "まず{看護師|かんごし}に{会|あ}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vart kan Aiko gå om det blir värre i helgen?",
+    "options": [
+     "Till jourcentralen",
+     "Till barnavårdscentralen",
+     "Till skolan",
+     "Till apoteket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Om det blir värre i helgen kan du gå till jourcentralen.",
+    "explanationJa": "{夜間|やかん}・{休日診療所|きゅうじつしんりょうじょ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor har varit sjuk mycket i år.",
+    "correct": true,
+    "explanationSv": "… för hon har varit hos läkaren många gånger i år.",
+    "explanationJa": "{今年|ことし}は{何度|なんど}も{医者|いしゃ}にかかっています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur vården fungerar i Sverige och Japan.",
+  "discussionPoints": [
+   "Hur går det till när du går till en läkare i Japan?",
+   "Vad kostar ett läkarbesök i Japan?",
+   "Var ligger din närmaste vårdcentral?",
+   "När ska man åka till akuten?"
+  ]
+ }
+}

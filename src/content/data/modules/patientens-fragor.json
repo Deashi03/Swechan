@@ -1,0 +1,171 @@
+{
+ "id": "m.patientens-fragor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Patientens frågor",
+ "titleJa": "{患者|かんじゃ}の{質問|しつもん}",
+ "descriptionSv": "Patientens frågor: frågelista, fackord, tolk, tolka, närstående, anhörig, tystnadsplikt, samtycke, samtycka, delaktig, förnyad bedömning, patientlag, synpunkt, Patientnämnden och bemötande.",
+ "descriptionJa": "{患者|かんじゃ}の{質問|しつもん}：{質問|しつもん}リスト、{専門用語|せんもんようご}、{通訳|つうやく}（{者|しゃ}）、{通訳|つうやく}する、{身近|みぢか}な{人|ひと}、{家族|かぞく}・{親族|しんぞく}、{守秘義務|しゅひぎむ}、{同意|どうい}、{同意|どうい}する、かかわっている、セカンドオピニオン、{患者法|かんじゃほう}、{意見|いけん}、{患者委員会|かんじゃいいんかい}、{接|せっ}し{方|かた}。",
+ "categoryId": "R02-A02-T02",
+ "tags": [
+  "hälsa",
+  "vård",
+  "vårdbesök"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.besked-och-uppfoljning"
+ ],
+ "related": [],
+ "recommendedOrder": 817,
+ "words": [
+  {
+   "senseId": "s.frågelista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fackord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tolk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tolka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närstående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anhörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tystnadsplikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samtycke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samtycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delaktig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förnyad-bedömning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.patientlag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Patientnämnden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bemötande.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mormor och läkaren",
+  "paragraphs": [
+   "Mormor ska träffa en läkare om sitt hjärta. Kvällen innan skriver hon och Aiko en frågelista, så att de inte glömmer något.",
+   "Mormor har bett om en tolk, för det är viktigt att förstå allt. Tolken tolkar mellan japanska och svenska. Aiko får också följa med som närstående.",
+   "Läkaren använder många fackord. Aiko ber honom säga det med enklare ord. Han förklarar att han vill göra en liten operation, men att den inte görs utan mormors samtycke.",
+   "Mormor vill vara delaktig. Hon frågar om det finns andra behandlingar. – Jag vill tänka på det, säger hon. Kan jag få en förnyad bedömning av en annan läkare? – Ja, det har du rätt till enligt patientlagen, säger läkaren.",
+   "Efter några veckor samtycker mormor till operationen. Läkaren frågar om han får berätta om den för hennes anhöriga. Han har tystnadsplikt, så han måste fråga först.",
+   "Efteråt lämnar mormor synpunkter på webben. Bemötandet var bra, skriver hon. Men hon berättar att om man inte är nöjd kan man vända sig till Patientnämnden."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför skriver mormor och Aiko en frågelista?",
+    "options": [
+     "För att inte glömma något",
+     "För att läkaren vill det",
+     "För att öva på svenska",
+     "För att boka en tid"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… så att de inte glömmer något.",
+    "explanationJa": "{忘|わす}れないためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör tolken?",
+    "options": [
+     "Undersöker mormor",
+     "Tolkar mellan japanska och svenska",
+     "Skriver frågelistan",
+     "Bokar tiden"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Tolken tolkar mellan japanska och svenska.",
+    "explanationJa": "{日本語|にほんご}とスウェーデン{語|ご}の{通訳|つうやく}をします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läkaren kan göra operationen utan att mormor säger ja.",
+    "correct": false,
+    "explanationSv": "… men att den inte görs utan mormors samtycke.",
+    "explanationJa": "{同意|どうい}が{必要|ひつよう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför måste läkaren fråga innan han berättar för de anhöriga?",
+    "options": [
+     "Han har bråttom",
+     "Han kan inte japanska",
+     "Han har tystnadsplikt",
+     "De bor långt bort"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han har tystnadsplikt, så han måste fråga först.",
+    "explanationJa": "{守秘義務|しゅひぎむ}があるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor var nöjd med hur hon blev behandlad.",
+    "correct": true,
+    "explanationSv": "Bemötandet var bra, skriver hon.",
+    "explanationJa": "{対応|たいおう}がよかったと{書|か}いています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om patientens rättigheter och frågor.",
+  "discussionPoints": [
+   "Vilka frågor skulle du skriva på en frågelista?",
+   "Har du hjälpt någon som tolk?",
+   "Varför är tystnadsplikt viktig?",
+   "Vill du vara delaktig i beslut om din vård?"
+  ]
+ }
+}

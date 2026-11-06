@@ -1,0 +1,171 @@
+{
+ "id": "m.undersokning-och-provtagning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Undersökning och provtagning",
+ "titleJa": "{診察|しんさつ}と{検査|けんさ}",
+ "descriptionSv": "Undersökning och provtagning: undersökning, undersöka, andas djupt, stetoskop, lyssna på hjärtat, mäta blodtrycket, gapa, spatel, provtagning, blodprov, ta blodprov, röntgen, ultraljud, magnetkamera och EKG.",
+ "descriptionJa": "{診察|しんさつ}と{検査|けんさ}：{診察|しんさつ}、{診察|しんさつ}する、{深呼吸|しんこきゅう}する、{聴診器|ちょうしんき}、{心臓|しんぞう}の{音|おと}を{聴|き}く、{血圧|けつあつ}を{測|はか}る、{口|くち}を{大|おお}きく{開|あ}ける、{舌圧子|ぜつあつし}、{検体採取|けんたいさいしゅ}、{血液検査|けつえきけんさ}、{採血|さいけつ}する、レントゲン、{超音波|ちょうおんぱ}{検査|けんさ}、MRI、{心電図|しんでんず}。",
+ "categoryId": "R02-A02-T02",
+ "tags": [
+  "hälsa",
+  "vård",
+  "vårdbesök"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.beskriva-sjukdomshistoria"
+ ],
+ "related": [],
+ "recommendedOrder": 814,
+ "words": [
+  {
+   "senseId": "s.undersökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undersöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andas-djupt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stetoskop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyssna-på-hjärtat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäta-blodtrycket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gapa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spatel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.provtagning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-blodprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röntgen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ultraljud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetkamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.EKG.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hos läkaren",
+  "paragraphs": [
+   "Leos pappa har ont i knät och ont i bröstet ibland. I dag har han en tid hos läkaren, och Leo följer med.",
+   "– Först gör vi en vanlig undersökning, säger läkaren. Hon tar fram ett stetoskop. – Nu ska jag lyssna på hjärtat. Andas djupt. Sedan vill hon mäta blodtrycket på armen.",
+   "– Gapa stort, säger hon och tittar i halsen med en spatel. Hon undersöker också knät noga.",
+   "– Jag vill att du går till provtagningen, säger hon. Där får pappa ta blodprov. Blodprovet skickas till ett laboratorium.",
+   "Läkaren vill också ta ett EKG för att se hur hjärtat arbetar. För knät får han en tid på röntgen.",
+   "Leo frågar vad ultraljud är. – Med ultraljud kan man se in i kroppen med ljud, säger läkaren. Och om röntgen inte visar något, kanske vi tittar på knät med magnetkamera."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har pappa ont i?",
+    "options": [
+     "Huvudet",
+     "Magen",
+     "Örat",
+     "Knät och bröstet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leos pappa har ont i knät och ont i bröstet ibland.",
+    "explanationJa": "{膝|ひざ}と{胸|むね}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad använder läkaren för att titta i halsen?",
+    "options": [
+     "Ett stetoskop",
+     "En magnetkamera",
+     "En spatel",
+     "En termometer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… tittar i halsen med en spatel.",
+    "explanationJa": "{舌圧子|ぜつあつし}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läkaren tar blodprovet själv.",
+    "correct": false,
+    "explanationSv": "– Jag vill att du går till provtagningen … Där får pappa ta blodprov.",
+    "explanationJa": "{検体採取|けんたいさいしゅ}の{窓口|まどぐち}で{採血|さいけつ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför vill läkaren ta ett EKG?",
+    "options": [
+     "För att se knät",
+     "För att mäta temperaturen",
+     "För att lyssna på lungorna",
+     "För att se hur hjärtat arbetar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Läkaren vill också ta ett EKG för att se hur hjärtat arbetar.",
+    "explanationJa": "{心臓|しんぞう}の{働|はたら}きを{見|み}るためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Magnetkameran kanske används senare.",
+    "correct": true,
+    "explanationSv": "… om röntgen inte visar något, kanske vi tittar på knät med magnetkamera.",
+    "explanationJa": "レントゲンで{何|なに}もわからなければ{使|つか}うかもしれません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om undersökningar hos läkaren.",
+  "discussionPoints": [
+   "Vad brukar läkaren göra vid en vanlig undersökning?",
+   "Är du rädd för att ta blodprov?",
+   "Har du gjort röntgen någon gång?",
+   "Varför säger man aaa när man gapar?"
+  ]
+ }
+}

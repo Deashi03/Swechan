@@ -1,0 +1,171 @@
+{
+ "id": "m.besked-och-uppfoljning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Besked och uppföljning",
+ "titleJa": "{結果|けっか}の{知|し}らせと{経過観察|けいかかんさつ}",
+ "descriptionSv": "Besked och uppföljning: provsvar, normalvärde, förhöjd, avvikelse, allt ser bra ut, lugnande, oroande, förbättring, uppföljning, återbesök, vårdplan, sjukskriva, sjukskrivning, läkarintyg och sjukintyg.",
+ "descriptionJa": "{結果|けっか}の{知|し}らせと{経過観察|けいかかんさつ}：{検査結果|けんさけっか}、{基準値|きじゅんち}、{高|たか}めの、{異常|いじょう}、すべて{問題|もんだい}ありません、{安心|あんしん}させる、{心配|しんぱい}な、{改善|かいぜん}、{経過観察|けいかかんさつ}、{再診|さいしん}、{治療計画|ちりょうけいかく}、{病気休暇|びょうききゅうか}の{診断|しんだん}をする、{病気休暇|びょうききゅうか}、{診断書|しんだんしょ}、{病気|びょうき}の{証明書|しょうめいしょ}。",
+ "categoryId": "R02-A02-T02",
+ "tags": [
+  "hälsa",
+  "vård",
+  "vårdbesök"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.remiss-och-specialist"
+ ],
+ "related": [],
+ "recommendedOrder": 816,
+ "words": [
+  {
+   "senseId": "s.provsvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.normalvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förhöjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvikelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allt-ser-bra-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lugnande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oroande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbättring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppföljning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återbesök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdplan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukskriva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukskrivning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkarintyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukintyg.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Beskedet",
+  "paragraphs": [
+   "En vecka efter undersökningen ringer läkaren till Leos pappa. – Nu har provsvaren kommit, säger hon.",
+   "– Blodtrycket är lite förhöjt, men de flesta värden ligger inom normalvärdena. EKG:t visade ingen avvikelse. Hjärtat ser bra ut. Pappa tycker att det är ett lugnande besked.",
+   "– Men röntgen visar en skada i knät, säger läkaren. Det är inte något oroande, men du behöver vila det. Jag sjukskriver dig i två veckor. Du får ett läkarintyg som du kan visa på jobbet.",
+   "– Vi gör en vårdplan: du tränar med fysioterapeuten, och sedan gör vi en uppföljning. Om en månad får du en tid för återbesök.",
+   "Pappas sjukskrivning blir längre än två veckor, men efter en månad ser läkaren en tydlig förbättring. – Allt ser bra ut, säger hon.",
+   "Leo var också hemma från skolan en dag när han var förkyld. Mamma frågar om han behöver ett sjukintyg. – Nej, säger läraren, det behövs inte för en dag."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket värde är lite förhöjt?",
+    "options": [
+     "Blodtrycket",
+     "Blodsockret",
+     "Febern",
+     "Järnet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "– Blodtrycket är lite förhöjt …",
+    "explanationJa": "{血圧|けつあつ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad visar röntgen?",
+    "options": [
+     "En skada i knät",
+     "Ingenting",
+     "En skada i hjärtat",
+     "En skada i armen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "– Men röntgen visar en skada i knät …",
+    "explanationJa": "{膝|ひざ}のけがです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Pappa är sjukskriven i en månad från början.",
+    "correct": false,
+    "explanationSv": "Jag sjukskriver dig i två veckor.",
+    "explanationJa": "{最初|さいしょ}は2{週間|しゅうかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ingår i vårdplanen?",
+    "options": [
+     "En operation",
+     "Nya blodprov varje vecka",
+     "Medicin mot feber",
+     "Träning med fysioterapeuten och en uppföljning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… du tränar med fysioterapeuten, och sedan gör vi en uppföljning.",
+    "explanationJa": "{理学療法士|りがくりょうほうし}との{運動|うんどう}と{経過観察|けいかかんさつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Pappas knä blir bättre.",
+    "correct": true,
+    "explanationSv": "… efter en månad ser läkaren en tydlig förbättring.",
+    "explanationJa": "はっきりと{改善|かいぜん}しました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att få besked från vården.",
+  "discussionPoints": [
+   "Hur vill du helst få dina provsvar, i telefon eller i en app?",
+   "Vad är ett lugnande besked för dig?",
+   "Behöver man läkarintyg i Japan när man är sjuk från jobbet?",
+   "Varför är uppföljning viktig?"
+  ]
+ }
+}

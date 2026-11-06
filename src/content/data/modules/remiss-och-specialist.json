@@ -1,0 +1,171 @@
+{
+ "id": "m.remiss-och-specialist",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Remiss och specialist",
+ "titleJa": "{紹介状|しょうかいじょう}と{専門医|せんもんい}",
+ "descriptionSv": "Remiss och specialist: specialist, specialistläkare, remiss, hudläkare, öronläkare, barnläkare, barnmorska, gynekolog, fysioterapeut, remittera, psykolog, kurator, logoped, vårdkö och vårdgaranti.",
+ "descriptionJa": "{紹介状|しょうかいじょう}と{専門医|せんもんい}：{専門家|せんもんか}、{専門医|せんもんい}、{紹介状|しょうかいじょう}、{皮膚科医|ひふかい}、{耳鼻科医|じびかい}、{小児科医|しょうにかい}、{助産師|じょさんし}、{婦人科医|ふじんかい}、{理学療法士|りがくりょうほうし}、{紹介|しょうかい}する、{心理士|しんりし}、{相談員|そうだんいん}、{言語聴覚士|げんごちょうかくし}、{医療|いりょう}の{順番待|じゅんばんま}ち、{医療保証|いりょうほしょう}。",
+ "categoryId": "R02-A02-T02",
+ "tags": [
+  "hälsa",
+  "vård",
+  "vårdbesök"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.undersokning-och-provtagning"
+ ],
+ "related": [],
+ "recommendedOrder": 815,
+ "words": [
+  {
+   "senseId": "s.specialist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.specialistläkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.remiss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hudläkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öronläkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnläkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnmorska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gynekolog.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fysioterapeut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.remittera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.psykolog.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kurator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.logoped.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdkö.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdgaranti.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vidare till en specialist",
+  "paragraphs": [
+   "Läkaren på vårdcentralen kan inte hjälpa Sara med hennes eksem. – Du behöver träffa en specialist, säger han. Jag skriver en remiss till en hudläkare.",
+   "Saras pappa har ont i knät efter en skada. Han blir remitterad till en fysioterapeut som ger honom övningar att göra hemma.",
+   "Saras lillebror hör dåligt och ska till en öronläkare. Han har också svårt att säga vissa ljud, så han träffar en logoped varje vecka.",
+   "Saras moster är gravid. Hon träffar en barnmorska på en mottagning för gravida, och en gynekolog på sjukhuset. När bebisen kommer får den träffa en barnläkare.",
+   "Sara själv har mått dåligt i skolan och har pratat med skolans kurator. Kuratorn tyckte att hon skulle träffa en psykolog också.",
+   "Det är lång vårdkö till hudläkaren. – Men enligt vårdgarantin ska du få en tid inom 90 dagar, säger mamma. Specialistläkaren ringer redan efter fem veckor."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart får Sara en remiss?",
+    "options": [
+     "Till en öronläkare",
+     "Till en logoped",
+     "Till en barnläkare",
+     "Till en hudläkare"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Jag skriver en remiss till en hudläkare.",
+    "explanationJa": "{皮膚科医|ひふかい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem hjälper pappa med knät?",
+    "options": [
+     "En gynekolog",
+     "En fysioterapeut",
+     "En kurator",
+     "En barnmorska"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han blir remitterad till en fysioterapeut …",
+    "explanationJa": "{理学療法士|りがくりょうほうし}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Lillebror träffar en logoped för att han hör dåligt.",
+    "correct": false,
+    "explanationSv": "Han har också svårt att säga vissa ljud, så han träffar en logoped …",
+    "explanationJa": "{発音|はつおん}が{苦手|にがて}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Inom hur lång tid ska Sara få en tid enligt vårdgarantin?",
+    "options": [
+     "En vecka",
+     "90 dagar",
+     "Ett år",
+     "Tre dagar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… ska du få en tid inom 90 dagar …",
+    "explanationJa": "90{日|にち}{以内|いない}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara får vänta kortare än vårdgarantin säger.",
+    "correct": true,
+    "explanationSv": "Specialistläkaren ringer redan efter fem veckor.",
+    "explanationJa": "5{週間|しゅうかん}で{連絡|れんらく}が{来|き}ました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om olika sorters vårdpersonal.",
+  "discussionPoints": [
+   "Vilka specialister har du träffat?",
+   "Behöver man remiss för att träffa en specialist i Japan?",
+   "Finns det kuratorer i japanska skolor?",
+   "Hur lång är vårdkön där du bor?"
+  ]
+ }
+}

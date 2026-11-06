@@ -1,0 +1,171 @@
+{
+ "id": "m.boka-lakartid",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Boka läkartid",
+ "titleJa": "{診察|しんさつ}の{予約|よやく}をとる",
+ "descriptionSv": "Boka läkartid: läkartid, boka tid, akuttid, första lediga tid, telefonkö, bli uppringd, återuppringning, e-tjänst, videosamtal, vårdbesök, vårdkontakt, kallelse, bli kallad, sms-påminnelse och uteblivet besök.",
+ "descriptionJa": "{診察|しんさつ}の{予約|よやく}をとる：{診察|しんさつ}の{予約|よやく}、{予約|よやく}をとる、{当日|とうじつ}の{急患枠|きゅうかんわく}、{最|もっと}も{早|はや}い{空|あ}き{時間|じかん}、{電話|でんわ}の{順番待|じゅんばんま}ち、{折|お}り{返|かえ}し{電話|でんわ}をもらう、{折|お}り{返|かえ}し{電話|でんわ}、オンラインサービス、ビデオ{通話|つうわ}、{受診|じゅしん}、{医療機関|いりょうきかん}との{接触|せっしょく}、{呼|よ}び{出|だ}し{状|じょう}、{呼|よ}び{出|だ}される、SMSでのリマインダー、{無断|むだん}キャンセル。",
+ "categoryId": "R02-A02-T02",
+ "tags": [
+  "hälsa",
+  "vård",
+  "vårdbesök"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vardcentral-och-mottagning"
+ ],
+ "related": [],
+ "recommendedOrder": 812,
+ "words": [
+  {
+   "senseId": "s.läkartid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boka-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.akuttid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.första-lediga-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.telefonkö.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bli-uppringd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återuppringning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.e-tjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.videosamtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdbesök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdkontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kallelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bli-kallad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sms-påminnelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uteblivet-besök.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Att boka en läkartid",
+  "paragraphs": [
+   "Leos pappa har haft ont i knät länge och vill boka tid hos en läkare. Klockan åtta ringer han vårdcentralens tidsbokning.",
+   "Det är lång telefonkö. En röst säger: – Tryck 1 för återuppringning. Pappa trycker in sitt telefonnummer. – Du blir uppringd i dag mellan tio och elva.",
+   "Sjuksköterskan ringer halv elva. – Det är inte bråttom, så du behöver ingen akuttid. Första lediga tid är på torsdag om två veckor. Pappa får en läkartid och ett bokningsnummer. Dagen innan kommer en sms-påminnelse.",
+   "Hon berättar att han också kan använda vårdens e-tjänst. Där kan han boka, och han kan också få ett vårdbesök i ett videosamtal. Varje vårdkontakt sparas där.",
+   "Samma vecka får Leo en kallelse i brevlådan. Han blir kallad till en kontroll av öronen, som alla i klassen.",
+   "Men den dagen har han en match. Han gör en avbokning i appen. – Bra, säger pappa. Ett uteblivet besök kostar pengar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill pappa träffa en läkare?",
+    "options": [
+     "Han har feber",
+     "Han har ont i örat",
+     "Han har ont i knät",
+     "Han behöver vaccin"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Leos pappa har haft ont i knät länge …",
+    "explanationJa": "{膝|ひざ}が{痛|いた}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör pappa när det är lång telefonkö?",
+    "options": [
+     "Han lägger på",
+     "Han åker till akuten",
+     "Han väljer återuppringning",
+     "Han skickar ett brev"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Tryck 1 för återuppringning. Pappa trycker in sitt telefonnummer.",
+    "explanationJa": "{折|お}り{返|かえ}し{電話|でんわ}を{選|えら}びます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Pappa får en akuttid samma dag.",
+    "correct": false,
+    "explanationSv": "… så du behöver ingen akuttid. Första lediga tid är på torsdag om två veckor.",
+    "explanationJa": "2{週間後|しゅうかんご}の{予約|よやく}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför avbokar Leo sin tid?",
+    "options": [
+     "Han är frisk",
+     "Han har glömt tiden",
+     "Han är på semester",
+     "Han har en match"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men den dagen har han en match.",
+    "explanationJa": "{試合|しあい}があるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är bra att avboka en tid man inte kan komma till.",
+    "correct": true,
+    "explanationSv": "Ett uteblivet besök kostar pengar.",
+    "explanationJa": "{無断|むだん}キャンセルには{料金|りょうきん}がかかります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att boka tid i vården.",
+  "discussionPoints": [
+   "Hur bokar man en läkartid i Japan?",
+   "Har du varit med om ett vårdbesök i ett videosamtal?",
+   "Vad gör du när det är lång telefonkö?",
+   "Är det rätt att ett uteblivet besök kostar pengar?"
+  ]
+ }
+}
