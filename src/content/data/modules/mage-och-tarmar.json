@@ -1,0 +1,170 @@
+{
+ "id": "m.mage-och-tarmar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Mage och tarmar",
+ "titleJa": "{胃|い}と{腸|ちょう}",
+ "descriptionSv": "Mage och tarmar: matstrupe, magsäck, magsyra, halsbränna, magsår, tarm, tunntarm, tjocktarm, ändtarm, tarmflora, blindtarm, blindtarmsinflammation, magknip, förstoppning och diarré.",
+ "descriptionJa": "{胃|い}と{腸|ちょう}：{食道|しょくどう}、{胃|い}、{胃酸|いさん}、{胸焼|むねや}け、{胃潰瘍|いかいよう}、{腸|ちょう}、{小腸|しょうちょう}、{大腸|だいちょう}、{直腸|ちょくちょう}、{腸内|ちょうない}フローラ、{盲腸|もうちょう}、{虫垂炎|ちゅうすいえん}、{腹痛|ふくつう}、{便秘|べんぴ}、{下痢|げり}。",
+ "categoryId": "R02-A01-T03",
+ "tags": [
+  "kropp",
+  "organ"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.lungor-och-luftvagar"
+ ],
+ "related": [],
+ "recommendedOrder": 723,
+ "words": [
+  {
+   "senseId": "s.matstrupe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magsäck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magsyra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halsbränna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magsår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tunntarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjocktarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ändtarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tarmflora.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blindtarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blindtarmsinflammation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magknip.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förstoppning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diarré.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ont i magen",
+  "paragraphs": [
+   "En natt vaknar Aikos lillebror med magknip. Först tror mamma att det är något han har ätit, men det blir värre.",
+   "Han har ont längst ner till höger i magen. Mamma tar honom till sjukhuset. – Det är blindtarmsinflammation, säger läkaren. Vi måste operera.",
+   "Efteråt förklarar läkaren för Aiko: – Maten går från munnen genom matstrupen till magsäcken. Där finns magsyra. Sedan går den till tarmen: först tunntarmen, sedan tjocktarmen och till sist ändtarmen. Blindtarmen är en liten bit som sitter där tunntarmen och tjocktarmen möts.",
+   "– Är magen alltid lika känslig? frågar Aiko. – Nej, men den kan få problem, säger läkaren. Man kan få diarré eller förstoppning. Starkt kaffe kan ge halsbränna, och vissa får magsår.",
+   "– Ät mycket grönsaker, då mår tarmfloran bra, säger hon.",
+   "Två dagar senare är lillebror hemma igen och äter glass."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var har lillebror ont?",
+    "options": [
+     "I bröstet",
+     "Längst ner till höger i magen",
+     "I huvudet",
+     "Runt naveln"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han har ont längst ner till höger i magen.",
+    "explanationJa": "お{腹|なか}の{右下|みぎした}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har lillebror?",
+    "options": [
+     "Blindtarmsinflammation",
+     "Magsår",
+     "Halsbränna",
+     "Diarré"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är blindtarmsinflammation.",
+    "explanationJa": "{虫垂炎|ちゅうすいえん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Maten går från tjocktarmen till tunntarmen.",
+    "correct": false,
+    "explanationSv": "… först tunntarmen, sedan tjocktarmen.",
+    "explanationJa": "{小腸|しょうちょう}が{先|さき}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är bra för tarmfloran enligt läkaren?",
+    "options": [
+     "Kaffe",
+     "Grönsaker",
+     "Glass",
+     "Vatten"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ät mycket grönsaker, då mår tarmfloran bra.",
+    "explanationJa": "{野菜|やさい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lillebror blir snabbt bra igen.",
+    "correct": true,
+    "explanationSv": "Två dagar senare är lillebror hemma igen.",
+    "explanationJa": "すぐに{良|よ}くなりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om magen och vad som är bra för den.",
+  "discussionPoints": [
+   "Vilken mat mår din mage bra av?",
+   "Har du fått halsbränna någon gång?",
+   "Vet du någon som har opererat bort blindtarmen?",
+   "Vad gör du när du har ont i magen?"
+  ]
+ }
+}
