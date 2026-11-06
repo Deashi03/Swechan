@@ -1,0 +1,171 @@
+{
+ "id": "m.hjarna-och-nervsystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hjärna och nervsystem",
+ "titleJa": "{脳|のう}と{神経系|しんけいけい}",
+ "descriptionSv": "Hjärna och nervsystem: nerv, nervsystem, nervcell, ryggmärg, storhjärna, hjärnhalva, lillhjärna, hjärnstam, hjärnskakning, stroke, hjärnblödning, epilepsi, förlamad, domna bort och demens.",
+ "descriptionJa": "{脳|のう}と{神経系|しんけいけい}：{神経|しんけい}、{神経系|しんけいけい}、{神経細胞|しんけいさいぼう}、{脊髄|せきずい}、{大脳|だいのう}、{大脳半球|だいのうはんきゅう}、{小脳|しょうのう}、{脳幹|のうかん}、{脳震盪|のうしんとう}、{脳卒中|のうそっちゅう}、{脳出血|のうしゅっけつ}、てんかん、まひした、しびれる、{認知症|にんちしょう}。",
+ "categoryId": "R02-A01-T03",
+ "tags": [
+  "kropp",
+  "organ",
+  "hjärna"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.njurar-och-urinvagar"
+ ],
+ "related": [],
+ "recommendedOrder": 726,
+ "words": [
+  {
+   "senseId": "s.nerv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ryggmärg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nervsystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nervcell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storhjärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjärnhalva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lillhjärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjärnstam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjärnskakning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stroke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjärnblödning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.epilepsi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlamad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.domna-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.demens.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kroppens dator",
+  "paragraphs": [
+   "Erik har fått hjärnskakning. Han ramlade med cykeln utan hjälm. Läkaren säger att han ska vila hjärnan i en vecka.",
+   "Hemma läser han om hjärnan. Storhjärnan är den största delen. Den har två hjärnhalvor, och vänster hjärnhalva styr höger sida av kroppen. Lillhjärnan hjälper till med balansen, och hjärnstammen styr andningen.",
+   "Från hjärnan går ryggmärgen ner genom ryggen. Tillsammans med alla nerver bildar de nervsystemet. Hjärnan har miljarder nervceller.",
+   "Erik läser också om sjukdomar. Vid en stroke får en del av hjärnan inget blod. En hjärnblödning är en sorts stroke. Hans morfar fick en stroke och var förlamad i armen en tid.",
+   "Hans mormor har demens, och en kompis har epilepsi.",
+   "Efter en timme har Eriks fot domnat bort. Han har suttit konstigt. – Nu måste jag röra på mig, tänker han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför fick Erik hjärnskakning?",
+    "options": [
+     "Han krockade med bilen",
+     "Han föll i trappan",
+     "Han ramlade med cykeln utan hjälm",
+     "Han slog huvudet i dörren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han ramlade med cykeln utan hjälm.",
+    "explanationJa": "ヘルメットなしで{自転車|じてんしゃ}で{転|ころ}んだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad hjälper lillhjärnan till med?",
+    "options": [
+     "Andningen",
+     "Minnet",
+     "Att se",
+     "Balansen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Lillhjärnan hjälper till med balansen.",
+    "explanationJa": "バランスです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Vänster hjärnhalva styr vänster sida av kroppen.",
+    "correct": false,
+    "explanationSv": "… vänster hjärnhalva styr höger sida av kroppen.",
+    "explanationJa": "{右側|みぎがわ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad hände med Eriks morfar?",
+    "options": [
+     "Han fick epilepsi",
+     "Han fick hjärnskakning",
+     "Han fick demens",
+     "Han fick en stroke"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hans morfar fick en stroke.",
+    "explanationJa": "{脳卒中|のうそっちゅう}になりました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik har suttit länge med att läsa.",
+    "correct": true,
+    "explanationSv": "Efter en timme har Eriks fot domnat bort. Han har suttit konstigt.",
+    "explanationJa": "{長|なが}く{座|すわ}っていました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hjärnan och om att ta hand om den.",
+  "discussionPoints": [
+   "Vad gör du för att din hjärna ska må bra?",
+   "Har du haft hjärnskakning?",
+   "Vet du vad man ska göra om någon får en stroke?",
+   "Vilken del av hjärnan tycker du är mest intressant?"
+  ]
+ }
+}
