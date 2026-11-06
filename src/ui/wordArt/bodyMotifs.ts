@@ -8,6 +8,7 @@ import { boneSection, jointType, kneeJoint, muscles, skeleton, tendon } from './
 import { HAIR, armSkin, axelbred, chestHair, compare, faceSkin, figure, hairHead, skinTones } from './figures';
 import { brainTop, cells, cycle, headInside, heartDiagram, maleOrgans, nerveFigure, neuron, organs, urinary, uterus, vessels, vesselSection } from './organs';
 import { pointAt } from './limbs';
+import { earSection, eyeChart, eyeFront, eyeSection, glasses, hearing, levelMeter, smell, taste, touch } from './senses';
 import { armFlex, bodyBack, bodyFront, bodySide, fist, footprints, footSide, handBack, handPalm, legSide, tiptoe, toesTop, writingHand, barefoot } from './limbs';
 
 export const BODY_MOTIFS: Record<string, Svg> = {
@@ -234,4 +235,64 @@ export const BODY_MOTIFS: Record<string, Svg> = {
   'kropp.ägglossning': uterus(['äggstock'], undefined, { egg: true }),
   'kropp.menscykel': cycle('cykel'),
   'kropp.mens': cycle('mens'),
+  // ── Ögats delar ─────────────────────────────────────────────────
+  'kropp.ögonhåla': all(skull(), pointAt([74, 60], [110, 26])),
+  'kropp.ögonglob': eyeSection(['ögonglob'], [112, 108]),
+  'kropp.ögonvita': eyeFront(['ögonvita'], [112, 104]),
+  'kropp.ögonfärg': eyeFront(['ögonfärg'], [110, 108], { iris: '#4f9d69' }),
+  'kropp.pupill': eyeFront(['pupill'], [100, 110]),
+  'kropp.iris': eyeFront(['iris'], [110, 104]),
+  'kropp.hornhinna': eyeSection(['hornhinna'], [10, 104]),
+  'kropp.lins.2': eyeSection(['lins'], [24, 110]),
+  'kropp.synnerv': eyeSection(['synnerv'], [110, 104]),
+  'kropp.näthinna': eyeSection(['näthinna'], [112, 112]),
+  'kropp.tårkanal': eyeFront(['tårkanal'], [16, 104]),
+  'kropp.tårvätska': all(eyeFront([]), path('M44 90 C50 100 50 106 44 108 C38 106 38 100 44 90 Z', C.sky, C.ink, 1.6), pointAt([44, 100], [14, 112])),
+  'kropp.ögondroppe': eyeFront([], undefined, { drop: true }),
+  // ── Seende och synfel ───────────────────────────────────────────
+  'kropp.synfel': eyeChart(true),
+  'kropp.suddig': eyeChart(true),
+  'kropp.glasögon': glasses('glasögon'),
+  'kropp.läsglasögon': glasses('läsglasögon'),
+  'kropp.glasögonbåge': glasses('båge'),
+  'kropp.kontaktlins': glasses('kontaktlins'),
+  'kropp.synundersökning': eyeChart(false),
+  'kropp.grå-starr': eyeFront([], undefined, { cloudy: true }),
+  // ── Örats delar ─────────────────────────────────────────────────
+  'kropp.ytteröra': earSection(['ytteröra'], [8, 112]),
+  'kropp.örsnibb': earSection(['örsnibb'], [8, 118]),
+  'kropp.öronvax': earSection(['öronvax'], [40, 112]),
+  'kropp.hörselgång': earSection(['hörselgång'], [52, 104]),
+  'kropp.trumhinna': earSection(['trumhinna'], [64, 106]),
+  'kropp.mellanöra': earSection(['mellanöra'], [80, 110]),
+  'kropp.hörselben': earSection(['hörselben'], [64, 16]),
+  'kropp.inneröra': earSection(['inneröra'], [100, 112]),
+  'kropp.snäcka': earSection(['snäcka'], [112, 108]),
+  'kropp.balansorgan': earSection(['balansorgan'], [104, 10]),
+  'kropp.öroninflammation': earSection(['öroninflammation'], [80, 110]),
+  'kropp.öronpropp': hearing('öronpropp'),
+  // ── Ljud och hörsel ─────────────────────────────────────────────
+  'kropp.hörsel': hearing('hörsel'),
+  'kropp.ljudnivå': levelMeter(6),
+  'kropp.decibel': levelMeter(5, true),
+  'kropp.lomhörd': hearing('lomhörd'),
+  'kropp.hörapparat': hearing('hörapparat'),
+  'kropp.hörselskydd': hearing('hörselskydd'),
+  'kropp.tinnitus': hearing('tinnitus'),
+  // ── Känsel, smak och lukt ───────────────────────────────────────
+  'kropp.känsel': touch('känsel'),
+  'kropp.beröring': touch('beröring'),
+  'kropp.kittlig': touch('kittlig'),
+  'kropp.stickig': touch('stickig'),
+  'kropp.hetta': touch('hetta'),
+  'kropp.fingertoppskänsla': touch('fingertoppskänsla'),
+  'kropp.luktsinne': smell('luktsinne'),
+  'kropp.smaksinne': taste('smaksinne'),
+  'kropp.luktfri': smell('luktfri'),
+  'kropp.matlukt': smell('matlukt'),
+  'kropp.stank': smell('stank'),
+  'kropp.illaluktande': smell('illaluktande'),
+  'kropp.bismak': taste('bismak'),
+  'kropp.det-vattnas-i-munnen': taste('vattnas'),
+  'kropp.täppt': smell('täppt'),
 };
