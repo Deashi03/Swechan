@@ -1,0 +1,169 @@
+{
+ "id": "m.besvikelse-och-anger",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Besvikelse och ånger",
+ "titleJa": "{失望|しつぼう}と{後悔|こうかい}",
+ "descriptionSv": "Besvikelse och ånger: förväntning, besvikelse, besviken, snopen, missa chansen, felbeslut, förebrå, ångerfull, dyster, gjort är gjort, gråta över spilld mjölk, missräkning, svika, svek och tappa sugen.",
+ "descriptionJa": "{失望|しつぼう}と{後悔|こうかい}：{期待|きたい}、{失望|しつぼう}、がっかりした、あてが{外|はず}れた、チャンスを{逃|のが}す、{間違|まちが}った{判断|はんだん}、{責|せ}める、{後悔|こうかい}している、{陰気|いんき}な、すんだことはしかたない、{覆水盆|ふくすいぼん}に{返|かえ}らず、{期待外|きたいはず}れ、{裏切|うらぎ}る、{裏切|うらぎ}り、やる{気|き}をなくす。",
+ "categoryId": "R02-A03-T02",
+ "tags": [
+  "känslor",
+  "besvikelse"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.stolthet-och-tillfredsstallelse"
+ ],
+ "related": [],
+ "recommendedOrder": 914,
+ "words": [
+  {
+   "senseId": "s.förväntning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besvikelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besviken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snopen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.missa-chansen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felbeslut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förebrå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ångerfull.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dyster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gjort-är-gjort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gråta-över-spilld-mjölk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.missräkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tappa-sugen.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lägenheten",
+  "paragraphs": [
+   "Max och Aiko har letat efter en större lägenhet i ett år. Förra veckan hittade de en perfekt lägenhet nära parken. Deras förväntningar var höga.",
+   "Men de svarade inte på mejlet i tid, och en annan familj fick lägenheten. Det var en stor besvikelse. Max blev väldigt besviken och lite snopen.",
+   "– Vi missade chansen, säger Max. Det var ett felbeslut att vänta. Han börjar förebrå sig själv. Han är ångerfull och dyster hela helgen.",
+   "Aiko är också ledsen, men hon säger: – Gjort är gjort. Det är ingen idé att gråta över spilld mjölk. Det var en missräkning, inte slutet på världen.",
+   "– Jag sa att vi skulle få en större lägenhet i år, säger Max. Jag vill inte svika dig. Det känns som ett svek. – Du har inte svikit mig, säger Aiko. Vi ska inte tappa sugen. Vi letar vidare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad letar Max och Aiko efter?",
+    "options": [
+     "En större lägenhet",
+     "Ett nytt jobb",
+     "En bil",
+     "En hund"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Max och Aiko har letat efter en större lägenhet i ett år.",
+    "explanationJa": "{広|ひろ}いアパートです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "De fick lägenheten nära parken.",
+    "correct": false,
+    "explanationSv": "… en annan familj fick lägenheten.",
+    "explanationJa": "ほかの{家族|かぞく}が{借|か}りました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför fick de inte lägenheten?",
+    "options": [
+     "De svarade inte på mejlet i tid",
+     "Den var för dyr",
+     "De ville inte ha den",
+     "Den var för liten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Men de svarade inte på mejlet i tid …",
+    "explanationJa": "メールに{間|ま}に{合|あ}うように{返事|へんじ}しなかったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad säger Aiko?",
+    "options": [
+     "Det är ditt fel",
+     "Vi ger upp",
+     "Jag är arg",
+     "Gjort är gjort"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Gjort är gjort.",
+    "explanationJa": "「すんだことはしかたない」と{言|い}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker att Max har svikit henne.",
+    "correct": false,
+    "explanationSv": "– Du har inte svikit mig, säger Aiko.",
+    "explanationJa": "{裏切|うらぎ}られたとは{思|おも}っていません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om besvikelse och ånger.",
+  "discussionPoints": [
+   "När blev du senast besviken?",
+   "Har du missat en chans som du ångrar?",
+   "Förebrår du dig själv ofta?",
+   "Vad gör du för att inte tappa sugen?"
+  ]
+ }
+}

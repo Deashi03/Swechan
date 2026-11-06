@@ -1,0 +1,169 @@
+{
+ "id": "m.tolkning-och-antaganden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tolkning och antaganden",
+ "titleJa": "{解釈|かいしゃく}と{推測|すいそく}",
+ "descriptionSv": "Tolkning och antaganden: tolkning, läsa mellan raderna, anta, dra slutsatser, slutsats, förhastad, ta för givet, antagande, ledtråd, tyda, misstolka, förutsätta, uppfattning, fördom och antyda.",
+ "descriptionJa": "{解釈|かいしゃく}と{推測|すいそく}：{解釈|かいしゃく}、{行間|ぎょうかん}を{読|よ}む、{推測|すいそく}する、{結論|けつろん}を{出|だ}す、{結論|けつろん}、{早|はや}まった、{当然|とうぜん}のことと{思|おも}う、{仮定|かてい}、{手|て}がかり、{示|しめ}す、{誤解|ごかい}する、{前提|ぜんてい}とする、{見解|けんかい}、{偏見|へんけん}、ほのめかす。",
+ "categoryId": "R02-A03-T03",
+ "tags": [
+  "tankar",
+  "tolkning"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.fantasi-och-forestallning"
+ ],
+ "related": [],
+ "recommendedOrder": 924,
+ "words": [
+  {
+   "senseId": "s.tolkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsa-mellan-raderna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-slutsatser.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förhastad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-för-givet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antagande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledtråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tyda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.misstolka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förutsätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppfattning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antyda.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett kort meddelande",
+  "paragraphs": [
+   "En kväll får Aiko ett kort meddelande från Sara: \"Vi måste prata i morgon.\" Inget mer. Hennes tolkning är att Sara är arg på henne.",
+   "Hon försöker läsa mellan raderna. Varför skrev Sara så kort? Aiko antar att hon har gjort något fel. Hon drar slutsatser utan att veta något.",
+   "Max säger att det är en förhastad slutsats. – Du ska inte ta för givet att det är något dåligt. Det är bara ett antagande. – Men hon brukar alltid skriva hej, säger Aiko. Det måste vara en ledtråd.",
+   "– Det tyder inte på något, säger Max. Man kan lätt misstolka korta meddelanden. Man ska inte förutsätta det värsta.",
+   "Nästa dag får Aiko veta att Sara bara vill fråga om hon vill följa med på en resa. Aiko skrattar. Hennes uppfattning om meddelandet var helt fel. Alla har fördomar ibland, säger Max, till exempel att korta svar betyder att någon är arg. Sara ville inte antyda något alls."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad skriver Sara?",
+    "options": [
+     "Vi måste prata i morgon",
+     "Jag är arg på dig",
+     "Grattis på födelsedagen",
+     "Ring mig nu"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "\"Vi måste prata i morgon.\"",
+    "explanationJa": "「{明日話|あしたはな}さなきゃ」です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad antar Aiko?",
+    "options": [
+     "Att Sara är sjuk",
+     "Att hon har gjort något fel",
+     "Att Sara ska flytta",
+     "Att Sara har fått ett nytt jobb"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Aiko antar att hon har gjort något fel.",
+    "explanationJa": "{自分|じぶん}が{何|なに}か{間違|まちが}ったことをしたと{思|おも}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Max tycker att Aikos slutsats är förhastad.",
+    "correct": true,
+    "explanationSv": "Max säger att det är en förhastad slutsats.",
+    "explanationJa": "{早|はや}まった{結論|けつろん}だと{言|い}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ville Sara egentligen?",
+    "options": [
+     "Klaga på Aiko",
+     "Låna pengar",
+     "Fråga om Aiko vill följa med på en resa",
+     "Berätta att hon är kär"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… Sara bara vill fråga om hon vill följa med på en resa.",
+    "explanationJa": "{旅行|りょこう}に{誘|さそ}いたかったのです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Aikos tolkning av meddelandet var rätt.",
+    "correct": false,
+    "explanationSv": "Hennes uppfattning om meddelandet var helt fel.",
+    "explanationJa": "まったく{間違|まちが}っていました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att tolka och missförstå.",
+  "discussionPoints": [
+   "Har du misstolkat ett meddelande någon gång?",
+   "Är det lätt att läsa mellan raderna på svenska?",
+   "Vilka fördomar finns om Japan i Sverige?",
+   "Hur gör du för att inte dra förhastade slutsatser?"
+  ]
+ }
+}

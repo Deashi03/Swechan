@@ -210,13 +210,13 @@ try {
   await page.getByRole('link', { name: /Matlagningens verb/ }).first().click();
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
-  // Vardag & hem is fully published from 0.8, Kroppen & sinnena from 0.9 and
-  // Hälsa & sjukvård from 0.10, so the planned entry comes from Känslor & psykologi.
+  // Vardag & hem is fully published from 0.8, Kroppen & sinnena from 0.9, Hälsa & sjukvård
+  // from 0.10 and Känslor & psykologi from 0.11, so the planned entry comes from Relationer & familj.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Människan & hälsa/ }).first().click();
-  await page.getByRole('link', { name: /Känslor & psykologi/ }).first().click();
-  await page.getByRole('link', { name: /Grundkänslor/ }).first().click();
-  await page.getByRole('link', { name: /Glädje och lycka/ }).first().click();
+  await page.getByRole('link', { name: /Relationer & familj/ }).first().click();
+  await page.getByRole('link', { name: /Familjemedlemmar/ }).first().click();
+  await page.getByRole('link', { name: /Föräldrar och barn/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
