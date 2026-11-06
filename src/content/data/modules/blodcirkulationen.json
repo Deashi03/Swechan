@@ -1,0 +1,171 @@
+{
+ "id": "m.blodcirkulationen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Blodcirkulationen",
+ "titleJa": "{血液循環|けつえきじゅんかん}",
+ "descriptionSv": "Blodcirkulationen: blodomlopp, cirkulera, blodtryck, högt blodtryck, vilopuls, röd blodkropp, vit blodkropp, blodplätt, levra sig, blodgrupp, ge blod, blodgivare, blodbrist, svimma och kall om händerna.",
+ "descriptionJa": "{血液循環|けつえきじゅんかん}：{血液循環|けつえきじゅんかん}、{循環|じゅんかん}する、{血圧|けつあつ}、{高血圧|こうけつあつ}、{安静時|あんせいじ}{心拍数|しんぱくすう}、{赤血球|せっけっきゅう}、{白血球|はっけっきゅう}、{血小板|けっしょうばん}、{血|ち}が{固|かた}まる、{血液型|けつえきがた}、{献血|けんけつ}する、{献血者|けんけつしゃ}、{貧血|ひんけつ}、{気絶|きぜつ}する、{手|て}が{冷|つめ}たい。",
+ "categoryId": "R02-A01-T05",
+ "tags": [
+  "kropp",
+  "funktion",
+  "blod"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.andningens-forlopp"
+ ],
+ "related": [],
+ "recommendedOrder": 742,
+ "words": [
+  {
+   "senseId": "s.blodomlopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodtryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högt-blodtryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vilopuls.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röd-blodkropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vit-blodkropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodplätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.levra-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodgrupp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ge-blod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodgivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodbrist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svimma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kall-om-händerna.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "På blodcentralen",
+  "paragraphs": [
+   "Erik har bestämt sig för att ge blod för första gången. På blodcentralen får han veta sin blodgrupp: 0.",
+   "– Bra, det är vanligt och behövs mycket, säger sköterskan. Hon mäter hans blodtryck och hans vilopuls. Han har inte högt blodtryck.",
+   "Medan blodet tas förklarar hon: – Blodet cirkulerar runt i kroppen. Ett varv i blodomloppet tar ungefär en minut. Röda blodkroppar för syre, vita blodkroppar skyddar mot sjukdomar, och blodplättar gör att blodet levrar sig när man får ett sår.",
+   "Erik blir lite blek. – Om du känner att du ska svimma, säg till, säger sköterskan. Hon ger honom saft och en bulle.",
+   "Hans syster kan inte ge blod, för hon har blodbrist. Hon är också ofta kall om händerna.",
+   "Efter en vecka får Erik ett sms: hans blod har hjälpt en patient. Nu är han stolt blodgivare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken blodgrupp har Erik?",
+    "options": [
+     "A",
+     "0",
+     "B",
+     "Ingen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… sin blodgrupp: 0.",
+    "explanationJa": "O{型|がた}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör de röda blodkropparna?",
+    "options": [
+     "För syre",
+     "Skyddar mot sjukdomar",
+     "Gör att blodet levrar sig",
+     "Mäter blodtrycket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Röda blodkroppar för syre.",
+    "explanationJa": "{酸素|さんそ}を{運|はこ}びます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik har högt blodtryck.",
+    "correct": false,
+    "explanationSv": "Han har inte högt blodtryck.",
+    "explanationJa": "{高血圧|こうけつあつ}ではありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför kan systern inte ge blod?",
+    "options": [
+     "Hon har blodbrist",
+     "Hon är rädd",
+     "Hon är för ung",
+     "Hon har fel blodgrupp"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… hon har blodbrist.",
+    "explanationJa": "{貧血|ひんけつ}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik är glad att han gav blod.",
+    "correct": true,
+    "explanationSv": "Nu är han stolt blodgivare.",
+    "explanationJa": "{誇|ほこ}りに{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om blod, blodtryck och om att ge blod.",
+  "discussionPoints": [
+   "Vet du vilken blodgrupp du har?",
+   "Har du gett blod någon gång?",
+   "Pratar man om blodgrupp och personlighet i Sverige?",
+   "Är du ofta kall om händerna?"
+  ]
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "id": "m.ljud-och-horsel",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ljud och hörsel",
+ "titleJa": "{音|おと}と{聴覚|ちょうかく}",
+ "descriptionSv": "Ljud och hörsel: hörsel, ljudnivå, decibel, buller, brus, eko, viska, skrika, höra dåligt, lomhörd, hörapparat, hörselskadad, döv, teckenspråk, hörselskydd och tinnitus.",
+ "descriptionJa": "{音|おと}と{聴覚|ちょうかく}：{聴覚|ちょうかく}、{音量|おんりょう}、デシベル、{騒音|そうおん}、ざわめき、こだま、ささやく、{叫|さけ}ぶ、{耳|みみ}が{遠|とお}い、{耳|みみ}が{遠|とお}い（くだけた）、{補聴器|ほちょうき}、{聴覚障害|ちょうかくしょうがい}のある、{耳|みみ}の{聞|き}こえない、{手話|しゅわ}、イヤーマフ、{耳鳴|みみな}り。",
+ "categoryId": "R02-A01-T04",
+ "tags": [
+  "kropp",
+  "hörsel",
+  "ljud"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.orats-delar"
+ ],
+ "related": [],
+ "recommendedOrder": 734,
+ "words": [
+  {
+   "senseId": "s.hörsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljudnivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decibel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.buller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eko.1",
+   "active": true
+  },
+  {
+   "senseId": "s.viska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höra-dåligt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lomhörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörapparat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.döv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörselskadad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.teckenspråk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörselskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tinnitus.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ta hand om hörseln",
+  "paragraphs": [
+   "Erik har varit på en stor konsert. Ljudnivån var över 100 decibel. Nu har han tinnitus, ett pip i öronen. Han är orolig för sin hörsel.",
+   "Han ringer sin moster, som är hörselskadad. – Använd alltid hörselskydd på konserter, säger hon. Jag har hörapparat i dag för att jag inte skyddade mig när jag var ung.",
+   "Eriks morfar hör dåligt. Han är lite lomhörd, så man måste skrika ibland. Men om man viskar hör han ingenting alls.",
+   "Eriks kusin är döv och pratar teckenspråk. Hon har lärt Erik några tecken.",
+   "I Eriks lägenhet är det mycket buller från gatan. När han ska somna lyssnar han på brus från havet i en app.",
+   "Nästa vecka är tinnitusen borta. – Jag ska alltid ha hörselskydd i fortsättningen, säger Erik. Han säger det högt i trappan, och det blir eko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad fick Erik efter konserten?",
+    "options": [
+     "Öroninflammation",
+     "Tinnitus",
+     "Hörapparat",
+     "Ont i magen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nu har han tinnitus, ett pip i öronen.",
+    "explanationJa": "{耳鳴|みみな}りです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför har mostern hörapparat?",
+    "options": [
+     "Hon skyddade inte hörseln när hon var ung",
+     "Hon föddes döv",
+     "Hon hade öroninflammation",
+     "Hon är gammal"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… för att jag inte skyddade mig när jag var ung.",
+    "explanationJa": "{若|わか}いころ{耳|みみ}を{守|まも}らなかったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Morfar hör när man viskar.",
+    "correct": false,
+    "explanationSv": "… om man viskar hör han ingenting alls.",
+    "explanationJa": "{聞|き}こえません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad lyssnar Erik på när han ska somna?",
+    "options": [
+     "Musik",
+     "Radio",
+     "Brus från havet",
+     "Ingenting"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… lyssnar han på brus från havet i en app.",
+    "explanationJa": "{海|うみ}のざわめきです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik har lärt sig något av sin konsert.",
+    "correct": true,
+    "explanationSv": "Jag ska alltid ha hörselskydd i fortsättningen.",
+    "explanationJa": "{学|まな}びました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ljud, buller och hörsel.",
+  "discussionPoints": [
+   "Har du varit på en konsert med mycket högt ljud?",
+   "Använder du hörselskydd?",
+   "Vad stör dig mest: buller eller tystnad?",
+   "Kan du några tecken på teckenspråk?"
+  ]
+ }
+}

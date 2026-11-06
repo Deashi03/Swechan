@@ -2,6 +2,258 @@
   "_comment": "Koppling mellan planeringskatalogen (planning/catalog/swechan-catalog.v1.json) och redan publicerade lektioner. Ingen av de fem publicerade modulerna motsvarar exakt EN katalogpost; därför används kompatibilitetsplacering i en ämnesgrupp (modulen behåller sitt m.*-ID, catalogId saknas; från 0.5 alltid i en ämnesgrupp, aldrig direkt i ett område). overlapsCatalogIds anger ämnesöverlapp, inte likvärdighet. links fylls bara efter verifierad 1:1-matchning: modulen är skriven direkt för katalogposten (samma titel, ämne och placering).",
   "links": [
     {
+      "catalogId": "SWC-MAN-01-01-01",
+      "moduleId": "m.huvud-och-ansikte",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.in-och-utcheckning"
+    },
+    {
+      "catalogId": "SWC-MAN-01-01-02",
+      "moduleId": "m.armar-och-hander",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.huvud-och-ansikte"
+    },
+    {
+      "catalogId": "SWC-MAN-01-01-03",
+      "moduleId": "m.ben-och-fotter",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.armar-och-hander"
+    },
+    {
+      "catalogId": "SWC-MAN-01-01-04",
+      "moduleId": "m.bal-och-rygg",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.ben-och-fotter"
+    },
+    {
+      "catalogId": "SWC-MAN-01-01-05",
+      "moduleId": "m.leder-och-rorelser",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.bal-och-rygg"
+    },
+    {
+      "catalogId": "SWC-MAN-01-01-06",
+      "moduleId": "m.hud-och-kroppsbeharing",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.leder-och-rorelser"
+    },
+    {
+      "catalogId": "SWC-MAN-01-01-07",
+      "moduleId": "m.beskriva-kroppsliga-kannetecken",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hud-och-kroppsbeharing"
+    },
+    {
+      "catalogId": "SWC-MAN-01-02-01",
+      "moduleId": "m.ben-och-skelettdelar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.beskriva-kroppsliga-kannetecken"
+    },
+    {
+      "catalogId": "SWC-MAN-01-02-02",
+      "moduleId": "m.leder-och-ledband",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.ben-och-skelettdelar"
+    },
+    {
+      "catalogId": "SWC-MAN-01-02-03",
+      "moduleId": "m.muskelgrupper",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.leder-och-ledband"
+    },
+    {
+      "catalogId": "SWC-MAN-01-02-04",
+      "moduleId": "m.senor-och-fasten",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.muskelgrupper"
+    },
+    {
+      "catalogId": "SWC-MAN-01-02-05",
+      "moduleId": "m.hallning-och-balans",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.senor-och-fasten"
+    },
+    {
+      "catalogId": "SWC-MAN-01-02-06",
+      "moduleId": "m.rorelser-och-rorelseomfang",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hallning-och-balans"
+    },
+    {
+      "catalogId": "SWC-MAN-01-02-07",
+      "moduleId": "m.skador-i-rorelseapparaten",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.rorelser-och-rorelseomfang"
+    },
+    {
+      "catalogId": "SWC-MAN-01-03-01",
+      "moduleId": "m.hjarta-och-blodkarl",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.skador-i-rorelseapparaten"
+    },
+    {
+      "catalogId": "SWC-MAN-01-03-02",
+      "moduleId": "m.lungor-och-luftvagar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hjarta-och-blodkarl"
+    },
+    {
+      "catalogId": "SWC-MAN-01-03-03",
+      "moduleId": "m.mage-och-tarmar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.lungor-och-luftvagar"
+    },
+    {
+      "catalogId": "SWC-MAN-01-03-04",
+      "moduleId": "m.lever-och-gallblasa",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.mage-och-tarmar"
+    },
+    {
+      "catalogId": "SWC-MAN-01-03-05",
+      "moduleId": "m.njurar-och-urinvagar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.lever-och-gallblasa"
+    },
+    {
+      "catalogId": "SWC-MAN-01-03-06",
+      "moduleId": "m.hjarna-och-nervsystem",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.njurar-och-urinvagar"
+    },
+    {
+      "catalogId": "SWC-MAN-01-03-07",
+      "moduleId": "m.fortplantningsorgan",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hjarna-och-nervsystem"
+    },
+    {
+      "catalogId": "SWC-MAN-01-04-01",
+      "moduleId": "m.ogats-delar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.fortplantningsorgan"
+    },
+    {
+      "catalogId": "SWC-MAN-01-04-02",
+      "moduleId": "m.seende-och-synfel",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.ogats-delar"
+    },
+    {
+      "catalogId": "SWC-MAN-01-04-03",
+      "moduleId": "m.orats-delar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.seende-och-synfel"
+    },
+    {
+      "catalogId": "SWC-MAN-01-04-04",
+      "moduleId": "m.ljud-och-horsel",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.orats-delar"
+    },
+    {
+      "catalogId": "SWC-MAN-01-04-05",
+      "moduleId": "m.kansel-och-beroring",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.ljud-och-horsel"
+    },
+    {
+      "catalogId": "SWC-MAN-01-04-06",
+      "moduleId": "m.smak-och-lukt",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.kansel-och-beroring"
+    },
+    {
+      "catalogId": "SWC-MAN-01-04-07",
+      "moduleId": "m.sinnesintryck-i-vardagen",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.smak-och-lukt"
+    },
+    {
+      "catalogId": "SWC-MAN-01-05-01",
+      "moduleId": "m.andningens-forlopp",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.sinnesintryck-i-vardagen"
+    },
+    {
+      "catalogId": "SWC-MAN-01-05-02",
+      "moduleId": "m.blodcirkulationen",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.andningens-forlopp"
+    },
+    {
+      "catalogId": "SWC-MAN-01-05-03",
+      "moduleId": "m.matsmaltning",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.blodcirkulationen"
+    },
+    {
+      "catalogId": "SWC-MAN-01-05-04",
+      "moduleId": "m.kroppstemperatur-och-svettning",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.matsmaltning"
+    },
+    {
+      "catalogId": "SWC-MAN-01-05-05",
+      "moduleId": "m.somn-och-vakenhet",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.kroppstemperatur-och-svettning"
+    },
+    {
+      "catalogId": "SWC-MAN-01-05-06",
+      "moduleId": "m.hormoner-och-reglering",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.somn-och-vakenhet"
+    },
+    {
+      "catalogId": "SWC-MAN-01-05-07",
+      "moduleId": "m.kroppens-immunforsvar",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.hormoner-och-reglering"
+    },
+    {
+      "catalogId": "SWC-MAN-01-06-01",
+      "moduleId": "m.ga-och-springa",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.kroppens-immunforsvar"
+    },
+    {
+      "catalogId": "SWC-MAN-01-06-02",
+      "moduleId": "m.boja-och-stracka",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.ga-och-springa"
+    },
+    {
+      "catalogId": "SWC-MAN-01-06-03",
+      "moduleId": "m.lyfta-och-bara",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.boja-och-stracka"
+    },
+    {
+      "catalogId": "SWC-MAN-01-06-04",
+      "moduleId": "m.greppa-och-slappa",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.lyfta-och-bara"
+    },
+    {
+      "catalogId": "SWC-MAN-01-06-05",
+      "moduleId": "m.ansiktsuttryck-och-miner",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.greppa-och-slappa"
+    },
+    {
+      "catalogId": "SWC-MAN-01-06-06",
+      "moduleId": "m.gester-och-kroppssprak",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.ansiktsuttryck-och-miner"
+    },
+    {
+      "catalogId": "SWC-MAN-01-06-07",
+      "moduleId": "m.beskriva-smarta-och-obehag",
+      "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",
+      "note": "Förkunskap: m.gester-och-kroppssprak"
+    },
+    {
       "catalogId": "SWC-VAR-01-01-01",
       "moduleId": "m.hus-och-lagenheter",
       "verifiedBy": "Skriven för katalogposten i 0.5: titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).",

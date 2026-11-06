@@ -1,0 +1,170 @@
+{
+ "id": "m.leder-och-ledband",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Leder och ledband",
+ "titleJa": "{関節|かんせつ}と{靭帯|じんたい}",
+ "descriptionSv": "Leder och ledband: ledband, brosk, menisk, korsband, ledvätska, ledkapsel, kulled, gångjärnsled, svullen, artros, reumatism, ledinflammation, stabil, instabil och knäskydd.",
+ "descriptionJa": "{関節|かんせつ}と{靭帯|じんたい}：{靭帯|じんたい}、{軟骨|なんこつ}、{半月板|はんげつばん}、{十字靭帯|じゅうじじんたい}、{関節液|かんせつえき}、{関節包|かんせつほう}、{球関節|きゅうかんせつ}、{蝶番関節|ちょうばんかんせつ}、{腫|は}れた、{変形性関節症|へんけいせいかんせつしょう}、リウマチ、{関節炎|かんせつえん}、{安定|あんてい}した、{不安定|ふあんてい}な、サポーター。",
+ "categoryId": "R02-A01-T02",
+ "tags": [
+  "kropp",
+  "skelett"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.ben-och-skelettdelar"
+ ],
+ "related": [],
+ "recommendedOrder": 712,
+ "words": [
+  {
+   "senseId": "s.ledband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stabil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.instabil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svullen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brosk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.menisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korsband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledvätska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledkapsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångjärnsled.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kulled.1",
+   "active": true
+  },
+  {
+   "senseId": "s.artros.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reumatism.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledinflammation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäskydd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mias knä",
+  "paragraphs": [
+   "Mia spelar handboll. I en match vred hon knät och föll. Knät blev svullet direkt.",
+   "Läkaren förklarade: – Knät är en gångjärnsled. Inne i knät finns två korsband och två menisker av brosk. Runt leden finns en ledkapsel med ledvätska.",
+   "– Du har skadat ett ledband, men korsbandet och menisken är hela. Därför känns knät instabilt nu.",
+   "Mia fick träna i tre månader. Nu känns knät stabilt igen, men hon spelar med knäskydd.",
+   "Hennes morfar säger att han har problem med lederna också, men av andra skäl. – Jag har artros i höften, och det är en kulled. Ibland får jag ledinflammation. Och mormor har reumatism i händerna.",
+   "– Ta hand om dina leder, Mia, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken sport spelar Mia?",
+    "options": [
+     "Fotboll",
+     "Hon spelar inget",
+     "Hon springer",
+     "Handboll"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Mia spelar handboll.",
+    "explanationJa": "ハンドボールです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har Mia skadat?",
+    "options": [
+     "Korsbandet",
+     "Ett ledband",
+     "Menisken",
+     "Brosket"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Du har skadat ett ledband.",
+    "explanationJa": "{靭帯|じんたい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mias knä känns stabilt direkt efter skadan.",
+    "correct": false,
+    "explanationSv": "Därför känns knät instabilt nu.",
+    "explanationJa": "{不安定|ふあんてい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har morfar i höften?",
+    "options": [
+     "Artros",
+     "Reumatism",
+     "En skada",
+     "En ny led"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Jag har artros i höften.",
+    "explanationJa": "{変形性関節症|へんけいせいかんせつしょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mia blev bra efter träning.",
+    "correct": true,
+    "explanationSv": "Nu känns knät stabilt igen.",
+    "explanationJa": "よくなりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om leder: skador, sjukdomar och hur man skyddar dem.",
+  "discussionPoints": [
+   "Har du skadat ett knä eller en fotled?",
+   "Känner du någon som har artros eller reumatism?",
+   "Vilka idrotter är hårda för lederna?",
+   "Vad gör du för att skydda dina leder?"
+  ]
+ }
+}

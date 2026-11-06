@@ -1,0 +1,170 @@
+{
+ "id": "m.lungor-och-luftvagar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Lungor och luftvägar",
+ "titleJa": "{肺|はい}と{気道|きどう}",
+ "descriptionSv": "Lungor och luftvägar: lunga, luftväg, svalg, stämband, struphuvud, luftstrupe, luftrör, lungblåsa, mellangärde, bihåla, astma, inhalator, lunginflammation, lungkapacitet och rökare.",
+ "descriptionJa": "{肺|はい}と{気道|きどう}：{肺|はい}、{気道|きどう}、{咽頭|いんとう}、{声帯|せいたい}、{喉頭|こうとう}、{気管|きかん}、{気管支|きかんし}、{肺胞|はいほう}、{横隔膜|おうかくまく}、{副鼻腔|ふくびくう}、{喘息|ぜんそく}、{吸入器|きゅうにゅうき}、{肺炎|はいえん}、{肺活量|はいかつりょう}、{喫煙者|きつえんしゃ}。",
+ "categoryId": "R02-A01-T03",
+ "tags": [
+  "kropp",
+  "organ"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hjarta-och-blodkarl"
+ ],
+ "related": [],
+ "recommendedOrder": 722,
+ "words": [
+  {
+   "senseId": "s.lunga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftstrupe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svalg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stämband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.struphuvud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftrör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lungblåsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellangärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bihåla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.astma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inhalator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lunginflammation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lungkapacitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rökare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En resa genom luftvägarna",
+  "paragraphs": [
+   "Leo läser en bok om kroppen för sin lillasyster.",
+   "– När du andas går luften genom luftvägarna. Den går in genom näsan och munnen. Först kommer den till svalget. Sedan går den förbi struphuvudet, där stämbanden sitter.",
+   "– Därefter går luften ner i luftstrupen och vidare i luftrören. Längst in i lungorna finns små lungblåsor, där syret går över till blodet.",
+   "– Under lungorna finns mellangärdet, en stor muskel som hjälper dig att andas. Runt näsan finns bihålorna.",
+   "Lillasyster har astma. Hon har alltid en inhalator med sig. – Jag vill ha stor lungkapacitet, säger hon.",
+   "– Då ska du aldrig bli rökare, säger Leo. Och klä dig varmt, så att du inte får lunginflammation som morfar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var sitter stämbanden?",
+    "options": [
+     "I lungorna",
+     "I struphuvudet",
+     "I näsan",
+     "I mellangärdet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… struphuvudet, där stämbanden sitter.",
+    "explanationJa": "{喉頭|こうとう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var går syret över till blodet?",
+    "options": [
+     "I svalget",
+     "I lungblåsorna",
+     "I luftstrupen",
+     "I bihålorna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… små lungblåsor, där syret går över till blodet.",
+    "explanationJa": "{肺胞|はいほう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mellangärdet är en muskel.",
+    "correct": true,
+    "explanationSv": "… mellangärdet, en stor muskel.",
+    "explanationJa": "そうです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har lillasyster alltid med sig?",
+    "options": [
+     "En bok",
+     "En mössa",
+     "Medicin för magen",
+     "En inhalator"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon har alltid en inhalator med sig.",
+    "explanationJa": "{吸入器|きゅうにゅうき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Morfar har haft lunginflammation.",
+    "correct": true,
+    "explanationSv": "… inte får lunginflammation som morfar.",
+    "explanationJa": "あります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om lungor och andning.",
+  "discussionPoints": [
+   "Har du eller någon du känner astma?",
+   "Varför är det dåligt att röka?",
+   "Hur kan man öka sin lungkapacitet?",
+   "Får du ofta ont i bihålorna på vintern?"
+  ]
+ }
+}

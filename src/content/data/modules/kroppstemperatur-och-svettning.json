@@ -1,0 +1,171 @@
+{
+ "id": "m.kroppstemperatur-och-svettning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kroppstemperatur och svettning",
+ "titleJa": "{体温|たいおん}と{発汗|はっかん}",
+ "descriptionSv": "Kroppstemperatur och svettning: kroppstemperatur, kroppsvärme, svettning, transpirera, kallsvettas, huttra, darra, frysa om, nedkyld, svalka sig, överhettad, värmeslag, förfrysning, uttorkad och vätskebrist.",
+ "descriptionJa": "{体温|たいおん}と{発汗|はっかん}：{体温|たいおん}、{体|からだ}の{温|ぬく}もり、{発汗|はっかん}、{発汗|はっかん}する、{冷|ひ}や{汗|あせ}をかく、{寒|さむ}さで{震|ふる}える、{震|ふる}える、{冷|つめ}たい、{体|からだ}が{冷|ひ}えきった、{涼|すず}む、{熱|あつ}くなりすぎた、{熱中症|ねっちゅうしょう}、{凍傷|とうしょう}、{脱水|だっすい}{状態|じょうたい}の、{水分不足|すいぶんぶそく}。",
+ "categoryId": "R02-A01-T05",
+ "tags": [
+  "kropp",
+  "funktion",
+  "temperatur"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.matsmaltning"
+ ],
+ "related": [],
+ "recommendedOrder": 744,
+ "words": [
+  {
+   "senseId": "s.kroppstemperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kroppsvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svettning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transpirera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kallsvettas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huttra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.darra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frysa-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nedkyld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svalka-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överhettad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förfrysning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uttorkad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vätskebrist.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från vinter till sommar",
+  "paragraphs": [
+   "I januari är Leo och hans pappa i norra Sverige. Det är minus trettio grader. Leo fryser om fötterna och huttrar.",
+   "– Akta dig för förfrysning, säger pappa. Han tittar på Leos näsa. De går in i stugan och värmer sig. Leo darrar fortfarande.",
+   "På sommaren är det tvärtom. Det är trettio grader varmt. Leo spelar fotboll och svettas mycket. Svettningarna gör att han blir uttorkad. Han får ont i huvudet av vätskebrist.",
+   "– Det är normalt att transpirera, men drick vatten, annars kan du få värmeslag, säger tränaren. Leos lillebror har blivit överhettad och sitter i skuggan.",
+   "De badar i sjön för att svalka sig. Vattnet är kallt, och efter en stund är lillebror nedkyld. Pappa håller om honom, och hans kroppsvärme hjälper.",
+   "Kroppen vill alltid ha samma kroppstemperatur, tänker Leo. Han kallsvettas när han tänker på vinterns kyla."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur kallt är det i januari?",
+    "options": [
+     "Minus tre grader",
+     "Noll grader",
+     "Minus trettio grader",
+     "Trettio grader"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det är minus trettio grader.",
+    "explanationJa": "マイナス30{度|ど}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad ska Leo akta sig för på vintern?",
+    "options": [
+     "Värmeslag",
+     "Vätskebrist",
+     "Förfrysning",
+     "Svettningar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Akta dig för förfrysning.",
+    "explanationJa": "{凍傷|とうしょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo dricker mycket när han spelar fotboll.",
+    "correct": false,
+    "explanationSv": "Han får ont i huvudet av vätskebrist.",
+    "explanationJa": "{水分|すいぶん}が{足|た}りません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför badar de i sjön?",
+    "options": [
+     "För att tvätta sig",
+     "För att träna",
+     "För att det regnar",
+     "För att svalka sig"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "De badar i sjön för att svalka sig.",
+    "explanationJa": "{涼|すず}むためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Pappa hjälper lillebror att bli varm igen.",
+    "correct": true,
+    "explanationSv": "Pappa håller om honom, och hans kroppsvärme hjälper.",
+    "explanationJa": "{温|あたた}めてあげます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om värme, kyla och svett.",
+  "discussionPoints": [
+   "Fryser du lätt eller blir du lätt varm?",
+   "Hur svalkar du dig på sommaren?",
+   "Har du varit nedkyld någon gång?",
+   "Hur mycket vatten dricker du när det är varmt?"
+  ]
+ }
+}

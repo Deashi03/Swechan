@@ -1,0 +1,171 @@
+{
+ "id": "m.fortplantningsorgan",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Fortplantningsorgan",
+ "titleJa": "{生殖器|せいしょくき}",
+ "descriptionSv": "Fortplantningsorgan: fortplantning, könsorgan, underliv, livmoder, äggstock, äggcell, slida, penis, testikel, spermie, befruktning, mens, menscykel, ägglossning och preventivmedel.",
+ "descriptionJa": "{生殖器|せいしょくき}：{生殖|せいしょく}、{生殖器|せいしょくき}、{陰部|いんぶ}、{子宮|しきゅう}、{卵巣|らんそう}、{卵子|らんし}、{膣|ちつ}、ペニス、{精巣|せいそう}、{精子|せいし}、{受精|じゅせい}、{月経|げっけい}、{月経周期|げっけいしゅうき}、{排卵|はいらん}、{避妊具|ひにんぐ}。",
+ "categoryId": "R02-A01-T03",
+ "tags": [
+  "kropp",
+  "organ",
+  "biologi"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hjarna-och-nervsystem"
+ ],
+ "related": [],
+ "recommendedOrder": 727,
+ "words": [
+  {
+   "senseId": "s.fortplantning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.könsorgan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underliv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äggcell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spermie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.befruktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livmoder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äggstock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.penis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.testikel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ägglossning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.menscykel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.preventivmedel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Biologilektionen",
+  "paragraphs": [
+   "I Aikos klass handlar biologin om fortplantning. Läraren säger: – Vi använder de riktiga orden, så att ni kan prata om kroppen med en läkare.",
+   "– Kvinnans könsorgan är bland annat livmodern, äggstockarna och slidan. I äggstockarna finns äggceller. Mannens könsorgan är bland annat penis och testiklarna, där spermierna bildas.",
+   "– Om en spermie och en äggcell möts sker en befruktning. Då kan ett barn börja växa i livmodern.",
+   "– Ungefär en gång i månaden lossnar en äggcell. Det kallas ägglossning. Om ingen befruktning sker kommer mensen. Tiden mellan två mens kallas menscykeln.",
+   "– Den som inte vill bli med barn kan använda preventivmedel. Unga kan få hjälp av en läkare.",
+   "– Och om ni har ont i underlivet, ska ni inte skämmas för att gå till en läkare, avslutar läraren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför använder läraren de riktiga orden?",
+    "options": [
+     "Så att eleverna kan prata med en läkare",
+     "För att det är roligt",
+     "För att boken säger det",
+     "För att det är kortare"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… så att ni kan prata om kroppen med en läkare.",
+    "explanationJa": "{医者|いしゃ}と{話|はな}せるようにするためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var bildas spermierna?",
+    "options": [
+     "I testiklarna",
+     "I äggstockarna",
+     "I livmodern",
+     "I slidan"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… testiklarna, där spermierna bildas.",
+    "explanationJa": "{精巣|せいそう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Befruktning är när en spermie och en äggcell möts.",
+    "correct": true,
+    "explanationSv": "Om en spermie och en äggcell möts sker en befruktning.",
+    "explanationJa": "そうです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad kommer om ingen befruktning sker?",
+    "options": [
+     "Ägglossningen",
+     "Mensen",
+     "Ett barn",
+     "Ingenting"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om ingen befruktning sker kommer mensen.",
+    "explanationJa": "{月経|げっけい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Läraren tycker att man ska vänta länge innan man söker vård.",
+    "correct": false,
+    "explanationSv": "… ska ni inte skämmas för att gå till en läkare.",
+    "explanationJa": "すぐ{受診|じゅしん}してよいと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man lär sig om kroppen i skolan, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Hur lärde du dig om kroppen i skolan?",
+   "Varför är det bra att kunna de riktiga orden?",
+   "Finns det något som liknar ungdomsmottagningen i Japan?",
+   "Är det lätt eller svårt att prata om kroppen med en läkare?"
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "id": "m.lever-och-gallblasa",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Lever och gallblåsa",
+ "titleJa": "{肝臓|かんぞう}と{胆|たん}のう",
+ "descriptionSv": "Lever och gallblåsa: lever, gift, avgifta, galla, gallblåsa, gallgång, gallsten, bukhåla, bukspottkörtel, insulin, mjälte, gulsot, fettlever, skrumplever, levervärde och insulin.",
+ "descriptionJa": "{肝臓|かんぞう}と{胆|たん}のう：{肝臓|かんぞう}、{毒|どく}、{解毒|げどく}する、{胆汁|たんじゅう}、{胆|たん}のう、{胆管|たんかん}、{胆石|たんせき}、{腹腔|ふくくう}、{膵臓|すいぞう}、インスリン、{脾臓|ひぞう}、{黄疸|おうだん}、{脂肪肝|しぼうかん}、{肝硬変|かんこうへん}、{肝機能|かんきのう}の{数値|すうち}。",
+ "categoryId": "R02-A01-T03",
+ "tags": [
+  "kropp",
+  "organ"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.mage-och-tarmar"
+ ],
+ "related": [],
+ "recommendedOrder": 724,
+ "words": [
+  {
+   "senseId": "s.lever.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gift-ämne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgifta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.galla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gallblåsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gallgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gallsten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bukhåla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bukspottkörtel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insulin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mjälte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gulsot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fettlever.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrumplever.1",
+   "active": true
+  },
+  {
+   "senseId": "s.levervärde.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Pappas lever",
+  "paragraphs": [
+   "Leos pappa har varit hos läkaren för att ta blod och testa det. Hans levervärden är lite höga.",
+   "– Levern är ett stort organ i bukhålan, förklarar läkaren. Den avgiftar blodet från gifter, till exempel alkohol. Den gör också galla, som sparas i gallblåsan och går genom gallgången ut i tarmen.",
+   "– Ni har lite fettlever, säger läkaren. Det kan komma av för mycket socker och alkohol. Om man fortsätter i många år kan det bli skrumplever.",
+   "Pappa blir orolig. Han minns att han hade gallsten för fem år sedan, och att hans bror en gång fick gulsot.",
+   "Läkaren känner också på mjälten och tittar på bukspottkörteln, som gör insulin. Där är allt bra.",
+   "Nu cyklar pappa till jobbet och dricker mindre öl. Efter ett halvår är levervärdena bra igen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför har pappa varit hos läkaren?",
+    "options": [
+     "För att han har ont",
+     "För att han har brutit armen",
+     "För att testa blodet",
+     "För att han har gulsot"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Leos pappa har varit hos läkaren för att ta blod och testa det.",
+    "explanationJa": "{血液検査|けつえきけんさ}のためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var sparas gallan?",
+    "options": [
+     "I gallblåsan",
+     "I levern",
+     "I mjälten",
+     "I tarmen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… galla, som sparas i gallblåsan.",
+    "explanationJa": "{胆|たん}のうです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Pappa har skrumplever.",
+    "correct": false,
+    "explanationSv": "Ni har lite fettlever … Om man fortsätter i många år kan det bli skrumplever.",
+    "explanationJa": "{脂肪肝|しぼうかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad hade pappa för fem år sedan?",
+    "options": [
+     "Gallsten",
+     "Gulsot",
+     "Fettlever",
+     "Ont i ryggen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… han hade gallsten för fem år sedan.",
+    "explanationJa": "{胆石|たんせき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Pappas nya vanor hjälper.",
+    "correct": true,
+    "explanationSv": "Efter ett halvår är levervärdena bra igen.",
+    "explanationJa": "{効果|こうか}があります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om levern och om att leva hälsosamt.",
+  "discussionPoints": [
+   "Vad är bra och dåligt för levern?",
+   "Har du tagit ett blodprov nyligen?",
+   "Känner du någon som har haft gallsten?",
+   "Hur mycket socker äter du?"
+  ]
+ }
+}

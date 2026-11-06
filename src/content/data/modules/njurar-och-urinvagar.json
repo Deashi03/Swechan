@@ -1,0 +1,170 @@
+{
+ "id": "m.njurar-och-urinvagar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Njurar och urinvägar",
+ "titleJa": "{腎臓|じんぞう}と{尿路|にょうろ}",
+ "descriptionSv": "Njurar och urinvägar: njure, urin, kiss, kissnödig, urinblåsa, urinledare, urinrör, urinprov, urinvägsinfektion, blåskatarr, njursten, njursvikt, dialys, donera och vätskebalans.",
+ "descriptionJa": "{腎臓|じんぞう}と{尿路|にょうろ}：{腎臓|じんぞう}、{尿|にょう}、おしっこ、トイレに{行|い}きたい、{膀胱|ぼうこう}、{尿管|にょうかん}、{尿道|にょうどう}、{尿検査|にょうけんさ}、{尿路感染症|にょうろかんせんしょう}、{膀胱炎|ぼうこうえん}、{腎臓結石|じんぞうけっせき}、{腎不全|じんふぜん}、{透析|とうせき}、{提供|ていきょう}する、{水分|すいぶん}バランス。",
+ "categoryId": "R02-A01-T03",
+ "tags": [
+  "kropp",
+  "organ"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.lever-och-gallblasa"
+ ],
+ "related": [],
+ "recommendedOrder": 725,
+ "words": [
+  {
+   "senseId": "s.urin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.njure.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kiss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kissnödig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urinblåsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urinledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urinrör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urinprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urinvägsinfektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåskatarr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.njursten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dialys.1",
+   "active": true
+  },
+  {
+   "senseId": "s.njursvikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.donera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vätskebalans.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En ny njure",
+  "paragraphs": [
+   "Yuis vän Mia har haft njursvikt i två år. Hennes njurar kan inte rensa blodet längre, så hon går på dialys tre gånger i veckan.",
+   "Nu har hennes bror bestämt sig för att donera en njure. Man kan leva bra med bara en.",
+   "Läkaren förklarar för familjen: – Njurarna gör urin. Det går genom urinledarna ner till urinblåsan och sedan ut genom urinröret. Njurarna styr också kroppens vätskebalans.",
+   "Före operationen måste hennes bror lämna urinprov och testa blodet. Läkaren frågar om han har haft njursten eller urinvägsinfektion. – Bara blåskatarr en gång, säger han.",
+   "Operationen går bra. Efter några dagar säger Mia glatt: – Jag är kissnödig! Det har jag inte varit på länge.",
+   "Hennes lillebror skrattar: – Säg kiss som alla andra!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur ofta går Mia på dialys?",
+    "options": [
+     "Varje dag",
+     "En gång i månaden",
+     "Tre gånger i veckan",
+     "En gång i veckan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… hon går på dialys tre gånger i veckan.",
+    "explanationJa": "{週|しゅう}に3{回|かい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem donerar en njure?",
+    "options": [
+     "Yui",
+     "Mias mamma",
+     "Läkaren",
+     "Mias bror"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Nu har hennes bror bestämt sig för att donera en njure.",
+    "explanationJa": "ミアのお{兄|にい}さんです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Urinet går från urinblåsan till njurarna.",
+    "correct": false,
+    "explanationSv": "Det går genom urinledarna ner till urinblåsan.",
+    "explanationJa": "{腎臓|じんぞう}から{膀胱|ぼうこう}へです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har Mias bror haft en gång?",
+    "options": [
+     "Njursten",
+     "Njursvikt",
+     "Urinvägsinfektion i njuren",
+     "Blåskatarr"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Bara blåskatarr en gång.",
+    "explanationJa": "{膀胱炎|ぼうこうえん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mias nya njure fungerar.",
+    "correct": true,
+    "explanationSv": "Jag är kissnödig! Det har jag inte varit på länge.",
+    "explanationJa": "{働|はたら}いています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om njurar, att dricka vatten och om att donera.",
+  "discussionPoints": [
+   "Hur mycket vatten dricker du om dagen?",
+   "Skulle du kunna tänka dig att donera blod eller ett organ?",
+   "Vet du vad man gör vid njursvikt?",
+   "Vad gör du om du blir kissnödig på en lång resa?"
+  ]
+ }
+}

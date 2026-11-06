@@ -1,8 +1,19 @@
 # Projektstatus – överlämning
 
-**Version:** 0.8.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.8 utvecklades i grenen `claude/swechan-0.8`)
+**Version:** 0.9.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.9 utvecklades i grenen `claude/swechan-0.9`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.9 – släppt 2026-11-06 (Kroppen & sinnena)
+
+- **Innehåll:** *Människan & hälsa → Kroppen & sinnena* (R02-A01) är helt publicerat: 42 moduler med `recommendedOrder` 701–757. Den första modulen har *In- och utcheckning* som förkunskap. Totalt finns **299 publicerade moduler**.
+- **Nästa överämne:** *Människan & hälsa → Hälsa & sjukvård* (R02-A02). Dess första modul, *Feber och frossa* (SWC-MAN-02-01-01), ska ha *Beskriva smärta och obehag* (`m.beskriva-smarta-och-obehag`) som förkunskap och ordning 801.
+- **Ord som sparats till Hälsa & sjukvård:** *feber*, *frossa*, *huvudvärk*, *yrsel*, *halsont*, *klåda*, *utslag*, *läkemedel*, *biverkning* och *vårdcentral* (*recept* och *tablett* finns redan i grundordförrådet). *Vaccin*, *vaccinera*, *antibiotika* och *smitta* finns redan i *Kroppens immunförsvar*, så återanvänd dem i stället för att skapa dubbletter. Det gäller också *smärta*, *värk*, *öm* och *göra ont* i *Beskriva smärta och obehag*.
+- **Ord som lagts till i grundordförrådet:** bland annat *cell*, *hjärna*, *organ*, *syre*, *puls*, *hormon*, *virus*, *bakterie*, *infektion*, *inflammation*, *förkylning*, *influensa*, *patient*, *vård*, *sköterska*, *behandling*, *operation*, *blödning*, *sår*, *rörelse*, *övning*, *stress*, *teater*, *rep*, *orm*, *myra* och *dum*, samt namnen *Max* och *Emil*. Se CHANGELOG.
+- **Homografer:** `s.mager.2`, `s.kraftig.2`, `s.lins.2` och `s.smälta.2` är nya betydelser på befintliga poster. `e.vad-kropp`, `e.led-kropp`, `e.gift-ämne`, `e.ta-upp-kropp`, `e.sträcka-verb` och `e.min-ansikte` är egna poster med nyckel.
+- **Kontrolltips:** en multiword-post som börjar med ett verb efter *sedan*/*nu*/*där* blir lätt inverterad ("Sedan ställer han ner") och hittas då inte. Skriv subjektet först. Sammansättningar med fogesuffix (*fotbollsmatch*) känns inte alltid igen.
+- **E2E:** den planerade katalogposten är nu *Människan & hälsa → Hälsa & sjukvård → Symtom & besvär → Feber och frossa*.
+- **Bilder:** fortfarande inga nya bilder eller animationer.
 
 ## 0.8 – släppt 2026-11-06 (förklaringar för svåra ord + Resor & lokaltrafik)
 
@@ -55,7 +66,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas G klar**: version 0.4.0, migreringstest 0.3.1→0.4 med nollställningen på och av, e2e-jobb i CI, dokumentation. WebKit/fysisk iPhone: EJ TESTAT.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
-## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.8.0)
+## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.9.0)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
 

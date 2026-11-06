@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.9.0 – 2026-11-06
+
+**Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.8.0 → 0.9.0 nollställer progressionen (återställningspunkt sparas).
+
+**Bilder:** inga nya bilder eller animationer (produktägarens beslut står fast).
+
+### 42 nya moduler: *Kroppen & sinnena* (helt publicerat)
+Det första överämnet i rotområdet *Människan & hälsa*. Kedjan har `recommendedOrder` 701–757 och börjar efter *In- och utcheckning*. Totalt finns nu **299 publicerade moduler** och 627 nya ordposter (AI-utkast). Alla modulord på B2 eller högre har förklaringar från början (256 nya förklaringar, 1 047 totalt).
+- *Kroppens yttre delar*: Huvud och ansikte, Armar och händer, Ben och fötter, Bål och rygg, Leder och rörelser, Hud och kroppsbehåring, Beskriva kroppsliga kännetecken
+- *Skelett & muskler*: Ben och skelettdelar, Leder och ledband, Muskelgrupper, Senor och fästen, Hållning och balans, Rörelser och rörelseomfång, Skador i rörelseapparaten
+- *Inre organ*: Hjärta och blodkärl, Lungor och luftvägar, Mage och tarmar, Lever och gallblåsa, Njurar och urinvägar, Hjärna och nervsystem, Fortplantningsorgan
+- *Syn, hörsel & känsel*: Ögats delar, Seende och synfel, Örats delar, Ljud och hörsel, Känsel och beröring, Smak och lukt, Sinnesintryck i vardagen
+- *Kroppens funktioner*: Andningens förlopp, Blodcirkulationen, Matsmältning, Kroppstemperatur och svettning, Sömn och vakenhet, Hormoner och reglering, Kroppens immunförsvar
+- *Rörelser & kroppsliga uttryck*: Gå och springa, Böja och sträcka, Lyfta och bära, Greppa och släppa, Ansiktsuttryck och miner, Gester och kroppsspråk, Beskriva smärta och obehag
+
+Många flerordsuttryck är egna poster, till exempel *hålla andan*, *kippa efter andan*, *sätta sig på huk*, *rycka på axlarna*, *himla med ögonen*, *hålla tummarna* och *göra ont*.
+
+Ord som hör till *Hälsa & sjukvård* (symtom, vårdbesök, läkemedel, första hjälpen) har medvetet hållits utanför, till exempel *feber*, *huvudvärk*, *yrsel*, *halsont* och *klåda*.
+
+**Homografer:**
+- Nya betydelser på befintliga poster: `s.mager.2`, `s.kraftig.2` (kroppsbyggnad), `s.lins.2` (ögats lins) och `s.smälta.2` (matsmältning).
+- Egna poster med nyckel för annan ordklass eller annan betydelse: `e.vad-kropp`, `e.led-kropp`, `e.gift-ämne`, `e.ta-upp-kropp`, `e.sträcka-verb` och `e.min-ansikte`.
+
+Inga publicerade `m.*`- eller `s.*`-ID:n har ändrats.
+
+### Övrigt
+- Grundordförrådet har fått vanliga ord som texterna om kroppen behöver, till exempel *cell*, *hjärna*, *syre*, *virus*, *bakterie*, *infektion*, *patient*, *vård*, *rörelse*, *övning*, *stress*, *teater*, *rep* och *orm*. Det har också fått namnen *Max* och *Emil*.
+- E2E: den planerade katalogposten ligger nu i *Människan & hälsa → Hälsa & sjukvård → Symtom & besvär → Feber och frossa*, eftersom hela *Kroppen & sinnena* är publicerat.
+
 ## 0.8.0 – 2026-11-06
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.7.0 → 0.8.0 nollställer progressionen (återställningspunkt sparas).

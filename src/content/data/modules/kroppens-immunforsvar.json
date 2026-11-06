@@ -1,0 +1,171 @@
+{
+ "id": "m.kroppens-immunforsvar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kroppens immunförsvar",
+ "titleJa": "{体|からだ}の{免疫|めんえき}",
+ "descriptionSv": "Kroppens immunförsvar: immunförsvar, antikropp, lymfkörtel, smitta, smittsam, dra på sig, inkubationstid, vaccin, vaccinera, immun, motståndskraft, antibiotika, bli frisk, tvätta händerna och försvagad.",
+ "descriptionJa": "{体|からだ}の{免疫|めんえき}：{免疫|めんえき}、{抗体|こうたい}、リンパ{節|せつ}、うつす、うつる、かかる、{潜伏期間|せんぷくきかん}、ワクチン、ワクチンを{接種|せっしゅ}する、{免疫|めんえき}のある、{抵抗力|ていこうりょく}、{抗生物質|こうせいぶっしつ}、{治|なお}る、{手|て}を{洗|あら}う、{弱|よわ}った。",
+ "categoryId": "R02-A01-T05",
+ "tags": [
+  "kropp",
+  "funktion",
+  "immunförsvar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hormoner-och-reglering"
+ ],
+ "related": [],
+ "recommendedOrder": 747,
+ "words": [
+  {
+   "senseId": "s.vaccin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vaccinera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antikropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lymfkörtel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.immunförsvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smitta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smittsam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-på-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inkubationstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.immun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motståndskraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antibiotika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bli-frisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvätta-händerna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försvagad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Förkylningarnas tid",
+  "paragraphs": [
+   "Det är november, och många i Leos klass har dragit på sig en förkylning. Läraren påminner alla om att tvätta händerna ofta.",
+   "– Förkylningar är smittsamma, säger hon. Den som är sjuk ska stanna hemma och inte smitta andra. Inkubationstiden är ett par dagar, så man kan smitta innan man känner sig sjuk.",
+   "– Vårt immunförsvar skyddar oss. Det gör antikroppar och har lymfkörtlar, till exempel på halsen.",
+   "Leo frågar om man kan få antibiotika mot förkylning. – Nej, det hjälper bara mot bakterier, inte virus, säger läraren.",
+   "– Ett vaccin gör att kroppen bildar antikroppar. Många vaccinerar sig mot influensa varje höst. Efter vissa sjukdomar blir man immun.",
+   "Leos farmor har ett försvagat immunförsvar. Hon har dålig motståndskraft och undviker folk på vintern. – Jag hoppas att du blir frisk snart, säger läraren till en elev som hostar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad påminner läraren om?",
+    "options": [
+     "Att äta frukt",
+     "Att sova mer",
+     "Att klä sig varmt",
+     "Att tvätta händerna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Läraren påminner alla om att tvätta händerna ofta.",
+    "explanationJa": "{手|て}を{洗|あら}うことです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång är inkubationstiden för förkylning?",
+    "options": [
+     "En vecka",
+     "En månad",
+     "Ett par dagar",
+     "En timme"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Inkubationstiden är ett par dagar.",
+    "explanationJa": "{数日|すうじつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Antibiotika hjälper mot förkylning.",
+    "correct": false,
+    "explanationSv": "… det hjälper bara mot bakterier, inte virus.",
+    "explanationJa": "{効|き}きません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör ett vaccin?",
+    "options": [
+     "Dödar bakterier",
+     "Gör en sjuk",
+     "Ger en förkylning",
+     "Gör att kroppen bildar antikroppar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ett vaccin gör att kroppen bildar antikroppar.",
+    "explanationJa": "{抗体|こうたい}をつくらせます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leos farmor är försiktig på vintern.",
+    "correct": true,
+    "explanationSv": "… undviker folk på vintern.",
+    "explanationJa": "{気|き}をつけています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om förkylningar, vaccin och att skydda sig mot smitta.",
+  "discussionPoints": [
+   "Hur ofta drar du på dig en förkylning?",
+   "Vaccinerar du dig mot influensa?",
+   "Vad gör du för att få bättre motståndskraft?",
+   "Stannar man hemma från jobbet när man är förkyld i Japan?"
+  ]
+ }
+}

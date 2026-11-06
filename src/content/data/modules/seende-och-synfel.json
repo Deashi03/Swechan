@@ -1,0 +1,170 @@
+{
+ "id": "m.seende-och-synfel",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Seende och synfel",
+ "titleJa": "{視力|しりょく}と{視力|しりょく}の{問題|もんだい}",
+ "descriptionSv": "Seende och synfel: synfel, suddig, närsynt, långsynt, glasögon, läsglasögon, glasögonbåge, kontaktlins, optiker, synundersökning, ögonläkare, grå starr, blind, synskadad och färgblind.",
+ "descriptionJa": "{視力|しりょく}と{視力|しりょく}の{問題|もんだい}：{視力|しりょく}の{問題|もんだい}、ぼやけた、{近視|きんし}の、{遠視|えんし}の、{眼鏡|めがね}、{老眼鏡|ろうがんきょう}、{眼鏡|めがね}のフレーム、コンタクトレンズ、{眼鏡店|めがねてん}、{視力検査|しりょくけんさ}、{眼科医|がんかい}、{白内障|はくないしょう}、{目|め}の{見|み}えない、{視覚障害|しかくしょうがい}のある、{色覚異常|しきかくいじょう}の。",
+ "categoryId": "R02-A01-T04",
+ "tags": [
+  "kropp",
+  "syn"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.ogats-delar"
+ ],
+ "related": [],
+ "recommendedOrder": 732,
+ "words": [
+  {
+   "senseId": "s.synfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.suddig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närsynt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långsynt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glasögon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsglasögon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glasögonbåge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontaktlins.1",
+   "active": true
+  },
+  {
+   "senseId": "s.optiker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synundersökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonläkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grå-starr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blind.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synskadad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgblind.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Nya glasögon",
+  "paragraphs": [
+   "Leo har börjat se suddigt när han tittar på tavlan i skolan. Han går till en optiker för en synundersökning.",
+   "– Du är närsynt, säger optikern. Du ser bra på nära håll, men inte långt bort. Det är ett vanligt synfel.",
+   "Leo provar många glasögonbågar. Till slut väljer han en blå. Han kan också få kontaktlinser när han spelar fotboll.",
+   "Hans mormor är långsynt och har läsglasögon. Morfar har grå starr och ska gå till en ögonläkare för att operera.",
+   "Optikern frågar också om färger. – Kan du se siffran i den här bilden? Leo ser den. – Bra, du är inte färgblind.",
+   "På vägen hem ser Leo en kvinna med en vit käpp. – Hon är synskadad, kanske helt blind, säger mamma. Leo tänker att han är glad över sina nya glasögon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går Leo till optikern?",
+    "options": [
+     "Han ser suddigt långt bort",
+     "Han har ont i ögonen",
+     "Han vill ha solglasögon",
+     "Hans glasögon är trasiga"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Leo har börjat se suddigt när han tittar på tavlan.",
+    "explanationJa": "{遠|とお}くがぼやけて{見|み}えるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket synfel har Leo?",
+    "options": [
+     "Han är närsynt",
+     "Han är långsynt",
+     "Han är färgblind",
+     "Han har grå starr"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Du är närsynt.",
+    "explanationJa": "{近視|きんし}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo väljer en svart glasögonbåge.",
+    "correct": false,
+    "explanationSv": "Till slut väljer han en blå.",
+    "explanationJa": "{青|あお}いフレームです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har morfar?",
+    "options": [
+     "Läsglasögon",
+     "Kontaktlinser",
+     "Han är blind",
+     "Grå starr"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Morfar har grå starr.",
+    "explanationJa": "{白内障|はくないしょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo är nöjd med sina glasögon.",
+    "correct": true,
+    "explanationSv": "… han är glad över sina nya glasögon.",
+    "explanationJa": "{満足|まんぞく}しています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om syn, glasögon och linser.",
+  "discussionPoints": [
+   "Har du glasögon eller linser?",
+   "Är du närsynt eller långsynt?",
+   "När gjorde du en synundersökning senast?",
+   "Hur hjälper man synskadade i Japan?"
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "id": "m.beskriva-smarta-och-obehag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Beskriva smärta och obehag",
+ "titleJa": "{痛|いた}みや{不快感|ふかいかん}を{説明|せつめい}する",
+ "descriptionSv": "Beskriva smärta och obehag: smärta, göra ont, öm, kramp, lindrig, molande, värk, värka, bulta, smärtsam, domna, myrkrypning, stickande, brännande och obehag.",
+ "descriptionJa": "{痛|いた}みや{不快感|ふかいかん}を{説明|せつめい}する：{痛|いた}み、{痛|いた}む、（{触|さわ}ると）{痛|いた}い、けいれん、{軽|かる}い、{鈍|にぶ}い、うずき、うずく、ずきずきする、つらい、しびれる、ぴりぴり{感|かん}、ちくちくする、ひりひりする、{不快感|ふかいかん}。",
+ "categoryId": "R02-A01-T06",
+ "tags": [
+  "kropp",
+  "smärta"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.gester-och-kroppssprak"
+ ],
+ "related": [],
+ "recommendedOrder": 757,
+ "words": [
+  {
+   "senseId": "s.smärta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.göra-ont.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kramp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lindrig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stickande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brännande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.molande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bulta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smärtsam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.domna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.myrkrypning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obehag.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Efter matchen",
+  "paragraphs": [
+   "Laget har spelat fotboll. Efter matchen sitter alla i omklädningsrummet. Tränaren frågar om någon har ont. – Det är viktigt att kunna beskriva smärta, säger hon.",
+   "Leo fick en spark på benet. – Det gör ont när jag går, säger han. Huden är öm och lite röd.",
+   "Sara fick kramp i vaden under matchen. Nu känns det bara lite, så smärtan är lindrig. Men Emil har en molande värk i knät som inte vill gå över.",
+   "Aiko föll på handen. Hon säger att det bultar i handleden, och att det var mycket smärtsamt när hon föll.",
+   "Max har suttit på bänken hela matchen. Hans ben har domnat, och nu har han myrkrypningar i fötterna.",
+   "Tränaren förklarar att det är bra att veta om smärtan är stickande eller brännande. Det hjälper en läkare att förstå. – Om det värker länge, eller om ni känner obehag, ska ni berätta det, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var sitter laget efter matchen?",
+    "options": [
+     "På bussen",
+     "På planen",
+     "I omklädningsrummet",
+     "Hemma hos tränaren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Efter matchen sitter alla i omklädningsrummet.",
+    "explanationJa": "{更衣室|こういしつ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför har Leo ont?",
+    "options": [
+     "Han fick kramp",
+     "Han fick en spark på benet",
+     "Han föll på handen",
+     "Han satt länge"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Leo fick en spark på benet.",
+    "explanationJa": "{脚|あし}を{蹴|け}られたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Saras smärta är mycket stark nu.",
+    "correct": false,
+    "explanationSv": "Nu känns det bara lite, så smärtan är lindrig.",
+    "explanationJa": "{軽|かる}い{痛|いた}みです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför har Max myrkrypningar i fötterna?",
+    "options": [
+     "Benet har domnat",
+     "Han har sprungit mycket",
+     "Han fick en spark",
+     "Han är sjuk"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hans ben har domnat, och nu har han myrkrypningar i fötterna.",
+    "explanationJa": "{脚|あし}がしびれたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Max spelade inte i matchen.",
+    "correct": true,
+    "explanationSv": "Max har suttit på bänken hela matchen.",
+    "explanationJa": "ずっとベンチにいました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur det känns när något gör ont.",
+  "discussionPoints": [
+   "När hade du senast ont någonstans?",
+   "Har du fått kramp någon gång?",
+   "Hur känns det när ett ben har domnat?",
+   "Hur säger man stickande smärta på japanska?"
+  ]
+ }
+}

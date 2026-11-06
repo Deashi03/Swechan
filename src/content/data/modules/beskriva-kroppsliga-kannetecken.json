@@ -1,0 +1,170 @@
+{
+ "id": "m.beskriva-kroppsliga-kannetecken",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Beskriva kroppsliga kännetecken",
+ "titleJa": "{体|からだ}の{特徴|とくちょう}を{描写|びょうしゃ}する",
+ "descriptionSv": "Beskriva kroppsliga kännetecken: utseende, kännetecken, kroppsbyggnad, långväxt, kortväxt, mager, kraftig, muskulös, axelbred, knubbig, fyllig, överviktig, blond, mörkhårig och rödhårig.",
+ "descriptionJa": "{体|からだ}の{特徴|とくちょう}を{描写|びょうしゃ}する：{外見|がいけん}、{特徴|とくちょう}、{体格|たいかく}、{背|せ}の{高|たか}い、{背|せ}の{低|ひく}い、やせた、がっしりした、{筋肉質|きんにくしつ}の、{肩幅|かたはば}の{広|ひろ}い、ぽっちゃりした、ふくよかな、{太|ふと}りすぎの、{金髪|きんぱつ}の、{黒髪|くろかみ}の、{赤毛|あかげ}の。",
+ "categoryId": "R02-A01-T01",
+ "tags": [
+  "kropp",
+  "utseende"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hud-och-kroppsbeharing"
+ ],
+ "related": [],
+ "recommendedOrder": 707,
+ "words": [
+  {
+   "senseId": "s.utseende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kännetecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kroppsbyggnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långväxt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortväxt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mager.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftig.2",
+   "active": true
+  },
+  {
+   "senseId": "s.muskulös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.axelbred.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knubbig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fyllig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överviktig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blond.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mörkhårig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rödhårig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem tog cykeln?",
+  "paragraphs": [
+   "Någon har tagit Leos cykel. En polis frågar en granne om mannen som tog den.",
+   "– Hur var hans utseende? frågar polisen. – Han var långväxt och mager, säger grannen. Inte muskulös. Och han var mörkhårig.",
+   "– Hade han några särskilda kännetecken? – Ja, ett litet ärr på hakan. Och han var axelbred, trots att han var smal.",
+   "En annan granne säger något annat: – Nej, han var kortväxt och lite fyllig. Nästan överviktig. Och han var blond, inte mörkhårig!",
+   "Polisen tänker. – Kanske var de två? Den ena kraftig, den andra smal, med olika kroppsbyggnad.",
+   "Till sist hittar Leo cykeln själv, utanför skolan. En knubbig rödhårig pojke på tio år har lånat den. – Förlåt, säger pojken."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har hänt med Leos cykel?",
+    "options": [
+     "Den har gått sönder",
+     "Han har sålt den",
+     "Han har lånat ut den",
+     "Någon har tagit den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Någon har tagit Leos cykel.",
+    "explanationJa": "{誰|だれ}かに{持|も}っていかれました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur beskriver den första grannen mannen?",
+    "options": [
+     "Kortväxt och blond",
+     "Fyllig och rödhårig",
+     "Långväxt, mager och mörkhårig",
+     "Muskulös och skallig"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han var långväxt och mager … mörkhårig.",
+    "explanationJa": "{背|せ}が{高|たか}く、やせていて{黒髪|くろかみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "De två grannarna beskriver mannen på samma sätt.",
+    "correct": false,
+    "explanationSv": "En annan granne säger något annat.",
+    "explanationJa": "{違|ちが}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vilket kännetecken hade mannen enligt första grannen?",
+    "options": [
+     "Rött hår",
+     "Ett ärr på hakan",
+     "Stora händer",
+     "Glasögon"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… ett litet ärr på hakan.",
+    "explanationJa": "あごの{傷跡|きずあと}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det var en vuxen man som tog cykeln.",
+    "correct": false,
+    "explanationSv": "En knubbig rödhårig pojke på tio år har lånat den.",
+    "explanationJa": "10{歳|さい}の{男|おとこ}の{子|こ}でした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni beskriver hur människor ser ut, på ett vänligt sätt.",
+  "discussionPoints": [
+   "Hur skulle du beskriva dig själv?",
+   "Vem i din familj är längst?",
+   "Vilka ord är vänliga och vilka kan vara elaka?",
+   "Är det vanligt att vara blond i Japan?"
+  ]
+ }
+}

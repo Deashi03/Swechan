@@ -1,0 +1,170 @@
+{
+ "id": "m.hud-och-kroppsbeharing",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hud och kroppsbehåring",
+ "titleJa": "{肌|はだ}と{体毛|たいもう}",
+ "descriptionSv": "Hud och kroppsbehåring: hudfärg, blek, solbränd, rodna, gåshud, rynkig, födelsemärke, leverfläck, fräkne, ärr, blåmärke, kroppsbehåring, hårstrå, brösthår och fjun.",
+ "descriptionJa": "{肌|はだ}と{体毛|たいもう}：{肌|はだ}の{色|いろ}、{青白|あおじろ}い、{日焼|ひや}けした、{赤|あか}くなる、{鳥肌|とりはだ}、しわのある、ほくろ（あざ）、ほくろ、そばかす、{傷跡|きずあと}、あざ（{打|う}ち{身|み}）、{体毛|たいもう}、{髪|かみ}の{毛|け}、{胸毛|むなげ}、{産毛|うぶげ}。",
+ "categoryId": "R02-A01-T01",
+ "tags": [
+  "kropp",
+  "hud"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.leder-och-rorelser"
+ ],
+ "related": [],
+ "recommendedOrder": 706,
+ "words": [
+  {
+   "senseId": "s.hudfärg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solbränd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rodna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gåshud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rynkig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.födelsemärke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leverfläck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fräkne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ärr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåmärke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kroppsbehåring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårstrå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brösthår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjun.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hud berättar en historia",
+  "paragraphs": [
+   "Yui och Erik ligger på stranden. De har olika hudfärg. Erik är solbränd, men Yui är fortfarande blek.",
+   "– Du har fått fler fräknar, säger Yui. Erik skrattar och visar sitt knä. – Och här har jag ett ärr från när jag ramlade med cykeln som barn.",
+   "Yui har ett litet födelsemärke på halsen. Erik har många leverfläckar på ryggen. – Du borde visa dem för en läkare, säger Yui.",
+   "Erik har mycket brösthår. Yui har nästan ingen kroppsbehåring, bara lite fjun på armarna. Hon hittar ett långt hårstrå på handduken.",
+   "När det blåser får Yui gåshud. Erik ger henne sin tröja, och hon rodnar lite.",
+   "På vägen hem ser de en gammal man med rynkiga händer och ett stort blåmärke på armen. – Huden berättar hur man har levt, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem är solbränd?",
+    "options": [
+     "Yui",
+     "Båda",
+     "Ingen",
+     "Erik"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "De har olika hudfärg. Erik är solbränd, men Yui är fortfarande blek.",
+    "explanationJa": "エリックです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var har Erik ett ärr?",
+    "options": [
+     "På halsen",
+     "På ryggen",
+     "På armen",
+     "På knät"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… visar sitt knä … ett ärr.",
+    "explanationJa": "ひざです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Yui har ett födelsemärke på halsen.",
+    "correct": true,
+    "explanationSv": "Yui har ett litet födelsemärke på halsen.",
+    "explanationJa": "そうです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför får Yui gåshud?",
+    "options": [
+     "Hon är rädd",
+     "Hon hör en låt",
+     "Det blåser",
+     "Hon är sjuk"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När det blåser får Yui gåshud.",
+    "explanationJa": "{風|かぜ}が{吹|ふ}くからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yui tycker att Erik inte behöver gå till läkaren.",
+    "correct": false,
+    "explanationSv": "Du borde visa dem för en läkare.",
+    "explanationJa": "{見|み}せるべきだと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hud: sol, märken och hår.",
+  "discussionPoints": [
+   "Blir du lätt solbränd?",
+   "Har du något ärr med en historia?",
+   "När får du gåshud?",
+   "Rodnar du lätt?"
+  ]
+ }
+}
