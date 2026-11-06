@@ -16,6 +16,7 @@ function loadRenderer(): Promise<Renderer> {
   return rendererPromise;
 }
 const AnimatedWordVisual = lazy(() => import('./AnimatedWordVisual'));
+const AnimatedFace = lazy(() => import('./AnimatedFace'));
 
 function Illustration({ motif, size, aria }: { motif: string; size: number; aria: string }) {
   const [, force] = useState(0);
@@ -39,6 +40,14 @@ export function WordImage({ senseId, size = 160, label, mode = 'still' }: { sens
     return (
       <Suspense fallback={<span className="word-image loading" role="img" aria-label={aria} style={{ width: size, height: size }} />}>
         <AnimatedWordVisual file={img.file} size={size} mode={mode} label={aria} fallback={fallback} />
+      </Suspense>
+    );
+  }
+  if (img.kind === 'face') {
+    const fallback = img.fallbackMotif ? <Illustration motif={img.fallbackMotif} size={size} aria={aria} /> : null;
+    return (
+      <Suspense fallback={<span className="word-image loading" role="img" aria-label={aria} style={{ width: size, height: size }} />}>
+        <AnimatedFace senseId={senseId} size={size} mode={mode} label={aria} fallback={fallback} />
       </Suspense>
     );
   }

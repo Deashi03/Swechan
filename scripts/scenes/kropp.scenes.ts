@@ -3,16 +3,13 @@ import { P, emph, face, icon, pose, say, set, shake, sound, tween, type Def, typ
 
 const REST: Joints = { torso: 0, head: 0, uArmL: 6, fArmL: 8, uArmR: -6, fArmR: 8, thighL: 0, shinL: 0, thighR: 0, shinR: 0, footL: 0, footR: 0 };
 const PAIN = { eyes: 'half', brows: 'worried', mouth: 'frown' } as const;
-const CALM = { eyes: 'open', brows: 'neutral', mouth: 'neutral' } as const;
 const HAPPY = { eyes: 'open', brows: 'up', mouth: 'smile' } as const;
 const CL = (o: Parameters<typeof P>[0] = {}) => P({ close: true, ...o });
 // hand positions (right arm, figure facing right; mirror with facing:'left')
 const HAND_HEAD: Joints = { uArmR: 160, fArmR: 120 };
-const HAND_CHEST: Joints = { uArmR: 30, fArmR: 125 };
 const HAND_BELLY: Joints = { uArmR: 15, fArmR: 95 };
 const HAND_MOUTH: Joints = { uArmR: 45, fArmR: 145 };
 const HANDS_EARS: Joints = { uArmR: 120, fArmR: 90, uArmL: -150, fArmL: 10 };
-const HAND_EAR: Joints = { uArmR: 120, fArmR: 90 };
 const SQUAT: Joints = { thighL: 100, shinL: -140, thighR: 96, shinR: -136, torso: 30, uArmL: 40, uArmR: 36, fArmL: 40, fArmR: 40 };
 const ONE_LEG: Joints = { thighL: 60, shinL: -90, uArmL: -90, uArmR: 90, fArmL: 0, fArmR: 0 };
 const fade = (id: string, t: number, d = 300, to = 1) => tween(id, 'opacity', t, to, d);
@@ -31,8 +28,6 @@ export const KROPP: Def[] = [
     shapes: [{ ...icon('ar', 'arc-arrow', 30, 28, 22, { fill: '#e4572e' }) }] },
   { sense: 's.vicka.1', hint: 'Röra något lite fram och tillbaka.', group: 'rörelse', feature: 'foot wiggles back and forth', durationMs: 3000,
     timeline: [pose('p', 200, { thighR: 30, shinR: -10 }, 400), ...shake('p', 600, { footR: 35 }, { footR: -25 }, 5, 220)] },
-  { sense: 's.vrida-på-huvudet.1', hint: 'Vända huvudet åt sidan.', group: 'huvud', feature: 'head turns to one side, then the other', durationMs: 3200, actors: [CL()],
-    timeline: [face('p', 400, { gaze: -2 }), pose('p', 400, { head: -8 }, 400), face('p', 1500, { gaze: 2 }), pose('p', 1500, { head: 8 }, 400), face('p', 2600, { gaze: 0 }), pose('p', 2600, { head: 0 }, 400)] },
   { sense: 's.rulla-med-axlarna.1', hint: 'Röra axlarna i en cirkel, t.ex. för att mjuka upp dem.', group: 'rörelse', feature: 'shoulders lift and roll back', durationMs: 3200, actors: [CL()],
     timeline: [...[0, 1, 2].flatMap((i) => [tween('p', 'lift', 300 + i * 900, 3, 300), pose('p', 300 + i * 900, { torso: -6 }, 300), tween('p', 'lift', 600 + i * 900, 0, 400), pose('p', 600 + i * 900, { torso: 4 }, 400)]), face('p', 0, { eyes: 'half', mouth: 'calm' })] },
   { sense: 's.gå-ur-led.1', hint: 'Om en led: komma i fel läge så att benen inte längre möts rätt.', group: 'skada', feature: 'arm jerks, hangs limp, pain; ring at the shoulder', durationMs: 3000, actors: [P({ facing: 'left' })],
@@ -71,17 +66,8 @@ export const KROPP: Def[] = [
   { sense: 's.vricka.1', hint: 'Skada en led genom att vrida den för mycket.', group: 'skada', feature: 'steps, the foot twists, pain, hops on one leg', durationMs: 3200, actors: [P({ x: 30 })],
     timeline: [{ t: 0, action: 'walk', actor: 'p', to: { x: 52, y: 104 }, durationMs: 1000 }, pose('p', 1000, { footR: -40, torso: 14 }, 160), sound('p', 1000, 'crunch', 500), face('p', 1100, PAIN), pose('p', 1400, { thighR: 50, shinR: -80, footR: -30, uArmL: 60, uArmR: -50 }, 400), ...shake('p', 1800, {}, {}, 3, 200).map((a, i) => ({ ...a, lift: i % 2 ? 0 : 4 }))] },
   // ── Sinnen ─────────────────────────────────────────────────────────────
-  { sense: 's.blinka.1', hint: 'Stänga och öppna ögonen snabbt.', group: 'ansikte', feature: 'eyes close briefly, three times', actors: [CL()], durationMs: 2600, posterMs: 820,
-    timeline: [face('p', 700, { eyes: 'closed' }), face('p', 880, { eyes: 'open' }), face('p', 1400, { eyes: 'closed' }), face('p', 1580, { eyes: 'open' }), face('p', 2000, { eyes: 'closed' }), face('p', 2180, { eyes: 'open' })] },
-  { sense: 's.kisa.1', hint: 'Dra ihop ögonen så att man nästan stänger dem, t.ex. i starkt ljus.', group: 'ansikte', feature: 'sun appears, eyes narrow', actors: [CL({ x: 54 })], durationMs: 2800,
-    shapes: [hidden('sun', 'sun', 102, 18, 26, '#f2c14e')],
-    timeline: [fade('sun', 300, 500), face('p', 800, { eyes: 'half', brows: 'down', mouth: 'neutral' }), pose('p', 800, { head: 6, uArmR: 150, fArmR: 110 }, 500)] },
   { sense: 's.viska.1', hint: 'Tala mycket tyst.', group: 'tal', feature: 'leans to the other’s ear, small speech bubble', durationMs: 3200, actors: [P({ x: 46 }), q({ x: 76 })], confusable: ['s.skrika.1'],
     timeline: [pose('p', 300, { torso: 24, head: 6, uArmR: 50, fArmR: 140 }, 600), say('p', 900, { icon: 'ellipsis', d: 1600, to: 'q' }), face('q', 1000, { eyes: 'open', brows: 'up', mouth: 'o' })] },
-  { sense: 's.skrika.1', hint: 'Ropa mycket högt.', group: 'tal', feature: 'mouth wide, loud bubble, sound arcs', actors: [CL({ x: 48 })], durationMs: 2800, confusable: ['s.viska.1'],
-    timeline: [pose('p', 300, { torso: -8, head: -10 }, 300), face('p', 300, { eyes: 'wide', brows: 'down', mouth: 'open' }), say('p', 500, { icon: 'exclaim', mood: 'angry', d: 1800 }), sound('p', 500, 'ring', 1800)] },
-  { sense: 's.höra-dåligt.1', hint: 'Ha svårt att uppfatta ljud.', group: 'hörsel', feature: 'hand cupped behind the ear, question mark', actors: [CL()], durationMs: 2800,
-    timeline: [pose('p', 300, { ...HAND_EAR, head: 8 }, 500), face('p', 600, { eyes: 'half', brows: 'worried', mouth: 'o' }), say('p', 900, { icon: 'question', d: 1600, mood: 'question' })] },
   { sense: 's.röra-vid.1', hint: 'Sätta fingrarna eller handen mot något.', group: 'känsel', feature: 'reaches out and touches the ball', durationMs: 2600, props: [{ id: 'b', asset: 'ball', at: { x: 88, y: 76 } }], actors: [P({ x: 52 })], confusable: ['s.beröra.1'],
     timeline: [{ t: 300, action: 'reach', actor: 'p', hand: 'right', target: 'b', durationMs: 800 }, emph('b', 1100, 'ring', 900)] },
   { sense: 's.beröra.1', hint: 'Röra vid.', group: 'känsel', feature: 'hand rests gently on the other’s shoulder', durationMs: 2800, actors: [P({ x: 46 }), q({ x: 78 })], confusable: ['s.röra-vid.1'],
@@ -99,17 +85,9 @@ export const KROPP: Def[] = [
   { sense: 's.bränna-sig.1', hint: 'Skada sig på något som är mycket varmt.', group: 'smärta', feature: 'touches the hot pan, jerks back, pain', durationMs: 2800,
     props: [{ id: 's', asset: 'stove', at: { x: 92, y: 104 }, state: { on: 1 } }, { id: 'pan', asset: 'pan', at: { x: 92, y: 70 } }], actors: [P({ x: 54 })],
     timeline: [{ t: 300, action: 'reach', actor: 'p', hand: 'right', target: 'pan', durationMs: 700 }, pose('p', 1000, { uArmR: 30, fArmR: 140, torso: -10 }, 150), face('p', 1000, PAIN), say('p', 1100, { icon: 'flame', mood: 'surprised', d: 1300 })] },
-  { sense: 's.känna-lukten-av.1', hint: 'Märka en lukt med näsan.', group: 'lukt', feature: 'smell lines reach the nose, head turns toward the smell', actors: [CL({ x: 44 })], durationMs: 3000,
-    shapes: [hidden('w', 'wind', 100, 52, 22, '#ef8a3c'), hidden('pl', 'plate', 104, 100, 20)],
-    timeline: [fade('pl', 0, 200), fade('w', 400, 400), tween('w', 'x', 400, 80, 900), face('p', 1200, { eyes: 'open', brows: 'up', mouth: 'o', gaze: 1 }), pose('p', 1200, { head: -6, torso: 6 }, 400)] },
-  { sense: 's.sniffa.1', hint: 'Dra in luft genom näsan i små korta drag.', group: 'lukt', feature: 'short sniffs, head bobs, nose leads', actors: [CL({ x: 50 })], durationMs: 2800,
-    shapes: [hidden('n', 'nose', 96, 40, 18, '#e4572e')],
-    timeline: [fade('n', 300, 300), ...shake('p', 400, { head: -6 }, { head: 2 }, 5, 140), face('p', 400, { eyes: 'half', brows: 'up', mouth: 'neutral' })] },
   { sense: 's.lukta-gott.1', hint: 'Ha en behaglig doft.', group: 'lukt', feature: 'leans to a flower, eyes closed, smile, heart', actors: [P({ x: 54 })], durationMs: 3000, props: [{ id: 'f', asset: 'fixture.flower', at: { x: 84, y: 104 } }],
     shapes: [hidden('h', 'heart', 96, 34, 16, '#d64545')],
     timeline: [pose('p', 300, { torso: 40, head: 10 }, 700), face('p', 900, { eyes: 'closed', brows: 'up', mouth: 'smile' }), fade('h', 1200, 400)] },
-  { sense: 's.nysa.1', hint: 'Plötsligt blåsa ut luft genom näsan och munnen.', group: 'kroppsljud', feature: 'breath in, head jerks forward, eyes closed', actors: [CL()], durationMs: 2600, posterMs: 1100,
-    timeline: [pose('p', 300, { head: -18, torso: -6 }, 700), face('p', 300, { eyes: 'half', mouth: 'o', brows: 'up' }), pose('p', 1000, { head: 22, torso: 14 }, 160), face('p', 1000, { eyes: 'closed', mouth: 'open' }), sound('p', 1000, 'thump', 600), pose('p', 1700, { head: 0, torso: 0 }, 500), face('p', 1700, CALM)] },
   { sense: 's.lägga-märke-till.1', hint: 'Upptäcka, se.', group: 'uppmärksamhet', feature: 'walks, stops, turns to a star on the ground', durationMs: 3000, actors: [P({ x: 20 })],
     shapes: [{ ...icon('st', 'star', 92, 98, 14, { fill: '#f2c14e' }) }],
     timeline: [{ t: 0, action: 'walk', actor: 'p', to: { x: 56, y: 104 }, durationMs: 1200 }, face('p', 1300, { eyes: 'wide', brows: 'up', mouth: 'o', gaze: 1 }), pose('p', 1300, { head: 12, torso: 10 }, 400), emph('st', 1400, 'glint', 1200), say('p', 1500, { icon: 'exclaim', d: 1200 })] },
@@ -118,12 +96,6 @@ export const KROPP: Def[] = [
   { sense: 's.hålla-för-öronen.1', hint: 'Täcka öronen med händerna.', group: 'hörsel', feature: 'loud sound, hands over the ears', durationMs: 2800, actors: [CL({ x: 50 })],
     shapes: [hidden('m', 'music', 104, 30, 20, '#2f4a7a')],
     timeline: [fade('m', 200, 200), tween('m', 'scale', 200, 1.3, 1200), pose('p', 500, HANDS_EARS, 400), face('p', 600, { eyes: 'closed', brows: 'worried', mouth: 'frown' })] },
-  { sense: 's.hålla-för-näsan.1', hint: 'Täcka eller nypa ihop näsan med handen.', group: 'lukt', feature: 'green smell lines, hand pinches the nose', durationMs: 2800, actors: [CL({ x: 46 })],
-    shapes: [hidden('w', 'wind', 100, 56, 22, '#4f9d69'), hidden('bin', 'bin', 104, 100, 20)],
-    timeline: [fade('bin', 0, 200), fade('w', 200, 300), tween('w', 'x', 200, 82, 700), pose('p', 700, { uArmR: 50, fArmR: 150 }, 400), face('p', 800, { eyes: 'half', brows: 'down', mouth: 'frown' })] },
-  { sense: 's.känna-på-sig.1', hint: 'Ana, ha en känsla av att något ska hända.', group: 'uppmärksamhet', feature: 'hand to chin, a light bulb lights up', durationMs: 3000, actors: [CL()],
-    shapes: [hidden('b', 'bulb', 96, 22, 22, '#f2c14e')],
-    timeline: [pose('p', 300, { uArmR: 40, fArmR: 140, head: -6 }, 500), face('p', 400, { eyes: 'half', brows: 'up', mouth: 'calm', gaze: 1 }), fade('b', 1200, 500), emph('b', 1600, 'glint', 1000)] },
   { sense: 's.susa.1', hint: 'Ge ifrån sig ett svagt brusande ljud, som vind.', group: 'ljud', feature: 'wind blows through a tree, leaves move', env: 'outdoors.park', actors: [], durationMs: 3200,
     props: [{ id: 't', asset: 'fixture.tree', at: { x: 76, y: 100 } }], shapes: [{ ...icon('w1', 'wind', 22, 44, 24, { fill: '#8cc7e8' }) }, { ...icon('w2', 'wind', 10, 70, 20, { fill: '#8cc7e8' }) }],
     timeline: [tween('w1', 'x', 0, 70, 3000, 10, 'linear'), tween('w2', 'x', 400, 60, 2800, 0, 'linear'), tween('t', 'rotate', 300, 4, 600), tween('t', 'rotate', 900, -3, 700), tween('t', 'rotate', 1600, 3, 700), tween('t', 'rotate', 2300, 0, 700), sound('t', 300, 'hum', 2600)] },
@@ -209,35 +181,11 @@ export const KROPP: Def[] = [
   { sense: 's.rycka.1', hint: 'Dra snabbt och hårt.', group: 'kraft', feature: 'yanks the door open with a jerk', durationMs: 2600, env: 'room', props: [{ id: 'd', asset: 'door', at: { x: 84, y: 100 } }], actors: [P({ x: 46 })],
     timeline: [pose('p', 300, { uArmR: 80, fArmR: 10, torso: 10 }, 400), pose('p', 900, { uArmR: 40, fArmR: 80, torso: -16 }, 160), tween('d', 'angle', 900, 1, 200, 0), face('p', 900, { eyes: 'open', brows: 'down', mouth: 'frown' })] },
   // ── Ansiktsuttryck och miner ───────────────────────────────────────────
-  { sense: 's.flina.1', hint: 'Le brett, ofta lite fräckt.', group: 'min', category: 'emotion', feature: 'big sly grin, head tilts', actors: [CL()], durationMs: 2600,
-    timeline: [face('p', 500, { eyes: 'half', brows: 'up', mouth: 'smile', gaze: 1 }), pose('p', 500, { head: -8 }, 400), set('p', 'blush', 700, true)] },
-  { sense: 's.fnissa.1', hint: 'Skratta tyst och fånigt.', group: 'min', category: 'emotion', feature: 'hand over the mouth, shoulders shake, eyes closed', actors: [CL()], durationMs: 2800,
-    timeline: [pose('p', 300, HAND_MOUTH, 400), face('p', 300, { eyes: 'closed', brows: 'up', mouth: 'smile' }), ...shake('p', 700, { torso: 4 }, { torso: -2 }, 6, 140), ...[0, 1, 2].flatMap((i) => [tween('p', 'lift', 700 + i * 560, 2, 140), tween('p', 'lift', 840 + i * 560, 0, 140)])] },
-  { sense: 's.rynka-pannan.1', hint: 'Dra ihop pannan i veck, t.ex. när man tänker eller är missnöjd.', group: 'min', category: 'emotion', feature: 'brows pull down and together', actors: [CL()], durationMs: 2600,
-    timeline: [face('p', 600, { eyes: 'half', brows: 'down', mouth: 'frown' }), emph('p', 800, 'glint', 800)] },
-  { sense: 's.rynka-på-näsan.1', hint: 'Dra ihop näsan, t.ex. när något luktar illa.', group: 'min', category: 'emotion', feature: 'head pulls back, disgusted face at a smell', actors: [CL({ x: 50 })], durationMs: 2600,
-    shapes: [hidden('w', 'wind', 102, 50, 20, '#4f9d69')],
-    timeline: [fade('w', 200, 300), { t: 600, action: 'express', actor: 'p', emotion: 'disgusted', durationMs: 400 }] },
-  { sense: 's.höja-på-ögonbrynen.1', hint: 'Lyfta ögonbrynen, t.ex. av förvåning.', group: 'min', category: 'emotion', feature: 'brows jump up, eyes wide', actors: [CL()], durationMs: 2400,
-    timeline: [face('p', 600, { eyes: 'wide', brows: 'up', mouth: 'neutral' }), tween('p', 'lift', 600, 2, 200), tween('p', 'lift', 800, 0, 300)] },
-  { sense: 's.himla-med-ögonen.1', hint: 'Vända blicken uppåt för att visa att man tycker något är dumt.', group: 'min', category: 'emotion', feature: 'eyes go up and around, head tips back, sigh', actors: [CL()], durationMs: 2800,
-    timeline: [face('p', 400, { eyes: 'half', brows: 'up', mouth: 'neutral', gaze: -1 }), pose('p', 400, { head: -14 }, 500), face('p', 1000, { gaze: 1 }), pose('p', 1000, { head: -10 }, 400), face('p', 1600, { eyes: 'half', brows: 'neutral', mouth: 'frown', gaze: 0 }), pose('p', 1600, { head: 0 }, 400)] },
-  { sense: 's.bita-sig-i-läppen.1', hint: 'Hålla läppen mellan tänderna, t.ex. när man är nervös.', group: 'min', category: 'emotion', feature: 'worried brows, mouth pressed, eyes aside', actors: [CL()], durationMs: 2600,
-    timeline: [face('p', 500, { eyes: 'open', brows: 'worried', mouth: 'calm', gaze: -1 }), pose('p', 500, { head: 6 }, 400), emph('p', 900, 'glint', 700)] },
-  { sense: 's.snegla.1', hint: 'Titta snabbt och diskret åt sidan.', group: 'blick', feature: 'head still, eyes dart to the side and back', actors: [CL({ x: 50 })], durationMs: 2800, confusable: ['s.stirra.1', 's.blänga.1'],
-    timeline: [face('p', 600, { gaze: 2 }), face('p', 1000, { gaze: 0 }), face('p', 1700, { gaze: 2 }), face('p', 2000, { gaze: 0 })] },
-  { sense: 's.stirra.1', hint: 'Titta länge och stint på något.', group: 'blick', feature: 'eyes wide, gaze fixed, no blinking', actors: [CL({ x: 50 })], durationMs: 2800, confusable: ['s.snegla.1', 's.blänga.1'],
-    shapes: [hidden('ex', 'magnifier', 104, 30, 18, '#2f4a7a')],
-    timeline: [face('p', 300, { eyes: 'wide', brows: 'neutral', mouth: 'neutral', gaze: 1 }), pose('p', 300, { torso: 6, head: -4 }, 600)] },
-  { sense: 's.blänga.1', hint: 'Titta argt på någon.', group: 'blick', feature: 'angry stare from under lowered brows', actors: [CL({ x: 50 })], durationMs: 2600, confusable: ['s.stirra.1'],
-    timeline: [face('p', 400, { eyes: 'half', brows: 'down', mouth: 'frown', gaze: 2 }), pose('p', 400, { head: 8 }, 400)] },
   // ── Gester och kroppsspråk ─────────────────────────────────────────────
   { sense: 's.buga.1', hint: 'Böja överkroppen framåt som hälsning eller tack.', group: 'gest', feature: 'bows', durationMs: 2800,
     timeline: [{ t: 200, action: 'bow', actor: 'p', depth: 'deep', hands: 'sides', durationMs: 2200 }] },
   { sense: 's.skaka-hand.1', hint: 'Ta någon i hand och röra händerna upp och ner som hälsning.', group: 'gest', feature: 'two people shake hands', durationMs: 2800, actors: [P({ x: 44 }), q({ x: 76 })],
     timeline: [pose('p', 300, { uArmR: 60, fArmR: 30 }, 500), pose('q', 300, { uArmR: 60, fArmR: 30 }, 500), ...shake('p', 800, { uArmR: 66 }, { uArmR: 54 }, 3, 180), ...shake('q', 800, { uArmR: 66 }, { uArmR: 54 }, 3, 180), face('p', 500, HAPPY), face('q', 500, HAPPY)] },
-  { sense: 's.skaka-på-huvudet.1', hint: 'Röra huvudet från sida till sida, ofta för att säga nej.', group: 'gest', feature: 'head turns left–right several times', actors: [CL()], durationMs: 2600,
-    timeline: [face('p', 300, { brows: 'down', mouth: 'frown' }), ...shake('p', 400, { head: -10 }, { head: 10 }, 4, 180), ...[0, 1, 2, 3].flatMap((i) => [face('p', 400 + i * 360, { gaze: -1 }), face('p', 580 + i * 360, { gaze: 1 })]), pose('p', 1900, { head: 0 }, 200), face('p', 1900, { gaze: 0 })] },
   { sense: 's.rycka-på-axlarna.1', hint: 'Snabbt lyfta axlarna för att visa att man inte vet.', group: 'gest', feature: 'forearms out, palms up, shoulders lift', durationMs: 2600,
     timeline: [pose('p', 300, { uArmR: 30, fArmR: 90, uArmL: -30, fArmL: 90, head: 6 }, 400), face('p', 300, { brows: 'up', mouth: 'frown' }), tween('p', 'lift', 300, 3, 300), tween('p', 'lift', 1500, 0, 300), pose('p', 1500, REST, 500)] },
   { sense: 's.vinka.1', hint: 'Röra handen fram och tillbaka för att hälsa.', group: 'gest', feature: 'raised hand waves', durationMs: 3000,
@@ -262,21 +210,8 @@ export const KROPP: Def[] = [
   { sense: 's.domna-bort.1', hint: 'Bli helt känslolös, t.ex. när man suttit länge i fel ställning.', group: 'smärta', feature: 'sitting long on the floor, tries to stand, the leg gives way', durationMs: 3200, confusable: ['s.domna.1'],
     timeline: [pose('p', 0, { thighL: 90, shinL: -140, thighR: 90, shinR: -140 }, 1, { lift: -30 }), pose('p', 900, { ...SQUAT }, 700, { lift: -24 }), face('p', 1200, { eyes: 'wide', brows: 'worried', mouth: 'o' }), ...shake('p', 1600, { torso: 36 }, { torso: 22 }, 3, 180), emph('p', 1700, 'glint', 1000)] },
   // ── Andning ────────────────────────────────────────────────────────────
-  { sense: 's.andas-in.1', hint: 'Dra in luft i lungorna.', group: 'andning', feature: 'air flows into the nose, chest rises', actors: [CL({ x: 48 })], durationMs: 2800, confusable: ['s.andas-ut.1'],
-    shapes: [hidden('w', 'wind', 104, 52, 22, '#8cc7e8')],
-    timeline: [fade('w', 200, 200), tween('w', 'x', 200, 80, 1400), fade('w', 1500, 300, 0), tween('p', 'lift', 300, 3, 1300), pose('p', 300, { torso: -6, head: -6 }, 1300), face('p', 300, { eyes: 'closed', brows: 'up', mouth: 'calm' })] },
-  { sense: 's.andas-ut.1', hint: 'Släppa ut luft ur lungorna.', group: 'andning', feature: 'air flows out of the mouth, shoulders sink', actors: [CL({ x: 48 })], durationMs: 2800, confusable: ['s.andas-in.1'],
-    shapes: [hidden('w', 'wind', 78, 60, 22, '#8cc7e8')],
-    timeline: [set('p', 'lift', 0, 3), pose('p', 0, { torso: -6, head: -6 }, 1), fade('w', 300, 200), tween('w', 'x', 300, 106, 1400), tween('p', 'lift', 300, 0, 1400), pose('p', 300, { torso: 4, head: 4 }, 1400), face('p', 300, { eyes: 'half', mouth: 'o' }), fade('w', 1600, 300, 0)] },
-  { sense: 's.hålla-andan.1', hint: 'Låta bli att andas en stund.', group: 'andning', feature: 'cheeks full, mouth shut, clock ticks', actors: [CL({ x: 48 })], durationMs: 3000,
-    shapes: [{ ...hidden('c', 'clock', 102, 24, 24, '#ffffff'), stroke: '#2f4a7a' }],
-    timeline: [tween('p', 'lift', 200, 3, 400), face('p', 600, { eyes: 'closed', brows: 'up', mouth: 'calm' }), set('p', 'blush', 600, true), fade('c', 700, 300), tween('c', 'rotate', 1000, 180, 1800)] },
   { sense: 's.flämta.1', hint: 'Andas snabbt och häftigt, t.ex. efter ansträngning.', group: 'andning', feature: 'fast breaths, mouth open, hands on the knees', durationMs: 2800, confusable: ['s.kippa-efter-andan.1'],
     timeline: [pose('p', 0, { torso: 40, uArmR: 40, fArmR: 0, uArmL: 34, fArmL: 0, thighL: 20, shinL: -20, thighR: 20, shinR: -20, head: -10 }, 300), face('p', 0, { eyes: 'half', brows: 'worried', mouth: 'open' }), ...shake('p', 300, { torso: 44 }, { torso: 38 }, 7, 160), { t: 300, action: 'express', actor: 'p', emotion: 'hot', durationMs: 200 }] },
-  { sense: 's.kippa-efter-andan.1', hint: 'Ha svårt att få luft och andas häftigt.', group: 'andning', feature: 'hand on the chest, mouth wide, gasping', actors: [CL()], durationMs: 2800, confusable: ['s.flämta.1'],
-    timeline: [pose('p', 200, HAND_CHEST, 400), face('p', 300, { eyes: 'wide', brows: 'worried', mouth: 'open' }), ...[0, 1, 2].flatMap((i) => [tween('p', 'lift', 500 + i * 700, 3, 250), pose('p', 500 + i * 700, { head: -12 }, 250), tween('p', 'lift', 750 + i * 700, 0, 450), pose('p', 750 + i * 700, { head: 0 }, 450)])] },
-  { sense: 's.hosta.1', hint: 'Stöta ut luft ur lungorna med ett ljud.', group: 'kroppsljud', feature: 'hand at the mouth, body jerks forward with each cough', actors: [CL()], durationMs: 2800,
-    timeline: [pose('p', 200, { ...HAND_MOUTH, uArmR: 40, fArmR: 140 }, 300), face('p', 200, { eyes: 'closed', brows: 'worried', mouth: 'o' }), ...[0, 1, 2].flatMap((i) => [pose('p', 600 + i * 600, { torso: 14, head: 12 }, 120), pose('p', 720 + i * 600, { torso: 0, head: 0 }, 300), sound('p', 600 + i * 600, 'thump', 300)])] },
   // ── Cirkulation, matsmältning, temperatur ──────────────────────────────
   { sense: 's.cirkulera.1', hint: 'Röra sig runt i ett kretslopp.', group: 'process', category: 'action', feature: 'a drop travels around the heart in a circle', actors: [], durationMs: 3200, loop: true,
     shapes: [{ type: 'circle', id: 'ring', cx: 60, cy: 60, r: 36, stroke: '#d9d4c8', sw: 3 }, { ...icon('h', 'heart', 60, 60, 30, { fill: '#d64545' }) }, { ...icon('d', 'droplet', 96, 60, 16, { fill: '#d64545' }) }],
@@ -289,8 +224,6 @@ export const KROPP: Def[] = [
     timeline: [{ t: 0, action: 'relax', actor: 'p', on: 'c', durationMs: 3000, legsUp: false }, pose('p', 100, { uArmR: 70, fArmR: 0 }, 300), ...[0, 1, 2].flatMap((i) => [set('d', 'x', 500 + i * 800, 64), set('d', 'y', 500 + i * 800, 66), fade('d', 500 + i * 800, 100), tween('d', 'x', 500 + i * 800, 92, 600), tween('d', 'y', 500 + i * 800, 42, 600), fade('d', 1000 + i * 800, 100, 0)]), face('p', 300, { eyes: 'open', mouth: 'smile' })] },
   { sense: 's.svimma.1', hint: 'Tappa medvetandet en kort stund.', group: 'kropp', feature: 'goes pale, wobbles and falls down', durationMs: 3200,
     timeline: [face('p', 300, { eyes: 'half', brows: 'worried', mouth: 'o' }), ...shake('p', 400, { torso: 8, head: 10 }, { torso: -6, head: -6 }, 2, 260), face('p', 1400, { eyes: 'closed', mouth: 'o' }), pose('p', 1400, { thighL: 20, shinL: -40, thighR: 20, shinR: -40, uArmR: 40, uArmL: -40 }, 300), pose('p', 1700, { thighL: 0, shinL: 0, thighR: 0, shinR: 0, uArmR: 20, uArmL: -20, torso: 0, head: -6 }, 600, { bodyRotate: -88, lift: -26 })] },
-  { sense: 's.rapa.1', hint: 'Släppa upp luft från magen genom munnen.', group: 'kroppsljud', feature: 'mouth opens with a burp, hand to the chest', actors: [CL()], durationMs: 2600,
-    timeline: [pose('p', 300, HAND_CHEST, 400), face('p', 900, { eyes: 'half', brows: 'up', mouth: 'o' }), pose('p', 900, { head: -8, torso: -4 }, 160), sound('p', 900, 'hum', 600), face('p', 1700, { eyes: 'open', mouth: 'smile' }), set('p', 'blush', 1700, true)] },
   { sense: 's.släppa-sig.1', hint: 'Släppa ut gas ur tarmen.', group: 'kroppsljud', feature: 'a puff behind, embarrassed face', durationMs: 2800,
     shapes: [hidden('w', 'wind', 38, 74, 18, '#a8b27a')],
     timeline: [fade('w', 800, 200), tween('w', 'x', 800, 22, 900), fade('w', 1700, 400, 0), face('p', 900, { eyes: 'wide', brows: 'up', mouth: 'o' }), set('p', 'blush', 1000, true), pose('p', 1000, { ...HAND_MOUTH }, 300)] },

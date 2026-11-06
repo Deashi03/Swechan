@@ -1,8 +1,23 @@
 # Projektstatus – överlämning
 
-**Version:** 0.13.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.13 utvecklades i grenen `claude/swechan-0.13`)
+**Version:** 0.13.1 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.13.1 och 0.14 utvecklas i grenen `claude/swechan-0.14`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.13.1 – släppt 2026-11-06 (ansiktsuttryck med egen rigg)
+
+- **Återkoppling från produktägaren:** 0.13 är godkänd, utom ansiktsuttrycken. Ansiktsord är svåra och kräver extra uppmärksamhet, både nu och i framtiden.
+- **Gjort:**
+  - Ansiktsriggen finns i `src/ui/face/rig.ts` (ADR 38).
+  - 47 ansiktsord är gjorda om, med scenerna i `scripts/faces/kropp.faces.ts`.
+  - Reglerna finns i `CONTENT_GUIDELINES.md` under *Ansiktsuttryck*.
+- **Arbetsflöde:**
+  1. `npm run faces:build -- --strips /tmp/remsor.html`.
+  2. Granska remsorna i full storlek.
+  3. Kör `npm test`.
+- **Nästa gång ansiktsord kommer:**
+  - När *Känslor & psykologi* fylls på med bilder ska alla känslo- och minord göras med riggen.
+  - Saknas en signal ska den läggas till i riggen.
 
 ## 0.13 – släppt 2026-11-06 (pilot: Kroppen & sinnena helt visualiserat)
 
