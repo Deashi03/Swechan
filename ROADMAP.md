@@ -42,9 +42,12 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.10 – Hälsa & sjukvård (klar)
 - 42 nya moduler: *Människan & hälsa → Hälsa & sjukvård* helt publicerat (341 moduler totalt).
 
-## v0.11 – nästa steg
+## v0.11 – Känslor & psykologi (klar)
+- 42 nya moduler: *Människan & hälsa → Känslor & psykologi* helt publicerat (383 moduler totalt).
+
+## v0.12 – nästa steg
 - Infrastruktur för bilder och animationer enligt produktägarens kommande instruktion; därefter bilder för de publicerade modulerna.
-- Nästa överämne, ett i taget: *Människan & hälsa → Känslor & psykologi* (R02-A03).
+- Nästa överämne, ett i taget: *Människan & hälsa → Relationer & familj* (R02-A04).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
 - Japanska katalogtitlar (översättning + granskning).
 - Utökad validering (andel okända ord i lästext mot användarens nivå); morfologisk analys baserad på SALDO.

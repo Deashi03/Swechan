@@ -1,8 +1,18 @@
 # Projektstatus – överlämning
 
-**Version:** 0.10.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.10 utvecklades i grenen `claude/swechan-0.10`)
+**Version:** 0.11.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.11 utvecklades i grenen `claude/swechan-0.11`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.11 – släppt 2026-11-06 (Känslor & psykologi)
+
+- **Innehåll:** *Människan & hälsa → Känslor & psykologi* (R02-A03) är helt publicerat: 42 moduler med `recommendedOrder` 901–957. Den första modulen har *Riskfaktorer och hälsoval* som förkunskap. Totalt finns **383 publicerade moduler**.
+- **Nästa överämne:** *Människan & hälsa → Relationer & familj* (R02-A04). Dess första modul, *Föräldrar och barn* (SWC-MAN-04-01-01), ska ha *Att uppmuntra andra* (`m.att-uppmuntra-andra`) som förkunskap och ordning 1001.
+- **Ord som redan finns och ska återanvändas i Relationer & familj:** *kär*, *pojkvän*, *flörta*, *trogen*, *otrogen*, *svartsjuk(a)* (Avund och svartsjuka), *kram* och *omtanke* (Lättnad och trygghet), *bry sig om*, *empati* (Empatisk och självisk), *umgås*, *småprata* (Utåtriktad och reserverad), *klasskamrat*, *återträff* (Längtan och nostalgi), *begravning*, *beklaga sorgen*, *ta farväl* (Sorg och saknad), *gratulera*, *uppmuntra*, *komplimang* (Att uppmuntra andra). Grundordförrådet har *kusin*, *systerdotter*, *släkt*, *make*, *partner*, *storebror* m.fl.
+- **Homografer:** `e.saknad-känsla` är en egen post med nyckel; `s.skyldig.2` är en ny betydelse på befintlig post.
+- **Kontrolltips:** ord inne i ett målfrasverb måste vara kända (t.ex. *kvalet* i *stå i valet och kvalet*, *tvivla* i *tvivla på sig själv*) – lägg annars ordet i grundordförrådet. Första och andra personens reflexiv (*ändra mig*, *jämföra mig med*, *lära mig den hårda vägen*) känns inte igen som målform; skriv berättarform med *sig*. Böjda substantivfraser som *starka sidor* fungerar via `fixn`.
+- **E2E:** den planerade katalogposten är nu *Människan & hälsa → Relationer & familj → Familjemedlemmar → Föräldrar och barn*.
+- **Bilder:** fortfarande inga nya bilder eller animationer.
 
 ## 0.10 – släppt 2026-11-06 (Hälsa & sjukvård)
 
@@ -76,7 +86,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas G klar**: version 0.4.0, migreringstest 0.3.1→0.4 med nollställningen på och av, e2e-jobb i CI, dokumentation. WebKit/fysisk iPhone: EJ TESTAT.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
-## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.10.0)
+## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.11.0)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
 

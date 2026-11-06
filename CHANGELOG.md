@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.11.0 – 2026-11-06
+
+**Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.10.0 → 0.11.0 nollställer progressionen (återställningspunkt sparas).
+
+**Bilder:** inga nya bilder eller animationer (produktägarens beslut står fast).
+
+### 42 nya moduler: *Känslor & psykologi* (helt publicerat)
+Det tredje överämnet i rotområdet *Människan & hälsa*. Kedjan har `recommendedOrder` 901–957 och börjar efter *Riskfaktorer och hälsoval*. Totalt finns nu **383 publicerade moduler** och 629 nya ordposter (AI-utkast). Alla modulord på B2 eller högre har förklaringar från början (327 nya förklaringar, 1 633 totalt).
+- *Grundkänslor*: Glädje och lycka, Sorg och saknad, Rädsla och oro, Ilska och frustration, Förvåning och förvirring, Skam och skuld, Känslors styrkegrader
+- *Känslornas nyanser*: Lättnad och trygghet, Avund och svartsjuka, Stolthet och tillfredsställelse, Besvikelse och ånger, Hopp och förväntan, Längtan och nostalgi, Ambivalens och kluvenhet
+- *Tankar & mentala processer*: Uppmärksamhet och fokus, Minnen och erinran, Fantasi och föreställning, Tolkning och antaganden, Beslut och tvekan, Reflektion och eftertanke, Omedvetna vanor
+- *Personlighet & temperament*: Utåtriktad och reserverad, Noggrann och slarvig, Modig och försiktig, Tålmodig och otålig, Empatisk och självisk, Spontan och planerad, Beskriva en människas karaktär
+- *Stress & återhämtning*: Stressreaktioner, Press och krav, Oro och grubbel, Vila och avkoppling, Hantera bakslag, Söka stöd, Balans mellan aktivitet och återhämtning
+- *Motivation & självbild*: Mål och ambitioner, Självförtroende och självkänsla, Viljestyrka och disciplin, Vanor och beteendeförändring, Inre och yttre motivation, Misslyckanden och lärande, Att uppmuntra andra
+
+Ungefär 160 flerordsuttryck är egna poster, till exempel *le från öra till öra*, *klump i halsen*, *beklaga sorgen*, *gå i taket*, *sjunka genom jorden*, *stå i valet och kvalet*, *sova på saken*, *ha is i magen*, *ta det säkra före det osäkra*, *bita ihop*, *ladda batterierna* och *gråta över spilld mjölk*. Svensk kultur förklaras där den behövs, till exempel jantelagen, *duktighet*, *ödmjuk*, *jordnära*, *hänsynsfull* och *bekvämlighetszon*.
+
+Ord som redan fanns återanvändes i stället för att dupliceras, till exempel *stresshantering*, *utbränd*, *återhämta sig*, *komma ihåg*, *glömsk*, *bestämma sig*, *tveka* och *orka med*.
+
+**Homografer:** `e.saknad-känsla` (substantivet *saknad*) är en egen post med nyckel, och `s.skyldig.2` (skyldig till något) är en ny betydelse på en befintlig post.
+
+Inga publicerade `m.*`- eller `s.*`-ID:n har ändrats.
+
+### Övrigt
+- Grundordförrådet har fått vanliga ord som texterna behöver, till exempel *val*, *lön*, *bakgrund*, *handling*, *inre*, *yttre*, *tvivla*, *koppla*, *lätta*, *bry*, *fjäril*, *spindel* och *varg*, samt formerna *värsta*, *osäkra* och *spilld*.
+- E2E: den planerade katalogposten ligger nu i *Människan & hälsa → Relationer & familj → Familjemedlemmar → Föräldrar och barn*, eftersom hela *Känslor & psykologi* är publicerat.
+
 ## 0.10.0 – 2026-11-06
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.9.0 → 0.10.0 nollställer progressionen (återställningspunkt sparas).
