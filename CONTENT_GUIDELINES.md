@@ -64,6 +64,24 @@ npm run content:report                         # helhetsbild
 
 Utkast i `content/drafts/` ingår aldrig i appen. Status `reviewed` på en betydelse kräver `reviewer` och `date` och får bara sättas efter verklig mänsklig granskning; verktygen och AI sätter den aldrig.
 
+## Svåra ord ska förklaras (0.8)
+
+Produktägarens regel: **så fort ett ord är så svårt att en genomsnittlig elev i årskurs 9 skulle ha svårt för det, ska det förklaras ytterligare.** En lärare skulle aldrig säga ”specificerat kvitto” till högstadieelever utan förklaring. Det blir särskilt viktigt för fack- och samhällsord (t.ex. *ränta*, *belägring*, *existentialistisk*).
+
+- Varje betydelse kan ha `explanation: { sv, ja }`, en längre förklaring som visas öppet i ordintroduktionen (rutan ”Förklaring · 詳しい説明”) och i ordboken.
+- **Nivån B2 och uppåt betyder ”svårt för en genomsnittlig niondeklassare”.** Alla modulord på B2+ måste ha en förklaring (`EXPLANATION_FROM_LEVEL` i `schema.ts`). `validate:content` underkänner annars modulen. Sätt alltså nivån efter den regeln: fack-, myndighets-, ekonomi- och bostadsord samt formella ord är B2 även om de är vanliga för vuxna (i 0.8 flyttades 143 sådana ord från B1 till B2, t.ex. *moms*, *bolån*, *deposition* och *besked*).
+- En bra förklaring (2–3 meningar, minst 60 tecken) säger **vad ordet betyder i praktiken, när och varför man använder det och vanliga kombinationer**. Exempel: *specificerad*: ”Ett specificerat kvitto visar varje vara på en egen rad med sitt eget pris, i stället för bara summan … Man behöver det till exempel när jobbet ska betala tillbaka en middag.” Ge gärna en svensk kulturbakgrund (”I Sverige …”) och skillnader mot Japan.
+- Förklaringen får inte bara upprepa `defSv`. Den följer det kontrollerade ordförrådet som en definition: grundord, förkunskaper, tidigare ord i modulen och ordet självt. Den japanska versionen säger samma sak, med furigana.
+- I generatorn: `s(..., expl=(sv, ja))`. För befintliga ord: `explain.py list` / `explain.py apply`. Generatorn behåller förklaringar som redan finns i ordboksfilen.
+
+## Flerordsuttryck (produktägarens påminnelse 0.8)
+
+Svenskan har många kombinationer av ord som tillsammans betyder något annat än orden var för sig, till exempel *komma ihåg*, *ta hand om*, *hålla med* och *på skämt*. De ska vara **egna ordposter** (lemma med mellanslag, t.ex. `v('komma ihåg', ...)` eller `x('på skämt', 'phrase', ...)`) och läras som en helhet, inte delas upp i sina delar. Partikelverb får `particle`. Reflexiva uttryck skrivs med *sig* (*ta på sig*). I lästexten måste uttrycket stå sammanhängande.
+
+Kontrollen känner igen böjda former av verbuttryck (`v('ta sig till', ...)`, `v('sitta bra', ...)`), men inte av `x()`-fraser. Använd därför `v()` när uttrycket innehåller ett verb. Reflexiv i andra person (*spänner du fast dig*) och inverterad ordföljd (*svänger ni in*) känns inte igen, så skriv om meningen (*Aiko spänner fast sig*, *ni ska svänga in*).
+
+**Homografer:** har ordet samma ordklass som en befintlig post läggs en ny betydelse till på posten (`s.spår.2`, järnvägsspår), inte en ny post. Den nya betydelsen valideras också mot ordförrådet i den modul som äger ordboksfilen. Annan ordklass ger en egen post med nyckel (`e.halka-noun`).
+
 ## Produktion i stor skala (0.5)
 
 - **Ett överämne i taget.** Gör klart en ämnesgrupp (alla sju moduler) innan nästa påbörjas.

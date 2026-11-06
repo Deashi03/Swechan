@@ -87,7 +87,11 @@ export async function makeAllCardsDue(): Promise<number> {
   const db = getDb();
   const t = now().getTime() - 60_000;
   const cards = await db.cards.toArray();
-  await db.cards.bulkPut(cards.map((c) => ({ ...c, due: t })));
+  // Rewriting every row: clear + bulkAdd is far cheaper than bulkPut over existing keys (index updates).
+  await db.transaction('rw', db.cards, async () => {
+    await db.cards.clear();
+    await db.cards.bulkAdd(cards.map((c) => ({ ...c, due: t })));
+  });
   await recreateTodaysReview();
   return cards.length;
 }

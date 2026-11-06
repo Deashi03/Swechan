@@ -1,0 +1,170 @@
+{
+ "id": "m.flygplatser-och-terminaler",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Flygplatser och terminaler",
+ "titleJa": "{空港|くうこう}とターミナル",
+ "descriptionSv": "Flygplatser och terminaler: flygplats, flygplan, flyg, flygbolag, terminal, gate, avgångshall, ankomsthall, flygbuss, flygtåg, taxfree, landa, mellanlanda, direktflyg och flygtid.",
+ "descriptionJa": "{空港|くうこう}とターミナル：{空港|くうこう}、{飛行機|ひこうき}、{便|びん}、{航空|こうくう}{会社|がいしゃ}、ターミナル、{搭乗口|とうじょうぐち}、{出発|しゅっぱつ}ロビー、{到着|とうちゃく}ロビー、{空港|くうこう}バス、{空港|くうこう}{連絡|れんらく}{列車|れっしゃ}、{免税店|めんぜいてん}、{着陸|ちゃくりく}する、{経由|けいゆ}する、{直行便|ちょっこうびん}、{飛行|ひこう}{時間|じかん}。",
+ "categoryId": "R01-A06-T06",
+ "tags": [
+  "resor",
+  "flyg"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.resa-mellan-svenska-stader"
+ ],
+ "related": [],
+ "recommendedOrder": 651,
+ "words": [
+  {
+   "senseId": "s.flygplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygplan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygbolag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.terminal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gate.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgångshall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ankomsthall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygbuss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygtåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.taxfree.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellanlanda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.direktflyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygtid.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hem till Japan",
+  "paragraphs": [
+   "Aiko ska flyga till Japan och hälsa på sin mormor. Hon åker flygtåget till Arlanda. Hennes pappa tar flygbussen senare.",
+   "Det finns inget direktflyg den dagen, så de ska mellanlanda i Helsingfors. Flygtiden blir femton timmar.",
+   "På flygplatsen går Aiko till terminal 5, där utrikesflygen går. Avgångshallen är full av människor.",
+   "Det står på tavlan att deras flyg går från gate 14. Flygbolaget kommer från Finland. Innan de går dit köper Aiko choklad till mormor i taxfreen.",
+   "Genom fönstret ser hon stora flygplan som landar och lyfter.",
+   "Efter en lång resa landar de i Tokyo. I ankomsthallen står mormor och väntar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur åker Aiko till Arlanda?",
+    "options": [
+     "Med flygbussen",
+     "Med bil",
+     "Med flygtåget",
+     "Med taxi"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon åker flygtåget till Arlanda.",
+    "explanationJa": "{空港|くうこう}{連絡|れんらく}{列車|れっしゃ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var mellanlandar de?",
+    "options": [
+     "I Tokyo",
+     "I Göteborg",
+     "I Helsingfors",
+     "Ingenstans"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… så de ska mellanlanda i Helsingfors.",
+    "explanationJa": "ヘルシンキです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det finns ett direktflyg den dagen.",
+    "correct": false,
+    "explanationSv": "Det finns inget direktflyg den dagen.",
+    "explanationJa": "ありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad köper Aiko i taxfreen?",
+    "options": [
+     "Parfym",
+     "En bok",
+     "Choklad",
+     "Kaffe"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… köper Aiko choklad till mormor i taxfreen.",
+    "explanationJa": "チョコレートです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor möter Aiko på flygplatsen i Tokyo.",
+    "correct": true,
+    "explanationSv": "I ankomsthallen står mormor och väntar.",
+    "explanationJa": "{到着|とうちゃく}ロビーで{待|ま}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om flygplatser och flygresor.",
+  "discussionPoints": [
+   "Vilken flygplats har du flugit från senast?",
+   "Flyger du hellre direkt eller med mellanlandning?",
+   "Köper du något i taxfreen?",
+   "Hur kommer man till flygplatsen där du bor?"
+  ]
+ }
+}

@@ -46,11 +46,18 @@ export function WordIntro({ senseId, compact, onNext }: { senseId: string; compa
       </div>
       <div className="card stack-sm">
         <p style={{ margin: 0 }}><SvText text={sense.defSv} exclude={[entry.id]} /></p>
-        {(sense.concept || !compact) && <Ja text={sense.defJa} as="p" className="muted" />}
+        {(sense.concept || sense.explanation || !compact) && <Ja text={sense.defJa} as="p" className="muted" />}
         <div className="stack-sm" style={{ borderLeft: '3px solid var(--c-primary-tint)', paddingLeft: 10 }}>
           <div className="row"><span className="grow"><SvText text={sense.examples[0]!.sv} exclude={[entry.id]} /></span><SpeakButton text={sense.examples[0]!.sv} label="Lyssna på meningen" /></div>
           <Ja text={sense.examples[0]!.ja} as="div" className="small muted" />
         </div>
+        {sense.explanation && (
+          <div className="card tint-primary small stack-sm" style={{ boxShadow: 'none' }} data-testid="word-explanation">
+            <div className="xsmall muted" style={{ fontWeight: 800 }}>Förklaring · <Ja text="{詳|くわ}しい{説明|せつめい}" /></div>
+            <div><SvText text={sense.explanation.sv} exclude={[entry.id]} /></div>
+            <Ja text={sense.explanation.ja} as="div" className="muted" />
+          </div>
+        )}
         {sense.usageNote && (
           <div className="card tint-warning small stack-sm" style={{ boxShadow: 'none' }}>
             <div><SvText text={sense.usageNote.sv} exclude={[entry.id]} /></div>

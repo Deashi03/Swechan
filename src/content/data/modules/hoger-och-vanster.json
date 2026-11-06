@@ -1,0 +1,171 @@
+{
+ "id": "m.hoger-och-vanster",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Höger och vänster",
+ "titleJa": "{右|みぎ}と{左|ひだり}",
+ "descriptionSv": "Höger och vänster: svänga, rakt fram, åt höger, åt vänster, höger om, vänster om, på höger hand, på vänster hand, förbi, gatuhörn, i hörnet, tvärgata, vika av, vända om och ända fram.",
+ "descriptionJa": "{右|みぎ}と{左|ひだり}：{曲|ま}がる、まっすぐ、{右|みぎ}へ、{左|ひだり}へ、〜の{右|みぎ}に、〜の{左|ひだり}に、{右手|みぎて}に、{左手|ひだりて}に、〜を{通|とお}り{過|す}ぎて、{街角|まちかど}、{角|かど}に、{横道|よこみち}、それる、{引|ひ}き{返|かえ}す、ずっと。",
+ "categoryId": "R01-A06-T02",
+ "tags": [
+  "resor",
+  "vägbeskrivning"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.fraga-efter-ratt-linje"
+ ],
+ "related": [],
+ "recommendedOrder": 611,
+ "words": [
+  {
+   "senseId": "s.svänga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rakt-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åt-höger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åt-vänster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höger-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vänster-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-höger-hand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-vänster-hand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gatuhörn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-hörnet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvärgata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vika-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vända-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ända-fram.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var ligger biblioteket?",
+  "paragraphs": [
+   "En man med en karta stannar Leo på gatan. – Ursäkta, var ligger biblioteket?",
+   "– Gå rakt fram till kyrkan. Sväng åt vänster där. Gå förbi kiosken. Sedan ser du en skola på höger hand.",
+   "– Ta andra tvärgatan efter skolan. Vik av till höger där. Biblioteket är det röda huset i hörnet, vänster om banken.",
+   "– Och om jag går till höger vid kyrkan?",
+   "– Då går du fel. Då måste du vända om. Men om du kommer till ett stort gatuhörn med en park på vänster hand, har du gått för långt.",
+   "– Jag kan också följa med ända fram, säger Leo. Jag ska åt samma håll.",
+   "Mannen svänger åt höger med Leo, och de går tillsammans. Biblioteket ligger höger om ett kafé."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart vill mannen gå?",
+    "options": [
+     "Till kyrkan",
+     "Till banken",
+     "Till skolan",
+     "Till biblioteket"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Var ligger biblioteket?",
+    "explanationJa": "{図書館|としょかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad ska mannen göra vid kyrkan?",
+    "options": [
+     "Svänga åt höger",
+     "Svänga åt vänster",
+     "Vända om",
+     "Gå rakt fram"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Sväng åt vänster där.",
+    "explanationJa": "{左|ひだり}に{曲|ま}がります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Biblioteket är ett rött hus.",
+    "correct": true,
+    "explanationSv": "Biblioteket är det röda huset i hörnet.",
+    "explanationJa": "{赤|あか}い{家|いえ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad betyder det om mannen ser en park på vänster hand?",
+    "options": [
+     "Att han är framme",
+     "Att han ska svänga",
+     "Att han har gått för långt",
+     "Att han ska ta bussen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… har du gått för långt.",
+    "explanationJa": "{行|い}き{過|す}ぎたということです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo går ensam vidare.",
+    "correct": false,
+    "explanationSv": "De går tillsammans.",
+    "explanationJa": "{一緒|いっしょ}に{行|い}きます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni övar på att förklara vägen. En av er frågar efter en plats och den andra beskriver vägen med höger, vänster och rakt fram.",
+  "discussionPoints": [
+   "Hur går man från skolan till stationen?",
+   "Vad finns i hörnet nära där du bor?",
+   "Har du någon gång behövt vända om?",
+   "Vilket ord är svårast: höger om eller på höger hand?"
+  ]
+ }
+}

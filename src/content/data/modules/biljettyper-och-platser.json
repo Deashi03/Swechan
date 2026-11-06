@@ -1,0 +1,171 @@
+{
+ "id": "m.biljettyper-och-platser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Biljettyper och platser",
+ "titleJa": "{切符|きっぷ}の{種類|しゅるい}と{座席|ざせき}",
+ "descriptionSv": "Biljettyper och platser: tågbiljett, tur och retur, platsbiljett, första klass, andra klass, fönsterplats, gångplats, vagnsnummer, platsnummer, tyst avdelning, familjeavdelning, bistrovagn, i färdriktningen, åka baklänges och återbetalningsbar.",
+ "descriptionJa": "{切符|きっぷ}の{種類|しゅるい}と{座席|ざせき}：{列車|れっしゃ}の{切符|きっぷ}、{往復|おうふく}、{座席|ざせき}{指定|してい}{券|けん}、1{等|とう}、2{等|とう}、{窓側|まどがわ}の{席|せき}、{通路側|つうろがわ}の{席|せき}、{車両|しゃりょう}{番号|ばんごう}、{座席|ざせき}{番号|ばんごう}、{静粛|せいしゅく}{車両|しゃりょう}、ファミリー{車両|しゃりょう}、ビュッフェ{車|しゃ}、{進行方向|しんこうほうこう}{向|む}きに、{後|うし}ろ{向|む}きに{乗|の}る、{払|はら}い{戻|もど}し{可能|かのう}な。",
+ "categoryId": "R01-A06-T05",
+ "tags": [
+  "resor",
+  "tåg",
+  "biljett"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.tagstationer-och-perronger"
+ ],
+ "related": [],
+ "recommendedOrder": 642,
+ "words": [
+  {
+   "senseId": "s.tågbiljett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tur-och-retur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.platsbiljett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.första-klass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andra-klass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fönsterplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vagnsnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.platsnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tyst-avdelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.familjeavdelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bistrovagn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-färdriktningen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åka-baklänges.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återbetalningsbar.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Erik bokar tåg",
+  "paragraphs": [
+   "Erik ska åka till sin mormor i Umeå. Han bokar en tågbiljett tur och retur i appen.",
+   "Han väljer andra klass, för första klass är för dyrt. Det är ett långt tåg, så han måste ha platsbiljett.",
+   "Appen frågar: fönsterplats eller gångplats? Erik väljer fönsterplats. Han vill också sitta i färdriktningen, för han mår illa när han åker baklänges.",
+   "Han vill sova och läsa, så han bokar plats i tyst avdelning, inte i familjeavdelningen.",
+   "Den billigaste biljetten är inte återbetalningsbar. Erik tar den ändå, för han vet att han ska resa.",
+   "På biljetten står vagnsnummer 5 och platsnummer 34. Bistrovagnen är vagn 4, alldeles bredvid. – Perfekt, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken klass väljer Erik?",
+    "options": [
+     "Andra klass",
+     "Första klass",
+     "Ingen klass",
+     "Bistrovagnen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han väljer andra klass.",
+    "explanationJa": "2{等|とう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var vill Erik sitta?",
+    "options": [
+     "Vid gången",
+     "I familjeavdelningen",
+     "Vid fönstret i färdriktningen",
+     "I bistrovagnen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik väljer fönsterplats. Han vill också sitta i färdriktningen.",
+    "explanationJa": "{窓側|まどがわ}で{進行方向|しんこうほうこう}{向|む}きです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik kan få pengarna tillbaka om han inte reser.",
+    "correct": false,
+    "explanationSv": "Den billigaste biljetten är inte återbetalningsbar.",
+    "explanationJa": "{払|はら}い{戻|もど}しできません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vilket platsnummer har Erik?",
+    "options": [
+     "34",
+     "5",
+     "4",
+     "42"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… platsnummer 34.",
+    "explanationJa": "34{番|ばん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik kan lätt köpa mat på tåget.",
+    "correct": true,
+    "explanationSv": "Bistrovagnen är vagn 4, alldeles bredvid.",
+    "explanationJa": "すぐ{隣|となり}にビュッフェ{車|しゃ}があります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni vill resa med tåg: platser, klasser och biljetter.",
+  "discussionPoints": [
+   "Sitter du helst vid fönstret eller vid gången?",
+   "Har du rest i första klass någon gång?",
+   "Finns det tysta avdelningar på tåg i Japan?",
+   "Mår du illa om du åker baklänges?"
+  ]
+ }
+}

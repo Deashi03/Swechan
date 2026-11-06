@@ -1,0 +1,170 @@
+{
+ "id": "m.cykelns-delar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Cykelns delar",
+ "titleJa": "{自転車|じてんしゃ}の{部品|ぶひん}",
+ "descriptionSv": "Cykelns delar: sadel, styre, ram, eker, framhjul, bakhjul, pakethållare, cykelkorg, cykelstöd, cykellås, cykellampa, stänkskärm, barnsits, ventil och cykelpump.",
+ "descriptionJa": "{自転車|じてんしゃ}の{部品|ぶひん}：サドル、ハンドル、フレーム、スポーク、{前輪|ぜんりん}、{後輪|こうりん}、{荷台|にだい}、かご、スタンド、ロック、ライト、{泥除|どろよ}け、{子|こ}ども{用|よう}{座席|ざせき}、バルブ、{空気入|くうきい}れ。",
+ "categoryId": "R01-A06-T04",
+ "tags": [
+  "resor",
+  "cykel"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.enkla-bilproblem"
+ ],
+ "related": [],
+ "recommendedOrder": 631,
+ "words": [
+  {
+   "senseId": "s.sadel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framhjul.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakhjul.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pakethållare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelkorg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelstöd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykellås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykellampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stänkskärm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnsits.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ventil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelpump.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Yui köper en gammal cykel",
+  "paragraphs": [
+   "Yui vill köpa en cykel. Hon hittar en på nätet och åker för att titta på den.",
+   "Cykeln har en röd ram och en stor cykelkorg framtill. Bakom sadeln finns en pakethållare. Det finns också en barnsits, men den behöver Yui inte.",
+   "Hon tittar på framhjulet och bakhjulet. En eker är lite böjd. Stänkskärmen på bakhjulet sitter lite löst.",
+   "– Fungerar cykellampan? frågar Yui. – Ja, både fram och bak, säger säljaren.",
+   "Yui sätter sig på sadeln och håller i styret. Hon cyklar en bit. Däcken är lite mjuka, så säljaren tar fram en cykelpump och pumpar luft genom ventilen.",
+   "Cykelstödet fungerar, och ett cykellås ingår. Yui köper cykeln för 800 kronor."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken färg har ramen?",
+    "options": [
+     "Blå",
+     "Röd",
+     "Svart",
+     "Vit"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Cykeln har en röd ram.",
+    "explanationJa": "{赤|あか}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var sitter cykelkorgen?",
+    "options": [
+     "Baktill",
+     "Framtill",
+     "På pakethållaren",
+     "På sidan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… en stor cykelkorg framtill.",
+    "explanationJa": "{前|まえ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Alla ekrar är raka.",
+    "correct": false,
+    "explanationSv": "En eker är lite böjd.",
+    "explanationJa": "{一本|いっぽん}{曲|ま}がっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför tar säljaren fram en cykelpump?",
+    "options": [
+     "Lampan fungerar inte",
+     "Sadeln är för låg",
+     "Däcken är lite mjuka",
+     "Kedjan har gått av"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Däcken är lite mjuka.",
+    "explanationJa": "タイヤが{柔|やわ}らかいからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yui får ett cykellås utan att betala extra.",
+    "correct": true,
+    "explanationSv": "Ett cykellås ingår.",
+    "explanationJa": "ロックは{付属|ふぞく}しています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om cyklar: vilka delar de har och vad ni använder dem till.",
+  "discussionPoints": [
+   "Har du en cykel? Hur ser den ut?",
+   "Är cykelkorg vanligt i Japan?",
+   "Vad är viktigt när man köper en gammal cykel?",
+   "Har du någon gång fått din cykel stulen?"
+  ]
+ }
+}

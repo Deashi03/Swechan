@@ -1,0 +1,171 @@
+{
+ "id": "m.bagage-och-handbagage",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bagage och handbagage",
+ "titleJa": "{手荷物|てにもつ}と{機内|きない}{持|も}ち{込|こ}み",
+ "descriptionSv": "Bagage och handbagage: handbagage, incheckat bagage, kabin, kabinväska, viktgräns, vätskepåse, powerbank, packlista, resa lätt, bagagekvitto, bagageband, bagageutlämning, bagagevagn, försvunnet bagage och skadeanmälan.",
+ "descriptionJa": "{手荷物|てにもつ}と{機内|きない}{持|も}ち{込|こ}み：{機内|きない}{持|も}ち{込|こ}み{手荷物|てにもつ}、{預|あず}け{入|い}れ{荷物|にもつ}、{客室|きゃくしつ}、{機内|きない}{持|も}ち{込|こ}み{用|よう}スーツケース、{重量|じゅうりょう}{制限|せいげん}、{透明|とうめい}な{袋|ふくろ}、モバイルバッテリー、{持|も}ち{物|もの}リスト、{身軽|みがる}に{旅|たび}をする、{手荷物|てにもつ}{引換証|ひきかえしょう}、ターンテーブル、{手荷物|てにもつ}{受取所|うけとりじょ}、カート、{紛失|ふんしつ}{手荷物|てにもつ}、{損害|そんがい}{届|とどけ}。",
+ "categoryId": "R01-A06-T06",
+ "tags": [
+  "resor",
+  "flyg",
+  "bagage"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.pass-och-resehandlingar"
+ ],
+ "related": [],
+ "recommendedOrder": 654,
+ "words": [
+  {
+   "senseId": "s.handbagage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.incheckat-bagage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kabin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kabinväska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.viktgräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vätskepåse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.powerbank.1",
+   "active": true
+  },
+  {
+   "senseId": "s.packlista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resa-lätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagagekvitto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagageband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagageutlämning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagagevagn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försvunnet-bagage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadeanmälan.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är väskan?",
+  "paragraphs": [
+   "Erik ska flyga till Rom. Han skriver en packlista. Han vill helst resa lätt, med bara en kabinväska som handbagage. Men han ska vara borta i två veckor, så han tar också med incheckat bagage.",
+   "Viktgränsen är 23 kilo. Hans väska väger 22. Vid incheckningen får han ett bagagekvitto.",
+   "I handbagaget har han en vätskepåse med tandkräm och en powerbank. Powerbanken får inte vara i den stora väskan.",
+   "I kabinen sover Erik nästan hela vägen.",
+   "I Rom går han till bagageutlämningen och tar en bagagevagn. Han väntar vid bagageband 5 i en halvtimme, men hans väska kommer inte.",
+   "Han går till disken för försvunnet bagage och visar sitt bagagekvitto. Två dagar senare kommer väskan till hotellet, men den är trasig. Erik gör en skadeanmälan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart ska Erik flyga?",
+    "options": [
+     "Till London",
+     "Till Tokyo",
+     "Till Helsingfors",
+     "Till Rom"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik ska flyga till Rom.",
+    "explanationJa": "ローマです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur mycket väger hans väska?",
+    "options": [
+     "23 kilo",
+     "8 kilo",
+     "22 kilo",
+     "15 kilo"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hans väska väger 22.",
+    "explanationJa": "22キロです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Powerbanken ligger i den stora väskan.",
+    "correct": false,
+    "explanationSv": "Powerbanken får inte vara i den stora väskan.",
+    "explanationJa": "{機内|きない}{持|も}ち{込|こ}み{手荷物|てにもつ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad visar Erik vid disken?",
+    "options": [
+     "Sitt pass",
+     "Sin packlista",
+     "Sitt bagagekvitto",
+     "Sin biljett"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… visar sitt bagagekvitto.",
+    "explanationJa": "{手荷物|てにもつ}{引換証|ひきかえしょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik får tillbaka sin väska, men inte hel.",
+    "correct": true,
+    "explanationSv": "… kommer väskan till hotellet, men den är trasig.",
+    "explanationJa": "{壊|こわ}れて{戻|もど}ってきました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bagage när man flyger.",
+  "discussionPoints": [
+   "Reser du lätt eller med mycket bagage?",
+   "Skriver du en packlista?",
+   "Har ditt bagage försvunnit någon gång?",
+   "Vad har du alltid i handbagaget?"
+  ]
+ }
+}

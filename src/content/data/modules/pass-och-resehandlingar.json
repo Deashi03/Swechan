@@ -1,0 +1,171 @@
+{
+ "id": "m.pass-och-resehandlingar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Pass och resehandlingar",
+ "titleJa": "パスポートと{渡航|とこう}{書類|しょるい}",
+ "descriptionSv": "Pass och resehandlingar: pass, passfoto, visum, passkontroll, gräns, gränskontroll, Schengenområdet, nationalitet, medborgare, medborgarskap, uppehållstillstånd, ambassad, resehandling, reseförsäkring och förtulla.",
+ "descriptionJa": "パスポートと{渡航|とこう}{書類|しょるい}：パスポート、パスポート{写真|しゃしん}、ビザ、{出入国|しゅつにゅうこく}{審査|しんさ}、{国境|こっきょう}、{国境|こっきょう}{検問|けんもん}、シェンゲン{圏|けん}、{国籍|こくせき}、{国民|こくみん}、{市民権|しみんけん}、{在留|ざいりゅう}{許可|きょか}、{大使館|たいしかん}、{渡航|とこう}{書類|しょるい}、{旅行|りょこう}{保険|ほけん}、{申告|しんこく}する。",
+ "categoryId": "R01-A06-T06",
+ "tags": [
+  "resor",
+  "flyg",
+  "dokument"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.incheckning-och-sakerhetskontroll"
+ ],
+ "related": [],
+ "recommendedOrder": 653,
+ "words": [
+  {
+   "senseId": "s.pass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passfoto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passkontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gränskontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Schengenområdet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medborgare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nationalitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medborgarskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppehållstillstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ambassad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resehandling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reseförsäkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förtulla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Yuis papper",
+  "paragraphs": [
+   "Yui är japansk medborgare och bor i Sverige. Hon har uppehållstillstånd för att hon studerar här.",
+   "Nu ska hon resa hem till Japan över jul. Först kollar hon sitt pass. Det går ut snart, så hon måste förnya det på Japans ambassad i Stockholm. Hon tar ett nytt passfoto.",
+   "Japaner behöver inget visum till Sverige för korta resor. Men Yui bor här, så hon måste visa sitt kort om uppehållstillstånd i passkontrollen.",
+   "Hon köper också en reseförsäkring. Innan hon åker lägger hon alla resehandlingar på samma ställe: pass, biljett och försäkring.",
+   "På vägen hem mellanlandar hon i Helsingfors. Eftersom Sverige och Finland båda ingår i Schengenområdet, är det ingen gränskontroll mellan dem. Men vid gränsen i Japan frågar tullen: – Har du något att förtulla?",
+   "Hennes svenska vän Erik frågar en gång om hon vill byta nationalitet. – Nej, säger Yui. Japan tillåter inte två medborgarskap."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför har Yui uppehållstillstånd?",
+    "options": [
+     "Hon arbetar i Sverige",
+     "Hon studerar i Sverige",
+     "Hon är gift med en svensk",
+     "Hon är turist"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon har uppehållstillstånd för att hon studerar här.",
+    "explanationJa": "{留学|りゅうがく}しているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var förnyar Yui sitt pass?",
+    "options": [
+     "På Japans ambassad",
+     "Hos polisen",
+     "På flygplatsen",
+     "I Japan"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… på Japans ambassad i Stockholm.",
+    "explanationJa": "{日本|にほん}{大使館|たいしかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det är gränskontroll mellan Sverige och Finland.",
+    "correct": false,
+    "explanationSv": "… är det ingen gränskontroll mellan dem.",
+    "explanationJa": "ありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vilka resehandlingar har Yui?",
+    "options": [
+     "Bara passet",
+     "Pass, biljett och försäkring",
+     "Pengar",
+     "Ett passfoto"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… pass, biljett och försäkring.",
+    "explanationJa": "パスポート・{航空券|こうくうけん}・{保険|ほけん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yui vill inte bli svensk medborgare nu.",
+    "correct": true,
+    "explanationSv": "Nej, säger Yui. Japan tillåter inte två medborgarskap.",
+    "explanationJa": "なりたくありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om pass, visum och andra papper man behöver när man reser eller bor utomlands.",
+  "discussionPoints": [
+   "Hur länge gäller ett japanskt pass?",
+   "Har du behövt visum någon gång?",
+   "Köper du alltid reseförsäkring?",
+   "Vad tycker du om att kunna ha två medborgarskap?"
+  ]
+ }
+}

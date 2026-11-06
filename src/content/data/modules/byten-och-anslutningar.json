@@ -1,0 +1,170 @@
+{
+ "id": "m.byten-och-anslutningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Byten och anslutningar",
+ "titleJa": "{乗|の}り{換|か}えと{接続|せつぞく}",
+ "descriptionSv": "Byten och anslutningar: lokaltåg, regionaltåg, snabbtåg, fjärrtåg, direkttåg, byta tåg, anslutning, anslutningståg, missa anslutningen, invänta, göra uppehåll, delsträcka, resplan, reseplanerare och nästa avgång.",
+ "descriptionJa": "{乗|の}り{換|か}えと{接続|せつぞく}：{普通|ふつう}{列車|れっしゃ}、{地域|ちいき}{列車|れっしゃ}、{特急|とっきゅう}、{長距離|ちょうきょり}{列車|れっしゃ}、{直通|ちょくつう}{列車|れっしゃ}、{列車|れっしゃ}を{乗|の}り{換|か}える、{接続|せつぞく}、{接続|せつぞく}{列車|れっしゃ}、{接続|せつぞく}に{乗|の}り{遅|おく}れる、{待|ま}つ、{停車|ていしゃ}する、{一部|いちぶ}の{区間|くかん}、{旅程|りょてい}、{経路|けいろ}{検索|けんさく}、{次|つぎ}の{便|びん}。",
+ "categoryId": "R01-A06-T05",
+ "tags": [
+  "resor",
+  "tåg"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bagage-pa-taget"
+ ],
+ "related": [],
+ "recommendedOrder": 644,
+ "words": [
+  {
+   "senseId": "s.lokaltåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regionaltåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snabbtåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrtåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.direkttåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-tåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anslutning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anslutningståg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.missa-anslutningen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.invänta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.göra-uppehåll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delsträcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resplan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reseplanerare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nästa-avgång.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Resan till Örebro",
+  "paragraphs": [
+   "Leo ska hälsa på en vän i Örebro. Enligt reseplaneraren finns det inget direkttåg från hans stad. Han måste byta tåg en gång.",
+   "Resplanen ser ut så här: först ett regionaltåg till Hallsberg, sedan ett lokaltåg till Örebro. Bytestiden är bara åtta minuter.",
+   "Den första delsträckan går bra. Men efter en timme stannar tåget. Ett utrop säger: ”Tåget inväntar ett fjärrtåg från andra hållet.”",
+   "Nu är Leo orolig att han ska missa anslutningen. Tåget gör uppehåll i två små städer till.",
+   "I Hallsberg springer Leo till perrongen, men anslutningståget har redan gått. Nästa avgång är om fyrtio minuter.",
+   "Leo köper en kaffe och väntar. – Nästa gång tar jag snabbtåget och åker buss sista biten, tänker han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför måste Leo byta tåg?",
+    "options": [
+     "Tåget är trasigt",
+     "Det finns inget direkttåg",
+     "Han vill köpa kaffe",
+     "Biljetten säger det"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det finns inget direkttåg från hans stad.",
+    "explanationJa": "{直通|ちょくつう}{列車|れっしゃ}がないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång är bytestiden?",
+    "options": [
+     "Fyrtio minuter",
+     "Åtta minuter",
+     "En timme",
+     "Tjugo minuter"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Bytestiden är bara åtta minuter.",
+    "explanationJa": "8{分|ふん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Tåget stannar för att invänta ett annat tåg.",
+    "correct": true,
+    "explanationSv": "Tåget inväntar ett fjärrtåg från andra hållet.",
+    "explanationJa": "そうです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad händer i Hallsberg?",
+    "options": [
+     "Leo hinner med tåget",
+     "Leos vän möter honom",
+     "Leo tar en buss",
+     "Anslutningståget har redan gått"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… anslutningståget har redan gått.",
+    "explanationJa": "{接続|せつぞく}{列車|れっしゃ}はもう{出|で}ていました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo kommer fram till Örebro senare än han tänkt.",
+    "correct": true,
+    "explanationSv": "Nästa avgång är om fyrtio minuter.",
+    "explanationJa": "{予定|よてい}より{遅|おそ}くなります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att resa med flera byten.",
+  "discussionPoints": [
+   "Har du missat en anslutning någon gång?",
+   "Vilken reseplanerare använder du?",
+   "Byter du hellre tåg eller tar en längre resa utan byten?",
+   "Hur lång bytestid vill du ha?"
+  ]
+ }
+}

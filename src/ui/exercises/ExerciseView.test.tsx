@@ -4,6 +4,7 @@ import { genSpelling, genReverseChoice, genImageChoice, genImagePick } from '../
 import type { ExerciseResult } from '../../learning/exercises/types';
 import { DictionarySheetProvider, useDictionarySheet } from '../dictionary/DictionarySheet';
 import { ExerciseView } from './ExerciseView';
+import { WordIntro } from './WordIntro';
 
 const repo = getContent();
 const ctx = { repo, poolSenseIds: repo.modules[0]!.words.map((w) => w.senseId), seed: 3 };
@@ -103,5 +104,18 @@ describe('ExerciseView', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Stäng' }));
     expect(screen.queryByRole('dialog')).toBeNull();
     expect((screen.getByLabelText('Ditt svar') as HTMLInputElement).value).toBe('kö');
+  });
+});
+
+describe('WordIntro – explanations for hard words (0.8)', () => {
+  it('shows the explanation openly, also in compact mode', () => {
+    render(<DictionarySheetProvider><WordIntro senseId="s.specificerad.1" compact onNext={() => undefined} /></DictionarySheetProvider>);
+    const box = screen.getByTestId('word-explanation');
+    expect(box.textContent).toMatch(/specificerat kvitto/);
+    expect(box.textContent).toMatch(/Förklaring/);
+  });
+  it('shows no explanation box for an easy word without one', () => {
+    render(<DictionarySheetProvider><WordIntro senseId="s.skjorta.1" compact onNext={() => undefined} /></DictionarySheetProvider>);
+    expect(screen.queryByTestId('word-explanation')).toBeNull();
   });
 });

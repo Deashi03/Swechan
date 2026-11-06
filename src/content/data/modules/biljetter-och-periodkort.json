@@ -1,0 +1,171 @@
+{
+ "id": "m.biljetter-och-periodkort",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Biljetter och periodkort",
+ "titleJa": "{切符|きっぷ}と{定期券|ていきけん}",
+ "descriptionSv": "Biljetter och periodkort: biljett, enkelbiljett, reseapp, resekort, periodkort, reskassa, zon, giltighetstid, pensionär, reducerat pris, studentrabatt, biljettkontroll, kontrollant, planka och tilläggsavgift.",
+ "descriptionJa": "{切符|きっぷ}と{定期券|ていきけん}：{切符|きっぷ}、1{回|かい}{券|けん}、アプリ、{交通|こうつう}カード、{定期券|ていきけん}、チャージ{残高|ざんだか}、ゾーン、{有効期間|ゆうこうきかん}、{年金生活者|ねんきんせいかつしゃ}、{割引|わりびき}{料金|りょうきん}、{学割|がくわり}、{検札|けんさつ}、{検札係|けんさつがかり}、ただ{乗|の}り、{追徴金|ついちょうきん}。",
+ "categoryId": "R01-A06-T01",
+ "tags": [
+  "resor",
+  "kollektivtrafik",
+  "pengar"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.sparvagn-och-farja"
+ ],
+ "related": [],
+ "recommendedOrder": 604,
+ "words": [
+  {
+   "senseId": "s.biljett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enkelbiljett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reseapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resekort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.periodkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reskassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.zon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.giltighetstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pensionär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reducerat-pris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.studentrabatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biljettkontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tilläggsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.planka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rätt biljett",
+  "paragraphs": [
+   "Aikos mamma ska åka buss i Stockholm. ”Hur köper man biljett?” frågar hon. Man kan köpa en enkelbiljett i reseappen. Den har en giltighetstid på 75 minuter.",
+   "Aiko och Erik har resekort. Erik har ett periodkort, eftersom han reser varje dag. Aiko har reskassa på sitt kort, eftersom hon ofta cyklar.",
+   "I vissa städer finns det zoner, och biljetten kostar mer om man åker långt. Men i Stockholm kostar det lika mycket överallt.",
+   "Mormor är pensionär och reser till reducerat pris. Mia är student och har studentrabatt.",
+   "En dag är det biljettkontroll på tunnelbanan. En kontrollant vill se Leos biljett. Leo har glömt att ladda kortet.",
+   "Han får betala en tilläggsavgift på 1 500 kronor. ”Jag tänkte inte planka!” säger han. Men det hjälper inte."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge gäller en enkelbiljett?",
+    "options": [
+     "75 minuter",
+     "30 dagar",
+     "En timme",
+     "En dag"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den har en giltighetstid på 75 minuter.",
+    "explanationJa": "75{分|ふん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför har Erik periodkort?",
+    "options": [
+     "Han är student",
+     "Han reser varje dag",
+     "Han är pensionär",
+     "Han cyklar ofta"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik har ett periodkort, eftersom han reser varje dag.",
+    "explanationJa": "{毎日|まいにち}{乗|の}るからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "I Stockholm kostar resan mer om man åker långt.",
+    "correct": false,
+    "explanationSv": "I Stockholm kostar det lika mycket överallt.",
+    "explanationJa": "ストックホルムではどこでも{同|おな}じ{料金|りょうきん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vem reser till reducerat pris?",
+    "options": [
+     "Erik",
+     "Aiko",
+     "Mormor",
+     "Leo"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mormor är pensionär och reser till reducerat pris.",
+    "explanationJa": "おばあちゃんです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo ville åka utan att betala.",
+    "correct": false,
+    "explanationSv": "”Jag tänkte inte planka!” Han har glömt att ladda kortet.",
+    "explanationJa": "{払|はら}うつもりでしたが、チャージを{忘|わす}れました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om biljetter: vilka biljetter ni köper, om ni har periodkort och hur biljettsystemet fungerar i Sverige och Japan.",
+  "discussionPoints": [
+   "Köper du biljetter i en app eller med ett kort?",
+   "Lönar sig ett periodkort för dig?",
+   "Vilka grupper reser till reducerat pris i Japan?",
+   "Vad händer om man plankar i Japan?"
+  ]
+ }
+}

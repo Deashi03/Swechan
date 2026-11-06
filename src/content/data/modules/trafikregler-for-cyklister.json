@@ -1,0 +1,172 @@
+{
+ "id": "m.trafikregler-for-cyklister",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Trafikregler för cyklister",
+ "titleJa": "{自転車|じてんしゃ}の{交通|こうつう}ルール",
+ "descriptionSv": "Trafikregler för cyklister: trafikregel, hålla till höger, ge tecken, sträcka ut armen, högersväng, vänstersväng, indirekt vänstersväng, cykelbox, gå av cykeln, leda cykeln, cykla på trottoaren, cykla mot rött, böter, lagkrav och påverkad.",
+ "descriptionJa": "{自転車|じてんしゃ}の{交通|こうつう}ルール：{交通|こうつう}ルール、{右側|みぎがわ}{通行|つうこう}、{合図|あいず}する、{腕|うで}を{伸|の}ばす、{右折|うせつ}、{左折|させつ}、{二段階|にだんかい}{左折|させつ}、{自転車|じてんしゃ}{待機|たいき}{枠|わく}、{自転車|じてんしゃ}を{降|お}りる、{押|お}して{歩|ある}く、{歩道|ほどう}を{走|はし}る、{赤信号|あかしんごう}{無視|むし}、{罰金|ばっきん}、{法律|ほうりつ}による{義務|ぎむ}、{酔|よ}った。",
+ "categoryId": "R01-A06-T04",
+ "tags": [
+  "resor",
+  "cykel",
+  "trafik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.cykelvagar-och-cykelbanor"
+ ],
+ "related": [],
+ "recommendedOrder": 633,
+ "words": [
+  {
+   "senseId": "s.trafikregel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-till-höger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ge-tecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträcka-ut-armen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högersväng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vänstersväng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.indirekt-vänstersväng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelbox.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-av-cykeln.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leda-cykeln.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykla-på-trottoaren.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykla-mot-rött.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagkrav.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påverkad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Yui lär sig reglerna",
+  "paragraphs": [
+   "Yui har börjat cykla i Sverige. Hennes vän Erik förklarar trafikreglerna.",
+   "– Först: i Sverige ska man hålla till höger, inte till vänster som i Japan. Och vuxna får inte cykla på trottoaren.",
+   "– Innan du svänger ska du ge tecken. Inför en högersväng ska du sträcka ut armen åt höger. Inför en vänstersväng gör du samma sak åt vänster.",
+   "– I stora korsningar kan du göra en indirekt vänstersväng. Vid trafikljuset kan du stå i cykelboxen framför bilarna.",
+   "– Om det är mycket folk, ska du gå av cykeln och leda cykeln. Och du får inte cykla mot rött! Då kan du få böter.",
+   "– Det är lagkrav att ha lampa när det är mörkt. Och man får inte cykla när man är påverkad.",
+   "– Det var många regler! säger Yui. – Ja, men du lär dig snabbt, säger Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "På vilken sida ska man cykla i Sverige?",
+    "options": [
+     "Vänster",
+     "I mitten",
+     "Höger",
+     "Det spelar ingen roll"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I Sverige ska man hålla till höger.",
+    "explanationJa": "{右側|みぎがわ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad ska man göra innan man svänger?",
+    "options": [
+     "Stanna helt",
+     "Ge tecken",
+     "Gå av cykeln",
+     "Ringa på"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Innan du svänger ska du ge tecken.",
+    "explanationJa": "{合図|あいず}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Vuxna får cykla på trottoaren.",
+    "correct": false,
+    "explanationSv": "Vuxna får inte cykla på trottoaren.",
+    "explanationJa": "{大人|おとな}はだめです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad kan hända om man cyklar mot rött?",
+    "options": [
+     "Man får en lampa",
+     "Man kan få böter",
+     "Man måste leda cykeln",
+     "Ingenting"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Då kan du få böter.",
+    "explanationJa": "{罰金|ばっきん}になることがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yui tycker att det finns få regler.",
+    "correct": false,
+    "explanationSv": "Det var många regler! säger Yui.",
+    "explanationJa": "{多|おお}いと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om trafikregler för cyklister i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vilken regel tycker du är viktigast?",
+   "Cyklar folk på trottoaren i Japan?",
+   "Ger du tecken när du svänger på cykeln?",
+   "Har du fått böter någon gång?"
+  ]
+ }
+}

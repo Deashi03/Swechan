@@ -1,0 +1,171 @@
+{
+ "id": "m.forsening-och-ombokning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Försening och ombokning",
+ "titleJa": "{遅延|ちえん}と{予約|よやく}{変更|へんこう}",
+ "descriptionSv": "Försening och ombokning: tekniskt fel, fordonsfel, lokförare, sitta fast, kraftigt försenad, beräknad ankomst, ny avgångstid, i väntan på, prognos, ändrad, omboka, ombokningsbar, valfri avgång, ersättningstrafik och matkupong.",
+ "descriptionJa": "{遅延|ちえん}と{予約|よやく}{変更|へんこう}：{技術的|ぎじゅつてき}な{故障|こしょう}、{車両|しゃりょう}{故障|こしょう}、{運転士|うんてんし}、{閉|と}じ{込|こ}められる、{大幅|おおはば}に{遅|おく}れた、{到着|とうちゃく}{予定|よてい}、{新|あたら}しい{発車|はっしゃ}{時刻|じこく}、〜を{待|ま}って、{見通|みとお}し、{変更|へんこう}された、{予約|よやく}を{変更|へんこう}する、{予約|よやく}{変更|へんこう}{可能|かのう}な、{任意|にんい}の{便|びん}、{代行|だいこう}{輸送|ゆそう}、{食事|しょくじ}{券|けん}。",
+ "categoryId": "R01-A06-T05",
+ "tags": [
+  "resor",
+  "tåg",
+  "problem"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.resa-med-nattag"
+ ],
+ "related": [],
+ "recommendedOrder": 646,
+ "words": [
+  {
+   "senseId": "s.tekniskt-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fordonsfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lokförare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sitta-fast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftigt-försenad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beräknad-ankomst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ny-avgångstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-väntan-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prognos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ändrad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omboka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ombokningsbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.valfri-avgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ersättningstrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matkupong.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En lång dag på tåget",
+  "paragraphs": [
+   "Aiko ska åka tåg från Göteborg till Stockholm. Men efter en timme stannar tåget mitt i skogen.",
+   "Lokföraren säger i högtalaren: – Vi har ett tekniskt fel. Vi står still i väntan på hjälp.",
+   "Efter en timme kommer ett nytt utrop: tåget har ett fordonsfel och kan inte köra vidare. Det blir ersättningstrafik med buss till nästa station.",
+   "De sitter fast i skogen i nästan två timmar till. Alla resenärer får en matkupong. Prognosen ändras flera gånger.",
+   "På stationen står det att avgången mot Stockholm är kraftigt försenad. Ny avgångstid: 17.15. Beräknad ankomst: 20.30. Men biljetterna gäller valfri avgång, så Aiko kan ta ett annat tåg.",
+   "Aiko har en ombokningsbar biljett. Hon ombokar till ett tåg tidigare, med ändrad plats. Hon kommer fram vid åtta på kvällen, trött men glad."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var stannar tåget?",
+    "options": [
+     "På en station",
+     "Mitt i skogen",
+     "I Stockholm",
+     "Vid en sjö"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… stannar tåget mitt i skogen.",
+    "explanationJa": "{森|もり}の{真|ま}ん{中|なか}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur kommer resenärerna till nästa station?",
+    "options": [
+     "Med buss",
+     "Med taxi",
+     "Till fots",
+     "Med ett annat tåg"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det blir ersättningstrafik med buss till nästa station.",
+    "explanationJa": "バスです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Resenärerna får en matkupong.",
+    "correct": true,
+    "explanationSv": "Alla resenärer får en matkupong.",
+    "explanationJa": "もらえます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är ny avgångstid för tåget mot Stockholm?",
+    "options": [
+     "20.30",
+     "17.15",
+     "8.00",
+     "15.20"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ny avgångstid: 17.15.",
+    "explanationJa": "17{時|じ}15{分|ふん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko måste vänta på tåget som går 17.15.",
+    "correct": false,
+    "explanationSv": "Hon ombokar till ett tåg tidigare.",
+    "explanationJa": "もっと{早|はや}い{列車|れっしゃ}に{変更|へんこう}しました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om förseningar och om att boka om resor.",
+  "discussionPoints": [
+   "Har du suttit fast på ett tåg eller en buss?",
+   "Vad gör du medan du väntar på ett försenat tåg?",
+   "Köper du ombokningsbara biljetter?",
+   "Hur ofta är tågen försenade i Japan?"
+  ]
+ }
+}

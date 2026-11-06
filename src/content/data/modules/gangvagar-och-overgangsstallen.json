@@ -1,0 +1,176 @@
+{
+ "id": "m.gangvagar-och-overgangsstallen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Gångvägar och övergångsställen",
+ "titleJa": "{歩道|ほどう}と{横断歩道|おうだんほどう}",
+ "descriptionSv": "Gångvägar och övergångsställen: trottoar, gångväg, cykelbana, gågata, fotgängare, gående, övergångsställe, korsa, gå över gatan, titta åt båda hållen, se sig för, trafikerad, gångtunnel, gångbro, refug och obevakat övergångsställe.",
+ "descriptionJa": "{歩道|ほどう}と{横断歩道|おうだんほどう}：{歩道|ほどう}、{歩行者|ほこうしゃ}{用|よう}の{道|みち}、{自転車|じてんしゃ}{道|どう}、{歩行者|ほこうしゃ}{天国|てんごく}、{歩行者|ほこうしゃ}、{歩行者|ほこうしゃ}たち、{横断歩道|おうだんほどう}、{横切|よこぎ}る、{道|みち}を{渡|わた}る、{左右|さゆう}を{確認|かくにん}する、{周|まわ}りに{気|き}をつける、{交通量|こうつうりょう}の{多|おお}い、{地下道|ちかどう}、{歩道橋|ほどうきょう}、{安全地帯|あんぜんちたい}、{信号|しんごう}のない{横断歩道|おうだんほどう}。",
+ "categoryId": "R01-A06-T02",
+ "tags": [
+  "resor",
+  "vägbeskrivning",
+  "trafik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.korsningar-och-rondeller"
+ ],
+ "related": [],
+ "recommendedOrder": 613,
+ "words": [
+  {
+   "senseId": "s.trottoar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelbana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gågata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotgängare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övergångsställe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-över-gatan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.titta-åt-båda-hållen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.se-sig-för.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikerad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångtunnel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångbro.1",
+   "active": true
+  },
+  {
+   "senseId": "s.refug.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obevakat-övergångsställe.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Leos väg till skolan",
+  "paragraphs": [
+   "Leos lillasyster ska börja gå själv till skolan. Leo visar henne vägen.",
+   "– Vi går på trottoaren, inte på cykelbanan. Där kommer cyklarna fort.",
+   "– Här är en trafikerad gata. Man ska inte gå över gatan var som helst. Vi går till övergångsstället.",
+   "Det är ett obevakat övergångsställe. – Bilarna ska stanna för gående, men du måste ändå se dig för. Titta åt båda hållen!",
+   "Gatan är bred, så de stannar på refugen i mitten. Sedan går de vidare.",
+   "Efter det går de en gångväg genom parken och över en gångbro. Under den stora vägen tar de gångtunneln.",
+   "Till sist går de på gågatan, där inga bilar får köra. – Här är det skönt att vara fotgängare, säger Leo. Men korsa aldrig spåret vid stationen!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför ska de inte gå på cykelbanan?",
+    "options": [
+     "Den är stängd",
+     "Den är smutsig",
+     "Den är för smal",
+     "Där kommer cyklarna fort"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där kommer cyklarna fort.",
+    "explanationJa": "{自転車|じてんしゃ}が{速|はや}く{来|く}るからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Övergångsstället har trafikljus.",
+    "correct": false,
+    "explanationSv": "Det är ett obevakat övergångsställe.",
+    "explanationJa": "{信号|しんごう}はありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var stannar de mitt på den breda gatan?",
+    "options": [
+     "På refugen",
+     "På gångbron",
+     "I gångtunneln",
+     "På trottoaren"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De stannar på refugen i mitten.",
+    "explanationJa": "{安全地帯|あんぜんちたい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur kommer de under den stora vägen?",
+    "options": [
+     "Genom gångtunneln",
+     "Över gångbron",
+     "Med bussen",
+     "Över övergångsstället"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Under den stora vägen tar de gångtunneln.",
+    "explanationJa": "{地下道|ちかどう}を{通|とお}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo tycker att det är bra att gå på gågatan.",
+    "correct": true,
+    "explanationSv": "Här är det skönt att vara fotgängare.",
+    "explanationJa": "{気持|きも}ちがいいと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man går säkert i trafiken, och om skillnader mellan Sverige och Japan.",
+  "discussionPoints": [
+   "Stannar bilarna vid övergångsställen i Japan?",
+   "Finns det många gångbroar där du bor?",
+   "Har ni gågator i din stad?",
+   "Vad lärde du dig som barn om att gå över gatan?"
+  ]
+ }
+}

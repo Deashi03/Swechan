@@ -1,0 +1,170 @@
+{
+ "id": "m.tagstationer-och-perronger",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Tågstationer och perronger",
+ "titleJa": "{駅|えき}とホーム",
+ "descriptionSv": "Tågstationer och perronger: järnväg, järnvägsstation, centralstation, resecentrum, stationsbyggnad, väntsal, perrong, plattform, spår, spårändring, spårspring, ankommande, avgående, säkerhetslinje och tågtrafik.",
+ "descriptionJa": "{駅|えき}とホーム：{鉄道|てつどう}、{鉄道|てつどう}の{駅|えき}、{中央駅|ちゅうおうえき}、{交通|こうつう}ターミナル、{駅舎|えきしゃ}、{待合室|まちあいしつ}、ホーム、ホーム、{線路|せんろ}・〜{番線|ばんせん}、{番線|ばんせん}{変更|へんこう}、{線路|せんろ}への{立|た}ち{入|い}り、{到着|とうちゃく}する、{出発|しゅっぱつ}する、{安全線|あんぜんせん}、{列車|れっしゃ}の{運行|うんこう}。",
+ "categoryId": "R01-A06-T05",
+ "tags": [
+  "resor",
+  "tåg"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.vaglag-och-sakerhet"
+ ],
+ "related": [],
+ "recommendedOrder": 641,
+ "words": [
+  {
+   "senseId": "s.järnväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.järnvägsstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.centralstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resecentrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stationsbyggnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väntsal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.perrong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plattform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spår.2",
+   "active": true
+  },
+  {
+   "senseId": "s.spårändring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårspring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ankommande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetslinje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tågtrafik.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "På Centralstationen",
+  "paragraphs": [
+   "Yui ska åka tåg från Stockholm till Göteborg. Hon kommer till Centralstationen en halvtimme innan tåget går. Järnvägen mellan städerna är mycket gammal.",
+   "Stationsbyggnaden är stor och gammal. Det finns en väntsal, affärer och en stor tavla med avgående och ankommande tåg.",
+   "Enligt biljetten går tåget från spår 12. Yui går ner till perrongen. Där är det kallt, så hon går tillbaka till väntsalen.",
+   "Plötsligt hör hon ett utrop: ”Spårändring! Tåget till Göteborg går från spår 15.” Yui skyndar sig till rätt plattform.",
+   "Sedan kommer ett nytt utrop: ”På grund av spårspring är tågtrafiken försenad.” Det tar tio minuter.",
+   "När tåget kommer står alla bakom säkerhetslinjen. I Göteborg kommer Yui fram till ett stort resecentrum, där järnvägsstationen och bussarna finns tillsammans. Där tar hon bussen vidare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart ska Yui åka?",
+    "options": [
+     "Till Göteborg",
+     "Till Malmö",
+     "Till Umeå",
+     "Till Kyoto"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Yui ska åka tåg från Stockholm till Göteborg.",
+    "explanationJa": "ヨーテボリです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Från vilket spår går tåget till slut?",
+    "options": [
+     "12",
+     "2",
+     "4",
+     "15"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Tåget till Göteborg går från spår 15.",
+    "explanationJa": "15{番線|ばんせん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Yui väntar hela tiden på perrongen.",
+    "correct": false,
+    "explanationSv": "Där är det kallt, så hon går tillbaka till väntsalen.",
+    "explanationJa": "{待合室|まちあいしつ}に{戻|もど}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför blir tåget försenat?",
+    "options": [
+     "Signalfel",
+     "Snö",
+     "Spårarbete",
+     "Spårspring"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På grund av spårspring är tågtrafiken försenad.",
+    "explanationJa": "{線路|せんろ}への{立|た}ち{入|い}りのためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "I Göteborg kan Yui byta till buss på samma ställe.",
+    "correct": true,
+    "explanationSv": "… ett stort resecentrum, där järnvägsstationen och bussarna finns tillsammans.",
+    "explanationJa": "{同|おな}じ{場所|ばしょ}で{乗|の}り{換|か}えられます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tågstationer: hur de ser ut och vad man gör där.",
+  "discussionPoints": [
+   "Hur ser den största stationen där du bor ut?",
+   "Vad gör du medan du väntar på tåget?",
+   "Har du varit med om en spårändring?",
+   "Finns det säkerhetslinjer på perrongerna i Japan?"
+  ]
+ }
+}

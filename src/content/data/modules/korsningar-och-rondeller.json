@@ -1,0 +1,171 @@
+{
+ "id": "m.korsningar-och-rondeller",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Korsningar och rondeller",
+ "titleJa": "{交差点|こうさてん}とロータリー",
+ "descriptionSv": "Korsningar och rondeller: korsning, T-korsning, fyrvägskorsning, trafikljus, rött ljus, gult ljus, grönt ljus, rondell, cirkulationsplats, avfart, mötande trafik, släppa fram, företräde, väjningsplikt och högerregeln.",
+ "descriptionJa": "{交差点|こうさてん}とロータリー：{交差点|こうさてん}、T{字路|じろ}、{十字路|じゅうじろ}、{信号|しんごう}、{赤信号|あかしんごう}、{黄信号|きしんごう}、{青信号|あおしんごう}、ロータリー、{環状|かんじょう}{交差点|こうさてん}、{出口|でぐち}、{対向車|たいこうしゃ}、{道|みち}を{譲|ゆず}る、{優先権|ゆうせんけん}、{譲歩|じょうほ}{義務|ぎむ}、{右方優先|うほうゆうせん}。",
+ "categoryId": "R01-A06-T02",
+ "tags": [
+  "resor",
+  "vägbeskrivning",
+  "trafik"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hoger-och-vanster"
+ ],
+ "related": [],
+ "recommendedOrder": 612,
+ "words": [
+  {
+   "senseId": "s.korsning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.T-korsning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fyrvägskorsning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rött-ljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gult-ljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grönt-ljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rondell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkulationsplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avfart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mötande-trafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släppa-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.företräde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väjningsplikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högerregeln.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mamma kör, Aiko läser kartan",
+  "paragraphs": [
+   "Aiko sitter bredvid sin mamma i bilen och läser vägbeskrivningen.",
+   "– Vid nästa korsning ska vi svänga vänster. Se upp för mötande trafik!",
+   "Det är rött ljus. Sedan gult ljus, och sedan grönt ljus. Mamma svänger vänster.",
+   "– Nu kommer en rondell. Där har vi väjningsplikt. På skylten står det cirkulationsplats. Ta andra avfarten.",
+   "Efter rondellen kör de på en liten gata. Där finns inga trafikljus, så högerregeln gäller. Vid en fyrvägskorsning kommer en bil från höger. Den har företräde, så mamma släpper fram den.",
+   "Till sist kommer de till en T-korsning. – Höger eller vänster? frågar mamma. – Höger, säger Aiko. Vi är snart framme."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Aiko i bilen?",
+    "options": [
+     "Läser vägbeskrivningen",
+     "Kör bilen",
+     "Sover",
+     "Ringer en vän"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko … läser vägbeskrivningen.",
+    "explanationJa": "{道順|みちじゅん}を{読|よ}んでいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken avfart ska de ta i rondellen?",
+    "options": [
+     "Den första",
+     "Den tredje",
+     "Den andra",
+     "Ingen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ta andra avfarten.",
+    "explanationJa": "{二|ふた}つ{目|め}の{出口|でぐち}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "På den lilla gatan finns det trafikljus.",
+    "correct": false,
+    "explanationSv": "Där finns inga trafikljus.",
+    "explanationJa": "{信号|しんごう}はありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför släpper mamma fram bilen?",
+    "options": [
+     "Den kommer från höger",
+     "Den kör fort",
+     "Den är en buss",
+     "Den har rött ljus"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En bil från höger. Den har företräde.",
+    "explanationJa": "{右|みぎ}から{来|き}たからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko vet vägen till slutet.",
+    "correct": true,
+    "explanationSv": "Höger, säger Aiko. Vi är snart framme.",
+    "explanationJa": "{分|わ}かっています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om korsningar, rondeller och trafikregler i Sverige och i Japan.",
+  "discussionPoints": [
+   "Finns det många rondeller där du bor?",
+   "Vad säger man i Japan om grönt ljus?",
+   "Vet du vad högerregeln är?",
+   "Vilken trafikregel är svår att komma ihåg?"
+  ]
+ }
+}

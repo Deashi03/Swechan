@@ -32,9 +32,13 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - 105 nya moduler: Kläder & personlig stil, Tid & vardagsrutiner och Handel & vardagstjänster helt publicerade (215 moduler totalt).
 - Repetitionen tål kort för borttagna betydelser.
 
-## v0.8 – nästa steg
+## v0.8 – Förklaringar och Resor & lokaltrafik (klar)
+- Svåra ord (B2+) har förklaringar som visas i introduktionen och ordboken; regeln valideras.
+- 42 nya moduler: *Resor & lokaltrafik* helt publicerat, och därmed hela *Vardag & hem* (257 moduler totalt).
+
+## v0.9 – nästa steg
 - Infrastruktur för bilder och animationer enligt produktägarens kommande instruktion; därefter bilder för de publicerade modulerna.
-- Nästa överämne, ett i taget: *Resor & lokaltrafik* (R01-A06).
+- Nästa överämne, ett i taget: *Människan & hälsa → Kroppen & sinnena* (R02-A01).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
 - Japanska katalogtitlar (översättning + granskning).
 - Utökad validering (andel okända ord i lästext mot användarens nivå); morfologisk analys baserad på SALDO.

@@ -1,0 +1,171 @@
+{
+ "id": "m.dack-och-vaglag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Däck och väglag",
+ "titleJa": "タイヤと{路面|ろめん}{状況|じょうきょう}",
+ "descriptionSv": "Däck och väglag: däck, sommardäck, vinterdäck, dubbdäck, däckbyte, lufttryck, mönsterdjup, väglag, hal, halka, blixthalka, slask, modd, plogad och sladda.",
+ "descriptionJa": "タイヤと{路面|ろめん}{状況|じょうきょう}：タイヤ、{夏|なつ}タイヤ、{冬|ふゆ}タイヤ、スパイクタイヤ、タイヤ{交換|こうかん}、{空気圧|くうきあつ}、{溝|みぞ}の{深|ふか}さ、{路面|ろめん}{状況|じょうきょう}、{滑|すべ}りやすい、{路面|ろめん}{凍結|とうけつ}、{急|きゅう}な{路面|ろめん}{凍結|とうけつ}、ぐちゃぐちゃの{雪|ゆき}、シャーベット{状|じょう}の{雪|ゆき}、{除雪|じょせつ}された、スリップする。",
+ "categoryId": "R01-A06-T03",
+ "tags": [
+  "resor",
+  "bil",
+  "vinter"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.tankning-och-laddning"
+ ],
+ "related": [],
+ "recommendedOrder": 625,
+ "words": [
+  {
+   "senseId": "s.däck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sommardäck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinterdäck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbdäck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.däckbyte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lufttryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mönsterdjup.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väglag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halka-noun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blixthalka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slask.1",
+   "active": true
+  },
+  {
+   "senseId": "s.modd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plogad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sladda.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vintern kommer",
+  "paragraphs": [
+   "Det är slutet av oktober. På radion säger de att det blir dåligt väglag i natt, med risk för halka.",
+   "Erik har fortfarande sommardäck på bilen. Han ringer verkstaden och bokar ett däckbyte. – Vill du ha dubbdäck eller vanliga vinterdäck? frågar mannen. – Vanliga vinterdäck, säger Erik.",
+   "På verkstaden kollar de också lufttrycket och mönsterdjupet. Ett av de gamla däcken är för slitet.",
+   "Nästa morgon är vägarna hala. Det har regnat och sedan blivit kallt, så det blev blixthalka. Vägen är inte plogad än.",
+   "En bil framför Erik sladdar lite, men föraren kan snart köra rakt igen. Erik kör långsamt.",
+   "På eftermiddagen blir det varmare. Snön blir till slask och modd. Erik är glad att han har bytt däck i tid."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad säger de på radion?",
+    "options": [
+     "Det blir varmt",
+     "Det blir sol",
+     "Det blir dåligt väglag",
+     "Vägarna är plogade"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det blir dåligt väglag i natt.",
+    "explanationJa": "{路面|ろめん}{状況|じょうきょう}が{悪|わる}くなります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka däck väljer Erik?",
+    "options": [
+     "Dubbdäck",
+     "Vanliga vinterdäck",
+     "Sommardäck",
+     "Inga nya däck"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Vanliga vinterdäck, säger Erik.",
+    "explanationJa": "ふつうの{冬|ふゆ}タイヤです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "På verkstaden kollar de lufttrycket.",
+    "correct": true,
+    "explanationSv": "På verkstaden kollar de också lufttrycket och mönsterdjupet.",
+    "explanationJa": "{確認|かくにん}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför blev det blixthalka?",
+    "options": [
+     "Det snöade mycket",
+     "Det var mycket sol",
+     "En bil sladdade",
+     "Det regnade och sedan blev det kallt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det har regnat och sedan blivit kallt.",
+    "explanationJa": "{雨|あめ}のあと{寒|さむ}くなったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik bytte däck för sent.",
+    "correct": false,
+    "explanationSv": "Erik är glad att han har bytt däck i tid.",
+    "explanationJa": "{間|ま}に{合|あ}いました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vinter och bilkörning: snö, is och däck.",
+  "discussionPoints": [
+   "Snöar det mycket där du kommer ifrån?",
+   "Har man vinterdäck i Japan?",
+   "Har du halkat på is någon gång?",
+   "Vad är det värsta väglaget att köra i?"
+  ]
+ }
+}

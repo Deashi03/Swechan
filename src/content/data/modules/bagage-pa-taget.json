@@ -1,0 +1,171 @@
+{
+ "id": "m.bagage-pa-taget",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Bagage på tåget",
+ "titleJa": "{列車|れっしゃ}での{荷物|にもつ}",
+ "descriptionSv": "Bagage på tåget: bagage, packning, rullväska, släpa, lyfta upp, lyfta ner, bagagehylla, bagageutrymme, cykelplats, adresslapp, bagageförvaring, förvaringsbox, utan uppsikt, kvarlämnad och av säkerhetsskäl.",
+ "descriptionJa": "{列車|れっしゃ}での{荷物|にもつ}：{荷物|にもつ}、{荷物|にもつ}、キャリーケース、{引|ひ}きずる、{持|も}ち{上|あ}げる、{下|お}ろす、{荷物棚|にもつだな}、{荷物|にもつ}{置|お}き{場|ば}、{自転車|じてんしゃ}{置|お}き{場|ば}、ネームタグ、{手荷物|てにもつ}{預|あず}かり{所|じょ}、コインロッカー、{放置|ほうち}して、{置|お}き{去|ざ}りにされた、{安全上|あんぜんじょう}の{理由|りゆう}で。",
+ "categoryId": "R01-A06-T05",
+ "tags": [
+  "resor",
+  "tåg",
+  "bagage"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.biljettyper-och-platser"
+ ],
+ "related": [],
+ "recommendedOrder": 643,
+ "words": [
+  {
+   "senseId": "s.bagage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.packning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rullväska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släpa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyfta-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyfta-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagagehylla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagageutrymme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.adresslapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagageförvaring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvaringsbox.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utan-uppsikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvarlämnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.av-säkerhetsskäl.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "För mycket packning",
+  "paragraphs": [
+   "Aiko och hennes mamma ska åka tåg till Malmö. De har mycket packning: två rullväskor, en ryggsäck och en cykel.",
+   "På stationen släpar mamma den största väskan. Aikos cykel ska stå på en cykelplats i vagn 3.",
+   "Aiko lyfter upp ryggsäcken på bagagehyllan när de kommer in i vagnen. De stora väskorna ställer de i bagageutrymmet. Båda väskorna har en adresslapp.",
+   "Ett utrop säger: ”Lämna inte bagage utan uppsikt. Kvarlämnat bagage tas bort av säkerhetsskäl.”",
+   "I Malmö får de lyfta ner allt. De ska inte till hotellet förrän på kvällen, så de lämnar väskorna i bagageförvaringen på stationen. Ryggsäcken lägger Aiko i en förvaringsbox.",
+   "Sedan går de runt i stan, helt utan bagage. – Vad skönt! säger mamma."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart ska Aiko och mamma åka?",
+    "options": [
+     "Till Umeå",
+     "Till Göteborg",
+     "Till Lund",
+     "Till Malmö"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko och hennes mamma ska åka tåg till Malmö.",
+    "explanationJa": "マルメです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var lägger Aiko ryggsäcken på tåget?",
+    "options": [
+     "I bagageutrymmet",
+     "På cykelplatsen",
+     "På bagagehyllan",
+     "Under stolen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko lyfter upp ryggsäcken på bagagehyllan.",
+    "explanationJa": "{荷物棚|にもつだな}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Väskorna har ingen adresslapp.",
+    "correct": false,
+    "explanationSv": "Båda väskorna har en adresslapp.",
+    "explanationJa": "ついています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var lämnar de de stora väskorna i Malmö?",
+    "options": [
+     "I bagageförvaringen",
+     "I en förvaringsbox",
+     "På hotellet",
+     "På tåget"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… de lämnar väskorna i bagageförvaringen på stationen.",
+    "explanationJa": "{手荷物|てにもつ}{預|あず}かり{所|じょ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mamma tycker om att gå utan väskor.",
+    "correct": true,
+    "explanationSv": "Vad skönt! säger mamma.",
+    "explanationJa": "{気持|きも}ちいいと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bagage när man reser med tåg.",
+  "discussionPoints": [
+   "Packar du mycket eller lite när du reser?",
+   "Har du glömt något på ett tåg någon gång?",
+   "Finns det förvaringsboxar på stationer i Japan?",
+   "Hur mycket bagage är för mycket?"
+  ]
+ }
+}

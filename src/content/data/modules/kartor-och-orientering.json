@@ -1,0 +1,171 @@
+{
+ "id": "m.kartor-och-orientering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Kartor och orientering",
+ "titleJa": "{地図|ちず}と{方角|ほうがく}",
+ "descriptionSv": "Kartor och orientering: väderstreck, kompass, norra, södra, östra, västra, norr om, söder om, du är här, orientera sig, vägbeskrivning, landmärke, teckenförklaring, kartapp och zooma in.",
+ "descriptionJa": "{地図|ちず}と{方角|ほうがく}：{方角|ほうがく}、コンパス、{北|きた}の、{南|みなみ}の、{東|ひがし}の、{西|にし}の、〜の{北|きた}に、〜の{南|みなみ}に、{現在地|げんざいち}、{方角|ほうがく}をつかむ、{道順|みちじゅん}の{説明|せつめい}、{目印|めじるし}、{凡例|はんれい}、{地図|ちず}アプリ、{拡大|かくだい}する。",
+ "categoryId": "R01-A06-T02",
+ "tags": [
+  "resor",
+  "vägbeskrivning",
+  "karta"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.gangvagar-och-overgangsstallen"
+ ],
+ "related": [],
+ "recommendedOrder": 614,
+ "words": [
+  {
+   "senseId": "s.väderstreck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.norra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.södra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.östra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.västra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.norr-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.söder-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.du-är-här.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orientera-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägbeskrivning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landmärke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.teckenförklaring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kartapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.zooma-in.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vilse i Kyoto?",
+  "paragraphs": [
+   "Erik är i Kyoto för första gången. Det är svårt att orientera sig, för han kan inte läsa skyltarna.",
+   "Vid stationen finns en stor karta. En röd prick visar: ”Du är här.” Han tittar i teckenförklaringen för att se vad symbolerna betyder.",
+   "Hans hotell ligger i norra delen av staden, norr om en stor park. Templet han vill se ligger i östra Kyoto, söder om en flod.",
+   "Erik öppnar kartappen i mobilen och zoomar in. Där får han en vägbeskrivning.",
+   "Han lär sig att använda landmärken: ett högt torn i södra delen och berg i västra delen. Då vet han alltid väderstrecken, även utan kompass.",
+   "På kvällen hittar Erik tillbaka till hotellet helt själv."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför är det svårt för Erik att orientera sig?",
+    "options": [
+     "Det är mörkt",
+     "Han har ingen mobil",
+     "Han kan inte läsa skyltarna",
+     "Kartan är fel"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… för han kan inte läsa skyltarna.",
+    "explanationJa": "{看板|かんばん}が{読|よ}めないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var ligger hotellet?",
+    "options": [
+     "I södra delen",
+     "I östra Kyoto",
+     "I norra delen, norr om en park",
+     "Vid stationen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hans hotell ligger i norra delen av staden, norr om en stor park.",
+    "explanationJa": "{北部|ほくぶ}の{公園|こうえん}の{北|きた}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik får en vägbeskrivning i kartappen.",
+    "correct": true,
+    "explanationSv": "Där får han en vägbeskrivning.",
+    "explanationJa": "もらえます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad finns i västra delen av staden?",
+    "options": [
+     "Ett högt torn",
+     "Ett tempel",
+     "En flod",
+     "Berg"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… berg i västra delen.",
+    "explanationJa": "{山|やま}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik behövde hjälp för att hitta hem på kvällen.",
+    "correct": false,
+    "explanationSv": "På kvällen hittar Erik tillbaka till hotellet helt själv.",
+    "explanationJa": "{一人|ひとり}で{帰|かえ}れました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kartor och om hur ni hittar i en ny stad.",
+  "discussionPoints": [
+   "Använder du kartappen eller en vanlig karta?",
+   "Vilket landmärke finns där du bor?",
+   "Kan du alltid säga var norr är?",
+   "Har du gått vilse i en ny stad?"
+  ]
+ }
+}

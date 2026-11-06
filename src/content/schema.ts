@@ -11,6 +11,11 @@ import { z } from 'zod';
 export const JaText = z.string().min(1);
 export const Level = z.enum(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
 export type Level = z.infer<typeof Level>;
+/** Module words from this level up must carry a `sense.explanation` (0.8). */
+export const EXPLANATION_FROM_LEVEL: Level = 'B2';
+export function needsExplanation(level: Level): boolean {
+  return Level.options.indexOf(level) >= Level.options.indexOf(EXPLANATION_FROM_LEVEL);
+}
 export const LEVELS: readonly Level[] = Level.options;
 
 export const PartOfSpeech = z.enum([
@@ -102,6 +107,13 @@ export const WordSense = z.object({
   collocations: z.array(z.string()).optional(),
   register: z.enum(['neutral', 'informal', 'formal', 'technical', 'historical', 'literary']).default('neutral'),
   usageNote: z.object({ sv: z.string(), ja: JaText }).optional(),
+  /**
+   * (0.8) A fuller explanation for words that an average Swedish 9th-grader
+   * would find hard: what it means in practice, when and why it is used, typical
+   * combinations. Shown openly in the word introduction and the dictionary.
+   * Required for module words at level B2 and above (`EXPLANATION_FROM_LEVEL`).
+   */
+  explanation: z.object({ sv: z.string().min(1), ja: JaText }).optional(),
   synonyms: z.array(SynonymRelation).optional(),
   /** Ids of reusable Japanese-language grammar notes (grammarNotes.json). */
   grammarNotes: z.array(z.string()).optional(),

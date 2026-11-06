@@ -1,8 +1,19 @@
 # Projektstatus – överlämning
 
-**Version:** 0.7.0 · **Senast uppdaterad:** 2026-11-05 · **Gren:** `main` (publiceras via GitHub Pages; 0.7 utvecklades i grenen `claude/swechan-0.7-modules`)
+**Version:** 0.8.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.8 utvecklades i grenen `claude/swechan-0.8`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.8 – släppt 2026-11-06 (förklaringar för svåra ord + Resor & lokaltrafik)
+
+- **Krav (produktägaren):** ord som en genomsnittlig elev i årskurs 9 skulle ha svårt för **ska förklaras ytterligare**, inte bara översättas. Ett modulord på B2 eller högre måste ha `sense.explanation {sv, ja}`, med 2–3 meningar om praktisk betydelse, användning, vanliga kombinationer och svensk kulturbakgrund. Validatorn stoppar modulord på B2+ som saknar förklaring. Sätt B2 på ord som är svåra för en niondeklassare, även om de är vanliga (143 B1-ord omklassades). Alla publicerade svåra betydelser har förklaringar (791 totalt).
+- **Flerordsuttryck** (*komma ihåg*, *gå vilse*, *ta sig till*) är egna poster och målord. Tänk på det i varje modul. Kontrollen hittar målord bara som sammanhängande text: inverterad ordföljd ("svänger ni in") och andra personens reflexiv ("spänner du fast dig") känns inte igen. För partikelverb/reflexiva verb i lästexten: skriv dem i infinitiv eller rak ordföljd.
+- **Innehåll:** *Resor & lokaltrafik* är helt publicerat (42 moduler, `recommendedOrder` 601–657). Därmed är **hela rotområdet *Vardag & hem* publicerat** (257 moduler totalt). Nästa överämne blir det första i ett annat rotområde, t.ex. *Människan & hälsa → Kroppen & sinnena* (R02-A01). Första modulen där ska ha *In- och utcheckning* (`m.in-och-utcheckning`) som förkunskap. Lägg ordningen i en ny serie (t.ex. 701).
+- **Homografer:** samma ordklass → ny betydelse på befintlig post (`s.spår.2`). Den valideras också mot ordförrådet i modulen som äger ordboksfilen. Annan ordklass → egen post med nyckel (`e.halka-noun`, `e.pumpa-verb`).
+- **Prestanda:** repetitionsurvalet beräknar varje kort en gång (ADR 33); `makeAllCardsDue` använder `clear()` + `bulkAdd()`. Testsviten har nu 412 tester.
+- **E2E:** den planerade katalogposten är nu *Människan & hälsa → Kroppen & sinnena → Kroppens yttre delar → Huvud och ansikte*.
+- **Push-tips:** om GitHub svarar "fatal error in commit_refs_rules" även på den kanoniska adressen, ge commiten en ny hash (`git commit --amend --no-edit`) och pusha igen. Felet var tillfälligt och knutet till en viss commit.
+- **Bilder:** fortfarande inga nya bilder eller animationer (produktägarens beslut från 0.7 gäller).
 
 ## 0.7 – släppt 2026-11-05 (105 nya moduler, inga nya bilder)
 
@@ -44,7 +55,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas G klar**: version 0.4.0, migreringstest 0.3.1→0.4 med nollställningen på och av, e2e-jobb i CI, dokumentation. WebKit/fysisk iPhone: EJ TESTAT.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
-## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.7.0)
+## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.8.0)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
 

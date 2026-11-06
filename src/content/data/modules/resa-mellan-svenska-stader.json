@@ -1,0 +1,170 @@
+{
+ "id": "m.resa-mellan-svenska-stader",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Resa mellan svenska städer",
+ "titleJa": "スウェーデンの{都市間|としかん}の{旅|たび}",
+ "descriptionSv": "Resa mellan svenska städer: huvudstad, storstad, småstad, kuststad, universitetsstad, landskap, län, Norrland, ta tåget, ta bilen, långfärdsbuss, inrikesflyg, flygskam, helgresa och övernatta.",
+ "descriptionJa": "スウェーデンの{都市間|としかん}の{旅|たび}：{首都|しゅと}、{大都市|だいとし}、{小|ちい}さな{町|まち}、{海辺|うみべ}の{町|まち}、{大学|だいがく}{町|まち}、{地方|ちほう}、{県|けん}、ノールランド、{電車|でんしゃ}で{行|い}く、{車|くるま}で{行|い}く、{長距離|ちょうきょり}バス、{国内線|こくないせん}、{飛|と}び{恥|はじ}、{週末|しゅうまつ}{旅行|りょこう}、{泊|と}まる。",
+ "categoryId": "R01-A06-T05",
+ "tags": [
+  "resor",
+  "sverige"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.forsening-och-ombokning"
+ ],
+ "related": [],
+ "recommendedOrder": 647,
+ "words": [
+  {
+   "senseId": "s.huvudstad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storstad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.småstad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kuststad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.universitetsstad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.län.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Norrland.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-tåget.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-bilen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långfärdsbuss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inrikesflyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygskam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.helgresa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övernatta.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Yui reser runt i Sverige",
+  "paragraphs": [
+   "Yui har bott i huvudstaden Stockholm i ett år. Nu vill hon se mer av Sverige.",
+   "Först gör hon en helgresa till Uppsala, en gammal universitetsstad. Det tar bara fyrtio minuter att ta tåget dit.",
+   "Sedan åker hon till Göteborg, en stor kuststad på västkusten. Där bor hennes vän Erik. Han säger att Sverige har tre storstäder, men att de flesta bor i småstäder.",
+   "Erik förklarar också att Sverige har 25 landskap och 21 län. – Jag kommer från Skåne, säger han. Det är både ett landskap och ett län.",
+   "Till sist vill Yui åka till Norrland. Det finns inrikesflyg, men på grund av flygskam vill hon inte flyga. En långfärdsbuss tar för lång tid, och att ta bilen är dyrt.",
+   "Hon tar tåget norrut och övernattar i en småstad på vägen. – Sverige är mycket större än jag trodde! säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var har Yui bott i ett år?",
+    "options": [
+     "I Uppsala",
+     "I Stockholm",
+     "I Göteborg",
+     "I Norrland"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Yui har bott i huvudstaden Stockholm i ett år.",
+    "explanationJa": "ストックホルムです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång tid tar tåget till Uppsala?",
+    "options": [
+     "Fyra timmar",
+     "En dag",
+     "Fyrtio minuter",
+     "Tio minuter"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det tar bara fyrtio minuter att ta tåget dit.",
+    "explanationJa": "40{分|ぷん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Enligt Erik bor de flesta svenskar i storstäder.",
+    "correct": false,
+    "explanationSv": "… de flesta bor i småstäder.",
+    "explanationJa": "{小|ちい}さな{町|まち}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför vill Yui inte flyga till Norrland?",
+    "options": [
+     "Det är för dyrt",
+     "På grund av flygskam",
+     "Det finns inget flyg",
+     "Hon är rädd"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… på grund av flygskam vill hon inte flyga.",
+    "explanationJa": "{飛|と}び{恥|はじ}のためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yui stannar en natt på vägen till Norrland.",
+    "correct": true,
+    "explanationSv": "… övernattar i en småstad på vägen.",
+    "explanationJa": "{途中|とちゅう}で{一泊|いっぱく}します。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att resa mellan städer, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vilka svenska städer har du besökt eller vill du besöka?",
+   "Bor du i en storstad eller en småstad?",
+   "Tar du hellre tåget, bilen eller flyget?",
+   "Finns det något som liknar landskap i Japan?"
+  ]
+ }
+}

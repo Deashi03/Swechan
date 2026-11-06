@@ -1,0 +1,170 @@
+{
+ "id": "m.beskriva-en-fardvag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Beskriva en färdväg",
+ "titleJa": "{道順|みちじゅん}を{説明|せつめい}する",
+ "descriptionSv": "Beskriva en färdväg: färdväg, genväg, omväg, passera, uppför, nedför, backe, allé, gränd, stig, på vägen, svänga in, komma fram till, hela vägen och du kan inte missa det.",
+ "descriptionJa": "{道順|みちじゅん}を{説明|せつめい}する：ルート、{近道|ちかみち}、{遠回|とおまわ}り、{通|とお}り{過|す}ぎる、{上|のぼ}って、{下|くだ}って、{坂|さか}、{並木道|なみきみち}、{路地|ろじ}、{小道|こみち}、{途中|とちゅう}で、{曲|ま}がって{入|はい}る、〜に{着|つ}く、ずっと、すぐにわかりますよ。",
+ "categoryId": "R01-A06-T02",
+ "tags": [
+  "resor",
+  "vägbeskrivning"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hitta-en-adress"
+ ],
+ "related": [],
+ "recommendedOrder": 617,
+ "words": [
+  {
+   "senseId": "s.färdväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.backe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppför.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nedför.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allé.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gränd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-vägen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svänga-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-fram-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hela-vägen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.du-kan-inte-missa-det.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vägen till sjön",
+  "paragraphs": [
+   "Leo skriver en vägbeskrivning till sina vänner. De ska ses vid sjön på lördag.",
+   "”Från stationen går ni först nedför backen och sedan längs en lång allé. Ni passerar en kyrka på vänster hand.",
+   "Efter kyrkan ska ni svänga in på en smal gränd. Den är en genväg. Den andra vägen är en omväg på två kilometer.",
+   "När ni kommer fram till skogen, följer ni stigen. Den går lite uppför. På vägen finns en liten affär, om ni vill köpa något att dricka.",
+   "Följ stigen hela vägen. Sedan ser ni sjön och en stor gul stuga. Du kan inte missa det!”",
+   "Leo läser färdvägen en gång till. Han tycker att den är tydlig. Men han skickar också en karta, så att alla säkert hittar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var ska vännerna ses?",
+    "options": [
+     "Vid sjön",
+     "Vid stationen",
+     "Vid kyrkan",
+     "I affären"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De ska ses vid sjön på lördag.",
+    "explanationJa": "{湖|みずうみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör man efter kyrkan?",
+    "options": [
+     "Går uppför backen",
+     "Tar bussen",
+     "Vänder om",
+     "Svänger in på en gränd"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Efter kyrkan ska ni svänga in på en smal gränd.",
+    "explanationJa": "{路地|ろじ}に{入|はい}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Gränden är en omväg.",
+    "correct": false,
+    "explanationSv": "Den är en genväg.",
+    "explanationJa": "{近道|ちかみち}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad finns på vägen genom skogen?",
+    "options": [
+     "En liten affär",
+     "En kyrka",
+     "En station",
+     "En sjö"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På vägen finns en liten affär.",
+    "explanationJa": "{小|ちい}さな{店|みせ}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo vill vara säker på att vännerna hittar.",
+    "correct": true,
+    "explanationSv": "Men han skickar också en karta, så att alla säkert hittar.",
+    "explanationJa": "{念|ねん}のため{地図|ちず}も{送|おく}ります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni beskriver en färdväg för varandra, till exempel från stationen till ert hem eller till en favoritplats.",
+  "discussionPoints": [
+   "Hur går man från stationen till ditt hem?",
+   "Känner du till en bra genväg?",
+   "Har du fått ta en lång omväg någon gång?",
+   "Vad finns på vägen till din skola eller ditt jobb?"
+  ]
+ }
+}
