@@ -1,0 +1,170 @@
+{
+ "id": "m.resa-med-nattag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Resa med nattåg",
+ "titleJa": "{夜行|やこう}{列車|れっしゃ}の{旅|たび}",
+ "descriptionSv": "Resa med nattåg: nattåg, kupé, sovvagn, sovkupé, liggvagn, bädd, överbädd, underbädd, stege, dela kupé, konduktör, tågvärd, restaurangvagn, väckning och skumpa.",
+ "descriptionJa": "{夜行|やこう}{列車|れっしゃ}の{旅|たび}：{夜行|やこう}{列車|れっしゃ}、{個室|こしつ}、{寝台車|しんだいしゃ}、{寝台|しんだい}{個室|こしつ}、{簡易|かんい}{寝台車|しんだいしゃ}、ベッド、{上段|じょうだん}ベッド、{下段|げだん}ベッド、はしご、{個室|こしつ}を{共有|きょうゆう}する、{車掌|しゃしょう}、{客室|きゃくしつ}{乗務員|じょうむいん}、{食堂車|しょくどうしゃ}、モーニングコール、がたがた{揺|ゆ}れる。",
+ "categoryId": "R01-A06-T05",
+ "tags": [
+  "resor",
+  "tåg"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.byten-och-anslutningar"
+ ],
+ "related": [],
+ "recommendedOrder": 645,
+ "words": [
+  {
+   "senseId": "s.nattåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kupé.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sovvagn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sovkupé.1",
+   "active": true
+  },
+  {
+   "senseId": "s.liggvagn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överbädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underbädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stege.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-kupé.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konduktör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tågvärd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.restaurangvagn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skumpa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Nattåget norrut",
+  "paragraphs": [
+   "Yui och Erik tar nattåget från Stockholm till Kiruna. Resan tar sexton timmar.",
+   "Erik ville åka liggvagn, för det är billigare. Men Yui ville ha en egen sovkupé i sovvagnen. Hon vill inte dela kupé med människor hon inte känner.",
+   "En tågvärd visar dem till kupén. Där finns två bäddar, ett litet bord och lakan. Yui tar underbädden, och Erik klättrar upp i överbädden på en liten stege.",
+   "Konduktören kommer och kontrollerar biljetterna. Sedan går de till restaurangvagnen och äter middag.",
+   "Tåget skumpar lite, men Yui sover gott. Erik vaknar flera gånger.",
+   "På morgonen är det väckning en halvtimme före ankomst. Ute är det snö och berg. – Vilken resa! säger Yui."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång tid tar resan?",
+    "options": [
+     "Sex timmar",
+     "En natt och en dag",
+     "Sexton timmar",
+     "Tio timmar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Resan tar sexton timmar.",
+    "explanationJa": "16{時間|じかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför ville Erik åka liggvagn?",
+    "options": [
+     "Det är skönare",
+     "Det är billigare",
+     "Där finns mat",
+     "Yui ville det"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik ville åka liggvagn, för det är billigare.",
+    "explanationJa": "{安|やす}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Yui sover i överbädden.",
+    "correct": false,
+    "explanationSv": "Yui tar underbädden.",
+    "explanationJa": "{下段|げだん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var äter de middag?",
+    "options": [
+     "I kupén",
+     "På stationen",
+     "I bistrovagnen",
+     "I restaurangvagnen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sedan går de till restaurangvagnen och äter middag.",
+    "explanationJa": "{食堂車|しょくどうしゃ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yui sover bättre än Erik.",
+    "correct": true,
+    "explanationSv": "Yui sover gott. Erik vaknar flera gånger.",
+    "explanationJa": "ユイのほうがよく{眠|ねむ}れました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att resa med nattåg.",
+  "discussionPoints": [
+   "Har du åkt nattåg någon gång?",
+   "Skulle du vilja dela kupé med människor du inte känner?",
+   "Sover du bäst i överbädden eller underbädden?",
+   "Vart skulle du vilja åka med nattåg?"
+  ]
+ }
+}
