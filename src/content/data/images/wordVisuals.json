@@ -2,11 +2,103 @@
  "_comment": "Bilder per betydelse (0.6). kind: illustration (motiv i src/ui/wordArt/motifs.ts) eller photo (public/img/words/, kräver credit). quiz: bilden är entydig och får användas i bildövningar. group: visuell grupp – distraktorer tas aldrig från samma grupp. confusableWith: betydelser som bilden kan förväxlas med och som aldrig blir alternativ. symbol: abstrakt ord som visas med en symbolisk scen.",
  "images": [
   {
+   "senseId": "s.andas-in.1",
+   "kind": "animation",
+   "animationId": "anim.andas-in.1",
+   "file": "anim.andas-in.1",
+   "group": "andning",
+   "quiz": false,
+   "confusableWith": [
+    "s.andas-ut.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.andas-ut.1",
+   "kind": "animation",
+   "animationId": "anim.andas-ut.1",
+   "file": "anim.andas-ut.1",
+   "group": "andning",
+   "quiz": false,
+   "confusableWith": [
+    "s.andas-in.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.ansiktsdrag.1",
+   "kind": "illustration",
+   "motif": "kropp.ansiktsdrag",
+   "group": "huvud",
+   "quiz": false
+  },
+  {
+   "senseId": "s.anstränga-sig.1",
+   "kind": "animation",
+   "animationId": "anim.anstränga-sig.1",
+   "file": "anim.anstranga-sig.1",
+   "group": "kraft",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.aorta.1",
+   "kind": "illustration",
+   "motif": "kropp.aorta",
+   "group": "hjärta-diagram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.applådera.1",
+   "kind": "animation",
+   "animationId": "anim.applådera.1",
+   "file": "anim.appladera.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.armhåla.1",
+   "kind": "illustration",
+   "motif": "kropp.armhåla",
+   "group": "arm",
+   "quiz": true
+  },
+  {
+   "senseId": "s.artros.1",
+   "kind": "illustration",
+   "motif": "kropp.artros",
+   "group": "knäled-diagram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.axelbred.1",
+   "kind": "illustration",
+   "motif": "kropp.axelbred",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.axelled.1",
+   "kind": "illustration",
+   "motif": "kropp.axelled",
+   "group": "skelett-led",
+   "quiz": true
+  },
+  {
    "senseId": "s.bakficka.1",
    "kind": "illustration",
    "motif": "bakficka",
    "group": "detalj",
    "quiz": false
+  },
+  {
+   "senseId": "s.bakhuvud.1",
+   "kind": "illustration",
+   "motif": "kropp.bakhuvud",
+   "group": "huvud",
+   "quiz": true
   },
   {
    "senseId": "s.baklänges.1",
@@ -16,6 +108,83 @@
    "group": "gå och springa",
    "quiz": false,
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.balansera.1",
+   "kind": "animation",
+   "animationId": "anim.balansera.1",
+   "file": "anim.balansera.1",
+   "group": "balans",
+   "quiz": false,
+   "confusableWith": [
+    "s.hålla-balansen.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.balansorgan.1",
+   "kind": "illustration",
+   "motif": "kropp.balansorgan",
+   "group": "öra-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.barfota.1",
+   "kind": "illustration",
+   "motif": "kropp.barfota",
+   "group": "fotsymbol",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.baxa.1",
+   "kind": "animation",
+   "animationId": "anim.baxa.1",
+   "file": "anim.baxa.1",
+   "group": "kraft",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.befruktning.1",
+   "kind": "illustration",
+   "motif": "kropp.befruktning",
+   "group": "celler",
+   "quiz": true
+  },
+  {
+   "senseId": "s.benmärg.1",
+   "kind": "illustration",
+   "motif": "kropp.benmärg",
+   "group": "benvävnad",
+   "quiz": true
+  },
+  {
+   "senseId": "s.benskörhet.1",
+   "kind": "illustration",
+   "motif": "kropp.benskörhet",
+   "group": "benvävnad",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.beröra.1",
+   "kind": "animation",
+   "animationId": "anim.beröra.1",
+   "file": "anim.berora.1",
+   "group": "känsel",
+   "quiz": false,
+   "confusableWith": [
+    "s.röra-vid.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.beröring.1",
+   "kind": "illustration",
+   "motif": "kropp.beröring",
+   "group": "känsel",
+   "quiz": false
   },
   {
    "senseId": "s.beställa.1",
@@ -38,11 +207,49 @@
    "quiz": true
   },
   {
+   "senseId": "s.biceps.1",
+   "kind": "illustration",
+   "motif": "kropp.biceps",
+   "group": "arm",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bihåla.1",
+   "kind": "illustration",
+   "motif": "kropp.bihåla",
+   "group": "hals",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bismak.1",
+   "kind": "illustration",
+   "motif": "kropp.bismak",
+   "group": "smak",
+   "quiz": false
+  },
+  {
+   "senseId": "s.bita-sig-i-läppen.1",
+   "kind": "animation",
+   "animationId": "anim.bita-sig-i-läppen.1",
+   "file": "anim.bita-sig-i-lappen.1",
+   "group": "min",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.blazer.1",
    "kind": "illustration",
    "motif": "blazer",
    "group": "kostym",
    "quiz": true
+  },
+  {
+   "senseId": "s.blek.1",
+   "kind": "illustration",
+   "motif": "kropp.blek",
+   "group": "ansiktshud",
+   "quiz": false,
+   "symbol": true
   },
   {
    "senseId": "s.blekna.1",
@@ -57,11 +264,89 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.bli-frisk.1",
+   "kind": "animation",
+   "animationId": "anim.bli-frisk.1",
+   "file": "anim.bli-frisk.1",
+   "group": "sjukdom",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.blindtarm.1",
+   "kind": "illustration",
+   "motif": "kropp.blindtarm",
+   "group": "organ",
+   "quiz": true
+  },
+  {
+   "senseId": "s.blinka.1",
+   "kind": "animation",
+   "animationId": "anim.blinka.1",
+   "file": "anim.blinka.1",
+   "group": "ansikte",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.blodkärl.1",
+   "kind": "illustration",
+   "motif": "kropp.blodkärl",
+   "group": "kärl",
+   "quiz": false,
+   "confusableWith": [
+    "s.åder.1",
+    "s.pulsåder.1",
+    "s.ven.1"
+   ]
+  },
+  {
+   "senseId": "s.blodomlopp.1",
+   "kind": "illustration",
+   "motif": "kropp.blodomlopp",
+   "group": "kärl",
+   "quiz": false
+  },
+  {
+   "senseId": "s.blodpropp.1",
+   "kind": "illustration",
+   "motif": "kropp.blodpropp",
+   "group": "kärlsnitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.blond.1",
+   "kind": "illustration",
+   "motif": "kropp.blond",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.blus.1",
    "kind": "illustration",
    "motif": "blus",
    "group": "överdel",
    "quiz": true
+  },
+  {
+   "senseId": "s.blåmärke.1",
+   "kind": "illustration",
+   "motif": "kropp.blåmärke",
+   "group": "hudmärke",
+   "quiz": true
+  },
+  {
+   "senseId": "s.blänga.1",
+   "kind": "animation",
+   "animationId": "anim.blänga.1",
+   "file": "anim.blanga.1",
+   "group": "blick",
+   "quiz": false,
+   "confusableWith": [
+    "s.stirra.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.brinna.1",
@@ -75,6 +360,13 @@
     "s.tända.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.brosk.1",
+   "kind": "illustration",
+   "motif": "kropp.brosk",
+   "group": "knäled-diagram",
+   "quiz": true
   },
   {
    "senseId": "s.brud.1",
@@ -131,6 +423,24 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.bryta-benet.1",
+   "kind": "animation",
+   "animationId": "anim.bryta-benet.1",
+   "file": "anim.bryta-benet.1",
+   "group": "skada",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.bränna-sig.1",
+   "kind": "animation",
+   "animationId": "anim.bränna-sig.1",
+   "file": "anim.branna-sig.1",
+   "group": "smärta",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.bränna.1",
    "kind": "animation",
    "animationId": "anim.bränna.1",
@@ -141,6 +451,88 @@
     "s.bryna.1",
     "s.steka.1"
    ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.bröst.1",
+   "kind": "illustration",
+   "motif": "kropp.bröst",
+   "group": "bål-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bröstben.1",
+   "kind": "illustration",
+   "motif": "kropp.bröstben",
+   "group": "skelett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.brösthår.1",
+   "kind": "illustration",
+   "motif": "kropp.brösthår",
+   "group": "behåring",
+   "quiz": true,
+   "confusableWith": [
+    "s.kroppsbehåring.1",
+    "s.hårstrå.1",
+    "s.fjun.1"
+   ]
+  },
+  {
+   "senseId": "s.bröstkorg.1",
+   "kind": "illustration",
+   "motif": "kropp.bröstkorg",
+   "group": "skelett",
+   "quiz": true,
+   "confusableWith": [
+    "s.revben.1"
+   ]
+  },
+  {
+   "senseId": "s.bröstmuskel.1",
+   "kind": "illustration",
+   "motif": "kropp.bröstmuskel",
+   "group": "muskler",
+   "quiz": true
+  },
+  {
+   "senseId": "s.buga.1",
+   "kind": "animation",
+   "animationId": "anim.buga.1",
+   "file": "anim.buga.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.buk.1",
+   "kind": "illustration",
+   "motif": "kropp.buk",
+   "group": "bål-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bukhåla.1",
+   "kind": "illustration",
+   "motif": "kropp.bukhåla",
+   "group": "organ",
+   "quiz": false
+  },
+  {
+   "senseId": "s.bukspottkörtel.1",
+   "kind": "illustration",
+   "motif": "kropp.bukspottkörtel",
+   "group": "organ",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bulta.1",
+   "kind": "animation",
+   "animationId": "anim.bulta.1",
+   "file": "anim.bulta.1",
+   "group": "smärta",
+   "quiz": false,
    "reviewStatus": "ai-draft"
   },
   {
@@ -162,6 +554,50 @@
    "motif": "byxben",
    "group": "detalj",
    "quiz": false
+  },
+  {
+   "senseId": "s.bål.1",
+   "kind": "illustration",
+   "motif": "kropp.bål",
+   "group": "bål-bak",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bäcken.1",
+   "kind": "illustration",
+   "motif": "kropp.bäcken",
+   "group": "skelett",
+   "quiz": true,
+   "confusableWith": [
+    "s.höftben.1"
+   ]
+  },
+  {
+   "senseId": "s.böja-på-knäna.1",
+   "kind": "animation",
+   "animationId": "anim.böja-på-knäna.1",
+   "file": "anim.boja-pa-knana.1",
+   "group": "hållning",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.böja-sig.1",
+   "kind": "animation",
+   "animationId": "anim.böja-sig.1",
+   "file": "anim.boja-sig.1",
+   "group": "hållning",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.cirkulera.1",
+   "kind": "animation",
+   "animationId": "anim.cirkulera.1",
+   "file": "anim.cirkulera.1",
+   "group": "process",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.collegetröja.1",
@@ -201,12 +637,63 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.darra.1",
+   "kind": "animation",
+   "animationId": "anim.darra.1",
+   "file": "anim.darra.1",
+   "group": "temperatur",
+   "quiz": false,
+   "confusableWith": [
+    "s.huttra.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.decibel.1",
+   "kind": "illustration",
+   "motif": "kropp.decibel",
+   "group": "ljudmätare",
+   "quiz": false
+  },
+  {
    "senseId": "s.dela.1",
    "kind": "animation",
    "animationId": "anim.dela.1",
    "file": "anim.dela.1",
    "group": "tillaga och servera",
    "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.det-vattnas-i-munnen.1",
+   "kind": "illustration",
+   "motif": "kropp.det-vattnas-i-munnen",
+   "group": "lukt",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.domna-bort.1",
+   "kind": "animation",
+   "animationId": "anim.domna-bort.1",
+   "file": "anim.domna-bort.1",
+   "group": "smärta",
+   "quiz": false,
+   "confusableWith": [
+    "s.domna.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.domna.1",
+   "kind": "animation",
+   "animationId": "anim.domna.1",
+   "file": "anim.domna.1",
+   "group": "smärta",
+   "quiz": false,
+   "confusableWith": [
+    "s.domna-bort.1"
+   ],
    "reviewStatus": "ai-draft"
   },
   {
@@ -222,6 +709,18 @@
    ],
    "reviewStatus": "ai-draft",
    "fallbackMotif": "dra ner"
+  },
+  {
+   "senseId": "s.dra-på-sig.1",
+   "kind": "animation",
+   "animationId": "anim.dra-på-sig.1",
+   "file": "anim.dra-pa-sig.1",
+   "group": "sjukdom",
+   "quiz": false,
+   "confusableWith": [
+    "s.smitta.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.dra-upp.1",
@@ -296,11 +795,62 @@
    "symbol": true
   },
   {
+   "senseId": "s.fettlever.1",
+   "kind": "illustration",
+   "motif": "kropp.fettlever",
+   "group": "organ-sjukdom",
+   "quiz": false
+  },
+  {
    "senseId": "s.ficka.1",
    "kind": "illustration",
    "motif": "ficka",
    "group": "detalj",
    "quiz": false
+  },
+  {
+   "senseId": "s.fingerled.1",
+   "kind": "illustration",
+   "motif": "kropp.fingerled",
+   "group": "finger",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fingertopp.1",
+   "kind": "illustration",
+   "motif": "kropp.fingertopp",
+   "group": "hand",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fingertoppskänsla.1",
+   "kind": "illustration",
+   "motif": "kropp.fingertoppskänsla",
+   "group": "känsel",
+   "quiz": false
+  },
+  {
+   "senseId": "s.fingra-på.1",
+   "kind": "animation",
+   "animationId": "anim.fingra-på.1",
+   "file": "anim.fingra-pa.1",
+   "group": "grepp",
+   "quiz": false,
+   "confusableWith": [
+    "s.pilla.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.fjun.1",
+   "kind": "illustration",
+   "motif": "kropp.fjun",
+   "group": "behåring",
+   "quiz": false,
+   "confusableWith": [
+    "s.kroppsbehåring.1",
+    "s.hårstrå.1"
+   ]
   },
   {
    "senseId": "s.flagna.1",
@@ -315,11 +865,41 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.flina.1",
+   "kind": "animation",
+   "animationId": "anim.flina.1",
+   "file": "anim.flina.1",
+   "group": "min",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.fluga.1",
    "kind": "illustration",
    "motif": "fluga",
    "group": "hals",
    "quiz": true
+  },
+  {
+   "senseId": "s.flämta.1",
+   "kind": "animation",
+   "animationId": "anim.flämta.1",
+   "file": "anim.flamta.1",
+   "group": "andning",
+   "quiz": false,
+   "confusableWith": [
+    "s.kippa-efter-andan.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.fnissa.1",
+   "kind": "animation",
+   "animationId": "anim.fnissa.1",
+   "file": "anim.fnissa.1",
+   "group": "min",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.folkdräkt.1",
@@ -332,6 +912,46 @@
     "s.klänning.1",
     "s.långkjol.1"
    ]
+  },
+  {
+   "senseId": "s.fotled.1",
+   "kind": "illustration",
+   "motif": "kropp.fotled",
+   "group": "ben",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fotsula.1",
+   "kind": "illustration",
+   "motif": "kropp.fotsula",
+   "group": "fot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fotvalv.1",
+   "kind": "illustration",
+   "motif": "kropp.fotvalv",
+   "group": "fot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.frysa-om.1",
+   "kind": "animation",
+   "animationId": "anim.frysa-om.1",
+   "file": "anim.frysa-om.1",
+   "group": "temperatur",
+   "quiz": false,
+   "confusableWith": [
+    "s.huttra.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.fräkne.1",
+   "kind": "illustration",
+   "motif": "kropp.fräkne",
+   "group": "hudfläck",
+   "quiz": true
   },
   {
    "senseId": "s.fräsa.1",
@@ -347,6 +967,45 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.fumla.1",
+   "kind": "animation",
+   "animationId": "anim.fumla.1",
+   "file": "anim.fumla.1",
+   "group": "grepp",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.fyllig.1",
+   "kind": "illustration",
+   "motif": "kropp.fyllig",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.få-tag-i.1",
+   "kind": "animation",
+   "animationId": "anim.få-tag-i.1",
+   "file": "anim.fa-tag-i.1",
+   "group": "grepp",
+   "quiz": false,
+   "confusableWith": [
+    "s.greppa.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.födelsemärke.1",
+   "kind": "illustration",
+   "motif": "kropp.födelsemärke",
+   "group": "hudfläck",
+   "quiz": true,
+   "confusableWith": [
+    "s.leverfläck.1"
+   ]
+  },
+  {
    "senseId": "s.förklara.1",
    "kind": "animation",
    "animationId": "anim.förklara.1",
@@ -358,6 +1017,13 @@
     "s.översätta.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.förmak.1",
+   "kind": "illustration",
+   "motif": "kropp.förmak",
+   "group": "hjärta-diagram",
+   "quiz": true
   },
   {
    "senseId": "s.försiktig.1",
@@ -374,11 +1040,101 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.gallblåsa.1",
+   "kind": "illustration",
+   "motif": "kropp.gallblåsa",
+   "group": "organ",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gallgång.1",
+   "kind": "illustration",
+   "motif": "kropp.gallgång",
+   "group": "organ",
+   "quiz": false
+  },
+  {
+   "senseId": "s.gallsten.1",
+   "kind": "illustration",
+   "motif": "kropp.gallsten",
+   "group": "organ-sjukdom",
+   "quiz": false
+  },
+  {
    "senseId": "s.galonbyxor.1",
    "kind": "illustration",
    "motif": "galonbyxor",
    "group": "regn",
    "quiz": true
+  },
+  {
+   "senseId": "s.ge-blod.1",
+   "kind": "animation",
+   "animationId": "anim.ge-blod.1",
+   "file": "anim.ge-blod.1",
+   "group": "vård",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.gestikulera.1",
+   "kind": "animation",
+   "animationId": "anim.gestikulera.1",
+   "file": "anim.gestikulera.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.glasögon.1",
+   "kind": "illustration",
+   "motif": "kropp.glasögon",
+   "group": "glasögon",
+   "quiz": true
+  },
+  {
+   "senseId": "s.glasögonbåge.1",
+   "kind": "illustration",
+   "motif": "kropp.glasögonbåge",
+   "group": "glasögon",
+   "quiz": true
+  },
+  {
+   "senseId": "s.glippa.1",
+   "kind": "animation",
+   "animationId": "anim.glippa.1",
+   "file": "anim.glippa.1",
+   "group": "grepp",
+   "quiz": false,
+   "confusableWith": [
+    "s.släppa-taget.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.greppa.1",
+   "kind": "animation",
+   "animationId": "anim.greppa.1",
+   "file": "anim.greppa.1",
+   "group": "grepp",
+   "quiz": false,
+   "confusableWith": [
+    "s.gripa.1",
+    "s.få-tag-i.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.gripa.1",
+   "kind": "animation",
+   "animationId": "anim.gripa.1",
+   "file": "anim.gripa.1",
+   "group": "grepp",
+   "quiz": false,
+   "confusableWith": [
+    "s.greppa.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.grov.1",
@@ -395,6 +1151,13 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.grå-starr.1",
+   "kind": "illustration",
+   "motif": "kropp.grå-starr",
+   "group": "öga-fram",
+   "quiz": false
+  },
+  {
    "senseId": "s.gylf.1",
    "kind": "illustration",
    "motif": "gylf",
@@ -408,6 +1171,41 @@
    "file": "anim.gyllenbrun.1",
    "group": "matlagning",
    "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.gå-ur-led.1",
+   "kind": "animation",
+   "animationId": "anim.gå-ur-led.1",
+   "file": "anim.ga-ur-led.1",
+   "group": "skada",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.gångjärnsled.1",
+   "kind": "illustration",
+   "motif": "kropp.gångjärnsled",
+   "group": "ledtyp",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gåshud.1",
+   "kind": "illustration",
+   "motif": "kropp.gåshud",
+   "group": "hudmärke",
+   "quiz": true
+  },
+  {
+   "senseId": "s.göra-ont.1",
+   "kind": "animation",
+   "animationId": "anim.göra-ont.1",
+   "file": "anim.gora-ont.1",
+   "group": "smärta",
+   "quiz": false,
+   "confusableWith": [
+    "s.värka.1"
+   ],
    "reviewStatus": "ai-draft"
   },
   {
@@ -428,6 +1226,13 @@
     "s.skära.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.haka.1",
+   "kind": "illustration",
+   "motif": "kropp.haka",
+   "group": "huvud",
+   "quiz": true
   },
   {
    "senseId": "s.halta.1",
@@ -453,6 +1258,152 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.handflata.1",
+   "kind": "illustration",
+   "motif": "kropp.handflata",
+   "group": "hand",
+   "quiz": true
+  },
+  {
+   "senseId": "s.handled.1",
+   "kind": "illustration",
+   "motif": "kropp.handled",
+   "group": "hand",
+   "quiz": true
+  },
+  {
+   "senseId": "s.handrygg.1",
+   "kind": "illustration",
+   "motif": "kropp.handrygg",
+   "group": "hand",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hetta.1",
+   "kind": "illustration",
+   "motif": "kropp.hetta",
+   "group": "känsel",
+   "quiz": false
+  },
+  {
+   "senseId": "s.himla-med-ögonen.1",
+   "kind": "animation",
+   "animationId": "anim.himla-med-ögonen.1",
+   "file": "anim.himla-med-ogonen.1",
+   "group": "min",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hissa.1",
+   "kind": "animation",
+   "animationId": "anim.hissa.1",
+   "file": "anim.hissa.1",
+   "group": "kraft",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hjärnblödning.1",
+   "kind": "illustration",
+   "motif": "kropp.hjärnblödning",
+   "group": "hjärnskada",
+   "quiz": false
+  },
+  {
+   "senseId": "s.hjärnhalva.1",
+   "kind": "illustration",
+   "motif": "kropp.hjärnhalva",
+   "group": "hjärna",
+   "quiz": true,
+   "confusableWith": [
+    "s.storhjärna.1"
+   ]
+  },
+  {
+   "senseId": "s.hjärnskakning.1",
+   "kind": "illustration",
+   "motif": "kropp.hjärnskakning",
+   "group": "hjärnskada",
+   "quiz": false
+  },
+  {
+   "senseId": "s.hjärnstam.1",
+   "kind": "illustration",
+   "motif": "kropp.hjärnstam",
+   "group": "hjärna",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hjärtklaff.1",
+   "kind": "illustration",
+   "motif": "kropp.hjärtklaff",
+   "group": "hjärta-diagram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hjärtslag.1",
+   "kind": "illustration",
+   "motif": "kropp.hjärtslag",
+   "group": "hjärta",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hjässa.1",
+   "kind": "illustration",
+   "motif": "kropp.hjässa",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hornhinna.1",
+   "kind": "illustration",
+   "motif": "kropp.hornhinna",
+   "group": "öga-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hosta.1",
+   "kind": "animation",
+   "animationId": "anim.hosta.1",
+   "file": "anim.hosta.1",
+   "group": "kroppsljud",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hudfärg.1",
+   "kind": "illustration",
+   "motif": "kropp.hudfärg",
+   "group": "hud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.huka-sig.1",
+   "kind": "animation",
+   "animationId": "anim.huka-sig.1",
+   "file": "anim.huka-sig.1",
+   "group": "hållning",
+   "quiz": false,
+   "confusableWith": [
+    "s.sätta-sig-på-huk.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.huttra.1",
+   "kind": "animation",
+   "animationId": "anim.huttra.1",
+   "file": "anim.huttra.1",
+   "group": "temperatur",
+   "quiz": false,
+   "confusableWith": [
+    "s.darra.1",
+    "s.frysa-om.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.huva.1",
    "kind": "illustration",
    "motif": "huva",
@@ -465,6 +1416,208 @@
    "motif": "huvtröja",
    "group": "överdel",
    "quiz": true
+  },
+  {
+   "senseId": "s.hålla-andan.1",
+   "kind": "animation",
+   "animationId": "anim.hålla-andan.1",
+   "file": "anim.halla-andan.1",
+   "group": "andning",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hålla-balansen.1",
+   "kind": "animation",
+   "animationId": "anim.hålla-balansen.1",
+   "file": "anim.halla-balansen.1",
+   "group": "balans",
+   "quiz": false,
+   "confusableWith": [
+    "s.balansera.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hålla-fast.1",
+   "kind": "animation",
+   "animationId": "anim.hålla-fast.1",
+   "file": "anim.halla-fast.1",
+   "group": "grepp",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hålla-för-näsan.1",
+   "kind": "animation",
+   "animationId": "anim.hålla-för-näsan.1",
+   "file": "anim.halla-for-nasan.1",
+   "group": "lukt",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hålla-för-öronen.1",
+   "kind": "animation",
+   "animationId": "anim.hålla-för-öronen.1",
+   "file": "anim.halla-for-oronen.1",
+   "group": "hörsel",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hålla-i.1",
+   "kind": "animation",
+   "animationId": "anim.hålla-i.1",
+   "file": "anim.halla-i.1",
+   "group": "grepp",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hårstrå.1",
+   "kind": "illustration",
+   "motif": "kropp.hårstrå",
+   "group": "behåring",
+   "quiz": true,
+   "confusableWith": [
+    "s.kroppsbehåring.1",
+    "s.brösthår.1",
+    "s.fjun.1"
+   ]
+  },
+  {
+   "senseId": "s.häl.1",
+   "kind": "illustration",
+   "motif": "kropp.häl",
+   "group": "fot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hälsena.1",
+   "kind": "illustration",
+   "motif": "kropp.hälsena",
+   "group": "ben",
+   "quiz": true
+  },
+  {
+   "senseId": "s.höft.1",
+   "kind": "illustration",
+   "motif": "kropp.höft",
+   "group": "bål-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.höftben.1",
+   "kind": "illustration",
+   "motif": "kropp.höftben",
+   "group": "skelett",
+   "quiz": true,
+   "confusableWith": [
+    "s.bäcken.1"
+   ]
+  },
+  {
+   "senseId": "s.höftled.1",
+   "kind": "illustration",
+   "motif": "kropp.höftled",
+   "group": "skelett-led",
+   "quiz": true
+  },
+  {
+   "senseId": "s.högerhänt.1",
+   "kind": "illustration",
+   "motif": "kropp.högerhänt",
+   "group": "handskrift",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.höja-på-ögonbrynen.1",
+   "kind": "animation",
+   "animationId": "anim.höja-på-ögonbrynen.1",
+   "file": "anim.hoja-pa-ogonbrynen.1",
+   "group": "min",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.höra-dåligt.1",
+   "kind": "animation",
+   "animationId": "anim.höra-dåligt.1",
+   "file": "anim.hora-daligt.1",
+   "group": "hörsel",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hörapparat.1",
+   "kind": "illustration",
+   "motif": "kropp.hörapparat",
+   "group": "öra-hjälpmedel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hörsel.1",
+   "kind": "illustration",
+   "motif": "kropp.hörsel",
+   "group": "hörsel",
+   "quiz": false
+  },
+  {
+   "senseId": "s.hörselben.1",
+   "kind": "illustration",
+   "motif": "kropp.hörselben",
+   "group": "öra-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hörselgång.1",
+   "kind": "illustration",
+   "motif": "kropp.hörselgång",
+   "group": "öra-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hörselskydd.1",
+   "kind": "illustration",
+   "motif": "kropp.hörselskydd",
+   "group": "öra-hjälpmedel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.iaktta.1",
+   "kind": "animation",
+   "animationId": "anim.iaktta.1",
+   "file": "anim.iaktta.1",
+   "group": "uppmärksamhet",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.illaluktande.1",
+   "kind": "illustration",
+   "motif": "kropp.illaluktande",
+   "group": "lukt",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.inneröra.1",
+   "kind": "illustration",
+   "motif": "kropp.inneröra",
+   "group": "öra-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.iris.1",
+   "kind": "illustration",
+   "motif": "kropp.iris",
+   "group": "öga-fram",
+   "quiz": true,
+   "confusableWith": [
+    "s.ögonfärg.1"
+   ]
   },
   {
    "senseId": "s.jeans.1",
@@ -499,6 +1652,18 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.kallsvettas.1",
+   "kind": "animation",
+   "animationId": "anim.kallsvettas.1",
+   "file": "anim.kallsvettas.1",
+   "group": "temperatur",
+   "quiz": false,
+   "confusableWith": [
+    "s.transpirera.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.kalsonger.1",
    "kind": "illustration",
    "motif": "kalsonger",
@@ -508,6 +1673,13 @@
     "s.cykelbyxor.1",
     "s.shorts.1"
    ]
+  },
+  {
+   "senseId": "s.kammare.1",
+   "kind": "illustration",
+   "motif": "kropp.kammare",
+   "group": "hjärta-diagram",
+   "quiz": true
   },
   {
    "senseId": "s.kappa.1",
@@ -549,6 +1721,44 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.kippa-efter-andan.1",
+   "kind": "animation",
+   "animationId": "anim.kippa-efter-andan.1",
+   "file": "anim.kippa-efter-andan.1",
+   "group": "andning",
+   "quiz": false,
+   "confusableWith": [
+    "s.flämta.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.kisa.1",
+   "kind": "animation",
+   "animationId": "anim.kisa.1",
+   "file": "anim.kisa.1",
+   "group": "ansikte",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.kittla.1",
+   "kind": "animation",
+   "animationId": "anim.kittla.1",
+   "file": "anim.kittla.1",
+   "group": "beröring",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.kittlig.1",
+   "kind": "illustration",
+   "motif": "kropp.kittlig",
+   "group": "känsel",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.kjol.1",
    "kind": "illustration",
    "motif": "kjol",
@@ -566,6 +1776,15 @@
     "s.reklamera.1",
     "s.skälla.1"
    ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.klappa.1",
+   "kind": "animation",
+   "animationId": "anim.klappa.1",
+   "file": "anim.klappa.1",
+   "group": "beröring",
+   "quiz": false,
    "reviewStatus": "ai-draft"
   },
   {
@@ -637,11 +1856,65 @@
    "symbol": true
   },
   {
+   "senseId": "s.klämma.1",
+   "kind": "animation",
+   "animationId": "anim.klämma.1",
+   "file": "anim.klamma.1",
+   "group": "grepp",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.klänning.1",
    "kind": "illustration",
    "motif": "klänning",
    "group": "klänning",
    "quiz": true
+  },
+  {
+   "senseId": "s.knaka.1",
+   "kind": "animation",
+   "animationId": "anim.knaka.1",
+   "file": "anim.knaka.1",
+   "group": "kroppsljud",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.knarra.1",
+   "kind": "animation",
+   "animationId": "anim.knarra.1",
+   "file": "anim.knarra.1",
+   "group": "ljud",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.knoge.1",
+   "kind": "illustration",
+   "motif": "kropp.knoge",
+   "group": "hand",
+   "quiz": true
+  },
+  {
+   "senseId": "s.knubbig.1",
+   "kind": "illustration",
+   "motif": "kropp.knubbig",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.knuffa.1",
+   "kind": "animation",
+   "animationId": "anim.knuffa.1",
+   "file": "anim.knuffa.1",
+   "group": "kraft",
+   "quiz": false,
+   "confusableWith": [
+    "s.putta.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.knyta.1",
@@ -657,6 +1930,13 @@
    "fallbackMotif": "knyta"
   },
   {
+   "senseId": "s.knytnäve.1",
+   "kind": "illustration",
+   "motif": "kropp.knytnäve",
+   "group": "hand",
+   "quiz": true
+  },
+  {
    "senseId": "s.knåda.1",
    "kind": "animation",
    "animationId": "anim.knåda.1",
@@ -668,6 +1948,16 @@
     "s.mosa.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.knäled.1",
+   "kind": "illustration",
+   "motif": "kropp.knäled",
+   "group": "skelett-led",
+   "quiz": true,
+   "confusableWith": [
+    "s.led-kropp.1"
+   ]
   },
   {
    "senseId": "s.knälång.1",
@@ -705,10 +1995,24 @@
    "fallbackMotif": "knäppa"
   },
   {
+   "senseId": "s.knäskål.1",
+   "kind": "illustration",
+   "motif": "kropp.knäskål",
+   "group": "ben",
+   "quiz": true
+  },
+  {
    "senseId": "s.knästrumpa.1",
    "kind": "illustration",
    "motif": "knästrumpa",
    "group": "strumpor",
+   "quiz": true
+  },
+  {
+   "senseId": "s.knäveck.1",
+   "kind": "illustration",
+   "motif": "kropp.knäveck",
+   "group": "ben",
    "quiz": true
   },
   {
@@ -732,6 +2036,44 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.kontaktlins.1",
+   "kind": "illustration",
+   "motif": "kropp.kontaktlins",
+   "group": "glasögon",
+   "quiz": true
+  },
+  {
+   "senseId": "s.korsa-armarna.1",
+   "kind": "animation",
+   "animationId": "anim.korsa-armarna.1",
+   "file": "anim.korsa-armarna.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.korsband.1",
+   "kind": "illustration",
+   "motif": "kropp.korsband",
+   "group": "knäled-diagram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.korsrygg.1",
+   "kind": "illustration",
+   "motif": "kropp.korsrygg",
+   "group": "bål-bak",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kortväxt.1",
+   "kind": "illustration",
+   "motif": "kropp.kortväxt",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.kortärmad.1",
    "kind": "illustration",
    "motif": "kortärmad",
@@ -746,11 +2088,72 @@
    "quiz": true
   },
   {
+   "senseId": "s.kota.1",
+   "kind": "illustration",
+   "motif": "kropp.kota",
+   "group": "skelett",
+   "quiz": true,
+   "confusableWith": [
+    "s.ryggrad.1"
+   ]
+  },
+  {
+   "senseId": "s.kraftig.2",
+   "kind": "illustration",
+   "motif": "kropp.kraftig.2",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.krage.1",
    "kind": "illustration",
    "motif": "krage",
    "group": "detalj",
    "quiz": false
+  },
+  {
+   "senseId": "s.krama.1",
+   "kind": "animation",
+   "animationId": "anim.krama.1",
+   "file": "anim.krama.1",
+   "group": "beröring",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.kranium.1",
+   "kind": "illustration",
+   "motif": "kropp.kranium",
+   "group": "skelett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kranskärl.1",
+   "kind": "illustration",
+   "motif": "kropp.kranskärl",
+   "group": "hjärta-diagram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kroppsbehåring.1",
+   "kind": "illustration",
+   "motif": "kropp.kroppsbehåring",
+   "group": "behåring",
+   "quiz": true,
+   "confusableWith": [
+    "s.hårstrå.1",
+    "s.brösthår.1",
+    "s.fjun.1"
+   ]
+  },
+  {
+   "senseId": "s.kroppsbyggnad.1",
+   "kind": "illustration",
+   "motif": "kropp.kroppsbyggnad",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
   },
   {
    "senseId": "s.krympa.1",
@@ -763,6 +2166,22 @@
     "s.blekna.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.krypa-ihop.1",
+   "kind": "animation",
+   "animationId": "anim.krypa-ihop.1",
+   "file": "anim.krypa-ihop.1",
+   "group": "hållning",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.kulled.1",
+   "kind": "illustration",
+   "motif": "kropp.kulled",
+   "group": "ledtyp",
+   "quiz": true
   },
   {
    "senseId": "s.kuta.1",
@@ -778,6 +2197,54 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.kånka.1",
+   "kind": "animation",
+   "animationId": "anim.kånka.1",
+   "file": "anim.kanka.1",
+   "group": "lyft",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.käke.1",
+   "kind": "illustration",
+   "motif": "kropp.käke",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.känna-lukten-av.1",
+   "kind": "animation",
+   "animationId": "anim.känna-lukten-av.1",
+   "file": "anim.kanna-lukten-av.1",
+   "group": "lukt",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.känna-på-sig.1",
+   "kind": "animation",
+   "animationId": "anim.känna-på-sig.1",
+   "file": "anim.kanna-pa-sig.1",
+   "group": "uppmärksamhet",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.kännetecken.1",
+   "kind": "illustration",
+   "motif": "kropp.kännetecken",
+   "group": "utseende",
+   "quiz": false
+  },
+  {
+   "senseId": "s.känsel.1",
+   "kind": "illustration",
+   "motif": "kropp.känsel",
+   "group": "känsel",
+   "quiz": false
+  },
+  {
    "senseId": "s.köa.1",
    "kind": "animation",
    "animationId": "anim.köa.1",
@@ -787,6 +2254,34 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.led-kropp.1",
+   "kind": "illustration",
+   "motif": "kropp.led-kropp",
+   "group": "skelett-led",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ledband.1",
+   "kind": "illustration",
+   "motif": "kropp.ledband",
+   "group": "knäled-diagram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ledkapsel.1",
+   "kind": "illustration",
+   "motif": "kropp.ledkapsel",
+   "group": "knäled-diagram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ledvätska.1",
+   "kind": "illustration",
+   "motif": "kropp.ledvätska",
+   "group": "knäled-diagram",
+   "quiz": true
+  },
+  {
    "senseId": "s.leggings.1",
    "kind": "illustration",
    "motif": "leggings",
@@ -794,6 +2289,171 @@
    "quiz": true,
    "confusableWith": [
     "s.strumpbyxor.1"
+   ]
+  },
+  {
+   "senseId": "s.lever.1",
+   "kind": "illustration",
+   "motif": "kropp.lever",
+   "group": "organ",
+   "quiz": true
+  },
+  {
+   "senseId": "s.leverfläck.1",
+   "kind": "illustration",
+   "motif": "kropp.leverfläck",
+   "group": "hudfläck",
+   "quiz": true,
+   "confusableWith": [
+    "s.födelsemärke.1"
+   ]
+  },
+  {
+   "senseId": "s.levra-sig.1",
+   "kind": "animation",
+   "animationId": "anim.levra-sig.1",
+   "file": "anim.levra-sig.1",
+   "group": "process",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.ligga-på-mage.1",
+   "kind": "animation",
+   "animationId": "anim.ligga-på-mage.1",
+   "file": "anim.ligga-pa-mage.1",
+   "group": "hållning",
+   "quiz": false,
+   "confusableWith": [
+    "s.ligga-på-rygg.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.ligga-på-rygg.1",
+   "kind": "animation",
+   "animationId": "anim.ligga-på-rygg.1",
+   "file": "anim.ligga-pa-rygg.1",
+   "group": "hållning",
+   "quiz": false,
+   "confusableWith": [
+    "s.ligga-på-mage.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.lillfinger.1",
+   "kind": "illustration",
+   "motif": "kropp.lillfinger",
+   "group": "finger",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lillhjärna.1",
+   "kind": "illustration",
+   "motif": "kropp.lillhjärna",
+   "group": "hjärna",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lilltå.1",
+   "kind": "illustration",
+   "motif": "kropp.lilltå",
+   "group": "fot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lins.2",
+   "kind": "illustration",
+   "motif": "kropp.lins.2",
+   "group": "öga-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.livmoder.1",
+   "kind": "illustration",
+   "motif": "kropp.livmoder",
+   "group": "könsorgan",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ljudnivå.1",
+   "kind": "illustration",
+   "motif": "kropp.ljudnivå",
+   "group": "ljudmätare",
+   "quiz": false
+  },
+  {
+   "senseId": "s.ljumske.1",
+   "kind": "illustration",
+   "motif": "kropp.ljumske",
+   "group": "bål-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lomhörd.1",
+   "kind": "illustration",
+   "motif": "kropp.lomhörd",
+   "group": "hörsel",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.luftrör.1",
+   "kind": "illustration",
+   "motif": "kropp.luftrör",
+   "group": "organ",
+   "quiz": true,
+   "confusableWith": [
+    "s.lunga.1"
+   ]
+  },
+  {
+   "senseId": "s.luftstrupe.1",
+   "kind": "illustration",
+   "motif": "kropp.luftstrupe",
+   "group": "organ",
+   "quiz": true
+  },
+  {
+   "senseId": "s.luftväg.1",
+   "kind": "illustration",
+   "motif": "kropp.luftväg",
+   "group": "hals",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lukta-gott.1",
+   "kind": "animation",
+   "animationId": "anim.lukta-gott.1",
+   "file": "anim.lukta-gott.1",
+   "group": "lukt",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.luktfri.1",
+   "kind": "illustration",
+   "motif": "kropp.luktfri",
+   "group": "lukt",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.luktsinne.1",
+   "kind": "illustration",
+   "motif": "kropp.luktsinne",
+   "group": "lukt",
+   "quiz": false
+  },
+  {
+   "senseId": "s.lunga.1",
+   "kind": "illustration",
+   "motif": "kropp.lunga",
+   "group": "organ",
+   "quiz": true,
+   "confusableWith": [
+    "s.luftrör.1"
    ]
   },
   {
@@ -809,11 +2469,36 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.luta-sig.1",
+   "kind": "animation",
+   "animationId": "anim.luta-sig.1",
+   "file": "anim.luta-sig.1",
+   "group": "hållning",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.lyfta-med-benen.1",
+   "kind": "animation",
+   "animationId": "anim.lyfta-med-benen.1",
+   "file": "anim.lyfta-med-benen.1",
+   "group": "lyft",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.långbyxor.1",
    "kind": "illustration",
    "motif": "långbyxor",
    "group": "byxor",
    "quiz": false
+  },
+  {
+   "senseId": "s.långfinger.1",
+   "kind": "illustration",
+   "motif": "kropp.långfinger",
+   "group": "finger",
+   "quiz": true
   },
   {
    "senseId": "s.långkjol.1",
@@ -830,10 +2515,32 @@
    "quiz": true
   },
   {
+   "senseId": "s.långväxt.1",
+   "kind": "illustration",
+   "motif": "kropp.långväxt",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.långärmad.1",
    "kind": "illustration",
    "motif": "långärmad",
    "group": "överdel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lårben.1",
+   "kind": "illustration",
+   "motif": "kropp.lårben",
+   "group": "skelett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lårmuskel.1",
+   "kind": "illustration",
+   "motif": "kropp.lårmuskel",
+   "group": "ben",
    "quiz": true
   },
   {
@@ -850,6 +2557,24 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.lägga-märke-till.1",
+   "kind": "animation",
+   "animationId": "anim.lägga-märke-till.1",
+   "file": "anim.lagga-marke-till.1",
+   "group": "uppmärksamhet",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.lägga-sig-ner.1",
+   "kind": "animation",
+   "animationId": "anim.lägga-sig-ner.1",
+   "file": "anim.lagga-sig-ner.1",
+   "group": "hållning",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.lämna-över.1",
    "kind": "animation",
    "animationId": "anim.lämna-över.1",
@@ -860,6 +2585,56 @@
     "s.skicka.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.ländrygg.1",
+   "kind": "illustration",
+   "motif": "kropp.ländrygg",
+   "group": "bål-bak",
+   "quiz": true
+  },
+  {
+   "senseId": "s.läsglasögon.1",
+   "kind": "illustration",
+   "motif": "kropp.läsglasögon",
+   "group": "glasögon",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mager.2",
+   "kind": "illustration",
+   "motif": "kropp.mager.2",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.magmuskel.1",
+   "kind": "illustration",
+   "motif": "kropp.magmuskel",
+   "group": "muskler",
+   "quiz": true
+  },
+  {
+   "senseId": "s.magsyra.1",
+   "kind": "illustration",
+   "motif": "kropp.magsyra",
+   "group": "organ-sjukdom",
+   "quiz": false
+  },
+  {
+   "senseId": "s.magsår.1",
+   "kind": "illustration",
+   "motif": "kropp.magsår",
+   "group": "organ-sjukdom",
+   "quiz": false
+  },
+  {
+   "senseId": "s.magsäck.1",
+   "kind": "illustration",
+   "motif": "kropp.magsäck",
+   "group": "organ",
+   "quiz": true
   },
   {
    "senseId": "s.manchester.1",
@@ -888,6 +2663,63 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.matlukt.1",
+   "kind": "illustration",
+   "motif": "kropp.matlukt",
+   "group": "lukt",
+   "quiz": false
+  },
+  {
+   "senseId": "s.matstrupe.1",
+   "kind": "illustration",
+   "motif": "kropp.matstrupe",
+   "group": "organ",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mellangärde.1",
+   "kind": "illustration",
+   "motif": "kropp.mellangärde",
+   "group": "organ",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mellanöra.1",
+   "kind": "illustration",
+   "motif": "kropp.mellanöra",
+   "group": "öra-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.menisk.1",
+   "kind": "illustration",
+   "motif": "kropp.menisk",
+   "group": "knäled-diagram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mens.1",
+   "kind": "illustration",
+   "motif": "kropp.mens",
+   "group": "cykel",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.menscykel.1",
+   "kind": "illustration",
+   "motif": "kropp.menscykel",
+   "group": "cykel",
+   "quiz": false
+  },
+  {
+   "senseId": "s.midja.1",
+   "kind": "illustration",
+   "motif": "kropp.midja",
+   "group": "bål-fram",
+   "quiz": true
+  },
+  {
    "senseId": "s.minikjol.1",
    "kind": "illustration",
    "motif": "minikjol",
@@ -899,6 +2731,13 @@
    "kind": "illustration",
    "motif": "mjukisbyxor",
    "group": "byxor",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mjälte.1",
+   "kind": "illustration",
+   "motif": "kropp.mjälte",
+   "group": "organ",
    "quiz": true
   },
   {
@@ -975,11 +2814,47 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.mungipa.1",
+   "kind": "illustration",
+   "motif": "kropp.mungipa",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
    "senseId": "s.munkjacka.1",
    "kind": "illustration",
    "motif": "munkjacka",
    "group": "överdel",
    "quiz": true
+  },
+  {
+   "senseId": "s.muskelfäste.1",
+   "kind": "illustration",
+   "motif": "kropp.muskelfäste",
+   "group": "sena",
+   "quiz": true
+  },
+  {
+   "senseId": "s.muskelgrupp.1",
+   "kind": "illustration",
+   "motif": "kropp.muskelgrupp",
+   "group": "muskler",
+   "quiz": true
+  },
+  {
+   "senseId": "s.muskelmassa.1",
+   "kind": "illustration",
+   "motif": "kropp.muskelmassa",
+   "group": "muskler",
+   "quiz": true
+  },
+  {
+   "senseId": "s.muskulös.1",
+   "kind": "illustration",
+   "motif": "kropp.muskulös",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
   },
   {
    "senseId": "s.mysbyxor.1",
@@ -1003,6 +2878,21 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.mörkhårig.1",
+   "kind": "illustration",
+   "motif": "kropp.mörkhårig",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.nacke.1",
+   "kind": "illustration",
+   "motif": "kropp.nacke",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
    "senseId": "s.nattlinne.1",
    "kind": "illustration",
    "motif": "nattlinne",
@@ -1011,6 +2901,92 @@
    "confusableWith": [
     "s.pyjamas.1"
    ]
+  },
+  {
+   "senseId": "s.navel.1",
+   "kind": "illustration",
+   "motif": "kropp.navel",
+   "group": "bål-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nerv.1",
+   "kind": "illustration",
+   "motif": "kropp.nerv",
+   "group": "nerver",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nervcell.1",
+   "kind": "illustration",
+   "motif": "kropp.nervcell",
+   "group": "nerver",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nervsystem.1",
+   "kind": "illustration",
+   "motif": "kropp.nervsystem",
+   "group": "nerver",
+   "quiz": true
+  },
+  {
+   "senseId": "s.njure.1",
+   "kind": "illustration",
+   "motif": "kropp.njure",
+   "group": "urinvägar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.njursten.1",
+   "kind": "illustration",
+   "motif": "kropp.njursten",
+   "group": "urinvägar",
+   "quiz": false
+  },
+  {
+   "senseId": "s.njursvikt.1",
+   "kind": "illustration",
+   "motif": "kropp.njursvikt",
+   "group": "urinvägar",
+   "quiz": false
+  },
+  {
+   "senseId": "s.nyckelben.1",
+   "kind": "illustration",
+   "motif": "kropp.nyckelben",
+   "group": "skelett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nysa.1",
+   "kind": "animation",
+   "animationId": "anim.nysa.1",
+   "file": "anim.nysa.1",
+   "group": "kroppsljud",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.näsborre.1",
+   "kind": "illustration",
+   "motif": "kropp.näsborre",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.näsrygg.1",
+   "kind": "illustration",
+   "motif": "kropp.näsrygg",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.näthinna.1",
+   "kind": "illustration",
+   "motif": "kropp.näthinna",
+   "group": "öga-snitt",
+   "quiz": true
   },
   {
    "senseId": "s.omklädningsrum.1",
@@ -1051,6 +3027,13 @@
    "quiz": true
   },
   {
+   "senseId": "s.pacemaker.1",
+   "kind": "illustration",
+   "motif": "kropp.pacemaker",
+   "group": "hjärta",
+   "quiz": true
+  },
+  {
    "senseId": "s.pannband.1",
    "kind": "illustration",
    "motif": "pannband",
@@ -1066,11 +3049,84 @@
    "symbol": true
   },
   {
+   "senseId": "s.pekfinger.1",
+   "kind": "illustration",
+   "motif": "kropp.pekfinger",
+   "group": "finger",
+   "quiz": true
+  },
+  {
+   "senseId": "s.penis.1",
+   "kind": "illustration",
+   "motif": "kropp.penis",
+   "group": "könsorgan",
+   "quiz": true
+  },
+  {
+   "senseId": "s.pilla.1",
+   "kind": "animation",
+   "animationId": "anim.pilla.1",
+   "file": "anim.pilla.1",
+   "group": "grepp",
+   "quiz": false,
+   "confusableWith": [
+    "s.fingra-på.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.plattfot.1",
+   "kind": "illustration",
+   "motif": "kropp.plattfot",
+   "group": "fot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.plocka-upp.1",
+   "kind": "animation",
+   "animationId": "anim.plocka-upp.1",
+   "file": "anim.plocka-upp.1",
+   "group": "grepp",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.polotröja.1",
    "kind": "illustration",
    "motif": "polotröja",
    "group": "överdel",
    "quiz": true
+  },
+  {
+   "senseId": "s.pulsåder.1",
+   "kind": "illustration",
+   "motif": "kropp.pulsåder",
+   "group": "kärl",
+   "quiz": false,
+   "confusableWith": [
+    "s.blodkärl.1",
+    "s.åder.1",
+    "s.ven.1"
+   ]
+  },
+  {
+   "senseId": "s.pupill.1",
+   "kind": "illustration",
+   "motif": "kropp.pupill",
+   "group": "öga-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.putta.1",
+   "kind": "animation",
+   "animationId": "anim.putta.1",
+   "file": "anim.putta.1",
+   "group": "kraft",
+   "quiz": false,
+   "confusableWith": [
+    "s.knuffa.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.pyjamas.1",
@@ -1083,11 +3139,28 @@
    ]
   },
   {
+   "senseId": "s.på-tå.1",
+   "kind": "illustration",
+   "motif": "kropp.på-tå",
+   "group": "fotsymbol",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.raggsocka.1",
    "kind": "illustration",
    "motif": "raggsocka",
    "group": "strumpor",
    "quiz": true
+  },
+  {
+   "senseId": "s.rapa.1",
+   "kind": "animation",
+   "animationId": "anim.rapa.1",
+   "file": "anim.rapa.1",
+   "group": "kroppsljud",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.reflex.1",
@@ -1108,6 +3181,15 @@
    "confusableWith": [
     "s.reflex.1"
    ]
+  },
+  {
+   "senseId": "s.reglera.1",
+   "kind": "animation",
+   "animationId": "anim.reglera.1",
+   "file": "anim.reglera.1",
+   "group": "process",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.regnbyxor.1",
@@ -1143,6 +3225,35 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.resa-sig.1",
+   "kind": "animation",
+   "animationId": "anim.resa-sig.1",
+   "file": "anim.resa-sig.1",
+   "group": "hållning",
+   "quiz": false,
+   "confusableWith": [
+    "s.ställa-sig-upp.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.revben.1",
+   "kind": "illustration",
+   "motif": "kropp.revben",
+   "group": "skelett",
+   "quiz": true,
+   "confusableWith": [
+    "s.bröstkorg.1"
+   ]
+  },
+  {
+   "senseId": "s.ringfinger.1",
+   "kind": "illustration",
+   "motif": "kropp.ringfinger",
+   "group": "finger",
+   "quiz": true
+  },
+  {
    "senseId": "s.rinna.1",
    "kind": "animation",
    "animationId": "anim.rinna.1",
@@ -1166,6 +3277,41 @@
     "s.hacka.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.rodna.1",
+   "kind": "illustration",
+   "motif": "kropp.rodna",
+   "group": "ansiktshud",
+   "quiz": false
+  },
+  {
+   "senseId": "s.rotera.1",
+   "kind": "animation",
+   "animationId": "anim.rotera.1",
+   "file": "anim.rotera.1",
+   "group": "rörelse",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.rulla-med-axlarna.1",
+   "kind": "animation",
+   "animationId": "anim.rulla-med-axlarna.1",
+   "file": "anim.rulla-med-axlarna.1",
+   "group": "rörelse",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.rumpa.1",
+   "kind": "illustration",
+   "motif": "kropp.rumpa",
+   "group": "bål-bak",
+   "quiz": true,
+   "confusableWith": [
+    "s.stjärt.1"
+   ]
   },
   {
    "senseId": "s.rusa.1",
@@ -1194,6 +3340,112 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.rycka-på-axlarna.1",
+   "kind": "animation",
+   "animationId": "anim.rycka-på-axlarna.1",
+   "file": "anim.rycka-pa-axlarna.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.rycka.1",
+   "kind": "animation",
+   "animationId": "anim.rycka.1",
+   "file": "anim.rycka.1",
+   "group": "kraft",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.ryggmuskel.1",
+   "kind": "illustration",
+   "motif": "kropp.ryggmuskel",
+   "group": "muskler",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ryggmärg.1",
+   "kind": "illustration",
+   "motif": "kropp.ryggmärg",
+   "group": "nerver",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ryggrad.1",
+   "kind": "illustration",
+   "motif": "kropp.ryggrad",
+   "group": "skelett",
+   "quiz": true,
+   "confusableWith": [
+    "s.kota.1"
+   ]
+  },
+  {
+   "senseId": "s.rynka-pannan.1",
+   "kind": "animation",
+   "animationId": "anim.rynka-pannan.1",
+   "file": "anim.rynka-pannan.1",
+   "group": "min",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.rynka-på-näsan.1",
+   "kind": "animation",
+   "animationId": "anim.rynka-på-näsan.1",
+   "file": "anim.rynka-pa-nasan.1",
+   "group": "min",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.rynkig.1",
+   "kind": "illustration",
+   "motif": "kropp.rynkig",
+   "group": "ansiktshud",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.räcka-upp-handen.1",
+   "kind": "animation",
+   "animationId": "anim.räcka-upp-handen.1",
+   "file": "anim.racka-upp-handen.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.rödhårig.1",
+   "kind": "illustration",
+   "motif": "kropp.rödhårig",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.röra-på-sig.1",
+   "kind": "animation",
+   "animationId": "anim.röra-på-sig.1",
+   "file": "anim.rora-pa-sig.1",
+   "group": "rörelse",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.röra-vid.1",
+   "kind": "animation",
+   "animationId": "anim.röra-vid.1",
+   "file": "anim.rora-vid.1",
+   "group": "känsel",
+   "quiz": false,
+   "confusableWith": [
+    "s.beröra.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.röra.1",
    "kind": "animation",
    "animationId": "anim.röra.1",
@@ -1218,6 +3470,20 @@
     "s.krydda.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.sena.1",
+   "kind": "illustration",
+   "motif": "kropp.sena",
+   "group": "sena",
+   "quiz": true
+  },
+  {
+   "senseId": "s.senskida.1",
+   "kind": "illustration",
+   "motif": "kropp.senskida",
+   "group": "sena",
+   "quiz": true
   },
   {
    "senseId": "s.servera.1",
@@ -1253,6 +3519,33 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.sjunka-ihop.1",
+   "kind": "animation",
+   "animationId": "anim.sjunka-ihop.1",
+   "file": "anim.sjunka-ihop.1",
+   "group": "hållning",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.skaka-hand.1",
+   "kind": "animation",
+   "animationId": "anim.skaka-hand.1",
+   "file": "anim.skaka-hand.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.skaka-på-huvudet.1",
+   "kind": "animation",
+   "animationId": "anim.skaka-på-huvudet.1",
+   "file": "anim.skaka-pa-huvudet.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.skala.1",
    "kind": "animation",
    "animationId": "anim.skala.1",
@@ -1263,6 +3556,27 @@
     "s.skära.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.skalle.1",
+   "kind": "illustration",
+   "motif": "kropp.skalle",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skelett.1",
+   "kind": "illustration",
+   "motif": "kropp.skelett",
+   "group": "skelett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skenben.1",
+   "kind": "illustration",
+   "motif": "kropp.skenben",
+   "group": "skelett",
+   "quiz": true
   },
   {
    "senseId": "s.skjorta.1",
@@ -1284,6 +3598,32 @@
     "s.dräkt.1",
     "s.slips.1"
    ]
+  },
+  {
+   "senseId": "s.skrika.1",
+   "kind": "animation",
+   "animationId": "anim.skrika.1",
+   "file": "anim.skrika.1",
+   "group": "tal",
+   "quiz": false,
+   "confusableWith": [
+    "s.viska.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.skrumplever.1",
+   "kind": "illustration",
+   "motif": "kropp.skrumplever",
+   "group": "organ-sjukdom",
+   "quiz": false
+  },
+  {
+   "senseId": "s.skulderblad.1",
+   "kind": "illustration",
+   "motif": "kropp.skulderblad",
+   "group": "bål-bak",
+   "quiz": true
   },
   {
    "senseId": "s.skvätta.1",
@@ -1348,6 +3688,13 @@
    "fallbackMotif": "slappa"
   },
   {
+   "senseId": "s.slida.1",
+   "kind": "illustration",
+   "motif": "kropp.slida",
+   "group": "könsorgan",
+   "quiz": true
+  },
+  {
    "senseId": "s.slips.1",
    "kind": "illustration",
    "motif": "slips",
@@ -1356,6 +3703,18 @@
    "confusableWith": [
     "s.knyta.1"
    ]
+  },
+  {
+   "senseId": "s.slumra.1",
+   "kind": "animation",
+   "animationId": "anim.slumra.1",
+   "file": "anim.slumra.1",
+   "group": "sömn",
+   "quiz": false,
+   "confusableWith": [
+    "s.sova-som-en-stock.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.släcka.1",
@@ -1370,6 +3729,27 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.släppa-sig.1",
+   "kind": "animation",
+   "animationId": "anim.släppa-sig.1",
+   "file": "anim.slappa-sig.1",
+   "group": "kroppsljud",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.släppa-taget.1",
+   "kind": "animation",
+   "animationId": "anim.släppa-taget.1",
+   "file": "anim.slappa-taget.1",
+   "group": "grepp",
+   "quiz": false,
+   "confusableWith": [
+    "s.glippa.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.slö.1",
    "kind": "animation",
    "animationId": "anim.slö.1",
@@ -1380,6 +3760,48 @@
     "s.vass.1",
     "s.försiktig.1",
     "s.grov.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.smaksinne.1",
+   "kind": "illustration",
+   "motif": "kropp.smaksinne",
+   "group": "smak",
+   "quiz": false
+  },
+  {
+   "senseId": "s.smalben.1",
+   "kind": "illustration",
+   "motif": "kropp.smalben",
+   "group": "ben",
+   "quiz": true
+  },
+  {
+   "senseId": "s.smeka.1",
+   "kind": "animation",
+   "animationId": "anim.smeka.1",
+   "file": "anim.smeka.1",
+   "group": "beröring",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.smilgrop.1",
+   "kind": "illustration",
+   "motif": "kropp.smilgrop",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.smitta.1",
+   "kind": "animation",
+   "animationId": "anim.smitta.1",
+   "file": "anim.smitta.1",
+   "group": "sjukdom",
+   "quiz": false,
+   "confusableWith": [
+    "s.dra-på-sig.1"
    ],
    "reviewStatus": "ai-draft"
   },
@@ -1414,6 +3836,52 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.snegla.1",
+   "kind": "animation",
+   "animationId": "anim.snegla.1",
+   "file": "anim.snegla.1",
+   "group": "blick",
+   "quiz": false,
+   "confusableWith": [
+    "s.stirra.1",
+    "s.blänga.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.sniffa.1",
+   "kind": "animation",
+   "animationId": "anim.sniffa.1",
+   "file": "anim.sniffa.1",
+   "group": "lukt",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.snubbla.1",
+   "kind": "animation",
+   "animationId": "anim.snubbla.1",
+   "file": "anim.snubbla.1",
+   "group": "balans",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.snäcka.1",
+   "kind": "illustration",
+   "motif": "kropp.snäcka",
+   "group": "öra-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.solbränd.1",
+   "kind": "illustration",
+   "motif": "kropp.solbränd",
+   "group": "ansiktshud",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.sommarklänning.1",
    "kind": "illustration",
    "motif": "sommarklänning",
@@ -1433,6 +3901,25 @@
     "s.våttorka.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.sova-som-en-stock.1",
+   "kind": "animation",
+   "animationId": "anim.sova-som-en-stock.1",
+   "file": "anim.sova-som-en-stock.1",
+   "group": "sömn",
+   "quiz": false,
+   "confusableWith": [
+    "s.slumra.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.spermie.1",
+   "kind": "illustration",
+   "motif": "kropp.spermie",
+   "group": "celler",
+   "quiz": true
   },
   {
    "senseId": "s.sportbh.1",
@@ -1468,6 +3955,22 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.spänna.1",
+   "kind": "animation",
+   "animationId": "anim.spänna.1",
+   "file": "anim.spanna.1",
+   "group": "muskler",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.stank.1",
+   "kind": "illustration",
+   "motif": "kropp.stank",
+   "group": "lukt",
+   "quiz": false
+  },
+  {
    "senseId": "s.stappla.1",
    "kind": "animation",
    "animationId": "anim.stappla.1",
@@ -1491,6 +3994,23 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.sticka-sig.1",
+   "kind": "animation",
+   "animationId": "anim.sticka-sig.1",
+   "file": "anim.sticka-sig.1",
+   "group": "smärta",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.stickig.1",
+   "kind": "illustration",
+   "motif": "kropp.stickig",
+   "group": "känsel",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.stilig.1",
    "kind": "illustration",
    "motif": "stilig",
@@ -1499,11 +4019,70 @@
    "symbol": true
   },
   {
+   "senseId": "s.stirra.1",
+   "kind": "animation",
+   "animationId": "anim.stirra.1",
+   "file": "anim.stirra.1",
+   "group": "blick",
+   "quiz": false,
+   "confusableWith": [
+    "s.snegla.1",
+    "s.blänga.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.stjärt.1",
+   "kind": "illustration",
+   "motif": "kropp.rumpa",
+   "group": "bål-bak",
+   "quiz": false,
+   "confusableWith": [
+    "s.rumpa.1"
+   ]
+  },
+  {
    "senseId": "s.stoppa-in.1",
    "kind": "illustration",
    "motif": "stoppa in",
    "group": "handling",
    "quiz": true
+  },
+  {
+   "senseId": "s.storhjärna.1",
+   "kind": "illustration",
+   "motif": "kropp.storhjärna",
+   "group": "hjärna",
+   "quiz": true,
+   "confusableWith": [
+    "s.hjärnhalva.1"
+   ]
+  },
+  {
+   "senseId": "s.stortå.1",
+   "kind": "illustration",
+   "motif": "kropp.stortå",
+   "group": "fot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.stretcha.1",
+   "kind": "animation",
+   "animationId": "anim.stretcha.1",
+   "file": "anim.stretcha.1",
+   "group": "träning",
+   "quiz": false,
+   "confusableWith": [
+    "s.töja.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.stroke.1",
+   "kind": "illustration",
+   "motif": "kropp.stroke",
+   "group": "hjärnskada",
+   "quiz": false
   },
   {
    "senseId": "s.strumpa.1",
@@ -1523,6 +4102,13 @@
    ]
   },
   {
+   "senseId": "s.struphuvud.1",
+   "kind": "illustration",
+   "motif": "kropp.struphuvud",
+   "group": "hals",
+   "quiz": true
+  },
+  {
    "senseId": "s.stryka.1",
    "kind": "animation",
    "animationId": "anim.stryka.1",
@@ -1535,6 +4121,151 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.sträcka-på-benen.1",
+   "kind": "animation",
+   "animationId": "anim.sträcka-på-benen.1",
+   "file": "anim.stracka-pa-benen.1",
+   "group": "rörelse",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.sträcka-ut.1",
+   "kind": "animation",
+   "animationId": "anim.sträcka-ut.1",
+   "file": "anim.stracka-ut.1",
+   "group": "hållning",
+   "quiz": false,
+   "confusableWith": [
+    "s.sträcka-verb.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.sträcka-verb.1",
+   "kind": "animation",
+   "animationId": "anim.sträcka-verb.1",
+   "file": "anim.stracka-verb.1",
+   "group": "hållning",
+   "quiz": false,
+   "confusableWith": [
+    "s.sträcka-ut.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.ställa-ner.1",
+   "kind": "animation",
+   "animationId": "anim.ställa-ner.1",
+   "file": "anim.stalla-ner.1",
+   "group": "lyft",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.ställa-sig-upp.1",
+   "kind": "animation",
+   "animationId": "anim.ställa-sig-upp.1",
+   "file": "anim.stalla-sig-upp.1",
+   "group": "hållning",
+   "quiz": false,
+   "confusableWith": [
+    "s.resa-sig.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.stämband.1",
+   "kind": "illustration",
+   "motif": "kropp.stämband",
+   "group": "hals",
+   "quiz": true
+  },
+  {
+   "senseId": "s.suddig.1",
+   "kind": "illustration",
+   "motif": "kropp.suddig",
+   "group": "syntavla",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.susa.1",
+   "kind": "animation",
+   "animationId": "anim.susa.1",
+   "file": "anim.susa.1",
+   "group": "ljud",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.svalg.1",
+   "kind": "illustration",
+   "motif": "kropp.svalg",
+   "group": "hals",
+   "quiz": true
+  },
+  {
+   "senseId": "s.svalka-sig.1",
+   "kind": "animation",
+   "animationId": "anim.svalka-sig.1",
+   "file": "anim.svalka-sig.1",
+   "group": "temperatur",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.svank.1",
+   "kind": "illustration",
+   "motif": "kropp.svank",
+   "group": "bål-bak",
+   "quiz": true
+  },
+  {
+   "senseId": "s.svanskota.1",
+   "kind": "illustration",
+   "motif": "kropp.svanskota",
+   "group": "skelett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.svimma.1",
+   "kind": "animation",
+   "animationId": "anim.svimma.1",
+   "file": "anim.svimma.1",
+   "group": "kropp",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.synfel.1",
+   "kind": "illustration",
+   "motif": "kropp.synfel",
+   "group": "syntavla",
+   "quiz": false
+  },
+  {
+   "senseId": "s.synnerv.1",
+   "kind": "illustration",
+   "motif": "kropp.synnerv",
+   "group": "öga-snitt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.synundersökning.1",
+   "kind": "illustration",
+   "motif": "kropp.synundersökning",
+   "group": "syntavla",
+   "quiz": false
+  },
+  {
+   "senseId": "s.sätesmuskel.1",
+   "kind": "illustration",
+   "motif": "kropp.sätesmuskel",
+   "group": "muskler",
+   "quiz": true
+  },
+  {
    "senseId": "s.sätta-på-sig.1",
    "kind": "animation",
    "animationId": "anim.sätta-på-sig.1",
@@ -1543,6 +4274,18 @@
    "quiz": false,
    "confusableWith": [
     "s.ta-på-sig.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.sätta-sig-på-huk.1",
+   "kind": "animation",
+   "animationId": "anim.sätta-sig-på-huk.1",
+   "file": "anim.satta-sig-pa-huk.1",
+   "group": "hållning",
+   "quiz": false,
+   "confusableWith": [
+    "s.huka-sig.1"
    ],
    "reviewStatus": "ai-draft"
   },
@@ -1582,6 +4325,33 @@
    "fallbackMotif": "ta på sig"
   },
   {
+   "senseId": "s.tappa-balansen.1",
+   "kind": "animation",
+   "animationId": "anim.tappa-balansen.1",
+   "file": "anim.tappa-balansen.1",
+   "group": "balans",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.tarm.1",
+   "kind": "illustration",
+   "motif": "kropp.tarm",
+   "group": "organ",
+   "quiz": true,
+   "confusableWith": [
+    "s.tunntarm.1",
+    "s.tjocktarm.1"
+   ]
+  },
+  {
+   "senseId": "s.tarmflora.1",
+   "kind": "illustration",
+   "motif": "kropp.tarmflora",
+   "group": "organ-sjukdom",
+   "quiz": false
+  },
+  {
    "senseId": "s.tassa.1",
    "kind": "animation",
    "animationId": "anim.tassa.1",
@@ -1591,12 +4361,51 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.tennisarmbåge.1",
+   "kind": "illustration",
+   "motif": "kropp.tennisarmbåge",
+   "group": "arm",
+   "quiz": true
+  },
+  {
+   "senseId": "s.testikel.1",
+   "kind": "illustration",
+   "motif": "kropp.testikel",
+   "group": "könsorgan",
+   "quiz": true
+  },
+  {
    "senseId": "s.tidlös.1",
    "kind": "illustration",
    "motif": "tidlös",
    "group": "stil",
    "quiz": false,
    "symbol": true
+  },
+  {
+   "senseId": "s.tinning.1",
+   "kind": "illustration",
+   "motif": "kropp.tinning",
+   "group": "huvud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tinnitus.1",
+   "kind": "illustration",
+   "motif": "kropp.tinnitus",
+   "group": "hörsel",
+   "quiz": false
+  },
+  {
+   "senseId": "s.tjocktarm.1",
+   "kind": "illustration",
+   "motif": "kropp.tjocktarm",
+   "group": "organ",
+   "quiz": true,
+   "confusableWith": [
+    "s.tarm.1",
+    "s.tunntarm.1"
+   ]
   },
   {
    "senseId": "s.topp.1",
@@ -1612,6 +4421,18 @@
    "file": "anim.trampa.1",
    "group": "rörelse",
    "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.transpirera.1",
+   "kind": "animation",
+   "animationId": "anim.transpirera.1",
+   "file": "anim.transpirera.1",
+   "group": "temperatur",
+   "quiz": false,
+   "confusableWith": [
+    "s.kallsvettas.1"
+   ],
    "reviewStatus": "ai-draft"
   },
   {
@@ -1632,10 +4453,24 @@
    "symbol": true
   },
   {
+   "senseId": "s.triceps.1",
+   "kind": "illustration",
+   "motif": "kropp.triceps",
+   "group": "arm",
+   "quiz": true
+  },
+  {
    "senseId": "s.trosor.1",
    "kind": "illustration",
    "motif": "trosor",
    "group": "underkläder",
+   "quiz": true
+  },
+  {
+   "senseId": "s.trumhinna.1",
+   "kind": "illustration",
+   "motif": "kropp.trumhinna",
+   "group": "öra-snitt",
    "quiz": true
   },
   {
@@ -1665,11 +4500,63 @@
    ]
   },
   {
+   "senseId": "s.tunntarm.1",
+   "kind": "illustration",
+   "motif": "kropp.tunntarm",
+   "group": "organ",
+   "quiz": true,
+   "confusableWith": [
+    "s.tarm.1",
+    "s.tjocktarm.1"
+   ]
+  },
+  {
+   "senseId": "s.tå.1",
+   "kind": "illustration",
+   "motif": "kropp.tå",
+   "group": "fot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tårkanal.1",
+   "kind": "illustration",
+   "motif": "kropp.tårkanal",
+   "group": "öga-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tårvätska.1",
+   "kind": "illustration",
+   "motif": "kropp.tårvätska",
+   "group": "öga-fram",
+   "quiz": false
+  },
+  {
    "senseId": "s.täckjacka.1",
    "kind": "illustration",
    "motif": "täckjacka",
    "group": "jacka",
    "quiz": true
+  },
+  {
+   "senseId": "s.täppt.1",
+   "kind": "illustration",
+   "motif": "kropp.täppt",
+   "group": "lukt",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.töja.1",
+   "kind": "animation",
+   "animationId": "anim.töja.1",
+   "file": "anim.toja.1",
+   "group": "träning",
+   "quiz": false,
+   "confusableWith": [
+    "s.stretcha.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.udda.1",
@@ -1679,11 +4566,46 @@
    "quiz": true
   },
   {
+   "senseId": "s.underarm.1",
+   "kind": "illustration",
+   "motif": "kropp.underarm",
+   "group": "arm",
+   "quiz": true
+  },
+  {
    "senseId": "s.underkläder.1",
    "kind": "illustration",
    "motif": "underkläder",
    "group": "underkläder",
    "quiz": false
+  },
+  {
+   "senseId": "s.underkropp.1",
+   "kind": "illustration",
+   "motif": "kropp.underkropp",
+   "group": "bål-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.urinblåsa.1",
+   "kind": "illustration",
+   "motif": "kropp.urinblåsa",
+   "group": "urinvägar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.urinledare.1",
+   "kind": "illustration",
+   "motif": "kropp.urinledare",
+   "group": "urinvägar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.urinrör.1",
+   "kind": "illustration",
+   "motif": "kropp.urinrör",
+   "group": "urinvägar",
+   "quiz": true
   },
   {
    "senseId": "s.ursäkta.1",
@@ -1698,12 +4620,46 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.utseende.1",
+   "kind": "illustration",
+   "motif": "kropp.utseende",
+   "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.uttrycka.1",
    "kind": "illustration",
    "motif": "uttrycka",
    "group": "stil",
    "quiz": false,
    "symbol": true
+  },
+  {
+   "senseId": "s.vaccinera.1",
+   "kind": "animation",
+   "animationId": "anim.vaccinera.1",
+   "file": "anim.vaccinera.1",
+   "group": "vård",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.vad-kropp.1",
+   "kind": "illustration",
+   "motif": "kropp.vad",
+   "group": "ben",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vadmuskel.1",
+   "kind": "illustration",
+   "motif": "kropp.vadmuskel",
+   "group": "ben",
+   "quiz": true,
+   "confusableWith": [
+    "s.vad-kropp.1"
+   ]
   },
   {
    "senseId": "s.varna.1",
@@ -1732,6 +4688,39 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.ven.1",
+   "kind": "illustration",
+   "motif": "kropp.ven",
+   "group": "kärl",
+   "quiz": false,
+   "confusableWith": [
+    "s.blodkärl.1",
+    "s.åder.1",
+    "s.pulsåder.1"
+   ]
+  },
+  {
+   "senseId": "s.vicka.1",
+   "kind": "animation",
+   "animationId": "anim.vicka.1",
+   "file": "anim.vicka.1",
+   "group": "rörelse",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.vifta.1",
+   "kind": "animation",
+   "animationId": "anim.vifta.1",
+   "file": "anim.vifta.1",
+   "group": "gest",
+   "quiz": false,
+   "confusableWith": [
+    "s.vinka.1"
+   ],
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.vika.1",
    "kind": "animation",
    "animationId": "anim.vika.1",
@@ -1745,11 +4734,32 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.vinka.1",
+   "kind": "animation",
+   "animationId": "anim.vinka.1",
+   "file": "anim.vinka.1",
+   "group": "gest",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.vinterjacka.1",
    "kind": "illustration",
    "motif": "vinterjacka",
    "group": "jacka",
    "quiz": true
+  },
+  {
+   "senseId": "s.viska.1",
+   "kind": "animation",
+   "animationId": "anim.viska.1",
+   "file": "anim.viska.1",
+   "group": "tal",
+   "quiz": false,
+   "confusableWith": [
+    "s.skrika.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.vispa.1",
@@ -1763,6 +4773,49 @@
     "s.blanda.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.vricka.1",
+   "kind": "animation",
+   "animationId": "anim.vricka.1",
+   "file": "anim.vricka.1",
+   "group": "skada",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.vrida-och-vända-sig.1",
+   "kind": "animation",
+   "animationId": "anim.vrida-och-vända-sig.1",
+   "file": "anim.vrida-och-vanda-sig.1",
+   "group": "sömn",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.vrida-om.1",
+   "kind": "animation",
+   "animationId": "anim.vrida-om.1",
+   "file": "anim.vrida-om.1",
+   "group": "grepp",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.vrida-på-huvudet.1",
+   "kind": "animation",
+   "animationId": "anim.vrida-på-huvudet.1",
+   "file": "anim.vrida-pa-huvudet.1",
+   "group": "huvud",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.vrist.1",
+   "kind": "illustration",
+   "motif": "kropp.vrist",
+   "group": "ben",
+   "quiz": true
   },
   {
    "senseId": "s.vårjacka.1",
@@ -1793,224 +4846,6 @@
    "reviewStatus": "ai-draft"
   },
   {
-   "senseId": "s.ytterkläder.1",
-   "kind": "illustration",
-   "motif": "ytterkläder",
-   "group": "jacka",
-   "quiz": false
-  },
-  {
-   "senseId": "s.ärm.1",
-   "kind": "illustration",
-   "motif": "ärm",
-   "group": "detalj",
-   "quiz": false
-  },
-  {
-   "senseId": "s.skalle.1",
-   "kind": "illustration",
-   "motif": "kropp.skalle",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.hjässa.1",
-   "kind": "illustration",
-   "motif": "kropp.hjässa",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.bakhuvud.1",
-   "kind": "illustration",
-   "motif": "kropp.bakhuvud",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.tinning.1",
-   "kind": "illustration",
-   "motif": "kropp.tinning",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.nacke.1",
-   "kind": "illustration",
-   "motif": "kropp.nacke",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.haka.1",
-   "kind": "illustration",
-   "motif": "kropp.haka",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.käke.1",
-   "kind": "illustration",
-   "motif": "kropp.käke",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ögonbryn.1",
-   "kind": "illustration",
-   "motif": "kropp.ögonbryn",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ögonfrans.1",
-   "kind": "illustration",
-   "motif": "kropp.ögonfrans",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ögonlock.1",
-   "kind": "illustration",
-   "motif": "kropp.ögonlock",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.näsrygg.1",
-   "kind": "illustration",
-   "motif": "kropp.näsrygg",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.näsborre.1",
-   "kind": "illustration",
-   "motif": "kropp.näsborre",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.mungipa.1",
-   "kind": "illustration",
-   "motif": "kropp.mungipa",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.smilgrop.1",
-   "kind": "illustration",
-   "motif": "kropp.smilgrop",
-   "group": "huvud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ansiktsdrag.1",
-   "kind": "illustration",
-   "motif": "kropp.ansiktsdrag",
-   "group": "huvud",
-   "quiz": false
-  },
-  {
-   "senseId": "s.överarm.1",
-   "kind": "illustration",
-   "motif": "kropp.överarm",
-   "group": "arm",
-   "quiz": true
-  },
-  {
-   "senseId": "s.underarm.1",
-   "kind": "illustration",
-   "motif": "kropp.underarm",
-   "group": "arm",
-   "quiz": true
-  },
-  {
-   "senseId": "s.armhåla.1",
-   "kind": "illustration",
-   "motif": "kropp.armhåla",
-   "group": "arm",
-   "quiz": true
-  },
-  {
-   "senseId": "s.handled.1",
-   "kind": "illustration",
-   "motif": "kropp.handled",
-   "group": "hand",
-   "quiz": true
-  },
-  {
-   "senseId": "s.handflata.1",
-   "kind": "illustration",
-   "motif": "kropp.handflata",
-   "group": "hand",
-   "quiz": true
-  },
-  {
-   "senseId": "s.handrygg.1",
-   "kind": "illustration",
-   "motif": "kropp.handrygg",
-   "group": "hand",
-   "quiz": true
-  },
-  {
-   "senseId": "s.knoge.1",
-   "kind": "illustration",
-   "motif": "kropp.knoge",
-   "group": "hand",
-   "quiz": true
-  },
-  {
-   "senseId": "s.knytnäve.1",
-   "kind": "illustration",
-   "motif": "kropp.knytnäve",
-   "group": "hand",
-   "quiz": true
-  },
-  {
-   "senseId": "s.fingertopp.1",
-   "kind": "illustration",
-   "motif": "kropp.fingertopp",
-   "group": "hand",
-   "quiz": true
-  },
-  {
-   "senseId": "s.pekfinger.1",
-   "kind": "illustration",
-   "motif": "kropp.pekfinger",
-   "group": "finger",
-   "quiz": true
-  },
-  {
-   "senseId": "s.långfinger.1",
-   "kind": "illustration",
-   "motif": "kropp.långfinger",
-   "group": "finger",
-   "quiz": true
-  },
-  {
-   "senseId": "s.lillfinger.1",
-   "kind": "illustration",
-   "motif": "kropp.lillfinger",
-   "group": "finger",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ringfinger.1",
-   "kind": "illustration",
-   "motif": "kropp.ringfinger",
-   "group": "finger",
-   "quiz": true
-  },
-  {
-   "senseId": "s.högerhänt.1",
-   "kind": "illustration",
-   "motif": "kropp.högerhänt",
-   "group": "handskrift",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.vänsterhänt.1",
    "kind": "illustration",
    "motif": "kropp.vänsterhänt",
@@ -2019,819 +4854,30 @@
    "symbol": true
   },
   {
-   "senseId": "s.tå.1",
-   "kind": "illustration",
-   "motif": "kropp.tå",
-   "group": "fot",
-   "quiz": true
-  },
-  {
-   "senseId": "s.stortå.1",
-   "kind": "illustration",
-   "motif": "kropp.stortå",
-   "group": "fot",
-   "quiz": true
-  },
-  {
-   "senseId": "s.lilltå.1",
-   "kind": "illustration",
-   "motif": "kropp.lilltå",
-   "group": "fot",
-   "quiz": true
-  },
-  {
-   "senseId": "s.häl.1",
-   "kind": "illustration",
-   "motif": "kropp.häl",
-   "group": "fot",
-   "quiz": true
-  },
-  {
-   "senseId": "s.fotsula.1",
-   "kind": "illustration",
-   "motif": "kropp.fotsula",
-   "group": "fot",
-   "quiz": true
-  },
-  {
-   "senseId": "s.fotvalv.1",
-   "kind": "illustration",
-   "motif": "kropp.fotvalv",
-   "group": "fot",
-   "quiz": true
-  },
-  {
-   "senseId": "s.plattfot.1",
-   "kind": "illustration",
-   "motif": "kropp.plattfot",
-   "group": "fot",
-   "quiz": true
-  },
-  {
-   "senseId": "s.fotled.1",
-   "kind": "illustration",
-   "motif": "kropp.fotled",
-   "group": "ben",
-   "quiz": true
-  },
-  {
-   "senseId": "s.vrist.1",
-   "kind": "illustration",
-   "motif": "kropp.vrist",
-   "group": "ben",
-   "quiz": true
-  },
-  {
-   "senseId": "s.smalben.1",
-   "kind": "illustration",
-   "motif": "kropp.smalben",
-   "group": "ben",
-   "quiz": true
-  },
-  {
-   "senseId": "s.vad-kropp.1",
-   "kind": "illustration",
-   "motif": "kropp.vad",
-   "group": "ben",
-   "quiz": true
-  },
-  {
-   "senseId": "s.knäskål.1",
-   "kind": "illustration",
-   "motif": "kropp.knäskål",
-   "group": "ben",
-   "quiz": true
-  },
-  {
-   "senseId": "s.knäveck.1",
-   "kind": "illustration",
-   "motif": "kropp.knäveck",
-   "group": "ben",
-   "quiz": true
-  },
-  {
-   "senseId": "s.barfota.1",
-   "kind": "illustration",
-   "motif": "kropp.barfota",
-   "group": "fotsymbol",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.på-tå.1",
-   "kind": "illustration",
-   "motif": "kropp.på-tå",
-   "group": "fotsymbol",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.bröst.1",
-   "kind": "illustration",
-   "motif": "kropp.bröst",
-   "group": "bål-fram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.höft.1",
-   "kind": "illustration",
-   "motif": "kropp.höft",
-   "group": "bål-fram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.midja.1",
-   "kind": "illustration",
-   "motif": "kropp.midja",
-   "group": "bål-fram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.överkropp.1",
-   "kind": "illustration",
-   "motif": "kropp.överkropp",
-   "group": "bål-fram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.underkropp.1",
-   "kind": "illustration",
-   "motif": "kropp.underkropp",
-   "group": "bål-fram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.navel.1",
-   "kind": "illustration",
-   "motif": "kropp.navel",
-   "group": "bål-fram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.buk.1",
-   "kind": "illustration",
-   "motif": "kropp.buk",
-   "group": "bål-fram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ljumske.1",
-   "kind": "illustration",
-   "motif": "kropp.ljumske",
-   "group": "bål-fram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.bål.1",
-   "kind": "illustration",
-   "motif": "kropp.bål",
-   "group": "bål-bak",
-   "quiz": true
-  },
-  {
-   "senseId": "s.skulderblad.1",
-   "kind": "illustration",
-   "motif": "kropp.skulderblad",
-   "group": "bål-bak",
-   "quiz": true
-  },
-  {
-   "senseId": "s.korsrygg.1",
-   "kind": "illustration",
-   "motif": "kropp.korsrygg",
-   "group": "bål-bak",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ländrygg.1",
-   "kind": "illustration",
-   "motif": "kropp.ländrygg",
-   "group": "bål-bak",
-   "quiz": true
-  },
-  {
-   "senseId": "s.svank.1",
-   "kind": "illustration",
-   "motif": "kropp.svank",
-   "group": "bål-bak",
-   "quiz": true
-  },
-  {
-   "senseId": "s.rumpa.1",
-   "kind": "illustration",
-   "motif": "kropp.rumpa",
-   "group": "bål-bak",
-   "quiz": true,
-   "confusableWith": [
-    "s.stjärt.1"
-   ]
-  },
-  {
-   "senseId": "s.stjärt.1",
-   "kind": "illustration",
-   "motif": "kropp.rumpa",
-   "group": "bål-bak",
+   "senseId": "s.värka.1",
+   "kind": "animation",
+   "animationId": "anim.värka.1",
+   "file": "anim.varka.1",
+   "group": "smärta",
    "quiz": false,
    "confusableWith": [
-    "s.rumpa.1"
-   ]
+    "s.göra-ont.1"
+   ],
+   "reviewStatus": "ai-draft"
   },
   {
-   "senseId": "s.led-kropp.1",
+   "senseId": "s.ytterkläder.1",
    "kind": "illustration",
-   "motif": "kropp.led-kropp",
-   "group": "skelett-led",
-   "quiz": true
-  },
-  {
-   "senseId": "s.knäled.1",
-   "kind": "illustration",
-   "motif": "kropp.knäled",
-   "group": "skelett-led",
-   "quiz": true,
-   "confusableWith": [
-    "s.led-kropp.1"
-   ]
-  },
-  {
-   "senseId": "s.höftled.1",
-   "kind": "illustration",
-   "motif": "kropp.höftled",
-   "group": "skelett-led",
-   "quiz": true
-  },
-  {
-   "senseId": "s.axelled.1",
-   "kind": "illustration",
-   "motif": "kropp.axelled",
-   "group": "skelett-led",
-   "quiz": true
-  },
-  {
-   "senseId": "s.fingerled.1",
-   "kind": "illustration",
-   "motif": "kropp.fingerled",
-   "group": "finger",
-   "quiz": true
-  },
-  {
-   "senseId": "s.skelett.1",
-   "kind": "illustration",
-   "motif": "kropp.skelett",
-   "group": "skelett",
-   "quiz": true
-  },
-  {
-   "senseId": "s.kranium.1",
-   "kind": "illustration",
-   "motif": "kropp.kranium",
-   "group": "skelett",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ryggrad.1",
-   "kind": "illustration",
-   "motif": "kropp.ryggrad",
-   "group": "skelett",
-   "quiz": true,
-   "confusableWith": [
-    "s.kota.1"
-   ]
-  },
-  {
-   "senseId": "s.kota.1",
-   "kind": "illustration",
-   "motif": "kropp.kota",
-   "group": "skelett",
-   "quiz": true,
-   "confusableWith": [
-    "s.ryggrad.1"
-   ]
-  },
-  {
-   "senseId": "s.svanskota.1",
-   "kind": "illustration",
-   "motif": "kropp.svanskota",
-   "group": "skelett",
-   "quiz": true
-  },
-  {
-   "senseId": "s.bröstkorg.1",
-   "kind": "illustration",
-   "motif": "kropp.bröstkorg",
-   "group": "skelett",
-   "quiz": true,
-   "confusableWith": [
-    "s.revben.1"
-   ]
-  },
-  {
-   "senseId": "s.revben.1",
-   "kind": "illustration",
-   "motif": "kropp.revben",
-   "group": "skelett",
-   "quiz": true,
-   "confusableWith": [
-    "s.bröstkorg.1"
-   ]
-  },
-  {
-   "senseId": "s.bröstben.1",
-   "kind": "illustration",
-   "motif": "kropp.bröstben",
-   "group": "skelett",
-   "quiz": true
-  },
-  {
-   "senseId": "s.nyckelben.1",
-   "kind": "illustration",
-   "motif": "kropp.nyckelben",
-   "group": "skelett",
-   "quiz": true
-  },
-  {
-   "senseId": "s.bäcken.1",
-   "kind": "illustration",
-   "motif": "kropp.bäcken",
-   "group": "skelett",
-   "quiz": true,
-   "confusableWith": [
-    "s.höftben.1"
-   ]
-  },
-  {
-   "senseId": "s.höftben.1",
-   "kind": "illustration",
-   "motif": "kropp.höftben",
-   "group": "skelett",
-   "quiz": true,
-   "confusableWith": [
-    "s.bäcken.1"
-   ]
-  },
-  {
-   "senseId": "s.lårben.1",
-   "kind": "illustration",
-   "motif": "kropp.lårben",
-   "group": "skelett",
-   "quiz": true
-  },
-  {
-   "senseId": "s.skenben.1",
-   "kind": "illustration",
-   "motif": "kropp.skenben",
-   "group": "skelett",
-   "quiz": true
-  },
-  {
-   "senseId": "s.benmärg.1",
-   "kind": "illustration",
-   "motif": "kropp.benmärg",
-   "group": "benvävnad",
-   "quiz": true
-  },
-  {
-   "senseId": "s.benskörhet.1",
-   "kind": "illustration",
-   "motif": "kropp.benskörhet",
-   "group": "benvävnad",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.ledband.1",
-   "kind": "illustration",
-   "motif": "kropp.ledband",
-   "group": "knäled-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.brosk.1",
-   "kind": "illustration",
-   "motif": "kropp.brosk",
-   "group": "knäled-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.menisk.1",
-   "kind": "illustration",
-   "motif": "kropp.menisk",
-   "group": "knäled-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.korsband.1",
-   "kind": "illustration",
-   "motif": "kropp.korsband",
-   "group": "knäled-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ledvätska.1",
-   "kind": "illustration",
-   "motif": "kropp.ledvätska",
-   "group": "knäled-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ledkapsel.1",
-   "kind": "illustration",
-   "motif": "kropp.ledkapsel",
-   "group": "knäled-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.artros.1",
-   "kind": "illustration",
-   "motif": "kropp.artros",
-   "group": "knäled-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.gångjärnsled.1",
-   "kind": "illustration",
-   "motif": "kropp.gångjärnsled",
-   "group": "ledtyp",
-   "quiz": true
-  },
-  {
-   "senseId": "s.kulled.1",
-   "kind": "illustration",
-   "motif": "kropp.kulled",
-   "group": "ledtyp",
-   "quiz": true
-  },
-  {
-   "senseId": "s.muskelgrupp.1",
-   "kind": "illustration",
-   "motif": "kropp.muskelgrupp",
-   "group": "muskler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.muskelmassa.1",
-   "kind": "illustration",
-   "motif": "kropp.muskelmassa",
-   "group": "muskler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.magmuskel.1",
-   "kind": "illustration",
-   "motif": "kropp.magmuskel",
-   "group": "muskler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ryggmuskel.1",
-   "kind": "illustration",
-   "motif": "kropp.ryggmuskel",
-   "group": "muskler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.bröstmuskel.1",
-   "kind": "illustration",
-   "motif": "kropp.bröstmuskel",
-   "group": "muskler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.sätesmuskel.1",
-   "kind": "illustration",
-   "motif": "kropp.sätesmuskel",
-   "group": "muskler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.biceps.1",
-   "kind": "illustration",
-   "motif": "kropp.biceps",
-   "group": "arm",
-   "quiz": true
-  },
-  {
-   "senseId": "s.triceps.1",
-   "kind": "illustration",
-   "motif": "kropp.triceps",
-   "group": "arm",
-   "quiz": true
-  },
-  {
-   "senseId": "s.lårmuskel.1",
-   "kind": "illustration",
-   "motif": "kropp.lårmuskel",
-   "group": "ben",
-   "quiz": true
-  },
-  {
-   "senseId": "s.vadmuskel.1",
-   "kind": "illustration",
-   "motif": "kropp.vadmuskel",
-   "group": "ben",
-   "quiz": true,
-   "confusableWith": [
-    "s.vad-kropp.1"
-   ]
-  },
-  {
-   "senseId": "s.hälsena.1",
-   "kind": "illustration",
-   "motif": "kropp.hälsena",
-   "group": "ben",
-   "quiz": true
-  },
-  {
-   "senseId": "s.sena.1",
-   "kind": "illustration",
-   "motif": "kropp.sena",
-   "group": "sena",
-   "quiz": true
-  },
-  {
-   "senseId": "s.muskelfäste.1",
-   "kind": "illustration",
-   "motif": "kropp.muskelfäste",
-   "group": "sena",
-   "quiz": true
-  },
-  {
-   "senseId": "s.senskida.1",
-   "kind": "illustration",
-   "motif": "kropp.senskida",
-   "group": "sena",
-   "quiz": true
-  },
-  {
-   "senseId": "s.tennisarmbåge.1",
-   "kind": "illustration",
-   "motif": "kropp.tennisarmbåge",
-   "group": "arm",
-   "quiz": true
-  },
-  {
-   "senseId": "s.hudfärg.1",
-   "kind": "illustration",
-   "motif": "kropp.hudfärg",
-   "group": "hud",
-   "quiz": true
-  },
-  {
-   "senseId": "s.gåshud.1",
-   "kind": "illustration",
-   "motif": "kropp.gåshud",
-   "group": "hudmärke",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ärr.1",
-   "kind": "illustration",
-   "motif": "kropp.ärr",
-   "group": "hudmärke",
-   "quiz": true
-  },
-  {
-   "senseId": "s.blåmärke.1",
-   "kind": "illustration",
-   "motif": "kropp.blåmärke",
-   "group": "hudmärke",
-   "quiz": true
-  },
-  {
-   "senseId": "s.födelsemärke.1",
-   "kind": "illustration",
-   "motif": "kropp.födelsemärke",
-   "group": "hudfläck",
-   "quiz": true,
-   "confusableWith": [
-    "s.leverfläck.1"
-   ]
-  },
-  {
-   "senseId": "s.leverfläck.1",
-   "kind": "illustration",
-   "motif": "kropp.leverfläck",
-   "group": "hudfläck",
-   "quiz": true,
-   "confusableWith": [
-    "s.födelsemärke.1"
-   ]
-  },
-  {
-   "senseId": "s.fräkne.1",
-   "kind": "illustration",
-   "motif": "kropp.fräkne",
-   "group": "hudfläck",
-   "quiz": true
-  },
-  {
-   "senseId": "s.kroppsbehåring.1",
-   "kind": "illustration",
-   "motif": "kropp.kroppsbehåring",
-   "group": "behåring",
-   "quiz": true,
-   "confusableWith": [
-    "s.hårstrå.1",
-    "s.brösthår.1",
-    "s.fjun.1"
-   ]
-  },
-  {
-   "senseId": "s.hårstrå.1",
-   "kind": "illustration",
-   "motif": "kropp.hårstrå",
-   "group": "behåring",
-   "quiz": true,
-   "confusableWith": [
-    "s.kroppsbehåring.1",
-    "s.brösthår.1",
-    "s.fjun.1"
-   ]
-  },
-  {
-   "senseId": "s.brösthår.1",
-   "kind": "illustration",
-   "motif": "kropp.brösthår",
-   "group": "behåring",
-   "quiz": true,
-   "confusableWith": [
-    "s.kroppsbehåring.1",
-    "s.hårstrå.1",
-    "s.fjun.1"
-   ]
-  },
-  {
-   "senseId": "s.fjun.1",
-   "kind": "illustration",
-   "motif": "kropp.fjun",
-   "group": "behåring",
-   "quiz": false,
-   "confusableWith": [
-    "s.kroppsbehåring.1",
-    "s.hårstrå.1"
-   ]
-  },
-  {
-   "senseId": "s.blek.1",
-   "kind": "illustration",
-   "motif": "kropp.blek",
-   "group": "ansiktshud",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.solbränd.1",
-   "kind": "illustration",
-   "motif": "kropp.solbränd",
-   "group": "ansiktshud",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.rynkig.1",
-   "kind": "illustration",
-   "motif": "kropp.rynkig",
-   "group": "ansiktshud",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.rodna.1",
-   "kind": "illustration",
-   "motif": "kropp.rodna",
-   "group": "ansiktshud",
+   "motif": "ytterkläder",
+   "group": "jacka",
    "quiz": false
   },
   {
-   "senseId": "s.kännetecken.1",
+   "senseId": "s.ytteröra.1",
    "kind": "illustration",
-   "motif": "kropp.kännetecken",
-   "group": "utseende",
-   "quiz": false
-  },
-  {
-   "senseId": "s.utseende.1",
-   "kind": "illustration",
-   "motif": "kropp.utseende",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.kroppsbyggnad.1",
-   "kind": "illustration",
-   "motif": "kropp.kroppsbyggnad",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.långväxt.1",
-   "kind": "illustration",
-   "motif": "kropp.långväxt",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.kortväxt.1",
-   "kind": "illustration",
-   "motif": "kropp.kortväxt",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.mager.2",
-   "kind": "illustration",
-   "motif": "kropp.mager.2",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.kraftig.2",
-   "kind": "illustration",
-   "motif": "kropp.kraftig.2",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.muskulös.1",
-   "kind": "illustration",
-   "motif": "kropp.muskulös",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.axelbred.1",
-   "kind": "illustration",
-   "motif": "kropp.axelbred",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.knubbig.1",
-   "kind": "illustration",
-   "motif": "kropp.knubbig",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.fyllig.1",
-   "kind": "illustration",
-   "motif": "kropp.fyllig",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.överviktig.1",
-   "kind": "illustration",
-   "motif": "kropp.överviktig",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.blond.1",
-   "kind": "illustration",
-   "motif": "kropp.blond",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.mörkhårig.1",
-   "kind": "illustration",
-   "motif": "kropp.mörkhårig",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.rödhårig.1",
-   "kind": "illustration",
-   "motif": "kropp.rödhårig",
-   "group": "utseende",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.blodkärl.1",
-   "kind": "illustration",
-   "motif": "kropp.blodkärl",
-   "group": "kärl",
-   "quiz": false,
-   "confusableWith": [
-    "s.åder.1",
-    "s.pulsåder.1",
-    "s.ven.1"
-   ]
+   "motif": "kropp.ytteröra",
+   "group": "öra-snitt",
+   "quiz": true
   },
   {
    "senseId": "s.åder.1",
@@ -2846,93 +4892,6 @@
    ]
   },
   {
-   "senseId": "s.pulsåder.1",
-   "kind": "illustration",
-   "motif": "kropp.pulsåder",
-   "group": "kärl",
-   "quiz": false,
-   "confusableWith": [
-    "s.blodkärl.1",
-    "s.åder.1",
-    "s.ven.1"
-   ]
-  },
-  {
-   "senseId": "s.ven.1",
-   "kind": "illustration",
-   "motif": "kropp.ven",
-   "group": "kärl",
-   "quiz": false,
-   "confusableWith": [
-    "s.blodkärl.1",
-    "s.åder.1",
-    "s.pulsåder.1"
-   ]
-  },
-  {
-   "senseId": "s.blodomlopp.1",
-   "kind": "illustration",
-   "motif": "kropp.blodomlopp",
-   "group": "kärl",
-   "quiz": false
-  },
-  {
-   "senseId": "s.aorta.1",
-   "kind": "illustration",
-   "motif": "kropp.aorta",
-   "group": "hjärta-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.kammare.1",
-   "kind": "illustration",
-   "motif": "kropp.kammare",
-   "group": "hjärta-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.förmak.1",
-   "kind": "illustration",
-   "motif": "kropp.förmak",
-   "group": "hjärta-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.hjärtklaff.1",
-   "kind": "illustration",
-   "motif": "kropp.hjärtklaff",
-   "group": "hjärta-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.kranskärl.1",
-   "kind": "illustration",
-   "motif": "kropp.kranskärl",
-   "group": "hjärta-diagram",
-   "quiz": true
-  },
-  {
-   "senseId": "s.hjärtslag.1",
-   "kind": "illustration",
-   "motif": "kropp.hjärtslag",
-   "group": "hjärta",
-   "quiz": true
-  },
-  {
-   "senseId": "s.pacemaker.1",
-   "kind": "illustration",
-   "motif": "kropp.pacemaker",
-   "group": "hjärta",
-   "quiz": true
-  },
-  {
-   "senseId": "s.blodpropp.1",
-   "kind": "illustration",
-   "motif": "kropp.blodpropp",
-   "group": "kärlsnitt",
-   "quiz": true
-  },
-  {
    "senseId": "s.åderförkalkning.1",
    "kind": "illustration",
    "motif": "kropp.åderförkalkning",
@@ -2940,398 +4899,10 @@
    "quiz": true
   },
   {
-   "senseId": "s.lunga.1",
-   "kind": "illustration",
-   "motif": "kropp.lunga",
-   "group": "organ",
-   "quiz": true,
-   "confusableWith": [
-    "s.luftrör.1"
-   ]
-  },
-  {
-   "senseId": "s.luftstrupe.1",
-   "kind": "illustration",
-   "motif": "kropp.luftstrupe",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.luftrör.1",
-   "kind": "illustration",
-   "motif": "kropp.luftrör",
-   "group": "organ",
-   "quiz": true,
-   "confusableWith": [
-    "s.lunga.1"
-   ]
-  },
-  {
-   "senseId": "s.mellangärde.1",
-   "kind": "illustration",
-   "motif": "kropp.mellangärde",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.matstrupe.1",
-   "kind": "illustration",
-   "motif": "kropp.matstrupe",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.magsäck.1",
-   "kind": "illustration",
-   "motif": "kropp.magsäck",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.tarm.1",
-   "kind": "illustration",
-   "motif": "kropp.tarm",
-   "group": "organ",
-   "quiz": true,
-   "confusableWith": [
-    "s.tunntarm.1",
-    "s.tjocktarm.1"
-   ]
-  },
-  {
-   "senseId": "s.tunntarm.1",
-   "kind": "illustration",
-   "motif": "kropp.tunntarm",
-   "group": "organ",
-   "quiz": true,
-   "confusableWith": [
-    "s.tarm.1",
-    "s.tjocktarm.1"
-   ]
-  },
-  {
-   "senseId": "s.tjocktarm.1",
-   "kind": "illustration",
-   "motif": "kropp.tjocktarm",
-   "group": "organ",
-   "quiz": true,
-   "confusableWith": [
-    "s.tarm.1",
-    "s.tunntarm.1"
-   ]
-  },
-  {
-   "senseId": "s.ändtarm.1",
-   "kind": "illustration",
-   "motif": "kropp.ändtarm",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.blindtarm.1",
-   "kind": "illustration",
-   "motif": "kropp.blindtarm",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.lever.1",
-   "kind": "illustration",
-   "motif": "kropp.lever",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.gallblåsa.1",
-   "kind": "illustration",
-   "motif": "kropp.gallblåsa",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.bukspottkörtel.1",
-   "kind": "illustration",
-   "motif": "kropp.bukspottkörtel",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.mjälte.1",
-   "kind": "illustration",
-   "motif": "kropp.mjälte",
-   "group": "organ",
-   "quiz": true
-  },
-  {
-   "senseId": "s.gallgång.1",
-   "kind": "illustration",
-   "motif": "kropp.gallgång",
-   "group": "organ",
-   "quiz": false
-  },
-  {
-   "senseId": "s.bukhåla.1",
-   "kind": "illustration",
-   "motif": "kropp.bukhåla",
-   "group": "organ",
-   "quiz": false
-  },
-  {
-   "senseId": "s.magsyra.1",
-   "kind": "illustration",
-   "motif": "kropp.magsyra",
-   "group": "organ-sjukdom",
-   "quiz": false
-  },
-  {
-   "senseId": "s.magsår.1",
-   "kind": "illustration",
-   "motif": "kropp.magsår",
-   "group": "organ-sjukdom",
-   "quiz": false
-  },
-  {
-   "senseId": "s.tarmflora.1",
-   "kind": "illustration",
-   "motif": "kropp.tarmflora",
-   "group": "organ-sjukdom",
-   "quiz": false
-  },
-  {
-   "senseId": "s.gallsten.1",
-   "kind": "illustration",
-   "motif": "kropp.gallsten",
-   "group": "organ-sjukdom",
-   "quiz": false
-  },
-  {
-   "senseId": "s.fettlever.1",
-   "kind": "illustration",
-   "motif": "kropp.fettlever",
-   "group": "organ-sjukdom",
-   "quiz": false
-  },
-  {
-   "senseId": "s.skrumplever.1",
-   "kind": "illustration",
-   "motif": "kropp.skrumplever",
-   "group": "organ-sjukdom",
-   "quiz": false
-  },
-  {
-   "senseId": "s.luftväg.1",
-   "kind": "illustration",
-   "motif": "kropp.luftväg",
-   "group": "hals",
-   "quiz": true
-  },
-  {
-   "senseId": "s.svalg.1",
-   "kind": "illustration",
-   "motif": "kropp.svalg",
-   "group": "hals",
-   "quiz": true
-  },
-  {
-   "senseId": "s.stämband.1",
-   "kind": "illustration",
-   "motif": "kropp.stämband",
-   "group": "hals",
-   "quiz": true
-  },
-  {
-   "senseId": "s.struphuvud.1",
-   "kind": "illustration",
-   "motif": "kropp.struphuvud",
-   "group": "hals",
-   "quiz": true
-  },
-  {
-   "senseId": "s.bihåla.1",
-   "kind": "illustration",
-   "motif": "kropp.bihåla",
-   "group": "hals",
-   "quiz": true
-  },
-  {
-   "senseId": "s.njure.1",
-   "kind": "illustration",
-   "motif": "kropp.njure",
-   "group": "urinvägar",
-   "quiz": true
-  },
-  {
-   "senseId": "s.urinblåsa.1",
-   "kind": "illustration",
-   "motif": "kropp.urinblåsa",
-   "group": "urinvägar",
-   "quiz": true
-  },
-  {
-   "senseId": "s.urinledare.1",
-   "kind": "illustration",
-   "motif": "kropp.urinledare",
-   "group": "urinvägar",
-   "quiz": true
-  },
-  {
-   "senseId": "s.urinrör.1",
-   "kind": "illustration",
-   "motif": "kropp.urinrör",
-   "group": "urinvägar",
-   "quiz": true
-  },
-  {
-   "senseId": "s.njursten.1",
-   "kind": "illustration",
-   "motif": "kropp.njursten",
-   "group": "urinvägar",
-   "quiz": false
-  },
-  {
-   "senseId": "s.njursvikt.1",
-   "kind": "illustration",
-   "motif": "kropp.njursvikt",
-   "group": "urinvägar",
-   "quiz": false
-  },
-  {
-   "senseId": "s.nerv.1",
-   "kind": "illustration",
-   "motif": "kropp.nerv",
-   "group": "nerver",
-   "quiz": true
-  },
-  {
-   "senseId": "s.nervsystem.1",
-   "kind": "illustration",
-   "motif": "kropp.nervsystem",
-   "group": "nerver",
-   "quiz": true
-  },
-  {
-   "senseId": "s.nervcell.1",
-   "kind": "illustration",
-   "motif": "kropp.nervcell",
-   "group": "nerver",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ryggmärg.1",
-   "kind": "illustration",
-   "motif": "kropp.ryggmärg",
-   "group": "nerver",
-   "quiz": true
-  },
-  {
-   "senseId": "s.storhjärna.1",
-   "kind": "illustration",
-   "motif": "kropp.storhjärna",
-   "group": "hjärna",
-   "quiz": true,
-   "confusableWith": [
-    "s.hjärnhalva.1"
-   ]
-  },
-  {
-   "senseId": "s.hjärnhalva.1",
-   "kind": "illustration",
-   "motif": "kropp.hjärnhalva",
-   "group": "hjärna",
-   "quiz": true,
-   "confusableWith": [
-    "s.storhjärna.1"
-   ]
-  },
-  {
-   "senseId": "s.lillhjärna.1",
-   "kind": "illustration",
-   "motif": "kropp.lillhjärna",
-   "group": "hjärna",
-   "quiz": true
-  },
-  {
-   "senseId": "s.hjärnstam.1",
-   "kind": "illustration",
-   "motif": "kropp.hjärnstam",
-   "group": "hjärna",
-   "quiz": true
-  },
-  {
-   "senseId": "s.hjärnskakning.1",
-   "kind": "illustration",
-   "motif": "kropp.hjärnskakning",
-   "group": "hjärnskada",
-   "quiz": false
-  },
-  {
-   "senseId": "s.stroke.1",
-   "kind": "illustration",
-   "motif": "kropp.stroke",
-   "group": "hjärnskada",
-   "quiz": false
-  },
-  {
-   "senseId": "s.hjärnblödning.1",
-   "kind": "illustration",
-   "motif": "kropp.hjärnblödning",
-   "group": "hjärnskada",
-   "quiz": false
-  },
-  {
    "senseId": "s.äggcell.1",
    "kind": "illustration",
    "motif": "kropp.äggcell",
    "group": "celler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.spermie.1",
-   "kind": "illustration",
-   "motif": "kropp.spermie",
-   "group": "celler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.befruktning.1",
-   "kind": "illustration",
-   "motif": "kropp.befruktning",
-   "group": "celler",
-   "quiz": true
-  },
-  {
-   "senseId": "s.livmoder.1",
-   "kind": "illustration",
-   "motif": "kropp.livmoder",
-   "group": "könsorgan",
-   "quiz": true
-  },
-  {
-   "senseId": "s.äggstock.1",
-   "kind": "illustration",
-   "motif": "kropp.äggstock",
-   "group": "könsorgan",
-   "quiz": true
-  },
-  {
-   "senseId": "s.slida.1",
-   "kind": "illustration",
-   "motif": "kropp.slida",
-   "group": "könsorgan",
-   "quiz": true
-  },
-  {
-   "senseId": "s.penis.1",
-   "kind": "illustration",
-   "motif": "kropp.penis",
-   "group": "könsorgan",
-   "quiz": true
-  },
-  {
-   "senseId": "s.testikel.1",
-   "kind": "illustration",
-   "motif": "kropp.testikel",
-   "group": "könsorgan",
    "quiz": true
   },
   {
@@ -3342,46 +4913,52 @@
    "quiz": false
   },
   {
-   "senseId": "s.menscykel.1",
+   "senseId": "s.äggstock.1",
    "kind": "illustration",
-   "motif": "kropp.menscykel",
-   "group": "cykel",
+   "motif": "kropp.äggstock",
+   "group": "könsorgan",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ändtarm.1",
+   "kind": "illustration",
+   "motif": "kropp.ändtarm",
+   "group": "organ",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ärm.1",
+   "kind": "illustration",
+   "motif": "ärm",
+   "group": "detalj",
    "quiz": false
   },
   {
-   "senseId": "s.mens.1",
+   "senseId": "s.ärr.1",
    "kind": "illustration",
-   "motif": "kropp.mens",
-   "group": "cykel",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.ögonhåla.1",
-   "kind": "illustration",
-   "motif": "kropp.ögonhåla",
-   "group": "skalle",
+   "motif": "kropp.ärr",
+   "group": "hudmärke",
    "quiz": true
   },
   {
-   "senseId": "s.ögonvita.1",
+   "senseId": "s.ögonbryn.1",
    "kind": "illustration",
-   "motif": "kropp.ögonvita",
-   "group": "öga-fram",
+   "motif": "kropp.ögonbryn",
+   "group": "huvud",
    "quiz": true
   },
   {
-   "senseId": "s.pupill.1",
+   "senseId": "s.ögondroppe.1",
    "kind": "illustration",
-   "motif": "kropp.pupill",
+   "motif": "kropp.ögondroppe",
    "group": "öga-fram",
-   "quiz": true
+   "quiz": false
   },
   {
-   "senseId": "s.tårkanal.1",
+   "senseId": "s.ögonfrans.1",
    "kind": "illustration",
-   "motif": "kropp.tårkanal",
-   "group": "öga-fram",
+   "motif": "kropp.ögonfrans",
+   "group": "huvud",
    "quiz": true
   },
   {
@@ -3395,16 +4972,6 @@
    ]
   },
   {
-   "senseId": "s.iris.1",
-   "kind": "illustration",
-   "motif": "kropp.iris",
-   "group": "öga-fram",
-   "quiz": true,
-   "confusableWith": [
-    "s.ögonfärg.1"
-   ]
-  },
-  {
    "senseId": "s.ögonglob.1",
    "kind": "illustration",
    "motif": "kropp.ögonglob",
@@ -3412,173 +4979,34 @@
    "quiz": true
   },
   {
-   "senseId": "s.hornhinna.1",
+   "senseId": "s.ögonhåla.1",
    "kind": "illustration",
-   "motif": "kropp.hornhinna",
-   "group": "öga-snitt",
+   "motif": "kropp.ögonhåla",
+   "group": "skalle",
    "quiz": true
   },
   {
-   "senseId": "s.lins.2",
+   "senseId": "s.ögonlock.1",
    "kind": "illustration",
-   "motif": "kropp.lins.2",
-   "group": "öga-snitt",
+   "motif": "kropp.ögonlock",
+   "group": "huvud",
    "quiz": true
   },
   {
-   "senseId": "s.synnerv.1",
+   "senseId": "s.ögonvita.1",
    "kind": "illustration",
-   "motif": "kropp.synnerv",
-   "group": "öga-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.näthinna.1",
-   "kind": "illustration",
-   "motif": "kropp.näthinna",
-   "group": "öga-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.tårvätska.1",
-   "kind": "illustration",
-   "motif": "kropp.tårvätska",
+   "motif": "kropp.ögonvita",
    "group": "öga-fram",
-   "quiz": false
+   "quiz": true
   },
   {
-   "senseId": "s.ögondroppe.1",
-   "kind": "illustration",
-   "motif": "kropp.ögondroppe",
-   "group": "öga-fram",
-   "quiz": false
-  },
-  {
-   "senseId": "s.grå-starr.1",
-   "kind": "illustration",
-   "motif": "kropp.grå-starr",
-   "group": "öga-fram",
-   "quiz": false
-  },
-  {
-   "senseId": "s.synfel.1",
-   "kind": "illustration",
-   "motif": "kropp.synfel",
-   "group": "syntavla",
-   "quiz": false
-  },
-  {
-   "senseId": "s.synundersökning.1",
-   "kind": "illustration",
-   "motif": "kropp.synundersökning",
-   "group": "syntavla",
-   "quiz": false
-  },
-  {
-   "senseId": "s.suddig.1",
-   "kind": "illustration",
-   "motif": "kropp.suddig",
-   "group": "syntavla",
+   "senseId": "s.ömma.1",
+   "kind": "animation",
+   "animationId": "anim.ömma.1",
+   "file": "anim.omma.1",
+   "group": "smärta",
    "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.glasögon.1",
-   "kind": "illustration",
-   "motif": "kropp.glasögon",
-   "group": "glasögon",
-   "quiz": true
-  },
-  {
-   "senseId": "s.läsglasögon.1",
-   "kind": "illustration",
-   "motif": "kropp.läsglasögon",
-   "group": "glasögon",
-   "quiz": true
-  },
-  {
-   "senseId": "s.glasögonbåge.1",
-   "kind": "illustration",
-   "motif": "kropp.glasögonbåge",
-   "group": "glasögon",
-   "quiz": true
-  },
-  {
-   "senseId": "s.kontaktlins.1",
-   "kind": "illustration",
-   "motif": "kropp.kontaktlins",
-   "group": "glasögon",
-   "quiz": true
-  },
-  {
-   "senseId": "s.ytteröra.1",
-   "kind": "illustration",
-   "motif": "kropp.ytteröra",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.örsnibb.1",
-   "kind": "illustration",
-   "motif": "kropp.örsnibb",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.öronvax.1",
-   "kind": "illustration",
-   "motif": "kropp.öronvax",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.hörselgång.1",
-   "kind": "illustration",
-   "motif": "kropp.hörselgång",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.trumhinna.1",
-   "kind": "illustration",
-   "motif": "kropp.trumhinna",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.mellanöra.1",
-   "kind": "illustration",
-   "motif": "kropp.mellanöra",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.hörselben.1",
-   "kind": "illustration",
-   "motif": "kropp.hörselben",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.inneröra.1",
-   "kind": "illustration",
-   "motif": "kropp.inneröra",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.snäcka.1",
-   "kind": "illustration",
-   "motif": "kropp.snäcka",
-   "group": "öra-snitt",
-   "quiz": true
-  },
-  {
-   "senseId": "s.balansorgan.1",
-   "kind": "illustration",
-   "motif": "kropp.balansorgan",
-   "group": "öra-snitt",
-   "quiz": true
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.öroninflammation.1",
@@ -3596,165 +5024,49 @@
    "quiz": true
   },
   {
-   "senseId": "s.hörapparat.1",
+   "senseId": "s.öronvax.1",
    "kind": "illustration",
-   "motif": "kropp.hörapparat",
-   "group": "öra-hjälpmedel",
+   "motif": "kropp.öronvax",
+   "group": "öra-snitt",
    "quiz": true
   },
   {
-   "senseId": "s.hörselskydd.1",
+   "senseId": "s.örsnibb.1",
    "kind": "illustration",
-   "motif": "kropp.hörselskydd",
-   "group": "öra-hjälpmedel",
+   "motif": "kropp.örsnibb",
+   "group": "öra-snitt",
    "quiz": true
   },
   {
-   "senseId": "s.hörsel.1",
+   "senseId": "s.överarm.1",
    "kind": "illustration",
-   "motif": "kropp.hörsel",
-   "group": "hörsel",
-   "quiz": false
+   "motif": "kropp.överarm",
+   "group": "arm",
+   "quiz": true
   },
   {
-   "senseId": "s.tinnitus.1",
-   "kind": "illustration",
-   "motif": "kropp.tinnitus",
-   "group": "hörsel",
-   "quiz": false
+   "senseId": "s.överbelasta.1",
+   "kind": "animation",
+   "animationId": "anim.överbelasta.1",
+   "file": "anim.overbelasta.1",
+   "group": "muskler",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
   },
   {
-   "senseId": "s.lomhörd.1",
+   "senseId": "s.överkropp.1",
    "kind": "illustration",
-   "motif": "kropp.lomhörd",
-   "group": "hörsel",
+   "motif": "kropp.överkropp",
+   "group": "bål-fram",
+   "quiz": true
+  },
+  {
+   "senseId": "s.överviktig.1",
+   "kind": "illustration",
+   "motif": "kropp.överviktig",
+   "group": "utseende",
    "quiz": false,
    "symbol": true
-  },
-  {
-   "senseId": "s.ljudnivå.1",
-   "kind": "illustration",
-   "motif": "kropp.ljudnivå",
-   "group": "ljudmätare",
-   "quiz": false
-  },
-  {
-   "senseId": "s.decibel.1",
-   "kind": "illustration",
-   "motif": "kropp.decibel",
-   "group": "ljudmätare",
-   "quiz": false
-  },
-  {
-   "senseId": "s.känsel.1",
-   "kind": "illustration",
-   "motif": "kropp.känsel",
-   "group": "känsel",
-   "quiz": false
-  },
-  {
-   "senseId": "s.beröring.1",
-   "kind": "illustration",
-   "motif": "kropp.beröring",
-   "group": "känsel",
-   "quiz": false
-  },
-  {
-   "senseId": "s.hetta.1",
-   "kind": "illustration",
-   "motif": "kropp.hetta",
-   "group": "känsel",
-   "quiz": false
-  },
-  {
-   "senseId": "s.fingertoppskänsla.1",
-   "kind": "illustration",
-   "motif": "kropp.fingertoppskänsla",
-   "group": "känsel",
-   "quiz": false
-  },
-  {
-   "senseId": "s.kittlig.1",
-   "kind": "illustration",
-   "motif": "kropp.kittlig",
-   "group": "känsel",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.stickig.1",
-   "kind": "illustration",
-   "motif": "kropp.stickig",
-   "group": "känsel",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.luktsinne.1",
-   "kind": "illustration",
-   "motif": "kropp.luktsinne",
-   "group": "lukt",
-   "quiz": false
-  },
-  {
-   "senseId": "s.matlukt.1",
-   "kind": "illustration",
-   "motif": "kropp.matlukt",
-   "group": "lukt",
-   "quiz": false
-  },
-  {
-   "senseId": "s.stank.1",
-   "kind": "illustration",
-   "motif": "kropp.stank",
-   "group": "lukt",
-   "quiz": false
-  },
-  {
-   "senseId": "s.luktfri.1",
-   "kind": "illustration",
-   "motif": "kropp.luktfri",
-   "group": "lukt",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.illaluktande.1",
-   "kind": "illustration",
-   "motif": "kropp.illaluktande",
-   "group": "lukt",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.täppt.1",
-   "kind": "illustration",
-   "motif": "kropp.täppt",
-   "group": "lukt",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.det-vattnas-i-munnen.1",
-   "kind": "illustration",
-   "motif": "kropp.det-vattnas-i-munnen",
-   "group": "lukt",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.smaksinne.1",
-   "kind": "illustration",
-   "motif": "kropp.smaksinne",
-   "group": "smak",
-   "quiz": false
-  },
-  {
-   "senseId": "s.bismak.1",
-   "kind": "illustration",
-   "motif": "kropp.bismak",
-   "group": "smak",
-   "quiz": false
   }
  ]
 }

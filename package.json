@@ -19,7 +19,8 @@
     "content:report": "vite-node scripts/cli/content-report.ts",
     "art:sheet": "vite-node scripts/cli/art-sheet.ts",
     "visuals:import": "node scripts/visuals-import.mjs",
-    "visuals:plan": "node scripts/visuals-plan.mjs"
+    "visuals:plan": "node scripts/visuals-plan.mjs",
+    "scenes:build": "vite-node scripts/scenes/build.ts --"
   },
   "dependencies": {
     "dexie": "4.0.11",
