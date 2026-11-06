@@ -34,7 +34,8 @@ Ny betydelse på en befintlig post: `s.spår.2` (järnvägsspår) på `e.spår`.
 
 ### Övrigt
 - Grundordförrådet har fått vanliga ord och namn som texterna behöver (t.ex. *pedal*, *risk*, *varning*, *cyklist*, *turist*, *privat*, *orolig*, *mask*, *Arlanda*, *Kiruna*, *Centralen*).
-- E2E: den planerade katalogposten i e2e-skriptet byts eftersom *Resor & lokaltrafik* nu är publicerat.
+- E2E: den planerade katalogposten ligger nu i *Människan & hälsa → Kroppen & sinnena → Kroppens yttre delar → Huvud och ansikte*, eftersom hela *Vardag & hem* är publicerat.
+- Tester som går igenom allt innehåll i `learning.test.ts` lämnar tillbaka kontrollen efter varje modul. Annars rapporterade Vitest "Timeout calling onTaskUpdate" (exitkod 1 trots gröna tester).
 
 ## 0.7.0 – 2026-11-05
 

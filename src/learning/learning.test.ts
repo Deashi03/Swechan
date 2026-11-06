@@ -10,6 +10,8 @@ import type { ReviewCardRecord, ReviewEventRecord } from '../storage/types';
 const repo = getContent();
 const ctx = (senseIds: string[] = repo.modules[0]!.words.map((w) => w.senseId)): GenContext => ({ repo, poolSenseIds: senseIds, seed: 42 });
 
+const yieldToEventLoop = () => new Promise<void>((resolve) => setTimeout(resolve, 0));
+
 describe('answer checking', () => {
   it('accepts irrelevant variation (spaces, case)', () => {
     expect(checkTypedAnswer('  Fönster ', ['fönster']).correct).toBe(true);
@@ -29,8 +31,11 @@ describe('answer checking', () => {
 
 describe('exercise generation', () => {
   const types: ExerciseType[] = ['meaning_choice', 'reverse_choice', 'context_choice', 'synonym_choice', 'spelling', 'inflection'];
-  it('produces a valid exercise for every module word and type (with fallback)', () => {
+  // The content-wide loops yield after each module so the Vitest worker can answer its RPC heartbeat
+  // ("Timeout calling onTaskUpdate" otherwise appears once the content grows).
+  it('produces a valid exercise for every module word and type (with fallback)', async () => {
     for (const m of repo.modules) {
+      await yieldToEventLoop();
       for (const w of m.words) {
         for (const t of types) {
           const ex = generateExercise(t, w.senseId, ctx(m.words.map((x) => x.senseId)));
@@ -63,8 +68,9 @@ describe('exercise generation', () => {
     expect(ex.subPrompt).toBeUndefined(); // translation would give the answer away – only as hint/result
     expect(ex.hint?.lang).toBe('ja');
   });
-  it('context exercise distractors never come from the same topic (only one option fits)', () => {
+  it('context exercise distractors never come from the same topic (only one option fits)', async () => {
     for (const m of repo.modules) {
+      await yieldToEventLoop();
       for (const w of m.words) {
         for (let seed = 0; seed < 5; seed++) {
           const ref = repo.getSense(w.senseId)!;
@@ -175,6 +181,7 @@ describe('the answer is never shown in a recall prompt (feedback 0.4)', () => {
     const { stripFurigana } = await import('../content/furigana');
     expect(maskAnswer('bestå av: vara gjord av något.', repo.getSense('s.bestå.1')!.entry)).toBe('＿＿＿ av: vara gjord av något.');
     for (const m of repo.modules) for (const w of m.words) {
+      if (w === m.words[0]) await yieldToEventLoop();
       const ref = repo.getSense(w.senseId)!;
       const pool = { repo, poolSenseIds: m.words.map((x) => x.senseId), seed: 1 };
       const texts = [genReverseChoice(ref, pool), genSpelling(ref, pool)].flatMap((x) => (x ? [x.prompt, x.subPrompt ?? '', typeof x.hint === 'string' ? '' : x.hint?.text ?? ''] : []));
