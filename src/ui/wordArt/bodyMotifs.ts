@@ -6,6 +6,8 @@ import { C, all, line, path, type Svg } from './kit';
 import { faceFeatures, headFront, headProfile, skull } from './body';
 import { boneSection, jointType, kneeJoint, muscles, skeleton, tendon } from './anatomy';
 import { HAIR, armSkin, axelbred, chestHair, compare, faceSkin, figure, hairHead, skinTones } from './figures';
+import { brainTop, cells, cycle, headInside, heartDiagram, maleOrgans, nerveFigure, neuron, organs, urinary, uterus, vessels, vesselSection } from './organs';
+import { pointAt } from './limbs';
 import { armFlex, bodyBack, bodyFront, bodySide, fist, footprints, footSide, handBack, handPalm, legSide, tiptoe, toesTop, writingHand, barefoot } from './limbs';
 
 export const BODY_MOTIFS: Record<string, Svg> = {
@@ -153,4 +155,83 @@ export const BODY_MOTIFS: Record<string, Svg> = {
   'kropp.blond': hairHead(HAIR.blond),
   'kropp.mörkhårig': hairHead(HAIR.mörk),
   'kropp.rödhårig': hairHead(HAIR.röd),
+  // ── Hjärta och blodkärl ─────────────────────────────────────────
+  'kropp.blodkärl': vessels('blodkärl'),
+  'kropp.åder': vessels('ven'),
+  'kropp.pulsåder': vessels('pulsåder'),
+  'kropp.ven': vessels('ven'),
+  'kropp.aorta': heartDiagram(['aorta'], [16, 8]),
+  'kropp.hjärtslag': heartDiagram([], undefined, { beat: true }),
+  'kropp.kammare': heartDiagram(['kammare'], [108, 104]),
+  'kropp.förmak': heartDiagram(['förmak'], [110, 24]),
+  'kropp.hjärtklaff': heartDiagram(['hjärtklaff'], [114, 74]),
+  'kropp.kranskärl': heartDiagram(['kranskärl'], [114, 40]),
+  'kropp.blodpropp': vesselSection('propp'),
+  'kropp.åderförkalkning': vesselSection('förkalkning'),
+  'kropp.pacemaker': heartDiagram([], undefined, { pacemaker: true }),
+  'kropp.blodomlopp': vessels('blodomlopp'),
+  // ── Lungor och luftvägar ────────────────────────────────────────
+  'kropp.lunga': organs(['lunga'], [116, 20]),
+  'kropp.luftväg': headInside(['luftväg'], [110, 112]),
+  'kropp.luftstrupe': organs(['luftstrupe'], [24, 6]),
+  'kropp.svalg': headInside(['svalg'], [112, 84]),
+  'kropp.stämband': headInside(['stämband'], [112, 96]),
+  'kropp.struphuvud': headInside(['struphuvud'], [112, 110]),
+  'kropp.luftrör': organs(['luftrör'], [96, 10]),
+  'kropp.mellangärde': organs(['mellangärde'], [116, 50]),
+  'kropp.bihåla': headInside(['bihåla'], [114, 40]),
+  // ── Mage och tarmar ─────────────────────────────────────────────
+  'kropp.matstrupe': organs(['matstrupe'], [96, 8]),
+  'kropp.magsäck': organs(['magsäck'], [114, 58]),
+  'kropp.magsyra': all(organs(['magsäck'], undefined, { acid: true }), pointAt([80, 72], [114, 50])),
+  'kropp.magsår': all(organs([], undefined, { ulcer: true }), pointAt([76, 76], [114, 56])),
+  'kropp.tarm': organs(['tarm'], [116, 108]),
+  'kropp.tunntarm': organs(['tunntarm'], [108, 116]),
+  'kropp.tjocktarm': organs(['tjocktarm'], [116, 96]),
+  'kropp.ändtarm': organs(['ändtarm'], [96, 116]),
+  'kropp.tarmflora': all(organs([], undefined, { flora: true }), pointAt([60, 104], [112, 116])),
+  'kropp.blindtarm': organs(['blindtarm'], [8, 100]),
+  // ── Lever och gallblåsa ─────────────────────────────────────────
+  'kropp.lever': organs(['lever'], [6, 50]),
+  'kropp.gallblåsa': organs(['gallblåsa'], [8, 96]),
+  'kropp.gallgång': organs(['gallgång'], [8, 96]),
+  'kropp.gallsten': organs(['gallblåsa'], [8, 96], { stones: true }),
+  'kropp.bukhåla': organs(['bukhåla'], [116, 112]),
+  'kropp.bukspottkörtel': organs(['bukspottkörtel'], [116, 86]),
+  'kropp.mjälte': organs(['mjälte'], [116, 82]),
+  'kropp.fettlever': organs(['lever'], [6, 50], { fat: true }),
+  'kropp.skrumplever': organs(['lever'], [6, 50], { shrunk: true }),
+  // ── Njurar och urinvägar ────────────────────────────────────────
+  'kropp.njure': urinary(['njure'], [116, 70]),
+  'kropp.urinblåsa': urinary(['urinblåsa'], [104, 112]),
+  'kropp.urinledare': urinary(['urinledare'], [104, 96]),
+  'kropp.urinrör': urinary(['urinrör'], [96, 118]),
+  'kropp.njursten': urinary(['njure'], [116, 70], { stone: true }),
+  'kropp.njursvikt': urinary(['njure'], undefined, { failing: true }),
+  'kropp.binjure': urinary(['binjure'], [116, 24]),
+  // ── Hjärna och nervsystem ───────────────────────────────────────
+  'kropp.nerv': nerveFigure('nerv'),
+  'kropp.ryggmärg': headInside(['ryggmärg'], [24, 112]),
+  'kropp.nervsystem': nerveFigure('nervsystem'),
+  'kropp.nervcell': neuron(),
+  'kropp.storhjärna': headInside(['storhjärna'], [104, 4]),
+  'kropp.hjärnhalva': brainTop(),
+  'kropp.lillhjärna': headInside(['lillhjärna'], [12, 76]),
+  'kropp.hjärnstam': headInside(['hjärnstam'], [20, 92]),
+  'kropp.hjärnskakning': headInside([], undefined, { hit: true }),
+  'kropp.stroke': all(headInside([], undefined, { stroke: true }), pointAt([74, 36], [112, 8])),
+  'kropp.hjärnblödning': all(headInside([], undefined, { bleed: true }), pointAt([74, 33], [112, 8])),
+  'kropp.sköldkörtel': headInside(['sköldkörtel'], [112, 116]),
+  // ── Fortplantningsorgan ─────────────────────────────────────────
+  'kropp.äggcell': cells('ägg'),
+  'kropp.spermie': cells('spermie'),
+  'kropp.befruktning': cells('befruktning'),
+  'kropp.livmoder': uterus(['livmoder'], [108, 20]),
+  'kropp.äggstock': uterus(['äggstock'], [110, 90]),
+  'kropp.slida': uterus(['slida'], [100, 112]),
+  'kropp.penis': maleOrgans(['penis'], [104, 60]),
+  'kropp.testikel': maleOrgans(['testikel'], [108, 108]),
+  'kropp.ägglossning': uterus(['äggstock'], undefined, { egg: true }),
+  'kropp.menscykel': cycle('cykel'),
+  'kropp.mens': cycle('mens'),
 };
