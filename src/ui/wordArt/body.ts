@@ -19,18 +19,20 @@ export type FrontPart =
 
 const FACE = 'M60 26 C82 26 92 42 92 62 C92 84 78 98 60 98 C42 98 28 84 28 62 C28 42 38 26 60 26 Z';
 
-export function headFront(hl: FrontPart[] = [], opts: { smile?: boolean; eyesClosed?: boolean; arrowFrom?: [number, number] } = {}): Svg {
+export function headFront(hl: FrontPart[] = [], opts: { smile?: boolean; eyesClosed?: boolean; arrowFrom?: [number, number]; skin?: string; hairColor?: string; frown?: boolean; skinMarks?: Svg } = {}): Svg {
   const has = (p: FrontPart) => hl.includes(p);
   const out: Svg[] = [];
+  const SK = opts.skin ?? C.skin, HC = opts.hairColor ?? C.hair;
   // neck + shoulders
-  out.push(path('M50 92 L50 106 C36 108 22 112 16 120 L104 120 C98 112 84 108 70 106 L70 92 Z', C.skin, C.ink, 2.2));
+  out.push(path('M50 92 L50 106 C36 108 22 112 16 120 L104 120 C98 112 84 108 70 106 L70 92 Z', SK, C.ink, 2.2));
   out.push(path('M16 120 C22 112 36 108 50 106 C54 110 66 110 70 106 C84 108 98 112 104 120 Z', C.sky, C.ink, 2.2));
   // ears
   for (const [cx, side] of [[28, -1], [92, 1]] as const) {
-    out.push(has('öra') ? hlPath(`M${cx} 56 C${cx + side * 9} 52 ${cx + side * 10} 72 ${cx} 72 Z`) : path(`M${cx} 56 C${cx + side * 9} 52 ${cx + side * 10} 72 ${cx} 72 Z`, C.skin, C.ink, 2.2));
+    out.push(has('öra') ? hlPath(`M${cx} 56 C${cx + side * 9} 52 ${cx + side * 10} 72 ${cx} 72 Z`) : path(`M${cx} 56 C${cx + side * 9} 52 ${cx + side * 10} 72 ${cx} 72 Z`, SK, C.ink, 2.2));
   }
   // face
-  out.push(path(FACE, C.skin, C.ink, 2.4));
+  out.push(path(FACE, SK, C.ink, 2.4));
+  if (opts.skinMarks) out.push(opts.skinMarks);
   // cheeks, jaw, chin, temples, forehead highlights (drawn on the skin, under the features)
   if (has('kind')) out.push(ellipse(42, 72, 8, 6, HL, C.ink, 2), ellipse(78, 72, 8, 6, HL, C.ink, 2));
   if (has('käke')) out.push(line('M30 70 C34 86 46 96 60 98 C74 96 86 86 90 70', HL, 6));
@@ -38,11 +40,11 @@ export function headFront(hl: FrontPart[] = [], opts: { smile?: boolean; eyesClo
   if (has('tinning')) out.push(ellipse(33, 50, 4.5, 7, HL, C.ink, 2), ellipse(87, 50, 4.5, 7, HL, C.ink, 2));
   if (has('panna')) out.push(path('M40 38 C50 33 70 33 80 38 L80 46 C70 43 50 43 40 46 Z', HL, C.ink, 2));
   // hair (crown)
-  out.push(path('M30 54 C26 30 44 18 60 18 C78 18 94 30 90 54 C86 40 76 34 60 34 C46 34 34 40 30 54 Z', C.hair, C.ink, 2.2));
+  out.push(path('M30 54 C26 30 44 18 60 18 C78 18 94 30 90 54 C86 40 76 34 60 34 C46 34 34 40 30 54 Z', HC, C.ink, 2.2));
   if (has('hjässa')) out.push(hlPath('M40 26 C48 15 72 15 80 26 C70 31 50 31 40 26 Z'));
   // brows
   const brow = (x: number, d: number) => `M${x - 8} ${48 + d} Q${x} ${44 + d} ${x + 8} ${48 + d}`;
-  out.push(line(brow(47, 0), has('ögonbryn') ? HL : C.hair, has('ögonbryn') ? 5.5 : 3), line(brow(73, 0), has('ögonbryn') ? HL : C.hair, has('ögonbryn') ? 5.5 : 3));
+  out.push(line(brow(47, 0), has('ögonbryn') ? HL : HC, has('ögonbryn') ? 5.5 : 3), line(brow(73, 0), has('ögonbryn') ? HL : HC, has('ögonbryn') ? 5.5 : 3));
   // eyes
   for (const x of [47, 73]) {
     if (opts.eyesClosed || has('ögonlock')) {
@@ -59,9 +61,9 @@ export function headFront(hl: FrontPart[] = [], opts: { smile?: boolean; eyesClo
   out.push(has('näsborre') ? ellipse(56, 73, 2.6, 1.8, HL, C.ink, 1.6) + ellipse(64, 73, 2.6, 1.8, HL, C.ink, 1.6) : ellipse(56, 73, 1.4, 1, C.ink, null) + ellipse(64, 73, 1.4, 1, C.ink, null));
   out.push(line('M53 72 Q60 76 67 72', C.ink, 1.8));
   // mouth
-  const smile = opts.smile ?? (has('smilgrop') || has('mungipa'));
+  const smile = !opts.frown && (opts.smile ?? (has('smilgrop') || has('mungipa')));
   if (has('läpp') || has('mun')) out.push(hlPath(smile ? 'M50 81 Q60 90 70 81 Q60 84 50 81 Z' : 'M51 83 Q60 87 69 83 Q60 80 51 83 Z', 2));
-  out.push(line(smile ? 'M50 81 Q60 90 70 81' : 'M51 83 Q60 86 69 83', C.ink, 2.2));
+  out.push(line(smile ? 'M50 81 Q60 90 70 81' : opts.frown ? 'M51 86 Q60 80 69 86' : 'M51 83 Q60 86 69 83', C.ink, 2.2));
   if (has('mungipa')) out.push(circle(50, 81, 3.2, HL, C.ink, 1.6), circle(70, 81, 3.2, HL, C.ink, 1.6));
   if (has('smilgrop')) out.push(ellipse(45, 83, 3.4, 2.6, HL, C.ink, 1.6), ellipse(75, 83, 3.4, 2.6, HL, C.ink, 1.6));
   if (opts.arrowFrom) out.push(pointer(hl, opts.arrowFrom));

@@ -2,8 +2,10 @@
  * Word illustrations for Kroppen & sinnena (0.13 pilot), built with body.ts.
  * Keys are motif ids as used in src/content/data/images/wordVisuals.json.
  */
-import type { Svg } from './kit';
+import { C, all, line, path, type Svg } from './kit';
 import { faceFeatures, headFront, headProfile, skull } from './body';
+import { boneSection, jointType, kneeJoint, muscles, skeleton, tendon } from './anatomy';
+import { HAIR, armSkin, axelbred, chestHair, compare, faceSkin, figure, hairHead, skinTones } from './figures';
 import { armFlex, bodyBack, bodyFront, bodySide, fist, footprints, footSide, handBack, handPalm, legSide, tiptoe, toesTop, writingHand, barefoot } from './limbs';
 
 export const BODY_MOTIFS: Record<string, Svg> = {
@@ -70,4 +72,85 @@ export const BODY_MOTIFS: Record<string, Svg> = {
   'kropp.ländrygg': bodyBack(['ländrygg'], [108, 56]),
   'kropp.svank': bodySide(['svank'], [16, 48]),
   'kropp.rumpa': bodyBack(['rumpa'], [108, 104]),
+  // ── Leder och rörelser (substantiv) ─────────────────────────────
+  'kropp.led-kropp': skeleton(['led']),
+  'kropp.knäled': skeleton(['knäled'], [100, 112]),
+  'kropp.höftled': skeleton(['höftled'], [104, 86]),
+  'kropp.axelled': skeleton(['axelled'], [108, 14]),
+  'kropp.fingerled': handPalm(['fingerled'], [100, 20]),
+  // ── Ben och skelettdelar ────────────────────────────────────────
+  'kropp.skelett': skeleton(['skelett']),
+  'kropp.kranium': skeleton(['kranium'], [96, 6]),
+  'kropp.ryggrad': skeleton(['ryggrad'], [104, 60]),
+  'kropp.kota': skeleton(['kota'], [104, 64]),
+  'kropp.svanskota': skeleton(['svanskota'], [100, 90]),
+  'kropp.bröstkorg': skeleton(['bröstkorg'], [108, 30]),
+  'kropp.revben': skeleton(['revben'], [108, 50]),
+  'kropp.bröstben': skeleton(['bröstben'], [100, 36]),
+  'kropp.nyckelben': skeleton(['nyckelben'], [104, 10]),
+  'kropp.bäcken': skeleton(['bäcken'], [106, 66]),
+  'kropp.höftben': skeleton(['höftben'], [106, 66]),
+  'kropp.lårben': skeleton(['lårben'], [104, 90]),
+  'kropp.skenben': skeleton(['skenben'], [102, 112]),
+  'kropp.benmärg': boneSection('märg'),
+  'kropp.benskörhet': boneSection('skör'),
+  // ── Leder och ledband ───────────────────────────────────────────
+  'kropp.ledband': kneeJoint(['ledband'], [112, 100]),
+  'kropp.brosk': kneeJoint(['brosk'], [108, 104]),
+  'kropp.menisk': kneeJoint(['menisk'], [112, 50]),
+  'kropp.korsband': kneeJoint(['korsband'], [110, 34]),
+  'kropp.ledvätska': kneeJoint(['ledvätska'], [112, 110]),
+  'kropp.ledkapsel': kneeJoint(['ledkapsel'], [112, 30]),
+  'kropp.artros': kneeJoint(['artros'], [16, 92]),
+  'kropp.gångjärnsled': jointType('gångjärn'),
+  'kropp.kulled': jointType('kula'),
+  // ── Muskelgrupper ───────────────────────────────────────────────
+  'kropp.muskelgrupp': muscles(['muskelgrupp'], 'front', [104, 64]),
+  'kropp.muskelmassa': muscles(['muskelmassa'], 'front'),
+  'kropp.biceps': armFlex(['biceps'], [60, 4]),
+  'kropp.triceps': armFlex(['triceps'], [56, 104]),
+  'kropp.magmuskel': muscles(['magmuskel'], 'front', [104, 56]),
+  'kropp.ryggmuskel': muscles(['ryggmuskel'], 'back', [106, 44]),
+  'kropp.bröstmuskel': muscles(['bröstmuskel'], 'front', [106, 20]),
+  'kropp.lårmuskel': legSide(['lårmuskel'], [104, 30]),
+  'kropp.vadmuskel': legSide(['vadmuskel'], [16, 76]),
+  'kropp.sätesmuskel': muscles(['sätesmuskel'], 'back', [108, 92]),
+  // ── Senor och fästen ────────────────────────────────────────────
+  'kropp.sena': tendon(['sena'], [112, 60]),
+  'kropp.hälsena': legSide(['hälsena'], [16, 96]),
+  'kropp.muskelfäste': tendon(['muskelfäste'], [112, 112]),
+  'kropp.senskida': tendon(['senskida'], [112, 40]),
+  'kropp.tennisarmbåge': armFlex(['tennisarmbåge'], [116, 96]),
+  // ── Hud och kroppsbehåring ──────────────────────────────────────
+  'kropp.hudfärg': skinTones(),
+  'kropp.blek': faceSkin('blek'),
+  'kropp.solbränd': faceSkin('solbränd'),
+  'kropp.rodna': faceSkin('rodna'),
+  'kropp.gåshud': armSkin('gåshud'),
+  'kropp.rynkig': faceSkin('rynkig'),
+  'kropp.födelsemärke': faceSkin('födelsemärke'),
+  'kropp.leverfläck': armSkin('leverfläck'),
+  'kropp.fräkne': faceSkin('fräkne'),
+  'kropp.ärr': armSkin('ärr'),
+  'kropp.blåmärke': armSkin('blåmärke'),
+  'kropp.kroppsbehåring': armSkin('kroppsbehåring'),
+  'kropp.hårstrå': armSkin('hårstrå'),
+  'kropp.brösthår': chestHair(),
+  'kropp.fjun': faceSkin('fjun'),
+  // ── Beskriva kroppsliga kännetecken ─────────────────────────────
+  'kropp.utseende': all(figure({ x: 40, hairStyle: 'long', top: C.orange }), path('M74 18 L106 18 L106 112 L74 112 Z', C.sky, C.ink, 2.4), path('M78 22 L102 22 L102 108 L78 108 Z', '#d8eef8', null), figure({ x: 90, h: 0.86, hairStyle: 'long', top: C.orange })),
+  'kropp.kännetecken': faceSkin('kännetecken'),
+  'kropp.kroppsbyggnad': all(line('M4 112 L116 112', C.grey2, 2), figure({ x: 22, w: 0.72, h: 0.96 }), figure({ x: 60, w: 1.25, belly: 0.4, top: C.green }), figure({ x: 98, muscle: true, shoulders: 1.3, top: C.orange })),
+  'kropp.långväxt': compare({ h: 1.12, top: C.green }, { h: 0.82 }),
+  'kropp.kortväxt': compare({ h: 0.7, top: C.green }, { h: 1 }),
+  'kropp.mager.2': compare({ w: 0.62, top: C.green }),
+  'kropp.kraftig.2': compare({ w: 1.4, shoulders: 1.1, belly: 0.3, top: C.green }),
+  'kropp.muskulös': compare({ muscle: true, shoulders: 1.3, top: C.green }),
+  'kropp.axelbred': axelbred(),
+  'kropp.knubbig': compare({ h: 0.8, w: 1.35, belly: 0.7, top: C.green }),
+  'kropp.fyllig': compare({ w: 1.3, belly: 0.5, hairStyle: 'long', top: C.green }),
+  'kropp.överviktig': compare({ w: 1.6, belly: 1, top: C.green }),
+  'kropp.blond': hairHead(HAIR.blond),
+  'kropp.mörkhårig': hairHead(HAIR.mörk),
+  'kropp.rödhårig': hairHead(HAIR.röd),
 };
