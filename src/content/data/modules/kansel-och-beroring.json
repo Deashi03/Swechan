@@ -1,0 +1,170 @@
+{
+ "id": "m.kansel-och-beroring",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Känsel och beröring",
+ "titleJa": "{触覚|しょっかく}と{触|ふ}れること",
+ "descriptionSv": "Känsel och beröring: känsel, röra vid, beröra, beröring, krama, klappa, smeka, kittla, kittlig, stickig, sticka sig, bränna sig, hetta, brännhet och fingertoppskänsla.",
+ "descriptionJa": "{触覚|しょっかく}と{触|ふ}れること：{触覚|しょっかく}、{触|さわ}る、{触|ふ}れる、{触|ふ}れること、{抱|だ}きしめる、なでる、{愛撫|あいぶ}する、くすぐる、くすぐったがりの、チクチクする、{刺|さ}さる、やけどする、{熱気|ねっき}、やけどするほど{熱|あつ}い、{細|こま}やかな{気配|きくば}り。",
+ "categoryId": "R02-A01-T04",
+ "tags": [
+  "kropp",
+  "känsel"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.ljud-och-horsel"
+ ],
+ "related": [],
+ "recommendedOrder": 735,
+ "words": [
+  {
+   "senseId": "s.känsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röra-vid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beröra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krama.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beröring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klappa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smeka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kittla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kittlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stickig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sticka-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bränna-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hetta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brännhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fingertoppskänsla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Känslor i huden",
+  "paragraphs": [
+   "Yui läser en artikel om känsel. Huden har miljontals nerver som känner värme, kyla och beröring.",
+   "Det finns flest nerver i läpparna och fingertopparna. Därför har man bra fingertoppskänsla, och därför kan man lätt bränna sig i munnen om teet är brännhett.",
+   "Yui tänker på sin vardag. På morgonen kramar hon sin katt. På vägen till jobbet klappar hon grannens hund. Hennes nya tröja är stickig.",
+   "Yui sticker sig på en ros i parken. På kvällen lagar hon mat och känner hettan från spisen. – Man får inte röra vid den nu, säger hon till sig själv.",
+   "Hennes systerdotter kommer på besök. Hon är kittlig, och Yui kittlar henne tills hon skrattar. Sedan somnar barnet, och Yui smeker henne på håret.",
+   "Artikeln berör Yui. – Vi tänker sällan på känseln, men den är viktig, tänker hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var finns flest nerver?",
+    "options": [
+     "I ryggen",
+     "I fötterna",
+     "I läpparna och fingertopparna",
+     "I armarna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det finns flest nerver i läpparna och fingertopparna.",
+    "explanationJa": "{唇|くちびる}と{指先|ゆびさき}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Yui med grannens hund?",
+    "options": [
+     "Klappar den",
+     "Kramar den",
+     "Kittlar den",
+     "Smeker den"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… klappar hon grannens hund.",
+    "explanationJa": "なでます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Yuis nya tröja är mjuk.",
+    "correct": false,
+    "explanationSv": "Hennes nya tröja är stickig.",
+    "explanationJa": "チクチクします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad händer i parken?",
+    "options": [
+     "Hon sticker sig på en ros",
+     "Hon bränner sig",
+     "Hon ramlar",
+     "Hon kramar en vän"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Yui sticker sig på en ros i parken.",
+    "explanationJa": "バラのとげが{刺|さ}さります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Systerdottern tycker om när Yui kittlar henne.",
+    "correct": true,
+    "explanationSv": "Yui kittlar henne tills hon skrattar.",
+    "explanationJa": "{笑|わら}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om känsel och beröring, och om skillnader mellan Sverige och Japan.",
+  "discussionPoints": [
+   "Kramar ni varandra när ni träffas i Japan?",
+   "Är du kittlig? Var?",
+   "Vilka kläder tycker du är stickiga?",
+   "Har du bränt dig nyligen?"
+  ]
+ }
+}
