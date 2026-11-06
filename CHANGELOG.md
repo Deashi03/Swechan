@@ -24,6 +24,7 @@ Inga publicerade `m.*`- eller `s.*`-ID:n har ändrats.
 ### Övrigt
 - Grundordförrådet har fått vanliga ord som vårdtexterna behöver, till exempel *gravid*, *kontroll*, *laboratorium*, *utbildning*, *forskning*, *samhälle*, *effekt*, *åtgärd*, *fysisk*, *passiv*, *tobak*, *cigarett* och *helikopter*, samt namn och förkortningar som *BVC*, *MRI*, *ADHD* och *Livsmedelsverket*.
 - E2E: den planerade katalogposten ligger nu i *Människan & hälsa → Känslor & psykologi → Grundkänslor → Glädje och lycka*, eftersom hela *Hälsa & sjukvård* är publicerat.
+- Snabbare övningsgenerering: distraktorer väljs med en lat, seedad blandning (`lazyShuffle`) i stället för att hela ordförrådet filtreras och blandas vid varje övning, och svarsmaskeringen kompilerar ett reguljärt uttryck per ordpost (cachat). Det innehållsbreda övningstestet gick från ~57 s till ~9 s (CI hade börjat överskrida tidsgränsen på 60 s), och appen genererar övningar snabbare på telefonen.
 
 ## 0.9.0 – 2026-11-06
 

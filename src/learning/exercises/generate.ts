@@ -7,7 +7,7 @@ import { imageDistractorAllowed, imageFor, quizImageFor } from '../../content/im
 import type { ContentRepository, SenseRef } from '../../content/repository';
 import type { Inflection, VocabularyEntry } from '../../content/schema';
 import { learnConfig } from '../../config/appConfig';
-import { createRng, hashString, shuffle } from '../../lib/random';
+import { createRng, hashString, lazyShuffle, shuffle } from '../../lib/random';
 import type { ChoiceExercise, ChoiceOption, ExerciseInstance, ExerciseType, TypedExercise } from './types';
 
 export type GenContext = {
@@ -62,17 +62,20 @@ function distractors(target: SenseRef, ctx: GenContext, n: number, rng: () => nu
   const ok = (r: SenseRef) => !conflicts(r) && (!filter || filter(r));
   const samePos = (r: SenseRef) => r.entry.pos === target.entry.pos;
   const poolOk = pool.filter(ok);
-  const allOk = allSenses(ctx.repo).filter(ok);
-  const ordered = [
-    ...shuffle(poolOk.filter(samePos), rng),
-    ...shuffle(allOk.filter(samePos), rng),
-    ...shuffle(poolOk, rng),
-    ...shuffle(allOk, rng),
-  ];
+  const all = allSenses(ctx.repo);
+  // Preference order: pool (same POS), whole vocabulary (same POS), pool, whole vocabulary.
+  // The whole-vocabulary stages are shuffled lazily and only as far as needed: filtering and
+  // shuffling every sense for each exercise made generation scale with the size of the content.
+  function* ordered(): Generator<SenseRef> {
+    yield* shuffle(poolOk.filter(samePos), rng);
+    for (const r of lazyShuffle(all, rng)) if (samePos(r) && ok(r)) yield r;
+    yield* shuffle(poolOk, rng);
+    for (const r of lazyShuffle(all, rng)) if (ok(r)) yield r;
+  }
   const out: SenseRef[] = [];
   const seenEntries = new Set<string>();
   const seenGloss = new Set<string>(glossSet(target));
-  for (const r of ordered) {
+  for (const r of ordered()) {
     if (out.length >= n) break;
     if (seenEntries.has(r.entry.id)) continue;
     // two distractors with the same Japanese gloss would show the same label twice
@@ -96,14 +99,18 @@ const lemmaLabel = (e: VocabularyEntry) => (e.inflection.kind === 'noun' ? `${e.
  * Hide every form of the answer word in a text shown with a recall exercise
  * (feedback 0.4: "the answer is in the question"). Multi-word forms first.
  */
+const maskCache = new WeakMap<object, RegExp>();
 export function maskAnswer(text: string, entry: VocabularyEntry): string {
-  const forms = [...new Set([entry.lemma, ...allForms(entry)].map((f) => f.toLowerCase()))].sort((a, b) => b.length - a.length);
-  let out = text;
-  for (const f of forms) {
-    const esc = f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+');
-    out = out.replace(new RegExp(`(^|[^\\p{L}])${esc}(?=$|[^\\p{L}])`, 'giu'), '$1＿＿＿');
+  // One alternation per entry (longest form first), compiled once: building a Unicode regex for
+  // every form on every call dominated exercise generation.
+  let re = maskCache.get(entry);
+  if (!re) {
+    const forms = [...new Set([entry.lemma, ...allForms(entry)].map((f) => f.toLowerCase()))].sort((a, b) => b.length - a.length);
+    const alt = forms.map((f) => f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+')).join('|');
+    re = new RegExp(`(^|[^\\p{L}])(?:${alt})(?=$|[^\\p{L}])`, 'giu');
+    maskCache.set(entry, re);
   }
-  return out;
+  return text.replace(re, '$1＿＿＿');
 }
 
 function contextLine(ref: SenseRef): string | undefined {
