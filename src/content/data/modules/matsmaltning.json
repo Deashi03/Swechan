@@ -1,0 +1,171 @@
+{
+ "id": "m.matsmaltning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Matsmältning",
+ "titleJa": "{消化|しょうか}",
+ "descriptionSv": "Matsmältning: matsmältning, smälta, saliv, enzym, magsaft, ta upp, ämnesomsättning, mättnadskänsla, lättsmält, uppblåst, rapa, uppstötning, släppa sig, bajs och avföring.",
+ "descriptionJa": "{消化|しょうか}：{消化|しょうか}、{消化|しょうか}する、{唾液|だえき}、{酵素|こうそ}、{胃液|いえき}、{吸収|きゅうしゅう}する、{代謝|たいしゃ}、{満腹感|まんぷくかん}、{消化|しょうか}のよい、お{腹|なか}が{張|は}った、げっぷをする、{逆流|ぎゃくりゅう}、おならをする、うんち、{便|べん}。",
+ "categoryId": "R02-A01-T05",
+ "tags": [
+  "kropp",
+  "funktion",
+  "mage"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.blodcirkulationen"
+ ],
+ "related": [],
+ "recommendedOrder": 743,
+ "words": [
+  {
+   "senseId": "s.matsmältning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smälta.2",
+   "active": true
+  },
+  {
+   "senseId": "s.saliv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enzym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magsaft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-upp-kropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ämnesomsättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mättnadskänsla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lättsmält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppblåst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rapa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppstötning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släppa-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bajs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avföring.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Matens resa",
+  "paragraphs": [
+   "Leos klass lär sig om matsmältningen. Läraren berättar om en smörgås som man äter.",
+   "– Först tuggar man, och saliven gör maten blöt. I saliven finns enzymer som börjar bryta ner maten. Sedan sväljer man.",
+   "– I magsäcken finns magsaft. Där smälter maten i några timmar. Sedan går den till tarmen, som tar upp näringen. Det som blir kvar kommer ut som avföring. Barn säger bajs.",
+   "Hela klassen skrattar. En pojke rapar högt, och en annan har släppt sig. – Det är också en del av matsmältningen, säger läraren och ler.",
+   "– Vissa blir uppblåsta av bönor, och vissa får sura uppstötningar av kaffe. När man är sjuk ska man äta lättsmält mat.",
+   "– Ät långsamt, så att mättnadskänslan hinner komma. Och rör på er, så blir ämnesomsättningen bra."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör saliven?",
+    "options": [
+     "Tar upp näringen",
+     "Gör att man blir mätt",
+     "Gör maten sur",
+     "Gör maten blöt och börjar bryta ner den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… saliven gör maten blöt. I saliven finns enzymer som börjar bryta ner maten.",
+    "explanationJa": "{食|た}べ{物|もの}を{湿|しめ}らせて{分解|ぶんかい}し{始|はじ}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var tas näringen upp?",
+    "options": [
+     "I munnen",
+     "I magsäcken",
+     "I saliven",
+     "I tarmen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… tarmen, som tar upp näringen.",
+    "explanationJa": "{腸|ちょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läraren blir arg när pojken rapar.",
+    "correct": false,
+    "explanationSv": "Det är också en del av matsmältningen, säger läraren och ler.",
+    "explanationJa": "{笑|わら}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ska man äta när man är sjuk?",
+    "options": [
+     "Lättsmält mat",
+     "Bönor",
+     "Kaffe",
+     "Fet mat"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När man är sjuk ska man äta lättsmält mat.",
+    "explanationJa": "{消化|しょうか}のよいものです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är bra att äta snabbt.",
+    "correct": false,
+    "explanationSv": "Ät långsamt, så att mättnadskänslan hinner komma.",
+    "explanationJa": "ゆっくり{食|た}べるのがよいです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om mat och magen.",
+  "discussionPoints": [
+   "Vilken mat är lättsmält för dig?",
+   "Blir du uppblåst av någon mat?",
+   "Äter du snabbt eller långsamt?",
+   "Är det oartigt att rapa i Japan?"
+  ]
+ }
+}
