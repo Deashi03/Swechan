@@ -1,0 +1,170 @@
+{
+ "id": "m.dosering-och-intervall",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Dosering och intervall",
+ "titleJa": "{用量|ようりょう}と{服用間隔|ふくようかんかく}",
+ "descriptionSv": "Dosering och intervall: dos, intervall, en gång om dagen, var åttonde timme, dygnsdos, maxdos, överdos, dubbel dos, glömma en dos, milligram, mätsked, på fastande mage, i samband med måltid, kur och regelbundet.",
+ "descriptionJa": "{用量|ようりょう}と{服用間隔|ふくようかんかく}：（1{回|かい}の）{服用量|ふくようりょう}、{間隔|かんかく}、1{日|にち}1{回|かい}、8{時間|じかん}ごとに、1{日量|にちりょう}、{最大量|さいだいりょう}、{過剰摂取|かじょうせっしゅ}、2{回分|かいぶん}の{量|りょう}、{飲|の}み{忘|わす}れる、ミリグラム、{計量|けいりょう}スプーン、{空腹時|くうふくじ}に、{食事|しょくじ}の{際|さい}に、{服薬期間|ふくやくきかん}、{規則正|きそくただ}しく。",
+ "categoryId": "R02-A02-T04",
+ "tags": [
+  "hälsa",
+  "läkemedel"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.recept-och-apotek"
+ ],
+ "related": [],
+ "recommendedOrder": 833,
+ "words": [
+  {
+   "senseId": "s.dos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intervall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-gång-om-dagen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.var-åttonde-timme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dygnsdos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maxdos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överdos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbel-dos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glömma-en-dos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.milligram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätsked.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-fastande-mage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-samband-med-måltid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regelbundet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur mycket och hur ofta?",
+  "paragraphs": [
+   "Leo har fått antibiotika mot halsfluss. På förpackningen står det: en tablett var åttonde timme i tio dagar. Det är en kur som han måste äta klart.",
+   "Varje tablett innehåller 500 milligram. Dygnsdosen blir alltså tre tabletter. Apotekaren säger att intervallet mellan doserna ska vara ungefär lika långt.",
+   "Mormor tar sin blodtrycksmedicin en gång om dagen, på fastande mage innan frukost. Hennes andra tablett ska hon ta i samband med måltid, annars får hon ont i magen.",
+   "Lillebror Max får hostmedicin. Pappa mäter upp rätt dos med mätskeden som följer med flaskan.",
+   "En dag råkar Leo glömma en dos. – Ska jag ta dubbel dos nästa gång? frågar han. – Nej, säger mamma. Ta nästa tablett som vanligt. Det står i bipacksedeln.",
+   "Läraren berättar att man aldrig ska gå över maxdosen, inte ens av vanliga värktabletter. En överdos kan vara farlig. Det viktigaste är att ta medicinen regelbundet och som läkaren har sagt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur ofta ska Leo ta sin tablett?",
+    "options": [
+     "En gång om dagen",
+     "Var fjärde timme",
+     "En gång i veckan",
+     "Var åttonde timme"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… en tablett var åttonde timme i tio dagar.",
+    "explanationJa": "8{時間|じかん}ごとです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur stor är Leos dygnsdos?",
+    "options": [
+     "Tre tabletter",
+     "En tablett",
+     "Fem tabletter",
+     "Tio tabletter"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Dygnsdosen blir alltså tre tabletter.",
+    "explanationJa": "3{錠|じょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mormor tar blodtrycksmedicinen efter frukost.",
+    "correct": false,
+    "explanationSv": "… på fastande mage innan frukost.",
+    "explanationJa": "{朝食|ちょうしょく}の{前|まえ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ska Leo göra när han har glömt en dos?",
+    "options": [
+     "Ta dubbel dos",
+     "Sluta med medicinen",
+     "Ta nästa tablett som vanligt",
+     "Ringa 112"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Nej, säger mamma. Ta nästa tablett som vanligt.",
+    "explanationJa": "いつもどおり{次|つぎ}の{分|ぶん}を{飲|の}みます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo ska ta antibiotika även om han mår bättre efter några dagar.",
+    "correct": true,
+    "explanationSv": "Det är en kur som han måste äta klart.",
+    "explanationJa": "{最後|さいご}まで{飲|の}む{必要|ひつよう}があります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man tar medicin.",
+  "discussionPoints": [
+   "Har du glömt en dos någon gång?",
+   "Varför ska man äta hela kuren med antibiotika?",
+   "Tar någon i din familj medicin på fastande mage?",
+   "Hur kommer du ihåg att ta medicin regelbundet?"
+  ]
+ }
+}

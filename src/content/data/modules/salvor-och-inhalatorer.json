@@ -1,0 +1,170 @@
+{
+ "id": "m.salvor-och-inhalatorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Salvor och inhalatorer",
+ "titleJa": "{軟膏|なんこう}と{吸入器|きゅうにゅうき}",
+ "descriptionSv": "Salvor och inhalatorer: salva, applicera, tunt lager, gel, kortison, kortisonkräm, lokal, nässpray, ögondroppar, örondroppar, astmamedicin, inhalera, puff, stolpiller och nikotinplåster.",
+ "descriptionJa": "{軟膏|なんこう}と{吸入器|きゅうにゅうき}：{軟膏|なんこう}、{塗|ぬ}る、{薄|うす}い{層|そう}、ジェル、ステロイド、ステロイドクリーム、{局所的|きょくしょてき}な、{点鼻薬|てんびやく}、{目薬|めぐすり}、{点耳薬|てんじやく}、{喘息|ぜんそく}の{薬|くすり}、{吸入|きゅうにゅう}する、1{回|かい}の{噴霧|ふんむ}、{座薬|ざやく}、ニコチンパッチ。",
+ "categoryId": "R02-A02-T04",
+ "tags": [
+  "hälsa",
+  "läkemedel"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.biverkningar-och-varningar"
+ ],
+ "related": [],
+ "recommendedOrder": 835,
+ "words": [
+  {
+   "senseId": "s.salva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.applicera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tunt-lager.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortison.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortisonkräm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lokal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nässpray.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögondroppar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.örondroppar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.astmamedicin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inhalera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.puff.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stolpiller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nikotinplåster.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Medicin som inte är tabletter",
+  "paragraphs": [
+   "Aiko har eksem på armarna. Läkaren har skrivit ut en kortisonkräm. – Kortison minskar inflammationen, säger hon. Applicera ett tunt lager två gånger om dagen.",
+   "Hon förklarar att en kräm, en salva eller en gel ger en lokal behandling. Medicinen verkar bara där man smörjer.",
+   "När Aiko har hösnuva tar hon nässpray och ögondroppar. Lillebror har haft ont i örat och har fått örondroppar.",
+   "Emma har astma. Hennes astmamedicin finns i en inhalator. Hon tar två puffar varje morgon och ska inhalera medicinen djupt.",
+   "När Max hade hög feber och kräktes kunde han inte svälja tabletter. Då fick han ett stolpiller i stället.",
+   "Pappa vill sluta röka. Han har köpt nikotinplåster på apoteket och sätter ett nytt plåster på armen varje morgon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har läkaren skrivit ut till Aiko?",
+    "options": [
+     "En kortisonkräm",
+     "En inhalator",
+     "Ögondroppar",
+     "Ett stolpiller"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Läkaren har skrivit ut en kortisonkräm.",
+    "explanationJa": "ステロイドクリームです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur mycket kräm ska Aiko använda?",
+    "options": [
+     "Så mycket som möjligt",
+     "En hel tub",
+     "Ingen",
+     "Ett tunt lager"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Applicera ett tunt lager två gånger om dagen.",
+    "explanationJa": "{薄|うす}く{塗|ぬ}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "En lokal behandling verkar i hela kroppen.",
+    "correct": false,
+    "explanationSv": "Medicinen verkar bara där man smörjer.",
+    "explanationJa": "{塗|ぬ}った{所|ところ}だけに{効|き}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur tar Emma sin astmamedicin?",
+    "options": [
+     "Som tablett",
+     "Som kräm",
+     "Två puffar med en inhalator",
+     "Som stolpiller"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon tar två puffar varje morgon …",
+    "explanationJa": "{吸入器|きゅうにゅうき}で2{回|かい}{吸入|きゅうにゅう}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Max fick stolpiller eftersom han kräktes.",
+    "correct": true,
+    "explanationSv": "När Max hade hög feber och kräktes kunde han inte svälja tabletter.",
+    "explanationJa": "{吐|は}いていたからです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om olika sorters medicin.",
+  "discussionPoints": [
+   "Har du använt nässpray eller ögondroppar?",
+   "Är stolpiller vanliga i Japan?",
+   "Vad är skillnaden mellan en kräm och en tablett?",
+   "Känner du någon som använder en inhalator?"
+  ]
+ }
+}

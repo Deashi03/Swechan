@@ -1,0 +1,170 @@
+{
+ "id": "m.biverkningar-och-varningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Biverkningar och varningar",
+ "titleJa": "{副作用|ふくさよう}と{警告|けいこく}",
+ "descriptionSv": "Biverkningar och varningar: biverkning, sällsynt, dåsighet, varningstriangel, trafikfarlig, interaktion, beroende, beroendeframkallande, abstinens, försiktighet, amma, observera, riskera, rapportera och Läkemedelsverket.",
+ "descriptionJa": "{副作用|ふくさよう}と{警告|けいこく}：{副作用|ふくさよう}、まれな、{眠気|ねむけ}、{警告|けいこく}の{三角|さんかく}マーク、{運転|うんてん}に{危険|きけん}な、{相互作用|そうごさよう}、{依存|いぞん}、{依存性|いぞんせい}のある、{禁断症状|きんだんしょうじょう}、{注意|ちゅうい}、{授乳|じゅにゅう}する、{注意|ちゅうい}する、{危険|きけん}がある、{報告|ほうこく}する、スウェーデン{医薬品庁|いやくひんちょう}。",
+ "categoryId": "R02-A02-T04",
+ "tags": [
+  "hälsa",
+  "läkemedel"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.dosering-och-intervall"
+ ],
+ "related": [],
+ "recommendedOrder": 834,
+ "words": [
+  {
+   "senseId": "s.biverkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sällsynt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dåsighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningstriangel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikfarlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.interaktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beroende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beroendeframkallande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.abstinens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försiktighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.amma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.observera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riskera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rapportera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Läkemedelsverket.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Läs bipacksedeln",
+  "paragraphs": [
+   "Aikos mamma har fått en ny medicin mot allergi. Hon läser bipacksedeln noga. Där står det vilka biverkningar medicinen kan ge.",
+   "Vanliga biverkningar är huvudvärk och dåsighet. Allvarliga biverkningar är sällsynta. På förpackningen finns en röd varningstriangel. – Den betyder att medicinen kan vara trafikfarlig, säger mamma. Jag kör inte bil i dag.",
+   "Det står också: Observera att medicinen inte ska tas med alkohol. Mamma frågar apotekaren om det finns någon interaktion med hennes andra tabletter. Det gör det inte.",
+   "Mormor tar sömnmedel ibland. Läkaren har sagt att det är beroendeframkallande, och att hon riskerar att få ett beroende om hon tar det varje kväll. Om man slutar för snabbt kan man få abstinens.",
+   "Aikos moster har nyss fått barn och ammar. Hon måste använda vissa läkemedel med försiktighet, eftersom medicinen kan gå över i mjölken.",
+   "Om man får en konstig biverkning kan man rapportera den till Läkemedelsverket. Myndigheten samlar in information om alla läkemedel i Sverige."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad läser mamma noga?",
+    "options": [
+     "Bipacksedeln",
+     "Receptet",
+     "En bok",
+     "Fass på datorn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon läser bipacksedeln noga.",
+    "explanationJa": "{添付文書|てんぷぶんしょ}を{読|よ}みます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad betyder den röda varningstriangeln?",
+    "options": [
+     "Att medicinen är billig",
+     "Att medicinen kan vara trafikfarlig",
+     "Att medicinen är för barn",
+     "Att medicinen är gammal"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Den betyder att medicinen kan vara trafikfarlig …",
+    "explanationJa": "{運転|うんてん}に{危険|きけん}かもしれないという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mammas nya medicin passar dåligt med hennes andra tabletter.",
+    "correct": false,
+    "explanationSv": "… om det finns någon interaktion med hennes andra tabletter. Det gör det inte.",
+    "explanationJa": "{飲|の}み{合|あ}わせに{問題|もんだい}はありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad kan hända om man slutar med sömnmedel för snabbt?",
+    "options": [
+     "Man blir trafikfarlig",
+     "Man kan få abstinens",
+     "Man får allergi",
+     "Ingenting"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om man slutar för snabbt kan man få abstinens.",
+    "explanationJa": "{禁断症状|きんだんしょうじょう}が{出|で}ることがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Medicin kan påverka bröstmjölk.",
+    "correct": true,
+    "explanationSv": "… eftersom medicinen kan gå över i mjölken.",
+    "explanationJa": "{薬|くすり}が{母乳|ぼにゅう}に{移|うつ}ることがあります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om biverkningar och varningar.",
+  "discussionPoints": [
+   "Har du fått biverkningar av en medicin?",
+   "Finns det varningar på medicinförpackningar i Japan?",
+   "Varför får man inte köra bil med vissa mediciner?",
+   "Vem skulle du fråga om interaktioner?"
+  ]
+ }
+}
