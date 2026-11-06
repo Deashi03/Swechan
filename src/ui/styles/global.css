@@ -296,6 +296,7 @@ a.list-item { text-decoration: none; color: inherit; }
 .word-image.photo { object-fit: cover; box-shadow: inset 0 0 0 1px rgba(0,0,0,.06); border: 3px solid #fff; outline: 1px solid var(--c-border); }
 .word-image.loading { animation: pulse 1.2s ease-in-out infinite; }
 .word-image.anim { overflow: visible; background: none; }
+.word-image.anim .scene-player, .word-image.anim > svg { border-radius: 16px; overflow: hidden; }
 .word-image.anim .scene-player button { line-height: 1; }
 @keyframes pulse { 50% { opacity: .6; } }
 .picture-prompt { display: flex; justify-content: center; }

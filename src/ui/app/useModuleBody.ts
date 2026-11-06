@@ -1,4 +1,4 @@
-import { allWordImages, photoUrl } from '../../content/images';
+import { allWordImages, imageFor, photoUrl, sceneUrl } from '../../content/images';
 import { useEffect, useState } from 'react';
 import { markModuleOffline } from '../../content/offlineModules';
 import { getContent } from '../../content/repository';
@@ -14,11 +14,29 @@ export function useModuleBody(id: string): { body: Module | undefined; error: st
     let alive = true;
     setError(null);
     repo.loadModuleBody(id)
-      .then((b) => { if (!alive) return; setBody(b); markModuleOffline(id); })
+      .then((b) => { if (!alive) return; setBody(b); markModuleOffline(id); prefetchModuleVisuals(id); })
       .catch((e: Error) => alive && setError(navigator.onLine === false ? 'Du verkar vara offline, och den här lektionen har inte laddats på enheten än.' : e.message));
     return () => { alive = false; };
   }, [id, attempt, repo]);
   return { body, error, retry: () => setAttempt((a) => a + 1) };
+}
+
+/**
+ * Animations (0.12): fetch the scene files of a module's words so that the service worker caches
+ * them – the word introduction and later reviews then work offline. Done per module (when the
+ * module is opened), not for the whole catalogue, so the download grows with what the learner uses.
+ */
+const prefetchedVisuals = new Set<string>();
+export function prefetchModuleVisuals(moduleId: string): void {
+  if (prefetchedVisuals.has(moduleId)) return;
+  prefetchedVisuals.add(moduleId);
+  const m = getContent().getModule(moduleId);
+  if (!m) return;
+  for (const w of m.words) {
+    const v = imageFor(w.senseId);
+    if (v?.kind === 'animation') fetch(sceneUrl(v.file)).catch(() => undefined);
+  }
+  import('../components/AnimatedWordVisual').catch(() => undefined);
 }
 
 /** Prefetch all published lesson bodies when the browser is idle (makes them available offline). */

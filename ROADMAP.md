@@ -45,9 +45,15 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.11 – Känslor & psykologi (klar)
 - 42 nya moduler: *Människan & hälsa → Känslor & psykologi* helt publicerat (383 moduler totalt).
 
-## v0.12 – nästa steg
-- Infrastruktur för bilder och animationer enligt produktägarens kommande instruktion; därefter bilder för de publicerade modulerna.
-- Nästa överämne, ett i taget: *Människan & hälsa → Relationer & familj* (R02-A04).
+## v0.12 – Animationer: grunden (klar)
+- Spelaren från Animation_tool-, registret `wordVisuals.json`, animation i introduktionen och posterbild i bildövningar, offline per modul, visualiseringsplan för alla betydelser.
+
+## v0.13 – Pilot: Kroppen & sinnena helt visualiserat
+- Granska planen per modul, producera scener i Animation_tool-, blindtesta, importera; mät tid och kvalitet per modul.
+
+## v0.14 och framåt – två spår per release
+- Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
+- Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
 - Japanska katalogtitlar (översättning + granskning).
 - Utökad validering (andel okända ord i lästext mot användarens nivå); morfologisk analys baserad på SALDO.

@@ -1,7 +1,7 @@
 {
   "name": "swechan",
   "private": true,
-  "version": "0.11.0",
+  "version": "0.12.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,7 +17,9 @@
     "module:new": "vite-node scripts/cli/module-new.ts",
     "module:validate": "vite-node scripts/cli/module-validate.ts",
     "content:report": "vite-node scripts/cli/content-report.ts",
-    "art:sheet": "vite-node scripts/cli/art-sheet.ts"
+    "art:sheet": "vite-node scripts/cli/art-sheet.ts",
+    "visuals:import": "node scripts/visuals-import.mjs",
+    "visuals:plan": "node scripts/visuals-plan.mjs"
   },
   "dependencies": {
     "dexie": "4.0.11",
