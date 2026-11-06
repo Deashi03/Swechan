@@ -4,6 +4,7 @@
  * renderer adds the background. Distinguishing features are exaggerated on
  * purpose (kofta = buttons, munkjacka = zip + hood, polotröja = high collar …).
  */
+import { BODY_MOTIFS } from './bodyMotifs';
 import { C, all, arrow, button, circle, dress, ellipse, g, hand, heart, jacket, line, mirror, path, person, place, rect, skirt, sock, sparkle, star, top, trousers, type Svg } from './kit';
 
 const shirt = (color: string = C.white, trim?: string) => top({ color, collar: 'shirt', opening: 'buttons', cuffs: true, pocket: 'chest', trim });
@@ -127,6 +128,8 @@ export const WORD_MOTIFS: Record<string, Svg> = {
   modemedveten: all(person({ x: -16, s: 0.9, topColor: C.lilac, bottomColor: C.black, hair: 'long' }), rect(64, 40, 44, 56, C.white, 3, C.ink, 2), rect(70, 48, 32, 26, C.pink, 2, C.ink, 1.4), place(76, 46, 0.25, dress({ color: C.red, length: 'knee' })), line('M70 82 L102 82 M70 88 L94 88', C.ink, 1.6)),
   favoritplagg: all(place(4, 10, 0.8, top({ color: C.beige, collar: 'v', opening: 'buttons', ribHem: true, cuffs: true, trim: C.tan })), heart(96, 26, 12)),
   uttrycka: all(person({ x: -18, s: 0.95, topColor: C.orange, bottomColor: C.purple, hair: 'bun' }), path('M70 14 L114 14 L114 50 L86 50 L76 60 L78 50 L70 50 Z', C.white, C.ink, 2), heart(84, 32, 6), star(102, 32, 7)),
+  // ── Kroppen & sinnena (0.13), see bodyMotifs.ts ──────────────
+  ...BODY_MOTIFS,
 };
 
 /** Exported for tests and the review sheet: every motif id. */
