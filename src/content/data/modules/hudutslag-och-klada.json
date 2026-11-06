@@ -1,0 +1,171 @@
+{
+ "id": "m.hudutslag-och-klada",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hudutslag och klåda",
+ "titleJa": "{発疹|ほっしん}とかゆみ",
+ "descriptionSv": "Hudutslag och klåda: utslag, klåda, kliande, myggbett, riva sig, rodnad, svullnad, brännässla, sveda, blåsa, nässelutslag, torr hud, fjälla, eksem och akne.",
+ "descriptionJa": "{発疹|ほっしん}とかゆみ：{発疹|ほっしん}、かゆみ、かゆい、{蚊|か}に{刺|さ}された{跡|あと}、かく、{赤|あか}み、{腫|は}れ、イラクサ、ひりひりする{痛|いた}み、{水|みず}ぶくれ、じんましん、{乾燥肌|かんそうはだ}、{皮膚|ひふ}がむける、{湿疹|しっしん}、にきび。",
+ "categoryId": "R02-A02-T01",
+ "tags": [
+  "hälsa",
+  "symtom",
+  "hud"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.trotthet-och-svaghet"
+ ],
+ "related": [],
+ "recommendedOrder": 806,
+ "words": [
+  {
+   "senseId": "s.utslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kliande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.myggbett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riva-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rodnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svullnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brännässla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sveda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåsa-hud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nässelutslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torr-hud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eksem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.akne.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En sommar med klåda",
+  "paragraphs": [
+   "På sommarlägret får alla barn myggbett. Leo har tjugo stycken, och han river sig hela tiden. – Klådan är värst på kvällen, säger han.",
+   "På det kliande myggbettet på benet blir det en rodnad och en liten svullnad. Ledaren säger att han ska tvätta det och inte riva sig mer.",
+   "En dag ramlar Aiko ner bland brännässlor. Det svider, och hon känner en stark sveda i benen. Efter en stund får hon nässelutslag överallt där hon rört vid växterna.",
+   "Emma har gått för långt i nya skor och har fått en blåsa på hälen. Hon sätter på ett plåster.",
+   "Saras lillebror har fått utslag på magen. Ledaren ringer hans föräldrar, för det kan vara en allergi.",
+   "När hösten kommer får Aiko torr hud, och huden på händerna fjällar. På vintern får hon ofta eksem. Hennes storebror har akne och tvättar ansiktet varje kväll."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När är klådan värst för Leo?",
+    "options": [
+     "På morgonen",
+     "Mitt på dagen",
+     "När han badar",
+     "På kvällen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Klådan är värst på kvällen, säger han.",
+    "explanationJa": "{夜|よる}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad får Aiko efter att ha ramlat bland brännässlorna?",
+    "options": [
+     "Akne",
+     "En blåsa",
+     "Myggbett",
+     "Nässelutslag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… hon får nässelutslag överallt där hon rört vid växterna.",
+    "explanationJa": "じんましんです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Emma har fått en blåsa av ett myggbett.",
+    "correct": false,
+    "explanationSv": "Emma har gått för långt i nya skor och har fått en blåsa på hälen.",
+    "explanationJa": "{新|あたら}しい{靴|くつ}が{原因|げんいん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför ringer ledaren föräldrarna?",
+    "options": [
+     "Pojken har feber",
+     "Pojken vill åka hem",
+     "Utslagen kan vara en allergi",
+     "Pojken har tappat sina skor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… för det kan vara en allergi.",
+    "explanationJa": "アレルギーかもしれないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aikos hud mår sämre när det är kallt.",
+    "correct": true,
+    "explanationSv": "När hösten kommer får Aiko torr hud … På vintern får hon ofta eksem.",
+    "explanationJa": "{寒|さむ}い{季節|きせつ}に{悪|わる}くなります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om problem med huden.",
+  "discussionPoints": [
+   "Får du många myggbett på sommaren?",
+   "Vad gör du när något kliar?",
+   "Har du rört vid en brännässla någon gång?",
+   "Vad gör man i Japan mot torr hud på vintern?"
+  ]
+ }
+}

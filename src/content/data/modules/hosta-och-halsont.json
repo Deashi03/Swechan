@@ -1,0 +1,170 @@
+{
+ "id": "m.hosta-och-halsont",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hosta och halsont",
+ "titleJa": "{咳|せき}と{喉|のど}の{痛|いた}み",
+ "descriptionSv": "Hosta och halsont: halsont, hosta, slem, torrhosta, hostattack, hostmedicin, harkla sig, hes, snyta sig, näsduk, snuva, rinnande näsa, täppt i näsan, snörvla och nysning.",
+ "descriptionJa": "{咳|せき}と{喉|のど}の{痛|いた}み：{喉|のど}の{痛|いた}み、{咳|せき}、{痰|たん}、{空咳|からぜき}、{咳|せき}の{発作|ほっさ}、{咳止|せきど}め、{咳払|せきばら}いする、かれた{声|こえ}の、{鼻|はな}をかむ、ティッシュ、{鼻風邪|はなかぜ}、{鼻水|はなみず}、{鼻|はな}が{詰|つ}まった、{鼻|はな}をすする、くしゃみ。",
+ "categoryId": "R02-A02-T01",
+ "tags": [
+  "hälsa",
+  "symtom"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.feber-och-frossa"
+ ],
+ "related": [],
+ "recommendedOrder": 802,
+ "words": [
+  {
+   "senseId": "s.halsont.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hosta-noun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torrhosta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hostattack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hostmedicin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.harkla-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snyta-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näsduk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snuva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rinnande-näsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.täppt-i-näsan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snörvla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nysning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En förkyld vecka",
+  "paragraphs": [
+   "Aiko är förkyld. Det började med halsont, och nu har hon också hosta. På morgonen är hon så hes att hon nästan inte kan prata.",
+   "I skolan får hon en hostattack mitt i matten. Det är torrhosta som kliar i halsen. Läraren ger henne ett glas vatten.",
+   "Hennes kompis Leo har snuva. Han har rinnande näsa och är täppt i näsan. Han snörvlar hela tiden.",
+   "– Snyt dig, säger Aiko och ger honom en näsduk. I Japan tycker många att det är oartigt att snyta sig när andra ser på, men i Sverige gör alla det.",
+   "Efter skolan går Aiko till apoteket och köper hostmedicin. Kvinnan i kassan harklar sig och säger: – Drick mycket varmt, så blir slemmet lösare.",
+   "På kvällen nyser Aiko tre gånger. – Prosit! säger pappa efter varje nysning."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur började Aikos förkylning?",
+    "options": [
+     "Med halsont",
+     "Med feber",
+     "Med ont i magen",
+     "Med snuva"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det började med halsont …",
+    "explanationJa": "{喉|のど}の{痛|いた}みから{始|はじ}まりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken sorts hosta har Aiko?",
+    "options": [
+     "Hosta med mycket slem",
+     "Ingen hosta",
+     "Torrhosta",
+     "Hosta på natten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det är torrhosta som kliar i halsen.",
+    "explanationJa": "{空咳|からぜき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo snyter sig hela tiden.",
+    "correct": false,
+    "explanationSv": "Han snörvlar hela tiden.",
+    "explanationJa": "{鼻|はな}をすすっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Var köper Aiko hostmedicin?",
+    "options": [
+     "I skolan",
+     "I mataffären",
+     "På sjukhuset",
+     "På apoteket"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Efter skolan går Aiko till apoteket och köper hostmedicin.",
+    "explanationJa": "{薬局|やっきょく}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Vanorna kring att snyta sig är olika i Japan och Sverige.",
+    "correct": true,
+    "explanationSv": "I Japan tycker många att det är oartigt … men i Sverige gör alla det.",
+    "explanationJa": "{国|くに}によって{違|ちが}います。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om förkylning och om vad man gör åt den.",
+  "discussionPoints": [
+   "Hur ofta är du förkyld?",
+   "Vad gör du när du har halsont?",
+   "Är det oartigt att snyta sig i Japan?",
+   "Vad säger man i Japan när någon nyser?"
+  ]
+ }
+}

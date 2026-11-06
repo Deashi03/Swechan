@@ -1,0 +1,171 @@
+{
+ "id": "m.ont-i-magen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ont i magen",
+ "titleJa": "おなかの{痛|いた}み",
+ "descriptionSv": "Ont i magen: magbesvär, magont, orolig mage, må illa, illamående, kräkas, kräkning, spy, uppkastning, lös i magen, förstoppad, magsjuka, matförgiftning, aptitlös och vätskeersättning.",
+ "descriptionJa": "おなかの{痛|いた}み：{胃腸|いちょう}の{不調|ふちょう}、{腹痛|ふくつう}、おなかの{調子|ちょうし}が{悪|わる}いこと、{吐|は}き{気|け}がする、{吐|は}き{気|け}、{吐|は}く、{嘔吐|おうと}、もどす、{嘔吐|おうと}（かたい{言|い}い{方|かた}）、おなかがゆるい、{便秘|べんぴ}の、{胃腸炎|いちょうえん}、{食中毒|しょくちゅうどく}、{食欲|しょくよく}がない、{経口補水液|けいこうほすいえき}。",
+ "categoryId": "R02-A02-T01",
+ "tags": [
+  "hälsa",
+  "symtom",
+  "mage"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hosta-och-halsont"
+ ],
+ "related": [],
+ "recommendedOrder": 803,
+ "words": [
+  {
+   "senseId": "s.magbesvär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magont.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orolig-mage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.må-illa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.illamående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kräkas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kräkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spy.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppkastning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lös-i-magen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förstoppad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magsjuka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matförgiftning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.aptitlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vätskeersättning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Magsjuka i familjen",
+  "paragraphs": [
+   "På söndagskvällen säger lillebror Max att han har magont. Han mår illa och är aptitlös. Han vill inte ens äta glass.",
+   "Mitt i natten börjar han kräkas. Pappa sitter med honom i badrummet. – Jag ska spy igen! ropar Max. Efter varje kräkning dricker han lite vatten.",
+   "På morgonen är Max också lös i magen. – Det är nog magsjuka, säger mamma. Det har varit mycket på förskolan.",
+   "Mamma läser på vårdens webbplats. Där står det att man ska ringa om ett barn har många uppkastningar och inte kan dricka. Hon köper vätskeersättning på apoteket.",
+   "Efter två dagar får pappa också magbesvär. – Kan det vara matförgiftning? frågar han. – Nej, säger mamma, det är samma sak som Max har.",
+   "Aiko klarar sig, men hon har orolig mage hela veckan av illamåendet hemma. Hennes mormor brukar säga att man blir förstoppad av för lite fibrer, men nu är det tvärtom."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad vill Max inte äta?",
+    "options": [
+     "Soppa",
+     "Glass",
+     "Bröd",
+     "Frukt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han vill inte ens äta glass.",
+    "explanationJa": "アイスクリームです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tror mamma att Max har?",
+    "options": [
+     "Matförgiftning",
+     "Magsjuka",
+     "Feber",
+     "Halsont"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Det är nog magsjuka, säger mamma.",
+    "explanationJa": "{胃腸炎|いちょうえん}だと{思|おも}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mamma köper vätskeersättning på förskolan.",
+    "correct": false,
+    "explanationSv": "Hon köper vätskeersättning på apoteket.",
+    "explanationJa": "{薬局|やっきょく}で{買|か}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad frågar pappa?",
+    "options": [
+     "Om han ska ringa läkaren",
+     "Om det kan vara matförgiftning",
+     "Om Max har feber",
+     "Om han ska stanna hemma"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Kan det vara matförgiftning? frågar han.",
+    "explanationJa": "{食中毒|しょくちゅうどく}かどうかです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Magsjukan smittade från Max till pappa.",
+    "correct": true,
+    "explanationSv": "… det är samma sak som Max har.",
+    "explanationJa": "{同|おな}じ{病気|びょうき}がうつりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om magbesvär och vad man gör när magen inte mår bra.",
+  "discussionPoints": [
+   "När hade du senast magsjuka?",
+   "Vad äter du när du mår illa?",
+   "Blir du orolig i magen före prov?",
+   "Har man vätskeersättning hemma i Japan?"
+  ]
+ }
+}
