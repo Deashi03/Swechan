@@ -1,0 +1,170 @@
+{
+ "id": "m.hotellrum-och-reception",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hotellrum och reception",
+ "titleJa": "ホテルの{部屋|へや}とフロント",
+ "descriptionSv": "Hotellrum och reception: hotellrum, reception, receptionist, lediga rum, enkelrum, dubbelrum, tvåbäddsrum, svit, nyckelkort, extrasäng, minibar, rumsservice, stör ej, havsutsikt och vandrarhem.",
+ "descriptionJa": "ホテルの{部屋|へや}とフロント：ホテルの{部屋|へや}、フロント、フロント{係|がかり}、{空室|くうしつ}、シングルルーム、ダブルルーム、ツインルーム、スイートルーム、カードキー、エキストラベッド、ミニバー、ルームサービス、{起|お}こさないでください、{海|うみ}の{眺|なが}め、ユースホステル。",
+ "categoryId": "R01-A06-T06",
+ "tags": [
+  "resor",
+  "hotell"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.ombord-pa-flyget"
+ ],
+ "related": [],
+ "recommendedOrder": 656,
+ "words": [
+  {
+   "senseId": "s.hotellrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reception.1",
+   "active": true
+  },
+  {
+   "senseId": "s.receptionist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lediga-rum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enkelrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbelrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvåbäddsrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nyckelkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.extrasäng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minibar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rumsservice.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stör-ej.1",
+   "active": true
+  },
+  {
+   "senseId": "s.havsutsikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vandrarhem.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En helg i Visby",
+  "paragraphs": [
+   "Leo och hans syster ska till Visby på helgen. Det första hotellet har inga lediga rum, men det andra har.",
+   "De vill inte dela säng, så de bokar ett tvåbäddsrum, inte ett dubbelrum. Ett enkelrum var för dyrt för en person. En svit finns också, men den kostar 5 000 kronor natten. Ett vandrarhem är billigare, men där måste man dela rum med andra.",
+   "I receptionen får de två nyckelkort av en trevlig receptionist. Hotellrummet ligger på tredje våningen och har havsutsikt.",
+   "I rummet finns en minibar. – Rör den inte, den är dyr! säger Leos syster.",
+   "På kvällen är de trötta och beställer pizza via rumsservice. Nästa morgon hänger de ”Stör ej” på dörren och sover länge.",
+   "Leos syster tycker att rummet var för litet. – Nästa gång tar vi med mamma, och då behöver vi en extrasäng, säger hon och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför bor de inte på det första hotellet?",
+    "options": [
+     "Det är för dyrt",
+     "Det har inga lediga rum",
+     "Det är stängt",
+     "Det är långt bort"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det första hotellet har inga lediga rum.",
+    "explanationJa": "{空室|くうしつ}がないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket rum bokar de?",
+    "options": [
+     "Ett dubbelrum",
+     "En svit",
+     "Ett tvåbäddsrum",
+     "Ett enkelrum"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… så de bokar ett tvåbäddsrum.",
+    "explanationJa": "ツインルームです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Rummet har havsutsikt.",
+    "correct": true,
+    "explanationSv": "Hotellrummet … har havsutsikt.",
+    "explanationJa": "あります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör de på kvällen?",
+    "options": [
+     "Äter på restaurang",
+     "Dricker från minibaren",
+     "Beställer pizza via rumsservice",
+     "Går till stranden"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… beställer pizza via rumsservice.",
+    "explanationJa": "ルームサービスでピザを{頼|たの}みます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leos syster vill använda minibaren.",
+    "correct": false,
+    "explanationSv": "Rör den inte, den är dyr!",
+    "explanationJa": "{使|つか}いたくありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att bo på hotell.",
+  "discussionPoints": [
+   "Vilket slags rum brukar du boka?",
+   "Har du bott på vandrarhem?",
+   "Använder du minibaren eller rumsservice?",
+   "Vad är viktigast för dig på ett hotell?"
+  ]
+ }
+}

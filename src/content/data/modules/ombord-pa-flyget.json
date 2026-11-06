@@ -1,0 +1,170 @@
+{
+ "id": "m.ombord-pa-flyget",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Ombord på flyget",
+ "titleJa": "{機内|きない}で",
+ "descriptionSv": "Ombord på flyget: kabinpersonal, pilot, kapten, mittgång, nödutgång, flytväst, syrgasmask, turbulens, fällbord, fälla tillbaka, nackkudde, flygläge, landning, tidsskillnad och jetlag.",
+ "descriptionJa": "{機内|きない}で：{客室|きゃくしつ}{乗務員|じょうむいん}、パイロット、{機長|きちょう}、{中央|ちゅうおう}{通路|つうろ}、{非常口|ひじょうぐち}、{救命胴衣|きゅうめいどうい}、{酸素|さんそ}マスク、{乱気流|らんきりゅう}、テーブル、{座席|ざせき}を{倒|たお}す、ネックピロー、{機内|きない}モード、{着陸|ちゃくりく}、{時差|じさ}、{時差|じさ}ぼけ。",
+ "categoryId": "R01-A06-T06",
+ "tags": [
+  "resor",
+  "flyg"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.bagage-och-handbagage"
+ ],
+ "related": [],
+ "recommendedOrder": 655,
+ "words": [
+  {
+   "senseId": "s.kabinpersonal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pilot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kapten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mittgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödutgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flytväst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.syrgasmask.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turbulens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fällbord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fälla-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nackkudde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidsskillnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jetlag.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Tretton timmar i luften",
+  "paragraphs": [
+   "Yui sitter vid fönstret på flyget till Tokyo. Bredvid henne, vid mittgången, sitter en äldre man.",
+   "Före start visar kabinpersonalen var nödutgångarna är, hur flytvästen fungerar och vad man gör med syrgasmasken. Alla ska sätta mobilen i flygläge.",
+   "Kaptenen säger hej i högtalaren. Han och den andra piloten ska flyga i tretton timmar.",
+   "Efter en timme blir det turbulens, och planet skakar. Yui håller hårt i stolen. Sedan blir det lugnt. Hon tar ner fällbordet och äter middag. Sedan tar hon fram sin nackkudde och sover en stund.",
+   "Mannen frågar om han får fälla tillbaka stolen. – Visst, säger Yui.",
+   "Före landningen räknar Yui på tidsskillnaden. Det är sju timmar mer i Japan. – I morgon kommer jag att ha jetlag, tänker hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var sitter Yui?",
+    "options": [
+     "Vid mittgången",
+     "Vid nödutgången",
+     "Vid fönstret",
+     "Längst bak"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Yui sitter vid fönstret.",
+    "explanationJa": "{窓側|まどがわ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad visar kabinpersonalen före start?",
+    "options": [
+     "En film",
+     "Maten",
+     "Tidsskillnaden",
+     "Nödutgångar, flytväst och syrgasmask"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… visar kabinpersonalen var nödutgångarna är, hur flytvästen fungerar och vad man gör med syrgasmasken.",
+    "explanationJa": "{非常口|ひじょうぐち}・{救命胴衣|きゅうめいどうい}・{酸素|さんそ}マスクです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Det blir turbulens under resan.",
+    "correct": true,
+    "explanationSv": "Efter en timme blir det turbulens.",
+    "explanationJa": "あります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Yui efter middagen?",
+    "options": [
+     "Ser en film",
+     "Läser en bok",
+     "Pratar med mannen",
+     "Sover med nackkudden"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sedan tar hon fram sin nackkudde och sover en stund.",
+    "explanationJa": "ネックピローで{眠|ねむ}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yui tror att hon kommer att må bra dagen efter.",
+    "correct": false,
+    "explanationSv": "I morgon kommer jag att ha jetlag.",
+    "explanationJa": "{時差|じさ}ぼけになると{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att flyga: vad man gör på planet och hur man mår efteråt.",
+  "discussionPoints": [
+   "Vad gör du på en lång flygresa?",
+   "Är du rädd för turbulens?",
+   "Fäller du tillbaka stolen?",
+   "Hur blir du av med jetlag?"
+  ]
+ }
+}

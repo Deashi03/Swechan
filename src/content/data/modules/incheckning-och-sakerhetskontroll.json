@@ -1,0 +1,174 @@
+{
+ "id": "m.incheckning-och-sakerhetskontroll",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Incheckning och säkerhetskontroll",
+ "titleJa": "チェックインと{保安|ほあん}{検査|けんさ}",
+ "descriptionSv": "Incheckning och säkerhetskontroll: passagerare, incheckning, checka in, självincheckning, incheckningsdisk, bagageinlämning, boardingkort, boarding, säkerhetskontroll, säkerhetspersonal, tömma fickorna, skanna, larma, kroppsvisitera, förbjudna föremål och sista utrop.",
+ "descriptionJa": "チェックインと{保安|ほあん}{検査|けんさ}：{乗客|じょうきゃく}、チェックイン、チェックインする、{自動|じどう}チェックイン{機|き}、チェックインカウンター、{手荷物|てにもつ}{預|あず}け{入|い}れ、{搭乗券|とうじょうけん}、{搭乗|とうじょう}、{保安|ほあん}{検査|けんさ}、{保安|ほあん}{検査|けんさ}{員|いん}、ポケットを{空|から}にする、スキャンする、{警報|けいほう}が{鳴|な}る、ボディチェックする、{持|も}ち{込|こ}み{禁止|きんし}{品|ひん}、{最終|さいしゅう}{案内|あんない}。",
+ "categoryId": "R01-A06-T06",
+ "tags": [
+  "resor",
+  "flyg"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.flygplatser-och-terminaler"
+ ],
+ "related": [],
+ "recommendedOrder": 652,
+ "words": [
+  {
+   "senseId": "s.passagerare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.incheckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.checka-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självincheckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.incheckningsdisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bagageinlämning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boardingkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boarding.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetskontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetspersonal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tömma-fickorna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skanna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kroppsvisitera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbjudna-föremål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sista-utrop.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Nästan för sent",
+  "paragraphs": [
+   "Leo ska flyga till London. Han checkar in i appen kvällen före. Incheckningen går snabbt, men han har en stor väska.",
+   "På flygplatsen går han först till självincheckningen och skriver ut en lapp till väskan. Sedan lämnar han väskan vid bagageinlämningen. Vid incheckningsdisken frågar han om en fönsterplats.",
+   "Sedan går han till säkerhetskontrollen. Det är lång kö. Säkerhetspersonalen säger: – Du måste tömma fickorna och ta av bältet.",
+   "När Leo går igenom larmar det. Han har glömt nycklarna i jackan. En man kroppsvisiterar honom. Sedan skannar de hans väska igen. Där ligger en liten kniv, och förbjudna föremål måste man slänga.",
+   "Plötsligt hör Leo: – Sista utrop för passagerare till London! Han springer till gaten.",
+   "Där har boardingen redan börjat. Han visar sitt boardingkort och kommer med i sista stund."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När gör Leo incheckningen?",
+    "options": [
+     "På morgonen vid disken",
+     "Kvällen före i appen",
+     "På planet",
+     "Vid gaten"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han checkar in i appen kvällen före.",
+    "explanationJa": "{前|まえ}の{晩|ばん}にアプリでします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför larmar det?",
+    "options": [
+     "Leo har nycklar i jackan",
+     "Leo har en kniv i fickan",
+     "Väskan är för stor",
+     "Maskinen är trasig"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han har glömt nycklarna i jackan.",
+    "explanationJa": "ジャケットに{鍵|かぎ}を{入|い}れたままだったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo får behålla kniven.",
+    "correct": false,
+    "explanationSv": "… förbjudna föremål måste man slänga.",
+    "explanationJa": "{捨|す}てなければなりません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad hör Leo efter säkerhetskontrollen?",
+    "options": [
+     "Spårändring",
+     "Att planet har landat",
+     "Sista utrop",
+     "Att flyget är inställt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Sista utrop för passagerare till London!",
+    "explanationJa": "{最終|さいしゅう}{案内|あんない}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo hinner med planet.",
+    "correct": true,
+    "explanationSv": "… kommer med i sista stund.",
+    "explanationJa": "ぎりぎり{間|ま}に{合|あ}いました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om incheckning och säkerhetskontroll på flygplatsen.",
+  "discussionPoints": [
+   "Checkar du in i appen eller vid disken?",
+   "Har det larmat för dig i säkerhetskontrollen?",
+   "Vad tycker du är jobbigast på flygplatsen?",
+   "Har du nästan missat ett flyg någon gång?"
+  ]
+ }
+}

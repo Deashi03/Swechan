@@ -1,0 +1,170 @@
+{
+ "id": "m.in-och-utcheckning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "In- och utcheckning",
+ "titleJa": "チェックインとチェックアウト",
+ "descriptionSv": "In- och utcheckning: hotellgäst, ankomstdag, avresedag, per natt, ingår i priset, frukostbuffé, tidig incheckning, checka ut, utcheckning, sen utcheckning, lämna rummet, lämna nyckeln, hotellnota, betala i förväg och reservera ett belopp.",
+ "descriptionJa": "チェックインとチェックアウト：{宿泊客|しゅくはくきゃく}、{到着日|とうちゃくび}、{出発日|しゅっぱつび}、1{泊|ぱく}あたり、{料金|りょうきん}に{含|ふく}まれている、{朝食|ちょうしょく}ビュッフェ、アーリーチェックイン、チェックアウトする、チェックアウト、レイトチェックアウト、{部屋|へや}を{空|あ}ける、{鍵|かぎ}を{返|かえ}す、ホテルの{請求書|せいきゅうしょ}、{前払|まえばら}いする、{与信|よしん}{枠|わく}を{確保|かくほ}する。",
+ "categoryId": "R01-A06-T06",
+ "tags": [
+  "resor",
+  "hotell"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hotellrum-och-reception"
+ ],
+ "related": [],
+ "recommendedOrder": 657,
+ "words": [
+  {
+   "senseId": "s.hotellgäst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ankomstdag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avresedag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.per-natt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingår-i-priset.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frukostbuffé.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidig-incheckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.checka-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utcheckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sen-utcheckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-rummet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-nyckeln.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hotellnota.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betala-i-förväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservera-ett-belopp.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från incheckning till utcheckning",
+  "paragraphs": [
+   "Aiko och hennes mamma kommer till hotellet i Göteborg klockan elva. Det är deras ankomstdag, men man kan inte checka in förrän klockan tre.",
+   "– Kan vi få tidig incheckning? frågar mamma. – Ja, rummet är klart, säger receptionisten. Hotellet vill reservera ett belopp på kortet för minibaren. Rummet kostar 1 300 kronor per natt, och de har inte behövt betala i förväg.",
+   "– Frukost ingår i priset, säger receptionisten. Frukostbuffén är öppen från sju.",
+   "Nästa morgon äter de mycket. Där äter också många andra hotellgäster.",
+   "Det är avresedag, och de vill inte lämna rummet så tidigt. De ber om sen utcheckning och får stanna till klockan ett.",
+   "Vid utcheckningen tittar mamma på hotellnotan. Allt stämmer. De måste checka ut och lämna nyckeln i receptionen. Sedan går de till stationen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När kommer de till hotellet?",
+    "options": [
+     "Klockan tre",
+     "Klockan sju",
+     "Klockan ett",
+     "Klockan elva"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko och hennes mamma kommer till hotellet i Göteborg klockan elva.",
+    "explanationJa": "11{時|じ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kostar rummet?",
+    "options": [
+     "1 300 kronor per natt",
+     "1 000 kronor",
+     "Det är gratis",
+     "300 kronor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Rummet kostar 1 300 kronor per natt.",
+    "explanationJa": "1{泊|ぱく}1300クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "De måste betala extra för frukosten.",
+    "correct": false,
+    "explanationSv": "Frukost ingår i priset.",
+    "explanationJa": "{料金|りょうきん}に{含|ふく}まれています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur länge får de stanna på avresedagen?",
+    "options": [
+     "Till klockan elva",
+     "Till klockan tre",
+     "Hela dagen",
+     "Till klockan ett"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… får stanna till klockan ett.",
+    "explanationJa": "1{時|じ}までです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mamma hittar ett fel på hotellnotan.",
+    "correct": false,
+    "explanationSv": "Allt stämmer.",
+    "explanationJa": "{間違|まちが}いはありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om incheckning och utcheckning på hotell.",
+  "discussionPoints": [
+   "Vad är viktigast för dig: frukost eller sen utcheckning?",
+   "Har du fått tidig incheckning någon gång?",
+   "Kollar du alltid hotellnotan?",
+   "Vad kostar ett hotellrum per natt i Japan?"
+  ]
+ }
+}
