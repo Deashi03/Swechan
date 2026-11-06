@@ -1,0 +1,169 @@
+{
+ "id": "m.radsla-och-oro",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Rädsla och oro",
+ "titleJa": "{恐|おそ}れと{不安|ふあん}",
+ "descriptionSv": "Rädsla och oro: oroa sig, ängslig, fobi, gruva sig, bekymrad, livrädd, skrämma, ångest, panik, lugna ner, höjdrädd, skrämmande, skräck, våga och ha fjärilar i magen.",
+ "descriptionJa": "{恐|おそ}れと{不安|ふあん}：{心配|しんぱい}する、{心配性|しんぱいしょう}の、{恐怖症|きょうふしょう}、{前|まえ}もって{憂|ゆう}うつに{思|おも}う、{心配|しんぱい}そうな、ひどく{怖|こわ}がっている、{怖|こわ}がらせる、{強|つよ}い{不安|ふあん}、パニック、{落|お}ち{着|つ}かせる、{高所恐怖症|こうしょきょうふしょう}の、{恐|おそ}ろしい、{恐怖|きょうふ}、{勇気|ゆうき}を{出|だ}す、どきどきする。",
+ "categoryId": "R02-A03-T01",
+ "tags": [
+  "känslor",
+  "rädsla"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sorg-och-saknad"
+ ],
+ "related": [],
+ "recommendedOrder": 903,
+ "words": [
+  {
+   "senseId": "s.oroa-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ängslig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fobi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gruva-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bekymrad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livrädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrämma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ångest.1",
+   "active": true
+  },
+  {
+   "senseId": "s.panik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lugna-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höjdrädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrämmande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skräck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ha-fjärilar-i-magen.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Resan till Norge",
+  "paragraphs": [
+   "Emil ska åka på en resa till Norge med jobbet. Han har oroat sig i flera veckor. Han är en ängslig person och har fobi för att flyga. Han gruvar sig redan för resan.",
+   "Hans kollega Sara ser att han är bekymrad. – Är du rädd för att flyga? frågar hon. – Ja, jag är livrädd, säger Emil. Flygplan har alltid kunnat skrämma mig.",
+   "I flygplanet får han ångest. Hjärtat slår fort och han tror att han ska få panik. Sara hjälper honom att lugna ner sig. – Andas lugnt. Det går bra, säger hon.",
+   "I Norge ska gruppen gå upp på ett berg. Emil är också höjdrädd. Utsikten är vacker men skrämmande. När han tittar ner känner han skräck.",
+   "Men han vill inte ge upp. Han vågar gå hela vägen upp och känner sig stolt. – Jag har fjärilar i magen fortfarande, men jag gjorde det! säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är Emil rädd för?",
+    "options": [
+     "Att flyga",
+     "Hundar",
+     "Mörker",
+     "Vatten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… har fobi för att flyga.",
+    "explanationJa": "{飛行機|ひこうき}に{乗|の}ることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Emil har oroat sig länge för resan.",
+    "correct": true,
+    "explanationSv": "Han har oroat sig i flera veckor.",
+    "explanationJa": "{何週間|なんしゅうかん}も{心配|しんぱい}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vem hjälper Emil att lugna ner sig?",
+    "options": [
+     "Sara",
+     "Piloten",
+     "Hans mamma",
+     "Ingen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sara hjälper honom att lugna ner sig.",
+    "explanationJa": "サラです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad känner Emil när han tittar ner?",
+    "options": [
+     "Glädje",
+     "Hunger",
+     "Lugn",
+     "Skräck"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "När han tittar ner känner han skräck.",
+    "explanationJa": "{恐怖|きょうふ}を{感|かん}じます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emil ger upp och går inte upp på berget.",
+    "correct": false,
+    "explanationSv": "Han vågar gå hela vägen upp …",
+    "explanationJa": "{最後|さいご}まで{登|のぼ}りました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om rädsla och oro.",
+  "discussionPoints": [
+   "Vad är du rädd för?",
+   "Vad oroar du dig mest för?",
+   "Hur lugnar du ner dig när du är nervös?",
+   "När hade du senast fjärilar i magen?"
+  ]
+ }
+}
