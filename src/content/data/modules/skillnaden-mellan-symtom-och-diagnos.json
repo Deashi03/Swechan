@@ -1,0 +1,171 @@
+{
+ "id": "m.skillnaden-mellan-symtom-och-diagnos",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Skillnaden mellan symtom och diagnos",
+ "titleJa": "{症状|しょうじょう}と{診断|しんだん}の{違|ちが}い",
+ "descriptionSv": "Skillnaden mellan symtom och diagnos: diagnos, ställa diagnos, diagnostisera, tecken på, misstänka, misstanke, utesluta, bedöma, utredning, fastställa, bakomliggande, syndrom, sjukdomsbild, symtomfri och feldiagnos.",
+ "descriptionJa": "{症状|しょうじょう}と{診断|しんだん}の{違|ちが}い：{診断|しんだん}、{診断|しんだん}を{下|くだ}す、{診断|しんだん}する、～のしるし、{疑|うたが}う、{疑|うたが}い、{除外|じょがい}する、{判断|はんだん}する、{詳|くわ}しい{検査|けんさ}、{確定|かくてい}する、{根本的|こんぽんてき}な、{症候群|しょうこうぐん}、{病像|びょうぞう}、{無症状|むしょうじょう}の、{誤診|ごしん}。",
+ "categoryId": "R02-A02-T03",
+ "tags": [
+  "hälsa",
+  "sjukdom",
+  "vård"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kroniska-sjukdomar"
+ ],
+ "related": [],
+ "recommendedOrder": 827,
+ "words": [
+  {
+   "senseId": "s.diagnos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ställa-diagnos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diagnostisera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tecken-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.misstänka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.misstanke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utesluta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bedöma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utredning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fastställa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakomliggande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.syndrom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukdomsbild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.symtomfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.feldiagnos.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Symtom eller diagnos?",
+  "paragraphs": [
+   "I biologin frågar läraren: – Vad är skillnaden mellan ett symtom och en diagnos? Aiko svarar att ett symtom är det man känner, till exempel feber eller huvudvärk.",
+   "– Precis, säger läraren. En diagnos är läkarens svar på vad som orsakar symtomen. Feber är ett tecken på att kroppen försöker ta bort något, men det säger inte vad. För att ställa diagnos behöver läkaren mer information.",
+   "– Först lyssnar läkaren och bedömer hur sjuk patienten är. Om läkaren misstänker en infektion tar hon prover. Ibland vill hon utesluta något farligt, även om misstanken är svag.",
+   "– Ibland behövs en lång utredning för att fastställa diagnosen. Då letar man efter den bakomliggande orsaken. Vissa sjukdomar har en tydlig sjukdomsbild, men ett syndrom är en grupp symtom som brukar komma tillsammans.",
+   "Leo berättar att hans kusin fick en feldiagnos. Läkarna trodde först att det var astma, men läkarna diagnostiserade honom senare med en hjärtsjukdom.",
+   "Läraren avslutar: – Man kan också bära på en sjukdom och vara symtomfri. Därför är det bra att gå på kontroller."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är ett symtom, enligt Aiko?",
+    "options": [
+     "Läkarens svar",
+     "En medicin",
+     "Det man känner",
+     "Ett prov"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… ett symtom är det man känner, till exempel feber eller huvudvärk.",
+    "explanationJa": "{自分|じぶん}で{感|かん}じることです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är en diagnos?",
+    "options": [
+     "Läkarens svar på vad som orsakar symtomen",
+     "En sorts feber",
+     "En blankett",
+     "Ett vaccin"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En diagnos är läkarens svar på vad som orsakar symtomen.",
+    "explanationJa": "{症状|しょうじょう}の{原因|げんいん}についての{医者|いしゃ}の{答|こた}えです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läkaren tar bara prover när hon är helt säker.",
+    "correct": false,
+    "explanationSv": "Ibland vill hon utesluta något farligt, även om misstanken är svag.",
+    "explanationJa": "{疑|うたが}いが{弱|よわ}くても{検査|けんさ}することがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad hände med Leos kusin?",
+    "options": [
+     "Han blev frisk direkt",
+     "Han fick först fel diagnos",
+     "Han fick astma",
+     "Han var symtomfri"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… hans kusin fick en feldiagnos.",
+    "explanationJa": "{最初|さいしょ}は{誤診|ごしん}されました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan vara sjuk utan att märka det.",
+    "correct": true,
+    "explanationSv": "Man kan också bära på en sjukdom och vara symtomfri.",
+    "explanationJa": "{無症状|むしょうじょう}のこともあります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om symtom och diagnoser.",
+  "discussionPoints": [
+   "Kan du förklara skillnaden mellan symtom och diagnos?",
+   "Varför tar läkaren prover även när det troligen inte är farligt?",
+   "Har du eller någon du känner fått en feldiagnos?",
+   "Vad är bra att berätta för läkaren?"
+  ]
+ }
+}

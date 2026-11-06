@@ -1,0 +1,171 @@
+{
+ "id": "m.diabetes-och-amnesomsattning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Diabetes och ämnesomsättning",
+ "titleJa": "{糖尿病|とうにょうびょう}と{代謝|たいしゃ}",
+ "descriptionSv": "Diabetes och ämnesomsättning: diabetes, diabetiker, sockersjuka, vuxendiabetes, mäta blodsockret, blodsockermätare, sensor, insulinpenna, högt blodsocker, lågt blodsocker, druvsocker, känning, glukos, underfunktion och överfunktion.",
+ "descriptionJa": "{糖尿病|とうにょうびょう}と{代謝|たいしゃ}：{糖尿病|とうにょうびょう}、{糖尿病|とうにょうびょう}{患者|かんじゃ}、{糖尿病|とうにょうびょう}（{古|ふる}い{言|い}い{方|かた}）、{成人型糖尿病|せいじんがたとうにょうびょう}、{血糖値|けっとうち}を{測|はか}る、{血糖測定器|けっとうそくていき}、センサー、インスリンペン、{高血糖|こうけっとう}、{低血糖|ていけっとう}、ブドウ{糖|とう}、{低血糖|ていけっとう}{発作|ほっさ}、グルコース、{機能低下|きのうていか}、{機能亢進|きのうこうしん}。",
+ "categoryId": "R02-A02-T03",
+ "tags": [
+  "hälsa",
+  "sjukdom",
+  "diabetes"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hjart-karlsjukdomar"
+ ],
+ "related": [],
+ "recommendedOrder": 825,
+ "words": [
+  {
+   "senseId": "s.diabetes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diabetiker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sockersjuka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vuxendiabetes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäta-blodsockret.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodsockermätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sensor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insulinpenna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högt-blodsocker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lågt-blodsocker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.druvsocker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.känning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glukos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underfunktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överfunktion.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Emma har diabetes",
+  "paragraphs": [
+   "Emma i Aikos klass har diabetes. Hon fick den när hon var åtta år. Hennes farfar har också diabetes, men han säger att han har sockersjuka. Han har vuxendiabetes och behöver inget insulin.",
+   "Emma måste mäta blodsockret flera gånger om dagen. Förr använde hon en blodsockermätare och stack sig i fingret. Nu har hon en sensor på armen som skickar värdet till mobilen.",
+   "Före lunch tar hon insulin med en insulinpenna. Som diabetiker måste hon räkna hur mycket hon äter.",
+   "Högt blodsocker gör henne törstig och trött. Men lågt blodsocker är farligare. En gång fick hon en känning på idrotten. Hon blev darrig och svettig och åt snabbt druvsocker.",
+   "Läraren förklarar att kroppen gör om maten till glukos, och att insulinet behövs för att glukosen ska komma in i cellerna.",
+   "Aikos mamma har en annan sjukdom i ämnesomsättningen: underfunktion i sköldkörteln. Hon tar en tablett varje morgon. Hennes moster har i stället överfunktion."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad kallar farfar sin diabetes?",
+    "options": [
+     "Känning",
+     "Glukos",
+     "Sockersjuka",
+     "Insulin"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… han säger att han har sockersjuka.",
+    "explanationJa": "「sockersjuka」と{呼|よ}んでいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur mäter Emma blodsockret nu?",
+    "options": [
+     "Med en sensor på armen",
+     "Med en termometer",
+     "Hos läkaren",
+     "Med ett blodprov"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Nu har hon en sensor på armen …",
+    "explanationJa": "{腕|うで}のセンサーで{測|はか}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Högt blodsocker är farligare än lågt blodsocker.",
+    "correct": false,
+    "explanationSv": "Men lågt blodsocker är farligare.",
+    "explanationJa": "{低血糖|ていけっとう}のほうが{危険|きけん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Emma när hon får en känning?",
+    "options": [
+     "Hon äter druvsocker",
+     "Hon tar insulin",
+     "Hon springer",
+     "Hon sover"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… och åt snabbt druvsocker.",
+    "explanationJa": "ブドウ{糖|とう}を{食|た}べます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emmas farfar har en annan sorts diabetes än Emma.",
+    "correct": true,
+    "explanationSv": "Han har vuxendiabetes och behöver inget insulin.",
+    "explanationJa": "{種類|しゅるい}が{違|ちが}います。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om diabetes och ämnesomsättning.",
+  "discussionPoints": [
+   "Känner du någon som har diabetes?",
+   "Vad ska man göra om någon får en känning?",
+   "Varför är det bra att röra på sig?",
+   "Vet du vad sköldkörteln gör?"
+  ]
+ }
+}
