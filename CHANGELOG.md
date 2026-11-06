@@ -1,5 +1,41 @@
 # Changelog
 
+## 0.8.0 – 2026-11-06
+
+**Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.7.0 → 0.8.0 nollställer progressionen (återställningspunkt sparas).
+
+**Bilder:** inga nya bilder eller animationer (produktägarens beslut står fast).
+
+### Svåra ord förklaras (produktägarens krav)
+Ord som en genomsnittlig elev i årskurs 9 skulle ha svårt för ska förklaras ytterligare, inte bara översättas.
+- Nytt fält `sense.explanation {sv, ja}`: 2–3 meningar om vad ordet betyder i praktiken, när och varför det används, vanliga kombinationer och svensk kulturell bakgrund. Visas i ordintroduktionen (rutan *Förklaring · 詳しい説明*) och i ordboken.
+- **Regel:** varje modulord på nivå B2 eller högre måste ha en förklaring. Förklaringen valideras som en definition: kontrollerat ordförråd, furigana, minst 60 tecken och inte en kopia av `defSv`.
+- **143 ord omklassade från B1 till B2** eftersom de är svåra för en niondeklassare (t.ex. *moms*, *bolån*, *deposition*, *besked*, *proton*, *kolhydrat*, *specificerat kvitto*).
+- **Alla 677 svåra betydelser i de redan publicerade modulerna har fått förklaringar**, och de nya modulerna har förklaringar från början. Totalt har nu **791 betydelser** en förklaring.
+- Tester: `furigana.test.ts` (regeln), `ExerciseView.test.tsx` (rutan visas för *specificerad*, inte för *skjorta*).
+
+### Flerordsuttryck
+Uttryck som bara betyder något tillsammans (*komma ihåg*, *gå vilse*, *ta sig till*, *i väntan på*, *av säkerhetsskäl* …) är egna ordposter och målord. Partikelverb har `particle`, och reflexiva verb skrivs med *sig*. Riktlinjerna finns i `CONTENT_GUIDELINES.md`.
+
+### 42 nya moduler: *Resor & lokaltrafik* (helt publicerat)
+Kedjan har `recommendedOrder` 601–657 och börjar efter *Klaga och begära ersättning*. Totalt finns nu **257 publicerade moduler** och 633 nya ordposter (AI-utkast).
+- *Kollektivtrafik*: Buss och hållplats, Tunnelbana och pendeltåg, Spårvagn och färja, Biljetter och periodkort, Tidtabeller och byten, Förseningar och trafikstörningar, Fråga efter rätt linje
+- *Vägbeskrivningar*: Höger och vänster, Korsningar och rondeller, Gångvägar och övergångsställen, Kartor och orientering, Avstånd och riktningar, Hitta en adress, Beskriva en färdväg
+- *Bil & vardagskörning*: Bilens delar, Starta och köra, Parkera och betala, Tankning och laddning, Däck och väglag, Trafikskyltar i vardagen, Enkla bilproblem
+- *Cykel & gång*: Cykelns delar, Cykelvägar och cykelbanor, Trafikregler för cyklister, Promenader och vandring, Hjälmar och reflexer, Reparera en cykel, Väglag och säkerhet
+- *Tåg & långresor*: Tågstationer och perronger, Biljettyper och platser, Bagage på tåget, Byten och anslutningar, Resa med nattåg, Försening och ombokning, Resa mellan svenska städer
+- *Flyg & hotell*: Flygplatser och terminaler, Incheckning och säkerhetskontroll, Pass och resehandlingar, Bagage och handbagage, Ombord på flyget, Hotellrum och reception, In- och utcheckning
+
+Ny betydelse på en befintlig post: `s.spår.2` (järnvägsspår) på `e.spår`. Inga publicerade `m.*`- eller `s.*`-ID:n har ändrats.
+
+### Prestanda
+- Repetitionsurvalet (`selectReviewCards`) beräknar retrievability och förfallodatum en gång per kort i stället för i varje jämförelse vid sorteringen.
+- Utvecklarverktyget *Gör alla kort förfallna* skriver om korten med `clear()` + `bulkAdd()`. Med det växande innehållet tog testet över 60 s; nu tar det cirka 16 s.
+
+### Övrigt
+- Grundordförrådet har fått vanliga ord och namn som texterna behöver (t.ex. *pedal*, *risk*, *varning*, *cyklist*, *turist*, *privat*, *orolig*, *mask*, *Arlanda*, *Kiruna*, *Centralen*).
+- E2E: den planerade katalogposten i e2e-skriptet byts eftersom *Resor & lokaltrafik* nu är publicerat.
+
 ## 0.7.0 – 2026-11-05
 
 **Beslut:** utvecklingsnollställningen (`resetProgressOnUpdate`) är fortfarande på; 0.6.0 → 0.7.0 nollställer progressionen (återställningspunkt sparas).

@@ -78,6 +78,10 @@ Produktägarens regel: **så fort ett ord är så svårt att en genomsnittlig el
 
 Svenskan har många kombinationer av ord som tillsammans betyder något annat än orden var för sig, till exempel *komma ihåg*, *ta hand om*, *hålla med* och *på skämt*. De ska vara **egna ordposter** (lemma med mellanslag, t.ex. `v('komma ihåg', ...)` eller `x('på skämt', 'phrase', ...)`) och läras som en helhet, inte delas upp i sina delar. Partikelverb får `particle`. Reflexiva uttryck skrivs med *sig* (*ta på sig*). I lästexten måste uttrycket stå sammanhängande.
 
+Kontrollen känner igen böjda former av verbuttryck (`v('ta sig till', ...)`, `v('sitta bra', ...)`), men inte av `x()`-fraser. Använd därför `v()` när uttrycket innehåller ett verb. Reflexiv i andra person (*spänner du fast dig*) och inverterad ordföljd (*svänger ni in*) känns inte igen, så skriv om meningen (*Aiko spänner fast sig*, *ni ska svänga in*).
+
+**Homografer:** har ordet samma ordklass som en befintlig post läggs en ny betydelse till på posten (`s.spår.2`, järnvägsspår), inte en ny post. Den nya betydelsen valideras också mot ordförrådet i den modul som äger ordboksfilen. Annan ordklass ger en egen post med nyckel (`e.halka-noun`).
+
 ## Produktion i stor skala (0.5)
 
 - **Ett överämne i taget.** Gör klart en ämnesgrupp (alla sju moduler) innan nästa påbörjas.

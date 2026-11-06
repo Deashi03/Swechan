@@ -210,16 +210,16 @@ try {
   await page.getByRole('link', { name: /Matlagningens verb/ }).first().click();
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
-  await page.goBack();
-  await page.goBack();
-  await page.getByRole('link', { name: /Resor & lokaltrafik/ }).first().click(); // still planned in 0.7
-  await page.getByRole('link', { name: /Kollektivtrafik/ }).first().click();
-  await page.getByRole('link', { name: /Buss och hållplats/ }).first().click();
+  // Vardag & hem is fully published from 0.8, so the planned entry comes from another root area.
+  await page.goto(`${BASE}#/explore`);
+  await page.getByRole('link', { name: /Människan & hälsa/ }).first().click();
+  await page.getByRole('link', { name: /Kroppen & sinnena/ }).first().click();
+  await page.getByRole('link', { name: /Kroppens yttre delar/ }).first().click();
+  await page.getByRole('link', { name: /Huvud och ansikte/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
-  await page.goBack();
-  await page.goBack();
-  await page.goBack();
+  await page.goto(`${BASE}#/explore`);
+  await page.getByRole('link', { name: /Vardag & hem/ }).first().click();
   await page.getByRole('link', { name: /Mat & måltider/ }).first().click();
   await page.getByRole('link', { name: /Råvaror & skafferi/ }).first().click();
   await page.getByRole('link', { name: /Vanliga grönsaker/ }).first().click();
