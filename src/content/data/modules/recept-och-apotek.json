@@ -1,0 +1,171 @@
+{
+ "id": "m.recept-och-apotek",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Recept och apotek",
+ "titleJa": "{処方箋|しょほうせん}と{薬局|やっきょく}",
+ "descriptionSv": "Recept och apotek: skriva ut, förskriva, receptbelagd, e-recept, förnya ett recept, apotekare, farmaceut, expediera, läkemedelslista, Fass, verksam substans, likvärdig, generika, högkostnadsskydd och läkemedelsförmån.",
+ "descriptionJa": "{処方箋|しょほうせん}と{薬局|やっきょく}：{処方|しょほう}する、{処方|しょほう}する（かたい{言|い}い{方|かた}）、{処方箋|しょほうせん}が{必要|ひつよう}な、{電子処方箋|でんししょほうせん}、{処方箋|しょほうせん}を{更新|こうしん}する、{薬剤師|やくざいし}、{薬剤師|やくざいし}（{総称|そうしょう}）、{調剤|ちょうざい}して{渡|わた}す、{服薬|ふくやく}リスト、Fass、{有効成分|ゆうこうせいぶん}、{同等|どうとう}の、ジェネリック{医薬品|いやくひん}、{高額療養費|こうがくりょうようひ}{制度|せいど}、{薬剤給付|やくざいきゅうふ}。",
+ "categoryId": "R02-A02-T04",
+ "tags": [
+  "hälsa",
+  "läkemedel",
+  "apotek"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tabletter-och-kapslar"
+ ],
+ "related": [],
+ "recommendedOrder": 832,
+ "words": [
+  {
+   "senseId": "s.skriva-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förskriva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.receptbelagd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.e-recept.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förnya-ett-recept.1",
+   "active": true
+  },
+  {
+   "senseId": "s.apotekare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.farmaceut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.expediera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkemedelslista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Fass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verksam-substans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likvärdig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.generika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högkostnadsskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkemedelsförmån.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "På apoteket",
+  "paragraphs": [
+   "Läkaren har skrivit ut en medicin mot Aikos eksem. Den är receptbelagd, och läkaren skickar ett e-recept. Aiko kan hämta den på vilket apotek som helst.",
+   "Mormor följer med, för hon behöver förnya ett recept på sin blodtrycksmedicin. Det kan bara en läkare göra, så hon får ringa vårdcentralen. Bara läkare får förskriva den sortens medicin.",
+   "På apoteket möter de en apotekare. Hon är farmaceut och förklarar hur krämen ska användas. Det tar bara fem minuter att expediera receptet.",
+   "– Här har vi ett billigare men likvärdigt läkemedel, säger hon. Den verksamma substansen är densamma. Det kallas generika. Är det okej att vi byter?",
+   "Mormor visar sin läkemedelslista. Apotekaren kontrollerar att medicinerna inte passar dåligt ihop. Aiko läser mer om sin medicin på Fass i mobilen.",
+   "Mormors medicin ingår i läkemedelsförmånen. Hon har redan betalat mycket i år, så tack vare högkostnadsskyddet blir den nästan gratis."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur skickar läkaren receptet?",
+    "options": [
+     "Som e-recept",
+     "Med post",
+     "Med Aiko",
+     "Med ett brev"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… läkaren skickar ett e-recept.",
+    "explanationJa": "{電子処方箋|でんししょほうせん}で{送|おく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad behöver mormor göra?",
+    "options": [
+     "Köpa värktabletter",
+     "Boka en röntgen",
+     "Förnya ett recept",
+     "Ta ett blodprov"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… hon behöver förnya ett recept på sin blodtrycksmedicin.",
+    "explanationJa": "{処方箋|しょほうせん}を{更新|こうしん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Generika har en annan verksam substans.",
+    "correct": false,
+    "explanationSv": "Den verksamma substansen är densamma. Det kallas generika.",
+    "explanationJa": "{同|おな}じ{有効成分|ゆうこうせいぶん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför kontrollerar apotekaren mormors läkemedelslista?",
+    "options": [
+     "För att räkna pengar",
+     "För att boka en tid",
+     "För att läsa Fass",
+     "För att se att medicinerna passar ihop"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Apotekaren kontrollerar att medicinerna inte passar dåligt ihop.",
+    "explanationJa": "{薬|くすり}の{飲|の}み{合|あ}わせを{確|たし}かめるためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor har tagit mycket medicin i år.",
+    "correct": true,
+    "explanationSv": "Hon har redan betalat mycket i år …",
+    "explanationJa": "{今年|ことし}はすでにたくさん{払|はら}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om recept och apotek.",
+  "discussionPoints": [
+   "Hur hämtar man medicin på recept i Japan?",
+   "Skulle du välja generika eller originalet?",
+   "Har du frågat en apotekare om råd?",
+   "Varför är vissa läkemedel receptbelagda?"
+  ]
+ }
+}

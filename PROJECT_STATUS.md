@@ -1,8 +1,18 @@
 # Projektstatus – överlämning
 
-**Version:** 0.9.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.9 utvecklades i grenen `claude/swechan-0.9`)
+**Version:** 0.10.0 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.10 utvecklades i grenen `claude/swechan-0.10`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.10 – släppt 2026-11-06 (Hälsa & sjukvård)
+
+- **Innehåll:** *Människan & hälsa → Hälsa & sjukvård* (R02-A02) är helt publicerat: 42 moduler med `recommendedOrder` 801–857. Den första modulen har *Beskriva smärta och obehag* som förkunskap. Totalt finns **341 publicerade moduler**.
+- **Nästa överämne:** *Människan & hälsa → Känslor & psykologi* (R02-A03). Dess första modul, *Glädje och lycka* (SWC-MAN-03-01-01), ska ha *Riskfaktorer och hälsoval* (`m.riskfaktorer-och-halsoval`) som förkunskap och ordning 901.
+- **Ord som redan finns och ska återanvändas i Känslor & psykologi:** *stress*/*stressad* (grundordförråd), *stresshantering*, *utbränd*, *gå in i väggen*, *avslappning*, *mindfulness*, *egentid* och *pressad* i *Stresshantering*; *återhämtning* (Senor och fästen) och *återhämta sig* (Motion och återhämtning). Sök i `src/content/data/dictionary` innan nya ord skapas. Undvik att dubblera *Stress & återhämtning* (R02-A03-T05) med orden ovan – välj psykologiska nyanser i stället.
+- **Homografer:** `e.hosta-noun`, `e.blåsa-hud` och `e.var-sår` är egna poster med nyckel.
+- **Kontrolltips:** negation inne i ett partikelverb ("Lägg inte på") och inverterad ordföljd ("gick en kollega in i väggen") gör att målordet inte hittas – skriv "inte lägga på" och "en kollega som gick in i väggen". Partikelverb med efterföljande preposition (*dra ner på*) får inte `particle=`, eftersom formen måste sluta på partikeln. Siffror (112, 1177) ignoreras av kontrollen och kan inte vara målord.
+- **E2E:** den planerade katalogposten är nu *Människan & hälsa → Känslor & psykologi → Grundkänslor → Glädje och lycka*.
+- **Bilder:** fortfarande inga nya bilder eller animationer.
 
 ## 0.9 – släppt 2026-11-06 (Kroppen & sinnena)
 
@@ -66,7 +76,7 @@ Följ `SWECHAN_0_4_CLAUDE_HANDOFF.md`. Katalogen: `planning/catalog/swechan-cata
 - **Fas G klar**: version 0.4.0, migreringstest 0.3.1→0.4 med nollställningen på och av, e2e-jobb i CI, dokumentation. WebKit/fysisk iPhone: EJ TESTAT.
 - **Beslut (produktägaren, 2026-11-04): nollställningen ska vara PÅ även vid 0.4-releasen**, eftersom appen fortfarande är under systemutveckling och funktioner ska kunna testas från noll. Att höja `APP_VERSION` till 0.4.0 nollställer alltså all progression (återställningspunkt sparas och kan ångras). Ändra inte `devConfig.resetProgressOnUpdate` utan nytt beslut från produktägaren.
 
-## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.9.0)
+## ⚠️ Utvecklingsläge är PÅ (0.3.1–0.10.0)
 
 `devConfig.resetProgressOnUpdate = true`: **varje ny APP_VERSION nollställer all användarprogression** (produktägarens uttryckliga önskemål under utvecklingen; en återställningspunkt sparas). Detta går emot regel 1 "Bevara användardata" och **måste stängas av (`false`) innan appen används på riktigt**. `devConfig.toolsEnabled` visar utvecklarverktygen (Inställningar + ⏭ i inlärningen). Öka alltid `APP_VERSION` vid en release – det är versionsbytet som utlöser nollställningen.
 

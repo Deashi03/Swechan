@@ -1,0 +1,170 @@
+{
+ "id": "m.mun-och-tandhalsa",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Mun- och tandhälsa",
+ "titleJa": "{口|くち}と{歯|は}の{健康|けんこう}",
+ "descriptionSv": "Mun- och tandhälsa: tandvårdsrädsla, tandvärk, ilning, tandhygienist, tandsten, tandkött, tandköttsinflammation, tandsköterska, karies, rotfyllning, visdomstand, fluor, mellanrum, munhälsa och tandhälsa.",
+ "descriptionJa": "{口|くち}と{歯|は}の{健康|けんこう}：{歯医者|はいしゃ}が{怖|こわ}いこと、{歯痛|しつう}、{歯|は}がしみること、{歯科衛生士|しかえいせいし}、{歯石|しせき}、{歯茎|はぐき}、{歯肉炎|しにくえん}、{歯科助手|しかじょしゅ}、{虫歯|むしば}、{根管治療|こんかんちりょう}、{親知|おやし}らず、フッ{素|そ}、すき{間|ま}、{口|くち}の{健康|けんこう}、{歯|は}の{健康|けんこう}。",
+ "categoryId": "R02-A02-T06",
+ "tags": [
+  "hälsa",
+  "förebyggande",
+  "tänder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.stresshantering"
+ ],
+ "related": [],
+ "recommendedOrder": 855,
+ "words": [
+  {
+   "senseId": "s.tandvårdsrädsla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandvärk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ilning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandhygienist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandsten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandkött.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandköttsinflammation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandsköterska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.karies.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rotfyllning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visdomstand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fluor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellanrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.munhälsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandhälsa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hos tandläkaren",
+  "paragraphs": [
+   "Aiko har fått en kallelse till tandläkaren. Hon har lite tandvårdsrädsla och tycker inte om att gå dit. Men hon har tandvärk, och när hon dricker något kallt får hon en ilning i en tand.",
+   "Först träffar hon en tandhygienist. Tandhygienisten tar bort tandsten och tittar på tandköttet. – Ditt tandkött blöder lite. Det kan vara en lätt tandköttsinflammation, säger hon.",
+   "Sedan kommer tandläkaren och en tandsköterska. Tandläkaren hittar karies i en tand. – Det är ett litet hål. Jag lagar det med en fyllning, säger han. Du behöver ingen rotfyllning.",
+   "Han tittar också på röntgenbilden. – Vi kan behöva ta bort en visdomstand längst in i munnen om några år.",
+   "– Borsta tänderna två gånger om dagen med tandkräm med fluor och använd tandtråd i mellanrummen. Det är bra för din munhälsa. Aiko lovar att tänka mer på sin tandhälsa."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer när Aiko dricker något kallt?",
+    "options": [
+     "Hon får ont i halsen",
+     "Hon får feber",
+     "Ingenting",
+     "Hon får en ilning i en tand"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… när hon dricker något kallt får hon en ilning i en tand.",
+    "explanationJa": "{歯|は}がしみます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör tandhygienisten?",
+    "options": [
+     "Lagar ett hål",
+     "Tar bort en tand",
+     "Tar bort tandsten",
+     "Ger henne medicin"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Tandhygienisten tar bort tandsten …",
+    "explanationJa": "{歯石|しせき}を{取|と}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Aiko behöver en rotfyllning.",
+    "correct": false,
+    "explanationSv": "Du behöver ingen rotfyllning.",
+    "explanationJa": "{根管治療|こんかんちりょう}は{必要|ひつよう}ありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur ofta ska Aiko borsta tänderna?",
+    "options": [
+     "En gång i veckan",
+     "En gång om dagen",
+     "Två gånger om dagen",
+     "Efter varje måltid"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Borsta tänderna två gånger om dagen …",
+    "explanationJa": "1{日|にち}2{回|かい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko tycker om att gå till tandläkaren.",
+    "correct": false,
+    "explanationSv": "Hon har lite tandvårdsrädsla och tycker inte om att gå dit.",
+    "explanationJa": "{歯医者|はいしゃ}は{少|すこ}し{怖|こわ}いです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tänder och tandvård.",
+  "discussionPoints": [
+   "Hur ofta går du till tandläkaren?",
+   "Har du tandvårdsrädsla?",
+   "Använder du tandtråd?",
+   "Har du kvar dina visdomständer?"
+  ]
+ }
+}

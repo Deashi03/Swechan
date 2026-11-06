@@ -1,0 +1,170 @@
+{
+ "id": "m.riskfaktorer-och-halsoval",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Riskfaktorer och hälsoval",
+ "titleJa": "リスク{要因|よういん}と{健康|けんこう}のための{選択|せんたく}",
+ "descriptionSv": "Riskfaktorer och hälsoval: riskfaktor, stillasittande, fetma, ärftlighet, riskgrupp, levnadsvana, förebygga, livsstilssjukdom, sluta röka, snus, passiv rökning, riskbruk, måttlig, livsstil och hälsoval.",
+ "descriptionJa": "リスク{要因|よういん}と{健康|けんこう}のための{選択|せんたく}：{危険因子|きけんいんし}、{座|すわ}りがちな、{肥満|ひまん}、{遺伝|いでん}、リスクグループ、{生活習慣|せいかつしゅうかん}、{予防|よぼう}する、{生活習慣病|せいかつしゅうかんびょう}、たばこをやめる、スヌース、{受動喫煙|じゅどうきつえん}、{危険|きけん}な{飲酒|いんしゅ}、{適度|てきど}な、ライフスタイル、{健康|けんこう}のための{選択|せんたく}。",
+ "categoryId": "R02-A02-T06",
+ "tags": [
+  "hälsa",
+  "förebyggande",
+  "livsstil"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.halsoundersokningar"
+ ],
+ "related": [],
+ "recommendedOrder": 857,
+ "words": [
+  {
+   "senseId": "s.riskfaktor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stillasittande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fetma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ärftlighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riskgrupp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.levnadsvana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förebygga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livsstilssjukdom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sluta-röka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passiv-rökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riskbruk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.måttlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livsstil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälsoval.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Bättre levnadsvanor",
+  "paragraphs": [
+   "Emils pappa har varit på hälsokontroll. Han har högt blodtryck och för högt kolesterol. – Du har flera riskfaktorer, säger läkaren. Du röker, du har ett stillasittande jobb och du väger för mycket. Fetma ökar också risken.",
+   "– Ärftlighet spelar också roll. Din pappa hade hjärtinfarkt, så du hör till en riskgrupp. Men levnadsvanor betyder mycket. Vi kan förebygga många sjukdomar. En livsstilssjukdom som diabetes typ 2 kommer ofta av hur man lever.",
+   "– Det bästa du kan göra är att sluta röka, säger läkaren. Snus är inte heller bra. Och tänk på barnbarnen. Passiv rökning är farligt för barn.",
+   "Läkaren frågar också om alkohol. Pappa dricker vin varje kväll. – Det kan vara riskbruk. Försök att hålla det på en måttlig nivå.",
+   "Efter besöket bestämmer Emil och hans pappa att de ska ändra sin livsstil tillsammans. De ska ta promenader på kvällarna och äta mer grönsaker. – Varje litet hälsoval är viktigt, säger Emil."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka problem har Emils pappa?",
+    "options": [
+     "Ont i ryggen",
+     "Högt blodtryck och för högt kolesterol",
+     "Dålig syn",
+     "Tandvärk"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han har högt blodtryck och för högt kolesterol.",
+    "explanationJa": "{高血圧|こうけつあつ}とコレステロールが{高|たか}すぎることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Ärftlighet spelar ingen roll.",
+    "correct": false,
+    "explanationSv": "– Ärftlighet spelar också roll.",
+    "explanationJa": "{遺伝|いでん}も{関係|かんけい}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad säger läkaren är det bästa pappa kan göra?",
+    "options": [
+     "Dricka mer vatten",
+     "Sova mer",
+     "Äta mindre",
+     "Sluta röka"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Det bästa du kan göra är att sluta röka …",
+    "explanationJa": "たばこをやめることです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur ofta dricker pappa vin?",
+    "options": [
+     "En gång i månaden",
+     "Aldrig",
+     "Bara på helgen",
+     "Varje kväll"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Pappa dricker vin varje kväll.",
+    "explanationJa": "{毎晩|まいばん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emil vill hjälpa sin pappa.",
+    "correct": true,
+    "explanationSv": "… de ska ändra sin livsstil tillsammans.",
+    "explanationJa": "{一緒|いっしょ}に{生活|せいかつ}を{変|か}えようとしています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hälsa och levnadsvanor.",
+  "discussionPoints": [
+   "Vilka riskfaktorer finns i din familj?",
+   "Är det vanligt att röka i Japan?",
+   "Vad är ett enkelt hälsoval som du kan göra i dag?",
+   "Hur skulle du vilja ändra din livsstil?"
+  ]
+ }
+}

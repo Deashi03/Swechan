@@ -1,0 +1,170 @@
+{
+ "id": "m.trotthet-och-svaghet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Trötthet och svaghet",
+ "titleJa": "{疲|つか}れと{脱力感|だつりょくかん}",
+ "descriptionSv": "Trötthet och svaghet: trötthet, dödstrött, slutkörd, hängig, loj, ork, orkeslös, orka med, kraftlös, svaghet, utmattad, utmattning, gå på knäna, järnbrist och piggna till.",
+ "descriptionJa": "{疲|つか}れと{脱力感|だつりょくかん}：{疲|つか}れ、くたくたの、{疲|つか}れ{果|は}てた、だるい、だらだらした、{気力|きりょく}、{力|ちから}が{出|で}ない、こなせる、{力|ちから}のない、{弱|よわ}さ、{疲労困憊|ひろうこんぱい}した、{極度|きょくど}の{疲労|ひろう}、へとへとである、{鉄分不足|てつぶんぶそく}、{元気|げんき}を{取|と}り{戻|もど}す。",
+ "categoryId": "R02-A02-T01",
+ "tags": [
+  "hälsa",
+  "symtom"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.huvudvark-och-yrsel"
+ ],
+ "related": [],
+ "recommendedOrder": 805,
+ "words": [
+  {
+   "senseId": "s.trötthet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dödstrött.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutkörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hängig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.loj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ork.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orkeslös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orka-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svaghet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utmattad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utmattning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-på-knäna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.järnbrist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.piggna-till.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Alltid trött",
+  "paragraphs": [
+   "Sara går i nian. Hela hösten har hon känt en stark trötthet. Varje kväll säger hon att hon är dödstrött.",
+   "Först tror hon att hon bara är hängig och håller på att bli förkyld. Men förkylningen kommer aldrig. Hon är loj och har ingen ork att träffa sina vänner.",
+   "– Jag orkar med skolan, men inte träningen längre, säger hon till mamma. Benen känns kraftlösa när jag springer.",
+   "Mamma tar henne till läkaren. Sara berättar att hon är orkeslös och har en svaghet i hela kroppen. Läkaren säger att det kan vara järnbrist, och att det är vanligt hos unga tjejer.",
+   "Mamma själv är också slutkörd. Hon jobbar på ett sjukhus där personalen går på knäna. Hennes kollega har varit hemma i flera månader för utmattning. – Jag får inte bli lika utmattad, säger mamma.",
+   "Sara får järntabletter och äter mer bönor och kött. Efter några veckor har hon piggnat till och kan träna igen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tror Sara först?",
+    "options": [
+     "Att hon har järnbrist",
+     "Att hon är utmattad",
+     "Att hon har feber",
+     "Att hon håller på att bli förkyld"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först tror hon att hon bara är hängig och håller på att bli förkyld.",
+    "explanationJa": "{風邪|かぜ}をひきかけていると{思|おも}いました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad orkar Sara inte med längre?",
+    "options": [
+     "Skolan",
+     "Träningen",
+     "Maten",
+     "Musiken"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Jag orkar med skolan, men inte träningen längre …",
+    "explanationJa": "{練習|れんしゅう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Läkaren säger att järnbrist är ovanligt hos unga tjejer.",
+    "correct": false,
+    "explanationSv": "… och att det är vanligt hos unga tjejer.",
+    "explanationJa": "よくあると{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför är mamma slutkörd?",
+    "options": [
+     "Hon har järnbrist",
+     "Hon jobbar på ett sjukhus med för lite personal",
+     "Hon har flyttat",
+     "Hon tränar mycket"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon jobbar på ett sjukhus där personalen går på knäna.",
+    "explanationJa": "{職場|しょくば}がとても{忙|いそが}しいからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Järntabletterna hjälper Sara.",
+    "correct": true,
+    "explanationSv": "Efter några veckor har hon piggnat till och kan träna igen.",
+    "explanationJa": "{元気|げんき}になりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om trötthet och vad man kan göra åt den.",
+  "discussionPoints": [
+   "När är du som tröttast under veckan?",
+   "Vad gör du för att piggna till?",
+   "Har du känt dig orkeslös någon gång?",
+   "Är det vanligt att man jobbar tills man går på knäna i Japan?"
+  ]
+ }
+}

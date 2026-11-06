@@ -1,0 +1,170 @@
+{
+ "id": "m.stresshantering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Stresshantering",
+ "titleJa": "ストレス{管理|かんり}",
+ "descriptionSv": "Stresshantering: arbetsbelastning, tidspress, pressad, varningssignal, stressnivå, utbränd, gå in i väggen, stresshantering, säga nej, ta en paus, avslappning, avslappningsövning, mindfulness, egentid och stresstålig.",
+ "descriptionJa": "ストレス{管理|かんり}：{仕事|しごと}の{負担|ふたん}、{時間|じかん}に{追|お}われること、プレッシャーを{感|かん}じている、{危険信号|きけんしんごう}、ストレスの{度合|どあ}い、{燃|も}え{尽|つ}きた、（{過労|かろう}で）{燃|も}え{尽|つ}きる、ストレスへの{対処|たいしょ}、{断|ことわ}る、{休憩|きゅうけい}する、リラックス、リラクゼーションの{練習|れんしゅう}、マインドフルネス、{自分|じぶん}だけの{時間|じかん}、ストレスに{強|つよ}い。",
+ "categoryId": "R02-A02-T06",
+ "tags": [
+  "hälsa",
+  "förebyggande",
+  "stress"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.somnvanor"
+ ],
+ "related": [],
+ "recommendedOrder": 854,
+ "words": [
+  {
+   "senseId": "s.arbetsbelastning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidspress.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pressad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningssignal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stressnivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utbränd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-in-i-väggen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stresshantering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säga-nej.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-en-paus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avslappning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avslappningsövning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mindfulness.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egentid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stresstålig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "För mycket stress",
+  "paragraphs": [
+   "Emil arbetar på ett stort företag. Den senaste tiden har arbetsbelastningen varit hög. Han jobbar under tidspress, svarar på mejl på kvällen och känner sig pressad hela tiden.",
+   "Han sover dåligt, har ont i magen och glömmer saker. – Det är varningssignaler, säger hans chef. Din stressnivå är för hög. Om du inte gör något kan du bli utbränd.",
+   "Emil vet vad det betyder. Förra året var det en kollega som gick in i väggen och inte kunde arbeta på sex månader.",
+   "Emil går en kurs i stresshantering. Där lär han sig att säga nej när han har för mycket att göra, och att ta en paus varje timme.",
+   "Ledaren för kursen visar också en avslappningsövning och lite mindfulness. – Alla behöver avslappning och egentid, säger hon. Ingen är stresstålig hela tiden."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur känner sig Emil på jobbet?",
+    "options": [
+     "Glad",
+     "Pressad",
+     "Ensam",
+     "Lugn"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… och känner sig pressad hela tiden.",
+    "explanationJa": "プレッシャーを{感|かん}じています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Chefen tycker att Emils stressnivå är för hög.",
+    "correct": true,
+    "explanationSv": "Din stressnivå är för hög.",
+    "explanationJa": "{上司|じょうし}はそう{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad hände med en kollega till Emil förra året?",
+    "options": [
+     "Kollegan fick ett nytt jobb",
+     "Kollegan flyttade",
+     "Kollegan blev chef",
+     "Kollegan gick in i väggen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… en kollega som gick in i väggen …",
+    "explanationJa": "{同僚|どうりょう}が{燃|も}え{尽|つ}きてしまいました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad lär sig Emil på kursen?",
+    "options": [
+     "Att jobba snabbare",
+     "Att svara på mejl på natten",
+     "Att sova mindre",
+     "Att säga nej när han har för mycket att göra"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där lär han sig att säga nej när han har för mycket att göra …",
+    "explanationJa": "{仕事|しごと}が{多|おお}すぎるときに{断|ことわ}ることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ledaren för kursen tycker att man ska klara stress hela tiden.",
+    "correct": false,
+    "explanationSv": "Ingen är stresstålig hela tiden.",
+    "explanationJa": "いつもストレスに{強|つよ}い{人|ひと}はいないと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om stress och vila.",
+  "discussionPoints": [
+   "Vad gör dig stressad?",
+   "Är det lätt för dig att säga nej?",
+   "Hur får du egentid?",
+   "Finns det ett japanskt ord för att gå in i väggen?"
+  ]
+ }
+}

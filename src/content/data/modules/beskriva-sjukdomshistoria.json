@@ -1,0 +1,171 @@
+{
+ "id": "m.beskriva-sjukdomshistoria",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Beskriva sjukdomshistoria",
+ "titleJa": "{病歴|びょうれき}を{説明|せつめい}する",
+ "descriptionSv": "Beskriva sjukdomshistoria: sjukdomshistoria, journal, hälsodeklaration, uppge, stående medicin, överkänslighet, barnsjukdom, vaccinerad, genomgå, bli opererad, vara inlagd, sjukhusvistelse, ärftlig, ligga i släkten och frisk och kry.",
+ "descriptionJa": "{病歴|びょうれき}を{説明|せつめい}する：{病歴|びょうれき}、カルテ、{問診票|もんしんひょう}、{申告|しんこく}する、{常用薬|じょうようやく}、{過敏症|かびんしょう}、{子|こ}どもの{病気|びょうき}、ワクチンを{接種|せっしゅ}した、（{手術|しゅじゅつ}などを）{受|う}ける、{手術|しゅじゅつ}を{受|う}ける、{入院|にゅういん}している、{入院|にゅういん}（{期間|きかん}）、{遺伝性|いでんせい}の、{家系|かけい}に{多|おお}い、{元気|げんき}でぴんぴんした。",
+ "categoryId": "R02-A02-T02",
+ "tags": [
+  "hälsa",
+  "vård",
+  "vårdbesök"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.boka-lakartid"
+ ],
+ "related": [],
+ "recommendedOrder": 813,
+ "words": [
+  {
+   "senseId": "s.sjukdomshistoria.1",
+   "active": true
+  },
+  {
+   "senseId": "s.journal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälsodeklaration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stående-medicin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överkänslighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barnsjukdom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vaccinerad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genomgå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bli-opererad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vara-inlagd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukhusvistelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ärftlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ligga-i-släkten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frisk-och-kry.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mormors första besök",
+  "paragraphs": [
+   "Aikos mormor har flyttat från Japan till Sverige. I dag har hon sin första tid hos en läkare, och Aiko följer med och hjälper till med svenskan.",
+   "I väntrummet får mormor en hälsodeklaration. Där ska hon uppge sina sjukdomar och om hon har någon stående medicin. Mormor tar en tablett mot högt blodtryck varje dag.",
+   "Det finns också en fråga om överkänslighet. Mormor kan inte ta en viss sorts medicin, för då får hon utslag.",
+   "Läkaren frågar om hennes sjukdomshistoria. – Jag hade alla barnsjukdomar när jag var liten, och jag är vaccinerad mot det mesta, säger mormor. För tio år sedan genomgick hon en operation. Hon blev opererad i höften och var inlagd i två veckor. Det var hennes enda sjukhusvistelse.",
+   "– Finns det något ärftligt? frågar läkaren. – Ja, högt blodtryck ligger i släkten, säger mormor. Min mamma hade det också.",
+   "Läkaren skriver allt i journalen. – Du är frisk och kry för din ålder, säger han och ler."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför följer Aiko med?",
+    "options": [
+     "För att hon är sjuk",
+     "För att boka en tid",
+     "För att hjälpa mormor med svenskan",
+     "För att hämta medicin"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… och Aiko följer med och hjälper till med svenskan.",
+    "explanationJa": "スウェーデン{語|ご}を{手伝|てつだ}うためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken stående medicin har mormor?",
+    "options": [
+     "En tablett mot högt blodtryck",
+     "Hostmedicin",
+     "Medicin mot feber",
+     "Ingen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mormor tar en tablett mot högt blodtryck varje dag.",
+    "explanationJa": "{高血圧|こうけつあつ}の{薬|くすり}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mormor har legat på sjukhus många gånger.",
+    "correct": false,
+    "explanationSv": "Det var hennes enda sjukhusvistelse.",
+    "explanationJa": "{入院|にゅういん}は1{回|かい}だけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ligger i släkten?",
+    "options": [
+     "Allergi",
+     "Högt blodtryck",
+     "Migrän",
+     "Huvudvärk"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Ja, högt blodtryck ligger i släkten …",
+    "explanationJa": "{高血圧|こうけつあつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Läkaren tycker att mormor mår bra.",
+    "correct": true,
+    "explanationSv": "– Du är frisk och kry för din ålder …",
+    "explanationJa": "{年齢|ねんれい}のわりに{元気|げんき}だと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att berätta om sin hälsa för en läkare.",
+  "discussionPoints": [
+   "Vad är viktigt att berätta för en ny läkare?",
+   "Finns det någon sjukdom som ligger i din släkt?",
+   "Har du varit inlagd på sjukhus någon gång?",
+   "Skulle du vilja läsa din egen journal?"
+  ]
+ }
+}

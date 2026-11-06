@@ -1,0 +1,170 @@
+{
+ "id": "m.feber-och-frossa",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Feber och frossa",
+ "titleJa": "{熱|ねつ}と{悪寒|おかん}",
+ "descriptionSv": "Feber och frossa: feber, ha feber, febrig, temp, ta tempen, frossa, kallsvett, glödhet, febernedsättande, sjukdomskänsla, ligga till sängs, vila upp sig, krya på sig, stanna hemma och sjukanmäla.",
+ "descriptionJa": "{熱|ねつ}と{悪寒|おかん}：{熱|ねつ}、{熱|ねつ}がある、{熱|ねつ}っぽい、{体温|たいおん}、{体温|たいおん}を{測|はか}る、{悪寒|おかん}、{冷|ひ}や{汗|あせ}、{燃|も}えるように{熱|あつ}い、{解熱|げねつ}の、{倦怠感|けんたいかん}、{寝込|ねこ}む、{休|やす}んで{回復|かいふく}する、{元気|げんき}になる、{家|いえ}にいる、{病欠|びょうけつ}の{連絡|れんらく}をする。",
+ "categoryId": "R02-A02-T01",
+ "tags": [
+  "hälsa",
+  "symtom"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.beskriva-smarta-och-obehag"
+ ],
+ "related": [],
+ "recommendedOrder": 801,
+ "words": [
+  {
+   "senseId": "s.feber.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ha-feber.1",
+   "active": true
+  },
+  {
+   "senseId": "s.febrig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.temp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-tempen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frossa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kallsvett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glödhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.febernedsättande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukdomskänsla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ligga-till-sängs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vila-upp-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krya-på-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stanna-hemma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukanmäla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Sjuk hemma",
+  "paragraphs": [
+   "En morgon vaknar Leo och känner sig konstig. Han fryser och skakar fast han har två täcken. Han har frossa.",
+   "Mamma känner på hans panna. Den är glödhet. – Du är febrig, säger hon. Jag ska ta tempen.",
+   "Termometern visar 39 grader. – Du har feber, säger mamma. Du ska stanna hemma i dag. Hon sjukanmäler honom i skolappen.",
+   "Leo har en stark sjukdomskänsla. Han får ligga till sängs hela dagen. Mamma ger honom en febernedsättande tablett och mycket vatten.",
+   "På natten vaknar han med kallsvett på pannan. Men på morgonen har han inte lika mycket tempen.",
+   "Hans kompis Aiko skickar ett meddelande: – Krya på dig! Leo svarar att han ska vila upp sig ett par dagar till."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur vet Leo att han har frossa?",
+    "options": [
+     "Han har ont i magen",
+     "Han hostar",
+     "Han fryser och skakar",
+     "Han är hungrig"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han fryser och skakar fast han har två täcken.",
+    "explanationJa": "{寒|さむ}くて{震|ふる}えているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur hög feber har Leo?",
+    "options": [
+     "39 grader",
+     "37 grader",
+     "41 grader",
+     "36 grader"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Termometern visar 39 grader.",
+    "explanationJa": "39{度|ど}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo går till skolan.",
+    "correct": false,
+    "explanationSv": "Du ska stanna hemma i dag.",
+    "explanationJa": "{家|いえ}で{休|やす}みます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad ger mamma Leo?",
+    "options": [
+     "Glass",
+     "Te med honung",
+     "En febernedsättande tablett och vatten",
+     "Ingenting"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mamma ger honom en febernedsättande tablett och mycket vatten.",
+    "explanationJa": "{解熱剤|げねつざい}と{水|みず}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo mår lite bättre på morgonen.",
+    "correct": true,
+    "explanationSv": "Men på morgonen har han inte lika mycket tempen.",
+    "explanationJa": "{熱|ねつ}が{少|すこ}し{下|さ}がりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad man gör när man har feber.",
+  "discussionPoints": [
+   "Hur ofta har du feber?",
+   "Vem tar tempen på dig när du är sjuk?",
+   "Vad säger man i Japan till någon som är sjuk?",
+   "Vad brukar du göra när du ligger till sängs?"
+  ]
+ }
+}

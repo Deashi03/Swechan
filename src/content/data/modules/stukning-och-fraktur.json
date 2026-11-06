@@ -1,0 +1,171 @@
+{
+ "id": "m.stukning-och-fraktur",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Stukning och fraktur",
+ "titleJa": "ねんざと{骨折|こっせつ}",
+ "descriptionSv": "Stukning och fraktur: halkolycka, snedsteg, svullna, ispåse, elastisk binda, högläge, lägga upp benet, belasta, stödja på, bruten, röntgenbild, felställning, spjäla, rullstol och läkningstid.",
+ "descriptionJa": "ねんざと{骨折|こっせつ}：{転倒事故|てんとうじこ}、{踏|ふ}み{外|はず}し、{腫|は}れる、アイスパック、{弾性包帯|だんせいほうたい}、{患部|かんぶ}を{高|たか}くした{姿勢|しせい}、{脚|あし}を{上|あ}げておく、{体重|たいじゅう}をかける、（{脚|あし}に）{体重|たいじゅう}をかける、{折|お}れた、レントゲン{写真|しゃしん}、{骨|ほね}のずれ、{副木|そえぎ}を{当|あ}てる、{車椅子|くるまいす}、{治癒|ちゆ}にかかる{期間|きかん}。",
+ "categoryId": "R02-A02-T05",
+ "tags": [
+  "hälsa",
+  "första hjälpen",
+  "skada"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.sar-och-blodningar"
+ ],
+ "related": [],
+ "recommendedOrder": 842,
+ "words": [
+  {
+   "senseId": "s.halkolycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snedsteg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svullna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ispåse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elastisk-binda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-upp-benet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belasta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stödja-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bruten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röntgenbild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spjäla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rullstol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkningstid.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En kall vinterdag",
+  "paragraphs": [
+   "Det har varit många halkolyckor i stan. Även Aikos mamma ramlar på isen utanför affären. Hon har tagit ett snedsteg, och foten vreds.",
+   "Foten svullnar direkt. Aiko hämtar en ispåse och en elastisk binda. – Kyla, tryck och högläge, säger hon, det lärde vi oss i skolan. Mamma får lägga upp benet på en kudde.",
+   "Mamma kan inte stödja på foten, så de åker till akuten. På röntgenbilden ser läkaren att det inte är brutet, bara stukat. – Belasta foten så lite som möjligt en vecka, säger han.",
+   "Samma dag kommer en man in som har ramlat med cykeln. Hans arm är bruten, och det finns en felställning. De som körde honom till sjukhuset har spjälat armen på vägen.",
+   "Läkaren rättar till armen och lägger gips. – Läkningstiden är ungefär sex veckor, säger han.",
+   "En gammal kvinna i väntrummet sitter i rullstol. Hon har brutit höften. – Det tar längre tid att läka när man är gammal, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur skadar sig mamma?",
+    "options": [
+     "Hon tar ett snedsteg på isen",
+     "Hon ramlar med cykeln",
+     "Hon ramlar i trappan",
+     "Hon får en boll på foten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon har tagit ett snedsteg, och foten vreds.",
+    "explanationJa": "{氷|こおり}の{上|うえ}で{足|あし}を{踏|ふ}み{外|はず}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad betyder kyla, tryck och högläge?",
+    "options": [
+     "Hur man stoppar näsblod",
+     "Hur man lägger ett förband",
+     "Hur man tar hand om en stukning",
+     "Hur man tvättar ett sår"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Kyla, tryck och högläge, säger hon, det lärde vi oss i skolan.",
+    "explanationJa": "ねんざの{手当|てあ}ての{仕方|しかた}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mammas fot är bruten.",
+    "correct": false,
+    "explanationSv": "… det inte är brutet, bara stukat.",
+    "explanationJa": "ねんざだけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har man gjort med mannens arm på vägen?",
+    "options": [
+     "Gipsat den",
+     "Sytt ihop den",
+     "Röntgat den",
+     "Spjälat den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "De som körde honom till sjukhuset har spjälat armen på vägen.",
+    "explanationJa": "{副木|そえぎ}を{当|あ}てました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Gamla människor läker långsammare.",
+    "correct": true,
+    "explanationSv": "– Det tar längre tid att läka när man är gammal …",
+    "explanationJa": "{高齢者|こうれいしゃ}は{治|なお}るのに{時間|じかん}がかかります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om stukningar och benbrott.",
+  "discussionPoints": [
+   "Har du stukat foten eller brutit något?",
+   "Vad gör man om någon har stukat foten?",
+   "Är halkolyckor vanliga där du bor?",
+   "Hur lång läkningstid tror du att ett benbrott har?"
+  ]
+ }
+}

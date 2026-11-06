@@ -1,0 +1,171 @@
+{
+ "id": "m.hjart-karlsjukdomar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Hjärt-kärlsjukdomar",
+ "titleJa": "{心血管疾患|しんけっかんしっかん}",
+ "descriptionSv": "Hjärt-kärlsjukdomar: hjärt-kärlsjukdom, bröstsmärta, kärlkramp, hjärtklappning, förmaksflimmer, hjärtsvikt, ballongvidgning, blodförtunnande, propplösande, hängande mungipa, domning, talsvårighet, förlamning, halvsidig och AKUT-testet.",
+ "descriptionJa": "{心血管疾患|しんけっかんしっかん}：{心血管疾患|しんけっかんしっかん}、{胸|むね}の{痛|いた}み、{狭心症|きょうしんしょう}、{動悸|どうき}、{心房細動|しんぼうさいどう}、{心不全|しんふぜん}、バルーン{拡張術|かくちょうじゅつ}、{血液|けつえき}をさらさらにする、{血栓溶解|けっせんようかい}の、{垂|た}れ{下|さ}がった{口角|こうかく}、しびれ、{言語障害|げんごしょうがい}、まひ、{片側|かたがわ}の、AKUTテスト。",
+ "categoryId": "R02-A02-T03",
+ "tags": [
+  "hälsa",
+  "sjukdom",
+  "hjärta"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.allergier-och-astma"
+ ],
+ "related": [],
+ "recommendedOrder": 824,
+ "words": [
+  {
+   "senseId": "s.hjärt-kärlsjukdom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bröstsmärta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kärlkramp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjärtklappning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förmaksflimmer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjärtsvikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ballongvidgning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodförtunnande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.propplösande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hängande-mungipa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.domning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talsvårighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlamning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvsidig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.AKUT-testet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Morfars hjärta",
+  "paragraphs": [
+   "Aikos svenska morfar har en hjärt-kärlsjukdom. För några år sedan fick han kärlkramp. Han fick ont i bröstet när han gick uppför backar, men det gick över när han vilade.",
+   "En dag fick han plötslig bröstsmärta som inte gick över. Det var en hjärtinfarkt. På sjukhuset gjordes en ballongvidgning, och nu mår han bättre.",
+   "Morfar har också förmaksflimmer. Han får ibland hjärtklappning, och han tar blodförtunnande medicin så att det inte bildas blodproppar. Läkaren säger att han har lite hjärtsvikt och ska röra på sig varje dag.",
+   "I skolan lär sig Aiko AKUT-testet. Läraren visar hur man känner igen en stroke: en hängande mungipa, domning eller halvsidig förlamning i ena armen, och talsvårigheter.",
+   "– Ring 112 direkt, säger läraren. Om man kommer till sjukhuset snabbt kan man få propplösande behandling, och då kan förlamningen bli mindre.",
+   "På kvällen berättar Aiko om testet för morfar. – Bra, säger han. Nu kan du rädda liv."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När fick morfar ont av kärlkrampen?",
+    "options": [
+     "När han sov",
+     "När han åt",
+     "När han gick uppför backar",
+     "När han satt stilla"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han fick ont i bröstet när han gick uppför backar …",
+    "explanationJa": "{坂|さか}を{上|のぼ}ったときです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gjordes på sjukhuset efter hjärtinfarkten?",
+    "options": [
+     "En ballongvidgning",
+     "En röntgen av foten",
+     "Ett allergitest",
+     "Ingenting"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På sjukhuset gjordes en ballongvidgning …",
+    "explanationJa": "バルーン{拡張術|かくちょうじゅつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Morfar tar blodförtunnande medicin.",
+    "correct": true,
+    "explanationSv": "… han tar blodförtunnande medicin så att det inte bildas blodproppar.",
+    "explanationJa": "{血栓|けっせん}ができないように{飲|の}んでいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är ett tecken på stroke enligt AKUT-testet?",
+    "options": [
+     "Hög feber",
+     "Snuva",
+     "Hosta",
+     "En hängande mungipa"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… en hängande mungipa …",
+    "explanationJa": "{口角|こうかく}が{垂|た}れることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är viktigt att komma snabbt till sjukhuset vid stroke.",
+    "correct": true,
+    "explanationSv": "Om man kommer till sjukhuset snabbt kan man få propplösande behandling …",
+    "explanationJa": "{早|はや}ければ{治療|ちりょう}が{受|う}けられます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hjärtat och om stroke.",
+  "discussionPoints": [
+   "Vet du vad AKUT-testet betyder?",
+   "Är hjärt-kärlsjukdomar vanliga i Japan?",
+   "Vad kan man göra för att må bra i hjärtat?",
+   "Får du hjärtklappning av kaffe?"
+  ]
+ }
+}

@@ -1,0 +1,170 @@
+{
+ "id": "m.forkylning-och-influensa",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Förkylning och influensa",
+ "titleJa": "{風邪|かぜ}とインフルエンザ",
+ "descriptionSv": "Förkylning och influensa: bli förkyld, krasslig, snuvig, förkylningssäsong, muskelvärk, luftvägsinfektion, halsfluss, bihåleinflammation, insjukna, sjukdomsförlopp, gå över av sig själv, influensavaccin, covid, smittspridning och hosta i armvecket.",
+ "descriptionJa": "{風邪|かぜ}とインフルエンザ：{風邪|かぜ}をひく、{体調|たいちょう}がすぐれない、{鼻風邪|はなかぜ}ぎみの、{風邪|かぜ}の{季節|きせつ}、{筋肉痛|きんにくつう}、{気道感染症|きどうかんせんしょう}、{扁桃炎|へんとうえん}、{副鼻腔炎|ふくびくうえん}、{発病|はつびょう}する、{病気|びょうき}の{経過|けいか}、{自然|しぜん}に{治|なお}る、インフルエンザワクチン、コロナ、{感染拡大|かんせんかくだい}、ひじの{内側|うちがわ}で{咳|せき}をする。",
+ "categoryId": "R02-A02-T03",
+ "tags": [
+  "hälsa",
+  "sjukdom"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.patientens-fragor"
+ ],
+ "related": [],
+ "recommendedOrder": 821,
+ "words": [
+  {
+   "senseId": "s.bli-förkyld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krasslig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snuvig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förkylningssäsong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.muskelvärk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftvägsinfektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halsfluss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bihåleinflammation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insjukna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukdomsförlopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-över-av-sig-själv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.influensavaccin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.covid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smittspridning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hosta-i-armvecket.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Förkylning eller influensa?",
+  "paragraphs": [
+   "Nu börjar förkylningssäsongen. I Aikos klass är hälften av eleverna snuviga, och läraren påminner alla om att hosta i armvecket.",
+   "Leo har blivit förkyld igen. Han är krasslig men går ändå till skolan. Läraren säger att man ska stanna hemma vid feber, för att minska smittspridningen.",
+   "Aiko insjuknar plötsligt på torsdagen. Hon får hög feber och muskelvärk i hela kroppen. – Det låter som influensa, inte en vanlig förkylning, säger pappa. Influensa har ett snabbare sjukdomsförlopp.",
+   "Läkaren på 1177 förklarar att båda är luftvägsinfektioner som orsakas av virus. De brukar gå över av sig själv, och antibiotika hjälper inte. Men halsfluss med vita fläckar kan behöva antibiotika.",
+   "Efter två veckor är Aiko frisk, men Leo får bihåleinflammation efter sin förkylning. Det gör ont i ansiktet när han böjer sig fram.",
+   "Mormor säger att hon tar influensavaccin varje höst. Under covid tog alla vaccin, säger hon, men nu är det mest gamla och sjuka som gör det."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad påminner läraren om?",
+    "options": [
+     "Att ta medicin",
+     "Att äta frukost",
+     "Att sova mer",
+     "Att hosta i armvecket"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… läraren påminner alla om att hosta i armvecket.",
+    "explanationJa": "ひじの{内側|うちがわ}で{咳|せき}をすることです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka symtom får Aiko?",
+    "options": [
+     "Hög feber och muskelvärk",
+     "Bara snuva",
+     "Ont i magen",
+     "Utslag"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon får hög feber och muskelvärk i hela kroppen.",
+    "explanationJa": "{高熱|こうねつ}と{筋肉痛|きんにくつう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Antibiotika hjälper mot förkylning.",
+    "correct": false,
+    "explanationSv": "De brukar gå över av sig själv, och antibiotika hjälper inte.",
+    "explanationJa": "{抗生物質|こうせいぶっしつ}は{効|き}きません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad får Leo efter förkylningen?",
+    "options": [
+     "Influensa",
+     "Halsfluss",
+     "Covid",
+     "Bihåleinflammation"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… Leo får bihåleinflammation efter sin förkylning.",
+    "explanationJa": "{副鼻腔炎|ふくびくうえん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Leo borde ha stannat hemma.",
+    "correct": true,
+    "explanationSv": "Han är krasslig men går ändå till skolan. Läraren säger att man ska stanna hemma vid feber …",
+    "explanationJa": "{家|いえ}で{休|やす}むべきでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om förkylning och influensa.",
+  "discussionPoints": [
+   "Hur många gånger per år blir du förkyld?",
+   "Hur känner man skillnad på förkylning och influensa?",
+   "Bär man munskydd i Japan när man är förkyld?",
+   "Tar du influensavaccin?"
+  ]
+ }
+}

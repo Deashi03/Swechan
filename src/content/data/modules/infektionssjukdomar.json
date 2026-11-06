@@ -1,0 +1,171 @@
+{
+ "id": "m.infektionssjukdomar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Infektionssjukdomar",
+ "titleJa": "{感染症|かんせんしょう}",
+ "descriptionSv": "Infektionssjukdomar: infektionssjukdom, bakterieinfektion, virusinfektion, smittväg, droppsmitta, kontaktsmitta, vattkoppor, mässling, kikhosta, fästing, borrelia, utbrott, epidemi, pandemi och karantän.",
+ "descriptionJa": "{感染症|かんせんしょう}：{感染症|かんせんしょう}、{細菌感染|さいきんかんせん}、ウイルス{感染|かんせん}、{感染経路|かんせんけいろ}、{飛沫感染|ひまつかんせん}、{接触感染|せっしょくかんせん}、{水|みず}ぼうそう、はしか、{百日咳|ひゃくにちぜき}、ダニ、ボレリア{症|しょう}、（{病気|びょうき}の）{流行|りゅうこう}、{流行病|りゅうこうびょう}、パンデミック、{隔離|かくり}。",
+ "categoryId": "R02-A02-T03",
+ "tags": [
+  "hälsa",
+  "sjukdom",
+  "infektion"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.forkylning-och-influensa"
+ ],
+ "related": [],
+ "recommendedOrder": 822,
+ "words": [
+  {
+   "senseId": "s.infektionssjukdom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakterieinfektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.virusinfektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smittväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.droppsmitta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontaktsmitta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattkoppor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mässling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kikhosta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fästing.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borrelia.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.epidemi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pandemi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.karantän.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Om smitta",
+  "paragraphs": [
+   "I biologin pratar Aikos klass om infektionssjukdomar. Läraren förklarar skillnaden mellan en bakterieinfektion och en virusinfektion. Bara den första kan behandlas med antibiotika.",
+   "– Varje sjukdom har sin smittväg, säger läraren. Influensa sprids med droppsmitta när man hostar. Magsjuka sprids ofta genom kontaktsmitta, via händer och handtag.",
+   "Leos lillebror har vattkoppor och har blåsor överallt. Mässling är en barnsjukdom som är mycket farligare, men nästan alla barn i Sverige är vaccinerade mot den, och mot kikhosta.",
+   "På sommaren ska man se upp för fästingar i gräset. En fästing kan bära på borrelia. Om man får en röd ring runt bettet ska man gå till vårdcentralen.",
+   "Läraren berättar om utbrottet av magsjuka på skolan förra året. Om en sjukdom sprids i ett helt land kallas det en epidemi, och om den sprids över hela världen kallas det en pandemi.",
+   "Under covid satt många människor i karantän. Aiko minns att hon inte fick träffa sina kompisar på flera veckor."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken infektion kan behandlas med antibiotika?",
+    "options": [
+     "En virusinfektion",
+     "Båda",
+     "En bakterieinfektion",
+     "Ingen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Bara den första kan behandlas med antibiotika.",
+    "explanationJa": "{細菌感染|さいきんかんせん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur sprids influensa?",
+    "options": [
+     "Med fästingar",
+     "Med mat",
+     "Med blod",
+     "Med droppsmitta"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Influensa sprids med droppsmitta när man hostar.",
+    "explanationJa": "{飛沫感染|ひまつかんせん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Få barn i Sverige är vaccinerade mot mässling.",
+    "correct": false,
+    "explanationSv": "… nästan alla barn i Sverige är vaccinerade mot den …",
+    "explanationJa": "ほとんどの{子|こ}どもが{接種|せっしゅ}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad är en pandemi?",
+    "options": [
+     "En sjukdom på en skola",
+     "En sjukdom hos djur",
+     "En sjukdom som sprids över hela världen",
+     "En sjukdom som inte smittar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… om den sprids över hela världen kallas det en pandemi.",
+    "explanationJa": "{世界中|せかいじゅう}に{広|ひろ}がる{病気|びょうき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Karantänen var svår för Aiko.",
+    "correct": true,
+    "explanationSv": "Aiko minns att hon inte fick träffa sina kompisar på flera veckor.",
+    "explanationJa": "{友|とも}だちに{会|あ}えませんでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om smittsamma sjukdomar.",
+  "discussionPoints": [
+   "Har du haft vattkoppor?",
+   "Finns det fästingar där du bor?",
+   "Hur skyddar du dig mot smitta?",
+   "Vad minns du från pandemin?"
+  ]
+ }
+}

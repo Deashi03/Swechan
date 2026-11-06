@@ -28,6 +28,19 @@ export function shuffle<T>(items: readonly T[], rng: () => number): T[] {
   return a;
 }
 
+/**
+ * Lazily shuffled view of `items` (incremental Fisher–Yates): yields a uniformly random order one
+ * item at a time, so a caller that only needs the first few matches does not shuffle everything.
+ */
+export function* lazyShuffle<T>(items: readonly T[], rng: () => number): Generator<T> {
+  const a = [...items];
+  for (let i = 0; i < a.length; i++) {
+    const j = i + Math.floor(rng() * (a.length - i));
+    [a[i], a[j]] = [a[j]!, a[i]!];
+    yield a[i]!;
+  }
+}
+
 export function pickN<T>(items: readonly T[], n: number, rng: () => number): T[] {
   return shuffle(items, rng).slice(0, n);
 }

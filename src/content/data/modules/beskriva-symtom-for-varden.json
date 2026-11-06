@@ -1,0 +1,171 @@
+{
+ "id": "m.beskriva-symtom-for-varden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Beskriva symtom för vården",
+ "titleJa": "{医療機関|いりょうきかん}に{症状|しょうじょう}を{説明|せつめい}する",
+ "descriptionSv": "Beskriva symtom för vården: symtom, besvär, uppstå, gradvis, smyga sig på, ihållande, komma och gå, avta, förvärras, utstrålande, intensitet, smärtskala, sjukvårdsrådgivning, Vårdguiden och egenvård.",
+ "descriptionJa": "{医療機関|いりょうきかん}に{症状|しょうじょう}を{説明|せつめい}する：{症状|しょうじょう}、{不調|ふちょう}、{起|お}こる、だんだん、じわじわ{始|はじ}まる、{長|なが}く{続|つづ}く、{出|で}たり{消|き}えたりする、おさまる、{悪化|あっか}する、{広|ひろ}がる、{強|つよ}さ、{痛|いた}みのスケール、{医療相談|いりょうそうだん}、ヴォードギーデン、セルフケア。",
+ "categoryId": "R02-A02-T01",
+ "tags": [
+  "hälsa",
+  "symtom",
+  "vård"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hudutslag-och-klada"
+ ],
+ "related": [],
+ "recommendedOrder": 807,
+ "words": [
+  {
+   "senseId": "s.symtom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besvär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppstå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gradvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smyga-sig-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ihållande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-och-gå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvärras.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utstrålande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intensitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smärtskala.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukvårdsrådgivning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Vårdguiden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egenvård.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett samtal till 1177",
+  "paragraphs": [
+   "Aikos pappa har haft ont i ryggen i en vecka. En kväll ringer han sjukvårdsrådgivningen. Aiko sitter bredvid och lyssnar.",
+   "– Hej, du har kommit till Vårdguiden. Vilka symtom har du? frågar sjuksköterskan. – Jag har besvär med ryggen, säger pappa.",
+   "– När uppstod smärtan? – Den kom inte plötsligt. Den smög sig på, och den har gradvis blivit värre. Nu är den ihållande.",
+   "– Kommer och går smärtan, eller är den där hela tiden? – Den är där hela tiden. Det är en utstrålande smärta från ryggen ner i vänster ben.",
+   "– Hur hög är intensiteten på en smärtskala från noll till tio? – Ungefär en sexa. Den avtar lite när jag ligger ner.",
+   "– Prova egenvård några dagar till: vila, gå korta promenader och använd värme. Om symtomen förvärras ska du ringa igen eller kontakta en läkare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket telefonnummer ringer pappa?",
+    "options": [
+     "112",
+     "1177",
+     "118 118",
+     "90 000"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ett samtal till 1177",
+    "explanationJa": "1177です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur började smärtan?",
+    "options": [
+     "Den kom plötsligt",
+     "Efter en olycka",
+     "Den smög sig på",
+     "I sömnen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den smög sig på …",
+    "explanationJa": "じわじわ{始|はじ}まりました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Smärtan kommer och går.",
+    "correct": false,
+    "explanationSv": "Den är där hela tiden.",
+    "explanationJa": "ずっと{痛|いた}みがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur ont gör det på smärtskalan?",
+    "options": [
+     "Två",
+     "Tio",
+     "Noll",
+     "Ungefär sex"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Ungefär en sexa.",
+    "explanationJa": "6くらいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Pappa behöver inte åka till sjukhuset i kväll.",
+    "correct": true,
+    "explanationSv": "– Prova egenvård några dagar till …",
+    "explanationJa": "まずは{家|いえ}でのセルフケアをすすめられました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni övar på att beskriva symtom.",
+  "discussionPoints": [
+   "Hur skulle du beskriva en huvudvärk för en sköterska?",
+   "När är egenvård nog, och när behöver man en läkare?",
+   "Finns det något som liknar 1177 i Japan?",
+   "Vilket nummer är en sexa på smärtskalan för dig?"
+  ]
+ }
+}

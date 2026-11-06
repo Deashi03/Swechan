@@ -1,0 +1,170 @@
+{
+ "id": "m.sar-och-blodningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Sår och blödningar",
+ "titleJa": "{傷|きず}と{出血|しゅっけつ}",
+ "descriptionSv": "Sår och blödningar: skrubbsår, skärsår, näsblod, blodig, stoppa blödningen, rengöra, sårtvätt, desinficera, kompress, förband, tryckförband, sy ihop, infekterad, var och sårskorpa.",
+ "descriptionJa": "{傷|きず}と{出血|しゅっけつ}：すり{傷|きず}、{切|き}り{傷|きず}、{鼻血|はなぢ}、{血|ち}だらけの、{止血|しけつ}する、きれいにする、{傷|きず}の{消毒液|しょうどくえき}、{消毒|しょうどく}する、ガーゼ、{包帯|ほうたい}、{圧迫包帯|あっぱくほうたい}、{縫|ぬ}い{合|あ}わせる、{化膿|かのう}した、{膿|うみ}、かさぶた。",
+ "categoryId": "R02-A02-T05",
+ "tags": [
+  "hälsa",
+  "första hjälpen"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.folja-en-behandling"
+ ],
+ "related": [],
+ "recommendedOrder": 841,
+ "words": [
+  {
+   "senseId": "s.skrubbsår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärsår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näsblod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stoppa-blödningen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rengöra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sårtvätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.desinficera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompress.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckförband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sy-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.infekterad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.var-sår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sårskorpa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Första hjälpen i skolan",
+  "paragraphs": [
+   "Klassen har första hjälpen på idrotten. Skolsköterskan visar vad man gör med olika sår.",
+   "– Ett skrubbsår får man när man ramlar och skrapar huden. Ett skärsår får man av något vasst. Först ska man rengöra såret med vatten eller sårtvätt. Man kan desinficera det, men vanligt vatten räcker ofta.",
+   "– Om någon blöder mycket ska man stoppa blödningen. Tryck med en kompress på såret. Om det inte hjälper lägger man ett tryckförband. Ett blodigt förband tar man inte bort, utan man lägger ett nytt ovanpå.",
+   "Leo frågar om näsblod. – Luta huvudet framåt och klämma om näsan i tio minuter, säger sköterskan.",
+   "Aiko berättar att hon skar sig på en glasbit förra sommaren. Läkaren fick sy ihop såret med tre stygn.",
+   "– Om ett sår blir rött och varmt kan det vara infekterat, säger sköterskan. Om det kommer var ska man kontakta vården. Och pilla inte på sårskorpan, då läker såret långsammare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska man göra först med ett sår?",
+    "options": [
+     "Sy ihop det",
+     "Lägga ett tryckförband",
+     "Rengöra det",
+     "Pilla på det"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Först ska man rengöra såret med vatten eller sårtvätt.",
+    "explanationJa": "まず{傷|きず}をきれいにします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör man om tryck med kompress inte hjälper?",
+    "options": [
+     "Tar bort förbandet",
+     "Lägger ett tryckförband",
+     "Väntar",
+     "Tvättar såret igen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om det inte hjälper lägger man ett tryckförband.",
+    "explanationJa": "{圧迫包帯|あっぱくほうたい}を{巻|ま}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Vid näsblod ska man luta huvudet bakåt.",
+    "correct": false,
+    "explanationSv": "– Luta huvudet framåt och klämma om näsan …",
+    "explanationJa": "{前|まえ}に{傾|かたむ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur många stygn fick Aiko?",
+    "options": [
+     "Ett",
+     "Fem",
+     "Tre",
+     "Tio"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Läkaren fick sy ihop såret med tre stygn.",
+    "explanationJa": "3{針|はり}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Var i ett sår kan vara ett tecken på infektion.",
+    "correct": true,
+    "explanationSv": "Om det kommer var ska man kontakta vården.",
+    "explanationJa": "{化膿|かのう}のサインかもしれません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sår och första hjälpen.",
+  "discussionPoints": [
+   "Vad gör du när du får ett skrubbsår?",
+   "Hur stoppar man näsblod i Japan?",
+   "Har du fått stygn någon gång?",
+   "Vad finns i en förbandslåda?"
+  ]
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "id": "m.vaccination-och-injektion",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Vaccination och injektion",
+ "titleJa": "{予防接種|よぼうせっしゅ}と{注射|ちゅうしゃ}",
+ "descriptionSv": "Vaccination och injektion: vaccination, injektion, ge en spruta, injicera, spruträdd, dropp, vaccinationsprogram, påfyllnadsdos, stelkramp, TBE, resevaccin, vaccinationskort, skyddseffekt, flockimmunitet och massvaccination.",
+ "descriptionJa": "{予防接種|よぼうせっしゅ}と{注射|ちゅうしゃ}：{予防接種|よぼうせっしゅ}、{注射|ちゅうしゃ}、{注射|ちゅうしゃ}する、{注射|ちゅうしゃ}する（かたい{言|い}い{方|かた}）、{注射|ちゅうしゃ}が{怖|こわ}い、{点滴|てんてき}、{予防接種|よぼうせっしゅ}プログラム、{追加接種|ついかせっしゅ}、{破傷風|はしょうふう}、ダニ{媒介性脳炎|ばいかいせいのうえん}、{渡航|とこう}ワクチン、{予防接種|よぼうせっしゅ}{記録|きろく}カード、{予防効果|よぼうこうか}、{集団免疫|しゅうだんめんえき}、{集団予防接種|しゅうだんよぼうせっしゅ}。",
+ "categoryId": "R02-A02-T04",
+ "tags": [
+  "hälsa",
+  "läkemedel",
+  "vaccin"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.salvor-och-inhalatorer"
+ ],
+ "related": [],
+ "recommendedOrder": 836,
+ "words": [
+  {
+   "senseId": "s.vaccination.1",
+   "active": true
+  },
+  {
+   "senseId": "s.injektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ge-en-spruta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.injicera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spruträdd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vaccinationsprogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påfyllnadsdos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stelkramp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.TBE.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resevaccin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vaccinationskort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddseffekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flockimmunitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.massvaccination.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Dags för vaccin",
+  "paragraphs": [
+   "I åttan får hela klassen en kallelse till vaccination hos skolsköterskan. Det ingår i det svenska vaccinationsprogrammet.",
+   "Leo är spruträdd och vill inte gå. – Det är bara en liten injektion i armen, säger sköterskan. Hon ger en spruta på några sekunder, och Leo märker nästan ingenting.",
+   "Pappa trampade på en spik i trädgården. På vårdcentralen frågar de när han senast fick vaccin mot stelkramp. Det var länge sedan, så han får en påfyllnadsdos.",
+   "Familjen ska åka till sommarstugan i skärgården, där det finns många fästingar. Alla vaccinerar sig mot TBE. Mamma skriver in det i allas vaccinationskort.",
+   "Aikos kusin ska resa till Indien och behöver flera resevaccin. Vaccinen har hög skyddseffekt, säger sköterskan.",
+   "Mormor minns pandemin, när det var massvaccination i idrottshallen. Målet var flockimmunitet. Hon berättar också om när hon låg på sjukhus och fick dropp, och om sin granne som injicerar insulin själv varje dag."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem ger vaccinet i skolan?",
+    "options": [
+     "Läraren",
+     "Skolsköterskan",
+     "En apotekare",
+     "Rektorn"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… en kallelse till vaccination hos skolsköterskan.",
+    "explanationJa": "{学校|がっこう}の{看護師|かんごし}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför får pappa en påfyllnadsdos?",
+    "options": [
+     "Det var länge sedan han fick vaccin mot stelkramp",
+     "Han ska resa till Indien",
+     "Han är spruträdd",
+     "Han har TBE"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det var länge sedan, så han får en påfyllnadsdos.",
+    "explanationJa": "{前回|ぜんかい}の{接種|せっしゅ}からずいぶんたっているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Leo har mycket ont av sprutan.",
+    "correct": false,
+    "explanationSv": "… och Leo märker nästan ingenting.",
+    "explanationJa": "ほとんど{何|なに}も{感|かん}じませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför vaccinerar sig familjen mot TBE?",
+    "options": [
+     "De ska resa till Asien",
+     "Skolan kräver det",
+     "Mormor är sjuk",
+     "Det finns många fästingar vid sommarstugan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… där det finns många fästingar. Alla vaccinerar sig mot TBE.",
+    "explanationJa": "{別荘|べっそう}のあたりにダニが{多|おお}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Många vaccinerades samtidigt under pandemin.",
+    "correct": true,
+    "explanationSv": "… när det var massvaccination i idrottshallen.",
+    "explanationJa": "{集団予防接種|しゅうだんよぼうせっしゅ}がありました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vaccin och sprutor.",
+  "discussionPoints": [
+   "Är du spruträdd?",
+   "Vilka vaccin får barn i Japan?",
+   "Har du ett vaccinationskort?",
+   "Varför är flockimmunitet viktigt?"
+  ]
+ }
+}

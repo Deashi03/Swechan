@@ -1,0 +1,171 @@
+{
+ "id": "m.larma-112",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Larma 112",
+ "titleJa": "112に{通報|つうほう}する",
+ "descriptionSv": "Larma 112: nödsamtal, SOS Alarm, larmoperatör, lägga på, hålla linjen, ambulans, ambulanspersonal, ambulanshelikopter, räddningstjänst, brandkår, utryckning, blåljus, siren, olycksplats och nödläge.",
+ "descriptionJa": "112に{通報|つうほう}する：{緊急通報|きんきゅうつうほう}、SOSアラーム、{通信指令員|つうしんしれいいん}、{電話|でんわ}を{切|き}る、{切|き}らずに{待|ま}つ、{救急車|きゅうきゅうしゃ}、{救急隊員|きゅうきゅうたいいん}、{救急|きゅうきゅう}ヘリ、{消防|しょうぼう}・{救助|きゅうじょ}サービス、{消防隊|しょうぼうたい}、{出動|しゅつどう}、{青色|あおいろ}{回転灯|かいてんとう}、サイレン、{事故現場|じこげんば}、{緊急事態|きんきゅうじたい}。",
+ "categoryId": "R02-A02-T05",
+ "tags": [
+  "hälsa",
+  "första hjälpen",
+  "nödsituation"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.hlr-och-livraddning"
+ ],
+ "related": [],
+ "recommendedOrder": 846,
+ "words": [
+  {
+   "senseId": "s.ambulans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandkår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.siren.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.olycksplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödsamtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ambulanspersonal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räddningstjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utryckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larmoperatör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.SOS-Alarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-linjen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ambulanshelikopter.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett nödsamtal",
+  "paragraphs": [
+   "På vägen hem ser Aiko att en bil har kört av vägen. En man sitter kvar i bilen och blöder. Aiko ringer 112. Det är hennes första nödsamtal.",
+   "– SOS Alarm, vad har hänt? säger en larmoperatör. Aiko berättar och svarar på frågorna. – Du ska inte lägga på, säger larmoperatören. Håll linjen, hjälpen är på väg.",
+   "Larmoperatören skickar en ambulans och räddningstjänsten. Mannen sitter fast, så brandkåren behöver hjälpa honom ut ur bilen.",
+   "Efter några minuter hör Aiko en siren och ser blåljus. Det är en utryckning med tre bilar. Ambulanspersonalen tar hand om mannen. Han är svårt skadad, så en ambulanshelikopter kommer också.",
+   "Polisen ställer frågor till Aiko på olycksplatsen. – Bra att du ringde direkt, säger polisen.",
+   "Hemma berättar Aiko om det. Mamma påminner om att man bara ska ringa 112 i ett nödläge. Om det inte är bråttom kan man ringa 1177 för råd om vård."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ser Aiko på vägen hem?",
+    "options": [
+     "En brand",
+     "En bil som har kört av vägen",
+     "Någon som har ramlat",
+     "En hund som är skadad"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… ser Aiko att en bil har kört av vägen.",
+    "explanationJa": "{道|みち}から{外|はず}れた{車|くるま}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad säger larmoperatören?",
+    "options": [
+     "Att Aiko ska ringa igen senare",
+     "Att Aiko ska åka hem",
+     "Att Aiko ska ta en bild",
+     "Att Aiko inte ska lägga på"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Du ska inte lägga på, säger larmoperatören.",
+    "explanationJa": "{電話|でんわ}を{切|き}らないように{言|い}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Bara en ambulans kommer.",
+    "correct": false,
+    "explanationSv": "Det är en utryckning med tre bilar … en ambulanshelikopter kommer också.",
+    "explanationJa": "{複数|ふくすう}の{車両|しゃりょう}とヘリが{来|き}ます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför behövs brandkåren?",
+    "options": [
+     "Bilen brinner",
+     "Mannen sitter fast i bilen",
+     "Det regnar",
+     "Polisen bad om det"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Mannen sitter fast, så brandkåren behöver hjälpa honom ut ur bilen.",
+    "explanationJa": "{男性|だんせい}が{車|くるま}から{出|で}られないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko gjorde rätt.",
+    "correct": true,
+    "explanationSv": "– Bra att du ringde direkt …",
+    "explanationJa": "すぐに{電話|でんわ}したのは{正|ただ}しい{行動|こうどう}でした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att larma vid en olycka.",
+  "discussionPoints": [
+   "Vilket nummer ringer man i Japan vid en olycka?",
+   "Har du ringt ett nödsamtal någon gång?",
+   "Vad säger man först när man ringer 112?",
+   "Vilken färg har blåljusen i Japan?"
+  ]
+ }
+}

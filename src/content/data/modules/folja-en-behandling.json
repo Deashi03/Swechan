@@ -1,0 +1,171 @@
+{
+ "id": "m.folja-en-behandling",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Följa en behandling",
+ "titleJa": "{治療|ちりょう}を{続|つづ}ける",
+ "descriptionSv": "Följa en behandling: ordinera, ordination, hålla sig till, behandlingstid, behandlingsmål, medicinera, börja verka, effektiv, tålamod, fullfölja, följsamhet, trappa upp, trappa ner, återfall och läkemedelsgenomgång.",
+ "descriptionJa": "{治療|ちりょう}を{続|つづ}ける：{指示|しじ}する、（{医師|いし}の）{指示|しじ}、{守|まも}る、{治療期間|ちりょうきかん}、{治療目標|ちりょうもくひょう}、{薬|くすり}を{服用|ふくよう}する、{効|き}き{始|はじ}める、{効果的|こうかてき}な、{忍耐|にんたい}、{最後|さいご}までやり{遂|と}げる、{遵守|じゅんしゅ}、{段階的|だんかいてき}に{増|ふ}やす、{段階的|だんかいてき}に{減|へ}らす、{再発|さいはつ}、{服薬|ふくやく}の{見直|みなお}し。",
+ "categoryId": "R02-A02-T04",
+ "tags": [
+  "hälsa",
+  "läkemedel",
+  "behandling"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.vaccination-och-injektion"
+ ],
+ "related": [],
+ "recommendedOrder": 837,
+ "words": [
+  {
+   "senseId": "s.ordinera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordination.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-sig-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.behandlingstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.behandlingsmål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medicinera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.börja-verka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effektiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tålamod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fullfölja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.följsamhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trappa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trappa-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkemedelsgenomgång.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Mormors mediciner",
+  "paragraphs": [
+   "Mormor har högt blodtryck. Läkaren har ordinerat en ny tablett. – Följ min ordination och håll dig till dosen, säger han. Behandlingstiden är lång, kanske resten av livet.",
+   "Behandlingsmålet är att blodtrycket ska sjunka. Mormor har medicinerat mot blodtrycket i många år, men den gamla tabletten var inte tillräckligt effektiv.",
+   "– Den nya medicinen kan ta några veckor att börja verka, säger läkaren. Det kräver tålamod. Först ska vi trappa upp dosen långsamt.",
+   "Mormor hade också kortison mot sin astma ett tag. När hon slutade fick hon trappa ner dosen under två veckor, i stället för att sluta direkt.",
+   "Aikos kusin fick antibiotika förra året men slutade efter tre dagar, när han mådde bättre. Då fick han ett återfall. – Man måste fullfölja hela kuren, säger mormor.",
+   "Eftersom mormor tar många mediciner får hon en läkemedelsgenomgång en gång om året. Läkaren berömmer hennes följsamhet. – Du glömmer aldrig något, säger han. Dosetten hjälper!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför får mormor en ny tablett?",
+    "options": [
+     "Den gamla var för dyr",
+     "Hon har fått allergi",
+     "Läkaren ville prova något roligt",
+     "Den gamla var inte tillräckligt effektiv"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… men den gamla tabletten var inte tillräckligt effektiv.",
+    "explanationJa": "{前|まえ}の{薬|くすり}は{効果|こうか}が{十分|じゅうぶん}でなかったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång tid kan det ta innan medicinen börjar verka?",
+    "options": [
+     "En timme",
+     "Ett år",
+     "En dag",
+     "Några veckor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Den nya medicinen kan ta några veckor att börja verka …",
+    "explanationJa": "{数週間|すうしゅうかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Mormor slutade med kortisonet på en gång.",
+    "correct": false,
+    "explanationSv": "… fick hon trappa ner dosen under två veckor, i stället för att sluta direkt.",
+    "explanationJa": "{少|すこ}しずつ{減|へ}らしました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Varför fick kusinen ett återfall?",
+    "options": [
+     "Han tog för mycket medicin",
+     "Han slutade med antibiotikan för tidigt",
+     "Han glömde dosetten",
+     "Han blev förkyld igen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… men slutade efter tre dagar, när han mådde bättre. Då fick han ett återfall.",
+    "explanationJa": "{抗生物質|こうせいぶっしつ}を{早|はや}くやめすぎたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormor tar sina mediciner som hon ska.",
+    "correct": true,
+    "explanationSv": "Läkaren berömmer hennes följsamhet. – Du glömmer aldrig något …",
+    "explanationJa": "きちんと{飲|の}んでいます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att följa en behandling.",
+  "discussionPoints": [
+   "Varför slutar vissa ta sin medicin för tidigt?",
+   "Hur kan man komma ihåg att ta medicin?",
+   "Har du behövt ha tålamod med en behandling?",
+   "Vad är ett bra behandlingsmål?"
+  ]
+ }
+}
