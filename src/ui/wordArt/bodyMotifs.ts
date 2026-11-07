@@ -2,13 +2,14 @@
  * Word illustrations for Kroppen & sinnena (0.13 pilot), built with body.ts.
  * Keys are motif ids as used in src/content/data/images/wordVisuals.json.
  */
-import { C, all, line, path, type Svg } from './kit';
+import { C, all, g, line, path, rect, type Svg } from './kit';
 import { faceFeatures, headFront, headProfile, skull } from './body';
 import { boneSection, jointType, kneeJoint, muscles, skeleton, tendon } from './anatomy';
 import { HAIR, armSkin, axelbred, chestHair, compare, faceSkin, figure, hairHead, skinTones } from './figures';
 import { brainTop, cells, cycle, headInside, heartDiagram, maleOrgans, nerveFigure, neuron, organs, urinary, uterus, vessels, vesselSection } from './organs';
 import { pointAt } from './limbs';
 import * as M from './medical';
+import { HL } from './people';
 import { earSection, eyeChart, eyeFront, eyeSection, glasses, hearing, levelMeter, smell, taste, touch } from './senses';
 import { armFlex, bodyBack, bodyFront, bodySide, fist, footprints, footSide, handBack, handPalm, legSide, tiptoe, toesTop, writingHand, barefoot } from './limbs';
 
@@ -398,7 +399,7 @@ export const BODY_MOTIFS: Record<string, Svg> = {
   'kropp.bära-på-ryggen': M.piggyback(),
   'kropp.grepp': M.gripBar(),
   'kropp.knyta-handen': M.makeFist(),
-  'kropp.hålla-tummarna': M.crossedFingers(),
+  'kropp.hålla-tummarna': all(...[[34, -6], [86, 6]].map(([x, r]) => g(`translate(${x} 70) rotate(${r})`, path('M-12 18 L-11 44 L11 44 L12 18 Z', C.sky, C.ink, 2), path('M-16 -6 L16 -6 L16 10 C16 18 10 22 0 22 C-10 22 -16 18 -16 10 Z', C.skin, C.ink, 2), line('M-14 2 C-6 -2 2 -4 8 -2 C11 -1 11 2 8 3', HL, 1.6, '2 2'), ...[-12, -4, 4, 12].map((d) => all(rect(d - 4, -20, 8, 18, C.skin, 4, C.ink, 1.6), path(`M${d - 3} -6 C${d - 1} -3 ${d + 1} -3 ${d + 3} -6`, 'none', C.skin2, 1.2))))), g('translate(60 22)', path('M-14 -14 L14 -14 L14 14 L-14 14 Z', C.white, C.ink, 1.6), line('M-9 -6 L9 -6 M-9 0 L9 0 M-9 6 L4 6', C.grey2, 1.6), path('M10 4 L18 -6', 'none', C.yellow, 3)), path('M20 24 l3 3 M100 20 l-3 3 M60 48 l0 4', 'none', HL, 2)),
   'kropp.tummen-upp': M.thumbsUp(),
   'kropp.smärta': M.pain(),
   'kropp.kramp': M.cramp(),
