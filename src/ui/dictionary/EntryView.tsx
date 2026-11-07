@@ -88,18 +88,18 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
               {s.register !== 'neutral' && <span className="badge">{REGISTER_SV[s.register]}</span>}
             </div>
             <p><SvText text={s.defSv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></p>
-            <Ja text={s.defJa} as="p" className="muted" />
+            <Ja text={s.defJa} as="p" className="ja-word" />
             {s.explanation && (
               <div className="card tint-primary stack-sm small" style={{ boxShadow: 'none' }}>
                 <div className="xsmall muted" style={{ fontWeight: 800 }}>Förklaring · <Ja text="{詳|くわ}しい{説明|せつめい}" /></div>
                 <div><SvText text={s.explanation.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></div>
-                <Ja text={s.explanation.ja} as="div" className="muted" />
+                <Ja text={s.explanation.ja} as="div" className="ja-word" />
               </div>
             )}
             {s.examples.map((ex, k) => (
               <div key={k} className="stack-sm" style={{ borderLeft: '3px solid var(--c-primary-tint)', paddingLeft: 10 }}>
                 <div className="row"><span className="grow"><SvText text={ex.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></span><SpeakButton text={ex.sv} label="Lyssna på meningen" /></div>
-                <Ja text={ex.ja} as="div" className="small muted" />
+                <Ja text={ex.ja} as="div" className="ja-word ja-example" />
               </div>
             ))}
             {s.collocations && s.collocations.length > 0 && (
@@ -108,7 +108,7 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
             {s.usageNote && (
               <div className="card tint-warning stack-sm small" style={{ boxShadow: 'none' }}>
                 <div>{s.usageNote.sv}</div>
-                <Ja text={s.usageNote.ja} as="div" />
+                <Ja text={s.usageNote.ja} as="div" className="ja-word" />
               </div>
             )}
             {s.synonyms && s.synonyms.length > 0 && (
@@ -120,9 +120,9 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
                   return (
                     <div key={r.senseId} className="small">
                       <button className="btn ghost small" style={{ paddingLeft: 0 }} onClick={() => onOpenSense(r.senseId)}>{other.entry.lemma}</button>
-                      <span className="badge">{REL_SV[r.relation]}</span> <Ja text={other.sense.ja} className="muted" />
+                      <span className="badge">{REL_SV[r.relation]}</span> <Ja text={other.sense.ja} className="ja-gloss" />
                       {r.noteSv && <div>{r.noteSv}</div>}
-                      {r.noteJa && <Ja text={r.noteJa} as="div" className="muted" />}
+                      {r.noteJa && <Ja text={r.noteJa} as="div" className="ja-word" />}
                     </div>
                   );
                 })}
@@ -135,9 +135,9 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
                 <div className="stack-sm">
                   {notes.map((n) => (
                     <div key={n.id} className="small">
-                      <Ja text={n.titleJa} as="div" className="muted" />
-                      <Ja text={n.bodyJa} as="p" />
-                      {n.examples.map((x, k) => <div key={k}><span>{x.sv}</span> — <Ja text={x.ja} className="muted" /></div>)}
+                      <Ja text={n.titleJa} as="div" className="ja-gloss" />
+                      <Ja text={n.bodyJa} as="p" className="ja-word" />
+                      {n.examples.map((x, k) => <div key={k}><span>{x.sv}</span> — <Ja text={x.ja} className="ja-gloss" /></div>)}
                     </div>
                   ))}
                 </div>

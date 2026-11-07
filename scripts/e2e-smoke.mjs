@@ -212,12 +212,12 @@ try {
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem is fully published from 0.8, Kroppen & sinnena from 0.9, Hälsa & sjukvård
   // from 0.10 and Känslor & psykologi from 0.11; Relationer & familj is partly published from 0.14,
-  // so the planned entry is Vänskap → Hjälpa och stötta.
+  // so the planned entry is Föräldraskap & barn → Graviditet och födsel.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Människan & hälsa/ }).first().click();
   await page.getByRole('link', { name: /Relationer & familj/ }).first().click();
-  await page.getByRole('link', { name: /Vänskap/ }).first().click();
-  await page.getByRole('link', { name: /Hjälpa och stötta/ }).first().click();
+  await page.getByRole('link', { name: /Föräldraskap & barn/ }).first().click();
+  await page.getByRole('link', { name: /Graviditet och födsel/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);

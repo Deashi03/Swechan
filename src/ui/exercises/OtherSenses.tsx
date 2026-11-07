@@ -24,12 +24,12 @@ export function OtherSenses({ entry, currentSenseId }: { entry: VocabularyEntry;
             <div className="grow stack-sm">
               <div className="row wrap" style={{ gap: 6 }}>
                 {s.labelSv && <strong className="small">{s.labelSv}</strong>}
-                <Ja text={s.ja} className="small" />
+                <Ja text={s.ja} className="ja-gloss" />
               </div>
               {s.id !== currentSenseId && (
                 <>
                   <div className="small"><SvText text={s.examples[0]!.sv} exclude={[entry.id]} /></div>
-                  <Ja text={s.examples[0]!.ja} as="div" className="xsmall muted" />
+                  <Ja text={s.examples[0]!.ja} as="div" className="ja-word ja-example" />
                 </>
               )}
             </div>

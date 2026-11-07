@@ -57,7 +57,12 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - Påfyllning av bilder: *Vardag & hem* ordning 101–107 (frukt, spannmål, baljväxter, nötter, kryddor, torrvaror, kött).
 - Illustrationerna laddas per område.
 
-## v0.15 och framåt – två spår per release
+## v0.15 – Relationer & familj fortsätter, Vardag & hem fylls på, tydligare japanska (klar)
+- 11 nya moduler med bilder från början: resten av *Vänskap* (1014–1017) och hela *Kärlek & partnerskap* (1021–1027).
+- Påfyllning av bilder: *Vardag & hem* ordning 108–113 (fågel och ägg, fisk och skaldjur, vegetariskt, mejeri, råvaror, förvaring).
+- Gränssnitt: japansk text om ordet är stor och mörk med tydlig furigana (ADR 40).
+
+## v0.16 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).

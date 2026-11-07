@@ -86,7 +86,7 @@ function ChoiceView({ ex, onDone }: { ex: ChoiceExercise; onDone: (r: ExerciseRe
         {ex.prompt && <LangText text={ex.prompt} lang={ex.promptLang} className={ex.promptLang === 'ja' ? 'prompt-ja' : wordCard || ex.type === 'image_pick' ? 'prompt-word' : ''} />}
         {ex.subPrompt && (
           <div className="small" style={{ background: 'var(--c-primary-tint)', borderRadius: 12, padding: '10px 12px' }}>
-            <LangText text={ex.subPrompt} lang={ex.subPromptLang ?? 'sv'} />
+            <LangText text={ex.subPrompt} lang={ex.subPromptLang ?? 'sv'} jaClassName="ja-word" />
           </div>
         )}
       </div>
@@ -102,7 +102,7 @@ function ChoiceView({ ex, onDone }: { ex: ChoiceExercise; onDone: (r: ExerciseRe
             </button>
           ) : (
             <button key={i} className={`option ${cls}`} onClick={() => choose(i)} disabled={answered}>
-              <LangText text={o.label} lang={o.lang} />
+              <LangText text={o.label} lang={o.lang} jaClassName="ja-gloss" />
               <span className="opt-key" aria-hidden>{cls === 'correct' ? '✓' : KEYS[i]}</span>
             </button>
           );
@@ -111,26 +111,26 @@ function ChoiceView({ ex, onDone }: { ex: ChoiceExercise; onDone: (r: ExerciseRe
       {state === 'answering' && wrong.length > 0 && (
         <div className="feedback retry stack-sm" aria-live="polite">
           <div><strong>Inte riktigt – försök igen!</strong> <Ja text="もう{一度|いちど}！" className="small" /></div>
-          {ex.hint && (showHint ? <div className="small"><LangText text={ex.hint.text} lang={ex.hint.lang} /></div> : <button className="btn ghost small" onClick={() => setShowHint(true)}>Visa ledtråd</button>)}
+          {ex.hint && (showHint ? <div className="small"><LangText text={ex.hint.text} lang={ex.hint.lang} jaClassName="ja-word" /></div> : <button className="btn ghost small" onClick={() => setShowHint(true)}>Visa ledtråd</button>)}
         </div>
       )}
       {state === 'answering' && wrong.length === 0 && (
         <div className="row">
           {ex.hint && !showHint && <button className="btn ghost small" onClick={() => setShowHint(true)}>Ledtråd</button>}
-          {showHint && ex.hint && <div className="small muted grow"><LangText text={ex.hint.text} lang={ex.hint.lang} /></div>}
+          {showHint && ex.hint && <div className="small muted grow"><LangText text={ex.hint.text} lang={ex.hint.lang} jaClassName="ja-word" /></div>}
           <button className="btn ghost small" style={{ marginLeft: 'auto' }} onClick={() => { setState('revealed'); emit({ type: 'answer_incorrect', senseId: ex.senseId }); }}>Jag vet inte</button>
         </div>
       )}
       {state === 'correct' && (
         <ResultSheet kind="ok" title={<>Rätt! <Ja text="{正解|せいかい}" className="small" /></>} onContinue={finish}>
-          {ex.explanation && <div className="small"><LangText text={ex.explanation.text} lang={ex.explanation.lang} /></div>}
-          {ex.note && <div className="xsmall muted"><LangText text={ex.note.text} lang={ex.note.lang} /></div>}
+          {ex.explanation && <div className="small"><LangText text={ex.explanation.text} lang={ex.explanation.lang} jaClassName="ja-word" /></div>}
+          {ex.note && <div className="small muted"><LangText text={ex.note.text} lang={ex.note.lang} jaClassName="ja-word" /></div>}
         </ResultSheet>
       )}
       {state === 'revealed' && (
-        <ResultSheet kind="fail" title={<>Rätt svar: <LangText text={correct.label} lang={correct.lang} /></>} onContinue={finish}>
-          {ex.explanation && <div className="small"><LangText text={ex.explanation.text} lang={ex.explanation.lang} /></div>}
-          {ex.note && <div className="xsmall muted"><LangText text={ex.note.text} lang={ex.note.lang} /></div>}
+        <ResultSheet kind="fail" title={<>Rätt svar: <LangText text={correct.label} lang={correct.lang} jaClassName="ja-gloss" /></>} onContinue={finish}>
+          {ex.explanation && <div className="small"><LangText text={ex.explanation.text} lang={ex.explanation.lang} jaClassName="ja-word" /></div>}
+          {ex.note && <div className="small muted"><LangText text={ex.note.text} lang={ex.note.lang} jaClassName="ja-word" /></div>}
           <button type="button" className="btn ghost small" style={{ alignSelf: 'flex-start', paddingLeft: 0 }} onClick={() => dict.open({ senseId: ex.senseId })}>Öppna i ordboken</button>
         </ResultSheet>
       )}
@@ -197,7 +197,7 @@ function TypedView({ ex, onDone }: { ex: TypedExercise; onDone: (r: ExerciseResu
       <div className="card stack-sm" style={{ padding: '20px', borderRadius: 'var(--r-xl)' }}>
         {ex.image && <div className="picture-prompt"><WordImage senseId={ex.image} size={150} /></div>}
         <LangText text={ex.prompt} lang={ex.promptLang} className={ex.promptLang === 'ja' ? 'prompt-ja' : 'prompt-word'} />
-        {ex.subPrompt && <div className="small muted"><LangText text={ex.subPrompt} lang={ex.subPromptLang ?? 'sv'} /></div>}
+        {ex.subPrompt && <div className="small muted"><LangText text={ex.subPrompt} lang={ex.subPromptLang ?? 'sv'} jaClassName="ja-word" /></div>}
       </div>
       <form className="stack-sm" onSubmit={(e) => { e.preventDefault(); if (state === 'answering') submit(); }}>
         <div className="row" style={{ flexWrap: 'wrap' }}>
@@ -247,7 +247,7 @@ function TypedView({ ex, onDone }: { ex: TypedExercise; onDone: (r: ExerciseResu
       {state === 'revealed' && (
         <ResultSheet kind="fail" title={<>Rätt svar: {ex.accepted[0]}</>} onContinue={finish}>
           {ex.frame && <div className="small">{ex.frame[0]}<strong>{ex.accepted[0]}</strong>{ex.frame[1]}</div>}
-          {ex.explanation && <div className="xsmall muted"><LangText text={ex.explanation.text} lang={ex.explanation.lang} /></div>}
+          {ex.explanation && <div className="small"><LangText text={ex.explanation.text} lang={ex.explanation.lang} jaClassName="ja-word" /></div>}
           <button type="button" className="btn ghost small" style={{ alignSelf: 'flex-start', paddingLeft: 0 }} onClick={() => dict.open({ senseId: ex.senseId })}>Öppna i ordboken</button>
         </ResultSheet>
       )}

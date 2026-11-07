@@ -117,6 +117,12 @@ Kontrollen känner igen böjda former av verbuttryck (`v('ta sig till', ...)`, `
 11. **Konversationsunderlag**: `scenarioSv` + 3–4 `discussionPoints`. Prompten genereras automatiskt.
 12. **Validera och publicera**: `npm run content:index && npm run validate:content && npm test`. Öka `contentVersion` och `updatedAt` vid ändring av en befintlig modul.
 
+## Japansk text i gränssnittet (produktägarens återkoppling 0.15)
+
+- Japansk text som hör till ordet som lärs in (översättning, definition, exempel, förklaring, svarsalternativ, ledtråd) ska vara stor och mörk, med tydlig furigana. Använd klassen `ja-word` (block) eller `ja-gloss` (i en rad), eller `jaClassName` på `LangText`. Se ADR 40.
+- Instruktioner och annan hjälptext får vara liten och grå (`small`/`xsmall muted`).
+- Nya komponenter som visar japanska om ordet ska följa samma regel.
+
 ## Ansiktsuttryck (produktägarens återkoppling 0.13)
 
 Ord där ansiktet bär betydelsen (miner, blickar, ansiktsuttryck, kroppsljud som syns i ansiktet, ljus- och ljudkänslighet, hudfärg vid sjukdom) är svåra och får aldrig göras med helfiguren – den är för liten, ögonbrynen är lika mörka som håret och den saknar näsa. Använd **ansiktsriggen** (`src/ui/face/rig.ts`, scener i `scripts/faces/*.faces.ts`, `npm run faces:build`):

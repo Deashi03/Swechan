@@ -21,7 +21,7 @@ export function SearchResults({ hits, onOpen }: { hits: DictionaryHit[]; onOpen:
                 <strong>{e.lemma}</strong> <span className="xsmall muted">{posSv(e.pos)}</span>
                 {h.kind === 'form' && <span className="xsmall faint"> ← {h.matchedKey}</span>}
                 <br />
-                <Ja text={sense.ja} className="small muted" />
+                <Ja text={sense.ja} className="small ja-gloss" />
                 {e.senses.length > 1 && <span className="xsmall faint"> (+{e.senses.length - 1} betydelse{e.senses.length > 2 ? 'r' : ''})</span>}
               </span>
               <Icon name="chevron" size={18} />

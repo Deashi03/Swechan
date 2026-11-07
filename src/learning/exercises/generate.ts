@@ -74,14 +74,17 @@ function distractors(target: SenseRef, ctx: GenContext, n: number, rng: () => nu
   }
   const out: SenseRef[] = [];
   const seenEntries = new Set<string>();
+  // homographs (mod 'courage' / mod 'fashion') are separate entries with the same lemma and forms
+  const seenLemmas = new Set<string>([target.entry.lemma]);
   const seenGloss = new Set<string>(glossSet(target));
   for (const r of ordered()) {
     if (out.length >= n) break;
-    if (seenEntries.has(r.entry.id)) continue;
+    if (seenEntries.has(r.entry.id) || seenLemmas.has(r.entry.lemma)) continue;
     // two distractors with the same Japanese gloss would show the same label twice
     const g = glossSet(r);
     if ([...g].some((x) => seenGloss.has(x))) continue;
     seenEntries.add(r.entry.id);
+    seenLemmas.add(r.entry.lemma);
     for (const x of g) seenGloss.add(x);
     out.push(r);
   }
@@ -206,13 +209,14 @@ export function genContextChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise
     const sameForm = (r: SenseRef) => r.entry.pos === ref.entry.pos && sameGender(r) && formOf(r.entry.inflection, hit.formKey, r.entry.lemma) !== null;
     // Distractors come from OTHER topics, so only the target fits the sentence
     // ("Det ligger leksaker på ___": not säng/bord, which would also fit).
-    const wrong = distractors(ref, ctx, learnConfig.choiceCount - 1, rng, (r) => sameForm(r) && !sameTopic(ref, r));
+    // Different words can share a form (mod/mode → modet), so options are de-duplicated by label.
+    const seenLabels = new Set([surface.toLowerCase()]);
+    const wrong = distractors(ref, ctx, learnConfig.choiceCount + 2, rng, (r) => sameForm(r) && !sameTopic(ref, r))
+      .map((w) => ({ senseId: w.sense.id, label: keepCase(formOf(w.entry.inflection, hit.formKey, w.entry.lemma)!), lang: 'sv' as const }))
+      .filter((o) => !seenLabels.has(o.label.toLowerCase()) && !!seenLabels.add(o.label.toLowerCase()))
+      .slice(0, learnConfig.choiceCount - 1);
     if (wrong.length < 2) continue;
-    const { options, correctIndex } = assemble(
-      { senseId: ref.sense.id, label: keepCase(surface), lang: 'sv' },
-      wrong.map((w) => ({ senseId: w.sense.id, label: keepCase(formOf(w.entry.inflection, hit.formKey, w.entry.lemma)!), lang: 'sv' as const })),
-      rng,
-    );
+    const { options, correctIndex } = assemble({ senseId: ref.sense.id, label: keepCase(surface), lang: 'sv' }, wrong, rng);
     return {
       type: 'context_choice', senseId: ref.sense.id, dimension: 'meaning',
       prompt: `${ex.sv.slice(0, hit.start)}＿＿＿${ex.sv.slice(hit.end)}`, promptLang: 'sv',

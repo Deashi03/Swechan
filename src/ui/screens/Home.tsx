@@ -154,7 +154,7 @@ export function Home() {
           <span className="flag-mini" aria-hidden />
           <span className="grow">
             <strong>Dagens svenska ord: {wotd.entry.lemma}</strong><br />
-            <Ja text={wotd.sense.ja} className="small muted" />
+            <Ja text={wotd.sense.ja} className="small ja-gloss" />
           </span>
           <Icon name="chevron" size={18} />
         </button>

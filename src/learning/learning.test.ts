@@ -30,6 +30,21 @@ describe('answer checking', () => {
 });
 
 describe('exercise generation', () => {
+  it('never offers a homograph of the answer (or two homographs) as options (0.15)', () => {
+    const byLemma = new Map<string, string[]>();
+    for (const m of repo.modules) for (const w of m.words) {
+      const l = repo.getSense(w.senseId)!.entry.lemma;
+      byLemma.set(l, [...new Set([...(byLemma.get(l) ?? []), w.senseId])]);
+    }
+    const homographs = [...byLemma.values()].filter((ids) => new Set(ids.map((id) => repo.getSense(id)!.entry.id)).size > 1);
+    expect(homographs.length).toBeGreaterThan(0);
+    for (const ids of homographs.slice(0, 20)) {
+      for (const t of ['reverse_choice', 'context_choice'] as ExerciseType[]) {
+        const ex = generateExercise(t, ids[0]!, ctx(ids));
+        if (ex && isChoice(ex)) expect(new Set(ex.options.map((o) => o.label.toLowerCase())).size).toBe(ex.options.length);
+      }
+    }
+  });
   const types: ExerciseType[] = ['meaning_choice', 'reverse_choice', 'context_choice', 'synonym_choice', 'spelling', 'inflection'];
   // The content-wide loops yield after each module so the Vitest worker can answer its RPC heartbeat
   // ("Timeout calling onTaskUpdate" otherwise appears once the content grows).
