@@ -69,7 +69,13 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.17 – Mat & dryck klart, Bostad och möbler (klar)
 - Påfyllning av bilder: *Vardag & hem* 132–139 (nu har hela Mat & dryck, 101–139, bilder), 201–207 (bostad) och 208–214 (möbler och inredning), sammanlagt 323 bilder.
 
-## v0.18 och framåt – två spår per release
+## v0.18 – Vardag & hem till 242, skor och accessoarer (klar)
+- Påfyllning av bilder:
+  - *Vardag & hem* 215–242: kök, badrum, städning och reparationer, hyra, bostadsrätt, grannar, felanmälan och flytt.
+  - *Kläder & stil* 308–314: skor, mössor, halsdukar och vantar, väskor, smycken och tillbehör.
+  - Sammanlagt 516 bilder.
+
+## v0.19 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).

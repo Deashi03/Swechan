@@ -1,8 +1,28 @@
 # Projektstatus – överlämning
 
-**Version:** 0.17.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.17 utvecklades i grenen `claude/swechan-0.17`)
+**Version:** 0.18.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.18 utvecklades i grenen `claude/swechan-0.18`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.18 – släppt 2026-11-07 (Vardag & hem klart till 242, skor och accessoarer)
+
+- **Önskemål från produktägaren:** minst 500 nya bilder, utan slarv med detaljerna.
+- **Gjort:**
+  - *Vardag & hem* 215–242 (411 bilder) och *Kläder & stil* 308–314 (105 bilder), sammanlagt 516 nya bilder.
+  - Motiven finns i `homeKitchen.ts` (`khem.`), `bathroom.ts` (`bad.`), `cleaning.ts` (`städ.`), `housingAdmin.ts` (`bost.`) och `accessories.ts` (`acc.`).
+  - I hela appen har 2 496 av 6 182 modulord en bild.
+- **Nästa steg (0.19):**
+  - *Kläder & stil* 315–342: material, mönster, storlekar, att prova kläder, tvätt och klädvård, hår och hudvård.
+  - Därefter 0-modulerna (cirka 129 ord) och överämnena i 400-, 500-, 600-, 800- och 900-serierna.
+  - Nytt område: resten av *Relationer & familj*.
+- **Kom ihåg:**
+  - Granska varje bild i förstoring, med `XXbig.ts` (300 px) eller `XXmid.ts` (200 px).
+  - Vanliga fel att leta efter:
+    - figurens extra arm som börjar mitt på kroppen; armar ska utgå från axeln;
+    - pratbubblor över huvudet;
+    - motiv som skärs av vid bildkanten;
+    - skyltar som avslöjar svaret.
+  - Klackskor ritas med `heelBody(H)` i `accessories.ts`, så att tåkappan får höjd.
 
 ## 0.17 – släppt 2026-11-07 (Mat & dryck klart, bostad och möbler)
 
