@@ -1,0 +1,182 @@
+{
+ "id": "m.slaktrelationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Släktrelationer",
+ "titleJa": "{親戚関係|しんせきかんけい}",
+ "descriptionSv": "Släktrelationer: förnamn, mellannamn, efternamn, släktnamn, flicknamn, heta efter, namnsdag, nära släkt, på pappas sida, släktträff, släktskap, likhet, släktdrag, ta efter, blodsband, förfader, härstamma och ättling.",
+ "descriptionJa": "{親戚関係|しんせきかんけい}：{名|な}、ミドルネーム、{名字|みょうじ}、{一族|いちぞく}の{名字|みょうじ}、{旧姓|きゅうせい}、〜にちなんで{名|な}づけられる、{名前|なまえ}の{日|ひ}、{近|ちか}い{親戚|しんせき}、{父方|ちちかた}の、{親戚|しんせき}の{集|あつ}まり、{親戚関係|しんせきかんけい}、{似|に}ているところ、{家系|かけい}の{特徴|とくちょう}、{似|に}る、{血|ち}のつながり、{祖先|そせん}、〜の{出|で}である、{子孫|しそん}。",
+ "categoryId": "R02-A04-T01",
+ "tags": [
+  "familj",
+  "släkt",
+  "namn"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.mor-och-farforaldrar"
+ ],
+ "related": [],
+ "recommendedOrder": 1004,
+ "words": [
+  {
+   "senseId": "s.förnamn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellannamn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.efternamn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släktnamn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flicknamn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.heta-efter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.namnsdag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nära-släkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-pappas-sida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släktträff.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släktskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släktdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-efter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodsband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förfader.1",
+   "active": true
+  },
+  {
+   "senseId": "s.härstamma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ättling.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad betyder namnet?",
+  "paragraphs": [
+   "Sara heter Sara Maria Lindblom. Sara är hennes förnamn, Maria är hennes mellannamn och Lindblom är hennes efternamn. Lindblom är ett gammalt släktnamn.",
+   "Hennes mamma hade ett annat flicknamn, Andersson. Sara heter efter sin mormor Maria, och hon firar både födelsedag och namnsdag.",
+   "Varje sommar träffas nära släkt, men vart femte år ordnar Saras kusiner på pappas sida en stor släktträff. Där kommer släktingar som Sara knappt känner, och de försöker förstå vilket släktskap de har.",
+   "Alla pratar om likheten mellan Sara och hennes faster. De har samma skratt, och det är ett släktdrag. Sara tar efter sin faster på många sätt.",
+   "Saras bästa vän Aiko är med på träffen. De har inga blodsband, men Aiko känns som familj. En äldre farbror berättar om deras förfäder. Han säger att släkten härstammar från Värmland och att de kanske är ättlingar till en känd präst."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är Saras mellannamn?",
+    "options": [
+     "Sara",
+     "Lindblom",
+     "Andersson",
+     "Maria"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… Maria är hennes mellannamn …",
+    "explanationJa": "マリアです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad var Saras mammas flicknamn?",
+    "options": [
+     "Lindblom",
+     "Andersson",
+     "Maria",
+     "Berg"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hennes mamma hade ett annat flicknamn, Andersson.",
+    "explanationJa": "アンデションです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Den stora släktträffen är varje år.",
+    "correct": false,
+    "explanationSv": "… vart femte år ordnar Saras kusiner på pappas sida en stor släktträff.",
+    "explanationJa": "5{年|ねん}ごとです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vem har samma skratt som Sara?",
+    "options": [
+     "Hennes mormor",
+     "Aiko",
+     "Hennes faster",
+     "Hennes bror"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… likheten mellan Sara och hennes faster. De har samma skratt …",
+    "explanationJa": "おばさん（{父|ちち}の{姉妹|しまい}）です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara och Aiko är släkt.",
+    "correct": false,
+    "explanationSv": "De har inga blodsband, men Aiko känns som familj.",
+    "explanationJa": "{血|ち}のつながりはありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om namn och släkt.",
+  "discussionPoints": [
+   "Vad betyder ditt namn? Heter du efter någon?",
+   "Har du ett mellannamn?",
+   "Vilka släktdrag finns i din familj?",
+   "Vet du varifrån din släkt härstammar?"
+  ]
+ }
+}

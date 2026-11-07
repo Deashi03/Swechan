@@ -2,6 +2,26 @@
  "_comment": "Bilder per betydelse (0.6). kind: illustration (motiv i src/ui/wordArt/motifs.ts) eller photo (public/img/words/, kräver credit). quiz: bilden är entydig och får användas i bildövningar. group: visuell grupp – distraktorer tas aldrig från samma grupp. confusableWith: betydelser som bilden kan förväxlas med och som aldrig blir alternativ. symbol: abstrakt ord som visas med en symbolisk scen.",
  "images": [
   {
+   "senseId": "s.adoptera.1",
+   "kind": "illustration",
+   "motif": "familj.adoptera",
+   "group": "adoption",
+   "quiz": false,
+   "confusableWith": [
+    "s.adoptivbarn.1"
+   ]
+  },
+  {
+   "senseId": "s.adoptivbarn.1",
+   "kind": "illustration",
+   "motif": "familj.adoptivbarn",
+   "group": "adoption",
+   "quiz": false,
+   "confusableWith": [
+    "s.adoptera.1"
+   ]
+  },
+  {
    "senseId": "s.adrenalin.1",
    "kind": "animation",
    "animationId": "anim.adrenalin.1",
@@ -584,6 +604,23 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.bonusbarn.1",
+   "kind": "illustration",
+   "motif": "familj.bonusbarn",
+   "group": "bonusfamilj",
+   "quiz": false
+  },
+  {
+   "senseId": "s.bonusförälder.1",
+   "kind": "illustration",
+   "motif": "familj.bonusförälder",
+   "group": "bonusfamilj",
+   "quiz": false,
+   "confusableWith": [
+    "s.styvförälder.1"
+   ]
+  },
+  {
    "senseId": "s.brinna.1",
    "kind": "animation",
    "animationId": "anim.brinna.1",
@@ -670,6 +707,15 @@
    "animationId": "anim.bryta-benet.1",
    "file": "anim.bryta-benet.1",
    "group": "skada",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.bråka.1",
+   "kind": "animation",
+   "animationId": "anim.bråka.1",
+   "file": "anim.braka.1",
+   "group": "syskon",
    "quiz": false,
    "reviewStatus": "ai-draft"
   },
@@ -948,6 +994,13 @@
    "quiz": false
   },
   {
+   "senseId": "s.dela-rum.1",
+   "kind": "illustration",
+   "motif": "familj.dela-rum",
+   "group": "rum",
+   "quiz": true
+  },
+  {
    "senseId": "s.dela.1",
    "kind": "animation",
    "animationId": "anim.dela.1",
@@ -1157,6 +1210,21 @@
    "quiz": false
   },
   {
+   "senseId": "s.enda-barn.1",
+   "kind": "illustration",
+   "motif": "familj.enda-barn",
+   "group": "familj-barn",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ensamstående.1",
+   "kind": "illustration",
+   "motif": "familj.ensamstående",
+   "group": "familj-förälder",
+   "quiz": false,
+   "symbol": true
+  },
+  {
    "senseId": "s.enzym.1",
    "kind": "illustration",
    "motif": "kropp.enzym",
@@ -1298,6 +1366,15 @@
    "quiz": true
   },
   {
+   "senseId": "s.flytta-hemifrån.1",
+   "kind": "animation",
+   "animationId": "anim.flytta-hemifrån.1",
+   "file": "anim.flytta-hemifran.1",
+   "group": "familj",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.flämta.1",
    "kind": "animation",
    "animationId": "anim.flämta.1",
@@ -1333,6 +1410,13 @@
    "kind": "illustration",
    "motif": "kropp.fortplantning",
    "group": "kropp-fortplantn",
+   "quiz": false
+  },
+  {
+   "senseId": "s.fosterbarn.1",
+   "kind": "illustration",
+   "motif": "familj.fosterbarn",
+   "group": "fosterhem",
    "quiz": false
   },
   {
@@ -1506,6 +1590,17 @@
     "s.grov.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.förstfödd.1",
+   "kind": "illustration",
+   "motif": "familj.förstfödd",
+   "group": "syskonordning",
+   "quiz": false,
+   "confusableWith": [
+    "s.mellanbarn.1",
+    "s.sladdbarn.1"
+   ]
   },
   {
    "senseId": "s.förstoppning.1",
@@ -1835,6 +1930,16 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.halvsyskon.1",
+   "kind": "illustration",
+   "motif": "familj.halvsyskon",
+   "group": "syskontyp",
+   "quiz": false,
+   "confusableWith": [
+    "s.helsyskon.1"
+   ]
+  },
+  {
    "senseId": "s.handflata.1",
    "kind": "illustration",
    "motif": "kropp.handflata",
@@ -1863,6 +1968,16 @@
    "group": "gest",
    "quiz": false,
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.helsyskon.1",
+   "kind": "illustration",
+   "motif": "familj.helsyskon",
+   "group": "syskontyp",
+   "quiz": false,
+   "confusableWith": [
+    "s.halvsyskon.1"
+   ]
   },
   {
    "senseId": "s.hetta.1",
@@ -2100,6 +2215,14 @@
    "group": "grepp",
    "quiz": false,
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.hålla-ihop.1",
+   "kind": "illustration",
+   "motif": "familj.hålla-ihop",
+   "group": "sammanhållning",
+   "quiz": false,
+   "symbol": true
   },
   {
    "senseId": "s.hålla-tummarna.1",
@@ -3027,6 +3150,13 @@
    "quiz": true
   },
   {
+   "senseId": "s.kusinträff.1",
+   "kind": "illustration",
+   "motif": "familj.kusinträff",
+   "group": "kusinträff",
+   "quiz": false
+  },
+  {
    "senseId": "s.kuta.1",
    "kind": "animation",
    "animationId": "anim.kuta.1",
@@ -3098,6 +3228,13 @@
    "motif": "kropp.känsel",
    "group": "känsel",
    "quiz": false
+  },
+  {
+   "senseId": "s.kärnfamilj.1",
+   "kind": "illustration",
+   "motif": "familj.kärnfamilj",
+   "group": "familj-grupp",
+   "quiz": true
   },
   {
    "senseId": "s.köa.1",
@@ -3238,6 +3375,16 @@
     "s.ligga-på-mage.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.lillasyster.1",
+   "kind": "illustration",
+   "motif": "familj.lillasyster",
+   "group": "syster",
+   "quiz": false,
+   "confusableWith": [
+    "s.storasyster.1"
+   ]
   },
   {
    "senseId": "s.lillfinger.1",
@@ -3741,6 +3888,17 @@
    "motif": "kropp.melatonin",
    "group": "kropp-melatonin",
    "quiz": false
+  },
+  {
+   "senseId": "s.mellanbarn.1",
+   "kind": "illustration",
+   "motif": "familj.mellanbarn",
+   "group": "syskonordning",
+   "quiz": false,
+   "confusableWith": [
+    "s.förstfödd.1",
+    "s.sladdbarn.1"
+   ]
   },
   {
    "senseId": "s.mellangärde.1",
@@ -4465,6 +4623,15 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.reta.1",
+   "kind": "animation",
+   "animationId": "anim.reta.1",
+   "file": "anim.reta.1",
+   "group": "syskon",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
+  },
+  {
    "senseId": "s.reumatism.1",
    "kind": "animation",
    "animationId": "anim.reumatism.1",
@@ -4765,6 +4932,13 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.se-upp-till.1",
+   "kind": "illustration",
+   "motif": "familj.se-upp-till",
+   "group": "beundra",
+   "quiz": false
+  },
+  {
    "senseId": "s.sena.1",
    "kind": "illustration",
    "motif": "kropp.sena",
@@ -4962,6 +5136,13 @@
    "quiz": true
   },
   {
+   "senseId": "s.skvallra.1",
+   "kind": "illustration",
+   "motif": "familj.skvallra",
+   "group": "skvallra",
+   "quiz": false
+  },
+  {
    "senseId": "s.skvätta.1",
    "kind": "animation",
    "animationId": "anim.skvätta.1",
@@ -5016,6 +5197,17 @@
     "s.hacka.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.sladdbarn.1",
+   "kind": "illustration",
+   "motif": "familj.sladdbarn",
+   "group": "syskonordning",
+   "quiz": false,
+   "confusableWith": [
+    "s.mellanbarn.1",
+    "s.förstfödd.1"
+   ]
   },
   {
    "senseId": "s.slappa.1",
@@ -5495,6 +5687,16 @@
    "quiz": true
   },
   {
+   "senseId": "s.storasyster.1",
+   "kind": "illustration",
+   "motif": "familj.storasyster",
+   "group": "syster",
+   "quiz": false,
+   "confusableWith": [
+    "s.lillasyster.1"
+   ]
+  },
+  {
    "senseId": "s.storhjärna.1",
    "kind": "illustration",
    "motif": "kropp.storhjärna",
@@ -5645,6 +5847,16 @@
    "group": "muskler",
    "quiz": false,
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.styvförälder.1",
+   "kind": "illustration",
+   "motif": "familj.styvförälder",
+   "group": "bonusfamilj",
+   "quiz": false,
+   "confusableWith": [
+    "s.bonusförälder.1"
+   ]
   },
   {
    "senseId": "s.ställa-ner.1",
@@ -5804,6 +6016,45 @@
    "quiz": false
   },
   {
+   "senseId": "s.syskonbarn.1",
+   "kind": "illustration",
+   "motif": "familj.syskonbarn",
+   "group": "syskonbarn",
+   "quiz": false
+  },
+  {
+   "senseId": "s.syskonbråk.1",
+   "kind": "illustration",
+   "motif": "familj.syskonbråk",
+   "group": "syskonbråk",
+   "quiz": false,
+   "confusableWith": [
+    "s.bråka.1"
+   ]
+  },
+  {
+   "senseId": "s.syskonkärlek.1",
+   "kind": "illustration",
+   "motif": "familj.syskonkärlek",
+   "group": "syskonkänsla",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.syskonskara.1",
+   "kind": "illustration",
+   "motif": "familj.syskonskara",
+   "group": "syskonskara",
+   "quiz": true
+  },
+  {
+   "senseId": "s.syssling.1",
+   "kind": "illustration",
+   "motif": "familj.syssling",
+   "group": "släktträd",
+   "quiz": false
+  },
+  {
    "senseId": "s.sätesmuskel.1",
    "kind": "illustration",
    "motif": "kropp.sätesmuskel",
@@ -5888,6 +6139,13 @@
    ],
    "reviewStatus": "ai-draft",
    "fallbackMotif": "ta av sig"
+  },
+  {
+   "senseId": "s.ta-parti-för.1",
+   "kind": "illustration",
+   "motif": "familj.ta-parti-för",
+   "group": "parti",
+   "quiz": false
   },
   {
    "senseId": "s.ta-på-sig.1",
@@ -6154,6 +6412,13 @@
    "reviewStatus": "ai-draft"
   },
   {
+   "senseId": "s.tvilling.1",
+   "kind": "illustration",
+   "motif": "familj.tvilling",
+   "group": "familj-tvilling",
+   "quiz": true
+  },
+  {
    "senseId": "s.tvätta-händerna.1",
    "kind": "animation",
    "animationId": "anim.tvätta-händerna.1",
@@ -6289,6 +6554,16 @@
     "s.rapa.1"
    ],
    "reviewStatus": "ai-draft"
+  },
+  {
+   "senseId": "s.uppväxt.1",
+   "kind": "illustration",
+   "motif": "familj.uppväxt",
+   "group": "uppväxt",
+   "quiz": false,
+   "confusableWith": [
+    "s.växa-upp.1"
+   ]
   },
   {
    "senseId": "s.urin.1",
@@ -6654,6 +6929,26 @@
    "quiz": true
   },
   {
+   "senseId": "s.vårdnad.1",
+   "kind": "illustration",
+   "motif": "familj.vårdnad",
+   "group": "vårdnad",
+   "quiz": false,
+   "confusableWith": [
+    "s.vårdnadshavare.1"
+   ]
+  },
+  {
+   "senseId": "s.vårdnadshavare.1",
+   "kind": "illustration",
+   "motif": "familj.vårdnadshavare",
+   "group": "vårdnad",
+   "quiz": false,
+   "confusableWith": [
+    "s.vårdnad.1"
+   ]
+  },
+  {
    "senseId": "s.vårjacka.1",
    "kind": "illustration",
    "motif": "vårjacka",
@@ -6740,6 +7035,15 @@
    "motif": "kropp.vätskebrist",
    "group": "kropp-vätskebris",
    "quiz": false
+  },
+  {
+   "senseId": "s.växa-upp.1",
+   "kind": "animation",
+   "animationId": "anim.växa-upp.1",
+   "file": "anim.vaxa-upp.1",
+   "group": "familj",
+   "quiz": false,
+   "reviewStatus": "ai-draft"
   },
   {
    "senseId": "s.ytterkläder.1",
@@ -6840,6 +7144,13 @@
    "motif": "kropp.ärr",
    "group": "hudmärke",
    "quiz": true
+  },
+  {
+   "senseId": "s.ärva.1",
+   "kind": "illustration",
+   "motif": "familj.ärva",
+   "group": "ärva",
+   "quiz": false
   },
   {
    "senseId": "s.ögonbryn.1",
@@ -7024,6 +7335,506 @@
    "kind": "illustration",
    "motif": "kropp.överviktig",
    "group": "utseende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.farförälder.1",
+   "kind": "illustration",
+   "motif": "familj.farförälder",
+   "group": "farmorfar",
+   "quiz": false,
+   "confusableWith": [
+    "s.morförälder.1"
+   ]
+  },
+  {
+   "senseId": "s.morförälder.1",
+   "kind": "illustration",
+   "motif": "familj.morförälder",
+   "group": "farmorfar",
+   "quiz": false,
+   "confusableWith": [
+    "s.farförälder.1"
+   ]
+  },
+  {
+   "senseId": "s.gammelmormor.1",
+   "kind": "illustration",
+   "motif": "familj.gammelmormor",
+   "group": "gammel",
+   "quiz": false,
+   "confusableWith": [
+    "s.gammelfarfar.1"
+   ]
+  },
+  {
+   "senseId": "s.gammelfarfar.1",
+   "kind": "illustration",
+   "motif": "familj.gammelfarfar",
+   "group": "gammel",
+   "quiz": false,
+   "confusableWith": [
+    "s.gammelmormor.1"
+   ]
+  },
+  {
+   "senseId": "s.barnbarn.1",
+   "kind": "illustration",
+   "motif": "familj.barnbarn",
+   "group": "barnbarn",
+   "quiz": false,
+   "confusableWith": [
+    "s.barnbarnsbarn.1"
+   ]
+  },
+  {
+   "senseId": "s.barnbarnsbarn.1",
+   "kind": "illustration",
+   "motif": "familj.barnbarnsbarn",
+   "group": "barnbarn",
+   "quiz": false,
+   "confusableWith": [
+    "s.barnbarn.1"
+   ]
+  },
+  {
+   "senseId": "s.generation.1",
+   "kind": "illustration",
+   "motif": "familj.generation",
+   "group": "generation",
+   "quiz": false
+  },
+  {
+   "senseId": "s.generationsklyfta.1",
+   "kind": "illustration",
+   "motif": "familj.generationsklyfta",
+   "group": "generation",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.ålderdom.1",
+   "kind": "illustration",
+   "motif": "familj.ålderdom",
+   "group": "ålder",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.pension.1",
+   "kind": "illustration",
+   "motif": "familj.pension",
+   "group": "pension",
+   "quiz": false,
+   "confusableWith": [
+    "s.gå-i-pension.1"
+   ]
+  },
+  {
+   "senseId": "s.gå-i-pension.1",
+   "kind": "illustration",
+   "motif": "familj.gå-i-pension",
+   "group": "pension",
+   "quiz": false,
+   "confusableWith": [
+    "s.pension.1"
+   ]
+  },
+  {
+   "senseId": "s.barnvakt.1",
+   "kind": "illustration",
+   "motif": "familj.barnvakt",
+   "group": "barnvakt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skämma-bort.1",
+   "kind": "illustration",
+   "motif": "familj.skämma-bort",
+   "group": "skämma",
+   "quiz": false
+  },
+  {
+   "senseId": "s.änka.1",
+   "kind": "illustration",
+   "motif": "familj.änka",
+   "group": "änka",
+   "quiz": false,
+   "confusableWith": [
+    "s.änkling.1"
+   ]
+  },
+  {
+   "senseId": "s.änkling.1",
+   "kind": "illustration",
+   "motif": "familj.änkling",
+   "group": "änka",
+   "quiz": false,
+   "confusableWith": [
+    "s.änka.1"
+   ]
+  },
+  {
+   "senseId": "s.livserfarenhet.1",
+   "kind": "illustration",
+   "motif": "familj.livserfarenhet",
+   "group": "erfarenhet",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.arv.1",
+   "kind": "illustration",
+   "motif": "familj.arv",
+   "group": "arv",
+   "quiz": false
+  },
+  {
+   "senseId": "s.släktgård.1",
+   "kind": "illustration",
+   "motif": "familj.släktgård",
+   "group": "gård",
+   "quiz": true
+  },
+  {
+   "senseId": "s.förnamn.1",
+   "kind": "illustration",
+   "motif": "familj.förnamn",
+   "group": "namnskylt",
+   "quiz": false,
+   "confusableWith": [
+    "s.mellannamn.1",
+    "s.efternamn.1"
+   ]
+  },
+  {
+   "senseId": "s.mellannamn.1",
+   "kind": "illustration",
+   "motif": "familj.mellannamn",
+   "group": "namnskylt",
+   "quiz": false,
+   "confusableWith": [
+    "s.förnamn.1",
+    "s.efternamn.1"
+   ]
+  },
+  {
+   "senseId": "s.efternamn.1",
+   "kind": "illustration",
+   "motif": "familj.efternamn",
+   "group": "namnskylt",
+   "quiz": false,
+   "confusableWith": [
+    "s.förnamn.1",
+    "s.mellannamn.1"
+   ]
+  },
+  {
+   "senseId": "s.släktnamn.1",
+   "kind": "illustration",
+   "motif": "familj.släktnamn",
+   "group": "släktnamn",
+   "quiz": false,
+   "confusableWith": [
+    "s.efternamn.1"
+   ]
+  },
+  {
+   "senseId": "s.flicknamn.1",
+   "kind": "illustration",
+   "motif": "familj.flicknamn",
+   "group": "flicknamn",
+   "quiz": false
+  },
+  {
+   "senseId": "s.heta-efter.1",
+   "kind": "illustration",
+   "motif": "familj.heta-efter",
+   "group": "heta-efter",
+   "quiz": false
+  },
+  {
+   "senseId": "s.namnsdag.1",
+   "kind": "illustration",
+   "motif": "familj.namnsdag",
+   "group": "namnsdag",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nära-släkt.1",
+   "kind": "illustration",
+   "motif": "familj.nära-släkt",
+   "group": "nära-släkt",
+   "quiz": false
+  },
+  {
+   "senseId": "s.på-pappas-sida.1",
+   "kind": "illustration",
+   "motif": "familj.på-pappas-sida",
+   "group": "släktträd-sida",
+   "quiz": false
+  },
+  {
+   "senseId": "s.släktträff.1",
+   "kind": "illustration",
+   "motif": "familj.släktträff",
+   "group": "släktträff",
+   "quiz": false,
+   "confusableWith": [
+    "s.kusinträff.1"
+   ]
+  },
+  {
+   "senseId": "s.släktskap.1",
+   "kind": "illustration",
+   "motif": "familj.släktskap",
+   "group": "släktskap",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.likhet.1",
+   "kind": "illustration",
+   "motif": "familj.likhet",
+   "group": "likhet",
+   "quiz": false,
+   "confusableWith": [
+    "s.släktdrag.1"
+   ],
+   "symbol": true
+  },
+  {
+   "senseId": "s.släktdrag.1",
+   "kind": "illustration",
+   "motif": "familj.släktdrag",
+   "group": "släktdrag",
+   "quiz": false,
+   "confusableWith": [
+    "s.likhet.1"
+   ]
+  },
+  {
+   "senseId": "s.ta-efter.1",
+   "kind": "illustration",
+   "motif": "familj.ta-efter",
+   "group": "ta-efter",
+   "quiz": false
+  },
+  {
+   "senseId": "s.blodsband.1",
+   "kind": "illustration",
+   "motif": "familj.blodsband",
+   "group": "blodsband",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.förfader.1",
+   "kind": "illustration",
+   "motif": "familj.förfader",
+   "group": "förfader",
+   "quiz": false,
+   "confusableWith": [
+    "s.ättling.1"
+   ]
+  },
+  {
+   "senseId": "s.härstamma.1",
+   "kind": "illustration",
+   "motif": "familj.härstamma",
+   "group": "härstamma",
+   "quiz": false
+  },
+  {
+   "senseId": "s.ättling.1",
+   "kind": "illustration",
+   "motif": "familj.ättling",
+   "group": "ättling",
+   "quiz": false,
+   "confusableWith": [
+    "s.förfader.1"
+   ]
+  },
+  {
+   "senseId": "s.svärfamilj.1",
+   "kind": "illustration",
+   "motif": "familj.svärfamilj",
+   "group": "svär",
+   "quiz": false,
+   "confusableWith": [
+    "s.svärförälder.1",
+    "s.svärmor.1",
+    "s.svärfar.1",
+    "s.svåger.1",
+    "s.svägerska.1"
+   ]
+  },
+  {
+   "senseId": "s.svärförälder.1",
+   "kind": "illustration",
+   "motif": "familj.svärförälder",
+   "group": "svär",
+   "quiz": false,
+   "confusableWith": [
+    "s.svärfamilj.1",
+    "s.svärmor.1",
+    "s.svärfar.1",
+    "s.svåger.1",
+    "s.svägerska.1"
+   ]
+  },
+  {
+   "senseId": "s.svärmor.1",
+   "kind": "illustration",
+   "motif": "familj.svärmor",
+   "group": "svär",
+   "quiz": false,
+   "confusableWith": [
+    "s.svärfamilj.1",
+    "s.svärförälder.1",
+    "s.svärfar.1",
+    "s.svåger.1",
+    "s.svägerska.1"
+   ]
+  },
+  {
+   "senseId": "s.svärfar.1",
+   "kind": "illustration",
+   "motif": "familj.svärfar",
+   "group": "svär",
+   "quiz": false,
+   "confusableWith": [
+    "s.svärfamilj.1",
+    "s.svärförälder.1",
+    "s.svärmor.1",
+    "s.svåger.1",
+    "s.svägerska.1"
+   ]
+  },
+  {
+   "senseId": "s.svåger.1",
+   "kind": "illustration",
+   "motif": "familj.svåger",
+   "group": "svär",
+   "quiz": false,
+   "confusableWith": [
+    "s.svärfamilj.1",
+    "s.svärförälder.1",
+    "s.svärmor.1",
+    "s.svärfar.1",
+    "s.svägerska.1"
+   ]
+  },
+  {
+   "senseId": "s.svägerska.1",
+   "kind": "illustration",
+   "motif": "familj.svägerska",
+   "group": "svär",
+   "quiz": false,
+   "confusableWith": [
+    "s.svärfamilj.1",
+    "s.svärförälder.1",
+    "s.svärmor.1",
+    "s.svärfar.1",
+    "s.svåger.1"
+   ]
+  },
+  {
+   "senseId": "s.svärdotter.1",
+   "kind": "illustration",
+   "motif": "familj.svärdotter",
+   "group": "svärbarn",
+   "quiz": false,
+   "confusableWith": [
+    "s.svärson.1"
+   ]
+  },
+  {
+   "senseId": "s.svärson.1",
+   "kind": "illustration",
+   "motif": "familj.svärson",
+   "group": "svärbarn",
+   "quiz": false,
+   "confusableWith": [
+    "s.svärdotter.1"
+   ]
+  },
+  {
+   "senseId": "s.maka.1",
+   "kind": "illustration",
+   "motif": "familj.maka",
+   "group": "makar",
+   "quiz": false,
+   "confusableWith": [
+    "s.äkta-make.1"
+   ]
+  },
+  {
+   "senseId": "s.äkta-make.1",
+   "kind": "illustration",
+   "motif": "familj.äkta-make",
+   "group": "makar",
+   "quiz": false,
+   "confusableWith": [
+    "s.maka.1"
+   ]
+  },
+  {
+   "senseId": "s.ingift.1",
+   "kind": "illustration",
+   "motif": "familj.ingift",
+   "group": "ingift",
+   "quiz": false,
+   "confusableWith": [
+    "s.gifta-in-sig.1"
+   ],
+   "symbol": true
+  },
+  {
+   "senseId": "s.gifta-in-sig.1",
+   "kind": "illustration",
+   "motif": "familj.gifta-in-sig",
+   "group": "ingift",
+   "quiz": false,
+   "confusableWith": [
+    "s.ingift.1"
+   ]
+  },
+  {
+   "senseId": "s.träffa-föräldrarna.1",
+   "kind": "illustration",
+   "motif": "familj.träffa-föräldrarna",
+   "group": "träffa",
+   "quiz": false
+  },
+  {
+   "senseId": "s.presentera.1",
+   "kind": "illustration",
+   "motif": "familj.presentera",
+   "group": "presentera",
+   "quiz": false
+  },
+  {
+   "senseId": "s.välkomna.1",
+   "kind": "illustration",
+   "motif": "familj.välkomna",
+   "group": "välkomna",
+   "quiz": false
+  },
+  {
+   "senseId": "s.bli-en-del-av.1",
+   "kind": "illustration",
+   "motif": "familj.bli-en-del-av",
+   "group": "del",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.svärmorsdröm.1",
+   "kind": "illustration",
+   "motif": "familj.svärmorsdröm",
+   "group": "dröm",
    "quiz": false,
    "symbol": true
   }

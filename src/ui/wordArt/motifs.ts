@@ -5,6 +5,7 @@
  * purpose (kofta = buttons, munkjacka = zip + hood, polotröja = high collar …).
  */
 import { BODY_MOTIFS } from './bodyMotifs';
+import { FAMILY_MOTIFS } from './family';
 import { C, all, arrow, button, circle, dress, ellipse, g, hand, heart, jacket, line, mirror, path, person, place, rect, skirt, sock, sparkle, star, top, trousers, type Svg } from './kit';
 
 const shirt = (color: string = C.white, trim?: string) => top({ color, collar: 'shirt', opening: 'buttons', cuffs: true, pocket: 'chest', trim });
@@ -130,6 +131,8 @@ export const WORD_MOTIFS: Record<string, Svg> = {
   uttrycka: all(person({ x: -18, s: 0.95, topColor: C.orange, bottomColor: C.purple, hair: 'bun' }), path('M70 14 L114 14 L114 50 L86 50 L76 60 L78 50 L70 50 Z', C.white, C.ink, 2), heart(84, 32, 6), star(102, 32, 7)),
   // ── Kroppen & sinnena (0.13), see bodyMotifs.ts ──────────────
   ...BODY_MOTIFS,
+  // ── Relationer & familj (0.14), see family.ts ─────────────────
+  ...FAMILY_MOTIFS,
 };
 
 /** Exported for tests and the review sheet: every motif id. */

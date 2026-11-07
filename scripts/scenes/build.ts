@@ -13,6 +13,7 @@ import { Scene, compileScene, renderFrame, frameToSvg } from '../../src/ui/anim/
 import { build, type Def } from './kit';
 import { KROPP } from './kropp.scenes';
 import { KROPP2 } from './kropp2.scenes';
+import { FAMILJ } from './familj.scenes';
 
 const argv = process.argv.slice(2);
 const opt = (k: string) => (argv.includes(k) ? argv[argv.indexOf(k) + 1] : undefined);
@@ -21,7 +22,7 @@ const only = opt('--only')?.split(',');
 // Swedish definition from the dictionary when a scene gives no hint
 const defSv = new Map<string, string>();
 for (const f of fs.readdirSync('src/content/data/dictionary')) for (const e of JSON.parse(fs.readFileSync(path.join('src/content/data/dictionary', f), 'utf8')).entries) for (const s of e.senses) defSv.set(s.id, s.defSv);
-const defs: Def[] = [...KROPP, ...KROPP2].map((d) => (d.hint ? d : { ...d, hint: (defSv.get(d.sense) ?? '').slice(0, 200) })).filter((d) => !only || only.some((o) => d.sense === o || d.sense === `s.${o}.1`));
+const defs: Def[] = [...KROPP, ...KROPP2, ...FAMILJ].map((d) => (d.hint ? d : { ...d, hint: (defSv.get(d.sense) ?? '').slice(0, 200) })).filter((d) => !only || only.some((o) => d.sense === o || d.sense === `s.${o}.1`));
 
 fs.rmSync(out, { recursive: true, force: true });
 fs.mkdirSync(path.join(out, 'anim'), { recursive: true });

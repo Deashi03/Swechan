@@ -1,0 +1,182 @@
+{
+ "id": "m.foraldrar-och-barn",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-05",
+ "titleSv": "Föräldrar och barn",
+ "titleJa": "{親|おや}と{子|こ}",
+ "descriptionSv": "Föräldrar och barn: växa upp, uppväxt, kärnfamilj, enda barn, tvilling, mellanbarn, förstfödd, sladdbarn, ensamstående, styvförälder, bonusförälder, bonusbarn, adoptera, adoptivbarn, fosterbarn, vårdnad, vårdnadshavare och flytta hemifrån.",
+ "descriptionJa": "{親|おや}と{子|こ}：{育|そだ}つ、{生|お}い{立|た}ち、{核家族|かくかぞく}、ひとりっ{子|こ}、{双子|ふたご}、{真|ま}ん{中|なか}の{子|こ}、{最初|さいしょ}に{生|う}まれた、{年|とし}の{離|はな}れた{末|すえ}っ{子|こ}、ひとり{親|おや}の、{継親|けいしん}、パートナーの{連|つ}れ{子|ご}、{養子|ようし}にする、{養子|ようし}、{里子|さとご}、{親権|しんけん}、{保護者|ほごしゃ}、{実家|じっか}を{出|で}る。",
+ "categoryId": "R02-A04-T01",
+ "tags": [
+  "familj",
+  "föräldrar",
+  "barn"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.att-uppmuntra-andra"
+ ],
+ "related": [],
+ "recommendedOrder": 1001,
+ "words": [
+  {
+   "senseId": "s.växa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppväxt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kärnfamilj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enda-barn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvilling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellanbarn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förstfödd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sladdbarn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ensamstående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styvförälder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bonusförälder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bonusbarn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.adoptera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.adoptivbarn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fosterbarn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdnadshavare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flytta-hemifrån.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Olika sorters familjer",
+  "paragraphs": [
+   "Aiko växte upp i Osaka. Hon hade en trygg uppväxt i en vanlig kärnfamilj med mamma, pappa och en bror. Hon är alltså inte enda barn.",
+   "Hennes svenska kollega Sara har en större familj. Hon har tvillingar som är tio år, och hon är själv mellanbarn med en äldre och en yngre bror. Hennes förstfödda bror är redan fyrtio, och hennes lillebror är ett sladdbarn som bara är tjugo.",
+   "Saras vän Jonas är ensamstående pappa. Hans nya partner har en dotter, så han har blivit styvförälder. Många säger hellre bonusförälder och kallar dottern för bonusbarn.",
+   "Grannarna har adopterat en pojke från Chile. Han är adoptivbarn och bor hos dem för alltid. I huset bredvid bor ett fosterbarn, som kanske flyttar hem till sin mamma igen.",
+   "I Sverige har föräldrar oftast gemensam vårdnad, även om de inte bor ihop. På blanketter från skolan står det därför vårdnadshavare. När barnen blir stora vill de flesta flytta hemifrån."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var växte Aiko upp?",
+    "options": [
+     "I Stockholm",
+     "I Tokyo",
+     "I Osaka",
+     "I Göteborg"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko växte upp i Osaka.",
+    "explanationJa": "{大阪|おおさか}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Aiko är enda barn.",
+    "correct": false,
+    "explanationSv": "Hon är alltså inte enda barn.",
+    "explanationJa": "お{兄|にい}さんがいるので、ひとりっ{子|こ}ではありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur gammal är Saras lillebror?",
+    "options": [
+     "Tio år",
+     "Fyrtio år",
+     "Trettio år",
+     "Tjugo år"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… hennes lillebror är ett sladdbarn som bara är tjugo.",
+    "explanationJa": "20{歳|さい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad har Jonas blivit?",
+    "options": [
+     "Farfar",
+     "Styvförälder",
+     "Fosterbarn",
+     "Vårdnadshavare för grannarna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… så han har blivit styvförälder.",
+    "explanationJa": "{継親|けいしん}になりました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ett fosterbarn bor alltid hos samma familj för alltid.",
+    "correct": false,
+    "explanationSv": "… ett fosterbarn, som kanske flyttar hem till sin mamma igen.",
+    "explanationJa": "{里子|さとご}は{家|いえ}に{戻|もど}ることもあります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om familjer och uppväxt.",
+  "discussionPoints": [
+   "Var växte du upp?",
+   "Har du syskon, eller är du enda barn?",
+   "Vilka sorters familjer finns i ditt land?",
+   "När flyttade du hemifrån?"
+  ]
+ }
+}
