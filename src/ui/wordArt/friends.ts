@@ -3,57 +3,8 @@
  * with distance, gestures, hearts and circles that show how close people are.
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
-import { figure, type Build } from './figures';
-
-const HL = C.accent;
-const T = (x: number, y: number, s: string, size: number, fill: string = C.ink, w = 800) => `<text x="${x}" y="${y}" font-family="system-ui,sans-serif" font-weight="${w}" font-size="${size}" text-anchor="middle" fill="${fill}">${s}</text>`;
-const P = (x: number, more: Partial<Build> = {}) => figure({ x, top: C.orange, hairStyle: 'long', ...more });
-const Q = (x: number, more: Partial<Build> = {}) => figure({ x, top: C.green, ...more });
-const ground = line('M4 112 L116 112', C.grey2, 2);
-export const heart = (x: number, y: number, s = 1, fill: string = C.red): Svg => g(`translate(${x} ${y}) scale(${s})`, path('M0 8 C-12 0 -10 -10 -4 -10 C-1 -10 0 -8 0 -6 C0 -8 1 -10 4 -10 C10 -10 12 0 0 8 Z', fill, C.ink, 1.4));
-const bolt = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M2 -12 L-7 2 L-1 2 L-4 13 L7 -3 L1 -3 Z', C.yellow, C.ink, 1.4));
-const arm = (x1: number, y1: number, x2: number, y2: number) => line(`M${x1} ${y1} L${x2} ${y2}`, C.skin, 5) + line(`M${x1} ${y1} L${x2} ${y2}`, C.ink, 0.6);
-const mini = (x: number, y: number, col: string, long = false) => all(long ? path(`M${x - 7} ${y} C${x - 8} ${y + 8} ${x + 8} ${y + 8} ${x + 7} ${y} Z`, C.hair, null) : '', circle(x, y - 2, 6, C.skin, C.ink, 1.4), path(`M${x - 6} ${y - 4} C${x - 6} ${y - 11} ${x + 6} ${y - 11} ${x + 6} ${y - 4} C${x + 3} ${y - 7} ${x - 3} ${y - 7} ${x - 6} ${y - 4} Z`, C.hair, null), path(`M${x - 8} ${y + 12} C${x - 8} ${y + 4} ${x + 8} ${y + 4} ${x + 8} ${y + 12} Z`, col, C.ink, 1.2));
-
-const bubble = (x: number, y: number, w: number, inner: Svg, tailLeft = true): Svg => all(path(`M${x - w / 2} ${y - 11} L${x + w / 2} ${y - 11} L${x + w / 2} ${y + 9} L${tailLeft ? x - 4 : x + 8} ${y + 9} L${tailLeft ? x - 10 : x + 2} ${y + 16} L${tailLeft ? x - 9 : x + 1} ${y + 9} L${x - w / 2} ${y + 9} Z`, C.white, C.ink, 1.6), inner);
-const phone = (x: number, y: number) => g(`translate(${x} ${y})`, rect(-9, -16, 18, 32, C.dark, 3, C.ink, 1.6), rect(-7, -12, 14, 22, '#bfe3f5', 1, null));
-const note = (x: number, y: number, s = 1, col: string = C.navy) => g(`translate(${x} ${y}) scale(${s})`, path('M0 6 L0 -10 L8 -12 L8 4', 'none', col, 2), `<ellipse cx="-2.5" cy="6" rx="3.4" ry="2.6" fill="${col}"/><ellipse cx="5.5" cy="4" rx="3.4" ry="2.6" fill="${col}"/>`);
-
-const cup = (x: number, y: number, col: string = C.white) => g(`translate(${x} ${y})`, path('M-7 -6 L7 -6 L6 6 C6 9 -6 9 -6 6 Z', col, C.ink, 1.6), path('M7 -3 C12 -3 12 4 6 4', 'none', C.ink, 1.6), line('M-3 -10 C-5 -13 -1 -15 -3 -18 M3 -10 C1 -13 5 -15 3 -18', C.grey2, 1.4));
-const balloon = (x: number, y: number, col: string) => all(path(`M${x} ${y + 12} C${x - 2} ${y + 20} ${x + 2} ${y + 26} ${x} ${y + 34}`, 'none', C.ink, 1), `<ellipse cx="${x}" cy="${y}" rx="8" ry="10" fill="${col}" stroke="${C.ink}" stroke-width="1.6"/>`);
-const dish = (x: number, y: number, col: string) => all(`<ellipse cx="${x}" cy="${y}" rx="11" ry="4" fill="${C.white}" stroke="${C.ink}" stroke-width="1.4"/>`, path(`M${x - 7} ${y - 1} C${x - 7} ${y - 8} ${x + 7} ${y - 8} ${x + 7} ${y - 1} Z`, col, C.ink, 1.2));
-const cloud = (x: number, y: number, s = 1, fill: string = C.grey2): Svg => g(`translate(${x} ${y}) scale(${s})`, path('M-14 6 C-20 6 -20 -4 -13 -4 C-12 -12 -2 -14 2 -8 C6 -14 16 -10 14 -3 C20 -3 20 6 14 6 Z', fill, C.ink, 1.4));
-const sun = (x: number, y: number, r = 7): Svg => all(...Array.from({ length: 8 }, (_, i) => { const a = (i / 8) * Math.PI * 2; return line(`M${(x + Math.cos(a) * (r + 3)).toFixed(1)} ${(y + Math.sin(a) * (r + 3)).toFixed(1)} L${(x + Math.cos(a) * (r + 7)).toFixed(1)} ${(y + Math.sin(a) * (r + 7)).toFixed(1)}`, C.gold, 2); }), circle(x, y, r, C.yellow, C.ink, 1.4));
-const drops = (x: number, y: number) => line(`M${x - 8} ${y} l-2 5 M${x} ${y + 2} l-2 5 M${x + 8} ${y} l-2 5`, C.sky, 2);
-const bigArm = (d: string) => line(d, C.ink, 11) + line(d, C.skin, 8);
-const bulb = (x: number, y: number) => all(...[-1, 0, 1].map((i) => line(`M${x + i * 12} ${y - 14 - (i === 0 ? 2 : 0)} l${i * 3} -4`, C.gold, 2)), circle(x, y, 8, C.yellow, C.ink, 1.6), rect(x - 4, y + 7, 8, 6, C.grey, 1, C.ink, 1.2));
-const box = (x: number, y: number, w = 20, h = 14) => all(rect(x - w / 2, y - h / 2, w, h, C.tan, 1, C.ink, 1.6), line(`M${x - w / 2} ${y - h / 2 + 4} L${x + w / 2} ${y - h / 2 + 4}`, '#a0673d', 1.2));
-const cat = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M10 -2 C20 -4 22 -16 16 -20', 'none', C.ink, 4), path('M10 -2 C20 -4 22 -16 16 -20', 'none', C.orange, 2.4), ellipse(0, -6, 13, 8, C.orange, C.ink, 1.6), circle(-12, -16, 7, C.orange, C.ink, 1.6), path('M-18 -20 L-17 -27 L-13 -22 Z M-10 -22 L-6 -27 L-6 -19 Z', C.orange, C.ink, 1.2), circle(-14, -17, 1, C.ink, null), circle(-10, -17, 1, C.ink, null), line('M-6 -2 L-6 2 M4 -2 L4 2', C.ink, 1.4));
-const ant = (x: number, y: number, flip = false) => g(`translate(${x} ${y})${flip ? ' scale(-1 1)' : ''}`, line('M-6 0 l-3 5 M0 0 l0 6 M6 0 l3 5 M-4 0 l-5 -3', C.ink, 1.2), ellipse(-6, -1, 3.4, 2.6, C.dark, null), ellipse(1, -1, 3, 2.4, C.dark, null), circle(6, -2, 2.6, C.dark, null), line('M7 -4 l3 -4', C.ink, 1), line('M-2 -4 L14 -14', C.gold, 2.4));
-const bed = (headX = 34) => all(rect(8, 82, 104, 14, C.brown, 2, C.ink, 2), line('M12 96 L12 108 M108 96 L108 108', C.brown, 4), rect(10, 66, 22, 18, C.white, 6, C.ink, 1.6), circle(headX, 66, 9, C.skin, C.ink, 1.6), path(`M${headX - 9} 64 C${headX - 9} 54 ${headX + 9} 54 ${headX + 9} 64 C${headX + 4} 60 ${headX - 4} 60 ${headX - 9} 64 Z`, C.hair, null), path('M40 72 C60 64 96 66 110 72 L110 84 L40 84 Z', C.sky, C.ink, 1.8));
-
-const padlock = (x: number, y: number, s = 1, open = false, col: string = C.gold) => g(`translate(${x} ${y}) scale(${s})`, path(open ? 'M-6 -4 L-6 -12 C-6 -20 6 -20 6 -14' : 'M-6 -4 L-6 -12 C-6 -20 6 -20 6 -12 L6 -4', 'none', C.ink, 3), rect(-10, -5, 20, 16, col, 3, C.ink, 1.6), circle(0, 2, 2, C.ink, null), line('M0 2 L0 7', C.ink, 1.6));
-const bigFace = (...extra: Svg[]) => all(circle(60, 62, 38, C.skin, C.ink, 2.2), path('M22 50 C20 16 100 16 98 50 C88 32 32 32 22 50 Z', C.hair, C.ink, 2), circle(46, 62, 3, C.ink, null), circle(74, 62, 3, C.ink, null), line('M40 53 L52 52 M68 52 L80 53', C.hair, 2.6), ...extra);
-const dog = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M10 -6 C18 -10 20 -18 16 -22', 'none', C.ink, 4), path('M10 -6 C18 -10 20 -18 16 -22', 'none', C.tan, 2.4), path('M-10 0 L-8 -18 C-6 -24 8 -22 10 -14 L12 0 Z', C.tan, C.ink, 1.6), circle(-10, -24, 8, C.tan, C.ink, 1.6), path('M-18 -28 C-22 -22 -20 -16 -16 -18 Z M-4 -28 C0 -22 -2 -16 -6 -18 Z', '#a0673d', C.ink, 1.2), circle(-12, -25, 1.1, C.ink, null), circle(-8, -25, 1.1, C.ink, null), circle(-10, -21, 1.6, C.ink, null), line('M-8 -2 L-8 0 M6 -2 L6 0', C.ink, 1.4));
-const shield = (x: number, y: number, s = 1, col: string = C.navy) => g(`translate(${x} ${y}) scale(${s})`, path('M0 -16 L14 -11 C14 4 8 12 0 17 C-8 12 -14 4 -14 -11 Z', col, C.ink, 1.8));
-const brokenHeart = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-1 8 C-12 0 -10 -10 -4 -10 C-1 -10 -1 -8 -1 -6 L-3 -2 L0 2 Z', C.red, C.ink, 1.4), path('M2 9 C13 1 11 -10 5 -10 C2 -10 1 -8 1 -6 L-1 -2 L2 2 Z', C.red, C.ink, 1.4));
-const blabla = (x: number, y: number, w = 26, tl = true) => bubble(x, y, w, T(x, y + 3, 'bla bla', 7, C.navy), tl);
-
-const thought = (x: number, y: number, w: number, inner: Svg, tailLeft = true) => all(ellipse(x, y, w / 2, 12, C.white, C.ink, 1.6), circle(tailLeft ? x - w / 4 : x + w / 4, y + 16, 3, C.white, C.ink, 1.2), circle(tailLeft ? x - w / 4 - 4 : x + w / 4 + 4, y + 22, 2, C.white, C.ink, 1), inner);
-const ghost = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-12 14 L-12 -2 C-12 -18 12 -18 12 -2 L12 14 L8 10 L4 14 L0 10 L-4 14 L-8 10 Z', C.white, C.ink, 1.6), circle(-4, -3, 2, C.ink, null), circle(4, -3, 2, C.ink, null), ellipse(0, 4, 2, 3, C.ink, null));
-const flake = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, line('M0 -8 L0 8 M-7 -4 L7 4 M-7 4 L7 -4 M-2 -6 L0 -4 L2 -6 M-2 6 L0 4 L2 6', '#5aa7d6', 1.8));
-const foot = (x: number, y: number, col: string = C.grey2) => all(ellipse(x, y, 4, 7, col, null), circle(x - 2, y - 9, 1.6, col, null), circle(x + 1.5, y - 9.5, 1.6, col, null));
-const plaster = (x: number, y: number, rot = -30) => g(`translate(${x} ${y}) rotate(${rot})`, rect(-10, -3.5, 20, 7, C.beige, 3, C.ink, 1.2), rect(-3, -3.5, 6, 7, '#f0e2c8', 1, null), circle(-1.5, -1, 0.6, C.ink, null), circle(1.5, 1, 0.6, C.ink, null));
-const crossedArms = (x: number) => all(line(`M${x - 14} 72 L${x + 10} 64`, C.ink, 7), line(`M${x - 14} 72 L${x + 10} 64`, C.skin, 5), line(`M${x + 14} 72 L${x - 10} 64`, C.ink, 7), line(`M${x + 14} 72 L${x - 10} 64`, C.skin, 5));
-
-const globe = (x: number, y: number, r: number) => all(circle(x, y, r, '#bfe3f5', C.ink, 2), path(`M${x - r * 0.6} ${y - r * 0.5} C${x - r * 0.2} ${y - r * 0.7} ${x} ${y - r * 0.2} ${x - r * 0.3} ${y + r * 0.1} C${x - r * 0.6} ${y + r * 0.3} ${x - r * 0.8} ${y} ${x - r * 0.6} ${y - r * 0.5} Z`, C.green, C.ink, 1.2), path(`M${x + r * 0.2} ${y - r * 0.2} C${x + r * 0.6} ${y - r * 0.4} ${x + r * 0.8} ${y + r * 0.2} ${x + r * 0.4} ${y + r * 0.6} C${x + r * 0.1} ${y + r * 0.5} ${x} ${y + r * 0.1} ${x + r * 0.2} ${y - r * 0.2} Z`, C.green, C.ink, 1.2));
-const plane = (x: number, y: number, s = 1, rot = 0) => g(`translate(${x} ${y}) rotate(${rot}) scale(${s})`, path('M-14 0 C-14 -2 10 -3 14 0 C10 3 -14 2 -14 0 Z', C.white, C.ink, 1.4), path('M-2 -1 L-8 -12 L-4 -12 L6 -1 Z M-2 1 L-8 12 L-4 12 L6 1 Z M-12 -1 L-15 -6 L-12 -6 L-8 -1 Z', C.sky, C.ink, 1.2));
-const envelope = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-16, -11, 32, 22, C.white, 2, C.ink, 1.8), path('M-16 -11 L0 3 L16 -11', 'none', C.ink, 1.6), rect(7, -8, 7, 8, C.red, 1, C.ink, 1));
-const waves = (y: number) => line(`M4 ${y} C12 ${y - 5} 20 ${y + 5} 28 ${y} C36 ${y - 5} 44 ${y + 5} 52 ${y} C60 ${y - 5} 68 ${y + 5} 76 ${y} C84 ${y - 5} 92 ${y + 5} 100 ${y} C108 ${y - 5} 112 ${y + 3} 116 ${y}`, C.sky, 2.4);
-const suitcase = (x: number, y: number, col: string = C.red) => all(rect(x - 9, y - 8, 18, 16, col, 3, C.ink, 1.6), path(`M${x - 4} ${y - 8} L${x - 4} ${y - 12} L${x + 4} ${y - 12} L${x + 4} ${y - 8}`, 'none', C.ink, 1.6));
-const pulse = (x: number, y: number, w: number, col: string = C.red) => line(`M${x} ${y} L${x + w * 0.3} ${y} L${x + w * 0.38} ${y - 10} L${x + w * 0.48} ${y + 10} L${x + w * 0.56} ${y - 16} L${x + w * 0.64} ${y} L${x + w} ${y}`, col, 2.4);
-
-const tableTop = (y = 84) => all(rect(8, y, 104, 7, C.tan, 2, C.ink, 1.8), line(`M16 ${y + 7} L16 ${y + 26} M104 ${y + 7} L104 ${y + 26}`, C.brown, 3));
+import { HL, T, P, Q, ground, heart, bolt, arm, mini, bubble, phone, note, cup, balloon, dish, cloud, sun, drops, bigArm, bulb, box, cat, ant, bed, padlock, bigFace, dog, shield, brokenHeart, blabla, thought, ghost, flake, foot, plaster, crossedArms, globe, plane, envelope, waves, suitcase, pulse, tableTop } from './people';
+import { figure } from './figures';
 
 export const FRIEND_MOTIFS: Record<string, Svg> = {
   // ── Bekanta och vänner ──────────────────────────────────────────
