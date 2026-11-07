@@ -19,6 +19,8 @@ export type ScenePlayerProps = {
   autoplay?: boolean;
   /** overrides the scene's loop setting */
   loop?: boolean;
+  /** without loop: go back to the poster frame when the animation has played (picture exercises) */
+  endOnPoster?: boolean;
   speed?: number;
   showLabel?: boolean;
   /** show built-in play/pause/replay buttons under the picture */
@@ -34,7 +36,7 @@ export type ScenePlayerProps = {
 const isCompiled = (s: Scene | CompiledScene): s is CompiledScene => 'tracks' in s;
 
 export const ScenePlayer = forwardRef<ScenePlayerHandle, ScenePlayerProps>(function ScenePlayer(
-  { scene, size, autoplay = false, loop, speed = 1, showLabel = false, controls = false, time, onTime, onEnd, className, ariaLabel }, ref) {
+  { scene, size, autoplay = false, loop, endOnPoster = false, speed = 1, showLabel = false, controls = false, time, onTime, onEnd, className, ariaLabel }, ref) {
   const compiled = useMemo(() => (isCompiled(scene) ? scene : compileScene(scene)), [scene]);
   const reduced = useReducedMotion();
   const doLoop = loop ?? compiled.scene.loop;
@@ -64,11 +66,11 @@ export const ScenePlayer = forwardRef<ScenePlayerHandle, ScenePlayerProps>(funct
     let next = tRef.current + (now - prev) * speed;
     if (next >= compiled.cycleMs) {
       if (doLoop) next = next % compiled.cycleMs;
-      else { next = compiled.durationMs; setPlaying(false); onEnd?.(); }
+      else { next = endOnPoster ? compiled.posterMs : compiled.durationMs; setPlaying(false); onEnd?.(); }
     }
     setT(next); onTime?.(next);
     raf.current = requestAnimationFrame(step);
-  }, [compiled, doLoop, onEnd, onTime, speed]);
+  }, [compiled, doLoop, endOnPoster, onEnd, onTime, speed]);
 
   useEffect(() => {
     if (playing && visible && time === undefined) { last.current = null; raf.current = requestAnimationFrame(step); }

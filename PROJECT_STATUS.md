@@ -1,8 +1,21 @@
 # Projektstatus – överlämning
 
-**Version:** 0.15.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.15 utvecklades i grenen `claude/swechan-0.15`)
+**Version:** 0.16.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.16 utvecklades i grenen `claude/swechan-0.16`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.16 – släppt 2026-11-07 (bild → ord med japanska, Vardag & hem 114–131)
+
+- **Återkoppling från produktägaren:** 0.15 är godkänd. Önskemålen var bilder i de tidigare modulerna, och att det japanska ordet visas i bildövningarna, med animationen spelad en gång.
+- **Gjort:**
+  - I *Vilket ord passar till bilden?* står den japanska översättningen under bilden. Animationen eller ansiktet spelas en gång och går sedan tillbaka till affischbilden (`pictureMode()`, ADR 41).
+  - *Vardag & hem* 114–131 har bilder för alla modulord (250 nya). Motiven finns i `kitchen.ts` (`kök.`) och `meals.ts` (`mål.`).
+  - I hela appen har 1 644 av 6 182 modulord en bild.
+- **Nästa steg (0.17):**
+  - Fortsätta fylla på bilder: *Vardag & hem* 132–139 (matbordets samtal, husmansrätter, japansk mat, världens mat, specialkost, näringsämnen, matsvinn, högtidsmat) och sedan 201–242 (bostad och hem).
+  - Sedan de andra överämnena som saknar bilder (Hälsa & sjukvård, Känslor & psykologi …). Ansiktsord görs med ansiktsriggen.
+  - Nytt område: resten av *Relationer & familj* (Föräldraskap & barn, Högtider & familjehändelser, Relationella uttryck).
+- **Kom ihåg:** `scratchpad/missing.py LO HI` listar ord utan bild för moduler med `recommendedOrder` mellan LO och HI. `mkspec.py` gör bildspecifikationen, och det som står efter det fjärde kolonet i en rad betyder symbol (alltid `quiz: false`).
 
 ## 0.15 – släppt 2026-11-07 (Vänskap och Kärlek & partnerskap klara, Vardag & hem 108–113, tydligare japanska)
 

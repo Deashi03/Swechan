@@ -2,8 +2,8 @@
  * Visual for a word sense (0.6, animations 0.12): an animation from
  * Animation_tool- (player loaded lazily as its own chunk), a code illustration
  * (also lazy) or a freely licensed photo. Renders nothing for senses without a
- * visual. `mode="intro"` plays an animation once (word introduction); every
- * other use shows the poster frame.
+ * visual. `mode="intro"` plays an animation once (word introduction), `once` plays it once and
+ * returns to the poster frame (picture → word exercise, 0.16); `still` shows the poster frame.
  */
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { imageFor, photoUrl } from '../../content/images';
@@ -29,7 +29,7 @@ function Illustration({ motif, size, aria }: { motif: string; size: number; aria
     : <span className="word-image loading" role="img" aria-label={aria} style={style} />;
 }
 
-export function WordImage({ senseId, size = 160, label, mode = 'still' }: { senseId: string; size?: number; label?: string; mode?: 'intro' | 'still' }) {
+export function WordImage({ senseId, size = 160, label, mode = 'still' }: { senseId: string; size?: number; label?: string; mode?: 'intro' | 'once' | 'still' }) {
   const img = imageFor(senseId);
   if (!img) return null;
   const aria = label ?? 'Bild';

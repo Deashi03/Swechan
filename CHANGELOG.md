@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.16.0 – 2026-11-07
+
+Produktägarens önskemål efter 0.15: fyll på bilder i de tidigare modulerna, och visa det japanska ordet i bildövningen.
+
+### Övningen *Vilket ord passar till bilden?* (ADR 41)
+- Ordets japanska översättning står nu under bilden, stor och mörk med furigana. En del bilder är svåra att tolka utan stöd.
+- Hör en animation till ordet spelas den **en gång** och går sedan tillbaka till sin mest talande bildruta (affischbilden), med ▶ för att spela igen. Det gäller även ansiktsanimationer. Stillbilder och symboler visas som vanligt.
+- I *Vilken bild passar till ordet?* är bilderna fortfarande stillbilder, så att alla alternativ visas på samma villkor.
+
+### Påfyllning: Vardag & hem 114–131 (250 nya bilder)
+- Steka och bryna, grädda och baka, vispa och röra, krydda och smaka av, tillaga och servera, grundsmaker och dofter.
+- Söta och syrliga smaker, starka och milda smaker, krispigt och knaprigt, mjukt och segt, färskhet och mognad, beskriva en maträtt.
+- Frukost, lunch och middag, mellanmål och fika, portioner och tillbehör, restaurangmenyer, beställa och betala.
+- I hela appen har nu 1 644 av 6 182 modulord en bild.
+
+### Teknik
+- Nya motivgrupper som laddas när de behövs: `kök.` (kitchen.ts) och `mål.` (meals.ts), med gemensamma hjälpare i `kitchenKit.ts`.
+- `WordImage` har ett nytt läge, `once`, och `ScenePlayer` har `endOnPoster`.
+
+Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v18`.
+
 ## 0.15.0 – 2026-11-07
 
 Två innehållsspår som tidigare, och ett nytt spår för gränssnittet.

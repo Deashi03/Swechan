@@ -3,7 +3,8 @@
  * public/anim/scenes/, compiles it with the Animation_tool- player and shows
  * - `intro`: the animation, played once; afterwards a ▶ button replays it (under reduced
  *   motion it starts paused on the poster frame with the same button – built into ScenePlayer),
- * - `still`: the poster frame only (picture exercises: equal terms for all options).
+ * - `once`: played once, then back to the poster frame with ▶ (picture → word exercise, 0.16),
+ * - `still`: the poster frame only (pictures as answer options: equal terms for all).
  * This module is lazy-loaded so that the player is its own chunk.
  */
 import { useEffect, useState } from 'react';
@@ -24,7 +25,7 @@ export function loadScene(file: string): Promise<SceneT | null> {
 }
 
 export default function AnimatedWordVisual({ file, size, mode, label, fallback }: {
-  file: string; size: number; mode: 'intro' | 'still'; label: string; fallback?: React.ReactNode;
+  file: string; size: number; mode: 'intro' | 'once' | 'still'; label: string; fallback?: React.ReactNode;
 }) {
   const [scene, setScene] = useState<SceneT | null | undefined>(undefined);
   useEffect(() => {
@@ -37,8 +38,8 @@ export default function AnimatedWordVisual({ file, size, mode, label, fallback }
   if (scene === null) return <>{fallback ?? null}</>;
   return (
     <span className={`word-image anim ${mode}`} style={{ width: size }}>
-      {mode === 'intro'
-        ? <ScenePlayer scene={scene} size={size} autoplay loop={false} ariaLabel={label} />
+      {mode !== 'still'
+        ? <ScenePlayer scene={scene} size={size} autoplay loop={false} endOnPoster={mode === 'once'} ariaLabel={label} />
         : <ScenePoster scene={scene} size={size} ariaLabel={label} />}
     </span>
   );
