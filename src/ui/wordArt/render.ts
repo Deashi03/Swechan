@@ -16,6 +16,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'kär.': () => import('./love').then((m) => m.LOVE_MOTIFS),
   'livs.': () => import('./groceries').then((m) => m.GROCERY_MOTIFS),
   'kök.': () => import('./kitchen').then((m) => m.KITCHEN_MOTIFS),
+  'mål.': () => import('./meals').then((m) => m.MEAL_MOTIFS),
 };
 const loaded: Motifs = {};
 const pending = new Map<string, Promise<void>>();
