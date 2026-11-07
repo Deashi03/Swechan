@@ -75,7 +75,10 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
   - *Kläder & stil* 308–314: skor, mössor, halsdukar och vantar, väskor, smycken och tillbehör.
   - Sammanlagt 516 bilder.
 
-## v0.19 och framåt – två spår per release
+## v0.19 – Kläder & stil klart, grundmodulerna 1–8 (klar)
+- Påfyllning av bilder: *Kläder & stil* 315–342 (material, passform, klädvård, hår och hud) och grundmodulerna 1–8, sammanlagt 549 bilder.
+
+## v0.20 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
