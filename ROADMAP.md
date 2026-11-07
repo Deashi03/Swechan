@@ -66,7 +66,10 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - Övningen *Vilket ord passar till bilden?* visar ordets japanska översättning, och en animation till ordet spelas en gång (ADR 41).
 - Påfyllning av bilder: *Vardag & hem* 114–131 (matlagning, smaker, konsistens, färskhet, måltider, fika, restaurang), 250 bilder.
 
-## v0.17 och framåt – två spår per release
+## v0.17 – Mat & dryck klart, Bostad och möbler (klar)
+- Påfyllning av bilder: *Vardag & hem* 132–139 (nu har hela Mat & dryck, 101–139, bilder), 201–207 (bostad) och 208–214 (möbler och inredning), sammanlagt 323 bilder.
+
+## v0.18 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
