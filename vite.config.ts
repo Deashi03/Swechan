@@ -17,6 +17,8 @@ export default defineConfig({
           if (id.includes('node_modules')) return 'vendor';
           // Animation player (0.12): its own lazily loaded chunk.
           if (id.includes('/src/ui/anim/')) return 'anim';
+          // Face rig + face scenes (0.14): one lazy chunk, loaded when a face visual is shown.
+          if (id.includes('/src/ui/face/') || id.includes('/src/content/data/faces/') || id.endsWith('/src/content/faces.ts')) return 'face';
           // Lesson bodies are lazy-loaded: let each become its own chunk (0.4 phase D).
           if (id.includes('/src/content/data/modules/')) return undefined;
           if (id.includes('/src/content/data/')) return 'content';

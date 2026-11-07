@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.13.1 – 2026-11-06
+
+**Produktägarens stickprov av 0.13:** överlag godkänt, men ansiktsuttrycken var otydliga. I *höja på ögonbrynen* var ögonbrynen lika mörka som håret, så höjningen syntes inte. I *rynka på näsan* syntes ingen näsa.
+
+### Ansiktsrigg (ADR 38)
+- Ett nytt, stort ansikte fyller hela bildrutan. Ögonbrynen är ljusare än håret och sitter en bit under hårfästet; när de höjs syns pannrynkor, och när de dras ihop syns ett veck mellan dem.
+- Näsan är stor nog för att rynkor och näsvingar ska synas. Ögonlocken kan kisa, och pupillerna kan titta åt alla håll, även uppåt.
+- Munnen kan visa leende, snett leende, öppen och rund mun, läppbett, trut och sammanbitna tänder. Kinderna kan blåsas upp, och huvudet kan luta, vridas och nicka. En hand kan föras till mun, näsa, öra, panna, haka eller ögon, och överlägg som sol, lukt, ljud och pratbubblor tonas in.
+- **47 ord** är gjorda om med riggen: hela modulen *Ansiktsuttryck och miner* och alla andra ord där ansiktet bär betydelsen. Bland dem finns *blinka*, *kisa*, *bländad*, *nysa*, *hosta*, *rapa*, *hicka*, *sniffa*, *andas in/ut*, *hålla andan*, *dåsig*, *rodna*, *höra dåligt*, *ljudkänslig*, *skaka på huvudet*, *gulsot* och *blodbrist*. De gamla helfigursscenerna är borttagna.
+- `npm run faces:build [-- --strips remsor.html]` bygger, validerar och registrerar scenerna (`kind: "face"` i `wordVisuals.json`, scener i `src/content/data/faces/faces.json`).
+- Nya regler finns i `CONTENT_GUIDELINES.md` under *Ansiktsuttryck*: en huvudsignal per ord, posterbilden ska vara toppen av uttrycket, och ord som lätt förväxlas ska gå att skilja åt i en stillbild.
+
+### Tester
+- `faces.test.ts`: register, data och definitioner hänger ihop, och varje bildruta renderas utan fel.
+- `WordImage`: ansiktet spelas i introduktionen och visar ▶ för repris, och bildövningar visar bara posterbilden.
+
+Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v15`.
+
 ## 0.13.0 – 2026-11-06
 
 **Pilot klar:** hela *Människan & hälsa → Kroppen & sinnena* (42 moduler, 631 modulord) har nu en bild i ordintroduktionen och övningarna – **374 illustrationer** och **257 animationer**. Alla är AI-utkast och väntar på produktägarens stickprov.

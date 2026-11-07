@@ -37,3 +37,17 @@ describe('WordImage with an animation (0.12)', () => {
     expect(container.querySelector('.scene-player')).toBeNull();
   });
 });
+
+describe('WordImage with an animated face (0.14)', () => {
+  const face = allWordImages().find((i) => i.kind === 'face')!;
+  it('plays the face in the word introduction and ends with a replay button', async () => {
+    const { container } = render(<WordImage senseId={face.senseId} size={180} label="min" mode="intro" />);
+    await waitFor(() => expect(container.querySelector('.word-image.face.intro svg')).not.toBeNull(), { timeout: 5000 });
+    await waitFor(() => expect(screen.getByRole('button', { name: /Spela upp/ })).toBeTruthy(), { timeout: 9000 });
+  }, 12000);
+  it('shows the poster frame without a button in picture exercises', async () => {
+    const { container } = render(<WordImage senseId={face.senseId} size={140} label="Bild B" />);
+    await waitFor(() => expect(container.querySelector('.word-image.face.still svg')).not.toBeNull(), { timeout: 5000 });
+    expect(screen.queryByRole('button')).toBeNull();
+  });
+});

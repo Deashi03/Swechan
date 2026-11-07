@@ -32,6 +32,8 @@ export const WordImageSchema = z.discriminatedUnion('kind', [
     fallbackMotif: z.string().min(1).optional(),
     ...Common,
   }),
+  /** 0.14: an animated face (face rig) – the scene is in data/faces/faces.json under the same senseId */
+  z.object({ kind: z.literal('face'), reviewStatus: z.enum(['ai-draft', 'validated', 'reviewed']), fallbackMotif: z.string().min(1).optional(), ...Common }),
 ]);
 export const WordImageFileSchema = z.object({ _comment: z.string().optional(), images: z.array(WordImageSchema) });
 export type WordImage = z.infer<typeof WordImageSchema>;

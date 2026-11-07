@@ -117,6 +117,16 @@ Kontrollen känner igen böjda former av verbuttryck (`v('ta sig till', ...)`, `
 11. **Konversationsunderlag**: `scenarioSv` + 3–4 `discussionPoints`. Prompten genereras automatiskt.
 12. **Validera och publicera**: `npm run content:index && npm run validate:content && npm test`. Öka `contentVersion` och `updatedAt` vid ändring av en befintlig modul.
 
+## Ansiktsuttryck (produktägarens återkoppling 0.13)
+
+Ord där ansiktet bär betydelsen (miner, blickar, ansiktsuttryck, kroppsljud som syns i ansiktet, ljus- och ljudkänslighet, hudfärg vid sjukdom) är svåra och får aldrig göras med helfiguren – den är för liten, ögonbrynen är lika mörka som håret och den saknar näsa. Använd **ansiktsriggen** (`src/ui/face/rig.ts`, scener i `scripts/faces/*.faces.ts`, `npm run faces:build`):
+
+- Ansiktet fyller hela rutan. Varje ord har **en tydlig huvudsignal** (t.ex. höjda ögonbryn + pannrynkor, rynkad näsa med veck och lyft näsvinge, pupiller uppåt) och stödsignaler som stämmer med den (ögonlock, mun, huvudets lutning).
+- Börja neutralt (nyckel vid t = 0), bygg upp uttrycket, håll det. `posterMs` är toppen – det är den bilden som syns i bildövningar.
+- Ord som lätt förväxlas (*stirra / snegla / blänga*, *leende / flina*, *kisa / bländad / ljuskänslig*) ska skilja sig i något som syns i en stillbild, och listas i `confusable`.
+- Granska alltid bildremsorna i full storlek (`npm run faces:build -- --strips remsor.html`) innan import, och titta på posterbilden i 120 px. Lägg hellre till en parameter i riggen än att acceptera ett otydligt uttryck.
+- Samma regel gäller alla framtida överämnen (t.ex. *Känslor & psykologi*): känslor och miner visas med riggen.
+
 ## Regler för ordposter
 
 - ID:n är permanenta. Byt aldrig betydelse på ett befintligt `senseId` – användarens repetitionskort hänger på det. Rättelser av stavning/böjning/översättning är OK.
