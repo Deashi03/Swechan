@@ -1,8 +1,29 @@
 # Projektstatus – överlämning
 
-**Version:** 0.14.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.13.1 och 0.14 utvecklas i grenen `claude/swechan-0.14`)
+**Version:** 0.15.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.15 utvecklades i grenen `claude/swechan-0.15`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.15 – släppt 2026-11-07 (Vänskap och Kärlek & partnerskap klara, Vardag & hem 108–113, tydligare japanska)
+
+- **Gränssnitt:**
+  - Japansk text om ordet är stor och mörk med tydlig furigana (`ja-word`, `ja-gloss`, ADR 40).
+  - Instruktioner är små och grå.
+  - Nya komponenter ska följa regeln i CONTENT_GUIDELINES *Japansk text i gränssnittet*.
+- **Spår 1, nytt område:**
+  - *Relationer & familj*: 1014–1017 (resten av *Vänskap*) och 1021–1027 (hela *Kärlek & partnerskap*), med bilder för alla ord.
+  - Motiven finns i `friends.ts` (`vän.`) och `love.ts` (`kär.`), och de gemensamma hjälparna i `people.ts`.
+- **Spår 2, påfyllning:**
+  - *Vardag & hem* 108–113 har nu bilder för alla modulord. Motiven finns i `groceries.ts` (`livs.`).
+  - I hela appen har 1 290 av 6 182 modulord en bild.
+- **Rättat:** generatorn kunde visa två likadana svarsalternativ när två ord har samma form (*mod*/*mode* → *modet*).
+- **Nästa steg (0.16):**
+  - *Föräldraskap & barn* (SWC-MAN-04-04-01…), *Högtider & familjehändelser* och *Relationella uttryck* för att avsluta *Relationer & familj*.
+  - Påfyllning av *Vardag & hem* 114–… (steka och bryna, grädda och baka, vispa och röra …).
+  - Fortsatt UI-arbete efter produktägarens stickprov.
+- **Kom ihåg:**
+  - När 1031 *Graviditet och födsel* publiceras måste e2e-testets exempel på en planerad modul bytas igen (`scripts/e2e-smoke.mjs`).
+  - Hjälpskript i scratchpad: `gen5/check.sh`, `gen5/commit.sh`, `vis.py`, `mkspec.py` (bildspecifikation på en rad per ord), `prune.py` (tar bort oanvända importer i motivfiler) och kontaktarken `frsheet.ts`, `lovesheet.ts` och `grsheet.ts`.
 
 ## 0.14 – släppt 2026-11-07 (Relationer & familj börjar + Vardag & hem fylls på)
 

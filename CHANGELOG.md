@@ -1,5 +1,44 @@
 # Changelog
 
+## 0.15.0 – 2026-11-07
+
+Två innehållsspår som tidigare, och ett nytt spår för gränssnittet.
+
+### Gränssnitt: tydligare japanska (ADR 40)
+- Japansk text som hör till ordet som lärs in är nu stor och mörk, och furiganan är större och mörkare. Det gäller översättningar, definitioner, exempel, förklaringar, svarsalternativ, ledtrådar och återkoppling i övningar, ordintron, ordboken och listorna.
+- Instruktioner och hjälptext är fortfarande små och grå, så att de inte konkurrerar med ordet.
+- Regeln gäller också framtida moduler och komponenter: klasserna `ja-word` och `ja-gloss` och `jaClassName` på `LangText` (se CONTENT_GUIDELINES).
+
+### Nytt: Relationer & familj fortsätter (11 moduler, 198 ord)
+- **Vänskap (1014–1017), nu komplett:**
+  - Hjälpa och stötta
+  - Förtroende och lojalitet
+  - Missförstånd mellan vänner
+  - Vänskap över avstånd
+- **Kärlek & partnerskap (1021–1027), komplett:**
+  - Förälskelse och attraktion
+  - Dejting och uppvaktning
+  - Att bli tillsammans
+  - Sambo och äktenskap
+  - Gemensam vardag
+  - Omtanke och uppskattning
+  - Konflikter i parrelationer
+- Alla 198 ord har bilder, till exempel *stöttepelare* (en pelare som bär ett tak), *dra sitt strå till stacken* (myror som bär strån), *ghosta* (ett spöke bredvid obesvarade meddelanden), *glida isär* (två isflak som driver isär), *fråga chans* (en lapp med ja/nej-rutor), *sova sked* och *gå skilda vägar*.
+- Svåra ord (B2 och uppåt) har förklaringar på svenska och japanska. Alla texter är AI-utkast.
+
+### Påfyllning: Vardag & hem (94 nya bilder)
+- Ordning 108–113: fågel och ägg, fiskarter och skaldjur, vegetariska proteinkällor, mejeriprodukter och alternativ, att välja råvaror, hållbarhet och förvaring. Där finns nu bilder för alla modulord.
+- I hela appen har nu 1 290 av 6 182 modulord en bild.
+
+### Rättat
+- **Dubbla svarsalternativ:** två olika ord med samma böjningsform (*mod* och *mode* ger båda *modet*) kunde bli två likadana alternativ i en lucköversättning. Generatorn tar nu bort dubbletter, och homografer med samma grundform blir aldrig alternativ till varandra. Det finns ett test för det.
+
+### Teknik
+- Nya motivgrupper som laddas när de behövs: `kär.` (love.ts) och `livs.` (groceries.ts). Hjälparna för människor och relationer ligger i `people.ts`.
+- e2e-testet använder *Föräldraskap & barn → Graviditet och födsel* som exempel på en planerad modul.
+
+Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v17`.
+
 ## 0.14.0 – 2026-11-07
 
 Två spår i samma release, enligt planen: ett nytt överämne med bilder från början, och påfyllning av bilder i ett gammalt överämne.
