@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.18.1 – 2026-11-07
+
+Produktägaren påpekade att bilden för *högtidlig* inte såg högtidlig ut. Abstrakta ord får gärna visas som en symbol tillsammans med det japanska ordet, och liknande bilder skulle också granskas.
+
+### Symbolbilder och abstrakta ord
+- Principen kommer från Animation_tool- (`docs/WORD_FUNCTIONS.md`): egenskaper och abstraktioner visas som en symbolisk minischen tillsammans med den japanska översättningen. I Swechan står översättningen redan intill bilden överallt där en symbolbild visas, i ordintroduktionen och i stavningsövningen. Därför behövs ingen extra text i själva bilden.
+- Alla 295 symbolbilder, 63 adjektiv och 553 bilder som inte används i bildövningar har granskats manuellt.
+- Omritade bilder:
+  - *högtidlig*: festklädd middag med vit duk, kandelaber och ljuskrona.
+  - *isbrytare*: visade ett fartyg, men ordet betyder något som lättar upp stämningen. Nu en lek där isen spricker.
+  - *mätt*: rund mage och en hand som tackar nej till mer.
+  - *mättande*: en stor gröttallrik som ger en mätt mage.
+  - *traditionsenlig*: samma julbord som på det gamla fotot hos mormor.
+  - *hålla tummarna*: visade korsade fingrar, alltså den engelska gesten. Nu tummarna inne i knutna händer, som i Sverige.
+  - *livslängd*, *förlänga*, *ansvar*, *uppriktig*, *tuggummi* och *mogen*.
+
+### Ingen text som avslöjar svaret
+- 50 bilder innehöll ordet själv eller en del av det. Exempel:
+  - etiketter: *MJÖL*, *SYLT*, *HONUNG*, *TONFISK*, *LINFRÖ*
+  - skyltar: *KROG*, *ENTRÉ*, *KONDITORI*, *SOPRUM*, *CYKLAR*
+  - ljudord: *krisp*, *knap*, *KRAS*
+  - repliker: *Vi ses!*, *Skål!*, *JA!*
+- Texten är borttagen eller ersatt av små ikoner (vete, bär, fisk, tårta, ölsejdel, vinglas …) i den nya filen `labelIcons.ts`.
+- Ett nytt test stoppar bilder som stavar sitt eget ord, eftersom bilden även visas i stavningsövningen.
+
+Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v21`.
+
 ## 0.18.0 – 2026-11-07
 
 Produktägaren bad om minst 500 nya, korrekta bilder i den här versionen. Det blev 516. Varje bild har granskats i förstoring. Rättningarna gällde framför allt text som avslöjar svaret, figurer som skymdes, motiv som gick att förväxla och detaljer som låg utanför bilden.
