@@ -1,0 +1,40 @@
+/**
+ * Traditions and celebrations (0.14, Relationer & familj): tables, candles, presents, the
+ * Swedish Christmas and midsummer, passing things on between generations.
+ */
+import { C, all, circle, ellipse, g, line, path, rect, type Svg } from './kit';
+import { figure } from './figures';
+
+const HL = C.accent;
+const T = (x: number, y: number, s: string, size: number, fill: string = C.ink, w = 800) => `<text x="${x}" y="${y}" font-family="system-ui,sans-serif" font-weight="${w}" font-size="${size}" text-anchor="middle" fill="${fill}">${s}</text>`;
+export const candle = (x: number, y: number, lit = true, h = 22, col: string = C.white): Svg => all(rect(x - 3.5, y - h, 7, h, col, 1.5, C.ink, 1.6), line(`M${x} ${y - h} l0 -3`, C.ink, 1.2), lit ? path(`M${x} ${y - h - 13} C${x + 4} ${y - h - 8} ${x + 3} ${y - h - 4} ${x} ${y - h - 3} C${x - 3} ${y - h - 4} ${x - 4} ${y - h - 8} ${x} ${y - h - 13} Z`, C.yellow, C.orange, 1.2) : '');
+export const gift = (x: number, y: number, s = 1, col: string = C.red, ribbon: string = C.yellow): Svg => g(`translate(${x} ${y}) scale(${s})`, rect(-14, -12, 28, 24, col, 2, C.ink, 2), rect(-16, -16, 32, 7, col, 2, C.ink, 2), line('M0 -16 L0 12', ribbon, 4), path('M0 -16 C-8 -26 -14 -18 0 -16 C14 -18 8 -26 0 -16 Z', ribbon, C.ink, 1.4));
+export const table = (y = 82): Svg => all(rect(8, y, 104, 7, C.tan, 2, C.ink, 1.8), line(`M16 ${y + 7} L16 ${y + 26} M104 ${y + 7} L104 ${y + 26}`, C.brown, 3));
+const plate = (x: number, y: number) => all(ellipse(x, y, 9, 3, C.white, C.ink, 1.4));
+export const calendar = (x: number, y: number, s: number, head: string, big: string, headCol: string = C.red): Svg => g(`translate(${x} ${y}) scale(${s})`, rect(-30, -34, 60, 68, C.white, 5, C.ink, 2.4), rect(-30, -34, 60, 18, headCol, 5, C.ink, 2.4), T(0, -21, head, 11, C.white), T(0, 18, big, 26));
+const person = (x: number, h: number, top: string, more: Record<string, unknown> = {}) => figure({ x, h, top, ...more });
+const ringArrow = (cx: number, cy: number, r: number) => all(path(`M${cx + r} ${cy} A${r} ${r} 0 1 1 ${cx} ${cy - r}`, 'none', HL, 3), path(`M${cx} ${cy - r} l7 -4 l-1 8 Z`, HL, HL, 1));
+const tomteFig = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`,
+  path('M-18 40 L-14 0 C-12 -10 12 -10 14 0 L18 40 Z', C.red, C.ink, 2), path('M-10 -8 C-10 -20 10 -20 10 -8 C10 4 -10 4 -10 -8 Z', C.skin, C.ink, 1.8),
+  path('M-12 -6 C-14 14 14 14 12 -6 C8 2 -8 2 -12 -6 Z', C.white, C.ink, 1.6), path('M-11 -14 C-8 -34 6 -40 20 -26 L12 -14 Z', C.red, C.ink, 1.8), circle(21, -26, 4, C.white, C.ink, 1.2),
+  rect(-13, -15, 26, 5, C.white, 2, C.ink, 1.4), circle(-4, -8, 1.3, C.ink, null), circle(4, -8, 1.3, C.ink, null), circle(0, -4, 2.4, '#e88c8c', null), rect(-18, 22, 36, 5, C.dark, 1, null));
+
+export const CELEBRATION_MOTIFS: Record<string, Svg> = {
+  // ── Familjetraditioner ──────────────────────────────────────────
+  'fest.varje-år': all(calendar(60, 62, 1, 'JUL', '24'), ringArrow(60, 62, 46)),
+  'fest.familjemiddag': all(person(24, 0.72, C.orange, { hairStyle: 'long' }), person(46, 0.5, C.yellow), person(74, 0.5, C.sky), person(96, 0.74, C.green), table(80), plate(30, 79), plate(60, 79), plate(90, 79), ellipse(60, 75, 8, 5, C.brown, C.ink, 1.4)),
+  'fest.söndagsmiddag': all(calendar(26, 34, 0.55, 'SÖN', '7', C.navy), table(80), ellipse(70, 72, 22, 8, C.white, C.ink, 1.6), ellipse(70, 68, 14, 8, C.brown, C.ink, 1.6), candle(100, 79, true, 16), candle(40, 79, true, 16)),
+  'fest.traditionsenlig': all(table(84), ellipse(40, 78, 18, 8, '#c96b4f', C.ink, 1.6), ...[[70, 80], [82, 80], [94, 80]].map(([x, y]) => circle(x!, y!, 4, C.brown, C.ink, 1)), candle(60, 83, true, 18, C.red), path('M86 18 L90 28 L101 28 L92 34 L95 45 L86 38 L77 45 L80 34 L71 28 L82 28 Z', C.yellow, C.ink, 1.4), path('M10 30 C14 20 22 16 30 18', 'none', C.green, 3)),
+  'fest.sed': all(line('M60 14 L60 112', C.brown, 4), line('M44 30 L76 30', C.brown, 3), circle(44, 40, 9, 'none', C.green, 4), circle(76, 40, 9, 'none', C.green, 4), line('M60 20 C54 30 66 40 60 50 C54 60 66 70 60 80', C.green, 3), person(22, 0.55, C.white, { hairStyle: 'long' }), person(98, 0.55, C.sky), person(38, 0.5, C.yellow, { hairStyle: 'long' }), person(84, 0.5, C.pink)),
+  'fest.tomte': all(tomteFig(56, 54, 1.1), path('M80 70 C80 56 104 56 104 70 L106 104 L78 104 Z', '#8b6b4a', C.ink, 2), gift(92, 96, 0.5, C.green)),
+  'fest.julklapp': gift(60, 70, 1.8),
+  'fest.adventsljusstake': all(rect(18, 82, 84, 10, C.red, 4, C.ink, 2), ...[30, 50, 70, 90].map((x, i) => candle(x, 82, i === 0, 28)), path('M14 82 C30 74 40 80 50 76 C60 72 70 80 80 76 C92 72 100 78 106 82', 'none', C.green, 3)),
+  'fest.dopp-i-grytan': all(path('M20 56 L100 56 L94 98 C92 104 28 104 26 98 Z', C.dark, C.ink, 2.4), ellipse(60, 56, 40, 8, '#c9944f', C.ink, 2), line('M18 56 L8 50 M102 56 L112 50', C.ink, 3), line('M60 14 L60 44', C.silver, 3), rect(48, 30, 24, 16, C.tan, 3, C.ink, 1.6), line('M30 40 C26 32 34 28 30 20 M90 40 C86 32 94 28 90 20', C.grey2, 2.2)),
+  'fest.hembakad': all(rect(10, 68, 100, 10, C.silver, 3, C.ink, 2), ...[[26, 60], [46, 60], [66, 60], [86, 60], [36, 48], [56, 48], [76, 48]].map(([x, y]) => all(ellipse(x!, y!, 9, 7, '#c9844a', C.ink, 1.6), path(`M${x! - 5} ${y! - 1} C${x! - 2} ${y! - 5} ${x! + 2} ${y! + 3} ${x! + 5} ${y! - 1}`, 'none', '#7a4a24', 1.4))), path('M90 20 C94 30 86 34 90 44 M100 18 C104 28 96 32 100 42', 'none', C.grey2, 2)),
+  'fest.gemenskap': all(circle(60, 64, 40, 'rgba(228,87,46,0.08)', null), ...[0, 1, 2, 3, 4, 5].map((i) => { const a = (i / 6) * Math.PI * 2 - Math.PI / 2, x = 60 + Math.cos(a) * 34, y = 66 + Math.sin(a) * 34; return all(circle(+x.toFixed(1), +(y - 8).toFixed(1), 7, C.skin, C.ink, 1.6), path(`M${(x - 8).toFixed(1)} ${(y + 6).toFixed(1)} C${(x - 8).toFixed(1)} ${(y - 2).toFixed(1)} ${(x + 8).toFixed(1)} ${(y - 2).toFixed(1)} ${(x + 8).toFixed(1)} ${(y + 6).toFixed(1)} Z`, [C.orange, C.green, C.sky, C.pink, C.yellow, C.purple][i]!, C.ink, 1.4)); }), path('M60 58 C64 50 74 52 72 60 C70 66 62 70 60 74 C58 70 50 66 48 60 C46 52 56 50 60 58 Z', C.red, C.ink, 1.4)),
+  'fest.föra-vidare': all(path('M4 72 C20 64 34 64 44 70 L44 84 L4 86 Z', '#e8d3b8', C.ink, 2), path('M116 72 C100 64 86 64 76 70 L76 84 L116 86 Z', C.skin, C.ink, 2), g('translate(60 56)', rect(-14, -10, 28, 20, C.red, 2, C.ink, 2), line('M0 -10 L0 10', C.ink, 1.4), T(0, 4, '♥', 9, C.white)), path('M30 40 C44 26 76 26 90 40', 'none', HL, 2.6), path('M90 40 l-7 -1 l3 6 Z', HL, HL, 1), T(24, 108, 'förr', 10, C.grey), T(96, 108, 'nu', 10, C.grey)),
+  'fest.gå-i-arv': all(...[[22, 46, '#ffffff'], [60, 46, '#d3d6db'], [98, 46, C.hair]].map(([x, y, hc], i) => g(`translate(${x} ${y})`, rect(-14, -18, 28, 36, C.tan, 3, C.ink, 1.8), rect(-11, -15, 22, 30, '#efe6d2', 2, C.ink, 1), g('translate(0 4) scale(0.26) translate(-60 -60)', figure({ hair: hc as string, top: [C.dark, C.brown, C.sky][i]!, hairStyle: i === 1 ? 'long' : 'short' })))), path('M36 82 C44 90 52 90 58 84 M74 82 C82 90 90 90 96 84', 'none', HL, 2.4), g('translate(60 98)', circle(0, 0, 6, 'none', C.gold, 3), path('M-2 -7 L2 -7 L0 -10 Z', C.sky, C.ink, 0.8))),
+  'fest.släktklenod': all(rect(36, 8, 48, 100, '#8b5a2b', 6, C.ink, 2.4), circle(60, 34, 16, C.white, C.ink, 2), line('M60 34 L60 24 M60 34 L67 38', C.ink, 2), rect(48, 58, 24, 40, '#6b4320', 3, C.ink, 1.6), line('M60 60 L60 86', C.gold, 2), circle(60, 88, 6, C.gold, C.ink, 1.4), ...[[24, 22], [98, 30], [94, 72]].map(([x, y]) => path(`M${x} ${y! - 6} L${x! + 1.5} ${y! - 1.5} L${x! + 6} ${y} L${x! + 1.5} ${y! + 1.5} L${x} ${y! + 6} L${x! - 1.5} ${y! + 1.5} L${x! - 6} ${y} L${x! - 1.5} ${y! - 1.5} Z`, C.yellow, C.ink, 0.8))),
+  'fest.hålla-liv-i': all(candle(60, 90, true, 30), path('M22 70 C20 50 34 40 42 52 L44 80 L24 86 Z', C.skin, C.ink, 2), path('M98 70 C100 50 86 40 78 52 L76 80 L96 86 Z', C.skin, C.ink, 2), line('M6 40 C12 36 18 44 24 40 M4 52 C10 48 16 56 22 52', '#8cc7e8', 2)),
+  'fest.bryta-en-tradition': all(calendar(60, 58, 0.95, 'JUL', '24'), path('M14 104 L106 14', 'none', HL, 5), path('M84 86 L100 70 L92 66 L108 52', 'none', C.ink, 2)),
+};

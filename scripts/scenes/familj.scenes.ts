@@ -18,4 +18,9 @@ export const FAMILJ: Def[] = [
     actors: [kid({ x: 40, top: 'teal' }), kid({ id: 'q', x: 80, facing: 'left', variant: 'b', top: 'pink', hairStyle: 'long' })],
     timeline: [pose('p', 300, { uArmR: 80, fArmR: 0 }, 300), face('p', 300, { eyes: 'closed', brows: 'up', mouth: 'open' }), ...shake('p', 600, { torso: -6 }, { torso: 2 }, 4, 180),
       say('p', 700, { text: 'ha ha!', mood: 'happy', d: 1600 }), face('q', 900, { eyes: 'half', brows: 'worried', mouth: 'frown' }), pose('q', 900, { head: 10, uArmR: 30, fArmR: 125, uArmL: 40, fArmL: 120 }, 500)] },
+  { sense: 's.samlas.1', group: 'träff', feature: 'people come from both sides and gather at a table', durationMs: 3200, posterMs: 2900, env: 'room',
+    actors: [{ ...kid({ x: 6, top: 'orange', hairStyle: 'long' }), scale: 0.78 }, { ...kid({ id: 'q', x: 114, facing: 'left', variant: 'b', top: 'green' }), scale: 0.78 }, { ...kid({ id: 'r', x: -10, variant: 'c', top: 'sky' }), scale: 0.78 }],
+    props: [{ id: 't', asset: 'table', at: { x: 60, y: 104 } }],
+    timeline: [{ t: 0, action: 'walk', actor: 'p', to: { x: 44, y: 104 }, durationMs: 1600 }, { t: 200, action: 'walk', actor: 'q', to: { x: 86, y: 104 }, durationMs: 1600 }, { t: 600, action: 'walk', actor: 'r', to: { x: 20, y: 104 }, durationMs: 1800 },
+      face('p', 1700, { mouth: 'smile', brows: 'up' }), face('q', 1800, { mouth: 'smile', brows: 'up' }), face('r', 2400, { mouth: 'smile' })] },
 ];

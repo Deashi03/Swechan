@@ -6,6 +6,7 @@
  */
 import { BODY_MOTIFS } from './bodyMotifs';
 import { FAMILY_MOTIFS } from './family';
+import { CELEBRATION_MOTIFS } from './celebrations';
 import { C, all, arrow, button, circle, dress, ellipse, g, hand, heart, jacket, line, mirror, path, person, place, rect, skirt, sock, sparkle, star, top, trousers, type Svg } from './kit';
 
 const shirt = (color: string = C.white, trim?: string) => top({ color, collar: 'shirt', opening: 'buttons', cuffs: true, pocket: 'chest', trim });
@@ -133,6 +134,7 @@ export const WORD_MOTIFS: Record<string, Svg> = {
   ...BODY_MOTIFS,
   // ── Relationer & familj (0.14), see family.ts ─────────────────
   ...FAMILY_MOTIFS,
+  ...CELEBRATION_MOTIFS,
 };
 
 /** Exported for tests and the review sheet: every motif id. */
