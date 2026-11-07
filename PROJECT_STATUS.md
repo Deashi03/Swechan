@@ -1,8 +1,22 @@
 # Projektstatus – överlämning
 
-**Version:** 0.18.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.18 utvecklades i grenen `claude/swechan-0.18`)
+**Version:** 0.18.1 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.18 utvecklades i grenen `claude/swechan-0.18`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.18.1 – släppt 2026-11-07 (symbolbilder och text i bilder)
+
+- **Återkoppling:**
+  - *Högtidlig* såg inte högtidlig ut.
+  - Abstrakta ord får visas som en symbol tillsammans med det japanska ordet.
+  - Liknande bilder skulle också granskas.
+- **Gjort:**
+  - Alla symbolbilder, adjektiv och bilder som inte används i bildövningar är granskade. Svaga och felaktiga bilder är omritade (se CHANGELOG).
+  - 50 bilder med ordets text är rättade. Testet *no picture spells out its own word* skyddar mot nya.
+- **Kom ihåg:**
+  - Principerna för symbolbilder står i CONTENT_GUIDELINES → *Bilder på orden*.
+  - `scratchpad/symsheet.ts` ritar granskningsark med svenskt ord och japansk glosa. Lägen: `symbol`, `adj`, `noquiz` eller en kommaseparerad lista med senseId.
+  - `scratchpad/textcheck.ts` listar all text i bilderna.
 
 ## 0.18 – släppt 2026-11-07 (Vardag & hem klart till 242, skor och accessoarer)
 

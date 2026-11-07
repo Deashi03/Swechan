@@ -35,6 +35,19 @@ describe('word images – data', () => {
       expect(img.credit.license).toMatch(/^(CC0|CC BY|Public domain)/);
     }
   });
+  it('no picture spells out its own word (0.18.1) – pictures are shown in picture and spelling exercises', () => {
+    const offenders: string[] = [];
+    for (const img of allWordImages()) {
+      const motif = img.kind === 'illustration' ? img.motif : 'fallbackMotif' in img ? img.fallbackMotif : undefined;
+      if (!motif) continue;
+      const lemma = repo.getSense(img.senseId)?.entry.lemma.toLowerCase().replace(/ /g, '');
+      if (!lemma) continue;
+      const stem = lemma.slice(0, Math.max(3, lemma.length - 2));
+      const texts = [...(renderWordArt(motif) ?? '').matchAll(/<text[^>]*>([^<]*)<\/text>/g)].map((m) => m[1]!.toLowerCase().replace(/ /g, ''));
+      for (const tx of texts) if (tx.length >= 3 && (tx.includes(stem) || (tx.length >= 4 && stem.includes(tx)))) offenders.push(`${img.senseId}: ${tx}`);
+    }
+    expect(offenders).toEqual([]);
+  });
   it('symbol pictures (abstract words) are never used in picture exercises', () => {
     for (const img of allWordImages()) if (img.symbol) expect(img.quiz, img.senseId).toBe(false);
   });

@@ -77,7 +77,7 @@ export const HOUSING_ADMIN_MOTIFS: Record<string, Svg> = {
   'bost.skriva-under': all(rect(14, 40, 92, 64, C.white, 2, C.ink, 1.8), ...[52, 60, 68].map((y) => line(`M24 ${y} L96 ${y}`, C.grey2, 1.6)), line('M30 92 L90 92', C.ink, 1.2), path('M34 90 C38 78 44 96 48 84 C52 74 54 92 60 86 C64 82 68 88 72 84', 'none', C.navy, 2), pen(78, 84, 30, 1.2), hand(90, 96, 30, 1)),
   'bost.deposition': all(key(60, 62, 1.6), path('M28 40 C40 18 80 18 92 40', 'none', HL, 2.2), arrow(90, 36, 94, 44, HL, 2), path('M92 84 C80 106 40 106 28 84', 'none', C.green, 2.2), arrow(30, 88, 26, 80, C.green, 2), coin(20, 32), coin(100, 92)),
   'bost.hyreshöjning': all(doc(44, 64, 1.5, all(house(0, -10, 0.25), T(0, 10, '8 400 kr', 6, C.ink))), upArrow(96, 60, 1.6)),
-  'bost.förlänga': all(sigDoc(30, 56, 1.1), line('M54 92 L112 92', C.ink, 1.6), rect(54, 84, 26, 16, C.sky, 2, C.ink, 1.4), rect(80, 84, 30, 16, '#bfe3a0', 2, C.ink, 1.4, ), arrow(70, 70, 108, 70, HL, 2.4)),
+  'bost.förlänga': all(sigDoc(30, 40, 0.8), line('M10 92 L112 92', C.ink, 1.6), rect(10, 80, 56, 18, C.sky, 2, C.ink, 1.6), rect(66, 80, 40, 18, '#bfe3a0', 2, C.ink, 1.6), line('M66 70 L66 106', C.ink, 1.6, '3 3'), arrow(70, 70, 104, 70, HL, 2.4), T(86, 62, '+1 år', 9, HL)),
   'bost.säga-upp': all(sigDoc(46, 60, 1.5, house(0, -12, 0.26)), line('M20 30 L72 92 M72 30 L20 92', C.red, 3.4), envelope(96, 90, 0.9)),
   'bost.uppsägningstid': all(...[0, 1, 2].map((i) => cal(24 + i * 36, 44, 0.9, '', [C.red, C.red, C.red][i]!)), path('M14 82 L106 82', 'none', C.ink, 1.8), line('M14 76 L14 88 M106 76 L106 88', C.ink, 2), T(60, 100, '3 mån', 11, HL)),
   // ── Avgifter och boendekostnader (238) ──────────────────────────

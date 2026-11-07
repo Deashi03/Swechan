@@ -98,7 +98,15 @@ Kontrollen känner igen böjda former av verbuttryck (`v('ta sig till', ...)`, `
 
 - **En bild per betydelse** där den hjälper. Form → illustration (`src/ui/wordArt/motifs.ts`, med plaggverktygen i `kit.ts`); yta/tillstånd (tillagning, material, mognad) → foto.
 - **Gör skillnaden tydlig:** överdriv det som skiljer ordet från närliggande ord (knappar på *kofta*, dragkedja och huva på *munkjacka*, hög krage på *polotröja*). Markera en del av ett plagg med orange kontur (*ärm*, *krage*).
-- **Abstrakta ord:** en kulturellt neutral scen som knyter an till exempelmeningen – inga västerländska metaforer (uggla = visdom, lejon = mod). Finns ingen tydlig scen: ingen bild. Symbolbilder är aldrig `quiz`.
+- **Abstrakta ord och egenskaper (0.18.1, samma princip som i Animation_tool-, `docs/WORD_FUNCTIONS.md`):**
+  - Använd en symbolisk minischen som *bär* begreppet, gärna utifrån exempelmeningen. *Högtidlig* = en festklädd middag med vit duk, kandelaber och allvarliga ansikten, inte en figur vid ett bord. *Mätt* = rund mage och en hand som tackar nej till mer.
+  - Scenen får vara symbolisk eftersom den alltid visas tillsammans med den japanska översättningen (ordintroduktionen och stavningsövningen). Symbolbilder visas aldrig i bildövningar och har alltid `quiz: false`.
+  - Inga västerländska metaforer (uggla = visdom, lejon = mod, korsade fingrar = tur). Svenska gester ritas som de görs i Sverige: *hålla tummarna* = tummarna inne i knutna händer.
+  - Finns ingen tydlig scen: ingen bild.
+- **Ingen text som avslöjar ordet (0.18.1):**
+  - Bilden visas både i bildövningarna och i stavningsövningen. Den får därför aldrig innehålla ordet eller en del av det, inte heller skyltar, etiketter eller ljudord som *MJÖL*, *KROG*, *krisp* eller *Skål!*.
+  - Etiketter och skyltar får en ikon i stället (`labelIcons.ts`).
+  - Testet *no picture spells out its own word* stoppar detta.
 - **`quiz: true` bara om bilden entydigt visar ordet.** Allmänna ord (*långbyxor*, *underkläder*) och nästan identiska ord (*mysbyxor* bredvid *mjukisbyxor*) får `quiz: false`.
 - **`group`** samlar ord som liknar varandra visuellt (överdelar, byxor, jackor …); distraktorer tas aldrig från samma grupp. **`confusableWith`** anger förväxlingar över gränserna (*brud* ↔ *brudklänning*, *bryna* ↔ *steka*).
 - **Foton:** bara CC0, public domain eller CC BY (aldrig NC eller SA). Ange titel, upphovsperson, licens och källsida. Neutral bakgrund, motivet centrerat, inga igenkännbara personer, ingen text. 400 × 400 webp under 80 kB.
