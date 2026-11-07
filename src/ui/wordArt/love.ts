@@ -4,7 +4,7 @@
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
 import { figure } from './figures';
-import { HL, T, P, Q, ground, heart, arm, mini, bubble, phone, cup, dish, cloud, sun, drops, bigArm, box, bed, padlock, thought, foot, plane, suitcase, tableTop } from './people';
+import { HL, T, P, Q, ground, heart, arm, mini, bubble, phone, cup, dish, cloud, sun, drops, bigArm, box, bed, padlock, bigFace, shield, brokenHeart, thought, foot, plane, suitcase, tableTop } from './people';
 
 const PINK = C.pink;
 const butterfly = (x: number, y: number, s = 1, col: string = C.purple) => g(`translate(${x} ${y}) scale(${s})`, path('M0 0 C-8 -10 -14 -4 -10 2 C-12 8 -4 10 0 2 Z', col, C.ink, 1), path('M0 0 C8 -10 14 -4 10 2 C12 8 4 10 0 2 Z', col, C.ink, 1), line('M0 -4 L0 6', C.ink, 1.4));
@@ -38,6 +38,9 @@ const plate = (x: number, y: number) => all(ellipse(x, y, 10, 4, C.white, C.ink,
 
 const gift = (x: number, y: number, s = 1, col: string = C.red) => g(`translate(${x} ${y}) scale(${s})`, rect(-14, -10, 28, 22, col, 2, C.ink, 1.6), rect(-16, -16, 32, 8, col, 2, C.ink, 1.6), rect(-3, -16, 6, 28, C.yellow, 0, C.ink, 1), path('M0 -16 C-8 -26 -14 -18 0 -16 C14 -18 8 -26 0 -16 Z', C.yellow, C.ink, 1.2));
 const tray = (x: number, y: number) => all(rect(x - 30, y, 60, 6, C.tan, 2, C.ink, 1.6), cup(x - 14, y - 8), path(`M${x + 2} ${y} C${x + 2} ${y - 10} ${x + 18} ${y - 10} ${x + 18} ${y} Z`, '#e0a458', C.ink, 1.4), flower(x + 22, y - 18, 0.6, C.red));
+
+const zig = (x: number, y: number, w = 14) => line(`M${x - w / 2} ${y + 2} l${w / 6} -5 l${w / 6} 5 l${w / 6} -5 l${w / 6} 5 l${w / 6} -5 l${w / 6} 5`, C.red, 2);
+const door = (x: number, y: number, h = 82, open = false) => all(rect(x - 16, y, 32, h, C.brown, 2, C.ink, 2), rect(x - 12, y + 4, 24, h - 4, open ? C.dark : '#c98a55', 1, C.ink, 1.4), circle(x + 7, y + h / 2, 2.2, C.gold, C.ink, 1));
 
 export const LOVE_MOTIFS: Record<string, Svg> = {
   // ── Förälskelse och attraktion ──────────────────────────────────
@@ -154,4 +157,23 @@ export const LOVE_MOTIFS: Record<string, Svg> = {
   'kär.smicker': all(path('M14 20 L106 20 L106 76 L56 76 L40 94 L42 76 L14 76 Z', C.white, C.ink, 2.4), T(40, 46, '★', 16, C.gold), heart(60, 44, 1), T(80, 46, '★', 16, C.gold), T(60, 66, '…', 12, C.grey), path('M90 76 C90 86 96 90 94 98', 'none', C.gold, 3)),
   'kär.kärleksbevis': all(gift(48, 78, 1.6, C.red), g('translate(88 46) rotate(12)', rect(-14, -12, 28, 24, C.white, 1, C.ink, 1.4), heart(0, 0, 0.7)), hearts([[22, 30, 0.6], [100, 92, 0.5]], PINK), line('M8 112 L112 112', C.grey2, 2)),
   'kär.kärleksspråk': all(circle(60, 60, 20, C.white, C.ink, 1.6), heart(60, 60, 1.1), ...[0, 1, 2, 3, 4].map((i) => { const a = (i / 5) * Math.PI * 2 - Math.PI / 2; return circle(+(60 + Math.cos(a) * 42).toFixed(1), +(60 + Math.sin(a) * 42).toFixed(1), 13, C.white, HL, 1.8); }), bubble(60, 20, 14, T(60, 23, '…', 8, C.navy)), g('translate(100 47)', circle(0, 0, 7, C.white, C.ink, 1.2), line('M0 0 L0 -4 M0 0 L3 2', C.ink, 1.2)), gift(85, 96, 0.5), g('translate(35 96)', path('M-8 2 L-2 -6 L8 -6 L8 4 L-2 4 Z', C.skin, C.ink, 1.2)), g('translate(20 47)', heart(-3, 0, 0.4, C.pink), heart(3, 0, 0.4, C.sky))),
+  // ── Konflikter i parrelationer ──────────────────────────────────
+  'kär.tjafsa': all(ground, P(28, { h: 0.84, top: C.pink, face: 'neutral' }), Q(92, { h: 0.84, top: C.sky, face: 'neutral' }), bubble(48, 10, 24, zig(48, 10, 14)), bubble(72, 22, 24, zig(72, 22, 14), false), plate(60, 94), line('M40 72 L52 88 M80 72 L68 88', C.skin, 5)),
+  'kär.tjafs': all(...[[34, 30, true], [86, 30, false], [40, 76, true], [82, 78, false]].map(([x, y, l]) => bubble(x as number, y as number, 30, zig(x as number, y as number, 18), l as boolean)), plate(60, 56), T(60, 106, '…', 12, C.grey)),
+  'kär.skylla-på': all(ground, figure({ x: 26, top: C.sky, face: 'neutral' }), line('M34 62 L58 50', C.skin, 5), circle(60, 49, 3, C.skin, C.ink, 1.2), figure({ x: 92, top: C.pink, hairStyle: 'long', face: 'neutral' }), T(92, 14, '?', 12, C.grey), path('M50 108 L58 98 L62 106 L70 100 L72 110 Z', '#bfe3f5', C.ink, 1.2), path('M44 112 L50 106 L54 112 Z M74 112 L78 104 L84 112 Z', '#bfe3f5', C.ink, 1)),
+  'kär.anklaga': all(ground, bigArm('M0 52 C20 50 40 50 58 52'), path('M58 46 L74 50 C78 52 78 56 74 56 L58 58 Z', C.skin, C.ink, 1.6), figure({ x: 96, h: 0.86, top: C.sky, face: 'neutral' }), T(96, 20, '!', 14, HL), line('M78 38 l-4 -6 M84 34 l0 -7', HL, 2)),
+  'kär.förebråelse': bigFace(line('M42 50 L54 54 M78 50 L66 54', C.ink, 3.2), line('M48 84 L72 84', C.ink, 2.6), circle(49, 62, 3, C.ink, null), circle(77, 62, 3, C.ink, null)),
+  'kär.kritisera': all(ground, P(30, { top: C.purple, face: 'neutral' }), g('translate(52 60)', rect(-10, -14, 20, 28, C.white, 2, C.ink, 1.4), ...[-6, 2, 10].map((y) => path(`M-5 ${y - 3} L1 ${y + 3} M1 ${y - 3} L-5 ${y + 3}`, 'none', C.red, 1.8))), line('M38 64 L44 62', C.skin, 5), figure({ x: 94, top: C.sky, face: 'neutral' }), path('M98 25 C96 30 100 32 100 29 Z', C.sky, C.ink, 0.8)),
+  'kär.försvara-sig': all(ground, figure({ x: 80, top: C.sky }), shield(62, 58, 1.6, C.navy), ...[[20, 40], [14, 62], [22, 84]].map(([x, y]) => all(bubble(x!, y!, 20, zig(x!, y!, 12)), arrow(x! + 12, y!, 44, y! + (58 - y!) * 0.4, C.red, 2)))),
+  'kär.respektlös': all(ground, Q(30, { h: 0.84, top: C.yellow }), line('M38 70 L52 58', C.skin, 5), bubble(42, 9, 26, T(42, 13, 'ha ha', 7, C.navy)), figure({ x: 90, top: C.pink, hairStyle: 'long', face: 'neutral' }), path('M94 25 C92 30 96 32 96 29 Z', C.sky, C.ink, 0.8), line('M66 30 L74 38 M74 30 L66 38', C.red, 2)),
+  'kär.smälla-igen-dörren': all(ground, door(60, 30), line('M30 40 L40 50 M26 62 L40 62 M30 84 L40 74 M90 40 L80 50 M94 62 L80 62 M90 84 L80 74', HL, 2.6), T(60, 22, 'PANG!', 11, HL)),
+  'kär.sova-på-soffan': all(sofa(108), rect(12, 66, 18, 12, C.white, 5, C.ink, 1.4), circle(24, 66, 7, C.skin, C.ink, 1.4), path('M17 64 C17 56 31 56 31 64 C28 60 20 60 17 64 Z', C.hair, null), path('M28 74 C50 66 90 68 104 74 L104 84 L28 84 Z', C.yellow, C.ink, 1.6), T(44, 50, 'z', 9, C.grey), T(54, 42, 'z', 11, C.grey), moon(98, 22, 9)),
+  'kär.otrohet': all(ground, figure({ x: 22, h: 0.84, top: C.pink, hairStyle: 'long', face: 'neutral' }), brokenHeart(22, 13, 1), Q(70, { top: C.navy }), P(100, { top: C.red }), heart(86, 22, 0.7), line('M78 64 L92 62', C.skin, 5)),
+  'kär.lyssna-på-varandra': all(ground, P(30, { top: C.pink }), Q(90, { top: C.sky }), bubble(52, 14, 22, T(52, 18, '…', 10, C.navy)), path('M66 36 C72 30 80 34 78 42 C76 46 72 46 72 50', 'none', C.ink, 2), path('M54 36 C48 30 40 34 42 42 C44 46 48 46 48 50', 'none', C.ink, 2), heart(60, 56, 0.6)),
+  'kär.jag-budskap': all(bubble(52, 26, 76, T(52, 30, 'Jag blir ledsen …', 8, C.navy)), path('M96 22 l5 5 l9 -11', 'none', C.green, 3), g('translate(0 52)', bubble(52, 26, 76, T(52, 30, 'Du gör alltid …', 8, C.grey)), line('M14 26 L90 26', C.red, 2.4), path('M98 20 L110 32 M110 20 L98 32', 'none', C.red, 3))),
+  'kär.parterapi': all(sofa(108), mini(30, 74, C.pink, true), mini(52, 74, C.sky), rect(84, 58, 26, 8, C.brown, 2, C.ink, 1.4), line('M88 66 L88 112 M106 66 L106 112', C.brown, 3), figure({ x: 96, h: 0.6, top: C.green, hair: '#d3d6db' }), g('translate(86 70)', rect(-5, -6, 10, 12, C.white, 1, C.ink, 1)), bubble(40, 30, 22, T(40, 34, '…', 10, C.navy))),
+  'kär.göra-slut': all(g('translate(52 62) scale(2.2 2)', phone(0, 0)), rect(38, 44, 30, 12, C.grey, 4, null), T(53, 53, 'Det är slut.', 4.5, C.white), brokenHeart(52, 74, 1), T(96, 30, '!', 16, HL)),
+  'kär.separera': all(g('translate(56 70) rotate(-4)', path('M-32 -14 L0 -40 L0 34 L-32 34 Z', C.yellow, C.ink, 1.8), path('M-36 -12 L0 -42 L0 -36 L-32 -10 Z', C.red, C.ink, 1.4)), g('translate(66 70) rotate(4)', path('M32 -14 L0 -40 L0 34 L32 34 Z', C.yellow, C.ink, 1.8), path('M36 -12 L0 -42 L0 -36 L32 -10 Z', C.red, C.ink, 1.4)), mini(40, 82, C.pink, true), mini(82, 82, C.sky), line('M61 20 L61 112', C.grey, 1.6, '4 4'), line('M8 112 L112 112', C.grey2, 2)),
+  'kär.gå-skilda-vägar': all(rect(0, 0, 120, 120, C.mint, 10, null), path('M52 120 L52 80 L14 30 L28 24 L60 64 L92 24 L106 30 L68 80 L68 120 Z', '#e8dcc0', C.ink, 1.6), figure({ x: 30, h: 0.42, top: C.pink, hairStyle: 'long' }), figure({ x: 90, h: 0.42, top: C.sky }), arrow(22, 20, 12, 8, C.grey, 2), arrow(98, 20, 108, 8, C.grey, 2)),
+  'kär.hjärtesorg': all(ground, cloud(36, 10, 0.8), drops(36, 19), figure({ x: 36, h: 0.84, top: C.lilac, hairStyle: 'long', face: 'neutral' }), path('M40 40 C38 45 42 47 42 44 Z', C.sky, C.ink, 0.8), brokenHeart(86, 56, 3)),
 };
