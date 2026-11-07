@@ -4,7 +4,7 @@
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
 import { figure } from './figures';
-import { HL, T, P, Q, ground, heart, arm, mini, bubble, phone, cup, dish, sun, bed, padlock, foot, tableTop } from './people';
+import { HL, T, P, Q, ground, heart, arm, mini, bubble, phone, cup, dish, sun, bigArm, box, bed, padlock, foot, plane, suitcase, tableTop } from './people';
 
 const PINK = C.pink;
 const butterfly = (x: number, y: number, s = 1, col: string = C.purple) => g(`translate(${x} ${y}) scale(${s})`, path('M0 0 C-8 -10 -14 -4 -10 2 C-12 8 -4 10 0 2 Z', col, C.ink, 1), path('M0 0 C8 -10 14 -4 10 2 C12 8 4 10 0 2 Z', col, C.ink, 1), line('M0 -4 L0 6', C.ink, 1.4));
@@ -22,6 +22,14 @@ const profileHead = (x: number, y: number, s = 1, long = false, top: string = C.
 
 const sofa = (y = 112) => all(rect(10, y - 34, 100, 14, C.purple, 6, C.ink, 2), rect(4, y - 30, 14, 26, C.purple, 5, C.ink, 2), rect(102, y - 30, 14, 26, C.purple, 5, C.ink, 2), rect(16, y - 22, 88, 14, C.lilac, 4, C.ink, 2), line(`M18 ${y - 8} L18 ${y} M102 ${y - 8} L102 ${y}`, C.brown, 3));
 const couple = (gap = 20, h = 1, cx = 60) => all(P(cx - gap / 2, { top: C.pink, h }), Q(cx + gap / 2, { top: C.sky, h }));
+
+const ringO = (x: number, y: number, s = 1, stone = true) => g(`translate(${x} ${y}) scale(${s})`, `<circle r="7" fill="none" stroke="${C.ink}" stroke-width="4.4"/><circle r="7" fill="none" stroke="${C.gold}" stroke-width="2.6"/>`, stone ? path('M-3 -8 L3 -8 L5 -11 L0 -15 L-5 -11 Z', '#bfe3f5', C.ink, 1) : '');
+const ringBox = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-10, -2, 20, 12, C.red, 2, C.ink, 1.4), path('M-10 -2 L-8 -12 L8 -12 L10 -2 Z', '#b33a3a', C.ink, 1.4), ringO(0, -4, 0.6), sparkle(10, -14, 0.7));
+const bride = (x: number, h = 1) => all(figure({ x, h, top: C.white, bottom: C.white, hairStyle: 'long' }), path(`M${x - 10 * h} ${112 - 46 * h} L${x + 10 * h} ${112 - 46 * h} L${x + 22 * h} 112 L${x - 22 * h} 112 Z`, C.white, C.ink, 1.8), path(`M${x - 9 * h} ${112 - 92 * h} C${x - 20 * h} ${112 - 70 * h} ${x - 22 * h} ${112 - 52 * h} ${x - 18 * h} ${112 - 40 * h} L${x - 8 * h} ${112 - 60 * h} Z`, 'rgba(255,255,255,0.75)', C.grey2, 1), flower(x + 18 * h, 112 - 50 * h, 0.7 * h, C.pink));
+const groom = (x: number, h = 1) => all(figure({ x, h, top: C.dark, bottom: C.dark }), path(`M${x - 4} ${112 - 76 * h} L${x + 4} ${112 - 72 * h} L${x + 4} ${112 - 76 * h} L${x - 4} ${112 - 72 * h} Z`, C.ink, null), rect(x - 2 * h, 112 - 72 * h, 4 * h, 26 * h, C.white, 1, null));
+const house2 = (x: number, y: number, s = 1, col: string = C.yellow) => g(`translate(${x} ${y}) scale(${s})`, path('M-22 -10 L0 -30 L22 -10 Z', C.red, C.ink, 1.8), rect(-18, -10, 36, 30, col, 1, C.ink, 1.8), rect(-5, 4, 10, 16, C.brown, 1, C.ink, 1.2), rect(8, -4, 7, 7, '#d8eef8', 1, C.ink, 1));
+const coin = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, circle(0, 0, 7, C.gold, C.ink, 1.4), T(0, 3, 'kr', 6, C.ink));
+const confetti = (n: number, seed = 1) => all(...Array.from({ length: n }, (_, i) => { const x = (i * 37 + seed * 13) % 110 + 5, y = (i * 23 + seed * 7) % 44 + 4; return rect(x, y, 4, 6, [C.red, C.yellow, C.green, C.sky, C.pink, C.purple][i % 6]!, 1, null); }));
 
 export const LOVE_MOTIFS: Record<string, Svg> = {
   // ── Förälskelse och attraktion ──────────────────────────────────
@@ -81,4 +89,23 @@ export const LOVE_MOTIFS: Record<string, Svg> = {
   'kär.gosa': all(sofa(108), mini(50, 74, C.pink, true), mini(66, 72, C.sky), path('M30 86 C40 74 80 74 92 86 L92 92 L30 92 Z', C.yellow, C.ink, 1.6), hearts([[58, 46, 0.7], [46, 34, 0.4], [70, 32, 0.5]], PINK)),
   'kär.hand-i-hand': all(rect(0, 96, 120, 24, '#f1e3c6', 0, null), line('M4 92 C20 86 36 98 52 92 C68 86 84 98 100 92 C108 88 114 92 116 92', C.sky, 2.4), couple(34, 0.86), line('M55 75 L65 75', C.ink, 7), line('M55 75 L65 75', C.skin, 5), circle(60, 75, 3.6, C.skin, C.ink, 1.2), foot(20, 112, '#d8c7a4'), foot(30, 106, '#d8c7a4'), foot(90, 112, '#d8c7a4'), foot(100, 106, '#d8c7a4'), sun(98, 18, 7), heart(60, 10, 0.6)),
   'kär.parrelation': all(circle(44, 60, 30, 'rgba(239,159,181,0.35)', C.pink, 2.4), circle(76, 60, 30, 'rgba(140,199,232,0.35)', C.sky, 2.4), heart(60, 60, 1.1), mini(30, 58, C.pink, true), mini(90, 58, C.sky)),
+  // ── Sambo och äktenskap ─────────────────────────────────────────
+  'kär.flytta-ihop': all(ground, house2(86, 88, 1.3), P(26, { h: 0.86, top: C.pink }), box(26, 74, 22, 16), Q(52, { h: 0.88, top: C.sky }), box(52, 72, 22, 16), arrow(62, 100, 70, 100, HL, 2), heart(86, 40, 0.8)),
+  'kär.dela-på-hyran': all(house2(60, 50, 1.4), mini(26, 96, C.pink, true), mini(94, 96, C.sky), coin(40, 92), coin(80, 92), arrow(42, 84, 52, 72, HL, 2), arrow(78, 84, 68, 72, HL, 2), rect(46, 104, 28, 10, C.white, 3, C.ink, 1), T(60, 112, '50/50', 7, C.navy), ground),
+  'kär.samboavtal': all(g('translate(60 60) rotate(-3)', rect(-34, -46, 68, 92, C.white, 3, C.ink, 2.2), T(0, -32, 'AVTAL', 10, C.navy), house2(0, -6, 0.6), ...[14, 22].map((y) => line(`M-24 ${y} L24 ${y}`, C.grey2, 2)), path('M-26 38 C-22 30 -18 40 -12 32', 'none', C.navy, 1.6), path('M8 38 C12 30 16 40 24 32', 'none', C.purple, 1.6), heart(0, 36, 0.5))),
+  'kär.särbo': all(ground, house2(26, 92, 1, C.yellow), house2(94, 92, 1, C.sky), mini(26, 52, C.pink, true), mini(94, 52, C.sky), line('M40 50 C52 38 68 38 80 50', HL, 2, '3 4'), heart(60, 38, 0.8)),
+  'kär.fria': all(ground, g('translate(0 10)', groom(36, 0.86)), rect(0, 112, 120, 8, '#f6f2ea', 0, null), line('M44 76 L56 66', C.skin, 5), ringBox(62, 62, 1.1), P(94, { top: C.pink }), bubble(76, 12, 18, T(76, 16, '?', 11, C.navy), false)),
+  'kär.frieri': all(rect(0, 0, 120, 70, '#fde3c4', 0, null), circle(60, 70, 22, C.orange, null), rect(0, 70, 120, 18, '#8cc7e8', 0, null), rect(0, 88, 120, 32, '#f1e3c6', 0, null), g('translate(0 -6)', mini(42, 86, C.dark), mini(76, 82, C.pink, true)), ringBox(58, 82, 0.8), heart(60, 26, 0.9, C.red)),
+  'kär.säga-ja': all(ground, P(46, { top: C.pink }), line('M38 62 L28 42 M54 62 L64 42', C.skin, 5), circle(28, 40, 4, C.skin, C.ink, 1.2), circle(64, 40, 4, C.skin, C.ink, 1.2), ringO(64, 32, 0.6), bubble(88, 18, 28, T(88, 22, 'JA!', 10, HL), false), hearts([[96, 50, 0.6], [106, 62, 0.5]], PINK)),
+  'kär.förlova-sig': all(bigArm('M0 100 C24 84 38 70 50 60'), bigArm('M120 100 C96 84 82 70 70 60'), circle(52, 58, 7, C.skin, C.ink, 1.6), circle(68, 58, 7, C.skin, C.ink, 1.6), ringO(52, 50, 0.55), ringO(68, 50, 0.55), heart(60, 24, 1.1), sparkle(36, 30), sparkle(86, 28, 0.8)),
+  'kär.förlovad': all(g('translate(64 72) rotate(-10) scale(1.3)', path('M-14 40 L-14 0 C-14 -6 -10 -8 -8 -8 L-8 -30 C-8 -36 -2 -36 -2 -30 L-2 -10 L-2 -36 C-2 -42 4 -42 4 -36 L4 -10 L4 -32 C4 -38 10 -38 10 -32 L10 -6 L10 -24 C10 -30 16 -30 16 -24 L16 8 C16 24 8 30 8 40 Z', C.skin, C.ink, 2), ringO(1, -16, 0.42), ringO(1, -16, 0.42)), sparkle(36, 32, 1.2), sparkle(28, 50, 0.7), sparkle(46, 22, 0.6)),
+  'kär.förlovning': all(tableTop(92), g('translate(46 82) rotate(-12)', path('M-5 -22 L5 -22 L4 -4 C4 0 -4 0 -4 -4 Z', '#fff3c4', C.ink, 1.4), line('M0 0 L0 10 M-5 10 L5 10', C.ink, 1.6)), g('translate(74 82) rotate(12)', path('M-5 -22 L5 -22 L4 -4 C4 0 -4 0 -4 -4 Z', '#fff3c4', C.ink, 1.4), line('M0 0 L0 10 M-5 10 L5 10', C.ink, 1.6)), line('M50 54 L56 48 M70 54 L64 48', HL, 2), sparkle(60, 42, 1.1), ringO(60, 26, 0.9), confetti(10, 3)),
+  'kär.gifta-sig': all(ground, path('M22 112 L22 46 C22 14 98 14 98 46 L98 112', 'none', C.green, 6), ...[[22, 70], [26, 40], [44, 22], [76, 22], [94, 40], [98, 70]].map(([x, y], i) => flower(x!, y!, 0.6, i % 2 ? C.pink : C.white)), bride(46, 0.86), groom(74, 0.88), heart(60, 30, 0.7)),
+  'kär.giftermål': all(ringO(48, 62, 3, false), ringO(72, 62, 3, false), sparkle(60, 22, 1.4), sparkle(98, 34), sparkle(22, 92, 0.8)),
+  'kär.vigsel': all(ground, bride(30, 0.82), groom(90, 0.84), figure({ x: 60, h: 0.78, top: C.navy, hair: '#d3d6db' }), rect(52, 66, 16, 12, C.dark, 1, C.ink, 1.2), ringO(48, 46, 0.4, false), ringO(72, 46, 0.4, false)),
+  'kär.brudpar': all(ground, confetti(16, 5), bride(46, 0.86), groom(74, 0.88), line('M52 70 L68 70', C.skin, 5)),
+  'kär.hustru': all(ground, groom(34, 0.94), line('M42 66 L54 58', C.skin, 5), P(84, { top: C.purple }), ringO(84, 70, 0.55), heart(98, 18, 0.6)),
+  'kär.smekmånad': all(rect(0, 84, 120, 36, '#f1e3c6', 0, null), path('M86 84 C84 60 86 40 92 26', 'none', C.brown, 4), ...[[-40, 'M92 26 C80 18 68 22 62 30'], [0, 'M92 26 C100 14 112 16 118 24'], [0, 'M92 26 C86 10 94 4 100 4'], [0, 'M92 26 C104 26 112 34 114 42'], [0, 'M92 26 C80 28 72 38 72 46']].map(([, d]) => line(d as string, C.green, 4)), plane(36, 22, 1.3, -14), suitcase(34, 102, C.red), heart(60, 54, 0.9), sun(16, 50, 7)),
+  'kär.bröllopsdag': all(g('translate(60 62)', rect(-38, -40, 76, 78, C.white, 4, C.ink, 2), rect(-38, -40, 76, 16, C.red, 4, C.ink, 2), ringO(-8, 8, 1.2, false), ringO(8, 8, 1.2, false), T(0, 32, '♥', 10, C.red)), confetti(6, 9)),
+  'kär.skilja-sig': all(ground, g('translate(52 30) rotate(-20)', path('M0 -9 A9 9 0 0 0 -9 0 A9 9 0 0 0 0 9', 'none', C.gold, 3)), g('translate(68 30) rotate(20)', path('M0 -9 A9 9 0 0 1 9 0 A9 9 0 0 1 0 9', 'none', C.gold, 3)), figure({ x: 30, top: C.pink, hairStyle: 'long', face: 'neutral' }), figure({ x: 90, top: C.sky, face: 'neutral' }), arrow(14, 104, 4, 104, C.grey, 2), arrow(106, 104, 116, 104, C.grey, 2), line('M60 50 L60 112', C.grey2, 2, '4 4')),
 };
