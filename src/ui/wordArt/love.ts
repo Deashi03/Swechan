@@ -4,7 +4,7 @@
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
 import { figure } from './figures';
-import { HL, T, P, Q, ground, heart, mini, bubble, tableTop, bed } from './people';
+import { HL, T, P, Q, ground, heart, mini, bubble, tableTop, bed, cup, dish } from './people';
 
 const PINK = C.pink;
 const butterfly = (x: number, y: number, s = 1, col: string = C.purple) => g(`translate(${x} ${y}) scale(${s})`, path('M0 0 C-8 -10 -14 -4 -10 2 C-12 8 -4 10 0 2 Z', col, C.ink, 1), path('M0 0 C8 -10 14 -4 10 2 C12 8 4 10 0 2 Z', col, C.ink, 1), line('M0 -4 L0 6', C.ink, 1.4));
@@ -14,6 +14,11 @@ const flower = (x: number, y: number, s = 1, col: string = C.red) => g(`translat
 const magnet = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-14 -16 L-14 2 C-14 22 14 22 14 2 L14 -16 L6 -16 L6 2 C6 12 -6 12 -6 2 L-6 -16 Z', C.red, C.ink, 1.8), rect(-14, -16, 8, 6, C.silver, 0, C.ink, 1.4), rect(6, -16, 8, 6, C.silver, 0, C.ink, 1.4));
 const glass = (x: number, y: number, col: string) => all(path(`M${x - 6} ${y - 12} L${x + 6} ${y - 12} L${x} ${y} Z`, col, C.ink, 1.4), line(`M${x} ${y} L${x} ${y + 10} M${x - 5} ${y + 10} L${x + 5} ${y + 10}`, C.ink, 1.6));
 const rays = (x: number, y: number, r1: number, r2: number, n = 12, col: string = C.gold) => all(...Array.from({ length: n }, (_, i) => { const a = (i / n) * Math.PI * 2; return line(`M${(x + Math.cos(a) * r1).toFixed(1)} ${(y + Math.sin(a) * r1).toFixed(1)} L${(x + Math.cos(a) * r2).toFixed(1)} ${(y + Math.sin(a) * r2).toFixed(1)}`, col, 2.4); }));
+
+const bouquet = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-4 0 L0 18 L4 0 Z', C.green, C.ink, 1.2), flower(-5, -4, 0.8, C.red), flower(5, -5, 0.8, C.pink), flower(0, -10, 0.8, C.red));
+const candle = (x: number, y: number) => all(rect(x - 3, y - 16, 6, 16, C.white, 1, C.ink, 1.2), path(`M${x} ${y - 24} C${x + 4} ${y - 19} ${x + 3} ${y - 16} ${x} ${y - 16} C${x - 3} ${y - 16} ${x - 4} ${y - 19} ${x} ${y - 24} Z`, C.yellow, C.orange, 1));
+const screen = (inner: Svg) => all(rect(32, 6, 56, 108, C.dark, 8, C.ink, 2), rect(37, 14, 46, 90, C.white, 3, null), inner);
+const profileHead = (x: number, y: number, s = 1, long = false, top: string = C.pink, rot = 0) => g(`translate(${x} ${y}) rotate(${rot}) scale(${s})`, long ? path('M-14 -2 C-16 18 14 18 14 -2 C14 -22 -14 -22 -14 -2 Z', C.hair, C.ink, 1.6) : '', path('M-12 0 C-12 -16 12 -16 12 0 C12 4 14 6 16 8 L12 10 C12 18 4 22 -4 20 C-12 18 -12 8 -12 0 Z', C.skin, C.ink, 1.8), path('M-13 -2 C-14 -18 12 -20 13 -6 C6 -10 -4 -10 -13 -2 Z', C.hair, C.ink, 1.4), circle(5, 0, 1.4, C.ink, null), path('M-8 30 C-8 22 10 22 10 30 Z', top, C.ink, 1.4));
 
 export const LOVE_MOTIFS: Record<string, Svg> = {
   // ── Förälskelse och attraktion ──────────────────────────────────
@@ -35,4 +40,23 @@ export const LOVE_MOTIFS: Record<string, Svg> = {
   'kär.kärlekskrank': all(bed(30), line('M38 68 L50 62', C.white, 3), circle(50, 62, 1.8, C.red, null), hearts([[60, 40, 0.7], [76, 30, 0.9], [94, 20, 1.1]], PINK), T(30, 46, '…', 12, C.grey)),
   'kär.betagen': all(ground, Q(28, { top: C.navy }), line('M36 62 L44 52', C.skin, 5), rect(42, 44, 6, 10, C.dark, 2, null), T(54, 30, '♪', 14, C.purple), T(68, 18, '♫', 12, C.purple), P(92, { top: C.pink }), circle(92, 28, 2.2, C.ink, null), hearts([[104, 12, 0.6], [80, 10, 0.5]])),
   'kär.obesvarad': all(ground, P(30, { top: C.pink, face: 'neutral' }), line('M38 64 L50 54', C.skin, 5), heart(56, 50, 1, C.red), `<g opacity="0.5">${figure({ x: 96, top: C.grey })}</g>`, line('M78 96 L88 96', C.grey2, 2.4), path('M90 96 l-5 -3 l0 6 Z', C.grey2, C.grey2, 1), T(96, 16, '…', 12, C.grey)),
+  // ── Dejting och uppvaktning ─────────────────────────────────────
+  'kär.singel': all(ground, Q(52, { top: C.sky }), path('M88 30 C80 22 80 14 86 14 C88 14 88 16 88 18 C88 16 88 14 90 14 C96 14 96 22 88 30 Z', 'none', C.grey, 1.6), rect(80, 46, 18, 14, C.white, 4, C.ink, 1.2), T(89, 56, '1', 9, HL)),
+  'kär.dejta': all(g('translate(60 60)', rect(-40, -40, 80, 78, C.white, 4, C.ink, 2), rect(-40, -40, 80, 14, C.red, 4, C.ink, 2), ...Array.from({ length: 12 }, (_, i) => rect(-34 + (i % 4) * 18, -20 + Math.floor(i / 4) * 18, 14, 14, '#f4efe6', 2, C.grey2, 1))), heart(51, 47, 0.5), heart(87, 65, 0.5), heart(51, 83, 0.5), heart(69, 83, 0.5)),
+  'kär.dejt': all(ground, Q(36, { top: C.navy }), bouquet(52, 58, 1), line('M44 66 L50 62', C.skin, 5), P(88, { top: C.pink }), heart(62, 14, 0.9)),
+  'kär.dejtingapp': screen(all(path('M60 36 C46 26 48 14 56 14 C58 14 60 16 60 18 C60 16 62 14 64 14 C72 14 74 26 60 36 Z', HL, null), T(60, 50, 'match', 8, HL), rect(42, 58, 36, 40, '#f4efe6', 4, C.ink, 1.2), mini(60, 80, C.green))),
+  'kär.profilbild': screen(all(circle(60, 44, 18, '#d8eef8', C.ink, 1.6), profileHead(58, 42, 0.8, true), rect(44, 70, 32, 6, C.ink, 2, null), rect(44, 80, 24, 4, C.grey2, 2, null), rect(44, 88, 28, 4, C.grey2, 2, null))),
+  'kär.swipea': screen(all(g('translate(64 58) rotate(14)', rect(-16, -24, 32, 46, '#f4efe6', 4, C.ink, 1.6), mini(0, 4, C.orange, true)), path('M20 56 L28 64 M28 56 L20 64', 'none', C.red, 3), heart(102, 60, 0.9), arrow(48, 96, 76, 96, HL, 2.6), circle(46, 96, 4, C.skin, C.ink, 1.2))),
+  'kär.bjuda-ut': all(ground, Q(32, { top: C.green }), line('M40 64 L50 54', C.skin, 5), bubble(56, 9, 36, T(56, 13, 'Middag?', 8, C.navy)), P(92, { top: C.pink }), T(104, 20, '!', 12, HL), heart(70, 40, 0.6)),
+  'kär.fråga-chans': all(g('translate(60 58) rotate(-4)', rect(-46, -36, 92, 72, C.white, 2, C.ink, 2), ...[-24, -12, 0, 12, 24].map((y) => line(`M-40 ${y} L40 ${y}`, '#bfe3f5', 1)), T(0, -16, 'Vill du bli ihop', 8, C.navy, 700), T(0, -4, 'med mig?', 8, C.navy, 700), rect(-30, 10, 10, 10, C.white, 1, C.ink, 1.4), T(-10, 19, 'ja', 8), rect(8, 10, 10, 10, C.white, 1, C.ink, 1.4), T(30, 19, 'nej', 8), path('M-28 14 L-25 18 L-18 8', 'none', C.red, 2)), heart(100, 18, 0.8)),
+  'kär.första-dejten': all(tableTop(84), cup(46, 76), cup(74, 76, C.sky), mini(22, 70, C.orange, true), mini(98, 70, C.green), path('M30 50 C28 54 32 56 32 53 Z M90 50 C88 54 92 56 92 53 Z', C.sky, C.ink, 0.8), rect(46, 22, 28, 18, C.white, 4, C.ink, 1.4), T(60, 35, '1:a', 10, HL)),
+  'kär.blind-date': all(tableTop(84), dish(44, 80, C.green), dish(76, 80, C.orange), mini(22, 70, C.orange, true), g('translate(98 70)', circle(0, -2, 6, C.grey2, C.ink, 1.2), path('M-8 12 C-8 4 8 4 8 12 Z', C.grey2, C.ink, 1.2)), T(98, 48, '?', 16, HL), candle(60, 80)),
+  'kär.charma': all(ground, Q(34, { top: C.navy }), bubble(58, 9, 30, T(58, 13, 'ha ha', 8, C.navy)), sparkle(18, 20), sparkle(48, 40, 0.7), P(90, { top: C.pink }), hearts([[100, 14, 0.6], [110, 26, 0.5]])),
+  'kär.imponera': all(ground, Q(34, { top: C.white }), path('M24 18 C20 8 30 4 34 9 C38 4 48 8 44 18 Z', C.white, C.ink, 1.4), rect(25, 17, 18, 5, C.white, 1, C.ink, 1.2), line('M42 64 L52 58', C.skin, 5), dish(60, 56, C.orange), P(94, { top: C.pink }), bubble(66, 10, 26, T(66, 14, 'Wow!', 8, C.navy), false)),
+  'kär.romantisk': all(circle(94, 22, 12, '#fff6d8', C.ink, 1.4), circle(100, 18, 10, '#f6f2ea', null), candle(28, 96), candle(44, 100), g('translate(78 86) rotate(-20)', line('M0 0 L0 26', C.green, 2.4), path('M0 0 C-10 -4 -10 -16 0 -18 C10 -16 10 -4 0 0 Z', C.red, C.ink, 1.4), path('M0 12 C6 8 10 10 10 14 C6 16 2 14 0 12 Z', C.green, null)), hearts([[56, 40, 0.8], [40, 26, 0.5], [70, 22, 0.6]]), line('M8 112 L112 112', C.grey2, 2)),
+  'kär.middag-för-två': all(tableTop(84), dish(36, 80, C.orange), dish(84, 80, C.green), candle(60, 82), glass(48, 82, C.red), glass(72, 82, C.red), mini(16, 70, C.purple, true), mini(104, 70, C.navy), T(60, 36, '2', 12, HL)),
+  'kär.hålla-hand': all(ground, P(40, { top: C.pink }), Q(80, { top: C.sky }), line('M55 69 L65 69', C.ink, 7), line('M55 69 L65 69', C.skin, 5), circle(60, 69, 4.4, C.skin, C.ink, 1.4), heart(60, 18, 0.7)),
+  'kär.kyssa': all(profileHead(40, 60, 1.6, true, C.pink), g('translate(80 60) scale(-1 1)', profileHead(0, 0, 1.6, false, C.sky)), heart(60, 18, 1.1), hearts([[44, 14, 0.4], [76, 12, 0.5]], PINK)),
+  'kär.uppvakta': all(ground, figure({ x: 38, h: 0.8, top: C.navy }), bouquet(62, 54, 1.4), line('M48 76 L58 68', C.skin, 5), P(94, { top: C.pink }), g('translate(28 24) rotate(-8)', rect(-12, -8, 24, 16, C.white, 2, C.ink, 1.4), path('M-12 -8 L0 2 L12 -8', 'none', C.ink, 1.2), heart(0, 3, 0.35)), hearts([[78, 16, 0.6]])),
+  'kär.uppvaktning': all(...[0, 1, 2, 3].map((i) => all(rect(8 + i * 27, 70, 24, 36, C.white, 3, C.ink, 1.4), T(20 + i * 27, 100, `v.${i + 1}`, 7, C.grey), bouquet(20 + i * 27, 82, 0.7))), arrow(10, 50, 108, 50, HL, 2.4), heart(60, 22, 1.4)),
 };
