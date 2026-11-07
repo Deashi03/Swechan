@@ -1,5 +1,33 @@
 # Changelog
 
+## 0.19.0 – 2026-11-07
+
+Produktägaren bad om minst 500 nya bilder. Det blev 549, och alla har granskats i förstoring.
+
+### Kläder & stil klart (421 nya bilder)
+- **Material (315–321):**
+  - bomull och linne, ull och silke, syntetmaterial, läder och mocka
+  - mönster och texturer, tygers egenskaper, att känna igen kvalitet
+- **Passform och stil (322–328):**
+  - storlekar och mått, lösa och tajta plagg, att prova kläder
+  - sömmar och detaljer, ändra och laga, färgmatchning, stil och tillfälle
+- **Klädvård (329–335):** tvättsymboler, sortera tvätt, tvättmedel, torka och stryka, fläckar, ull och siden, laga knappar och sömmar.
+- **Hår och hud (336–342):** frisyrer, hårvårdsprodukter, hudvård, smink, parfym, naglar och rakning, besöka frisören.
+- Nu har alla modulord i *Kläder & stil* (301–342) en bild.
+
+### Grundmodulerna 1–8 (128 nya bilder)
+- Hemmet och vardagen, material och ämnen, atomer och molekyler, krig och försvar, medeltida borgar, vanliga grönsaker, skära och hacka, koka och sjuda.
+
+### Principer
+- Egenskaper och abstrakta ord (*tajt*, *dämpad*, *intensiv*, *neutral* …) är symbolbilder. De visas alltid med den japanska översättningen och aldrig i bildövningarna.
+- Ingen bild innehåller ordet självt. Testet från 0.18.1 kontrollerar även alla nya bilder.
+- I hela appen har nu 3 049 av 6 182 modulord en bild.
+
+### Teknik
+- Nya motivgrupper som laddas när de behövs: `tyg.` (textiles.ts), `pass.` (fit.ts), `tvätt.` (laundry.ts), `skön.` (beauty.ts) och `bas.` (basics.ts).
+
+Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v22`.
+
 ## 0.18.1 – 2026-11-07
 
 Produktägaren påpekade att bilden för *högtidlig* inte såg högtidlig ut. Abstrakta ord får gärna visas som en symbol tillsammans med det japanska ordet, och liknande bilder skulle också granskas.

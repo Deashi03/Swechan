@@ -1,8 +1,22 @@
 # Projektstatus – överlämning
 
-**Version:** 0.18.1 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.18 utvecklades i grenen `claude/swechan-0.18`)
+**Version:** 0.19.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.19 utvecklades i grenen `claude/swechan-0.19`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.19 – släppt 2026-11-07 (Kläder & stil klart, grundmodulerna 1–8)
+
+- **Gjort:**
+  - *Kläder & stil* 315–342 (421 bilder) och grundmodulerna 1–8 (128 bilder), sammanlagt 549.
+  - Motiven finns i `textiles.ts` (`tyg.`), `fit.ts` (`pass.`), `laundry.ts` (`tvätt.`), `beauty.ts` (`skön.`) och `basics.ts` (`bas.`).
+  - I hela appen har 3 049 av 6 182 modulord en bild.
+- **Nästa steg (0.20):** överämnena i 400-, 500-, 600-, 800- och 900-serierna (cirka 630 ord vardera saknar bild).
+- **Kom ihåg:**
+  - `scratchpad/specgen.py FIL PREFIX UT.json 'grupp;…' 'ejquiz,…'` gör bildspecifikationen. Symbolstatus hämtas från visualPlan.
+  - Två granskningsark:
+    - `scratchpad/msheet.ts FIL EXPORT ut.html från antal` visar en motivfil i 190 px.
+    - `scratchpad/one.sh FIL EXPORT '.nyckel,…'` visar enskilda motiv.
+  - Motivhjälpare som används i motivobjektet måste deklareras *före* `export const …_MOTIFS`. Annars blir det ett ReferenceError vid laddning.
 
 ## 0.18.1 – släppt 2026-11-07 (symbolbilder och text i bilder)
 
