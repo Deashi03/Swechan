@@ -5,9 +5,10 @@ import { Scene, compileScene } from '../ui/anim/player';
 import { build } from '../../scripts/scenes/kit';
 import { KROPP } from '../../scripts/scenes/kropp.scenes';
 import { KROPP2 } from '../../scripts/scenes/kropp2.scenes';
+import { FAMILJ } from '../../scripts/scenes/familj.scenes';
 import { imageFor } from './images';
 
-const defs = [...KROPP, ...KROPP2];
+const defs = [...KROPP, ...KROPP2, ...FAMILJ];
 
 describe('scene definitions (scripts/scenes)', () => {
   it('have unique senses', () => {

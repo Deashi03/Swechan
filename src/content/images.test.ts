@@ -5,8 +5,9 @@ import { getContent } from './repository';
 import { generateExercise } from '../learning/exercises/generate';
 import { isChoice } from '../learning/exercises/types';
 import { buildLearnPlan } from '../learning/learnPlan';
-import { WORD_MOTIFS } from '../ui/wordArt/motifs';
-import { renderWordArt } from '../ui/wordArt/render';
+import { hasMotif, loadAllMotifs, renderWordArt } from '../ui/wordArt/render';
+
+beforeAll(async () => { await loadAllMotifs(); });
 import { exerciseTypeFor } from '../ui/screens/ReviewSession';
 import { Scene, migrateScene, compileScene, renderFrame, frameToSvg } from '../ui/anim/player';
 
@@ -21,7 +22,7 @@ describe('word images – data', () => {
   it('every illustration has a motif that renders to an SVG', () => {
     for (const img of allWordImages()) {
       if (img.kind !== 'illustration') continue;
-      expect(WORD_MOTIFS[img.motif], img.motif).toBeDefined();
+      expect(hasMotif(img.motif), img.motif).toBe(true);
       expect(renderWordArt(img.motif)).toMatch(/^<svg [^>]*viewBox="0 0 120 120"/);
     }
   });
@@ -58,7 +59,7 @@ describe('word animations (0.12)', () => {
     }
   });
   it('a fallback motif, when given, exists', () => {
-    for (const a of anims) if (a.kind === 'animation' && a.fallbackMotif) expect(WORD_MOTIFS[a.fallbackMotif], a.fallbackMotif).toBeDefined();
+    for (const a of anims) if (a.kind === 'animation' && a.fallbackMotif) expect(hasMotif(a.fallbackMotif), a.fallbackMotif).toBe(true);
   });
   it('scene files in public/anim are all referenced by the registry (no orphans)', () => {
     const referenced = new Set(anims.map((a) => (a.kind === 'animation' ? `${a.file}.json` : '')));

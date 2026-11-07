@@ -8,21 +8,22 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { imageFor, photoUrl } from '../../content/images';
 
-type Renderer = (motif: string) => string | null;
-let rendererPromise: Promise<Renderer> | null = null;
-let renderer: Renderer | null = null;
-function loadRenderer(): Promise<Renderer> {
-  rendererPromise ??= import('../wordArt/render').then((m) => (renderer = m.renderWordArt));
-  return rendererPromise;
+type RenderModule = typeof import('../wordArt/render');
+let rendererPromise: Promise<RenderModule> | null = null;
+let renderer: RenderModule | null = null;
+/** Load the illustration renderer and the chunk that holds `motif`. */
+function loadRenderer(motif: string): Promise<void> {
+  rendererPromise ??= import('../wordArt/render').then((m) => (renderer = m));
+  return rendererPromise.then((m) => m.loadMotif(motif));
 }
 const AnimatedWordVisual = lazy(() => import('./AnimatedWordVisual'));
 const AnimatedFace = lazy(() => import('./AnimatedFace'));
 
 function Illustration({ motif, size, aria }: { motif: string; size: number; aria: string }) {
   const [, force] = useState(0);
-  useEffect(() => { if (!renderer) loadRenderer().then(() => force((n) => n + 1)).catch(() => undefined); }, [motif]);
+  const svg = renderer?.renderWordArt(motif) ?? null;
+  useEffect(() => { if (!svg) loadRenderer(motif).then(() => force((n) => n + 1)).catch(() => undefined); }, [motif, svg]);
   const style = { width: size, height: size };
-  const svg = renderer?.(motif);
   return svg
     ? <span className="word-image" role="img" aria-label={aria} style={style} dangerouslySetInnerHTML={{ __html: svg }} />
     : <span className="word-image loading" role="img" aria-label={aria} style={style} />;

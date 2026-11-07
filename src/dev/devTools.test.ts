@@ -57,7 +57,8 @@ describe('development tools', () => {
   it('shortcuts fill the review pool, make cards due and complete today\'s review', async () => {
     await setupTestEnv();
     await ensureDailySession();
-    const n = await addAllWordsToReview();
+    // 40 modules are enough for the behaviour; all ~400 took > 60 s on CI (fake IndexedDB)
+    const n = await addAllWordsToReview(40);
     expect(n).toBeGreaterThan(50);
     const day = (await getDb().dailySessions.toArray())[0]!;
     expect(day.reviewPlan.length).toBe(25);

@@ -72,11 +72,12 @@ export async function applyVersionResetWith(cfg: { resetProgressOnUpdate: boolea
 }
 
 /** Put every module word into the review pool as if learned yesterday (so it can be reviewed today). */
-export async function addAllWordsToReview(): Promise<number> {
+/** `moduleLimit` (tests only) takes the words of the first n modules instead of all of them. */
+export async function addAllWordsToReview(moduleLimit?: number): Promise<number> {
   const repo = getContent();
   const yesterday = addDays(await todayStudyDate(), -1);
   const at = new Date(now().getTime() - 86_400_000);
-  const words = repo.modules.flatMap((m) => m.words.map((w) => ({ senseId: w.senseId, dimensions: dimensionsForWord(w, repo), ratings: {} })));
+  const words = repo.modules.slice(0, moduleLimit ?? repo.modules.length).flatMap((m) => m.words.map((w) => ({ senseId: w.senseId, dimensions: dimensionsForWord(w, repo), ratings: {} })));
   const n = await addWordsToReview(words, 'module', at, yesterday);
   await recreateTodaysReview();
   return n;
