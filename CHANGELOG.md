@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.17.0 – 2026-11-07
+
+Produktägaren var nöjd med 0.16. I den här versionen fortsätter påfyllningen av bilder i de tidigare modulerna.
+
+### Påfyllning: Vardag & hem (323 nya bilder)
+- **Mat & dryck är klart:** 132–139 har nu bilder, så alla modulord i 101–139 har en bild. De nya modulerna är matbordets samtal, svenska husmansrätter, japansk mat på svenska, mat från olika världsdelar, specialkost och allergener, näringsämnen, matsvinn och rester samt högtidsmat och traditioner.
+- **Bostad (201–207):** hus och lägenheter, husets rum, utrymmen i flerbostadshus, att beskriva en bostad, planlösning och boyta, att flytta och boendeformer i Sverige.
+- **Möbler och inredning (208–214):** soffor och fåtöljer, bord och stolar, sängar och sovrumsmöbler, förvaring och hyllor, lampor och belysning, färger och inredningsstilar samt att möblera ett rum.
+- Färgord (*beige*, *turkos*, *lila*) visas som färgprov utan text, så att bilden inte avslöjar svaret i bildövningen.
+- I hela appen har nu 1 973 av 6 182 modulord en bild.
+
+### Teknik
+- Nya motivgrupper som laddas när de behövs: `bord.` (dining.ts), `hus.` (housing.ts) och `möb.` (furniture.ts). Bostadshjälparna ligger i `homeKit.ts`.
+
+Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v19`.
+
 ## 0.16.0 – 2026-11-07
 
 Produktägarens önskemål efter 0.15: fyll på bilder i de tidigare modulerna, och visa det japanska ordet i bildövningen.

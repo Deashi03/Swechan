@@ -1,8 +1,22 @@
 # Projektstatus – överlämning
 
-**Version:** 0.16.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.16 utvecklades i grenen `claude/swechan-0.16`)
+**Version:** 0.17.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.17 utvecklades i grenen `claude/swechan-0.17`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.17 – släppt 2026-11-07 (Mat & dryck klart, bostad och möbler)
+
+- **Gjort:**
+  - *Vardag & hem* 132–139 och 201–214 har bilder för alla modulord (323 nya). Hela Mat & dryck (101–139) är klart.
+  - Motiven finns i `dining.ts` (`bord.`), `housing.ts` (`hus.`) och `furniture.ts` (`möb.`).
+  - I hela appen har 1 973 av 6 182 modulord en bild.
+- **Nästa steg (0.18):**
+  - *Vardag & hem* 215–242: kök och badrum, städning, reparationer, hyra och bostadsrätt, grannar, felanmälan.
+  - Därefter övriga områden i Vardag & hem och de andra överämnena.
+  - Nytt område: resten av *Relationer & familj*.
+- **Kom ihåg:**
+  - `scratchpad/parens.py FIL` tar bort överflödiga avslutande parenteser i motivrader. De uppstår lätt när utfyllnad rensas bort med ersättningar.
+  - Ord med betydelsenummer 2 (till exempel `s.släcka.2`) får egna motiv-id som `möb.släcka-lampa`, och läggs till i specifikationen för hand efter `mkspec.py`.
 
 ## 0.16 – släppt 2026-11-07 (bild → ord med japanska, Vardag & hem 114–131)
 
