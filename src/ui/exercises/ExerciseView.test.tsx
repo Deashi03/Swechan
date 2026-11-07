@@ -5,6 +5,7 @@ import type { ExerciseResult } from '../../learning/exercises/types';
 import { DictionarySheetProvider, useDictionarySheet } from '../dictionary/DictionarySheet';
 import { ExerciseView } from './ExerciseView';
 import { WordIntro } from './WordIntro';
+import { pictureMode } from './pictureMode';
 
 const repo = getContent();
 const ctx = { repo, poolSenseIds: repo.modules[0]!.words.map((w) => w.senseId), seed: 3 };
@@ -135,5 +136,23 @@ describe('Japanese about the word is large and dark (0.15)', () => {
     const right = ex.options[ex.correctIndex]!;
     fireEvent.click(screen.getByText(right.label));
     if (ex.explanation?.lang === 'ja') expect(document.querySelector('.ja-word')).not.toBeNull();
+  });
+});
+
+describe('picture → word shows the Japanese word and plays an animation once (0.16)', () => {
+  it('the Japanese word of the target is shown under the picture', () => {
+    const sense = repo.getSense('s.rynka-pannan.1')!;
+    const pool = repo.getModule('m.ansiktsuttryck-och-miner')!.words.map((w) => w.senseId);
+    const ex = genImageChoice(sense, { repo, poolSenseIds: pool, seed: 1 })!;
+    expect(ex.prompt).toBe(sense.sense.ja);
+    expect(ex.promptLang).toBe('ja');
+    const { container } = render(<DictionarySheetProvider><ExerciseView exercise={ex} onDone={() => undefined} /></DictionarySheetProvider>);
+    const prompt = container.querySelector('.picture-prompt + .prompt-ja');
+    expect(prompt).not.toBeNull();
+    expect(prompt!.getAttribute('lang')).toBe('ja');
+  });
+  it('only the picture → word exercise plays the animation (once); every other picture is still', () => {
+    expect(pictureMode('image_choice')).toBe('once');
+    for (const t of ['image_pick', 'meaning_choice', 'reverse_choice', 'context_choice', 'spelling'] as const) expect(pictureMode(t)).toBe('still');
   });
 });

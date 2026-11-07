@@ -360,10 +360,11 @@ export function genImageChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise |
   );
   return {
     type: 'image_choice', senseId: ref.sense.id, dimension: 'meaning', image: ref.sense.id,
-    prompt: '', promptLang: 'sv',
+    // The Japanese word is shown under the picture (product owner 0.16): some pictures are hard to read alone.
+    prompt: ref.sense.ja, promptLang: 'ja',
     instructionSv: 'Vilket ord passar till bilden?', instructionJa: '{絵|え}に{合|あ}う{言葉|ことば}はどれですか。',
     options, correctIndex,
-    explanation: { text: ref.sense.ja, lang: 'ja' },
+    explanation: { text: ref.sense.defJa || ref.sense.ja, lang: 'ja' },
     note: { text: ref.sense.examples[0]!.sv, lang: 'sv' },
   };
 }

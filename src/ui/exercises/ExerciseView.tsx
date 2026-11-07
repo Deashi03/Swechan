@@ -13,6 +13,7 @@ import { isChoice, type ChoiceExercise, type ExerciseInstance, type ExerciseResu
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
 import { Ja, LangText } from '../components/Ja';
 import { WordImage } from '../components/WordImage';
+import { pictureMode } from './pictureMode';
 
 type Props = { exercise: ExerciseInstance; onDone: (r: ExerciseResult) => void };
 
@@ -82,7 +83,7 @@ function ChoiceView({ ex, onDone }: { ex: ChoiceExercise; onDone: (r: ExerciseRe
     <div className="stack">
       <Instruction sv={ex.instructionSv} ja={ex.instructionJa} />
       <div className="card stack-sm" style={{ padding: '22px 20px', borderRadius: 'var(--r-xl)' }}>
-        {ex.image && <div className="picture-prompt"><WordImage senseId={ex.image} size={200} /></div>}
+        {ex.image && <div className="picture-prompt"><WordImage senseId={ex.image} size={200} mode={pictureMode(ex.type)} /></div>}
         {ex.prompt && <LangText text={ex.prompt} lang={ex.promptLang} className={ex.promptLang === 'ja' ? 'prompt-ja' : wordCard || ex.type === 'image_pick' ? 'prompt-word' : ''} />}
         {ex.subPrompt && (
           <div className="small" style={{ background: 'var(--c-primary-tint)', borderRadius: 12, padding: '10px 12px' }}>
