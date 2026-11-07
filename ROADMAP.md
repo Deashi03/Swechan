@@ -62,7 +62,11 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - Påfyllning av bilder: *Vardag & hem* ordning 108–113 (fågel och ägg, fisk och skaldjur, vegetariskt, mejeri, råvaror, förvaring).
 - Gränssnitt: japansk text om ordet är stor och mörk med tydlig furigana (ADR 40).
 
-## v0.16 och framåt – två spår per release
+## v0.16 – Bild → ord med japanska, Vardag & hem 114–131 (klar)
+- Övningen *Vilket ord passar till bilden?* visar ordets japanska översättning, och en animation till ordet spelas en gång (ADR 41).
+- Påfyllning av bilder: *Vardag & hem* 114–131 (matlagning, smaker, konsistens, färskhet, måltider, fika, restaurang), 250 bilder.
+
+## v0.17 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
