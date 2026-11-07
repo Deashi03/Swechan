@@ -154,6 +154,10 @@ describe('module flow and daily session', () => {
 });
 
 describe('learning path (modules build on each other)', () => {
+  async function markCompleted(id: string) {
+    const m = getContent().getModule(id)!;
+    await getDb().moduleProgress.put({ moduleId: id, contentVersion: m.contentVersion, status: 'completed', startedAt: 0, completedAt: 0, steps: { learn: 'completed', read: 'completed', converse: 'completed' } });
+  }
   async function complete(id: string) {
     await finishLearn(id);
     for (const st of ['learn', 'read', 'converse'] as const) await completeStep(id, st);
@@ -178,7 +182,9 @@ describe('learning path (modules build on each other)', () => {
       const m = (await recommendedModule())!;
       // a module is only recommended once all its prerequisites are done
       for (const p of m.prerequisites) expect(order, `${m.id} före ${p}`).toContain(p);
-      order.push(m.id); await complete(m.id);
+      // the order only depends on which modules are completed – write that directly instead of running
+      // every learn session (that took > 60 s on CI with ~400 modules)
+      order.push(m.id); await markCompleted(m.id);
     }
     expect(order.slice(0, 5)).toEqual(['m.hemmet-vardag', 'm.material-amnen', 'm.atomer-molekyler', 'm.krig-forsvar', 'm.medeltida-borgar']);
     expect(new Set(order).size).toBe(total);
