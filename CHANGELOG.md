@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.18.0 – 2026-11-07
+
+Produktägaren bad om minst 500 nya, korrekta bilder i den här versionen. Det blev 516. Varje bild har granskats i förstoring. Rättningarna gällde framför allt text som avslöjar svaret, figurer som skymdes, motiv som gick att förväxla och detaljer som låg utanför bilden.
+
+### Påfyllning: Vardag & hem 215–242 (411 nya bilder)
+- **Kök hemma (215–221):** kökets större apparater, redskap för matlagning, porslin och bestick, förvaringskärl och burkar, köksmaterial och ytor, att duka ett bord, säkerhet i köket.
+- **Badrum och tvätt (222–228):** toalett och handfat, dusch och badkar, handdukar och badrumstextil, hygienartiklar hemma, tvättstuga och tvättmaskiner, avlopp och vattenkranar, badrumsproblem och reparation.
+- **Städ och underhåll (229–235):** städredskap och rengöringsmedel, dammsuga och torka golv, tvätta kläder, sortera sopor, små reparationer, skador och slitage, veckostädning och rutiner.
+- **Bo och hyra (236–242):** bostadsannonser och visningar, hyresavtal och hyresvärd, avgifter och boendekostnader, bostadsrätt och förening, grannar och störningar, felanmälan och service, flyttdag och adressändring.
+- Nu har alla modulord i *Vardag & hem* 101–242 en bild.
+
+### Påfyllning: Kläder & stil 308–314 (105 nya bilder)
+- Vardagsskor och kängor, finskor och klackar, mössor och hattar, halsdukar och handskar, väskor och ryggsäckar, smycken och klockor, bälten och små tillbehör.
+
+### Detaljer i bilderna
+- Skyltar och etiketter som skulle avslöja svaret har tagits bort, till exempel *Soprum*, *Kemtvätt*, *Lim* och *Garanti*. De ersätts av symboler.
+- Abstrakta ord (*rutin*, *ansvar*, *ombildning*, *förlänga* …) och symbolbilder visas inte i bildövningarna.
+- Bilder som ligger nära varandra (*spik/spika*, *hyra/månadsavgift*, *lås/låssmed* …) har samma `group`, så att de inte blir svarsalternativ till varandra.
+- I hela appen har nu 2 496 av 6 182 modulord en bild.
+
+### Teknik
+- Nya motivgrupper som laddas när de behövs: `khem.` (homeKitchen.ts), `bad.` (bathroom.ts), `städ.` (cleaning.ts), `bost.` (housingAdmin.ts) och `acc.` (accessories.ts).
+
+Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v20`.
+
 ## 0.17.0 – 2026-11-07
 
 Produktägaren var nöjd med 0.16. I den här versionen fortsätter påfyllningen av bilder i de tidigare modulerna.
