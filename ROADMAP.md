@@ -52,7 +52,12 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - Alla 631 modulord i *Kroppen & sinnena* har en bild: 374 kodillustrationer (kroppsdelar, organ, diagram, hjälpmedel, symboler) och 257 animationer (243 nya scener skrivna som data i `scripts/scenes`).
 - Kvar: stickprov av produktägaren, flytta scenerna och kroppsdelsmallarna till Animation_tool- när en session har pushbehörighet där, dela `render`-delen per överämne.
 
-## v0.14 och framåt – två spår per release
+## v0.14 – Relationer & familj börjar, Vardag & hem fylls på (klar)
+- 10 nya moduler med bilder från början: hela *Familjemedlemmar* (7) och de tre första i *Vänskap*.
+- Påfyllning av bilder: *Vardag & hem* ordning 101–107 (frukt, spannmål, baljväxter, nötter, kryddor, torrvaror, kött).
+- Illustrationerna laddas per område.
+
+## v0.15 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).

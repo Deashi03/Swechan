@@ -1,8 +1,29 @@
 # Projektstatus – överlämning
 
-**Version:** 0.13.1 · **Senast uppdaterad:** 2026-11-06 · **Gren:** `main` (publiceras via GitHub Pages; 0.13.1 och 0.14 utvecklas i grenen `claude/swechan-0.14`)
+**Version:** 0.14.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.13.1 och 0.14 utvecklas i grenen `claude/swechan-0.14`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.14 – släppt 2026-11-07 (Relationer & familj börjar + Vardag & hem fylls på)
+
+- **Spår 1, nytt område:**
+  - *Relationer & familj*: 1001–1007 (hela *Familjemedlemmar*) och 1011–1013 (*Vänskap*), med bilder för alla ord.
+  - Motiven finns i `family.ts`, `celebrations.ts` och `friends.ts`, och scenerna i `scripts/scenes/familj.scenes.ts`.
+- **Spår 2, påfyllning:**
+  - *Vardag & hem* 101–107 (maten) har nu bilder för alla modulord. Motiven finns i `food.ts`.
+  - I hela appen har 1 086 av 5 935 modulord en bild.
+- **Nästa steg (0.15):**
+  - *Vänskap* 1014–1017: Hjälpa och stötta, Förtroende och lojalitet, Missförstånd mellan vänner, Vänskap över avstånd.
+  - *Kärlek & partnerskap* 1021–1027.
+  - Påfyllning av *Vardag & hem* 108–… (fågel och ägg, fisk och skaldjur …).
+- **Arbetsflöde per modul:**
+  1. Kör skriptet i scratchpad gen5 (`rNNNN_*.py`) och `check.sh`.
+  2. Kör `npm run visuals:plan`.
+  3. Rita motiven och registrera dem med vis.py (illustration, `by: manual`).
+  4. Lägg animationer i `scripts/scenes/*.scenes.ts` och kör `npm run scenes:build -- --out dist/scenes && npm run visuals:import dist/scenes`.
+- **Kom ihåg:**
+  - Ansiktsord görs med ansiktsriggen (CONTENT_GUIDELINES *Ansiktsuttryck*).
+  - Ett nytt område får ett nytt motivprefix och en ny rad i `GROUPS` i `render.ts`.
 
 ## 0.13.1 – släppt 2026-11-06 (ansiktsuttryck med egen rigg)
 

@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.14.0 – 2026-11-07
+
+Två spår i samma release, enligt planen: ett nytt överämne med bilder från början, och påfyllning av bilder i ett gammalt överämne.
+
+### Nytt: Relationer & familj (10 moduler, 174 ord)
+- **Familjemedlemmar (1001–1007):**
+  - Föräldrar och barn
+  - Syskon och kusiner
+  - Mor- och farföräldrar
+  - Släktrelationer
+  - Svärfamilj och ingifta
+  - Familjetraditioner
+  - Beskriva ett släktträd
+- **Vänskap (1011–1013):**
+  - Bekanta och vänner
+  - Lära känna någon
+  - Umgås och träffas
+- Alla ord har bilder: familjebilder där den person ordet gäller är markerad (*mellanbarn*, *svärmor*, *halvsyskon* …), släktträdsdiagram (*omgift*, *släktgren*, *efterkommande*), namnskyltar (*förnamn*, *mellannamn*, *efternamn*), traditioner (*dopp i grytan*, *adventsljusstake*) och vänskap. Animationer finns för *växa upp*, *flytta hemifrån*, *bråka*, *reta* och *samlas*.
+- Svåra ord (B2 och uppåt) har förklaringar på svenska och japanska. Alla texter är AI-utkast.
+
+### Påfyllning: Vardag & hem (112 nya bilder)
+- Ordning 101–107: frukt och bär, spannmål och gryn, bönor och linser, nötter och frön, kryddor och örter, torrvaror och konserver, styckningsdelar och köttsorter. Där finns nu bilder för alla modulord.
+
+### Teknik
+- **Illustrationer laddas per område (ADR 39):** `render` gick från 61 till 6,5 kB gzip. Kroppen, familj, fest, vänskap och mat är egna lata delar.
+- **Snabbare test:** testet av rekommendationsordningen markerar moduler som klara direkt (40 s → 0,4 s). Det slog i tidsgränsen på CI.
+
+Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v16`.
+
 ## 0.13.1 – 2026-11-06
 
 **Produktägarens stickprov av 0.13:** överlag godkänt, men ansiktsuttrycken var otydliga. I *höja på ögonbrynen* var ögonbrynen lika mörka som håret, så höjningen syntes inte. I *rynka på näsan* syntes ingen näsa.
