@@ -71,7 +71,7 @@ export function ReviewHub() {
               return (
                 <li key={`${d.senseId}|${d.dimension}`}>
                   <button className="list-item" onClick={() => dict.open({ senseId: d.senseId })}>
-                    <span className="grow"><strong lang="sv">{ref.entry.lemma}</strong> <Ja text={ref.sense.ja} className="small muted" /></span>
+                    <span className="grow"><strong lang="sv">{ref.entry.lemma}</strong> <Ja text={ref.sense.ja} className="small ja-gloss" /></span>
                     <span className="badge">{DIM_SV[d.dimension]}</span>
                     <span className="xsmall muted">{d.failures}/{d.total} fel</span>
                   </button>
@@ -94,7 +94,7 @@ export function ReviewHub() {
             return (
               <div key={`${p.a}${p.b}`} className="card stack-sm small">
                 <strong>{a.entry.lemma} ↔ {b.entry.lemma}</strong>
-                {[a, b].map((r) => <div key={r.sense.id}><strong lang="sv">{r.entry.lemma}</strong>: <Ja text={r.sense.ja} /> — {r.sense.defSv}</div>)}
+                {[a, b].map((r) => <div key={r.sense.id}><strong lang="sv">{r.entry.lemma}</strong>: <Ja text={r.sense.ja} className="ja-gloss" /> — {r.sense.defSv}</div>)}
               </div>
             );
           })}

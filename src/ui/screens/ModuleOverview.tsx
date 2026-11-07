@@ -101,7 +101,7 @@ export function ModuleOverview({ id }: { id: string }) {
             <span className={`step-num ${status === 'completed' ? 'done' : ''}`}>{status === 'completed' ? <Icon name="check" size={18} /> : i + 1}</span>
             <div className="grow">
               <strong>{s.sv}</strong>
-              <Ja text={s.ja} className="xsmall muted" as="div" />
+              <Ja text={s.ja} className="small ja-gloss" as="div" />
               <div className="xsmall muted">{s.desc}</div>
             </div>
             {status === 'completed' && s.id !== 'learn' ? (
@@ -126,7 +126,7 @@ export function ModuleOverview({ id }: { id: string }) {
             return (
               <li key={w.senseId}>
                 <button className="list-item" onClick={() => dict.open({ senseId: w.senseId })}>
-                  <span className="grow"><strong lang="sv">{ref.entry.lemma}</strong> <Ja text={ref.sense.ja} className="small muted" /></span>
+                  <span className="grow"><strong lang="sv">{ref.entry.lemma}</strong> <Ja text={ref.sense.ja} className="small ja-gloss" /></span>
                   <span className="badge">{w.active ? 'aktivt' : 'förstå'}</span>
                 </button>
               </li>

@@ -173,7 +173,7 @@ function Questions({ moduleId, questions, initial, onDone }: { moduleId: string;
         <div className={`feedback ${picked === correctIndex ? 'ok' : 'fail'} stack-sm`} aria-live="polite">
           <strong>{picked === correctIndex ? 'Rätt!' : 'Inte riktigt.'}</strong>
           <div className="small"><SvText text={q.explanationSv} /></div>
-          {q.explanationJa && <Ja text={q.explanationJa} as="div" className="small muted" />}
+          {q.explanationJa && <Ja text={q.explanationJa} as="div" className="ja-word" />}
         </div>
       )}
       {answered && <button className="btn block" onClick={next} autoFocus>Fortsätt</button>}

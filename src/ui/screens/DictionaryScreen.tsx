@@ -37,7 +37,7 @@ export function DictionaryScreen({ entryId, tab }: { entryId?: string; tab?: 'sa
               return (
                 <li key={w.senseId}>
                   <a className="list-item" href={href({ name: 'dictionary', entryId: ref.entry.id })}>
-                    <span className="grow"><strong lang="sv">{ref.entry.lemma}</strong> <Ja text={ref.sense.ja} className="small muted" /></span>
+                    <span className="grow"><strong lang="sv">{ref.entry.lemma}</strong> <Ja text={ref.sense.ja} className="small ja-gloss" /></span>
                     {w.queuedForLearning && !w.learnedAt && <span className="badge">i kön</span>}
                     {w.learnedAt && <span className="badge">i repetition</span>}
                   </a>
@@ -54,7 +54,7 @@ export function DictionaryScreen({ entryId, tab }: { entryId?: string; tab?: 'sa
               <div className="section-title">Alla ord ({repo.entries.length})</div>
               <ul className="list card" style={{ padding: '0 16px' }}>
                 {[...repo.entries].sort((a, b) => a.lemma.localeCompare(b.lemma, 'sv')).map((e) => (
-                  <li key={e.id}><a className="list-item" href={href({ name: 'dictionary', entryId: e.id })}><span className="grow"><strong lang="sv">{e.lemma}</strong> <Ja text={e.senses[0]!.ja} className="small muted" /></span></a></li>
+                  <li key={e.id}><a className="list-item" href={href({ name: 'dictionary', entryId: e.id })}><span className="grow"><strong lang="sv">{e.lemma}</strong> <Ja text={e.senses[0]!.ja} className="small ja-gloss" /></span></a></li>
                 ))}
               </ul>
             </section>

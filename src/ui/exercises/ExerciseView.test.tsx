@@ -119,3 +119,21 @@ describe('WordIntro – explanations for hard words (0.8)', () => {
     expect(screen.queryByTestId('word-explanation')).toBeNull();
   });
 });
+
+describe('Japanese about the word is large and dark (0.15)', () => {
+  it('word introduction: definition, example and explanation use ja-word, never the muted style', () => {
+    const { container } = render(<DictionarySheetProvider><WordIntro senseId="s.rynka-pannan.1" compact={false} onNext={() => undefined} /></DictionarySheetProvider>);
+    const jaBlocks = [...container.querySelectorAll('[lang="ja"]')].filter((el) => el.closest('.card'));
+    const word = jaBlocks.filter((el) => el.classList.contains('ja-word'));
+    expect(word.length).toBeGreaterThanOrEqual(2); // definition + example
+    for (const el of word) expect(el.classList.contains('muted')).toBe(false);
+  });
+  it('picture exercise feedback shows the Japanese gloss with ja-word', () => {
+    const pool = repo.getModule('m.ansiktsuttryck-och-miner')!.words.map((w) => w.senseId);
+    const ex = genImageChoice(repo.getSense('s.rynka-pannan.1')!, { repo, poolSenseIds: pool, seed: 1 })!;
+    render(<DictionarySheetProvider><ExerciseView exercise={ex} onDone={() => undefined} /></DictionarySheetProvider>);
+    const right = ex.options[ex.correctIndex]!;
+    fireEvent.click(screen.getByText(right.label));
+    if (ex.explanation?.lang === 'ja') expect(document.querySelector('.ja-word')).not.toBeNull();
+  });
+});

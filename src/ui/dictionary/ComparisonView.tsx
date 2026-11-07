@@ -12,7 +12,7 @@ export function ComparisonView({ cmp, onOpenSense, highlight }: { cmp: Compariso
       <h3>{cmp.titleSv}</h3>
       <Ja text={cmp.titleJa} className="small muted" as="div" />
       <p className="small">{cmp.summarySv}</p>
-      <Ja text={cmp.summaryJa} as="p" className="small" />
+      <Ja text={cmp.summaryJa} as="p" className="ja-word" />
       <ul className="list">
         {cmp.items.map((it) => {
           const ref = repo.getSense(it.senseId)!;
@@ -29,7 +29,7 @@ export function ComparisonView({ cmp, onOpenSense, highlight }: { cmp: Compariso
                   </span>
                 </div>
                 <div className="small">{it.noteSv}</div>
-                <Ja text={it.noteJa} as="div" className="small muted" />
+                <Ja text={it.noteJa} as="div" className="ja-word" />
                 <div className="small faint">”{it.exampleSv}”</div>
               </div>
             </li>

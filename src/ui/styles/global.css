@@ -29,6 +29,12 @@ p { margin: 0 0 var(--sp-3); }
 ruby { ruby-position: over; }
 rt { font-size: 0.55em; color: var(--c-text-muted); font-weight: var(--fw-normal); user-select: none; }
 html.no-furigana rt { display: none; }
+/* 0.15: Japanese tied to the word being learned (translation, definition, example, explanation, feedback).
+   Instructions and UI chrome keep the small muted style; these are full-size, dark and with readable furigana. */
+.ja-word { display: block; font-size: var(--fs-md); color: var(--c-ja); font-weight: var(--fw-normal); line-height: 2.05; }
+.ja-gloss { color: var(--c-ja); font-weight: var(--fw-medium); }
+.ja-word rt, .ja-gloss rt, .prompt-ja rt { font-size: 0.6em; color: var(--c-ja-ruby); font-weight: var(--fw-medium); }
+.ja-example { margin-top: 2px; }
 
 /* Layout */
 .app { min-height: 100dvh; display: flex; flex-direction: column; }

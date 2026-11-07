@@ -21,7 +21,8 @@ export function Ja({ text, className, as: Tag = 'span' }: { text: string; classN
   );
 }
 
-/** Swedish or Japanese text depending on lang. */
-export function LangText({ text, lang, className }: { text: string; lang: 'sv' | 'ja'; className?: string }) {
-  return lang === 'ja' ? <Ja text={text} className={className} /> : <span lang="sv" className={className}>{text}</span>;
+/** Swedish or Japanese text depending on lang. `jaClassName` replaces `className` when the text is Japanese
+ * (0.15: Japanese about the word being learned uses `ja-word` / `ja-gloss` – large, dark, readable furigana). */
+export function LangText({ text, lang, className, jaClassName }: { text: string; lang: 'sv' | 'ja'; className?: string; jaClassName?: string }) {
+  return lang === 'ja' ? <Ja text={text} className={jaClassName ?? className} /> : <span lang="sv" className={className}>{text}</span>;
 }
