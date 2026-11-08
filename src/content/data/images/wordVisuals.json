@@ -44186,7 +44186,12 @@
    "symbol": true,
    "confusableWith": [
     "s.gå-av-cykeln.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "e3f87098"
+   }
   },
   {
    "senseId": "s.cykla-på-trottoaren.1",
@@ -44905,8 +44910,14 @@
    "confusableWith": [
     "s.centralstation.1",
     "s.stationsbyggnad.1",
-    "s.väntsal.1"
-   ]
+    "s.väntsal.1",
+    "s.perrong.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "450bd8f7"
+   }
   },
   {
    "senseId": "s.centralstation.1",
@@ -44917,8 +44928,14 @@
    "symbol": true,
    "confusableWith": [
     "s.järnvägsstation.1",
-    "s.resecentrum.1"
-   ]
+    "s.resecentrum.1",
+    "s.stationsbyggnad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1dcf6ede"
+   }
   },
   {
    "senseId": "s.resecentrum.1",
@@ -44938,8 +44955,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.järnvägsstation.1"
-   ]
+    "s.järnvägsstation.1",
+    "s.centralstation.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "49f6e10b"
+   }
   },
   {
    "senseId": "s.väntsal.1",
@@ -44958,7 +44981,8 @@
    "group": "perrong",
    "quiz": true,
    "confusableWith": [
-    "s.plattform.1"
+    "s.plattform.1",
+    "s.järnvägsstation.1"
    ]
   },
   {
@@ -45008,8 +45032,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.avgående.1"
-   ]
+    "s.avgående.1",
+    "s.tågtrafik.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "c6a0bccd"
+   }
   },
   {
    "senseId": "s.avgående.1",
@@ -45019,8 +45049,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.ankommande.1"
-   ]
+    "s.ankommande.1",
+    "s.tågtrafik.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1384ae85"
+   }
   },
   {
    "senseId": "s.säkerhetslinje.1",
@@ -45036,7 +45072,9 @@
    "group": "tågtrafik",
    "quiz": true,
    "confusableWith": [
-    "s.järnväg.1"
+    "s.järnväg.1",
+    "s.ankommande.1",
+    "s.avgående.1"
    ]
   },
   {
@@ -45055,7 +45093,12 @@
    "motif": "tåg.tur-och-retur",
    "group": "tågbiljett",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7722d2cb"
+   }
   },
   {
    "senseId": "s.platsbiljett.1",
@@ -45178,7 +45221,12 @@
    "motif": "tåg.återbetalningsbar",
    "group": "återbetalningsbar",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "614138eb"
+   }
   },
   {
    "senseId": "s.bagage.1",
@@ -45301,7 +45349,12 @@
    "symbol": true,
    "confusableWith": [
     "s.kvarlämnad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ff39da7c"
+   }
   },
   {
    "senseId": "s.kvarlämnad.1",
@@ -45313,7 +45366,12 @@
    "confusableWith": [
     "s.utan-uppsikt.1",
     "s.av-säkerhetsskäl.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "46dd184c"
+   }
   },
   {
    "senseId": "s.av-säkerhetsskäl.1",
@@ -45324,7 +45382,12 @@
    "symbol": true,
    "confusableWith": [
     "s.kvarlämnad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "55ab8054"
+   }
   },
   {
    "senseId": "s.lokaltåg.1",
@@ -45386,7 +45449,12 @@
    "confusableWith": [
     "s.direkttåg.1",
     "s.anslutning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "14a1c32b"
+   }
   },
   {
    "senseId": "s.anslutning.1",
@@ -45418,8 +45486,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.anslutning.1"
-   ]
+    "s.anslutning.1",
+    "s.nästa-avgång.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "c84366da"
+   }
   },
   {
    "senseId": "s.invänta.1",
@@ -45473,7 +45547,8 @@
    "group": "nästa",
    "quiz": true,
    "confusableWith": [
-    "s.resplan.1"
+    "s.resplan.1",
+    "s.missa-anslutningen.1"
    ]
   },
   {
@@ -45579,7 +45654,12 @@
    "symbol": true,
    "confusableWith": [
     "s.kupé.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7668fe79"
+   }
   },
   {
    "senseId": "s.konduktör.1",
@@ -45671,8 +45751,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.beräknad-ankomst.1"
-   ]
+    "s.beräknad-ankomst.1",
+    "s.i-väntan-på.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "da55203f"
+   }
   },
   {
    "senseId": "s.beräknad-ankomst.1",
@@ -45704,8 +45790,14 @@
    "symbol": true,
    "confusableWith": [
     "s.invänta.1",
-    "s.sitta-fast.1"
-   ]
+    "s.sitta-fast.1",
+    "s.kraftigt-försenad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "464a7717"
+   }
   },
   {
    "senseId": "s.prognos.1",
@@ -45726,7 +45818,12 @@
    "symbol": true,
    "confusableWith": [
     "s.ny-avgångstid.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "fd586a97"
+   }
   },
   {
    "senseId": "s.omboka.1",
@@ -45748,7 +45845,12 @@
    "confusableWith": [
     "s.omboka.1",
     "s.valfri-avgång.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "d3cd8f54"
+   }
   },
   {
    "senseId": "s.valfri-avgång.1",
@@ -45828,7 +45930,12 @@
    "confusableWith": [
     "s.län.1",
     "s.Norrland.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "cf3a03d1"
+   }
   },
   {
    "senseId": "s.län.1",
@@ -45915,6 +46022,1097 @@
    "quiz": true,
    "confusableWith": [
     "s.helgresa.1"
+   ]
+  },
+  {
+   "senseId": "s.flygplats.1",
+   "kind": "illustration",
+   "motif": "res.flygplats",
+   "group": "flygplats",
+   "quiz": true,
+   "confusableWith": [
+    "s.terminal.1"
+   ]
+  },
+  {
+   "senseId": "s.flygplan.1",
+   "kind": "illustration",
+   "motif": "res.flygplan",
+   "group": "flygplan",
+   "quiz": true,
+   "confusableWith": [
+    "s.flyg.1",
+    "s.flygbolag.1"
+   ]
+  },
+  {
+   "senseId": "s.flyg.1",
+   "kind": "illustration",
+   "motif": "res.flyg",
+   "group": "flygplan",
+   "quiz": true,
+   "confusableWith": [
+    "s.flygplan.1",
+    "s.flygtid.1"
+   ]
+  },
+  {
+   "senseId": "s.flygbolag.1",
+   "kind": "illustration",
+   "motif": "res.flygbolag",
+   "group": "flygplats",
+   "quiz": true,
+   "confusableWith": [
+    "s.flygplan.1"
+   ]
+  },
+  {
+   "senseId": "s.terminal.1",
+   "kind": "illustration",
+   "motif": "res.terminal",
+   "group": "flygplats",
+   "quiz": true,
+   "confusableWith": [
+    "s.flygplats.1",
+    "s.gate.1"
+   ]
+  },
+  {
+   "senseId": "s.gate.1",
+   "kind": "illustration",
+   "motif": "res.gate",
+   "group": "gate",
+   "quiz": true,
+   "confusableWith": [
+    "s.terminal.1"
+   ]
+  },
+  {
+   "senseId": "s.avgångshall.1",
+   "kind": "illustration",
+   "motif": "res.avgångshall",
+   "group": "avgångshall",
+   "quiz": true,
+   "confusableWith": [
+    "s.ankomsthall.1"
+   ]
+  },
+  {
+   "senseId": "s.ankomsthall.1",
+   "kind": "illustration",
+   "motif": "res.ankomsthall",
+   "group": "avgångshall",
+   "quiz": true,
+   "confusableWith": [
+    "s.avgångshall.1"
+   ]
+  },
+  {
+   "senseId": "s.flygbuss.1",
+   "kind": "illustration",
+   "motif": "res.flygbuss",
+   "group": "flygbuss",
+   "quiz": true,
+   "confusableWith": [
+    "s.flygtåg.1"
+   ]
+  },
+  {
+   "senseId": "s.flygtåg.1",
+   "kind": "illustration",
+   "motif": "res.flygtåg",
+   "group": "flygbuss",
+   "quiz": true,
+   "confusableWith": [
+    "s.flygbuss.1"
+   ]
+  },
+  {
+   "senseId": "s.taxfree.1",
+   "kind": "illustration",
+   "motif": "res.taxfree",
+   "group": "taxfree",
+   "quiz": true
+  },
+  {
+   "senseId": "s.landa.1",
+   "kind": "illustration",
+   "motif": "res.landa",
+   "group": "landa",
+   "quiz": true,
+   "confusableWith": [
+    "s.landning.1"
+   ]
+  },
+  {
+   "senseId": "s.mellanlanda.1",
+   "kind": "illustration",
+   "motif": "res.mellanlanda",
+   "group": "mellanlanda",
+   "quiz": true,
+   "confusableWith": [
+    "s.direktflyg.1"
+   ]
+  },
+  {
+   "senseId": "s.direktflyg.1",
+   "kind": "illustration",
+   "motif": "res.direktflyg",
+   "group": "mellanlanda",
+   "quiz": true,
+   "confusableWith": [
+    "s.mellanlanda.1"
+   ]
+  },
+  {
+   "senseId": "s.flygtid.1",
+   "kind": "illustration",
+   "motif": "res.flygtid",
+   "group": "mellanlanda",
+   "quiz": true,
+   "confusableWith": [
+    "s.flyg.1"
+   ]
+  },
+  {
+   "senseId": "s.passagerare.1",
+   "kind": "illustration",
+   "motif": "res.passagerare",
+   "group": "passagerare",
+   "quiz": true
+  },
+  {
+   "senseId": "s.incheckning.1",
+   "kind": "illustration",
+   "motif": "res.incheckning",
+   "group": "incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.checka-in.1",
+    "s.incheckningsdisk.1"
+   ]
+  },
+  {
+   "senseId": "s.checka-in.1",
+   "kind": "illustration",
+   "motif": "res.checka-in",
+   "group": "incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.incheckning.1",
+    "s.självincheckning.1"
+   ]
+  },
+  {
+   "senseId": "s.självincheckning.1",
+   "kind": "illustration",
+   "motif": "res.självincheckning",
+   "group": "incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.checka-in.1"
+   ]
+  },
+  {
+   "senseId": "s.incheckningsdisk.1",
+   "kind": "illustration",
+   "motif": "res.incheckningsdisk",
+   "group": "incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.incheckning.1"
+   ]
+  },
+  {
+   "senseId": "s.bagageinlämning.1",
+   "kind": "illustration",
+   "motif": "res.bagageinlämning",
+   "group": "incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.incheckat-bagage.1",
+    "s.bagagekvitto.1"
+   ]
+  },
+  {
+   "senseId": "s.boardingkort.1",
+   "kind": "illustration",
+   "motif": "res.boardingkort",
+   "group": "boardingkort",
+   "quiz": true,
+   "confusableWith": [
+    "s.boarding.1",
+    "s.skanna.1"
+   ]
+  },
+  {
+   "senseId": "s.boarding.1",
+   "kind": "illustration",
+   "motif": "res.boarding",
+   "group": "boardingkort",
+   "quiz": true,
+   "confusableWith": [
+    "s.boardingkort.1",
+    "s.sista-utrop.1"
+   ]
+  },
+  {
+   "senseId": "s.säkerhetskontroll.1",
+   "kind": "illustration",
+   "motif": "res.säkerhetskontroll",
+   "group": "säkerhetskontroll",
+   "quiz": true,
+   "confusableWith": [
+    "s.säkerhetspersonal.1",
+    "s.tömma-fickorna.1"
+   ]
+  },
+  {
+   "senseId": "s.säkerhetspersonal.1",
+   "kind": "illustration",
+   "motif": "res.säkerhetspersonal",
+   "group": "säkerhetskontroll",
+   "quiz": true,
+   "confusableWith": [
+    "s.säkerhetskontroll.1"
+   ]
+  },
+  {
+   "senseId": "s.tömma-fickorna.1",
+   "kind": "illustration",
+   "motif": "res.tömma-fickorna",
+   "group": "säkerhetskontroll",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.säkerhetskontroll.1"
+   ]
+  },
+  {
+   "senseId": "s.skanna.1",
+   "kind": "illustration",
+   "motif": "res.skanna",
+   "group": "boardingkort",
+   "quiz": true,
+   "confusableWith": [
+    "s.boardingkort.1"
+   ]
+  },
+  {
+   "senseId": "s.larma.1",
+   "kind": "illustration",
+   "motif": "res.larma",
+   "group": "säkerhetskontroll",
+   "quiz": true,
+   "confusableWith": [
+    "s.kroppsvisitera.1"
+   ]
+  },
+  {
+   "senseId": "s.kroppsvisitera.1",
+   "kind": "illustration",
+   "motif": "res.kroppsvisitera",
+   "group": "säkerhetskontroll",
+   "quiz": true,
+   "confusableWith": [
+    "s.larma.1"
+   ]
+  },
+  {
+   "senseId": "s.förbjudna-föremål.1",
+   "kind": "illustration",
+   "motif": "res.förbjudna-föremål",
+   "group": "säkerhetskontroll",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sista-utrop.1",
+   "kind": "illustration",
+   "motif": "res.sista-utrop",
+   "group": "sista",
+   "quiz": true,
+   "confusableWith": [
+    "s.boarding.1"
+   ]
+  },
+  {
+   "senseId": "s.pass.1",
+   "kind": "illustration",
+   "motif": "res.pass",
+   "group": "pass",
+   "quiz": true,
+   "confusableWith": [
+    "s.resehandling.1",
+    "s.passfoto.1",
+    "s.visum.1"
+   ]
+  },
+  {
+   "senseId": "s.passfoto.1",
+   "kind": "illustration",
+   "motif": "res.passfoto",
+   "group": "pass",
+   "quiz": true,
+   "confusableWith": [
+    "s.pass.1"
+   ]
+  },
+  {
+   "senseId": "s.visum.1",
+   "kind": "illustration",
+   "motif": "res.visum",
+   "group": "pass",
+   "quiz": true,
+   "confusableWith": [
+    "s.pass.1",
+    "s.ambassad.1"
+   ]
+  },
+  {
+   "senseId": "s.passkontroll.1",
+   "kind": "illustration",
+   "motif": "res.passkontroll",
+   "group": "passkontroll",
+   "quiz": true,
+   "confusableWith": [
+    "s.gränskontroll.1",
+    "s.förtulla.1"
+   ]
+  },
+  {
+   "senseId": "s.gräns.1",
+   "kind": "illustration",
+   "motif": "res.gräns",
+   "group": "passkontroll",
+   "quiz": true,
+   "confusableWith": [
+    "s.gränskontroll.1",
+    "s.Schengenområdet.1"
+   ]
+  },
+  {
+   "senseId": "s.gränskontroll.1",
+   "kind": "illustration",
+   "motif": "res.gränskontroll",
+   "group": "passkontroll",
+   "quiz": true,
+   "confusableWith": [
+    "s.passkontroll.1",
+    "s.gräns.1"
+   ]
+  },
+  {
+   "senseId": "s.Schengenområdet.1",
+   "kind": "illustration",
+   "motif": "res.Schengenområdet",
+   "group": "passkontroll",
+   "quiz": true,
+   "confusableWith": [
+    "s.gräns.1"
+   ]
+  },
+  {
+   "senseId": "s.medborgare.1",
+   "kind": "illustration",
+   "motif": "res.medborgare",
+   "group": "medborgare",
+   "quiz": true,
+   "confusableWith": [
+    "s.nationalitet.1"
+   ]
+  },
+  {
+   "senseId": "s.nationalitet.1",
+   "kind": "illustration",
+   "motif": "res.nationalitet",
+   "group": "medborgare",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.medborgare.1",
+    "s.medborgarskap.1"
+   ]
+  },
+  {
+   "senseId": "s.medborgarskap.1",
+   "kind": "illustration",
+   "motif": "res.medborgarskap",
+   "group": "medborgare",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.nationalitet.1",
+    "s.uppehållstillstånd.1"
+   ]
+  },
+  {
+   "senseId": "s.uppehållstillstånd.1",
+   "kind": "illustration",
+   "motif": "res.uppehållstillstånd",
+   "group": "medborgare",
+   "quiz": true,
+   "confusableWith": [
+    "s.medborgarskap.1"
+   ]
+  },
+  {
+   "senseId": "s.ambassad.1",
+   "kind": "illustration",
+   "motif": "res.ambassad",
+   "group": "ambassad",
+   "quiz": true,
+   "confusableWith": [
+    "s.visum.1"
+   ]
+  },
+  {
+   "senseId": "s.resehandling.1",
+   "kind": "illustration",
+   "motif": "res.resehandling",
+   "group": "pass",
+   "quiz": true,
+   "confusableWith": [
+    "s.pass.1"
+   ]
+  },
+  {
+   "senseId": "s.reseförsäkring.1",
+   "kind": "illustration",
+   "motif": "res.reseförsäkring",
+   "group": "reseförsäkring",
+   "quiz": true,
+   "confusableWith": [
+    "s.skadeanmälan.1"
+   ]
+  },
+  {
+   "senseId": "s.förtulla.1",
+   "kind": "illustration",
+   "motif": "res.förtulla",
+   "group": "förtulla",
+   "quiz": true,
+   "confusableWith": [
+    "s.passkontroll.1"
+   ]
+  },
+  {
+   "senseId": "s.handbagage.1",
+   "kind": "illustration",
+   "motif": "res.handbagage",
+   "group": "handbagage",
+   "quiz": true,
+   "confusableWith": [
+    "s.kabinväska.1",
+    "s.incheckat-bagage.1",
+    "s.resa-lätt.1"
+   ]
+  },
+  {
+   "senseId": "s.incheckat-bagage.1",
+   "kind": "illustration",
+   "motif": "res.incheckat-bagage",
+   "group": "handbagage",
+   "quiz": true,
+   "confusableWith": [
+    "s.bagageinlämning.1",
+    "s.handbagage.1",
+    "s.viktgräns.1"
+   ]
+  },
+  {
+   "senseId": "s.kabin.1",
+   "kind": "illustration",
+   "motif": "res.kabin",
+   "group": "kabin",
+   "quiz": true,
+   "confusableWith": [
+    "s.mittgång.1"
+   ]
+  },
+  {
+   "senseId": "s.kabinväska.1",
+   "kind": "illustration",
+   "motif": "res.kabinväska",
+   "group": "handbagage",
+   "quiz": true,
+   "confusableWith": [
+    "s.handbagage.1"
+   ]
+  },
+  {
+   "senseId": "s.viktgräns.1",
+   "kind": "illustration",
+   "motif": "res.viktgräns",
+   "group": "viktgräns",
+   "quiz": true,
+   "confusableWith": [
+    "s.incheckat-bagage.1"
+   ]
+  },
+  {
+   "senseId": "s.vätskepåse.1",
+   "kind": "illustration",
+   "motif": "res.vätskepåse",
+   "group": "viktgräns",
+   "quiz": true
+  },
+  {
+   "senseId": "s.powerbank.1",
+   "kind": "illustration",
+   "motif": "res.powerbank",
+   "group": "viktgräns",
+   "quiz": true
+  },
+  {
+   "senseId": "s.packlista.1",
+   "kind": "illustration",
+   "motif": "res.packlista",
+   "group": "packlista",
+   "quiz": true
+  },
+  {
+   "senseId": "s.resa-lätt.1",
+   "kind": "illustration",
+   "motif": "res.resa-lätt",
+   "group": "resa",
+   "quiz": true,
+   "confusableWith": [
+    "s.handbagage.1"
+   ]
+  },
+  {
+   "senseId": "s.bagagekvitto.1",
+   "kind": "illustration",
+   "motif": "res.bagagekvitto",
+   "group": "bagagekvitto",
+   "quiz": true,
+   "confusableWith": [
+    "s.bagageinlämning.1"
+   ]
+  },
+  {
+   "senseId": "s.bagageband.1",
+   "kind": "illustration",
+   "motif": "res.bagageband",
+   "group": "bagagekvitto",
+   "quiz": true,
+   "confusableWith": [
+    "s.bagageutlämning.1"
+   ]
+  },
+  {
+   "senseId": "s.bagageutlämning.1",
+   "kind": "illustration",
+   "motif": "res.bagageutlämning",
+   "group": "bagagekvitto",
+   "quiz": true,
+   "confusableWith": [
+    "s.bagageband.1"
+   ]
+  },
+  {
+   "senseId": "s.bagagevagn.1",
+   "kind": "illustration",
+   "motif": "res.bagagevagn",
+   "group": "bagagekvitto",
+   "quiz": true
+  },
+  {
+   "senseId": "s.försvunnet-bagage.1",
+   "kind": "illustration",
+   "motif": "res.försvunnet-bagage",
+   "group": "bagagekvitto",
+   "quiz": true,
+   "confusableWith": [
+    "s.skadeanmälan.1"
+   ]
+  },
+  {
+   "senseId": "s.skadeanmälan.1",
+   "kind": "illustration",
+   "motif": "res.skadeanmälan",
+   "group": "skadeanmälan",
+   "quiz": true,
+   "confusableWith": [
+    "s.reseförsäkring.1",
+    "s.försvunnet-bagage.1"
+   ]
+  },
+  {
+   "senseId": "s.kabinpersonal.1",
+   "kind": "illustration",
+   "motif": "res.kabinpersonal",
+   "group": "kabinpersonal",
+   "quiz": true,
+   "confusableWith": [
+    "s.pilot.1"
+   ]
+  },
+  {
+   "senseId": "s.pilot.1",
+   "kind": "illustration",
+   "motif": "res.pilot",
+   "group": "kabinpersonal",
+   "quiz": true,
+   "confusableWith": [
+    "s.kabinpersonal.1",
+    "s.kapten.1"
+   ]
+  },
+  {
+   "senseId": "s.kapten.1",
+   "kind": "illustration",
+   "motif": "res.kapten",
+   "group": "kabinpersonal",
+   "quiz": true,
+   "confusableWith": [
+    "s.pilot.1"
+   ]
+  },
+  {
+   "senseId": "s.mittgång.1",
+   "kind": "illustration",
+   "motif": "res.mittgång",
+   "group": "mittgång",
+   "quiz": true,
+   "confusableWith": [
+    "s.kabin.1"
+   ]
+  },
+  {
+   "senseId": "s.nödutgång.1",
+   "kind": "illustration",
+   "motif": "res.nödutgång",
+   "group": "mittgång",
+   "quiz": true,
+   "confusableWith": [
+    "s.flytväst.1"
+   ]
+  },
+  {
+   "senseId": "s.flytväst.1",
+   "kind": "illustration",
+   "motif": "res.flytväst",
+   "group": "flytväst",
+   "quiz": true,
+   "confusableWith": [
+    "s.nödutgång.1",
+    "s.syrgasmask.1"
+   ]
+  },
+  {
+   "senseId": "s.syrgasmask.1",
+   "kind": "illustration",
+   "motif": "res.syrgasmask",
+   "group": "flytväst",
+   "quiz": true,
+   "confusableWith": [
+    "s.flytväst.1"
+   ]
+  },
+  {
+   "senseId": "s.turbulens.1",
+   "kind": "illustration",
+   "motif": "res.turbulens",
+   "group": "turbulens",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.landning.1"
+   ]
+  },
+  {
+   "senseId": "s.landning.1",
+   "kind": "illustration",
+   "motif": "res.landning",
+   "group": "landa",
+   "quiz": true,
+   "confusableWith": [
+    "s.landa.1",
+    "s.turbulens.1"
+   ]
+  },
+  {
+   "senseId": "s.fällbord.1",
+   "kind": "illustration",
+   "motif": "res.fällbord",
+   "group": "fällbord",
+   "quiz": true,
+   "confusableWith": [
+    "s.fälla-tillbaka.1"
+   ]
+  },
+  {
+   "senseId": "s.fälla-tillbaka.1",
+   "kind": "illustration",
+   "motif": "res.fälla-tillbaka",
+   "group": "fällbord",
+   "quiz": true,
+   "confusableWith": [
+    "s.fällbord.1"
+   ]
+  },
+  {
+   "senseId": "s.nackkudde.1",
+   "kind": "illustration",
+   "motif": "res.nackkudde",
+   "group": "fällbord",
+   "quiz": true
+  },
+  {
+   "senseId": "s.flygläge.1",
+   "kind": "illustration",
+   "motif": "res.flygläge",
+   "group": "flygläge",
+   "quiz": true,
+   "confusableWith": [
+    "s.tidsskillnad.1"
+   ]
+  },
+  {
+   "senseId": "s.tidsskillnad.1",
+   "kind": "illustration",
+   "motif": "res.tidsskillnad",
+   "group": "tidsskillnad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.flygläge.1",
+    "s.jetlag.1"
+   ]
+  },
+  {
+   "senseId": "s.jetlag.1",
+   "kind": "illustration",
+   "motif": "res.jetlag",
+   "group": "tidsskillnad",
+   "quiz": true,
+   "confusableWith": [
+    "s.tidsskillnad.1"
+   ]
+  },
+  {
+   "senseId": "s.hotellrum.1",
+   "kind": "illustration",
+   "motif": "res.hotellrum",
+   "group": "hotellrum",
+   "quiz": true,
+   "confusableWith": [
+    "s.enkelrum.1",
+    "s.svit.1",
+    "s.stör-ej.1",
+    "s.havsutsikt.1",
+    "s.vandrarhem.1"
+   ]
+  },
+  {
+   "senseId": "s.reception.1",
+   "kind": "illustration",
+   "motif": "res.reception",
+   "group": "reception",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.receptionist.1",
+    "s.lediga-rum.1",
+    "s.hotellgäst.1"
+   ]
+  },
+  {
+   "senseId": "s.receptionist.1",
+   "kind": "illustration",
+   "motif": "res.receptionist",
+   "group": "reception",
+   "quiz": true,
+   "confusableWith": [
+    "s.reception.1"
+   ]
+  },
+  {
+   "senseId": "s.lediga-rum.1",
+   "kind": "illustration",
+   "motif": "res.lediga-rum",
+   "group": "reception",
+   "quiz": true,
+   "confusableWith": [
+    "s.reception.1"
+   ]
+  },
+  {
+   "senseId": "s.enkelrum.1",
+   "kind": "illustration",
+   "motif": "res.enkelrum",
+   "group": "hotellrum",
+   "quiz": true,
+   "confusableWith": [
+    "s.hotellrum.1",
+    "s.dubbelrum.1"
+   ]
+  },
+  {
+   "senseId": "s.dubbelrum.1",
+   "kind": "illustration",
+   "motif": "res.dubbelrum",
+   "group": "hotellrum",
+   "quiz": true,
+   "confusableWith": [
+    "s.enkelrum.1",
+    "s.tvåbäddsrum.1"
+   ]
+  },
+  {
+   "senseId": "s.tvåbäddsrum.1",
+   "kind": "illustration",
+   "motif": "res.tvåbäddsrum",
+   "group": "hotellrum",
+   "quiz": true,
+   "confusableWith": [
+    "s.dubbelrum.1",
+    "s.extrasäng.1"
+   ]
+  },
+  {
+   "senseId": "s.svit.1",
+   "kind": "illustration",
+   "motif": "res.svit",
+   "group": "hotellrum",
+   "quiz": true,
+   "confusableWith": [
+    "s.hotellrum.1"
+   ]
+  },
+  {
+   "senseId": "s.nyckelkort.1",
+   "kind": "illustration",
+   "motif": "res.nyckelkort",
+   "group": "nyckelkort",
+   "quiz": true,
+   "confusableWith": [
+    "s.lämna-nyckeln.1"
+   ]
+  },
+  {
+   "senseId": "s.extrasäng.1",
+   "kind": "illustration",
+   "motif": "res.extrasäng",
+   "group": "hotellrum",
+   "quiz": true,
+   "confusableWith": [
+    "s.tvåbäddsrum.1"
+   ]
+  },
+  {
+   "senseId": "s.minibar.1",
+   "kind": "illustration",
+   "motif": "res.minibar",
+   "group": "minibar",
+   "quiz": true,
+   "confusableWith": [
+    "s.rumsservice.1"
+   ]
+  },
+  {
+   "senseId": "s.rumsservice.1",
+   "kind": "illustration",
+   "motif": "res.rumsservice",
+   "group": "rumsservice",
+   "quiz": true,
+   "confusableWith": [
+    "s.minibar.1"
+   ]
+  },
+  {
+   "senseId": "s.stör-ej.1",
+   "kind": "illustration",
+   "motif": "res.stör-ej",
+   "group": "stör",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hotellrum.1"
+   ]
+  },
+  {
+   "senseId": "s.havsutsikt.1",
+   "kind": "illustration",
+   "motif": "res.havsutsikt",
+   "group": "havsutsikt",
+   "quiz": true,
+   "confusableWith": [
+    "s.hotellrum.1"
+   ]
+  },
+  {
+   "senseId": "s.vandrarhem.1",
+   "kind": "illustration",
+   "motif": "res.vandrarhem",
+   "group": "vandrarhem",
+   "quiz": true,
+   "confusableWith": [
+    "s.hotellrum.1"
+   ]
+  },
+  {
+   "senseId": "s.hotellgäst.1",
+   "kind": "illustration",
+   "motif": "res.hotellgäst",
+   "group": "hotellgäst",
+   "quiz": true,
+   "confusableWith": [
+    "s.reception.1"
+   ]
+  },
+  {
+   "senseId": "s.ankomstdag.1",
+   "kind": "illustration",
+   "motif": "res.ankomstdag",
+   "group": "ankomstdag",
+   "quiz": true,
+   "confusableWith": [
+    "s.avresedag.1"
+   ]
+  },
+  {
+   "senseId": "s.avresedag.1",
+   "kind": "illustration",
+   "motif": "res.avresedag",
+   "group": "ankomstdag",
+   "quiz": true,
+   "confusableWith": [
+    "s.ankomstdag.1"
+   ]
+  },
+  {
+   "senseId": "s.per-natt.1",
+   "kind": "illustration",
+   "motif": "res.per-natt",
+   "group": "per-natt",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ingår-i-priset.1"
+   ]
+  },
+  {
+   "senseId": "s.ingår-i-priset.1",
+   "kind": "illustration",
+   "motif": "res.ingår-i-priset",
+   "group": "per-natt",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.per-natt.1",
+    "s.frukostbuffé.1"
+   ]
+  },
+  {
+   "senseId": "s.frukostbuffé.1",
+   "kind": "illustration",
+   "motif": "res.frukostbuffé",
+   "group": "frukostbuffé",
+   "quiz": true,
+   "confusableWith": [
+    "s.ingår-i-priset.1"
+   ]
+  },
+  {
+   "senseId": "s.tidig-incheckning.1",
+   "kind": "illustration",
+   "motif": "res.tidig-incheckning",
+   "group": "tidig-incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.sen-utcheckning.1"
+   ]
+  },
+  {
+   "senseId": "s.checka-ut.1",
+   "kind": "illustration",
+   "motif": "res.checka-ut",
+   "group": "tidig-incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.utcheckning.1",
+    "s.lämna-rummet.1"
+   ]
+  },
+  {
+   "senseId": "s.utcheckning.1",
+   "kind": "illustration",
+   "motif": "res.utcheckning",
+   "group": "tidig-incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.checka-ut.1",
+    "s.sen-utcheckning.1",
+    "s.lämna-nyckeln.1"
+   ]
+  },
+  {
+   "senseId": "s.sen-utcheckning.1",
+   "kind": "illustration",
+   "motif": "res.sen-utcheckning",
+   "group": "tidig-incheckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.tidig-incheckning.1",
+    "s.utcheckning.1"
+   ]
+  },
+  {
+   "senseId": "s.lämna-rummet.1",
+   "kind": "illustration",
+   "motif": "res.lämna-rummet",
+   "group": "tidig-incheckning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.checka-ut.1"
+   ]
+  },
+  {
+   "senseId": "s.lämna-nyckeln.1",
+   "kind": "illustration",
+   "motif": "res.lämna-nyckeln",
+   "group": "nyckelkort",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.nyckelkort.1",
+    "s.utcheckning.1"
+   ]
+  },
+  {
+   "senseId": "s.hotellnota.1",
+   "kind": "illustration",
+   "motif": "res.hotellnota",
+   "group": "per-natt",
+   "quiz": true,
+   "confusableWith": [
+    "s.betala-i-förväg.1"
+   ]
+  },
+  {
+   "senseId": "s.betala-i-förväg.1",
+   "kind": "illustration",
+   "motif": "res.betala-i-förväg",
+   "group": "betala-i-förväg",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hotellnota.1",
+    "s.reservera-ett-belopp.1"
+   ]
+  },
+  {
+   "senseId": "s.reservera-ett-belopp.1",
+   "kind": "illustration",
+   "motif": "res.reservera-ett-belopp",
+   "group": "betala-i-förväg",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.betala-i-förväg.1"
    ]
   }
  ]
