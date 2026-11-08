@@ -72,7 +72,7 @@ export const MEDICINE_MOTIFS: Record<string, Svg> = {
   // ── 832 Recept och apotek ────────────────────────────────────────
   'med.skriva-ut': all(rect(30, 74, 80, 6, '#a0673d', 1, C.ink, 1.4), doctor(22, 0.9, 'calm'), rx(76, 60, 0.7), arm(30, 50, 66, 62), g('translate(70 58) rotate(30)', rect(-1.4, -12, 2.8, 14, '#3a4a6a', 0, null))),
   'med.förskriva': all(rx(60, 60, 1.8), doctor(104, 0.5)),
-  'med.receptbelagd': all(boxMed(36, 64, 1.4, '#e85a5a'), T(66, 66, '+', 16, HL), rx(94, 60, 0.9)),
+  'med.receptbelagd': all(rect(0, 76, 120, 36, '#d8e8e0', 2, C.ink, 1.6), boxMed(36, 48, 1.3, '#e85a5a'), g('translate(36 76)', rect(-10, -6, 20, 16, '#f2c14e', 2, C.ink, 1.4), path('M-6 -6 L-6 -12 C-6 -20 6 -20 6 -12 L6 -6', 'none', C.ink, 2.4), circle(0, 2, 2.2, C.ink, null)), rx(90, 52, 0.9), arrow(72, 70, 50, 76, HL, 2)),
   'med.e-recept': all(phone(60, 60, 2.2, all(rect(-10, -16, 20, 28, C.white, 2, C.ink, 0.6), crossSign(-4, -10, 0.24), pill(4, -10, 0.3, '#e85a5a'), lines0(-7, -2, 14, 3, 3, '#7a8590')))),
   'med.förnya-ett-recept': all(rx(52, 60, 1.6), path('M92 40 A20 20 0 1 1 80 34', 'none', HL, 2.6), path('M80 26 L80 36 L90 34', 'none', HL, 2.6)),
   'med.apotekare': all(rect(0, 72, 120, 40, '#d8e8e0', 2, C.ink, 1.6), rect(10, 14, 100, 46, '#e8eef2', 2, null), ...[24, 44].map((y) => line(`M10 ${y + 14} L110 ${y + 14}`, C.ink, 1.2)), ...Array.from({ length: 10 }, (_, i) => rect(14 + (i % 5) * 20, 26 + Math.floor(i / 5) * 20, 12, 12, ['#7ab0e8', '#e85a5a', '#f2c14e', '#7ac06a', '#c8a8d8'][i % 5]!, 1, C.ink, 0.6)), pharmacist(60, 0.84), crossSign(100, 92, 0.6)),
