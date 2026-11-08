@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.22.0 – 2026-11-08
+
+Fortsättning på bilderna till de färdiga modulerna. Hela överämnet *Resor & transport* (601–657) har nu bilder: 634 av 636 modulord. Alla symbol- och adjektivbilder gick igenom blindtestgrinden.
+
+### Resor & transport (632 nya bilder)
+- **Kollektivtrafik (601–607):** buss och hållplats, tunnelbana och pendeltåg, spårvagn och färja, biljetter och periodkort, tidtabeller och byten, förseningar och trafikstörningar, att fråga efter rätt linje.
+- **Hitta rätt (611–617):** höger och vänster, korsningar och rondeller, gångvägar och övergångsställen, kartor och väderstreck, avstånd och riktningar, adresser, vägbeskrivningar. Riktningsorden visas oftast som en liten gatukarta sedd ovanifrån med en gående eller en bil och en pil.
+- **Bil (621–627):** bilens delar (den delen är markerad på samma bil), starta och köra, parkera, tanka och ladda, däck och väglag, trafikskyltar och enkla bilproblem. Skyltarna är allmänna piktogram utan ord.
+- **Cykel och promenader (631–637):** cykelns delar, cykelvägar, trafikregler för cyklister, promenader och vandring, hjälmar och reflexer, att laga en cykel, väglag och säkerhet.
+- **Tåg (641–647):** stationer och perronger, biljettyper och platser, bagage, byten och anslutningar, nattåg, förseningar och ombokning, resor mellan svenska städer.
+- **Flyg och hotell (651–657):** flygplatser och terminaler, incheckning och säkerhetskontroll, pass och resehandlingar, bagage, ombord på flyget, hotellrum och reception, in- och utcheckning.
+- Inga operatörs-, flyg- eller hotellmärken ritas. Avgångstavlor visar ortkoder och tider men inga flygbolagskoder.
+- Två ord har ingen bild: *varifrån* och *en bit*. Båda underkändes två gånger i blindtestet och fick planstatus `none`.
+
+### Blindtest
+- 115 bilder blindtestades i den här versionen: 108 godkända och 7 godkända synonymfall. Underkända bilder ritades om och testades igen, till exempel *gles* (landsbygdshållplats med bara två avgångar), *åt andra hållet*, *gående*, *leda cykeln* och *i färdriktningen*.
+- Nära synonymer fick `confusableWith`, till exempel *stiga på*/*kliva på*, *perrong*/*plattform*, *ankommande*/*avgående*, *fotgängare*/*gående* och *ny avgångstid*/*ändrad*.
+
+### Teknik
+- Nya motivfiler som laddas när de behövs: `transit.ts` (`trafik.`), `nav.ts` (`väg.`), `car.ts` (`bil.`), `bike.ts` (`cyk.`), `rail.ts` (`tåg.`) och `travel.ts` (`res.`).
+- `walker()` och `carTop()` i `nav.ts` ritar en gående och en bil ovanifrån, och `bike()` i `bike.ts` ritar en cykel där en del kan markeras.
+
+I hela appen har nu 4 912 av 6 182 modulord en bild. Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v26`.
+
 ## 0.21.0 – 2026-11-08
 
 Fortsättning på bilderna till de färdiga modulerna. Hela överämnet *Handla & tjänster* (501–542) har nu bilder: 628 av 630 modulord. Alla symbol- och adjektivbilder gick igenom blindtestgrinden.

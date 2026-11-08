@@ -1,8 +1,21 @@
 # Projektstatus – överlämning
 
-**Version:** 0.21.0 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.21 utvecklades i grenen `claude/swechan-0.21`)
+**Version:** 0.22.0 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.22 utvecklades i grenen `claude/swechan-0.22`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.22 – släppt 2026-11-08 (Resor & transport har bilder)
+
+- **Gjort:**
+  - Bilder till hela *Resor & transport* (601–657): 634 av 636 modulord. *varifrån* och *en bit* har ingen bild (underkända två gånger).
+  - 115 symbol- och adjektivbilder blindtestades (108 godkända, 7 synonymfall).
+  - Motiven finns i `transit.ts` (`trafik.`), `nav.ts` (`väg.`), `car.ts` (`bil.`), `bike.ts` (`cyk.`), `rail.ts` (`tåg.`) och `travel.ts` (`res.`).
+  - I hela appen har 4 912 av 6 182 modulord en bild.
+- **Nästa steg (0.23):** de överämnen som återstår (800- och 900-serierna samt övriga moduler utan bild).
+- **Kom ihåg:**
+  - Flytta en figur uppåt med `g('translate(0 -dy)', P(...))`. Använd aldrig `.replace()` på figurens SVG-sträng, eftersom figuren innehåller flera `translate`.
+  - Om `git status` visar opushade commits trots att pushen lyckades: jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
+  - Ange alltid scratchpad-sökvägen fullt ut till `art:blind` (en tom variabel skrev en gång bladen till `/b22b`).
 
 ## 0.21 – släppt 2026-11-08 (Handla & tjänster har bilder)
 
