@@ -1,5 +1,38 @@
 # Changelog
 
+## 0.19.1 – 2026-11-08
+
+Produktägaren påpekade att frisyr- och klädadjektivens bilder (*lockig*, *vågig*, *tovig*, *tajt*, *lös*) inte visade orden. Den här versionen går igenom orsaken, rättar alla bilder med samma risk och inför ett styrsystem som stoppar felet framöver.
+
+### Varför bilderna blev fel
+- **Granskning med facit:** bilderna granskades av den som ritat dem, med ordet bredvid. Då ser man det man vet att bilden ska visa.
+- **Fel mall:** standardfiguren har fasta kläder och fast frisyr. Den kan inte visa passform eller hårstruktur, så skillnaden hamnade i små tillägg.
+- **Markeringar bar ordet:** en orange pil eller ett litet tecken var ibland det enda som skilde *tajt* från *lös*.
+- **Volym före kontroll:** när 500 bilder per version var målet fångade granskningen bara layoutfel (beskärning, överlapp), inte om ordet syntes.
+
+### Blindtest av alla riskbilder
+- Alla 517 symbol- och adjektivbilder i moduler blindtestades: en granskare som inte vet svaret ser numrerade bilder och modulens ordlista med japansk glosa och säger vilket ord varje bild visar.
+- 180 bilder underkändes eller var osäkra. 159 bilder ritades om i upp till fyra omgångar, och varje omgång testades av nya granskare. Bland dem finns 18 animationer och 3 ansikten som ersattes av tydligare illustrationer.
+- Nya motivfiler: `bodyFix.ts` (`kfix.`, kropp och hälsa) och `blindFix.ts` (`fix.`, mat, hem, familj, vänner och kärlek). `fitFigures.ts` ritar figurer vars kläder kan sitta tajt, löst eller säckigt bredvid en grå referens.
+- Ord som betyder samma sak i bild, till exempel olika ordklasser av samma begrepp (*smittsam*/*smitta*, *immun*/*immunförsvar*), och nära synonymer har fått `confusableWith`. De ställs aldrig mot varandra i bildövningar.
+- Fyra ord saknar tydlig scen och har ingen bild längre: *frasighet*, *knaprig*, *ha det trevligt* och *ömsint*.
+- Resultat: 448 bilder godkända, 65 godkända som synonymfall, 0 underkända.
+
+### Styrsystem
+- **Regler i `CONTENT_GUIDELINES.md`:**
+  - egenskapen ska dominera bilden;
+  - jämför med en grå referens;
+  - använd inte en mall som inte kan bära egenskapen;
+  - markeringar stödjer men bär aldrig;
+  - visa en situation hellre än en sak.
+- **Blindtest i registret:** `blindTest` i `wordVisuals.json` innehåller resultatet och ett fingeravtryck av den testade bilden.
+- **Testet stoppar bygget:** *every symbol and adjective picture passed an independent blind test* går inte igenom om en symbol- eller adjektivbild saknar blindtest eller har ritats om efter sitt test.
+- **Verktyg:**
+  - `npm run art:blind -- <mapp> pending` gör blindark för allt som saknar giltigt test.
+  - `npm run art:blind:record -- <mapp>` sparar granskarnas svar.
+
+I hela appen har 3 045 av 6 182 modulord en bild. Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v23`.
+
 ## 0.19.0 – 2026-11-07
 
 Produktägaren bad om minst 500 nya bilder. Det blev 549, och alla har granskats i förstoring.

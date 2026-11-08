@@ -107,6 +107,17 @@ Kontrollen känner igen böjda former av verbuttryck (`v('ta sig till', ...)`, `
   - Bilden visas både i bildövningarna och i stavningsövningen. Den får därför aldrig innehålla ordet eller en del av det, inte heller skyltar, etiketter eller ljudord som *MJÖL*, *KROG*, *krisp* eller *Skål!*.
   - Etiketter och skyltar får en ikon i stället (`labelIcons.ts`).
   - Testet *no picture spells out its own word* stoppar detta.
+- **Egenskaper syns genom kontrast och överdrift (0.19.1).** Lärdomen från frisyr- och passformsbilderna, som såg rätt ut för den som ritade dem men inte visade ordet:
+  - **Egenskapen ska dominera bilden.** Det som skiljer *lockig* från *vågig*, *tajt* från *lös* ska vara det största och tydligaste i bilden, inte en detalj på en standardfigur.
+  - **Jämför med en grå referens.** En grå figur/sak i normalutförande bredvid den färgade som har egenskapen (`compare`/`fitPair` i `fitFigures.ts`): *tajt* = grå normal tröja bredvid en färgad som spänner över kroppen.
+  - **Använd inte en mall som inte kan bära egenskapen.** Standardfiguren har fasta kläder och fast frisyr. Den kan aldrig visa passform eller hårstruktur – rita då med `dressed()` eller en egen närbild.
+  - **Markeringar stödjer, de bär aldrig.** Pilar, orange ringar och små tecken får peka på egenskapen men aldrig vara det enda som visar den.
+  - **Situation framför sak.** Ett tillstånd visas genom vad det gör med någon (*andfådd* = flämtar högst upp i trappan, *uttorkad* = törstig efter loppet med tom flaska), gärna utifrån exempelmeningen.
+- **Blindtest är obligatoriskt för symboler och egenskaper (0.19.1).** Den som ritat en bild kan inte bedöma den, eftersom hen vet vilket ord den ska visa.
+  1. `npm run art:blind -- <mapp> pending` gör numrerade bildark utan ord för alla symbol- och adjektivbilder som saknar giltigt blindtest. Till varje ark hör modulens ordlista med japansk glosa.
+  2. En granskare som inte vet svaret (en ny AI-session eller en människa) skriver för varje bild vilket ord den visar, med säkerhet *high/medium/low*. Instruktion till granskaren: läs `<mapp>/mN.png` och `<mapp>/mN.txt`, öppna inga andra filer, välj för varje numrerad bild det ord som bilden tydligast visar, nämn i `problem` andra ord ur listan som passar lika bra, och skriv `<mapp>/answers_K.json` som `{ "mN": { "1": { "word", "conf", "saw", "problem" } } }`.
+  3. `npm run art:blind:record -- <mapp> [godtagna-medium]` sparar resultatet i `blindTest` med ett fingeravtryck av den testade bilden. Godkänt = rätt ord med hög säkerhet, eller medel efter att författaren läst granskarens kommentar. Ett ord i `confusableWith` ger `synonym`.
+  4. Testet *every symbol and adjective picture passed an independent blind test* stoppar bilder utan blindtest och bilder som ritats om efter sitt blindtest.
 - **`quiz: true` bara om bilden entydigt visar ordet.** Allmänna ord (*långbyxor*, *underkläder*) och nästan identiska ord (*mysbyxor* bredvid *mjukisbyxor*) får `quiz: false`.
 - **`group`** samlar ord som liknar varandra visuellt (överdelar, byxor, jackor …); distraktorer tas aldrig från samma grupp. **`confusableWith`** anger förväxlingar över gränserna (*brud* ↔ *brudklänning*, *bryna* ↔ *steka*).
 - **Foton:** bara CC0, public domain eller CC BY (aldrig NC eller SA). Ange titel, upphovsperson, licens och källsida. Neutral bakgrund, motivet centrerat, inga igenkännbara personer, ingen text. 400 × 400 webp under 80 kB.

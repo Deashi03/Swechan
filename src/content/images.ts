@@ -17,6 +17,8 @@ const Common = {
   quiz: z.boolean(),
   confusableWith: z.array(z.string().regex(/^s\./)).optional(),
   symbol: z.boolean().optional(),
+  /** 0.19.1: independent blind test – `hash` fingerprints the tested picture (see blindTest.ts). */
+  blindTest: z.object({ result: z.enum(['pass', 'synonym']), round: z.string().min(1), hash: z.string().regex(/^[0-9a-f]{8}$/) }).optional(),
 };
 export const WordImageSchema = z.discriminatedUnion('kind', [
   z.object({ kind: z.literal('illustration'), motif: z.string().min(1), ...Common }),

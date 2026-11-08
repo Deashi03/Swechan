@@ -2,6 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { allWordImages, imageDistractorAllowed, imageFor, quizImageFor } from './images';
 import { getContent } from './repository';
+import { needsBlindTest, visualFingerprintSource, visualHash } from './blindTest';
+import { allFaceScenes } from './faces';
 import { generateExercise } from '../learning/exercises/generate';
 import { isChoice } from '../learning/exercises/types';
 import { buildLearnPlan } from '../learning/learnPlan';
@@ -47,6 +49,20 @@ describe('word images – data', () => {
       for (const tx of texts) if (tx.length >= 3 && (tx.includes(stem) || (tx.length >= 4 && stem.includes(tx)))) offenders.push(`${img.senseId}: ${tx}`);
     }
     expect(offenders).toEqual([]);
+  });
+  it('every symbol and adjective picture passed an independent blind test of exactly this picture (0.19.1)', () => {
+    // Pictures of properties looked right to their author and still did not show the word (0.19.1 review).
+    // Run `npm run art:blind -- <dir> pending`, let a reviewer who has not seen the words answer, then record
+    // the answers with `npm run art:blind:record -- <dir>`. Redrawing a picture invalidates its record.
+    const faces = allFaceScenes() as Record<string, unknown>;
+    const io = { renderMotif: renderWordArt, sceneFile: (f: string) => fs.readFileSync(path.join('public/anim/scenes', `${f}.json`), 'utf8'), faceScene: (s: string) => faces[s] };
+    const problems: string[] = [];
+    for (const img of allWordImages()) {
+      if (!needsBlindTest(img, repo.getSense(img.senseId)?.entry.pos, repo.modulesForSense(img.senseId).length > 0)) continue;
+      if (!img.blindTest) { problems.push(`${img.senseId}: inget blindtest`); continue; }
+      if (img.blindTest.hash !== visualHash(visualFingerprintSource(img, io) ?? '')) problems.push(`${img.senseId}: ändrad efter blindtestet`);
+    }
+    expect(problems).toEqual([]);
   });
   it('symbol pictures (abstract words) are never used in picture exercises', () => {
     for (const img of allWordImages()) if (img.symbol) expect(img.quiz, img.senseId).toBe(false);
