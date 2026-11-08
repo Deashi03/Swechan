@@ -48120,7 +48120,12 @@
     "s.gå-på-knäna.1",
     "s.ork.1",
     "s.orka-med.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.22.0",
+    "hash": "1577d0d5"
+   }
   },
   {
    "senseId": "s.hängig.1",
@@ -48762,7 +48767,8 @@
    "group": "vårdcentral",
    "quiz": true,
    "confusableWith": [
-    "s.mottagning.1"
+    "s.mottagning.1",
+    "s.listad.1"
    ]
   },
   {
@@ -48854,7 +48860,15 @@
    "motif": "besök.listad",
    "group": "listad",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.vårdcentral.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "7c3cc238"
+   }
   },
   {
    "senseId": "s.barnavårdscentral.1",
@@ -48902,7 +48916,9 @@
    "quiz": true,
    "confusableWith": [
     "s.boka-tid.1",
-    "s.uteblivet-besök.1"
+    "s.uteblivet-besök.1",
+    "s.kallelse.1",
+    "s.första-lediga-tid.1"
    ]
   },
   {
@@ -48912,7 +48928,8 @@
    "group": "läkartid",
    "quiz": true,
    "confusableWith": [
-    "s.läkartid.1"
+    "s.läkartid.1",
+    "s.första-lediga-tid.1"
    ]
   },
   {
@@ -48933,8 +48950,15 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.akuttid.1"
-   ]
+    "s.akuttid.1",
+    "s.boka-tid.1",
+    "s.läkartid.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "9ecec1de"
+   }
   },
   {
    "senseId": "s.telefonkö.1",
@@ -48974,7 +48998,8 @@
    "group": "e-tjänst",
    "quiz": true,
    "confusableWith": [
-    "s.videosamtal.1"
+    "s.videosamtal.1",
+    "s.sms-påminnelse.1"
    ]
   },
   {
@@ -49017,8 +49042,14 @@
    "symbol": true,
    "confusableWith": [
     "s.bli-kallad.1",
-    "s.sms-påminnelse.1"
-   ]
+    "s.sms-påminnelse.1",
+    "s.läkartid.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "6a4690b4"
+   }
   },
   {
    "senseId": "s.bli-kallad.1",
@@ -49038,8 +49069,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.kallelse.1"
-   ]
+    "s.kallelse.1",
+    "s.e-tjänst.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "d84c57f3"
+   }
   },
   {
    "senseId": "s.uteblivet-besök.1",
@@ -49068,7 +49105,8 @@
    "group": "sjukdomshistoria",
    "quiz": true,
    "confusableWith": [
-    "s.sjukdomshistoria.1"
+    "s.sjukdomshistoria.1",
+    "s.hälsodeklaration.1"
    ]
   },
   {
@@ -49079,8 +49117,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.uppge.1"
-   ]
+    "s.uppge.1",
+    "s.journal.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "70446a83"
+   }
   },
   {
    "senseId": "s.uppge.1",
@@ -49112,7 +49156,12 @@
    "symbol": true,
    "confusableWith": [
     "s.barnsjukdom.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "05535482"
+   }
   },
   {
    "senseId": "s.barnsjukdom.1",
@@ -49123,7 +49172,12 @@
    "symbol": true,
    "confusableWith": [
     "s.överkänslighet.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "3dd2412b"
+   }
   },
   {
    "senseId": "s.vaccinerad.1",
@@ -49134,7 +49188,12 @@
    "symbol": true,
    "confusableWith": [
     "s.frisk-och-kry.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "3fe43315"
+   }
   },
   {
    "senseId": "s.genomgå.1",
@@ -49175,7 +49234,12 @@
    "symbol": true,
    "confusableWith": [
     "s.vara-inlagd.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "29f3ef4b"
+   }
   },
   {
    "senseId": "s.ärftlig.1",
@@ -49186,7 +49250,12 @@
    "symbol": true,
    "confusableWith": [
     "s.ligga-i-släkten.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "7063c72c"
+   }
   },
   {
    "senseId": "s.ligga-i-släkten.1",
@@ -49207,7 +49276,12 @@
    "symbol": true,
    "confusableWith": [
     "s.vaccinerad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "4bf6d9de"
+   }
   },
   {
    "senseId": "s.undersökning.1",
@@ -49519,7 +49593,8 @@
    "group": "provsvar",
    "quiz": true,
    "confusableWith": [
-    "s.normalvärde.1"
+    "s.normalvärde.1",
+    "s.förhöjd.1"
    ]
   },
   {
@@ -49542,8 +49617,14 @@
    "symbol": true,
    "confusableWith": [
     "s.normalvärde.1",
-    "s.avvikelse.1"
-   ]
+    "s.avvikelse.1",
+    "s.provsvar.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "69b72f9f"
+   }
   },
   {
    "senseId": "s.avvikelse.1",
@@ -49555,7 +49636,12 @@
    "confusableWith": [
     "s.förhöjd.1",
     "s.oroande.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "cb97e520"
+   }
   },
   {
    "senseId": "s.allt-ser-bra-ut.1",
@@ -49566,7 +49652,12 @@
    "symbol": true,
    "confusableWith": [
     "s.lugnande.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "68708852"
+   }
   },
   {
    "senseId": "s.lugnande.1",
@@ -49577,7 +49668,12 @@
    "symbol": true,
    "confusableWith": [
     "s.allt-ser-bra-ut.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "688f47d9"
+   }
   },
   {
    "senseId": "s.oroande.1",
@@ -49588,7 +49684,12 @@
    "symbol": true,
    "confusableWith": [
     "s.avvikelse.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "2e962452"
+   }
   },
   {
    "senseId": "s.förbättring.1",
@@ -49629,7 +49730,8 @@
    "group": "vårdplan",
    "quiz": true,
    "confusableWith": [
-    "s.uppföljning.1"
+    "s.uppföljning.1",
+    "s.delaktig.1"
    ]
   },
   {
@@ -49681,7 +49783,8 @@
    "group": "frågelista",
    "quiz": true,
    "confusableWith": [
-    "s.fackord.1"
+    "s.fackord.1",
+    "s.delaktig.1"
    ]
   },
   {
@@ -49724,7 +49827,12 @@
    "confusableWith": [
     "s.anhörig.1",
     "s.bemötande.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.22.0",
+    "hash": "3fd1b04c"
+   }
   },
   {
    "senseId": "s.anhörig.1",
@@ -49733,7 +49841,8 @@
    "group": "närstående",
    "quiz": true,
    "confusableWith": [
-    "s.närstående.1"
+    "s.närstående.1",
+    "s.bemötande.1"
    ]
   },
   {
@@ -49754,7 +49863,8 @@
    "quiz": true,
    "confusableWith": [
     "s.tystnadsplikt.1",
-    "s.samtycka.1"
+    "s.samtycka.1",
+    "s.delaktig.1"
    ]
   },
   {
@@ -49776,8 +49886,16 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.samtycka.1"
-   ]
+    "s.samtycka.1",
+    "s.frågelista.1",
+    "s.vårdplan.1",
+    "s.samtycke.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.22.0",
+    "hash": "2ae62ef1"
+   }
   },
   {
    "senseId": "s.förnyad-bedömning.1",
@@ -49828,8 +49946,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.närstående.1"
-   ]
+    "s.närstående.1",
+    "s.anhörig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.22.0",
+    "hash": "18a6fba6"
+   }
   }
  ]
 }
