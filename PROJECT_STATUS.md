@@ -1,8 +1,22 @@
 # Projektstatus – överlämning
 
-**Version:** 0.20.0 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.20 utvecklades i grenen `claude/swechan-0.20`)
+**Version:** 0.21.0 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.21 utvecklades i grenen `claude/swechan-0.21`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.21 – släppt 2026-11-08 (Handla & tjänster har bilder)
+
+- **Gjort:**
+  - Bilder till hela *Handla & tjänster* (501–542): 628 av 630 modulord. *leverans* och *vänligen* har ingen bild (underkända två gånger).
+  - 126 symbol- och adjektivbilder blindtestades (113 godkända, 13 synonymfall).
+  - Motiven finns i `shopping.ts` (`köp.`), `money.ts` (`peng.`), `stores.ts` (`buti.`), `online.ts` (`ehan.`), `post.ts` (`post.`) och `services.ts` (`tjän.`).
+  - I hela appen har 4 280 av 6 182 modulord en bild.
+- **Nästa steg (0.22):** överämnena i 600-, 800- och 900-serierna, ungefär 630 ord vardera.
+- **Kom ihåg:**
+  - Arbetsgången är densamma som i 0.20: rita, granska ark, registrera, blindtest, `record`, rätta.
+  - Ta bort granskarens svar för en bild som har ritats om innan du kör `record` igen. Annars kopplas gamla svar till den nya bilden.
+  - Använd aldrig osynlig text eller tomma platshållare (`.slice(0, 0)`, `'none', 'none', 0`) i motiven. Skriv bara det som ska synas.
+  - Varumärken ritas aldrig: betaltjänster, postföretag, operatörer och myndigheter visas med allmänna symboler.
 
 ## 0.20 – släppt 2026-11-08 (Tid & vardagsrutiner har bilder)
 
