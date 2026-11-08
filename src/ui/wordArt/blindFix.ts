@@ -7,10 +7,10 @@ import { figure, type Build } from './figures';
 import { HL, arm, bolt, bubble, cloud, heart, sun, thought } from './people';
 import { block, house, sofa } from './homeKit';
 
-type Mood = 'smile' | 'frown' | 'angry' | 'love' | 'sleepy' | 'shock' | 'laugh' | 'blush' | 'sick' | 'calm';
+export type Mood = 'smile' | 'frown' | 'angry' | 'love' | 'sleepy' | 'shock' | 'laugh' | 'blush' | 'sick' | 'calm';
 const ground = line('M4 112 L116 112', C.grey2, 2);
 /** A figure with a mood face drawn over the default one. */
-function P(b: Build & { mood?: Mood }): Svg {
+export function P(b: Build & { mood?: Mood }): Svg {
   const s = 0.84 * (b.h ?? 1), m = b.mood;
   if (!m) return figure(b);
   const sk = b.grey ? C.grey2 : (b.skin ?? C.skin), ink = C.ink;
@@ -30,14 +30,14 @@ function P(b: Build & { mood?: Mood }): Svg {
   return all(figure(b), g(`translate(${b.x ?? 60} ${(112 - 49 * s).toFixed(1)}) scale(${s.toFixed(3)})`, circle(0, -54, 7, sk, null), cheeks, eyes, brows, mouth));
 }
 /** Grey version of any drawing (reference). */
-const greyed = (...k: Svg[]): Svg => `<g opacity="0.45" style="filter:grayscale(1)">${k.join('')}</g>`;
-const sepia = (...k: Svg[]): Svg => `<g style="filter:sepia(0.9)">${k.join('')}</g>`;
-const drop = (x: number, y: number, s = 1, col: string = '#8cc7e8') => path(`M${x} ${y - 5 * s} C${x + 4 * s} ${y} ${x + 3 * s} ${y + 4 * s} ${x} ${y + 4 * s} C${x - 3 * s} ${y + 4 * s} ${x - 4 * s} ${y} ${x} ${y - 5 * s} Z`, col, C.ink, 0.8);
-const table = (y = 84, x1 = 8, x2 = 112) => all(rect(x1, y, x2 - x1, 6, C.tan, 2, C.ink, 1.8), line(`M${x1 + 8} ${y + 6} L${x1 + 8} 112 M${x2 - 8} ${y + 6} L${x2 - 8} 112`, C.brown, 3));
-const plate = (x: number, y: number, food: Svg = '', r = 12) => all(ellipse(x, y, r, r * 0.38, C.white, C.ink, 1.4), food);
-const glassOf = (x: number, y: number, fill: string = C.white, h = 18) => all(path(`M${x - 6} ${y - h} L${x + 6} ${y - h} L${x + 5} ${y} L${x - 5} ${y} Z`, 'rgba(220,240,252,0.6)', C.ink, 1.4), path(`M${x - 5.6} ${y - h * 0.7} L${x + 5.6} ${y - h * 0.7} L${x + 5} ${y - 0.6} L${x - 5} ${y - 0.6} Z`, fill, null));
+export const greyed = (...k: Svg[]): Svg => `<g opacity="0.45" style="filter:grayscale(1)">${k.join('')}</g>`;
+export const sepia = (...k: Svg[]): Svg => `<g style="filter:sepia(0.9)">${k.join('')}</g>`;
+export const drop = (x: number, y: number, s = 1, col: string = '#8cc7e8') => path(`M${x} ${y - 5 * s} C${x + 4 * s} ${y} ${x + 3 * s} ${y + 4 * s} ${x} ${y + 4 * s} C${x - 3 * s} ${y + 4 * s} ${x - 4 * s} ${y} ${x} ${y - 5 * s} Z`, col, C.ink, 0.8);
+export const table = (y = 84, x1 = 8, x2 = 112) => all(rect(x1, y, x2 - x1, 6, C.tan, 2, C.ink, 1.8), line(`M${x1 + 8} ${y + 6} L${x1 + 8} 112 M${x2 - 8} ${y + 6} L${x2 - 8} 112`, C.brown, 3));
+export const plate = (x: number, y: number, food: Svg = '', r = 12) => all(ellipse(x, y, r, r * 0.38, C.white, C.ink, 1.4), food);
+export const glassOf = (x: number, y: number, fill: string = C.white, h = 18) => all(path(`M${x - 6} ${y - h} L${x + 6} ${y - h} L${x + 5} ${y} L${x - 5} ${y} Z`, 'rgba(220,240,252,0.6)', C.ink, 1.4), path(`M${x - 5.6} ${y - h * 0.7} L${x + 5.6} ${y - h * 0.7} L${x + 5} ${y - 0.6} L${x - 5} ${y - 0.6} Z`, fill, null));
 const egg = (x: number, y: number, s = 1, fill: string = '#fbf4e6') => ellipse(x, y, 7 * s, 9 * s, fill, C.ink, 1.4);
-const coin = (x: number, y: number, r = 5) => all(circle(x, y, r, C.gold, C.ink, 1.2), circle(x, y, r * 0.55, 'none', '#b88a20', 1));
+export const coin = (x: number, y: number, r = 5) => all(circle(x, y, r, C.gold, C.ink, 1.2), circle(x, y, r * 0.55, 'none', '#b88a20', 1));
 const mitt = (x: number, y: number) => path(`M${x - 5} ${y + 6} L${x - 5} ${y - 4} C${x - 5} ${y - 9} ${x + 5} ${y - 9} ${x + 5} ${y - 4} L${x + 5} ${y + 6} Z`, C.red, C.ink, 1.2);
 const bun = (x: number, y: number) => all(ellipse(x, y, 7, 4.6, '#c98a3e', C.ink, 1.2), path(`M${x - 4} ${y - 1} C${x - 2} ${y - 4} ${x + 2} ${y + 2} ${x + 4} ${y - 1}`, 'none', '#8a5a24', 1.2), circle(x - 1, y - 2, 0.8, C.white, null), circle(x + 2, y - 1, 0.8, C.white, null));
 

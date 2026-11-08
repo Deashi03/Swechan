@@ -1,8 +1,27 @@
 # Projektstatus – överlämning
 
-**Version:** 0.19.1 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.19.1 utvecklades i grenen `claude/swechan-0.19.1`)
+**Version:** 0.20.0 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.20 utvecklades i grenen `claude/swechan-0.20`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.20 – släppt 2026-11-08 (Tid & vardagsrutiner har bilder)
+
+- **Gjort:**
+  - Bilder till hela *Tid & vardagsrutiner* (401–442): 628 av 630 modulord. *så fort* och *veckovis* har ingen bild.
+  - Alla symbol- och adjektivbilder är blindtestade.
+  - Motiven finns i `time.ts` (`tid.`), `routine.ts` (`rut.`), `planning.ts` (`plan.`), `actions.ts` (`akt.`), `measure.ts` (`mått.`) och `mishaps.ts` (`vard.`).
+- **Nästa steg (0.21):** överämnena i 500-, 600-, 800- och 900-serierna, ungefär 630 ord vardera.
+- **Kom ihåg:**
+  - Arbetsgången per omgång om cirka 7 moduler:
+    1. Rita motiven.
+    2. Granska dem i ark med `scratchpad/fsheet.ts`.
+    3. Registrera med `specgen.py` och `vis.py`.
+    4. Kör `npm run art:blind -- <mapp> pending`.
+    5. Låt nya granskare svara utan facit.
+    6. Kör `npm run art:blind:record`.
+    7. Rätta och lägg till `confusableWith` för äkta synonymer.
+  - Kolla sense-ID:t i `mdefs.py`-utskriften innan du anger ett specialfall till `specgen` (t.ex. `s.tjänst-favor.1`, inte `s.tjänst.1`).
+  - `P({ mood })` i `blindFix.ts` ger figurer med ansiktsuttryck, `head()` i `routine.ts` ett ansikte i närbild och `bed()` en säng.
 
 ## 0.19.1 – släppt 2026-11-08 (blindtest och styrsystem för bilder)
 

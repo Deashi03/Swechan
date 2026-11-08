@@ -32,6 +32,8 @@ for (const f of fs.readdirSync(R + 'dictionary')) {
   for (const e of (Array.isArray(d) ? d : d.entries ?? [])) for (const s of e.senses ?? []) lemma.set(s.id, e.lemma);
 }
 const norm = (s = '') => s.trim().toLowerCase();
+/** Whole-word mention (so that 'prio' is not found inside 'prioritering'). */
+const mentions = (text: string, w: string) => new RegExp(`(^|[^a-zåäöé])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-zåäöé])`).test(text);
 const key = JSON.parse(fs.readFileSync(path.join(dir, 'key.json'), 'utf8')) as Record<string, Record<string, string>>;
 const answers: Record<string, Record<string, { word?: string; conf?: string; problem?: string }>> = {};
 for (const f of fs.readdirSync(dir).filter((x) => /^answers_.*\.json$/.test(x))) Object.assign(answers, JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
@@ -56,7 +58,7 @@ for (const [m, map] of Object.entries(key)) {
     let result: 'pass' | 'synonym' | null = null;
     const conf = new Set((img.confusableWith ?? []).map((c) => norm(lemma.get(c))));
     // other module words the reviewer names as possible readings (in the remark or as the answer)
-    const named = new Set([...(moduleWords.get(m) ?? [])].filter((w) => w !== norm(lemma.get(sid)) && (norm(a.problem).includes(w) || w === norm(a.word))));
+    const named = new Set([...(moduleWords.get(m) ?? [])].filter((w) => w !== norm(lemma.get(sid)) && (mentions(norm(a.problem), w) || w === norm(a.word))));
     const onlyConfusables = [...named].every((w) => conf.has(w));
     if (right && (a.conf === 'high' || (a.conf === 'medium' && accept.has(sid)))) result = 'pass';
     // the only doubt is with words that are never offered against this picture: allowed
