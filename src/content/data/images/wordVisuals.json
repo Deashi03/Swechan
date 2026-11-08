@@ -51431,7 +51431,12 @@
     "s.förskriva.1",
     "s.skriva-ut.1",
     "s.e-recept.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "31c3312f"
+   }
   },
   {
    "senseId": "s.e-recept.1",
@@ -52443,7 +52448,12 @@
    "motif": "akut.blodig",
    "group": "skrubbsår",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "e724420f"
+   }
   },
   {
    "senseId": "s.stoppa-blödningen.1",
@@ -52535,14 +52545,25 @@
    "motif": "akut.infekterad",
    "group": "skrubbsår",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.var-sår.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "5402ae13"
+   }
   },
   {
    "senseId": "s.var-sår.1",
    "kind": "illustration",
    "motif": "akut.var-sår",
    "group": "skrubbsår",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.infekterad.1"
+   ]
   },
   {
    "senseId": "s.sårskorpa.1",
@@ -52636,7 +52657,12 @@
    "confusableWith": [
     "s.röntgenbild.1",
     "s.felställning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "3dab974d"
+   }
   },
   {
    "senseId": "s.röntgenbild.1",
@@ -52690,7 +52716,12 @@
    "symbol": true,
    "confusableWith": [
     "s.skålla-sig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "36d8928d"
+   }
   },
   {
    "senseId": "s.skålla-sig.1",
@@ -52742,7 +52773,12 @@
    "motif": "akut.ytlig",
    "group": "skållhet",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "4bee458f"
+   }
   },
   {
    "senseId": "s.plastfolie.1",
@@ -52791,7 +52827,12 @@
    "symbol": true,
    "confusableWith": [
     "s.brandrisk.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "b560dca6"
+   }
   },
   {
    "senseId": "s.svedd.1",
@@ -52799,7 +52840,12 @@
    "motif": "akut.svedd",
    "group": "eldfarlig",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "a83c7901"
+   }
   },
   {
    "senseId": "s.glöd.1",
@@ -52828,8 +52874,14 @@
    "symbol": true,
    "confusableWith": [
     "s.vid-medvetande.1",
-    "s.vakna-till.1"
-   ]
+    "s.vakna-till.1",
+    "s.medvetslöshet.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "574e6609"
+   }
   },
   {
    "senseId": "s.medvetslös.1",
@@ -52841,7 +52893,12 @@
    "confusableWith": [
     "s.medvetslöshet.1",
     "s.svimning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "48eb2c59"
+   }
   },
   {
    "senseId": "s.vid-medvetande.1",
@@ -52852,8 +52909,14 @@
    "symbol": true,
    "confusableWith": [
     "s.vakna-till.1",
-    "s.medvetande.1"
-   ]
+    "s.medvetande.1",
+    "s.tilltala.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "e684c93a"
+   }
   },
   {
    "senseId": "s.medvetslöshet.1",
@@ -52864,8 +52927,14 @@
    "symbol": true,
    "confusableWith": [
     "s.medvetslös.1",
-    "s.svimning.1"
-   ]
+    "s.svimning.1",
+    "s.medvetande.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "d57d4941"
+   }
   },
   {
    "senseId": "s.vakna-till.1",
@@ -52890,7 +52959,10 @@
    "kind": "illustration",
    "motif": "akut.tilltala",
    "group": "medvetslös",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.vid-medvetande.1"
+   ]
   },
   {
    "senseId": "s.känna-efter.1",
@@ -52931,7 +53003,12 @@
    "symbol": true,
    "confusableWith": [
     "s.lyfta-hakan.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "4117789a"
+   }
   },
   {
    "senseId": "s.stabilt-sidoläge.1",
@@ -52959,7 +53036,12 @@
    "symbol": true,
    "confusableWith": [
     "s.chock.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "eca491e4"
+   }
   },
   {
    "senseId": "s.hjärtstopp.1",
@@ -53007,7 +53089,12 @@
     "s.hjärt-lungräddning.1",
     "s.HLR.1",
     "s.återuppliva.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "22d2dab3"
+   }
   },
   {
    "senseId": "s.inblåsning.1",
@@ -53138,7 +53225,12 @@
    "symbol": true,
    "confusableWith": [
     "s.ambulanspersonal.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "1ff9af37"
+   }
   },
   {
    "senseId": "s.brandkår.1",
@@ -53319,7 +53411,12 @@
    "confusableWith": [
     "s.trafikolycka.1",
     "s.olycksplats.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "ce9a934c"
+   }
   },
   {
    "senseId": "s.påkörd.1",
@@ -53327,7 +53424,12 @@
    "motif": "akut.påkörd",
    "group": "trafikolycka",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "8a795f16"
+   }
   },
   {
    "senseId": "s.fastklämd.1",
@@ -53335,14 +53437,25 @@
    "motif": "akut.fastklämd",
    "group": "trafikolycka",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.klämskada.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "94dc7d89"
+   }
   },
   {
    "senseId": "s.klämskada.1",
    "kind": "illustration",
    "motif": "akut.klämskada",
    "group": "klämskada",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.fastklämd.1"
+   ]
   },
   {
    "senseId": "s.allvarligt-skadad.1",
@@ -53354,7 +53467,12 @@
    "confusableWith": [
     "s.hjärtstopp.1",
     "s.livshotande.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "31293daf"
+   }
   },
   {
    "senseId": "s.lindrigt-skadad.1",
@@ -53362,7 +53480,12 @@
    "motif": "akut.lindrigt-skadad",
    "group": "allvarligt-skadad",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "6fe660fb"
+   }
   },
   {
    "senseId": "s.livshotande.1",
@@ -53374,7 +53497,12 @@
    "confusableWith": [
     "s.hjärtstopp.1",
     "s.allvarligt-skadad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "4984632e"
+   }
   },
   {
    "senseId": "s.skadebeskrivning.1",
@@ -53396,7 +53524,12 @@
    "symbol": true,
    "confusableWith": [
     "s.rakt-på-sak.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "74cd0aa5"
+   }
   },
   {
    "senseId": "s.rakt-på-sak.1",
@@ -53407,7 +53540,12 @@
    "symbol": true,
    "confusableWith": [
     "s.kortfattad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "f03ba065"
+   }
   },
   {
    "senseId": "s.hålla-sig-lugn.1",
@@ -53415,6 +53553,1211 @@
    "motif": "akut.hålla-sig-lugn",
    "group": "hålla",
    "quiz": true
+  },
+  {
+   "senseId": "s.motion.1",
+   "kind": "illustration",
+   "motif": "frisk.motion",
+   "group": "motion",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.vardagsmotion.1",
+    "s.fysisk-aktivitet.1",
+    "s.motionär.1"
+   ]
+  },
+  {
+   "senseId": "s.vardagsmotion.1",
+   "kind": "illustration",
+   "motif": "frisk.vardagsmotion",
+   "group": "motion",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.motion.1",
+    "s.fysisk-aktivitet.1",
+    "s.motionär.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "a3f830a9"
+   }
+  },
+  {
+   "senseId": "s.fysisk-aktivitet.1",
+   "kind": "illustration",
+   "motif": "frisk.fysisk-aktivitet",
+   "group": "motion",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.motion.1",
+    "s.vardagsmotion.1",
+    "s.motionär.1"
+   ]
+  },
+  {
+   "senseId": "s.motionär.1",
+   "kind": "illustration",
+   "motif": "frisk.motionär",
+   "group": "motion",
+   "quiz": true,
+   "confusableWith": [
+    "s.motion.1",
+    "s.vardagsmotion.1",
+    "s.fysisk-aktivitet.1"
+   ]
+  },
+  {
+   "senseId": "s.träningspass.1",
+   "kind": "illustration",
+   "motif": "frisk.träningspass",
+   "group": "träningspass",
+   "quiz": true,
+   "confusableWith": [
+    "s.träningsform.1",
+    "s.gruppträning.1"
+   ]
+  },
+  {
+   "senseId": "s.träningsform.1",
+   "kind": "illustration",
+   "motif": "frisk.träningsform",
+   "group": "träningspass",
+   "quiz": true,
+   "confusableWith": [
+    "s.träningspass.1",
+    "s.gruppträning.1"
+   ]
+  },
+  {
+   "senseId": "s.gruppträning.1",
+   "kind": "illustration",
+   "motif": "frisk.gruppträning",
+   "group": "träningspass",
+   "quiz": true,
+   "confusableWith": [
+    "s.träningspass.1",
+    "s.träningsform.1"
+   ]
+  },
+  {
+   "senseId": "s.styrketräning.1",
+   "kind": "illustration",
+   "motif": "frisk.styrketräning",
+   "group": "träningspass",
+   "quiz": true,
+   "confusableWith": [
+    "s.muskelstyrka.1"
+   ]
+  },
+  {
+   "senseId": "s.konditionsträning.1",
+   "kind": "illustration",
+   "motif": "frisk.konditionsträning",
+   "group": "motion",
+   "quiz": true,
+   "confusableWith": [
+    "s.pulshöjande.1"
+   ]
+  },
+  {
+   "senseId": "s.muskelstyrka.1",
+   "kind": "illustration",
+   "motif": "frisk.muskelstyrka",
+   "group": "träningspass",
+   "quiz": true,
+   "confusableWith": [
+    "s.styrketräning.1"
+   ]
+  },
+  {
+   "senseId": "s.pulshöjande.1",
+   "kind": "illustration",
+   "motif": "frisk.pulshöjande",
+   "group": "motion",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.konditionsträning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "c1adc6b4"
+   }
+  },
+  {
+   "senseId": "s.överträning.1",
+   "kind": "illustration",
+   "motif": "frisk.överträning",
+   "group": "överträning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vilodag.1",
+   "kind": "illustration",
+   "motif": "frisk.vilodag",
+   "group": "överträning",
+   "quiz": true,
+   "confusableWith": [
+    "s.återhämta-sig.1",
+    "s.pusta-ut.1"
+   ]
+  },
+  {
+   "senseId": "s.återhämta-sig.1",
+   "kind": "illustration",
+   "motif": "frisk.återhämta-sig",
+   "group": "överträning",
+   "quiz": true,
+   "confusableWith": [
+    "s.vilodag.1",
+    "s.pusta-ut.1"
+   ]
+  },
+  {
+   "senseId": "s.pusta-ut.1",
+   "kind": "illustration",
+   "motif": "frisk.pusta-ut",
+   "group": "överträning",
+   "quiz": true,
+   "confusableWith": [
+    "s.vilodag.1",
+    "s.återhämta-sig.1"
+   ]
+  },
+  {
+   "senseId": "s.kostvana.1",
+   "kind": "illustration",
+   "motif": "frisk.kostvana",
+   "group": "kostvana",
+   "quiz": true,
+   "confusableWith": [
+    "s.äta-regelbundet.1",
+    "s.måltidsordning.1",
+    "s.varierad.1"
+   ]
+  },
+  {
+   "senseId": "s.skräpmat.1",
+   "kind": "illustration",
+   "motif": "frisk.skräpmat",
+   "group": "skräpmat",
+   "quiz": true,
+   "confusableWith": [
+    "s.sockerrik.1"
+   ]
+  },
+  {
+   "senseId": "s.äta-regelbundet.1",
+   "kind": "illustration",
+   "motif": "frisk.äta-regelbundet",
+   "group": "kostvana",
+   "quiz": true,
+   "confusableWith": [
+    "s.kostvana.1",
+    "s.måltidsordning.1",
+    "s.varierad.1"
+   ]
+  },
+  {
+   "senseId": "s.måltidsordning.1",
+   "kind": "illustration",
+   "motif": "frisk.måltidsordning",
+   "group": "kostvana",
+   "quiz": true,
+   "confusableWith": [
+    "s.kostvana.1",
+    "s.äta-regelbundet.1"
+   ]
+  },
+  {
+   "senseId": "s.småäta.1",
+   "kind": "illustration",
+   "motif": "frisk.småäta",
+   "group": "kostvana",
+   "quiz": true
+  },
+  {
+   "senseId": "s.portionsstorlek.1",
+   "kind": "illustration",
+   "motif": "frisk.portionsstorlek",
+   "group": "kostvana",
+   "quiz": true,
+   "confusableWith": [
+    "s.varierad.1"
+   ]
+  },
+  {
+   "senseId": "s.varierad.1",
+   "kind": "illustration",
+   "motif": "frisk.varierad",
+   "group": "kostvana",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.portionsstorlek.1",
+    "s.kostvana.1",
+    "s.äta-regelbundet.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "16a27f94"
+   }
+  },
+  {
+   "senseId": "s.proteinrik.1",
+   "kind": "illustration",
+   "motif": "frisk.proteinrik",
+   "group": "proteinrik",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.fiberrik.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "552a7efd"
+   }
+  },
+  {
+   "senseId": "s.fiberrik.1",
+   "kind": "illustration",
+   "motif": "frisk.fiberrik",
+   "group": "proteinrik",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.proteinrik.1",
+    "s.fullkornsprodukt.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "32365e9c"
+   }
+  },
+  {
+   "senseId": "s.fullkornsprodukt.1",
+   "kind": "illustration",
+   "motif": "frisk.fullkornsprodukt",
+   "group": "proteinrik",
+   "quiz": true,
+   "confusableWith": [
+    "s.fiberrik.1"
+   ]
+  },
+  {
+   "senseId": "s.sockerrik.1",
+   "kind": "illustration",
+   "motif": "frisk.sockerrik",
+   "group": "skräpmat",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skräpmat.1",
+    "s.sockerhalt.1",
+    "s.energidryck.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "4600fabf"
+   }
+  },
+  {
+   "senseId": "s.sockerhalt.1",
+   "kind": "illustration",
+   "motif": "frisk.sockerhalt",
+   "group": "skräpmat",
+   "quiz": true,
+   "confusableWith": [
+    "s.sockerrik.1"
+   ]
+  },
+  {
+   "senseId": "s.energidryck.1",
+   "kind": "illustration",
+   "motif": "frisk.energidryck",
+   "group": "skräpmat",
+   "quiz": true,
+   "confusableWith": [
+    "s.sockerrik.1"
+   ]
+  },
+  {
+   "senseId": "s.vätskeintag.1",
+   "kind": "illustration",
+   "motif": "frisk.vätskeintag",
+   "group": "proteinrik",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nyckelhålsmärkt.1",
+   "kind": "illustration",
+   "motif": "frisk.nyckelhålsmärkt",
+   "group": "proteinrik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "fe3351ce"
+   }
+  },
+  {
+   "senseId": "s.insomningsproblem.1",
+   "kind": "illustration",
+   "motif": "frisk.insomningsproblem",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.sömnstörning.1"
+   ]
+  },
+  {
+   "senseId": "s.nattsömn.1",
+   "kind": "illustration",
+   "motif": "frisk.nattsömn",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.sömnkvalitet.1",
+    "s.sova-ut.1",
+    "s.sömnbehov.1"
+   ]
+  },
+  {
+   "senseId": "s.sömnvana.1",
+   "kind": "illustration",
+   "motif": "frisk.sömnvana",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.sömnrutin.1",
+    "s.sömnhygien.1",
+    "s.läggtid.1"
+   ]
+  },
+  {
+   "senseId": "s.sömnbehov.1",
+   "kind": "illustration",
+   "motif": "frisk.sömnbehov",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.nattsömn.1",
+    "s.sömnkvalitet.1",
+    "s.sova-ut.1"
+   ]
+  },
+  {
+   "senseId": "s.sömndagbok.1",
+   "kind": "illustration",
+   "motif": "frisk.sömndagbok",
+   "group": "insomningsproblem",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sömnstörning.1",
+   "kind": "illustration",
+   "motif": "frisk.sömnstörning",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.insomningsproblem.1"
+   ]
+  },
+  {
+   "senseId": "s.sömnhygien.1",
+   "kind": "illustration",
+   "motif": "frisk.sömnhygien",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.sömnvana.1",
+    "s.sömnrutin.1",
+    "s.läggtid.1",
+    "s.skärmfri.1"
+   ]
+  },
+  {
+   "senseId": "s.sömnrutin.1",
+   "kind": "illustration",
+   "motif": "frisk.sömnrutin",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.sömnvana.1",
+    "s.sömnhygien.1",
+    "s.läggtid.1"
+   ]
+  },
+  {
+   "senseId": "s.läggtid.1",
+   "kind": "illustration",
+   "motif": "frisk.läggtid",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.sömnvana.1",
+    "s.sömnrutin.1",
+    "s.sömnhygien.1"
+   ]
+  },
+  {
+   "senseId": "s.sova-ut.1",
+   "kind": "illustration",
+   "motif": "frisk.sova-ut",
+   "group": "insomningsproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.nattsömn.1",
+    "s.sömnkvalitet.1",
+    "s.sömnbehov.1"
+   ]
+  },
+  {
+   "senseId": "s.koffein.1",
+   "kind": "illustration",
+   "motif": "frisk.koffein",
+   "group": "koffein",
+   "quiz": true,
+   "confusableWith": [
+    "s.dra-ner-på.1"
+   ]
+  },
+  {
+   "senseId": "s.dra-ner-på.1",
+   "kind": "illustration",
+   "motif": "frisk.dra-ner-på",
+   "group": "koffein",
+   "quiz": true,
+   "confusableWith": [
+    "s.koffein.1"
+   ]
+  },
+  {
+   "senseId": "s.skärmfri.1",
+   "kind": "illustration",
+   "motif": "frisk.skärmfri",
+   "group": "koffein",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.sömnhygien.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "f4b73792"
+   }
+  },
+  {
+   "senseId": "s.mörkläggningsgardin.1",
+   "kind": "illustration",
+   "motif": "frisk.mörkläggningsgardin",
+   "group": "insomningsproblem",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sömnkvalitet.1",
+   "kind": "illustration",
+   "motif": "frisk.sömnkvalitet",
+   "group": "insomningsproblem",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.nattsömn.1",
+    "s.sova-ut.1",
+    "s.sömnbehov.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "1149e4c4"
+   }
+  },
+  {
+   "senseId": "s.arbetsbelastning.1",
+   "kind": "illustration",
+   "motif": "frisk.arbetsbelastning",
+   "group": "arbetsbelastning",
+   "quiz": true,
+   "confusableWith": [
+    "s.tidspress.1",
+    "s.pressad.1",
+    "s.stressnivå.1"
+   ]
+  },
+  {
+   "senseId": "s.tidspress.1",
+   "kind": "illustration",
+   "motif": "frisk.tidspress",
+   "group": "arbetsbelastning",
+   "quiz": true,
+   "confusableWith": [
+    "s.arbetsbelastning.1",
+    "s.pressad.1",
+    "s.stressnivå.1"
+   ]
+  },
+  {
+   "senseId": "s.pressad.1",
+   "kind": "illustration",
+   "motif": "frisk.pressad",
+   "group": "arbetsbelastning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.arbetsbelastning.1",
+    "s.tidspress.1",
+    "s.stressnivå.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "dc0297e0"
+   }
+  },
+  {
+   "senseId": "s.varningssignal.1",
+   "kind": "illustration",
+   "motif": "frisk.varningssignal",
+   "group": "arbetsbelastning",
+   "quiz": true,
+   "confusableWith": [
+    "s.stressnivå.1"
+   ]
+  },
+  {
+   "senseId": "s.stressnivå.1",
+   "kind": "illustration",
+   "motif": "frisk.stressnivå",
+   "group": "arbetsbelastning",
+   "quiz": true,
+   "confusableWith": [
+    "s.arbetsbelastning.1",
+    "s.tidspress.1",
+    "s.pressad.1",
+    "s.varningssignal.1"
+   ]
+  },
+  {
+   "senseId": "s.utbränd.1",
+   "kind": "illustration",
+   "motif": "frisk.utbränd",
+   "group": "arbetsbelastning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.gå-in-i-väggen.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "8e60978a"
+   }
+  },
+  {
+   "senseId": "s.gå-in-i-väggen.1",
+   "kind": "illustration",
+   "motif": "frisk.gå-in-i-väggen",
+   "group": "arbetsbelastning",
+   "quiz": true,
+   "confusableWith": [
+    "s.utbränd.1"
+   ]
+  },
+  {
+   "senseId": "s.stresshantering.1",
+   "kind": "illustration",
+   "motif": "frisk.stresshantering",
+   "group": "stresshantering",
+   "quiz": true,
+   "confusableWith": [
+    "s.avslappning.1",
+    "s.avslappningsövning.1",
+    "s.mindfulness.1",
+    "s.stresstålig.1"
+   ]
+  },
+  {
+   "senseId": "s.säga-nej.1",
+   "kind": "illustration",
+   "motif": "frisk.säga-nej",
+   "group": "stresshantering",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ta-en-paus.1",
+   "kind": "illustration",
+   "motif": "frisk.ta-en-paus",
+   "group": "stresshantering",
+   "quiz": true,
+   "confusableWith": [
+    "s.egentid.1",
+    "s.avslappning.1"
+   ]
+  },
+  {
+   "senseId": "s.avslappning.1",
+   "kind": "illustration",
+   "motif": "frisk.avslappning",
+   "group": "stresshantering",
+   "quiz": true,
+   "confusableWith": [
+    "s.stresshantering.1",
+    "s.avslappningsövning.1",
+    "s.mindfulness.1",
+    "s.ta-en-paus.1",
+    "s.egentid.1"
+   ]
+  },
+  {
+   "senseId": "s.avslappningsövning.1",
+   "kind": "illustration",
+   "motif": "frisk.avslappningsövning",
+   "group": "stresshantering",
+   "quiz": true,
+   "confusableWith": [
+    "s.stresshantering.1",
+    "s.avslappning.1",
+    "s.mindfulness.1"
+   ]
+  },
+  {
+   "senseId": "s.mindfulness.1",
+   "kind": "illustration",
+   "motif": "frisk.mindfulness",
+   "group": "stresshantering",
+   "quiz": true,
+   "confusableWith": [
+    "s.stresshantering.1",
+    "s.avslappning.1",
+    "s.avslappningsövning.1"
+   ]
+  },
+  {
+   "senseId": "s.egentid.1",
+   "kind": "illustration",
+   "motif": "frisk.egentid",
+   "group": "stresshantering",
+   "quiz": true,
+   "confusableWith": [
+    "s.ta-en-paus.1",
+    "s.avslappning.1"
+   ]
+  },
+  {
+   "senseId": "s.stresstålig.1",
+   "kind": "illustration",
+   "motif": "frisk.stresstålig",
+   "group": "arbetsbelastning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stresshantering.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "bfd5307d"
+   }
+  },
+  {
+   "senseId": "s.tandvårdsrädsla.1",
+   "kind": "illustration",
+   "motif": "frisk.tandvårdsrädsla",
+   "group": "tandvårdsrädsla",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tandvärk.1",
+   "kind": "illustration",
+   "motif": "frisk.tandvärk",
+   "group": "tandvårdsrädsla",
+   "quiz": true,
+   "confusableWith": [
+    "s.ilning.1",
+    "s.karies.1"
+   ]
+  },
+  {
+   "senseId": "s.ilning.1",
+   "kind": "illustration",
+   "motif": "frisk.ilning",
+   "group": "tandvårdsrädsla",
+   "quiz": true,
+   "confusableWith": [
+    "s.tandvärk.1",
+    "s.karies.1"
+   ]
+  },
+  {
+   "senseId": "s.tandhygienist.1",
+   "kind": "illustration",
+   "motif": "frisk.tandhygienist",
+   "group": "tandhygienist",
+   "quiz": true,
+   "confusableWith": [
+    "s.tandsköterska.1",
+    "s.tandsten.1"
+   ]
+  },
+  {
+   "senseId": "s.tandsten.1",
+   "kind": "illustration",
+   "motif": "frisk.tandsten",
+   "group": "tandhygienist",
+   "quiz": true,
+   "confusableWith": [
+    "s.tandhygienist.1"
+   ]
+  },
+  {
+   "senseId": "s.tandkött.1",
+   "kind": "illustration",
+   "motif": "frisk.tandkött",
+   "group": "tandhygienist",
+   "quiz": true,
+   "confusableWith": [
+    "s.tandköttsinflammation.1"
+   ]
+  },
+  {
+   "senseId": "s.tandköttsinflammation.1",
+   "kind": "illustration",
+   "motif": "frisk.tandköttsinflammation",
+   "group": "tandhygienist",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.tandkött.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "7582c424"
+   }
+  },
+  {
+   "senseId": "s.tandsköterska.1",
+   "kind": "illustration",
+   "motif": "frisk.tandsköterska",
+   "group": "tandhygienist",
+   "quiz": true,
+   "confusableWith": [
+    "s.tandhygienist.1"
+   ]
+  },
+  {
+   "senseId": "s.karies.1",
+   "kind": "illustration",
+   "motif": "frisk.karies",
+   "group": "tandvårdsrädsla",
+   "quiz": true,
+   "confusableWith": [
+    "s.tandvärk.1",
+    "s.ilning.1"
+   ]
+  },
+  {
+   "senseId": "s.rotfyllning.1",
+   "kind": "illustration",
+   "motif": "frisk.rotfyllning",
+   "group": "tandvårdsrädsla",
+   "quiz": true
+  },
+  {
+   "senseId": "s.visdomstand.1",
+   "kind": "illustration",
+   "motif": "frisk.visdomstand",
+   "group": "tandvårdsrädsla",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fluor.1",
+   "kind": "illustration",
+   "motif": "frisk.fluor",
+   "group": "tandhygienist",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mellanrum.1",
+   "kind": "illustration",
+   "motif": "frisk.mellanrum",
+   "group": "tandhygienist",
+   "quiz": true
+  },
+  {
+   "senseId": "s.munhälsa.1",
+   "kind": "illustration",
+   "motif": "frisk.munhälsa",
+   "group": "tandhygienist",
+   "quiz": true,
+   "confusableWith": [
+    "s.tandhälsa.1"
+   ]
+  },
+  {
+   "senseId": "s.tandhälsa.1",
+   "kind": "illustration",
+   "motif": "frisk.tandhälsa",
+   "group": "tandhygienist",
+   "quiz": true,
+   "confusableWith": [
+    "s.munhälsa.1"
+   ]
+  },
+  {
+   "senseId": "s.hälsoundersökning.1",
+   "kind": "illustration",
+   "motif": "frisk.hälsoundersökning",
+   "group": "hälsoundersökning",
+   "quiz": true,
+   "confusableWith": [
+    "s.hälsokontroll.1",
+    "s.hälsosamtal.1",
+    "s.rutinkontroll.1",
+    "s.screening.1"
+   ]
+  },
+  {
+   "senseId": "s.hälsokontroll.1",
+   "kind": "illustration",
+   "motif": "frisk.hälsokontroll",
+   "group": "hälsoundersökning",
+   "quiz": true,
+   "confusableWith": [
+    "s.hälsoundersökning.1",
+    "s.hälsosamtal.1",
+    "s.rutinkontroll.1",
+    "s.screening.1"
+   ]
+  },
+  {
+   "senseId": "s.hälsosamtal.1",
+   "kind": "illustration",
+   "motif": "frisk.hälsosamtal",
+   "group": "hälsoundersökning",
+   "quiz": true,
+   "confusableWith": [
+    "s.hälsoundersökning.1",
+    "s.hälsokontroll.1",
+    "s.rutinkontroll.1",
+    "s.screening.1"
+   ]
+  },
+  {
+   "senseId": "s.väga-sig.1",
+   "kind": "illustration",
+   "motif": "frisk.väga-sig",
+   "group": "väga-sig",
+   "quiz": true,
+   "confusableWith": [
+    "s.BMI.1",
+    "s.fetma.1"
+   ]
+  },
+  {
+   "senseId": "s.BMI.1",
+   "kind": "illustration",
+   "motif": "frisk.BMI",
+   "group": "väga-sig",
+   "quiz": true,
+   "confusableWith": [
+    "s.väga-sig.1",
+    "s.fetma.1"
+   ]
+  },
+  {
+   "senseId": "s.kolesterol.1",
+   "kind": "illustration",
+   "motif": "frisk.kolesterol",
+   "group": "väga-sig",
+   "quiz": true,
+   "confusableWith": [
+    "s.blodvärde.1",
+    "s.mätvärde.1"
+   ]
+  },
+  {
+   "senseId": "s.blodvärde.1",
+   "kind": "illustration",
+   "motif": "frisk.blodvärde",
+   "group": "väga-sig",
+   "quiz": true,
+   "confusableWith": [
+    "s.mätvärde.1",
+    "s.kolesterol.1"
+   ]
+  },
+  {
+   "senseId": "s.mätvärde.1",
+   "kind": "illustration",
+   "motif": "frisk.mätvärde",
+   "group": "väga-sig",
+   "quiz": true,
+   "confusableWith": [
+    "s.blodvärde.1",
+    "s.kolesterol.1"
+   ]
+  },
+  {
+   "senseId": "s.blodtrycksmätning.1",
+   "kind": "illustration",
+   "motif": "frisk.blodtrycksmätning",
+   "group": "väga-sig",
+   "quiz": true
+  },
+  {
+   "senseId": "s.screening.1",
+   "kind": "illustration",
+   "motif": "frisk.screening",
+   "group": "hälsoundersökning",
+   "quiz": true,
+   "confusableWith": [
+    "s.hälsoundersökning.1",
+    "s.hälsokontroll.1",
+    "s.hälsosamtal.1",
+    "s.rutinkontroll.1"
+   ]
+  },
+  {
+   "senseId": "s.mammografi.1",
+   "kind": "illustration",
+   "motif": "frisk.mammografi",
+   "group": "mammografi",
+   "quiz": true
+  },
+  {
+   "senseId": "s.cellprov.1",
+   "kind": "illustration",
+   "motif": "frisk.cellprov",
+   "group": "mammografi",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hörseltest.1",
+   "kind": "illustration",
+   "motif": "frisk.hörseltest",
+   "group": "mammografi",
+   "quiz": true
+  },
+  {
+   "senseId": "s.rutinkontroll.1",
+   "kind": "illustration",
+   "motif": "frisk.rutinkontroll",
+   "group": "hälsoundersökning",
+   "quiz": true,
+   "confusableWith": [
+    "s.hälsoundersökning.1",
+    "s.hälsokontroll.1",
+    "s.hälsosamtal.1",
+    "s.screening.1"
+   ]
+  },
+  {
+   "senseId": "s.förebyggande.1",
+   "kind": "illustration",
+   "motif": "frisk.förebyggande",
+   "group": "förebyggande",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.förebygga.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "ca2ae79f"
+   }
+  },
+  {
+   "senseId": "s.riskfaktor.1",
+   "kind": "illustration",
+   "motif": "frisk.riskfaktor",
+   "group": "riskfaktor",
+   "quiz": true,
+   "confusableWith": [
+    "s.riskgrupp.1",
+    "s.livsstilssjukdom.1",
+    "s.levnadsvana.1",
+    "s.måttlig.1"
+   ]
+  },
+  {
+   "senseId": "s.stillasittande.1",
+   "kind": "illustration",
+   "motif": "frisk.stillasittande",
+   "group": "riskfaktor",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "83270dd8"
+   }
+  },
+  {
+   "senseId": "s.fetma.1",
+   "kind": "illustration",
+   "motif": "frisk.fetma",
+   "group": "riskfaktor",
+   "quiz": true,
+   "confusableWith": [
+    "s.väga-sig.1",
+    "s.BMI.1"
+   ]
+  },
+  {
+   "senseId": "s.ärftlighet.1",
+   "kind": "illustration",
+   "motif": "frisk.ärftlighet",
+   "group": "riskfaktor",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "143ba04e"
+   }
+  },
+  {
+   "senseId": "s.riskgrupp.1",
+   "kind": "illustration",
+   "motif": "frisk.riskgrupp",
+   "group": "riskfaktor",
+   "quiz": true,
+   "confusableWith": [
+    "s.riskfaktor.1",
+    "s.livsstilssjukdom.1",
+    "s.levnadsvana.1"
+   ]
+  },
+  {
+   "senseId": "s.levnadsvana.1",
+   "kind": "illustration",
+   "motif": "frisk.levnadsvana",
+   "group": "levnadsvana",
+   "quiz": true,
+   "confusableWith": [
+    "s.riskfaktor.1",
+    "s.riskgrupp.1",
+    "s.livsstilssjukdom.1",
+    "s.livsstil.1",
+    "s.hälsoval.1"
+   ]
+  },
+  {
+   "senseId": "s.förebygga.1",
+   "kind": "illustration",
+   "motif": "frisk.förebygga",
+   "group": "förebyggande",
+   "quiz": true,
+   "confusableWith": [
+    "s.förebyggande.1"
+   ]
+  },
+  {
+   "senseId": "s.livsstilssjukdom.1",
+   "kind": "illustration",
+   "motif": "frisk.livsstilssjukdom",
+   "group": "riskfaktor",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.riskfaktor.1",
+    "s.riskgrupp.1",
+    "s.levnadsvana.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "588a8759"
+   }
+  },
+  {
+   "senseId": "s.sluta-röka.1",
+   "kind": "illustration",
+   "motif": "frisk.sluta-röka",
+   "group": "sluta-röka",
+   "quiz": true,
+   "confusableWith": [
+    "s.passiv-rökning.1"
+   ]
+  },
+  {
+   "senseId": "s.snus.1",
+   "kind": "illustration",
+   "motif": "frisk.snus",
+   "group": "sluta-röka",
+   "quiz": true
+  },
+  {
+   "senseId": "s.passiv-rökning.1",
+   "kind": "illustration",
+   "motif": "frisk.passiv-rökning",
+   "group": "sluta-röka",
+   "quiz": true,
+   "confusableWith": [
+    "s.sluta-röka.1"
+   ]
+  },
+  {
+   "senseId": "s.riskbruk.1",
+   "kind": "illustration",
+   "motif": "frisk.riskbruk",
+   "group": "riskbruk",
+   "quiz": true,
+   "confusableWith": [
+    "s.måttlig.1"
+   ]
+  },
+  {
+   "senseId": "s.måttlig.1",
+   "kind": "illustration",
+   "motif": "frisk.måttlig",
+   "group": "riskbruk",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.riskbruk.1",
+    "s.riskfaktor.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "21212883"
+   }
+  },
+  {
+   "senseId": "s.livsstil.1",
+   "kind": "illustration",
+   "motif": "frisk.livsstil",
+   "group": "levnadsvana",
+   "quiz": true,
+   "confusableWith": [
+    "s.levnadsvana.1",
+    "s.hälsoval.1"
+   ]
+  },
+  {
+   "senseId": "s.hälsoval.1",
+   "kind": "illustration",
+   "motif": "frisk.hälsoval",
+   "group": "levnadsvana",
+   "quiz": true,
+   "confusableWith": [
+    "s.levnadsvana.1",
+    "s.livsstil.1"
+   ]
   }
  ]
 }
