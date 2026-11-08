@@ -1,8 +1,22 @@
 # Projektstatus – överlämning
 
-**Version:** 0.22.0 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.22 utvecklades i grenen `claude/swechan-0.22`)
+**Version:** 0.23.0 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.23 utvecklades i grenen `claude/swechan-0.23`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.23 – släppt 2026-11-08 (Hälsa & sjukvård har bilder)
+
+- **Gjort:**
+  - Bilder till hela *Hälsa & sjukvård* (801–857): 629 av 630 modulord. *motion* har ingen bild (underkänd två gånger).
+  - 145 symbol- och adjektivbilder blindtestades (122 godkända, 23 synonymfall).
+  - Motiven finns i `symptoms.ts` (`sympt.`), `care.ts` (`besök.`), `disease.ts` (`sjuk.`), `medicine.ts` (`med.`), `firstaid.ts` (`akut.`) och `prevention.ts` (`frisk.`).
+  - Vård markeras med ett grönt kors. Inget rött kors, inga läkemedelsmärken och inga myndighetslogotyper.
+  - I hela appen har 5 541 av 6 182 modulord en bild.
+- **Nästa steg (0.24):** 900-serien (*Känslor & psykologi*, cirka 630 ord) och övriga moduler utan bild.
+- **Kom ihåg:**
+  - Acceptlistan till `art:blind:record` är kommaseparerad. Med mellanslag godtas ingen av de listade bilderna.
+  - Ett svar med låg säkerhet godkänns aldrig som synonymfall. Rita hellre om bilden än att lägga till fler `confusableWith`.
+  - När en bild ändras efter blindtestet (även bara en färg) måste den testas igen.
 
 ## 0.22 – släppt 2026-11-08 (Resor & transport har bilder)
 

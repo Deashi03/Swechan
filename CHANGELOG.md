@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.23.0 – 2026-11-08
+
+Fortsättning på bilderna till de färdiga modulerna. Hela överämnet *Hälsa & sjukvård* (801–857) har nu bilder: 629 av 630 modulord. Alla symbol- och adjektivbilder gick igenom blindtestgrinden.
+
+### Hälsa & sjukvård (629 nya bilder)
+- **Symtom och besvär (801–807):** feber och frossa, hosta och halsont, ont i magen, huvudvärk och yrsel, trötthet och svaghet, hudutslag och klåda, att beskriva symtom för vården.
+- **Vårdbesök (811–817):** vårdcentral och mottagning, att boka läkartid, sjukdomshistoria, undersökning och provtagning, remiss och specialist, besked och uppföljning, patientens frågor.
+- **Sjukdomar och diagnoser (821–827):** förkylning och influensa, infektionssjukdomar, allergier och astma, hjärt-kärlsjukdomar, diabetes och ämnesomsättning, kroniska sjukdomar, skillnaden mellan symtom och diagnos.
+- **Läkemedel och behandling (831–837):** tabletter och kapslar, recept och apotek, dosering, biverkningar och varningar, salvor och inhalatorer, vaccination, att följa en behandling.
+- **Första hjälpen och olyckor (841–847):** sår och blödningar, stukningar och frakturer, brännskador, medvetslöshet, HLR och livräddning, att larma 112, att beskriva en skada.
+- **Förebyggande hälsa (851–857):** motion och återhämtning, kost, sömn, stresshantering, tandhälsa, hälsoundersökningar, riskfaktorer och hälsoval.
+- Inga läkemedelsmärken, organisationers logotyper eller skyddade emblem ritas. Vård markeras med ett allmänt grönt kors. Det röda korset på ambulansen och på sjuksköterskor i 0.23:s motiv byttes mot ett grönt kors, och de berörda bilderna blindtestades igen. Larmcentralen, läkemedelsmyndigheten och läkemedelsdatabasen ritas som allmänna scener.
+- Ett ord har ingen bild: *motion*. Det underkändes två gånger i blindtestet och fick planstatus `none`.
+
+### Blindtest
+- 145 bilder blindtestades i den här versionen: 122 godkända och 23 godkända synonymfall. Underkända bilder ritades om och testades igen, till exempel *Alzheimers sjukdom*, *receptbelagd*, *medvetslös*, *medvetslöshet*, *vid medvetande* och *fysisk aktivitet*.
+- Symtomorden har många nära synonymer. De fick `confusableWith` i grupper, till exempel trötthetsorden (*trötthet*, *utmattad*, *orkeslös*, *kraftlös* …), feberorden och yrselorden, samt *hjärt-lungräddning*/*HLR*, *apotekare*/*farmaceut* och *skriva ut*/*förskriva*/*ordinera*.
+
+### Teknik
+- Nya motivfiler som laddas när de behövs: `symptoms.ts` (`sympt.`), `care.ts` (`besök.`), `disease.ts` (`sjuk.`), `medicine.ts` (`med.`), `firstaid.ts` (`akut.`) och `prevention.ts` (`frisk.`).
+- `lying()` i `firstaid.ts` ritar en liggande person med öppna eller slutna ögon, och `bulbI()` visar medvetande som en tänd eller släckt lampa.
+
+I hela appen har nu 5 541 av 6 182 modulord en bild. Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v27`.
+
 ## 0.22.0 – 2026-11-08
 
 Fortsättning på bilderna till de färdiga modulerna. Hela överämnet *Resor & transport* (601–657) har nu bilder: 634 av 636 modulord. Alla symbol- och adjektivbilder gick igenom blindtestgrinden.
