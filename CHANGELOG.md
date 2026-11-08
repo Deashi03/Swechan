@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.20.0 – 2026-11-08
+
+Produktägaren bad om bilder till de färdiga modulerna. Hela överämnet *Tid & vardagsrutiner* (401–442) har nu bilder: 628 av 630 modulord. Alla bilder gick igenom blindtestgrinden från 0.19.1.
+
+### Tid & vardagsrutiner (628 nya bilder)
+- **Klockan och kalendern (401–407):**
+  - klockslag visas på en analog klocka där den nämnda delen av timmen är markerad (*kvart över*, *fem i*, *halv tre*);
+  - veckodagar och datum visas i en kalender där dagens datum är markerat (*i måndags*, *i förrgår*, *förrförra*);
+  - tidsfrister och bokningar.
+- **Morgon och kväll (408–414):** vakna, göra sig i ordning, frukost, pendla, varva ner, läggdags och vanor.
+- **Planering (415–421):** listor, prioriteringar, kalender, möten, skjuta upp, hinna och en ledig dag.
+- **Vardagliga handlingar (422–428):** hämta och lämna, ta fram och lägga undan, sätta på och stänga av, följa med, minnas, börja och sluta, behöva och vilja.
+- **Mängder och mått (429–435):** tal, vikt, volym, längd, hastighet, temperatur, ungefärliga mängder, delar och storlekar. Siffror och enheter (*kg*, *cl*, *km*) får synas eftersom de aldrig stavar ordet.
+- **När något går fel (436–442):** tappa bort, något går sönder, missförstånd, försenad, be om hjälp, låna och lämna tillbaka, konflikter.
+- Två ord har ingen bild: *så fort* (funktionsord) och *veckovis*, som underkändes i blindtestet två gånger.
+
+### Blindtest
+- Alla 192 symbol- och adjektivbilder i serien testades av granskare som inte visste svaret: 98 godkända och 94 godkända synonymfall. Bilder som underkändes ritades om och testades igen.
+- Nära synonymer som en bild inte kan skilja åt (*jättestor*/*enorm*/*gigantisk*, *innan dess*/*dessförinnan*, *totalt*/*sammanlagt*) har fått `confusableWith`. De ställs aldrig mot varandra i bildövningar.
+- `art:blind:record` matchar nu hela ord i granskarens kommentar, så att *prio* inte hittas i *prioritering*.
+
+### Teknik
+- Nya motivfiler som laddas när de behövs: `time.ts` (`tid.`), `routine.ts` (`rut.`), `planning.ts` (`plan.`), `actions.ts` (`akt.`), `measure.ts` (`mått.`) och `mishaps.ts` (`vard.`).
+- `clock()` och `cal()` i `time.ts` ritar klockor med markerade sektorer och kalendrar med markerade dagar.
+
+I hela appen har nu 3 688 av 6 182 modulord en bild. Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v24`.
+
 ## 0.19.1 – 2026-11-08
 
 Produktägaren påpekade att frisyr- och klädadjektivens bilder (*lockig*, *vågig*, *tovig*, *tajt*, *lös*) inte visade orden. Den här versionen går igenom orsaken, rättar alla bilder med samma risk och inför ett styrsystem som stoppar felet framöver.

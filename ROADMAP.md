@@ -81,7 +81,10 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.19.1 – blindtest och styrsystem för bilder (klar)
 - Alla symbol- och adjektivbilder blindtestade och rättade. Blindtest med fingeravtryck krävs nu för sådana bilder (test stoppar bygget).
 
-## v0.20 och framåt – två spår per release
+## v0.20 – Tid & vardagsrutiner har bilder (klar)
+- 628 bilder för 401–442, alla symbol- och adjektivbilder blindtestade.
+
+## v0.21 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
