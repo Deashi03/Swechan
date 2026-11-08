@@ -40863,7 +40863,8 @@
    "quiz": true,
    "confusableWith": [
     "s.avgångstavla.1",
-    "s.helgtrafik.1"
+    "s.helgtrafik.1",
+    "s.gles.1"
    ]
   },
   {
@@ -40978,8 +40979,15 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.turtäthet.1"
-   ]
+    "s.turtäthet.1",
+    "s.tidtabell.1",
+    "s.sista-bussen.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ec80de4a"
+   }
   },
   {
    "senseId": "s.nattbuss.1",
@@ -41008,7 +41016,8 @@
    "group": "nattbuss",
    "quiz": true,
    "confusableWith": [
-    "s.nattbuss.1"
+    "s.nattbuss.1",
+    "s.gles.1"
    ]
   },
   {
@@ -41180,7 +41189,8 @@
    "group": "riktning",
    "quiz": true,
    "confusableWith": [
-    "s.åt-vilket-håll.1"
+    "s.åt-vilket-håll.1",
+    "s.åt-andra-hållet.1"
    ]
   },
   {
@@ -41208,8 +41218,14 @@
    "symbol": true,
    "confusableWith": [
     "s.åka-fel.1",
-    "s.vända-om.1"
-   ]
+    "s.vända-om.1",
+    "s.riktning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "314ec27b"
+   }
   },
   {
    "senseId": "s.mittemot.1",
@@ -41242,14 +41258,6 @@
     "round": "0.21.0",
     "hash": "e43d38fe"
    }
-  },
-  {
-   "senseId": "s.varifrån.1",
-   "kind": "illustration",
-   "motif": "trafik.varifrån",
-   "group": "varifrån",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.linjenummer.1",
@@ -41386,7 +41394,12 @@
    "symbol": true,
    "confusableWith": [
     "s.ända-fram.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "15008f60"
+   }
   },
   {
    "senseId": "s.åt-höger.1",
@@ -41396,8 +41409,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.svänga.1"
-   ]
+    "s.svänga.1",
+    "s.vika-av.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "3a06435b"
+   }
   },
   {
    "senseId": "s.åt-vänster.1",
@@ -41407,8 +41426,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.svänga.1"
-   ]
+    "s.svänga.1",
+    "s.vika-av.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "97e06bae"
+   }
   },
   {
    "senseId": "s.höger-om.1",
@@ -41419,7 +41444,12 @@
    "symbol": true,
    "confusableWith": [
     "s.på-höger-hand.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "f73b44da"
+   }
   },
   {
    "senseId": "s.vänster-om.1",
@@ -41430,7 +41460,12 @@
    "symbol": true,
    "confusableWith": [
     "s.på-vänster-hand.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1121cf7b"
+   }
   },
   {
    "senseId": "s.på-höger-hand.1",
@@ -41441,7 +41476,12 @@
    "symbol": true,
    "confusableWith": [
     "s.höger-om.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "abafca36"
+   }
   },
   {
    "senseId": "s.på-vänster-hand.1",
@@ -41452,7 +41492,12 @@
    "symbol": true,
    "confusableWith": [
     "s.vänster-om.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "e124edb5"
+   }
   },
   {
    "senseId": "s.förbi.1",
@@ -41463,7 +41508,12 @@
    "symbol": true,
    "confusableWith": [
     "s.passera.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1978e302"
+   }
   },
   {
    "senseId": "s.gatuhörn.1",
@@ -41485,7 +41535,12 @@
    "confusableWith": [
     "s.gatuhörn.1",
     "s.hörnhus.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "5a66250f"
+   }
   },
   {
    "senseId": "s.tvärgata.1",
@@ -41505,7 +41560,9 @@
    "quiz": true,
    "confusableWith": [
     "s.svänga.1",
-    "s.svänga-in.1"
+    "s.svänga-in.1",
+    "s.åt-höger.1",
+    "s.åt-vänster.1"
    ]
   },
   {
@@ -41527,7 +41584,12 @@
    "symbol": true,
    "confusableWith": [
     "s.rakt-fram.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "86acb47e"
+   }
   },
   {
    "senseId": "s.korsning.1",
@@ -41757,7 +41819,12 @@
    "confusableWith": [
     "s.övergångsställe.1",
     "s.korsa.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "f100cbd2"
+   }
   },
   {
    "senseId": "s.titta-åt-båda-hållen.1",
@@ -41768,7 +41835,12 @@
    "symbol": true,
    "confusableWith": [
     "s.se-sig-för.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "940f9ff7"
+   }
   },
   {
    "senseId": "s.se-sig-för.1",
@@ -41789,7 +41861,12 @@
    "symbol": true,
    "confusableWith": [
     "s.mötande-trafik.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "14534f4f"
+   }
   },
   {
    "senseId": "s.gångtunnel.1",
@@ -41852,7 +41929,12 @@
    "symbol": true,
    "confusableWith": [
     "s.norr-om.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "f7472612"
+   }
   },
   {
    "senseId": "s.södra.1",
@@ -41863,7 +41945,12 @@
    "symbol": true,
    "confusableWith": [
     "s.söder-om.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "8498342d"
+   }
   },
   {
    "senseId": "s.östra.1",
@@ -41871,7 +41958,12 @@
    "motif": "väg.östra",
    "group": "norra",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "fdd37710"
+   }
   },
   {
    "senseId": "s.västra.1",
@@ -41879,7 +41971,12 @@
    "motif": "väg.västra",
    "group": "norra",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a40c27c5"
+   }
   },
   {
    "senseId": "s.norr-om.1",
@@ -41890,7 +41987,12 @@
    "symbol": true,
    "confusableWith": [
     "s.norra.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "b5f912a4"
+   }
   },
   {
    "senseId": "s.söder-om.1",
@@ -41901,7 +42003,12 @@
    "symbol": true,
    "confusableWith": [
     "s.södra.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "811f9646"
+   }
   },
   {
    "senseId": "s.du-är-här.1",
@@ -41909,7 +42016,12 @@
    "motif": "väg.du-är-här",
    "group": "kartapp",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6d7ba8c8"
+   }
   },
   {
    "senseId": "s.orientera-sig.1",
@@ -41981,7 +42093,12 @@
    "symbol": true,
    "confusableWith": [
     "s.långt-bort.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "32019d52"
+   }
   },
   {
    "senseId": "s.långt-bort.1",
@@ -41993,7 +42110,12 @@
    "confusableWith": [
     "s.hur-långt.1",
     "s.avlägsen.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7056a3f5"
+   }
   },
   {
    "senseId": "s.en-bit.1",
@@ -42016,7 +42138,12 @@
    "confusableWith": [
     "s.nära-till.1",
     "s.runt-hörnet.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "46e313b8"
+   }
   },
   {
    "senseId": "s.runt-hörnet.1",
@@ -42028,7 +42155,12 @@
    "confusableWith": [
     "s.i-närheten.1",
     "s.en-bit.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "113dd168"
+   }
   },
   {
    "senseId": "s.nära-till.1",
@@ -42039,7 +42171,12 @@
    "symbol": true,
    "confusableWith": [
     "s.i-närheten.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ce8204a0"
+   }
   },
   {
    "senseId": "s.promenera.1",
@@ -42054,7 +42191,12 @@
    "motif": "väg.halvvägs",
    "group": "halvvägs",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "786069f0"
+   }
   },
   {
    "senseId": "s.fram-och-tillbaka.1",
@@ -42062,7 +42204,12 @@
    "motif": "väg.fram-och-tillbaka",
    "group": "fram",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "3a253467"
+   }
   },
   {
    "senseId": "s.fågelvägen.1",
@@ -42073,7 +42220,12 @@
    "symbol": true,
    "confusableWith": [
     "s.genväg.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "f089368c"
+   }
   },
   {
    "senseId": "s.avlägsen.1",
@@ -42084,7 +42236,12 @@
    "symbol": true,
    "confusableWith": [
     "s.långt-bort.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "de717dd7"
+   }
   },
   {
    "senseId": "s.nordost.1",
@@ -42177,7 +42334,12 @@
    "symbol": true,
    "confusableWith": [
     "s.gårdshus.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "d999db8a"
+   }
   },
   {
    "senseId": "s.gårdshus.1",
@@ -42199,7 +42361,12 @@
    "symbol": true,
    "confusableWith": [
     "s.gårdshus.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "9f277c69"
+   }
   },
   {
    "senseId": "s.porttelefon.1",
@@ -42221,7 +42388,12 @@
    "symbol": true,
    "confusableWith": [
     "s.porttelefon.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "fa96526b"
+   }
   },
   {
    "senseId": "s.ringa-på.1",
@@ -42242,7 +42414,12 @@
    "symbol": true,
    "confusableWith": [
     "s.våningsplan.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6771424f"
+   }
   },
   {
    "senseId": "s.våningsplan.1",
@@ -42321,7 +42498,12 @@
    "symbol": true,
    "confusableWith": [
     "s.backe.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "06d81288"
+   }
   },
   {
    "senseId": "s.nedför.1",
@@ -42329,7 +42511,12 @@
    "motif": "väg.nedför",
    "group": "backe",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a2510c16"
+   }
   },
   {
    "senseId": "s.allé.1",
@@ -42358,7 +42545,12 @@
    "motif": "väg.på-vägen",
    "group": "färdväg",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "3882423c"
+   }
   },
   {
    "senseId": "s.svänga-in.1",
@@ -42377,7 +42569,8 @@
    "group": "komma",
    "quiz": true,
    "confusableWith": [
-    "s.hitta-fram.1"
+    "s.hitta-fram.1",
+    "s.hela-vägen.1"
    ]
   },
   {
@@ -42388,8 +42581,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.färdväg.1"
-   ]
+    "s.färdväg.1",
+    "s.komma-fram-till.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "6ae6b44f"
+   }
   },
   {
    "senseId": "s.du-kan-inte-missa-det.1",
@@ -42400,6 +42599,1114 @@
    "symbol": true,
    "confusableWith": [
     "s.landmärke.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "8bf68aeb"
+   }
+  },
+  {
+   "senseId": "s.ratt.1",
+   "kind": "illustration",
+   "motif": "bil.ratt",
+   "group": "ratt",
+   "quiz": true,
+   "confusableWith": [
+    "s.förare.1"
+   ]
+  },
+  {
+   "senseId": "s.motor.1",
+   "kind": "illustration",
+   "motif": "bil.motor",
+   "group": "motor",
+   "quiz": true,
+   "confusableWith": [
+    "s.motorhuv.1"
+   ]
+  },
+  {
+   "senseId": "s.gaspedal.1",
+   "kind": "illustration",
+   "motif": "bil.gaspedal",
+   "group": "gaspedal",
+   "quiz": true,
+   "confusableWith": [
+    "s.broms.1",
+    "s.gasa.1"
+   ]
+  },
+  {
+   "senseId": "s.broms.1",
+   "kind": "illustration",
+   "motif": "bil.broms",
+   "group": "gaspedal",
+   "quiz": true,
+   "confusableWith": [
+    "s.gaspedal.1",
+    "s.bromsa.1"
+   ]
+  },
+  {
+   "senseId": "s.backspegel.1",
+   "kind": "illustration",
+   "motif": "bil.backspegel",
+   "group": "backspegel",
+   "quiz": true,
+   "confusableWith": [
+    "s.sidospegel.1",
+    "s.backa.1"
+   ]
+  },
+  {
+   "senseId": "s.sidospegel.1",
+   "kind": "illustration",
+   "motif": "bil.sidospegel",
+   "group": "backspegel",
+   "quiz": true,
+   "confusableWith": [
+    "s.backspegel.1"
+   ]
+  },
+  {
+   "senseId": "s.vindruta.1",
+   "kind": "illustration",
+   "motif": "bil.vindruta",
+   "group": "vindruta",
+   "quiz": true,
+   "confusableWith": [
+    "s.vindrutetorkare.1"
+   ]
+  },
+  {
+   "senseId": "s.vindrutetorkare.1",
+   "kind": "illustration",
+   "motif": "bil.vindrutetorkare",
+   "group": "vindruta",
+   "quiz": true,
+   "confusableWith": [
+    "s.vindruta.1"
+   ]
+  },
+  {
+   "senseId": "s.strålkastare.1",
+   "kind": "illustration",
+   "motif": "bil.strålkastare",
+   "group": "strålkastare",
+   "quiz": true,
+   "confusableWith": [
+    "s.blinkers.1"
+   ]
+  },
+  {
+   "senseId": "s.blinkers.1",
+   "kind": "illustration",
+   "motif": "bil.blinkers",
+   "group": "strålkastare",
+   "quiz": true,
+   "confusableWith": [
+    "s.strålkastare.1"
+   ]
+  },
+  {
+   "senseId": "s.baksäte.1",
+   "kind": "illustration",
+   "motif": "bil.baksäte",
+   "group": "baksäte",
+   "quiz": true,
+   "confusableWith": [
+    "s.säkerhetsbälte.1"
+   ]
+  },
+  {
+   "senseId": "s.säkerhetsbälte.1",
+   "kind": "illustration",
+   "motif": "bil.säkerhetsbälte",
+   "group": "säkerhetsbälte",
+   "quiz": true,
+   "confusableWith": [
+    "s.spänna-fast-sig.1",
+    "s.baksäte.1"
+   ]
+  },
+  {
+   "senseId": "s.bagagelucka.1",
+   "kind": "illustration",
+   "motif": "bil.bagagelucka",
+   "group": "bagagelucka",
+   "quiz": true,
+   "confusableWith": [
+    "s.registreringsskylt.1"
+   ]
+  },
+  {
+   "senseId": "s.registreringsskylt.1",
+   "kind": "illustration",
+   "motif": "bil.registreringsskylt",
+   "group": "registreringsskylt",
+   "quiz": true,
+   "confusableWith": [
+    "s.bagagelucka.1"
+   ]
+  },
+  {
+   "senseId": "s.motorhuv.1",
+   "kind": "illustration",
+   "motif": "bil.motorhuv",
+   "group": "motor",
+   "quiz": true,
+   "confusableWith": [
+    "s.motor.1"
+   ]
+  },
+  {
+   "senseId": "s.instrumentbräda.1",
+   "kind": "illustration",
+   "motif": "bil.instrumentbräda",
+   "group": "instrumentbräda",
+   "quiz": true,
+   "confusableWith": [
+    "s.varningslampa.1"
+   ]
+  },
+  {
+   "senseId": "s.körkort.1",
+   "kind": "illustration",
+   "motif": "bil.körkort",
+   "group": "körkort",
+   "quiz": true,
+   "confusableWith": [
+    "s.förare.1"
+   ]
+  },
+  {
+   "senseId": "s.förare.1",
+   "kind": "illustration",
+   "motif": "bil.förare",
+   "group": "förare",
+   "quiz": true,
+   "confusableWith": [
+    "s.körkort.1",
+    "s.starta-motorn.1",
+    "s.ratt.1"
+   ]
+  },
+  {
+   "senseId": "s.spänna-fast-sig.1",
+   "kind": "illustration",
+   "motif": "bil.spänna-fast-sig",
+   "group": "spänna",
+   "quiz": true,
+   "confusableWith": [
+    "s.säkerhetsbälte.1"
+   ]
+  },
+  {
+   "senseId": "s.starta-motorn.1",
+   "kind": "illustration",
+   "motif": "bil.starta-motorn",
+   "group": "starta",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.förare.1"
+   ]
+  },
+  {
+   "senseId": "s.handbroms.1",
+   "kind": "illustration",
+   "motif": "bil.handbroms",
+   "group": "handbroms",
+   "quiz": true,
+   "confusableWith": [
+    "s.bromsa.1"
+   ]
+  },
+  {
+   "senseId": "s.gasa.1",
+   "kind": "illustration",
+   "motif": "bil.gasa",
+   "group": "gasa",
+   "quiz": true,
+   "confusableWith": [
+    "s.gaspedal.1",
+    "s.bromsa.1"
+   ]
+  },
+  {
+   "senseId": "s.bromsa.1",
+   "kind": "illustration",
+   "motif": "bil.bromsa",
+   "group": "gasa",
+   "quiz": true,
+   "confusableWith": [
+    "s.broms.1",
+    "s.gasa.1",
+    "s.handbroms.1"
+   ]
+  },
+  {
+   "senseId": "s.backa.1",
+   "kind": "illustration",
+   "motif": "bil.backa",
+   "group": "backa",
+   "quiz": true,
+   "confusableWith": [
+    "s.backspegel.1"
+   ]
+  },
+  {
+   "senseId": "s.körfält.1",
+   "kind": "illustration",
+   "motif": "bil.körfält",
+   "group": "körfält",
+   "quiz": true,
+   "confusableWith": [
+    "s.byta-fil.1"
+   ]
+  },
+  {
+   "senseId": "s.byta-fil.1",
+   "kind": "illustration",
+   "motif": "bil.byta-fil",
+   "group": "körfält",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.körfält.1",
+    "s.köra-om.1"
+   ]
+  },
+  {
+   "senseId": "s.köra-om.1",
+   "kind": "illustration",
+   "motif": "bil.köra-om",
+   "group": "körfält",
+   "quiz": true,
+   "confusableWith": [
+    "s.byta-fil.1"
+   ]
+  },
+  {
+   "senseId": "s.hastighetsgräns.1",
+   "kind": "illustration",
+   "motif": "bil.hastighetsgräns",
+   "group": "hastighetsgräns",
+   "quiz": true
+  },
+  {
+   "senseId": "s.motorväg.1",
+   "kind": "illustration",
+   "motif": "bil.motorväg",
+   "group": "motorväg",
+   "quiz": true,
+   "confusableWith": [
+    "s.motortrafikled.1",
+    "s.landsväg.1"
+   ]
+  },
+  {
+   "senseId": "s.landsväg.1",
+   "kind": "illustration",
+   "motif": "bil.landsväg",
+   "group": "motorväg",
+   "quiz": true,
+   "confusableWith": [
+    "s.motorväg.1"
+   ]
+  },
+  {
+   "senseId": "s.automatväxlad.1",
+   "kind": "illustration",
+   "motif": "bil.automatväxlad",
+   "group": "automatväxlad",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.manuell-växellåda.1",
+   "kind": "illustration",
+   "motif": "bil.manuell-växellåda",
+   "group": "automatväxlad",
+   "quiz": true
+  },
+  {
+   "senseId": "s.parkera.1",
+   "kind": "illustration",
+   "motif": "bil.parkera",
+   "group": "parkera",
+   "quiz": true,
+   "confusableWith": [
+    "s.fickparkera.1",
+    "s.parkering.1"
+   ]
+  },
+  {
+   "senseId": "s.parkering.1",
+   "kind": "illustration",
+   "motif": "bil.parkering",
+   "group": "parkering",
+   "quiz": true,
+   "confusableWith": [
+    "s.parkera.1",
+    "s.parkeringshus.1"
+   ]
+  },
+  {
+   "senseId": "s.parkeringshus.1",
+   "kind": "illustration",
+   "motif": "bil.parkeringshus",
+   "group": "parkering",
+   "quiz": true,
+   "confusableWith": [
+    "s.parkering.1"
+   ]
+  },
+  {
+   "senseId": "s.parkeringsautomat.1",
+   "kind": "illustration",
+   "motif": "bil.parkeringsautomat",
+   "group": "parkeringsautomat",
+   "quiz": true,
+   "confusableWith": [
+    "s.parkeringsavgift.1"
+   ]
+  },
+  {
+   "senseId": "s.parkeringsavgift.1",
+   "kind": "illustration",
+   "motif": "bil.parkeringsavgift",
+   "group": "parkeringsautomat",
+   "quiz": true,
+   "confusableWith": [
+    "s.parkeringsautomat.1",
+    "s.per-timme.1"
+   ]
+  },
+  {
+   "senseId": "s.per-timme.1",
+   "kind": "illustration",
+   "motif": "bil.per-timme",
+   "group": "parkeringsautomat",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.parkeringsavgift.1"
+   ]
+  },
+  {
+   "senseId": "s.parkeringsapp.1",
+   "kind": "illustration",
+   "motif": "bil.parkeringsapp",
+   "group": "parkeringsautomat",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ankomsttid.1",
+   "kind": "illustration",
+   "motif": "bil.ankomsttid",
+   "group": "ankomsttid",
+   "quiz": true,
+   "confusableWith": [
+    "s.p-skiva.1"
+   ]
+  },
+  {
+   "senseId": "s.p-skiva.1",
+   "kind": "illustration",
+   "motif": "bil.p-skiva",
+   "group": "ankomsttid",
+   "quiz": true,
+   "confusableWith": [
+    "s.ankomsttid.1"
+   ]
+  },
+  {
+   "senseId": "s.felparkera.1",
+   "kind": "illustration",
+   "motif": "bil.felparkera",
+   "group": "parkera",
+   "quiz": true,
+   "confusableWith": [
+    "s.parkeringsbot.1"
+   ]
+  },
+  {
+   "senseId": "s.parkeringsbot.1",
+   "kind": "illustration",
+   "motif": "bil.parkeringsbot",
+   "group": "parkeringsbot",
+   "quiz": true,
+   "confusableWith": [
+    "s.kontrollavgift.1",
+    "s.felparkera.1"
+   ]
+  },
+  {
+   "senseId": "s.kontrollavgift.1",
+   "kind": "illustration",
+   "motif": "bil.kontrollavgift",
+   "group": "parkeringsbot",
+   "quiz": true,
+   "confusableWith": [
+    "s.parkeringsbot.1"
+   ]
+  },
+  {
+   "senseId": "s.boendeparkering.1",
+   "kind": "illustration",
+   "motif": "bil.boendeparkering",
+   "group": "boendeparkering",
+   "quiz": true,
+   "confusableWith": [
+    "s.datumparkering.1"
+   ]
+  },
+  {
+   "senseId": "s.datumparkering.1",
+   "kind": "illustration",
+   "motif": "bil.datumparkering",
+   "group": "boendeparkering",
+   "quiz": true,
+   "confusableWith": [
+    "s.boendeparkering.1"
+   ]
+  },
+  {
+   "senseId": "s.fickparkera.1",
+   "kind": "illustration",
+   "motif": "bil.fickparkera",
+   "group": "parkera",
+   "quiz": true,
+   "confusableWith": [
+    "s.parkera.1"
+   ]
+  },
+  {
+   "senseId": "s.tanka.1",
+   "kind": "illustration",
+   "motif": "bil.tanka",
+   "group": "tanka",
+   "quiz": true,
+   "confusableWith": [
+    "s.tanka-fullt.1"
+   ]
+  },
+  {
+   "senseId": "s.bensin.1",
+   "kind": "illustration",
+   "motif": "bil.bensin",
+   "group": "bensin",
+   "quiz": true,
+   "confusableWith": [
+    "s.diesel.1",
+    "s.bränsle.1"
+   ]
+  },
+  {
+   "senseId": "s.bränsle.1",
+   "kind": "illustration",
+   "motif": "bil.bränsle",
+   "group": "bensin",
+   "quiz": true,
+   "confusableWith": [
+    "s.bensin.1",
+    "s.tanka-fullt.1"
+   ]
+  },
+  {
+   "senseId": "s.diesel.1",
+   "kind": "illustration",
+   "motif": "bil.diesel",
+   "group": "bensin",
+   "quiz": true,
+   "confusableWith": [
+    "s.bensin.1"
+   ]
+  },
+  {
+   "senseId": "s.bensinstation.1",
+   "kind": "illustration",
+   "motif": "bil.bensinstation",
+   "group": "bensinstation",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.mack.1",
+    "s.pump.1"
+   ]
+  },
+  {
+   "senseId": "s.mack.1",
+   "kind": "illustration",
+   "motif": "bil.mack",
+   "group": "bensinstation",
+   "quiz": true,
+   "confusableWith": [
+    "s.bensinstation.1"
+   ]
+  },
+  {
+   "senseId": "s.pump.1",
+   "kind": "illustration",
+   "motif": "bil.pump",
+   "group": "bensinstation",
+   "quiz": true,
+   "confusableWith": [
+    "s.bensinstation.1"
+   ]
+  },
+  {
+   "senseId": "s.tanklock.1",
+   "kind": "illustration",
+   "motif": "bil.tanklock",
+   "group": "tanklock",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tanka-fullt.1",
+   "kind": "illustration",
+   "motif": "bil.tanka-fullt",
+   "group": "tanka",
+   "quiz": true,
+   "confusableWith": [
+    "s.tanka.1",
+    "s.bränsle.1"
+   ]
+  },
+  {
+   "senseId": "s.spolarvätska.1",
+   "kind": "illustration",
+   "motif": "bil.spolarvätska",
+   "group": "spolarvätska",
+   "quiz": true
+  },
+  {
+   "senseId": "s.elbil.1",
+   "kind": "illustration",
+   "motif": "bil.elbil",
+   "group": "elbil",
+   "quiz": true,
+   "confusableWith": [
+    "s.laddhybrid.1",
+    "s.räckvidd.1"
+   ]
+  },
+  {
+   "senseId": "s.laddstolpe.1",
+   "kind": "illustration",
+   "motif": "bil.laddstolpe",
+   "group": "laddstolpe",
+   "quiz": true,
+   "confusableWith": [
+    "s.snabbladdare.1",
+    "s.laddkabel.1"
+   ]
+  },
+  {
+   "senseId": "s.laddkabel.1",
+   "kind": "illustration",
+   "motif": "bil.laddkabel",
+   "group": "laddstolpe",
+   "quiz": true,
+   "confusableWith": [
+    "s.laddstolpe.1"
+   ]
+  },
+  {
+   "senseId": "s.snabbladdare.1",
+   "kind": "illustration",
+   "motif": "bil.snabbladdare",
+   "group": "laddstolpe",
+   "quiz": true,
+   "confusableWith": [
+    "s.laddstolpe.1"
+   ]
+  },
+  {
+   "senseId": "s.räckvidd.1",
+   "kind": "illustration",
+   "motif": "bil.räckvidd",
+   "group": "räckvidd",
+   "quiz": true,
+   "confusableWith": [
+    "s.elbil.1"
+   ]
+  },
+  {
+   "senseId": "s.laddhybrid.1",
+   "kind": "illustration",
+   "motif": "bil.laddhybrid",
+   "group": "elbil",
+   "quiz": true,
+   "confusableWith": [
+    "s.elbil.1"
+   ]
+  },
+  {
+   "senseId": "s.däck.1",
+   "kind": "illustration",
+   "motif": "bil.däck",
+   "group": "däck",
+   "quiz": true,
+   "confusableWith": [
+    "s.sommardäck.1",
+    "s.vinterdäck.1"
+   ]
+  },
+  {
+   "senseId": "s.sommardäck.1",
+   "kind": "illustration",
+   "motif": "bil.sommardäck",
+   "group": "däck",
+   "quiz": true,
+   "confusableWith": [
+    "s.däck.1"
+   ]
+  },
+  {
+   "senseId": "s.vinterdäck.1",
+   "kind": "illustration",
+   "motif": "bil.vinterdäck",
+   "group": "däck",
+   "quiz": true,
+   "confusableWith": [
+    "s.däck.1",
+    "s.dubbdäck.1",
+    "s.däckbyte.1"
+   ]
+  },
+  {
+   "senseId": "s.dubbdäck.1",
+   "kind": "illustration",
+   "motif": "bil.dubbdäck",
+   "group": "däck",
+   "quiz": true,
+   "confusableWith": [
+    "s.vinterdäck.1"
+   ]
+  },
+  {
+   "senseId": "s.däckbyte.1",
+   "kind": "illustration",
+   "motif": "bil.däckbyte",
+   "group": "däckbyte",
+   "quiz": true,
+   "confusableWith": [
+    "s.vinterdäck.1"
+   ]
+  },
+  {
+   "senseId": "s.lufttryck.1",
+   "kind": "illustration",
+   "motif": "bil.lufttryck",
+   "group": "lufttryck",
+   "quiz": true,
+   "confusableWith": [
+    "s.mönsterdjup.1"
+   ]
+  },
+  {
+   "senseId": "s.mönsterdjup.1",
+   "kind": "illustration",
+   "motif": "bil.mönsterdjup",
+   "group": "lufttryck",
+   "quiz": true,
+   "confusableWith": [
+    "s.lufttryck.1"
+   ]
+  },
+  {
+   "senseId": "s.hal.1",
+   "kind": "illustration",
+   "motif": "bil.hal",
+   "group": "hal",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.halka-noun.1",
+    "s.väglag.1"
+   ]
+  },
+  {
+   "senseId": "s.väglag.1",
+   "kind": "illustration",
+   "motif": "bil.väglag",
+   "group": "väglag",
+   "quiz": true,
+   "confusableWith": [
+    "s.hal.1",
+    "s.plogad.1"
+   ]
+  },
+  {
+   "senseId": "s.halka-noun.1",
+   "kind": "illustration",
+   "motif": "bil.halka-noun",
+   "group": "hal",
+   "quiz": true,
+   "confusableWith": [
+    "s.hal.1",
+    "s.blixthalka.1",
+    "s.sladda.1"
+   ]
+  },
+  {
+   "senseId": "s.blixthalka.1",
+   "kind": "illustration",
+   "motif": "bil.blixthalka",
+   "group": "hal",
+   "quiz": true,
+   "confusableWith": [
+    "s.halka-noun.1"
+   ]
+  },
+  {
+   "senseId": "s.slask.1",
+   "kind": "illustration",
+   "motif": "bil.slask",
+   "group": "slask",
+   "quiz": true,
+   "confusableWith": [
+    "s.modd.1"
+   ]
+  },
+  {
+   "senseId": "s.modd.1",
+   "kind": "illustration",
+   "motif": "bil.modd",
+   "group": "slask",
+   "quiz": true,
+   "confusableWith": [
+    "s.slask.1"
+   ]
+  },
+  {
+   "senseId": "s.plogad.1",
+   "kind": "illustration",
+   "motif": "bil.plogad",
+   "group": "plogad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.väglag.1"
+   ]
+  },
+  {
+   "senseId": "s.sladda.1",
+   "kind": "illustration",
+   "motif": "bil.sladda",
+   "group": "hal",
+   "quiz": true,
+   "confusableWith": [
+    "s.halka-noun.1"
+   ]
+  },
+  {
+   "senseId": "s.trafikskylt.1",
+   "kind": "illustration",
+   "motif": "bil.trafikskylt",
+   "group": "trafikskylt",
+   "quiz": true,
+   "confusableWith": [
+    "s.varningsskylt.1",
+    "s.förbudsskylt.1",
+    "s.huvudled.1",
+    "s.vägvisare.1",
+    "s.gångfartsområde.1"
+   ]
+  },
+  {
+   "senseId": "s.stoppskylt.1",
+   "kind": "illustration",
+   "motif": "bil.stoppskylt",
+   "group": "trafikskylt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.varningsskylt.1",
+   "kind": "illustration",
+   "motif": "bil.varningsskylt",
+   "group": "trafikskylt",
+   "quiz": true,
+   "confusableWith": [
+    "s.trafikskylt.1",
+    "s.vägarbete.1"
+   ]
+  },
+  {
+   "senseId": "s.förbudsskylt.1",
+   "kind": "illustration",
+   "motif": "bil.förbudsskylt",
+   "group": "trafikskylt",
+   "quiz": true,
+   "confusableWith": [
+    "s.trafikskylt.1",
+    "s.infart-förbjuden.1"
+   ]
+  },
+  {
+   "senseId": "s.påbudsskylt.1",
+   "kind": "illustration",
+   "motif": "bil.påbudsskylt",
+   "group": "trafikskylt",
+   "quiz": true,
+   "confusableWith": [
+    "s.enkelriktad.1"
+   ]
+  },
+  {
+   "senseId": "s.enkelriktad.1",
+   "kind": "illustration",
+   "motif": "bil.enkelriktad",
+   "group": "enkelriktad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.påbudsskylt.1"
+   ]
+  },
+  {
+   "senseId": "s.återvändsgata.1",
+   "kind": "illustration",
+   "motif": "bil.återvändsgata",
+   "group": "enkelriktad",
+   "quiz": true
+  },
+  {
+   "senseId": "s.infart-förbjuden.1",
+   "kind": "illustration",
+   "motif": "bil.infart-förbjuden",
+   "group": "infart-förbjuden",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.förbudsskylt.1"
+   ]
+  },
+  {
+   "senseId": "s.parkering-förbjuden.1",
+   "kind": "illustration",
+   "motif": "bil.parkering-förbjuden",
+   "group": "infart-förbjuden",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stannande-förbjudet.1"
+   ]
+  },
+  {
+   "senseId": "s.stannande-förbjudet.1",
+   "kind": "illustration",
+   "motif": "bil.stannande-förbjudet",
+   "group": "infart-förbjuden",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.parkering-förbjuden.1"
+   ]
+  },
+  {
+   "senseId": "s.huvudled.1",
+   "kind": "illustration",
+   "motif": "bil.huvudled",
+   "group": "huvudled",
+   "quiz": true,
+   "confusableWith": [
+    "s.trafikskylt.1"
+   ]
+  },
+  {
+   "senseId": "s.vägarbete.1",
+   "kind": "illustration",
+   "motif": "bil.vägarbete",
+   "group": "vägarbete",
+   "quiz": true,
+   "confusableWith": [
+    "s.varningsskylt.1"
+   ]
+  },
+  {
+   "senseId": "s.gångfartsområde.1",
+   "kind": "illustration",
+   "motif": "bil.gångfartsområde",
+   "group": "gångfartsområde",
+   "quiz": true,
+   "confusableWith": [
+    "s.trafikskylt.1"
+   ]
+  },
+  {
+   "senseId": "s.vägvisare.1",
+   "kind": "illustration",
+   "motif": "bil.vägvisare",
+   "group": "vägvisare",
+   "quiz": true,
+   "confusableWith": [
+    "s.trafikskylt.1"
+   ]
+  },
+  {
+   "senseId": "s.motortrafikled.1",
+   "kind": "illustration",
+   "motif": "bil.motortrafikled",
+   "group": "motorväg",
+   "quiz": true,
+   "confusableWith": [
+    "s.motorväg.1"
+   ]
+  },
+  {
+   "senseId": "s.punktering.1",
+   "kind": "illustration",
+   "motif": "bil.punktering",
+   "group": "punktering",
+   "quiz": true,
+   "confusableWith": [
+    "s.punka.1",
+    "s.reservhjul.1"
+   ]
+  },
+  {
+   "senseId": "s.punka.1",
+   "kind": "illustration",
+   "motif": "bil.punka",
+   "group": "punktering",
+   "quiz": true,
+   "confusableWith": [
+    "s.punktering.1"
+   ]
+  },
+  {
+   "senseId": "s.reservhjul.1",
+   "kind": "illustration",
+   "motif": "bil.reservhjul",
+   "group": "reservhjul",
+   "quiz": true,
+   "confusableWith": [
+    "s.domkraft.1",
+    "s.punktering.1"
+   ]
+  },
+  {
+   "senseId": "s.domkraft.1",
+   "kind": "illustration",
+   "motif": "bil.domkraft",
+   "group": "domkraft",
+   "quiz": true,
+   "confusableWith": [
+    "s.reservhjul.1"
+   ]
+  },
+  {
+   "senseId": "s.varningslampa.1",
+   "kind": "illustration",
+   "motif": "bil.varningslampa",
+   "group": "varningslampa",
+   "quiz": true,
+   "confusableWith": [
+    "s.instrumentbräda.1"
+   ]
+  },
+  {
+   "senseId": "s.motorstopp.1",
+   "kind": "illustration",
+   "motif": "bil.motorstopp",
+   "group": "startkabel",
+   "quiz": true,
+   "confusableWith": [
+    "s.starthjälp.1"
+   ]
+  },
+  {
+   "senseId": "s.startkabel.1",
+   "kind": "illustration",
+   "motif": "bil.startkabel",
+   "group": "startkabel",
+   "quiz": true,
+   "confusableWith": [
+    "s.starthjälp.1"
+   ]
+  },
+  {
+   "senseId": "s.starthjälp.1",
+   "kind": "illustration",
+   "motif": "bil.starthjälp",
+   "group": "startkabel",
+   "quiz": true,
+   "confusableWith": [
+    "s.startkabel.1",
+    "s.motorstopp.1"
+   ]
+  },
+  {
+   "senseId": "s.verkstad.1",
+   "kind": "illustration",
+   "motif": "bil.verkstad",
+   "group": "verkstad",
+   "quiz": true,
+   "confusableWith": [
+    "s.mekaniker.1",
+    "s.service.1"
+   ]
+  },
+  {
+   "senseId": "s.mekaniker.1",
+   "kind": "illustration",
+   "motif": "bil.mekaniker",
+   "group": "verkstad",
+   "quiz": true,
+   "confusableWith": [
+    "s.verkstad.1"
+   ]
+  },
+  {
+   "senseId": "s.service.1",
+   "kind": "illustration",
+   "motif": "bil.service",
+   "group": "verkstad",
+   "quiz": true,
+   "confusableWith": [
+    "s.oljebyte.1",
+    "s.verkstad.1"
+   ]
+  },
+  {
+   "senseId": "s.oljebyte.1",
+   "kind": "illustration",
+   "motif": "bil.oljebyte",
+   "group": "verkstad",
+   "quiz": true,
+   "confusableWith": [
+    "s.service.1"
+   ]
+  },
+  {
+   "senseId": "s.kylarvätska.1",
+   "kind": "illustration",
+   "motif": "bil.kylarvätska",
+   "group": "kylarvätska",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bärgningsbil.1",
+   "kind": "illustration",
+   "motif": "bil.bärgningsbil",
+   "group": "bärgningsbil",
+   "quiz": true,
+   "confusableWith": [
+    "s.krock.1"
+   ]
+  },
+  {
+   "senseId": "s.krock.1",
+   "kind": "illustration",
+   "motif": "bil.krock",
+   "group": "krock",
+   "quiz": true,
+   "confusableWith": [
+    "s.bärgningsbil.1"
    ]
   }
  ]

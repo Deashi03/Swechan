@@ -45,6 +45,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'tjän.': () => import('./services').then((m) => m.SERVICES_MOTIFS),
   'trafik.': () => import('./transit').then((m) => m.TRANSIT_MOTIFS),
   'väg.': () => import('./nav').then((m) => m.NAV_MOTIFS),
+  'bil.': () => import('./car').then((m) => m.CAR_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
