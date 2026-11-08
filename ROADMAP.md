@@ -90,7 +90,10 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.22 – Resor & transport har bilder (klar)
 - 632 nya bilder för 601–657, alla symbol- och adjektivbilder blindtestade.
 
-## v0.23 och framåt – två spår per release
+## v0.23 – Hälsa & sjukvård har bilder (klar)
+- 629 nya bilder för 801–857, alla symbol- och adjektivbilder blindtestade.
+
+## v0.24 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).
