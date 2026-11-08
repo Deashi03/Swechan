@@ -1187,7 +1187,10 @@
    "kind": "face",
    "group": "sjukdom",
    "quiz": false,
-   "reviewStatus": "ai-draft"
+   "reviewStatus": "ai-draft",
+   "confusableWith": [
+    "s.Alzheimers-sjukdom.1"
+   ]
   },
   {
    "senseId": "s.det-vattnas-i-munnen.1",
@@ -31962,7 +31965,8 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.glömska.1"
+    "s.glömska.1",
+    "s.Alzheimers-sjukdom.1"
    ],
    "blindTest": {
     "result": "synonym",
@@ -31977,7 +31981,8 @@
    "group": "glömska",
    "quiz": false,
    "confusableWith": [
-    "s.glömsk.1"
+    "s.glömsk.1",
+    "s.Alzheimers-sjukdom.1"
    ]
   },
   {
@@ -49977,8 +49982,14 @@
    "confusableWith": [
     "s.bli-förkyld.1",
     "s.snuvig.1",
-    "s.muskelvärk.1"
-   ]
+    "s.muskelvärk.1",
+    "s.insjukna.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "ddaf632f"
+   }
   },
   {
    "senseId": "s.snuvig.1",
@@ -49989,8 +50000,14 @@
    "symbol": true,
    "confusableWith": [
     "s.bli-förkyld.1",
-    "s.krasslig.1"
-   ]
+    "s.krasslig.1",
+    "s.förkylningssäsong.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "3857e8b5"
+   }
   },
   {
    "senseId": "s.förkylningssäsong.1",
@@ -49999,7 +50016,8 @@
    "group": "bli-förkyld",
    "quiz": true,
    "confusableWith": [
-    "s.bli-förkyld.1"
+    "s.bli-förkyld.1",
+    "s.snuvig.1"
    ]
   },
   {
@@ -50022,7 +50040,12 @@
    "confusableWith": [
     "s.bihåleinflammation.1",
     "s.halsfluss.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "2fb09b88"
+   }
   },
   {
    "senseId": "s.halsfluss.1",
@@ -50045,7 +50068,12 @@
    "confusableWith": [
     "s.luftvägsinfektion.1",
     "s.halsfluss.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "458fca99"
+   }
   },
   {
    "senseId": "s.insjukna.1",
@@ -50054,7 +50082,8 @@
    "group": "insjukna",
    "quiz": true,
    "confusableWith": [
-    "s.sjukdomsförlopp.1"
+    "s.sjukdomsförlopp.1",
+    "s.krasslig.1"
    ]
   },
   {
@@ -50133,7 +50162,12 @@
     "s.virusinfektion.1",
     "s.covid.1",
     "s.bakterieinfektion.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "98c9dafb"
+   }
   },
   {
    "senseId": "s.bakterieinfektion.1",
@@ -50144,7 +50178,12 @@
    "symbol": true,
    "confusableWith": [
     "s.infektionssjukdom.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "5cf2719a"
+   }
   },
   {
    "senseId": "s.virusinfektion.1",
@@ -50156,7 +50195,12 @@
    "confusableWith": [
     "s.infektionssjukdom.1",
     "s.covid.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "5c5b37a6"
+   }
   },
   {
    "senseId": "s.smittväg.1",
@@ -50293,7 +50337,8 @@
    "quiz": true,
    "confusableWith": [
     "s.pollensäsong.1",
-    "s.hösnuva.1"
+    "s.hösnuva.1",
+    "s.allergiframkallande.1"
    ]
   },
   {
@@ -50325,7 +50370,8 @@
    "group": "pälsdjur",
    "quiz": true,
    "confusableWith": [
-    "s.pälsdjursallergi.1"
+    "s.pälsdjursallergi.1",
+    "s.allergiframkallande.1"
    ]
   },
   {
@@ -50362,7 +50408,12 @@
    "confusableWith": [
     "s.allergiframkallande.1",
     "s.anafylaxi.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "4a72ee03"
+   }
   },
   {
    "senseId": "s.allergiframkallande.1",
@@ -50373,8 +50424,15 @@
    "symbol": true,
    "confusableWith": [
     "s.allergisk-reaktion.1",
-    "s.anafylaxi.1"
-   ]
+    "s.anafylaxi.1",
+    "s.pollen.1",
+    "s.pälsdjur.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "813ab176"
+   }
   },
   {
    "senseId": "s.anafylaxi.1",
@@ -50454,7 +50512,12 @@
     "s.bröstsmärta.1",
     "s.kärlkramp.1",
     "s.hjärtsvikt.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "a3e95092"
+   }
   },
   {
    "senseId": "s.bröstsmärta.1",
@@ -50533,7 +50596,12 @@
    "confusableWith": [
     "s.propplösande.1",
     "s.ballongvidgning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "9f4d6c23"
+   }
   },
   {
    "senseId": "s.propplösande.1",
@@ -50545,7 +50613,12 @@
    "confusableWith": [
     "s.blodförtunnande.1",
     "s.ballongvidgning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "c7653e1c"
+   }
   },
   {
    "senseId": "s.hängande-mungipa.1",
@@ -50579,7 +50652,12 @@
    "confusableWith": [
     "s.hängande-mungipa.1",
     "s.AKUT-testet.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "3abe83ba"
+   }
   },
   {
    "senseId": "s.förlamning.1",
@@ -50602,7 +50680,12 @@
    "confusableWith": [
     "s.domning.1",
     "s.förlamning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "4bf581a8"
+   }
   },
   {
    "senseId": "s.AKUT-testet.1",
@@ -50767,7 +50850,12 @@
    "symbol": true,
    "confusableWith": [
     "s.överfunktion.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "29742097"
+   }
   },
   {
    "senseId": "s.överfunktion.1",
@@ -50778,7 +50866,12 @@
    "symbol": true,
    "confusableWith": [
     "s.underfunktion.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "eaaa5ee4"
+   }
   },
   {
    "senseId": "s.bota.1",
@@ -50813,7 +50906,12 @@
     "s.obotlig.1",
     "s.livslång.1",
     "s.leva-med.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "679ec51f"
+   }
   },
   {
    "senseId": "s.livslång.1",
@@ -50824,8 +50922,14 @@
    "symbol": true,
    "confusableWith": [
     "s.obotlig.1",
-    "s.kronisk.1"
-   ]
+    "s.kronisk.1",
+    "s.leva-med.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "61363c76"
+   }
   },
   {
    "senseId": "s.botemedel.1",
@@ -50835,7 +50939,8 @@
    "quiz": true,
    "confusableWith": [
     "s.bota.1",
-    "s.lindra.1"
+    "s.lindra.1",
+    "s.obotlig.1"
    ]
   },
   {
@@ -50847,8 +50952,14 @@
    "symbol": true,
    "confusableWith": [
     "s.kronisk.1",
-    "s.livslång.1"
-   ]
+    "s.livslång.1",
+    "s.botemedel.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "fb6c1adc"
+   }
   },
   {
    "senseId": "s.leva-med.1",
@@ -50857,7 +50968,8 @@
    "group": "kronisk",
    "quiz": true,
    "confusableWith": [
-    "s.kronisk.1"
+    "s.kronisk.1",
+    "s.livslång.1"
    ]
   },
   {
@@ -50909,7 +51021,10 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.funktionsnedsättning.1"
+    "s.funktionsnedsättning.1",
+    "s.demens.1",
+    "s.glömska.1",
+    "s.glömsk.1"
    ]
   },
   {
@@ -50976,7 +51091,8 @@
    "confusableWith": [
     "s.diagnos.1",
     "s.ställa-diagnos.1",
-    "s.fastställa.1"
+    "s.fastställa.1",
+    "s.tecken-på.1"
    ]
   },
   {
@@ -50988,8 +51104,14 @@
    "symbol": true,
    "confusableWith": [
     "s.misstänka.1",
-    "s.misstanke.1"
-   ]
+    "s.misstanke.1",
+    "s.diagnostisera.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "7622f328"
+   }
   },
   {
    "senseId": "s.misstänka.1",
@@ -51068,7 +51190,12 @@
    "symbol": true,
    "confusableWith": [
     "s.utredning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "69ee4aa9"
+   }
   },
   {
    "senseId": "s.syndrom.1",
@@ -51099,7 +51226,12 @@
    "symbol": true,
    "confusableWith": [
     "s.gå-över-av-sig-själv.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.22.0",
+    "hash": "05ff2968"
+   }
   },
   {
    "senseId": "s.feldiagnos.1",
@@ -51110,6 +51242,1009 @@
    "confusableWith": [
     "s.diagnos.1"
    ]
+  },
+  {
+   "senseId": "s.läkemedel.1",
+   "kind": "illustration",
+   "motif": "med.läkemedel",
+   "group": "kapsel",
+   "quiz": true,
+   "confusableWith": [
+    "s.kapsel.1"
+   ]
+  },
+  {
+   "senseId": "s.kapsel.1",
+   "kind": "illustration",
+   "motif": "med.kapsel",
+   "group": "kapsel",
+   "quiz": true,
+   "confusableWith": [
+    "s.läkemedel.1"
+   ]
+  },
+  {
+   "senseId": "s.brustablett.1",
+   "kind": "illustration",
+   "motif": "med.brustablett",
+   "group": "brustablett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sugtablett.1",
+   "kind": "illustration",
+   "motif": "med.sugtablett",
+   "group": "sugtablett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tuggtablett.1",
+   "kind": "illustration",
+   "motif": "med.tuggtablett",
+   "group": "tuggtablett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.svälja-hel.1",
+   "kind": "illustration",
+   "motif": "med.svälja-hel",
+   "group": "svälja",
+   "quiz": true
+  },
+  {
+   "senseId": "s.värktablett.1",
+   "kind": "illustration",
+   "motif": "med.värktablett",
+   "group": "kapsel",
+   "quiz": true,
+   "confusableWith": [
+    "s.smärtstillande.1"
+   ]
+  },
+  {
+   "senseId": "s.smärtstillande.1",
+   "kind": "illustration",
+   "motif": "med.smärtstillande",
+   "group": "kapsel",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.värktablett.1"
+   ]
+  },
+  {
+   "senseId": "s.mixtur.1",
+   "kind": "illustration",
+   "motif": "med.mixtur",
+   "group": "mixtur",
+   "quiz": true,
+   "confusableWith": [
+    "s.mätsked.1"
+   ]
+  },
+  {
+   "senseId": "s.bipacksedel.1",
+   "kind": "illustration",
+   "motif": "med.bipacksedel",
+   "group": "Fass",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skåra.1",
+   "kind": "illustration",
+   "motif": "med.skåra",
+   "group": "skåra",
+   "quiz": true,
+   "confusableWith": [
+    "s.delbar.1"
+   ]
+  },
+  {
+   "senseId": "s.delbar.1",
+   "kind": "illustration",
+   "motif": "med.delbar",
+   "group": "delbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skåra.1"
+   ]
+  },
+  {
+   "senseId": "s.dosett.1",
+   "kind": "illustration",
+   "motif": "med.dosett",
+   "group": "dosett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.utgångsdatum.1",
+   "kind": "illustration",
+   "motif": "med.utgångsdatum",
+   "group": "utgångsdatum",
+   "quiz": true
+  },
+  {
+   "senseId": "s.oåtkomlig.1",
+   "kind": "illustration",
+   "motif": "med.oåtkomlig",
+   "group": "oåtkomlig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.skriva-ut.1",
+   "kind": "illustration",
+   "motif": "med.skriva-ut",
+   "group": "skriva-ut",
+   "quiz": true,
+   "confusableWith": [
+    "s.förskriva.1",
+    "s.ordinera.1",
+    "s.ordination.1"
+   ]
+  },
+  {
+   "senseId": "s.förskriva.1",
+   "kind": "illustration",
+   "motif": "med.förskriva",
+   "group": "skriva-ut",
+   "quiz": true,
+   "confusableWith": [
+    "s.skriva-ut.1",
+    "s.ordinera.1",
+    "s.ordination.1",
+    "s.receptbelagd.1"
+   ]
+  },
+  {
+   "senseId": "s.receptbelagd.1",
+   "kind": "illustration",
+   "motif": "med.receptbelagd",
+   "group": "skriva-ut",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.förskriva.1"
+   ]
+  },
+  {
+   "senseId": "s.e-recept.1",
+   "kind": "illustration",
+   "motif": "med.e-recept",
+   "group": "skriva-ut",
+   "quiz": true,
+   "confusableWith": [
+    "s.förnya-ett-recept.1"
+   ]
+  },
+  {
+   "senseId": "s.förnya-ett-recept.1",
+   "kind": "illustration",
+   "motif": "med.förnya-ett-recept",
+   "group": "skriva-ut",
+   "quiz": true,
+   "confusableWith": [
+    "s.e-recept.1"
+   ]
+  },
+  {
+   "senseId": "s.apotekare.1",
+   "kind": "illustration",
+   "motif": "med.apotekare",
+   "group": "apotekare",
+   "quiz": true,
+   "confusableWith": [
+    "s.farmaceut.1",
+    "s.expediera.1"
+   ]
+  },
+  {
+   "senseId": "s.farmaceut.1",
+   "kind": "illustration",
+   "motif": "med.farmaceut",
+   "group": "apotekare",
+   "quiz": true,
+   "confusableWith": [
+    "s.apotekare.1",
+    "s.expediera.1"
+   ]
+  },
+  {
+   "senseId": "s.expediera.1",
+   "kind": "illustration",
+   "motif": "med.expediera",
+   "group": "apotekare",
+   "quiz": true,
+   "confusableWith": [
+    "s.apotekare.1",
+    "s.farmaceut.1"
+   ]
+  },
+  {
+   "senseId": "s.läkemedelslista.1",
+   "kind": "illustration",
+   "motif": "med.läkemedelslista",
+   "group": "Fass",
+   "quiz": true
+  },
+  {
+   "senseId": "s.Fass.1",
+   "kind": "illustration",
+   "motif": "med.Fass",
+   "group": "Fass",
+   "quiz": true
+  },
+  {
+   "senseId": "s.verksam-substans.1",
+   "kind": "illustration",
+   "motif": "med.verksam-substans",
+   "group": "verksam",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.likvärdig.1",
+   "kind": "illustration",
+   "motif": "med.likvärdig",
+   "group": "generika",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.generika.1"
+   ]
+  },
+  {
+   "senseId": "s.generika.1",
+   "kind": "illustration",
+   "motif": "med.generika",
+   "group": "generika",
+   "quiz": true,
+   "confusableWith": [
+    "s.likvärdig.1"
+   ]
+  },
+  {
+   "senseId": "s.högkostnadsskydd.1",
+   "kind": "illustration",
+   "motif": "med.högkostnadsskydd",
+   "group": "generika",
+   "quiz": true,
+   "confusableWith": [
+    "s.läkemedelsförmån.1"
+   ]
+  },
+  {
+   "senseId": "s.läkemedelsförmån.1",
+   "kind": "illustration",
+   "motif": "med.läkemedelsförmån",
+   "group": "generika",
+   "quiz": true,
+   "confusableWith": [
+    "s.högkostnadsskydd.1"
+   ]
+  },
+  {
+   "senseId": "s.dos.1",
+   "kind": "illustration",
+   "motif": "med.dos",
+   "group": "kapsel",
+   "quiz": true,
+   "confusableWith": [
+    "s.en-gång-om-dagen.1",
+    "s.dygnsdos.1"
+   ]
+  },
+  {
+   "senseId": "s.intervall.1",
+   "kind": "illustration",
+   "motif": "med.intervall",
+   "group": "intervall",
+   "quiz": true,
+   "confusableWith": [
+    "s.var-åttonde-timme.1",
+    "s.regelbundet.1"
+   ]
+  },
+  {
+   "senseId": "s.en-gång-om-dagen.1",
+   "kind": "illustration",
+   "motif": "med.en-gång-om-dagen",
+   "group": "en-gång-om-dagen",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.dygnsdos.1",
+    "s.dos.1"
+   ]
+  },
+  {
+   "senseId": "s.var-åttonde-timme.1",
+   "kind": "illustration",
+   "motif": "med.var-åttonde-timme",
+   "group": "intervall",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.intervall.1",
+    "s.regelbundet.1"
+   ]
+  },
+  {
+   "senseId": "s.dygnsdos.1",
+   "kind": "illustration",
+   "motif": "med.dygnsdos",
+   "group": "intervall",
+   "quiz": true,
+   "confusableWith": [
+    "s.en-gång-om-dagen.1",
+    "s.dos.1"
+   ]
+  },
+  {
+   "senseId": "s.maxdos.1",
+   "kind": "illustration",
+   "motif": "med.maxdos",
+   "group": "maxdos",
+   "quiz": true,
+   "confusableWith": [
+    "s.överdos.1",
+    "s.dubbel-dos.1"
+   ]
+  },
+  {
+   "senseId": "s.överdos.1",
+   "kind": "illustration",
+   "motif": "med.överdos",
+   "group": "maxdos",
+   "quiz": true,
+   "confusableWith": [
+    "s.maxdos.1",
+    "s.dubbel-dos.1"
+   ]
+  },
+  {
+   "senseId": "s.dubbel-dos.1",
+   "kind": "illustration",
+   "motif": "med.dubbel-dos",
+   "group": "maxdos",
+   "quiz": true,
+   "confusableWith": [
+    "s.maxdos.1",
+    "s.överdos.1"
+   ]
+  },
+  {
+   "senseId": "s.glömma-en-dos.1",
+   "kind": "illustration",
+   "motif": "med.glömma-en-dos",
+   "group": "dosett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.milligram.1",
+   "kind": "illustration",
+   "motif": "med.milligram",
+   "group": "kapsel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mätsked.1",
+   "kind": "illustration",
+   "motif": "med.mätsked",
+   "group": "mätsked",
+   "quiz": true,
+   "confusableWith": [
+    "s.mixtur.1"
+   ]
+  },
+  {
+   "senseId": "s.på-fastande-mage.1",
+   "kind": "illustration",
+   "motif": "med.på-fastande-mage",
+   "group": "på-fastande-mage",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.i-samband-med-måltid.1",
+   "kind": "illustration",
+   "motif": "med.i-samband-med-måltid",
+   "group": "på-fastande-mage",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.kur.1",
+   "kind": "illustration",
+   "motif": "med.kur",
+   "group": "en-gång-om-dagen",
+   "quiz": true,
+   "confusableWith": [
+    "s.behandlingstid.1"
+   ]
+  },
+  {
+   "senseId": "s.regelbundet.1",
+   "kind": "illustration",
+   "motif": "med.regelbundet",
+   "group": "intervall",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.intervall.1",
+    "s.var-åttonde-timme.1"
+   ]
+  },
+  {
+   "senseId": "s.biverkning.1",
+   "kind": "illustration",
+   "motif": "med.biverkning",
+   "group": "varningstriangel",
+   "quiz": true,
+   "confusableWith": [
+    "s.dåsighet.1"
+   ]
+  },
+  {
+   "senseId": "s.sällsynt.1",
+   "kind": "illustration",
+   "motif": "med.sällsynt",
+   "group": "sällsynt",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.dåsighet.1",
+   "kind": "illustration",
+   "motif": "med.dåsighet",
+   "group": "dåsighet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.biverkning.1"
+   ]
+  },
+  {
+   "senseId": "s.varningstriangel.1",
+   "kind": "illustration",
+   "motif": "med.varningstriangel",
+   "group": "varningstriangel",
+   "quiz": true,
+   "confusableWith": [
+    "s.trafikfarlig.1"
+   ]
+  },
+  {
+   "senseId": "s.trafikfarlig.1",
+   "kind": "illustration",
+   "motif": "med.trafikfarlig",
+   "group": "varningstriangel",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.varningstriangel.1"
+   ]
+  },
+  {
+   "senseId": "s.interaktion.1",
+   "kind": "illustration",
+   "motif": "med.interaktion",
+   "group": "varningstriangel",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.beroende.1",
+   "kind": "illustration",
+   "motif": "med.beroende",
+   "group": "beroende",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.beroendeframkallande.1"
+   ]
+  },
+  {
+   "senseId": "s.beroendeframkallande.1",
+   "kind": "illustration",
+   "motif": "med.beroendeframkallande",
+   "group": "beroende",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.beroende.1"
+   ]
+  },
+  {
+   "senseId": "s.abstinens.1",
+   "kind": "illustration",
+   "motif": "med.abstinens",
+   "group": "beroende",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.försiktighet.1",
+   "kind": "illustration",
+   "motif": "med.försiktighet",
+   "group": "varningstriangel",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.observera.1"
+   ]
+  },
+  {
+   "senseId": "s.amma.1",
+   "kind": "illustration",
+   "motif": "med.amma",
+   "group": "amma",
+   "quiz": true
+  },
+  {
+   "senseId": "s.observera.1",
+   "kind": "illustration",
+   "motif": "med.observera",
+   "group": "observera",
+   "quiz": true,
+   "confusableWith": [
+    "s.försiktighet.1"
+   ]
+  },
+  {
+   "senseId": "s.riskera.1",
+   "kind": "illustration",
+   "motif": "med.riskera",
+   "group": "varningstriangel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.rapportera.1",
+   "kind": "illustration",
+   "motif": "med.rapportera",
+   "group": "rapportera",
+   "quiz": true
+  },
+  {
+   "senseId": "s.Läkemedelsverket.1",
+   "kind": "illustration",
+   "motif": "med.Läkemedelsverket",
+   "group": "Läkemedelsverket",
+   "quiz": true
+  },
+  {
+   "senseId": "s.salva.1",
+   "kind": "illustration",
+   "motif": "med.salva",
+   "group": "salva",
+   "quiz": true,
+   "confusableWith": [
+    "s.kortison.1",
+    "s.kortisonkräm.1",
+    "s.gel.1"
+   ]
+  },
+  {
+   "senseId": "s.applicera.1",
+   "kind": "illustration",
+   "motif": "med.applicera",
+   "group": "salva",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tunt-lager.1",
+   "kind": "illustration",
+   "motif": "med.tunt-lager",
+   "group": "salva",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gel.1",
+   "kind": "illustration",
+   "motif": "med.gel",
+   "group": "salva",
+   "quiz": true,
+   "confusableWith": [
+    "s.kortison.1",
+    "s.kortisonkräm.1",
+    "s.salva.1"
+   ]
+  },
+  {
+   "senseId": "s.kortison.1",
+   "kind": "illustration",
+   "motif": "med.kortison",
+   "group": "salva",
+   "quiz": true,
+   "confusableWith": [
+    "s.kortisonkräm.1",
+    "s.salva.1",
+    "s.gel.1"
+   ]
+  },
+  {
+   "senseId": "s.kortisonkräm.1",
+   "kind": "illustration",
+   "motif": "med.kortisonkräm",
+   "group": "salva",
+   "quiz": true,
+   "confusableWith": [
+    "s.kortison.1",
+    "s.salva.1",
+    "s.gel.1"
+   ]
+  },
+  {
+   "senseId": "s.lokal.1",
+   "kind": "illustration",
+   "motif": "med.lokal",
+   "group": "salva",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.nässpray.1",
+   "kind": "illustration",
+   "motif": "med.nässpray",
+   "group": "ögondroppar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ögondroppar.1",
+   "kind": "illustration",
+   "motif": "med.ögondroppar",
+   "group": "ögondroppar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.örondroppar.1",
+   "kind": "illustration",
+   "motif": "med.örondroppar",
+   "group": "ögondroppar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.astmamedicin.1",
+   "kind": "illustration",
+   "motif": "med.astmamedicin",
+   "group": "astmamedicin",
+   "quiz": true,
+   "confusableWith": [
+    "s.inhalera.1",
+    "s.puff.1"
+   ]
+  },
+  {
+   "senseId": "s.inhalera.1",
+   "kind": "illustration",
+   "motif": "med.inhalera",
+   "group": "astmamedicin",
+   "quiz": true,
+   "confusableWith": [
+    "s.puff.1",
+    "s.astmamedicin.1"
+   ]
+  },
+  {
+   "senseId": "s.puff.1",
+   "kind": "illustration",
+   "motif": "med.puff",
+   "group": "astmamedicin",
+   "quiz": true,
+   "confusableWith": [
+    "s.inhalera.1",
+    "s.astmamedicin.1"
+   ]
+  },
+  {
+   "senseId": "s.stolpiller.1",
+   "kind": "illustration",
+   "motif": "med.stolpiller",
+   "group": "stolpiller",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nikotinplåster.1",
+   "kind": "illustration",
+   "motif": "med.nikotinplåster",
+   "group": "nikotinplåster",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vaccination.1",
+   "kind": "illustration",
+   "motif": "med.vaccination",
+   "group": "vaccination",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.injektion.1",
+    "s.ge-en-spruta.1",
+    "s.injicera.1",
+    "s.massvaccination.1"
+   ]
+  },
+  {
+   "senseId": "s.injektion.1",
+   "kind": "illustration",
+   "motif": "med.injektion",
+   "group": "vaccination",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.vaccination.1",
+    "s.ge-en-spruta.1",
+    "s.injicera.1",
+    "s.massvaccination.1",
+    "s.spruträdd.1"
+   ]
+  },
+  {
+   "senseId": "s.ge-en-spruta.1",
+   "kind": "illustration",
+   "motif": "med.ge-en-spruta",
+   "group": "vaccination",
+   "quiz": true,
+   "confusableWith": [
+    "s.vaccination.1",
+    "s.injektion.1",
+    "s.injicera.1",
+    "s.massvaccination.1"
+   ]
+  },
+  {
+   "senseId": "s.injicera.1",
+   "kind": "illustration",
+   "motif": "med.injicera",
+   "group": "vaccination",
+   "quiz": true,
+   "confusableWith": [
+    "s.vaccination.1",
+    "s.injektion.1",
+    "s.ge-en-spruta.1",
+    "s.massvaccination.1"
+   ]
+  },
+  {
+   "senseId": "s.spruträdd.1",
+   "kind": "illustration",
+   "motif": "med.spruträdd",
+   "group": "vaccination",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.injektion.1"
+   ]
+  },
+  {
+   "senseId": "s.dropp.1",
+   "kind": "illustration",
+   "motif": "med.dropp",
+   "group": "dropp",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vaccinationsprogram.1",
+   "kind": "illustration",
+   "motif": "med.vaccinationsprogram",
+   "group": "vaccination",
+   "quiz": true,
+   "confusableWith": [
+    "s.vaccinationskort.1"
+   ]
+  },
+  {
+   "senseId": "s.påfyllnadsdos.1",
+   "kind": "illustration",
+   "motif": "med.påfyllnadsdos",
+   "group": "vaccination",
+   "quiz": true
+  },
+  {
+   "senseId": "s.stelkramp.1",
+   "kind": "illustration",
+   "motif": "med.stelkramp",
+   "group": "vaccination",
+   "quiz": true
+  },
+  {
+   "senseId": "s.TBE.1",
+   "kind": "illustration",
+   "motif": "med.TBE",
+   "group": "vaccination",
+   "quiz": true
+  },
+  {
+   "senseId": "s.resevaccin.1",
+   "kind": "illustration",
+   "motif": "med.resevaccin",
+   "group": "vaccination",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vaccinationskort.1",
+   "kind": "illustration",
+   "motif": "med.vaccinationskort",
+   "group": "vaccination",
+   "quiz": true,
+   "confusableWith": [
+    "s.vaccinationsprogram.1"
+   ]
+  },
+  {
+   "senseId": "s.skyddseffekt.1",
+   "kind": "illustration",
+   "motif": "med.skyddseffekt",
+   "group": "vaccination",
+   "quiz": true,
+   "confusableWith": [
+    "s.flockimmunitet.1"
+   ]
+  },
+  {
+   "senseId": "s.flockimmunitet.1",
+   "kind": "illustration",
+   "motif": "med.flockimmunitet",
+   "group": "vaccination",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skyddseffekt.1"
+   ]
+  },
+  {
+   "senseId": "s.massvaccination.1",
+   "kind": "illustration",
+   "motif": "med.massvaccination",
+   "group": "vaccination",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.vaccination.1",
+    "s.injektion.1",
+    "s.ge-en-spruta.1",
+    "s.injicera.1"
+   ]
+  },
+  {
+   "senseId": "s.ordinera.1",
+   "kind": "illustration",
+   "motif": "med.ordinera",
+   "group": "skriva-ut",
+   "quiz": true,
+   "confusableWith": [
+    "s.skriva-ut.1",
+    "s.förskriva.1",
+    "s.ordination.1"
+   ]
+  },
+  {
+   "senseId": "s.ordination.1",
+   "kind": "illustration",
+   "motif": "med.ordination",
+   "group": "skriva-ut",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skriva-ut.1",
+    "s.förskriva.1",
+    "s.ordinera.1"
+   ]
+  },
+  {
+   "senseId": "s.hålla-sig-till.1",
+   "kind": "illustration",
+   "motif": "med.hålla-sig-till",
+   "group": "hålla",
+   "quiz": true,
+   "confusableWith": [
+    "s.fullfölja.1",
+    "s.följsamhet.1"
+   ]
+  },
+  {
+   "senseId": "s.behandlingstid.1",
+   "kind": "illustration",
+   "motif": "med.behandlingstid",
+   "group": "en-gång-om-dagen",
+   "quiz": true,
+   "confusableWith": [
+    "s.kur.1"
+   ]
+  },
+  {
+   "senseId": "s.behandlingsmål.1",
+   "kind": "illustration",
+   "motif": "med.behandlingsmål",
+   "group": "behandlingsmål",
+   "quiz": true
+  },
+  {
+   "senseId": "s.medicinera.1",
+   "kind": "illustration",
+   "motif": "med.medicinera",
+   "group": "medicinera",
+   "quiz": true
+  },
+  {
+   "senseId": "s.börja-verka.1",
+   "kind": "illustration",
+   "motif": "med.börja-verka",
+   "group": "börja",
+   "quiz": true,
+   "confusableWith": [
+    "s.effektiv.1"
+   ]
+  },
+  {
+   "senseId": "s.effektiv.1",
+   "kind": "illustration",
+   "motif": "med.effektiv",
+   "group": "effektiv",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.börja-verka.1"
+   ]
+  },
+  {
+   "senseId": "s.tålamod.1",
+   "kind": "illustration",
+   "motif": "med.tålamod",
+   "group": "tålamod",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fullfölja.1",
+   "kind": "illustration",
+   "motif": "med.fullfölja",
+   "group": "en-gång-om-dagen",
+   "quiz": true,
+   "confusableWith": [
+    "s.följsamhet.1",
+    "s.hålla-sig-till.1"
+   ]
+  },
+  {
+   "senseId": "s.följsamhet.1",
+   "kind": "illustration",
+   "motif": "med.följsamhet",
+   "group": "intervall",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.fullfölja.1",
+    "s.hålla-sig-till.1"
+   ]
+  },
+  {
+   "senseId": "s.trappa-upp.1",
+   "kind": "illustration",
+   "motif": "med.trappa-upp",
+   "group": "trappa-upp",
+   "quiz": true
+  },
+  {
+   "senseId": "s.trappa-ner.1",
+   "kind": "illustration",
+   "motif": "med.trappa-ner",
+   "group": "trappa-upp",
+   "quiz": true
+  },
+  {
+   "senseId": "s.återfall.1",
+   "kind": "illustration",
+   "motif": "med.återfall",
+   "group": "återfall",
+   "quiz": true
+  },
+  {
+   "senseId": "s.läkemedelsgenomgång.1",
+   "kind": "illustration",
+   "motif": "med.läkemedelsgenomgång",
+   "group": "läkemedelsgenomgång",
+   "quiz": true
   }
  ]
 }
