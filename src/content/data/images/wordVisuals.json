@@ -45203,7 +45203,12 @@
    "symbol": true,
    "confusableWith": [
     "s.åka-baklänges.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a6babab4"
+   }
   },
   {
    "senseId": "s.åka-baklänges.1",
@@ -46285,8 +46290,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.säkerhetskontroll.1"
-   ]
+    "s.säkerhetskontroll.1",
+    "s.förbjudna-föremål.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "83f8604d"
+   }
   },
   {
    "senseId": "s.skanna.1",
@@ -46323,7 +46334,10 @@
    "kind": "illustration",
    "motif": "res.förbjudna-föremål",
    "group": "säkerhetskontroll",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.tömma-fickorna.1"
+   ]
   },
   {
    "senseId": "s.sista-utrop.1",
@@ -46365,7 +46379,8 @@
    "quiz": true,
    "confusableWith": [
     "s.pass.1",
-    "s.ambassad.1"
+    "s.ambassad.1",
+    "s.medborgarskap.1"
    ]
   },
   {
@@ -46431,7 +46446,12 @@
    "confusableWith": [
     "s.medborgare.1",
     "s.medborgarskap.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7f5994d9"
+   }
   },
   {
    "senseId": "s.medborgarskap.1",
@@ -46442,8 +46462,15 @@
    "symbol": true,
    "confusableWith": [
     "s.nationalitet.1",
-    "s.uppehållstillstånd.1"
-   ]
+    "s.uppehållstillstånd.1",
+    "s.resehandling.1",
+    "s.visum.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "5e1da580"
+   }
   },
   {
    "senseId": "s.uppehållstillstånd.1",
@@ -46472,7 +46499,8 @@
    "group": "pass",
    "quiz": true,
    "confusableWith": [
-    "s.pass.1"
+    "s.pass.1",
+    "s.medborgarskap.1"
    ]
   },
   {
@@ -46719,7 +46747,12 @@
    "symbol": true,
    "confusableWith": [
     "s.landning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1f6f8070"
+   }
   },
   {
    "senseId": "s.landning.1",
@@ -46779,7 +46812,12 @@
    "confusableWith": [
     "s.flygläge.1",
     "s.jetlag.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "486aba51"
+   }
   },
   {
    "senseId": "s.jetlag.1",
@@ -46816,7 +46854,12 @@
     "s.receptionist.1",
     "s.lediga-rum.1",
     "s.hotellgäst.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7fc745ed"
+   }
   },
   {
    "senseId": "s.receptionist.1",
@@ -46930,7 +46973,12 @@
    "symbol": true,
    "confusableWith": [
     "s.hotellrum.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6bbf61d8"
+   }
   },
   {
    "senseId": "s.havsutsikt.1",
@@ -46979,7 +47027,8 @@
    "group": "ankomstdag",
    "quiz": true,
    "confusableWith": [
-    "s.ankomstdag.1"
+    "s.ankomstdag.1",
+    "s.lämna-rummet.1"
    ]
   },
   {
@@ -46991,7 +47040,12 @@
    "symbol": true,
    "confusableWith": [
     "s.ingår-i-priset.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "2c7eb241"
+   }
   },
   {
    "senseId": "s.ingår-i-priset.1",
@@ -47003,7 +47057,12 @@
    "confusableWith": [
     "s.per-natt.1",
     "s.frukostbuffé.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "8b4fb247"
+   }
   },
   {
    "senseId": "s.frukostbuffé.1",
@@ -47045,7 +47104,8 @@
    "confusableWith": [
     "s.checka-ut.1",
     "s.sen-utcheckning.1",
-    "s.lämna-nyckeln.1"
+    "s.lämna-nyckeln.1",
+    "s.lämna-rummet.1"
    ]
   },
   {
@@ -47067,8 +47127,15 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.checka-ut.1"
-   ]
+    "s.checka-ut.1",
+    "s.utcheckning.1",
+    "s.avresedag.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "9fa69ce0"
+   }
   },
   {
    "senseId": "s.lämna-nyckeln.1",
@@ -47080,7 +47147,12 @@
    "confusableWith": [
     "s.nyckelkort.1",
     "s.utcheckning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "22160247"
+   }
   },
   {
    "senseId": "s.hotellnota.1",
@@ -47102,7 +47174,12 @@
    "confusableWith": [
     "s.hotellnota.1",
     "s.reservera-ett-belopp.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ab2b72ee"
+   }
   },
   {
    "senseId": "s.reservera-ett-belopp.1",
@@ -47113,7 +47190,12 @@
    "symbol": true,
    "confusableWith": [
     "s.betala-i-förväg.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "42dcdf3e"
+   }
   }
  ]
 }
