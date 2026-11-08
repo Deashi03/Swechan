@@ -43,6 +43,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'ehan.': () => import('./online').then((m) => m.ONLINE_MOTIFS),
   'post.': () => import('./post').then((m) => m.POST_MOTIFS),
   'tjän.': () => import('./services').then((m) => m.SERVICES_MOTIFS),
+  'trafik.': () => import('./transit').then((m) => m.TRANSIT_MOTIFS),
+  'väg.': () => import('./nav').then((m) => m.NAV_MOTIFS),
+  'bil.': () => import('./car').then((m) => m.CAR_MOTIFS),
+  'cyk.': () => import('./bike').then((m) => m.BIKE_MOTIFS),
+  'tåg.': () => import('./rail').then((m) => m.RAIL_MOTIFS),
+  'res.': () => import('./travel').then((m) => m.TRAVEL_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
