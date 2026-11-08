@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.21.0 – 2026-11-08
+
+Fortsättning på bilderna till de färdiga modulerna. Hela överämnet *Handla & tjänster* (501–542) har nu bilder: 628 av 630 modulord. Alla symbol- och adjektivbilder gick igenom blindtestgrinden.
+
+### Handla & tjänster (592 nya bilder)
+- **I butiken (501–507):** handla mat, kassan, kvitto, rabatter och erbjudanden, kvalitet och priser.
+- **Pengar och betalning (508–514):** kontanter, kort, betalning med mobilen, fakturor, delbetalning, avgifter, prenumerationer och prisjämförelser. Betaltjänster ritas som allmänna symboler utan varumärken (telefon med belopp och grön knapp i stället för en logotyp).
+- **Butiker och service (515–521):** klädbutiker och avdelningar (skyltarna har piktogram), elektronik, apotek, bokhandel och presentbutik, öppettider, provrum och köer, frågor till personalen.
+- **Handla på nätet (522–528):** sökning och filter, produktbeskrivningar och recensioner, varukorg och kassa, leveransalternativ, spårning, ångerrätt och retur, bedrägerier vid nätköp. Skärmarna visar ikoner, siffror och priser men aldrig ordet.
+- **Post och paket (529–535):** brev och vykort, kuvert och frimärken, paketstorlekar, paketombud och paketskåp, skicka utomlands, adresser och postnummer, försenade och saknade paket. Postlådor och fordon ritas utan postmärken.
+- **Tjänster (536–542):** hantverkare, kemtvätt och skrädderi, kundtjänst och support, bibliotek, bokningar och avbokningar, abonnemang och medlemskap, klagomål och ersättning.
+- Två ord har ingen bild: *leverans* (tolkades två gånger som *leverera*) och *vänligen* (artighetsord utan tydlig scen). Båda fick planstatus `none` efter två blindtest.
+
+### Blindtest
+- 126 bilder blindtestades i den här versionen: 113 godkända och 13 godkända synonymfall. Underkända bilder ritades om och testades igen, till exempel *exklusive* (ställs nu mot *inklusive*: maträtten ingår, drycken kostar extra), *trovärdig*, *ändringssömnad* och avdelningsskyltarna.
+- Nära synonymer och överordnade begrepp har fått `confusableWith`, till exempel *bedrägeri*/*nätfiske*, *oanvänd*/*nyskick*, *butiksbiträde*/*expedit* och *på väg*/*under transport*/*ute för leverans*. De ställs aldrig mot varandra i bildövningar.
+- Osynlig text (teckenstorlek 0,1) som låg kvar i några motiv är borttagen. Testet *no picture spells out its own word* hittade den.
+
+### Teknik
+- Nya motivfiler som laddas när de behövs: `shopping.ts` (`köp.`), `money.ts` (`peng.`), `stores.ts` (`buti.`), `online.ts` (`ehan.`), `post.ts` (`post.`) och `services.ts` (`tjän.`).
+- Återanvändbara hjälpare: `cart` och `ptag` (`shopping.ts`), `note`, `coin` och `bankcard` (`money.ts`).
+
+I hela appen har nu 4 280 av 6 182 modulord en bild. Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v25`.
+
 ## 0.20.0 – 2026-11-08
 
 Produktägaren bad om bilder till de färdiga modulerna. Hela överämnet *Tid & vardagsrutiner* (401–442) har nu bilder: 628 av 630 modulord. Alla bilder gick igenom blindtestgrinden från 0.19.1.

@@ -15773,7 +15773,10 @@
     "result": "pass",
     "round": "0.19.0",
     "hash": "b127c5d3"
-   }
+   },
+   "confusableWith": [
+    "s.exklusive.1"
+   ]
   },
   {
    "senseId": "s.boka.1",
@@ -15874,7 +15877,8 @@
    "group": "nota",
    "quiz": true,
    "confusableWith": [
-    "s.nota.1"
+    "s.nota.1",
+    "s.kvittens.1"
    ]
   },
   {
@@ -21796,7 +21800,10 @@
    "kind": "illustration",
    "motif": "städ.reklamera",
    "group": "reklamera",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.reklamation.1"
+   ]
   },
   {
    "senseId": "s.rutin.1",
@@ -28500,7 +28507,10 @@
    "kind": "illustration",
    "motif": "tid.storhelg",
    "group": "veckodag",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.avvikande.1"
+   ]
   },
   {
    "senseId": "s.i-måndags.1",
@@ -33080,7 +33090,10 @@
    "kind": "illustration",
    "motif": "mått.dela-på",
    "group": "dela-på",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.lika-delar.1"
+   ]
   },
   {
    "senseId": "s.dela-lika.1",
@@ -33100,12 +33113,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.dela-lika.1"
+    "s.dela-lika.1",
+    "s.fördela.1",
+    "s.dela-på.1"
    ],
    "blindTest": {
-    "result": "synonym",
-    "round": "0.19.1",
-    "hash": "f3740c17"
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ead5f20d"
    }
   },
   {
@@ -33113,7 +33128,10 @@
    "kind": "illustration",
    "motif": "mått.fördela",
    "group": "dela-på",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.lika-delar.1"
+   ]
   },
   {
    "senseId": "s.per-person.1",
@@ -34390,6 +34408,5892 @@
     "round": "0.20.0",
     "hash": "5fb92916"
    }
+  },
+  {
+   "senseId": "s.mataffär.1",
+   "kind": "illustration",
+   "motif": "köp.mataffär",
+   "group": "mataffär",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vara-produkt.1",
+   "kind": "illustration",
+   "motif": "köp.vara-produkt",
+   "group": "vara",
+   "quiz": false
+  },
+  {
+   "senseId": "s.avdelning.1",
+   "kind": "illustration",
+   "motif": "köp.avdelning",
+   "group": "avdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sortiment.1",
+   "kind": "illustration",
+   "motif": "köp.sortiment",
+   "group": "avdelning",
+   "quiz": false
+  },
+  {
+   "senseId": "s.ingång.1",
+   "kind": "illustration",
+   "motif": "köp.ingång",
+   "group": "mataffär",
+   "quiz": true
+  },
+  {
+   "senseId": "s.utgång.1",
+   "kind": "illustration",
+   "motif": "köp.utgång",
+   "group": "mataffär",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kundvagn.1",
+   "kind": "illustration",
+   "motif": "köp.kundvagn",
+   "group": "kundvagn",
+   "quiz": true
+  },
+  {
+   "senseId": "s.längst-in.1",
+   "kind": "illustration",
+   "motif": "köp.längst-in",
+   "group": "avdelning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kylvara.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "a765a3a8"
+   }
+  },
+  {
+   "senseId": "s.frukt-och-grönt.1",
+   "kind": "illustration",
+   "motif": "köp.frukt-och-grönt",
+   "group": "avdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.chark.1",
+   "kind": "illustration",
+   "motif": "köp.chark",
+   "group": "avdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kyldisk.1",
+   "kind": "illustration",
+   "motif": "köp.kyldisk",
+   "group": "avdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.frysdisk.1",
+   "kind": "illustration",
+   "motif": "köp.frysdisk",
+   "group": "avdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.färskvara.1",
+   "kind": "illustration",
+   "motif": "köp.färskvara",
+   "group": "färskvara",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kylvara.1",
+   "kind": "illustration",
+   "motif": "köp.kylvara",
+   "group": "färskvara",
+   "quiz": true,
+   "confusableWith": [
+    "s.längst-in.1"
+   ]
+  },
+  {
+   "senseId": "s.kryddhylla.1",
+   "kind": "illustration",
+   "motif": "köp.kryddhylla",
+   "group": "avdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.prisskylt.1",
+   "kind": "illustration",
+   "motif": "köp.prisskylt",
+   "group": "prisskylt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hyllkant.1",
+   "kind": "illustration",
+   "motif": "köp.hyllkant",
+   "group": "prisskylt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.jämförpris.1",
+   "kind": "illustration",
+   "motif": "köp.jämförpris",
+   "group": "prisskylt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.per-styck.1",
+   "kind": "illustration",
+   "motif": "köp.per-styck",
+   "group": "per",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.styckpris.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "4fafa85c"
+   }
+  },
+  {
+   "senseId": "s.styckpris.1",
+   "kind": "illustration",
+   "motif": "köp.styckpris",
+   "group": "prisskylt",
+   "quiz": true,
+   "confusableWith": [
+    "s.per-styck.1"
+   ]
+  },
+  {
+   "senseId": "s.ordinarie-pris.1",
+   "kind": "illustration",
+   "motif": "köp.ordinarie-pris",
+   "group": "prisskylt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.prisvärd.1",
+   "kind": "illustration",
+   "motif": "köp.prisvärd",
+   "group": "prisvärd",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6b242cf8"
+   }
+  },
+  {
+   "senseId": "s.moms.1",
+   "kind": "illustration",
+   "motif": "köp.moms",
+   "group": "moms",
+   "quiz": false,
+   "confusableWith": [
+    "s.exklusive.1"
+   ]
+  },
+  {
+   "senseId": "s.exklusive.1",
+   "kind": "illustration",
+   "motif": "köp.exklusive",
+   "group": "exklusive",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.inklusive.1",
+    "s.moms.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "9d768905"
+   }
+  },
+  {
+   "senseId": "s.streckkod.1",
+   "kind": "illustration",
+   "motif": "köp.streckkod",
+   "group": "streckkod",
+   "quiz": true
+  },
+  {
+   "senseId": "s.avrunda.1",
+   "kind": "illustration",
+   "motif": "köp.avrunda",
+   "group": "avrunda",
+   "quiz": true
+  },
+  {
+   "senseId": "s.prisfel.1",
+   "kind": "illustration",
+   "motif": "köp.prisfel",
+   "group": "prisskylt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lösvikt.1",
+   "kind": "illustration",
+   "motif": "köp.lösvikt",
+   "group": "lösvikt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fruktpåse.1",
+   "kind": "illustration",
+   "motif": "köp.fruktpåse",
+   "group": "lösvikt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.klase.1",
+   "kind": "illustration",
+   "motif": "köp.klase",
+   "group": "lösvikt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.knippe.1",
+   "kind": "illustration",
+   "motif": "köp.knippe",
+   "group": "lösvikt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ask.1",
+   "kind": "illustration",
+   "motif": "köp.ask",
+   "group": "lösvikt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.styckvis.1",
+   "kind": "illustration",
+   "motif": "köp.styckvis",
+   "group": "styckvis",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "bf5891b1"
+   }
+  },
+  {
+   "senseId": "s.känna-på.1",
+   "kind": "illustration",
+   "motif": "köp.känna-på",
+   "group": "känna",
+   "quiz": true
+  },
+  {
+   "senseId": "s.stött.1",
+   "kind": "illustration",
+   "motif": "köp.stött",
+   "group": "stött",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.mosig.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1702a7e1"
+   }
+  },
+  {
+   "senseId": "s.mosig.1",
+   "kind": "illustration",
+   "motif": "köp.mosig",
+   "group": "mosig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stött.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "ed5b3357"
+   }
+  },
+  {
+   "senseId": "s.närodlad.1",
+   "kind": "illustration",
+   "motif": "köp.närodlad",
+   "group": "närodlad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "32b08535"
+   }
+  },
+  {
+   "senseId": "s.i-säsong.1",
+   "kind": "illustration",
+   "motif": "köp.i-säsong",
+   "group": "i",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "405a400d"
+   }
+  },
+  {
+   "senseId": "s.torghandel.1",
+   "kind": "illustration",
+   "motif": "köp.torghandel",
+   "group": "torghandel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.märke.1",
+   "kind": "illustration",
+   "motif": "köp.märke",
+   "group": "märke",
+   "quiz": false
+  },
+  {
+   "senseId": "s.eget-märke.1",
+   "kind": "illustration",
+   "motif": "köp.eget-märke",
+   "group": "eget",
+   "quiz": true
+  },
+  {
+   "senseId": "s.variant.1",
+   "kind": "illustration",
+   "motif": "köp.variant",
+   "group": "variant",
+   "quiz": false
+  },
+  {
+   "senseId": "s.storpack.1",
+   "kind": "illustration",
+   "motif": "köp.storpack",
+   "group": "storpack",
+   "quiz": true
+  },
+  {
+   "senseId": "s.smaksatt.1",
+   "kind": "illustration",
+   "motif": "köp.smaksatt",
+   "group": "smaksatt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "2941edf4"
+   }
+  },
+  {
+   "senseId": "s.naturell.1",
+   "kind": "illustration",
+   "motif": "köp.naturell",
+   "group": "smaksatt",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.osötad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "8b497a74"
+   }
+  },
+  {
+   "senseId": "s.osötad.1",
+   "kind": "illustration",
+   "motif": "köp.osötad",
+   "group": "smaksatt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "4bd9cdbf"
+   },
+   "confusableWith": [
+    "s.naturell.1"
+   ]
+  },
+  {
+   "senseId": "s.innehållsförteckning.1",
+   "kind": "illustration",
+   "motif": "köp.innehållsförteckning",
+   "group": "innehållsförteckning",
+   "quiz": true,
+   "confusableWith": [
+    "s.spår-av.1"
+   ]
+  },
+  {
+   "senseId": "s.tillsats.1",
+   "kind": "illustration",
+   "motif": "köp.tillsats",
+   "group": "innehållsförteckning",
+   "quiz": false
+  },
+  {
+   "senseId": "s.spår-av.1",
+   "kind": "illustration",
+   "motif": "köp.spår-av",
+   "group": "spår",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.innehållsförteckning.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "90b07028"
+   }
+  },
+  {
+   "senseId": "s.näringsvärde.1",
+   "kind": "illustration",
+   "motif": "köp.näringsvärde",
+   "group": "innehållsförteckning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sista-förbrukningsdag.1",
+   "kind": "illustration",
+   "motif": "köp.sista-förbrukningsdag",
+   "group": "innehållsförteckning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.slutsåld.1",
+   "kind": "illustration",
+   "motif": "köp.slutsåld",
+   "group": "slutsåld",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "f6b8b027"
+   }
+  },
+  {
+   "senseId": "s.fråga-efter.1",
+   "kind": "illustration",
+   "motif": "köp.fråga-efter",
+   "group": "fråga",
+   "quiz": true
+  },
+  {
+   "senseId": "s.leta-upp.1",
+   "kind": "illustration",
+   "motif": "köp.leta-upp",
+   "group": "leta",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kassa.1",
+   "kind": "illustration",
+   "motif": "köp.kassa",
+   "group": "kassa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kassör.1",
+   "kind": "illustration",
+   "motif": "köp.kassör",
+   "group": "kassa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.snabbkassa.1",
+   "kind": "illustration",
+   "motif": "köp.snabbkassa",
+   "group": "kassa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.scanna.1",
+   "kind": "illustration",
+   "motif": "köp.scanna",
+   "group": "scanna",
+   "quiz": true
+  },
+  {
+   "senseId": "s.självscanning.1",
+   "kind": "illustration",
+   "motif": "köp.självscanning",
+   "group": "scanna",
+   "quiz": true
+  },
+  {
+   "senseId": "s.handskanner.1",
+   "kind": "illustration",
+   "motif": "köp.handskanner",
+   "group": "scanna",
+   "quiz": true
+  },
+  {
+   "senseId": "s.stickprov.1",
+   "kind": "illustration",
+   "motif": "köp.stickprov",
+   "group": "scanna",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kassaband.1",
+   "kind": "illustration",
+   "motif": "köp.kassaband",
+   "group": "kassa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.varuavdelare.1",
+   "kind": "illustration",
+   "motif": "köp.varuavdelare",
+   "group": "kassa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kortterminal.1",
+   "kind": "illustration",
+   "motif": "köp.kortterminal",
+   "group": "kortterminal",
+   "quiz": true,
+   "confusableWith": [
+    "s.godkänd.1"
+   ]
+  },
+  {
+   "senseId": "s.blippa.1",
+   "kind": "illustration",
+   "motif": "köp.blippa",
+   "group": "kortterminal",
+   "quiz": true
+  },
+  {
+   "senseId": "s.godkänd.1",
+   "kind": "illustration",
+   "motif": "köp.godkänd",
+   "group": "godkänd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kortterminal.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "da6ddb5f"
+   }
+  },
+  {
+   "senseId": "s.packa-ner.1",
+   "kind": "illustration",
+   "motif": "köp.packa-ner",
+   "group": "bärkasse",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bärkasse.1",
+   "kind": "illustration",
+   "motif": "köp.bärkasse",
+   "group": "bärkasse",
+   "quiz": true
+  },
+  {
+   "senseId": "s.papperspåse.1",
+   "kind": "illustration",
+   "motif": "köp.papperspåse",
+   "group": "bärkasse",
+   "quiz": true
+  },
+  {
+   "senseId": "s.reklamblad.1",
+   "kind": "illustration",
+   "motif": "köp.reklamblad",
+   "group": "reklamblad",
+   "quiz": true
+  },
+  {
+   "senseId": "s.erbjudande.1",
+   "kind": "illustration",
+   "motif": "köp.erbjudande",
+   "group": "erbjudande",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kampanj.1",
+    "s.extrapris.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "3b24a116"
+   }
+  },
+  {
+   "senseId": "s.kampanj.1",
+   "kind": "illustration",
+   "motif": "köp.kampanj",
+   "group": "reklamblad",
+   "quiz": true,
+   "confusableWith": [
+    "s.erbjudande.1"
+   ]
+  },
+  {
+   "senseId": "s.extrapris.1",
+   "kind": "illustration",
+   "motif": "köp.extrapris",
+   "group": "reklamblad",
+   "quiz": true,
+   "confusableWith": [
+    "s.erbjudande.1",
+    "s.nedsatt.1"
+   ]
+  },
+  {
+   "senseId": "s.rabatt.1",
+   "kind": "illustration",
+   "motif": "köp.rabatt",
+   "group": "reklamblad",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nedsatt.1",
+   "kind": "illustration",
+   "motif": "köp.nedsatt",
+   "group": "nedsatt",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.rea.1",
+    "s.extrapris.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "d5e1c001"
+   }
+  },
+  {
+   "senseId": "s.halva-priset.1",
+   "kind": "illustration",
+   "motif": "köp.halva-priset",
+   "group": "halva",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "36004950"
+   }
+  },
+  {
+   "senseId": "s.tre-för-två.1",
+   "kind": "illustration",
+   "motif": "köp.tre-för-två",
+   "group": "tre",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ce5e5846"
+   }
+  },
+  {
+   "senseId": "s.rea.1",
+   "kind": "illustration",
+   "motif": "köp.rea",
+   "group": "reklamblad",
+   "quiz": true,
+   "confusableWith": [
+    "s.nedsatt.1"
+   ]
+  },
+  {
+   "senseId": "s.medlemspris.1",
+   "kind": "illustration",
+   "motif": "köp.medlemspris",
+   "group": "reklamblad",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bonus.1",
+   "kind": "illustration",
+   "motif": "köp.bonus",
+   "group": "reklamblad",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kupong.1",
+   "kind": "illustration",
+   "motif": "köp.kupong",
+   "group": "reklamblad",
+   "quiz": true
+  },
+  {
+   "senseId": "s.per-hushåll.1",
+   "kind": "illustration",
+   "motif": "köp.per-hushåll",
+   "group": "per",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "5cb0307e"
+   }
+  },
+  {
+   "senseId": "s.slå-till.1",
+   "kind": "illustration",
+   "motif": "köp.slå-till",
+   "group": "slå",
+   "quiz": true
+  },
+  {
+   "senseId": "s.passa-på.1",
+   "kind": "illustration",
+   "motif": "köp.passa-på",
+   "group": "passa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lukta-illa.1",
+   "kind": "illustration",
+   "motif": "köp.lukta-illa",
+   "group": "lukta-illa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.smaka-konstigt.1",
+   "kind": "illustration",
+   "motif": "köp.smaka-konstigt",
+   "group": "lukta-illa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.surna.1",
+   "kind": "illustration",
+   "motif": "köp.surna",
+   "group": "lukta-illa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.felaktig.1",
+   "kind": "illustration",
+   "motif": "köp.felaktig",
+   "group": "felaktig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a7cc1efc"
+   }
+  },
+  {
+   "senseId": "s.glasbit.1",
+   "kind": "illustration",
+   "motif": "köp.glasbit",
+   "group": "glasbit",
+   "quiz": true
+  },
+  {
+   "senseId": "s.främmande-föremål.1",
+   "kind": "illustration",
+   "motif": "köp.främmande-föremål",
+   "group": "glasbit",
+   "quiz": true
+  },
+  {
+   "senseId": "s.obruten.1",
+   "kind": "illustration",
+   "motif": "köp.obruten",
+   "group": "obruten",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a50d8f24"
+   }
+  },
+  {
+   "senseId": "s.visa-upp.1",
+   "kind": "illustration",
+   "motif": "köp.visa-upp",
+   "group": "visa-upp",
+   "quiz": true
+  },
+  {
+   "senseId": "s.reklamation.1",
+   "kind": "illustration",
+   "motif": "köp.reklamation",
+   "group": "visa-upp",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.reklamera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "f15206c4"
+   }
+  },
+  {
+   "senseId": "s.ta-tillbaka.1",
+   "kind": "illustration",
+   "motif": "köp.ta-tillbaka",
+   "group": "visa-upp",
+   "quiz": true
+  },
+  {
+   "senseId": "s.pengarna-tillbaka.1",
+   "kind": "illustration",
+   "motif": "köp.pengarna-tillbaka",
+   "group": "pengarna",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "d9c869c2"
+   }
+  },
+  {
+   "senseId": "s.butikschef.1",
+   "kind": "illustration",
+   "motif": "köp.butikschef",
+   "group": "butikschef",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kontakta.1",
+   "kind": "illustration",
+   "motif": "köp.kontakta",
+   "group": "kontakta",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sedel.1",
+   "kind": "illustration",
+   "motif": "peng.sedel",
+   "group": "sedel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mynt.1",
+   "kind": "illustration",
+   "motif": "peng.mynt",
+   "group": "mynt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.enkrona.1",
+   "kind": "illustration",
+   "motif": "peng.enkrona",
+   "group": "mynt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.femkrona.1",
+   "kind": "illustration",
+   "motif": "peng.femkrona",
+   "group": "mynt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tiokrona.1",
+   "kind": "illustration",
+   "motif": "peng.tiokrona",
+   "group": "mynt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tjugolapp.1",
+   "kind": "illustration",
+   "motif": "peng.tjugolapp",
+   "group": "sedel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hundralapp.1",
+   "kind": "illustration",
+   "motif": "peng.hundralapp",
+   "group": "sedel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.femhundralapp.1",
+   "kind": "illustration",
+   "motif": "peng.femhundralapp",
+   "group": "sedel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.portmonnä.1",
+   "kind": "illustration",
+   "motif": "peng.portmonnä",
+   "group": "portmonnä",
+   "quiz": true
+  },
+  {
+   "senseId": "s.myntfack.1",
+   "kind": "illustration",
+   "motif": "peng.myntfack",
+   "group": "portmonnä",
+   "quiz": true
+  },
+  {
+   "senseId": "s.småpengar.1",
+   "kind": "illustration",
+   "motif": "peng.småpengar",
+   "group": "mynt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.slant.1",
+   "kind": "illustration",
+   "motif": "peng.slant",
+   "group": "mynt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.spargris.1",
+   "kind": "illustration",
+   "motif": "peng.spargris",
+   "group": "spargris",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ogiltig.1",
+   "kind": "illustration",
+   "motif": "peng.ogiltig",
+   "group": "ogiltig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1033b7e4"
+   }
+  },
+  {
+   "senseId": "s.Riksbanken.1",
+   "kind": "illustration",
+   "motif": "peng.Riksbanken",
+   "group": "Riksbanken",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bankkort.1",
+   "kind": "illustration",
+   "motif": "peng.bankkort",
+   "group": "bankkort",
+   "quiz": true
+  },
+  {
+   "senseId": "s.betalkort.1",
+   "kind": "illustration",
+   "motif": "peng.betalkort",
+   "group": "bankkort",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kreditkort.1",
+   "kind": "illustration",
+   "motif": "peng.kreditkort",
+   "group": "bankkort",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kortnummer.1",
+   "kind": "illustration",
+   "motif": "peng.kortnummer",
+   "group": "bankkort",
+   "quiz": true
+  },
+  {
+   "senseId": "s.pinkod.1",
+   "kind": "illustration",
+   "motif": "peng.pinkod",
+   "group": "pinkod",
+   "quiz": true
+  },
+  {
+   "senseId": "s.knappa-in.1",
+   "kind": "illustration",
+   "motif": "peng.knappa-in",
+   "group": "pinkod",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kontaktlös.1",
+   "kind": "illustration",
+   "motif": "peng.kontaktlös",
+   "group": "kontaktlös",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "33d1a415"
+   }
+  },
+  {
+   "senseId": "s.neka.1",
+   "kind": "illustration",
+   "motif": "peng.neka",
+   "group": "neka",
+   "quiz": true
+  },
+  {
+   "senseId": "s.täckning.1",
+   "kind": "illustration",
+   "motif": "peng.täckning",
+   "group": "täckning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ta-ut-pengar.1",
+   "kind": "illustration",
+   "motif": "peng.ta-ut-pengar",
+   "group": "ta-ut-pengar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.uttagsautomat.1",
+   "kind": "illustration",
+   "motif": "peng.uttagsautomat",
+   "group": "ta-ut-pengar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kontantfri.1",
+   "kind": "illustration",
+   "motif": "peng.kontantfri",
+   "group": "kontantfri",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "85720f21"
+   }
+  },
+  {
+   "senseId": "s.ta-emot.1",
+   "kind": "illustration",
+   "motif": "peng.ta-emot",
+   "group": "ta-emot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ta-betalt.1",
+   "kind": "illustration",
+   "motif": "peng.ta-betalt",
+   "group": "ta-emot",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kopia.1",
+   "kind": "illustration",
+   "motif": "peng.kopia",
+   "group": "kopia",
+   "quiz": false
+  },
+  {
+   "senseId": "s.specificerad.1",
+   "kind": "illustration",
+   "motif": "peng.specificerad",
+   "group": "specificerad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "e63da3a0"
+   }
+  },
+  {
+   "senseId": "s.faktura.1",
+   "kind": "illustration",
+   "motif": "peng.faktura",
+   "group": "faktura",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fakturera.1",
+   "kind": "illustration",
+   "motif": "peng.fakturera",
+   "group": "faktura",
+   "quiz": true
+  },
+  {
+   "senseId": "s.e-faktura.1",
+   "kind": "illustration",
+   "motif": "peng.e-faktura",
+   "group": "faktura",
+   "quiz": true
+  },
+  {
+   "senseId": "s.pappersfaktura.1",
+   "kind": "illustration",
+   "motif": "peng.pappersfaktura",
+   "group": "faktura",
+   "quiz": true
+  },
+  {
+   "senseId": "s.belopp.1",
+   "kind": "illustration",
+   "motif": "peng.belopp",
+   "group": "faktura",
+   "quiz": false
+  },
+  {
+   "senseId": "s.förfallodag.1",
+   "kind": "illustration",
+   "motif": "peng.förfallodag",
+   "group": "faktura",
+   "quiz": true
+  },
+  {
+   "senseId": "s.betala-in.1",
+   "kind": "illustration",
+   "motif": "peng.betala-in",
+   "group": "betala-in",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bankgiro.1",
+   "kind": "illustration",
+   "motif": "peng.bankgiro",
+   "group": "betala-in",
+   "quiz": true
+  },
+  {
+   "senseId": "s.OCR-nummer.1",
+   "kind": "illustration",
+   "motif": "peng.OCR-nummer",
+   "group": "betala-in",
+   "quiz": true
+  },
+  {
+   "senseId": "s.autogiro.1",
+   "kind": "illustration",
+   "motif": "peng.autogiro",
+   "group": "betala-in",
+   "quiz": true
+  },
+  {
+   "senseId": "s.påminnelseavgift.1",
+   "kind": "illustration",
+   "motif": "peng.påminnelseavgift",
+   "group": "faktura",
+   "quiz": true
+  },
+  {
+   "senseId": "s.inkasso.1",
+   "kind": "illustration",
+   "motif": "peng.inkasso",
+   "group": "faktura",
+   "quiz": true
+  },
+  {
+   "senseId": "s.Swish.1",
+   "kind": "illustration",
+   "motif": "peng.Swish",
+   "group": "Swish",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mobilnummer.1",
+   "kind": "illustration",
+   "motif": "peng.mobilnummer",
+   "group": "mobilnummer",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skicka-pengar.1",
+   "kind": "illustration",
+   "motif": "peng.skicka-pengar",
+   "group": "Swish",
+   "quiz": true
+  },
+  {
+   "senseId": "s.överföring.1",
+   "kind": "illustration",
+   "motif": "peng.överföring",
+   "group": "Swish",
+   "quiz": true
+  },
+  {
+   "senseId": "s.BankID.1",
+   "kind": "illustration",
+   "motif": "peng.BankID",
+   "group": "BankID",
+   "quiz": true
+  },
+  {
+   "senseId": "s.legitimera-sig.1",
+   "kind": "illustration",
+   "motif": "peng.legitimera-sig",
+   "group": "BankID",
+   "quiz": true
+  },
+  {
+   "senseId": "s.betalapp.1",
+   "kind": "illustration",
+   "motif": "peng.betalapp",
+   "group": "Swish",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mobilbetalning.1",
+   "kind": "illustration",
+   "motif": "peng.mobilbetalning",
+   "group": "Swish",
+   "quiz": true
+  },
+  {
+   "senseId": "s.digital-plånbok.1",
+   "kind": "illustration",
+   "motif": "peng.digital-plånbok",
+   "group": "Swish",
+   "quiz": true
+  },
+  {
+   "senseId": "s.QR-kod.1",
+   "kind": "illustration",
+   "motif": "peng.QR-kod",
+   "group": "QR",
+   "quiz": true
+  },
+  {
+   "senseId": "s.avgiftsfri.1",
+   "kind": "illustration",
+   "motif": "peng.avgiftsfri",
+   "group": "avgiftsfri",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1ef4811d"
+   }
+  },
+  {
+   "senseId": "s.lägga-ut.1",
+   "kind": "illustration",
+   "motif": "peng.lägga-ut",
+   "group": "lägga-ut",
+   "quiz": true
+  },
+  {
+   "senseId": "s.betala-tillbaka.1",
+   "kind": "illustration",
+   "motif": "peng.betala-tillbaka",
+   "group": "lägga-ut",
+   "quiz": true
+  },
+  {
+   "senseId": "s.växel.1",
+   "kind": "illustration",
+   "motif": "peng.växel",
+   "group": "växel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.jämna-pengar.1",
+   "kind": "illustration",
+   "motif": "peng.jämna-pengar",
+   "group": "jämna",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ha-jämnt.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "09724e1a"
+   }
+  },
+  {
+   "senseId": "s.ha-jämnt.1",
+   "kind": "illustration",
+   "motif": "peng.ha-jämnt",
+   "group": "växel",
+   "quiz": true,
+   "confusableWith": [
+    "s.jämna-pengar.1"
+   ]
+  },
+  {
+   "senseId": "s.växla.1",
+   "kind": "illustration",
+   "motif": "peng.växla",
+   "group": "växel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.växla-in.1",
+   "kind": "illustration",
+   "motif": "peng.växla-in",
+   "group": "växel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.slå-fel.1",
+   "kind": "illustration",
+   "motif": "peng.slå-fel",
+   "group": "slå",
+   "quiz": true
+  },
+  {
+   "senseId": "s.originalkvitto.1",
+   "kind": "illustration",
+   "motif": "peng.originalkvitto",
+   "group": "originalkvitto",
+   "quiz": true
+  },
+  {
+   "senseId": "s.öppet-köp.1",
+   "kind": "illustration",
+   "motif": "peng.öppet-köp",
+   "group": "originalkvitto",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bytesrätt.1",
+   "kind": "illustration",
+   "motif": "peng.bytesrätt",
+   "group": "originalkvitto",
+   "quiz": true
+  },
+  {
+   "senseId": "s.byta-till.1",
+   "kind": "illustration",
+   "motif": "peng.byta-till",
+   "group": "originalkvitto",
+   "quiz": true
+  },
+  {
+   "senseId": "s.återbetalning.1",
+   "kind": "illustration",
+   "motif": "peng.återbetalning",
+   "group": "originalkvitto",
+   "quiz": true
+  },
+  {
+   "senseId": "s.återbetala.1",
+   "kind": "illustration",
+   "motif": "peng.återbetala",
+   "group": "originalkvitto",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tillgodokvitto.1",
+   "kind": "illustration",
+   "motif": "peng.tillgodokvitto",
+   "group": "originalkvitto",
+   "quiz": true
+  },
+  {
+   "senseId": "s.presentkort.1",
+   "kind": "illustration",
+   "motif": "peng.presentkort",
+   "group": "presentkort",
+   "quiz": true
+  },
+  {
+   "senseId": "s.prenumeration.1",
+   "kind": "illustration",
+   "motif": "peng.prenumeration",
+   "group": "prenumeration",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.prenumerera.1",
+    "s.förnya.1",
+    "s.teckna.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "5088b5b6"
+   }
+  },
+  {
+   "senseId": "s.prenumerera.1",
+   "kind": "illustration",
+   "motif": "peng.prenumerera",
+   "group": "prenumerera",
+   "quiz": true,
+   "confusableWith": [
+    "s.prenumeration.1"
+   ]
+  },
+  {
+   "senseId": "s.teckna.1",
+   "kind": "illustration",
+   "motif": "peng.teckna",
+   "group": "prenumerera",
+   "quiz": true,
+   "confusableWith": [
+    "s.prenumeration.1"
+   ]
+  },
+  {
+   "senseId": "s.provperiod.1",
+   "kind": "illustration",
+   "motif": "peng.provperiod",
+   "group": "prenumerera",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kostnadsfri.1",
+   "kind": "illustration",
+   "motif": "peng.kostnadsfri",
+   "group": "kostnadsfri",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "e6ccb918"
+   }
+  },
+  {
+   "senseId": "s.lockerbjudande.1",
+   "kind": "illustration",
+   "motif": "peng.lockerbjudande",
+   "group": "lockerbjudande",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "900a2b2d"
+   }
+  },
+  {
+   "senseId": "s.förnya.1",
+   "kind": "illustration",
+   "motif": "peng.förnya",
+   "group": "prenumerera",
+   "quiz": true,
+   "confusableWith": [
+    "s.prenumeration.1"
+   ]
+  },
+  {
+   "senseId": "s.per-månad.1",
+   "kind": "illustration",
+   "motif": "peng.per-månad",
+   "group": "per",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.månadskostnad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "23f8a2b8"
+   }
+  },
+  {
+   "senseId": "s.månadskostnad.1",
+   "kind": "illustration",
+   "motif": "peng.månadskostnad",
+   "group": "månadskostnad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.per-månad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "e44df094"
+   }
+  },
+  {
+   "senseId": "s.streamingtjänst.1",
+   "kind": "illustration",
+   "motif": "peng.streamingtjänst",
+   "group": "streamingtjänst",
+   "quiz": true
+  },
+  {
+   "senseId": "s.papperstidning.1",
+   "kind": "illustration",
+   "motif": "peng.papperstidning",
+   "group": "streamingtjänst",
+   "quiz": true
+  },
+  {
+   "senseId": "s.e-tidning.1",
+   "kind": "illustration",
+   "motif": "peng.e-tidning",
+   "group": "streamingtjänst",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nyhetsbrev.1",
+   "kind": "illustration",
+   "motif": "peng.nyhetsbrev",
+   "group": "streamingtjänst",
+   "quiz": true
+  },
+  {
+   "senseId": "s.matkasse.1",
+   "kind": "illustration",
+   "motif": "peng.matkasse",
+   "group": "streamingtjänst",
+   "quiz": true
+  },
+  {
+   "senseId": "s.uppsägning.1",
+   "kind": "illustration",
+   "motif": "peng.uppsägning",
+   "group": "prenumerera",
+   "quiz": true
+  },
+  {
+   "senseId": "s.prismedveten.1",
+   "kind": "illustration",
+   "motif": "peng.prismedveten",
+   "group": "prismedveten",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6cd32a9f"
+   }
+  },
+  {
+   "senseId": "s.prisjämförelse.1",
+   "kind": "illustration",
+   "motif": "peng.prisjämförelse",
+   "group": "prisjämförelse",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.fynda.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7167900d"
+   }
+  },
+  {
+   "senseId": "s.jämförelsesajt.1",
+   "kind": "illustration",
+   "motif": "peng.jämförelsesajt",
+   "group": "jämförelsesajt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.prisskillnad.1",
+   "kind": "illustration",
+   "motif": "peng.prisskillnad",
+   "group": "prisskillnad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7df6505a"
+   }
+  },
+  {
+   "senseId": "s.prisnivå.1",
+   "kind": "illustration",
+   "motif": "peng.prisnivå",
+   "group": "prisnivå",
+   "quiz": true
+  },
+  {
+   "senseId": "s.dyr-i-drift.1",
+   "kind": "illustration",
+   "motif": "peng.dyr-i-drift",
+   "group": "dyr",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "29a0c932"
+   }
+  },
+  {
+   "senseId": "s.i-längden.1",
+   "kind": "illustration",
+   "motif": "peng.i-längden",
+   "group": "i",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.löna-sig.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "74eaabba"
+   }
+  },
+  {
+   "senseId": "s.löna-sig.1",
+   "kind": "illustration",
+   "motif": "peng.löna-sig",
+   "group": "löna",
+   "quiz": true,
+   "confusableWith": [
+    "s.i-längden.1"
+   ]
+  },
+  {
+   "senseId": "s.vara-värd.1",
+   "kind": "illustration",
+   "motif": "peng.vara-värd",
+   "group": "vara",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kosta-skjortan.1",
+   "kind": "illustration",
+   "motif": "peng.kosta-skjortan",
+   "group": "kosta",
+   "quiz": true
+  },
+  {
+   "senseId": "s.impulsköp.1",
+   "kind": "illustration",
+   "motif": "peng.impulsköp",
+   "group": "jämförelsesajt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.överpris.1",
+   "kind": "illustration",
+   "motif": "peng.överpris",
+   "group": "jämförelsesajt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ocker.1",
+   "kind": "illustration",
+   "motif": "peng.ocker",
+   "group": "jämförelsesajt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.spara-in.1",
+   "kind": "illustration",
+   "motif": "peng.spara-in",
+   "group": "spara",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fynda.1",
+   "kind": "illustration",
+   "motif": "peng.fynda",
+   "group": "fynda",
+   "quiz": true,
+   "confusableWith": [
+    "s.prisjämförelse.1"
+   ]
+  },
+  {
+   "senseId": "s.köpcentrum.1",
+   "kind": "illustration",
+   "motif": "buti.köpcentrum",
+   "group": "köpcentrum",
+   "quiz": true,
+   "confusableWith": [
+    "s.shoppa.1"
+   ]
+  },
+  {
+   "senseId": "s.shoppa.1",
+   "kind": "illustration",
+   "motif": "buti.shoppa",
+   "group": "shoppa",
+   "quiz": true,
+   "confusableWith": [
+    "s.köpcentrum.1",
+    "s.gå-i-affärer.1"
+   ]
+  },
+  {
+   "senseId": "s.gå-i-affärer.1",
+   "kind": "illustration",
+   "motif": "buti.gå-i-affärer",
+   "group": "shoppa",
+   "quiz": true,
+   "confusableWith": [
+    "s.shoppa.1",
+    "s.fönstershoppa.1"
+   ]
+  },
+  {
+   "senseId": "s.fönstershoppa.1",
+   "kind": "illustration",
+   "motif": "buti.fönstershoppa",
+   "group": "shoppa",
+   "quiz": true,
+   "confusableWith": [
+    "s.gå-i-affärer.1"
+   ]
+  },
+  {
+   "senseId": "s.klädbutik.1",
+   "kind": "illustration",
+   "motif": "buti.klädbutik",
+   "group": "klädbutik",
+   "quiz": true,
+   "confusableWith": [
+    "s.klädställning.1"
+   ]
+  },
+  {
+   "senseId": "s.butikskedja.1",
+   "kind": "illustration",
+   "motif": "buti.butikskedja",
+   "group": "butikskedja",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skyltfönster.1",
+   "kind": "illustration",
+   "motif": "buti.skyltfönster",
+   "group": "skyltfönster",
+   "quiz": true,
+   "confusableWith": [
+    "s.skyltdocka.1"
+   ]
+  },
+  {
+   "senseId": "s.skyltdocka.1",
+   "kind": "illustration",
+   "motif": "buti.skyltdocka",
+   "group": "skyltdocka",
+   "quiz": true,
+   "confusableWith": [
+    "s.skyltfönster.1"
+   ]
+  },
+  {
+   "senseId": "s.kollektion.1",
+   "kind": "illustration",
+   "motif": "buti.kollektion",
+   "group": "kollektion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "921b8bfd"
+   }
+  },
+  {
+   "senseId": "s.damavdelning.1",
+   "kind": "illustration",
+   "motif": "buti.damavdelning",
+   "group": "damavdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.herravdelning.1",
+   "kind": "illustration",
+   "motif": "buti.herravdelning",
+   "group": "herravdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.barnavdelning.1",
+   "kind": "illustration",
+   "motif": "buti.barnavdelning",
+   "group": "barnavdelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.klädställning.1",
+   "kind": "illustration",
+   "motif": "buti.klädställning",
+   "group": "klädställning",
+   "quiz": true,
+   "confusableWith": [
+    "s.klädbutik.1"
+   ]
+  },
+  {
+   "senseId": "s.hänga-tillbaka.1",
+   "kind": "illustration",
+   "motif": "buti.hänga-tillbaka",
+   "group": "hänga",
+   "quiz": true
+  },
+  {
+   "senseId": "s.larmbricka.1",
+   "kind": "illustration",
+   "motif": "buti.larmbricka",
+   "group": "larmbricka",
+   "quiz": true
+  },
+  {
+   "senseId": "s.elektronikbutik.1",
+   "kind": "illustration",
+   "motif": "buti.elektronikbutik",
+   "group": "elektronikbutik",
+   "quiz": true,
+   "confusableWith": [
+    "s.hemelektronik.1"
+   ]
+  },
+  {
+   "senseId": "s.högtalare.1",
+   "kind": "illustration",
+   "motif": "buti.högtalare",
+   "group": "högtalare",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hemelektronik.1",
+   "kind": "illustration",
+   "motif": "buti.hemelektronik",
+   "group": "hemelektronik",
+   "quiz": true,
+   "confusableWith": [
+    "s.elektronikbutik.1"
+   ]
+  },
+  {
+   "senseId": "s.märkesvara.1",
+   "kind": "illustration",
+   "motif": "buti.märkesvara",
+   "group": "märkesvara",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hörlur.1",
+   "kind": "illustration",
+   "motif": "buti.hörlur",
+   "group": "hörlur",
+   "quiz": true,
+   "confusableWith": [
+    "s.trådlös.1"
+   ]
+  },
+  {
+   "senseId": "s.brusreducerande.1",
+   "kind": "illustration",
+   "motif": "buti.brusreducerande",
+   "group": "brusreducerande",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6fc09f9b"
+   }
+  },
+  {
+   "senseId": "s.trådlös.1",
+   "kind": "illustration",
+   "motif": "buti.trådlös",
+   "group": "trådlös",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hörlur.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ee7e0c20"
+   }
+  },
+  {
+   "senseId": "s.surfplatta.1",
+   "kind": "illustration",
+   "motif": "buti.surfplatta",
+   "group": "surfplatta",
+   "quiz": true,
+   "confusableWith": [
+    "s.pekskärm.1"
+   ]
+  },
+  {
+   "senseId": "s.pekskärm.1",
+   "kind": "illustration",
+   "motif": "buti.pekskärm",
+   "group": "pekskärm",
+   "quiz": true,
+   "confusableWith": [
+    "s.surfplatta.1"
+   ]
+  },
+  {
+   "senseId": "s.skrivare.1",
+   "kind": "illustration",
+   "motif": "buti.skrivare",
+   "group": "skrivare",
+   "quiz": true
+  },
+  {
+   "senseId": "s.laddsladd.1",
+   "kind": "illustration",
+   "motif": "buti.laddsladd",
+   "group": "laddsladd",
+   "quiz": true
+  },
+  {
+   "senseId": "s.batteritid.1",
+   "kind": "illustration",
+   "motif": "buti.batteritid",
+   "group": "batteritid",
+   "quiz": true
+  },
+  {
+   "senseId": "s.utställningsexemplar.1",
+   "kind": "illustration",
+   "motif": "buti.utställningsexemplar",
+   "group": "utställningsexemplar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.garantitid.1",
+   "kind": "illustration",
+   "motif": "buti.garantitid",
+   "group": "garantitid",
+   "quiz": true,
+   "confusableWith": [
+    "s.förlängd-garanti.1"
+   ]
+  },
+  {
+   "senseId": "s.förlängd-garanti.1",
+   "kind": "illustration",
+   "motif": "buti.förlängd-garanti",
+   "group": "garantitid",
+   "quiz": true,
+   "confusableWith": [
+    "s.garantitid.1"
+   ]
+  },
+  {
+   "senseId": "s.apotek.1",
+   "kind": "illustration",
+   "motif": "buti.apotek",
+   "group": "apotek",
+   "quiz": true
+  },
+  {
+   "senseId": "s.receptfri.1",
+   "kind": "illustration",
+   "motif": "buti.receptfri",
+   "group": "receptfri",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "f0144d84"
+   }
+  },
+  {
+   "senseId": "s.halstablett.1",
+   "kind": "illustration",
+   "motif": "buti.halstablett",
+   "group": "halstablett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kosttillskott.1",
+   "kind": "illustration",
+   "motif": "buti.kosttillskott",
+   "group": "kosttillskott",
+   "quiz": true
+  },
+  {
+   "senseId": "s.plåster.1",
+   "kind": "illustration",
+   "motif": "buti.plåster",
+   "group": "plåster",
+   "quiz": true
+  },
+  {
+   "senseId": "s.handsprit.1",
+   "kind": "illustration",
+   "motif": "buti.handsprit",
+   "group": "handsprit",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hygienbutik.1",
+   "kind": "illustration",
+   "motif": "buti.hygienbutik",
+   "group": "hygienbutik",
+   "quiz": true,
+   "confusableWith": [
+    "s.hygienartikel.1"
+   ]
+  },
+  {
+   "senseId": "s.hygienartikel.1",
+   "kind": "illustration",
+   "motif": "buti.hygienartikel",
+   "group": "hygienbutik",
+   "quiz": true,
+   "confusableWith": [
+    "s.hygienbutik.1"
+   ]
+  },
+  {
+   "senseId": "s.oparfymerad.1",
+   "kind": "illustration",
+   "motif": "buti.oparfymerad",
+   "group": "oparfymerad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6704d346"
+   }
+  },
+  {
+   "senseId": "s.solkräm.1",
+   "kind": "illustration",
+   "motif": "buti.solkräm",
+   "group": "solkräm",
+   "quiz": true
+  },
+  {
+   "senseId": "s.våtservett.1",
+   "kind": "illustration",
+   "motif": "buti.våtservett",
+   "group": "våtservett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bomullspinne.1",
+   "kind": "illustration",
+   "motif": "buti.bomullspinne",
+   "group": "bomullspinne",
+   "quiz": true
+  },
+  {
+   "senseId": "s.blöja.1",
+   "kind": "illustration",
+   "motif": "buti.blöja",
+   "group": "blöja",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mensskydd.1",
+   "kind": "illustration",
+   "motif": "buti.mensskydd",
+   "group": "mensskydd",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tampong.1",
+   "kind": "illustration",
+   "motif": "buti.tampong",
+   "group": "tampong",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bokhandel.1",
+   "kind": "illustration",
+   "motif": "buti.bokhandel",
+   "group": "bokhandel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.pocketbok.1",
+   "kind": "illustration",
+   "motif": "buti.pocketbok",
+   "group": "pocketbok",
+   "quiz": true
+  },
+  {
+   "senseId": "s.inbunden.1",
+   "kind": "illustration",
+   "motif": "buti.inbunden",
+   "group": "inbunden",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "2bc313c1"
+   }
+  },
+  {
+   "senseId": "s.bästsäljare.1",
+   "kind": "illustration",
+   "motif": "buti.bästsäljare",
+   "group": "bästsäljare",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bokrea.1",
+   "kind": "illustration",
+   "motif": "buti.bokrea",
+   "group": "bokrea",
+   "quiz": true
+  },
+  {
+   "senseId": "s.presentbutik.1",
+   "kind": "illustration",
+   "motif": "buti.presentbutik",
+   "group": "presentbutik",
+   "quiz": true
+  },
+  {
+   "senseId": "s.souvenir.1",
+   "kind": "illustration",
+   "motif": "buti.souvenir",
+   "group": "souvenir",
+   "quiz": true
+  },
+  {
+   "senseId": "s.prydnad.1",
+   "kind": "illustration",
+   "motif": "buti.prydnad",
+   "group": "prydnad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "aea4f87f"
+   }
+  },
+  {
+   "senseId": "s.ge-bort.1",
+   "kind": "illustration",
+   "motif": "buti.ge-bort",
+   "group": "ge",
+   "quiz": true
+  },
+  {
+   "senseId": "s.presentpapper.1",
+   "kind": "illustration",
+   "motif": "buti.presentpapper",
+   "group": "slå-in",
+   "quiz": true,
+   "confusableWith": [
+    "s.slå-in.1"
+   ]
+  },
+  {
+   "senseId": "s.slå-in.1",
+   "kind": "illustration",
+   "motif": "buti.slå-in",
+   "group": "slå-in",
+   "quiz": true,
+   "confusableWith": [
+    "s.presentinslagning.1",
+    "s.presentpapper.1"
+   ]
+  },
+  {
+   "senseId": "s.presentinslagning.1",
+   "kind": "illustration",
+   "motif": "buti.presentinslagning",
+   "group": "slå-in",
+   "quiz": true,
+   "confusableWith": [
+    "s.slå-in.1"
+   ]
+  },
+  {
+   "senseId": "s.rosett.1",
+   "kind": "illustration",
+   "motif": "buti.rosett",
+   "group": "rosett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gratulationskort.1",
+   "kind": "illustration",
+   "motif": "buti.gratulationskort",
+   "group": "gratulationskort",
+   "quiz": true
+  },
+  {
+   "senseId": "s.byteslapp.1",
+   "kind": "illustration",
+   "motif": "buti.byteslapp",
+   "group": "byteslapp",
+   "quiz": true
+  },
+  {
+   "senseId": "s.öppettid.1",
+   "kind": "illustration",
+   "motif": "buti.öppettid",
+   "group": "öppettid",
+   "quiz": true,
+   "confusableWith": [
+    "s.på-vardagar.1"
+   ]
+  },
+  {
+   "senseId": "s.på-vardagar.1",
+   "kind": "illustration",
+   "motif": "buti.på-vardagar",
+   "group": "på",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.öppettid.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "42db7ae2"
+   }
+  },
+  {
+   "senseId": "s.kvällsöppet.1",
+   "kind": "illustration",
+   "motif": "buti.kvällsöppet",
+   "group": "kvällsöppet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "8906ddda"
+   }
+  },
+  {
+   "senseId": "s.söndagsöppet.1",
+   "kind": "illustration",
+   "motif": "buti.söndagsöppet",
+   "group": "söndagsöppet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "d2458625"
+   }
+  },
+  {
+   "senseId": "s.hålla-öppet.1",
+   "kind": "illustration",
+   "motif": "buti.hålla-öppet",
+   "group": "hålla",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lunchstängt.1",
+   "kind": "illustration",
+   "motif": "buti.lunchstängt",
+   "group": "lunchstängt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "db11398d"
+   }
+  },
+  {
+   "senseId": "s.stängningsdags.1",
+   "kind": "illustration",
+   "motif": "buti.stängningsdags",
+   "group": "stängningsdags",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "897313e5"
+   }
+  },
+  {
+   "senseId": "s.avvikande.1",
+   "kind": "illustration",
+   "motif": "buti.avvikande",
+   "group": "avvikande",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.storhelg.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6061bd66"
+   }
+  },
+  {
+   "senseId": "s.mellandagarna.1",
+   "kind": "illustration",
+   "motif": "buti.mellandagarna",
+   "group": "mellandagarna",
+   "quiz": true
+  },
+  {
+   "senseId": "s.inventering.1",
+   "kind": "illustration",
+   "motif": "buti.inventering",
+   "group": "inventering",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kundservice.1",
+   "kind": "illustration",
+   "motif": "buti.kundservice",
+   "group": "kundservice",
+   "quiz": true,
+   "confusableWith": [
+    "s.informationsdisk.1"
+   ]
+  },
+  {
+   "senseId": "s.informationsdisk.1",
+   "kind": "illustration",
+   "motif": "buti.informationsdisk",
+   "group": "kundservice",
+   "quiz": true,
+   "confusableWith": [
+    "s.kundservice.1"
+   ]
+  },
+  {
+   "senseId": "s.hitta-hit.1",
+   "kind": "illustration",
+   "motif": "buti.hitta-hit",
+   "group": "hitta",
+   "quiz": true
+  },
+  {
+   "senseId": "s.provrum.1",
+   "kind": "illustration",
+   "motif": "buti.provrum",
+   "group": "provrum",
+   "quiz": true
+  },
+  {
+   "senseId": "s.stå-i-kö.1",
+   "kind": "illustration",
+   "motif": "buti.stå-i-kö",
+   "group": "stå-i-kö",
+   "quiz": true,
+   "confusableWith": [
+    "s.vänta-på-sin-tur.1"
+   ]
+  },
+  {
+   "senseId": "s.ställa-sig-sist.1",
+   "kind": "illustration",
+   "motif": "buti.ställa-sig-sist",
+   "group": "stå-i-kö",
+   "quiz": true,
+   "confusableWith": [
+    "s.längst-bak.1"
+   ]
+  },
+  {
+   "senseId": "s.längst-bak.1",
+   "kind": "illustration",
+   "motif": "buti.längst-bak",
+   "group": "stå-i-kö",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ställa-sig-sist.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "43e72c47"
+   }
+  },
+  {
+   "senseId": "s.först-i-kön.1",
+   "kind": "illustration",
+   "motif": "buti.först-i-kön",
+   "group": "först",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "588467ff"
+   }
+  },
+  {
+   "senseId": "s.tränga-sig-före.1",
+   "kind": "illustration",
+   "motif": "buti.tränga-sig-före",
+   "group": "tränga",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gå-före.1",
+   "kind": "illustration",
+   "motif": "buti.gå-före",
+   "group": "gå",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vems-tur.1",
+   "kind": "illustration",
+   "motif": "buti.vems-tur",
+   "group": "vems",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ropa-upp.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "9a743357"
+   }
+  },
+  {
+   "senseId": "s.vänta-på-sin-tur.1",
+   "kind": "illustration",
+   "motif": "buti.vänta-på-sin-tur",
+   "group": "stå-i-kö",
+   "quiz": true,
+   "confusableWith": [
+    "s.stå-i-kö.1"
+   ]
+  },
+  {
+   "senseId": "s.nummerlapp.1",
+   "kind": "illustration",
+   "motif": "buti.nummerlapp",
+   "group": "kösystem",
+   "quiz": true,
+   "confusableWith": [
+    "s.kösystem.1"
+   ]
+  },
+  {
+   "senseId": "s.kösystem.1",
+   "kind": "illustration",
+   "motif": "buti.kösystem",
+   "group": "kösystem",
+   "quiz": true,
+   "confusableWith": [
+    "s.nummerlapp.1",
+    "s.ropa-upp.1"
+   ]
+  },
+  {
+   "senseId": "s.ropa-upp.1",
+   "kind": "illustration",
+   "motif": "buti.ropa-upp",
+   "group": "kösystem",
+   "quiz": true,
+   "confusableWith": [
+    "s.kösystem.1",
+    "s.vems-tur.1"
+   ]
+  },
+  {
+   "senseId": "s.väntetid.1",
+   "kind": "illustration",
+   "motif": "buti.väntetid",
+   "group": "väntetid",
+   "quiz": true
+  },
+  {
+   "senseId": "s.butiksbiträde.1",
+   "kind": "illustration",
+   "motif": "buti.butiksbiträde",
+   "group": "butiksbiträde",
+   "quiz": true,
+   "confusableWith": [
+    "s.expedit.1"
+   ]
+  },
+  {
+   "senseId": "s.expedit.1",
+   "kind": "illustration",
+   "motif": "buti.expedit",
+   "group": "butiksbiträde",
+   "quiz": true,
+   "confusableWith": [
+    "s.butiksbiträde.1"
+   ]
+  },
+  {
+   "senseId": "s.kan-jag-hjälpa-dig.1",
+   "kind": "illustration",
+   "motif": "buti.kan-jag-hjälpa-dig",
+   "group": "kan",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1cbf981e"
+   }
+  },
+  {
+   "senseId": "s.jag-tittar-bara.1",
+   "kind": "illustration",
+   "motif": "buti.jag-tittar-bara",
+   "group": "jag",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "cdfb6a64"
+   }
+  },
+  {
+   "senseId": "s.titta-runt.1",
+   "kind": "illustration",
+   "motif": "buti.titta-runt",
+   "group": "titta",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ingen-fara.1",
+   "kind": "illustration",
+   "motif": "buti.ingen-fara",
+   "group": "ingen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "0a9c1e4a"
+   }
+  },
+  {
+   "senseId": "s.lager-förråd.1",
+   "kind": "illustration",
+   "motif": "buti.lager-förråd",
+   "group": "lager-förråd",
+   "quiz": true,
+   "confusableWith": [
+    "s.i-lager.1"
+   ]
+  },
+  {
+   "senseId": "s.i-lager.1",
+   "kind": "illustration",
+   "motif": "buti.i-lager",
+   "group": "lager-förråd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.lager-förråd.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "e64c6f5e"
+   }
+  },
+  {
+   "senseId": "s.kolla-upp.1",
+   "kind": "illustration",
+   "motif": "buti.kolla-upp",
+   "group": "kolla-upp",
+   "quiz": true,
+   "confusableWith": [
+    "s.kolla-med.1"
+   ]
+  },
+  {
+   "senseId": "s.kolla-med.1",
+   "kind": "illustration",
+   "motif": "buti.kolla-med",
+   "group": "kolla-upp",
+   "quiz": true,
+   "confusableWith": [
+    "s.kolla-upp.1"
+   ]
+  },
+  {
+   "senseId": "s.beställa-hem.1",
+   "kind": "illustration",
+   "motif": "buti.beställa-hem",
+   "group": "beställa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hålla-undan.1",
+   "kind": "illustration",
+   "motif": "buti.hålla-undan",
+   "group": "hålla",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fråga-om-råd.1",
+   "kind": "illustration",
+   "motif": "buti.fråga-om-råd",
+   "group": "fråga",
+   "quiz": true
+  },
+  {
+   "senseId": "s.visa-vägen.1",
+   "kind": "illustration",
+   "motif": "buti.visa-vägen",
+   "group": "visa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.handla-på-nätet.1",
+   "kind": "illustration",
+   "motif": "ehan.handla-på-nätet",
+   "group": "handla-på-nätet",
+   "quiz": true,
+   "confusableWith": [
+    "s.e-handel.1",
+    "s.online.1"
+   ]
+  },
+  {
+   "senseId": "s.online.1",
+   "kind": "illustration",
+   "motif": "ehan.online",
+   "group": "handla-på-nätet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.handla-på-nätet.1",
+    "s.e-handel.1",
+    "s.nätbutik.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "bf58e036"
+   }
+  },
+  {
+   "senseId": "s.e-handel.1",
+   "kind": "illustration",
+   "motif": "ehan.e-handel",
+   "group": "handla-på-nätet",
+   "quiz": true,
+   "confusableWith": [
+    "s.handla-på-nätet.1",
+    "s.nätbutik.1",
+    "s.online.1"
+   ]
+  },
+  {
+   "senseId": "s.nätbutik.1",
+   "kind": "illustration",
+   "motif": "ehan.nätbutik",
+   "group": "handla-på-nätet",
+   "quiz": true,
+   "confusableWith": [
+    "s.e-handel.1",
+    "s.online.1"
+   ]
+  },
+  {
+   "senseId": "s.sökfält.1",
+   "kind": "illustration",
+   "motif": "ehan.sökfält",
+   "group": "sökfält",
+   "quiz": true,
+   "confusableWith": [
+    "s.sökord.1"
+   ]
+  },
+  {
+   "senseId": "s.sökord.1",
+   "kind": "illustration",
+   "motif": "ehan.sökord",
+   "group": "sökfält",
+   "quiz": true,
+   "confusableWith": [
+    "s.sökfält.1",
+    "s.sökresultat.1"
+   ]
+  },
+  {
+   "senseId": "s.sökresultat.1",
+   "kind": "illustration",
+   "motif": "ehan.sökresultat",
+   "group": "sökfält",
+   "quiz": true,
+   "confusableWith": [
+    "s.sökord.1"
+   ]
+  },
+  {
+   "senseId": "s.klicka.1",
+   "kind": "illustration",
+   "motif": "ehan.klicka",
+   "group": "klicka",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kategori.1",
+   "kind": "illustration",
+   "motif": "ehan.kategori",
+   "group": "kategori",
+   "quiz": true
+  },
+  {
+   "senseId": "s.filtrera.1",
+   "kind": "illustration",
+   "motif": "ehan.filtrera",
+   "group": "filtrera",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sortera-efter.1",
+   "kind": "illustration",
+   "motif": "ehan.sortera-efter",
+   "group": "sortera",
+   "quiz": true,
+   "confusableWith": [
+    "s.lägsta-pris.1"
+   ]
+  },
+  {
+   "senseId": "s.lägsta-pris.1",
+   "kind": "illustration",
+   "motif": "ehan.lägsta-pris",
+   "group": "lägsta",
+   "quiz": true,
+   "confusableWith": [
+    "s.sortera-efter.1"
+   ]
+  },
+  {
+   "senseId": "s.produktbild.1",
+   "kind": "illustration",
+   "motif": "ehan.produktbild",
+   "group": "produktbild",
+   "quiz": true
+  },
+  {
+   "senseId": "s.storleksguide.1",
+   "kind": "illustration",
+   "motif": "ehan.storleksguide",
+   "group": "storleksguide",
+   "quiz": true
+  },
+  {
+   "senseId": "s.produktbeskrivning.1",
+   "kind": "illustration",
+   "motif": "ehan.produktbeskrivning",
+   "group": "produktbeskrivning",
+   "quiz": true,
+   "confusableWith": [
+    "s.specifikation.1",
+    "s.utförlig.1"
+   ]
+  },
+  {
+   "senseId": "s.utförlig.1",
+   "kind": "illustration",
+   "motif": "ehan.utförlig",
+   "group": "utförlig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.produktbeskrivning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "c4c3c70a"
+   }
+  },
+  {
+   "senseId": "s.specifikation.1",
+   "kind": "illustration",
+   "motif": "ehan.specifikation",
+   "group": "specifikation",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.produktbeskrivning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "878f51fc"
+   }
+  },
+  {
+   "senseId": "s.stämma-med.1",
+   "kind": "illustration",
+   "motif": "ehan.stämma-med",
+   "group": "stämma",
+   "quiz": true,
+   "confusableWith": [
+    "s.leva-upp-till.1"
+   ]
+  },
+  {
+   "senseId": "s.omdöme.1",
+   "kind": "illustration",
+   "motif": "ehan.omdöme",
+   "group": "omdöme",
+   "quiz": true,
+   "confusableWith": [
+    "s.kundomdöme.1"
+   ]
+  },
+  {
+   "senseId": "s.kundomdöme.1",
+   "kind": "illustration",
+   "motif": "ehan.kundomdöme",
+   "group": "omdöme",
+   "quiz": true,
+   "confusableWith": [
+    "s.omdöme.1",
+    "s.recensera.1",
+    "s.verifierad.1"
+   ]
+  },
+  {
+   "senseId": "s.recensera.1",
+   "kind": "illustration",
+   "motif": "ehan.recensera",
+   "group": "omdöme",
+   "quiz": true,
+   "confusableWith": [
+    "s.betygsätta.1",
+    "s.kundomdöme.1"
+   ]
+  },
+  {
+   "senseId": "s.betygsätta.1",
+   "kind": "illustration",
+   "motif": "ehan.betygsätta",
+   "group": "omdöme",
+   "quiz": true,
+   "confusableWith": [
+    "s.recensera.1"
+   ]
+  },
+  {
+   "senseId": "s.verifierad.1",
+   "kind": "illustration",
+   "motif": "ehan.verifierad",
+   "group": "verifierad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kundomdöme.1",
+    "s.trovärdig.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "21b76aa1"
+   }
+  },
+  {
+   "senseId": "s.trovärdig.1",
+   "kind": "illustration",
+   "motif": "ehan.trovärdig",
+   "group": "trovärdig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.seriös.1",
+    "s.överdriven.1",
+    "s.sponsrad.1",
+    "s.verifierad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "b82dc6ce"
+   }
+  },
+  {
+   "senseId": "s.överdriven.1",
+   "kind": "illustration",
+   "motif": "ehan.överdriven",
+   "group": "överdriven",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.trovärdig.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "c4210ad9"
+   }
+  },
+  {
+   "senseId": "s.sponsrad.1",
+   "kind": "illustration",
+   "motif": "ehan.sponsrad",
+   "group": "sponsrad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.trovärdig.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a33dd477"
+   }
+  },
+  {
+   "senseId": "s.leva-upp-till.1",
+   "kind": "illustration",
+   "motif": "ehan.leva-upp-till",
+   "group": "leva",
+   "quiz": true,
+   "confusableWith": [
+    "s.stämma-med.1"
+   ]
+  },
+  {
+   "senseId": "s.varukorg.1",
+   "kind": "illustration",
+   "motif": "ehan.varukorg",
+   "group": "varukorg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.rabattkod.1",
+   "kind": "illustration",
+   "motif": "ehan.rabattkod",
+   "group": "rabattkod",
+   "quiz": true
+  },
+  {
+   "senseId": "s.frakt.1",
+   "kind": "illustration",
+   "motif": "ehan.frakt",
+   "group": "frakt",
+   "quiz": true,
+   "confusableWith": [
+    "s.fraktfri.1",
+    "s.standardleverans.1"
+   ]
+  },
+  {
+   "senseId": "s.fraktfri.1",
+   "kind": "illustration",
+   "motif": "ehan.fraktfri",
+   "group": "frakt",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.frakt.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "b8c8f6e5"
+   }
+  },
+  {
+   "senseId": "s.totalsumma.1",
+   "kind": "illustration",
+   "motif": "ehan.totalsumma",
+   "group": "totalsumma",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gå-till-kassan.1",
+   "kind": "illustration",
+   "motif": "ehan.gå-till-kassan",
+   "group": "gå",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skapa-ett-konto.1",
+   "kind": "illustration",
+   "motif": "ehan.skapa-ett-konto",
+   "group": "skapa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.handla-som-gäst.1",
+   "kind": "illustration",
+   "motif": "ehan.handla-som-gäst",
+   "group": "handla",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fylla-i.1",
+   "kind": "illustration",
+   "motif": "ehan.fylla-i",
+   "group": "fylla",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kryssa-i.1",
+   "kind": "illustration",
+   "motif": "ehan.kryssa-i",
+   "group": "kryssa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.betalsätt.1",
+   "kind": "illustration",
+   "motif": "ehan.betalsätt",
+   "group": "betalsätt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.delbetalning.1",
+   "kind": "illustration",
+   "motif": "ehan.delbetalning",
+   "group": "delbetalning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.orderbekräftelse.1",
+   "kind": "illustration",
+   "motif": "ehan.orderbekräftelse",
+   "group": "orderbekräftelse",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7aa94764"
+   }
+  },
+  {
+   "senseId": "s.ordernummer.1",
+   "kind": "illustration",
+   "motif": "ehan.ordernummer",
+   "group": "orderbekräftelse",
+   "quiz": true,
+   "confusableWith": [
+    "s.spårningsnummer.1"
+   ]
+  },
+  {
+   "senseId": "s.leverera.1",
+   "kind": "illustration",
+   "motif": "ehan.leverera",
+   "group": "leverans",
+   "quiz": true,
+   "confusableWith": [
+    "s.hemleverans.1"
+   ]
+  },
+  {
+   "senseId": "s.leveransalternativ.1",
+   "kind": "illustration",
+   "motif": "ehan.leveransalternativ",
+   "group": "leveransalternativ",
+   "quiz": true,
+   "confusableWith": [
+    "s.standardleverans.1"
+   ]
+  },
+  {
+   "senseId": "s.leveranstid.1",
+   "kind": "illustration",
+   "motif": "ehan.leveranstid",
+   "group": "leveranstid",
+   "quiz": true,
+   "confusableWith": [
+    "s.beräknad.1",
+    "s.standardleverans.1"
+   ]
+  },
+  {
+   "senseId": "s.standardleverans.1",
+   "kind": "illustration",
+   "motif": "ehan.standardleverans",
+   "group": "standardleverans",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.frakt.1",
+    "s.leveranstid.1",
+    "s.leveransalternativ.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "9282e34a"
+   }
+  },
+  {
+   "senseId": "s.expressleverans.1",
+   "kind": "illustration",
+   "motif": "ehan.expressleverans",
+   "group": "expressleverans",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "869e03a8"
+   }
+  },
+  {
+   "senseId": "s.hemleverans.1",
+   "kind": "illustration",
+   "motif": "ehan.hemleverans",
+   "group": "leverans",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.leverera.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "c1a0a583"
+   }
+  },
+  {
+   "senseId": "s.kvällsleverans.1",
+   "kind": "illustration",
+   "motif": "ehan.kvällsleverans",
+   "group": "kvällsleverans",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a753d96e"
+   }
+  },
+  {
+   "senseId": "s.tidsfönster.1",
+   "kind": "illustration",
+   "motif": "ehan.tidsfönster",
+   "group": "tidsfönster",
+   "quiz": true
+  },
+  {
+   "senseId": "s.budfirma.1",
+   "kind": "illustration",
+   "motif": "ehan.budfirma",
+   "group": "budfirma",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kvittera.1",
+   "kind": "illustration",
+   "motif": "ehan.kvittera",
+   "group": "kvittera",
+   "quiz": true
+  },
+  {
+   "senseId": "s.utanför-dörren.1",
+   "kind": "illustration",
+   "motif": "ehan.utanför-dörren",
+   "group": "leverans",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "9e8c9dc4"
+   }
+  },
+  {
+   "senseId": "s.hämta-i-butik.1",
+   "kind": "illustration",
+   "motif": "ehan.hämta-i-butik",
+   "group": "hämta",
+   "quiz": true
+  },
+  {
+   "senseId": "s.beställningsvara.1",
+   "kind": "illustration",
+   "motif": "ehan.beställningsvara",
+   "group": "beställningsvara",
+   "quiz": true
+  },
+  {
+   "senseId": "s.försändelse.1",
+   "kind": "illustration",
+   "motif": "ehan.försändelse",
+   "group": "försändelse",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "79ef9685"
+   }
+  },
+  {
+   "senseId": "s.spåra.1",
+   "kind": "illustration",
+   "motif": "ehan.spåra",
+   "group": "spåra",
+   "quiz": true,
+   "confusableWith": [
+    "s.spårning.1"
+   ]
+  },
+  {
+   "senseId": "s.spårning.1",
+   "kind": "illustration",
+   "motif": "ehan.spårning",
+   "group": "spåra",
+   "quiz": true,
+   "confusableWith": [
+    "s.spåra.1",
+    "s.status.1",
+    "s.ute-för-leverans.1",
+    "s.under-transport.1"
+   ]
+  },
+  {
+   "senseId": "s.spårningsnummer.1",
+   "kind": "illustration",
+   "motif": "ehan.spårningsnummer",
+   "group": "spåra",
+   "quiz": true,
+   "confusableWith": [
+    "s.ordernummer.1"
+   ]
+  },
+  {
+   "senseId": "s.spårningslänk.1",
+   "kind": "illustration",
+   "motif": "ehan.spårningslänk",
+   "group": "spåra",
+   "quiz": true
+  },
+  {
+   "senseId": "s.status.1",
+   "kind": "illustration",
+   "motif": "ehan.status",
+   "group": "status",
+   "quiz": true,
+   "confusableWith": [
+    "s.spårning.1",
+    "s.under-transport.1"
+   ]
+  },
+  {
+   "senseId": "s.uppdatering.1",
+   "kind": "illustration",
+   "motif": "ehan.uppdatering",
+   "group": "status",
+   "quiz": true
+  },
+  {
+   "senseId": "s.på-väg.1",
+   "kind": "illustration",
+   "motif": "ehan.på-väg",
+   "group": "status",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.under-transport.1",
+    "s.ute-för-leverans.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "1e3d73b8"
+   }
+  },
+  {
+   "senseId": "s.sorteringsterminal.1",
+   "kind": "illustration",
+   "motif": "ehan.sorteringsterminal",
+   "group": "sorteringsterminal",
+   "quiz": true
+  },
+  {
+   "senseId": "s.under-transport.1",
+   "kind": "illustration",
+   "motif": "ehan.under-transport",
+   "group": "status",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.på-väg.1",
+    "s.ute-för-leverans.1",
+    "s.status.1",
+    "s.spårning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "2aaf6d16"
+   }
+  },
+  {
+   "senseId": "s.ute-för-leverans.1",
+   "kind": "illustration",
+   "motif": "ehan.ute-för-leverans",
+   "group": "status",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.under-transport.1",
+    "s.på-väg.1",
+    "s.spårning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "4fc5cbb4"
+   }
+  },
+  {
+   "senseId": "s.beräknad.1",
+   "kind": "illustration",
+   "motif": "ehan.beräknad",
+   "group": "beräknad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.leveranstid.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "8ab51697"
+   }
+  },
+  {
+   "senseId": "s.avisera.1",
+   "kind": "illustration",
+   "motif": "ehan.avisera",
+   "group": "avisera",
+   "quiz": true,
+   "confusableWith": [
+    "s.avisering.1"
+   ]
+  },
+  {
+   "senseId": "s.avisering.1",
+   "kind": "illustration",
+   "motif": "ehan.avisering",
+   "group": "avisera",
+   "quiz": true,
+   "confusableWith": [
+    "s.avisera.1"
+   ]
+  },
+  {
+   "senseId": "s.levererad.1",
+   "kind": "illustration",
+   "motif": "ehan.levererad",
+   "group": "status",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "fd8dbced"
+   }
+  },
+  {
+   "senseId": "s.ångerrätt.1",
+   "kind": "illustration",
+   "motif": "ehan.ångerrätt",
+   "group": "ångerrätt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.distansköp.1",
+   "kind": "illustration",
+   "motif": "ehan.distansköp",
+   "group": "ångerrätt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ångra-sig.1",
+   "kind": "illustration",
+   "motif": "ehan.ångra-sig",
+   "group": "ångra",
+   "quiz": true
+  },
+  {
+   "senseId": "s.retur.1",
+   "kind": "illustration",
+   "motif": "ehan.retur",
+   "group": "retur",
+   "quiz": true,
+   "confusableWith": [
+    "s.returnera.1"
+   ]
+  },
+  {
+   "senseId": "s.returnera.1",
+   "kind": "illustration",
+   "motif": "ehan.returnera",
+   "group": "retur",
+   "quiz": true,
+   "confusableWith": [
+    "s.retur.1",
+    "s.skicka-tillbaka.1"
+   ]
+  },
+  {
+   "senseId": "s.skicka-tillbaka.1",
+   "kind": "illustration",
+   "motif": "ehan.skicka-tillbaka",
+   "group": "retur",
+   "quiz": true,
+   "confusableWith": [
+    "s.returnera.1"
+   ]
+  },
+  {
+   "senseId": "s.anmäla-retur.1",
+   "kind": "illustration",
+   "motif": "ehan.anmäla-retur",
+   "group": "retur",
+   "quiz": true,
+   "confusableWith": [
+    "s.returformulär.1"
+   ]
+  },
+  {
+   "senseId": "s.returformulär.1",
+   "kind": "illustration",
+   "motif": "ehan.returformulär",
+   "group": "returformulär",
+   "quiz": true,
+   "confusableWith": [
+    "s.anmäla-retur.1"
+   ]
+  },
+  {
+   "senseId": "s.returskäl.1",
+   "kind": "illustration",
+   "motif": "ehan.returskäl",
+   "group": "returformulär",
+   "quiz": true
+  },
+  {
+   "senseId": "s.returetikett.1",
+   "kind": "illustration",
+   "motif": "ehan.returetikett",
+   "group": "returformulär",
+   "quiz": true
+  },
+  {
+   "senseId": "s.returfrakt.1",
+   "kind": "illustration",
+   "motif": "ehan.returfrakt",
+   "group": "frakt",
+   "quiz": true,
+   "confusableWith": [
+    "s.fri-retur.1"
+   ]
+  },
+  {
+   "senseId": "s.fri-retur.1",
+   "kind": "illustration",
+   "motif": "ehan.fri-retur",
+   "group": "frakt",
+   "quiz": true,
+   "confusableWith": [
+    "s.returfrakt.1"
+   ]
+  },
+  {
+   "senseId": "s.originalförpackning.1",
+   "kind": "illustration",
+   "motif": "ehan.originalförpackning",
+   "group": "originalförpackning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.oanvänd.1",
+   "kind": "illustration",
+   "motif": "ehan.oanvänd",
+   "group": "oanvänd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.nyskick.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "192731f6"
+   }
+  },
+  {
+   "senseId": "s.nyskick.1",
+   "kind": "illustration",
+   "motif": "ehan.nyskick",
+   "group": "oanvänd",
+   "quiz": true,
+   "confusableWith": [
+    "s.oanvänd.1"
+   ]
+  },
+  {
+   "senseId": "s.lura.1",
+   "kind": "illustration",
+   "motif": "ehan.lura",
+   "group": "bluff",
+   "quiz": true,
+   "confusableWith": [
+    "s.bedragare.1"
+   ]
+  },
+  {
+   "senseId": "s.bedrägeri.1",
+   "kind": "illustration",
+   "motif": "ehan.bedrägeri",
+   "group": "bluff",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bluff.1",
+    "s.nätfiske.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "8a8f6b3e"
+   }
+  },
+  {
+   "senseId": "s.bedragare.1",
+   "kind": "illustration",
+   "motif": "ehan.bedragare",
+   "group": "bluff",
+   "quiz": true,
+   "confusableWith": [
+    "s.lura.1"
+   ]
+  },
+  {
+   "senseId": "s.bluff.1",
+   "kind": "illustration",
+   "motif": "ehan.bluff",
+   "group": "bluff",
+   "quiz": true,
+   "confusableWith": [
+    "s.bluffsajt.1",
+    "s.bedrägeri.1"
+   ]
+  },
+  {
+   "senseId": "s.bluffsajt.1",
+   "kind": "illustration",
+   "motif": "ehan.bluffsajt",
+   "group": "bluff",
+   "quiz": true,
+   "confusableWith": [
+    "s.bluff.1",
+    "s.för-bra-för-att-vara-sant.1",
+    "s.oseriös.1"
+   ]
+  },
+  {
+   "senseId": "s.för-bra-för-att-vara-sant.1",
+   "kind": "illustration",
+   "motif": "ehan.för-bra-för-att-vara-sant",
+   "group": "för",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bluffsajt.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1be2b172"
+   }
+  },
+  {
+   "senseId": "s.varningstecken.1",
+   "kind": "illustration",
+   "motif": "ehan.varningstecken",
+   "group": "varningstecken",
+   "quiz": true,
+   "confusableWith": [
+    "s.misstänksam.1"
+   ]
+  },
+  {
+   "senseId": "s.misstänksam.1",
+   "kind": "illustration",
+   "motif": "ehan.misstänksam",
+   "group": "misstänksam",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.varningstecken.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1e35fc36"
+   }
+  },
+  {
+   "senseId": "s.seriös.1",
+   "kind": "illustration",
+   "motif": "ehan.seriös",
+   "group": "seriös",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.oseriös.1",
+    "s.trovärdig.1",
+    "s.lita-på.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7dd5c78f"
+   }
+  },
+  {
+   "senseId": "s.oseriös.1",
+   "kind": "illustration",
+   "motif": "ehan.oseriös",
+   "group": "oseriös",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.seriös.1",
+    "s.bluffsajt.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "30b7a021"
+   }
+  },
+  {
+   "senseId": "s.kontaktuppgift.1",
+   "kind": "illustration",
+   "motif": "ehan.kontaktuppgift",
+   "group": "kontaktuppgift",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lita-på.1",
+   "kind": "illustration",
+   "motif": "ehan.lita-på",
+   "group": "lita",
+   "quiz": true,
+   "confusableWith": [
+    "s.seriös.1"
+   ]
+  },
+  {
+   "senseId": "s.förskottsbetalning.1",
+   "kind": "illustration",
+   "motif": "ehan.förskottsbetalning",
+   "group": "förskottsbetalning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.personuppgift.1",
+   "kind": "illustration",
+   "motif": "ehan.personuppgift",
+   "group": "personuppgift",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nätfiske.1",
+   "kind": "illustration",
+   "motif": "ehan.nätfiske",
+   "group": "bluff",
+   "quiz": true,
+   "confusableWith": [
+    "s.bedrägeri.1"
+   ]
+  },
+  {
+   "senseId": "s.vykort.1",
+   "kind": "illustration",
+   "motif": "post.vykort",
+   "group": "vykort",
+   "quiz": true,
+   "confusableWith": [
+    "s.julkort.1"
+   ]
+  },
+  {
+   "senseId": "s.julkort.1",
+   "kind": "illustration",
+   "motif": "post.julkort",
+   "group": "vykort",
+   "quiz": true,
+   "confusableWith": [
+    "s.vykort.1"
+   ]
+  },
+  {
+   "senseId": "s.handskriven.1",
+   "kind": "illustration",
+   "motif": "post.handskriven",
+   "group": "handskriven",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.adressera.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "54a68b7f"
+   }
+  },
+  {
+   "senseId": "s.kära.1",
+   "kind": "illustration",
+   "motif": "post.kära",
+   "group": "hälsning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hälsning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "2f6a560e"
+   }
+  },
+  {
+   "senseId": "s.hälsning.1",
+   "kind": "illustration",
+   "motif": "post.hälsning",
+   "group": "hälsning",
+   "quiz": true,
+   "confusableWith": [
+    "s.allt-gott.1",
+    "s.kära.1",
+    "s.tack-för-senast.1"
+   ]
+  },
+  {
+   "senseId": "s.allt-gott.1",
+   "kind": "illustration",
+   "motif": "post.allt-gott",
+   "group": "hälsning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hälsning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "b0df2769"
+   }
+  },
+  {
+   "senseId": "s.tack-för-senast.1",
+   "kind": "illustration",
+   "motif": "post.tack-för-senast",
+   "group": "hälsning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hälsning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6bfd36d2"
+   }
+  },
+  {
+   "senseId": "s.avsändare.1",
+   "kind": "illustration",
+   "motif": "post.avsändare",
+   "group": "avsändare",
+   "quiz": true,
+   "confusableWith": [
+    "s.returadress.1",
+    "s.mottagare.1"
+   ]
+  },
+  {
+   "senseId": "s.mottagare.1",
+   "kind": "illustration",
+   "motif": "post.mottagare",
+   "group": "mottagare",
+   "quiz": true,
+   "confusableWith": [
+    "s.avsändare.1"
+   ]
+  },
+  {
+   "senseId": "s.posta.1",
+   "kind": "illustration",
+   "motif": "post.posta",
+   "group": "posta",
+   "quiz": true,
+   "confusableWith": [
+    "s.postlåda.1",
+    "s.brevbärare.1"
+   ]
+  },
+  {
+   "senseId": "s.postlåda.1",
+   "kind": "illustration",
+   "motif": "post.postlåda",
+   "group": "posta",
+   "quiz": true,
+   "confusableWith": [
+    "s.posta.1",
+    "s.brevinkast.1"
+   ]
+  },
+  {
+   "senseId": "s.brevinkast.1",
+   "kind": "illustration",
+   "motif": "post.brevinkast",
+   "group": "brevinkast",
+   "quiz": true,
+   "confusableWith": [
+    "s.postlåda.1"
+   ]
+  },
+  {
+   "senseId": "s.brevbärare.1",
+   "kind": "illustration",
+   "motif": "post.brevbärare",
+   "group": "brevbärare",
+   "quiz": true,
+   "confusableWith": [
+    "s.posta.1"
+   ]
+  },
+  {
+   "senseId": "s.postkontor.1",
+   "kind": "illustration",
+   "motif": "post.postkontor",
+   "group": "postkontor",
+   "quiz": true
+  },
+  {
+   "senseId": "s.penvän.1",
+   "kind": "illustration",
+   "motif": "post.penvän",
+   "group": "penvän",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kuvert.2",
+   "kind": "illustration",
+   "motif": "post.kuvert.2",
+   "group": "kuvert.2",
+   "quiz": true,
+   "confusableWith": [
+    "s.fönsterkuvert.1"
+   ]
+  },
+  {
+   "senseId": "s.brevpapper.1",
+   "kind": "illustration",
+   "motif": "post.brevpapper",
+   "group": "brevpapper",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fönsterkuvert.1",
+   "kind": "illustration",
+   "motif": "post.fönsterkuvert",
+   "group": "kuvert.2",
+   "quiz": true,
+   "confusableWith": [
+    "s.kuvert.2"
+   ]
+  },
+  {
+   "senseId": "s.vadderat-kuvert.1",
+   "kind": "illustration",
+   "motif": "post.vadderat-kuvert",
+   "group": "kuvert.2",
+   "quiz": true
+  },
+  {
+   "senseId": "s.försegla.1",
+   "kind": "illustration",
+   "motif": "post.försegla",
+   "group": "försegla",
+   "quiz": true
+  },
+  {
+   "senseId": "s.frimärke.1",
+   "kind": "illustration",
+   "motif": "post.frimärke",
+   "group": "frimärke",
+   "quiz": true,
+   "confusableWith": [
+    "s.frimärksark.1",
+    "s.frankera.1"
+   ]
+  },
+  {
+   "senseId": "s.frimärksark.1",
+   "kind": "illustration",
+   "motif": "post.frimärksark",
+   "group": "frimärke",
+   "quiz": true,
+   "confusableWith": [
+    "s.frimärke.1"
+   ]
+  },
+  {
+   "senseId": "s.klistra-på.1",
+   "kind": "illustration",
+   "motif": "post.klistra-på",
+   "group": "frimärke",
+   "quiz": true,
+   "confusableWith": [
+    "s.frankera.1"
+   ]
+  },
+  {
+   "senseId": "s.uppe-till-höger.1",
+   "kind": "illustration",
+   "motif": "post.uppe-till-höger",
+   "group": "uppe",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "8feac2ef"
+   }
+  },
+  {
+   "senseId": "s.porto.1",
+   "kind": "illustration",
+   "motif": "post.porto",
+   "group": "porto",
+   "quiz": true,
+   "confusableWith": [
+    "s.portokod.1"
+   ]
+  },
+  {
+   "senseId": "s.portokod.1",
+   "kind": "illustration",
+   "motif": "post.portokod",
+   "group": "porto",
+   "quiz": true,
+   "confusableWith": [
+    "s.porto.1"
+   ]
+  },
+  {
+   "senseId": "s.frankera.1",
+   "kind": "illustration",
+   "motif": "post.frankera",
+   "group": "frimärke",
+   "quiz": true,
+   "confusableWith": [
+    "s.klistra-på.1",
+    "s.frimärke.1"
+   ]
+  },
+  {
+   "senseId": "s.brevvåg.1",
+   "kind": "illustration",
+   "motif": "post.brevvåg",
+   "group": "brevvåg",
+   "quiz": true,
+   "confusableWith": [
+    "s.övervikt.1"
+   ]
+  },
+  {
+   "senseId": "s.övervikt.1",
+   "kind": "illustration",
+   "motif": "post.övervikt",
+   "group": "brevvåg",
+   "quiz": true,
+   "confusableWith": [
+    "s.brevvåg.1"
+   ]
+  },
+  {
+   "senseId": "s.adressetikett.1",
+   "kind": "illustration",
+   "motif": "post.adressetikett",
+   "group": "adressetikett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.paketstorlek.1",
+   "kind": "illustration",
+   "motif": "post.paketstorlek",
+   "group": "paketstorlek",
+   "quiz": true,
+   "confusableWith": [
+    "s.maxmått.1",
+    "s.skrymmande.1"
+   ]
+  },
+  {
+   "senseId": "s.maxmått.1",
+   "kind": "illustration",
+   "motif": "post.maxmått",
+   "group": "paketstorlek",
+   "quiz": true,
+   "confusableWith": [
+    "s.paketstorlek.1",
+    "s.omkrets.1"
+   ]
+  },
+  {
+   "senseId": "s.omkrets.1",
+   "kind": "illustration",
+   "motif": "post.omkrets",
+   "group": "paketstorlek",
+   "quiz": true,
+   "confusableWith": [
+    "s.maxmått.1"
+   ]
+  },
+  {
+   "senseId": "s.skrymmande.1",
+   "kind": "illustration",
+   "motif": "post.skrymmande",
+   "group": "skrymmande",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.paketstorlek.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "da32b53e"
+   }
+  },
+  {
+   "senseId": "s.storbrev.1",
+   "kind": "illustration",
+   "motif": "post.storbrev",
+   "group": "storbrev",
+   "quiz": true,
+   "confusableWith": [
+    "s.varubrev.1"
+   ]
+  },
+  {
+   "senseId": "s.varubrev.1",
+   "kind": "illustration",
+   "motif": "post.varubrev",
+   "group": "storbrev",
+   "quiz": true,
+   "confusableWith": [
+    "s.storbrev.1"
+   ]
+  },
+  {
+   "senseId": "s.packa-in.1",
+   "kind": "illustration",
+   "motif": "post.packa-in",
+   "group": "packa-in",
+   "quiz": true,
+   "confusableWith": [
+    "s.fylla-ut.1",
+    "s.varsamt.1"
+   ]
+  },
+  {
+   "senseId": "s.fylla-ut.1",
+   "kind": "illustration",
+   "motif": "post.fylla-ut",
+   "group": "packa-in",
+   "quiz": true,
+   "confusableWith": [
+    "s.packa-in.1",
+    "s.tomrum.1"
+   ]
+  },
+  {
+   "senseId": "s.tomrum.1",
+   "kind": "illustration",
+   "motif": "post.tomrum",
+   "group": "packa-in",
+   "quiz": true,
+   "confusableWith": [
+    "s.fylla-ut.1"
+   ]
+  },
+  {
+   "senseId": "s.packtejp.1",
+   "kind": "illustration",
+   "motif": "post.packtejp",
+   "group": "packtejp",
+   "quiz": true,
+   "confusableWith": [
+    "s.tejpa-igen.1"
+   ]
+  },
+  {
+   "senseId": "s.tejpa-igen.1",
+   "kind": "illustration",
+   "motif": "post.tejpa-igen",
+   "group": "packtejp",
+   "quiz": true,
+   "confusableWith": [
+    "s.packtejp.1"
+   ]
+  },
+  {
+   "senseId": "s.varsamt.1",
+   "kind": "illustration",
+   "motif": "post.varsamt",
+   "group": "varsamt",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.packa-in.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "54df8dc3"
+   }
+  },
+  {
+   "senseId": "s.ombud.1",
+   "kind": "illustration",
+   "motif": "post.ombud",
+   "group": "ombud",
+   "quiz": true,
+   "confusableWith": [
+    "s.paketombud.1"
+   ]
+  },
+  {
+   "senseId": "s.paketombud.1",
+   "kind": "illustration",
+   "motif": "post.paketombud",
+   "group": "ombud",
+   "quiz": true,
+   "confusableWith": [
+    "s.ombud.1",
+    "s.utlämningsställe.1"
+   ]
+  },
+  {
+   "senseId": "s.kiosk.1",
+   "kind": "illustration",
+   "motif": "post.kiosk",
+   "group": "ombud",
+   "quiz": true
+  },
+  {
+   "senseId": "s.utlämningsställe.1",
+   "kind": "illustration",
+   "motif": "post.utlämningsställe",
+   "group": "ombud",
+   "quiz": true,
+   "confusableWith": [
+    "s.paketombud.1"
+   ]
+  },
+  {
+   "senseId": "s.paketskåp.1",
+   "kind": "illustration",
+   "motif": "post.paketskåp",
+   "group": "paketskåp",
+   "quiz": true,
+   "confusableWith": [
+    "s.lucka-dörr.1"
+   ]
+  },
+  {
+   "senseId": "s.lucka-dörr.1",
+   "kind": "illustration",
+   "motif": "post.lucka-dörr",
+   "group": "paketskåp",
+   "quiz": true,
+   "confusableWith": [
+    "s.paketskåp.1"
+   ]
+  },
+  {
+   "senseId": "s.hämtningskod.1",
+   "kind": "illustration",
+   "motif": "post.hämtningskod",
+   "group": "hämtningskod",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hämta-ut.1",
+   "kind": "illustration",
+   "motif": "post.hämta-ut",
+   "group": "hämta-ut",
+   "quiz": true,
+   "confusableWith": [
+    "s.utlämning.1"
+   ]
+  },
+  {
+   "senseId": "s.utlämning.1",
+   "kind": "illustration",
+   "motif": "post.utlämning",
+   "group": "hämta-ut",
+   "quiz": true,
+   "confusableWith": [
+    "s.hämta-ut.1",
+    "s.kvittens.1"
+   ]
+  },
+  {
+   "senseId": "s.legitimation.1",
+   "kind": "illustration",
+   "motif": "post.legitimation",
+   "group": "legitimation",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.id-kort.1",
+    "s.personligen.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.21.0",
+    "hash": "3007264e"
+   }
+  },
+  {
+   "senseId": "s.id-kort.1",
+   "kind": "illustration",
+   "motif": "post.id-kort",
+   "group": "legitimation",
+   "quiz": true,
+   "confusableWith": [
+    "s.legitimation.1"
+   ]
+  },
+  {
+   "senseId": "s.personligen.1",
+   "kind": "illustration",
+   "motif": "post.personligen",
+   "group": "personligen",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.legitimation.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "94ba4210"
+   }
+  },
+  {
+   "senseId": "s.fullmakt.1",
+   "kind": "illustration",
+   "motif": "post.fullmakt",
+   "group": "fullmakt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.liggetid.1",
+   "kind": "illustration",
+   "motif": "post.liggetid",
+   "group": "liggetid",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kvittens.1",
+   "kind": "illustration",
+   "motif": "post.kvittens",
+   "group": "kvittens",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kvitto.1",
+    "s.utlämning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "1e534555"
+   }
+  },
+  {
+   "senseId": "s.utlandet.1",
+   "kind": "illustration",
+   "motif": "post.utlandet",
+   "group": "utrikes",
+   "quiz": true,
+   "confusableWith": [
+    "s.utrikes.1"
+   ]
+  },
+  {
+   "senseId": "s.utrikes.1",
+   "kind": "illustration",
+   "motif": "post.utrikes",
+   "group": "utrikes",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.internationell.1",
+    "s.utlandet.1",
+    "s.flygpost.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ec90903b"
+   }
+  },
+  {
+   "senseId": "s.inrikes.1",
+   "kind": "illustration",
+   "motif": "post.inrikes",
+   "group": "inrikes",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "079e0018"
+   }
+  },
+  {
+   "senseId": "s.internationell.1",
+   "kind": "illustration",
+   "motif": "post.internationell",
+   "group": "utrikes",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.utrikes.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "0dad1586"
+   }
+  },
+  {
+   "senseId": "s.EU.1",
+   "kind": "illustration",
+   "motif": "post.EU",
+   "group": "EU",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tull.1",
+   "kind": "illustration",
+   "motif": "post.tull",
+   "group": "tull",
+   "quiz": true,
+   "confusableWith": [
+    "s.tullavgift.1"
+   ]
+  },
+  {
+   "senseId": "s.tullavgift.1",
+   "kind": "illustration",
+   "motif": "post.tullavgift",
+   "group": "tull",
+   "quiz": true,
+   "confusableWith": [
+    "s.tull.1"
+   ]
+  },
+  {
+   "senseId": "s.tulldeklaration.1",
+   "kind": "illustration",
+   "motif": "post.tulldeklaration",
+   "group": "tull",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.deklarera.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "87382abf"
+   }
+  },
+  {
+   "senseId": "s.deklarera.1",
+   "kind": "illustration",
+   "motif": "post.deklarera",
+   "group": "tull",
+   "quiz": true,
+   "confusableWith": [
+    "s.tulldeklaration.1"
+   ]
+  },
+  {
+   "senseId": "s.hanteringsavgift.1",
+   "kind": "illustration",
+   "motif": "post.hanteringsavgift",
+   "group": "hanteringsavgift",
+   "quiz": true
+  },
+  {
+   "senseId": "s.förbjuden.1",
+   "kind": "illustration",
+   "motif": "post.förbjuden",
+   "group": "förbjuden",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "7dbeac0d"
+   }
+  },
+  {
+   "senseId": "s.spårbar.1",
+   "kind": "illustration",
+   "motif": "post.spårbar",
+   "group": "spårbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.rekommenderat-brev.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "04c45cdf"
+   }
+  },
+  {
+   "senseId": "s.flygpost.1",
+   "kind": "illustration",
+   "motif": "post.flygpost",
+   "group": "flygpost",
+   "quiz": true,
+   "confusableWith": [
+    "s.utrikes.1"
+   ]
+  },
+  {
+   "senseId": "s.rekommenderat-brev.1",
+   "kind": "illustration",
+   "motif": "post.rekommenderat-brev",
+   "group": "rekommenderat",
+   "quiz": true,
+   "confusableWith": [
+    "s.spårbar.1"
+   ]
+  },
+  {
+   "senseId": "s.gatuadress.1",
+   "kind": "illustration",
+   "motif": "post.gatuadress",
+   "group": "gatuadress",
+   "quiz": true,
+   "confusableWith": [
+    "s.husnummer.1",
+    "s.hemadress.1"
+   ]
+  },
+  {
+   "senseId": "s.husnummer.1",
+   "kind": "illustration",
+   "motif": "post.husnummer",
+   "group": "gatuadress",
+   "quiz": true,
+   "confusableWith": [
+    "s.gatuadress.1"
+   ]
+  },
+  {
+   "senseId": "s.uppgång.1",
+   "kind": "illustration",
+   "motif": "post.uppgång",
+   "group": "uppgång",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lägenhetsnummer.1",
+   "kind": "illustration",
+   "motif": "post.lägenhetsnummer",
+   "group": "lägenhetsnummer",
+   "quiz": true
+  },
+  {
+   "senseId": "s.postnummer.1",
+   "kind": "illustration",
+   "motif": "post.postnummer",
+   "group": "postnummer",
+   "quiz": true,
+   "confusableWith": [
+    "s.ort.1"
+   ]
+  },
+  {
+   "senseId": "s.ort.1",
+   "kind": "illustration",
+   "motif": "post.ort",
+   "group": "postnummer",
+   "quiz": true,
+   "confusableWith": [
+    "s.postnummer.1"
+   ]
+  },
+  {
+   "senseId": "s.postbox.1",
+   "kind": "illustration",
+   "motif": "post.postbox",
+   "group": "postadress",
+   "quiz": true,
+   "confusableWith": [
+    "s.postadress.1"
+   ]
+  },
+  {
+   "senseId": "s.postadress.1",
+   "kind": "illustration",
+   "motif": "post.postadress",
+   "group": "postadress",
+   "quiz": true,
+   "confusableWith": [
+    "s.postbox.1"
+   ]
+  },
+  {
+   "senseId": "s.besöksadress.1",
+   "kind": "illustration",
+   "motif": "post.besöksadress",
+   "group": "besöksadress",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hemadress.1",
+   "kind": "illustration",
+   "motif": "post.hemadress",
+   "group": "gatuadress",
+   "quiz": true,
+   "confusableWith": [
+    "s.gatuadress.1"
+   ]
+  },
+  {
+   "senseId": "s.adressera.1",
+   "kind": "illustration",
+   "motif": "post.adressera",
+   "group": "adressera",
+   "quiz": true,
+   "confusableWith": [
+    "s.handskriven.1"
+   ]
+  },
+  {
+   "senseId": "s.stora-bokstäver.1",
+   "kind": "illustration",
+   "motif": "post.stora-bokstäver",
+   "group": "stora",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "57036542"
+   }
+  },
+  {
+   "senseId": "s.returadress.1",
+   "kind": "illustration",
+   "motif": "post.returadress",
+   "group": "avsändare",
+   "quiz": true,
+   "confusableWith": [
+    "s.avsändare.1"
+   ]
+  },
+  {
+   "senseId": "s.fel-adress.1",
+   "kind": "illustration",
+   "motif": "post.fel-adress",
+   "group": "fel",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.felsorterad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "5cc49e58"
+   }
+  },
+  {
+   "senseId": "s.leveransproblem.1",
+   "kind": "illustration",
+   "motif": "post.leveransproblem",
+   "group": "leveransproblem",
+   "quiz": true,
+   "confusableWith": [
+    "s.stå-still.1"
+   ]
+  },
+  {
+   "senseId": "s.stå-still.1",
+   "kind": "illustration",
+   "motif": "post.stå-still",
+   "group": "stå",
+   "quiz": true,
+   "confusableWith": [
+    "s.leveransproblem.1"
+   ]
+  },
+  {
+   "senseId": "s.saknad.1",
+   "kind": "illustration",
+   "motif": "post.saknad",
+   "group": "komma-bort",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.komma-bort.1",
+    "s.spårlöst.1",
+    "s.missad-leverans.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "13d046c0"
+   }
+  },
+  {
+   "senseId": "s.komma-bort.1",
+   "kind": "illustration",
+   "motif": "post.komma-bort",
+   "group": "komma-bort",
+   "quiz": true,
+   "confusableWith": [
+    "s.saknad.1",
+    "s.spårlöst.1"
+   ]
+  },
+  {
+   "senseId": "s.felsorterad.1",
+   "kind": "illustration",
+   "motif": "post.felsorterad",
+   "group": "felsorterad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.fel-adress.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "8af047be"
+   }
+  },
+  {
+   "senseId": "s.spårlöst.1",
+   "kind": "illustration",
+   "motif": "post.spårlöst",
+   "group": "komma-bort",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.saknad.1",
+    "s.komma-bort.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "4db45429"
+   }
+  },
+  {
+   "senseId": "s.fraktbolag.1",
+   "kind": "illustration",
+   "motif": "post.fraktbolag",
+   "group": "fraktbolag",
+   "quiz": true
+  },
+  {
+   "senseId": "s.efterforska.1",
+   "kind": "illustration",
+   "motif": "post.efterforska",
+   "group": "efterforska",
+   "quiz": true,
+   "confusableWith": [
+    "s.efterforskning.1"
+   ]
+  },
+  {
+   "senseId": "s.efterforskning.1",
+   "kind": "illustration",
+   "motif": "post.efterforskning",
+   "group": "efterforska",
+   "quiz": true,
+   "confusableWith": [
+    "s.efterforska.1"
+   ]
+  },
+  {
+   "senseId": "s.missad-leverans.1",
+   "kind": "illustration",
+   "motif": "post.missad-leverans",
+   "group": "missad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.saknad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "62e8cfce"
+   }
+  },
+  {
+   "senseId": "s.transportskada.1",
+   "kind": "illustration",
+   "motif": "post.transportskada",
+   "group": "transportskada",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skicka-ett-nytt.1",
+   "kind": "illustration",
+   "motif": "post.skicka-ett-nytt",
+   "group": "skicka",
+   "quiz": true
+  },
+  {
+   "senseId": "s.elektriker.1",
+   "kind": "illustration",
+   "motif": "tjän.elektriker",
+   "group": "elektriker",
+   "quiz": true,
+   "confusableWith": [
+    "s.behörig.1"
+   ]
+  },
+  {
+   "senseId": "s.snickare.1",
+   "kind": "illustration",
+   "motif": "tjän.snickare",
+   "group": "elektriker",
+   "quiz": true
+  },
+  {
+   "senseId": "s.målare.1",
+   "kind": "illustration",
+   "motif": "tjän.målare",
+   "group": "elektriker",
+   "quiz": true
+  },
+  {
+   "senseId": "s.anlita.1",
+   "kind": "illustration",
+   "motif": "tjän.anlita",
+   "group": "anlita",
+   "quiz": true,
+   "confusableWith": [
+    "s.uppdrag.1"
+   ]
+  },
+  {
+   "senseId": "s.behörig.1",
+   "kind": "illustration",
+   "motif": "tjän.behörig",
+   "group": "behörig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.elektriker.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "f8a60718"
+   }
+  },
+  {
+   "senseId": "s.uppdrag.1",
+   "kind": "illustration",
+   "motif": "tjän.uppdrag",
+   "group": "anlita",
+   "quiz": true,
+   "confusableWith": [
+    "s.anlita.1"
+   ]
+  },
+  {
+   "senseId": "s.hembesök.1",
+   "kind": "illustration",
+   "motif": "tjän.hembesök",
+   "group": "anlita",
+   "quiz": true,
+   "confusableWith": [
+    "s.på-plats.1"
+   ]
+  },
+  {
+   "senseId": "s.på-plats.1",
+   "kind": "illustration",
+   "motif": "tjän.på-plats",
+   "group": "på",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hembesök.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "cf4f3015"
+   }
+  },
+  {
+   "senseId": "s.kostnadsförslag.1",
+   "kind": "illustration",
+   "motif": "tjän.kostnadsförslag",
+   "group": "kostnadsförslag",
+   "quiz": true,
+   "confusableWith": [
+    "s.fast-pris.1"
+   ]
+  },
+  {
+   "senseId": "s.timpris.1",
+   "kind": "illustration",
+   "motif": "tjän.timpris",
+   "group": "kostnadsförslag",
+   "quiz": true,
+   "confusableWith": [
+    "s.arbetskostnad.1"
+   ]
+  },
+  {
+   "senseId": "s.arbetskostnad.1",
+   "kind": "illustration",
+   "motif": "tjän.arbetskostnad",
+   "group": "arbetskostnad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.timpris.1",
+    "s.materialkostnad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "6648e88c"
+   }
+  },
+  {
+   "senseId": "s.materialkostnad.1",
+   "kind": "illustration",
+   "motif": "tjän.materialkostnad",
+   "group": "arbetskostnad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.arbetskostnad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a78a2fbd"
+   }
+  },
+  {
+   "senseId": "s.fast-pris.1",
+   "kind": "illustration",
+   "motif": "tjän.fast-pris",
+   "group": "kostnadsförslag",
+   "quiz": true,
+   "confusableWith": [
+    "s.kostnadsförslag.1"
+   ]
+  },
+  {
+   "senseId": "s.ROT-avdrag.1",
+   "kind": "illustration",
+   "motif": "tjän.ROT-avdrag",
+   "group": "ROT",
+   "quiz": true
+  },
+  {
+   "senseId": "s.svartjobb.1",
+   "kind": "illustration",
+   "motif": "tjän.svartjobb",
+   "group": "svartjobb",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tvätteri.1",
+   "kind": "illustration",
+   "motif": "tjän.tvätteri",
+   "group": "tvätteri",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skjorttvätt.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "52ee9dc1"
+   }
+  },
+  {
+   "senseId": "s.skjorttvätt.1",
+   "kind": "illustration",
+   "motif": "tjän.skjorttvätt",
+   "group": "tvätteri",
+   "quiz": true,
+   "confusableWith": [
+    "s.tvätteri.1",
+    "s.fläckbehandling.1"
+   ]
+  },
+  {
+   "senseId": "s.fläckbehandling.1",
+   "kind": "illustration",
+   "motif": "tjän.fläckbehandling",
+   "group": "tvätteri",
+   "quiz": true,
+   "confusableWith": [
+    "s.skjorttvätt.1"
+   ]
+  },
+  {
+   "senseId": "s.inlämningslapp.1",
+   "kind": "illustration",
+   "motif": "tjän.inlämningslapp",
+   "group": "inlämningslapp",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skrädderi.1",
+   "kind": "illustration",
+   "motif": "tjän.skrädderi",
+   "group": "skrädderi",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skräddare.1",
+    "s.ändringssömnad.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "e8cd3320"
+   }
+  },
+  {
+   "senseId": "s.skräddare.1",
+   "kind": "illustration",
+   "motif": "tjän.skräddare",
+   "group": "skrädderi",
+   "quiz": true,
+   "confusableWith": [
+    "s.skrädderi.1",
+    "s.måttsydd.1",
+    "s.provning.1"
+   ]
+  },
+  {
+   "senseId": "s.ändringssömnad.1",
+   "kind": "illustration",
+   "motif": "tjän.ändringssömnad",
+   "group": "skrädderi",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skrädderi.1",
+    "s.korta.1",
+    "s.sy-in.1",
+    "s.sy-om.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "ccc1759a"
+   }
+  },
+  {
+   "senseId": "s.korta.1",
+   "kind": "illustration",
+   "motif": "tjän.korta",
+   "group": "korta",
+   "quiz": true,
+   "confusableWith": [
+    "s.ändringssömnad.1",
+    "s.sy-in.1"
+   ]
+  },
+  {
+   "senseId": "s.sy-in.1",
+   "kind": "illustration",
+   "motif": "tjän.sy-in",
+   "group": "korta",
+   "quiz": true,
+   "confusableWith": [
+    "s.sy-om.1",
+    "s.korta.1",
+    "s.ändringssömnad.1"
+   ]
+  },
+  {
+   "senseId": "s.sy-om.1",
+   "kind": "illustration",
+   "motif": "tjän.sy-om",
+   "group": "korta",
+   "quiz": true,
+   "confusableWith": [
+    "s.sy-in.1",
+    "s.lagningsbar.1",
+    "s.ändringssömnad.1"
+   ]
+  },
+  {
+   "senseId": "s.byta-dragkedja.1",
+   "kind": "illustration",
+   "motif": "tjän.byta-dragkedja",
+   "group": "byta",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lagningsbar.1",
+   "kind": "illustration",
+   "motif": "tjän.lagningsbar",
+   "group": "lagningsbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.sy-om.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a5d3d7b4"
+   }
+  },
+  {
+   "senseId": "s.måttsydd.1",
+   "kind": "illustration",
+   "motif": "tjän.måttsydd",
+   "group": "måttsydd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skräddare.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "9456e8a1"
+   }
+  },
+  {
+   "senseId": "s.provning.1",
+   "kind": "illustration",
+   "motif": "tjän.provning",
+   "group": "provning",
+   "quiz": true,
+   "confusableWith": [
+    "s.skräddare.1"
+   ]
+  },
+  {
+   "senseId": "s.kundtjänst.1",
+   "kind": "illustration",
+   "motif": "tjän.kundtjänst",
+   "group": "kundtjänst",
+   "quiz": true,
+   "confusableWith": [
+    "s.support.1",
+    "s.handläggare.1"
+   ]
+  },
+  {
+   "senseId": "s.support.1",
+   "kind": "illustration",
+   "motif": "tjän.support",
+   "group": "kundtjänst",
+   "quiz": true,
+   "confusableWith": [
+    "s.kundtjänst.1",
+    "s.felsöka.1"
+   ]
+  },
+  {
+   "senseId": "s.knappval.1",
+   "kind": "illustration",
+   "motif": "tjän.knappval",
+   "group": "knappval",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vänta-i-telefon.1",
+   "kind": "illustration",
+   "motif": "tjän.vänta-i-telefon",
+   "group": "vänta",
+   "quiz": true,
+   "confusableWith": [
+    "s.köplats.1"
+   ]
+  },
+  {
+   "senseId": "s.köplats.1",
+   "kind": "illustration",
+   "motif": "tjän.köplats",
+   "group": "köplats",
+   "quiz": true,
+   "confusableWith": [
+    "s.vänta-i-telefon.1"
+   ]
+  },
+  {
+   "senseId": "s.ringa-tillbaka.1",
+   "kind": "illustration",
+   "motif": "tjän.ringa-tillbaka",
+   "group": "ringa",
+   "quiz": true,
+   "confusableWith": [
+    "s.koppla-vidare.1"
+   ]
+  },
+  {
+   "senseId": "s.chatt.1",
+   "kind": "illustration",
+   "motif": "tjän.chatt",
+   "group": "chatt",
+   "quiz": true,
+   "confusableWith": [
+    "s.chatta.1",
+    "s.chattbot.1"
+   ]
+  },
+  {
+   "senseId": "s.chatta.1",
+   "kind": "illustration",
+   "motif": "tjän.chatta",
+   "group": "chatt",
+   "quiz": true,
+   "confusableWith": [
+    "s.chatt.1"
+   ]
+  },
+  {
+   "senseId": "s.chattbot.1",
+   "kind": "illustration",
+   "motif": "tjän.chattbot",
+   "group": "chatt",
+   "quiz": true,
+   "confusableWith": [
+    "s.chatt.1"
+   ]
+  },
+  {
+   "senseId": "s.koppla-vidare.1",
+   "kind": "illustration",
+   "motif": "tjän.koppla-vidare",
+   "group": "koppla",
+   "quiz": true,
+   "confusableWith": [
+    "s.ringa-tillbaka.1"
+   ]
+  },
+  {
+   "senseId": "s.handläggare.1",
+   "kind": "illustration",
+   "motif": "tjän.handläggare",
+   "group": "kundtjänst",
+   "quiz": true,
+   "confusableWith": [
+    "s.kundtjänst.1"
+   ]
+  },
+  {
+   "senseId": "s.ärendenummer.1",
+   "kind": "illustration",
+   "motif": "tjän.ärendenummer",
+   "group": "ärendenummer",
+   "quiz": true
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "kind": "illustration",
+   "motif": "tjän.felsöka",
+   "group": "felsöka",
+   "quiz": true,
+   "confusableWith": [
+    "s.starta-om.1",
+    "s.support.1"
+   ]
+  },
+  {
+   "senseId": "s.starta-om.1",
+   "kind": "illustration",
+   "motif": "tjän.starta-om",
+   "group": "starta",
+   "quiz": true,
+   "confusableWith": [
+    "s.felsöka.1"
+   ]
+  },
+  {
+   "senseId": "s.bibliotek.1",
+   "kind": "illustration",
+   "motif": "tjän.bibliotek",
+   "group": "bibliotek",
+   "quiz": true,
+   "confusableWith": [
+    "s.läsesal.1"
+   ]
+  },
+  {
+   "senseId": "s.bibliotekskort.1",
+   "kind": "illustration",
+   "motif": "tjän.bibliotekskort",
+   "group": "bibliotekskort",
+   "quiz": true,
+   "confusableWith": [
+    "s.lånetid.1"
+   ]
+  },
+  {
+   "senseId": "s.bibliotekarie.1",
+   "kind": "illustration",
+   "motif": "tjän.bibliotekarie",
+   "group": "bibliotek",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lånetid.1",
+   "kind": "illustration",
+   "motif": "tjän.lånetid",
+   "group": "lånetid",
+   "quiz": true,
+   "confusableWith": [
+    "s.bibliotekskort.1",
+    "s.låna-om.1"
+   ]
+  },
+  {
+   "senseId": "s.låna-om.1",
+   "kind": "illustration",
+   "motif": "tjän.låna-om",
+   "group": "lånetid",
+   "quiz": true,
+   "confusableWith": [
+    "s.lånetid.1",
+    "s.reservera.1"
+   ]
+  },
+  {
+   "senseId": "s.reservera.1",
+   "kind": "illustration",
+   "motif": "tjän.reservera",
+   "group": "reservera",
+   "quiz": true,
+   "confusableWith": [
+    "s.låna-om.1"
+   ]
+  },
+  {
+   "senseId": "s.ljudbok.1",
+   "kind": "illustration",
+   "motif": "tjän.ljudbok",
+   "group": "ljudbok",
+   "quiz": true,
+   "confusableWith": [
+    "s.e-bok.1"
+   ]
+  },
+  {
+   "senseId": "s.e-bok.1",
+   "kind": "illustration",
+   "motif": "tjän.e-bok",
+   "group": "ljudbok",
+   "quiz": true,
+   "confusableWith": [
+    "s.ljudbok.1"
+   ]
+  },
+  {
+   "senseId": "s.låneautomat.1",
+   "kind": "illustration",
+   "motif": "tjän.låneautomat",
+   "group": "låneautomat",
+   "quiz": true,
+   "confusableWith": [
+    "s.återlämningsautomat.1"
+   ]
+  },
+  {
+   "senseId": "s.återlämningsautomat.1",
+   "kind": "illustration",
+   "motif": "tjän.återlämningsautomat",
+   "group": "låneautomat",
+   "quiz": true,
+   "confusableWith": [
+    "s.låneautomat.1"
+   ]
+  },
+  {
+   "senseId": "s.läsesal.1",
+   "kind": "illustration",
+   "motif": "tjän.läsesal",
+   "group": "bibliotek",
+   "quiz": true,
+   "confusableWith": [
+    "s.bibliotek.1",
+    "s.studieplats.1"
+   ]
+  },
+  {
+   "senseId": "s.studieplats.1",
+   "kind": "illustration",
+   "motif": "tjän.studieplats",
+   "group": "bibliotek",
+   "quiz": true,
+   "confusableWith": [
+    "s.läsesal.1"
+   ]
+  },
+  {
+   "senseId": "s.fjärrlån.1",
+   "kind": "illustration",
+   "motif": "tjän.fjärrlån",
+   "group": "fjärrlån",
+   "quiz": true
+  },
+  {
+   "senseId": "s.språkcafé.1",
+   "kind": "illustration",
+   "motif": "tjän.språkcafé",
+   "group": "språkcafé",
+   "quiz": true
+  },
+  {
+   "senseId": "s.boka-online.1",
+   "kind": "illustration",
+   "motif": "tjän.boka-online",
+   "group": "boka-online",
+   "quiz": true,
+   "confusableWith": [
+    "s.bokningssystem.1",
+    "s.bokningsbekräftelse.1"
+   ]
+  },
+  {
+   "senseId": "s.bokningssystem.1",
+   "kind": "illustration",
+   "motif": "tjän.bokningssystem",
+   "group": "boka-online",
+   "quiz": true,
+   "confusableWith": [
+    "s.boka-online.1",
+    "s.boka-upp.1"
+   ]
+  },
+  {
+   "senseId": "s.boka-upp.1",
+   "kind": "illustration",
+   "motif": "tjän.boka-upp",
+   "group": "boka-online",
+   "quiz": true,
+   "confusableWith": [
+    "s.bokningssystem.1"
+   ]
+  },
+  {
+   "senseId": "s.avboka.1",
+   "kind": "illustration",
+   "motif": "tjän.avboka",
+   "group": "avboka",
+   "quiz": true,
+   "confusableWith": [
+    "s.avbokning.1"
+   ]
+  },
+  {
+   "senseId": "s.väntelista.1",
+   "kind": "illustration",
+   "motif": "tjän.väntelista",
+   "group": "väntelista",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bokningsbekräftelse.1",
+   "kind": "illustration",
+   "motif": "tjän.bokningsbekräftelse",
+   "group": "bokningsbekräftelse",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.boka-online.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "cec81285"
+   }
+  },
+  {
+   "senseId": "s.avbokning.1",
+   "kind": "illustration",
+   "motif": "tjän.avbokning",
+   "group": "avboka",
+   "quiz": true,
+   "confusableWith": [
+    "s.avboka.1",
+    "s.sen-avbokning.1"
+   ]
+  },
+  {
+   "senseId": "s.avbokningsregel.1",
+   "kind": "illustration",
+   "motif": "tjän.avbokningsregel",
+   "group": "avboka",
+   "quiz": true,
+   "confusableWith": [
+    "s.avbokningsavgift.1"
+   ]
+  },
+  {
+   "senseId": "s.sen-avbokning.1",
+   "kind": "illustration",
+   "motif": "tjän.sen-avbokning",
+   "group": "avboka",
+   "quiz": true,
+   "confusableWith": [
+    "s.avbokning.1",
+    "s.avbokningsavgift.1",
+    "s.utebliven.1"
+   ]
+  },
+  {
+   "senseId": "s.avbokningsavgift.1",
+   "kind": "illustration",
+   "motif": "tjän.avbokningsavgift",
+   "group": "avboka",
+   "quiz": true,
+   "confusableWith": [
+    "s.sen-avbokning.1",
+    "s.avbokningsregel.1"
+   ]
+  },
+  {
+   "senseId": "s.utebliven.1",
+   "kind": "illustration",
+   "motif": "tjän.utebliven",
+   "group": "utebliven",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.sen-avbokning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "cdd16f7d"
+   }
+  },
+  {
+   "senseId": "s.återbud.1",
+   "kind": "illustration",
+   "motif": "tjän.återbud",
+   "group": "återbud",
+   "quiz": true,
+   "confusableWith": [
+    "s.lämna-återbud.1"
+   ]
+  },
+  {
+   "senseId": "s.lämna-återbud.1",
+   "kind": "illustration",
+   "motif": "tjän.lämna-återbud",
+   "group": "återbud",
+   "quiz": true,
+   "confusableWith": [
+    "s.återbud.1"
+   ]
+  },
+  {
+   "senseId": "s.abonnemang.1",
+   "kind": "illustration",
+   "motif": "tjän.abonnemang",
+   "group": "abonnemang",
+   "quiz": true,
+   "confusableWith": [
+    "s.mobilabonnemang.1",
+    "s.bindningstid.1"
+   ]
+  },
+  {
+   "senseId": "s.mobilabonnemang.1",
+   "kind": "illustration",
+   "motif": "tjän.mobilabonnemang",
+   "group": "abonnemang",
+   "quiz": true,
+   "confusableWith": [
+    "s.abonnemang.1",
+    "s.operatör.1",
+    "s.kontantkort.1"
+   ]
+  },
+  {
+   "senseId": "s.operatör.1",
+   "kind": "illustration",
+   "motif": "tjän.operatör",
+   "group": "operatör",
+   "quiz": true,
+   "confusableWith": [
+    "s.mobilabonnemang.1"
+   ]
+  },
+  {
+   "senseId": "s.kontantkort.1",
+   "kind": "illustration",
+   "motif": "tjän.kontantkort",
+   "group": "kontantkort",
+   "quiz": true,
+   "confusableWith": [
+    "s.mobilabonnemang.1"
+   ]
+  },
+  {
+   "senseId": "s.surf.1",
+   "kind": "illustration",
+   "motif": "tjän.surf",
+   "group": "surf",
+   "quiz": true,
+   "confusableWith": [
+    "s.obegränsad.1"
+   ]
+  },
+  {
+   "senseId": "s.obegränsad.1",
+   "kind": "illustration",
+   "motif": "tjän.obegränsad",
+   "group": "obegränsad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.surf.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "cfbff565"
+   }
+  },
+  {
+   "senseId": "s.bindningstid.1",
+   "kind": "illustration",
+   "motif": "tjän.bindningstid",
+   "group": "abonnemang",
+   "quiz": true,
+   "confusableWith": [
+    "s.abonnemang.1"
+   ]
+  },
+  {
+   "senseId": "s.månadsvis.1",
+   "kind": "illustration",
+   "motif": "tjän.månadsvis",
+   "group": "månadsvis",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.medlemsavgift.1",
+    "s.årsavgift.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "dd4e3c93"
+   }
+  },
+  {
+   "senseId": "s.medlemskap.1",
+   "kind": "illustration",
+   "motif": "tjän.medlemskap",
+   "group": "medlemskap",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bli-medlem.1",
+    "s.medlemskort.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "c3d2367a"
+   }
+  },
+  {
+   "senseId": "s.bli-medlem.1",
+   "kind": "illustration",
+   "motif": "tjän.bli-medlem",
+   "group": "medlemskap",
+   "quiz": true,
+   "confusableWith": [
+    "s.medlemskap.1",
+    "s.gå-ur.1"
+   ]
+  },
+  {
+   "senseId": "s.gå-ur.1",
+   "kind": "illustration",
+   "motif": "tjän.gå-ur",
+   "group": "medlemskap",
+   "quiz": true,
+   "confusableWith": [
+    "s.bli-medlem.1"
+   ]
+  },
+  {
+   "senseId": "s.medlemsavgift.1",
+   "kind": "illustration",
+   "motif": "tjän.medlemsavgift",
+   "group": "medlemsavgift",
+   "quiz": true,
+   "confusableWith": [
+    "s.månadsvis.1",
+    "s.årsavgift.1"
+   ]
+  },
+  {
+   "senseId": "s.årsavgift.1",
+   "kind": "illustration",
+   "motif": "tjän.årsavgift",
+   "group": "medlemsavgift",
+   "quiz": true,
+   "confusableWith": [
+    "s.medlemsavgift.1",
+    "s.månadsvis.1"
+   ]
+  },
+  {
+   "senseId": "s.medlemskort.1",
+   "kind": "illustration",
+   "motif": "tjän.medlemskort",
+   "group": "medlemskort",
+   "quiz": true,
+   "confusableWith": [
+    "s.gymkort.1",
+    "s.medlemskap.1"
+   ]
+  },
+  {
+   "senseId": "s.gymkort.1",
+   "kind": "illustration",
+   "motif": "tjän.gymkort",
+   "group": "medlemskort",
+   "quiz": true,
+   "confusableWith": [
+    "s.medlemskort.1"
+   ]
+  },
+  {
+   "senseId": "s.rättighet.1",
+   "kind": "illustration",
+   "motif": "tjän.rättighet",
+   "group": "rättighet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.konsument.1",
+    "s.få-rätt.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "38d45ce6"
+   }
+  },
+  {
+   "senseId": "s.konsument.1",
+   "kind": "illustration",
+   "motif": "tjän.konsument",
+   "group": "konsument",
+   "quiz": true,
+   "confusableWith": [
+    "s.rättighet.1"
+   ]
+  },
+  {
+   "senseId": "s.ersättning.1",
+   "kind": "illustration",
+   "motif": "tjän.ersättning",
+   "group": "ersättning",
+   "quiz": true,
+   "confusableWith": [
+    "s.kompensera.1",
+    "s.skälig.1"
+   ]
+  },
+  {
+   "senseId": "s.begära.1",
+   "kind": "illustration",
+   "motif": "tjän.begära",
+   "group": "begära",
+   "quiz": true,
+   "confusableWith": [
+    "s.kräva.1"
+   ]
+  },
+  {
+   "senseId": "s.kräva.1",
+   "kind": "illustration",
+   "motif": "tjän.kräva",
+   "group": "begära",
+   "quiz": true,
+   "confusableWith": [
+    "s.begära.1",
+    "s.stå-på-sig.1"
+   ]
+  },
+  {
+   "senseId": "s.skriftlig.1",
+   "kind": "illustration",
+   "motif": "tjän.skriftlig",
+   "group": "skriftlig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "9133ab24"
+   }
+  },
+  {
+   "senseId": "s.skälig.1",
+   "kind": "illustration",
+   "motif": "tjän.skälig",
+   "group": "rättighet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ersättning.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "4481d728"
+   }
+  },
+  {
+   "senseId": "s.kompensera.1",
+   "kind": "illustration",
+   "motif": "tjän.kompensera",
+   "group": "kompensera",
+   "quiz": true,
+   "confusableWith": [
+    "s.ersättning.1"
+   ]
+  },
+  {
+   "senseId": "s.acceptera.1",
+   "kind": "illustration",
+   "motif": "tjän.acceptera",
+   "group": "acceptera",
+   "quiz": true,
+   "confusableWith": [
+    "s.avslå.1"
+   ]
+  },
+  {
+   "senseId": "s.avslå.1",
+   "kind": "illustration",
+   "motif": "tjän.avslå",
+   "group": "avslå",
+   "quiz": true,
+   "confusableWith": [
+    "s.acceptera.1"
+   ]
+  },
+  {
+   "senseId": "s.stå-på-sig.1",
+   "kind": "illustration",
+   "motif": "tjän.stå-på-sig",
+   "group": "stå",
+   "quiz": true,
+   "confusableWith": [
+    "s.kräva.1"
+   ]
+  },
+  {
+   "senseId": "s.konsumentvägledare.1",
+   "kind": "illustration",
+   "motif": "tjän.konsumentvägledare",
+   "group": "konsumentvägledare",
+   "quiz": true,
+   "confusableWith": [
+    "s.ARN.1"
+   ]
+  },
+  {
+   "senseId": "s.ARN.1",
+   "kind": "illustration",
+   "motif": "tjän.ARN",
+   "group": "konsumentvägledare",
+   "quiz": true,
+   "confusableWith": [
+    "s.konsumentvägledare.1",
+    "s.få-rätt.1"
+   ]
+  },
+  {
+   "senseId": "s.få-rätt.1",
+   "kind": "illustration",
+   "motif": "tjän.få-rätt",
+   "group": "få",
+   "quiz": true,
+   "confusableWith": [
+    "s.ARN.1",
+    "s.rättighet.1"
+   ]
   }
  ]
 }
