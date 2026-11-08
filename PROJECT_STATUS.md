@@ -1,8 +1,26 @@
 # Projektstatus – överlämning
 
-**Version:** 0.19.0 · **Senast uppdaterad:** 2026-11-07 · **Gren:** `main` (publiceras via GitHub Pages; 0.19 utvecklades i grenen `claude/swechan-0.19`)
+**Version:** 0.19.1 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.19.1 utvecklades i grenen `claude/swechan-0.19.1`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.19.1 – släppt 2026-11-08 (blindtest och styrsystem för bilder)
+
+- **Gjort:**
+  - Alla 517 symbol- och adjektivbilder blindtestades. 159 ritades om, och 4 ord utan tydlig scen fick ingen bild.
+  - Nu har 448 bilder godkänt blindtest och 65 är godkända synonymfall.
+  - Ett styrsystem infördes: fältet `blindTest` med fingeravtryck, ett test som stoppar bygget och reglerna i `CONTENT_GUIDELINES.md`.
+- **Arbetsgång för nya bilder (obligatorisk för symboler och adjektiv):**
+  1. Rita bilden.
+  2. Kör `npm run art:blind -- <mapp> pending`.
+  3. Låt en ny AI-session (eller en människa) svara utan facit. Granskarinstruktionen finns i `CONTENT_GUIDELINES.md` → *Blindtest*.
+  4. Kör `npm run art:blind:record -- <mapp> [godtagna-medium]`.
+  5. Rita om allt som underkänns och testa igen.
+- **Kom ihåg:**
+  - Granska aldrig dina egna bilder med ordet bredvid.
+  - Standardfiguren (`figure()`) kan inte visa passform eller frisyr. Använd `dressed()`/`fitPair()` (`fitFigures.ts`) eller en närbild.
+  - `P({ mood })` i `blindFix.ts` ger figurer med ansiktsuttryck.
+- **Nästa steg (0.20):** överämnena i 400-, 500-, 600-, 800- och 900-serierna, med blindtest som grind.
 
 ## 0.19 – släppt 2026-11-07 (Kläder & stil klart, grundmodulerna 1–8)
 

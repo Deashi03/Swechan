@@ -68,9 +68,6 @@ export const KROPP_FACES: FaceDef[] = [
   { sense: 's.blänga.1', group: 'blick', confusable: ['s.stirra.1', 's.snegla.1'], scene: scene(2800, 1600, [
     k(0, N), hold(400, { browRaise: 0, browKnit: 0, browTilt: 0, eyeOpen: 1, squint: 0, lookX: 0, smile: 0.15, nod: 0 }),
     k(1100, { browRaise: -0.7, browKnit: 1, browTilt: -1, eyeOpen: 0.75, squint: 0.45, lookX: 1, smile: -0.5, nod: 0.35 })]) },
-  { sense: 's.surmulen.1', group: 'leende', quiz: true, confusable: ['s.leende.1'], scene: scene(2800, 1700, [
-    k(0, N), hold(500, { pout: 0, smile: 0.15, browTilt: 0, browRaise: 0, lookX: 0, lookY: 0, yaw: 0, tilt: 0 }),
-    k(1300, { pout: 1, smile: -0.65, browTilt: -0.5, browRaise: -0.35, lookX: -1, lookY: 0.4, yaw: -0.4, tilt: -6 })]) },
   { sense: 's.humörsvängning.1', group: 'känsla', confusable: ['s.ansiktsuttryck.1'], scene: scene(3400, 1250, [
     k(0, { ...N, ...HAPPY, 'o:tr': 0 }), hold(500, HAPPY), k(800, { ...SAD }), k(900, { 'o:tr': 0 }), k(1100, { 'o:tr': 1 }), hold(1500, SAD), k(1600, { 'o:tr': 0 }),
     k(1800, { ...ANGRY }), hold(2300, ANGRY), k(2600, { ...HAPPY, browKnit: 0, browTilt: 0 })],
@@ -87,10 +84,6 @@ export const KROPP_FACES: FaceDef[] = [
     hold(500, { eyeOpen: 1, squint: 0, yaw: 0, browKnit: 0, hand: 0 }), k(650, { e: 'out', eyeOpen: 0, squint: 1, browKnit: 0.8, yaw: -0.5, tilt: -5 }),
     k(1200, { ...HAND_AT.eyes, hand: 1 })],
     [{ id: 'sun', kind: 'sun', x: 100, y: 20, s: 1.6 }]) },
-  { sense: 's.ljuskänslig.1', group: 'ljus', confusable: ['s.bländad.1', 's.kisa.1'], scene: scene(2800, 1700, [
-    k(0, { ...N, 'o:l': 0 }), k(400, { 'o:l': 1 }), hold(600, { squint: 0, eyeOpen: 1, lookX: 0, browTilt: 0, yaw: 0, smile: 0.15 }),
-    k(1300, { squint: 0.8, eyeOpen: 0.4, lookX: -1, browTilt: 0.7, yaw: -0.35, smile: -0.3 })],
-    [{ id: 'l', kind: 'lamp', x: 102, y: 22, s: 1.2 }]) },
   { sense: 's.vakenhet.1', group: 'sömn', confusable: ['s.dåsig.1'], scene: scene(2800, 1800, [
     k(0, { ...N, 'o:sun': 0 }), k(500, { 'o:sun': 1 }), k(700, { eyeOpen: 1 }), k(780, { e: 'linear', eyeOpen: 0 }), k(880, { e: 'linear', eyeOpen: 1 }),
     hold(1000, { browRaise: 0, smile: 0.15, cheeks: 0 }), k(1500, { eyeOpen: 1.25, browRaise: 0.5, smile: 0.6, cheeks: 0.4 })],
@@ -113,10 +106,6 @@ export const KROPP_FACES: FaceDef[] = [
     hold(650, { eyeOpen: 1, squint: 0, browTilt: 0, tilt: 0, hand: 0, jitter: 0 }),
     k(800, { e: 'out', eyeOpen: 0, squint: 1, browTilt: 1, browKnit: 0.6, tilt: -7, jitter: 0.6, smile: -0.4 }), k(1200, { ...HAND_AT.ear, hand: 1 }), k(1800, { jitter: 0 })],
     [{ id: 'b', kind: 'bell', x: 104, y: 22, s: 1.1 }]) },
-  { sense: 's.uppmärksam.1', group: 'hörsel', scene: scene(2800, 1700, [
-    k(0, { ...N, 'o:b': 0 }), k(500, { 'o:b': 1 }), hold(600, { eyeOpen: 1, browRaise: 0, lookX: 0, nod: 0, yaw: 0 }),
-    k(1000, { e: 'out', eyeOpen: 1.3, browRaise: 0.6, lookX: 1, nod: -0.2, yaw: 0.3, smile: 0 })],
-    [{ id: 'b', kind: 'bell', x: 106, y: 26 }]) },
   { sense: 's.överstimulerad.1', group: 'sinnen', scene: scene(3200, 2600, [
     k(0, { ...N, ...HAND_AT.down, 'o:a': 0, 'o:b': 0, 'o:c': 0, 'o:d': 0, 'o:e': 0 }), k(300, { 'o:a': 1 }), k(700, { 'o:b': 1 }), k(1100, { 'o:c': 1 }), k(1500, { 'o:d': 1 }), k(1900, { 'o:e': 1 }),
     k(500, { browTilt: 0.5, eyeOpen: 1.2 }), k(1300, { eyeOpen: 0.4, browTilt: 1, smile: -0.4, jitter: 0.3 }), k(2000, { eyeOpen: 0, squint: 1, browKnit: 0.8, jitter: 0.8 }), k(2400, { ...HAND_AT.forehead, hand: 1 })],
