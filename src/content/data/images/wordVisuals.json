@@ -41740,7 +41740,8 @@
    "group": "trottoar",
    "quiz": true,
    "confusableWith": [
-    "s.gångväg.1"
+    "s.gångväg.1",
+    "s.gående.1"
    ]
   },
   {
@@ -41785,8 +41786,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.fotgängare.1"
-   ]
+    "s.fotgängare.1",
+    "s.trottoar.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "d9c41106"
+   }
   },
   {
    "senseId": "s.övergångsställe.1",
@@ -42118,17 +42125,6 @@
    }
   },
   {
-   "senseId": "s.en-bit.1",
-   "kind": "illustration",
-   "motif": "väg.en-bit",
-   "group": "i-närheten",
-   "quiz": false,
-   "symbol": true,
-   "confusableWith": [
-    "s.runt-hörnet.1"
-   ]
-  },
-  {
    "senseId": "s.i-närheten.1",
    "kind": "illustration",
    "motif": "väg.i-närheten",
@@ -42153,8 +42149,7 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.i-närheten.1",
-    "s.en-bit.1"
+    "s.i-närheten.1"
    ],
    "blindTest": {
     "result": "pass",
@@ -42811,7 +42806,12 @@
    "symbol": true,
    "confusableWith": [
     "s.förare.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "85bbe703"
+   }
   },
   {
    "senseId": "s.handbroms.1",
@@ -42876,7 +42876,12 @@
    "confusableWith": [
     "s.körfält.1",
     "s.köra-om.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "80ecbcf8"
+   }
   },
   {
    "senseId": "s.köra-om.1",
@@ -42922,7 +42927,12 @@
    "motif": "bil.automatväxlad",
    "group": "automatväxlad",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "0bb22b53"
+   }
   },
   {
    "senseId": "s.manuell-växellåda.1",
@@ -42993,7 +43003,12 @@
    "symbol": true,
    "confusableWith": [
     "s.parkeringsavgift.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "75b1b6dd"
+   }
   },
   {
    "senseId": "s.parkeringsapp.1",
@@ -43135,7 +43150,12 @@
    "confusableWith": [
     "s.mack.1",
     "s.pump.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "59263f18"
+   }
   },
   {
    "senseId": "s.mack.1",
@@ -43327,7 +43347,12 @@
    "confusableWith": [
     "s.halka-noun.1",
     "s.väglag.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "c8d5dfbf"
+   }
   },
   {
    "senseId": "s.väglag.1",
@@ -43391,7 +43416,12 @@
    "symbol": true,
    "confusableWith": [
     "s.väglag.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "a2cd001a"
+   }
   },
   {
    "senseId": "s.sladda.1",
@@ -43465,7 +43495,12 @@
    "symbol": true,
    "confusableWith": [
     "s.påbudsskylt.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "4d7b4392"
+   }
   },
   {
    "senseId": "s.återvändsgata.1",
@@ -43483,7 +43518,12 @@
    "symbol": true,
    "confusableWith": [
     "s.förbudsskylt.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "fc77da63"
+   }
   },
   {
    "senseId": "s.parkering-förbjuden.1",
@@ -43494,7 +43534,12 @@
    "symbol": true,
    "confusableWith": [
     "s.stannande-förbjudet.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "b9be2390"
+   }
   },
   {
    "senseId": "s.stannande-förbjudet.1",
@@ -43505,7 +43550,12 @@
    "symbol": true,
    "confusableWith": [
     "s.parkering-förbjuden.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.21.0",
+    "hash": "74ae2eec"
+   }
   },
   {
    "senseId": "s.huvudled.1",
