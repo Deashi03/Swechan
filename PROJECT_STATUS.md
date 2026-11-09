@@ -1,8 +1,16 @@
 # Projektstatus – överlämning
 
-**Version:** 0.26.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.26 utvecklades i grenen `claude/swechan-0.26`)
+**Version:** 0.27.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.27 utvecklades i grenen `claude/swechan-0.27`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.27 – släppt 2026-11-09 (modulbilder för Vardag, Människan och Samhälle)
+
+- **Gjort:** alla katalogmoduler i R01 *Vardag & hem*, R02 *Människan & hälsa* och R03 *Samhälle* har en egen illustration (756 av 2 016). Motiven finns i `src/ui/art/moduleArtR01.ts`–`moduleArtR03.ts`, med kopplingen `R0x_MODULE_MOTIF` i katalogordning.
+- **Nästa steg (0.28 och framåt):** fortsätt med R04 *Historia & kultur* (HIS), R05 *Natur* (NAT), R06 *Vetenskap* (VET), R07 *Teknik* (TEK) och R08 *Kultur & fritid* (KUL), 252 moduler var. Gör en fil `moduleArtR0x.ts` per rotområde och utöka testet för täckning.
+- **Kom ihåg:**
+  - Granska varje rotområde i ett kontaktark innan commit. Ett snabbt sätt: rendera `artFor(catalogId)` med `renderArt` för alla moduler i rotområdet.
+  - En bågbana (`A`) där radien är för liten för avståndet ger en tom yta. Räkna ut skärningspunkterna, som för månskäran i `m2_sleepwake`.
 
 ## 0.26 – släppt 2026-11-09 (ämnesgrupperna har bilder)
 
