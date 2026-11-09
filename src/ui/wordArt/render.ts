@@ -17,6 +17,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'barn.': () => import('./parenting').then((m) => m.PARENTING_MOTIFS),
   'samt.': () => import('./conversation').then((m) => m.CONVERSATION_MOTIFS),
   'lär.': () => import('./learning').then((m) => m.LEARNING_MOTIFS),
+  'ung.': () => import('./childhood').then((m) => m.CHILDHOOD_MOTIFS),
   'kär.': () => import('./love').then((m) => m.LOVE_MOTIFS),
   'livs.': () => import('./groceries').then((m) => m.GROCERY_MOTIFS),
   'kök.': () => import('./kitchen').then((m) => m.KITCHEN_MOTIFS),
