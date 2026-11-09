@@ -634,11 +634,275 @@ export const MOTIFS: Record<string, Motif> = {
     c(40, 26, 13, 'light'), c(40, 26, 13, 'line'), p('M49 35 L58 46', 'line'),
     p('M36 22 L44 30 M44 22 L36 30', 'accent2'),
   ] },
+
+  // ── sub-areas (överämnen, 0.25) ─────────────────────────────
+  ar_key: { parts: [
+    c(22, 24, 13, 'main'), c(22, 24, 5, 'light'),
+    q(31, 21, 26, 6, 'main', 2), q(46, 27, 4, 8, 'main', 1), q(52, 27, 4, 6, 'main', 1),
+    c(18, 20, 2, 'accent'),
+  ] },
+  ar_meal: { parts: [
+    c(32, 34, 17, 'light'), c(32, 34, 12, 'main'), c(28, 31, 3, 'accent', H.green), c(36, 36, 4, 'accent', H.orange),
+    p('M9 14 V28 M6 14 V24 Q6 28 9 28 Q12 28 12 24 V14 M9 28 V54', 'line'),
+    p('M55 14 C49 18 49 30 55 32 V54', 'line'),
+  ] },
+  ar_tshirt: { parts: [
+    p('M22 14 L14 18 L8 28 L16 32 L19 27 V52 H45 V27 L48 32 L56 28 L50 18 L42 14 C40 20 24 20 22 14 Z', 'main'),
+    p('M22 14 C24 20 40 20 42 14', 'line'),
+    c(32, 36, 4, 'accent'),
+  ] },
+  ar_alarm: { parts: [
+    c(32, 35, 18, 'main'), c(32, 35, 14, 'light'),
+    c(17, 15, 6, 'accent'), c(47, 15, 6, 'accent'),
+    p('M32 35 V25 M32 35 L39 40', 'line'),
+    p('M20 52 L16 57 M44 52 L48 57', 'line'),
+  ] },
+  ar_bag: { parts: [
+    p('M14 24 H50 L46 54 H18 Z', 'main'),
+    p('M24 24 V18 C24 10 40 10 40 18 V24', 'line'),
+    q(14, 24, 36, 6, 'accent', 1), c(32, 40, 5, 'light'),
+  ] },
+  ar_bus: { parts: [
+    q(12, 10, 40, 40, 'main', 6), q(16, 16, 32, 14, 'light', 2), q(16, 12, 32, 3, 'accent', 1),
+    c(21, 40, 3, 'accent'), c(43, 40, 3, 'accent'),
+    q(15, 50, 8, 6, 'accent2', 2), q(41, 50, 8, 6, 'accent2', 2),
+  ] },
+  ar_hand: { parts: [
+    p('M22 56 L18 36 C17 32 21 30 23 34 L25 38 V14 C25 10 31 10 31 14 V30 V11 C31 7 37 7 37 11 V30 V14 C37 10 43 10 43 14 V32 V20 C43 16 49 16 49 20 V40 C49 50 44 56 38 56 Z', 'main'),
+    p('M31 30 V24 M37 30 V24 M43 32 V28', 'line'),
+  ] },
+  ar_stetho: { parts: [
+    p('M18 10 V26 C18 36 34 36 34 26 V10', 'line'),
+    c(18, 9, 3, 'accent'), c(34, 9, 3, 'accent'),
+    p('M26 34 V42 C26 52 44 54 46 42 V36', 'line'),
+    c(46, 32, 7, 'main'), c(46, 32, 3, 'light'),
+  ] },
+  ar_masks: { parts: [
+    p('M8 16 C16 12 26 12 34 16 C34 32 28 40 21 40 C14 40 8 32 8 16 Z', 'main'),
+    p('M14 24 Q16 22 18 24 M24 24 Q26 22 28 24 M15 31 Q21 36 27 31', 'line'),
+    p('M30 26 C38 22 48 22 56 26 C56 42 50 50 43 50 C36 50 30 42 30 26 Z', 'accent'),
+    p('M36 34 Q38 36 40 34 M46 34 Q48 36 50 34 M37 44 Q43 39 49 44', 'line'),
+  ] },
+  ar_family: { parts: [
+    c(18, 18, 6, 'main'), p('M9 50 V34 C9 28 27 28 27 34 V50 Z', 'main'),
+    c(46, 18, 6, 'accent'), p('M37 50 V34 C37 28 55 28 55 34 V50 Z', 'accent'),
+    c(32, 31, 5, 'accent2'), p('M25 54 V43 C25 38 39 38 39 43 V54 Z', 'accent2'),
+  ] },
+  ar_speech: { parts: [
+    p('M8 12 H38 Q42 12 42 16 V32 Q42 36 38 36 H20 L12 43 V36 H8 Q4 36 4 32 V16 Q4 12 8 12 Z', 'main'),
+    p('M26 26 H56 Q60 26 60 30 V44 Q60 48 56 48 H54 V55 L46 48 H26 Q22 48 22 44 V30 Q22 26 26 26 Z', 'accent'),
+    c(33, 37, 2, 'light'), c(41, 37, 2, 'light'), c(49, 37, 2, 'light'),
+  ] },
+  ar_growth: { parts: [
+    q(6, 48, 52, 5, 'main', 2),
+    p('M14 48 V42 M10 40 C12 38 14 40 14 42 C14 40 16 38 18 40', 'line'),
+    p('M30 48 V34 M30 40 C26 36 22 38 22 40 C26 42 28 40 30 40 M30 36 C34 32 38 34 38 36 C34 38 32 36 30 36', 'line'),
+    p('M48 48 V18', 'line'), p('M48 30 C40 24 36 28 36 30 C40 34 46 32 48 30 Z', 'accent', H.leaf), p('M48 22 C56 16 60 20 60 22 C56 26 50 24 48 22 Z', 'accent', H.leaf),
+    c(48, 14, 5, 'accent2'),
+  ] },
+  ar_ballot: { parts: [
+    q(12, 30, 40, 24, 'main', 3),
+    q(24, 10, 16, 22, 'light', 1.5), p('M28 20 L31 24 L37 15', 'line'),
+    q(18, 30, 28, 3, 'accent', 1),
+  ] },
+  ar_scales: { parts: [
+    q(30, 12, 4, 38, 'main', 1), q(20, 50, 24, 5, 'main', 2),
+    p('M12 18 H52', 'line'), c(32, 12, 3, 'accent'),
+    p('M12 18 L6 34 M12 18 L18 34 M52 18 L46 34 M52 18 L58 34', 'line'),
+    p('M5 34 Q12 42 19 34 Z', 'accent'), p('M45 34 Q52 42 59 34 Z', 'accent'),
+  ] },
+  ar_briefcase: { parts: [
+    q(8, 20, 48, 32, 'main', 4), p('M24 20 V15 Q24 12 27 12 H37 Q40 12 40 15 V20', 'line'),
+    q(8, 32, 48, 4, 'accent', 0), q(28, 30, 8, 8, 'accent2', 1.5),
+  ] },
+  ar_gradcap: { parts: [
+    p('M4 26 L32 14 L60 26 L32 38 Z', 'main'),
+    p('M16 31 V44 C22 50 42 50 48 44 V31 L32 38 Z', 'accent'),
+    p('M54 28 V44', 'line'), c(54, 46, 3, 'accent2'),
+  ] },
+  ar_skyline: { parts: [
+    q(6, 30, 12, 24, 'main', 1), q(18, 18, 12, 36, 'accent', 1), q(30, 26, 10, 28, 'main', 1), q(40, 12, 10, 42, 'accent2', 1), q(50, 34, 8, 20, 'main', 1),
+    q(21, 22, 2.5, 3, 'light', 0.5), q(25, 22, 2.5, 3, 'light', 0.5), q(21, 29, 2.5, 3, 'light', 0.5), q(25, 29, 2.5, 3, 'light', 0.5),
+    q(43, 17, 2.5, 3, 'light', 0.5), q(43, 24, 2.5, 3, 'light', 0.5), q(43, 31, 2.5, 3, 'light', 0.5),
+  ] },
+  ar_newspaper: { parts: [
+    p('M50 20 H56 V50 Q56 54 52 54 H50', 'accent2'),
+    q(10, 12, 40, 42, 'main', 2),
+    q(14, 16, 32, 7, 'light', 1), q(14, 27, 14, 12, 'accent', 1),
+    p('M32 29 H46 M32 34 H46 M32 39 H46 M14 45 H46 M14 50 H40', 'line'),
+  ] },
+  ar_hourglass: { parts: [
+    q(14, 8, 36, 5, 'main', 2), q(14, 51, 36, 5, 'main', 2),
+    p('M18 13 H46 C46 24 36 28 34 32 C36 36 46 40 46 51 H18 C18 40 28 36 30 32 C28 28 18 24 18 13 Z', 'light'),
+    p('M22 18 H42 C40 24 34 26 32 30 C30 26 24 24 22 18 Z', 'accent'),
+    p('M22 51 C24 44 30 42 32 40 C34 42 40 44 42 51 Z', 'accent'),
+  ] },
+  ar_helmet: { parts: [
+    p('M10 22 C14 6 50 6 54 22 C40 16 24 16 10 22 Z', 'accent'),
+    p('M14 30 C14 16 50 16 50 30 V46 L44 56 H36 V40 H28 V56 H20 L14 46 Z', 'main'),
+    q(28, 30, 8, 10, 'line', 1), p('M20 34 H28 M36 34 H44', 'line'),
+    c(32, 12, 2, 'light'),
+  ] },
+  ar_oillamp: { parts: [
+    p('M8 38 C8 30 24 26 36 30 L52 30 C56 30 56 36 52 36 L44 38 C40 46 16 48 8 38 Z', 'main'),
+    p('M8 34 C2 34 2 42 8 42', 'line'),
+    p('M52 30 C50 22 54 16 56 12 C60 18 60 26 54 30 Z', 'accent', H.orange), p('M54 28 C53 24 55 20 56 18 C58 22 58 26 55 28 Z', 'light'),
+    q(18, 46, 22, 4, 'accent2', 2),
+  ] },
+  ar_bust: { parts: [
+    q(18, 50, 28, 6, 'main', 1), q(22, 44, 20, 6, 'main', 1),
+    p('M24 44 C20 38 22 32 26 30 C20 26 20 12 32 10 C42 10 46 18 44 26 L47 30 L43 31 C44 38 40 40 36 40 L38 44 Z', 'light'),
+    p('M26 18 C28 12 40 12 42 20', 'accent'),
+    c(40, 22, 1.4, 'line'),
+  ] },
+  ar_amphora: { parts: [
+    p('M26 8 H38 V14 C48 20 50 32 44 44 L40 52 H24 L20 44 C14 32 16 20 26 14 Z', 'main'),
+    p('M26 16 C18 16 16 26 22 28 M38 16 C46 16 48 26 42 28', 'line'),
+    p('M20 30 H44', 'line'), q(24, 52, 16, 4, 'accent', 1),
+    p('M50 46 L58 38 L60 40 L52 48 Z', 'accent2'), p('M48 50 L52 46 L54 48 L50 52 Z', 'light'),
+  ] },
+  ar_pyramid: { parts: [
+    q(2, 50, 60, 6, 'accent2', 2),
+    p('M10 50 L30 18 L50 50 Z', 'main'), p('M30 18 L50 50 L38 50 Z', 'accent'),
+    p('M40 50 L50 34 L60 50 Z', 'main'),
+    c(50, 14, 5, 'accent2'),
+  ] },
+  ar_crystal: { parts: [
+    q(4, 46, 56, 10, 'accent2', 2),
+    p('M20 46 L16 28 L24 14 L32 28 L28 46 Z', 'main'), p('M24 14 L32 28 L28 46 L24 30 Z', 'light'),
+    p('M34 46 L32 32 L40 20 L48 32 L44 46 Z', 'accent'), p('M40 20 L48 32 L44 46 L40 33 Z', 'light'),
+  ] },
+  ar_weather: { parts: [
+    c(40, 20, 9, 'accent2'),
+    p('M14 40 C6 40 6 28 15 28 C16 18 30 16 34 24 C42 20 52 26 48 34 C56 34 56 40 50 40 Z', 'main'),
+    p('M18 46 L15 54 M28 46 L25 54 M38 46 L35 54', 'line'),
+  ] },
+  ar_paw: { parts: [
+    p('M32 32 C22 32 16 42 18 48 C20 54 28 52 32 50 C36 52 44 54 46 48 C48 42 42 32 32 32 Z', 'main'),
+    c(16, 26, 5, 'main'), c(26, 16, 5, 'main'), c(38, 16, 5, 'main'), c(48, 26, 5, 'main'),
+    c(30, 42, 2, 'light'),
+  ] },
+  ar_leafflower: { parts: [
+    p('M32 56 V28', 'line'),
+    p('M32 44 C22 36 12 40 10 44 C18 50 28 48 32 44 Z', 'main', H.leaf), p('M32 38 C40 30 50 32 52 36 C46 42 38 42 32 38 Z', 'main', H.leaf),
+    c(24, 18, 5, 'accent2'), c(40, 18, 5, 'accent2'), c(32, 10, 5, 'accent2'), c(32, 26, 5, 'accent2'), c(32, 18, 5, 'accent'),
+  ] },
+  ar_ecoglobe: { parts: [
+    c(28, 36, 18, 'main', H.blue),
+    p('M16 30 C22 28 24 34 30 34 C34 34 34 42 28 44 C22 46 18 40 14 40 Z M34 22 C40 20 44 26 42 30 C38 30 36 26 34 22 Z', 'accent', H.green),
+    p('M44 22 C44 12 52 6 60 6 C60 16 54 22 44 22 Z', 'accent', H.leaf), p('M44 22 C48 16 52 12 56 10', 'line'),
+  ] },
+  ar_worldmap: { parts: [
+    c(32, 32, 22, 'light'),
+    p('M18 26 C22 22 28 24 28 30 C28 34 22 36 20 32 Z M36 34 C40 30 46 32 46 38 C44 44 38 44 36 40 Z', 'main'),
+    p('M10 32 H54 M32 10 V54 M14 20 C24 24 40 24 50 20 M14 44 C24 40 40 40 50 44 M32 10 C22 18 22 46 32 54 M32 10 C42 18 42 46 32 54', 'line'),
+  ] },
+  ar_mathsigns: { parts: [
+    q(8, 8, 22, 22, 'main', 4), q(34, 8, 22, 22, 'accent', 4), q(8, 34, 22, 22, 'accent', 4), q(34, 34, 22, 22, 'main', 4),
+    p('M19 13 V25 M13 19 H25', 'line'), p('M39 19 H51', 'line'),
+    p('M14 40 L24 50 M24 40 L14 50', 'line'), p('M39 45 H51', 'line'), c(45, 40, 1.6, 'line'), c(45, 50, 1.6, 'line'),
+  ] },
+  ar_curve: { parts: [
+    q(8, 8, 48, 48, 'light', 4),
+    p('M14 46 C24 46 26 18 36 18 C44 18 44 36 52 30 L52 50 L14 50 Z', 'accent'),
+    p('M14 50 H52 M14 50 V12', 'line'),
+    p('M14 46 C24 46 26 18 36 18 C44 18 44 36 52 30', 'line'),
+  ] },
+  ar_magnet: { parts: [
+    p('M12 12 H24 V34 C24 40 40 40 40 34 V12 H52 V34 C52 48 44 54 32 54 C20 54 12 48 12 34 Z', 'main'),
+    q(12, 12, 12, 8, 'light', 1), q(40, 12, 12, 8, 'light', 1),
+    p('M6 6 L10 10 M18 4 V8 M58 6 L54 10 M46 4 V8', 'line'),
+  ] },
+  ar_molecule: { parts: [
+    p('M20 20 L34 32 L50 22 M34 32 L32 50 M34 32 L14 42', 'line'),
+    c(34, 32, 8, 'main'), c(20, 20, 6, 'accent'), c(50, 22, 6, 'accent2'), c(32, 50, 6, 'accent'), c(14, 42, 5, 'accent2'),
+    c(31, 29, 2, 'light'),
+  ] },
+  ar_dna: { parts: [
+    q(22, 12, 20, 3, 'main', 1.5), q(26, 22, 12, 3, 'accent', 1.5), q(22, 42, 20, 3, 'main', 1.5), q(26, 50, 12, 3, 'accent', 1.5),
+    p('M20 6 C44 18 44 26 20 32 C-4 38 44 46 20 58', 'line'),
+    p('M44 6 C20 18 20 26 44 32 C68 38 20 46 44 58', 'line'),
+  ] },
+  ar_planet: { parts: [
+    c(32, 32, 14, 'main'),
+    p('M8 40 C2 34 30 22 50 20 C62 18 62 26 56 30', 'line'),
+    p('M10 42 C16 46 44 38 56 30', 'line'),
+    c(28, 28, 3, 'light'), c(12, 12, 2, 'accent2'), c(52, 50, 2.4, 'accent2'), c(54, 10, 1.6, 'accent2'),
+  ] },
+  ar_wifi: { parts: [
+    p('M8 26 C22 12 42 12 56 26', 'line'), p('M16 34 C26 24 38 24 48 34', 'line'), p('M24 42 C30 36 34 36 40 42', 'line'),
+    c(32, 50, 5, 'main'),
+  ] },
+  ar_chip: { parts: [
+    q(16, 16, 32, 32, 'main', 4), q(23, 23, 18, 18, 'light', 2),
+    p('M22 10 V16 M32 10 V16 M42 10 V16 M22 48 V54 M32 48 V54 M42 48 V54 M10 22 H16 M10 32 H16 M10 42 H16 M48 22 H54 M48 32 H54 M48 42 H54', 'line'),
+    c(32, 32, 4, 'accent'),
+  ] },
+  ar_battery: { parts: [
+    q(10, 18, 40, 28, 'main', 4), q(50, 26, 5, 12, 'main', 1.5), q(14, 22, 32, 20, 'light', 2),
+    p('M32 24 L24 34 H31 L28 41 L38 30 H31 Z', 'accent'),
+  ] },
+  ar_gear: { parts: [
+    p('M28 6 H36 L37 13 L43 15 L48 10 L54 16 L49 21 L51 27 L58 28 V36 L51 37 L49 43 L54 48 L48 54 L43 49 L37 51 L36 58 H28 L27 51 L21 49 L16 54 L10 48 L15 43 L13 37 L6 36 V28 L13 27 L15 21 L10 16 L16 10 L21 15 L27 13 Z', 'main'),
+    c(32, 32, 9, 'light'), c(32, 32, 4, 'accent'),
+  ] },
+  ar_bridge: { parts: [
+    q(2, 50, 60, 6, 'accent2', 1),
+    q(16, 10, 5, 40, 'main', 1), q(43, 10, 5, 40, 'main', 1), q(2, 36, 60, 5, 'accent', 1),
+    p('M2 22 C10 34 14 34 18 12 C26 32 38 32 46 12 C50 34 54 34 62 22', 'line'),
+    p('M26 24 V36 M32 27 V36 M38 24 V36', 'line'),
+  ] },
+  ar_plane: { parts: [
+    p('M28 32 L18 14 H25 L40 31 Z', 'accent'), p('M28 35 L18 52 H25 L40 36 Z', 'accent'),
+    p('M8 34 C8 30 46 28 56 32 C46 36 8 38 8 34 Z', 'main'),
+    p('M10 32 L6 22 H11 L17 31 Z', 'accent2'),
+    c(48, 32, 1.6, 'light'), c(44, 32, 1.6, 'light'),
+  ] },
+  ar_quill: { parts: [
+    q(32, 46, 22, 10, 'accent2', 2), q(34, 42, 18, 6, 'accent', 1.5),
+    p('M50 6 C30 10 18 28 16 46 C26 34 42 22 50 6 Z', 'main'),
+    p('M50 6 C40 20 28 34 16 46 L12 54', 'line'),
+  ] },
+  ar_note: { parts: [
+    q(24, 12, 26, 6, 'main', 1),
+    p('M24 44 V14 M50 8 V38', 'line'),
+    c(19, 46, 7, 'main'), c(45, 40, 7, 'accent'),
+  ] },
+  ar_frame: { parts: [
+    q(8, 10, 48, 44, 'main', 3), q(14, 16, 36, 32, 'light', 1),
+    p('M14 44 L26 28 L34 38 L40 32 L50 44 V48 H14 Z', 'accent', H.green), c(42, 23, 4, 'accent2'),
+  ] },
+  ar_ball: { parts: [
+    c(32, 32, 22, 'light'),
+    p('M32 22 L41 28 L38 39 H26 L23 28 Z', 'main'),
+    p('M32 10 V22 M41 28 L52 24 M38 39 L45 50 M26 39 L19 50 M23 28 L12 24 M10 32 A22 22 0 1 1 54 32 A22 22 0 1 1 10 32', 'line'),
+  ] },
+  ar_dice: { parts: [
+    q(8, 22, 28, 28, 'main', 5), c(15, 29, 2.4, 'light'), c(22, 36, 2.4, 'light'), c(29, 43, 2.4, 'light'),
+    q(32, 10, 24, 24, 'accent', 5), c(38, 16, 2.2, 'light'), c(50, 16, 2.2, 'light'), c(38, 28, 2.2, 'light'), c(50, 28, 2.2, 'light'),
+  ] },
+  ar_tent: { parts: [
+    q(2, 50, 60, 6, 'accent2', 2, H.green),
+    p('M8 50 L30 14 L52 50 Z', 'main'), p('M30 14 L38 50 H24 Z', 'light'),
+    p('M30 14 L26 6 M30 14 L34 6', 'line'),
+    p('M46 50 L56 34 L60 50 Z', 'accent', H.green),
+  ] },
 };
 
 /** Motif per root area (R01…R08). */
 export const ROOT_MOTIF: Record<string, string> = {
   R01: 'house', R02: 'heart', R03: 'institution', R04: 'book', R05: 'mountain', R06: 'flask', R07: 'laptop', R08: 'palette',
+};
+/** Motif per sub-area (överämne, R01-A01 …), 0.25. */
+export const AREA_MOTIF: Record<string, string> = {
+  'R01-A01': 'ar_key', 'R01-A02': 'ar_meal', 'R01-A03': 'ar_tshirt', 'R01-A04': 'ar_alarm', 'R01-A05': 'ar_bag', 'R01-A06': 'ar_bus',
+  'R02-A01': 'ar_hand', 'R02-A02': 'ar_stetho', 'R02-A03': 'ar_masks', 'R02-A04': 'ar_family', 'R02-A05': 'ar_speech', 'R02-A06': 'ar_growth',
+  'R03-A01': 'ar_ballot', 'R03-A02': 'ar_scales', 'R03-A03': 'ar_briefcase', 'R03-A04': 'ar_gradcap', 'R03-A05': 'ar_skyline', 'R03-A06': 'ar_newspaper',
+  'R04-A01': 'ar_hourglass', 'R04-A02': 'ar_helmet', 'R04-A03': 'ar_oillamp', 'R04-A04': 'ar_bust', 'R04-A05': 'ar_amphora', 'R04-A06': 'ar_pyramid',
+  'R05-A01': 'ar_crystal', 'R05-A02': 'ar_weather', 'R05-A03': 'ar_paw', 'R05-A04': 'ar_leafflower', 'R05-A05': 'ar_ecoglobe', 'R05-A06': 'ar_worldmap',
+  'R06-A01': 'ar_mathsigns', 'R06-A02': 'ar_curve', 'R06-A03': 'ar_magnet', 'R06-A04': 'ar_molecule', 'R06-A05': 'ar_dna', 'R06-A06': 'ar_planet',
+  'R07-A01': 'ar_wifi', 'R07-A02': 'ar_chip', 'R07-A03': 'ar_battery', 'R07-A04': 'ar_gear', 'R07-A05': 'ar_bridge', 'R07-A06': 'ar_plane',
+  'R08-A01': 'ar_quill', 'R08-A02': 'ar_note', 'R08-A03': 'ar_frame', 'R08-A04': 'ar_ball', 'R08-A05': 'ar_dice', 'R08-A06': 'ar_tent',
 };
 /** Base hue per root area – every module and sub-area inherits it. */
 export const ROOT_HUE: Record<string, number> = {

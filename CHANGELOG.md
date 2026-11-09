@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.25.0 – 2026-11-09
+
+Bilder till katalogens överämnen. I menyn *Kurser* har nu alla 48 överämnen (till exempel *Hem & boende*, *Hälsa & sjukvård*, *Fysik*) en egen illustration, på samma sätt som rotområdena och modulerna.
+
+### Överämnen (48 nya illustrationer)
+- Varje överämne har ett eget motiv i appens platta illustrationsstil, i rotområdets färg. Några exempel: en nyckel (*Hem & boende*), ett stetoskop (*Hälsa & sjukvård*), en valurna (*Politik & demokrati*), ett timglas (*Historiska epoker*), en tass (*Djurvärlden*), en DNA-spiral (*Biologi*), ett kugghjul (*Maskiner & tillverkning*) och ett tält (*Naturupplevelser & reseliv*).
+- Inga motiv innehåller text eller emoji. Inga märken eller logotyper ritas.
+- Ämnesgrupperna (nivån under överämnena) har fortfarande ingen bild.
+
+### Teknik
+- `AREA_MOTIF` i `src/ui/art/motifs.ts` kopplar överämnen (`R01-A01` …) till motiv med prefixet `ar_`. `artFor()` i `Art.tsx` ger nu bild för id:n med sju tecken.
+- Nytt test: alla 48 överämnen i katalogen har en bild, ingen bild används två gånger, och ingen delas med ett rotområde eller en modul.
+- `npm run art:sheet` tar nu med överämnena i kontaktarket.
+
+Service workern är `swechan-v29`.
+
 ## 0.24.0 – 2026-11-09
 
 Fortsättning på bilderna till de färdiga modulerna. Hela överämnet *Känslor & psykologi* (901–957) har nu bilder: 627 av 630 modulord. Nästan alla är symbolbilder, och alla gick igenom blindtestgrinden.

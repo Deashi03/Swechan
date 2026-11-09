@@ -96,7 +96,10 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.24 – Känslor & psykologi har bilder (klar)
 - 627 nya bilder för 901–957, alla symbol- och adjektivbilder blindtestade.
 
-## v0.25 och framåt – två spår per release
+## v0.25 – överämnena har bilder (klar)
+- 48 illustrationer för katalogens överämnen i menyn.
+
+## v0.26 och framåt – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).

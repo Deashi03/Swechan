@@ -1,8 +1,16 @@
 # Projektstatus – överlämning
 
-**Version:** 0.24.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.24 utvecklades i grenen `claude/swechan-0.24`)
+**Version:** 0.25.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.25 utvecklades i grenen `claude/swechan-0.25`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.25 – släppt 2026-11-09 (överämnena har bilder)
+
+- **Gjort:**
+  - Alla 48 överämnen i katalogen har en egen illustration i menyn *Kurser* (`AREA_MOTIF`, motiv `ar_*` i `src/ui/art/motifs.ts`).
+  - Ett test vaktar att alla överämnen har en unik bild som inte delas med rotområden eller moduler.
+- **Nästa steg (0.26):** bilder för ämnesgrupperna (288 st.) om produktägaren vill det, de 14 modulorden utan bild med nya bildidéer, och nya överämnen enligt katalogen.
+- **Kom ihåg:** menybilderna (`src/ui/art`) är ett eget system: 64×64-geometri med färgroller och rotområdets färgton. Det är skilt från ordbilderna i `src/ui/wordArt`.
 
 ## 0.24 – släppt 2026-11-09 (Känslor & psykologi har bilder)
 
