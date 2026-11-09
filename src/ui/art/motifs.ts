@@ -22,6 +22,7 @@ import { R02_MODULE_MOTIF, R02_MODULE_MOTIFS } from './moduleArtR02';
 import { R03_MODULE_MOTIF, R03_MODULE_MOTIFS } from './moduleArtR03';
 import { R04_MODULE_MOTIF, R04_MODULE_MOTIFS } from './moduleArtR04';
 import { R05_MODULE_MOTIF, R05_MODULE_MOTIFS } from './moduleArtR05';
+import { R06_MODULE_MOTIF, R06_MODULE_MOTIFS } from './moduleArtR06';
 
 export const MOTIFS: Record<string, Motif> = {
   // ── root areas ──────────────────────────────────────────────
@@ -900,6 +901,7 @@ export const MOTIFS: Record<string, Motif> = {
   ...R03_MODULE_MOTIFS,
   ...R04_MODULE_MOTIFS,
   ...R05_MODULE_MOTIFS,
+  ...R06_MODULE_MOTIFS,
 };
 
 /** Motif per root area (R01…R08). */
@@ -961,4 +963,5 @@ export const MODULE_MOTIF: Record<string, string> = {
   ...R03_MODULE_MOTIF,
   ...R04_MODULE_MOTIF,
   ...R05_MODULE_MOTIF,
+  ...R06_MODULE_MOTIF,
 };
