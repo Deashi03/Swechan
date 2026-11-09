@@ -8,7 +8,7 @@
 import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, star, type Svg } from './kit';
 import { type Build } from './figures';
 import { HL, T, arm, bolt, cat, cup, flake, heart, note, plane, suitcase, sun } from './people';
-import { P as F, type Mood, greyed } from './blindFix';
+import { P as F, type Mood, drop, greyed } from './blindFix';
 import { checkIcon, houseIcon } from './labelIcons';
 
 // ── Geometry and figures ─────────────────────────────────────────────
@@ -37,11 +37,6 @@ const say = (cx: number, cy: number, w: number, h: number, tx: number, ty: numbe
 };
 /** Bubble beside the head of the figure at x (side 1 = to the right of the head, −1 = to the left); f draws the content at the bubble centre. */
 const sb = (x: number, h: number, side: 1 | -1, w: number, hh: number, f: (cx: number, cy: number) => Svg, dx = 0, dy = 0) => { const k = geo(x, h), cx = x + side * (k.hr + 6 + w / 2) + dx, cy = k.hy - 8 + dy; return say(cx, cy, w, hh, x + side * (k.hr + 1), k.hy, f(cx, cy)); };
-/** Jagged (abrupt) speech bubble. */
-const shout = (cx: number, cy: number, r: number, tx: number, ty: number, inner: Svg = '') => {
-  const pts = Array.from({ length: 16 }, (_, i) => { const a = (i / 16) * Math.PI * 2, rr = i % 2 ? r * 0.74 : r; return `${(cx + Math.cos(a) * rr * 1.25).toFixed(1)} ${(cy + Math.sin(a) * rr).toFixed(1)}`; });
-  return all(path(`M${cx - 3} ${cy + r * 0.6} L${tx} ${ty} L${cx + 5} ${cy + r * 0.5} Z`, C.white, C.ink, 1.4), path(`M${pts.join(' L')} Z`, C.white, C.ink, 1.5), inner);
-};
 
 // ── Icons (about 12 units) ───────────────────────────────────────────
 const q = (x: number, y: number, sz = 13, col: string = C.navy) => T(x, y + sz * 0.36, '?', sz, col);
@@ -75,12 +70,20 @@ const puzzle = (x: number, y: number, s = 1, col: string = C.sky) => g(`translat
 const zz = (x: number, y: number) => all(T(x, y, 'z', 8, C.navy), T(x + 6, y - 5, 'z', 10, C.navy), T(x + 13, y - 11, 'z', 12, C.navy));
 const pin = (x: number, y: number, s = 1, col: string = HL) => g(`translate(${x} ${y}) scale(${s})`, path('M0 8 C-6 0 -6 -8 0 -8 C6 -8 6 0 0 8 Z', col, C.ink, 1.1), circle(0, -3, 2, C.white, null));
 const idea = (x: number, y: number, s = 1, lit = true) => g(`translate(${x} ${y}) scale(${s})`, lit ? path('M-9 -9 l-3 -3 M0 -12 l0 -4 M9 -9 l3 -3', 'none', C.gold, 1.6) : '', circle(0, -2, 6, lit ? C.yellow : C.grey2, C.ink, 1.2), rect(-3, 3.5, 6, 4.5, C.grey, 1, C.ink, 1));
-const info = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, circle(0, 0, 7, C.sky, C.ink, 1.2), T(0, 4.6, 'i', 12, C.white, 900));
 const chain = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-11, -4, 12, 8, 'none', 4, C.ink, 2.2), rect(-1, -4, 12, 8, 'none', 4, HL, 2.2));
 const cake = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-8, -3, 16, 9, '#f6c0d0', 1.5, C.ink, 1.1), rect(-8, -6, 16, 4, C.white, 1.5, C.ink, 1.1), circle(0, -8, 2, C.red, null));
 const pizza = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M0 8 L-8 -6 C-3 -9 3 -9 8 -6 Z', '#f2c14e', C.ink, 1.1), path('M-8 -6 C-3 -9 3 -9 8 -6', 'none', '#c8925a', 2.2), circle(-2, -3, 1.6, C.red, null), circle(2, 1, 1.4, C.red, null));
 const plate2 = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, circle(0, 0, 7, C.white, C.ink, 1.1), circle(0, 0, 4, 'none', C.grey2, 1), line('M-11 -6 L-11 6 M-12.5 -6 L-12.5 -2 M-9.5 -6 L-9.5 -2 M11 6 L11 -6 C13 -4 13 0 11 0', C.ink, 1));
 const lineTalk = (x: number, y: number, w: number) => lines(x, y - 4, w, 3, C.navy);
+/** A large head: 'blank' (no reaction yet), 'oh' (it has sunk in: raised brows, small round mouth) or 'neutral'. */
+const bigHead = (x: number, y: number, r: number, e: 'blank' | 'oh' | 'neutral', hair: string = C.hair) => { const k = r / 20; return all(circle(x, y, r, C.skin, C.ink, 1.8), path(`M${x - r} ${y - 2 * k} C${x - r} ${y - 26 * k} ${x + r} ${y - 26 * k} ${x + r} ${y - 2 * k} C${x + 12 * k} ${y - 12 * k} ${x - 12 * k} ${y - 12 * k} ${x - r} ${y - 2 * k} Z`, hair, C.ink, 1.6),
+  e === 'oh' ? all(path(`M${x - 11 * k} ${y - 6 * k} q4 -5 8 0 M${x + 3 * k} ${y - 6 * k} q4 -5 8 0`, 'none', C.ink, 1.6), circle(x - 7 * k, y + 1 * k, 3 * k, C.white, C.ink, 1), circle(x + 7 * k, y + 1 * k, 3 * k, C.white, C.ink, 1), circle(x - 7 * k, y + 1 * k, 1.4 * k, C.ink, null), circle(x + 7 * k, y + 1 * k, 1.4 * k, C.ink, null), ellipse(x, y + 11 * k, 2.6 * k, 3.2 * k, '#a83a4a', C.ink, 1.2))
+    : all(circle(x - 7 * k, y + 1 * k, 1.8 * k, C.ink, null), circle(x + 7 * k, y + 1 * k, 1.8 * k, C.ink, null), line(`M${x - 5 * k} ${y + 11 * k} L${x + 5 * k} ${y + 11 * k}`, C.ink, 1.6)));
+};
+/** Thought bubble at (cx, cy) with small circles leading to (tx, ty). */
+const thinkB = (cx: number, cy: number, w: number, h: number, tx: number, ty: number, inner: Svg = '') => all(ellipse(cx, cy, w / 2, h / 2, C.white, C.ink, 1.5), circle(cx + (tx - cx) * 0.55, cy + (ty - cy) * 0.6, 2.6, C.white, C.ink, 1.1), circle(cx + (tx - cx) * 0.82, cy + (ty - cy) * 0.85, 1.7, C.white, C.ink, 1), inner);
+const book = (x: number, y: number, h: number, col: string, icon = true) => all(rect(x - 4, y - h, 8, h, col, 1, C.ink, 1.1), icon ? note(x - 0.6, y - h / 2, 0.38, C.white) : '');
+const neutralFig = (x: number, top: string, more: Partial<Build> = {}) => F({ x, top, face: 'neutral', ...more });
 const milk = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-5 -6 L5 -6 L5 9 L-5 9 Z', C.white, C.ink, 1.1), path('M-5 -6 L0 -11 L5 -6 Z', C.white, C.ink, 1.1), rect(-5, 0, 10, 4, C.sky, 0, null));
 
 export const CONVERSATION_MOTIFS: Record<string, Svg> = {
@@ -146,7 +149,7 @@ export const CONVERSATION_MOTIFS: Record<string, Svg> = {
   // hålla med: the second person nods and holds up the same idea as the first, with a check.
   'samt.hålla-med': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), fig(98, C.green, 'smile'), sb(22, 1, 1, 22, 24, (x, y) => idea(x, y + 3, 0.7), 0, -2), sb(98, 1, -1, 30, 24, (x, y) => all(idea(x - 6, y + 3, 0.7), check(x + 8, y, 0.9)), 0, 26), nodM(98)),
   // ha rätt: what she said gets a big green check, and the other gives a thumb up.
-  'samt.ha-rätt': all(ground, fig(26, C.orange, 'laugh', { hairStyle: 'long' }), sb(26, 1, 1, 24, 22, (x, y) => cal(x, y + 1, 0.8, 1)), path('M50 30 L58 38 L76 14', 'none', C.green, 6), path('M50 30 L58 38 L76 14', 'none', C.white, 1.4), fig(96, C.sky, 'smile', { h: 0.9 }), reach(96, 0.9, -1, 80, 58), thumb(80, 56, 1)),
+  'samt.ha-rätt': all(ground, g('translate(74 18) scale(1.1)', path('M-14 6 C-20 6 -20 -4 -13 -4 C-12 -12 -2 -14 2 -8 C6 -14 16 -10 14 -3 C20 -3 20 6 14 6 Z', C.grey2, C.ink, 1.4)), ...[[62, 28], [72, 32], [82, 26], [90, 34], [100, 30], [108, 40], [86, 52], [110, 60], [64, 46], [74, 60]].map(([x, y]) => line(`M${x} ${y} l-2 6`, C.sky, 1.8)), fig(22, C.orange, 'laugh', { hairStyle: 'long', h: 0.86 }), umbrella(30, 18, 1.2, C.purple), sb(22, 0.86, 1, 22, 18, (x, y) => all(g(`translate(${x} ${y - 1}) scale(0.45)`, path('M-14 6 C-20 6 -20 -4 -13 -4 C-12 -12 -2 -14 2 -8 C6 -14 16 -10 14 -3 C20 -3 20 6 14 6 Z', C.grey2, C.ink, 1.4)), line(`M${x - 3} ${y + 4} l-1 3 M${x + 3} ${y + 4} l-1 3`, C.sky, 1.4)), 0, 0), fig(98, C.sky, 'blush'), drop(90, 50), drop(106, 58), drop(100, 76), sb(98, 1, -1, 20, 18, (x, y) => check(x, y, 1), 0, 32), nodM(98)),
   // det stämmer: the second bubble is the missing puzzle piece – it fits the first, with a check.
   'samt.det-stämmer': all(ground, fig(22, C.orange, 'calm', { hairStyle: 'long' }), fig(98, C.green, 'smile'), sb(22, 1, 1, 30, 22, (x, y) => all(puzzle(x - 4, y + 1, 0.8, C.sky), q(x + 9, y, 11)), 0, -2), sb(98, 1, -1, 30, 22, (x, y) => all(g(`translate(${x - 6} ${y + 1}) rotate(180)`, puzzle(0, 0, 0.8, C.sky)), check(x + 8, y, 0.9)), 0, 26), nodM(98)),
   // helt rätt: a bullseye – the arrow sits exactly in the middle, with a check and stars.
@@ -156,7 +159,7 @@ export const CONVERSATION_MOTIFS: Record<string, Svg> = {
   // mm: the listener nods and gives only a small humming sound while the other one talks.
   'samt.mm': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), sb(22, 1, 1, 30, 22, (x, y) => lineTalk(x, y, 20), 0, -2), fig(98, C.green, 'calm'), nodM(98), sb(98, 1, -1, 18, 14, (x, y) => path(`M${x - 6} ${y} q3 -4 6 0 q3 4 6 0`, 'none', C.navy, 1.6), 0, 28)),
   // jaha: news is given (the meeting moves to the next day) – the listener takes it in: “I see”.
-  'samt.jaha': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), sb(22, 1, 1, 34, 22, (x, y) => all(cal(x - 7, y + 1, 0.7, 1), arrow(x + 2, y + 1, x + 8, y + 1, HL, 1.4), cal(x + 13, y + 1, 0.5, 2)), 0, -2), fig(98, C.green, 'calm'), sb(98, 1, -1, 28, 20, (x, y) => all(info(x - 5, y, 0.8), check(x + 7, y, 0.7)), 0, 26)),
+  'samt.jaha': all(say(60, 16, 46, 22, 10, 40, all(cal(48, 17, 0.7, 1), arrow(57, 17, 64, 17, HL, 1.4), cal(72, 17, 0.7, 2))), rect(6, 44, 46, 66, '#eef2f5', 6, C.grey2, 1.4), rect(68, 44, 46, 66, '#fff6e0', 6, C.grey2, 1.4), bigHead(29, 80, 17, 'blank'), dots(29, 54, C.grey), arrow(54, 80, 66, 80, HL, 2.4), bigHead(91, 80, 17, 'oh'), path('M70 70 q-3 6 0 12 M112 70 q3 6 0 12', 'none', HL, 1.5), path('M86 54 q5 -3 10 0', 'none', C.ink, 1.2)),
   // absolut: an enthusiastic, strong yes – both arms up, a huge check and sparkles.
   'samt.absolut': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long', h: 0.9 }), sb(22, 0.9, 1, 28, 20, (x, y) => all(walker(x - 5, y + 2, 1), q(x + 7, y, 12)), 0, -2), fig(92, C.green, 'laugh'), reach(92, 1, -1, 78, 14), reach(92, 1, 1, 106, 14), path('M44 74 L54 84 L74 58', 'none', C.green, 6), path('M44 74 L54 84 L74 58', 'none', C.white, 1.4), sparkle(70, 30, 4), sparkle(112, 34, 4), sparkle(92, 4, 3)),
   // visst: “may I borrow your pen?” – the pen is handed over with a friendly smile.
@@ -174,7 +177,7 @@ export const CONVERSATION_MOTIFS: Record<string, Svg> = {
 
   // ── Avbryta och återuppta ────────────────────────────────────────
   // förlåt att jag avbryter: two are talking; a third steps in with a small raised hand and an embarrassed smile.
-  'samt.förlåt-att-jag-avbryter': all(ground, fig(18, C.orange, 'smile', { hairStyle: 'long', h: 0.92 }), fig(102, C.green, 'smile', { h: 0.92 }), say(30, 10, 24, 16, 22, 22, lines(30, 7, 14, 2, C.grey)), say(90, 10, 24, 16, 98, 22, lines(90, 7, 14, 2, C.grey)), fig(60, C.purple, 'blush', { hairStyle: 'long' }), reach(60, 1, -1, 44, 26), path('M38 20 l-3 -3 M37 27 l-4 0', 'none', HL, 1.2), sb(60, 1, 1, 18, 18, (x, y) => ex(x, y, 13), -4, 18)),
+  'samt.förlåt-att-jag-avbryter': all(ground, fig(22, C.green, 'calm'), say(52, 14, 40, 22, 32, 22, all(lines(46, 8, 26, 2, C.navy), line('M36 17 L54 17', C.navy, 1.6), path('M58 10 l3 4 l-3 4 l3 4', 'none', HL, 1.6))), g('rotate(-5 94 112)', fig(94, C.purple, 'blush', { hairStyle: 'long' }), reach(94, 1, 1, 108, 24), path('M104 12 l2 -3 M110 12 l1 -4', 'none', HL, 1.2)), path('M80 34 c2 3 -2 4 0 6', 'none', C.sky, 1.6), circle(81, 41, 1.4, C.sky, null), sb(92, 1, -1, 18, 16, (x, y) => all(T(x - 3, y + 4, '!', 11, HL), path(`M${x + 2} ${y - 3} q3 3 0 6`, 'none', C.navy, 1.2)), -8, 34)),
   // prata i munnen på varandra: three people talk at the same time – the bubbles crash into each other.
   'samt.prata-i-munnen-på-varandra': all(ground, fig(18, C.orange, 'angry', { hairStyle: 'long', h: 0.86 }), fig(60, C.green, 'laugh', { h: 0.9 }), fig(102, C.purple, 'angry', { hairStyle: 'long', h: 0.86 }), say(36, 14, 30, 20, 26, 30, lineTalk(36, 14, 20)), say(84, 14, 30, 20, 94, 30, lineTalk(84, 14, 20)), say(60, 6, 28, 12, 60, 18, lines(60, 4, 18, 1, C.navy)), bolt(60, 30, 0.7), path('M48 24 l-4 4 M72 24 l4 4', 'none', HL, 1.6)),
   // få en syl i vädret: two big talkers fill the air; the small person in the middle only gets a tiny squashed bubble.
@@ -206,9 +209,9 @@ export const CONVERSATION_MOTIFS: Record<string, Svg> = {
 
   // ── Visa intresse ────────────────────────────────────────────────
   // visa intresse: she tells about her work; he leans forward, hand at chin, with questions in his eyes.
-  'samt.visa-intresse': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), sb(22, 1, 1, 26, 22, (x, y) => brief(x, y, 1), 0, -2), g('rotate(-6 96 112)', fig(96, C.green, 'smile'), reach(96, 1, -1, 92, 34)), sb(94, 1, -1, 22, 20, (x, y) => all(q(x - 4, y, 13, HL), sparkle(x + 6, y - 4, 3)), -6, 26), path('M66 70 l-6 0 M66 64 l-5 -3 M66 76 l-5 3', 'none', HL, 1.4)),
+  'samt.visa-intresse': all(ground, fig(18, C.orange, 'smile', { hairStyle: 'long' }), say(42, 8, 24, 14, 26, 18, lines(42, 5, 14, 2, C.navy)), g('rotate(-9 62 112)', fig(62, C.green, 'smile'), nodM(62)), path('M48 26 l-8 -2 M48 30 l-8 0', 'none', HL, 1.4), greyed(fig(102, C.grey, 'sleepy', { grey: true, h: 0.92 }), reach(102, 0.92, -1, 96, 60), rect(92, 52, 8, 13, C.dark, 2, C.ink, 1.2), path('M98 34 L104 46', 'none', C.ink, 1))),
   // intressera sig för: someone studies music closely with a magnifier – notes and sparkles everywhere.
-  'samt.intressera-sig-för': all(ground, fig(34, C.purple, 'love', { hairStyle: 'long' }), reach(34, 1, 1, 56, 46), glass(62, 40, 2), note(66, 42, 1.4, C.navy), note(92, 22, 1, C.navy), note(102, 50, 0.9, HL), note(84, 76, 0.8, C.navy), sparkle(86, 40, 4), sparkle(14, 26, 3)),
+  'samt.intressera-sig-för': all(ground, rect(64, 40, 52, 4, C.brown, 1, C.ink, 1.4), rect(64, 74, 52, 4, C.brown, 1, C.ink, 1.4), ...[[70, '#3a6ab0'], [79, C.red], [88, C.green], [104, C.purple], [112, C.orange]].map(([x, c]) => book(x as number, 40, 22, c as string)), ...[[70, C.orange], [79, C.purple], [88, '#3a6ab0'], [97, C.red], [106, C.green]].map(([x, c]) => book(x as number, 74, 22, c as string)), fig(36, C.sky, 'love', { hairStyle: 'long' }), reach(36, 1, 1, 90, 22), g('translate(95 26) rotate(-24)', book(0, 12, 22, C.yellow)), g('translate(16 112) rotate(-12)', ellipse(0, -10, 9, 10, '#c8925a', C.ink, 1.4), circle(0, -10, 2.4, C.ink, null), rect(-2, -44, 4, 26, '#8a5a3a', 1, C.ink, 1.1)), note(14, 28, 1, C.navy), note(58, 58, 0.9, HL), g('translate(56 112)', book(0, 0, 14, C.red), book(9, 0, 14, C.green)), sparkle(60, 12, 3)),
   // jaså: news (she moves north with a suitcase) – the listener raises the eyebrows: oh, really?
   'samt.jaså': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), sb(22, 1, 1, 30, 22, (x, y) => all(suitcase(x - 6, y + 2, C.red), arrow(x + 2, y + 6, x + 10, y - 6, HL, 1.4)), 0, -2), fig(98, C.green, 'shock'), sb(98, 1, -1, 24, 20, (x, y) => all(q(x - 4, y, 14, C.navy), ex(x + 5, y, 14)), 0, 26)),
   // nämen: an unexpected meeting – hands to the cheeks, big smile, a heart and sparkles.
@@ -218,7 +221,7 @@ export const CONVERSATION_MOTIFS: Record<string, Svg> = {
   // vad spännande: a coming trip (plane) – the listener lights up: stars and fireworks in the bubble.
   'samt.vad-spännande': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), sb(22, 1, 1, 24, 20, (x, y) => plane(x, y, 0.6), 0, -2), fig(98, C.green, 'laugh'), sb(98, 1, -1, 28, 24, (x, y) => all(star(x - 6, y + 2, 5, C.gold), ...[0, 60, 120, 180, 240, 300].map((a) => line(`M${(x + 6 + Math.cos((a * Math.PI) / 180) * 3).toFixed(1)} ${(y - 2 + Math.sin((a * Math.PI) / 180) * 3).toFixed(1)} L${(x + 6 + Math.cos((a * Math.PI) / 180) * 7).toFixed(1)} ${(y - 2 + Math.sin((a * Math.PI) / 180) * 7).toFixed(1)}`, HL, 1.4))), 0, 24), sparkle(110, 46, 3), sparkle(70, 70, 3)),
   // hur gick det: he comes back from the match with his ball – she asks how it went.
-  'samt.hur-gick-det': all(ground, fig(26, C.orange, 'smile', { hairStyle: 'long' }), sb(26, 1, 1, 28, 22, (x, y) => all(ball(x - 5, y, 6), q(x + 8, y, 13, HL)), 0, -2), fig(96, C.red, 'smile', { bottom: C.white }), ball(110, 70, 6), reach(96, 1, 1, 108, 66)),
+  'samt.hur-gick-det': all(ground, fig(24, C.orange, 'smile', { hairStyle: 'long' }), thinkB(48, 12, 34, 20, 30, 18, all(cal(40, 12, 0.6, 1), ball(56, 12, 5.4))), sb(24, 1, 1, 22, 20, (x, y) => q(x, y, 15, HL), 0, 24), fig(96, C.red, 'smile', { bottom: C.white }), reach(96, 1, 1, 108, 66), ball(110, 70, 6), sb(96, 1, -1, 20, 16, (x, y) => dots(x, y, C.navy), 0, 6)),
   // vad roligt att höra: good news (got the job) – the listener is happy for her: heart and sun.
   'samt.vad-roligt-att-höra': all(ground, fig(22, C.orange, 'laugh', { hairStyle: 'long' }), sb(22, 1, 1, 28, 22, (x, y) => all(brief(x - 4, y, 0.9), check(x + 8, y - 1, 0.8)), 0, -2), fig(98, C.green, 'laugh'), sb(98, 1, -1, 28, 22, (x, y) => all(heart(x - 6, y + 1, 0.55), sun(x + 7, y, 3.4)), 0, 26)),
   // vad tråkigt att höra: bad news (the cat is ill) – the listener puts a hand to the heart, with a sad face.
@@ -234,13 +237,13 @@ export const CONVERSATION_MOTIFS: Record<string, Svg> = {
   // hursa: a friendly “sorry?” – a smile, a hand cupped at the ear and a question mark.
   'samt.hursa': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), sb(22, 1, 1, 28, 20, (x, y) => lines(x, y - 2, 18, 2, C.grey2), 0, -2), fig(96, C.green, 'smile'), reach(96, 1, 1, 108, 24), path('M106 18 C110 18 112 24 108 30', 'none', C.ink, 1.2), sb(96, 1, -1, 26, 20, (x, y) => all(path(`M${x - 6} ${y - 6} C${x - 12} ${y - 6} ${x - 13} ${y + 6} ${x - 7} ${y + 7}`, C.skin, C.ink, 1.2), q(x + 5, y, 14, C.navy)), 0, 26)),
   // va: an abrupt “what?” – a frown and a jagged bubble with ?!
-  'samt.va': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), sb(22, 1, 1, 28, 20, (x, y) => lines(x, y - 2, 18, 2, C.grey2), 0, -2), fig(96, C.green, 'angry'), shout(70, 50, 12, 88, 30, all(q(66, 50, 16, C.navy), ex(75, 50, 16)))),
+  'samt.va': all(ground, fig(18, C.orange, 'smile', { hairStyle: 'long' }), say(38, 10, 20, 14, 26, 20, lines(38, 7, 10, 2, C.navy)), ...[0, 1, 2].map((i) => path(`M${52 + i * 6} ${30 + i * 2} l4 6 l-4 6 l4 6 l-4 6`, 'none', C.grey, 2)), bolt(58, 76, 0.8), g('rotate(-5 96 112)', fig(96, C.green, 'frown'), reach(96, 1, -1, 82, 24), path('M84 18 C80 18 79 28 84 29', C.skin, C.ink, 1.2)), sb(94, 1, -1, 14, 16, (x, y) => q(x, y, 13, C.navy), -10, 34)),
   // säga om: the same message once more – a grey first bubble, a fresh copy and a circular arrow.
   'samt.säga-om': all(ground, fig(26, C.orange, 'smile', { hairStyle: 'long' }), greyed(sb(26, 1, 1, 26, 20, (x, y) => star(x, y, 6, C.gold), 0, -4)), sb(26, 1, 1, 26, 20, (x, y) => star(x, y, 6, C.gold), 0, 24), path('M72 12 C82 14 84 34 74 40', 'none', HL, 1.8), arrow(76, 38, 71, 41, HL, 1.8), fig(98, C.green, 'calm', { h: 0.9 }), reach(98, 0.9, -1, 88, 32)),
   // mumla: he looks down and talks into his hand – a tiny scribbled bubble; she cannot hear.
   'samt.mumla': all(ground, fig(28, C.green, 'calm'), reach(28, 1, 1, 30, 30), say(54, 30, 16, 12, 38, 30, scribble(55, 30, 8, C.grey)), fig(96, C.orange, 'frown', { hairStyle: 'long' }), reach(96, 1, -1, 84, 24), sb(96, 1, -1, 20, 18, (x, y) => q(x, y, 14), -4, 24)),
   // obegriplig: a page full of strange scribbles; the reader scratches the head.
-  'samt.obegriplig': all(ground, rect(12, 12, 56, 72, C.white, 3, C.ink, 1.8), ...[0, 1, 2, 3, 4, 5].map((i) => scribble(40, 22 + i * 10, 34, C.navy)), fig(92, C.sky, 'frown'), reach(92, 1, 1, 104, 16), q(92, 4, 12, HL), q(110, 34, 10, HL), path('M74 46 L70 50', 'none', C.grey, 1)),
+  'samt.obegriplig': all(ground, rect(8, 8, 66, 86, C.white, 3, C.ink, 2), ...Array.from({ length: 7 }, (_, r) => all(...Array.from({ length: 5 }, (_, c) => { const x = 16 + c * 12, y = 20 + r * 10, t = (r * 5 + c) % 5; return t === 0 ? circle(x, y, 2.6, 'none', C.navy, 1.4) : t === 1 ? path(`M${x - 3} ${y + 3} L${x} ${y - 3} L${x + 3} ${y + 3}`, 'none', C.navy, 1.4) : t === 2 ? path(`M${x - 3} ${y} q1.5 -4 3 0 q1.5 4 3 0`, 'none', C.navy, 1.4) : t === 3 ? path(`M${x - 2} ${y - 3} L${x + 2} ${y - 3} L${x - 2} ${y + 3} L${x + 2} ${y + 3}`, 'none', C.navy, 1.4) : line(`M${x - 3} ${y - 2} L${x + 3} ${y + 2} M${x} ${y - 3} L${x} ${y + 3}`, C.navy, 1.4); }))), glass(46, 52, 2.6), neutralFig(98, C.sky, { h: 0.92 }), sb(98, 0.92, -1, 18, 16, (x, y) => q(x, y, 13, C.grey), 0, 30)),
   // gå över huvudet på: the difficult words fly in an arc high over the listener's head.
   'samt.gå-över-huvudet-på': all(ground, fig(18, C.purple, 'smile', { hairStyle: 'long' }), sb(18, 1, 1, 28, 22, (x, y) => all(T(x - 6, y + 4, 'Σ', 11, C.navy), T(x + 6, y + 4, '∫', 12, C.navy)), 0, -2), line('M56 20 C70 -2 98 -2 112 28', HL, 1.8, '3 3'), arrow(108, 22, 113, 30, HL, 1.8), T(86, 12, '∞', 10, C.navy), fig(84, C.green, 'shock', { h: 0.84 }), q(84, 30, 12, HL)),
   // tappa bort sig: a small figure stands lost in a maze with a question mark.
@@ -262,7 +265,7 @@ export const CONVERSATION_MOTIFS: Record<string, Svg> = {
   // tacka för sig: the guest in a coat says thank you at the door and leaves; the host smiles.
   'samt.tacka-för-sig': all(rect(6, 18, 34, 94, '#a0673d', 2, C.ink, 2), rect(10, 22, 26, 90, '#fff3d6', 1, null), fig(24, C.purple, 'smile', { hairStyle: 'long', h: 0.9 }), fig(78, C.navy, 'smile', { bottom: C.dark }), reach(78, 1, -1, 62, 22), waveM(62, 22), sb(78, 1, 1, 24, 20, (x, y) => all(heart(x - 5, y + 1, 0.5), palm(x + 6, y + 1, 0.55, false)), 0, -2), arrow(98, 104, 114, 104, HL, 2)),
   // trevligt att ses: two friends who know each other hug goodbye – a heart between them.
-  'samt.trevligt-att-ses': all(ground, fig(48, C.orange, 'laugh', { hairStyle: 'long' }), fig(72, C.green, 'laugh'), arm(56, 38, 70, 50), arm(64, 38, 52, 50), heart(60, 10, 0.8), suitcase(20, 104, C.red), sparkle(32, 22, 3), sparkle(90, 22, 3)),
+  'samt.trevligt-att-ses': all(ground, ...[0, 1, 2].map((i) => cal(16 + i * 4, 18 + i * 3, 0.9, -1)), cal(24, 24, 0.9, 6), fig(50, C.orange, 'laugh', { hairStyle: 'long' }), fig(70, C.green, 'laugh'), arm(58, 38, 72, 50), arm(62, 38, 48, 50), heart(60, 10, 0.7), arrow(14, 104, 32, 104, HL, 2), arrow(106, 104, 88, 104, HL, 2), sparkle(94, 20, 4), sparkle(36, 44, 3)),
   // tack för i dag: the lesson is over – the teacher thanks the class at the board while the sun sets.
   'samt.tack-för-i-dag': all(rect(6, 8, 60, 40, '#3d5a4a', 3, C.ink, 2), lines(36, 20, 40, 3, C.white), rect(80, 10, 32, 28, '#ffd9a8', 2, C.ink, 1.6), path('M82 36 Q96 22 110 36 Z', C.orange, null), ground, fig(30, C.purple, 'smile', { hairStyle: 'long' }), sb(30, 1, 1, 22, 18, (x, y) => heart(x, y + 1, 0.5), 2, 30), fig(80, C.green, 'smile', { h: 0.7 }), fig(104, C.orange, 'smile', { h: 0.7 }), rect(86, 92, 12, 10, C.red, 2, C.ink, 1.2), reach(80, 0.7, 1, 88, 94)),
   // ha det bra: he walks away; she waves and wishes him a good time – sun and smile in the bubble.
@@ -270,7 +273,7 @@ export const CONVERSATION_MOTIFS: Record<string, Svg> = {
   // ta hand om dig: a hand on the shoulder and a heart under an umbrella – look after yourself.
   'samt.ta-hand-om-dig': all(ground, fig(36, C.orange, 'smile', { hairStyle: 'long' }), fig(86, C.sky, 'calm', { h: 0.92 }), arm(46, 38, 76, 44), hnd(76, 44), sb(36, 1, 1, 26, 26, (x, y) => all(umbrella(x, y - 2, 0.8, C.purple), heart(x, y + 6, 0.4)), -2, -6)),
   // hälsa till: greetings are sent on – from her, via him, to a third person at home.
-  'samt.hälsa-till': all(ground, fig(22, C.orange, 'smile', { hairStyle: 'long' }), sb(22, 1, 1, 36, 22, (x, y) => all(palm(x - 10, y + 2, 0.6, false), arrow(x - 3, y, x + 4, y, HL, 1.4), houseIcon(x + 11, y, 1, C.navy)), 0, -2), fig(80, C.green, 'smile'), line('M92 52 C104 52 108 60 108 70', HL, 1.6, '2 3'), houseIcon(108, 84, 2, C.navy), circle(108, 84, 2.4, C.yellow, null)),
+  'samt.hälsa-till': all(ground, fig(16, C.orange, 'smile', { hairStyle: 'long', h: 0.92 }), sb(16, 0.92, 1, 24, 18, (x, y) => all(heart(x - 5, y + 1, 0.42), palm(x + 6, y + 2, 0.5, false)), -2, -4), fig(54, C.green, 'smile', { h: 0.92 }), reach(54, 0.92, 1, 68, 62), heart(70, 58, 0.55), line('M74 58 C84 50 92 52 96 62', HL, 1.6, '3 3'), arrow(94, 59, 97, 64, HL, 1.6), path('M86 112 L86 70 L102 58 L118 70 L118 112 Z', '#f2e2c4', C.ink, 1.6), path('M84 72 L102 56 L120 72', 'none', C.red, 3), g('translate(102 58) scale(0.48)', fig(0, C.purple, 'smile', { hairStyle: 'long' })), heart(110, 74, 0.35)),
   // lycka till: she is off to a new job with a briefcase; the friend holds the thumbs (Swedish way) – stars.
   'samt.lycka-till': all(ground, fig(30, C.green, 'laugh'), arm(19, 38, 25, 54), arm(41, 38, 35, 54), all(circle(25, 54, 5.4, C.skin, C.ink, 1.3), line('M22 51 L28 51 M22 54 L28 54 M22 57 L28 57', C.ink, 0.7), path('M21 52 q3 -1 4 2', 'none', C.ink, 1.2)), all(circle(35, 54, 5.4, C.skin, C.ink, 1.3), line('M32 51 L38 51 M32 54 L38 54 M32 57 L38 57', C.ink, 0.7), path('M31 52 q3 -1 4 2', 'none', C.ink, 1.2)), star(60, 40, 5, C.gold), sparkle(54, 24, 3), sparkle(68, 58, 3), fig(90, C.orange, 'smile', { hairStyle: 'long' }), brief(104, 72, 1), arrow(100, 104, 116, 104, HL, 2)),
   // trevlig helg: a Friday wish – the week's last two days light up with a sun; a colleague waves and goes home.
