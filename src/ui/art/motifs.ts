@@ -19,6 +19,7 @@ export const H = { green: 115, leaf: 95, orange: 26, red: 6, yellow: 46, brown: 
 import { GROUP_MOTIFS } from './groupMotifs';
 import { R01_MODULE_MOTIF, R01_MODULE_MOTIFS } from './moduleArtR01';
 import { R02_MODULE_MOTIF, R02_MODULE_MOTIFS } from './moduleArtR02';
+import { R03_MODULE_MOTIF, R03_MODULE_MOTIFS } from './moduleArtR03';
 
 export const MOTIFS: Record<string, Motif> = {
   // ── root areas ──────────────────────────────────────────────
@@ -894,6 +895,7 @@ export const MOTIFS: Record<string, Motif> = {
   ...GROUP_MOTIFS,
   ...R01_MODULE_MOTIFS,
   ...R02_MODULE_MOTIFS,
+  ...R03_MODULE_MOTIFS,
 };
 
 /** Motif per root area (R01…R08). */
@@ -952,4 +954,5 @@ export const MODULE_MOTIF: Record<string, string> = {
   'SWC-VAR-02-03-05': 'whisk', 'SWC-VAR-02-03-06': 'shaker', 'SWC-VAR-02-03-07': 'cloche',
   ...R01_MODULE_MOTIF,
   ...R02_MODULE_MOTIF,
+  ...R03_MODULE_MOTIF,
 };
