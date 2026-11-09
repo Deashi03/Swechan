@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.26.0 – 2026-11-09
+
+Bilder till katalogens ämnesgrupper. I menyn *Kurser* har nu alla 288 ämnesgrupper (nivån under överämnena) en egen illustration.
+
+### Ämnesgrupper (288 nya illustrationer)
+- Varje ämnesgrupp har ett eget motiv i appens platta stil, i rotområdets färg. Några exempel: planlösning (*Bostadstyper & rum*), lunga (*Inre organ*), valbås (*Val & folkomröstningar*), vikingaskepp (*Nordens historia*), älg (*Däggdjur*), prisma (*Ljus & optik*), databas (*Data & algoritmer*) och lägereld (*Friluftsliv*).
+- Religioner visas med byggnader och föremål (kyrka, moské, lotus, menora), världsdelar med enkla siluetter. Inga märken, logotyper, flaggor, text eller emoji.
+
+### Teknik
+- Nya filen `src/ui/art/groupMotifs.ts` innehåller motiven (`tg_*`) och `GROUP_MOTIF`. Motiven slås ihop med `MOTIFS` i `motifs.ts`, och `artFor()` ger bild för ämnesgrupps-id:n (`R01-A01-T01` …).
+- Nytt test: alla 288 ämnesgrupper har en unik bild som inte delas med rotområden, överämnen eller moduler. `npm run art:sheet` tar med ämnesgrupperna.
+
+Service workern är `swechan-v30`.
+
 ## 0.25.0 – 2026-11-09
 
 Bilder till katalogens överämnen. I menyn *Kurser* har nu alla 48 överämnen (till exempel *Hem & boende*, *Hälsa & sjukvård*, *Fysik*) en egen illustration, på samma sätt som rotområdena och modulerna.

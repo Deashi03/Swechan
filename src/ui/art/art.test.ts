@@ -1,6 +1,7 @@
 import { getContent } from '../../content/repository';
 import fs from 'node:fs';
 import { AREA_MOTIF, MOTIFS, MODULE_MOTIF, ROOT_MOTIF } from './motifs';
+import { GROUP_MOTIF } from './groupMotifs';
 import { artFor } from './Art';
 import { renderArt } from './render';
 
@@ -18,6 +19,16 @@ describe('illustrations (0.5)', () => {
     const others = new Set([...Object.values(ROOT_MOTIF), ...Object.values(MODULE_MOTIF)]);
     for (const m of motifs) expect(others.has(m), m).toBe(false);
     for (const k of Object.values(AREA_MOTIF)) expect(MOTIFS[k], k).toBeDefined();
+  });
+  it('every topic group (ämnesgrupp) in the catalog has its own picture, distinct from roots, areas and modules', () => {
+    const catalog = JSON.parse(fs.readFileSync('planning/catalog/swechan-catalog.v1.json', 'utf8')) as { categories: { catalogCategoryId: string }[] };
+    const groups = catalog.categories.map((c) => c.catalogCategoryId).filter((id) => id.length === 11);
+    expect(groups.length).toBe(288);
+    const motifs = groups.map((id) => { const a = artFor(id); expect(a, id).not.toBeNull(); return a!.motif; });
+    expect(new Set(motifs).size).toBe(groups.length);
+    const others = new Set([...Object.values(ROOT_MOTIF), ...Object.values(AREA_MOTIF), ...Object.values(MODULE_MOTIF)]);
+    for (const m of motifs) expect(others.has(m), m).toBe(false);
+    for (const k of Object.values(GROUP_MOTIF)) expect(MOTIFS[k], k).toBeDefined();
   });
   it('no two published modules share a motif, and every referenced motif exists', () => {
     const used = getContent().modules.flatMap((m) => { const a = artFor(m.id); return a ? [a.motif] : []; });

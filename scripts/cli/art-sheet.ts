@@ -1,13 +1,14 @@
-/** Writes an HTML contact sheet of all illustrations (root areas, sub-areas and modules) for visual review. */
+/** Writes an HTML contact sheet of all illustrations (root areas, sub-areas, topic groups and modules) for visual review. */
 import fs from 'node:fs';
 import { AREA_MOTIF, MODULE_MOTIF, ROOT_MOTIF } from '../../src/ui/art/motifs';
+import { GROUP_MOTIF } from '../../src/ui/art/groupMotifs';
 import { artFor } from '../../src/ui/art/Art';
 import { renderArt } from '../../src/ui/art/render';
 import { args } from './_shared';
 
 const catalog = JSON.parse(fs.readFileSync('planning/catalog/swechan-catalog.v1.json', 'utf8')) as { categories: { catalogCategoryId: string; titleSv: string }[]; modules: { catalogId: string; titleSv: string }[] };
 const title = (id: string) => catalog.categories.find((c) => c.catalogCategoryId === id)?.titleSv ?? catalog.modules.find((m) => m.catalogId === id)?.titleSv ?? id;
-const ids = [...Object.keys(ROOT_MOTIF), ...Object.keys(AREA_MOTIF), ...Object.keys(MODULE_MOTIF)];
+const ids = [...Object.keys(ROOT_MOTIF), ...Object.keys(AREA_MOTIF), ...Object.keys(GROUP_MOTIF), ...Object.keys(MODULE_MOTIF)];
 const cells = ids.map((id) => { const a = artFor(id)!; return `<figure>${renderArt(a.motif, a.hue)}<figcaption>${title(id)}</figcaption></figure>`; });
 const out = args()[0] ?? 'art-sheet.html';
 fs.writeFileSync(out, `<!doctype html><meta charset="utf-8"><style>
