@@ -59834,8 +59834,14 @@
    "confusableWith": [
     "s.extrovert.1",
     "s.social.1",
-    "s.sällskaplig.1"
-   ]
+    "s.sällskaplig.1",
+    "s.ta-plats.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "a88db853"
+   }
   },
   {
    "senseId": "s.social.1",
@@ -59848,8 +59854,14 @@
     "s.utåtriktad.1",
     "s.extrovert.1",
     "s.sällskaplig.1",
-    "s.umgås.1"
-   ]
+    "s.umgås.1",
+    "s.småprata.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "18eb0395"
+   }
   },
   {
    "senseId": "s.småprata.1",
@@ -59858,7 +59870,8 @@
    "group": "utåtriktad",
    "quiz": true,
    "confusableWith": [
-    "s.pratsam.1"
+    "s.pratsam.1",
+    "s.social.1"
    ]
   },
   {
@@ -59871,7 +59884,12 @@
    "confusableWith": [
     "s.tillbakadragen.1",
     "s.hålla-sig-i-bakgrunden.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "1fa6e04d"
+   }
   },
   {
    "senseId": "s.blyg.1",
@@ -59883,7 +59901,12 @@
    "confusableWith": [
     "s.introvert.1",
     "s.tystlåten.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "553d16b6"
+   }
   },
   {
    "senseId": "s.introvert.1",
@@ -59896,7 +59919,12 @@
     "s.blyg.1",
     "s.tystlåten.1",
     "s.ensamvarg.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "34693012"
+   }
   },
   {
    "senseId": "s.extrovert.1",
@@ -59910,7 +59938,12 @@
     "s.social.1",
     "s.sällskaplig.1",
     "s.ta-plats.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "90a3e5d9"
+   }
   },
   {
    "senseId": "s.ta-plats.1",
@@ -59920,8 +59953,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.extrovert.1"
-   ]
+    "s.extrovert.1",
+    "s.utåtriktad.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "ad170943"
+   }
   },
   {
    "senseId": "s.pratsam.1",
@@ -59932,7 +59971,12 @@
    "symbol": true,
    "confusableWith": [
     "s.småprata.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "0d3a5194"
+   }
   },
   {
    "senseId": "s.sällskaplig.1",
@@ -59946,7 +59990,12 @@
     "s.extrovert.1",
     "s.social.1",
     "s.umgås.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "2e8ba432"
+   }
   },
   {
    "senseId": "s.hålla-sig-i-bakgrunden.1",
@@ -59958,7 +60007,12 @@
    "confusableWith": [
     "s.reserverad.1",
     "s.tillbakadragen.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "0066c57d"
+   }
   },
   {
    "senseId": "s.tystlåten.1",
@@ -59970,7 +60024,12 @@
    "confusableWith": [
     "s.blyg.1",
     "s.introvert.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "23b642e5"
+   }
   },
   {
    "senseId": "s.tillbakadragen.1",
@@ -59982,7 +60041,12 @@
    "confusableWith": [
     "s.reserverad.1",
     "s.hålla-sig-i-bakgrunden.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "e25fdd97"
+   }
   },
   {
    "senseId": "s.ensamvarg.1",
@@ -59993,7 +60057,12 @@
    "symbol": true,
    "confusableWith": [
     "s.introvert.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "97b946b3"
+   }
   },
   {
    "senseId": "s.umgås.1",
@@ -60015,8 +60084,14 @@
    "symbol": true,
    "confusableWith": [
     "s.grundlig.1",
-    "s.dubbelkolla.1"
-   ]
+    "s.dubbelkolla.1",
+    "s.perfektionist.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "f899bf82"
+   }
   },
   {
    "senseId": "s.grundlig.1",
@@ -60027,8 +60102,15 @@
    "symbol": true,
    "confusableWith": [
     "s.noggrannhet.1",
-    "s.dubbelkolla.1"
-   ]
+    "s.dubbelkolla.1",
+    "s.petig.1",
+    "s.perfektionist.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "f51d8435"
+   }
   },
   {
    "senseId": "s.metodisk.1",
@@ -60039,7 +60121,12 @@
    "symbol": true,
    "confusableWith": [
     "s.strukturerad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "cf58ed1b"
+   }
   },
   {
    "senseId": "s.dubbelkolla.1",
@@ -60074,8 +60161,14 @@
    "confusableWith": [
     "s.hafsa.1",
     "s.slarv.1",
-    "s.slarvfel.1"
-   ]
+    "s.slarvfel.1",
+    "s.ostrukturerad.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "6534ee75"
+   }
   },
   {
    "senseId": "s.slarvfel.1",
@@ -60088,7 +60181,12 @@
     "s.hafsa.1",
     "s.hafsig.1",
     "s.slarv.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "90a030d9"
+   }
   },
   {
    "senseId": "s.slarv.1",
@@ -60103,7 +60201,12 @@
     "s.slarvfel.1",
     "s.ostrukturerad.1",
     "s.opålitlig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "e974351d"
+   }
   },
   {
    "senseId": "s.ostrukturerad.1",
@@ -60113,8 +60216,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.slarv.1"
-   ]
+    "s.slarv.1",
+    "s.hafsig.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "ded4bf79"
+   }
   },
   {
    "senseId": "s.petig.1",
@@ -60125,8 +60234,14 @@
    "symbol": true,
    "confusableWith": [
     "s.perfektionist.1",
-    "s.pedantisk.1"
-   ]
+    "s.pedantisk.1",
+    "s.grundlig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "9fdcab6a"
+   }
   },
   {
    "senseId": "s.perfektionist.1",
@@ -60137,8 +60252,15 @@
    "symbol": true,
    "confusableWith": [
     "s.petig.1",
-    "s.pedantisk.1"
-   ]
+    "s.pedantisk.1",
+    "s.grundlig.1",
+    "s.noggrannhet.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "ad59014b"
+   }
   },
   {
    "senseId": "s.pedantisk.1",
@@ -60150,7 +60272,12 @@
    "confusableWith": [
     "s.petig.1",
     "s.perfektionist.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "9d44f6f8"
+   }
   },
   {
    "senseId": "s.ansvarsfull.1",
@@ -60158,7 +60285,12 @@
    "motif": "drag.ansvarsfull",
    "group": "hafsa",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "685fcf42"
+   }
   },
   {
    "senseId": "s.opålitlig.1",
@@ -60169,7 +60301,12 @@
    "symbol": true,
    "confusableWith": [
     "s.slarv.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "4178ae54"
+   }
   },
   {
    "senseId": "s.strukturerad.1",
@@ -60180,7 +60317,12 @@
    "symbol": true,
    "confusableWith": [
     "s.metodisk.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "2d25c76b"
+   }
   },
   {
    "senseId": "s.mod.1",
@@ -60194,7 +60336,12 @@
     "s.orädd.1",
     "s.djärv.1",
     "s.ta-mod-till-sig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "25d4f306"
+   }
   },
   {
    "senseId": "s.modig.1",
@@ -60208,7 +60355,12 @@
     "s.orädd.1",
     "s.djärv.1",
     "s.ta-mod-till-sig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "432dbd3b"
+   }
   },
   {
    "senseId": "s.orädd.1",
@@ -60222,7 +60374,12 @@
     "s.modig.1",
     "s.djärv.1",
     "s.ta-mod-till-sig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "62a88dc1"
+   }
   },
   {
    "senseId": "s.äventyr.1",
@@ -60233,7 +60390,12 @@
    "symbol": true,
    "confusableWith": [
     "s.äventyrlig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "34023386"
+   }
   },
   {
    "senseId": "s.äventyrlig.1",
@@ -60243,8 +60405,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.äventyr.1"
-   ]
+    "s.äventyr.1",
+    "s.djärv.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "235672d6"
+   }
   },
   {
    "senseId": "s.bekvämlighetszon.1",
@@ -60256,7 +60424,12 @@
    "confusableWith": [
     "s.ta-steget.1",
     "s.utmaning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "d88b6b1f"
+   }
   },
   {
    "senseId": "s.ta-steget.1",
@@ -60268,7 +60441,12 @@
    "confusableWith": [
     "s.bekvämlighetszon.1",
     "s.utmaning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "b3a2e6b2"
+   }
   },
   {
    "senseId": "s.ta-det-säkra-före-det-osäkra.1",
@@ -60279,7 +60457,12 @@
    "symbol": true,
    "confusableWith": [
     "s.varsam.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "a3197169"
+   }
   },
   {
    "senseId": "s.våghalsig.1",
@@ -60291,7 +60474,12 @@
    "confusableWith": [
     "s.ta-risker.1",
     "s.djärv.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "ceaf3c4f"
+   }
   },
   {
    "senseId": "s.ta-risker.1",
@@ -60303,7 +60491,12 @@
    "confusableWith": [
     "s.våghalsig.1",
     "s.djärv.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "e7f225a9"
+   }
   },
   {
    "senseId": "s.feg.1",
@@ -60311,7 +60504,12 @@
    "motif": "drag.feg",
    "group": "mod",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "19dc6e3a"
+   }
   },
   {
    "senseId": "s.utmaning.1",
@@ -60323,7 +60521,12 @@
    "confusableWith": [
     "s.bekvämlighetszon.1",
     "s.ta-steget.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "39ca712a"
+   }
   },
   {
    "senseId": "s.varsam.1",
@@ -60334,7 +60537,12 @@
    "symbol": true,
    "confusableWith": [
     "s.ta-det-säkra-före-det-osäkra.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "78808007"
+   }
   },
   {
    "senseId": "s.ta-mod-till-sig.1",
@@ -60348,7 +60556,12 @@
     "s.modig.1",
     "s.orädd.1",
     "s.djärv.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "30851bdb"
+   }
   },
   {
    "senseId": "s.djärv.1",
@@ -60363,8 +60576,14 @@
     "s.orädd.1",
     "s.ta-mod-till-sig.1",
     "s.våghalsig.1",
-    "s.ta-risker.1"
-   ]
+    "s.ta-risker.1",
+    "s.äventyrlig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "9d4de49c"
+   }
   },
   {
    "senseId": "s.tålmodig.1",
@@ -60377,7 +60596,12 @@
     "s.vänta-ut.1",
     "s.sansad.1",
     "s.ha-is-i-magen.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "4a132b1b"
+   }
   },
   {
    "senseId": "s.otålig.1",
@@ -60389,8 +60613,14 @@
    "confusableWith": [
     "s.otålighet.1",
     "s.tappa-tålamodet.1",
-    "s.stressa.1"
-   ]
+    "s.stressa.1",
+    "s.rastlöshet.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "9290d742"
+   }
   },
   {
    "senseId": "s.stressa.1",
@@ -60415,7 +60645,12 @@
     "s.otålig.1",
     "s.tappa-tålamodet.1",
     "s.stressa.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "6adf8754"
+   }
   },
   {
    "senseId": "s.rastlös.1",
@@ -60426,7 +60661,12 @@
    "symbol": true,
    "confusableWith": [
     "s.rastlöshet.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "98a9e9fe"
+   }
   },
   {
    "senseId": "s.rastlöshet.1",
@@ -60436,8 +60676,14 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.rastlös.1"
-   ]
+    "s.rastlös.1",
+    "s.otålig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "163ee909"
+   }
   },
   {
    "senseId": "s.sitta-still.1",
@@ -60445,7 +60691,12 @@
    "motif": "drag.sitta-still",
    "group": "tålmodig",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "8695f0cf"
+   }
   },
   {
    "senseId": "s.tappa-tålamodet.1",
@@ -60458,7 +60709,12 @@
     "s.otålig.1",
     "s.otålighet.1",
     "s.stressa.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "839c605d"
+   }
   },
   {
    "senseId": "s.sansad.1",
@@ -60471,7 +60727,12 @@
     "s.tålmodig.1",
     "s.vänta-ut.1",
     "s.ha-is-i-magen.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "cd682b3c"
+   }
   },
   {
    "senseId": "s.envis.1",
@@ -60483,7 +60744,12 @@
    "confusableWith": [
     "s.envishet.1",
     "s.ihärdig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "be62fdd8"
+   }
   },
   {
    "senseId": "s.envishet.1",
@@ -60508,7 +60774,12 @@
     "s.envis.1",
     "s.envishet.1",
     "s.uthållig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "5f5c958e"
+   }
   },
   {
    "senseId": "s.uthållig.1",
@@ -60519,7 +60790,12 @@
    "symbol": true,
    "confusableWith": [
     "s.ihärdig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "6cf41a9e"
+   }
   },
   {
    "senseId": "s.vänta-ut.1",
@@ -60532,7 +60808,12 @@
     "s.tålmodig.1",
     "s.sansad.1",
     "s.ha-is-i-magen.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "f7237269"
+   }
   },
   {
    "senseId": "s.ha-is-i-magen.1",
@@ -60545,7 +60826,12 @@
     "s.tålmodig.1",
     "s.vänta-ut.1",
     "s.sansad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "9f0d4055"
+   }
   },
   {
    "senseId": "s.bry-sig-om.1",
@@ -60557,7 +60843,12 @@
    "confusableWith": [
     "s.omtänksam.1",
     "s.hänsynsfull.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "68647ca9"
+   }
   },
   {
    "senseId": "s.empatisk.1",
@@ -60570,7 +60861,12 @@
     "s.empati.1",
     "s.medkänsla.1",
     "s.sätta-sig-in-i.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "787afd0d"
+   }
   },
   {
    "senseId": "s.empati.1",
@@ -60583,7 +60879,12 @@
     "s.empatisk.1",
     "s.medkänsla.1",
     "s.sätta-sig-in-i.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "00d06f4e"
+   }
   },
   {
    "senseId": "s.sätta-sig-in-i.1",
@@ -60596,7 +60897,12 @@
     "s.empatisk.1",
     "s.empati.1",
     "s.medkänsla.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "76c91419"
+   }
   },
   {
    "senseId": "s.omtänksam.1",
@@ -60608,7 +60914,12 @@
    "confusableWith": [
     "s.hänsynsfull.1",
     "s.bry-sig-om.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "3913c4e1"
+   }
   },
   {
    "senseId": "s.självisk.1",
@@ -60620,7 +60931,12 @@
    "confusableWith": [
     "s.egoistisk.1",
     "s.girig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "79860786"
+   }
   },
   {
    "senseId": "s.osjälvisk.1",
@@ -60631,7 +60947,12 @@
    "symbol": true,
    "confusableWith": [
     "s.givmild.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "3d6eeb33"
+   }
   },
   {
    "senseId": "s.girig.1",
@@ -60643,7 +60964,12 @@
    "confusableWith": [
     "s.självisk.1",
     "s.egoistisk.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "be8f36d9"
+   }
   },
   {
    "senseId": "s.givmild.1",
@@ -60654,7 +60980,12 @@
    "symbol": true,
    "confusableWith": [
     "s.osjälvisk.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "95c82dbd"
+   }
   },
   {
    "senseId": "s.likgiltig.1",
@@ -60666,7 +60997,12 @@
    "confusableWith": [
     "s.okänslig.1",
     "s.hänsynslös.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "d11c23c1"
+   }
   },
   {
    "senseId": "s.hänsynslös.1",
@@ -60678,7 +61014,12 @@
    "confusableWith": [
     "s.likgiltig.1",
     "s.okänslig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "261de8e9"
+   }
   },
   {
    "senseId": "s.egoistisk.1",
@@ -60690,7 +61031,12 @@
    "confusableWith": [
     "s.självisk.1",
     "s.girig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "2c763b3d"
+   }
   },
   {
    "senseId": "s.medkänsla.1",
@@ -60703,7 +61049,12 @@
     "s.empatisk.1",
     "s.empati.1",
     "s.sätta-sig-in-i.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "833456c9"
+   }
   },
   {
    "senseId": "s.okänslig.1",
@@ -60715,7 +61066,12 @@
    "confusableWith": [
     "s.likgiltig.1",
     "s.hänsynslös.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "f956ad5c"
+   }
   },
   {
    "senseId": "s.hänsynsfull.1",
@@ -60727,7 +61083,12 @@
    "confusableWith": [
     "s.omtänksam.1",
     "s.bry-sig-om.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "ebcb473d"
+   }
   },
   {
    "senseId": "s.planerad.1",
@@ -60739,7 +61100,12 @@
    "confusableWith": [
     "s.schema.1",
     "s.framförhållning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "252cd0e5"
+   }
   },
   {
    "senseId": "s.schema.1",
@@ -60751,7 +61117,12 @@
    "confusableWith": [
     "s.planerad.1",
     "s.framförhållning.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "35a315d8"
+   }
   },
   {
    "senseId": "s.rutinmänniska.1",
@@ -60763,7 +61134,12 @@
    "confusableWith": [
     "s.förutsägbar.1",
     "s.oflexibel.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "5f2956f9"
+   }
   },
   {
    "senseId": "s.spontanitet.1",
@@ -60775,8 +61151,14 @@
    "confusableWith": [
     "s.impulsiv.1",
     "s.ta-dagen-som-den-kommer.1",
-    "s.följa-strömmen.1"
-   ]
+    "s.följa-strömmen.1",
+    "s.improvisera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "94642de3"
+   }
   },
   {
    "senseId": "s.ta-dagen-som-den-kommer.1",
@@ -60789,7 +61171,12 @@
     "s.spontanitet.1",
     "s.impulsiv.1",
     "s.följa-strömmen.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "06a010c0"
+   }
   },
   {
    "senseId": "s.följa-strömmen.1",
@@ -60802,7 +61189,12 @@
     "s.spontanitet.1",
     "s.impulsiv.1",
     "s.ta-dagen-som-den-kommer.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "e3464379"
+   }
   },
   {
    "senseId": "s.impulsiv.1",
@@ -60815,7 +61207,12 @@
     "s.spontanitet.1",
     "s.ta-dagen-som-den-kommer.1",
     "s.följa-strömmen.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "871fafc8"
+   }
   },
   {
    "senseId": "s.på-en-höft.1",
@@ -60823,7 +61220,12 @@
    "motif": "drag.på-en-höft",
    "group": "spontanitet",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "121d8761"
+   }
   },
   {
    "senseId": "s.ombytlig.1",
@@ -60834,7 +61236,12 @@
    "symbol": true,
    "confusableWith": [
     "s.oförutsägbar.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "8ecd348d"
+   }
   },
   {
    "senseId": "s.oflexibel.1",
@@ -60846,7 +61253,12 @@
    "confusableWith": [
     "s.rutinmänniska.1",
     "s.förutsägbar.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "2e03855b"
+   }
   },
   {
    "senseId": "s.flexibel.1",
@@ -60857,7 +61269,12 @@
    "symbol": true,
    "confusableWith": [
     "s.improvisera.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "5415f8cc"
+   }
   },
   {
    "senseId": "s.förutsägbar.1",
@@ -60869,7 +61286,12 @@
    "confusableWith": [
     "s.rutinmänniska.1",
     "s.oflexibel.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "8fc93171"
+   }
   },
   {
    "senseId": "s.oförutsägbar.1",
@@ -60880,7 +61302,12 @@
    "symbol": true,
    "confusableWith": [
     "s.ombytlig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "18b6508b"
+   }
   },
   {
    "senseId": "s.improvisera.1",
@@ -60889,7 +61316,8 @@
    "group": "spontanitet",
    "quiz": true,
    "confusableWith": [
-    "s.flexibel.1"
+    "s.flexibel.1",
+    "s.spontanitet.1"
    ]
   },
   {
@@ -60902,7 +61330,12 @@
    "confusableWith": [
     "s.planerad.1",
     "s.schema.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "818447ba"
+   }
   },
   {
    "senseId": "s.karaktär.1",
@@ -60914,7 +61347,12 @@
    "confusableWith": [
     "s.personlighet.1",
     "s.personlighetsdrag.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "9c94edb2"
+   }
   },
   {
    "senseId": "s.personlighet.1",
@@ -60926,7 +61364,12 @@
    "confusableWith": [
     "s.karaktär.1",
     "s.personlighetsdrag.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.23.0",
+    "hash": "fc56870f"
+   }
   },
   {
    "senseId": "s.personlighetsdrag.1",
@@ -60938,7 +61381,12 @@
    "confusableWith": [
     "s.karaktär.1",
     "s.personlighet.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "bb1dddf0"
+   }
   },
   {
    "senseId": "s.flitig.1",
@@ -60946,7 +61394,12 @@
    "motif": "drag.flitig",
    "group": "flitig",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "ae8417ea"
+   }
   },
   {
    "senseId": "s.hederlig.1",
@@ -60957,7 +61410,12 @@
    "symbol": true,
    "confusableWith": [
     "s.oärlig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "707b1cfb"
+   }
   },
   {
    "senseId": "s.lat.1",
@@ -60968,7 +61426,12 @@
    "symbol": true,
    "confusableWith": [
     "s.lättsam.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "63554626"
+   }
   },
   {
    "senseId": "s.oärlig.1",
@@ -60979,7 +61442,12 @@
    "symbol": true,
    "confusableWith": [
     "s.hederlig.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "a28f0a16"
+   }
   },
   {
    "senseId": "s.stark-sida.1",
@@ -60990,7 +61458,12 @@
    "symbol": true,
    "confusableWith": [
     "s.svag-sida.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "c44f5d06"
+   }
   },
   {
    "senseId": "s.jordnära.1",
@@ -61001,7 +61474,12 @@
    "symbol": true,
    "confusableWith": [
     "s.godhjärtad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "dd213602"
+   }
   },
   {
    "senseId": "s.godhjärtad.1",
@@ -61012,7 +61490,12 @@
    "symbol": true,
    "confusableWith": [
     "s.jordnära.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "33bb2f82"
+   }
   },
   {
    "senseId": "s.sinne-för-humor.1",
@@ -61020,7 +61503,12 @@
    "motif": "drag.sinne-för-humor",
    "group": "flitig",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "7cddca52"
+   }
   },
   {
    "senseId": "s.lättsam.1",
@@ -61031,7 +61519,12 @@
    "symbol": true,
    "confusableWith": [
     "s.lat.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "f0de9138"
+   }
   },
   {
    "senseId": "s.svag-sida.1",
@@ -61042,7 +61535,12 @@
    "symbol": true,
    "confusableWith": [
     "s.stark-sida.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "a3257358"
+   }
   },
   {
    "senseId": "s.temperament.1",
@@ -61053,7 +61551,12 @@
    "symbol": true,
    "confusableWith": [
     "s.hetlevrad.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "d73f65ce"
+   }
   },
   {
    "senseId": "s.hetlevrad.1",
@@ -61064,6 +61567,1228 @@
    "symbol": true,
    "confusableWith": [
     "s.temperament.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.23.0",
+    "hash": "a6e62bea"
+   }
+  },
+  {
+   "senseId": "s.ha-mycket-i-huvudet.1",
+   "kind": "illustration",
+   "motif": "väl.ha-mycket-i-huvudet",
+   "group": "ha-mycket-i-huvudet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.överbelastad.1"
+   ]
+  },
+  {
+   "senseId": "s.stressymptom.1",
+   "kind": "illustration",
+   "motif": "väl.stressymptom",
+   "group": "ha-mycket-i-huvudet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stressreaktion.1",
+    "s.stresspåslag.1"
+   ]
+  },
+  {
+   "senseId": "s.spänd-i-axlarna.1",
+   "kind": "illustration",
+   "motif": "väl.spänd-i-axlarna",
+   "group": "spänd-i-axlarna",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.muskelspänning.1"
+   ]
+  },
+  {
+   "senseId": "s.muskelspänning.1",
+   "kind": "illustration",
+   "motif": "väl.muskelspänning",
+   "group": "spänd-i-axlarna",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.spänd-i-axlarna.1"
+   ]
+  },
+  {
+   "senseId": "s.sömnsvårighet.1",
+   "kind": "illustration",
+   "motif": "väl.sömnsvårighet",
+   "group": "spänd-i-axlarna",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.uppvarvad.1",
+   "kind": "illustration",
+   "motif": "väl.uppvarvad",
+   "group": "ha-mycket-i-huvudet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stressa-upp-sig.1",
+    "s.nervositet.1"
+   ]
+  },
+  {
+   "senseId": "s.nervositet.1",
+   "kind": "illustration",
+   "motif": "väl.nervositet",
+   "group": "ha-mycket-i-huvudet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.uppvarvad.1",
+    "s.stressa-upp-sig.1"
+   ]
+  },
+  {
+   "senseId": "s.lättirriterad.1",
+   "kind": "illustration",
+   "motif": "väl.lättirriterad",
+   "group": "lättirriterad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.irritabel.1"
+   ]
+  },
+  {
+   "senseId": "s.irritabel.1",
+   "kind": "illustration",
+   "motif": "väl.irritabel",
+   "group": "lättirriterad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.lättirriterad.1"
+   ]
+  },
+  {
+   "senseId": "s.stressa-upp-sig.1",
+   "kind": "illustration",
+   "motif": "väl.stressa-upp-sig",
+   "group": "ha-mycket-i-huvudet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.uppvarvad.1",
+    "s.nervositet.1"
+   ]
+  },
+  {
+   "senseId": "s.stressreaktion.1",
+   "kind": "illustration",
+   "motif": "väl.stressreaktion",
+   "group": "ha-mycket-i-huvudet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stressymptom.1",
+    "s.stresspåslag.1",
+    "s.stresskänslig.1"
+   ]
+  },
+  {
+   "senseId": "s.stresspåslag.1",
+   "kind": "illustration",
+   "motif": "väl.stresspåslag",
+   "group": "ha-mycket-i-huvudet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stressymptom.1",
+    "s.stressreaktion.1"
+   ]
+  },
+  {
+   "senseId": "s.stresskänslig.1",
+   "kind": "illustration",
+   "motif": "väl.stresskänslig",
+   "group": "spänd-i-axlarna",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stressreaktion.1"
+   ]
+  },
+  {
+   "senseId": "s.tunnelseende.1",
+   "kind": "illustration",
+   "motif": "väl.tunnelseende",
+   "group": "spänd-i-axlarna",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.överbelastad.1",
+   "kind": "illustration",
+   "motif": "väl.överbelastad",
+   "group": "spänd-i-axlarna",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ha-mycket-i-huvudet.1"
+   ]
+  },
+  {
+   "senseId": "s.kravfylld.1",
+   "kind": "illustration",
+   "motif": "väl.kravfylld",
+   "group": "kravfylld",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ställa-krav.1",
+    "s.press.1",
+    "s.prestationskrav.1"
+   ]
+  },
+  {
+   "senseId": "s.ställa-krav.1",
+   "kind": "illustration",
+   "motif": "väl.ställa-krav",
+   "group": "kravfylld",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kravfylld.1",
+    "s.press.1",
+    "s.prestationskrav.1"
+   ]
+  },
+  {
+   "senseId": "s.press.1",
+   "kind": "illustration",
+   "motif": "väl.press",
+   "group": "kravfylld",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kravfylld.1",
+    "s.ställa-krav.1",
+    "s.prestationskrav.1",
+    "s.prestationsångest.1"
+   ]
+  },
+  {
+   "senseId": "s.prestationskrav.1",
+   "kind": "illustration",
+   "motif": "väl.prestationskrav",
+   "group": "kravfylld",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kravfylld.1",
+    "s.ställa-krav.1",
+    "s.press.1",
+    "s.sätta-ribban-högt.1"
+   ]
+  },
+  {
+   "senseId": "s.sätta-ribban-högt.1",
+   "kind": "illustration",
+   "motif": "väl.sätta-ribban-högt",
+   "group": "kravfylld",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.prestationskrav.1"
+   ]
+  },
+  {
+   "senseId": "s.prestera.1",
+   "kind": "illustration",
+   "motif": "väl.prestera",
+   "group": "kravfylld",
+   "quiz": true
+  },
+  {
+   "senseId": "s.prestationsångest.1",
+   "kind": "illustration",
+   "motif": "väl.prestationsångest",
+   "group": "kravfylld",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.press.1"
+   ]
+  },
+  {
+   "senseId": "s.pressa-sig-själv.1",
+   "kind": "illustration",
+   "motif": "väl.pressa-sig-själv",
+   "group": "kravfylld",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.duktighet.1"
+   ]
+  },
+  {
+   "senseId": "s.otillräcklig.1",
+   "kind": "illustration",
+   "motif": "väl.otillräcklig",
+   "group": "otillräcklig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.orimlig.1"
+   ]
+  },
+  {
+   "senseId": "s.grupptryck.1",
+   "kind": "illustration",
+   "motif": "väl.grupptryck",
+   "group": "otillräcklig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.omvärld.1"
+   ]
+  },
+  {
+   "senseId": "s.mäta-sig-med.1",
+   "kind": "illustration",
+   "motif": "väl.mäta-sig-med",
+   "group": "otillräcklig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.orimlig.1",
+   "kind": "illustration",
+   "motif": "väl.orimlig",
+   "group": "otillräcklig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.otillräcklig.1"
+   ]
+  },
+  {
+   "senseId": "s.duktighet.1",
+   "kind": "illustration",
+   "motif": "väl.duktighet",
+   "group": "otillräcklig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.pressa-sig-själv.1"
+   ]
+  },
+  {
+   "senseId": "s.omvärld.1",
+   "kind": "illustration",
+   "motif": "väl.omvärld",
+   "group": "otillräcklig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.grupptryck.1"
+   ]
+  },
+  {
+   "senseId": "s.kravlös.1",
+   "kind": "illustration",
+   "motif": "väl.kravlös",
+   "group": "otillräcklig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.grubbla.1",
+   "kind": "illustration",
+   "motif": "väl.grubbla",
+   "group": "grubbla",
+   "quiz": true,
+   "confusableWith": [
+    "s.grubbel.1",
+    "s.älta.1",
+    "s.tankarna-snurrar.1",
+    "s.grubblare.1"
+   ]
+  },
+  {
+   "senseId": "s.grubbel.1",
+   "kind": "illustration",
+   "motif": "väl.grubbel",
+   "group": "grubbla",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.grubbla.1",
+    "s.älta.1",
+    "s.tankarna-snurrar.1",
+    "s.grubblare.1"
+   ]
+  },
+  {
+   "senseId": "s.älta.1",
+   "kind": "illustration",
+   "motif": "väl.älta",
+   "group": "grubbla",
+   "quiz": true,
+   "confusableWith": [
+    "s.grubbla.1",
+    "s.grubbel.1",
+    "s.tankarna-snurrar.1",
+    "s.grubblare.1"
+   ]
+  },
+  {
+   "senseId": "s.tankarna-snurrar.1",
+   "kind": "illustration",
+   "motif": "väl.tankarna-snurrar",
+   "group": "grubbla",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.grubbla.1",
+    "s.grubbel.1",
+    "s.älta.1",
+    "s.grubblare.1"
+   ]
+  },
+  {
+   "senseId": "s.grubblare.1",
+   "kind": "illustration",
+   "motif": "väl.grubblare",
+   "group": "grubbla",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.grubbla.1",
+    "s.grubbel.1",
+    "s.älta.1",
+    "s.tankarna-snurrar.1"
+   ]
+  },
+  {
+   "senseId": "s.orostanke.1",
+   "kind": "illustration",
+   "motif": "väl.orostanke",
+   "group": "grubbla",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bekymmer.1",
+    "s.bekymra-sig.1",
+    "s.framtidsoro.1"
+   ]
+  },
+  {
+   "senseId": "s.framtidsoro.1",
+   "kind": "illustration",
+   "motif": "väl.framtidsoro",
+   "group": "framtidsoro",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.orostanke.1",
+    "s.bekymmer.1",
+    "s.bekymra-sig.1"
+   ]
+  },
+  {
+   "senseId": "s.katastrof.1",
+   "kind": "illustration",
+   "motif": "väl.katastrof",
+   "group": "framtidsoro",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.katastroftänkande.1"
+   ]
+  },
+  {
+   "senseId": "s.katastroftänkande.1",
+   "kind": "illustration",
+   "motif": "väl.katastroftänkande",
+   "group": "framtidsoro",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.katastrof.1"
+   ]
+  },
+  {
+   "senseId": "s.bekymmer.1",
+   "kind": "illustration",
+   "motif": "väl.bekymmer",
+   "group": "grubbla",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.orostanke.1",
+    "s.bekymra-sig.1",
+    "s.framtidsoro.1"
+   ]
+  },
+  {
+   "senseId": "s.i-onödan.1",
+   "kind": "illustration",
+   "motif": "väl.i-onödan",
+   "group": "framtidsoro",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.bekymra-sig.1",
+   "kind": "illustration",
+   "motif": "väl.bekymra-sig",
+   "group": "grubbla",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.orostanke.1",
+    "s.bekymmer.1",
+    "s.framtidsoro.1"
+   ]
+  },
+  {
+   "senseId": "s.tänka-positivt.1",
+   "kind": "illustration",
+   "motif": "väl.tänka-positivt",
+   "group": "framtidsoro",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bekymmersfri.1",
+    "s.sorglös.1"
+   ]
+  },
+  {
+   "senseId": "s.bekymmersfri.1",
+   "kind": "illustration",
+   "motif": "väl.bekymmersfri",
+   "group": "framtidsoro",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.sorglös.1",
+    "s.tänka-positivt.1"
+   ]
+  },
+  {
+   "senseId": "s.sorglös.1",
+   "kind": "illustration",
+   "motif": "väl.sorglös",
+   "group": "framtidsoro",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bekymmersfri.1",
+    "s.tänka-positivt.1"
+   ]
+  },
+  {
+   "senseId": "s.långhelg.1",
+   "kind": "illustration",
+   "motif": "väl.långhelg",
+   "group": "långhelg",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.avkoppling.1",
+   "kind": "illustration",
+   "motif": "väl.avkoppling",
+   "group": "långhelg",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.rofylld.1",
+    "s.stillhet.1",
+    "s.koppla-bort.1"
+   ]
+  },
+  {
+   "senseId": "s.rofylld.1",
+   "kind": "illustration",
+   "motif": "väl.rofylld",
+   "group": "långhelg",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.avkoppling.1",
+    "s.stillhet.1"
+   ]
+  },
+  {
+   "senseId": "s.stillhet.1",
+   "kind": "illustration",
+   "motif": "väl.stillhet",
+   "group": "långhelg",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.avkoppling.1",
+    "s.rofylld.1"
+   ]
+  },
+  {
+   "senseId": "s.ladda-batterierna.1",
+   "kind": "illustration",
+   "motif": "väl.ladda-batterierna",
+   "group": "långhelg",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.återhämtningstid.1",
+    "s.rekreation.1"
+   ]
+  },
+  {
+   "senseId": "s.koppla-bort.1",
+   "kind": "illustration",
+   "motif": "väl.koppla-bort",
+   "group": "långhelg",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.avkoppling.1"
+   ]
+  },
+  {
+   "senseId": "s.göra-ingenting.1",
+   "kind": "illustration",
+   "motif": "väl.göra-ingenting",
+   "group": "långhelg",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.slöa.1",
+    "s.latmask.1"
+   ]
+  },
+  {
+   "senseId": "s.slöa.1",
+   "kind": "illustration",
+   "motif": "väl.slöa",
+   "group": "långhelg",
+   "quiz": true,
+   "confusableWith": [
+    "s.göra-ingenting.1",
+    "s.latmask.1"
+   ]
+  },
+  {
+   "senseId": "s.latmask.1",
+   "kind": "illustration",
+   "motif": "väl.latmask",
+   "group": "latmask",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.göra-ingenting.1",
+    "s.slöa.1"
+   ]
+  },
+  {
+   "senseId": "s.hängmatta.1",
+   "kind": "illustration",
+   "motif": "väl.hängmatta",
+   "group": "latmask",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.sola.1",
+   "kind": "illustration",
+   "motif": "väl.sola",
+   "group": "latmask",
+   "quiz": true
+  },
+  {
+   "senseId": "s.basta.1",
+   "kind": "illustration",
+   "motif": "väl.basta",
+   "group": "latmask",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ta-ett-bad.1",
+   "kind": "illustration",
+   "motif": "väl.ta-ett-bad",
+   "group": "latmask",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.rekreation.1",
+   "kind": "illustration",
+   "motif": "väl.rekreation",
+   "group": "latmask",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ladda-batterierna.1",
+    "s.återhämtningstid.1"
+   ]
+  },
+  {
+   "senseId": "s.återhämtningstid.1",
+   "kind": "illustration",
+   "motif": "väl.återhämtningstid",
+   "group": "latmask",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ladda-batterierna.1",
+    "s.rekreation.1"
+   ]
+  },
+  {
+   "senseId": "s.bakslag.1",
+   "kind": "illustration",
+   "motif": "väl.bakslag",
+   "group": "bakslag",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.motgång.1"
+   ]
+  },
+  {
+   "senseId": "s.tung-period.1",
+   "kind": "illustration",
+   "motif": "väl.tung-period",
+   "group": "bakslag",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kämpig.1",
+    "s.tuff.1",
+    "s.livskris.1"
+   ]
+  },
+  {
+   "senseId": "s.motgång.1",
+   "kind": "illustration",
+   "motif": "väl.motgång",
+   "group": "bakslag",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bakslag.1"
+   ]
+  },
+  {
+   "senseId": "s.livskris.1",
+   "kind": "illustration",
+   "motif": "väl.livskris",
+   "group": "bakslag",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.tung-period.1",
+    "s.kämpig.1",
+    "s.tuff.1"
+   ]
+  },
+  {
+   "senseId": "s.kämpig.1",
+   "kind": "illustration",
+   "motif": "väl.kämpig",
+   "group": "bakslag",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.tung-period.1",
+    "s.tuff.1",
+    "s.livskris.1"
+   ]
+  },
+  {
+   "senseId": "s.tuff.1",
+   "kind": "illustration",
+   "motif": "väl.tuff",
+   "group": "bakslag",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.tung-period.1",
+    "s.kämpig.1",
+    "s.livskris.1",
+    "s.motståndskraftig.1"
+   ]
+  },
+  {
+   "senseId": "s.bita-ihop.1",
+   "kind": "illustration",
+   "motif": "väl.bita-ihop",
+   "group": "bakslag",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stå-ut.1"
+   ]
+  },
+  {
+   "senseId": "s.en-dag-i-taget.1",
+   "kind": "illustration",
+   "motif": "väl.en-dag-i-taget",
+   "group": "en-dag-i-taget",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.stå-ut.1",
+   "kind": "illustration",
+   "motif": "väl.stå-ut",
+   "group": "bakslag",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bita-ihop.1"
+   ]
+  },
+  {
+   "senseId": "s.orka-vidare.1",
+   "kind": "illustration",
+   "motif": "väl.orka-vidare",
+   "group": "en-dag-i-taget",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ta-sig-igenom.1",
+    "s.komma-igen.1",
+    "s.hitta-tillbaka.1"
+   ]
+  },
+  {
+   "senseId": "s.ta-sig-igenom.1",
+   "kind": "illustration",
+   "motif": "väl.ta-sig-igenom",
+   "group": "en-dag-i-taget",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.orka-vidare.1",
+    "s.komma-igen.1",
+    "s.hitta-tillbaka.1"
+   ]
+  },
+  {
+   "senseId": "s.det-värsta-är-över.1",
+   "kind": "illustration",
+   "motif": "väl.det-värsta-är-över",
+   "group": "en-dag-i-taget",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.komma-igen.1"
+   ]
+  },
+  {
+   "senseId": "s.komma-igen.1",
+   "kind": "illustration",
+   "motif": "väl.komma-igen",
+   "group": "en-dag-i-taget",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.orka-vidare.1",
+    "s.ta-sig-igenom.1",
+    "s.hitta-tillbaka.1",
+    "s.det-värsta-är-över.1"
+   ]
+  },
+  {
+   "senseId": "s.hitta-tillbaka.1",
+   "kind": "illustration",
+   "motif": "väl.hitta-tillbaka",
+   "group": "en-dag-i-taget",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.orka-vidare.1",
+    "s.ta-sig-igenom.1",
+    "s.komma-igen.1"
+   ]
+  },
+  {
+   "senseId": "s.motståndskraftig.1",
+   "kind": "illustration",
+   "motif": "väl.motståndskraftig",
+   "group": "en-dag-i-taget",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.tuff.1"
+   ]
+  },
+  {
+   "senseId": "s.söka-stöd.1",
+   "kind": "illustration",
+   "motif": "väl.söka-stöd",
+   "group": "söka-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.öppna-sig.1",
+    "s.prata-av-sig.1",
+    "s.anförtro-sig.1",
+    "s.lätta-sitt-hjärta.1"
+   ]
+  },
+  {
+   "senseId": "s.axel-att-gråta-mot.1",
+   "kind": "illustration",
+   "motif": "väl.axel-att-gråta-mot",
+   "group": "söka-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stötta.1",
+    "s.stöttande.1",
+    "s.stödja.1"
+   ]
+  },
+  {
+   "senseId": "s.öppna-sig.1",
+   "kind": "illustration",
+   "motif": "väl.öppna-sig",
+   "group": "söka-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.söka-stöd.1",
+    "s.prata-av-sig.1",
+    "s.anförtro-sig.1",
+    "s.lätta-sitt-hjärta.1"
+   ]
+  },
+  {
+   "senseId": "s.prata-av-sig.1",
+   "kind": "illustration",
+   "motif": "väl.prata-av-sig",
+   "group": "söka-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.söka-stöd.1",
+    "s.öppna-sig.1",
+    "s.anförtro-sig.1",
+    "s.lätta-sitt-hjärta.1"
+   ]
+  },
+  {
+   "senseId": "s.anförtro-sig.1",
+   "kind": "illustration",
+   "motif": "väl.anförtro-sig",
+   "group": "söka-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.söka-stöd.1",
+    "s.öppna-sig.1",
+    "s.prata-av-sig.1",
+    "s.lätta-sitt-hjärta.1"
+   ]
+  },
+  {
+   "senseId": "s.stötta.1",
+   "kind": "illustration",
+   "motif": "väl.stötta",
+   "group": "söka-stöd",
+   "quiz": true,
+   "confusableWith": [
+    "s.stöttande.1",
+    "s.stödja.1",
+    "s.axel-att-gråta-mot.1"
+   ]
+  },
+  {
+   "senseId": "s.stöttande.1",
+   "kind": "illustration",
+   "motif": "väl.stöttande",
+   "group": "söka-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stötta.1",
+    "s.stödja.1",
+    "s.axel-att-gråta-mot.1",
+    "s.medmänniska.1"
+   ]
+  },
+  {
+   "senseId": "s.lätta-sitt-hjärta.1",
+   "kind": "illustration",
+   "motif": "väl.lätta-sitt-hjärta",
+   "group": "söka-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.söka-stöd.1",
+    "s.öppna-sig.1",
+    "s.prata-av-sig.1",
+    "s.anförtro-sig.1"
+   ]
+  },
+  {
+   "senseId": "s.stödsamtal.1",
+   "kind": "illustration",
+   "motif": "väl.stödsamtal",
+   "group": "stödsamtal",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.terapeut.1",
+    "s.terapi.1"
+   ]
+  },
+  {
+   "senseId": "s.terapeut.1",
+   "kind": "illustration",
+   "motif": "väl.terapeut",
+   "group": "stödsamtal",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stödsamtal.1",
+    "s.terapi.1"
+   ]
+  },
+  {
+   "senseId": "s.terapi.1",
+   "kind": "illustration",
+   "motif": "väl.terapi",
+   "group": "stödsamtal",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stödsamtal.1",
+    "s.terapeut.1"
+   ]
+  },
+  {
+   "senseId": "s.stödgrupp.1",
+   "kind": "illustration",
+   "motif": "väl.stödgrupp",
+   "group": "stödsamtal",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stödlinje.1"
+   ]
+  },
+  {
+   "senseId": "s.stödlinje.1",
+   "kind": "illustration",
+   "motif": "väl.stödlinje",
+   "group": "stödsamtal",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stödgrupp.1"
+   ]
+  },
+  {
+   "senseId": "s.medmänniska.1",
+   "kind": "illustration",
+   "motif": "väl.medmänniska",
+   "group": "söka-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stöttande.1"
+   ]
+  },
+  {
+   "senseId": "s.stödja.1",
+   "kind": "illustration",
+   "motif": "väl.stödja",
+   "group": "söka-stöd",
+   "quiz": true,
+   "confusableWith": [
+    "s.stötta.1",
+    "s.stöttande.1",
+    "s.axel-att-gråta-mot.1"
+   ]
+  },
+  {
+   "senseId": "s.övertid.1",
+   "kind": "illustration",
+   "motif": "väl.övertid",
+   "group": "övertid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.jobba-över.1"
+   ]
+  },
+  {
+   "senseId": "s.jobba-över.1",
+   "kind": "illustration",
+   "motif": "väl.jobba-över",
+   "group": "övertid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.övertid.1"
+   ]
+  },
+  {
+   "senseId": "s.fritid.1",
+   "kind": "illustration",
+   "motif": "väl.fritid",
+   "group": "övertid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hobby.1",
+    "s.fritidsintresse.1"
+   ]
+  },
+  {
+   "senseId": "s.energinivå.1",
+   "kind": "illustration",
+   "motif": "väl.energinivå",
+   "group": "övertid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.energitjuv.1",
+    "s.energikälla.1"
+   ]
+  },
+  {
+   "senseId": "s.ohållbar.1",
+   "kind": "illustration",
+   "motif": "väl.ohållbar",
+   "group": "ohållbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.obalans.1"
+   ]
+  },
+  {
+   "senseId": "s.obalans.1",
+   "kind": "illustration",
+   "motif": "väl.obalans",
+   "group": "ohållbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ohållbar.1"
+   ]
+  },
+  {
+   "senseId": "s.balans-mellan-arbete-och-fritid.1",
+   "kind": "illustration",
+   "motif": "väl.balans-mellan-arbete-och-fritid",
+   "group": "ohållbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.livsbalans.1",
+    "s.varva.1"
+   ]
+  },
+  {
+   "senseId": "s.energitjuv.1",
+   "kind": "illustration",
+   "motif": "väl.energitjuv",
+   "group": "övertid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.energinivå.1",
+    "s.energikälla.1"
+   ]
+  },
+  {
+   "senseId": "s.energikälla.1",
+   "kind": "illustration",
+   "motif": "väl.energikälla",
+   "group": "övertid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.energinivå.1",
+    "s.energitjuv.1"
+   ]
+  },
+  {
+   "senseId": "s.hobby.1",
+   "kind": "illustration",
+   "motif": "väl.hobby",
+   "group": "övertid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.fritid.1",
+    "s.fritidsintresse.1"
+   ]
+  },
+  {
+   "senseId": "s.sätta-gränser.1",
+   "kind": "illustration",
+   "motif": "väl.sätta-gränser",
+   "group": "ohållbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.mikropaus.1"
+   ]
+  },
+  {
+   "senseId": "s.mikropaus.1",
+   "kind": "illustration",
+   "motif": "väl.mikropaus",
+   "group": "ohållbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.sätta-gränser.1"
+   ]
+  },
+  {
+   "senseId": "s.varva.1",
+   "kind": "illustration",
+   "motif": "väl.varva",
+   "group": "ohållbar",
+   "quiz": true,
+   "confusableWith": [
+    "s.balans-mellan-arbete-och-fritid.1",
+    "s.livsbalans.1"
+   ]
+  },
+  {
+   "senseId": "s.fritidsintresse.1",
+   "kind": "illustration",
+   "motif": "väl.fritidsintresse",
+   "group": "övertid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.fritid.1",
+    "s.hobby.1"
+   ]
+  },
+  {
+   "senseId": "s.livsbalans.1",
+   "kind": "illustration",
+   "motif": "väl.livsbalans",
+   "group": "ohållbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.balans-mellan-arbete-och-fritid.1",
+    "s.varva.1"
    ]
   }
  ]
