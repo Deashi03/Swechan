@@ -102,7 +102,13 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.26 – ämnesgrupperna har bilder (klar)
 - 288 illustrationer för katalogens ämnesgrupper i menyn.
 
-## v0.27 och framåt – två spår per release
+## v0.27 – modulbilder för tre rotområden (klar)
+- 651 nya illustrationer: alla 756 katalogmoduler i Vardag & hem, Människan & hälsa och Samhälle har bild.
+
+## v0.28 och framåt – modulbilder för resten av katalogen
+- R04–R08, 252 moduler per rotområde.
+
+## Senare – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
 - Mänsklig språkgranskning av AI-utkasten (status `reviewed`).

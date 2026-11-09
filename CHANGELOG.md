@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.27.0 – 2026-11-09
+
+Bilder till katalogens moduler, del 1. I menyn *Kurser* har nu alla moduler i tre rotområden en egen illustration: *Vardag & hem*, *Människan & hälsa* och *Samhälle*. Det är 756 av katalogens 2 016 moduler.
+
+### Moduler (651 nya illustrationer)
+- **Vardag & hem (147 nya):** resten av kläder, hälsa i hemmet, tid och kalender, handel och resor (VAR-03-04 – VAR-06-06). Alla 252 moduler har nu bild.
+- **Människan & hälsa (252 nya):** kroppen, hälsa och sjukvård, känslor, relationer, kommunikation och livsfaser (MAN-01 – MAN-06). Några exempel: lungor (*Lungor och luftvägar*), timglas (*Tålmodig och otålig*), släktträd (*Beskriva ett släktträd*) och videosamtal.
+- **Samhälle (252 nya):** politik, juridik, ekonomi, utbildning, staden och medier (SAM-01 – SAM-06). Några exempel: riksdagens halvcirkel (*Riksdag och regering*), domarklubba (*Dom och överklagande*), utbud-och-efterfrågan-kurvor och en tidningssida (*Tidningar och nyhetsredaktioner*).
+- Publicerade moduler (`m.*`) visar bilden från den katalogmodul de är kopplade till.
+- Inga motiv har text, emoji, flaggor från verkliga länder, märken eller logotyper.
+
+### Teknik
+- Nya filer `src/ui/art/moduleArtR01.ts`, `moduleArtR02.ts` och `moduleArtR03.ts`. Varje fil har motiven (`m1_*`, `m2_*`, `m3_*`) och en koppling från katalog-id (`R0x_MODULE_MOTIF`) i katalogordning. Allt slås ihop med `MOTIFS` och `MODULE_MOTIF` i `motifs.ts`.
+- Nytt test: alla 756 moduler i de tre rotområdena har en bild. Det befintliga testet vaktar att ingen modulbild delas med en annan modul eller kategori.
+
+Service workern är `swechan-v31`.
+
 ## 0.26.0 – 2026-11-09
 
 Bilder till katalogens ämnesgrupper. I menyn *Kurser* har nu alla 288 ämnesgrupper (nivån under överämnena) en egen illustration.
