@@ -1,8 +1,14 @@
 # Projektstatus – överlämning
 
-**Version:** 0.25.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.25 utvecklades i grenen `claude/swechan-0.25`)
+**Version:** 0.26.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.26 utvecklades i grenen `claude/swechan-0.26`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.26 – släppt 2026-11-09 (ämnesgrupperna har bilder)
+
+- **Gjort:** alla 288 ämnesgrupper har en egen illustration i menyn *Kurser* (`GROUP_MOTIF` och motiv `tg_*` i `src/ui/art/groupMotifs.ts`). Ett test vaktar att bilderna är unika.
+- **Nästa steg (0.27 och framåt):** bilder för katalogmodulerna. 105 av 2 016 har bild (Vardag & hem, VAR-01–03). Fortsätt rotområde för rotområde, med ett motiv per modul (`MODULE_MOTIF`).
+- **Kom ihåg:** skriv inga villkorsuttryck som `x.t === 'path' ? … : …` inne i motivlistorna. Skriv delarna direkt.
 
 ## 0.25 – släppt 2026-11-09 (överämnena har bilder)
 
