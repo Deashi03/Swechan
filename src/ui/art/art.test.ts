@@ -30,6 +30,13 @@ describe('illustrations (0.5)', () => {
     for (const m of motifs) expect(others.has(m), m).toBe(false);
     for (const k of Object.values(GROUP_MOTIF)) expect(MOTIFS[k], k).toBeDefined();
   });
+  it('catalog modules with a picture never share a motif with each other or with categories', () => {
+    const catalog = JSON.parse(fs.readFileSync('planning/catalog/swechan-catalog.v1.json', 'utf8')) as { modules: { catalogId: string }[] };
+    const motifs = catalog.modules.flatMap((m) => { const a = artFor(m.catalogId); return a ? [a.motif] : []; });
+    expect(new Set(motifs).size).toBe(motifs.length);
+    const cats = new Set([...Object.values(ROOT_MOTIF), ...Object.values(AREA_MOTIF), ...Object.values(GROUP_MOTIF)]);
+    for (const m of motifs) expect(cats.has(m), m).toBe(false);
+  });
   it('no two published modules share a motif, and every referenced motif exists', () => {
     const used = getContent().modules.flatMap((m) => { const a = artFor(m.id); return a ? [a.motif] : []; });
     expect(new Set(used).size).toBe(used.length);
