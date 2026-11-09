@@ -16,6 +16,8 @@ const q = (x: number, y: number, w: number, h: number, r: Role, rx = 1.5, hue?: 
 /** Natural hues for food and nature motifs. */
 export const H = { green: 115, leaf: 95, orange: 26, red: 6, yellow: 46, brown: 28, blue: 210, grey: 220, purple: 285 } as const;
 
+import { GROUP_MOTIFS } from './groupMotifs';
+
 export const MOTIFS: Record<string, Motif> = {
   // ── root areas ──────────────────────────────────────────────
   house: { parts: [
@@ -887,6 +889,7 @@ export const MOTIFS: Record<string, Motif> = {
     p('M30 14 L26 6 M30 14 L34 6', 'line'),
     p('M46 50 L56 34 L60 50 Z', 'accent', H.green),
   ] },
+  ...GROUP_MOTIFS,
 };
 
 /** Motif per root area (R01…R08). */
