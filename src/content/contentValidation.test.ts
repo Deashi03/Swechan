@@ -1,5 +1,6 @@
 import { toolingRepository as getContent } from './tooling';
-import { validateContent } from './validateContent';
+import { validateContent, VISUAL_EXCEPTIONS_BEFORE_0_29 } from './validateContent';
+import { imageFor } from './images';
 
 describe('content validation', () => {
   it('all bundled content passes schema and quality checks', () => {
@@ -16,5 +17,12 @@ describe('content validation', () => {
       expect(m.words.length).toBeGreaterThanOrEqual(15);
       expect(m.words.length).toBeLessThanOrEqual(20);
     }
+  });
+
+  it('every module word has a picture, animation or symbol (0.29) – only the 14 older exceptions lack one', () => {
+    const repo = getContent();
+    expect(VISUAL_EXCEPTIONS_BEFORE_0_29.size).toBe(14);
+    const missing = repo.modules.flatMap((m) => m.words.map((w) => w.senseId)).filter((id) => !imageFor(id) && !VISUAL_EXCEPTIONS_BEFORE_0_29.has(id));
+    expect(missing).toEqual([]);
   });
 });
