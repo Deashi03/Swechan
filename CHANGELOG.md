@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.28.0 – 2026-11-09
+
+Bilder till katalogens moduler, del 2. Nu har **alla 2 016 moduler** i katalogen en egen illustration i menyn *Kurser*. Varje nivå i katalogen har alltså bild: rotområden, överämnen, ämnesgrupper och moduler.
+
+### Moduler (1 260 nya illustrationer)
+- **Historia & kultur (252):** epoker, krigshistoria, religioner, filosofi, arkeologi och världens historia. Några exempel: grekiskt tempel (*Grekiska stadsstater*), borg med vindbrygga, torii (*Shintoismens ritualer*) och tidslinje (*Kronologier och tidslinjer*). Religioner visas med byggnader och föremål.
+- **Natur & miljö (252):** landformer, väder och klimat, djur, växter, ekologi och geografi. Några exempel: vulkan, åska, älg, flugsvamp, näringskedja och kompass.
+- **Vetenskap (252):** matematik, fysik, kemi, biologi och astronomi. Räknesätt och tecken ritas som streck, inte som bokstäver eller siffror. Några exempel: koordinatsystem, prisma med spektrum, pH-skala, DNA-spiral och månens faser.
+- **Teknik (252):** datorer, programmering, elektronik, energi, verkstad, byggande och fordon. Några exempel: processor, neuralt nätverk, vindkraftverk, kugghjul, bro och höghastighetståg.
+- **Kultur & fritid (252):** språk och litteratur, musik och scenkonst, bild och form, idrott, hobby och resor. Några exempel: noter, teatermasker, staffli, bollar för olika sporter, tärningar och tält.
+- Inga motiv har text, emoji, flaggor från verkliga länder, märken eller logotyper.
+
+### Rättat
+- Rollen `accent2` vrider nyansen 200 grader. Delar med egen färgton (vatten, hjärtan, eld) fick därför fel färg i vissa motiv. Nu används `main` för sådana delar, även i ämnesgrupperna och modulbilderna från 0.26–0.27.
+- Raka linjer med rollen `light` fylldes i stället för att strykas och syntes inte. De använder nu `line`.
+
+### Teknik
+- Nya filer `src/ui/art/moduleArtR04.ts`–`moduleArtR08.ts` med motiv och en `R0x_MODULE_MOTIF`-koppling i katalogordning.
+- Testet för täckning kräver nu att alla 2 016 katalogmoduler har bild.
+
+Service workern är `swechan-v32`.
+
 ## 0.27.0 – 2026-11-09
 
 Bilder till katalogens moduler, del 1. I menyn *Kurser* har nu alla moduler i tre rotområden en egen illustration: *Vardag & hem*, *Människan & hälsa* och *Samhälle*. Det är 756 av katalogens 2 016 moduler.

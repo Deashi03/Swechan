@@ -105,8 +105,8 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.27 – modulbilder för tre rotområden (klar)
 - 651 nya illustrationer: alla 756 katalogmoduler i Vardag & hem, Människan & hälsa och Samhälle har bild.
 
-## v0.28 och framåt – modulbilder för resten av katalogen
-- R04–R08, 252 moduler per rotområde.
+## v0.28 – alla katalogmoduler har bild (klar)
+- 1 260 nya illustrationer för R04–R08. Alla 2 016 katalogmoduler har bild.
 
 ## Senare – två spår per release
 - Nytt överämne (nästa: *Människan & hälsa → Relationer & familj*, R02-A04) som räknas som klart först när varje modulord har visualisering.

@@ -1,13 +1,25 @@
 # Projektstatus – överlämning
 
-**Version:** 0.27.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.27 utvecklades i grenen `claude/swechan-0.27`)
+**Version:** 0.28.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.28 utvecklades i grenen `claude/swechan-0.28`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.28 – släppt 2026-11-09 (alla katalogmoduler har bild)
+
+- **Gjort:**
+  - Alla 2 016 katalogmoduler har en egen illustration. Motiven finns i `src/ui/art/moduleArtR01.ts`–`moduleArtR08.ts` med prefixen `m1_`, `m2_`, `m3_`, `h_`, `n_`, `v_`, `t_` och `k_`.
+  - Varje nivå i katalogen har nu bild: rotområden, överämnen, ämnesgrupper och moduler.
+  - Två färgfel är rättade: `accent2` med egen nyans gav fel färg, och öppna `light`-linjer syntes inte.
+- **Nästa steg:** de 14 modulorden utan bild (nya bildidéer), mänsklig granskning av innehållet och nya överämnen enligt katalogen.
+- **Kom ihåg (menybilder):**
+  - Använd `main` (eller `light`) när en del har egen nyans (`hue`). `accent` vrider nyansen 28 grader och `accent2` 200 grader.
+  - Bara rollen `line` stryks. Andra roller fylls, så en öppen bana utan `Z` med rollen `light` syns inte.
+  - Nya katalogmoduler behöver ett motiv i rätt `moduleArtR0x.ts`, annars fallerar täckningstestet.
 
 ## 0.27 – släppt 2026-11-09 (modulbilder för Vardag, Människan och Samhälle)
 
 - **Gjort:** alla katalogmoduler i R01 *Vardag & hem*, R02 *Människan & hälsa* och R03 *Samhälle* har en egen illustration (756 av 2 016). Motiven finns i `src/ui/art/moduleArtR01.ts`–`moduleArtR03.ts`, med kopplingen `R0x_MODULE_MOTIF` i katalogordning.
-- **Nästa steg (0.28 och framåt):** fortsätt med R04 *Historia & kultur* (HIS), R05 *Natur* (NAT), R06 *Vetenskap* (VET), R07 *Teknik* (TEK) och R08 *Kultur & fritid* (KUL), 252 moduler var. Gör en fil `moduleArtR0x.ts` per rotområde och utöka testet för täckning.
+- **Nästa steg (0.28):** resten av rotområdena (klart i 0.28).
 - **Kom ihåg:**
   - Granska varje rotområde i ett kontaktark innan commit. Ett snabbt sätt: rendera `artFor(catalogId)` med `renderArt` för alla moduler i rotområdet.
   - En bågbana (`A`) där radien är för liten för avståndet ger en tom yta. Räkna ut skärningspunkterna, som för månskäran i `m2_sleepwake`.
