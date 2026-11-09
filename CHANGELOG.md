@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.24.0 – 2026-11-09
+
+Fortsättning på bilderna till de färdiga modulerna. Hela överämnet *Känslor & psykologi* (901–957) har nu bilder: 627 av 630 modulord. Nästan alla är symbolbilder, och alla gick igenom blindtestgrinden.
+
+### Känslor & psykologi (627 nya bilder)
+- **Grundkänslor (901–907):** glädje och lycka, sorg och saknad, rädsla och oro, ilska och frustration, förvåning och förvirring, skam och skuld, känslors styrkegrader. De flesta känslor visas med ett uttrycksfullt ansikte (`fc()` i `emotions.ts`). Styrkegraderna visas som en nivåmätare som är olika full.
+- **Sammansatta känslor (911–917):** lättnad och trygghet, avund och svartsjuka, stolthet och tillfredsställelse, besvikelse och ånger, hopp och förväntan, längtan och nostalgi, ambivalens och kluvenhet.
+- **Tankar (921–927):** uppmärksamhet och fokus, minnen, fantasi, tolkning och antaganden, beslut och tvekan, reflektion, omedvetna vanor.
+- **Personlighet (931–937):** utåtriktad och reserverad, noggrann och slarvig, modig och försiktig, tålmodig och otålig, empatisk och självisk, spontan och planerad, att beskriva någons karaktär. Dragen visas som typiska beteenden i små scener.
+- **Psykiskt välmående (941–947):** stressreaktioner, press och krav, oro och grubbel, vila och avkoppling, att hantera bakslag, att söka stöd, balans mellan aktivitet och återhämtning. Stödlinjer och stödsamtal ritas allmänt, utan namn eller logotyper.
+- **Utveckling och motivation (951–957):** mål och ambitioner, självförtroende och självkänsla, viljestyrka och disciplin, vanor och beteendeförändring, inre och yttre motivation, misslyckanden och lärande, att uppmuntra andra.
+- Tre ord har ingen bild: *extremt*, *otrogen* och *ödmjuk*. De underkändes två gånger i blindtestet och fick planstatus `none`.
+
+### Blindtest
+- 557 bilder blindtestades i den här versionen: 436 godkända och 121 godkända synonymfall. Underkända bilder ritades om och testades igen, till exempel *dåligt samvete*, *skamsen*, *envishet* och *tummen upp*. Tummen ritades om så att den inte kan läsas som ett pekfinger.
+- Känsloord har många nära synonymer. Därför fick grupper av ord `confusableWith`, till exempel *nedstämd*/*deppig*/*sorgsen*, *ilska*/*förbannad*/*gå i taket*, *grubbla*/*älta*/*tankarna snurrar*, de starka gradorden *otroligt*/*oerhört*/*hemskt*/*fruktansvärt* och *stötta*/*stödja*/*stöttande*.
+
+### Teknik
+- Nya motivfiler som laddas när de behövs: `emotions.ts` (`känsla.`), `emotions2.ts` (`emo.`), `mind.ts` (`tanke.`), `traits.ts` (`drag.`), `wellbeing.ts` (`väl.`) och `growth.ts` (`växa.`).
+- `fc()` i `emotions.ts` ritar ett ansikte med valbara ögon, ögonbryn och munnar samt tårar, rodnad, svett och hudfärg (till exempel grön av avund). Hjälparna exporteras och används i de andra 900-filerna.
+
+I hela appen har nu 6 168 av 6 182 modulord en bild. Utvecklingsnollställningen är fortfarande på. Service workern är `swechan-v28`.
+
 ## 0.23.0 – 2026-11-08
 
 Fortsättning på bilderna till de färdiga modulerna. Hela överämnet *Hälsa & sjukvård* (801–857) har nu bilder: 629 av 630 modulord. Alla symbol- och adjektivbilder gick igenom blindtestgrinden.

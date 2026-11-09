@@ -1,8 +1,20 @@
 # Projektstatus – överlämning
 
-**Version:** 0.23.0 · **Senast uppdaterad:** 2026-11-08 · **Gren:** `main` (publiceras via GitHub Pages; 0.23 utvecklades i grenen `claude/swechan-0.23`)
+**Version:** 0.24.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.24 utvecklades i grenen `claude/swechan-0.24`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.24 – släppt 2026-11-09 (Känslor & psykologi har bilder)
+
+- **Gjort:**
+  - Bilder till hela *Känslor & psykologi* (901–957): 627 av 630 modulord. *extremt*, *otrogen* och *ödmjuk* har ingen bild (underkända två gånger).
+  - 557 symbol- och adjektivbilder blindtestades (436 godkända, 121 synonymfall).
+  - Motiven finns i `emotions.ts` (`känsla.`), `emotions2.ts` (`emo.`), `mind.ts` (`tanke.`), `traits.ts` (`drag.`), `wellbeing.ts` (`väl.`) och `growth.ts` (`växa.`). Ansiktshjälparen `fc()` finns i `emotions.ts`.
+  - I hela appen har 6 168 av 6 182 modulord en bild. 14 ord saknar bild, alla med planstatus `none` efter två underkända blindtest.
+- **Nästa steg (0.25):** se över de 14 orden utan bild med nya bildidéer, och fortsätt med nya överämnen enligt katalogen.
+- **Kom ihåg:**
+  - En handritad hand med ett enda utsträckt finger kan läsas som en oförskämd gest. Rita tummen snett åt sidan (`thumb()` i `emotions2.ts`/`growth.ts`) och en stopphand med fyra fingrar (`palm()` i `growth.ts`).
+  - Ta också bort ett ord ur blindtestets `key.json` när det får planstatus `none`, annars kraschar `record`.
 
 ## 0.23 – släppt 2026-11-08 (Hälsa & sjukvård har bilder)
 
