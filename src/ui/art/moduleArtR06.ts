@@ -45,7 +45,7 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   v_numden: { parts: [c(20, 32, 16, 'light'), p('M20 32 L20 16 A16 16 0 0 1 36 32 Z', 'main'), c(20, 32, 16, 'line'), q(42, 16, 16, 10, 'main', 2), p('M40 32 H60', 'line'), q(42, 38, 16, 10, 'accent', 2)] },
   v_mixedform: { parts: [c(16, 32, 12, 'main'), c(44, 32, 12, 'light'), p('M44 32 L44 20 A12 12 0 0 1 56 32 Z', 'main'), c(44, 32, 12, 'line'), plus(30, 32)] },
   v_comparefrac: { parts: [q(6, 12, 52, 12, 'light', 2), q(6, 12, 26, 12, 'main', 2), q(6, 40, 52, 12, 'light', 2), q(6, 40, 17, 12, 'accent', 2), p('M32 12 V24 M23 40 V52 M40 40 V52', 'line'), p('M28 30 L32 34 L28 38', 'line')] },
-  v_decimal: { parts: [q(4, 18, 20, 28, 'main', 3), c(32, 44, 3, 'line'), q(40, 18, 20, 28, 'accent', 3), p('M8 32 H20 M44 32 H56', 'light')] },
+  v_decimal: { parts: [q(4, 18, 20, 28, 'main', 3), c(32, 44, 3, 'line'), q(40, 18, 20, 28, 'accent', 3), p('M8 32 H20 M44 32 H56', 'line')] },
   v_rounding: { parts: [p('M6 44 H58', 'line'), ...[10, 22, 34, 46, 58].map((x) => p(`M${x - 4} 40 V48`, 'line')), c(28, 44, 4, 'accent'), p('M28 36 C28 24 40 24 42 36', 'line'), p('M38 32 L42 36 L44 30', 'line')] },
   v_percent: { parts: [c(18, 18, 7, 'main'), c(46, 46, 7, 'main'), p('M48 12 L16 52', 'line')] },
   v_pctchange: { parts: [...bars([16, 30]), p('M20 30 C26 16 36 14 44 18', 'line'), p('M40 14 L44 18 L40 22', 'line'), c(52, 10, 5, 'accent'), p('M50 12 L54 8', 'line')] },
@@ -63,7 +63,7 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   v_triangles: { parts: [p('M8 52 L32 10 L56 52 Z', 'main'), p('M20 52 L32 30 L44 52 Z', 'light')] },
   v_quadrilaterals: { parts: [q(6, 8, 22, 22, 'main', 1), q(36, 12, 22, 14, 'accent', 1), p('M8 52 L16 36 H32 L24 52 Z', 'accent2'), p('M48 36 L58 46 L48 56 L38 46 Z', 'main')] },
   v_circles: { parts: [c(32, 32, 22, 'light'), c(32, 32, 22, 'line'), p('M32 32 L54 32 M10 32 H32', 'line'), c(32, 32, 2.6, 'main'), p('M32 32 L47 16', 'line')] },
-  v_perimeterarea: { parts: [q(10, 14, 44, 32, 'main', 1), p('M10 52 H54 M10 50 V54 M54 50 V54 M58 14 V46 M56 14 H60 M56 46 H60', 'line'), p('M14 18 L50 42 M14 30 L34 42 M30 18 L50 30', 'light')] },
+  v_perimeterarea: { parts: [q(10, 14, 44, 32, 'main', 1), p('M10 52 H54 M10 50 V54 M54 50 V54 M58 14 V46 M56 14 H60 M56 46 H60', 'line'), p('M14 18 L50 42 M14 30 L34 42 M30 18 L50 30', 'line')] },
   v_volume: { parts: [p('M10 24 L26 14 H54 V40 L38 50 H10 Z', 'main'), p('M10 24 H38 V50 M38 24 L54 14', 'line'), p('M10 24 L26 14 H54 L38 24 Z', 'accent')] },
   // VET-01-05 Koordinater & funktioner
   v_coordsystem: { parts: [p('M32 6 V58 M6 32 H58', 'line'), p('M30 10 L32 6 L34 10 M54 30 L58 32 L54 34', 'line'), c(44, 20, 4, 'accent'), c(20, 44, 4, 'main')] },
@@ -72,7 +72,7 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   v_slope: { parts: [axes(), p('M8 50 L58 14', 'line'), p('M22 40 H40 V27', 'line'), q(22, 40, 18, 2, 'accent', 1), c(8, 50, 4, 'main')] },
   v_proportional: { parts: [axes(), p('M8 56 L56 10', 'line'), ...dots([[20, 44], [32, 33], [44, 21]], 3.5, 'accent')] },
   v_funcvalues: { parts: [q(4, 20, 18, 18, 'main', 3), arrowR(22, 28, 29), q(28, 14, 16, 30, 'accent', 4), arrowR(44, 50, 29), q(50, 20, 12, 18, 'main', 3)] },
-  v_readgraph: { parts: [axes(), p('M8 50 C20 46 24 20 34 20 C44 20 48 40 58 30', 'line'), c(34, 20, 4, 'accent'), p('M34 24 V54', 'light')] },
+  v_readgraph: { parts: [axes(), p('M8 50 C20 46 24 20 34 20 C44 20 48 40 58 30', 'line'), c(34, 20, 4, 'accent'), p('M34 24 V54', 'line')] },
   // VET-01-06 Statistik
   v_datasets: { parts: [q(6, 8, 52, 48, 'light', 3), p('M6 20 H58 M6 32 H58 M6 44 H58 M24 8 V56 M42 8 V56', 'line'), q(6, 8, 52, 12, 'main', 3)] },
   v_frequency: { parts: [...bars([10, 22, 36, 26, 12]), p('M12 44 C20 32 26 18 34 18 C42 18 48 34 56 42', 'line')] },
@@ -82,7 +82,7 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   v_sample: { parts: [...Array.from({ length: 16 }, (_, i) => c(10 + (i % 4) * 9, 14 + Math.floor(i / 4) * 9, 3, [1, 6, 11, 12].includes(i) ? 'accent' : 'main')), arrowR(44, 50, 28), ...dots([[56, 20], [56, 28], [56, 36]], 3, 'accent')] },
   v_misleading: { parts: [p('M8 10 V56 H60', 'line'), q(14, 40, 14, 14, 'main', 1), q(36, 10, 14, 44, 'accent', 1), p('M6 24 L10 28 L6 32 L10 36', 'line'), p('M52 4 L60 12 M60 4 L52 12', 'line')] },
   // VET-02-01 Analys
-  v_limits: { parts: [axes(), p('M10 14 C24 20 40 34 58 40', 'line'), p('M8 42 H60', 'light'), c(48, 37, 3, 'accent')] },
+  v_limits: { parts: [axes(), p('M10 14 C24 20 40 34 58 40', 'line'), p('M8 42 H60', 'line'), c(48, 37, 3, 'accent')] },
   v_continuity: { parts: [axes(), p('M10 46 C20 20 34 44 44 22 C48 14 54 18 58 22', 'line'), c(10, 46, 3, 'main'), c(58, 22, 3, 'main')] },
   v_derivative: { parts: [axes(), p('M10 50 C24 50 36 30 58 10', 'line'), p('M22 46 L54 22', 'line'), c(38, 34, 4, 'accent')] },
   v_diffrules: { parts: [...doc(6, 6, 30, 40, 4), p('M42 18 C46 30 50 30 54 18', 'line'), arrowR(40, 54, 38), c(48, 50, 4, 'accent')] },
@@ -124,7 +124,7 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   // VET-02-06 Avancerad matematik
   v_numbertheory: { parts: [...Array.from({ length: 25 }, (_, i) => c(10 + (i % 5) * 11, 10 + Math.floor(i / 5) * 11, 3.2, [1, 2, 4, 6, 10, 12, 16, 18, 22].includes(i) ? 'accent' : 'light'))] },
   v_topology: { parts: [p('M8 32 C8 18 26 14 32 24 C38 14 56 18 56 32 C56 46 38 50 32 40 C26 50 8 46 8 32 Z', 'main'), c(20, 32, 5, 'light'), c(44, 32, 5, 'light')] },
-  v_complexnumbers: { parts: [p('M32 6 V58 M6 32 H58', 'line'), p('M32 32 L50 14', 'line'), c(50, 14, 4, 'accent'), p('M42 32 A10 10 0 0 0 39 25', 'line'), p('M50 18 V30', 'light')] },
+  v_complexnumbers: { parts: [p('M32 6 V58 M6 32 H58', 'line'), p('M32 32 L50 14', 'line'), c(50, 14, 4, 'accent'), p('M42 32 A10 10 0 0 0 39 25', 'line'), p('M50 18 V30', 'line')] },
   v_numerical: { parts: [axes(), p('M8 44 C20 40 30 26 58 14', 'line'), ...[14, 26, 38, 50].map((x, i) => q(x - 4, 56 - [12, 18, 28, 36][i]!, 8, [12, 18, 28, 36][i]!, 'light', 0)), ...[14, 26, 38, 50].map((x, i) => q(x - 4, 56 - [12, 18, 28, 36][i]!, 8, 2, 'main', 0))] },
   v_optimtheory: { parts: [c(32, 32, 24, 'light'), c(32, 32, 16, 'line'), c(32, 32, 8, 'line'), c(32, 32, 24, 'line'), p('M8 52 L18 40 L26 36 L30 33', 'line'), c(32, 32, 3, 'accent')] },
   v_cryptomath: { parts: [q(16, 28, 32, 28, 'main', 4), p('M22 28 V20 C22 10 42 10 42 20 V28', 'line'), c(32, 40, 4, 'light'), q(30, 42, 4, 8, 'light', 1), ...dots([[6, 10], [14, 6], [50, 6], [58, 12]], 2, 'accent')] },
@@ -147,15 +147,15 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   v_interference: { parts: [c(14, 32, 3, 'main'), c(14, 52, 3, 'main'), ...[10, 18, 26, 34].map((r) => p(`M${14 + r} 32 A${r} ${r} 0 0 0 ${14} ${32 - r}`, 'line')), ...[10, 18, 26, 34].map((r) => p(`M${14 + r} 52 A${r} ${r} 0 0 0 ${14} ${52 - r}`, 'line'))] },
   // VET-03-03 Ljus & optik
   v_reflection: { parts: [q(4, 48, 56, 6, 'main', 1), p('M8 10 L32 48 L56 10', 'line'), p('M32 48 V20', 'line'), ...sun(10, 10, 4)] },
-  v_refraction: { parts: [q(4, 32, 56, 26, 'main', 0, G.sky), p('M8 6 L32 32 L42 58', 'line'), p('M32 10 V54', 'light')] },
+  v_refraction: { parts: [q(4, 32, 56, 26, 'main', 0, G.sky), p('M8 6 L32 32 L42 58', 'line'), p('M32 10 V54', 'line')] },
   v_lensmirror: { parts: [lens(32, 8, 48), p('M4 20 H32 L58 40 M4 44 H32 L58 24', 'line'), c(56, 32, 3, 'accent')] },
   v_spectrum: { parts: [p('M18 46 L32 12 L46 46 Z', 'light'), p('M18 46 L32 12 L46 46 Z', 'line'), p('M2 34 L26 30', 'line'), ...[G.red, G.orange, G.yellow, G.green, G.blue, G.purple].map((h, i) => p(`M38 ${28 + i * 2} L62 ${22 + i * 6} V${26 + i * 6} L38 ${30 + i * 2} Z`, 'main', h))] },
   v_emwaves: { parts: [sine(32, 14, 3), p('M4 32 H60', 'line'), ...[G.red, G.green, G.purple].map((h, i) => q(6 + i * 18, 52, 16, 6, 'main', 2, h))] },
-  v_polarisation: { parts: [sine(32, 10, 4, 4, 28), q(28, 12, 6, 40, 'main', 2), p('M31 16 V48', 'light'), p('M34 32 H60', 'line'), p('M36 24 V40 M44 24 V40 M52 24 V40', 'line')] },
+  v_polarisation: { parts: [sine(32, 10, 4, 4, 28), q(28, 12, 6, 40, 'main', 2), p('M31 16 V48', 'line'), p('M34 32 H60', 'line'), p('M36 24 V40 M44 24 V40 M52 24 V40', 'line')] },
   v_optinstruments: { parts: [q(18, 52, 28, 6, 'main', 2), p('M24 52 L40 14 L46 16 L32 50', 'main'), q(34, 6, 12, 10, 'accent', 2), q(28, 34, 16, 4, 'accent2', 1), p('M30 48 C22 48 18 40 22 34', 'line')] },
   // VET-03-04 Elektricitet & magnetism
   v_charge: { parts: [c(18, 32, 12, 'main', G.red), plus(18, 32, 1.2), c(46, 32, 12, 'main', G.blue), minus(46, 32, 1.2), p('M30 28 H34 M30 36 H34', 'line')] },
-  v_currentvoltage: { parts: [p('M10 20 H54 V44 H10 Z', 'line'), q(4, 26, 12, 12, 'main', 2), p('M8 32 H12 M10 30 V34', 'light'), c(54, 32, 6, 'accent', G.yellow), p('M28 16 L34 20 L28 24', 'line')] },
+  v_currentvoltage: { parts: [p('M10 20 H54 V44 H10 Z', 'line'), q(4, 26, 12, 12, 'main', 2), p('M8 32 H12 M10 30 V34', 'line'), c(54, 32, 6, 'accent', G.yellow), p('M28 16 L34 20 L28 24', 'line')] },
   v_resistance: { parts: [p('M4 32 H14 L18 22 L24 42 L30 22 L36 42 L42 22 L46 32 H60', 'line'), c(4, 32, 3, 'main'), c(60, 32, 3, 'main')] },
   v_efield: { parts: [c(32, 32, 8, 'main', G.red), plus(32, 32), ...[0, 1, 2, 3, 4, 5, 6, 7].map((i) => { const a = (i / 8) * Math.PI * 2; return p(`M${32 + Math.cos(a) * 12} ${32 + Math.sin(a) * 12} L${32 + Math.cos(a) * 26} ${32 + Math.sin(a) * 26}`, 'line'); })] },
   v_magneticfield: { parts: [p('M14 16 H26 V40 C26 48 38 48 38 40 V16 H50 V40 C50 62 14 62 14 40 Z', 'main', G.red), q(14, 10, 12, 8, 'light', 1), q(38, 10, 12, 8, 'light', 1), p('M8 26 C2 10 22 2 32 6 C42 2 62 10 56 26', 'line')] },
@@ -166,7 +166,7 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   v_states: { parts: [q(4, 30, 16, 16, 'main', 2, G.sky), arrowR(22, 28, 38), p('M30 46 C30 36 44 36 44 46 Z', 'main', G.blue), arrowR(46, 50, 38), ...dots([[56, 30], [52, 40], [58, 46]], 2.4, 'accent')] },
   v_heatcapacity: { parts: [p('M10 30 H54 V50 C54 56 10 56 10 50 Z', 'main'), p('M10 30 C10 26 54 26 54 30', 'line'), p('M24 22 C22 16 26 12 24 6 M32 22 C30 16 34 12 32 6 M40 22 C38 16 42 12 40 6', 'line'), p('M20 58 L24 54 L28 58 L32 54 L36 58 L40 54 L44 58', 'main', G.red)] },
   v_insulation: { parts: [p('M8 30 L32 10 L56 30 V56 H8 Z', 'main'), q(14, 30, 36, 26, 'accent', 0, G.yellow), p('M14 36 C20 32 22 40 28 36 C34 32 36 40 42 36 C46 34 48 36 50 36 M14 46 C20 42 22 50 28 46 C34 42 36 50 42 46 C46 44 48 46 50 46', 'line')] },
-  v_thermolaws: { parts: [q(6, 16, 20, 32, 'main', 3, G.red), q(38, 16, 20, 32, 'main', 3, G.blue), arrowR(26, 38, 32), p('M14 24 V40 M10 28 H18', 'light'), p('M44 32 H52', 'light')] },
+  v_thermolaws: { parts: [q(6, 16, 20, 32, 'main', 3, G.red), q(38, 16, 20, 32, 'main', 3, G.blue), arrowR(26, 38, 32), p('M14 24 V40 M10 28 H18', 'line'), p('M44 32 H52', 'line')] },
   v_entropy: { parts: [q(4, 14, 24, 36, 'light', 2), ...Array.from({ length: 9 }, (_, i) => c(9 + (i % 3) * 7, 20 + Math.floor(i / 3) * 7, 2.4, 'main')), arrowR(28, 36, 32), q(36, 14, 24, 36, 'light', 2), ...dots([[40, 20], [54, 18], [46, 30], [42, 42], [56, 40], [50, 26], [38, 34], [54, 46], [46, 44]], 2.4, 'accent')] },
   v_heatengine: { parts: [q(16, 20, 24, 30, 'main', 2, G.slate), q(20, 24, 16, 10, 'light', 1), p('M28 34 V46 L44 52', 'line'), c(46, 52, 6, 'accent'), c(46, 52, 2, 'line'), p('M22 16 C20 10 24 6 22 2 M32 16 C30 10 34 6 32 2', 'line'), p('M14 56 L18 52 L22 56', 'main', G.red)] },
   // VET-03-06 Modern fysik
@@ -182,7 +182,7 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   v_elements: { parts: [...Array.from({ length: 12 }, (_, i) => q(4 + (i % 4) * 14.5, 10 + Math.floor(i / 4) * 15, 12, 12, [0, 3, 5, 10].includes(i) ? 'accent' : 'main', 2))] },
   v_atomicnumber: { parts: [q(12, 10, 40, 44, 'main', 4), q(18, 16, 10, 6, 'light', 1), q(18, 40, 28, 6, 'light', 1), c(32, 30, 6, 'accent')] },
   v_periodicgroups: { parts: [...Array.from({ length: 18 }, (_, i) => q(4 + (i % 6) * 9.5, 12 + Math.floor(i / 6) * 13, 8, 11, i % 6 === 0 ? 'accent' : i % 6 === 5 ? 'accent2' : 'main', 1.5)), q(2, 52, 60, 2, 'line', 1)] },
-  v_metalsnonmetals: { parts: [q(4, 18, 26, 26, 'main', 4, G.slate), p('M8 24 L16 18 M10 34 L24 22', 'light'), ...dots([[42, 24], [52, 30], [44, 40]], 6, 'accent', G.yellow)] },
+  v_metalsnonmetals: { parts: [q(4, 18, 26, 26, 'main', 4, G.slate), p('M8 24 L16 18 M10 34 L24 22', 'line'), ...dots([[42, 24], [52, 30], [44, 40]], 6, 'accent', G.yellow)] },
   v_isotopes: { parts: [c(18, 32, 12, 'light'), ...dots([[14, 30], [20, 34], [18, 28]], 3.5, 'main', G.red), c(46, 32, 14, 'light'), ...dots([[42, 30], [48, 34], [46, 28], [50, 28], [42, 36]], 3.5, 'main', G.red), c(18, 32, 12, 'line'), c(46, 32, 14, 'line')] },
   v_valence: { parts: [c(32, 32, 6, 'main'), c(32, 32, 14, 'line'), c(32, 32, 24, 'line'), ...dots([[46, 32], [18, 32]], 2.6, 'light'), ...dots([[56, 32], [32, 8], [8, 32]], 3.5, 'accent')] },
   // VET-04-02 Bindningar
@@ -287,7 +287,7 @@ export const R06_MODULE_MOTIFS: Record<string, Motif> = {
   v_eclipse: { parts: [...sun(32, 32, 16), c(36, 30, 14, 'main', G.slate)] },
   v_constellations: { parts: [...[[10, 14], [22, 22], [34, 18], [44, 30], [56, 26], [40, 48], [22, 44]].map(([x, y]) => star(x!, y!, 3.5, 'main', G.yellow)), p('M10 14 L22 22 L34 18 L44 30 L56 26 M44 30 L40 48 L22 44 L22 22', 'line')] },
   v_orbits: { parts: [...sun(32, 32, 5), p('M14 32 C14 20 50 20 50 32 C50 44 14 44 14 32 Z', 'line'), p('M4 32 C4 14 60 14 60 32 C60 50 4 50 4 32 Z', 'line'), c(50, 32, 3, 'main', G.blue), c(12, 22, 3, 'main', G.red)] },
-  v_ecliptic: { parts: [c(32, 32, 24, 'light'), c(32, 32, 24, 'line'), p('M8 40 L56 24', 'line'), p('M8 32 H56', 'light'), c(20, 36, 3.5, 'main', G.yellow), c(44, 28, 3, 'main', G.blue)] },
+  v_ecliptic: { parts: [c(32, 32, 24, 'light'), c(32, 32, 24, 'line'), p('M8 40 L56 24', 'line'), p('M8 32 H56', 'line'), c(20, 36, 3.5, 'main', G.yellow), c(44, 28, 3, 'main', G.blue)] },
   v_celestialtime: { parts: [p('M32 10 V32', 'line'), p('M8 44 C8 36 56 36 56 44 C56 52 8 52 8 44 Z', 'light'), p('M8 44 C8 36 56 36 56 44 C56 52 8 52 8 44 Z', 'line'), p('M32 34 L46 46 L32 44 Z', 'main'), ...sun(52, 12, 4)] },
   // VET-06-03 Stjärnor
   v_starbirth: { parts: [p('M6 40 C4 24 18 12 32 14 C48 10 60 24 56 40 C52 54 32 58 18 52 C10 50 6 46 6 40 Z', 'main', G.purple), p('M14 36 C20 28 30 34 36 26 C42 20 50 26 52 32', 'line'), star(32, 36, 6, 'main', G.yellow), ...dots([[20, 44], [44, 42]], 1.6, 'light')] },
