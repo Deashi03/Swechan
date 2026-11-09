@@ -58,6 +58,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'känsla.': () => import('./emotions').then((m) => m.EMOTION_MOTIFS),
   'emo.': () => import('./emotions2').then((m) => m.EMO2_MOTIFS),
   'tanke.': () => import('./mind').then((m) => m.MIND_MOTIFS),
+  'drag.': () => import('./traits').then((m) => m.TRAIT_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
