@@ -4,9 +4,9 @@
  * drawn with their own arms (so a pose never shows a third arm), pregnant women in profile, and
  * abstract words as small symbolic scenes with a grey reference where it helps.
  */
-import { C, all, arrow, circle, ellipse, g, hand, line, path, rect, sparkle, star, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, star, type Svg } from './kit';
 import { HL, bubble, cloud, cup, heart, padlock, shield, sun, thought } from './people';
-import { coin, drop, greyed, sepia, table } from './blindFix';
+import { coin, drop, greyed, plate, sepia, table } from './blindFix';
 import { childIcon, wheatIcon } from './labelIcons';
 
 type Pt = [number, number];
@@ -243,9 +243,15 @@ export const PARENTING_MOTIFS: Record<string, Svg> = {
   'barn.trotsålder': all(ground, g('translate(98 40)', rect(-14, -6, 28, 14, '#f6c9d4', 2, C.ink, 1.6), rect(-14, -10, 28, 5, C.white, 2, C.ink, 1.4), ...[-4, 4].map((x) => all(rect(x - 1.4, -20, 2.8, 10, '#8cc7e8', 0.6, C.ink, 0.8), path(`M${x} -24 C${x + 2} -21 ${x + 1} -20 ${x} -20 C${x - 1} -20 ${x - 2} -21 ${x} -24 Z`, C.orange, null)))), tot({ x: 50, h: 0.62, mood: 'angry', l: [[-13, -38], [8, -30], [8, -30]], r: [[13, -38], [-8, -26], [-8, -26]] }), bubble(22, 30, 26, xMark(22, 29, 6)), line('M20 112 l-6 -6 M80 112 l6 -6', HL, 2), line('M34 46 l-5 -3 M66 46 l5 -3', HL, 1.6)),
   'barn.bli-torr': all(ground, path('M30 112 C24 112 22 96 30 90 L64 90 C72 96 70 112 64 112 Z', '#f6a0b8', C.ink, 1.8), tot({ x: 47, h: 0.6, y: 96, legs: 'sit', mood: 'laugh', l: [[-13, -38], [-24, -48], [-28, -60]], r: [[13, -38], [24, -48], [28, -60]] }), diaper(96, 76, 1.3), xMark(96, 76, 14), star(18, 24, 5), star(84, 24, 4)),
   // ── Uppfostran och gränser ─────────────────────────────────────────────
-  'barn.uppfostra': all(ground, fig({ x: 24, h: 0.9, long: true, top: C.orange, legs: 'kneel', mood: 'smile', l: [[-13, -38], [-18, -22], [-16, -8]], r: [[13, -38], [26, -34], [34, -26]] }), kid({ x: 56, h: 0.55, mood: 'smile', r: [[13, -38], [22, -34], [28, -30]] }), fig({ x: 96, h: 0.95, top: C.purple, hair: '#c9ced4', mood: 'smile', l: [[-13, -38], [-24, -16], [-34, 4]] }), bubble(30, 18, 34, g('translate(30 17)', hand(-6, 0, 0.7, 0), g('scale(-1 1)', hand(-6, 0, 0.7, 0)))), circle(69, 76, 7, 'none', HL, 1.8)),
-  'barn.uppfostran': all(ground, rect(50, 104, 70, 8, '#d8d0c0', 1, C.ink, 1.4), rect(82, 96, 38, 8, '#d8d0c0', 1, C.ink, 1.4), mom({ x: 14, h: 0.8, mood: 'smile', r: [[13, -38], [20, -16], [21, 7]] }), tot({ x: 36, h: 0.4, mood: 'smile', l: [[-13, -38], [-20, -36], [-24, -34]] }), kid({ x: 64, h: 0.52, y: 104, mood: 'smile' }), fig({ x: 100, h: 0.68, y: 96, top: C.sky, bottom: C.navy, mood: 'smile' }),
-    heart(36, 60, 0.7), g('translate(64 40)', rect(-7, -8, 14, 16, C.white, 1.5, C.ink, 1.2), check(-1, -3, 0.35), xMark(-1, 4, 2.4)), g('translate(80 20)', hand(-4, 0, 0.5, 0), g('scale(-1 1)', hand(-4, 0, 0.5, 0))), line('M44 66 C50 52 56 48 58 46 M72 36 C74 30 76 26 78 26', HL, 1.6, '3 3')),
+  'barn.uppfostra': all(rect(0, 0, 120, 120, '#f6efe2', 0, null), dad({ x: 34, legs: 'sit', y: 104, mood: 'smile', l: [[-13, -38], [-24, -24], [-22, -30]], r: [[13, -38], [24, -24], [22, -30]] }), kid({ x: 88, h: 0.7, legs: 'sit', y: 104, mood: 'smile', l: [[-13, -38], [-24, -24], [-22, -30]], r: [[13, -38], [24, -24], [22, -30]] }),
+    ...[[15.5, 49.4, 0.84], [75.1, 66.4, 0.588]].map(([x, y, k]) => g(`translate(${x} ${y}) scale(${k! / 0.84})`, line('M0 0 L0 -15', C.silver, 3), line('M0 0 L0 -15', C.ink, 0.6), line('M-3 -15 L-3 -21 M0 -15 L0 -21 M3 -15 L3 -21 M-3 -15 L3 -15', C.ink, 1.4))),
+    ...[[52.5, 49.4, 0.84], [100.9, 66.4, 0.588]].map(([x, y, k]) => g(`translate(${x} ${y}) scale(${k! / 0.84})`, path('M-1.6 0 L-1.6 -22 C2 -20 3 -14 1.6 -8 L1.6 0 Z', C.silver, C.ink, 1.2))),
+    table(84, 4, 116), plate(34, 83, ellipse(34, 81, 6, 2.2, '#e8a040', null)), plate(88, 83, ellipse(88, 81, 6, 2.2, '#e8a040', null)), line('M58 24 C66 16 74 20 80 34', HL, 2.2, '4 3'), arrow(78, 30, 81, 37, HL, 2.2)),
+  'barn.uppfostran': all(rect(0, 0, 44, 120, '#e8f0f6', 0, null), rect(44, 0, 76, 120, '#f6efe2', 0, null), ground, mom({ x: 14, h: 0.62, mood: 'smile', r: [[13, -38], [18, -16], [16, 6]] }), tot({ x: 30, h: 0.34, top: C.yellow, bottom: C.denim, mood: 'smile', l: [[-13, -38], [-20, -36], [-24, -32]] }),
+    arrow(18, 20, 70, 20, HL, 5), mom({ x: 56, h: 0.5, y: 96, hair: '#7a6a6a', mood: 'laugh', l: [[-13, -38], [-8, -24], [-2, -26]], r: [[13, -38], [8, -24], [2, -26]] }), heart(56, 42, 0.6),
+    rect(106, 22, 12, 90, '#a0673d', 1, C.ink, 1.6), path('M118 24 L108 30 L108 108 L118 112 Z', '#c98a5a', C.ink, 1.6), circle(110, 70, 1.4, C.gold, C.ink, 0.8),
+    fig({ x: 74, h: 0.7, hair: '#d3d6db', top: C.lilac, mood: 'smile' }), line('M84.6 80 L86 112', C.brown, 2.6),
+    fig({ x: 97, h: 0.84, top: C.yellow, bottom: C.denim, mood: 'smile', l: [[-13, -38], [-22, -30], [-26, -26]], r: [[13, -38], [20, -30], [16, -18]] })),
   'barn.tillsägelse': all(ground, rect(6, 30, 50, 76, '#f6efe2', 1, C.grey2, 1.4), path('M16 70 C20 60 28 76 34 64 C38 56 44 66 46 60', 'none', '#e85a5a', 2.6), kid({ x: 34, h: 0.52, mood: 'shock', r: [[13, -38], [6, -54], [4, -70]] }), dad({ x: 90, mood: 'neutral', l: [[-13, -38], [-20, -50], [-20, -66]] }), bubble(98, 14, 18, line('M98 8 L98 13 M98 16.5 L98 17', HL, 2.6))),
   'barn.skälla-på': all(ground, dad({ x: 40, mood: 'shout', top: C.red, l: [[-13, -38], [-20, -24], [-18, -8]], r: [[13, -38], [26, -46], [36, -52]] }), kid({ x: 92, h: 0.5, mood: 'cry' }), path('M54 10 L60 18 L66 8 L70 20 L78 12 L76 24 L86 26 L76 30', 'none', RED, 2.4), line('M64 34 l6 2 M62 42 l8 0', RED, 2)),
   'barn.lyda': all(ground, mom({ x: 28, mood: 'smile', r: [[13, -38], [24, -44], [36, -46]] }), rect(84, 86, 30, 26, '#c8a070', 2, C.ink, 1.8), ball(92, 84, 4), kid({ x: 66, h: 0.5, mood: 'smile', r: [[13, -38], [18, -32], [22, -30]] }), g('translate(86 70)', rect(-5, -5, 10, 10, '#5a8ae0', 1, C.ink, 1.2)), arrow(86, 76, 92, 84, C.grey, 1.6), check(100, 40, 1)),
