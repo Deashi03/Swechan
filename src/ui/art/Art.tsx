@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import mapping from '../../content/data/catalog/publishedMapping.json';
-import { MODULE_MOTIF, ROOT_HUE, ROOT_MOTIF } from './motifs';
+import { AREA_MOTIF, MODULE_MOTIF, ROOT_HUE, ROOT_MOTIF } from './motifs';
 import { renderArt } from './render';
 
 const PREFIX_ROOT: Record<string, string> = { VAR: 'R01', MAN: 'R02', SAM: 'R03', HIS: 'R04', NAT: 'R05', VET: 'R06', TEK: 'R07', KUL: 'R08' };
@@ -17,8 +17,8 @@ function rootOf(id: string): string | undefined {
 }
 
 /**
- * Illustration for a root area, a catalog module or a published m.* module.
- * Sub-areas and topic groups have no picture (yet).
+ * Illustration for a root area, a sub-area (överämne, e.g. R01-A01), a catalog
+ * module or a published m.* module. Topic groups have no picture (yet).
  */
 export function artFor(id: string): { motif: string; hue: number } | null {
   const root = rootOf(id);
@@ -30,6 +30,7 @@ export function artFor(id: string): { motif: string; hue: number } | null {
     return motif ? { motif, hue } : null;
   }
   if (id.startsWith('SWC-')) return MODULE_MOTIF[id] ? { motif: MODULE_MOTIF[id]!, hue } : null;
+  if (id.length === 7) return AREA_MOTIF[id] ? { motif: AREA_MOTIF[id]!, hue } : null;
   return id.length === 3 && ROOT_MOTIF[id] ? { motif: ROOT_MOTIF[id]!, hue } : null;
 }
 
