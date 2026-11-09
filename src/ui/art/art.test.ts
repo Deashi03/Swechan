@@ -30,10 +30,10 @@ describe('illustrations (0.5)', () => {
     for (const m of motifs) expect(others.has(m), m).toBe(false);
     for (const k of Object.values(GROUP_MOTIF)) expect(MOTIFS[k], k).toBeDefined();
   });
-  it('every catalog module in the finished root areas (Vardag, Människan, Samhälle) has a picture', () => {
+  it('every catalog module in the finished root areas (Vardag, Människan, Samhälle, Historia) has a picture', () => {
     const catalog = JSON.parse(fs.readFileSync('planning/catalog/swechan-catalog.v1.json', 'utf8')) as { modules: { catalogId: string }[] };
-    const done = catalog.modules.filter((m) => /^SWC-(VAR|MAN|SAM)-/.test(m.catalogId));
-    expect(done.length).toBe(756);
+    const done = catalog.modules.filter((m) => /^SWC-(VAR|MAN|SAM|HIS)-/.test(m.catalogId));
+    expect(done.length).toBe(1008);
     for (const m of done) { expect(artFor(m.catalogId), m.catalogId).not.toBeNull(); expect(MOTIFS[MODULE_MOTIF[m.catalogId]!], m.catalogId).toBeDefined(); }
   });
   it('catalog modules with a picture never share a motif with each other or with categories', () => {

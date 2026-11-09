@@ -20,6 +20,7 @@ import { GROUP_MOTIFS } from './groupMotifs';
 import { R01_MODULE_MOTIF, R01_MODULE_MOTIFS } from './moduleArtR01';
 import { R02_MODULE_MOTIF, R02_MODULE_MOTIFS } from './moduleArtR02';
 import { R03_MODULE_MOTIF, R03_MODULE_MOTIFS } from './moduleArtR03';
+import { R04_MODULE_MOTIF, R04_MODULE_MOTIFS } from './moduleArtR04';
 
 export const MOTIFS: Record<string, Motif> = {
   // ── root areas ──────────────────────────────────────────────
@@ -896,6 +897,7 @@ export const MOTIFS: Record<string, Motif> = {
   ...R01_MODULE_MOTIFS,
   ...R02_MODULE_MOTIFS,
   ...R03_MODULE_MOTIFS,
+  ...R04_MODULE_MOTIFS,
 };
 
 /** Motif per root area (R01…R08). */
@@ -955,4 +957,5 @@ export const MODULE_MOTIF: Record<string, string> = {
   ...R01_MODULE_MOTIF,
   ...R02_MODULE_MOTIF,
   ...R03_MODULE_MOTIF,
+  ...R04_MODULE_MOTIF,
 };
