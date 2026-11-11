@@ -57003,7 +57003,6 @@
    "group": "svartsjuka",
    "quiz": false,
    "symbol": true,
-   "confusableWith": [],
    "blindTest": {
     "result": "pass",
     "round": "0.24.0",
@@ -57169,7 +57168,6 @@
    "group": "tillfredsställande",
    "quiz": false,
    "symbol": true,
-   "confusableWith": [],
    "blindTest": {
     "result": "synonym",
     "round": "0.24.0",
@@ -84633,7 +84631,12 @@
    "motif": "demo.demokrati",
    "group": "demokrati",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "9eda6371"
+   }
   },
   {
    "senseId": "s.diktatur.1",
@@ -84641,7 +84644,12 @@
    "motif": "demo.diktatur",
    "group": "demokrati",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "4ec65a25"
+   }
   },
   {
    "senseId": "s.diktator.1",
@@ -84689,7 +84697,12 @@
    "motif": "demo.regim",
    "group": "demokrati",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "984dfddf"
+   }
   },
   {
    "senseId": "s.våld.1",
@@ -84759,14 +84772,6 @@
    }
   },
   {
-   "senseId": "s.rösträtt.1",
-   "kind": "illustration",
-   "motif": "demo.rösträtt",
-   "group": "rösträtt",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.väljare.1",
    "kind": "illustration",
    "motif": "demo.väljare",
@@ -84779,7 +84784,12 @@
    "motif": "demo.röstberättigad",
    "group": "rösträtt",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "994093f9"
+   }
   },
   {
    "senseId": "s.allmän-rösträtt.1",
@@ -84833,14 +84843,6 @@
    "motif": "demo.delta",
    "group": "rösträtt",
    "quiz": false
-  },
-  {
-   "senseId": "s.utöva.1",
-   "kind": "illustration",
-   "motif": "demo.utöva",
-   "group": "rösträtt",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.inflytande.1",
@@ -84999,14 +85001,6 @@
    }
   },
   {
-   "senseId": "s.statsmakt.1",
-   "kind": "illustration",
-   "motif": "demo.statsmakt",
-   "group": "maktfördelning",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.grundlag.1",
    "kind": "illustration",
    "motif": "demo.grundlag",
@@ -85120,28 +85114,17 @@
    }
   },
   {
-   "senseId": "s.ansvarig.1",
-   "kind": "illustration",
-   "motif": "demo.ansvarig",
-   "group": "maktfördelning",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.skyldighet.1",
    "kind": "illustration",
    "motif": "demo.skyldighet",
    "group": "skyldighet",
    "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.medborgerlig.1",
-   "kind": "illustration",
-   "motif": "demo.medborgerlig",
-   "group": "skyldighet",
-   "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "dda27043"
+   }
   },
   {
    "senseId": "s.grundläggande.1",
@@ -85221,7 +85204,12 @@
    "motif": "demo.föreningsfrihet",
    "group": "skyldighet",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "2dce09f0"
+   }
   },
   {
    "senseId": "s.inskränka.1",
@@ -85303,17 +85291,6 @@
    "quiz": false
   },
   {
-   "senseId": "s.representera.1",
-   "kind": "illustration",
-   "motif": "demo.representera",
-   "group": "opinion",
-   "quiz": false,
-   "confusableWith": [
-    "s.företräda.1"
-   ],
-   "symbol": true
-  },
-  {
    "senseId": "s.representant.1",
    "kind": "illustration",
    "motif": "demo.representant",
@@ -85326,10 +85303,12 @@
    "motif": "demo.företräda",
    "group": "opinion",
    "quiz": false,
-   "confusableWith": [
-    "s.representera.1"
-   ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "0571b16f"
+   }
   },
   {
    "senseId": "s.folkvald.1",
@@ -85378,15 +85357,12 @@
    "motif": "demo.intresseorganisation",
    "group": "opinion",
    "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.institution.1",
-   "kind": "illustration",
-   "motif": "demo.institution",
-   "group": "institution",
-   "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "f29c1a2e"
+   }
   },
   {
    "senseId": "s.demokratisk.1",
@@ -85467,7 +85443,12 @@
    "motif": "demo.offentlighetsprincip",
    "group": "institution",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "72e009c2"
+   }
   },
   {
    "senseId": "s.allmän-handling.1",
@@ -85631,7 +85612,12 @@
    "motif": "svpol.verkställa",
    "group": "svpol-riksdag",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "ecd00409"
+   }
   },
   {
    "senseId": "s.statsminister.1",
@@ -85679,7 +85665,12 @@
    "motif": "svpol.utse",
    "group": "svpol-ministrar",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "2ef25198"
+   }
   },
   {
    "senseId": "s.departement.1",
@@ -85782,20 +85773,17 @@
    }
   },
   {
-   "senseId": "s.politisk.1",
-   "kind": "illustration",
-   "motif": "svpol.politisk",
-   "group": "svpol-partier",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.parti.1",
    "kind": "illustration",
    "motif": "svpol.parti",
    "group": "svpol-partier",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "097aa10c"
+   }
   },
   {
    "senseId": "s.riksdagsparti.1",
@@ -85856,7 +85844,12 @@
    "motif": "svpol.ungdomsförbund",
    "group": "svpol-partier",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "50bd213b"
+   }
   },
   {
    "senseId": "s.partiprogram.1",
@@ -86094,14 +86087,6 @@
    "quiz": false
   },
   {
-   "senseId": "s.bereda.1",
-   "kind": "illustration",
-   "motif": "svpol.bereda",
-   "group": "svpol-utskott",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.beredning.1",
    "kind": "illustration",
    "motif": "svpol.beredning",
@@ -86181,14 +86166,6 @@
    "motif": "svpol.debatt",
    "group": "svpol-debatt",
    "quiz": false
-  },
-  {
-   "senseId": "s.debattera.1",
-   "kind": "illustration",
-   "motif": "svpol.debattera",
-   "group": "svpol-debatt",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.talarstol.1",
@@ -86316,7 +86293,12 @@
    "motif": "svpol.regeringsbildning",
    "group": "svpol-regeringsbildning",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "a825e3b5"
+   }
   },
   {
    "senseId": "s.talmansrunda.1",
@@ -86350,7 +86332,12 @@
    "motif": "svpol.koalition",
    "group": "svpol-regeringsbildning",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "59c0036a"
+   }
   },
   {
    "senseId": "s.koalitionsregering.1",
@@ -86384,7 +86371,12 @@
    "motif": "svpol.stödparti",
    "group": "svpol-regeringsbildning",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "86974548"
+   }
   },
   {
    "senseId": "s.samarbetsavtal.1",
@@ -86505,14 +86497,6 @@
    }
   },
   {
-   "senseId": "s.valkampanj.1",
-   "kind": "illustration",
-   "motif": "valet.valkampanj",
-   "group": "valkampanj",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.kampanja.1",
    "kind": "illustration",
    "motif": "valet.kampanja",
@@ -86525,7 +86509,12 @@
    "motif": "valet.budskap",
    "group": "budskap",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "96da99dc"
+   }
   },
   {
    "senseId": "s.vallöfte.1",
@@ -86533,7 +86522,12 @@
    "motif": "valet.vallöfte",
    "group": "vallöfte",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "534aeb8e"
+   }
   },
   {
    "senseId": "s.valfråga.1",
@@ -86909,14 +86903,6 @@
    }
   },
   {
-   "senseId": "s.valkrets.1",
-   "kind": "illustration",
-   "motif": "valet.valkrets",
-   "group": "valdistrikt",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.mandat.1",
    "kind": "illustration",
    "motif": "valet.mandat",
@@ -87000,7 +86986,12 @@
    "motif": "valet.valkretsmandat",
    "group": "mandat",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "e35ce193"
+   }
   },
   {
    "senseId": "s.utjämningsmandat.1",
@@ -87144,7 +87135,12 @@
    "motif": "valet.taktikrösta",
    "group": "spärr.2",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "e8337454"
+   }
   },
   {
    "senseId": "s.stödröst.1",
@@ -87361,7 +87357,12 @@
    "motif": "valet.valresultat",
    "group": "valresultat",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "5117b218"
+   }
   },
   {
    "senseId": "s.röstandel.1",
