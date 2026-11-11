@@ -55,7 +55,6 @@ const moon = (x: number, y: number, r = 7) => path(`M${x + r * 0.3} ${y - r} A${
 const night = (x = 4, y = 4, w = 112, h = 50) => all(rect(x, y, w, h, '#2f3e66', 10, null), moon(x + w - 16, y + 14, 7), star(x + 14, y + 12, 2.6, '#f6e08a'), star(x + 40, y + 22, 2, '#f6e08a'), star(x + w - 40, y + 30, 2.2, '#f6e08a'));
 const flagSE = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, line('M0 0 L0 -26', C.ink, 1.6), rect(0, -26, 18, 11, '#3a6ab0', 0, C.ink, 1), rect(5.5, -26, 3.4, 11, C.yellow, 0, null), rect(0, -22.2, 18, 3.4, C.yellow, 0, null));
 const flag = (x: number, y: number, col: string, s = 1) => g(`translate(${x} ${y}) scale(${s})`, line('M0 0 L0 -26', C.ink, 1.6), path('M0 -26 L18 -22 L0 -16 Z', col, C.ink, 1.2), circle(5, -21, 2, C.white, null));
-const megaphone = (x: number, y: number, s = 1, flip = false) => g(`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`, path('M0 -3 L12 -9 L12 9 L0 3 Z', C.white, C.ink, 1.4), rect(-4, -3, 5, 6, C.grey, 1, C.ink, 1.2), path('M15 -6 q3 6 0 12 M18 -9 q4 9 0 18', 'none', HL, 1.3));
 
 // ── Election things ──────────────────────────────────────────────────
 /** Party colours (no real parties). */
@@ -132,10 +131,6 @@ const pen = (x: number, y: number, s = 1, rot = -40) => g(`translate(${x} ${y}) 
 /** Pile of ballots (count table). */
 const pile = (x: number, y: number, col: string, n = 4, paper = YEL) => all(...Array.from({ length: n }, (_, i) => g(`translate(${x + (i % 2) * 1.5} ${y - i * 2.6})`, rect(-9, -3, 18, 5, paper, 1, C.ink, 0.9), circle(-5, -0.5, 1.5, col, null))));
 const tally = (x: number, y: number, n = 5, col: string = C.ink) => all(...Array.from({ length: Math.min(n, 4) }, (_, i) => line(`M${x + i * 3} ${y - 5} L${x + i * 3} ${y + 5}`, col, 1.3)), n >= 5 ? line(`M${x - 1.5} ${y + 4} L${x + 10.5} ${y - 4}`, col, 1.3) : '');
-/** Balance (scale) with the beam tilted by `tilt` degrees; pans drawn by l and r. */
-const scaleB = (x: number, y: number, tilt: number, l: Svg = '', r: Svg = '', s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-14 40 L14 40 L4 34 L-4 34 Z', C.brown, C.ink, 1.4), line('M0 34 L0 -2', C.ink, 2.6),
-  g(`rotate(${tilt})`, line('M-34 0 L34 0', C.ink, 2.6), line('M-32 0 L-40 18 M-32 0 L-24 18 M32 0 L24 18 M32 0 L40 18', C.ink, 1), path('M-44 18 L-20 18 Q-32 26 -44 18 Z', C.gold, C.ink, 1.2), path('M20 18 L44 18 Q32 26 20 18 Z', C.gold, C.ink, 1.2), g('translate(-32 16)', g(`rotate(${-tilt})`, l)), g('translate(32 16)', g(`rotate(${-tilt})`, r))), circle(0, 0, 3, C.gold, C.ink, 1.2));
-const cube = (col: string, w = 10, h = 10, dy = 0) => rect(-w / 2, -h - dy, w, h, col, 1.5, C.ink, 1.1);
 /** Small icons for topics: school, hospital, tree, bridge, coin. */
 const schoolI = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-9, -6, 18, 12, '#e6d3b3', 1, C.ink, 1.1), path('M-11 -5 L0 -12 L11 -5 Z', '#b0533c', C.ink, 1.1), rect(-2, 0, 4, 6, C.brown, 0.5, C.ink, 0.8), circle(0, -6.5, 1.6, C.white, C.ink, 0.6));
 const hospI = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-9, -9, 18, 16, C.white, 2, C.ink, 1.1), path('M-2 -6 L2 -6 L2 -3 L5 -3 L5 1 L2 1 L2 4 L-2 4 L-2 1 L-5 1 L-5 -3 L-2 -3 Z', RED, null));
@@ -146,7 +141,6 @@ const plantI = (x: number, y: number, s = 1, steam = true) => g(`translate(${x} 
 const pylon = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-6 0 L0 -30 L6 0 M-4 -10 L4 -10 M-8 -22 L8 -22 M-3 -18 L3 -6 M3 -18 L-3 -6', 'none', C.dark, 1.4));
 const sumBar = (x: number, y: number) => bars(x, y, [18, 12, 22, 8], PC, 6, 2);
 const bulb = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-9 -9 l-3 -3 M0 -12 l0 -4 M9 -9 l3 -3', 'none', C.gold, 1.6), circle(0, -2, 6, C.yellow, C.ink, 1.2), rect(-3, 3.5, 6, 4.5, C.grey, 1, C.ink, 1));
-const box = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-12, -10, 24, 16, C.tan, 1, C.ink, 1.4), path('M-12 -10 L-8 -15 L8 -15 L12 -10', 'none', C.ink, 1.3), rect(-6, -18, 6, 8, C.white, 1, C.ink, 0.9), circle(5, -15, 3, '#7ac06a', C.ink, 0.9));
 const key = (x: number, y: number, s = 1, rot = 0) => g(`translate(${x} ${y}) rotate(${rot}) scale(${s})`, circle(-8, 0, 5, C.gold, C.ink, 1.4), circle(-8, 0, 1.8, C.paper, C.ink, 0.8), rect(-3, -1.6, 14, 3.2, C.gold, 1, C.ink, 1.1), rect(7, 1, 2.4, 4, C.gold, 0.5, C.ink, 0.9), rect(3, 1, 2.4, 3, C.gold, 0.5, C.ink, 0.9));
 const confetti = (pts: number[][]) => all(...pts.map(([x, y], i) => g(`translate(${x} ${y}) rotate(${(i * 47) % 180})`, rect(-2, -1.2, 4, 2.4, PC[i % PC.length]!, 0.6, null))));
 /** Almost full circle with an arrow head: again, once more. */
@@ -159,18 +153,16 @@ export const ELECTION_MOTIFS: Record<string, Svg> = {
   'valet.kandidat': all(ground, g('translate(36 50) scale(2.4)', rect(-9, -12, 18, 24, YEL, 1.5, C.ink, 0.6), circle(-4.5, -7.5, 2.6, PC[1]!, C.ink, 0.4), rect(-0.5, -9, 7.5, 3, PC[1]!, 1, null), rect(-8, 2.2, 16, 4.4, '#fde0b8', 0.8, null), ...[0, 1, 2].map((i) => all(circle(-4.5, -0.4 + i * 4.4, 1.6, C.skin, C.ink, 0.4), line(`M-2 ${-0.4 + i * 4.4} L6 ${-0.4 + i * 4.4}`, C.grey, 0.9)))), arrow(58, 72, 76, 62, HL, 2.4), fig(90, PC[1]!, 'laugh', { hairStyle: 'long' }), reach(90, 1, 1, 106, 20), palm(106, 15, 0.9)),
   // kandidera: she puts her own portrait into the empty place on the party's list.
   'valet.kandidera': all(ground, rect(10, 16, 46, 62, C.white, 3, C.ink, 1.6), rect(10, 16, 46, 10, PC[2]!, 3, C.ink, 1.4), ...[0, 1].map((i) => all(circle(20, 36 + i * 13, 4, C.skin, C.ink, 1), line(`M28 ${36 + i * 13} L50 ${36 + i * 13}`, C.grey, 2))), dash('M14 56 L52 56 L52 70 L14 70 Z', HL, 1.4), fig(92, PC[2]!, 'smile'), reach(92, 1, -1, 54, 62), g('translate(44 62)', rect(-8, -7, 16, 14, '#fde0b8', 2, C.ink, 1.2), circle(0, -1, 3.4, C.skin, C.ink, 0.9), path('M-5 7 C-5 2 5 2 5 7', PC[2]!, C.ink, 0.9)), arrow(70, 50, 58, 58, HL, 2)),
-  // väljare: a citizen with her envelope on the way to the ballot box (the voter, not the act).
-  'valet.väljare': all(ground, fig(40, C.orange, 'smile', { hairStyle: 'long' }), reach(40, 1, 1, 60, 62), env(64, 60, 0.8), urn(96, 98, 1, false), arrow(74, 66, 86, 76, HL, 2), idCard(22, 18, 0.8)),
   // valrörelse: the weeks before election day (filled calendar days leading up to the ballot box), and the streets full of posters and flags.
   'valet.valrörelse': all(ground, cal(6, 6, 76, 3, (i) => (i >= 6 && i < 20 ? '#fde0b8' : null), { mark: (i) => (i === 20 ? urn(0, 1, 0.22) : '') }), arrow(14, 62, 74, 62, HL, 2.4), poster(98, 112, 0.7, PC[0]), flag(14, 108, PC[2]!, 1), flag(34, 108, PC[3]!, 1), flag(54, 108, PC[4]!, 1), poster(76, 112, 0.62, PC[1])),
   // valkampanj: one party's whole effort in one colour: poster, flag, megaphone and leaflets, all aimed at the ballot box.
-  'valet.valkampanj': all(ground, poster(20, 112, 0.9, PC[1]), fig(60, PC[1]!, 'laugh'), reach(60, 1, 1, 78, 38), megaphone(80, 38, 1), flag(102, 112, PC[1]!, 1.1), leaflet(42, 102, 0.6, PC[1]), leaflet(50, 106, 0.6, PC[1], 15), say(98, 22, 26, 22, 92, 36, urn(98, 26, 0.38, true))),
+  'valet.valkampanj': all(ground, rect(4, 6, 112, 14, C.white, 3, C.ink, 1.4), ...[0, 1, 2, 3, 4, 5].map((i) => rect(8 + i * 14, 9, 12, 8, PC[1]!, 1, C.ink, 0.8)), arrow(92, 13, 100, 13, HL, 1.6), urn(108, 14, 0.24), poster(18, 112, 0.8, PC[1]), hut(60, 112, 1, PC[1]), poster(102, 112, 0.8, PC[1]), flag(36, 70, PC[1]!, 0.9), flag(84, 70, PC[1]!, 0.9), leaflet(36, 102, 0.6, PC[1], -12), leaflet(84, 102, 0.6, PC[1], 12), mini(60, 54, PC[1]!, 'smile', 0.7), dash('M6 26 L114 26 L114 114', PC[1]!, 1.4, '5 3'), dash('M6 26 L6 114', PC[1]!, 1.4, '5 3')),
   // kampanja: she hands out leaflets and talks to a passer-by in the street.
   'valet.kampanja': all(ground, fig(34, PC[0]!, 'laugh', { hairStyle: 'long' }), reach(34, 1, 1, 58, 62), leaflet(62, 60, 0.7, PC[0]), reach(34, 1, -1, 18, 64), leaflet(14, 64, 0.7, PC[0], -10), leaflet(16, 60, 0.7, PC[0], -4), fig(90, C.sky, 'smile'), reach(90, 1, -1, 68, 62), sb(34, 1, 1, 26, 20, (x, y) => urn(x, y + 4, 0.36, true))),
   // budskap: one short message (a star) goes from the speaker to everybody, who all get the same thing.
-  'valet.budskap': all(ground, fig(26, PC[2]!, 'laugh'), reach(26, 1, 1, 44, 40), sb(26, 1, 1, 26, 22, (x, y) => star(x, y + 1, 8, C.gold), -2, -4), ...[0, 1, 2].map((i) => all(mini(66 + i * 20, 96, [C.sky, C.orange, C.purple][i]!, 'smile', 1.1), say(66 + i * 20, 66, 16, 15, 66 + i * 20, 78, star(66 + i * 20, 66, 4.4, C.gold)))), arrow(56, 40, 92, 52, HL, 2.2)),
+  'valet.budskap': all(ground, fig(24, PC[2]!, 'laugh'), sb(24, 1, 1, 34, 28, (x, y) => star(x, y + 1, 10, C.gold), -2, 8), circle(55, 24, 19, 'none', HL, 2), poster(66, 112, 0.8, PC[2]), star(66, 77, 5, C.gold), leaflet(98, 70, 1.3, PC[2]), star(98, 75, 4.4, C.gold), tv(98, 100, 22, 14, star(98, 100, 4, C.gold))),
   // vallöfte: before the ballot box she promises (raised palm) a new school; after it the school stands there.
-  'valet.vallöfte': all(ground, fig(22, PC[3]!, 'smile', { hairStyle: 'long' }), reach(22, 1, -1, 8, 14), palm(8, 9, 0.9), sb(22, 1, 1, 28, 20, (x, y) => schoolI(x, y + 2, 1)), urn(62, 98, 0.7), arrow(46, 84, 54, 84, HL, 1.8), arrow(74, 84, 82, 84, HL, 1.8), schoolI(98, 96, 1.8), check(110, 72, 1.2)),
+  'valet.vallöfte': all(ground, fig(20, PC[3]!, 'smile', { hairStyle: 'long', h: 0.9 }), mini(54, 98, C.sky, 'smile', 1), sb(20, 0.9, 1, 34, 26, (x, y) => all(dash(`M${x - 10} ${y + 8} L${x - 10} ${y - 2} L${x} ${y - 9} L${x + 10} ${y - 2} L${x + 10} ${y + 8} Z`, C.ink, 1.4, '3 2'))), urn(80, 46, 0.5), arrow(64, 46, 70, 46, HL, 1.8), arrow(90, 46, 96, 46, HL, 1.8), schoolI(98, 96, 1.9), check(110, 70, 1.3), dash('M98 58 L98 74', HL, 1.4)),
   // valfråga: everybody thinks about the same issue (the hospital) on the way to the ballot box; other topics are grey.
   'valet.valfråga': all(ground, ...[0, 1, 2].map((i) => all(mini(22 + i * 26, 98, [C.sky, C.orange, C.green][i]!, 'flat', 1.1), say(22 + i * 26, 64, 18, 18, 22 + i * 26, 80, hospI(22 + i * 26, 65, 0.8)))), urn(100, 100, 0.8), arrow(84, 96, 88, 96, HL, 2), greyed(schoolI(84, 22, 1.1), treeI(104, 22, 1.4)), hospI(60, 22, 1.5), circle(60, 22, 15, 'none', HL, 2)),
   // valaffisch: a poster with a smiling candidate on a stand in the street.
@@ -237,8 +229,6 @@ export const ELECTION_MOTIFS: Record<string, Svg> = {
   'valet.valdeltagande': all(ground, station(86, 112, 0.7), ...Array.from({ length: 8 }, (_, i) => mini(10 + (i % 4) * 14, 66 + Math.floor(i / 4) * 24, PC[i % 6]!, 'smile', 0.7)), greyed(mini(30, 108 - 4, C.grey, 'flat', 0.7), mini(46, 108 - 4, C.grey, 'flat', 0.7)), arrow(64, 76, 72, 86, HL, 2), pie(90, 24, 16, [[C.green, 8], [C.grey2, 2]])),
   // vallokalundersökning: outside the polling station a reporter asks a voter which party she chose.
   'valet.vallokalundersökning': all(ground, station(26, 112, 0.8), fig(56, C.orange, 'smile', { hairStyle: 'long', h: 0.9 }), sb(56, 0.9, -1, 18, 16, (x, y) => circle(x, y, 4.4, PC[1]!, C.ink, 1)), fig(96, C.dark, 'smile'), reach(96, 1, -1, 72, 46), rect(68, 40, 6, 10, C.dark, 1.5, C.ink, 1), circle(71, 38, 4, C.grey, C.ink, 1.1), roll(108, 74, 0.34, 1), tv(102, 18, 22, 14, bars(94, 23, [6, 4, 8], PC, 4, 1, { base: false }))),
-  // överklaga: he holds up the result paper and takes it up the stairs to a higher authority.
-  'valet.överklaga': all(ground, path('M44 112 L44 102 L60 102 L60 92 L76 92 L76 82 L92 82 L92 112 Z', C.grey2, C.ink, 1.4), rect(70, 26, 44, 56, '#e6e2d8', 1, C.ink, 1.6), path('M66 28 L92 12 L118 28 Z', '#c9c2b4', C.ink, 1.6), ...[76, 88, 100, 110].map((x) => rect(x - 2, 40, 4, 40, C.white, 1, C.ink, 1)), fig(24, C.green, 'frown'), reach(24, 1, 1, 40, 26), g('translate(42 18)', rect(-8, -10, 16, 20, C.white, 1, C.ink, 1.2), bars(-5, 6, [8, 12, 6], PC, 3, 1, { base: false })), arrow(52, 30, 66, 24, HL, 2.2)),
   // omval: the same election once more: a second ballot-box day in the calendar, with a round arrow.
   'valet.omval': all(ground, cal(10, 8, 64, 3, () => null, { mark: (i) => (i === 3 ? greyed(urn(0, 1, 0.16)) : i === 17 ? urn(0, 1, 0.16) : '') }), path('M30 30 C30 60 50 64 62 58', 'none', HL, 2), arrow(58, 60, 64, 56, HL, 2), urn(94, 98, 1, true), ring(94, 88, 20, HL)),
   // ogiltig (om en röst): two ballots of different parties in one envelope: the vote does not count.
@@ -254,15 +244,13 @@ export const ELECTION_MOTIFS: Record<string, Svg> = {
   // valdistrikt: one small piece of a region (highlighted) whose people all vote at the same polling station.
   'valet.valdistrikt': all(ground, mapR(6, 8, 1, (i) => (i === 3 ? '#cfe3b8' : '#e9f1df'), all(line('M34 40 L62 40 M48 27 L50 54', C.ink, 0.8), path('M34 26 L48 27 L48 40 L34 40 Z', '#fde0b8', HL, 1.4))), station(98, 104, 0.6), mini(42, 98, C.orange, 'smile', 0.7), mini(58, 102, C.sky, 'smile', 0.7), arrow(56, 34, 86, 64, HL, 2)),
   // valkrets: a bigger part of the country (outlined) with its own seats.
-  'valet.valkrets': all(ground, mapR(6, 14, 1.1, (i) => (i === 2 ? '#fde0b8' : '#e9f1df'), all(line('M4 44 L35 40 M18 28 L22 57', C.ink, 0.6), path('M4 30 L34 26 L36 54 L8 58 Z', 'none', HL, 2))), hemi(94, 62, 18, seats([PC[0]!, 3], [PC[1]!, 4], [PC[2]!, 2], [PC[3]!, 3]), 2.6), arrow(48, 60, 72, 56, HL, 2)),
+  'valet.valkrets': all(ground, mapR(10, 10, 1.25, (i) => (i === 2 ? '#fde0b8' : '#eef3e6'), all(line('M5 44 L35 40 M19 28 L22 57', C.grey, 0.5), path('M4 30 L34 26 L36 54 L8 58 Z', 'none', HL, 2.4), urn(13, 37, 0.18), urn(27, 35, 0.18), urn(13, 50, 0.18), urn(28, 49, 0.18))), ...[0, 1, 2].map((i) => mini(100, 40 + i * 26, PC[i]!, 'smile', 0.8)), arrow(90, 66, 60, 66, HL, 2)),
   // mandat: one seat in the semicircle is highlighted; the winner sits down in her chair.
   'valet.mandat': all(ground, hemi(46, 66, 38, seats([PC[0]!, 9], [PC[1]!, 8], [PC[2]!, 6], [PC[3]!, 7]), 2.8), circle(46 + 38 * Math.cos(Math.PI * 0.18), 66 - 38 * Math.sin(Math.PI * 0.18), 6, 'none', HL, 2), chair(96, 92, PC[3]!), fig(98, PC[3]!, 'laugh', { h: 0.62, hairStyle: 'long' }), arrow(84, 40, 74, 50, HL, 2)),
   // mandatperiod: from one ballot box to the next there are four years; meanwhile she has her seat.
   'valet.mandatperiod': all(ground, urn(16, 98, 0.7), urn(104, 98, 0.7), line('M30 70 L90 70', C.ink, 2), ...[0, 1, 2, 3].map((i) => all(rect(32 + i * 15, 58, 12, 10, C.white, 1.5, C.ink, 1.1), rect(32 + i * 15, 58, 12, 3, '#e85a5a', 1, null))), arrow(30, 80, 90, 80, HL, 2), chair(60, 104, PC[1]!, 0.8), mini(58, 92, PC[1]!, 'smile', 0.8)),
   // valbar: she is grown up and may stand (ID card, check); the child may not yet (grey, cross).
   'valet.valbar': all(ground, fig(36, PC[2]!, 'laugh', { hairStyle: 'long' }), reach(36, 1, 1, 52, 48), idCard(58, 46, 0.9), okB(36, 8, 7), greyed(fig(88, C.sky, 'smile', { h: 0.55 })), noB(88, 50, 6), g('translate(96 78)', rect(-8, -10, 16, 20, C.white, 1, C.ink, 1.2), dash('M-5 -6 L5 -6 L5 2 L-5 2 Z', C.grey, 1))),
-  // folkvald: the people vote, and their votes lift her into her seat.
-  'valet.folkvald': all(chair(60, 46, PC[0]!, 1), mini(58, 34, PC[0]!, 'smile', 1.1, true), ...Array.from({ length: 5 }, (_, i) => all(mini(14 + i * 23, 100, PC[(i + 1) % 6]!, 'smile', 0.9), arrow(14 + i * 23, 84, 52 + i * 4, 66, HL, 1.4))), ground),
   // invald: her name on the list has a check and she walks in to the seats, with confetti.
   'valet.invald': all(ground, roll(22, 46, 0.9, 1, 0), hemi(84, 66, 30, seats([PC[0]!, 8], [PC[1]!, 8], [PC[2]!, 8]), 2.4), fig(62, PC[2]!, 'laugh', { hairStyle: 'long', h: 0.62 }), arrow(48, 92, 70, 76, HL, 2), confetti([[56, 30], [70, 24], [100, 22], [110, 34], [80, 18]])),
   // ersättare: the elected man is ill and leaves his seat; the substitute sits down in it.
@@ -270,7 +258,7 @@ export const ELECTION_MOTIFS: Record<string, Svg> = {
   // mandatfördelning: the semicircle and the bars: how the seats are divided between the parties.
   'valet.mandatfördelning': all(ground, hemi(60, 70, 46, seats([PC[0]!, 14], [PC[1]!, 10], [PC[2]!, 7], [PC[3]!, 12], [PC[4]!, 5]), 3), bars(30, 106, [14, 10, 7, 12, 5], PC, 9, 3)),
   // valkretsmandat: a region of the map has its own little group of seats, drawn inside it.
-  'valet.valkretsmandat': all(ground, mapR(10, 14, 1.3, (i) => (i === 1 ? '#fde0b8' : '#e9f1df'), hemi(47, 22, 9, seats([PC[0]!, 3], [PC[1]!, 2], [PC[2]!, 2]), 1.8)), hemi(96, 104, 16, seats([PC[0]!, 3], [PC[1]!, 2], [PC[2]!, 2]), 2.8), arrow(82, 44, 92, 80, HL, 2)),
+  'valet.valkretsmandat': all(ground, mapR(6, 4, 0.5, (i) => (i === 2 ? C.orange : '#eef3e6')), arrow(40, 28, 58, 44, HL, 2.2), hemi(64, 104, 50, [...Array<string>(14).fill(C.grey2), ...Array<string>(6).fill(C.orange), ...Array<string>(22).fill(C.grey2)], 3.6)),
   // utjämningsmandat: the small party got too few seats in the districts; extra seats (plus) even it out.
   'valet.utjämningsmandat': all(ground, hemi(46, 80, 38, seats([PC[0]!, 12], [PC[1]!, 12], [PC[2]!, 3], ['#ffffff', 3]), 3), ...[0, 1, 2].map((i) => all(circle(92 + i * 0, 30 + i * 16, 5, PC[2]!, C.ink, 1), T(102, 34 + i * 16, '+', 12, C.green))), arrow(86, 46, 78, 64, HL, 2)),
 
@@ -294,7 +282,7 @@ export const ELECTION_MOTIFS: Record<string, Svg> = {
   // småparti: one tiny party (small flag, few supporters) beside two big ones.
   'valet.småparti': all(ground, flag(20, 112, PC[0]!, 2.4), ...[0, 1, 2, 3].map((i) => mini(14 + i * 9, 104, PC[0]!, 'smile', 0.6)), flag(56, 112, PC[1]!, 2.2), ...[0, 1, 2].map((i) => mini(52 + i * 9, 104, PC[1]!, 'smile', 0.6)), flag(96, 112, PC[4]!, 0.9), mini(100, 104, PC[4]!, 'smile', 0.6), circle(100, 96, 14, 'none', HL, 2)),
   // taktikrösta: her heart is for the red party, but she puts a ballot of another party in the box, thinking of the result.
-  'valet.taktikrösta': all(ground, fig(30, C.orange, 'calm', { hairStyle: 'long' }), tb(30, 1, 1, 46, (x, y) => all(heart(x - 12, y + 1, 0.55, PC[0]!), arrow(x - 4, y, x + 6, y, HL, 1.6), ballot(x + 14, y, 0.6, { col: PC[1] }))), reach(30, 1, 1, 62, 70), env(66, 68, 0.6, { ballotCol: PC[1] }), urn(96, 100, 0.8)),
+  'valet.taktikrösta': all(ground, fig(28, C.orange, 'calm', { hairStyle: 'long' }), tb(28, 1, 1, 52, (x, y) => all(bars(x - 20, y + 8, [4, 14], [PC[0]!, PC[1]!], 6, 2, { base: false }), heart(x - 17, y - 2, 0.35, PC[0]!), arrow(x - 2, y, x + 8, y, HL, 1.4), check(x + 16, y, 0.7))), reach(28, 1, -1, 8, 66), greyed(ballot(8, 60, 0.7, { col: PC[0] })), heart(8, 46, 0.4, PC[0]!), reach(28, 1, 1, 62, 70), env(66, 68, 0.6, { ballotCol: PC[1] }), urn(98, 100, 0.8), arrow(76, 74, 88, 82, HL, 1.8)),
   // stödröst: a voter of the blue party gives her vote to the small party so that it gets over the dashed line.
   'valet.stödröst': all(ground, bars(52, 104, [50, 22], [PC[1]!, PC[4]!], 18, 10), dash('M46 86 L112 86', RED, 1.8, '4 3'), arrow(94, 92, 94, 76, C.green, 2.2), fig(22, PC[1]!, 'smile'), reach(22, 1, 1, 46, 52), ballot(52, 48, 0.8, { col: PC[4] }), arrow(62, 50, 86, 70, HL, 2), sb(22, 1, 1, 18, 16, (x, y) => heart(x, y + 1, 0.5, PC[1]!), -4)),
   // personval: the voter does not only choose the party (colour) but one of the people on its list.
@@ -313,8 +301,6 @@ export const ELECTION_MOTIFS: Record<string, Svg> = {
   'valet.rådgivande': all(ground, ...[0, 1, 2].map((i) => mini(14 + i * 18, 100, PC[i]!, 'smile', 0.8)), say(32, 64, 26, 18, 32, 82, all(bulb(26, 66, 0.6), check(38, 64, 0.6))), arrow(48, 66, 66, 58, HL, 2), fig(84, C.navy, 'calm'), tb(84, 1, 1, 20, (x, y) => q(x, y, 12)), arrow(100, 76, 112, 68, C.grey, 1.6), arrow(100, 82, 112, 90, C.grey, 1.6)),
   // bindande: a signed paper is chained and locked: it must be followed.
   'valet.bindande': all(ground, rect(30, 14, 46, 60, C.white, 2, C.ink, 1.6), line('M38 26 L68 26 M38 34 L68 34 M38 42 L60 42', C.grey, 2), path('M40 60 q6 -8 10 0 q4 6 10 -2', 'none', C.navy, 1.6), ...[0, 1, 2, 3, 4].map((i) => ellipse(20 + i * 16, 84, 8, 5, 'none', C.dark, 2.6)), padlock(60, 92, 1.4), pen(92, 60, 1.2, 30)),
-  // sakfråga: in the box goes a question about a thing (the bridge), not a face or a party (grey, crossed).
-  'valet.sakfråga': all(ground, urn(60, 98, 1.1), bridgeI(60, 44, 2.2), circle(60, 44, 24, 'none', HL, 2), greyed(mini(16, 30, PC[0]!, 'smile', 0.9), mini(104, 30, PC[1]!, 'smile', 0.9)), cross(16, 30, 1), cross(104, 30, 1)),
   // motståndare: a woman holds up a sign with a cross against the new bridge (thumb down).
   'valet.motståndare': all(ground, bridgeI(90, 92, 1.6), fig(36, C.green, 'angry', { hairStyle: 'long' }), reach(36, 1, 1, 52, 30), line('M52 34 L52 8', C.brown, 2.4), rect(40, -2 + 6, 24, 18, C.white, 2, C.ink, 1.4), cross(52, 13, 1), reach(36, 1, -1, 18, 44), thumb(16, 40, 0.8, true)),
   // förespråkare: a man holds up a sign with a check for the new bridge (thumb up).
@@ -336,7 +322,7 @@ export const ELECTION_MOTIFS: Record<string, Svg> = {
 
   // ── Valresultat och regeringsskifte ───────────────────────────────
   // valresultat: on the big board the votes (bars) and the seats (semicircle) of every party.
-  'valet.valresultat': all(ground, rect(6, 8, 108, 70, C.white, 4, C.ink, 1.8), bars(14, 66, [40, 26, 48, 16], PC, 10, 4), hemi(90, 60, 18, seats([PC[0]!, 6], [PC[1]!, 4], [PC[2]!, 7], [PC[3]!, 3]), 2.2), mini(30, 100, C.orange, 'smile', 0.9), mini(60, 100, C.sky, 'smile', 0.9, true), mini(90, 100, C.green, 'smile', 0.9)),
+  'valet.valresultat': all(ground, urn(18, 100, 0.8), arrow(30, 82, 40, 70, HL, 2), rect(42, 10, 74, 98, C.white, 4, C.ink, 1.8), bars(50, 62, [36, 22, 44, 14], PC, 12, 4), check(92, 12, 0.9), hemi(80, 100, 26, seats([PC[0]!, 7], [PC[1]!, 4], [PC[2]!, 9], [PC[3]!, 2]), 2.6)),
   // röstandel: the slice of all the votes that one party got.
   'valet.röstandel': all(ground, pie(50, 58, 34, [[C.white, 3], [C.grey2, 9]]), g('translate(7 -6)', path(`M50 58 L50 24 A34 34 0 0 1 84 58 Z`, PC[1]!, C.ink, 1.4)), flag(92, 112, PC[1]!, 1.2), mini(106, 102, PC[1]!, 'smile', 0.8)),
   // valseger: the party's bar shoots up; supporters cheer with confetti.
@@ -349,20 +335,10 @@ export const ELECTION_MOTIFS: Record<string, Svg> = {
   'valet.jubla': all(ground, fig(60, PC[2]!, 'laugh'), reach(60, 1, -1, 34, 12), reach(60, 1, 1, 86, 12), path('M28 8 l-4 -4 M24 14 l-6 0 M92 8 l4 -4 M96 14 l6 0', 'none', HL, 1.8), sparkle(20, 34, 4), sparkle(100, 34, 4), confetti([[40, 30], [80, 30], [30, 54], [92, 56]])),
   // erkänna sig besegrad: the loser (small falling bar) congratulates the winner with a handshake.
   'valet.erkänna-sig-besegrad': all(ground, fig(30, PC[4]!, 'calm', { h: 0.95 }), fig(90, PC[2]!, 'smile', { h: 0.95 }), reach(30, 0.95, 1, 58, 62), reach(90, 0.95, -1, 62, 62), downA(8, 26, RED, 14), upA(112, 26, C.green, 14), sb(30, 0.95, 1, 18, 16, (x, y) => thumb(x, y + 2, 0.6), -2, -8)),
-  // block: two groups of parties, each inside its own ring: left and right.
-  'valet.block': all(ground, ellipse(32, 58, 26, 34, '#fbe9e4', HL, 2), ellipse(88, 58, 26, 34, '#e4eefb', C.navy, 2), ...[[32, 40, 0], [22, 64, 5], [42, 74, 3]].map(([x, y, c]) => mini(x!, y!, PC[c!]!, 'smile', 0.9)), ...[[88, 40, 1], [78, 66, 2], [98, 72, 4]].map(([x, y, c]) => mini(x!, y!, PC[c!]!, 'smile', 0.9))),
-  // vågmästare: two blocks almost equal on a balance; the small party decides which side goes down.
-  'valet.vågmästare': all(ground, scaleB(60, 52, 10, all(cube(PC[0]!, 14, 14), cube(PC[3]!, 10, 10, 14)), all(cube(PC[1]!, 14, 14), cube(PC[2]!, 10, 10, 14))), mini(98, 24, PC[4]!, 'smile', 0.8), arrow(98, 36, 96, 52, HL, 1.8), g('translate(94 72)', cube(PC[4]!, 6, 6))),
-  // sittande: the one who has the post now sits in the big chair; the challenger stands and waits (grey).
-  'valet.sittande': all(ground, rect(50, 30, 30, 50, PC[1]!, 6, C.ink, 1.8), rect(46, 72, 38, 12, PC[1]!, 3, C.ink, 1.6), line('M50 84 L50 112 M80 84 L80 112', C.ink, 2.4), mini(65, 64, PC[1]!, 'smile', 1.2), star(65, 22, 6, C.gold), greyed(fig(102, PC[0]!, 'calm', { h: 0.8 }))),
   // regeringsskifte: at the building of power one colour goes out and another comes in.
   'valet.regeringsskifte': all(ground, rect(34, 30, 52, 82, '#e6e2d8', 1, C.ink, 1.6), path('M28 32 L60 12 L92 32 Z', '#c9c2b4', C.ink, 1.6), ...[42, 54, 66, 78].map((x) => rect(x - 2, 40, 4, 44, C.white, 1, C.ink, 1)), door(60, 112, 16, 26, C.brown), flagSE(60, 12, 0.6), ...[0, 1].map((i) => mini(16, 72 + i * 26, PC[0]!, 'flat', 0.8)), arrow(28, 92, 8, 92, PC[0]!, 2), ...[0, 1].map((i) => mini(104, 72 + i * 26, PC[2]!, 'smile', 0.8)), arrow(96, 80, 74, 92, PC[2]!, 2)),
   // maktskifte: the key of power goes from one person's hand to another's.
   'valet.maktskifte': all(ground, fig(26, PC[0]!, 'calm'), fig(94, PC[2]!, 'smile', { hairStyle: 'long' }), reach(26, 1, 1, 52, 56), reach(94, 1, -1, 68, 56), key(60, 54, 1.2), arrow(46, 40, 74, 40, HL, 2.2)),
-  // tillträda: on the first day (calendar) she walks in through the door to her new desk and chair.
-  'valet.tillträda': all(ground, rect(70, 20, 44, 92, '#f6efe2', 2, C.ink, 1.6), rect(78, 76, 30, 5, C.brown, 1, C.ink, 1.2), line('M80 81 L80 112 M106 81 L106 112', C.brown, 2.4), chair(96, 96, PC[2]!, 0.8), door(62, 112, 16, 60, '#7a5236'), fig(32, PC[2]!, 'laugh', { hairStyle: 'long' }), arrow(46, 70, 58, 70, HL, 2.2), cal(82, 30, 24, 1, (i) => (i === 0 ? '#fde0b8' : null))),
   // efterträda: the old leader (grey hair) leaves the chair and the new one takes his place in the same chair.
   'valet.efterträda': all(ground, chair(60, 90, C.navy), fig(98, C.navy, 'smile', { h: 0.85, hair: '#c9ced4' }), arrow(98, 106, 116, 106, C.grey, 1.8), fig(22, PC[1]!, 'smile', { h: 0.85, hairStyle: 'long' }), arrow(34, 60, 52, 74, HL, 2.4), star(60, 40, 6, C.gold)),
-  // avgå (lämna ett uppdrag): he leaves the office with his things in a box and closes the door behind him.
-  'valet.avgå.2': all(ground, rect(6, 20, 46, 92, '#f6efe2', 2, C.ink, 1.6), chair(26, 96, C.navy, 0.8), rect(14, 76, 30, 5, C.brown, 1, C.ink, 1.2), door(60, 112, 16, 60, '#7a5236'), fig(92, C.navy, 'calm'), reach(92, 1, -1, 80, 66), reach(92, 1, 1, 104, 66), box(92, 72, 1.1), arrow(104, 96, 116, 96, HL, 2)),
 };
