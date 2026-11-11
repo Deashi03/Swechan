@@ -1,0 +1,181 @@
+{
+ "id": "m.lokala-beslut",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Lokala beslut",
+ "titleJa": "{地域|ちいき}の{決定|けってい}",
+ "descriptionSv": "Lokala beslut: lokal, fatta beslut, översiktsplan, detaljplan, bygglov, samråd, berörd, synpunkt, invändning, lägga ned, namninsamling, justera, anslagstavla, överklaga, laglighetsprövning, förvaltningsrätt och vinna laga kraft.",
+ "descriptionJa": "{地域|ちいき}の{決定|けってい}：{地元|じもと}の、{決定|けってい}を{下|くだ}す、{総合|そうごう}{計画|けいかく}、{地区|ちく}{詳細|しょうさい}{計画|けいかく}、{建築|けんちく}{許可|きょか}、{協議|きょうぎ}、{影響|えいきょう}を{受|う}ける、{意見|いけん}、{異議|いぎ}、{閉鎖|へいさ}する、{署名|しょめい}{活動|かつどう}、（{議事録|ぎじろく}を）{承認|しょうにん}する、{掲示板|けいじばん}、{不服|ふふく}を{申|もう}し{立|た}てる、{適法性|てきほうせい}{審査|しんさ}、{行政|ぎょうせい}{裁判所|さいばんしょ}、{確定|かくてい}する。",
+ "categoryId": "R03-A01-T04",
+ "tags": [
+  "politik",
+  "kommun"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.skattefinansierad-service"
+ ],
+ "related": [],
+ "recommendedOrder": 1335,
+ "words": [
+  {
+   "senseId": "s.lokal.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fatta-beslut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.översiktsplan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.detaljplan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bygglov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.berörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.invändning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-ned.1",
+   "active": true
+  },
+  {
+   "senseId": "s.namninsamling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.justera.2",
+   "active": false
+  },
+  {
+   "senseId": "s.anslagstavla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överklaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laglighetsprövning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvaltningsrätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vinna-laga-kraft.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Skolan i byn",
+  "paragraphs": [
+   "Många beslut som påverkar vardagen är lokala. Det är kommunen som fattar beslut om var det ska byggas nya bostäder. I översiktsplanen visar kommunen ungefär hur hela kommunen ska utvecklas, och i en detaljplan bestämmer den exakt vad som får byggas i ett visst område. Den som vill bygga ett hus behöver oftast bygglov.",
+   "I en liten by vill kommunen göra en ny detaljplan för tjugo nya hus. Kommunen bjuder in till samråd, och de berörda grannarna får lämna synpunkter. En del är positiva, men andra har invändningar mot att skogen försvinner.",
+   "Samtidigt föreslår kommunen att den lilla skolan i byn ska läggas ned, eftersom den har för få elever. Föräldrarna blir arga och startar en namninsamling. Trots det röstar en majoritet i kommunfullmäktige för förslaget.",
+   "Efter mötet justerar två ledamöter protokollet. Sedan skriver kommunen på sin anslagstavla, som i dag finns på webbplatsen, att protokollet är justerat. Därefter har invånarna tre veckor på sig att överklaga. En pappa begär laglighetsprövning hos förvaltningsrätten.",
+   "Förvaltningsrätten granskar inte om det är klokt att lägga ned skolan, bara om beslutet följer lagen. Domstolen kommer fram till att kommunen har gjort rätt. Beslutet vinner laga kraft, och skolan stänger till sommaren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad bestämmer kommunen i en detaljplan?",
+    "options": [
+     "Hur höga skatterna ska vara",
+     "Vilka lärare som ska arbeta i skolan",
+     "Exakt vad som får byggas i ett visst område",
+     "Hur många som får bo i kommunen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… i en detaljplan bestämmer den exakt vad som får byggas i ett visst område.",
+    "explanationJa": "ある{地区|ちく}で{何|なに}を{建|た}ててよいかを{正確|せいかく}に{決|き}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför vill kommunen lägga ned skolan?",
+    "options": [
+     "Den har för få elever",
+     "Huset är för gammalt",
+     "Lärarna vill sluta",
+     "Grannarna klagar"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… eftersom den har för få elever.",
+    "explanationJa": "{生徒|せいと}が{少|すく}なすぎるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur länge har invånarna på sig att överklaga?",
+    "options": [
+     "En dag",
+     "Ett år",
+     "Tre veckor",
+     "Tre månader"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Därefter har invånarna tre veckor på sig att överklaga.",
+    "explanationJa": "3{週間|しゅうかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Förvaltningsrätten granskar om det är klokt att lägga ned skolan.",
+    "correct": false,
+    "explanationSv": "Förvaltningsrätten granskar inte om det är klokt att lägga ned skolan, bara om beslutet följer lagen.",
+    "explanationJa": "{法律|ほうりつ}に{従|したが}っているかだけを{審査|しんさ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Namninsamlingen räckte inte för att stoppa beslutet.",
+    "correct": true,
+    "explanationSv": "Trots det röstar en majoritet i kommunfullmäktige för förslaget.",
+    "explanationJa": "{署名|しょめい}{活動|かつどう}があっても、{議会|ぎかい}は{案|あん}を{可決|かけつ}しました。"
+   }
+  ],
+  "factSources": [
+   "Kommunen bestämmer genom detaljplaner hur mark och vatten får användas och bebyggas; varje kommun ska ha en översiktsplan som inte är bindande; samråd hålls innan en detaljplan antas (Plan- och bygglagen 2010:900; boverket.se).",
+   "Många åtgärder kräver bygglov från kommunens byggnadsnämnd (Plan- och bygglagen 2010:900).",
+   "Varje kommunmedlem kan begära laglighetsprövning av beslut i fullmäktige hos förvaltningsrätten inom tre veckor från den dag då det på kommunens anslagstavla tillkännagavs att protokollet justerats; domstolen granskar bara om beslutet är lagligt (Kommunallagen 2017:725, 13 kap.; skr.se).",
+   "Kommunens anslagstavla ska finnas på kommunens webbplats (Kommunallagen 2017:725, 8 kap.).",
+   "Byn och skolan i texten är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om lokala beslut som påverkar er vardag.",
+  "discussionPoints": [
+   "Har du varit med på ett samråd eller skrivit under en namninsamling?",
+   "Vad skulle du göra om kommunen ville lägga ned skolan nära dig?",
+   "Är det bra att domstolen bara granskar om beslutet följer lagen?",
+   "Vilka lokala frågor diskuteras där du bor?"
+  ]
+ }
+}

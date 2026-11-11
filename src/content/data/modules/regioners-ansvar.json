@@ -1,0 +1,182 @@
+{
+ "id": "m.regioners-ansvar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Regioners ansvar",
+ "titleJa": "{広域|こういき}{自治体|じちたい}の{責任|せきにん}",
+ "descriptionSv": "Regioners ansvar: län, landsting, regionfullmäktige, regionval, regionråd, ansvar, sjukvård, vårdcentral, specialistvård, vårdgaranti, patientavgift, högkostnadsskydd, ambulans, tandvård, kollektivtrafik, regional och regional utveckling.",
+ "descriptionJa": "{広域|こういき}{自治体|じちたい}の{責任|せきにん}：{県|けん}、ランスティング、{県議会|けんぎかい}、{県議会|けんぎかい}{選挙|せんきょ}、{広域|こういき}{自治体|じちたい}の{常勤|じょうきん}{政治家|せいじか}、{責任|せきにん}、{医療|いりょう}、{診療所|しんりょうじょ}、{専門医|せんもんい}による{医療|いりょう}、{医療|いりょう}{保証|ほしょう}、{患者|かんじゃ}{負担金|ふたんきん}、{高額療養費|こうがくりょうようひ}{制度|せいど}、{救急車|きゅうきゅうしゃ}、{歯科|しか}{医療|いりょう}、{公共交通機関|こうきょうこうつうきかん}、{地域|ちいき}の、{地域|ちいき}{振興|しんこう}。",
+ "categoryId": "R03-A01-T04",
+ "tags": [
+  "politik",
+  "kommun",
+  "vård"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kommunstyrelse-och-namnder"
+ ],
+ "related": [],
+ "recommendedOrder": 1333,
+ "words": [
+  {
+   "senseId": "s.län.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landsting.1",
+   "active": false
+  },
+  {
+   "senseId": "s.regionfullmäktige.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regionval.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regionråd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ansvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukvård.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdcentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.specialistvård.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdgaranti.1",
+   "active": true
+  },
+  {
+   "senseId": "s.patientavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högkostnadsskydd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ambulans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandvård.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kollektivtrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regional.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regional-utveckling.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad gör regionen?",
+  "paragraphs": [
+   "Sverige har 21 län, och i varje län finns en region. Före 2019 kallades regionerna landsting. Varje region styrs av ett regionfullmäktige, som väljs i regionvalet samma dag som riksdagsvalet. Regionens viktigaste politiker kallas ofta regionråd.",
+   "Regionernas största ansvar är sjukvården. När du blir sjuk går du oftast först till en vårdcentral. Behöver du specialistvård, får du komma till ett sjukhus. Enligt vårdgarantin ska du inte behöva vänta för länge.",
+   "När du träffar en läkare betalar du en patientavgift. Men tack vare högkostnadsskyddet behöver du inte betala mer än en viss summa per år. Resten betalas med skatt. Regionen ansvarar också för ambulanserna och för tandvård för barn och unga.",
+   "Även kollektivtrafiken är en viktig uppgift för regionerna, ofta tillsammans med kommunerna. Bussar och regionala tåg gör det möjligt att bo i en ort och arbeta i en annan.",
+   "Dessutom arbetar regionerna med regional utveckling och kultur. De vill att det ska finnas jobb, utbildning och teater i hela regionen, inte bara i den största staden."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hette regionerna före 2019?",
+    "options": [
+     "Kommuner",
+     "Län",
+     "Landsting",
+     "Nämnder"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Före 2019 kallades regionerna landsting.",
+    "explanationJa": "2019{年|ねん}より{前|まえ}は「landsting」と{呼|よ}ばれていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är regionernas största ansvar?",
+    "options": [
+     "Sjukvården",
+     "Skolor",
+     "Bygglov",
+     "Polisen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Regionernas största ansvar är sjukvården.",
+    "explanationJa": "{医療|いりょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör högkostnadsskyddet?",
+    "options": [
+     "Det gör att man inte betalar mer än en viss summa per år",
+     "Det gör att man inte behöver vänta",
+     "Det gör att vården blir bättre",
+     "Det gör att man får en egen läkare"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… tack vare högkostnadsskyddet behöver du inte betala mer än en viss summa per år.",
+    "explanationJa": "1{年|ねん}に{払|はら}う{額|がく}に{上限|じょうげん}をつける{制度|せいど}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Regionerna ansvarar för ambulanserna.",
+    "correct": true,
+    "explanationSv": "Regionen ansvarar också för ambulanserna …",
+    "explanationJa": "{救急車|きゅうきゅうしゃ}は{広域|こういき}{自治体|じちたい}の{担当|たんとう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Regionerna vill bara satsa på den största staden.",
+    "correct": false,
+    "explanationSv": "De vill att det ska finnas jobb, utbildning och teater i hela regionen, inte bara i den största staden.",
+    "explanationJa": "{地域|ちいき}{全体|ぜんたい}のことを{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Sverige har 21 län och 21 regioner; Gotland är en kommun som också har regionens uppgifter (skr.se).",
+   "Sedan den 1 januari 2019 kallas alla landsting regioner (skr.se, regeringen.se).",
+   "Regionfullmäktige väljs samma dag som riksdagen och kommunfullmäktige (val.se).",
+   "Regionerna har huvudansvaret för hälso- och sjukvården och ansvarar också för bland annat tandvård för barn och unga, kollektivtrafik och regional utveckling (skr.se; Hälso- och sjukvårdslagen 2017:30; Tandvårdslagen 1985:125).",
+   "Vårdgarantin och högkostnadsskyddet är nationella regler för väntetider och patientavgifter (1177.se, regeringen.se)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vården och om vad regionen ansvarar för.",
+  "discussionPoints": [
+   "Hur ofta går du till vårdcentralen?",
+   "Vad tycker du om patientavgifterna i Sverige?",
+   "Åker du ofta kollektivtrafik mellan olika orter?",
+   "Vem ansvarar för sjukvården i Japan?"
+  ]
+ }
+}

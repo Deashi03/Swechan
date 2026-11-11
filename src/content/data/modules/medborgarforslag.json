@@ -1,0 +1,184 @@
+{
+ "id": "m.medborgarforslag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Medborgarförslag",
+ "titleJa": "{住民|じゅうみん}{提案|ていあん}",
+ "descriptionSv": "Medborgarförslag: medborgarförslag, e-förslag, folkbokförd, förslag, motivera, motivering, underskrift, lämna in, förslagsställare, stödja, farthinder, övergångsställe, besvara, bifalla, avslå, besked, medborgardialog och inflytande.",
+ "descriptionJa": "{住民|じゅうみん}{提案|ていあん}：{住民|じゅうみん}{提案|ていあん}、{電子|でんし}{住民|じゅうみん}{提案|ていあん}、{住民|じゅうみん}{登録|とうろく}されている、{提案|ていあん}、{理由|りゆう}を{説明|せつめい}する、{理由|りゆう}{説明|せつめい}、{署名|しょめい}、{提出|ていしゅつ}する、{提案者|ていあんしゃ}、{支持|しじ}する、{減速|げんそく}{帯|たい}、{横断歩道|おうだんほどう}、{答|こた}える、{承認|しょうにん}する、{却下|きゃっか}する、{知|し}らせ、{住民|じゅうみん}{対話|たいわ}、{影響力|えいきょうりょく}。",
+ "categoryId": "R03-A01-T04",
+ "tags": [
+  "politik",
+  "kommun"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.lokala-beslut"
+ ],
+ "related": [],
+ "recommendedOrder": 1336,
+ "words": [
+  {
+   "senseId": "s.medborgarförslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.e-förslag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.folkbokförd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motivera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.motivering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underskrift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förslagsställare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stödja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.farthinder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övergångsställe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bifalla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avslå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besked.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medborgardialog.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inflytande.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lenas förslag",
+  "paragraphs": [
+   "Lena bor nära en skola där bilarna ofta kör för fort. En dag ser hon att ett barn nästan blir påkört. Hon bestämmer sig för att göra något och lämnar ett medborgarförslag till kommunen.",
+   "I Lenas kommun får alla som är folkbokförda i kommunen lämna medborgarförslag, även barn och personer som inte är svenska medborgare. Det är kommunfullmäktige i varje kommun som bestämmer om möjligheten ska finnas, och därför finns den inte överallt. I en del kommuner kan man också skriva e-förslag på webbplatsen, som andra invånare kan stödja.",
+   "Lena föreslår ett farthinder och ett nytt övergångsställe vid skolan. Hon motiverar förslaget med att många barn går till skolan där. Till sin motivering lägger hon 150 underskrifter från grannar och föräldrar. Sedan går hon till kommunhuset och lämnar in förslaget.",
+   "Förslaget bereds av tjänstemän, och efter några månader besvarar kommunen det. Lena får besked i ett brev till förslagsställaren: kommunen bifaller förslaget om ett övergångsställe, men avslår förslaget om ett farthinder, eftersom bussarna kör på gatan.",
+   "Lena är ändå nöjd. Kommunen bjuder också in henne till en medborgardialog om trafiken i området. – Jag trodde inte att en vanlig invånare kunde få så mycket inflytande, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför lämnar Lena ett medborgarförslag?",
+    "options": [
+     "Hon vill ha en ny park",
+     "Bussen är ofta sen",
+     "Hon vill bli politiker",
+     "Bilarna kör för fort vid skolan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Lena bor nära en skola där bilarna ofta kör för fort.",
+    "explanationJa": "{学校|がっこう}の{近|ちか}くで{車|くるま}がスピードを{出|だ}しすぎるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem bestämmer om invånarna får lämna medborgarförslag?",
+    "options": [
+     "Kommunfullmäktige i varje kommun",
+     "Regeringen",
+     "Skolan",
+     "Förvaltningsrätten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är kommunfullmäktige i varje kommun som bestämmer om möjligheten ska finnas …",
+    "explanationJa": "{各|かく}{自治体|じちたい}の{市町村議会|しちょうそんぎかい}が{決|き}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad bifaller kommunen?",
+    "options": [
+     "Ett farthinder",
+     "En ny busslinje",
+     "En ny skola",
+     "Ett nytt övergångsställe"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… kommunen bifaller förslaget om ett övergångsställe …",
+    "explanationJa": "{横断歩道|おうだんほどう}の{提案|ていあん}を{承認|しょうにん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Man måste vara svensk medborgare för att lämna ett medborgarförslag.",
+    "correct": false,
+    "explanationSv": "… även barn och personer som inte är svenska medborgare.",
+    "explanationJa": "スウェーデン{国籍|こくせき}がなくても{出|だ}せます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lena är glad trots att hon inte fick allt hon föreslog.",
+    "correct": true,
+    "explanationSv": "Lena är ändå nöjd.",
+    "explanationJa": "すべてが{認|みと}められたわけではありませんが、{満足|まんぞく}しています。"
+   }
+  ],
+  "factSources": [
+   "Fullmäktige får besluta att de som är folkbokförda i kommunen eller regionen får väcka ärenden i fullmäktige genom medborgarförslag; folkbokföring, inte medborgarskap eller ålder, avgör (Kommunallagen 2017:725, 8 kap.; skr.se).",
+   "Möjligheten att lämna medborgarförslag och e-förslag finns därför bara i en del kommuner, och reglerna för e-förslag är olika (skr.se).",
+   "Medborgardialog är ett sätt för kommuner och regioner att låta invånarna påverka tidigt (skr.se).",
+   "Personen Lena och hennes förslag är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur invånare kan påverka kommunen.",
+  "discussionPoints": [
+   "Vilket medborgarförslag skulle du vilja lämna där du bor?",
+   "Är det bra att även barn kan lämna förslag?",
+   "Har du skrivit under ett förslag eller en namninsamling?",
+   "Kan invånare lämna förslag till kommunen i Japan?"
+  ]
+ }
+}

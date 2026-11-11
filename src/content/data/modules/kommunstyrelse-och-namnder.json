@@ -1,0 +1,180 @@
+{
+ "id": "m.kommunstyrelse-och-namnder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Kommunstyrelse och nämnder",
+ "titleJa": "{執行|しっこう}{委員会|いいんかい}と{各|かく}{委員会|いいんかい}",
+ "descriptionSv": "Kommunstyrelse och nämnder: kommunstyrelse, kommunalråd, oppositionsråd, nämnd, socialnämnd, utbildningsnämnd, byggnadsnämnd, ansvarsområde, förvaltning, kommundirektör, tjänsteman, handläggare, ärende, bereda, delegera, protokoll och verkställa.",
+ "descriptionJa": "{執行|しっこう}{委員会|いいんかい}と{各|かく}{委員会|いいんかい}：{市町村|しちょうそん}{執行|しっこう}{委員会|いいんかい}、{常勤|じょうきん}{政治家|せいじか}、{野党|やとう}{側|がわ}の{常勤|じょうきん}{政治家|せいじか}、{委員会|いいんかい}、{社会福祉|しゃかいふくし}{委員会|いいんかい}、{教育|きょういく}{委員会|いいんかい}、{建築|けんちく}{委員会|いいんかい}、{担当|たんとう}{分野|ぶんや}、{行政|ぎょうせい}{組織|そしき}、{事務方|じむかた}トップ、{公務員|こうむいん}、{担当者|たんとうしゃ}、{案件|あんけん}、{準備|じゅんび}する、{委任|いにん}する、{議事録|ぎじろく}、{実行|じっこう}する。",
+ "categoryId": "R03-A01-T04",
+ "tags": [
+  "politik",
+  "kommun"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kommunfullmaktige"
+ ],
+ "related": [],
+ "recommendedOrder": 1332,
+ "words": [
+  {
+   "senseId": "s.kommunstyrelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kommunalråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oppositionsråd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nämnd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.socialnämnd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utbildningsnämnd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byggnadsnämnd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansvarsområde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvaltning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kommundirektör.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tjänsteman.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handläggare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ärende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bereda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delegera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.protokoll.1",
+   "active": false
+  },
+  {
+   "senseId": "s.verkställa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem gör vad i kommunen?",
+  "paragraphs": [
+   "Kommunfullmäktige fattar de stora besluten, men arbetet varje dag leds av kommunstyrelsen. Kommunstyrelsen väljs av kommunfullmäktige och kan liknas vid kommunens regering. Ordföranden i kommunstyrelsen är oftast ett kommunalråd, alltså en politiker som har politiken som sitt arbete. I många kommuner har också oppositionen ett eller flera oppositionsråd.",
+   "Kommunen har också flera nämnder. Varje nämnd har sitt eget ansvarsområde. Socialnämnden ansvarar för stöd till människor som behöver hjälp, utbildningsnämnden för skolorna och byggnadsnämnden för frågor om vad man får bygga. Namnen på nämnderna kan vara olika i olika kommuner.",
+   "Till varje nämnd hör oftast en förvaltning, där tjänstemän arbetar. Den högsta chefen för tjänstemännen är kommundirektören. Politikerna bestämmer vad kommunen ska göra, och tjänstemännen ser till att det blir gjort.",
+   "Ta ett exempel. Familjen Berg vill bygga ett garage. Ärendet hamnar hos en handläggare på förvaltningen, som bereder det och skriver ett förslag. Eftersom nämnden har delegerat enkla ärenden till tjänstemännen, kan handläggaren själv fatta beslutet.",
+   "Svårare ärenden går till nämnden. Efter mötet skrivs ett protokoll där besluten står. Sedan är det förvaltningens uppgift att verkställa dem."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem väljer kommunstyrelsen?",
+    "options": [
+     "Regeringen",
+     "Invånarna direkt",
+     "Kommunfullmäktige",
+     "Kommundirektören"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Kommunstyrelsen väljs av kommunfullmäktige …",
+    "explanationJa": "{市町村議会|しちょうそんぎかい}が{選|えら}びます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken nämnd ansvarar för skolorna?",
+    "options": [
+     "Socialnämnden",
+     "Utbildningsnämnden",
+     "Byggnadsnämnden",
+     "Kommunstyrelsen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… utbildningsnämnden för skolorna …",
+    "explanationJa": "{教育|きょういく}{委員会|いいんかい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kan handläggaren själv besluta om garaget?",
+    "options": [
+     "Handläggaren är politiker",
+     "Familjen Berg sitter i nämnden",
+     "Nämnden har delegerat enkla ärenden till tjänstemännen",
+     "Ärendet är mycket svårt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Eftersom nämnden har delegerat enkla ärenden till tjänstemännen, kan handläggaren själv fatta beslutet.",
+    "explanationJa": "{委員会|いいんかい}が{簡単|かんたん}な{案件|あんけん}を{職員|しょくいん}に{委任|いにん}しているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kommundirektören är chef för tjänstemännen.",
+    "correct": true,
+    "explanationSv": "Den högsta chefen för tjänstemännen är kommundirektören.",
+    "explanationJa": "{事務方|じむかた}トップは{職員|しょくいん}の{責任者|せきにんしゃ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är tjänstemännen som bestämmer vad kommunen ska göra.",
+    "correct": false,
+    "explanationSv": "Politikerna bestämmer vad kommunen ska göra, och tjänstemännen ser till att det blir gjort.",
+    "explanationJa": "{何|なに}をするかを{決|き}めるのは{政治家|せいじか}で、{職員|しょくいん}はそれを{実行|じっこう}します。"
+   }
+  ],
+  "factSources": [
+   "Varje kommun ska ha en kommunstyrelse som väljs av fullmäktige, leder och samordnar kommunens arbete och har uppsikt över nämnderna (Kommunallagen 2017:725, 6 kap.; skr.se).",
+   "Fullmäktige tillsätter de nämnder som behövs, och nämnderna kan delegera beslut till anställda (Kommunallagen 2017:725, 3, 6 och 7 kap.).",
+   "Kommunstyrelsen ska utse en direktör som leder förvaltningen (Kommunallagen 2017:725, 7 kap.).",
+   "Titlarna kommunalråd och oppositionsråd används i många kommuner för politiker som har sitt uppdrag på heltid eller deltid (skr.se)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur arbetet i en kommun är ordnat.",
+  "discussionPoints": [
+   "Vilken nämnd tror du har det svåraste ansvarsområdet?",
+   "Har du haft kontakt med en handläggare på kommunen?",
+   "Är det bra att tjänstemän kan fatta vissa beslut själva?",
+   "Hur är arbetet ordnat i en japansk kommun?"
+  ]
+ }
+}
