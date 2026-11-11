@@ -109,7 +109,7 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 - 1 260 nya illustrationer för R04–R08. Alla 2 016 katalogmoduler har bild.
 
 ## v0.29 – Människan & hälsa komplett, alla ord med bild (klar)
-- 105 nya moduler (Relationer & familj T04–T06, Kommunikation, Livsfaser) med 1 431 nya ordbilder. Från 0.29 ska varje modulord ha bild, animation eller symbol.
+- 105 nya moduler (Relationer & familj T04–T06, Kommunikation, Livsfaser) med 1 430 nya ordbilder. Från 0.29 ska varje modulord ha bild, animation eller symbol.
 
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.

@@ -23,6 +23,12 @@ export const VISUAL_EXCEPTIONS_BEFORE_0_29: ReadonlySet<string> = new Set([
   's.otrogen.1', 's.så-fort.1', 's.varifrån.1', 's.veckovis.1', 's.vänligen.1', 's.ödmjuk.1', 's.ömsint.1',
 ]);
 
+/**
+ * Product owner's rule (after 0.29): a picture gets at most two blind-test rounds. A word whose picture fails
+ * the second round gets plan status `none` and is listed here and under "Saknade bilder" in PROJECT_STATUS.md.
+ */
+export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set(['s.demenssjuk.1']);
+
 export function validateContent(repo: ContentRepository): ContentIssue[] {
   const issues: ContentIssue[] = [];
   const add = (where: string, message: string) => issues.push({ where, message });
@@ -137,7 +143,7 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
   for (const id of Object.keys(allPlannedVisuals())) if (!repo.getSense(id)) add(`visualiseringsplan ${id}`, 'Okänd betydelse');
   // Every module word has a visualisation (0.29, product owner's rule)
   for (const m of repo.modules) for (const wd of m.words) {
-    if (VISUAL_EXCEPTIONS_BEFORE_0_29.has(wd.senseId)) continue;
+    if (VISUAL_EXCEPTIONS_BEFORE_0_29.has(wd.senseId) || VISUAL_MISSING_AFTER_BLIND_TEST.has(wd.senseId)) continue;
     if (!imageFor(wd.senseId)) add(`${m.id} › ${wd.senseId}`, 'Ordet saknar bild, animation eller symbol – från 0.29 ska varje modulord ha en visualisering');
     if (plannedVisual(wd.senseId)?.kind === 'none') add(`${m.id} › ${wd.senseId}`, 'Planen säger "ingen bild" – från 0.29 får nya modulord inte sakna visualisering');
   }

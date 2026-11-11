@@ -1,5 +1,5 @@
 import { toolingRepository as getContent } from './tooling';
-import { validateContent, VISUAL_EXCEPTIONS_BEFORE_0_29 } from './validateContent';
+import { validateContent, VISUAL_EXCEPTIONS_BEFORE_0_29, VISUAL_MISSING_AFTER_BLIND_TEST } from './validateContent';
 import { imageFor } from './images';
 
 describe('content validation', () => {
@@ -19,10 +19,12 @@ describe('content validation', () => {
     }
   });
 
-  it('every module word has a picture, animation or symbol (0.29) – only the 14 older exceptions lack one', () => {
+  it('every module word has a picture, animation or symbol (0.29) – only the listed exceptions lack one', () => {
     const repo = getContent();
     expect(VISUAL_EXCEPTIONS_BEFORE_0_29.size).toBe(14);
-    const missing = repo.modules.flatMap((m) => m.words.map((w) => w.senseId)).filter((id) => !imageFor(id) && !VISUAL_EXCEPTIONS_BEFORE_0_29.has(id));
+    const missing = repo.modules.flatMap((m) => m.words.map((w) => w.senseId)).filter((id) => !imageFor(id) && !VISUAL_EXCEPTIONS_BEFORE_0_29.has(id) && !VISUAL_MISSING_AFTER_BLIND_TEST.has(id));
+    // the missing ones really lack a picture and are planned as `none`
+    for (const id of VISUAL_MISSING_AFTER_BLIND_TEST) expect(imageFor(id)).toBeUndefined();
     expect(missing).toEqual([]);
   });
 });

@@ -11,15 +11,23 @@
 - Varje modul har 16–19 målord, lästext med fem frågor och konversationsunderlag. Ord som redan fanns återanvänds med sitt `senseId`. Svåra ord (B2 och högre) har förklaring.
 - Nya betydelser på befintliga poster, till exempel *uppskatta* (sätta värde på), *skärm* (bildskärm), *tråd* (i en chatt), *kontakt* (mellan människor) och *släppa taget* (i tanken). *s.motivera.1* är avgränsad till betydelsen ge lust; *s.motivera.2* är förklara varför.
 
-### Bilder (1 431 nya ordbilder)
-- Alla nya ord har en egen bild: 1 032 symbolbilder, 155 bilder som får användas i bildövningar och resten scener som bara visas i ordintroduktionen.
-- Alla symbol- och adjektivbilder har klarat ett oberoende blindtest. Bilder som granskaren inte kände igen ritades om tills de klarade testet. Äkta synonymer (till exempel *andrum* och *egentid*) är markerade som förväxlingsbara och ställs aldrig mot varandra i övningarna.
+### Bilder (1 430 nya ordbilder)
+- Alla nya ord utom ett har en egen bild: 1 031 symbolbilder, 155 bilder som får användas i bildövningar och resten scener som bara visas i ordintroduktionen.
+- Alla symbol- och adjektivbilder har klarat ett oberoende blindtest. Bilder som granskaren inte kände igen ritades om. Äkta synonymer (till exempel *andrum* och *egentid*) är markerade som förväxlingsbara och ställs aldrig mot varandra i övningarna.
+- Ett ord saknar bild: *demenssjuk*, som underkändes i flera omgångar. Det har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 - Nya bildfiler i `src/ui/wordArt/`: `parenting.ts`, `familyEvents.ts`, `relationSkills.ts`, `conversation.ts`, `opinions.ts`, `politeness.ts`, `conflicts.ts`, `nonverbal.ts`, `remoteTalk.ts`, `childhood.ts`, `adulthood.ts`, `ageing.ts`, `learning.ts`, `identity.ts` och `setbacks.ts`.
 
 ### Regler och validering
 - Ny regel i `validateContent`: varje modulord ska ha en visualisering, och planen får inte säga "ingen bild" för ett modulord. Bara 14 äldre ord är undantagna (`VISUAL_EXCEPTIONS_BEFORE_0_29`).
 - Nytt test: alla modulord har bild utom de 14 äldre undantagen.
 - Vitest hoppar över `.claude/` (agenternas arbetskopior).
+- Ny regel: en bild får högst två blindtestomgångar. Underkänns den andra gången får ordet planstatus `none` och listas som saknad bild.
+
+### Dokument och verktyg
+- `PROJECT_STATUS.md` beskriver bara nuläget. Historiken finns i `CHANGELOG.md`, och lärdomar som fortfarande gäller står i `CONTENT_GUIDELINES.md` och `ARCHITECTURE.md`.
+- Ny produktionsinstruktion för modul- och bildagenter: `docs/PRODUCTION_BRIEF.md`.
+- Produktionsverktygen (DSL, ordkontroll, bildregistrering, kontaktark, blindtestshjälp) ligger nu i `tools/production/`.
+- e2e-testets planerade exempel är *Demokrati och diktatur* (Samhälle & institutioner).
 
 Service workern är `swechan-v33`.
 
