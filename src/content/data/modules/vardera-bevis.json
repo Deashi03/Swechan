@@ -1,0 +1,184 @@
+{
+ "id": "m.vardera-bevis",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-09",
+ "titleSv": "Värdera bevis",
+ "titleJa": "{証拠|しょうこ}を{評価|ひょうか}する",
+ "descriptionSv": "Värdera bevis: bevisa, belägg, källa, trovärdig, undersökning, se med egna ögon, rykte, andrahandsuppgift, ord mot ord, svart på vitt, objektiv, skeptisk, med en nypa salt, tvivelaktig, påhittad, lättlurad och gå på.",
+ "descriptionJa": "{証拠|しょうこ}を{評価|ひょうか}する：{証明|しょうめい}する、{裏付|うらづ}け、{情報源|じょうほうげん}、{信用|しんよう}できる、{調査|ちょうさ}、{自分|じぶん}の{目|め}で{見|み}る、うわさ、{又聞|またぎ}きの{情報|じょうほう}、{言|い}い{分|ぶん}が{食|く}い{違|ちが}っている、{書面|しょめん}で、{客観的|きゃっかんてき}な、{懐疑的|かいぎてき}な、{話半分|はなしはんぶん}に、{怪|あや}しげな、でっち{上|あ}げの、だまされやすい、だまされる。",
+ "categoryId": "R02-A05-T02",
+ "tags": [
+  "samtal",
+  "argument",
+  "bevis"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.forklara-orsak-och-konsekvens"
+ ],
+ "related": [],
+ "recommendedOrder": 1116,
+ "words": [
+  {
+   "senseId": "s.bevisa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belägg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.källa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trovärdig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undersökning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.se-med-egna-ögon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rykte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andrahandsuppgift.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ord-mot-ord.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svart-på-vitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.objektiv.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skeptisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.med-en-nypa-salt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tvivelaktig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.påhittad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lättlurad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-på.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Stämmer det verkligen?",
+  "paragraphs": [
+   "På Marias jobb går det ett rykte: kontoret ska flytta till en annan stad. Jonas säger att han har hört det från en kollega, som har hört det från chefen. Det är alltså en andrahandsuppgift.",
+   "Maria är skeptisk. – Har du några belägg för det? frågar hon. – Jag vill se med egna ögon att det stämmer. Kollegan säger att chefen har sagt det, men chefen säger att det inte stämmer. Nu står det ord mot ord. Maria vill ha det svart på vitt, så hon skriver ett mejl till chefen.",
+   "Samma dag läser Johan en artikel på nätet. Där står det att kaffe gör att man lever tio år längre. Artikeln påstår att en undersökning kan bevisa det, men den säger inte vilken. Det finns ingen källa.",
+   "Johan är inte så lättlurad. Han brukar inte gå på sådant, och han tar sådana nyheter med en nypa salt. En bra text är objektiv och visar var siffrorna kommer från. Den här texten verkar tvivelaktig, och den är inte trovärdig.",
+   "Nästa dag får Maria ett svar från chefen, svart på vitt: kontoret ska inte flytta. Ryktet var påhittat. Och Johan hittar en riktig undersökning om kaffe. Den visar att kaffe inte är farligt, men den säger ingenting om tio år."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad handlar ryktet om?",
+    "options": [
+     "Att Maria ska få ett nytt jobb",
+     "Att kontoret ska flytta till en annan stad",
+     "Att chefen ska sluta",
+     "Att kaffet blir dyrare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ryktet är att kontoret ska flytta till en annan stad.",
+    "explanationJa": "{事務所|じむしょ}がほかの{町|まち}に{移|うつ}るといううわさです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför är Jonas uppgift en andrahandsuppgift?",
+    "options": [
+     "Han har läst det i en bok",
+     "Han har hört det två gånger",
+     "Han har sett det med egna ögon",
+     "Han har inte hört det från chefen själv, utan från en kollega"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Jonas har hört det från en kollega, som har hört det från chefen.",
+    "explanationJa": "ヨナスは{上司|じょうし}から{直接|ちょくせつ}ではなく、{同僚|どうりょう}から{聞|き}いたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför tycker Johan att artikeln inte är trovärdig?",
+    "options": [
+     "Den har ingen källa",
+     "Den är för lång",
+     "Den handlar om te",
+     "Den är skriven av en vän"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Artikeln säger inte vilken undersökning det är. Det finns ingen källa.",
+    "explanationJa": "どの{調査|ちょうさ}か{書|か}かれておらず、{情報源|じょうほうげん}がないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att Maria vill ha svaret svart på vitt?",
+    "options": [
+     "Hon vill ha svaret snabbt",
+     "Hon vill ha ett kort svar",
+     "Hon vill höra svaret på ett möte",
+     "Hon vill ha svaret skrivet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Svart på vitt betyder skrivet, till exempel i ett mejl.",
+    "explanationJa": "「svart på vitt」はメールなどで{書面|しょめん}にするという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ryktet om kontoret stämde.",
+    "correct": false,
+    "explanationSv": "Chefen svarar svart på vitt att kontoret inte ska flytta. Ryktet var påhittat.",
+    "explanationJa": "{上司|じょうし}は{移転|いてん}しないと{書面|しょめん}で{答|こた}えました。うわさは{作|つく}り{話|ばなし}でした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om rykten och nyheter och hur man vet om något är sant.",
+  "discussionPoints": [
+   "Hur vet du om en nyhet på nätet är trovärdig?",
+   "Har du någon gång gått på ett rykte?",
+   "När vill du ha något svart på vitt?",
+   "Vad tar du med en nypa salt?"
+  ]
+ }
+}
