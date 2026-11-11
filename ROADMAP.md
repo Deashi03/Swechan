@@ -111,6 +111,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.29 – Människan & hälsa komplett, alla ord med bild (klar)
 - 105 nya moduler (Relationer & familj T04–T06, Kommunikation, Livsfaser) med 1 430 nya ordbilder. Från 0.29 ska varje modulord ha bild, animation eller symbol.
 
+## v0.30 – Politik & demokrati (klar)
+- 42 nya moduler i Samhälle & institutioner → Politik & demokrati med 489 nya ordbilder. 20 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

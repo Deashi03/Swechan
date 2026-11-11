@@ -1,0 +1,182 @@
+{
+ "id": "m.skattefinansierad-service",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Skattefinansierad service",
+ "titleJa": "{税金|ぜいきん}で{賄|まかな}われるサービス",
+ "descriptionSv": "Skattefinansierad service: skatt, kommunalskatt, skattesats, skattebetalare, skattefinansierad, finansiera, statsbidrag, offentlig sektor, välfärd, grundskola, äldreomsorg, hemtjänst, socialtjänst, räddningstjänst, bibliotek, snöröjning och avgift.",
+ "descriptionJa": "{税金|ぜいきん}で{賄|まかな}われるサービス：{税金|ぜいきん}、{地方|ちほう}{所得税|しょとくぜい}、{税率|ぜいりつ}、{納税者|のうぜいしゃ}、{税金|ぜいきん}で{賄|まかな}われる、{資金|しきん}を{出|だ}す、{国庫|こっこ}{補助金|ほじょきん}、{公共|こうきょう}{部門|ぶもん}、{福祉|ふくし}、{基礎|きそ}{学校|がっこう}、{高齢者|こうれいしゃ}{介護|かいご}、{訪問介護|ほうもんかいご}、{社会福祉|しゃかいふくし}サービス、{消防|しょうぼう}・{救助|きゅうじょ}サービス、{図書館|としょかん}、{除雪|じょせつ}、{料金|りょうきん}。",
+ "categoryId": "R03-A01-T04",
+ "tags": [
+  "politik",
+  "kommun",
+  "ekonomi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.regioners-ansvar"
+ ],
+ "related": [],
+ "recommendedOrder": 1334,
+ "words": [
+  {
+   "senseId": "s.skatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kommunalskatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skattesats.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skattebetalare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skattefinansierad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.finansiera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statsbidrag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.offentlig-sektor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.välfärd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundskola.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äldreomsorg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemtjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.socialtjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räddningstjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bibliotek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snöröjning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgift.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vart går skatten?",
+  "paragraphs": [
+   "Yuki har just fått sin första lön i Sverige. Hon blir förvånad när hon ser hur mycket skatt hon betalar. Det mesta är kommunalskatt, som går till kommunen och regionen där hon bor. Skattesatsen är olika i olika kommuner, men den brukar vara drygt 30 procent.",
+   "– Vad får jag för pengarna? frågar Yuki sin kollega Lars. – Ganska mycket, svarar han. Vi skattebetalare finansierar en stor del av välfärden. Skolan, vården och omsorgen är skattefinansierade.",
+   "Lars räknar upp exempel. Hans son går i grundskolan, och den är gratis. Hans pappa får hemtjänst, och om han blir för gammal för att bo hemma finns äldreomsorgen. Socialtjänsten hjälper människor som har det svårt.",
+   "Kommunen betalar också för räddningstjänsten, biblioteket och snöröjningen på gatorna. Skatten är kommunernas största inkomst, men de får även statsbidrag från staten. För en del service betalar man en avgift, till exempel för förskolan, men avgiften täcker bara en liten del av vad den kostar.",
+   "– Så skatten är inte bara pengar som försvinner, säger Yuki. – Nej, säger Lars. Men många vill förstås att offentlig sektor använder pengarna på ett klokt sätt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vart går det mesta av Yukis skatt?",
+    "options": [
+     "Till staten",
+     "Till kommunen och regionen",
+     "Till hennes arbetsgivare",
+     "Till Lars"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det mesta är kommunalskatt, som går till kommunen och regionen där hon bor.",
+    "explanationJa": "{大部分|だいぶぶん}は{住|す}んでいる{市町村|しちょうそん}と{広域|こういき}{自治体|じちたい}に{入|はい}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att skolan är skattefinansierad?",
+    "options": [
+     "Eleverna betalar själva",
+     "Den ägs av ett företag",
+     "Den betalas med skatt",
+     "Den är mycket dyr"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Skolan, vården och omsorgen är skattefinansierade.",
+    "explanationJa": "{税金|ぜいきん}で{費用|ひよう}が{払|はら}われているということです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken service får Lars pappa?",
+    "options": [
+     "Grundskola",
+     "Snöröjning",
+     "Förskola",
+     "Hemtjänst"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hans pappa får hemtjänst …",
+    "explanationJa": "{訪問介護|ほうもんかいご}を{受|う}けています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kommunerna får bara pengar från kommunalskatten.",
+    "correct": false,
+    "explanationSv": "Skatten är kommunernas största inkomst, men de får även statsbidrag från staten.",
+    "explanationJa": "{国|くに}からの{補助金|ほじょきん}も{受|う}け{取|と}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Avgiften för förskolan betalar inte hela kostnaden.",
+    "correct": true,
+    "explanationSv": "… avgiften täcker bara en liten del av vad den kostar.",
+    "explanationJa": "{料金|りょうきん}は{費用|ひよう}のほんの{一部|いちぶ}にしかなりません。"
+   }
+  ],
+  "factSources": [
+   "Kommunalskatten går till kommunen och regionen; den sammanlagda skattesatsen är olika i olika kommuner och har länge legat på drygt 30 procent (skatteverket.se, scb.se).",
+   "De flesta betalar bara kommunal inkomstskatt; statlig inkomstskatt betalas först över en viss inkomstnivå (skatteverket.se).",
+   "Skatten är kommunernas största inkomstkälla, och kommunerna får också statsbidrag (skr.se).",
+   "Kommunerna ansvarar bland annat för förskola, grundskola, äldreomsorg, socialtjänst, räddningstjänst, bibliotek och gator (skr.se).",
+   "Grundskolan är avgiftsfri, medan kommunerna får ta ut en avgift för förskolan (Skollagen 2010:800)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om skatt och om den service som kommunen och regionen ger.",
+  "discussionPoints": [
+   "Vilken skattefinansierad service använder du mest?",
+   "Tycker du att skatten i Sverige är hög eller rimlig?",
+   "Vad ska man betala med avgifter, och vad ska skatten betala?",
+   "Hur fungerar skatten till kommunen i Japan?"
+  ]
+ }
+}

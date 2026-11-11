@@ -119,7 +119,7 @@ def module(slug,cid,titleJa,descSv,descJa,level,prereq,words,reading,conversatio
     # verified 1:1 link
     p=D+'catalog/publishedMapping.json'; mp=json.load(open(p))
     mp['links']=[l for l in mp['links'] if l['moduleId']!=m['id']]
-    mp['links'].append({"catalogId":cid,"moduleId":m['id'],"verifiedBy":"Skriven för katalogposten i '+VER+': titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).","note":("Förkunskap: "+", ".join(prereq)) if prereq else "Första modulen i sin kedja."})
+    mp['links'].append({"catalogId":cid,"moduleId":m['id'],"verifiedBy":"Skriven för katalogposten i "+VER+": titel och ämne motsvarar posten exakt (AI-utkast; språket ej mänskligt granskat).","note":("Förkunskap: "+", ".join(prereq)) if prereq else "Första modulen i sin kedja."})
     mp['links'].sort(key=lambda l:l['catalogId'])
     open(p,'w').write(json.dumps(mp,ensure_ascii=False,indent=2)+"\n")
     print(f"{m['id']}: {len(ws)} ord, {len(entries)} nya poster")

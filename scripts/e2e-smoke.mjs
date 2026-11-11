@@ -210,13 +210,13 @@ try {
   await page.getByRole('link', { name: /Matlagningens verb/ }).first().click();
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
-  // Vardag & hem and Människan & hälsa are fully published (0.29), so the planned entry is the first
-  // module of Samhälle & institutioner: Politik & demokrati → Demokratins grundbegrepp → Demokrati och diktatur.
+  // Vardag & hem, Människan & hälsa (0.29) and Politik & demokrati (0.30) are fully published, so the planned
+  // entry is the first module of Juridik & rättsväsende: Rättens grunder → Lag och förordning.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Samhälle & institutioner/ }).first().click();
-  await page.getByRole('link', { name: /Politik & demokrati/ }).first().click();
-  await page.getByRole('link', { name: /Demokratins grundbegrepp/ }).first().click();
-  await page.getByRole('link', { name: /Demokrati och diktatur/ }).first().click();
+  await page.getByRole('link', { name: /Juridik & rättsväsende/ }).first().click();
+  await page.getByRole('link', { name: /Rättens grunder/ }).first().click();
+  await page.getByRole('link', { name: /Lag och förordning/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);

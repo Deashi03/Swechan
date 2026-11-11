@@ -1,0 +1,171 @@
+{
+ "id": "m.valdistrikt-och-mandat",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Valdistrikt och mandat",
+ "titleJa": "{投票区|とうひょうく}と{議席|ぎせき}",
+ "descriptionSv": "Valdistrikt och mandat: riksdagsval, regionval, kommunval, valdistrikt, valkrets, mandat, mandatperiod, valbar, folkvald, invald, ersättare, fördela, mandatfördelning, valkretsmandat och utjämningsmandat.",
+ "descriptionJa": "{投票区|とうひょうく}と{議席|ぎせき}：{国政選挙|こくせいせんきょ}、レギオン{議会|ぎかい}の{選挙|せんきょ}、{市町村議会|しちょうそんぎかい}の{選挙|せんきょ}、{投票区|とうひょうく}、{選挙区|せんきょく}、{議席|ぎせき}、{任期|にんき}、{被選挙権|ひせんきょけん}のある、{選挙|せんきょ}で{選|えら}ばれた、{当選|とうせん}した、{代理|だいり}、{分|わ}ける、{議席配分|ぎせきはいぶん}、{選挙区議席|せんきょくぎせき}、{調整議席|ちょうせいぎせき}。",
+ "categoryId": "R03-A01-T03",
+ "tags": [
+  "politik",
+  "val"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.rostrakning"
+ ],
+ "related": [],
+ "recommendedOrder": 1324,
+ "words": [
+  {
+   "senseId": "s.riksdagsval.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regionval.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kommunval.1",
+   "active": true
+  },
+  {
+   "senseId": "s.valdistrikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.valkrets.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mandat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mandatperiod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.valbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.folkvald.1",
+   "active": false
+  },
+  {
+   "senseId": "s.invald.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ersättare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördela.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mandatfördelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.valkretsmandat.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utjämningsmandat.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Från vallokal till mandat",
+  "paragraphs": [
+   "Vart fjärde år, på andra söndagen i september, är det val i Sverige. Samma dag är det riksdagsval, regionval och kommunval. Man röstar med tre olika valsedlar: gula för riksdagsvalet, blå för regionvalet och vita för kommunvalet.",
+   "I landet finns det flera tusen valdistrikt. Alla som bor i samma valdistrikt röstar i samma vallokal. Valdistrikten hör i sin tur till större valkretsar. I riksdagsvalet finns det 29 valkretsar.",
+   "I riksdagsvalet väljer man 349 personer, och de får varsitt mandat. 310 av dem är valkretsmandat. Man fördelar dem mellan valkretsarna efter hur många som får rösta där. De sista 39 är utjämningsmandat. De gör att mandatfördelningen i hela landet blir så lik rösterna som möjligt.",
+   "Alla som får rösta i riksdagsvalet är också valbara. De som blir invalda är folkvalda, och de har sitt uppdrag under en mandatperiod på fyra år. Om någon slutar eller blir sjuk tar en ersättare över platsen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken färg har valsedlarna i riksdagsvalet?",
+    "options": [
+     "Blå",
+     "Vit",
+     "Röd",
+     "Gul"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… gula för riksdagsvalet, blå för regionvalet och vita för kommunvalet.",
+    "explanationJa": "スウェーデン{議会|ぎかい}の{選挙|せんきょ}の{用紙|ようし}は{黄色|きいろ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför finns det utjämningsmandat?",
+    "options": [
+     "För att mandatfördelningen ska bli så lik rösterna som möjligt",
+     "För att stora valkretsar ska få fler mandat",
+     "För att ersättare ska få en plats",
+     "För att rösterna ska räknas snabbare"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De gör att mandatfördelningen i hela landet blir så lik rösterna som möjligt.",
+    "explanationJa": "{議席|ぎせき}の{配分|はいぶん}を{得票|とくひょう}にできるだけ{近|ちか}づけるためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur lång är en mandatperiod?",
+    "options": [
+     "Ett år",
+     "Fyra år",
+     "Tre år",
+     "Fem år"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… under en mandatperiod på fyra år.",
+    "explanationJa": "{任期|にんき}は4{年|ねん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Alla som bor i samma valdistrikt röstar i samma vallokal.",
+    "correct": true,
+    "explanationSv": "Alla som bor i samma valdistrikt röstar i samma vallokal.",
+    "explanationJa": "{同|おな}じ{投票区|とうひょうく}の{人|ひと}は{同|おな}じ{投票所|とうひょうじょ}で{投票|とうひょう}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Det finns 349 valkretsar i riksdagsvalet.",
+    "correct": false,
+    "explanationSv": "I riksdagsvalet finns det 29 valkretsar.",
+    "explanationJa": "{選挙区|せんきょく}は29で、349は{議席|ぎせき}の{数|かず}です。"
+   }
+  ],
+  "factSources": [
+   "Riksdagsval, regionval och kommunval hålls samma dag, andra söndagen i september vart fjärde år; mandatperioden är fyra år (Regeringsformen 3 kap. 3 §, Vallagen 2005:837 1 kap., val.se).",
+   "Valsedlarna är gula i riksdagsvalet, blå i regionvalet och vita i kommunvalet (val.se).",
+   "Riksdagen har 349 mandat: 310 fasta valkretsmandat och 39 utjämningsmandat; landet är indelat i 29 valkretsar och flera tusen valdistrikt (Regeringsformen 3 kap. 1 och 6 §§, val.se).",
+   "Rösträtt och valbarhet till riksdagen har svenska medborgare som fyllt 18 år; i kommunval och regionval får även vissa utländska medborgare rösta (Regeringsformen 3 kap. 4 och 10 §§, Kommunallagen 4 kap.)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni jämför hur val är ordnade i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vilka val har man i Japan, och hur ofta?",
+   "Vad tycker du om att ha tre val på samma dag?",
+   "Hur lång borde en mandatperiod vara?",
+   "Vad tycker du om att en ersättare kan ta någons plats?"
+  ]
+ }
+}

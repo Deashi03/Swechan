@@ -1,0 +1,188 @@
+{
+ "id": "m.riksdagsdebatter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Riksdagsdebatter",
+ "titleJa": "{国会|こっかい}での{討論|とうろん}",
+ "descriptionSv": "Riksdagsdebatter: debatt, debattera, opposition, talarstol, anförande, begära ordet, replik, talartid, argumentera, saklig, kritisera, interpellation, frågestund, partiledardebatt, votering, rösta, läktare, åhörare och direktsända.",
+ "descriptionJa": "{国会|こっかい}での{討論|とうろん}：{討論|とうろん}、{討論|とうろん}する、{野党|やとう}、{演壇|えんだん}、{演説|えんぜつ}、{発言|はつげん}を{求|もと}める、{反論|はんろん}、{発言時間|はつげんじかん}、{論|ろん}じる、{客観的|きゃっかんてき}な、{批判|ひはん}する、{大臣|だいじん}への{質問|しつもん}、{質問時間|しつもんじかん}、{党首討論|とうしゅとうろん}、{採決|さいけつ}、{投票|とうひょう}する、{傍聴席|ぼうちょうせき}、{傍聴人|ぼうちょうにん}、{生中継|なまちゅうけい}する。",
+ "categoryId": "R03-A01-T02",
+ "tags": [
+  "politik",
+  "riksdag",
+  "debatt"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.utskott-och-beredning"
+ ],
+ "related": [],
+ "recommendedOrder": 1316,
+ "words": [
+  {
+   "senseId": "s.debatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.debattera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.opposition.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talarstol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anförande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.begära-ordet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.replik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talartid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.argumentera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.saklig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kritisera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.interpellation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.frågestund.1",
+   "active": true
+  },
+  {
+   "senseId": "s.partiledardebatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.votering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rösta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läktare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åhörare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.direktsända.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "På läktaren",
+  "paragraphs": [
+   "Hiro är på besök i Stockholm och vill se hur riksdagen arbetar. Han sätter sig på läktaren tillsammans med andra åhörare. I dag ska kammaren debattera ett förslag om nya regler för tåg och bussar.",
+   "Talmannen öppnar mötet, och den första ledamoten går upp i talarstolen. Hon kommer från oppositionen och kritiserar regeringens förslag. Hennes anförande är sakligt, och hon argumenterar med fakta och siffror. Talartiden är kort, så hon talar snabbt.",
+   "Sedan vill en ledamot från ett regeringsparti svara. Han begär ordet för en replik och säger att förslaget är bra och att det kommer att hjälpa många. De två byter repliker några gånger. Hiro märker att de är artiga mot varandra, även när de inte håller med.",
+   "Efter debatten är det votering. Ledamöterna röstar genom att trycka på knappar, och resultatet syns direkt på en stor skärm. Förslaget får stöd av mer än hälften av ledamöterna.",
+   "På kvällen berättar Hiro för sin svenska vän Emma om dagen. Emma säger att riksdagen direktsänder alla debatter på nätet. – Titta på en frågestund eller en interpellation någon gång, säger hon. Eller en partiledardebatt, den är mest spännande!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad handlar debatten om?",
+    "options": [
+     "Skatterna",
+     "Skolan",
+     "Vården",
+     "Nya regler för tåg och bussar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I dag ska kammaren debattera ett förslag om nya regler för tåg och bussar.",
+    "explanationJa": "{電車|でんしゃ}とバスの{新|あたら}しい{規則|きそく}についてです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur argumenterar den första ledamoten?",
+    "options": [
+     "Med fakta och siffror",
+     "Med skämt",
+     "Med höga röster",
+     "Med frågor till åhörarna"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… hon argumenterar med fakta och siffror.",
+    "explanationJa": "{事実|じじつ}と{数字|すうじ}を{使|つか}って{論|ろん}じます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör ledamoten från regeringspartiet?",
+    "options": [
+     "Han lämnar kammaren",
+     "Han begär ordet för en replik",
+     "Han leder mötet",
+     "Han skriver en interpellation"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han begär ordet för en replik …",
+    "explanationJa": "{反論|はんろん}のために{発言|はつげん}を{求|もと}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ledamöterna röstar genom att räcka upp handen.",
+    "correct": false,
+    "explanationSv": "Ledamöterna röstar genom att trycka på knappar …",
+    "explanationJa": "ボタンを{押|お}して{投票|とうひょう}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emma tycker att partiledardebatter är roliga att titta på.",
+    "correct": true,
+    "explanationSv": "Eller en partiledardebatt, den är mest spännande!",
+    "explanationJa": "エマは{党首討論|とうしゅとうろん}がいちばんおもしろいと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Ledamöterna talar från talarstolen i kammaren, och talmannen leder debatterna. Ledamöter kan begära replik på ett anförande, ställa interpellationer och frågor till statsråden och delta i frågestunder och partiledardebatter (riksdagen.se, Riksdagsordningen 6 och 8 kap.).",
+   "Voteringar i kammaren sker elektroniskt med knapparna ja, nej och avstår, och resultatet visas på tavlor i kammaren. Kammarens debatter direktsänds på riksdagens webb-tv, och allmänheten kan följa dem från läktaren (riksdagen.se).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om politiska debatter i riksdagen och på tv.",
+  "discussionPoints": [
+   "Har du sett en politisk debatt? Vad tyckte du?",
+   "Vad är viktigt för att en debatt ska vara saklig?",
+   "Skulle du vilja sitta på läktaren i riksdagen som åhörare?",
+   "Hur skiljer sig debatterna i Japans parlament från debatterna i riksdagen?"
+  ]
+ }
+}

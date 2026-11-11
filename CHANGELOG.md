@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.30.0 – 2026-11-11
+
+42 nya moduler som gör överämnet *Politik & demokrati* (R03-A01) komplett. Det är det första överämnet i rotområdet *Samhälle & institutioner*. Varje nytt modulord har en egen bild, utom de 20 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 697 målord)
+- **Demokratins grundbegrepp** (1301–1307): demokrati och diktatur, rösträtt, majoritet och minoritet, maktfördelning, medborgerliga fri- och rättigheter, opinion och demokratiska institutioner.
+- **Svensk politik** (1311–1317): riksdag och regering, ministrar, partier, motioner och propositioner, utskott, riksdagsdebatter och regeringsbildning.
+- **Val & folkomröstningar** (1321–1327): valkampanjer, vallokaler, rösträkning, mandat, spärrar och valsystem, folkomröstningar och regeringsskifte.
+- **Kommuner & regioner** (1331–1337): fullmäktige, nämnder, regionernas ansvar, skattefinansierad service, lokala beslut, medborgarförslag och kommunal självstyrelse.
+- **Internationell politik** (1341–1347): diplomati, fördrag, EU och FN, sanktioner, allianser och internationella konflikter.
+- **Politiska idéer** (1351–1357): liberalism, konservatism, socialism, nationalism, feminism, grön ideologi samt kompromiss och reform.
+- Varje modul har 15–19 målord, lästext med fem frågor och konversationsunderlag. Det finns 495 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`.
+- Lästexterna har faktakällor (riksdagen.se, regeringen.se, val.se, Regeringsformen m.fl.). De nämner inga levande politiker och inga partisiffror, och partier visas bara som färger.
+- Nya betydelser på befintliga poster: *kammare* (riksdagens), *avgå* (lämna ett uppdrag), *motion* (förslag i riksdagen), *utredning*, *remiss*, *anta*, *släppa fram*, *ogiltig* (röst), *jämn* (nästan lika), *spärr* (i val), *lokal* (på en ort), *justera* (ett protokoll), och *självständighet* (ett lands). Den befintliga betydelsen *hållbar* (s.hållbar.2) fick bild.
+- 18 ordposter och betydelsen *avgå* (lämna ett uppdrag) skapades av två grupper samtidigt och slogs ihop. Den tidigare modulen i katalogordningen äger posten och bilden.
+- Ordet *parti* hade bara funnits i grundordförrådet och har nu en egen post, liksom *avtal*, *krig* och *fred*.
+
+### Bilder (489 nya ordbilder)
+- 294 symbolbilder, 55 bilder som får användas i bildövningar och resten scener.
+- 315 symbol- och adjektivbilder blindtestades. 295 klarade testet efter högst två omgångar.
+- **20 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`: *rösträtt, utöva, statsmakt, medborgerlig, representera, institution, ansvarig, politisk, bereda, debattera, valkampanj, valkrets, regional, motivering, diplomatisk, åtagande, samarbete, liberal, liberalism* och *socialistisk*.
+- Äkta synonymer är markerade som förväxlingsbara, till exempel *minister/statsråd*, *regeringsskifte/maktskifte*, *angripa/anfalla* och *fosterland/hemland*.
+- Nya bildfiler i `src/ui/wordArt/`: `democracy.ts`, `swedishPolitics.ts`, `elections.ts`, `municipal.ts`, `worldPolitics.ts` och `ideologies.ts`.
+
+### Verktyg och test
+- `tools/production/dsl.py` skriver versionsnumret i `verifiedBy` (tidigare stod det `'+VER+'`).
+- e2e-testets planerade exempel är *Lag och förordning* (Juridik & rättsväsende).
+
+Service workern är `swechan-v34`.
+
 ## 0.29.0 – 2026-11-11
 
 105 nya moduler som gör överämnet *Människan & hälsa* komplett: resten av *Relationer & familj* och hela *Kommunikation* och *Livsfaser*. Från och med den här versionen har **varje modulord en bild, animation eller symbol**. Det är produktägarens regel från 0.29, och validatorn stoppar nya ord utan visualisering.

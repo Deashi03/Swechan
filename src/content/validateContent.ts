@@ -27,7 +27,13 @@ export const VISUAL_EXCEPTIONS_BEFORE_0_29: ReadonlySet<string> = new Set([
  * Product owner's rule (after 0.29): a picture gets at most two blind-test rounds. A word whose picture fails
  * the second round gets plan status `none` and is listed here and under "Saknade bilder" in PROJECT_STATUS.md.
  */
-export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set(['s.demenssjuk.1']);
+export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
+  's.demenssjuk.1',
+  // 0.30, after two blind-test rounds
+  's.rösträtt.1', 's.utöva.1', 's.statsmakt.1', 's.medborgerlig.1', 's.representera.1', 's.institution.1', 's.ansvarig.1', 's.politisk.1', 's.bereda.1', 's.debattera.1', 's.valkampanj.1', 's.valkrets.1',
+  's.regional.1', 's.motivering.1',
+  's.diplomatisk.1', 's.åtagande.1', 's.samarbete.1', 's.liberal.1', 's.liberalism.1', 's.socialistisk.1',
+]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
   const issues: ContentIssue[] = [];

@@ -1,0 +1,176 @@
+{
+ "id": "m.riksdag-och-regering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Riksdag och regering",
+ "titleJa": "{国会|こっかい}と{政府|せいふ}",
+ "descriptionSv": "Riksdag och regering: politik, parlament, riksdag, riksdagshus, kammare, riksdagsledamot, folkvald, regering, talman, stifta lagar, fatta beslut, skatt, statsbudget, statlig, verkställa och granska.",
+ "descriptionJa": "{国会|こっかい}と{政府|せいふ}：{政治|せいじ}、{議会|ぎかい}、（スウェーデンの）{国会|こっかい}、{国会議事堂|こっかいぎじどう}、{議場|ぎじょう}、{国会議員|こっかいぎいん}、{国民|こくみん}に{選|えら}ばれた、{政府|せいふ}、{国会議長|こっかいぎちょう}、{法律|ほうりつ}を{制定|せいてい}する、{決定|けってい}を{下|くだ}す、{税金|ぜいきん}、{国家予算|こっかよさん}、{国|くに}の、{実行|じっこう}する、よく{調|しら}べる。",
+ "categoryId": "R03-A01-T02",
+ "tags": [
+  "politik",
+  "riksdag",
+  "regering"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.demokratiska-institutioner"
+ ],
+ "related": [],
+ "recommendedOrder": 1311,
+ "words": [
+  {
+   "senseId": "s.politik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parlament.1",
+   "active": false
+  },
+  {
+   "senseId": "s.riksdag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riksdagshus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kammare.2",
+   "active": true
+  },
+  {
+   "senseId": "s.riksdagsledamot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.folkvald.1",
+   "active": false
+  },
+  {
+   "senseId": "s.regering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talman.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stifta-lagar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fatta-beslut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statsbudget.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.verkställa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.granska.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett besök i riksdagshuset",
+  "paragraphs": [
+   "Aiko läser svenska och är intresserad av politik. En dag går hon med sin lärare Lars till riksdagshuset i Stockholm. Där arbetar Sveriges riksdag, alltså landets parlament.",
+   "Karin, som arbetar i riksdagshuset, visar dem kammaren. – Här sitter alla 349 riksdagsledamöter när de röstar, säger hon. De är folkvalda, och det är val till riksdagen vart fjärde år. Längst fram sitter talmannen, som leder mötena.",
+   "– Vad gör riksdagen egentligen? frågar Aiko. – Riksdagen stiftar lagar och fattar beslut om skatter och om statsbudgeten, säger Karin. Den bestämmer alltså hur mycket pengar staten ska ta in och vad pengarna ska användas till.",
+   "– Och regeringen? frågar Lars. – Regeringen styr landet och verkställer riksdagens beslut, säger Karin. Den har hjälp av många statliga myndigheter. Riksdagen granskar också regeringens arbete.",
+   "På väg hem tänker Aiko på Japan. Där finns också ett parlament och en regering, men parlamentet har två kamrar. – I Sverige räcker det med en, säger Lars och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många riksdagsledamöter finns det?",
+    "options": [
+     "175",
+     "349",
+     "100",
+     "500"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Här sitter alla 349 riksdagsledamöter när de röstar.",
+    "explanationJa": "{国会議員|こっかいぎいん}は349{人|にん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem leder mötena i kammaren?",
+    "options": [
+     "Regeringen",
+     "Karin",
+     "Talmannen",
+     "Läraren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Längst fram sitter talmannen, som leder mötena.",
+    "explanationJa": "{会議|かいぎ}を{進|すす}めるのは{国会議長|こっかいぎちょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör regeringen med riksdagens beslut?",
+    "options": [
+     "Den stiftar dem",
+     "Den granskar dem",
+     "Den verkställer dem",
+     "Den betalar dem"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Regeringen styr landet och verkställer riksdagens beslut.",
+    "explanationJa": "{政府|せいふ}は{国会|こっかい}の{決定|けってい}を{実行|じっこう}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Riksdagen bestämmer hur statens pengar ska användas.",
+    "correct": true,
+    "explanationSv": "Den bestämmer alltså hur mycket pengar staten ska ta in och vad pengarna ska användas till.",
+    "explanationJa": "{国会|こっかい}が{国家予算|こっかよさん}を{決|き}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Japans parlament har lika många kamrar som riksdagen.",
+    "correct": false,
+    "explanationSv": "Där finns också ett parlament och en regering, men parlamentet har två kamrar.",
+    "explanationJa": "{日本|にほん}の{国会|こっかい}は{二院制|にいんせい}で、スウェーデンは{一院制|いちいんせい}です。"
+   }
+  ],
+  "factSources": [
+   "Riksdagen är Sveriges parlament, har 349 ledamöter och har haft en kammare sedan 1971. Val till riksdagen hålls vart fjärde år. Riksdagen stiftar lagar, beslutar om statens budget och skatter och granskar regeringen, och talmannen leder riksdagens arbete (riksdagen.se, Regeringsformen 1 kap. 4 § och 4 kap.).",
+   "Regeringen styr riket och verkställer riksdagens beslut med hjälp av de statliga myndigheterna (regeringen.se, Regeringsformen 1 kap. 6 §).",
+   "Japans parlament har två kamrar (shugiin och sangiin)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om riksdagen och regeringen i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vad är skillnaden mellan riksdagen och regeringen?",
+   "Vad tycker du att staten ska använda skatten till?",
+   "Har du besökt ett parlament, i Sverige eller i ett annat land?",
+   "Vad vet du om hur lagar stiftas i Japan?"
+  ]
+ }
+}
