@@ -1,0 +1,187 @@
+{
+ "id": "m.rostmeddelanden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-09",
+ "titleSv": "Röstmeddelanden",
+ "titleJa": "ボイスメッセージ",
+ "descriptionSv": "Röstmeddelanden: röstmeddelande, spela in, lämna ett meddelande, telefonsvarare, röstbrevlåda, pip, prata in, hålla inne, inspelning, spela upp, lyssna av, radera, återkomma, snarast, för tillfället, abonnent, kortfattad och långrandig.",
+ "descriptionJa": "ボイスメッセージ：ボイスメッセージ、{録音|ろくおん}する、メッセージを{残|のこ}す、{留守番電話|るすばんでんわ}、ボイスメールボックス、ピーという{音|おと}、（{声|こえ}を）{吹|ふ}き{込|こ}む、（ボタンを）{押|お}し{続|つづ}ける、{録音|ろくおん}、{再生|さいせい}する、（{留守電|るすでん}を）{聞|き}く、{削除|さくじょ}する、{改|あらた}めて{連絡|れんらく}する、できるだけ{早|はや}く、{今|いま}のところ、{加入者|かにゅうしゃ}、{簡潔|かんけつ}な、{長|なが}ったらしい。",
+ "categoryId": "R02-A05-T06",
+ "tags": [
+  "kommunikation",
+  "telefon"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.videosamtal"
+ ],
+ "related": [],
+ "recommendedOrder": 1153,
+ "words": [
+  {
+   "senseId": "s.röstmeddelande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spela-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-ett-meddelande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.telefonsvarare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röstbrevlåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pip.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prata-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-inne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inspelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spela-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyssna-av.1",
+   "active": false
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återkomma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snarast.1",
+   "active": false
+  },
+  {
+   "senseId": "s.för-tillfället.1",
+   "active": true
+  },
+  {
+   "senseId": "s.abonnent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kortfattad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.långrandig.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Meddelanden efter pipet",
+  "paragraphs": [
+   "Aikos chef Erik ringde i går kväll, men Aiko var på bio och hade mobilen avstängd. Därför gick samtalet till hennes telefonsvarare. Erik lämnade ett meddelande efter pipet.",
+   "När filmen var slut ville Aiko lyssna av röstbrevlådan. Hon spelade upp Eriks röstmeddelande. Det var långrandigt: Erik pratade om vädret, sin hund och sin semester. Först efter två minuter kom det viktiga: ”Ring mig snarast!”",
+   "Aiko försökte ringa tillbaka, men hon hörde bara en röst som sa att abonnenten inte kunde svara för tillfället. Hon förstod att Eriks mobil var avstängd.",
+   "Då ville Aiko spela in ett eget röstmeddelande i mobilen. Hon höll inne knappen och pratade in ett kortfattat svar: ”Hej Erik, jag har fått ditt meddelande. Jag återkommer i morgon förmiddag.”",
+   "Efteråt lyssnade hon på inspelningen och tyckte att hennes röst lät konstig. Hon raderade den och gjorde en ny. – Varför låter man alltid så konstig på en inspelning? frågade hon sin sambo."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför gick Eriks samtal till telefonsvararen?",
+    "options": [
+     "Aiko ville inte prata med Erik",
+     "Aiko var på bio och hade mobilen avstängd",
+     "Erik ringde fel nummer",
+     "Aikos röstbrevlåda var full"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… Aiko var på bio och hade mobilen avstängd.",
+    "explanationJa": "アイコは{映画館|えいがかん}にいて、{携帯|けいたい}の{電源|でんげん}を{切|き}っていたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad pratade Erik om först i sitt meddelande?",
+    "options": [
+     "Ett möte i morgon",
+     "Aikos lön",
+     "Vädret, sin hund och sin semester",
+     "En film"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Erik pratade om vädret, sin hund och sin semester.",
+    "explanationJa": "{天気|てんき}、{犬|いぬ}、{休暇|きゅうか}の{話|はなし}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Eriks meddelande var långrandigt. Vad betyder det?",
+    "options": [
+     "Det var mycket kort",
+     "Det var svårt att höra",
+     "Det var på engelska",
+     "Det var för långt, med många ord som inte behövdes"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Långrandig betyder för lång och tråkig.",
+    "explanationJa": "{長|なが}ったらしい、という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aiko fick prata med Erik när hon ringde tillbaka.",
+    "correct": false,
+    "explanationSv": "… hon hörde bara en röst som sa att abonnenten inte kunde svara …",
+    "explanationJa": "{録音|ろくおん}の{声|こえ}が{聞|き}こえただけでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "focus": "cause",
+    "promptSv": "Varför raderade Aiko sin första inspelning?",
+    "options": [
+     "Den var för lång",
+     "Erik bad henne om det",
+     "Hon tyckte att hennes röst lät konstig",
+     "Hon hade sagt fel namn"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… tyckte att hennes röst lät konstig. Hon raderade den …",
+    "explanationJa": "{自分|じぶん}の{声|こえ}が{変|へん}に{聞|き}こえたからです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om röstmeddelanden och telefonsvarare.",
+  "discussionPoints": [
+   "Lyssnar du av din röstbrevlåda, eller ringer du hellre tillbaka direkt?",
+   "Skickar du röstmeddelanden i chattar? Varför eller varför inte?",
+   "Vad ska ett bra röstmeddelande innehålla?",
+   "Vad tycker du om din egen röst på en inspelning?"
+  ]
+ }
+}

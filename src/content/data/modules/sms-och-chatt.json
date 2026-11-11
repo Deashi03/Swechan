@@ -1,0 +1,179 @@
+{
+ "id": "m.sms-och-chatt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-09",
+ "titleSv": "Sms och chatt",
+ "titleJa": "ショートメッセージとチャット",
+ "descriptionSv": "Sms och chatt: sms, chatt, chattapp, konversation, pling, vibrera, notis, pratbubbla, emoji, tangentbord, skriva fel, skriva tillbaka, skicka iväg, redigera, läskvitto och chattspråk.",
+ "descriptionJa": "ショートメッセージとチャット：ショートメッセージ、チャット、チャットアプリ、{会話|かいわ}、ピロン（{通知音|つうちおん}）、{振動|しんどう}する、（アプリの）{通知|つうち}、{吹|ふ}き{出|だ}し、{絵文字|えもじ}、キーボード、{打|う}ち{間違|まちが}える、{返信|へんしん}する、{送|おく}ってしまう、{編集|へんしゅう}する、{既読|きどく}、チャット{言葉|ことば}。",
+ "categoryId": "R02-A05-T06",
+ "tags": [
+  "kommunikation",
+  "chatt"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.rostmeddelanden"
+ ],
+ "related": [],
+ "recommendedOrder": 1154,
+ "words": [
+  {
+   "senseId": "s.sms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chattapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konversation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vibrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.notis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pratbubbla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.emoji.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tangentbord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriva-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriva-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-iväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.redigera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.läskvitto.1",
+   "active": false
+  },
+  {
+   "senseId": "s.chattspråk.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Pling!",
+  "paragraphs": [
+   "Det säger pling i Aikos mobil hela dagen. Hon använder en chattapp för att prata med sina vänner. Hennes mamma skickar fortfarande vanliga sms. På jobbet har de en chatt för korta frågor.",
+   "I morse vibrerade mobilen under frukosten. Det var en notis från Sara. Aiko öppnade konversationen och såg en pratbubbla med tre hjärtan och en emoji som skrattade: ”Grattis på födelsedagen!”",
+   "Aiko ville skriva tillbaka snabbt, men tangentbordet i mobilen är litet, och hon skrev fel. ”Tack för alla grattis!” blev ”Tack för alla gratis!” Hon skickade iväg meddelandet innan hon såg felet. Tur att man kan redigera.",
+   "Sara och Johan skriver ofta på chattspråk, med många förkortningar och emojier. Aiko förstår inte alltid vad de menar, men hon lär sig lite mer varje vecka.",
+   "Johan har inte svarat på Aikos fråga från i går. På läskvittot ser hon att han har läst den. – Varför svarar han inte? tänker hon. Kanske har han bara glömt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur skickar Aikos mamma meddelanden?",
+    "options": [
+     "I en chattapp",
+     "Med brev",
+     "Med röstmeddelanden",
+     "Med vanliga sms"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hennes mamma skickar fortfarande vanliga sms.",
+    "explanationJa": "{普通|ふつう}のショートメッセージを{送|おく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför skrev Aiko fel?",
+    "options": [
+     "Tangentbordet i mobilen är litet",
+     "Hon var arg",
+     "Hon kunde inte ordet",
+     "Mobilen vibrerade"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… tangentbordet i mobilen är litet, och hon skrev fel.",
+    "explanationJa": "{携帯|けいたい}のキーボードが{小|ちい}さいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilket fel blev det i Aikos svar?",
+    "options": [
+     "Tack blev tak",
+     "Alla blev alls",
+     "Grattis blev gratis",
+     "Hon skickade fel bild"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Tack för alla grattis!” blev ”Tack för alla gratis!”",
+    "explanationJa": "「grattis（おめでとう）」が「gratis（{無料|むりょう}）」になりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad visar ett läskvitto?",
+    "options": [
+     "Att den andra har läst meddelandet",
+     "Att meddelandet kostar pengar",
+     "Att mobilen är avstängd",
+     "Att någon skriver just nu"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På läskvittot ser hon att han har läst den.",
+    "explanationJa": "{相手|あいて}がメッセージを{読|よ}んだことを{示|しめ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko vet säkert varför Johan inte svarar.",
+    "correct": false,
+    "explanationSv": "Kanske har han bara glömt.",
+    "explanationJa": "{理由|りゆう}はわからず、{忘|わす}れただけかもしれないと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sms, chattar och hur man skriver till varandra.",
+  "discussionPoints": [
+   "Vilken chattapp använder du mest?",
+   "Hur många emojier brukar du använda?",
+   "Tycker du om läskvitton, eller stänger du av dem?",
+   "Hur snabbt tycker du att man ska skriva tillbaka?"
+  ]
+ }
+}

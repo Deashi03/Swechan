@@ -33,5 +33,7 @@ export default defineConfig({
     css: false,
     // content-wide tests iterate over every module word; they grow with the content
     testTimeout: 60_000,
+    // agent worktrees (.claude/worktrees) contain full copies of the repo
+    exclude: ['**/node_modules/**', '**/dist/**', '.claude/**'],
   },
 });

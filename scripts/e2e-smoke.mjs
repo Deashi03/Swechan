@@ -210,14 +210,13 @@ try {
   await page.getByRole('link', { name: /Matlagningens verb/ }).first().click();
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
-  // Vardag & hem is fully published from 0.8, Kroppen & sinnena from 0.9, Hälsa & sjukvård
-  // from 0.10 and Känslor & psykologi from 0.11; Relationer & familj is partly published from 0.14,
-  // so the planned entry is Föräldraskap & barn → Graviditet och födsel.
+  // Vardag & hem and Människan & hälsa are fully published (0.29), so the planned entry is the first
+  // module of Samhälle & institutioner: Politik & demokrati → Demokratins grundbegrepp → Demokrati och diktatur.
   await page.goto(`${BASE}#/explore`);
-  await page.getByRole('link', { name: /Människan & hälsa/ }).first().click();
-  await page.getByRole('link', { name: /Relationer & familj/ }).first().click();
-  await page.getByRole('link', { name: /Föräldraskap & barn/ }).first().click();
-  await page.getByRole('link', { name: /Graviditet och födsel/ }).first().click();
+  await page.getByRole('link', { name: /Samhälle & institutioner/ }).first().click();
+  await page.getByRole('link', { name: /Politik & demokrati/ }).first().click();
+  await page.getByRole('link', { name: /Demokratins grundbegrepp/ }).first().click();
+  await page.getByRole('link', { name: /Demokrati och diktatur/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);

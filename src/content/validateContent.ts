@@ -6,12 +6,28 @@
  */
 import { checkFurigana } from './furigana';
 import { entryOccursIn } from './morphology';
-import { allWordImages } from './images';
+import { allWordImages, imageFor } from './images';
 import { allPlannedVisuals, plannedVisual } from './visualPlan';
 import type { ContentRepository } from './repository';
 import { needsExplanation } from './schema';
 
 export type ContentIssue = { where: string; message: string };
+
+/**
+ * Product owner's rule (0.29): everything produced from now on has a picture, an animation or a symbol.
+ * These 14 module words were published without a visualisation before the rule and are the only exceptions.
+ * Never add to this list – draw a picture (and blind-test it) instead.
+ */
+export const VISUAL_EXCEPTIONS_BEFORE_0_29: ReadonlySet<string> = new Set([
+  's.en-bit.1', 's.extremt.1', 's.frasighet.1', 's.ha-det-trevligt.1', 's.knaprig.1', 's.leverans.1', 's.motion.1',
+  's.otrogen.1', 's.så-fort.1', 's.varifrån.1', 's.veckovis.1', 's.vänligen.1', 's.ödmjuk.1', 's.ömsint.1',
+]);
+
+/**
+ * Product owner's rule (after 0.29): a picture gets at most two blind-test rounds. A word whose picture fails
+ * the second round gets plan status `none` and is listed here and under "Saknade bilder" in PROJECT_STATUS.md.
+ */
+export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set(['s.demenssjuk.1']);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
   const issues: ContentIssue[] = [];
@@ -125,6 +141,12 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
   // Visual plan (0.12): every module word has a planned kind; every row points at a known sense
   for (const m of repo.modules) for (const wd of m.words) if (!plannedVisual(wd.senseId)) add(`${m.id} › ${wd.senseId}`, 'Visualiseringsplan saknas – kör npm run visuals:plan');
   for (const id of Object.keys(allPlannedVisuals())) if (!repo.getSense(id)) add(`visualiseringsplan ${id}`, 'Okänd betydelse');
+  // Every module word has a visualisation (0.29, product owner's rule)
+  for (const m of repo.modules) for (const wd of m.words) {
+    if (VISUAL_EXCEPTIONS_BEFORE_0_29.has(wd.senseId) || VISUAL_MISSING_AFTER_BLIND_TEST.has(wd.senseId)) continue;
+    if (!imageFor(wd.senseId)) add(`${m.id} › ${wd.senseId}`, 'Ordet saknar bild, animation eller symbol – från 0.29 ska varje modulord ha en visualisering');
+    if (plannedVisual(wd.senseId)?.kind === 'none') add(`${m.id} › ${wd.senseId}`, 'Planen säger "ingen bild" – från 0.29 får nya modulord inte sakna visualisering');
+  }
 
   return issues;
 }
