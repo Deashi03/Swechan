@@ -12892,7 +12892,12 @@
    "kind": "illustration",
    "motif": "livs.avstå",
    "group": "avstå",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.offra.1",
+    "s.välja-bort.1",
+    "s.livsval.1"
+   ]
   },
   {
    "senseId": "s.skäl.1",
@@ -30576,7 +30581,9 @@
    "group": "prioritera",
    "quiz": true,
    "confusableWith": [
-    "s.i-första-hand.1"
+    "s.i-första-hand.1",
+    "s.komma-i-första-rummet.1",
+    "s.prioritering.1"
    ]
   },
   {
@@ -30586,7 +30593,9 @@
    "group": "prioritera",
    "quiz": true,
    "confusableWith": [
-    "s.avgörande.1"
+    "s.avgörande.1",
+    "s.komma-i-första-rummet.1",
+    "s.prioritera.1"
    ]
   },
   {
@@ -30726,7 +30735,12 @@
    "kind": "illustration",
    "motif": "plan.välja-bort",
    "group": "välja",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.offra.1",
+    "s.avstå.1",
+    "s.livsval.1"
+   ]
   },
   {
    "senseId": "s.påminnelse.1",
@@ -74063,7 +74077,12 @@
     "s.utstött.1",
     "s.utanförskap.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "ef73ee80"
+   }
   },
   {
    "senseId": "s.en-i-gänget.1",
@@ -74751,7 +74770,12 @@
    "confusableWith": [
     "s.närgången.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "af755c52"
+   }
   },
   {
    "senseId": "s.kränka.1",
@@ -74902,7 +74926,12 @@
     "s.av-princip.1",
     "s.principfast.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "d5f5fba1"
+   }
   },
   {
    "senseId": "s.av-princip.1",
@@ -74932,7 +74961,12 @@
     "s.rätt-och-fel.1",
     "s.samvete.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "b61e0bee"
+   }
   },
   {
    "senseId": "s.moralisk.1",
@@ -75013,7 +75047,12 @@
     "s.rakryggad.1",
     "s.hålla-fast-vid.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "39df93f6"
+   }
   },
   {
    "senseId": "s.gå-emot.1",
@@ -75394,7 +75433,12 @@
     "s.tycka-till.1",
     "s.åsikt.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "a98b13a9"
+   }
   },
   {
    "senseId": "s.personligen.2",
@@ -75554,7 +75598,12 @@
     "s.instämma.1",
     "s.medhåll.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "8148d807"
+   }
   },
   {
    "senseId": "s.instämma.1",
@@ -75564,7 +75613,10 @@
    "quiz": false,
    "confusableWith": [
     "s.vara-överens.1",
-    "s.medhåll.1"
+    "s.medhåll.1",
+    "s.det-ligger-något-i-det.1",
+    "s.ha-en-poäng.1",
+    "s.medge.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -75630,7 +75682,9 @@
    "group": "åsikt-instämma",
    "quiz": false,
    "confusableWith": [
-    "s.det-ligger-något-i-det.1"
+    "s.det-ligger-något-i-det.1",
+    "s.medge.1",
+    "s.instämma.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -75647,9 +75701,16 @@
    "quiz": false,
    "confusableWith": [
     "s.delvis.1",
-    "s.ha-en-poäng.1"
+    "s.ha-en-poäng.1",
+    "s.medge.1",
+    "s.instämma.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "cbf2849f"
+   }
   },
   {
    "senseId": "s.visserligen.1",
@@ -75660,7 +75721,12 @@
    "confusableWith": [
     "s.medge.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "058a2432"
+   }
   },
   {
    "senseId": "s.medge.1",
@@ -75669,7 +75735,10 @@
    "group": "åsikt-instämma",
    "quiz": false,
    "confusableWith": [
-    "s.visserligen.1"
+    "s.visserligen.1",
+    "s.det-ligger-något-i-det.1",
+    "s.ha-en-poäng.1",
+    "s.instämma.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -76391,7 +76460,12 @@
    "confusableWith": [
     "s.tack-vare.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "982fabf8"
+   }
   },
   {
    "senseId": "s.medföra.1",
@@ -76420,7 +76494,8 @@
     "s.konsekvens.1",
     "s.leda-till.1",
     "s.orsaka.1",
-    "s.medföra.1"
+    "s.medföra.1",
+    "s.orsak-och-verkan.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -76521,9 +76596,15 @@
    "quiz": false,
    "confusableWith": [
     "s.leda-till.1",
-    "s.kedjereaktion.1"
+    "s.kedjereaktion.1",
+    "s.utlösa.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "ad5e82ee"
+   }
   },
   {
    "senseId": "s.förutsäga.1",
@@ -76550,7 +76631,12 @@
    "confusableWith": [
     "s.förutsäga.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "27b6e918"
+   }
   },
   {
    "senseId": "s.av-en-slump.1",
@@ -76774,7 +76860,12 @@
    "confusableWith": [
     "s.tvivelaktig.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "1fa63a26"
+   }
   },
   {
    "senseId": "s.lättlurad.1",
@@ -76943,7 +77034,12 @@
    "confusableWith": [
     "s.vidsynt.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "a6ba58e0"
+   }
   },
   {
    "senseId": "s.trångsynt.1",
@@ -77019,7 +77115,12 @@
    "confusableWith": [
     "s.bo-på-hotell-mamma.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "69f2ffe2"
+   }
   },
   {
    "senseId": "s.bo-på-hotell-mamma.1",
@@ -77030,7 +77131,12 @@
    "confusableWith": [
     "s.hemmaboende.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "34a3796b"
+   }
   },
   {
    "senseId": "s.flyga-ur-boet.1",
@@ -77041,7 +77147,12 @@
    "confusableWith": [
     "s.det-tomma-boet.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "29bae464"
+   }
   },
   {
    "senseId": "s.ensamboende.1",
@@ -77060,7 +77171,12 @@
    "confusableWith": [
     "s.bostadskö.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "d91681e9"
+   }
   },
   {
    "senseId": "s.andrahandskontrakt.1",
@@ -77071,7 +77187,12 @@
    "confusableWith": [
     "s.förstahandskontrakt.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "dda000df"
+   }
   },
   {
    "senseId": "s.dela-lägenhet.1",
@@ -77086,7 +77207,12 @@
    "motif": "vux.bostadsbidrag",
    "group": "bostadsbidrag",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "e97078fd"
+   }
   },
   {
    "senseId": "s.begagnad.1",
@@ -77097,7 +77223,12 @@
    "confusableWith": [
     "s.secondhand.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "7d7ce5d2"
+   }
   },
   {
    "senseId": "s.vuxenpoäng.1",
@@ -77105,7 +77236,12 @@
    "motif": "vux.vuxenpoäng",
    "group": "vuxenpoäng",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "39fc8dcc"
+   }
   },
   {
    "senseId": "s.vuxenstuderande.1",
@@ -77167,7 +77303,12 @@
    "motif": "vux.behörighet",
    "group": "behörighet",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "af339e9e"
+   }
   },
   {
    "senseId": "s.komplettera.1",
@@ -77175,7 +77316,12 @@
    "motif": "vux.komplettera",
    "group": "komplettera",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "f32606fd"
+   }
   },
   {
    "senseId": "s.omskola-sig.1",
@@ -77186,7 +77332,12 @@
    "confusableWith": [
     "s.sadla-om.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "4f8436b3"
+   }
   },
   {
    "senseId": "s.kvällskurs.1",
@@ -77204,7 +77355,12 @@
    "confusableWith": [
     "s.på-heltid.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "ee0ae663"
+   }
   },
   {
    "senseId": "s.på-heltid.1",
@@ -77215,7 +77371,12 @@
    "confusableWith": [
     "s.på-deltid.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "1cd7bf2a"
+   }
   },
   {
    "senseId": "s.studieledig.1",
@@ -77223,7 +77384,12 @@
    "motif": "vux.studieledig",
    "group": "studieledig",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "51763397"
+   }
   },
   {
    "senseId": "s.studiemedel.1",
@@ -77236,7 +77402,12 @@
     "s.studielån.1",
     "s.CSN.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "06934770"
+   }
   },
   {
    "senseId": "s.studiebidrag.1",
@@ -77249,7 +77420,12 @@
     "s.studielån.1",
     "s.CSN.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "7f1faa4b"
+   }
   },
   {
    "senseId": "s.studielån.1",
@@ -77262,7 +77438,12 @@
     "s.studiebidrag.1",
     "s.CSN.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "51621224"
+   }
   },
   {
    "senseId": "s.CSN.1",
@@ -77275,7 +77456,12 @@
     "s.studiebidrag.1",
     "s.studielån.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "11eada87"
+   }
   },
   {
    "senseId": "s.arbetsliv.1",
@@ -77283,7 +77469,12 @@
    "motif": "vux.arbetsliv",
    "group": "arbetsliv",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "c62c9391"
+   }
   },
   {
    "senseId": "s.praktikplats.1",
@@ -77296,7 +77487,12 @@
     "s.provanställning.1",
     "s.anställning.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "d2633faf"
+   }
   },
   {
    "senseId": "s.arbetslivserfarenhet.1",
@@ -77304,7 +77500,12 @@
    "motif": "vux.arbetslivserfarenhet",
    "group": "arbetslivserfarenhet",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "b966b059"
+   }
   },
   {
    "senseId": "s.anställning.1",
@@ -77318,7 +77519,12 @@
     "s.provanställning.1",
     "s.arbetsgivare.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "40123c08"
+   }
   },
   {
    "senseId": "s.arbetsgivare.1",
@@ -77341,7 +77547,12 @@
     "s.praktikplats.1",
     "s.anställning.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "b7266cc0"
+   }
   },
   {
    "senseId": "s.nyanställd.1",
@@ -77354,7 +77565,12 @@
     "s.provanställning.1",
     "s.anställning.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "0ed6ad02"
+   }
   },
   {
    "senseId": "s.visa-framfötterna.1",
@@ -77362,7 +77578,12 @@
    "motif": "vux.visa-framfötterna",
    "group": "visa",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "72c6afb8"
+   }
   },
   {
    "senseId": "s.introduktion.1",
@@ -77430,7 +77651,12 @@
    "confusableWith": [
     "s.livskamrat.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "bd108240"
+   }
   },
   {
    "senseId": "s.livskamrat.1",
@@ -77441,7 +77667,12 @@
    "confusableWith": [
     "s.stadga-sig.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "70f61d2a"
+   }
   },
   {
    "senseId": "s.bilda-familj.1",
@@ -77452,7 +77683,12 @@
    "confusableWith": [
     "s.skaffa-barn.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "f7a1426d"
+   }
   },
   {
    "senseId": "s.skaffa-barn.1",
@@ -77463,7 +77699,12 @@
    "confusableWith": [
     "s.bilda-familj.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "4d34317a"
+   }
   },
   {
    "senseId": "s.barnlängtan.1",
@@ -77474,7 +77715,12 @@
    "confusableWith": [
     "s.barnlöshet.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "23822a5d"
+   }
   },
   {
    "senseId": "s.barnlöshet.1",
@@ -77485,7 +77731,12 @@
    "confusableWith": [
     "s.barnlängtan.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "98576029"
+   }
   },
   {
    "senseId": "s.provrörsbefruktning.1",
@@ -77500,7 +77751,12 @@
    "motif": "vux.föräldraskap",
    "group": "föräldraskap",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "70ab8406"
+   }
   },
   {
    "senseId": "s.nybliven.1",
@@ -77508,7 +77764,12 @@
    "motif": "vux.nybliven",
    "group": "nybliven",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "18d60439"
+   }
   },
   {
    "senseId": "s.familjeliv.1",
@@ -77538,7 +77799,12 @@
    "motif": "vux.barnvänlig",
    "group": "barnvänlig",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "8468d0e3"
+   }
   },
   {
    "senseId": "s.bonusfamilj.1",
@@ -77563,7 +77829,12 @@
    "confusableWith": [
     "s.försörja.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "8654537a"
+   }
   },
   {
    "senseId": "s.försörja.1",
@@ -77581,7 +77852,12 @@
    "motif": "vux.löning",
    "group": "löning",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "85255363"
+   }
   },
   {
    "senseId": "s.sätta-undan.1",
@@ -77602,7 +77878,12 @@
    "confusableWith": [
     "s.sätta-undan.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "fc9e5a1a"
+   }
   },
   {
    "senseId": "s.sparsam.1",
@@ -77626,7 +77907,12 @@
     "s.vända-på-slantarna.1",
     "s.sparsam.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "de52e2ed"
+   }
   },
   {
    "senseId": "s.vända-på-slantarna.1",
@@ -77638,7 +77924,12 @@
     "s.pank.1",
     "s.sparsam.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "22cf85b9"
+   }
   },
   {
    "senseId": "s.få-det-att-gå-ihop.1",
@@ -77646,7 +77937,12 @@
    "motif": "vux.få-det-att-gå-ihop",
    "group": "få",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "e5fd526c"
+   }
   },
   {
    "senseId": "s.avbetalning.1",
@@ -77654,7 +77950,12 @@
    "motif": "vux.avbetalning",
    "group": "avbetalning",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "f9e80303"
+   }
   },
   {
    "senseId": "s.snabblån.1",
@@ -77666,7 +77967,12 @@
     "s.skuldsatt.1",
     "s.betalningsanmärkning.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "c7915908"
+   }
   },
   {
    "senseId": "s.skuldsatt.1",
@@ -77678,7 +77984,12 @@
     "s.snabblån.1",
     "s.betalningsanmärkning.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "04d25cbf"
+   }
   },
   {
    "senseId": "s.betalningsanmärkning.1",
@@ -77690,7 +78001,12 @@
     "s.skuldsatt.1",
     "s.snabblån.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "4f900215"
+   }
   },
   {
    "senseId": "s.livsval.1",
@@ -77698,7 +78014,17 @@
    "motif": "vux.livsval",
    "group": "livsval",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "008c9859"
+   },
+   "confusableWith": [
+    "s.offra.1",
+    "s.välja-bort.1",
+    "s.avstå.1"
+   ]
   },
   {
    "senseId": "s.offra.1",
@@ -77707,9 +78033,17 @@
    "group": "offra",
    "quiz": false,
    "confusableWith": [
-    "s.uppoffring.1"
+    "s.uppoffring.1",
+    "s.välja-bort.1",
+    "s.avstå.1",
+    "s.livsval.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "2f60d10d"
+   }
   },
   {
    "senseId": "s.uppoffring.1",
@@ -77728,7 +78062,12 @@
    "motif": "vux.göra-karriär",
    "group": "göra",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "39927021"
+   }
   },
   {
    "senseId": "s.jobberbjudande.1",
@@ -77736,7 +78075,12 @@
    "motif": "vux.jobberbjudande",
    "group": "jobberbjudande",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "32b0b887"
+   }
   },
   {
    "senseId": "s.livskvalitet.1",
@@ -77744,7 +78088,12 @@
    "motif": "vux.livskvalitet",
    "group": "livskvalitet",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "044d7913"
+   }
   },
   {
    "senseId": "s.materiell.1",
@@ -77752,7 +78101,12 @@
    "motif": "vux.materiell",
    "group": "materiell",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "77710fd8"
+   }
   },
   {
    "senseId": "s.ekorrhjul.1",
@@ -77760,7 +78114,12 @@
    "motif": "vux.ekorrhjul",
    "group": "ekorrhjul",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "e74e37c5"
+   }
   },
   {
    "senseId": "s.komma-i-första-rummet.1",
@@ -77768,7 +78127,16 @@
    "motif": "vux.komma-i-första-rummet",
    "group": "komma",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.prioritering.1",
+    "s.prioritera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "5a6abeeb"
+   }
   },
   {
    "senseId": "s.lantliv.1",
@@ -77783,7 +78151,12 @@
    "motif": "vux.livsdröm",
    "group": "livsdröm",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "d5c2f08c"
+   }
   },
   {
    "senseId": "s.medelålder.1",
@@ -77795,7 +78168,12 @@
     "s.medelålders.1",
     "s.mitt-i-livet.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "ca45ea43"
+   }
   },
   {
    "senseId": "s.medelålders.1",
@@ -77820,7 +78198,12 @@
     "s.medelålder.1",
     "s.medelålders.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "bfc14228"
+   }
   },
   {
    "senseId": "s.fyrtioårskris.1",
@@ -77828,7 +78211,12 @@
    "motif": "vux.fyrtioårskris",
    "group": "fyrtioårskris",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "5745bbd6"
+   }
   },
   {
    "senseId": "s.gråsprängd.1",
@@ -77836,7 +78224,12 @@
    "motif": "vux.gråsprängd",
    "group": "gråsprängd",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "d5c4ceb1"
+   }
   },
   {
    "senseId": "s.gå-upp-i-vikt.1",
@@ -77855,7 +78248,12 @@
     "s.klimakterium.1",
     "s.värmevallning.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.28.0",
+    "hash": "3e4986a1"
+   }
   },
   {
    "senseId": "s.klimakterium.1",
@@ -77867,7 +78265,12 @@
     "s.övergångsålder.1",
     "s.värmevallning.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "dc04d9ad"
+   }
   },
   {
    "senseId": "s.värmevallning.1",
@@ -77889,7 +78292,12 @@
    "confusableWith": [
     "s.flyga-ur-boet.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "ecc6609d"
+   }
   },
   {
    "senseId": "s.sandwichgeneration.1",
@@ -77897,7 +78305,12 @@
    "motif": "vux.sandwichgeneration",
    "group": "sandwichgeneration",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "ee1f9f6a"
+   }
   },
   {
    "senseId": "s.nyskild.1",
@@ -77905,7 +78318,12 @@
    "motif": "vux.nyskild",
    "group": "nyskild",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "cb08b113"
+   }
   },
   {
    "senseId": "s.sadla-om.1",
@@ -77916,7 +78334,12 @@
    "confusableWith": [
     "s.omskola-sig.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "17934aa3"
+   }
   },
   {
    "senseId": "s.ungdomlig.1",
@@ -77927,7 +78350,12 @@
    "confusableWith": [
     "s.medelålders.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.28.0",
+    "hash": "cbe8312a"
+   }
   }
  ]
 }
