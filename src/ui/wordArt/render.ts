@@ -8,6 +8,7 @@ import { WORD_MOTIFS } from './motifs';
  */
 type Motifs = Record<string, string>;
 const GROUPS: Record<string, () => Promise<Motifs>> = {
+  'demo.': () => import('./democracy').then((m) => m.DEMOCRACY_MOTIFS),
   'kropp.': () => import('./bodyMotifs').then((m) => m.BODY_MOTIFS),
   'familj.': () => import('./family').then((m) => m.FAMILY_MOTIFS),
   'fest.': () => import('./celebrations').then((m) => m.CELEBRATION_MOTIFS),

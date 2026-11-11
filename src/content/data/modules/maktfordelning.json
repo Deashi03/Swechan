@@ -1,0 +1,181 @@
+{
+ "id": "m.maktfordelning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Maktfördelning",
+ "titleJa": "{権力分立|けんりょくぶんりつ}",
+ "descriptionSv": "Maktfördelning: fördela, maktfördelning, statsmakt, grundlag, parlament, lagstiftande, genomföra, verkställande, domstol, döma, domare, dömande, oberoende, granska, maktmissbruk, ansvar och ansvarig.",
+ "descriptionJa": "{権力分立|けんりょくぶんりつ}：{分配|ぶんぱい}する、{権力分立|けんりょくぶんりつ}、{国家権力|こっかけんりょく}、{基本法|きほんほう}、{議会|ぎかい}、{立法|りっぽう}の、{実行|じっこう}する、{行政|ぎょうせい}の、{裁判所|さいばんしょ}、{裁|さば}く、{裁判官|さいばんかん}、{司法|しほう}の、{独立|どくりつ}した、{調|しら}べる、{権力|けんりょく}の{乱用|らんよう}、{責任|せきにん}、{責任|せきにん}のある。",
+ "categoryId": "R03-A01-T01",
+ "tags": [
+  "politik",
+  "demokrati"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.majoritet-och-minoritet"
+ ],
+ "related": [],
+ "recommendedOrder": 1304,
+ "words": [
+  {
+   "senseId": "s.fördela.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maktfördelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statsmakt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grundlag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parlament.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagstiftande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.genomföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verkställande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.domstol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.döma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.domare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dömande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.oberoende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.granska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maktmissbruk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansvarig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Tre delar av makten",
+  "paragraphs": [
+   "Varför får inte en enda person bestämma allt i ett land? Svaret är maktfördelning. Idén är att man ska fördela makten på flera delar, så att det blir svårare med maktmissbruk.",
+   "Man brukar tala om tre statsmakter. Den lagstiftande makten stiftar lagarna. Det är parlamentet, som folket väljer. Den verkställande makten genomför besluten och styr landet varje dag. Den dömande makten är domstolarna.",
+   "I Sverige står det i grundlagen hur man ska fördela makten. Där står det också att domstolarna ska vara oberoende. Ingen, inte ens parlamentet, får bestämma hur en domare ska döma i ett visst fall. Men i Sverige är statsmakterna inte helt skilda: det är parlamentet som väljer vem som blir ledare för den verkställande makten.",
+   "De olika delarna ska granska varandra. Den som har makt måste också ta ansvar. De som styr är ansvariga inför folket, och i nästa val kan väljarna byta dem.",
+   "I en diktatur finns det ingen riktig maktfördelning. Där kan domstolarna inte vara oberoende, eftersom diktatorn bestämmer över dem. Därför är maktmissbruk vanligt i diktaturer."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken statsmakt stiftar lagarna?",
+    "options": [
+     "Den lagstiftande makten",
+     "Den dömande makten",
+     "Den verkställande makten",
+     "Väljarna"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den lagstiftande makten stiftar lagarna.",
+    "explanationJa": "{法律|ほうりつ}を{作|つく}るのは{立法権|りっぽうけん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör den verkställande makten?",
+    "options": [
+     "Dömer människor som har brutit mot lagen",
+     "Väljer parlamentet",
+     "Skriver grundlagen",
+     "Genomför besluten och styr landet varje dag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den verkställande makten genomför besluten och styr landet varje dag.",
+    "explanationJa": "{行政権|ぎょうせいけん}は{決定|けってい}を{実行|じっこう}し、{毎日|まいにち}{国|くに}を{運営|うんえい}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Parlamentet får bestämma hur en domare ska döma i ett visst fall.",
+    "correct": false,
+    "explanationSv": "Ingen, inte ens parlamentet, får bestämma hur en domare ska döma i ett visst fall.",
+    "explanationJa": "{議会|ぎかい}であっても、{裁判官|さいばんかん}の{判断|はんだん}を{決|き}めることはできません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I Sverige väljer parlamentet vem som blir ledare för den verkställande makten.",
+    "correct": true,
+    "explanationSv": "… det är parlamentet som väljer vem som blir ledare för den verkställande makten.",
+    "explanationJa": "スウェーデンでは、{議会|ぎかい}が{行政|ぎょうせい}のトップを{決|き}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "focus": "inference",
+    "promptSv": "Varför är maktmissbruk vanligt i diktaturer?",
+    "options": [
+     "Det finns för många domstolar",
+     "Väljarna bestämmer för mycket",
+     "Grundlagen är för lång",
+     "Det finns ingen riktig maktfördelning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I en diktatur finns det ingen riktig maktfördelning.",
+    "explanationJa": "{本当|ほんとう}の{権力分立|けんりょくぶんりつ}がないからです。"
+   }
+  ],
+  "factSources": [
+   "Regeringsformen 1 kap. 4 §: riksdagen stiftar lag; 6 kap.: riksdagen röstar om statsministern (riksdagen.se).",
+   "Regeringsformen 11 kap. 3 §: ingen myndighet, inte heller riksdagen, får bestämma hur en domstol ska döma i ett enskilt fall.",
+   "Riksdagen.se: Sverige har fyra grundlagar; en grundlag ändras genom två likadana beslut med ett riksdagsval emellan (RF 8 kap. 14 §).",
+   "Riksdagen.se: riksdagsval hålls vart fjärde år.",
+   "Montesquieu, De l’esprit des lois (1748), om maktdelning."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur makten är fördelad i ett land.",
+  "discussionPoints": [
+   "Varför är det farligt om en person har all makt?",
+   "Varför ska domstolarna vara oberoende?",
+   "Hur är makten fördelad i Japan?",
+   "Vem granskar dem som har makt i ett samhälle?"
+  ]
+ }
+}
