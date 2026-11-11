@@ -1,0 +1,180 @@
+{
+ "id": "m.utskott-och-beredning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Utskott och beredning",
+ "titleJa": "{委員会|いいんかい}と{審議|しんぎ}",
+ "descriptionSv": "Utskott och beredning: utskott, ledamot, ordförande, sammanträde, ärende, bereda, beredning, expert, utfrågning, protokoll, tjänsteman, betänkande, reservation, enig, finansutskott, konstitutionsutskott och granskning.",
+ "descriptionJa": "{委員会|いいんかい}と{審議|しんぎ}：{委員会|いいんかい}、{委員|いいん}、{委員長|いいんちょう}、{会議|かいぎ}、{案件|あんけん}、{審議|しんぎ}する、{審議|しんぎ}、{専門家|せんもんか}、{公聴会|こうちょうかい}、{議事録|ぎじろく}、{職員|しょくいん}、{委員会報告書|いいんかいほうこくしょ}、{少数意見|しょうすういけん}、{意見|いけん}がまとまった、{財政委員会|ざいせいいいんかい}、{憲法委員会|けんぽういいんかい}、{審査|しんさ}。",
+ "categoryId": "R03-A01-T02",
+ "tags": [
+  "politik",
+  "riksdag",
+  "utskott"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.motioner-och-propositioner"
+ ],
+ "related": [],
+ "recommendedOrder": 1315,
+ "words": [
+  {
+   "senseId": "s.utskott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledamot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordförande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanträde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ärende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bereda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beredning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.expert.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utfrågning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.protokoll.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tjänsteman.1",
+   "active": false
+  },
+  {
+   "senseId": "s.betänkande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.finansutskott.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konstitutionsutskott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.granskning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag i utskottet",
+  "paragraphs": [
+   "Sara är riksdagsledamot och sitter i utskottet för trafik. I dag har utskottet sammanträde klockan nio. Ordföranden hälsar alla ledamöter välkomna och läser upp vilka ärenden de ska ta upp.",
+   "Det viktigaste ärendet är ett förslag om nya regler för tåg. Utskottet har berett ärendet i flera veckor. Förra veckan höll de en utfrågning där experter från myndigheter och föreningar fick svara på ledamöternas frågor.",
+   "Under beredningen har utskottets tjänstemän hjälpt till. De har tagit reda på fakta och skrivit ett förslag till betänkande. Nu diskuterar ledamöterna förslaget. De flesta tycker att det är bra, men två partier vill ha andra regler. De skriver en reservation.",
+   "Utskottet är alltså inte enigt. Ordföranden ser till att allt skrivs i protokollet. Om några veckor ska hela kammaren rösta om betänkandet och reservationen.",
+   "Efter mötet äter Sara lunch med en vän som sitter i finansutskottet. Vännen berättar att konstitutionsutskottet har börjat sin granskning av regeringen. – Det blir mycket att läsa i vår, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket utskott sitter Sara i?",
+    "options": [
+     "Utskottet för trafik",
+     "Finansutskottet",
+     "Konstitutionsutskottet",
+     "Utskottet för skola"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sara är riksdagsledamot och sitter i utskottet för trafik.",
+    "explanationJa": "サラは{交通|こうつう}を{扱|あつか}う{委員会|いいんかい}にいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka svarade på frågor vid utfrågningen?",
+    "options": [
+     "Ministrar från regeringen",
+     "Vanliga tågresenärer",
+     "Talmannen och ordföranden",
+     "Experter från myndigheter och föreningar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… experter från myndigheter och föreningar fick svara på ledamöternas frågor.",
+    "explanationJa": "{国|くに}の{機関|きかん}や{団体|だんたい}の{専門家|せんもんか}が{答|こた}えました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför skriver två partier en reservation?",
+    "options": [
+     "De har inte läst förslaget",
+     "De vill ha en ny ordförande",
+     "De tycker att utfrågningen var för kort",
+     "De vill ha andra regler"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… men två partier vill ha andra regler. De skriver en reservation.",
+    "explanationJa": "{別|べつ}の{規則|きそく}を{望|のぞ}んでいるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Utskottet bestämmer till slut själv om de nya reglerna.",
+    "correct": false,
+    "explanationSv": "Om några veckor ska hela kammaren rösta om betänkandet och reservationen.",
+    "explanationJa": "{最終的|さいしゅうてき}に{決|き}めるのは{本会議|ほんかいぎ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Konstitutionsutskottet granskar regeringen.",
+    "correct": true,
+    "explanationSv": "… konstitutionsutskottet har börjat sin granskning av regeringen.",
+    "explanationJa": "{憲法委員会|けんぽういいんかい}は{政府|せいふ}を{審査|しんさ}します。"
+   }
+  ],
+  "factSources": [
+   "Riksdagen har 15 utskott med 17 ledamöter i varje, och platserna fördelas efter partiernas storlek. Alla ärenden bereds i ett utskott, som lämnar ett betänkande till kammaren; ledamöter som inte håller med kan skriva en reservation (riksdagen.se, Regeringsformen 4 kap. 8 §, Riksdagsordningen 7 och 10 kap.).",
+   "Utskottens sammanträden är i regel inte offentliga, men utskotten kan hålla offentliga utfrågningar. Finansutskottet bereder statsbudgeten, och konstitutionsutskottet granskar statsrådens tjänsteutövning (riksdagen.se, Regeringsformen 13 kap. 1–2 §§).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur riksdagens utskott arbetar.",
+  "discussionPoints": [
+   "Vilket utskott skulle du vilja sitta i, och varför?",
+   "Varför tror du att utskottens sammanträden oftast är stängda?",
+   "Är det bra att man kan skriva en reservation?",
+   "Vem tycker du ska granska regeringen?"
+  ]
+ }
+}
