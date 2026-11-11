@@ -1,0 +1,180 @@
+{
+ "id": "m.forundersokningens-gang",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Förundersökningens gång",
+ "titleJa": "{捜査|そうさ}の{流|なが}れ",
+ "descriptionSv": "Förundersökningens gång: förundersökning, inleda, förundersökningsledare, utredning, utreda, skyndsam, objektiv, tala för, tala emot, protokoll, ta del av, delge, komplettera, underlag, lägga ner, klara upp och ouppklarad.",
+ "descriptionJa": "{捜査|そうさ}の{流|なが}れ：{予備捜査|よびそうさ}、{開始|かいし}する、{捜査指揮官|そうさしきかん}、{捜査|そうさ}、{調査|ちょうさ}する、{迅速|じんそく}な、{客観的|きゃっかんてき}な、{根拠|こんきょ}になる、{反|はん}する{根拠|こんきょ}になる、{調書|ちょうしょ}、{目|め}を{通|とお}す、{告知|こくち}する、{補|おぎな}う、{判断材料|はんだんざいりょう}、{打|う}ち{切|き}る、{解決|かいけつ}する、{未解決|みかいけつ}の。",
+ "categoryId": "R03-A02-T03",
+ "tags": [
+  "juridik",
+  "polis"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.husrannsakan-och-beslag"
+ ],
+ "related": [],
+ "recommendedOrder": 1427,
+ "words": [
+  {
+   "senseId": "s.förundersökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inleda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förundersökningsledare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utredning.3",
+   "active": true
+  },
+  {
+   "senseId": "s.utreda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyndsam.1",
+   "active": false
+  },
+  {
+   "senseId": "s.objektiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tala-för.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tala-emot.1",
+   "active": false
+  },
+  {
+   "senseId": "s.protokoll.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-del-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delge.1",
+   "active": false
+  },
+  {
+   "senseId": "s.komplettera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underlag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lägga-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klara-upp.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ouppklarad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från anmälan till beslut",
+  "paragraphs": [
+   "Vad händer efter en polisanmälan? Om det finns skäl att tro att något olagligt har hänt, ska polisen inleda en förundersökning. Den leds av en förundersökningsledare. I enkla fall är det en polis.",
+   "Under utredningen ska polisen utreda vem som kan misstänkas och om bevisen räcker för att saken ska tas upp i domstol. Arbetet ska vara skyndsamt, särskilt om någon är häktad. Polisen ska också vara objektiv: man ska ta fram både det som talar för och det som talar emot att den misstänkte har gjort det.",
+   "Allt som har betydelse skrivs in i ett protokoll, till exempel förhör, spår och beslag. När utredningen är nästan klar ska polisen delge den misstänkte förundersökningen. Hen får ta del av allt material och kan be polisen komplettera utredningen, till exempel med ett förhör till.",
+   "Sedan blir protokollet underlag för beslutet om saken ska tas upp i domstol.",
+   "Men alla förundersökningar leder inte så långt. Ibland måste polisen lägga ner förundersökningen, till exempel när man inte hittar någon misstänkt. Då är saken ouppklarad. Om det senare kommer nya tips eller nya spår, kan polisen öppna utredningen igen och kanske klara upp den."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När ska polisen inleda en förundersökning?",
+    "options": [
+     "Bara när någon har erkänt",
+     "När det finns skäl att tro att något olagligt har hänt",
+     "Bara när det finns ett vittne",
+     "När en domstol säger det"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om det finns skäl att tro att något olagligt har hänt, ska polisen inleda en förundersökning.",
+    "explanationJa": "{違法|いほう}なことが{起|お}きたと{考|かんが}える{理由|りゆう}があるときです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att polisen ska vara objektiv?",
+    "options": [
+     "Polisen ska ta fram både det som talar för och emot",
+     "Polisen ska bara leta efter bevis mot den misstänkte",
+     "Polisen ska arbeta snabbt",
+     "Polisen ska skriva ett protokoll"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "... man ska ta fram både det som talar för och det som talar emot att den misstänkte har gjort det.",
+    "explanationJa": "{有利|ゆうり}な{点|てん}も{不利|ふり}な{点|てん}も{集|あつ}めることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Den misstänkte kan be polisen komplettera utredningen.",
+    "correct": true,
+    "explanationSv": "Hen får ta del av allt material och kan be polisen komplettera utredningen ...",
+    "explanationJa": "{容疑者|ようぎしゃ}は{捜査|そうさ}の{補充|ほじゅう}を{求|もと}めることができます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad blir protokollet underlag för?",
+    "options": [
+     "Polisens lön",
+     "En ny polisanmälan",
+     "Beslutet om saken ska tas upp i domstol",
+     "En husrannsakan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Sedan blir protokollet underlag för beslutet om saken ska tas upp i domstol.",
+    "explanationJa": "{裁判所|さいばんしょ}で{審理|しんり}するかどうかの{決定|けってい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En ouppklarad sak kan aldrig utredas igen.",
+    "correct": false,
+    "explanationSv": "Om det senare kommer nya tips eller nya spår, kan polisen öppna utredningen igen ...",
+    "explanationJa": "{新|あたら}しい{情報|じょうほう}があれば{再開|さいかい}できます。"
+   }
+  ],
+  "factSources": [
+   "Rättegångsbalken 23 kap. 1–3 §§: förundersökning inleds när det finns anledning att anta att ett brott har begåtts; den ska utreda vem som skäligen kan misstänkas och om det finns tillräckliga skäl för åtal; den inleds av polisen eller åklagaren, och åklagaren tar över ledningen när saken inte är av enkel beskaffenhet och någon är skäligen misstänkt.",
+   "Rättegångsbalken 23 kap. 4 §: omständigheter som talar både emot och för den misstänkte ska beaktas; förundersökningen ska bedrivas skyndsamt och läggas ned när det inte längre finns anledning att fullfölja den.",
+   "Rättegångsbalken 23 kap. 18 §: den misstänkte ska delges misstanke vid förhör och ges tillfälle att ta del av utredningen och begära komplettering innan åtal beslutas.",
+   "Rättegångsbalken 23 kap. 21 §: protokoll ska föras över det som har betydelse för utredningen."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur en förundersökning går till och om varför vissa saker förblir ouppklarade.",
+  "discussionPoints": [
+   "Varför är det viktigt att polisen är objektiv?",
+   "Varför tror du att lagen säger att en förundersökning ska vara skyndsam?",
+   "Hur skulle du känna dig om din polisanmälan lades ner?",
+   "Känner du till någon sak som var ouppklarad i många år?"
+  ]
+ }
+}

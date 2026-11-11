@@ -1,0 +1,180 @@
+{
+ "id": "m.vittnen-och-forhor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Vittnen och förhör",
+ "titleJa": "{証人|しょうにん}と{取|と}り{調|しら}べ",
+ "descriptionSv": "Vittnen och förhör: vittne, ögonvittne, kallelse, förhör, förhöra, förhörsledare, tolk, iaktta, iakttagelse, minnesbild, ledande fråga, vittna, gå isär, motsägelse, ljuga, erkänna och neka.",
+ "descriptionJa": "{証人|しょうにん}と{取|と}り{調|しら}べ：{目撃者|もくげきしゃ}、{自分|じぶん}の{目|め}で{見|み}た{目撃者|もくげきしゃ}、{呼|よ}び{出|だ}し{状|じょう}、{取|と}り{調|しら}べ、{取|と}り{調|しら}べる、{取調官|とりしらべかん}、{通訳|つうやく}、{観察|かんさつ}する、{観察|かんさつ}したこと、{記憶|きおく}の{場面|ばめん}、{誘導尋問|ゆうどうじんもん}、{証言|しょうげん}する、{分|わ}かれる、{矛盾|むじゅん}、うそをつく、{認|みと}める、{否認|ひにん}する。",
+ "categoryId": "R03-A02-T03",
+ "tags": [
+  "juridik",
+  "polis"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.anmalan-och-misstanke"
+ ],
+ "related": [],
+ "recommendedOrder": 1423,
+ "words": [
+  {
+   "senseId": "s.vittne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonvittne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kallelse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förhör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förhöra.2",
+   "active": true
+  },
+  {
+   "senseId": "s.förhörsledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tolk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.iaktta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.iakttagelse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.minnesbild.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ledande-fråga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vittna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-isär.1",
+   "active": false
+  },
+  {
+   "senseId": "s.motsägelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljuga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.erkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.neka.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad såg Erik?",
+  "paragraphs": [
+   "En lördagskväll blir en man slagen utanför en restaurang i Malmö. Flera personer ser det. Erik är ett ögonvittne: han stod bara tio meter bort. Några dagar senare får han en kallelse till förhör.",
+   "Förhöret är på polisstationen. Förhörsledaren heter Maria. Hon börjar med en öppen fråga: – Berätta vad du såg. Hon ställer inga ledande frågor, för då kan ett vittne säga det som polisen vill höra. Förhöret spelas in.",
+   "Erik berättar om sina iakttagelser. Han iakttog mannen som slog från början till slut. Men hans minnesbild av mannens jacka är inte tydlig. – Den var mörk, kanske blå, säger han.",
+   "Kenji, en turist från Japan, såg också allt. Polisen förhör honom med hjälp av en tolk. Vittnenas uppgifter går isär på en punkt: Kenji säger att det var två män som slog, men Erik säger att det var en.",
+   "Polisen förhör också den misstänkte. Först nekar han. Han säger att han var hemma hela kvällen. Men förhörsledaren ser en motsägelse: hans telefon visar att han var nära restaurangen. Till slut erkänner han att han ljög och att han var där. Senare kommer Erik och Kenji kanske att vittna i domstol."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "usage",
+    "promptSv": "Varför är Erik ett ögonvittne?",
+    "options": [
+     "Han hörde om det på radio",
+     "Han såg själv vad som hände",
+     "Han är polis",
+     "Han är tolk"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik är ett ögonvittne: han stod bara tio meter bort.",
+    "explanationJa": "{自分|じぶん}の{目|め}で{見|み}たからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför ställer Maria inga ledande frågor?",
+    "options": [
+     "Hon har inte tid",
+     "Erik förstår inte svenska",
+     "Förhöret spelas inte in",
+     "Vittnet kan då säga det som polisen vill höra"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon ställer inga ledande frågor, för då kan ett vittne säga det som polisen vill höra.",
+    "explanationJa": "{誘導尋問|ゆうどうじんもん}をすると、{警察|けいさつ}が{聞|き}きたいことを{言|い}ってしまうおそれがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Eriks minnesbild av jackan är mycket tydlig.",
+    "correct": false,
+    "explanationSv": "Men hans minnesbild av mannens jacka är inte tydlig.",
+    "explanationJa": "{上着|うわぎ}の{記憶|きおく}ははっきりしていません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "På vilken punkt går vittnenas uppgifter isär?",
+    "options": [
+     "Vilken dag det hände",
+     "Hur många män som slog",
+     "Var restaurangen ligger",
+     "Vad mannen hette"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Kenji säger att det var två män som slog, men Erik säger att det var en.",
+    "explanationJa": "{殴|なぐ}った{男|おとこ}の{人数|にんずう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den misstänkte säger inte sanningen i början av förhöret.",
+    "correct": true,
+    "explanationSv": "Till slut erkänner han att han ljög och att han var där.",
+    "explanationJa": "{最初|さいしょ}はうそをついていました。"
+   }
+  ],
+  "factSources": [
+   "Rättegångsbalken 23 kap. 6 §: under förundersökningen får förhör hållas med var och en som antas kunna lämna upplysningar av betydelse.",
+   "Rättegångsbalken 23 kap. 12 §: vid förhör får inte oriktiga uppgifter, löften, hot, tvång eller annat otillbörligt förfarande användas.",
+   "Rättegångsbalken 36 kap. 11 och 17 §§: vittnen avlägger ed i domstol; frågor som genom sitt innehåll eller sin form påverkar svaret får normalt inte ställas.",
+   "Brottsbalken 15 kap. 2 §: mened (att ljuga under ed) är straffbart."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vittnen och om hur ett bra förhör går till.",
+  "discussionPoints": [
+   "Har du någon gång varit vittne till något?",
+   "Varför kan två vittnen minnas samma händelse på olika sätt?",
+   "Varför är det viktigt med tolk i ett förhör?",
+   "Skulle du vilja vittna i domstol? Varför eller varför inte?"
+  ]
+ }
+}

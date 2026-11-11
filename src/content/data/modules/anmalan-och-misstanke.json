@@ -1,0 +1,180 @@
+{
+ "id": "m.anmalan-och-misstanke",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Anmälan och misstanke",
+ "titleJa": "{届|とど}け{出|で}と{嫌疑|けんぎ}",
+ "descriptionSv": "Anmälan och misstanke: polisanmälan, polisanmäla, inträffa, tidpunkt, händelseförlopp, uppge, brottsoffer, gärningsperson, signalement, efterlysa, efterlysning, tips, anonym, misstanke, misstänkt, skäligen misstänkt och på sannolika skäl.",
+ "descriptionJa": "{届|とど}け{出|で}と{嫌疑|けんぎ}：{被害届|ひがいとどけ}、{警察|けいさつ}に{届|とど}け{出|で}る、{起|お}こる、{時点|じてん}、{出来事|できごと}の{経過|けいか}、{述|の}べる、{犯罪被害者|はんざいひがいしゃ}、{犯人|はんにん}、{人相|にんそう}、{捜索|そうさく}する、{捜索|そうさく}の{呼|よ}びかけ、{情報提供|じょうほうていきょう}、{匿名|とくめい}の、{嫌疑|けんぎ}、{容疑|ようぎ}をかけられた、{合理的|ごうりてき}な{嫌疑|けんぎ}がある、{相当|そうとう}な{理由|りゆう}があって。",
+ "categoryId": "R03-A02-T03",
+ "tags": [
+  "juridik",
+  "polis"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.polisens-arbetsuppgifter"
+ ],
+ "related": [],
+ "recommendedOrder": 1422,
+ "words": [
+  {
+   "senseId": "s.polisanmälan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.polisanmäla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inträffa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidpunkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.händelseförlopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppge.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brottsoffer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gärningsperson.1",
+   "active": true
+  },
+  {
+   "senseId": "s.signalement.1",
+   "active": true
+  },
+  {
+   "senseId": "s.efterlysa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.efterlysning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tips.2",
+   "active": true
+  },
+  {
+   "senseId": "s.anonym.1",
+   "active": false
+  },
+  {
+   "senseId": "s.misstanke.2",
+   "active": true
+  },
+  {
+   "senseId": "s.misstänkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skäligen-misstänkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.på-sannolika-skäl.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Väskan",
+  "paragraphs": [
+   "En kväll i november går Lisa hem från jobbet i Uppsala. Plötsligt kommer en man fram, slår henne i ryggen och tar hennes väska. Lisa faller och får ont i handen. Det inträffade nära en busshållplats vid parken.",
+   "Dagen efter går Lisa till polisstationen för att polisanmäla det som hände. Man kan också polisanmäla på nätet eller genom att ringa 114 14. Polisen vill veta exakt tidpunkt och plats. Lisa uppger att det var kvart över tio, och hon berättar om hela händelseförloppet. Hennes försäkring vill också se polisanmälan.",
+   "Lisa är ett brottsoffer, och polisen ger henne ett nummer dit hon kan ringa för att få stöd. Sedan får hon beskriva gärningspersonen. Hennes signalement är tydligt: en ung man, ungefär 180 centimeter lång, med svart mössa och grön jacka.",
+   "Polisen efterlyser mannen. Efterlysningen finns på nätet, och snart kommer ett tips. Den som ringer vill vara anonym, men berättar att en man i grön jacka har sålt en väska som liknar Lisas.",
+   "Nu har polisen en misstanke mot en man som är 22 år. Han är misstänkt för att ha tagit väskan. Först är han skäligen misstänkt. När polisen sedan hittar Lisas plånbok hemma hos honom blir misstanken starkare. Nu är han misstänkt på sannolika skäl."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var inträffade det?",
+    "options": [
+     "På Lisas jobb",
+     "På polisstationen",
+     "Nära en busshållplats vid parken",
+     "Hemma hos Lisa"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det inträffade nära en busshållplats vid parken.",
+    "explanationJa": "{公園|こうえん}のそばのバス{停|てい}の{近|ちか}くです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur kan man polisanmäla, enligt texten?",
+    "options": [
+     "Bara på polisstationen",
+     "På polisstationen, på nätet eller på telefon",
+     "Bara genom att ringa 112",
+     "Bara genom försäkringen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Man kan också polisanmäla på nätet eller genom att ringa 114 14.",
+    "explanationJa": "{警察署|けいさつしょ}、インターネット、{電話|でんわ}で{届|とど}け{出|で}ができます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "usage",
+    "statementSv": "Lisas signalement beskriver hur gärningspersonen ser ut.",
+    "correct": true,
+    "explanationSv": "Hennes signalement är tydligt: en ung man, ungefär 180 centimeter lång ...",
+    "explanationJa": "{人相|にんそう}は{犯人|はんにん}の{見|み}た{目|め}の{説明|せつめい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Den som ringer med tipset säger sitt namn.",
+    "correct": false,
+    "explanationSv": "Den som ringer vill vara anonym ...",
+    "explanationJa": "{電話|でんわ}の{人|ひと}は{匿名|とくめい}を{希望|きぼう}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "focus": "cause",
+    "promptSv": "Varför blir misstanken mot mannen starkare?",
+    "options": [
+     "Han har en röd jacka",
+     "Lisa ringer polisen igen",
+     "Polisen hittar Lisas plånbok hemma hos honom",
+     "Han går till polisstationen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När polisen sedan hittar Lisas plånbok hemma hos honom blir misstanken starkare.",
+    "explanationJa": "{彼|かれ}の{家|いえ}でリーサの{財布|さいふ}が{見|み}つかったからです。"
+   }
+  ],
+  "factSources": [
+   "Polisen.se: en anmälan kan göras på polisen.se, på telefon 114 14 eller på en polisstation; vid pågående brott ringer man 112.",
+   "Rättegångsbalken 23 kap. 1 §: förundersökning ska inledas när det finns anledning att anta att ett brott har begåtts.",
+   "Rättegångsbalken 23 kap. 18 §: den som är skäligen misstänkt ska underrättas om misstanken när hen hörs.",
+   "Rättegångsbalken 24 kap. 1 §: häktning kräver att någon är misstänkt på sannolika skäl."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att polisanmäla och om hur polisen arbetar med misstankar.",
+  "discussionPoints": [
+   "Har du eller någon du känner behövt polisanmäla något?",
+   "Varför är det viktigt att ett brottsoffer får stöd?",
+   "Skulle du ge polisen ett tips? Skulle du vilja vara anonym?",
+   "Varför tror du att lagen har olika grader av misstanke?"
+  ]
+ }
+}

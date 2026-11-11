@@ -10,6 +10,7 @@ type Motifs = Record<string, string>;
 const GROUPS: Record<string, () => Promise<Motifs>> = {
   'rgrund.': () => import('./lawBasics').then((m) => m.LAW_BASICS_MOTIFS),
   'brott.': () => import('./crime').then((m) => m.CRIME_MOTIFS),
+  'polis.': () => import('./police').then((m) => m.POLICE_MOTIFS),
   'ideo.': () => import('./ideologies').then((m) => m.IDEOLOGY_MOTIFS),
   'intpol.': () => import('./worldPolitics').then((m) => m.WORLD_POLITICS_MOTIFS),
   'kommun.': () => import('./municipal').then((m) => m.MUNICIPAL_MOTIFS),
