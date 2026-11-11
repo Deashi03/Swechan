@@ -1,0 +1,183 @@
+{
+ "id": "m.gruppkonversationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-09",
+ "titleSv": "Gruppkonversationer",
+ "titleJa": "グループでの{会話|かいわ}",
+ "descriptionSv": "Gruppkonversationer: gruppchatt, gruppsamtal, lägga till, administratör, tagga, reagera, tråd, rösta, omröstning, scrolla, spamma, tysta, kasta ut, gå ur, privatmeddelande, känna sig utanför och komma till tals.",
+ "descriptionJa": "グループでの{会話|かいわ}：グループチャット、グループ{通話|つうわ}、{追加|ついか}する、{管理者|かんりしゃ}、メンションする、{反応|はんのう}する、スレッド、{投票|とうひょう}する、{投票|とうひょう}、スクロールする、メッセージを{送|おく}りつける、ミュートする、{追|お}い{出|だ}す、{退会|たいかい}する、{個別|こべつ}メッセージ、{疎外感|そがいかん}を{感|かん}じる、{発言|はつげん}できる。",
+ "categoryId": "R02-A05-T06",
+ "tags": [
+  "kommunikation",
+  "chatt"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sms-och-chatt"
+ ],
+ "related": [],
+ "recommendedOrder": 1155,
+ "words": [
+  {
+   "senseId": "s.gruppchatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gruppsamtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-till.2",
+   "active": true
+  },
+  {
+   "senseId": "s.administratör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tagga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reagera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tråd.2",
+   "active": false
+  },
+  {
+   "senseId": "s.rösta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omröstning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.scrolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spamma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tysta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kasta-ut.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gå-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.privatmeddelande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.känna-sig-utanför.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komma-till-tals.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Klassens gruppchatt",
+  "paragraphs": [
+   "Aiko går på en kvällskurs i svenska. Läraren Lisa skapade en gruppchatt för klassen och lade till alla elever. Lisa är administratör, så hon kan också ta bort folk.",
+   "I början var det trevligt. Folk taggade varandra och reagerade med hjärtan på varandras meddelanden. Men sedan började en man i klassen spamma gruppen med reklam. Lisa kastade ut honom.",
+   "Gruppen blev ändå rörig. Det kom hundra meddelanden om dagen, och Aiko fick scrolla länge för att hitta det viktiga. Lisa bad alla att svara i rätt tråd. Till slut tystade Aiko gruppen, och en kvinna valde att gå ur gruppen.",
+   "Innan kursen tog slut ville klassen ha en fest. Lisa gjorde en omröstning, och alla fick rösta om dagen. Sedan hade de ett gruppsamtal för att planera maten. Det var tolv personer i samtalet, så det var svårt att komma till tals.",
+   "Aikos klasskamrat Emil skrev nästan aldrig i gruppen. En dag skickade han ett privatmeddelande till Aiko. Han skrev att alla andra skrev så snabbt, och att han ofta kände sig utanför. Aiko svarade att hon också kunde känna sig utanför ibland."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem är administratör för klassens gruppchatt?",
+    "options": [
+     "Läraren Lisa",
+     "Aiko",
+     "Emil",
+     "En man i klassen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Lisa är administratör …",
+    "explanationJa": "{先生|せんせい}のリサです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför kastade Lisa ut en man ur gruppen?",
+    "options": [
+     "Han skrev på finska",
+     "Han kom aldrig till kursen",
+     "Han tystade gruppen",
+     "Han spammade gruppen med reklam"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… en man i klassen [började] spamma gruppen med reklam. Lisa kastade ut honom.",
+    "explanationJa": "{広告|こうこく}を{大量|たいりょう}に{送|おく}りつけたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att Aiko tystade gruppen?",
+    "options": [
+     "Hon bad alla att vara tysta",
+     "Hon tog bort gruppen",
+     "Hon gjorde så att gruppen inte lät i mobilen",
+     "Hon slutade gå på kursen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Tysta betyder här att man stänger av ljudet för gruppchatten.",
+    "explanationJa": "ここではグループチャットの{通知|つうち}をミュートにするという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur bestämde klassen dagen för festen?",
+    "options": [
+     "Läraren bestämde själv",
+     "I ett gruppsamtal",
+     "Med en omröstning",
+     "Med privatmeddelanden"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Lisa gjorde en omröstning, och alla fick rösta om dagen.",
+    "explanationJa": "{投票|とうひょう}で{決|き}めました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emil skrev sällan i gruppen för att de andra skrev för snabbt.",
+    "correct": true,
+    "explanationSv": "Han skrev att alla andra skrev så snabbt …",
+    "explanationJa": "みんなが{書|か}くのが{速|はや}すぎて、ついていけなかったからです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om gruppchattar och gruppsamtal.",
+  "discussionPoints": [
+   "Hur många gruppchattar är du med i?",
+   "Vad är irriterande i en gruppchatt?",
+   "Har du någon gång tystat en grupp eller gått ur en grupp?",
+   "Hur gör man så att alla kan komma till tals i ett gruppsamtal?"
+  ]
+ }
+}
