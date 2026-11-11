@@ -1193,7 +1193,8 @@
    "quiz": false,
    "reviewStatus": "ai-draft",
    "confusableWith": [
-    "s.Alzheimers-sjukdom.1"
+    "s.Alzheimers-sjukdom.1",
+    "s.demenssjuk.1"
    ]
   },
   {
@@ -51128,7 +51129,8 @@
     "s.funktionsnedsättning.1",
     "s.demens.1",
     "s.glömska.1",
-    "s.glömsk.1"
+    "s.glömsk.1",
+    "s.demenssjuk.1"
    ],
    "blindTest": {
     "result": "pass",
@@ -81500,7 +81502,8 @@
    "group": "minne",
    "quiz": false,
    "confusableWith": [
-    "s.demens.1"
+    "s.demens.1",
+    "s.Alzheimers-sjukdom.1"
    ],
    "symbol": true
   },
@@ -81987,7 +81990,12 @@
    "symbol": true,
    "confusableWith": [
     "s.förlika-sig-med.1"
-   ]
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "fc303a4d"
+   }
   },
   {
    "senseId": "s.tidsvittne.1",
@@ -82179,7 +82187,12 @@
     "s.tilltal.1",
     "s.du-reformen.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "a479b3f9"
+   }
   },
   {
    "senseId": "s.du-reformen.1",
@@ -83348,7 +83361,12 @@
    "motif": "artig.oavsiktlig",
    "group": "artig-miss",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "f1ea54db"
+   }
   },
   {
    "senseId": "s.klavertramp.1",
@@ -83377,7 +83395,12 @@
     "s.klavertramp.1",
     "s.trampa-i-klaveret.1"
    ],
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.29.0",
+    "hash": "8e2fcb49"
+   }
   },
   {
    "senseId": "s.genant.1",
