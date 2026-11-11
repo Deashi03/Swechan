@@ -1,0 +1,175 @@
+{
+ "id": "m.rostrakning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Rösträkning",
+ "titleJa": "{開票|かいひょう}",
+ "descriptionSv": "Rösträkning: rösträkning, valnatt, preliminär, slutlig, sammanräkning, valnämnd, giltig, ogiltig, blankröst, jämn, omräkning, valdeltagande, vallokalundersökning, prognos, överklaga och omval.",
+ "descriptionJa": "{開票|かいひょう}：{開票|かいひょう}、{開票|かいひょう}の{夜|よる}、{暫定的|ざんていてき}な、{最終的|さいしゅうてき}な、{集計|しゅうけい}、{選挙管理委員会|せんきょかんりいいんかい}、{有効|ゆうこう}な、{無効|むこう}の、{白票|はくひょう}、{接戦|せっせん}の、{再集計|さいしゅうけい}、{投票率|とうひょうりつ}、{出口調査|でぐちちょうさ}、{予測|よそく}、{不服|ふふく}を{申|もう}し{立|た}てる、{再選挙|さいせんきょ}。",
+ "categoryId": "R03-A01-T03",
+ "tags": [
+  "politik",
+  "val"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.vallokaler-och-rostning"
+ ],
+ "related": [],
+ "recommendedOrder": 1323,
+ "words": [
+  {
+   "senseId": "s.rösträkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.valnatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.preliminär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanräkning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.valnämnd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.giltig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ogiltig.2",
+   "active": true
+  },
+  {
+   "senseId": "s.blankröst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämn.2",
+   "active": true
+  },
+  {
+   "senseId": "s.omräkning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.valdeltagande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vallokalundersökning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.prognos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överklaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omval.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En lång valnatt",
+  "paragraphs": [
+   "Klockan åtta på valdagen stänger vallokalerna. Då börjar rösträkningen. Röstmottagarna öppnar valurnorna och räknar rösterna för hand, en valsedel i taget.",
+   "Lars är röstmottagare. Han tittar noga på varje röst: är den giltig eller ogiltig? Om det ligger två olika partier i samma kuvert räknas rösten inte. Några har också lagt en blankröst.",
+   "Samtidigt visar tv en vallokalundersökning och en prognos. Men de första riktiga siffrorna är det preliminära resultatet från vallokalerna. I år är valet mycket jämnt, och det blir en spännande valnatt.",
+   "Valdeltagandet brukar vara högt i Sverige, ofta över 80 procent. Lars tycker att det känns viktigt att räkna varje röst rätt.",
+   "Det slutliga resultatet kommer några dagar senare. Först räknar valnämnden de röster som kom in sent. Sedan gör en myndighet en sammanräkning av alla röster. Om det är mycket jämnt kan det bli en omräkning. Den som tycker att något har gått fel kan överklaga valet, och i sällsynta fall blir det omval."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När börjar rösträkningen?",
+    "options": [
+     "När vallokalerna stänger",
+     "På morgonen dagen efter",
+     "När valnämnden kommer",
+     "Några dagar efter valet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Klockan åtta på valdagen stänger vallokalerna. Då börjar rösträkningen.",
+    "explanationJa": "{投票所|とうひょうじょ}が{閉|し}まると{開票|かいひょう}が{始|はじ}まります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken röst räknas inte?",
+    "options": [
+     "En valsedel med ett kryss",
+     "En röst från en förstagångsväljare",
+     "Ett kuvert med två olika partier",
+     "En röst som kom före valdagen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Om det ligger två olika partier i samma kuvert räknas rösten inte.",
+    "explanationJa": "{別|べつ}の{党|とう}の{用紙|ようし}が{二枚|にまい}{入|はい}った{封筒|ふうとう}は{無効|むこう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kan det bli en omräkning?",
+    "options": [
+     "För att valdeltagandet är högt",
+     "För att resultatet är mycket jämnt",
+     "För att tv visar en prognos",
+     "För att röstmottagarna är trötta"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om det är mycket jämnt kan det bli en omräkning.",
+    "explanationJa": "{接戦|せっせん}のときに{再集計|さいしゅうけい}が{行|おこな}われることがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det preliminära resultatet är det slutliga resultatet.",
+    "correct": false,
+    "explanationSv": "Det slutliga resultatet kommer några dagar senare.",
+    "explanationJa": "{最終結果|さいしゅうけっか}は{数日後|すうじつご}に{出|で}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Valnämnden räknar de röster som kom in sent.",
+    "correct": true,
+    "explanationSv": "Först räknar valnämnden de röster som kom in sent.",
+    "explanationJa": "{遅|おく}れて{届|とど}いた{票|ひょう}は{選挙管理委員会|せんきょかんりいいんかい}が{数|かぞ}えます。"
+   }
+  ],
+  "factSources": [
+   "Rösterna räknas preliminärt i vallokalen när den stänger kl. 20; valnämnden räknar sent inkomna röster på onsdagen och länsstyrelsen gör den slutliga sammanräkningen (val.se, Vallagen 2005:837 kap. 11–13).",
+   "Ett val kan överklagas till Valprövningsnämnden, som kan besluta om omval (Vallagen kap. 15).",
+   "Valdeltagandet i riksdagsvalen har de senaste gångerna legat över 80 procent (val.se, SCB)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om valnatten och om hur rösterna räknas.",
+  "discussionPoints": [
+   "Brukar du titta på tv på valnatten?",
+   "Varför tror du att man räknar rösterna för hand i Sverige?",
+   "Varför är valdeltagandet högt eller lågt i ett land?",
+   "Vad tycker du om vallokalundersökningar och prognoser?"
+  ]
+ }
+}
