@@ -89,6 +89,7 @@ Kontrollen känner igen böjda former av verbuttryck (`v('ta sig till', ...)`, `
 - **Sammansättningar** av två kända ord godtas av ordförrådskontrollen (`fläskfilé`, `vardagsmat`), men målordet självt räknas bara om det står i sin egen form i lästexten. Partikelverb måste stå sammanhängande ("hoppa över", inte "hoppar Erik över"); passiv form och delade partiklar känns inte igen.
 - **Pluraliska ord** (*sopor*, *jeans* m.fl.): använd singularlemma om det finns, annars en post utan böjning (`kind: none`) och bara grundformen i texterna. Reflexiva verb (*ta på sig*) har ingen `particle`.
 - **Bild (produktägarens regel från 0.29):** allt som produceras ska ha bild, animation eller symbol. Varje nytt modulord får en ordbild i samma omgång som modulen, och symbol- och adjektivbilder ska klara blindtestet innan release. `validateContent` stoppar modulord utan visualisering och modulord vars plan säger "ingen bild". Bara 14 äldre ord är undantagna (`VISUAL_EXCEPTIONS_BEFORE_0_29`); listan får inte växa.
+- **Parallell produktion (produktägarens regel):** högst tre ämnesgrupper skrivs samtidigt, var och en av en egen agent i en egen arbetskopia med `docs/PRODUCTION_BRIEF.md` som instruktion. Nästa grupp startas först när en är inlagd i integrationsgrenen. Integratören kör gruppernas skript i huvudträdet i katalogordning.
 - **Dubbletter mellan ämnesgrupper (0.29):** skapar två grupper samma lemma äger den tidigare modulen i katalogordningen posten, och den senare refererar dess `senseId` (och dess bild). Kontrollera med `exists.py` innan en post skapas, även mot grupper som skrivs parallellt.
 - **Omvänd ordföljd** ("Har du jämnt?", "fyller hon ut") bryter målord som består av flera ord. Skriv om till rak ordföljd ("Det är bra om du har jämnt", "hon måste fylla ut"). Genitiv ("mottagarens") och reflexiv i andra person ("ångrar dig") känns inte heller igen.
 - **Kolla både singular och plural** med `known.py`/ordboken innan ett ord görs till målord (*torrvaror* → finns som *torrvara*, *arbetsdagar* → *arbetsdag*).
@@ -119,6 +120,29 @@ Kontrollen känner igen böjda former av verbuttryck (`v('ta sig till', ...)`, `
   2. En granskare som inte vet svaret (en ny AI-session eller en människa) skriver för varje bild vilket ord den visar, med säkerhet *high/medium/low*. Instruktion till granskaren: läs `<mapp>/mN.png` och `<mapp>/mN.txt`, öppna inga andra filer, välj för varje numrerad bild det ord som bilden tydligast visar, nämn i `problem` andra ord ur listan som passar lika bra, och skriv `<mapp>/answers_K.json` som `{ "mN": { "1": { "word", "conf", "saw", "problem" } } }`.
   3. `npm run art:blind:record -- <mapp> [godtagna-medium]` sparar resultatet i `blindTest` med ett fingeravtryck av den testade bilden. Godkänt = rätt ord med hög säkerhet, eller medel efter att författaren läst granskarens kommentar. Ett ord i `confusableWith` ger `synonym`.
   4. Testet *every symbol and adjective picture passed an independent blind test* stoppar bilder utan blindtest och bilder som ritats om efter sitt blindtest.
+  5. **Tak (produktägarens regel):** en bild får högst två blindtestomgångar. Klarar den inte den andra får ordet planstatus `none` och listas i `PROJECT_STATUS.md` under *Saknade bilder*. Den ritas inte om en tredje gång. Ordet ska också stå i `VISUAL_MISSING_AFTER_BLIND_TEST` i `validateContent.ts`. Ta bort ordet ur blindtestets `key.json`, annars kraschar `record`.
+- **Blindtest i praktiken:**
+  - Använd en ny mapp för varje omgång, och skriv alltid ut hela sökvägen till mappen.
+  - Listan med godtagna medelsvar är kommaseparerad och utan mellanslag.
+  - Alla ord som granskaren nämner räknas, även de i `problem`. `synonym` kräver att alla dessa ord finns i `confusableWith`. Ett fel svar med låg säkerhet räknas bara om granskaren själv nämner bildens ord.
+  - Markera bara äkta synonymer som förväxlingsbara. Är det inte en synonym ritas bilden om.
+  - En bild som ändras efter testet, även bara i färg, måste testas igen.
+- **Lärdomar från ritandet:**
+  - Armarna utgår från axeln.
+  - Pratbubblor står bredvid huvudet, inte ovanpå.
+  - Inget får skäras av vid bildkanten.
+  - En hand med ett enda utsträckt finger kan läsas som en oförskämd gest. Använd `thumb()` (tummen snett åt sidan) och `palm()` (stopphand med fyra fingrar).
+  - Varumärken ritas aldrig. Betaltjänster, post, operatörer och myndigheter får allmänna symboler.
+  - Använd aldrig osynlig text eller tomma platshållare i motiven.
+  - Hjälpfigurer:
+    - `P({ mood })` i `blindFix.ts` ger figurer med ansiktsuttryck.
+    - `head()` och `bed()` i `routine.ts` ger ett ansikte i närbild och en säng.
+    - `dressed()`/`fitPair()` i `fitFigures.ts` visar passform. Standardfiguren kan aldrig visa passform eller frisyr.
+    - `heelBody()` i `accessories.ts` ritar klackskor.
+  - Flytta en figur med `g('translate(0 -dy)', P(...))`, aldrig med `.replace()` på SVG-strängen.
+  - Hjälpfunktioner som används i motivobjektet deklareras före `export const …_MOTIFS`, annars blir det ett ReferenceError.
+  - Ett nytt område får ett nytt motivprefix och en ny rad i `GROUPS` i `render.ts`.
+  - Granska varje bild i förstoring i ett kontaktark (`tools/production/wsheet.ts`) innan den registreras.
 - **`quiz: true` bara om bilden entydigt visar ordet.** Allmänna ord (*långbyxor*, *underkläder*) och nästan identiska ord (*mysbyxor* bredvid *mjukisbyxor*) får `quiz: false`.
 - **`group`** samlar ord som liknar varandra visuellt (överdelar, byxor, jackor …); distraktorer tas aldrig från samma grupp. **`confusableWith`** anger förväxlingar över gränserna (*brud* ↔ *brudklänning*, *bryna* ↔ *steka*).
 - **Foton:** bara CC0, public domain eller CC BY (aldrig NC eller SA). Ange titel, upphovsperson, licens och källsida. Neutral bakgrund, motivet centrerat, inga igenkännbara personer, ingen text. 400 × 400 webp under 80 kB.

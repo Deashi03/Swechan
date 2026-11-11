@@ -121,6 +121,18 @@ ui  ──►  daily / modules / dictionary / conversation / stats / audio / fee
 15. **Förkunskaper styr rekommendationen, inte åtkomsten** (0.2) – `recommendedModule()` föreslår bara moduler vars förkunskaper är klara; moduler låses aldrig.
 41. **Bild → ord visar japanskan och spelar animationen en gång** (0.16, produktägarens återkoppling) – I övningen *Vilket ord passar till bilden?* står ordets japanska översättning under bilden (`prompt` med `promptLang: 'ja'`), eftersom en del bilder är svåra att tolka utan stöd. Bilden visas i läget `once`: en animation eller ett ansikte som hör till ordet spelas en gång och går sedan tillbaka till affischbilden, med ▶ för att spela igen (`ScenePlayer endOnPoster`). Stillbilder och symboler visas som vanligt. Bilder som svarsalternativ (*Vilken bild passar till ordet?*) är fortfarande stillbilder, så att alla alternativ visas på lika villkor. Läget väljs av `pictureMode()`.
 
+## Praktiska lärdomar (kod)
+
+- Kör `npm run content:index` efter varje ändring i en modulfil. Modulindexet är genererat.
+- **Menybilder** (`src/ui/art`) är ett eget system, skilt från ordbilderna i `src/ui/wordArt`. De använder 64×64-geometri med färgroller och rotområdets färgton.
+  - `accent` vrider nyansen 28 grader och `accent2` 200 grader. En del med egen nyans (`hue`, till exempel vatten, hjärtan eller eld) ska därför ha `main` eller `light`.
+  - Bara rollen `line` stryks, alla andra roller fylls. En öppen bana utan `Z` med rollen `light` syns därför inte.
+  - Skriv inga villkorsuttryck (`x.t === 'path' ? … : …`) i motivlistorna. Skriv delarna direkt.
+  - En bågbana (`A`) där radien är för liten för avståndet ger en tom yta. Räkna ut skärningspunkterna.
+  - En ny katalogmodul behöver ett motiv i rätt `moduleArtR0x.ts`, annars fallerar täckningstestet.
+- **Produktionsverktyg** för moduler och ordbilder ligger i `tools/production/`: DSL, ordkontroll, bildspecifikation, registrering, kontaktark och blindtestshjälp. De beskrivs i `docs/PRODUCTION_BRIEF.md`. Agenternas arbetskopior ligger i `.claude/worktrees/`, som är utesluten i `.git/info/exclude` och i vitest.
+- `scripts/e2e-smoke.mjs` använder en *planerad* katalogmodul som exempel. Byt exemplet när den modulen publiceras.
+
 ## Regler för vidareutveckling
 
 1. Bevara användardata – ingen ändring får radera progression utan uttryckligt godkännande. Schemaändring = ny `db.version(n)` med `upgrade()`.
