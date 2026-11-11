@@ -35,6 +35,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.diplomatisk.1', 's.åtagande.1', 's.samarbete.1', 's.liberal.1', 's.liberalism.1', 's.socialistisk.1',
   // 0.31, after two blind-test rounds
   's.utfärda.1', 's.föreskrift.1', 's.enligt-lag.1', 's.författning.1', 's.lagstadgad.1', 's.rätt.2', 's.skyldig.3', 's.plikt.1', 's.åligga.1', 's.privatperson.1', 's.offentlig-rätt.1',
+  // 0.31 (Brott & straff, Polis), after two blind-test rounds
+  's.gärning.1', 's.straffbar.1', 's.brottslig.1', 's.uppsåt.1', 's.vårdslös.1', 's.avsiktlig.1', 's.uppsåtlig.1', 's.oaktsamhet.1', 's.anstiftan.1', 's.straff.1', 's.individualprevention.1', 's.skäligen-misstänkt.1', 's.anhållande.1', 's.försvåra.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

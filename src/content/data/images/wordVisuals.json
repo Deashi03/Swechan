@@ -90913,22 +90913,6 @@
    "quiz": false
   },
   {
-   "senseId": "s.brottslig.1",
-   "kind": "illustration",
-   "motif": "brott.brottslig",
-   "group": "brott",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.straffbar.1",
-   "kind": "illustration",
-   "motif": "brott.straffbar",
-   "group": "brott",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.kriminalisera.1",
    "kind": "illustration",
    "motif": "brott.kriminalisera",
@@ -90947,14 +90931,6 @@
    "motif": "brott.brottsbalken",
    "group": "brottsbalken",
    "quiz": false
-  },
-  {
-   "senseId": "s.gärning.1",
-   "kind": "illustration",
-   "motif": "brott.gärning",
-   "group": "brott",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.gärningsperson.1",
@@ -91002,7 +90978,12 @@
    "motif": "brott.ansvarsfrihetsgrund",
    "group": "ansvarsfrihetsgrund",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "b8202250"
+   }
   },
   {
    "senseId": "s.avsikt.1",
@@ -91028,17 +91009,6 @@
    ]
   },
   {
-   "senseId": "s.avsiktlig.1",
-   "kind": "illustration",
-   "motif": "brott.avsiktlig",
-   "group": "uppsåt",
-   "quiz": false,
-   "confusableWith": [
-    "s.med-avsikt.1"
-   ],
-   "symbol": true
-  },
-  {
    "senseId": "s.förutse.1",
    "kind": "illustration",
    "motif": "brott.förutse",
@@ -91050,22 +91020,6 @@
     "round": "0.31.0",
     "hash": "5ff1685a"
    }
-  },
-  {
-   "senseId": "s.uppsåt.1",
-   "kind": "illustration",
-   "motif": "brott.uppsåt",
-   "group": "uppsåt",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.uppsåtlig.1",
-   "kind": "illustration",
-   "motif": "brott.uppsåtlig",
-   "group": "uppsåt",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.oaktsam.1",
@@ -91083,30 +91037,17 @@
    }
   },
   {
-   "senseId": "s.oaktsamhet.1",
-   "kind": "illustration",
-   "motif": "brott.oaktsamhet",
-   "group": "oaktsam",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.grov-oaktsamhet.1",
    "kind": "illustration",
    "motif": "brott.grov-oaktsamhet",
    "group": "oaktsam",
    "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.vårdslös.1",
-   "kind": "illustration",
-   "motif": "brott.vårdslös",
-   "group": "oaktsam",
-   "quiz": false,
-   "confusableWith": [
-    "s.oaktsam.1"
-   ]
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "8bb3e8ec"
+   }
   },
   {
    "senseId": "s.olyckshändelse.1",
@@ -91197,14 +91138,6 @@
    "quiz": false
   },
   {
-   "senseId": "s.anstiftan.1",
-   "kind": "illustration",
-   "motif": "brott.anstiftan",
-   "group": "medverka",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.uppmana.1",
    "kind": "illustration",
    "motif": "brott.uppmana",
@@ -91217,7 +91150,12 @@
    "motif": "brott.medhjälp",
    "group": "medverka",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "16e85abf"
+   }
   },
   {
    "senseId": "s.hålla-utkik.1",
@@ -91225,14 +91163,6 @@
    "motif": "brott.hålla-utkik",
    "group": "hålla",
    "quiz": true
-  },
-  {
-   "senseId": "s.straff.1",
-   "kind": "illustration",
-   "motif": "brott.straff",
-   "group": "straff",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.straffa.1",
@@ -91301,7 +91231,12 @@
    "motif": "brott.avtjäna",
    "group": "fängelse",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "665194e9"
+   }
   },
   {
    "senseId": "s.fånge.1",
@@ -91521,14 +91456,24 @@
    "motif": "brott.brottslighet",
    "group": "brottslighet",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "f82fd706"
+   }
   },
   {
    "senseId": "s.brottsförebyggande.1",
    "kind": "illustration",
    "motif": "brott.brottsförebyggande",
    "group": "brottsförebyggande",
-   "quiz": false
+   "quiz": false,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "7dbf5856"
+   }
   },
   {
    "senseId": "s.avskräcka.1",
@@ -91556,15 +91501,12 @@
    "motif": "brott.allmänprevention",
    "group": "allmänprevention",
    "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.individualprevention.1",
-   "kind": "illustration",
-   "motif": "brott.individualprevention",
-   "group": "individualprevention",
-   "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "267a4e62"
+   }
   },
   {
    "senseId": "s.sända-en-signal.1",
@@ -91598,7 +91540,12 @@
    "motif": "brott.kriminalpolitik",
    "group": "kriminalpolitik",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "70c43418"
+   }
   },
   {
    "senseId": "s.återanpassning.1",
@@ -91810,7 +91757,12 @@
    "motif": "polis.upprätthålla",
    "group": "upprätthålla",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.31.0",
+    "hash": "a37a1ae4"
+   }
   },
   {
    "senseId": "s.allmän-ordning.1",
@@ -91944,14 +91896,6 @@
     "round": "0.31.0",
     "hash": "fa170422"
    }
-  },
-  {
-   "senseId": "s.skäligen-misstänkt.1",
-   "kind": "illustration",
-   "motif": "polis.skäligen-misstänkt",
-   "group": "misstänkt",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.på-sannolika-skäl.1",
@@ -92201,14 +92145,6 @@
    "quiz": false
   },
   {
-   "senseId": "s.anhållande.1",
-   "kind": "illustration",
-   "motif": "polis.anhållande",
-   "group": "häkte",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.underrätta.1",
    "kind": "illustration",
    "motif": "polis.underrätta",
@@ -92227,14 +92163,6 @@
     "round": "0.31.0",
     "hash": "b6a1c21f"
    }
-  },
-  {
-   "senseId": "s.försvåra.1",
-   "kind": "illustration",
-   "motif": "polis.försvåra",
-   "group": "försvåra",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.häkta.1",
