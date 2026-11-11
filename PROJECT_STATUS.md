@@ -1,8 +1,22 @@
 # Projektstatus – överlämning
 
-**Version:** 0.28.0 · **Senast uppdaterad:** 2026-11-09 · **Gren:** `main` (publiceras via GitHub Pages; 0.28 utvecklades i grenen `claude/swechan-0.28`)
+**Version:** 0.29.0 · **Senast uppdaterad:** 2026-11-11 · **Gren:** `main` (publiceras via GitHub Pages; 0.29 utvecklades i grenen `claude/swechan-0.29`)
 
 Det här dokumentet är överlämningen mellan arbetstillfällen. Läs det först, sedan `ARCHITECTURE.md`.
+
+## 0.29 – släppt 2026-11-11 (105 moduler, alla ord med bild)
+
+- **Gjort:**
+  - 105 nya moduler (509 publicerade): resten av *Relationer & familj* (R02-A04 T04–T06) och hela *Kommunikation* (R02-A05) och *Livsfaser* (R02-A06). *Människan & hälsa* är därmed komplett.
+  - 1 431 nya ordbilder, en för varje nytt ord. Alla symbol- och adjektivbilder har klarat ett oberoende blindtest.
+  - Ny regel i `validateContent`: varje modulord ska ha bild, animation eller symbol. Bara 14 äldre ord är undantagna (`VISUAL_EXCEPTIONS_BEFORE_0_29`).
+- **Nästa steg:** bilder för de 14 äldre undantagen, mänsklig granskning av språket i 0.29 (se osäkerheterna nedan) och nästa överämne enligt katalogen.
+- **Osäkert, bör granskas av en människa:** pluralen *dealar*, imperativen *hörs* (*höras*) och *åldras*, nyansen i *kohandel*, *gränslös* och *lova bättring*; japanska läsningar som {間遠|まどお}, {気骨|きこつ}, 方便のうそ (*nödlögn*) och 恩 (*tacksamhetsskuld*); fakta om du-reformen och om pensionssystemet (hålls medvetet allmänt).
+- **Kom ihåg (produktion med parallella grupper):**
+  - Varje ämnesgrupp skrivs av en egen agent i en egen arbetskopia (`.claude/worktrees/`, utesluten i `.git/info/exclude` och i vitest). Arbetskopian måste först synkas till integrationsgrenen.
+  - Integratören kör gruppernas skript i huvudträdet i katalogordning. Ger `module()` "DUBBLETT" har en annan grupp redan skapat posten: den tidigare modulen i kedjan äger posten, den senare refererar `senseId` och gruppens bild för ordet stryks ur specen (den befintliga, blindtestade bilden behålls).
+  - Första modulen i en grupp använder `prev()`, som faller tillbaka på en befintlig modul så länge föregående grupp saknas. Kör om skriptet när föregående grupp är inlagd, så att förkunskapen blir rätt. Kontrollera först att inget senare skript lagt till betydelser (`add_sense`) i samma ordboksfil.
+  - Blindtestet räknar alla ord granskaren nämner, även i `problem`. Bara äkta synonymer markeras som förväxlingsbara; annars ritas bilden om.
 
 ## 0.28 – släppt 2026-11-09 (alla katalogmoduler har bild)
 
