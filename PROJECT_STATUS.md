@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.29.0 (redo för release) · **Senast uppdaterad:** 2026-11-11 · **Gren:** `claude/swechan-0.29` → `main` (publiceras via GitHub Pages)
+**Version:** 0.29.0 (släppt 2026-11-11, PR #39) · **Senast uppdaterad:** 2026-11-11 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -29,14 +29,10 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Släpp 0.29.0:
-   - PR till `main`
-   - grön CI
-   - merge
-2. Nästa etapp, i en ny session: överämnet *Politik & demokrati* (R03-A01), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
-3. Mänsklig granskning av språket, se *Öppna osäkerheter*.
-4. Nya bildidéer för orden under *Saknade bilder*.
-5. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
+1. Nästa etapp, i en ny session: överämnet *Politik & demokrati* (R03-A01), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
+3. Nya bildidéer för orden under *Saknade bilder*.
+4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
 
 ## Saknade bilder
 
