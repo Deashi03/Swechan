@@ -25,6 +25,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'vux.': () => import('./adulthood').then((m) => m.ADULTHOOD_MOTIFS),
   'rel.': () => import('./relationSkills').then((m) => m.RELATION_SKILL_MOTIFS),
   'dist.': () => import('./remoteTalk').then((m) => m.REMOTE_TALK_MOTIFS),
+  'åld.': () => import('./ageing').then((m) => m.AGEING_MOTIFS),
   'kär.': () => import('./love').then((m) => m.LOVE_MOTIFS),
   'livs.': () => import('./groceries').then((m) => m.GROCERY_MOTIFS),
   'kök.': () => import('./kitchen').then((m) => m.KITCHEN_MOTIFS),
