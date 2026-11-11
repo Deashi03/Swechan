@@ -125,6 +125,11 @@ const pie = (x: number, y: number, r: number, parts: [string, number][]) => { le
 const scaleB = (x: number, y: number, tilt: number, l: Svg = '', r: Svg = '', s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-14 40 L14 40 L4 34 L-4 34 Z', C.brown, C.ink, 1.4), line('M0 34 L0 -2', C.ink, 2.6),
   g(`rotate(${tilt})`, line('M-34 0 L34 0', C.ink, 2.6), line('M-32 0 L-40 18 M-32 0 L-24 18 M32 0 L24 18 M32 0 L40 18', C.ink, 1), path('M-44 18 L-20 18 Q-32 26 -44 18 Z', C.gold, C.ink, 1.2), path('M20 18 L44 18 Q32 26 20 18 Z', C.gold, C.ink, 1.2), g('translate(-32 16)', g(`rotate(${-tilt})`, l)), g('translate(32 16)', g(`rotate(${-tilt})`, r))), circle(0, 0, 3, C.gold, C.ink, 1.2));
 
+/** Three levels at once: the whole country (outline), a region (ring) and one place (small circle); `hl` picks the level shown in colour. */
+const LAND = 'M22 8 C52 -2 98 6 108 34 C118 64 106 104 70 110 C36 114 6 98 8 62 C9 36 6 16 22 8 Z';
+const levels = (hl: 'place' | 'region') => all(path(LAND, '#eceef0', C.grey, 1.6), ...[[24, 30], [96, 36], [28, 96], [98, 92], [60, 18]].map(([x, y]) => greyed(hs(x!, y!, 0.6))),
+  hl === 'region' ? all(circle(62, 64, 34, RB2, RB, 3), line('M44 50 L80 46 L76 86 L46 82 Z', RB, 1.8), trainI(62, 48, 0.55), ...[[44, 52], [80, 48], [76, 86], [46, 84]].map(([x, y]) => all(hs(x! - 4, y!, 0.6), hs(x! + 4, y! + 1, 0.5))), greyed(circle(62, 66, 8, '#f7f7f7', C.grey, 1.4), hs(62, 69, 0.5)))
+  : all(dash('M96 64 A34 34 0 1 1 96 63.9', C.grey, 1.4), circle(62, 66, 18, '#fde7c7', HL, 3), hs(54, 66, 0.9), hs(70, 64, 0.8), mini(56, 78, PC[3]!, 'smile', 0.45), mini(68, 78, PC[5]!, 'smile', 0.45, true), heartM(62, 72, 0.25)));
 export const MUNICIPAL_MOTIFS: Record<string, Svg> = {
   // ── Kommunfullmäktige ────────────────────────────────────────────
   // kommun: one piece of the map is green with its own little town and badge; the neighbouring kommuner are grey.
@@ -144,7 +149,7 @@ export const MUNICIPAL_MOTIFS: Record<string, Svg> = {
   // yrkande: at the meeting she stands up with her palm raised and presents a paper with her proposal; the others sit (grey).
   'kommun.yrkande': all(ground, greyed(mini(16, 80, C.grey), mini(36, 80, C.grey), mini(94, 80, C.grey)), desk(4, 116, 92), fig(64, PC[4]!, 'smile', { h: 0.92, hairStyle: 'long' }), reach(64, 0.92, 1, 84, 30), palm(84, 26, 1), reach(64, 0.92, -1, 46, 54), doc(40, 50, 0.6, { band: PC[4], inner: check(0, 4, 0.9) }), say(26, 20, 32, 22, 40, 36, all(rect(14, 14, 10, 10, C.white, 1, C.ink, 1), check(19, 19, 0.5), arrow(28, 19, 36, 19, HL, 1.4)))),
   // allmänheten: lots of ordinary people of every kind (colourful) as against one grey official at his desk.
-  'kommun.allmänhet': all(ground, greyed(mini(104, 26, C.grey, 'flat', 0.9), rect(90, 36, 28, 5, C.tan, 1, C.ink, 1.2)), ...[[14, 64], [32, 60], [50, 66], [68, 62], [86, 68], [104, 66], [22, 86], [40, 90], [58, 86], [76, 90], [94, 88], [112, 92]].map(([x, y], i) => mini(x!, y!, PC[i % 6]!, 'smile', 0.85, i % 3 === 1)), mini(10, 104, C.orange, 'smile', 0.5), mini(66, 106, C.green, 'smile', 0.5)),
+  'kommun.allmänhet': all(ground, rect(78, 8, 38, 34, '#eef3f8', 3, C.ink, 1.2), greyed(mini(88, 30, C.navy, 'flat', 0.7), mini(104, 30, C.navy, 'flat', 0.7), kb(88, 36, 0.3), kb(104, 36, 0.3)), fig(14, C.orange, 'smile', { h: 0.62, hairStyle: 'long' }), rect(20, 80, 8, 10, C.white, 1, C.ink, 1), fig(36, C.green, 'smile', { h: 0.4 }), fig(58, PC[4]!, 'smile', { h: 0.66 }), path('M66 96 L76 96 L76 108 L66 108 Z', '#8cc7e8', C.ink, 1), circle(68, 110, 2, C.dark, null), circle(75, 110, 2, C.dark, null), fig(90, C.beige, 'smile', { h: 0.6, hair: '#c9ced4' }), line('M98 84 L100 111', C.brown, 2), fig(108, C.red, 'smile', { h: 0.58, hairStyle: 'long' })),
 
   // ── Kommunstyrelse och nämnder ───────────────────────────────────
   // kommunstyrelse: a small group round the table in front of the town hall leads the work; arrows go down to the committees below.
@@ -178,7 +183,7 @@ export const MUNICIPAL_MOTIFS: Record<string, Svg> = {
   // sjukvård: a patient in a hospital bed is cared for by a doctor with a stethoscope.
   'kommun.sjukvård': all(ground, rect(8, 70, 66, 10, C.white, 3, C.ink, 1.6), rect(8, 64, 16, 10, C.white, 4, C.ink, 1.2), line('M10 80 L10 108 M72 80 L72 108', C.grey, 3), circle(24, 60, 8, C.skin, C.ink, 1.4), path('M18 58 C18 50 30 50 30 58 C27 55 21 55 18 58 Z', C.hair, null), rect(28, 62, 44, 10, '#a9cdf2', 3, C.ink, 1.2), fig(94, C.white, 'smile', { h: 0.92 }), path('M86 46 C86 62 102 62 102 46', 'none', C.dark, 1.4), circle(94, 64, 3, C.grey, C.dark, 1.2), hospI(52, 22, 1.4)),
   // regional: in the whole country (grey) one region is blue, and a train runs between its towns.
-  'kommun.regional': all(mapR(10, 14, 1.2, (i) => (i === 3 ? RB2 : '#e4e7ea')), hs(58, 60, 0.8), hs(80, 52, 0.7), hs(68, 74, 0.7), line('M58 62 L68 74 L80 54', RB, 1.8), trainI(98, 98, 0.8), rb(102, 20, 0.9)),
+  'kommun.regional': levels('region'),
   // tandvård: a child in the dentist's chair; the dentist checks his teeth; a big clean tooth.
   'kommun.tandvård': all(ground, path('M14 92 L46 92 L58 76 L64 78 L52 98 L14 98 Z', '#6fb7c9', C.ink, 1.4), line('M30 98 L30 110 M20 110 L40 110', C.grey, 3), mini(56, 66, C.green, 'smile', 0.9), fig(88, C.white, 'smile', { h: 0.9, hairStyle: 'long' }), reach(88, 0.9, -1, 64, 64), line('M64 64 L60 62', C.grey, 1.6), toothI(24, 30, 1.8), path('M42 18 l3 -3 M44 26 l4 0 M42 34 l3 3', 'none', C.gold, 1.4)),
   // specialistvård: the small health centre sends the patient (arrow) to the big hospital, where a heart doctor examines a big heart.
@@ -210,7 +215,7 @@ export const MUNICIPAL_MOTIFS: Record<string, Svg> = {
 
   // ── Lokala beslut ────────────────────────────────────────────────
   // lokal (på en ort): a magnifier picks out one small place on the map, with its own houses and people; the rest of the country is grey.
-  'kommun.lokal.2': all(mapR(8, 22, 1.1, () => '#e4e7ea'), circle(42, 62, 4, HL, C.ink, 1), line('M46 58 L66 40', C.ink, 1.4), circle(88, 36, 26, '#eaf5e2', C.ink, 2.4), hs(78, 40, 1), hs(96, 38, 0.9), mini(88, 52, PC[3]!, 'smile', 0.5), tree(104, 50, 0.4), line('M106 54 L114 62', C.ink, 4)),
+  'kommun.lokal.2': levels('place'),
   // justera (ett protokoll): two members read through the minutes of the meeting and sign that they are right.
   'kommun.justera.2': all(ground, desk(4, 116, 86), mini(26, 74, PC[1]!), mini(94, 74, PC[2]!, 'smile', 1, true), doc(60, 64, 1.2, { band: KG, lines: 5, inner: all(path('M-8 12 q2 -3 4 0 t4 0', 'none', C.navy, 1), path('M2 12 q2 -3 4 0 t4 0', 'none', C.navy, 1)) }), pen(48, 78, 0.6, 30), pen(74, 78, 0.6, -30), check(60, 30, 1.2)),
   // detaljplan: the plan of one area: building plots with their heights, the street and the green park.
@@ -240,7 +245,7 @@ export const MUNICIPAL_MOTIFS: Record<string, Svg> = {
   // förslagsställare: she is the one with the idea (light bulb) whose paper is on the board; the other people are grey.
   'kommun.förslagsställare': all(ground, greyed(fig(16, C.grey, 'smile', { h: 0.62 }), fig(104, C.grey, 'smile', { h: 0.62 })), fig(60, PC[2]!, 'laugh', { h: 0.9, hairStyle: 'long' }), bulb(60, 4, 1), reach(60, 0.9, 1, 84, 52), doc(88, 44, 0.7, { inner: bulb(0, 4, 0.6) }), arrow(78, 18, 70, 12, HL, 1.6)),
   // motivering: to her idea (paper with a bulb) she adds the reason: a fast car beside a child, so a crossing is needed.
-  'kommun.motivering': all(doc(28, 40, 1.1, { inner: bulb(0, 4, 0.9) }), arrow(48, 40, 62, 40, HL, 2), rect(64, 12, 52, 56, C.white, 3, C.ink, 1.6), rect(66, 52, 48, 12, '#9aa0a8', 0, null), g('translate(80 52)', rect(-10, -8, 20, 8, C.red, 2, C.ink, 1), circle(-6, 0, 2, C.dark, null), circle(6, 0, 2, C.dark, null)), line('M64 46 L56 46 M66 42 L60 42', C.grey, 1.2), mini(104, 40, C.green, 'frown', 0.6), excl(98, 22, 11), q(28, 92, 22), arrow(40, 92, 60, 72, HL, 2)),
+  'kommun.motivering': all(ground, fig(20, PC[2]!, 'smile', { h: 0.8, hairStyle: 'long' }), reach(20, 0.8, 1, 40, 76), doc(44, 72, 0.6, { inner: bulb(0, 4, 0.7) }), greyed(fig(100, C.navy, 'smile', { h: 0.72 })), say(100, 12, 18, 18, 100, 28, q(100, 12, 13)), say(58, 34, 46, 30, 30, 40, all(rect(37, 40, 42, 7, '#9aa0a8', 0, null), g('translate(46 42)', rect(-8, -6, 16, 6, C.red, 1.5, C.ink, 0.8), circle(-4, 0, 1.6, C.dark, null), circle(4, 0, 1.6, C.dark, null)), line('M36 37 L33 37 M37 34 L34 34', C.grey, 1), mini(70, 34, C.green, 'frown', 0.45), excl(58, 26, 9)))),
   // bifalla: the chair's gavel comes down and the proposal gets the green tick.
   'kommun.bifalla': all(ground, desk(4, 116, 86), mini(30, 74, C.navy), gavel(50, 66, 0.9, -40), doc(82, 58, 1.2, { band: PC[1], inner: stamp(0, 6, 0.8) }), path('M44 74 l-4 4 M50 78 l0 5 M56 74 l4 4', 'none', C.gold, 1.4), okB(100, 20, 10)),
   // medborgardialog: politicians and residents sit in a ring round the map and talk with each other.
