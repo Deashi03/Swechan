@@ -107,6 +107,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'migr.': () => import('./migration').then((m) => m.MIGRATION_MOTIFS),
   'civs.': () => import('./civilSociety').then((m) => m.CIVIL_SOCIETY_MOTIFS),
   'nyh.': () => import('./newsMedia').then((m) => m.NEWS_MOTIFS),
+  'kkrit.': () => import('./sourceCriticism').then((m) => m.SOURCE_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
