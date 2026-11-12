@@ -211,13 +211,13 @@ try {
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem, Människan & hälsa (0.29), Politik & demokrati (0.30), Juridik & rättsväsende (0.31), Ekonomi &
-  // arbetsliv (0.32) and Utbildning & lärande (0.33) are fully published, so the planned entry is the first module of
-  // Städer & offentlig service: Stadens platser → Torg och gågator.
+  // arbetsliv (0.32), Utbildning & lärande (0.33) and Städer & offentlig service (0.34) are fully published, so the
+  // planned entry is the first module of Medier & samhällsdebatt: Nyhetsmedier → Tidningar och nyhetsredaktioner.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Samhälle & institutioner/ }).first().click();
-  await page.getByRole('link', { name: /Städer & offentlig service/ }).first().click();
-  await page.getByRole('link', { name: /Stadens platser/ }).first().click();
-  await page.getByRole('link', { name: /Torg och gågator/ }).first().click();
+  await page.getByRole('link', { name: /Medier & samhällsdebatt/ }).first().click();
+  await page.getByRole('link', { name: /Nyhetsmedier/ }).first().click();
+  await page.getByRole('link', { name: /Tidningar och nyhetsredaktioner/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
