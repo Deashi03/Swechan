@@ -50,11 +50,6 @@ const warn = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s}
 const doc = (x: number, y: number, s = 1, marks: Svg = '', n = 5, col: string = C.grey2, fill: string = C.white) => g(`translate(${x} ${y}) scale(${s})`, rect(-14, -18, 28, 36, fill, 2, C.ink, 1.6), ...Array.from({ length: n }, (_, i) => line(`M-9 ${-11 + i * 6} L9 ${-11 + i * 6}`, col, 2)), marks);
 /** A contract: a sheet with a signature line at the bottom. */
 const contract = (x: number, y: number, s = 1, signed = true, mark: Svg = '') => doc(x, y, s, all(line('M-9 12 L9 12', C.ink, 1), signed ? path('M-8 10 C-5 4 -3 12 0 7 C2 4 4 10 7 8', 'none', C.navy, 1.4) : '', mark), 4);
-/** A CV: a sheet with three sections (cap, briefcase, speech bubble) and lines. */
-const cv = (x: number, y: number, s = 1, extra: Svg = '') => g(`translate(${x} ${y}) scale(${s})`, rect(-14, -18, 28, 36, C.white, 2, C.ink, 1.6),
-  path('M-11 -12 L-8 -13.6 L-5 -12 L-8 -10.4 Z', C.navy, null), line('M-8 -11 L-8 -9', C.navy, 0.8), line('M-3 -13 L10 -13 M-3 -10 L7 -10', C.grey2, 1.6),
-  rect(-11, -3, 6, 4.4, C.brown, 0.8, null), line('M-9.4 -3 L-9.4 -4.4 L-6.6 -4.4 L-6.6 -3', C.brown, 0.8), line('M-3 -3 L10 -3 M-3 0 L7 0', C.grey2, 1.6),
-  rect(-11, 6, 6, 4, C.sky, 1.4, null), line('M-3 7 L10 7 M-3 10 L7 10', C.grey2, 1.6), extra);
 const pen = (x: number, y: number, s = 1, rot = 35) => g(`translate(${x} ${y}) rotate(${rot}) scale(${s})`, rect(-2, -14, 4, 22, C.navy, 1, C.ink, 1), path('M-2 8 L0 13 L2 8 Z', C.tan, C.ink, 0.8));
 const cal = (x: number, y: number, s = 1, hi: number[] = [], col: string = HL) => g(`translate(${x} ${y}) scale(${s})`, rect(-14, -14, 28, 28, C.white, 2, C.ink, 1.4), rect(-14, -14, 28, 7, RED, 2, C.ink, 1.4), ...Array.from({ length: 9 }, (_, i) => rect(-11 + (i % 3) * 8, -4 + Math.floor(i / 3) * 6, 6, 4.4, hi.includes(i) ? col : C.grey2, 0.8, null)));
 const hourglass = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, line('M-8 -12 L8 -12 M-8 12 L8 12', C.brown, 2.4), path('M-6 -11 L6 -11 L1 0 L6 11 L-6 11 L-1 0 Z', 'rgba(220,240,252,0.7)', C.ink, 1.2), path('M-5 10 L5 10 L0 3 Z', C.tan, null));
@@ -63,7 +58,6 @@ const clock = (x: number, y: number, r: number, hh = 3, mm = 0, face: string = C
 /** Pie (filled sector from 12 o'clock clockwise), frac 0–1. */
 const pie = (x: number, y: number, r: number, frac: number, col: string = C.green) => { if (frac >= 1) return circle(x, y, r, col, C.ink, 1.8); const a = frac * Math.PI * 2, ex2 = x + Math.sin(a) * r, ey = y - Math.cos(a) * r; return all(circle(x, y, r, C.white, C.ink, 1.8), path(`M${x} ${y} L${x} ${y - r} A${r} ${r} 0 ${frac > 0.5 ? 1 : 0} 1 ${f1(ex2)} ${f1(ey)} Z`, col, C.ink, 1.4)); };
 const coins = (x: number, y: number, n = 3, r = 5) => all(...Array.from({ length: n }, (_, i) => ellipse(x, y - i * 3, r, r * 0.45, C.gold, C.ink, 1.1)));
-const handshake = (x: number, y: number, s = 1, c1: string = C.navy, c2: string = C.navy) => g(`translate(${x} ${y}) scale(${s})`, rect(-22, -4, 12, 9, c1, 2, C.ink, 1.2), rect(10, -4, 12, 9, c2, 2, C.ink, 1.2), path('M-10 -4 C-4 -8 4 -8 10 -4 L10 5 C4 8 -4 8 -10 5 Z', C.skin, C.ink, 1.2), line('M-4 -5 L-2 5 M0 -6 L2 5 M4 -5 L5 4', C.ink, 0.8));
 const mag = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, circle(0, 0, 8, 'rgba(220,240,252,0.7)', C.ink, 2), line('M5.6 5.6 L12 12', C.ink, 3));
 const table = (y: number, x1: number, x2: number) => all(rect(x1, y, x2 - x1, 6, C.tan, 2, C.ink, 1.8), line(`M${x1 + 8} ${y + 6} L${x1 + 8} 112 M${x2 - 8} ${y + 6} L${x2 - 8} 112`, C.brown, 3));
 const laptop = (x: number, y: number, s = 1, screen: Svg = '') => g(`translate(${x} ${y}) scale(${s})`, rect(-16, -22, 32, 21, C.dark, 2, C.ink, 1.4), rect(-13.5, -19.5, 27, 16, '#bfe3f5', 1, null), screen, path('M-20 -1 L20 -1 L22 2 L-22 2 Z', C.grey, C.ink, 1.2));
@@ -150,6 +144,14 @@ const curr = (x: number, y: number, sym: string, col: string = C.gold, r = 10) =
 const note$ = (x: number, y: number, s = 1, col: string = '#a8d8a8', sym = '') => g(`translate(${x} ${y}) scale(${s})`, rect(-16, -8, 32, 16, col, 2, C.ink, 1.2), circle(0, 0, 4.4, 'rgba(255,255,255,0.6)', C.ink, 0.8), sym ? T(0, 2.6, sym, 7, C.ink) : '');
 const pipe = (x1: number, x2: number, y: number) => all(rect(x1, y - 3, x2 - x1, 6, C.silver, 2, C.ink, 1), circle(x1 + (x2 - x1) * 0.7, y, 1.8, C.sky, null));
 
+// ── Round-2 helpers (blind-test fixes) ──
+const thermo = (x: number, y: number, s = 1, lvl = 0.8) => g(`translate(${x} ${y}) scale(${s})`, rect(-4, -30, 8, 34, C.white, 4, C.ink, 1.3), circle(0, 8, 7, RED, C.ink, 1.3), rect(-2, 4 - 32 * lvl, 4, 32 * lvl, RED, 1, null), ...[0, 1, 2, 3].map((i) => line(`M4 ${-24 + i * 7} L7 ${-24 + i * 7}`, C.ink, 1)));
+const spot = (x: number, y: number, w: number) => path(`M${x - 6} 0 L${x + 6} 0 L${x + w / 2} ${y} L${x - w / 2} ${y} Z`, 'rgba(242,193,78,0.35)', null);
+const weight = (x: number, y: number, r: number) => all(circle(x, y, r, C.dark, C.ink, 1.6), path(`M${x - r * 0.5} ${y - r * 0.4} C${x - r * 0.2} ${y - r * 0.7} ${x + r * 0.2} ${y - r * 0.7} ${x + r * 0.4} ${y - r * 0.5}`, 'none', C.grey, 1.2));
+const can = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-12 -8 L8 -8 L8 10 L-12 10 Z', C.green, C.ink, 1.3), path('M8 -4 L22 -12 L24 -8 L10 2', C.green, C.ink, 1.2), path('M-12 -4 C-22 -4 -22 8 -12 6', 'none', C.ink, 1.6));
+const sprout = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, line('M0 0 L0 -26', '#3f8a55', 2.4), path('M0 -12 C-10 -14 -14 -22 -12 -26 C-4 -24 0 -18 0 -12 Z', '#7bbf6a', C.ink, 1), path('M0 -20 C10 -22 14 -30 12 -34 C4 -32 0 -26 0 -20 Z', '#7bbf6a', C.ink, 1), path('M-10 0 L10 0 L8 10 L-8 10 Z', C.brown, C.ink, 1.2));
+const dial = (x: number, y: number, r: number, ang: number) => all(path(`M${x - r} ${y} A${r} ${r} 0 0 1 ${x + r} ${y} Z`, C.white, C.ink, 1.5), ...[-60, -30, 0, 30, 60].map((a) => { const t = (a - 90) * Math.PI / 180; return line(`M${f1(x + Math.cos(t) * r * 0.78)} ${f1(y + Math.sin(t) * r * 0.78)} L${f1(x + Math.cos(t) * r * 0.95)} ${f1(y + Math.sin(t) * r * 0.95)}`, C.ink, 1); }), line(`M${x} ${y} L${f1(x + Math.cos((ang - 90) * Math.PI / 180) * r * 0.8)} ${f1(y + Math.sin((ang - 90) * Math.PI / 180) * r * 0.8)}`, HL, 2.6), circle(x, y, 2.2, C.ink, null));
+
 export const MARKET_ECONOMY_MOTIFS: Record<string, Svg> = {
   // ── 1541 Utbud och efterfrågan ──
   'mark.marknad': all(stall(30, 70, 0.9, C.green, all(apple(-12, -6), apple(-4, -6), apple(4, -6), apple(12, -6))), stall(90, 70, 0.9, RED, all(milk(-10, -12, 0.8), milk(0, -12, 0.8), milk(10, -12, 0.8))), people(16, 96, 2, 28, 0.7, (i) => [C.orange, C.purple][i]!), people(76, 96, 2, 28, 0.7, (i) => [C.sky, C.yellow][i]!), coin(46, 92, 4), coin(60, 98, 4), coin(74, 92, 4), ground),
@@ -158,7 +160,7 @@ export const MARKET_ECONOMY_MOTIFS: Record<string, Svg> = {
   'mark.producent': all(tree(18, 112, 1.6), fig(48, '#7aa04a', 'smile', { h: 0.88, bottom: C.denim }), reach(48, 0.88, 1, 66, 76), box(76, 86, 24, 16), apple(70, 76), apple(78, 76), apple(84, 77), arrow(92, 86, 104, 86, HL, 2), shop(106, 56, 0.45), ground),
   'mark.efterfråga': all(shop(26, 74, 1.1), ...[0, 1, 2].map((i) => all(mini(66 + i * 20, 98, [C.orange, C.sky, C.purple][i]!, 'smile', 0.7))), say(92, 58, 40, 26, 86, 86, all(cup(84, 60, 0.8), ex(102, 58, 12))), ground),
   'mark.marknadspris': all(mini(16, 96, C.orange, 'smile', 0.8), mini(104, 96, C.sky, 'smile', 0.8), balance(60, 40, 0, coin(0, -3, 5), apple(0, -3, 5)), ptag(60, 18, 1.1), ground),
-  'mark.stiga': all(chart(10, 50, 70, 56, [0.1, 0.3, 0.5, 0.75, 0.95], RED), arrow(88, 96, 88, 46, RED, 3), ptag(92, 28, 1.0), greyed(ptag(30, 26, 0.7))),
+  'mark.stiga': all(greyed(ptag(30, 92, 0.9), thermo(86, 92, 1.0, 0.25)), ptag(30, 34, 1.1), thermo(86, 46, 1.0, 0.9), arrow(30, 78, 30, 52, RED, 2.6), arrow(60, 96, 60, 20, RED, 3)),
   'mark.sjunka.2': all(chart(10, 50, 70, 56, [0.95, 0.75, 0.5, 0.3, 0.1], C.green), arrow(88, 46, 88, 96, C.green, 3), ptag(92, 106, 0.8), greyed(ptag(30, 26, 1.0))),
   'mark.bristvara': all(shelfEmpty(10, 20, 60, 86), milk(56, 76, 1.0), ...[0, 1, 2].map((i) => mini(84 + (i % 2) * 18, 40 + i * 26, [C.orange, C.purple, C.sky][i]!, 'frown', 0.6)), warn(40, 40, 0.9), ground),
   'mark.överskott.2': all(...Array.from({ length: 18 }, (_, i) => milk(18 + (i % 6) * 13, 104 - Math.floor(i / 6) * 22, 1.2)), greyed(mini(106, 92, C.grey, 'flat', 0.7), cart(106, 116, 0.5))),
@@ -166,21 +168,21 @@ export const MARKET_ECONOMY_MOTIFS: Record<string, Svg> = {
   'mark.planekonomi': all(govt(60, 30, 0.9), ...[22, 60, 98].map((x) => all(shop(x, 96, 0.55), ptag(x, 70, 0.6))), line('M60 46 L22 60 M60 46 L60 60 M60 46 L98 60', HL, 1.6)),
 
   // ── 1542 Priser och konkurrens ──
-  'mark.konkurrent': all(shop(28, 80, 0.95), greyed(mini(28, 50, C.grey, 'flat', 0.6)), shop(92, 80, 0.95), ring(92, 76, 25, HL), mini(92, 46, RED, 'smile', 0.6), arrow(70, 60, 50, 60, C.grey, 1.6), arrow(50, 70, 70, 70, C.grey, 1.6), ground),
-  'mark.konkurrera': all(fig(20, RED, 'smile', { h: 0.82 }), fig(100, C.denim, 'smile', { h: 0.82 }), reach(20, 0.82, 1, 42, 66), reach(100, 0.82, -1, 78, 66), cup(44, 64, 1.0), cup(76, 64, 1.0), mini(60, 98, C.yellow, 'flat', 0.7), q(60, 76, 12, C.navy), ground),
+  'mark.konkurrent': all(stall(30, 78, 0.9, C.green, all(apple(-10, -6), apple(0, -6), apple(10, -6))), stall(90, 78, 0.9, C.green, all(apple(-10, -6), apple(0, -6), apple(10, -6))), mini(30, 58, C.green, 'frown', 0.6), mini(90, 58, RED, 'smile', 0.6), ring(90, 60, 28, HL), line('M38 52 L56 50', C.grey, 1.4, '2 2'), ground),
+  'mark.konkurrera': all(line('M100 56 L100 112', C.ink, 1.6), path('M100 56 L114 60 L100 64 Z', C.green, C.ink, 1), mini(110, 96, C.yellow, 'smile', 0.6), coin(110, 78, 5), g('translate(-24 0)', fig(40, RED, 'laugh', { h: 0.8 }), box(56, 78, 12, 10)), g('translate(14 0)', fig(40, C.denim, 'laugh', { h: 0.8 }), box(56, 78, 12, 10)), line('M6 60 L18 60 M4 72 L16 72 M6 84 L18 84', C.grey, 1.6), ground),
   'mark.konkurrenskraftig': all(shop(34, 76, 1.1), star(34, 40, 6, C.gold), ptag(34, 22, 0.8, '#c8e8b8'), people(14, 102, 3, 20, 0.5, (i) => [C.orange, C.sky, C.purple][i]!), greyed(shop(96, 76, 0.75), ptag(96, 46, 0.6)), ground),
   'mark.prissättning': all(fig(30, C.navy, 'calm', { h: 0.88 }), table(84, 40, 112), reach(30, 0.88, 1, 60, 72), tag(76, 72, 1.3, '#f6e3a8', all(coin(2, 0, 4), q(11, 0, 9))), pen(62, 66, 0.8, 30), calcu(100, 74, 0.8)),
   'mark.priskrig': all(shop(20, 84, 0.7), shop(100, 84, 0.7), ...[0, 1, 2].map((i) => all(tag(24 + i * 6, 28 + i * 16, 0.6 - i * 0.1), tag(96 - i * 6, 28 + i * 16, 0.6 - i * 0.1))), bolt2(60, 40, 1.4), arrow(46, 26, 50, 62, RED, 1.8), arrow(74, 26, 70, 62, RED, 1.8), ground),
   'mark.pressa-priserna': all(rect(30, 8, 60, 14, C.grey, 2, C.ink, 1.4), line('M60 22 L60 32', C.ink, 4), rect(26, 32, 68, 8, C.silver, 2, C.ink, 1.4), tag(60, 58, 1.6, '#f6e3a8', coin(4, 0, 4)), arrow(18, 30, 18, 70, HL, 2.4), arrow(102, 30, 102, 70, HL, 2.4), people(30, 98, 3, 30, 0.6, (i) => [RED, C.denim, C.green][i]!)),
-  'mark.monopol': all(shop(30, 70, 1.3), ring(34, 66, 28, HL), ...[0, 1, 2, 3].map((i) => mini(78 + (i % 2) * 22, 30 + i * 20, [C.orange, C.sky, C.purple, C.green][i]!, 'flat', 0.55)), ground),
-  'mark.dominera': all(pie(42, 50, 32, 0.8, RED), shop(98, 40, 0.7), circle(98, 70, 5, RED, C.ink, 1), greyed(shop(98, 100, 0.4))),
+  'mark.monopol': all(shop(40, 76, 1.3), tag(40, 26, 1.0, '#f6e3a8', all(coin(0, 0, 4), coin(9, 0, 4))), ...[0, 1, 2].map((i) => all(rect(76, 14 + i * 32, 32, 24, 'none', 2, C.grey, 1.2), cross(92, 26 + i * 32, 0.8))), people(16, 104, 4, 16, 0.4, (i) => [C.orange, C.sky, C.purple, C.green][i]!, () => 'frown')),
+  'mark.dominera': all(shop(40, 70, 2.0), mini(40, 18, RED, 'smile', 0.8), ...[0, 1, 2].map((i) => shop(84 + i * 13, 104, 0.3)), mini(84, 84, C.sky, 'frown', 0.35), mini(110, 84, C.orange, 'frown', 0.35), ground),
   'mark.kartell': all(...[24, 60, 96].map((x, i) => all(mini(x, 70, [C.navy, C.purple, C.brown][i]!, 'smile', 0.9), ptag(x, 100, 0.7))), line('M10 50 C30 30 90 30 110 50', C.grey, 1.6, '3 3'), say(60, 24, 30, 18, 60, 52, T(60, 28, '...', 12, C.navy)), padlock(108, 20, 0.8, false, C.grey)),
   'mark.Konkurrensverket': all(columns(30, 40, 1.0, '#e8eef4'), mag(76, 46, 1.6), shop(76, 94, 0.5), shop(104, 94, 0.5), ptag(76, 76, 0.5), ptag(104, 76, 0.5), ground),
   'mark.avreglering': all(rect(8, 60, 10, 52, C.grey, 1, C.ink, 1.2), path('M18 66 L44 52 L44 70 L18 84 Z', C.grey2, C.ink, 1.2), padlock(30, 30, 1.2, true, C.gold), ...[0, 1, 2].map((i) => all(shop(66 + i * 20, 98 - (i % 2) * 6, 0.45))), arrow(30, 98, 50, 98, HL, 2), ground),
 
   // ── 1543 Marknader och branscher ──
   'mark.bransch': all(...[16, 44, 72, 100].map((x) => all(shop(x, 54, 0.6), cup(x, 34, 0.7))), rect(3, 22, 114, 54, 'none', 6, HL, 2.4), greyed(factory(28, 98, 0.5), office(92, 98, 0.4))),
-  'mark.sektor': all(pie(60, 56, 44, 0.5, '#f6e3a8'), company(80, 54, 0.5), shop(84, 80, 0.4), greyed(hospital(38, 46, 0.5), school(40, 80, 1.1))),
+  'mark.sektor': all(circle(60, 60, 46, C.white, C.ink, 1.6), line('M60 60 L60 14 M60 60 L100 83 M60 60 L20 83', C.ink, 1.4), g('translate(8 -4)', path('M60 60 L60 14 A46 46 0 0 1 100 83 Z', '#f6e3a8', HL, 2.4), factory(80, 48, 0.4)), greyed(shop(60, 94, 0.45), hospital(36, 48, 0.4))),
   'mark.näringsliv': all(factory(26, 52, 0.7), office(94, 52, 0.6), shop(30, 94, 0.6), company(90, 96, 0.6), line('M44 58 L76 58 M30 70 L30 80 M94 72 L94 80 M46 90 L72 90', C.grey, 1.6, '3 2'), coin(60, 74, 7)),
   'mark.privat-sektor': all(rect(4, 6, 54, 104, '#f6e3a8', 4, HL, 2.4), company(31, 40, 0.6), shop(31, 88, 0.6), greyed(hospital(88, 40, 0.6), school(88, 88, 1.3))),
   'mark.industri': all(factory(30, 70, 1.0), factory(90, 70, 1.0), cloud(44, 18, 0.7, C.grey2), cloud(104, 18, 0.7, C.grey2), ground),
@@ -194,15 +196,15 @@ export const MARKET_ECONOMY_MOTIFS: Record<string, Svg> = {
   'mark.besöksnäring': all(hotel(36, 88, 1.0), fig(84, C.yellow, 'laugh', { h: 0.8 }), suitcase(102, 104, 1.1), reach(84, 0.8, -1, 74, 52), rect(66, 46, 10, 8, C.dark, 1.5, C.ink, 1), circle(71, 50, 2.4, '#9ad0f0', null), sun(104, 18, 7), ground),
   'mark.storföretag': all(office(46, 70, 1.4), ...Array.from({ length: 6 }, (_, i) => mini(12 + i * 19, 104, [C.orange, C.sky, C.purple, C.green, C.yellow, C.pink][i]!, 'smile', 0.4)), greyed(shop(104, 30, 0.4))),
   'mark.småföretag': all(shop(44, 80, 1.2), mini(34, 56, C.orange, 'smile', 0.6), mini(54, 56, C.green, 'smile', 0.6), greyed(office(100, 70, 0.8)), ground),
-  'mark.aktör': all(circle(60, 60, 22, '#f6e3a8', C.ink, 1.4), coin(60, 60, 8), ...[[60, 16, factory(0, 0, 0.32)], [102, 60, shop(0, 0, 0.42)], [60, 104, columns(0, 0, 0.36)], [18, 60, mini(0, 0, C.green, 'smile', 0.6)]].map(([x, y, s]) => all(circle(x as number, y as number, 14, C.white, C.ink, 1.2), g(`translate(${x} ${y})`, s as Svg))), line('M60 30 L60 38 M88 60 L82 60 M60 90 L60 82 M32 60 L38 60', HL, 2)),
+  'mark.aktör': all(ellipse(60, 100, 54, 12, '#d8eccf', C.ink, 1.4), spot(84, 100, 44), greyed(factory(22, 82, 0.4), columns(46, 86, 0.32), shop(108, 98, 0.32)), mini(84, 84, C.green, 'smile', 0.9), coin(100, 76, 4), ring(84, 82, 18, HL)),
   'mark.marknadsandel': all(pie(46, 56, 34, 0.3, RED), greyed(shop(100, 90, 0.5)), shop(100, 30, 0.5), circle(100, 56, 5, RED, C.ink, 1), ring(60, 30, 10, HL)),
 
   // ── 1544 Produktivitet och tillväxt ──
   'mark.producera': all(factory(36, 70, 1.2), belt(66, 114, 86), box(76, 80, 12, 10), box(92, 80, 12, 10), box(108, 80, 12, 10), arrow(66, 64, 110, 64, HL, 2), ground),
   'mark.produktion': all(belt(8, 112, 70), ...[18, 36, 54, 72, 90].map((x) => box(x, 64, 14, 10)), barChart(84, 34, 1.1, [4, 8, 12, 16], C.green), factory(28, 30, 0.5)),
   'mark.BNP': all(land(30, 50, 1.4, '#d8eccf', true), arrow(56, 50, 70, 50, HL, 2), ...Array.from({ length: 8 }, (_, i) => ellipse(94, 100 - i * 7, 16, 5, C.gold, C.ink, 1.1)), car(20, 104, 0.5, RED), box(40, 104, 12, 10), cup(54, 104, 0.8), line('M74 104 L74 46', C.grey, 1.4)),
-  'mark.produktivitet': all(greyed(fig(22, C.grey, 'calm', { h: 0.72 }), box(22, 104, 12, 10), clock(22, 26, 10, 1, 0)), fig(76, C.green, 'smile', { h: 0.72 }), gear(102, 46, 9, C.grey), ...[0, 1, 2, 3].map((i) => box(96 + (i % 2) * 14, 106 - Math.floor(i / 2) * 11, 12, 10)), clock(80, 26, 10, 1, 0), arrow(44, 60, 56, 60, HL, 2)),
-  'mark.effektivisera': all(greyed(line('M14 30 C30 10 30 50 46 30 C60 14 54 54 70 34 C82 18 90 40 104 30', C.grey, 2)), arrow(14, 80, 104, 80, C.green, 3), greyed(clock(18, 104, 7, 3, 30)), clock(102, 104, 7, 1, 0), mini(10, 60, C.green, 'smile', 0.5)),
+  'mark.produktivitet': all(...[0, 1, 2].map((i) => all(clock(24 + i * 36, 18, 9, 1, 0), ...Array.from({ length: [1, 2, 4][i]! }, (_, j) => box(24 + i * 36, 104 - j * 12, 18, 11)))), arrow(14, 90, 100, 42, C.green, 2.4), line('M6 112 L114 112', C.ink, 1.4)),
+  'mark.effektivisera': all(greyed(fig(18, C.grey, 'sleepy', { h: 0.6 }), line('M30 30 C40 10 46 50 54 30', C.grey, 2), clock(40, 98, 8, 4, 0)), arrow(50, 66, 72, 66, HL, 2.6), fig(92, C.green, 'smile', { h: 0.6 }), wrench(112, 72, 0.8, 30), arrow(78, 30, 110, 30, C.green, 2.4), clock(68, 98, 8, 1, 0), ground),
   'mark.investering': all(coins(20, 100, 3, 7), arrow(32, 86, 46, 70, HL, 2), gear(60, 56, 14, C.silver), arrow(76, 56, 88, 56, HL, 2), coins(102, 100, 8, 7), cal(102, 30, 0.8, [8], C.green)),
   'mark.investera': all(company(28, 66, 0.9), fig(64, C.navy, 'smile', { h: 0.85 }), reach(64, 0.85, 1, 86, 74), coin(88, 72, 5), arrow(88, 80, 96, 88, HL, 1.6), robotArm(104, 110, 0.6), ground),
   'mark.automatisering': all(belt(8, 112, 82), box(30, 76, 14, 10), box(70, 76, 14, 10), robotArm(52, 82, 1.0), robotArm(96, 82, 0.8), greyed(fig(16, C.grey, 'calm', { h: 0.55 }))),
@@ -211,7 +213,7 @@ export const MARKET_ECONOMY_MOTIFS: Record<string, Svg> = {
   'mark.arbetskraft': all(...Array.from({ length: 8 }, (_, i) => { const x = 16 + (i % 4) * 29, y = 50 + Math.floor(i / 4) * 44; return all(mini(x, y, [C.orange, C.sky, C.green, C.purple, C.yellow, C.denim, C.pink, C.brown][i]!, 'smile', 0.8), i % 3 === 0 ? path(`M${x - 7} ${y - 9} C${x - 7} ${y - 17} ${x + 7} ${y - 17} ${x + 7} ${y - 9} Z`, C.yellow, C.ink, 1) : ''); }), wrench(112, 20, 0.8, 40)),
   'mark.infrastruktur': all(path('M0 112 L46 60 L74 60 L120 112 Z', C.dark, null), line('M60 64 L60 72 M60 80 L60 92 M60 100 L60 112', C.white, 2), line('M4 48 L116 48', C.brown, 2.4), ...Array.from({ length: 10 }, (_, i) => line(`M${10 + i * 11} 44 L${10 + i * 11} 52`, C.brown, 1.4)), line('M20 8 L20 40 M100 8 L100 40 M12 12 L28 12 M92 12 L108 12', C.grey, 2), path('M12 12 Q60 26 108 12', 'none', C.ink, 1), pipe(0, 40, 104)),
   'mark.reallön': all(coins(22, 100, 6, 8), arrow(22, 50, 22, 36, C.green, 2), greyed(ptag(78, 30, 1.0)), ptag(78, 64, 1.3), arrow(104, 76, 104, 50, RED, 2.2), cart(80, 104, 0.7, milk(0, -12, 0.8))),
-  'mark.välstånd': all(house(46, 86, 2.0), car(96, 104, 0.8, C.denim), mini(88, 70, C.green, 'smile', 0.8), mini(104, 72, C.orange, 'smile', 0.6), sun(102, 20, 8), star(24, 22, 3, C.gold), ground),
+  'mark.välstånd': all(land(60, 60, 2.4, '#d8eccf'), house(38, 54, 0.8), house(66, 44, 0.8), house(84, 68, 0.8), house(46, 80, 0.7), coins(68, 98, 4, 6), coins(86, 96, 3, 6), sun(104, 14, 7), mini(28, 66, C.orange, 'smile', 0.5), mini(64, 66, C.green, 'smile', 0.5)),
 
   // ── 1545 Konjunktur och arbetslöshet ──
   'mark.konjunktur': all(line(waveD(30, 90), C.navy, 3), sun(22, 14, 6), cloud(78, 108, 0.6, C.grey), line('M8 112 L114 112', C.grey, 1.4), arrow(100, 112, 114, 112, C.grey, 1.4)),
@@ -220,7 +222,7 @@ export const MARKET_ECONOMY_MOTIFS: Record<string, Svg> = {
   'mark.uppgång.2': all(chart(10, 16, 100, 88, [0.15, 0.1, 0.3, 0.55, 0.85], C.green), arrow(70, 64, 100, 30, C.green, 2.6)),
   'mark.nedgång.2': all(chart(10, 16, 100, 88, [0.85, 0.9, 0.6, 0.35, 0.12], RED), arrow(70, 50, 100, 86, RED, 2.6)),
   'mark.finanskris': all(columns(44, 50, 1.4, '#e8eef4'), line('M40 30 L48 46 L42 60 L50 74', RED, 2.4), bolt2(96, 22, 1.4), chart(74, 62, 40, 36, [0.9, 0.7, 0.2], RED), coin(20, 100, 5), coin(34, 106, 5), mini(100, 106, C.grey, 'frown', 0.5)),
-  'mark.arbetsmarknad': all(rect(8, 12, 46, 50, '#f6e3a8', 2, C.brown, 2), ...[0, 1, 2, 3].map((i) => all(rect(13 + (i % 2) * 20, 18 + Math.floor(i / 2) * 22, 16, 18, C.white, 1, C.ink, 1), briefcase(21 + (i % 2) * 20, 28 + Math.floor(i / 2) * 22, 0.45))), people(70, 40, 3, 18, 0.6, (i) => [C.orange, C.sky, C.purple][i]!), cv(78, 88, 0.6), cv(100, 88, 0.6), arrow(60, 80, 46, 70, HL, 1.8), ground),
+  'mark.arbetsmarknad': all(balance(60, 36, 0, all(briefcase(-6, -6, 0.9), briefcase(6, -6, 0.9), briefcase(0, -16, 0.9)), all(mini(-6, -8, C.orange, 'smile', 0.6), mini(6, -8, C.sky, 'smile', 0.6))), ground),
   'mark.arbetslöshet': all(...Array.from({ length: 8 }, (_, i) => { const x = 14 + (i % 4) * 30, y = 30 + Math.floor(i / 4) * 50; return i === 1 || i === 6 ? all(mini(x, y, C.grey, 'frown', 0.8), cross(x + 10, y + 16, 0.5)) : greyed(mini(x, y, C.grey, 'smile', 0.8), briefcase(x + 10, y + 18, 0.4, C.grey)); }), ring(44, 36, 18, HL), ring(74, 86, 18, HL)),
   'mark.arbetslös': all(rect(10, 84, 60, 6, C.brown, 2, C.ink, 1.3), line('M14 90 L14 112 M66 90 L66 112', C.brown, 3), fig(40, C.grey, 'frown', { h: 0.8 }), greyed(briefcase(92, 104, 1.1, C.grey)), cross(92, 100, 1.0), doc(94, 50, 0.8), mag(102, 60, 0.8)),
   'mark.långtidsarbetslös': all(fig(32, C.grey, 'sleepy', { h: 0.8 }), cobweb(4, 4, 1.4), ...[0, 1, 2, 3].map((i) => cal(76 + i * 6, 34 + i * 6, 0.8, [8], C.grey)), hourglass(96, 90, 1.2), greyed(briefcase(58, 104, 0.8, C.grey)), ground),
@@ -235,8 +237,8 @@ export const MARKET_ECONOMY_MOTIFS: Record<string, Svg> = {
   'mark.import': all(land(86, 60, 1.6, '#f6e3a8', true), globe(20, 30, 14), ship(36, 90, 0.5), sea, arrow(30, 50, 62, 60, HL, 2.6)),
   'mark.export': all(land(34, 60, 1.6, '#f6e3a8', true), globe(100, 30, 14), ship(86, 90, 0.5), sea, arrow(60, 60, 92, 48, HL, 2.6)),
   'mark.exportera': all(factory(26, 62, 0.8), box(52, 92, 14, 12), arrow(58, 76, 72, 76, HL, 2), sea, ship(84, 96, 0.6), arrow(98, 66, 114, 66, HL, 2)),
-  'mark.utrikeshandel': all(land(60, 60, 1.4, '#f6e3a8', true), globe(18, 22, 10), globe(102, 22, 10), globe(18, 100, 10), globe(102, 100, 10), arrow(30, 28, 42, 42, HL, 1.8), arrow(78, 42, 90, 28, HL, 1.8), arrow(42, 78, 30, 92, C.denim, 1.8), arrow(90, 92, 78, 78, C.denim, 1.8)),
-  'mark.handelspartner': all(land(26, 50, 1.1, '#f6e3a8'), land(94, 50, 1.1, '#d8eccf'), arrow(46, 40, 74, 40, HL, 2), arrow(74, 60, 46, 60, C.denim, 2), box(60, 30, 10, 8), coin(60, 70, 4), handshake(60, 96, 0.8, C.orange, C.green)),
+  'mark.utrikeshandel': all(land(26, 60, 1.3, '#f6e3a8', true), globe(98, 60, 16), line('M56 10 L56 110', C.grey, 1.4, '4 3'), arrow(42, 40, 80, 40, HL, 2.6), arrow(80, 80, 42, 80, C.denim, 2.6), box(62, 32, 10, 8), box(62, 72, 10, 8), rect(4, 4, 112, 104, 'none', 8, HL, 1.4)),
+  'mark.handelspartner': all(land(24, 56, 1.1, '#f6e3a8', true), land(96, 56, 1.1, '#d8eccf'), ring(96, 56, 28, HL), ...[0, 1, 2].map((i) => all(arrow(i % 2 ? 70 : 44, 32 + i * 22, i % 2 ? 44 : 70, 32 + i * 22, i % 2 ? C.denim : HL, 1.8), box(57, 26 + i * 22, 8, 6))), cal(60, 104, 0.4, [0, 4, 8], C.green)),
   'mark.tull.2': all(rect(60, 64, 6, 48, RED, 1, C.ink, 1.2), line('M63 70 L10 70', RED, 4), line('M63 70 L10 70', C.white, 1.6, '6 6'), truck(30, 108, 1.0, C.denim, box(-8, -12, 14, 10)), fig(94, C.navy, 'calm', { h: 0.82 }), reach(94, 0.82, -1, 78, 50), palm(78, 48, 0.9), coin(64, 40, 6), arrow(40, 40, 56, 40, HL, 1.8)),
   'mark.handelshinder': all(land(20, 56, 0.9, '#f6e3a8'), land(100, 56, 0.9, '#d8eccf'), ...Array.from({ length: 5 }, (_, i) => rect(52, 20 + i * 16, 16, 14, '#c86a4a', 1, C.ink, 1.1)), box(40, 70, 12, 10), arrow(30, 56, 48, 56, HL, 2), cross(60, 8, 0.6), ground),
   'mark.valuta': all(note$(36, 30, 1.4, '#a8d8a8', '€'), note$(84, 44, 1.4, '#f2c4a8', '¥'), curr(28, 80, '$', C.silver), curr(60, 92, '£', C.gold), curr(92, 84, '¥', C.silver)),
@@ -247,16 +249,16 @@ export const MARKET_ECONOMY_MOTIFS: Record<string, Svg> = {
   'mark.ursprungsland': all(box(34, 80, 50, 40), rect(18, 66, 32, 22, C.white, 2, C.ink, 1.2), land(34, 77, 0.45, '#d8eccf'), pin(36, 72, 0.4), globe(92, 40, 20), pin(96, 30, 0.8), line('M50 70 C60 60 70 54 82 48', C.grey, 1.4, '3 3')),
 
   // ── 1547 Ekonomisk politik ──
-  'mark.ekonomisk-politik': all(govt(30, 40, 1.0), cbank(90, 44, 0.9), rect(30, 78, 60, 30, C.white, 3, C.ink, 1.4), line('M36 102 L48 94 L58 98 L70 86 L84 82', C.green, 2.4), line('M30 58 L42 78 M90 66 L78 78', HL, 1.8)),
-  'mark.finanspolitik': all(govt(60, 46, 1.1), coins(16, 64, 4, 6), arrow(24, 52, 34, 46, C.green, 2), arrow(86, 46, 98, 60, HL, 2), school(104, 76, 1.0), hospital(100, 100, 0.4), ground),
+  'mark.ekonomisk-politik': all(govt(28, 34, 0.75), cbank(92, 38, 0.75), coins(28, 62, 2, 4), T(92, 66, '%', 10, C.ink), line('M28 70 L28 76 L92 76 L92 72', C.ink, 1.6), arrow(60, 76, 60, 84, HL, 2), land(60, 98, 0.8, '#d8eccf'), factory(54, 98, 0.22), shop(70, 100, 0.22)),
+  'mark.finanspolitik': all(govt(30, 44, 0.9), mini(12, 98, C.orange, 'smile', 0.45), mini(28, 98, C.sky, 'smile', 0.45), arrow(20, 84, 24, 66, C.green, 1.8), coin(10, 74, 4), arrow(52, 46, 66, 46, HL, 2), school(92, 32, 1.0), chart(70, 66, 44, 40, [0.2, 0.4, 0.7], C.green)),
   'mark.skattesänkning': all(govt(28, 40, 0.8), greyed(coins(28, 104, 6, 6)), coins(28, 104, 3, 6), arrow(48, 40, 48, 70, C.green, 2.4), fig(88, C.green, 'laugh', { h: 0.8 }), reach(88, 0.8, -1, 74, 74), coins(72, 92, 4, 5), ground),
   'mark.subvention': all(g('translate(0 0)', rect(6, 60, 64, 30, C.yellow, 4, C.ink, 1.4), rect(10, 66, 56, 12, '#9ad0f0', 2, null), circle(20, 92, 6, C.dark, null), circle(56, 92, 6, C.dark, null)), govt(94, 34, 0.7), coin(88, 70, 5), coin(98, 78, 5), arrow(90, 54, 70, 72, HL, 2), tag(36, 30, 1.1, '#f6e3a8', coin(4, 0, 4)), greyed(tag(36, 48, 0.6))),
-  'mark.stimulera': all(chart(14, 20, 70, 60, [0.2, 0.25, 0.5, 0.8], C.green), govt(100, 32, 0.6), coin(98, 62, 5), coin(90, 76, 4), coin(84, 88, 4), arrow(96, 70, 78, 92, HL, 1.8), ground),
+  'mark.stimulera': all(govt(26, 40, 0.8), can(66, 30, 1.0), drops(94, 46), coin(92, 50, 3), sprout(94, 104, 1.4), chart(6, 70, 46, 40, [0.1, 0.3, 0.8], C.green), ground),
   'mark.budgetunderskott': all(govt(60, 30, 0.7), balance(60, 56, 1, coins(0, -2, 2, 5), coins(0, -2, 5, 5)), arrow(16, 60, 16, 40, C.green, 2), arrow(104, 92, 112, 106, RED, 2), minusB(100, 26, 8)),
-  'mark.statsskuld': all(govt(36, 50, 1.0), ...[0, 1, 2, 3, 4].map((i) => doc(84 + (i % 2) * 6, 94 - i * 14, 0.6, '', 2)), chain(58, 60, 76, 70, 4), coin(100, 20, 6), minusB(20, 16, 7), ground),
+  'mark.statsskuld': all(govt(26, 54, 0.9), chain(46, 66, 70, 86, 5), weight(84, 94, 16), minusB(84, 94, 6), ...[0, 1, 2, 3].map((i) => rect(70 + i * 11, 40 - i * 8, 9, 8 + i * 8, 'rgba(232,48,44,0.5)', 1, C.ink, 0.8)), cal(104, 14, 0.5), ground),
   'mark.inflationsmål': all(target(48, 56, 34), arrow(104, 22, 52, 54, C.navy, 2.4), T(96, 104, '2%', 18, C.ink)),
   'mark.prisstabilitet': all(chart(10, 14, 100, 60, [0.5, 0.52, 0.5, 0.53, 0.51, 0.52], C.green), ptag(60, 94, 1.2), check(100, 94, 0.9), greyed(line('M18 66 L30 26 L42 62 L54 22', C.grey, 1.4))),
   'mark.deflation': all(...[0, 1, 2].map((i) => tag(24 + i * 34, 30 + i * 14, 0.9 - i * 0.2, '#c8e8b8')), arrow(90, 30, 106, 62, C.green, 2), greyed(shop(30, 92, 0.6)), mini(80, 96, C.orange, 'flat', 0.7), hourglass(104, 94, 0.8), ground),
-  'mark.penningpolitik': all(cbank(36, 52, 1.2), circle(92, 60, 18, C.white, C.ink, 1.6), line('M92 60 L104 50', HL, 3), T(92, 92, '%', 14, C.ink), arrow(78, 30, 106, 30, C.grey, 1.4), ground),
+  'mark.penningpolitik': all(cbank(30, 50, 1.0), dial(86, 40, 22, 30), T(86, 54, '%', 12, C.ink), arrow(86, 62, 86, 74, HL, 1.8), ptag(86, 92, 1.0), line('M64 92 L68 92 M104 92 L108 92', C.green, 2), ground),
   'mark.åtstramning': all(govt(30, 40, 0.8), bag$(80, 70, 2.4), line('M66 44 L94 44', RED, 3), arrow(58, 30, 70, 42, RED, 1.8), arrow(102, 30, 90, 42, RED, 1.8), greyed(coins(26, 104, 3, 5))),
 };
