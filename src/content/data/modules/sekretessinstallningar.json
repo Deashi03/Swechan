@@ -1,0 +1,175 @@
+{
+ "id": "m.sekretessinstallningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Sekretessinställningar",
+ "titleJa": "プライバシー{設定|せってい}",
+ "descriptionSv": "Sekretessinställningar: sekretessinställning, inställning, synlig, dölja, främling, snoka, privatliv, integritet, personuppgift, spåra, behörighet, användarvillkor, godkänna, samtycke, skydda och hemlighålla.",
+ "descriptionJa": "プライバシー{設定|せってい}：プライバシー{設定|せってい}、{設定|せってい}、{見|み}える、{隠|かく}す、{見知|みし}らぬ{人|ひと}、のぞき{見|み}する、{私生活|しせいかつ}、プライバシー、{個人情報|こじんじょうほう}、{追跡|ついせき}する、アクセス{許可|きょか}、{利用規約|りようきやく}、{承認|しょうにん}する、{同意|どうい}、{守|まも}る、{秘密|ひみつ}にする。",
+ "categoryId": "R03-A06-T03",
+ "tags": [
+  "sociala medier",
+  "medier",
+  "internet",
+  "integritet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.digitala-konflikter"
+ ],
+ "related": [],
+ "recommendedOrder": 1827,
+ "words": [
+  {
+   "senseId": "s.sekretessinställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inställning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.synlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dölja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.främling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snoka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.privatliv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.integritet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spåra.3",
+   "active": true
+  },
+  {
+   "senseId": "s.behörighet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.användarvillkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samtycke.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skydda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemlighålla.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem ser dina bilder?",
+  "paragraphs": [
+   "Anna är fjorton år och har just börjat använda en app för bilder. Hennes pappa Johan frågar om hon har tittat på sina sekretessinställningar. Det har hon inte.",
+   "De går in under inställningar tillsammans. Där ser de att hela hennes profil är synlig för alla. – Vem som helst kan se dina bilder, säger Johan. Även främlingar som vill snoka i ditt privatliv. Anna ändrar så att bara hennes vänner kan se profilen. Hon döljer också sitt efternamn och sin skola.",
+   "Sedan ser de att appen spårar var Anna är hela tiden. Den har också behörighet att använda mikrofonen. Anna förstår inte varför en app för bilder behöver det, så hon stänger av det.",
+   "Johan berättar att appar ofta samlar personuppgifter och ibland säljer dem till andra företag. Det står i användarvillkoren, som Anna godkände utan att läsa. – Man ger sitt samtycke utan att veta vad man säger ja till, säger han.",
+   "Anna tycker inte att hon behöver hemlighålla allt. Men hon vill skydda sin integritet. – Nu vet jag i alla fall vem som ser mina bilder, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem kunde se Annas profil i början?",
+    "options": [
+     "Bara hennes familj",
+     "Bara hennes vänner",
+     "Alla",
+     "Ingen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Där ser de att hela hennes profil är synlig för alla.",
+    "explanationJa": "{最初|さいしょ}は{誰|だれ}でも{見|み}られました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad döljer Anna på sin profil?",
+    "options": [
+     "Sitt efternamn och sin skola",
+     "Sina bilder från semestern",
+     "Sin ålder och sitt telefonnummer",
+     "Namnet på sin pappa"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon döljer också sitt efternamn och sin skola.",
+    "explanationJa": "{名字|みょうじ}と{学校|がっこう}を{隠|かく}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Anna låter appen använda mikrofonen.",
+    "correct": false,
+    "explanationSv": "Anna förstår inte varför en app för bilder behöver det, så hon stänger av det.",
+    "explanationJa": "アンナはマイクの{許可|きょか}をオフにしました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför visste Anna inte vad appen gjorde med hennes uppgifter?",
+    "options": [
+     "Appen var på engelska",
+     "Hennes pappa sa inget",
+     "Hon godkände användarvillkoren utan att läsa dem",
+     "Hon hade glömt sin mobil hemma"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det står i användarvillkoren, som Anna godkände utan att läsa.",
+    "explanationJa": "{利用規約|りようきやく}を{読|よ}まずに{同意|どうい}したからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anna vill att främlingar inte ska kunna se hennes bilder.",
+    "correct": true,
+    "explanationSv": "Anna ändrar så att bara hennes vänner kan se profilen.",
+    "explanationJa": "{友達|ともだち}だけが{見|み}られるように{変|か}えました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sekretessinställningar, personuppgifter och integritet på nätet.",
+  "discussionPoints": [
+   "Har du kollat dina sekretessinställningar? Vad såg du?",
+   "Läser du användarvillkoren innan du godkänner dem?",
+   "Vilka personuppgifter vill du dölja på nätet?",
+   "Hur kan man skydda sitt privatliv när man använder sociala medier?"
+  ]
+ }
+}

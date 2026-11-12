@@ -1,0 +1,173 @@
+{
+ "id": "m.publicering-och-rattelse",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Publicering och rättelse",
+ "titleJa": "{掲載|けいさい}と{訂正|ていせい}",
+ "descriptionSv": "Publicering och rättelse: publicera, publicering, uppdatera, faktafel, tryckfel, felaktig, korrekt, påpeka, rättelse, rätta, korrigera, förtydligande, beklaga, be om ursäkt, avpublicera och i efterhand.",
+ "descriptionJa": "{掲載|けいさい}と{訂正|ていせい}：{掲載|けいさい}する、{掲載|けいさい}、{更新|こうしん}する、{事実|じじつ}の{誤|あやま}り、{誤植|ごしょく}、{間違|まちが}った、{正確|せいかく}な、{指摘|してき}する、{訂正|ていせい}、{直|なお}す、{修正|しゅうせい}する、{補足説明|ほそくせつめい}、お{詫|わ}びする、{謝|あやま}る、{記事|きじ}を{取|と}り{下|さ}げる、あとになって。",
+ "categoryId": "R03-A06-T01",
+ "tags": [
+  "medier",
+  "nyheter"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.nyhetsintervju"
+ ],
+ "related": [],
+ "recommendedOrder": 1806,
+ "words": [
+  {
+   "senseId": "s.publicera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.publicering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppdatera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.faktafel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felaktig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korrekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påpeka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korrigera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förtydligande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.beklaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.be-om-ursäkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avpublicera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-efterhand.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett fel i tidningen",
+  "paragraphs": [
+   "Klockan sju på morgonen publicerar lokaltidningen en artikel om den nya simhallen. Enligt texten kostar den 400 miljoner kronor. Efter publiceringen läser tusentals personer artikeln på nätet.",
+   "Vid niotiden ringer en man från kommunen till redaktionen. Han påpekar att artikeln har ett faktafel: simhallen kostar 40 miljoner, inte 400. Det var inget tryckfel, utan reportern hade läst fel i en rapport. Uppgiften var helt enkelt felaktig.",
+   "Redaktören kontrollerar och ser att mannen har rätt. Hon rättar siffran och uppdaterar artikeln direkt. Längst ner skriver hon en rättelse: Först stod det i texten att simhallen kostar 400 miljoner kronor. Den korrekta siffran är 40 miljoner. Vi beklagar felet.",
+   "En läsare frågar på nätet om tidningen inte borde avpublicera hela artikeln. – Nej, säger chefredaktören. Vi har korrigerat felet och berättat öppet om det. Det är bättre än att låtsas att artikeln aldrig fanns.",
+   "I efterhand pratar redaktionen om vad som gick fel. Reportern ber om ursäkt. Nästa dag publicerar tidningen också ett förtydligande om var pengarna till simhallen kommer ifrån, eftersom många läsare hade missförstått det."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad var fel i artikeln?",
+    "options": [
+     "Var simhallen ligger",
+     "Vem som byggde simhallen",
+     "Hur mycket simhallen kostar",
+     "När simhallen öppnar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han påpekar att artikeln har ett faktafel: simhallen kostar 40 miljoner, inte 400.",
+    "explanationJa": "プールの{費用|ひよう}が{間違|まちが}っていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blev siffran fel?",
+    "options": [
+     "Tryckeriet gjorde ett misstag",
+     "Kommunen ljög",
+     "Reportern hade läst fel i en rapport",
+     "Redaktören ändrade texten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det var inget tryckfel, utan reportern hade läst fel i en rapport.",
+    "explanationJa": "レポーターが{報告書|ほうこくしょ}を{読|よ}み{間違|まちが}えたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör chefredaktören hellre än att avpublicera artikeln?",
+    "options": [
+     "Tar bort artikeln utan att säga något",
+     "Skriver en ny artikel om en annan sak",
+     "Ringer mannen från kommunen",
+     "Korrigerar felet och berättar öppet om det"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Vi har korrigerat felet och berättat öppet om det.",
+    "explanationJa": "{記事|きじ}を{消|け}すのではなく、{訂正|ていせい}して{公|おおやけ}に{伝|つた}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Rättelsen står längst ner i artikeln.",
+    "correct": true,
+    "explanationSv": "Längst ner skriver hon en rättelse …",
+    "explanationJa": "{訂正|ていせい}は{記事|きじ}のいちばん{下|した}に{書|か}かれています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Förtydligandet handlar om samma fel som rättelsen.",
+    "correct": false,
+    "explanationSv": "… ett förtydligande om var pengarna till simhallen kommer ifrån, eftersom många läsare hade missförstått det.",
+    "explanationJa": "{補足説明|ほそくせつめい}は、お{金|かね}の{出所|でどころ}についての{別|べつ}の{内容|ないよう}です。"
+   }
+  ],
+  "factSources": [
+   "Påhittad händelse; allmän beskrivning av hur svenska redaktioner gör rättelser."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fel i medierna och om hur man rättar dem.",
+  "discussionPoints": [
+   "Har du hittat ett fel i en tidning eller på en nyhetssajt?",
+   "Varför är det viktigt att en tidning skriver en rättelse?",
+   "Ska en tidning få avpublicera en artikel? När?",
+   "Är det lätt eller svårt för dig att be om ursäkt när du har gjort fel?"
+  ]
+ }
+}

@@ -73,6 +73,18 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.vara-skriven.1', 's.befolkning.1', 's.utflyttning.2', 's.ursprungsland.2',
   // 0.34 (Civilsamhälle), after two blind-test rounds
   's.välgörenhet.1',
+  // 0.35 (Nyhetsmedier), after two blind-test rounds
+  's.sensation.1',
+  // 0.35 (Källkritik), after two blind-test rounds
+  's.värdeladdad.1', 's.faktagranskning.1', 's.myt.1', 's.ensidig.1', 's.vinkla.1', 's.framställa.1', 's.tendens.1',
+  // 0.35 (Sociala medier), after two blind-test rounds
+  's.trend.1', 's.sprida-sig.1',
+  // 0.35 (Reklam & påverkan), after two blind-test rounds
+  's.image.1',
+  // 0.35 (Yttrandefrihet & medierätt), after two blind-test rounds
+  's.inskränkning.1', 's.åsiktsfrihet.1', 's.pressfrihet.1', 's.ensamansvar.1', 's.upphovsrätt.1', 's.förtal.1', 's.förtala.1', 's.nedsättande.1', 's.kränkande.1',
+  // 0.35 (Debatt & opinion), after two blind-test rounds
+  's.ledarskribent.1', 's.argumentation.1', 's.ta-debatten.1', 's.saklighet.1', 's.polariserad.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

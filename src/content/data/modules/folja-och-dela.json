@@ -1,0 +1,174 @@
+{
+ "id": "m.folja-och-dela",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Följa och dela",
+ "titleJa": "フォローとシェア",
+ "descriptionSv": "Följa och dela: följa, följare, dela, profil, profilbild, vänförfrågan, acceptera, lägga till, ignorera, ömsesidig, skicka vidare, privatmeddelande, notis, hålla koll på, dela med sig av och nätverk.",
+ "descriptionJa": "フォローとシェア：フォローする、フォロワー、シェアする、プロフィール、プロフィール{写真|しゃしん}、{友達|ともだち}リクエスト、{受|う}け{入|い}れる、{追加|ついか}する、{無視|むし}する、{互|たが}いの、{転送|てんそう}する、ダイレクトメッセージ、{通知|つうち}、{把握|はあく}しておく、{分|わ}け{与|あた}える、{人|ひと}のつながり。",
+ "categoryId": "R03-A06-T03",
+ "tags": [
+  "sociala medier",
+  "medier",
+  "internet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.inlagg-och-kommentarer"
+ ],
+ "related": [],
+ "recommendedOrder": 1822,
+ "words": [
+  {
+   "senseId": "s.följa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.följare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela.2",
+   "active": true
+  },
+  {
+   "senseId": "s.profil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.profilbild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vänförfrågan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.acceptera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-till.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ignorera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ömsesidig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skicka-vidare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.privatmeddelande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.notis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hålla-koll-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-med-sig-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätverk.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Nya vänner på nätet",
+  "paragraphs": [
+   "Erik har flyttat till Umeå för att plugga. Han känner nästan ingen i staden, så han vill bygga ett nytt nätverk.",
+   "Först byter han profilbild och skriver lite om sig själv på sin profil. Sedan börjar han följa en klubb i Umeå som spelar fotboll. Klubben följer honom tillbaka, så nu följer de varandra. Det är ömsesidigt.",
+   "En dag får Erik en vänförfrågan från en tjej i hans klass. Han accepterar den direkt. Han får också en vänförfrågan från en person som han inte känner alls. Den ignorerar han. Han lägger till två killar från klubben i stället.",
+   "Klubben delar ofta bilder från sina träningar. Erik får en notis varje gång. Han delar en bild från en match och skickar vidare ett inlägg om nästa match till sin bror. Hans bror skriver tillbaka i ett privatmeddelande: \"Ska vi gå dit?\"",
+   "Erik har nu fyrtio följare. Han tycker om att hålla koll på vad hans nya vänner gör. Men han vill inte dela med sig av allt. Vissa saker vill han bara berätta för sin familj."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför vill Erik bygga ett nytt nätverk?",
+    "options": [
+     "Han vill börja jobba på en klubb",
+     "Hans familj har flyttat",
+     "Han har tappat sin mobil",
+     "Han känner nästan ingen i Umeå"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han känner nästan ingen i staden, så han vill bygga ett nytt nätverk.",
+    "explanationJa": "ウーメオにほとんど{知|し}り{合|あ}いがいないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att Erik och klubben följer varandra ömsesidigt?",
+    "options": [
+     "Bara klubben följer Erik",
+     "Bara Erik följer klubben",
+     "De följer båda varandra",
+     "De har slutat följa varandra"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Klubben följer honom tillbaka, så nu följer de varandra. Det är ömsesidigt.",
+    "explanationJa": "お{互|たが}いにフォローし{合|あ}っているという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Erik accepterade vänförfrågan från personen som han inte kände.",
+    "correct": false,
+    "explanationSv": "Han får också en vänförfrågan från en person som han inte känner alls. Den ignorerar han.",
+    "explanationJa": "{知|し}らない{人|ひと}からのリクエストは{無視|むし}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad gör Erik med inlägget om nästa match?",
+    "options": [
+     "Han raderar det",
+     "Han skickar vidare det till sin bror",
+     "Han skriver ut det",
+     "Han gillar det inte"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… skickar vidare ett inlägg om nästa match till sin bror.",
+    "explanationJa": "{弟|おとうと}（{兄|あに}）に{転送|てんそう}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik vill inte visa allt om sitt liv på nätet.",
+    "correct": true,
+    "explanationSv": "Men han vill inte dela med sig av allt.",
+    "explanationJa": "すべてをネットで{見|み}せたいわけではありません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vem ni följer och vad ni delar på nätet.",
+  "discussionPoints": [
+   "Vilka följer du på sociala medier?",
+   "Accepterar du vänförfrågningar från personer som du inte känner?",
+   "Vad delar du gärna med dig av, och vad delar du aldrig?",
+   "Hur håller du koll på vad dina vänner gör?"
+  ]
+ }
+}

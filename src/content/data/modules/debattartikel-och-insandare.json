@@ -1,0 +1,178 @@
+{
+ "id": "m.debattartikel-och-insandare",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Debattartikel och insändare",
+ "titleJa": "{意見|いけん}{記事|きじ}と{投書|とうしょ}",
+ "descriptionSv": "Debattartikel och insändare: debattartikel, insändare, skribent, debattsida, ledare, ledarskribent, krönika, krönikör, debattör, skribent, läsare, tycka till, publicera, refusera, anonym, replik, väcka debatt och uppmana.",
+ "descriptionJa": "{意見|いけん}{記事|きじ}と{投書|とうしょ}：{意見|いけん}{記事|きじ}、{投書|とうしょ}、{書|か}き{手|て}、オピニオン{欄|らん}、{社説|しゃせつ}、{論説委員|ろんせついいん}、コラム、コラムニスト、{論客|ろんきゃく}、{読者|どくしゃ}、{意見|いけん}を{言|い}う、{掲載|けいさい}する、{不採用|ふさいよう}にする、{匿名|とくめい}の、{反論|はんろん}{記事|きじ}、{議論|ぎろん}を{呼|よ}ぶ、{呼|よ}びかける。",
+ "categoryId": "R03-A06-T05",
+ "tags": [
+  "medier",
+  "debatt",
+  "åsikter"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.konsumentpaverkan"
+ ],
+ "related": [],
+ "recommendedOrder": 1841,
+ "words": [
+  {
+   "senseId": "s.debattartikel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insändare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skribent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.debattsida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledare.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ledarskribent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.krönika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krönikör.1",
+   "active": false
+  },
+  {
+   "senseId": "s.debattör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tycka-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.publicera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.refusera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.anonym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.replik.2",
+   "active": true
+  },
+  {
+   "senseId": "s.väcka-debatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppmana.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Insändaren om biblioteket",
+  "paragraphs": [
+   "Kommunen vill stänga biblioteket i Brobyn för att spara pengar. Ingrid, 72 år, blir arg när hon läser om det i lokaltidningen. Hon bestämmer sig för att tycka till och skriver en insändare.",
+   "Först skriver hon två sidor, men tidningen refuserar texten. En redaktör förklarar att en insändare ska vara kort, högst 2 000 tecken. Ingrid stryker hälften och skickar in texten igen. Nu publicerar tidningen den på debattsidan. Hon skriver under med sitt eget namn, för hon vill inte vara anonym.",
+   "Insändaren väcker debatt. Många läsare håller med Ingrid. En lärare skriver en längre debattartikel om hur viktigt biblioteket är för barnen. Skribenten uppmanar politikerna att tänka om.",
+   "Kommunalrådet svarar med en replik. Han skriver att kommunen måste spara och att böcker också finns på nätet. Några dagar senare skriver tidningen om saken i en ledare. Ledarskribenten tycker att kommunen borde spara på något annat.",
+   "Till och med tidningens krönikör skriver om saken. I sin krönika berättar hon med humor om när hon lånade sin första bok i Brobyn. Ingrid läser allt och ler. Hon har blivit en lokal debattör."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför skriver Ingrid en insändare?",
+    "options": [
+     "Hon vill sälja böcker",
+     "Tidningen ber henne skriva",
+     "Kommunen vill stänga biblioteket",
+     "Biblioteket ska få nya böcker"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Kommunen vill stänga biblioteket i Brobyn för att spara pengar.",
+    "explanationJa": "{市|し}が{図書館|としょかん}を{閉|し}めようとしているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför refuserar tidningen hennes första text?",
+    "options": [
+     "Den är för lång",
+     "Den är anonym",
+     "Den innehåller fel",
+     "Den handlar om fel kommun"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En redaktör förklarar att en insändare ska vara kort, högst 2 000 tecken.",
+    "explanationJa": "{原稿|げんこう}が{長|なが}すぎたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vem skriver en replik?",
+    "options": [
+     "Läraren",
+     "Krönikören",
+     "Ingrid",
+     "Kommunalrådet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Kommunalrådet svarar med en replik.",
+    "explanationJa": "{市|し}の{幹部|かんぶ}{議員|ぎいん}が{反論|はんろん}{記事|きじ}を{書|か}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ingrid skriver under insändaren med sitt eget namn.",
+    "correct": true,
+    "explanationSv": "Hon skriver under med sitt eget namn, för hon vill inte vara anonym.",
+    "explanationJa": "{匿名|とくめい}ではなく、{自分|じぶん}の{名前|なまえ}で{署名|しょめい}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ledarskribenten håller med kommunalrådet.",
+    "correct": false,
+    "explanationSv": "Ledarskribenten tycker att kommunen borde spara på något annat.",
+    "explanationJa": "{論説委員|ろんせついいん}は{別|べつ}のところで{節約|せつやく}すべきだと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Brobyn, biblioteket och personerna är påhittade. Längden 2 000 tecken är ett typiskt exempel; varje tidning har egna regler."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om insändare, debattartiklar och krönikor.",
+  "discussionPoints": [
+   "Läser du debattsidan eller insändare i någon tidning?",
+   "Om du skrev en insändare, vad skulle den handla om?",
+   "Är det bättre att skriva under med sitt namn eller att vara anonym?",
+   "Vad är skillnaden mellan en krönika och en nyhetsartikel?"
+  ]
+ }
+}

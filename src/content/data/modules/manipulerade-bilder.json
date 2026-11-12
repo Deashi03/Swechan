@@ -1,0 +1,170 @@
+{
+ "id": "m.manipulerade-bilder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Manipulerade bilder",
+ "titleJa": "{加工|かこう}された{画像|がぞう}",
+ "descriptionSv": "Manipulerade bilder: manipulera, detalj, fotomontage, omvänd bildsökning, förfalska, bildtext, äkta, beskära, rycka ur sitt sammanhang, AI-genererad, deepfake, skärmdump, förfalskning, retuschera och äkthet.",
+ "descriptionJa": "{加工|かこう}された{画像|がぞう}：{不正|ふせい}に{加工|かこう}する、{細部|さいぶ}、{合成写真|ごうせいしゃしん}、{画像|がぞう}による{逆検索|ぎゃくけんさく}、{偽造|ぎぞう}する、キャプション、{本物|ほんもの}の、トリミングする、{文脈|ぶんみゃく}から{切|き}り{離|はな}す、AIで{生成|せいせい}された、ディープフェイク、スクリーンショット、{偽物|にせもの}、{修正|しゅうせい}する、{本物|ほんもの}であること。",
+ "categoryId": "R03-A06-T02",
+ "tags": [
+  "medier",
+  "källkritik",
+  "bilder"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.desinformation-och-rykten"
+ ],
+ "related": [],
+ "recommendedOrder": 1816,
+ "words": [
+  {
+   "senseId": "s.manipulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.detalj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotomontage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvänd-bildsökning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förfalska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bildtext.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äkta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beskära.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rycka-ur-sitt-sammanhang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ai-genererad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deepfake.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärmdump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förfalskning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.retuschera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.äkthet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Fisken på gatan",
+  "paragraphs": [
+   "Olle visar en bild för sitt barnbarn Maja. På bilden simmar en jättestor fisk på en gata i Göteborg efter ett kraftigt regn. – Titta, den är från i går! säger han. Bilden har fått stor spridning.",
+   "Maja tittar noga på detaljerna. Fisken är skarp, men vattnet runt den ser suddigt ut, och skuggorna går åt olika håll. – Jag tror att bilden är manipulerad, säger hon. Det ser ut som ett fotomontage av två olika foton.",
+   "Hon gör en omvänd bildsökning. Den visar att samma fisk har funnits på nätet i tio år, i olika städer. Någon har alltså förfalskat bilden. – Men det står ju i bildtexten att den är från i går, säger Olle. – Bildtexten kan vara lika falsk som bilden, svarar Maja.",
+   "Maja berättar att även en äkta bild kan vilseleda. Om man beskär en bild, kan viktiga delar försvinna. En bild kan också vara ryckt ur sitt sammanhang: den är verklig, men den är från en annan plats eller en annan tid.",
+   "I dag finns det dessutom AI-genererade bilder och deepfakes, filmer där kända personer säger saker som de aldrig har sagt. Även en skärmdump kan vara en förfalskning. Bilder i reklam är ofta retuscherade, men det är inte samma sak som desinformation. – Det blir svårare och svårare att veta något om äktheten i en bild, säger Maja. Men man kan alltid fråga sig var bilden kommer ifrån."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar bilden som Olle har fått?",
+    "options": [
+     "Ett regn vid havet",
+     "En bil i vattnet",
+     "En stor fisk på en gata",
+     "Ett barn som simmar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På bilden simmar en jättestor fisk på en gata i Göteborg …",
+    "explanationJa": "{道路|どうろ}を{泳|およ}ぐ{大|おお}きな{魚|さかな}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad ser Maja när hon tittar noga på detaljerna?",
+    "options": [
+     "Fisken är mycket liten",
+     "Skuggorna går åt olika håll",
+     "Bilden är svart och vit",
+     "Det finns ingen bildtext"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… vattnet runt den ser suddigt ut, och skuggorna går åt olika håll.",
+    "explanationJa": "{影|かげ}の{向|む}きがばらばらです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad visar den omvända bildsökningen?",
+    "options": [
+     "Att bilden är från i går",
+     "Att fisken har funnits på nätet i tio år",
+     "Att Olle har tagit bilden",
+     "Att bilden är äkta"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den visar att samma fisk har funnits på nätet i tio år, i olika städer.",
+    "explanationJa": "{同|おな}じ{魚|さかな}の{画像|がぞう}が10{年|ねん}{前|まえ}からネットにあったことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Maja menar att en äkta bild aldrig kan vilseleda.",
+    "correct": false,
+    "explanationSv": "Maja berättar att även en äkta bild kan vilseleda.",
+    "explanationJa": "{本物|ほんもの}の{写真|しゃしん}でも{誤解|ごかい}を{招|まね}くことがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Maja tycker att man alltid kan fråga sig var en bild kommer ifrån.",
+    "correct": true,
+    "explanationSv": "Men man kan alltid fråga sig var bilden kommer ifrån.",
+    "explanationJa": "そのとおりです。"
+   }
+  ],
+  "factSources": [
+   "Bilden och personerna är påhittade. Liknande falska bilder av hajar och andra fiskar på gator har spridits många gånger på nätet."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bilder som kan vara manipulerade.",
+  "discussionPoints": [
+   "Har du sett en bild som visade sig vara falsk?",
+   "Hur kan man se om en bild är manipulerad?",
+   "Är det okej att retuschera bilder i reklam?",
+   "Varför kan deepfakes vara farliga?"
+  ]
+ }
+}

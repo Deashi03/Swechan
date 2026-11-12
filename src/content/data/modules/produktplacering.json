@@ -1,0 +1,177 @@
+{
+ "id": "m.produktplacering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Produktplacering",
+ "titleJa": "プロダクトプレイスメント",
+ "descriptionSv": "Produktplacering: serie, långfilm, programledare, rekvisita, i bild, synlig, produktplacering, kändis, influencer, kommersiell, provexemplar, i samarbete med, smygreklam, reklammärkning, gråzon, marknadsföringslagen och Konsumentverket.",
+ "descriptionJa": "プロダクトプレイスメント：ドラマシリーズ、{長編映画|ちょうへんえいが}、{司会者|しかいしゃ}、{小道具|こどうぐ}、{画面|がめん}に{映|うつ}って、{目|め}に{見|み}える、プロダクトプレイスメント、{有名人|ゆうめいじん}、インフルエンサー、{商業的|しょうぎょうてき}な、サンプル{品|ひん}、〜とのタイアップで、ステルスマーケティング、{広告|こうこく}{表示|ひょうじ}、グレーゾーン、マーケティング{法|ほう}、スウェーデン{消費者庁|しょうひしゃちょう}。",
+ "categoryId": "R03-A06-T04",
+ "tags": [
+  "medier",
+  "reklam"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.sponsring"
+ ],
+ "related": [],
+ "recommendedOrder": 1836,
+ "words": [
+  {
+   "senseId": "s.serie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långfilm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.programledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rekvisita.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-bild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.produktplacering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kändis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.influencer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kommersiell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.provexemplar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-samarbete-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smygreklam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reklammärkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gråzon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.marknadsföringslagen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konsumentverket.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Reklam utan reklampaus",
+  "paragraphs": [
+   "Johan och hans syster Lina tittar på en ny långfilm. Mannen i filmen kör samma sorts bil i hela filmen, och märket är i bild flera gånger. – Det där är produktplacering, säger Lina. Biltillverkaren har betalat för att bilen ska synas.",
+   "Det finns produktplacering i serier och program också. I ett matprogram på en kommersiell kanal använder programledaren alltid samma köksmaskin. All rekvisita i köket kommer från samma företag. I början och i slutet av programmet står det att programmet innehåller produktplacering.",
+   "Lina följer en influencer som visar kläder och smink. Ofta har influencern fått ett provexemplar gratis. Då ska det stå tydligt att det är reklam. Ibland står det bara ”i samarbete med” längst ner, och det är inte tillräckligt. Enligt marknadsföringslagen måste reklam ha en tydlig reklammärkning.",
+   "Johan undrar om det alltid är lätt att se vad som är reklam. – Nej, säger Lina. Om en kändis bara råkar ha en viss väska på sig, är det en gråzon. Men om ett företag har betalat för det, och det inte syns, är det smygreklam. Det är förbjudet i Sverige.",
+   "Konsumentverket kontrollerar att företag och influencers följer reglerna. Lina har en gång anmält ett inlägg utan reklammärkning. Efter några veckor stod det ”reklam” högst upp, så att det blev synligt för alla."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "usage",
+    "promptSv": "Varför syns bilen så mycket i filmen?",
+    "options": [
+     "Biltillverkaren har betalat för att bilen ska synas",
+     "Mannen i filmen tycker om bilar",
+     "Bilen var billig att hyra",
+     "Filmen handlar om bilar"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Biltillverkaren har betalat för att bilen ska synas.",
+    "explanationJa": "{車|くるま}のメーカーがお{金|かね}を{払|はら}ったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad står det i början och i slutet av matprogrammet?",
+    "options": [
+     "Att programmet är reklamfritt",
+     "Vad maten kostar",
+     "Att programmet innehåller produktplacering",
+     "Vem som är programledare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I början och i slutet av programmet står det att programmet innehåller produktplacering.",
+    "explanationJa": "プロダクトプレイスメントがあることが{示|しめ}されます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varför räcker det inte att skriva ”i samarbete med” längst ner?",
+    "options": [
+     "Reklam måste ha en tydlig reklammärkning",
+     "Det är för långt",
+     "Influencern har inte fått något",
+     "Det står på engelska"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Enligt marknadsföringslagen måste reklam ha en tydlig reklammärkning.",
+    "explanationJa": "{広告|こうこく}ははっきり{表示|ひょうじ}されなければならないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Smygreklam är tillåten i Sverige.",
+    "correct": false,
+    "explanationSv": "… är det smygreklam. Det är förbjudet i Sverige.",
+    "explanationJa": "スウェーデンでは{禁止|きんし}されています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Inlägget som Lina anmälde fick reklammärkning efteråt.",
+    "correct": true,
+    "explanationSv": "Efter några veckor stod det ”reklam” högst upp …",
+    "explanationJa": "{数週間後|すうしゅうかんご}、「{広告|こうこく}」と{表示|ひょうじ}されました。"
+   }
+  ],
+  "factSources": [
+   "Radio- och tv-lagen: program med produktplacering ska identifieras i början och slutet; marknadsföringslagen och Konsumentverkets vägledning om reklamidentifiering (smygreklam förbjuden, ”reklam” tydligt och tidigt). Personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om reklam som gömmer sig i filmer, serier och sociala medier.",
+  "discussionPoints": [
+   "Har du lagt märke till produktplacering i en film eller en serie?",
+   "Tycker du att det är lätt att se vad som är reklam på nätet?",
+   "Ska influencers få visa saker som de har fått gratis?",
+   "Hur är reglerna för reklam i ditt hemland?"
+  ]
+ }
+}

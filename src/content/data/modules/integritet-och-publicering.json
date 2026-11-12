@@ -1,0 +1,175 @@
+{
+ "id": "m.integritet-och-publicering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Integritet och publicering",
+ "titleJa": "プライバシーと{報道|ほうどう}",
+ "descriptionSv": "Integritet och publicering: integritet, privatliv, offentlig person, kändis, skvallerpress, allmänintresse, namnpublicering, misstänkt, utpeka, identifiera, pixla, brottsoffer, anhörig, hänsyn, samtycke och lämna ut.",
+ "descriptionJa": "プライバシーと{報道|ほうどう}：プライバシー、{私生活|しせいかつ}、{公人|こうじん}、{有名人|ゆうめいじん}、ゴシップ{誌|し}、{公共|こうきょう}の{関心|かんしん}、{実名報道|じつめいほうどう}、{容疑|ようぎ}をかけられた、{名指|なざ}しする、{特定|とくてい}する、モザイクをかける、{犯罪被害者|はんざいひがいしゃ}、{家族|かぞく}、{配慮|はいりょ}、{同意|どうい}、{開示|かいじ}する。",
+ "categoryId": "R03-A06-T06",
+ "tags": [
+  "medier",
+  "juridik",
+  "integritet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.upphovsratt-i-medier"
+ ],
+ "related": [],
+ "recommendedOrder": 1855,
+ "words": [
+  {
+   "senseId": "s.integritet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.privatliv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.offentlig-person.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kändis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skvallerpress.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allmänintresse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.namnpublicering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.misstänkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utpeka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.identifiera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pixla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brottsoffer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anhörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänsyn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samtycke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-ut.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ska namnet stå i tidningen?",
+  "paragraphs": [
+   "Det har brunnit i ett hyreshus i Linköping. En man är misstänkt för att ha startat branden. På redaktionen diskuterar de namnpublicering. Reportern Lisa har fått reda på mannens namn och hittat en bild på honom.",
+   "– Vi ska inte utpeka honom, säger nyhetschefen Erik. Han är bara misstänkt, och det har inte varit någon rättegång. Om vi skriver namnet kan alla identifiera honom, och hans anhöriga kan också drabbas. Vi måste visa hänsyn.",
+   "Tidningen bestämmer sig för att pixla mannens ansikte och inte skriva hans namn. De vill också skydda brottsoffren. En kvinna som bodde i huset vill berätta vad hon har varit med om, och hon ger sitt samtycke till att tidningen använder hennes namn och bild. Men tidningen vill inte lämna ut några uppgifter om de andra som bodde i huset.",
+   "Samma vecka skriver skvallerpressen om en kändis som har blivit sjuk. Lisa tycker att det är fel. – Hon är en offentlig person, men hennes sjukdom är en del av hennes privatliv, säger hon. Det finns inget allmänintresse i det, och det kränker hennes integritet.",
+   "Erik håller med. – Om en minister gör fel i sitt jobb ska vi skriva om det. Men allt som många vill läsa om är inte av allmänintresse."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Erik inte skriva mannens namn?",
+    "options": [
+     "Mannen har bett om det",
+     "Mannen är bara misstänkt",
+     "Polisen har förbjudit det",
+     "Namnet är för långt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han är bara misstänkt, och det har inte varit någon rättegång.",
+    "explanationJa": "{男性|だんせい}は{容疑者|ようぎしゃ}にすぎないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör tidningen med bilden på mannen?",
+    "options": [
+     "Publicerar den stor på första sidan",
+     "Pixlar hans ansikte",
+     "Skickar den till polisen",
+     "Säljer den till en bildbyrå"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Tidningen bestämmer sig för att pixla mannens ansikte …",
+    "explanationJa": "{男性|だんせい}の{顔|かお}にモザイクをかけます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Kvinnan som bodde i huset vill inte att tidningen använder hennes namn.",
+    "correct": false,
+    "explanationSv": "… hon ger sitt samtycke till att tidningen använder hennes namn och bild.",
+    "explanationJa": "{彼女|かのじょ}は{名前|なまえ}と{写真|しゃしん}を{使|つか}うことに{同意|どうい}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför tycker Lisa att det är fel att skriva om kändisens sjukdom?",
+    "options": [
+     "Kändisen är inte känd nog",
+     "Det är för tråkigt",
+     "Det har inget allmänintresse och kränker hennes integritet",
+     "Kändisen bor i en annan stad"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det finns inget allmänintresse i det, och det kränker hennes integritet.",
+    "explanationJa": "{公共|こうきょう}の{関心事|かんしんじ}ではなく、プライバシーを{傷|きず}つけるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att medierna ska skriva om ministrar som gör fel i sitt jobb.",
+    "correct": true,
+    "explanationSv": "– Om en minister gör fel i sitt jobb ska vi skriva om det.",
+    "explanationJa": "{大臣|だいじん}が{仕事|しごと}で{間違|まちが}いをすれば{書|か}くべきだと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Enligt de pressetiska publicitetsreglerna ska medierna noga pröva namnpublicering som kan skada människor, visa hänsyn mot brottsoffer och anhöriga och vara varsamma med bilder (Spelregler för press, radio och tv; Medieombudsmannen, medieombudsmannen.se).",
+   "Personerna och händelserna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om integritet och om vad medierna bör publicera om människor.",
+  "discussionPoints": [
+   "Ska medierna skriva namnet på personer som är misstänkta för brott?",
+   "Vad får medierna skriva om offentliga personer, tycker du?",
+   "Läser du skvallerpress? Varför eller varför inte?",
+   "Hur skriver medierna om brott och misstänkta i ditt hemland?"
+  ]
+ }
+}

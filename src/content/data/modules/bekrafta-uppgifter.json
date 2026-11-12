@@ -1,0 +1,173 @@
+{
+ "id": "m.bekrafta-uppgifter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Bekräfta uppgifter",
+ "titleJa": "{情報|じょうほう}を{確認|かくにん}する",
+ "descriptionSv": "Bekräfta uppgifter: bekräfta, kolla upp, kontrollera, dubbelkolla, verifiera, faktagranska, faktagranskning, jämföra, stämma överens, oberoende källa, motsägelse, rimlig, korrekt, obekräftad, enligt uppgift och spåra.",
+ "descriptionJa": "{情報|じょうほう}を{確認|かくにん}する：{確認|かくにん}する、{調|しら}べる、チェックする、{再確認|さいかくにん}する、{検証|けんしょう}する、ファクトチェックする、ファクトチェック、{比|くら}べる、{一致|いっち}する、{独立|どくりつ}した{情報源|じょうほうげん}、{矛盾|むじゅん}、{妥当|だとう}な、{正確|せいかく}な、{未確認|みかくにん}の、{情報|じょうほう}によると、（{出所|でどころ}を）たどる。",
+ "categoryId": "R03-A06-T02",
+ "tags": [
+  "medier",
+  "källkritik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.fakta-och-asikt"
+ ],
+ "related": [],
+ "recommendedOrder": 1814,
+ "words": [
+  {
+   "senseId": "s.bekräfta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolla-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbelkolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verifiera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.faktagranska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.faktagranskning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stämma-överens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oberoende-källa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motsägelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rimlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korrekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obekräftad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.enligt-uppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spåra.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Är vattnet farligt?",
+  "paragraphs": [
+   "En morgon får Karin ett meddelande i grannarnas chatt: ”Drick inte vattnet i Norrby! Det är farligt.” Enligt uppgift har flera barn blivit sjuka. Karin blir orolig och vill skicka meddelandet vidare till alla hon känner.",
+   "– Vänta, säger hennes son Emil. Vi kollar upp det först. Uppgiften är obekräftad. Vem har skrivit meddelandet? Det står inget namn, och ingen vet vilka barn det handlar om.",
+   "Emil söker på kommunens webbplats. Där står det att kommunen kontrollerar vattnet varje vecka och att det går bra att dricka. Han jämför med vad tidningen i Norrby skriver. Uppgifterna stämmer överens: det är inget fel på vattnet.",
+   "Sedan försöker Emil spåra meddelandet. Han ser att samma text finns i flera städer, men med olika namn på staden. – Det är en motsägelse, säger han. Om det var sant, skulle det inte gälla tio städer samtidigt. Det verkar inte rimligt.",
+   "Till sist hittar Emil en faktagranskning på en sida med nyheter. Journalisterna har faktagranskat meddelandet och talat med två oberoende källor, en läkare och en expert på vatten. Båda bekräftar att det inte stämmer. – Man kan inte alltid verifiera allt, säger Emil, men man kan alltid dubbelkolla innan man delar något. Karin tar bort meddelandet. Hon är glad att hon fick korrekt information."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad stod det i meddelandet?",
+    "options": [
+     "Att skolan stänger",
+     "Att det blir mycket kallt",
+     "Att vattnet i Norrby är farligt",
+     "Att bussarna är sena"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "”Drick inte vattnet i Norrby! Det är farligt.”",
+    "explanationJa": "ノルビューの{水|みず}は{危険|きけん}だと{書|か}いてありました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad står det på kommunens webbplats?",
+    "options": [
+     "Att barnen är sjuka",
+     "Att man ska köpa vatten",
+     "Att det går bra att dricka vattnet",
+     "Att vattnet är stängt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Där står det att kommunen kontrollerar vattnet varje vecka och att det går bra att dricka.",
+    "explanationJa": "{水|みず}は{飲|の}んでも{大丈夫|だいじょうぶ}だと{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför tycker Emil att meddelandet inte verkar rimligt?",
+    "options": [
+     "Samma text finns i flera städer med olika namn",
+     "Meddelandet är för kort",
+     "En läkare har skrivit det",
+     "Det kom på natten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han ser att samma text finns i flera städer, men med olika namn på staden.",
+    "explanationJa": "{同|おな}じ{文章|ぶんしょう}が、{町|まち}の{名前|なまえ}だけ{変|か}えていくつもの{町|まち}で{出回|でまわ}っていたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "De två oberoende källorna bekräftar att vattnet är farligt.",
+    "correct": false,
+    "explanationSv": "Båda bekräftar att det inte stämmer.",
+    "explanationJa": "{二人|ふたり}とも、その{情報|じょうほう}は{正|ただ}しくないと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Karin skickade aldrig meddelandet vidare.",
+    "correct": true,
+    "explanationSv": "Karin tar bort meddelandet.",
+    "explanationJa": "カリンはメッセージを{削除|さくじょ}しました。"
+   }
+  ],
+  "factSources": [
+   "Meddelandet, staden i texten och personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man kontrollerar uppgifter innan man tror på dem.",
+  "discussionPoints": [
+   "Hur brukar du kolla upp en uppgift som verkar konstig?",
+   "Har du fått ett meddelande som inte var korrekt?",
+   "Vilka oberoende källor litar du på?",
+   "Varför sprids obekräftade uppgifter så snabbt?"
+  ]
+ }
+}
