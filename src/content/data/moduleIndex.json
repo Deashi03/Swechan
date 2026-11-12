@@ -51340,6 +51340,653 @@
    "bodyFile": "myndigheters-serviceskyldighet.json"
   },
   {
+   "id": "m.inkomster-och-utgifter",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-12",
+   "titleSv": "Inkomster och utgifter",
+   "titleJa": "{収入|しゅうにゅう}と{支出|ししゅつ}",
+   "descriptionSv": "Inkomster och utgifter: inkomst, utgift, hushållsekonomi, bidrag, inkomstkälla, extrainkomst, disponibel inkomst, kostnad, boendekostnad, fast utgift, rörlig utgift, räkning, spendera, lägga pengar på, levnadskostnad, gå minus, gå plus och försörjningsstöd.",
+   "descriptionJa": "{収入|しゅうにゅう}と{支出|ししゅつ}：{収入|しゅうにゅう}、{支出|ししゅつ}、{家計|かけい}、{手当|てあて}、{収入源|しゅうにゅうげん}、{副収入|ふくしゅうにゅう}、{可処分所得|かしょぶんしょとく}、{費用|ひよう}、{住居費|じゅうきょひ}、{固定費|こていひ}、{変動費|へんどうひ}、{請求書|せいきゅうしょ}、（お{金|かね}を）{使|つか}う、〜にお{金|かね}をかける、{生活費|せいかつひ}、{赤字|あかじ}になる、{黒字|くろじ}になる、{生活保護|せいかつほご}。",
+   "categoryId": "R03-A03-T01",
+   "tags": [
+    "ekonomi",
+    "privatekonomi"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.myndigheters-serviceskyldighet"
+   ],
+   "related": [],
+   "recommendedOrder": 1501,
+   "words": [
+    {
+     "senseId": "s.inkomst.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utgift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hushållsekonomi.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bidrag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.inkomstkälla.1",
+     "active": false
+    },
+    {
+     "senseId": "s.extrainkomst.1",
+     "active": true
+    },
+    {
+     "senseId": "s.disponibel-inkomst.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kostnad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.boendekostnad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fast-utgift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rörlig-utgift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.räkning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spendera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lägga-pengar-på.1",
+     "active": true
+    },
+    {
+     "senseId": "s.levnadskostnad.1",
+     "active": false
+    },
+    {
+     "senseId": "s.gå-minus.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gå-plus.1",
+     "active": true
+    },
+    {
+     "senseId": "s.försörjningsstöd.1",
+     "active": false
+    }
+   ],
+   "bodyFile": "inkomster-och-utgifter.json"
+  },
+  {
+   "id": "m.budget-och-sparande",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-12",
+   "titleSv": "Budget och sparande",
+   "titleJa": "{予算|よさん}と{貯蓄|ちょちく}",
+   "descriptionSv": "Budget och sparande: budget, hushållsbudget, budgetera, räkna på, överskott, underskott, sätta undan, sparande, sparbuffert, oförutsedd, sparmål, spara ihop, spräcka budgeten, dra ner på, hålla budgeten och engångsutgift.",
+   "descriptionJa": "{予算|よさん}と{貯蓄|ちょちく}：{予算|よさん}、{家計|かけい}の{予算|よさん}、{予算|よさん}を{立|た}てる、{費用|ひよう}を{計算|けいさん}する、{黒字|くろじ}、{赤字|あかじ}、（お{金|かね}を）{取|と}っておく、{貯蓄|ちょちく}、{緊急用|きんきゅうよう}の{貯金|ちょきん}、{予期|よき}しない、{貯金|ちょきん}の{目標|もくひょう}、お{金|かね}を{貯|た}める、{予算|よさん}をオーバーする、{減|へ}らす、{予算|よさん}を{守|まも}る、{一時的|いちじてき}な{出費|しゅっぴ}。",
+   "categoryId": "R03-A03-T01",
+   "tags": [
+    "ekonomi",
+    "privatekonomi"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.inkomster-och-utgifter"
+   ],
+   "related": [],
+   "recommendedOrder": 1502,
+   "words": [
+    {
+     "senseId": "s.budget.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hushållsbudget.1",
+     "active": true
+    },
+    {
+     "senseId": "s.budgetera.1",
+     "active": false
+    },
+    {
+     "senseId": "s.räkna-på.1",
+     "active": true
+    },
+    {
+     "senseId": "s.överskott.1",
+     "active": true
+    },
+    {
+     "senseId": "s.underskott.1",
+     "active": false
+    },
+    {
+     "senseId": "s.sätta-undan.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sparande.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sparbuffert.1",
+     "active": true
+    },
+    {
+     "senseId": "s.oförutsedd.1",
+     "active": false
+    },
+    {
+     "senseId": "s.sparmål.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spara-ihop.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spräcka-budgeten.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dra-ner-på.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hålla-budgeten.1",
+     "active": true
+    },
+    {
+     "senseId": "s.engångsutgift.1",
+     "active": false
+    }
+   ],
+   "bodyFile": "budget-och-sparande.json"
+  },
+  {
+   "id": "m.ranta-och-inflation-i-vardagen",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-12",
+   "titleSv": "Ränta och inflation i vardagen",
+   "titleJa": "{日常|にちじょう}の{金利|きんり}とインフレ",
+   "descriptionSv": "Ränta och inflation i vardagen: ränta, sparränta, låneränta, räntekostnad, ränta på ränta, inflation, prisökning, matpris, prisnivå, köpkraft, penningvärde, urholka, styrränta, räntehöjning, räntesänkning och räntefri.",
+   "descriptionJa": "{日常|にちじょう}の{金利|きんり}とインフレ：{金利|きんり}、{預金金利|よきんきんり}、ローンの{金利|きんり}、{利息|りそく}の{支払|しはら}い、{複利|ふくり}、インフレ、{値上|ねあ}がり、{食料品|しょくりょうひん}の{値段|ねだん}、{物価水準|ぶっかすいじゅん}、{購買力|こうばいりょく}、{貨幣価値|かへいかち}、{目減|めべ}りさせる、{政策金利|せいさくきんり}、{利上|りあ}げ、{利下|りさ}げ、{無利子|むりし}の。",
+   "categoryId": "R03-A03-T01",
+   "tags": [
+    "ekonomi",
+    "privatekonomi"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.budget-och-sparande"
+   ],
+   "related": [],
+   "recommendedOrder": 1503,
+   "words": [
+    {
+     "senseId": "s.ränta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sparränta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.låneränta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.räntekostnad.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ränta-på-ränta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.inflation.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prisökning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.matpris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prisnivå.1",
+     "active": true
+    },
+    {
+     "senseId": "s.köpkraft.1",
+     "active": true
+    },
+    {
+     "senseId": "s.penningvärde.1",
+     "active": false
+    },
+    {
+     "senseId": "s.urholka.1",
+     "active": false
+    },
+    {
+     "senseId": "s.styrränta.1",
+     "active": false
+    },
+    {
+     "senseId": "s.räntehöjning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.räntesänkning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.räntefri.1",
+     "active": false
+    }
+   ],
+   "bodyFile": "ranta-och-inflation-i-vardagen.json"
+  },
+  {
+   "id": "m.lan-och-amortering",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-12",
+   "titleSv": "Lån och amortering",
+   "titleJa": "ローンと{返済|へんさい}",
+   "descriptionSv": "Lån och amortering: lån, låntagare, långivare, bolån, kontantinsats, lånelöfte, kreditprövning, kreditupplysning, betalningsanmärkning, fast ränta, rörlig ränta, amortera, amortering, amorteringskrav, skuld, betala av och privatlån.",
+   "descriptionJa": "ローンと{返済|へんさい}：ローン、{借|か}り{手|て}、{貸|か}し{手|て}、{住宅|じゅうたく}ローン、{頭金|あたまきん}、{融資|ゆうし}の{事前承認|じぜんしょうにん}、{与信審査|よしんしんさ}、{信用情報|しんようじょうほう}の{照会|しょうかい}、{支払|しはら}い{遅延|ちえん}の{記録|きろく}、{固定金利|こていきんり}、{変動金利|へんどうきんり}、{少|すこ}しずつ{返済|へんさい}する、{元金返済|がんきんへんさい}、{返済義務|へんさいぎむ}、{借金|しゃっきん}、{返済|へんさい}する、{個人|こじん}ローン。",
+   "categoryId": "R03-A03-T01",
+   "tags": [
+    "ekonomi",
+    "privatekonomi"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.ranta-och-inflation-i-vardagen"
+   ],
+   "related": [],
+   "recommendedOrder": 1504,
+   "words": [
+    {
+     "senseId": "s.lån.1",
+     "active": true
+    },
+    {
+     "senseId": "s.låntagare.1",
+     "active": false
+    },
+    {
+     "senseId": "s.långivare.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bolån.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kontantinsats.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lånelöfte.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kreditprövning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kreditupplysning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.betalningsanmärkning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fast-ränta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rörlig-ränta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.amortera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.amortering.1",
+     "active": true
+    },
+    {
+     "senseId": "s.amorteringskrav.1",
+     "active": false
+    },
+    {
+     "senseId": "s.skuld.2",
+     "active": true
+    },
+    {
+     "senseId": "s.betala-av.1",
+     "active": true
+    },
+    {
+     "senseId": "s.privatlån.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "lan-och-amortering.json"
+  },
+  {
+   "id": "m.forsakringar",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-12",
+   "titleSv": "Försäkringar",
+   "titleJa": "{保険|ほけん}",
+   "descriptionSv": "Försäkringar: försäkring, försäkra, försäkringsbolag, premie, försäkringsvillkor, försäkringsskydd, hemförsäkring, drulleförsäkring, skadeanmälan, självrisk, ersättning, bilförsäkring, trafikförsäkring, halvförsäkring, helförsäkring, barnförsäkring, livförsäkring och olycksfallsförsäkring.",
+   "descriptionJa": "{保険|ほけん}：{保険|ほけん}、{保険|ほけん}をかける、{保険会社|ほけんがいしゃ}、{保険料|ほけんりょう}、{保険約款|ほけんやっかん}、{保険|ほけん}による{補償|ほしょう}、{家財保険|かざいほけん}、{破損補償|はそんほしょう}、{損害届|そんがいとどけ}、{自己負担額|じこふたんがく}、{補償|ほしょう}、{自動車保険|じどうしゃほけん}、{自賠責保険|じばいせきほけん}、{盗難|とうなん}・{火災|かさい}などの{補償|ほしょう}がつく{保険|ほけん}、{車両保険|しゃりょうほけん}{付|つ}きの{保険|ほけん}、{子|こ}どもの{保険|ほけん}、{生命保険|せいめいほけん}、{傷害保険|しょうがいほけん}。",
+   "categoryId": "R03-A03-T01",
+   "tags": [
+    "ekonomi",
+    "privatekonomi",
+    "försäkring"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.lan-och-amortering"
+   ],
+   "related": [],
+   "recommendedOrder": 1505,
+   "words": [
+    {
+     "senseId": "s.försäkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.försäkra.1",
+     "active": true
+    },
+    {
+     "senseId": "s.försäkringsbolag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.premie.1",
+     "active": true
+    },
+    {
+     "senseId": "s.försäkringsvillkor.1",
+     "active": false
+    },
+    {
+     "senseId": "s.försäkringsskydd.1",
+     "active": false
+    },
+    {
+     "senseId": "s.hemförsäkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.drulleförsäkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skadeanmälan.1",
+     "active": true
+    },
+    {
+     "senseId": "s.självrisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ersättning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bilförsäkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trafikförsäkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.halvförsäkring.1",
+     "active": false
+    },
+    {
+     "senseId": "s.helförsäkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.barnförsäkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.livförsäkring.1",
+     "active": false
+    },
+    {
+     "senseId": "s.olycksfallsförsäkring.1",
+     "active": false
+    }
+   ],
+   "bodyFile": "forsakringar.json"
+  },
+  {
+   "id": "m.skatt-pa-inkomsten",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-12",
+   "titleSv": "Skatt på inkomsten",
+   "titleJa": "{所得|しょとく}にかかる{税金|ぜいきん}",
+   "descriptionSv": "Skatt på inkomsten: skatt, inkomstskatt, kommunalskatt, statlig inkomstskatt, nettolön, bruttolön, dra skatt, skattetabell, preliminärskatt, avdrag, jobbskatteavdrag, deklaration, deklarera, skatteåterbäring, kvarskatt, skattefri, skattepliktig och svartjobb.",
+   "descriptionJa": "{所得|しょとく}にかかる{税金|ぜいきん}：{税金|ぜいきん}、{所得税|しょとくぜい}、{地方所得税|ちほうしょとくぜい}、{国|くに}の{所得税|しょとくぜい}、{手取|てど}りの{給料|きゅうりょう}、{額面給与|がくめんきゅうよ}、{税金|ぜいきん}を{天引|てんび}きする、{源泉徴収税額表|げんせんちょうしゅうぜいがくひょう}、{予定納税|よていのうぜい}、{控除|こうじょ}、{勤労所得|きんろうしょとく}の{税額控除|ぜいがくこうじょ}、{確定申告|かくていしんこく}、{申告|しんこく}する、{税金|ぜいきん}の{還付|かんぷ}、{追加納税|ついかのうぜい}、{非課税|ひかぜい}の、{課税対象|かぜいたいしょう}の、{闇|やみ}{仕事|しごと}。",
+   "categoryId": "R03-A03-T01",
+   "tags": [
+    "ekonomi",
+    "privatekonomi",
+    "skatt"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.forsakringar"
+   ],
+   "related": [],
+   "recommendedOrder": 1506,
+   "words": [
+    {
+     "senseId": "s.skatt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.inkomstskatt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kommunalskatt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.statlig-inkomstskatt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.nettolön.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bruttolön.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dra-skatt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skattetabell.1",
+     "active": false
+    },
+    {
+     "senseId": "s.preliminärskatt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.avdrag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.jobbskatteavdrag.1",
+     "active": false
+    },
+    {
+     "senseId": "s.deklaration.1",
+     "active": true
+    },
+    {
+     "senseId": "s.deklarera.2",
+     "active": true
+    },
+    {
+     "senseId": "s.skatteåterbäring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kvarskatt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.skattefri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skattepliktig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.svartjobb.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "skatt-pa-inkomsten.json"
+  },
+  {
+   "id": "m.ekonomiska-prioriteringar",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-12",
+   "titleSv": "Ekonomiska prioriteringar",
+   "titleJa": "{経済的|けいざいてき}な{優先順位|ゆうせんじゅんい}",
+   "descriptionSv": "Ekonomiska prioriteringar: prioritera, behov, nödvändighet, lyx, vardagslyx, unna sig, ha råd, ekonomiskt utrymme, avvägning, avstå, köpstopp, köpa begagnat, hushålla, konsumtion, konsumera, levnadsstandard, leva över sina tillgångar och ekonomisk trygghet.",
+   "descriptionJa": "{経済的|けいざいてき}な{優先順位|ゆうせんじゅんい}：{優先|ゆうせん}する、{必要|ひつよう}、{必需品|ひつじゅひん}、{贅沢|ぜいたく}、ささやかな{贅沢|ぜいたく}、{奮発|ふんぱつ}する、お{金|かね}の{余裕|よゆう}がある、お{金|かね}の{余裕|よゆう}、{兼|か}ね{合|あ}い、やめておく、{買|か}い{物|もの}{断|だ}ち、{中古品|ちゅうこひん}を{買|か}う、やりくりする、{消費|しょうひ}、{消費|しょうひ}する、{生活水準|せいかつすいじゅん}、{収入|しゅうにゅう}に{見合|みあ}わない{生活|せいかつ}をする、{経済的|けいざいてき}な{安心|あんしん}。",
+   "categoryId": "R03-A03-T01",
+   "tags": [
+    "ekonomi",
+    "privatekonomi"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.skatt-pa-inkomsten"
+   ],
+   "related": [],
+   "recommendedOrder": 1507,
+   "words": [
+    {
+     "senseId": "s.prioritera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.behov.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nödvändighet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lyx.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vardagslyx.1",
+     "active": true
+    },
+    {
+     "senseId": "s.unna-sig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ha-råd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ekonomiskt-utrymme.1",
+     "active": false
+    },
+    {
+     "senseId": "s.avvägning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.avstå.1",
+     "active": true
+    },
+    {
+     "senseId": "s.köpstopp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.köpa-begagnat.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hushålla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.konsumtion.1",
+     "active": false
+    },
+    {
+     "senseId": "s.konsumera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.levnadsstandard.1",
+     "active": false
+    },
+    {
+     "senseId": "s.leva-över-sina-tillgångar.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ekonomisk-trygghet.1",
+     "active": true
+    }
+   ],
+   "bodyFile": "ekonomiska-prioriteringar.json"
+  },
+  {
    "id": "m.arbetsuppgifter-och-ansvar",
    "contentVersion": 1,
    "updatedAt": "2026-11-12",
@@ -51354,7 +52001,7 @@
    ],
    "level": "B1",
    "prerequisites": [
-    "m.myndigheters-serviceskyldighet"
+    "m.ekonomiska-prioriteringar"
    ],
    "related": [],
    "recommendedOrder": 1511,

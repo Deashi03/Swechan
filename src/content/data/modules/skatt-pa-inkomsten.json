@@ -1,0 +1,184 @@
+{
+ "id": "m.skatt-pa-inkomsten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Skatt på inkomsten",
+ "titleJa": "{所得|しょとく}にかかる{税金|ぜいきん}",
+ "descriptionSv": "Skatt på inkomsten: skatt, inkomstskatt, kommunalskatt, statlig inkomstskatt, nettolön, bruttolön, dra skatt, skattetabell, preliminärskatt, avdrag, jobbskatteavdrag, deklaration, deklarera, skatteåterbäring, kvarskatt, skattefri, skattepliktig och svartjobb.",
+ "descriptionJa": "{所得|しょとく}にかかる{税金|ぜいきん}：{税金|ぜいきん}、{所得税|しょとくぜい}、{地方所得税|ちほうしょとくぜい}、{国|くに}の{所得税|しょとくぜい}、{手取|てど}りの{給料|きゅうりょう}、{額面給与|がくめんきゅうよ}、{税金|ぜいきん}を{天引|てんび}きする、{源泉徴収税額表|げんせんちょうしゅうぜいがくひょう}、{予定納税|よていのうぜい}、{控除|こうじょ}、{勤労所得|きんろうしょとく}の{税額控除|ぜいがくこうじょ}、{確定申告|かくていしんこく}、{申告|しんこく}する、{税金|ぜいきん}の{還付|かんぷ}、{追加納税|ついかのうぜい}、{非課税|ひかぜい}の、{課税対象|かぜいたいしょう}の、{闇|やみ}{仕事|しごと}。",
+ "categoryId": "R03-A03-T01",
+ "tags": [
+  "ekonomi",
+  "privatekonomi",
+  "skatt"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.forsakringar"
+ ],
+ "related": [],
+ "recommendedOrder": 1506,
+ "words": [
+  {
+   "senseId": "s.skatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inkomstskatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kommunalskatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statlig-inkomstskatt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nettolön.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bruttolön.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-skatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skattetabell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.preliminärskatt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jobbskatteavdrag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.deklaration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deklarera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skatteåterbäring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvarskatt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skattefri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skattepliktig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svartjobb.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vart tar skatten vägen?",
+  "paragraphs": [
+   "Maria har börjat jobba som undersköterska i Uppsala. Hennes bruttolön är 31 000 kronor i månaden, men på kontot kommer det bara in ungefär 24 000 kronor. Skillnaden är skatten. Nettolönen är alltså lägre än lönen i hennes avtal.",
+   "Det är arbetsgivaren som drar skatt från lönen och betalar den till Skatteverket. Hur mycket som dras står i en skattetabell, och den beror på vilken kommun man bor i. Det mesta av Marias inkomstskatt är kommunalskatt. Den går till kommunen och regionen och betalar till exempel skola och sjukvård.",
+   "Statlig inkomstskatt betalar man bara på den del av inkomsten som är över en viss gräns. Dit når Maria inte. Tack vare jobbskatteavdraget blir skatten på hennes lön också lite lägre.",
+   "Skatten som dras varje månad är en preliminärskatt. På våren deklarerar Maria. I deklarationen kan hon göra avdrag, till exempel för resor till jobbet om de är långa. Om hon har betalat för mycket skatt får hon skatteåterbäring, och om hon har betalat för lite får hon kvarskatt.",
+   "Allt är inte skattepliktigt. Barnbidraget är till exempel skattefritt. Men lön för ett extrajobb är alltid skattepliktig, även om det bara är några timmar i veckan. Den som tar svartjobb betalar ingen skatt och får inte heller pension för de pengarna."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "usage",
+    "promptSv": "Vad är skillnaden mellan Marias bruttolön och nettolön?",
+    "options": [
+     "Hyran",
+     "Pensionen",
+     "Skatten",
+     "Barnbidraget"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hennes bruttolön är 31 000 kronor i månaden, men på kontot kommer det bara in ungefär 24 000 kronor. Skillnaden är skatten.",
+    "explanationJa": "{額面|がくめん}と{手取|てど}りの{差|さ}は{税金|ぜいきん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem betalar skatten på Marias lön till Skatteverket?",
+    "options": [
+     "Maria själv",
+     "Kommunen",
+     "Arbetsgivaren",
+     "Banken"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det är arbetsgivaren som drar skatt från lönen och betalar den till Skatteverket.",
+    "explanationJa": "{雇用主|こようぬし}が{税金|ぜいきん}を{天引|てんび}きして{納|おさ}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "När får man kvarskatt?",
+    "options": [
+     "När man har betalat för mycket skatt",
+     "När man deklarerar tidigt",
+     "När man får barnbidrag",
+     "När man har betalat för lite skatt under året"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… och om hon har betalat för lite får hon kvarskatt.",
+    "explanationJa": "{税金|ぜいきん}の{支払|しはら}いが{足|た}りなかったときです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Maria betalar statlig inkomstskatt.",
+    "correct": false,
+    "explanationSv": "Statlig inkomstskatt betalar man bara på den del av inkomsten som är över en viss gräns. Dit når Maria inte.",
+    "explanationJa": "マリアの{収入|しゅうにゅう}は{境目|さかいめ}より{低|ひく}いので{払|はら}いません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den som tar svartjobb kan få lägre pension.",
+    "correct": true,
+    "explanationSv": "Den som tar svartjobb betalar ingen skatt och får inte heller pension för de pengarna.",
+    "explanationJa": "{闇|やみ}{仕事|しごと}の{収入|しゅうにゅう}は{年金|ねんきん}につながりません。"
+   }
+  ],
+  "factSources": [
+   "Skatteverket: kommunalskatt, statlig inkomstskatt, skattetabeller, jobbskatteavdrag, deklaration, skatteåterbäring och kvarskatt",
+   "Inkomstskattelagen (1999:1229)",
+   "Försäkringskassan: barnbidraget är skattefritt"
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om skatt på lön och om deklarationen.",
+  "discussionPoints": [
+   "Hur mycket skatt betalar man på lön i ditt hemland, ungefär?",
+   "Tycker du att det är bra att arbetsgivaren drar skatten?",
+   "Har du deklarerat i Sverige? Hur gick det?",
+   "Varför är svartjobb ett problem för både personen och samhället?"
+  ]
+ }
+}
