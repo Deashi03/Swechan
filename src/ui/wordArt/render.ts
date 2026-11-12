@@ -94,6 +94,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'drag.': () => import('./traits').then((m) => m.TRAIT_MOTIFS),
   'väl.': () => import('./wellbeing').then((m) => m.WELL_MOTIFS),
   'växa.': () => import('./growth').then((m) => m.GROWTH_MOTIFS),
+  'stud.': () => import('./studySkills').then((m) => m.STUDY_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
