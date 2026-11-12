@@ -41,6 +41,14 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.rättegång.1', 's.yrkande.2', 's.yrka.1', 's.åtalsplikt.1', 's.åtal.1', 's.stämning.1', 's.yttra-sig.1', 's.överklagande.1', 's.frikänna.1', 's.fria.2',
   // 0.31 (Civilrätt, Förvaltning), after two blind-test rounds
   's.sakliga-skäl.1', 's.handlägga.1', 's.ansökan.1', 's.sekretessbelagd.1', 's.sekretessmarkering.1', 's.sekretess.1', 's.konfidentiell.1', 's.serviceskyldighet.1', 's.service.2', 's.vägledning.1',
+  // 0.32 (Privatekonomi, Arbetsplatsens vardag, Jobbsökande), after two blind-test rounds
+  's.inflation.1', 's.räntekostnad.1', 's.låneränta.1', 's.inkomstskatt.1', 's.skattepliktig.1', 's.hushålla.1', 's.ha-hand-om.1', 's.tjänstledighet.1', 's.kränkande-särbehandling.1', 's.befattning.1',
+  // 0.32 (Företagande), after two blind-test rounds
+  's.F-skatt.1', 's.vinst.1', 's.förlust.1', 's.marknadsföring.1', 's.bolag.1',
+  // 0.32 (Marknadsekonomi), after two blind-test rounds
+  's.stiga.1', 's.konkurrent.1', 's.sektor.1', 's.effektivisera.1', 's.arbetsmarknad.1', 's.finanspolitik.1', 's.penningpolitik.1',
+  // 0.32 (Banker & investeringar), after two blind-test rounds
+  's.obligation.1', 's.sprida-riskerna.1', 's.riskspridning.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

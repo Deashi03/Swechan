@@ -1,0 +1,183 @@
+{
+ "id": "m.inkomster-och-utgifter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Inkomster och utgifter",
+ "titleJa": "{収入|しゅうにゅう}と{支出|ししゅつ}",
+ "descriptionSv": "Inkomster och utgifter: inkomst, utgift, hushållsekonomi, bidrag, inkomstkälla, extrainkomst, disponibel inkomst, kostnad, boendekostnad, fast utgift, rörlig utgift, räkning, spendera, lägga pengar på, levnadskostnad, gå minus, gå plus och försörjningsstöd.",
+ "descriptionJa": "{収入|しゅうにゅう}と{支出|ししゅつ}：{収入|しゅうにゅう}、{支出|ししゅつ}、{家計|かけい}、{手当|てあて}、{収入源|しゅうにゅうげん}、{副収入|ふくしゅうにゅう}、{可処分所得|かしょぶんしょとく}、{費用|ひよう}、{住居費|じゅうきょひ}、{固定費|こていひ}、{変動費|へんどうひ}、{請求書|せいきゅうしょ}、（お{金|かね}を）{使|つか}う、〜にお{金|かね}をかける、{生活費|せいかつひ}、{赤字|あかじ}になる、{黒字|くろじ}になる、{生活保護|せいかつほご}。",
+ "categoryId": "R03-A03-T01",
+ "tags": [
+  "ekonomi",
+  "privatekonomi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.myndigheters-serviceskyldighet"
+ ],
+ "related": [],
+ "recommendedOrder": 1501,
+ "words": [
+  {
+   "senseId": "s.inkomst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hushållsekonomi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bidrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inkomstkälla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.extrainkomst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.disponibel-inkomst.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boendekostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fast-utgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörlig-utgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spendera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-pengar-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.levnadskostnad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gå-minus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-plus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försörjningsstöd.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Var tar pengarna vägen?",
+  "paragraphs": [
+   "Sara och Mats har två barn och bor i en lägenhet i Örebro. De vill få bättre koll på sin hushållsekonomi. En kväll sätter de sig vid köksbordet och skriver upp alla inkomster och utgifter.",
+   "Familjens viktigaste inkomstkälla är lönerna. De får också barnbidrag, som är ett bidrag till alla barnfamiljer. Ibland har Mats en extrainkomst när han jobbar extra i en butik på helgen. När de har betalat skatten har familjen en disponibel inkomst på ungefär 45 000 kronor i månaden.",
+   "Sedan går de igenom utgifterna. På Konsumentverkets webbplats ser de vad olika kostnader brukar vara för en familj med två barn. Boendekostnaden, alltså hyra och el, är den största fasta utgiften. Andra fasta utgifter är försäkringar, telefon och busskort. Mat, kläder och fritid är rörliga utgifter.",
+   "Där ser de att de spenderar mer än de trodde. De lägger pengar på mat som de köper på vägen hem nästan varje dag. Levnadskostnaderna har ökat, och de senaste månaderna har familjen gått minus. Räkningarna har de betalat, men de har tagit av pengarna som de hade sparat.",
+   "– Om vi handlar mat en gång i veckan och skriver en lista kan vi gå plus igen, säger Sara. Mats har en kollega som förlorade jobbet och fick försörjningsstöd från kommunen en tid. – Det är bra att stödet finns, säger Mats. Men jag vill gärna ha lite pengar sparade, så att vi klarar oss om något händer."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är familjens viktigaste inkomstkälla?",
+    "options": [
+     "Lönerna",
+     "Barnbidraget",
+     "Butiken",
+     "Försörjningsstödet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Familjens viktigaste inkomstkälla är lönerna.",
+    "explanationJa": "{一番|いちばん}{大切|たいせつ}な{収入源|しゅうにゅうげん}は{二人|ふたり}の{給料|きゅうりょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vilken av de här är en rörlig utgift för familjen?",
+    "options": [
+     "Kläder",
+     "Hyran",
+     "Busskortet",
+     "Telefonen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mat, kläder och fritid är rörliga utgifter.",
+    "explanationJa": "{食費|しょくひ}、{衣服|いふく}、{娯楽|ごらく}が{変動費|へんどうひ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför har familjen gått minus de senaste månaderna?",
+    "options": [
+     "De har slutat betala räkningarna",
+     "De spenderar mer än de trodde och kostnaderna har ökat",
+     "Mats har förlorat jobbet",
+     "Hyran har blivit dubbelt så hög"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De lägger mycket pengar på mat … Levnadskostnaderna har ökat, och de senaste månaderna har familjen gått minus.",
+    "explanationJa": "{思|おも}ったよりお{金|かね}を{使|つか}っていて、{生活費|せいかつひ}も{上|あ}がったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Familjen har slutat betala sina räkningar.",
+    "correct": false,
+    "explanationSv": "Räkningarna har de betalat, men de har tagit av pengarna som de hade sparat.",
+    "explanationJa": "{請求書|せいきゅうしょ}は{払|はら}っていますが、{貯金|ちょきん}を{使|つか}いました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara tror att det hjälper att planera hur de handlar mat.",
+    "correct": true,
+    "explanationSv": "– Om vi handlar mat en gång i veckan och skriver en lista kan vi gå plus igen, säger Sara.",
+    "explanationJa": "{週|しゅう}に{一回|いっかい}、リストを{作|つく}って{買|か}い{物|もの}をすれば{黒字|くろじ}に{戻|もど}れると{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Konsumentverket: hushållets kostnader och råd om hushållsekonomi",
+   "Socialtjänstlagen och Socialstyrelsen: försörjningsstöd söks hos kommunens socialtjänst",
+   "Försäkringskassan: barnbidrag betalas ut för alla barn"
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om inkomster och utgifter i ett hushåll.",
+  "discussionPoints": [
+   "Vilka fasta utgifter har man i ett vanligt hushåll i Sverige?",
+   "Vad lägger du mest pengar på varje månad?",
+   "Vad kan man göra om man går minus flera månader i rad?",
+   "Är det vanligt att ha en extrainkomst i ditt land?"
+  ]
+ }
+}

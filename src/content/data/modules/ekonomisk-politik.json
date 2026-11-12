@@ -1,0 +1,183 @@
+{
+ "id": "m.ekonomisk-politik",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Ekonomisk politik",
+ "titleJa": "{経済政策|けいざいせいさく}",
+ "descriptionSv": "Ekonomisk politik: ekonomisk politik, finanspolitik, finansminister, statsbudget, skattesänkning, subvention, stimulera, budgetunderskott, statsskuld, åtstramning, penningpolitik, Riksbanken, styrränta, inflation, inflationsmål, prisstabilitet, deflation och räntehöjning.",
+ "descriptionJa": "{経済政策|けいざいせいさく}：{経済政策|けいざいせいさく}、{財政政策|ざいせいせいさく}、{財務大臣|ざいむだいじん}、{国家予算|こっかよさん}、{減税|げんぜい}、{補助金|ほじょきん}、{刺激|しげき}する、{財政赤字|ざいせいあかじ}、{国|くに}の{借金|しゃっきん}、{緊縮|きんしゅく}、{金融政策|きんゆうせいさく}、スウェーデン{中央銀行|ちゅうおうぎんこう}、{政策金利|せいさくきんり}、インフレ、インフレ{目標|もくひょう}、{物価|ぶっか}の{安定|あんてい}、デフレ、{利上|りあ}げ。",
+ "categoryId": "R03-A03-T05",
+ "tags": [
+  "ekonomi",
+  "politik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.handel-och-import"
+ ],
+ "related": [],
+ "recommendedOrder": 1547,
+ "words": [
+  {
+   "senseId": "s.ekonomisk-politik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.finanspolitik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.finansminister.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statsbudget.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skattesänkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.subvention.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stimulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.budgetunderskott.1",
+   "active": false
+  },
+  {
+   "senseId": "s.statsskuld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Riksbanken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styrränta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inflation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inflationsmål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prisstabilitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.deflation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.räntehöjning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.penningpolitik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åtstramning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem styr ekonomin?",
+  "paragraphs": [
+   "Den ekonomiska politiken i Sverige har två delar: finanspolitik och penningpolitik. Finanspolitiken bestäms av regeringen och riksdagen. Penningpolitiken bestäms av Riksbanken.",
+   "Finanspolitiken handlar om statens pengar. Varje höst lämnar finansministern ett förslag till statsbudget. Där står hur mycket staten ska få in i skatt och vad pengarna ska användas till. I en lågkonjunktur kan regeringen stimulera ekonomin, till exempel med skattesänkningar eller subventioner. Då kan det bli ett budgetunderskott, och statsskulden växer.",
+   "Efter krisen i början av 1990-talet hade Sverige en mycket stor statsskuld. Då kom flera år av åtstramningar, och riksdagen bestämde regler för att statens budget inte ska få stora underskott år efter år.",
+   "Penningpolitiken handlar om att hålla priserna stabila. Riksbanken är självständig, vilket betyder att regeringen inte får bestämma över den. Riksbanken har ett inflationsmål på två procent. Om inflationen blir mycket högre än målet gör Riksbanken en räntehöjning, alltså höjer styrräntan. Då blir det dyrare att låna, människor köper mindre och priserna stiger långsammare.",
+   "Om priserna i stället börjar sjunka kan det bli deflation, vilket också är dåligt för ekonomin. Då kan Riksbanken sänka styrräntan. Målet är prisstabilitet: att pengarna ska vara ungefär lika mycket värda nästa år som i år."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem bestämmer penningpolitiken i Sverige?",
+    "options": [
+     "Riksbanken",
+     "Regeringen",
+     "Riksdagen",
+     "Finansministern"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Penningpolitiken bestäms av Riksbanken.",
+    "explanationJa": "{中央銀行|ちゅうおうぎんこう}が{決|き}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har Riksbanken för inflationsmål?",
+    "options": [
+     "Noll procent",
+     "Fem procent",
+     "Tio procent",
+     "Två procent"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Riksbanken har ett inflationsmål på två procent.",
+    "explanationJa": "2パーセントです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför höjer Riksbanken styrräntan när inflationen är hög?",
+    "options": [
+     "För att staten ska få mer skatt",
+     "För att statsskulden ska bli större",
+     "För att det ska bli lättare att låna",
+     "För att människor ska köpa mindre och priserna stiga långsammare"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Då blir det dyrare att låna, människor köper mindre och priserna stiger långsammare.",
+    "explanationJa": "{借|か}りるのが{高|たか}くなり、{物価|ぶっか}の{上昇|じょうしょう}がゆっくりになるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Regeringen får bestämma vad Riksbanken ska göra med räntan.",
+    "correct": false,
+    "explanationSv": "Riksbanken är självständig, vilket betyder att regeringen inte får bestämma över den.",
+    "explanationJa": "{中央銀行|ちゅうおうぎんこう}は{独立|どくりつ}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Skattesänkningar i en lågkonjunktur kan göra att statsskulden växer.",
+    "correct": true,
+    "explanationSv": "Då kan det bli ett budgetunderskott, och statsskulden växer.",
+    "explanationJa": "{財政赤字|ざいせいあかじ}になり、{借金|しゃっきん}が{増|ふ}えることがあります。"
+   }
+  ],
+  "factSources": [
+   "Riksbanken: inflationsmålet två procent (KPIF), styrräntan och Riksbankens självständighet enligt riksbankslagen (2022:1568).",
+   "Regeringen och Finansdepartementet: statsbudgeten och det finanspolitiska ramverket.",
+   "Riksgälden: Sveriges statsskuld."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ekonomisk politik och om vad staten och Riksbanken gör.",
+  "discussionPoints": [
+   "Vad tycker du att staten ska göra i en lågkonjunktur?",
+   "Vad skulle du vilja att staten subventionerar mer?",
+   "Varför tror du att det är bra att Riksbanken är självständig?",
+   "Hur märker du av inflationen eller en räntehöjning i din vardag?"
+  ]
+ }
+}

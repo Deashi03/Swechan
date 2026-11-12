@@ -1,0 +1,179 @@
+{
+ "id": "m.anstallningsavtal",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Anställningsavtal",
+ "titleJa": "{雇用契約|こようけいやく}",
+ "descriptionSv": "Anställningsavtal: anställningsavtal, arbetsgivare, arbetstagare, avtala, villkor, skriftlig, muntlig, bindande, tillträdesdag, tillträda, arbetsort, kollektivavtal, fackförening, konkurrensklausul, sekretessavtal, exemplar och skriva under.",
+ "descriptionJa": "{雇用契約|こようけいやく}：{雇用契約|こようけいやく}、{雇用主|こようぬし}、{労働者|ろうどうしゃ}、{取|と}り{決|き}める、{条件|じょうけん}、{書面|しょめん}の、{口頭|こうとう}の、{拘束力|こうそくりょく}のある、{勤務開始日|きんむかいしび}、{就任|しゅうにん}する、{勤務地|きんむち}、{労働協約|ろうどうきょうやく}、{労働組合|ろうどうくみあい}、{競業避止条項|きょうぎょうひしじょうこう}、{秘密保持契約|ひみつほじけいやく}、{部|ぶ}・{通|つう}、{署名|しょめい}する。",
+ "categoryId": "R03-A03-T03",
+ "tags": [
+  "arbete",
+  "anställning",
+  "avtal"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.anstallningsformer"
+ ],
+ "related": [],
+ "recommendedOrder": 1525,
+ "words": [
+  {
+   "senseId": "s.anställningsavtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetsgivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetstagare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avtala.1",
+   "active": true
+  },
+  {
+   "senseId": "s.villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriftlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.muntlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bindande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillträdesdag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tillträda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.arbetsort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kollektivavtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fackförening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konkurrensklausul.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sekretessavtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exemplar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriva-under.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Avtalet",
+  "paragraphs": [
+   "Lina har fått jobbet i Malmö. Innan hon börjar ska hon och företaget skriva ett anställningsavtal. Där står vad arbetsgivaren och arbetstagaren har avtalat om.",
+   "Avtalet behöver inte vara skriftligt. Ett muntligt avtal är också bindande. Men det är svårt att visa vad man har sagt, och enligt lagen ska arbetsgivaren ge den anställda skriftlig information om de viktigaste villkoren senast sju dagar efter att anställningen har börjat.",
+   "I Linas avtal står hennes befattning, lön och hur många timmar hon ska arbeta i veckan. Där står också anställningsformen: en provanställning på sex månader. Hennes tillträdesdag är den första maj, och arbetsort är Malmö. Hon ska alltså tillträda sin tjänst om tre veckor.",
+   "Företaget har kollektivavtal. Det betyder att en fackförening och arbetsgivarna har kommit överens om till exempel lön, semester och försäkringar. Lina funderar på att bli medlem i facket.",
+   "Avtalet har ingen konkurrensklausul, men Lina måste skriva under ett sekretessavtal om företagets kunder. Hon läser allt noga och frågar om det hon inte förstår. Sedan skriver hon under. Avtalet finns i två exemplar: ett till Lina och ett till företaget."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Är ett muntligt anställningsavtal bindande?",
+    "options": [
+     "Nej, aldrig",
+     "Bara om det finns en fackförening",
+     "Ja, men det är svårt att visa vad man har sagt",
+     "Bara för tjänstemän"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett muntligt avtal är också bindande. Men det är svårt att visa vad man har sagt …",
+    "explanationJa": "{口頭|こうとう}の{契約|けいやく}も{有効|ゆうこう}ですが、{証明|しょうめい}するのが{難|むずか}しいです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När är Linas tillträdesdag?",
+    "options": [
+     "Om sju dagar",
+     "Den första maj",
+     "Om sex månader",
+     "Den första mars"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hennes tillträdesdag är den första maj …",
+    "explanationJa": "5{月|がつ}1{日|にち}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att avtalet finns i två exemplar?",
+    "options": [
+     "Det finns två olika avtal",
+     "Avtalet gäller i två år",
+     "Det finns två likadana avtal, ett till var",
+     "Två personer har skrivit avtalet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Avtalet finns i två exemplar: ett till Lina och ett till företaget.",
+    "explanationJa": "{同|おな}じ{契約書|けいやくしょ}が2{通|つう}あり、{双方|そうほう}が1{通|つう}ずつ{持|も}ちます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lina måste skriva under en konkurrensklausul.",
+    "correct": false,
+    "explanationSv": "Avtalet har ingen konkurrensklausul, men Lina måste skriva under ett sekretessavtal …",
+    "explanationJa": "{競業避止条項|きょうぎょうひしじょうこう}はありませんが、{秘密保持契約|ひみつほじけいやく}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "I ett kollektivavtal kan det stå något om lön.",
+    "correct": true,
+    "explanationSv": "… en fackförening och arbetsgivarna har kommit överens om till exempel lön, semester och försäkringar.",
+    "explanationJa": "{労働協約|ろうどうきょうやく}には{給料|きゅうりょう}についても{書|か}かれています。"
+   }
+  ],
+  "factSources": [
+   "Lagen (1982:80) om anställningsskydd 6 c §: arbetsgivaren ska lämna skriftlig information om de villkor som gäller för anställningen (bland annat arbetsplats, befattning, tillträdesdag, anställningsform, lön och arbetstid) senast sju dagar efter att anställningen påbörjats. Ett muntligt avtal är också bindande (avtalslagen 1915:218).",
+   "Konkurrensklausuler kan jämkas eller ogiltigförklaras om de är oskäliga (avtalslagen 36 och 38 §§). Kollektivavtal sluts mellan fackförbund och arbetsgivarorganisationer; medlemskap i facket är frivilligt (Medlingsinstitutet, mi.se)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad som ska stå i ett anställningsavtal.",
+  "discussionPoints": [
+   "Vad är det viktigaste att läsa i ett anställningsavtal?",
+   "Har du någon gång skrivit under ett avtal som du inte förstod helt?",
+   "Är det vanligt med kollektivavtal och fackföreningar i ditt land?",
+   "Vad tycker du om konkurrensklausuler?"
+  ]
+ }
+}

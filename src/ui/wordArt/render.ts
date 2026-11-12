@@ -8,6 +8,12 @@ import { WORD_MOTIFS } from './motifs';
  */
 type Motifs = Record<string, string>;
 const GROUPS: Record<string, () => Promise<Motifs>> = {
+  'arbp.': () => import('./workplace').then((m) => m.WORKPLACE_MOTIFS),
+  'jobb.': () => import('./jobSearch').then((m) => m.JOB_SEARCH_MOTIFS),
+  'pek.': () => import('./privateEconomy').then((m) => m.PRIVATE_ECONOMY_MOTIFS),
+  'ftg.': () => import('./business').then((m) => m.BUSINESS_MOTIFS),
+  'mark.': () => import('./marketEconomy').then((m) => m.MARKET_ECONOMY_MOTIFS),
+  'bank.': () => import('./banking').then((m) => m.BANKING_MOTIFS),
   'rgrund.': () => import('./lawBasics').then((m) => m.LAW_BASICS_MOTIFS),
   'brott.': () => import('./crime').then((m) => m.CRIME_MOTIFS),
   'polis.': () => import('./police').then((m) => m.POLICE_MOTIFS),
