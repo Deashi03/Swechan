@@ -104769,14 +104769,6 @@
    "quiz": true
   },
   {
-   "senseId": "s.myndighet.1",
-   "kind": "illustration",
-   "motif": "offb.myndighet",
-   "group": "stadshus",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.myndighetskontor.1",
    "kind": "illustration",
    "motif": "offb.myndighetskontor",
@@ -104857,7 +104849,12 @@
    "motif": "offb.vårdplats",
    "group": "sjukhus",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.34.0",
+    "hash": "7d4544fe"
+   }
   },
   {
    "senseId": "s.besökstid.1",
@@ -105271,6 +105268,550 @@
    "motif": "offb.förvaringsskåp",
    "group": "besök",
    "quiz": true
+  },
+  {
+   "senseId": "s.torg.1",
+   "kind": "illustration",
+   "motif": "stad.torg",
+   "group": "torg",
+   "quiz": false
+  },
+  {
+   "senseId": "s.affärsgata.1",
+   "kind": "illustration",
+   "motif": "stad.affärsgata",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.marknadsstånd.1",
+   "kind": "illustration",
+   "motif": "stad.marknadsstånd",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fontän.1",
+   "kind": "illustration",
+   "motif": "stad.fontän",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.staty.1",
+   "kind": "illustration",
+   "motif": "stad.staty",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.duva.1",
+   "kind": "illustration",
+   "motif": "stad.duva",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.uteservering.1",
+   "kind": "illustration",
+   "motif": "stad.uteservering",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gatumusikant.1",
+   "kind": "illustration",
+   "motif": "stad.gatumusikant",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kullersten.1",
+   "kind": "illustration",
+   "motif": "stad.kullersten",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.folkliv.1",
+   "kind": "illustration",
+   "motif": "stad.folkliv",
+   "group": "torg",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.folkmassa.1",
+   "kind": "illustration",
+   "motif": "stad.folkmassa",
+   "group": "torg",
+   "quiz": true
+  },
+  {
+   "senseId": "s.flanera.1",
+   "kind": "illustration",
+   "motif": "stad.flanera",
+   "group": "torg",
+   "quiz": false
+  },
+  {
+   "senseId": "s.bostadsområde.1",
+   "kind": "illustration",
+   "motif": "stad.bostadsområde",
+   "group": "bostadsområde",
+   "quiz": false
+  },
+  {
+   "senseId": "s.flerfamiljshus.1",
+   "kind": "illustration",
+   "motif": "stad.flerfamiljshus",
+   "group": "bostadsområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.villaområde.1",
+   "kind": "illustration",
+   "motif": "stad.villaområde",
+   "group": "bostadsområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.granne.1",
+   "kind": "illustration",
+   "motif": "stad.granne",
+   "group": "bostadsområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.grannskap.1",
+   "kind": "illustration",
+   "motif": "stad.grannskap",
+   "group": "bostadsområde",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.närbutik.1",
+   "kind": "illustration",
+   "motif": "stad.närbutik",
+   "group": "bostadsområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bilfri.1",
+   "kind": "illustration",
+   "motif": "stad.bilfri",
+   "group": "bostadsområde",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.lummig.1",
+   "kind": "illustration",
+   "motif": "stad.lummig",
+   "group": "bostadsområde",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.park.1",
+   "kind": "illustration",
+   "motif": "stad.park",
+   "group": "park",
+   "quiz": false
+  },
+  {
+   "senseId": "s.gräsmatta.1",
+   "kind": "illustration",
+   "motif": "stad.gräsmatta",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.damm.2",
+   "kind": "illustration",
+   "motif": "stad.damm.2",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.rabatt.2",
+   "kind": "illustration",
+   "motif": "stad.rabatt.2",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.parkbänk.1",
+   "kind": "illustration",
+   "motif": "stad.parkbänk",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gunga.1",
+   "kind": "illustration",
+   "motif": "stad.gunga",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.rutschkana.1",
+   "kind": "illustration",
+   "motif": "stad.rutschkana",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sandlåda.1",
+   "kind": "illustration",
+   "motif": "stad.sandlåda",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.klätterställning.1",
+   "kind": "illustration",
+   "motif": "stad.klätterställning",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gungbräda.1",
+   "kind": "illustration",
+   "motif": "stad.gungbräda",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.plaskdamm.1",
+   "kind": "illustration",
+   "motif": "stad.plaskdamm",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hundrastgård.1",
+   "kind": "illustration",
+   "motif": "stad.hundrastgård",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.koppel.1",
+   "kind": "illustration",
+   "motif": "stad.koppel",
+   "group": "park",
+   "quiz": true
+  },
+  {
+   "senseId": "s.industriområde.1",
+   "kind": "illustration",
+   "motif": "stad.industriområde",
+   "group": "industriområde",
+   "quiz": false
+  },
+  {
+   "senseId": "s.fabrik.1",
+   "kind": "illustration",
+   "motif": "stad.fabrik",
+   "group": "industriområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.arbetsplats.1",
+   "kind": "illustration",
+   "motif": "stad.arbetsplats",
+   "group": "industriområde",
+   "quiz": false
+  },
+  {
+   "senseId": "s.lastbil.1",
+   "kind": "illustration",
+   "motif": "stad.lastbil",
+   "group": "industriområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.lastkaj.1",
+   "kind": "illustration",
+   "motif": "stad.lastkaj",
+   "group": "industriområde",
+   "quiz": false
+  },
+  {
+   "senseId": "s.gaffeltruck.1",
+   "kind": "illustration",
+   "motif": "stad.gaffeltruck",
+   "group": "industriområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.container.1",
+   "kind": "illustration",
+   "motif": "stad.container",
+   "group": "industriområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hamn.1",
+   "kind": "illustration",
+   "motif": "stad.hamn",
+   "group": "industriområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.godståg.1",
+   "kind": "illustration",
+   "motif": "stad.godståg",
+   "group": "industriområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.skorsten.1",
+   "kind": "illustration",
+   "motif": "stad.skorsten",
+   "group": "industriområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.staket.1",
+   "kind": "illustration",
+   "motif": "stad.staket",
+   "group": "industriområde",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nedlagd.1",
+   "kind": "illustration",
+   "motif": "stad.nedlagd",
+   "group": "industriområde",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.centrum.1",
+   "kind": "illustration",
+   "motif": "stad.centrum",
+   "group": "centrum",
+   "quiz": false,
+   "confusableWith": [
+    "s.stadskärna.1"
+   ]
+  },
+  {
+   "senseId": "s.stadskärna.1",
+   "kind": "illustration",
+   "motif": "stad.stadskärna",
+   "group": "centrum",
+   "quiz": false,
+   "confusableWith": [
+    "s.centrum.1"
+   ]
+  },
+  {
+   "senseId": "s.stadsdel.1",
+   "kind": "illustration",
+   "motif": "stad.stadsdel",
+   "group": "centrum",
+   "quiz": false
+  },
+  {
+   "senseId": "s.utkant.1",
+   "kind": "illustration",
+   "motif": "stad.utkant",
+   "group": "centrum",
+   "quiz": false
+  },
+  {
+   "senseId": "s.stadsdelscentrum.1",
+   "kind": "illustration",
+   "motif": "stad.stadsdelscentrum",
+   "group": "centrum",
+   "quiz": false
+  },
+  {
+   "senseId": "s.tätort.1",
+   "kind": "illustration",
+   "motif": "stad.tätort",
+   "group": "centrum",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.tätbebyggd.1",
+   "kind": "illustration",
+   "motif": "stad.tätbebyggd",
+   "group": "centrum",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.sovstad.1",
+   "kind": "illustration",
+   "motif": "stad.sovstad",
+   "group": "centrum",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.miljonprogram.1",
+   "kind": "illustration",
+   "motif": "stad.miljonprogram",
+   "group": "centrum",
+   "quiz": false
+  },
+  {
+   "senseId": "s.sevärdhet.1",
+   "kind": "illustration",
+   "motif": "stad.sevärdhet",
+   "group": "sevärdhet",
+   "quiz": false
+  },
+  {
+   "senseId": "s.turistattraktion.1",
+   "kind": "illustration",
+   "motif": "stad.turistattraktion",
+   "group": "sevärdhet",
+   "quiz": false
+  },
+  {
+   "senseId": "s.guide.1",
+   "kind": "illustration",
+   "motif": "stad.guide",
+   "group": "sevärdhet",
+   "quiz": true
+  },
+  {
+   "senseId": "s.stadsvandring.1",
+   "kind": "illustration",
+   "motif": "stad.stadsvandring",
+   "group": "sevärdhet",
+   "quiz": false
+  },
+  {
+   "senseId": "s.domkyrka.1",
+   "kind": "illustration",
+   "motif": "stad.domkyrka",
+   "group": "sevärdhet",
+   "quiz": true
+  },
+  {
+   "senseId": "s.klocktorn.1",
+   "kind": "illustration",
+   "motif": "stad.klocktorn",
+   "group": "sevärdhet",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bro.1",
+   "kind": "illustration",
+   "motif": "stad.bro",
+   "group": "sevärdhet",
+   "quiz": true
+  },
+  {
+   "senseId": "s.monument.1",
+   "kind": "illustration",
+   "motif": "stad.monument",
+   "group": "sevärdhet",
+   "quiz": true
+  },
+  {
+   "senseId": "s.utsiktsplats.1",
+   "kind": "illustration",
+   "motif": "stad.utsiktsplats",
+   "group": "sevärdhet",
+   "quiz": true
+  },
+  {
+   "senseId": "s.välkänd.1",
+   "kind": "illustration",
+   "motif": "stad.välkänd",
+   "group": "sevärdhet",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.samlingsplats.1",
+   "kind": "illustration",
+   "motif": "stad.samlingsplats",
+   "group": "sevärdhet",
+   "quiz": false
+  },
+  {
+   "senseId": "s.livlig.1",
+   "kind": "illustration",
+   "motif": "stad.livlig",
+   "group": "livlig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.lugn.1",
+   "kind": "illustration",
+   "motif": "stad.lugn",
+   "group": "livlig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.trivsam.1",
+   "kind": "illustration",
+   "motif": "stad.trivsam",
+   "group": "livlig",
+   "quiz": false,
+   "confusableWith": [
+    "s.mysig.1"
+   ],
+   "symbol": true
+  },
+  {
+   "senseId": "s.välskött.1",
+   "kind": "illustration",
+   "motif": "stad.välskött",
+   "group": "livlig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.nedgången.1",
+   "kind": "illustration",
+   "motif": "stad.nedgången",
+   "group": "livlig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.mångkulturell.1",
+   "kind": "illustration",
+   "motif": "stad.mångkulturell",
+   "group": "livlig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.grönska.1",
+   "kind": "illustration",
+   "motif": "stad.grönska",
+   "group": "livlig",
+   "quiz": false
+  },
+  {
+   "senseId": "s.ha-nära-till.1",
+   "kind": "illustration",
+   "motif": "stad.ha-nära-till",
+   "group": "livlig",
+   "quiz": false,
+   "symbol": true
+  },
+  {
+   "senseId": "s.stämning.2",
+   "kind": "illustration",
+   "motif": "stad.stämning.2",
+   "group": "livlig",
+   "quiz": false,
+   "symbol": true
   }
  ]
 }

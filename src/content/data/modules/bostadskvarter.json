@@ -1,0 +1,181 @@
+{
+ "id": "m.bostadskvarter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Bostadskvarter",
+ "titleJa": "{住宅|じゅうたく}{街区|がいく}",
+ "descriptionSv": "Bostadskvarter: kvarter, bostadsområde, flerfamiljshus, hyreshus, höghus, radhus, villa, villaområde, port, trapphus, balkong, innergård, parkeringsplats, närbutik, bilfri, lummig, granne och grannskap.",
+ "descriptionJa": "{住宅|じゅうたく}{街区|がいく}：{街区|がいく}、{住宅地|じゅうたくち}、{集合住宅|しゅうごうじゅうたく}、{賃貸|ちんたい}アパート、{高層住宅|こうそうじゅうたく}、テラスハウス、{一戸建|いっこだ}て、{一戸建|いっこだ}ての{住宅地|じゅうたくち}、{門|もん}、{階段室|かいだんしつ}、バルコニー、{中庭|なかにわ}、{駐車|ちゅうしゃ}スペース、{近所|きんじょ}の{店|みせ}、{車|くるま}の{乗|の}り{入|い}れのない、{緑|みどり}の{多|おお}い、{隣人|りんじん}、{近所|きんじょ}。",
+ "categoryId": "R03-A05-T01",
+ "tags": [
+  "stad",
+  "boende"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.torg-och-gagator"
+ ],
+ "related": [],
+ "recommendedOrder": 1702,
+ "words": [
+  {
+   "senseId": "s.kvarter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bostadsområde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flerfamiljshus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyreshus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höghus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radhus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.villa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.villaområde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.port.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trapphus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.balkong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.innergård.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parkeringsplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bilfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lummig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.granne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grannskap.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Två kvarter, två liv",
+  "paragraphs": [
+   "Karin och Johan är syskon, men de bor på olika sätt. Karin bor i ett bostadsområde med flerfamiljshus från 1950-talet. Husen är hyreshus med tre eller fyra våningar, och mellan dem finns en stor innergård med träd och bänkar.",
+   "Karins lägenhet ligger på tredje våningen. När hon kommer hem öppnar hon porten med en kod och går upp genom trapphuset. Från balkongen ser hon barnen som leker på gården. Hennes granne, en äldre man, sitter ofta där och läser tidningen.",
+   "Längre bort i kvarteret står två höghus med tolv våningar. Där finns också en närbutik som har öppet till elva på kvällen. Karin har ingen bil, så det är praktiskt att allt finns i grannskapet.",
+   "Johan bor i ett villaområde utanför stan. Där finns villor och radhus med små trädgårdar, och gatorna är lummiga. Mitt i området finns en bilfri gata där barnen kan cykla. Varje familj har en egen parkeringsplats, och de flesta har två bilar.",
+   "– Hos dig är det så tyst, säger Karin när hon hälsar på. – Och hos dig händer det alltid något, svarar Johan. De är överens om en sak: det viktigaste är att man trivs med sina grannar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken sorts hus bor Karin i?",
+    "options": [
+     "Ett hyreshus med tre eller fyra våningar",
+     "En villa med trädgård",
+     "Ett radhus",
+     "Ett höghus med tolv våningar"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Husen är hyreshus med tre eller fyra våningar …",
+    "explanationJa": "カーリンは3～4{階建|かいだ}ての{賃貸|ちんたい}アパートに{住|す}んでいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur kommer Karin in i huset?",
+    "options": [
+     "Hon går genom garaget",
+     "Hon ringer på hos grannen",
+     "Hon öppnar porten med en kod",
+     "Hon går in via balkongen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När hon kommer hem öppnar hon porten med en kod …",
+    "explanationJa": "{暗証番号|あんしょうばんごう}で{玄関|げんかん}の{扉|とびら}を{開|あ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är det praktiskt för Karin att det finns en närbutik i grannskapet?",
+    "options": [
+     "Hon arbetar i butiken",
+     "Hon tycker inte om att laga mat",
+     "Butiken är billig",
+     "Hon har ingen bil"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Karin har ingen bil, så det är praktiskt att allt finns i grannskapet.",
+    "explanationJa": "{車|くるま}を{持|も}っていないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I Johans område finns en gata där bilar inte får köra.",
+    "correct": true,
+    "explanationSv": "Mitt i området finns en bilfri gata där barnen kan cykla.",
+    "explanationJa": "{車|くるま}の{入|はい}らない{通|とお}りがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Johan tycker att det är tyst och lugnt hos Karin.",
+    "correct": false,
+    "explanationSv": "– Och hos dig händer det alltid något, svarar Johan.",
+    "explanationJa": "ヨーハンは、カーリンのところではいつも{何|なに}か{起|お}きていると{言|い}います。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni berättar om kvarteret där ni bor och om era grannar.",
+  "discussionPoints": [
+   "Bor du i ett flerfamiljshus, ett radhus eller en villa?",
+   "Vad finns det i ditt kvarter?",
+   "Känner du dina grannar? Hur ofta pratar ni?",
+   "Skulle du hellre bo i ett villaområde eller nära centrum? Varför?"
+  ]
+ }
+}
