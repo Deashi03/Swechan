@@ -1,0 +1,181 @@
+{
+ "id": "m.borsens-aktorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Börsens aktörer",
+ "titleJa": "{証券取引所|しょうけんとりひきじょ}の{参加者|さんかしゃ}",
+ "descriptionSv": "Börsens aktörer: börs, börsnoterad, aktiemarknad, finansmarknad, köpare, säljare, mäklare, courtage, köpkurs, säljkurs, investerare, småsparare, institutionell investerare, fondförvaltare, analytiker, börsintroduktion och insiderhandel.",
+ "descriptionJa": "{証券取引所|しょうけんとりひきじょ}の{参加者|さんかしゃ}：{証券取引所|しょうけんとりひきじょ}、{上場|じょうじょう}している、{株式市場|かぶしきしじょう}、{金融市場|きんゆうしじょう}、{買|か}い{手|て}、{売|う}り{手|て}、{証券会社|しょうけんがいしゃ}、{売買手数料|ばいばいてすうりょう}、{買|か}い{値|ね}、{売|う}り{値|ね}、{投資家|とうしか}、{個人投資家|こじんとうしか}、{機関投資家|きかんとうしか}、ファンドマネージャー、アナリスト、{新規上場|しんきじょうじょう}、インサイダー{取引|とりひき}。",
+ "categoryId": "R03-A03-T06",
+ "tags": [
+  "ekonomi",
+  "aktier",
+  "börsen"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.diversifiering"
+ ],
+ "related": [],
+ "recommendedOrder": 1556,
+ "words": [
+  {
+   "senseId": "s.börs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.börsnoterad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.aktiemarknad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.finansmarknad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köpare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säljare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäklare.2",
+   "active": true
+  },
+  {
+   "senseId": "s.courtage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köpkurs.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säljkurs.1",
+   "active": false
+  },
+  {
+   "senseId": "s.investerare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.småsparare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.institutionell-investerare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fondförvaltare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.analytiker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.börsintroduktion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.insiderhandel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem handlar på börsen?",
+  "paragraphs": [
+   "På börsen i Stockholm köps och säljs aktier i flera hundra börsnoterade företag varje dag. Förr stod människor i ett stort rum och ropade, men i dag sker allt med datorer. Aktiemarknaden är en del av finansmarknaden, där man också handlar med obligationer och valutor.",
+   "På börsen finns det alltid köpare och säljare. Köparna lägger en köpkurs, och säljarna en säljkurs. När priserna möts blir det en affär, och då ändras aktiekursen.",
+   "Lisa är småsparare. Hon kan inte handla direkt på börsen, utan går via en mäklare på nätet. För varje köp betalar hon ett litet courtage. De största investerarna är dock inte personer som Lisa, utan institutionella investerare, till exempel pensionsfonder och försäkringsbolag.",
+   "I fonderna arbetar fondförvaltare som väljer vilka aktier fonden ska köpa. De läser rapporter från analytiker, som undersöker företagen och ger råd. Särskilt mycket intresse blir det vid en börsintroduktion, när ett nytt företag kommer till börsen.",
+   "Det finns också regler. En statlig myndighet har tillsyn över börsen. Insiderhandel är förbjudet: den som vet något hemligt om ett företag får inte köpa eller sälja aktier innan alla andra vet samma sak."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur köper Lisa aktier?",
+    "options": [
+     "Direkt på börsen",
+     "Via en mäklare på nätet",
+     "Genom att ringa företaget",
+     "På ett bankkontor varje dag"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon kan inte handla direkt på börsen, utan går via en mäklare på nätet.",
+    "explanationJa": "ネットの{証券会社|しょうけんがいしゃ}を{通|とお}して{買|か}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka är de största investerarna på börsen?",
+    "options": [
+     "Småsparare",
+     "Institutionella investerare",
+     "Analytiker",
+     "Mäklare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De största investerarna är dock inte personer som Lisa, utan institutionella investerare.",
+    "explanationJa": "{機関投資家|きかんとうしか}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör en fondförvaltare?",
+    "options": [
+     "Har tillsyn över börsen",
+     "Säljer bostäder",
+     "Bestämmer räntan",
+     "Väljer vilka aktier fonden ska köpa"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I fonderna arbetar fondförvaltare som väljer vilka aktier fonden ska köpa.",
+    "explanationJa": "ファンドがどの{株|かぶ}を{買|か}うかを{選|えら}びます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lisa betalar ingenting när hon köper aktier.",
+    "correct": false,
+    "explanationSv": "För varje köp betalar hon ett litet courtage.",
+    "explanationJa": "{買|か}うたびに{少|すこ}し{手数料|てすうりょう}を{払|はら}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är förbjudet att använda hemlig information för att handla med aktier.",
+    "correct": true,
+    "explanationSv": "Insiderhandel är förbjudet …",
+    "explanationJa": "インサイダー{取引|とりひき}は{禁止|きんし}されています。"
+   }
+  ],
+  "factSources": [
+   "Finansinspektionen har tillsyn över den svenska finansmarknaden",
+   "EU:s marknadsmissbruksförordning (MAR) och lagen om straff för marknadsmissbruk förbjuder insiderhandel",
+   "Privatpersoner handlar på börsen via en bank eller ett värdepappersbolag (mäklare), som tar ut courtage",
+   "Vid en börsintroduktion ska företaget ge ut ett prospekt som godkänns av Finansinspektionen"
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om börsen och om människorna som arbetar där.",
+  "discussionPoints": [
+   "Har du följt börsen eller köpt aktier någon gång?",
+   "Skulle du lita på en analytikers råd? Varför eller varför inte?",
+   "Varför tror du att insiderhandel är förbjudet?",
+   "Vilka företag i ditt hemland skulle du vilja vara aktieägare i?"
+  ]
+ }
+}
