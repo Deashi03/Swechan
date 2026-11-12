@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.33.0 – 2026-11-12
+
+42 nya moduler som gör överämnet *Utbildning & lärande* (R03-A04) komplett. Varje nytt modulord har en egen bild, utom de 26 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 729 målord)
+- **Svensk skola** (1601–1607): förskola och grundskola, gymnasieskolans program, lektioner och raster, lärare och skolpersonal, betyg och bedömning, stödinsatser och elevhälsa samt skolans styrdokument.
+- **Universitet & högskola** (1611–1617): universitet och fakultet, kurser och program, föreläsning och seminarium, tentamen och examination, kandidat- och masterexamen, examensarbete och studievägledning.
+- **Studieteknik** (1621–1627): planera studier, anteckna och sammanfatta, lässtrategier, minnestekniker, repetition och återkallning, förbereda ett prov och hantera studiesvårigheter.
+- **Pedagogik** (1631–1637): undervisning och lärande, kunskapsmål, förklaringar och exempel, frågor och återkoppling, grupparbete, bedömning och utvärdering samt anpassad undervisning.
+- **Forskning & akademi** (1641–1647): forskningsfrågor, hypoteser, vetenskapliga artiklar, källor och referenser, datainsamling, forskningsetik och akademisk argumentation.
+- **Utbildningssystem i världen** (1651–1657): skolstart och skolplikt, läroplaner och ämnen, prov och examina, yrkesutbildning, stipendier och utbyten, jämföra utbildningssystem och studera utomlands.
+- Varje modul har 16–19 målord, lästext med fem frågor och konversationsunderlag. Det finns 439 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`.
+- Lästexterna har faktakällor (skollagen, Skolverket, Skolinspektionen, högskoleförordningen, Universitets- och högskolerådet, Etikprövningsmyndigheten m.fl.). De nämner inga verkliga personer eller skolor.
+- Nya betydelser på befintliga poster: *rast* och *betyg* (i skolan), *utvecklingssamtal* (i skolan), *huvudman* (för en skola), *ordningsregel* (i skolan), *institution* och *nation* (vid universitet), *opposition* (granskning av uppsats), *urval* (av sökande; i en undersökning), *lägga upp* (planera), *marginal* (på papper), *innehållsförteckning* (i en bok), *gå igenom* (titta på igen), *återkalla* (i minnet), *betänketid* (tid att tänka), *pröva* (testa), *avsnitt* (del av text), *referens* och *hänvisa* (i en text), *avbryta* (sluta med något), *bemöta* (svara på kritik), *hoppa av* (en utbildning), *konkurrens* (om platser), *praktisk* (med händerna) och *erkänna* (godta officiellt).
+- Dubbletter mellan grupper slogs ihop: den tidigare modulen i katalogordningen äger posten och bilden. *termin*, *upprop*, *inriktning*, *antagning* och *underkänd* skrevs av både Svensk skola och Universitet & högskola och ägs av Svensk skola.
+- *förmåga* och *klara* hade bara funnits i grundordförrådet och har nu egna poster.
+
+### Bilder (441 nya ordbilder)
+- 230 symbolbilder, 72 bilder som får användas i bildövningar och resten scener. Två äldre ord som saknade bild (*mentor* i skolan och *ämne* som skolämne) har fått bilder.
+- 256 symbol- och adjektivbilder blindtestades. 230 klarade testet efter högst två omgångar.
+- **26 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara, bland annat *fritidshem/fritids*, *tentamen/tenta*, *examensarbete/exjobb/självständigt arbete*, *högskola/lärosäte*, *pugga/plugga in/memorera*, *forskningsfråga/frågeställning* och *respondent/deltagare*.
+- Nya bildfiler i `src/ui/wordArt/`: `school.ts`, `university.ts`, `studySkills.ts`, `pedagogy.ts`, `research.ts` och `eduWorld.ts`.
+
+### Verktyg och test
+- e2e-testets planerade exempel är *Torg och gågator* (Städer & offentlig service → Stadens platser).
+
+Service workern är `swechan-v37`.
+
 ## 0.32.0 – 2026-11-12
 
 42 nya moduler som gör överämnet *Ekonomi & arbetsliv* (R03-A03) komplett. Varje nytt modulord har en egen bild, utom de 25 ord som underkändes i två blindtestomgångar.

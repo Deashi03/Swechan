@@ -120,6 +120,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.32 – Ekonomi & arbetsliv (klar)
 - 42 nya moduler i Samhälle & institutioner → Ekonomi & arbetsliv med 475 nya ordbilder. 25 ord saknar bild efter två blindtestomgångar.
 
+## v0.33 – Utbildning & lärande (klar)
+- 42 nya moduler i Samhälle & institutioner → Utbildning & lärande med 441 nya ordbilder. 26 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

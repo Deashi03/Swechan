@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.32.0 (släppt 2026-11-12, PR #45) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.33.0 (släppt 2026-11-12) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 635 publicerade moduler. 630 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och överämnena *Politik & demokrati* (R03-A01), *Juridik & rättsväsende* (R03-A02) och *Ekonomi & arbetsliv* (R03-A03). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 677 publicerade moduler. 672 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och överämnena *Politik & demokrati* (R03-A01), *Juridik & rättsväsende* (R03-A02), *Ekonomi & arbetsliv* (R03-A03) och *Utbildning & lärande* (R03-A04). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Utbildning & lärande* (R03-A04).
+  - Nästa överämne är *Städer & offentlig service* (R03-A05).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 8 996 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 9 437 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Utbildning & lärande* (R03-A04), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Städer & offentlig service* (R03-A05), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -67,6 +67,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Marknadsekonomi: `s.stiga.1`, `s.konkurrent.1`, `s.sektor.1`, `s.effektivisera.1`, `s.arbetsmarknad.1`, `s.finanspolitik.1`, `s.penningpolitik.1`
   - Banker & investeringar: `s.obligation.1`, `s.sprida-riskerna.1`, `s.riskspridning.1`
   - *vinst* och *förlust* förväxlades med *gå med vinst*/*gå med förlust*, och *riskspridning*/*sprida riskerna* med *diversifiera*. Produktägaren kan överväga att markera dem som synonymer och testa igen.
+- **Från 0.33 (26 ord):**
+  - Svensk skola: `s.friskola.1`, `s.bedömning.1`, `s.specialpedagog.1`, `s.särskilt-stöd.1`, `s.ämnesplan.1`, `s.antagning.1`
+  - Universitet & högskola: `s.utexaminerad.1`
+  - Studieteknik: `s.förförståelse.1`, `s.visualisera.1`, `s.studiesvårighet.1`
+  - Pedagogik: `s.pedagogik.1`, `s.lärande.1`, `s.förmåga.1`, `s.respons.1`, `s.förutsättning.2`
+  - Forskning & akademi: `s.vetenskaplig.1`, `s.publikation.1`, `s.källkritisk.1`, `s.referera.1`, `s.empirisk.1`, `s.etisk.1`, `s.fabricera.1`, `s.tes.1`, `s.motargument.1`
+  - Utbildningssystem i världen: `s.skolgång.1`, `s.yrkeshögskola.1`
+  - *visualisera* förväxlades med *inre bild*, *antagning* med *urval* (av sökande), *respons* med *kamratrespons*/*återkoppling* och *bedömning* med *bedöma*. Produktägaren kan överväga synonymmarkering och ett nytt test.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -128,6 +136,22 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - arbetstidslagen (11 timmars dygnsvila, rast efter fem timmar), läkarintyg från dag 8, LAS efter 2022 (provanställning högst sex månader, skriftlig information inom sju dagar)
   - inflationsmålet 2 % (KPIF), att ungefär hälften av produktionen exporteras och att Norge och Tyskland är de största handelspartnerna
   - insättningsgarantin (ungefär en miljon kronor), riktåldern 67 år 2026, pensionsavgiften 18,5 % (16 + 2,5)
+- **0.33, svenska:**
+  - *tentamen* och *studentexamen* med pluralen *tentamina*/*studentexamina* (SAOL tillåter också *tentamen*); *studiesvårighet*, *koncentrationssvårighet*, *extra anpassning* och *ordningsregel* används mest i plural
+  - *pugga* (vardagligt, delvis regionalt), *kugga* (vardagligt, intransitivt), *återkalla* i betydelsen "i minnet" (formellt), *betänketid* i allmän betydelse, *kärnämne* (äldre term)
+  - *upprop* har bara skolbetydelsen (namnupprop); universitetets upprop vid kursstart beskrivs i texten
+  - *informerat samtycke* används bara i obestämd form; *vederlägga* böjs som grupp 4 (vederlade, vederlagt); *rankning* utan varianten *ranking*
+  - nivåer: många forsknings- och pedagogikord är satta till C1 (t.ex. *progression*, *inkludering*, *formativ bedömning*, *empirisk*, *vederlägga*); *kollegium* C1
+- **0.33, japanska:**
+  - egna återgivningar av myndigheter: *Skolverket* ({学校庁|がっこうちょう}), *Skolinspektionen* ({学校監督庁|がっこうかんとくちょう})
+  - ungefärliga motsvarigheter: *grundskola* ({基礎学校|きそがっこう}), *friskola* ({独立系|どくりつけい}の{学校|がっこう}), *förstelärare* ({主任教諭|しゅにんきょうゆ}), *utvecklingssamtal* i skolan ({三者面談|さんしゃめんだん}), *lektor* ({講師|こうし}、{准教授|じゅんきょうじゅ}), *upprop* ({出欠確認|しゅっけつかくにん}), *magister*/*master* (båda {修士号|しゅうしごう})
+  - *ramsa* ({唱|とな}え{言葉|ことば}), *lässtrategi* ({読|よ}み{方|かた}の{工夫|くふう}), *liknelse* (たとえ), *bedömningsmatris* (ルーブリック), *åka snålskjuts* (ただ{乗|の}りする), *referentgranskad* ({査読付|さどくつ}きの), *förkasta* ({棄却|ききゃく}する), *bortfall*, *tes* ({主張|しゅちょう}・テーゼ); *kulturchock* och *kulturkrock* har samma glosa
+- **0.33, fakta (kan ändras över tid):**
+  - 18 nationella program (6 högskoleförberedande och 12 yrkesprogram), APL minst 15 veckor, 2 500 gymnasiepoäng
+  - namnbytet grundsärskola → anpassad grundskola (2 juli 2023), minst fem elever för modersmålsundervisning, socialtjänstlagen från 2025 (utan paragrafnummer)
+  - högskoleprovets giltighet (8 år), studieavgifter för studenter utanför EU/EES och Schweiz, kårobligatoriet avskaffat 2010, ny examinator efter två underkända prov, sista ansökningsdag 15 april/15 oktober
+  - examensomfång (kandidat 180, magister 60, master 120, doktor 240 hp), Etikprövningsmyndigheten (lag 2003:460)
+  - utlandsfakta: skoluniform i japanska högstadier, *juku* som "kvällsskola", skolstart vid fem år i USA, tysk uppdelning efter fyra år (de flesta delstater), siffran för lärartäthet i ett exempel
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -146,10 +170,10 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v36`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v37`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Förskola och grundskola* (SWC-SAM-04-01-01) som exempel. Byt exemplet när den publiceras.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Torg och gågator* (SWC-SAM-05-01-01) som exempel. Byt exemplet när den publiceras.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.
