@@ -11,6 +11,8 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'arbp.': () => import('./workplace').then((m) => m.WORKPLACE_MOTIFS),
   'jobb.': () => import('./jobSearch').then((m) => m.JOB_SEARCH_MOTIFS),
   'pek.': () => import('./privateEconomy').then((m) => m.PRIVATE_ECONOMY_MOTIFS),
+  'uni.': () => import('./university').then((m) => m.UNIVERSITY_MOTIFS),
+  'utb.': () => import('./eduWorld').then((m) => m.EDUWORLD_MOTIFS),
   'ftg.': () => import('./business').then((m) => m.BUSINESS_MOTIFS),
   'mark.': () => import('./marketEconomy').then((m) => m.MARKET_ECONOMY_MOTIFS),
   'bank.': () => import('./banking').then((m) => m.BANKING_MOTIFS),
@@ -94,6 +96,10 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'drag.': () => import('./traits').then((m) => m.TRAIT_MOTIFS),
   'väl.': () => import('./wellbeing').then((m) => m.WELL_MOTIFS),
   'växa.': () => import('./growth').then((m) => m.GROWTH_MOTIFS),
+  'stud.': () => import('./studySkills').then((m) => m.STUDY_MOTIFS),
+  'fors.': () => import('./research').then((m) => m.RESEARCH_MOTIFS),
+  'ped.': () => import('./pedagogy').then((m) => m.PEDAGOGY_MOTIFS),
+  'skol.': () => import('./school').then((m) => m.SCHOOL_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
