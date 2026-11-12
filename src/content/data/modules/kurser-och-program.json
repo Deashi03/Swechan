@@ -1,0 +1,177 @@
+{
+ "id": "m.kurser-och-program",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Kurser och program",
+ "titleJa": "{科目|かもく}と{課程|かてい}",
+ "descriptionSv": "Kurser och program: termin, utbildningsprogram, fristående kurs, högskolepoäng, studietakt, på helfart, på halvfart, kurslitteratur, schema, upprop, registrera sig, obligatorisk, valfri, distanskurs, kursträff, sommarkurs och kursutvärdering.",
+ "descriptionJa": "{科目|かもく}と{課程|かてい}：{学期|がっき}、{課程|かてい}、{単独|たんどく}の{科目|かもく}、{大学|だいがく}の{単位|たんい}、{履修|りしゅう}ペース、フルタイムで、ハーフタイムで、{指定図書|していとしょ}、スケジュール、{出欠確認|しゅっけつかくにん}、{登録|とうろく}する、{必須|ひっす}の、{自由|じゆう}に{選|えら}べる、{通信講座|つうしんこうざ}、スクーリング、{夏期講座|かきこうざ}、{授業評価|じゅぎょうひょうか}。",
+ "categoryId": "R03-A04-T02",
+ "tags": [
+  "utbildning",
+  "universitet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.universitet-och-fakultet"
+ ],
+ "related": [],
+ "recommendedOrder": 1612,
+ "words": [
+  {
+   "senseId": "s.termin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utbildningsprogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fristående-kurs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högskolepoäng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.studietakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-helfart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-halvfart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kurslitteratur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.schema.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprop.1",
+   "active": false
+  },
+  {
+   "senseId": "s.registrera-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obligatorisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.valfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.distanskurs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kursträff.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sommarkurs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kursutvärdering.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Program eller fristående kurser?",
+  "paragraphs": [
+   "Johan och Sara bor i samma studentkorridor i Linköping, men de studerar på olika sätt. Johan går ett utbildningsprogram till ingenjör. Programmet är fem år långt, och han vet redan vilka kurser han ska läsa varje termin.",
+   "Sara läser fristående kurser. Den här terminen läser hon psykologi på helfart. Hennes kurs ger 30 högskolepoäng. Förra året läste hon två kurser på halvfart, eftersom hon också jobbade på ett kafé.",
+   "Första veckan har båda upprop. Uppropet är obligatoriskt, så man måste komma. Efter uppropet måste de också registrera sig på nätet. Sedan får de sitt schema och en lista med kurslitteratur. Johan suckar när han ser hur mycket böckerna kostar.",
+   "Sara gillar att själv bestämma vad hon ska läsa. Nästa år vill hon läsa en distanskurs i japanska med låg studietakt. Den har bara två kursträffar i Stockholm. I sommar vill hon läsa en sommarkurs i statistik.",
+   "Johans program har också valfria kurser, men först det fjärde året. – Det är bra att allt är planerat, säger han. När terminen är slut fyller båda i en kursutvärdering. Sara skriver att hon vill ha mer tid för diskussioner."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur läser Johan?",
+    "options": [
+     "Han läser fristående kurser",
+     "Han läser bara på sommaren",
+     "Han läser en distanskurs",
+     "Han går ett utbildningsprogram"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Johan går ett utbildningsprogram till ingenjör.",
+    "explanationJa": "{技師|ぎし}になるための{課程|かてい}で{学|まな}んでいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför läste Sara på halvfart förra året?",
+    "options": [
+     "Hon var sjuk",
+     "Hon bodde i Kiruna",
+     "Hon hade inget schema",
+     "Hon jobbade också"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… eftersom hon också jobbade på ett kafé.",
+    "explanationJa": "カフェでも{働|はたら}いていたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad måste man göra efter uppropet?",
+    "options": [
+     "Fylla i en kursutvärdering",
+     "Köpa en studentkorridor",
+     "Läsa en sommarkurs",
+     "Registrera sig på nätet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Efter uppropet måste de också registrera sig på nätet.",
+    "explanationJa": "インターネットで{登録|とうろく}しなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Saras distanskurs har kursträffar i Stockholm.",
+    "correct": true,
+    "explanationSv": "Den har bara två kursträffar i Stockholm.",
+    "explanationJa": "ストックホルムでのスクーリングが2{回|かい}あります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Johan kan välja alla sina kurser själv.",
+    "correct": false,
+    "explanationSv": "Johans program har också valfria kurser, men först det fjärde året.",
+    "explanationJa": "{選択科目|せんたくかもく}は4{年目|ねんめ}になってからです。"
+   }
+  ],
+  "factSources": [
+   "Högskolepoäng: 60 hp motsvarar ett läsår på heltid, 1,5 hp per heltidsvecka (högskoleförordningen 6 kap. 2 §). Kursvärderingar: högskoleförordningen 1 kap. 14 §. Civilingenjörsexamen omfattar 300 hp, alltså fem år (högskoleförordningen bilaga 2)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man kan studera på universitetet.",
+  "discussionPoints": [
+   "Vill du hellre gå ett program eller läsa fristående kurser? Varför?",
+   "Skulle du kunna läsa på helfart och jobba samtidigt?",
+   "Vad är bra och dåligt med en distanskurs?",
+   "Vad skulle du skriva i en kursutvärdering?"
+  ]
+ }
+}
