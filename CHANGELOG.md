@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.34.0 – 2026-11-12
+
+42 nya moduler som gör överämnet *Städer & offentlig service* (R03-A05) komplett. Varje nytt modulord har en egen bild, utom de __MISS__ ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 725 målord)
+- **Stadens platser** (1701–1707): torg och gågator, bostadskvarter, parker och lekplatser, industriområden, stadskärna och förort, landmärken och mötesplatser samt att beskriva en stadsdel.
+- **Offentliga byggnader** (1711–1717): stadshus och myndighetskontor, sjukhus och vårdcentraler, skolor och bibliotek, polisstation och brandstation, idrottshall och simhall, kulturhus och museum samt att besöka en offentlig byggnad.
+- **Samhällsservice** (1721–1727): sophämtning och återvinning, dricksvatten och avlopp, snöröjning och gatustädning, räddningstjänst, kollektivtrafikens ansvar, äldreomsorg och medborgarservice.
+- **Bostads- & stadsplanering** (1731–1737): detaljplan och bygglov, gator och kvarter, grönområden, trafikplanering, nybyggnation, renovering av stadsdelar och hållbar stadsutveckling.
+- **Befolkning & migration** (1741–1747): folkbokföring, befolkningsstatistik, inflyttning och utflyttning, invandring och utvandring, uppehållstillstånd, integration och språkinlärning samt medborgarskap.
+- **Civilsamhälle** (1751–1757): ideella föreningar, styrelse och stadgar, medlemskap och avgifter, volontärarbete, insamlingar och donationer, lokalt engagemang samt gemenskap och föreningsliv.
+- Varje modul har 16–19 målord, lästext med fem frågor och konversationsunderlag. Det finns 419 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`.
+- Nya betydelser på befintliga poster: *barnavdelning* (på bibliotek), *föreställning* (på teater), *damm* (liten sjö), *rabatt* (med blommor), *stämning* (atmosfär), *salta* (vägar), *inflyttning* och *utflyttning* (till och från en ort), *ursprungsland* (om personer), *anknytning* (familjeband), *utvisning* (från ett land och i sport), *kassör* (i en förening) och *motion* (förslag till årsmöte).
+- *myndighet*, *sjukhus*, *museum*, *bastu*, *befolkning*, *statistik*, *landsbygd*, *fly* och *uttal* hade bara funnits i grundordförrådet och har nu egna poster.
+- `s.förening.1` (kemi) har fått en enklare definition och ett nytt exempel, och `s.förening.2` har fått förklaring och bild.
+- Grupperna skrevs parallellt med listor över varandras ord, och inga dubbletter behövde slås ihop i efterhand. *brandslang* skrevs av både Offentliga byggnader och Samhällsservice och ägs av Offentliga byggnader.
+
+### Bilder (__IMG__ nya ordbilder)
+- __SYM__ symbolbilder, __QUIZ__ bilder som får användas i bildövningar och resten scener.
+- __TESTED__ symbol- och adjektivbilder blindtestades. __PASSED__ klarade testet efter högst två omgångar.
+- **__MISS__ ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara, bland annat *centrum/stadskärna*, *trivsam/mysig*, *folkmängd/invånarantal* och *volontärarbete/ideellt arbete*.
+- Nya bildfiler i `src/ui/wordArt/`: `cityPlaces.ts`, `publicBuildings.ts`, `publicServices.ts`, `urbanPlanning.ts`, `migration.ts` och `civilSociety.ts`.
+
+### Verktyg och test
+- e2e-testets planerade exempel är *Tidningar och nyhetsredaktioner* (Medier & samhällsdebatt → Nyhetsmedier).
+
+Service workern är `swechan-v38`.
+
 ## 0.33.0 – 2026-11-12
 
 42 nya moduler som gör överämnet *Utbildning & lärande* (R03-A04) komplett. Varje nytt modulord har en egen bild, utom de 26 ord som underkändes i två blindtestomgångar.
