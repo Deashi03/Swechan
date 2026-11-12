@@ -1,0 +1,181 @@
+{
+ "id": "m.kop-och-konsumentskydd",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Köp och konsumentskydd",
+ "titleJa": "{売買|ばいばい}と{消費者保護|しょうひしゃほご}",
+ "descriptionSv": "Köp och konsumentskydd: konsument, näringsidkare, konsumentskydd, konsumentköplagen, reklamera, reklamationsrätt, ursprungligt fel, garanti, avhjälpa, omleverans, prisavdrag, häva köpet, i befintligt skick, dolt fel, vilseledande, Konsumentverket och ARN.",
+ "descriptionJa": "{売買|ばいばい}と{消費者保護|しょうひしゃほご}：{消費者|しょうひしゃ}、{事業者|じぎょうしゃ}、{消費者保護|しょうひしゃほご}、{消費者売買法|しょうひしゃばいばいほう}、クレームを{申|もう}し{出|で}る、クレームを{申|もう}し{立|た}てる{権利|けんり}、{購入時|こうにゅうじ}からある{欠陥|けっかん}、{保証|ほしょう}、{修補|しゅうほ}する、{交換|こうかん}、{値引|ねび}き、{売買|ばいばい}{契約|けいやく}を{解除|かいじょ}する、{現状|げんじょう}のままで、{隠|かく}れた{欠陥|けっかん}、{誤解|ごかい}を{招|まね}く、スウェーデン{消費者庁|しょうひしゃちょう}、{国民|こくみん}{苦情|くじょう}{処理|しょり}{委員会|いいんかい}。",
+ "categoryId": "R03-A02-T05",
+ "tags": [
+  "juridik",
+  "köp"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.avtal-och-avtalsvillkor"
+ ],
+ "related": [],
+ "recommendedOrder": 1442,
+ "words": [
+  {
+   "senseId": "s.konsument.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näringsidkare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konsumentskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konsumentköplagen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.reklamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reklamationsrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ursprungligt-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garanti.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avhjälpa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.omleverans.1",
+   "active": false
+  },
+  {
+   "senseId": "s.prisavdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.häva-köpet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-befintligt-skick.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dolt-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vilseledande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konsumentverket.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ARN.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Diskmaskinen som slutade fungera",
+  "paragraphs": [
+   "Johan köpte en ny diskmaskin i en affär. Efter fjorton månader slutade den att fungera. Affären sa: – Tyvärr, garantin gällde bara ett år. Men Johan visste att Sverige har ett starkt konsumentskydd. När en konsument köper en vara av en näringsidkare gäller konsumentköplagen, och den ger reklamationsrätt i tre år.",
+   "Johan reklamerade diskmaskinen direkt. Eftersom felet visade sig inom två år räknas det som ett ursprungligt fel, om inte affären kan visa att Johan själv har förstört maskinen. Garantin är bara ett extra löfte från affären, och den tar inte bort det som lagen säger.",
+   "Affären måste nu avhjälpa felet, alltså laga diskmaskinen, eller göra en omleverans och ge Johan en ny maskin. Om affären inte gör något av det kan Johan få ett prisavdrag. Om felet är stort kan han till och med häva köpet och få tillbaka alla pengarna.",
+   "Johans syster Sara köpte en begagnad cykel av en privatperson på nätet. I annonsen stod det att cykeln såldes i befintligt skick. Då gäller inte konsumentköplagen, och Sara kan inte klaga på saker som hon borde ha sett. Men säljaren hade gömt ett dolt fel: ramen var trasig under färgen. För ett sådant fel kan säljaren ändå behöva betala.",
+   "Företag får inte heller använda vilseledande reklam. Konsumentverket kontrollerar att företagen följer lagen. Om en konsument och ett företag inte kommer överens kan konsumenten vända sig till ARN, som säger vad den tycker är rätt. Det kostar ingenting."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge har Johan reklamationsrätt?",
+    "options": [
+     "I tre år",
+     "I ett år",
+     "I fjorton månader",
+     "I två månader"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… och den ger reklamationsrätt i tre år.",
+    "explanationJa": "3{年間|ねんかん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "inference",
+    "statementSv": "Johan kan inte reklamera, eftersom garantin har gått ut.",
+    "correct": false,
+    "explanationSv": "Garantin är bara ett extra löfte från affären, och den tar inte bort det som lagen säger.",
+    "explanationJa": "{保証|ほしょう}が{切|き}れても、{法律|ほうりつ}による{権利|けんり}は{残|のこ}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att affären gör en omleverans?",
+    "options": [
+     "Affären lagar maskinen",
+     "Johan får betala mindre",
+     "Johan får tillbaka alla pengarna",
+     "Johan får en ny maskin"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… eller göra en omleverans och ge Johan en ny maskin.",
+    "explanationJa": "{新|あたら}しい{品物|しなもの}と{交換|こうかん}することです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför gäller inte konsumentköplagen när Sara köpte cykeln?",
+    "options": [
+     "Cykeln var för dyr",
+     "Hon köpte den på nätet",
+     "Cykeln hade ingen garanti",
+     "Hon köpte av en privatperson"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Johans syster Sara köpte en begagnad cykel av en privatperson på nätet.",
+    "explanationJa": "{個人|こじん}から{買|か}ったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Det kostar pengar att vända sig till ARN.",
+    "correct": false,
+    "explanationSv": "Det kostar ingenting.",
+    "explanationJa": "ARNへの{申|もう}し{立|た}ては{無料|むりょう}です。"
+   }
+  ],
+  "factSources": [
+   "Konsumentköplagen (2022:260) gäller köp av varor som en näringsidkare säljer till en konsument; avtalsvillkor som är sämre för konsumenten än lagen är utan verkan.",
+   "Enligt konsumentköplagen ska konsumenten reklamera inom skälig tid efter att ha märkt felet; reklamation inom två månader är alltid i rätt tid. Reklamation senare än tre år efter att varan togs emot får inte åberopas. Ett fel som visar sig inom två år från leveransen antas ha funnits vid leveransen, om inte annat visas.",
+   "Vid fel kan konsumenten kräva avhjälpande eller omleverans, prisavdrag eller hävning (om felet är av väsentlig betydelse) samt skadestånd (konsumentköplagen). En garanti från säljaren eller tillverkaren är ett frivilligt åtagande utöver lagens regler.",
+   "Vid köp mellan privatpersoner gäller köplagen (1990:931). Har varan sålts i befintligt skick är den ändå felaktig bland annat om säljaren har lämnat felaktiga uppgifter eller förtigit fel som han måste ha känt till (köplagen 19 §).",
+   "Vilseledande marknadsföring är förbjuden enligt marknadsföringslagen (2008:486) 8–10 §§; Konsumentverket utövar tillsyn. Allmänna reklamationsnämnden (ARN) prövar avgiftsfritt tvister mellan konsumenter och näringsidkare och lämnar rekommendationer som inte är bindande (arn.se)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att köpa saker och om dina rättigheter som konsument.",
+  "discussionPoints": [
+   "Har du någon gång reklamerat en vara? Vad hände?",
+   "Vilket är bäst när en vara är trasig: att få den lagad, att få en ny eller att få pengarna tillbaka?",
+   "Köper du begagnade saker av privatpersoner?",
+   "Har du sett reklam som du tycker är vilseledande?"
+  ]
+ }
+}
