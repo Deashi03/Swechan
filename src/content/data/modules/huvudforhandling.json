@@ -1,0 +1,178 @@
+{
+ "id": "m.huvudforhandling",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Huvudförhandling",
+ "titleJa": "{公判|こうはん}",
+ "descriptionSv": "Huvudförhandling: huvudförhandling, åhörare, inför stängda dörrar, sakframställning, vittne, vittna, avlägga ed, vittnesmål, huvudförhör, ledande fråga, motförhör, tolk, yttra sig, protokollförare, slutanförande och skjuta upp.",
+ "descriptionJa": "{公判|こうはん}：{公判|こうはん}、{傍聴人|ぼうちょうにん}、{非公開|ひこうかい}で、{冒頭陳述|ぼうとうちんじゅつ}、{目撃者|もくげきしゃ}（{証人|しょうにん}）、{証言|しょうげん}する、{宣誓|せんせい}する、{証言|しょうげん}、{主尋問|しゅじんもん}、{誘導尋問|ゆうどうじんもん}、{反対尋問|はんたいじんもん}、{通訳|つうやく}、{意見|いけん}を{述|の}べる、{書記官|しょきかん}、{最終弁論|さいしゅうべんろん}、{延期|えんき}する。",
+ "categoryId": "R03-A02-T04",
+ "tags": [
+  "juridik",
+  "domstol"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.atal-och-stamning"
+ ],
+ "related": [],
+ "recommendedOrder": 1435,
+ "words": [
+  {
+   "senseId": "s.huvudförhandling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åhörare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inför-stängda-dörrar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sakframställning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vittne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vittna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlägga-ed.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vittnesmål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvudförhör.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ledande-fråga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motförhör.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tolk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yttra-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.protokollförare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slutanförande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjuta-upp.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Huvudförhandlingen",
+  "paragraphs": [
+   "Klockan nio börjar huvudförhandlingen i rättssal 3. Bredvid domaren sitter tre nämndemän och en protokollförare. Längst bak sitter några åhörare, bland annat två studenter och en journalist.",
+   "Först håller åklagaren sin sakframställning. Hon berättar att den tilltalade ska ha slagit en man utanför en restaurang. Försvarsadvokaten säger att hans klient förnekar brott. Den tilltalade får sedan yttra sig. Han talar inte svenska, så en tolk översätter allt han säger.",
+   "Sedan hörs ett vittne, en kvinna som arbetar på restaurangen. Hon avlägger ed och lovar att säga hur det verkligen var. I huvudförhöret får hon berätta fritt om vad hon såg. I motförhöret frågar försvarsadvokaten hur mörkt det var. – Försök att inte ställa ledande frågor, säger domaren när han frågar: ”Det var väl för mörkt för att se något?”",
+   "Målsäganden är bara 16 år. När han ska höras sker det inför stängda dörrar, och åhörarna får gå ut. Efter hans vittnesmål är det dags för lunch.",
+   "På eftermiddagen håller åklagaren och försvarsadvokaten sina slutanföranden. Ett vittne som skulle ha vittnat om en film från en kamera är sjuk, men domaren bestämmer att de inte behöver skjuta upp målet. Domen kommer om en vecka."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem sitter bredvid domaren och nämndemännen?",
+    "options": [
+     "En journalist",
+     "Ett vittne",
+     "Den tilltalade",
+     "En protokollförare"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Bredvid domaren sitter tre nämndemän och en protokollförare.",
+    "explanationJa": "{書記官|しょきかん}が{座|すわ}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför behövs en tolk?",
+    "options": [
+     "Den tilltalade talar inte svenska",
+     "Vittnet hör dåligt",
+     "Domaren talar engelska",
+     "Åhörarna vill förstå bättre"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han talar inte svenska, så en tolk översätter allt han säger.",
+    "explanationJa": "{被告人|ひこくにん}がスウェーデン{語|ご}を{話|はな}さないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför får åhörarna gå ut?",
+    "options": [
+     "Det är dags för lunch",
+     "De pratar för högt",
+     "Rättegången är slut",
+     "Målsäganden hörs inför stängda dörrar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "När han ska höras sker det inför stängda dörrar, och åhörarna får gå ut.",
+    "explanationJa": "{被害者|ひがいしゃ}の{尋問|じんもん}は{非公開|ひこうかい}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det är åklagaren som håller motförhöret med kvinnan från restaurangen.",
+    "correct": false,
+    "explanationSv": "I motförhöret frågar försvarsadvokaten hur mörkt det var.",
+    "explanationJa": "{反対尋問|はんたいじんもん}をしたのは{弁護人|べんごにん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Domaren tyckte inte om försvarsadvokatens fråga om mörkret.",
+    "correct": true,
+    "explanationSv": "– Försök att inte ställa ledande frågor, säger domaren …",
+    "explanationJa": "{裁判官|さいばんかん}は{誘導尋問|ゆうどうじんもん}をしないよう{注意|ちゅうい}しました。"
+   }
+  ],
+  "factSources": [
+   "Vid huvudförhandling i brottmål framställer åklagaren sitt yrkande och sin sakframställning, den tilltalade får yttra sig, bevisning tas upp och parterna håller slutanföranden (rättegångsbalken 46 kap. 6 och 9 §§).",
+   "Förhandlingar är som huvudregel offentliga men kan hållas inom stängda dörrar, till exempel när uppgifter omfattas av sekretess (rättegångsbalken 5 kap. 1 §).",
+   "Vittnen avlägger ed innan de hörs; vittnen under 15 år avlägger inte ed. Parten som har åberopat vittnet håller förhöret först, och ledande frågor får ställas bara om särskilda skäl föranleder det (rättegångsbalken 36 kap. 11, 13 och 17 §§).",
+   "Den som avlägger osann utsaga under ed kan dömas för mened (brottsbalken 15 kap. 1 §).",
+   "Rätten ska anlita tolk när en part eller ett vittne inte behärskar svenska; förhör vid huvudförhandling dokumenteras normalt genom ljud- och bildupptagning (rättegångsbalken 5 kap. 6 §, 6 kap. 6 §).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad som händer under en huvudförhandling.",
+  "discussionPoints": [
+   "Skulle du vilja sitta som åhörare i en rättegång? Varför?",
+   "Är det rätt att vissa delar hålls inför stängda dörrar?",
+   "Vad tror du är svårt för ett vittne under motförhöret?",
+   "Varför är det viktigt med tolk i domstolen?"
+  ]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "id": "m.aklagare-och-forsvarare",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Åklagare och försvarare",
+ "titleJa": "{検察官|けんさつかん}と{弁護人|べんごにん}",
+ "descriptionSv": "Åklagare och försvarare: åklagare, objektiv, advokat, försvarsadvokat, advokatbyrå, klient, förtroende, offentlig försvarare, förordna, företräda, uppdrag, arvode, yrka, yrkande, argumentera och ståndpunkt.",
+ "descriptionJa": "{検察官|けんさつかん}と{弁護人|べんごにん}：{検察官|けんさつかん}、{客観的|きゃっかんてき}な、{弁護士|べんごし}、{刑事弁護人|けいじべんごにん}、{法律事務所|ほうりつじむしょ}、{依頼人|いらいにん}、{信頼|しんらい}、{国選弁護人|こくせんべんごにん}、{選任|せんにん}する、{代理|だいり}する、{依頼|いらい}された{仕事|しごと}、{報酬|ほうしゅう}、{求|もと}める、{請求|せいきゅう}、{論|ろん}じる、{立場|たちば}。",
+ "categoryId": "R03-A02-T04",
+ "tags": [
+  "juridik",
+  "domstol"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.tingsratt-och-hovratt"
+ ],
+ "related": [],
+ "recommendedOrder": 1432,
+ "words": [
+  {
+   "senseId": "s.åklagare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.objektiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.advokat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försvarsadvokat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.advokatbyrå.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klient.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förtroende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.offentlig-försvarare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förordna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.företräda.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arvode.1",
+   "active": false
+  },
+  {
+   "senseId": "s.yrka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yrkande.2",
+   "active": true
+  },
+  {
+   "senseId": "s.argumentera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ståndpunkt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Två sidor i samma mål",
+  "paragraphs": [
+   "Sara är åklagare och Johan är försvarsadvokat på en liten advokatbyrå. De har känt varandra sedan de läste juridik, men i rättssalen står de på var sin sida. Just nu arbetar de med samma brottmål.",
+   "En ung man är misstänkt för att ha slagit en annan man på en fest. Han sitter häktad och har fått en offentlig försvarare. Tingsrätten förordnade Johan, eftersom den misstänkte själv ville ha honom som advokat.",
+   "– Mitt uppdrag är att hjälpa min klient, säger Johan. Han måste kunna lita på mig och berätta allt i förtroende. Jag får inte föra det vidare. Arvodet betalar staten, inte klienten, i alla fall till att börja med.",
+   "Sara har en annan roll. – Jag företräder inte brottsoffret, utan staten, förklarar hon. Jag ska vara objektiv och också ta upp sådant som talar för den misstänkte. Om bevisen räcker, yrkar jag att han ska dömas.",
+   "I rättegången argumenterar de för sina ståndpunkter. Saras yrkande är att mannen ska dömas för misshandel. Johan yrkar att hans klient ska frias. Efteråt dricker de kaffe tillsammans. – Det är inte personligt, säger Sara."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför fick den misstänkte just Johan som offentlig försvarare?",
+    "options": [
+     "Johan var den enda advokaten i stan",
+     "Sara bad om det",
+     "Den misstänkte ville själv ha honom",
+     "Johan arbetar gratis"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Tingsrätten förordnade Johan, eftersom den misstänkte själv ville ha honom som advokat.",
+    "explanationJa": "{容疑者|ようぎしゃ}{本人|ほんにん}がヨハンを{希望|きぼう}したからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vem betalar Johans arvode till att börja med?",
+    "options": [
+     "Klienten",
+     "Sara",
+     "Brottsoffret",
+     "Staten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Arvodet betalar staten, inte klienten, i alla fall till att börja med.",
+    "explanationJa": "まず{国|くに}が{払|はら}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Vem företräder Sara?",
+    "options": [
+     "Brottsoffret",
+     "Staten",
+     "Den misstänkte",
+     "Tingsrätten"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Jag företräder inte brottsoffret, utan staten …",
+    "explanationJa": "サラは{国|くに}を{代表|だいひょう}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sara ska bara ta upp sådant som talar emot den misstänkte.",
+    "correct": false,
+    "explanationSv": "Jag ska vara objektiv och också ta upp sådant som talar för den misstänkte.",
+    "explanationJa": "{容疑者|ようぎしゃ}に{有利|ゆうり}なことも{取|と}り{上|あ}げます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara och Johan är inte ovänner, fast de står på olika sidor i rättegången.",
+    "correct": true,
+    "explanationSv": "Efteråt dricker de kaffe tillsammans. – Det är inte personligt, säger Sara.",
+    "explanationJa": "{裁判|さいばん}のあと、{一緒|いっしょ}にコーヒーを{飲|の}んでいます。"
+   }
+  ],
+  "factSources": [
+   "Allmän åklagare beslutar om åtal och för talan i brottmål; vid förundersökning ska även omständigheter som är gynnsamma för den misstänkte beaktas (rättegångsbalken 20 kap. 2 och 6 §§, 23 kap. 4 §; aklagare.se).",
+   "Offentlig försvarare förordnas av rätten, bland annat om den misstänkte är anhållen eller häktad; den misstänkte kan föreslå en viss advokat (rättegångsbalken 21 kap. 3 a och 5 §§).",
+   "Den offentliga försvararens ersättning betalas av staten; den som döms kan få betala tillbaka hela eller en del av kostnaden beroende på sina ekonomiska förhållanden (rättegångsbalken 21 kap. 10 §, 31 kap. 1 §).",
+   "Titeln advokat är skyddad och får bara användas av ledamöter av Sveriges advokatsamfund; advokater har tystnadsplikt (rättegångsbalken 8 kap. 1–4 §§; advokatsamfundet.se).",
+   "Rätten får inte döma över annan gärning än den som åtalet gäller (rättegångsbalken 30 kap. 3 §).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om åklagarens och försvararens roller.",
+  "discussionPoints": [
+   "Skulle du hellre vara åklagare eller försvarare? Varför?",
+   "Varför är det viktigt att alla misstänkta har rätt till en försvarare?",
+   "Är det rätt att staten betalar för försvaret?",
+   "Hur fungerar det med försvarare i Japan?"
+  ]
+ }
+}

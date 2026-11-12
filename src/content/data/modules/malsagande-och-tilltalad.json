@@ -1,0 +1,179 @@
+{
+ "id": "m.malsagande-och-tilltalad",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Målsägande och tilltalad",
+ "titleJa": "{被害者|ひがいしゃ}と{被告人|ひこくにん}",
+ "descriptionSv": "Målsägande och tilltalad: målsägande, brottsoffer, tilltalad, oskyldig, oskuldspresumtion, målsägandebiträde, stödperson, vittnesstöd, kränkt, ersättning, erkänna, neka, förneka, inställa sig, utebli och videolänk.",
+ "descriptionJa": "{被害者|ひがいしゃ}と{被告人|ひこくにん}：（{刑事事件|けいじじけん}の）{被害者|ひがいしゃ}、{犯罪被害者|はんざいひがいしゃ}、{起訴|きそ}された、{無実|むじつ}の、{推定無罪|すいていむざい}、{被害者代理人|ひがいしゃだいりにん}、{支|ささ}えになる{人|ひと}、{証人支援員|しょうにんしえんいん}、{傷|きず}つけられた、{補償|ほしょう}、{認|みと}める、{否認|ひにん}する、{否定|ひてい}する、{出頭|しゅっとう}する、{欠席|けっせき}する、ビデオリンク。",
+ "categoryId": "R03-A02-T04",
+ "tags": [
+  "juridik",
+  "domstol"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.aklagare-och-forsvarare"
+ ],
+ "related": [],
+ "recommendedOrder": 1433,
+ "words": [
+  {
+   "senseId": "s.målsägande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brottsoffer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tilltalad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oskyldig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oskuldspresumtion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.målsägandebiträde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stödperson.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vittnesstöd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kränkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ersättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.erkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.neka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.förneka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inställa-sig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utebli.1",
+   "active": true
+  },
+  {
+   "senseId": "s.videolänk.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Två personer i samma rättssal",
+  "paragraphs": [
+   "Lina blev slagen på en buss i höstas och är alltså ett brottsoffer. Nu ska mannen som är misstänkt för det ställas inför rätta. I rättegången är Lina målsägande och mannen den tilltalade. Hon känner sig fortfarande kränkt och är rädd för att träffa honom igen.",
+   "Lina har fått ett målsägandebiträde, en advokat som hjälper henne. – Du behöver inte betala något, säger advokaten. Jag kan också begära ersättning för det du har varit med om. Linas mamma följer med som stödperson.",
+   "Innan rättegången börjar visar ett vittnesstöd Lina rättssalen. – Om du inte vill sitta i samma rum som den tilltalade kan du vara med via videolänk, säger hon. Lina bestämmer sig för att sitta i rättssalen ändå.",
+   "Den tilltalade har inställt sig, men han erkänner inte. Han nekar till att ha slagit Lina och förnekar att han ens var på bussen. Det måste ha varit någon annan, säger han. Hans advokat påminner om oskuldspresumtionen: han är oskyldig tills domstolen har bestämt något annat.",
+   "Ett av vittnena har uteblivit, så domaren bestämmer att rättegången ska fortsätta nästa vecka. – Jag hade hoppats att det skulle vara över i dag, säger Lina. Men nu har jag i alla fall berättat vad som hände."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem följer med Lina som stödperson?",
+    "options": [
+     "Hennes advokat",
+     "Ett vittne",
+     "Hennes mamma",
+     "Domaren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Linas mamma följer med som stödperson.",
+    "explanationJa": "リナのお{母|かあ}さんです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad gör den tilltalade när han förnekar det Lina säger?",
+    "options": [
+     "Han erkänner allt",
+     "Han säger att han inte ens var på bussen",
+     "Han uteblir",
+     "Han ber om ursäkt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han nekar till att ha slagit Lina och förnekar att han ens var på bussen.",
+    "explanationJa": "{否認|ひにん}して、バスに{乗|の}っていたことさえ{否定|ひてい}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför ska rättegången fortsätta nästa vecka?",
+    "options": [
+     "Lina är sjuk",
+     "Den tilltalade har erkänt",
+     "Ett vittne har uteblivit",
+     "Videolänken fungerar inte"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett av vittnena har uteblivit …",
+    "explanationJa": "{証人|しょうにん}の{一人|ひとり}が{来|こ}なかったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lina måste betala sitt målsägandebiträde själv.",
+    "correct": false,
+    "explanationSv": "– Du behöver inte betala något, säger advokaten.",
+    "explanationJa": "{費用|ひよう}を{払|はら}う{必要|ひつよう}はありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lina valde att inte använda videolänk.",
+    "correct": true,
+    "explanationSv": "Lina bestämmer sig för att sitta i rättssalen ändå.",
+    "explanationJa": "{結局|けっきょく}、{法廷|ほうてい}に{座|すわ}ることにしました。"
+   }
+  ],
+  "factSources": [
+   "Målsägande är den mot vilken brottet är begånget eller som har blivit förnärmad eller lidit skada av det; målsäganden kan föra talan om enskilt anspråk i brottmålet (rättegångsbalken 20 kap. 8 §, 22 kap. 1 §).",
+   "Målsägandebiträde kan förordnas bland annat vid sexualbrott och vid brott mot liv, hälsa eller frihet; ersättningen betalas av staten och målsäganden behöver inte betala tillbaka (lag (1988:609) om målsägandebiträde 1 och 6 §§).",
+   "Målsäganden och vittnen får ha med sig en stödperson, och vid de flesta domstolar finns frivilliga vittnesstöd (rättegångsbalken 20 kap. 15 §; domstol.se; brottsofferjouren.se).",
+   "Den som deltar i en förhandling kan i vissa fall göra det genom ljud- och bildöverföring (rättegångsbalken 5 kap. 10 §).",
+   "Om den tilltalade uteblir utan giltigt skäl kan rätten besluta att hen ska hämtas till rätten (rättegångsbalken 46 kap. 15 §).",
+   "Var och en som har blivit anklagad för brott ska betraktas som oskyldig till dess att hans skuld lagligen fastställts (Europakonventionen artikel 6.2, som gäller som svensk lag genom lag (1994:1219)).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur det är att vara målsägande eller tilltalad i en rättegång.",
+  "discussionPoints": [
+   "Vad tror du är svårast för en målsägande i en rättegång?",
+   "Är det bra att man kan vara med via videolänk? Varför?",
+   "Varför är oskuldspresumtionen viktig, också för tidningar och sociala medier?",
+   "Vilket stöd tycker du att brottsoffer borde få?"
+  ]
+ }
+}
