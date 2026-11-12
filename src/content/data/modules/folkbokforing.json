@@ -1,0 +1,177 @@
+{
+ "id": "m.folkbokforing",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Folkbokföring",
+ "titleJa": "{住民登録|じゅうみんとうろく}",
+ "descriptionSv": "Folkbokföring: registrera, folkbokföring, folkbokförd, bosatt, vara skriven, personnummer, samordningsnummer, flyttanmälan, lägenhetsnummer, civilstånd, ogift, skild, födelseort, namnbyte, personbevis, utdrag och id-kort.",
+ "descriptionJa": "{住民登録|じゅうみんとうろく}：{登録|とうろく}する、{住民登録|じゅうみんとうろく}、{住民登録|じゅうみんとうろく}されている、{居住|きょじゅう}している、（ある{住所|じゅうしょ}に）{住民登録|じゅうみんとうろく}している、{個人番号|こじんばんごう}、{調整番号|ちょうせいばんごう}、{転居届|てんきょとどけ}、{部屋番号|へやばんごう}、{婚姻状況|こんいんじょうきょう}、{未婚|みこん}の、{離婚|りこん}した、{出生地|しゅっせいち}、{改名|かいめい}、{住民登録証明書|じゅうみんとうろくしょうめいしょ}、{写|うつ}し、IDカード。",
+ "categoryId": "R03-A05-T05",
+ "tags": [
+  "samhälle",
+  "folkbokföring"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hallbar-stadsutveckling"
+ ],
+ "related": [],
+ "recommendedOrder": 1741,
+ "words": [
+  {
+   "senseId": "s.registrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.folkbokföring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.folkbokförd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bosatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vara-skriven.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samordningsnummer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flyttanmälan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägenhetsnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.civilstånd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ogift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.födelseort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.namnbyte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utdrag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.personbevis.1",
+   "active": false
+  },
+  {
+   "senseId": "s.id-kort.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ny i Göteborg",
+  "paragraphs": [
+   "Kenji har fått jobb i Göteborg och ska bo här i minst tre år. Därför måste han bli folkbokförd i Sverige. En morgon går han till Skatteverket med sitt pass och sitt anställningsavtal.",
+   "Handläggaren förklarar: – Den som ska bo i Sverige i minst ett år ska vara folkbokförd. Då får man ett personnummer. Om man bara stannar en kortare tid kan man i stället få ett samordningsnummer.",
+   "Kenji fyller i en blankett. Han skriver sitt civilstånd: ogift. Han skriver också sin födelseort, Osaka. Eftersom han bor i ett stort hus med många lägenheter måste han också skriva sitt lägenhetsnummer.",
+   "Två veckor senare kommer ett brev. Nu är Kenji registrerad och bosatt i Sverige. Han är skriven på sin nya adress och har ett eget personnummer. Med det kan han ansöka om ett id-kort.",
+   "Ett år senare flyttar Kenji till en större lägenhet. Han gör en flyttanmälan på nätet samma vecka. När banken vill ha ett personbevis beställer han ett sådant, alltså ett utdrag ur folkbokföringen. Hans kollega Sara är skild sedan i fjol. Hon har ansökt om namnbyte, eftersom hon vill ha tillbaka sitt gamla efternamn."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför måste Kenji bli folkbokförd?",
+    "options": [
+     "Han vill köpa en lägenhet",
+     "Han ska byta namn",
+     "Han ska bo i Sverige i minst ett år",
+     "Banken bad honom"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Kenji har fått jobb i Göteborg och ska bo här i minst tre år. Därför måste han bli folkbokförd i Sverige.",
+    "explanationJa": "{少|すく}なくとも{一年|いちねん}スウェーデンに{住|す}むからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kan man få om man bara stannar en kortare tid?",
+    "options": [
+     "Ett samordningsnummer",
+     "Ett personnummer",
+     "Ett personbevis",
+     "Ett lägenhetsnummer"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Om man bara stannar en kortare tid kan man i stället få ett samordningsnummer.",
+    "explanationJa": "{短|みじか}い{期間|きかん}なら{調整番号|ちょうせいばんごう}がもらえます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att Kenji är skriven på sin nya adress?",
+    "options": [
+     "Han är folkbokförd där",
+     "Han har skrivit adressen i ett brev",
+     "Han arbetar där",
+     "Han äger huset"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han är skriven på sin nya adress och har ett eget personnummer.",
+    "explanationJa": "その{住所|じゅうしょ}に{住民登録|じゅうみんとうろく}しているという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kenji gör sin flyttanmälan flera månader efter flytten.",
+    "correct": false,
+    "explanationSv": "Han gör en flyttanmälan på nätet samma vecka.",
+    "explanationJa": "{同|おな}じ{週|しゅう}に{転居届|てんきょとどけ}を{出|だ}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara vill byta efternamn.",
+    "correct": true,
+    "explanationSv": "Hon har ansökt om namnbyte, eftersom hon vill ha tillbaka sitt gamla efternamn.",
+    "explanationJa": "{前|まえ}の{名字|みょうじ}に{戻|もど}したいと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Skatteverket: folkbokföring, flyttanmälan (inom en vecka), samordningsnummer, personbevis och namnbyte (allmänna fakta)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att registrera sig när man flyttar till ett nytt land eller en ny adress.",
+  "discussionPoints": [
+   "Har du gjort en flyttanmälan någon gång? Hur gick det till?",
+   "Vilka nummer och kort behöver man i Sverige för att klara vardagen?",
+   "Finns det något som liknar folkbokföring i Japan?",
+   "Skulle du vilja göra ett namnbyte? Varför eller varför inte?"
+  ]
+ }
+}
