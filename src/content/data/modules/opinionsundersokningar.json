@@ -1,0 +1,178 @@
+{
+ "id": "m.opinionsundersokningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Opinionsundersökningar",
+ "titleJa": "{世論調査|よろんちょうさ}",
+ "descriptionSv": "Opinionsundersökningar: opinion, opinionsundersökning, opinionsmätning, opinionsinstitut, väljarbarometer, tillfråga, urval, slumpmässig, representativ, respondent, svarsfrekvens, felmarginal, statistiskt säkerställd, väljarstöd, procentenhet, gå framåt och backa.",
+ "descriptionJa": "{世論調査|よろんちょうさ}：{世論|よろん}、{世論調査|よろんちょうさ}、（{政党|せいとう}{支持|しじ}の）{世論調査|よろんちょうさ}、{世論調査|よろんちょうさ}{機関|きかん}、{政党|せいとう}{支持率|しじりつ}{調査|ちょうさ}、{意見|いけん}を{尋|たず}ねる、{標本|ひょうほん}、{無作為|むさくい}の、{代表的|だいひょうてき}な、{回答者|かいとうしゃ}、{回答率|かいとうりつ}、{誤差|ごさ}、{統計的|とうけいてき}に{有意|ゆうい}な、{支持率|しじりつ}、ポイント、{支持|しじ}を{伸|の}ばす、{支持|しじ}を{減|へ}らす。",
+ "categoryId": "R03-A06-T05",
+ "tags": [
+  "debatt",
+  "opinion",
+  "statistik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.argument-och-motargument"
+ ],
+ "related": [],
+ "recommendedOrder": 1843,
+ "words": [
+  {
+   "senseId": "s.opinion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.opinionsundersökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.opinionsmätning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.opinionsinstitut.1",
+   "active": false
+  },
+  {
+   "senseId": "s.väljarbarometer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tillfråga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urval.3",
+   "active": true
+  },
+  {
+   "senseId": "s.slumpmässig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.representativ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.respondent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svarsfrekvens.1",
+   "active": false
+  },
+  {
+   "senseId": "s.felmarginal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statistiskt-säkerställd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.väljarstöd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.procentenhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-framåt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.backa.3",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad visar mätningen?",
+  "paragraphs": [
+   "På måndagsmorgonen har lokaltidningen en stor rubrik: Gröna partiet går framåt! Enligt en ny opinionsmätning har partiet ökat från 8 till 10 procent. Johan, som läser statistik på universitetet, blir nyfiken och läser mer.",
+   "Opinionsundersökningen är gjord av ett opinionsinstitut åt tidningen. Opinionsinstitutet har tillfrågat 1 000 personer i kommunen på telefon. Urvalet är slumpmässigt, och opinionsinstitutet skriver att det är representativt för alla vuxna i kommunen.",
+   "Men Johan ser också att svarsfrekvensen bara var 35 procent. De flesta som opinionsinstitutet ringde till ville alltså inte svara. Han undrar om respondenterna verkligen tycker som alla andra.",
+   "Längst ner i artikeln står det att felmarginalen är ungefär 2 procentenheter. Att partiet har ökat är alltså inte statistiskt säkerställt. Det röda partiet backar med en procentenhet, men inte heller det är säkert.",
+   "Johan visar artikeln för sin pappa. – Väljarstödet har nog inte ändrats så mycket, säger Johan. Vi får vänta på nästa väljarbarometer. Opinionen kan ändras snabbt, men en enda mätning säger inte allt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många personer tillfrågades?",
+    "options": [
+     "350",
+     "10",
+     "2 000",
+     "1 000"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Opinionsinstitutet har tillfrågat 1 000 personer i kommunen på telefon.",
+    "explanationJa": "1,000{人|にん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur stor var svarsfrekvensen?",
+    "options": [
+     "10 procent",
+     "2 procent",
+     "100 procent",
+     "35 procent"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men Johan ser också att svarsfrekvensen bara var 35 procent.",
+    "explanationJa": "35パーセントでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är det inte statistiskt säkerställt att partiet har ökat?",
+    "options": [
+     "Opinionsinstitutet frågade för många",
+     "Skillnaden är mindre än felmarginalen",
+     "Tidningen skrev fel",
+     "Mätningen gjordes på nätet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… felmarginalen är ungefär 2 procentenheter. Att partiet har ökat är alltså inte statistiskt säkerställt.",
+    "explanationJa": "{増加|ぞうか}が{誤差|ごさ}の{範囲内|はんいない}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Urvalet var slumpmässigt.",
+    "correct": true,
+    "explanationSv": "Urvalet är slumpmässigt …",
+    "explanationJa": "そのとおりです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Johan är säker på att Gröna partiet har fått fler väljare.",
+    "correct": false,
+    "explanationSv": "– Väljarstödet har nog inte ändrats så mycket, säger Johan.",
+    "explanationJa": "ヨハンは{支持|しじ}はあまり{変|か}わっていないだろうと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Kommunen, partierna, siffrorna och personerna är påhittade. Att en felmarginal på cirka 2 procentenheter är vanlig vid 1 000 intervjuer stämmer ungefär för andelar nära 10–20 procent."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om opinionsundersökningar och hur man läser dem.",
+  "discussionPoints": [
+   "Har du någon gång blivit tillfrågad i en undersökning? Svarade du?",
+   "Litar du på opinionsmätningar? Varför eller varför inte?",
+   "Hur gör man ett urval som är representativt?",
+   "Kan opinionsmätningar påverka hur människor röstar?"
+  ]
+ }
+}
