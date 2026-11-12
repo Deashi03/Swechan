@@ -1,0 +1,173 @@
+{
+ "id": "m.nyhetsintervju",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Nyhetsintervju",
+ "titleJa": "ニュースのインタビュー",
+ "descriptionSv": "Nyhetsintervju: intervju, intervjua, intervjuperson, följdfråga, mikrofon, spela in, uttala sig, ingen kommentar, uttalande, citera, presskonferens, pressmeddelande, presstalesperson, ögonvittne, anonym och undvikande.",
+ "descriptionJa": "ニュースのインタビュー：インタビュー、インタビューする、{取材対象者|しゅざいたいしょうしゃ}、{追加|ついか}の{質問|しつもん}、マイク、{録音|ろくおん}する、コメントする、ノーコメント、{声明|せいめい}、{引用|いんよう}する、{記者会見|きしゃかいけん}、プレスリリース、{広報担当者|こうほうたんとうしゃ}、{目撃者|もくげきしゃ}、{匿名|とくめい}の、はぐらかす。",
+ "categoryId": "R03-A06-T01",
+ "tags": [
+  "medier",
+  "nyheter"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.nyhetsvardering"
+ ],
+ "related": [],
+ "recommendedOrder": 1805,
+ "words": [
+  {
+   "senseId": "s.intervju.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intervjua.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intervjuperson.1",
+   "active": false
+  },
+  {
+   "senseId": "s.följdfråga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikrofon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spela-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uttala-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingen-kommentar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uttalande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.citera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.presskonferens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pressmeddelande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.presstalesperson.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ögonvittne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anonym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undvikande.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Frågor efter olyckan",
+  "paragraphs": [
+   "I går kväll gick en tågvagn av spåret nära Sundsvall. Ingen dog, men tio personer blev skadade. Reportern Sara Berg får uppdraget att göra en intervju med några av dem som var där.",
+   "Först träffar hon en man som var ett ögonvittne. Han stod vid vägen och såg allt. Sara spelar in samtalet i mobilen och håller fram en liten mikrofon. – Jag hörde ett högt ljud, säger han. Sara ställer en följdfråga: – Vad gjorde du sedan? Senare i texten vill hon citera honom exakt.",
+   "En kvinna som satt på tåget vill gärna berätta, men hon vill vara anonym. Sara lovar att inte skriva hennes namn. Det är viktigt att en intervjuperson kan lita på journalisten.",
+   "På eftermiddagen håller tågföretaget en presskonferens. Före den har företaget skickat ut ett pressmeddelande. Där står bara att företaget beklagar olyckan. Företagets presstalesperson läser upp ett kort uttalande.",
+   "Sedan får journalisterna ställa frågor. Sara vill intervjua chefen om varför tåget gick av spåret. Men chefen är undvikande och vill inte uttala sig om orsaken. – Ingen kommentar, säger han till slut. Sara skriver ner det också. Det är också ett svar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför spelar Sara in samtalet med ögonvittnet?",
+    "options": [
+     "Hon vill lägga ut det på nätet",
+     "Polisen har bett om det",
+     "Hon vill kunna citera honom exakt",
+     "Hon kan inte skriva"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Senare i texten vill hon citera honom exakt.",
+    "explanationJa": "{後|あと}で{正確|せいかく}に{引用|いんよう}したいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför skriver Sara inte kvinnans namn?",
+    "options": [
+     "Sara har glömt namnet",
+     "Kvinnan vill vara anonym",
+     "Kvinnan var inte på tåget",
+     "Chefen sa nej"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… men hon vill vara anonym. Sara lovar att inte skriva hennes namn.",
+    "explanationJa": "その{女性|じょせい}が{匿名|とくめい}を{希望|きぼう}したからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att chefen är undvikande?",
+    "options": [
+     "Han svarar mycket tydligt",
+     "Han går hem tidigt",
+     "Han försöker att inte svara på frågorna",
+     "Han är arg på journalisterna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Men chefen är undvikande och vill inte uttala sig om orsaken.",
+    "explanationJa": "{質問|しつもん}をはぐらかそうとしています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I pressmeddelandet står det varför tåget gick av spåret.",
+    "correct": false,
+    "explanationSv": "Där står bara att företaget beklagar olyckan.",
+    "explanationJa": "プレスリリースには、{会社|かいしゃ}が{事故|じこ}を{残念|ざんねん}に{思|おも}うとしか{書|か}かれていません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara tycker att även ingen kommentar säger något.",
+    "correct": true,
+    "explanationSv": "Sara skriver ner det också. Det är också ett svar.",
+    "explanationJa": "「ノーコメント」も{一|ひと}つの{答|こた}えだと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Påhittad händelse; allmän beskrivning av hur en nyhetsintervju går till."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om intervjuer i nyheterna.",
+  "discussionPoints": [
+   "Har en tidning eller någon annan intervjuat dig någon gång?",
+   "Varför vill vissa vara anonyma när de pratar med en journalist?",
+   "Vad tänker du när någon säger ingen kommentar?",
+   "Vilken fråga skulle du vilja ställa till en känd person?"
+  ]
+ }
+}

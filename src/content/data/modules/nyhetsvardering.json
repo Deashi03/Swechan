@@ -1,0 +1,177 @@
+{
+ "id": "m.nyhetsvardering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Nyhetsvärdering",
+ "titleJa": "ニュース{価値|かち}の{判断|はんだん}",
+ "descriptionSv": "Nyhetsvärdering: nyhetsvärdering, nyhetsvärde, aktuell, relevant, angelägen, avvikelse, dramatisk, sensation, drabba, kändis, allmänheten, allmänintresse, uppmärksamhet, prioritera, nedprioritera, toppnyhet och slå upp.",
+ "descriptionJa": "ニュース{価値|かち}の{判断|はんだん}：ニュース{価値|かち}の{判断|はんだん}、ニュース{価値|かち}、{今話題|いまわだい}の、{関連|かんれん}のある、{重要|じゅうよう}な、{異常|いじょう}、{劇的|げきてき}な、センセーション、{襲|おそ}う、{有名人|ゆうめいじん}、{一般|いっぱん}の{人々|ひとびと}、{公共|こうきょう}の{関心|かんしん}、{注目|ちゅうもく}、{優先|ゆうせん}する、{後回|あとまわ}しにする、トップニュース、{大|おお}きく{取|と}り{上|あ}げる。",
+ "categoryId": "R03-A06-T01",
+ "tags": [
+  "medier",
+  "nyheter"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.reporter-och-redaktor"
+ ],
+ "related": [],
+ "recommendedOrder": 1804,
+ "words": [
+  {
+   "senseId": "s.nyhetsvärdering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nyhetsvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.aktuell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.relevant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.angelägen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvikelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dramatisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sensation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.drabba.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kändis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allmänhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allmänintresse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppmärksamhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prioritera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nedprioritera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.toppnyhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-upp.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad blir dagens toppnyhet?",
+  "paragraphs": [
+   "Det är redaktionsmöte på en dagstidning i Gävle. Nyhetschefen Ingrid har en lista med tolv möjliga nyheter, men det finns bara plats för några av dem på förstasidan. Nu börjar dagens nyhetsvärdering.",
+   "– Vad har högst nyhetsvärde? frågar Ingrid. En reporter föreslår en text om att en känd sångare har köpt ett hus i stan. – Det är kul, men är det relevant för våra läsare? säger Ingrid. Kändisar får mycket uppmärksamhet, men det är inte alltid det viktigaste.",
+   "En annan nyhet är mer aktuell: i natt var det en dramatisk brand i en fabrik, och flera hundra personer har inte kunnat åka till jobbet i dag. Branden drabbar många, och den har hänt nära läsarna. En avvikelse från det vanliga, nära och angelägen – det är det som gör en nyhet.",
+   "– Branden blir toppnyheten, bestämmer Ingrid. Vi slår upp den stort, med bilder. Texten om kändisen får bli en notis. Vi får prioritera.",
+   "En praktikant frågar varför de har nedprioriterat en ny rapport om vattnet i sjön. – Den är av allmänintresse, säger Ingrid. Allmänheten har rätt att veta om vattnet är farligt. Vi tar den i morgon. Ingen sensation, men viktig."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför kan inte alla tolv nyheterna stå på förstasidan?",
+    "options": [
+     "Reportrarna har inte skrivit dem",
+     "De är inte aktuella",
+     "Det finns bara plats för några av dem",
+     "Chefredaktören vill inte det"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… men det finns bara plats för några av dem på förstasidan.",
+    "explanationJa": "{一面|いちめん}には{数本|すうほん}しか{載|の}せられないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir branden dagens toppnyhet?",
+    "options": [
+     "En känd sångare var där",
+     "Den hände för en vecka sedan",
+     "Den är rolig att läsa om",
+     "Den drabbar många och har hänt nära läsarna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Branden drabbar många, och den har hänt nära läsarna.",
+    "explanationJa": "{多|おお}くの{人|ひと}に{影響|えいきょう}があり、{読者|どくしゃ}の{近|ちか}くで{起|お}きたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att tidningen ska slå upp branden stort?",
+    "options": [
+     "Den ska letas upp i en ordbok",
+     "Den ska få mycket plats och en stor rubrik",
+     "Den ska tas bort",
+     "Den ska bli en notis"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Vi slår upp den stort, med bilder.",
+    "explanationJa": "ここでの「slå upp」は{大|おお}きく{取|と}り{上|あ}げるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Texten om kändisen kommer på förstasidan.",
+    "correct": false,
+    "explanationSv": "Texten om kändisen får bli en notis.",
+    "explanationJa": "{歌手|かしゅ}の{話|はなし}は{小|ちい}さな{記事|きじ}になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ingrid tycker att rapporten om vattnet är viktig fast den inte kommer i dag.",
+    "correct": true,
+    "explanationSv": "Allmänheten har rätt att veta om vattnet är farligt. Vi tar den i morgon.",
+    "explanationJa": "イングリッドは{大事|だいじ}だと{考|かんが}えていますが、{明日|あした}に{回|まわ}します。"
+   }
+  ],
+  "factSources": [
+   "Allmän beskrivning av nyhetsvärdering (aktualitet, närhet, avvikelse, konsekvens); scenen är påhittad."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni är en redaktion och diskuterar vilka nyheter som är viktigast i dag.",
+  "discussionPoints": [
+   "Vilken nyhet tycker du har varit viktigast den här veckan?",
+   "Får kändisar för mycket uppmärksamhet i medierna?",
+   "Vilka nyheter tycker du blir nedprioriterade?",
+   "Skiljer sig nyhetsvärderingen i Sverige från den i ditt hemland?"
+  ]
+ }
+}

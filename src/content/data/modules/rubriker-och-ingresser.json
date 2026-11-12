@@ -1,0 +1,177 @@
+{
+ "id": "m.rubriker-och-ingresser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Rubriker och ingresser",
+ "titleJa": "{見出|みだ}しとリード{文|ぶん}",
+ "descriptionSv": "Rubriker och ingresser: rubrik, ingress, brödtext, underrubrik, mellanrubrik, bildtext, citat, förstasida, notis, spalt, löpsedel, sammanfatta, kortfattad, lockande, nyfikenhet, klickbete och omvänd pyramid.",
+ "descriptionJa": "{見出|みだ}しとリード{文|ぶん}：{見出|みだ}し、リード{文|ぶん}、{本文|ほんぶん}、{副見出|ふくみだ}し、{小見出|こみだ}し、キャプション、{引用|いんよう}、{一面|いちめん}、{短|みじか}い{記事|きじ}、{段|だん}、{見出|みだ}しポスター、{要約|ようやく}する、{簡潔|かんけつ}な、{魅力的|みりょくてき}な、{好奇心|こうきしん}、{釣|つ}り{見出|みだ}し、{逆|ぎゃく}ピラミッド。",
+ "categoryId": "R03-A06-T01",
+ "tags": [
+  "medier",
+  "nyheter"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tidningar-och-nyhetsredaktioner"
+ ],
+ "related": [],
+ "recommendedOrder": 1802,
+ "words": [
+  {
+   "senseId": "s.rubrik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingress.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brödtext.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underrubrik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mellanrubrik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bildtext.1",
+   "active": true
+  },
+  {
+   "senseId": "s.citat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förstasida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.notis.2",
+   "active": true
+  },
+  {
+   "senseId": "s.spalt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.löpsedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanfatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortfattad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lockande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nyfikenhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klickbete.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvänd-pyramid.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Skriv det viktigaste först",
+  "paragraphs": [
+   "Elsa går andra året på journalistutbildningen. I dag övar klassen på att skriva nyheter. Läraren ritar en omvänd pyramid på tavlan. – Det viktigaste kommer först, säger hon. Den som bara läser rubriken och ingressen ska ändå förstå vad som har hänt.",
+   "En bra rubrik är kortfattad och säger vad texten handlar om. Underrubriken berättar lite mer. Ingressen ska sammanfatta nyheten i två eller tre meningar. Sedan kommer brödtexten med alla detaljer. Om texten är lång kan mellanrubriker dela upp den, så att den blir lättare att läsa.",
+   "Elsa skriver om en brand i ett hus i stan. Hon har ett citat från en granne och en bild från platsen. Under bilden skriver hon en kort bildtext: Grannen Erik såg röken först. Läraren tycker att texten är bra, men för kort för förstasidan. Den blir en notis på en spalt på sidan sju.",
+   "Sedan visar läraren en löpsedel från en kvällstidning. Rubriken är stor och svart. – En rubrik ska vara lockande, så att man vill läsa mer, säger hon. Men den får inte lova mer än texten ger.",
+   "På nätet finns många rubriker som bara vill väcka nyfikenhet, till exempel Du kommer inte att tro vad hon gjorde sedan. Det kallas klickbete. – Sådana rubriker skriver vi inte här, säger läraren och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska ingressen göra enligt läraren?",
+    "options": [
+     "Ge alla detaljer",
+     "Sammanfatta nyheten i några meningar",
+     "Visa en bild från platsen",
+     "Berätta vad journalisten tycker"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ingressen ska sammanfatta nyheten i två eller tre meningar.",
+    "explanationJa": "リード{文|ぶん}はニュースを{二|に}、{三文|さんぶん}で{要約|ようやく}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför används mellanrubriker?",
+    "options": [
+     "De gör en lång text lättare att läsa",
+     "De gör rubriken längre",
+     "De ersätter ingressen",
+     "De visar vem som har skrivit texten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Om texten är lång kan mellanrubriker dela upp den, så att den blir lättare att läsa.",
+    "explanationJa": "{長|なが}い{文章|ぶんしょう}を{分|わ}けて、{読|よ}みやすくするためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är en notis i texten?",
+    "options": [
+     "Ett meddelande i mobilen",
+     "En stor affisch utanför en butik",
+     "En kort text om en liten nyhet",
+     "En rubrik på nätet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den blir en notis på en spalt på sidan sju.",
+    "explanationJa": "ここでの「notis」は{新聞|しんぶん}の{短|みじか}い{記事|きじ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Elsas text om branden kom på förstasidan.",
+    "correct": false,
+    "explanationSv": "Läraren tycker att texten är bra, men för kort för förstasidan.",
+    "explanationJa": "{一面|いちめん}には{短|みじか}すぎました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Läraren tycker att en rubrik som lovar för mycket är dålig.",
+    "correct": true,
+    "explanationSv": "Men den får inte lova mer än texten ger … Sådana rubriker skriver vi inte här.",
+    "explanationJa": "{先生|せんせい}は{大|おお}げさな{見出|みだ}しはよくないと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Allmän beskrivning av nyhetstextens delar och den omvända pyramiden; scenen är påhittad."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni tittar på rubriker i tidningar och på nätet och pratar om vad som gör dem bra.",
+  "discussionPoints": [
+   "Läser du oftast bara rubriken och ingressen, eller hela texten?",
+   "Vilken rubrik har gjort dig nyfiken nyligen?",
+   "Har du klickat på ett klickbete? Hur kändes det?",
+   "Finns det löpsedlar eller något liknande i ditt hemland?"
+  ]
+ }
+}
