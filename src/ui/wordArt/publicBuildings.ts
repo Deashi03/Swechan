@@ -135,8 +135,9 @@ export const PUBLIC_BUILDING_MOTIFS: Record<string, Svg> = {
     block(10, 54, 100, 42, BRICK, 6, 2), rect(48, 14, 24, 42, BRICK, 0, C.ink, 1.8), path('M46 14 L60 2 L74 14 Z', C.green, C.ink, 1.6), clock(60, 26, 6, 10, 10),
     win(55, 44, 5, 8), win(65, 44, 5, 8), rect(50, 80, 20, 16, C.brown, 6, C.ink, 1.6), line('M60 80 L60 96', C.ink, 1), flagSE(10, 54, 0.9), flagSE(102, 54, 0.9),
     fig(24, C.orange, 'smile', { h: 0.36 }), fig(92, C.denim, 'smile', { h: 0.36, hairStyle: 'long' })),
-  'offb.myndighet': all(stateHouse(60, 64, 1.6), line('M36 50 L22 36 M84 50 L98 36 M60 86 L60 96', C.grey, 1.6, '3 2'),
-    passport(16, 26, 0.9), all(circle(102, 28, 10, C.white, C.ink, 1.4), coin(98, 30, 4), coin(105, 26, 4)), all(rect(46, 96, 28, 14, C.white, 2, C.ink, 1.4), line('M51 101 L69 101 M51 105 L64 105', C.grey, 1.2))),
+  'offb.myndighet': all(ground, line('M60 46 L26 76 M60 46 L94 76', C.grey, 1.6, '3 2'),
+    block(38, 14, 44, 44, '#d9dde3', 3, 2), agencyBadge(60, 24, 1.3), office(24, 1), office(96, 1),
+    counter(40, 80, 98), mini(60, 90, C.navy, 'smile', 0.9), rect(64, 92, 12, 7, C.white, 1, C.ink, 1), circle(73, 95, 2.4, 'none', RED, 1.2)),
   'offb.myndighetskontor': all(rect(4, 8, 112, 104, '#eef0f2', 0, null), stateHouse(60, 30, 0.8),
     counter(6, 114, 76), rect(8, 40, 50, 36, '#e6f4fb', 0, C.ink, 1.2), rect(62, 40, 50, 36, '#e6f4fb', 0, C.ink, 1.2), mini(33, 62, C.navy, 'smile', 1.1), mini(87, 62, C.green, 'smile', 1.1, true),
     rect(24, 34, 18, 9, C.black, 2, C.ink, 1), rect(78, 34, 18, 9, C.black, 2, C.ink, 1),
@@ -167,8 +168,9 @@ export const PUBLIC_BUILDING_MOTIFS: Record<string, Svg> = {
     path('M12 30 L24 40 L24 84 L12 94 Z', '#7fa6c9', C.ink, 1.2), path('M30 46 L37 52 L37 74 L30 80 Z', '#7fa6c9', C.ink, 1.2), path('M108 30 L96 40 L96 84 L108 94 Z', '#7fa6c9', C.ink, 1.2), path('M90 46 L83 52 L83 74 L90 80 Z', '#7fa6c9', C.ink, 1.2),
     path('M4 8 L116 8 L74 46 L46 46 Z', '#f5f5f0', C.ink, 1.4), rect(56, 20, 8, 3, '#fff3b0', 1, C.ink, 0.6), rect(55, 34, 10, 2.4, '#fff3b0', 1, C.ink, 0.6)),
   'offb.sjukhussäng': all(rect(4, 8, 112, 104, '#eef3f5', 0, null), ground, hbed(18, 66, 80, true), patient(28, 50, 92), ivPole(108, 108), line('M108 70 C104 74 100 60 92 62', '#8cc7e8', 1.2)),
-  'offb.vårdplats': all(ground, rect(10, 18, 100, 92, 'none', 8, C.green, 2.2, ), hbed(20, 74, 52, false), on(36, 1, ''), patient(28, 68, 70),
-    fig(92, C.white, 'smile', { h: 0.84, hairStyle: 'long' }), on(92, 0.84, all(circle(-6, -30, 5, C.white, C.ink, 1), rect(-7.1, -33.6, 2.2, 7.2, RED, 0.3, null), rect(-9.6, -31.1, 7.2, 2.2, RED, 0.3, null))), check(100, 26, 1.4)),
+  'offb.vårdplats': all(rect(4, 8, 112, 104, '#eef3f5', 0, null), line('M4 62 L116 62 M4 112 L116 112', C.grey2, 2),
+    greyed(hbed(8, 30, 44, false), patient(14, 24, 50), hbed(68, 30, 44, false), patient(74, 24, 110), hbed(8, 80, 44, false), patient(14, 74, 50)),
+    rect(62, 64, 54, 46, 'none', 6, C.green, 2.6), hbed(68, 80, 44, false), rect(78, 74, 16, 6, C.white, 3, C.ink, 1.2), check(100, 72, 1.3)),
   'offb.besökstid': all(rect(4, 8, 112, 104, '#eef3f5', 0, null), ground, hbed(8, 78, 60, true), patient(18, 62, 64, C.mint),
     fig(90, C.orange, 'smile', { h: 0.86 }), reach(90, 0.86, -1, 72, 64), line('M72 62 L66 48 M72 62 L72 46 M72 62 L78 48', C.green, 1.6), circle(66, 46, 3.4, C.pink, C.ink, 1), circle(72, 44, 3.4, C.red, C.ink, 1), circle(78, 46, 3.4, C.yellow, C.ink, 1),
     clock(24, 26, 13, 4, 0, { shade: [2 * 30, 7 * 30], shadeCol: 'rgba(79,157,105,0.45)' })),
@@ -344,3 +346,6 @@ function dinoBones(x: number, y: number): Svg {
   return all(line(`M${x - 18} ${y - 26} C${x - 8} ${y - 34} ${x + 6} ${y - 32} ${x + 12} ${y - 24} L${x + 22} ${y - 36}`, '#e8e0cc', 4), line(`M${x - 18} ${y - 26} C${x - 8} ${y - 34} ${x + 6} ${y - 32} ${x + 12} ${y - 24} L${x + 22} ${y - 36}`, C.ink, 0.8),
     ellipse(x + 24, y - 39, 5, 3.4, '#e8e0cc', C.ink, 1.2), ...[-12, -6, 0, 6].map((d) => line(`M${x + d} ${y - 30} L${x + d} ${y - 22}`, '#d6ccb4', 2)), line(`M${x - 10} ${y - 26} L${x - 14} ${y} M${x + 8} ${y - 25} L${x + 10} ${y}`, '#e8e0cc', 3), line(`M${x - 18} ${y - 26} L${x - 28} ${y - 18}`, '#e8e0cc', 3), rect(x - 24, y, 44, 2, C.grey, 0, null));
 }
+
+function agencyBadge(x: number, y: number, s = 1): Svg { return g(`translate(${x} ${y}) scale(${s})`, circle(0, 0, 7, '#2f5fb0', C.ink, 1.2), rect(-3, -4.5, 6, 9, '#8a2a3a', 1, C.white, 0.8), circle(0, -0.5, 1.6, 'none', C.gold, 0.8)); }
+function office(x: number, s = 1): Svg { return g(`translate(${x} 0)`, all(rect(-14 * s, 76, 28 * s, 36, '#d9dde3', 1, C.ink, 1.6), win(-6 * s, 92, 6, 7), win(6 * s, 92, 6, 7), rect(-4, 100, 8, 12, C.brown, 1, C.ink, 1), agencyBadge(0, 82, 0.8))); }
