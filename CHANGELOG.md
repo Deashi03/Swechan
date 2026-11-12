@@ -2,7 +2,7 @@
 
 ## 0.34.0 – 2026-11-12
 
-42 nya moduler som gör överämnet *Städer & offentlig service* (R03-A05) komplett. Varje nytt modulord har en egen bild, utom de __MISS__ ord som underkändes i två blindtestomgångar.
+42 nya moduler som gör överämnet *Städer & offentlig service* (R03-A05) komplett. Varje nytt modulord har en egen bild, utom de 9 ord som underkändes i två blindtestomgångar.
 
 ### Moduler (42 nya, 725 målord)
 - **Stadens platser** (1701–1707): torg och gågator, bostadskvarter, parker och lekplatser, industriområden, stadskärna och förort, landmärken och mötesplatser samt att beskriva en stadsdel.
@@ -17,10 +17,10 @@
 - `s.förening.1` (kemi) har fått en enklare definition och ett nytt exempel, och `s.förening.2` har fått förklaring och bild.
 - Grupperna skrevs parallellt med listor över varandras ord, och inga dubbletter behövde slås ihop i efterhand. *brandslang* skrevs av både Offentliga byggnader och Samhällsservice och ägs av Offentliga byggnader.
 
-### Bilder (__IMG__ nya ordbilder)
-- __SYM__ symbolbilder, __QUIZ__ bilder som får användas i bildövningar och resten scener.
-- __TESTED__ symbol- och adjektivbilder blindtestades. __PASSED__ klarade testet efter högst två omgångar.
-- **__MISS__ ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+### Bilder (424 nya ordbilder)
+- 117 symbolbilder, 133 bilder som får användas i bildövningar och resten scener.
+- 126 symbol- och adjektivbilder blindtestades. 117 klarade testet efter högst två omgångar.
+- **9 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
 - Äkta synonymer är markerade som förväxlingsbara, bland annat *centrum/stadskärna*, *trivsam/mysig*, *folkmängd/invånarantal* och *volontärarbete/ideellt arbete*.
 - Nya bildfiler i `src/ui/wordArt/`: `cityPlaces.ts`, `publicBuildings.ts`, `publicServices.ts`, `urbanPlanning.ts`, `migration.ts` och `civilSociety.ts`.
 
