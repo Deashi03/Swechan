@@ -67,6 +67,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.trivsam.1',
   // 0.34 (Samhällsservice), after two blind-test rounds
   's.medborgarservice.1',
+  // 0.34 (Bostads- & stadsplanering), after two blind-test rounds
+  's.framkomlighet.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
