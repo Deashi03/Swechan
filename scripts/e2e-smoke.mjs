@@ -210,13 +210,14 @@ try {
   await page.getByRole('link', { name: /Matlagningens verb/ }).first().click();
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
-  // Vardag & hem, Människan & hälsa (0.29), Politik & demokrati (0.30) and Juridik & rättsväsende (0.31) are fully
-  // published, so the planned entry is the first module of Ekonomi & arbetsliv: Privatekonomi → Inkomster och utgifter.
+  // Vardag & hem, Människan & hälsa (0.29), Politik & demokrati (0.30), Juridik & rättsväsende (0.31) and Ekonomi &
+  // arbetsliv (0.32) are fully published, so the planned entry is the first module of Utbildning & lärande: Svensk skola →
+  // Förskola och grundskola.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Samhälle & institutioner/ }).first().click();
-  await page.getByRole('link', { name: /Ekonomi & arbetsliv/ }).first().click();
-  await page.getByRole('link', { name: /Privatekonomi/ }).first().click();
-  await page.getByRole('link', { name: /Inkomster och utgifter/ }).first().click();
+  await page.getByRole('link', { name: /Utbildning & lärande/ }).first().click();
+  await page.getByRole('link', { name: /Svensk skola/ }).first().click();
+  await page.getByRole('link', { name: /Förskola och grundskola/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
