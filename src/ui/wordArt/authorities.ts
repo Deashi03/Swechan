@@ -150,12 +150,30 @@ const masked = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${
 /** Steps of three courts; `hi` (0–2) marks the step that is meant. */
 const courtSteps = (hi: number) => all(podium(14, 30, [22, 40, 58], hi === 0 ? [C.yellow, C.grey2, C.grey2] : hi === 1 ? [C.grey2, C.yellow, C.grey2] : [C.grey2, C.grey2, C.yellow]), ...[0, 1, 2].map((i) => { const c = court(29 + i * 30, 112 - [22, 40, 58][i]! - 12, 0.38); return i === hi ? c : greyed(c); }), arrow(30, 70, 50, 56, C.grey, 1.8), arrow(60, 52, 80, 38, C.grey, 1.8), ring(29 + hi * 30, 112 - [22, 40, 58][hi]! - 12, 15));
 
+// ── Round 2 (blind test): extra things for redrawn motifs ────────────
+/** A hand seen from the side, holding something at (x, y) (fingers to the right unless flipped). */
+const fist = (x: number, y: number, s = 1, flip = false) => g(`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`, path('M-16 -5 L-4 -6 C2 -7 6 -4 6 0 C6 4 2 6 -4 5 L-16 5 Z', C.skin, C.ink, 1.3), line('M-2 -2 L4 -2 M-2 2 L4 2', C.ink, 0.8), rect(-30, -7, 14, 14, C.navy, 1, C.ink, 1.2));
+/** A rubber stamp pressing down at (x, y). */
+const stampTool = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-9, -4, 18, 6, RED, 1, C.ink, 1.2), rect(-3, -16, 6, 12, C.brown, 1, C.ink, 1.1), circle(0, -19, 5, C.brown, C.ink, 1.1));
+/** A jigsaw-shaped piece of paper. */
+const piece = (x: number, y: number, s = 1, fill: string = '#fff6d8') => g(`translate(${x} ${y}) scale(${s})`, path('M-10 -10 L-3 -10 C-3 -15 3 -15 3 -10 L10 -10 L10 -3 C15 -3 15 3 10 3 L10 10 L-10 10 Z', fill, C.ink, 1.4), line('M-6 -4 L6 -4 M-6 1 L6 1 M-6 6 L3 6', C.grey, 1.4));
+/** A card-index box with cards; the card at index `hi` sticks up with a red tab. */
+const cardBox = (x: number, y: number, hi: number) => all(...[0, 1, 2, 3, 4].map((i) => i === hi ? '' : rect(x - 30 + i * 3, y - 34 + i * 2, 54, 34, i % 2 ? '#eef2f5' : C.white, 2, C.grey, 1.2)), g(`translate(0 -22)`, rect(x - 30 + hi * 3, y - 34 + hi * 2, 54, 34, C.white, 2, C.ink, 1.5), rect(x + 14 + hi * 3, y - 42 + hi * 2, 12, 9, RED, 1.5, C.ink, 1.2), house(x - 16 + hi * 3, y - 18 + hi * 2, 0.6), circle(x + 2 + hi * 3, y - 24 + hi * 2, 4, C.skin, C.ink, 0.9), line(`M${x - 4 + hi * 3} ${y - 12 + hi * 2} L${x + 18 + hi * 3} ${y - 12 + hi * 2}`, C.grey, 1.6)), path(`M${x - 36} ${y - 12} L${x + 36} ${y - 12} L${x + 32} ${y + 16} L${x - 32} ${y + 16} Z`, C.tan, C.ink, 1.5));
+/** A small ear with a red cross over it (cannot hear). */
+const noEar = (x: number, y: number) => all(path(`M${x - 4} ${y + 7} C${x - 10} ${y + 2} ${x - 8} ${y - 9} ${x} ${y - 9} C${x + 7} ${y - 9} ${x + 8} ${y - 1} ${x + 3} ${y + 2} C${x + 1} ${y + 4} ${x + 1} ${y + 8} ${x - 4} ${y + 7} Z`, C.skin, C.ink, 1.2), cross(x, y, 1.1));
+/** A small printing press rolling out a sheet. */
+const press = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-18, -10, 36, 22, C.grey, 2, C.ink, 1.5), circle(-8, -10, 6, C.dark, C.ink, 1.2), circle(8, -10, 6, C.dark, C.ink, 1.2), path('M18 4 L36 8 L36 30 L16 26 Z', C.white, C.ink, 1.3), line('M21 12 L32 14 M21 17 L32 19 M21 22 L29 23', C.grey, 1.2));
+/** A ticket-number display above a counter. */
+const queueSign = (x: number, y: number) => all(rect(x - 14, y - 9, 28, 18, C.dark, 2, C.ink, 1.3), T(x, y + 5, '42', 12, '#7ee08a'));
+/** A folded guide leaflet with a route (start, steps, goal). */
+const leaflet = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-20 -14 L-7 -16 L7 -14 L20 -16 L20 14 L7 16 L-7 14 L-20 16 Z', C.white, C.ink, 1.4), line('M-7 -16 L-7 14 M7 -14 L7 16', C.grey2, 1), line('M-15 8 C-8 4 -4 10 2 2 C6 -4 10 -2 14 -8', HL, 1.8, '2 2'), circle(-15, 8, 2.4, C.green, null), star(14, -9, 3.4, RED));
+
 export const AUTHORITY_MOTIFS: Record<string, Svg> = {
   // ── Förvaltningsbeslut ──
   'forv.förvaltningsmyndighet': all(office(44, 88, 1.1), okB(80, 30, 7), greyed(court(96, 98, 0.45)), noB(108, 72, 6), ground),
   'forv.myndighetsutövning': all(office(26, 90, 0.8), arrow(46, 56, 64, 56, HL, 2.6), doc(78, 46, 0.8, all(para(0, -4, 13, C.navy), seal(5, 10, 5, true)), 0), fig(96, C.orange, 'calm', { h: 0.62 }), ground),
   'forv.förvaltningslagen': all(lawBook(30, 62, 1.25), arrow(52, 62, 64, 62, HL, 2.4), office(92, 88, 0.7), folder(92, 32, 0.55), ground),
-  'forv.handlägga': all(fig(34, C.navy, 'calm', { h: 0.95 }), counter(8, 112, 82), folder(80, 74, 0.8, '#f2cf6b', doc(0, -6, 0.5, '', 3)), reach(34, 0.95, 1, 68, 70), mag(98, 62, 0.8)),
+  'forv.handlägga': all(folder(60, 96, 1.5, '#f2cf6b'), doc(42, 66, 1, '', 4), fist(26, 70, 1), mag(72, 50, 1.1), stampTool(96, 72, 1.1), decision(96, 96, 0.5, true), curveArrow('M52 34 C60 22 74 22 82 30', 82, 30, 40, HL, 2), curveArrow('M84 56 C90 50 96 50 98 54', 98, 54, 80, HL, 2)),
   'forv.handläggning': all(folder(18, 56, 0.6), arrow(32, 56, 44, 56, C.grey, 2), mag(58, 54, 1), arrow(74, 56, 86, 56, C.grey, 2), decision(102, 56, 0.8, true), line('M10 86 L110 86', HL, 2.4), circle(18, 86, 3, HL, null), circle(60, 86, 3, HL, null), circle(102, 86, 3, HL, null), ground),
   'forv.beslutsunderlag': all(doc(22, 88, 0.6, rosette(0, 6, 0.8), 2), doc(60, 92, 0.6, '', 4), doc(98, 88, 0.6, rect(-9, -4, 18, 12, '#9ad0f0', 1, C.ink, 0.8), 2), arrow(28, 70, 50, 46, C.grey, 1.8), arrow(60, 74, 60, 50, C.grey, 1.8), arrow(92, 70, 70, 46, C.grey, 1.8), decision(60, 26, 0.7, true), ground),
   'forv.bifall': all(decision(40, 58, 1.35, true), fig(94, C.orange, 'laugh', { h: 0.8 }), ground),
@@ -163,13 +181,13 @@ export const AUTHORITY_MOTIFS: Record<string, Svg> = {
   'forv.gynnande': all(decision(22, 40, 0.7, true), curveArrow('M34 36 C52 30 62 40 66 52', 66, 52, 60, HL, 2.2), gift(70, 66, 1.1), coins(54, 106, 3, 5), fig(98, C.orange, 'laugh', { h: 0.72 }), ground),
   'forv.betungande': all(decision(22, 40, 0.7, false), curveArrow('M34 36 C50 24 66 22 74 30', 74, 30, 40, HL, 2.2), fig(84, C.orange, 'frown', { h: 0.7 }), weight(84, 30, 1.1), ground),
   // ── Ansökan och tillstånd ──
-  'forv.ansökan': all(fig(24, C.orange, 'smile', { h: 0.85 }), reach(24, 0.85, 1, 50, 60), doc(56, 56, 0.8, path('M-8 12 C-5 6 -3 14 0 9 C2 6 4 12 7 10', 'none', C.navy, 1.4), 3), arrow(70, 60, 80, 60, HL, 2.4), office(98, 90, 0.6), ground),
+  'forv.ansökan': all(rect(26, 8, 68, 100, C.white, 3, C.ink, 2), office(42, 30, 0.3), line('M54 20 L84 20 M54 26 L80 26', C.grey, 2), ...[0, 1, 2].map((i) => all(rect(34, 46 + i * 14, 52, 8, C.white, 1, C.grey, 1.2), line(`M38 ${50 + i * 14} L${66 - i * 8} ${50 + i * 14}`, C.navy, 1.6))), line('M56 96 L86 96', C.ink, 1), path('M58 94 C62 86 66 98 70 90 C73 86 76 94 80 92', 'none', C.navy, 1.6), ring(60, 58, 52, HL)),
   'forv.sökande': all(office(92, 90, 0.6), greyed(fig(64, C.green, 'calm', { h: 0.7 })), fig(26, C.orange, 'smile', { h: 0.8 }), reach(26, 0.8, 1, 44, 64), doc(48, 62, 0.5, '', 3), ring(30, 70, 26)),
   'forv.blankett': all(rect(28, 12, 64, 92, C.white, 3, C.ink, 2), ...[0, 1, 2, 3].map((i) => all(rect(36, 24 + i * 18, 8, 8, C.white, 1, C.ink, 1.3), line(`M50 ${28 + i * 18} L82 ${28 + i * 18}`, C.grey2, 2.4))), check(40, 28, 0.7), check(40, 46, 0.7), pen(92, 82, 1.1, 30)),
   'forv.bifoga': all(envelope(52, 82, 1.6, true), doc(56, 52, 0.9, '', 4), arrow(92, 30, 70, 50, HL, 2.4), clip(66, 38, 1)),
   'forv.bilaga': all(doc(46, 60, 1.3, '', 6), doc(84, 70, 0.85, '', 3, C.grey2, '#fff6d8'), clip(78, 46, 1.1), ring(84, 70, 22)),
   'forv.intyg': all(rect(18, 22, 84, 72, '#fffaf0', 3, C.ink, 2), rect(24, 28, 72, 60, 'none', 2, C.gold, 1.4), line('M34 42 L86 42 M34 52 L80 52 M34 62 L70 62', C.grey, 2.2), path('M38 78 C42 72 46 82 50 76', 'none', C.navy, 1.6), rosette(80, 74, 1.4), ground),
-  'forv.komplettering': all(doc(42, 58, 1.4, all(rect(-9, 1, 18, 10, 'none', 1, HL, 1.4)), 2), doc(96, 34, 0.55, '', 3, C.grey2, '#fff6d8'), curveArrow('M96 50 C96 66 80 74 62 74', 62, 74, 180, HL, 2.2), T(100, 78, '+', 18, HL), ground),
+  'forv.komplettering': all(doc(40, 60, 1.6, rect(-10, 2, 20, 12, '#efe9dc', 1, C.grey, 1.2), 3), piece(94, 64, 1.5), ring(94, 64, 22), curveArrow('M78 62 C70 64 64 66 58 68', 58, 68, 170, C.grey, 1.8), ground),
   'forv.ansökningsavgift': all(doc(26, 58, 0.9, '', 4), T(44, 64, '+', 16, C.ink), coins(58, 70, 4, 6), arrow(70, 58, 80, 58, HL, 2.4), office(98, 90, 0.6), ground),
   'forv.tillståndspliktig': all(cart(30, 96, 1), rect(56, 76, 6, 36, C.grey, 1, C.ink, 1.2), rect(62, 78, 52, 6, RED, 1, C.ink, 1.2), ...[0, 1, 2].map((i) => rect(70 + i * 16, 78, 8, 6, C.white, 0, null)), doc(90, 40, 0.7, seal(4, 9, 6, true), 3), ex(108, 24, 14), ground),
   'forv.bevilja': all(fig(28, C.navy, 'smile', { h: 0.85 }), reach(28, 0.85, 1, 56, 64), decision(60, 60, 0.75, true), fig(92, C.orange, 'laugh', { h: 0.78 }), reach(92, 0.78, -1, 68, 66), office(28, 18, 0.3), ground),
@@ -186,10 +204,10 @@ export const AUTHORITY_MOTIFS: Record<string, Svg> = {
   'forv.Högsta-förvaltningsdomstolen': courtSteps(2),
   'forv.Justitieombudsmannen': all(parliament(26, 46, 0.42), arrow(26, 62, 26, 70, C.grey, 1.8), fig(26, C.navy, 'calm', { h: 0.62 }), mag(58, 68, 1.2), office(92, 90, 0.7), envelope(70, 24, 0.6), ground),
   // ── Offentlighetsprincipen ──
-  'forv.tryckfrihetsförordningen': all(lawBook(28, 64, 1.3), rect(60, 30, 50, 64, C.white, 2, C.ink, 1.6), rect(66, 36, 38, 14, C.grey2, 1, null), line('M66 58 L104 58 M66 64 L104 64 M66 70 L94 70 M66 78 L104 78 M66 84 L90 84', C.grey, 1.8), flagSE(86, 12, 0.9), ground),
+  'forv.tryckfrihetsförordningen': all(press(36, 50, 1.1), lawBook(30, 96, 0.7), shield(76, 64, 1.2, '#cfe3f3', para(0, 2, 14, C.navy)), greyed(stampTool(104, 30, 0.9)), noB(104, 44, 7), flagSE(12, 10, 0.8), ground),
   'forv.begära-ut': all(office(106, 34, 0.35), fig(92, C.navy, 'smile', { h: 0.85 }), counter(66, 118, 82), fig(28, C.orange, 'smile', { h: 0.85 }), sb(28, 0.85, 1, 26, 22, (cx, cy) => all(doc(cx - 4, cy, 0.38, '', 3), q(cx + 7, cy, 10))), arrow(64, 72, 50, 72, HL, 2.2), doc(76, 70, 0.45, '', 3)),
   'forv.diarium': all(ledger(60, 56, 1.8, 1), envelope(22, 98, 0.6), cal(98, 98, 0.6), ground),
-  'forv.diarieföra': all(envelope(20, 40, 0.8), arrow(34, 44, 46, 52, HL, 2.2), ledger(72, 62, 1.5, 2), pen(104, 50, 0.9, 30), ground),
+  'forv.diarieföra': all(envelope(22, 22, 0.8), curveArrow('M34 28 C44 34 46 40 46 46', 46, 46, 90, HL, 2.2), rect(14, 54, 92, 50, C.white, 2, C.ink, 1.6), line('M14 66 L106 66 M14 78 L106 78 M38 54 L38 104', C.grey2, 1.4), line('M18 60 L34 60 M42 60 L90 60 M18 72 L34 72 M42 72 L80 72', C.grey, 1.8), rect(15, 79, 90, 12, '#fff2b8', 0, null), line('M18 85 L32 85 M42 85 L68 85', HL, 2.2), pen(78, 76, 1.1, 30), fist(96, 66, 0.8, true), star(106, 90, 4, C.gold)),
   'forv.registrator': all(fig(40, C.navy, 'smile', { h: 0.95 }), counter(8, 112, 82), ledger(84, 70, 0.8, 1), envelope(18, 74, 0.5), envelope(24, 68, 0.5), reach(40, 0.95, 1, 70, 70)),
   'forv.inkomma': all(office(80, 90, 1), envelope(28, 36, 0.9), curveArrow('M38 42 C50 52 60 64 70 80', 70, 80, 60, HL, 2.4), rect(68, 76, 16, 4, C.dark, 1, null), ground),
   'forv.upprätta': all(doc(52, 60, 1.6, all(line('M-9 12 L9 12', C.ink, 1), path('M-8 10 C-5 4 -3 12 0 7 C2 4 4 10 7 8', 'none', C.navy, 1.4)), 4), pen(88, 86, 1.1, 30), check(96, 32, 1.3), office(100, 100, 0.25, '#cfd8e2', false)),
@@ -198,11 +216,11 @@ export const AUTHORITY_MOTIFS: Record<string, Svg> = {
   'forv.meddelarskydd': all(fig(84, C.green, 'calm', { h: 0.85 }), notebook(100, 64, 0.8), shield(42, 62, 2.1, '#cfe3f3', shadow(0, 2, 0.75)), ground),
   'forv.efterforskningsförbud': all(fig(28, C.navy, 'angry', { h: 0.85 }), reach(28, 0.85, 1, 52, 56), mag(62, 52, 1.2), noB(62, 52, 13), greyed(shadow(98, 90, 1.1)), ground),
   // ── Sekretess och tystnadsplikt ──
-  'forv.sekretess': all(folder(52, 64, 1.7, '#f2cf6b', doc(0, -4, 0.55, '', 3)), padlock(52, 76, 1.3), say(96, 28, 30, 22, 82, 44, cross(96, 28, 1)), ground),
-  'forv.sekretessbelagd': all(doc(48, 58, 1.6, padlock(0, 4, 0.9, false, RED), 2), seal(88, 30, 10, false), ground),
+  'forv.sekretess': all(office(42, 88, 1.05, '#cfd8e2', true, padlock(0, -4, 0.9, false, RED)), line('M78 40 L78 112', RED, 3, '5 4'), fig(100, C.orange, 'calm', { h: 0.7 }), sb(100, 0.7, -1, 16, 16, (cx, cy) => q(cx, cy, 11)), ground),
+  'forv.sekretessbelagd': all(greyed(doc(26, 46, 0.9, '', 4)), arrow(26, 72, 26, 92, C.grey, 2), greyed(mini(26, 98, C.green, 'smile', 0.7)), doc(80, 56, 1.4, all(line('M-14 -18 L14 18', RED, 3), padlock(0, 2, 0.75, false, RED)), 4), noEntry(80, 100, 9), ground),
   'forv.röja': all(fig(30, C.orange, 'smile', { h: 0.85 }), sb(30, 0.85, 1, 28, 24, (cx, cy) => padlock(cx, cy + 2, 0.7, true, C.gold)), greyed(fig(90, C.green, 'shock', { h: 0.8 })), doc(98, 30, 0.45, '', 3), ex(110, 16, 12), ground),
   'forv.obehörig': all(rect(56, 22, 44, 90, '#cfd8e2', 2, C.ink, 1.6), rect(64, 30, 28, 82, C.brown, 1, C.ink, 1.4), circle(86, 72, 2, C.gold, null), noEntry(78, 46, 10), greyed(fig(26, C.green, 'calm', { h: 0.85 })), palm(46, 62, 1.1), ground),
-  'forv.konfidentiell': all(fig(26, C.orange, 'calm', { h: 0.8 }), fig(70, C.navy, 'calm', { h: 0.8 }), say(48, 20, 22, 20, 36, 38, padlock(48, 22, 0.55)), rect(96, 14, 18, 98, C.brown, 1, C.ink, 1.4), circle(100, 64, 1.8, C.gold, null), ground),
+  'forv.konfidentiell': all(rect(10, 14, 74, 98, '#efe6d6', 2, C.ink, 1.4), fig(28, C.orange, 'calm', { h: 0.75 }), fig(66, C.navy, 'calm', { h: 0.75 }), say(47, 26, 20, 14, 38, 40, all(circle(42, 26, 1.4, C.ink, null), circle(47, 26, 1.4, C.ink, null), circle(52, 26, 1.4, C.ink, null))), rect(84, 14, 6, 98, C.brown, 1, C.ink, 1.4), greyed(fig(106, C.green, 'calm', { h: 0.6 })), noEar(104, 30), ground),
   'forv.lämna-ut': all(office(106, 34, 0.35), fig(92, C.navy, 'smile', { h: 0.85 }), counter(66, 118, 82), reach(92, 0.85, -1, 72, 72), arrow(64, 72, 56, 72, HL, 2.4), doc(44, 66, 0.6, '', 4), fig(22, C.orange, 'smile', { h: 0.85 })),
   'forv.sekretessprövning': all(fig(24, C.navy, 'calm', { h: 0.85 }), doc(56, 56, 1, '', 5), mag(66, 64, 0.9), reach(24, 0.85, 1, 44, 58), padlock(96, 34, 0.8, false, RED), okB(96, 74, 9), line('M80 40 L74 50 M80 70 L74 62', C.grey, 1.6), ground),
   'forv.maska': all(masked(50, 58, 1.6), g('translate(96 74) rotate(30)', rect(-4, -18, 8, 26, C.dark, 2, C.ink, 1.2), rect(-4, 8, 8, 5, C.ink, 1, null))),
@@ -210,7 +228,7 @@ export const AUTHORITY_MOTIFS: Record<string, Svg> = {
   'forv.anmälningsplikt': all(lawBook(22, 32, 0.7), fig(28, C.green, 'calm', { h: 0.85 }), fig(56, C.yellow, 'frown', { h: 0.5 }), arrow(66, 60, 82, 60, HL, 2.6), ex(74, 46, 14), townHall(98, 92, 0.7), ground),
   'forv.orosanmälan': all(envelope(30, 72, 1.3), say(34, 30, 34, 28, 30, 58, all(circle(34, 30, 9, C.skin, C.ink, 1.2), circle(31, 28, 1, C.ink, null), circle(37, 28, 1, C.ink, null), path('M30 35 Q34 32 38 35', 'none', C.ink, 1.1))), arrow(54, 72, 76, 72, HL, 2.4), townHall(96, 92, 0.7), ground),
   'forv.skyddad-identitet': all(shield(36, 62, 2.4, '#cfe3f3', all(circle(0, -4, 5, C.skin, C.ink, 1), path('M-8 10 C-8 2 8 2 8 10 Z', C.purple, C.ink, 1))), greyed(house(92, 70, 1.4)), q(92, 40, 18, C.navy), ground),
-  'forv.sekretessmarkering': all(rect(22, 14, 64, 92, C.white, 2, C.ink, 1.6), ...[0, 1, 2, 3, 4].map((i) => all(circle(32, 28 + i * 17, 4, C.skin, C.ink, 0.9), line(`M40 ${28 + i * 17} L76 ${28 + i * 17}`, i === 2 ? RED : C.grey2, 2.4))), padlock(98, 62, 0.9, false, RED), ring(58, 62, 30, RED), ground),
+  'forv.sekretessmarkering': all(cardBox(60, 92, 2), ground),
   // ── Personuppgifter och integritet ──
   'forv.integritetskränkande': all(rect(64, 30, 46, 50, '#cfe3f3', 2, C.ink, 1.6), line('M87 30 L87 80 M64 55 L110 55', C.ink, 1.4), mini(78, 46, C.orange, 'frown', 0.9), fig(26, C.dark, 'calm', { h: 0.85 }), reach(26, 0.85, 1, 48, 50), rect(44, 42, 9, 15, C.dark, 2, C.ink, 1), rect(45.5, 44, 6, 10, '#bfe3f5', 1, null), cross(56, 22, 1.4), ground),
   'forv.dataskyddsförordningen': all(flagEU(10, 16, 1.6), lawBook(30, 80, 1), shield(82, 62, 2.2, C.navy, idCard(0, 0, 0.55)), ground),
@@ -226,11 +244,11 @@ export const AUTHORITY_MOTIFS: Record<string, Svg> = {
   'forv.kamerabevakning': all(rect(66, 12, 50, 100, '#e8dccb', 2, C.ink, 1.6), rect(78, 60, 26, 52, '#9ad0f0', 1, C.ink, 1.3), cctv(70, 30, 1.1), fig(32, C.orange, 'smile', { h: 0.8 }), ground),
   'forv.Integritetsskyddsmyndigheten': all(office(30, 88, 0.75, '#cfd8e2', true, shield(0, -4, 0.5, C.navy)), mag(64, 56, 1.1), company(92, 90, 0.55), db(96, 44, 0.5), ground),
   // ── Myndigheters serviceskyldighet ──
-  'forv.serviceskyldighet': all(lawBook(106, 20, 0.5), fig(92, C.navy, 'smile', { h: 0.85 }), counter(64, 118, 82), reach(92, 0.85, -1, 70, 70), palm(68, 66, 0.9), fig(26, C.orange, 'smile', { h: 0.85 }), sb(26, 0.85, 1, 18, 18, (cx, cy) => q(cx, cy, 12)), check(62, 40, 1)),
-  'forv.service.2': all(fig(92, C.navy, 'laugh', { h: 0.85 }), counter(60, 118, 82), bell(76, 82), fig(28, C.orange, 'smile', { h: 0.85 }), star(52, 22, 6), star(64, 14, 6), star(76, 22, 6)),
+  'forv.serviceskyldighet': all(lawBook(60, 18, 0.55), arrow(60, 32, 60, 44, HL, 2.2), rect(14, 80, 92, 6, C.tan, 2, C.ink, 1.8), line('M22 86 L22 112 M98 86 L98 112', C.brown, 3), fig(26, C.navy, 'smile', { h: 0.85 }), fig(94, C.orange, 'smile', { h: 0.8 }), doc(60, 70, 0.6, check(0, 6, 0.8), 3), reach(26, 0.85, 1, 48, 66), reach(94, 0.8, -1, 72, 68)),
+  'forv.service.2': all(queueSign(60, 18), fig(92, C.navy, 'smile', { h: 0.85 }), counter(60, 118, 82), bell(104, 82), reach(92, 0.85, -1, 68, 72), doc(62, 70, 0.45, '', 3), fig(26, C.orange, 'laugh', { h: 0.85 }), rect(40, 66, 8, 10, C.white, 1, C.ink, 1)),
   'forv.tillgänglig': all(office(40, 90, 1, '#cfd8e2', true, rect(-5, 9, 10, 13, '#9ad0f0', 0.5, C.ink, 1)), ramp(26, 22), handset(88, 30, 1.2), envelope(96, 64, 0.7), okB(104, 92, 7), ground),
   'forv.hänvisa': all(office(18, 96, 0.6), fig(46, C.navy, 'smile', { h: 0.8 }), reach(46, 0.8, 1, 74, 40), palm(78, 36, 1), arrow(78, 66, 96, 66, HL, 2.4), office(102, 96, 0.6, '#d8e8c9'), fig(70, C.orange, 'smile', { h: 0.55 }), ground),
-  'forv.vägledning': all(line('M8 108 C40 96 60 80 100 60', C.grey2, 8), fig(30, C.navy, 'smile', { h: 0.85 }), reach(30, 0.85, 1, 56, 52), palm(60, 48, 1), fig(82, C.orange, 'smile', { h: 0.65 }), arrow(92, 70, 106, 50, HL, 2.2), office(104, 28, 0.35), ground),
+  'forv.vägledning': all(fig(30, C.navy, 'smile', { h: 0.85 }), reach(30, 0.85, 1, 52, 60), leaflet(70, 54, 1.5), ring(70, 54, 30), fig(104, C.orange, 'smile', { h: 0.6 }), ground),
   'forv.begriplig': all(fig(76, C.orange, 'laugh', { h: 0.85 }), bulbOn(76, 14), doc(30, 62, 1.2, '', 3), arrow(48, 60, 60, 60, HL, 2.2), check(102, 30, 1)),
   'forv.klarspråk': all(greyed(doc(28, 50, 1.2, '', 5)), cross(28, 92, 1), doc(78, 50, 1.3, '', 3, C.navy), check(78, 92, 1.2), office(106, 18, 0.25)),
   'forv.utan-dröjsmål': all(office(22, 90, 0.6), watch(60, 30, 1.1), envelope(64, 78, 0.8), line('M32 72 L48 72 M28 80 L46 80 M32 88 L48 88', C.grey, 2), arrow(78, 78, 90, 78, HL, 2.6), fig(104, C.orange, 'smile', { h: 0.6 }), ground),
