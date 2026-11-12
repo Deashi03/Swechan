@@ -11,6 +11,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'arbp.': () => import('./workplace').then((m) => m.WORKPLACE_MOTIFS),
   'jobb.': () => import('./jobSearch').then((m) => m.JOB_SEARCH_MOTIFS),
   'pek.': () => import('./privateEconomy').then((m) => m.PRIVATE_ECONOMY_MOTIFS),
+  'uni.': () => import('./university').then((m) => m.UNIVERSITY_MOTIFS),
   'ftg.': () => import('./business').then((m) => m.BUSINESS_MOTIFS),
   'mark.': () => import('./marketEconomy').then((m) => m.MARKET_ECONOMY_MOTIFS),
   'bank.': () => import('./banking').then((m) => m.BANKING_MOTIFS),
