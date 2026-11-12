@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.34.0 (släppt 2026-11-12, PR #49) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.35.0 (2026-11-12, gren `claude/swechan-0.35`) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 719 publicerade moduler. 714 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och överämnena *Politik & demokrati* (R03-A01), *Juridik & rättsväsende* (R03-A02), *Ekonomi & arbetsliv* (R03-A03), *Utbildning & lärande* (R03-A04) och *Städer & offentlig service* (R03-A05). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 761 publicerade moduler. 756 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och hela *Samhälle & institutioner* (R03, sex överämnen från *Politik & demokrati* till *Medier & samhällsdebatt*). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Medier & samhällsdebatt* (R03-A06).
+  - Nästa rotområde är *Historia & humaniora* (R04), med första överämnet *Historiska epoker* (R04-A01).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 9 861 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 10 199 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Medier & samhällsdebatt* (R03-A06), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Historiska epoker* (R04-A01) i *Historia & humaniora*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -83,6 +83,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Befolkning & migration: `s.vara-skriven.1`, `s.befolkning.1`, `s.utflyttning.2`, `s.ursprungsland.2`
   - Civilsamhälle: `s.välgörenhet.1`
   - *trivsam* förväxlades med *mysig*/*charmig*, *myndighet* med *statlig*/*förvaltning*, *medborgarservice* med *kontaktcenter*/*medborgarkontor*, *framkomlighet* med *busskörfält*/*trafikflöde*, *befolkning* med *folkmängd*/*invånarantal*, *utflyttning* (från en ort) med *avfolkning*/*urbanisering*, *ursprungsland* med *hemland* och *välgörenhet* med *välgörenhetsorganisation*/*skänka*. Produktägaren kan överväga synonymmarkering och ett nytt test.
+- **Från 0.35 (25 ord):**
+  - Nyhetsmedier: `s.sensation.1`
+  - Källkritik: `s.värdeladdad.1`, `s.faktagranskning.1`, `s.myt.1`, `s.ensidig.1`, `s.vinkla.1`, `s.framställa.1`, `s.tendens.1`
+  - Sociala medier: `s.trend.1`, `s.sprida-sig.1`
+  - Reklam & påverkan: `s.image.1`
+  - Debatt & opinion: `s.ledarskribent.1`, `s.argumentation.1`, `s.ta-debatten.1`, `s.saklighet.1`, `s.polariserad.1`
+  - Yttrandefrihet & medierätt: `s.inskränkning.1`, `s.åsiktsfrihet.1`, `s.pressfrihet.1`, `s.ensamansvar.1`, `s.upphovsrätt.1`, `s.förtal.1`, `s.förtala.1`, `s.nedsättande.1`, `s.kränkande.1`
+  - Många förväxlades med ett närliggande ord ur samma ordfamilj eller en nära synonym: *saklighet/saklig*, *förtal/förtala*, *kränkande/kränka*, *nedsättande/kränkande*, *pressfrihet/tryckfrihet/meddelarfrihet*, *åsiktsfrihet/yttrandefrihet*, *ensamansvar/ansvarig utgivare*, *polariserad/splittrad/läger*, *vinkla/ensidig/framställa*, *trend/trendig/sprida sig/viral*, *sensation/nyhetsvärde*. Från 0.35 underkändes också medelsäkra rätta svar när granskaren uttryckligen skrev att två ord förväxlas. Produktägaren kan överväga synonymmarkering och ett nytt test.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -176,6 +184,18 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - ungefär hälften av dricksvattnet från grundvatten, biljettintäkterna täcker ungefär halva kostnaden, Hesa Fredrik testas kl. 15 första helgfria måndagen i mars, juni, september och december
   - flyttanmälan inom en vecka, samordningsnummer (dag + 60), etableringsprogrammet högst två år, dubbelt medborgarskap sedan 2001, ungefär en halv miljon utlandssvenskar, ungefär var femte invånare utrikes född, 1,3 miljoner utvandrare 1850–1930; hemvisttiden för medborgarskap anges medvetet utan antal år
   - passexpeditionen (foto tas på plats) är skriven ur minnet; texten om dagvatten i Uppsala är förenklad
+- **0.35, svenska:**
+  - nyare eller branschord som kanske inte står i SAOL: *avpublicera*, *deepfake* (deepfaken, deepfakes), *trenda* (vardagligt), *vlogg*, *selfie* (selfier), *nättroll*, *pixla*, *reklammärkning* (lagen säger *reklamidentifiering*), *köpsug*, *köphets*, *skrämseltaktik*
+  - böjningar: *influencer* (plural influencer/influencers), *image* (utan plural, uttal [ímmitj]), *samarbetspartner* (plural samarbetspartner), *jury* (juryer), *ansvarig utgivare* (ansvariga utgivaren)
+  - *inrikesnyhet*/*utrikesnyhet* som nya sammansättningar; *stå bakom* som egen post (*ligga bakom* betyder orsak); *tendens* har bara källkritiksbetydelsen; *vi och dom* med talspråksformen *dom*
+  - egna betydelser för *gå framåt* och *backa* i opinionen kan diskuteras
+  - nivåer: C1 för t.ex. *nyhetsvärdering*, *allmänintresse*, *grävande journalistik*, *avpublicera*, *presstalesperson*, *marknadsföringslagen*, *refusera*, *tillbakavisa*
+- **0.35, japanska:**
+  - ungefärliga motsvarigheter: *Justitiekanslern* ({司法長官|しほうちょうかん}), *hets mot folkgrupp* (ヘイトスピーチ), *den tredje statsmakten* (jämförs med {第四|だいよん}の{権力|けんりょく}), *ledare* ({社説|しゃせつ}), *ledarskribent* ({論説委員|ろんせついいん}), *debattör* ({論客|ろんきゃく}), *pajkastning* ({泥仕合|どろじあい}), *folkbildning* ({民衆教育|みんしゅうきょういく}), *vlogg* (ブイログ)
+- **0.35, fakta (kan ändras över tid):**
+  - Justitiekanslerns ämbete 1713, Pressens opinionsnämnd 1916, Mediernas etiska nämnd och Medieombudsmannen från 2020, olaga integritetsintrång (BrB 4:6 c) från 2018, yttrandefrihetsgrundlagen 1992, nio jurymedlemmar i tryckfrihetsmål; paragrafnummer i tryckfrihetsförordningen är medvetet utelämnade (numreringen ändrades 2019)
+  - produktplacering ska visas i början och slutet av tv-program (radio- och tv-lagen), reklam ska märkas tydligt och tidigt (marknadsföringslagen, Konsumentverket)
+  - kvällstidningarna kom förr ut på eftermiddagen, chefredaktören är "ofta" ansvarig utgivare, felmarginalen ungefär 2 procentenheter vid 1 000 intervjuer, saklighetskravet för SVT och SR, folkhögskolor från 1868
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -194,10 +214,10 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v38`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v39`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Tidningar och nyhetsredaktioner* (SWC-SAM-06-01-01) som exempel. Byt exemplet när den publiceras.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Jägar- och samlarsamhällen* (SWC-HIS-01-01-01) som exempel. Byt exemplet när den publiceras.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.

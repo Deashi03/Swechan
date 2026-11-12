@@ -126,6 +126,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.34 – Städer & offentlig service (klar)
 - 42 nya moduler i Samhälle & institutioner → Städer & offentlig service med 424 nya ordbilder. 9 ord saknar bild efter två blindtestomgångar.
 
+## v0.35 – Medier & samhällsdebatt (klar)
+- 42 nya moduler i Samhälle & institutioner → Medier & samhällsdebatt med 338 nya ordbilder. 25 ord saknar bild efter två blindtestomgångar. Hela Samhälle & institutioner (R03) är nu publicerat.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

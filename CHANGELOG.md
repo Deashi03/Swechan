@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.35.0 – 2026-11-12
+
+42 nya moduler som gör överämnet *Medier & samhällsdebatt* (R03-A06) komplett, och därmed hela rotområdet *Samhälle & institutioner* (R03). Varje nytt modulord har en egen bild, utom de 25 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 693 målord)
+- **Nyhetsmedier** (1801–1807): tidningar och nyhetsredaktioner, rubriker och ingresser, reporter och redaktör, nyhetsvärdering, nyhetsintervju, publicering och rättelse samt lokala och internationella nyheter.
+- **Källkritik** (1811–1817): källa och avsändare, primär- och sekundärkällor, fakta och åsikt, bekräfta uppgifter, desinformation och rykten, manipulerade bilder och att kritiskt läsa en nyhet.
+- **Sociala medier** (1821–1827): inlägg och kommentarer, följa och dela, algoritmer och flöden, influencers och publik, hashtaggar och trender, digitala konflikter och sekretessinställningar.
+- **Reklam & påverkan** (1831–1837): annonser och kampanjer, målgrupper, varumärken, retoriska knep, sponsring, produktplacering och konsumentpåverkan.
+- **Debatt & opinion** (1841–1847): debattartikel och insändare, argument och motargument, opinionsundersökningar, politiska debatter, saklighet och ton, polarisering och offentlig diskussion.
+- **Yttrandefrihet & medierätt** (1851–1857): yttrandefrihetens grunder, pressfrihet, ansvarig utgivare, upphovsrätt i medier, integritet och publicering, förtal och kränkningar samt gränser för publicering.
+- Varje modul har 15–19 målord, lästext med fem frågor och konversationsunderlag. Det finns 336 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`.
+- Nya betydelser på befintliga poster: *bilaga* och *notis* (i en tidning), *slå upp* (stort), *rapportera* (i nyheterna; på nätet), *avsändare* (av information), *beroende* och *i andra hand* (om källor), *spåra* (var något kommer ifrån; en person), *vinkel* (i en text), *lägga ut*, *dela*, *räckvidd*, *visning*, *utmaning*, *fluga* (modefluga), *inställning* och *behörighet* (på nätet), *tilltala* och *knep* (i reklam), *ambassadör* (för ett företag), *replik* (skriftligt svar), *gå framåt* och *backa* (i opinionen).
+- *reklam*, *gilla* och *följa* hade bara funnits i grundordförrådet och har nu egna poster. *ledare* och *läger* är nya poster där betydelse 2 (ledarartikel, åsiktsläger) är modulord.
+- Grupperna skrevs parallellt med listor över varandras ord. *korrekt* skrevs av både Nyhetsmedier och Källkritik och ägs av Nyhetsmedier. *rapportera* och *spåra* fick betydelse 3 eftersom betydelse 2 redan hade lagts till av en tidigare grupp. *s.uppdatera.1* och *s.utmana.1* hade saknat bild och har fått bilder.
+
+### Bilder (338 nya ordbilder)
+- 175 symbolbilder, 76 bilder som får användas i bildövningar och resten scener.
+- 200 symbol- och adjektivbilder blindtestades. 175 klarade testet efter högst två omgångar.
+- **25 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Där granskaren uttryckligen skrev att två ord förväxlas lätt underkändes bilden även med medelsäker rätt svar, så att den fick en ny chans i omgång 2.
+- Äkta synonymer är markerade som förväxlingsbara, bland annat *primärkälla/förstahandskälla*, *sekundärkälla/andrahandskälla*, *korrigera/rätta* och *opinionsmätning/opinionsundersökning*.
+- Nya bildfiler i `src/ui/wordArt/`: `newsMedia.ts`, `sourceCriticism.ts`, `socialMedia.ts`, `advertising.ts`, `debate.ts` och `mediaLaw.ts`.
+
+### Verktyg och test
+- e2e-testets planerade exempel är *Jägar- och samlarsamhällen* (Historia & humaniora → Historiska epoker → Förhistorisk tid).
+
+Service workern är `swechan-v39`.
+
 ## 0.34.0 – 2026-11-12
 
 42 nya moduler som gör överämnet *Städer & offentlig service* (R03-A05) komplett. Varje nytt modulord har en egen bild, utom de 9 ord som underkändes i två blindtestomgångar.
