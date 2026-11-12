@@ -81,6 +81,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.trend.1', 's.sprida-sig.1',
   // 0.35 (Reklam & påverkan), after two blind-test rounds
   's.image.1',
+  // 0.35 (Yttrandefrihet & medierätt), after two blind-test rounds
+  's.inskränkning.1', 's.åsiktsfrihet.1', 's.pressfrihet.1', 's.ensamansvar.1', 's.upphovsrätt.1', 's.förtal.1', 's.förtala.1', 's.nedsättande.1', 's.kränkande.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
