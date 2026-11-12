@@ -1,0 +1,177 @@
+{
+ "id": "m.pressfrihet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Pressfrihet",
+ "titleJa": "{報道|ほうどう}の{自由|じゆう}",
+ "descriptionSv": "Pressfrihet: pressfrihet, tryckfrihet, journalist, den tredje statsmakten, maktgranskning, makthavare, avslöja, meddelarfrihet, uppgiftslämnare, visselblåsare, källskydd, anonym, hot, självcensur, diktatur och fängsla.",
+ "descriptionJa": "{報道|ほうどう}の{自由|じゆう}：{報道|ほうどう}の{自由|じゆう}、{出版|しゅっぱん}の{自由|じゆう}、ジャーナリスト、{第三|だいさん}の{権力|けんりょく}、{権力|けんりょく}の{監視|かんし}、{権力者|けんりょくしゃ}、{明|あ}かす、{情報提供|じょうほうていきょう}の{自由|じゆう}、{情報提供者|じょうほうていきょうしゃ}、{内部告発者|ないぶこくはつしゃ}、{取材源|しゅざいげん}の{保護|ほご}、{匿名|とくめい}の、{脅迫|きょうはく}、{自己検閲|じこけんえつ}、{独裁|どくさい}、{投獄|とうごく}する。",
+ "categoryId": "R03-A06-T06",
+ "tags": [
+  "medier",
+  "juridik",
+  "yttrandefrihet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.yttrandefrihetens-grunder"
+ ],
+ "related": [],
+ "recommendedOrder": 1852,
+ "words": [
+  {
+   "senseId": "s.pressfrihet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckfrihet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.journalist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.den-tredje-statsmakten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.maktgranskning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.makthavare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avslöja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.meddelarfrihet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppgiftslämnare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visselblåsare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.källskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anonym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självcensur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.diktatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fängsla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Granskningen som kostade",
+  "paragraphs": [
+   "Lina är journalist på en lokaltidning i Norrland. Hon arbetar med maktgranskning: hon undersöker hur kommunen använder sina pengar. Hon brukar säga att medierna är den tredje statsmakten. – Vi ska hålla koll på makthavarna, säger hon.",
+   "En dag ringer en uppgiftslämnare som arbetar på kommunen. Han berättar att en chef har gett jobb till sina vänner. Han vill vara anonym. Lina lovar honom källskydd: hon kommer aldrig att berätta vem han är. Tack vare meddelarfriheten får han berätta sådant för en journalist utan att bli straffad.",
+   "Lina får fler dokument från en visselblåsare. Efter några veckor kan hon avslöja hela historien i tidningen, och chefen får sluta. Men Lina får också hot, både på nätet och i brevlådan. Hon blir rädd, men fortsätter att skriva. – Om jag slutar blir det självcensur, och då vinner de som skickar hoten, säger hon.",
+   "På redaktionen pratar de om att pressfrihet inte är något självklart. I Sverige har vi haft tryckfrihet sedan 1766. Men i en diktatur kan regimen fängsla journalister som skriver om korruption. Varje år sitter hundratals journalister i fängelse runt om i världen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad undersöker Lina?",
+    "options": [
+     "Hur skolorna i kommunen fungerar",
+     "Vad kändisar gör på helgerna",
+     "Hur många som läser tidningen",
+     "Hur kommunen använder sina pengar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… hon undersöker hur kommunen använder sina pengar.",
+    "explanationJa": "{自治体|じちたい}がお{金|かね}をどう{使|つか}っているかを{調|しら}べています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad lovar Lina uppgiftslämnaren?",
+    "options": [
+     "Att han ska få pengar",
+     "Att han ska få ett nytt jobb",
+     "Att aldrig berätta vem han är",
+     "Att hans namn ska stå i tidningen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Lina lovar honom källskydd: hon kommer aldrig att berätta vem han är.",
+    "explanationJa": "{彼|かれ}が{誰|だれ}なのかを{決|けっ}して{明|あ}かさないと{約束|やくそく}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Lina slutar skriva när hon får hot.",
+    "correct": false,
+    "explanationSv": "Hon blir rädd, men fortsätter att skriva.",
+    "explanationJa": "{怖|こわ}くなりますが、{書|か}き{続|つづ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför vill Lina inte sluta skriva?",
+    "options": [
+     "Hennes chef säger att hon måste",
+     "Hon vill bli känd",
+     "Hon får mer betalt",
+     "Då blir det självcensur och de som skickar hoten vinner"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Om jag slutar blir det självcensur, och då vinner de som skickar hoten, säger hon.",
+    "explanationJa": "やめれば{自己検閲|じこけんえつ}になり、{脅|おど}す{人|ひと}たちの{思|おも}いどおりになるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det finns länder där journalister hamnar i fängelse för det de skriver.",
+    "correct": true,
+    "explanationSv": "Men i en diktatur kan regimen fängsla journalister som skriver om korruption.",
+    "explanationJa": "{独裁国家|どくさいこっか}では、{記者|きしゃ}が{投獄|とうごく}されることがあります。"
+   }
+  ],
+  "factSources": [
+   "Sverige fick sin första tryckfrihetsförordning 1766 (Riksdagen, riksdagen.se).",
+   "Meddelarfriheten och rätten att vara anonym när man lämnar uppgifter till medierna, med tystnadsplikt för den som tar emot uppgifterna och efterforskningsförbud för myndigheter, regleras i tryckfrihetsförordningen och yttrandefrihetsgrundlagen.",
+   "Lagen (2021:890) om skydd för personer som rapporterar om missförhållanden skyddar visselblåsare mot repressalier från arbetsgivaren.",
+   "Reportrar utan gränser (rsf.org) publicerar varje år ett pressfrihetsindex och räknar varje år hundratals fängslade journalister i världen.",
+   "Personerna och händelserna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om pressfrihet och om journalisters arbete.",
+  "discussionPoints": [
+   "Varför är pressfrihet viktig i en demokrati?",
+   "Skulle du våga vara visselblåsare på din arbetsplats?",
+   "Hur är pressfriheten i ditt hemland?",
+   "Vad kan man göra för att skydda journalister mot hot?"
+  ]
+ }
+}

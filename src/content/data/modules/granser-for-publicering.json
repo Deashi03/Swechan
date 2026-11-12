@@ -1,0 +1,178 @@
+{
+ "id": "m.granser-for-publicering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Gränser för publicering",
+ "titleJa": "{報道|ほうどう}の{限界|げんかい}",
+ "descriptionSv": "Gränser för publicering: dra gränsen, olaglig, pressetik, avvägning, stötande, avstå, självreglering, överträda, klagomål, hets mot folkgrupp, folkgrupp, uppvigling, rikets säkerhet, olämplig, våldsskildring och opartisk.",
+ "descriptionJa": "{報道|ほうどう}の{限界|げんかい}：{一線|いっせん}を{引|ひ}く、{違法|いほう}な、{報道倫理|ほうどうりんり}、{兼|か}ね{合|あ}い、{不快|ふかい}な、{控|ひか}える、{自主規制|じしゅきせい}、{違反|いはん}する、{苦情|くじょう}、{集団|しゅうだん}に{対|たい}するヘイトスピーチ、{民族集団|みんぞくしゅうだん}、{扇動|せんどう}、{国家|こっか}の{安全|あんぜん}、{不適切|ふてきせつ}な、{暴力描写|ぼうりょくびょうしゃ}、{公平|こうへい}な。",
+ "categoryId": "R03-A06-T06",
+ "tags": [
+  "medier",
+  "juridik",
+  "yttrandefrihet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.fortal-och-krankningar"
+ ],
+ "related": [],
+ "recommendedOrder": 1857,
+ "words": [
+  {
+   "senseId": "s.dra-gränsen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.olaglig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pressetik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvägning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stötande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avstå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självreglering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överträda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klagomål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hets-mot-folkgrupp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.folkgrupp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppvigling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rikets-säkerhet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.olämplig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våldsskildring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.opartisk.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En svår bild",
+  "paragraphs": [
+   "Det är kväll på redaktionen. En bild från en olycka på motorvägen har kommit in. På bilden syns en skadad person tydligt. Nyhetschefen Maria och den ansvariga utgivaren Per diskuterar om de ska publicera den. – Var ska vi dra gränsen? frågar Maria.",
+   "Det är inte olagligt att publicera bilden. Men pressetiken säger att man ska vara försiktig med bilder på människor som är skadade. – Det är en avvägning, säger Per. Bilden visar hur farlig vägen är, men den kan vara stötande för läsarna och för familjen. De bestämmer sig för att avstå från bilden och använder en bild på polisbilarna i stället.",
+   "Pressetiken är inte en lag, utan den bygger på självreglering. Om en tidning överträder reglerna kan läsarna lämna ett klagomål till en etisk nämnd som medierna själva har startat. Men vissa gränser står också i lagen.",
+   "Per berättar om de gränserna för en ny praktikant. Hets mot folkgrupp är ett brott: man får inte sprida hot mot en folkgrupp eller se ner på den. Uppvigling, alltså att uppmana andra till brott, är också förbjudet. Och av hänsyn till rikets säkerhet kan det vara brottsligt att publicera vissa hemliga uppgifter om försvaret.",
+   "– Sedan finns det saker som är tillåtna enligt lagen men olämpliga, säger Per. En grov våldsskildring kan vara viktig i ett reportage om krig, men olämplig bredvid en nyhet om vädret. Och vi måste alltid vara opartiska, så att läsarna litar på oss."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad syns på bilden från olyckan?",
+    "options": [
+     "En brinnande bil",
+     "Polisbilar",
+     "En tom väg",
+     "En skadad person"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På bilden syns en skadad person tydligt.",
+    "explanationJa": "けがをした{人|ひと}がはっきり{写|うつ}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Det är olagligt att publicera bilden.",
+    "correct": false,
+    "explanationSv": "Det är inte olagligt att publicera bilden.",
+    "explanationJa": "その{写真|しゃしん}を{掲載|けいさい}することは{違法|いほう}ではありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken bild använder tidningen till slut?",
+    "options": [
+     "Bilden på den skadade personen",
+     "En bild på redaktionen",
+     "En bild på polisbilarna",
+     "Ingen bild alls"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… och använder en bild på polisbilarna i stället.",
+    "explanationJa": "パトカーの{写真|しゃしん}を{使|つか}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att pressetiken bygger på självreglering?",
+    "options": [
+     "Riksdagen har skrivit reglerna",
+     "Medierna har själva bestämt reglerna",
+     "Polisen kontrollerar reglerna",
+     "Läsarna skriver reglerna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Pressetiken är inte en lag, utan den bygger på självreglering.",
+    "explanationJa": "メディアが{自分|じぶん}たちでルールを{決|き}めたということです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Per tycker att allt som är tillåtet enligt lagen också passar att publicera.",
+    "correct": false,
+    "explanationSv": "– Sedan finns det saker som är tillåtna enligt lagen men olämpliga, säger Per.",
+    "explanationJa": "{合法|ごうほう}でも{不適切|ふてきせつ}なものがあると{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Pressetiken är frivillig självreglering; sedan 2020 prövar Medieombudsmannen och Mediernas etiska nämnd klagomål mot anslutna medier, och ett medium som klandras ska publicera beslutet och betala en avgift (medieombudsmannen.se).",
+   "Det första pressetiska organet i Sverige, Pressens opinionsnämnd, bildades 1916.",
+   "Hets mot folkgrupp (brottsbalken 16 kap. 8 §) och uppvigling (brottsbalken 16 kap. 5 §) är brott och kan också vara tryckfrihetsbrott (tryckfrihetsförordningen).",
+   "Regeringsformen 2 kap. 23 § tillåter att yttrandefriheten begränsas med hänsyn till bland annat rikets säkerhet.",
+   "Personerna och händelserna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om var gränsen går för vad medierna bör publicera.",
+  "discussionPoints": [
+   "Skulle du publicera bilden från olyckan? Varför eller varför inte?",
+   "Vad är skillnaden mellan det som är olagligt och det som är olämpligt?",
+   "Finns det bilder i nyheterna som du tycker är för starka?",
+   "Är det bra att medierna har självreglering, eller borde staten bestämma reglerna?"
+  ]
+ }
+}
