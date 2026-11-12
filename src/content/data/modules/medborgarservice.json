@@ -1,0 +1,173 @@
+{
+ "id": "m.medborgarservice",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Medborgarservice",
+ "titleJa": "{住民|じゅうみん}サービス",
+ "descriptionSv": "Medborgarservice: invånare, medborgarservice, kontaktcenter, medborgarkontor, kommunvägledare, ärende, telefontid, kölapp, e-legitimation, digital brevlåda, felanmäla, synpunkt, klagomål, servicegaranti, samhällsinformation och lättläst.",
+ "descriptionJa": "{住民|じゅうみん}サービス：{住民|じゅうみん}、{住民|じゅうみん}サービス、コンタクトセンター、{住民|じゅうみん}サービス{窓口|まどぐち}、{案内|あんない}・{相談員|そうだんいん}、{用件|ようけん}、{電話受付時間|でんわうけつけじかん}、{整理券|せいりけん}、{電子身分証明書|でんしみぶんしょうめいしょ}、デジタル{郵便受|ゆうびんう}け、{故障|こしょう}を{届|とど}け{出|で}る、{意見|いけん}、{苦情|くじょう}、サービス{保証|ほしょう}、{社会生活|しゃかいせいかつ}の{情報|じょうほう}、{読|よ}みやすい。",
+ "categoryId": "R03-A05-T03",
+ "tags": [
+  "samhällsservice",
+  "kommun"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.aldreomsorg"
+ ],
+ "related": [],
+ "recommendedOrder": 1727,
+ "words": [
+  {
+   "senseId": "s.invånare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medborgarservice.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontaktcenter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medborgarkontor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kommunvägledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ärende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.telefontid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kölapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.e-legitimation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.digital-brevlåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felanmäla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klagomål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.servicegaranti.1",
+   "active": false
+  },
+  {
+   "senseId": "s.samhällsinformation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lättläst.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hiro har frågor till kommunen",
+  "paragraphs": [
+   "Hiro har nyss flyttat till Norrköping. Han är nu invånare i kommunen och har många frågor. På kommunens webbplats läser han om medborgarservice.",
+   "Först ringer han kommunens kontaktcenter. Telefontiden är mellan åtta och fem. En kommunvägledare svarar och skriver ner hans ärende om förskola.",
+   "Sedan går han till ett medborgarkontor i stadsdelen. Där tar han en kölapp och väntar i tio minuter. Personalen förklarar hur han kan få e-legitimation och en digital brevlåda.",
+   "På webbplatsen finns samhällsinformation på många språk och sidor på lättläst svenska. Där kan man också felanmäla en trasig gatlampa eller lämna en synpunkt.",
+   "Hiro skriver ett klagomål om att det är mörkt på gångvägen till hans hus. Enligt kommunens servicegaranti ska han få svar inom tre arbetsdagar. Två dagar senare får han ett svar: lamporna ska lagas nästa vecka."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken tid kan man ringa till kontaktcentret?",
+    "options": [
+     "Mellan åtta och fem",
+     "Hela dygnet",
+     "Bara på helgen",
+     "Mellan tio och tolv"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Telefontiden är mellan åtta och fem.",
+    "explanationJa": "{電話受付時間|でんわうけつけじかん}は8{時|じ}から5{時|じ}までです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Hiro på medborgarkontoret innan han får hjälp?",
+    "options": [
+     "Tar en kölapp och väntar",
+     "Ringer kontaktcentret",
+     "Skriver ett klagomål",
+     "Visar sin e-legitimation"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Där tar han en kölapp och väntar i tio minuter.",
+    "explanationJa": "{整理券|せいりけん}を{取|と}って10{分|ぷん}{待|ま}ちます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "På webbplatsen finns information på flera språk.",
+    "correct": true,
+    "explanationSv": "På webbplatsen finns samhällsinformation på många språk …",
+    "explanationJa": "いくつもの{言語|げんご}で{情報|じょうほう}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför skriver Hiro ett klagomål?",
+    "options": [
+     "Han fick vänta länge på medborgarkontoret",
+     "Det är mörkt på gångvägen till hans hus",
+     "Kontaktcentret svarade inte",
+     "Hans digitala brevlåda fungerar inte"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hiro skriver ett klagomål om att det är mörkt på gångvägen till hans hus.",
+    "explanationJa": "{家|いえ}までの{歩道|ほどう}が{暗|くら}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kommunen höll sin servicegaranti.",
+    "correct": true,
+    "explanationSv": "Två dagar senare får han ett svar …",
+    "explanationJa": "{三営業日|さんえいぎょうび}{以内|いない}という{約束|やくそく}より{早|はや}く、{二日後|ふつかご}に{返事|へんじ}が{来|き}ました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man får hjälp av kommunen och myndigheter.",
+  "discussionPoints": [
+   "Hur brukar du kontakta kommunen: i telefon, på nätet eller på ett kontor?",
+   "Har du någon gång lämnat en synpunkt eller ett klagomål?",
+   "Vad är bra och dåligt med en digital brevlåda?",
+   "Hur ger kommunerna i Japan service till invånarna?"
+  ]
+ }
+}

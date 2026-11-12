@@ -1,0 +1,173 @@
+{
+ "id": "m.dricksvatten-och-avlopp",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Dricksvatten och avlopp",
+ "titleJa": "{飲料水|いんりょうすい}と{下水|げすい}",
+ "descriptionSv": "Dricksvatten och avlopp: dricksvatten, kranvatten, rena, grundvatten, vattenverk, vattenledning, ledningsnät, vattenmätare, vattenläcka, vattenavstängning, kokningsrekommendation, avlopp, reningsverk, dagvatten, vattenbrist och bevattningsförbud.",
+ "descriptionJa": "{飲料水|いんりょうすい}と{下水|げすい}：{飲料水|いんりょうすい}、{水道水|すいどうすい}、{浄化|じょうか}する、{地下水|ちかすい}、{浄水場|じょうすいじょう}、{水道管|すいどうかん}、{配管網|はいかんもう}、{水道|すいどう}メーター、{漏水|ろうすい}、{断水|だんすい}、{煮沸勧告|しゃふつかんこく}、{排水|はいすい}、{下水処理場|げすいしょりじょう}、{雨水|あまみず}、{水不足|みずぶそく}、{散水禁止|さんすいきんし}。",
+ "categoryId": "R03-A05-T03",
+ "tags": [
+  "samhällsservice",
+  "vatten"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sophamtning-och-atervinning"
+ ],
+ "related": [],
+ "recommendedOrder": 1722,
+ "words": [
+  {
+   "senseId": "s.dricksvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kranvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rena.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledningsnät.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenläcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenavstängning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kokningsrekommendation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reningsverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dagvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenbrist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bevattningsförbud.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vattnet i kranen",
+  "paragraphs": [
+   "Yuki har bott i Uppsala i ett år. Hon dricker kranvatten varje dag. Hennes kollega Erik berättar att dricksvattnet i stan kommer från grundvatten.",
+   "På vattenverket renar man vattnet och tar ofta prov på det. Sedan går det i vattenledningar under gatorna. Hela ledningsnätet är många mil långt.",
+   "En dag får Yuki ett brev. På torsdag blir det vattenavstängning mellan nio och tolv, eftersom kommunen ska laga en vattenläcka. Yuki fyller några flaskor med vatten kvällen innan. Erik säger att den som äger huset läser av vattenmätaren och betalar för vattnet.",
+   "Förra sommaren hittade man bakterier i vattnet i en liten ort i närheten, och kommunen gav en kokningsrekommendation. Samma sommar var det vattenbrist, och det blev bevattningsförbud i hela kommunen.",
+   "– Vattnet från toaletten går i avloppet till reningsverket, säger Erik. Men dagvattnet från gatorna går ofta direkt ut i sjön. Därför får man inte hälla färg i brunnarna."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var kommer dricksvattnet i Uppsala från enligt Erik?",
+    "options": [
+     "Från havet",
+     "Från en sjö i norr",
+     "Från regn som man samlar på taken",
+     "Från grundvatten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… dricksvattnet i stan kommer från grundvatten.",
+    "explanationJa": "{町|まち}の{飲料水|いんりょうすい}は{地下水|ちかすい}から{来|き}ています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir det vattenavstängning på torsdag?",
+    "options": [
+     "Det är vattenbrist",
+     "Det finns bakterier i vattnet",
+     "Yuki har inte betalat",
+     "Kommunen ska laga en vattenläcka"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… eftersom kommunen ska laga en vattenläcka.",
+    "explanationJa": "{市|し}が{漏水|ろうすい}を{修理|しゅうり}するからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Yuki läser själv av vattenmätaren och betalar för vattnet.",
+    "correct": false,
+    "explanationSv": "… den som äger huset läser av vattenmätaren och betalar för vattnet.",
+    "explanationJa": "メーターを{読|よ}んで{水道代|すいどうだい}を{払|はら}うのは、{建物|たてもの}の{持|も}ち{主|ぬし}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad gjorde kommunen när man hittade bakterier i vattnet?",
+    "options": [
+     "Gav en kokningsrekommendation",
+     "Stängde reningsverket",
+     "Gav bevattningsförbud för bakterierna",
+     "Bytte hela ledningsnätet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… och kommunen gav en kokningsrekommendation.",
+    "explanationJa": "{自治体|じちたい}は{煮沸勧告|しゃふつかんこく}を{出|だ}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Färg som man häller i en brunn på gatan kan hamna i sjön.",
+    "correct": true,
+    "explanationSv": "… dagvattnet från gatorna går ofta direkt ut i sjön.",
+    "explanationJa": "{雨水|あまみず}はそのまま{湖|みずうみ}に{流|なが}れることが{多|おお}いからです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni jämför dricksvatten och avlopp i Sverige och i Japan.",
+  "discussionPoints": [
+   "Dricker du kranvatten hemma?",
+   "Har du varit med om en vattenavstängning eller en vattenläcka?",
+   "Vad gör man när det är vattenbrist där du kommer ifrån?",
+   "Vad får man inte spola ner i toaletten?"
+  ]
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "id": "m.raddningstjanst",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Räddningstjänst",
+ "titleJa": "{消防|しょうぼう}・{救助|きゅうじょ}",
+ "descriptionSv": "Räddningstjänst: räddningstjänst, brand, släcka, utryckning, räddningsinsats, brandslang, rökdykare, evakuera, utrymningsväg, nödutgång, brandövning, skogsbrand, brandrisk, eldningsförbud, VMA, Hesa Fredrik och krisberedskap.",
+ "descriptionJa": "{消防|しょうぼう}・{救助|きゅうじょ}：{消防|しょうぼう}・{救助|きゅうじょ}、{火事|かじ}、{火|ひ}を{消|け}す、{出動|しゅつどう}、{救助|きゅうじょ}・{消火活動|しょうかかつどう}、{消防|しょうぼう}ホース、{煙|けむり}の{中|なか}で{活動|かつどう}する{消防士|しょうぼうし}、{避難|ひなん}させる、{避難経路|ひなんけいろ}、{非常口|ひじょうぐち}、{避難訓練|ひなんくんれん}、{山火事|やまかじ}、{火災|かさい}の{危険|きけん}、たき{火|び}・{火気|かき}の{使用禁止|しようきんし}、{国民|こくみん}への{緊急警報|きんきゅうけいほう}、{屋外警報|おくがいけいほう}サイレン、{危機|きき}への{備|そな}え。",
+ "categoryId": "R03-A05-T03",
+ "tags": [
+  "samhällsservice",
+  "räddning"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.snorojning-och-gatustadning"
+ ],
+ "related": [],
+ "recommendedOrder": 1724,
+ "words": [
+  {
+   "senseId": "s.räddningstjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utryckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räddningsinsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandslang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rökdykare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.evakuera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utrymningsväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödutgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandövning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skogsbrand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eldningsförbud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.VMA.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Hesa-Fredrik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.krisberedskap.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En natt med blåljus",
+  "paragraphs": [
+   "En natt börjar det brinna i en lägenhet i Gävle. En granne ringer 112, och efter åtta minuter är räddningstjänsten på plats. Utryckningen går snabbt, för det är inte långt att köra.",
+   "Två rökdykare går in i huset och hittar en äldre man. De andra drar fram en brandslang och börjar släcka. Polisen hjälper till att evakuera alla som bor i huset.",
+   "Branden är släckt efter en timme, och ingen har skadat sig. – Vi hade en brandövning i höstas, så alla visste var utrymningsvägen och nödutgången fanns, säger en granne. Hela räddningsinsatsen tar fyra timmar.",
+   "På sommaren är det ofta stor brandrisk i skogen. Efter flera veckor utan regn blir det eldningsförbud i hela länet. Ändå börjar en skogsbrand nära en sjö. Röken är tjock, och det kommer ett VMA på radion: alla ska stänga fönstren och stanna inne.",
+   "Den första måndagen som inte är en helgdag i mars, juni, september och december testar man Hesa Fredrik klockan tre. Då kan man tänka på sin egen krisberedskap: har jag vatten, mat och en radio hemma?"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång tid tar det innan räddningstjänsten är på plats?",
+    "options": [
+     "Åtta minuter",
+     "En timme",
+     "Fyra timmar",
+     "Två minuter"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… efter åtta minuter är räddningstjänsten på plats.",
+    "explanationJa": "{八分後|はっぷんご}に{到着|とうちゃく}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör rökdykarna?",
+    "options": [
+     "De ringer 112",
+     "De går in i huset och hittar en äldre man",
+     "De kör alla till sjukhuset",
+     "De testar sirenerna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Två rökdykare går in i huset och hittar en äldre man.",
+    "explanationJa": "{二人|ふたり}の{消防士|しょうぼうし}が{建物|たてもの}に{入|はい}り、{高齢|こうれい}の{男性|だんせい}を{見|み}つけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför visste alla grannar var utrymningsvägen fanns?",
+    "options": [
+     "De hade läst om det i tidningen",
+     "Polisen visade vägen",
+     "De hade haft en brandövning",
+     "Det står på dörren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Vi hade en brandövning i höstas …",
+    "explanationJa": "{去年|きょねん}の{秋|あき}に{避難訓練|ひなんくんれん}があったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "När det kom ett VMA skulle alla gå ut och titta på röken.",
+    "correct": false,
+    "explanationSv": "… alla ska stänga fönstren och stanna inne.",
+    "explanationJa": "{窓|まど}を{閉|し}めて{屋内|おくない}にいなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det var eldningsförbud eftersom det inte hade regnat på länge.",
+    "correct": true,
+    "explanationSv": "Efter flera veckor utan regn blir det eldningsförbud i hela länet.",
+    "explanationJa": "{何週間|なんしゅうかん}も{雨|あめ}が{降|ふ}らなかったからです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om brand, olyckor och om att vara beredd på en kris.",
+  "discussionPoints": [
+   "Har du varit med om en brandövning? Hur gick det till?",
+   "Vet du var utrymningsvägen finns där du bor eller arbetar?",
+   "Vad har du hemma för din krisberedskap?",
+   "Hur varnar man människor för fara i Japan?"
+  ]
+ }
+}
