@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.31.0 (2026-11-12, gren `claude/swechan-0.31`) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.31.0 (släppt 2026-11-12, PR #43) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
