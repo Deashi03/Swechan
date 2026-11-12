@@ -124,6 +124,18 @@ const bars = (x: number, base: number, w: number, gap: number, hs: number[], col
 /** A small house-hold budget sheet: icon rows with bars. */
 const budgetSheet = (x: number, y: number, s = 1, lens: number[] = [16, 10, 6], col: string = C.green) => g(`translate(${x} ${y}) scale(${s})`, rect(-20, -26, 40, 52, C.white, 2, C.ink, 1.6), g('translate(-12 -14) scale(0.45)', house(0, 0)), g('translate(-12 0) scale(0.4)', food(0, 0)), g('translate(-12 14) scale(0.45)', bus(0, 0)), ...lens.map((l, i) => rect(-4, -18 + i * 14, l, 6, col, 1, C.ink, 0.8)), line('M-16 22 L16 22', C.grey2, 1.4));
 
+// ── Round 2 (blind test): extra things for redrawn motifs ────────────
+/** A pie of money: gold with a grey wedge of `frac` (0–1) pulled out towards the upper right. */
+const pie = (x: number, y: number, r: number, frac: number, wedge: string = '#9aa3ad') => { const a = frac * Math.PI * 2, ex2 = x + r * Math.sin(a), ey = y - r * Math.cos(a), dx = 6 * Math.sin(a / 2), dy = -6 * Math.cos(a / 2); return all(path(`M${x} ${y} L${f1(ex2)} ${f1(ey)} A${r} ${r} 0 ${frac > 0.5 ? 0 : 1} 1 ${x} ${y - r} Z`, C.gold, C.ink, 1.6), g(`translate(${f1(dx)} ${f1(dy)})`, path(`M${x} ${y} L${x} ${y - r} A${r} ${r} 0 ${frac > 0.5 ? 1 : 0} 1 ${f1(ex2)} ${f1(ey)} Z`, wedge, C.ink, 1.6))); };
+/** A bank note split by a dashed line; the right part (`frac`) is grey and moved up-right. */
+const splitBill = (x: number, y: number, s = 1, moved = true) => g(`translate(${x} ${y}) scale(${s})`, rect(-18, -10, 26, 20, '#8fc79a', 2, C.ink, 1.3), circle(-6, 0, 5, 'rgba(255,255,255,0.55)', C.ink, 0.8), moved ? rect(12, -16, 12, 20, '#b7bec6', 2, C.ink, 1.3) : rect(8, -10, 12, 20, '#8fc79a', 2, C.ink, 1.3), line(moved ? 'M10 -12 L10 12' : 'M8 -10 L8 10', C.ink, 1.2, '3 2'));
+/** A framed portrait of a grey person (someone who has died) with a candle beside it. */
+const portrait = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, rect(-12, -15, 24, 30, '#c9a77c', 2, C.ink, 1.5), rect(-9, -12, 18, 24, '#e7e9ec', 1, null), circle(0, -3, 5, C.grey2, C.ink, 1), path('M-7 11 C-7 3 7 3 7 11 Z', C.grey, C.ink, 1), rect(16, 2, 6, 13, C.white, 1, C.ink, 1.1), line('M19 2 L19 -1', C.ink, 1), path('M19 -8 C22 -5 21 -2 19 -1 C17 -2 16 -5 19 -8 Z', C.orange, null));
+/** A cut gem. */
+const gem = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-12 -4 L-6 -11 L6 -11 L12 -4 L0 12 Z', '#8fd3f4', C.ink, 1.5), line('M-12 -4 L12 -4 M-6 -11 L-3 -4 L0 12 M6 -11 L3 -4 L0 12', C.ink, 0.9));
+/** A day square with an optional coin. */
+const day = (x: number, y: number, withCoin = true) => all(rect(x - 6, y - 6, 12, 12, C.white, 1.5, C.ink, 1.1), withCoin ? coin(x, y, 3.6) : '');
+
 export const PRIVATE_ECONOMY_MOTIFS: Record<string, Svg> = {
   // ── Inkomster och utgifter ──
   'pek.utgift': all(fig(30, C.orange, 'calm', { h: 0.8 }), reach(30, 0.8, 1, 48, 66), openWallet(56, 70, 0.6), curveArrow('M62 56 C72 40 84 38 92 46', 92, 46, 40, RED, 2.4), coin(72, 40, 4.5), coin(82, 36, 4.5), invoice(100, 76, 1), bag(98, 102, 0.6), ground),
@@ -159,13 +171,13 @@ export const PRIVATE_ECONOMY_MOTIFS: Record<string, Svg> = {
   // ── Ränta och inflation i vardagen ──
   'pek.ränta': all(bank(28, 84, 0.9), stack(80, 104, 5, 12), coin(104, 72, 7), T(104, 60, '+', 14, C.green), pct(80, 46, 26, HL), ground),
   'pek.sparränta': all(bank(30, 84, 0.9), jar(30, 30, 0.55, 0.6), curveArrow('M52 56 C64 46 76 46 84 54', 84, 54, 40, C.green, 2.4), coin(68, 44, 5), pct(68, 28, 16, C.green), fig(98, C.orange, 'laugh', { h: 0.7 }), ground),
-  'pek.låneränta': all(bank(92, 84, 0.9), fig(22, C.orange, 'calm', { h: 0.74 }), curveArrow('M38 56 C52 44 64 44 72 52', 72, 52, 40, RED, 2.4), stack(52, 50, 3, 7), coin(66, 40, 5, '#f0a050'), pct(66, 24, 16, RED), ground),
-  'pek.räntekostnad': all(house(22, 40, 1.3), fig(44, C.orange, 'frown', { h: 0.62 }), reach(44, 0.62, 1, 62, 82), page(98, 26, 0.8), coin(66, 80, 4.5), curveArrow('M70 78 C78 70 84 72 90 78', 90, 78, 40, RED, 2.2), pct(80, 60, 14, RED), bank(98, 96, 0.55), ground),
+  'pek.låneränta': all(bank(24, 84, 0.9), curveArrow('M42 54 C56 40 70 40 78 50', 78, 50, 50, C.grey, 2), fig(96, C.orange, 'calm', { h: 0.72 }), stack(70, 104, 4, 10), tag(60, 30, '4 %', 1.5, '#f6b0a8'), line('M60 44 L68 88', C.ink, 1.2), ground),
+  'pek.räntekostnad': all(house(18, 98, 0.8), fig(40, C.orange, 'frown', { h: 0.74 }), doc(82, 54, 1.9, all(g('translate(0 -12) scale(0.28)', bank(0, 0)), pct(-5, 4, 11, RED), coin(6, 4, 3.6), coin(6, 0.5, 3.6), T(0, 15, '−', 10, RED)), 0), ...[0, 1, 2].map((i) => page(16 + i * 14, 22, 0.42)), ground),
   'pek.ränta-på-ränta': all(column(18, 104, 12, 14), column(40, 104, 20, 14), column(62, 104, 34, 14), column(84, 104, 56, 14), column(106, 104, 88, 14), curveArrow('M14 84 C50 80 80 60 102 10', 102, 10, -60, C.green, 2.2), pct(32, 32, 18, C.green)),
   'pek.styrränta': all(centralBank(60, 58, 1.1), rect(42, 82, 36, 16, C.white, 3, C.ink, 1.4), pct(60, 90, 13, HL), arrow(30, 96, 14, 104, C.grey, 1.8), arrow(90, 96, 106, 104, C.grey, 1.8), bank(12, 104, 0.32), bank(108, 104, 0.32), ground),
   'pek.räntehöjning': all(pct(44, 64, 50, C.navy), arrow(92, 96, 92, 24, RED, 4.4), house(26, 102, 0.6), ground),
   'pek.räntesänkning': all(pct(44, 64, 50, C.navy), arrow(92, 24, 92, 96, C.green, 4.4), house(26, 102, 0.6), ground),
-  'pek.inflation': all(cart(30, 92, 1.1, all(food(0, -14, 0.7))), tag(30, 50, '10', 0.9, '#e6e6e6'), cart(86, 92, 1.1, all(food(0, -14, 0.7))), tag(86, 50, '15', 0.9), arrow(48, 70, 68, 70, HL, 2.6), arrow(108, 60, 108, 30, RED, 3), ground),
+  'pek.inflation': all(food(22, 30, 1), shirt(60, 30, 1), bus(98, 30, 1), house(22, 82, 1), phone(60, 80, 0.8), g('translate(98 86)', rect(-14, -22, 28, 40, '#8a5a3a', 3, C.ink, 1.5), rect(-10, -10, 20, 14, C.yellow, 1, null)), ...[[38, 22], [76, 22], [114, 22], [38, 74], [74, 72], [114, 74]].map(([a, b]) => arrow(a!, b! + 12, a!, b! - 6, RED, 2.6)), ground),
   'pek.prisökning': all(g('translate(36 74)', rect(-14, -22, 28, 40, '#8a5a3a', 3, C.ink, 1.5), rect(-10, -10, 20, 14, C.yellow, 1, null), circle(0, -3, 4, '#5a3a1a', null)), greyed(tag(84, 84, '50', 1)), tag(84, 42, '65', 1.1), arrow(84, 70, 84, 56, RED, 2.6), ground),
   'pek.matpris': all(cart(52, 92, 1.5, all(food(-2, -16, 0.9), circle(12, -20, 5, C.yellow, C.ink, 1))), tag(92, 38, '89', 1.2), line('M80 40 C72 44 66 56 62 64', C.ink, 1.2), ground),
   'pek.köpkraft': all(greyed(bill(22, 22, 0.8), bag(22, 72, 1.3, C.orange), food(22, 50, 0.6), food(18, 60, 0.5)), bill(82, 22, 0.8), bag(82, 72, 1.3, C.orange), food(82, 60, 0.4), arrow(44, 66, 60, 66, HL, 2.4), arrow(106, 50, 106, 80, RED, 2.6), ground),
@@ -184,7 +196,7 @@ export const PRIVATE_ECONOMY_MOTIFS: Record<string, Svg> = {
   'pek.rörlig-ränta': all(rect(12, 24, 96, 66, C.white, 3, C.ink, 1.4), line('M20 60 C30 40 40 72 52 54 C62 40 72 70 84 50 C92 38 96 52 100 46', HL, 3), pct(28, 40, 14), ...[0, 1, 2, 3, 4].map((i) => line(`M${24 + i * 18} 82 L${24 + i * 18} 86`, C.ink, 1.4)), ground),
   'pek.amortera': all(rect(10, 16, 100, 14, RED, 2, C.ink, 1.4), rect(84, 16, 26, 14, C.paper, 2, C.ink, 1.4), arrow(97, 34, 97, 46, C.green, 2.2), fig(28, C.orange, 'smile', { h: 0.72 }), reach(28, 0.72, 1, 50, 72), coin(54, 72, 5), curveArrow('M60 70 C70 62 78 64 84 72', 84, 72, 40, C.green, 2.2), bank(96, 96, 0.6), ground),
   'pek.amortering': all(rect(10, 46, 100, 20, RED, 2, C.ink, 1.6), rect(78, 46, 32, 20, C.paper, 2, C.ink, 1.6), line('M78 46 L78 66', C.ink, 1.6), coin(94, 56, 7), arrow(94, 72, 94, 96, C.green, 2.6), page(26, 92, 0.9), ring(94, 56, 14), ground),
-  'pek.amorteringskrav': all(house(36, 54, 2.2), rect(8, 92, 104, 12, C.white, 2, C.ink, 1.4), rect(8, 92, 72, 12, RED, 2, C.ink, 1.4), line('M60 86 L60 108', C.ink, 2, '3 2'), doc(96, 40, 0.8, para(0, 0, 16), 0), ex(104, 74, 14)),
+  'pek.amorteringskrav': all(doc(24, 40, 1.3, para(0, -2, 22, C.navy), 0), arrow(44, 40, 58, 40, HL, 2.4), house(88, 38, 1.4), rect(8, 76, 104, 12, C.white, 2, C.ink, 1.4), rect(8, 76, 80, 12, RED, 2, C.ink, 1.4), line('M60 70 L60 94', C.ink, 2, '3 2'), ...[0, 1, 2].map((i) => all(page(30 + i * 30, 104, 0.4), coin(42 + i * 30, 104, 4))), curveArrow('M88 72 C94 64 100 64 104 70', 104, 70, 60, C.green, 1.8)),
   'pek.skuld.2': all(fig(40, C.orange, 'frown', { h: 0.82 }), weight(40, 22, 1.2), T(40, 26, '−', 14, C.white), line('M30 34 L24 52 M50 34 L56 52', C.skin, 4), bank(96, 92, 0.6), doc(96, 40, 0.7, minusB(0, 4, 6), 2), ground),
   'pek.betala-av': all(...[0, 1, 2, 3].map((i) => all(rect(12 + i * 26, 104 - (60 - i * 14), 20, 60 - i * 14, RED, 2, C.ink, 1.3), page(22 + i * 26, 24, 0.6))), arrow(14, 34, 110, 72, C.green, 2.4), ground),
   'pek.privatlån': all(bank(24, 84, 0.8), curveArrow('M44 54 C58 40 72 40 80 52', 80, 52, 50, C.green, 2.4), coin(62, 42, 4.5), car(88, 98, 1.2), greyed(house(98, 46, 0.9)), cross(98, 46, 1.4), ground),
@@ -198,14 +210,14 @@ export const PRIVATE_ECONOMY_MOTIFS: Record<string, Svg> = {
   'pek.drulleförsäkring': all(phone(40, 96, 1, line('M-6 -10 L0 -2 L-3 4 L4 9 M0 -2 L7 -4', C.ink, 1.2)), crash(58, 104, 0.6), curveArrow('M40 20 C38 40 38 60 40 72', 40, 72, 90, C.grey, 1.8), fig(86, C.orange, 'shock', { h: 0.8 }), shield(62, 50, 0.9, C.navy, okB(0, 0, 5)), ground),
   'pek.olycksfallsförsäkring': all(fig(40, C.orange, 'frown', { h: 0.82 }), plaster(34, 26), plaster(48, 92, 70), line('M56 70 L64 112', C.brown, 3), shield(86, 44, 1.1, C.navy), curveArrow('M86 66 C82 80 74 84 64 84', 64, 84, 170, C.green, 2), coin(78, 92, 4.5), ground),
   'pek.barnförsäkring': all(dome(60, 40, 70), child(60, C.yellow, 'smile'), shield(60, 26, 0.8), fig(104, C.green, 'smile', { h: 0.82 }), ground),
-  'pek.livförsäkring': all(dome(72, 34, 72), fig(60, C.orange, 'calm', { h: 0.8 }), child(86, C.yellow, 'calm'), shield(72, 22, 0.8), coin(98, 100, 4.5), greyed(fig(18, C.navy, 'calm', { h: 0.7 })), ground),
+  'pek.livförsäkring': all(portrait(20, 40, 1.1), dome(78, 38, 70), fig(66, C.orange, 'calm', { h: 0.76 }), child(92, C.yellow, 'calm'), shield(78, 26, 0.8), curveArrow('M30 64 C40 80 46 86 54 90', 54, 90, 40, C.green, 2.2), stack(36, 104, 3, 8), ground),
   'pek.bilförsäkring': all(dome(60, 44, 90), car(60, 98, 1.6), shield(60, 30, 0.9), ground),
   'pek.trafikförsäkring': all(car(32, 96, 1), car(84, 96, 1, C.red), crash(58, 86, 0.9), plaster(84, 70), shield(58, 40, 1, C.navy, para(0, 1, 14, C.white)), ground),
   'pek.halvförsäkring': all(car(30, 98, 1.1), shield(30, 52, 1.1), g('translate(66 22)', flame(0, 0, 0.9)), okB(84, 22, 6), g('translate(66 46)', thief(0, 0, 0.8)), okB(84, 46, 6), g('translate(66 70)', brokenGlass(0, 0, 0.8)), okB(84, 70, 6), g('translate(66 94)', crash(0, 0, 0.8)), noB(84, 94, 6), ground),
   'pek.helförsäkring': all(car(30, 98, 1.1), shield(30, 52, 1.1, '#2f6fb0'), g('translate(66 22)', flame(0, 0, 0.9)), okB(84, 22, 6), g('translate(66 46)', thief(0, 0, 0.8)), okB(84, 46, 6), g('translate(66 70)', brokenGlass(0, 0, 0.8)), okB(84, 70, 6), g('translate(66 94)', crash(0, 0, 0.8)), okB(84, 94, 6), ground),
 
   // ── Skatt på inkomsten ──
-  'pek.inkomstskatt': all(company(22, 82, 0.7), bill(48, 40, 0.9), arrow(58, 48, 78, 64, C.grey, 2), office(96, 88, 0.6), arrow(48, 56, 48, 80, C.green, 2), wallet(48, 96, 0.7), ground),
+  'pek.inkomstskatt': all(fig(22, C.orange, 'calm', { h: 0.8 }), pie(66, 64, 26, 0.32), arrow(88, 36, 98, 28, C.grey, 2.2), office(104, 92, 0.42), ring(84, 46, 14, HL), ground),
   'pek.statlig-inkomstskatt': all(rect(14, 30, 30, 74, C.gold, 2, C.ink, 1.4), limit(8, 52, 50, RED), rect(14, 30, 30, 20, '#9aa3ad', 2, C.ink, 1.4), arrow(46, 38, 64, 38, C.grey, 2), parliament(92, 52, 0.85), ground),
   'pek.bruttolön': all(column(42, 104, 70, 30), rect(25, 30, 34, 24, 'rgba(154,163,173,0.85)', 2, C.ink, 1), ring(42, 68, 38), greyed(wallet(98, 92, 0.8))),
   'pek.nettolön': all(column(34, 104, 46, 26), rect(19, 34, 30, 22, 'none', 2, C.grey, 1.6), line('M19 34 L49 56 M49 34 L19 56', C.grey, 1), arrow(52, 80, 70, 84, C.green, 2.4), openWallet(92, 92, 0.9), stack(92, 88, 3, 8), ring(92, 86, 20)),
@@ -218,18 +230,18 @@ export const PRIVATE_ECONOMY_MOTIFS: Record<string, Svg> = {
   'pek.avdrag': all(column(32, 104, 52, 24, '#9aa3ad'), path('M18 52 L46 52', 'none', RED, 2.4), T(32, 40, '−', 18, RED), bus(84, 50, 1.4), arrow(70, 60, 50, 62, HL, 2.2), column(88, 104, 16, 22, '#9aa3ad'), ground),
   'pek.skatteåterbäring': all(office(26, 82, 0.8), curveArrow('M46 44 C62 30 78 32 86 46', 86, 46, 60, C.green, 2.6), coin(60, 34, 5), coin(72, 32, 5), fig(96, C.orange, 'laugh', { h: 0.78 }), ground),
   'pek.kvarskatt': all(fig(24, C.orange, 'frown', { h: 0.78 }), curveArrow('M38 46 C54 32 70 32 80 46', 80, 46, 60, RED, 2.6), coin(52, 34, 5), coin(64, 32, 5), office(96, 84, 0.7), invoice(56, 86, 0.9, ex(0, -2, 10)), ground),
-  'pek.skattepliktig': all(bill(30, 44, 1.2), arrow(48, 52, 74, 68, C.grey, 2.4), office(94, 88, 0.6), okB(30, 76, 10), ground),
-  'pek.skattefri': all(bill(30, 44, 1.2), child(30, C.yellow), arrow(48, 52, 74, 68, C.grey2, 2.4), cross(62, 60, 1.3), greyed(office(94, 88, 0.6)), ground),
+  'pek.skattepliktig': all(briefcase(20, 40, 1), arrow(20, 54, 20, 66, C.grey, 1.8), splitBill(40, 82, 1.6), curveArrow('M70 52 C78 38 86 34 92 38', 92, 38, 20, HL, 2.4), office(100, 82, 0.6), ring(64, 64, 14, HL), para(100, 18, 14), ground),
+  'pek.skattefri': all(office(18, 84, 0.55), child(44, C.yellow), bill(70, 50, 1.3), arrow(36, 30, 50, 42, C.green, 2), line('M92 42 L106 30', C.grey, 2.2, '3 2'), cross(99, 36, 0.9), greyed(office(108, 28, 0.3)), okB(70, 80, 9), ground),
 
   // ── Ekonomiska prioriteringar ──
   'pek.nödvändighet': all(jacket(24, 42, 1.3), food(60, 44, 1.2), house(96, 44, 1.4), okB(24, 72, 7), okB(60, 72, 7), okB(96, 72, 7), greyed(cake(60, 98, 0.8))),
-  'pek.lyx': all(fig(28, C.purple, 'laugh', { h: 0.8 }), rect(48, 74, 64, 6, C.tan, 2, C.ink, 1.4), line('M56 80 L56 112 M104 80 L104 112', C.brown, 3), ellipse(80, 70, 18, 5, C.white, C.ink, 1.3), cake(80, 60, 0.7), sparkle(60, 40, 6), sparkle(100, 36, 7), sparkle(90, 20, 5), coin(104, 62, 4)),
+  'pek.lyx': all(greyed(bike(22, 98, 0.9)), car(80, 96, 1.6, '#d4a020'), gem(80, 40, 1.6), sparkle(56, 30, 7), sparkle(104, 26, 8), sparkle(108, 66, 6), sparkle(52, 66, 5), ground),
   'pek.unna-sig': all(fig(38, C.orange, 'love', { h: 0.82 }), reach(38, 0.82, 1, 62, 62), cake(74, 64, 0.8), sparkle(90, 40, 6), greyed(page(100, 92, 0.7)), ground),
   'pek.ekonomiskt-utrymme': all(rect(10, 56, 100, 28, C.white, 3, C.ink, 1.6), rect(10, 56, 56, 28, C.gold, 3, C.ink, 1.6), rect(66, 56, 44, 28, 'rgba(79,157,105,0.18)', 3, C.green, 2), sofa(88, 46, 0.7), curveArrow('M88 34 C88 44 88 50 88 60', 88, 60, 90, C.green, 2), ground),
   'pek.avvägning': all(scales(60, 64, 1.4, 0, stack(0, 2, 3, 6), sparkle(0, -2, 6, C.gold)), q(60, 22, 14), ground),
   'pek.köpstopp': all(cart(44, 90, 1.6, ''), g('translate(84 44)', circle(0, 0, 16, RED, C.ink, 1.6), rect(-10, -3, 20, 6, C.white, 1, null)), shirt(28, 50, 0.8), bag(52, 48, 0.6), page(96, 92, 0.8), ground),
   'pek.köpa-begagnat': all(bike(60, 96, 1.2, '#7a8a9a'), fig(18, C.orange, 'smile', { h: 0.76 }), fig(102, C.green, 'smile', { h: 0.76 }), reach(18, 0.76, 1, 40, 62), coin(44, 60, 4.5), path('M60 80 C60 74 64 72 66 76', 'none', C.ink, 1), rect(66, 72, 10, 6, '#f6e08a', 1, C.ink, 0.8), ground),
-  'pek.hushålla': all(...[0, 1, 2, 3].map((i) => page(18 + i * 28, 30, 0.8, '')), ...[0, 1, 2, 3].map((i) => stack(18 + i * 28, 80, 2, 7)), greyed(stack(60, 106, 1, 5)), curveArrow('M30 92 C50 100 70 100 96 92', 96, 92, -10, HL, 1.6), ground),
+  'pek.hushålla': all(jar(22, 46, 0.9, 0.35), ...[0, 1, 2, 3, 4, 5, 6].map((i) => day(46 + (i % 4) * 18, i < 4 ? 36 : 62)), curveArrow('M34 40 C38 34 40 34 42 36', 42, 36, 30, HL, 1.6), okB(100, 62, 7), fig(22, C.green, 'calm', { h: 0.42 }), ground),
   'pek.konsumtion': all(cart(30, 92, 1.1, all(food(0, -14, 0.6))), cart(70, 96, 1.1, all(shirt(0, -14, 0.6))), cart(102, 70, 0.8, all(phone(0, -14, 0.5))), bag(104, 102, 0.6), arrow(14, 30, 106, 30, HL, 2.4), ground),
   'pek.konsumera': all(fig(30, C.orange, 'laugh', { h: 0.8 }), reach(30, 0.8, 1, 54, 74), cart(76, 92, 1.4, all(food(-2, -16, 0.7), shirt(10, -18, 0.6), phone(-12, -18, 0.5))), coin(58, 40, 5), coin(70, 30, 5), ground),
   'pek.levnadsstandard': all(rect(8, 92, 32, 20, C.grey2, 1, C.ink, 1.3), rect(44, 72, 32, 40, C.grey2, 1, C.ink, 1.3), rect(80, 52, 32, 60, C.yellow, 1, C.ink, 1.3), house(24, 80, 0.6), house(60, 58, 0.8), house(96, 34, 1.1), car(96, 88, 0.6)),
