@@ -100,6 +100,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'fors.': () => import('./research').then((m) => m.RESEARCH_MOTIFS),
   'ped.': () => import('./pedagogy').then((m) => m.PEDAGOGY_MOTIFS),
   'skol.': () => import('./school').then((m) => m.SCHOOL_MOTIFS),
+  'offb.': () => import('./publicBuildings').then((m) => m.PUBLIC_BUILDING_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
