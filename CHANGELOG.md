@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.32.0 – 2026-11-12
+
+42 nya moduler som gör överämnet *Ekonomi & arbetsliv* (R03-A03) komplett. Varje nytt modulord har en egen bild, utom de 25 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 727 målord)
+- **Privatekonomi** (1501–1507): inkomster och utgifter, budget och sparande, ränta och inflation i vardagen, lån och amortering, försäkringar, skatt på inkomsten och ekonomiska prioriteringar.
+- **Arbetsplatsens vardag** (1511–1517): arbetsuppgifter och ansvar, arbetstider och scheman, möten och arbetslag, arbetsmiljö och säkerhet, feedback och utvecklingssamtal, semester och ledighet samt arbetsplatskonflikter.
+- **Jobbsökande & anställning** (1521–1527): yrken och befattningar, CV och personligt brev, arbetsintervju, anställningsformer, anställningsavtal, lön och förmåner samt uppsägning och byte av jobb.
+- **Företagande** (1531–1537): starta företag, affärsidéer och kunder, varor och tjänster, omsättning och kostnader, vinst och förlust, marknadsföring och företagsformer.
+- **Marknadsekonomi** (1541–1547): utbud och efterfrågan, priser och konkurrens, marknader och branscher, produktivitet och tillväxt, konjunktur och arbetslöshet, handel och import samt ekonomisk politik.
+- **Banker & investeringar** (1551–1557): bankkonton och överföringar, räntor och obligationer, aktier och fonder, risk och avkastning, diversifiering, börsens aktörer och pensionssparande.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 484 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`.
+- Lästexterna har faktakällor (Skatteverket, Konsumentverket, Finansinspektionen, Riksbanken, Arbetsmiljöverket, Pensionsmyndigheten, semesterlagen, arbetstidslagen, LAS, aktiebolagslagen, bokföringslagen m.fl.). De nämner inga verkliga personer eller företag. Belopp som ändras varje år står som ungefärliga.
+- Nya betydelser på befintliga poster: *styrka* (bra sida), *svaghet* (svag sida), *säga upp* (en anställd), *skuld* (pengar), *deklarera* (skatt), *tjänst* (det ett företag säljer), *rykte* (vad folk tycker), *sjunka* (bli lägre), *överskott* (för mycket av en vara), *nedgång* och *uppgång* (minskning, ökning), *tull* (avgift), *uttag* (från konto), *placera* (pengar), *svänga* (gå upp och ner) och *mäklare* (aktier).
+- Dubbletter mellan grupper slogs ihop: den tidigare modulen i katalogordningen äger posten och bilden. *arbetsledare*, *kompetens*, *heltid*, *deltid* och *styrka* (bra sida) refererar Arbetsplatsens vardag, *bruttolön* och *nettolön* refererar Privatekonomi och *investera*/*investering* refererar Marknadsekonomi.
+- *semester* och *risk* hade bara funnits i grundordförrådet och har nu egna poster.
+
+### Bilder (475 nya ordbilder)
+- 305 symbolbilder, 57 bilder som får användas i bildövningar och resten scener.
+- 332 symbol- och adjektivbilder blindtestades. 307 klarade testet efter högst två omgångar.
+- **25 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *fast anställning/tillsvidareanställning*, *amortera/betala av*, *feedback/återkoppling*, *diversifiera/sprida riskerna* och *diversifiering/riskspridning*.
+- Nya bildfiler i `src/ui/wordArt/`: `privateEconomy.ts`, `workplace.ts`, `jobSearch.ts`, `business.ts`, `marketEconomy.ts` och `banking.ts`.
+
+### Verktyg och test
+- e2e-testets planerade exempel är *Förskola och grundskola* (Utbildning & lärande → Svensk skola).
+
+Service workern är `swechan-v36`.
+
 ## 0.31.0 – 2026-11-12
 
 42 nya moduler som gör överämnet *Juridik & rättsväsende* (R03-A02) komplett. Varje nytt modulord har en egen bild, utom de 45 ord som underkändes i två blindtestomgångar.
