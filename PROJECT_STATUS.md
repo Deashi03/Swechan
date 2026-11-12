@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.33.0 (släppt 2026-11-12, PR #47) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.34.0 (2026-11-12, gren `claude/swechan-0.34`) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 677 publicerade moduler. 672 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och överämnena *Politik & demokrati* (R03-A01), *Juridik & rättsväsende* (R03-A02), *Ekonomi & arbetsliv* (R03-A03) och *Utbildning & lärande* (R03-A04). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 719 publicerade moduler. 714 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och överämnena *Politik & demokrati* (R03-A01), *Juridik & rättsväsende* (R03-A02), *Ekonomi & arbetsliv* (R03-A03), *Utbildning & lärande* (R03-A04) och *Städer & offentlig service* (R03-A05). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Städer & offentlig service* (R03-A05).
+  - Nästa överämne är *Medier & samhällsdebatt* (R03-A06).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 9 437 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 9 861 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Städer & offentlig service* (R03-A05), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Medier & samhällsdebatt* (R03-A06), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -75,6 +75,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Forskning & akademi: `s.vetenskaplig.1`, `s.publikation.1`, `s.källkritisk.1`, `s.referera.1`, `s.empirisk.1`, `s.etisk.1`, `s.fabricera.1`, `s.tes.1`, `s.motargument.1`
   - Utbildningssystem i världen: `s.skolgång.1`, `s.yrkeshögskola.1`
   - *visualisera* förväxlades med *inre bild*, *antagning* med *urval* (av sökande), *respons* med *kamratrespons*/*återkoppling* och *bedömning* med *bedöma*. Produktägaren kan överväga synonymmarkering och ett nytt test.
+- **Från 0.34 (9 ord):**
+  - Stadens platser: `s.trivsam.1`
+  - Offentliga byggnader: `s.myndighet.1`
+  - Samhällsservice: `s.medborgarservice.1`
+  - Bostads- & stadsplanering: `s.framkomlighet.1`
+  - Befolkning & migration: `s.vara-skriven.1`, `s.befolkning.1`, `s.utflyttning.2`, `s.ursprungsland.2`
+  - Civilsamhälle: `s.välgörenhet.1`
+  - *trivsam* förväxlades med *mysig*/*charmig*, *myndighet* med *statlig*/*förvaltning*, *medborgarservice* med *kontaktcenter*/*medborgarkontor*, *framkomlighet* med *busskörfält*/*trafikflöde*, *befolkning* med *folkmängd*/*invånarantal*, *utflyttning* (från en ort) med *avfolkning*/*urbanisering*, *ursprungsland* med *hemland* och *välgörenhet* med *välgörenhetsorganisation*/*skänka*. Produktägaren kan överväga synonymmarkering och ett nytt test.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -152,6 +160,22 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - högskoleprovets giltighet (8 år), studieavgifter för studenter utanför EU/EES och Schweiz, kårobligatoriet avskaffat 2010, ny examinator efter två underkända prov, sista ansökningsdag 15 april/15 oktober
   - examensomfång (kandidat 180, magister 60, master 120, doktor 240 hp), Etikprövningsmyndigheten (lag 2003:460)
   - utlandsfakta: skoluniform i japanska högstadier, *juku* som "kvällsskola", skolstart vid fem år i USA, tysk uppdelning efter fyra år (de flesta delstater), siffran för lärartäthet i ett exempel
+- **0.34, svenska:**
+  - pluralformer: *bastu* (bastur), *monter* (montrar), *container* (containrar), *lastkaj* (lastkajer), *kontaktcenter* (kontaktcentret, kontaktcentren), *centrum* (centrumet/centrum)
+  - *simglasögon* böjt som *glasögon*; *grannsamverkan* utan bestämd form; *stadga* som singularlemma (används i plural); *vara skriven* som verbfras i grupp 4; *utrikes född* som adjektiv med handsatt böjning; *styrka sin identitet* som egen post
+  - nivåer: *s.stämning.2* ärver C1 från posten; *grannehörande*, *ansvarsfrihet*, *skattereduktion*, *testamentera* och *mobilisera* är C1; *nybyggnation* kritiseras ibland men står i SO
+  - *dödstal*/*födelsetal* definieras som antal per år (ofta per tusen invånare); *renoveringsvräkning* och *gentrifiering* är laddade debattord
+  - *miljonprogrammet* används bara i bestämd form; *90-konto* är inte målord eftersom siffror inte tokeniseras
+- **0.34, japanska:**
+  - egna eller ungefärliga översättningar: *miljonprogrammet* ({百万戸住宅計画|ひゃくまんこじゅうたくけいかく}), *slutbesked*, *strandskydd* ({水辺|みずべ}の{保護規制|ほごきせい}), *trygghetsvandring*, *första spadtaget* ({起工|きこう})
+  - *brukare* ({利用者|りようしゃ}), *tillsyn* ({見守|みまも}り), *avlösning* (レスパイト), *kommunvägledare*, *region* (レギオン), *valberedning* ({役員選考委員会|やくいんせんこういいんかい}), *revisor* i en förening ({監事|かんじ}), *domkyrka* (förklaringen nämner {教区|きょうく})
+  - våningar: *andra våningen* översatt med {二階|にかい}
+- **0.34, fakta (kan ändras över tid):**
+  - tätort (minst 200 invånare, högst 150 m mellan husen, nästan nio av tio bor i tätort), miljonprogrammet 1965–1974
+  - friggebod 15 m² (1979), attefallshus 30 m² (2014), strandskydd 100 m, trängselskatt i Stockholm 2007 och Göteborg 2013, klimatmålet netto noll 2045
+  - ungefär hälften av dricksvattnet från grundvatten, biljettintäkterna täcker ungefär halva kostnaden, Hesa Fredrik testas kl. 15 första helgfria måndagen i mars, juni, september och december
+  - flyttanmälan inom en vecka, samordningsnummer (dag + 60), etableringsprogrammet högst två år, dubbelt medborgarskap sedan 2001, ungefär en halv miljon utlandssvenskar, ungefär var femte invånare utrikes född, 1,3 miljoner utvandrare 1850–1930; hemvisttiden för medborgarskap anges medvetet utan antal år
+  - passexpeditionen (foto tas på plats) är skriven ur minnet; texten om dagvatten i Uppsala är förenklad
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -170,10 +194,10 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v37`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v38`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Torg och gågator* (SWC-SAM-05-01-01) som exempel. Byt exemplet när den publiceras.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Tidningar och nyhetsredaktioner* (SWC-SAM-06-01-01) som exempel. Byt exemplet när den publiceras.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.

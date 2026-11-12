@@ -1,0 +1,177 @@
+{
+ "id": "m.sophamtning-och-atervinning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Sophämtning och återvinning",
+ "titleJa": "ごみ{収集|しゅうしゅう}とリサイクル",
+ "descriptionSv": "Sophämtning och återvinning: sophämtning, soptunna, sopbil, renhållning, källsortera, plastförpackning, pappersförpackning, glasförpackning, metallförpackning, matavfall, matavfallspåse, elavfall, återvinningscentral, återvinning, förbränning, deponi och kretslopp.",
+ "descriptionJa": "ごみ{収集|しゅうしゅう}とリサイクル：ごみ{収集|しゅうしゅう}、ごみ{容器|ようき}、ごみ{収集車|しゅうしゅうしゃ}、ごみ{処理|しょり}・{清掃事業|せいそうじぎょう}、{分別|ぶんべつ}する、プラスチック{容器|ようき}、{紙|かみ}の{容器|ようき}、ガラス{容器|ようき}、{金属|きんぞく}の{容器|ようき}、{生|なま}ごみ、{生|なま}ごみ{用|よう}の{紙袋|かみぶくろ}、{電気|でんき}・{電子|でんし}ごみ、リサイクルセンター、リサイクル、{焼却|しょうきゃく}、{埋立地|うめたてち}、{循環|じゅんかん}。",
+ "categoryId": "R03-A05-T03",
+ "tags": [
+  "samhällsservice",
+  "avfall"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.besoka-en-offentlig-byggnad"
+ ],
+ "related": [],
+ "recommendedOrder": 1721,
+ "words": [
+  {
+   "senseId": "s.sophämtning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.soptunna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sopbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.renhållning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.källsortera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plastförpackning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pappersförpackning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glasförpackning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.metallförpackning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matavfallspåse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvinningscentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvinning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbränning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deponi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kretslopp.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Nya soptunnor i kvarteret",
+  "paragraphs": [
+   "Familjen Berg bor i ett radhus utanför stan. En dag kommer ett brev från kommunen om sophämtningen. Varje hus ska få två nya soptunnor med fyra fack var.",
+   "Nu ska alla källsortera hemma. Plastförpackningar, pappersförpackningar, glasförpackningar och metallförpackningar får egna fack. Matavfallet ska ligga i en brun matavfallspåse.",
+   "Sopbilen kommer varannan vecka och tömmer en tunna i taget. Det är kommunen som tar hand om renhållningen, och familjen betalar för den varje år.",
+   "Elavfall, till exempel en gammal mobil, kör familjen till återvinningscentralen. Där är det gratis att lämna det.",
+   "Det som inte kan gå till återvinning går till förbränning. Värmen från förbränningen värmer husen i stan. Nästan inga sopor går till deponi i dag. – Så blir det ett kretslopp, säger Anna Berg."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad får varje hus enligt brevet?",
+    "options": [
+     "En ny sopbil",
+     "En karta till återvinningscentralen",
+     "En ny räkning varje vecka",
+     "Två nya soptunnor med fyra fack var"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Varje hus ska få två nya soptunnor med fyra fack var.",
+    "explanationJa": "{各家庭|かくかてい}に、{四|よっ}つの{区画|くかく}がある{新|あたら}しいごみ{容器|ようき}が{二|ふた}つずつ{届|とど}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var ska matavfallet ligga?",
+    "options": [
+     "I en brun matavfallspåse",
+     "Bland metallförpackningarna",
+     "I en plastpåse",
+     "I elavfallet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Matavfallet ska ligga i en brun matavfallspåse.",
+    "explanationJa": "{生|なま}ごみは{茶色|ちゃいろ}の{紙袋|かみぶくろ}に{入|い}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Sopbilen kommer varje dag.",
+    "correct": false,
+    "explanationSv": "Sopbilen kommer varannan vecka …",
+    "explanationJa": "ごみ{収集車|しゅうしゅうしゃ}は{二週間|にしゅうかん}に{一度|いちど}{来|き}ます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "inference",
+    "promptSv": "Varför kör familjen den gamla mobilen till återvinningscentralen?",
+    "options": [
+     "Sopbilen är trasig",
+     "Elavfall får inte ligga i soptunnan",
+     "Det kostar mindre att köra dit",
+     "Mobilen är en glasförpackning"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Elavfall, till exempel en gammal mobil, kör familjen till återvinningscentralen.",
+    "explanationJa": "{電気|でんき}ごみはごみ{容器|ようき}に{捨|す}てられないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "cause",
+    "statementSv": "Värmen från förbränningen värmer husen i stan.",
+    "correct": true,
+    "explanationSv": "Värmen från förbränningen värmer husen i stan.",
+    "explanationJa": "ごみを{燃|も}やした{熱|ねつ}で{家|いえ}が{暖|あたた}められます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man sorterar sopor där ni bor, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Hur många fack har er soptunna?",
+   "Är det lätt eller svårt att källsortera hemma?",
+   "Vad gör du med elavfall?",
+   "Hur ofta kommer sopbilen där du bor?"
+  ]
+ }
+}

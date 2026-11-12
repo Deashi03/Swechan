@@ -1,0 +1,181 @@
+{
+ "id": "m.industriomraden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Industriområden",
+ "titleJa": "{工業団地|こうぎょうだんち}",
+ "descriptionSv": "Industriområden: industriområde, industri, fabrik, tillverka, arbetsplats, verkstad, lager, lastbil, lastkaj, gaffeltruck, container, hamn, godståg, skorsten, utsläpp, buller, staket och nedlagd.",
+ "descriptionJa": "{工業団地|こうぎょうだんち}：{工業地帯|こうぎょうちたい}、{工業|こうぎょう}、{工場|こうじょう}、{製造|せいぞう}する、{職場|しょくば}、{修理|しゅうり}{工場|こうじょう}、{倉庫|そうこ}、トラック、{荷積|にづ}み{場|ば}、フォークリフト、コンテナ、{港|みなと}、{貨物列車|かもつれっしゃ}、{煙突|えんとつ}、{排出|はいしゅつ}、{騒音|そうおん}、フェンス、{閉鎖|へいさ}された。",
+ "categoryId": "R03-A05-T01",
+ "tags": [
+  "stad",
+  "arbete"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.parker-och-lekplatser"
+ ],
+ "related": [],
+ "recommendedOrder": 1704,
+ "words": [
+  {
+   "senseId": "s.industriområde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.industri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fabrik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillverka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetsplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verkstad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lager-förråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lastbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lastkaj.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gaffeltruck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.container.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hamn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godståg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skorsten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsläpp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.buller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.staket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nedlagd.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Hamnens industriområde",
+  "paragraphs": [
+   "Jonas bor i en stad vid kusten. Nära hamnen ligger ett stort industriområde. Där finns ingen som bor, bara fabriker, lager och verkstäder. Förr var industrin i staden mycket viktig, och nästan alla familjer hade någon som arbetade där.",
+   "Jonas arbetar på ett lager. Varje morgon kommer lastbilar till lastkajen med varor från fabriker i hela Europa. Jonas kör gaffeltruck och flyttar varorna in i lagret. Från hamnen går varor vidare i containrar, och på natten kör långa godståg förbi.",
+   "Bredvid lagret finns en fabrik som tillverkar papper. Från den höga skorstenen kommer vit rök. Fabriken har minskat sina utsläpp mycket de senaste åren. Ändå klagar en del på bullret från maskinerna och lastbilarna.",
+   "Det är en stor arbetsplats. I industriområdet finns också en verkstad som lagar bilar och en liten lunchrestaurang. Runt fabriken går ett högt staket, och man måste visa ett kort för att komma in.",
+   "Längst bort ligger en nedlagd fabrik. Fönstren är trasiga och ingen har arbetat där på tjugo år. Nu vill kommunen bygga bostäder där. – Om tio år bor det kanske människor här, säger Jonas. Det är svårt att tro."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Jonas på jobbet?",
+    "options": [
+     "Han lagar bilar i en verkstad",
+     "Han kör godståg",
+     "Han tillverkar papper",
+     "Han kör gaffeltruck på ett lager"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Jonas kör gaffeltruck och flyttar varorna in i lagret.",
+    "explanationJa": "ヨーナスは{倉庫|そうこ}でフォークリフトを{運転|うんてん}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tillverkar fabriken bredvid lagret?",
+    "options": [
+     "Bilar",
+     "Papper",
+     "Containrar",
+     "Möbler"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Bredvid lagret finns en fabrik som tillverkar papper.",
+    "explanationJa": "その{工場|こうじょう}は{紙|かみ}を{作|つく}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför klagar en del människor?",
+    "options": [
+     "På grund av bullret",
+     "På grund av utsläppen från skorstenen",
+     "För att lagret är stängt",
+     "För att det inte finns någon restaurang"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ändå klagar en del på bullret från maskinerna och lastbilarna.",
+    "explanationJa": "{騒音|そうおん}について{苦情|くじょう}を{言|い}う{人|ひと}がいます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vem som helst kan gå in i fabriken.",
+    "correct": false,
+    "explanationSv": "… man måste visa ett kort för att komma in.",
+    "explanationJa": "カードを{見|み}せないと{入|はい}れません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det kommer kanske att bo människor i industriområdet i framtiden.",
+    "correct": true,
+    "explanationSv": "Nu vill kommunen bygga bostäder där.",
+    "explanationJa": "{市|し}は{住宅|じゅうたく}を{建|た}てたいと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om industriområden och om arbete i industrin.",
+  "discussionPoints": [
+   "Finns det ett industriområde i din stad? Vad finns där?",
+   "Har du arbetat i en fabrik eller på ett lager?",
+   "Vad tycker du att man ska göra med nedlagda fabriker?",
+   "Är det bra eller dåligt att bo nära ett industriområde?"
+  ]
+ }
+}

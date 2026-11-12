@@ -1,0 +1,177 @@
+{
+ "id": "m.aldreomsorg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Äldreomsorg",
+ "titleJa": "{高齢者介護|こうれいしゃかいご}",
+ "descriptionSv": "Äldreomsorg: äldreomsorg, hemtjänst, biståndshandläggare, biståndsbeslut, brukare, kontaktperson, genomförandeplan, matdistribution, trygghetslarm, tillsyn, nattpatrull, demens, demensboende, äldreboende, anhörig, avlösning och träffpunkt.",
+ "descriptionJa": "{高齢者介護|こうれいしゃかいご}：{高齢者介護|こうれいしゃかいご}、{訪問介護|ほうもんかいご}、{審査担当職員|しんさたんとうしょくいん}、{支給決定|しきゅうけってい}、{利用者|りようしゃ}、{担当者|たんとうしゃ}、{実施計画|じっしけいかく}、{配食|はいしょく}サービス、{緊急通報|きんきゅうつうほう}ボタン、{見守|みまも}り、{夜間巡回|やかんじゅんかい}チーム、{認知症|にんちしょう}、{認知症|にんちしょう}の{人|ひと}のための{介護施設|かいごしせつ}、{老人|ろうじん}ホーム、{家族|かぞく}、{介護|かいご}の{交代|こうたい}、{集|つど}いの{場|ば}。",
+ "categoryId": "R03-A05-T03",
+ "tags": [
+  "samhällsservice",
+  "äldreomsorg"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kollektivtrafikens-ansvar"
+ ],
+ "related": [],
+ "recommendedOrder": 1726,
+ "words": [
+  {
+   "senseId": "s.äldreomsorg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemtjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biståndshandläggare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biståndsbeslut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brukare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontaktperson.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genomförandeplan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.matdistribution.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trygghetslarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillsyn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nattpatrull.1",
+   "active": true
+  },
+  {
+   "senseId": "s.demens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.demensboende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äldreboende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anhörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlösning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träffpunkt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hjälp hemma hos Ingrid",
+  "paragraphs": [
+   "Ingrid är 86 år och bor ensam i Kalmar. Efter ett fall i köket vill hon ha hjälp hemma. Hennes son Per ringer kommunen och frågar om äldreomsorgen.",
+   "En biståndshandläggare kommer hem till Ingrid och frågar vad hon klarar själv. Två veckor senare kommer biståndsbeslutet: Ingrid får hemtjänst två gånger om dagen, trygghetslarm och matdistribution.",
+   "Nu är Ingrid brukare i hemtjänsten. Hon får en kontaktperson, Sara, som skriver en genomförandeplan tillsammans med henne. Där står det till exempel att Ingrid vill läsa tidningen innan hon duschar.",
+   "På natten får Ingrid tillsyn av nattpatrullen. En natt trycker hon på larmet, och de kommer efter en kvart.",
+   "Ingrids man Olle har demens och bor på ett demensboende i samma hus som ett vanligt äldreboende. Förut tog Ingrid hand om honom hemma och fick avlösning några timmar i veckan. På tisdagar går hon till en träffpunkt för äldre och fikar. – Nu är Per som anhörig inte lika orolig, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Ingrid ha hjälp hemma?",
+    "options": [
+     "Hon ska flytta till Per",
+     "Hon har ramlat i köket",
+     "Hon har fått demens",
+     "Hennes lägenhet är för stor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Efter ett fall i köket vill hon ha hjälp hemma.",
+    "explanationJa": "{台所|だいどころ}で{転|ころ}んだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad får Ingrid enligt biståndsbeslutet?",
+    "options": [
+     "En plats på ett demensboende",
+     "Hemtjänst, trygghetslarm och matdistribution",
+     "Avlösning varje dag",
+     "Sjukresor till Kalmar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… Ingrid får hemtjänst två gånger om dagen, trygghetslarm och matdistribution.",
+    "explanationJa": "{訪問介護|ほうもんかいご}、{緊急通報|きんきゅうつうほう}ボタン、{配食|はいしょく}サービスを{受|う}けられます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Sara skriver genomförandeplanen tillsammans med Ingrid.",
+    "correct": true,
+    "explanationSv": "… Sara, som skriver en genomförandeplan tillsammans med henne.",
+    "explanationJa": "サラがイングリッドと{一緒|いっしょ}に{実施計画|じっしけいかく}を{作|つく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur lång tid tar det innan nattpatrullen kommer?",
+    "options": [
+     "En kvart",
+     "En timme",
+     "Två dagar",
+     "Fem minuter"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… och de kommer efter en kvart.",
+    "explanationJa": "15{分後|ふんご}に{来|き}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ingrid tar fortfarande hand om Olle hemma.",
+    "correct": false,
+    "explanationSv": "Förut tog Ingrid hand om honom hemma …",
+    "explanationJa": "オッレは{今|いま}、{認知症|にんちしょう}の{人|ひと}のための{施設|しせつ}に{住|す}んでいます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni jämför äldreomsorgen i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vem tar hand om de äldre i din familj?",
+   "Vad är bra med hemtjänst, och vad kan vara svårt?",
+   "Skulle du vilja bo kvar hemma eller flytta till ett äldreboende när du blir gammal?",
+   "Hur kan man hjälpa en anhörig som tar hand om någon hemma?"
+  ]
+ }
+}

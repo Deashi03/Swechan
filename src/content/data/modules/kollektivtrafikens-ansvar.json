@@ -1,0 +1,173 @@
+{
+ "id": "m.kollektivtrafikens-ansvar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Kollektivtrafikens ansvar",
+ "titleJa": "{公共交通|こうきょうこうつう}の{責任|せきにん}",
+ "descriptionSv": "Kollektivtrafikens ansvar: kollektivtrafik, resenär, busslinje, turtäthet, linjenät, trafikföretag, upphandling, skattefinansierad, biljettintäkt, dra in, tillgänglighet, låggolvsbuss, färdtjänst, sjukresa, skolskjuts och förseningsersättning.",
+ "descriptionJa": "{公共交通|こうきょうこうつう}の{責任|せきにん}：{公共交通|こうきょうこうつう}、{乗客|じょうきゃく}、バス{路線|ろせん}、{運行本数|うんこうほんすう}、{路線網|ろせんもう}、{運行会社|うんこうがいしゃ}、{調達|ちょうたつ}・{入札|にゅうさつ}、{税金|ぜいきん}でまかなわれる、{運賃収入|うんちんしゅうにゅう}、{廃止|はいし}する、{利用|りよう}しやすいこと、ノンステップバス、{移送|いそう}サービス、{通院|つういん}のための{移動支援|いどうしえん}、スクールバス、{遅延補償|ちえんほしょう}。",
+ "categoryId": "R03-A05-T03",
+ "tags": [
+  "samhällsservice",
+  "kollektivtrafik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.raddningstjanst"
+ ],
+ "related": [],
+ "recommendedOrder": 1725,
+ "words": [
+  {
+   "senseId": "s.kollektivtrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resenär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.busslinje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turtäthet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjenät.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trafikföretag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upphandling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skattefinansierad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biljettintäkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dra-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillgänglighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.låggolvsbuss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färdtjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukresa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skolskjuts.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förseningsersättning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem bestämmer över bussen?",
+  "paragraphs": [
+   "Kenji bor i en liten by utanför Luleå och tar bussen till jobbet. En dag läser han att regionen vill dra in busslinjen till byn. Många resenärer blir arga.",
+   "På ett möte förklarar en kvinna från regionen hur det fungerar. Det är regionen som bestämmer över kollektivtrafiken, till exempel linjenätet och turtätheten. Men bussarna körs av ett trafikföretag som vann en upphandling för tre år sedan.",
+   "Kollektivtrafiken är till stor del skattefinansierad. Biljettintäkterna betalar bara ungefär hälften av kostnaden. – Därför är det dyrt att köra bussar som nästan är tomma, säger hon.",
+   "En äldre kvinna på mötet säger att tillgänglighet är viktigt. Hon har svårt att gå och kan bara åka låggolvsbuss. Annars måste hon ta färdtjänst. När hon ska till sjukhuset åker hon sjukresa.",
+   "Barnen i byn åker skolskjuts, så de klarar sig. Till slut bestämmer regionen att busslinjen får vara kvar, men med färre turer. Kenji är nöjd. Han vet också att han kan få förseningsersättning om bussen är mycket sen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad vill regionen göra med busslinjen till byn?",
+    "options": [
+     "Köra den oftare",
+     "Göra den gratis",
+     "Dra in den",
+     "Ge den ett nytt nummer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… regionen vill dra in busslinjen till byn.",
+    "explanationJa": "レギオンは{村|むら}へのバス{路線|ろせん}を{廃止|はいし}しようとしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem kör bussarna?",
+    "options": [
+     "Kommunen",
+     "Resenärerna själva",
+     "Färdtjänsten",
+     "Ett trafikföretag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… bussarna körs av ett trafikföretag som vann en upphandling …",
+    "explanationJa": "{入札|にゅうさつ}で{選|えら}ばれた{運行会社|うんこうがいしゃ}が{運行|うんこう}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Biljettintäkterna betalar hela kostnaden för kollektivtrafiken.",
+    "correct": false,
+    "explanationSv": "Biljettintäkterna betalar bara ungefär hälften av kostnaden.",
+    "explanationJa": "{運賃収入|うんちんしゅうにゅう}は{費用|ひよう}のおよそ{半分|はんぶん}だけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför kan den äldre kvinnan bara åka låggolvsbuss?",
+    "options": [
+     "Hon har barnvagn",
+     "Hon har inte råd med biljett",
+     "Hon bor i stan",
+     "Hon har svårt att gå"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon har svårt att gå och kan bara åka låggolvsbuss.",
+    "explanationJa": "{歩|ある}くのが{難|むずか}しいからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Busslinjen till byn finns kvar, men bussen går inte lika ofta som förut.",
+    "correct": true,
+    "explanationSv": "… busslinjen får vara kvar, men med färre turer.",
+    "explanationJa": "{路線|ろせん}は{残|のこ}りますが、{本数|ほんすう}は{減|へ}ります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vem som har ansvar för bussar och tåg och vad kollektivtrafiken ska kosta.",
+  "discussionPoints": [
+   "Hur ofta går bussen där du bor?",
+   "Är det rätt att kollektivtrafiken är skattefinansierad?",
+   "Vad är viktigt för tillgängligheten i en buss eller på en station?",
+   "Vad skulle hända om man drog in busslinjen där du bor?"
+  ]
+ }
+}
