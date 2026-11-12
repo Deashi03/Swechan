@@ -1,0 +1,182 @@
+{
+ "id": "m.sjukhus-och-vardcentraler",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Sjukhus och vårdcentraler",
+ "titleJa": "{病院|びょういん}と{診療所|しんりょうじょ}",
+ "descriptionSv": "Sjukhus och vårdcentraler: sjukhus, universitetssjukhus, vårdcentral, mottagning, akutmottagning, röntgen, operationssal, intensivvård, vårdavdelning, vara inlagd, besökstid, korridor, sjukhussäng, sjuksköterska, undersköterska, vårdplats, förlossningsavdelning och remiss.",
+ "descriptionJa": "{病院|びょういん}と{診療所|しんりょうじょ}：{病院|びょういん}、{大学病院|だいがくびょういん}、{診療所|しんりょうじょ}、{外来|がいらい}、{救急外来|きゅうきゅうがいらい}、レントゲン、{手術室|しゅじゅつしつ}、{集中治療|しゅうちゅうちりょう}、{病棟|びょうとう}、{入院|にゅういん}している、{面会時間|めんかいじかん}、{廊下|ろうか}、{病院|びょういん}のベッド、{看護師|かんごし}、{准看護師|じゅんかんごし}、{病床|びょうしょう}、{産科病棟|さんかびょうとう}、{紹介状|しょうかいじょう}。",
+ "categoryId": "R03-A05-T02",
+ "tags": [
+  "samhälle",
+  "vård",
+  "offentliga byggnader"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.stadshus-och-myndighetskontor"
+ ],
+ "related": [],
+ "recommendedOrder": 1712,
+ "words": [
+  {
+   "senseId": "s.sjukhus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.universitetssjukhus.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vårdcentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mottagning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.akutmottagning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röntgen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.operationssal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intensivvård.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vårdavdelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vara-inlagd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besökstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korridor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjukhussäng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjuksköterska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undersköterska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdplats.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förlossningsavdelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.remiss.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Morfar på sjukhuset",
+  "paragraphs": [
+   "Lenas morfar halkade på isen och slog sig illa. Han åkte till akutmottagningen på universitetssjukhuset, det största sjukhuset i staden. Där tog de en röntgen. Bilden visade att höften var bruten.",
+   "Samma kväll blev morfar opererad i en operationssal. Efter operationen låg han en natt på intensivvården. Sedan fick han flytta till en vanlig vårdavdelning. Han var inlagd där i en vecka.",
+   "Lena hälsade på honom under besökstiden. Hon gick genom en lång korridor och hittade honom i en sjukhussäng vid fönstret. En sjuksköterska kom med medicin, och en undersköterska hjälpte honom att sätta sig upp.",
+   "– Det är fullt på avdelningen, sa sjuksköterskan. Vi har för få vårdplatser, så din morfar får åka hem på fredag. Lena gick sedan en våning upp till förlossningsavdelningen. Där hade hennes syster just fått en liten flicka.",
+   "Efter två veckor hemma gick morfar till sin vårdcentral. Läkaren på mottagningen skrev en remiss till en sjukgymnast. – Nu ska du träna, så att du kan gå bra igen, sa hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visade röntgenbilden?",
+    "options": [
+     "Att höften var bruten",
+     "Att armen var bruten",
+     "Att han hade feber",
+     "Att allt var bra"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Bilden visade att höften var bruten.",
+    "explanationJa": "{腰|こし}の{骨|ほね}が{折|お}れていることがわかりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var låg morfar natten efter operationen?",
+    "options": [
+     "På förlossningsavdelningen",
+     "Hemma",
+     "På intensivvården",
+     "På vårdcentralen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Efter operationen låg han en natt på intensivvården.",
+    "explanationJa": "{手術|しゅじゅつ}の{後|あと}、{一晩|ひとばん}{集中治療室|しゅうちゅうちりょうしつ}にいました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför får morfar åka hem på fredag?",
+    "options": [
+     "Han vill inte vara kvar",
+     "Det finns för få vårdplatser",
+     "Besökstiden är slut",
+     "Han ska till förlossningsavdelningen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Vi har för få vårdplatser, så din morfar får åka hem på fredag.",
+    "explanationJa": "{病床|びょうしょう}が{足|た}りないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lenas syster fick barn på samma sjukhus.",
+    "correct": true,
+    "explanationSv": "Lena gick sedan en våning upp till förlossningsavdelningen. Där hade hennes syster just fått en liten flicka.",
+    "explanationJa": "{同|おな}じ{病院|びょういん}の{産科病棟|さんかびょうとう}で{女|おんな}の{子|こ}が{生|う}まれました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Läkaren på vårdcentralen skrev en remiss till sjukhuset.",
+    "correct": false,
+    "explanationSv": "Läkaren på mottagningen skrev en remiss till en sjukgymnast.",
+    "explanationJa": "{紹介状|しょうかいじょう}は{理学療法士|りがくりょうほうし}{宛|あ}てでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sjukhus och vårdcentraler.",
+  "discussionPoints": [
+   "Har du varit inlagd på sjukhus någon gång?",
+   "Vad är skillnaden mellan en vårdcentral och ett sjukhus?",
+   "Vad tar du med när du hälsar på någon på sjukhuset?",
+   "Hur är sjukhusen där du kommer ifrån?"
+  ]
+ }
+}

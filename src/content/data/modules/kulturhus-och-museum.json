@@ -1,0 +1,174 @@
+{
+ "id": "m.kulturhus-och-museum",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Kulturhus och museum",
+ "titleJa": "{文化会館|ぶんかかいかん}と{博物館|はくぶつかん}",
+ "descriptionSv": "Kulturhus och museum: kulturhus, museum, utställning, konsthall, samling, konstverk, tavla, skulptur, monter, guidad visning, museibutik, fri entré, biljett, scen, föreställning och konsert.",
+ "descriptionJa": "{文化会館|ぶんかかいかん}と{博物館|はくぶつかん}：{文化会館|ぶんかかいかん}、{博物館|はくぶつかん}、{展覧会|てんらんかい}、{美術展示館|びじゅつてんじかん}、コレクション、{芸術作品|げいじゅつさくひん}、{絵|え}、{彫刻|ちょうこく}、ショーケース、ガイドツアー、ミュージアムショップ、{入場無料|にゅうじょうむりょう}、チケット、{舞台|ぶたい}、{公演|こうえん}、コンサート。",
+ "categoryId": "R03-A05-T02",
+ "tags": [
+  "samhälle",
+  "kultur",
+  "offentliga byggnader"
+ ],
+ "level": "A2",
+ "prerequisites": [
+  "m.idrottshall-och-simhall"
+ ],
+ "related": [],
+ "recommendedOrder": 1716,
+ "words": [
+  {
+   "senseId": "s.kulturhus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.museum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konsthall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konstverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tavla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skulptur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.monter.1",
+   "active": false
+  },
+  {
+   "senseId": "s.guidad-visning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.museibutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fri-entré.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biljett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.scen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föreställning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.konsert.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Söndag i kulturhuset",
+  "paragraphs": [
+   "Mitt i staden ligger ett stort kulturhus. Där finns ett bibliotek, en konsthall, en teater och ett litet museum om stadens historia. Många går dit på helgerna.",
+   "En söndag går Sara och hennes pappa till konsthallen. Där visas en utställning med nya tavlor och skulpturer. Det är fri entré, så de behöver ingen biljett. Det finns många konstverk: stora tavlor på väggarna och en skulptur av metall mitt i rummet.",
+   "Sedan går de till museet. Museet har en stor samling av gamla saker från staden. I en monter ligger kläder och verktyg från 1800-talet. Klockan två är det guidad visning, och en kvinna från museet berättar hur människor levde förr.",
+   "I museibutiken köper Sara ett vykort med en bild av skulpturen. Pappa köper en bok om stadens historia.",
+   "På kvällen ser de en föreställning med dans på den stora scenen. Efteråt säger Sara: – Nästa gång vill jag gå på en konsert här!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad finns i kulturhuset?",
+    "options": [
+     "Bara ett museum",
+     "En simhall och ett bibliotek",
+     "En skola och en konsthall",
+     "Ett bibliotek, en konsthall, en teater och ett museum"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där finns ett bibliotek, en konsthall, en teater och ett litet museum om stadens historia.",
+    "explanationJa": "{図書館|としょかん}、{美術展示館|びじゅつてんじかん}、{劇場|げきじょう}、{博物館|はくぶつかん}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför behöver Sara och pappa ingen biljett till konsthallen?",
+    "options": [
+     "De har köpt biljetter i förväg",
+     "Sara är under sju år",
+     "Konsthallen är stängd",
+     "Det är fri entré"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det är fri entré, så de behöver ingen biljett.",
+    "explanationJa": "{入場無料|にゅうじょうむりょう}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad ligger i montern på museet?",
+    "options": [
+     "Kläder och verktyg från 1800-talet",
+     "Tavlor och skulpturer",
+     "Vykort och böcker",
+     "Biljetter till teatern"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I en monter ligger kläder och verktyg från 1800-talet.",
+    "explanationJa": "1800{年代|ねんだい}の{服|ふく}や{道具|どうぐ}が{入|はい}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sara köper en bok i museibutiken.",
+    "correct": false,
+    "explanationSv": "I museibutiken köper Sara ett vykort med en bild av skulpturen. Pappa köper en bok om stadens historia.",
+    "explanationJa": "サラは{絵葉書|えはがき}を{買|か}い、{本|ほん}を{買|か}ったのはお{父|とう}さんです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara vill komma tillbaka till kulturhuset.",
+    "correct": true,
+    "explanationSv": "– Nästa gång vill jag gå på en konsert här!",
+    "explanationJa": "{次|つぎ}はコンサートに{来|き}たいと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kulturhus, museer och föreställningar.",
+  "discussionPoints": [
+   "Vilket museum tycker du bäst om?",
+   "Går du hellre på konsert eller på teater?",
+   "Gillar du guidade visningar, eller går du hellre runt själv?",
+   "Vad köper du i en museibutik?"
+  ]
+ }
+}

@@ -1,0 +1,179 @@
+{
+ "id": "m.polisstation-och-brandstation",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Polisstation och brandstation",
+ "titleJa": "{警察署|けいさつしょ}と{消防署|しょうぼうしょ}",
+ "descriptionSv": "Polisstation och brandstation: polisstation, polisbil, uniform, hittegods, polisanmälan, pass, passexpedition, passfoto, brandkår, brandman, brandbil, brandstation, brandslang, stege, blåljus, utryckning och dygnet runt.",
+ "descriptionJa": "{警察署|けいさつしょ}と{消防署|しょうぼうしょ}：{警察署|けいさつしょ}、パトカー、{制服|せいふく}、{遺失物|いしつぶつ}、{被害届|ひがいとどけ}、パスポート、パスポート{申請|しんせい}{窓口|まどぐち}、パスポート{写真|しゃしん}、{消防隊|しょうぼうたい}、{消防士|しょうぼうし}、{消防車|しょうぼうしゃ}、{消防署|しょうぼうしょ}、{消防|しょうぼう}ホース、はしご、{青色回転灯|あおいろかいてんとう}、{出動|しゅつどう}、24{時間|じかん}。",
+ "categoryId": "R03-A05-T02",
+ "tags": [
+  "samhälle",
+  "polis",
+  "räddningstjänst",
+  "offentliga byggnader"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.skolor-och-bibliotek"
+ ],
+ "related": [],
+ "recommendedOrder": 1714,
+ "words": [
+  {
+   "senseId": "s.polisstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.polisbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uniform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hittegods.1",
+   "active": true
+  },
+  {
+   "senseId": "s.polisanmälan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passexpedition.1",
+   "active": false
+  },
+  {
+   "senseId": "s.passfoto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandkår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandman.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandslang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stege.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utryckning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dygnet-runt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Tomas på polisstationen",
+  "paragraphs": [
+   "Tomas har tappat sin plånbok på bussen. Han går till polisstationen i centrum. Utanför står två polisbilar, och i dörren möter han en polis i uniform.",
+   "Inne på stationen frågar Tomas om någon har lämnat in plånboken som hittegods. Ingen har gjort det, så han gör en polisanmälan. Hans pass låg också i plånboken.",
+   "Polisen visar honom vägen till passexpeditionen. Där tar de ett passfoto, och Tomas ansöker om ett nytt pass. Det tar ungefär två veckor innan passet är klart.",
+   "På väg hem går Tomas förbi brandstationen. Porten står öppen, och han ser tre röda brandbilar. En brandman tvättar en lång brandslang, och en annan klättrar upp på en stege för att öva.",
+   "Plötsligt kommer ett larm. Brandmännen springer till bilarna, och efter en minut är brandkåren på väg med blåljus och siren. – De har utryckningar dygnet runt, säger en kvinna som står bredvid Tomas."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför går Tomas till polisstationen?",
+    "options": [
+     "Han har tappat sin plånbok",
+     "Han vill bli polis",
+     "Han har hittat en plånbok",
+     "Han ska hämta sitt körkort"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Tomas har tappat sin plånbok på bussen. Han går till polisstationen i centrum.",
+    "explanationJa": "{財布|さいふ}をなくしたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Tomas när plånboken inte finns bland hittegodset?",
+    "options": [
+     "Han går hem",
+     "Han ringer bussbolaget",
+     "Han köper en ny plånbok",
+     "Han gör en polisanmälan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ingen har gjort det, så han gör en polisanmälan.",
+    "explanationJa": "{警察|けいさつ}に{届|とど}け{出|で}をします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör Tomas på passexpeditionen?",
+    "options": [
+     "Han hämtar sin plånbok",
+     "Han betalar en bot",
+     "Han gör en polisanmälan",
+     "Han ansöker om ett nytt pass"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där tar de ett passfoto, och Tomas ansöker om ett nytt pass.",
+    "explanationJa": "{新|あたら}しいパスポートを{申請|しんせい}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Brandmännen på brandstationen sitter och vilar när Tomas går förbi.",
+    "correct": false,
+    "explanationSv": "En brandman tvättar en lång brandslang, och en annan klättrar upp på en stege för att öva.",
+    "explanationJa": "ホースを{洗|あら}ったり、はしごで{訓練|くんれん}したりしています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Brandkåren kan åka ut på natten också.",
+    "correct": true,
+    "explanationSv": "– De har utryckningar dygnet runt …",
+    "explanationJa": "24{時間|じかん}{出動|しゅつどう}しています。"
+   }
+  ],
+  "factSources": [
+   "Ansökan om pass och nationellt id-kort görs hos Polismyndigheten, på en passexpedition, där sökanden också fotograferas (polisen.se)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om polisen och brandkåren i er stad.",
+  "discussionPoints": [
+   "Har du varit på en polisstation? Varför?",
+   "Vad gör man om man tappar sitt pass?",
+   "Ville du bli brandman eller polis när du var liten?",
+   "Hur ser polisbilar och brandbilar ut där du kommer ifrån?"
+  ]
+ }
+}
