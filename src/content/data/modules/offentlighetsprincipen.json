@@ -1,0 +1,186 @@
+{
+ "id": "m.offentlighetsprincipen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Offentlighetsprincipen",
+ "titleJa": "{情報公開|じょうほうこうかい}の{原則|げんそく}",
+ "descriptionSv": "Offentlighetsprincipen: offentlighetsprincip, allmän handling, tryckfrihetsförordningen, insyn, begära ut, diarium, diarieföra, registrator, inkomma, upprätta, arkiv, arkivera, granska, journalist, meddelarfrihet, meddelarskydd, efterforskningsförbud och anonym.",
+ "descriptionJa": "{情報公開|じょうほうこうかい}の{原則|げんそく}：{情報公開|じょうほうこうかい}の{原則|げんそく}、{公文書|こうぶんしょ}、{出版自由法|しゅっぱんじゆうほう}、{透明性|とうめいせい}、{開示|かいじ}を{請求|せいきゅう}する、{文書登録簿|ぶんしょとうろくぼ}、{登録|とうろく}する、{文書登録係|ぶんしょとうろくがかり}、{届|とど}く、{作成|さくせい}する、{記録保管所|きろくほかんじょ}、{保管|ほかん}する、よく{調|しら}べる、{記者|きしゃ}、{情報提供|じょうほうていきょう}の{自由|じゆう}、{情報提供者|じょうほうていきょうしゃ}の{保護|ほご}、{探索禁止|たんさくきんし}、{匿名|とくめい}の。",
+ "categoryId": "R03-A02-T06",
+ "tags": [
+  "juridik",
+  "förvaltning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.overklaga-myndighetsbeslut"
+ ],
+ "related": [],
+ "recommendedOrder": 1454,
+ "words": [
+  {
+   "senseId": "s.offentlighetsprincip.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allmän-handling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckfrihetsförordningen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.insyn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.begära-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diarium.1",
+   "active": false
+  },
+  {
+   "senseId": "s.diarieföra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.registrator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inkomma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arkiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arkivera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.granska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.journalist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.meddelarfrihet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.meddelarskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.efterforskningsförbud.1",
+   "active": false
+  },
+  {
+   "senseId": "s.anonym.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ida granskar kommunen",
+  "paragraphs": [
+   "Ida är journalist på en lokal tidning. Hon vill granska varför kommunen har köpt nya bussar för mycket pengar. Tack vare offentlighetsprincipen har alla rätt att läsa allmänna handlingar. Regeln står i tryckfrihetsförordningen, och den ger allmänheten insyn i vad myndigheterna gör.",
+   "Ida ringer kommunens registrator och frågar vad som finns i diariet. Registratorn förklarar att hon diarieför alla brev som har inkommit till kommunen. Där finns till exempel ett erbjudande från företaget som säljer bussarna och ett avtal som kommunen har upprättat.",
+   "Ida vill begära ut avtalet. Hon behöver inte säga vem hon är eller varför hon vill ha det. Hon kunde lika gärna vara anonym. Två dagar senare får hon en kopia. Äldre avtal finns i kommunens arkiv, eftersom kommunen måste arkivera sina handlingar.",
+   "En kväll ringer en man som arbetar på kommunen. Han vill berätta att chefen visste att bussarna var för dyra. Han har rätt att göra det, eftersom han har meddelarfrihet. Ida lovar att inte berätta vem han är. Det är en del av meddelarskyddet.",
+   "När artikeln kommer ut blir chefen arg och frågar alla som arbetar där vem som har pratat med tidningen. Men det får han inte göra. Det finns ett efterforskningsförbud, och det kan bli straff för den som bryter mot det."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var står offentlighetsprincipen?",
+    "options": [
+     "I kommunens avtal",
+     "I företagets regler",
+     "I tidningens arkiv",
+     "I tryckfrihetsförordningen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Regeln står i tryckfrihetsförordningen …",
+    "explanationJa": "{出版自由法|しゅっぱんじゆうほう}に{書|か}かれています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör registratorn med brev som har inkommit?",
+    "options": [
+     "Slänger dem",
+     "Diarieför dem",
+     "Skickar dem till tidningen",
+     "Läser dem för Ida"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Registratorn förklarar att hon diarieför alla brev som har inkommit till kommunen.",
+    "explanationJa": "{届|とど}いた{手紙|てがみ}を{登録|とうろく}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad behöver Ida säga när hon begär ut avtalet?",
+    "options": [
+     "Sitt namn och sitt personnummer",
+     "Vilken tidning hon arbetar på",
+     "Varför hon vill ha avtalet",
+     "Ingenting om vem hon är eller varför"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon behöver inte säga vem hon är eller varför hon vill ha det.",
+    "explanationJa": "{名前|なまえ}も{目的|もくてき}も{言|い}う{必要|ひつよう}はありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mannen som ringde Ida bröt mot lagen.",
+    "correct": false,
+    "explanationSv": "Han har rätt att göra det, eftersom han har meddelarfrihet.",
+    "explanationJa": "{情報提供|じょうほうていきょう}の{自由|じゆう}があるので、{違反|いはん}ではありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Chefen gjorde fel när han frågade dem som arbetar där.",
+    "correct": true,
+    "explanationSv": "Men det får han inte göra. Det finns ett efterforskningsförbud …",
+    "explanationJa": "{探索禁止|たんさくきんし}があるので、{上司|じょうし}は{間違|まちが}っていました。"
+   }
+  ],
+  "factSources": [
+   "Var och en har rätt att ta del av allmänna handlingar; en handling är allmän om den förvaras hos en myndighet och är inkommen dit eller upprättad där (tryckfrihetsförordningen 2 kap. 1 och 4 §§).",
+   "En begäran att ta del av en allmän handling ska behandlas skyndsamt, och en myndighet får inte efterforska vem som begär att få ta del av en handling eller vilket syfte personen har, utöver vad som behövs för att pröva om handlingen får lämnas ut (tryckfrihetsförordningen 2 kap. 15–16 och 18 §§).",
+   "Allmänna handlingar ska som huvudregel registreras (diarieföras) så snart de har kommit in till eller upprättats hos en myndighet (offentlighets- och sekretesslagen 2009:400, 5 kap. 1 §), och myndigheternas arkiv ska bevaras enligt arkivlagen (1990:782).",
+   "Meddelarfriheten och meddelarskyddet, med rätt till anonymitet, efterforskningsförbud och repressalieförbud, regleras i tryckfrihetsförordningen 1 och 3 kap. och yttrandefrihetsgrundlagen; den som bryter mot efterforskningsförbudet kan dömas till böter eller fängelse (tryckfrihetsförordningen 3 kap. 4 §; JO, jo.se).",
+   "Sverige fick sin första tryckfrihetsförordning 1766, och den innehöll redan då en rätt att ta del av myndigheternas handlingar (Riksdagen, riksdagen.se).",
+   "Personerna och händelserna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om offentlighetsprincipen och om att granska makten.",
+  "discussionPoints": [
+   "Har du någon gång begärt ut en allmän handling? Vad ville du läsa?",
+   "Finns det något liknande offentlighetsprincipen i Japan?",
+   "Varför är meddelarskyddet viktigt för en journalist?",
+   "Finns det handlingar som du tycker borde vara hemliga?"
+  ]
+ }
+}

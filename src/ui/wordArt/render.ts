@@ -13,6 +13,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'polis.': () => import('./police').then((m) => m.POLICE_MOTIFS),
   'domst.': () => import('./courts').then((m) => m.COURT_MOTIFS),
   'civil.': () => import('./civilLaw').then((m) => m.CIVIL_LAW_MOTIFS),
+  'forv.': () => import('./authorities').then((m) => m.AUTHORITY_MOTIFS),
   'ideo.': () => import('./ideologies').then((m) => m.IDEOLOGY_MOTIFS),
   'intpol.': () => import('./worldPolitics').then((m) => m.WORLD_POLITICS_MOTIFS),
   'kommun.': () => import('./municipal').then((m) => m.MUNICIPAL_MOTIFS),

@@ -1,0 +1,183 @@
+{
+ "id": "m.personuppgifter-och-integritet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Personuppgifter och integritet",
+ "titleJa": "{個人情報|こじんじょうほう}とプライバシー",
+ "descriptionSv": "Personuppgifter och integritet: personuppgift, personnummer, integritet, integritetskränkande, dataskyddsförordningen, behandla personuppgifter, personuppgiftsansvarig, samla in, ändamål, känsliga personuppgifter, register, registerutdrag, lagra, radera, rätten att bli bortglömd, kamerabevakning och Integritetsskyddsmyndigheten.",
+ "descriptionJa": "{個人情報|こじんじょうほう}とプライバシー：{個人情報|こじんじょうほう}、{個人番号|こじんばんごう}、プライバシー、プライバシーを{侵害|しんがい}する、{一般|いっぱん}データ{保護規則|ほごきそく}、{個人情報|こじんじょうほう}を{取|と}り{扱|あつか}う、{管理責任|かんりせきにん}を{負|お}う、{集|あつ}める、{目的|もくてき}、{要配慮個人情報|ようはいりょこじんじょうほう}、{登録簿|とうろくぼ}、{登録情報|とうろくじょうほう}の{写|うつ}し、{保存|ほぞん}する、{削除|さくじょ}する、{忘|わす}れられる{権利|けんり}、{防犯|ぼうはん}カメラによる{監視|かんし}、プライバシー{保護庁|ほごちょう}。",
+ "categoryId": "R03-A02-T06",
+ "tags": [
+  "juridik",
+  "förvaltning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.sekretess-och-tystnadsplikt"
+ ],
+ "related": [],
+ "recommendedOrder": 1456,
+ "words": [
+  {
+   "senseId": "s.personuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.integritet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.integritetskränkande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dataskyddsförordningen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.behandla-personuppgifter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personuppgiftsansvarig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.samla-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ändamål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.känsliga-personuppgifter.1",
+   "active": false
+  },
+  {
+   "senseId": "s.register.1",
+   "active": true
+  },
+  {
+   "senseId": "s.registerutdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rätten-att-bli-bortglömd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kamerabevakning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Integritetsskyddsmyndigheten.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad vet gymmet om mig?",
+  "paragraphs": [
+   "Lina har slutat på sitt gym, men hon får fortfarande mejl därifrån. Hon undrar vilka personuppgifter gymmet har om henne. När hon blev medlem fick hon lämna namn, adress, personnummer och till och med uppgifter om sin hälsa.",
+   "Lina läser på nätet om dataskyddsförordningen. Den säger att alla som behandlar personuppgifter måste följa vissa regler. Gymmet är personuppgiftsansvarigt för medlemmarnas uppgifter. Det får bara samla in de uppgifter som behövs för ett visst ändamål, och uppgifter om hälsa är känsliga personuppgifter med ett extra starkt skydd.",
+   "Lina skickar ett mejl och ber om ett registerutdrag. Efter två veckor får hon svar. Hennes namn finns kvar i gymmets register, och gymmet lagrar också bilder från kamerabevakningen i entrén.",
+   "Lina vill inte att gymmet sparar hennes uppgifter längre. Hon använder rätten att bli bortglömd och ber gymmet radera allt. Gymmet svarar att det måste spara kvittona i några år enligt lag, men att det raderar resten.",
+   "Lina tycker att hennes integritet är viktig. Om gymmet inte hade svarat, kunde hon ha klagat hos Integritetsskyddsmyndigheten. – Det känns integritetskränkande att ett gym vet så mycket om ens hälsa, säger hon till sin vän Johan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka uppgifter lämnade Lina när hon blev medlem?",
+    "options": [
+     "Namn, adress, personnummer och uppgifter om hälsan",
+     "Bara sitt namn",
+     "Bara sitt telefonnummer",
+     "Uppgifter om sin lön"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… fick hon lämna namn, adress, personnummer och till och med uppgifter om sin hälsa.",
+    "explanationJa": "{名前|なまえ}、{住所|じゅうしょ}、{個人番号|こじんばんごう}、{健康|けんこう}についての{情報|じょうほう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad ber Lina om i sitt första mejl?",
+    "options": [
+     "Pengar tillbaka",
+     "Ett registerutdrag",
+     "Ett nytt medlemskort",
+     "En ny tid"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Lina skickar ett mejl och ber om ett registerutdrag.",
+    "explanationJa": "{登録情報|とうろくじょうほう}の{写|うつ}しを{求|もと}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Varför har uppgifter om hälsa ett extra starkt skydd?",
+    "options": [
+     "De är gamla",
+     "De är svåra att läsa",
+     "De är känsliga personuppgifter",
+     "De är dyra att spara"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… uppgifter om hälsa är känsliga personuppgifter med ett extra starkt skydd.",
+    "explanationJa": "{健康|けんこう}の{情報|じょうほう}は{要配慮個人情報|ようはいりょこじんじょうほう}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Gymmet raderar alla Linas uppgifter.",
+    "correct": false,
+    "explanationSv": "Gymmet svarar att det måste spara kvittona i några år enligt lag, men att det raderar resten.",
+    "explanationJa": "{領収書|りょうしゅうしょ}は{法律|ほうりつ}によって{数年間|すうねんかん}{保存|ほぞん}しなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lina kunde ha vänt sig till en myndighet om gymmet inte hade svarat.",
+    "correct": true,
+    "explanationSv": "Om gymmet inte hade svarat, kunde hon ha klagat hos Integritetsskyddsmyndigheten.",
+    "explanationJa": "プライバシー{保護庁|ほごちょう}に{苦情|くじょう}を{申|もう}し{立|た}てることができました。"
+   }
+  ],
+  "factSources": [
+   "Dataskyddsförordningen (EU) 2016/679 tillämpas sedan den 25 maj 2018; den definierar personuppgifter, behandling och personuppgiftsansvarig (artikel 4) och kräver bland annat att personuppgifter samlas in för särskilda, uttryckligt angivna och berättigade ändamål och inte lagras längre än nödvändigt (artikel 5).",
+   "Behandling av särskilda kategorier av personuppgifter, bland annat uppgifter om etniskt ursprung, politiska åsikter, religiös övertygelse, medlemskap i fackförening, hälsa och sexualliv eller sexuell läggning, är som huvudregel förbjuden (dataskyddsförordningen artikel 9).",
+   "Den registrerade har rätt att få bekräftelse på och en kostnadsfri kopia av de personuppgifter som behandlas (artikel 15), och den personuppgiftsansvarige ska som huvudregel svara inom en månad (artikel 12.3).",
+   "Den registrerade har rätt att få sina personuppgifter raderade utan onödigt dröjsmål i vissa fall, till exempel när de inte längre behövs (artikel 17, rätten till radering eller ”rätten att bli bortglömd”), men rätten gäller inte när behandlingen behövs för att uppfylla en rättslig förpliktelse (artikel 17.3).",
+   "Räkenskapsinformation, till exempel kvitton, ska bevaras i sju år enligt bokföringslagen (1999:1078, 7 kap. 2 §).",
+   "Integritetsskyddsmyndigheten (IMY), som hette Datainspektionen fram till 2021, är tillsynsmyndighet för dataskyddsförordningen och kamerabevakningslagen (2018:1200), och den som anser att hans eller hennes personuppgifter behandlas felaktigt kan klaga hos IMY (IMY, imy.se; dataskyddsförordningen artikel 77).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om personuppgifter och integritet.",
+  "discussionPoints": [
+   "Vilka företag tror du har flest uppgifter om dig?",
+   "Har du någon gång bett om ett registerutdrag?",
+   "Tycker du att kamerabevakning på allmänna platser är bra eller integritetskränkande?",
+   "Hur skyddas personuppgifter i Japan jämfört med i Sverige?"
+  ]
+ }
+}

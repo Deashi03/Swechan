@@ -1,0 +1,184 @@
+{
+ "id": "m.overklaga-myndighetsbeslut",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Överklaga myndighetsbeslut",
+ "titleJa": "{行政|ぎょうせい}の{決定|けってい}への{不服申立|ふふくもうした}て",
+ "descriptionSv": "Överklaga myndighetsbeslut: överklaga, överklagandetid, överklagandehänvisning, skriftlig, lämna in, avvisa, ompröva, omprövning, rätta, rättelse, förvaltningsrätt, upphäva, inhibition, kammarrätt, Högsta förvaltningsdomstolen, vinna laga kraft och Justitieombudsmannen.",
+ "descriptionJa": "{行政|ぎょうせい}の{決定|けってい}への{不服申立|ふふくもうした}て：{不服|ふふく}を{申|もう}し{立|た}てる、{不服申立期間|ふふくもうしたてきかん}、{不服申立|ふふくもうした}ての{教示|きょうじ}、{書面|しょめん}の、{提出|ていしゅつ}する、{却下|きゃっか}する、{見直|みなお}す、{再審査|さいしんさ}、{訂正|ていせい}する、{訂正|ていせい}、{行政裁判所|ぎょうせいさいばんしょ}、{取|と}り{消|け}す、{執行停止|しっこうていし}、{高等行政裁判所|こうとうぎょうせいさいばんしょ}、{最高行政裁判所|さいこうぎょうせいさいばんしょ}、{確定|かくてい}する、{議会|ぎかい}オンブズマン。",
+ "categoryId": "R03-A02-T06",
+ "tags": [
+  "juridik",
+  "förvaltning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.ansokan-och-tillstand"
+ ],
+ "related": [],
+ "recommendedOrder": 1453,
+ "words": [
+  {
+   "senseId": "s.överklaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överklagandetid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överklagandehänvisning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriftlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvisa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ompröva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omprövning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvaltningsrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upphäva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inhibition.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kammarrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Högsta-förvaltningsdomstolen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vinna-laga-kraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Justitieombudsmannen.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Eva vill överklaga",
+  "paragraphs": [
+   "Eva har ont i knäna och kan inte längre åka buss. Hon sökte färdtjänst, men kommunen sa nej. – Jag tycker att beslutet är fel, säger hon till sin dotter Sara. – Då ska du överklaga, svarar Sara.",
+   "Sist i beslutet finns en överklagandehänvisning. Där står att hon måste överklaga skriftligt och att överklagandetiden är tre veckor från den dag Eva fick beslutet. Det står också att hon ska lämna in sitt brev till kommunen, inte direkt till domstolen. Om brevet kommer in för sent, kommer kommunen att avvisa det.",
+   "Eva skriver ett brev och bifogar ett nytt läkarintyg. Kommunen måste först ompröva beslutet. Vid omprövningen ändrar den inte sitt nej, men den rättar ett datum som var fel. Efter den rättelsen skickar kommunen Evas brev vidare till förvaltningsrätten.",
+   "Förvaltningsrätten ger Eva rätt och upphäver kommunens beslut. Kommunen kan överklaga till kammarrätten och sedan till Högsta förvaltningsdomstolen, men gör det inte. Beslutet vinner laga kraft efter tre veckor.",
+   "Evas granne har också fått ett beslut: han ska riva ett gammalt garage inom en månad. Han har överklagat och ber förvaltningsrätten om inhibition, så att han inte behöver riva garaget innan domstolen har bestämt sig. Han tycker dessutom att kommunen har varit otrevlig mot honom. Det kan han anmäla till Justitieombudsmannen, JO."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång är överklagandetiden för Eva?",
+    "options": [
+     "En vecka",
+     "Tre veckor",
+     "Tre månader",
+     "Ett år"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… överklagandetiden är tre veckor från den dag Eva fick beslutet.",
+    "explanationJa": "{不服申立期間|ふふくもうしたてきかん}は{三週間|さんしゅうかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vart ska Eva skicka brevet där hon överklagar?",
+    "options": [
+     "Till kommunen",
+     "Direkt till förvaltningsrätten",
+     "Till JO",
+     "Till kammarrätten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… hon ska lämna in sitt brev till kommunen, inte direkt till domstolen.",
+    "explanationJa": "{決定|けってい}を{下|くだ}した{市|し}に{出|だ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad ändrade kommunen efter omprövningen?",
+    "options": [
+     "Hela beslutet",
+     "Ett datum som var fel",
+     "Ingenting alls",
+     "Evas adress"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Vid omprövningen ändrar den inte sitt nej, men den rättar ett datum som var fel.",
+    "explanationJa": "{間違|まちが}っていた{日付|ひづけ}だけを{訂正|ていせい}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Förvaltningsrätten upphävde kommunens beslut.",
+    "correct": true,
+    "explanationSv": "Förvaltningsrätten ger Eva rätt och upphäver kommunens beslut.",
+    "explanationJa": "{行政裁判所|ぎょうせいさいばんしょ}は{市|し}の{決定|けってい}を{取|と}り{消|け}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "JO kan ändra beslutet om garaget.",
+    "correct": false,
+    "explanationSv": "Han tycker dessutom att kommunen har varit otrevlig mot honom. Det kan han anmäla till Justitieombudsmannen, JO.",
+    "explanationJa": "JOは{役所|やくしょ}の{対応|たいおう}を{調|しら}べますが、{決定|けってい}は{変|か}えられません。"
+   }
+  ],
+  "factSources": [
+   "Ett beslut av en förvaltningsmyndighet överklagas som huvudregel till allmän förvaltningsdomstol; överklagandet ska vara skriftligt, ges in till den myndighet som har meddelat beslutet och ha kommit in inom tre veckor från den dag då klaganden fick del av beslutet (förvaltningslagen 2017:900, 40–44 §§).",
+   "Den myndighet som har meddelat beslutet prövar om överklagandet har kommit in i rätt tid och avvisar det om det har kommit in för sent; om beslutet inte ändras skickas överklagandet vidare till den instans som ska pröva det (förvaltningslagen 45–46 §§).",
+   "En myndighet får rätta ett beslut som innehåller en uppenbar felaktighet till följd av myndighetens eller någon annans skrivfel, räknefel eller liknande förbiseende (förvaltningslagen 36 §), och ska ändra ett beslut som den finner uppenbart oriktigt om det kan ske snabbt och enkelt (förvaltningslagen 38 §).",
+   "Den myndighet som ska pröva ett överklagande får bestämma att det överklagade beslutet tills vidare inte ska gälla, så kallad inhibition (förvaltningsprocesslagen 1971:291, 28 §).",
+   "Beslut i ärenden om färdtjänst får överklagas hos allmän förvaltningsdomstol, och prövningstillstånd krävs vid överklagande till kammarrätten (lagen 1997:736 om färdtjänst, 12 §).",
+   "De allmänna förvaltningsdomstolarna är förvaltningsrätterna, de fyra kammarrätterna (Stockholm, Göteborg, Sundsvall och Jönköping) och Högsta förvaltningsdomstolen, som hette Regeringsrätten fram till 2011 (Sveriges Domstolar, domstol.se).",
+   "Justitieombudsmannen (JO) granskar på riksdagens uppdrag att myndigheterna följer lagar och förordningar; JO kan kritisera men inte ändra myndigheternas beslut, och ämbetet inrättades 1809 (JO, jo.se).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att överklaga beslut från myndigheter.",
+  "discussionPoints": [
+   "Har du eller någon du känner överklagat ett beslut? Hur gick det?",
+   "Är tre veckor en rimlig överklagandetid? Varför eller varför inte?",
+   "Vad är skillnaden mellan att överklaga och att anmäla till JO?",
+   "Hur fungerar det i Japan om man inte håller med en myndighet?"
+  ]
+ }
+}
