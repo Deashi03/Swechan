@@ -1,0 +1,179 @@
+{
+ "id": "m.trafikplanering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Trafikplanering",
+ "titleJa": "{交通計画|こうつうけいかく}",
+ "descriptionSv": "Trafikplanering: trafikplanering, trafikflöde, rusningstrafik, genomfartstrafik, förbifart, framkomlighet, busskörfält, cykelbana, cykelparkering, infartsparkering, övergångsställe, trafiksäkerhet, farthinder, hastighetsgräns, gångfartsområde, rondell och trängselskatt.",
+ "descriptionJa": "{交通計画|こうつうけいかく}：{交通計画|こうつうけいかく}、{交通|こうつう}の{流|なが}れ、ラッシュアワー、{通過交通|つうかこうつう}、バイパス、{通行|つうこう}のしやすさ、バス{専用|せんよう}レーン、{自転車道|じてんしゃどう}、{駐輪場|ちゅうりんじょう}、パークアンドライド{用|よう}の{駐車場|ちゅうしゃじょう}、{横断歩道|おうだんほどう}、{交通安全|こうつうあんぜん}、{減速帯|げんそくたい}、{制限速度|せいげんそくど}、{歩行者優先区域|ほこうしゃゆうせんくいき}、ロータリー、{混雑税|こんざつぜい}。",
+ "categoryId": "R03-A05-T04",
+ "tags": [
+  "samhälle",
+  "stad",
+  "stadsplanering",
+  "trafik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.gronomraden"
+ ],
+ "related": [],
+ "recommendedOrder": 1734,
+ "words": [
+  {
+   "senseId": "s.trafikplanering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikflöde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rusningstrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genomfartstrafik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förbifart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framkomlighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.busskörfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelbana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cykelparkering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.infartsparkering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övergångsställe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafiksäkerhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.farthinder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighetsgräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångfartsområde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rondell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trängselskatt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En ny plan för trafiken",
+  "paragraphs": [
+   "Genom den lilla staden går en stor väg. Varje morgon och eftermiddag är det rusningstrafik, och långa köer bildas i centrum. Många av bilarna och lastbilarna ska inte ens stanna i staden. Det är genomfartstrafik på väg mot kusten.",
+   "Kommunen har därför gjort en ny trafikplanering. Först mätte man trafikflödet på alla stora gator. Sedan bestämde politikerna att det ska byggas en förbifart norr om staden. Då kan lastbilarna köra runt centrum i stället för genom det.",
+   "I centrum ska bussarna få bättre framkomlighet. På huvudgatan blir ett av körfälten ett busskörfält. Vid stationen byggs en infartsparkering, så att de som bor på landet kan ställa bilen där och ta bussen. Det blir också en ny cykelbana och en stor cykelparkering under tak.",
+   "Trafiksäkerheten är viktig, särskilt vid skolorna. Där sänks hastighetsgränsen till 30 kilometer i timmen, och det blir farthinder och nya övergångsställen. Torget blir ett gångfartsområde, och den farliga korsningen vid kyrkan byggs om till en rondell.",
+   "Alla är inte nöjda. – Snart har vi väl trängselskatt här också, säger en man som kör bil till jobbet varje dag. Men en kvinna som cyklar är glad: – Äntligen tänker kommunen på oss som inte har bil."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är det för trafik som bara åker igenom staden?",
+    "options": [
+     "Bussar till skolan",
+     "Genomfartstrafik på väg mot kusten",
+     "Cyklister på väg till jobbet",
+     "Bilar som letar parkering"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Många av bilarna och lastbilarna ska inte ens stanna i staden. Det är genomfartstrafik på väg mot kusten.",
+    "explanationJa": "{海岸|かいがん}へ{向|む}かう{通過交通|つうかこうつう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gjorde kommunen först?",
+    "options": [
+     "Mätte trafikflödet",
+     "Byggde en rondell",
+     "Införde trängselskatt",
+     "Byggde en förbifart"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Först mätte man trafikflödet på alla stora gator.",
+    "explanationJa": "まず、{交通量|こうつうりょう}を{測|はか}りました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vem är infartsparkeringen till för?",
+    "options": [
+     "De som bor på landet och vill ta bussen",
+     "Lastbilar på väg mot kusten",
+     "Cyklister",
+     "Turister som vill se torget"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vid stationen byggs en infartsparkering, så att de som bor på landet kan ställa bilen där och ta bussen.",
+    "explanationJa": "{田舎|いなか}に{住|す}んでいて、バスに{乗|の}り{換|か}えたい{人|ひと}のためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vid skolorna ska man få köra fortare än i dag.",
+    "correct": false,
+    "explanationSv": "Där sänks hastighetsgränsen till 30 kilometer i timmen …",
+    "explanationJa": "{学校|がっこう}のそばでは{制限速度|せいげんそくど}が{下|さ}げられます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kvinnan som cyklar tycker om den nya planen.",
+    "correct": true,
+    "explanationSv": "Men en kvinna som cyklar är glad: – Äntligen tänker kommunen på oss som inte har bil.",
+    "explanationJa": "{自転車|じてんしゃ}に{乗|の}る{女性|じょせい}は{喜|よろこ}んでいます。"
+   }
+  ],
+  "factSources": [
+   "Transportstyrelsen: trängselskatt i Stockholm sedan 2007 och i Göteborg sedan 2013."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om trafiken i staden och hur den kan bli bättre.",
+  "discussionPoints": [
+   "Hur tar du dig till jobbet eller skolan? Fastnar du ibland i rusningstrafiken?",
+   "Tycker du att det är rätt att ta ut trängselskatt?",
+   "Vad kan en kommun göra för att fler ska cykla?",
+   "Hur är trafiksäkerheten där du bor?"
+  ]
+ }
+}
