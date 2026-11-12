@@ -1,0 +1,177 @@
+{
+ "id": "m.skadestand-och-ansvar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Skadestånd och ansvar",
+ "titleJa": "{損害賠償|そんがいばいしょう}と{責任|せきにん}",
+ "descriptionSv": "Skadestånd och ansvar: skadestånd, skadeståndslagen, skadeståndsskyldig, ersättning, skadevållare, skadelidande, personskada, sakskada, kränkningsersättning, orsakssamband, strikt ansvar, medvållande, försäkring, hemförsäkring, självrisk och ansvarsförsäkring.",
+ "descriptionJa": "{損害賠償|そんがいばいしょう}と{責任|せきにん}：{損害賠償|そんがいばいしょう}、{損害賠償法|そんがいばいしょうほう}、{損害賠償|そんがいばいしょう}{責任|せきにん}がある、{補償|ほしょう}、{加害者|かがいしゃ}、{損害|そんがい}を{受|う}けた{人|ひと}、{人身|じんしん}{損害|そんがい}、{物損|ぶっそん}、{精神的苦痛|せいしんてきくつう}への{賠償|ばいしょう}、{因果関係|いんがかんけい}、{無過失責任|むかしつせきにん}、{被害者|ひがいしゃ}{側|がわ}の{過失|かしつ}、{保険|ほけん}、{家財保険|かざいほけん}、{自己負担額|じこふたんがく}、{賠償責任|ばいしょうせきにん}{保険|ほけん}。",
+ "categoryId": "R03-A02-T05",
+ "tags": [
+  "juridik",
+  "skadestånd"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.hyra-och-boenderatt"
+ ],
+ "related": [],
+ "recommendedOrder": 1444,
+ "words": [
+  {
+   "senseId": "s.skadestånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadeståndslagen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skadeståndsskyldig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ersättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadevållare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skadelidande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.personskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sakskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kränkningsersättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orsakssamband.1",
+   "active": false
+  },
+  {
+   "senseId": "s.strikt-ansvar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.medvållande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försäkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemförsäkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansvarsförsäkring.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Krocken på cykelbanan",
+  "paragraphs": [
+   "En kväll cyklade Emil hem från jobbet. Han tittade på sin telefon och körde rakt in i Anna, som cyklade åt andra hållet. Anna bröt armen, och hennes telefon gick sönder. Hon fick alltså både en personskada och en sakskada.",
+   "Enligt skadeståndslagen måste den som orsakar en skada för att hen inte är försiktig betala skadestånd. Emil var skadevållaren och Anna var den skadelidande. Det fanns ett tydligt orsakssamband: Anna skadades eftersom Emil inte såg framför sig. Emil var alltså skadeståndsskyldig.",
+   "Som tur var hade Emil en hemförsäkring, och i den ingår en ansvarsförsäkring. Försäkringen betalade Annas ersättning för läkare, förlorad lön och den trasiga telefonen. Emil fick bara betala självrisken på 1 500 kronor.",
+   "Men det var mörkt, och Anna cyklade utan lampa. Det räknades som medvållande. Därför fick hon lite mindre pengar för telefonen. För armen fick hon full ersättning, eftersom hon inte hade tagit så stora risker.",
+   "Ibland måste man betala även om man har varit försiktig. Det kallas strikt ansvar och gäller till exempel för den som har en hund. Och om någon skadar en annan genom ett brott, till exempel slår henne, kan den skadelidande också få kränkningsersättning."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka skador fick Anna?",
+    "options": [
+     "Bara en sakskada",
+     "Bara en personskada",
+     "En personskada och en sakskada",
+     "Inga skador"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon fick alltså både en personskada och en sakskada.",
+    "explanationJa": "{人身|じんしん}{損害|そんがい}と{物損|ぶっそん}の{両方|りょうほう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför var Emil skadeståndsskyldig?",
+    "options": [
+     "Han hade ingen försäkring",
+     "Han var inte försiktig och orsakade skadan",
+     "Han cyklade utan lampa",
+     "Han ville skada Anna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han tittade på sin telefon och körde rakt in i Anna …",
+    "explanationJa": "{不注意|ふちゅうい}で{損害|そんがい}を{与|あた}えたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur mycket fick Emil själv betala?",
+    "options": [
+     "Ingenting",
+     "Hela skadeståndet",
+     "Annas lön",
+     "Självrisken på 1 500 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Emil fick bara betala självrisken på 1 500 kronor.",
+    "explanationJa": "{自己負担額|じこふたんがく}の1500クローナだけです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Anna fick mindre pengar för armen på grund av medvållande.",
+    "correct": false,
+    "explanationSv": "För armen fick hon full ersättning, eftersom hon inte hade tagit så stora risker.",
+    "explanationJa": "{腕|うで}については{全額|ぜんがく}の{賠償|ばいしょう}を{受|う}けました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Den som har en hund kan behöva betala även om hen har varit försiktig.",
+    "correct": true,
+    "explanationSv": "Det kallas strikt ansvar och gäller till exempel för den som har en hund.",
+    "explanationJa": "{犬|いぬ}の{飼|か}い{主|ぬし}には{無過失責任|むかしつせきにん}があります。"
+   }
+  ],
+  "factSources": [
+   "Skadeståndslagen (1972:207) 2 kap. 1 §: den som uppsåtligen eller av vårdslöshet vållar personskada eller sakskada ska ersätta skadan. 2 kap. 3 §: den som allvarligt kränker någon annan genom brott ska ersätta skadan som kränkningen innebär (kränkningsersättning). 2 kap. 4 §: den som inte har fyllt arton år ska ersätta skada som han eller hon vållar i den mån det är skäligt.",
+   "Personskadeersättning omfattar bland annat sjukvårdskostnader, inkomstförlust och sveda och värk (skadeståndslagen 5 kap. 1 §). Arbetsgivare svarar för skada som arbetstagare vållar i tjänsten (3 kap. 1 §).",
+   "Skadestånd kan jämkas vid medvållande. Vid personskada sker jämkning bara om den skadelidande uppsåtligen eller genom grov vårdslöshet har medverkat till skadan (skadeståndslagen 6 kap. 1 §).",
+   "Strikt ansvar gäller bland annat för hundägare och hundinnehavare (lagen 2007:1150 om tillsyn över hundar och katter, 19 §) och för personskador i trafiken genom trafikförsäkringen (trafikskadelagen 1975:1410).",
+   "Hemförsäkringar i Sverige innehåller normalt en ansvarsförsäkring och en rättsskyddsförsäkring; vid skada dras självrisken av från ersättningen (Konsumenternas Försäkringsbyrå, konsumenternas.se). Kan gärningspersonen inte betala kan brottsskadeersättning sökas hos Brottsoffermyndigheten (brottsskadelagen 2014:322)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om skador, ansvar och försäkringar.",
+  "discussionPoints": [
+   "Har du en hemförsäkring? Vet du vad den innehåller?",
+   "Har du någon gång skadat någon annans sak? Vad hände?",
+   "Är det rättvist att hundägare har strikt ansvar?",
+   "Hur fungerar skadestånd i ditt land?"
+  ]
+ }
+}

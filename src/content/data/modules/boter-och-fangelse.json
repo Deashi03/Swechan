@@ -1,0 +1,179 @@
+{
+ "id": "m.boter-och-fangelse",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Böter och fängelse",
+ "titleJa": "{罰金|ばっきん}と{拘禁刑|こうきんけい}",
+ "descriptionSv": "Böter och fängelse: straff, straffa, böter, dagsböter, ordningsbot, bötfälla, fängelse, sitta i fängelse, livstids fängelse, avtjäna, fånge, anstalt, Kriminalvården, permission, villkorlig frigivning och frige.",
+ "descriptionJa": "{罰金|ばっきん}と{拘禁刑|こうきんけい}：{罰|ばつ}、{罰|ばっ}する、{罰金|ばっきん}、{日数罰金|にっすうばっきん}、{反則金|はんそくきん}、{罰金|ばっきん}を{科|か}す、{刑務所|けいむしょ}、{刑務所|けいむしょ}に{入|はい}っている、{終身刑|しゅうしんけい}、{刑|けい}に{服|ふく}する、{受刑者|じゅけいしゃ}、{刑事施設|けいじしせつ}、{矯正局|きょうせいきょく}、{一時外出|いちじがいしゅつ}、{仮釈放|かりしゃくほう}、{釈放|しゃくほう}する。",
+ "categoryId": "R03-A02-T02",
+ "tags": [
+  "juridik",
+  "brott"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.forsok-och-medverkan"
+ ],
+ "related": [],
+ "recommendedOrder": 1414,
+ "words": [
+  {
+   "senseId": "s.straff.1",
+   "active": true
+  },
+  {
+   "senseId": "s.straffa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dagsböter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordningsbot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bötfälla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fängelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sitta-i-fängelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livstids-fängelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avtjäna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fånge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anstalt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kriminalvården.1",
+   "active": false
+  },
+  {
+   "senseId": "s.permission.1",
+   "active": true
+  },
+  {
+   "senseId": "s.villkorlig-frigivning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frige.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Från böter till fängelse",
+  "paragraphs": [
+   "De två vanligaste straffen i Sverige är böter och fängelse. Böter är det mildaste straffet, och det är också det vanligaste. När Lisa körde lite för fort gav polisen henne en ordningsbot direkt på plats. Hon betalade och behövde inte gå till domstol.",
+   "Per hade tagit varor från en butik utan att betala. Domstolen bötfällde honom och dömde honom till 40 dagsböter. Eftersom Per har ganska låg lön blev summan inte så hög. En person med hög lön hade fått betala mycket mer för samma brott.",
+   "För allvarligare brott kan domstolen straffa en person med fängelse. Johan dömdes till tre års fängelse. Han avtjänar straffet på en anstalt utanför Kalmar. Där arbetar fångarna på dagarna, och några studerar. Det är Kriminalvården som har hand om alla fängelser.",
+   "Efter ett år fick Johan permission för att träffa sin dotter. När han har suttit i fängelse i två år får han villkorlig frigivning. Kriminalvården friger honom alltså när två tredjedelar av straffet har gått. Om han begår nya brott kan han behöva gå tillbaka till fängelset.",
+   "Det hårdaste straffet i Sverige är livstids fängelse. Det döms bara ut för mycket allvarliga brott. Sverige har inte haft dödsstraff på länge."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad fick Lisa när hon körde för fort?",
+    "options": [
+     "En ordningsbot",
+     "Dagsböter",
+     "Fängelse",
+     "Permission"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När Lisa körde lite för fort gav polisen henne en ordningsbot direkt på plats.",
+    "explanationJa": "{警察|けいさつ}はその{場|ば}で{反則金|はんそくきん}を{科|か}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blev Pers böter inte så höga?",
+    "options": [
+     "Han betalade direkt",
+     "Han var ung",
+     "Han har ganska låg lön",
+     "Brottet var gammalt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Eftersom Per har ganska låg lön blev summan inte så hög.",
+    "explanationJa": "ペールは{収入|しゅうにゅう}が{少|すく}ないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att Johan avtjänar sitt straff på en anstalt?",
+    "options": [
+     "Han betalar böter där",
+     "Han arbetar där på dagarna",
+     "Han sitter i fängelse där",
+     "Han bor där med sin familj"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han avtjänar straffet på en anstalt utanför Kalmar.",
+    "explanationJa": "{彼|かれ}はその{施設|しせつ}で{刑|けい}に{服|ふく}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Johan måste sitta i fängelse i hela tre år.",
+    "correct": false,
+    "explanationSv": "När han har suttit i fängelse i två år får han villkorlig frigivning.",
+    "explanationJa": "2{年後|ねんご}に{仮釈放|かりしゃくほう}されます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Böter är det vanligaste straffet i Sverige.",
+    "correct": true,
+    "explanationSv": "Böter är det mildaste straffet, och det är också det vanligaste.",
+    "explanationJa": "{罰金|ばっきん}がもっとも{一般的|いっぱんてき}な{刑罰|けいばつ}です。"
+   }
+  ],
+  "factSources": [
+   "Böter och fängelse är straff; villkorlig dom och skyddstillsyn är andra påföljder (brottsbalken 1 kap. 3 §).",
+   "Dagsböter bestäms till lägst 30 och högst 150, och varje dagsbot till ett belopp efter den tilltalades ekonomiska förhållanden (brottsbalken 25 kap. 2 §).",
+   "Ordningsbot kan föreläggas av polisen för vissa brott där böter ingår i straffskalan; godkänns föreläggandet gäller det som en lagakraftvunnen dom (rättegångsbalken 48 kap.).",
+   "Fängelse döms ut på viss tid, lägst fjorton dagar, eller på livstid (brottsbalken 26 kap. 1 §). Livstidsstraff kan omvandlas till fängelse på viss tid efter ansökan när minst tio år har avtjänats (lagen 2006:45 om omvandling av fängelse på livstid).",
+   "Villkorlig frigivning sker normalt när två tredjedelar av strafftiden, dock minst en månad, har avtjänats (brottsbalken 26 kap. 6 §).",
+   "Kriminalvården ansvarar för anstalter, häkten och frivård (kriminalvarden.se); en intagen kan beviljas permission (fängelselagen 2010:610, 10 kap.).",
+   "Dödsstraffet avskaffades i Sverige i fredstid 1921 och helt 1973 (Nationalencyklopedin, uppslagsordet dödsstraff)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om böter och fängelse som straff.",
+  "discussionPoints": [
+   "Är det rättvist att personer med hög lön betalar mer i böter?",
+   "Vad tycker du att fångar ska göra under tiden på anstalten?",
+   "Är det bra att de flesta får villkorlig frigivning?",
+   "Vilka straff finns i ditt land som inte finns i Sverige?"
+  ]
+ }
+}

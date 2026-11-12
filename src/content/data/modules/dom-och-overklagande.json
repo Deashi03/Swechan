@@ -1,0 +1,178 @@
+{
+ "id": "m.dom-och-overklagande",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Dom och överklagande",
+ "titleJa": "{判決|はんけつ}と{控訴|こうそ}",
+ "descriptionSv": "Dom och överklagande: döma, överläggning, enhällig, skiljaktig, domslut, domskäl, fälla, fria, frikänna, fällande dom, friande dom, överklaga, överklagande, prövningstillstånd, nöja sig och vinna laga kraft.",
+ "descriptionJa": "{判決|はんけつ}と{控訴|こうそ}：{裁|さば}く、{評議|ひょうぎ}、{全員一致|ぜんいんいっち}の、{反対意見|はんたいいけん}の、{主文|しゅぶん}、{判決理由|はんけつりゆう}、{有罪|ゆうざい}とする、{無罪|むざい}にする、{無罪|むざい}を{言|い}い{渡|わた}す、{有罪判決|ゆうざいはんけつ}、{無罪判決|むざいはんけつ}、{上訴|じょうそ}する、{控訴|こうそ}、{審理許可|しんりきょか}、{受|う}け{入|い}れる、{確定|かくてい}する。",
+ "categoryId": "R03-A02-T04",
+ "tags": [
+  "juridik",
+  "domstol"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.huvudforhandling"
+ ],
+ "related": [],
+ "recommendedOrder": 1436,
+ "words": [
+  {
+   "senseId": "s.döma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överläggning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enhällig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skiljaktig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.domslut.1",
+   "active": false
+  },
+  {
+   "senseId": "s.domskäl.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fria.2",
+   "active": true
+  },
+  {
+   "senseId": "s.frikänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fällande-dom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.friande-dom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överklaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överklagande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prövningstillstånd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nöja-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinna-laga-kraft.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Domen",
+  "paragraphs": [
+   "Efter huvudförhandlingen går rätten till överläggning. Domaren och de tre nämndemännen går igenom vittnesmålen och bevisen. De får bara döma efter det som har kommit fram i rättssalen. Efter en timme har de bestämt sig, men de är inte enhälliga.",
+   "Domaren och två av nämndemännen vill fälla den tilltalade för misshandel. Den tredje nämndemannen är skiljaktig och vill fria honom. Det blir alltså en fällande dom, och mannen får ett straff på sex månader.",
+   "En vecka senare får mannen domen med posten. Först läser han domslutet, där det står vilket straff han har fått. Sedan läser han domskälen, där tingsrätten förklarar varför den trodde mer på vittnena än på honom.",
+   "Mannen nöjer sig inte med domen. Hans advokat skickar ett överklagande inom tre veckor, och hovrätten tar upp målet. Om han inte hade överklagat, hade domen vunnit laga kraft.",
+   "I hovrätten blir det en ny rättegång. Den här gången frikänner hovrätten mannen, eftersom ett av vittnena säger något annat än i tingsrätten. Nu kan åklagaren överklaga den friande domen till Högsta domstolen, men där behövs prövningstillstånd."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många i rätten vill fria den tilltalade?",
+    "options": [
+     "Två",
+     "Tre",
+     "Ingen",
+     "En"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den tredje nämndemannen är skiljaktig och vill fria honom.",
+    "explanationJa": "{一人|ひとり}だけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Var står det vilket straff mannen har fått?",
+    "options": [
+     "I domskälen",
+     "I domslutet",
+     "I överklagandet",
+     "I prövningstillståndet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Först läser han domslutet, där det står vilket straff han har fått.",
+    "explanationJa": "{主文|しゅぶん}に{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför frikänner hovrätten mannen?",
+    "options": [
+     "Mannen erkänner",
+     "Åklagaren kommer inte",
+     "Tingsrätten var jävig",
+     "Ett vittne säger något annat än i tingsrätten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… eftersom ett av vittnena säger något annat än i tingsrätten.",
+    "explanationJa": "{証人|しょうにん}の{一人|ひとり}が{地方裁判所|ちほうさいばんしょ}とは{違|ちが}うことを{言|い}ったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mannen är nöjd med tingsrättens dom.",
+    "correct": false,
+    "explanationSv": "Mannen nöjer sig inte med domen.",
+    "explanationJa": "{彼|かれ}は{判決|はんけつ}を{受|う}け{入|い}れていません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Högsta domstolen måste inte ta upp målet, även om åklagaren överklagar.",
+    "correct": true,
+    "explanationSv": "… men där behövs prövningstillstånd.",
+    "explanationJa": "{審理許可|しんりきょか}が{必要|ひつよう}なので、{取|と}り{上|あ}げられるとは{限|かぎ}りません。"
+   }
+  ],
+  "factSources": [
+   "Efter huvudförhandlingen överlägger rätten och röstar; vid lika röster i brottmål gäller den mening som är lindrigast för den tilltalade, och den som är skiljaktig får sin mening antecknad (rättegångsbalken 29 kap. 1–3 §§, 30 kap.).",
+   "En dom ska innehålla domslut och domskäl (rättegångsbalken 30 kap. 5 §).",
+   "En dom från tingsrätten överklagas till hovrätten genom en skrivelse som ges in till tingsrätten inom tre veckor från den dag då domen meddelades; annars vinner domen laga kraft (rättegångsbalken 51 kap. 1 §).",
+   "Prövningstillstånd krävs i hovrätten bland annat när den tilltalade bara har dömts till böter, och krävs alltid i Högsta domstolen (rättegångsbalken 49 kap. 13 §, 54 kap. 9–10 §§).",
+   "Den som har frikänts genom en dom som har vunnit laga kraft kan bara åtalas igen för samma gärning efter resning, till exempel om nya bevis kommer fram (rättegångsbalken 30 kap. 9 §, 58 kap. 3 §).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om domar och om att överklaga.",
+  "discussionPoints": [
+   "Varför tror du att domstolen skriver ner domskälen?",
+   "Är det bra att man kan överklaga en dom? Finns det nackdelar?",
+   "Vad tycker du om att en nämndeman kan vara skiljaktig?",
+   "Varför ger Högsta domstolen bara prövningstillstånd i några få mål?"
+  ]
+ }
+}

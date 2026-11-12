@@ -1,0 +1,177 @@
+{
+ "id": "m.straffmatning-och-pafoljd",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Straffmätning och påföljd",
+ "titleJa": "{量刑|りょうけい}と{刑事制裁|けいじせいさい}",
+ "descriptionSv": "Straffmätning och påföljd: döma, påföljd, straffskala, straffvärde, straffmätning, försvårande omständighet, förmildrande omständighet, sträng, återfall, villkorlig dom, skyddstillsyn, prövotid, samhällstjänst, ungdomstjänst, fotboja och rättspsykiatrisk vård.",
+ "descriptionJa": "{量刑|りょうけい}と{刑事制裁|けいじせいさい}：{判決|はんけつ}を{下|くだ}す、{刑事制裁|けいじせいさい}、{法定刑|ほうていけい}、{刑|けい}の{重|おも}さの{評価|ひょうか}、{量刑|りょうけい}、{加重事由|かじゅうじゆう}、{酌量|しゃくりょう}すべき{事情|じじょう}、{厳|きび}しい、{再犯|さいはん}、{条件|じょうけん}つき{判決|はんけつ}、{保護観察|ほごかんさつ}、{試験期間|しけんきかん}、{社会奉仕|しゃかいほうし}、{少年|しょうねん}の{社会奉仕|しゃかいほうし}、{電子足輪|でんしあしわ}、{司法精神医療|しほうせいしんいりょう}。",
+ "categoryId": "R03-A02-T02",
+ "tags": [
+  "juridik",
+  "brott"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.boter-och-fangelse"
+ ],
+ "related": [],
+ "recommendedOrder": 1415,
+ "words": [
+  {
+   "senseId": "s.döma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påföljd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.straffskala.1",
+   "active": true
+  },
+  {
+   "senseId": "s.straffvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.straffmätning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.försvårande-omständighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förmildrande-omständighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återfall.2",
+   "active": true
+  },
+  {
+   "senseId": "s.villkorlig-dom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddstillsyn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prövotid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samhällstjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ungdomstjänst.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fotboja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättspsykiatrisk-vård.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur bestämmer domstolen straffet?",
+  "paragraphs": [
+   "När en domstol har kommit fram till att någon är skyldig till ett brott, ska den bestämma en påföljd. Först tittar domstolen på straffskalan, alltså det lägsta och det högsta straff som lagen tillåter för brottet. Sedan bedömer den straffvärdet: hur allvarligt var just det här brottet?",
+   "Vid straffmätningen tar domstolen hänsyn till försvårande omständigheter och förmildrande omständigheter. Om brottet var noga planerat kan straffet bli hårdare. Om den andra personen började bråket kan det bli mildare. Återfall i brott kan också leda till ett strängare straff.",
+   "Det finns flera påföljder förutom böter och fängelse. Den som inte har begått brott tidigare kan få villkorlig dom. Då behöver man inte sitta i fängelse, men det finns en prövotid på två år. Om det finns risk för nya brott kan domstolen i stället döma till skyddstillsyn med en person som håller kontakt och kontrollerar. Båda kan kombineras med samhällstjänst, alltså arbete utan lön.",
+   "Unga som var under 21 år när de begick brottet kan få ungdomstjänst. Den som har dömts till ett kort fängelsestraff kan ibland avtjäna det hemma med fotboja. Och den som har begått ett brott på grund av en allvarlig sjukdom som påverkar hur man tänker och uppfattar världen kan dömas till rättspsykiatrisk vård i stället för fängelse."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar straffskalan?",
+    "options": [
+     "Hur många som har begått brottet",
+     "Hur stor lön den tilltalade har",
+     "Det lägsta och det högsta straff som lagen tillåter",
+     "Hur lång prövotiden är"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… straffskalan, alltså det lägsta och det högsta straff som lagen tillåter för brottet.",
+    "explanationJa": "{法律|ほうりつ}が{認|みと}めるもっとも{軽|かる}い{刑|けい}と{重|おも}い{刑|けい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vilken av dessa är en försvårande omständighet?",
+    "options": [
+     "Den andra personen började bråket",
+     "Brottet var noga planerat",
+     "Den tilltalade var ung",
+     "Brottet var ett försök"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om brottet var noga planerat kan straffet bli hårdare.",
+    "explanationJa": "{綿密|めんみつ}な{計画|けいかく}は{刑|けい}を{重|おも}くします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur lång är prövotiden vid villkorlig dom?",
+    "options": [
+     "Tre år",
+     "Sex månader",
+     "Tio år",
+     "Två år"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… men det finns en prövotid på två år.",
+    "explanationJa": "{試験期間|しけんきかん}は2{年|ねん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Skyddstillsyn passar bäst för den som inte har någon risk att begå nya brott.",
+    "correct": false,
+    "explanationSv": "Om det finns risk för nya brott kan domstolen i stället döma till skyddstillsyn med en person som håller kontakt och kontrollerar.",
+    "explanationJa": "{再犯|さいはん}の{危険|きけん}がある{場合|ばあい}に{保護観察|ほごかんさつ}が{使|つか}われます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Med fotboja kan man avtjäna ett kort fängelsestraff hemma.",
+    "correct": true,
+    "explanationSv": "Den som har dömts till ett kort fängelsestraff kan ibland avtjäna det hemma med fotboja.",
+    "explanationJa": "{短|みじか}い{拘禁刑|こうきんけい}は{電子足輪|でんしあしわ}をつけて{自宅|じたく}で{服|ふく}することがあります。"
+   }
+  ],
+  "factSources": [
+   "Påföljderna är böter, fängelse, villkorlig dom, skyddstillsyn och överlämnande till särskild vård (brottsbalken 1 kap. 3 §).",
+   "Straff ska bestämmas inom straffskalan efter brottets eller brottslighetens straffvärde; försvårande och förmildrande omständigheter anges i brottsbalken 29 kap. 1–3 §§, och återfall kan beaktas enligt 29 kap. 4 §.",
+   "Prövotiden vid villkorlig dom är två år och vid skyddstillsyn tre år (brottsbalken 27 och 28 kap.). Villkorlig dom och skyddstillsyn kan förenas med samhällstjänst (brottsbalken 27 kap. 2 a §, 28 kap. 2 a §).",
+   "Ungdomstjänst kan dömas ut för den som inte fyllt 21 år när brottet begicks (brottsbalken 32 kap. 2 §).",
+   "Den som dömts till fängelse i högst sex månader kan få avtjäna straffet genom intensivövervakning med elektronisk kontroll (lagen 1994:451; kriminalvarden.se).",
+   "Den som begått brott under påverkan av en allvarlig psykisk störning kan överlämnas till rättspsykiatrisk vård (brottsbalken 31 kap. 3 §)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur domstolen bestämmer straff och påföljd.",
+  "discussionPoints": [
+   "Vilka omständigheter tycker du ska göra ett straff strängare?",
+   "Är samhällstjänst ett bra straff? Varför?",
+   "Vad tycker du om att man kan avtjäna ett straff hemma med fotboja?",
+   "Ska unga få mildare straff än vuxna?"
+  ]
+ }
+}

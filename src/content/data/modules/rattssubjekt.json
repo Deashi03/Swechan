@@ -1,0 +1,173 @@
+{
+ "id": "m.rattssubjekt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Rättssubjekt",
+ "titleJa": "{権利主体|けんりしゅたい}",
+ "descriptionSv": "Rättssubjekt: rättssubjekt, fysisk person, juridisk person, personnummer, rättskapacitet, rättshandling, part, myndig, omyndig, vårdnadshavare, förmyndare, god man, huvudman, företrädare och stiftelse.",
+ "descriptionJa": "{権利主体|けんりしゅたい}：{権利主体|けんりしゅたい}、{自然人|しぜんじん}、{法人|ほうじん}、{個人番号|こじんばんごう}、{権利能力|けんりのうりょく}、{法律行為|ほうりつこうい}、{当事者|とうじしゃ}、{成年|せいねん}に{達|たっ}した、{未成年|みせいねん}の、{親権者|しんけんしゃ}、{後見人|こうけんにん}、{補佐人|ほさにん}、{本人|ほんにん}、{代理人|だいりにん}、{財団|ざいだん}。",
+ "categoryId": "R03-A02-T01",
+ "tags": [
+  "juridik",
+  "rättssubjekt"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.juridiska-rattigheter-och-skyldigheter"
+ ],
+ "related": [],
+ "recommendedOrder": 1403,
+ "words": [
+  {
+   "senseId": "s.rättssubjekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fysisk-person.1",
+   "active": true
+  },
+  {
+   "senseId": "s.juridisk-person.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättskapacitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rättshandling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.part.1",
+   "active": true
+  },
+  {
+   "senseId": "s.myndig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omyndig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vårdnadshavare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förmyndare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.god-man.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvudman.1",
+   "active": false
+  },
+  {
+   "senseId": "s.företrädare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stiftelse.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem kan ha rättigheter?",
+  "paragraphs": [
+   "– Vem kan ha rättigheter och skyldigheter? frågar Anders. Svaret är: ett rättssubjekt. Det finns två sorter. Fysiska personer är vi människor. Juridiska personer är till exempel företag, föreningar, stiftelser och kommuner.",
+   "– Alla fysiska personer har rättskapacitet från den dag de föds, säger Anders. I Sverige har alla som bor här också ett personnummer. Men alla får inte göra rättshandlingar på egen hand, till exempel köpa en bil eller skriva under ett avtal.",
+   "– Den som är under 18 år är omyndig. Barnets förmyndare, oftast föräldrarna, tar hand om barnets pengar. Föräldrarna är också barnets vårdnadshavare. När man fyller 18 blir man myndig och kan själv vara part i ett avtal.",
+   "– Ibland behöver också en vuxen hjälp, till exempel efter en svår sjukdom. Då kan en domstol utse en god man. Den person som får hjälp kallas huvudman, och hen får fortfarande bestämma själv.",
+   "Aiko undrar vem som skriver under för ett företag. – Ett företag har en företrädare som får göra det, säger Anders. Och en stiftelse har inga ägare alls, men den är ändå ett rättssubjekt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken av dessa är en juridisk person?",
+    "options": [
+     "En lärare",
+     "En kommun",
+     "Ett barn",
+     "En god man"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Juridiska personer är till exempel företag, föreningar, stiftelser och kommuner.",
+    "explanationJa": "{自治体|じちたい}は{法人|ほうじん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När får en människa rättskapacitet?",
+    "options": [
+     "När hon fyller 18 år",
+     "Den dag hon föds",
+     "När hon får ett jobb",
+     "När hon flyttar hemifrån"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Alla fysiska personer har rättskapacitet från den dag de föds.",
+    "explanationJa": "{人|ひと}は{生|う}まれた{日|ひ}から{権利能力|けんりのうりょく}をもっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vem är huvudman i texten?",
+    "options": [
+     "Chefen för ett företag",
+     "Barnets förmyndare",
+     "Den som får hjälp av en god man",
+     "Domaren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den person som får hjälp kallas huvudman …",
+    "explanationJa": "{補佐人|ほさにん}に{助|たす}けてもらう{人|ひと}を「huvudman」と{言|い}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ett barn på 15 år kan själv skriva under ett avtal om att köpa en bil.",
+    "correct": false,
+    "explanationSv": "Den som är under 18 år är omyndig … När man fyller 18 … kan själv vara part i ett avtal.",
+    "explanationJa": "18{歳|さい}{未満|みまん}の{人|ひと}は{一人|ひとり}で{契約|けいやく}を{結|むす}べません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En stiftelse kan vara ett rättssubjekt fast den inte har några ägare.",
+    "correct": true,
+    "explanationSv": "… en stiftelse har inga ägare alls, men den är ändå ett rättssubjekt.",
+    "explanationJa": "{所有者|しょゆうしゃ}がいなくても、{財団|ざいだん}は{権利主体|けんりしゅたい}です。"
+   }
+  ],
+  "factSources": [
+   "Den som inte har fyllt 18 år är omyndig och får inte själv råda över sin egendom eller åta sig förbindelser, om inte annat är särskilt föreskrivet (föräldrabalken 9 kap. 1 §). Den som har fyllt 16 år får själv råda över det som hen har förvärvat genom eget arbete (föräldrabalken 9 kap. 3 §).",
+   "Föräldrar som har vårdnaden om ett barn är normalt också barnets förmyndare (föräldrabalken 10 kap. 2 §).",
+   "Tingsrätten kan besluta om godmanskap för den som på grund av sjukdom, psykisk störning, försvagat hälsotillstånd eller liknande behöver hjälp; godmanskap kräver i regel den enskildes samtycke, och den som får hjälp behåller sin rättshandlingsförmåga (föräldrabalken 11 kap. 4–5 §§).",
+   "En stiftelse bildas genom att egendom avskiljs för att varaktigt förvaltas som en självständig förmögenhet för ett bestämt ändamål (stiftelselagen (1994:1220) 1 kap. 2 §).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vem som får bestämma vad i lagens ögon.",
+  "discussionPoints": [
+   "Vid vilken ålder blir man myndig i Japan?",
+   "Vad var det första avtalet som du skrev under själv?",
+   "Är det bra att barn inte får skriva under avtal? Varför?",
+   "Känner du till någon stiftelse eller förening som gör något viktigt?"
+  ]
+ }
+}

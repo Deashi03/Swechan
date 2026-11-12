@@ -1,0 +1,184 @@
+{
+ "id": "m.sekretess-och-tystnadsplikt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Sekretess och tystnadsplikt",
+ "titleJa": "{秘密保持|ひみつほじ}と{守秘義務|しゅひぎむ}",
+ "descriptionSv": "Sekretess och tystnadsplikt: sekretess, sekretessbelagd, tystnadsplikt, bryta mot, röja, obehörig, konfidentiell, hemlighålla, lämna ut, sekretessprövning, maska, sekretessbrytande, samtycke, anmälningsplikt, orosanmälan, skyddad identitet och sekretessmarkering.",
+ "descriptionJa": "{秘密保持|ひみつほじ}と{守秘義務|しゅひぎむ}：{秘密保持|ひみつほじ}、{秘密扱|ひみつあつか}いの、{守秘義務|しゅひぎむ}、{違反|いはん}する、{漏|も}らす、{権限|けんげん}のない、{内密|ないみつ}の、{秘密|ひみつ}にする、{渡|わた}す、{秘密審査|ひみつしんさ}、{黒塗|くろぬ}りにする、{守秘義務|しゅひぎむ}を{解除|かいじょ}する、{同意|どうい}、{通報義務|つうほうぎむ}、{通告|つうこく}、{保護|ほご}された{身元|みもと}、{秘密|ひみつ}マーク。",
+ "categoryId": "R03-A02-T06",
+ "tags": [
+  "juridik",
+  "förvaltning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.offentlighetsprincipen"
+ ],
+ "related": [],
+ "recommendedOrder": 1455,
+ "words": [
+  {
+   "senseId": "s.sekretess.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sekretessbelagd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tystnadsplikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bryta-mot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obehörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konfidentiell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemlighålla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lämna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sekretessprövning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.maska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sekretessbrytande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.samtycke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anmälningsplikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orosanmälan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddad-identitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sekretessmarkering.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Första dagen på socialtjänsten",
+  "paragraphs": [
+   "Emil har fått jobb på socialtjänsten i kommunen. Första dagen pratar hans chef Maria om sekretess. – Nästan allt som vi vet om de människor vi hjälper är sekretessbelagt, säger hon. – Du har tystnadsplikt, även när du är hemma hos dina vänner. Den som bryter mot tystnadsplikten kan straffas.",
+   "– Du får alltså aldrig röja något om dem vi hjälper. Se också till att inga obehöriga ser din dator. Våra möten är konfidentiella. Men sekretess betyder inte att vi får hemlighålla allt. Många handlingar är allmänna handlingar, och vi måste lämna ut dem om någon begär det.",
+   "– Innan vi lämnar ut något gör vi alltid en sekretessprövning. Om bara en del av en handling är hemlig, maskar vi den delen och lämnar ut resten. Det finns också sekretessbrytande regler, till exempel om vi behöver kontakta polisen vid vissa allvarliga brott. Och om någon ger sitt samtycke, kan vi berätta saker för till exempel skolan.",
+   "Maria berättar också om anmälningsplikt. Alla som arbetar med barn måste göra en orosanmälan till socialtjänsten om de tror att ett barn far illa. Då gäller inte tystnadsplikten.",
+   "– En sak till, säger Maria. En av de kvinnor vi hjälper har skyddad identitet. Det finns en sekretessmarkering på hennes adress hos Skatteverket. Där måste du vara extra försiktig."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När har Emil tystnadsplikt?",
+    "options": [
+     "Bara när han är på jobbet",
+     "Bara under första dagen",
+     "Även när han är hemma hos sina vänner",
+     "Bara när han pratar med polisen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Du har tystnadsplikt, även när du är hemma hos dina vänner.",
+    "explanationJa": "{家|いえ}で{友|とも}だちといるときにも{守秘義務|しゅひぎむ}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör socialtjänsten om bara en del av en handling är hemlig?",
+    "options": [
+     "Lämnar inte ut något alls",
+     "Maskar den delen och lämnar ut resten",
+     "Lämnar ut hela handlingen",
+     "Slänger handlingen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om bara en del av en handling är hemlig, maskar vi den delen och lämnar ut resten.",
+    "explanationJa": "{秘密|ひみつ}の{部分|ぶぶん}を{黒塗|くろぬ}りにして、{残|のこ}りを{渡|わた}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att mötena är konfidentiella?",
+    "options": [
+     "Att alla får komma",
+     "Att mötena är mycket korta",
+     "Att bara de som är med får veta vad som sägs",
+     "Att mötena hålls på kvällen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Våra möten är konfidentiella.",
+    "explanationJa": "{会議|かいぎ}の{内容|ないよう}は、{参加者|さんかしゃ}だけが{知|し}ってよいという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sekretess betyder att socialtjänsten får hemlighålla alla handlingar.",
+    "correct": false,
+    "explanationSv": "Men sekretess betyder inte att vi får hemlighålla allt. Många handlingar är allmänna handlingar …",
+    "explanationJa": "すべての{文書|ぶんしょ}を{秘密|ひみつ}にしてよいわけではありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anmälningsplikten är viktigare än tystnadsplikten när ett barn far illa.",
+    "correct": true,
+    "explanationSv": "Alla som arbetar med barn måste göra en orosanmälan … Då gäller inte tystnadsplikten.",
+    "explanationJa": "{子|こ}どもがつらい{目|め}にあっているときは、{通報義務|つうほうぎむ}が{優先|ゆうせん}されます。"
+   }
+  ],
+  "factSources": [
+   "Sekretess innebär ett förbud att röja en uppgift, vare sig det sker muntligt, genom att lämna ut en allmän handling eller på något annat sätt, och tystnadsplikt är ett förbud att röja en uppgift muntligt eller på annat sätt än genom att lämna ut en handling (offentlighets- och sekretesslagen 2009:400, 3 kap. 1 §).",
+   "Inom socialtjänsten gäller sekretess för uppgifter om en enskilds personliga förhållanden, om det inte står klart att uppgiften kan röjas utan att den enskilde eller någon närstående lider men (offentlighets- och sekretesslagen 26 kap. 1 §).",
+   "Om en del av en allmän handling omfattas av sekretess ska resten av handlingen lämnas ut (tryckfrihetsförordningen 2 kap. 15 §), och sekretess till skydd för en enskild gäller inte i förhållande till den enskilde själv och kan helt eller delvis efterges av denne (offentlighets- och sekretesslagen 12 kap. 1–2 §§).",
+   "Sekretessbrytande bestämmelser, bland annat om att uppgifter som rör misstanke om vissa allvarliga brott får lämnas till polis eller åklagare, finns i offentlighets- och sekretesslagen 10 kap.",
+   "Den som röjer en uppgift som han eller hon är skyldig att hålla hemlig enligt lag kan dömas för brott mot tystnadsplikt (brottsbalken 20 kap. 3 §).",
+   "Myndigheter och yrkesverksamma som arbetar med barn och unga är skyldiga att genast anmäla till socialnämnden om de i sin verksamhet får kännedom om eller misstänker att ett barn far illa, och anmälningsskyldigheten gäller trots sekretess (socialtjänstlagen; Socialstyrelsen, socialstyrelsen.se).",
+   "Skyddade personuppgifter kan vara sekretessmarkering, skyddad folkbokföring eller fingerade personuppgifter; Skatteverket beslutar om de två första och Polismyndigheten om fingerade personuppgifter (Skatteverket, skatteverket.se).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sekretess och tystnadsplikt.",
+  "discussionPoints": [
+   "Vilka yrken har tystnadsplikt, tror du?",
+   "Är det svårt att inte berätta om sitt jobb för familjen?",
+   "När tycker du att det är rätt att bryta sekretessen?",
+   "Hur skyddas personuppgifter om människor i fara i Japan?"
+  ]
+ }
+}

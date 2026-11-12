@@ -1,0 +1,188 @@
+{
+ "id": "m.polisens-arbetsuppgifter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Polisens arbetsuppgifter",
+ "titleJa": "{警察|けいさつ}の{仕事|しごと}",
+ "descriptionSv": "Polisens arbetsuppgifter: polisstation, uniform, i tjänst, patrullera, blåljus, utryckning, ingripa, befogenhet, upprätthålla, allmän ordning, ordningsvakt, förebygga, brottsförebyggande, trafikkontroll, nykterhetskontroll, berusad, omhänderta, civilklädd och legitimation.",
+ "descriptionJa": "{警察|けいさつ}の{仕事|しごと}：{警察署|けいさつしょ}、{制服|せいふく}、{勤務中|きんむちゅう}で、パトロールする、{青色回転灯|あおいろかいてんとう}、{出動|しゅつどう}、{介入|かいにゅう}する、{権限|けんげん}、{維持|いじ}する、{公共|こうきょう}の{秩序|ちつじょ}、{秩序監視員|ちつじょかんしいん}、{予防|よぼう}する、{犯罪予防|はんざいよぼう}の、{交通|こうつう}{取|と}り{締|し}まり、{飲酒検問|いんしゅけんもん}、{酒|さけ}に{酔|よ}った、{保護|ほご}する、{私服|しふく}の、{身分証明書|みぶんしょうめいしょ}。",
+ "categoryId": "R03-A02-T03",
+ "tags": [
+  "juridik",
+  "polis"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.vanliga-brottsrubriceringar"
+ ],
+ "related": [],
+ "recommendedOrder": 1421,
+ "words": [
+  {
+   "senseId": "s.polisstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uniform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-tjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.patrullera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utryckning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingripa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.befogenhet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.upprätthålla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allmän-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordningsvakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förebygga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brottsförebyggande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trafikkontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nykterhetskontroll.1",
+   "active": false
+  },
+  {
+   "senseId": "s.berusad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omhänderta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.civilklädd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.legitimation.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En fredag med polisen",
+  "paragraphs": [
+   "Sara och Johan är poliser i Gävle. På fredagskvällen börjar de sitt pass på polisstationen klockan sex. När de är i tjänst har de uniform, och de har befogenheter som andra människor inte har. Men de får bara använda dem när lagen säger att det är tillåtet.",
+   "Först patrullerar de i centrum. Polisen ska upprätthålla allmän ordning, och de ska också förebygga problem. – Att vi syns ute på gatan är brottsförebyggande, säger Sara. Ofta räcker det att man pratar lugnt med folk.",
+   "Klockan nio kommer ett larm. Det är bråk utanför en krog. Sara och Johan kör dit med blåljus. Det är en utryckning, men när de kommer fram har en ordningsvakt redan fått de två männen att sluta. Poliserna behöver inte ingripa.",
+   "Vid elva gör de en trafikkontroll tillsammans med andra poliser. Det är en nykterhetskontroll, och alla som kör förbi får blåsa. En kvinna har druckit för mycket och får inte köra vidare.",
+   "Senare hittar de en berusad man som ligger på marken vid torget. Han kan inte ta hand om sig själv, så de omhändertar honom och tar honom till polisstationen. I bilen på väg tillbaka ser de två civilklädda kollegor som visar sin legitimation för en ung man. – Det blev en lugn natt, säger Johan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När får poliserna använda sina befogenheter?",
+    "options": [
+     "När de själva vill",
+     "Bara på polisstationen",
+     "Bara när de har blåljus",
+     "När lagen säger att det är tillåtet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men de får bara använda dem när lagen säger att det är tillåtet.",
+    "explanationJa": "{法律|ほうりつ}が{認|みと}めるときだけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför är det brottsförebyggande att poliserna syns på gatan?",
+    "options": [
+     "Det gör att fler blir berusade",
+     "Det gör att krogen stänger",
+     "Det gör att ingen behöver legitimation",
+     "Det kan göra att färre gör något olagligt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Att vi syns ute på gatan är brottsförebyggande, säger Sara.",
+    "explanationJa": "{警察官|けいさつかん}の{姿|すがた}が{見|み}えると、{違法|いほう}なことをする{人|ひと}が{減|へ}るからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Poliserna måste ingripa i bråket utanför krogen.",
+    "correct": false,
+    "explanationSv": "... har en ordningsvakt redan fått de två männen att sluta. Poliserna behöver inte ingripa.",
+    "explanationJa": "{秩序監視員|ちつじょかんしいん}がもう{止|と}めていたので、{介入|かいにゅう}する{必要|ひつよう}はありませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad händer vid nykterhetskontrollen?",
+    "options": [
+     "Alla som kör förbi får blåsa",
+     "Alla får visa sitt pass",
+     "Poliserna patrullerar till fots",
+     "Poliserna omhändertar alla"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är en nykterhetskontroll, och alla som kör förbi får blåsa.",
+    "explanationJa": "{通|とお}りかかる{運転者|うんてんしゃ}は{全員|ぜんいん}{息|いき}を{吹|ふ}き{込|こ}みます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Poliserna omhändertar mannen för att skydda honom.",
+    "correct": true,
+    "explanationSv": "Han kan inte ta hand om sig själv, så de omhändertar honom ...",
+    "explanationJa": "{自分|じぶん}の{身|み}を{守|まも}れないので、{保護|ほご}しました。"
+   }
+  ],
+  "factSources": [
+   "Polislagen (1984:387) 2 §: polisen ska bl.a. förebygga brott, övervaka allmän ordning och säkerhet och ingripa när störningar har inträffat.",
+   "Lagen (1980:578) om ordningsvakter: ordningsvakter förordnas av Polismyndigheten och står under polisens ledning.",
+   "Lagen (1976:1090) om alkoholutandningsprov: polisen får göra rutinmässiga nykterhetskontroller utan särskild misstanke.",
+   "Lagen (1976:511) om omhändertagande av berusade personer (LOB): den omhändertagne ska friges så snart det kan ske och får inte hållas kvar längre än åtta timmar."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad polisen gör och om polisen där ni bor.",
+  "discussionPoints": [
+   "Vad tror du är polisens viktigaste uppgift?",
+   "Har du varit med om en trafikkontroll eller en nykterhetskontroll?",
+   "Vilka brottsförebyggande åtgärder finns där du bor?",
+   "Är det bra att poliser ibland arbetar civilklädda? Varför eller varför inte?"
+  ]
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "id": "m.rattskallor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Rättskällor",
+ "titleJa": "{法源|ほうげん}",
+ "descriptionSv": "Rättskällor: rättskälla, lagtext, förarbete, proposition, rättsfall, rättspraxis, prejudikat, vägledande, lagkommentar, doktrin, sedvänja, sedvanerätt, rättsprincip, EU-rätt, gå före och rangordning.",
+ "descriptionJa": "{法源|ほうげん}：{法源|ほうげん}、{条文|じょうぶん}、{立法資料|りっぽうしりょう}、{政府案|せいふあん}、{裁判事件|さいばんじけん}、{判例|はんれい}、{先例|せんれい}、{指針|ししん}となる、{逐条解説|ちくじょうかいせつ}、{学説|がくせつ}、{慣習|かんしゅう}、{慣習法|かんしゅうほう}、{法原則|ほうげんそく}、EU{法|ほう}、{優先|ゆうせん}する、{順位|じゅんい}。",
+ "categoryId": "R03-A02-T01",
+ "tags": [
+  "juridik",
+  "rättskällor"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.rattssubjekt"
+ ],
+ "related": [],
+ "recommendedOrder": 1404,
+ "words": [
+  {
+   "senseId": "s.rättskälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagtext.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förarbete.1",
+   "active": true
+  },
+  {
+   "senseId": "s.proposition.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättsfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättspraxis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prejudikat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägledande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagkommentar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.doktrin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sedvänja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sedvanerätt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rättsprincip.1",
+   "active": true
+  },
+  {
+   "senseId": "s.EU-rätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-före.2",
+   "active": true
+  },
+  {
+   "senseId": "s.rangordning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var hittar man svaret?",
+  "paragraphs": [
+   "Aiko har en fråga om en lag, men svaret står inte direkt i lagtexten. – Då får du titta i fler rättskällor, säger Anders. Lagen är den viktigaste rättskällan, men det finns flera.",
+   "– Förarbetena, till exempel utredningar och propositioner, visar vad lagstiftaren ville med lagen. Sedan finns rättspraxis, alltså hur domstolarna har bestämt i tidigare rättsfall. Beslut från de högsta domstolarna blir ofta prejudikat. De är vägledande för andra domstolar, även om de inte måste följa dem.",
+   "– Forskare skriver också böcker om lagarna, och det kallas doktrin. En lagkommentar förklarar till exempel varje del av en lag, säger Anders och visar en tjock bok.",
+   "– Några regler står inte i någon lag alls. De bygger på gammal sedvänja. Att alla får gå i skogen och plocka bär är ett exempel på sedvanerätt. Dessutom finns viktiga rättsprinciper, till exempel att lika fall ska behandlas lika.",
+   "– Och EU-rätten, var kommer den in? frågar Aiko. – Den går före svensk lag om de säger olika saker, svarar Anders. Det finns alltså en rangordning mellan rättskällorna."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken är den viktigaste rättskällan enligt Anders?",
+    "options": [
+     "Doktrinen",
+     "Sedvänjan",
+     "Lagen",
+     "Lagkommentaren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Lagen är den viktigaste rättskällan, men det finns flera.",
+    "explanationJa": "もっとも{重要|じゅうよう}な{法源|ほうげん}は{法律|ほうりつ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad visar förarbetena?",
+    "options": [
+     "Vad lagstiftaren ville med lagen",
+     "Hur många som följer lagen",
+     "Hur mycket lagen kostar",
+     "Vilka domare som finns"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Förarbetena … visar vad lagstiftaren ville med lagen.",
+    "explanationJa": "{立法資料|りっぽうしりょう}から{立法者|りっぽうしゃ}の{意図|いと}がわかります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir vissa beslut prejudikat?",
+    "options": [
+     "De är mycket långa",
+     "De kommer från de högsta domstolarna",
+     "De kommer från EU",
+     "De står i lagboken"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Beslut från de högsta domstolarna blir ofta prejudikat.",
+    "explanationJa": "{最高|さいこう}の{裁判所|さいばんしょ}の{判断|はんだん}は{先例|せんれい}になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Andra domstolar måste alltid följa ett prejudikat.",
+    "correct": false,
+    "explanationSv": "De är vägledande för andra domstolar, även om de inte måste följa dem.",
+    "explanationJa": "{先例|せんれい}に{従|したが}う{義務|ぎむ}はありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Om EU-rätten och svensk lag säger olika saker, gäller EU-rätten.",
+    "correct": true,
+    "explanationSv": "Den går före svensk lag om de säger olika saker …",
+    "explanationJa": "EU{法|ほう}が{優先|ゆうせん}されます。"
+   }
+  ],
+  "factSources": [
+   "Till de traditionella svenska rättskällorna räknas lagstiftning, förarbeten, rättspraxis och doktrin; i vissa frågor kan även sedvänja ha betydelse (Nationalencyklopedin, ne.se, uppslagsordet rättskällor; riksdagen.se).",
+   "Högsta domstolen och Högsta förvaltningsdomstolen har som huvuduppgift att skapa prejudikat; deras avgöranden är vägledande men formellt inte bindande för andra domstolar (domstol.se; rättegångsbalken 54 kap. 10 §).",
+   "Allemansrätten nämns i regeringsformen 2 kap. 15 § men är inte en egen lag; den bygger på gammal sedvana (Naturvårdsverket, naturvardsverket.se).",
+   "EU:s förordningar gäller direkt i medlemsländerna, medan direktiv ska genomföras i nationell rätt, och EU-rätten har företräde framför nationell rätt (regeringen.se; Fördraget om Europeiska unionens funktionssätt artikel 288).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om var man kan hitta svar på juridiska frågor.",
+  "discussionPoints": [
+   "Var skulle du leta om du hade en fråga om en svensk lag?",
+   "Finns det någon sedvänja i Japan som nästan är som en regel?",
+   "Är det bra att domstolar följer tidigare beslut? Varför?",
+   "Vilka rättsprinciper tycker du är viktigast?"
+  ]
+ }
+}

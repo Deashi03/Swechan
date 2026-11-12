@@ -1,0 +1,186 @@
+{
+ "id": "m.forvaltningsbeslut",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Förvaltningsbeslut",
+ "titleJa": "{行政|ぎょうせい}の{決定|けってい}",
+ "descriptionSv": "Förvaltningsbeslut: förvaltningsmyndighet, myndighetsutövning, förvaltningslagen, ärende, handläggare, handlägga, handläggning, part, beslutsunderlag, besluta, motivering, bifalla, bifall, avslå, avslag, gynnande, betungande och verkställa.",
+ "descriptionJa": "{行政|ぎょうせい}の{決定|けってい}：{行政機関|ぎょうせいきかん}、{公権力|こうけんりょく}の{行使|こうし}、{行政手続法|ぎょうせいてつづきほう}、{案件|あんけん}、{担当者|たんとうしゃ}、{処理|しょり}する、{処理|しょり}、{当事者|とうじしゃ}、{判断材料|はんだんざいりょう}、{決定|けってい}する、{理由説明|りゆうせつめい}、{承認|しょうにん}する、{承認|しょうにん}、{却下|きゃっか}する、{却下|きゃっか}、{有利|ゆうり}な、{不利益|ふりえき}な、{執行|しっこう}する。",
+ "categoryId": "R03-A02-T06",
+ "tags": [
+  "juridik",
+  "förvaltning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.tvister-och-forlikning"
+ ],
+ "related": [],
+ "recommendedOrder": 1451,
+ "words": [
+  {
+   "senseId": "s.förvaltningsmyndighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.myndighetsutövning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förvaltningslagen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ärende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handläggare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handlägga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handläggning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.part.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beslutsunderlag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besluta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motivering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bifalla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bifall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avslå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gynnande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betungande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verkställa.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett brev från kommunen",
+  "paragraphs": [
+   "Omar är 81 år och har svårt att gå. I januari skickade han en ansökan om färdtjänst till kommunen. Kommunen är en förvaltningsmyndighet, och ett beslut om färdtjänst är myndighetsutövning. Därför gäller förvaltningslagen.",
+   "Ärendet fick handläggaren Karin. Hon skulle handlägga det och förbereda ett beslut. Under handläggningen bad hon Omar om ett läkarintyg. Läkarintyget blev en viktig del av beslutsunderlaget. Omar var part i ärendet, så han fick också läsa underlaget och säga vad han tyckte.",
+   "I mars kom ett brev. Kommunen hade beslutat att bifalla ansökan. Omar fick alltså bifall och kunde åka taxi till ett lågt pris. Det var ett gynnande beslut, och kommunen kunde verkställa det direkt.",
+   "Samma vecka fick Omars granne Lisa ett annat brev. Kommunen avslog hennes ansökan om bygglov för ett stort garage. I beslutet fanns en motivering: garaget skulle stå för nära gatan.",
+   "– Avslag är tråkigt, men det är inte samma sak som ett betungande beslut, förklarade Karin när Lisa ringde. – Ett betungande beslut ger dig en skyldighet, till exempel att betala en avgift. Ett avslag betyder bara att du inte får det du har bett om."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad sökte Omar?",
+    "options": [
+     "Bygglov",
+     "Ett nytt jobb",
+     "Färdtjänst",
+     "En lägenhet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I januari skickade han en ansökan om färdtjänst till kommunen.",
+    "explanationJa": "{送迎|そうげい}サービス（färdtjänst）を{申請|しんせい}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad var en viktig del av beslutsunderlaget?",
+    "options": [
+     "Ett foto av Omar",
+     "Ett läkarintyg",
+     "Ett brev från grannen",
+     "En biljett"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Läkarintyget blev en viktig del av beslutsunderlaget.",
+    "explanationJa": "{医師|いし}の{診断書|しんだんしょ}が{大切|たいせつ}な{判断材料|はんだんざいりょう}になりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Varför var Omars beslut gynnande?",
+    "options": [
+     "Han måste betala en avgift",
+     "Han fick avslag",
+     "Han fick det han hade sökt",
+     "Han fick ett förbud"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Kommunen hade beslutat att bifalla ansökan … Det var ett gynnande beslut …",
+    "explanationJa": "{申請|しんせい}したものが{認|みと}められたので、{有利|ゆうり}な{決定|けってい}でした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lisas beslut innehöll ingen förklaring.",
+    "correct": false,
+    "explanationSv": "I beslutet fanns en motivering: garaget skulle stå för nära gatan.",
+    "explanationJa": "{決定|けってい}には{理由|りゆう}が{書|か}かれていました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Enligt Karin är ett avslag inte ett betungande beslut.",
+    "correct": true,
+    "explanationSv": "Avslag är tråkigt, men det är inte samma sak som ett betungande beslut …",
+    "explanationJa": "カーリンによれば、{却下|きゃっか}は{不利益|ふりえき}な{決定|けってい}とは{違|ちが}います。"
+   }
+  ],
+  "factSources": [
+   "Förvaltningslagen (2017:900) gäller för förvaltningsmyndigheternas handläggning av ärenden (1 §) och började gälla den 1 juli 2018.",
+   "Innan en myndighet fattar ett beslut i ett ärende ska den som är part som huvudregel underrättas om allt material av betydelse och få tillfälle att yttra sig, om beslutet inte är uppenbart obehövligt att kommunicera (förvaltningslagen 25 §).",
+   "Ett beslut som kan antas påverka någons situation på ett inte obetydligt sätt ska innehålla en klargörande motivering, och en part ska underrättas om innehållet i beslutet och hur man överklagar (förvaltningslagen 32–33 §§).",
+   "När ett beslut får verkställas regleras i förvaltningslagen 35 §, och ett beslut som är till fördel för en enskild part får ändras till nackdel för parten bara i vissa särskilda fall (förvaltningslagen 37 §).",
+   "Kommunen beslutar om färdtjänst enligt lagen (1997:736) om färdtjänst, och tillstånd ska ges till den som på grund av funktionsnedsättning inte bara är tillfällig, har väsentliga svårigheter att förflytta sig på egen hand eller att resa med allmänna kommunikationsmedel (7 §).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om beslut från myndigheter.",
+  "discussionPoints": [
+   "Har du fått ett beslut från en myndighet? Var det bifall eller avslag?",
+   "Förstod du motiveringen i beslutet?",
+   "Vad tycker du är viktigast hos en bra handläggare?",
+   "Ge exempel på ett gynnande och ett betungande beslut."
+  ]
+ }
+}

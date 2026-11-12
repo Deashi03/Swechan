@@ -1,0 +1,194 @@
+{
+ "id": "m.ansokan-och-tillstand",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-12",
+ "titleSv": "Ansökan och tillstånd",
+ "titleJa": "{申請|しんせい}と{許可|きょか}",
+ "descriptionSv": "Ansökan och tillstånd: ansökan, ansöka, sökande, blankett, fylla i, bifoga, bilaga, intyg, komplettera, komplettering, ansökningsavgift, tillstånd, tillståndspliktig, bevilja, villkor, giltig, giltighetstid, förlänga, återkalla och dispens.",
+ "descriptionJa": "{申請|しんせい}と{許可|きょか}：{申請|しんせい}、{申請|しんせい}する、{申請者|しんせいしゃ}、{用紙|ようし}、{記入|きにゅう}する、{添付|てんぷ}する、{添付書類|てんぷしょるい}、{証明書|しょうめいしょ}、{補|おぎな}う、{補足|ほそく}、{申請手数料|しんせいてすうりょう}、{許可|きょか}、{許可|きょか}が{必要|ひつよう}な、{認|みと}める、{条件|じょうけん}、{有効|ゆうこう}な、{有効期間|ゆうこうきかん}、{延長|えんちょう}する、{取|と}り{消|け}す、{特別許可|とくべつきょか}。",
+ "categoryId": "R03-A02-T06",
+ "tags": [
+  "juridik",
+  "förvaltning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.forvaltningsbeslut"
+ ],
+ "related": [],
+ "recommendedOrder": 1452,
+ "words": [
+  {
+   "senseId": "s.ansökan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.blankett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fylla-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bifoga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bilaga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.intyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komplettera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komplettering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansökningsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillståndspliktig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bevilja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.giltig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.giltighetstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlänga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återkalla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dispens.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Matvagnen på torget",
+  "paragraphs": [
+   "Hiro vill sälja japansk mat från en liten matvagn på torget. Torget är en allmän plats, och det är tillståndspliktigt att använda en sådan plats för att sälja saker. Hiro måste därför ansöka om tillstånd hos Polisen.",
+   "Han laddar ner en blankett på Polisens webbplats och fyller i den. Han bifogar en karta som visar var vagnen ska stå, och ett intyg om att vagnen är godkänd av kommunen. Sedan skickar han in sin ansökan och betalar ansökningsavgiften.",
+   "Två veckor senare får han ett brev. Polisen ber om en komplettering: den sökande måste också visa hur stor vagnen är. Hiro kompletterar med en ritning som en ny bilaga.",
+   "I maj beviljar Polisen ansökan. Tillståndet är giltigt i ett år, och det finns några villkor: vagnen måste vara borta från torget klockan 22, och det ska vara rent runt den. Om Hiro inte följer villkoren, kan Polisen återkalla tillståndet. När giltighetstiden är slut, kan han söka igen för att förlänga det.",
+   "Det finns ett problem till. Hiro måste köra in på gågatan för att komma till torget, och där får man inte köra bil. Han söker därför dispens hos kommunen och får lov att köra in före klockan tio på morgonen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför måste Hiro söka tillstånd?",
+    "options": [
+     "Det är tillståndspliktigt att sälja saker på en allmän plats",
+     "Han har inget körkort",
+     "Han vill bo på torget",
+     "Han har ingen matvagn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… det är tillståndspliktigt att använda en sådan plats för att sälja saker.",
+    "explanationJa": "{公共|こうきょう}の{場所|ばしょ}で{物|もの}を{売|う}るには{許可|きょか}が{必要|ひつよう}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad bifogade Hiro till ansökan först?",
+    "options": [
+     "Ett foto av sin familj",
+     "En meny och ett pris",
+     "Ett pass och ett körkort",
+     "En karta och ett intyg"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han bifogar en karta … och ett intyg om att vagnen är godkänd av kommunen.",
+    "explanationJa": "{地図|ちず}と{証明書|しょうめいしょ}を{添付|てんぷ}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att Polisen ber om en komplettering?",
+    "options": [
+     "Att ansökan har fått avslag",
+     "Att något saknas i ansökan",
+     "Att Hiro måste betala mer",
+     "Att tillståndet är klart"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Polisen ber om en komplettering: den sökande måste också visa hur stor vagnen är.",
+    "explanationJa": "{申請|しんせい}に{足|た}りないものがあるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Tillståndet gäller i två år.",
+    "correct": false,
+    "explanationSv": "Tillståndet är giltigt i ett år …",
+    "explanationJa": "{許可|きょか}の{有効期間|ゆうこうきかん}は{一年|いちねん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Utan dispens skulle Hiro inte få köra in på gågatan.",
+    "correct": true,
+    "explanationSv": "… där får man inte köra bil. Han söker därför dispens …",
+    "explanationJa": "{特別許可|とくべつきょか}がなければ、{歩行者天国|ほこうしゃてんごく}に{車|くるま}で{入|はい}れません。"
+   }
+  ],
+  "factSources": [
+   "En offentlig plats får inte utan tillstånd från Polismyndigheten användas på ett sätt som inte stämmer överens med det ändamål som platsen har upplåtits för, till exempel för försäljning (ordningslagen 1993:1617, 3 kap. 1–2 §§; Polisen, polisen.se).",
+   "Polismyndigheten tar ut en avgift för att pröva en ansökan om tillstånd att använda offentlig plats (förordningen 1993:1632 om avgifter för prövning enligt ordningslagen m.m.).",
+   "En ansökan till en förvaltningsmyndighet ska innehålla de uppgifter som behövs, och om den är ofullständig ska myndigheten som huvudregel uppmana den sökande att komplettera den (förvaltningslagen 2017:900, 19–20 §§).",
+   "Den som startar en verksamhet med livsmedel, till exempel en matvagn, ska registrera den hos kontrollmyndigheten, som oftast är kommunen (Livsmedelsverket, livsmedelsverket.se).",
+   "Kommunen kan i ett särskilt fall medge undantag (dispens) från lokala trafikföreskrifter (trafikförordningen 1998:1276, 13 kap. 3 §).",
+   "Personerna i berättelsen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att söka tillstånd och fylla i blanketter.",
+  "discussionPoints": [
+   "Vilka ansökningar har du skickat till en myndighet?",
+   "Vad är svårast när man fyller i en blankett?",
+   "Har du någon gång fått en begäran om komplettering?",
+   "Vilka saker tycker du borde vara tillståndspliktiga?"
+  ]
+ }
+}

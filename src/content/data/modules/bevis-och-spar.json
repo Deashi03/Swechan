@@ -1,0 +1,174 @@
+{
+ "id": "m.bevis-och-spar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-11",
+ "titleSv": "Bevis och spår",
+ "titleJa": "{証拠|しょうこ}と{痕跡|こんせき}",
+ "descriptionSv": "Bevis och spår: brottsplats, spärra av, avspärrning, spår, kriminaltekniker, säkra spår, fingeravtryck, skoavtryck, blodspår, analysera, dna-spår, jämföra, träff, övervakningskamera, ledtråd och alibi.",
+ "descriptionJa": "{証拠|しょうこ}と{痕跡|こんせき}：{犯行現場|はんこうげんば}、{封鎖|ふうさ}する、{封鎖線|ふうさせん}、{痕跡|こんせき}、{鑑識官|かんしきかん}、{痕跡|こんせき}を{採取|さいしゅ}する、{指紋|しもん}、{靴|くつ}の{跡|あと}、{血痕|けっこん}、{分析|ぶんせき}する、DNAの{痕跡|こんせき}、{比|くら}べる、{一致|いっち}、{監視|かんし}カメラ、{手|て}がかり、アリバイ。",
+ "categoryId": "R03-A02-T03",
+ "tags": [
+  "juridik",
+  "polis"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.vittnen-och-forhor"
+ ],
+ "related": [],
+ "recommendedOrder": 1424,
+ "words": [
+  {
+   "senseId": "s.brottsplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spärra-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avspärrning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spår.3",
+   "active": true
+  },
+  {
+   "senseId": "s.kriminaltekniker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkra-spår.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fingeravtryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skoavtryck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.blodspår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.analysera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dna-spår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träff.2",
+   "active": false
+  },
+  {
+   "senseId": "s.övervakningskamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledtråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.alibi.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Spåren i lägenheten",
+  "paragraphs": [
+   "En morgon i februari kommer Ingrid hem från en resa. Dörren till hennes lägenhet är öppen, och hennes dator och hennes smycken är borta. Hon ringer polisen. Lägenheten är nu en brottsplats.",
+   "Polisen spärrar av trapphuset. Ingen får gå innanför avspärrningen, för då kan viktiga spår förstöras. Sedan kommer två kriminaltekniker. De arbetar långsamt och noga för att säkra spår.",
+   "På fönstret hittar de fingeravtryck. I hallen finns ett skoavtryck, och på ett trasigt glas finns små blodspår. Gärningspersonen har skurit sig på glaset.",
+   "Blodet skickas till ett laboratorium som analyserar det, och där får man fram ett dna-spår. När man jämför det med andra spår som polisen har sparat, får man en träff. En övervakningskamera vid porten ger också en ledtråd: den har filmat en man i mörk jacka klockan tre på natten.",
+   "Mannen säger att han har alibi. Han säger att han var hos en kompis hela natten. Men kompisen berättar att mannen gick därifrån vid två. Nu har polisen flera spår som pekar på samma person."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför får ingen gå innanför avspärrningen?",
+    "options": [
+     "Trapphuset ska målas",
+     "Ingrid vill vara ensam",
+     "Viktiga spår kan förstöras",
+     "Det är farligt att gå i trappan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ingen får gå innanför avspärrningen, för då kan viktiga spår förstöras.",
+    "explanationJa": "{大切|たいせつ}な{痕跡|こんせき}が{壊|こわ}れるおそれがあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var hittar kriminalteknikerna fingeravtryck?",
+    "options": [
+     "På dörren",
+     "På datorn",
+     "På fönstret",
+     "I hallen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På fönstret hittar de fingeravtryck.",
+    "explanationJa": "{窓|まど}で{見|み}つけました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Dna-spåret kommer från blodet på glaset.",
+    "correct": true,
+    "explanationSv": "Blodet skickas till ett laboratorium som analyserar det, och där får man fram ett dna-spår.",
+    "explanationJa": "{血|ち}を{分析|ぶんせき}してDNAの{痕跡|こんせき}が{得|え}られました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad visar övervakningskameran?",
+    "options": [
+     "Ingrid när hon kommer hem",
+     "Två kriminaltekniker",
+     "En man i mörk jacka klockan tre på natten",
+     "En kompis som går hem vid två"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "... den har filmat en man i mörk jacka klockan tre på natten.",
+    "explanationJa": "{夜中|よなか}の{三時|さんじ}に{暗|くら}い{色|いろ}の{上着|うわぎ}の{男|おとこ}が{映|うつ}っていました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mannens alibi stämmer.",
+    "correct": false,
+    "explanationSv": "Men kompisen berättar att mannen gick därifrån vid två.",
+    "explanationJa": "{友人|ゆうじん}の{話|はなし}によると、{男|おとこ}は{二時|にじ}に{帰|かえ}ったので、アリバイは{成|な}り{立|た}ちません。"
+   }
+  ],
+  "factSources": [
+   "Polisen.se: kriminaltekniker undersöker brottsplatser och säkrar spår; Nationellt forensiskt centrum analyserar spår som fingeravtryck och dna.",
+   "Lagen (2018:1693) om polisens behandling av personuppgifter inom brottsdatalagens område: dna-profiler från brottsplatser kan jämföras med polisens dna-register."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om spår, bevis och om hur polisen tar reda på vem som har gjort något.",
+  "discussionPoints": [
+   "Vilka spår tror du är lättast för polisen att hitta?",
+   "Är det bra att det finns många övervakningskameror? Varför eller varför inte?",
+   "Har du sett en tv-serie eller läst en bok om kriminaltekniker?",
+   "Vad är ett bra alibi?"
+  ]
+ }
+}

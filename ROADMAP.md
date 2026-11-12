@@ -114,6 +114,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.30 – Politik & demokrati (klar)
 - 42 nya moduler i Samhälle & institutioner → Politik & demokrati med 489 nya ordbilder. 20 ord saknar bild efter två blindtestomgångar.
 
+## v0.31 – Juridik & rättsväsende (klar)
+- 42 nya moduler i Samhälle & institutioner → Juridik & rättsväsende med 482 nya ordbilder. 45 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
