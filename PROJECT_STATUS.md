@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.30.0 (släppt 2026-11-11, PR #41) · **Senast uppdaterad:** 2026-11-11 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.31.0 (2026-11-12, gren `claude/swechan-0.31`) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 551 publicerade moduler. 546 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och överämnet *Politik & demokrati* (R03-A01). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 593 publicerade moduler. 588 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och överämnena *Politik & demokrati* (R03-A01) och *Juridik & rättsväsende* (R03-A02). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Juridik & rättsväsende* (R03-A02).
+  - Nästa överämne är *Ekonomi & arbetsliv* (R03-A03).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 8 039 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 8 521 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Juridik & rättsväsende* (R03-A02), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Ekonomi & arbetsliv* (R03-A03), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -51,6 +51,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Kommuner & regioner: `s.regional.1`, `s.motivering.1`
   - Internationell politik: `s.diplomatisk.1`, `s.åtagande.1`, `s.samarbete.1`
   - Politiska idéer: `s.liberal.1`, `s.liberalism.1`, `s.socialistisk.1`
+- **Från 0.31 (45 ord):**
+  - Rättens grunder: `s.utfärda.1`, `s.föreskrift.1`, `s.enligt-lag.1`, `s.författning.1`, `s.lagstadgad.1`, `s.rätt.2`, `s.skyldig.3`, `s.plikt.1`, `s.åligga.1`, `s.privatperson.1`, `s.offentlig-rätt.1`
+    - *utfärda*, *föreskrift* och *enligt lag* ritades av misstag aldrig om efter första omgången. De kan vara värda ett nytt försök om produktägaren tillåter det.
+  - Brott & straff: `s.gärning.1`, `s.straffbar.1`, `s.brottslig.1`, `s.uppsåt.1`, `s.vårdslös.1`, `s.avsiktlig.1`, `s.uppsåtlig.1`, `s.oaktsamhet.1`, `s.anstiftan.1`, `s.straff.1`, `s.individualprevention.1`
+  - Polis & brottsutredning: `s.skäligen-misstänkt.1`, `s.anhållande.1`, `s.försvåra.1`
+  - Domstolar & rättegång: `s.rättegång.1`, `s.yrkande.2`, `s.yrka.1`, `s.åtalsplikt.1`, `s.åtal.1`, `s.stämning.1`, `s.yttra-sig.1`, `s.överklagande.1`, `s.frikänna.1`, `s.fria.2`
+  - Civilrätt i vardagen: `s.sakliga-skäl.1`
+  - Förvaltning & myndigheter: `s.handlägga.1`, `s.ansökan.1`, `s.sekretessbelagd.1`, `s.sekretessmarkering.1`, `s.sekretess.1`, `s.konfidentiell.1`, `s.serviceskyldighet.1`, `s.service.2`, `s.vägledning.1`
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -83,6 +91,19 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - 15 utskott med 17 ledamöter, ett tjugotal statsråd och partistödets villkor
   - mandatfördelningen 310 + 39, minst 21 ledamöter i kommunfullmäktige och kommunalskatten på drygt 30 procent
   - EU:s 27 medlemsländer, FN:s 193 och Sveriges Natomedlemskap 2024
+- **0.31, svenska:**
+  - *personuppgiftsansvarig*, *sekretessmarkering*, *skäligen misstänkt* och *ockerhyra* finns kanske inte i SAOL; *maska* (maskera uppgifter) är myndighetsjargong
+  - substantiverade particip med bestämd form på -n (*skadelidanden*, *käranden*, *svaranden*), *förlikas* (deponens) och *tilltalad*/*sakkunnig* som adjektiv
+  - *misstänkt* (adjektiv) sammanfaller med supinum av *misstänka*; *stämning* och *lag* har nu bara sina juridiska betydelser som egna poster
+  - texterna i Polis och Civilrätt skriver runt ord från parallella grupper (*något olagligt* i stället för *brott*, *de två sidorna* i stället för *parterna*); de kan göras naturligare nu när hela kedjan finns
+- **0.31, japanska:**
+  - ungefärliga motsvarigheter: *god man* ({補佐人|ほさにん}), *huvudman*, *lagrum*, *villkorlig dom* ({条件|じょうけん}つき{判決|はんけつ}), *dråp* ({故殺|こさつ}), *målsägande* ({被害者|ひがいしゃ}), *strafföreläggande* ({略式命令|りゃくしきめいれい}), *nämndeman* ({参審員|さんしんいん})
+  - egna översättningar av myndigheter: *hyresnämnden* ({賃貸|ちんたい}{紛争|ふんそう}{委員会|いいんかい}), *Kronofogden* ({執行庁|しっこうちょう})
+  - *avvisa* ({却下|きゃっか}) mot *avslå*, och {要配慮個人情報|ようはいりょこじんじょうほう}, {黒塗|くろぬ}り
+- **0.31, fakta (kontrollera lagrum):**
+  - RB 36:17 (ledande frågor), lag 2018:1693 (dna-registret), prövotider (BrB 27–28 kap.), förvaltningslagen 5–7 och 40–46 §§, TF 2 kap. 15 §, föräldrabalken 11:4–5
+  - beloppsgränsen för förenklat tvistemål (ungefär 30 000 kronor, ett halvt prisbasbelopp) ändras varje år
+  - Brå-sammanfattningen om att upptäcktsrisken avskräcker mer än straffets längd
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -101,9 +122,10 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v34`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v35`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Lag och förordning* (SWC-SAM-02-01-01) som exempel. Byt exemplet när den publiceras.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Inkomster och utgifter* (SWC-SAM-03-01-01) som exempel. Byt exemplet när den publiceras.
+- **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.

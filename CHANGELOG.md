@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.31.0 – 2026-11-12
+
+42 nya moduler som gör överämnet *Juridik & rättsväsende* (R03-A02) komplett. Varje nytt modulord har en egen bild, utom de 45 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 702 målord)
+- **Rättens grunder** (1401–1407): lag och förordning, rättigheter och skyldigheter, rättssubjekt, rättskällor, juridiska begrepp, att tolka en lagtext och offentlig och privat rätt.
+- **Brott & straff** (1411–1417): brottets rekvisit, uppsåt och oaktsamhet, försök och medverkan, böter och fängelse, straffmätning och påföljd, allmän- och individualprevention samt vanliga brottsrubriceringar.
+- **Polis & brottsutredning** (1421–1427): polisens uppgifter, anmälan och misstanke, vittnen och förhör, bevis och spår, gripande och anhållande, husrannsakan och beslag samt förundersökningen.
+- **Domstolar & rättegång** (1431–1437): tingsrätt och hovrätt, åklagare och försvarare, målsägande och tilltalad, åtal och stämning, huvudförhandling, dom och överklagande samt bevisvärdering.
+- **Civilrätt i vardagen** (1441–1447): avtal, köp och konsumentskydd, hyra, skadestånd, familjerätt, arbetsrätt samt tvister och förlikning.
+- **Förvaltning & myndigheter** (1451–1457): förvaltningsbeslut, ansökan och tillstånd, att överklaga myndighetsbeslut, offentlighetsprincipen, sekretess och tystnadsplikt, personuppgifter och integritet samt myndigheternas serviceskyldighet.
+- Varje modul har 15–20 målord, lästext med fem frågor och konversationsunderlag. Det finns 498 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`.
+- Lästexterna har faktakällor med lagrum (brottsbalken, rättegångsbalken, polislagen, avtalslagen, konsumentköplagen, hyreslagen, äktenskapsbalken, LAS, förvaltningslagen, tryckfrihetsförordningen, offentlighets- och sekretesslagen, dataskyddsförordningen m.fl.). De nämner inga verkliga personer eller rättsfall.
+- Nya betydelser på befintliga poster: *rätt* (rättighet; domstol), *skyldig* (måste), *gå före* (vara viktigare), *tolka* (förstå), *förvaltningsrätt* (rättsområde), *försök*, *återfall* och *grov* (om brott), *tips*, *misstanke*, *neka*, *spår*, *träff*, *gripa*, *fynd*, *utredning*, *protokoll*, *klara upp*, *mål* (i domstol), *företräda*, *yrkande*, *fria* (frikänna), *ogiltig* (om avtal), *umgänge* (barn och förälder), *uppsägning* (från ett jobb) och *service* (myndighetens).
+- Dubbletter mellan grupper slogs ihop: den tidigare modulen i katalogordningen äger posten och bilden. *legalitetsprincipen* och *befogenhet* refererar Rättens grunder, *gärningsperson* och *brottsförebyggande* refererar Brott & straff, *bestrida* refererar Domstolar & rättegång och *böter* refererar den befintliga posten *bot* (`s.bot.1`).
+- *lag*, *stycke*, *stämning* och *testamente* hade bara funnits i grundordförrådet och har nu egna poster.
+
+### Bilder (482 nya ordbilder)
+- 289 symbolbilder, 52 bilder som får användas i bildövningar och resten scener.
+- 339 symbol- och adjektivbilder blindtestades. 294 klarade testet efter högst två omgångar.
+- **45 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Tre ord i Rättens grunder (*utfärda*, *föreskrift*, *enligt lag*) ritades av misstag inte om mellan omgångarna, eftersom integratören läste en avkortad lista över underkända bilder. Listorna tas nu fram direkt ur blindtestdatan.
+- Nya bildfiler i `src/ui/wordArt/`: `lawBasics.ts`, `crime.ts`, `police.ts`, `courts.ts`, `civilLaw.ts` och `authorities.ts`.
+
+### Verktyg och test
+- e2e-testets planerade exempel är *Inkomster och utgifter* (Ekonomi & arbetsliv → Privatekonomi).
+- Python-cachefiler (`__pycache__`) ligger inte längre i git.
+
+Service workern är `swechan-v35`.
+
 ## 0.30.0 – 2026-11-11
 
 42 nya moduler som gör överämnet *Politik & demokrati* (R03-A01) komplett. Det är det första överämnet i rotområdet *Samhälle & institutioner*. Varje nytt modulord har en egen bild, utom de 20 ord som underkändes i två blindtestomgångar.
