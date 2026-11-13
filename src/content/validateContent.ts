@@ -111,6 +111,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.protestantisk.1',
   // 0.38 (Islamisk historia & kultur), after two blind-test rounds
   's.sunna.1',
+  // 0.38 (Asiatiska religioner), after two blind-test rounds
+  's.nirvana.1', 's.theravadabuddhism.1', 's.renhet.1', 's.medmänsklighet.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
