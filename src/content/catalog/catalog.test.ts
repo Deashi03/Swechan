@@ -97,7 +97,7 @@ describe('planned modules cannot be started as lessons', () => {
   it('no catalog entry is startable, published lessons are', () => {
     expect(index.modules.some((m) => index.isStartable(m.catalogId))).toBe(false);
     for (const id of publishedIds) expect(index.isStartable(id)).toBe(true);
-    expect(index.menuItems('R04-A03-T01').every((i) => i.kind === 'planned')).toBe(true);
+    expect(index.menuItems('R04-A04-T01').every((i) => i.kind === 'planned')).toBe(true);
   });
   it('the lesson services reject a planned ID and never recommend one', async () => {
     await setupTestEnv();

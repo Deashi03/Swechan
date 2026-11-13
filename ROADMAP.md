@@ -135,6 +135,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.37 – Militärhistoria (klar)
 - 42 nya moduler i Historia & humaniora → Militärhistoria med 452 nya ordbilder. 16 ord saknar bild efter två blindtestomgångar.
 
+## v0.38 – Religion & idéhistoria (klar)
+- 42 nya moduler i Historia & humaniora → Religion & idéhistoria med 381 nya ordbilder. 17 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

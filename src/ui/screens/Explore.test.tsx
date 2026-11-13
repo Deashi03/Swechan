@@ -28,18 +28,18 @@ describe('Kurser (catalog navigation)', () => {
   });
 
   it('a topic group lists its seven planned modules, clearly marked and not startable', async () => {
-    wrap(<Explore categoryId="R04-A03-T01" />);
+    wrap(<Explore categoryId="R04-A04-T01" />);
     const items = await choices();
     expect(items.length).toBe(7);
     expect(screen.getAllByText('Planerad').length).toBeGreaterThanOrEqual(7);
-    expect(screen.getByText('Tro och övertygelse')).toBeInTheDocument();
+    expect(screen.getByText('Begrepp och definition')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
   });
 
   it('a planned module has an information view without a start button', async () => {
-    // Militärhistoria (incl. Belägringens mål) is published from 0.37; Religion & idéhistoria is still planned.
-    wrap(<CatalogModuleView id="SWC-HIS-03-01-01" />);
-    expect(await screen.findByText('Tro och övertygelse')).toBeInTheDocument();
+    // Religion & idéhistoria is published from 0.38; Filosofi & etik is still planned.
+    wrap(<CatalogModuleView id="SWC-HIS-04-01-01" />);
+    expect(await screen.findByText('Begrepp och definition')).toBeInTheDocument();
     expect(screen.getByText(/inte färdig än/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
     expect(screen.queryByRole('link', { name: /Starta/ })).toBeNull();

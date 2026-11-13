@@ -105,6 +105,18 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.offensiv.1',
   // 0.37 (Modern krigföring), after two blind-test rounds
   's.terrorism.1', 's.krigets-lagar.1',
+  // 0.38 (Religiösa grundbegrepp), after two blind-test rounds
+  's.tro.1', 's.from.1', 's.bön.1', 's.tillbe.1', 's.högtidlighålla.1',
+  // 0.38 (Kristendomens historia), after two blind-test rounds
+  's.protestantisk.1',
+  // 0.38 (Islamisk historia & kultur), after two blind-test rounds
+  's.sunna.1',
+  // 0.38 (Asiatiska religioner), after two blind-test rounds
+  's.nirvana.1', 's.theravadabuddhism.1', 's.renhet.1', 's.medmänsklighet.1',
+  // 0.38 (Judendom & andra traditioner), after two blind-test rounds
+  's.jiddisch.1', 's.bud.2', 's.animism.1',
+  // 0.38 (Idéernas historia), after two blind-test rounds
+  's.meningen-med-livet.1', 's.existentiell.1', 's.ateism.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

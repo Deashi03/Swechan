@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.38.0 – 2026-11-13
+
+42 nya moduler som gör överämnet *Religion & idéhistoria* (R04-A03) komplett. Varje nytt modulord har en egen bild, utom de 17 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 704 målord)
+- **Religiösa grundbegrepp** (2101–2107): tro och övertygelse, heliga texter, ritualer och ceremonier, bön och meditation, tempel och helgedomar, religiösa ledare samt högtider och traditioner.
+- **Kristendomens historia** (2111–2117): Bibeln och evangelierna, fornkyrkan, katolska kyrkan, ortodox kristendom, protestantisk reformation, Svenska kyrkans historia och kristna högtider.
+- **Islamisk historia & kultur** (2121–2127): Koranen och hadither, profeten Muhammeds tid, kalifaten, moskéer och religiösa praktiker, islamiska högtider, islamisk vetenskapshistoria och olika muslimska traditioner.
+- **Asiatiska religioner** (2131–2137): buddhismens grundbegrepp, buddhistiska riktningar, hinduismens traditioner, shintoismens ritualer, konfucianismens idéer, taoismens begrepp och religion i Japan.
+- **Judendom & andra traditioner** (2141–2147): judisk historia, Tora och Talmud, synagoga och sabbat, judiska högtider, sikhism, traditionella afrikanska religioner och ursprungliga religiösa traditioner.
+- **Idéernas historia** (2151–2157): myt och världsbild, medeltida lärdomstradition, humanismens idéer, upplysningens tänkande, sekularisering, vetenskap och religion samt moderna livsåskådningar.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 391 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`, bland annat från *Livsåskådning*, *Kloster och kyrka*, *Reformationen*, *Antikens arv*, *Upplysningen* och *Renässans och humanism*. Dessa moduler är extra förkunskaper där deras ord behövs.
+- Nya betydelser på befintliga poster: *ritual* (religiös), *liknelse* (たとえ話), *kallelse* (召命), *riktning* (inom en religion), *bud* (regel), *kommentar* (förklarande text) och *lärdom* (kunskap).
+- Grundorden *religion*, *präst*, *be*, *ceremoni*, *församling*, *tradition*, *universitet*, *frihet*, *medeltiden* och *kyrklig* har fått egna poster.
+- Alla religioner och livsåskådningar skildras sakligt och neutralt ("enligt traditionen …"). Profeten Muhammed och Jesus avbildas aldrig. Heliga gestalter visas som symboler, byggnader eller statyer, och skrift som abstrakta streck. Inga hakkors eller manji förekommer.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Filosofi & etik* (R04-A04).
+
+### Bilder (381 nya ordbilder)
+- 158 symbolbilder, 84 bilder som får användas i bildövningar och resten scener.
+- 177 symbol- och adjektivbilder blindtestades. 160 klarade testet efter högst två omgångar.
+- **17 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Ord som redan stod på listan, till exempel *helig*, *välgörenhet*, *ödmjuk*, *kolonialism* och *humanism*, fick inga nya bilder. Det skulle ha blivit en tredje omgång.
+- Nya bildfiler i `src/ui/wordArt/`: `religionBasics.ts`, `christianity.ts`, `islamHistory.ts`, `asianReligions.ts`, `judaismTraditions.ts` och `historyOfIdeas.ts`.
+
+Service workern är `swechan-v42`.
+
 ## 0.37.0 – 2026-11-13
 
 42 nya moduler som gör överämnet *Militärhistoria* (R04-A02) komplett. Varje nytt modulord har en egen bild, utom de 16 ord som underkändes i två blindtestomgångar.
