@@ -72,15 +72,12 @@ const bag = (x: number, y: number, s = 1, col: string = C.tan) => at(x, y, s, pa
 const plate = (x: number, y: number, r = 10) => ellipse(x, y, r, r * 0.35, C.white, C.ink, 1.2);
 const medal = (x: number, y: number, s = 1) => at(x, y, s, path('M-4 -12 L0 -4 L4 -12', 'none', C.red, 2.4), circle(0, 0, 5, GOLD, C.ink, 1.2), star(0, 0, 2.6, '#fff2c0'));
 const mask = (x: number, y: number, s = 1) => at(x, y, s, path('M-10 -10 C-10 -16 10 -16 10 -10 L10 2 C10 12 -10 12 -10 2 Z', C.white, C.ink, 1.3), circle(-4, -5, 1.6, C.ink, null), circle(4, -5, 1.6, C.ink, null), line('M-5 3 Q0 8 5 3', C.ink, 1.4), ellipse(-6, 1, 1.8, 1, '#f08aa0', null), ellipse(6, 1, 1.8, 1, '#f08aa0', null), line('M0 10 L0 22', C.brown, 1.8));
-const lantern = (x: number, y: number, s = 1) => at(x, y, s, glow(0, 0, 12, 'rgba(242,193,78,0.45)'), rect(-4, -6, 8, 11, '#fff2c0', 1, C.ink, 1.1), path('M-5 -6 L0 -10 L5 -6 Z', C.dark, C.ink, 0.9), line('M0 -10 L0 -13', C.ink, 1));
 const bed = (x: number, y: number, w = 40, head: Svg = '') => all(rect(x - w / 2, y - 6, w, 8, C.white, 2, C.ink, 1.3), rect(x - w / 2 - 2, y - 16, 4, 22, C.brown, 1, C.ink, 1.1), line(`M${x - w / 2 + 2} ${y + 2} L${x - w / 2 + 2} ${y + 10} M${x + w / 2 - 2} ${y + 2} L${x + w / 2 - 2} ${y + 10}`, C.brown, 2), head);
 const tramCar = (x: number, y: number, s = 1) => at(x, y, s, rect(-16, -14, 32, 16, C.yellow, 3, C.ink, 1.4), rect(-12, -11, 9, 7, '#bfe3f5', 1, C.ink, 0.9), rect(1, -11, 9, 7, '#bfe3f5', 1, C.ink, 0.9), circle(-9, 3, 3, C.dark, C.ink, 1), circle(9, 3, 3, C.dark, C.ink, 1), line('M0 -14 L-4 -22 L4 -22', C.ink, 1.2));
 const door = (x: number, y: number, col: string) => all(rect(x - 12, y - 34, 24, 34, col, 2, C.ink, 1.4), circle(x + 7, y - 16, 1.6, GOLD, C.ink, 0.6));
 const coinStack = (x: number, y: number, n: number, r = 5) => all(...Array.from({ length: n }, (_, i) => all(ellipse(x, y - i * 3, r, r * 0.4, GOLD, C.ink, 1), line(`M${x - r} ${y - i * 3} L${x - r} ${y - i * 3 + 1.6} M${x + r} ${y - i * 3} L${x + r} ${y - i * 3 + 1.6}`, C.ink, 1))));
 const domino = (x: number, y: number, rot: number, col: string = C.white) => g(`translate(${x} ${y}) rotate(${rot})`, rect(-3, -16, 6, 16, col, 1, C.ink, 1.2), circle(0, -12, 0.9, C.ink, null), circle(0, -5, 0.9, C.ink, null));
 const meter = (x: number, y: number, h: number, frac: number, col: string = C.green) => all(rect(x - 6, y - h, 12, h, C.white, 2, C.ink, 1.3), rect(x - 4, y - 2 - (h - 4) * frac, 8, (h - 4) * frac, col, 1, null));
-const umbrella = (x: number, y: number, s = 1, col: string = C.red) => at(x, y, s, path('M-16 0 C-16 -14 16 -14 16 0 C12 -3 8 -3 5 0 C2 -3 -2 -3 -5 0 C-8 -3 -12 -3 -16 0 Z', col, C.ink, 1.3), line('M0 -11 L0 16', C.ink, 1.4));
-const rainLines = (x1: number, x2: number, y1: number) => all(...Array.from({ length: Math.floor((x2 - x1) / 7) }, (_, i) => line(`M${x1 + i * 7} ${y1 + (i % 3) * 4} l-2 6 M${x1 + i * 7 + 3} ${y1 + 14 + (i % 2) * 6} l-2 6`, '#6aa8d8', 1.2)));
 const snow = (x1: number, x2: number, y1: number, y2: number) => all(...Array.from({ length: 16 }, (_, i) => circle(x1 + ((i * 37) % (x2 - x1)), y1 + ((i * 23) % (y2 - y1)), 1.4, C.white, '#9fb3c8', 0.5)));
 const shake = (x: number, y: number) => line(`M${x - 3} ${y - 6} l-3 2 l3 2 l-3 2 M${x + 3} ${y - 6} l3 2 l-3 2 l3 2`, C.ink, 1);
 const sweat = (x: number, y: number) => drop(x, y, 0.9, '#8cc7e8');
@@ -94,12 +91,10 @@ const smoke = (x: number, y: number) => all(cloud(x, y, 0.5, '#7a7a80'), cloud(x
 const shieldL = (x: number, y: number, s = 1, col: string = C.navy, inner: Svg = '') => at(x, y, s, path('M0 -16 L14 -11 C14 4 8 12 0 17 C-8 12 -14 4 -14 -11 Z', col, C.ink, 1.6), inner);
 const cooler = (x: number, y: number) => all(rect(x - 10, y - 12, 20, 14, C.white, 2, C.ink, 1.3), rect(x - 11, y - 15, 22, 4, C.sky, 1, C.ink, 1.1), heart(x, y - 5, 0.4, C.red));
 const ring = (x: number, y: number, s = 1) => at(x, y, s, circle(0, 0, 8, 'none', C.red, 5), circle(0, 0, 8, 'none', C.white, 5), ...[0, 90, 180, 270].map((a) => path(`M${f1(Math.cos(a * Math.PI / 180) * 8)} ${f1(Math.sin(a * Math.PI / 180) * 8)} m-2 -2 l4 4`, 'none', C.red, 5)));
-const ladderOf = (x: number, y: number) => all(line(`M${x - 6} ${y} L${x - 6} ${y - 40} M${x + 6} ${y} L${x + 6} ${y - 40}`, C.brown, 2.2), ...[6, 14, 22, 30, 38].map((d) => line(`M${x - 6} ${y - d} L${x + 6} ${y - d}`, C.brown, 1.8)));
 const veil = (x: number, y: number, w: number, h: number) => all(path(`M${x} ${y} L${x + w} ${y} L${x + w} ${y + h} C${x + w * 0.75} ${y + h - 4} ${x + w * 0.5} ${y + h + 4} ${x + w * 0.25} ${y + h - 2} C${x + w * 0.1} ${y + h + 2} ${x} ${y + h} ${x} ${y + h} Z`, 'rgba(200,190,230,0.82)', '#8a7fb0', 1.2),
   ...Array.from({ length: Math.floor(w / 8) }, (_, i) => line(`M${x + 4 + i * 8} ${y + 2} L${x + 4 + i * 8} ${y + h - 4}`, 'rgba(138,127,176,0.5)', 0.8)), line(`M${x - 2} ${y} L${x + w + 2} ${y}`, C.brown, 2.4));
 const hut = (x: number, y: number, s = 1) => at(x, y, s, rect(-10, -12, 20, 12, '#c9a77a', 1, C.ink, 1.1), path('M-13 -12 L0 -22 L13 -12 Z', '#9a8a6a', C.ink, 1.1));
 const villa = (x: number, y: number, s = 1) => at(x, y, s, rect(-16, -20, 32, 20, '#f2ece0', 1, C.ink, 1.2), path('M-19 -20 L0 -32 L19 -20 Z', '#9a4a3a', C.ink, 1.2), rect(-11, -15, 6, 6, '#bfe3f5', 1, C.ink, 0.8), rect(5, -15, 6, 6, '#bfe3f5', 1, C.ink, 0.8), rect(-3, -9, 6, 9, '#8a5a34', 1, C.ink, 0.8), coin(16, -28, 4));
-const mirrorFrame = (x: number, y: number, w: number, h: number) => all(rect(x, y, w, h, '#e8f4fb', 3, '#a8743f', 3), line(`M${x + 6} ${y + 10} L${x + 14} ${y + 4} M${x + 6} ${y + 20} L${x + 20} ${y + 6}`, C.white, 2));
 
 export const ETHICS_MOTIFS: Record<string, Svg> = {
   // ── 2221 Rätt och fel ──
@@ -112,16 +107,15 @@ export const ETHICS_MOTIFS: Record<string, Svg> = {
   'etik.godhet': all(sky(WARM, 112), glow(44, 48, 30), fig(40, C.orange, 'smile', { hairStyle: 'long' }), reach(40, 1, 1, 70, 74),
     path('M66 66 L86 66 L84 84 L68 84 Z', C.red, C.ink, 1.3), heart(44, 18, 0.9, C.red), rays(44, 18, 12, 17, 10, GOLD, 1.2),
     grey(92, 'frown', { h: 0.9 }), snowFlakes(100), ground),
-  'etik.omoralisk': all(sky(DAY, 112), rect(50, 70, 20, 30, '#e6d3b3', 2, C.ink, 1.4), rect(56, 70, 8, 3, C.dark, 0.5, null), heart(60, 86, 0.6, C.red), line('M60 100 L60 112', C.brown, 3),
-    fig(88, '#4a3b63', 'angry'), reach(88, 1, -1, 64, 72), coin(64, 66, 4), cross(100, 22, 1.4),
-    greyed(fig(26, C.grey, 'smile'), reach(26, 1, 1, 52, 66), coin(52, 62, 3.5)), ground),
+  'etik.omoralisk': all(sky(DAY, 112), rect(30, 70, 20, 30, '#e6d3b3', 2, C.ink, 1.4), rect(36, 70, 8, 3, C.dark, 0.5, null), heart(40, 86, 0.6, C.red), line('M40 100 L40 112', C.brown, 3),
+    fig(62, '#4a3b63', 'smile', { h: 0.9 }), reach(62, 0.9, -1, 44, 72), coin(44, 66, 4), brokenMoral(30, 34),
+    ...[[90, 'shock'], [106, 'angry']].map(([x, m]) => all(fig(+x!, C.grey, m as Mood, { h: 0.72, grey: true }))), bubble(98, 44, 26, cross(98, 44, 0.8), true), ground),
   'etik.moralfilosofi': all(sky('#f6f2ea', 112), sage(34, 1, ROBE), reach(34, 1, 1, 50, 72), at(56, 72, 1, path('M0 6 C-8 2 -14 2 -18 6 L-18 -8 C-14 -12 -8 -12 0 -8 Z M0 6 C8 2 14 2 18 6 L18 -8 C14 -12 8 -12 0 -8 Z', '#fbf5e4', C.ink, 1.2)),
     thought(84, 26, 56, all(heart(70, 26, 0.6, C.red), line('M84 18 L84 34', C.grey, 1.4), bolt(98, 26, 0.6))),
     ...[[20, 20], [12, 44]].map(([x, y]) => qm(x!, y!, 12, HL)), ground),
-  'etik.orätt': all(sky(DAY, 112), rect(96, 40, 16, 72, '#e6d3b3', 2, C.ink, 1.4), rect(98, 52, 12, 10, '#bfe3f5', 1, C.ink, 1),
-    fig(78, '#4a3b63', 'smile', { h: 0.98 }), reach(78, 0.98, -1, 56, 80),
-    g('rotate(-14 46 112)', kid(44, C.yellow, 'frown')), arrow(64, 70, 52, 66, C.red, 2),
-    greyed(fig(18, C.grey, 'smile', { h: 0.8 })), zig(30, 30, 30), ground),
+  'etik.orätt': all(sky(DAY, 112), fig(30, '#4a3b63', 'laugh', { h: 0.96 }), reach(30, 0.96, 1, 46, 72), at(48, 70, 1, circle(0, 0, 7, C.red, C.ink, 1.2), line('M-7 0 L7 0 M0 -7 L0 7', C.white, 1)),
+    kid(84, C.yellow, 'frown'), reach(84, 0.56, -1, 66, 84), drop(80, 74, 0.8, '#8cc7e8'), arrow(52, 86, 68, 86, C.red, 2.2),
+    scales(90, 34, 0.55, -20, '', '', C.grey2), zig(70, 104, 20), ground),
   'etik.fördöma': all(sky('#f3ece0', 112), lectern(30), fig(30, C.navy, 'angry', { h: 1 }), reach(30, 1, 1, 50, 50), palmOut(50, 46), mic(22, 70),
     bubble(86, 30, 50, all(fist(80, 30, 1.1), bolt(92, 28, 0.55), stop(86, 30, 1.6)), true),
     ...[[64, 98], [80, 102], [96, 98], [110, 102]].map(([x, y]) => bust(x!, y!, C.grey, 0.95, 'none', true))),
@@ -135,25 +129,29 @@ export const ETHICS_MOTIFS: Record<string, Svg> = {
     fig(46, C.navy, 'smile', { h: 0.94 }), on(46, 0.94, rect(-10, -66, 20, 6, C.navy, 2, C.ink, 1.2)), reach(46, 0.94, 1, 64, 76), at(68, 82, 1, path('M-8 -8 L8 -8 L10 10 L-10 10 Z', '#b07a2a', C.ink, 1.2)), envelopeS(74, 66),
     greyed(rect(88, 50, 26, 30, '#e6d3b3', 2, C.ink, 1.2), rect(92, 56, 18, 14, '#fde2a0', 1, C.ink, 1), bust(101, 68, C.grey, 0.7)),
     tick(20, 20, 1.1), path('M6 112 C30 106 80 108 114 104 L114 112 Z', C.white, '#c9d6e3', 1)),
-  'etik.pliktetik': all(sky('#f6f2ea', 112), sage(26, 0.9, ROBE2), tablet(64, 34, 1.2, PARCH, tick(0, -10, 0.7)), arrow(64, 56, 64, 72, GOLD, 2.4),
-    fig(64, C.green, 'smile', { h: 0.42 }), reach(64, 0.42, 1, 74, 98), rect(73, 94, 8, 5, C.dark, 1, C.ink, 0.8),
-    greyed(cloud(100, 82, 0.8, C.grey2), qm(100, 86, 10, C.ink)), ground),
-  'etik.maxim': all(sky(WARM, 112), fig(28, C.denim, 'smile', { h: 0.86 }), reach(28, 0.86, 1, 30, 18), at(32, 22, 1, rect(-14, -10, 28, 18, PARCH, 2, C.ink, 1.3), path('M-6 -1 Q0 5 6 -1', 'none', C.red, 1.6), tick(9, -4, 0.45)),
-    ...[44, 68, 92].map((y, i) => all(rect(56, y - 16, 56, 22, i % 2 ? '#fdf6e6' : '#f6efe0', 2, '#d8c9a8', 1), bust(68, y - 4, C.denim, 0.8), bubble(92, y - 6, 22, tick(92, y - 6, 0.5), true))),
-    line('M44 30 L54 40', GOLD, 1.6, '2 2'), ground),
-  'etik.kategoriskt-imperativ': all(sky('#eef4fa', 112), fig(30, '#c96b3c', 'smile', { h: 0.62 }), reach(30, 0.62, 1, 44, 82), coin(46, 80, 3.5),
-    thought(30, 22, 44, all(...[16, 26, 36, 46].map((x) => bust(x, 20, '#c96b3c', 0.5)))), arrow(52, 74, 62, 74, HL, 2.4),
-    ...[[74, 62], [92, 62], [110, 62], [74, 92], [92, 92], [110, 92]].map(([x, y]) => all(bust(x!, y!, '#c96b3c', 0.85), coin(x! + 6, y! + 10, 2.4))), tick(96, 22, 1.3), ground),
-  'etik.självändamål': all(sky('#f6f2ea', 112), glow(34, 72, 30), rays(34, 72, 30, 36, 14, GOLD, 1.4), fig(34, C.orange, 'smile', { h: 0.8, hairStyle: 'long' }),
-    greyed(ladderOf(92, 112), grey(84, 'frown', { h: 0.62 }), grey(98, 'smile', { h: 0.62 }), g('translate(0 -36)', grey(96, 'smile', { h: 0.5 }))), cross(106, 30, 0.9), tick(34, 18, 1.1), ground),
+  'etik.pliktetik': all(sky('#f6f2ea', 112), sage(22, 0.82, ROBE2), tablet(60, 34, 1.3, PARCH, excl(0, -6, 14, C.red)), arrow(60, 58, 60, 70, GOLD, 2.4),
+    fig(60, C.green, 'smile', { h: 0.42 }), reach(60, 0.42, 1, 72, 98), rect(71, 94, 8, 5, C.dark, 1, C.ink, 0.8),
+    greyed(at(100, 70, 1, circle(0, -10, 8, C.white, C.ink, 1), line('M-3 -9 Q0 -6 3 -9', C.ink, 1), circle(0, 10, 8, C.white, C.ink, 1), line('M-3 13 Q0 10 3 13', C.ink, 1))), cross(100, 60, 1.6), ground),
+  'etik.maxim': all(sky(WARM, 112), fig(36, C.denim, 'smile', { h: 0.9 }), reach(36, 0.9, 1, 36, 64), palmOut(36, 60),
+    thought(80, 34, 56, all(rect(62, 24, 36, 22, PARCH, 2, C.ink, 1.3), ellipse(74, 35, 6, 4, '#c84a4a', C.ink, 1), line('M70 35 L78 35', C.white, 0.8), tick(89, 35, 0.6))),
+    at(92, 98, 1, rect(-12, -12, 24, 20, '#7a5aa8', 2, C.ink, 1.3), line('M-8 -12 L-8 8', 'rgba(255,255,255,0.4)', 1.6), heart(2, -2, 0.4, C.white)), ground),
+  'etik.kategoriskt-imperativ': all(sky('#eef4fa', 112), fig(22, '#c96b3c', 'smile', { h: 0.62 }), reach(22, 0.62, 1, 34, 50), at(38, 46, 1, rect(-8, -6, 16, 12, PARCH, 1, C.ink, 1), excl(0, 4, 10, C.red)),
+    arrow(46, 50, 58, 50, HL, 2.4), globeMini(84, 46), ...[[64, 26], [104, 26], [62, 66], [106, 66], [84, 20], [84, 74]].map(([x, y]) => at(x!, y!, 1, rect(-5, -4, 10, 8, PARCH, 1, C.ink, 0.8), excl(0, 3, 7, C.red))),
+    num(84, 102, '=', 12, C.ink), tick(100, 98, 1.1), ground),
+  'etik.självändamål': all(sky(WARM, 112), glow(40, 66, 30), fig(40, C.orange, 'laugh', { h: 0.86, hairStyle: 'long' }), reach(40, 0.86, 1, 58, 60), reach(40, 0.86, -1, 22, 60),
+    ...[[62, 46], [18, 44], [30, 26], [54, 28]].map(([x, y]) => sparkle(x!, y!, 3, GOLD)), loop(40, 64, 34),
+    greyed(coin(84, 30, 6), arrow(92, 30, 102, 30, GREY, 2), bag(110, 32, 0.6, C.grey2)), cross(96, 56, 0.8), tick(40, 14, 1), ground),
 
   // ── 2223 Konsekvenser och nytta ──
-  'etik.nytta': all(sky('#c9d6e3', 112), rainLines(6, 114, 8), rainLines(6, 114, 40), umbrella(36, 52, 1.5), fig(36, C.green, 'smile', { h: 0.84 }), reach(36, 0.84, 1, 36, 70), tick(36, 18, 1),
-    greyed(fig(90, C.grey, 'frown', { h: 0.84 }), drop(84, 50, 1), drop(96, 46, 1), drop(90, 60, 1)), ground),
+  'etik.nytta': all(sky(DAY, 112), tree(84, 112, 1.6), ...[[74, 56], [92, 52], [84, 66], [100, 64]].map(([x, y]) => apple(x!, y!, 1.3)),
+    line('M58 112 L74 58 M66 112 L82 58', C.brown, 2.2), ...[100, 90, 80, 70].map((y) => line(`M${f1(58 + (112 - y) * 0.3)} ${y} L${f1(66 + (112 - y) * 0.3)} ${y}`, C.brown, 1.8)),
+    g('translate(10 -34)', fig(62, C.green, 'laugh', { h: 0.5 })), reach(72, 0.5, 1, 86, 48), bag(30, 104, 0.9), apple(26, 92), apple(32, 94), num(48, 30, '+', 22, GREEN),
+    greyed(fig(14, C.grey, 'frown', { h: 0.5 })), ground),
   'etik.konsekvensetik': all(sky('#f6f2ea', 112), sage(16, 0.6, ROBE2), ...[30, 40, 50, 60].map((x, i) => domino(x, 100, 40 - i * 10)), ...[70, 80].map((x) => domino(x, 100, 0)),
     arrow(86, 92, 94, 80, GOLD, 2.2), glow(102, 62, 18), ...[[96, 58], [108, 58], [102, 70]].map(([x, y]) => bust(x!, y!, ['#c96b3c', GREEN, C.denim][(x! + y!) % 3]!, 0.7)), sun(102, 30, 7), ground),
-  'etik.utilitarism': all(sky('#eef4fa', 112), scales(60, 86, 1.25, 12, all(bust(-4, -10, C.grey, 0.6, 'frown', true)), all(...[[-8, -14], [0, -16], [8, -14], [-4, -6], [4, -6]].map(([x, y]) => bust(x!, y!, ['#c96b3c', GREEN, C.denim, '#7a5aa8', '#d64545'][(x! + y! + 30) % 5]!, 0.55)))),
-    sage(14, 0.56, ROBE2), num(98, 26, '5', 14, GREEN), num(34, 30, '1', 12, GREY), tick(110, 40, 0.8)),
+  'etik.utilitarism': all(sky('#eef4fa', 112), sage(16, 0.62, ROBE2),
+    ...[34, 52, 70].map((x, i) => all(bust(x, 40, ['#c96b3c', GREEN, C.denim][i]!, 0.8), num(x + 9, 44, '+', 10, GREEN))), bust(88, 40, '#7a5aa8', 0.8), num(98, 44, '+', 10, GREEN),
+    bust(40, 72, C.grey, 0.8, 'frown', true), num(50, 76, '−', 12, C.red), line('M30 88 L110 88', C.ink, 2), num(66, 104, '=', 14, C.ink), sun(92, 100, 7), num(108, 104, '+', 14, GREEN)),
   'etik.välbefinnande': all(sky('#e8f6ea', 112), sun(98, 20, 7), tree(18, 104, 0.9), fig(60, C.mint, 'calm', { h: 0.9, hairStyle: 'long' }), reach(60, 0.9, -1, 42, 66), reach(60, 0.9, 1, 78, 66),
     heart(60, 58, 0.5, C.red), glow(60, 62, 26, 'rgba(127,191,106,0.25)'), ...[[30, 40], [90, 50], [80, 34]].map(([x, y]) => sparkle(x!, y!, 3, GOLD)), path('M4 104 C40 100 80 100 116 104 L116 112 L4 112 Z', '#9fd18a', null)),
   'etik.njutning': all(sky('#fde2c2', 112), fig(54, C.pink, 'calm', { h: 0.96, hairStyle: 'long' }), reach(54, 0.96, 1, 72, 52),
@@ -163,23 +161,22 @@ export const ETHICS_MOTIFS: Record<string, Svg> = {
     ...[[18, 60], [36, 56], [54, 60], [72, 56], [90, 60], [26, 80], [44, 76], [62, 80], [80, 76], [18, 100], [36, 98], [54, 100], [72, 98], [90, 100]].map(([x, y], i) => bust(x!, y!, ['#c96b3c', GREEN, C.denim, '#7a5aa8', '#d64545', '#b07a2a'][i % 6]!, 0.9))),
   'etik.maximera': all(sky('#eef4fa', 112), line('M14 104 L110 104 M14 104 L14 14', C.ink, 1.8), ...[[28, 20], [46, 36], [64, 54], [82, 72]].map(([x, h]) => rect(x! - 7, 104 - h!, 14, h!, C.grey2, 1, C.ink, 1)),
     rect(93, 18, 14, 86, GREEN, 1, C.ink, 1.4), arrow(100, 40, 100, 22, C.white, 2), line('M14 18 L110 18', HL, 1.6, '4 3'), star(100, 12, 5, GOLD)),
-  'etik.ändamålet-helgar-medlen': all(sky(DAY, 112), path('M80 112 L80 40 L112 40 L112 112 Z', '#d9c8a4', C.ink, 1.2), star(96, 26, 9, GOLD), rays(96, 26, 11, 15, 10, GOLD, 1.2),
-    ...[30, 40, 50].map((x) => all(line(`M${x} 112 L${x} 84`, C.brown, 2), line(`M${x - 5} 92 L${x + 5} 92 M${x - 5} 102 L${x + 5} 102`, C.brown, 1.6))), g('rotate(-50 62 112)', line('M58 112 L58 84 M53 92 L63 92 M53 102 L63 102', C.brown, 2)),
-    crushed(20, 111), crushed(66, 111), fig(70, '#4a3b63', 'smile', { h: 0.72 }), reach(70, 0.72, 1, 86, 58), arrow(70, 30, 86, 30, GOLD, 2), qm(30, 34, 22, C.red), ground),
+  'etik.ändamålet-helgar-medlen': all(sky(DAY, 112), at(84, 40, 1, glow(0, 0, 18), path('M-8 -10 L8 -10 L6 4 C4 8 -4 8 -6 4 Z', GOLD, C.ink, 1.3), rect(-2, 6, 4, 6, GOLD, 0.5, C.ink, 1), rect(-7, 12, 14, 4, '#a8743f', 1, C.ink, 1)),
+    greyed(at(54, 112, 1, line('M-18 -10 L-20 0 M-10 -10 L-10 0 M12 -10 L12 0 M18 -10 L20 0', C.grey, 3), path('M-22 -6 C-22 -20 18 -20 20 -8 L-22 -6 Z', C.grey, C.ink, 1.2), circle(26, -10, 6, C.grey2, C.ink, 1.2))), drop(80, 98, 0.8, '#8cc7e8'),
+    g('translate(0 -16)', fig(52, '#4a3b63', 'laugh', { h: 0.82 })), reach(52, 0.82, 1, 74, 40), arrow(20, 40, 40, 40, GOLD, 2), cross(18, 90, 0.9), ground),
 
   // ── 2224 Dygder och karaktär ──
-  'etik.dygd': all(sky(WARM, 112), glow(40, 60, 28), fig(40, C.green, 'smile'), on(40, 1, star(0, -22, 7, GOLD)), reach(40, 1, 1, 64, 82),
-    kid(78, C.sky, 'smile'), reach(78, 0.56, -1, 66, 84), heart(60, 28, 0.6, C.red), greyed(fig(104, C.grey, 'smile', { h: 0.8 })), ground),
-  'etik.dygdetik': all(sky('#f6f2ea', 112), mirrorFrame(62, 18, 46, 86), sage(34, 0.9, ROBE2, 'calm'),
-    g('translate(0 0)', glow(85, 64, 22), fig(85, ROBE2, 'smile', { h: 0.78, bottom: ROBE2 }), on(85, 0.78, star(0, -22, 7, GOLD))), thought(30, 18, 34, qm(30, 23, 12, HL)), ground),
+  'etik.dygd': all(sky(WARM, 112), glow(42, 60, 34), fig(42, C.green, 'smile'), on(42, 1, circle(0, -22, 10, '#fff2c0', GOLD, 1.6), star(0, -22, 7, GOLD)),
+    loopIcons(42, 58, 34), greyed(fig(98, C.grey, 'smile', { h: 0.84 }), on(98, 0.84, circle(0, -22, 10, 'none', C.ink, 1.6))), ground),
+  'etik.dygdetik': all(sky('#f6f2ea', 112), rect(52, 10, 62, 62, '#2f5a46', 2, '#7a4a20', 2.4), at(83, 44, 0.9, fig(0, C.white, 'smile', { h: 0.6 })),
+    ...[[64, 22], [102, 22], [64, 60], [102, 60]].map(([x, y], i) => [heart(x!, y!, 0.45, C.pink), shieldL(x!, y!, 0.4, C.sky), star(x!, y!, 4.4, C.yellow), circle(x!, y!, 4, 'none', C.white, 1.4)][i]!),
+    sage(28, 0.94, ROBE2), reach(28, 0.94, 1, 50, 50), palmOut(52, 46), bust(70, 96, C.denim, 1.1), bust(94, 98, '#c96b3c', 1.1), ground),
   'etik.måttlighet': all(sky('#f6f2ea', 112), rect(8, 86, 104, 6, C.tan, 2, C.ink, 1.4), line('M14 92 L14 112 M106 92 L106 112', C.brown, 3),
     fig(32, C.green, 'smile', { h: 0.62 }), plate(32, 84, 12), apple(28, 81, 1), circle(36, 81, 3, '#9fd18a', C.ink, 0.8), tick(32, 22, 1),
     greyed(fig(86, C.grey, 'smile', { h: 0.62, belly: 1 }), plate(86, 84, 16), ...Array.from({ length: 7 }, (_, i) => circle(80 + (i % 3) * 6, 80 - Math.floor(i / 3) * 6, 3.4, C.grey2, C.ink, 0.8))), cross(86, 22, 0.9)),
-  'etik.klokhet': all(sky(NIGHT, 112), ...[[22, 14], [48, 10], [100, 12]].map(([x, y]) => sparkle(x!, y!, 2, '#f6e8a8')),
-    path('M52 112 L68 112 L66 92 L34 56 L24 60 L56 94 Z', '#6a6478', C.ink, 1), path('M54 94 L62 92 L96 54 L106 58 L68 98 Z', '#e6d3b3', C.ink, 1),
-    path('M14 58 L30 52 L32 60 L16 66 Z', '#3a3348', null), storm(26, 34, 0.6), zig(14, 62, 18, C.red),
-    house2(100, 52), glow(92, 66, 24, 'rgba(242,193,78,0.3)'),
-    fig(62, ROBE, 'calm', { h: 0.5 }), reach(62, 0.5, 1, 76, 90), lantern(78, 88, 0.9), thought(34, 86, 24, qm(34, 91, 10, HL), false)),
+  'etik.klokhet': all(sky(DAY, 112), path('M4 84 L116 84 L116 112 L4 112 Z', '#9fd18a', null), path('M4 90 C30 86 40 96 60 92 L60 100 C40 104 30 94 4 98 Z', WATER, null),
+    path('M60 112 L60 100 L28 92 M60 100 L94 92', 'none', '#e6d3b3', 5), line('M16 88 L28 92 M30 90 L22 96', C.brown, 2.4), cross(18, 74, 0.9), line('M86 88 L104 88 M86 92 L104 92', C.brown, 2.4), tick(96, 74, 0.9),
+    fig(60, ROBE, 'calm', { h: 0.58 }), g('translate(0 -2)', thought(60, 22, 40, all(cross(50, 22, 0.6), arrow(56, 22, 64, 22, HL, 1.6), tick(70, 22, 0.6)))), arrow(66, 64, 80, 70, GOLD, 2)),
   'etik.rättrådig': all(sky('#eef0f4', 112), fig(42, C.navy, 'calm', { h: 1 }), reach(42, 1, -1, 22, 54), scales(22, 60, 0.45, 0), reach(42, 1, 1, 60, 60), palmOut(62, 56),
     greyed(fig(94, C.grey, 'smile', { h: 0.9 }), reach(94, 0.9, -1, 76, 70), bag(72, 74, 0.8, C.grey2)), coin(72, 62, 3.5), cross(72, 40, 0.9), ground),
   'etik.generositet': all(sky(WARM, 112), fig(36, C.orange, 'smile', { hairStyle: 'long' }), bag(22, 98, 1), ...[[18, 88], [24, 86], [28, 90]].map(([x, y]) => apple(x!, y!)),
@@ -192,22 +189,25 @@ export const ETHICS_MOTIFS: Record<string, Svg> = {
     g('translate(0 -38)', fig(60, C.green, 'smile', { h: 0.6 })), cross(14, 56, 0.9), cross(106, 56, 0.9), shake(14, 72), bolt(106, 34, 0.6), tick(60, 14, 1.1), arrow(30, 96, 44, 96, GOLD, 1.8), arrow(90, 96, 76, 96, GOLD, 1.8)),
 
   // ── 2225 Moralisk konflikt ──
-  'etik.värdekonflikt': all(sky('#f6f2ea', 112), fig(60, '#d4c06a', 'frown', { h: 0.84 }), reach(60, 0.84, -1, 36, 62), reach(60, 0.84, 1, 84, 62),
-    line('M14 56 L36 62', C.brown, 2), line('M84 62 L106 56', C.brown, 2), heart(14, 50, 1, C.red), glow(14, 50, 14), shieldL(106, 50, 0.9, C.navy, star(0, 0, 4, GOLD)),
-    arrow(30, 40, 18, 36, HL, 1.8), arrow(90, 40, 102, 36, HL, 1.8), zig(48, 20, 24, HL), ground),
+  'etik.värdekonflikt': all(sky('#f6f2ea', 112), at(30, 40, 1.4, glow(0, 0, 14, 'rgba(90,167,214,0.25)'), path('M-10 0 C-6 -8 -2 -8 0 -2 C2 -8 6 -8 10 0 C6 -4 2 -2 0 2 C-2 -2 -6 -4 -10 0 Z', C.sky, C.ink, 1.2)),
+    at(90, 44, 1.3, rect(-12, -6, 24, 18, '#f2ece0', 1, C.ink, 1.2), path('M-15 -6 L0 -18 L15 -6 Z', '#9a4a3a', C.ink, 1.2), path('M-4 4 L-4 0 C-4 -5 4 -5 4 0 L4 4', 'none', C.ink, 1.4), rect(-6, 3, 12, 8, GOLD, 1, C.ink, 1)),
+    arrow(44, 42, 54, 42, C.red, 2.4), arrow(76, 42, 66, 42, C.red, 2.4), at(60, 42, 1, path('M0 -10 L3 -3 L10 -3 L4 2 L7 10 L0 5 L-7 10 L-4 2 L-10 -3 L-3 -3 Z', C.yellow, C.red, 1.4)),
+    fig(60, '#d4c06a', 'frown', { h: 0.5 }), qm(76, 74, 14, HL), ground),
   'etik.lojalitetskonflikt': all(sky('#eef4fa', 112), fig(60, '#d4c06a', 'frown', { h: 0.8 }), fig(22, C.red, 'angry', { h: 0.92 }), fig(98, C.denim, 'angry', { h: 0.92, hairStyle: 'long' }),
     reach(22, 0.92, 1, 46, 70), reach(98, 0.92, -1, 74, 70), heart(40, 30, 0.5, C.red), heart(80, 30, 0.5, C.red), bolt(60, 18, 0.7), ground),
   'etik.samvetskval': all(sky(NIGHT, 112), ...[[14, 14], [30, 22], [100, 12], [110, 30]].map(([x, y]) => sparkle(x!, y!, 2, '#f6e8a8')), path('M96 40 A10 10 0 1 0 96 60 A7 10 0 1 1 96 40 Z', '#f6e08a', C.ink, 0.8),
     bed(56, 96, 80, ''), path('M24 90 C40 82 80 82 94 90 L94 94 L24 94 Z', C.lilac, C.ink, 1.2), circle(28, 84, 7, C.skin, C.ink, 1.2), circle(26, 84, 1.6, C.white, C.ink, 0.6), circle(31, 84, 1.6, C.white, C.ink, 0.6), line('M25 88 Q28 86.6 31 88', C.ink, 0.9),
     thought(46, 44, 46, all(path('M36 50 L40 38 L46 38 L50 50 Z', '#7ab0d0', C.ink, 1), line('M41 42 L44 46 L42 48', C.ink, 1), storm(56, 36, 0.4)), false), shake(28, 72)),
-  'etik.ge-vika': all(sky(DAY, 112), line('M30 74 L84 80', C.brown, 2.4), fig(24, C.red, 'laugh', { h: 0.9 }), reach(24, 0.9, 1, 34, 72),
-    fig(92, C.denim, 'frown', { h: 0.9 }), reach(92, 0.9, -1, 76, 60), reach(92, 0.9, 1, 108, 60), path('M84 80 C88 90 82 96 86 104', 'none', C.brown, 2.4), arrow(56, 60, 40, 56, HL, 2), ground),
+  'etik.ge-vika': all(sky(DAY, 112), line('M60 8 L60 108', C.grey2, 1.6, '3 3'),
+    fig(32, C.denim, 'angry', { h: 0.72 }), reach(32, 0.72, 1, 44, 66), palmOut(46, 62), arrow(58, 64, 48, 64, C.red, 3.4), num(30, 26, '1', 12, GREY),
+    fig(84, C.denim, 'frown', { h: 0.72 }), reach(84, 0.72, -1, 72, 80), reach(84, 0.72, 1, 98, 80), arrow(64, 46, 112, 46, C.red, 3.4), g('translate(2 0)', line('M76 30 L74 26 M92 30 L94 26', C.ink, 1)), num(104, 26, '2', 12, GREY), ground),
   'etik.dubbelmoral': all(sky(DAY, 112), rect(96, 84, 14, 28, '#5a8a5a', 2, C.ink, 1.2), fig(54, C.navy, 'angry'), reach(54, 1, -1, 32, 56), palmOut(30, 52),
     kid(18, C.yellow, 'frown'), can(28, 110), cross(14, 30, 0.9), reach(54, 1, 1, 74, 84), can(80, 92), arrow(78, 98, 82, 106, C.red, 1.6), can(84, 110), qm(96, 30, 22, C.red), ground),
   'etik.hyckleri': all(sky('#f6f2ea', 112), fig(56, '#4a3b63', 'angry', { h: 1 }), reach(56, 1, 1, 64, 54), mask(58, 46, 1.25),
     greyed(fig(98, C.grey, 'smile', { h: 0.8 }), fig(18, C.grey, 'smile', { h: 0.8 })), heart(30, 28, 0.6, C.red), on(56, 1, path('M-13 -66 L-7 -72 M13 -66 L7 -72', 'none', C.red, 1.4)), ground),
-  'etik.rättvisa': all(sky(WARM, 112), scales(60, 50, 1.3, 0, all(...[-6, 0, 6].map((x) => apple(x, -4, 1.1))), all(...[-6, 0, 6].map((x) => apple(x, -4, 1.1)))), glow(60, 20, 14),
-    ...[18, 42, 78, 102].map((x, i) => all(bust(x, 98, ['#c96b3c', GREEN, C.denim, '#7a5aa8'][i]!, 1.1), apple(x + 8, 106, 1))), tick(104, 20, 1)),
+  'etik.rättvisa': all(sky(WARM, 112), glow(60, 42, 34), rays(60, 42, 34, 40, 16, GOLD, 1.2), scales(60, 70, 1.6, 0, '', ''),
+    at(60, 108, 1, rect(-14, -6, 16, 8, '#8a5a34', 2, C.ink, 1.2), rect(2, -4, 14, 4, '#a8743f', 1, C.ink, 1)),
+    fig(16, C.denim, 'calm', { h: 0.5 }), fig(104, '#c96b3c', 'calm', { h: 0.5, hairStyle: 'long' }), ground),
   'etik.orättvisa': all(sky('#f3ece0', 112), scales(60, 46, 1.2, 18, '', all(coinStack(0, -2, 4, 4))), fig(28, '#4a3b63', 'laugh', { h: 0.72 }), coinStack(16, 110, 6, 5), coinStack(42, 110, 5, 5),
     fig(92, C.sky, 'frown', { h: 0.72 }), reach(92, 0.72, -1, 80, 90), plate(80, 92, 8), zig(70, 104, 18), cross(104, 24, 0.9)),
   'etik.ojämlikhet': all(sky('#eef4fa', 112), box(30, 112, 26, 64, '#c9a24a'), box(60, 112, 26, 22, '#c9a24a'), box(90, 112, 26, 6, '#c9a24a'),
@@ -217,9 +217,9 @@ export const ETHICS_MOTIFS: Record<string, Svg> = {
     fig(70, C.orange, 'laugh', { h: 0.9 }), sweat(80, 36), reach(70, 0.9, -1, 52, 82), line('M52 82 L44 106 M40 106 L48 106', C.brown, 2), arrow(86, 56, 96, 46, GOLD, 2), medal(104, 40, 1.4), rays(104, 40, 9, 13, 10, GOLD, 1.2), ground),
   'etik.okunnighetens-slöja': all(sky('#f6f2ea', 112), villa(92, 50, 0.9), hut(92, 96, 1), fig(28, '#7a5aa8', 'calm', { h: 0.84 }), veil(8, 20, 42, 92),
     arrow(52, 64, 70, 46, HL, 1.8), arrow(52, 74, 70, 90, HL, 1.8), qm(62, 70, 16, HL), ground),
-  'etik.lika-möjligheter': all(sky('#e8f6ea', 112), path('M4 98 L116 98 L116 112 L4 112 Z', '#c9775a', null), line('M20 112 L20 76', C.white, 3), line('M100 112 L100 76', C.dark, 2, '3 3'),
-    ...[[30, C.red], [52, C.denim], [74, GREEN]].map(([x, c]) => fig(+x!, c as string, 'smile', { h: 0.5 })), line('M20 104 L110 104', C.white, 1, '4 3'), tick(60, 24, 1.2),
-    greyed(at(84, 30, 0.3, ...[-10, 6, 22].map((x, i) => rect(x, -i * 8, 10, 30 + i * 8, C.grey2, 1, C.ink, 1))))),
+  'etik.lika-möjligheter': all(sky('#e8f6ea', 112), cloud(60, 18, 1.6, C.white), star(60, 16, 6, GOLD),
+    ...[[30, C.red], [60, C.denim], [90, GREEN]].map(([x, c]) => all(ladder(+x!, 112, 70), g('translate(0 0)', kid(+x! - 12, c as string, 'smile', { h: 0.42 })))), tick(108, 40, 0.9),
+    greyed(at(108, 96, 0.3, ladder(-14, 0, 30), ladder(0, 0, 60), ladder(14, 0, 90))), ground),
 
   // ── 2227 Etiska dilemman ──
   'etik.rädda': all(sky(DAY, 64), path('M4 64 L116 64 L116 112 L4 112 Z', WATER, null), path('M4 70 C20 66 30 74 46 70 C62 66 72 74 88 70 C100 67 110 72 116 70', 'none', C.white, 1.4),
@@ -240,4 +240,8 @@ function snowFlakes(x: number): Svg { return all(...[[x - 6, 30], [x + 8, 40], [
 function palmOut(x: number, y: number): Svg { return at(x, y, 1, path('M-4 6 L-4 -4 C-4 -7 -2 -7 -2 -4 L-2 -7 C-2 -10 0 -10 0 -7 L0 -8 C0 -11 2 -11 2 -8 L2 -6 C2 -9 4 -9 4 -6 L4 4 C4 8 -1 9 -4 6 Z', C.skin, C.ink, 1)); }
 function envelopeS(x: number, y: number): Svg { return at(x, y, 1, rect(-7, -5, 14, 10, C.white, 1, C.ink, 1), path('M-7 -5 L0 1 L7 -5', 'none', C.ink, 0.9)); }
 function note(x: number, y: number): Svg { return at(x, y, 0.8, path('M0 6 L0 -8 L6 -10 L6 4', 'none', C.navy, 1.6), ellipse(-2, 6, 2.6, 2, C.navy, null), ellipse(4, 4, 2.6, 2, C.navy, null)); }
-function house2(x: number, y: number): Svg { return at(x, y, 0.8, rect(-10, -12, 20, 12, '#f2ece0', 1, C.ink, 1), path('M-13 -12 L0 -22 L13 -12 Z', '#9a4a3a', C.ink, 1), rect(-3, -7, 6, 7, '#fde2a0', 1, C.ink, 0.8)); }
+function brokenMoral(x: number, y: number): Svg { return at(x, y, 1, path('M-1 8 C-12 0 -10 -10 -4 -10 C-1 -10 -1 -8 -1 -6 L-3 -2 L0 2 Z', C.red, C.ink, 1.2), path('M2 9 C13 1 11 -9 5 -9 C2 -9 1 -7 1 -5 L-1 -1 L2 3 Z', C.red, C.ink, 1.2), cross(14, -8, 0.6)); }
+function loop(x: number, y: number, r: number): Svg { return all(path(`M${x + r} ${y} A${r} ${r} 0 1 1 ${x} ${y - r}`, 'none', GOLD, 2.6), arrow(x - 1, y - r, x + 5, y - r + 1, GOLD, 2.6)); }
+function loopIcons(x: number, y: number, r: number): Svg { return all(heart(x - r, y - 10, 0.55, C.red), shieldL(x + r, y - 10, 0.5, C.navy), at(x - r + 4, y + 30, 1, circle(0, 0, 5, C.yellow, C.ink, 1)), apple(x + r - 4, y + 30, 1.4)); }
+function globeMini(x: number, y: number): Svg { return all(circle(x, y, 14, WATER, C.ink, 1.3), path(`M${x - 8} ${y - 4} C${x - 2} ${y - 10} ${x + 2} ${y - 2} ${x - 3} ${y + 3} Z M${x + 4} ${y + 2} C${x + 10} ${y} ${x + 9} ${y + 8} ${x + 4} ${y + 9} Z`, '#7fbf6a', C.ink, 0.8)); }
+function ladder(x: number, y: number, h: number): Svg { return all(line(`M${x - 6} ${y} L${x - 6} ${y - h} M${x + 6} ${y} L${x + 6} ${y - h}`, C.brown, 2.2), ...Array.from({ length: Math.floor(h / 9) }, (_, i) => line(`M${x - 6} ${y - 6 - i * 9} L${x + 6} ${y - 6 - i * 9}`, C.brown, 1.8))); }
