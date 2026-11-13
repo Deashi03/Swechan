@@ -112,22 +112,27 @@ export const CONSCIOUSNESS_MOTIFS: Record<string, Svg> = {
   'medv.upplevelse': all(bg('#fde3c8'), circle(84, 66, 18, '#f59f5a', null), rect(4, 72, 112, 40, SEA, 0, null), line('M70 80 L98 80 M76 88 L92 88', '#fde3c8', 2),
     fig(36, C.orange, 'laugh', { h: 0.9, hairStyle: 'long' }), reach(36, 0.9, -1, 14, 34), reach(36, 0.9, 1, 58, 34), core(36, 0.9, C.red),
     sparkleS(18, 30, 4), sparkleS(56, 28, 5), sparkleS(36, 14, 3.5), ground),
-  /** förnimmelse: fingertips near a hot cup – tiny waves reach the fingers; a grey cold cup gives nothing. */
-  'medv.förnimmelse': all(bg(), at(46, 64, 2, palm(0, 0, 1)), path('M60 92 L84 92 L82 108 C82 111 62 111 62 108 Z', C.white, C.ink, 1.6), path('M84 96 C90 96 90 104 83 104', 'none', C.ink, 1.6),
-    line('M66 86 C64 80 70 78 66 72 M74 86 C72 80 78 78 74 72', C.red, 1.8), line('M58 70 C56 66 60 64 58 60 M52 66 C50 62 54 60 52 56', C.orange, 1.4), circle(46, 56, 14, 'rgba(239,138,60,0.18)', null),
-    greyed(path('M96 40 L112 40 L111 52 C111 54 97 54 97 52 Z', C.white, C.ink, 1.4)), ground),
+  /** förnimmelse: eyes closed, she only feels it – one snowflake melts on her fingertip, a faint glow spreads; no pain, no other sense in use. */
+  'medv.förnimmelse': all(bg('#eef4f8'), fig(36, C.green, 'calm', { h: 0.94, hairStyle: 'long' }), reach(36, 0.94, 1, 74, 52),
+    circle(76, 48, 12, 'rgba(140,199,232,0.25)', null), circle(76, 48, 7, 'none', '#8cc7e8', 1), at(78, 40, 0.8, line('M0 -6 L0 6 M-5 -3 L5 3 M-5 3 L5 -3', '#5aa7d6', 1.6)),
+    line('M76 34 C70 30 64 30 58 34', '#8cc7e8', 1, '2 2'), think(22, 20, 13, 9, at(22, 20, 0.6, line('M0 -6 L0 6 M-5 -3 L5 3 M-5 3 L5 -3', '#5aa7d6', 1.6)), 30, 34), ground),
   /** perception: light from the sun enters the eye, and the head turns it into its own little picture of a sun. */
   'medv.perception': all(bg(DAY), sunS(18, 22, 8), line('M28 28 L44 46 M24 34 L40 52', GOLD, 1.6, '3 3'), eye(50, 54, 0.9),
     head(84, 66, 1.4), arrow(60, 54, 74, 54, HL, 2), think(92, 22, 18, 13, all(sunS(92, 22, 4), gear(104, 30, 3.4, GREY)), 90, 40), ground),
-  /** inifrån: her pain glows inside her chest; the grey observer outside only sees the outline and wonders. */
-  'medv.inifrån': all(bg(), fig(36, C.green, 'frown', { h: 0.92, hairStyle: 'long' }), on(36, 0.92, circle(0, -24, 13, 'rgba(214,69,69,0.25)', null), star(0, -24, 7, C.red)),
-    greyed(fig(92, C.grey, 'smile', { h: 0.78 }), qm(92, 16, 16, GREY)), ground),
+  /** inifrån: seen through her own eyes – the dark edges of the eye sockets frame her own hands, one with a glowing sore spot only she can feel. */
+  'medv.inifrån': all(bg(DAY), tree(90, 70, 0.8), path('M4 70 L116 66 L116 112 L4 112 Z', GRASS, null),
+    at(40, 104, 1.6, path('M-8 10 L-8 -6 C-8 -12 0 -12 0 -6 L0 10 Z', C.skin, C.ink, 1.2)), at(78, 104, 1.6, path('M-8 10 L-8 -6 C-8 -12 0 -12 0 -6 L0 10 Z', C.skin, C.ink, 1.2)),
+    circle(73, 86, 9, 'rgba(214,69,69,0.3)', null), star(73, 86, 5, C.red),
+    path('M4 4 L116 4 L116 112 L104 112 C112 80 112 30 84 18 C70 12 50 12 36 18 C8 30 8 80 16 112 L4 112 Z', '#2b2a33', null), path('M56 112 L60 92 L64 112 Z', C.skin2, null)),
   /** inre värld: inside the head a whole little landscape – sun, tree, heart and stars; a grey head beside it is empty. */
   'medv.inre-värld': all(bg('#efe9f6'), head(56, 62, 2.1), ellipse(52, 46, 26, 22, '#dff1fb', null), sunS(40, 36, 4), tree(60, 64, 0.6), heart(44, 56, 0.5), star(68, 34, 3.4, C.yellow), star(58, 28, 2.4, C.yellow), path('M30 62 C40 56 50 62 74 58', 'none', GRASS, 2),
     greyed(head(102, 96, 0.55)), ground),
-  /** medvetenhet: awake, her attention reaches out in rings to the world (bird, tree); the grey sleeper notices nothing. */
-  'medv.medvetenhet': all(bg(DAY), fig(40, '#3f6fb5', 'smile', { h: 0.92 }), on(40, 0.92, circle(0, -56, 22, 'none', GOLD, 1.6), circle(0, -56, 34, 'none', GOLD, 1.2), circle(0, -56, 46, 'none', GOLD, 0.8)),
-    tree(80, 112, 0.8), path('M86 26 q4 -4 8 0 q4 -4 8 0', 'none', C.ink, 1.6), greyed(fig(106, C.grey, 'sleepy', { h: 0.5 })), ground),
+  /** medvetenhet: degrees of awareness – from the dark stone over the plant, the fish and the dog to the human, the glow grows step by step. */
+  'medv.medvetenhet': all(bg(), ...[0, 1, 2, 3, 4].map((i) => rect(8 + i * 22, 100 - i * 10, 22, 12 + i * 10, C.grey2, 1, C.ink, 1)),
+    stoneR(19, 94, 0.6, GREY), at(41, 84, 0.7, line('M0 6 L0 -6', OK, 2), ellipse(-4, -4, 4, 2.4, GRASS, C.ink, 0.8), ellipse(4, -6, 4, 2.4, GRASS, C.ink, 0.8)),
+    at(63, 70, 0.8, path('M-8 0 C-4 -6 6 -6 8 0 C6 6 -4 6 -8 0 Z M8 0 L13 -4 L13 4 Z', SEA, C.ink, 1), circle(-3, -1, 1, C.ink, null)), circle(63, 68, 10, 'rgba(242,193,78,0.15)', null),
+    dog(85, 70, 0.55), circle(85, 58, 12, 'rgba(242,193,78,0.25)', null), at(-2, -46, 1, fig(109, '#3f6fb5', 'smile', { h: 0.42 })), circle(107, 30, 15, 'rgba(242,193,78,0.4)', null), rays(107, 30, 15, 20, 10, GOLD, 1.3),
+    arrow(14, 30, 70, 14, HL, 2)),
   /** självmedvetenhet: a child looks in the mirror and thinks of herself – she knows the picture is her. */
   'medv.självmedvetenhet': all(bg(), rect(70, 30, 34, 70, WOOD, 4, C.ink, 1.6), rect(74, 34, 26, 62, '#dff1fb', 2, null), at(87, 0, 1, g('scale(-1 1)', fig(0, C.orange, 'smile', { h: 0.62, hairStyle: 'long' }))),
     fig(40, C.orange, 'laugh', { h: 0.62, hairStyle: 'long' }), think(26, 26, 18, 13, all(circle(26, 24, 6, C.skin, C.ink, 1), path('M20 22 C20 14 32 14 32 22', C.hair, null), rect(22, 30, 8, 4, C.orange, 1, null)), 38, 54), ground),
@@ -178,19 +183,21 @@ export const CONSCIOUSNESS_MOTIFS: Record<string, Svg> = {
   /** personlig identitet: the child in the old photo and the grown woman are joined by one golden thread and the same glowing core. */
   'medv.personlig-identitet': all(bg(), sepia(frame(10, 22, 34, 44, at(0, -46, 1, fig(27, C.orange, 'smile', { h: 0.42, hairStyle: 'long' })))), at(0, -46, 1, core(27, 0.42)),
     fig(84, C.orange, 'smile', { h: 0.94, hairStyle: 'long' }), core(84, 0.94), line('M30 54 C50 40 64 70 84 68', GOLD, 2.4, '4 3'), ground),
-  /** jag: in the middle of a grey crowd, one figure with a glowing core – "I myself". */
-  'medv.jag': all(bg(), greyed(fig(16, C.grey, 'smile', { h: 0.7 }), fig(104, C.grey, 'smile', { h: 0.7 }), fig(34, C.grey, 'smile', { h: 0.56 }), fig(86, C.grey, 'smile', { h: 0.56 })),
-    fig(60, '#3f6fb5', 'smile', { h: 0.96 }), on(60, 0.96, circle(0, -24, 18, GLOW, null), circle(0, -24, 7, GOLD, C.ink, 1.2)), rays(60, 15, 15, 20, 10, GOLD, 1.4), ground),
+  /** jag: hand on her own chest, she says "me" – the speech bubble holds her own little picture, and her core glows; grey others around. */
+  'medv.jag': all(bg(), greyed(fig(14, C.grey, 'smile', { h: 0.66 }), fig(106, C.grey, 'smile', { h: 0.66 })),
+    fig(54, '#3f6fb5', 'smile', { h: 0.96, hairStyle: 'long' }), on(54, 0.96, circle(0, -24, 18, GLOW, null), circle(0, -24, 7, GOLD, C.ink, 1.2)), reach(54, 0.96, -1, 50, 76), at(52, 74, 1, palm(0, 0, 0.8)),
+    rect(70, 8, 30, 30, C.white, 8, C.ink, 1.6), path('M74 36 L70 44 L80 37 Z', C.white, C.ink, 1.2), line('M74 37 L80 37', C.white, 2.4), at(30.5, -71, 1, fig(54, '#3f6fb5', 'smile', { h: 0.28, hairStyle: 'long' })), circle(85, 30, 2, GOLD, null), ground),
   /** identisk: two exactly alike twins with an equals sign; a grey pair that differs. */
   'medv.identisk': all(bg(), fig(26, C.green, 'smile', { h: 0.8 }), fig(70, C.green, 'smile', { h: 0.8 }), rect(42, 56, 12, 3, HL, 1, null), rect(42, 62, 12, 3, HL, 1, null),
     greyed(fig(96, C.grey, 'smile', { h: 0.46 }), fig(110, C.grey, 'smile', { h: 0.34, hairStyle: 'long' })), ground),
   /** psykologisk: inside the head – feelings, thoughts and memories; a grey bone outside stands for the body. */
   'medv.psykologisk': all(bg('#efe9f6'), head(54, 62, 2), heart(40, 56, 0.6), think(60, 38, 9, 7, gear(60, 38, 3.4, GOLD), 50, 50), sepia(frame(52, 54, 14, 11, house(59, 65, 0.32))),
     line('M42 60 L56 46 M44 60 L58 62', MIND, 1.4, '2 2'), greyed(at(98, 98, 1, rect(-10, -2, 20, 4, C.white, 2, C.ink, 1), circle(-10, -3, 3, C.white, C.ink, 1), circle(-10, 3, 3, C.white, C.ink, 1), circle(10, -3, 3, C.white, C.ink, 1), circle(10, 3, 3, C.white, C.ink, 1))), ground),
-  /** känna igen sig: she reads a book and sees a girl just like herself on the page – and smiles. */
-  'medv.känna-igen-sig': all(bg(), fig(30, C.orange, 'laugh', { h: 0.9, hairStyle: 'long' }), reach(30, 0.9, 1, 64, 68),
-    at(80, 60, 1, path('M0 22 C-10 18 -22 18 -28 22 L-28 -16 C-22 -20 -10 -20 0 -16 Z', '#fbf5e4', C.ink, 1.2), path('M0 22 C10 18 22 18 28 22 L28 -16 C22 -20 10 -20 0 -16 Z', '#fbf5e4', C.ink, 1.2)),
-    at(-18, -10, 1, fig(112, C.orange, 'smile', { h: 0.38, hairStyle: 'long' })), line('M64 50 L74 50 M64 56 L74 56 M64 62 L72 62', '#9a8f7a', 1), sparkleS(58, 30, 4), sparkleS(104, 30, 3.4), ground),
+  /** känna igen sig: in the book she sees a girl exactly like herself, with the same cat – a dashed line joins them, her palm on her own chest. */
+  'medv.känna-igen-sig': all(bg(), fig(26, C.orange, 'laugh', { h: 0.92, hairStyle: 'long' }), cat(18, 112, 0.5), reach(26, 0.92, -1, 24, 62), at(24, 62, 1, palm(0, 0, 0.8)),
+    at(82, 62, 1.1, path('M0 26 C-10 22 -24 22 -30 26 L-30 -22 C-24 -26 -10 -26 0 -22 Z', '#fbf5e4', C.ink, 1.2), path('M0 26 C10 22 24 22 30 26 L30 -22 C24 -26 10 -26 0 -22 Z', '#fbf5e4', C.ink, 1.2)),
+    at(-26, -24, 1, fig(108, C.orange, 'laugh', { h: 0.36, hairStyle: 'long' })), cat(96, 86, 0.22), line('M92 54 L102 54 M92 60 L102 60 M92 66 L100 66', '#9a8f7a', 1),
+    line('M40 40 C52 28 70 30 80 44', HL, 1.6, '3 3'), T(60, 28, '=', 14, HL), ground),
 
   // ── 2244 Fri vilja ──
   /** fri vilja: at a crossroads with three open paths, she chooses freely; the broken chain lies at her feet. */
@@ -216,15 +223,16 @@ export const CONSCIOUSNESS_MOTIFS: Record<string, Svg> = {
     fig(26, C.red, 'laugh', { h: 0.8 }), reach(26, 0.8, 1, 50, 64), ellipse(84, 78, 22, 6, 'rgba(90,167,214,0.4)', SEA, 1.4), line('M90 76 L90 50 M90 50 C82 44 78 48 74 50 M90 50 C98 44 102 48 106 50 M90 50 C86 42 84 40 80 40', OK, 1.6, '3 3'), qm(108, 66, 14, HL), ground),
 
   // ── 2245 Avsikt och handling ──
-  /** handling: she acts – planting a tree with a spade (deliberate doing). */
-  'medv.handling': all(bg(DAY), fig(40, C.green, 'smile', { h: 0.92, hairStyle: 'long' }), reach(40, 0.92, 1, 66, 72), line('M66 66 L76 106', WOOD, 3), path('M72 104 L82 102 L84 110 L74 112 Z', METAL, C.ink, 1.2),
-    tree(98, 108, 0.6), path('M84 112 C90 106 106 106 112 112 Z', '#8a5a34', null), arrow(52, 28, 76, 28, HL, 2.4), ground),
+  /** handling: one whole act from idea to deed – the lit bulb in the head, the hand that plants, and the tree that now stands there. */
+  'medv.handling': all(bg(), bulb(20, 22, 1), arrow(32, 22, 46, 22, HL, 2.2), at(60, 22, 1.4, palm(0, 0, 1)), arrow(72, 22, 86, 22, HL, 2.2), tree(100, 34, 0.7),
+    rect(8, 50, 104, 2, C.grey2, 1, null), fig(34, C.green, 'smile', { h: 0.52, hairStyle: 'long' }), reach(34, 0.52, 1, 52, 94), line('M52 88 L56 108', WOOD, 2.4),
+    tree(80, 110, 0.55), path('M68 112 C74 106 88 106 94 112 Z', '#8a5a34', null), check(104, 70, 0.8), ground),
   /** agera: the cup falls from the table – he jumps and catches it at once. */
   'medv.agera': all(bg(), rect(70, 70, 40, 5, C.tan, 1, C.ink, 1.4), line('M76 75 L76 112 M104 75 L104 112', C.brown, 3),
     fig(34, '#3f6fb5', 'shock', { h: 0.86 }), reach(34, 0.86, 1, 62, 92), path('M56 86 L68 86 L67 96 C67 98 57 98 57 96 Z', C.white, C.ink, 1.4), speed(8, 54, 3, 12), line('M66 66 C64 74 62 80 62 84', GREY, 1.2, '2 2'), T(80, 52, '!', 18, HL), ground),
-  /** motiv: he gives flowers – and the thought behind it shows the reason: a heart. */
-  'medv.motiv': all(bg(), fig(34, '#3f6fb5', 'blush', { h: 0.9 }), reach(34, 0.9, 1, 62, 70), at(68, 62, 1, line('M0 8 L-4 -6 M0 8 L2 -8 M0 8 L6 -4', OK, 1.4), circle(-4, -8, 3.4, C.red, C.ink, 0.8), circle(2, -10, 3.4, C.yellow, C.ink, 0.8), circle(6, -6, 3.4, C.pink, C.ink, 0.8)),
-    think(30, 18, 14, 10, heart(30, 20, 0.6), 34, 34), fig(94, C.orange, 'laugh', { h: 0.86, hairStyle: 'long' }), ground),
+  /** motiv: a big magnifying glass looks behind the act – inside the man who gives the flowers it shows the hidden reason, a heart. */
+  'medv.motiv': all(bg(), fig(30, '#3f6fb5', 'smile', { h: 0.92 }), reach(30, 0.92, 1, 56, 70), at(62, 62, 1, line('M0 8 L-4 -6 M0 8 L2 -8 M0 8 L6 -4', OK, 1.4), circle(-4, -8, 3.4, C.red, C.ink, 0.8), circle(2, -10, 3.4, C.yellow, C.ink, 0.8), circle(6, -6, 3.4, C.pink, C.ink, 0.8)),
+    circle(30, 72, 14, 'rgba(200,230,250,0.65)', C.ink, 2.4), line('M40 82 L58 100', C.brown, 5), heart(30, 74, 0.7), qm(92, 30, 26, HL), ground),
   /** med flit: with a sly look she lets go of the glass on purpose, watching it fall. */
   'medv.med-flit': all(bg(), fig(40, C.purple, 'angry', { h: 0.94 }), reach(40, 0.94, 1, 70, 48), line('M70 48 L74 44', C.ink, 0.8),
     path('M72 62 L82 62 L81 72 C81 74 73 74 73 72 Z', 'rgba(220,240,252,0.7)', C.ink, 1.3), arrow(77, 78, 77, 96, HL, 2), line('M64 106 L70 102 L74 108 M80 104 L86 100 L90 108', SEA, 1.4), eye(56, 20, 0.6), line('M62 24 L74 56', C.ink, 0.8, '2 2'), ground),
@@ -246,9 +254,11 @@ export const CONSCIOUSNESS_MOTIFS: Record<string, Svg> = {
   /** det förflutna: behind the walker the road fades into old, sepia scenes; the clock hand goes backwards. */
   'medv.det-förflutna': all(bg(), sepia(path('M4 70 L60 92 L60 112 L4 112 Z', '#e9dcc0', null), house(18, 76, 0.7), tree(40, 86, 0.5), fig(30, C.yellow, 'smile', { h: 0.3 })),
     path('M60 92 L116 82 L116 112 L60 112 Z', '#e9dcc0', null), fig(84, '#3f6fb5', 'calm', { h: 0.8 }), clock(30, 30, 14, 9, 45), path('M14 18 A18 18 0 0 1 30 12', 'none', HL, 2), path('M14 18 L13 11 L19 14 Z', HL, HL, 1)),
-  /** tillbakablick: an old woman in an armchair looks back in her thoughts at herself as a girl. */
-  'medv.tillbakablick': all(bg(), rect(10, 70, 46, 42, '#b06a4a', 6, C.ink, 1.6), fig(34, C.lilac, 'calm', { h: 0.82, hair: '#d8d8d8', hairStyle: 'long' }),
-    think(84, 34, 28, 24, at(0, -64, 1, sepia(fig(84, C.orange, 'laugh', { h: 0.38, hairStyle: 'long' }))), 42, 40), ground),
+  /** tillbakablick: a film strip – the present scene in colour, and a curved arrow back to a sepia frame from long ago. */
+  'medv.tillbakablick': all(bg(), rect(6, 40, 108, 50, '#2b2a33', 2, null), ...Array.from({ length: 13 }, (_, i) => all(rect(9 + i * 8, 43, 4, 4, C.white, 1, null), rect(9 + i * 8, 83, 4, 4, C.white, 1, null))),
+    sepia(rect(12, 50, 30, 30, '#e9dcc0', 1, null), house(27, 76, 0.7), at(-23, -44, 1, fig(50, C.orange, 'laugh', { h: 0.28, hairStyle: 'long' }))),
+    rect(46, 50, 30, 30, '#cfe3ef', 1, null), rect(80, 50, 30, 30, '#cfe3ef', 1, null), at(25, -36, 1, fig(70, C.lilac, 'calm', { h: 0.36, hair: '#d8d8d8', hairStyle: 'long' })), at(30, -36, 1, cbook(65, 108, 0.4)),
+    path('M92 36 C86 12 36 10 28 34', 'none', HL, 2.6), path('M28 34 L24 26 L33 28 Z', HL, HL, 1), ground),
   /** ögonblick: a splash frozen in mid-air with a stopwatch showing one tick. */
   'medv.ögonblick': all(bg(), at(40, 30, 1, circle(0, 4, 18, C.white, C.ink, 1.6), rect(-3, -18, 6, 5, C.ink, 1, null), line('M0 4 L0 -8', HL, 2.2), circle(0, 4, 1.6, C.ink, null)), rays(40, 34, 22, 27, 10, GOLD, 1.4),
     ellipse(80, 100, 26, 5, SEA, C.ink, 1.2), drop(80, 74, 1.4), ...[[66, 86], [94, 86], [72, 78], [88, 78]].map(([x, y]) => drop(x!, y!, 0.6)), ground),
@@ -274,10 +284,11 @@ export const CONSCIOUSNESS_MOTIFS: Record<string, Svg> = {
     path('M60 86 L104 86 L100 82 L64 82 Z', C.dark, C.ink, 1.2), rect(66, 48, 36, 34, C.dark, 3, C.ink, 1.4), rect(69, 51, 30, 28, SCREEN, 1, null), code(71, 54, 4, 26), ground),
   /** beräkning: numbers go into the computer chip and a result comes out. */
   'medv.beräkning': all(bg(), T(26, 36, '2', 14, C.navy), T(26, 60, '3', 14, C.navy), T(26, 84, '5', 14, C.navy), arrow(36, 54, 46, 54, HL, 2), chip(64, 54, 1.2), arrow(84, 54, 94, 54, HL, 2), T(104, 60, '30', 14, OK), gear(64, 92, 6, GOLD), ground),
-  /** artificiell: a flower built from metal parts with a plug; the grey real flower beside it. */
-  'medv.artificiell': all(bg(), rect(28, 92, 30, 20, C.dark, 2, C.ink, 1.4), line('M43 92 L43 44', METAL, 3), rect(36, 60, 8, 4, METAL, 1, C.ink, 1),
-    ...[0, 72, 144, 216, 288].map((a) => g(`translate(43 38) rotate(${a})`, path('M0 0 L6 -12 L-6 -12 Z', '#7fa8d6', C.ink, 1))), circle(43, 38, 5, METAL, C.ink, 1.2), path('M58 104 C70 104 70 96 80 96 M80 92 L86 92 L86 100 L80 100 Z', 'none', C.ink, 1.4),
-    greyed(line('M100 112 L100 70', OK, 2.4), circle(100, 64, 7, C.pink, C.ink, 1), path('M100 90 C94 84 90 86 92 90', OK, C.ink, 1)), ground),
+  /** artificiell: a factory makes a plastic tree with bolts and a plug; the grey real tree grows from the ground in the sun. */
+  'medv.artificiell': all(bg(), at(22, 112, 1, rect(-16, -30, 32, 30, '#9aa3ad', 1, C.ink, 1.4), path('M-16 -30 L-8 -38 L0 -30 L8 -38 L16 -30', '#9aa3ad', C.ink, 1.4), rect(6, -52, 6, 18, '#6b6f76', 1, C.ink, 1), gear(-4, -14, 6, GOLD)), cloud(20, 52, 0.5, C.grey2),
+    arrow(40, 90, 52, 90, HL, 2.2), rect(56, 96, 24, 16, C.dark, 2, C.ink, 1.4), rect(66, 60, 4, 36, METAL, 1, C.ink, 1), ...[[60, 50], [76, 50], [68, 40]].map(([x, y]) => rect(x! - 7, y! - 7, 14, 14, '#58c47a', 3, C.ink, 1.2)),
+    circle(60, 50, 1.4, METAL, C.ink, 0.6), circle(76, 50, 1.4, METAL, C.ink, 0.6), circle(68, 40, 1.4, METAL, C.ink, 0.6), path('M80 106 C88 106 88 100 94 100 M94 97 L99 97 L99 103 L94 103 Z', 'none', C.ink, 1.3),
+    greyed(tree(104, 108, 0.65), circle(108, 16, 5, C.yellow, C.ink, 1)), ground),
   /** intelligent: she solves the puzzle at once – a bright bulb; the grey person is still puzzled. */
   'medv.intelligent': all(bg(), fig(36, C.orange, 'laugh', { h: 0.9, hairStyle: 'long' }), bulb(36, 14, 1.1), reach(36, 0.9, 1, 60, 80),
     at(70, 84, 1, rect(-12, -10, 12, 10, C.red, 1, C.ink, 1), rect(0, -10, 12, 10, SEA, 1, C.ink, 1), rect(-12, 0, 12, 10, GOLD, 1, C.ink, 1), rect(0, 0, 12, 10, OK, 1, C.ink, 1)), check(90, 64, 0.7),
@@ -296,9 +307,10 @@ export const CONSCIOUSNESS_MOTIFS: Record<string, Svg> = {
   /** simulera: the storm rages only on the screen – the woman in front of it stays dry. */
   'medv.simulera': all(bg(), screen(40, 14, 70, 50, all(cloud(64, 30, 0.9, '#5a6070'), cloud(88, 26, 0.8, '#5a6070'), line('M54 42 l-3 8 M64 44 l-3 8 M74 42 l-3 8 M84 44 l-3 8 M94 42 l-3 8', SEA, 1.6), path('M86 34 L82 44 L86 44 L83 52', 'none', C.yellow, 1.6))),
     fig(22, C.orange, 'smile', { h: 0.82, hairStyle: 'long' }), sunS(20, 18, 5), ground),
-  /** efterlikna: a robot face copies the smile of the woman next to it. */
-  'medv.efterlikna': all(bg(), fig(28, C.orange, 'laugh', { h: 0.9, hairStyle: 'long' }), robot(88, 112, 1.1), path('M82 59 Q88 64 94 59', 'none', '#7fe3ff', 1.6),
-    arrow(46, 30, 70, 30, HL, 2), arrow(70, 38, 46, 38, GREY, 1.4), ground),
+  /** efterlikna: the child copies the teacher exactly – same pose, arms up on the same side; a dashed line and an arrow from original to copy. */
+  'medv.efterlikna': all(bg(), fig(32, C.purple, 'smile', { h: 0.94, hairStyle: 'long' }), reach(32, 0.94, -1, 12, 30), reach(32, 0.94, 1, 52, 72),
+    fig(88, C.yellow, 'laugh', { h: 0.6 }), reach(88, 0.6, -1, 74, 50), reach(88, 0.6, 1, 100, 86),
+    arrow(40, 16, 72, 40, HL, 2), line('M12 30 L74 50', GREY, 1, '2 3'), ground),
   /** turingtest: a man chats on a screen; behind the wall are a human and a robot – which one answers? */
   'medv.turingtest': all(bg(), fig(20, '#3f6fb5', 'calm', { h: 0.8 }), qm(20, 18, 16, HL), screen(36, 50, 22, 18, chatLines(39, 54, 16, 3)), rect(66, 20, 6, 92, WOOD, 1, C.ink, 1.4),
     fig(88, C.green, 'smile', { h: 0.56 }), robot(106, 112, 0.66), line('M58 58 L66 58', C.ink, 1, '2 2'), ground),
