@@ -88,7 +88,6 @@ const bust = (x: number, y: number, top: string, s = 1, long = false) => at(x, y
 const scribble = (x: number, y: number, w: number, col: string = C.grey) => line(`M${x - w / 2} ${y} q${f1(w / 8)} -3 ${f1(w / 4)} 0 t${f1(w / 4)} 0 t${f1(w / 4)} 0 t${f1(w / 4)} 0`, col, 1.6);
 /** A word: a small tag with a wavy line (no letters). */
 const word = (x: number, y: number, col: string = HL, w = 22) => all(rect(x - w / 2, y - 6, w, 12, C.white, 6, col, 1.8), scribble(x, y, w - 8, col));
-const key = (x: number, y: number, s = 1, col: string = GOLD, rot = 0) => g(`translate(${x} ${y}) rotate(${rot}) scale(${s})`, circle(-8, 0, 5, col, C.ink, 1.2), circle(-8, 0, 1.8, C.white, C.ink, 0.8), rect(-3, -1.6, 14, 3.2, col, 1, C.ink, 1), rect(7, 1.6, 2.4, 3.4, col, 0.5, C.ink, 0.8));
 const flask = (x: number, y: number, s = 1, liquid: string = '#7fd0b0') => at(x, y, s, path('M-3 -14 L3 -14 L3 -5 L10 8 C11 11 9 12 7 12 L-7 12 C-9 12 -11 11 -10 8 L-3 -5 Z', 'rgba(220,240,252,0.7)', C.ink, 1.2), path('M-6 3 L6 3 L9.4 9 C10 11 9 11.4 7 11.4 L-7 11.4 C-9 11.4 -10 11 -9.4 9 Z', liquid, null), line('M-4 -14 L4 -14', C.ink, 1.6));
 const step = (x: number, y: number, w: number, h: number, col: string) => rect(x, y, w, h, col, 1, C.ink, 1.2);
 const blueprint = (x: number, y: number, w: number, h: number, inner: Svg = '') => all(rect(x, y, w, h, PRINT, 2, C.ink, 1.4), ...Array.from({ length: Math.floor(w / 10) }, (_, i) => line(`M${x + 10 * (i + 1)} ${y + 1} L${x + 10 * (i + 1)} ${y + h - 1}`, 'rgba(255,255,255,0.18)', 0.8)), ...Array.from({ length: Math.floor(h / 10) }, (_, i) => line(`M${x + 1} ${y + 10 * (i + 1)} L${x + w - 1} ${y + 10 * (i + 1)}`, 'rgba(255,255,255,0.18)', 0.8)), inner);
@@ -110,9 +109,10 @@ export const PHILOSOPHY_BASICS_MOTIFS: Record<string, Svg> = {
   /** Many different chairs, one shared idea of a chair in the thought cloud. */
   'filg.begrepp': all(bg(), think(60, 30, 30, 20, 60, 60, all(chair(60, 44, 1, HL, 1.6), sparkle(84, 18, 4, GOLD), sparkle(36, 20, 3, GOLD))),
     line('M60 58 L22 84 M60 58 L60 84 M60 58 L98 84', HL, 1.4, '3 3'), chair(22, 110, 0.9, WOOD), chair(60, 110, 0.9, '#3f6fb5'), chair(98, 110, 0.9, GREEN), ground),
-  /** A term: one word tag in a field (the lab) has exactly one meaning; an everyday word (grey) many. */
-  'filg.term': all(bg(), rect(8, 10, 66, 96, '#eaf4ef', 4, C.ink, 1.2), word(40, 26, HL, 28), arrow(40, 34, 40, 56, HL, 2.4), flask(40, 78, 1.4, '#7fd0b0'), check(64, 96, 0.8),
-    greyed(word(96, 26, C.grey, 22), line('M96 33 L84 54 M96 33 L96 54 M96 33 L108 54', C.grey, 1.4), dot(84, 62, 4, C.grey2), sq(96, 62, 4, C.grey2), tri(108, 63, 5, C.grey2))),
+  /** A term: a word that belongs to a field – the expert in a lab coat knows it from her thick special book; a layperson (grey) does not. */
+  'filg.term': all(bg(), at(28, 96, 1, rect(-22, -14, 44, 30, BLUE, 2, C.ink, 1.4), rect(-20, -12, 4, 26, '#2f5590', 0, null), flask(4, 1, 0.9, '#7fd0b0')),
+    rect(36, 62, 8, 22, HL, 1, C.ink, 1), word(40, 56, HL, 26), fig(66, C.white, 'smile', { h: 0.72, hairStyle: 'long' }), on(66, 0.72, line('M-6 -40 C-10 -24 -4 -18 0 -22', C.dark, 2.4), circle(0, -22, 3, C.silver, C.ink, 1)),
+    say(40, 20, 28, 20, 60, 46, word(40, 20, HL, 18)), check(68, 14, 0.6), greyed(fig(102, C.grey, 'frown', { h: 0.56 })), qm(102, 48, 14, C.grey), ground),
   /** The inner meaning: a word opens like a box and the meaning shines inside. */
   'filg.innebörd': all(bg(), circle(60, 70, 30, 'rgba(242,193,78,0.25)', null), path('M34 68 L86 68 L82 104 L38 104 Z', '#f3e6c4', C.ink, 1.5),
     path('M34 68 L24 48 L58 44 L60 68 Z', '#f8eed6', C.ink, 1.3), path('M86 68 L96 48 L62 44 L60 68 Z', '#f8eed6', C.ink, 1.3), scribble(42, 52, 16, C.grey), scribble(78, 52, 16, C.grey),
@@ -132,9 +132,11 @@ export const PHILOSOPHY_BASICS_MOTIFS: Record<string, Svg> = {
     ...[[24, SEA], [60, C.yellow], [96, C.red]].map(([x, col], i) => all(path(`M${+x! - 16} 80 L${+x! + 16} 80 L${+x! + 13} 108 L${+x! - 13} 108 Z`, '#e8dcc6', C.ink, 1.4),
       i === 0 ? all(dot(+x! - 6, 76, 5, col as string), dot(+x! + 5, 74, 5, col as string)) : i === 1 ? all(sq(+x! - 6, 75, 5, col as string), sq(+x! + 6, 74, 5, col as string)) : all(tri(+x! - 6, 75, 6, col as string), tri(+x! + 6, 74, 6, col as string)),
       arrow(60, 40, +x!, 62, HL, 2.2)))),
-  /** A necessary condition: the door has two locks; the first key is needed but the door stays shut. */
-  'filg.nödvändigt-villkor': all(bg(), rect(36, 14, 48, 96, WOOD, 2, C.ink, 1.6), rect(42, 20, 36, 40, '#b98450', 1, C.ink, 1), rect(42, 66, 36, 38, '#b98450', 1, C.ink, 1),
-    circle(72, 52, 4, C.dark, C.ink, 1), key(90, 52, 1.1, HL, 180), ring(72, 52, 9), circle(72, 76, 4, C.dark, C.ink, 1), qm(98, 78, 16, C.grey), ground),
+  /** A necessary condition: without flour no cake (grey, crossed); with flour – but flour alone is not enough, something more (?) is needed. */
+  'filg.nödvändigt-villkor': all(bg(), at(22, 38, 1, path('M-12 -14 L12 -14 L14 14 L-14 14 Z', C.white, C.ink, 1.4), path('M-12 -14 L-8 -20 L8 -20 L12 -14', C.white, C.ink, 1.2), path('M-6 4 C-2 -6 2 -6 6 4 Z', '#e6d3b3', C.ink, 0.8)), ring(22, 38, 20),
+    sign(46, 38, '+', 16, C.ink), rect(54, 26, 22, 24, 'none', 3, C.grey, 1.6), qm(65, 38, 14, C.grey), arrow(80, 38, 90, 38, HL, 2.4),
+    at(104, 44, 1, rect(-11, -10, 22, 12, '#f1d0a8', 2, C.ink, 1.2), path('M-11 -10 C-6 -16 6 -16 11 -10 Z', C.pink, C.ink, 1.1), circle(0, -16, 2.2, C.red, C.ink, 0.8)), check(104, 20, 0.7),
+    greyed(rect(10, 70, 24, 28, 'none', 3, C.grey, 1.6), sign(46, 84, '+', 14, C.grey), ellipse(64, 86, 7, 9, '#fbf4e6', C.ink, 1.2), arrow(80, 84, 90, 84, C.grey, 2), rect(94, 80, 20, 12, C.grey2, 2, C.ink, 1)), cross(104, 72, 0.7), ground),
   /** A sufficient condition: rain alone makes the street wet; a hose (grey) could do it too. */
   'filg.tillräckligt-villkor': all(bg(DAY), at(46, 26, 1.8, cloud(0, 0, 1, '#9aa3ad')), line('M30 42 l-4 10 M42 44 l-4 10 M54 42 l-4 10 M66 44 l-4 10', SEA, 2.4), arrow(46, 62, 46, 80, HL, 2.6),
     rect(4, 90, 112, 22, '#8d949c', 2, null), ellipse(40, 100, 18, 4, '#5aa7d6', null), ellipse(76, 104, 12, 3, '#5aa7d6', null), check(80, 76, 1), greyed(path('M100 60 C96 70 104 80 96 92', 'none', C.grey, 3), rect(96, 54, 10, 8, C.grey, 2, null))),
@@ -152,8 +154,11 @@ export const PHILOSOPHY_BASICS_MOTIFS: Record<string, Svg> = {
     line('M60 14 L60 98', HL, 3.6), arrow(55, 104, 38, 104, HL, 2.2), arrow(65, 104, 82, 104, HL, 2.2)),
 
   // ── 2202 Påstående och slutsats ──
-  /** A statement: a robed speaker says a card (the sun shines); grey: a question, which states nothing. */
-  'filg.utsaga': all(bg(), sage(30, 0.86, BLUE, 'smile'), say(80, 34, 50, 34, 44, 50, card(80, 34, 34, 22, sunI(80, 34, 5))), greyed(say(88, 84, 30, 24, 72, 98, qm(88, 84, 14, C.grey))), ground),
+  /** A statement as testimony: the witness tells what she saw and her words are written down on the record. */
+  'filg.utsaga': all(bg(), g('translate(0 -22)', fig(25, C.green, 'calm', { h: 0.6, hairStyle: 'long' })), rect(8, 76, 34, 36, WOOD, 2, C.ink, 1.4),
+    say(40, 22, 40, 28, 28, 44, all(at(32, 24, 0.7, rect(-8, -4, 16, 7, C.red, 2, C.ink, 1), circle(-4, 4, 2.4, C.dark, null), circle(4, 4, 2.4, C.dark, null)), tree(50, 32, 0.4))),
+    arrow(62, 30, 76, 46, HL, 2.4), rect(72, 48, 36, 46, C.white, 2, C.ink, 1.4), at(84, 60, 0.6, rect(-8, -4, 16, 7, C.red, 2, C.ink, 1), circle(-4, 4, 2.4, C.dark, null), circle(4, 4, 2.4, C.dark, null)), tree(98, 66, 0.35),
+    scribble(90, 76, 26, C.ink), scribble(90, 84, 26, C.ink), g('rotate(-30 104 96)', rect(102, 80, 4, 20, C.yellow, 1, C.ink, 1)), ground),
   /** A factual claim: "the tree is 10 m" can be measured – a tape beside the tree and a tick. */
   'filg.sakpåstående': all(bg(DAY), fig(20, C.orange, 'smile', { h: 0.66 }), say(52, 24, 40, 26, 30, 40, all(tree(46, 34, 0.48), sign(62, 24, '10', 9, C.ink))),
     tree(82, 112, 1.6), line('M108 112 L108 48', HL, 2.4), ...[56, 72, 88, 104].map((y) => line(`M104 ${y} L112 ${y}`, HL, 1.6)), check(104, 34, 0.9), ground),
@@ -174,9 +179,9 @@ export const PHILOSOPHY_BASICS_MOTIFS: Record<string, Svg> = {
   /** Overconfident: arms crossed, eyes shut, a big "!" – though the card he holds up is wrong. */
   'filg.tvärsäker': all(bg(), fig(44, C.purple, 'calm', { h: 0.92 }), crossArms(44, 0.92),
     say(86, 24, 30, 30, 58, 30, bang(86, 24, 22, HL)), card(92, 76, 30, 22, all(sunI(86, 76, 4), cross(100, 76, 0.6))), ground),
-  /** Follows from: a conclusion card grows out of the cards above it. */
-  'filg.följa-av': all(bg(), card(36, 24, 36, 24, dot(36, 24, 6, SEA)), card(84, 24, 36, 24, sq(84, 24, 6, C.yellow)), path('M36 38 C36 56 60 50 60 66 M84 38 C84 56 60 50 60 66', 'none', HL, 2.4), arrow(60, 60, 60 , 70, HL, 2.6),
-    card(60, 90, 56, 30, all(dot(48, 90, 6, SEA), sq(72, 90, 6, C.yellow)), '#fff7e8', HL), sparkle(96, 82, 4, GOLD)),
+  /** Follows from: when the first tile (rain) falls, the second (wet street) must fall too. */
+  'filg.följa-av': all(bg(), g('rotate(22 40 104)', rect(16, 30, 24, 74, C.white, 3, C.ink, 1.6), rainI(28, 56, 1.1)), g('rotate(8 92 104)', rect(68, 30, 24, 74, C.white, 3, HL, 2), ellipse(80, 66, 9, 3, SEA, null), line('M72 74 L88 74', '#8d949c', 3)),
+    line('M14 40 C16 26 26 18 38 18', HL, 2, '3 3'), line('M98 30 C104 34 108 42 108 50', HL, 2, '3 3'), arrow(102, 44, 108, 54, HL, 2), line('M10 104 L112 104', C.ink, 2), ground),
   /** Therefore: two cards, the sign ∴ and the conclusion below. */
   'filg.följaktligen': all(bg(), card(30, 22, 40, 22, dot(30, 22, 6, SEA)), card(90, 22, 40, 22, sq(90, 22, 6, C.yellow)), sign(60, 54, '∴', 30, HL),
     card(60, 92, 60, 28, all(dot(48, 92, 6, SEA), sq(72, 92, 6, C.yellow)), '#fff7e8', HL)),
@@ -197,10 +202,11 @@ export const PHILOSOPHY_BASICS_MOTIFS: Record<string, Svg> = {
   /** Induction: many single cases (sunrises) lead up to one general rule. */
   'filg.induktion': all(bg('#fff4e0'), ...[16, 38, 60, 82, 104].map((x) => all(line(`M${x - 9} 104 L${x + 9} 104`, C.ink, 1.4), path(`M${x - 7} 104 A7 7 0 0 1 ${x + 7} 104 Z`, C.yellow, C.ink, 1), arrow(x, 94, 60 + (x - 60) * 0.3, 60, HL, 1.8))),
     card(60, 34, 70, 34, all(...[40, 52, 64, 76].map((x) => path(`M${x - 5} 40 A5 5 0 0 1 ${x + 5} 40 Z`, C.yellow, C.ink, 0.8)), line('M32 40 L88 40', C.ink, 1), sign(86, 28, '…', 12, C.ink)), '#fff7e8', HL)),
-  /** An error in an argument: a bridge of cards with one broken plank – the walker is about to fall. */
-  'filg.argumentationsfel': all(bg(DAY), rect(4, 60, 18, 52, '#b79a6a', 2, C.ink, 1.2), rect(98, 60, 18, 52, '#b79a6a', 2, C.ink, 1.2),
-    ...[26, 40, 72, 86].map((x) => rect(x - 6, 58, 12, 6, C.white, 1, C.ink, 1.2)), path('M51 58 L57 58 L55 64 L51 64 Z M63 60 L68 58 L69 64 L62 66 Z', '#f3c0b0', C.red, 1.2), line('M52 70 L50 80 M66 72 L68 84', C.red, 1.4),
-    g('translate(-12 -54)', fig(52, C.green, 'shock', { h: 0.42 })), cross(60, 30, 0.9), rect(4, 104, 112, 8, '#5aa7d6', 0, null)),
+  /** An error in the argument: a chain of cards that looks fine, but the magnifier shows the broken step in the middle. */
+  'filg.argumentationsfel': all(bg(), card(18, 30, 24, 20, dot(18, 30, 5, SEA)), card(60, 30, 24, 20, sq(60, 30, 5, C.yellow)), card(102, 30, 24, 20, all(tri(102, 31, 6, C.green), cross(110, 22, 0.5))),
+    arrow(31, 30, 46, 30, C.ink, 2), line('M73 30 L79 26 L81 34 L88 30', C.red, 2.4), arrow(84, 30, 89, 30, C.red, 2),
+    circle(80, 72, 20, 'rgba(255,255,255,0.85)', C.dark, 3), line('M94 86 L108 102', C.dark, 6), line('M66 72 L74 64 L80 78 L86 68 L94 72', C.red, 3), bolt(80, 72, 0.5),
+    fig(30, C.purple, 'smile', { h: 0.62 }), ground),
   /** A straw man: one person hits a scarecrow, while the real opponent stands untouched with her own view. */
   'filg.halmgubbe': all(bg(), strawman(60, 74, 0.9), fig(22, C.red, 'angry', { h: 0.7 }), reach(22, 0.7, 1, 46, 62), bolt(48, 54, 0.6),
     greyed(fig(100, C.grey, 'frown', { h: 0.62 }), path('M90 22 L112 22 L112 38 L100 38 L96 44 L96 38 L90 38 Z', C.white, C.ink, 1.2), dot(101, 30, 4, C.grey2)), ground),
@@ -283,12 +289,15 @@ export const PHILOSOPHY_BASICS_MOTIFS: Record<string, Svg> = {
   /** What if …: in front of a closed door, she pictures it open onto a sunny world. */
   'filg.tänk-om': all(bg(), rect(14, 40, 30, 72, WOOD, 2, C.ink, 1.4), circle(38, 78, 2, GOLD, C.ink, 0.8), fig(62, C.denim, 'smile', { h: 0.62, hairStyle: 'long' }),
     think(88, 30, 26, 22, 66, 54, all(rect(72, 16, 14, 28, '#fff1b8', 1, C.ink, 1), path('M72 16 L66 20 L66 46 L72 44 Z', WOOD, C.ink, 1), sunI(98, 24, 4), qm(100, 40, 10, HL))), ground),
-  /** Unthinkable: in an old-time thought cloud a wall stops the mobile phone. */
-  'filg.otänkbar': all(bg('#efe6d2'), fig(28, '#8a6a4a', 'shock', { h: 0.8 }), path('M18 32 L38 32 L36 26 L20 26 Z', C.black, C.ink, 1), think(80, 40, 30, 28, 38, 46, all(...[0, 1, 2, 3].map((r) => all(...[0, 1, 2].map((c) => rect(66 + c * 10 - (r % 2) * 5, 26 + r * 7, 10, 7, '#c4542a', 0.5, C.ink, 0.6)))))),
-    at(102, 86, 1, rect(-6, -11, 12, 22, C.dark, 2, C.ink, 1.2), rect(-4.6, -8, 9.2, 15, '#bfe3f5', 1, null)), arrow(96, 74, 104, 64, HL, 1.8), cross(80, 12, 0.7), ground),
-  /** Counter-intuitive: we expect the heavy stone to land first (grey, dashed), but both fall side by side. */
-  'filg.kontraintuitiv': all(bg(DAY), fig(18, C.orange, 'shock', { h: 0.62 }), rect(98, 14, 18, 98, '#d8cfbd', 1, C.ink, 1.2),
-    greyed(stone(50, 92, 11, C.grey2), stone(74, 46, 6, C.grey2)), line('M50 30 L50 80 M74 30 L74 40', C.grey, 1.2, '3 3'), stone(50, 62, 11), stone(76, 62, 6), arrow(50, 74, 50, 86, HL, 2.6), arrow(76, 70, 76, 82, HL, 2.6), sign(63, 46, '=', 14, HL), ground),
+  /** Unthinkable: a man of old times can picture a candle (grey, tick), but a mobile phone does not even fit in his thoughts – it bounces off. */
+  'filg.otänkbar': all(bg('#efe6d2'), fig(26, '#8a6a4a', 'shock', { h: 0.8 }), path('M16 36 L36 36 L34 30 L18 30 Z', C.black, C.ink, 1),
+    think(74, 36, 30, 24, 36, 48, all(...[0, 1, 2].map((r) => all(...[0, 1, 2, 3].map((c) => rect(54 + c * 10 - (r % 2) * 5, 22 + r * 9, 10, 9, '#c4542a', 0.5, C.ink, 0.6)))), qm(74, 36, 18, C.white))),
+    at(108, 70, 1, rect(-6, -11, 12, 22, C.dark, 2, C.ink, 1.2), rect(-4.6, -8, 9.2, 15, '#bfe3f5', 1, null)), arrow(102, 58, 96, 50, HL, 2), arrow(96, 50, 104, 46, HL, 2), cross(108, 92, 0.7),
+    greyed(ellipse(66, 96, 12, 9, C.white, C.ink, 1.2), rect(64, 92, 4, 8, C.white, 1, C.ink, 0.8), circle(66, 90, 2, C.yellow, null)), check(84, 96, 0.6, C.grey), ground),
+  /** Counter-intuitive: she expected the heavy stone to land first (thought, crossed) – in reality both land at the same moment (tick) and she is amazed. */
+  'filg.kontraintuitiv': all(bg(DAY), fig(20, C.orange, 'shock', { h: 0.62 }), bang(36, 52, 14, HL),
+    think(36, 22, 30, 16, 22, 52, all(stone(26, 28, 6), stone(46, 18, 3.6), line('M14 34 L58 34', C.grey, 1.2))), cross(62, 12, 0.7),
+    stone(76, 102, 10), stone(100, 106, 6), line('M60 112 L114 112', C.ink, 2.4), line('M70 62 L70 72 M82 62 L82 72 M97 70 L97 78 M103 70 L103 78', HL, 1.6), sign(88, 56, '=', 16, HL), check(98, 34, 0.9), ground),
   /** In theory: on the blueprint the bridge spans the river perfectly – tick. */
   'filg.i-teorin': all(bg(), blueprint(10, 16, 100, 70, all(path('M20 70 L40 70 L40 50 M80 50 L80 70 L100 70', 'none', C.white, 1.6), path('M36 50 C50 30 70 30 84 50 Z', 'none', C.white, 1.6), line('M36 50 L84 50', C.white, 1.8), line('M40 74 C50 70 70 78 80 74', '#bfe3f5', 1.4), line('M26 30 L46 30 M26 28 L26 32 M46 28 L46 32', C.white, 1))),
     check(96, 30, 0.9), at(28, 100, 1, line('M-14 6 L14 -6', C.yellow, 4), line('M-14 6 L14 -6', C.ink, 0.6)), line('M66 98 L72 86 L78 98', C.dark, 1.6), circle(72, 86, 2, C.dark, null), ground),
@@ -298,9 +307,10 @@ export const PHILOSOPHY_BASICS_MOTIFS: Record<string, Svg> = {
     greyed(blueprint(84, 14, 30, 22, line('M88 28 L110 28', C.white, 1.2)))),
 
   // ── 2207 Filosofisk diskussion ──
-  /** Philosophical: a child under the stars asks the big question "why is there anything?". */
-  'filg.filosofisk': all(bg(NIGHT), ...[[14, 14], [34, 28], [100, 12], [108, 40], [16, 52], [70, 10]].map(([x, y]) => starDot(x!, y!, 1.6)), earth(90, 64, 14), moonI(24, 30, 7),
-    fig(42, C.orange, 'calm', { h: 0.62 }), say(66, 28, 32, 26, 48, 60, all(qm(58, 28, 14, HL), qm(74, 28, 14, HL))), rect(4, 108, 112, 4, '#3e4c7a', 0, null)),
+  /** Philosophical: the big kind of question – a glowing question card about the universe; an everyday question (when does the bus come?) is grey. */
+  'filg.filosofisk': all(bg(), circle(56, 46, 40, 'rgba(242,193,78,0.25)', null), rect(20, 12, 72, 64, NIGHT, 6, C.ink, 1.8), ...[[28, 20], [84, 22], [30, 66], [80, 68], [56, 18]].map(([x, y]) => starDot(x!, y!, 1.6)),
+    earth(42, 46, 12), moonI(72, 30, 5), qm(74, 52, 24, C.yellow), path('M40 76 L48 76 L44 84 Z', NIGHT, C.ink, 1.2),
+    greyed(rect(70, 86, 42, 22, C.white, 4, C.ink, 1.2), rect(76, 92, 16, 10, C.grey2, 2, C.ink, 1), circle(80, 104, 1.6, C.ink, null), circle(88, 104, 1.6, C.ink, null), qm(102, 97, 12, C.grey))),
   /** Wonder: wide eyes, hands raised, gazing up at a sky full of sparkles. */
   'filg.förundran': all(bg('#1f2d55'), ...[[16, 18, 5], [34, 34, 3], [54, 12, 6], [80, 26, 4], [100, 14, 5], [96, 46, 3], [24, 52, 3]].map(([x, y, r]) => sparkle(x!, y!, r!, '#f6e8a8')), circle(70, 22, 9, 'rgba(242,193,78,0.35)', null),
     fig(60, C.green, 'shock', { h: 0.72, hairStyle: 'long' }), reach(60, 0.72, -1, 40, 50), reach(60, 0.72, 1, 80, 50), rect(4, 108, 112, 4, '#3e4c7a', 0, null)),
@@ -308,9 +318,10 @@ export const PHILOSOPHY_BASICS_MOTIFS: Record<string, Svg> = {
   'filg.sokratiskt-samtal': all(bg(), ellipse(60, 100, 52, 10, '#e8dcc6', null), sage(60, 0.7, BLUE, 'smile'),
     ...[[18, C.red, 'long'], [40, GREEN, 'short'], [82, C.orange, 'long'], [102, C.purple, 'short']].map(([x, col, hs]) => g('translate(0 6)', fig(+x!, col as string, 'smile', { h: 0.5, hairStyle: hs as 'long' | 'short' }))),
     qm(26, 28, 14, HL), qm(60, 18, 14, C.denim), qm(94, 28, 14, HL), line('M34 30 C44 20 50 20 54 22 M68 22 C72 20 78 20 86 30', HL, 1.4, '2 3'), ground),
-  /** The conversation leader stands and opens a palm towards a seated speaker; the others wait. */
-  'filg.samtalsledare': all(bg(), fig(62, C.denim, 'smile', { h: 0.9 }), reach(62, 0.9, -1, 38, 64), circle(32, 60, 4, HL, C.ink, 1),
-    ...[[18, C.red, 'long'], [96, GREEN, 'short']].map(([x, col, hs]) => g('translate(0 12)', fig(+x!, col as string, 'smile', { h: 0.52, hairStyle: hs as 'long' | 'short' }))), say(22, 28, 22, 18, 20, 60, qm(22, 28, 11, HL)), ground),
+  /** The conversation leader stands in the middle and gives the turns: a ball goes to speaker 1, the next speaker waits for turn 2. */
+  'filg.samtalsledare': all(bg(), ellipse(60, 104, 54, 8, '#e8dcc6', null), fig(60, C.denim, 'smile', { h: 0.86 }), reach(60, 0.86, -1, 34, 58), reach(60, 0.86, 1, 86, 58), circle(30, 56, 5, HL, C.ink, 1.2),
+    ...[[16, C.red, 'long', '1'], [104, GREEN, 'short', '2']].map(([x, col, hs, n]) => all(fig(+x!, col as string, 'smile', { h: 0.55, hairStyle: hs as 'long' | 'short' }), circle(+x!, 38, 7, C.white, C.ink, 1.2), sign(+x!, 38, n as string, 10, n === '1' ? HL : C.ink))),
+    ground),
   /** A train of thought: in the thought cloud stepping stones are joined one after the other. */
   'filg.tankegång': all(bg(), fig(26, C.purple, 'calm', { h: 0.74 }), think(76, 40, 38, 30, 38, 54, all(...[[48, 52], [60, 38], [74, 50], [88, 34], [100, 44]].map(([x, y], i, a) => all(i ? line(`M${a[i - 1]![0]} ${a[i - 1]![1]} L${x} ${y}`, HL, 2) : '', circle(x!, y!, 4, i === a.length - 1 ? HL : C.white, C.ink, 1.2))))), ground),
   /** Nuance: a brush paints all the shades between dark and light; grey: just two blocks. */
