@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.35.0 (släppt 2026-11-12, PR #51) · **Senast uppdaterad:** 2026-11-12 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.36.0 (2026-11-13, gren `claude/swechan-0.36`) · **Senast uppdaterad:** 2026-11-13 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 761 publicerade moduler. 756 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02) och hela *Samhälle & institutioner* (R03, sex överämnen från *Politik & demokrati* till *Medier & samhällsdebatt*). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 803 publicerade moduler. 798 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnet *Historiska epoker* (R04-A01) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa rotområde är *Historia & humaniora* (R04), med första överämnet *Historiska epoker* (R04-A01).
+  - Nästa överämne är *Militärhistoria* (R04-A02). Där finns redan de ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* som kompatibilitetsplaceringar.
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 10 199 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 10 644 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Historiska epoker* (R04-A01) i *Historia & humaniora*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Militärhistoria* (R04-A02), med bild på varje ord. Kontrollera att menyerna med *Medeltida borgar* och *Krig och försvar* fortfarande har högst åtta val. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -91,6 +91,13 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Debatt & opinion: `s.ledarskribent.1`, `s.argumentation.1`, `s.ta-debatten.1`, `s.saklighet.1`, `s.polariserad.1`
   - Yttrandefrihet & medierätt: `s.inskränkning.1`, `s.åsiktsfrihet.1`, `s.pressfrihet.1`, `s.ensamansvar.1`, `s.upphovsrätt.1`, `s.förtal.1`, `s.förtala.1`, `s.nedsättande.1`, `s.kränkande.1`
   - Många förväxlades med ett närliggande ord ur samma ordfamilj eller en nära synonym: *saklighet/saklig*, *förtal/förtala*, *kränkande/kränka*, *nedsättande/kränkande*, *pressfrihet/tryckfrihet/meddelarfrihet*, *åsiktsfrihet/yttrandefrihet*, *ensamansvar/ansvarig utgivare*, *polariserad/splittrad/läger*, *vinkla/ensidig/framställa*, *trend/trendig/sprida sig/viral*, *sensation/nyhetsvärde*. Från 0.35 underkändes också medelsäkra rätta svar när granskaren uttryckligen skrev att två ord förväxlas. Produktägaren kan överväga synonymmarkering och ett nytt test.
+- **Från 0.36 (20 ord):**
+  - Antiken: `s.ofri.1`, `s.ståthållare.1`, `s.kejsardöme.1`, `s.klassisk.2`
+  - Medeltiden: `s.helig.1`
+  - Tidigmodern tid: `s.humanism.1`, `s.kolonialism.1`, `s.prakt.1`, `s.praktfull.1`
+  - Revolutioner & industrialisering: `s.beskatta.1`, `s.facklig.1`, `s.socialdemokrati.1`
+  - 1900-tal till nutid: `s.fascism.1`, `s.depression.1`, `s.nazism.1`, `s.folkmord.1`, `s.civil-olydnad.1`, `s.välfärdssamhälle.1`, `s.socialförsäkring.1`, `s.världsomspännande.1`
+  - Förväxlingarna gällde mest närliggande begrepp: *fascism/nazism/diktator*, *välfärdssamhälle/välfärdsstat/folkhemmet*, *socialförsäkring/sjukförsäkring*, *prakt/praktfull/lyx*, *kejsardöme/rike/kejsare*, *ofri/slav*, *humanism/humanist*, *kolonialism/kolonialmakt*, *beskatta/skatt/tull*.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -196,6 +203,20 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Justitiekanslerns ämbete 1713, Pressens opinionsnämnd 1916, Mediernas etiska nämnd och Medieombudsmannen från 2020, olaga integritetsintrång (BrB 4:6 c) från 2018, yttrandefrihetsgrundlagen 1992, nio jurymedlemmar i tryckfrihetsmål; paragrafnummer i tryckfrihetsförordningen är medvetet utelämnade (numreringen ändrades 2019)
   - produktplacering ska visas i början och slutet av tv-program (radio- och tv-lagen), reklam ska märkas tydligt och tidigt (marknadsföringslagen, Konsumentverket)
   - kvällstidningarna kom förr ut på eftermiddagen, chefredaktören är "ofta" ansvarig utgivare, felmarginalen ungefär 2 procentenheter vid 1 000 intervjuer, saklighetskravet för SVT och SR, folkhögskolor från 1868
+- **0.36, svenska:**
+  - lemman i bestämd form: *antiken*, *upplysningen*, *mellankrigstiden*, *efterkrigstiden*, *kolonialtiden*, *östblocket*, *västvärlden*, *järnridån*, *folkhemmet*, *kalla kriget*, *spanska sjukan*, *digerdöden*; versal i *Förintelsen*, *Berlinmuren*, *Nationernas förbund* (och i deras `senseId`)
+  - *stenålder*, *bronsålder*, *järnålder* i obestämd form med not om bestämd form; *säd*, *boskap*, *svagdricka* utan plural; *upptäcktsresande* böjt som substantiv; *tionde* som substantiv (neutrum); *icke-våld*; *ömsesidigt beroende* som substantivfras
+  - betydelser som bara finns i en variant: *samlare* (jägare och samlare, med not), *stånd* (samhällsgrupp förr), *isolering* (avskildhet), *last* (på ett fartyg), *munk* (klosterbroder), *klassisk* .2 (antiken; .1 utan bild och inte modulord), *ledare* och *läger* från 0.35
+  - nivåer: många C1-bedömningar (t.ex. *årder*, *envälde*, *furstendöme*, *nationalromantik*, *statare*, *strejkbrytare*, *skräckvälde*, *sanitär*)
+- **0.36, japanska:**
+  - granska särskilt: {原始的|げんしてき}な{犂|すき} (*årder*), {沼鉄鉱|しょうてっこう} (*myrmalm*), ロングハウス (*långhus*), {王国参事会|おうこくさんじかい} (*riksråd*), エーリック{街道巡行|かいどうじゅんこう} (*eriksgata*), {小作農|こさくのう} (*landbo*), {自作農|じさくのう} (*skattebonde*), {国民学校|こくみんがっこう} (*folkskola*), {小作人|こさくにん} (*torpare*), *statare* och *hyreskasern*
+- **0.36, fakta (läroboksvärden, står i `factSources`):**
+  - förhistoria: människor i Sverige för omkring 14 000 år sedan, jordbruk för omkring 6 000 år sedan, bronsåldern ca 3 700–2 500 och järnåldern ca 2 500–1 000 år sedan, Tanum världsarv 1994, kol-14 (Libby, 1940-talet)
+  - antiken: folkförsamlingen omkring 40 gånger om året (300-talet f.Kr.), lånord från latin (*skola* ytterst grekiskt)
+  - medeltiden: Alsnö stadga omkring 1280, digerdöden 1349–1350 (en tredjedel till hälften dog), Kalmarunionen 1397–1523, skråna avskaffade 1846
+  - tidigmodern tid: omkring 12 miljoner i den transatlantiska slavhandeln, Magellan 1519–1522, Galilei 1633, enväldet 1680–1718, kyrkan skild från staten 2000
+  - 1800-tal: första maj 1890, storstrejken 1909 (omkring 300 000), barnarbetsförbud 1881, Stockholm över 300 000 invånare år 1900, statarsystemet avskaffat 1945
+  - 1900-tal: spanska sjukan (omkring 35 000 döda i Sverige), omkring tio miljoner stupade i första världskriget, omkring 64 000 skyddsrum (MSB), mer än 80 nya stater 1945–1975
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -214,10 +235,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v39`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v40`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Jägar- och samlarsamhällen* (SWC-HIS-01-01-01) som exempel. Byt exemplet när den publiceras.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Bronsålderns vapen* (SWC-HIS-02-01-01) som exempel. Byt exemplet när den publiceras.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
+- **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.
