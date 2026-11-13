@@ -9,7 +9,7 @@
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, star, type Svg } from './kit';
 import { type Build } from './figures';
-import { HL, arm, cloud, shield } from './people';
+import { HL, T, arm, cloud, shield } from './people';
 import { P as F, type Mood, greyed } from './blindFix';
 import { checkIcon } from './labelIcons';
 
@@ -148,8 +148,12 @@ const wallSection = (walk: string, parapet: string) => all(
 // ── Motifs ───────────────────────────────────────────────────────────
 export const CASTLE_MOTIFS: Record<string, Svg> = {
   // ── 2011 Slottets byggnadsdelar ──
-  'slott.byggnadsdel': all(castle(46, 112, 1, { tr: null, wall: C.grey2, tl: C.grey2, keep: C.grey2 }), line('M82 112 L82 60', C.grey2, 1.4, '3 3'),
-    tower(100, 96, 15, 52, HLF), arrow(84, 52, 96, 40, HL, 2.2), line('M88 98 L112 98', C.grey2, 2), ground),
+  'slott.byggnadsdel': all(
+    path('M24 50 L50 30 L76 50 Z', ROOF, C.ink, 1.6), rect(18, 25, 64, 30, 'none', 3, HL, 1.6, ),
+    block(26, 66, 48, 42, STONE, false), path('M44 108 L44 92 C44 84 56 84 56 92 L56 108 Z', '#efe6d2', C.grey, 1.2), rect(22, 62, 56, 50, 'none', 3, HL, 1.6),
+    tower(102, 108, 16, 56, STONE, { slits: [0.3, 0.6] }), rect(90, 40, 24, 72, 'none', 3, HL, 1.6),
+    path('M6 108 L6 94 C6 86 16 86 16 94 L16 108 Z', WOOD2, C.ink, 1.3), line('M11 88 L11 108', '#5e3a1a', 0.9), rect(2, 82, 18, 30, 'none', 3, HL, 1.6),
+    arrow(50, 24, 50, 12, C.grey, 1.8), arrow(82, 84, 88, 84, C.grey, 1.8), arrow(40, 100, 24, 100, C.grey, 1.8), ground),
   'slott.huvudbyggnad': all(
     greyed(at(60, 112, 1, rect(-52, -30, 32, 30, LIME, 0.4, C.ink, 1.4), path('M-54 -30 L-50 -40 L-20 -40 L-20 -30 Z', ROOF, C.ink, 1.3), rect(20, -30, 32, 30, LIME, 0.4, C.ink, 1.4), path('M54 -30 L50 -40 L20 -40 L20 -30 Z', ROOF, C.ink, 1.3),
       ...[-44, -32, 28, 40].map((d) => win(d, -16, 5, 8)))),
@@ -259,17 +263,29 @@ export const CASTLE_MOTIFS: Record<string, Svg> = {
   'slott.vakt': all(greyed(block(4, 20, 56, 92, STONE)), archOpen(32, 112, 22, 40, OPEN), soldier(80, 0.9, { spear: 1 }), ground),
   'slott.vaktpost': all(greyed(block(4, 30, 30, 82, STONE), tower(80, 112, 20, 84)), at(54, 112, 1, rect(-14, -50, 28, 50, '#7a8a5a', 0.5, C.ink, 1.6), path('M-17 -50 L0 -64 L17 -50 Z', RED, C.ink, 1.5), rect(-11, -46, 22, 46, '#3d3a32', 0.5, null)),
     soldier(54, 0.5, { spear: 1 }), ground),
-  'slott.vakthållning': all(rect(0, 0, 120, 120, NIGHT, 18, null), moon(100, 18, 8), ...[[20, 14], [44, 22], [76, 10]].map(([x, y]) => star(x!, y!, 2.4, '#f3e6a1')),
-    block(4, 74, 112, 38, '#8a8676'), lift(-38, soldier(34, 0.5, { spear: -1 })), lift(-38, g('translate(46 52)', torchL())), lift(-38, soldier(84, 0.5, { spear: 1, grey: true })),
-    path('M50 30 C58 22 66 22 72 30', 'none', '#f3e6a1', 1.8), path('M68 26 L72 30 L74 24', 'none', '#f3e6a1', 1.8), path('M72 40 C64 48 56 48 50 40', 'none', '#f3e6a1', 1.8), path('M54 44 L50 40 L48 46', 'none', '#f3e6a1', 1.8)),
+  'slott.vakthållning': all(
+    ...[[0, '#fbe9a6'], [1, '#f6c98a'], [2, NIGHT], [3, '#9fb4d6']].map(([i, col]) => { const a0 = (i as number) * Math.PI / 2 - Math.PI / 2, a1 = a0 + Math.PI / 2; return path(`M60 60 L${f1(60 + 46 * Math.cos(a0))} ${f1(60 + 46 * Math.sin(a0))} A46 46 0 0 1 ${f1(60 + 46 * Math.cos(a1))} ${f1(60 + 46 * Math.sin(a1))} Z`, col as string, C.ink, 1.6); }),
+    circle(60, 60, 4, C.ink, null), lo('M60 60 L60 24', C.ink, 1.6), lo('M60 60 L84 70', C.ink, 1.6),
+    circle(88, 28, 6, C.yellow, C.ink, 1.1), moon(26, 96, 5), star(22, 72, 1.8, '#f3e6a1'), star(46, 102, 1.6, '#f3e6a1'),
+    ...[[80, 44, '#c8372d'], [80, 82, '#4f7a3a'], [40, 78, '#7b3fa0'], [40, 40, '#3f6fb5']].map(([x, y, c]) => bust(x as number, y as number, c as string, path('M-6.2 -0.5 C-6.2 -10 6.2 -10 6.2 -0.5 Z', C.silver, C.ink, 1), 1)),
+    path('M108 34 C116 52 116 70 108 88', 'none', HL, 2.6), path('M102 84 L108 90 L112 82', 'none', HL, 2.6), path('M12 86 C4 68 4 50 12 32', 'none', HL, 2.6), path('M18 36 L12 30 L8 38', 'none', HL, 2.6)),
   'slott.utkik': all(rect(0, 0, 120, 120, '#eaf3f8', 18, null), at(26, 112, 1, rect(-14, -50, 28, 50, STONE, 0.4, C.ink, 1.6), courses(-14, -50, 28, 50, 9), merl(-14, 14, -50, STONE, 5, 6)),
     lift(-50, fig(28, '#5a6a80', 'calm', { h: 0.36 }), on(28, 0.36, helmetL()), reach(28, 0.36, 1, 33, 84), palm(35, 81, 0.45, 90)),
     line('M40 32 L112 62', HL, 1.4, '3 3'), line('M40 34 L112 92', HL, 1.4, '3 3'), water(56, 92, 60, 20), at(92, 92, 0.42, path('M-34 -16 C-30 2 30 2 34 -16 Z', '#8a5a2e', C.ink, 1.6), line('M0 -16 L0 -62', '#5e3a1a', 2.6), path('M-16 -58 C-12 -46 -12 -32 -16 -22 L16 -22 C12 -32 12 -46 16 -58 Z', LIME, C.ink, 1.4)), ground),
   'slott.armborst': all(g('rotate(-12 60 60)', lo('M16 60 L96 60', WOOD, 6), path('M80 30 C90 40 90 80 80 90', 'none', IRON, 4.4), line('M80 30 L66 60 L80 90', C.ink, 1.2), arrowShaft(66, 56, 104, 56), rect(30, 62, 6, 12, WOOD2, 1, C.ink, 1), path('M16 54 L22 54 L22 66 L16 66 Z', WOOD2, C.ink, 1)), ground),
-  'slott.försvarsverk': all(water(4, 100, 112, 12), castle(60, 100, 1.05, { wall: HLF, tl: HLF, tr: HLF, keep: STONE }), path('M8 30 C4 60 6 90 10 98 M112 30 C116 60 114 90 110 98', 'none', HL, 2.4), shield(14, 20, 0.8, C.navy)),
-  'slott.hålla-stånd': all(block(4, 84, 112, 28, STONE), lift(-28, soldier(36, 0.62, {})), g('translate(56 60)', shield(0, 0, 1.15, C.navy)),
-    ...[[100, 36, 70, 50], [108, 56, 72, 60], [100, 76, 70, 70]].map(([x1, y1, x2, y2]) => greyed(arrowShaft(x1!, y1!, x2!, y2!))), line('M72 44 l4 -4 M74 58 l5 -1 M72 72 l4 3', HL, 1.4),
-    line('M24 78 L24 84 M48 78 L48 84', HL, 2.4), ground),
+  'slott.försvarsverk': all(rect(4, 10, 112, 102, GRASS, 14, null),
+    ellipse(60, 62, 54, 46, WATER, C.ink, 1.6), ellipse(60, 62, 46, 38, EARTH, C.ink, 1.6), ellipse(60, 62, 38, 31, GRASS, C.ink, 1.2),
+    ...Array.from({ length: 28 }, (_, i) => { const a = (i / 28) * Math.PI * 2; return rect(+f1(60 + 35 * Math.cos(a) - 1.5), +f1(62 + 28 * Math.sin(a) - 4), 3, 7, WOOD, 0.5, C.ink, 0.7); }),
+    ellipse(60, 62, 26, 20, 'none', C.ink, 7.4), ellipse(60, 62, 26, 20, 'none', STONE, 5),
+    ...[0, 1, 2, 3, 4, 5].map((i) => { const a = (i / 6) * Math.PI * 2 + 0.3; return circle(+f1(60 + 26 * Math.cos(a)), +f1(62 + 20 * Math.sin(a)), 4.4, STONE, C.ink, 1.2); }),
+    greyed(house(52, 66, 0.45), house(68, 68, 0.45), house(60, 56, 0.4)), rect(56, 12, 8, 6, WOOD, 1, C.ink, 1), lo('M60 16 L60 24', WOOD, 3)),
+  'slott.hålla-stånd': all(...[0, 1, 2].map((i) => { const x = 4 + i * 38; return all(
+    rect(x, 6, 36, 106, i === 1 ? '#dfe3ee' : '#f6efdc', 3, C.ink, 1.2), i === 1 ? moon(x + 18, 18, 6) : circle(x + 18, 18, 6, C.yellow, C.ink, 1.1),
+    rect(x + 11, 27, 14, 13, C.white, 1, C.ink, 1), line(`M${x + 11} 30 L${x + 25} 30`, RED, 2), T(x + 18, 38.5, String(i + 1), 8),
+    ...Array.from({ length: i + 2 }, (_, k) => greyed(arrowShaft(x + 34, 46 + k * 9, x + 20, 52 + k * 6))),
+    bust(x + 8, 78, '#5a6a80', path('M-6.2 -0.5 C-6.2 -10 6.2 -10 6.2 -0.5 Z', C.silver, C.ink, 1), 1.1), bust(x + 19, 80, '#5a6a80', path('M-6.2 -0.5 C-6.2 -10 6.2 -10 6.2 -0.5 Z', C.silver, C.ink, 1), 1.1),
+    rect(x + 2, 88, 32, 22, STONE, 0.5, C.ink, 1.3), merl(x + 2, x + 34, 88, STONE, 4, 4)); }),
+    rect(6, 66, 108, 22, 'none', 4, HL, 2, )),
   'slott.slå-tillbaka': all(block(4, 56, 42, 56, STONE), lift(-56, soldier(26, 0.45, {}), reach(26, 0.45, 1, 50, 92)),
     g('rotate(26 52 112)', lo('M52 112 L52 30 M60 112 L60 30', WOOD, 2), ...[100, 88, 76, 64, 52, 40].map((y) => lo(`M52 ${y} L60 ${y}`, WOOD, 1.4))),
     greyed(fig(94, '#8a6a4a', 'shock', { h: 0.5 }), fig(110, '#8a6a4a', 'shock', { h: 0.46 })), arrow(72, 60, 112, 60, HL, 2.6), ground),
@@ -292,8 +308,11 @@ export const CASTLE_MOTIFS: Record<string, Svg> = {
   'slott.borgruin': all(path('M10 112 L10 54 L16 50 L20 58 L26 46 L30 56 L30 112 Z', STONE, C.ink, 1.6), path('M30 112 L30 78 L44 72 L52 84 L62 80 L62 112 Z', STONE, C.ink, 1.6), path('M62 112 L62 30 L70 22 L78 34 L84 26 L90 40 L90 112 Z', STONE, C.ink, 1.6),
     path('M90 112 L90 88 L104 82 L110 94 L110 112 Z', STONE, C.ink, 1.6), courses(10, 54, 20, 58, 9), courses(62, 34, 28, 78, 9), win(76, 60, 8, 14, OPEN), slit(20, 80),
     ...[[40, 108], [48, 106], [100, 108], [56, 109]].map(([x, y]) => ellipse(x!, y!, 4, 2.6, STONE2, C.ink, 1)), ...[18, 46, 96].map((x) => line(`M${x} 112 l-2 -5 M${x + 2} 112 l2 -5`, GRASS2, 1.3)), ground),
-  'slott.befästa': all(greyed(...[[14, 102], [30, 100], [44, 104]].map(([x, b]) => house(x!, b!, 0.7))), arrow(52, 80, 64, 80, HL, 2.4),
-    ...[[80, 92], [96, 90], [110, 94]].map(([x, b]) => house(x!, b!, 0.55)), block(66, 94, 52, 18, HLF), tower(70, 112, 9, 28, HLF), tower(114, 112, 9, 28, HLF), ground),
+  'slott.befästa': all(line('M44 8 L44 112', C.grey2, 1.4, '3 3'), greyed(...[[12, 96], [26, 92], [36, 98]].map(([x, b]) => house(x!, b!, 0.55))), arrow(46, 50, 58, 50, HL, 2.2),
+    ...[[70, 84], [84, 80], [96, 86]].map(([x, b]) => house(x!, b!, 0.5)),
+    rect(56, 84, 30, 28, HLF, 0.4, C.ink, 1.6), merl(56, 86, 84, HLF, 5, 5), courses(56, 84, 30, 28, 7), rect(86, 96, 16, 16, HLF, 0.4, C.ink, 1.5), courses(86, 96, 16, 16, 7), rect(102, 104, 8, 8, HLF, 0.4, C.ink, 1.3),
+    lo('M84 112 L84 78 M104 112 L104 78 M84 88 L104 88', WOOD, 1.2), ...[[88, 109], [92, 105], [96, 109]].map(([x, y]) => rect(x! - 3, y! - 2, 6, 4, STONE, 0.5, C.ink, 0.8)),
+    fig(110, '#c96b3c', 'smile', { h: 0.34 }), reach(110, 0.34, -1, 101, 96), rect(96, 92, 7, 5, STONE, 0.5, C.ink, 0.9), ground),
   'slott.belägen': all(rect(8, 10, 104, 96, '#efe4c2', 2, C.ink, 1.6), path('M20 70 C30 56 50 60 54 74 C58 88 36 92 24 86 Z', WATER, C.ink, 1.2), path('M70 30 C80 24 96 26 100 36', 'none', '#9a958a', 2.4), path('M60 92 C74 84 90 90 104 82', 'none', '#c9a27a', 2),
     castle(84, 64, 0.32), path('M84 18 C74 18 72 30 84 44 C96 30 94 18 84 18 Z', HL, C.ink, 1.4), circle(84, 26, 3.6, C.white, null), tree(30, 40, 0.5), tree(40, 34, 0.45)),
   'slott.anlägga': all(rect(4, 84, 112, 28, '#e8d9b0', 0, null), line('M34 104 L98 104 L108 88 L44 88 Z', HL, 1.8, '4 3'), ...[[34, 104], [98, 104], [108, 88], [44, 88]].map(([x, y]) => lo(`M${x} ${y} L${x} ${y! - 9}`, WOOD, 1.6)),
