@@ -72,8 +72,6 @@ const bag = (x: number, y: number, s = 1, col: string = C.tan) => at(x, y, s, pa
 const plate = (x: number, y: number, r = 10) => ellipse(x, y, r, r * 0.35, C.white, C.ink, 1.2);
 const medal = (x: number, y: number, s = 1) => at(x, y, s, path('M-4 -12 L0 -4 L4 -12', 'none', C.red, 2.4), circle(0, 0, 5, GOLD, C.ink, 1.2), star(0, 0, 2.6, '#fff2c0'));
 const mask = (x: number, y: number, s = 1) => at(x, y, s, path('M-10 -10 C-10 -16 10 -16 10 -10 L10 2 C10 12 -10 12 -10 2 Z', C.white, C.ink, 1.3), circle(-4, -5, 1.6, C.ink, null), circle(4, -5, 1.6, C.ink, null), line('M-5 3 Q0 8 5 3', C.ink, 1.4), ellipse(-6, 1, 1.8, 1, '#f08aa0', null), ellipse(6, 1, 1.8, 1, '#f08aa0', null), line('M0 10 L0 22', C.brown, 1.8));
-const puzzle = (x: number, y: number, s: number, col: string, kind: 'tabR' | 'slotL' | 'tabL') => at(x, y, s, path(kind === 'tabR' ? 'M-14 -14 L14 -14 L14 -5 C21 -7 21 7 14 5 L14 14 L-14 14 Z'
-  : kind === 'tabL' ? 'M-14 -14 L14 -14 L14 14 L-14 14 L-14 5 C-21 7 -21 -7 -14 -5 Z' : 'M-14 -14 L14 -14 L14 14 L-14 14 L-14 5 C-7 7 -7 -7 -14 -5 Z', col, C.ink, 1.4));
 const lantern = (x: number, y: number, s = 1) => at(x, y, s, glow(0, 0, 12, 'rgba(242,193,78,0.45)'), rect(-4, -6, 8, 11, '#fff2c0', 1, C.ink, 1.1), path('M-5 -6 L0 -10 L5 -6 Z', C.dark, C.ink, 0.9), line('M0 -10 L0 -13', C.ink, 1));
 const bed = (x: number, y: number, w = 40, head: Svg = '') => all(rect(x - w / 2, y - 6, w, 8, C.white, 2, C.ink, 1.3), rect(x - w / 2 - 2, y - 16, 4, 22, C.brown, 1, C.ink, 1.1), line(`M${x - w / 2 + 2} ${y + 2} L${x - w / 2 + 2} ${y + 10} M${x + w / 2 - 2} ${y + 2} L${x + w / 2 - 2} ${y + 10}`, C.brown, 2), head);
 const tramCar = (x: number, y: number, s = 1) => at(x, y, s, rect(-16, -14, 32, 16, C.yellow, 3, C.ink, 1.4), rect(-12, -11, 9, 7, '#bfe3f5', 1, C.ink, 0.9), rect(1, -11, 9, 7, '#bfe3f5', 1, C.ink, 0.9), circle(-9, 3, 3, C.dark, C.ink, 1), circle(9, 3, 3, C.dark, C.ink, 1), line('M0 -14 L-4 -22 L4 -22', C.ink, 1.2));
@@ -102,7 +100,6 @@ const veil = (x: number, y: number, w: number, h: number) => all(path(`M${x} ${y
 const hut = (x: number, y: number, s = 1) => at(x, y, s, rect(-10, -12, 20, 12, '#c9a77a', 1, C.ink, 1.1), path('M-13 -12 L0 -22 L13 -12 Z', '#9a8a6a', C.ink, 1.1));
 const villa = (x: number, y: number, s = 1) => at(x, y, s, rect(-16, -20, 32, 20, '#f2ece0', 1, C.ink, 1.2), path('M-19 -20 L0 -32 L19 -20 Z', '#9a4a3a', C.ink, 1.2), rect(-11, -15, 6, 6, '#bfe3f5', 1, C.ink, 0.8), rect(5, -15, 6, 6, '#bfe3f5', 1, C.ink, 0.8), rect(-3, -9, 6, 9, '#8a5a34', 1, C.ink, 0.8), coin(16, -28, 4));
 const mirrorFrame = (x: number, y: number, w: number, h: number) => all(rect(x, y, w, h, '#e8f4fb', 3, '#a8743f', 3), line(`M${x + 6} ${y + 10} L${x + 14} ${y + 4} M${x + 6} ${y + 20} L${x + 20} ${y + 6}`, C.white, 2));
-const globe = (x: number, y: number, r: number) => all(circle(x, y, r, WATER, C.ink, 1.4), path(`M${f1(x - r * 0.6)} ${f1(y - r * 0.4)} C${f1(x - r * 0.1)} ${f1(y - r * 0.8)} ${f1(x + r * 0.2)} ${f1(y - r * 0.1)} ${f1(x - r * 0.2)} ${f1(y + r * 0.2)} C${f1(x - r * 0.6)} ${f1(y + r * 0.4)} ${f1(x - r * 0.8)} ${f1(y)} ${f1(x - r * 0.6)} ${f1(y - r * 0.4)} Z M${f1(x + r * 0.3)} ${f1(y + r * 0.1)} C${f1(x + r * 0.8)} ${f1(y - r * 0.1)} ${f1(x + r * 0.7)} ${f1(y + r * 0.6)} ${f1(x + r * 0.3)} ${f1(y + r * 0.7)} Z`, '#7fbf6a', C.ink, 0.8));
 
 export const ETHICS_MOTIFS: Record<string, Svg> = {
   // ── 2221 Rätt och fel ──
@@ -131,11 +128,6 @@ export const ETHICS_MOTIFS: Record<string, Svg> = {
   'etik.anständig': all(sky(DAY, 112), rect(4, 30, 30, 82, '#e6d3b3', 2, C.ink, 1.4), rect(26, 40, 18, 72, '#a8743f', 1, C.ink, 1.4), circle(41, 76, 1.8, GOLD, C.ink, 0.6),
     fig(58, C.green, 'smile', { h: 0.94 }), reach(58, 0.94, -1, 42, 74),
     fig(92, '#b07a2a', 'smile', { h: 0.84, hair: '#e6e6e6' }), line('M104 72 L108 112', C.brown, 2.4), reach(92, 0.84, 1, 104, 74), tick(70, 18, 1.2), ground),
-  'etik.allmängiltig': all(sky('#eef4fa', 112), globe(60, 66, 26), tablet(60, 22, 0.9, PARCH, heart(0, -6, 0.5, C.red)),
-    ...[[22, 70], [98, 70], [34, 102], [86, 102], [60, 104], [24, 40], [96, 40]].map(([x, y]) => all(bust(x!, y!, ['#c96b3c', C.denim, GREEN, '#7a5aa8', '#d64545', '#b07a2a', C.orange][(x! + y!) % 7]!, 0.9), tick(x! + 9, y! - 8, 0.55))),
-    line('M60 40 L60 44', GOLD, 2), rays(60, 66, 28, 32, 16, GOLD, 1.2)),
-
-  // ── 2222 Plikt och ansvar ──
   'etik.ansvarslös': all(sky('#f6f2ea', 112), rect(68, 74, 40, 38, C.white, 2, C.ink, 1.4), rect(72, 68, 20, 6, C.dark, 1, C.ink, 1.2),
     path('M74 68 C74 60 90 60 90 68 Z', '#9aa3ad', C.ink, 1.2), smoke(82, 56), path('M78 70 C80 64 84 66 86 70', 'none', C.orange, 2), excl(102, 44, 18),
     fig(32, C.orange, 'laugh', { h: 0.9 }), reach(32, 0.9, 1, 44, 66), at(46, 64, 1, rect(-4, -7, 8, 14, C.dark, 2, C.ink, 1), rect(-3, -5, 6, 9, '#bfe3f5', 1, null)), note(16, 40), note(20, 28), ground),
@@ -208,8 +200,6 @@ export const ETHICS_MOTIFS: Record<string, Svg> = {
   'etik.samvetskval': all(sky(NIGHT, 112), ...[[14, 14], [30, 22], [100, 12], [110, 30]].map(([x, y]) => sparkle(x!, y!, 2, '#f6e8a8')), path('M96 40 A10 10 0 1 0 96 60 A7 10 0 1 1 96 40 Z', '#f6e08a', C.ink, 0.8),
     bed(56, 96, 80, ''), path('M24 90 C40 82 80 82 94 90 L94 94 L24 94 Z', C.lilac, C.ink, 1.2), circle(28, 84, 7, C.skin, C.ink, 1.2), circle(26, 84, 1.6, C.white, C.ink, 0.6), circle(31, 84, 1.6, C.white, C.ink, 0.6), line('M25 88 Q28 86.6 31 88', C.ink, 0.9),
     thought(46, 44, 46, all(path('M36 50 L40 38 L46 38 L50 50 Z', '#7ab0d0', C.ink, 1), line('M41 42 L44 46 L42 48', C.ink, 1), storm(56, 36, 0.4)), false), shake(28, 72)),
-  'etik.oförenlig': all(sky('#f6f2ea', 112), puzzle(40, 44, 1.1, '#f2d9a0', 'tabR'), puzzle(80, 44, 1.1, '#bfe3f5', 'tabL'), zig(54, 24, 12, C.red), cross(60, 84, 1.5),
-    greyed(at(28, 98, 0.45, puzzle(0, 0, 1, C.grey2, 'tabR'), puzzle(30, 0, 1, C.grey2, 'slotL')), tick(20, 82, 0.6))),
   'etik.ge-vika': all(sky(DAY, 112), line('M30 74 L84 80', C.brown, 2.4), fig(24, C.red, 'laugh', { h: 0.9 }), reach(24, 0.9, 1, 34, 72),
     fig(92, C.denim, 'frown', { h: 0.9 }), reach(92, 0.9, -1, 76, 60), reach(92, 0.9, 1, 108, 60), path('M84 80 C88 90 82 96 86 104', 'none', C.brown, 2.4), arrow(56, 60, 40, 56, HL, 2), ground),
   'etik.dubbelmoral': all(sky(DAY, 112), rect(96, 84, 14, 28, '#5a8a5a', 2, C.ink, 1.2), fig(54, C.navy, 'angry'), reach(54, 1, -1, 32, 56), palmOut(30, 52),
