@@ -115,6 +115,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'fhist.': () => import('./prehistory').then((m) => m.PREHISTORY_MOTIFS),
   'antik.': () => import('./antiquity').then((m) => m.ANTIQUITY_MOTIFS),
   'mtid.': () => import('./middleAges').then((m) => m.MIDDLE_AGES_MOTIFS),
+  'slott.': () => import('./castles').then((m) => m.CASTLE_MOTIFS),
   'tmod.': () => import('./earlyModern').then((m) => m.EARLY_MODERN_MOTIFS),
   'revo.': () => import('./revolutions').then((m) => m.REVOLUTION_MOTIFS),
   'modh.': () => import('./modernHistory').then((m) => m.MODERN_HISTORY_MOTIFS),
