@@ -125,6 +125,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.omoralisk.1', 's.pliktetik.1', 's.maxim.1', 's.nytta.1', 's.rättvisa.1', 's.lika-möjligheter.1',
   // 0.39 (Medvetande & identitet), after two blind-test rounds
   's.medvetenhet.1', 's.inifrån.1', 's.förnimmelse.1', 's.handling.1',
+  // 0.39 (Politisk filosofi), after two blind-test rounds
+  's.tvång.1', 's.stat.1', 's.lydnad.1', 's.maktposition.1', 's.individuell.1', 's.fördelningsrättvisa.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
