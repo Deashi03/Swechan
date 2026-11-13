@@ -95,6 +95,16 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.beskatta.1', 's.facklig.1', 's.socialdemokrati.1',
   // 0.36 (1900-tal till nutid), after two blind-test rounds
   's.fascism.1', 's.depression.1', 's.nazism.1', 's.folkmord.1', 's.civil-olydnad.1', 's.välfärdssamhälle.1', 's.socialförsäkring.1', 's.världsomspännande.1',
+  // 0.37 (Forntida krigföring), after two blind-test rounds
+  's.beriden.1', 's.befäl.1', 's.taktik.1',
+  // 0.37 (Slott & fästningar, Belägringar), after two blind-test rounds
+  's.hålla-stånd.1', 's.försvarsverk.1', 's.befästa.1', 's.strategisk.1', 's.övertag.1', 's.isolerad.2', 's.kringvärn.1', 's.kapitulation.1',
+  // 0.37 (Tidiga moderna arméer), after two blind-test rounds
+  's.menig.1', 's.segerrik.1',
+  // 0.37 (Världskrigen), after two blind-test rounds
+  's.offensiv.1',
+  // 0.37 (Modern krigföring), after two blind-test rounds
+  's.terrorism.1', 's.krigets-lagar.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.36.0 (släppt 2026-11-13, PR #53) · **Senast uppdaterad:** 2026-11-13 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.37.0 (2026-11-13, gren `claude/swechan-0.37`) · **Senast uppdaterad:** 2026-11-13 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 803 publicerade moduler. 798 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnet *Historiska epoker* (R04-A01) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 845 publicerade moduler. 840 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnena *Historiska epoker* (R04-A01) och *Militärhistoria* (R04-A02) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Militärhistoria* (R04-A02). Där finns redan de ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* som kompatibilitetsplaceringar.
+  - Nästa överämne är *Religion & idéhistoria* (R04-A03). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 10 644 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 11 096 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Militärhistoria* (R04-A02), med bild på varje ord. Kontrollera att menyerna med *Medeltida borgar* och *Krig och försvar* fortfarande har högst åtta val. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Religion & idéhistoria* (R04-A03), med bild på varje ord. Religionsord från R02 och 0.36 (kyrka, kloster, reformation, kristendom m.fl.) finns redan. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -98,6 +98,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Revolutioner & industrialisering: `s.beskatta.1`, `s.facklig.1`, `s.socialdemokrati.1`
   - 1900-tal till nutid: `s.fascism.1`, `s.depression.1`, `s.nazism.1`, `s.folkmord.1`, `s.civil-olydnad.1`, `s.välfärdssamhälle.1`, `s.socialförsäkring.1`, `s.världsomspännande.1`
   - Förväxlingarna gällde mest närliggande begrepp: *fascism/nazism/diktator*, *välfärdssamhälle/välfärdsstat/folkhemmet*, *socialförsäkring/sjukförsäkring*, *prakt/praktfull/lyx*, *kejsardöme/rike/kejsare*, *ofri/slav*, *humanism/humanist*, *kolonialism/kolonialmakt*, *beskatta/skatt/tull*.
+- **Från 0.37 (16 ord):**
+  - Forntida krigföring: `s.beriden.1`, `s.befäl.1`, `s.taktik.1`
+  - Medeltida slott & fästningar: `s.hålla-stånd.1`, `s.försvarsverk.1`, `s.befästa.1` (ord från den ursprungliga modulen *Medeltida borgar*)
+  - Medeltida belägringar: `s.strategisk.1`, `s.övertag.1`, `s.isolerad.2`, `s.kringvärn.1`, `s.kapitulation.1`
+  - Tidiga moderna arméer: `s.menig.1`, `s.segerrik.1`
+  - Världskrigen: `s.offensiv.1`
+  - Modern krigföring: `s.terrorism.1`, `s.krigets-lagar.1`
+  - Förväxlingarna gällde mest närliggande ord: *beriden/ryttare/kavalleri*, *befäl/befälhavare*, *taktik/strategi/slagordning*, *kapitulation/kapitulera*, *kringvärn/cirkumvallation*, *menig/rekryt*, *segerrik/segrare*, *offensiv/genombrott*, *krigets lagar/folkrätt/konvention*.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -217,6 +225,19 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - tidigmodern tid: omkring 12 miljoner i den transatlantiska slavhandeln, Magellan 1519–1522, Galilei 1633, enväldet 1680–1718, kyrkan skild från staten 2000
   - 1800-tal: första maj 1890, storstrejken 1909 (omkring 300 000), barnarbetsförbud 1881, Stockholm över 300 000 invånare år 1900, statarsystemet avskaffat 1945
   - 1900-tal: spanska sjukan (omkring 35 000 döda i Sverige), omkring tio miljoner stupade i första världskriget, omkring 64 000 skyddsrum (MSB), mer än 80 nya stater 1945–1975
+- **0.37, svenska:**
+  - *förnödenheter* som uppslagsord i plural (SAOL har *förnödenhet*); *order* (plural order/ordrar); *materiel* mot *material* och *flotta* mot *flotte* förklaras i posterna; *ingenmansland*, *umbärande* och *gisslan* utan böjning; *fri lejd* med konstruerad bestämd form; *svälta ut* (svälte ut/svält ut)
+  - nya poster med extra betydelser utan bild och som inte är modulord: *pik* (elak kommentar), *skott* (på växter), *mynning* (flod), *ställning* (sport), *knekt* (kortspel)
+  - *robot* lärs ut i militär betydelse (= missil) med not om vardagsroboten; *s.läger.1* har glosan キャンプ också i militära sammanhang; *s.häva.1* (häva förbud) används om att häva en belägring; *fat* i Visby-sägnen pekar på serveringsfat
+  - *borgherre*, *tornerspel*, *kartesch* (kartescher), *överste* (överstar), *fältskär* (fältskärer) bör kontrolleras mot SAOL
+- **0.37, japanska:**
+  - beskrivande översättningar utan etablerad term: *rote* (兵士を出す農家の組), *indelningsverk* (割当制度), *fältskär* (軍医), *spansk ryttare* (拒馬), *falk* (ハヤブサ), *tornerspel* ({馬上槍試合|ばじょうやりじあい})
+- **0.37, fakta (läroboksvärden, står i `factSources`):**
+  - antiken: Teutoburgerskogen år 9 e.Kr., Cannae 216 f.Kr. (namnen bara i `factSources`, eftersom de saknas i grundordförrådet)
+  - medeltiden: Visby 1361 (brandskattades, de tre fyllda faten är en sägen), Stockholm kapitulerade i september 1520 och blodbadet följde i november, Kalmar som "rikets nyckel"; vindeltrappor som gick medsols är omdiskuterat
+  - tidigmodern tid: två–tre skott i minuten med musköt, kompanier på omkring 150 man, karolinsk uniform blå och gul från 1680-talet, vintern 1708–1709; Breitenfeld, Lützen och Poltava står bara i `factSources`
+  - världskrigen: Somme 1916, Skagerrak 1916 (omkring 250 fartyg), Dagen D (omkring 156 000 man), omkring 70 000 finska krigsbarn varav omkring 15 000 stannade, Flygvapnet 1926
+  - modern tid: värnplikten återinförd 2017, Genèvekonventionerna, MSB:s råd om hemberedskap
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -235,11 +256,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v40`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v41`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Bronsålderns vapen* (SWC-HIS-02-01-01) som exempel. Byt exemplet när den publiceras.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Tro och övertygelse* (SWC-HIS-03-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Religiösa grundbegrepp* är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.

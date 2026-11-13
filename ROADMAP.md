@@ -132,6 +132,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.36 – Historiska epoker (klar)
 - 42 nya moduler i Historia & humaniora → Historiska epoker med 445 nya ordbilder. 20 ord saknar bild efter två blindtestomgångar. Långa ord flödar inte längre ut ur ordkortet.
 
+## v0.37 – Militärhistoria (klar)
+- 42 nya moduler i Historia & humaniora → Militärhistoria med 452 nya ordbilder. 16 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

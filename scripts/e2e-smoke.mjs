@@ -210,14 +210,14 @@ try {
   await page.getByRole('link', { name: /Matlagningens verb/ }).first().click();
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
-  // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35) and Historiska epoker (0.36)
-  // are fully published, so the planned entry is the first module of Militärhistoria: Forntida krigföring →
-  // Bronsålderns vapen.
+  // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), Historiska epoker (0.36) and
+  // Militärhistoria (0.37) are fully published, so the planned entry is the first module of Religion & idéhistoria:
+  // Religiösa grundbegrepp → Tro och övertygelse.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Historia & humaniora/ }).first().click();
-  await page.getByRole('link', { name: /Militärhistoria/ }).first().click();
-  await page.getByRole('link', { name: /Forntida krigföring/ }).first().click();
-  await page.getByRole('link', { name: /Bronsålderns vapen/ }).first().click();
+  await page.getByRole('link', { name: /Religion & idéhistoria/ }).first().click();
+  await page.getByRole('link', { name: /Religiösa grundbegrepp/ }).first().click();
+  await page.getByRole('link', { name: /Tro och övertygelse/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
