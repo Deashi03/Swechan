@@ -7,7 +7,7 @@
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, star, type Svg } from './kit';
 import { type Build } from './figures';
-import { T, arm, cloud } from './people';
+import { T, arm, cloud, padlock } from './people';
 import { P as F, type Mood, greyed } from './blindFix';
 
 // ── Colours ──────────────────────────────────────────────────────────
@@ -89,7 +89,6 @@ const seesaw = (x: number, y: number, half: number, tilt: number, col: string = 
 const fire = (x: number, y: number, s = 1) => at(x, y, s, path('M0 -16 C8 -8 10 -2 8 4 C6 10 -6 10 -8 4 C-10 -2 -6 -6 -4 -10 C-2 -6 0 -6 0 -16 Z', C.orange, C.ink, 1.2), path('M0 -6 C4 -2 4 4 0 6 C-4 4 -4 0 0 -6 Z', C.yellow, null));
 const club = (x: number, y: number, rot = 0) => g(`translate(${x} ${y}) rotate(${rot})`, path('M-1.5 0 L1.5 0 L3 -16 C3 -20 -3 -20 -3 -16 Z', C.brown, C.ink, 1.1));
 const tree = (x: number, y: number, s = 1, col: string = C.green) => at(x, y, s, rect(-2.5, -16, 5, 16, C.brown, 1, C.ink, 1), circle(0, -24, 11, col, C.ink, 1.2), circle(-7, -19, 7, col, C.ink, 1.2), circle(7, -19, 7, col, C.ink, 1.2));
-const pie = (x: number, y: number, r: number, parts: [number, string][]) => { let a0 = -Math.PI / 2; return all(...parts.map(([fr, col]) => { const a1 = a0 + fr * Math.PI * 2, large = fr > 0.5 ? 1 : 0; const d = `M${x} ${y} L${f1(x + Math.cos(a0) * r)} ${f1(y + Math.sin(a0) * r)} A${r} ${r} 0 ${large} 1 ${f1(x + Math.cos(a1) * r)} ${f1(y + Math.sin(a1) * r)} Z`; a0 = a1; return path(d, col, C.ink, 1.2); })); };
 const strings = (x: number, y: number, h: number) => all(rect(x - 14, y - 4, 28, 4, C.brown, 1, C.ink, 1.1), line(`M${x - 10} ${y} L${x - 10} ${y + h} M${x + 10} ${y} L${x + 10} ${y + h} M${x} ${y} L${x} ${y + h * 0.4}`, GREY, 0.9));
 const stamp = (x: number, y: number, s = 1) => at(x, y, s, rect(-3, -16, 6, 10, C.brown, 2, C.ink, 1.1), circle(0, -18, 4, C.brown, C.ink, 1.1), rect(-8, -6, 16, 5, C.dark, 1, C.ink, 1.1));
 const battery = (x: number, y: number, lvl: number, col: string = OK) => all(rect(x - 10, y - 5, 20, 10, C.white, 2, C.ink, 1.3), rect(x + 10, y - 2, 2.5, 4, C.ink, 0.5, null), lvl > 0 ? rect(x - 8.5, y - 3.5, 17 * lvl, 7, col, 1, null) : '');
@@ -99,10 +98,11 @@ const bounce = (x: number, y: number, dir: 1 | -1) => all(arrow(x + dir * 14, y 
 
 export const POLITICAL_PHILOSOPHY_MOTIFS: Record<string, Svg> = {
   // ── 2231 Frihet och tvång ──
-  /** tvång: a big figure pushes a small, unwilling one forward with both hands; a grey figure walks freely by itself. */
-  'polf.tvång': all(bg(), fig(34, C.red, 'angry', { h: 1 }), reach(34, 1, 1, 58, 62), reach(34, 1, 1, 60, 76),
-    fig(70, C.denim, 'frown', { h: 0.72 }), sweat(80, 46), ex(92, 40, 16), arrow(74, 30, 100, 30, C.red, 2.6),
-    greyed(fig(104, C.grey, 'smile', { h: 0.46 })), ground),
+  /** tvång: she is squeezed in a press that someone else screws tight – she cannot get out; grey: a free person with open arms. */
+  'polf.tvång': all(bg(), rect(18, 18, 72, 8, GREY, 1, C.ink, 1.4), line('M54 4 L54 18', C.ink, 3), line('M42 6 L66 6', C.ink, 3),
+    rect(18, 26, 8, 86, '#7d838c', 1, C.ink, 1.4), rect(82, 26, 8, 86, '#7d838c', 1, C.ink, 1.4), arrow(10, 70, 24, 70, C.red, 2.6), arrow(98, 70, 84, 70, C.red, 2.6),
+    g('translate(54 0) scale(0.62 1) translate(-54 0)', fig(54, C.denim, 'frown', { h: 0.84 })), sweat(66, 40),
+    greyed(fig(108, C.grey, 'laugh', { h: 0.4 }), armsUp(108, 0.4)), ground),
   /** tvinga: a big figure drags a smaller one by the wrist; the smaller one leans back with heels dug in. */
   'polf.tvinga': all(bg(), fig(84, C.red, 'angry', { h: 1 }), g('rotate(-12 38 112)', fig(38, C.denim, 'frown', { h: 0.76 })), reach(84, 1, -1, 60, 70), line('M50 72 L60 70', C.skin, 5), circle(57, 71, 2.6, C.skin, C.ink, 1),
     sweat(26, 42), line('M14 112 l6 -3 M20 112 l6 -3', C.brown, 1.6), motion(28, 96, -1), ground),
@@ -112,14 +112,15 @@ export const POLITICAL_PHILOSOPHY_MOTIFS: Record<string, Svg> = {
     fig(58, C.orange, 'laugh', { h: 0.84, hairStyle: 'long' }), arrow(72, 92, 94, 92, OK, 2.6),
     at(92, 30, 1, palm(0, 0, 1.3)), bigX(92, 28, 10),
     greyed(rect(100, 86, 3, 26, GREY, 1, null), rect(102, 86, 14, 3, GREY, 0.5, null), fig(110, C.grey, 'frown', { h: 0.34 }))),
-  /** positiv frihet: with a book, a coin and a heart she climbs the steps up to her star; grey: without them, stuck at the bottom. */
-  'polf.positiv-frihet': all(bg(), stairs(40, 112, 4, 16, 14), star(100, 22, 9, C.yellow), glow(100, 22, 14),
-    fig(76, C.green, 'laugh', { h: 0.62 }, 70), bookIcon(56, 26, 0.7), coin(66, 18), heartS(76, 24, 0.6),
-    greyed(fig(18, C.grey, 'frown', { h: 0.56 }), qm(28, 48, 12, GREY)), ground),
-  /** handlingsfrihet: at a crossroads she may choose any of three ways; grey: a narrow corridor with one way only. */
-  'polf.handlingsfrihet': all(bg(), fig(36, C.purple, 'smile', { h: 0.8, hairStyle: 'long' }),
-    arrow(54, 60, 84, 30, OK, 3), arrow(56, 70, 92, 70, C.denim, 3), arrow(54, 80, 84, 104, C.orange, 3),
-    greyed(rect(94, 16, 18, 34, 'none', 0, GREY, 2), arrow(103, 46, 103, 22, GREY, 2.2)), ground),
+  /** positiv frihet: the way is open, and she crosses the gap on a bridge of book, coin and heart to reach her star; grey: no bridge, stuck at the edge. */
+  'polf.positiv-frihet': all(bg(SKY), path('M4 112 L4 76 L40 76 L40 112 Z', GRASS, C.ink, 1.4), path('M80 112 L80 76 L116 76 L116 112 Z', GRASS, C.ink, 1.4),
+    rect(40, 76, 14, 9, C.denim, 1, C.ink, 1.2), rect(54, 76, 13, 9, GOLD, 1, C.ink, 1.2), rect(67, 76, 13, 9, C.red, 1, C.ink, 1.2), bookIcon(47, 70, 0.4), coin(60, 70, 3), heartS(73, 70, 0.4),
+    fig(62, C.green, 'laugh', { h: 0.5 }, 76), star(100, 30, 10, C.yellow), glow(100, 30, 16),
+    greyed(fig(20, C.grey, 'frown', { h: 0.5 }, 76), qm(30, 30, 12, GREY))),
+  /** handlingsfrihet: a big open field – she can move in every direction; grey: a tiny pen where one can only stand still. */
+  'polf.handlingsfrihet': all(bg(), rect(10, 14, 76, 94, 'rgba(127,191,106,0.25)', 4, OK, 2), fig(48, C.purple, 'laugh', { h: 0.6, hairStyle: 'long' }, 92),
+    arrow(48, 52, 48, 22, OK, 2.4), arrow(62, 62, 80, 50, OK, 2.4), arrow(34, 62, 16, 50, OK, 2.4), arrow(64, 82, 82, 98, OK, 2.4), arrow(32, 82, 14, 98, OK, 2.4),
+    greyed(rect(94, 78, 18, 30, 'none', 1, GREY, 2), fig(103, C.grey, 'frown', { h: 0.34 }, 106))),
   /** begränsa: a speed-limit sign with 50 and a car that must slow down. */
   'polf.begränsa': all(bg(SKY), rect(4, 92, 112, 20, '#9aa0a8', 0, null), line('M10 102 L26 102 M40 102 L56 102 M70 102 L86 102 M100 102 L112 102', C.white, 2),
     line('M92 92 L92 50', C.ink, 2.4), circle(92, 38, 14, C.white, C.red, 4), T(92, 43, '50', 13, C.ink),
@@ -141,22 +142,22 @@ export const POLITICAL_PHILOSOPHY_MOTIFS: Record<string, Svg> = {
     greyed(strings(100, 40, 30), fig(100, C.grey, 'sleepy', { h: 0.5 })), ground),
 
   // ── 2232 Staten och legitimitet ──
-  /** stat: the pillared building of the state with its police (shield), school (book) and care (heart) around it. */
-  'polf.stat': all(bg(SKY), govB(60, 82, 1.3), flag(60, 22, C.denim, 14),
-    line('M30 90 L46 84 M90 90 L74 84 M60 92 L60 98', GREY, 1.4, '3 2'), shieldS(20, 98, 0.7, NAVY), bookIcon(60, 104, 0.6), heartS(100, 98, 0.9), ground),
+  /** stat: a country with borders – the state building rules over the land, the people and police, school and care inside it. */
+  'polf.stat': all(bg(SKY), path('M10 108 C6 76 16 46 44 38 C70 30 100 40 108 62 C114 82 108 104 96 108 Z', '#cfe7c2', C.red, 2.4), line('M10 108 C6 76 16 46 44 38 C70 30 100 40 108 62 C114 82 108 104 96 108', C.red, 2.4, '6 4'),
+    govB(60, 74, 0.9), flag(60, 30, C.denim, 12), line('M42 78 L28 90 M78 78 L92 90 M60 76 L60 90', GREY, 1.4, '3 2'),
+    shieldS(26, 96, 0.5, NAVY), bookIcon(60, 98, 0.5), heartS(94, 96, 0.7), crowd([40, 80], 0.26, [C.orange, C.green], 'smile', 108)),
   /** laglig: a demonstrator with a blank sign beside the law book with a check; grey: spraying a wall, beside a cross. */
   'polf.laglig': all(bg(), fig(36, C.green, 'smile', { h: 0.84 }), reach(36, 0.84, 1, 50, 44), line('M50 44 L50 18', C.brown, 2.4), rect(40, 8, 24, 14, C.white, 2, C.ink, 1.3),
     lawBook(70, 70, 1), check(80, 52, 1.1),
     greyed(rect(92, 60, 22, 30, '#ddd', 0, null), path('M96 72 c4 -6 8 6 12 -2 c3 -4 4 2 4 2', 'none', GREY, 2), fig(102, C.grey, 'smile', { h: 0.4 }), cross(104, 52, 0.8, GREY)), ground),
-  /** legitimitet: the leader stands on the raised hands of the people, who carry him gladly; grey: a ruler on a pile of weapons. */
-  'polf.legitimitet': all(bg(), fig(48, NAVY, 'smile', { h: 0.56 }, 66),
-    crowd([18, 34, 50, 66, 82], 0.58, PALETTE, 'laugh'), ...[18, 34, 50, 66, 82].map((x) => { return reach(x, 0.58, x < 48 ? 1 : -1, x < 48 ? x + 10 : x - 10, 68); }),
-    rect(28, 64, 42, 4, C.tan, 1, C.ink, 1), heartS(20, 18, 0.6), heartS(78, 16, 0.6),
-    greyed(path('M96 112 L104 96 L112 112 Z', GREY, C.ink, 1), line('M98 104 L110 96 M100 98 L112 104', C.ink, 1.4), fig(104, C.grey, 'angry', { h: 0.4 }, 98)), ground),
-  /** legitim: votes go into the ballot box and up to the leader, who gets a check; grey: a man climbs in through a window to grab the crown. */
-  'polf.legitim': all(bg(), ballotBox(24, 92, 1), crowd([12, 36], 0.42, [C.orange, C.green]), arrow(30, 70, 52, 48, OK, 2.4),
-    fig(64, NAVY, 'smile', { h: 0.8 }), check(64, 18, 1.2),
-    greyed(rect(92, 30, 20, 26, '#e0e0e0', 1, C.ink, 1.2), line('M102 30 L102 56 M92 43 L112 43', C.ink, 1.2), crown(102, 22, 0.8, GREY), fig(104, C.grey, 'angry', { h: 0.38 }), cross(102, 72, 0.8, GREY)), ground),
+  /** legitimitet: the people's checks form the pillar that carries the leader up; grey: a leader on a cracking pile of spears. */
+  'polf.legitimitet': all(bg(), ...[0, 1, 2, 3].map((i) => check(44, 100 - i * 14, 0.85)), rect(30, 50, 28, 4, C.tan, 1, C.ink, 1), fig(44, NAVY, 'smile', { h: 0.42 }, 50),
+    crowd([14, 74], 0.56, [C.orange, C.green], 'laugh'), reach(14, 0.56, 1, 34, 86), reach(74, 0.56, -1, 54, 86), glow(44, 22, 14),
+    greyed(line('M94 112 L100 80 M100 112 L102 80 M106 112 L104 80', C.ink, 2), path('M96 96 l4 3 l-3 4', 'none', C.ink, 1.4), fig(102, C.grey, 'angry', { h: 0.34 }, 80))),
+  /** legitim: left, the votes build a ladder up to the leader's crown (check); right, a grey man grabs a crown through a window (cross). */
+  'polf.legitim': all(bg(), line('M62 8 L62 110', C.grey2, 1.6, '4 3'), ballotBox(16, 98, 0.9), ...[0, 1, 2, 3].map((i) => rect(22 + i * 6, 84 - i * 12, 10, 7, C.white, 1, C.ink, 1)),
+    fig(44, NAVY, 'smile', { h: 0.36 }, 46), crown(44, 14, 0.8), check(18, 20, 1.2),
+    greyed(rect(76, 30, 30, 34, '#e0e0e0', 1, C.ink, 1.4), line('M91 30 L91 64 M76 47 L106 47', C.ink, 1.2), crown(91, 22, 0.9, GREY), arm(100, 80, 92, 24), fig(100, C.grey, 'angry', { h: 0.4 })), cross(108, 96, 1)),
   /** våldsmonopol: only the police officer in front of the state building holds a baton; the citizens' sticks are crossed out. */
   'polf.våldsmonopol': all(bg(SKY), govB(30, 70, 0.9),
     fig(36, NAVY, 'calm', { h: 0.8 }), rect(27, 34, 18, 4, NAVY, 1, C.ink, 1), reach(36, 0.8, 1, 52, 74), line('M52 74 L60 56', C.dark, 4), shieldS(20, 84, 0.6, NAVY),
@@ -190,10 +191,9 @@ export const POLITICAL_PHILOSOPHY_MOTIFS: Record<string, Svg> = {
   'polf.underordnad': all(bg(), rect(10, 70, 46, 42, STONE, 1, C.ink, 1.3), rect(56, 96, 56, 16, STONE, 1, C.ink, 1.3),
     greyed(fig(32, C.grey, 'calm', { h: 0.7 }, 70)), arrow(48, 34, 72, 50, C.red, 2.6),
     fig(84, C.orange, 'frown', { h: 0.74, hairStyle: 'long' }, 96)),
-  /** lydnad: a row of figures march in step behind the leader, all alike; a grey one at the back stands still. */
-  'polf.lydnad': all(bg(), fig(100, NAVY, 'calm', { h: 0.82 }), palm(110, 56, 0.9),
-    crowd([30, 50, 70], 0.64, [C.green, C.green, C.green], 'calm'), arrow(22, 40, 84, 40, C.green, 2.6),
-    greyed(fig(10, C.grey, 'angry', { h: 0.5 })), ground),
+  /** lydnad: the leader gives an order (arrow) and the man bows deeply and walks exactly that way. */
+  'polf.lydnad': all(bg(), fig(92, NAVY, 'calm', { h: 0.9 }), say(66, 20, 24, 14, arrow(58, 20, 74, 20, NAVY, 2.2), 84, 32),
+    g('rotate(14 40 112)', fig(40, C.green, 'calm', { h: 0.66 })), arrow(36, 100, 12, 100, C.green, 2.6), check(20, 40, 1.1), ground),
   /** karismatisk: a speaker shines and everyone looks at her with hearts; grey: a speaker with a sleeping audience. */
   'polf.karismatisk': all(bg(), glow(36, 40, 30), rays(36, 34, 22, 30, 14), fig(36, C.red, 'laugh', { h: 0.84, hairStyle: 'long' }), armsUp(36, 0.84),
     crowd([72, 88], 0.5, [C.green, C.denim], 'love'), heartS(72, 50, 0.5), heartS(88, 50, 0.5),
@@ -201,22 +201,24 @@ export const POLITICAL_PHILOSOPHY_MOTIFS: Record<string, Svg> = {
   /** maktlös: a tiny figure sits with empty hands in front of a huge machine; her battery is empty. */
   'polf.maktlös': all(bg(), rect(56, 20, 56, 90, '#b9bec6', 3, C.ink, 1.6), ...[[70, 40], [90, 40], [70, 64], [90, 64]].map(([x, y]) => circle(x!, y!, 7, '#e1e4e8', C.ink, 1.2)), rect(64, 84, 40, 6, C.dark, 1, null),
     fig(28, C.denim, 'frown', { h: 0.52 }), battery(28, 38, 0, C.red), ex(44, 32, 12, C.red), ground),
-  /** maktposition: the golden seat at the top of the stairs, with a woman sitting in it; grey people at the bottom. */
-  'polf.maktposition': all(bg(), stairs(20, 112, 5, 14, 12), rect(80, 30, 22, 30, GOLD, 3, C.ink, 1.4), rect(78, 52, 26, 6, '#c99a2a', 1, C.ink, 1.2), glow(90, 40, 24),
-    fig(90, C.purple, 'smile', { h: 0.5, hairStyle: 'long' }, 54), crown(90, 6, 0.6),
-    greyed(crowd([8, 18], 0.4, [C.grey, C.grey]))),
+  /** maktposition: a high golden seat with a control desk; from it lines run down to everything below; she sits in it. */
+  'polf.maktposition': all(bg(), rect(64, 56, 36, 56, STONE, 1, C.ink, 1.4), glow(82, 34, 26), rect(72, 22, 20, 24, GOLD, 3, C.ink, 1.4), rect(68, 44, 28, 6, '#c99a2a', 1, C.ink, 1.2),
+    fig(82, C.purple, 'smile', { h: 0.38, hairStyle: 'long' }, 50), rect(56, 46, 12, 6, C.dark, 1, C.ink, 1), circle(59, 49, 1.4, C.red, null), circle(64, 49, 1.4, OK, null),
+    ...[[14, 104], [30, 104], [46, 104]].map(([x, y]) => line(`M60 52 L${x} ${y! - 30}`, GREY, 1.2, '3 2')), greyed(crowd([14, 30, 46], 0.32, [C.grey]))),
   /** maktbalans: a level seesaw with two equal groups (check); grey: a small tilted seesaw. */
   'polf.maktbalans': (() => { const s = seesaw(52, 84, 40, 0); const t = seesaw(100, 100, 12, 0.5, GREY); return all(bg(), s.svg,
     crowd([18, 30], 0.36, [C.red, C.red], 'smile', 84), crowd([74, 86], 0.36, [C.denim, C.denim], 'smile', 84), check(52, 26, 1.3),
     greyed(t.svg, circle(t.r[0], t.r[1] - 4, 4, GREY, null)), ground); })(),
 
   // ── 2234 Individ och kollektiv ──
-  /** kollektiv (grupp): many people inside one big circle as one whole; a grey single person outside. */
-  'polf.kollektiv.2': all(bg(), ellipse(52, 82, 46, 30, 'rgba(79,157,105,0.18)', C.green, 2.2), crowd([24, 40, 56, 72], 0.5, PALETTE), crowd([32, 48, 64], 0.42, PALETTE.slice(3), 'laugh', 104),
-    greyed(fig(108, C.grey, 'smile', { h: 0.5 })), ground),
-  /** individuell: three people each get their own plan card with a different symbol; grey: identical cards for everybody. */
-  'polf.individuell': all(bg(), ...[[22, C.orange, star(22, 26, 6, C.yellow)], [60, C.green, heartS(60, 26, 0.6)], [98, C.denim, circle(98, 26, 5, C.denim, C.ink, 1)]].map(([x, col, ic]) => all(
-    fig(x as number, col as string, 'smile', { h: 0.64 }), rect((x as number) - 10, 14, 20, 24, C.white, 2, C.ink, 1.3), ic as string)), ground),
+  /** kollektiv (grupp): many small people together form one big human shape; a grey single person stands beside it. */
+  'polf.kollektiv.2': all(bg(), circle(50, 26, 16, 'rgba(79,157,105,0.22)', C.green, 2.2), path('M22 112 L24 56 C24 46 34 44 50 44 C66 44 76 46 76 56 L78 112 Z', 'rgba(79,157,105,0.22)', C.green, 2.2),
+    crowd([42, 58], 0.2, PALETTE, 'smile', 36), crowd([36, 50, 64], 0.22, PALETTE.slice(2), 'smile', 70), crowd([34, 46, 58, 70], 0.24, PALETTE, 'smile', 92), crowd([38, 52, 66], 0.24, PALETTE.slice(1), 'smile', 112),
+    greyed(fig(102, C.grey, 'smile', { h: 0.5 })), ground),
+  /** individuell: three people of different sizes each get their own plan made for them; grey: one and the same plan for everybody. */
+  'polf.individuell': all(bg(), ...[[18, C.orange, 0.62, star(18, 18, 5, C.yellow)], [48, C.green, 0.5, heartS(48, 18, 0.5)], [78, C.denim, 0.4, circle(78, 18, 4, C.denim, C.ink, 1)]].map(([x, col, h, ic]) => all(
+    fig(x as number, col as string, 'laugh', { h: h as number }, 80), rect((x as number) - 8, 8, 16, 20, C.white, 2, C.ink, 1.2), ic as string, line(`M${x} 28 L${x} ${80 - 49 * 0.84 * (h as number) - 64 * 0.84 * (h as number)}`, GREY, 1, '2 2'))),
+    rect(4, 80, 112, 2, C.grey2, 0, null), greyed(crowd([60, 76, 92, 108], 0.24, [C.grey]), ...[60, 76, 92, 108].map((x) => rect(x - 4, 84, 8, 6, C.white, 1, C.ink, 0.8))), ground),
   /** individualism: on the seesaw the single person weighs more than the grey group. */
   'polf.individualism': (() => { const s = seesaw(60, 86, 46, -0.28); return all(bg(), s.svg,
     fig(s.l[0] + 4, C.orange, 'laugh', { h: 0.62, hairStyle: 'long' }, s.l[1]), glow(s.l[0] + 4, s.l[1] - 40, 16),
@@ -245,9 +247,10 @@ export const POLITICAL_PHILOSOPHY_MOTIFS: Record<string, Svg> = {
   /** okränkbar: a person inside a protective dome; grey arrows bounce off it. */
   'polf.okränkbar': all(bg(), dome(60, 112, 40), fig(60, C.orange, 'smile', { h: 0.62, hairStyle: 'long' }), heartS(60, 40, 0.7),
     bounce(18, 70, -1), bounce(102, 70, 1), arrow(60, 4, 60, 14, GREY, 2.2), line('M54 16 l-4 4 M66 16 l4 4', GREY, 1.6), ground),
-  /** oförytterlig: the heart is chained to the person; a grey buyer offers coins and is refused. */
-  'polf.oförytterlig': all(bg(), fig(32, C.green, 'smile', { h: 0.84 }), heartS(58, 60, 1.1, C.red), ...[40, 45, 50].map((x, i) => ellipse(x, 68 - i * 2, 3, 2, 'none', GOLD, 1.6)),
-    greyed(fig(96, C.grey, 'smile', { h: 0.62 }), reach(96, 0.62, -1, 80, 76), coin(76, 74, 3.6), coin(80, 70, 3.6)), cross(82, 44, 1.1), ground),
+  /** oförytterlig: the heart is fastened to her; its price tag is crossed out – it cannot be sold, and the grey buyer goes away. */
+  'polf.oförytterlig': all(bg(), fig(28, C.green, 'smile', { h: 0.84 }), heartS(58, 62, 1.2, C.red), ...[38, 43, 48].map((x, i) => ellipse(x, 70 - i * 2, 3, 2, 'none', GOLD, 1.8)), padlock(50, 80, 0.6),
+    line('M66 54 L80 40', C.ink, 1.2), path('M78 30 L96 30 L102 38 L96 46 L78 46 Z', C.white, C.ink, 1.3), T(88, 42, '$', 11, C.ink), bigX(90, 38, 9),
+    greyed(fig(104, C.grey, 'frown', { h: 0.5 }), bag(96, 100, 0.6)), ground),
   /** frihetsrättighet: a woman speaks freely through a megaphone under a shield; the grey state's stopping hand is crossed out. */
   'polf.frihetsrättighet': all(bg(), shieldS(40, 54, 2.6, 'rgba(47,74,122,0.18)'), fig(40, C.orange, 'laugh', { h: 0.8, hairStyle: 'long' }), reach(40, 0.8, 1, 56, 46), megaphone(62, 44, 1), ex(78, 36, 14, C.red),
     greyed(govB(98, 80, 0.6), palm(98, 34, 1.2)), bigX(98, 32, 8), ground),
@@ -268,10 +271,10 @@ export const POLITICAL_PHILOSOPHY_MOTIFS: Record<string, Svg> = {
   'polf.garantera': all(bg(), fig(28, NAVY, 'smile', { h: 0.84 }), reach(28, 0.84, 1, 54, 70), doc(74, 62, 40, 44, 2, true), check(74, 50, 1.4), shieldS(100, 98, 0.6, OK), ground),
 
   // ── 2236 Socialt kontrakt ──
-  /** socialt kontrakt: many people sign one big shared document; the state building rises above it. */
-  'polf.socialt-kontrakt': all(bg(), govB(60, 30, 0.6), arrow(60, 34, 60, 42, GREY, 2), doc(60, 66, 44, 32, 4),
-    ...[[18, C.orange], [102, C.green]].map(([x, col]) => all(fig(x as number, col as string, 'smile', { h: 0.62 }), reach(x as number, 0.62, (x as number) < 60 ? 1 : -1, (x as number) < 60 ? 40 : 80, 76))),
-    crowd([44, 76], 0.36, [C.denim, C.purple]), ground),
+  /** socialt kontrakt: all the people sign one contract with the state; they give up a little (arrows up) and the state gives them protection (the shield over them). */
+  'polf.socialt-kontrakt': all(bg(), govB(60, 30, 0.55), arrow(40, 52, 50, 36, GREY, 1.8), arrow(70, 36, 80, 52, OK, 1.8), doc(60, 58, 34, 22, 4, true),
+    path('M8 80 C30 66 90 66 112 80', 'none', NAVY, 3), shieldS(60, 74, 0.55, NAVY, path('M-5 0 l4 4 l7 -7', 'none', C.white, 2.2)),
+    crowd([14, 32, 50, 70, 88, 106], 0.44, PALETTE), ground),
   /** naturtillstånd: wild land without houses or laws; two men fight with clubs over a fruit. */
   'polf.naturtillstånd': all(bg(DUSK), tree(16, 112, 1.1), path('M70 112 L84 80 L98 112 Z', '#9a8a70', C.ink, 1.2),
     fig(44, C.brown, 'angry', { h: 0.7 }), fig(92, '#6a7a40', 'angry', { h: 0.7 }), reach(44, 0.7, 1, 58, 50), club(58, 50, 30), reach(92, 0.7, -1, 78, 50), club(78, 50, -30), circle(68, 70, 4, C.red, C.ink, 1), ex(68, 30, 14), ground),
@@ -304,12 +307,15 @@ export const POLITICAL_PHILOSOPHY_MOTIFS: Record<string, Svg> = {
   /** minoritetsskydd: two people stand safe under a shield-dome; the big crowd outside is stopped. */
   'polf.minoritetsskydd': all(bg(), dome(86, 112, 28), crowd([78, 94], 0.46, [C.denim, C.denim], 'smile'), shieldS(86, 28, 1, NAVY, path('M-5 0 l4 4 l7 -7', 'none', C.white, 2.2)),
     crowd([12, 26, 40], 0.66, [C.red], 'angry'), bounce(62, 80, -1), ground),
-  /** fördelningsrättvisa: the cake is divided so that each person gets a fair piece; grey: one person takes almost all. */
-  'polf.fördelningsrättvisa': all(bg(), pie(42, 40, 24, [[0.34, C.orange], [0.33, C.green], [0.33, C.denim]]), check(76, 22, 1.1),
-    crowd([18, 42, 66], 0.5, [C.orange, C.green, C.denim], 'laugh'),
-    greyed(pie(100, 70, 11, [[0.85, GREY], [0.15, C.grey2]]), fig(100, C.grey, 'laugh', { h: 0.34 }))),
-  /** skillnadsprincip: she earns more, but the arrow from her lifts up the poorest too; both bars rise. */
-  'polf.skillnadsprincip': all(bg(), rect(16, 40, 20, 72, GOLD, 1, C.ink, 1.2), rect(70, 70, 20, 42, OK, 1, C.ink, 1.2), rect(70, 86, 20, 26, 'rgba(0,0,0,0.12)', 0, null),
-    fig(26, NAVY, 'smile', { h: 0.4 }, 40), fig(80, C.orange, 'laugh', { h: 0.4 }, 70), arrow(80, 92, 80, 74, C.white, 2.4),
-    path('M40 34 C56 20 70 30 76 50', 'none', OK, 2.4), path('M76 50 L71 44 L79 44 Z', OK, OK, 1), greyed(rect(100, 100, 10, 12, GREY, 1, null)), ground),
+  /** fördelningsrättvisa: everyone gets the number of boxes they need, so all can see over the fence; grey: the same box for all, and the smallest sees nothing. */
+  'polf.fördelningsrättvisa': all(bg(SKY), star(30, 22, 7, C.yellow), check(54, 24, 1),
+    fig(14, C.orange, 'laugh', { h: 0.62 }), rect(24, 102, 12, 10, C.tan, 1, C.ink, 1.1), fig(30, C.green, 'laugh', { h: 0.5 }, 102), rect(40, 92, 12, 20, C.tan, 1, C.ink, 1.1), line('M40 102 L52 102', C.ink, 1), fig(46, C.denim, 'laugh', { h: 0.38 }, 92),
+    rect(4, 66, 54, 24, '#c08a5a', 1, C.ink, 1.4), line('M16 66 L16 90 M30 66 L30 90 M44 66 L44 90', C.ink, 1),
+    greyed(rect(66, 102, 10, 10, C.tan, 1, C.ink, 1), rect(80, 102, 10, 10, C.tan, 1, C.ink, 1), rect(94, 102, 10, 10, C.tan, 1, C.ink, 1),
+      fig(71, C.grey, 'smile', { h: 0.5 }, 102), fig(85, C.grey, 'smile', { h: 0.42 }, 102), fig(99, C.grey, 'frown', { h: 0.26 }, 102), rect(62, 66, 50, 24, '#c08a5a', 1, C.ink, 1.4)), ground),
+  /** skillnadsprincip: a pulley links the two platforms – when she climbs higher, the poorest man is lifted up too (check); grey: one rises while the other sinks. */
+  'polf.skillnadsprincip': all(bg(), line('M8 8 L76 8', C.ink, 2.4), circle(22, 14, 5, C.silver, C.ink, 1.3), circle(62, 14, 5, C.silver, C.ink, 1.3), line('M17 14 L17 40 M67 14 L67 70 M22 9 L62 9', C.ink, 1.2),
+    rect(6, 40, 22, 4, GOLD, 1, C.ink, 1.2), rect(56, 70, 22, 4, OK, 1, C.ink, 1.2), fig(17, NAVY, 'smile', { h: 0.34 }, 40), fig(67, C.orange, 'laugh', { h: 0.34 }, 70),
+    arrow(36, 44, 36, 26, GOLD, 2.4), arrow(84, 86, 84, 70, OK, 2.4), check(46, 98, 1.2),
+    greyed(line('M98 112 L98 40 M110 50 L110 112', GREY, 1), rect(92, 40, 12, 3, GREY, 1, null), rect(104, 96, 12, 3, GREY, 1, null), arrow(98, 52, 98, 42, GREY, 2), arrow(110, 84, 110, 94, GREY, 2)), cross(104, 20, 0.8, GREY), ground),
 };
