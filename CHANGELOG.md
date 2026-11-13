@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.39.0 – 2026-11-13
+
+42 nya moduler som gör överämnet *Filosofi & etik* (R04-A04) komplett. Varje nytt modulord har en egen bild, utom de 48 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 712 målord)
+- **Filosofins grundord** (2201–2207): begrepp och definition, påstående och slutsats, argument och premiss, logik och motsägelse, sanning och kunskap, tankeexperiment och filosofisk diskussion.
+- **Kunskapsteori** (2211–2217): att veta och tro, erfarenhet och förnuft, skepticism, evidens och belägg, rättfärdigande, perspektiv och tolkning samt kunskapens gränser.
+- **Etik & moral** (2221–2227): rätt och fel, plikt och ansvar, konsekvenser och nytta, dygder och karaktär, moralisk konflikt, rättvisa och jämlikhet samt etiska dilemman.
+- **Politisk filosofi** (2231–2237): frihet och tvång, staten och legitimitet, makt och auktoritet, individ och kollektiv, rättigheter, socialt kontrakt samt demokrati och rättvisa.
+- **Medvetande & identitet** (2241–2247): medvetande och upplevelse, själ och kropp, personlig identitet, fri vilja, avsikt och handling, tid och självuppfattning samt artificiellt medvetande.
+- **Existens & verklighet** (2251–2257): existens och varande, orsak och nödvändighet, tid och rum, verklighet och sken, livets mening, döden och ändligheten samt existentialismens teman.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 346 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`, bland annat från *Antikens arv*, *Upplysningen*, *Idéernas historia*, *Moderna livsåskådningar*, *Personliga övertygelser* och Samhälle & institutioner.
+- Nya betydelser på befintliga poster: *hållbar* (om argument), *tro* (uppfattning, "i tron att"), *mogna* (om människor), *robot* (maskin), *kollektiv* (grupp) och *nödvändighet* (filosofiskt).
+- Grundorden *begrepp*, *kunskap*, *upplevelse*, *minne*, *jag*, *handling*, *barndom*, *stat*, *orsak*, *verklighet* och *död* har fått egna poster. Filosofernas namn (bl.a. Descartes, Hobbes, Rawls, Sartre, Camus) är tillagda i grundordförrådets namnlista.
+- Åtta poster skrevs av både *Filosofins grundord* och *Kunskapsteori*, och fem av *Etik & moral*. De ligger nu bara i den första modulen i katalogordningen.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Arkeologi & kulturarv* (R04-A05): Arkeologins metoder → Utgrävningar.
+
+### Bilder (304 nya ordbilder)
+- 266 symbolbilder, 6 bilder som får användas i bildövningar och resten scener.
+- 316 symbol- och adjektivbilder blindtestades. 268 klarade testet efter högst två omgångar.
+- **48 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *tänka sig/föreställa sig*, *självuppfattning/självbild*, *autonomi/självbestämmande*, *socialt kontrakt/samhällskontrakt* och *existera/finnas till*.
+- Ord som redan stod på listan, till exempel *plikt*, *etisk*, *empirisk*, *motargument*, *meningen med livet* och *existentiell*, fick inga nya bilder.
+- Filosofer ritas som små neutrala figurer utan porträttlikhet. Abstrakta begrepp är symboliska minischener med en grå referens som kontrast.
+- Nya bildfiler i `src/ui/wordArt/`: `philosophyBasics.ts`, `epistemology.ts`, `ethics.ts`, `politicalPhilosophy.ts`, `consciousness.ts` och `existence.ts`.
+
+Service workern är `swechan-v43`.
+
+
 ## 0.38.0 – 2026-11-13
 
 42 nya moduler som gör överämnet *Religion & idéhistoria* (R04-A03) komplett. Varje nytt modulord har en egen bild, utom de 17 ord som underkändes i två blindtestomgångar.

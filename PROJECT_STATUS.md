@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.38.0 (släppt 2026-11-13) · **Senast uppdaterad:** 2026-11-13 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.39.0 (släppt 2026-11-13) · **Senast uppdaterad:** 2026-11-13 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 887 publicerade moduler. 882 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnena *Historiska epoker* (R04-A01), *Militärhistoria* (R04-A02) och *Religion & idéhistoria* (R04-A03) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 929 publicerade moduler. 924 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnena *Historiska epoker* (R04-A01), *Militärhistoria* (R04-A02), *Religion & idéhistoria* (R04-A03) och *Filosofi & etik* (R04-A04) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Filosofi & etik* (R04-A04). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Arkeologi & kulturarv* (R04-A05). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 11 477 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 11 781 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Filosofi & etik* (R04-A04), med bild på varje ord. Filosofiord från *Antikens arv*, *Upplysningen* och 0.38 (filosof, förnuft, logik, naturrätt, människovärde m.fl.) finns redan. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Arkeologi & kulturarv* (R04-A05), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -114,6 +114,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Judendom & andra traditioner: `s.jiddisch.1`, `s.bud.2`, `s.animism.1`
   - Idéernas historia: `s.meningen-med-livet.1`, `s.existentiell.1`, `s.ateism.1`
   - Förväxlingarna gällde mest närliggande ord: *tro/tro på/troende/religiös/from*, *bön/be/mantra*, *tillbe/be/tacksamhet*, *protestantisk/reformation*, *renhet/rening*, *nirvana/återfödelse/upplysning*, *theravadabuddhism/riktning*, *bud/budord*, *animism/besjälad*, *meningen med livet/livsfråga/existentiell* och *ateism/ateist/agnostiker*.
+- **Från 0.39 (48 ord):**
+  - Filosofins grundord: `s.term.1`, `s.utsaga.1`, `s.otänkbar.1`, `s.tänka-sig.1`, `s.filosofisk.1`, `s.samtalsledare.1`
+  - Kunskapsteori: `s.förmoda.1`, `s.tro.2`, `s.tvivla-på.1`, `s.skepticism.1`, `s.evidens.1`, `s.rättfärdiga.1`, `s.rättfärdigande.1`, `s.på-goda-grunder.1`, `s.hålla-för-sant.1`, `s.synsätt.1`, `s.gåta.1`
+  - Etik & moral: `s.omoralisk.1`, `s.pliktetik.1`, `s.maxim.1`, `s.nytta.1`, `s.rättvisa.1`, `s.lika-möjligheter.1`
+  - Politisk filosofi: `s.tvång.1`, `s.stat.1`, `s.lydnad.1`, `s.maktposition.1`, `s.individuell.1`, `s.fördelningsrättvisa.1`
+  - Medvetande & identitet: `s.medvetenhet.1`, `s.inifrån.1`, `s.förnimmelse.1`, `s.handling.1`
+  - Existens & verklighet: `s.finnas-till.1`, `s.existens.1`, `s.varande.1`, `s.väsen.1`, `s.nödvändigtvis.1`, `s.overklig.1`, `s.sken.1`, `s.idealism.1`, `s.ha-något-att-leva-för.1`, `s.meningslöshet.1`, `s.livsuppgift.1`, `s.hängivenhet.1`, `s.ändlighet.1`, `s.ond-tro.1`, `s.existentialism.1`
+  - Abstrakta filosofiord var svåra att skilja från ord ur samma familj eller närliggande begrepp: *existens/existera/varande*, *sken/skenbar/skenet bedrar*, *ändlighet/ändlig/dödlig*, *rättvisa/jämlikhet/likabehandling*, *rättfärdiga/rättfärdigande/underbygga/välgrundad*, *tvång/tvinga/inskränka*, *stat/rättsstat*, *nytta/gynna*, *meningslöshet/tomhet/meningslös*, *idealism/inbillning*. Många underkändes för att granskaren svarade rätt men med låg säkerhet. Produktägaren kan överväga synonymmarkering och ett nytt test, eller andra visualiseringar än symbolbilder för de mest abstrakta orden.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -259,6 +267,23 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Sverige: över 100 000 katoliker, omkring 20 000 judar, judiska församlingar sedan 1775, ungefär hälften medlemmar i Svenska kyrkan, kyrkoavgift omkring en procent, kvinnliga präster sedan 1960, prästerskapet ett riksdagsstånd till 1866, borgerlig vigsel 1908, religionsfrihetslagen 1951, Katedralskolan i Lund 1085, Uppsala universitet 1477, Svenska kyrkans ursäkt till samerna 2021
   - historia: ämbetsexamen 605–1905, Japan på månkalender till 1872, Galilei 1633 och erkännandet 1992, Picos tal 1486, Erasmus grekiska Nya testamente 1516, dalai lama i Indien sedan 1959
 - **0.38, bilder:** *ateism*, *sekulär humanism* och *religionskritik* använder överkorsade, neutrala symboler (strålar från moln, en liten kyrka). Produktägaren bör bedöma om det känns respektfullt nog. *osmansk* visar den historiska osmanska flaggan.
+- **0.39, svenska:**
+  - lemman som mest används i bestämd form: *skadeprincip*, *skillnadsprincip*, *allmänvilja*, *eftervärlden*, *tinget i sig*; *metodiskt tvivel* (metodiska tvivlet, ingen plural); *tabula rasa* som fras
+  - böjningar att kontrollera mot SAOL: *hörsägen* (hörsägnen/hörsägner), *hyckleri*, *samvetskval*, *orätt* (utan plural), *förundran* (utan plural), *motsäga* (motsade/motsagt), *slump* (slumpar), *växelverkan*, *jag* som substantiv (ett jag, jaget), *kännande* som oböjligt adjektiv, *materien*
+  - *död* är nu ett substantiv med nyckeln `e.död`; ett senare adjektiv *död* behöver en egen nyckel
+  - *ond tro* har Sartres betydelse (juridiska betydelsen nämns i förklaringen); *svartvit* bara bildligt; *plikttrogen*, *rättrådig* och *överhet* är något ålderdomliga
+  - *s.robot.1* (missil) fick etiketten "vapen" när *robot* (maskin) blev betydelse 2; *s.kollektiv.1* fick "boende", *s.mogna.1* "frukt", *s.tro.1* "religion"
+  - lästexter är förenklade för ordförrådskontrollen: Thoreaus skäl, Platon och hönan (fjädrarna bara i `factSources`), induktion med solen (Hume) i stället för svanar, Turing och Popper utan namn, *tala för/emot* lite styltigt i *Evidens och belägg*
+- **0.39, japanska:**
+  - termer att granska: 真理値, わら人形論法, 循環論法, 多義的/一義的, 合理論, 方法的懐疑, 解釈の優先権 (*tolkningsföreträde*), 準拠枠 (*referensram*), また{聞|ぎ}き (*hörsägen*), 帰結主義, 義務論, 格率, 無知のヴェール, 消極的自由/積極的自由, 危害原理, 一般意志, 格差原理, 分配的正義, 暴力の独占, お{上|かみ} (*överhet*), 心的な (*mental*), 自己認識 (*självuppfattning*), 人格の同一性, 体感時間, 首尾一貫感覚 (*KASAM*), 自由の刑に処せられた, 自己欺瞞 (*ond tro*)
+  - exemplet för *åberopa* översätts friare (黙秘権を行使しました); `jaAlt` saknas i *Medvetande & identitet*
+- **0.39, fakta (står i `factSources`, NE-uppslagen är skrivna ur minnet):**
+  - Platon (*Theaitetos*, Gyges ring), Locke 1690/1694, Descartes 1637/1641, Kant 1781, Russell 1948, Gettier 1963, Protagoras, W. E. Hill 1915, Sokrates enligt *Apologia*, patientsäkerhetslagen 6 kap. 1 §
+  - Foot 1967 (spårvagnsproblemet, "en filosof från England"), Mill, Rawls 1971, Aristoteles medelväg; organdonation är förenklad och nämner inte presumerat samtycke
+  - Berlin 1958, Mill 1859, Weber 1919/1922, Thoreau 1846/1849, Hobbes 1651, Rousseau 1762, FN 1948, Tocqueville 1835–40, regeringsformen 1 kap. 1 § och 2 kap.
+  - Gallup 1970 och skator i spegeltestet, Laplace 1814, Libet 1983, Searles argument
+  - Leibniz 1714, Hume (*Enquiry* VII), Augustinus (*Bekännelser* XI:14, fritt), Minkowski 1908, Epikuros (fritt), Heidegger 1927, Camus 1942/1951, Antonovsky 1987
+- **0.39, bilder:** filosofer är neutrala figurer utan porträttlikhet; *förgänglighet* visar en neutral blomma (körsbärsblommor nämns bara i texten).
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -277,12 +302,13 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v42`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v43`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Begrepp och definition* (SWC-HIS-04-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Filosofins grundord* (R04-A04-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
-- **Delade betydelser:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`, och integratören strök den senares.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Utgrävningar* (SWC-HIS-05-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Arkeologins metoder* (R04-A05-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit.
+- **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.

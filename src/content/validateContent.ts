@@ -117,6 +117,18 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.jiddisch.1', 's.bud.2', 's.animism.1',
   // 0.38 (Idéernas historia), after two blind-test rounds
   's.meningen-med-livet.1', 's.existentiell.1', 's.ateism.1',
+  // 0.39 (Kunskapsteori), after two blind-test rounds
+  's.förmoda.1', 's.tro.2', 's.tvivla-på.1', 's.skepticism.1', 's.evidens.1', 's.rättfärdiga.1', 's.rättfärdigande.1', 's.på-goda-grunder.1', 's.hålla-för-sant.1', 's.synsätt.1', 's.gåta.1',
+  // 0.39 (Filosofins grundord), after two blind-test rounds
+  's.term.1', 's.utsaga.1', 's.otänkbar.1', 's.tänka-sig.1', 's.filosofisk.1', 's.samtalsledare.1',
+  // 0.39 (Etik & moral), after two blind-test rounds
+  's.omoralisk.1', 's.pliktetik.1', 's.maxim.1', 's.nytta.1', 's.rättvisa.1', 's.lika-möjligheter.1',
+  // 0.39 (Medvetande & identitet), after two blind-test rounds
+  's.medvetenhet.1', 's.inifrån.1', 's.förnimmelse.1', 's.handling.1',
+  // 0.39 (Politisk filosofi), after two blind-test rounds
+  's.tvång.1', 's.stat.1', 's.lydnad.1', 's.maktposition.1', 's.individuell.1', 's.fördelningsrättvisa.1',
+  // 0.39 (Existens & verklighet), after two blind-test rounds
+  's.finnas-till.1', 's.existens.1', 's.varande.1', 's.väsen.1', 's.nödvändigtvis.1', 's.overklig.1', 's.sken.1', 's.idealism.1', 's.ha-något-att-leva-för.1', 's.meningslöshet.1', 's.livsuppgift.1', 's.hängivenhet.1', 's.ändlighet.1', 's.ond-tro.1', 's.existentialism.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

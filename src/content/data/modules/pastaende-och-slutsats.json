@@ -1,0 +1,181 @@
+{
+ "id": "m.pastaende-och-slutsats",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-13",
+ "titleSv": "Påstående och slutsats",
+ "titleJa": "{主張|しゅちょう}と{結論|けつろん}",
+ "descriptionSv": "Påstående och slutsats: påstående, påstå, hävda, utsaga, sakpåstående, värdepåstående, sanningsvärde, grundlös, välgrundad, tvärsäker, slutsats, dra slutsatser, följa av, följaktligen, härleda, förhastad och generalisera.",
+ "descriptionJa": "{主張|しゅちょう}と{結論|けつろん}：{主張|しゅちょう}、{主張|しゅちょう}する、{強|つよ}く{主張|しゅちょう}する、{言明|げんめい}、{事実|じじつ}についての{主張|しゅちょう}、{価値判断|かちはんだん}、{真理値|しんりち}、{根拠|こんきょ}のない、{根拠|こんきょ}のしっかりした、{自信満々|じしんまんまん}の、{結論|けつろん}、{結論|けつろん}を{出|だ}す、{導|みちび}かれる、したがって、{導|みちび}き{出|だ}す、{早|はや}まった、{一般化|いっぱんか}する。",
+ "categoryId": "R04-A04-T01",
+ "tags": [
+  "filosofi",
+  "tänkande",
+  "argumentation"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.begrepp-och-definition",
+  "m.motivera-ett-pastaende"
+ ],
+ "related": [],
+ "recommendedOrder": 2202,
+ "words": [
+  {
+   "senseId": "s.påstående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påstå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hävda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsaga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sakpåstående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värdepåstående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sanningsvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.välgrundad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvärsäker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-slutsatser.1",
+   "active": true
+  },
+  {
+   "senseId": "s.följa-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.följaktligen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.härleda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förhastad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.generalisera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från påstående till slutsats",
+  "paragraphs": [
+   "I dag talar läraren Karin om påståenden. Hon skriver två meningar på tavlan: ”Stockholm är Sveriges huvudstad” och ”Stockholm är Sveriges finaste stad”. Båda är utsagor, men de är olika sorters påståenden.",
+   "– Den första meningen är ett sakpåstående, säger Karin. Den har ett sanningsvärde: den är antingen sann eller falsk, och vi kan kontrollera den. Den andra är ett värdepåstående. Där kan vi inte mäta vem som har rätt, men vi kan fråga varför någon hävdar det.",
+   "Jonas påstår att alla svenskar dricker kaffe varje dag. – Det är en förhastad slutsats, säger Sofia. Du känner tre personer som dricker kaffe varje dag, och nu generaliserar du till tio miljoner. Jonas är tvärsäker, men när de letar i statistiken visar det sig att påståendet är grundlöst.",
+   "Karin visar ett klassiskt exempel från Aristoteles logik: ”Alla människor kommer att dö. Sokrates är en människa. Följaktligen kommer Sokrates att dö.” Slutsatsen följer av de två första meningarna. Om de är sanna, måste slutsatsen också vara sann.",
+   "– En bra tänkare vill inte dra slutsatser för snabbt, säger Karin. Hon härleder dem steg för steg från det hon vet. Då blir slutsatsen välgrundad. Sofia tänker att det låter enkelt, men att det är svårt i praktiken."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken mening är ett värdepåstående?",
+    "options": [
+     "Stockholm är Sveriges huvudstad",
+     "Sokrates är en människa",
+     "Alla människor kommer att dö",
+     "Stockholm är Sveriges finaste stad"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den andra är ett värdepåstående.",
+    "explanationJa": "「いちばん{素敵|すてき}」は{価値判断|かちはんだん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför säger Sofia att Jonas slutsats är förhastad?",
+    "options": [
+     "Han har läst för mycket statistik",
+     "Han generaliserar från bara tre personer",
+     "Han dricker inte kaffe själv",
+     "Han håller med Karin"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Du känner tre personer som dricker kaffe varje dag, och nu generaliserar du till tio miljoner.",
+    "explanationJa": "{三人|さんにん}だけを{見|み}て、{全員|ぜんいん}について{言|い}っているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Jonas påstående visade sig vara grundlöst.",
+    "correct": true,
+    "explanationSv": "När de letar i statistiken visar det sig att påståendet är grundlöst.",
+    "explanationJa": "{統計|とうけい}を{調|しら}べると、{根拠|こんきょ}がないとわかりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför måste slutsatsen om Sokrates vara sann?",
+    "options": [
+     "Karin säger det",
+     "Sokrates var en känd filosof",
+     "Den följer av två sanna meningar",
+     "Den är ett värdepåstående"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Slutsatsen följer av de två första meningarna. Om de är sanna, måste slutsatsen också vara sann.",
+    "explanationJa": "{二|ふた}つの{文|ぶん}が{正|ただ}しければ、{結論|けつろん}も{正|ただ}しくなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Enligt Karin blir en slutsats välgrundad när man drar den snabbt.",
+    "correct": false,
+    "explanationSv": "En bra tänkare vill inte dra slutsatser för snabbt … Då blir slutsatsen välgrundad.",
+    "explanationJa": "{一歩|いっぽ}ずつ{導|みちび}き{出|だ}すと、{根拠|こんきょ}のしっかりした{結論|けつろん}になります。"
+   }
+  ],
+  "factSources": [
+   "Exemplet ”Alla människor är dödliga. Sokrates är en människa. Alltså är Sokrates dödlig.” är det klassiska läroboksexemplet på en syllogism i den aristoteliska logiken (Nationalencyklopedin, ”syllogism”).",
+   "Sveriges folkmängd passerade tio miljoner 2017 (SCB).",
+   "Samtalet i klassrummet är en påhittad scen."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni sorterar påståenden från nyheter och vardag.",
+  "discussionPoints": [
+   "Ge ett sakpåstående och ett värdepåstående om din hemstad.",
+   "När drog du en förhastad slutsats senast?",
+   "Varför är det lätt att generalisera om människor från andra länder?",
+   "Hur kan man märka att någon är tvärsäker utan goda skäl?"
+  ]
+ }
+}
