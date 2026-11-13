@@ -94,34 +94,35 @@ const waterLine = (y: number) => line(`M6 ${y} C14 ${y - 3} 22 ${y + 3} 30 ${y} 
 const frame = (x: number, y: number, w: number, h: number, inner: Svg = '', col: string = GOLD) => all(rect(x - 3, y - 3, w + 6, h + 6, col, 1, C.ink, 1.4), rect(x, y, w, h, C.white, 0, C.ink, 1), inner);
 const tree = (x: number, y: number, s = 1, col: string = C.green) => at(x, y, s, rect(-2.5, -16, 5, 16, C.brown, 1, C.ink, 1), circle(0, -24, 11, col, C.ink, 1.2), circle(-7, -19, 7, col, C.ink, 1.2), circle(7, -19, 7, col, C.ink, 1.2));
 const flag = (x: number, y: number, col: string = C.red) => all(line(`M${x} ${y} L${x} ${y - 22}`, C.ink, 1.8), path(`M${x} ${y - 22} L${x + 12} ${y - 18} L${x} ${y - 14} Z`, col, C.ink, 1));
-const qbox = (x: number, y: number, s = 1, col: string = '#b07a2a') => at(x, y, s, rect(-12, -10, 24, 20, col, 2, C.ink, 1.4), rect(-12, -14, 24, 6, '#c98f3a', 2, C.ink, 1.3), T(0, 7, '?', 13, C.white));
 const trophy = (x: number, y: number, s = 1) => at(x, y, s, path('M-7 -10 L7 -10 L6 -2 C5 3 -5 3 -6 -2 Z', GOLD, C.ink, 1.2), path('M-7 -8 C-12 -8 -12 -2 -6 -1 M7 -8 C12 -8 12 -2 6 -1', 'none', C.ink, 1.1), rect(-2, 2, 4, 5, GOLD, 0.5, C.ink, 1), rect(-6, 7, 12, 3, WOOD, 0.5, C.ink, 1));
 const target = (x: number, y: number, r: number, gr = false) => all(...[1, 0.72, 0.44, 0.18].map((k, i) => circle(x, y, r * k, gr ? [C.grey2, C.white, C.grey2, GREY][i]! : [C.white, '#e45b5b', C.white, '#e45b5b'][i]!, C.ink, 1.1)));
 const dart = (x: number, y: number, rot = -30, col: string = C.navy) => g(`translate(${x} ${y}) rotate(${rot})`, line('M0 0 L-14 0', col, 2), path('M-14 0 L-19 -3 L-17 0 L-19 3 Z', col, null), circle(0, 0, 1.2, C.ink, null));
 
 export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
   // ── 2211 Att veta och tro ──
-  /** tro (uppfattning): she leaves without an umbrella in the belief that it will be sunny; it starts to rain. */
-  'kun.tro.2': all(bg(DAY), cloud(86, 22, 1.3, '#9aa3ad'), line('M76 34 l-3 6 M86 36 l-3 6 M96 34 l-3 6', SEA, 1.8),
-    fig(36, C.orange, 'smile', { h: 0.78, hairStyle: 'long' }), think(70, 62, 22, 14, all(sunS(64, 62, 5), tick(80, 62, 0.9)), 42, 44),
-    house(100, 112, 0.9), ground),
+  /** tro (uppfattning): he goes home in the belief that the meeting is over (empty room in his thought); behind the window it is still going on. */
+  'kun.tro.2': all(bg(), rect(56, 14, 56, 40, '#e8eef2', 2, C.ink, 1.4), line('M84 14 L84 54', C.ink, 1.2), greyed(rect(62, 40, 44, 5, WOOD, 1, C.ink, 1), ...[68, 80, 92, 102].map((x) => all(circle(x, 30, 4, C.grey2, C.ink, 1), path(`M${x - 5} 40 C${x - 5} 34 ${x + 5} 34 ${x + 5} 40 Z`, C.grey, C.ink, 1)))),
+    fig(24, '#7a4a2a', 'smile', { h: 0.82 }), reach(24, 0.82, -1, 10, 74), at(8, 80, 0.8, rect(-6, -6, 12, 12, '#5a3a20', 2, C.ink, 1.2)),
+    think(66, 74, 22, 14, all(rect(52, 72, 24, 4, WOOD, 1, C.ink, 0.8), line('M56 76 L56 82 M72 76 L72 82', C.brown, 1.2), tick(82, 70, 0.7)), 32, 46), arrow(46, 104, 6, 104, HL, 2), ground),
   /** gissning: a jar of marbles and a guess with a question mark. */
   'kun.gissning': all(bg(), fig(34, C.green, 'smile', { h: 0.8 }), chin(34, 0.8),
     think(82, 26, 22, 14, all(T(78, 31, '20', 12, C.navy), qm(94, 31, 12)), 44, 40),
     path('M70 112 L70 70 C70 64 74 62 78 62 L94 62 C98 62 102 64 102 70 L102 112 Z', 'rgba(200,230,250,0.55)', C.ink, 1.6),
     ...[[76, 106], [84, 106], [92, 106], [98, 104], [80, 99], [88, 99], [96, 98], [74, 92], [84, 92], [92, 91], [78, 85], [88, 84], [96, 84], [82, 78], [92, 77]].map(([x, y], i) => circle(x!, y!, 3.4, [C.red, C.yellow, SEA, C.green, C.purple][i % 5]!, C.ink, 0.8)),
     rect(72, 58, 28, 5, WOOD, 1, C.ink, 1.1)),
-  /** förmoda: paw prints in the snow – so probably a cat went by. */
-  'kun.förmoda': all(bg('#eef4f8'), fig(28, '#3f6fb5', 'smile', { h: 0.84 }), chin(28, 0.84),
-    think(78, 26, 24, 15, all(at(72, 28, 0.9, ellipse(0, 0, 8, 6, C.orange, C.ink, 1), circle(-6, -6, 4.6, C.orange, C.ink, 1), path('M-9 -10 L-8 -14 L-6 -10 Z M-4 -10 L-3 -14 L-1 -10 Z', C.orange, C.ink, 0.8), path('M8 0 C14 -2 14 -8 12 -10', 'none', C.ink, 1.4)), qm(92, 32, 11, HL)), 38, 36),
-    ...[[56, 104], [66, 98], [74, 104], [84, 98], [92, 104], [102, 98]].map(([x, y]) => all(ellipse(x!, y!, 2.6, 2, GREY, null), circle(x! - 2.4, y! - 3, 1, GREY, null), circle(x!, y! - 3.6, 1, GREY, null), circle(x! + 2.4, y! - 3, 1, GREY, null))), ground),
+  /** förmoda: from the clue (wet umbrella, wet footprints) she concludes "probably rain"; a grey die = a pure guess as contrast. */
+  'kun.förmoda': all(bg(), fig(32, C.orange, 'smile', { h: 0.84, hairStyle: 'long' }), chin(32, 0.84),
+    g('translate(78 104) rotate(-10)', line('M0 0 L0 -34', C.ink, 1.6), path('M-14 -30 C-14 -42 14 -42 14 -30 C10 -33 6 -33 0 -30 C-6 -33 -10 -33 -14 -30 Z', C.navy, C.ink, 1.3)), ...[[70, 108], [84, 109], [92, 106]].map(([x, y]) => ellipse(x!, y!, 4, 1.6, SEA, null)),
+    ...[[74, 74], [80, 82], [86, 76]].map(([x, y]) => path(`M${x} ${y! - 4} C${x! + 3} ${y} ${x! + 2} ${y! + 3} ${x} ${y! + 3} C${x! - 2} ${y! + 3} ${x! - 3} ${y} ${x} ${y! - 4} Z`, SEA, C.ink, 0.6)),
+    arrow(70, 60, 66, 42, HL, 2), think(82, 22, 22, 13, all(cloud(78, 22, 0.6, '#9aa3ad'), line('M74 30 l-2 4 M80 31 l-2 4', SEA, 1.4), tick(96, 22, 0.7)), 44, 36),
+    greyed(at(104, 60, 1, rect(-7, -7, 14, 14, C.white, 2, C.ink, 1.2), circle(-3, -3, 1.4, C.ink, null), circle(3, 3, 1.4, C.ink, null), circle(0, 0, 1.4, C.ink, null)), cross(104, 76, 0.6)), ground),
   /** med säkerhet: the needle stands at the very top – completely sure; a grey meter at half as contrast. */
   'kun.med-säkerhet': all(bg(), gauge(74, 62, 34, 1), check(104, 22, 1.2), T(74, 80, '100', 13, OK),
     greyed(gauge(98, 106, 12, 0.5)), fig(22, '#3f6fb5', 'smile', { h: 0.8 }), ground),
-  /** visshet: the letter is opened and the answer is clear; the grey question marks fade away. */
-  'kun.visshet': all(bg(), fig(38, C.orange, 'laugh', { h: 0.9, hairStyle: 'long' }), reach(38, 0.9, 1, 66, 66), reach(38, 0.9, -1, 22, 68),
-    at(76, 60, 1, rect(-14, -10, 28, 20, C.white, 2, C.ink, 1.4), path('M-14 -10 L0 -22 L14 -10', '#f2ece0', C.ink, 1.3)), check(76, 44, 1.3), rays(76, 44, 13, 18, 10, GOLD, 1.4),
-    greyed(qm(98, 86, 14, GREY), qm(106, 102, 11, GREY), qm(14, 30, 12, GREY)), ground),
+  /** visshet: the doubt clears – "?" in grey fog, then a bright, sharp check mark. */
+  'kun.visshet': all(bg(), greyed(cloud(24, 40, 1.4, C.grey2), qm(24, 46, 16, GREY)), arrow(42, 44, 58, 44, HL, 2.6),
+    rays(84, 44, 20, 28, 14, GOLD, 2), circle(84, 44, 18, C.white, OK, 3), line('M75 44 L82 51 L94 36', OK, 4.4),
+    fig(60, C.orange, 'laugh', { h: 0.5, hairStyle: 'long' }), ground),
   /** tvärsäker: arms crossed, a big "!" – he will not even look at the book that is offered. */
   'kun.tvärsäker': all(bg(), fig(40, C.red, 'angry', { h: 0.94 }), crossedArms(40), say(70, 22, 24, 20, all(ex(66, 29, 15, C.red), ex(76, 29, 15, C.red)), 50, 26),
     greyed(fig(96, C.grey, 'smile', { h: 0.72 }), reach(96, 0.72, -1, 80, 76), cbook(78, 74, 0.55, GREY), qm(98, 40, 12, GREY)), ground),
@@ -145,9 +146,9 @@ export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
   'kun.härleda': all(bg(), card(22, 30, 22, 18, check(22, 30, 0.8)), card(22, 62, 22, 18, check(22, 62, 0.8)),
     line('M33 30 C46 30 46 46 54 46 M33 62 C46 62 46 46 54 46', C.ink, 1.8), arrow(54, 46, 70, 46, HL, 2.6), bulb(88, 46, 1.4),
     ...[0, 1, 2].map((i) => rect(18 + i * 30, 96 - i * 8, 26, 8 + i * 8, STONE, 1, C.ink, 1.1)), ground),
-  /** empirism: the eye, the ear and the hand send arrows into the head – knowledge comes from the senses. */
-  'kun.empirism': all(bg(), eye(22, 26, 1), ear(22, 58, 1), handIcon(22, 92, 1.2), arrow(38, 28, 62, 46, HL, 2.2), arrow(36, 58, 62, 58, HL, 2.2), arrow(36, 90, 62, 70, HL, 2.2),
-    head(88, 62, 1.25), glow(84, 52, 12), bulb(84, 52, 0.7)),
+  /** empirism: the eye, the ear and the hand fill the book of knowledge; thinking alone (grey head with a gear) is crossed out. */
+  'kun.empirism': all(bg('#eaf3e4'), eye(20, 22, 0.9), ear(20, 52, 0.9), handIcon(20, 84, 1.1), arrow(34, 24, 56, 44, HL, 2.2), arrow(32, 52, 56, 54, HL, 2.2), arrow(32, 82, 56, 64, HL, 2.2),
+    book(82, 56, 1.1, ROBE2), check(98, 30, 1), greyed(at(98, 98, 0.45, head(0, 0, 1)), gear(100, 94, 3.4, GREY), cross(110, 104, 0.6))),
   /** empirist: a philosopher studying a leaf through a magnifying glass, notebook ready. */
   'kun.empirist': all(bg('#eaf3e4'), sage(40, 0.94, ROBE2), reach(40, 0.94, 1, 70, 54), magnifier(78, 46, 1.2, 0), at(80, 46, 0.7, path('M0 -8 C8 -6 8 6 0 8 C-8 6 -8 -6 0 -8 Z', C.green, C.ink, 1), line('M0 -8 L0 8', '#2f6a3f', 1)),
     reach(40, 0.94, -1, 20, 74), at(16, 74, 1, rect(-8, -8, 14, 16, C.white, 1, C.ink, 1.2), textLines(-5, -4, 8, 3)), tree(100, 112, 0.8), ground),
@@ -167,23 +168,25 @@ export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
     keyIcon(54, 26, 0.7, GREY, -20), cross(70, 22, 0.7), keyIcon(86, 24, 0.7, GREY, 20), cross(102, 22, 0.7), check(96, 40, 0.8), ground),
 
   // ── 2213 Skepticism ──
-  /** skeptiker: arms crossed, one eyebrow up, looking at a sparkling miracle bottle. */
-  'kun.skeptiker': all(bg(), fig(34, '#5a6a8a', 'frown', { h: 0.92 }), crossedArms(34), qm(56, 22, 16, HL),
-    greyed(fig(92, C.grey, 'laugh', { h: 0.8 }), reach(92, 0.8, -1, 74, 66)), at(70, 62, 1, rect(-5, -14, 10, 20, '#7fc6a4', 3, C.ink, 1.2), rect(-3, -18, 6, 4, C.brown, 1, C.ink, 1)), star(82, 46, 4, C.yellow), star(60, 44, 3, C.yellow), ground),
-  /** tvivla på: the claim with a check mark comes in; the listener answers with a question mark. */
-  'kun.tvivla-på': all(bg(), greyed(fig(90, C.grey, 'smile', { h: 0.86 }), say(78, 22, 24, 20, check(78, 22, 0.9), 86, 36)),
-    fig(32, C.green, 'frown', { h: 0.86, hairStyle: 'long' }), chin(32, 0.86), think(46, 30, 14, 12, qm(46, 36, 15, HL), 34, 40), ground),
-  /** bedra: the shiny gift box holds only a stone. */
-  'kun.bedra': all(bg(), greyed(fig(90, C.grey, 'laugh', { h: 0.86 })), fig(28, C.orange, 'love', { h: 0.84, hairStyle: 'long' }), reach(28, 0.84, 1, 54, 74), reach(90, 0.86, -1, 70, 74),
-    at(62, 74, 1, rect(-12, -10, 24, 20, '#e45b5b', 2, C.ink, 1.4), line('M0 -10 L0 10 M-12 0 L12 0', GOLD, 2.4), path('M0 -10 C-6 -18 -10 -12 0 -10 C10 -12 6 -18 0 -10 Z', GOLD, C.ink, 1)),
-    at(62, 32, 1, circle(0, 0, 15, C.white, C.ink, 1.2), path('M-11 2 L11 2 L9 12 L-9 12 Z', '#c98f3a', C.ink, 1.1), path('M-8 4 C-9 -4 -3 -9 3 -8 C9 -7 10 0 8 4 Z', '#8d8a86', C.ink, 1.2), line('M-3 -3 L1 -1 M3 -5 L5 -2', '#5d5a56', 1)), line('M62 47 L62 60', C.ink, 1, '2 2'), ground),
+  /** skeptiker: everybody cheers the miracle bottle – one person stands with arms crossed and a question mark. */
+  'kun.skeptiker': all(bg(), at(60, 30, 1, rect(-6, -14, 12, 22, '#7fc6a4', 3, C.ink, 1.2), rect(-3, -18, 6, 4, C.brown, 1, C.ink, 1)), star(72, 20, 4, C.yellow), star(48, 18, 3, C.yellow),
+    greyed(fig(20, C.grey, 'love', { h: 0.62 }), fig(46, C.grey, 'love', { h: 0.62 }), fig(74, C.grey, 'love', { h: 0.62 })),
+    fig(100, '#5a6a8a', 'frown', { h: 0.82 }), crossedArms(100), qm(100, 14, 16, HL), ground),
+  /** tvivla på: inside her head the check mark cracks and a question mark grows – quiet, inner doubt. */
+  'kun.tvivla-på': all(bg(), fig(30, C.green, 'frown', { h: 0.84, hairStyle: 'long' }), chin(30, 0.84),
+    think(76, 40, 32, 26, all(circle(70, 40, 14, C.white, OK, 2.4), line('M62 40 L68 46 L78 34', OK, 3.2), line('M72 26 L68 36 L74 42 L69 54', C.ink, 1.8), qm(96, 50, 20, HL)), 40, 36), ground),
+  /** bedra: the deceiver holds a smiling mask in front of a sly face; the grey person trusts him. */
+  'kun.bedra': all(bg(), greyed(fig(92, C.grey, 'smile', { h: 0.84 }), reach(92, 0.84, -1, 70, 74)),
+    fig(34, '#4a3a5a', 'angry', { h: 0.92 }), reach(34, 0.92, 1, 52, 40), line('M52 40 L52 30', WOOD, 2),
+    at(46, 20, 1, ellipse(0, 0, 11, 13, '#fbe3c4', C.ink, 1.4), path('M-6 -3 Q-4 -6 -2 -3 M2 -3 Q4 -6 6 -3', 'none', C.ink, 1.2), path('M-5 4 Q0 10 5 4', 'none', C.ink, 1.4)),
+    reach(34, 0.92, -1, 18, 80), at(14, 84, 1, rect(-6, -6, 12, 12, '#8d8a86', 3, C.ink, 1.1)), ground),
   /** sinnesvilla: a straight stick looks broken in a glass of water. */
   'kun.sinnesvilla': all(bg(), path('M40 30 L44 104 C44 108 76 108 76 104 L80 30 Z', 'rgba(220,240,252,0.5)', C.ink, 1.8), path('M42 60 L78 60 L76 104 C76 108 44 108 44 104 Z', 'rgba(90,167,214,0.45)', null), line('M42 60 L78 60', SEA, 1.6),
     line('M36 14 L58 60', WOOD, 5), line('M66 60 L76 98', WOOD, 5), eye(98, 30, 0.9), qm(98, 52, 14, HL), greyed(line('M100 70 L100 106', WOOD, 4)), ground),
-  /** skepticism: a philosopher puts a question mark on the eye, the book and the world. */
-  'kun.skepticism': all(bg('#efe9f6'), sage(26, 0.9, '#5a6a8a', 'frown'), chin(26, 0.9),
-    eye(66, 26, 0.8), qm(84, 30, 13, HL), cbook(62, 60, 0.6, ROBE2), qm(80, 66, 13, HL), circle(64, 94, 9, SEA, C.ink, 1.2), path('M60 90 C64 88 66 92 63 95 Z', GRASS, null), qm(82, 100, 13, HL),
-    ground),
+  /** skepticism: the whole world seen through a lens with a question mark; a grey closed book of fixed truths as contrast. */
+  'kun.skepticism': all(bg('#efe9f6'), circle(54, 54, 30, SEA, C.ink, 1.6), path('M38 40 C48 34 56 44 50 52 C44 58 36 52 38 40 Z M60 58 C70 52 78 62 72 72 C66 76 58 70 60 58 Z', GRASS, C.ink, 1),
+    circle(54, 54, 36, 'rgba(255,255,255,0.35)', C.ink, 3), line('M80 80 L100 100', C.brown, 7), T(54, 66, '?', 34, HL),
+    greyed(cbook(102, 30, 0.8, GREY), check(102, 12, 0.6, GREY))),
   /** metodiskt tvivel: everything on the list is crossed out – only the thinking itself gets a check mark. */
   'kun.metodiskt-tvivel': all(bg('#efe9f6'), sage(24, 0.86, ROBE), at(76, 60, 1, rect(-26, -46, 52, 92, PARCH, 2, C.ink, 1.4)),
     eye(64, 26, 0.6), cross(92, 26, 0.7), circle(64, 46, 6, SEA, C.ink, 1), cross(92, 46, 0.7), handIcon(64, 68, 0.9), cross(92, 66, 0.7),
@@ -194,9 +197,11 @@ export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
     line('M48 54 L42 48 M48 54 L42 58 M48 72 L42 66 M48 72 L42 78 M48 90 L42 84 M48 90 L42 96', GREY, 1.4), ground),
 
   // ── 2214 Evidens och belägg ──
-  /** evidens: many research results together point to one strong check mark; one loose sheet in grey. */
-  'kun.evidens': all(bg(), chart(26, 34, 0.9), chart(54, 26, 0.9, C.green), chart(26, 74, 0.9, C.purple), chart(54, 66, 0.9, C.orange),
-    arrow(68, 30, 84, 44, HL, 2), arrow(68, 70, 84, 56, HL, 2), check(96, 50, 1.6), greyed(at(98, 96, 0.7, rect(-8, -10, 16, 20, C.white, 1, C.ink, 1), qm(0, 5, 11, GREY)))),
+  /** evidens: research – a microscope, and a chart where many measurements together show a clear trend. */
+  'kun.evidens': all(bg('#eef4f8'), at(24, 104, 1, rect(-12, -4, 24, 4, C.dark, 1, C.ink, 1), path('M-2 -4 L-2 -40 L6 -44 L10 -36 L4 -32 L4 -4 Z', '#cfd6dd', C.ink, 1.2), rect(-8, -22, 16, 3, C.dark, 1, null), rect(4, -50, 6, 10, C.dark, 1, C.ink, 1)),
+    rect(42, 18, 66, 70, C.white, 2, C.ink, 1.4), line('M50 80 L50 26 M50 80 L102 80', C.ink, 1.3),
+    ...[[56, 72], [60, 68], [64, 70], [68, 62], [72, 64], [76, 56], [80, 58], [84, 50], [88, 46], [92, 44], [96, 38], [62, 74], [74, 60], [86, 52], [98, 34]].map(([x, y]) => circle(x!, y!, 1.8, SEA, null)),
+    line('M54 74 L100 34', HL, 2.4), check(96, 98, 1.2), ground),
   /** belägga: the scientist holds up a chart under the claim, and it gets a green stamp. */
   'kun.belägga': all(bg(), fig(30, C.white, 'smile', { h: 0.9 }), on(30, 0.9, rect(-13, -40, 26, 50, C.white, 3, C.ink, 1.2)), reach(30, 0.9, 1, 58, 58),
     chart(70, 64, 1.1, SEA), card(80, 22, 34, 20, all(textLines(68, 18, 22, 2))), arrow(76, 44, 80, 34, HL, 2), check(100, 30, 1), ground),
@@ -216,16 +221,17 @@ export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
     greyed(at(102, 92, 0.8, rect(-10, -10, 20, 20, C.white, 2, C.ink, 1.2), qm(0, 6, 12, GREY))), ground),
 
   // ── 2215 Rättfärdigande ──
-  /** rättfärdiga: the reasons on the scale outweigh the doubt. */
-  'kun.rättfärdiga': all(bg(), fig(22, '#3f6fb5', 'smile', { h: 0.84 }), reach(22, 0.84, 1, 40, 70),
-    line('M76 30 L76 106 M62 106 L90 106', C.ink, 2.4), g('rotate(-14 76 32)', line('M48 32 L104 32', C.ink, 2.4), line('M48 32 L42 48 M48 32 L54 48 M104 32 L98 48 M104 32 L110 48', C.ink, 1), path('M40 48 C40 54 56 54 56 48 Z', GOLD, C.ink, 1.2), path('M96 48 C96 54 112 54 112 48 Z', GOLD, C.ink, 1.2),
-      stoneBlock(42, 36, 12, 12), qm(104, 46, 10, GREY)), check(48, 64, 0.8), ground),
-  /** rättfärdigande: the belief (a lamp with a check mark) stands on pillars of reasons. */
-  'kun.rättfärdigande': all(bg('#efe9f6'), rect(24, 46, 72, 6, STONE, 1, C.ink, 1.3), pillar(36, 104, 50), pillar(60, 104, 50), pillar(84, 104, 50), rect(20, 104, 80, 6, STONE, 1, C.ink, 1.3),
-    bulb(60, 30, 1.3), check(84, 22, 0.9), greyed(cloud(104, 86, 0.6, C.grey2), qm(104, 90, 9, GREY))),
-  /** på goda grunder: she speaks standing on solid stone; a grey figure wobbles on a ball. */
-  'kun.på-goda-grunder': all(bg(), stoneBlock(14, 86, 44, 26), g('translate(0 -26)', fig(36, C.green, 'smile', { h: 0.76, hairStyle: 'long' })), say(66, 20, 22, 18, ex(66, 26, 13, OK), 44, 26),
-    greyed(circle(96, 100, 12, C.grey2, C.ink, 1.2), g('translate(0 -24) rotate(10 96 112)', fig(96, C.grey, 'shock', { h: 0.6 }))), ground),
+  /** rättfärdiga: asked "why did you buy it?" he shows the reasons, and they outweigh the doubt on the scale. */
+  'kun.rättfärdiga': all(bg(), at(30, 104, 1, circle(-10, 0, 8, 'none', C.ink, 2), circle(10, 0, 8, 'none', C.ink, 2), line('M-10 0 L-2 -12 L10 0 M-2 -12 L6 -12 M-4 -16 L0 -16', C.red, 2.2)), at(22, 84, 1, rect(-8, -5, 16, 10, C.yellow, 2, C.ink, 1), T(0, 3, '999', 6, C.ink)),
+    fig(48, '#3f6fb5', 'smile', { h: 0.78 }), reach(48, 0.78, -1, 38, 88), greyed(fig(108, C.grey, 'frown', { h: 0.5 }), qm(108, 52, 11, GREY)),
+    line('M84 112 L84 50 M76 112 L92 112', C.ink, 2.2), g('translate(84 50) rotate(-16)', line('M-18 0 L18 0', C.ink, 2), line('M-18 0 L-22 10 M-18 0 L-14 10 M18 0 L14 10 M18 0 L22 10', C.ink, 0.9), path('M-24 10 C-24 15 -12 15 -12 10 Z M12 10 C12 15 24 15 24 10 Z', GOLD, C.ink, 1), stoneBlock(-23, 0, 10, 10), tick(-18, -6, 0.6), qm(18, 8, 8, GREY)), ground),
+  /** rättfärdigande: belief + truth + reasons = knowledge (lamp + check + pillars → book). */
+  'kun.rättfärdigande': all(bg('#efe9f6'), bulb(16, 52, 1), T(32, 58, '+', 14, C.ink), check(46, 52, 1.1), T(60, 58, '+', 14, C.ink), rect(72, 40, 26, 4, STONE, 0.5, C.ink, 1), pillar(77, 68, 22), pillar(85, 68, 22), pillar(93, 68, 22),
+    T(40, 102, '=', 18, C.ink), book(70, 98, 0.9, ROBE2), sparkleS(98, 80)),
+  /** på goda grunder: the detective suspects on good grounds – three pieces of evidence, each with a check mark. */
+  'kun.på-goda-grunder': all(bg(), fig(24, '#6a5a3a', 'smile', { h: 0.86 }), on(24, 0.86, path('M-14 -64 L14 -64 L10 -70 L-10 -70 Z', '#6a5a3a', C.ink, 1.2)), reach(24, 0.86, 1, 42, 60), magnifier(48, 54, 0.7, 0),
+    card(76, 20, 22, 20, at(76, 20, 1, ellipse(0, 0, 4, 6, C.ink, null))), tick(92, 14, 0.7), card(76, 48, 22, 20, at(76, 48, 1, path('M-5 4 L-5 -4 C-5 -7 5 -7 5 -4 L5 4 Z', C.purple, C.ink, 1))), tick(92, 42, 0.7),
+    card(76, 76, 22, 20, at(76, 76, 1, rect(-6, -4, 12, 8, C.dark, 2, C.ink, 1), circle(0, 0, 2.4, SEA, null))), tick(92, 70, 0.7), greyed(fig(104, C.grey, 'shock', { h: 0.5 })), ground),
   /** välgrundad: a house on a deep stone foundation; a grey house tilts on sand. */
   'kun.välgrundad': all(bg(DAY), rect(4, 80, 112, 32, '#c9a77a', 0, null), line('M4 80 L116 80', C.ink, 1.4),
     stoneBlock(18, 72, 44, 36), house(40, 72, 1.5), check(40, 22, 1),
@@ -244,9 +250,10 @@ export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
   'kun.kriterium': all(bg(), rect(18, 16, 52, 88, WOOD, 3, C.ink, 1.4), rect(22, 24, 44, 76, C.white, 1, C.ink, 1), rect(34, 12, 20, 8, C.silver, 2, C.ink, 1.2),
     ...[0, 1, 2].map((i) => all(rect(28, 32 + i * 22, 12, 12, C.white, 2, C.ink, 1.3), line(`M44 ${38 + i * 22} L60 ${38 + i * 22}`, '#9aa3ad', 2), i < 2 ? tick(34, 38 + i * 22, 0.8) : '')),
     star(94, 50, 12, C.yellow), arrow(94, 70, 76, 90, HL, 2), ground),
-  /** hålla för sant: she holds a card with a big check mark close to her. */
-  'kun.hålla-för-sant': all(bg(), fig(60, C.orange, 'calm', { h: 0.92, hairStyle: 'long' }), reach(60, 0.92, -1, 50, 70), reach(60, 0.92, 1, 70, 70),
-    card(60, 64, 30, 30, tick(60, 64, 2)), glow(60, 64, 22, 'rgba(63,154,90,0.15)'), ground),
+  /** hålla för sant: two hands hold a card with a check mark firmly – close-up. */
+  'kun.hålla-för-sant': all(bg(), glow(60, 54, 40, 'rgba(63,154,90,0.15)'), card(60, 52, 54, 54, tick(60, 52, 4)),
+    path('M4 112 L4 84 C14 80 24 82 32 72 L40 66 C44 64 46 70 42 74 L34 84 L34 112 Z', C.skin, C.ink, 1.6), path('M116 112 L116 84 C106 80 96 82 88 72 L80 66 C76 64 74 70 78 74 L86 84 L86 112 Z', C.skin, C.ink, 1.6),
+    path('M30 66 C28 56 36 54 36 62 M90 66 C92 56 84 54 84 62', 'none', C.ink, 1.4)),
   /** kunskapsanspråk: "I know!" – a raised palm and a book with a check mark; the grey listener asks "?". */
   'kun.kunskapsanspråk': all(bg(), rect(10, 92, 36, 20, WOOD, 2, C.ink, 1.4), g('translate(0 -20)', fig(28, C.green, 'smile', { h: 0.78 })), reach(28, 0.78, 1, 46, 32), palm(46, 26, 0.9),
     say(74, 24, 26, 22, all(book(74, 26, 0.38, ROBE2), ex(82, 18, 10, C.red)), 52, 34), greyed(fig(96, C.grey, 'smile', { h: 0.62 }), qm(96, 50, 12, GREY)), ground),
@@ -255,10 +262,10 @@ export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
   /** utgångspunkt: a start flag where several paths begin. */
   'kun.utgångspunkt': all(bg('#eaf3e4'), path('M22 104 C40 90 60 70 100 30 M22 104 C50 96 80 80 106 70 M22 104 C30 80 30 50 40 20', 'none', '#e6d3b3', 5),
     circle(22, 104, 8, C.red, C.ink, 1.4), flag(22, 98, C.red), fig(40, '#3f6fb5', 'smile', { h: 0.5 }), star(100, 28, 4), star(106, 68, 4), star(40, 18, 4), ground),
-  /** synsätt: two people look at the same tree through different glasses and see it differently. */
-  'kun.synsätt': all(bg(), tree(60, 74, 1), fig(22, C.orange, 'smile', { h: 0.72, hairStyle: 'long' }), fig(98, C.green, 'smile', { h: 0.72 }),
-    on(22, 0.72, rect(-9, -59.5, 7.4, 6, 'rgba(228,87,46,0.75)', 2, C.ink, 1.6), rect(1.6, -59.5, 7.4, 6, 'rgba(228,87,46,0.75)', 2, C.ink, 1.6), line('M-1.6 -57 L1.6 -57', C.ink, 1.4)), on(98, 0.72, rect(-9, -59.5, 7.4, 6, 'rgba(90,167,214,0.85)', 2, C.ink, 1.6), rect(1.6, -59.5, 7.4, 6, 'rgba(90,167,214,0.85)', 2, C.ink, 1.6), line('M-1.6 -57 L1.6 -57', C.ink, 1.4)),
-    think(30, 16, 14, 11, circle(30, 16, 7, '#e45b5b', C.ink, 1), 22, 38), think(90, 16, 14, 11, circle(90, 16, 7, SEA, C.ink, 1), 98, 38), ground),
+  /** synsätt: the same tree – one person sees timber and money, the other sees birds and a home for animals. */
+  'kun.synsätt': all(bg(), tree(60, 96, 1.1), fig(20, C.orange, 'smile', { h: 0.62, hairStyle: 'long' }), greyed(fig(100, C.green, 'smile', { h: 0.62 })),
+    think(26, 20, 18, 13, all(rect(14, 16, 14, 4, WOOD, 1, C.ink, 0.8), rect(14, 21, 14, 4, WOOD, 1, C.ink, 0.8), circle(34, 20, 4, GOLD, C.ink, 1)), 20, 44),
+    greyed(think(94, 20, 18, 13, all(path('M84 18 C86 14 90 14 92 18 C94 14 98 14 100 18', 'none', C.ink, 1.4), ellipse(98, 24, 6, 3, '#a0673d', C.ink, 1)), 100, 44)), ground),
   /** mångtydig: one picture, two readings – a vase or two faces. */
   'kun.mångtydig': all(bg(), rect(34, 28, 52, 64, C.ink, 2, null), path('M48 28 C56 40 46 44 50 54 C54 64 46 70 50 80 C52 86 48 90 46 92 L74 92 C72 90 68 86 70 80 C74 70 66 64 70 54 C74 44 64 40 72 28 Z', C.white, null),
     arrow(36, 96, 22, 104, HL, 2), arrow(84, 96, 98, 104, HL, 2), think(18, 18, 13, 11, path('M14 12 L22 12 C20 16 24 18 22 24 L14 24 C12 18 16 16 14 12 Z', C.white, C.ink, 1), 30, 30), think(102, 18, 13, 11, all(circle(97, 18, 4, C.skin, C.ink, 0.8), circle(107, 18, 4, C.skin, C.ink, 0.8)), 90, 30), ground),
@@ -268,9 +275,10 @@ export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
   /** betraktare: a viewer seen from behind looks at a painting in a frame. */
   'kun.betraktare': all(bg('#f3ede2'), frame(40, 16, 60, 44, all(rect(40, 16, 60, 44, DAY, 0, null), path('M40 60 L58 38 L70 50 L80 40 L100 60 Z', GRASS, C.ink, 1), sunS(88, 28, 4))),
     line('M10 96 L110 96', C.grey2, 1), at(38, 0, 1, path('M-12 112 L-12 82 C-12 70 12 70 12 82 L12 112 Z', '#3f6fb5', C.ink, 1.6), circle(0, 64, 9, C.hair, C.ink, 1.6)), ground),
-  /** referensram: the world is in colour only inside the frame she holds up; outside it is grey. */
-  'kun.referensram': all(bg('#e6e6e6'), greyed(tree(98, 108, 0.9), house(18, 108, 1)), fig(30, C.orange, 'smile', { h: 0.84, hairStyle: 'long' }), reach(30, 0.84, 1, 56, 44), reach(30, 0.84, -1, 46, 82),
-    rect(52, 30, 46, 54, DAY, 0, null), path('M52 84 L64 66 L74 76 L86 60 L98 84 Z', GRASS, null), sunS(86, 42, 4), tree(66, 84, 0.5), rect(52, 30, 46, 54, 'none', 1, GOLD, 4), ground),
+  /** referensram: she understands the new thing only through her own frame (her home, her food); outside the frame it is grey and unknown. */
+  'kun.referensram': all(bg('#e6e6e6'), fig(24, C.orange, 'smile', { h: 0.84, hairStyle: 'long' }), reach(24, 0.84, 1, 46, 30), reach(24, 0.84, -1, 40, 92),
+    rect(46, 20, 44, 72, '#fdf6e6', 0, null), house(58, 56, 0.8), at(78, 50, 1, path('M-8 0 C-8 8 8 8 8 0 Z', C.white, C.ink, 1.2), ellipse(0, 0, 8, 2, C.white, C.ink, 1), line('M2 -10 L6 0 M5 -10 L8 0', WOOD, 1.2)), cbook(68, 78, 0.5, ROBE2), rect(46, 20, 44, 72, 'none', 1, GOLD, 4),
+    greyed(at(104, 60, 1, path('M-8 10 L0 -12 L8 10 Z', C.grey, C.ink, 1.2), circle(0, -2, 3, C.white, C.ink, 1)), qm(104, 90, 12, GREY)), arrow(98, 66, 92, 62, HL, 1.6)),
   /** hermeneutik: a scholar reads an old scroll; arrows go round between the part and the whole. */
   'kun.hermeneutik': all(bg('#f6efe0'), sage(24, 0.86, ROBE2), scroll(48, 44, 56, 40, textLines(54, 52, 44, 5, '#9a8f7a')), magnifier(70, 60, 0.8, -20),
     path('M60 34 C70 18 90 18 100 34', 'none', HL, 2.2), path('M100 34 L101 26 L94 30 Z', HL, HL, 1), path('M100 92 C90 104 70 104 60 92', 'none', HL, 2.2), path('M60 92 L59 100 L66 96 Z', HL, HL, 1), reach(24, 0.86, 1, 46, 66), ground),
@@ -282,24 +290,28 @@ export const EPISTEMOLOGY_MOTIFS: Record<string, Svg> = {
     greyed(fig(96, C.grey, 'frown', { h: 0.62 }), think(98, 60, 10, 8, circle(98, 60, 3.4, C.grey2, C.ink, 0.8), 98, 72)), ground),
 
   // ── 2217 Kunskapens gränser ──
-  /** gåta: a closed box with a question mark; she scratches her head. */
-  'kun.gåta': all(bg(), qbox(76, 82, 2), fig(26, C.orange, 'frown', { h: 0.84, hairStyle: 'long' }), reach(26, 0.84, 1, 34, 30), qm(50, 22, 14, HL), qm(96, 30, 11, HL), ground),
+  /** gåta: a jigsaw puzzle where the last piece is missing – the hole is a question mark. */
+  'kun.gåta': all(bg(), ...[0, 1, 2].flatMap((r) => [0, 1, 2].map((c) => (r === 1 && c === 2 ? '' : rect(20 + c * 26, 16 + r * 26, 26, 26, ['#f2d9a0', '#bfe3f5', '#c9e6b8'][(r + c) % 3]!, 1, C.ink, 1.2)))),
+    rect(72, 42, 26, 26, '#3a3550', 1, C.ink, 1.6), T(85, 63, '?', 22, C.yellow), fig(22, '#3f6fb5', 'frown', { h: 0.36 }), chin(22, 0.36), magnifier(98, 98, 0.8, 0), ground),
   /** mysterium: a glowing question mark among the stars. */
   'kun.mysterium': all(bg(NIGHT), ...[[14, 14], [30, 34], [100, 16], [108, 50], [18, 70], [96, 92], [60, 12], [40, 100]].map(([x, y]) => circle(x!, y!, 1.3, '#f6e8a8', null)),
     path('M30 76 C40 50 80 50 92 70 C80 60 50 60 40 80 Z', 'rgba(170,150,230,0.5)', null), glow(60, 56, 30, 'rgba(242,193,78,0.25)'), T(60, 76, '?', 54, '#f6e08a'), fig(22, '#3f6fb5', 'shock', { h: 0.44 })),
   /** oförklarlig: a cup floats above the table and nobody knows why. */
   'kun.oförklarlig': all(bg(), rect(52, 84, 56, 6, WOOD, 2, C.ink, 1.4), line('M58 90 L58 112 M102 90 L102 112', C.brown, 3), at(80, 50, 1.4, path('M-7 -6 L7 -6 L6 6 C6 9 -6 9 -6 6 Z', C.white, C.ink, 1.3), path('M7 -3 C12 -3 12 4 6 4', 'none', C.ink, 1.3)),
     line('M68 70 C72 74 76 70 80 74 C84 70 88 74 92 70', '#9aa3ad', 1.2, '2 2'), qm(98, 36, 13, HL), qm(62, 36, 11, HL), fig(24, '#3f6fb5', 'shock', { h: 0.84 }), ground),
-  /** förbli: morning, day and night pass – the box with the question mark stays exactly the same. */
-  'kun.förbli': all(bg(), ...[0, 1, 2].map((i) => all(rect(8 + i * 36, 22, 32, 78, [DAY, '#fde7c2', NIGHT][i]!, 2, C.ink, 1.2), i === 2 ? circle(24 + i * 36, 36, 4, '#f6e08a', null) : sunS(24 + i * 36, 36, i === 0 ? 3 : 4), qbox(24 + i * 36, 84, 0.9))),
-    arrow(26, 110, 94, 110, HL, 1.8)),
+  /** förbli: the tree changes with spring, summer, autumn and winter – the stone beside it stays exactly the same. */
+  'kun.förbli': all(bg(), ...[0, 1, 2, 3].map((i) => all(rect(6 + i * 27, 22, 25, 70, [DAY, '#e8f4d8', '#fde7c2', '#eef2f6'][i]!, 2, C.ink, 1.1),
+    line(`M${18 + i * 27} 70 L${18 + i * 27} 54`, C.brown, 2.4), i === 3 ? line(`M${18 + i * 27} 58 L${12 + i * 27} 50 M${18 + i * 27} 58 L${24 + i * 27} 50`, C.brown, 1.4) : circle(18 + i * 27, 48, 8, ['#f6c9d4', C.green, C.orange][i]!, C.ink, 1),
+    ellipse(18 + i * 27, 82, 8, 6, '#8d949c', C.ink, 1.6), line(`M${6 + i * 27} 88 L${31 + i * 27} 88`, C.grey2, 1))),
+    line('M10 82 L110 82', HL, 1.6, '3 3'), arrow(12, 104, 106, 104, C.grey, 2)),
   /** spekulera: many guesses float around – a house? a car? a heart? – but the magnifier finds no evidence. */
   'kun.spekulera': all(bg(), fig(60, C.green, 'smile', { h: 0.8 }), chin(60, 0.8),
     think(22, 26, 14, 11, all(house(22, 32, 0.45), qm(32, 20, 8)), 46, 44), think(98, 26, 14, 11, all(at(98, 28, 0.6, rect(-10, -4, 20, 8, C.red, 3, C.ink, 1), circle(-6, 4, 3, C.ink, null), circle(6, 4, 3, C.ink, null)), qm(108, 20, 8)), 74, 44),
     think(60, 12, 12, 8, qm(60, 16, 10), 60, 30), greyed(magnifier(98, 88, 0.9, 0), T(98, 92, '0', 9, C.ink)), ground),
-  /** spekulation: a castle built on a cloud – no ground under it; a grey castle on the ground as contrast. */
-  'kun.spekulation': all(bg(DAY), cloud(56, 66, 2.2, C.white), at(56, 58, 1, rect(-16, -20, 32, 20, '#e9e1cf', 1, C.ink, 1.3), rect(-22, -32, 10, 32, '#e9e1cf', 1, C.ink, 1.3), rect(12, -32, 10, 32, '#e9e1cf', 1, C.ink, 1.3), path('M-24 -32 L-17 -42 L-10 -32 Z M10 -32 L17 -42 L24 -32 Z', C.red, C.ink, 1.2), rect(-4, -10, 8, 10, '#8a5a34', 1, C.ink, 1)), qm(92, 30, 13, HL),
-    greyed(at(100, 112, 0.6, rect(-16, -20, 32, 20, '#e9e1cf', 1, C.ink, 1.3), rect(-22, -32, 10, 32, '#e9e1cf', 1, C.ink, 1.3), rect(12, -32, 10, 32, '#e9e1cf', 1, C.ink, 1.3))), ground),
+  /** spekulation: a castle built on a cloud, with no facts under it; a grey test tube (a tested idea) as contrast. */
+  'kun.spekulation': all(bg(DAY), cloud(52, 72, 2.2, C.white), at(52, 64, 1, rect(-16, -20, 32, 20, '#e9e1cf', 1, C.ink, 1.3), rect(-22, -32, 10, 32, '#e9e1cf', 1, C.ink, 1.3), rect(12, -32, 10, 32, '#e9e1cf', 1, C.ink, 1.3), path('M-24 -32 L-17 -42 L-10 -32 Z M10 -32 L17 -42 L24 -32 Z', C.red, C.ink, 1.2), rect(-4, -10, 8, 10, '#8a5a34', 1, C.ink, 1)),
+    qm(86, 22, 13, HL), qm(16, 30, 11, HL), line('M30 104 L74 104', HL, 1.6, '3 3'), qm(52, 108, 10, HL),
+    greyed(at(102, 100, 1, path('M-4 -22 L4 -22 L4 4 C4 10 -4 10 -4 4 Z', C.white, C.ink, 1.2), path('M-4 -4 L4 -4 L4 4 C4 10 -4 10 -4 4 Z', C.green, null)), check(102, 66, 0.7, GREY)), ground),
   /** utom räckhåll: on tiptoe she stretches towards a star that is far too high. */
   'kun.utom-räckhåll': all(bg(NIGHT), star(98, 14, 8, C.yellow), glow(98, 14, 13), fig(48, C.orange, 'frown', { h: 0.84, hairStyle: 'long' }), reach(48, 0.84, 1, 60, 34), reach(48, 0.84, -1, 36, 36),
     line('M64 32 L90 18', '#f6e8a8', 1, '2 3'), line('M4 112 L116 112', '#6a7290', 2)),
