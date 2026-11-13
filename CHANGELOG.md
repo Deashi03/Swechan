@@ -1,5 +1,34 @@
 # Changelog
 
+## 0.37.0 – 2026-11-13
+
+42 nya moduler som gör överämnet *Militärhistoria* (R04-A02) komplett. Varje nytt modulord har en egen bild, utom de __MISS__ ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, __WORDS__ målord)
+- **Forntida krigföring** (2001–2007): bronsålderns vapen, antikens infanteri, grekiska falangen, romerska legioner, kavalleri i antiken, fälttåg och försörjning samt befäl och formationer.
+- **Medeltida slott & fästningar** (2011–2017): slottets byggnadsdelar, ringmurar och torn, vallgravar och vindbryggor, borggård och kärntorn, fästningens försvar, kastell och borgtyper samt livet innanför murarna.
+- **Medeltida belägringar** (2021–2027): belägringens mål, omringa och avskära, kontravallationslinjer och kringvärn, stormstegar och änterhakar, belägringsmaskiner, stormning och plundring samt kapitulation och undsättning.
+- **Tidiga moderna arméer** (2031–2037): pikenerare och musketörer, artilleriets utveckling, uniformer och regementen, linjetaktik och exercis, fältbefästningar, 1600-talets fältslag och Karl XII:s karoliner.
+- **Världskrigen** (2041–2047): skyttegravar och frontlinjer, stridsvagnar och mekanisering, flygkrigets framväxt, sjöstrider och ubåtar, landstigningar, logistik under världskrig och civilbefolkning i krig.
+- **Modern krigföring** (2051–2057): kombinerade vapensystem, underrättelse och spaning, gerilla och asymmetrisk krigföring, cyber- och informationsoperationer, luftförsvar och robotar, fredsbevarande insatser samt krigets lagar och civilt skydd.
+- Varje modul har __RANGE__ målord, lästext med fem frågor och konversationsunderlag. Det finns __ENTRIES__ nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`, bland annat orden i de ursprungliga modulerna *Krig och försvar* och *Medeltida borgar*, som nu är förkunskaper där deras ord behövs.
+- Nya betydelser på befintliga poster: *värva* och *foder* (militärt), *isolerad* och *utfall* (vid belägring), *spärra*, *tillträde* och *höjd* (borgar), *ladda* och *salva* (vapen), *front*, *genombrott* och *sänka* (världskrigen).
+- Grundordet *kanon* har fått en egen post. *båge*, *läger*, *befästa* och *nätverk* (.2) hade saknat bild och har fått bilder.
+- Krig skildras sakligt: inga sår, döda eller nationalsymboler i bilderna.
+- `catalog.test.ts` och `Explore.test.tsx` räknar nu med att Militärhistoria är publicerad; de planerade exemplen ligger i *Religion & idéhistoria*.
+
+### Bilder (__IMG__ nya ordbilder)
+- __SYM__ symbolbilder, __QUIZ__ bilder som får användas i bildövningar och resten scener.
+- __TESTED__ symbol- och adjektivbilder blindtestades. __PASSED__ klarade testet efter högst två omgångar.
+- **__MISS__ ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *vall/jordvall*, *robot/missil* och *cyberattack/cyberangrepp*.
+- Nya bildfiler i `src/ui/wordArt/`: `ancientWarfare.ts`, `castles.ts`, `sieges.ts`, `earlyArmies.ts`, `worldWars.ts` och `modernWarfare.ts`.
+
+### Verktyg och test
+- e2e-testets planerade exempel är *Tro och övertygelse* (Historia & humaniora → Religion & idéhistoria → Religiösa grundbegrepp).
+
+Service workern är `swechan-v41`.
+
 ## 0.36.0 – 2026-11-13
 
 42 nya moduler som gör överämnet *Historiska epoker* (R04-A01) komplett, det första i rotområdet *Historia & humaniora*. Varje nytt modulord har en egen bild, utom de 20 ord som underkändes i två blindtestomgångar. Långa ord flödar inte längre ut ur ordkortet.
