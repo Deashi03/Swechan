@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.37.0 (släppt 2026-11-13, PR #55) · **Senast uppdaterad:** 2026-11-13 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.38.0 (släppt 2026-11-13) · **Senast uppdaterad:** 2026-11-13 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 845 publicerade moduler. 840 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnena *Historiska epoker* (R04-A01) och *Militärhistoria* (R04-A02) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 887 publicerade moduler. 882 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnena *Historiska epoker* (R04-A01), *Militärhistoria* (R04-A02) och *Religion & idéhistoria* (R04-A03) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Religion & idéhistoria* (R04-A03). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Filosofi & etik* (R04-A04). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 11 096 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 11 477 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Religion & idéhistoria* (R04-A03), med bild på varje ord. Religionsord från R02 och 0.36 (kyrka, kloster, reformation, kristendom m.fl.) finns redan. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Filosofi & etik* (R04-A04), med bild på varje ord. Filosofiord från *Antikens arv*, *Upplysningen* och 0.38 (filosof, förnuft, logik, naturrätt, människovärde m.fl.) finns redan. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -106,6 +106,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Världskrigen: `s.offensiv.1`
   - Modern krigföring: `s.terrorism.1`, `s.krigets-lagar.1`
   - Förväxlingarna gällde mest närliggande ord: *beriden/ryttare/kavalleri*, *befäl/befälhavare*, *taktik/strategi/slagordning*, *kapitulation/kapitulera*, *kringvärn/cirkumvallation*, *menig/rekryt*, *segerrik/segrare*, *offensiv/genombrott*, *krigets lagar/folkrätt/konvention*.
+- **Från 0.38 (17 ord):**
+  - Religiösa grundbegrepp: `s.tro.1`, `s.from.1`, `s.bön.1`, `s.tillbe.1`, `s.högtidlighålla.1`
+  - Kristendomens historia: `s.protestantisk.1`
+  - Islamisk historia & kultur: `s.sunna.1`
+  - Asiatiska religioner: `s.nirvana.1`, `s.theravadabuddhism.1`, `s.renhet.1`, `s.medmänsklighet.1`
+  - Judendom & andra traditioner: `s.jiddisch.1`, `s.bud.2`, `s.animism.1`
+  - Idéernas historia: `s.meningen-med-livet.1`, `s.existentiell.1`, `s.ateism.1`
+  - Förväxlingarna gällde mest närliggande ord: *tro/tro på/troende/religiös/from*, *bön/be/mantra*, *tillbe/be/tacksamhet*, *protestantisk/reformation*, *renhet/rening*, *nirvana/återfödelse/upplysning*, *theravadabuddhism/riktning*, *bud/budord*, *animism/besjälad*, *meningen med livet/livsfråga/existentiell* och *ateism/ateist/agnostiker*.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -238,6 +246,19 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - tidigmodern tid: två–tre skott i minuten med musköt, kompanier på omkring 150 man, karolinsk uniform blå och gul från 1680-talet, vintern 1708–1709; Breitenfeld, Lützen och Poltava står bara i `factSources`
   - världskrigen: Somme 1916, Skagerrak 1916 (omkring 250 fartyg), Dagen D (omkring 156 000 man), omkring 70 000 finska krigsbarn varav omkring 15 000 stannade, Flygvapnet 1926
   - modern tid: värnplikten återinförd 2017, Genèvekonventionerna, MSB:s råd om hemberedskap
+- **0.38, svenska:**
+  - genus och böjning att kontrollera mot SAOL: *ett nirvana*, *en karma*, *bodhisattvor*, *sutror*, *stupor*, *ämbetsexamina*, *predikan* (pl. *predikningar*), *mirakel/miraklen*, *gurdwaror*; *fornkyrka*, *östkyrka* och *västkyrka* används nästan bara i bestämd form; *tron* (av *tro*) sammanfaller med *tron* (tronstol); *universum* med usageNote om *universumet*
+  - stavning av lånord efter NE: *chanukka*, *challa*, *getto*, *rosh hashana*, *jom kippur*, *pesach*, *sukkot*, *hijra*, *eid al-fitr*; ordval *slöja*, *böneutropare* (muezzin), *rättsskola* (madhhab), *helgedomsport* (torii), *offerlåda*, *nyårsbesök* (hatsumode), *offerplats* (sieidi), *religiös mångfald*
+  - *hedning* har en registeranmärkning om att ordet kan låta nedsättande; *Gud* används i stället för Allah; *be* har bara betydelsen 祈る (inte "be om"), *offer* bara 捧げ物 (inte brottsoffer)
+  - T01:s definition av *månkalender* (ny månad när månen inte syns) och T03:s *nymåne* (när den första smala skäran syns) bör stämmas av
+- **0.38, japanska:**
+  - termer att granska: 五行 (*de fem pelarna*), 犠牲祭, ムアッジン, 法学派, ダルヴィーシュ, 正教会/奉神礼, 家庭試問 (*husförhör*), ユールオッタ (*julotta*), シナゴーグ, ハッラー, カントル, ランガル, グルドワーラー, ノアイディ, ヨイク, 既知形 (bestämd form), den långa glosan på *katedralskola*
+  - *präst* glosas 牧師, 神官 eller 司祭 beroende på sammanhang; *helgedom* → 神社, *gudabild* → 神像
+- **0.38, fakta (ungefärliga värden, står i `factSources`):**
+  - religion i världen: 85–90 % sunni, omkring två miljoner pilgrimer på hajj, guldåldern ca 750–1250, zakat ofta 2,5 %, omkring 500 miljoner buddhister, över en miljard hinduer, omkring 25 miljoner sikher, över 80 000 shintohelgedomar, omkring 1 % kristna i Japan, Bibeln på över 700 språk, omkring 200 kardinaler
+  - Sverige: över 100 000 katoliker, omkring 20 000 judar, judiska församlingar sedan 1775, ungefär hälften medlemmar i Svenska kyrkan, kyrkoavgift omkring en procent, kvinnliga präster sedan 1960, prästerskapet ett riksdagsstånd till 1866, borgerlig vigsel 1908, religionsfrihetslagen 1951, Katedralskolan i Lund 1085, Uppsala universitet 1477, Svenska kyrkans ursäkt till samerna 2021
+  - historia: ämbetsexamen 605–1905, Japan på månkalender till 1872, Galilei 1633 och erkännandet 1992, Picos tal 1486, Erasmus grekiska Nya testamente 1516, dalai lama i Indien sedan 1959
+- **0.38, bilder:** *ateism*, *sekulär humanism* och *religionskritik* använder överkorsade, neutrala symboler (strålar från moln, en liten kyrka). Produktägaren bör bedöma om det känns respektfullt nog. *osmansk* visar den historiska osmanska flaggan.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -256,11 +277,12 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v41`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v42`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Tro och övertygelse* (SWC-HIS-03-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Religiösa grundbegrepp* är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Begrepp och definition* (SWC-HIS-04-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Filosofins grundord* (R04-A04-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **Delade betydelser:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`, och integratören strök den senares.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.
