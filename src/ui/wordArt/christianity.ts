@@ -169,10 +169,15 @@ const icon = (x: number, y: number, w = 22, h = 28, hl = false) => all(rect(x - 
   circle(x, y - h * 0.12, w * 0.3, '#f6e6a8', GOLD2, 1), circle(x, y - h * 0.12, w * 0.18, C.skin2, C.ink, 0.9), path(`M${f1(x - w * 0.32)} ${f1(y + h / 2 - 3)} C${f1(x - w * 0.3)} ${f1(y + h * 0.05)} ${f1(x + w * 0.3)} ${f1(y + h * 0.05)} ${f1(x + w * 0.32)} ${f1(y + h / 2 - 3)} Z`, hl ? RED : '#7a2a3a', C.ink, 0.9),
   hl ? rect(x - w / 2 - 2, y - h / 2 - 2, w + 4, h + 4, 'none', 3, HL, 2.2) : '');
 
+/** A thought cloud with small trailing bubbles towards the lower left. */
+const thinkCloud = (x: number, y: number, inner: Svg) => all(ellipse(x, y, 18, 16, WHITE, C.ink, 1.5), circle(x - 16, y + 18, 3, WHITE, C.ink, 1.1), circle(x - 21, y + 24, 2, WHITE, C.ink, 1), inner);
+
 // ── Motifs ───────────────────────────────────────────────────────────
 export const CHRISTIANITY_MOTIFS: Record<string, Svg> = {
   // ── 2111 Bibeln och evangelierna ──
-  'krist.kristen': all(church(88, 112, 0.9), greyed(fig(20, C.grey, 'calm', { h: 0.62 })), person(52, 0.8, { robe: HLF, pose: 'book', front: pendant() }), ground),
+  'krist.kristen': all(rect(0, 0, 120, 120, '#eef3f6', 18, null), greyed(fig(22, C.grey, 'smile', { h: 0.7 })), fig(66, HLF, 'smile', { h: 0.9, bottom: C.denim }),
+    on(66, 0.9, path('M-7 -42 L0 -28 L7 -42', 'none', GOLD, 1.2), crossS(0, -20, 14, GOLD, 2.2)), circle(66, 70, 13, 'none', HL, 2.2),
+    thinkCloud(100, 26, all(church(98, 44, 0.42), crossS(108, 14, 9, GOLD, 1.6))), ground),
   'krist.bibel': all(rect(0, 0, 120, 120, '#f2ece0', 18, null), path('M28 20 L92 20 L96 100 L32 100 Z', '#efe6d2', C.ink, 1.6), path('M24 16 L88 16 L92 96 L28 96 Z', BLACK, C.ink, 2),
     path('M30 20 L86 20 L89.4 92 L33.4 92 Z', 'none', GOLD, 1.2), crossS(58, 52, 34, GOLD, 4), path('M70 96 L70 112 L74 108 L78 112 L78 96 Z', RED, C.ink, 1.2), line('M96 22 L98 100', '#d9cfbb', 1)),
   'krist.Gamla-testamentet': all(bibleBlock('old'), tablets(49, 18, 0.42, true), greyed(crossS(88, 22, 14, GOLD, 2))),
@@ -257,7 +262,9 @@ export const CHRISTIANITY_MOTIFS: Record<string, Svg> = {
   'krist.nåd': all(rect(0, 0, 120, 120, '#fdf6e4', 18, null), rays(60, 0, 14, 40, 9, GOLD, 0.2, Math.PI - 0.2), rect(48, 40, 24, 20, HLF, 2, C.ink, 1.6), line('M60 40 L60 60 M48 50 L72 50', RED, 2.4), path('M52 40 C48 32 58 34 60 40 C62 34 72 32 68 40', 'none', RED, 2),
     palm(46, 76, 1.5, 30), palm(74, 76, 1.5, -30), greyed(coin(18, 98, 7), coin(30, 102, 7)), noSign(24, 100, 14), ground),
   'krist.frälsning': all(rect(0, 0, 120, 120, NIGHT, 18, null), path('M120 0 L120 120 L40 120 C60 80 80 30 120 0 Z', '#fdf3d0', null), rays(118, 4, 16, 50, 7, GOLD, Math.PI * 0.5, Math.PI), person(66, 0.72, { robe: HLF, pose: 'up', mood: 'smile' }), arrow(22, 96, 44, 80, HL, 2.4), line('M4 112 L116 112', C.grey2, 2)),
-  'krist.protestantisk': all(rect(0, 0, 120, 120, '#f6efe0', 18, null), openBook(52, 74, 56, BLACK), crossS(52, 34, 34, WOOD, 4), greyed(at(98, 40, 1, path('M-10 10 L-10 -6 C-10 -16 10 -16 10 -6 L10 10 Z', GOLD, C.ink, 1.3), line('M-10 2 L10 2 M-10 -5 L10 -5', C.ink, 1), crossS(0, -18, 6, C.ink, 1))), noSign(98, 40, 16), ground),
+  'krist.protestantisk': all(rect(0, 0, 120, 120, '#f6efe0', 18, null), greyed(at(60, 44, 0.62, basilicaL())), greyed(at(60, -20, 0.62, path('M-10 10 L-10 -6 C-10 -16 10 -16 10 -6 L10 10 Z', GOLD, C.ink, 1.3), line('M-10 2 L10 2 M-10 -5 L10 -5', C.ink, 1))),
+    line('M60 48 L60 56 M20 56 L100 56', HL, 2.4), arrow(20, 56, 20, 66, HL, 2.4), arrow(60, 56, 60, 66, HL, 2.4), arrow(100, 56, 100, 66, HL, 2.4), T(88, 52, '1517', 9, HL),
+    church(26, 112, 0.5, HLF, SLATE), at(60, 112, 0.5, sweChurchL(HLF)), church(102, 112, 0.5, HLF, ROOF), rect(4, 62, 112, 52, 'none', 6, HL, 2), ground),
   'krist.bibelöversättning': all(rect(0, 0, 120, 120, '#f6efe0', 18, null), greyed(openBook(28, 54, 40, BROWN, false), ...[0, 1, 2, 3].map((i) => line(`M12 ${46 + i * 5} L26 ${46 + i * 5}`, BLACK, 2.6)), ...[0, 1, 2, 3].map((i) => line(`M31 ${46 + i * 5} L45 ${46 + i * 5}`, BLACK, 2.6))),
     arrow(50, 54, 66, 54, HL, 2.6), openBook(92, 54, 40, BLACK, false), ...[0, 1, 2, 3].flatMap((i) => [squig(76, 46 + i * 5, 12, HL, 1.4), squig(95, 46 + i * 5, 12, HL, 1.4)]), ...[18, 40, 62, 84, 102].map((x, i) => fig(x, [HLF, '#e4a070', HLF, '#e4a070', HLF][i]!, 'smile', { h: 0.3 })), ground),
   'krist.reformert': all(rect(4, 6, 112, 106, WHITE, 3, C.ink, 1.4), path('M20 6 L20 112 M100 6 L100 112', 'none', '#e0e0dc', 1.4), rect(50, 50, 20, 18, WOOD, 2, C.ink, 1.6), path('M54 68 L66 68 L63 112 L57 112 Z', WOOD2, C.ink, 1.4), openBook(60, 46, 20, BLACK, false),
@@ -265,9 +272,11 @@ export const CHRISTIANITY_MOTIFS: Record<string, Svg> = {
   'krist.anglikansk': all(rect(0, 0, 120, 120, '#e4eff6', 18, null), at(56, 112, 1, rect(-30, -40, 44, 40, '#d9cfbb', 0.5, C.ink, 1.5), path('M-33 -40 L-8 -56 L17 -40 Z', SLATE, C.ink, 1.5), rect(14, -74, 20, 74, '#d9cfbb', 0.5, C.ink, 1.5), ...[16, 22, 28].map((d) => rect(d - 2, -80, 4, 6, '#d9cfbb', 0.5, C.ink, 1)), path('M20 -50 C20 -58 28 -58 28 -50 L28 -40 L20 -40 Z', '#5a6a80', C.ink, 1)),
     path('M14 18 L20 34 L30 22 L40 34 L46 18 L46 38 L14 38 Z', GOLD, C.ink, 1.4), ...[20, 30, 40].map((x) => circle(x, 22 - (x === 30 ? 2 : 0) + 0, 2, RED, null)),
     line('M98 30 L98 72', C.ink, 1.4), rect(98, 30, 18, 12, WHITE, 0, C.ink, 1), rect(98, 34.5, 18, 3, RED, 0, null), rect(105.5, 30, 3, 12, RED, 0, null), ground),
-  'krist.motreformation': all(rect(0, 0, 120, 120, '#f6efe0', 18, null), at(40, 112, 1, rect(-30, -50, 60, 50, '#f2e2c0', 0.5, C.ink, 1.6), path('M-34 -50 L0 -66 L34 -50 Z', '#f2e2c0', C.ink, 1.4), rect(-12, -76, 24, 10, '#f2e2c0', 1, C.ink, 1.2), path('M-14 -76 C-14 -98 14 -98 14 -76 Z', GOLD, C.ink, 1.6), crossS(0, -104, 10, GOLD2, 1.4),
-    ...[-24, -12, 12, 24].map((d) => rect(d - 2, -46, 4, 46, WHITE, 0.5, C.ink, 0.9)), path('M-6 0 L-6 -18 C-6 -26 6 -26 6 -18 L6 0 Z', WOOD2, C.ink, 1.2), sparkle(-18, -56, 3), sparkle(18, -56, 3)),
-    greyed(church(98, 112, 0.5)), arrow(86, 60, 72, 60, HL, 2.6), ground),
+  'krist.motreformation': all(rect(0, 0, 120, 120, '#f6efe0', 18, null), greyed(church(24, 112, 0.6)),
+    at(84, 112, 0.82, rect(-30, -50, 60, 50, HLF, 0.5, C.ink, 1.6), path('M-34 -50 L0 -66 L34 -50 Z', HLF, C.ink, 1.4), rect(-12, -76, 24, 10, HLF, 1, C.ink, 1.2), path('M-14 -76 C-14 -98 14 -98 14 -76 Z', GOLD, C.ink, 1.6), crossS(0, -104, 10, GOLD2, 1.4),
+      ...[-24, -12, 12, 24].map((d) => rect(d - 2, -46, 4, 46, WHITE, 0.5, C.ink, 0.9)), path('M-6 0 L-6 -18 C-6 -26 6 -26 6 -18 L6 0 Z', WOOD2, C.ink, 1.2)), T(84, 18, '1545', 9, HL),
+    ...[24, 38].map((x, i) => fig(x, i ? C.denim : '#c96b3c', 'smile', { h: 0.4 })), arrow(16, 104, 46, 104, HL, 2.6),
+    person(54, 0.5, { robe: BLACK, pose: 'out', front: pendant(WOOD) }), ground),
   'krist.jesuit': all(rect(4, 10, 112, 102, '#efe6d2', 3, null), rect(10, 18, 34, 24, '#3d5a4a', 2, C.ink, 1.4), crossS(96, 30, 14, WOOD, 2), person(26, 0.86, { robe: BLACK, collar: false, pose: 'book', front: pendant(WOOD) }),
     ...[64, 92].map((x) => all(rect(x - 12, 84, 24, 4, WOOD, 1, C.ink, 1.2), line(`M${x - 9} 88 L${x - 9} 112 M${x + 9} 88 L${x + 9} 112`, WOOD2, 2), fig(x, x < 80 ? '#c96b3c' : C.denim, 'smile', { h: 0.4 }))), ground),
   'krist.religionsfred': all(rect(0, 0, 120, 120, '#f6efe0', 18, null), church(22, 112, 0.6, HLF), church(98, 112, 0.6, '#e4a070'), rect(38, 20, 44, 52, WHITE, 2, C.ink, 1.6), ...[30, 38, 46].map((y) => line(`M44 ${y} L76 ${y}`, C.grey, 1.4)), circle(66, 60, 6, RED, C.ink, 1.2),
