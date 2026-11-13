@@ -1,0 +1,175 @@
+{
+ "id": "m.underrattelse-och-spaning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-13",
+ "titleSv": "Underrättelse och spaning",
+ "titleJa": "{諜報|ちょうほう}と{偵察|ていさつ}",
+ "descriptionSv": "Underrättelse och spaning: underrättelse, underrättelsetjänst, spaning, spana, rekognosera, drönare, spionera, spion, satellit, signalspaning, avlyssna, kamouflage, kamouflera, agent, lägesbild och kikare.",
+ "descriptionJa": "{諜報|ちょうほう}と{偵察|ていさつ}：{情報|じょうほう}、{情報機関|じょうほうきかん}、{偵察|ていさつ}、{偵察|ていさつ}する、{下見|したみ}する、ドローン、スパイする、スパイ、{人工衛星|じんこうえいせい}、{信号情報収集|しんごうじょうほうしゅうしゅう}、{盗聴|とうちょう}する、{迷彩|めいさい}、{偽装|ぎそう}する、{工作員|こうさくいん}、{状況図|じょうきょうず}、{双眼鏡|そうがんきょう}。",
+ "categoryId": "R04-A02-T06",
+ "tags": [
+  "historia",
+  "krig"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kombinerade-vapensystem"
+ ],
+ "related": [],
+ "recommendedOrder": 2052,
+ "words": [
+  {
+   "senseId": "s.underrättelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underrättelsetjänst.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spaning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rekognosera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drönare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spionera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.satellit.1",
+   "active": false
+  },
+  {
+   "senseId": "s.signalspaning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avlyssna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kamouflage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kamouflera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.agent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägesbild.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kikare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Att veta mer än fienden",
+  "paragraphs": [
+   "I ett krig vill båda sidor veta så mycket som möjligt om den andra: var fienden finns, hur stark den är och vad den planerar. Den som vet mer än sin motståndare har ett stort övertag. Därför arbetar varje armé hårt med underrättelser.",
+   "Förr skickade man ut små grupper på spaning. De red fram för att spana och rekognosera marken, och en officer med kikare tittade på fienden från en höjd. En spion som i hemlighet spionerade åt fienden var mycket farlig.",
+   "I dag används också teknik. En drönare kan flyga över fienden och filma, och en satellit kan ta bilder uppifrån. Med signalspaning kan man avlyssna radio och telefon och på så sätt höra var fienden finns, utan att se den.",
+   "Fienden försöker förstås gömma sig. Soldaterna bär kläder med kamouflage, och man kan kamouflera kanoner och bilar med grenar och nät. En skicklig agent kan också lämna falsk information för att lura den andra sidan.",
+   "All information samlas sedan hos underrättelsetjänsten. Där sätter officerarna ihop de många små bitarna till en lägesbild, som visar hela läget. Utifrån den kan befälhavaren fatta sina beslut."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "inference",
+    "promptSv": "Varför arbetar varje armé hårt med underrättelser?",
+    "options": [
+     "Underrättelser är billiga",
+     "Den som vet mer än fienden har ett övertag",
+     "Soldaterna tycker om att spana",
+     "Det är ett sätt att träna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den som vet mer än sin motståndare har ett stort övertag.",
+    "explanationJa": "{敵|てき}より{多|おお}く{知|し}っている{側|がわ}が{有利|ゆうり}になるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gjorde en officer med kikare förr?",
+    "options": [
+     "Tittade på fienden från en höjd",
+     "Flög en drönare",
+     "Avlyssnade telefoner",
+     "Byggde en lägesbild"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En officer med kikare tittade på fienden från en höjd.",
+    "explanationJa": "{高|たか}い{場所|ばしょ}から{敵|てき}を{見|み}ていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad kan man göra med signalspaning?",
+    "options": [
+     "Avlyssna radio och telefon",
+     "Ta bilder från en satellit",
+     "Kamouflera en kanon",
+     "Rekognosera marken"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Med signalspaning kan man avlyssna radio och telefon …",
+    "explanationJa": "{無線|むせん}や{電話|でんわ}を{盗聴|とうちょう}できます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Soldater använder kamouflage för att synas bättre.",
+    "correct": false,
+    "explanationSv": "Soldaterna bär kläder med kamouflage … för att gömma sig.",
+    "explanationJa": "{迷彩|めいさい}は{隠|かく}れるために{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Underrättelsetjänsten sätter ihop många små bitar till en lägesbild.",
+    "correct": true,
+    "explanationSv": "Där sätter officerarna ihop de många små bitarna till en lägesbild …",
+    "explanationJa": "{多|おお}くの{小|ちい}さな{情報|じょうほう}を{状況図|じょうきょうず}にまとめます。"
+   }
+  ],
+  "factSources": [
+   "Underrättelseinhämtning delas ofta in i bland annat signalspaning (SIGINT) och spaning med människor (HUMINT) (Nationalencyklopedin, \"underrättelseväsen\").",
+   "I Sverige svarar Försvarets radioanstalt (FRA) för signalspaning, Must för militär underrättelsetjänst och Säkerhetspolisen för civil (Nationalencyklopedin; Försvarsmakten, \"Must\").",
+   "Obemannade luftfarkoster (drönare, UAV) används för spaning och övervakning och har fått allt större militär betydelse på 2000-talet (Nationalencyklopedin, \"UAV\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man tar reda på saker i hemlighet, och om information i krig och i vardagen.",
+  "discussionPoints": [
+   "Hur tror du att det känns att arbeta som spion eller agent?",
+   "Är det alltid fel att spionera och avlyssna, eller finns det tillfällen då det är rätt?",
+   "Vilken ny teknik tror du är viktigast för spaning i dag?",
+   "Var i vardagen behöver man en lägesbild innan man fattar ett beslut?"
+  ]
+ }
+}
