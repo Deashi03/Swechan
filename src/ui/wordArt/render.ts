@@ -132,6 +132,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'idé.': () => import('./historyOfIdeas').then((m) => m.HISTORY_OF_IDEAS_MOTIFS),
   'filg.': () => import('./philosophyBasics').then((m) => m.PHILOSOPHY_BASICS_MOTIFS),
   'kun.': () => import('./epistemology').then((m) => m.EPISTEMOLOGY_MOTIFS),
+  'etik.': () => import('./ethics').then((m) => m.ETHICS_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
