@@ -15,6 +15,7 @@ import { SvText } from '../components/SvText';
 import { OtherSenses } from './OtherSenses';
 import { PhotoCredit, WordImage } from '../components/WordImage';
 import { imageFor } from '../../content/images';
+import { fitWord } from '../components/fitWord';
 
 export function WordIntro({ senseId, compact, onNext }: { senseId: string; compact: boolean; onNext: () => void }) {
   const repo = getContent();
@@ -34,8 +35,8 @@ export function WordIntro({ senseId, compact, onNext }: { senseId: string; compa
       <div className="card stack-sm">
         {imageFor(senseId) && <div className="intro-picture"><WordImage senseId={senseId} size={180} label={entry.lemma} mode="intro" /><PhotoCredit senseId={senseId} /></div>}
         <div className="row">
-          <div className="grow">
-            <div className="prompt-word" lang="sv">{infl.kind === 'noun' && <span className="muted" style={{ fontWeight: 400 }}>{infl.gender} </span>}{entry.lemma}</div>
+          <div className="grow fit-box">
+            <div className="prompt-word fit-word" lang="sv" {...fitWord(entry.lemma)}>{infl.kind === 'noun' && <span className="muted" style={{ fontWeight: 400 }}>{infl.gender} </span>}{entry.lemma}</div>
             <div className="small muted">{posSv(entry.pos)}{infl.kind === 'verb' && infl.particle ? ' · partikelverb' : ''}</div>
           </div>
           <SpeakButton text={entry.lemma} />
