@@ -64,9 +64,11 @@ describe('real planning catalog (planning/catalog/swechan-catalog.v1.json)', () 
     for (const id of original) expect(publishedIds).toContain(id);
     const linked = new Set(index.mapping.links.map((l) => l.moduleId));
     for (const id of original) expect(linked.has(id)).toBe(false);
-    expect(index.menuItems('R04-A02-T02').filter((i) => i.kind === 'published').map((i) => i.id)).toEqual(['m.medeltida-borgar']);
-    expect(index.menuItems('R04-A02-T03').filter((i) => i.kind === 'published').map((i) => i.id)).toEqual(['m.krig-forsvar']);
-    expect(index.countBelow('R04-A02').published).toBe(2); // Historiska epoker (R04-A01) is published from 0.36
+    // From 0.37 Militärhistoria (R04-A02) gets its catalog modules; the two original modules stay in their menus.
+    expect(index.menuItems('R04-A02-T02').filter((i) => i.kind === 'published').map((i) => i.id)).toContain('m.medeltida-borgar');
+    expect(index.menuItems('R04-A02-T03').filter((i) => i.kind === 'published').map((i) => i.id)).toContain('m.krig-forsvar');
+    const linkedMilitary = index.mapping.links.filter((l) => l.catalogId.startsWith('SWC-HIS-02-')).length;
+    expect(index.countBelow('R04-A02').published).toBe(2 + linkedMilitary);
   });
 
   it('links the 0.4 modules 1:1 to exactly the catalog entries they were written for', () => {
@@ -95,7 +97,7 @@ describe('planned modules cannot be started as lessons', () => {
   it('no catalog entry is startable, published lessons are', () => {
     expect(index.modules.some((m) => index.isStartable(m.catalogId))).toBe(false);
     for (const id of publishedIds) expect(index.isStartable(id)).toBe(true);
-    expect(index.menuItems('R04-A02-T04').every((i) => i.kind === 'planned')).toBe(true);
+    expect(index.menuItems('R04-A03-T01').every((i) => i.kind === 'planned')).toBe(true);
   });
   it('the lesson services reject a planned ID and never recommend one', async () => {
     await setupTestEnv();
