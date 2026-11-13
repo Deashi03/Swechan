@@ -66,7 +66,7 @@ describe('real planning catalog (planning/catalog/swechan-catalog.v1.json)', () 
     for (const id of original) expect(linked.has(id)).toBe(false);
     expect(index.menuItems('R04-A02-T02').filter((i) => i.kind === 'published').map((i) => i.id)).toEqual(['m.medeltida-borgar']);
     expect(index.menuItems('R04-A02-T03').filter((i) => i.kind === 'published').map((i) => i.id)).toEqual(['m.krig-forsvar']);
-    expect(index.countBelow('R04').published).toBe(2);
+    expect(index.countBelow('R04-A02').published).toBe(2); // Historiska epoker (R04-A01) is published from 0.36
   });
 
   it('links the 0.4 modules 1:1 to exactly the catalog entries they were written for', () => {
