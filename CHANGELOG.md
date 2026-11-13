@@ -1,5 +1,38 @@
 # Changelog
 
+## 0.36.0 – 2026-11-13
+
+42 nya moduler som gör överämnet *Historiska epoker* (R04-A01) komplett, det första i rotområdet *Historia & humaniora*. Varje nytt modulord har en egen bild, utom de 20 ord som underkändes i två blindtestomgångar. Långa ord flödar inte längre ut ur ordkortet.
+
+### Moduler (42 nya, 726 målord)
+- **Förhistorisk tid** (1901–1907): jägar- och samlarsamhällen, de första bosättningarna, jordbrukets uppkomst, stenålderns redskap, bronsålderns samhällen, järnålderns vardag och att tolka förhistoriska fynd.
+- **Antiken** (1911–1917): grekiska stadsstater, Aten och demokrati, Sparta och krigarkultur, romerska republiken, romerska kejsardömet, livet i antika städer och antikens arv.
+- **Medeltiden** (1921–1927): feodalism och vasaller, bönder och gods, kloster och kyrka, handelsstäder och skrån, digerdöden, medeltida kungamakt och medeltidens vardagsliv.
+- **Tidigmodern tid** (1931–1937): renässans och humanism, reformationen, upptäcktsresor, koloniala imperier, absolutism och hovliv, vetenskapliga revolutionen och Europas handelsvägar.
+- **Revolutioner & industrialisering** (1941–1947): upplysningen, amerikanska revolutionen, franska revolutionen, industrialiseringens fabriker, arbetarrörelsens framväxt, nationernas omvandling och 1800-talets urbanisering.
+- **1900-tal till nutid** (1951–1957): första världskrigets samhällen, mellankrigstiden, andra världskrigets samhällen, kalla kriget, avkolonisering, välfärdssamhällets utveckling och globaliseringens historia.
+- Varje modul har 15–19 målord, lästext med fem frågor och konversationsunderlag. Det finns 450 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`.
+- Nya betydelser på befintliga poster: *röja*, *gjuta* och *offra* (förr), *utesluta* (från en grupp), *myt* (berättelse om gudar), *län* (medeltida), *ärftlig* (makt och jord), *mässa* (gudstjänst), *marknad* (på torget), *perspektiv* (i en bild), *etikett* (uppförande), *kol* (bränsle) och *mobilisera* (militärt).
+- Lästexterna nämner allmänt kända historiska personer (t.ex. Sokrates, Caesar, Luther, Galilei, Napoleon, Branting, Gandhi). Namnen ligger i grundordförrådets `names`. Årtal och fakta står i `factSources`.
+- *miljonprogrammet* i *Välfärdssamhällets utveckling* återanvänder `s.miljonprogram.1` från 0.34 i stället för en ny post. *båge*, *mästare* (i ett skrå) hade saknat bild och har fått bilder.
+- `catalog.test.ts` räknar nu publicerade moduler i *Militärhistoria* (R04-A02) i stället för hela R04.
+
+### Bilder (445 nya ordbilder)
+- 167 symbolbilder, 150 bilder som får användas i bildövningar och resten scener.
+- 188 symbol- och adjektivbilder blindtestades. 168 klarade testet efter högst två omgångar.
+- **20 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *folkstyre/demokrati* och *absolutism/envälde*.
+- Nya bildfiler i `src/ui/wordArt/`: `prehistory.ts`, `antiquity.ts`, `middleAges.ts`, `earlyModern.ts`, `revolutions.ts` och `modernHistory.ts`.
+
+### Gränssnitt
+- **Långa ord flödar inte längre ut ur ordkortet.** Rubrikordet i ordintroduktionen, i övningarna och i ordboken hade en fast storlek (38 px) och kunde inte brytas, så långa sammansättningar som *yttrandefrihetsgrundlagen* gick utanför kortet och under högtalarknappen på en telefon. Nu krymper rubriken så att ordets längsta del får plats (container query, `--fit-len`, `components/fitWord.ts`), aldrig under 14 px; korta ord behåller full storlek. Utan stöd för container queries bryts ordet i stället. Det gällde omkring 1 660 modulord med en del på 12 tecken eller mer.
+
+### Verktyg och test
+- e2e-testets planerade exempel är *Bronsålderns vapen* (Historia & humaniora → Militärhistoria → Forntida krigföring).
+- Nytt test för `fitWord`.
+
+Service workern är `swechan-v40`.
+
 ## 0.35.0 – 2026-11-12
 
 42 nya moduler som gör överämnet *Medier & samhällsdebatt* (R03-A06) komplett, och därmed hela rotområdet *Samhälle & institutioner* (R03). Varje nytt modulord har en egen bild, utom de 25 ord som underkändes i två blindtestomgångar.

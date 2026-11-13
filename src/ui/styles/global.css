@@ -177,7 +177,11 @@ html.no-furigana rt { display: none; }
 .feedback.fail { background: var(--c-error-tint); }
 
 /* Word prompt */
-.prompt-word { font-size: var(--fs-2xl); font-weight: var(--fw-bold); line-height: var(--lh-tight); letter-spacing: -0.02em; }
+.prompt-word { font-size: var(--fs-2xl); font-weight: var(--fw-bold); line-height: var(--lh-tight); letter-spacing: -0.02em; overflow-wrap: anywhere; }
+/* Headwords shrink to fit their card when the longest token is too wide (see components/fitWord.ts). */
+.fit-box { container-type: inline-size; }
+.fit-box .fit-word { --fit-max: var(--fs-2xl); font-size: clamp(var(--fit-min, 0.875rem), calc(100cqi / (var(--fit-len, 1) * 0.68)), var(--fit-max)); overflow-wrap: anywhere; }
+h1.fit-box .fit-word { --fit-max: var(--fs-xl); }
 .prompt-ja { font-size: var(--fs-xl); font-weight: var(--fw-bold); }
 .prompt-ja { color: var(--c-ja); }
 .picture-prompt + .prompt-ja { text-align: center; font-size: var(--fs-lg); line-height: 2; }

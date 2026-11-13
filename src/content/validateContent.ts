@@ -85,6 +85,16 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.inskränkning.1', 's.åsiktsfrihet.1', 's.pressfrihet.1', 's.ensamansvar.1', 's.upphovsrätt.1', 's.förtal.1', 's.förtala.1', 's.nedsättande.1', 's.kränkande.1',
   // 0.35 (Debatt & opinion), after two blind-test rounds
   's.ledarskribent.1', 's.argumentation.1', 's.ta-debatten.1', 's.saklighet.1', 's.polariserad.1',
+  // 0.36 (Antiken), after two blind-test rounds
+  's.ofri.1', 's.ståthållare.1', 's.kejsardöme.1', 's.klassisk.2',
+  // 0.36 (Medeltiden), after two blind-test rounds
+  's.helig.1',
+  // 0.36 (Tidigmodern tid), after two blind-test rounds
+  's.humanism.1', 's.kolonialism.1', 's.prakt.1', 's.praktfull.1',
+  // 0.36 (Revolutioner & industrialisering), after two blind-test rounds
+  's.beskatta.1', 's.facklig.1', 's.socialdemokrati.1',
+  // 0.36 (1900-tal till nutid), after two blind-test rounds
+  's.fascism.1', 's.depression.1', 's.nazism.1', 's.folkmord.1', 's.civil-olydnad.1', 's.välfärdssamhälle.1', 's.socialförsäkring.1', 's.världsomspännande.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

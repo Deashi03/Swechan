@@ -112,6 +112,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'rekl.': () => import('./advertising').then((m) => m.ADVERTISING_MOTIFS),
   'deb.': () => import('./debate').then((m) => m.DEBATE_MOTIFS),
   'yttr.': () => import('./mediaLaw').then((m) => m.MEDIA_LAW_MOTIFS),
+  'fhist.': () => import('./prehistory').then((m) => m.PREHISTORY_MOTIFS),
+  'antik.': () => import('./antiquity').then((m) => m.ANTIQUITY_MOTIFS),
+  'mtid.': () => import('./middleAges').then((m) => m.MIDDLE_AGES_MOTIFS),
+  'tmod.': () => import('./earlyModern').then((m) => m.EARLY_MODERN_MOTIFS),
+  'revo.': () => import('./revolutions').then((m) => m.REVOLUTION_MOTIFS),
+  'modh.': () => import('./modernHistory').then((m) => m.MODERN_HISTORY_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};

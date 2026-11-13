@@ -12,6 +12,7 @@ import { checkTypedAnswer, type NearMiss } from '../../learning/answerCheck';
 import { isChoice, type ChoiceExercise, type ExerciseInstance, type ExerciseResult, type TypedExercise } from '../../learning/exercises/types';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
 import { Ja, LangText } from '../components/Ja';
+import { fitWord } from '../components/fitWord';
 import { WordImage } from '../components/WordImage';
 import { pictureMode } from './pictureMode';
 
@@ -84,7 +85,9 @@ function ChoiceView({ ex, onDone }: { ex: ChoiceExercise; onDone: (r: ExerciseRe
       <Instruction sv={ex.instructionSv} ja={ex.instructionJa} />
       <div className="card stack-sm" style={{ padding: '22px 20px', borderRadius: 'var(--r-xl)' }}>
         {ex.image && <div className="picture-prompt"><WordImage senseId={ex.image} size={200} mode={pictureMode(ex.type)} /></div>}
-        {ex.prompt && <LangText text={ex.prompt} lang={ex.promptLang} className={ex.promptLang === 'ja' ? 'prompt-ja' : wordCard || ex.type === 'image_pick' ? 'prompt-word' : ''} />}
+        {ex.prompt && (ex.promptLang === 'ja'
+          ? <LangText text={ex.prompt} lang="ja" className="prompt-ja" />
+          : <div className="fit-box"><LangText text={ex.prompt} lang="sv" className={wordCard || ex.type === 'image_pick' ? 'prompt-word fit-word' : ''} {...fitWord(ex.prompt)} /></div>)}
         {ex.subPrompt && (
           <div className="small" style={{ background: 'var(--c-primary-tint)', borderRadius: 12, padding: '10px 12px' }}>
             <LangText text={ex.subPrompt} lang={ex.subPromptLang ?? 'sv'} jaClassName="ja-word" />
@@ -197,7 +200,9 @@ function TypedView({ ex, onDone }: { ex: TypedExercise; onDone: (r: ExerciseResu
       <Instruction sv={ex.instructionSv} ja={ex.instructionJa} />
       <div className="card stack-sm" style={{ padding: '20px', borderRadius: 'var(--r-xl)' }}>
         {ex.image && <div className="picture-prompt"><WordImage senseId={ex.image} size={150} /></div>}
-        <LangText text={ex.prompt} lang={ex.promptLang} className={ex.promptLang === 'ja' ? 'prompt-ja' : 'prompt-word'} />
+        {ex.promptLang === 'ja'
+          ? <LangText text={ex.prompt} lang="ja" className="prompt-ja" />
+          : <div className="fit-box"><LangText text={ex.prompt} lang="sv" className="prompt-word fit-word" {...fitWord(ex.prompt)} /></div>}
         {ex.subPrompt && <div className="small muted"><LangText text={ex.subPrompt} lang={ex.subPromptLang ?? 'sv'} jaClassName="ja-word" /></div>}
       </div>
       <form className="stack-sm" onSubmit={(e) => { e.preventDefault(); if (state === 'answering') submit(); }}>

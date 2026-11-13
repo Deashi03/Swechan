@@ -1,4 +1,5 @@
 import { useLiveQuery } from 'dexie-react-hooks';
+import { fitWord } from '../components/fitWord';
 import { getContent } from '../../content/repository';
 import { inflectionForms } from '../../content/morphology';
 import type { VocabularyEntry } from '../../content/schema';
@@ -53,10 +54,10 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
     <article className="stack" lang="sv">
       <header>
         <div className="row">
-          <h1 className="grow" style={{ marginBottom: 0 }}>
+          <h1 className="grow fit-box" style={{ marginBottom: 0 }}><span className="fit-word" style={{ display: 'block', ...fitWord(entry.lemma).style }}>
             {infl.kind === 'noun' && <span className="muted" style={{ fontWeight: 400 }}>{infl.gender} </span>}
             {entry.lemma}
-          </h1>
+          </span></h1>
           <SpeakButton text={entry.lemma} />
         </div>
         <div className="row wrap small muted" style={{ gap: 6 }}>
