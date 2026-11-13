@@ -129,6 +129,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'islam.': () => import('./islamHistory').then((m) => m.ISLAM_MOTIFS),
   'asrel.': () => import('./asianReligions').then((m) => m.ASIAN_RELIGION_MOTIFS),
   'jud.': () => import('./judaismTraditions').then((m) => m.JUDAISM_TRADITION_MOTIFS),
+  'idé.': () => import('./historyOfIdeas').then((m) => m.HISTORY_OF_IDEAS_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
