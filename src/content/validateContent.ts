@@ -93,6 +93,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.humanism.1', 's.kolonialism.1', 's.prakt.1', 's.praktfull.1',
   // 0.36 (Revolutioner & industrialisering), after two blind-test rounds
   's.beskatta.1', 's.facklig.1', 's.socialdemokrati.1',
+  // 0.36 (1900-tal till nutid), after two blind-test rounds
+  's.fascism.1', 's.depression.1', 's.nazism.1', 's.folkmord.1', 's.civil-olydnad.1', 's.välfärdssamhälle.1', 's.socialförsäkring.1', 's.världsomspännande.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
