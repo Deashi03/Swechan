@@ -134,6 +134,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'kun.': () => import('./epistemology').then((m) => m.EPISTEMOLOGY_MOTIFS),
   'etik.': () => import('./ethics').then((m) => m.ETHICS_MOTIFS),
   'medv.': () => import('./consciousness').then((m) => m.CONSCIOUSNESS_MOTIFS),
+  'polf.': () => import('./politicalPhilosophy').then((m) => m.POLITICAL_PHILOSOPHY_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
