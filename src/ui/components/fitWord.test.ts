@@ -4,7 +4,7 @@ import { fitWord, longestToken } from './fitWord';
 describe('fitWord – long headwords shrink to fit the card', () => {
   it('measures the longest unbreakable token, not the whole phrase', () => {
     expect(longestToken('yttrandefrihetsgrundlagen')).toBe(25);
-    expect(longestToken('olaga integritetsintrång')).toBe(17);
+    expect(longestToken('olaga integritetsintrång')).toBe(18);
     expect(longestToken('katt')).toBe(4);
     expect(longestToken('')).toBe(1);
   });
