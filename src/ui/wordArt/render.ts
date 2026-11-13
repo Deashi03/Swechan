@@ -118,6 +118,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'tmod.': () => import('./earlyModern').then((m) => m.EARLY_MODERN_MOTIFS),
   'revo.': () => import('./revolutions').then((m) => m.REVOLUTION_MOTIFS),
   'modh.': () => import('./modernHistory').then((m) => m.MODERN_HISTORY_MOTIFS),
+  'fkrig.': () => import('./ancientWarfare').then((m) => m.ANCIENT_WARFARE_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
