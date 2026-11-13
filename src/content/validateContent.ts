@@ -89,6 +89,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.ofri.1', 's.ståthållare.1', 's.kejsardöme.1', 's.klassisk.2',
   // 0.36 (Medeltiden), after two blind-test rounds
   's.helig.1',
+  // 0.36 (Tidigmodern tid), after two blind-test rounds
+  's.humanism.1', 's.kolonialism.1', 's.prakt.1', 's.praktfull.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
