@@ -12,7 +12,7 @@
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
 import { type Build } from './figures';
-import { HL, cloud } from './people';
+import { HL, cloud, heart } from './people';
 import { P as F, type Mood, greyed } from './blindFix';
 
 // ── Colours ──────────────────────────────────────────────────────────
@@ -157,7 +157,6 @@ const scissors = (x: number, y: number, s = 1) => at(x, y, s, circle(-4, 6, 3, '
 const tree = (x: number, s = 1, col: string = LEAF) => at(x, 112, s, rect(-3, -22, 6, 22, WOOD, 1, C.ink, 1.2), circle(0, -32, 14, col, C.ink, 1.4));
 const pine = (x: number, s = 1) => at(x, 112, s, rect(-2, -8, 4, 8, WOOD, 0.5, C.ink, 1), path('M0 -40 L10 -18 L5 -18 L13 -8 L-13 -8 L-5 -18 L-10 -18 Z', LEAF2, C.ink, 1.2));
 const mountain = (x: number, y: number, w: number, h: number, col: string = '#9ab0c0') => all(path(`M${x - w} ${y} L${x} ${y - h} L${x + w} ${y} Z`, col, C.ink, 1.5), path(`M${f1(x - w * 0.28)} ${f1(y - h * 0.72)} L${x} ${y - h} L${f1(x + w * 0.28)} ${f1(y - h * 0.72)} L${f1(x + w * 0.1)} ${f1(y - h * 0.66)} L${x} ${f1(y - h * 0.76)} L${f1(x - w * 0.12)} ${f1(y - h * 0.66)} Z`, C.white, null));
-const spark = (x: number, y: number, s = 1) => all(circle(x, y, 5 * s, GLOW, null), sparkle(x, y, 4 * s, GOLD));
 const wisp = (x: number, y: number, s = 1, col: string = '#9fd0e8') => at(x, y, s, path('M0 10 C-6 4 -6 -4 0 -8 C2 -10 6 -10 6 -6 C2 -6 2 -2 4 2 C6 6 4 10 0 10 Z', col, '#5a8fb0', 1), circle(1, -4, 0.9, '#2c3557', null), circle(4, -4.5, 0.9, '#2c3557', null));
 const reindeer = (x: number, y: number, s = 1, flip = false) => g(`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`,
   line('M-10 0 L-10 -12 M-4 0 L-4 -12 M8 0 L8 -12 M13 0 L13 -12', '#6e5236', 2.6), ellipse(2, -16, 15, 7, '#8a6a48', C.ink, 1.3), path('M14 -20 L19 -32 L25 -30 L21 -18 Z', '#8a6a48', C.ink, 1.2),
@@ -167,11 +166,9 @@ const reindeer = (x: number, y: number, s = 1, flip = false) => g(`translate(${x
 const samiDrum = (x: number, y: number, s = 1) => at(x, y, s, ellipse(0, 0, 13, 17, '#e6c79a', C.ink, 1.6), ellipse(0, 0, 10.5, 14.5, 'none', '#a0703a', 1),
   line('M-10 -4 L10 -4', SAMI_R, 1.4), circle(0, 5, 3.2, 'none', SAMI_R, 1.3), line('M0 1.5 L0 -1 M3 5 L5 5 M-3 5 L-5 5 M0 8.5 L0 11', SAMI_R, 1),
   path('M-6 -12 L-6 -7 M-8 -10 L-4 -10 M-7 -6 L-6 -7 L-5 -6', 'none', SAMI_R, 1), path('M4 -12 L8 -12 L9 -9 M5 -12 L5 -9 M7 -12 L7 -9 M3.4 -13.4 L2.6 -15', 'none', SAMI_R, 1));
-const lavvu = (x: number, y: number, s = 1) => at(x, y, s, path('M-18 0 L0 -32 L18 0 Z', '#c9b48a', C.ink, 1.5), line('M-3 -38 L0 -32 L3 -38 M-1 -38 L0 -32', WOOD2, 1.4), path('M-5 0 L0 -12 L5 0 Z', '#6e5236', C.ink, 1));
 /** Gákti (Sami dress) band trims on a figure in standing-figure coordinates. */
 const gaktiL = () => all(line('M-14 -40 L14 -40', SAMI_R, 3), line('M-13.5 -36 L13.5 -36', SAMI_Y, 1.8), line('M-12 -2 L12 -2', SAMI_R, 3), line('M-12 -6 L12 -6', SAMI_Y, 1.6), line('M-13 -18 L13 -18', SAMI_G, 1.6));
 const samiFig = (x: number, h = 1, mood: Mood = 'smile', more: Partial<Build> = {}) => all(fig(x, SAMI_B, mood, { h, bottom: '#2b3a67', ...more }), on(x, h, gaktiL(), path('M-10 -60 C-10 -72 10 -72 10 -60 Z', SAMI_B, C.ink, 1.2), line('M-10 -61 L10 -61', SAMI_R, 2.2)));
-const tablet = (x: number, y: number, s = 1, rows = 4, mark: (i: number) => Svg = () => '') => at(x, y, s, rect(-16, -22, 32, 44, PARCH, 3, C.ink, 1.4), ...Array.from({ length: rows }, (_, i) => all(line(`M-4 ${-14 + i * 10} L12 ${-14 + i * 10}`, '#8a7a62', 1.4), mark(i) ? at(-10, -14 + i * 10, 1, mark(i)) : '')));
 const xMark = () => all(circle(0, 0, 4, C.white, C.red, 1.4), line('M-2 -2 L2 2 M2 -2 L-2 2', C.red, 1.4));
 const okMark = () => all(circle(0, 0, 4, C.white, C.green, 1.4), path('M-2 0 L-0.5 1.8 L2.4 -1.6', 'none', C.green, 1.4));
 const qMark = (x: number, y: number, s = 1) => at(x, y, s, path('M-3 -4 C-3 -8 3 -8 3 -4 C3 -1 0 -1 0 2', 'none', HL, 1.8), circle(0, 5, 1, HL, null));
@@ -179,9 +176,15 @@ const qMark = (x: number, y: number, s = 1) => at(x, y, s, path('M-3 -4 C-3 -8 3
 // ── Motifs ───────────────────────────────────────────────────────────
 export const JUDAISM_TRADITION_MOTIFS: Record<string, Svg> = {
   // 2141 Judisk historia
-  'jud.judendom': all(circle(60, 40, 30, GLOW, null), star6(60, 40, 20, BLUE, 3.4), menorah(24, 108, 0.42, true), at(60, 98, 0.62, scroll(0, 0, 22, 24, 3)), book(97, 98, 0.75, BLUE, star6(0, 0, 5, GOLD, 1.3)), ground),
-  'jud.judisk': all(man(22, 0.82, C.dark, 'smile'), synagogue(62, 112, 0.52), at(100, 96, 1, rect(-14, -6, 28, 22, C.white, 2, C.ink, 1.2), challah(0, 0, 0.5), star6(0, 11, 3.6, BLUE, 1.2)),
-    star6(22, 18, 6, BLUE, 1.8), star6(62, 40, 6, BLUE, 1.8), star6(100, 66, 6, BLUE, 1.8), ground),
+  'jud.judendom': all(greyed(at(16, 20, 1, rect(-2, -10, 4, 20, '#8a5a3a', 0.6, C.ink, 1), rect(-7, -5, 14, 4, '#8a5a3a', 0.6, C.ink, 1)), at(104, 20, 1, path('M2 -9 A9 9 0 1 0 2 9 A7 7 0 1 1 2 -9 Z', '#3f8f8a', C.ink, 1)),
+    at(16, 100, 1, circle(0, 0, 9, 'none', C.ink, 2), circle(0, 0, 2, C.ink, null), line('M0 -9 L0 9 M-9 0 L9 0 M-6.4 -6.4 L6.4 6.4 M6.4 -6.4 L-6.4 6.4', C.ink, 1.2)), at(104, 100, 1, path('M0 -8 C6 -2 6 6 0 8 C-6 6 -6 -2 0 -8 Z M-10 2 C-4 0 -2 6 0 8 C-6 8 -10 6 -10 2 Z M10 2 C4 0 2 6 0 8 C6 8 10 6 10 2 Z', C.pink, C.ink, 1))),
+    circle(60, 52, 36, GLOW, null), rays(60, 52, 32, 42, 16), star6(60, 46, 22, BLUE, 3.6), at(60, 94, 0.5, scroll(0, 0, 22, 22, 3)), menorah(32, 100, 0.3, true), menorah(88, 100, 0.3, true)),
+  'jud.judisk': all(...[[22, 'book'], [60, 'box'], [98, 'cal']].map(([x, k]) => {
+      const obj = (col: string, mark: boolean) => k === 'book' ? book(0, 0, 1, col, mark ? star6(0, 0, 5.5, GOLD, 1.4) : '')
+        : k === 'box' ? all(rect(-12, -14, 24, 28, col, 2, C.ink, 1.4), rect(-8, -6, 16, 12, C.white, 1, C.ink, 1), mark ? star6(0, 0, 4.5, BLUE, 1.3) : '')
+        : all(rect(-13, -14, 26, 28, C.white, 2, C.ink, 1.4), rect(-13, -14, 26, 8, col, 2, C.ink, 1.4), ...[0, 1, 2].map((r) => line(`M-9 ${-1 + r * 6} L9 ${-1 + r * 6}`, '#8a7a62', 1, '2 2')), mark ? star6(0, -10, 3, C.white, 1.2) : '');
+      return all(greyed(at(+x!, 30, 0.8, obj('#9aa3ad', false))), arrow(+x!, 46, +x!, 60, GREY, 1.6), at(+x!, 88, 1.05, obj(k === 'book' ? BLUE : k === 'box' ? '#e8a64a' : '#3f8f4f', true)));
+    }), ground),
   'jud.det-utlovade-landet': all(rect(4, 92, 56, 20, SAND, 0, null), path('M60 112 L60 84 C72 70 86 78 96 66 C104 58 112 64 116 60 L116 112 Z', '#9ccf7f', C.ink, 1.4),
     tree(86, 0.5), tree(104, 0.4), path('M66 96 C74 92 80 94 86 90', 'none', '#6aaed6', 3), glow(100, 30, 8),
     ...[14, 28, 42].map((x, i) => all(fig(x, [C.denim, '#c96b3c', C.purple][i]!, 'smile', { h: 0.42 }), at(x + 6, 82, 0.8, rect(-3, -4, 6, 6, '#c9a87a', 1, C.ink, 0.8)))), arrow(46, 70, 70, 60, HL, 2.4), ground),
@@ -192,14 +195,18 @@ export const JUDAISM_TRADITION_MOTIFS: Record<string, Svg> = {
   'jud.getto': all(greyed(house(10, 112, 0.9), house(110, 112, 0.9), tree(10, 0.55)), rect(24, 52, 72, 60, '#c9b9a0', 0, null),
     ...[[34, 74], [48, 74], [62, 74], [76, 74], [88, 74], [34, 98], [48, 98], [72, 98], [88, 98]].map(([x, y]) => house(x!, y!, 0.62, '#e6d3b3', '#9a5a3a')),
     rect(20, 48, 6, 64, '#8a7a62', 1, C.ink, 1.4), rect(94, 48, 6, 64, '#8a7a62', 1, C.ink, 1.4), rect(20, 46, 80, 6, '#8a7a62', 1, C.ink, 1.4), path('M52 112 L52 98 L68 98 L68 112', 'none', C.ink, 1.4), ...[54, 58, 62, 66].map((x) => line(`M${x} 99 L${x} 112`, C.ink, 1.2)), ground),
-  'jud.jiddisch': all(fig(30, '#7a5aa8', 'smile', { h: 0.86, hairStyle: 'long', hair: '#c9ced4' }), fig(88, C.green, 'smile', { h: 0.6 }),
-    say(64, 26, 56, 22, 44, 44, all(glyphs(88, 22, 7, 1.1, C.navy), glyphs(84, 31, 5, 1.1, C.navy))), star6(102, 60, 5, BLUE, 1.4), ground),
-  // 2142 Tora och Talmud
+  'jud.jiddisch': all(fig(26, '#7a5aa8', 'smile', { h: 0.84, hairStyle: 'long' }), fig(94, C.green, 'smile', { h: 0.86 }),
+    say(42, 22, 48, 22, 30, 42, all(glyphs(60, 18, 6, 1, C.navy), glyphs(56, 27, 5, 1, C.navy))), say(80, 52, 48, 22, 92, 68, all(glyphs(98, 48, 6, 1, C.navy), glyphs(94, 57, 4, 1, C.navy))),
+    star6(66, 22, 4, BLUE, 1.2), star6(104, 52, 4, BLUE, 1.2), ground),
   'jud.tora': all(circle(60, 52, 40, GLOW, null), rays(60, 52, 36, 46, 16), scroll(60, 56, 30, 34, 5), rect(36, 92, 48, 6, WOOD, 1, C.ink, 1.3), line('M44 98 L44 112 M76 98 L76 112', WOOD, 3), ground),
   'jud.hebreiska': all(rect(14, 22, 92, 62, PARCH, 3, C.ink, 1.6), glyphs(96, 36, 8, 1.4, C.navy), glyphs(96, 52, 6, 1.4, C.navy), glyphs(96, 68, 8, 1.4, C.navy), arrow(100, 96, 24, 96, HL, 2.8), circle(104, 96, 3.5, HL, null)),
   'jud.de-fem-Moseböckerna': all(...[16, 38, 60, 82, 104].map((x, i) => all(at(x, 70, 1, rect(-9, -26, 18, 52, ['#7a2747', '#2f5fa8', '#3f7a3c', '#9a6634', '#5a4a8a'][i]!, 2, C.ink, 1.4), line('M-9 -18 L9 -18 M-9 18 L9 18', GOLD, 1.6)), `<text x="${x}" y="74" font-family="system-ui,sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#fff">${i + 1}</text>`)),
     path('M10 104 C30 112 90 112 110 104', 'none', HL, 2.2), ground),
-  'jud.bud.2': all(tablet(38, 60, 1.3, 4, (i) => (i === 1 || i === 3 ? xMark() : okMark())), man(98, 0.8, C.dark, 'smile'), reach(98, 0.8, -1, 70, 66, C.dark), ground),
+  'jud.bud.2': all(at(28, 26, 0.55, scroll(0, 0, 24, 26, 3)), arrow(44, 34, 60, 50, HL, 2),
+    ...Array.from({ length: 7 }, (_, i) => { const x = 10 + i * 15; return all(rect(x, 58, 14, 30, i === 6 ? '#fff1b8' : C.white, 2, C.ink, 1.3),
+      i < 6 ? all(lo(`M${x + 4} 82 L${x + 10} 70`, WOOD, 2), rect(x + 7, 66, 6, 4, GREY, 1, C.ink, 0.8), at(x + 7, 63, 0.7, okMark()))
+        : all(candle(x + 4, 84, 0.6), candle(x + 10, 84, 0.6), at(x + 7, 63, 0.7, xMark()))); }),
+    rect(98, 54, 20, 38, 'none', 3, HL, 2.2), ground),
   'jud.torarulle': all(dressed(60, 104, 1.1), ground),
   'jud.pergament': all(rect(18, 20, 52, 66, WOOD, 2, C.ink, 1.6), rect(24, 26, 40, 54, '#f0e2c0', 2, C.ink, 1.2), ...[[24, 26], [64, 26], [24, 80], [64, 80]].map(([x, y]) => line(`M${x} ${y} L${x! + (x! < 40 ? -5 : 5)} ${y! + (y! < 50 ? -5 : 5)}`, C.ink, 1)),
     glyphs(58, 40, 5, 1, '#4a3a2e'), glyphs(58, 50, 4, 1, '#4a3a2e'), at(92, 104, 1, ellipse(0, -10, 14, 9, C.white, C.ink, 1.4), ...[-8, -2, 4, 9].map((cx) => circle(cx, -16, 4, C.white, C.ink, 1)), ellipse(14, -14, 5, 4, '#3d3f4a', C.ink, 1), line('M-8 -2 L-8 6 M8 -2 L8 6', C.ink, 2)), arrow(80, 82, 70, 68, HL, 2), ground),
@@ -232,8 +239,10 @@ export const JUDAISM_TRADITION_MOTIFS: Record<string, Svg> = {
     line('M16 50 L16 112 M104 50 L104 112', WOOD, 3), table(92, 26, 94), bust(40, 82, C.denim, 1, bkip()), bust(60, 80, '#c96b8a', 1), bust(80, 82, C.green, 0.9), circle(36, 60, 3, C.orange, C.ink, 0.8), circle(84, 60, 3, C.red, C.ink, 0.8), ground),
   'jud.lövhydda': all(rect(30, 52, 60, 60, '#f0e2c0', 0, C.ink, 1.4), line('M24 52 L96 52', LEAF2, 6), ...[32, 46, 60, 74, 88].map((x) => path(`M${x - 9} 54 C${x - 5} 42 ${x + 5} 42 ${x + 9} 54`, LEAF, C.ink, 1)), line('M30 52 L30 112 M90 52 L90 112', WOOD, 3),
     ...[[42, 62, C.orange], [56, 64, C.red], [70, 62, SAMI_Y], [80, 66, LEAF]].map(([x, y, c]) => all(line(`M${x} 54 L${x} ${+y! - 3}`, C.ink, 0.8), circle(+x!, +y!, 3.4, c as string, C.ink, 0.8))), greyed(house(110, 112, 0.6)), ground),
-  'jud.pesach': all(path('M16 112 L16 70 M16 82 L6 72 M16 76 L26 64', 'none', WOOD2, 3), ...[[6, 70], [26, 62], [16, 66], [10, 60], [22, 74]].map(([x, y]) => circle(x!, y!, 4.4, C.pink, C.ink, 0.8)),
-    at(60, 64, 1.4, matzah(0, 0, 1)), at(60, 82, 1.4, matzah(0, 0, 1)), wineCup(100, 100, 1.4), ...Array.from({ length: 8 }, (_, i) => circle(40 + i * 6, 22, 2.4, i < 8 ? SAMI_Y : C.grey2, C.ink, 0.8)), ground),
+  'jud.pesach': all(path('M18 112 L18 74 M18 86 L8 76 M18 80 L28 68', 'none', WOOD2, 3), ...[[8, 74], [28, 66], [18, 70], [12, 64], [24, 78], [30, 74]].map(([x, y]) => circle(x!, y!, 4.6, C.pink, C.ink, 0.8)),
+    rect(40, 30, 76, 66, C.white, 3, C.ink, 1.5), rect(40, 30, 76, 14, '#7fbf6a', 3, C.ink, 1.5), at(78, 22, 0.7, matzah(0, 0, 1)),
+    ...Array.from({ length: 8 }, (_, i) => { const x = 46 + (i % 4) * 17, y = 50 + Math.floor(i / 4) * 22; return all(rect(x, y, 14, 18, '#ffe27a', 2, C.ink, 1.1),
+      `<text x="${x + 7}" y="${y + 13}" font-family="system-ui,sans-serif" font-weight="800" font-size="10" text-anchor="middle" fill="${C.ink}">${i + 1}</text>`); }), ground),
   'jud.uttåget-ur-Egypten': all(rect(4, 70, 112, 42, SAND, 0, null), path('M4 30 L34 30 L34 112 L4 112 Z', '#6aaed6', C.ink, 1.4), path('M86 30 L116 30 L116 112 L86 112 Z', '#6aaed6', C.ink, 1.4),
     path('M34 30 C30 50 38 70 34 112 M86 30 C90 50 82 70 86 112', 'none', '#3f86c0', 2), ...[0, 1, 2, 3].map((i) => path(`M8 ${40 + i * 18} q6 -4 12 0 q6 4 12 0 M88 ${40 + i * 18} q6 -4 12 0 q6 4 12 0`, 'none', C.white, 1.4)),
     ...[[50, 0.36, C.denim], [60, 0.4, '#c96b3c'], [70, 0.34, C.purple]].map(([x, h, c]) => fig(+x!, c as string, 'smile', { h: +h! })), arrow(60, 64, 60, 36, HL, 2.4), greyed(path('M44 24 L56 8 L68 24 Z', '#d9b56e', C.ink, 1.2)), ground),
@@ -259,26 +268,32 @@ export const JUDAISM_TRADITION_MOTIFS: Record<string, Svg> = {
     sikhMan(106, 0.7, C.white, SAFF, 'smile'), at(88, 40, 1, path('M-10 -6 L10 -6 L8 8 L-8 8 Z', C.silver, C.ink, 1.3), line('M-6 -10 C-3 -14 -7 -16 -4 -20 M2 -10 C5 -14 1 -16 4 -20', GREY, 1.2)), reach(106, 0.7, -1, 96, 44, C.white, '#c98b5e')),
   // 2146 Traditionella afrikanska religioner
   'jud.skapargud': all(divine(60, 26, 1.2), arrow(48, 40, 26, 64, HL, 2), arrow(60, 44, 60, 66, HL, 2), arrow(72, 40, 94, 64, HL, 2), circle(22, 82, 12, '#cfe6f5', C.ink, 1.4), path('M14 78 C20 72 26 76 28 82 C24 88 16 88 14 78 Z', '#b9d9a5', null), tree(60, 0.6), at(96, 100, 1, ellipse(0, -8, 12, 6, '#c98a5a', C.ink, 1.2), line('M-8 -4 L-8 4 M8 -4 L8 4', C.ink, 2), circle(12, -14, 4, '#c98a5a', C.ink, 1)), ground),
-  'jud.andevärld': all(rect(4, 4, 112, 108, '#e9eef8', 0, null), mountain(84, 112, 32, 60, '#9ab0c0'), tree(28, 0.8), path('M4 104 C30 98 50 108 76 102', 'none', '#6aaed6', 3), wisp(24, 34, 1.3), wisp(84, 30, 1.2), wisp(54, 60, 1), wisp(100, 74, 0.9),
-    ...[[24, 34], [84, 30], [54, 60]].map(([x, y]) => circle(x!, y!, 16, 'none', '#9fd0e8', 1, )), ground),
-  'jud.vörda': all(rect(70, 34, 40, 50, WOOD, 2, C.ink, 1.4), ...[[80, 50], [100, 50]].map(([x, y]) => all(rect(x! - 7, y! - 9, 14, 18, '#f6f3ea', 1, C.ink, 1), circle(x!, y! - 2, 4, GREY, null), path(`M${x! - 5} ${y! + 8} C${x! - 5} ${y! + 2} ${x! + 5} ${y! + 2} ${x! + 5} ${y! + 8} Z`, GREY, null))),
-    rect(72, 72, 36, 4, WOOD2, 1, C.ink, 1), at(90, 70, 1, path('M-5 0 L5 0 L4 -6 L-4 -6 Z', '#c98a5a', C.ink, 1)), glow(90, 22, 5), line('M70 84 L70 112 M110 84 L110 112', WOOD, 3),
-    g('translate(34 112) scale(0.9)', lo('M-2 0 L-2 -26', '#3d3f4a', 8), path('M-8 -30 L4 -24 L26 -36 L18 -46 Z', '#c96b3c', C.ink, 1.6), circle(30, -40, 8, '#8d5a3a', C.ink, 1.6), path('M24 -46 C28 -52 38 -48 37 -40 C34 -44 28 -46 24 -46 Z', C.hair, C.ink, 1.2), lo('M18 -40 L22 -22', '#c96b3c', 5), circle(22, -21, 2.8, '#8d5a3a', C.ink, 1)), ground),
+  'jud.andevärld': all(ellipse(60, 34, 54, 28, '#e6dcf5', '#7a5aa8', 1.6), ellipse(60, 34, 54, 28, 'none', C.white, 1.2), wisp(26, 34, 0.9, '#c7b3e6'), wisp(46, 22, 0.8, '#c7b3e6'), wisp(66, 38, 0.9, '#c7b3e6'), wisp(88, 26, 0.85, '#c7b3e6'), sparkle(36, 46, 2.4, GOLD), sparkle(78, 48, 2.4, GOLD), sparkle(100, 38, 2, GOLD),
+    line('M60 64 L60 76', '#7a5aa8', 1.6, '3 3'), arrow(52, 74, 52, 64, '#7a5aa8', 1.6), arrow(68, 64, 68, 74, '#7a5aa8', 1.6),
+    house(26, 112, 1.2), tree(96, 0.65), fig(62, C.denim, 'smile', { h: 0.36 }), ground),
+  'jud.vörda': all(circle(60, 52, 22, GLOW, null), rays(60, 52, 20, 28, 12), at(60, 106, 0.85, rect(-16, -12, 32, 12, WOOD, 2, C.ink, 1.3)),
+    sit(60, 94, 0.8, '#7a5aa8', { skin: '#8d5a3a', mood: 'smile', hat: path('M-10 -54 C-10 -66 10 -66 10 -54 C6 -59 -6 -59 -10 -54 Z', '#e8e8e8', C.ink, 1.2) }),
+    ...[[8, 1], [112, -1]].map(([x, d]) => g(`translate(${x} 112) scale(${0.62 * d!} 0.62)`, lo('M-2 0 L-2 -26', '#3d3f4a', 8), path('M-8 -30 L4 -24 L26 -36 L18 -46 Z', d! > 0 ? '#c96b3c' : '#2f8a6a', C.ink, 1.6), circle(30, -40, 8, '#a8704a', C.ink, 1.6), path('M24 -46 C28 -52 38 -48 37 -40 C34 -44 28 -46 24 -46 Z', C.hair, C.ink, 1.2), lo('M18 -40 L22 -22', d! > 0 ? '#c96b3c' : '#2f8a6a', 5), circle(22, -21, 2.8, '#a8704a', C.ink, 1))), ground),
   'jud.mask': all(path('M60 10 C86 10 90 40 86 66 C82 90 72 104 60 108 C48 104 38 90 34 66 C30 40 34 10 60 10 Z', '#a8743f', C.ink, 2.2), path('M44 44 C48 38 56 40 56 46 C52 50 46 50 44 44 Z M76 44 C72 38 64 40 64 46 C68 50 74 50 76 44 Z', '#3d2a1a', C.ink, 1.2),
     path('M60 50 L56 74 L64 74 Z', '#8a5a2e', C.ink, 1.2), path('M50 86 C56 90 64 90 70 86', 'none', '#3d2a1a', 2.4), ...[24, 30].map((y) => path(`M44 ${y} L52 ${y - 4} L60 ${y} L68 ${y - 4} L76 ${y}`, 'none', C.white, 1.8)), path('M40 66 L46 62 M80 66 L74 62 M40 72 L46 68 M80 72 L74 68', 'none', C.white, 1.6), ...[10, 16, 22].map((d) => line(`M${60 - d} ${104 - d * 0.2} L${60 - d - 2} 116 M${60 + d} ${104 - d * 0.2} L${60 + d + 2} 116`, '#d9b56e', 2))),
   // 2147 Ursprungliga religiösa traditioner
-  'jud.ursprunglig': all(at(26, 96, 1, rect(-14, -26, 28, 26, '#b5763a', 1, C.ink, 1.4), path('M-17 -26 L0 -42 L17 -26 Z', '#7a4a20', C.ink, 1.4), rect(-4, -12, 8, 12, '#5a3a1a', 1, C.ink, 1), circle(0, -49, 0, 'none', null)),
-    greyed(at(66, 96, 0.9, rect(-14, -26, 28, 26, '#c9c1b2', 1, C.ink, 1.4), path('M-17 -26 L0 -42 L17 -26 Z', '#8d949c', C.ink, 1.4), rect(10, -54, 8, 28, '#c9c1b2', 1, C.ink, 1.2)), at(102, 96, 0.8, rect(-16, -34, 32, 34, '#c9c1b2', 1, C.ink, 1.4), rect(-6, -60, 12, 26, '#c9c1b2', 1, C.ink, 1.2))),
-    arrow(44, 60, 54, 60, GREY, 1.6), arrow(80, 60, 88, 60, GREY, 1.6), circle(26, 74, 26, 'none', HL, 2.2), ground),
-  'jud.animism': all(tree(22, 0.9), at(56, 112, 1, path('M-14 0 C-16 -14 -6 -20 4 -18 C14 -16 16 -6 14 0 Z', STONE2, C.ink, 1.4)), path('M76 112 C82 96 92 92 98 80 C102 72 110 70 116 66 L116 112 Z', '#6aaed6', C.ink, 1.2), at(94, 60, 0.8, ellipse(0, 0, 12, 6, '#c98a5a', C.ink, 1.2), line('M-6 4 L-6 12 M6 4 L6 12', C.ink, 2), circle(12, -6, 4, '#c98a5a', C.ink, 1)),
-    spark(22, 64), spark(56, 84), spark(100, 96), spark(94, 44), mountain(60, 40, 22, 32, '#b3c4d0'), spark(60, 22), ground),
-  'jud.besjälad': all(greyed(mountain(28, 112, 26, 56, '#9ab0c0')), mountain(82, 112, 34, 74, '#8aa6c2'), circle(82, 78, 14, GLOW, null), wisp(82, 78, 1.2), rays(82, 78, 16, 22, 10), ground),
+  'jud.ursprunglig': all(at(22, 70, 1, path('M-14 0 C-18 -18 -4 -22 0 -16 C4 -22 18 -18 14 0 C12 12 4 16 0 14 C-4 16 -12 12 -14 0 Z', C.red, C.ink, 1.6), line('M0 -16 L2 -24', WOOD2, 2), path('M2 -22 C8 -28 12 -24 10 -21 C6 -20 4 -20 2 -22 Z', LEAF, C.ink, 1)), circle(22, 70, 25, 'none', HL, 2.4),
+    arrow(48, 70, 58, 70, GREY, 1.8), greyed(at(70, 70, 0.9, path('M-14 0 C-18 -18 -4 -22 0 -16 C4 -22 18 -18 14 0 C12 12 4 16 0 14 C-4 16 -12 12 -14 0 Z', C.red, C.ink, 1.6), path('M14 -10 C6 -8 6 4 14 4 Z', '#fbf4e6', C.ink, 1.4), line('M0 -16 L2 -24', WOOD2, 2)),
+      at(102, 70, 0.9, path('M-6 -14 C-2 -10 -2 10 -6 14 L6 14 C2 10 2 -10 6 -14 Z', '#fbf4e6', C.ink, 1.4), path('M-8 -16 C-6 -20 6 -20 8 -16 Z M-8 16 C-6 20 6 20 8 16 Z', C.red, C.ink, 1.2), line('M0 -18 L1 -24', WOOD2, 2))), arrow(82, 70, 90, 70, GREY, 1.8), ground),
+  'jud.animism': all(fig(22, '#8a6a48', 'calm', { h: 0.78 }), circle(34, 46, 2, C.white, C.ink, 1), circle(40, 38, 3, C.white, C.ink, 1.1), ellipse(78, 36, 38, 30, C.white, C.ink, 1.6),
+    at(58, 50, 0.45, rect(-3, -22, 6, 22, WOOD, 1, C.ink, 1.2), circle(0, -32, 14, LEAF, C.ink, 1.4)), heart(58, 30, 0.5), at(80, 54, 0.8, path('M-12 0 C-14 -12 -5 -16 3 -15 C12 -13 14 -5 12 0 Z', STONE2, C.ink, 1.3)), heart(80, 44, 0.5),
+    at(98, 32, 0.7, ellipse(0, 0, 10, 5, '#6aaed6', C.ink, 1.2), path('M9 0 L15 -4 L15 4 Z', '#6aaed6', C.ink, 1), circle(-5, -1, 1, C.ink, null)), heart(98, 22, 0.5), at(76, 20, 0.6, ellipse(0, 0, 12, 6, '#c98a5a', C.ink, 1.2), circle(12, -6, 4, '#c98a5a', C.ink, 1)), heart(78, 12, 0.45), ground),
+  'jud.besjälad': all(greyed(at(30, 112, 1.1, path('M-22 0 C-26 -24 -10 -34 4 -32 C20 -30 26 -14 22 0 Z', STONE2, C.ink, 1.6))), circle(88, 82, 26, GLOW, null), rays(88, 82, 26, 34, 12),
+    at(88, 112, 1.1, path('M-22 0 C-26 -24 -10 -34 4 -32 C20 -30 26 -14 22 0 Z', '#c9b38a', C.ink, 1.6)), heart(88, 96, 1, '#f08aa0'), circle(88, 94, 9, 'none', GOLD, 1.4), ground),
   'jud.schaman': all(fig(44, '#8a6a48', 'calm', { h: 0.95, bottom: '#6e5236' }), on(44, 0.95, ...[-12, -6, 0, 6, 12].map((x) => line(`M${x} -2 L${x} 6`, '#6e5236', 1.6)), path('M-11 -62 C-11 -72 11 -72 11 -62 Z', '#c8372d', C.ink, 1.1)),
     at(78, 64, 1, circle(0, 0, 15, '#e6c79a', C.ink, 1.6), circle(0, 0, 12, 'none', '#a0703a', 1)), reach(44, 0.95, 1, 70, 66, '#8a6a48'), reach(44, 0.95, -1, 24, 58, '#8a6a48'), lo('M24 58 L18 46', WOOD, 2), line('M90 52 l6 -4 M92 62 l7 0 M90 72 l6 4', HL, 1.6), wisp(96, 26, 1), wisp(22, 24, 0.8), ground),
-  'jud.trans': all(fig(60, '#8a6a48', 'calm', { h: 0.95, bottom: '#6e5236' }), on(60, 0.95, path('M-22 -76 C-30 -70 -26 -60 -18 -62 M22 -76 C30 -70 26 -60 18 -62 M-14 -86 C-8 -94 8 -94 14 -86', 'none', '#7a5aa8', 2)), ...[0, 1, 2].map((i) => path(`M${30 - i * 8} ${70 + i * 6} C${24 - i * 8} ${62 + i * 6} ${24 - i * 8} ${54 + i * 6} ${30 - i * 8} ${46 + i * 6}`, 'none', HL, 1.4)),
-    ...[0, 1, 2].map((i) => path(`M${90 + i * 8} ${70 + i * 6} C${96 + i * 8} ${62 + i * 6} ${96 + i * 8} ${54 + i * 6} ${90 + i * 8} ${46 + i * 6}`, 'none', HL, 1.4)), wisp(24, 22, 0.9), wisp(98, 20, 0.9), ground),
+  'jud.trans': all(fig(44, '#c96b3c', 'calm', { h: 0.95 }), on(44, 0.95, path('M0 -82 C6 -82 6 -76 0 -76 C-8 -76 -8 -88 0 -88 C10 -88 10 -72 0 -72 C-12 -72 -12 -92 0 -92', 'none', '#7a5aa8', 2)),
+    fig(98, C.green, 'shock', { h: 0.82 }), reach(98, 0.82, -1, 70, 30, C.green), line('M66 22 l-4 -4 M64 30 l-6 0 M66 38 l-4 4', HL, 1.6), qMark(104, 18, 1.4), ground),
   'jud.same': all(samiFig(48, 1, 'smile'), reindeer(80, 112, 0.9), ground),
-  'jud.samisk': all(rect(4, 70, 112, 42, '#eef4f8', 0, null), mountain(90, 72, 30, 40, '#9ab0c0'), lavvu(36, 112, 1.6), reindeer(80, 112, 0.7), at(26, 22, 1, rect(-18, -12, 36, 24, SAMI_R, 1, C.ink, 1.2), rect(-18, -12, 10, 24, SAMI_B, 0, null), rect(-8, -12, 3, 24, SAMI_G, 0, null), rect(-5, -12, 3, 24, SAMI_Y, 0, null), path('M3 -7 A7 7 0 0 0 3 7 Z', SAMI_R, SAMI_B, 1.6), path('M3 -7 A7 7 0 0 1 3 7 Z', SAMI_B, SAMI_R, 1.6), rect(-18, -12, 36, 24, 'none', 1, C.ink, 1.2)), ground),
+  'jud.samisk': all(at(24, 96, 1.05, path('M-14 -16 L14 -16 C14 0 8 8 0 8 C-8 8 -14 0 -14 -16 Z', '#b07a3e', C.ink, 1.6), path('M14 -14 C24 -14 24 -2 12 -2', 'none', C.ink, 3), path('M14 -14 C24 -14 24 -2 12 -2', 'none', '#b07a3e', 1.6), line('M-13 -12 L13 -12', SAMI_R, 2.4), line('M-12 -9 L12 -9', SAMI_Y, 1.4)),
+    at(72, 108, 1.05, path('M-14 0 L-14 -26 L4 -26 L4 -10 L16 -8 C22 -8 22 -2 18 0 Z', '#d9b07a', C.ink, 1.6), path('M18 -2 C22 -8 22 -14 18 -14', 'none', C.ink, 1.6), line('M-14 -22 L4 -22', SAMI_R, 2.6), line('M-14 -18 L4 -18', SAMI_Y, 1.4), line('M-14 -15 L4 -15', SAMI_G, 1.4), line('M-14 -12 L4 -12', SAMI_B, 1.6)),
+    at(100, 70, 1, path('M-14 6 C-14 -18 14 -18 14 6 Z', SAMI_B, C.ink, 1.6), rect(-15, 2, 30, 6, SAMI_R, 1, C.ink, 1.2), line('M-15 5 L15 5', SAMI_Y, 1.4), path('M-8 -10 L8 -10', 'none', SAMI_G, 1.4)),
+    rect(4, 30, 60, 8, SAMI_R, 1, C.ink, 1), line('M4 32 L64 32', SAMI_Y, 1.4), line('M4 35 L64 35', SAMI_G, 1.4), ...[10, 22, 34, 46, 58].map((x) => path(`M${x - 4} 34 L${x} 31 L${x + 4} 34 L${x} 37 Z`, SAMI_B, null)), ground),
   'jud.nåjd': all(rect(4, 4, 112, 50, NIGHT, 0, null), path('M10 30 C30 14 50 34 70 18 C86 8 100 22 112 14', 'none', '#7fe0a8', 4), path('M14 40 C34 26 54 44 74 30 C90 20 102 32 112 26', 'none', '#7fe0a8', 2),
     rect(4, 54, 112, 58, '#eef4f8', 0, null), samiFig(46, 0.95, 'calm'), at(80, 70, 1.3, samiDrum(0, 0, 1)), reach(46, 0.95, 1, 68, 72, SAMI_B), reach(46, 0.95, -1, 26, 60, SAMI_B), lo('M26 60 L20 50', '#c8b08a', 2.4), ground),
   'jud.offerplats': all(rect(4, 80, 112, 32, '#eef4f8', 0, null), path('M60 90 C70 82 100 84 116 88 L116 100 C96 102 74 100 60 90 Z', '#6aaed6', C.ink, 1.2), path('M14 112 C10 94 16 70 28 60 C36 54 46 58 50 70 C56 82 54 102 50 112 Z', STONE2, C.ink, 1.6), path('M28 66 C34 64 40 68 42 74', 'none', '#8d8470', 1.4),
