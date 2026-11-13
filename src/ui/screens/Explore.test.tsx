@@ -37,12 +37,12 @@ describe('Kurser (catalog navigation)', () => {
   });
 
   it('a planned module has an information view without a start button', async () => {
-    wrap(<CatalogModuleView id="SWC-HIS-02-03-01" />);
-    expect(await screen.findByText('Belägringens mål')).toBeInTheDocument();
+    // Militärhistoria (incl. Belägringens mål) is published from 0.37; Religion & idéhistoria is still planned.
+    wrap(<CatalogModuleView id="SWC-HIS-03-01-01" />);
+    expect(await screen.findByText('Tro och övertygelse')).toBeInTheDocument();
     expect(screen.getByText(/inte färdig än/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
     expect(screen.queryByRole('link', { name: /Starta/ })).toBeNull();
-    expect(screen.getByText('Medeltida slott och belägringar')).toBeInTheDocument(); // overlapping published lesson
   });
 
   it('search results are typed and paginated (max 8 per page)', async () => {
