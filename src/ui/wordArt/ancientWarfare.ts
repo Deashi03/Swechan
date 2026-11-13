@@ -138,6 +138,7 @@ const cavBlock = (x: number, y: number, w: number, h: number, col: string = BLUE
 const horseHead = () => path('M-8 0 L-2 -18 C0 -22 6 -22 8 -18 L10 -12 C10 -9 7 -8 5 -10 L0 -8 L2 0 Z', HORSE, C.ink, 2.4);
 
 // ── Speech bubble beside the head ────────────────────────────────────
+const pawn = (x: number, y: number, col: string) => all(ellipse(x, y, 4.6, 1.8, col, C.ink, 1), path(`M${x - 3} ${y - 1} L${x - 1.6} ${y - 7} L${x + 1.6} ${y - 7} L${x + 3} ${y - 1} Z`, col, C.ink, 1), circle(x, y - 8.6, 2.6, col, C.ink, 1));
 const say = (cx: number, cy: number, w: number, h: number, tx: number, ty: number, inner: Svg = '') => {
   const L = cx - w / 2, R = cx + w / 2, Tp = cy - h / 2, B = cy + h / 2; let a: number[], b: number[];
   if (tx < L || tx > R) { const e = tx < L ? L : R, by = Math.max(Tp + 5, Math.min(B - 5, ty)); a = [e, by - 4]; b = [e, by + 4]; }
@@ -221,7 +222,8 @@ export const ANCIENT_WARFARE_MOTIFS: Record<string, Svg> = {
   'fkrig.tygel': all(rider(50, 112, 1.05, TUNIC, 'none', line('M20 -50 L31 -45', HL, 3), { ax: 20, ay: -50 }), ring(78, 62, 15), ground),
   'fkrig.lans': all(rider(48, 112, 1, TUNIC, 'roman', all(line('M-24 -48 L64 -60', WOOD, 2.6), path('M62 -63 L76 -62 L63 -57 Z', C.silver, C.ink, 0.9)), { ax: 16, ay: -50, gallop: true }), line('M24 64 L114 52', HL, 1.6, '4 3'), ground),
   'fkrig.galoppera': all(at(62, 106, 1.1, horseL(HORSE, true)), speed(26, 52), dust(22, 100, 1.2), dust(40, 108, 0.9), ground),
-  'fkrig.beriden': all(rider(36, 112, 0.9, TUNIC, 'greek', spear(14, -36, 40, -66, BRONZE, 2.4)), ring(36, 50, 32), greyed(soldier(96, 0.8, C.grey, helmG(C.grey), 'calm')), ground),
+  'fkrig.beriden': all(greyed(g('translate(0 -62)', ...[24, 60, 96].map((x) => soldier(x, 0.42, C.grey, helmG(C.grey), 'calm')), line('M8 112 L112 112', C.grey2, 1.6))), line('M8 58 L112 58', C.grey2, 1.2, '4 3'),
+    ...[20, 56, 92].map((x) => rider(x, 110, 0.5, TUNIC, 'greek', spear(14, -36, 40, -66, BRONZE, 2.4))), dashBox(4, 62, 112, 50), ground),
   'fkrig.spana': all(hillAt(34, 112, 76, 50), rider(34, 82, 0.62, TUNIC, 'greek', '', { ax: 6, ay: -72 }), line('M42 34 L100 70 M42 34 L106 86', C.grey, 1.2, '3 3'), tent(96, 90, 0.5, C.grey2), tent(108, 92, 0.4, C.grey2), tent(102, 100, 0.45, C.grey2), ground),
   'fkrig.förfölja': all(fig(92, C.grey, 'shock', { h: 0.62, bottom: C.grey }), rider(42, 112, 0.7, TUNIC, 'greek', spear(16, -40, 42, -50, BRONZE, 2.2), { gallop: true }), arrow(70, 30, 94, 30, HL, 2.6), dust(14, 104, 1), path('M78 108 l3 0 m4 0 l3 0', 'none', C.grey, 1.4), ground),
   'fkrig.krigselefant': all(at(54, 112, 1.25, elephantL(), rect(-14, -60, 24, 16, '#a8743f', 1, C.ink, 1.4), line('M-14 -52 L10 -52', '#5e3a1a', 1), sol(-6, -66, TUNIC, 0.62), sol(4, -66, TUNIC, 0.62, { spear: true }), circle(22, -48, 4, C.skin, C.ink, 1)), ground),
@@ -246,14 +248,16 @@ export const ANCIENT_WARFARE_MOTIFS: Record<string, Svg> = {
   'fkrig.officer': all(soldier(36, 1, TUNIC, helmR(), 'calm', capeL('#7a2a2a')), reach(36, 1, 1, 60, 30), greyed(row(72, 84, 3, 14, C.grey, 1, { helm: C.grey, spear: true })), arrow(70, 60, 108, 60, C.grey, 2), ground),
   'fkrig.general': all(hillAt(34, 112, 76, 30), soldier(34, 0.92, TUNIC, all(helmG(C.gold)), 'calm', all(capeL(RED), discsL())), reach(34, 0.92, 1, 56, 56), line('M56 56 L68 46', '#7a2a2a', 2.6),
     soldier(80, 0.58, '#7a2a2a', helmR(), 'calm'), soldier(104, 0.58, '#7a2a2a', helmR(), 'calm'), ground),
-  'fkrig.befäl': all(g('translate(0 -44)', soldier(60, 0.55, TUNIC, helmG(C.gold), 'calm', capeL(RED))), ring(60, 36, 22), line('M60 62 L22 92 M60 62 L60 92 M60 62 L98 92', HL, 2), ...[22, 60, 98].map((x) => row(x - 12, 102, 3, 12, BLUE, 0.55, { helm: C.silver })), ground),
+  'fkrig.befäl': all(row(10, 18, 7, 16.5, BLUE, 0.6, { helm: C.silver, spear: true }), soldier(36, 0.72, TUNIC, helmG(C.gold), 'calm', all(capeL('#7a2a2a'), beardL())), soldier(84, 0.72, TUNIC, helmG(C.gold), 'smile', capeL(RED)),
+    reach(36, 0.72, 1, 54, 70), reach(84, 0.72, -1, 66, 70), rect(50, 67, 20, 5, C.gold, 2, C.ink, 1.2), ring(60, 70, 13), path('M44 50 C52 40 68 40 76 50', 'none', HL, 2.4), path('M70 49 L76 51 L77 44', 'none', HL, 2.4), ground),
   'fkrig.befälhavare': all(rect(40, 86, 40, 26, '#d8cfbd', 2, C.ink, 1.4), g('translate(0 -26)', soldier(60, 0.6, TUNIC, helmG(C.gold), 'angry', capeL(RED)), on(60, 0.6, line('M14 -40 L30 -66', WOOD, 2.6))), ring(60, 36, 16),
     row(8, 96, 2, 16, BLUE, 0.9, { helm: C.silver, spear: true }), g('translate(120 0) scale(-1 1)', row(8, 96, 2, 16, BLUE, 0.9, { helm: C.silver, spear: true })), ground),
   'fkrig.fältherre': all(hillAt(30, 112, 70, 54), rider(28, 72, 0.55, RED, 'greek', '', {}), ...[[66, 92], [86, 92], [76, 102], [96, 102]].map(([x, y]) => block(x!, y!, 16, 8, BLUE)), cavBlock(100, 86, 12, 6), cavBlock(54, 86, 10, 6), ring(28, 40, 18), ground),
   'fkrig.anföra': all(rect(4, 100, 112, 12, ROAD, 0, null), rider(92, 104, 0.6, RED, 'greek', banner(18, -46, RED, 0.8)), ...[0, 1, 2, 3].map((i) => soldier(16 + i * 15, 0.5, TUNIC, helmR(), 'calm')), arrow(74, 30, 112, 30, HL, 2.6), ring(92, 52, 22), ground),
   'fkrig.order': all(soldier(26, 1, TUNIC, helmC(), 'angry'), say(60, 18, 34, 20, 38, 24, arrow(48, 18, 72, 18, HL, 3)), ...[0, 1, 2].map((i) => all(sol(66 + i * 16, 88, TUNIC, 1, { helm: C.silver, spear: true }))), arrow(64, 108, 112, 108, HL, 2.6)),
-  'fkrig.taktik': all(rect(8, 12, 104, 92, '#f3e3b8', 3, C.ink, 1.6), block(46, 30, 28, 14, FOE), block(46, 62, 28, 10, BLUE), path('M40 66 C20 56 20 34 40 28', 'none', BLUE, 2.4), path('M36 25 L42 27 L38 32', 'none', BLUE, 2.4), path('M80 66 C100 56 100 34 80 28', 'none', BLUE, 2.4), path('M84 25 L78 27 L82 32', 'none', BLUE, 2.4),
-    cavBlock(26, 76, 12, 8), cavBlock(82, 76, 12, 8), dashBox(14, 18, 92, 70)),
+  'fkrig.taktik': all(soldier(22, 0.9, TUNIC, helmG(C.gold), 'calm', capeL(RED)), soldier(98, 0.9, TUNIC, helmR(), 'calm', capeL('#7a2a2a')), path('M16 60 L104 60 L114 92 L6 92 Z', '#f3e3b8', C.ink, 1.6), line('M14 92 L14 112 M106 92 L106 112', WOOD, 3),
+    ...[[44, 66], [60, 64], [76, 66]].map(([x, y]) => pawn(x!, y!, FOE)), ...[[40, 86], [60, 86], [80, 86]].map(([x, y]) => pawn(x!, y!, BLUE)),
+    line('M38 80 C24 78 22 68 30 62', C.dark, 1.8, '3 3'), line('M58 79 C54 76 54 74 56 72', C.dark, 1.8, '3 3'), path('M53 74 L56 71 L59 74', 'none', C.dark, 1.6), path('M78 80 C92 78 96 70 88 64', 'none', HL, 2.4), path('M88 70 L87 63 L94 65', 'none', HL, 2.4), path('M26 65 L30 61 L33 66', 'none', C.dark, 1.6), ground),
   'fkrig.strategi': all(rect(26, 8, 90, 74, '#f3e3b8', 3, C.ink, 1.6), path('M36 70 C40 50 30 30 50 20 C70 12 100 20 106 40 C110 56 98 72 80 74 Z', '#cfe0a8', C.ink, 1.2), city(48, 62, 0.45, BLUE), city(96, 34, 0.45, FOE), city(70, 30, 0.35, '#d8cfbd'), city(90, 62, 0.35, '#d8cfbd'),
     path('M52 58 C60 50 62 40 68 34', 'none', HL, 2), path('M74 30 C82 28 86 30 92 32', 'none', HL, 2), circle(60, 46, 4, C.white, C.ink, 0.8), circle(82, 26, 4, C.white, C.ink, 0.8), `<text x="60" y="48.2" font-family="system-ui,sans-serif" font-weight="800" font-size="6" text-anchor="middle" fill="${C.ink}">1</text>`, `<text x="82" y="28.2" font-family="system-ui,sans-serif" font-weight="800" font-size="6" text-anchor="middle" fill="${C.ink}">2</text>`,
     fig(16, TUNIC, 'calm', { h: 0.62, bottom: '#6b5a44' }), on(16, 0.62, helmG(C.gold)), ground),
