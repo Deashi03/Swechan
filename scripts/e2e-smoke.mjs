@@ -211,13 +211,14 @@ try {
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), Historiska epoker (0.36) and
-  // Militärhistoria (0.37), Religion & idéhistoria (0.38), Filosofi & etik (0.39) and Arkeologi & kulturarv (0.40) are fully published,
-  // so the planned entry is the first module of Civilisationer & världsdelars historia: Nordens historia → Vikingatida samhällen.
+  // Militärhistoria (0.37), Religion & idéhistoria (0.38), Filosofi & etik (0.39), Arkeologi & kulturarv (0.40) and
+  // Civilisationer & världsdelars historia (0.41) are fully published, so all of Historia & humaniora is done and the planned
+  // entry is the first module of Natur & geografi: Landskap & geologi → Landskapets former → Berg och kullar.
   await page.goto(`${BASE}#/explore`);
-  await page.getByRole('link', { name: /Historia & humaniora/ }).first().click();
-  await page.getByRole('link', { name: /Civilisationer & världsdelars historia/ }).first().click();
-  await page.getByRole('link', { name: /Nordens historia/ }).first().click();
-  await page.getByRole('link', { name: /Vikingatida samhällen/ }).first().click();
+  await page.getByRole('link', { name: /Natur & geografi/ }).first().click();
+  await page.getByRole('link', { name: /Landskap & geologi/ }).first().click();
+  await page.getByRole('link', { name: /Landskapets former/ }).first().click();
+  await page.getByRole('link', { name: /Berg och kullar/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
