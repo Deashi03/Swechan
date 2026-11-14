@@ -143,6 +143,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'byhi.': () => import('./buildingHistory').then((m) => m.BUILDING_HISTORY_MOTIFS),
   'hfor.': () => import('./historicalResearch').then((m) => m.HISTORICAL_RESEARCH_MOTIFS),
   'nord.': () => import('./nordicHistory').then((m) => m.NORDIC_HISTORY_MOTIFS),
+  'ostas.': () => import('./eastAsianHistory').then((m) => m.EAST_ASIAN_HISTORY_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
