@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.40.0 – 2026-11-14
+
+42 nya moduler som gör överämnet *Arkeologi & kulturarv* (R04-A05) komplett. Varje nytt modulord har en egen bild, utom de 14 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 713 målord)
+- **Arkeologins metoder** (2301–2307): utgrävningar, stratigrafi och jordlager, fynd och fyndplatser, datering av föremål, dokumentation i fält, laboratorieanalyser och att tolka materiella spår.
+- **Fornlämningar** (2311–2317): gravhögar och gravfält, runstenar och inskrifter, hällristningar, fornborgar, kultplatser, boplatser och härdar samt att skydda fornlämningar.
+- **Historiska föremål** (2321–2327): keramik och kärl, metallföremål och smycken, mynt och betalningsmedel, vapen och verktyg, textilier och läder, skriftliga källor samt föremåls funktion och proveniens.
+- **Museer & samlingar** (2331–2337): museets utställningar, kuratorer och konservatorer, samlingsföremål, proveniens och ägande, konservering och restaurering, digitala museisamlingar och att förmedla historia till besökare.
+- **Byggnadshistoria** (2341–2347): trähus och timmerbyggnader, kyrkor och katedraler, slott och herrgårdar, industribyggnader, historiska stadsplaner, byggnadsvård och arkitektoniska epoker.
+- **Historisk forskning** (2351–2357): arkiv och handlingar, primärkällor, muntlig historia, kronologier och tidslinjer, källkritik för historiker, historiska tolkningar och att skriva en historisk framställning.
+- Varje modul har 15–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 381 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`, bland annat från *Förhistoria*, *Medeltida slott & fästningar*, *Källkritik*, *Forskning & akademi* och de tidigare grupperna i samma överämne.
+- Nya betydelser på befintliga poster: *häll* (berghäll), *motiv* (i en bild), *prägla* (mynt), *krönika* (historisk), *profil* (jordvägg), *rutnät* (av snören), *prov* (för undersökning), *status* (social ställning), *kurator* (museum), *samlare* (av föremål), *ljuskänslig* (material), *digital* (dator och nät), *skanna* (bild till dator), *dräkt* (historisk), *knut* (hörn på hus), *långhus* (i en kyrka), *kolonn* (pelare) och *handling* (dokument).
+- *kulturmiljölagen* skrevs av både *Arkeologins metoder* och *Fornlämningar*. *Fynd och fyndplatser* använder nu posten *kulturmiljölag*. *stolphål*, *förmultna*, *proveniens*, *pensel*, *databas*, *vardagsföremål*, *gallra*, *digitalisera* och *analys* finns bara i den grupp som lade in dem först.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Civilisationer & världsdelars historia* (R04-A06): Nordens historia → Vikingatida samhällen.
+
+### Bilder (385 nya ordbilder)
+- 107 symbolbilder, 160 bilder som får användas i bildövningar och resten scener.
+- 122 symbol- och adjektivbilder blindtestades. 108 klarade testet efter högst två omgångar.
+- **14 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *ägarhistorik/proveniens*, *katedral/domkyrka* och *kolonn/pelare*.
+- Ord som redan stod på listan, till exempel *helig*, *befästa*, *källkritisk*, *tes* och *referera*, fick inga nya bilder.
+- Nya bildfiler i `src/ui/wordArt/`: `archaeologyMethods.ts`, `ancientMonuments.ts`, `historicalObjects.ts`, `museums.ts`, `buildingHistory.ts` och `historicalResearch.ts`.
+
+Service workern är `swechan-v44`.
+
+
 ## 0.39.0 – 2026-11-13
 
 42 nya moduler som gör överämnet *Filosofi & etik* (R04-A04) komplett. Varje nytt modulord har en egen bild, utom de 48 ord som underkändes i två blindtestomgångar.

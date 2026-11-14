@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.39.0 (släppt 2026-11-13) · **Senast uppdaterad:** 2026-11-13 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.40.0 (släppt 2026-11-14) · **Senast uppdaterad:** 2026-11-14 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 929 publicerade moduler. 924 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnena *Historiska epoker* (R04-A01), *Militärhistoria* (R04-A02), *Religion & idéhistoria* (R04-A03) och *Filosofi & etik* (R04-A04) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 971 publicerade moduler. 966 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnena *Historiska epoker* (R04-A01), *Militärhistoria* (R04-A02), *Religion & idéhistoria* (R04-A03), *Filosofi & etik* (R04-A04) och *Arkeologi & kulturarv* (R04-A05) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Arkeologi & kulturarv* (R04-A05). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Civilisationer & världsdelars historia* (R04-A06). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 11 781 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 12 166 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Arkeologi & kulturarv* (R04-A05), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Civilisationer & världsdelars historia* (R04-A06), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -122,6 +122,13 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Medvetande & identitet: `s.medvetenhet.1`, `s.inifrån.1`, `s.förnimmelse.1`, `s.handling.1`
   - Existens & verklighet: `s.finnas-till.1`, `s.existens.1`, `s.varande.1`, `s.väsen.1`, `s.nödvändigtvis.1`, `s.overklig.1`, `s.sken.1`, `s.idealism.1`, `s.ha-något-att-leva-för.1`, `s.meningslöshet.1`, `s.livsuppgift.1`, `s.hängivenhet.1`, `s.ändlighet.1`, `s.ond-tro.1`, `s.existentialism.1`
   - Abstrakta filosofiord var svåra att skilja från ord ur samma familj eller närliggande begrepp: *existens/existera/varande*, *sken/skenbar/skenet bedrar*, *ändlighet/ändlig/dödlig*, *rättvisa/jämlikhet/likabehandling*, *rättfärdiga/rättfärdigande/underbygga/välgrundad*, *tvång/tvinga/inskränka*, *stat/rättsstat*, *nytta/gynna*, *meningslöshet/tomhet/meningslös*, *idealism/inbillning*. Många underkändes för att granskaren svarade rätt men med låg säkerhet. Produktägaren kan överväga synonymmarkering och ett nytt test, eller andra visualiseringar än symbolbilder för de mest abstrakta orden.
+- **Från 0.40 (14 ord):**
+  - Arkeologins metoder: `s.arkeologisk.1`, `s.arkeologi.1`, `s.lösfynd.1`, `s.datering.1`, `s.tyda-på.1`
+  - Historiska föremål: `s.skriftlig-källa.1`, `s.avsedd.1`, `s.funktion.1`
+  - Museer & samlingar: `s.konservering.1`
+  - Byggnadshistoria: `s.kulturhistorisk.1`
+  - Historisk forskning: `s.förstahandsuppgift.1`, `s.tendentiös.1`, `s.historieskrivning.1`, `s.historiesyn.1`
+  - Förväxlingarna gällde mest närliggande ord: *arkeologisk/arkeologi/arkeolog/utgrävning*, *datering/datera/absolut datering*, *tyda på/tolka/vittna om*, *skriftlig källa/urkund/tyda*, *funktion/rituell/avsedd*, *konservering/restaurera/bevara*, *kulturhistorisk/byggnadsminne/k-märkt*, *förstahandsuppgift/primärkälla*, *tendentiös/partisk*, *historieskrivning/historiesyn/historiker* och *historiesyn/perspektiv*. *tendentiös/partisk* och *förstahandsuppgift/primärkälla* ligger nära synonymer; produktägaren kan överväga synonymmarkering och ett nytt test.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -284,6 +291,22 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Gallup 1970 och skator i spegeltestet, Laplace 1814, Libet 1983, Searles argument
   - Leibniz 1714, Hume (*Enquiry* VII), Augustinus (*Bekännelser* XI:14, fritt), Minkowski 1908, Epikuros (fritt), Heidegger 1927, Camus 1942/1951, Antonovsky 1987
 - **0.39, bilder:** filosofer är neutrala figurer utan porträttlikhet; *förgänglighet* visar en neutral blomma (körsbärsblommor nämns bara i texten).
+- **0.40, svenska:**
+  - lemman och böjning att kontrollera mot SAOL: *kulturmiljölag* (används i bestämd form, ingen plural), *superpositionsprincipen* som fras, *frilägga* och *levandegöra* i grupp 4, *gruvlave* (gruvlavar), *stadsprivilegium* (används mest i plural), *rödfärg*, *timmer*, *virke*, *sly*, *sot*, *träkol* och *muntlig historia* utan plural, *akt* bara i arkivbetydelsen, *redogöra* (imperativ *redogör*)
+  - fack- och ovanliga ord: *alv*, *lösfynd*, *fornfynd*, *hänkel*, *ärg*, *urkund*, *nedteckna*, *magasin* (museets förråd), *deponera* (C1), *k-märkt* (vardagligt; formellt q-märkning), *pussla ihop* (vardagligt), *kvarleva* som källkritisk term
+  - ordförrådskontrollen tvingade fram omskrivningar som bör läsas igenom: "vittrar av regn och is", "lade döda" (begravde), "skurits" (sågats), "slutet av järnåldern" i stället för *vikingatiden* i Historiska föremål, ortnamn (Tanum, Uppåkra, Sigtuna, Östergötland) och kungen Kristian står bara i `factSources`; *Fynd och fyndplatser* skriver "ruttna" i stället för *förmultna* och har därför bara 15 ord
+- **0.40, japanska:**
+  - termer att granska: {地山|じやま} (*alv*), {遺物包含層|いぶつほうがんそう} (*kulturlager*), {記録保存|きろくほぞん}{調査|ちょうさ} (*uppdragsarkeologi*), {型式学|けいしきがく} (*typologi*), {報労金|ほうろうきん} (*hittelön*), {埋蔵|まいぞう}{文化財|ぶんかざい} (*fornfynd*), {船形列石|ふながたれっせき} (*skeppssättning*), {羨道墳|せんどうふん} (*gånggrift*), {立石|たていし} (*bautasten*), {柱穴|はしらあな} (*stolphål*, även ちゅうけつ), 楕円形ブローチ (*spännbuckla*), ノールビンドニング (*nålbindning*), {常設展|じょうせつてん}, {巡回展|じゅんかいてん}, {保存修復師|ほぞんしゅうふくし}, {収蔵庫|しゅうぞうこ}, {寄託|きたく}, セーテリ (*säteri*), {立坑|たてこう}やぐら (*gruvlave*), しっくい{壁画|へきが} (*kalkmålning*), {赤色塗料|せきしょくとりょう} (*rödfärg*), {叙述史料|じょじゅつしりょう} (*berättande källa*), {遺物|いぶつ} (*kvarleva*), {教区|きょうく}の{住民記録簿|じゅうみんきろくぼ} (*husförhörslängd*)
+  - glosor som ligger nära varandra: *hänkel/handtag* (båda 取っ手), *tillverkningsort/ursprung*, *offerplats/kultplats*, *skanna* .1/.2
+- **0.40, fakta (står i `factSources`, ungefärliga eller omdiskuterade):**
+  - arkeologi: kulturmiljölagen 2 kap. (tillstånd, exploatören betalar, anmälan av fornfynd, hittelön, metallsökare; paragrafnumren är inte kontrollerade), C14-halveringstid ungefär 5 700 år (5 730), Steno 1669, Montelius, strontium- och syreisotoper
+  - fornlämningar: omkring 1 100 fornborgar, svenska världsarv (15 år 2024, texten säger "flera"), runstenar som arvsdokument (Sawyers tolkning), "akrobater" och fruktbarhetstolkning av hällristningar, kyrkor på äldre kultplatser
+  - föremål: mer än 700 silverskatter på Gotland, de första svenska mynten omkring 995, Västgötalagens äldsta handskrift omkring 1280, Helgöbuddhan (ort och datering osäkra), att svenska mynt i dag präglas utomlands
+  - museer: Washingtonprinciperna 1998, återlämningar till samer och urfolk, riktvärden för luftfuktighet, nitril- mot bomullshandskar, DigitaltMuseum och Kringla
+  - byggnader: Uppsala domkyrkas torn 118,7 m och invigning 1435, kryptan i Lund 1123, kakelugnen 1767, Drottningholm (bostad sedan 1981, världsarv 1991), Göteborgs stadsprivilegier 1621, Uppsala stadsbrand 1702, Engelsbergs bruk världsarv 1993, omkring 2 500 byggnadsminnen, rokoko omkring 1740–1770, Stockholmsutställningen 1930, *vapenhus* (delvis folketymologi)
+  - historisk forskning: omkring 70 000 finska krigsbarn, över en miljon emigranter 1850–1930, över 80 dödade vid Stockholms blodbad, omkring 350 000 namn i namninsamlingen 1914, fattigvårdsstrecket avskaffat 1945; missväxtens betydelse för utvandringen och Karl XII-bilden är förenklade
+  - personer, museer och fynd i lästexterna är påhittade (t.ex. "Stadsmuseet i Lund")
+- **0.40, bilder:** svagare bilder som klarade testet: *avbilda* (personen skymmer älgen), *fornnordisk* (torshammaren kan läsas som ett T), *gobeläng*, *kalkmålning* och *workshop*. *motiv* (betydelse 2) klarade omgång 2 med medelsäkerhet.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -302,12 +325,12 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v43`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v44`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Utgrävningar* (SWC-HIS-05-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Arkeologins metoder* (R04-A05-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
-- **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Vikingatida samhällen* (SWC-HIS-06-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Nordens historia* (R04-A06-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
