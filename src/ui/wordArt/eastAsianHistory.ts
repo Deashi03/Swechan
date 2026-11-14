@@ -138,13 +138,6 @@ const haniwaHorse = (x: number, y: number, s = 1) => at(x, y, s, ...[-9, -4, 5, 
 const ricePlants = (x: number, y: number, n = 6, gap = 10) => all(...Array.from({ length: n }, (_, i) => line(`M${x + i * gap} ${y} l-3 -8 M${x + i * gap} ${y} l0 -10 M${x + i * gap} ${y} l3 -8`, '#4f9d3a', 1.4)));
 const scroll = (x: number, y: number, w = 40, h = 30, inner: Svg = '') => all(rect(x - w / 2, y - h / 2, w, h, PAPER, 1, C.ink, 1.3), rect(x - w / 2 - 3, y - h / 2 - 3, w + 6, 4, WOOD, 2, C.ink, 1), rect(x - w / 2 - 3, y + h / 2 - 1, w + 6, 4, WOOD, 2, C.ink, 1), inner);
 const throne = (x: number, y: number, s = 1) => at(x, y, s, rect(-16, -30, 32, 30, IMP2, 3, C.ink, 1.4), rect(-20, -8, 40, 8, RED, 2, C.ink, 1.3), path('M-16 -30 C-18 -38 -10 -40 -8 -34 M16 -30 C18 -38 10 -40 8 -34', 'none', IMP2, 3));
-const scales = (x: number, y: number, tilt: number, left: Svg, right: Svg, col: string = C.gold) => {
-  const dy = tilt * 10;
-  return all(line(`M${x} ${y} L${x} ${y - 50}`, WOOD, 3), rect(x - 12, y - 2, 24, 4, WOOD, 1, C.ink, 1), circle(x, y - 50, 3, col, C.ink, 1),
-    line(`M${x - 30} ${y - 50 + dy} L${x + 30} ${y - 50 - dy}`, col, 3), line(`M${x - 30} ${y - 50 + dy} L${x - 38} ${y - 28 + dy} M${x - 30} ${y - 50 + dy} L${x - 22} ${y - 28 + dy} M${x + 30} ${y - 50 - dy} L${x + 22} ${y - 28 - dy} M${x + 30} ${y - 50 - dy} L${x + 38} ${y - 28 - dy}`, C.ink, 0.9),
-    path(`M${x - 42} ${y - 28 + dy} L${x - 18} ${y - 28 + dy} C${x - 20} ${y - 20 + dy} ${x - 40} ${y - 20 + dy} ${x - 42} ${y - 28 + dy} Z`, col, C.ink, 1.1), path(`M${x + 18} ${y - 28 - dy} L${x + 42} ${y - 28 - dy} C${x + 40} ${y - 20 - dy} ${x + 20} ${y - 20 - dy} ${x + 18} ${y - 28 - dy} Z`, col, C.ink, 1.1),
-    g(`translate(${x - 30} ${y - 29 + dy})`, left), g(`translate(${x + 30} ${y - 29 - dy})`, right));
-};
 const coin = (x: number, y: number, r = 3) => all(circle(x, y, r, C.gold, C.ink, 0.9), rect(x - r * 0.3, y - r * 0.3, r * 0.6, r * 0.6, 'none', 0, '#b88a20', 0.7));
 const ballotBox = (x: number, y: number, s = 1) => at(x, y, s, rect(-14, -20, 28, 20, C.white, 2, C.ink, 1.4), rect(-8, -22, 16, 3, C.dark, 1, null), path('M-4 -30 L6 -28 L5 -21 L-5 -23 Z', PAPER, C.ink, 1));
 const flagGen = (x: number, y: number, h = 30, col: string = RED, starCol: string = C.yellow) => all(line(`M${x} ${y} L${x} ${y - h}`, C.grey, 1.8), path(`M${x} ${y - h} L${x + 22} ${y - h} L${x + 22} ${y - h + 14} L${x} ${y - h + 14} Z`, col, C.ink, 1.1), star(x + 6, y - h + 5, 3, starCol));
@@ -206,8 +199,10 @@ export const EAST_ASIAN_HISTORY_MOTIFS: Record<string, Svg> = {
   'ostas.shogun': all(bg('#f3ece2'), rect(4, 20, 112, 50, C.white, 0, null), line('M4 20 L116 20 M4 70 L116 70', C.ink, 1.2), mon(30, 44, 9), mon(90, 44, 9), field(96, '#c9b88a'),
     rect(48, 92, 24, 6, WOOD, 1, C.ink, 1), fig(60, RED, 'calm', { h: 0.82, bottom: '#3d3f4a' }), on(60, 0.82, armor(RED), kabuto), reach(60, 0.82, 1, 80, 62), fan(84, 60, 1.1, C.gold),
     stand(20, 112, 0.42, robed(60, '#3d4a6a', 'calm', {}, topknot())), stand(100, 112, 0.42, robed(60, '#3d4a6a', 'calm', {}, topknot())), ring(60, 50, 16)),
-  'ostas.shogunat': all(bg('#f3ece2'), castleJ(60, 62, 0.62), stand(60, 22, 0.24, fig(60, RED, 'calm', { bottom: '#3d3f4a' }), on(60, 1, kabuto)),
-    ...[[18, 96], [44, 102], [76, 102], [102, 96]].map(([x, y]) => all(houseJ(x!, y!, 0.7), arrow(60, 64, x!, y! - 18, HL, 1.8))), greyed(stand(104, 50, 0.3, robed(60, '#c9c0a8', 'calm', {}, eboshi)))),
+  'ostas.shogunat': all(sea(4), japanMap('#b9d89a', '#b9d89a', '#b9d89a', '#b9d89a'), ...[[96, 22], [86, 40], [22, 98], [46, 98], [50, 88]].map(([x, y]) => all(dash(`M70 62 L${x} ${y}`, RED, 1.4, '3 2'), circle(x!, y!, 2.6, RED, C.ink, 0.8))),
+    castleJ(70, 70, 0.3), at(70, 74, 0.5, kabuto), ring(70, 54, 19),
+    greyed(at(18, 66, 1, houseJ(0, 0, 0.8), stand(0, -12, 0.22, robed(60, '#c9c0a8', 'calm', {}, eboshi)))), dash('M28 62 L54 66', C.grey, 1, '1 3'),
+    ...[[82, 108], [96, 108], [110, 108]].map(([x, y]) => stand(x!, y!, 0.22, robed(60, '#3d4a6a', 'calm', {}, topknot()))), rect(74, 108, 42, 4, WOOD, 1, C.ink, 0.8)),
   'ostas.tyfon': all(rect(4, 4, 112, 108, '#9ab0c0', 3, null), sea(70, '#5f8fae'), path('M60 34 m-26 0 a26 18 0 1 1 52 0 a20 13 0 1 1 -40 2 a13 8 0 1 1 26 -2', 'none', C.white, 3.4), circle(60, 34, 4, '#9ab0c0', C.ink, 1),
     path('M4 76 C20 62 30 86 46 72 C62 58 72 86 88 70 C100 60 110 74 116 66 L116 84 L4 84 Z', '#3f6f90', null), junk(30, 86, 0.9, true), junk(84, 92, 0.8, true), rain(10, 54, 100, '#e4f1fa'), rain(14, 62, 96, '#e4f1fa'), waves(8, 112, 100, C.white)),
   'ostas.hederskodex': all(bg('#f3ece2'), scroll(46, 60, 50, 60, all(at(34, 46, 0.8, line('M-10 6 L10 -6', C.black, 2.6)), circle(58, 46, 5, RED, C.ink, 1), lines(26, 62, 40, 4, 6, '#5a4a3a'))),
@@ -215,9 +210,13 @@ export const EAST_ASIAN_HISTORY_MOTIFS: Record<string, Svg> = {
   'ostas.länsfurste': all(bg(), field(90), castleJ(86, 90, 0.72), banner(10, 112, 44, C.navy), banner(30, 112, 44, C.navy), stand(52, 112, 0.7, robed(60, C.navy, 'calm', {}, topknot(), mon(0, -30, 5), swords)),
     stand(22, 112, 0.42, robed(60, '#5a6a8a', 'calm', {}, topknot())), ring(52, 60, 16)),
   // 2414 Edo-periodens samhälle
-  'ostas.ståndssamhälle': all(bg('#f3ece2'), path('M10 112 L10 36 L34 36 L34 54 L58 54 L58 72 L82 72 L82 90 L110 90 L110 112 Z', '#e0c48a', C.ink, 1.4),
-    stand(22, 36, 0.28, fig(60, RED, 'calm', { bottom: '#3d3f4a' }), on(60, 1, topknot(), swords)), stand(46, 54, 0.28, fig(60, '#5a7aa8', 'calm'), on(60, 1, kasa())), stand(70, 72, 0.28, fig(60, '#7a5a3a', 'calm'), on(60, 1, line('M18 -10 L26 -24', WOOD, 3), rect(22, -30, 8, 6, C.grey, 1, C.ink, 1))), stand(96, 90, 0.28, fig(60, '#4f9d69', 'calm'), on(60, 1, rect(16, -14, 14, 10, C.gold, 1, C.ink, 1))),
-    ...[34, 58, 82].map((x, i) => ban(x, 46 + i * 18, 4, 1.4))),
+  'ostas.ståndssamhälle': all(bg('#f3ece2'), path('M14 112 L14 26 L106 26 L106 112 Z', '#efe2c4', C.ink, 1.6), path('M10 26 L60 8 L110 26 Z', ROOF, C.ink, 1.4),
+    ...[48, 70, 92].map((y) => rect(14, y - 2, 92, 4, '#8a6a3a', 0, C.ink, 1.1)),
+    ...[24, 42, 60, 78, 96].map((x) => stand(x, 46, 0.18, fig(60, RED, 'calm', { bottom: '#3d3f4a' }), on(60, 1, topknot()))),
+    ...[24, 42, 60, 78, 96].map((x) => stand(x, 68, 0.18, fig(60, '#5a7aa8', 'calm'), on(60, 1, kasa()))),
+    ...[24, 42, 60, 78, 96].map((x) => stand(x, 90, 0.18, fig(60, '#7a5a3a', 'calm'))),
+    ...[24, 42, 60, 78, 96].map((x) => stand(x, 112, 0.18, fig(60, '#4f9d69', 'calm'))),
+    ...[48, 70, 92].map((y, i) => at(i % 2 ? 36 : 84, y, 0.9, rect(-5, -3, 10, 8, C.gold, 1.5, C.ink, 1), path('M-3 -3 L-3 -7 C-3 -11 3 -11 3 -7 L3 -3', 'none', C.ink, 1.4)))),
   'ostas.fredstid': all(bg(), field(84), at(30, 84, 1, rect(-3, -30, 6, 30, '#7a5a3a', 1, C.ink, 1), circle(0, -38, 16, '#f6c9d4', C.ink, 1.3), circle(-10, -30, 9, '#f6c9d4', null), circle(10, -31, 9, '#f6c9d4', null)), rect(42, 92, 40, 8, '#c84a4a', 1, C.ink, 1),
     stand(50, 96, 0.5, robed(60, '#4f9d69', 'laugh', {}, topknot())), stand(74, 96, 0.5, robed(60, '#c84a7a', 'smile', { hairStyle: 'long' })), at(62, 90, 0.6, line('M-14 2 L14 -2', C.black, 3)),
     greyed(at(100, 30, 0.6, line('M-12 -12 L12 12 M12 -12 L-12 12', C.black, 4), circle(0, 0, 4, C.grey, null))), ban(100, 30, 12, 2.4)),
@@ -230,8 +229,10 @@ export const EAST_ASIAN_HISTORY_MOTIFS: Record<string, Svg> = {
     ...[26, 60, 94].map((x, i) => all(rect(x - 14, 84, 28, 6, WOOD, 1, C.ink, 1.1), stand(x, 92, 0.34, robed(60, ['#d64545', '#3f6fb5', '#4f9d69'][i]!, 'calm', { hairStyle: i === 1 ? 'long' : 'short' })), rect(x - 6, 80, 12, 4, C.white, 0.5, C.ink, 0.6), line(`M${x + 6} 74 L${x + 10} 82`, C.black, 1.4))),
     stand(104, 80, 0.4, robed(60, '#5a5a6a', 'smile', { hair: '#d0d0d0' })), scroll(22, 46, 16, 20, lines(16, 40, 12, 3, 5, C.ink))),
   // 2415 Meijirestaurationen
-  'ostas.ojämlik': all(bg('#f3ece2'), scales(44, 104, 1.6, all(coin(-6, -4), coin(0, -6), coin(6, -4), coin(-3, -9), coin(3, -10), coin(0, -14)), coin(0, -3)), ring(14, 82, 14),
-    greyed(at(100, 70, 0.4, line('M0 40 L0 -10', WOOD, 3), line('M-30 -10 L30 -10', C.gold, 3), path('M-40 10 L-20 10 L-30 -10 Z M20 10 L40 10 L30 -10 Z', 'none', C.ink, 1), coin(-30, 6, 4), coin(30, 6, 4))), okC(100, 98, 6)),
+  'ostas.ojämlik': all(bg('#f3ece2'), field(104, '#d9cbb0'), rect(14, 58, 26, 46, C.gold, 2, C.ink, 1.4), line('M14 70 L40 70 M14 82 L40 82 M14 94 L40 94', '#b88a20', 1.2),
+    stand(27, 58, 0.42, fig(60, '#8a6bbf', 'laugh')), at(27, 14, 1, coin(-5, 0), coin(5, 0), coin(0, -5)),
+    stand(58, 112, 0.42, fig(60, '#9a8a7a', 'frown')), at(68, 106, 1, path('M-6 -4 L6 -4 C6 2 2 4 0 4 C-2 4 -6 2 -6 -4 Z', '#c9b8a0', C.ink, 1)), ring(42, 72, 34),
+    greyed(rect(82, 92, 12, 12, C.gold, 1, C.ink, 1), rect(100, 92, 12, 12, C.gold, 1, C.ink, 1), stand(88, 92, 0.3, fig(60, C.grey, 'smile')), stand(106, 92, 0.3, fig(60, C.grey, 'smile'))), okC(97, 30, 6)),
   'ostas.kejsarmakt': all(bg('#fdf3d2'), ...Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2; return line(`M${f1(60 + Math.cos(a) * 24)} ${f1(46 + Math.sin(a) * 24)} L${f1(60 + Math.cos(a) * 52)} ${f1(46 + Math.sin(a) * 52)}`, 'rgba(242,193,78,0.8)', 3); }),
     throne(60, 92, 1.3), stand(60, 92, 0.62, robed(60, '#2f3a55', 'calm', {}, rect(-9, -72, 18, 8, C.black, 1, C.ink, 1))), ...[14, 30, 90, 106].map((x) => stand(x, 112, 0.3, robed(60, '#7a6a5a', 'calm', {}))), field(108, '#e9ddc4'), ring(60, 50, 22)),
   'ostas.restauration': all(bg('#f3ece2'), stand(30, 112, 0.66, fig(60, RED, 'calm', { bottom: '#3d3f4a', grey: true }), on(60, 1, kabuto)), stand(90, 112, 0.66, robed(60, '#2f3a55', 'smile', {}, rect(-9, -72, 18, 8, C.black, 1, C.ink, 1))),
@@ -257,10 +258,14 @@ export const EAST_ASIAN_HISTORY_MOTIFS: Record<string, Svg> = {
   // 2417 Modern östasiatisk historia
   'ostas.annektera': all(sea(4), path('M4 40 C30 30 60 34 84 30 L84 112 L4 112 Z', '#d98a6a', C.ink, 1.4), path('M84 30 C96 28 108 34 116 30 L116 112 L84 112 Z', '#d98a6a', C.ink, 1.4), dash('M84 30 L84 112', C.ink, 1.4, '3 3'),
     arrow(54, 70, 100, 70, HL, 3), greyed(at(100, 18, 1, rect(-14, -8, 28, 16, '#a8c98a', 2, C.ink, 1), rect(-30, -8, 14, 16, '#d98a6a', 2, C.ink, 1), line('M-16 -8 L-16 8', C.ink, 1.4))), arrow(78, 18, 86, 18, C.grey, 1.6)),
-  'ostas.kolonialstyre': all(sea(4), path('M20 50 C40 40 80 42 100 52 C108 70 100 100 80 108 C60 112 34 108 22 96 C12 80 12 62 20 50 Z', LAND2, C.ink, 1.4), ...[[40, 96], [58, 100], [76, 96]].map(([x, y]) => stand(x!, y!, 0.3, fig(60, '#7a8a6a', 'frown'))),
-    stand(60, 72, 0.5, fig(60, C.dark, 'angry', { bottom: C.dark }), on(60, 1, path('M-11 -62 L11 -62 L9 -70 L-9 -70 Z', C.black, C.ink, 1))), reach(60, 0.5, 1, 74, 46), flagGen(74, 46, 22, '#3f6fb5', C.white), at(16, 26, 0.6, path('M-12 0 C-6 4 6 4 12 0 L10 -4 L-10 -4 Z', C.dark, C.ink, 1)), dash('M24 26 C40 26 50 34 56 44', HL, 1.4)),
-  'ostas.folkrepublik': all(bg('#f3ece2'), rect(24, 52, 72, 36, RED, 0, C.ink, 1.4), path('M18 52 C30 46 90 46 102 52 L90 40 L30 40 Z', IMP, C.ink, 1.3), rect(50, 66, 20, 22, '#5a1e18', 0, C.ink, 1), flagGen(56, 40, 28),
-    ...[14, 30, 46, 62, 78, 94, 106].map((x, i) => stand(x, 112, 0.28, fig(60, ['#3f6fb5', '#4f9d69', '#ef8a3c', '#8a6bbf'][i % 4]!, 'smile'))), field(110, '#d9cbb0')),
+  'ostas.kolonialstyre': all(bg(), field(92, '#d9c08a'), at(62, 92, 1, rect(-34, -34, 68, 34, '#efe6d2', 0, C.ink, 1.4), path('M-40 -34 L0 -50 L40 -34 Z', '#c9b48a', C.ink, 1.4), ...[-26, -14, 14, 26].map((d) => rect(d - 2.4, -32, 4.8, 30, '#d9cbb0', 0, C.ink, 0.9)), rect(-8, -22, 16, 22, '#5a4a3a', 0, C.ink, 1)),
+    flagGen(62, 42, 30, '#3f6fb5', C.white), stand(62, 92, 0.34, fig(60, C.dark, 'calm', { bottom: C.dark }), on(60, 1, path('M-11 -62 L11 -62 L9 -70 L-9 -70 Z', C.black, C.ink, 1))),
+    ...[[16, 112], [30, 112], [94, 112], [108, 112]].map(([x, y]) => stand(x!, y!, 0.3, fig(60, '#7a8a6a', 'frown'))), at(14, 40, 0.6, line('M0 0 L0 -26', '#7a5a3a', 3), path('M0 -26 C-10 -30 -14 -24 -16 -20 M0 -26 C10 -30 14 -24 16 -20 M0 -26 C-4 -36 4 -36 6 -32', 'none', '#4f9d3a', 3)),
+    at(104, 22, 0.8, rect(-10, -10, 20, 18, C.white, 1, C.ink, 1), rect(-10, -10, 20, 5, RED, 0, null), rect(-7, -9, 20, 18, 'none', 1, C.ink, 0.8), rect(-4, -8, 20, 18, 'none', 1, C.ink, 0.8)), arrow(48, 70, 30, 84, HL, 2), arrow(76, 70, 94, 84, HL, 2)),
+  'ostas.folkrepublik': all(bg('#f3ece2'), rect(22, 58, 76, 34, '#e9e2d0', 0, C.ink, 1.4), path('M16 58 L104 58 L94 46 L26 46 Z', '#c9573c', C.ink, 1.3), ...[30, 42, 54, 66, 78, 90].map((x) => rect(x - 2.4, 60, 4.8, 32, '#d9cbb0', 0, C.ink, 0.9)),
+    circle(60, 24, 16, C.white, C.ink, 1.4), ...[[52, 18], [60, 16], [68, 18], [50, 28], [58, 26], [66, 28], [56, 34], [64, 34]].map(([x, y]) => circle(x!, y!, 2.6, [C.orange, C.denim, C.green, C.purple][(x! + y!) % 4]!, C.ink, 0.6)), arrow(60, 42, 60, 48, HL, 2),
+    ...[14, 28, 42, 56, 70, 84, 98, 108].map((x, i) => stand(x, 112, 0.24, fig(60, ['#3f6fb5', '#4f9d69', '#ef8a3c', '#8a6bbf'][i % 4]!, 'smile'))), field(110, '#d9cbb0'),
+    greyed(at(100, 22, 1, path('M-8 0 L-8 -8 L-4 -4 L0 -10 L4 -4 L8 -8 L8 0 Z', C.gold, C.ink, 1))), ban(100, 18, 10, 2.2)),
   'ostas.kulturrevolutionen': all(bg('#f3ece2'), rect(4, 4, 112, 26, RED, 0, null), ...[20, 50, 80, 104].map((x) => star(x, 17, 4, C.yellow)),
     ...[24, 52, 80].map((x, i) => all(fig(x, OLIVE, 'angry', { h: 0.7, bottom: OLIVE, hairStyle: i === 1 ? 'long' : 'short' }), on(x, 0.7, rect(-15, -34, 6, 5, RED, 0, null)), reach(x, 0.7, 1, x + 12, 46), rect(x + 9, 38, 7, 9, RED, 1, C.ink, 1))),
     at(104, 106, 0.8, rect(-10, -4, 20, 4, STONE, 1, C.ink, 1), path('M-6 -4 L-6 -22 C-6 -30 6 -30 6 -22 L6 -4 Z', STONE, C.ink, 1.2), line('M-6 -14 L2 -16 L6 -12', C.ink, 1.4))),
