@@ -27,7 +27,6 @@ const COAT = '#f4f4f0';
 const STAFF = C.denim;
 const GOOD = '#3a9a5a';
 const RUST = '#a4532a';
-const IRON = '#6a6f78';
 const WOOL = '#c0504d';
 const SKY = '#e4f1fa';
 const f1 = (n: number) => +n.toFixed(1);
@@ -106,10 +105,10 @@ export const MUSEUM_MOTIFS: Record<string, Svg> = {
   // 2331 Museets utställningar
   'mus.ställa-ut': all(room(), painting(24, 36, 26, 20), plinth(76, 112, 22, 30), staff(42, 'smile', { hairStyle: 'long' }), reach(42, 1, 1, 70, 52), reach(42, 1, 1, 82, 52), vase(76, 56, 1.2),
     arrow(98, 40, 98, 72, HL, 2.6), ring(76, 42, 18)),
-  'mus.basutställning': all(room(80), rect(8, 10, 70, 70, '#f6efe2', 2, C.ink, 1.2), painting(26, 30, 24, 18), painting(60, 30, 24, 18), plinth(28, 78, 14, 18), vase(28, 60, 0.7), vitrine(60, 78, 22, 14, 14, bust(60, 64, 0.4)),
-    greyed(rect(84, 44, 28, 36, '#f6efe2', 2, C.ink, 1.2), painting(98, 58, 16, 12), vase(98, 78, 0.45)),
-    rect(8, 86, 104, 6, C.grey2, 3, C.ink, 0.8), rect(8, 86, 104, 6, HL, 3, C.ink, 1), T(14, 104, '2000', 7, C.ink), T(104, 104, '2030', 7, C.ink),
-    rect(90, 94, 14, 4, C.grey, 2, null), line('M8 92 L8 96 M112 92 L112 96', C.ink, 1)),
+  'mus.basutställning': all(sky(), ground(104), path('M6 30 L60 10 L114 30 Z', '#e8e4da', C.ink, 1.4), rect(8, 30, 104, 74, '#e8e4da', 1, C.ink, 1.4),
+    greyed(rect(12, 50, 22, 50, WALL, 1, C.ink, 1), painting(23, 64, 12, 9), rect(86, 50, 22, 50, WALL, 1, C.ink, 1), vase(97, 96, 0.4)),
+    rect(36, 36, 48, 64, WALL, 1, C.ink, 1.2), rect(36, 90, 48, 10, FLOOR, 0, null), painting(48, 50, 16, 12), painting(72, 50, 16, 12), plinth(60, 98, 12, 18), bust(60, 80, 0.5), vitrine(44, 98, 12, 9, 10, vase(44, 87, 0.3)), vitrine(76, 98, 12, 9, 10, cupM(76, 87, 0.5)),
+    stand(52, 100, 0.2, fig(60, C.orange, 'smile')), stand(68, 100, 0.2, fig(60, C.green, 'smile')), box(34, 34, 52, 68)),
   'mus.vandringsutställning': all(sky(), ground(92), museum(18, 92, 0.5), museum(102, 92, 0.5), at(58, 106, 1.3, rect(-24, -24, 32, 20, C.white, 2, C.ink, 1.3), rect(8, -16, 14, 12, C.orange, 2, C.ink, 1.3), rect(11, -14, 7, 5, SCREEN, 1, C.ink, 0.8), circle(-14, -2, 4, C.dark, C.ink, 1), circle(14, -2, 4, C.dark, C.ink, 1)),
     crate(40, 74, 14, 12), crate(56, 74, 14, 12), painting(48, 84, 14, 10), vase(60, 96, 0.4), dash('M26 50 C44 32 76 32 94 50', HL, 1.8, '4 3'), arrow(88, 44, 96, 52, HL, 2.4), ring(60, 84, 30)),
   'mus.sockel': all(room(), painting(22, 34, 22, 18), painting(98, 34, 22, 18), plinth(60, 108, 34, 52), bust(60, 54, 1.1), rect(41, 54, 38, 56, 'none', 3, HL, 2.6), line('M40 108 L80 108', C.ink, 1)),
@@ -146,10 +145,12 @@ export const MUSEUM_MOTIFS: Record<string, Svg> = {
   // 2333 Samlingsföremål
   'mus.samlare.2': all(room(), ...[24, 46, 68].map((y) => all(rect(54, y, 56, 3, WOOD, 1, C.ink, 1), ...[0, 1, 2, 3, 4].map((i) => cupM(60 + i * 11, y, 0.7, [C.white, C.yellow, C.rose, C.mint, C.lilac][(i + y / 22) % 5 | 0]!)))),
     rect(54, 70, 56, 3, WOOD, 1, C.ink, 1), fig(28, C.orange, 'laugh', { hairStyle: 'short' }), reach(28, 1, 1, 46, 56), cupM(46, 58, 0.8, C.pink), sparkle(46, 42, 3.4), box(52, 12, 60, 64)),
-  'mus.samlingsföremål': all(room(), ...[0, 1, 2].map((i) => all(rect(10 + i * 34, 64, 30, 32, '#d4a373', 1, C.ink, 1.2), rect(12 + i * 34, 66, 26, 28, PAPER, 0.5, null))), greyed(cupM(27, 88, 0.9), book(95, 80, 0.5)),
-    vase(61, 92, 0.8), at(70, 70, 1, line('M-6 0 L0 0', C.ink, 0.8), rect(0, -3, 12, 6, C.white, 1, C.ink, 0.8), T(6, 1.6, '27', 4.4, C.ink)), museum(60, 50, 0.7), arrow(60, 54, 60, 62, HL, 2), box(42, 62, 36, 36)),
-  'mus.deponera': all(sky(), ground(100), museum(84, 100, 0.9), fig(22, C.orange, 'smile', { hairStyle: 'long' }), reach(22, 1, 1, 36, 64), painting(84, 82, 20, 14), dash('M36 64 C50 50 70 60 84 75', HL, 1.6, '3 3'),
-    circle(36, 64, 3, C.skin, C.ink, 1), at(30, 74, 1, rect(-4, -3, 8, 6, C.gold, 1, C.ink, 0.8), circle(0, 0, 1.2, C.ink, null)), ring(84, 82, 14)),
+  'mus.samlingsföremål': all(room(), rect(8, 18, 104, 3, WOOD, 1, C.ink, 1), greyed(cupM(18, 18, 0.7), book(32, 11, 0.3), vase(46, 18, 0.35), cupM(76, 18, 0.7), at(90, 18, 0.3, bust(0, 0, 1)), vase(104, 18, 0.35)), dash('M61 14 L61 30', HL, 1.4, '2 2'),
+    rect(54, 6, 14, 12, 'none', 1, C.grey, 1, ), vase(60, 104, 2.6), at(84, 70, 1, line('M-12 4 L0 0', C.ink, 0.8), rect(0, -4, 12, 8, C.white, 1, C.ink, 0.9), T(6, 2, '27', 5, C.ink)), ring(60, 70, 38)),
+  'mus.deponera': all(sky(), ground(100), greyed(at(96, 18, 1, rect(-10, -8, 20, 16, C.pink, 1, C.ink, 1.2), line('M0 -8 L0 8 M-10 0 L10 0', C.red, 2), path('M0 -8 C-6 -16 -8 -10 0 -8 C8 -16 6 -10 0 -8 Z', C.red, C.ink, 0.8)), arrow(80, 18, 70, 18, C.grey, 2)),
+    museum(86, 100, 0.9), painting(86, 84, 20, 14), at(97, 90, 1, line('M-3 -4 L0 0', C.ink, 0.6), rect(0, -2, 8, 6, C.gold, 1, C.ink, 0.8), T(4, 2.6, '1', 4.4, C.ink)),
+    fig(24, C.orange, 'smile', { hairStyle: 'long' }), reach(24, 1, 1, 40, 64), at(44, 64, 1, rect(-4, -3, 10, 7, C.gold, 1, C.ink, 0.9), T(1, 2.4, '1', 4.6, C.ink)),
+    path('M42 50 C54 36 70 40 78 62', 'none', HL, 2.4), arrow(74, 56, 78, 64, HL, 2.4), dash('M80 98 C70 110 50 108 42 80', HL, 2, '4 3'), arrow(46, 88, 42, 78, HL, 2.2), ring(44, 64, 9)),
   'mus.magasin': all(rect(4, 4, 112, 108, '#cfd3d8', 3, null), rect(4, 100, 112, 12, '#9aa3ad', 0, null), ...[14, 50, 86].map((x) => all(rect(x, 14, 24, 86, 'none', 0, C.dark, 1.4), ...[34, 56, 78, 98].map((y) => line(`M${x} ${y} L${x + 24} ${y}`, C.dark, 1.6)),
     crate(x + 7, 34, 10, 10), crate(x + 18, 34, 8, 8), crate(x + 12, 56, 18, 12), vase(x + 7, 78, 0.4), crate(x + 17, 78, 10, 10), crate(x + 12, 98, 18, 14))), circle(60, 8, 3, C.yellow, C.ink, 1), path('M50 10 L70 10 L84 40 L36 40 Z', 'rgba(242,193,78,0.25)', null)),
   'mus.inventarienummer': all(room(), table(92), cupM(44, 92, 3.2), at(80, 62, 1, line('M-24 10 L-8 2', C.ink, 0.8), rect(-8, -8, 36, 16, C.white, 2, C.ink, 1.3), circle(-4, 0, 1.6, 'none', C.ink, 0.8), T(12, 3.4, '1987:12', 7.4, C.ink)), T(44, 84, '12', 6, C.ink), ring(90, 62, 21), ring(44, 82, 7)),
@@ -166,8 +167,9 @@ export const MUSEUM_MOTIFS: Record<string, Svg> = {
     fig(86, C.purple, 'smile', { h: 0.9, hairStyle: 'short' }), glasses(86, 0.9), rect(60, 70, 52, 26, WOOD, 1, C.ink, 1.4), rect(60, 66, 52, 6, '#c89060', 1, C.ink, 1.2), vase(70, 66, 0.6), at(78, 56, 1, line('M-4 2 L0 -2', C.ink, 0.6), rect(0, -6, 10, 6, C.white, 1, C.ink, 0.7), T(5, -1.6, '900', 4, C.ink))),
   'mus.omstridd': all(room(), fig(22, C.red, 'angry', { hairStyle: 'short' }), fig(98, C.denim, 'angry', { hairStyle: 'long' }), reach(22, 1, 1, 50, 58), reach(98, 1, -1, 70, 58), vase(60, 72, 1.3), arrow(44, 46, 30, 46, HL, 2.2), arrow(76, 46, 90, 46, HL, 2.2),
     line('M54 22 l-3 -6 M60 20 l0 -7 M66 22 l3 -6', C.red, 2), ring(60, 56, 22)),
-  'mus.rättmätig': all(room(), greyed(fig(24, C.grey, 'frown', { h: 0.86 })), noC(24, 12, 5), fig(94, C.green, 'smile', { hairStyle: 'long' }), reach(94, 1, -1, 74, 60), vase(64, 72, 1), dash('M42 70 C48 82 56 80 58 76', C.grey, 1.4), arrow(40, 52, 58, 52, HL, 2.2),
-    at(102, 20, 1, rect(-10, -9, 20, 18, PAPER, 1, C.ink, 1.1), vase(0, 6, 0.4), line('M-7 -5 L7 -5', C.grey, 1)), okC(110, 30, 5), ring(94, 22, 15)),
+  'mus.rättmätig': all(room(), vase(60, 96, 1.2), greyed(fig(22, C.grey, 'frown', { h: 0.82 }), at(22, 70, 1, rect(-8, -10, 16, 20, PAPER, 1, C.ink, 1))), noC(22, 20, 6),
+    fig(96, C.green, 'smile', { hairStyle: 'long' }), reach(96, 1, -1, 84, 60), at(80, 58, 1.2, rect(-11, -14, 22, 28, PAPER, 1, C.ink, 1.2), vase(0, 2, 0.45), line('M-7 6 L7 6 M-7 9 L4 9', C.grey, 0.9), circle(5, 10, 3.6, C.red, C.ink, 0.8)), okC(96, 14, 7),
+    dash('M70 66 L74 66', HL, 1.4), box(64, 36, 46, 70)),
   'mus.repatriering': all(rect(4, 4, 112, 108, '#9fd0ec', 3, null), path('M4 30 L38 22 L46 40 L40 70 L4 76 Z', '#c9d8b0', C.ink, 1.4), museum(22, 54, 0.45), path('M80 40 L116 34 L116 96 L74 92 L70 64 Z', '#b7d68a', C.ink, 1.4),
     ...[84, 96, 106].map((x) => path(`M${x - 5} 64 L${x} 56 L${x + 5} 64 Z`, C.tan, C.ink, 1)), fig(96, C.orange, 'laugh', { h: 0.36 }), fig(106, C.green, 'smile', { h: 0.32 }), crate(56, 60, 14, 10), vase(56, 50, 0.3),
     dash('M30 48 C44 30 66 30 86 52', HL, 1.8, '4 3'), arrow(80, 46, 88, 54, HL, 2.4), path('M10 96 Q20 92 30 96 T50 96', 'none', C.white, 1.2)),
@@ -181,22 +183,25 @@ export const MUSEUM_MOTIFS: Record<string, Svg> = {
     ring(50, 74, 22)),
   'mus.nedbrytning': all(room(), table(84), book(18, 72, 0.9, '#7a3b3b'), arrow(30, 70, 40, 70, HL, 2), at(52, 72, 0.9, path('M-9 -12 L9 -12 L8 12 L-8 12 Z', '#8a5050', C.ink, 1.2), path('M2 -12 L9 -6 L9 -12 Z', WALL, null), circle(-3, 4, 2, WALL, C.ink, 0.6)), arrow(64, 70, 74, 70, HL, 2),
     at(90, 76, 1, path('M-10 8 L-6 -4 L-1 0 L3 -8 L8 2 L10 8 Z', '#9a6a5a', C.ink, 1.2), ...[[-12, 10], [12, 9], [4, 11], [-4, 11]].map(([x, y]) => circle(x!, y!, 1.2, '#9a6a5a', null))), T(18, 50, '1', 8, C.grey), T(52, 50, '50', 8, C.grey), T(90, 50, '200', 8, C.grey)),
-  'mus.konservering': all(room(), table(80), greyed(sword(30, 56, 1.2, 90, RUST), ...[[20, 62], [34, 50], [44, 60]].map(([x, y]) => circle(x!, y!, 2.2, RUST, null)), line('M24 66 l2 6 M36 66 l-1 7', RUST, 1.4)), arrow(56, 56, 66, 56, HL, 2.4),
-    rect(68, 46, 46, 22, PAPER, 2, C.ink, 1.2), sword(91, 57, 1.2, 90, IRON), at(104, 26, 1, rect(-7, -10, 14, 20, C.white, 2, C.ink, 1), T(0, 3, '50', 6, GOOD)), path('M76 18 L88 13 L100 18 L100 26 C100 33 88 38 88 38 C88 38 76 33 76 26 Z', 'rgba(58,154,90,0.25)', GOOD, 1.6), okC(88, 25, 5),
-    conservator(60, 'calm', { h: 0.42, hairStyle: 'long' }), box(66, 10, 50, 60)),
+  'mus.konservering': all(room(), table(84), greyed(sword(28, 54, 1.1, 90, RUST), ...[[20, 62], [30, 66], [38, 64], [26, 74], [36, 80]].map(([x, y]) => circle(x!, y!, 1.8, RUST, null)), arrow(28, 64, 28, 80, C.grey, 2)),
+    rect(64, 36, 50, 44, 'rgba(190,225,245,0.35)', 4, GOOD, 2), sword(89, 58, 1.1, 90, RUST), ...[[78, 56], [96, 60], [104, 56]].map(([x, y]) => circle(x!, y!, 1.6, '#7a3a1a', null)), line('M68 52 L110 52', 'rgba(255,255,255,0.8)', 1.4),
+    at(89, 74, 1, line('M0 -6 L0 4', RUST, 2), circle(0, 0, 7, 'none', C.red, 2), line('M-5 5 L5 -5', C.red, 2)), at(104, 24, 1, rect(-7, -10, 14, 18, C.white, 2, C.ink, 1), T(0, 2, '50', 5.6, GOOD)), okC(72, 24, 6)),
   'mus.restaurera': all(room(), greyed(painting(26, 44, 34, 28), line('M14 34 L22 46 L18 54 M30 36 L36 50', C.ink, 1.4), rect(26, 50, 10, 6, WALL, 0, null)), arrow(48, 44, 70, 44, HL, 2.8), painting(92, 44, 34, 28), sparkle(108, 26, 4), sparkle(78, 26, 3),
     conservator(64, 'smile', { h: 0.48, hairStyle: 'short' }), brush(76, 80, 0.6, 30)),
   // 2336 Digitala museisamlingar
-  'mus.digital.2': all(room(), greyed(book(24, 66, 1.4, '#7a3b3b')), arrow(44, 66, 56, 66, HL, 2.6), monitor(86, 60, 48, 38, all(...Array.from({ length: 5 }, (_, r) => Array.from({ length: 7 }, (_, c) => rect(66 + c * 6, 45 + r * 6, 5, 5, ['#7a3b3b', '#a05050', '#e6d3a0', '#cfe8f5'][(r * 3 + c * 2) % 4]!, 0, null)).join('')),
-    )), T(70, 98, '1 0 1 1 0', 7, HL), box(60, 39, 52, 44)),
+  'mus.digital.2': all(room(), greyed(rect(8, 30, 30, 4, WOOD, 1, C.ink, 1), book(16, 18, 0.5), book(28, 18, 0.5, '#3b5a7a'), rect(8, 70, 30, 4, WOOD, 1, C.ink, 1), book(16, 58, 0.5, '#4a7a3b')),
+    at(84, 22, 1.1, path('M-14 6 C-20 6 -20 -4 -13 -4 C-12 -12 -2 -14 2 -8 C6 -14 16 -10 14 -3 C20 -3 20 6 14 6 Z', C.white, C.ink, 1.3)), dash('M74 32 L66 50 M94 32 L104 66', C.denim, 1.4, '2 3'),
+    monitor(64, 68, 40, 30, all(rect(48, 57, 10, 14, '#7a3b3b', 1, null), rect(60, 57, 10, 14, '#3b5a7a', 1, null), rect(72, 57, 8, 14, '#4a7a3b', 1, null), line('M48 76 L80 76', C.grey, 1))),
+    at(104, 80, 1, rect(-8, -14, 16, 28, C.dark, 3, C.ink, 1.2), rect(-6, -11, 12, 20, SCREEN, 1, null), rect(-4, -8, 8, 12, '#7a3b3b', 1, null)), box(42, 10, 74, 98)),
   'mus.skanna.2': all(room(), table(84), at(36, 78, 1, rect(-28, -6, 56, 12, C.grey2, 2, C.ink, 1.4), rect(-24, -9, 48, 4, 'rgba(255,255,255,0.7)', 1, C.ink, 1), rect(-14, -13, 24, 4, '#f4eedc', 0.5, C.ink, 0.8), line('M-26 -2 L26 -2', '#9be27a', 2.4)), line('M10 -2', C.ink, 1),
     monitor(90, 50, 36, 28, all(rect(78, 42, 24, 16, '#f4eedc', 1, C.ink, 0.6), circle(86, 48, 2, C.skin, null), path('M82 56 C84 50 88 50 90 56 Z', C.orange, null))), arrow(60, 66, 74, 58, HL, 2.2), rect(23, 61, 26, 10, 'none', 2, HL, 2)),
   'mus.digitalisera': all(room(), table(90), vase(20, 90, 1.1), at(48, 66, 1, rect(-8, -6, 16, 12, C.dark, 2, C.ink, 1.2), circle(0, 0, 4, SCREEN, C.ink, 1), rect(-4, -9, 6, 3, C.dark, 1, null)), line('M48 72 L44 90 M48 72 L52 90', C.dark, 1.6),
     arrow(58, 60, 70, 60, HL, 2.4), monitor(92, 56, 38, 30, all(thumbV(92, 66, 1.4), ...[0, 1, 2].map((i) => rect(77, 46 + i * 5, 6, 3, C.grey, 0, null))))),
   'mus.högupplöst': all(room(), greyed(at(28, 54, 1, rect(-20, -20, 40, 40, SCREEN, 1, C.ink, 1.4), ...[[-12, -4, 8], [-4, -12, 8], [-4, -4, 8], [-4, 4, 8], [4, -4, 8], [-12, 4, 8], [4, 4, 8], [4, -12, 8]].map(([x, y, s]) => rect(x!, y!, s!, s!, '#c4703e', 0, null)))),
     at(88, 54, 1, rect(-22, -22, 44, 44, SCREEN, 1, C.ink, 1.4), vase(0, 16, 1.1)), line('M78 46 L86 46 M90 46 L98 46', '#f3e2c4', 0.8), sparkle(108, 32, 3), box(64, 30, 48, 48)),
-  'mus.sökbar': all(room(), rect(14, 14, 92, 14, C.white, 7, C.ink, 1.4), at(96, 21, 1, circle(-1, -1, 4, 'none', C.ink, 1.6), line('M2 2 L5 5', C.ink, 1.8)), thumbV(24, 25, 0.9),
-    ...[0, 1, 2].map((r) => all(rect(18, 38 + r * 18, 16, 14, PAPER, 1, C.ink, 1), thumbV(26, 50 + r * 18, 0.9), line(`M40 ${43 + r * 18} L96 ${43 + r * 18} M40 ${48 + r * 18} L84 ${48 + r * 18}`, C.grey, 1.4))), okC(104, 46, 5), okC(104, 64, 5), okC(104, 82, 5)),
+  'mus.sökbar': all(room(), greyed(...[[14, 104], [24, 100], [34, 104], [20, 94], [30, 92], [26, 86]].map(([x, y], i) => (i % 2 ? cupM(x!, y!, 0.6) : vase(x!, y!, 0.3))), qm(30, 72, 12, C.ink)),
+    ...[0, 1, 2].map((r) => all(...[0, 1, 2, 3].map((c) => { const x = 52 + c * 17, y = 30 + r * 26; return all(r % 2 ? cupM(x, y, 0.7) : vase(x, y, 0.32), line(`M${x + 4} ${y - 6} L${x + 8} ${y - 9}`, C.ink, 0.6), rect(x + 7, y - 12, 7, 5, [C.yellow, C.mint, C.rose, C.lilac][(r + c) % 4]!, 1, C.ink, 0.7)); }))),
+    at(98, 66, 1, circle(0, 0, 9, 'rgba(190,225,245,0.5)', C.ink, 2), line('M6 6 L13 13', C.dark, 3.4)), ring(94, 62, 6), sparkle(110, 50, 3)),
   'mus.ladda-ner': all(room(), monitor(36, 40, 50, 36, all(painting(36, 38, 30, 20))), arrow(70, 30, 88, 54, HL, 2.6), at(92, 78, 1, rect(-14, -22, 28, 44, C.dark, 3, C.ink, 1.4), rect(-12, -18, 24, 32, SCREEN, 1, null), painting(0, -6, 18, 14), rect(-10, 10, 20, 3, C.white, 1, C.ink, 0.6), rect(-10, 10, 14, 3, GOOD, 1, null)),
     line('M84 92 L100 92', C.ink, 1), ring(92, 72, 24)),
   'mus.virtuell': all(rect(4, 4, 112, 108, '#e6ecf2', 3, null), dash('M10 20 L50 12 L50 60 L10 66 Z', C.purple, 1.4), dash('M70 12 L110 20 L110 66 L70 60 Z', C.purple, 1.4), at(30, 40, 1, painting(0, 0, 22, 16)), at(90, 40, 1, painting(0, 0, 22, 16)), dash('M52 100 L56 74 L64 74 L68 100', C.purple, 1.4), bust(60, 74, 0.6, '#e6e0f4'),
@@ -204,8 +209,10 @@ export const MUSEUM_MOTIFS: Record<string, Svg> = {
   // 2337 Förmedla historia till besökare
   'mus.dräkt.2': all(room(), painting(96, 30, 24, 20, C.gold), fig(46, '#7a4a8a', 'smile', { hairStyle: 'long' }), costume(46, 1), greyed(fig(96, C.denim, 'calm', { h: 0.7 })), ring(46, 70, 32)),
   'mus.skolklass': all(sky(), ground(100), museum(60, 64, 0.9), fig(18, C.purple, 'smile', { h: 0.8, hairStyle: 'long' }), ...[[38, C.red, true], [52, C.yellow, false], [66, C.green, true], [80, C.orange, false], [94, C.denim, true], [108, C.pink, false]].map(([x, c, l]) => all(kid(x as number, c as string, 'smile', l as boolean, 0.42), on(x as number, 0.42, rect(-16, -36, 6, 22, C.navy, 2, C.ink, 1))))),
-  'mus.levandegöra': all(room(), greyed(rect(10, 22, 40, 52, PAPER, 1, C.ink, 1.4), stand(30, 70, 0.4, fig(60, C.grey, 'calm', { hairStyle: 'long' })), line('M14 78 L46 78', C.ink, 1)), arrow(52, 50, 64, 50, HL, 2.6),
-    fig(88, '#7a4a8a', 'laugh', { hairStyle: 'long', h: 0.86 }), costume(88, 0.86), reach(88, 0.86, -1, 70, 44), sparkle(70, 24, 4), sparkle(108, 30, 4), sparkle(104, 64, 3), line('M74 18 l-3 -4 M80 14 l0 -5', C.gold, 1.6)),
+  'mus.levandegöra': all(room(), greyed(rect(8, 14, 44, 36, PAPER, 1, C.ink, 1.4), rect(14, 26, 14, 14, C.brown, 0.5, C.ink, 0.8), path('M12 26 L21 18 L30 26 Z', C.brown, C.ink, 0.8), stand(38, 44, 0.16, fig(60, C.grey, 'calm')), stand(44, 44, 0.14, fig(60, C.grey, 'calm'))), arrow(56, 32, 66, 32, HL, 2.6),
+    rect(68, 8, 46, 48, '#cfe6f4', 1, C.ink, 1.4), rect(68, 44, 46, 12, '#9fd27e', 0, null), rect(74, 30, 16, 16, C.red, 0.5, C.ink, 0.9), path('M72 30 L82 20 L92 30 Z', '#8a5a34', C.ink, 0.9), path('M86 22 C84 16 90 14 88 8', 'none', C.grey, 1.4), circle(106, 16, 5, C.yellow, C.ink, 1),
+    stand(98, 54, 0.22, fig(60, C.orange, 'laugh', { hairStyle: 'long' })), stand(106, 54, 0.2, fig(60, C.denim, 'laugh')), line('M95 36 l-3 -3 M109 36 l3 -3', C.gold, 1.2), sparkle(72, 12, 3),
+    ...[[30, C.red], [52, C.yellow], [74, C.green], [96, C.purple]].map(([x, c]) => all(circle(x as number, 90, 7, C.skin, C.ink, 1.2), path(`M${(x as number) - 7} 88 C${(x as number) - 7} 80 ${(x as number) + 7} 80 ${(x as number) + 7} 88 C${(x as number) + 3} 85 ${(x as number) - 3} 85 ${(x as number) - 7} 88 Z`, C.hair, null), path(`M${(x as number) - 10} 112 C${(x as number) - 10} 98 ${(x as number) + 10} 98 ${(x as number) + 10} 112 Z`, c as string, C.ink, 1.2))), box(66, 6, 50, 52)),
   'mus.rollspel': all(sky(), ground(100, '#c9d8a0'), rect(84, 46, 30, 54, WOOD, 1, C.ink, 1.4), path('M80 48 L99 30 L118 48 Z', '#8a5a34', C.ink, 1.4), rect(94, 74, 10, 26, '#6e4426', 1, C.ink, 1),
     kid(26, '#8a6a4a', 'laugh', false, 0.58), on(26, 0.58, path('M-14 -64 L14 -64 L10 -70 L-10 -70 Z', '#c9a46a', C.ink, 1.4)), reach(26, 0.58, 1, 40, 84), at(42, 92, 1, path('M-5 -8 L5 -8 L4 2 L-4 2 Z', WOOD, C.ink, 1)),
     kid(58, '#a05a5a', 'smile', true, 0.58), costume(58, 0.58, '#a05a5a'), reach(58, 0.58, -1, 44, 82), greyed(stand(108, 112, 0.36, fig(60, C.purple, 'smile'))), path('M60 10 C66 4 76 4 80 12', 'none', C.gold, 1.4)),
@@ -213,8 +220,8 @@ export const MUSEUM_MOTIFS: Record<string, Svg> = {
     at(38, 80, 1, path('M-6 -10 L6 -10 L7 0 L-7 0 Z', CLAY, C.ink, 1.1)), at(82, 80, 1, path('M-5 -8 C-8 -4 -6 0 0 0 C6 0 8 -4 5 -8 Z', CLAY, C.ink, 1.1)), ellipse(60, 79, 9, 2.4, '#b06040', C.ink, 0.8), path('M54 78 C54 70 66 70 66 78', CLAY2, C.ink, 1)),
   'mus.interaktiv': all(room(), greyed(vitrine(22, 112, 26, 22, 30, vase(22, 82, 0.6))), rect(48, 50, 64, 46, C.dark, 3, C.ink, 1.4), rect(52, 54, 56, 26, SCREEN, 1, null), thumbV(80, 74, 1.6), sparkle(66, 60, 3), sparkle(96, 62, 3),
     circle(66, 88, 5, C.red, C.ink, 1.2), circle(80, 88, 5, C.yellow, C.ink, 1.2), circle(94, 88, 5, C.green, C.ink, 1.2), kid(40, C.orange, 'laugh', true, 0.62), reach(40, 0.62, 1, 64, 86), line('M100 54 q4 4 0 8 M104 50 q7 8 0 16', HL, 1.4), ring(66, 88, 9)),
-  'mus.engagera': all(room(), staff(24, 'laugh', { hairStyle: 'long' }), reach(24, 1, 1, 38, 22), circle(38, 22, 3, C.skin, C.ink, 1.2), bubble(62, 18, 20, 16, qm(62, 23, 11)),
-    ...[[64, C.red], [84, C.green], [104, C.yellow]].map(([x, c]) => all(fig(x as number, c as string, 'laugh', { h: 0.6 }), reach(x as number, 0.6, -1, (x as number) - 6, 48))), sparkle(74, 44, 3), sparkle(96, 42, 3), heart(84, 40, 0.3)),
+  'mus.engagera': all(room(), greyed(...[14, 30, 46].map((x) => fig(x, C.grey, 'sleepy', { h: 0.55 }))), circle(36, 40, 2, 'none', C.grey, 1), circle(40, 33, 3, 'none', C.grey, 1), circle(46, 24, 4, 'none', C.grey, 1), arrow(54, 72, 64, 72, HL, 2.6),
+    ...[[76, C.red], [92, C.green], [108, C.yellow]].map(([x, c]) => all(fig(x as number, c as string, 'laugh', { h: 0.55 }), reach(x as number, 0.55, -1, (x as number) - 4, 40), circle((x as number) - 4, 40, 2, C.skin, C.ink, 1))), sparkle(84, 30, 3), sparkle(100, 28, 3), heart(92, 22, 0.35), box(64, 18, 52, 94)),
 };
 
 /** A small heart (kept local so the file has no extra imports). */
