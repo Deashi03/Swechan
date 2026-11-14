@@ -112,7 +112,6 @@ const bolt2 = (x: number, y: number) => at(x, y, 1, path('M2 -12 L-7 2 L-1 2 L-4
 /** A large villa with a tower, centred on x, standing on y. */
 const villa = (x: number, y: number, s = 1) => at(x, y, s, rect(-24, -26, 48, 26, '#f6efe0', 0, C.ink, 1.4), path('M-28 -26 L0 -40 L28 -26 Z', '#5a7a8a', C.ink, 1.3), rect(14, -44, 12, 18, '#f6efe0', 0, C.ink, 1.3), path('M12 -44 L20 -54 L28 -44 Z', '#5a7a8a', C.ink, 1.2),
   ...[-18, -6, 6].map((c) => win(c, -20, 7, 10)), win(16, -40, 7, 8));
-const dashLine = (x1: number, y1: number, x2: number, y2: number) => line(`M${x1} ${y1} L${x2} ${y2}`, HL, 2, '4 3');
 const heartS = (x: number, y: number) => at(x, y, 1, path('M0 8 C-12 0 -10 -10 -4 -10 C-1 -10 0 -8 0 -6 C0 -8 1 -10 4 -10 C10 -10 12 0 0 8 Z', C.red, C.ink, 1.3));
 const padlock2 = (x: number, y: number) => at(x, y, 1, path('M-7 -4 L-7 -12 C-7 -21 7 -21 7 -12 L7 -4', 'none', C.ink, 3), rect(-11, -5, 22, 18, GOLD, 3, C.ink, 1.6), circle(0, 2, 2.2, C.ink, null), line('M0 2 L0 8', C.ink, 1.8));
 
@@ -242,8 +241,10 @@ export const BUILDING_HISTORY_MOTIFS: Record<string, Svg> = {
     rect(8, 82, 102, 24, '#d9c8a0', 0, C.ink, 1.4), path('M4 82 L114 82 L108 72 L10 72 Z', ROOF, C.ink, 1.3), ...[0, 1, 2, 3].map((i) => all(door(14 + i * 25, 106, 7, 14), win(24 + i * 25, 88, 8, 9))), ring(58, 90, 26), ground),
   'byhi.disponentvilla': all(sky(), path('M4 70 Q60 30 116 70 L116 112 L4 112 Z', GRASS, null), villa(60, 58, 1), tree(24, 64, 0.8), tree(96, 64, 0.8),
     rect(8, 92, 24, 14, '#8e8b84', 0, C.ink, 1), rect(20, 76, 5, 16, BRICK, 0, C.ink, 1), ...[60, 76, 92].map((x) => house(x, 12, 10, FALU, ROOF, 6, 108)), ring(60, 46, 24)),
-  'byhi.industriminne': all(sky(), grass(104), rect(24, 46, 72, 58, BRICK, 0, C.ink, 1.4), path('M20 46 L60 28 L100 46 Z', ROOF, C.ink, 1.3), ...[36, 60, 84].map((x) => archWin(x, 92, 10, 26, false)), rect(86, 14, 8, 32, BRICK2, 0, C.ink, 1.1),
-    fig(12, C.green, 'smile', { h: 0.42 }), fig(108, C.orange, 'smile', { h: 0.42 }), fig(24, C.sky, 'smile', { h: 0.4, hairStyle: 'long' }), sparkle(14, 28, 4, GOLD), sparkle(106, 32, 3, GOLD), ground),
+  'byhi.industriminne': all(sky(), grass(104), rect(10, 50, 60, 54, BRICK, 0, C.ink, 1.4), path('M6 50 L40 32 L74 50 Z', ROOF, C.ink, 1.3), ...[22, 40, 58].map((x) => archWin(x, 90, 9, 24, false)), rect(56, 14, 8, 36, BRICK2, 0, C.ink, 1.1), line('M54 12 L66 12', C.ink, 1.4),
+    rect(14, 98, 24, 8, STONE, 1, C.ink, 1.2), wheel(26, 84, 12), sparkle(10, 66, 3, GOLD), sparkle(42, 66, 3, GOLD),
+    fig(48, C.green, 'smile', { h: 0.32 }), fig(58, C.sky, 'smile', { h: 0.3, hairStyle: 'long' }), fig(70, C.orange, 'smile', { h: 0.36 }), reach(70, 0.36, 1, 78, 82), line('M78 82 L78 66', C.dark, 1.2), path('M78 66 L86 69 L78 72 Z', HL, C.ink, 0.8),
+    greyed(rect(90, 76, 24, 28, BRICK, 0, C.ink, 1.2), rect(104, 56, 6, 20, BRICK2, 0, C.ink, 1), smoke(107, 50, 0.8), path('M88 76 L102 66 L116 76 Z', ROOF, C.ink, 1.1)), cross(98, 34, 0.7), ground),
 
   // ── 2345 Historiska stadsplaner ──
   'byhi.stadsplan': all(room(), rect(4, 80, 112, 32, C.tan, 0, C.ink, 1.2), rot(60, 50, -4, 1, rect(-40, -34, 80, 60, '#fbf8ee', 1, C.ink, 1.4), ...[-28, -12, 4, 20].map((x) => rect(x, -28, 12, 10, '#e6d3b3', 0.5, '#9e978a', 0.8)), ...[-28, -12, 4, 20].map((x) => rect(x, -12, 12, 10, '#e6d3b3', 0.5, '#9e978a', 0.8)), rect(-28, 4, 28, 14, GRASS, 0.5, '#9e978a', 0.8), rect(4, 4, 28, 14, '#e6d3b3', 0.5, '#9e978a', 0.8)),
@@ -269,9 +270,13 @@ export const BUILDING_HISTORY_MOTIFS: Record<string, Svg> = {
 
   // ── 2346 Byggnadsvård ──
   'byhi.byggnadsvård': all(sky(), grass(106), house(14, 64, 50, '#e6c8a0', TILE, 18, 106, all(win(24, 64, 12, 16), win(52, 64, 12, 16))), fig(98, C.denim, 'calm', { h: 0.82 }), reach(98, 0.82, -1, 72, 66), rot(70, 68, -30, 1, rect(-1.4, -4, 2.8, 10, WOOD, 1, C.ink, 0.8), rect(-3, -9, 6, 6, '#3d3f4a', 1, C.ink, 0.8)), heartS(98, 24), sparkle(34, 30, 3)),
-  'byhi.byggnadsminne': all(sky(), grass(106), manor(60, 106, 0.75), at(60, 66, 1.3, path('M0 -14 L12 -10 C12 2 8 8 0 13 C-8 8 -12 2 -12 -10 Z', 'rgba(63,111,181,0.25)', '#3f6fb5', 1.6)), line('M18 106 C18 30 102 30 102 106', '#3f6fb5', 2.6, '5 4'), ground),
-  'byhi.kulturhistorisk': all(sky(), grass(106), house(38, 44, 36, '#e6c8a0', TILE, 14, 106, win(54, 80, 12, 14)), at(18, 40, 1, path('M-8 -12 L8 -12 L8 -10 L1 0 L8 10 L8 12 L-8 12 L-8 10 L-1 0 L-8 -10 Z', '#f3e6c4', C.ink, 1.2), path('M-5 9 L5 9 L0 3 Z', '#e0b23c', null)),
-    at(100, 40, 1, rect(-10, -12, 20, 24, '#f3e6c4', 1, C.ink, 1.2), line('M-6 -6 L6 -6 M-6 -1 L6 -1 M-6 4 L2 4', '#9e978a', 1)), dashLine(26, 46, 44, 66), dashLine(92, 46, 76, 66), sparkle(60, 22, 5, GOLD)),
+  'byhi.byggnadsminne': all(sky(), grass(108), rect(14, 84, 92, 24, STONE, 1, C.ink, 1.6), rect(8, 104, 104, 6, STONE2, 1, C.ink, 1.4), line('M14 92 L106 92', STONE2, 1),
+    manor(60, 84, 0.68), at(60, 98, 1, ellipse(0, 0, 11, 5, '#3f6fb5', GOLD, 1.8), path('M-5 0 L0 -3 L5 0 L0 3 Z', GOLD, null)), path('M44 98 C40 94 40 90 42 88 M76 98 C80 94 80 90 78 88', 'none', GRASS2, 2),
+    ...[[42, 89], [41, 93], [78, 89], [79, 93]].map(([x, y]) => ellipse(x!, y!, 2.4, 1.2, GRASS2, null)), sparkle(18, 30, 4, GOLD), sparkle(102, 28, 4, GOLD), sparkle(60, 14, 3, GOLD)),
+  'byhi.kulturhistorisk': all(sky(), grass(106), house(8, 42, 32, FALU, ROOF, 16, 106, all(win(14, 82, 9, 10), win(34, 82, 9, 10), ...[8, 50].map((x) => rect(x - 1, 74, 3, 32, C.white, 0, null)))), rect(36, 48, 6, 14, BRICK, 0, C.ink, 1), smoke(39, 44, 0.6),
+    fig(60, '#3f6fb5', 'smile', { h: 0.46, hairStyle: 'long', bottom: '#d64545' }), on(60, 0.46, path('M-14 0 L14 0 L18 48 L-18 48 Z', '#d64545', C.ink, 1.6), rect(-8, 6, 16, 36, C.white, 1, null), line('M-14 20 L14 20 M-15 32 L15 32', C.yellow, 2.4)),
+    fig(74, C.dark, 'smile', { h: 0.48 }), on(74, 0.48, path('M-14 -66 L14 -66 L10 -72 L-10 -72 Z', C.dark, C.ink, 1.4), rect(-20, -67, 40, 4, C.dark, 1, C.ink, 1)), sparkle(8, 40, 4, GOLD), sparkle(56, 34, 4, GOLD), sparkle(30, 22, 3, GOLD),
+    greyed(rect(86, 70, 26, 36, C.white, 0, C.ink, 1.4), rect(84, 66, 30, 4, C.white, 0, C.ink, 1.2), rect(90, 76, 18, 8, GLASS, 0, C.ink, 1), door(94, 106, 9, 14, C.grey)), ground),
   'byhi.k-märkt': all(sky(), grass(106), house(26, 56, 40, '#e6c8a0', TILE, 16, 106, all(win(34, 74, 12, 16), win(60, 74, 12, 16))), padlock2(54, 46), greyed(at(100, 96, 1, rect(-8, -12, 16, 20, C.white, 1, C.ink, 1.2))), cross(100, 70, 0.7), ground),
   'byhi.byggnadsantikvarie': all(sky(), house(4, 60, 76, '#e6c8a0', TILE, 16, 112, win(22, 54, 22, 28)), fig(88, '#3f6fb5', 'calm', { hairStyle: 'long', h: 0.92 }), rect(94, 66, 14, 18, '#f3e6c4', 1, C.ink, 1.1), reach(88, 0.92, 1, 100, 76),
     reach(88, 0.92, -1, 54, 64), circle(48, 62, 8, 'rgba(191,227,245,0.5)', C.ink, 1.6), line('M54 68 L58 72', C.ink, 2.4), ground),
