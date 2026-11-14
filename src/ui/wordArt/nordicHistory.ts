@@ -67,7 +67,6 @@ const bust = (x: number, y: number, top: string, hat: Svg = '', s = 1, grey = fa
   path('M-5.4 -1 C-5.4 -8 5.4 -8 5.4 -1 C3 -4 -3 -4 -5.4 -1 Z', grey ? C.grey : C.hair, null), circle(-2, 0, 0.8, C.ink, null), circle(2, 0, 0.8, C.ink, null), hat);
 const bStraw = all(ellipse(0, -4.5, 8.5, 2, '#e8c870', C.ink, 0.9), path('M-4.5 -4.5 C-4.5 -10 4.5 -10 4.5 -4.5 Z', '#e8c870', C.ink, 0.9));
 const bHelm = path('M-6.2 -0.5 C-6.2 -10 6.2 -10 6.2 -0.5 Z', '#a9b0b8', C.ink, 1);
-const bMitre = path('M-5 -4 L-4.5 -10 L0 -17 L4.5 -10 L5 -4 Z', C.white, C.ink, 1);
 const bWig = path('M-6.5 0 C-7.5 -10 7.5 -10 6.5 0 L7 6 L4 5 L4 -1 C2 -4 -2 -4 -4 -1 L-4 5 L-7 6 Z', '#ece8e0', C.ink, 0.9);
 const bHat = path('M-7 -4 L7 -4 L5 -6 L5 -11 L-5 -11 L-5 -6 Z', C.black, C.ink, 0.9);
 // seated figure facing right; local: feet at y 0, head centre (−5, −66)
@@ -93,6 +92,8 @@ const silver = (x: number, y: number, r = 4) => all(circle(x, y, r, C.silver, C.
 const sack = (x: number, y: number, s = 1, col = '#d9c08a') => at(x, y, s, path('M-8 10 C-11 0 -9 -6 -4 -8 L-5 -12 L5 -12 L4 -8 C9 -6 11 0 8 10 Z', col, C.ink, 1.3), line('M-5 -8.5 L5 -8.5', '#8a6a3a', 1.4));
 const ring = (x: number, y: number, r: number) => circle(x, y, r, 'none', HL, 2.6);
 const noSign = (x: number, y: number, r = 8) => all(circle(x, y, r, 'none', RED, 2.6), line(`M${f1(x - r * 0.7)} ${f1(y - r * 0.7)} L${f1(x + r * 0.7)} ${f1(y + r * 0.7)}`, RED, 2.6));
+const xMark = (x: number, y: number, s = 1, col: string = RED) => line(`M${x - 6 * s} ${y - 6 * s} L${x + 6 * s} ${y + 6 * s} M${x + 6 * s} ${y - 6 * s} L${x - 6 * s} ${y + 6 * s}`, col, 2.6 * s);
+const tick = (x: number, y: number, s = 1) => at(x, y, s, circle(0, 0, 7, '#3a9a5a', C.ink, 1.2), path('M-3.2 0 L-0.8 2.6 L3.6 -2.8', 'none', C.white, 1.8));
 const palm = (x: number, y: number, s = 1) => at(x, y, s, ...[-4.6, -1.6, 1.4, 4.4].map((d, i) => rect(d - 1.3, -9 + Math.abs(i - 1.5) * 1.2, 2.6, 9, C.skin, 1.3, C.ink, 0.9)), path('M-5.5 -1 L5.5 -1 L5 5 C4 8 -4 8 -5 5 Z', C.skin, C.ink, 1));
 const roundShield = (x: number, y: number, r = 7, col: string = RED) => all(circle(x, y, r, col, C.ink, 1.3), line(`M${x - r} ${y} L${x + r} ${y} M${x} ${y - r} L${x} ${y + r}`, CREAM, 1.4), circle(x, y, r * 0.3, C.silver, C.ink, 0.9));
 const doc = (x: number, y: number, s = 1, col: string = CREAM, n = 4) => at(x, y, s, path('M-10 -13 L6 -13 L10 -9 L10 13 L-10 13 Z', col, C.ink, 1.4), ...range(n).map((i) => line(`M-7 ${-7 + i * 5} L${i === n - 1 ? 2 : 7} ${-7 + i * 5}`, C.grey, 1.3)));
@@ -196,18 +197,21 @@ export const NORDIC_HISTORY_MOTIFS: Record<string, Svg> = {
   // ── 2402 Nordiska kungadömen ──
   'nord.kungadöme': all(skyBg(), path('M14 108 C10 80 20 58 34 46 C50 34 74 32 92 44 C108 56 112 84 104 108 Z', LAND, C.ink, 1.6), line('M14 108 C10 80 20 58 34 46 C50 34 74 32 92 44 C108 56 112 84 104 108', RED, 1.6, '4 3'),
     castle(60, 96, 0.55), house(28, 100, 0.8), house(92, 100, 0.8), farm(36, 76, 0.7), farm(86, 76, 0.7), crownBig(60, 18, 1), ground),
-  'nord.rikssamling': all(skyBg(), ...[[22, 30, '#e8c88c'], [46, 22, '#c8dca8'], [22, 64, '#c8d8e8'], [46, 56, '#e8c0c0']].map(([x, y, col]) => all(rect(+x! - 11, +y! - 9, 22, 18, col as string, 3, C.ink, 1.2), bust(+x!, +y! - 1, '#8a6a48', '', 0.7))),
-    arrow(62, 44, 74, 44, HL, 3), path('M78 24 L114 24 L114 66 L78 66 Z', LAND, C.ink, 1.6), line('M96 24 L96 66 M78 45 L114 45', C.grey2, 1, '3 3'), crownBig(96, 40, 0.9), king(96, 0.45, ROYAL), ground),
-  'nord.stift': all(rect(4, 4, 112, 108, '#eef3e6', 3, null), path('M12 12 L60 8 L64 40 L40 56 L10 50 Z', '#e8dcc0', C.ink, 1.2), path('M60 8 L110 14 L108 60 L64 40 Z', '#dfe8cc', C.ink, 1.2), path('M10 50 L40 56 L46 108 L8 106 Z', '#e8d0c8', C.ink, 1.2),
-    path('M40 56 L64 40 L108 60 L110 108 L46 108 Z', '#f6e2a0', C.ink, 2), church(80, 96, 0.5, CREAM), bust(66, 76, C.white, bMitre, 1.3), ring(76, 82, 30), ...[[26, 30], [86, 30], [24, 80]].map(([x, y]) => church(x!, y!, 0.25))),
+  'nord.rikssamling': all(skyBg(), ...[[10, 10, '#e8c88c', 'M0 0 L20 2 L22 18 L2 20 Z'], [36, 8, '#c8dca8', 'M0 2 L22 0 L20 20 L0 18 Z'], [10, 36, '#c8d8e8', 'M2 0 L20 2 L22 20 L0 18 Z'], [36, 34, '#e8c0c0', 'M0 0 L20 0 L22 20 L2 22 Z']].map(([x, y, col, d]) => g(`translate(${x} ${y})`, path(d as string, col as string, C.ink, 1.4), house(11, 15, 0.5))),
+    arrow(36, 64, 50, 76, HL, 3),
+    g('translate(52 70)', path('M0 0 L28 0 L28 20 L0 20 Z', '#e8c88c', null), path('M28 0 L56 0 L56 20 L28 20 Z', '#c8dca8', null), path('M0 20 L28 20 L28 40 L0 40 Z', '#c8d8e8', null), path('M28 20 L56 20 L56 40 L28 40 Z', '#e8c0c0', null),
+      line('M28 0 L28 40 M0 20 L56 20', C.grey, 1, '3 3'), rect(0, 0, 56, 40, 'none', 2, C.ink, 2.6), castle(28, 26, 0.32)), crownBig(80, 58, 0.7)),
+  'nord.stift': all(rect(4, 4, 112, 108, '#eef3e6', 3, null), path('M8 10 L56 8 L60 46 L34 60 L8 54 Z', '#e8dcc0', C.ink, 2.4), path('M56 8 L112 12 L112 56 L60 46 Z', '#dfe8cc', C.ink, 2.4), path('M8 54 L34 60 L40 110 L8 110 Z', '#e8d0c8', C.ink, 2.4),
+    path('M34 60 L60 46 L112 56 L112 110 L40 110 Z', '#f6e2a0', C.ink, 2.4), line('M34 60 L60 46 L112 56 L112 110 L40 110 Z', HL, 3, '6 4'), church(80, 94, 0.62, CREAM), ...[[56, 74], [100, 72], [60, 102], [100, 102]].map(([x, y]) => house(x!, y!, 0.6)),
+    church(32, 40, 0.3), church(92, 36, 0.3), church(24, 92, 0.3)),
   'nord.jarl': all(skyBg(), sea(92), longship(98, 100, 0.34), greyed(seated(30, 0.8, '#888', '#888', { throne: true, hat: crownL() })), fig(70, '#2f6a7a', 'smile', { h: 1.05, w: 1.15, bottom: '#3d3f4a' }), on(70, 1.05, cloakL(FUR), beardL('#c4732a'), path('M-10 -60 C-10 -71 10 -71 10 -60 Z', FUR, C.ink, 1.1)), sword(86, 90, 0.9, 10), reach(70, 1.05, 1, 86, 82), ground),
   'nord.tronstrid': all(room('#f2ebdc'), throne(60, 0.6), crownBig(60, 34, 0.8), fig(24, RED, 'angry', { h: 0.9 }), fig(96, SWE, 'angry', { h: 0.9 }), reach(24, 0.9, 1, 46, 38), reach(96, 0.9, -1, 74, 38), angry(60, 18, 0.9),
     greyed(bust(10, 98, '#888', '', 0.9), bust(110, 98, '#888', '', 0.9)), bust(8, 74, RED, '', 0.6), bust(112, 74, SWE, '', 0.6), ground),
   'nord.ledung': all(skyBg(), path('M60 52 C80 44 100 44 116 48 L116 64 L60 64 Z', GRASS, null), farm(74, 56, 0.6), farm(94, 54, 0.6), farm(110, 58, 0.5), sea(90), longship(84, 98, 0.62, false), line('M102 92 L102 66', WOOD2, 2), path('M102 66 L116 70 L102 76 Z', ROYAL, C.ink, 1),
     ...[[20, '#b98a52'], [44, '#8a6a48']].map(([x, col]) => all(farmer(+x!, 0.85, col as string))), sack(32, 92, 0.8), reach(20, 0.85, 1, 30, 84), line('M44 104 L62 70', WOOD2, 2.4), path('M62 70 L70 66 L66 74 Z', WOOD, C.ink, 1), reach(44, 0.85, 1, 54, 86), arrow(56, 100, 66, 100, HL, 2.4), ground),
-  'nord.rusttjänst': all(skyBg(), path('M22 104 L26 84 L18 82 C16 74 24 64 34 64 L66 64 C76 64 82 68 86 74 L96 68 L100 74 L90 82 L84 84 L86 104 L80 104 L76 86 L36 86 L32 104 Z', '#7a5a3a', C.ink, 1.6), path('M86 74 L96 68 L100 74 L90 82 Z', '#6a4a2a', C.ink, 1.2),
-    g('translate(0 -20)', fig(52, '#a9b0b8', 'smile', { h: 0.62, bottom: '#7d858e' }), on(52, 0.62, path('M-11 -56 C-11 -72 11 -72 11 -56 Z', '#a9b0b8', C.ink, 1.3)), rect(36, 56, 8, 22, RED, 1, C.ink, 1), sword(64, 60, 0.7, 30)), path('M38 66 C40 80 64 80 66 66 Z', '#7a5a3a', C.ink, 1.4),
-    at(100, 26, 1, sack(0, 0, 1, GOLD), coin(-8, 10, 4)), noSign(100, 30, 15), ground),
+  'nord.rusttjänst': all(skyBg(), path('M8 104 L12 84 L4 82 C2 74 10 64 20 64 L52 64 C62 64 68 68 72 74 L82 68 L86 74 L76 82 L70 84 L72 104 L66 104 L62 86 L22 86 L18 104 Z', '#7a5a3a', C.ink, 1.6), path('M72 74 L82 68 L86 74 L76 82 Z', '#6a4a2a', C.ink, 1.2),
+    g('translate(-14 -20)', fig(52, '#a9b0b8', 'smile', { h: 0.62, bottom: '#7d858e' }), on(52, 0.62, path('M-11 -56 C-11 -72 11 -72 11 -56 Z', '#a9b0b8', C.ink, 1.3)), rect(36, 56, 8, 22, RED, 1, C.ink, 1), line('M60 74 L74 26', WOOD2, 2.2)), path('M24 66 C26 80 50 80 52 66 Z', '#7a5a3a', C.ink, 1.4),
+    arrow(78, 92, 92, 92, HL, 2.6), king(104, 0.8, ROYAL), line('M114 112 L114 30', WOOD2, 2), path('M114 30 L100 34 L114 40 Z', ROYAL, C.ink, 1), ground),
   'nord.korståg': all(skyBg(), sea(84), path('M90 84 C96 66 106 60 116 60 L116 84 Z', GRASS, C.ink, 1.4), longship(46, 92, 0.55, true, C.white),
     ...[[24, 0.62], [40, 0.66]].map(([x, s]) => all(fig(+x!, C.white, 'calm', { h: +s!, bottom: '#7d858e' }), on(+x!, +s!, path('M-11 -56 C-11 -72 11 -72 11 -56 Z', '#a9b0b8', C.ink, 1.3), line('M0 -38 L0 -10 M-8 -28 L8 -28', RED, 3.4)))).map((k) => g('translate(14 -24)', k)),
     path('M50 30 L50 6 L66 10 L50 16', 'none', C.ink, 1.4), path('M50 6 L66 10 L50 16 Z', C.white, C.ink, 1), line('M55 8 L55 14 M52 11 L60 11', RED, 1.6), arrow(76, 74, 96, 64, HL, 3)),
@@ -229,8 +233,9 @@ export const NORDIC_HISTORY_MOTIFS: Record<string, Svg> = {
     kneel(36, 0.62, '#c8c0b0', '#8d949c'), greyed(rect(48, 62, 16, 12, WOOD2, 1, C.ink, 1)), bust(14, 102, '#6b7a5a', '', 0.9), bust(28, 106, '#7a5a8a', '', 0.9), ground),
   'nord.amnesti': all(room('#efe8dc'), rect(54, 20, 58, 84, '#9a9690', 1, C.ink, 1.6), path('M60 104 L60 30 L86 30 L86 104', 'none', C.dark, 2), ...range(5).map((i) => line(`M${60 + i * 6.5} 30 L${60 + i * 6.5} 104`, '#4a4a52', 2)).map((k) => g('translate(30 0) rotate(0)', k)),
     king(26, 0.95, ROYAL), reach(26, 0.95, 1, 42, 70), palm(42, 66, 1), fig(70, '#c8b89a', 'laugh', { h: 0.85, bottom: '#8d949c' }), chainBroken(56, 94, 0.8), arrow(76, 50, 56, 50, HL, 2.6), ground),
-  'nord.befrielsekrig': all(skyBg(), line('M70 112 L70 22', RED, 2, '5 4'), ...[[16, '#b98a52'], [32, '#8a6a48'], [48, '#3f6fb5']].map(([x, col]) => all(farmer(+x!, 0.85, col as string, 'angry'))), fork(26, 64, 0.9, 20), reach(16, 0.85, 1, 26, 68), line('M56 96 L56 40', WOOD2, 2), path('M56 40 L74 44 L56 52 Z', '#fecc00', C.ink, 1), reach(48, 0.85, 1, 56, 68),
-    greyed(...[[86, 0.8], [104, 0.8]].map(([x, s]) => all(fig(+x!, '#888', 'shock', { h: +s! }), on(+x!, +s!, soldierHelm('#888'))))), arrow(72, 60, 112, 60, HL, 3), chainBroken(30, 30, 0.9), ground),
+  'nord.befrielsekrig': all(skyBg(), path('M4 112 L4 50 C30 44 50 46 70 50 L70 112 Z', LAND, null), line('M70 112 L70 30', RED, 2, '5 4'), poleFlag(16, 104, 'se', 18),
+    fig(30, '#a0507a', 'laugh', { h: 0.8, hairStyle: 'long' }), fig(48, SWE, 'laugh', { h: 0.85 }), fig(62, C.green, 'laugh', { h: 0.55 }), reach(30, 0.8, 1, 36, 22), reach(48, 0.85, -1, 44, 22), chainBroken(30, 14, 1.1),
+    greyed(...[[88, 0.8], [106, 0.8]].map(([x, s]) => all(fig(+x!, '#888', 'shock', { h: +s! }), on(+x!, +s!, soldierHelm('#888'))))), greyed(poleFlag(112, 60, 'grey', 14)), arrow(74, 104, 114, 104, HL, 3), ground),
 
   // ── 2404 Svensk stormaktstid ──
   'nord.stormaktstid': all(nordicMap('#e8e2d0'), path('M58 4 L116 4 L116 74 C104 78 96 70 92 60 C88 50 80 44 76 34 C70 26 62 18 58 4 Z', SWE, C.ink, 1.4), path('M4 40 C20 36 36 40 44 50 C46 60 46 72 42 82 C32 92 18 92 4 96 Z', SWE, C.ink, 1.4), path('M30 104 C44 100 58 100 74 98 L80 112 L28 112 Z', SWE, C.ink, 1.4),
@@ -244,8 +249,9 @@ export const NORDIC_HISTORY_MOTIFS: Record<string, Svg> = {
   'nord.regalskepp': all(skyBg(), sea(86), bigShip(60, 92, 0.95, '#6a3a24', 2, SWE)),
   'nord.utskrivning': all(skyBg(), farm(100, 56, 0.9), fig(26, '#2f4a7a', 'calm', { h: 1.0, bottom: '#e6d3b3' }), on(26, 1, tricornL('#2f4a7a')), doc(42, 66, 0.7), reach(26, 1, 1, 40, 66),
     fig(62, '#b98a52', 'frown', { h: 0.9, bottom: '#6b5a44' }), musket(74, 74, 1, 0), reach(62, 0.9, 1, 74, 72), ring(62, 74, 26), fig(98, '#a0507a', 'frown', { h: 0.85, hairStyle: 'long', bottom: '#6b5a44' }), tear(94, 52), fig(112, '#8a6a48', 'frown', { h: 0.6 }), ground),
-  'nord.landvinning': all(rect(4, 4, 112, 108, SEA, 3, null), path('M4 4 L60 4 L56 50 L4 60 Z', SWE, C.ink, 1.6), path('M60 4 L116 4 L116 60 L56 50 Z', '#c9ced4', C.ink, 1.4), path('M4 60 L56 50 L60 90 L4 100 Z', '#f2c14e', C.ink, 2), path('M56 50 L116 60 L116 100 L60 90 Z', '#c9ced4', C.ink, 1.4),
-    line('M4 60 L56 50 L60 90 L4 100', SWE, 2, '5 3'), arrow(30, 34, 30, 70, HL, 3.4), poleFlag(42, 88, 'se', 14)),
+  'nord.landvinning': all(rect(4, 4, 112, 108, SEA, 3, null), path('M8 8 L52 8 L52 56 L8 56 Z', '#c9ced4', C.ink, 1.2), path('M8 8 L52 8 L52 30 L8 34 Z', SWE, C.ink, 1.6),
+    arrow(56, 32, 66, 32, HL, 3), path('M70 8 L114 8 L114 56 L70 56 Z', '#c9ced4', C.ink, 1.2), path('M70 8 L114 8 L114 52 L70 56 Z', SWE, C.ink, 1.6), path('M70 34 L114 30 L114 52 L70 56 Z', '#f2c14e', null), line('M70 34 L114 30', C.white, 1.4, '3 3'), rect(70, 8, 44, 48, 'none', 0, SWE, 2.6),
+    poleFlag(30, 30, 'se', 10), poleFlag(92, 52, 'se', 12), tick(92, 84, 1.4)),
   'nord.abdikera': all(room('#f2ebdc'), throne(28, 0.75), at(28, 70, 0.7, rect(-14, 0, 28, 6, '#b23a3a', 2, C.ink, 1)), crownBig(28, 64, 0.5), fig(80, ROYAL, 'calm', { h: 0.95, hairStyle: 'long', bottom: ROYAL }), on(80, 0.95, chainL()), reach(80, 0.95, -1, 52, 64), palm(52, 62, 0.8), arrow(88, 104, 112, 104, HL, 2.6), ring(28, 64, 13), ground),
   'nord.reduktion': all(skyBg(), manor(30, 92, 0.6), field(8, 96, 44, 12), fig(26, '#5a6a80', 'frown', { h: 0.55, bottom: '#3d3f4a' }), coin(48, 48, 4), castle(92, 92, 0.42), crownBig(92, 30, 0.6), path('M54 66 C64 56 70 56 78 62', 'none', HL, 3), path('M76 56 L80 64 L72 66 Z', HL, HL, 1),
     farm(64, 104, 0.6), ...range(5).map((i) => coin(80 + i * 8, 108 - (i % 2) * 2, 3.4)), ground),
@@ -265,21 +271,24 @@ export const NORDIC_HISTORY_MOTIFS: Record<string, Svg> = {
 
   // ── 2406 Sverige under 1800-talet ──
   'nord.personalunion': all(skyBg(), king(60, 0.75, ROYAL), poleFlag(16, 108, 'se', 18), chamberHouse(32, 104, SWE), poleFlag(104, 108, 'no', 18), chamberHouse(88, 104, '#ba0c2f'), path('M48 42 L36 70 M72 42 L84 70', 'none', GOLD, 2.4), line('M60 76 L60 112', C.grey, 2, '4 4'), ground),
-  'nord.agrarsamhälle': all(skyBg(), path('M4 54 C40 46 80 46 116 52 L116 112 L4 112 Z', GRASS, null), field(8, 66, 40, 18), field(56, 62, 52, 16, '#d8c070'), field(14, 90, 36, 14, '#c8dca0'), farm(62, 100, 0.8), farm(100, 100, 0.8), farm(36, 60, 0.6),
-    farmer(84, 0.6, '#b98a52'), farmer(28, 0.55, '#a0507a'), greyed(...[0, 1, 2].map((i) => rect(96 + i * 6, 36 - i * 2, 5, 12 + i * 2, '#888', 0.5, C.ink, 0.8))), ground),
+  'nord.agrarsamhälle': all(skyBg(), path('M4 30 C40 24 80 24 116 28 L116 112 L4 112 Z', GRASS, null), field(6, 34, 34, 18), field(44, 32, 30, 16, '#d8c070'), field(78, 32, 36, 18, '#c8dca0'), field(6, 58, 28, 20, '#c8dca0'), field(80, 58, 34, 20), field(6, 86, 40, 22, '#d8c070'), field(72, 86, 42, 22, '#c8dca0'),
+    ...[[44, 62], [56, 58], [68, 64], [50, 76], [64, 80]].map(([x, y]) => farm(x!, y!, 0.55)), ...[[20, 46], [60, 44], [96, 44], [18, 72], [96, 72], [24, 100], [92, 100], [58, 100]].map(([x, y]) => bust(x!, y!, '#b98a52', bStraw, 0.8)),
+    at(36, 100, 0.5, ellipse(0, 0, 10, 6, C.white, C.ink, 1.2), circle(-4, -1, 2, C.dark, null), circle(10, -2, 4, C.white, C.ink, 1.2))),
   'nord.laga-skifte': all(rect(4, 4, 112, 108, '#eef3e6', 3, null), greyed(...range(9).map((i) => rect(8 + i * 5, 14, 4, 34, i % 2 ? '#bbb' : '#ddd', 0, C.ink, 0.5)), ...range(9).map((i) => rect(8 + i * 5, 52, 4, 30, i % 2 ? '#ddd' : '#bbb', 0, C.ink, 0.5)), farm(30, 92, 0.5), farm(40, 98, 0.5), farm(22, 100, 0.5)),
     arrow(56, 58, 66, 58, HL, 3), rect(70, 12, 42, 30, FIELD, 2, C.ink, 1.2), rect(70, 46, 20, 60, '#c8dca0', 2, C.ink, 1.2), rect(92, 46, 20, 60, '#e0c890', 2, C.ink, 1.2), farm(92, 34, 0.55), farm(80, 70, 0.55), farm(104, 96, 0.55)),
   'nord.brännvin': all(room(), rect(4, 86, 112, 26, WOOD, 0, C.ink, 1.2), bottle(48, 70, 1.6), shotGlass(78, 80, 1.6), potato(92, 96, 1), potato(104, 98, 0.9), grain(22, 92, 1.4), ground),
   'nord.husbehovsbränning': all(room('#efe4cf'), rect(4, 4, 30, 108, '#d8c8a8', 0, null), flameS(46, 104, 0.8), still(46, 96, 1.2), bottle(78, 100, 0.8), ...[[96, 104], [104, 100], [110, 106]].map(([x, y]) => potato(x!, y!, 0.8)), fig(22, '#b98a52', 'smile', { h: 0.8, bottom: '#6b5a44' }), farm(98, 40, 0.8)),
-  'nord.representationsreform': all(room('#f2ebdc'), greyed(...[[14, bWig], [30, ''], [14, bHat], [30, bStraw]].map(([h], i) => all(rect(6 + (i % 2) * 18, 30 + Math.floor(i / 2) * 34, 16, 30, '#ddd', 2, C.ink, 1), bust(14 + (i % 2) * 18, 46 + Math.floor(i / 2) * 34, '#888', h as string, 0.9)))),
-    arrow(46, 62, 62, 62, HL, 3), chamber(90, 50, 0.6, [SWE]), chamber(90, 96, 0.6, [RED]), num(112, 46, '1', 9), num(112, 92, '2', 9), cal(26, 14, '1866', 0.6)),
+  'nord.representationsreform': all(room('#f2ebdc'), rect(6, 22, 42, 76, C.white, 3, C.ink, 1.4), ...[[16, 40, '#2f4a7a', bWig], [38, 40, C.black, ''], [16, 76, '#5a6a80', bHat], [38, 76, '#b98a52', bStraw]].map(([x, y, col, h]) => bust(+x!, +y!, col as string, h as string, 1.2)),
+    xMark(27, 60, 2.6), doc(60, 34, 1.1), seal(66, 42, 0.9), path('M48 64 C58 76 66 76 74 66', 'none', HL, 4), path('M70 60 L78 64 L72 72 Z', HL, HL, 1),
+    chamber(96, 58, 0.48, [SWE]), chamber(96, 96, 0.48, [RED]), line('M78 74 L114 74', C.grey2, 1.4)),
   'nord.tvåkammarriksdag': all(room('#f2ebdc'), rect(8, 30, 104, 78, '#ece4d4', 3, C.ink, 1.4), path('M8 30 L60 8 L112 30 Z', STONE, C.ink, 1.4), line('M60 30 L60 108', C.ink, 2), chamber(34, 94, 0.62, [SWE]), chamber(86, 94, 0.62, [RED]), circle(34, 48, 8, C.white, C.ink, 1.2), num(34, 52, '1', 10), circle(86, 48, 8, C.white, C.ink, 1.2), num(86, 52, '2', 10)),
 
   // ── 2407 Nordens moderna utveckling ──
   'nord.ockupation': all(skyBg('#e6e3dc'), house(20, 70, 1.6), house(100, 70, 1.6, '#e0c060'), ...[[50, 0.85], [66, 0.85], [82, 0.85]].map(([x, s]) => all(fig(+x!, '#5b6650', 'calm', { h: +s!, bottom: '#4a5240' }), on(+x!, +s!, soldierHelm()))), poleFlag(96, 104, 'grey', 16), arrow(28, 104, 44, 104, HL, 2.4),
     fig(14, '#c84a3c', 'frown', { h: 0.6, hairStyle: 'long' }), fig(110, SWE, 'frown', { h: 0.55 }), ground),
-  'nord.neutralitetspolitik': all(skyBg(), ellipse(22, 74, 18, 32, 'rgba(214,69,69,0.12)', RED, 1.4), ellipse(98, 74, 18, 32, 'rgba(63,111,181,0.12)', SWE, 1.4), ...[[16, 60], [28, 72], [16, 88]].map(([x, y]) => bust(x!, y!, RED, '', 0.9)), ...[[92, 60], [104, 72], [92, 88]].map(([x, y]) => bust(x!, y!, SWE, '', 0.9)),
-    fig(60, '#fecc00', 'calm', { h: 0.85, bottom: '#006aa7' }), reach(60, 0.85, -1, 44, 70), reach(60, 0.85, 1, 76, 70), palm(44, 66, 0.8), palm(76, 66, 0.8), doc(60, 20, 0.9), at(60, 20, 0.5, path('M-8 0 L-3 5 L8 -6', 'none', '#3a9a5a', 3)), ground),
+  'nord.neutralitetspolitik': all(rect(4, 4, 112, 108, SEA, 3, null), path('M4 30 L34 26 L36 112 L4 112 Z', '#e8c0c0', C.ink, 1.4), path('M86 26 L116 30 L116 112 L84 112 Z', '#c8d8e8', C.ink, 1.4), path('M42 40 L78 40 L80 108 L40 108 Z', '#fff4c8', C.ink, 2.4),
+    ...[[12, 50], [24, 70], [12, 90]].map(([x, y]) => bust(x!, y!, RED, bHelm, 0.9)), ...[[108, 50], [96, 70], [108, 90]].map(([x, y]) => bust(x!, y!, SWE, bHelm, 0.9)), line('M30 18 C50 6 70 6 90 18', RED, 2.4, '4 3'), bolt(60, 14, 0.9),
+    poleFlag(46, 62, 'se', 10), ellipse(62, 90, 14, 4, WOOD, C.ink, 1.2), bust(54, 80, '#2f4a7a', '', 0.8), bust(70, 80, '#2f4a7a', '', 0.8), doc(62, 62, 0.7), noSign(62, 30, 8)),
   'nord.rekordåren': all(skyBg(), block(64, 112, 48, 72), car(30, 106, 1), tv(46, 62, 1.1), fig(18, '#d64545', 'laugh', { h: 0.7, hairStyle: 'long' }), growth(76, 34, 0.7), cal(28, 22, '1960', 0.7), ground),
   'nord.Nordiska-rådet': all(room(), ...(['dk', 'fi', 'is', 'no', 'se'] as Fl[]).map((k, i) => flag(10 + i * 21, 12, k, 18)), ellipse(60, 84, 48, 12, '#b98a52', C.ink, 1.6), line('M20 92 L20 112 M100 92 L100 112', WOOD2, 3),
     ...[[18, 70, RED], [38, 64, '#003580'], [60, 62, '#02529c'], [82, 64, '#ba0c2f'], [102, 70, '#006aa7']].map(([x, y, col]) => bust(+x!, +y!, col as string, '', 1.3)), doc(48, 84, 0.4), doc(72, 84, 0.4)),
