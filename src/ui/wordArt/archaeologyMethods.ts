@@ -66,8 +66,6 @@ const qm = (x: number, y: number, size = 14, col: string = C.accent) => T(x, y, 
 const ex = (x: number, y: number, size = 14, col: string = C.red) => T(x, y, '!', size, col);
 const check = (x: number, y: number, s = 1, col: string = OK) => at(x, y, s, circle(0, 0, 8, C.white, col, 1.6), line('M-4 0 L-1 3 L4 -3', col, 2.2));
 const cross = (x: number, y: number, s = 1, col: string = C.red) => at(x, y, s, circle(0, 0, 8, C.white, col, 1.6), line('M-3.5 -3.5 L3.5 3.5 M3.5 -3.5 L-3.5 3.5', col, 2.2));
-const think = (x: number, y: number, rx: number, ry: number, inner: Svg, tx: number, ty: number) => { const dx = x - tx, dy = y + ry * 0.6 - ty; return all(
-  circle(f1(tx + dx * 0.2), f1(ty + dy * 0.2), 2, C.white, C.ink, 1.1), circle(f1(tx + dx * 0.42), f1(ty + dy * 0.42), 3, C.white, C.ink, 1.2), ellipse(x, y, rx, ry, C.white, C.ink, 1.5), inner); };
 const say = (x: number, y: number, w: number, h: number, inner: Svg, tx: number, ty: number) => all(
   path(`M${f1(x - 4)} ${f1(y + h / 2 - 1)} L${tx} ${ty} L${f1(x + 4)} ${f1(y + h / 2 - 1)} Z`, C.white, C.ink, 1.4), rect(x - w / 2, y - h / 2, w, h, C.white, 6, C.ink, 1.6), line(`M${f1(x - 3.4)} ${f1(y + h / 2)} L${f1(x + 3.4)} ${f1(y + h / 2)}`, C.white, 2.4), inner);
 const glow = (x: number, y: number, r: number, col = 'rgba(242,193,78,0.35)') => circle(x, y, r, col, null);
@@ -113,8 +111,6 @@ const pollenG = (x: number, y: number, r: number, col: string = C.yellow, kind =
   : line(`M${x - r * 0.5} ${y} L${x + r * 0.5} ${y} M${x} ${y - r * 0.5} L${x} ${y + r * 0.5}`, '#c99a2a', 1));
 const seed = (x: number, y: number, s = 1, col = '#d9b25a', r = 0) => rot(x, y, r, s, ellipse(0, 0, 4, 2.4, col, C.ink, 0.9), line('M-2.5 0 L2.5 0', 'rgba(0,0,0,0.3)', 0.7));
 const rings = (x: number, y: number, r: number, widths: number[], col = '#e9c98f') => { let rr = r; const out: Svg[] = [circle(x, y, r, col, '#7a4a24', 2.4)]; for (const w of widths) { rr -= w; if (rr > 1) out.push(circle(x, y, f1(rr), 'none', '#a8784a', 1)); } return all(...out, circle(x, y, 1.6, '#7a4a24', null)); };
-const lawBook = (x: number, y: number, s = 1, col = '#7a3b3b') => at(x, y, s, rect(-10, -13, 20, 26, col, 2, C.ink, 1.3), line('M-7 -13 L-7 13', 'rgba(0,0,0,0.25)', 1.4), rect(-3, -6, 10, 7, GOLD, 1, null));
-const shieldS = (x: number, y: number, s = 1, col: string = C.navy, inner: Svg = '') => at(x, y, s, path('M0 -16 L14 -11 C14 4 8 12 0 17 C-8 12 -14 4 -14 -11 Z', col, C.ink, 1.6), inner);
 const govB = (x: number, y: number, s = 1, col: string = '#d8cfb8') => at(x, y, s,
   rect(-22, -6, 44, 6, col, 0.5, C.ink, 1.3), ...[-16, -8, 0, 8, 16].map((d) => rect(d - 2.5, -30, 5, 24, col, 0.5, C.ink, 1.1)),
   rect(-22, -34, 44, 4, col, 0.5, C.ink, 1.2), path('M-24 -34 L0 -46 L24 -34 Z', col, C.ink, 1.3));
@@ -132,13 +128,17 @@ const pegs = (pts: [number, number][]) => all(...pts.map(([px, py]) => all(line(
 
 export const ARCHAEOLOGY_METHOD_MOTIFS: Record<string, Svg> = {
   // ── 2301 Utgrävningar ──
-  /** arkeologi: the science of the past – an archaeologist studies a pot through a magnifier; below, the ground hides shards, bones and an old wall. */
-  'arkm.arkeologi': all(bg(SKY), rect(4, 80, 112, 32, SOIL, 0, null), turfTop(4, 80, 112), shard(22, 94, 1), bone(52, 100, 0.9, 10), skull(92, 96, 1), rect(70, 100, 10, 6, STONE, 1, C.ink, 1), rect(80, 102, 10, 6, STONE, 1, C.ink, 1),
-    arch(36, 0.62, 'smile', 77), reach(36, 0.62, 1, 58, 50, 77), rect(62, 60, 20, 4, WOOD, 1, C.ink, 1.1), line('M72 64 L72 80', WOOD, 2.4), pot(72, 60, 0.95), lens(62, 46, 1.1), reach(36, 0.62, -1, 20, 58, 77), trowel(20, 60, 0.7, 180)),
-  /** arkeologisk: a find handled the archaeologist's way – on a tray with tag, trowel and brush; grey: the same pot on an ordinary kitchen shelf. */
-  'arkm.arkeologisk': all(bg(), rect(10, 70, 64, 10, '#c9a37a', 2, C.ink, 1.3), pot(34, 70, 1.1), rect(50, 56, 16, 10, C.white, 1, C.ink, 1), T(58, 64, '12', 7, C.ink), line('M50 61 L44 58', C.ink, 0.8),
-    trowel(18, 90, 0.9, -60), brush(62, 98, 0.9, 60), lens(66, 28, 1.2), dashed('M10 84 L74 84', SOIL2, 1),
-    greyed(rect(84, 60, 30, 3, WOOD, 0.5, C.ink, 1), pot(92, 60, 0.6), rect(102, 50, 8, 10, C.white, 1, C.ink, 1), rect(84, 86, 30, 3, WOOD, 0.5, C.ink, 1), line('M86 63 L86 110 M112 63 L112 110', WOOD, 2)), ground),
+  /** arkeologi: the science itself, with no person – a ring of its three works around an hourglass of the past: digging in the soil (trowel), the finds (pot and bone) and the analysis (microscope), joined by arrows. */
+  'arkm.arkeologi': all(bg(), circle(60, 60, 46, '#fbf6ea', C.ink, 1.6), glow(60, 60, 18), hourglass(60, 60, 0.9),
+    rect(36, 18, 48, 22, SOIL2, 3, C.ink, 1.2), turfTop(36, 18, 48), trowel(64, 32, 0.8, 30), shard(46, 32, 0.7),
+    pot(28, 96, 0.8), bone(30, 74, 0.6, -30), microscope(94, 96, 1.1), tube(98, 72, 0.8),
+    path('M84 32 C96 40 102 52 102 62', 'none', C.accent, 1.8), arrow(102, 58, 102, 64, C.accent, 1.6), path('M80 104 C68 110 52 110 42 104', 'none', C.accent, 1.8), arrow(46, 106, 40, 103, C.accent, 1.6),
+    path('M18 70 C18 54 24 42 36 34', 'none', C.accent, 1.8), arrow(32, 37, 37, 33, C.accent, 1.6)),
+  /** arkeologisk: the same kind of pot two ways – coloured, an excavated pot still half in the soil of the trench, with string grid, find number and trowel; grey: a new, clean pot on an ordinary table. */
+  'arkm.arkeologisk': all(bg(), line('M62 10 L62 110', C.grey2, 1.6, '4 3'), rect(6, 56, 52, 52, SOIL2, 2, C.ink, 1.3), line('M6 72 L58 72 M6 90 L58 90 M24 56 L24 108 M42 56 L42 108', C.white, 1),
+    rot(32, 96, -20, 1.1, path('M-8 0 C-14 -6 -14 -16 -7 -20 L-6 -24 L6 -24 L7 -20 C14 -16 14 -6 8 0 Z', CLAY, C.ink, 1.1), path('M-6 -8 L2 -12 L6 -6 Z', '#7a5a3a', null), line('M-10 -16 L-2 -18', '#7a5a3a', 2)),
+    path('M6 96 C16 90 28 98 58 92 L58 108 L6 108 Z', SOIL, null), rect(42, 34, 16, 11, C.white, 1, C.ink, 1), T(50, 43, '12', 7, C.ink), line('M50 45 L46 62', C.ink, 0.8), trowel(14, 52, 0.8, 200),
+    greyed(rect(68, 88, 44, 4, WOOD, 1, C.ink, 1.2), line('M72 92 L72 110 M108 92 L108 110', WOOD, 2.4), pot(90, 88, 1.1, '#e08a5a'), sparkle(104, 62, 4, GREY)), ground),
   /** gräva ut: the soil is carried away bucket by bucket, and the stone foundation of a whole house comes out; the left part is still covered. */
   'arkm.gräva-ut': all(bg(SKY), rect(4, 66, 112, 46, SOIL, 0, null), turfTop(4, 66, 40), path('M44 66 L116 66 L116 112 L44 112 Z', SOIL2, null),
     rect(50, 88, 60, 18, '#d9c08f', 0, C.ink, 1.1), ...[52, 60, 68, 76, 84, 92, 100].map((x) => rect(x, 84, 7, 5, STONE, 1, C.ink, 0.9)), ...[52, 60, 68, 76, 84, 92, 100].map((x) => rect(x, 104, 7, 5, STONE, 1, C.ink, 0.9)),
@@ -234,11 +234,14 @@ export const ARCHAEOLOGY_METHOD_MOTIFS: Record<string, Svg> = {
   /** artefakt: things made by people – a stone axe and a pot are coloured; grey: an ordinary stone that nature made. */
   'arkm.artefakt': all(bg(), rect(27, 34, 6, 40, WOOD, 2, C.ink, 1.1), axeStone(30, 42, 1.6, '#8a8f99'), pot(68, 86, 1.4), check(48, 22, 1.1), bead(40, 92, C.red), bead(46, 94, C.denim), bead(52, 92, C.yellow),
     greyed(path('M86 98 C84 88 94 82 104 84 C114 86 114 98 108 102 C100 106 88 106 86 98 Z', STONE, C.ink, 1.2)), cross(98, 70, 0.9, GREY), ground),
-  /** fornfynd: an old bronze axe in the ground is protected – the law book and a shield stand over it. */
-  'arkm.fornfynd': all(bg(), rect(4, 70, 112, 42, SOIL2, 0, null), line('M4 70 L116 70', C.ink, 1.2), axeBronze(46, 92, 1.4), glow(46, 92, 16), lawBook(84, 40, 1.3), shieldS(36, 38, 1.2, C.navy, line('M-5 0 L-1 4 L6 -4', C.white, 2.4)), arrow(38, 58, 42, 76, C.navy, 2)),
-  /** lösfynd: an axe lies alone on a field with question marks around it; grey: the same axe in a grave beside a skeleton, where its context is known. */
-  'arkm.lösfynd': all(bg(SKY), rect(4, 70, 76, 42, '#c9a37a', 0, null), axeStone(40, 90, 1.4), qm(20, 60, 14), qm(62, 56, 14), qm(40, 44, 12),
-    greyed(rect(84, 70, 32, 42, SOIL2, 0, null), path('M88 78 L112 78 L112 108 L88 108 Z', '#d9c08f', C.ink, 1), skull(100, 84, 0.6), line('M100 88 L100 104', '#efe6d2', 2.4), axeStone(106, 100, 0.5)), ground),
+  /** fornfynd: a very old bronze axe comes out of the ground, and nobody owns it – the owner above it is only a dashed outline with a question mark; grey: a new key with its owner holding out his hand for it. */
+  'arkm.fornfynd': all(bg(), line('M68 10 L68 110', C.grey2, 1.6, '4 3'), rect(4, 76, 62, 36, SOIL2, 0, null), line('M4 76 L66 76', C.ink, 1.2), axeBronze(34, 94, 1.3), glow(34, 94, 14), hourglass(56, 92, 0.4),
+    dashed('M27 26 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 M24 66 C24 44 44 44 44 66', GREY, 1.6), qm(34, 31, 11, C.accent),
+    greyed(circle(80, 100, 4, GOLD, C.ink, 1.3), line('M84 100 L98 100 M94 100 L94 104 M98 100 L98 104', C.ink, 1.8), fig(102, C.denim, 'smile', { h: 0.62 }), reach(102, 0.62, -1, 90, 92)), ground),
+  /** lösfynd: one axe lies all alone on a wide empty field – no grave, no house, nothing around it, only question marks; grey: the same axe inside a grave beside a skeleton, where its place is known. */
+  'arkm.lösfynd': all(bg(SKY), line('M62 10 L62 110', C.grey2, 1.6, '4 3'), rect(4, 60, 56, 52, '#c9a37a', 0, null), ...[72, 86, 100].map((y) => line(`M4 ${y} L60 ${y - 3}`, '#a8845a', 1.2)),
+    axeStone(32, 88, 1.1), dashed('M16 88 a16 10 0 1 0 32 0 a16 10 0 1 0 -32 0', C.accent, 1.4), qm(14, 46, 13), qm(32, 36, 13), qm(50, 46, 13),
+    greyed(rect(64, 60, 52, 52, SOIL2, 0, null), path('M70 70 L110 70 L110 106 L70 106 Z', '#d9c08f', C.ink, 1.2), skull(80, 80, 0.8), line('M80 86 L80 100 M80 90 L74 96 M80 90 L86 96 M80 100 L76 106 M80 100 L84 106', '#efe6d2', 2.2), axeStone(98, 92, 0.6), pot(100, 82, 0.4), check(90, 48, 0.9, GREY)), ground),
   /** skattfynd: a broken clay pot in the soil spills a heap of shining silver coins and a ring. */
   'arkm.skattfynd': all(bg(), rect(4, 60, 112, 52, SOIL2, 0, null), line('M4 60 L116 60', C.ink, 1.2), rot(42, 96, -30, 1.4, path('M-8 0 C-14 -6 -14 -16 -7 -20 L-6 -24 L6 -24 L7 -20 C14 -16 14 -6 8 0 Z', CLAY, C.ink, 1), line('M-10 -14 L10 -14', '#8a4a24', 0.8)),
     ...[[58, 96, 5], [68, 100, 5], [62, 104, 4.4], [78, 102, 5], [72, 92, 4.4], [86, 106, 4.4], [54, 106, 4.4], [82, 94, 4]].map(([x, y, r]) => coin(x!, y!, r!)), circle(94, 98, 5, 'none', SILVER, 2.6),
@@ -264,14 +267,16 @@ export const ARCHAEOLOGY_METHOD_MOTIFS: Record<string, Svg> = {
     at(58, 30, 1, coin(0, 0, 4)), path('M80 84 C66 94 54 94 44 84', 'none', OK, 2.2), arrow(48, 88, 42, 82, OK, 2), banknote(62, 96, 0.9), ground),
 
   // ── 2304 Datering av föremål ──
-  /** datering: the pot goes in, and out comes its age – a tag showing about 950 years, with a check. */
-  'arkm.datering': all(bg(), pot(26, 80, 1.3), arrow(46, 62, 62, 62, C.accent, 2.6), hourglass(56, 34, 0.7), rect(68, 46, 44, 32, C.white, 3, C.ink, 1.4), T(90, 68, '950', 15, C.navy), circle(70, 48, 2, C.ink, null), check(104, 88, 1), ground),
+  /** datering: an old pot with a question mark goes through the magnifier and comes out with its age – an hourglass and a rough bracket on a time line, without any exact year. */
+  'arkm.datering': all(bg(), pot(24, 70, 1.2), qm(24, 30, 16), lens(48, 56, 1.3), arrow(62, 62, 74, 62, C.accent, 2.4), hourglass(94, 40, 0.9),
+    line('M70 90 L114 90', C.ink, 2), line('M74 86 L74 94 M86 86 L86 94 M98 86 L98 94 M110 86 L110 94', C.ink, 1.4), path('M84 82 C84 76 100 76 100 82', 'none', C.accent, 2.4), rect(84, 86, 16, 8, 'rgba(228,87,46,0.25)', 2, null), ground),
   /** relativ datering: two pots in two layers – the lower one is older (big hourglass), the upper one younger; but the years are only question marks. */
   'arkm.relativ-datering': all(bg(), profile(10, 30, 70, [[SOIL2, 36], [CULT, 40]]), pot(30, 62, 0.8, '#d98a4e'), pot(58, 100, 0.8, '#9a5a30'),
     hourglass(96, 44, 0.45), hourglass(96, 86, 0.7), line('M86 40 L76 46 M86 84 L76 90', GREY, 1.2), qm(30, 22, 12), qm(58, 22, 12), arrow(96, 74, 96, 58, C.accent, 2)),
-  /** absolut datering: an arrow from the find lands on a timeline with years; a bracket marks 900–1000. */
-  'arkm.absolut-datering': all(bg(), pot(28, 54, 1.1), line('M8 84 L112 84', C.ink, 2.2), ...[[14, '0'], [50, '500'], [86, '1000']].map(([x, n]) => all(line(`M${x} 80 L${x} 88`, C.ink, 1.8), T(x as number, 100, n as string, 8, C.ink))),
-    rect(80, 78, 12, 12, 'rgba(228,87,46,0.25)', 1, C.accent, 1.6), arrow(40, 52, 82, 74, C.accent, 2.4), check(104, 40, 1.1)),
+  /** absolut datering: coloured – the find gets an exact year, the number 950 on a time line with year marks; grey: in the layers there is only an order, older below and younger above, with no number. */
+  'arkm.absolut-datering': all(bg(), line('M66 10 L66 110', C.grey2, 1.6, '4 3'), pot(32, 44, 1), arrow(32, 50, 32, 66, C.accent, 2), rect(12, 68, 40, 18, C.white, 3, C.accent, 2), T(32, 82, '950', 14, C.navy),
+    line('M8 98 L60 98', C.ink, 2), ...[[12, '900'], [52, '1000']].map(([x, n]) => all(line(`M${x} 94 L${x} 102`, C.ink, 1.4), T(x as number, 110, n as string, 7, C.ink))), line('M32 94 L32 102', C.accent, 2.4),
+    greyed(rect(72, 34, 40, 34, SOIL2, 0, C.ink, 1), rect(72, 68, 40, 34, CULT, 0, C.ink, 1), pot(86, 60, 0.6), pot(96, 94, 0.6), arrow(106, 92, 106, 44, C.ink, 1.8), qm(92, 24, 12, GREY))),
   /** isotop: two atoms of the same kind – the same colours, but one has an extra particle and is heavier, so the scale tips. */
   'arkm.isotop': all(bg(), path('M60 30 L60 92', 'none', C.ink, 2), path('M52 100 L68 100 L60 92 Z', GREY, C.ink, 1.2), line('M24 42 L96 54', C.ink, 2.4),
     line('M28 43 L28 56 M92 53 L92 66', C.ink, 1), at(28, 66, 1, circle(-4, -2, 4, C.red, C.ink, 0.8), circle(4, -2, 4, GREY, C.ink, 0.8), circle(0, 5, 4, C.red, C.ink, 0.8)),
@@ -390,19 +395,23 @@ export const ARCHAEOLOGY_METHOD_MOTIFS: Record<string, Svg> = {
   /** lämning: what is left of a house in the landscape – a low square of foundation stones in the grass, a broken wall, a grave stone. */
   'arkm.lämning': all(bg(SKY), path('M4 70 L116 70 L116 112 L4 112 Z', GRASS, null), ...[[24, 86], [34, 82], [44, 82], [54, 82], [64, 86], [24, 96], [64, 96], [24, 106], [34, 106], [44, 106], [54, 106], [64, 106]].map(([x, y]) => ellipse(x!, y!, 5, 3, STONE, C.ink, 1)),
     path('M82 108 L82 74 L90 70 L94 80 L100 76 L102 108 Z', STONE, C.ink, 1.2), line('M82 86 L102 86 M82 98 L102 98 M92 74 L92 86 M88 86 L88 98 M96 98 L96 108', '#7a7468', 1), ground),
-  /** vittna om: burnt beams lie in the ground, and a speech bubble from them shows what happened – a house in flames. */
-  'arkm.vittna-om': all(bg(), rect(4, 86, 112, 26, SOIL2, 0, null), line('M4 86 L116 86', C.ink, 1.2), rot(34, 96, -8, 1, rect(-22, -3, 44, 6, CHAR, 1, C.ink, 1)), rot(70, 100, 10, 1, rect(-18, -3, 36, 6, CHAR, 1, C.ink, 1)), ellipse(52, 106, 14, 3, GREY, null),
-    say(70, 40, 60, 40, all(path('M52 52 L52 40 L64 30 L76 40 L76 52 Z', '#c9a06a', C.ink, 1.1), at(64, 34, 0.9, path('M0 -14 C7 -7 9 -2 7 4 C5 9 -5 9 -7 4 C-9 -2 -5 -5 -3 -9 C-2 -5 0 -5 0 -14 Z', C.orange, C.ink, 1), path('M0 -5 C3 -2 3 3 0 5 C-3 3 -3 0 0 -5 Z', C.yellow, null)), at(86, 36, 0.6, path('M0 -14 C7 -7 9 -2 7 4 C5 9 -5 9 -7 4 C-9 -2 -5 -5 -3 -9 C-2 -5 0 -5 0 -14 Z', C.orange, C.ink, 1))), 50, 88)),
-  /** tyda på: the clues (a footprint and a dropped pot) point with a dashed arrow towards an idea, but a question mark is still there – probable, not proven. */
-  'arkm.tyda-på': all(bg(), rect(4, 90, 112, 22, '#c9a37a', 0, null), ...[[14, 104], [28, 98], [42, 104]].map(([x, y]) => ellipse(x!, y!, 4, 2.2, '#8a6040', null)), shard(56, 100, 1),
-    lens(30, 70, 1.3), dashed('M48 76 L78 52', C.accent, 2), arrow(76, 54, 80, 50, C.accent, 1.6), think(94, 34, 20, 16, all(path('M86 42 L86 30 L94 24 L102 30 L102 42 Z', '#c9a06a', C.ink, 1), ellipse(106, 40, 3, 2, C.dark, null)), 80, 58), qm(110, 18, 14), ground),
-  /** påvisa: the analysis result on the screen proves it – a clear peak and a big green check. */
-  'arkm.påvisa': all(bg(LAB), rect(14, 24, 70, 52, C.white, 3, C.ink, 1.5), line('M20 66 L78 66', C.ink, 1.2), path('M20 64 L36 63 L42 60 L48 30 L54 60 L60 63 L78 64', 'none', C.red, 2), pot(30, 100, 0.8), tube(56, 100, 1),
-    check(96, 44, 2), rect(44, 76, 10, 8, GREY, 0.5, C.ink, 1), ground),
-  /** etnografisk: a researcher with a notebook sits with a family of a living village and writes down how they cook and live. */
-  'arkm.etnografisk': all(bg(SKY), path('M70 112 L70 74 L92 58 L114 74 L114 112 Z', '#d2ac5e', C.ink, 1.3), rect(86, 92, 12, 20, '#6b4a2b', 1, C.ink, 1), circle(52, 104, 7, C.dark, C.ink, 1.2), line('M44 108 L60 108', WOOD, 2),
-    path('M48 98 C46 92 50 90 52 94 C54 90 58 92 56 98 Z', C.orange, null), fig(66, C.green, 'smile', { h: 0.5, hairStyle: 'long' }), fig(36, C.red, 'smile', { h: 0.4 }),
-    arch(16, 0.66, 'calm'), reach(16, 0.66, 1, 28, 70), paper(26, 62, 12, 16), ground),
+  /** vittna om: the old pot itself speaks – it has a face, and its speech bubble tells of the past (people by a fire at a long house); an archaeologist listens with a hand at her ear. */
+  'arkm.vittna-om': all(bg(), rect(4, 92, 112, 20, SOIL2, 0, null), line('M4 92 L116 92', C.ink, 1.2), pot(30, 100, 1.6), circle(24, 80, 1.8, C.ink, null), circle(36, 80, 1.8, C.ink, null), ellipse(30, 88, 3, 2.4, '#7a2a2a', C.ink, 0.9),
+    say(52, 32, 70, 40, all(longhouse(52, 44, 0.5), at(52, 26, 0.6, path('M0 -14 C7 -7 9 -2 7 4 C5 9 -5 9 -7 4 C-9 -2 -5 -5 -3 -9 C-2 -5 0 -5 0 -14 Z', C.orange, C.ink, 1)), fig(28, '#9a6a3e', 'smile', { h: 0.2 }, 50), fig(76, '#9a6a3e', 'smile', { h: 0.2 }, 50)), 36, 72),
+    arch(98, 0.66, 'calm', 92), reach(98, 0.66, -1, 88, 40, 92), path('M82 34 q-4 4 0 8 M78 30 q-7 8 0 16', 'none', C.accent, 1.4)),
+  /** tyda på: three clues – a footprint, ash and a shard – all point with dashed arrows to one likely answer, a house drawn faintly; the gauge stands high but not full: probably, not proven. */
+  'arkm.tyda-på': all(bg(), ellipse(16, 96, 4, 7, '#8a6040', null), ellipse(24, 86, 4, 7, '#8a6040', null), ellipse(48, 102, 10, 4, GREY, null), shard(80, 100, 1.1),
+    dashed('M20 78 L46 52', C.accent, 1.8), dashed('M48 96 L54 56', C.accent, 1.8), dashed('M78 92 L64 56', C.accent, 1.8),
+    `<g opacity="0.6">${all(path('M40 48 L40 30 L56 18 L72 30 L72 48 Z', '#d2ac5e', C.ink, 1.4), rect(52, 36, 8, 12, '#6b4a2b', 1, C.ink, 1))}</g>`,
+    path('M86 40 A16 16 0 0 1 118 40', 'none', C.grey2, 5), path('M86 40 A16 16 0 0 1 113.3 28.7', 'none', OK, 5), line('M102 40 L110 28', C.ink, 2), circle(102, 40, 2, C.ink, null), ground),
+  /** påvisa: before, an idea with a question mark; the sample is tested and the screen shows a clear peak; after, the same idea stamped with a big green check – now it is shown for certain. */
+  'arkm.påvisa': all(bg(LAB), greyed(rect(8, 12, 30, 24, C.white, 3, C.ink, 1.3), path('M16 30 L16 22 L23 16 L30 22 L30 30 Z', '#d2ac5e', C.ink, 1)), qm(46, 30, 13, GREY),
+    tube(18, 70, 1.3), arrow(28, 66, 38, 66, C.accent, 2), rect(40, 48, 40, 34, C.white, 3, C.ink, 1.4), line('M44 76 L76 76', C.ink, 1), path('M44 75 L54 74 L58 54 L62 74 L76 75', 'none', C.red, 2.2), arrow(82, 66, 90, 66, C.accent, 2),
+    rect(78, 12, 34, 28, C.white, 3, OK, 2.4), path('M86 34 L86 24 L94 17 L102 24 L102 34 Z', '#d2ac5e', C.ink, 1), check(100, 70, 1.9), ground),
+  /** etnografisk: a researcher sits with a family living today in their village and writes in her notebook how they cook and live; her page holds little sketches of what she sees. */
+  'arkm.etnografisk': all(bg(SKY), path('M72 112 L72 72 L94 58 L116 72 L116 112 Z', '#e6d3b3', C.ink, 1.3), path('M68 74 L94 54 L120 74', 'none', '#9aa3ad', 3), rect(88, 90, 12, 22, '#6b4a2b', 1, C.ink, 1),
+    circle(58, 104, 7, C.dark, C.ink, 1.2), path('M54 98 C52 92 56 90 58 94 C60 90 64 92 62 98 Z', C.orange, null), fig(66, C.green, 'smile', { h: 0.5, hairStyle: 'long' }), fig(46, C.red, 'laugh', { h: 0.36 }), circle(36, 108, 3.4, C.yellow, C.ink, 1),
+    fig(16, C.purple, 'calm', { h: 0.7, hairStyle: 'long' }), reach(16, 0.7, 1, 30, 50), paper(24, 14, 30, 34, C.white, false), circle(32, 24, 3, C.orange, null), line('M38 24 L50 24 M28 34 L50 34 M28 40 L46 40', '#8d949c', 1), line('M44 20 L48 28', C.ink, 1), ground),
   /** status (2): on a stepped podium the woman with gold, a fine cloak and many things stands highest; ordinary people stand lower. */
   'arkm.status.2': all(bg(), rect(40, 66, 40, 46, '#d8cfb8', 1, C.ink, 1.3), rect(10, 90, 30, 22, '#e8e2d2', 1, C.ink, 1.2), rect(80, 90, 30, 22, '#e8e2d2', 1, C.ink, 1.2),
     fig(60, C.purple, 'smile', { h: 0.62, hairStyle: 'long' }, 66), path('M50 34 L70 34 L74 64 L46 64 Z', 'rgba(138,107,191,0.6)', C.ink, 1), circle(60, 34, 3, GOLD, C.ink, 1), sparkle(76, 22, 4), coin(46, 58, 3, GOLD),
