@@ -1,0 +1,180 @@
+{
+ "id": "m.vapen-och-verktyg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-14",
+ "titleSv": "Vapen och verktyg",
+ "titleJa": "{武器|ぶき}と{道具|どうぐ}",
+ "descriptionSv": "Vapen och verktyg: verktyg, yxa, skaft, egg, slipsten, skära, eldstål, smed, smida, städ, tång, svärd, spjut, pilspets, sköld, sköldbuckla och ringbrynja.",
+ "descriptionJa": "{武器|ぶき}と{道具|どうぐ}：{工具|こうぐ}、{斧|おの}、{柄|え}、{刃先|はさき}、{砥石|といし}、{鎌|かま}、{火打|ひう}ち{金|がね}、{鍛冶屋|かじや}、{鍛|きた}える、{金床|かなとこ}、トング・やっとこ、{剣|けん}、{槍|やり}、{矢尻|やじり}、{盾|たて}、{盾|たて}の{中央|ちゅうおう}の{金具|かなぐ}、{鎖帷子|くさりかたびら}。",
+ "categoryId": "R04-A05-T03",
+ "tags": [
+  "historia",
+  "arkeologi",
+  "föremål"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.mynt-och-betalningsmedel"
+ ],
+ "related": [],
+ "recommendedOrder": 2324,
+ "words": [
+  {
+   "senseId": "s.verktyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yxa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skaft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slipsten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skära-redskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eldstål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.smed.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.städ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tång.2",
+   "active": true
+  },
+  {
+   "senseId": "s.svärd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spjut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pilspets.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sköld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sköldbuckla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ringbrynja.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Smedens arbete",
+  "paragraphs": [
+   "Saki och Karin går till en utställning om järnåldern. Där ligger verktyg som människor använde varje dag: en yxa utan skaft, en skära som man skördade säd med och en slipsten med en grop i mitten.",
+   "Karin håller upp ett litet böjt järn. – Det här är ett eldstål. Man slog det mot en hård sten, och då kom det gnistor. Utan eldstål var det svårt att tända en eld.",
+   "Alla verktyg av järn gjordes av en smed. Han värmde järnet tills det blev rött, höll det med en tång mot städet och smidde det med hammaren. Till sist gjorde han eggen vass.",
+   "I nästa rum finns vapen. Ett svärd var mycket dyrt, och bara rika män hade ett. Vanligare var spjut, yxor och pilar med pilspetsar av järn.",
+   "Skölden var gjord av trä. Mitt på satt en sköldbuckla av järn som skyddade handen. En ringbrynja av tusentals små ringar var också mycket dyr. – Många krigare hade bara sina vanliga kläder, säger Karin."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad använde man ett eldstål till?",
+    "options": [
+     "Att tända en eld",
+     "Att skörda säd",
+     "Att slå i spikar",
+     "Att skydda handen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Utan eldstål var det svårt att tända en eld.",
+    "explanationJa": "{火|ひ}をつけるために{使|つか}いました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var lade smeden det varma järnet?",
+    "options": [
+     "På slipstenen",
+     "På skölden",
+     "I skaftet",
+     "På städet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… höll det med en tång mot städet och smidde det med hammaren.",
+    "explanationJa": "{金床|かなとこ}の{上|うえ}にのせました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Alla män hade ett svärd.",
+    "correct": false,
+    "explanationSv": "Ett svärd var mycket dyrt, och bara rika män hade ett.",
+    "explanationJa": "{剣|けん}はとても{高価|こうか}で、{豊|ゆた}かな{男|おとこ}だけが{持|も}っていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad skyddade sköldbucklan?",
+    "options": [
+     "Huvudet",
+     "Benen",
+     "Handen",
+     "Ryggen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mitt på satt en sköldbuckla av järn som skyddade handen.",
+    "explanationJa": "{手|て}を{守|まも}りました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De flesta krigare hade en ringbrynja.",
+    "correct": false,
+    "explanationSv": "Många krigare hade bara sina vanliga kläder.",
+    "explanationJa": "{多|おお}くの{戦士|せんし}は{普段|ふだん}の{服|ふく}しか{着|き}ていませんでした。"
+   }
+  ],
+  "factSources": [
+   "Under järnåldern smiddes verktyg och vapen av järn av smeder; eldstål användes tillsammans med flinta eller kvarts för att göra upp eld (Nationalencyklopedin, ”järnålder”, ”eldstål”).",
+   "Under vikingatiden var svärd dyra och ovanliga, medan spjut och yxor var de vanligaste vapnen; sköldarna var av trä med en sköldbuckla av järn, och ringbrynjor var sällsynta (Historiska museet; Nationalencyklopedin, ”vikingatid”, ”sköld”).",
+   "Saki och Karin är en påhittad scen."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om verktyg och vapen förr och nu.",
+  "discussionPoints": [
+   "Vilket verktyg använder du oftast hemma?",
+   "Har du någon gång tänt en eld utan tändstickor?",
+   "Varför tror du att svärd var så dyra?",
+   "Vilka föremål tycker du att ett museum ska visa: vapen eller vardagsverktyg?"
+  ]
+ }
+}
