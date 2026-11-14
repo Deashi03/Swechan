@@ -136,6 +136,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'medv.': () => import('./consciousness').then((m) => m.CONSCIOUSNESS_MOTIFS),
   'polf.': () => import('./politicalPhilosophy').then((m) => m.POLITICAL_PHILOSOPHY_MOTIFS),
   'exi.': () => import('./existence').then((m) => m.EXISTENCE_MOTIFS),
+  'forn.': () => import('./ancientMonuments').then((m) => m.ANCIENT_MONUMENT_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
