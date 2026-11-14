@@ -153,14 +153,13 @@ const barrel = (x: number, y: number, s = 1, col: string = '#2f6a7a') => at(x, y
 const car = (x: number, y: number, s = 1, col: string = '#d64545') => at(x, y, s, path('M-18 0 L-18 -8 L-10 -9 L-5 -16 L8 -16 L13 -9 L18 -8 L18 0 Z', col, C.ink, 1.3), rect(-3, -14, 8, 5, '#bfe3f5', 1, null), circle(-10, 0, 4, C.dark, C.ink, 1), circle(10, 0, 4, C.dark, C.ink, 1));
 const hourglass = (x: number, y: number, s = 1) => at(x, y, s, rect(-8, -14, 16, 3, WOOD2, 1, C.ink, 1), rect(-8, 11, 16, 3, WOOD2, 1, C.ink, 1), path('M-6 -11 L6 -11 L1 0 L6 11 L-6 11 L-1 0 Z', 'rgba(220,240,252,0.8)', C.ink, 1.1), path('M-3.6 -6 L3.6 -6 L0.6 -1 L-0.6 -1 Z', '#e0b23c', null), path('M-4 11 L4 11 L0 6 Z', '#e0b23c', null));
 const flower = (x: number, y: number, s = 1, col: string = '#ef6fa0') => at(x, y, s, line('M0 0 L0 12', '#4f9d69', 1.6), ...range(5).map((i) => { const a = (i / 5) * Math.PI * 2; return circle(f1(3.4 * Math.cos(a)), f1(-2 + 3.4 * Math.sin(a)), 2.6, col, C.ink, 0.7); }), circle(0, -2, 2, C.yellow, C.ink, 0.6));
-const handshake = (x: number, y: number, s = 1) => at(x, y, s, path('M-16 -2 L-4 -6 L6 -2 L-2 4 L-12 4 Z', C.skin, C.ink, 1.2), path('M16 -2 L4 -6 L-6 -1 L2 5 L12 4 Z', C.skin2, C.ink, 1.2), rect(-22, -6, 8, 10, '#3f6fb5', 1, C.ink, 1), rect(14, -6, 8, 10, '#4f9d69', 1, C.ink, 1));
 const starD = (x: number, y: number, r: number, col: string = LAPIS) => all(path(`M${x} ${y - r} L${f1(x + r * 0.866)} ${f1(y + r / 2)} L${f1(x - r * 0.866)} ${f1(y + r / 2)} Z`, 'none', col, 1.6), path(`M${x} ${y + r} L${f1(x + r * 0.866)} ${f1(y - r / 2)} L${f1(x - r * 0.866)} ${f1(y - r / 2)} Z`, 'none', col, 1.6));
-const suitcase = (x: number, y: number, s = 1, col: string = '#a0673d') => at(x, y, s, rect(-8, -7, 16, 12, col, 2, C.ink, 1.2), path('M-3 -7 L-3 -10 L3 -10 L3 -7', 'none', C.ink, 1.2));
 const yurt = (x: number, y: number, s = 1) => at(x, y, s, path('M-20 0 L-20 -14 L20 -14 L20 0 Z', '#f2efe6', C.ink, 1.3), path('M-22 -14 C-14 -26 14 -26 22 -14 Z', '#f2efe6', C.ink, 1.3), line('M-20 -8 L20 -8', RED, 1.6), rect(-4, -10, 8, 10, RED, 1, C.ink, 1));
 const horse = (x: number, y: number, s = 1, col: string = '#8a5a3a') => at(x, y, s, path('M-18 -18 C-18 -26 12 -26 14 -20 L22 -34 L28 -33 L28 -28 L20 -16 C18 -12 14 -10 10 -10 L-14 -10 C-18 -10 -18 -14 -18 -18 Z', col, C.ink, 1.3),
   ...[-14, -9, 6, 11].map((d) => line(`M${d} -11 L${d} 0`, col, 3)), path('M-18 -18 C-24 -16 -24 -8 -22 -4', 'none', '#3a2a1a', 2.2), path('M21 -34 L19 -38 L23 -35', '#3a2a1a', null, 1));
 const bow = (x: number, y: number, s = 1) => at(x, y, s, path('M0 -14 C8 -8 8 8 0 14', 'none', WOOD2, 2), line('M0 -14 L0 14', C.ink, 0.8));
 const crack = (d: string) => line(d, C.ink, 1.6);
+const WAY = 'M8 108 C40 104 70 104 66 92 C62 80 20 84 24 70 C28 58 80 62 84 50 C88 38 50 36 56 26 C60 18 76 18 84 18';
 
 export const MIDDLE_EAST_HISTORY_MOTIFS: Record<string, Svg> = {
   // ── 2431 Mesopotamiens stadsstater ──
@@ -211,7 +210,8 @@ export const MIDDLE_EAST_HISTORY_MOTIFS: Record<string, Svg> = {
   // ── 2435 Arabiska kalifaten ──
   'mell.erövring': all(skyBg(), wallTowers(64, 104, 44, 40), path('M78 104 L78 88 C78 80 92 80 92 88 L92 104 Z', '#3a2a1e', C.ink, 1.2), greyed(at(98, 56, 1, line('M0 0 L-12 14', WOOD2, 2), path('M-12 14 L-2 18 L-12 22 Z', '#888', null))),
     banner(84, 60, '#4f9d69', 0.9), ...[[20, 0.72], [36, 0.76], [52, 0.72]].map(([x, h]) => all(fig(+x!, '#4f6f9a', 'calm', { h: +h!, bottom: '#6b5a44' }), on(+x!, +h!, turbanL()))), reach(36, 0.76, 1, 50, 60), sword(52, 58, 0.8, 30), arrow(28, 104, 70, 104, HL, 3), ground),
-  'mell.expansion': all(skyBg('#eef3e6'), circle(60, 60, 46, 'rgba(79,157,105,0.18)', '#4f9d69', 1.6), greyed(circle(60, 60, 14, '#bbb', C.ink, 1.2)), circle(60, 60, 14, 'none', C.ink, 1), ...range(8).map((i) => { const a = (i / 8) * Math.PI * 2; return arrow(f1(60 + 17 * Math.cos(a)), f1(60 + 17 * Math.sin(a)), f1(60 + 42 * Math.cos(a)), f1(60 + 42 * Math.sin(a)), HL, 2.6); }), dome(60, 66, 0.3)),
+  'mell.expansion': all(skyBg('#eef3e6'), rect(8, 10, 104, 96, LAND, 3, C.ink, 1.2), blob(50, 62, 1.0, '#cfe6bf'), blob(50, 62, 0.66, '#9fcb84'), blob(50, 62, 0.34, '#4f9d69'),
+    num(50, 66, '1', 9, C.white), num(50, 42, '2', 9), num(50, 26, '3', 9), arrow(62, 66, 86, 82, HL, 2.6), greyed(blob(98, 30, 0.22, '#bbb'))),
   'mell.emir': all(room('#efe8da'), dome(84, 70, 0.7), minaret(116 - 8, 70, 0.8), seated(46, 0.95, '#2f6a7a', '#2f6a7a', { throne: true, throneCol: '#4f9d69', hat: turbanL() }), at(18, 44, 1, path('M0 0 L10 -4 L14 6 L4 12 Z', LAND, C.ink, 1)), bust(92, 100, '#c8372d', bTurban, 1), bust(108, 102, '#3f6fb5', bTurban, 1), ground),
   'mell.mongol': all(skyBg(), path('M4 84 C40 78 80 78 116 84 L116 112 L4 112 Z', GRASS, null), yurt(96, 90, 1.1), horse(70, 112, 0.95), fig(34, '#3f6fb5', 'smile', { h: 0.9, bottom: '#6b4a2e' }), on(34, 0.9, furHatL(), path('M-14 -42 L14 -42 L14 -36 L-14 -36 Z', GOLD, null)), reach(34, 0.9, -1, 14, 70), bow(12, 70, 1), ground),
 
@@ -229,8 +229,12 @@ export const MIDDLE_EAST_HISTORY_MOTIFS: Record<string, Svg> = {
     arrow(46, 36, 56, 40, HL, 2.6), ...[[74, 42, -10, -8], [98, 40, 8, -8], [78, 72, -8, 10], [102, 76, 8, 8]].map(([x, y, dx, dy]) => arrow(x!, y!, x! + dx!, y! + dy!, C.grey, 1.6)), crown(30, 92)),
 
   // ── 2437 Mellanöstern under 1900-talet ──
-  'mell.mandat.2': all(skyBg('#eef0f2'), rect(8, 56, 56, 48, '#f3d9a0', 3, C.ink, 1.6), rect(66, 14, 46, 34, '#c8d8e8', 3, C.ink, 1.4), bust(89, 32, '#3f6fb5', '', 1.3), arrow(80, 50, 46, 68, HL, 3), bust(30, 86, '#4f9d69', bScarf, 1.2), bust(48, 90, '#c8372d', '', 1.1), hourglass(98, 84, 1.4)),
-  'mell.sionism': all(skyBg(), path('M64 70 C80 62 100 62 116 66 L116 112 L64 112 Z', '#e6d8b4', C.ink, 1.2), mudHouse(96, 84, 1.2, '#f3ead7'), starD(96, 56, 7), arrow(40, 98, 70, 90, HL, 3), fig(22, '#5a6a80', 'smile', { h: 0.62, bottom: '#3d3f4a' }), reach(22, 0.62, 1, 34, 92), suitcase(36, 100, 1), fig(48, '#8a6a48', 'smile', { h: 0.52, hairStyle: 'long', bottom: '#3d3f4a' }), ground),
+  'mell.mandat.2': all(skyBg('#eef0f2'), ellipse(40, 34, 30, 10, '#b98a52', C.ink, 1.4), ...[[16, 26, '#c8372d'], [28, 20, '#3f6fb5'], [44, 18, '#4f9d69'], [58, 22, '#e0b23c'], [66, 32, '#7b3fa0'], [14, 40, '#2f6a7a']].map(([x, y, col]) => bust(+x!, +y!, col as string, '', 0.9)),
+    doc(40, 34, 0.5), arrow(40, 46, 40, 58, HL, 3), bust(24, 86, '#3f6fb5', '', 1.9), doc(46, 82, 0.7), seal(50, 89, 0.7), arrow(58, 90, 70, 94, HL, 2.6), rect(72, 82, 40, 26, '#f3d9a0', 3, C.ink, 1.4), mudHouse(84, 104, 0.7), mudHouse(100, 104, 0.6), hourglass(96, 62, 1.3), ground),
+  'mell.sionism': all(skyBg(), cloudThought(60, 26), path('M50 18 C56 12 66 14 70 20 C72 28 66 36 58 36 C52 34 48 26 50 18 Z', LAND, C.ink, 1.2), starD(60, 26, 5),
+    path('M46 74 C54 66 70 66 76 74 C80 84 72 94 60 94 C50 92 42 84 46 74 Z', LAND, C.ink, 1.4), starD(61, 81, 6),
+    ...[[14, 66], [24, 74], [14, 82]].map(([x, y]) => bust(x!, y!, '#5a6a80', '', 0.8)), ...[[104, 64], [96, 74], [106, 84]].map(([x, y]) => bust(x!, y!, '#8a6a48', '', 0.8)), ...[[48, 104], [60, 106], [72, 104]].map(([x, y]) => bust(x!, y!, '#6b7a5a', '', 0.7)),
+    arrow(30, 76, 42, 78, HL, 2.4), arrow(90, 76, 78, 78, HL, 2.4), arrow(60, 100, 60, 95, HL, 2.4)),
   'mell.flyktingläger': all(desert(60), ...range(3).flatMap((r) => range(4).map((c) => tent(22 + c * 26 + (r % 2) * 10, 72 + r * 16, 0.95))), rect(98, 30, 14, 18, '#3f6fb5', 2, C.ink, 1.2), line('M100 48 L100 60 M110 48 L110 60', C.ink, 1.4),
     fig(14, '#c8372d', 'frown', { h: 0.42, hairStyle: 'long' }), fig(24, '#3f6fb5', 'frown', { h: 0.36 }), ground),
   'mell.oljekris': all(skyBg(), derrick(22, 108, 1.1), barrel(54, 108, 1.2), at(84, 66, 1, line('M-20 30 L-20 -26 M-20 30 L24 30', C.ink, 1.4), line('M-18 22 L-6 20 L2 18 L8 -14 L20 -18', RED, 2.6)), num(76, 46, '×4', 10, RED), coin(104, 22, 5), arrow(104, 34, 104, 14, RED, 2.4), car(92, 108, 0.7, '#888'), noSign(92, 100, 11), ground),
@@ -239,8 +243,13 @@ export const MIDDLE_EAST_HISTORY_MOTIFS: Record<string, Svg> = {
   'mell.arabiska-våren': all(skyBg('#fdf1dc'), sunC(96, 22, 9), ...range(4).map((i) => line(`M${80 + i * 10} 40 l-4 6`, GOLD, 1.6)), flower(18, 26, 1.4), flower(30, 34, 1.1, '#f2c14e'),
     ...[[22, 0.62, '#c8372d'], [44, 0.68, '#3f6fb5'], [66, 0.66, '#4f9d69'], [88, 0.62, C.orange]].map(([x, h, col]) => all(fig(+x!, col as string, 'laugh', { h: +h!, bottom: '#3d3f4a' }), reach(+x!, +h!, 1, +x! + 10, 60 - (+h! - 0.6) * 40), palm(+x! + 10, 56 - (+h! - 0.6) * 40, 0.8))),
     at(54, 46, 1, line('M0 0 L0 -24', WOOD2, 1.6), rect(0, -24, 16, 4, RED, 0, C.ink, 0.6), rect(0, -20, 16, 4, C.white, 0, C.ink, 0.6), rect(0, -16, 16, 4, C.black, 0, C.ink, 0.6)), ground),
-  'mell.fredsprocess': all(skyBg(), path('M10 104 L34 104 L34 88 L58 88 L58 72 L82 72 L82 56 L108 56', 'none', '#c9c1b2', 6), bubble(22, 82, 22, 14, all(circle(17, 82, 1.4, C.grey, null), circle(22, 82, 1.4, C.grey, null), circle(27, 82, 1.4, C.grey, null))), doc(46, 72, 0.6), doc(70, 56, 0.6), handshake(96, 42, 1),
-    arrow(14, 110, 106, 34, HL, 2.2), ground),
+  'mell.fredsprocess': all(skyBg('#eef3e6'), line(WAY, '#e3d6bc', 9), line(WAY, '#c9b890', 1, '3 3'),
+    talks(44, 100), talks(40, 72), talks(70, 50), dove(92, 16, 1.2)),
 };
 
 function crown(x: number, y: number): Svg { return greyed(at(x, y, 1, path('M-14 6 L-15 -10 L-7 -2 L0 -14 L7 -2 L15 -10 L14 6 Z', GOLD, C.ink, 1.4), crack('M0 -14 L-2 0 L2 6'))); }
+function blob(x: number, y: number, k: number, col: string): Svg { const pts = [[-40, -6], [-30, -34], [-6, -44], [22, -36], [40, -14], [38, 18], [16, 38], [-14, 40], [-38, 22]]; return path(`M${pts.map(([a, b]) => `${f1(x + a! * k)} ${f1(y + b! * k)}`).join(' L')} Z`, col, C.ink, 1.3); }
+function seal(x: number, y: number, s = 1): Svg { return at(x, y, s, circle(0, 0, 4.4, RED, C.ink, 1), circle(0, 0, 2, '#a02a22', null)); }
+function cloudThought(x: number, y: number): Svg { return all(ellipse(x, y, 28, 16, C.white, C.ink, 1.4), circle(x - 6, y + 22, 3, C.white, C.ink, 1.1), circle(x - 10, y + 29, 2, C.white, C.ink, 1)); }
+function talks(x: number, y: number): Svg { return all(ellipse(x, y, 9, 3, '#b98a52', C.ink, 1.1), bust(x - 12, y - 4, '#3f6fb5', '', 0.7), bust(x + 12, y - 4, '#4f9d69', '', 0.7), bubble(x - 12, y - 18, 12, 7, all(circle(x - 14.5, y - 18, 0.9, C.grey, null), circle(x - 9.5, y - 18, 0.9, C.grey, null)), false), bubble(x + 12, y - 18, 12, 7, all(circle(x + 9.5, y - 18, 0.9, C.grey, null), circle(x + 14.5, y - 18, 0.9, C.grey, null)))); }
+function dove(x: number, y: number, s = 1): Svg { return at(x, y, s, path('M-10 2 C-6 -4 4 -4 8 0 L12 -2 L10 2 C6 6 -4 6 -10 2 Z', C.white, C.ink, 1.1), path('M-2 0 C-6 -10 2 -12 4 -2 Z', C.white, C.ink, 1), circle(7, -0.5, 0.7, C.ink, null), path('M12 0 C15 2 16 4 18 4', 'none', '#4f9d69', 1.4), ellipse(16, 2, 1.6, 0.9, '#7fbf6a', null)); }
