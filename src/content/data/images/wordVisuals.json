@@ -131521,14 +131521,6 @@
    "quiz": true
   },
   {
-   "senseId": "s.expansion.1",
-   "kind": "illustration",
-   "motif": "mell.expansion",
-   "group": "expansion",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.emir.1",
    "kind": "illustration",
    "motif": "mell.emir",
@@ -131577,20 +131569,17 @@
    }
   },
   {
-   "senseId": "s.mandat.2",
-   "kind": "illustration",
-   "motif": "mell.mandat.2",
-   "group": "mandat",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.sionism.1",
    "kind": "illustration",
    "motif": "mell.sionism",
    "group": "sionism",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.41.0",
+    "hash": "5dba80b2"
+   }
   },
   {
    "senseId": "s.flyktingläger.1",
@@ -131626,7 +131615,12 @@
    "motif": "mell.fredsprocess",
    "group": "fredsprocess",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.41.0",
+    "hash": "6eb657f8"
+   }
   }
  ]
 }
