@@ -237,9 +237,6 @@ export const SOUTH_ASIAN_HISTORY_MOTIFS: Record<string, Svg> = {
   'sydas.vicekung': all(bg(), field(100, '#c9d8a8'), at(60, 100, 1, rect(-52, -40, 104, 40, '#efe6d2', 1, C.ink, 1.3), path('M-20 -40 C-24 -62 24 -62 20 -40 Z', '#efe6d2', C.ink, 1.3), ...[-40, -26, 26, 40].map((x) => rect(x - 3, -34, 6, 34, C.white, 1, C.ink, 1))),
     fig(60, C.white, 'calm', { bottom: C.navy }), on(60, 1, path('M-11 -60 C-12 -74 12 -74 11 -60 Z', C.white, C.ink, 1.3), path('M0 -74 C-4 -84 6 -88 2 -96', 'none', C.white, 3), line('M-13 -40 L13 -6', '#2f6fb0', 3.2), circle(-6, -30, 2, GOLD, C.ink, 0.6), circle(-6, -24, 2, GOLD, C.ink, 0.6)),
     at(100, 20, 1, circle(0, 0, 11, C.white, C.ink, 1.2), crown(0, 1, 0.9)), dash('M89 24 L72 40', HL, 1.8), ring(60, 70, 34)),
-  'sydas.kejsarinna': all(bg('#efe2f2'), rect(30, 40, 60, 66, '#8a3b4a', 4, C.ink, 1.4), rect(24, 96, 72, 12, GOLD, 2, C.ink, 1.3),
-    fig(60, '#2f2f3a', 'calm', { bottom: '#2f2f3a', hairStyle: 'long' }), on(60, 1, path('M-14 -40 L14 -40 L22 48 L-22 48 Z', '#2f2f3a', C.ink, 1.4), path('M-16 -42 L16 -42 L18 -30 L-18 -30 Z', C.white, C.ink, 1), ...[-12, -4, 4, 12].map((x) => circle(x, -36, 1, C.ink, null)), crown(0, -70, 1.3), line('M-13 -20 L13 -20', '#2f6fb0', 2.4)),
-    reach(60, 1, 1, 82, 60), line('M82 44 L82 76', GOLD, 2.4), circle(82, 42, 3, GOLD, C.ink, 0.8), ring(60, 44, 14)),
   'sydas.furstestat': all(bg(), land(60, 60, 1.6, '#f0b8b0', 1.8),
     at(42, 48, 1, path('M-10 -8 C-2 -12 8 -8 10 -2 C12 6 4 12 -4 10 C-12 8 -14 -2 -10 -8 Z', '#f2c14e', C.ink, 1.3), crown(0, 0, 0.7)),
     at(80, 72, 1, path('M-8 -6 C0 -10 8 -6 8 0 C8 6 2 9 -4 8 C-10 6 -10 -2 -8 -6 Z', '#9ad0a0', C.ink, 1.2), crown(0, 0, 0.55)),
@@ -270,10 +267,6 @@ export const SOUTH_ASIAN_HISTORY_MOTIFS: Record<string, Svg> = {
     at(86, 100, 1, ellipse(0, 0, 14, 5, C.white, C.ink, 1.3), path('M-9 -2 C-8 -8 8 -8 9 -2 Z', '#e9b44c', C.ink, 1), circle(-3, -5, 2, '#5aa66a', null)), ban(86, 96, 15, 2.6),
     at(84, 36, 1, rect(-20, -16, 40, 32, C.white, 2, C.ink, 1.3), rect(-20, -16, 40, 7, RED, 2, C.ink, 1.1), ...[1, 2, 3, 4, 5, 6].map((n) => all(`<text x="${-14 + ((n - 1) % 3) * 13}" y="${2 + Math.floor((n - 1) / 3) * 10}" font-family="system-ui,sans-serif" font-weight="700" font-size="7" text-anchor="middle" fill="${C.ink}">${n}</text>`, line(`M${-18 + ((n - 1) % 3) * 13} ${-4 + Math.floor((n - 1) / 3) * 10} l7 6 M${-11 + ((n - 1) % 3) * 13} ${-4 + Math.floor((n - 1) / 3) * 10} l-7 6`, RED, 1)))),
     ring(86, 96, 18)),
-  'sydas.delning': all(bg(), '<clipPath id="sydas-delning-clip"><path transform="translate(60 60) scale(1.6)" d="' + LAND_D + '"/></clipPath>', land(60, 60, 1.6, GRASS, 1.8), `<g clip-path="url(#sydas-delning-clip)">${path('M50 8 C46 30 58 40 52 58 C48 74 62 84 56 108 L4 108 L4 8 Z', '#f2a65a', null)}</g>`, land(60, 60, 1.6, 'none', 1.8),
-    dash('M50 12 C46 30 58 40 52 58 C48 74 62 84 58 104', RED, 2.6, '5 3'), at(49, 17, 1, path('M-6 -4 L0 2 L6 -4', 'none', C.dark, 1.6), circle(-6, -6, 2.6, 'none', C.dark, 1.4), circle(6, -6, 2.6, 'none', C.dark, 1.4)),
-    tiny(34, 52, 1.5, C.white), tiny(28, 70, 1.5, C.pink), tiny(78, 60, 1.5, '#f2c14e'), tiny(84, 80, 1.5, C.white),
-    arrow(38, 48, 46, 48, C.navy, 1.8), arrow(74, 56, 64, 56, C.navy, 1.8), arrow(34, 66, 44, 66, C.navy, 1.8), arrow(80, 76, 68, 76, C.navy, 1.8)),
   // 2427 Sydasiens moderna stater
   'sydas.premiärminister': all(bg('#e9eef4'), at(60, 60, 1, rect(-50, -20, 100, 24, '#efe6d2', 1, C.ink, 1.2), path('M-16 -20 C-18 -36 18 -36 16 -20 Z', '#efe6d2', C.ink, 1.2), ...[-40, -30, -20, 20, 30, 40].map((x) => rect(x - 2, -16, 4, 20, C.white, 1, C.ink, 0.8))),
     flag(16, 104, SAFFRON, null, 46), rect(16, 66, 18, 4, C.white, 0, null), rect(16, 70, 18, 4, '#3a9a5a', 0, C.ink, 0.6),
@@ -285,7 +278,4 @@ export const SOUTH_ASIAN_HISTORY_MOTIFS: Record<string, Svg> = {
   'sydas.befolkningstillväxt': all(bg('#f6f3ec'), line('M14 104 L110 104 M14 104 L14 20', C.ink, 1.4),
     ...[0, 1, 2, 3, 4].flatMap((c) => Array.from({ length: 1 + c * 2 }, (_, r) => tiny(26 + c * 20, 102 - r * 9, 0.75, [C.denim, C.pink, '#f2c14e'][(r + c) % 3]!))),
     arrow(22, 90, 104, 24, HL, 3)),
-  'sydas.befrielsekrig': all(bg('#e9f2e4'), field(98, GRASS2), greyed(fig(20, C.grey, 'angry', { h: 0.7 }), rifle(30, 96, 1, 10)),
-    flag(84, 98, '#3a9a5a', RED, 70), fig(66, '#5a8a4a', 'laugh', { h: 0.85 }), on(66, 0.85, path('M-11 -59 C-12 -70 12 -70 11 -59 Z', '#4a6a3a', C.ink, 1.1)), reach(66, 0.85, 1, 84, 42), reach(66, 0.85, -1, 46, 40),
-    at(42, 50, 1, path('M-6 0 C-6 -5 0 -5 0 0 C0 5 -6 5 -6 0 Z', 'none', C.grey, 2.2), path('M2 4 C2 -1 8 -1 8 4 C8 9 2 9 2 4 Z', 'none', C.grey, 2.2)), line('M36 44 L32 40 M48 56 L52 60', C.grey, 1.4), sparkle(50, 30, 4), sparkle(98, 20, 3)),
 };
