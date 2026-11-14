@@ -10,7 +10,7 @@
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
 import { type Build } from './figures';
-import { HL, arm, bubble, thought } from './people';
+import { HL, arm, thought } from './people';
 import { P as F, type Mood, greyed, sepia } from './blindFix';
 
 // ── Palette ──────────────────────────────────────────────────────────
@@ -124,11 +124,13 @@ export const HISTORICAL_RESEARCH_MOTIFS: Record<string, Svg> = {
   'hfor.kvarleva': all(rect(4, 4, 112, 108, SKY, 3, null), greyed(house(34, 70, 2.2, '#999'), mini(76, 56, '#888', 1.4), mini(92, 58, '#888', 1.2), hill(72, '#bbb')), rect(4, 80, 112, 32, '#efe6d2', 0, null),
     rect(22, 88, 30, 16, PARCH, 1, C.ink, 1.4), textLines(26, 93, 22, 3, 3.6), num(46, 102, '3', 6), at(82, 96, 1.6, circle(-8, 0, 5, 'none', '#7a6a50', 2.4), line('M-3 0 L10 0 M6 0 L6 4 M9 0 L9 3', '#7a6a50', 2.4)),
     ringMark(37, 96, 18), ringMark(82, 96, 18), arrow(60, 76, 60, 86, HL, 2), ground),
-  'hfor.berättande-källa': all(room(), table(92), openBook(46, 80, 1.3, textLines(-20, -8, 16, 4, 4.4), textLines(4, -8, 16, 4, 4.4)), pen(70, 80, 1, 30),
-    thought(52, 34, 70, all(rect(24, 26, 56, 18, '#bfe3f5', 2, null), path('M24 38 C40 34 60 42 80 36 L80 44 L24 44 Z', LAKE, null), ship(44, 38, 0.6), mini(64, 30, C.red, 0.7), mini(72, 30, C.green, 0.7))),
-    greyed(at(96, 86, 1.2, rect(-8, -5, 16, 10, '#ddd', 1, C.ink, 1), textLines(-6, -2, 12, 2, 3))), cross(104, 72, 0.7), ground),
-  'hfor.förstahandsuppgift': all(rect(4, 4, 112, 108, SKY, 3, null), house(24, 92, 1.6, '#c84a3c'), fire(22, 64, 1), fire(30, 66, 0.7), line('M44 60 L58 56 M44 66 L58 62', C.grey, 1.2, '2 2'),
-    fig(64, C.orange, 'shock', { h: 0.9 }), circle(56, 40, 9, '#3a9a5a', C.ink, 1.2), num(56, 44, '1', 11, C.white), bubble(98, 34, 30, all(house(92, 40, 0.5), fire(102, 36, 0.4))), fig(100, C.green, 'calm', { h: 0.82 }), ground),
+  'hfor.berättande-källa': all(room(), table(92), openBook(38, 80, 1.3, textLines(-20, -8, 16, 4, 4.4), textLines(4, -8, 16, 4, 4.4)), ringMark(38, 80, 26),
+    path('M8 8 L108 8 L108 46 L50 46 L42 58 L42 46 L8 46 Z', C.white, C.ink, 1.6), rect(12, 12, 92, 30, '#bfe3f5', 2, null), path('M12 34 C40 28 70 38 104 30 L104 42 L12 42 Z', LAKE, null), ship(34, 34, 0.7), mini(64, 22, C.red, 0.9), mini(76, 22, C.green, 0.9), fire(92, 34, 0.6),
+    greyed(at(96, 86, 1.2, rect(-8, -5, 16, 10, '#ddd', 1, C.ink, 1), textLines(-6, -2, 12, 2, 3)), at(96, 100, 1, circle(-6, 0, 4, 'none', C.ink, 2), line('M-2 0 L8 0 M5 0 L5 3', C.ink, 2)))),
+  'hfor.förstahandsuppgift': all(rect(4, 4, 112, 108, SKY, 3, null), rect(4, 58, 112, 54, '#eceef0', 0, null),
+    house(16, 44, 1, '#c84a3c'), fire(16, 26, 0.6), mini(40, 26, C.orange, 1.5), arrow(50, 34, 62, 34, HL, 2.2), doc(76, 34, 1.1, PARCH, 3), circle(84, 22, 6, '#3a9a5a', C.ink, 1), num(84, 25.5, '1', 8, C.white), arrow(90, 34, 98, 34, HL, 2.2), mini(106, 26, C.green, 1.5),
+    greyed(house(14, 98, 0.9, '#999'), fire(14, 82, 0.5), mini(32, 80, '#999', 1.3), arrow(40, 88, 46, 88, C.ink, 1.6), mini(54, 80, '#999', 1.3), arrow(62, 88, 68, 88, C.ink, 1.6), doc(78, 88, 0.9, '#eee', 3), num(86, 80, '2', 7), arrow(88, 88, 94, 88, C.ink, 1.6), mini(104, 80, '#999', 1.3)),
+    tick(108, 10, 0.7)),
   'hfor.brevväxling': all(room(), fig(20, C.green, 'smile', { h: 0.9 }), fig(100, C.orange, 'smile', { h: 0.9, hairStyle: 'long' }), reach(20, 0.9, 1, 32, 70), reach(100, 0.9, -1, 88, 70),
     envelope(36, 68, 0.8), envelope(84, 68, 0.8), path('M36 40 C50 26 70 26 84 40', 'none', HL, 2), path('M80 44 L86 41 L83 36', 'none', HL, 2), path('M84 54 C70 66 50 66 36 54', 'none', HL, 2), path('M40 50 L34 53 L37 58', 'none', HL, 2),
     envelope(60, 30, 0.7, -10), envelope(60, 61, 0.7, 10), ...[0, 1, 2].map((i) => envelope(14 + i * 2, 104 - i * 4, 0.6)), ...[0, 1, 2].map((i) => envelope(106 - i * 2, 104 - i * 4, 0.6)), ground),
@@ -141,12 +143,13 @@ export const HISTORICAL_RESEARCH_MOTIFS: Record<string, Svg> = {
     line('M70 70 C84 52 70 30 48 30', HL, 1.8, '3 2'), path('M52 26 L46 30 L52 34', 'none', HL, 1.8), ringMark(34, headY(0.95) + 6, 14), greyed(fig(98, C.grey, 'calm', { h: 0.85 }))),
 
   // ── 2353 Muntlig historia ──
-  'hfor.muntlig-historia': all(room(), fig(30, '#9a6aaa', 'smile', { h: 0.92, hairStyle: 'long' }), old(30, 0.92),
-    bubble(72, 22, 52, sepia(rect(48, 13, 48, 16, '#e8d8b0', 1, null), train(64, 26, 0.55), mini(84, 18, '#8a6a4a', 0.6))), fig(92, TEAL, 'smile', { h: 0.85 }), mobile(76, 80, 1), reach(92, 0.85, -1, 80, 82), waves(66, 80, 0.8), archBox(104, 108, 1, BOX), ground),
+  'hfor.muntlig-historia': all(room(), sepia(book(60, 26, 1.4, '#8a5a34', textLines(-6, -6, 12, 4, 3.4, '#e8d8b0'))), ringMark(60, 26, 24),
+    ...[[20, train(20, 66, 0.4)], [60, house(60, 68, 0.6)], [100, ship(100, 64, 0.5)]].map(([x, k]) => all(rect((x as number) - 15, 52, 30, 20, C.white, 3, C.ink, 1.3), path(`M${(x as number) - 3} 72 L${x} 78 L${(x as number) + 3} 72`, C.white, C.ink, 1.1), k as Svg, arrow(x as number, 50, f1(60 + ((x as number) - 60) * 0.35), 44, HL, 1.8))),
+    mini(20, 88, '#9a6aaa', 1.5, '#dcdcdc'), mini(60, 88, C.navy, 1.5, '#dcdcdc'), mini(100, 88, C.green, 1.5, '#dcdcdc'), ground),
   'hfor.berättare': all(rect(4, 4, 112, 108, '#2f3a5a', 3, null), circle(96, 18, 6, '#f6f0c8', null), fire(60, 106, 1.4), line('M50 108 L70 104 M50 104 L70 108', WOOD, 2.6), fig(26, C.red, 'laugh', { h: 0.95 }), reach(26, 0.95, 1, 42, 54), reach(26, 0.95, -1, 12, 56),
     mini(84, 92, C.green, 1.2), mini(102, 94, C.yellow, 1.1), mini(92, 80, C.sky, 1)),
-  'hfor.livsberättelse': all(room(), fig(22, C.purple, 'smile', { h: 0.9 }), old(22, 0.9), line('M36 52 C40 20 64 14 72 30 C80 46 96 42 108 22', HL, 2, '3 2'),
-    mini(44, 38, C.yellow, 0.6), mini(62, 22, C.green, 0.8), mini(84, 40, C.navy, 0.95), mini(104, 18, C.purple, 1.05, '#dcdcdc'), ground),
+  'hfor.livsberättelse': all(room(), fig(20, C.purple, 'smile', { h: 0.9 }), old(20, 0.9), path('M34 8 L114 8 L114 52 L44 52 L32 62 L36 52 L34 52 Z', C.white, C.ink, 1.6),
+    mini(46, 30, C.purple, 0.55), mini(62, 27, C.purple, 0.75), mini(80, 24, C.purple, 0.95), mini(100, 22, C.purple, 1.1, '#dcdcdc'), line('M50 44 L56 44 M68 44 L74 44 M86 44 L92 44', C.ink, 1), path('M54 41 L56 44 L54 47 M72 41 L74 44 L72 47 M90 41 L92 44 L90 47', 'none', C.ink, 1), ground),
   'hfor.bandspelare': all(room(), table(92), recorder(56, 88, 1.6), at(96, 84, 1, line('M0 0 L0 -20', C.ink, 1.6), ellipse(0, -24, 4, 6, C.dark, C.ink, 1.2), rect(-6, 0, 12, 4, C.dark, 1, C.ink, 1)), waves(106, 60, 1, C.grey), ground),
   'hfor.efterhandskonstruktion': all(rect(4, 4, 112, 108, '#eef3e4', 3, null), greyed(path('M14 96 C30 60 6 50 30 40 C60 30 30 90 60 80 C84 70 60 30 92 34', 'none', C.ink, 2.4)), circle(14, 96, 4, C.grey, C.ink, 1.2), flag(96, 40),
     line('M14 96 L92 36', HL, 3), fig(100, TEAL, 'smile', { h: 0.62 }), reach(100, 0.62, -1, 92, 82), pen(90, 82, 0.8, -40), clock(22, 20, 8), path('M32 20 L40 20', 'none', C.ink, 1.4), path('M37 17 L40 20 L37 23', 'none', C.ink, 1.4), ground),
@@ -176,25 +179,31 @@ export const HISTORICAL_RESEARCH_MOTIFS: Record<string, Svg> = {
     at(26, 80, 1.3, circle(0, 0, 12, '#a04a2a', C.ink, 1.6), circle(0, 0, 3, '#c9c2b6', C.ink, 1)), reach(50, 1, 1, 74, 52), mobile(78, 46, 1.1), ringMark(78, 46, 15), ground),
 
   // ── 2355 Källkritik för historiker ──
-  'hfor.källvärde': all(room(), doc(36, 50, 2, PARCH, 4), magnifier(48, 62, 1.2), ...range(5).map((i) => rect(68 + i * 9, 72 - i * 8, 7, 18 + i * 8, i < 4 ? '#3a9a5a' : C.grey2, 1, C.ink, 1)), greyed(doc(24, 96, 0.8), rect(40, 96, 7, 8, C.grey, 1, C.ink, 1)), ground),
+  'hfor.källvärde': all(room(), ...[[22, 5, PARCH], [60, 3, PAPER], [98, 1, '#e8e8e8']].map(([x, n, col]) => all(doc(x as number, 46, 1.6, col as string, 4), magnifier((x as number) + 8, 58, 0.5),
+    ...range(5).map((i) => rect((x as number) - 14 + i * 6, 96 - (i < (n as number) ? 8 + i * 3 : 4), 5, i < (n as number) ? 8 + i * 3 : 4, i < (n as number) ? (n === 5 ? '#3a9a5a' : n === 3 ? C.yellow : C.red) : C.grey2, 0.5, C.ink, 0.8)))),
+    ringMark(22, 52, 24), ground),
   'hfor.tidsavstånd': all(room(), house(18, 64, 1.4), fire(18, 38, 0.9), fig(98, TEAL, 'calm', { h: 0.72 }), doc(82, 82, 0.6, PARCH, 3), tline(96, 8, 114, C.grey), tk(18, 96, C.grey), tk(98, 96, C.grey),
     line('M24 86 L88 86', HL, 2.4), path('M24 86 L31 82 L31 90 Z', HL, HL, 1), path('M88 86 L81 82 L81 90 Z', HL, HL, 1), num(56, 80, '100', 10, HL), clock(56, 54, 9)),
-  'hfor.tendentiös': all(room(), at(60, 58, 2.4, rect(-20, -16, 40, 32, PARCH, 1, C.ink, 0.7), circle(-8, -2, 9, '#fbe8a0', null), sparkle(-14, -10, 2), sparkle(-1, -11, 1.6), crown(-8, -9, 0.45), circle(-8, -3, 3, C.skin, C.ink, 0.5), path('M-12 6 C-12 1 -4 1 -4 6 Z', '#2f4a7a', null),
-    greyed(house(10, 6, 0.6), fire(10, -2, 0.5), mini(14, 2, '#888', 0.4))), rect(76, 30, 34, 50, '#e6d3b3', 1, C.ink, 1.4), path('M110 40 C116 42 116 66 110 70', 'none', C.skin, 6), cross(93, 92, 0.9), tick(36, 92, 0.9), ground),
+  'hfor.tendentiös': all(room(), at(60, 26, 1.6, rect(-14, -12, 28, 24, PARCH, 1, C.ink, 0.9), crown(0, -4, 0.7), circle(0, 3, 3, C.skin, C.ink, 0.6), sparkle(-9, -6, 1.6), sparkle(9, -6, 1.6), line('M-10 9 L10 9', C.grey, 0.8)),
+    line('M60 48 L60 106', C.ink, 2.4), rect(48, 104, 24, 6, WOOD, 1, C.ink, 1.2), line('M24 66 L96 40', C.ink, 2.6), circle(60, 53, 3, C.ink, null),
+    line('M24 66 L14 82 M24 66 L34 82 M96 40 L86 56 M96 40 L106 56', C.ink, 1), path('M10 82 L38 82 C36 88 12 88 10 82 Z', C.gold, C.ink, 1.2), path('M82 56 L110 56 C108 62 84 62 82 56 Z', C.gold, C.ink, 1.2),
+    ...[0, 1, 2].map((i) => all(rect(16 + i * 2, 70 - i * 4, 14, 11, PARCH, 1, C.ink, 1), crown(23 + i * 2, 74 - i * 4, 0.4))), greyed(rect(90, 46, 12, 9, '#eee', 1, C.ink, 1)), arrow(46, 40, 30, 56, HL, 2.2), ground),
   'hfor.förvanska': all(room(), ...[[20, house(20, 64, 1)], [60, house(60, 64, 1.1)], [100, castle(100, 64, 0.65, '#d8a050')]].map(([x, k]) => all(rect((x as number) - 16, 32, 32, 40, PARCH, 1, C.ink, 1.3), k as Svg)),
     at(60, 48, 1, rect(-4, -12, 8, 6, '#c84a3c', 0.5, C.ink, 1)), arrow(37, 52, 43, 52, C.ink, 1.8), arrow(77, 52, 83, 52, C.ink, 1.8), tick(20, 86, 0.9), cross(100, 86, 0.9), ringMark(100, 52, 22), ground),
 
   // ── 2356 Historiska tolkningar ──
   'hfor.historiker': all(room(), rack(76, 114, 20, 4), table(88, 8, 82), fig(36, TEAL, 'calm', { h: 1 }), on(36, 1, circle(-3.6, -56, 2.6, 'none', C.ink, 0.9), circle(3.6, -56, 2.6, 'none', C.ink, 0.9)), reach(36, 1, 1, 54, 80), magnifier(58, 76, 0.7), doc(66, 82, 0.6, PARCH, 3), openBook(22, 84, 0.5), ground),
-  'hfor.historiesyn': all(room(), tline(98, 8, 114), ...[[22, crown(22, 84, 1.1)], [48, crown(48, 84, 1.1)], [74, crown(74, 84, 1.1)]].map(([, k]) => k as Svg), greyed(at(100, 86, 0.5, rect(-12, -12, 24, 16, '#b86a4a', 0.5, C.ink, 1.2), rect(4, -24, 6, 12, '#8a4a3a', 0.5, C.ink, 1))),
-    fig(30, C.orange, 'calm', { h: 0.62 }), path(`M28 ${headY(0.62)} L10 90 L84 90 Z`, 'rgba(242,193,78,0.35)', null), on(30, 0.62, rect(-9, -60, 7.6, 6, '#f2c14e', 1, C.ink, 1.2), rect(1.4, -60, 7.6, 6, '#f2c14e', 1, C.ink, 1.2), line('M-1.4 -57 L1.4 -57', C.ink, 1))),
-  'hfor.historieskrivning': all(room(), ...[[24, sepia(book(24, 60, 1.6, '#8a5a34', castle(0, 6, 0.32)))], [60, book(60, 60, 1.6, '#6a7a8a', all(castle(0, 2, 0.32), mini(-5, 6, '#888', 0.32)))], [96, book(96, 60, 1.6, '#3f7fbf', all(castle(0, 0, 0.32), mini(-6, 6, C.red, 0.32), mini(0, 7, C.green, 0.32), mini(6, 6, C.yellow, 0.32, '#c4542a')))]].map(([, k]) => k as Svg),
-    num(24, 96, '1850', 8), num(60, 96, '1950', 8), num(96, 96, '2020', 8), arrow(12, 104, 110, 104, C.ink, 2), pen(110, 40, 1, 30)),
+  'hfor.historiesyn': all(room(), line('M54 44 L66 44', C.ink, 2.4), circle(32, 46, 24, 'rgba(242,193,78,0.35)', C.ink, 3), circle(88, 46, 24, 'rgba(120,190,230,0.35)', C.ink, 3),
+    line('M12 56 L52 56 M68 56 L108 56', C.ink, 1.6), crown(22, 44, 1), crown(42, 44, 1), mini(32, 32, C.navy, 0.8), mini(74, 46, C.green, 0.7), mini(84, 46, C.orange, 0.7), mini(94, 46, C.red, 0.7), mini(102, 46, C.sky, 0.6),
+    greyed(tline(98, 8, 114), crown(30, 88, 0.6), mini(60, 84, '#999', 0.6), mini(70, 84, '#999', 0.6), mini(80, 84, '#999', 0.6)), line('M32 72 L32 84 M88 72 L88 84', C.grey, 1.4, '2 2')),
+  'hfor.historieskrivning': all(room(), table(92), ...[[16, 34, -10], [22, 56, 6], [14, 76, -4]].map(([x, y, r]) => doc(x as number, y as number, 0.9, PARCH, 3, r as number)), ...[[30, 36], [34, 58], [28, 76]].map(([x, y]) => arrow(x as number, y as number, 46, 70, HL, 1.6)),
+    openBook(62, 80, 1, textLines(-20, -8, 16, 4, 4.4), all(castle(12, 2, 0.32), textLines(4, 6, 16, 1))), fig(96, TEAL, 'calm', { h: 0.95 }), reach(96, 0.95, -1, 80, 80), pen(78, 80, 0.8, 30)),
   'hfor.omtolkning': all(room(), table(96), at(60, 84, 1.4, path('M-16 8 C-18 -6 -6 -12 4 -10 C14 -8 18 0 16 8 Z', STONE, C.ink, 1.4), line('M-8 0 L8 0 M-4 0 L-6 -6 M4 0 L6 -6 M-8 0 C-6 4 6 4 8 0', '#4a4a4a', 1.2)),
     greyed(thought(30, 24, 40, at(30, 26, 0.6, ellipse(0, 0, 10, 5, '#999', C.ink, 1), line('M-6 4 L-6 9 M6 4 L6 9 M8 -2 L14 -8', C.ink, 1.4)))), cross(46, 14, 0.7),
     thought(88, 24, 40, at(88, 28, 0.7, ship(0, 0, 0.9))), tick(104, 14, 0.7), magnifier(92, 76, 1), arrow(48, 30, 66, 30, HL, 2)),
-  'hfor.revidera': all(room(), at(46, 58, 2.6, rect(-14, -18, 28, 36, PAPER, 1, C.ink, 0.6), line('M-10 -12 L10 -12 M-10 -8 L10 -8', C.grey, 0.7), line('M-10 -2 L10 -2', C.grey, 0.7), line('M-11 -2 L11 -2', C.red, 0.9), line('M-10 4 L6 4', '#2e8a4a', 1), line('M-10 10 L10 10 M-10 14 L4 14', C.grey, 0.7)),
-    pen(80, 66, 1.4, 40), at(96, 30, 1, circle(0, 0, 8, C.gold, C.ink, 1.2), circle(0, 0, 4.4, 'none', '#b88a20', 1)), sparkle(106, 20, 3), arrow(90, 38, 82, 52, HL, 2), ground),
+  'hfor.revidera': all(room(), at(26, 64, 1.8, rect(-12, -16, 24, 32, PAPER, 1, C.ink, 0.8), ...range(5).map((i) => line(`M-8 ${-10 + i * 5} L8 ${-10 + i * 5}`, C.grey, 0.9)), line('M-9 -5 L9 -5 M-9 5 L9 5', C.red, 1.2)), num(26, 104, '1', 9, C.grey),
+    arrow(50, 64, 68, 64, HL, 2.6), at(92, 64, 1.8, rect(-12, -16, 24, 32, PAPER, 1, C.ink, 0.8), ...range(5).map((i) => line(`M-8 ${-10 + i * 5} L8 ${-10 + i * 5}`, i === 1 || i === 3 ? '#2e8a4a' : C.grey, i === 1 || i === 3 ? 1.4 : 0.9))), num(92, 104, '2', 9, HL),
+    rot(59, 24, -8, 1.1, path('M-10 -8 L10 -8 L10 8 L-10 8 Z', PARCH, C.ink, 1.2), line('M-7 -3 L7 -3 M-7 1 L7 1 M-7 5 L3 5', '#8a6a48', 1)), sparkle(74, 14, 3), sparkle(44, 16, 2.4), line('M59 36 L59 54', HL, 1.6, '3 2')),
   'hfor.kontrafaktisk': all(rect(4, 4, 112, 108, '#eef3e4', 3, null), line('M60 112 L60 80', '#8a8f99', 10), line('M60 80 C60 60 40 54 28 44', '#8a8f99', 10), line('M60 80 C60 60 80 54 92 44', HL, 3, '5 4'),
     greyed(castle(26, 36, 0.7), path('M14 36 L18 30 L22 34', 'none', C.ink, 1.2)), thought(92, 22, 40, castle(92, 28, 0.6, '#e8d8a8')), sparkle(104, 12, 3), fig(60, C.orange, 'calm', { h: 0.5 }), qmark(74, 74, 14, HL)),
   'hfor.efterhandsklokhet': all(rect(4, 4, 112, 108, '#eef3e4', 3, null), ellipse(44, 112, 16, 4, '#3a2a1a', null), greyed(fig(18, C.grey, 'smile', { h: 0.72 })), arrow(28, 90, 34, 90, C.grey, 1.6),
@@ -215,8 +224,9 @@ export const HISTORICAL_RESEARCH_MOTIFS: Record<string, Svg> = {
     textLines(48, 48, 56, 3, 5), fig(24, TEAL, 'smile', { h: 0.9 }), reach(24, 0.9, 1, 42, 40), mini(66, 94, C.orange, 1.1), mini(90, 96, C.green, 1), ground),
   'hfor.skildra': all(room(), table(96), fig(22, C.navy, 'calm', { h: 0.8 }), reach(22, 0.8, 1, 38, 88), doc(46, 88, 0.7, PAPER, 3), pen(40, 86, 0.7, 30),
     line('M50 76 C56 60 60 50 66 44', HL, 1.6, '2 2'), rect(56, 10, 56, 40, '#bfe3f5', 4, C.ink, 1.6), path('M56 40 C72 34 92 36 112 32 L112 50 L56 50 Z', GRASS, null), house(74, 42, 0.8), circle(102, 18, 4, C.yellow, null), mini(92, 34, C.red, 0.6), mini(100, 35, C.green, 0.55), ground),
-  'hfor.källhänvisning': all(room(), rect(10, 14, 56, 84, PAPER, 2, C.ink, 1.6), textLines(16, 24, 44, 3), rect(14, 40, 48, 14, 'rgba(242,193,78,0.5)', 1, null), textLines(18, 45, 40, 2), num(64, 42, '1', 8, HL), textLines(16, 64, 44, 4),
-    path('M64 46 C80 50 82 64 84 70', 'none', HL, 2), path('M80 66 L84 72 L88 66', 'none', HL, 2), book(92, 88, 1.3, C.green), ringMark(92, 88, 22), ground),
+  'hfor.källhänvisning': all(room(), rect(8, 14, 60, 84, PAPER, 2, C.ink, 1.6), textLines(14, 24, 48, 3), rect(12, 40, 54, 10, 'rgba(242,193,78,0.55)', 1, null), line('M15 45 L46 45', C.grey, 1.3),
+    num(50, 48, '(', 10, HL), book(56, 45, 0.28, C.green), num(62, 48, ')', 10, HL), textLines(14, 60, 48, 6),
+    path('M64 40 C80 26 92 40 94 64', 'none', HL, 2.2), path('M90 60 L94 66 L98 60', 'none', HL, 2.2), book(96, 86, 1.3, C.green), ringMark(96, 86, 22), ground),
   'hfor.problematisera': all(room(), greyed(line('M14 30 L50 30', C.ink, 3), path('M50 30 L44 26 L44 34 Z', C.ink, null)), cross(58, 30, 0.8), qmark(24, 80, 18, C.navy),
     path('M34 76 C48 76 50 56 64 56 M34 76 L66 76 M34 76 C48 76 50 96 64 96', 'none', HL, 2), qmark(74, 60, 14, C.red), qmark(76, 80, 14, C.green), qmark(74, 100, 14, C.purple),
     path('M84 56 C92 56 92 48 100 48 M84 56 C92 56 92 64 100 64', 'none', HL, 1.4), qmark(106, 52, 10, C.orange), qmark(106, 68, 10, C.orange), fig(98, TEAL, 'calm', { h: 0.36 })),
