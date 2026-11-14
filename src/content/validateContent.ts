@@ -133,6 +133,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.skriftlig-källa.1', 's.avsedd.1', 's.funktion.1',
   // 0.40 (Arkeologins metoder), after two blind-test rounds
   's.arkeologisk.1', 's.arkeologi.1', 's.lösfynd.1', 's.datering.1', 's.tyda-på.1',
+  // 0.40 (Museer & samlingar), after two blind-test rounds
+  's.konservering.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
