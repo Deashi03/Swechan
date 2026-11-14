@@ -141,7 +141,7 @@ const weightLoom = (x: number, y: number) => all(line(`M${x} 86 L${x} ${y - 6}`,
 /** A speech bubble with sound waves, tail to the picture-left. */
 const say = (x: number, y: number) => all(path(`M${x - 14} ${y - 10} L${x + 14} ${y - 10} L${x + 14} ${y + 8} L${x - 4} ${y + 8} L${x - 12} ${y + 14} L${x - 10} ${y + 8} L${x - 14} ${y + 8} Z`, C.white, C.ink, 1.4),
   line(`M${x - 9} ${y - 1} q3 -5 6 0 t6 0 t6 0`, C.navy, 1.6));
-const ladle = (x: number, y: number, s = 1) => at(x, y, s, line('M10 -26 L0 -6', WOOD, 3), path('M-8 -6 C-8 4 8 4 8 -6 Z', WOOD, C.ink, 1.2));
+const heartS = (x: number, y: number) => path(`M${x} ${y + 4} C${x - 7} ${y - 1} ${x - 4} ${y - 6} ${x} ${y - 2} C${x + 4} ${y - 6} ${x + 7} ${y - 1} ${x} ${y + 4} Z`, C.red, C.ink, 1);
 const goblet = (x: number, y: number) => at(x, y, 1, path('M-18 -60 L18 -60 C18 -38 8 -32 3 -30 L3 -10 L14 -4 L14 0 L-14 0 L-14 -4 L-3 -10 L-3 -30 C-8 -32 -18 -38 -18 -60 Z', GOLD, C.ink, 1.8),
   ...[[-8, -48, C.red], [0, -46, '#3f6fb5'], [8, -48, C.green]].map(([a, b, c]) => circle(a as number, b as number, 3, c as string, C.ink, 0.9)), line('M-16 -56 L16 -56', GOLD2, 1.2));
 /** A map pin over (x, y). */
@@ -187,8 +187,9 @@ export const HISTORICAL_OBJECT_MOTIFS: Record<string, Svg> = {
     line('M30 36 L96 98', C.ink, 4.6), line('M30 36 L96 98', SILVER, 3), path('M50 46 C58 50 66 58 72 70 C64 66 56 60 50 56 Z', '#7a5a8a', C.ink, 1.2), circle(26, 32, 12, 'none', C.ink, 6), circle(26, 32, 12, 'none', SILVER, 4), circle(26, 32, 3, SILVER2, C.ink, 1), shine(16, 20, 4)),
   'fyn.filigran': all(room('#f6efe4'), line('M48 8 L52 22 M72 8 L68 22', GOLD2, 1.6), circle(60, 50, 30, GOLD, C.ink, 2), circle(60, 50, 25, 'none', GOLD2, 1.4), ...[[60, 36], [46, 48], [74, 48], [52, 64], [68, 64], [60, 50]].map(([x, y]) => spiral(x!, y!, 5)),
     glass(94, 92, 13, all(spiral(94, 92, 8), spiral(87, 86, 3), spiral(101, 98, 3))), ground),
-  'fyn.förgylld': all(room(), path('M46 30 A32 32 0 1 0 78 62 L46 62 Z', GOLD, C.ink, 2), path('M46 62 L46 30 A32 32 0 0 1 78 62 Z', BRONZE, C.ink, 1.6), path('M46 30 A32 32 0 0 1 78 62', 'none', GOLD, 3.4), path('M46 30 A32 32 0 0 1 78 62', 'none', C.ink, 0.8), line('M46 30 L46 62 L78 62', C.ink, 1.4),
-    shine(28, 48, 4), shine(40, 82, 3), glass(94, 92, 12, all(rect(84, 89, 20, 10, BRONZE, 0, null), rect(84, 86, 20, 3, GOLD, 0, null))), ground),
+  'fyn.förgylld': all(room(), table(96), at(24, 92, 0.8, path('M-14 -30 L14 -30 C14 -14 8 -8 3 -6 L3 0 L10 4 L-10 4 L-3 0 L-3 -6 C-8 -8 -14 -14 -14 -30 Z', BRONZE, C.ink, 1.6)), rot(40, 46, 30, 1, rect(-1.6, -4, 3.2, 20, WOOD, 1, C.ink, 1), path('M-3 -4 L3 -4 L2 -12 L-2 -12 Z', GOLD, C.ink, 1)), arrow(40, 74, 54, 74, HL, 2.6),
+    at(78, 92, 1.5, path('M-14 -30 L14 -30 C14 -14 8 -8 3 -6 L3 0 L10 4 L-10 4 L-3 0 L-3 -6 C-8 -8 -14 -14 -14 -30 Z', GOLD, C.ink, 1.6), path('M-6 -22 C-4 -18 2 -18 4 -22 C2 -25 -4 -25 -6 -22 Z', BRONZE, C.ink, 0.9), line('M-11 -27 C-10 -18 -6 -12 -2 -10', 'rgba(255,255,255,0.7)', 1.4)), shine(66, 46, 4), shine(96, 52, 3),
+    glass(96, 22, 11, all(rect(85, 20, 22, 9, BRONZE, 0, null), rect(85, 17, 22, 3, GOLD, 0, null))), line('M84 42 L80 56', C.ink, 0.8), ground),
   'fyn.ärg': all(room(), table(90), greyed(at(28, 90, 1, path('M-14 -26 L14 -26 L10 0 L-10 0 Z', BRONZE, C.ink, 1.4))), arrow(46, 74, 60, 74, C.grey, 2.2),
     at(86, 90, 1.5, path('M-14 -26 L14 -26 L10 0 L-10 0 Z', BRONZE, C.ink, 1.6), path('M-14 -26 L6 -26 C2 -22 6 -16 12 -16 L10.8 -6 C6 -8 0 -6 -2 0 L-10 0 L-11 -8 C-4 -14 -6 -20 -13 -24 Z', PATINA, null), path('M-14 -26 L14 -26 L10 0 L-10 0 Z', 'none', C.ink, 1.6)),
     ringMark(86, 70, 26), ground),
@@ -253,7 +254,8 @@ export const HISTORICAL_OBJECT_MOTIFS: Record<string, Svg> = {
     path('M24 100 c4 -4 8 4 12 0 c4 -4 8 4 12 0', 'none', '#d07a8a', 2.4)),
 
   // ── 2326 Skriftliga källor ──
-  'fyn.skriftlig-källa': all(room(), rot(42, 62, -6, 1, page(-26, -36, 52, 66, 8), seal(0, 34, 6)), tick(42, 12, 1), greyed(pot(94, 96, 0.8, C.grey)), ground),
+  'fyn.skriftlig-källa': all(room(), fig(30, C.denim, 'calm'), table(90), at(64, 86, 1, path('M-24 0 L-22 -14 L0 -12 L22 -14 L24 0 L0 2 Z', PARCH, C.ink, 1.4), line('M0 -12 L0 2', C.ink, 1), scrib(-19, -9, 15, 2, 4), scrib(4, -9, 15, 2, 4)), reach(30, 1, 1, 44, 82),
+    ellipse(80, 32, 32, 22, C.white, C.ink, 1.6), circle(58, 62, 3, C.white, C.ink, 1.2), circle(52, 70, 2, C.white, C.ink, 1), house(72, 46, 0.9), ship(96, 44, 0.7), path('M54 46 C64 44 100 44 108 46', 'none', '#7fb8dc', 1.6), sparkle(62, 20, 3)),
   'fyn.bläck': all(room(), table(92), inkwell(56, 92, 2.2), quill(74, 50, 1, 20), path('M73 56 C76 60 76 63 73 63 C70 63 70 60 73 56 Z', '#14141a', C.ink, 0.6), ellipse(88, 91, 9, 2, '#14141a', null), ground),
   'fyn.fjäderpenna': all(room(), table(92), page(22, 66, 68, 24, 0), scrib(28, 74, 34, 3), quill(66, 80, 1.3, 20), inkwell(102, 92, 0.9), ground),
   'fyn.vaxtavla': all(room(), table(96), rect(18, 50, 40, 46, WOOD, 2, C.ink, 1.6), rect(23, 55, 30, 36, '#e3c25a', 1, C.ink, 1), rect(62, 50, 40, 46, WOOD, 2, C.ink, 1.6), rect(67, 55, 30, 36, '#e3c25a', 1, C.ink, 1),
@@ -267,9 +269,11 @@ export const HISTORICAL_OBJECT_MOTIFS: Record<string, Svg> = {
   'fyn.avskrift': all(room(), monk(96, 1), table(88), page(8, 72, 34, 16, 3, '#d9c393'), page(52, 72, 34, 16, 2), reach(96, 1, -1, 76, 78), quill(76, 78, 0.5, 20), arrow(30, 62, 60, 62, HL, 2.4)),
 
   // ── 2327 Föremåls funktion och proveniens ──
-  'fyn.funktion': all(room(), ladle(26, 66, 1.2), qm(28, 34, 18), arrow(44, 60, 60, 60, HL, 3), bowl(90, 100, 1.4, CLAY), ellipse(90, 86, 18, 3, '#c96a2a', null), ladle(92, 80, 1.2), tick(90, 26, 1)),
-  'fyn.avsedd': all(room(), fig(86, C.yellow, 'smile', { h: 0.56 }), reach(86, 0.56, -1, 72, 84), rot(70, 82, -30, 1, rect(-1.4, 0, 2.8, 10, WOOD, 1, C.ink, 1), path('M-2 0 L2 0 L1.4 -12 L0 -14 L-1.4 -12 Z', SILVER, C.ink, 1)), tick(86, 42, 1),
-    greyed(fig(28, C.grey, 'calm')), cross(28, 8, 0.9)),
+  'fyn.funktion': all(room(), rect(6, 70, 44, 6, '#d8d0c0', 1, C.ink, 1.2), at(26, 70, 1, path('M-12 0 C-12 -8 8 -8 14 -4 L20 -6 L16 0 Z', CLAY, C.ink, 1.4), ellipse(-1, -4, 5, 1.6, CLAY2, C.ink, 0.8)), qm(28, 50, 20), arrow(50, 60, 62, 60, HL, 3),
+    rect(64, 14, 50, 94, '#2f3550', 3, C.ink, 1.4), circle(99, 64, 14, 'rgba(242,193,78,0.4)', null), ...[[-1, 0], [-0.7, -0.7], [0, -1], [0.7, -0.7], [1, 0]].map(([a, b]) => line(`M${f1(99 + a! * 9)} ${f1(58 + b! * 9)} L${f1(99 + a! * 13)} ${f1(58 + b! * 13)}`, GOLD, 1.8)),
+    at(80, 80, 1, path('M-12 0 C-12 -8 8 -8 14 -4 L20 -6 L16 0 Z', CLAY, C.ink, 1.4), ellipse(-1, -4, 5, 1.6, CLAY2, C.ink, 0.8), path('M19 -6 C23 -12 22 -18 19 -22 C16 -18 15 -12 19 -6 Z', C.orange, C.ink, 1), path('M19 -8 C21 -11 20 -14 19 -16 C18 -14 17 -11 19 -8 Z', C.yellow, null)), rect(70, 80, 40, 4, WOOD, 1, C.ink, 1)),
+  'fyn.avsedd': all(room(), fig(30, C.green, 'smile'), table(88, 40, 112), reach(30, 1, 1, 52, 80), at(66, 88, 1, rect(-12, -14, 24, 9, WOOD, 3, C.ink, 1.3), line('M-9 -5 L-9 0 M9 -5 L9 0', WOOD, 3), path('M9 -14 L12 -24 L20 -22 L16 -12 Z', WOOD, C.ink, 1.2), line('M-12 -12 L-17 -4', '#5a3a1e', 2), circle(15, -21, 0.9, C.ink, null)),
+    ellipse(84, 30, 26, 20, C.white, C.ink, 1.6), circle(62, 54, 3, C.white, C.ink, 1.2), circle(56, 62, 2, C.white, C.ink, 1), mini(84, 26, C.yellow), heartS(98, 20), ground),
   'fyn.vardagsföremål': all(room(), rect(78, 14, 28, 22, '#bfe3f5', 1, C.ink, 1.4), circle(92, 25, 5, C.yellow, null), table(80), bowl(22, 80, 0.7, CLAY), at(40, 80, 1, rect(-1.4, -12, 2.8, 12, WOOD, 1, C.ink, 1), ellipse(0, -14, 3, 4, WOOD, C.ink, 1)),
     rot(58, 74, -80, 1, path('M-8 -2 L8 -2 L10 0 L8 2 L-8 2 Z', SILVER, C.ink, 1), rect(-16, -2.4, 9, 4.8, WOOD, 1, C.ink, 1)), at(76, 80, 1, rect(-10, -4, 20, 4, '#e6d3b3', 1, C.ink, 1), line('M-8 -4 L-8 -8 M-4 -4 L-4 -8 M0 -4 L0 -8 M4 -4 L4 -8 M8 -4 L8 -8', C.ink, 0.8)),
     jug(98, 80, 0.6), ground),
