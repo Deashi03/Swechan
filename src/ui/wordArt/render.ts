@@ -139,6 +139,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'forn.': () => import('./ancientMonuments').then((m) => m.ANCIENT_MONUMENT_MOTIFS),
   'fyn.': () => import('./historicalObjects').then((m) => m.HISTORICAL_OBJECT_MOTIFS),
   'arkm.': () => import('./archaeologyMethods').then((m) => m.ARCHAEOLOGY_METHOD_MOTIFS),
+  'mus.': () => import('./museums').then((m) => m.MUSEUM_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
