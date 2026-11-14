@@ -120,7 +120,6 @@ const govB = (x: number, y: number, s = 1, col: string = '#d8cfb8') => at(x, y, 
   rect(-22, -34, 44, 4, col, 0.5, C.ink, 1.2), path('M-24 -34 L0 -46 L24 -34 Z', col, C.ink, 1.3));
 const banknote = (x: number, y: number, s = 1) => at(x, y, s, rect(-11, -6, 22, 12, '#9fd3a8', 1.5, C.ink, 1.1), circle(0, 0, 3.4, '#6ab07a', C.ink, 0.8));
 const longhouse = (x: number, y: number, s = 1) => at(x, y, s, rect(-30, -14, 60, 14, '#c9a06a', 1, C.ink, 1.3), path('M-34 -14 C-30 -30 30 -30 34 -14 Z', '#d2ac5e', C.ink, 1.3), rect(-3, -10, 6, 10, '#6b4a2b', 1, C.ink, 1));
-const runestone = (x: number, y: number, s = 1) => at(x, y, s, path('M-9 0 L-11 -26 C-10 -36 10 -36 11 -26 L9 0 Z', STONE, C.ink, 1.3), path('M-6 -4 C-8 -18 -6 -28 0 -30 C6 -28 8 -18 6 -4', 'none', C.red, 2));
 const excavator = (x: number, y: number, s = 1, armUp = false) => at(x, y, s,
   rect(-26, -8, 34, 8, C.dark, 4, C.ink, 1.3), ...[-21, -12, -3, 4].map((d) => circle(d, -4, 2.4, GREY, C.ink, 0.8)),
   rect(-24, -24, 30, 16, C.yellow, 2, C.ink, 1.4), rect(-22, -38, 14, 14, C.yellow, 2, C.ink, 1.4), rect(-20, -35, 10, 9, '#bfe3f5', 1, C.ink, 1),
