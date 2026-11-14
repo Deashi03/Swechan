@@ -143,6 +143,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.rikssamling.1', 's.befrielsekrig.1', 's.landvinning.1', 's.representationsreform.1', 's.neutralitetspolitik.1',
   // 0.41 (Östasiens historia), after two blind-test rounds
   's.shogunat.1', 's.ståndssamhälle.1', 's.kolonialstyre.1', 's.folkrepublik.1',
+  // 0.41 (Sydasiens historia), after two blind-test rounds
+  's.civilisation.1', 's.sanskrit.1', 's.blomstra.1', 's.storslagen.1', 's.sultanat.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
