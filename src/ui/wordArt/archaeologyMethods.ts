@@ -263,9 +263,6 @@ export const ARCHAEOLOGY_METHOD_MOTIFS: Record<string, Svg> = {
   /** lösa in: the state (a pillared building) takes the silver find, and money goes back to the finder – a fair exchange shown by two arrows. */
   'arkm.lösa-in': all(bg(), govB(84, 70, 1.1), coin(84, 50, 4), coin(78, 54, 3.4), fig(24, C.green, 'smile', { h: 0.8 }), path('M44 34 C60 22 70 22 80 30', 'none', C.accent, 2.2), arrow(76, 28, 82, 34, C.accent, 2),
     at(58, 30, 1, coin(0, 0, 4)), path('M80 84 C66 94 54 94 44 84', 'none', OK, 2.2), arrow(48, 88, 42, 82, OK, 2), banknote(62, 96, 0.9), ground),
-  /** kulturmiljölagen: the law book stands beside a runestone and a burial mound, all under one protecting shield dome. */
-  'arkm.kulturmiljölagen': all(bg(SKY), path('M4 96 L116 96 L116 112 L4 112 Z', GRASS, null), path('M14 96 C14 40 106 40 106 96', 'rgba(140,199,232,0.35)', '#2f7fb5', 2.4),
-    runestone(42, 96, 1.2), path('M60 96 C64 80 88 80 92 96 Z', TURF, C.ink, 1.2), lawBook(100, 44, 1), shieldS(22, 30, 0.8, C.navy, line('M-5 0 L-1 4 L6 -4', C.white, 2.4)), ground),
 
   // ── 2304 Datering av föremål ──
   /** datering: the pot goes in, and out comes its age – a tag showing about 950 years, with a check. */
