@@ -120,7 +120,9 @@ export const WATERS_SEAS_MOTIFS: Record<string, Svg> = {
   'vatt.ström': all(bg(), field(48, LAND), rect(4, 58, 112, 40, FRESH, 0, null), line('M4 58 L116 58 M4 98 L116 98', C.ink, 1.2), rect(4, 98, 112, 14, LAND, 0, null),
     ...[[12, 68], [44, 76], [16, 88], [60, 66], [70, 88]].map(([x, y]) => flowA(x!, y!, x! + 22, y!, FLOW, 2.4)), ellipse(96, 78, 6, 2.5, '#6b8e4e', C.ink, 1), arrow(96, 74, 112, 74, HL, 2.2), tree(20, 48, 0.6), tree(96, 48, 0.6)),
   'vatt.uppströms': riverRun(all(boat(62, 84, 1, C.red, true), arrow(52, 74, 24, 70, HL, 3))),
-  'vatt.nedströms': riverRun(all(boat(40, 84, 1, C.red), arrow(52, 74, 86, 70, HL, 3))),
+  'vatt.nedströms': all(bg(), mountain(96, 70, 40, 44), mountain(80, 70, 30, 30, ROCK2, false), field(64, LAND),
+    path('M116 82 C90 78 60 84 4 80 L4 96 C60 100 90 94 116 98 Z', FRESH, C.ink, 1.2), flowA(100, 90, 86, 89, FLOW, 1.6), flowA(68, 91, 54, 90, FLOW, 1.6), flowA(30, 89, 16, 88, FLOW, 1.6),
+    ring(92, 88, 5), line('M86 88 C76 87 66 86 56 86', HL, 1.6, '3 3'), boat(42, 84, 1, C.red, true), arrow(68, 74, 26, 70, HL, 3), tree(14, 64, 0.5), tree(56, 64, 0.5)),
   'vatt.flodbädd': all(bg(), path('M4 40 L28 40 C34 70 86 70 92 40 L116 40 L116 112 L4 112 Z', MUD, C.ink, 1.3), path('M28 44 C34 72 86 72 92 44 Z', FRESH, null), line('M28 44 L92 44', C.ink, 1),
     ...[[44, 66, 4], [56, 69, 3], [70, 68, 4], [80, 62, 3]].map(([x, y, r]) => stone(x!, y!, r!, f1(r! * 0.6), ROCK2)), fish(58, 54, 1), tree(14, 40, 0.6), tree(104, 40, 0.6), line('M30 52 C38 76 82 76 90 52', HL, 3)),
   'vatt.korvsjö': all(greenMap(), water('M70 4 C74 30 56 40 60 60 C64 80 76 92 72 112', 10), path('M60 30 C30 26 18 44 26 60 C34 76 52 74 56 68 C44 70 34 62 34 52 C34 40 46 34 60 36 Z', FRESH, C.ink, 1.3),
@@ -227,8 +229,11 @@ export const WATERS_SEAS_MOTIFS: Record<string, Svg> = {
   'vatt.isfri': all(bg(), field(30, SNOW), rect(4, 44, 56, 68, SEA, 0, null), waves(8, 56, 60), ship(30, 64, 0.8), house(16, 40, 0.7, '#e8d9c0', '#b84a3a'), okC(50, 22, 6),
     greyed(rect(64, 44, 52, 68, ICE, 0, null), line('M66 60 L84 64 L96 58 L114 66 M70 80 L90 84 L112 78', C.ink, 1), ship(90, 70, 0.6)), line('M62 30 L62 112', C.ink, 1.2), ban(90, 22, 6)),
   'vatt.flaskpost': all(bg(), rect(4, 40, 112, 30, SEA, 0, null), waves(8, 108, 50), path('M4 66 C40 62 80 70 116 64 L116 112 L4 112 Z', SAND, C.ink, 1.2), bottle(58, 88, 1.6, -12), ring(60, 86, 30), at(98, 100, 1, path('M-5 0 L0 -5 L5 0 L0 5 Z', '#f2a0a0', C.ink, 0.8))),
-  'vatt.mild.2': all(bg(), line('M60 8 L60 112', C.ink, 1.2), field(80, LAND), sun(28, 24, 7), tree(18, 80, 0.6), ...[[34, 70], [46, 74]].map(([x, y]) => circle(x!, y!, 2, C.yellow, null)), thermo(48, 52, 12, C.orange), ellipse(30, 94, 10, 3, SNOW, C.ink, 0.6),
-    greyed(rect(60, 8, 56, 104, '#dfe6ee', 0, null), field2(), ...[[72, 30], [88, 20], [104, 34], [80, 50], [98, 56]].map(([x, y]) => flake(x!, y!, 1.2)), thermo(104, 90, 3, '#5aa7d6')), ring(34, 60, 22)),
+  'vatt.mild.2': all(bg('#eaf4ea'), rect(4, 88, 82, 24, LAND, 0, null), sun(20, 20, 5), cloud(46, 22, 0.6), tree(12, 88, 0.5), ...[[26, 98], [36, 104], [48, 97]].map(([x, y]) => circle(x!, y!, 1.8, C.yellow, null)),
+    stand(40, 112, 0.6, fig(60, '#7aa6c8', 'smile', { hairStyle: 'long' }), line('M60 44 L60 66', C.ink, 1.4), path('M52 40 L60 48 L68 40', 'none', C.ink, 1.2)), line('M56 42 C60 40 62 44 66 42 M54 50 C58 48 60 52 64 50', '#9fb8c8', 1.2),
+    thermo(72, 84, 14, C.orange), oval(72, 72, 9, 18),
+    rect(86, 4, 30, 108, C.white, 0, null), line('M86 4 L86 112', C.ink, 1.2), line('M86 58 L116 58', C.ink, 1),
+    greyed(rect(86, 4, 30, 54, '#f4d9b0', 0, null), sun(98, 18, 6), thermo(110, 50, 24, C.red)), greyed(rect(86, 58, 30, 54, '#dfe6ee', 0, null), flake(96, 70, 1.4), flake(100, 86, 1.2), flake(94, 100, 1), thermo(110, 104, 3, '#5aa7d6'))),
 
   // 2537 Vattnets kretslopp
   'vatt.avdunsta': all(bg(), field(80, '#c9b48a'), sun(90, 22, 8), greyed(ellipse(50, 94, 34, 9, 'none', FRESH2, 1.4)), ellipse(50, 94, 20, 5, FRESH, C.ink, 1.2),
@@ -241,6 +246,5 @@ export const WATERS_SEAS_MOTIFS: Record<string, Svg> = {
   'vatt.sippra': all(bg(), field(36, LAND), strata(40), ...[[30, 50], [36, 62], [28, 74], [80, 52], [74, 66], [84, 78]].map(([x, y]) => drop(x!, y!, 0.7)), arrow(56, 46, 56, 84, HL, 2.6), cloud(40, 14, 0.8, '#c9d1d9'), rain(30, 24, 4), rect(4, 90, 112, 22, '#6aaedb', 0, null), line('M4 90 L116 90', C.ink, 1)),
 };
 
-function field2(): Svg { return rect(60, 80, 56, 32, SNOW, 0, null); }
 function strata(y0: number): Svg { return all(rect(4, y0, 112, 50, '#b8916a', 0, null), ...[[14, 50], [44, 60], [70, 48], [96, 70], [20, 80], [60, 82], [100, 52]].map(([x, y]) => ellipse(x!, y!, 4, 2.4, ROCK, C.ink, 0.6)), line(`M4 ${y0} L116 ${y0}`, C.ink, 1)); }
 void num; void ICE2; void MUD2; void helmet; void tiny; void on;
