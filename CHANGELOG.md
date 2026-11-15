@@ -1,5 +1,33 @@
 # Changelog
 
+## 0.41.0 – 2026-11-15
+
+42 nya moduler som gör överämnet *Civilisationer & världsdelars historia* (R04-A06) komplett. Därmed är hela rotområdet *Historia & humaniora* (R04) publicerat. Varje nytt modulord har en egen bild, utom de 18 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 731 målord)
+- **Nordens historia** (2401–2407): vikingatida samhällen, nordiska kungadömen, Kalmarunionen, svensk stormaktstid, frihetstiden, Sverige under 1800-talet och Nordens moderna utveckling.
+- **Östasiens historia** (2411–2417): Kinas dynastier, Japans förhistoriska perioder, Japans samurajtid, Edo-periodens samhälle, Meijirestaurationen, Koreas historiska kungadömen och modern östasiatisk historia.
+- **Sydasiens historia** (2421–2427): Induskulturen, antikens indiska riken, Maurya- och Guptarikena, sultanat och mogulvälde, kolonialt Indien, självständighetsrörelser och Sydasiens moderna stater.
+- **Mellanösterns historia** (2431–2437): Mesopotamiens stadsstater, det forntida Egypten, persiska imperier, Bysans och regionen, arabiska kalifaten, Osmanska riket och Mellanöstern under 1900-talet.
+- **Afrikas historia** (2441–2447): Nilen och Nubien, forntida västafrikanska riken, handelsvägar över Sahara, Swahilikusten, kolonialtiden, självständighetskamp och moderna afrikanska samhällen.
+- **Amerikas & Oceaniens historia** (2451–2457): mesoamerikanska civilisationer, Inkariket, Nordamerikas ursprungsfolk, europeisk kolonisation, latinamerikanska självständighetsrörelser, Oceaniens sjöfarande kulturer och Australien och Nya Zeelands historia.
+- Varje modul har 16–19 målord, lästext med fem frågor och konversationsunderlag. Det finns 264 nya ordposter. Ord som redan fanns återanvänds med sitt `senseId`, bland annat från *Historiska epoker*, *Militärhistoria*, *Religion & idéhistoria*, *Arkeologi & kulturarv* och de tidigare grupperna i samma överämne.
+- Nya betydelser på befintliga poster: *ting* (folkförsamling), *störta* (ta makten från), *råvara* (industri), *kanal* (vattenväg), *skrivare* (person som skriver), *mandat* (styra ett annat land) och *omhänderta* (om barn).
+- Parallella grupper skrev samma poster: *kejsarinna* och *delning* (T02) samt *befrielsekrig* (T01) skrevs också av *Sydasiens historia*, och *tvångsarbete* (T05) av *Amerikas & Oceaniens historia*. Posten finns bara i den grupp som kommer först i katalogordningen, och de senare grupperna refererar dess `senseId`.
+- Egennamn i lästexterna ligger i `core/coreVocabulary.json` → `names`.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Natur & geografi* (R05): Landskap & geologi → Landskapets former → Berg och kullar.
+
+### Bilder (253 nya ordbilder)
+- 60 symbolbilder, 84 bilder som får användas i bildövningar och resten scener.
+- 78 symbol- och adjektivbilder blindtestades. 60 klarade testet efter högst två omgångar.
+- **18 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *premiärminister/statsminister/regeringschef* och *kungadöme/rike*.
+- Ord som redan stod på listan, till exempel *kejsardöme* och *rösträtt*, fick inga nya bilder.
+- Nya bildfiler i `src/ui/wordArt/`: `nordicHistory.ts`, `eastAsianHistory.ts`, `southAsianHistory.ts`, `middleEastHistory.ts`, `africanHistory.ts` och `americasOceaniaHistory.ts`.
+
+Service workern är `swechan-v45`.
+
+
 ## 0.40.0 – 2026-11-14
 
 42 nya moduler som gör överämnet *Arkeologi & kulturarv* (R04-A05) komplett. Varje nytt modulord har en egen bild, utom de 14 ord som underkändes i två blindtestomgångar.

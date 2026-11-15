@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.40.0 (släppt 2026-11-14) · **Senast uppdaterad:** 2026-11-14 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.41.0 (släppt 2026-11-15) · **Senast uppdaterad:** 2026-11-15 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 971 publicerade moduler. 966 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och överämnena *Historiska epoker* (R04-A01), *Militärhistoria* (R04-A02), *Religion & idéhistoria* (R04-A03), *Filosofi & etik* (R04-A04) och *Arkeologi & kulturarv* (R04-A05) i *Historia & humaniora*. De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 013 publicerade moduler. 1 008 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och hela *Historia & humaniora* (R04, sista överämnet *Civilisationer & världsdelars historia* kom i 0.41). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Civilisationer & världsdelars historia* (R04-A06). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Landskap & geologi* (R05-A01), det första i rotområdet *Natur & geografi* (R05). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 12 166 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 12 419 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Civilisationer & världsdelars historia* (R04-A06), med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Landskap & geologi* (R05-A01) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -129,6 +129,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byggnadshistoria: `s.kulturhistorisk.1`
   - Historisk forskning: `s.förstahandsuppgift.1`, `s.tendentiös.1`, `s.historieskrivning.1`, `s.historiesyn.1`
   - Förväxlingarna gällde mest närliggande ord: *arkeologisk/arkeologi/arkeolog/utgrävning*, *datering/datera/absolut datering*, *tyda på/tolka/vittna om*, *skriftlig källa/urkund/tyda*, *funktion/rituell/avsedd*, *konservering/restaurera/bevara*, *kulturhistorisk/byggnadsminne/k-märkt*, *förstahandsuppgift/primärkälla*, *tendentiös/partisk*, *historieskrivning/historiesyn/historiker* och *historiesyn/perspektiv*. *tendentiös/partisk* och *förstahandsuppgift/primärkälla* ligger nära synonymer; produktägaren kan överväga synonymmarkering och ett nytt test.
+- **Från 0.41 (18 ord):**
+  - Nordens historia: `s.rikssamling.1`, `s.befrielsekrig.1`, `s.landvinning.1`, `s.representationsreform.1`, `s.neutralitetspolitik.1`
+  - Östasiens historia: `s.shogunat.1`, `s.ståndssamhälle.1`, `s.kolonialstyre.1`, `s.folkrepublik.1`
+  - Sydasiens historia: `s.civilisation.1`, `s.sanskrit.1`, `s.blomstra.1`, `s.storslagen.1`, `s.sultanat.1`
+  - Mellanösterns historia: `s.expansion.1`, `s.mandat.2`
+  - Afrikas historia: `s.indirekt-styre.1`
+  - Amerikas & Oceaniens historia: `s.arbetsplikt.1`
+  - Förväxlingarna gällde mest närliggande ord: *rikssamling/kungadöme*, *befrielsekrig/självständighet/uppror*, *landvinning/erövra*, *representationsreform/tvåkammarriksdag*, *neutralitetspolitik/neutralitet/alliansfri*, *shogunat/shogun*, *ståndssamhälle/stånd*, *kolonialstyre/ockupera/annektera*, *folkrepublik/kommunism/demokratisering*, *civilisation/flodkultur/citadell*, *sanskrit/helig skrift/hymn*, *blomstra/guldålder*, *storslagen/mausoleum*, *sultanat/sultan*, *expansion/erövring*, *mandat/ockupation/Nationernas förbund*, *indirekt styre/kolonialstyre* och *arbetsplikt/knutskrift/vägnät*. *befrielsekrig*, *civilisation* och *sultanat* används också av senare grupper och saknar bild där.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -307,6 +315,23 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - historisk forskning: omkring 70 000 finska krigsbarn, över en miljon emigranter 1850–1930, över 80 dödade vid Stockholms blodbad, omkring 350 000 namn i namninsamlingen 1914, fattigvårdsstrecket avskaffat 1945; missväxtens betydelse för utvandringen och Karl XII-bilden är förenklade
   - personer, museer och fynd i lästexterna är påhittade (t.ex. "Stadsmuseet i Lund")
 - **0.40, bilder:** svagare bilder som klarade testet: *avbilda* (personen skymmer älgen), *fornnordisk* (torshammaren kan läsas som ett T), *gobeläng*, *kalkmålning* och *workshop*. *motiv* (betydelse 2) klarade omgång 2 med medelsäkerhet.
+- **0.41, svenska:**
+  - lemman och böjning att kontrollera mot SAOL: *rikskanslerer*, *ziggurat*, *janitsjar*, *seladon* (genus), *sanskriten*, *mausoleer*, *epos*, *griot* (grioter), *dhow* (dhower), *swahilin*, *maori* (maorier), *aborigin*, *lama* (lamor), *bison* (bisonar), *guldrush*, *smittkoppor*; *frihetstid* och *stormaktstid* har obestämd form som lemma, *rekordåren* bestämd
+  - genomskinliga eller ovanliga sammansättningar: *krigarklass*, *borgstad* (城下町), *gravfigur* (埴輪), *länsfurste* (大名), *hovadel* (公家), *kandake*, *lermoské*, *pyramidtempel*, *sjöfågel* (bilden visar en havsfågel)
+  - *utskrivning* och *reduktion* har bara den historiska betydelsen; *hungerstrejk* för Gandhis fastor är inte helt exakt
+  - ordförrådskontrollen tvingade fram omskrivningar: "riket i Persien", "folket från det historiska Armenien", "den arabiska befolkningen i Palestina", "de tre rikenas tid", "kungens mamma", "några öar till" (Färöarna)
+  - `names` i `coreVocabulary.json` fick några ord som inte är egennamn för att texterna skulle klara kontrollen: *no*, *holländare*, *koreansk*, *förbundet*, *tamil*, *sasaniderna*, *parterna*, *khan*, *shahen*, *mexica*, *quipu*, *moai* m.fl. Bättre vore att lägga in folkslagsord som ordposter.
+  - tokeniseraren delar ord vid á, í, ó och ú, så namn skrivs utan accent (*Bolivar*, *San Martin*, *Cordoba*, *Potosi*). Kan rättas i `WORD_RE`.
+- **0.41, japanska:** termer att granska: ハット党/キャップ党, {摂政|せっしょう} (*riksföreståndare*), {土地回収政策|とちかいしゅうせいさく} (*reduktion*), {土地統合改革|とちとうごうかいかく} (*laga skifte*), ストックホルムの{血浴|けつよく}, {北欧理事会|ほくおうりじかい}, {百済|くだら}, {世宗|せいそう}, {大河文明|たいがぶんめい} (*flodkultur*), {勅令|ちょくれい} (*edikt*), ギリシアの{火|ひ}, {玄室|げんしつ} (*gravkammare*), アヤトラ, {急流|きゅうりゅう} (*katarakt*), ベルリン{会議|かいぎ} (kan förväxlas med Berlinkongressen 1878), キープ（{結縄|けつじょう}）, クリオーリョ, {流刑植民地|るけいしょくみんち}; titeln {古代|こだい}{西|にし}アフリカの{王国|おうこく} trots att Mali och Songhai är medeltida.
+- **0.41, fakta (står i `factSources`, ungefärliga eller omdiskuterade):**
+  - Norden: husbehovsbränningen förbjuden 1855 (trädde i kraft senare), Olof Skötkonung som förste döpte kung, omkring 80 avrättade i Stockholms blodbad (80–100), "över en miljon" emigranter (cirka 1,2 miljoner)
+  - Östasien: Yayois början (omdebatterad), tyfonen 1281, bushido nedskriven senare, Himiko efter Weizhi
+  - Sydasien: indoariernas ankomst, delningen 1947 (10–20 miljoner flyktingar, dödstal några hundra tusen till två miljoner), Aurangzebs religionspolitik, nollan "under och efter Guptatiden"
+  - Mellanöstern: Kungsvägen över 2 500 km, Cheops pyramid nästan 150 m, avlönade pyramidbyggare, folkmordet 1915 (riksdagen 2010), omkring 700 000 flyktingar 1948
+  - Afrika: omkring 600 svenskar i Kongostaten, svenskt stöd till ANC från 1970-talet (1973), megastäder över tio miljoner beroende på avgränsning
+  - Amerika & Oceanien: Inkavägnätet omkring 30 000 km, Cahokia 10 000–20 000 invånare, omkring 4 000 döda på Trail of Tears, 574 erkända urfolk i USA, 4,9 miljoner förslavade till Brasilien, omkring 160 000 deporterade till Australien, Nya Zeeland 1893 som "första landet" med kvinnlig rösträtt (självstyrande land), Haiti som första stat ur ett slavuppror
+  - inga påhittade personer eller platser
+- **0.41, bilder:** *kungadöme/rike* är markerade som synonymer (kan diskuteras eftersom *rike* också kan betyda imperium). Svagare bilder som klarade testet med medelsäkerhet: *amnesti*, *reduktion*, *stift*, *rusttjänst*, *ojämlik*, *övergiven*, *sionism*, *fredsprocess* (duva med olivkvist), *protektorat*, *flerpartisystem*, *förbund*, *omvända*, *reservat*, *kreol*, *markrättighet*. Våldsamma ord (*blodbad*, *avrätta*, *massaker*, *slaveri*) är återhållsamt ritade.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -325,13 +350,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v44`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v45`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Vikingatida samhällen* (SWC-HIS-06-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Nordens historia* (R04-A06-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Berg och kullar* (SWC-NAT-01-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Landskapets former* (R05-A01-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd.
-- **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`.
+- **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.
+- **Integration av grupper:** lägg in grupperna i katalogordning när det går, så blir förkunskapskedjan mellan grupperna rätt utan efterhandsrättning. Integratören behöver bildcommiten, skripten och `spec.json`; körordning: skripten, `npm run visuals:plan`, `vis.py spec.json`, `conf.py` för synonymer, `check.sh`.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.
