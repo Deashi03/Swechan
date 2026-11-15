@@ -124,15 +124,24 @@ const vapour = (pts: number[][], r = 1.6, col: string = H2O) => all(...pts.map((
 const crystal = (x: number, y: number, r: number, col: string = '#bfe3f7') => at(x, y, 1, ...range(6).map((i) => g(`rotate(${i * 60})`, line(`M0 0 L0 ${-r} M0 ${f1(-r * 0.55)} L${f1(r * 0.25)} ${f1(-r * 0.75)} M0 ${f1(-r * 0.55)} L${f1(-r * 0.25)} ${f1(-r * 0.75)}`, col, 2.4), line(`M0 0 L0 ${-r}`, C.ink, 0.5))), circle(0, 0, 2, col, C.ink, 0.6));
 const curtain = (x: number, y: number, w: number, h: number, col: string) => path(`M${x} ${y} C${x + w * 0.3} ${y - 8} ${x + w * 0.6} ${y + 8} ${x + w} ${y} L${x + w} ${y + h} C${x + w * 0.6} ${y + h + 6} ${x + w * 0.3} ${y + h - 6} ${x} ${y + h} Z`, col, null);
 
+/** Round-2 helpers (0.43): check mark, step numbers, glowing tube, light bulb, helium balloon, lake, window pane. */
+const check = (x: number, y: number, r = 7) => all(circle(x, y, r, '#3a9a5a', C.ink, 1.2), path(`M${f1(x - r * 0.45)} ${y} L${f1(x - r * 0.1)} ${f1(y + r * 0.35)} L${f1(x + r * 0.5)} ${f1(y - r * 0.4)}`, 'none', C.white, f1(r * 0.24)));
+const stepNo = (x: number, y: number, n: string) => all(circle(x, y, 6, C.white, C.ink, 1.2), num(x, y + 3.2, n, 9));
+const glowTube = (d: string, col: string, core: string) => all(line(d, col, 7), line(d, core, 2.4));
+const bulb = (x: number, y: number, s = 1) => at(x, y, s, circle(0, -6, 14, 'rgba(255,230,140,0.35)', null), circle(0, -6, 9, '#fff2b0', C.ink, 1.2), line('M-3 -4 L-1 -9 L1 -4 L3 -9', '#e0a030', 1.2), rect(-4.5, 2, 9, 7, C.grey, 1, C.ink, 1), line('M-4.5 5 L4.5 5', C.ink, 0.8));
+const heBalloon = (x: number, y: number, col: string = '#f28fb6') => all(ellipse(x, y, 9, 11, col, C.ink, 1.2), path(`M${x - 2} ${y + 11} L${x} ${y + 9} L${x + 2} ${y + 11} Z`, col, C.ink, 0.8), line(`M${x} ${y + 11} C${x - 4} ${y + 18} ${x + 4} ${y + 22} ${x} ${y + 30}`, C.ink, 0.9));
+const lake = (x: number, y: number, rx: number) => all(ellipse(x, y, rx + 3, f1(rx * 0.32 + 2), '#c9a874', null), ellipse(x, y, rx, f1(rx * 0.32), SEA, C.ink, 1.1));
+const pane = (x: number, y: number, wet: boolean) => all(rect(x, y, 40, 54, '#3d5c80', 2, C.ink, 1.6), rect(x + 3, y + 3, 34, 48, wet ? '#cfe3ee' : '#9fc4e6', 1, null), line(`M${x + 20} ${y + 3} L${x + 20} ${y + 51} M${x + 3} ${y + 27} L${x + 37} ${y + 27}`, '#3d5c80', 2),
+  wet ? all(...[[8, 9], [28, 12], [14, 20], [31, 22], [9, 36], [26, 34], [15, 44], [32, 45]].map(([a, b]) => drop(x + a!, y + b!, 0.6, '#7fbfe6')), line(`M${x + 9} ${y + 40} L${x + 9} ${y + 49} M${x + 26} ${y + 38} L${x + 26} ${y + 49}`, '#7fbfe6', 1.2)) : '');
+
 // ── Motifs ───────────────────────────────────────────────────────────
 export const ATMOSPHERE_MOTIFS: Record<string, Svg> = {
   // 2611 Luftens sammansättning
   'atmo.atmosfär': all(bg(SPACE), stars([[14, 14], [104, 12], [18, 100], [106, 104], [60, 8], [10, 60]]), shell(60, 62, 38, 8), globe(60, 62, 38), circle(60, 62, 46.5, 'none', HL, 2.6), arrow(108, 30, 94, 38, HL, 2.6), sun(14, 30, 5)),
   'atmo.kväve': all(bg(GLASS), airPie(40, 60, 30, 'n2'), num(36, 50, '78', 12, C.white), mol(92, 38, 'n2', 2.2), ring(92, 38, 20), greyed(mol(86, 84, 'o2', 1.4), mol(104, 96, 'ar', 1.4))),
   'atmo.argon': all(bg(GLASS), airPie(40, 60, 30, 'ar'), mol(92, 38, 'ar', 2.4), ring(92, 38, 16), greyed(mol(84, 84, 'n2', 1.4), mol(104, 96, 'o2', 1.4))),
-  'atmo.ädelgas': all(bg('#2a2f45'), line('M14 30 C30 20 40 40 56 30 S82 20 96 32', '#ff7ad9', 6), line('M14 30 C30 20 40 40 56 30 S82 20 96 32', '#ffd2f2', 2), line('M18 52 L98 52', '#c68bff', 6), line('M18 52 L98 52', '#efdcff', 2),
-    rect(10, 26, 6, 10, C.grey, 1, C.ink, 0.8), rect(94, 28, 6, 10, C.grey, 1, C.ink, 0.8), rect(12, 48, 6, 8, C.grey, 1, C.ink, 0.8), rect(98, 48, 6, 8, C.grey, 1, C.ink, 0.8),
-    rect(10, 66, 100, 42, GLASS, 3, C.ink, 1), ...[[24, 80], [48, 92], [72, 78], [96, 94]].map(([x, y]) => mol(x!, y!, 'ar', 1.6)), ring(48, 92, 10), mol(70, 98, 'o2', 1.1, 20), ban(84, 86, 5, 1.8)),
+  'atmo.ädelgas': all(bg('#2a2f45'), glowTube('M12 36 C18 14 26 14 30 28 S42 42 46 22 S56 16 58 30', '#ff5a4a', '#ffd0c8'), heBalloon(84, 26, '#f28fb6'), arrow(100, 40, 100, 18, '#f28fb6', 2), bulb(30, 82, 1.4), glowTube('M60 70 C70 62 80 78 90 70 S108 64 110 72', '#c68bff', '#efdcff'),
+    mol(66, 96, 'ar', 1.4), ball(82, 96, 4, '#f28fb6'), ball(98, 96, 4, '#ff7a5a'), rect(8, 8, 104, 100, 'none', 6, HL, 3)),
   'atmo.vattenånga': all(bg(SKY), rect(4, 86, 112, 26, SEA, 0, null), line('M4 86 L116 86', SEA2, 1.4), sun(100, 18, 7),
     ...[[18, 70], [36, 58], [52, 74], [70, 54], [86, 68], [30, 40], [62, 34], [92, 44]].map(([x, y], i) => mol(x!, y!, 'h2o', 1, i * 40)), ring(70, 54, 10), line('M60 60 L36 22', HL, 1.6, '3 2'),
     circle(28, 22, 13, C.white, C.ink, 1.4), mol(28, 22, 'h2o', 2.2), line('M37 31 L44 38', C.ink, 3), arrow(18, 82, 18, 72, H2O, 1.6), arrow(52, 84, 52, 78, H2O, 1.6), arrow(86, 82, 86, 74, H2O, 1.6)),
@@ -140,8 +149,9 @@ export const ATMOSPHERE_MOTIFS: Record<string, Svg> = {
     ...[[31, 64], [97, 70]].map(([x, y]) => all(circle(x!, y!, 7, SMOG, C.ink, 0.8), circle(x! + 6, y! - 8, 9, SMOG, C.ink, 0.8), circle(x! - 2, y! - 18, 10, SMOG, C.ink, 0.8))), circle(60, 20, 6, '#e8c46a', C.ink, 1), fig(108, C.denim, 'sick', 0.5), oval(60, 64, 54, 22)),
 
   // 2612 Lufttryck
-  'atmo.lufttryck.2': all(bg('#f3f7fb'), ...range(7).map((i) => all(...range(5 - Math.floor(i / 2)).map((j) => mol(14 + i * 16, 92 - j * (10 + i % 2 * 2) - (j > 0 ? j * 3 : 0), i % 3 ? 'n2' : 'o2', 0.9, j * 30)))), field(100, LAND),
-    ...[16, 36, 56, 76, 96].map((x) => arrow(x + 4, 8, x + 4, 26, HL, 2.4)), at(60, 100, 1, rect(-10, -14, 20, 14, C.tan, 1, C.ink, 1.2)), arrow(60, 66, 60, 84, HL, 3), arrow(44, 92, 49, 92, HL, 2), arrow(76, 92, 71, 92, HL, 2)),
+  'atmo.lufttryck.2': all(bg(SKY), rect(4, 4, 112, 20, '#bfdcf0', 3, null), path('M80 112 L102 60 L116 82 L116 112 Z', ROCK, C.ink, 1.2), path('M98 69 L102 60 L106 68 Z', SNOW, null), field(104, LAND), plane(92, 16, 0.7),
+    ...[[0.05, 6], [0.12, 30], [0.2, 54], [0.3, 78]].map(([o, y]) => rect(30, y!, 36, 24, `rgba(63,111,181,${o})`, 0, null)), ...range(24).map((i) => circle(34 + (i * 7) % 28, f1(100 - Math.sqrt(i) * 18), 1.6, N2, null)), rect(30, 6, 36, 96, 'none', 1, HL, 2.4),
+    fig(48, C.green, 'calm', 0.5), arrow(40, 60, 40, 76, HL, 2.6), arrow(56, 60, 56, 76, HL, 2.6)),
   'atmo.luftpelare': all(bg(SKY), rect(4, 4, 112, 20, SPACE, 3, null), stars([[14, 12], [50, 8], [104, 14]]), field(96, LAND), path('M40 96 L80 96 L88 104 L32 104 Z', '#c9a874', C.ink, 1.2),
     rect(40, 10, 40, 86, 'rgba(140,199,232,0.6)', 0, null), ...range(14).map((i) => circle(46 + (i * 13) % 30, 90 - i * 6, 1.8 - i * 0.08, N2, null)), rect(40, 10, 40, 86, 'none', 1, HL, 3),
     at(98, 78, 1, path('M-10 0 L10 0 L7 -14 L-7 -14 Z', C.dark, C.ink, 1.2), path('M-4 -14 C-4 -20 4 -20 4 -14', 'none', C.ink, 1.6)), num(98, 74, '10', 7, C.white), arrow(60, 70, 60, 94, C.ink, 1.8)),
@@ -152,7 +162,8 @@ export const ATMOSPHERE_MOTIFS: Record<string, Svg> = {
     path('M18 98 L18 44 C18 26 52 26 52 44 L52 98 Z', GLASS, C.ink, 1.4), ellipse(35, 70, 11, 14, C.red, C.ink, 1.2), line('M35 84 L35 98', C.ink, 1), box(16, 30, 38, 66),
     greyed(path('M66 98 L66 44 C66 26 100 26 100 44 L100 98 Z', GLASS, C.ink, 1.4), ellipse(83, 80, 6, 8, C.red, C.ink, 1.2), line('M83 88 L83 98', C.ink, 1), ...[[72, 50], [90, 44], [78, 64], [94, 70], [86, 56], [72, 86], [96, 88]].map(([x, y]) => mol(x!, y!, 'n2', 0.8))),
     rect(30, 104, 10, 6, C.grey, 1, C.ink, 1), line('M35 108 L10 108 L10 92', C.ink, 1.6), arrow(26, 50, 10, 50, C.ink, 1.6)),
-  'atmo.hektopascal': all(bg('#f3f7fb'), dial(60, 52, 36, 0.05, C.white, C.grey), num(60, 44, '1013', 13), num(30, 72, '980', 6), num(90, 72, '1040', 6), rect(28, 34, 64, 14, 'none', 3, HL, 2.6), field(100, LAND), house(20, 100, 0.9), tree(100, 100, 0.6)),
+  'atmo.hektopascal': all(bg('#eef2e6'), path('M4 4 L46 4 C40 30 30 50 4 62 Z', '#cfe2b8', C.ink, 1), ...['M50 112 C50 80 80 60 116 56', 'M30 112 C30 66 70 40 116 30', 'M10 4 C40 40 90 20 116 10'].map((d) => line(d, C.dark, 1.4)),
+    rect(52, 38, 34, 14, C.white, 3, C.ink, 1.2), num(69, 49, '1013', 11), rect(48, 34, 42, 22, 'none', 4, HL, 2.8), rect(62, 70, 24, 11, C.white, 3, C.ink, 1), num(74, 79, '990', 8), rect(12, 18, 28, 11, C.white, 3, C.ink, 1), num(26, 27, '1030', 8)),
   'atmo.högtryck': all(bg(SKY), field(100, LAND), sun(60, 22, 8), line('M14 96 C14 40 106 40 106 96', '#7aa6d0', 1.2, '3 2'),
     arrow(40, 40, 40, 80, HL, 3), arrow(60, 40, 60, 84, HL, 3), arrow(80, 40, 80, 80, HL, 3), arrow(48, 94, 18, 94, HL, 2.4), arrow(72, 94, 102, 94, HL, 2.4), house(30, 100, 0.8), tree(90, 100, 0.6), thermo(108, 78, 0.8, C.red, 0.6)),
   'atmo.lågtryck': all(bg('#c9d2dc'), field(100, '#7fae5e'), cloud(40, 24, 1.1, C.grey2), cloud(76, 22, 1.2, C.grey2), ...[30, 44, 70, 86].map((x) => line(`M${x} 36 l-3 8 M${x + 6} 40 l-3 8`, C.denim, 1.4)),
@@ -161,13 +172,13 @@ export const ATMOSPHERE_MOTIFS: Record<string, Svg> = {
     ...[12, 24, 36].map((r) => ellipse(74, 64, r * 1.15, r, 'none', C.dark, 1.3)), ellipse(74, 64, 36 * 1.15, 36, 'none', HL, 3), ...[[74, 28], [33, 64], [115, 64], [74, 100]].map(([x, y]) => circle(x!, y!, 2.6, C.white, C.ink, 1)), circle(74, 64, 3, C.red, C.ink, 1)),
 
   // 2613 Luftfuktighet
-  'atmo.avdunstning': all(bg(SKY), sun(96, 18, 8), rect(4, 76, 112, 36, SEA, 0, null), line('M4 76 L116 76', SEA2, 1.4), ...range(6).map((i) => all(heat(14 + i * 18, 72, 26, H2O, 1.6), arrow(14 + i * 18, 48, 14 + i * 18, 40, H2O, 1.6))), vapour([[22, 30], [44, 24], [70, 32], [88, 40], [56, 46], [34, 52]], 1.8), rect(6, 34, 108, 44, 'none', 3, HL, 2.4)),
-  'atmo.kondensation': all(bg('#eef4f8'), rect(4, 92, 112, 20, '#d9c3a0', 0, null), path('M40 92 L44 34 L80 34 L84 92 Z', GLASS, C.ink, 1.4), path('M42 60 L82 60 L84 92 L40 92 Z', '#bfe3f7', null), ...[[46, 56], [76, 48], [44, 72], [80, 70], [78, 84], [46, 86], [80, 40]].map(([x, y]) => drop(x!, y!, 0.8, '#8cc7e8')),
-    ...[[20, 40], [24, 62], [16, 80], [100, 46], [104, 66], [98, 84]].map(([x, y]) => mol(x!, y!, 'h2o', 0.8)), arrow(26, 48, 40, 54, H2O, 1.6), arrow(96, 58, 84, 62, H2O, 1.6), at(62, 66, 0.9, rect(-6, -6, 12, 12, '#e6f6ff', 2, C.ink, 0.8)), oval(80, 70, 9, 18)),
+  'atmo.avdunstning': all(bg(SKY), sun(60, 14, 6), field(70, '#e2cf9a'), ...[[20, 16], [60, 11], [100, 6]].map(([x, r], i) => all(lake(x!, 62, r!), ...range(3 - i).map((j) => heat(x! - 6 + j * 6, 52, 18, H2O, 1.4)), num(x!, 84, String(i + 1), 9))), arrow(16, 96, 104, 96, HL, 3), rect(6, 26, 108, 44, 'none', 3, HL, 2.2)),
+  'atmo.kondensation': all(bg('#eef4f8'), pane(8, 28, false), vapour([[20, 46], [32, 40], [26, 60], [38, 70]], 1.8), pane(72, 28, true), arrow(52, 55, 68, 55, HL, 3.4), crystal(28, 98, 6, '#7fc0ea'), crystal(92, 98, 6, '#7fc0ea'), oval(92, 55, 24, 30)),
   'atmo.mättad': all(bg('#f6f2ea'), greyed(rect(8, 30, 46, 60, GLASS, 3, C.ink, 1.3), ...[[18, 44], [40, 58], [24, 76], [44, 82]].map(([x, y]) => mol(x!, y!, 'h2o', 0.9))),
     rect(64, 30, 46, 60, GLASS, 3, C.ink, 1.3), ...range(4).flatMap((r) => range(4).map((c) => mol(71 + c * 11, 40 + r * 12, 'h2o', 0.85, (r + c) * 30))), ...[[72, 86], [86, 87], [100, 86]].map(([x, y]) => drop(x!, y!, 0.6)), box(62, 28, 50, 64), thermo(60, 106, 0.5, C.red, 0.5)),
-  'atmo.relativ-luftfuktighet': all(bg('#f6f2ea'), rect(14, 24, 60, 70, GLASS, 3, C.ink, 1.3), ...[[24, 36], [46, 32], [62, 44], [30, 56], [52, 60], [22, 78], [44, 82], [64, 76]].map(([x, y]) => mol(x!, y!, 'h2o', 0.9)),
-    rect(86, 24, 14, 70, C.white, 3, C.ink, 1.3), rect(88, 52, 10, 40, H2O, 2, null), line('M100 38 l4 0 M100 52 l4 0 M100 66 l4 0 M100 80 l4 0', C.ink, 1), rect(84, 22, 18, 74, 'none', 3, HL, 2.6), num(93, 18, '60%', 9), line('M74 52 L86 52', H2O, 1.4, '2 2')),
+  'atmo.relativ-luftfuktighet': all(bg('#f6f2ea'), circle(36, 50, 28, GLASS, C.ink, 1.4), ...[[22, 40], [36, 32], [50, 42], [26, 58], [44, 60], [36, 48]].map(([x, y]) => mol(x!, y!, 'h2o', 0.9)), thermo(10, 70, 0.8, C.red, 0.6),
+    circle(92, 56, 16, GLASS, C.ink, 1.4), ...[[84, 50], [96, 48], [88, 60], [100, 60], [92, 54], [90, 66]].map(([x, y]) => mol(x!, y!, 'h2o', 0.75)), thermo(114, 72, 0.15, COLD, 0.6),
+    rect(16, 86, 40, 18, C.white, 3, C.ink, 1.2), num(36, 99, '50%', 11), rect(72, 86, 40, 18, C.white, 3, C.ink, 1.2), num(92, 99, '100%', 11), rect(13, 83, 102, 24, 'none', 4, HL, 2.6)),
   'atmo.daggpunkt': all(bg('#e9f0f6'), field(96, LAND), ...range(10).map((i) => line(`M${10 + i * 11} 96 l-2 -8 M${10 + i * 11} 96 l2 -8`, LAND2, 1.4)), ...[[16, 88], [38, 89], [60, 88], [82, 89], [104, 88]].map(([x, y]) => drop(x!, y!, 0.6)),
     thermo(40, 72, 0.35, COLD, 1.4), arrow(66, 22, 66, 56, COLD, 2.4), line('M20 50 L104 50', HL, 2.4, '5 3'), oval(82, 88, 30, 6), moon(100, 18, 6)),
   'atmo.hygrometer': all(bg('#efe8de'), rect(26, 24, 68, 70, C.white, 8, C.ink, 1.6), rect(34, 32, 52, 34, '#cfe0c8', 3, C.ink, 1.1), drop(46, 49, 1.6, H2O), num(70, 56, '45', 16), num(84, 56, '%', 8), rect(36, 74, 48, 10, C.grey2, 3, C.ink, 1), rect(36, 74, 22, 10, H2O, 3, null), rect(22, 20, 76, 78, 'none', 9, HL, 2.6)),
@@ -211,7 +222,9 @@ export const ATMOSPHERE_MOTIFS: Record<string, Svg> = {
     path('M20 30 A50 50 0 0 0 20 94', 'none', C.white, 2), arrow(20, 88, 24, 98, C.white, 2), greyed(arrow(60, 74, 60, 94, C.white, 2.4))),
 
   // 2616 Molnbildning
-  'atmo.molnbildning': all(bg(SKY), field(100, LAND), sun(18, 18, 7), arrow(60, 96, 60, 52, HL, 3), vapour([[52, 80], [68, 74], [56, 64], [66, 58]], 1.6), cloud(60, 34, 1.5), ...[[44, 46], [60, 48], [76, 46]].map(([x, y]) => circle(x!, y!, 1.6, H2O, null)), thermo(100, 90, 0.7, C.red, 0.6), thermo(100, 44, 0.25, COLD, 0.6), tree(26, 100, 0.7)),
+  'atmo.molnbildning': all(bg(SKY), field(100, LAND), rect(4, 100, 40, 12, SEA, 0, null), vapour([[20, 92], [38, 88], [22, 78], [38, 74], [24, 66]], 2.2), arrow(30, 96, 30, 62, '#7aa6d0', 2.4), stepNo(12, 82, '1'),
+    thermo(58, 70, 0.15, COLD, 0.8), arrow(40, 58, 62, 40, '#7aa6d0', 2.4), stepNo(12, 52, '2'), line('M20 52 L110 52', '#9aa3ad', 1, '3 3'),
+    cloud(84, 30, 1.4), check(106, 18, 6), oval(84, 30, 28, 14), stepNo(12, 26, '3')),
   'atmo.kondensationskärna': all(bg('#eef4f8'), circle(60, 60, 42, '#dff0fa', C.ink, 1.8), circle(60, 60, 20, '#9fd0ee', C.ink, 1.2), path('M54 56 L60 52 L66 57 L64 64 L56 65 Z', '#b88a5c', C.ink, 1.2), ring(60, 60, 9),
     ...[[30, 34], [94, 38], [26, 86], [92, 88], [60, 24]].map(([x, y]) => all(mol(x!, y!, 'h2o', 0.9), arrow(x! + (60 - x!) * 0.2, y! + (60 - y!) * 0.2, x! + (60 - x!) * 0.5, y! + (60 - y!) * 0.5, H2O, 1.6)))),
   'atmo.sväva': all(bg(SKY), field(102, LAND), ellipse(60, 104, 8, 2, 'rgba(0,0,0,0.15)', null), at(60, 40, 1, line('M0 0 L0 22', C.grey, 1.2), ...range(12).map((i) => { const a = (i / 12) * Math.PI * 2; return line(`M0 0 L${f1(Math.cos(a) * 12)} ${f1(Math.sin(a) * 12 - 6)}`, '#c9ced4', 1); }), circle(0, 23, 2, C.brown, null)),
