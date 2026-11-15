@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.41.0 (släppt 2026-11-15) · **Senast uppdaterad:** 2026-11-15 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.42.0 (släppt 2026-11-15) · **Senast uppdaterad:** 2026-11-15 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 013 publicerade moduler. 1 008 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03) och hela *Historia & humaniora* (R04, sista överämnet *Civilisationer & världsdelars historia* kom i 0.41). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 055 publicerade moduler. 1 050 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) och överämnet *Landskap & geologi* (R05-A01, 0.42) i *Natur & geografi*. De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Landskap & geologi* (R05-A01), det första i rotområdet *Natur & geografi* (R05). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Väder & klimat* (R05-A02) i *Natur & geografi*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 12 419 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 12 789 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Landskap & geologi* (R05-A01) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Väder & klimat* (R05-A02) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -137,6 +137,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Afrikas historia: `s.indirekt-styre.1`
   - Amerikas & Oceaniens historia: `s.arbetsplikt.1`
   - Förväxlingarna gällde mest närliggande ord: *rikssamling/kungadöme*, *befrielsekrig/självständighet/uppror*, *landvinning/erövra*, *representationsreform/tvåkammarriksdag*, *neutralitetspolitik/neutralitet/alliansfri*, *shogunat/shogun*, *ståndssamhälle/stånd*, *kolonialstyre/ockupera/annektera*, *folkrepublik/kommunism/demokratisering*, *civilisation/flodkultur/citadell*, *sanskrit/helig skrift/hymn*, *blomstra/guldålder*, *storslagen/mausoleum*, *sultanat/sultan*, *expansion/erövring*, *mandat/ockupation/Nationernas förbund*, *indirekt styre/kolonialstyre* och *arbetsplikt/knutskrift/vägnät*. *befrielsekrig*, *civilisation* och *sultanat* används också av senare grupper och saknar bild där.
+- **Från 0.42 (21 ord):**
+  - Landskapets former: `s.sträcka-sig.1`, `s.vidsträckt.1`, `s.klippig.1`, `s.naturskön.1`
+  - Bergarter & mineral: `s.sedimentär.1`, `s.metamorf.1`, `s.hårdhet.1`, `s.geologisk.1`
+  - Jordens inre: `s.oceanisk.1`, `s.kontinental.1`, `s.tektonisk.1`, `s.plattektonik.1`, `s.vulkanisk.1`, `s.erosion.1`
+  - Floder, sjöar & hav: `s.nedströms.1`, `s.mild.2`
+  - Is & istider: `s.osorterad.1`
+  - Mark & jordarter: `s.sandig.1`, `s.lerig.1`, `s.lucker.1`, `s.omkomma.1`
+  - Förväxlingarna gällde mest adjektiv mot substantivet de bygger på eller närliggande processer: *sträcka sig/vidsträckt*, *klippig/stenstrand*, *naturskön/utsikt/orörd*, *sedimentär/avlagring*, *metamorf/gnejs/omvandla*, *hårdhet/densitet/hårdhetsskala*, *geologisk/geologi*, *oceanisk/havsbotten*, *kontinental/kontinent/tjocklek*, *tektonisk/plattektonik/plattgräns*, *vulkanisk/vulkan/lava*, *erosion/vittra*, *nedströms/uppströms*, *mild/klimat*, *osorterad/morän*, *sandig/sand*, *lerig/lera/kladdig*, *lucker/gräva/bördig* och *omkomma/olycka/katastrof*. *erosion* används också av senare grupper och saknar bild där.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -332,6 +340,22 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Amerika & Oceanien: Inkavägnätet omkring 30 000 km, Cahokia 10 000–20 000 invånare, omkring 4 000 döda på Trail of Tears, 574 erkända urfolk i USA, 4,9 miljoner förslavade till Brasilien, omkring 160 000 deporterade till Australien, Nya Zeeland 1893 som "första landet" med kvinnlig rösträtt (självstyrande land), Haiti som första stat ur ett slavuppror
   - inga påhittade personer eller platser
 - **0.41, bilder:** *kungadöme/rike* är markerade som synonymer (kan diskuteras eftersom *rike* också kan betyda imperium). Svagare bilder som klarade testet med medelsäkerhet: *amnesti*, *reduktion*, *stift*, *rusttjänst*, *ojämlik*, *övergiven*, *sionism*, *fredsprocess* (duva med olivkvist), *protektorat*, *flerpartisystem*, *förbund*, *omvända*, *reservat*, *kreol*, *markrättighet*. Våldsamma ord (*blodbad*, *avrätta*, *massaker*, *slaveri*) är återhållsamt ritade.
+- **0.42, svenska:**
+  - böjning att kontrollera mot SAOL: *epicentrum/hypocentrum* (-umet, även epicentret/epicentra), *biflod* (bifloder), *lågland/högland* (-länder), *dalbotten* (dalbottnen), *lerskiffrar*, *glimmerskiffrar*, *isälvsdelta* (-deltan/-deltor), *U-dal*; *stelna* och *ström* har egna poster trots att de är vanliga ord
+  - *flod* har två betydelser (vattendrag/högvatten) och är markerad som synonym till *älv*; *kalva* (om is) har ko-betydelsen bara i förklaringen; *skiffer* och *lerskiffer* är skilda poster; *konglomerat* betyder också företagsgrupp
+  - *skikt* (T03) kunde inte användas i *Sedimentära bergarter* eftersom exemplet innehåller *jordklotet*; T02 skriver *lager*
+  - omskrivningar: "is som faller" för hagel, "längs den stora floden" för Göta älv
+- **0.42, japanska:** termer att granska: {先|せん}カンブリア{時代|じだい}の{古|ふる}い{基盤岩|きばんがん} (*urberg*), ソープストーン (*täljsten*), テーブル{状|じょう}の{山|やま} (*platåberg*), ラウク (*rauk*), {外側|そとがわ}の{群島|ぐんとう} (*ytterskärgård*), {終堆石|しゅうたいせき} (*ändmorän*), {羊背岩|ようはいがん} (*rundhäll*), {氷河擦痕|ひょうがさっこん} (*isräffla*), ケトル (*dödisgrop*), {甌穴|おうけつ} (*jättegryta*), パルサ (*pals*), クイッククレイ (*kvicklera*), {漂白層|ひょうはくそう}/{集積層|しゅうせきそう} (*blekjord/rostjord*), {褐色森林土|かっしょくしんりんど} (*brunjord*), {皆伐地|かいばつち} (*kalhygge*), {凍結破砕|とうけつはさい} (*frostsprängning*); {震度|しんど} förklaras bara i den japanska förklaringen till *magnitud*.
+- **0.42, fakta (står i `factSources`, ungefärliga eller omdiskuterade):**
+  - landskap: Kebnekaise "drygt 2 000 m", Kinnekulle omkring 300 m, Sveriges öar "mer än 200 000" (267 570 enligt SCB 2013), Japan 14 125 öar, Stockholms skärgård omkring 30 000 öar
+  - berggrund: Falu gruvas andel av världens koppar ("en stor del", källan säger ofta två tredjedelar), Kirunamalmens järnhalt "ofta över sextio procent", Sveriges andel av EU:s järnmalm 80–90 %
+  - jordens inre: fjällen "kanske lika höga som Himalaya", omkring 18 000 döda eller försvunna i Tohoku 2011, Sakurajimas utbrott, plattornas hastighet 3–4 cm per år, Nordamerikanska plattan/Ochotskplattan vid Japan
+  - vatten: Göta kanal 58 slussar och 1832, Klarälven–Göta älv cirka 720 km, Njupeskär 93 m, vattenkraft cirka 40 % av elen, tidvatten på västkusten "några decimeter", flaskposten 1886/2018
+  - is: Storglaciären mätt sedan 1945/46, Weichsel, EPICA 800 000 år, morän på cirka 75 % av Sveriges yta, Baltiska issjöns tömning, landhöjningen vid Skuleberget 286 m
+  - mark: Tuveskredet 1977 (omkring 65 hus, nio döda), markanvändning enligt SCB 2020, åkermarkens minskning sedan 1920-talet
+  - personer i lästexterna är påhittade och markerade så
+- **0.42, bilder:** *omkomma* och skred/jordbävning är återhållsamt ritade. Svagare bilder som klarade testet med medelsäkerhet: *stenig*, *skuggig*, *karg*, *smalna av*, *frodig*, *ödslig*, *flack* (tallrik), *urberg*, *densitet*, *glans* (2), *halt*, *geologi*, *magmatisk*, *process*, *glida isär* (2), *kontinentaldrift*, *efterskalv*, *slocknad*, *veckning*, *litosfär*, *bergskedjebildning*, *sjörik*, *organisk*, *näringsfattig* och *forma* (lerskål).
+- **0.42, arbetsform:** etappen kördes i samma session som 0.41 på produktägarens uttryckliga begäran. T03 och T06 blev klara före de grupper som kommer före dem i katalogen; T03:s förkunskap rättades i efterhand, och T06:s innehåll backades och lades in först efter T05.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -350,14 +374,15 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v45`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v46`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Berg och kullar* (SWC-NAT-01-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Landskapets former* (R05-A01-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Soligt och molnigt* (SWC-NAT-02-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Vädrets vardagsord* (R05-A02-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.
-- **Integration av grupper:** lägg in grupperna i katalogordning när det går, så blir förkunskapskedjan mellan grupperna rätt utan efterhandsrättning. Integratören behöver bildcommiten, skripten och `spec.json`; körordning: skripten, `npm run visuals:plan`, `vis.py spec.json`, `conf.py` för synonymer, `check.sh`.
+- **Testtimeout:** när tre gruppagenter kör vitest samtidigt kan tunga tester (`vocabularyCheck`, `learning`, `tools`) slå i 60-sekundersgränsen. Kör då om de testfilerna separat; i CI räcker en omkörning av jobbet.
+- **Integration av grupper:** lägg in grupperna i katalogordning när det går. Blir en senare grupp klar först och delar poster med en tidigare grupp som ännu inte är inlagd: backa den senare gruppens innehåll (`git checkout -- src/content/data && git clean -fdq src/content/data`), lägg in den tidigare först och låt den senare synka och referera dess poster, så blir förkunskapskedjan mellan grupperna rätt utan efterhandsrättning. Integratören behöver bildcommiten, skripten och `spec.json`; körordning: skripten, `npm run visuals:plan`, `vis.py spec.json`, `conf.py` för synonymer, `check.sh`.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.
