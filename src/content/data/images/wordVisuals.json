@@ -136700,20 +136700,17 @@
    "quiz": false
   },
   {
-   "senseId": "s.uppklarnande.1",
-   "kind": "illustration",
-   "motif": "neder.uppklarnande",
-   "group": "regnskur",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.kraftig.3",
    "kind": "illustration",
    "motif": "neder.kraftig.3",
    "group": "regnskur",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.43.0",
+    "hash": "9bad5664"
+   }
   },
   {
    "senseId": "s.snöfall.1",
@@ -136791,14 +136788,6 @@
    "motif": "neder.åskväder",
    "group": "åskväder",
    "quiz": false
-  },
-  {
-   "senseId": "s.urladdning.1",
-   "kind": "illustration",
-   "motif": "neder.urladdning",
-   "group": "åskväder",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.blixt.1",
@@ -136912,14 +136901,6 @@
    "quiz": false
   },
   {
-   "senseId": "s.frostig.1",
-   "kind": "illustration",
-   "motif": "neder.frostig",
-   "group": "frost",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.isblomma.1",
    "kind": "illustration",
    "motif": "neder.isblomma",
@@ -137020,7 +137001,12 @@
    "motif": "neder.nederbördsrik",
    "group": "väderstation",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.43.0",
+    "hash": "1f8ef5ea"
+   }
   },
   {
    "senseId": "s.torrperiod.1",
@@ -137048,7 +137034,12 @@
    "motif": "neder.luftmassa",
    "group": "front.3",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.43.0",
+    "hash": "951c0a25"
+   }
   },
   {
    "senseId": "s.kalluft.1",
@@ -137077,14 +137068,6 @@
    "motif": "neder.kallfront",
    "group": "front.3",
    "quiz": false
-  },
-  {
-   "senseId": "s.tränga-undan.1",
-   "kind": "illustration",
-   "motif": "neder.tränga-undan",
-   "group": "front.3",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.ocklusion.1",
