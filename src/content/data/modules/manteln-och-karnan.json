@@ -1,0 +1,176 @@
+{
+ "id": "m.manteln-och-karnan",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Manteln och kärnan",
+ "titleJa": "マントルと{核|かく}",
+ "descriptionSv": "Manteln och kärnan: jordens inre, mantel, temperatur, grad, glödhet, järn, smälta, flytande, kärna, yttre kärna, inre kärna, tryck, trögflytande, konvektionsström, kompass och magnetfält.",
+ "descriptionJa": "マントルと{核|かく}：{地球|ちきゅう}の{内部|ないぶ}、マントル、{温度|おんど}、{度|ど}、{燃|も}えるように{熱|あつ}い、{鉄|てつ}、{溶|と}ける、{液体|えきたい}の、{核|かく}、{外核|がいかく}、{内核|ないかく}、{圧力|あつりょく}、{粘|ねば}り{気|け}のある、{対流|たいりゅう}、{方位磁石|ほういじしゃく}、{磁場|じば}。",
+ "categoryId": "R05-A01-T03",
+ "tags": [
+  "natur",
+  "geologi",
+  "jordens inre"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.jordskorpan"
+ ],
+ "related": [],
+ "recommendedOrder": 2522,
+ "words": [
+  {
+   "senseId": "s.jordens-inre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mantel.2",
+   "active": true
+  },
+  {
+   "senseId": "s.temperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glödhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.järn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smälta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flytande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yttre-kärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inre-kärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryck.2",
+   "active": true
+  },
+  {
+   "senseId": "s.trögflytande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konvektionsström.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kompass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetfält.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En resa mot jordens mitt",
+  "paragraphs": [
+   "Under jordskorpan börjar jordens inre. Ingen människa har varit där, men forskarna vet ändå ganska mycket om det. Jordens inre består av två stora delar: manteln och kärnan.",
+   "Manteln är ungefär 2 900 kilometer tjock och är den största delen av jordklotet. Den består av het sten. Stenen i manteln är fast, men den är så het att den kan röra sig mycket långsamt, några centimeter om året. Man kan säga att den är trögflytande.",
+   "I manteln finns konvektionsströmmar. Het sten går långsamt uppåt, blir kallare och går sedan nedåt igen. Det fungerar ungefär som när man kokar soppa i en kastrull.",
+   "Kärnan består mest av järn. I den yttre kärnan är temperaturen över 4 000 grader, så järnet har smält och är flytande. När det flytande järnet rör sig skapas jordens magnetfält. Det är därför en kompass pekar mot norr.",
+   "Längst in finns den inre kärnan. Allt är glödhett där nere. Den inre kärnan är ungefär lika het som solens yta, omkring 5 000–6 000 grader. Ändå är den inre kärnan fast. Det beror på att trycket är så stort där, över tre miljoner gånger större än vid jordens yta."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken är den största delen av jordklotet?",
+    "options": [
+     "Jordskorpan",
+     "Manteln",
+     "Den yttre kärnan",
+     "Den inre kärnan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Manteln är ungefär 2 900 kilometer tjock och är den största delen av jordklotet.",
+    "explanationJa": "マントルが{地球|ちきゅう}のいちばん{大|おお}きな{部分|ぶぶん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad består kärnan mest av?",
+    "options": [
+     "Järn",
+     "Sten",
+     "Vatten",
+     "Guld"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kärnan består mest av järn.",
+    "explanationJa": "{核|かく}はおもに{鉄|てつ}でできています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Järnet i den yttre kärnan är fast.",
+    "correct": false,
+    "explanationSv": "… så järnet har smält och är flytande.",
+    "explanationJa": "{外核|がいかく}の{鉄|てつ}は{溶|と}けて{液体|えきたい}になっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför är den inre kärnan fast, fast den är så het?",
+    "options": [
+     "Den består av is",
+     "Den är kallare än manteln",
+     "Den rör sig mycket snabbt",
+     "Trycket är mycket stort"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det beror på att trycket är så stort där …",
+    "explanationJa": "{圧力|あつりょく}がとても{大|おお}きいからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Utan den yttre kärnan skulle en kompass inte peka mot norr.",
+    "correct": true,
+    "explanationSv": "När det flytande järnet rör sig skapas jordens magnetfält. Det är därför en kompass pekar mot norr.",
+    "explanationJa": "{磁場|じば}は{外核|がいかく}の{液体|えきたい}の{鉄|てつ}によって{作|つく}られます。"
+   }
+  ],
+  "factSources": [
+   "Manteln sträcker sig från jordskorpan ned till cirka 2 900 km djup och utgör cirka 84 procent av jordens volym; den är i huvudsak fast men rör sig långsamt (några cm per år) genom konvektion (Encyclopaedia Britannica, \"mantle\"; USGS, \"Inside the Earth\").",
+   "Yttre kärnan (cirka 2 900–5 150 km djup) består av flytande järn och nickel med en temperatur på cirka 4 000–5 000 °C; rörelserna i den skapar jordens magnetfält (Britannica, \"core\", \"geomagnetic field\"; British Geological Survey).",
+   "Inre kärnan har en radie på cirka 1 220 km och en temperatur på cirka 5 000–6 000 °C, ungefär som solens yta (cirka 5 500 °C). Den är fast på grund av trycket, cirka 330–360 GPa, vilket är över tre miljoner gånger lufttrycket vid jordytan (Britannica, \"core\"; USGS)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om manteln och kärnan och om hur man kan veta vad som finns långt ner i jorden.",
+  "discussionPoints": [
+   "Vad tycker du är mest förvånande med jordens inre?",
+   "Hur tror du att forskarna kan veta något om kärnan, fast ingen har varit där?",
+   "Har du använt en kompass? När då?",
+   "Kan du komma på något annat som är trögflytande?"
+  ]
+ }
+}
