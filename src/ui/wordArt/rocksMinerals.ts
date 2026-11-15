@@ -116,9 +116,6 @@ const melt = (cx: number, cy: number, r: number) => all(circle(cx, cy, r + 5, 'r
   path(`M${cx - r} ${cy} C${cx - r} ${cy - r * 1.2} ${cx + r} ${cy - r * 1.2} ${cx + r} ${cy} C${cx + r} ${cy + r * 0.9} ${cx + r * 0.3} ${cy + r} ${cx} ${cy + r * 0.8} C${cx - r * 0.4} ${cy + r * 1.1} ${cx - r} ${cy + r * 0.8} ${cx - r} ${cy} Z`, HOT, C.ink, 1.3),
   ellipse(cx - r * 0.1, cy - r * 0.1, r * 0.5, r * 0.35, HOT2, null),
   line(`M${cx - r * 0.5} ${cy - r - 4} q-2 -4 0 -7 q2 -3 0 -6 M${cx + r * 0.4} ${cy - r - 4} q-2 -4 0 -7 q2 -3 0 -6`, HOT, 1.4));
-/** A thermometer, bulb at (x, y); level 0–1. */
-const thermo = (x: number, y: number, level: number, col: string = C.red, s = 1) => at(x, y, s, rect(-3, -30, 6, 30, C.white, 3, C.ink, 1.2), rect(-1.5, f1(-28 * level), 3, f1(28 * level), col, 1.5, null), circle(0, 2, 5, col, C.ink, 1.2),
-  line('M3 -24 l3 0 M3 -18 l3 0 M3 -12 l3 0 M3 -6 l3 0', C.ink, 0.8));
 /** A thick grey pressure arrow from (x1,y1) to (x2,y2). */
 const press = (x1: number, y1: number, x2: number, y2: number) => arrow(x1, y1, x2, y2, '#6f7680', 5);
 const hourglass = (x: number, y: number, s = 1) => at(x, y, s, rect(-9, -15, 18, 3, WOOD, 1, C.ink, 1.1), rect(-9, 12, 18, 3, WOOD, 1, C.ink, 1.1), path('M-7 -12 L7 -12 L1 0 L7 12 L-7 12 L-1 0 Z', '#e9f3f8', C.ink, 1.2), path('M-4 -8 L4 -8 L0.6 -1 L-0.6 -1 Z', SAND, null), path('M-6 12 L6 12 L0 6 Z', SAND, null));
@@ -153,7 +150,6 @@ const miner = (x: number, h = 1, mood: Mood = 'calm', lamp = true) => all(fig(x,
 const forearm = (x1: number, y1: number, x2: number, y2: number, col: string = C.skin) => all(line(`M${x1} ${y1} L${x2} ${y2}`, C.ink, 10), line(`M${x1} ${y1} L${x2} ${y2}`, col, 7.6), circle(x2, y2, 5.4, col, C.ink, 1.3));
 const glint = (x: number, y: number, r = 3) => sparkle(x, y, r, C.white);
 const motion = (x: number, y: number, dir = -1) => line(`M${x} ${y} l${dir * 6} 0 M${x} ${y + 5} l${dir * 9} 0 M${x} ${y + 10} l${dir * 6} 0`, GREY, 1.4);
-const flame = (x: number, y: number, s = 1) => at(x, y, s, path('M0 0 C-8 0 -9 -8 -4 -14 C-4 -9 -1 -9 -1 -12 C-1 -18 3 -20 4 -24 C6 -18 10 -12 9 -6 C8 -2 5 0 0 0 Z', HOT, C.ink, 1.1), path('M0 -2 C-4 -2 -4 -7 -1 -10 C0 -7 3 -8 3 -12 C6 -8 6 -3 0 -2 Z', HOT2, null));
 const cart = (x: number, y: number, s = 1, load: string = IRON) => at(x, y, s, path('M-14 -14 L14 -14 L11 0 L-11 0 Z', '#7a6a5a', C.ink, 1.3), path('M-13 -14 C-8 -21 8 -21 13 -14 Z', load, C.ink, 1), circle(-7, 2, 3, C.dark, C.ink, 1), circle(7, 2, 3, C.dark, C.ink, 1));
 const bar = (x: number, y: number, s: number, col: string) => at(x, y, s, path('M-10 0 L10 0 L7 -6 L-7 -6 Z', col, C.ink, 1.2), line('M-6 -4.5 L5 -4.5', 'rgba(255,255,255,0.7)', 1));
 const tree = (x: number, y: number, s = 1) => at(x, y, s, rect(-1.5, -8, 3, 8, WOOD, 0.5, C.ink, 0.9), circle(0, -12, 6, C.green, C.ink, 1));
@@ -163,6 +159,13 @@ const seedling = (x: number, y: number, stage: number, col = C.green) => stage =
   : stage === 1 ? all(line(`M${x} ${y} L${x} ${y - 10}`, col, 2), ellipse(x - 4, y - 11, 4, 2, col, C.ink, 0.8), ellipse(x + 4, y - 11, 4, 2, col, C.ink, 0.8))
   : stage === 2 ? all(line(`M${x} ${y} L${x} ${y - 20}`, '#6b8f3a', 2.4), ...[[-6, -10], [6, -14], [-6, -18], [5, -21]].map(([dx, dy]) => ellipse(x + dx!, y + dy!, 5, 2.4, col, C.ink, 0.8)))
   : all(rect(x - 2, y - 16, 4, 16, WOOD, 1, C.ink, 1), circle(x, y - 26, 12, col, C.ink, 1.2), circle(x - 4, y - 24, 2, C.red, null), circle(x + 5, y - 29, 2, C.red, null));
+
+/** A cog wheel. */
+const gear = (x: number, y: number, r: number, col: string = '#9aa3ad') => all(...Array.from({ length: 8 }, (_, i) => rot(x, y, i * 45, 1, rect(-2.6, -r - 3.4, 5.2, 5, col, 1, C.ink, 1))), circle(x, y, r, col, C.ink, 1.3), circle(x, y, r * 0.35, C.white, C.ink, 1));
+const drip = (x: number, y: number, s = 1, col = '#5aa8e0') => path(`M${x} ${f1(y - 5 * s)} C${f1(x + 4 * s)} ${y} ${f1(x + 3 * s)} ${f1(y + 4 * s)} ${x} ${f1(y + 4 * s)} C${f1(x - 3 * s)} ${f1(y + 4 * s)} ${f1(x - 4 * s)} ${y} ${x} ${f1(y - 5 * s)} Z`, col, C.ink, 0.8);
+const sunI = (x: number, y: number, r = 5) => all(...Array.from({ length: 8 }, (_, i) => { const a = (i / 8) * Math.PI * 2; return line(`M${f1(x + Math.cos(a) * (r + 2))} ${f1(y + Math.sin(a) * (r + 2))} L${f1(x + Math.cos(a) * (r + 5))} ${f1(y + Math.sin(a) * (r + 5))}`, GOLD, 1.6); }), circle(x, y, r, C.yellow, C.ink, 1.1));
+const moonI = (x: number, y: number, r = 6) => path(`M${x + 2} ${y - r} A${r} ${r} 0 1 0 ${x + 2} ${y + r} A${f1(r * 0.75)} ${f1(r * 0.75)} 0 1 1 ${x + 2} ${y - r} Z`, '#f3e7a8', C.ink, 1.1);
+const ammonite = (x: number, y: number, s = 1, col = '#b89a6a') => at(x, y, s, circle(0, 0, 9, col, C.ink, 1.2), path('M0 0 C2 -2 4 0 3 3 C1 6 -4 5 -5 1 C-6 -4 -1 -8 4 -7', 'none', C.ink, 1), line('M0 -9 L0 -6 M6.4 -6.4 L4.4 -4.4 M9 0 L6 0 M6.4 6.4 L4.4 4.4 M0 9 L0 6 M-6.4 6.4 L-4.4 4.4 M-9 0 L-6 0', 'rgba(43,42,51,0.5)', 0.8));
 
 export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
   // ── 2511 Magmatiska bergarter ──
@@ -176,9 +179,11 @@ export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
   /** urberg: a very old, smooth, rounded rock dome of pink and grey bands rising from the ground, with a large hourglass in front and many thin time rings on its side. */
   'berg.urberg': all(bg(SKY), clip('bUr', 'M8 112 C12 70 40 52 66 54 C92 56 110 80 112 112 Z', foldTex(8, 52, 104, 62, GN1, '#c99a8a', 8, 3, 1.2), dots(8, 52, 104, 62, 80, '#6e6a70', 7, 0.9)),
     path('M8 112 C12 70 40 52 66 54 C92 56 110 80 112 112 Z', 'none', C.ink, 1.8), ground, path('M30 62 C34 58 40 58 44 60', 'none', '#7aa860', 3), hourglass(60, 86, 1.25), ...[0, 1, 2, 3].map((i) => circle(98, 34, 5 + i * 3.2, 'none', '#b8a07a', 1)), circle(98, 34, 2, '#b8a07a', null)),
-  /** magmatisk: molten orange stone (thermometer high) → arrow with blue cooling marks → the same stone hard and speckled like granite (thermometer low). */
-  'berg.magmatisk': all(bg(), ground, melt(30, 66, 18), thermo(12, 104, 0.9, C.red, 0.8), arrow(52, 66, 68, 66, C.accent, 3), line('M56 56 q2 -3 4 0 q2 3 4 0 M56 76 q2 -3 4 0 q2 3 4 0', C.sky, 1.6),
-    clip('bMg', lumpD(92, 70, 18, 15, 5), granTex(72, 52, 40, 36, 13, 2.8)), lump(92, 70, 18, 15, 'none', 5, 1.6), thermo(108, 104, 0.2, C.sky, 0.8)),
+  /** magmatisk: where the rock comes from – a glowing lump of molten stone on the left, with dashed lines running back to it from three finished hard rocks (speckled granite, dark basalt, red porphyry); a grey layered rock with no line stands apart as contrast. */
+  'berg.magmatisk': all(bg(), ground, melt(24, 40, 14), line('M38 36 L62 26 M38 44 L84 50 M36 50 L58 74', C.accent, 1.8, '4 3'),
+    clip('bMg1', lumpD(72, 24, 14, 11, 5), granTex(56, 10, 32, 28, 13, 2.6)), lump(72, 24, 14, 11, 'none', 5, 1.5),
+    lump(96, 52, 13, 10, BAS, 6), dots(84, 44, 24, 16, 30, '#7a7c86', 7, 0.6), lump(68, 78, 13, 10, '#8a3f36', 8), ...[[63, 76], [72, 80], [70, 72], [76, 78]].map(([x, y]) => rect(x! - 2, y! - 1.2, 4, 2.4, '#f1d6c8', 0.4, null)),
+    greyed(block(86, 88, 24, 20, SANDST, layersTex(86, 88, 24, 20, [SANDST, '#c9a070', LIME, '#a88a6a']), 5, 'bMg2'))),
   /** djupbergart: a cut through the ground – a thin green surface with a tree at the top, and far down a body of speckled rock cooling slowly (hourglass); a depth arrow runs from the surface down to it. */
   'berg.djupbergart': all(bg(SKY), rect(4, 22, 112, 4, GRASS, 0, C.ink, 1), tree(30, 22, 1), house(80, 22, 0.8), rect(4, 26, 112, 86, '#b3a898', 0, C.ink, 1), dots(4, 26, 112, 86, 70, '#8e8476', 9, 1),
     clip('bDj', 'M30 104 C24 84 46 72 66 74 C88 76 98 90 92 104 Z', granTex(22, 70, 80, 36, 17, 3.2)), path('M30 104 C24 84 46 72 66 74 C88 76 98 90 92 104 Z', 'none', C.accent, 2.2),
@@ -222,10 +227,9 @@ export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
   'berg.pressa-ihop': all(bg(), ground, ...[0, 1, 2, 3].map((i) => rect(10, 108 - (i + 1) * 13 + 2, 36, 10, [SANDST, '#c9a070', LIME, '#a88a6a'][i]!, 2, C.ink, 1)), ...[0, 1, 2, 3].map((i) => dots(10, 108 - (i + 1) * 13 + 2, 36, 10, 8, '#7a6a5a', 80 + i, 0.8)),
     rect(8, 46, 40, 10, '#5d6470', 2, C.ink, 1.3), press(28, 18, 28, 42), arrow(54, 84, 66, 84, C.accent, 3),
     ...[0, 1, 2, 3].map((i) => rect(72, 108 - (i + 1) * 6, 38, 6, [SANDST, '#c9a070', LIME, '#a88a6a'][i]!, 0, C.ink, 1)), rect(70, 74, 42, 10, '#5d6470', 2, C.ink, 1.3), press(91, 40, 91, 70), press(78, 46, 82, 70), press(104, 46, 100, 70)),
-  /** sedimentär: sand, small stones and shells sinking through water to the bottom and settling in layers → a layered rock block with a fossil shell in it. */
-  'berg.sedimentär': all(bg(), water(6, 14, 54, 70, '#a6d4ee'), dots(10, 20, 46, 40, 24, '#b08a50', 91, 1.3), shell(22, 40, 0.5), scallop(44, 30, 0.5), ...[[16, 52], [34, 56], [50, 50]].map(([x, y]) => arrow(x!, y!, x!, y! + 10, '#6f7680', 1.6)),
-    layersTex(6, 84, 54, 26, [SANDST, '#c9a070', LIME, '#a88a6a']), rect(6, 84, 54, 26, 'none', 0, C.ink, 1.4), arrow(64, 76, 74, 76, C.accent, 3),
-    block(78, 60, 30, 48, LIME, all(layersTex(78, 60, 30, 48, ['#e3c48a', '#c9a070', LIME, '#a88a6a', '#e3c48a', '#bfa080']), g('translate(93 86) scale(0.7)', path('M0 0 C-9 0 -10 -10 -3 -12 C4 -14 9 -8 7 -2 C5 3 -2 3 -3 -1 C-4 -5 1 -7 3 -4', '#8a7a62', C.ink, 1.2))), 6, 'bSd'), ground),
+  /** sedimentär: the finished rock – a large block of stone built of clear horizontal layers in sandy colours with a small fossil shell in one layer; a grey speckled granite block without layers stands beside it as contrast. */
+  'berg.sedimentär': all(bg(), ground, block(8, 40, 62, 68, LIME, all(layersTex(8, 40, 62, 68, ['#e3c48a', '#c9a070', LIME, '#a88a6a', '#e3c48a', '#bfa080', LIME, '#c9a070']), ammonite(44, 76, 0.9), shell(24, 94, 0.6, '#8a7a62')), 8, 'bSd'),
+    greyed(block(84, 80, 26, 28, GRAN, granTex(84, 80, 26, 28, 95, 3.4), 6, 'bSd2'))),
   /** sandsten: a cut block of yellow-brown stone made of sand grains, with faint layers; beside it a small pile of loose sand and an arrow from the sand to the stone. */
   'berg.sandsten': all(bg(), ground, block(40, 50, 60, 58, SANDST, all(layersTex(40, 50, 60, 58, [SANDST, '#d9b47a', SANDST, '#d4ab70', SANDST]), dots(40, 50, 60, 58, 320, '#a8844a', 101, 0.7)), 8, 'bSs'),
     path('M8 110 C10 96 26 92 32 110 Z', SAND, C.ink, 1.2), dots(10, 98, 22, 12, 30, '#a8844a', 103, 0.8), arrow(22, 88, 34, 74, C.accent, 2.4)),
@@ -254,16 +258,19 @@ export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
   'berg.omvandla': all(bg(), ground, circle(18, 30, 9, C.yellow, C.ink, 1.4), ...Array.from({ length: 8 }, (_, i) => { const a = (i / 8) * Math.PI * 2; return line(`M${f1(18 + Math.cos(a) * 12)} ${f1(30 + Math.sin(a) * 12)} L${f1(18 + Math.cos(a) * 16)} ${f1(30 + Math.sin(a) * 16)}`, GOLD, 2); }),
     arrow(30, 44, 42, 58, C.accent, 2.6), path('M40 92 L56 64 L84 64 L68 92 Z', '#2f4a7a', C.ink, 1.4), line('M48 78 L76 78 M60 64 L52 92 M72 64 L64 92', '#8cb4e0', 1), line('M62 92 L62 106 M54 106 L70 106', C.ink, 2),
     arrow(80, 82, 90, 74, C.accent, 2.6), circle(102, 56, 10, C.yellow, C.ink, 1.4), rect(98, 66, 8, 7, C.grey, 1, C.ink, 1.1), ...[-1, 0, 1].map((i) => line(`M${102 + i * 13} ${40 - (i === 0 ? 2 : 0)} l${i * 3} -5`, GOLD, 2))),
-  /** metamorf: a layered rock → a box with a flame below, pressure arrows above and a high thermometer → a new rock with wavy light and dark bands. */
-  'berg.metamorf': all(bg(), ground, block(6, 80, 22, 28, SANDST, layersTex(6, 80, 22, 28, [SANDST, '#c9a070', LIME, '#a88a6a']), 5, 'bMt1'), arrow(32, 92, 40, 92, C.accent, 2.4),
-    rect(42, 70, 34, 30, '#f3e6dc', 3, C.ink, 1.4), rect(50, 80, 18, 14, '#b9a48a', 1, C.ink, 1), flame(58, 112, 0.7), press(59, 40, 59, 66), thermo(84, 74, 0.95, C.red, 0.7), arrow(78, 98, 86, 98, C.accent, 2.4),
-    block(88, 80, 22, 28, GN1, foldTex(88, 80, 22, 28, GN1, GN2, 6, 2.4, 1), 5, 'bMt2')),
+  /** metamorf: the changed rock – a big block whose minerals lie in light and dark bands that are bent and squeezed into waves, with pink grains in the light bands; a small grey block of ordinary speckled granite stands beside it as contrast. */
+  'berg.metamorf': all(bg(), ground, block(8, 40, 64, 68, GN1, all(foldTex(8, 34, 64, 80, GN1, GN2, 9, 6, 1.2), grains(8, 40, 64, 68, 18, 1.8, [PINK, '#f0ece6'], 251, 0.3)), 8, 'bMt'),
+    greyed(block(86, 82, 24, 26, GRAN, granTex(86, 82, 24, 26, 253, 3.2), 6, 'bMt2'))),
   /** gnejs: a rounded rock by the sea with wavy light and dark bands running through it, some of them bent. */
   'berg.gnejs': all(bg(SKY), water(4, 84, 112, 28), clip('bGn', 'M6 104 C8 70 34 48 64 48 C92 48 112 70 114 104 Z', foldTex(6, 44, 108, 62, GN1, GN2, 11, 3.4, 1.4)),
     path('M6 104 C8 70 34 48 64 48 C92 48 112 70 114 104 Z', 'none', C.ink, 1.8), line('M6 104 L114 104', C.ink, 1.2)),
-  /** veckad: a rock face whose coloured layers are bent into big waves, like folded cloth; a small grey block with straight layers stands below as contrast. */
-  'berg.veckad': all(bg(), clip('bVk', rectD(8, 12, 104, 66), foldTex(8, 6, 104, 76, LIME, '#b0784e', 8, 9, 1.3)), rect(8, 12, 104, 66, 'none', 2, C.ink, 1.8),
-    greyed(block(70, 90, 30, 18, LIME, layersTex(70, 90, 30, 18, [LIME, '#b0784e', LIME, '#b0784e']), 5, 'bVk2')), ground),
+  /** veckad: a rock wall seen at an angle whose layers are bent into big arches and troughs, with a darker side face showing the bends go deep into the rock; a small grey block with straight, flat layers stands below as contrast. */
+  'berg.veckad': all(bg(SKY), path('M14 86 L24 74 L116 74 L106 86 Z', '#9a8a70', C.ink, 1.2),
+    path('M96 86 L106 74 L106 14 L96 26 Z', '#8a6a4a', C.ink, 1.2), line('M96 40 C100 30 103 26 106 22 M96 58 C100 48 103 40 106 36 M96 74 C100 66 103 58 106 52', '#5a3a2a', 1.4),
+    clip('bVk', rectD(14, 26, 82, 60), rect(14, 26, 82, 60, '#b0784e', 0, null), ...[0, 1, 2, 3, 4, 5].map((i) => path(`M${8 + i * 7} 90 C${8 + i * 7} ${f1(4 + i * 11)} ${102 - i * 7} ${f1(4 + i * 11)} ${102 - i * 7} 90`, 'none', i % 2 ? '#b0784e' : LIME, 7.4)),
+      ...[0, 1, 2, 3, 4, 5].map((i) => path(`M${f1(4.3 + i * 7)} 90 C${f1(4.3 + i * 7)} ${f1(0 + i * 11)} ${f1(105.7 - i * 7)} ${f1(0 + i * 11)} ${f1(105.7 - i * 7)} 90`, 'none', 'rgba(43,42,51,0.4)', 0.8))),
+    path('M14 26 L24 14 L106 14 L96 26 Z', '#d9c9a8', C.ink, 1.2), rect(14, 26, 82, 60, 'none', 0, C.ink, 1.8),
+    greyed(block(18, 94, 34, 14, LIME, layersTex(18, 94, 34, 14, [LIME, '#b0784e', LIME, '#b0784e']), 4, 'bVk2')), ground),
   /** klyva: an axe coming down into a log on a chopping block, the log splitting lengthwise into two halves that fall apart. */
   'berg.klyva': all(bg(), ground, rect(36, 92, 48, 16, '#8a5a3a', 2, C.ink, 1.4), ellipse(60, 92, 24, 5, '#c99a6a', C.ink, 1.2),
     path('M42 92 L46 50 L58 48 L58 92 Z', '#d9b07a', C.ink, 1.3), path('M62 92 L62 48 L74 50 L78 92 Z', '#d9b07a', C.ink, 1.3), ellipse(52, 49, 6, 2.4, '#e9cfa0', C.ink, 1), ellipse(68, 49, 6, 2.4, '#e9cfa0', C.ink, 1),
@@ -293,10 +300,10 @@ export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
   /** glans: light falls on two stones – a gold-coloured cube that shines strongly with bright highlights and sparkles, and a grey dull lump beside it as contrast. */
   'berg.glans.2': all(bg(), ground, ...[0, 1, 2].map((i) => line(`M${14 + i * 10} 8 L${40 + i * 8} 50`, '#f6d77a', 2.4)), cube(30, 104, 38, GOLD), path('M34 70 L58 70 L44 86 Z', 'rgba(255,255,255,0.75)', null), sparkle(66, 54, 6, C.white), sparkle(40, 62, 4, C.white), sparkle(78, 80, 3.4, C.white),
     greyed(lump(98, 98, 14, 11, '#8a8478', 7))),
-  /** hårdhet: the same steel nail scratches two stones – the soft grey one gets a deep scratch and powder, the hard coloured one only a spark and no mark; a gauge stands high beside it. */
-  'berg.hårdhet': all(bg(), ground, greyed(lump(28, 96, 20, 12, '#d8d4c8', 8), line('M16 92 L38 96', '#8a8478', 2.4), dots(18, 104, 22, 6, 12, '#aaa', 181, 1), rot(42, 80, 30, 1, rect(-1.5, -22, 3, 22, STEEL, 1, C.ink, 1))),
-    gem(78, 92, 2.2, '#bfe6f5'), rot(88, 72, 30, 1, rect(-1.5, -22, 3, 22, STEEL, 1, C.ink, 1), rect(-4, -26, 8, 4, STEEL, 1, C.ink, 1)), sparkle(84, 80, 5, C.yellow),
-    rect(104, 24, 8, 80, C.white, 2, C.ink, 1.2), rect(105.5, 32, 5, 70, C.accent, 1, null), line('M112 40 l3 0 M112 56 l3 0 M112 72 l3 0 M112 88 l3 0', C.ink, 1)),
+  /** hårdhet: the same hammer strikes two things – a coloured hard stone stays whole and the hammer bounces back up with a spark, while a grey piece of soft chalk crumbles into bits. */
+  'berg.hårdhet': all(bg(), ground, greyed(rect(10, 98, 14, 8, '#f2f0e8', 1, C.ink, 1.2), rot(32, 102, 20, 1, rect(-6, -4, 12, 8, '#f2f0e8', 1, C.ink, 1.2)), dots(10, 104, 34, 6, 18, '#bbb', 181, 1.4), hammerG(26, 70, 0.9, 200)),
+    block(64, 78, 36, 30, '#5a5f6e', grains(64, 78, 36, 30, 14, 3, ['#6e7484', '#4a4e5a'], 183, 0.4), 6, 'bHd'), sparkle(80, 72, 6, C.yellow), hammerG(84, 44, 1, 200),
+    path('M70 64 C64 52 66 40 72 34', 'none', C.accent, 2.2), arrow(70, 40, 73, 32, C.accent, 2.2), path('M98 64 C104 54 102 44 96 38', 'none', C.accent, 2.2), arrow(99, 44, 95, 36, C.accent, 2.2)),
   /** talk: a soft, pale green-white stone; a thumb rubs over it and its nail leaves a groove while fine white powder falls into a little heap. */
   'berg.talk': all(bg(), ground, lump(54, 92, 36, 18, '#e2eadc', 9), dots(22, 80, 64, 26, 30, '#c2ccb8', 191, 0.9), path('M40 84 C52 80 64 80 74 84', 'none', '#a8b29e', 3),
     forearm(118, 46, 84, 74), rot(78, 79, 40, 1, rect(-3, -3, 6, 5, '#f6dcd0', 2, C.ink, 0.9)),
@@ -416,9 +423,11 @@ export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
   'berg.geolog': all(bg(SKY), clip('bGo', 'M70 112 L76 40 C90 34 108 36 116 40 L116 112 Z', layersTex(70, 34, 46, 78, [SANDST, '#c9a070', LIME, '#a88a6a', SANDST, '#8a7a6a'])), path('M70 112 L76 40 C90 34 108 36 116 40', 'none', C.ink, 1.6), ground,
     rect(18, 58, 12, 26, '#3f6fb5', 3, C.ink, 1.2), fig(38, '#e8dcc4', 'smile', { h: 0.92, bottom: '#5a6270' }), on(38, 0.92, path('M-14 -42 L-6 -42 L-4 2 L-12 2 Z M14 -42 L6 -42 L4 2 L12 2 Z', VEST, C.ink, 1), circle(0, -22, 3.4, 'rgba(200,230,250,0.7)', C.ink, 1.2), line('M-4 -40 L0 -25 L4 -40', C.ink, 0.8), path('M-10 -66 C-10 -76 10 -76 10 -66 L14 -64 L-10 -64 Z', '#3d6a5a', C.ink, 1.1)),
     reach(38, 0.92, 1, 64, 50), hammerG(68, 46, 0.8, 120)),
-  /** geologisk: a coloured block diagram cut through the ground, showing tilted layers of different rocks with a granite body – the geologist’s view; an ordinary grey road map lies beside it as contrast. */
-  'berg.geologisk': all(bg(), block(10, 42, 66, 50, '#e3c48a', all(foldTex(10, 30, 66, 70, '#e3c48a', '#8aa86a', 7, 6, 0.8), path('M40 92 C36 74 52 66 66 72 C76 76 76 88 76 92 Z', GRAN, C.ink, 1), grains(40, 72, 36, 20, 10, 2.4, [PINK, MICA], 291)), 10, 'bGg'),
-    hammerG(30, 98, 0.6, -80), greyed(rect(82, 64, 30, 40, '#f0f0ea', 2, C.ink, 1.2), line('M84 80 L110 76 M92 64 L96 104 M84 96 L110 92', '#9aa3ad', 2.4), circle(100, 84, 2, C.red, null)), line('M4 112 L116 112', C.grey2, 2)),
+  /** geologisk: things that belong to geology gathered on a tray framed in orange – a rock sample, a crystal, a fossil ammonite and a rock hammer; beside it, things from another subject (a flower and a butterfly) are grey. */
+  'berg.geologisk': all(bg(), ground, rect(6, 30, 72, 76, '#f4ecdc', 4, C.accent, 2.4), clip('bGgS', lumpD(24, 52, 12, 10, 33), granTex(10, 40, 28, 24, 291, 2.4)), lump(24, 52, 12, 10, 'none', 33, 1.3),
+    crystal(58, 66, 12, 18, '#cfe8f5', 0), ammonite(26, 88, 1.1), hammerG(58, 80, 0.75, -70),
+    greyed(line('M98 106 L98 64', C.green, 2.4), circle(98, 58, 7, C.pink, C.ink, 1.2), circle(98, 58, 3, C.yellow, null), path('M90 82 C84 76 86 72 98 80 C110 72 112 76 106 82', 'none', C.green, 2),
+      g('translate(98 26)', path('M0 0 C-10 -10 -14 0 -8 6 C-4 8 -2 4 0 2 Z M0 0 C10 -10 14 0 8 6 C4 8 2 4 0 2 Z', '#e88a3c', C.ink, 1.1), line('M0 -4 L0 6', C.ink, 1.6)))),
   /** stenprov: a small chipped piece of rock in a clear plastic bag with a numbered label, a rock hammer lying beside it. */
   'berg.stenprov': all(bg(), ground, rect(20, 26, 50, 66, 'rgba(230,240,248,0.75)', 3, C.ink, 1.4), line('M20 34 L70 34', C.red, 2), lump(45, 66, 16, 13, GRAN, 33), clip('bSp', lumpD(45, 66, 16, 13, 33), granTex(28, 52, 34, 28, 301, 2.6)),
     lump(45, 66, 16, 13, 'none', 33, 1.4), rect(26, 78, 38, 10, C.white, 1, C.ink, 1), T(45, 86, '17', 8, C.ink), hammerG(90, 104, 0.9, -70)),
@@ -427,15 +436,17 @@ export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
     clip('bBk', 'M8 22 L36 18 L64 24 L92 18 L92 104 L64 108 L36 102 L8 106 Z', path('M8 18 L50 18 C46 40 30 50 8 56 Z', '#e8a8a0', C.ink, 1), path('M50 18 L92 18 L92 50 C74 56 60 46 50 18 Z', '#a8d098', C.ink, 1),
       path('M8 56 C30 50 46 40 50 18 C60 46 74 56 92 50 L92 80 C70 86 40 70 8 84 Z', '#f0d890', C.ink, 1), path('M8 84 C40 70 70 86 92 80 L92 108 L8 108 Z', '#c0a8d8', C.ink, 1), path('M40 60 C44 54 56 56 54 64 C50 70 40 68 40 60 Z', '#e8a8a0', C.ink, 1)),
     line('M36 18 L36 102 M64 24 L64 108', 'rgba(43,42,51,0.25)', 1), ...[['#e8a8a0', 30], ['#a8d098', 46], ['#f0d890', 62], ['#c0a8d8', 78]].map(([c, y]) => all(rect(98, +y!, 12, 9, c as string, 1, C.ink, 1), line(`M98 ${+y! + 12} L110 ${+y! + 12}`, '#c9ced4', 1)))),
-  /** process: a chain of changes following one after another along a long arrow – ice cube → water drop → steam cloud – with a clock showing that it takes time. */
-  'berg.process': all(bg(), arrow(8, 86, 112, 86, C.accent, 3), cube(12, 74, 16, '#d8eef8'), path('M60 46 C68 58 70 66 60 72 C50 66 52 58 60 46 Z', '#5aa8e0', C.ink, 1.3), path('M84 64 C80 64 80 56 86 56 C86 50 96 48 98 54 C104 52 108 58 104 62 C108 64 104 70 100 68 L86 68 C82 68 80 66 84 64 Z', '#eef2f6', C.ink, 1.3),
-    arrow(36, 64, 48, 64, '#6f7680', 2), arrow(72, 62, 80, 62, '#6f7680', 2), circle(60, 24, 11, C.white, C.ink, 1.4), line('M60 24 L60 16 M60 24 L66 27', C.ink, 1.8), ...[[22, 96], [60, 96], [96, 96]].map(([x, y], i) => all(circle(x!, y!, 6, C.white, C.ink, 1.2), T(x!, y! + 3, String(i + 1), 8, C.ink)))),
+  /** process: a running conveyor belt – rough rock lumps go in on the left, pass through a machine with turning cog wheels, come out changed in the middle and end as shiny bars on the right, with a long arrow running through the whole chain. */
+  'berg.process': all(bg(), ground, rect(6, 82, 108, 8, '#5d6470', 4, C.ink, 1.3), ...[12, 30, 48, 66, 84, 102].map((x) => circle(x, 86, 3, '#9aa3ad', C.ink, 0.9)), line('M8 104 L8 90 M112 104 L112 90', '#5d6470', 3),
+    lump(14, 74, 7, 6, '#8a8478', 3, 1.1), lump(28, 75, 6, 5, '#9a948c', 4, 1.1), rect(40, 40, 30, 38, '#e8dcc4', 3, C.ink, 1.4), rect(40, 64, 30, 14, '#3a3530', 0, C.ink, 1), gear(50, 52, 6), gear(62, 48, 4.4, '#c9a06a'),
+    cube(76, 80, 8, '#b9a48a'), bar(100, 82, 0.9, STEEL), sparkle(108, 70, 3, C.white), arrow(4, 58, 114, 58, C.accent, 3)),
   /** stadium: four steps in the growth of a plant – seed, sprout, young plant, tree with fruit – in a row; only the third step is coloured and framed, the others are grey. */
   'berg.stadium': all(bg(), ground, greyed(seedling(16, 100, 0), seedling(40, 100, 1), seedling(96, 100, 3)), seedling(68, 100, 2), rect(54, 64, 28, 44, 'none', 4, C.accent, 2.2), arrow(22, 86, 30, 86, '#9aa3ad', 1.6), arrow(48, 86, 54, 86, '#9aa3ad', 1.6), arrow(82, 86, 86, 86, '#9aa3ad', 1.6)),
   /** transportera: a yellow truck loaded with stones driving along a road, with motion lines behind it. */
   'berg.transportera': all(bg(SKY), rect(4, 96, 112, 16, '#8a8f96', 0, null), line('M10 104 L24 104 M40 104 L54 104 M70 104 L84 104 M100 104 L114 104', C.white, 1.6),
     truck(64, 98, 1.3, all(lump(-22, -16, 6, 4, '#9a948c', 41, 1), lump(-12, -18, 6, 5, '#8a8478', 43, 1), lump(-2, -16, 5, 4, '#a49c90', 47, 1), lump(-16, -22, 5, 4, '#9a948c', 49, 1))), motion(14, 74, -1)),
-  /** ständig: arrows running round and round a clock face without ever stopping; a grey straight arrow that ends at a wall stands beside it as contrast. */
-  'berg.ständig': all(bg(), circle(52, 56, 24, C.white, C.ink, 1.6), line('M52 56 L52 40 M52 56 L64 62', C.ink, 2), ...[0, 1, 2, 3].map((i) => { const a0 = (i / 4) * Math.PI * 2, a1 = a0 + 1.2; return all(path(`M${f1(52 + Math.cos(a0) * 34)} ${f1(56 + Math.sin(a0) * 34)} A34 34 0 0 1 ${f1(52 + Math.cos(a1) * 34)} ${f1(56 + Math.sin(a1) * 34)}`, 'none', C.accent, 3.4), arrow(f1(52 + Math.cos(a1 - 0.15) * 34), f1(56 + Math.sin(a1 - 0.15) * 34), f1(52 + Math.cos(a1) * 34), f1(56 + Math.sin(a1) * 34), C.accent, 3.4)); }),
-    greyed(arrow(76, 104, 104, 104, C.accent, 3), rect(106, 94, 4, 18, C.dark, 1, null))),
+  /** ständig: along a band of time that runs through day and night (sun, moon, sun, moon), drops fall from a tap without a single break; below, a grey copy of the band has long gaps with no drops. */
+  'berg.ständig': all(bg(), sunI(18, 14), moonI(46, 14), sunI(74, 14), moonI(102, 14), rect(6, 26, 108, 4, '#e8eef4', 1, null), rect(32, 26, 28, 4, '#3d4a66', 0, null), rect(88, 26, 26, 4, '#3d4a66', 0, null),
+    ...Array.from({ length: 11 }, (_, i) => drip(f1(10 + i * 10), 46 + (i % 2) * 6, 1.2)), rect(6, 60, 108, 6, C.accent, 3, C.ink, 1.1),
+    greyed(...[10, 20, 30, 70, 80].map((x, i) => drip(x, 90 + (i % 2) * 5, 1.1)), rect(6, 102, 34, 6, C.accent, 3, C.ink, 1), rect(62, 102, 28, 6, C.accent, 3, C.ink, 1))),
 };
