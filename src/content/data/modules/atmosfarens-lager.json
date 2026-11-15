@@ -1,0 +1,179 @@
+{
+ "id": "m.atmosfarens-lager",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Atmosfärens lager",
+ "titleJa": "{大気|たいき}の{層|そう}",
+ "descriptionSv": "Atmosfärens lager: skikt, tyngdkraft, troposfär, flygplan, jetström, väderballong, stratosfär, ozon, ozonskikt, UV-strålning, mesosfär, meteor, termosfär, norrsken, satellit och rymd.",
+ "descriptionJa": "{大気|たいき}の{層|そう}：{層|そう}、{重力|じゅうりょく}、{対流圏|たいりゅうけん}、{飛行機|ひこうき}、ジェット{気流|きりゅう}、{気象観測用|きしょうかんそくよう}の{気球|ききゅう}、{成層圏|せいそうけん}、オゾン、オゾン{層|そう}、{紫外線|しがいせん}、{中間圏|ちゅうかんけん}、{流星|りゅうせい}、{熱圏|ねつけん}、オーロラ、{人工衛星|じんこうえいせい}、{宇宙|うちゅう}。",
+ "categoryId": "R05-A02-T02",
+ "tags": [
+  "natur",
+  "väder",
+  "atmosfären"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.molnbildning"
+ ],
+ "related": [],
+ "recommendedOrder": 2617,
+ "words": [
+  {
+   "senseId": "s.skikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tyngdkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.troposfär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygplan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jetström.1",
+   "active": false
+  },
+  {
+   "senseId": "s.väderballong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stratosfär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ozon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ozonskikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uv-strålning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mesosfär.1",
+   "active": false
+  },
+  {
+   "senseId": "s.meteor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.termosfär.1",
+   "active": false
+  },
+  {
+   "senseId": "s.norrsken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.satellit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rymd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En resa uppåt genom atmosfären",
+  "paragraphs": [
+   "Tänk dig att du följer med en väderballong upp genom atmosfären. Atmosfären har flera skikt, och tyngdkraften håller kvar dem runt jorden. Längst ned finns troposfären. Där bor vi, och där finns nästan allt väder. Ju högre upp ballongen kommer, desto kallare blir det, ungefär sex grader för varje kilometer.",
+   "Efter ungefär tolv kilometer tar troposfären slut. Där flyger de stora flygplanen, och där blåser jetströmmen, en mycket stark vind från väster. Ovanför börjar stratosfären. Här finns det nästan inga moln, och himlen ser mörkare ut.",
+   "I stratosfären, ungefär 15–35 kilometer upp, finns ozonskiktet. Ozonet tar upp det mesta av solens UV-strålning, som annars skulle vara farlig för allt liv. Därför blir det varmare här ju högre upp man kommer. På ungefär 30 kilometers höjd har luften blivit så tunn att väderballongen går sönder.",
+   "Om vi kunde fortsätta, skulle vi komma till mesosfären, 50–85 kilometer upp. Det är det kallaste stället i atmosfären, nästan minus 90 grader. Det är här som de flesta meteorer brinner upp. Ovanför ligger termosfären. Där syns norrsken, och där åker rymdstationen ISS och många satelliter runt jorden.",
+   "Det finns ingen skarp gräns mellan atmosfären och rymden. Luften blir bara tunnare och tunnare. Men nästan all luft finns i de lägsta skikten: ungefär 80 procent av atmosfären finns i troposfären."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "I vilket skikt finns nästan allt väder?",
+    "options": [
+     "Stratosfären",
+     "Mesosfären",
+     "Troposfären",
+     "Termosfären"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Längst ned finns troposfären. Där bor vi, och där finns nästan allt väder.",
+    "explanationJa": "{対流圏|たいりゅうけん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir det varmare högre upp i stratosfären?",
+    "options": [
+     "Där finns jetströmmen",
+     "Där finns många moln",
+     "Luften är tjockare där",
+     "Ozonet tar upp solens UV-strålning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ozonet tar upp det mesta av solens UV-strålning … Därför blir det varmare här …",
+    "explanationJa": "オゾンが{紫外線|しがいせん}を{吸収|きゅうしゅう}するからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var brinner de flesta meteorer upp?",
+    "options": [
+     "I mesosfären",
+     "I troposfären",
+     "I ozonskiktet",
+     "På marken"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är här som de flesta meteorer brinner upp.",
+    "explanationJa": "{中間圏|ちゅうかんけん}で{燃|も}えつきます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Väderballongen går sönder eftersom luften blir för tjock.",
+    "correct": false,
+    "explanationSv": "På ungefär 30 kilometers höjd har luften blivit så tunn att väderballongen går sönder.",
+    "explanationJa": "{空気|くうき}が{薄|うす}くなるので{破裂|はれつ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det mesta av luften i atmosfären finns nära marken.",
+    "correct": true,
+    "explanationSv": "Ungefär 80 procent av atmosfären finns i troposfären.",
+    "explanationJa": "{空気|くうき}の{約|やく}80パーセントは{対流圏|たいりゅうけん}にあります。"
+   }
+  ],
+  "factSources": [
+   "Troposfären når cirka 8 km höjd vid polerna och 16–18 km vid ekvatorn, innehåller cirka 75–80 % av atmosfärens massa och nästan all vattenånga; temperaturen sjunker i genomsnitt cirka 6,5 °C per km (NOAA National Weather Service JetStream, \"Layers of the atmosphere\"; SMHI Kunskapsbanken, \"Atmosfärens skikt\").",
+   "Stratosfären sträcker sig till cirka 50 km; ozonskiktet ligger cirka 15–35 km upp och absorberar det mesta av solens UV-strålning, vilket gör att temperaturen stiger med höjden (NASA, \"Ozone Facts\"; NOAA, \"Stratosphere\").",
+   "Mesosfären (cirka 50–85 km) är atmosfärens kallaste skikt, ned till cirka −90 °C, och där brinner de flesta meteorer upp; i termosfären syns norrsken (cirka 100–300 km) och där kretsar ISS (cirka 400 km) (NASA, \"Earth's atmosphere layers\"; Britannica, \"mesosphere\", \"thermosphere\", \"aurora\").",
+   "Jetströmmar blåser i ett smalt band nära tropopausen, cirka 9–12 km upp, ofta med över 100 m/s i kärnan (NOAA National Weather Service, \"The jet stream\").",
+   "Väderballonger (radiosonder) stiger till cirka 30–35 km innan de spricker (SMHI, \"Radiosondering\"; NOAA, \"Radiosonde observations\").",
+   "Ozonhålet över Antarktis upptäcktes på 1980-talet; freoner förbjöds genom Montrealprotokollet (1987), och ozonskiktet återhämtar sig långsamt (UNEP; WMO Scientific Assessment of Ozone Depletion 2022)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om atmosfärens olika skikt och om vad som händer högt uppe.",
+  "discussionPoints": [
+   "Har du sett norrsken eller en meteor? Var då?",
+   "Hur skyddar du dig mot UV-strålning på sommaren?",
+   "Skulle du vilja åka upp i stratosfären? Varför eller varför inte?",
+   "Vad tycker du är mest spännande med atmosfären?"
+  ]
+ }
+}

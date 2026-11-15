@@ -1,0 +1,172 @@
+{
+ "id": "m.luftfuktighet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Luftfuktighet",
+ "titleJa": "{湿度|しつど}",
+ "descriptionSv": "Luftfuktighet: luftfuktighet, fukt, avdunsta, avdunstning, kondensera, kondensation, mättad, relativ luftfuktighet, daggpunkt, dagg, imma, svalna, hygrometer, svettas och avfuktare.",
+ "descriptionJa": "{湿度|しつど}：{湿度|しつど}、{湿気|しっけ}、{蒸発|じょうはつ}する、{蒸発|じょうはつ}、{凝結|ぎょうけつ}する、{凝結|ぎょうけつ}、{飽和|ほうわ}した、{相対湿度|そうたいしつど}、{露点|ろてん}、{露|つゆ}、くもり、{冷|さ}める、{湿度計|しつどけい}、{汗|あせ}をかく、{除湿機|じょしつき}。",
+ "categoryId": "R05-A02-T02",
+ "tags": [
+  "natur",
+  "väder",
+  "atmosfären"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.lufttryck"
+ ],
+ "related": [],
+ "recommendedOrder": 2613,
+ "words": [
+  {
+   "senseId": "s.luftfuktighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fukt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avdunsta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avdunstning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kondensera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kondensation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mättad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.relativ-luftfuktighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.daggpunkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dagg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.imma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svalna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hygrometer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svettas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avfuktare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Glasögon med imma",
+  "paragraphs": [
+   "Det är januari i Umeå. Yuki har varit ute i kylan i en timme. När hon kommer in i den varma lägenheten, blir hennes glasögon helt vita av imma. Hon kan inte se någonting! Vad är det som händer?",
+   "Luften inne i lägenheten innehåller vattenånga, alltså vatten som har blivit gas. Den kommer till exempel från avdunstning när man duschar eller lagar mat. Hur mycket vattenånga luften kan hålla beror på temperaturen. Tusen liter luft som är 30 grader varm kan hålla ungefär 30 gram vattenånga, men vid 10 grader kan den bara hålla ungefär 9 gram. Varm luft kan alltså hålla mycket mer vattenånga än kall luft.",
+   "Luftfuktighet är ett mått på hur mycket vattenånga det finns i luften, och man kan mäta den med en hygrometer. Oftast talar man om den relativa luftfuktigheten. Den visar i procent hur mycket vattenånga luften har, jämfört med hur mycket den kan hålla. Vid 100 procent är luften mättad.",
+   "Yukis glasögon är iskalla. När den varma luften närmast glasögonen svalnar, blir den mättad. Temperaturen har kommit under daggpunkten. Då kondenserar en del av vattenångan till små droppar på glaset. Den här kondensationen är samma sak som när det bildas dagg på gräset en kall morgon. Efter en stund blir glasögonen varma igen, vattnet avdunstar och hon kan se igen.",
+   "Luftfuktigheten påverkar också hur vi mår. När det är varmt och fuktigt svettas vi, men svetten avdunstar dåligt och vi känner oss klibbiga. Inomhus på vintern är luften ofta mycket torr. I en fuktig källare kan man ställa en avfuktare för att få bort fukten."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför blir Yukis glasögon vita?",
+    "options": [
+     "De blir smutsiga",
+     "Det snöar inne",
+     "Hon tappar dem i snön",
+     "Det bildas imma på dem"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… blir hennes glasögon helt vita av imma.",
+    "explanationJa": "{眼鏡|めがね}がくもったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken luft kan hålla mest vattenånga?",
+    "options": [
+     "Varm luft",
+     "Kall luft",
+     "Torr luft",
+     "Luft på ett berg"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Varm luft kan alltså hålla mycket mer vattenånga än kall luft.",
+    "explanationJa": "{暖|あたた}かい{空気|くうき}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att luften är mättad?",
+    "options": [
+     "Den har ingen vattenånga",
+     "Den är mycket varm",
+     "Den kan inte hålla mer vattenånga",
+     "Den är smutsig"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Vid 100 procent är luften mättad.",
+    "explanationJa": "これ{以上|いじょう}{水蒸気|すいじょうき}をふくめないという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "cause",
+    "statementSv": "Det bildas imma när luften svalnar under daggpunkten.",
+    "correct": true,
+    "explanationSv": "Temperaturen har kommit under daggpunkten. Då kondenserar en del av vattenångan …",
+    "explanationJa": "{露点|ろてん}より{冷|ひ}えると、{水蒸気|すいじょうき}が{凝結|ぎょうけつ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "På vintern är luften inomhus i Sverige ofta mycket fuktig.",
+    "correct": false,
+    "explanationSv": "Inomhus på vintern är luften ofta mycket torr.",
+    "explanationJa": "{冬|ふゆ}の{室内|しつない}の{空気|くうき}はとても{乾燥|かんそう}しています。"
+   }
+  ],
+  "factSources": [
+   "Mättnadsånghalten är cirka 9,4 g/m³ vid 10 °C, 17,3 g/m³ vid 20 °C och 30,4 g/m³ vid 30 °C (SMHI Kunskapsbanken, \"Luftfuktighet\"; Britannica, \"humidity\").",
+   "Relativ luftfuktighet anger ånghalten i procent av mättnadsånghalten; vid 100 % är luften mättad och kondensation sker när temperaturen sjunker under daggpunkten (SMHI Kunskapsbanken, \"Daggpunkt\"; NOAA National Weather Service, \"Dew point\").",
+   "Inomhusluften i nordiska bostäder har vintertid ofta låg relativ luftfuktighet, omkring 20–30 % (Folkhälsomyndigheten, \"Allmänna råd om temperatur inomhus\" och \"Fukt och mikroorganismer\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om luftfuktighet och om hur den känns i vardagen.",
+  "discussionPoints": [
+   "Har dina glasögon eller ditt fönster fått imma? När då?",
+   "Tycker du bättre om torr eller fuktig luft?",
+   "Hur är luftfuktigheten där du kommer ifrån, jämfört med Sverige?",
+   "Vad gör du när luften inomhus är för torr?"
+  ]
+ }
+}
