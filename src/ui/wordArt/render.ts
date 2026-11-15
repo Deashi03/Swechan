@@ -157,6 +157,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'vadr.': () => import('./weatherWords').then((m) => m.WEATHER_WORD_MOTIFS),
   'atmo.': () => import('./atmosphere').then((m) => m.ATMOSPHERE_MOTIFS),
   'neder.': () => import('./precipitation').then((m) => m.PRECIPITATION_MOTIFS),
+  'klimz.': () => import('./climateZones').then((m) => m.CLIMATE_ZONE_MOTIFS),
   'extrem.': () => import('./extremeWeather').then((m) => m.EXTREME_WEATHER_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
