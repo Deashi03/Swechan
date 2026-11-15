@@ -140,9 +140,11 @@ export const SOIL_MOTIFS: Record<string, Svg> = {
   'jord.kornstorlek': all(bg(), rect(8, 92, 104, 12, '#f2e2b0', 1, C.ink, 1.2), line(Array.from({ length: 21 }, (_, i) => `M${8 + i * 5.2} 92 l0 ${i % 5 ? 3 : 6}`).join(' '), C.ink, 0.9),
     ellipse(18, 74, 8, 4, CLAY, C.ink, 1), dots(30, 68, 14, 12, 40, '#8a7a5a', 17, 0.4), dots(50, 66, 16, 14, 18, SAND2, 19, 1.2), pebbles(70, 64, 16, 16, 4, 3, 4, 21), ellipse(100, 72, 10, 8, PEB[0]!, C.ink, 1.2),
     arrow(14, 46, 108, 46, HL, 3), line('M14 46 L14 46', HL, 1)),
-  /** sandig: a coloured foot and sandal completely covered in sand grains, standing on sandy ground; beside it the same foot in grey, clean, as contrast. */
-  'jord.sandig': all(bg(), rect(4, 92, 70, 20, SAND, 0, null), dots(4, 92, 70, 20, 90, SAND2, 23, 0.9), path('M14 92 L14 64 C14 58 26 58 26 64 L26 80 L48 84 C56 86 56 92 50 92 Z', C.skin, C.ink, 1.4), path('M12 92 L54 92 L54 96 L12 96 Z', C.orange, C.ink, 1.1),
-    dots(14, 66, 40, 26, 70, SAND2, 29, 0.9), dots(12, 92, 42, 4, 16, '#a8844a', 31, 0.8), ground, greyed(g('translate(68 16) scale(0.8)', path('M14 92 L14 64 C14 58 26 58 26 64 L26 80 L48 84 C56 86 56 92 50 92 Z', C.skin, C.ink, 1.4), path('M12 92 L54 92 L54 96 L12 96 Z', C.orange, C.ink, 1.1)))),
+  /** sandig: a coloured sneaker on a wooden floor indoors, covered all over with sand grains, a few grains trickling out of it; beside it the same sneaker in grey, clean, as contrast. */
+  'jord.sandig': all(bg(), rect(4, 96, 112, 16, '#d8b48a', 0, null), line('M4 96 L116 96 M4 104 L116 104 M30 96 L30 104 M76 96 L76 104 M52 104 L52 112 M98 104 L98 112', '#a8845a', 1), ground,
+    path('M10 94 L12 70 C12 64 22 62 28 66 L40 74 C52 76 64 80 66 88 L66 94 Z', '#e8574a', C.ink, 1.6), path('M10 94 L66 94 L66 98 L10 98 Z', C.white, C.ink, 1.3), line('M24 70 L32 76 M28 68 L36 74 M32 72 L40 78', C.white, 1.6),
+    dots(14, 66, 50, 30, 60, SAND2, 29, 1.1), dots(14, 84, 50, 14, 40, '#a8844a', 31, 1), ...[[70, 94], [74, 96], [72, 92], [78, 95]].map(([x, y]) => circle(x!, y!, 1.1, SAND2, null)),
+    greyed(path('M80 94 L81 80 C81 76 87 75 90 77 L97 82 C104 83 111 85 112 90 L112 94 Z', '#e8574a', C.ink, 1.4), path('M80 94 L112 94 L112 97 L80 97 Z', C.white, C.ink, 1.1))),
   /** genomsläpplig: a coloured column of sand under rain, the drops running down through it (arrows) and out at the bottom; beside it a grey column of clay with the water lying as a pool on top. */
   'jord.genomsläpplig': all(bg(), ground, column(14, 46, 38, 56, sandTex(14, 46, 38, 56, 37), 'jGs1'), cloud(33, 18, 0.9, '#cfdbe6'), rain(22, 28, 22, 5), ...[24, 33, 42].map((x, i) => all(drop(x, 58 + i * 12, 0.8), arrow(x, 66 + i * 12, x, 74 + i * 12, WATER2, 1.6))),
     drop(26, 108, 0.8), drop(40, 108, 0.8), greyed(column(70, 52, 38, 50, clayTex(70, 52, 38, 50), 'jGs2'), ellipse(89, 50, 18, 3, WATER, C.ink, 1), cloud(89, 18, 0.9), rain(78, 28, 22, 5))),
@@ -158,10 +160,10 @@ export const SOIL_MOTIFS: Record<string, Svg> = {
   /** lerjord: a flat field cut open – a thin dark top, then thick smooth blue-grey clay – with rainwater standing in puddles on the surface because it cannot sink in. */
   'jord.lerjord': all(bg(SKY), cut(4, 52, 112, [L(12, SOIL, 61), [48, (x, y, w, h) => clayTex(x, y, w, h)]]), ellipse(30, 49, 14, 2.6, WATER, C.ink, 1), ellipse(84, 49, 18, 2.6, WATER, C.ink, 1), cloud(60, 22, 1), rain(48, 32, 24, 5),
     ...[20, 50, 80, 100].map((x) => line(`M${x} 46 l0 -6 M${x - 3} 44 l3 -4 l3 4`, GRASS2, 1.2))),
-  /** lerig: a coloured rubber boot thick with brown mud, standing in a muddy, wet path with splashes; beside it a grey, clean boot as contrast. */
-  'jord.lerig': all(bg(), path('M4 112 L4 96 C30 92 60 100 80 96 L80 112 Z', '#7a5a3e', C.ink, 1.2), ellipse(24, 100, 10, 2.4, '#5e4630', null), ellipse(62, 102, 8, 2, '#5e4630', null),
-    path('M28 52 L48 52 L48 90 L66 92 C72 94 72 102 66 102 L28 102 Z', C.green, C.ink, 1.6), path('M28 72 C34 76 42 70 48 74 L48 90 L66 92 C72 94 72 102 66 102 L28 102 Z', '#7a5a3e', C.ink, 1.2), dots(30, 76, 36, 24, 20, '#5e4630', 63, 1.4),
-    circle(20, 88, 2, '#7a5a3e', null), circle(74, 86, 1.6, '#7a5a3e', null), ground, greyed(path('M90 70 L102 70 L102 96 L112 98 C115 99 115 106 112 106 L90 106 Z', C.green, C.ink, 1.4))),
+  /** lerig: a coloured dirt road through a field, full of wet brown mud with deep wheel ruts and puddles of water; beside it, grey, a dry gravel road as contrast. */
+  'jord.lerig': all(bg(SKY), rect(4, 48, 112, 64, GRASS, 0, null), path('M30 48 L44 48 L76 112 L4 112 Z', '#7a5a3e', C.ink, 1.3), line('M35 50 L18 112 M40 50 L56 112', '#5a4030', 3), line('M35 50 L18 112 M40 50 L56 112', '#8a6a4e', 1),
+    ellipse(30, 96, 10, 3, WATER, C.ink, 0.9), ellipse(44, 78, 6, 2, WATER, C.ink, 0.8), ellipse(36, 64, 4, 1.4, WATER, C.ink, 0.7), ellipse(58, 104, 7, 2.2, WATER, C.ink, 0.8), ellipse(16, 106, 5, 1.6, '#5a4030', null), ellipse(48, 90, 4, 1.4, '#5a4030', null),
+    greyed(path('M88 48 L96 48 L116 112 L80 112 Z', '#d0c8b8', C.ink, 1.2), dots(82, 50, 32, 62, 50, '#8a8070', 251, 1)), line('M4 48 L116 48', C.ink, 1)),
   /** avsätta (2): a river flows from the left into a calm lake; where the water slows down, fine grains sink (small arrows) and settle on the bottom in a growing layer, ringed in orange. */
   'jord.avsätta.2': all(bg(SKY), rect(4, 40, 112, 72, '#b8dcef', 0, null), path('M4 40 L40 40 L40 62 L4 62 Z', WATER2, null), arrow(8, 50, 34, 50, C.white, 2.4), dots(8, 44, 30, 14, 20, SAND2, 71, 1.1),
     ...[[52, 54], [64, 60], [76, 64], [90, 68]].map(([x, y]) => all(circle(x!, y!, 1.4, SAND2, null), arrow(x!, y! + 3, x!, y! + 12, '#6f7680', 1.4))),
@@ -181,10 +183,10 @@ export const SOIL_MOTIFS: Record<string, Svg> = {
     twig(30, 92, -10), path('M58 96 C62 84 66 78 70 74 C68 82 66 90 58 96 Z', C.white, C.ink, 1), greyed(ellipse(94, 94, 12, 9, '#9a948c', C.ink, 1.4), all(rect(86, 60, 16, 4, STEEL, 1, C.ink, 1), rect(92, 64, 4, 18, STEEL, 0.5, C.ink, 1), line('M92 68 L96 70 M92 72 L96 74 M92 76 L96 78', C.ink, 0.8)))),
   /** daggmask: a cut through dark soil with a long pink-brown earthworm crawling through its tunnel, and another poking out at the grassy surface. */
   'jord.daggmask': all(bg(SKY), cut(4, 40, 112, [L(72, SOIL, 91)]), path('M20 74 C34 64 50 84 70 72 C84 64 96 78 108 70', 'none', '#4a3022', 10), worm(46, 74, 1.6, 6), worm(86, 40, 0.8, -70), ...[20, 50, 100].map((x) => line(`M${x} 36 l0 -6 M${x - 3} 34 l3 -4 l3 4`, GRASS2, 1.2))),
-  /** lucker: a coloured clump of crumbly loose soil full of small air holes, a plant above with long roots spreading easily; beside it a grey hard block with a stunted root as contrast. */
-  'jord.lucker': all(bg(), ground, column(10, 56, 54, 52, all(rect(10, 56, 54, 52, SOIL, 0, null), ...(() => { const r = rng(95); return Array.from({ length: 26 }, () => circle(f1(14 + r() * 46), f1(60 + r() * 44), f1(1.2 + r() * 1.8), '#f0e6d6', null)); })(), dots(10, 56, 54, 52, 50, '#4a3022', 97, 1.2)), 'jLu'),
-    line('M37 56 L37 40', C.green, 2), ellipse(31, 42, 6, 2.6, C.green, C.ink, 0.8), ellipse(43, 38, 6, 2.6, C.green, C.ink, 0.8), line('M37 56 L30 76 L24 96 M37 56 L40 80 L44 102 M37 56 L52 72 L58 90 M30 76 L18 84', '#f0e0c0', 1.4),
-    greyed(column(76, 72, 34, 36, all(rect(76, 72, 34, 36, SOIL2, 0, null), line('M80 86 L92 80 M96 96 L106 90', C.ink, 1)), 'jLu2'), line('M93 72 L93 62', C.green, 2), line('M93 72 L92 78', '#f0e0c0', 1.4))),
+  /** lucker: a cut through loose, crumbly soil full of air pockets – a spade slides easily all the way down (orange arrow); beside it, grey, a spade that stops at the surface of hard packed soil as contrast. */
+  'jord.lucker': all(bg(SKY), column(6, 50, 60, 58, all(rect(6, 50, 60, 58, SOIL, 0, null), ...(() => { const r = rng(95); return Array.from({ length: 34 }, () => ellipse(f1(9 + r() * 54), f1(53 + r() * 52), f1(1.4 + r() * 2.2), f1(1 + r() * 1.4), '#f0e6d6', null)); })(), dots(6, 50, 60, 58, 60, '#4a3022', 97, 1.3)), 'jLu'),
+    spade(36, 92, 1.1, 0), arrow(54, 26, 54, 48, HL, 2.6), rect(6, 47, 60, 3, GRASS, 0, C.ink, 0.9),
+    greyed(column(76, 70, 36, 38, all(rect(76, 70, 36, 38, SOIL2, 0, null), line('M80 84 L92 80 M96 96 L108 90', C.ink, 1)), 'jLu2'), spade(94, 70, 0.9, 0), line('M86 66 L102 66', C.ink, 2.4))),
   /** nedbrytare: a dead brown leaf being eaten from all sides – a mushroom grows from it, an earthworm nibbles at its edge and a lens shows tiny bacteria on it. */
   'jord.nedbrytare': all(bg(), rect(4, 88, 112, 24, SOIL, 0, null), dots(4, 88, 112, 24, 50, '#4a3022', 101, 0.9), line('M4 88 L116 88', C.ink, 1.2), at(54, 86, 4, holeyLeaf(0, 0, 1)), mushroom(30, 90, 1.6), worm(86, 92, 0.9, -10),
     lens(78, 42, 18, all(rect(60, 24, 36, 36, '#f6efe0', 0, null), ...[[70, 36, 20], [80, 44, -30], [74, 50, 60], [86, 34, 10], [66, 46, -50]].map(([x, y, r]) => rot(x!, y!, r!, 1, rect(-3.5, -1.4, 7, 2.8, '#7aaa5a', 1.4, C.ink, 0.6)))), 'jNb')),
@@ -271,10 +273,10 @@ export const SOIL_MOTIFS: Record<string, Svg> = {
   /** kvicklera: a firm-looking block of grey clay is struck by a hammer → arrow → the same clay has turned into a runny grey liquid flowing out in a wide puddle. */
   'jord.kvicklera': all(bg(), ground, rect(10, 70, 36, 40, CLAY, 2, C.ink, 1.6), line('M14 84 q8 -2 16 0 M20 98 q8 -2 16 0', CLAY2, 1), rot(40, 50, 30, 1, rect(-1.6, 0, 3.2, 22, WOOD, 1.4, C.ink, 1), path('M-8 -4 L6 -4 L8 0 L6 4 L-8 4 Z', STEEL, C.ink, 1.2)), line('M24 64 L22 58 M30 62 L32 56 M18 66 L14 62', HL, 1.6),
     arrow(52, 90, 64, 90, HL, 3), path('M66 112 C66 102 72 96 82 98 C90 92 104 96 108 104 C114 106 116 110 116 112 Z', CLAY, C.ink, 1.4), path('M74 104 q6 -3 12 0 q6 3 12 0', 'none', CLAY2, 1.2), drop(80, 92, 0.7, CLAY), drop(96, 90, 0.7, CLAY)),
-  /** omkomma: a symbolic scene of mourning after a disaster – a house destroyed by a slide in the background, and in front a row of lit candles and laid-down flowers by a fence. */
-  'jord.omkomma': all(bg('#e8e6ea'), path('M4 74 C30 66 60 70 116 62 L116 112 L4 112 Z', '#b8a890', C.ink, 1.2), rot(78, 62, 18, 1, house(0, 0, 1.2, '#a8786a')), line('M66 52 L72 60 M88 50 L84 58', C.ink, 1.4), fence(8, 112, 100),
-    ...[24, 40, 56].map((x) => candle(x, 108)), flower(70, 110, 1, C.white), flower(78, 110, 1, C.red), rot(86, 108, -60, 1, flower(0, 0, 1, C.yellow))),
-
+  /** omkomma: a quiet memorial – lit candles and laid-down flowers in front of an empty place where a person's outline fades away; a small neutral wave sign in a circle hints at the event. */
+  'jord.omkomma': all(bg('#ecebef'), ground, `<g opacity="0.35">${path('M48 96 L48 70 C48 62 72 62 72 70 L72 96 Z', '#b8b4c0', null)}${circle(60, 52, 9, '#b8b4c0', null)}</g>`, path('M48 96 L48 70 C48 62 72 62 72 70 L72 96', 'none', '#8a8696', 1.4), circle(60, 52, 9, 'none', '#8a8696', 1.4),
+    rect(30, 96, 60, 6, '#d8d4dc', 1, C.ink, 1), ...[38, 50, 70, 82].map((x) => candle(x, 96)), flower(56, 110, 1, C.white), flower(64, 110, 1, C.white), rot(46, 110, -60, 1, flower(0, 0, 1, C.yellow)), rot(76, 110, 60, 1, flower(0, 0, 1, C.white)),
+    circle(100, 22, 10, C.white, C.ink, 1.2), line('M93 22 q3.5 -4 7 0 q3.5 4 7 0 M93 27 q3.5 -4 7 0 q3.5 4 7 0', WATER2, 1.4)),
   // ── 2557 Markanvändning ──
   /** markanvändning: a map seen from above split into areas used for different things – dark green forest, yellow and brown fields, red houses in a grey town, a road – with orange borders between them. */
   'jord.markanvändning': all(bg(), rect(8, 8, 104, 100, '#eef3e6', 2, C.ink, 1.6), path('M8 8 L64 8 L56 52 L8 60 Z', '#4f8a5a', null), ...(() => { const r = rng(251); return Array.from({ length: 16 }, () => circle(f1(12 + r() * 44), f1(12 + r() * 40), 3, '#3a6e48', C.ink, 0.5)); })(),
