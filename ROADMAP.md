@@ -150,6 +150,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.42 – Landskap & geologi (klar)
 - 42 nya moduler i Natur & geografi → Landskap & geologi med 370 nya ordbilder. 21 ord saknar bild efter två blindtestomgångar.
 
+## v0.43 – Väder & klimat (klar)
+- 42 nya moduler i Natur & geografi → Väder & klimat med 322 nya ordbilder. 30 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
