@@ -144,6 +144,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.40 – Arkeologi & kulturarv (klar)
 - 42 nya moduler i Historia & humaniora → Arkeologi & kulturarv med 385 nya ordbilder. 14 ord saknar bild efter två blindtestomgångar.
 
+## v0.41 – Civilisationer & världsdelars historia (klar)
+- 42 nya moduler i Historia & humaniora → Civilisationer & världsdelars historia med 253 nya ordbilder. 18 ord saknar bild efter två blindtestomgångar. Hela *Historia & humaniora* är nu publicerat; nästa rotområde är *Natur & geografi*.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

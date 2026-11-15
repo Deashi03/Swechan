@@ -139,6 +139,18 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.kulturhistorisk.1',
   // 0.40 (Historisk forskning), after two blind-test rounds
   's.förstahandsuppgift.1', 's.tendentiös.1', 's.historieskrivning.1', 's.historiesyn.1',
+  // 0.41 (Nordens historia), after two blind-test rounds
+  's.rikssamling.1', 's.befrielsekrig.1', 's.landvinning.1', 's.representationsreform.1', 's.neutralitetspolitik.1',
+  // 0.41 (Östasiens historia), after two blind-test rounds
+  's.shogunat.1', 's.ståndssamhälle.1', 's.kolonialstyre.1', 's.folkrepublik.1',
+  // 0.41 (Sydasiens historia), after two blind-test rounds
+  's.civilisation.1', 's.sanskrit.1', 's.blomstra.1', 's.storslagen.1', 's.sultanat.1',
+  // 0.41 (Mellanösterns historia), after two blind-test rounds
+  's.expansion.1', 's.mandat.2',
+  // 0.41 (Afrikas historia), after two blind-test rounds
+  's.indirekt-styre.1',
+  // 0.41 (Amerikas & Oceaniens historia), after two blind-test rounds
+  's.arbetsplikt.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
