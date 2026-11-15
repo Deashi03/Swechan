@@ -163,6 +163,10 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.osorterad.1',
   // 0.42 (Mark & jordarter), after two blind-test rounds
   's.sandig.1', 's.lerig.1', 's.lucker.1', 's.omkomma.1',
+  // 0.43 (Vädrets vardagsord), after two blind-test rounds
+  's.mulen.1', 's.strålande.1', 's.regnig.1', 's.halt-adj.1', 's.blåsig.1', 's.dimmig.1', 's.disig.1', 's.hundkall.1', 's.växlande-molnighet.1',
+  // 0.43 (Atmosfären), after two blind-test rounds
+  's.lufttryck.2', 's.hektopascal.1', 's.avdunstning.1', 's.kondensation.1', 's.relativ-luftfuktighet.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
