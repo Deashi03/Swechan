@@ -154,6 +154,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'vatt.': () => import('./watersSeas').then((m) => m.WATERS_SEAS_MOTIFS),
   'jord.': () => import('./soils').then((m) => m.SOIL_MOTIFS),
   'istid.': () => import('./iceAges').then((m) => m.ICE_AGE_MOTIFS),
+  'vadr.': () => import('./weatherWords').then((m) => m.WEATHER_WORD_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
