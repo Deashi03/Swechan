@@ -1,0 +1,173 @@
+{
+ "id": "m.temperatur-och-varmeoverforing",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Temperatur och värmeöverföring",
+ "titleJa": "{温度|おんど}と{熱|ねつ}の{移動|いどう}",
+ "descriptionSv": "Temperatur och värmeöverföring: temperatur, grad, termometer, värmekälla, värmeöverföring, strålning, ledning, konvektion, element, absorbera, reflektera, isolera, utvidga sig, dra ihop sig och avkylning.",
+ "descriptionJa": "{温度|おんど}と{熱|ねつ}の{移動|いどう}：{温度|おんど}、{度|ど}、{温度計|おんどけい}、{熱源|ねつげん}、{熱|ねつ}の{移動|いどう}、{放射|ほうしゃ}、{伝導|でんどう}、{対流|たいりゅう}、ラジエーター、{吸収|きゅうしゅう}する、{反射|はんしゃ}する、{断熱|だんねつ}する、{膨張|ぼうちょう}する、{収縮|しゅうしゅく}する、{冷却|れいきゃく}。",
+ "categoryId": "R05-A02-T02",
+ "tags": [
+  "natur",
+  "väder",
+  "atmosfären"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.luftfuktighet"
+ ],
+ "related": [],
+ "recommendedOrder": 2614,
+ "words": [
+  {
+   "senseId": "s.temperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.termometer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmekälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeöverföring.1",
+   "active": false
+  },
+  {
+   "senseId": "s.strålning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konvektion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.element.1",
+   "active": true
+  },
+  {
+   "senseId": "s.absorbera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reflektera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.isolera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utvidga-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-ihop-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avkylning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur värmen flyttar sig",
+  "paragraphs": [
+   "Temperatur är ett mått på hur varmt eller kallt något är. I Sverige mäter vi temperaturen i grader Celsius, och vi läser av den på en termometer. Om två saker har olika temperatur, flyttar sig värme från den varma till den kalla. Det kallas värmeöverföring, och det kan ske på tre sätt.",
+   "Det första sättet är strålning. Solen är jordens viktigaste värmekälla, men mellan solen och jorden finns det nästan ingen luft. Ändå kommer värmen fram, som strålning genom rymden. Mörka ytor, som skog och hav, absorberar mycket av strålningen och blir varma. Ljusa ytor, som snö och is, reflekterar det mesta tillbaka.",
+   "Det andra sättet är ledning. Om du ställer en sked av metall i en kopp varmt te, blir hela skeden snart varm. Värmen går genom metallen från den ena delen till nästa. Luft leder värme mycket dåligt. Därför isolerar en tjock tröja så bra: den håller kvar luft nära kroppen.",
+   "Det tredje sättet är konvektion. Ett element under fönstret värmer luften. Luften utvidgar sig, blir lättare och stiger mot taket. Där svalnar den, drar ihop sig och sjunker ned igen. På så sätt flyttar luften värmen runt i hela rummet.",
+   "I atmosfären sker allt detta hela tiden. Solens strålning värmer marken, marken värmer luften närmast sig genom ledning, och den varma luften stiger genom konvektion. På natten sker en avkylning, när marken strålar ut sin värme mot himlen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur kommer solens värme till jorden?",
+    "options": [
+     "Genom ledning",
+     "Genom konvektion",
+     "Genom vinden",
+     "Genom strålning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ändå kommer värmen fram, som strålning genom rymden.",
+    "explanationJa": "{宇宙|うちゅう}を{通|とお}って{放射|ほうしゃ}で{届|とど}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka ytor absorberar mycket av solens strålning?",
+    "options": [
+     "Ljusa ytor, som snö",
+     "Speglar",
+     "Moln",
+     "Mörka ytor, som skog och hav"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Mörka ytor, som skog och hav, absorberar mycket av strålningen …",
+    "explanationJa": "{森|もり}や{海|うみ}のような{暗|くら}い{表面|ひょうめん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför isolerar en tjock tröja bra?",
+    "options": [
+     "Den håller kvar luft, som leder värme dåligt",
+     "Den är gjord av metall",
+     "Den reflekterar solen",
+     "Den blir varm av strålning"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Luft leder värme mycket dåligt. Därför isolerar en tjock tröja så bra …",
+    "explanationJa": "{空気|くうき}は{熱|ねつ}をあまり{伝|つた}えないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Varm luft från elementet sjunker mot golvet.",
+    "correct": false,
+    "explanationSv": "Luften utvidgar sig, blir lättare och stiger mot taket.",
+    "explanationJa": "{温|あたた}かい{空気|くうき}は{天井|てんじょう}に{向|む}かって{上|あ}がります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En sked av metall blir varm i teet genom ledning.",
+    "correct": true,
+    "explanationSv": "Värmen går genom metallen från den ena delen till nästa.",
+    "explanationJa": "{金属|きんぞく}の{中|なか}を{伝導|でんどう}で{熱|ねつ}が{伝|つた}わります。"
+   }
+  ],
+  "factSources": [
+   "Värme överförs på tre sätt: strålning, ledning och konvektion; solens energi når jorden som strålning genom rymden (Britannica, \"heat transfer\"; NASA, \"The Sun and Earth's energy budget\").",
+   "Metaller är goda värmeledare, medan stillastående luft leder värme dåligt och därför isolerar (Britannica, \"thermal conduction\"; Nationalencyklopedin, \"värmeledning\").",
+   "Nysnö reflekterar 80–90 % av solljuset, medan mörkt hav och skog reflekterar under 10–15 % (NASA Earth Observatory, \"Albedo\"; SMHI Kunskapsbanken).",
+   "Luft som värms utvidgar sig, får lägre densitet och stiger (konvektion); klara nätter kyls marken av genom utstrålning (SMHI Kunskapsbanken, \"Strålning\" och \"Konvektion\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om värme och om hur den flyttar sig i vardagen.",
+  "discussionPoints": [
+   "Var i ditt hem är det varmast? Varför tror du att det är så?",
+   "Vilka kläder isolerar bäst när det är kallt ute?",
+   "Har du märkt att en svart bil blir varmare i solen än en vit?",
+   "Vilken värmekälla tycker du mest om: solen, en brasa eller ett element?"
+  ]
+ }
+}

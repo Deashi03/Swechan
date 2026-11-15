@@ -154,6 +154,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'vatt.': () => import('./watersSeas').then((m) => m.WATERS_SEAS_MOTIFS),
   'jord.': () => import('./soils').then((m) => m.SOIL_MOTIFS),
   'istid.': () => import('./iceAges').then((m) => m.ICE_AGE_MOTIFS),
+  'vadr.': () => import('./weatherWords').then((m) => m.WEATHER_WORD_MOTIFS),
+  'atmo.': () => import('./atmosphere').then((m) => m.ATMOSPHERE_MOTIFS),
+  'neder.': () => import('./precipitation').then((m) => m.PRECIPITATION_MOTIFS),
+  'klimz.': () => import('./climateZones').then((m) => m.CLIMATE_ZONE_MOTIFS),
+  'extrem.': () => import('./extremeWeather').then((m) => m.EXTREME_WEATHER_MOTIFS),
+  'klimf.': () => import('./climateChange').then((m) => m.CLIMATE_CHANGE_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};

@@ -1,0 +1,174 @@
+{
+ "id": "m.vindens-uppkomst",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Vindens uppkomst",
+ "titleJa": "{風|かぜ}が{吹|ふ}くしくみ",
+ "descriptionSv": "Vindens uppkomst: tryckskillnad, luftström, strömma, jämna ut, kust, sjöbris, landbris, monsun, ekvator, halvklot, passadvind, rotation, corioliseffekt, virvel och cirkulera.",
+ "descriptionJa": "{風|かぜ}が{吹|ふ}くしくみ：{気圧差|きあつさ}、{気流|きりゅう}、{流|なが}れる、{均|なら}す、{海岸|かいがん}、{海風|うみかぜ}、{陸風|りくかぜ}、モンスーン、{赤道|せきどう}、{半球|はんきゅう}、{貿易風|ぼうえきふう}、{自転|じてん}、コリオリの{力|ちから}、{渦|うず}、{循環|じゅんかん}する。",
+ "categoryId": "R05-A02-T02",
+ "tags": [
+  "natur",
+  "väder",
+  "atmosfären"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.temperatur-och-varmeoverforing"
+ ],
+ "related": [],
+ "recommendedOrder": 2615,
+ "words": [
+  {
+   "senseId": "s.tryckskillnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftström.1",
+   "active": false
+  },
+  {
+   "senseId": "s.strömma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kust.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjöbris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landbris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.monsun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ekvator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvklot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passadvind.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rotation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.corioliseffekt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.virvel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkulera.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Varför blåser det?",
+  "paragraphs": [
+   "Vind är luft som rör sig. Men varför rör sig luften? Svaret är att solen inte värmer jorden lika mycket överallt. Där luften blir varm, blir den lättare och stiger. Då blir lufttrycket lägre vid marken. Där luften är kall, sjunker den, och lufttrycket blir högre.",
+   "Mellan ett högtryck och ett lågtryck finns det en tryckskillnad. Luften strömmar då från det höga trycket mot det låga, för att jämna ut skillnaden. Den luftströmmen är vind. Ju större tryckskillnaden är, desto hårdare blåser det.",
+   "Vid en kust kan man se detta i liten skala. En solig sommardag blir land varmt snabbare än havet. Luften över land stiger, och sval luft från havet strömmar in. Det blir sjöbris. På natten blir land kallare än havet, och då vänder vinden. Det blir landbris. Monsunen i Sydasien fungerar på ett liknande sätt, men över ett helt år: på sommaren blåser vinden från havet och ger mycket regn.",
+   "Även i stor skala fungerar det så. Vid ekvatorn är det varmast, och där stiger luften. Luft från norr och söder strömmar mot ekvatorn i stället. De vindarna kallas passadvindar. På så sätt cirkulerar luften i hela atmosfären och flyttar värme från de varma delarna av jorden mot de kalla.",
+   "Men vinden blåser inte rakt från högtryck till lågtryck. Jordens rotation gör att vinden böjer av, åt höger på norra halvklotet. Det kallas corioliseffekten. Därför blåser vinden i en stor virvel runt ett lågtryck. På norra halvklotet går virveln moturs."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför blir lufttrycket lägre där luften är varm?",
+    "options": [
+     "Den varma luften stiger",
+     "Den varma luften sjunker",
+     "Det blåser mindre där",
+     "Det finns mer kväve där"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Där luften blir varm, blir den lättare och stiger. Då blir lufttrycket lägre vid marken.",
+    "explanationJa": "{暖|あたた}かい{空気|くうき}が{上|あ}がるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Åt vilket håll strömmar luften?",
+    "options": [
+     "Från lågtryck mot högtryck",
+     "Från högtryck mot lågtryck",
+     "Alltid från väster",
+     "Alltid uppåt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Luften strömmar då från det höga trycket mot det låga …",
+    "explanationJa": "{高気圧|こうきあつ}から{低気圧|ていきあつ}へ{流|なが}れます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "När blåser det landbris?",
+    "options": [
+     "En solig eftermiddag",
+     "På natten",
+     "Bara på vintern",
+     "När det regnar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På natten blir land kallare än havet, och då vänder vinden. Det blir landbris.",
+    "explanationJa": "{夜|よる}に{吹|ふ}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Passadvindarna blåser mot ekvatorn.",
+    "correct": true,
+    "explanationSv": "Luft från norr och söder strömmar mot ekvatorn i stället. De vindarna kallas passadvindar.",
+    "explanationJa": "{貿易風|ぼうえきふう}は{赤道|せきどう}に{向|む}かって{吹|ふ}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Utan jordens rotation skulle vinden blåsa i en virvel runt ett lågtryck.",
+    "correct": false,
+    "explanationSv": "Jordens rotation gör att vinden böjer av … Därför blåser vinden i en stor virvel runt ett lågtryck.",
+    "explanationJa": "うずができるのは{地球|ちきゅう}の{自転|じてん}のためです。"
+   }
+  ],
+  "factSources": [
+   "Vind uppstår genom tryckskillnader som beror på ojämn uppvärmning; luften strömmar från högt mot lågt tryck, och ju tätare isobarerna ligger desto starkare vind (SMHI Kunskapsbanken, \"Vind\"; NOAA National Weather Service JetStream, \"Wind\").",
+   "Sjöbris uppstår soliga dagar då land värms snabbare än vatten; på natten kan landbris blåsa ut mot havet (SMHI Kunskapsbanken, \"Sjöbris\").",
+   "Passadvindarna blåser mot ekvatorn, från nordost på norra halvklotet och från sydost på södra (Britannica, \"trade wind\").",
+   "Corioliseffekten, uppkallad efter fransmannen Gaspard-Gustave de Coriolis, böjer av rörelser åt höger på norra och åt vänster på södra halvklotet; därför blåser vinden moturs runt lågtryck på norra halvklotet (Britannica, \"Coriolis force\"; NOAA, \"Coriolis effect\").",
+   "Den sydasiatiska monsunen ger sommarvindar från havet med kraftigt regn (Britannica, \"monsoon\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vind och om varför det blåser.",
+  "discussionPoints": [
+   "Har du märkt sjöbris när du har varit vid en kust?",
+   "Vilka vindar är viktiga där du kommer ifrån?",
+   "Tycker du om när det blåser, eller föredrar du stilla väder?",
+   "Varför tror du att det ofta blåser mer vid havet än inne i landet?"
+  ]
+ }
+}

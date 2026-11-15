@@ -1,0 +1,177 @@
+{
+ "id": "m.vaderfronter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Väderfronter",
+ "titleJa": "{前線|ぜんせん}",
+ "descriptionSv": "Väderfronter: temperatur, luftmassa, kalluft, varmluft, luftfuktighet, front, väderkarta, varmfront, byig, kallfront, tränga undan, temperaturfall, ocklusion, meteorolog och väderomslag.",
+ "descriptionJa": "{前線|ぜんせん}：{温度|おんど}、{気団|きだん}、{寒気|かんき}、{暖気|だんき}、{湿度|しつど}、{前線|ぜんせん}、{天気図|てんきず}、{温暖前線|おんだんぜんせん}、{突風|とっぷう}の{吹|ふ}く、{寒冷前線|かんれいぜんせん}、{押|お}しのける、{気温|きおん}の{低下|ていか}、{閉塞前線|へいそくぜんせん}、{気象予報士|きしょうよほうし}、{天気|てんき}の{急変|きゅうへん}。",
+ "categoryId": "R05-A02-T03",
+ "tags": [
+  "natur",
+  "väder",
+  "fronter"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.nederbordsmatning"
+ ],
+ "related": [],
+ "recommendedOrder": 2627,
+ "words": [
+  {
+   "senseId": "s.temperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftmassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kalluft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmluft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftfuktighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.front.3",
+   "active": true
+  },
+  {
+   "senseId": "s.väderkarta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmfront.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kallfront.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tränga-undan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.temperaturfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ocklusion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.meteorolog.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderomslag.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Linjerna på väderkartan",
+  "paragraphs": [
+   "Yuki är tillbaka på SMHI i Norrköping. Meteorologen Lena står framför en stor väderkarta med röda och blå linjer. – Det här är fronter, säger Lena. En front är gränsen mellan två luftmassor som har olika temperatur och luftfuktighet. Kalluft och varmluft blandas inte så lätt, så det blir en tydlig gräns.",
+   "– Den röda linjen är en varmfront, förklarar Lena. Där kommer varmluft och tar långsamt över efter den kalla luften. Varmluften är lättare, så den glider upp över kalluften. Först ser man fjädermoln högt uppe, sedan skiktmoln, och till slut kommer tjocka regnmoln med ihållande regn. Efter varmfronten blir det varmare.",
+   "– Den blå linjen är en kallfront. Där kommer kalluft, som är tyngre. Den tränger undan den varma luften och tvingar upp den snabbt. Då bildas bymoln. En kallfront ger ofta kraftiga skurar, byig vind och ibland åska. Efter fronten kommer ett temperaturfall, men luften blir klar och himlen blå.",
+   "Yuki ser också en lila linje. – Det är en ocklusion, säger Lena. Kallfronten rör sig oftast snabbare än varmfronten. Till slut når den fram till varmfronten, och då lyfts den varma luften upp från marken.",
+   "– I morgon passerar kallfronten Norrköping vid lunch, säger Lena. Det blir ett tydligt väderomslag. På förmiddagen är det tolv grader och regn, och på eftermiddagen blir det sol men bara fem grader. Yuki skriver ner allt. Nu förstår hon varför vädret i Sverige kan ändra sig så snabbt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är en front?",
+    "options": [
+     "Ett mycket stort regnmoln",
+     "En linje där det alltid är åska",
+     "Den högsta delen av himlen",
+     "Gränsen mellan två luftmassor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En front är gränsen mellan två luftmassor som har olika temperatur och luftfuktighet.",
+    "explanationJa": "{前線|ぜんせん}は{二|ふた}つの{気団|きだん}の{境目|さかいめ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför glider varmluften upp över kalluften vid en varmfront?",
+    "options": [
+     "Varmluften är tyngre",
+     "Det blåser från norr",
+     "Molnen drar upp den",
+     "Varmluften är lättare"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Varmluften är lättare, så den glider upp över kalluften.",
+    "explanationJa": "{暖|あたた}かい{空気|くうき}は{軽|かる}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilket väder ger en kallfront ofta?",
+    "options": [
+     "Kraftiga skurar och byig vind",
+     "Ihållande regn i flera dygn",
+     "Dimma och rimfrost",
+     "Ingen förändring alls"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En kallfront ger ofta kraftiga skurar, byig vind och ibland åska.",
+    "explanationJa": "{寒冷前線|かんれいぜんせん}は{激|はげ}しいにわか{雨|あめ}と{突風|とっぷう}をもたらします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Hur bildas en ocklusion?",
+    "options": [
+     "En kallfront når fram till en varmfront",
+     "Två varmfronter möts över havet",
+     "En varmfront stannar över fjällen",
+     "Det blir minusgrader på natten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kallfronten rör sig oftast snabbare än varmfronten. Till slut når den fram till varmfronten …",
+    "explanationJa": "{寒冷前線|かんれいぜんせん}が{温暖前線|おんだんぜんせん}に{追|お}いつくとできます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det blir varmare i Norrköping efter att kallfronten har passerat.",
+    "correct": false,
+    "explanationSv": "På förmiddagen är det tolv grader och regn, och på eftermiddagen blir det sol men bara fem grader.",
+    "explanationJa": "{寒冷前線|かんれいぜんせん}のあとは{気温|きおん}が{下|さ}がります。"
+   }
+  ],
+  "factSources": [
+   "SMHI Kunskapsbanken, Fronter: en front är gränsen mellan två luftmassor med olika temperatur och fuktighet; vid en varmfront glider varm luft långsamt upp över kall luft (molnföljd cirrus – cirrostratus – altostratus – nimbostratus, utbredd ihållande nederbörd); vid en kallfront tränger kall luft in under varm luft och lyfter den snabbt (bymoln, skurar, byig vind, temperaturfall, uppklarnande); en ocklusion bildas när kallfronten hinner ikapp varmfronten.",
+   "Vedertagna kartsymboler (WMO): varmfront röd linje med halvcirklar, kallfront blå linje med trekanter, ocklusion lila linje med både halvcirklar och trekanter."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om väderprognoser och om hur vädret ändrar sig.",
+  "discussionPoints": [
+   "Brukar du titta på väderkartan på tv eller i en app? Vad tittar du efter?",
+   "Har du märkt ett snabbt väderomslag någon gång? Hur var det?",
+   "Vilket väder tycker du bäst om: det före eller det efter en kallfront?",
+   "Varför tror du att det är svårt att säga exakt hur vädret blir om en vecka?"
+  ]
+ }
+}

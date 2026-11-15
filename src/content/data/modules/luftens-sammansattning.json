@@ -1,0 +1,180 @@
+{
+ "id": "m.luftens-sammansattning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Luftens sammansättning",
+ "titleJa": "{空気|くうき}の{組成|そせい}",
+ "descriptionSv": "Luftens sammansättning: atmosfär, gas, kväve, syre, argon, ädelgas, koldioxid, vattenånga, växthusgas, metan, sammansättning, utsläpp, halt, partikel, pollen, luktfri och luftförorening.",
+ "descriptionJa": "{空気|くうき}の{組成|そせい}：{大気|たいき}、{気体|きたい}、{窒素|ちっそ}、{酸素|さんそ}、アルゴン、{貴|き}ガス、{二酸化炭素|にさんかたんそ}、{水蒸気|すいじょうき}、{温室効果|おんしつこうか}ガス、メタン、{組成|そせい}、{排出|はいしゅつ}、{含有量|がんゆうりょう}、{粒子|りゅうし}、{花粉|かふん}、{無臭|むしゅう}の、{大気汚染|たいきおせん}。",
+ "categoryId": "R05-A02-T02",
+ "tags": [
+  "natur",
+  "väder",
+  "atmosfären"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.beskriva-dagens-vader"
+ ],
+ "related": [],
+ "recommendedOrder": 2611,
+ "words": [
+  {
+   "senseId": "s.atmosfär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kväve.1",
+   "active": true
+  },
+  {
+   "senseId": "s.syre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.argon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ädelgas.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koldioxid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenånga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växthusgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.metan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sammansättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsläpp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.partikel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pollen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.luktfri.1",
+   "active": false
+  },
+  {
+   "senseId": "s.luftförorening.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad är luft?",
+  "paragraphs": [
+   "Runt hela jorden finns ett lager av luft som vi kallar atmosfären. Luft är inte ett enda ämne. Den är en blandning av flera olika gaser. Gaserna är luktfria och har ingen färg, så vi kan inte se dem.",
+   "Om man tar bort vattenångan består luften till 78 procent av kväve och till 21 procent av syre. Nästan all den sista procenten är argon, en ädelgas. Resten, mindre än en tiondels procent, är andra gaser, till exempel koldioxid och metan.",
+   "Koldioxid och metan är växthusgaser. Det finns inte mycket av dem, men de är ändå viktiga, eftersom de håller kvar värme. Halten av koldioxid i luften är i dag ungefär 0,04 procent, och den har blivit högre sedan 1800-talet.",
+   "Vattenånga är speciell. Halten kan vara nästan noll i kall luft över en öken och upp till fyra procent i varm luft över ett hav.",
+   "I luften finns det också små partiklar: damm, sot, salt från havet och pollen från blommor och träd. Utsläpp från bilar och fabriker ger luftföroreningar. Luftens sammansättning ändras alltså lite från plats till plats, men de stora gaserna är alltid samma."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken gas finns det mest av i luften?",
+    "options": [
+     "Syre",
+     "Kväve",
+     "Koldioxid",
+     "Argon"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Luften består till 78 procent av kväve.",
+    "explanationJa": "{空気|くうき}の78パーセントは{窒素|ちっそ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur stor del av luften är syre?",
+    "options": [
+     "Ungefär 78 procent",
+     "Ungefär 21 procent",
+     "Ungefär 1 procent",
+     "Ungefär 50 procent"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… och till 21 procent av syre.",
+    "explanationJa": "{酸素|さんそ}は{約|やく}21パーセントです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är koldioxid viktig fast det finns så lite av den?",
+    "options": [
+     "Den gör luften blå",
+     "Den är en ädelgas",
+     "Den håller kvar värme",
+     "Den finns bara över havet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De är ändå viktiga, eftersom de håller kvar värme.",
+    "explanationJa": "{熱|ねつ}を{閉|と}じこめるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det finns lika mycket vattenånga i luften överallt.",
+    "correct": false,
+    "explanationSv": "Halten kan vara nästan noll i kall luft över en öken och upp till fyra procent i varm luft över ett hav.",
+    "explanationJa": "{水蒸気|すいじょうき}の{量|りょう}は{場所|ばしょ}によって{大|おお}きく{変|か}わります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan inte se kväve och syre.",
+    "correct": true,
+    "explanationSv": "Gaserna är luktfria och har ingen färg, så vi kan inte se dem.",
+    "explanationJa": "{色|いろ}がないので{見|み}えません。"
+   }
+  ],
+  "factSources": [
+   "Torr luft består av cirka 78 % kväve, 21 % syre och 0,93 % argon; koldioxid utgör cirka 0,04 % (omkring 420 ppm 2024) och har ökat från cirka 280 ppm före industrialiseringen (NOAA Global Monitoring Laboratory; SMHI Kunskapsbanken, \"Atmosfärens sammansättning\").",
+   "Vattenångans andel varierar från nästan 0 % i kall, torr luft till cirka 4 % i varm, fuktig luft (Encyclopaedia Britannica, \"atmosphere\"; NASA Earth Observatory).",
+   "Argon är en ädelgas och den tredje vanligaste gasen i atmosfären (Britannica, \"argon\", \"noble gas\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om luften runt oss och om vad den består av.",
+  "discussionPoints": [
+   "Visste du att det mesta av luften är kväve och inte syre?",
+   "Var tycker du att luften är som renast?",
+   "Finns det mycket luftföroreningar där du bor?",
+   "Är du allergisk mot pollen?"
+  ]
+ }
+}

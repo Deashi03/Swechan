@@ -1,0 +1,178 @@
+{
+ "id": "m.vind-och-blast",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Vind och blåst",
+ "titleJa": "{風|かぜ}と{強風|きょうふう}",
+ "descriptionSv": "Vind och blåst: vind, blåsa, blåst, blåsig, bris, vindby, vindstyrka, mojna, friska i, vindstilla, motvind, medvind, i lä, vindjacka, fladdra, drake och vindflöjel.",
+ "descriptionJa": "{風|かぜ}と{強風|きょうふう}：{風|かぜ}、{風|かぜ}が{吹|ふ}く、{強|つよ}い{風|かぜ}、{風|かぜ}の{強|つよ}い、そよ{風|かぜ}、{突風|とっぷう}、{風速|ふうそく}、{風|かぜ}が{弱|よわ}まる、{風|かぜ}が{強|つよ}まる、{無風|むふう}の、{向|む}かい{風|かぜ}、{追|お}い{風|かぜ}、{風|かぜ}よけに、ウインドブレーカー、はためく、{凧|たこ}、{風見|かざみ}。",
+ "categoryId": "R05-A02-T01",
+ "tags": [
+  "natur",
+  "väder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sno-och-slask"
+ ],
+ "related": [],
+ "recommendedOrder": 2604,
+ "words": [
+  {
+   "senseId": "s.vind.2",
+   "active": true
+  },
+  {
+   "senseId": "s.blåsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåsig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindby.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindstyrka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mojna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.friska-i.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vindstilla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motvind.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medvind.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-lä.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindjacka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fladdra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drake.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindflöjel.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Cykla i blåsten",
+  "paragraphs": [
+   "Sara cyklar till jobbet varje dag, både i sol och i regn. Men det svåraste vädret för henne är blåst. Hon bor i Malmö, och där blåser det ofta.",
+   "I morse var det blåsigt. Vindstyrkan var tolv meter per sekund, och Sara hade motvind hela vägen. Flaggorna vid hamnen fladdrade, och en vindby tog nästan hennes mössa. Hon kom fram trött och kall, trots vindjackan.",
+   "På lunchen sa hennes kollega Jonas: – Vinden friskar i ännu mer i eftermiddag. Ta bussen hem i stället! Men Sara tittade på vindflöjeln på taket mittemot. Den visade att vinden hade vänt.",
+   "Och mycket riktigt: på vägen hem hade hon medvind. Det gick fort och var nästan roligt. Vid parken flög några barn drake, och deras drakar dansade högt på himlen.",
+   "På kvällen mojnade vinden. Sara satt på balkongen i lä och kände bara en lätt bris. Vid tio var det helt vindstilla. – Så här skulle det vara varje dag, tänkte hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket väder tycker Sara är svårast att cykla i?",
+    "options": [
+     "Regn",
+     "Snö",
+     "Sol",
+     "Blåst"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men det svåraste vädret för henne är blåst.",
+    "explanationJa": "{風|かぜ}の{強|つよ}い{天気|てんき}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur var vinden när Sara cyklade till jobbet?",
+    "options": [
+     "Hon hade medvind",
+     "Det var vindstilla",
+     "Hon hade motvind",
+     "Det var bara en lätt bris"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… Sara hade motvind hela vägen.",
+    "explanationJa": "ずっと{向|む}かい{風|かぜ}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "inference",
+    "promptSv": "Varför gick det fort att cykla hem?",
+    "options": [
+     "Vinden hade vänt, så hon hade medvind",
+     "Hon tog bussen",
+     "Vinden hade mojnat helt",
+     "Hon cyklade en kortare väg"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den visade att vinden hade vänt. … på vägen hem hade hon medvind.",
+    "explanationJa": "{風向|かざむ}きが{変|か}わって、{追|お}い{風|かぜ}になったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vindflöjeln på taket visade att vinden hade vänt.",
+    "correct": true,
+    "explanationSv": "Men Sara tittade på vindflöjeln på taket mittemot. Den visade att vinden hade vänt.",
+    "explanationJa": "{向|む}かいの{屋根|やね}の{風見|かざみ}が、{風向|かざむ}きが{変|か}わったことを{示|しめ}していました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "usage",
+    "statementSv": "När vinden mojnar blåser det mer.",
+    "correct": false,
+    "explanationSv": "På kvällen mojnade vinden. … Vid tio var det helt vindstilla.",
+    "explanationJa": "「mojna」は{風|かぜ}が{弱|よわ}まることです。"
+   }
+  ],
+  "factSources": [
+   "I Sverige anges vindstyrka i meter per sekund (SMHI). Malmö och Skånes kust har ofta blåsigt väder.",
+   "Sara och Jonas är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vind och om att vara ute när det blåser.",
+  "discussionPoints": [
+   "Hur tar du dig till jobbet eller skolan när det är blåsigt?",
+   "Vad är skönast: en lätt bris eller helt vindstilla?",
+   "Har du flugit drake någon gång?",
+   "Blåser det mycket där du bor?"
+  ]
+ }
+}

@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.43.0 – 2026-11-15
+
+42 nya moduler som gör överämnet *Väder & klimat* (R05-A02) komplett, det andra överämnet i *Natur & geografi*. Varje nytt modulord har en egen bild, utom de 30 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 673 målord)
+- **Vädrets vardagsord** (2601–2607): soligt och molnigt, regn och duggregn, snö och slask, vind och blåst, dimma och dis, värme och kyla samt att beskriva dagens väder.
+- **Atmosfären** (2611–2617): luftens sammansättning, lufttryck, luftfuktighet, temperatur och värmeöverföring, vindens uppkomst, molnbildning och atmosfärens lager.
+- **Nederbörd & moln** (2621–2627): molntyper, regnskurar och ihållande regn, snöfall och hagel, åska och blixtar, frost och rimfrost, nederbördsmätning och väderfronter.
+- **Extremväder** (2631–2637): stormar och orkaner, tromber och tornador, översvämningar, värmeböljor, torka, snöoväder och halka samt vädervarningar.
+- **Klimatzoner** (2641–2647): tropiskt, torrt och aridt, tempererat, kontinentalt, polarområdenas och bergsklimat samt årstidernas variationer.
+- **Klimatförändringar** (2651–2657): växthuseffekten, växthusgaser, global uppvärmning, klimatmodeller, isavsmältning och havsnivå, klimatanpassning och utsläppsminskningar.
+- Varje modul har 15–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 337 nya ordposter. Vardagsord som *sol*, *moln*, *regn*, *snö*, *väder* och *himmel* fanns bara i grundordförrådet och har nu egna poster.
+- Nya betydelser på befintliga poster: *lufttryck*, *reflektera*, *kraftig*, *front*, *köra fast*, *sträng*, *förbränning*, *olja*, *uppvärmning*, *trend*, *påverkan*, *osäkerhet* och *återkoppling*.
+- Parallella grupper skrev samma poster: *uppehåll*, *regndroppe*, *genomblöt*, *regnbåge*, *snöflinga*, *nysnö*, *snödriva* och *kvav* (T01/T03), *vattenånga* och *iskristall* (T02/T03), *strömavbrott* (T03/T04), *värmerekord* (T04/T05) samt *medeltemperatur* och *havsis* (T05/T06). Posten finns bara i den grupp som kommer först, och de andra refererar dess `senseId`.
+- `coreVocabulary.json` fick tillbaka sitt ursprungliga format; ett gruppskript hade skrivit om och sorterat filen.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Djurvärlden* (R05-A03): Däggdjur → Vanliga svenska däggdjur.
+
+### Bilder (322 nya ordbilder)
+- 95 symbolbilder, 87 bilder som får användas i bildövningar och resten scener.
+- 126 symbol- och adjektivbilder blindtestades. 96 klarade testet efter högst två omgångar.
+- **30 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *tromb/tornado*.
+- Nya bildfiler i `src/ui/wordArt/`: `weatherWords.ts`, `atmosphere.ts`, `precipitation.ts`, `extremeWeather.ts`, `climateZones.ts` och `climateChange.ts`.
+
+### Test
+- Testjobbet i CI föll i 0.41–0.42 på "Timeout calling onTaskUpdate" trots att alla tester passerade. `src/test/setup.ts` släpper nu event-loopen efter varje test (inlagt i 0.42 och verifierat i CI).
+
+Service workern är `swechan-v47`.
+
+
 ## 0.42.0 – 2026-11-15
 
 42 nya moduler som gör överämnet *Landskap & geologi* (R05-A01) komplett. Det är det första överämnet i rotområdet *Natur & geografi* (R05). Varje nytt modulord har en egen bild, utom de 21 ord som underkändes i två blindtestomgångar.

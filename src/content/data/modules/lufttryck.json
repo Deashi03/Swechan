@@ -1,0 +1,178 @@
+{
+ "id": "m.lufttryck",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Lufttryck",
+ "titleJa": "{気圧|きあつ}",
+ "descriptionSv": "Lufttryck: lufttryck, tryck, väga, luftpelare, densitet, havsnivå, höjd, barometer, kvicksilver, vakuum, hektopascal, stiga, sjunka, högtryck, lågtryck och isobar.",
+ "descriptionJa": "{気圧|きあつ}：{気圧|きあつ}、{圧力|あつりょく}、{重|おも}さがある、{気柱|きちゅう}、{密度|みつど}、{海面|かいめん}の{高|たか}さ、{高|たか}さ、{気圧計|きあつけい}、{水銀|すいぎん}、{真空|しんくう}、ヘクトパスカル、{上|あ}がる、{下|さ}がる、{高気圧|こうきあつ}、{低気圧|ていきあつ}、{等圧線|とうあつせん}。",
+ "categoryId": "R05-A02-T02",
+ "tags": [
+  "natur",
+  "väder",
+  "atmosfären"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.luftens-sammansattning"
+ ],
+ "related": [],
+ "recommendedOrder": 2612,
+ "words": [
+  {
+   "senseId": "s.lufttryck.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tryck.2",
+   "active": true
+  },
+  {
+   "senseId": "s.väga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftpelare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.densitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.havsnivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barometer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvicksilver.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vakuum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hektopascal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stiga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjunka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.högtryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lågtryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.isobar.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Luften väger",
+  "paragraphs": [
+   "Det känns som om luften inte väger något, men det gör den. Ovanför varje kvadratmeter av jordens yta finns det en lång luftpelare som väger ungefär tio ton. Den vikten trycker på allt som finns på marken. Det kallar vi lufttryck.",
+   "Vi märker inte trycket, eftersom det trycker lika mycket från alla håll, och eftersom det finns luft också inne i kroppen. Men när vi åker upp på ett högt berg är luftpelaren ovanför oss kortare. Då blir lufttrycket lägre och luften tunnare. Luftens densitet är lägre, och det blir svårare att andas. På 5 500 meters höjd är lufttrycket bara ungefär hälften så högt som vid havet.",
+   "År 1643 gjorde Evangelista Torricelli från Italien ett känt försök. Han fyllde ett långt glasrör med kvicksilver och ställde det upp och ner i en skål med kvicksilver. Kvicksilvret sjönk lite, men det stannade på 76 centimeters höjd. Ovanför kvicksilvret blev det ett vakuum. Det var luftens tryck på kvicksilvret i skålen som höll kvar kvicksilvret i röret. Torricelli hade gjort den första barometern.",
+   "I dag mäter man lufttrycket i hektopascal. Vid havsnivån är lufttrycket i genomsnitt 1013 hektopascal. Men det ändras hela tiden. När lufttrycket stiger, kommer det ofta ett högtryck med fint väder. När det sjunker, kommer det ofta ett lågtryck med moln, regn och blåst.",
+   "På SMHI:s väderkartor kan man se högtryck och lågtryck. Linjerna på kartan kallas isobarer. De går genom platser med samma lufttryck."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Ungefär hur mycket väger luftpelaren ovanför en kvadratmeter?",
+    "options": [
+     "Tio ton",
+     "Ett kilo",
+     "Hundra kilo",
+     "Tusen ton"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ovanför varje kvadratmeter … finns det en lång luftpelare som väger ungefär tio ton.",
+    "explanationJa": "{約|やく}10トンです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir lufttrycket lägre uppe på ett berg?",
+    "options": [
+     "Det är kallare där",
+     "Luftpelaren ovanför är kortare",
+     "Det finns mer kvicksilver där",
+     "Det blåser mer där"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… när vi åker upp på ett högt berg är luftpelaren ovanför oss kortare.",
+    "explanationJa": "{上|うえ}にある{空気|くうき}の{柱|はしら}が{短|みじか}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad använde Torricelli i sitt försök?",
+    "options": [
+     "Vatten i en flaska",
+     "En ballong med luft",
+     "Kvicksilver i ett glasrör",
+     "En termometer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han fyllde ett långt glasrör med kvicksilver …",
+    "explanationJa": "ガラス{管|かん}に{水銀|すいぎん}を{入|い}れました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vid havsnivån är lufttrycket alltid exakt 1013 hektopascal.",
+    "correct": false,
+    "explanationSv": "Vid havsnivån är lufttrycket i genomsnitt 1013 hektopascal. Men det ändras hela tiden.",
+    "explanationJa": "1013は{平均|へいきん}で、{気圧|きあつ}はいつも{変|か}わります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Om barometern visar att lufttrycket sjunker, kan det bli regn.",
+    "correct": true,
+    "explanationSv": "När det sjunker, kommer det ofta ett lågtryck med moln, regn och blåst.",
+    "explanationJa": "{気圧|きあつ}が{下|さ}がると、{雨|あめ}になることがよくあります。"
+   }
+  ],
+  "factSources": [
+   "Normalt lufttryck vid havsytan är 1013,25 hPa; lufttrycket halveras ungefär vid 5,5 km höjd (SMHI Kunskapsbanken, \"Lufttryck\"; NOAA National Weather Service, \"Air pressure\").",
+   "Luft vid havsytan väger cirka 1,2 kg per kubikmeter, och luftpelaren över en kvadratmeter väger cirka 10 ton (101 325 N/m² ÷ 9,81 m/s² ≈ 10 300 kg) (Britannica, \"atmospheric pressure\").",
+   "Evangelista Torricelli konstruerade 1643 den första kvicksilverbarometern; kvicksilverpelaren står cirka 760 mm (76 cm) hög vid normalt lufttryck, med ett vakuum ovanför (Britannica, \"Evangelista Torricelli\", \"barometer\").",
+   "Högtryck är förknippade med sjunkande luft och oftast uppehållsväder, lågtryck med stigande luft, moln och nederbörd; isobarer förbinder platser med samma lufttryck (SMHI Kunskapsbanken, \"Högtryck och lågtryck\").",
+   "Kvicksilvertermometrar är förbjudna att sälja i Sverige sedan 1990-talet (Kemikalieinspektionen, \"Kvicksilver\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om lufttryck och om hur det känns när trycket ändras.",
+  "discussionPoints": [
+   "Har du känt att det tryckte i öronen på ett flygplan eller på ett berg?",
+   "Tittar du på barometern eller på väderkartan för att veta vad det blir för väder?",
+   "Tycker du om högtryck på vintern, när det är kallt och klart?",
+   "Tror du att människor kan känna i kroppen när lufttrycket ändras?"
+  ]
+ }
+}

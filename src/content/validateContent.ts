@@ -163,6 +163,18 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.osorterad.1',
   // 0.42 (Mark & jordarter), after two blind-test rounds
   's.sandig.1', 's.lerig.1', 's.lucker.1', 's.omkomma.1',
+  // 0.43 (Vädrets vardagsord), after two blind-test rounds
+  's.mulen.1', 's.strålande.1', 's.regnig.1', 's.halt-adj.1', 's.blåsig.1', 's.dimmig.1', 's.disig.1', 's.hundkall.1', 's.växlande-molnighet.1',
+  // 0.43 (Atmosfären), after two blind-test rounds
+  's.lufttryck.2', 's.hektopascal.1', 's.avdunstning.1', 's.kondensation.1', 's.relativ-luftfuktighet.1',
+  // 0.43 (Nederbörd & moln), after two blind-test rounds
+  's.uppklarnande.1', 's.urladdning.1', 's.frostig.1', 's.tränga-undan.1',
+  // 0.43 (Extremväder), after two blind-test rounds
+  's.insnöad.1', 's.hemberedskap.1',
+  // 0.43 (Klimatzoner), after two blind-test rounds
+  's.arid.1', 's.sträng.2', 's.polar.1',
+  // 0.43 (Klimatförändringar), after two blind-test rounds
+  's.uppvärmning.2', 's.påverkan.2', 's.global-uppvärmning.1', 's.beräkna.1', 's.självförstärkande.1', 's.klimatmål.1', 's.fossilfri.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

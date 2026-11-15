@@ -1,0 +1,179 @@
+{
+ "id": "m.nederbordsmatning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Nederbördsmätning",
+ "titleJa": "{降水量|こうすいりょう}の{観測|かんそく}",
+ "descriptionSv": "Nederbördsmätning: nederbörd, mätning, väderstation, regnmätare, millimeter, nederbördsmängd, observation, dygn, snödjup, väderradar, uppmäta, årsnederbörd, nederbördsrik, medelvärde och torrperiod.",
+ "descriptionJa": "{降水量|こうすいりょう}の{観測|かんそく}：{降水|こうすい}、{測定|そくてい}、{気象観測所|きしょうかんそくじょ}、{雨量計|うりょうけい}、ミリメートル、{降水量|こうすいりょう}、{観測|かんそく}、{一昼夜|いっちゅうや}、{積雪|せきせつ}の{深|ふか}さ、{気象|きしょう}レーダー、{観測|かんそく}する、{年間降水量|ねんかんこうすいりょう}、{降水量|こうすいりょう}の{多|おお}い、{平均値|へいきんち}、{乾燥期|かんそうき}。",
+ "categoryId": "R05-A02-T03",
+ "tags": [
+  "natur",
+  "väder",
+  "mätning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.frost-och-rimfrost"
+ ],
+ "related": [],
+ "recommendedOrder": 2626,
+ "words": [
+  {
+   "senseId": "s.nederbörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regnmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.millimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nederbördsmängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.observation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dygn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snödjup.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderradar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppmäta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.årsnederbörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nederbördsrik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.medelvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.torrperiod.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur mycket regnade det?",
+  "paragraphs": [
+   "Yuki vill veta hur man mäter nederbörd, och Lena på SMHI tar med henne till en väderstation utanför Norrköping. Där står en regnmätare: en burk av metall som är öppen upptill. – Regnet samlas i burken, och sedan mäter vi hur högt vattnet står, säger Lena. Nederbörd mäts i millimeter. En millimeter betyder en liter vatten på varje kvadratmeter.",
+   "– Förr gjordes alla mätningar för hand, fortsätter Lena. Frivilliga hjälpte till. De tittade på sin regnmätare klockan sju varje morgon och skrev ner nederbördsmängden för det senaste dygnet. I dag är de flesta stationer automatiska, men vi får fortfarande observationer från frivilliga i hela landet.",
+   "På vintern mäter man också snödjupet med en lång pinne som har centimeter på sig. Snön i regnmätaren smälts, och vattnet mäts på samma sätt som regn. En enkel regel är att en centimeter nysnö ger ungefär en millimeter vatten.",
+   "Lena visar en bild från väderradarn på datorn. Där ser man var det regnar just nu. – Radarn visar var regnet är, men hur mycket det regnar mäter vi bäst på marken, säger hon. Ibland har man uppmätt mer än 100 millimeter på ett enda dygn. Det är mer än det brukar regna under en hel sommarmånad.",
+   "Årsnederbörden i Sverige är ofta mellan 500 och 800 millimeter. Fjällen och västra Sverige är mest nederbördsrika, eftersom fuktig luft kommer in från havet i väster. Lena visar ett diagram med medelvärden för varje månad. – Och här ser du en torrperiod, säger hon. Under sex veckor kom det nästan ingen nederbörd alls, och bönderna fick brist på vatten."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad betyder en millimeter nederbörd?",
+    "options": [
+     "En liter vatten på hela stationen",
+     "En centimeter snö på taket",
+     "En millimeter is på vägen",
+     "En liter vatten på varje kvadratmeter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En millimeter betyder en liter vatten på varje kvadratmeter.",
+    "explanationJa": "1ミリは{一平方|いちへいほう}メートルあたり1リットルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När tittade de frivilliga på regnmätaren förr?",
+    "options": [
+     "Klockan sju varje morgon",
+     "En gång i veckan",
+     "Varje kväll före middagen",
+     "Bara när det regnade mycket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De tittade på sin regnmätare klockan sju varje morgon …",
+    "explanationJa": "{毎朝|まいあさ}{七時|しちじ}に{見|み}ていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Hur mycket vatten ger tio centimeter nysnö ungefär?",
+    "options": [
+     "Ungefär tio millimeter",
+     "Ungefär en millimeter",
+     "Ungefär hundra millimeter",
+     "Ungefär en liter per dygn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En enkel regel är att en centimeter nysnö ger ungefär en millimeter vatten.",
+    "explanationJa": "{新雪|しんせつ}1センチは{約|やく}1ミリの{水|みず}になるので、10センチなら{約|やく}10ミリです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför är västra Sverige nederbördsrikt?",
+    "options": [
+     "Fuktig luft kommer in från havet i väster",
+     "Det finns många väderstationer där",
+     "Det är kallare där än i fjällen",
+     "Det blåser sällan där"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Fjällen och västra Sverige är mest nederbördsrika, eftersom fuktig luft kommer in från havet i väster.",
+    "explanationJa": "{西|にし}の{海|うみ}から{湿|しめ}った{空気|くうき}が{入|はい}ってくるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Väderradarn är det bästa sättet att mäta exakt hur mycket det har regnat.",
+    "correct": false,
+    "explanationSv": "Radarn visar var regnet är, men hur mycket det regnar mäter vi bäst på marken …",
+    "explanationJa": "{降水量|こうすいりょう}は{地上|ちじょう}で{測|はか}るのがいちばん{正確|せいかく}です。"
+   }
+  ],
+  "factSources": [
+   "SMHI Kunskapsbanken, Nederbördsmätning: nederbörd mäts i millimeter (1 mm = 1 liter per kvadratmeter) med en nederbördsmätare; snö smälts före mätningen; manuella stationer läses av kl. 07 svensk tid och avser det senaste dygnet; frivilliga observatörer bidrar med mätningar.",
+   "SMHI: tumregel att 1 cm nysnö motsvarar ungefär 1 mm nederbörd; snödjup mäts i centimeter.",
+   "SMHI normalvärden 1991–2020: årsnederbörd i stora delar av Sverige ca 500–800 mm, mest i fjällen och i västra Sverige; Stockholm ca 550 mm per år; normalperioder på 30 år.",
+   "SMHI väderradar: flera radarstationer visar var det regnar; mängder mäts säkrast på marken."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man mäter vädret och om regn och torka där ni bor.",
+  "discussionPoints": [
+   "Är det ett nederbördsrikt eller ett torrt område där du bor?",
+   "Vilken månad regnar det mest i ditt land?",
+   "Tittar du på väderradarn i en app? När?",
+   "Vad händer i naturen och i samhället under en lång torrperiod?"
+  ]
+ }
+}
