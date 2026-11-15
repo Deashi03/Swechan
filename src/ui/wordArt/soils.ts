@@ -103,10 +103,6 @@ const flower = (x: number, y: number, s = 1, col: string = C.pink) => at(x, y, s
 const lens = (x: number, y: number, r: number, inner: Svg, id: string) => all(line(`M${f1(x + r * 0.7)} ${f1(y + r * 0.7)} L${f1(x + r * 1.5)} ${f1(y + r * 1.5)}`, C.ink, 4.5), line(`M${f1(x + r * 0.75)} ${f1(y + r * 0.75)} L${f1(x + r * 1.45)} ${f1(y + r * 1.45)}`, WOOD, 2.6),
   circle(x, y, r, C.white, null), clip(id, `M${x - r} ${y} A${r} ${r} 0 1 0 ${x + r} ${y} A${r} ${r} 0 1 0 ${x - r} ${y} Z`, inner), circle(x, y, r, 'rgba(200,230,250,0.18)', C.ink, 2.2));
 const jar = (x: number, y: number, w: number, h: number, inner: Svg, id: string) => all(clip(id, rectD(x, y - h, w, h), inner), rect(x, y - h, w, h, 'rgba(220,240,252,0.25)', 3, C.ink, 1.4), rect(x - 1, y - h - 4, w + 2, 4, STEEL, 1, C.ink, 1), line(`M${x + 3} ${y - h + 4} L${x + 3} ${y - 6}`, 'rgba(255,255,255,0.7)', 1.4));
-const truck = (x: number, y: number, s = 1, load: Svg = '', col: string = HAT) => at(x, y, s, rect(-30, -14, 38, 10, col, 1.5, C.ink, 1.3), load, rect(8, -20, 14, 16, col, 2, C.ink, 1.3), rect(11, -17, 8, 6, '#bfe3f5', 1, C.ink, 1),
-  circle(-20, -3, 5, C.dark, C.ink, 1.2), circle(-20, -3, 2, C.grey, null), circle(14, -3, 5, C.dark, C.ink, 1.2), circle(14, -3, 2, C.grey, null));
-const digger = (x: number, y: number, s = 1) => at(x, y, s, rect(-14, -10, 24, 6, C.dark, 2, C.ink, 1.1), ...[-10, -4, 2, 8].map((d) => circle(d, -7, 2, C.grey, C.ink, 0.7)), rect(-12, -24, 20, 14, HAT, 2, C.ink, 1.2), rect(-10, -22, 8, 7, '#bfe3f5', 1, C.ink, 0.9),
-  line('M6 -20 L22 -34 L34 -20', HAT, 4), line('M6 -20 L22 -34 L34 -20', C.ink, 0.8), path('M30 -20 L40 -20 L38 -12 L31 -12 Z', STEEL, C.ink, 1.1));
 const cow = (x: number, y: number, s = 1, flip = false) => g(`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`, ...[-12, -6, 8, 13].map((d) => rect(d - 2, -8, 4, 8, C.white, 1, C.ink, 1)), ellipse(0, -14, 17, 8, C.white, C.ink, 1.3), ellipse(-5, -15, 5, 3.5, C.dark, null), ellipse(7, -12, 4, 3, C.dark, null),
   path('M14 -18 L24 -20 L26 -12 L18 -10 Z', C.white, C.ink, 1.2), ellipse(25, -12.5, 2.4, 1.8, '#f2b6b6', C.ink, 0.6), line('M18 -20 L18 -24 M22 -20 L23 -24', C.ink, 1.2), circle(21, -16, 0.9, C.ink, null), line('M-17 -16 L-20 -8', C.ink, 1.2));
 const fence = (x1: number, x2: number, y: number) => all(line(`M${x1} ${y - 8} L${x2} ${y - 8} M${x1} ${y - 3} L${x2} ${y - 3}`, WOOD, 1.4), ...Array.from({ length: Math.floor((x2 - x1) / 12) + 1 }, (_, i) => rect(x1 + i * 12 - 1, y - 11, 2.4, 11, WOOD, 0.4, C.ink, 0.7)));
@@ -144,20 +140,12 @@ export const SOIL_MOTIFS: Record<string, Svg> = {
   'jord.kornstorlek': all(bg(), rect(8, 92, 104, 12, '#f2e2b0', 1, C.ink, 1.2), line(Array.from({ length: 21 }, (_, i) => `M${8 + i * 5.2} 92 l0 ${i % 5 ? 3 : 6}`).join(' '), C.ink, 0.9),
     ellipse(18, 74, 8, 4, CLAY, C.ink, 1), dots(30, 68, 14, 12, 40, '#8a7a5a', 17, 0.4), dots(50, 66, 16, 14, 18, SAND2, 19, 1.2), pebbles(70, 64, 16, 16, 4, 3, 4, 21), ellipse(100, 72, 10, 8, PEB[0]!, C.ink, 1.2),
     arrow(14, 46, 108, 46, HL, 3), line('M14 46 L14 46', HL, 1)),
-  /** kantig: one coloured stone with sharp corners and edges, the corners ringed in orange; beside it a grey, smooth, round pebble as contrast. */
-  'jord.kantig': all(bg(), ground, path('M14 104 L20 62 L44 46 L70 58 L66 92 L44 108 Z', '#b0a594', C.ink, 1.8), path('M20 62 L44 72 L70 58 M44 72 L44 108', 'none', 'rgba(43,42,51,0.4)', 1.1),
-    ring(20, 62, 5), ring(44, 46, 5), ring(70, 58, 5), ring(14, 104, 5), greyed(ellipse(94, 96, 16, 12, '#b0a594', C.ink, 1.6), ellipse(90, 92, 5, 3, 'rgba(255,255,255,0.6)', null))),
   /** sandig: a coloured foot and sandal completely covered in sand grains, standing on sandy ground; beside it the same foot in grey, clean, as contrast. */
   'jord.sandig': all(bg(), rect(4, 92, 70, 20, SAND, 0, null), dots(4, 92, 70, 20, 90, SAND2, 23, 0.9), path('M14 92 L14 64 C14 58 26 58 26 64 L26 80 L48 84 C56 86 56 92 50 92 Z', C.skin, C.ink, 1.4), path('M12 92 L54 92 L54 96 L12 96 Z', C.orange, C.ink, 1.1),
     dots(14, 66, 40, 26, 70, SAND2, 29, 0.9), dots(12, 92, 42, 4, 16, '#a8844a', 31, 0.8), ground, greyed(g('translate(68 16) scale(0.8)', path('M14 92 L14 64 C14 58 26 58 26 64 L26 80 L48 84 C56 86 56 92 50 92 Z', C.skin, C.ink, 1.4), path('M12 92 L54 92 L54 96 L12 96 Z', C.orange, C.ink, 1.1)))),
   /** genomsläpplig: a coloured column of sand under rain, the drops running down through it (arrows) and out at the bottom; beside it a grey column of clay with the water lying as a pool on top. */
   'jord.genomsläpplig': all(bg(), ground, column(14, 46, 38, 56, sandTex(14, 46, 38, 56, 37), 'jGs1'), cloud(33, 18, 0.9, '#cfdbe6'), rain(22, 28, 22, 5), ...[24, 33, 42].map((x, i) => all(drop(x, 58 + i * 12, 0.8), arrow(x, 66 + i * 12, x, 74 + i * 12, WATER2, 1.6))),
     drop(26, 108, 0.8), drop(40, 108, 0.8), greyed(column(70, 52, 38, 50, clayTex(70, 52, 38, 50), 'jGs2'), ellipse(89, 50, 18, 3, WATER, C.ink, 1), cloud(89, 18, 0.9), rain(78, 28, 22, 5))),
-  /** grustag: a big open pit in the ground with steep sand-and-gravel walls; an excavator digs and a truck carries the gravel away. */
-  'jord.grustag': all(bg(SKY), tree(14, 44, 1), tree(108, 42, 0.9), rect(4, 44, 112, 3, GRASS, 0, C.ink, 0.9), path('M4 47 L116 47 L116 112 L4 112 Z', SAND, null), dots(4, 47, 112, 65, 160, SAND2, 41, 0.8),
-    path('M20 47 L34 96 L92 96 L104 47', 'none', C.ink, 1.4), path('M34 96 L92 96 L92 112 L34 112 Z', GRAVEL, null), pebbles(34, 96, 58, 16, 20, 1.5, 3, 43), path('M24 47 L36 92 M100 47 L90 92', 'none', SAND2, 2),
-    digger(50, 96, 0.8), truck(84, 96, 0.55, path('M-28 -14 C-22 -22 -2 -22 4 -14 Z', GRAVEL, C.ink, 1)), path('M60 60 C66 52 76 52 82 60 L82 66 L60 66 Z', GRAVEL, C.ink, 1), pebbles(60, 56, 22, 10, 6, 1.2, 2, 47)),
-
   // ── 2552 Lera och silt ──
   /** lera: two hands shaping a smooth blue-grey lump of wet clay on a board, with a thumbprint dent in it; a small finished clay bowl stands beside. */
   'jord.lera': all(bg(), rect(10, 92, 100, 8, WOOD, 2, C.ink, 1.4), path('M30 92 C26 70 40 58 56 58 C74 58 86 70 82 92 Z', CLAY, C.ink, 1.6), ellipse(52, 72, 5, 3.4, CLAY2, null), line('M38 80 q6 -3 12 0 M58 84 q6 -3 12 0', CLAY2, 1),
