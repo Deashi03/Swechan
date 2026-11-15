@@ -117,7 +117,6 @@ export const CLIMATE_CHANGE_MOTIFS: Record<string, Svg> = {
     path('M4 62 C40 50 80 50 116 62 L116 70 C80 58 40 58 4 70 Z', LAND, null), path('M60 53 C80 53 96 56 116 62 L116 70 C96 64 80 61 60 61 Z', SEA, null), line('M4 62 C40 50 80 50 116 62', HL, 3), tree(30, 58, 0.4), house(48, 56, 0.5), fig(80, C.orange, 'smile', 0.14)),
   'klimf.växthuseffekt': all(bg(SPACE), stars([[14, 100], [106, 104], [100, 14]]), sun(14, 18, 8), shell(64, 70, 34, 9), globe(64, 70, 34), beam(22, 26, 52, 46, C.gold, 2.4),
     ray(70, 44, 92, 8, WARM, 1.8), ray(76, 46, 92, 28, WARM, 1.8), carrow(92, 28, 100, 36, 86, 50, HL, 2.4), thermo(108, 100, 0.65, C.red, 0.6)),
-  'klimf.medeltemperatur': all(bg('#f6f2ea'), axes(14, 100, 96, 80), bars(18, 100, [14, 16, 24, 34, 46, 56, 62, 58, 46, 34, 22, 16], 5.8, '#9fc4e6'), line('M14 63 L110 63', HL, 3, '6 3'), thermo(8, 50, 0.45, C.red, 0.5)),
   'klimf.förstärka': all(bg(SPACE), greyed(shell(30, 64, 18, 3), globe(30, 64, 18), thermo(30, 104, 0.3, C.red, 0.5)), arrow(52, 64, 66, 64, HL, 3.4), shell(90, 64, 18, 9, 'rgba(140,199,232,0.8)'), globe(90, 64, 18), thermo(90, 108, 0.9, C.red, 0.5), co2(78, 30, 0.9), co2(102, 32, 0.9), co2(90, 22, 0.9)),
 
   // 2652 Växthusgaser
@@ -160,8 +159,6 @@ export const CLIMATE_CHANGE_MOTIFS: Record<string, Svg> = {
   'klimf.självförstärkande': all(bg('#f6f2ea'), path('M60 60 m-4 0 a4 4 0 1 1 8 0 a10 10 0 1 1 -18 2 a18 18 0 1 1 34 -4 a28 28 0 1 1 -48 10', 'none', HL, 3), arrow(16, 70, 14, 82, HL, 3), greyed(path('M96 96 m-6 0 a6 6 0 1 0 12 0 a6 6 0 1 0 -12 0', 'none', C.grey, 2.4)), num(60, 64, '+', 10, WARM), num(84, 50, '+', 12, WARM), num(28, 30, '+', 16, WARM)),
 
   // 2655 Isavsmältning och havsnivå
-  'klimf.havsis': all(bg('#dfeaf2'), rect(4, 56, 112, 56, SEA2, 0, null), ...[[24, 60, 18], [62, 62, 22], [100, 59, 12]].map(([x, y, w]) => all(path(`M${x! - w!} ${y} L${x! + w!} ${y} L${x! + w! - 4} ${y! + 6} L${x! - w! + 3} ${y! + 6} Z`, ICE, C.ink, 1.2), path(`M${x! - w! + 3} ${y! + 6} L${x! + w! - 4} ${y! + 6} L${x! + w! - 8} ${y! + 14} L${x! - w! + 6} ${y! + 14} Z`, 'rgba(230,244,251,0.5)', null))), line('M4 62 L116 62', '#9fd0ee', 1),
-    at(62, 60, 0.6, ellipse(0, -10, 14, 8, C.white, C.ink, 1.2), circle(14, -14, 6, C.white, C.ink, 1.2), circle(16, -15, 0.9, C.ink, null), line('M-8 -3 L-8 2 M6 -3 L6 2', C.ink, 3)), oval(62, 64, 28, 12)),
   'klimf.havsnivåhöjning': all(bg(SKY), path('M4 112 L4 50 L40 50 L60 70 L60 112 Z', '#c9a874', C.ink, 1.2), house(22, 50, 1), rect(60, 66, 56, 46, SEA, 0, null), line('M40 86 L116 86', C.grey, 1.4, '4 3'), line('M58 66 L116 66', HL, 2.6), rect(98, 40, 4, 72, C.white, 0, C.ink, 1), ...range(7).map((i) => line(`M98 ${44 + i * 10} L102 ${44 + i * 10}`, C.ink, 1)), arrow(86, 84, 86, 68, HL, 3)),
   'klimf.värmeutvidgning': all(bg('#f6f2ea'), ...[[30, '#9fd0ee', 70, COLD, 0.15], [86, '#f2a07e', 54, C.red, 0.85]].map(([x, col, lv, tc, l]) => all(path(`M${(x as number) - 16} 40 L${(x as number) - 16} 96 L${(x as number) + 16} 96 L${(x as number) + 16} 40`, 'none', C.ink, 1.6), rect((x as number) - 15, lv as number, 30, 96 - (lv as number), col as string, 0, null), thermo((x as number) + 24, 92, l as number, tc as string, 0.5))),
     line('M14 70 L102 70', C.grey, 1.2, '3 2'), line('M70 54 L102 54', HL, 2.6), arrow(86, 68, 86, 58, HL, 2.6), arrow(50, 76, 64, 76, C.ink, 2)),
