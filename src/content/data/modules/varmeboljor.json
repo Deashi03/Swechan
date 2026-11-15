@@ -1,0 +1,182 @@
+{
+ "id": "m.varmeboljor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Värmeböljor",
+ "titleJa": "{熱波|ねっぱ}",
+ "descriptionSv": "Värmeböljor: hetta, maxtemperatur, i sträck, värmebölja, högtryck, tropisk natt, kvav, värmerekord, överhettad, uttorkning, värmeslag, riskgrupp, svalka, skugga, svalka sig, fläkt och luftkonditionering.",
+ "descriptionJa": "{熱波|ねっぱ}：{暑|あつ}さ、{最高気温|さいこうきおん}、{連続|れんぞく}して、{熱波|ねっぱ}、{高気圧|こうきあつ}、{熱帯夜|ねったいや}、{蒸|む}し{暑|あつ}い、{最高気温|さいこうきおん}の{記録|きろく}、{熱|ねつ}がこもった、{脱水症状|だっすいしょうじょう}、{熱中症|ねっちゅうしょう}、ハイリスク{群|ぐん}、{涼|すず}しさ、{日陰|ひかげ}、{涼|すず}む、{扇風機|せんぷうき}、エアコン。",
+ "categoryId": "R05-A02-T04",
+ "tags": [
+  "natur",
+  "väder",
+  "extremväder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.oversvamningar"
+ ],
+ "related": [],
+ "recommendedOrder": 2634,
+ "words": [
+  {
+   "senseId": "s.hetta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maxtemperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-sträck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmebölja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högtryck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tropisk-natt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvav.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmerekord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överhettad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uttorkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riskgrupp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svalka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skugga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svalka-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftkonditionering.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Sommaren när värmen inte tog slut",
+  "paragraphs": [
+   "När är det en värmebölja? Enligt SMHI är det en värmebölja när maxtemperaturen är minst 25 grader fem dagar i sträck. En natt när temperaturen inte går under 20 grader kallas tropisk natt.",
+   "Sommaren 2018 var ovanligt varm i Sverige. Ett högtryck låg kvar över Skandinavien i flera veckor, och solen sken nästan varje dag. Maj blev den varmaste maj som har mätts i Sverige, och i juli kom en lång värmebölja. Många städer fick flera tropiska nätter, och luften i lägenheterna var kvav.",
+   "Det svenska värmerekordet är 38 grader. Det mättes i Ultuna 1933 och i Målilla 1947. I Japan är det ofta mycket varmare. I juli 2018 mättes 41,1 grader i Kumagaya, vilket då var ett nytt värmerekord för hela landet.",
+   "Hetta kan vara farlig. Kroppen blir överhettad, och man kan få uttorkning eller värmeslag. Äldre människor, små barn och personer med vissa sjukdomar är riskgrupper. Därför är det viktigt att dricka mycket vatten och att hjälpa grannar som bor ensamma.",
+   "Det finns mycket man kan göra för att få svalka. Man kan stanna i skuggan mitt på dagen, svalka sig i vatten och dra för gardinerna. En fläkt hjälper lite, men i många hem i Japan finns luftkonditionering i nästan varje rum."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur länge måste maxtemperaturen vara minst 25 grader för att det ska kallas värmebölja i Sverige?",
+    "options": [
+     "Fem dagar i sträck",
+     "En dag",
+     "Två veckor",
+     "En hel månad"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… när maxtemperaturen är minst 25 grader fem dagar i sträck.",
+    "explanationJa": "{最高気温|さいこうきおん}25{度|ど}{以上|いじょう}が{五日|いつか}{連続|れんぞく}することです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför var sommaren 2018 så varm?",
+    "options": [
+     "Det regnade varje dag",
+     "Det blåste storm",
+     "Det kom många tromber",
+     "Ett högtryck låg kvar i flera veckor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ett högtryck låg kvar över Skandinavien i flera veckor …",
+    "explanationJa": "{高気圧|こうきあつ}が{何週間|なんしゅうかん}もとどまっていたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilka är riskgrupper när det är mycket varmt?",
+    "options": [
+     "Bara idrottare",
+     "Bara turister",
+     "Äldre, små barn och personer med vissa sjukdomar",
+     "Bara personer som bor i Japan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Äldre människor, små barn och personer med vissa sjukdomar är riskgrupper.",
+    "explanationJa": "お{年寄|としよ}り、{小|ちい}さな{子|こ}ども、ある{種|しゅ}の{病気|びょうき}のある{人|ひと}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det svenska värmerekordet är högre än 41 grader.",
+    "correct": false,
+    "explanationSv": "Det svenska värmerekordet är 38 grader.",
+    "explanationJa": "スウェーデンの{最高気温|さいこうきおん}の{記録|きろく}は38{度|ど}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är bra att stanna i skuggan mitt på dagen när det är varmt.",
+    "correct": true,
+    "explanationSv": "Man kan stanna i skuggan mitt på dagen …",
+    "explanationJa": "{昼間|ひるま}は{日陰|ひかげ}にいるのがよいです。"
+   }
+  ],
+  "factSources": [
+   "SMHI definierar värmebölja som en period med minst fem dagar i följd då maxtemperaturen är minst 25 °C; en tropisk natt är en natt då temperaturen inte sjunker under 20 °C (SMHI Kunskapsbanken, \"Värmebölja\", \"Tropiska nätter\").",
+   "Sommaren 2018 dominerades av ett ihållande högtryck; maj 2018 var den varmaste maj som uppmätts i Sverige, och juli 2018 gav en lång värmebölja med många tropiska nätter (SMHI, \"Sommaren 2018 – extremt varm och solig\", \"Maj 2018 – rekordvarm\").",
+   "Sveriges värmerekord är 38,0 °C, uppmätt i Ultuna 1933 och i Målilla 1947 (SMHI, \"Temperaturrekord i Sverige\").",
+   "Den 23 juli 2018 uppmättes 41,1 °C i Kumagaya, då nytt nationellt värmerekord i Japan (Japan Meteorological Agency, \"歴代全国ランキング\").",
+   "Äldre, små barn och personer med vissa sjukdomar är särskilt känsliga för värme; råd om att dricka vatten, söka skugga och svalka sig (Folkhälsomyndigheten, \"Råd vid värmebölja\"; 1177 Vårdguiden, \"Värmeslag\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om värmeböljor och om hur man håller sig sval.",
+  "discussionPoints": [
+   "Hur varmt brukar det bli där du kommer ifrån?",
+   "Hur sover du under en tropisk natt?",
+   "Vad gör du för att få svalka en het dag?",
+   "Vem i din närhet behöver extra hjälp när det är mycket varmt?"
+  ]
+ }
+}
