@@ -132371,27 +132371,11 @@
    "quiz": false
   },
   {
-   "senseId": "s.kontinental.1",
-   "kind": "illustration",
-   "motif": "jinre.kontinental",
-   "group": "kontinental",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.havsbotten.1",
    "kind": "illustration",
    "motif": "jinre.havsbotten",
    "group": "havsbotten",
    "quiz": true
-  },
-  {
-   "senseId": "s.oceanisk.1",
-   "kind": "illustration",
-   "motif": "jinre.oceanisk",
-   "group": "kontinental",
-   "quiz": false,
-   "symbol": true
   },
   {
    "senseId": "s.tvärsnitt.1",
@@ -132461,7 +132445,12 @@
    "motif": "jinre.trögflytande",
    "group": "trögflytande",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.42.0",
+    "hash": "b0dc876c"
+   }
   },
   {
    "senseId": "s.konvektionsström.1",
@@ -132491,28 +132480,17 @@
    "quiz": false
   },
   {
-   "senseId": "s.tektonisk.1",
-   "kind": "illustration",
-   "motif": "jinre.tektonisk",
-   "group": "platta",
-   "quiz": false,
-   "symbol": true
-  },
-  {
-   "senseId": "s.plattektonik.1",
-   "kind": "illustration",
-   "motif": "jinre.plattektonik",
-   "group": "plattektonik",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.litosfär.1",
    "kind": "illustration",
    "motif": "jinre.litosfär",
    "group": "litosfär",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.42.0",
+    "hash": "64e7ac25"
+   }
   },
   {
    "senseId": "s.plattgräns.1",
@@ -132777,14 +132755,6 @@
    "quiz": true
   },
   {
-   "senseId": "s.vulkanisk.1",
-   "kind": "illustration",
-   "motif": "jinre.vulkanisk",
-   "group": "vulkanisk",
-   "quiz": false,
-   "symbol": true
-  },
-  {
    "senseId": "s.magma.1",
    "kind": "illustration",
    "motif": "jinre.magma",
@@ -132872,7 +132842,12 @@
    "motif": "jinre.bergskedjebildning",
    "group": "kollidera",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.42.0",
+    "hash": "925cc44d"
+   }
   },
   {
    "senseId": "s.kollision.1",
@@ -132921,14 +132896,6 @@
    "motif": "jinre.bergsbestigare",
    "group": "bergsbestigare",
    "quiz": true
-  },
-  {
-   "senseId": "s.erosion.1",
-   "kind": "illustration",
-   "motif": "jinre.erosion",
-   "group": "erosion",
-   "quiz": false,
-   "symbol": true
   }
  ]
 }
