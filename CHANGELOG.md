@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.42.0 – 2026-11-15
+
+42 nya moduler som gör överämnet *Landskap & geologi* (R05-A01) komplett. Det är det första överämnet i rotområdet *Natur & geografi* (R05). Varje nytt modulord har en egen bild, utom de 21 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 670 målord)
+- **Landskapets former** (2501–2507): berg och kullar, dalar och raviner, slätter och platåer, kuster och klippor, öar och skärgårdar, halvöar och näs samt att beskriva ett landskap.
+- **Bergarter & mineral** (2511–2517): magmatiska, sedimentära och metamorfa bergarter, mineralens egenskaper, kristaller och malmer, stenbrott och gruvor samt bergarters kretslopp.
+- **Jordens inre** (2521–2527): jordskorpan, manteln och kärnan, tektoniska plattor, kontinentaldrift, jordbävningar och förkastningar, vulkaner och magma samt bergskedjebildning.
+- **Floder, sjöar & hav** (2531–2537): flodens delar, Sveriges sjöar och vattendrag, vattenfall och forsar, deltan och flodmynningar, hav och oceaner, tidvatten och havsströmmar samt vattnets kretslopp.
+- **Is & istider** (2541–2547): glaciärer, inlandsisar, morän och flyttblock, rullstensåsar, isälvar och smältvatten, istidens landskap och permafrost.
+- **Mark & jordarter** (2551–2557): sand och grus, lera och silt, matjord och humus, jordmånsbildning, erosion och vittring, jordskred och ras samt markanvändning.
+- Varje modul har 15–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 368 nya ordposter. Vardagsord som *berg*, *kust*, *strand*, *ö*, *sand*, *grus* och *lera* fanns bara i grundordförrådet och har nu egna poster.
+- Nya betydelser på befintliga poster: *mantel*, *tryck*, *platta*, *glida isär*, *driva*, *mineral*, *glans*, *schakt*, *klyfta*, *slingra sig*, *pass*, *spets*, *källa*, *damm*, *mild*, *dra sig tillbaka*, *avsätta*, *frusen*, *släppa ut* och *urholka*.
+- Parallella grupper skrev samma poster: *skikt*, *havsbotten* och *tryck* (T03/T02), *bergstopp*, *bergsbestigare* och *kustlinje* (T03/T01), *lagun* och *slingra sig* (T01/T04), *isberg* m.fl. (T04/T05) samt *kantig*, *grustag* och *avsätta* (T05/T06). Posten finns bara i en grupp, och de andra refererar dess `senseId`.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Väder & klimat* (R05-A02): Vädrets vardagsord → Soligt och molnigt.
+
+### Bilder (370 nya ordbilder)
+- 60 symbolbilder, 134 bilder som får användas i bildövningar och resten scener.
+- 87 symbol- och adjektivbilder blindtestades. 66 klarade testet efter högst två omgångar.
+- **21 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *jordbävning/skalv*, *pressa ihop/trycka ihop* och *flod/älv*.
+- Nya bildfiler i `src/ui/wordArt/`: `landforms.ts`, `rocksMinerals.ts`, `earthInterior.ts`, `watersSeas.ts`, `iceAges.ts` och `soils.ts`.
+
+Service workern är `swechan-v46`.
+
+
 ## 0.41.0 – 2026-11-15
 
 42 nya moduler som gör överämnet *Civilisationer & världsdelars historia* (R04-A06) komplett. Därmed är hela rotområdet *Historia & humaniora* (R04) publicerat. Varje nytt modulord har en egen bild, utom de 18 ord som underkändes i två blindtestomgångar.

@@ -1,0 +1,175 @@
+{
+ "id": "m.vattenfall-och-forsar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Vattenfall och forsar",
+ "titleJa": "{滝|たき}と{急流|きゅうりゅう}",
+ "descriptionSv": "Vattenfall och forsar: vattenfall, fors, forsa, störta, brant, fallhöjd, dåna, virvel, forsränning, vattenkraft, kraftverk, damm, lax, laxtrappa och orörd.",
+ "descriptionJa": "{滝|たき}と{急流|きゅうりゅう}：{滝|たき}、{急流|きゅうりゅう}・{早瀬|はやせ}、{勢|いきお}いよく{流|なが}れる、{真|ま}っ{逆|さか}さまに{落|お}ちる、{険|けわ}しい、{落差|らくさ}、{轟|とどろ}く、{渦|うず}、ラフティング、{水力|すいりょく}、{発電所|はつでんしょ}、ダム、サケ、{魚道|ぎょどう}、{手|て}つかずの。",
+ "categoryId": "R05-A01-T04",
+ "tags": [
+  "natur",
+  "geografi",
+  "vatten"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.sveriges-sjoar-och-vattendrag"
+ ],
+ "related": [],
+ "recommendedOrder": 2533,
+ "words": [
+  {
+   "senseId": "s.vattenfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fors.1",
+   "active": true
+  },
+  {
+   "senseId": "s.forsa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.störta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fallhöjd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dåna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.virvel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.forsränning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.damm.3",
+   "active": true
+  },
+  {
+   "senseId": "s.lax.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laxtrappa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orörd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Där vattnet faller",
+  "paragraphs": [
+   "Ett vattenfall är ett ställe där en älv eller en flod faller rakt ner, ofta från en brant klippa. Om landet bara går brant nedåt, men vattnet inte faller rakt ner, kallas det en fors. I en fors forsar vattnet snabbt och vitt över stora stenar.",
+   "Sveriges högsta vattenfall heter Njupeskär och finns i Dalarna. Där störtar vattnet ner 93 meter. Ett av världens mest kända vattenfall är Niagarafallen, mellan USA och Kanada. Fallhöjden är bara ungefär 50 meter, men där kommer väldigt mycket vatten, och det dånar så att man måste prata högt. Världens högsta vattenfall är Angelfallen i Venezuela, med en fallhöjd på 979 meter.",
+   "I en fors och under ett vattenfall bildas ofta virvlar, där vattnet snurrar runt. Därför är det farligt att bada där. Men många tycker om forsränning. Då åker man i en gummibåt nedför forsen, med hjälm och flytväst.",
+   "Laxen simmar uppströms för att lägga sina ägg. Den kan hoppa uppför forsar, men en hög damm är för svår. Därför bygger man laxtrappor, där laxen kan hoppa uppåt steg för steg.",
+   "Vatten som faller har mycket kraft. I Sverige använder man vattenkraft för att göra el. Vid ett kraftverk bygger man en damm, och vattnet får falla genom stora rör. Ungefär 40 procent av elen i Sverige kommer från vattenkraft. Men fyra stora älvar i norra Sverige är fortfarande orörda: Torneälven, Kalixälven, Piteälven och Vindelälven. Där får man inte bygga stora kraftverk."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "usage",
+    "promptSv": "Vad är skillnaden mellan ett vattenfall och en fors?",
+    "options": [
+     "En fors är alltid högre än ett vattenfall",
+     "Det finns bara forsar i Sverige",
+     "I en fors står vattnet stilla",
+     "I ett vattenfall faller vattnet rakt ner, men inte i en fors"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Om landet bara går brant nedåt, men vattnet inte faller rakt ner, kallas det en fors.",
+    "explanationJa": "{滝|たき}では{水|みず}がまっすぐ{落|お}ちますが、{急流|きゅうりゅう}ではそうではありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var finns världens högsta vattenfall?",
+    "options": [
+     "I Dalarna",
+     "Mellan USA och Kanada",
+     "I norra Sverige",
+     "I Venezuela"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Världens högsta vattenfall är Angelfallen i Venezuela …",
+    "explanationJa": "{世界|せかい}で{一番|いちばん}{高|たか}い{滝|たき}はベネズエラのエンジェルフォールです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Niagarafallen har en högre fallhöjd än Njupeskär.",
+    "correct": false,
+    "explanationSv": "Där störtar vattnet ner 93 meter. … [Niagarafallen:] Fallhöjden är bara ungefär 50 meter …",
+    "explanationJa": "ニュウペシェールは93メートル、ナイアガラの{滝|たき}は{約|やく}50メートルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför bygger man laxtrappor?",
+    "options": [
+     "För att göra el",
+     "För att laxen ska kunna ta sig förbi dammar",
+     "För att människor ska kunna gå över älven",
+     "För att stoppa virvlar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den kan hoppa uppför forsar, men en hög damm är för svår. Därför bygger man laxtrappor …",
+    "explanationJa": "サケが{高|たか}いダムを{越|こ}えられるように{作|つく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det finns inga stora kraftverk i Torneälven.",
+    "correct": true,
+    "explanationSv": "Men fyra stora älvar i norra Sverige är fortfarande orörda … Där får man inte bygga stora kraftverk.",
+    "explanationJa": "トルネ{川|がわ}には{大|おお}きな{発電所|はつでんしょ}を{作|つく}ってはいけません。"
+   }
+  ],
+  "factSources": [
+   "Njupeskär i Fulufjällets nationalpark i Dalarna är Sveriges högsta vattenfall, med en total fallhöjd på cirka 93 meter (varav cirka 70 meter fritt fall) (Naturvårdsverket, \"Fulufjällets nationalpark\"; Nationalencyklopedin, \"Njupeskär\").",
+   "Niagarafallen ligger på gränsen mellan USA och Kanada; Horseshoe Falls har en fallhöjd på drygt 50 meter och en mycket stor vattenföring (Encyclopaedia Britannica, \"Niagara Falls\").",
+   "Angelfallen (Salto Ángel) i Venezuela är världens högsta vattenfall med 979 meters fallhöjd (Encyclopaedia Britannica, \"Angel Falls\").",
+   "Laxtrappor (fisktrappor) byggs vid dammar så att vandrande fisk som lax kan ta sig uppströms till lekplatserna (Havs- och vattenmyndigheten, \"Fiskvägar\").",
+   "Vattenkraft står för omkring 40 procent av Sveriges elproduktion (Energimyndigheten, \"Energiläget\"; Svensk Vattenkraftförening).",
+   "Torneälven, Kalixälven, Piteälven och Vindelälven är nationalälvar som enligt miljöbalken (4 kap. 6 §) skyddas mot vattenkraftsutbyggnad (Naturvårdsverket; miljöbalken 4 kap. 6 §)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vattenfall och forsar som ni har sett, och om vattenkraft.",
+  "discussionPoints": [
+   "Vilket är det mest kända vattenfallet i ditt land?",
+   "Skulle du vilja prova forsränning? Varför eller varför inte?",
+   "Vad är bra och dåligt med vattenkraft?",
+   "Tycker du att man ska låta några älvar vara orörda?"
+  ]
+ }
+}

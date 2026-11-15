@@ -28,18 +28,18 @@ describe('Kurser (catalog navigation)', () => {
   });
 
   it('a topic group lists its seven planned modules, clearly marked and not startable', async () => {
-    wrap(<Explore categoryId="R05-A01-T01" />);
+    wrap(<Explore categoryId="R05-A02-T01" />);
     const items = await choices();
     expect(items.length).toBe(7);
     expect(screen.getAllByText('Planerad').length).toBeGreaterThanOrEqual(7);
-    expect(screen.getByText('Berg och kullar')).toBeInTheDocument();
+    expect(screen.getByText('Soligt och molnigt')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
   });
 
   it('a planned module has an information view without a start button', async () => {
-    // Historia & humaniora is fully published from 0.41; Natur & geografi is still planned.
-    wrap(<CatalogModuleView id="SWC-NAT-01-01-01" />);
-    expect(await screen.findByText('Berg och kullar')).toBeInTheDocument();
+    // Landskap & geologi is published from 0.42; Väder & klimat is still planned.
+    wrap(<CatalogModuleView id="SWC-NAT-02-01-01" />);
+    expect(await screen.findByText('Soligt och molnigt')).toBeInTheDocument();
     expect(screen.getByText(/inte färdig än/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
     expect(screen.queryByRole('link', { name: /Starta/ })).toBeNull();

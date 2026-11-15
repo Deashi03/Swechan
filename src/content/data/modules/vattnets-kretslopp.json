@@ -1,0 +1,174 @@
+{
+ "id": "m.vattnets-kretslopp",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Vattnets kretslopp",
+ "titleJa": "{水|みず}の{循環|じゅんかん}",
+ "descriptionSv": "Vattnets kretslopp: kretslopp, avdunsta, ånga, gas, svalna, kondensera, flytande, dimma, dagg, nederbörd, smälta, sippra, grundvatten, rena och brunn.",
+ "descriptionJa": "{水|みず}の{循環|じゅんかん}：{循環|じゅんかん}、{蒸発|じょうはつ}する、{蒸気|じょうき}、{気体|きたい}、{冷|さ}める、{凝結|ぎょうけつ}する、{液体|えきたい}の、{霧|きり}、{露|つゆ}、{降水|こうすい}、{溶|と}ける、{染|し}み{込|こ}む、{地下水|ちかすい}、{浄化|じょうか}する、{井戸|いど}。",
+ "categoryId": "R05-A01-T04",
+ "tags": [
+  "natur",
+  "geografi",
+  "vatten"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.tidvatten-och-havsstromar"
+ ],
+ "related": [],
+ "recommendedOrder": 2537,
+ "words": [
+  {
+   "senseId": "s.kretslopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avdunsta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ånga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svalna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kondensera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flytande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dimma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dagg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nederbörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smälta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sippra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rena.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brunn.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Samma vatten om och om igen",
+  "paragraphs": [
+   "Vattnet på jorden försvinner inte. Det går runt i ett kretslopp som aldrig tar slut. Vattnet som du dricker i dag kan en gång ha funnits i havet, i ett moln eller i snön högt uppe på ett berg.",
+   "Solen värmer vattnet i haven, sjöarna och älvarna. Då avdunstar en del av vattnet. Det blir till ånga, alltså vatten i form av en gas, som man inte kan se. Det mesta av vattnet som avdunstar kommer från haven. Även växter släpper ut vatten genom sina blad.",
+   "Ångan stiger uppåt med den varma luften. Högt uppe är luften kall, och ångan svalnar. Då kondenserar den till små droppar av flytande vatten, och det blir moln. Moln nära marken kallas dimma. Samma sak kan hända på natten när det blir kallt. Då kondenserar ånga på gräset, och på morgonen är gräset vått av dagg.",
+   "När dropparna i molnen blir stora och tunga faller de ner som nederbörd, till exempel regn eller snö. Snön ligger kvar på vintern och smälter på våren.",
+   "En del av vattnet rinner ner i bäckar och älvar och sedan ut i havet. En annan del sipprar ner i marken och blir grundvatten. På vägen ner renar marken vattnet, och därför är grundvatten ofta bra dricksvatten. Förr hämtade människor vatten från en brunn. Grundvattnet kan också komma upp ur marken i en källa.",
+   "Vatten som har avdunstat stannar i genomsnitt bara ungefär nio dagar i luften innan det faller ner igen. I havet kan vattnet stanna i flera tusen år."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför avdunstar vatten från haven?",
+    "options": [
+     "Månen drar i vattnet",
+     "Vinden gör vågor",
+     "Solen värmer vattnet",
+     "Marken renar vattnet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Solen värmer vattnet i haven, sjöarna och älvarna. Då avdunstar en del av vattnet.",
+    "explanationJa": "{太陽|たいよう}が{水|みず}を{温|あたた}めるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer när ångan svalnar högt uppe i luften?",
+    "options": [
+     "Den blir till grundvatten",
+     "Den blir till salt",
+     "Den kondenserar, och det blir moln",
+     "Den blir varmare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Högt uppe är luften kall, och ångan svalnar. Då kondenserar den till små droppar av flytande vatten, och det blir moln.",
+    "explanationJa": "{水蒸気|すいじょうき}が{冷|ひ}えて{凝結|ぎょうけつ}し、{雲|くも}ができます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "usage",
+    "statementSv": "Dagg kommer ner från molnen som regn.",
+    "correct": false,
+    "explanationSv": "Samma sak kan hända på natten när det blir kallt. Då kondenserar ånga på gräset …",
+    "explanationJa": "{露|つゆ}は{雲|くも}から{降|ふ}るのではなく、{草|くさ}の{上|うえ}で{水蒸気|すいじょうき}が{凝結|ぎょうけつ}してできます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför är grundvatten ofta bra dricksvatten?",
+    "options": [
+     "Marken renar vattnet på vägen ner",
+     "Det kommer direkt från havet",
+     "Det är varmt",
+     "Det har avdunstat"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På vägen ner renar marken vattnet, och därför är grundvatten ofta bra dricksvatten.",
+    "explanationJa": "{地面|じめん}を{通|とお}るうちに、{水|みず}がきれいになるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Vatten stannar längre i havet än i luften.",
+    "correct": true,
+    "explanationSv": "Vatten som har avdunstat stannar … bara ungefär nio dagar i luften … I havet kan vattnet stanna i flera tusen år.",
+    "explanationJa": "{空気中|くうきちゅう}には{約|やく}9{日|か}、{海|うみ}には{何千年|なんぜんねん}もとどまります。"
+   }
+  ],
+  "factSources": [
+   "Vattnets kretslopp: solen får vatten att avdunsta, främst från haven; vattenånga kondenserar till moln och faller som nederbörd; vattnet rinner till havet eller infiltrerar marken och blir grundvatten (USGS, \"The Water Cycle\"; SMHI, \"Vattnets kretslopp\").",
+   "Dagg bildas när luften kyls nattetid och vattenånga kondenserar på kalla ytor som gräs (SMHI, \"Dagg\"; Encyclopaedia Britannica, \"dew\").",
+   "Marken filtrerar och renar vattnet på vägen ner till grundvattnet; i Sverige kommer ungefär hälften av det kommunala dricksvattnet från grundvatten (SGU, \"Grundvatten\"; Svenskt Vatten).",
+   "Vatten som har avdunstat stannar i genomsnitt omkring nio dagar i atmosfären och flera tusen år i haven (USGS, \"The Water Cycle – residence times\"; NASA Earth Observatory, \"The Water Cycle\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vattnets kretslopp och om var vattnet som ni använder kommer ifrån.",
+  "discussionPoints": [
+   "Var har du sett vatten avdunsta eller kondensera hemma?",
+   "Kommer det mycket nederbörd där du bor? Mest som regn eller som snö?",
+   "Har du druckit vatten från en brunn eller en källa?",
+   "Varför är det viktigt att vi håller vattnet rent?"
+  ]
+ }
+}

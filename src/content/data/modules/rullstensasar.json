@@ -1,0 +1,175 @@
+{
+ "id": "m.rullstensasar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Rullstensåsar",
+ "titleJa": "エスカー",
+ "descriptionSv": "Rullstensåsar: ås, rullstensås, sträcka sig, tunnel, rullsten, rundad, sortera, sorterad, slingra sig, grundvatten, rena, dricksvatten, vattentäkt, grustag och gravhög.",
+ "descriptionJa": "エスカー：{尾根|おね}、エスカー、{延|の}びる、トンネル、{丸石|まるいし}、{丸|まる}みを{帯|お}びた、{分|わ}ける、そろった、{曲|ま}がりくねる、{地下水|ちかすい}、{浄化|じょうか}する、{飲|の}み{水|みず}、{水源|すいげん}、{砂利採取場|じゃりさいしゅじょう}、{墳丘|ふんきゅう}。",
+ "categoryId": "R05-A01-T05",
+ "tags": [
+  "natur",
+  "geologi",
+  "is"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.moran-och-flyttblock"
+ ],
+ "related": [],
+ "recommendedOrder": 2544,
+ "words": [
+  {
+   "senseId": "s.ås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rullstensås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträcka-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tunnel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rullsten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rundad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sorterad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slingra-sig.2",
+   "active": true
+  },
+  {
+   "senseId": "s.grundvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rena.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dricksvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattentäkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grustag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gravhög.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Staden på åsen",
+  "paragraphs": [
+   "Yuki har börjat läsa på universitetet i Uppsala. En dag cyklar hon med sin kurskamrat Johan längs en lång och smal ås med höga träd. – Det här är Uppsalaåsen, säger Johan. Det är en rullstensås. Den sträcker sig många mil, både norr och söder om staden.",
+   "– Under istiden rann det stora floder av vatten i tunnlar under inlandsisen, berättar Johan. Vattnet förde med sig sten, grus och sand. När isen hade smält låg allt kvar som en lång rygg i landskapet.",
+   "Johan tar upp en sten. Den är rund och slät. – Det här är en rullsten. Vattnet har rullat stenarna mot varandra, så att de har blivit rundade. Vattnet har också sorterat materialet, grus för sig och sand för sig. Gruset i en rullstensås är alltså sorterat, inte blandat som i en morän.",
+   "Åsen slingrar sig fram genom landskapet, och i den finns det mycket grundvatten. – Sanden och gruset renar vattnet, så det blir bra dricksvatten, säger Johan. Uppsala har sin vattentäkt i åsen. Förr fanns det också många grustag här, där man tog grus till vägar och hus.",
+   "Till sist stannar de vid Gamla Uppsala. Där ligger tre stora gravhögar uppe på åsen. – Människor har alltid bott och rest på åsarna, säger Johan. Där var marken torr och lätt att gå på."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad för slags ås är Uppsalaåsen?",
+    "options": [
+     "En ändmorän",
+     "En del av fjällen",
+     "Ett gammalt berg",
+     "En rullstensås"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det här är Uppsalaåsen … Det är en rullstensås.",
+    "explanationJa": "エスカーです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är stenarna i åsen runda?",
+    "options": [
+     "Människor har slipat dem",
+     "Isen har smält dem",
+     "Vattnet har rullat dem mot varandra",
+     "De har alltid varit runda"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Vattnet har rullat stenarna mot varandra, så att de har blivit rundade.",
+    "explanationJa": "{水|みず}が{石|いし}どうしを{転|ころ}がしてこすり{合|あ}わせたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad använder Uppsala åsen till i dag?",
+    "options": [
+     "Som grustag för hela landet",
+     "Som åker",
+     "Som vattentäkt",
+     "Som hamn"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Uppsala har sin vattentäkt i åsen.",
+    "explanationJa": "{水源|すいげん}として{使|つか}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Materialet i en rullstensås ligger blandat precis som i en morän.",
+    "correct": false,
+    "explanationSv": "Gruset i en rullstensås är alltså sorterat, inte blandat som i en morän.",
+    "explanationJa": "エスカーの{砂利|じゃり}は{分級|ぶんきゅう}されていて、モレーンのようにまざってはいません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Det ligger gravhögar på åsen i Gamla Uppsala.",
+    "correct": true,
+    "explanationSv": "Där ligger tre stora gravhögar uppe på åsen.",
+    "explanationJa": "3つの{大|おお}きな{墳丘|ふんきゅう}がエスカーの{上|うえ}にあります。"
+   }
+  ],
+  "factSources": [
+   "Rullstensåsar bildades av smältvatten som rann i tunnlar och sprickor i och under inlandsisen; materialet är sorterat och stenarna rundade (SGU, Nationalencyklopedin).",
+   "Uppsalaåsen är en av Sveriges största rullstensåsar och går i nord–sydlig riktning genom Uppland och genom Uppsala.",
+   "Uppsalas dricksvatten är grundvatten från Uppsalaåsen och Vattholmaåsen (Uppsala Vatten).",
+   "Grus från rullstensåsar har använts till vägar och betong; täkterna kan skada grundvattnet (SGU).",
+   "De tre stora kungshögarna i Gamla Uppsala ligger på Uppsalaåsen (Riksantikvarieämbetet).",
+   "Yuki och Johan är påhittade personer."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om rullstensåsar och om varför de är viktiga.",
+  "discussionPoints": [
+   "Finns det en ås nära där du bor? Hur ser den ut?",
+   "Varför tror du att människor förr byggde vägar och byar på åsarna?",
+   "Vad är viktigast: grus till vägar eller rent grundvatten? Varför?",
+   "Var kommer dricksvattnet ifrån där du bor?"
+  ]
+ }
+}

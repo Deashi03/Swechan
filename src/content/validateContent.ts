@@ -151,6 +151,18 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.indirekt-styre.1',
   // 0.41 (Amerikas & Oceaniens historia), after two blind-test rounds
   's.arbetsplikt.1',
+  // 0.42 (Landskapets former), after two blind-test rounds
+  's.sträcka-sig.1', 's.vidsträckt.1', 's.klippig.1', 's.naturskön.1',
+  // 0.42 (Bergarter & mineral), after two blind-test rounds
+  's.sedimentär.1', 's.metamorf.1', 's.hårdhet.1', 's.geologisk.1',
+  // 0.42 (Jordens inre), after two blind-test rounds
+  's.oceanisk.1', 's.kontinental.1', 's.tektonisk.1', 's.plattektonik.1', 's.vulkanisk.1', 's.erosion.1',
+  // 0.42 (Floder, sjöar & hav), after two blind-test rounds
+  's.nedströms.1', 's.mild.2',
+  // 0.42 (Is & istider), after two blind-test rounds
+  's.osorterad.1',
+  // 0.42 (Mark & jordarter), after two blind-test rounds
+  's.sandig.1', 's.lerig.1', 's.lucker.1', 's.omkomma.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

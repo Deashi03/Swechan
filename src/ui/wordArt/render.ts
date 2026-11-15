@@ -148,6 +148,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'mell.': () => import('./middleEastHistory').then((m) => m.MIDDLE_EAST_HISTORY_MOTIFS),
   'afr.': () => import('./africanHistory').then((m) => m.AFRICAN_HISTORY_MOTIFS),
   'amoc.': () => import('./americasOceaniaHistory').then((m) => m.AMERICAS_OCEANIA_MOTIFS),
+  'jinre.': () => import('./earthInterior').then((m) => m.EARTH_INTERIOR_MOTIFS),
+  'land.': () => import('./landforms').then((m) => m.LANDFORM_MOTIFS),
+  'berg.': () => import('./rocksMinerals').then((m) => m.ROCKS_MINERALS_MOTIFS),
+  'vatt.': () => import('./watersSeas').then((m) => m.WATERS_SEAS_MOTIFS),
+  'jord.': () => import('./soils').then((m) => m.SOIL_MOTIFS),
+  'istid.': () => import('./iceAges').then((m) => m.ICE_AGE_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
