@@ -212,13 +212,13 @@ try {
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), Historiska epoker (0.36) and
   // Militärhistoria (0.37), Religion & idéhistoria (0.38), Filosofi & etik (0.39), Arkeologi & kulturarv (0.40) and
-  // Civilisationer & världsdelars historia (0.41) are fully published, so all of Historia & humaniora is done and the planned
-  // entry is the first module of Natur & geografi: Landskap & geologi → Landskapets former → Berg och kullar.
+  // Civilisationer & världsdelars historia (0.41) are fully published, so all of Historia & humaniora is done, and Landskap &
+  // geologi (0.42) opens Natur & geografi; the planned entry is Väder & klimat → Vädrets vardagsord → Soligt och molnigt.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Natur & geografi/ }).first().click();
-  await page.getByRole('link', { name: /Landskap & geologi/ }).first().click();
-  await page.getByRole('link', { name: /Landskapets former/ }).first().click();
-  await page.getByRole('link', { name: /Berg och kullar/ }).first().click();
+  await page.getByRole('link', { name: /Väder & klimat/ }).first().click();
+  await page.getByRole('link', { name: /Vädrets vardagsord/ }).first().click();
+  await page.getByRole('link', { name: /Soligt och molnigt/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
