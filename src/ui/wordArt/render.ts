@@ -153,6 +153,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'berg.': () => import('./rocksMinerals').then((m) => m.ROCKS_MINERALS_MOTIFS),
   'vatt.': () => import('./watersSeas').then((m) => m.WATERS_SEAS_MOTIFS),
   'jord.': () => import('./soils').then((m) => m.SOIL_MOTIFS),
+  'istid.': () => import('./iceAges').then((m) => m.ICE_AGE_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
