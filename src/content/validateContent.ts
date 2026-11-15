@@ -169,6 +169,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.lufttryck.2', 's.hektopascal.1', 's.avdunstning.1', 's.kondensation.1', 's.relativ-luftfuktighet.1',
   // 0.43 (Nederbörd & moln), after two blind-test rounds
   's.uppklarnande.1', 's.urladdning.1', 's.frostig.1', 's.tränga-undan.1',
+  // 0.43 (Extremväder), after two blind-test rounds
+  's.insnöad.1', 's.hemberedskap.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
