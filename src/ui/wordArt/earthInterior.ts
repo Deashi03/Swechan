@@ -115,6 +115,14 @@ const africaSA = (dx: number, dy: number, gap: number, col: string = LAND) => al
   at(dx + gap, dy, 1, path('M-6 -30 C6 -32 20 -28 24 -18 C26 -10 18 -6 16 2 C14 12 10 22 4 28 C0 30 -2 24 -2 16 C-2 8 -6 2 -10 -2 C-14 -6 -16 -14 -14 -22 C-12 -28 -10 -30 -6 -30 Z', col, C.ink, 1.3)));
 const isle = (x: number, y: number, w: number, col: string = LAND) => all(ellipse(x, y, w, f1(w * 0.35), SAND, C.ink, 1.1), ellipse(x, f1(y - w * 0.08), f1(w * 0.7), f1(w * 0.22), col, null));
 
+/** Round-2 helpers (0.42): a crust column in its own frame, a curved shell band and a black porous stone. */
+const crustCol = (x: number, kind: 'cont' | 'ocean') => kind === 'cont'
+  ? all(rect(x, 14, 46, 18, SKY, 0, null), rect(x, 29, 46, 3, LAND, 0, C.ink, 1), rect(x, 32, 46, 56, CONT, 0, C.ink, 1.3), rect(x, 88, 46, 18, MANTLE, 0, C.ink, 1), tree(x + 10, 29, 0.45), house(x + 26, 29, 0.55), tree(x + 38, 29, 0.4))
+  : all(rect(x, 14, 46, 6, SKY, 0, null), rect(x, 20, 46, 58, DEEP, 0, C.ink, 1), waves(x + 2, x + 44, 22, C.white), rect(x, 78, 46, 8, OCRUST, 0, C.ink, 1.3), rect(x, 86, 46, 20, MANTLE, 0, C.ink, 1), fish(x + 14, 44, 0.9), fish(x + 32, 60, 0.8, C.orange));
+const arcY = (cx: number, cy: number, r: number, x: number) => f1(cy - Math.sqrt(r * r - (x - cx) * (x - cx)));
+const arcBand = (cx: number, cy: number, r1: number, r0: number, col: string, sw = 1) => { const xs = range(15).map((i) => 4 + i * 8); return path(`M${xs.map((x) => `${x} ${arcY(cx, cy, r1, x)}`).join(' L')} L${xs.slice().reverse().map((x) => `${x} ${arcY(cx, cy, r0, x)}`).join(' L')} Z`, col, C.ink, sw); };
+const pumice = (x: number, y: number, s = 1, col: string = BASALT, hole: string = '#1e1d22') => at(x, y, s, path('M-12 6 L-10 -6 L0 -11 L10 -7 L13 4 L4 10 L-6 10 Z', col, C.ink, 1.3), ...[[-5, -3], [2, -5], [6, 2], [-2, 4], [-7, 2]].map(([a, b]) => circle(a!, b!, 1.3, hole, null)));
+
 // ── Motifs ───────────────────────────────────────────────────────────
 export const EARTH_INTERIOR_MOTIFS: Record<string, Svg> = {
   // 2521 Jordskorpan
@@ -123,14 +131,11 @@ export const EARTH_INTERIOR_MOTIFS: Record<string, Svg> = {
     line('M4 34 L116 34', C.ink, 1.2), ...range(12).map((i) => line(`M${8 + i * 9} 34 l-2 -5 M${8 + i * 9} 34 l2 -5`, LAND2, 1.1)),
     path('M106 58 L112 58 L112 70 L106 70', 'none', HL, 2.6), path('M14 58 L8 58 L8 70 L14 70', 'none', HL, 2.6), rect(16, 58, 88, 12, 'none', 0, HL, 2.6), cloud(30, 16, 0.7), cloud(90, 14, 0.6)),
   'jinre.jordskorpa': all(bg(SPACE), cutGlobe(50, 66, 46, 'crust', 0.14), at(50, 20, 0.7, house(0, 0, 1)), tree(66, 23, 0.45)),
-  'jinre.kontinental': all(bg(), rect(4, 4, 112, 40, SKY, 0, null), rect(60, 34, 56, 14, SEA, 0, null), waves(64, 112, 40),
-    block(4, 60, 34, 40, CONT), block(60, 116, 48, 14, OCRUST, DEEP), mantleBase(74), path('M60 74 L60 62', 'none', C.ink, 1.2),
-    tree(16, 31, 0.5), house(34, 31, 0.6), tree(50, 31, 0.5), greyed(rect(62, 46, 52, 18, 'rgba(255,255,255,0.2)', 0, null)), rect(6, 31, 52, 43, 'none', 2, HL, 2.8)),
+  'jinre.kontinental': all(bg('#f3ede2'), crustCol(10, 'cont'), greyed(crustCol(64, 'ocean')), line('M50 34 L50 86', C.ink, 1.4), path('M47 37 L50 32 L53 37 Z M47 83 L50 88 L53 83 Z', C.ink, null), rect(9, 29, 48, 60, 'none', 2, HL, 3)),
   'jinre.havsbotten': all(bg(SEA), rect(4, 4, 112, 22, SKY, 3, null), line('M4 26 L116 26', SEA2, 1.6), waves(8, 108, 26, C.white), rect(4, 26, 112, 70, SEA, 0, null), rect(4, 60, 112, 36, DEEP, 0, null),
     path('M4 96 C24 90 40 94 60 92 C80 90 96 94 116 92 L116 112 L4 112 Z', SAND, C.ink, 1.3), path('M20 94 C18 84 22 78 19 70 M24 94 C26 86 23 80 26 74', 'none', LAND2, 2), at(92, 96, 1, path('M-6 0 C-6 -6 6 -6 6 0 Z', C.red, C.ink, 1), line('M-6 -2 l-3 -3 M6 -2 l3 -3', C.ink, 1)),
     ellipse(50, 98, 4, 2, ROCK, C.ink, 0.8), ellipse(70, 99, 5, 2.4, ROCK, C.ink, 0.8), fish(44, 52, 1.2), fish(80, 72, 1, C.orange), path('M4 94 C24 88 40 92 60 90 C80 88 96 92 116 90', 'none', HL, 3)),
-  'jinre.oceanisk': all(bg(), rect(4, 4, 112, 40, SKY, 0, null), rect(60, 34, 56, 14, SEA, 0, null), waves(64, 112, 40),
-    greyed(block(4, 60, 34, 40, CONT), tree(16, 31, 0.5), house(34, 31, 0.6), tree(50, 31, 0.5)), block(60, 116, 48, 14, OCRUST, DEEP), mantleBase(74), fish(88, 42, 0.8), rect(61, 46, 54, 17, 'none', 2, HL, 2.8)),
+  'jinre.oceanisk': all(bg('#f3ede2'), greyed(crustCol(10, 'cont')), crustCol(64, 'ocean'), rect(63, 19, 48, 68, 'none', 2, HL, 3)),
   'jinre.tvärsnitt': all(bg('#f3ede2'), rect(4, 86, 112, 26, '#c9a874', 0, null), path('M10 70 L70 70 L70 98 L10 98 Z', '#b07a48', C.ink, 1.4), line('M14 78 L66 78 M14 88 L66 88', WOOD2, 0.9),
     ellipse(10, 84, 7, 14, '#c58c5e', C.ink, 1.3), ellipse(84, 72, 20, 28, '#e6c79a', C.ink, 1.8), ...[22, 16, 10, 5].map((r) => ellipse(84, 72, f1(r * 0.71), r, 'none', '#b07a48', 1.2)), circle(84, 72, 1.6, WOOD2, null),
     at(46, 50, 1, path('M-26 0 L10 0 L10 6 L-26 6 Z', C.silver, C.ink, 1.2), path('M10 -2 L24 -2 L24 8 L10 8 Z', WOOD, C.ink, 1.2)), oval(84, 72, 24, 32)),
@@ -145,8 +150,9 @@ export const EARTH_INTERIOR_MOTIFS: Record<string, Svg> = {
   'jinre.inre-kärna': all(bg(SPACE), cutGlobe(50, 66, 46, 'inner')),
   'jinre.tryck.2': all(bg('#eaf2f8'), circle(60, 62, 18, C.yellow, C.ink, 1.6), ...range(8).map((i) => { const a = (i / 8) * Math.PI * 2; return arrow(f1(60 + Math.cos(a) * 44), f1(62 + Math.sin(a) * 44), f1(60 + Math.cos(a) * 22), f1(62 + Math.sin(a) * 22), HL, 3); }),
     greyed(circle(104, 100, 8, C.yellow, C.ink, 1.2)), at(18, 98, 1, circle(0, 0, 9, C.white, C.ink, 1.3), line('M0 0 L6 -5', C.red, 1.8), path('M-7 3 A8 8 0 0 1 7 3', 'none', C.ink, 0.8))),
-  'jinre.trögflytande': all(bg('#f6efe0'), at(36, 0, 1, rect(-14, 18, 28, 14, '#f0b43a', 2, C.ink, 1.3), path('M-14 26 C-20 30 -22 36 -18 40', 'none', C.ink, 1.2), path('M10 30 C12 44 8 60 9 82 C9 88 13 88 13 82 C14 62 16 44 14 30 Z', '#e8a42a', C.ink, 1.2), ellipse(11, 96, 13, 4, '#e8a42a', C.ink, 1.2), rect(-12, 98, 46, 10, C.white, 2, C.ink, 1.2)),
-    oval(46, 64, 14, 40), greyed(at(86, 0, 1, rect(-12, 30, 24, 12, '#bfe3f5', 2, C.ink, 1.2), path('M10 40 L14 92', 'none', '#5aa7d6', 2), path('M6 96 C8 90 20 90 22 96 M4 90 l-3 -4 M24 90 l3 -4', 'none', '#5aa7d6', 1.6), rect(-8, 98, 40, 10, C.white, 2, C.ink, 1.2)))),
+  'jinre.trögflytande': all(bg('#f6efe0'), at(30, 0, 1, g('rotate(-35 0 24)', rect(-12, 14, 24, 20, '#f0b43a', 3, C.ink, 1.3)), path('M8 24 C12 34 9 44 11 54 C12 58 14 58 14 54 C14 44 15 34 12 26 Z', '#e8a42a', C.ink, 1.2), path('M11 56 C9 60 9 64 12 64 C15 64 15 60 13 56 Z', '#e8a42a', C.ink, 1),
+    rect(-4, 84, 30, 22, C.white, 2, C.ink, 1.3), rect(-2, 102, 26, 3, '#e8a42a', 0, null), at(-6, 66, 0.9, path('M-8 6 L8 6 C8 2 4 0 0 0 C-6 0 -8 3 -8 6 Z', '#c9a27a', C.ink, 1), circle(1, 2, 4, '#e0b98a', C.ink, 1), path('M1 2 m-2 0 a2 2 0 1 0 4 0', 'none', C.ink, 0.8), line('M8 4 L12 0 M8 4 L13 3', C.ink, 1))), oval(42, 52, 16, 34),
+    greyed(at(88, 0, 1, g('rotate(35 0 24)', rect(-12, 14, 24, 20, '#bfe3f5', 3, C.ink, 1.3)), line('M-10 26 L-8 100', '#5aa7d6', 1.8), rect(-22, 84, 30, 22, C.white, 2, C.ink, 1.3), rect(-20, 88, 26, 17, '#bfe3f5', 0, null), line('M10 50 L18 50 M10 60 L18 60 M10 70 L18 70', C.grey, 1.4)))),
   'jinre.konvektionsström': all(bg('#f3ede2'), rect(22, 92, 76, 8, C.dark, 2, C.ink, 1.2), ...[36, 48, 60, 72, 84].map((x) => path(`M${x} 100 C${x - 3} 104 ${x + 3} 106 ${x} 110`, 'none', C.red, 1.6)),
     path('M22 34 L98 34 L94 92 L26 92 Z', '#c9ced4', C.ink, 1.6), rect(26, 40, 68, 50, '#f4a24a', 0, null), line('M22 34 L98 34', C.ink, 2),
     path('M60 84 L60 50 C60 44 80 44 82 52 L82 80 C82 86 64 86 62 84', 'none', HL, 3), path('M60 84 L60 50 C60 44 40 44 38 52 L38 80 C38 86 56 86 58 84', 'none', HL, 3),
@@ -155,14 +161,13 @@ export const EARTH_INTERIOR_MOTIFS: Record<string, Svg> = {
     at(98, 96, 1, circle(0, 0, 11, C.white, C.ink, 1.6), path('M0 -8 L3 0 L-3 0 Z', C.red, C.ink, 0.6), path('M0 8 L3 0 L-3 0 Z', C.grey, C.ink, 0.6))),
   // 2523 Tektoniska plattor
   'jinre.platta.2': all(plateMap(1)),
-  'jinre.tektonisk': all(bg(SPACE), at(46, 56, 1, globe(0, 0, 34), line('M-20 -28 L-6 -6 L-28 12 M-6 -6 L18 -4 L30 -16 M18 -4 L10 26', C.red, 2.2)),
-    arrow(20, 38, 12, 30, HL, 2.6), arrow(72, 40, 82, 32, HL, 2.6), arrow(44, 86, 50, 98, HL, 2.6), arrow(28, 72, 16, 78, HL, 2.6), greyed(circle(100, 96, 10, C.grey2, C.ink, 1.4))),
-  'jinre.plattektonik': all(bg('#f3ede2'), rect(10, 14, 72, 54, C.white, 3, C.ink, 1.6), line('M30 68 L24 96 M62 68 L68 96', WOOD2, 2),
-    rect(14, 30, 64, 20, CONT, 0, null), rect(14, 50, 64, 14, MANTLE, 0, null), line('M46 30 L46 50', C.red, 2), arrow(40, 24, 24, 24, HL, 2.2), arrow(52, 24, 68, 24, HL, 2.2), path('M38 58 C38 52 54 52 54 58', 'none', C.ink, 1.2), path('M52 56 l2 2 l2 -3', 'none', C.ink, 1.2),
-    stand(98, 112, 0.6, fig(60, C.green, 'smile'), reach(60, 1, -1, 34, 52)), at(98, 22, 1, circle(0, 0, 6, C.yellow, C.ink, 1.2), rect(-3, 5, 6, 4, C.grey, 1, C.ink, 0.8), line('M-10 -6 l-3 -2 M10 -6 l3 -2 M0 -10 l0 -4', C.gold, 1.6))),
-  'jinre.litosfär': all(bg(), rect(4, 4, 112, 26, SKY, 0, null), rect(4, 30, 112, 10, SEA, 0, null), waves(8, 108, 34), rect(4, 40, 112, 14, CRUST, 0, null), rect(4, 54, 112, 14, '#b08458', 0, null), line('M40 40 L42 68 M82 40 L80 68', C.ink, 1.6),
-    path('M4 68 C20 72 40 66 60 70 C80 74 100 66 116 70 L116 112 L4 112 Z', MANTLE, null), path('M4 68 C20 72 40 66 60 70 C80 74 100 66 116 70', 'none', C.ink, 1), path('M14 84 c6 -4 12 4 18 0 M50 92 c6 -4 12 4 18 0 M86 84 c6 -4 12 4 18 0', 'none', MANTLE2, 1.6),
-    rect(5, 40, 110, 28, 'none', 1, HL, 3), path('M110 40 L114 40 L114 68 L110 68', 'none', HL, 2), line('M4 40 L116 40 M4 54 L116 54', C.ink, 0.8)),
+  'jinre.tektonisk': all(bg(), rect(4, 4, 112, 40, SKY, 0, null), path('M10 52 L58 52 L66 104 L10 104 Z', CRUST, C.ink, 1.3), path('M58 40 L106 40 L106 92 L66 92 Z', CRUST, C.ink, 1.3), rect(10, 49, 48, 3, LAND, 0, C.ink, 1), rect(58, 37, 48, 3, LAND, 0, C.ink, 1), line('M10 70 L60 70 M62 58 L106 58', '#7a4a26', 1.2),
+    line('M58 38 L67 106', HL, 3), arrow(86, 80, 86, 62, HL, 3), arrow(34, 64, 34, 82, HL, 3), shake(6, 20, 14), shake(18, 14, 14), shake(112, 18, 14), shake(100, 12, 14),
+    greyed(at(100, 104, 0.5, rect(-16, -12, 32, 12, CRUST, 0, C.ink, 1.3), rect(-16, -14, 32, 2, LAND, 0, null)))),
+  'jinre.plattektonik': all(bg(SPACE), at(60, 60, 1, globe(0, 0, 44), line('M-30 -32 L-10 -8 L-38 14 M-10 -8 L22 -6 L40 -20 M22 -6 L12 26 L-14 40 M12 26 L36 30 M-10 -8 L-8 -44', C.red, 2.4),
+    arrow(-26, -22, -36, -30, HL, 2.6), arrow(4, -26, 14, -34, HL, 2.6), arrow(30, 6, 40, 14, HL, 2.6), arrow(-24, 4, -34, 12, HL, 2.6), arrow(-2, 22, -8, 34, HL, 2.6), arrow(22, 32, 30, 40, HL, 2.6)), circle(60, 60, 48, 'none', HL, 2)),
+  'jinre.litosfär': all(bg(SKY), rect(4, 80, 112, 32, MANTLE, 0, null), arcBand(60, 230, 190, 182, CRUST, 1.2), arcBand(60, 230, 182, 168, '#b08458', 1), arcBand(60, 230, 168, 130, MANTLE, 1),
+    path('M14 92 c6 -4 12 4 18 0 M50 98 c6 -4 12 4 18 0 M86 92 c6 -4 12 4 18 0', 'none', MANTLE2, 1.6), arcBand(60, 230, 190, 168, 'none', 3).replace(`stroke="${C.ink}"`, `stroke="${HL}"`), tree(30, 41.5, 0.5), house(64, 40.5, 0.6), tree(92, 42, 0.5), cloud(26, 18, 0.6), cloud(96, 14, 0.5)),
   'jinre.plattgräns': all(plateMap(-1, 0), oval(55, 28, 12, 28)),
   'jinre.glida-isär.2': all(bg(), rect(4, 4, 112, 40, SKY, 0, null), mantleBase(70), path('M54 70 C52 60 58 54 56 44 L64 44 C62 54 68 60 66 70 Z', MAGMA, C.ink, 1.2),
     block(10, 54, 44, 26, CRUST), block(66, 110, 44, 26, CRUST), greyed(line('M4 30 L116 30', C.grey, 1.4, '4 3'), rect(32, 24, 56, 4, C.grey2, 0, null)),
@@ -225,8 +230,9 @@ export const EARTH_INTERIOR_MOTIFS: Record<string, Svg> = {
     greyed(g('rotate(10 96 100)', rect(84, 60, 22, 40, '#e8e2d8', 0, C.ink, 1.2), path('M90 66 L96 76 L92 84', 'none', C.ink, 1.2))), ban(98, 46, 6)),
   // 2526 Vulkaner och magma
   'jinre.vulkan': all(bg(), field(98, LAND), volcano(60, 100, 96, 56), path('M53 44 L50 54 L56 52 L58 62 M67 44 L70 52', 'none', LAVA, 2.4), smoke(58, 40, 0.9), tree(14, 104, 0.6), tree(108, 104, 0.6), ring(60, 66, 44)),
-  'jinre.vulkanisk': all(bg(), rect(4, 70, 112, 42, SEA, 0, null), waves(8, 108, 96), path('M14 84 L40 46 L52 46 L80 84 Z', BASALT, C.ink, 1.4), ellipse(46, 46, 6, 2, '#222', C.ink, 1), smoke(46, 42, 0.5), path('M10 86 C20 80 70 80 86 86', BASALT, C.ink, 1.2), ellipse(28, 82, 3, 2, BASALT, C.ink, 0.6),
-    oval(46, 66, 38, 26), greyed(isle(100, 86, 12), tree(100, 82, 0.4))),
+  'jinre.vulkanisk': all(bg(), rect(4, 58, 112, 20, SEA, 0, null), waves(8, 108, 64), path('M4 78 C30 72 70 74 116 80 L116 112 L4 112 Z', '#2f2d33', C.ink, 1.3), dots([[14, 92], [24, 100], [40, 90], [52, 104], [66, 96], [80, 104], [94, 94], [106, 102]], '#6a6870', 1),
+    pumice(30, 88, 1.3), pumice(50, 94, 1), pumice(70, 86, 1.1), steam(88, 84, 0.6), steam(98, 86, 0.5), ellipse(93, 85, 8, 2, '#1e1d22', null), oval(50, 90, 34, 16),
+    greyed(at(102, 36, 1, path('M-12 6 L-10 -6 L0 -11 L10 -7 L13 4 L4 10 L-6 10 Z', '#d8d2c8', C.ink, 1.3), dots([[-5, -3], [2, -5], [6, 2], [-2, 4]], C.ink, 1)))),
   'jinre.magma': all(bg('#8a7a68'), strata(4, ['#a59c86', '#8a7a68', '#7a6c5c', '#6a5c4e'], 27), path('M30 112 C28 96 40 84 36 70 C34 60 46 52 52 40 C56 50 62 56 66 70 C70 86 82 96 84 112 Z', MAGMA, C.ink, 1.4), path('M44 94 C46 80 54 72 56 60', 'none', C.yellow, 2.2),
     ...[[44, 86], [60, 96], [70, 104], [50, 104], [56, 76]].map(([x, y]) => circle(x!, y!, 2.6, LAVA, C.ink, 0.6)), path('M52 40 C50 30 54 22 52 12', 'none', MAGMA, 3), thermo(100, 40, true), oval(58, 82, 30, 30)),
   'jinre.magmakammare': all(bg(), rect(4, 56, 112, 56, '#a08a72', 0, null), volcano(60, 58, 80, 40, ROCK), smoke(58, 18, 0.5), line('M60 20 L60 82', MAGMA, 4), ellipse(60, 92, 30, 12, MAGMA, C.ink, 1.4), ellipse(56, 90, 10, 3, LAVA, null), oval(60, 92, 34, 16)),
@@ -246,8 +252,11 @@ export const EARTH_INTERIOR_MOTIFS: Record<string, Svg> = {
   'jinre.gejser': all(bg(), field(100, '#b9ad98'), path('M54 100 C52 70 56 40 60 14 C64 40 68 70 66 100 Z', '#cfe8f4', C.ink, 1.2), path('M58 96 C57 70 59 44 60 24', 'none', C.white, 2), ...[[48, 26, 9], [72, 30, 9], [60, 14, 10]].map(([x, y, r]) => circle(x!, y!, r!, STEAM, C.ink, 1)),
     ellipse(60, 101, 14, 3, '#9fd8d8', C.ink, 1), tiny(18, 108, 1, C.red), tiny(28, 108, 0.9, C.green), tiny(100, 108, 1, C.denim), oval(60, 58, 16, 46)),
   // 2527 Bergskedjebildning
-  'jinre.bergskedjebildning': all(bg(), mantleBase(96), rect(4, 72, 112, 24, CONT, 0, C.ink, 1.2), path('M30 72 L44 40 L52 52 L60 30 L68 52 L76 40 L90 72 Z', ROCK, C.ink, 1.3), path('M56 38 L60 30 L64 38 Z', SNOW, C.ink, 0.8),
-    greyed(line('M4 68 L116 68', C.grey, 1.4, '4 3')), arrow(8, 84, 28, 84, HL, 3), arrow(112, 84, 92, 84, HL, 3), arrow(60, 26, 60, 12, HL, 2.6)),
+  'jinre.bergskedjebildning': all(bg(), ...[0, 1, 2].map((i) => all(rect(6 + i * 37, 22, 34, 56, SKY, 3, C.ink, 1.2), rect(6 + i * 37, 66, 34, 12, CONT, 0, C.ink, 1))),
+    rect(6, 63, 34, 3, LAND, 0, C.ink, 0.8), arrow(10, 54, 18, 54, HL, 2.2), arrow(36, 54, 28, 54, HL, 2.2),
+    path('M45 66 L52 58 L57 62 L62 54 L67 62 L71 58 L75 66 Z', ROCK, C.ink, 1.1), arrow(46, 46, 52, 46, HL, 2), arrow(74, 46, 68, 46, HL, 2),
+    path('M81 66 L88 46 L93 54 L98 30 L103 54 L108 44 L113 66 Z', ROCK, C.ink, 1.2), path('M95 38 L98 30 L101 38 Z', SNOW, C.ink, 0.8),
+    arrow(8, 92, 112, 92, C.ink, 2), line('M20 88 L20 96 M58 88 L58 96 M96 88 L96 96', C.ink, 1.4), ...[[20, 106], [58, 106], [96, 106]].map(([x, y], i) => at(x!, y!, 1, circle(0, 0, 5, C.white, C.ink, 1.2), line(`M0 0 L0 -3.5 M0 0 L${[2, 3, 0][i]} ${[2, 0, 3][i]}`, C.ink, 1)))),
   'jinre.kollision': all(bg('#eef0f2'), line('M4 92 L116 92', C.grey, 2), at(38, 80, 1, rect(-18, -12, 30, 18, C.red, 3, C.ink, 1.4), circle(-10, 8, 4, C.dark, C.ink, 1), circle(6, 8, 4, C.dark, C.ink, 1)),
     at(82, 80, 1, rect(-12, -12, 30, 18, '#3f7ab8', 3, C.ink, 1.4), circle(-4, 8, 4, C.dark, C.ink, 1), circle(12, 8, 4, C.dark, C.ink, 1)), star8(60, 70, 10, C.yellow), line('M8 66 L16 66 M6 74 L14 74 M104 66 L112 66 M106 74 L114 74', C.grey, 1.6), ring(60, 72, 18)),
   'jinre.trycka-ihop': all(bg('#f3ede2'), field(108, '#d9cdb3'), stand(60, 112, 1, fig(60, C.green, 'calm', { hairStyle: 'long' }), path('M46 52 L74 52 L71 59 L74 66 L71 73 L74 80 L46 80 L49 73 L46 66 L49 59 Z', C.tan, C.ink, 1.4), reach(60, 1, -1, 44, 66), reach(60, 1, 1, 76, 66)),
@@ -259,6 +268,8 @@ export const EARTH_INTERIOR_MOTIFS: Record<string, Svg> = {
   'jinre.bergstopp': all(bg(), path('M4 112 L60 20 L116 112 Z', ROCK, C.ink, 1.4), path('M48 40 L60 20 L72 40 L66 36 L60 42 L54 36 Z', SNOW, C.ink, 1), line('M60 20 L60 6', C.dark, 1.4), path('M60 6 L72 9 L60 12 Z', C.red, C.ink, 0.8), cloud(24, 56, 0.7), cloud(98, 62, 0.6), ring(60, 22, 14)),
   'jinre.bergsbestigare': all(bg(), path('M4 112 L116 30 L116 112 Z', SNOW, C.ink, 1.4), path('M4 112 L116 30', 'none', C.ink, 1.4), line('M30 106 C46 90 58 82 70 74', C.red, 1.4, '3 2'),
     g('rotate(-20 60 100)', stand(60, 100, 0.62, fig(60, C.red, 'smile'), on(60, 1, helmetL(C.orange), path('M8 -40 L20 -40 L20 -14 L8 -14 Z', '#3f7ab8', C.ink, 1.2)), reach(60, 1, 1, 82, 40), line('M82 40 L82 62 M78 42 L88 38', C.dark, 2)))),
-  'jinre.erosion': all(bg(), greyed(path('M14 96 L50 22 L86 96 Z', 'none', C.ink, 1.4, )), path('M14 96 L44 46 L56 46 L86 96 Z', ROCK, C.ink, 1.4), field(96, '#cdbb94'), path('M70 96 C80 100 96 98 116 104 L116 110 C96 106 80 108 66 104 Z', SEA, C.ink, 1),
-    line('M30 20 l-3 8 M40 16 l-3 8 M60 20 l-3 8 M70 16 l-3 8', '#3f86c4', 1.6), line('M90 40 L108 40 M94 48 L112 48', C.grey, 1.6), ...[[72, 82], [78, 90], [86, 98], [96, 102]].map(([x, y]) => ellipse(x!, y!, 2.4, 1.6, ROCK2, C.ink, 0.6)), arrow(64, 70, 80, 88, HL, 2.4)),
+  'jinre.erosion': all(bg(), path('M4 112 L4 34 C20 30 36 44 50 60 C60 72 70 80 80 84 L116 88 L116 112 Z', ROCK, C.ink, 1.3), path('M4 34 C20 30 36 44 50 60 C60 72 70 80 80 84 L116 88', 'none', LAND2, 3),
+    path('M18 40 C30 52 44 70 60 84 C74 96 92 100 116 100 L116 108 C90 108 72 104 56 92 C40 78 28 60 14 44 Z', SEA, C.ink, 1.2), path('M96 102 C104 100 110 104 116 102 L116 108 C108 110 100 108 96 102 Z', SAND, C.ink, 0.8),
+    dots([[24, 48], [32, 58], [40, 68], [50, 80], [62, 90], [74, 98], [86, 102], [98, 104]], '#d9b26a', 1.8), arrow(30, 60, 46, 78, HL, 2.4), arrow(64, 96, 88, 104, HL, 2.4),
+    line('M60 14 l-3 8 M72 18 l-3 8 M84 14 l-3 8 M96 18 l-3 8', '#3f86c4', 1.6), cloud(80, 12, 0.7)),
 };
