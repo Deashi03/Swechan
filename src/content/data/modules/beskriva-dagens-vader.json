@@ -1,0 +1,174 @@
+{
+ "id": "m.beskriva-dagens-vader",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-15",
+ "titleSv": "Beskriva dagens väder",
+ "titleJa": "{今日|きょう}の{天気|てんき}を{話|はな}す",
+ "descriptionSv": "Beskriva dagens väder: väder, vad är det för väder, väderprognos, väderapp, meteorolog, grad, nederbörd, se ut att, risk för, växlande molnighet, uppehållsväder, klarna upp, slå om, ombytlig, ruskväder och sommarväder.",
+ "descriptionJa": "{今日|きょう}の{天気|てんき}を{話|はな}す：{天気|てんき}、どんな{天気|てんき}？、{天気予報|てんきよほう}、{天気|てんき}アプリ、{気象学者|きしょうがくしゃ}、{度|ど}、{降水|こうすい}、〜になりそうだ、〜のおそれ、{晴|は}れたり{曇|くも}ったり、{雨|あめ}の{降|ふ}らない{天気|てんき}、{晴|は}れ{上|あ}がる、{天気|てんき}が{急変|きゅうへん}する、{変|か}わりやすい、ひどい{天気|てんき}、{夏|なつ}らしい{天気|てんき}。",
+ "categoryId": "R05-A02-T01",
+ "tags": [
+  "natur",
+  "väder"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.varme-och-kyla"
+ ],
+ "related": [],
+ "recommendedOrder": 2607,
+ "words": [
+  {
+   "senseId": "s.väder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vad-är-det-för-väder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderprognos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.meteorolog.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nederbörd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.se-ut-att.1",
+   "active": true
+  },
+  {
+   "senseId": "s.risk-för.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växlande-molnighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppehållsväder.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klarna-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ombytlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ruskväder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sommarväder.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad är det för väder i dag?",
+  "paragraphs": [
+   "Varje morgon klockan sju ringer Hiro till sin mormor Eva i Norrköping. Han bor i Göteborg, men de börjar alltid med samma fråga: – Vad är det för väder hos dig i dag?",
+   "I dag har Hiro redan tittat i väderappen. Den visar elva grader och växlande molnighet. – Det ser ut att bli en fin dag här, säger han. Men det finns risk för regn i kväll.",
+   "Mormor Eva läser väderprognosen från SMHI varje dag. SMHI är den myndighet i Sverige som gör väderprognoser. Där arbetar meteorologer som räknar på vind, temperatur och nederbörd. – Här i Norrköping ska det bli uppehållsväder hela dagen, säger hon. Och i eftermiddag ska det klarna upp.",
+   "– Vädret är så ombytligt i Göteborg, säger Hiro. I går var det sol på morgonen, men vid lunch hände något: vädret slog om. Det blev ruskväder med regn och blåst.",
+   "– Så är det i Sverige, skrattar mormor. Man får alltid prata om vädret! Men nästa vecka ska det bli riktigt sommarväder. Kom och hälsa på, så sitter vi i trädgården."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken fråga ställer Hiro och mormor alltid först?",
+    "options": [
+     "Har du ätit frukost?",
+     "Vad är det för väder hos dig?",
+     "Hur mår du?",
+     "När kommer du hit?"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Vad är det för väder hos dig i dag?",
+    "explanationJa": "「そちらは{今日|きょう}どんな{天気|てんき}？」と{聞|き}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad visar Hiros väderapp?",
+    "options": [
+     "Tjugo grader och sol",
+     "Regn och blåst",
+     "Snö och minusgrader",
+     "Elva grader och växlande molnighet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den visar elva grader och växlande molnighet.",
+    "explanationJa": "11{度|ど}で、{晴|は}れたり{曇|くも}ったりです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder uppehållsväder?",
+    "options": [
+     "Att det inte regnar eller snöar",
+     "Att det är mycket varmt",
+     "Att det blåser mycket",
+     "Att det är dimma"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Här i Norrköping ska det bli uppehållsväder hela dagen …",
+    "explanationJa": "{雨|あめ}も{雪|ゆき}も{降|ふ}らない{天気|てんき}のことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "På SMHI arbetar meteorologer som gör väderprognoser.",
+    "correct": true,
+    "explanationSv": "SMHI är den myndighet i Sverige som gör väderprognoser. Där arbetar meteorologer …",
+    "explanationJa": "SMHIでは{気象予報士|きしょうよほうし}が{天気予報|てんきよほう}を{作|つく}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "I går var det sol i Göteborg hela dagen.",
+    "correct": false,
+    "explanationSv": "I går var det sol på morgonen, men vid lunch hände något: vädret slog om.",
+    "explanationJa": "{昼|ひる}ごろに{天気|てんき}が{急変|きゅうへん}して、ひどい{天気|てんき}になりました。"
+   }
+  ],
+  "factSources": [
+   "SMHI (Sveriges meteorologiska och hydrologiska institut) är den statliga myndighet som gör Sveriges officiella väderprognoser och varningar; huvudkontoret ligger i Norrköping (smhi.se).",
+   "Hiro och mormor Eva är påhittade; vädret i texten är ett exempel."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni beskriver dagens väder och pratar om väderprognoser.",
+  "discussionPoints": [
+   "Vad är det för väder i dag där du är?",
+   "Var brukar du läsa eller höra väderprognosen?",
+   "Hur ser vädret ut att bli i morgon?",
+   "Varför pratar svenskar så mycket om vädret, tror du?"
+  ]
+ }
+}
