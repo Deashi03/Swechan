@@ -6,7 +6,7 @@
  * small symbolic scenes with a grey reference beside them as contrast. Digits only; no words, no brands, no
  * pointing fingers.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, star, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, star, type Svg } from './kit';
 import { HL, arm } from './people';
 import { P as F, type Mood, greyed } from './blindFix';
 
@@ -262,10 +262,14 @@ export const TREES_SHRUBS_MOTIFS: Record<string, Svg> = {
   'trad.sommarved': all(bg(), rings(60, 60, 44, 5, 'dark')),
   'trad.åldersbestämma': all(bg(), rings(46, 62, 38, 5), ...range(5).map((i) => num(f1(46 + ((38 * (i + 0.5)) / 5)), 64, String(i + 1), 6.5)), at(98, 30, 1, circle(0, 0, 9, '#eaf6ff', C.ink, 1.8), line('M6 6 L14 14', C.ink, 3)),
     path('M84 66 C84 54 112 54 112 66 L112 92 L84 92 Z', C.white, C.ink, 1.2), num(98, 84, '5', 16, HL)),
-  'trad.gynnsam': all(bg(), line('M60 8 L60 108', C.grey2, 1.2, '3 3'), sun(18, 16, 6), cloud(42, 18, 0.6), rain(34, 26, 3), field(96, GRASS), line('M30 96 L30 56', LEAF2, 3), leafOval(22, 70, -50, 1.1), leafOval(38, 62, 50, 1.1), leafOval(24, 54, -30, 0.9), leafOval(36, 46, 30, 0.9), okC(48, 82, 6),
-    greyed(sun(96, 16, 9), rect(60, 96, 56, 16, '#c9b88a', 0, null), line('M90 96 L90 76', LEAF2, 2.4), path('M90 76 C84 80 80 86 80 92 M90 80 C96 84 100 90 100 94', 'none', '#8a8a4a', 1.6))),
-  'trad.frodas': all(bg(), field(96, GRASS2), ...range(9).map((i) => rot(40, 96, -60 + i * 15, 1, line('M0 0 L0 -44', LEAF2, 1.8), leafOval(0, -42, 0, 0.9, i % 2 ? LEAF : LIGHT), leafOval(-4, -26, -40, 0.7), leafOval(4, -18, 40, 0.7))), flower5(26, 40, 3, '#e86a9a'), flower5(54, 36, 3, '#e86a9a'),
-    greyed(line('M96 96 L96 74', LEAF2, 1.6), leafOval(92, 78, -50, 0.5), leafOval(100, 76, 50, 0.5))),
+  'trad.gynnsam': all(bg(), rect(10, 74, 100, 8, C.grey2, 2, C.ink, 1.2), path('M16 74 A44 44 0 0 1 60 30', 'none', C.ink, 14), path('M16 74 A44 44 0 0 1 60 30', 'none', '#7cc86a', 11), path('M60 30 A44 44 0 0 1 104 74', 'none', C.ink, 14), path('M60 30 A44 44 0 0 1 104 74', 'none', C.grey2, 11),
+    sun(38, 44, 6), cloud(54, 50, 0.4), rain(49, 55, 3), greyed(flake(76, 46, 1.6), flake(86, 56, 1.4), rect(78, 62, 18, 6, '#c9b88a', 0, C.ink, 0.8), line('M80 62 l3 3 l-2 3 M88 62 l2 3 l-2 3', C.ink, 0.7)),
+    line('M60 74 L27 55', C.ink, 3), circle(60, 74, 4.5, C.dark, C.ink, 1.2), okC(24, 26, 7), field(100, GRASS), line('M26 100 L26 90', LEAF2, 1.6), leafOval(23, 92, -45, 0.4), leafOval(29, 90, 45, 0.4), greyed(line('M96 100 L96 92', LEAF2, 1.4), path('M96 92 C92 94 90 98 90 100 M96 94 C100 96 102 99 102 101', 'none', '#8a8a4a', 1.2))),
+  'trad.frodas': all(bg(), line('M78 8 L78 108', C.grey2, 1.2, '3 3'), rect(4, 96, 74, 16, SOIL, 0, null), rect(78, 96, 38, 16, '#c9b88a', 0, null),
+    ...[[17, 104, 1], [30, 100, 1.2], [42, 104, 1.1], [58, 100, 1.2], [70, 106, 0.9], [18, 84, 0.9], [34, 80, 1.1], [52, 82, 1], [66, 86, 0.9], [26, 64, 0.8], [44, 62, 0.9], [60, 66, 0.8], [16, 70, 0.7], [36, 46, 0.7], [54, 46, 0.6]].map(([x, y, s], i) => at(x!, y!, s!,
+      ...[-40, -15, 15, 40].map((a) => rot(0, 0, a, 1, line('M0 0 L0 -12', LEAF2, 1.4), leafOval(0, -14, 0, 0.55, i % 3 ? LEAF : LIGHT))), ellipse(-2, -16, 1.2, 2.4, 'rgba(255,255,255,0.7)', null), i % 4 ? '' : flower5(0, -20, 1.8, '#e86a9a'))),
+    ...[[14, 30], [64, 24], [30, 20], [70, 50]].map(([x, y]) => sparkle(x!, y!, 5, C.gold)),
+    greyed(line('M98 100 L98 84', LEAF2, 1.6), path('M98 86 C93 88 90 93 90 97 M98 88 C103 90 106 95 106 99', 'none', '#8a8a4a', 1.4))),
   'trad.uråldrig': all(bg(), field(), at(50, 112, 1, path('M-22 0 C-16 -10 -18 -30 -14 -46 C-12 -54 -16 -60 -10 -62 L10 -62 C16 -58 12 -50 14 -44 C18 -28 16 -10 24 0 Z', BARK2, C.ink, 1.4), path('M-10 -10 C-6 -20 -12 -30 -6 -40 M4 -8 C8 -22 2 -34 8 -48', 'none', '#4a2e18', 1.2), ellipse(-2, -30, 4, 7, '#2e2214', null),
     line('M-8 -60 L-30 -74 M8 -60 L30 -78 M0 -62 L2 -82', BARK2, 4), blob([[-30, -80, 11], [30, -82, 11], [0, -88, 12], [-14, -92, 8], [16, -92, 8]], LEAF2)), fig(92, C.orange, 'smile', 0.42), greyed(at(108, 112, 0.35, trunk(0, 0, 8, 30, BARK), crown(0, -42, 15, LEAF)))),
   'trad.diameter': all(bg(), at(60, 112, 1, rect(-40, -44, 80, 44, BARK, 0, C.ink, 1.4)), rings(60, 62, 36, 6), path('M24 62 L96 62', 'none', HL, 2.6), path('M24 62 L31 58 L31 66 Z M96 62 L89 58 L89 66 Z', HL, HL, 1), circle(60, 62, 2.4, C.ink, null)),
