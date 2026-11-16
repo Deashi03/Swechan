@@ -1,7 +1,7 @@
 {
  "id": "m.smycken-och-klockor",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Smycken och klockor",
  "titleJa": "アクセサリーと{腕時計|うでどけい}",
  "descriptionSv": "Smycken och klockor: halsband, armband, ringar, örhängen, pärlor och armbandsur.",
@@ -83,13 +83,13 @@
   }
  ],
  "reading": {
-  "titleSv": "Mormors smyckeskrin",
+  "titleSv": "Farmors smyckeskrin",
   "paragraphs": [
-   "Mormor har ett gammalt smyckeskrin. En söndag när det regnar får Mia titta på alla smycken.",
-   "Där ligger ett halsband med pärlor. ”Är pärlorna äkta?” frågar Mia. ”Ja, jag fick det av min mamma”, säger mormor.",
+   "Farmor har ett gammalt smyckeskrin. En söndag när det regnar får Mia titta på alla smycken.",
+   "Där ligger ett halsband med pärlor. ”Är pärlorna äkta?” frågar Mia. ”Ja, jag fick det av min mamma”, säger farmor.",
    "Det finns också en tunn kedja av guld med ett litet hänge, två armband och många par örhängen. Allt glittrar.",
-   "Mormor visar sin förlovningsring och sin vigselring. ”Morfar gav mig ringarna för femtio år sedan”, säger hon.",
-   "Längst ner ligger morfars gamla armbandsur. Visarna rör sig inte. ”Det behöver ett nytt batteri”, säger mormor. Och en gammal brosch som var hennes mormors.",
+   "Farmor visar sin förlovningsring och sin vigselring. ”Farfar gav mig ringarna för femtio år sedan”, säger hon.",
+   "Längst ner ligger farfars gamla armbandsur. Visarna rör sig inte. ”Det behöver ett nytt batteri”, säger farmor. Där ligger också en gammal brosch som var hennes mormors.",
    "Mia gör egna armband av pärlor i plast. ”En dag ska jag också ha ett smyckeskrin”, säger hon."
   ],
   "questions": [
@@ -97,22 +97,22 @@
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "Var har mormor fått pärlhalsbandet ifrån?",
+    "promptSv": "Var har farmor fått pärlhalsbandet ifrån?",
     "options": [
      "Från sin mamma",
-     "Från morfar",
+     "Från farfar",
      "Från en affär",
      "Från Mia"
     ],
     "correctIndex": 0,
-    "explanationSv": "”Ja, jag fick det av min mamma”, säger mormor.",
+    "explanationSv": "”Ja, jag fick det av min mamma”, säger farmor.",
     "explanationJa": "お{母|かあ}さんからもらいました。"
    },
    {
     "kind": "choice",
     "id": "q2",
     "focus": "detail",
-    "promptSv": "När fick mormor ringarna?",
+    "promptSv": "När fick farmor ringarna?",
     "options": [
      "För fem år sedan",
      "I söndags",
@@ -120,14 +120,14 @@
      "För femtio år sedan"
     ],
     "correctIndex": 3,
-    "explanationSv": "”Morfar gav mig ringarna för femtio år sedan.”",
+    "explanationSv": "”Farfar gav mig ringarna för femtio år sedan.”",
     "explanationJa": "50{年前|ねんまえ}です。"
    },
    {
     "kind": "truefalse",
     "id": "q3",
     "focus": "detail",
-    "statementSv": "Morfars armbandsur går.",
+    "statementSv": "Farfars armbandsur går.",
     "correct": false,
     "explanationSv": "Visarna rör sig inte. ”Det behöver ett nytt batteri.”",
     "explanationJa": "{針|はり}が{止|と}まっています。"
@@ -151,7 +151,7 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Smyckena är viktiga minnen för mormor.",
+    "statementSv": "Smyckena är viktiga minnen för farmor.",
     "correct": true,
     "explanationSv": "Hon berättar varifrån smyckena kommer och vem som gav dem.",
     "explanationJa": "{誰|だれ}からもらったかを{話|はな}しています。"

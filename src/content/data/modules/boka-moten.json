@@ -1,7 +1,7 @@
 {
  "id": "m.boka-moten",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Boka möten",
  "titleJa": "{会|あ}う{約束|やくそく}をする",
  "descriptionSv": "Att boka möten och träffar: möte, träffas, ses, stämma träff, boka in, tidsförslag, funka, komma överens, höra av sig och dyka upp.",
@@ -82,11 +82,11 @@
  "reading": {
   "titleSv": "När ska vi ses?",
   "paragraphs": [
-   "Aiko vill träffas med sina gamla kompisar från kursen. Det var länge sedan deras senaste träff. ”Ska vi luncha nästa vecka?” smsar hon.",
+   "Aiko och hennes gamla kompisar från kursen vill träffas. Det var länge sedan deras senaste träff. ”Ska vi luncha nästa vecka?” smsar hon.",
    "Karin svarar: ”Gärna! Skicka några tidsförslag.” Aiko föreslår tisdag, onsdag eller torsdag.",
    "”Tisdag funkar inte för mig”, svarar Sara. ”Onsdag passar bäst.” Det är svårt att få ihop en tid som passar alla.",
    "Till slut kan de komma överens om torsdag klockan tolv. Aiko bokar in lunchen i kalendern. ”Vi ses på torsdag! Vi hörs.”",
-   "På torsdag morgon ringer Sara för att höra av sig: hon är sjuk. Karin dyker upp tio minuter sent.",
+   "På torsdag morgon får Sara höra av sig och säga att hon är sjuk. Karin dyker upp tio minuter sent.",
    "Samma eftermiddag har Aiko ett möte med Mias lärare. De stämde träff för två veckor sedan."
   ],
   "questions": [
@@ -132,7 +132,7 @@
    {
     "kind": "choice",
     "id": "q4",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför kommer Sara inte?",
     "options": [
      "Hon är sjuk.",
@@ -141,7 +141,7 @@
      "Hon är dubbelbokad."
     ],
     "correctIndex": 0,
-    "explanationSv": "På torsdag morgon ringer Sara för att höra av sig: hon är sjuk.",
+    "explanationSv": "På torsdag morgon får Sara höra av sig och säga att hon är sjuk.",
     "explanationJa": "{病気|びょうき}だからです。"
    },
    {

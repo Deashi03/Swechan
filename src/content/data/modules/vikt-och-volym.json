@@ -1,7 +1,7 @@
 {
  "id": "m.vikt-och-volym",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Vikt och volym",
  "titleJa": "{重|おも}さと{容量|ようりょう}",
  "descriptionSv": "Vikt och volym: våg, väga upp, hekto, ton, nettovikt, maxvikt, centiliter, milliliter, halvliter, literpris och fylla på.",
@@ -84,8 +84,8 @@
    "Aiko och Leo ska baka. Leo ska väga upp 300 gram mjöl på vågen. Sedan mäter han mjölken med måttsatsen: två deciliter.",
    "I affären köper de två hekto skinka och en halvliter grädde. ”Titta på literpriset”, säger Aiko. ”Det stora paketet är billigare.”",
    "På burken med sylt står det: nettovikt 400 gram. ”Varför är burken så tung då?” frågar Leo. ”Glaset har också en vikt”, säger Aiko.",
-   "Mormor köper äpplen kilovis för att göra sylt. Och morfar dricker kaffe litervis. Han vill alltid fylla på koppen.",
-   "Hissen i mormors hus har en maxvikt på 400 kilo. ”Får vi plats alla på en gång?” frågar Leo.",
+   "Farmor köper äpplen kilovis för att göra sylt. Och farfar dricker kaffe litervis. Han vill alltid fylla på koppen.",
+   "Hissen i farmors hus har en maxvikt på 400 kilo. ”Får vi plats alla på en gång?” frågar Leo.",
    "Leo läser att ett stort fartyg kan väga tusentals ton. Hans medicin tar han i milliliter, och en burk läsk är 33 centiliter."
   ],
   "questions": [
@@ -107,7 +107,7 @@
    {
     "kind": "choice",
     "id": "q2",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför tittar Aiko på literpriset?",
     "options": [
      "För att se vilket paket som är billigast",
@@ -125,14 +125,14 @@
     "focus": "detail",
     "statementSv": "Nettovikten är vikten med burken.",
     "correct": false,
-    "explanationSv": "Glaset har också en vikt.",
+    "explanationSv": "Nettovikten är bara sylten. Glaset har också en vikt.",
     "explanationJa": "{正味重量|しょうみじゅうりょう}には{瓶|びん}はふくまれません。"
    },
    {
     "kind": "choice",
     "id": "q4",
     "focus": "detail",
-    "promptSv": "Hur köper mormor äpplen?",
+    "promptSv": "Hur köper farmor äpplen?",
     "options": [
      "Kilovis",
      "Ett i taget",
@@ -140,16 +140,16 @@
      "Litervis"
     ],
     "correctIndex": 0,
-    "explanationSv": "Mormor köper äpplen kilovis.",
+    "explanationSv": "Farmor köper äpplen kilovis.",
     "explanationJa": "キロ{単位|たんい}で{買|か}います。"
    },
    {
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Morfar tycker mycket om kaffe.",
+    "statementSv": "Farfar tycker mycket om kaffe.",
     "correct": true,
-    "explanationSv": "Morfar dricker kaffe litervis.",
+    "explanationSv": "Farfar dricker kaffe litervis.",
     "explanationJa": "コーヒーをたくさん{飲|の}みます。"
    }
   ],

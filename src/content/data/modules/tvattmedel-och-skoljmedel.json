@@ -1,7 +1,7 @@
 {
  "id": "m.tvattmedel-och-skoljmedel",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Tvättmedel och sköljmedel",
  "titleJa": "{洗剤|せんざい}と{柔軟剤|じゅうなんざい}",
  "descriptionSv": "Tvättmedel: dosera, dosering, tvättkapsel, koncentrerad, parfymfri, kalk, hårt och mjukt vatten, lödder och blekmedel.",
@@ -84,7 +84,7 @@
   "paragraphs": [
    "Leo har tvättat själv igen. Maskinen skummar och det kommer lödder ut på golvet! ”Hur mycket tvättmedel tog du?” frågar Aiko. ”Hela mätlocket, två gånger”, säger Leo.",
    "”Man ska inte överdosera”, säger Aiko. ”Det här tvättmedlet är koncentrerat. Doseringen står på förpackningen, och man ska dosera efter hur smutsig tvätten är.”",
-   "I Stockholm har man mjukt vatten, men hos mormor i Skåne är det hårt vatten med mycket kalk. Där behöver man lite mer tvättmedel.",
+   "I Stockholm har man mjukt vatten, men hos farmor i Skåne är det hårt vatten med mycket kalk. Där behöver man lite mer tvättmedel.",
    "Familjen använder parfymfritt tvättmedel, för Leo är allergisk mot parfym. Aiko vill inte ha sköljmedel heller, fast det är mjukgörande.",
    "Erik har tvättkapslar till resor. ”De måste ligga högt upp, så att små barn inte når dem”, säger han.",
    "Till vita handdukar använder Aiko ibland blekmedel. ”Men aldrig klorin på färgade kläder!”"
@@ -93,7 +93,7 @@
    {
     "kind": "choice",
     "id": "q1",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför kommer det lödder ur maskinen?",
     "options": [
      "Leo tog för mycket tvättmedel.",
@@ -124,15 +124,15 @@
     "kind": "truefalse",
     "id": "q3",
     "focus": "detail",
-    "statementSv": "Hos mormor är vattnet mjukt.",
+    "statementSv": "Hos farmor är vattnet mjukt.",
     "correct": false,
-    "explanationSv": "Hos mormor i Skåne är det hårt vatten med mycket kalk.",
+    "explanationSv": "Hos farmor i Skåne är det hårt vatten med mycket kalk.",
     "explanationJa": "{硬水|こうすい}です。"
    },
    {
     "kind": "choice",
     "id": "q4",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför använder familjen parfymfritt tvättmedel?",
     "options": [
      "Leo är allergisk mot parfym.",

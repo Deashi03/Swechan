@@ -1,7 +1,7 @@
 {
  "id": "m.kassa-och-betalning",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Kassa och betalning",
  "titleJa": "レジと{支払|しはら}い",
  "descriptionSv": "I kassan: kassa, kassör, snabbkassa, scanna, självscanning, handskanner, stickprov, kassaband, varuavdelare, kortterminal, blippa, godkänd, packa ner, bärkasse och papperspåse.",
@@ -94,7 +94,7 @@
    {
     "kind": "choice",
     "id": "q1",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför går de inte till snabbkassan?",
     "options": [
      "Den är stängd",
@@ -149,10 +149,10 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Erik och Mia får bärkassar.",
+    "statementSv": "Erik och Mia har egna kassar med sig.",
     "correct": false,
-    "explanationSv": "”Två papperspåsar, tack.”",
-    "explanationJa": "{紙袋|かみぶくろ}をもらいます。"
+    "explanationSv": "De har inga egna kassar. Erik ber om två papperspåsar.",
+    "explanationJa": "{自分|じぶん}の{袋|ふくろ}はなく、{紙袋|かみぶくろ}を2{枚|まい}もらいます。"
    }
   ],
   "factSources": [

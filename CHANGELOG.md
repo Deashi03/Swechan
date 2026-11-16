@@ -1,5 +1,42 @@
 # Changelog
 
+## Osläppt – 2026-11-16: språkgranskning av *Vardag & hem*
+
+Alla 252 moduler i *Vardag & hem* (R01) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. 141 moduler och 3 ordposter är ändrade. Versionen och service workern är inte höjda (utvecklingsläget nollställer progressionen vid ny `APP_VERSION`); ändringarna följer med nästa release.
+
+### Sakfel och logiska fel
+- *Toalett och handfat*: lappen sa att papper inte får slängas i toaletten. I Sverige spolar man ner toalettpapper; nu gäller lappen torkpapper.
+- *Badrumsproblem och reparation*: en granne under radhuset fick vatten i taket. Nu droppar det i familjens eget kök.
+- *Säkerhet i köket*: brännskadan kyls med svalt vatten (1177), inte kallt.
+- *Klaga och begära ersättning*: ARN:s beslut är en rekommendation; butiken ”måste” inte längre, den följer beslutet.
+- *Sedlar och mynt*: ogiltiga sedlar löses in hos Riksbanken, inte ”på banken”.
+- *Prislappar och jämförpriser*: avrundning till hela kronor gäller kontant betalning.
+- *Klockslag och tidpunkter*: tidsskillnaden mot Japan stämde inte (”mitt på dagen … nästan midnatt”).
+- *Resa mellan svenska städer*: ”de flesta bor i småstäder” är ändrat till ”många”, och frågan är utbytt.
+- *Biljetter och periodkort*: trettonåriga Mia var ”student” med studentrabatt; nu är det Eriks kusin.
+- *Ungefärliga mängder*, *Sängar och sovrumsmöbler*, *Avgifter och boendekostnader*, *Paket och spårning*, *Sömmar och detaljer*, *Hotellrum och reception*: motsägelser inom texten.
+- **Farmor och farfar:** i *Kläder & personlig stil*, *Tid & vardagsrutiner*, *Handel & vardagstjänster* och två moduler i *Kollektivtrafik* kallades barnens svenska far- och morföräldrar (Lars, Skåne, stugan) *mormor* och *morfar*, fast Aiko är från Japan och hennes mamma bor där. De heter nu *farmor* och *farfar* (51 moduler). ”Sin/hennes mormor” är orört.
+- Faktakällor: MSB heter Myndigheten för civilt försvar från 2026; återvinningsstationerna drivs av kommunerna sedan 2024.
+
+### Frågor och förklaringar
+- Frågor där svaret inte följde av texten eller var tvetydigt: *Veckostädning och rutiner* q1, *Beskriva en maträtt* q4, *Mellanmål och fika* q4, *Pendla hemifrån* q2, *Kassa och betalning* q5, *Skador och slitage* q3, *Underkläder och strumpor* q2.
+- Japanska förklaringar som inte stämde med svenskan: *Trafikskyltar i vardagen* q1 (弟 → 友だち), *Morgon- och kvällsvanor* q1 (ヨガ → 運動), *Byxor och kjolar* q5.
+- 99 *Varför*-frågor var märkta `detail` och är nu `cause`.
+
+### Språk
+- *pytteliten* → *pyttelitet* om Stockholm, *något möglig* → *mögligt*, *halal mat*, *vänta med*, *träffas med*, *i tempura*, *från hemma*, *i varje gata*, *på en annan affär*, *säger receptet* m.fl.
+
+### Ordposter
+- *att göra-lista*: böjningen var trasig (*att*, *göra-listan*, *att*).
+- *munskölj*: bestämd form *munsköljet*.
+- *skottår*: exempelmeningen saknade ordet.
+
+### Inte gjort
+- Ordposternas definitioner, exempel och förklaringar (3 774 betydelser) är bara kontrollerade automatiskt, inte lästa.
+- Berättelsen hänger inte ihop mellan ämnesgrupperna: radhuset köps i *Bostadstyper & rum*, men i *Hyra, köpa & grannar* hyr paret en lägenhet och köper en bostadsrätt, och i *Resor & lokaltrafik* har Aiko, Erik och Leo andra roller. Det kräver omskrivning och ett beslut av produktägaren.
+- `npm test` och bygget har inte körts i den här sessionen (inga paket installerade). `validateContent` och `checkVocabulary` har körts över allt innehåll utan fel, och modulindexet är omgenererat.
+
+
 ## 0.46.0 – 2026-11-16
 
 42 nya moduler som gör överämnet *Ekologi & miljö* (R05-A05) komplett, det femte överämnet i *Natur & geografi*. Varje nytt modulord har en egen bild, utom de 43 ord som underkändes i två blindtestomgångar.

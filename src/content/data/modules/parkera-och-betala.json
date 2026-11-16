@@ -1,7 +1,7 @@
 {
  "id": "m.parkera-och-betala",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Parkera och betala",
  "titleJa": "{駐車|ちゅうしゃ}と{支払|しはら}い",
  "descriptionSv": "Parkera och betala: parkera, parkering, parkeringshus, parkeringsautomat, parkeringsavgift, per timme, parkeringsapp, ankomsttid, p-skiva, felparkera, parkeringsbot, kontrollavgift, boendeparkering, datumparkering och fickparkera.",
@@ -94,7 +94,7 @@
    {
     "kind": "choice",
     "id": "q1",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför parkerar de inte vid torget?",
     "options": [
      "Det är för dyrt",
@@ -133,7 +133,7 @@
    {
     "kind": "choice",
     "id": "q4",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför har grannbilen fått en parkeringsbot?",
     "options": [
      "Han har felparkerat",
