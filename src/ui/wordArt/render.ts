@@ -177,6 +177,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'bmf.': () => import('./biodiversity').then((m) => m.BIODIVERSITY_MOTIFS),
   'fore.': () => import('./pollution').then((m) => m.POLLUTION_MOTIFS),
   'hres.': () => import('./sustainability').then((m) => m.SUSTAINABILITY_MOTIFS),
+  'mpol.': () => import('./environmentPolicy').then((m) => m.ENV_POLICY_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
