@@ -1,0 +1,182 @@
+{
+ "id": "m.kallsortering-och-atervinning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Källsortering och återvinning",
+ "titleJa": "ごみの{分別|ぶんべつ}とリサイクル",
+ "descriptionSv": "Källsortering och återvinning: källsortering, källsortera, återvinningsstation, matavfall, biogas, restavfall, energiåtervinning, pappersförpackning, platta till, glasförpackning, skölja ur, färgat glas, ofärgat glas, pant, pantburk, materialåtervinning och återvunnen.",
+ "descriptionJa": "ごみの{分別|ぶんべつ}とリサイクル：ごみの{分別|ぶんべつ}、ごみを{分別|ぶんべつ}する、リサイクルステーション、{生|なま}ごみ、バイオガス、その{他|た}のごみ、サーマルリサイクル、{紙|かみ}の{容器|ようき}・{包装|ほうそう}、{平|たい}らにつぶす、ガラス{容器|ようき}、すすぐ、{色|いろ}つきガラス、{無色|むしょく}ガラス、デポジット、デポジット{付|つ}きの{缶|かん}、マテリアルリサイクル、リサイクルされた。",
+ "categoryId": "R05-A05-T04",
+ "tags": [
+  "natur",
+  "miljö",
+  "avfall",
+  "återvinning"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kemiskt-avfall"
+ ],
+ "related": [],
+ "recommendedOrder": 2936,
+ "words": [
+  {
+   "senseId": "s.källsortering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.källsortera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvinningsstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biogas.1",
+   "active": false
+  },
+  {
+   "senseId": "s.restavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energiåtervinning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pappersförpackning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.platta-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glasförpackning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skölja-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgat-glas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ofärgat-glas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pantburk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.materialåtervinning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.återvunnen.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rätt sak i rätt kärl",
+  "paragraphs": [
+   "Yui har precis flyttat till en lägenhet i Malmö. Under diskbänken i köket står flera små kärl. Hennes granne Erik visar hur källsorteringen fungerar i huset.",
+   "Matavfallet lägger man i en papperspåse. Det blir biogas och gödsel. Restavfall är det som blir kvar, till exempel blöjor och dammsugarpåsar. Det går till energiåtervinning: man bränner det och får värme till husen och el.",
+   "Förpackningar lämnar man på återvinningsstationen eller i husets soprum. Pappersförpackningar ska man platta till, och glasförpackningar ska man skölja ur. Glaset sorteras i färgat glas och ofärgat glas.",
+   "Burkar och flaskor med pant lämnar man i affären. – En pantburk ger en krona tillbaka, säger Erik. Det är som att hitta pengar på gatan!",
+   "Materialåtervinning är bättre än energiåtervinning, förklarar Erik. Av gamla burkar kan man göra nya burkar, och återvunnen plast kan bli nya förpackningar. Yui tycker att det är mycket att lära sig, men hon känner igen idén. I Japan källsorterar man också noga."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var står kärlen i Yuis kök?",
+    "options": [
+     "I hallen",
+     "På balkongen",
+     "Under diskbänken",
+     "I källaren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Under diskbänken i köket står flera små kärl.",
+    "explanationJa": "{流|なが}し{台|だい}の{下|した}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad blir matavfallet till?",
+    "options": [
+     "Biogas och gödsel",
+     "Nya förpackningar",
+     "Nytt glas",
+     "Nytt papper"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Matavfallet lägger man i en papperspåse. Det blir biogas och gödsel.",
+    "explanationJa": "バイオガスと{肥料|ひりょう}になります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör man med glasförpackningar innan man lämnar dem?",
+    "options": [
+     "Sköljer ur dem",
+     "Plattar till dem",
+     "Bränner dem",
+     "Målar dem"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… och glasförpackningar ska man skölja ur.",
+    "explanationJa": "{中|なか}をすすぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Restavfallet går till energiåtervinning.",
+    "correct": true,
+    "explanationSv": "Det går till energiåtervinning …",
+    "explanationJa": "{燃|も}やすごみはサーマルリサイクルに{回|まわ}されます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att energiåtervinning är bättre än materialåtervinning.",
+    "correct": false,
+    "explanationSv": "Materialåtervinning är bättre än energiåtervinning, förklarar Erik.",
+    "explanationJa": "エリックはマテリアルリサイクルのほうがよいと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Matavfall rötas ofta till biogas och biogödsel; restavfall går till energiåtervinning, där värmen blir fjärrvärme och el (Avfall Sverige).",
+   "Enligt avfallshierarkin är materialåtervinning bättre än energiåtervinning, som i sin tur är bättre än deponering (EU:s avfallsdirektiv, Naturvårdsverket).",
+   "Glasförpackningar sorteras i färgat och ofärgat glas (Förpackningsinsamlingen / FTI).",
+   "Panten på en vanlig burk är en krona i Sverige (Returpack/Pantamera)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man källsorterar hemma och i olika länder.",
+  "discussionPoints": [
+   "Hur många sorters sopor sorterar du hemma?",
+   "Vad är svårast att sortera, tycker du?",
+   "Hur skiljer sig källsorteringen i Sverige från den i ditt hemland?",
+   "Brukar du panta burkar och flaskor?"
+  ]
+ }
+}

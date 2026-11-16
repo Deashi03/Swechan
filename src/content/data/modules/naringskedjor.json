@@ -1,0 +1,183 @@
+{
+ "id": "m.naringskedjor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Näringskedjor",
+ "titleJa": "{食物連鎖|しょくもつれんさ}",
+ "descriptionSv": "Näringskedjor: näringskedja, växtätare, köttätare, rovdjur, bytesdjur, jaga, byte, gräshoppa, groda, hök, topprovdjur, överföra, näringsväv, plankton, vara beroende av, jämvikt, rubba och kedjereaktion.",
+ "descriptionJa": "{食物連鎖|しょくもつれんさ}：{食物連鎖|しょくもつれんさ}、{草食動物|そうしょくどうぶつ}、{肉食動物|にくしょくどうぶつ}、{捕食者|ほしょくしゃ}、{獲物|えもの}となる{動物|どうぶつ}、{狩|か}る、{獲物|えもの}、バッタ、カエル、タカ、{頂点捕食者|ちょうてんほしょくしゃ}、{移|うつ}す、{食物網|しょくもつもう}、プランクトン、〜に{頼|たよ}っている、つり{合|あ}い、{崩|くず}す、{連鎖反応|れんさはんのう}。",
+ "categoryId": "R05-A05-T01",
+ "tags": [
+  "natur",
+  "ekologi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.livsmiljo-och-habitat"
+ ],
+ "related": [],
+ "recommendedOrder": 2903,
+ "words": [
+  {
+   "senseId": "s.näringskedja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växtätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köttätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rovdjur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bytesdjur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byte.2",
+   "active": true
+  },
+  {
+   "senseId": "s.gräshoppa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.groda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.topprovdjur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näringsväv.1",
+   "active": false
+  },
+  {
+   "senseId": "s.plankton.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vara-beroende-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämvikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rubba.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kedjereaktion.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem äter vem på ängen?",
+  "paragraphs": [
+   "I en näringskedja äter varje djur det som kommer före i kedjan. På en äng kan det se ut så här: en gräshoppa äter gräs, gräshoppan blir byte för en groda, och grodan fångas av en hök.",
+   "Gräshoppan är en växtätare. Grodan och höken är köttätare. Båda är rovdjur, men grodan är också ett bytesdjur. Höken jagar grodor, möss och små fåglar. Nästan inga djur jagar en vuxen hök, så den är ett topprovdjur.",
+   "När djuren äter växterna, överför växterna energi från solen till djuren. Men det mesta av energin försvinner på vägen. Därför finns det mycket färre rovdjur än växtätare.",
+   "I verkligheten äter de flesta djur mer än en sorts mat. Därför hänger alla kedjor ihop i en stor näringsväv. I havet börjar många kedjor med plankton.",
+   "Alla arter är beroende av varandra. I ett friskt ekosystem finns det en jämvikt mellan rovdjur och bytesdjur. Om en art försvinner kan det rubba jämvikten och starta en kedjereaktion. Om grodorna dör, blir det till exempel fler gräshoppor och mindre mat för höken."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad äter grodan i näringskedjan på ängen?",
+    "options": [
+     "Gräshoppor",
+     "Gräs",
+     "Hökar",
+     "Plankton"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En gräshoppa äter gräs, gräshoppan blir byte för en groda.",
+    "explanationJa": "カエルはバッタを{食|た}べます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q2",
+    "focus": "detail",
+    "statementSv": "Grodan är både ett rovdjur och ett bytesdjur.",
+    "correct": true,
+    "explanationSv": "Båda är rovdjur, men grodan är också ett bytesdjur.",
+    "explanationJa": "カエルは{獲物|えもの}を{狩|か}りますが、タカに{食|た}べられることもあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför finns det färre rovdjur än växtätare?",
+    "options": [
+     "Rovdjuren äter inte varje dag",
+     "Det mesta av energin försvinner på vägen",
+     "Växtätarna jagar rovdjuren",
+     "Det finns för mycket gräs"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Men det mesta av energin försvinner på vägen. Därför finns det mycket färre rovdjur än växtätare.",
+    "explanationJa": "エネルギーの{大部分|だいぶぶん}が{途中|とちゅう}で{失|うしな}われるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad är en näringsväv?",
+    "options": [
+     "Ett nät som fiskare använder",
+     "Många näringskedjor som hänger ihop",
+     "En sorts plankton",
+     "Ett bo för fåglar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Därför hänger alla kedjor ihop i en stor näringsväv.",
+    "explanationJa": "つながり{合|あ}った{多|おお}くの{食物連鎖|しょくもつれんさ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Om grodorna försvinner påverkar det bara grodorna.",
+    "correct": false,
+    "explanationSv": "Om grodorna dör, blir det till exempel fler gräshoppor och mindre mat för höken.",
+    "explanationJa": "バッタやタカにも{影響|えいきょう}が{出|で}ます。"
+   }
+  ],
+  "factSources": [
+   "Bara en liten del av energin (ofta omkring tio procent) går vidare från ett led i näringskedjan till nästa; resten används eller försvinner som värme.",
+   "Grodor äter insekter och blir själva byte för bland annat ormar, fåglar och däggdjur.",
+   "Duvhök och sparvhök jagar främst fåglar men tar också andra smådjur."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vem som äter vem i naturen.",
+  "discussionPoints": [
+   "Kan du rita en näringskedja från en sjö eller ett hav?",
+   "Vilket djur är ett topprovdjur i Japan?",
+   "Vad kan hända om en art försvinner ur en näringsväv?",
+   "Var finns människan i näringskedjan?"
+  ]
+ }
+}

@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.46.0 – 2026-11-16
+
+42 nya moduler som gör överämnet *Ekologi & miljö* (R05-A05) komplett, det femte överämnet i *Natur & geografi*. Varje nytt modulord har en egen bild, utom de 43 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 724 målord)
+- **Ekosystemets grunder** (2901–2907): art och population, livsmiljö och habitat, näringskedjor, producenter och konsumenter, nedbrytare, ekologiska nischer och ekosystemtjänster.
+- **Svenska naturmiljöer** (2911–2917): barrskogar, lövskogar, myrar och våtmarker, livet i sjöar och vattendrag, kust och hav, fjäll och tundra samt odlingslandskap.
+- **Biologisk mångfald** (2921–2927): artrikedom, genetisk variation i ekosystem, hotade arter, invasiva arter, naturreservat, naturvård och att återställa livsmiljöer.
+- **Föroreningar & avfall** (2931–2937): luft-, vatten- och markföroreningar, plast och mikroplast, kemiskt avfall, källsortering och återvinning samt miljögifter.
+- **Hållbar resursanvändning** (2941–2947): förnybara resurser, naturresurser och råvaror, vattenhushållning, skogsbruk, fiskeförvaltning, cirkulär ekonomi och livscykelperspektiv.
+- **Miljöpolitik & samhälle** (2951–2957): miljömål, miljölagstiftning, skyddade områden, klimatavtal, miljökonsekvensbedömning, hållbara transporter och medborgarnas miljöval.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 300 nya ordposter; många ord återanvänds från Samhälle & institutioner, Väder & klimat, Djurvärlden och Växter & svampar.
+- 15 nya betydelser på befintliga poster, bland annat *individ*, *producent*, *konsument*, *konkurrera*, *specialist* och *värd* (i ekologin), *sällsynt* (om arter), *nedbrytning* och *näringsämne* (i naturen), *ärva* (genom generna), *återhämta sig* och *införa* (om arter), *långlivad* (om ämnen), *livscykel* (om varor) och *tillsyn* (myndighetens).
+- Parallella grupper ville skapa samma poster (*förekomma*, *avkomma*, *bestånd*, *gruvavfall*, *giftfri*, *miljöpåverkan*). Posten finns bara i den grupp som kommer först i katalogen, och de andra refererar dess `senseId`. Grupperna lades in i katalogordning.
+- Namnen Jämtland och Svalbard är tillagda i grundordförrådet, utan omsortering.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Världsgeografi* (R05-A06): Kartor & orientering → Väderstreck.
+
+### Bilder (272 nya ordbilder)
+- 91 symbolbilder, 101 bilder som får användas i bildövningar och resten scener.
+- 135 symbol- och adjektivbilder blindtestades. 92 klarade testet efter högst två omgångar.
+- **43 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*. De flesta är abstrakta fackord som förväxlades med närliggande ord i samma modul.
+- Äkta synonymer är markerade som förväxlingsbara: *population/bestånd* och *livsmiljö/habitat*.
+- Nya bildfiler i `src/ui/wordArt/`: `ecosystems.ts`, `natureEnvironments.ts`, `biodiversity.ts`, `pollution.ts`, `sustainability.ts` och `environmentPolicy.ts`.
+
+Service workern är `swechan-v50`.
+
+
 ## 0.45.0 – 2026-11-16
 
 42 nya moduler som gör överämnet *Växter & svampar* (R05-A04) komplett, det fjärde överämnet i *Natur & geografi*. Varje nytt modulord har en egen bild, utom de 13 ord som underkändes i två blindtestomgångar.

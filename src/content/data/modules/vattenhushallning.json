@@ -1,0 +1,181 @@
+{
+ "id": "m.vattenhushallning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Vattenhushållning",
+ "titleJa": "{水資源|みずしげん}の{管理|かんり}",
+ "descriptionSv": "Vattenhushållning: grundvatten, grundvattennivå, sötvatten, dricksvatten, vattentäkt, vattenverk, reningsverk, torka, vattenbrist, bevattningsförbud, vattenförbrukning, vattenmätare, snålspolande, regnvatten, regntunna, droppbevattning och avsaltning.",
+ "descriptionJa": "{水資源|みずしげん}の{管理|かんり}：{地下水|ちかすい}、{地下水位|ちかすいい}、{淡水|たんすい}、{飲料水|いんりょうすい}、{水源|すいげん}、{浄水場|じょうすいじょう}、{下水処理場|げすいしょりじょう}、{干|かん}ばつ、{水不足|みずぶそく}、{散水禁止|さんすいきんし}、{水|みず}の{使用量|しようりょう}、{水道|すいどう}メーター、{節水型|せっすいがた}の、{雨水|あまみず}、{雨水|あまみず}タンク、{点滴|てんてき}かんがい、{海水淡水化|かいすいたんすいか}。",
+ "categoryId": "R05-A05-T05",
+ "tags": [
+  "natur",
+  "miljö",
+  "vatten"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.naturresurser-och-ravaror"
+ ],
+ "related": [],
+ "recommendedOrder": 2943,
+ "words": [
+  {
+   "senseId": "s.grundvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundvattennivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sötvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dricksvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattentäkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reningsverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.torka-noun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenbrist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bevattningsförbud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenförbrukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snålspolande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regnvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regntunna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.droppbevattning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avsaltning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Varje droppe räknas",
+  "paragraphs": [
+   "Sommaren var varm och torr. I juli kom ett brev från kommunen: det blev bevattningsförbud. Grundvattennivån var låg, och ingen fick vattna sin trädgård med slang.",
+   "Ungefär hälften av dricksvattnet i Sverige kommer från grundvatten, och resten kommer från sjöar och vattendrag. En plats där man tar vatten kallas vattentäkt. I vattenverket renas vattnet, och när vi har använt det går det till reningsverket.",
+   "Sverige har mycket sötvatten, men torka kan ge vattenbrist även här. Familjen Lind tittade på vattenmätaren och blev förvånad. Deras vattenförbrukning var nästan 600 liter om dagen.",
+   "De bytte till en snålspolande dusch och började duscha kortare. Nu samlar de regnvatten från taket i en regntunna, och i trädgården har de droppbevattning.",
+   "På Gotland räcker grundvattnet inte alltid. Där gör man därför en del av dricksvattnet av havsvatten genom avsaltning. – Det kostar mycket energi, så det är bättre att spara på vattnet, säger Anna Lind."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför blev det bevattningsförbud?",
+    "options": [
+     "Det regnade för mycket",
+     "Grundvattennivån var låg",
+     "Vattenverket var stängt",
+     "Familjen Lind ville spara pengar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Grundvattennivån var låg …",
+    "explanationJa": "{地下水位|ちかすいい}が{低|ひく}かったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer med vattnet i vattenverket?",
+    "options": [
+     "Det renas",
+     "Det värms",
+     "Det blir salt",
+     "Det säljs till andra länder"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I vattenverket renas vattnet …",
+    "explanationJa": "{水|みず}がきれいにされます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad såg familjen på vattenmätaren?",
+    "options": [
+     "Hur varmt vattnet var",
+     "Hur mycket det regnade",
+     "Hur högt grundvattnet stod",
+     "Hur mycket vatten de använde"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Deras vattenförbrukning var nästan 600 liter om dagen.",
+    "explanationJa": "{家族|かぞく}が{使|つか}った{水|みず}の{量|りょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Familjen Lind samlar regnvatten i en regntunna.",
+    "correct": true,
+    "explanationSv": "Nu samlar de regnvatten från taket i en regntunna …",
+    "explanationJa": "{屋根|やね}から{雨水|あまみず}を{集|あつ}めています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anna Lind tycker att man kan använda mer vatten tack vare avsaltning.",
+    "correct": false,
+    "explanationSv": "– Det kostar mycket energi, så det är bättre att spara på vattnet …",
+    "explanationJa": "アンナは{水|みず}を{節約|せつやく}するほうがよいと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Ungefär hälften av det kommunala dricksvattnet i Sverige kommer från grundvatten (inklusive konstgjort grundvatten) och resten från sjöar och vattendrag (Svenskt Vatten).",
+   "En person i Sverige använder i genomsnitt omkring 140 liter vatten per dygn i hemmet (Svenskt Vatten).",
+   "Region Gotland framställer en del av dricksvattnet genom avsaltning av havsvatten, eftersom grundvattnet på ön inte alltid räcker (Region Gotland).",
+   "Kommuner kan införa bevattningsförbud när grundvattennivåerna är låga, som under flera torra somrar i slutet av 2010-talet (SGU; Svenskt Vatten)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vatten och om hur man kan spara på det.",
+  "discussionPoints": [
+   "Varifrån kommer dricksvattnet där du bor?",
+   "Har det någon gång varit vattenbrist eller bevattningsförbud där du har bott?",
+   "Hur mycket vatten tror du att du använder varje dag?",
+   "Vad kan man göra hemma för att minska vattenförbrukningen?"
+  ]
+ }
+}

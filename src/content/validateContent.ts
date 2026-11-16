@@ -195,6 +195,16 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.fosfor.1', 's.förökning.1', 's.avge.1',
   // 0.45 (Trädgård & odling), after two blind-test rounds
   's.hålla-sig.1',
+  // 0.46 (Ekosystemets grunder), after two blind-test rounds
+  's.talrik.1', 's.förekomma.1', 's.rubba.1', 's.samexistera.1',
+  // 0.46 (Biologisk mångfald), after two blind-test rounds
+  's.artfattig.1', 's.artrikedom.1', 's.ärva.2', 's.genetisk.1', 's.nära-hotad.1', 's.hotad.1', 's.dö-ut.1', 's.utrota.1', 's.främmande-art.1', 's.invasiv.1', 's.inhemsk.1', 's.naturvård.1', 's.naturhänsyn.1', 's.återställa.1',
+  // 0.46 (Föroreningar & avfall), after two blind-test rounds
+  's.förorenad.1', 's.nedbrytbar.1', 's.materialåtervinning.1',
+  // 0.46 (Hållbar resursanvändning), after two blind-test rounds
+  's.bioenergi.1', 's.ta-slut.1', 's.outtömlig.1', 's.knapphet.1', 's.klimatavtryck.1', 's.livscykel.2',
+  // 0.46 (Miljöpolitik & samhälle), after two blind-test rounds
+  's.miljökvalitetsmål.1', 's.indikator.1', 's.föreläggande.1', 's.försiktighetsprincip.1', 's.vite.1', 's.miljösanktionsavgift.1', 's.skyddat-område.1', 's.inrätta.1', 's.skötselplan.1', 's.utsläppshandel.1', 's.utsläppsrätt.1', 's.miljökonsekvensbeskrivning.1', 's.sakägare.1', 's.miljökonsekvensbedömning.1', 's.exploatör.1', 's.miljömärkning.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

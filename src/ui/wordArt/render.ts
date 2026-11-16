@@ -172,6 +172,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'svamp.': () => import('./fungi').then((m) => m.FUNGI_MOTIFS),
   'vliv.': () => import('./plantLife').then((m) => m.PLANT_LIFE_MOTIFS),
   'odl.': () => import('./gardening').then((m) => m.GARDENING_MOTIFS),
+  'ekos.': () => import('./ecosystems').then((m) => m.ECOSYSTEM_MOTIFS),
+  'nmil.': () => import('./natureEnvironments').then((m) => m.NATURE_ENV_MOTIFS),
+  'bmf.': () => import('./biodiversity').then((m) => m.BIODIVERSITY_MOTIFS),
+  'fore.': () => import('./pollution').then((m) => m.POLLUTION_MOTIFS),
+  'hres.': () => import('./sustainability').then((m) => m.SUSTAINABILITY_MOTIFS),
+  'mpol.': () => import('./environmentPolicy').then((m) => m.ENV_POLICY_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};

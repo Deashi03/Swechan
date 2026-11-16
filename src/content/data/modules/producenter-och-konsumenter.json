@@ -1,0 +1,175 @@
+{
+ "id": "m.producenter-och-konsumenter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Producenter och konsumenter",
+ "titleJa": "{生産者|せいさんしゃ}と{消費者|しょうひしゃ}",
+ "descriptionSv": "Producenter och konsumenter: producent, konsument, fotosyntes, solljus, klorofyll, koldioxid, beta, primärkonsument, alg, växtplankton, djurplankton, sekundärkonsument, näringsnivå, allätare, biomassa och omvandla.",
+ "descriptionJa": "{生産者|せいさんしゃ}と{消費者|しょうひしゃ}：{生産者|せいさんしゃ}、{消費者|しょうひしゃ}、{光合成|こうごうせい}、{日光|にっこう}、{葉緑素|ようりょくそ}、{二酸化炭素|にさんかたんそ}、{草|くさ}を{食|は}む、{一次消費者|いちじしょうひしゃ}、{藻類|そうるい}、{植物|しょくぶつ}プランクトン、{動物|どうぶつ}プランクトン、{二次消費者|にじしょうひしゃ}、{栄養段階|えいようだんかい}、{雑食動物|ざっしょくどうぶつ}、{生物量|せいぶつりょう}、{変換|へんかん}する。",
+ "categoryId": "R05-A05-T01",
+ "tags": [
+  "natur",
+  "ekologi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.naringskedjor"
+ ],
+ "related": [],
+ "recommendedOrder": 2904,
+ "words": [
+  {
+   "senseId": "s.producent.2",
+   "active": true
+  },
+  {
+   "senseId": "s.konsument.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fotosyntes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klorofyll.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koldioxid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.primärkonsument.1",
+   "active": true
+  },
+  {
+   "senseId": "s.alg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växtplankton.1",
+   "active": true
+  },
+  {
+   "senseId": "s.djurplankton.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sekundärkonsument.1",
+   "active": false
+  },
+  {
+   "senseId": "s.näringsnivå.1",
+   "active": false
+  },
+  {
+   "senseId": "s.allätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biomassa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Energin från solen",
+  "paragraphs": [
+   "Alla ekosystem behöver energi, och nästan all energi kommer från solen. Växter och alger är producenter. Med hjälp av klorofyll fångar de solljus och gör socker av vatten och koldioxid. Det kallas fotosyntes.",
+   "Djur kan inte göra sin egen mat. De är konsumenter och måste äta något annat som lever. En ko som betar på en äng är en primärkonsument, eftersom den äter växter direkt.",
+   "I en sjö är de viktigaste producenterna växtplankton, små alger som flyter i vattnet. Djurplankton äter växtplankton, och små fiskar äter djurplankton. De små fiskarna är alltså sekundärkonsumenter.",
+   "Varje steg i kedjan kallas en näringsnivå. Producenterna finns på den första nivån, primärkonsumenterna på den andra och så vidare. Människan är en allätare och kan äta på flera nivåer: både potatis och fisk.",
+   "På land är biomassan störst på den första nivån och blir mindre för varje nivå. På en äng väger allt gräs mycket mer än alla harar, och alla harar väger mer än alla rävar. Det beror på att djuren omvandlar det mesta av maten till energi för att leva, röra sig och hålla värmen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör växterna av vatten och koldioxid?",
+    "options": [
+     "Socker",
+     "Klorofyll",
+     "Plankton",
+     "Kött"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Med hjälp av klorofyll fångar de solljus och gör socker av vatten och koldioxid.",
+    "explanationJa": "{水|みず}と{二酸化炭素|にさんかたんそ}から{糖|とう}をつくります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är kon en primärkonsument?",
+    "options": [
+     "Den äter små fiskar",
+     "Den gör sin egen mat",
+     "Den lever i en sjö",
+     "Den äter växter direkt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En ko som betar på en äng är en primärkonsument, eftersom den äter växter direkt.",
+    "explanationJa": "{植物|しょくぶつ}を{直接|ちょくせつ}{食|た}べるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Djurplankton är producenter i sjön.",
+    "correct": false,
+    "explanationSv": "Djurplankton äter växtplankton.",
+    "explanationJa": "{動物|どうぶつ}プランクトンは{植物|しょくぶつ}プランクトンを{食|た}べる{消費者|しょうひしゃ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Människan kan äta på flera näringsnivåer.",
+    "correct": true,
+    "explanationSv": "Människan är en allätare och kan äta på flera nivåer: både potatis och fisk.",
+    "explanationJa": "{人間|にんげん}は{雑食動物|ざっしょくどうぶつ}で、いくつもの{段階|だんかい}のものを{食|た}べます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q5",
+    "focus": "inference",
+    "promptSv": "Varför väger alla rävar mindre än alla harar på ängen?",
+    "options": [
+     "Rävarna äter gräs",
+     "Djuren använder det mesta av maten till att leva",
+     "Harar är större än rävar",
+     "Rävarna lever bara på vintern"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det beror på att djuren omvandlar det mesta av maten till energi för att leva, röra sig och hålla värmen.",
+    "explanationJa": "{食|た}べ{物|もの}の{大部分|だいぶぶん}が、{生|い}きるためのエネルギーに{使|つか}われるからです。"
+   }
+  ],
+  "factSources": [
+   "Växter, alger och växtplankton är producenter som bildar socker genom fotosyntes av koldioxid och vatten med hjälp av solljus.",
+   "På land minskar biomassan oftast för varje näringsnivå uppåt (biomassapyramid); i vatten kan pyramiden ibland vara omvänd.",
+   "Växtplankton står för en stor del av jordens syreproduktion."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om producenter och konsumenter i naturen och på er tallrik.",
+  "discussionPoints": [
+   "Vad åt du i dag? Var det från producenter eller konsumenter?",
+   "Är du mest en växtätare, en köttätare eller en allätare?",
+   "Varför kan det inte finnas fler rävar än harar?",
+   "Vilka producenter finns i havet nära Japan?"
+  ]
+ }
+}

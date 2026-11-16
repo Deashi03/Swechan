@@ -159,6 +159,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.45 – Växter & svampar (klar)
 - 42 nya moduler i Natur & geografi → Växter & svampar med 462 nya ordbilder. 13 ord saknar bild efter två blindtestomgångar.
 
+## v0.46 – Ekologi & miljö (klar)
+- 42 nya moduler i Natur & geografi → Ekologi & miljö med 272 nya ordbilder. 43 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
