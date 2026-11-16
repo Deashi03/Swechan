@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.46.0 (släppt 2026-11-16) · **Senast uppdaterad:** 2026-11-16 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.47.0 (släppt 2026-11-17) · **Senast uppdaterad:** 2026-11-17 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 223 publicerade moduler. 1 218 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) och överämnena *Landskap & geologi* (R05-A01, 0.42), *Väder & klimat* (R05-A02, 0.43), *Djurvärlden* (R05-A03, 0.44), *Växter & svampar* (R05-A04, 0.45) och *Ekologi & miljö* (R05-A05, 0.46) i *Natur & geografi*. De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 265 publicerade moduler. 1 260 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) och hela *Natur & geografi* (R05, 0.42–0.47). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Världsgeografi* (R05-A06), det sista i *Natur & geografi*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Matematikens grunder* (R06-A01), det första i *Matematik & naturvetenskap*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 14 351 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 14 594 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Världsgeografi* (R05-A06) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Matematikens grunder* (R06-A01) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -174,6 +174,10 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Hållbar resursanvändning: `s.bioenergi.1`, `s.ta-slut.1`, `s.outtömlig.1`, `s.knapphet.1`, `s.klimatavtryck.1`, `s.livscykel.2`
   - Miljöpolitik & samhälle: `s.miljökvalitetsmål.1`, `s.indikator.1`, `s.föreläggande.1`, `s.försiktighetsprincip.1`, `s.vite.1`, `s.miljösanktionsavgift.1`, `s.skyddat-område.1`, `s.inrätta.1`, `s.skötselplan.1`, `s.utsläppshandel.1`, `s.utsläppsrätt.1`, `s.miljökonsekvensbeskrivning.1`, `s.miljökonsekvensbedömning.1`, `s.sakägare.1`, `s.exploatör.1`, `s.miljömärkning.1`
   - Förväxlingarna gällde nästan alltid närliggande ord i samma modul: *talrik/population/bestånd*, *rubba/jämvikt*, *artrikedom/artrik/mångfald*, *artfattig/monokultur*, *hotad/nära hotad/utrotningshotad/sårbar*, *dö ut/utrota/utdöd*, *främmande art/invasiv/inhemsk/införa*, *återställa/restaurering*, *förorenad/vattenförorening*, *nedbrytbar/bryta ner*, *materialåtervinning/återvunnen*, *ta slut/förbruka*, *outtömlig/förnybar*, *bioenergi/biobränsle*, *klimatavtryck/ekologiskt fotavtryck*, *livscykel/från vagga till grav*, *miljömål/miljökvalitetsmål*, *vite/föreläggande/miljösanktionsavgift*, *utsläppsrätt/utsläppshandel*, *miljökonsekvensbedömning/-beskrivning*, *exploatör/exploatera*, *miljömärkning/miljömärkt*. Ordpar som *utsläppsrätt/utsläppshandel* och *vite/föreläggande* är inte synonymer; de behöver andra visualiseringar (t.ex. animationer) eller en annan ordfördelning mellan modulerna.
+- **Från 0.47 (8 ord):**
+  - Kartor & orientering: `s.sydlig.1`, `s.i-verkligheten.1`, `s.position.1`
+  - Europa: `s.gränsa-till.1`, `s.dvärgstat.1`, `s.areal.1`, `s.regeringssäte.1`, `s.nordbo.1`
+  - Förväxlingarna: *sydlig/söderläge*, *i verkligheten/motsvara/skala*, *position/koordinat/du är här*, *gränsa till/gräns/grannland*, *dvärgstat/furstendöme/enklav*, *areal/kvadratkilometer*, *regeringssäte/huvudstad* och *nordbo/nordisk*.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -433,6 +437,16 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **0.46, fakta (står i `factSources`, ungefärliga):** lämmelår vart tredje till femte år, tio procent energiöverföring per led, 69 % skogsmark, jätteek från en meters diameter, tillträdesförbud på fågelskär 1 april–31 juli, omkring 100 000 sjöar, rödlistan vart femte år, östra Östersjötorsken stängd sedan 2019, bävern återinförd 1922–39, 80 000 möjligt förorenade områden, EU:s förbud mot engångsplast 3 juli 2021, pant 1 krona, kostråd om strömming, 80 % av EU:s järnmalm, 140 liter vatten per person och dygn, 300 000 skogsägare, en sjundedel skyddad yta och ett trettiotal nationalparker, klimatfinansiering 100/300 miljarder dollar, EU-direktivet mot grönmålning från hösten 2026, USA:s utträde ur Parisavtalet (kan ändras)
 - **0.46, bilder:** varningsromberna i *miljöfarlig* och *hälsofarlig* är förenklade GHS-symboler utan text. Många abstrakta ord fick bild bara efter medelsäkra svar som integratören godtog (t.ex. *population*, *tillgång*, *biomassa*, *resurs*, *generalist*, *arvsmassa*, *allemansrätt*, *luftkvalitet*, *förvalta*, *delningsekonomi*, *miljöbalk*, *klimaträttvisa*).
 - **0.46, arbetsform:** etappen kördes i samma session som 0.40 och 0.45 på produktägarens uttryckliga begäran.
+- **0.47, svenska:**
+  - geografiska namn som egna poster (*Klippiga bergen*, *Stora sjöarna*, *Anderna*, *Stilla havet*, *Arktis* m.fl.) har `inflection: none`; *Yucatanhalvön* och *Brasilia* skrivs utan accent eftersom ordtolkningen delar ord vid á/í (Medellín står inte i texten); *Mexikanska golfen* heter officiellt "Gulf of America" i USA sedan 2025 (står i `factSources`)
+  - böjning och ord att kontrollera mot SAOL: *sjömil*, *GPS* (GPS:en), *ange* (grupp 4), *segelbar* (C1; alt. *farbar*), *östat*, *riksha* (alt. *rickshaw*), *finanscentrum* (pl. *-centrum/-centra*), *jak* (jakar), *wadi* (wadier), *löss* (sammanfaller med plural av *lus*), *saltpanna* (geografisk betydelse), *shelfis* (alt. *isshelf*), *Sydalperna*, *känguru* (känguruer), *kiwi* (kiwier), *inuit* (inuiter), *inland* i stället för *outback*
+  - befintligt datafel: posten *damm* (`e.damm`) har böjningen för betydelsen "ett damm" även för betydelserna "en damm" (.2, .3), så formen *dammen* känns inte igen; lästexten i *Afrikas större floder och sjöar* använder därför obestämd form
+  - *provins* (`s.provins.1`) har en definition som utgår från Rom med tillägg om i dag; *alpacka* betyder ullen
+- **0.47, japanska:**
+  - termer att granska: {行政区分図|ぎょうせいくぶんず} (*politisk karta*), {地勢図|ちせいず} (*fysisk karta*), {包領|ほうりょう} (*enklav*), {陸上|りくじょう}の{連絡路|れんらくろ} (*fast förbindelse*), {塩類平原|えんるいへいげん} (*saltpanna*), {北島|ほくとう}/{南島|なんとう}; glosan för *korean* ({韓国|かんこく}・{朝鮮人|ちょうせんじん}) är känslig och bör granskas av en människa; lästexten i *Andernas bergsområden* är omskriven på japanska
+- **0.47, fakta (står i `factSources`, kan ändras):** Mont Blanc ungefär 4 800 m, Island omkring 400 000 invånare, Venedigs avgift för dagsturister, Japan 14 125 öar och 111 aktiva vulkaner, Indonesien omkring 17 000 öar, Everest 8 849 m, Döda havet mer än 400 m under havsytan, Jakarta/Dhaka/Tokyo över 30 miljoner (FN, WUP 2025), Sahara omkring 9 miljoner km², Kilimanjaro 5 895 m, 54 stater i Afrika varav 16 inlandsstater, Nigeria över 200 miljoner invånare, Tchadsjön krymper, Rio de Janeiro: en femtedel i favelor (IBGE 2022), Nya Zeeland 23–25 miljoner får, Antarktisfördraget omkring 58 parter, Påskön omkring 3 500 km från Chile, gränserna mellan Melanesien, Mikronesien och Polynesien varierar
+- **0.47, bilder:** länder och platser är förenklade kartor med området i orange; folkslagsorden visar en person bredvid en markerad karta; nordiska flaggor (med kors) förekommer i *nordbo*-motivet men ordet saknar bild; *dollar*-sedeln visar tecknet $; väderstrecksbokstäverna N/Ö/S/V finns i kartbilderna som i `nav.ts`.
+- **0.47, arbetsform:** etappen kördes i samma session som 0.40, 0.45 och 0.46 på produktägarens uttryckliga begäran.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -451,11 +465,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v50`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v51`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Väderstreck* (SWC-NAT-06-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Kartor & orientering* (R05-A06-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Heltal och naturliga tal* (SWC-VET-01-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Tal & räkning* (R06-A01-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.
