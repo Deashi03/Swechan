@@ -30,9 +30,16 @@ Alla 252 moduler i *Vardag & hem* (R01) är genomlästa: lästexter, frågor, sv
 - *att göra-lista*: böjningen var trasig (*att*, *göra-listan*, *att*).
 - *munskölj*: bestämd form *munsköljet*.
 - *skottår*: exempelmeningen saknade ordet.
+- Alla ordposter som modulerna i *Vardag & hem* använder (3 774 betydelser) är lästa: svensk definition, exempel med översättning, svensk förklaring och böjning. 31 rättningar i 25 filer:
+  - **Böjning:** *mysa* (*myste*, inte *mös*), *prio* (ingen plural), *ton* (*tonnet*), *buffé* (*buffén*, *bufféer*), *pålägg* (*påläggen*), *sprucken* (*sprucket*), *allrengöring* (*en*, *allrengöringen*), *impregneringsspray* (*impregneringssprayen*).
+  - **Sakfel:** *kontantinsats* (minst 10 procent sedan 1 april 2026, inte 15), *moms* (exemplet angav tolv procent på mat), *lättmjölk* (en halv procent, inte under).
+  - **Svenska:** exempel eller förklaring till *vänta med*, *i jämförelse med*, *kiosk*, *dubbdäck*, *turbulens*, *vigselring*, *styv*, *solros*, *gyllenbrun*, *kokpunkt*, *sköljmedel* och *dammråtta*.
+  - **Japanska:** *lyhörd* (筒抜け, inte 筋抜け), *duka fram* (fil översatt som yoghurt), *växelfel* (中央駅 för *stationen*).
 
 ### Inte gjort
-- Ordposternas definitioner, exempel och förklaringar (3 774 betydelser) är bara kontrollerade automatiskt, inte lästa.
+- Ordposternas japanska definitioner (`defJa`) och japanska förklaringar är inte jämförda med de svenska. Japanska uppslagsord och exempelöversättningar är lästa.
+- *ton* (vikt) har kvar pluralformen *tonen* i stället för *tonnen*: 17 moduler utanför *Vardag & hem* använder *tonen* (av *en ton*) och godkänns bara genom den formen. Det behövs en egen ordpost för *ton* i betydelsen tonfall.
+- *tång* (redskap) delar ordpost med *tång* (i havet) och saknar därför pluralformerna *tänger*, *tängerna*.
 - Berättelsen hänger inte ihop mellan ämnesgrupperna: radhuset köps i *Bostadstyper & rum*, men i *Hyra, köpa & grannar* hyr paret en lägenhet och köper en bostadsrätt, och i *Resor & lokaltrafik* har Aiko, Erik och Leo andra roller. Det kräver omskrivning och ett beslut av produktägaren.
 - `npm test` och bygget har inte körts i den här sessionen (inga paket installerade). `validateContent` och `checkVocabulary` har körts över allt innehåll utan fel, och modulindexet är omgenererat.
 
