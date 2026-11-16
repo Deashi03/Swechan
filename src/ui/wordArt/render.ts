@@ -161,6 +161,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'extrem.': () => import('./extremeWeather').then((m) => m.EXTREME_WEATHER_MOTIFS),
   'klimf.': () => import('./climateChange').then((m) => m.CLIMATE_CHANGE_MOTIFS),
   'fagel.': () => import('./birds').then((m) => m.BIRD_MOTIFS),
+  'dagg.': () => import('./mammals').then((m) => m.MAMMAL_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
