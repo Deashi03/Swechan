@@ -1,5 +1,33 @@
 # Changelog
 
+## 0.45.0 – 2026-11-16
+
+42 nya moduler som gör överämnet *Växter & svampar* (R05-A04) komplett, det fjärde överämnet i *Natur & geografi*. Varje nytt modulord har en egen bild, utom de 13 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 709 målord)
+- **Träd & buskar** (2801–2807): svenska lövträd, barrträd, fruktträd, prydnadsbuskar, trädets delar, årsringar och tillväxt samt skogens trädslag.
+- **Blommor & örter** (2811–2817): vilda vårblommor, sommarblommor, blommans delar, pollinering, medicinalväxter och kryddörter, giftiga växter och växtbestämning.
+- **Gräs & mossor** (2821–2827): vanliga gräsarter, ängsväxter, sädesväxter, mossor, lavar, myrvegetation och växter i fjällmiljö.
+- **Svampriket** (2831–2837): matsvampar i Sverige, giftsvampar, svampens byggnad, mycel och sporer, nedbrytare i naturen, svampodling samt svampplockning och säkerhet.
+- **Växters liv** (2841–2847): frö och groning, rötter och näringsupptag, stjälkar och blad, fotosyntes i vardagstermer, blomning och fruktsättning, växters fortplantning och anpassning till miljön.
+- **Trädgård & odling** (2851–2857): så och plantera, vattna och gödsla, jord och kompost, beskära och gallra, skadedjur och växtsjukdomar, skörda och förvara samt odla på balkong.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 452 nya ordposter. Grundorden *träd*, *rot*, *löv*, *blomma* (substantiv och verb), *blad* och *så* (verb) har fått egna poster.
+- 21 nya betydelser på befintliga poster, bland annat *ask* (träd), *kärna* (i frukt), *tillväxt* (hos växter), *fälla* (träd), *tät* (skog), *märke* (i blomman), *pressa* (blommor), *hatt*, *rör*, *ring* och *strumpa* (på svamp), *rike* (i biologin), *angripa* (om svamp och insekter), *förankra*, *befruktning* (hos växter), *balja* (på ärtor), *beskära* (träd), *gallra* (plantor) och *toppa* (växter).
+- Parallella grupper ville skapa samma poster (*blomma* som verb, *knopp*, *fjällbjörk*, *stickling*, *blomlök*, *växtnäring*, *näringsbrist*). Posten finns bara i den grupp som kommer först i katalogen, och de andra refererar dess `senseId`. Grupperna lades in i katalogordning.
+- Namnen Birgit, Gunnar, Takeshi, Nilsson och Haruto är tillagda i grundordförrådet, utan omsortering.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Ekologi & miljö* (R05-A05): Ekosystemets grunder → Art och population.
+
+### Bilder (462 nya ordbilder)
+- 48 symbolbilder, 246 bilder som får användas i bildövningar och resten scener.
+- 61 symbol- och adjektivbilder blindtestades. 48 klarade testet efter högst två omgångar.
+- **13 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- *dödlig* (som kan döda) och *livsfarlig* är markerade som äkta synonymer.
+- Vårdkorset i *växtsjukdom* är grönt; ett rött kors på vit botten är ett skyddat emblem och ritas inte.
+- Nya bildfiler i `src/ui/wordArt/`: `treesShrubs.ts`, `flowersHerbs.ts`, `grassesMosses.ts`, `fungi.ts`, `plantLife.ts` och `gardening.ts`.
+
+Service workern är `swechan-v49`.
+
+
 ## 0.44.0 – 2026-11-16
 
 42 nya moduler som gör överämnet *Djurvärlden* (R05-A03) komplett, det tredje överämnet i *Natur & geografi*. Varje nytt modulord har en egen bild, utom de 14 ord som underkändes i två blindtestomgångar.
