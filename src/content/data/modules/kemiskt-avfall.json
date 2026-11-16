@@ -1,0 +1,181 @@
+{
+ "id": "m.kemiskt-avfall",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Kemiskt avfall",
+ "titleJa": "{化学廃棄物|かがくはいきぶつ}",
+ "descriptionSv": "Kemiskt avfall: kemikalie, kemiskt avfall, farligt avfall, varningssymbol, miljöfarlig, hälsofarlig, frätande, brandfarlig, lösningsmedel, färgrest, lysrör, batteri, elavfall, läkemedel, hälla ut, miljöstation och återvinningscentral.",
+ "descriptionJa": "{化学廃棄物|かがくはいきぶつ}：{化学薬品|かがくやくひん}、{化学廃棄物|かがくはいきぶつ}、{有害|ゆうがい}ごみ、{警告|けいこく}マーク、{環境|かんきょう}に{有害|ゆうがい}な、{健康|けんこう}に{有害|ゆうがい}な、{腐食性|ふしょくせい}の、{燃|も}えやすい、{溶剤|ようざい}、ペンキの{残|のこ}り、{蛍光灯|けいこうとう}、{電池|でんち}、{電気|でんき}・{電子|でんし}ごみ、{医薬品|いやくひん}、（{液体|えきたい}を）{流|なが}す、{有害|ゆうがい}ごみの{回収所|かいしゅうじょ}、リサイクルセンター。",
+ "categoryId": "R05-A05-T04",
+ "tags": [
+  "natur",
+  "miljö",
+  "avfall"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.plast-och-mikroplast"
+ ],
+ "related": [],
+ "recommendedOrder": 2935,
+ "words": [
+  {
+   "senseId": "s.kemikalie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kemiskt-avfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.farligt-avfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningssymbol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljöfarlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälsofarlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frätande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brandfarlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lösningsmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgrest.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lysrör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.batteri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkemedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälla-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljöstation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.återvinningscentral.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Städdag i källaren",
+  "paragraphs": [
+   "En lördag städar Elin och hennes familj i källaren. De hittar gamla burkar med färgrester, en flaska lösningsmedel, två trasiga lysrör, en låda med batterier och en påse med gamla läkemedel.",
+   "Pappa vill hälla ut det sista lösningsmedlet i avloppet. – Nej! säger dottern Elin. Det är kemiskt avfall. Det kan förorena vattnet, och reningsverken kan inte ta bort alla kemikalier.",
+   "På flaskorna finns varningssymboler. En symbol med en död fisk och ett dött träd betyder att något är miljöfarligt. Andra symboler visar att ett ämne är brandfarligt, frätande eller hälsofarligt.",
+   "Allt farligt avfall ska lämnas på rätt ställe. Färg, lösningsmedel, lysrör och elavfall kör familjen till återvinningscentralen. Batterierna lämnar de på en miljöstation vid en bensinstation, och läkemedlen lämnar de på apoteket.",
+   "När de kommer hem gör Elin en lista över alla kemikalier i huset. – Nu förvarar vi allt i sina egna förpackningar, högt upp, säger hon. Då kan inte lillebror nå dem."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ville pappa göra med lösningsmedlet?",
+    "options": [
+     "Sälja det",
+     "Ge det till grannen",
+     "Lämna det på apoteket",
+     "Hälla ut det i avloppet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Pappa vill hälla ut det sista lösningsmedlet i avloppet.",
+    "explanationJa": "{排水口|はいすいこう}に{流|なが}そうとしました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför sa Elin nej?",
+    "options": [
+     "Det luktar illa",
+     "Det kan förorena vattnet",
+     "Det är dyrt",
+     "Det kan behövas senare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det kan förorena vattnet, och reningsverken kan inte ta bort alla kemikalier.",
+    "explanationJa": "{水|みず}を{汚染|おせん}するおそれがあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder symbolen med en död fisk och ett dött träd?",
+    "options": [
+     "Att något är miljöfarligt",
+     "Att något är brandfarligt",
+     "Att något går att äta",
+     "Att något är tungt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En symbol med en död fisk och ett dött träd betyder att något är miljöfarligt.",
+    "explanationJa": "{環境|かんきょう}に{有害|ゆうがい}だという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Familjen lämnar läkemedlen på apoteket.",
+    "correct": true,
+    "explanationSv": "… och läkemedlen lämnar de på apoteket.",
+    "explanationJa": "{薬|くすり}は{薬局|やっきょく}に{持|も}って{行|い}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Familjen slänger lysrören i soptunnan hemma.",
+    "correct": false,
+    "explanationSv": "Färg, lösningsmedel, lysrör och elavfall kör familjen till återvinningscentralen.",
+    "explanationJa": "{蛍光灯|けいこうとう}はリサイクルセンターに{持|も}って{行|い}きます。"
+   }
+  ],
+  "factSources": [
+   "Färg, lösningsmedel, lysrör, batterier och elavfall räknas som farligt avfall eller elavfall och ska lämnas på återvinningscentral eller annan insamling, inte i hushållssoporna (Avfall Sverige, Naturvårdsverket).",
+   "Överblivna läkemedel ska lämnas på apotek (Läkemedelsverket).",
+   "Varningssymbolerna på kemikalier följer EU:s CLP-förordning; symbolen för miljöfara visar en död fisk och ett dött träd (Kemikalieinspektionen).",
+   "I många kommuner finns miljöstationer, ofta vid bensinstationer, där man kan lämna små mängder farligt avfall; systemet skiljer sig mellan kommuner."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kemikalier hemma och om hur man blir av med dem på rätt sätt.",
+  "discussionPoints": [
+   "Vilka kemikalier har du hemma?",
+   "Vet du var den närmaste återvinningscentralen eller miljöstationen finns?",
+   "Hur slänger man farligt avfall där du kommer ifrån?",
+   "Tittar du på varningssymbolerna när du köper rengöringsmedel?"
+  ]
+ }
+}
