@@ -311,7 +311,6 @@ const LBROWN = '#c49a6c';
 const RED = '#d23b2e';
 const ORANGE = '#ef8a3c';
 const rot = (x: number, y: number, a: number, s: number, ...k: Svg[]) => g(`translate(${x} ${y}) rotate(${a}) scale(${s})`, ...k);
-const jag = (x: number, y: number, s = 1, col: string = C.ink) => at(x, y, s, line('M0 -6 L4 -3 L1 0 L5 3 L2 6 M7 -9 L12 -5 L8 -1 L13 3 L9 7 L13 10', col, 1.5));
 type Song = {
   body?: string; back?: string; belly?: string; head?: string; cap?: string; cheek?: string; eyeStripe?: string; bib?: string; stripe?: string;
   face?: string; breast?: string; wing?: string; bar?: string; bar2?: string; tail?: string; tailLen?: number; tailUp?: number; beak?: string; beakLen?: number;
@@ -521,19 +520,6 @@ const goose = (headUp = false, hl = false) => all(
   line('M-2 -4 L-3 0 M3 -4 L3 0', ORANGE, 1.4),
   hl && headUp ? ring(13, -34, 7) : '',
 );
-/** A roe deer fawn lying curled, white spots; centre bottom (0, 0). */
-const fawnLying = (o: { grey?: boolean } = {}) => {
-  const c = o.grey ? GREY : '#b8673a';
-  return all(
-    sil([
-      ['M-18 0 C-22 -10 -10 -14 2 -13 C12 -12 16 -6 14 0 Z', c],
-      ['M8 -11 C8 -20 16 -24 22 -21 L28 -16 C29 -14 27 -12 24 -13 L18 -12 Z', c],
-      ['M12 -21 C9 -27 12 -29 15 -24 Z', c], ['M16 -22 C18 -28 21 -27 19 -21 Z', c],
-    ], 1.6),
-    o.grey ? '' : all(...[[-12, -8], [-6, -10], [0, -10], [6, -9], [-9, -4], [-2, -5], [5, -4]].map(([x, y]) => circle(x!, y!, 1.1, '#f6efe0', null))),
-    eye(20, -18, 1), circle(28, -15.4, 0.9, C.ink, null),
-  );
-};
 /** A wasp seen from above, head up, centre (0, 0). */
 const wasp = (s = 1) => at(0, 0, s,
   ellipse(-9, -6, 9, 4, 'rgba(220,235,245,0.85)', C.ink, 0.8), ellipse(9, -6, 9, 4, 'rgba(220,235,245,0.85)', C.ink, 0.8),
@@ -548,8 +534,6 @@ const beetle = (onBack = false, s = 1) => at(0, 0, s, onBack
 const puffer = (puffed: boolean, s = 1) => at(0, 0, s, puffed
   ? all(...range(18).map((i) => { const a = (i / 18) * Math.PI * 2; return line(`M${f1(Math.cos(a) * 17)} ${f1(Math.sin(a) * 17)} L${f1(Math.cos(a) * 23)} ${f1(Math.sin(a) * 23)}`, C.ink, 1.4); }), path('M-18 0 L-28 -7 L-26 0 L-28 7 Z', '#c9b46a', C.ink, 1), circle(0, 0, 18, '#e2cf7a', C.ink, 1.3), path('M-14 6 C-6 16 8 16 14 6 C6 10 -6 10 -14 6 Z', '#f4ecd0', null), circle(9, -6, 3, C.white, C.ink, 0.8), circle(10, -6, 1.5, C.ink, null), line('M16 2 l3 0', C.ink, 1.2))
   : all(path('M-14 0 L-22 -5 L-20 0 L-22 5 Z', '#c9b46a', C.ink, 1), path('M-15 0 C-10 -7 8 -8 14 0 C8 6 -10 6 -15 0 Z', '#e2cf7a', C.ink, 1.1), circle(8, -2, 1.8, C.white, C.ink, 0.6), circle(8.6, -2, 0.9, C.ink, null)));
-/** A tiny turtle hatchling seen from above, heading up. */
-const hatchling = (x: number, y: number, a = 0) => rot(x, y, a, 1, ellipse(0, 0, 4, 5, '#5a6a3a', C.ink, 0.8), circle(0, -6.4, 2, '#6a7a4a', C.ink, 0.7), line('M-3.6 -3 l-3 -2 M3.6 -3 l3 -2 M-3 4 l-2 2 M3 4 l2 2', C.ink, 1.1));
 /** A big head of a dog-like animal facing right (close-up); bared = lips drawn back showing teeth; ears back or up. */
 const canineHead = (o: { col?: string; bared?: boolean; growl?: boolean; earsBack?: boolean } = {}) => {
   const c = o.col ?? '#8c8f94';
@@ -610,14 +594,12 @@ const burst = (x: number, y: number, r1: number, r2: number, n = 9, a0 = Math.PI
 const shieldIcon = (x: number, y: number, s = 1, col: string = HL) => at(x, y, s, path('M0 -10 L9 -7 C9 3 5 8 0 11 C-5 8 -9 3 -9 -7 Z', col, C.ink, 1.2));
 const steps = (x: number, y: number) => all(rect(x, y - 30, 26, 30, '#d9c9a4', 1, C.ink, 1.2), rect(x + 26, y - 20, 26, 20, '#e6dabd', 1, C.ink, 1.2), rect(x + 52, y - 10, 26, 10, '#efe7d2', 1, C.ink, 1.2));
 
-const SAND2 = '#ecd9a8';
 const AUTUMN2 = '#e39a3b';
 const leafIcon2 = (x: number, y: number, s = 1) => at(x, y, s, path('M-6 4 C-6 -4 0 -8 7 -7 C8 0 4 6 -4 6 Z', AUTUMN2, C.ink, 1), line('M-5 5 L4 -3', C.ink, 0.8));
 const snowflake = (x: number, y: number, r = 6) => line(range(3).map((i) => { const a = (i / 3) * Math.PI; return `M${f1(x - Math.cos(a) * r)} ${f1(y - Math.sin(a) * r)} L${f1(x + Math.cos(a) * r)} ${f1(y + Math.sin(a) * r)}`; }).join(' '), '#6fa8d6', 2);
 /** A round deciduous tree, trunk foot at (0, 0). */
 const treeT = () => all(rect(-3, -36, 6, 36, BARK, 1, C.ink, 1.1), circle(0, -42, 14, GRASS2, C.ink, 1.2), circle(-9, -34, 8, GRASS2, null), circle(9, -35, 8, GRASS2, null));
 const note2 = (x: number, y: number, col: string = C.navy) => at(x, y, 1, line('M0 6 L0 -6 L5 -8', col, 1.4), ellipse(-1.8, 6, 2.4, 1.8, col, null));
-const pawStep = (x: number, y: number) => at(x, y, 0.8, ellipse(0, 2, 3.4, 2.8, C.dark, null), circle(-3.4, -2.4, 1.3, C.dark, null), circle(-1.2, -4, 1.3, C.dark, null), circle(1.2, -4, 1.3, C.dark, null), circle(3.4, -2.4, 1.3, C.dark, null));
 /** Mirror an already drawn figure around its own origin. */
 const atfS = (k: Svg) => g('scale(-1 1)', k);
 /** Short bubbling marks (black grouse song). */
@@ -665,6 +647,27 @@ const catCurled = () => all(sil([
 /** A child with a big ear (hearing) at the bottom right, looking up. */
 const kidEar = (x: number, y: number) => at(x, y, 1, kid2(), ellipse(5.6, -31, 2, 3, C.skin2, C.ink, 0.8));
 
+
+// ── Round 2 helpers ──────────────────────────────────────────────────
+/** Two orange bars: "paused, not moving". */
+const pauseIcon = (x: number, y: number) => all(circle(x, y, 9, C.white, HL, 2), rect(x - 4, y - 5, 3, 10, HL, 0.6, null), rect(x + 1, y - 5, 3, 10, HL, 0.6, null));
+/** A small flag on a pole, foot at (x, y). */
+const flag = (x: number, y: number, col: string = HL) => all(line(`M${x} ${y} L${x} ${y - 20}`, C.ink, 1.6), path(`M${x} ${y - 20} L${x + 11} ${y - 16} L${x} ${y - 12} Z`, col, C.ink, 1));
+/** A calendar sheet with an icon inside. */
+const calIcon = (x: number, y: number, inner: Svg) => all(rect(x - 9, y - 9, 18, 18, C.white, 2, C.ink, 1.2), rect(x - 9, y - 9, 18, 5, C.red, 1, C.ink, 1), line(`M${x - 5} ${y - 11} l0 4 M${x + 5} ${y - 11} l0 4`, C.ink, 1.4), inner);
+const flowerIcon = (x: number, y: number) => all(circle(x - 2, y + 1, 2, C.pink, null), circle(x + 2, y + 1, 2, C.pink, null), circle(x, y - 1.4, 2, C.pink, null), circle(x, y + 3.4, 2, C.pink, null), circle(x, y + 1, 1.3, C.yellow, null));
+const meat = (x: number, y: number, s = 1) => at(x, y, s, path('M-7 0 C-7 -6 0 -8 5 -5 C9 -2 8 5 2 6 C-3 7 -7 4 -7 0 Z', '#d8735c', C.ink, 1), ellipse(-1, -1, 3, 2, '#f3c9b8', null), line('M5 4 L10 9', '#f2ead8', 2.4), circle(10.5, 9.5, 1.6, '#f2ead8', C.ink, 0.6));
+/** A garden spider seen from above, centre (0, 0). */
+const spider = (s = 1, col = '#6b4a2b') => at(0, 0, s,
+  line('M-2 -2 C-8 -8 -12 -8 -14 -14 M-2 -1 C-9 -3 -13 -2 -16 -5 M-2 1 C-9 3 -13 4 -16 8 M-2 2 C-7 8 -10 10 -11 15 M2 -2 C8 -8 12 -8 14 -14 M2 -1 C9 -3 13 -2 16 -5 M2 1 C9 3 13 4 16 8 M2 2 C7 8 10 10 11 15', C.ink, 1.2),
+  circle(0, -3, 3, col, C.ink, 0.9), ellipse(0, 5, 5, 6.4, col, C.ink, 1), line('M0 1 L0 9 M-2.4 5 L2.4 5', '#f2e2c0', 1.1));
+/** An orb web: radial threads and a spiral, centre (cx, cy). */
+const web = (cx: number, cy: number, r: number) => all(
+  line(range(12).map((i) => { const a = (i / 12) * Math.PI * 2; return `M${cx} ${cy} L${f1(cx + Math.cos(a) * r)} ${f1(cy + Math.sin(a) * r)}`; }).join(' '), '#8d949c', 0.9),
+  ...range(6).map((k) => { const rr = r * (0.25 + k * 0.14); return path(range(13).map((i) => { const a = (i / 12) * Math.PI * 2; return `${i ? 'L' : 'M'}${f1(cx + Math.cos(a) * rr)} ${f1(cy + Math.sin(a) * rr)}`; }).join(' '), 'none', '#8d949c', 0.9); }));
+/** A tiny walking reindeer silhouette for crowds. */
+const herdDot = (x: number, y: number, s = 1, col: string = '#6b5a48') => at(x, y, s, ellipse(0, -5, 5, 2.6, col, null), line('M-3.6 -4 l-0.6 4 M3.4 -4 l0.6 4', col, 1.1), line('M4 -6 l2.6 -3', col, 1.6), line('M6.4 -9 l-1 -3 M6.4 -9 l1.6 -2.6', col, 0.8));
+
 // ── Motifs ───────────────────────────────────────────────────────────
 export const ANIMAL_BEHAVIOUR_MOTIFS: Record<string, Svg> = {
   // 2761 Jakt och födosök
@@ -691,8 +694,9 @@ export const ANIMAL_BEHAVIOUR_MOTIFS: Record<string, Svg> = {
   'beteende.skyddsfärg': all(bg('#e4eef6'), snowField(80), pine(18, 82, 1.2), pine(102, 82, 1.1), at(60, 100, 1.1, hare({ white: true })), dashLoop(60, 76, 26, 26)),
   'beteende.gömställe': all(bg(), field(90), rockShape(64, 100, 60, 28), path('M52 100 C52 92 66 92 66 100 Z', '#3a2a1e', null),
     at(66, 99, 1.1, mouse()), oval(62, 94, 18, 10), at(30, 26, 1.4, flyer(0, 0, 1.4)), bush(102, 100, 0.8)),
-  'beteende.orörlig': all(bg(), field(88), tallGrass(104, 6, 116, 12), at(54, 102, 1.4, fawnLying()), ring(58, 90, 22),
-    greyPanel(78, 8, 38, 30, at(98, 34, 0.4, roeDeer({ grey: true, antlers: false })), speedL(86, 22, 3, 6, GREY2))),
+  'beteende.orörlig': all(bg(), field(66), panel(4, 6, 30, 30, rect(5, 26, 28, 9, GRASS, 0, null), at(19, 32, 0.4, hare())), panel(36, 6, 30, 30, rect(37, 26, 28, 9, GRASS, 0, null), at(51, 32, 0.4, hare())), panel(68, 6, 30, 30, rect(69, 26, 28, 9, GRASS, 0, null), at(83, 32, 0.4, hare())),
+    rect(3, 5, 96, 32, 'none', 3, HL, 2), pauseIcon(108, 21), at(32, 104, 1.1, hare()), ring(33, 84, 22),
+    greyPanel(66, 62, 48, 44, line('M68 96 L112 96', GREY2, 1.4), rot(94, 96, 14, 0.55, hare({ grey: true })), speedL(80, 76, 3, 9, GREY2))),
   'beteende.byta-färg': all(panel(6, 20, 44, 60, rect(7, 62, 42, 17, GRASS, 0, null), at(28, 72, 0.7, hare())), panel(70, 20, 44, 60, rect(71, 62, 42, 17, SNOW, 0, null), at(92, 72, 0.7, hare({ white: true }))),
     arrow(52, 50, 68, 50), leafIcon2(18, 30), snowflake(104, 30)),
   'beteende.varningsfärg': all(bg(), field(96), at(60, 52, 1.6, wasp()), oval(60, 64, 22, 30), atf(22, 100, 1.4, song(RODHAKE)),
@@ -708,9 +712,10 @@ export const ANIMAL_BEHAVIOUR_MOTIFS: Record<string, Svg> = {
   // 2763 Revir och territorium
   'beteende.revir': all(bg(), field(76), dashLoop(54, 92, 46, 14), at(54, 86, 1.1, treeT()), at(56, 46, 1.2, song({ ...KOLTRAST, open: true })), note2(74, 36),
     at(106, 104, 0.9, song(KOLTRAST)), cross(106, 82, 5)),
-  'beteende.hemområde': all(rect(4, 4, 112, 108, '#cfe3b4', 3, null), pine(20, 30, 0.7), pine(96, 96, 0.7), rockShape(94, 34, 14, 8), ellipse(30, 92, 10, 5, '#7db7df', C.ink, 0.8),
-    dashPath('M60 60 C40 40 30 24 50 18 C74 12 100 22 98 46 C96 70 108 86 84 98 C62 108 34 104 30 84 C28 70 50 70 60 60', '#8a6a4a', 2),
-    at(60, 66, 0.55, fox()), ellipse(60, 70, 6, 2.6, '#3a2a1e', null), pawStep(50, 18), pawStep(98, 46), pawStep(84, 98)),
+  'beteende.hemområde': all(rect(4, 4, 112, 108, '#cfe3b4', 3, null), pine(12, 30, 0.6), pine(22, 26, 0.5), pine(108, 104, 0.6),
+    ellipse(92, 28, 18, 10, '#7db7df', C.ink, 1), ...[[16, 92], [26, 100], [36, 90], [22, 84]].map(([x, y]) => tuft(x!, y!, 7)), ellipse(86, 90, 12, 5, '#c9b48a', C.ink, 0.8),
+    dashPath('M30 88 C36 60 60 40 80 34'), arrow(74, 36, 82, 33), dashPath('M94 40 C100 56 98 72 90 84'), arrow(92, 80, 89, 86), dashPath('M76 92 C60 100 46 98 36 94'), arrow(42, 96, 34, 93),
+    at(52, 62, 0.28, moose()), at(70, 104, 0.22, moose()), at(30, 50, 0.22, moose())),
   'beteende.markera-revir': all(bg(), field(84), dashLoop(60, 98, 50, 10), ...[[14, 98], [36, 89], [84, 89], [106, 98], [60, 108], [30, 106], [90, 106]].map(([x, y]) => circle(x!, y!, 2.6, SCENT, C.ink, 0.6)),
     at(56, 92, 0.8, wolf()), scent(30, 84, 2, -1), scent(90, 84, 2, 1), cross(108, 70, 5), at(110, 84, 0.3, wolf({ grey: true }))),
   'beteende.doftmärka': all(bg(), field(92), pine(14, 94, 1.1), stump(96, 102, 16, 16), scent(92, 82, 2, -1), scent(100, 80, 2, 1), scent(96, 72, 2, 1), ring(96, 92, 12),
@@ -720,8 +725,8 @@ export const ANIMAL_BEHAVIOUR_MOTIFS: Record<string, Svg> = {
   'beteende.trumning': all(bg(), dryBranch(4, 92, 70, 40), dryBranch(40, 66, 60, 90), woodpecker(56, 56, 1.6, true), speedL(78, 30, 3, 6, C.ink), arcs(36, 44, 1, -1), arcs(84, 62, 1, 1), ring(46, 50, 9)),
   'beteende.revirsång': all(bg(), field(90), at(58, 92, 1.4, treeT()), at(60, 38, 1.4, song({ ...BOFINK, open: true })), note2(82, 26), note2(94, 38), note2(78, 12),
     dashLoop(58, 100, 50, 8)),
-  'beteende.revirhävdande': all(bg(), field(96), at(36, 98, 2.2, song({ ...RODHAKE, open: true })), jag(66, 54, 1.4), atf(98, 98, 1.6, song(RODHAKE)), arrow(62, 70, 80, 70), oval(42, 78, 24, 22),
-    greyPanel(70, 8, 44, 30, line('M74 30 L110 30', GREY2, 2), at(84, 30, 0.55, song({ body: GREY, head: GREY, wing: GREY2, tail: GREY2 })), at(100, 30, 0.55, song({ body: GREY, head: GREY, wing: GREY2, tail: GREY2 })))),
+  'beteende.revirhävdande': all(bg(), field(80), dashLoop(48, 96, 42, 13), at(48, 88, 1, treeT()), at(50, 52, 1.4, song({ ...RODHAKE, open: true })), note2(72, 30), note2(80, 42), ring(52, 38, 12),
+    flag(90, 96), flag(8, 98), atf(110, 100, 1, song(RODHAKE)), arrow(100, 80, 116, 80, C.grey, 2.2)),
   'beteende.inkräktare': all(bg(), field(80), dashLoop(46, 96, 40, 12), at(40, 86, 0.9, treeT()), at(40, 52, 1, song(KOLTRAST)), at(98, 96, 1.2, song(KOLTRAST)), arrow(110, 80, 92, 80, C.grey, 2.2), ring(98, 86, 14)),
   'beteende.hotfull': all(bg(WATER), rect(4, 4, 112, 50, SKY, 0, null), at(52, 90, 1.7, swan({ wings: true, neck: 'down', knob: true })), oval(54, 66, 40, 30),
     greyPanel(84, 8, 30, 30, at(98, 32, 0.45, swan({ col: GREY, bill: GREY2 })))),
@@ -741,8 +746,10 @@ export const ANIMAL_BEHAVIOUR_MOTIFS: Record<string, Svg> = {
     rings2(56, 62), rings2(66, 62, -1), at(62, 40, 1, peahenGrouse())),
   'beteende.rival': all(bg(), field(96), pine(60, 98, 0.9), at(30, 104, 0.6, redDeer()), atf(92, 104, 0.6, redDeer()), ring(92, 66, 22), boltS(60, 50)),
   'beteende.bröla': all(bg(), field(96), pine(12, 98, 1), pine(106, 98, 0.8), rot(46, 104, -20, 0.62, redDeer()), arcs(80, 40, 1.2, 1)),
-  'beteende.monogam': all(bg(WATER), rect(4, 4, 112, 40, SKY, 0, null), at(30, 84, 1.1, swan({ knob: true })), atf(90, 84, 1.1, swan({ knob: true })), dashLoop(60, 70, 50, 24),
-    greyPanel(76, 6, 38, 28, at(84, 26, 0.3, swan({ col: GREY, bill: GREY2 })), at(96, 22, 0.25, swan({ col: GREY, bill: GREY2 })), at(104, 30, 0.25, swan({ col: GREY, bill: GREY2 })), at(92, 32, 0.25, swan({ col: GREY, bill: GREY2 })))),
+  'beteende.monogam': all(bg(), ...[0, 1, 2].map((i) => all(panel(4 + i * 38, 6, 36, 44, rect(5 + i * 38, 36, 34, 13, WATER, 0, null), at(14 + i * 38, 40, 0.34, swan({ knob: true })), atf(32 + i * 38, 40, 0.34, swan({ knob: true })),
+      ...range(i + 1).map((k) => ellipse(18 + i * 38 + k * 5, 45, 2, 1.4, '#a7a9ac', C.ink, 0.5))), num2(22 + i * 38, 60, String(i + 1)))),
+    `<text x="30" y="104" font-family="system-ui,sans-serif" font-weight="800" font-size="40" text-anchor="middle" fill="${HL}">1</text>`, dashLoop(30, 90, 20, 18),
+    greyPanel(62, 66, 52, 42, at(76, 98, 0.32, swan({ col: GREY, bill: GREY2, knob: true })), at(92, 88, 0.26, swan({ col: GREY, bill: GREY2 })), at(104, 98, 0.26, swan({ col: GREY, bill: GREY2 })), at(96, 106, 0.26, swan({ col: GREY, bill: GREY2 })))),
 
   // 2765 Sociala flockar
   'beteende.flock': all(bg('#dbe8f2'), snowField(80), at(20, 92, 0.42, wolf()), at(44, 98, 0.42, wolf()), at(66, 92, 0.42, wolf()), at(88, 100, 0.42, wolf()), at(100, 88, 0.42, wolf())),
@@ -753,24 +760,24 @@ export const ANIMAL_BEHAVIOUR_MOTIFS: Record<string, Svg> = {
     at(34, 104, 0.3, reindeer()), at(60, 106, 0.3, reindeer()), at(86, 104, 0.3, reindeer())),
   'beteende.rangordning.2': all(bg(), steps(18, 104), at(30, 74, 0.34, wolf()), at(56, 84, 0.3, wolf()), at(82, 94, 0.26, wolf()), num2(31, 100, '1'), num2(57, 100, '2'), num2(83, 102, '3')),
   'beteende.ledare.3': all(bg('#dbe8f2'), snowField(86), at(96, 96, 0.4, reindeer()), at(70, 98, 0.36, reindeer()), at(46, 100, 0.36, reindeer()), at(22, 102, 0.36, reindeer()), ring(100, 76, 18), arrow(110, 104, 116, 104)),
-  'beteende.dominant': all(bg(), field(96), at(40, 104, 0.9, wolfTall()), at(84, 106, 0.55, wolfLow()), ring(46, 72, 28),
-    greyPanel(76, 6, 38, 28, at(88, 28, 0.28, wolf({ grey: true })), at(104, 28, 0.28, wolf({ grey: true })))),
+  'beteende.dominant': all(bg(), field(90), meat(56, 100, 1.3), at(42, 104, 0.85, wolfTall()), ring(46, 72, 28), at(96, 108, 0.42, wolfLow()), at(86, 96, 0.36, wolfLow()),
+    greyPanel(78, 6, 36, 30, meat(96, 30, 0.6), at(86, 32, 0.24, wolf({ grey: true })), atf(106, 32, 0.24, wolf({ grey: true })))),
   'beteende.flockjakt': all(bg('#dbe8f2'), snowField(88), at(52, 98, 0.55, moose()), at(14, 104, 0.32, wolf()), atf(108, 104, 0.32, wolf()), at(30, 82, 0.28, wolf()), atf(100, 80, 0.28, wolf()),
     arrow(26, 92, 36, 92), arrow(98, 92, 88, 92), arrow(40, 76, 46, 80), arrow(90, 74, 82, 78)),
   'beteende.hålla-vakt': all(bg(), field(84), at(56, 100, 1.3, goose(true, true)), at(22, 104, 0.9, goose()), at(86, 98, 0.9, goose()), at(96, 110, 0.9, goose()), line('M84 48 l7 -3 M85 54 l8 0', C.ink, 1.4)),
 
   // 2766 Migration och vandring
-  'beteende.migration.2': all(mapEA2(), line('M60 24 C80 40 82 70 66 96', HL, 2.6), arrow(68, 92, 64, 100), line('M52 96 C36 76 38 44 52 26', C.navy, 2.6), arrow(50, 30, 54, 22),
-    at(84, 56, 0.9, flySide({ body: '#a9b1b9', wing: '#a9b1b9', head: BLACK })), at(28, 64, 0.5, fishSide(SALMON)), at(96, 24, 0.18, reindeer())),
+  'beteende.migration.2': all(mapEA2(), line('M78 26 C100 44 96 76 76 98', HL, 3), arrow(80, 94, 74, 102), line('M48 96 C24 78 26 44 46 28', C.green, 3), arrow(44, 32, 50, 24),
+    ...[[88, 40], [93, 48], [96, 58], [94, 68], [90, 78], [84, 88]].map(([x, y]) => herdDot(x!, y!, 0.8)), ...[[34, 86], [30, 76], [28, 64], [30, 52], [36, 40]].map(([x, y]) => herdDot(x!, y!, 0.8)),
+    calIcon(108, 70, leafIcon2(108, 72, 0.7)), calIcon(14, 60, flowerIcon(14, 61))),
   'beteende.migrera': all(bg(), mountains(80), field(80, '#b8c98a'), at(30, 104, 0.3, reindeer()), at(52, 100, 0.3, reindeer()), at(74, 96, 0.3, reindeer()), at(96, 92, 0.3, reindeer()), arrow(20, 108, 108, 84)),
   'beteende.lekvandring': all(bg(), path('M4 40 L60 40 L60 112 L4 112 Z', WATER, null), path('M60 40 L60 112 L116 112 L116 84 L76 84 C70 84 64 70 60 40 Z', '#5c9fd0', null),
     line('M62 50 l2 30 M66 60 l2 20', C.white, 1.4), rect(4, 34, 56, 8, ROCK, 0, C.ink, 1), fishAt(64, 30, 0.9, SALMON, true), rot(96, 96, -10, 0.8, fishSide(SALMON)),
     egg2(20, 54), egg2(26, 56), egg2(32, 54), egg2(24, 58), arrow(108, 74, 70, 40), ring(26, 56, 10)),
   'beteende.återvända': all(bg(), field(92), barn(30, 92, 1.4), dashPath('M44 52 C60 20 100 16 108 40 C114 60 90 70 70 64'), arrow(74, 66, 56, 62), at(96, 26, 1, flySide({ body: '#2a3560', wing: '#2a3560', fork: true, streamers: true, throat: '#c0462e', belly: WHITE })), ring(30, 74, 22)),
   'beteende.vandringshinder': all(bg(), water(52), dam(70, 30), rot(54, 80, -30, 0.9, fishSide(SALMON)), arrow(28, 92, 50, 88, C.grey, 2.4), cross(70, 22, 7)),
-  'beteende.instinkt': all(bg(), rect(4, 4, 112, 40, WATER, 0, null), line('M4 44 C30 40 60 48 116 42', C.white, 1.6), rect(4, 46, 112, 66, SAND2, 0, null), ellipse(60, 100, 20, 7, '#c9a868', C.ink, 1),
-    hatchling(50, 92, -10), hatchling(62, 84, 0), hatchling(74, 90, 10), hatchling(40, 74, -12), hatchling(80, 66, 8), hatchling(58, 60, 0),
-    arrow(30, 70, 30, 48), arrow(90, 70, 90, 48)),
+  'beteende.instinkt': all(bg(), line('M8 8 L16 112 M112 8 L104 112', BARK, 3), web(60, 54, 40), line('M20 14 L60 54 M100 14 L60 54', '#8d949c', 0.9), at(60, 54, 1.4, spider()), ring(60, 56, 16),
+    dashPath('M60 34 C40 20 28 40 34 56'), arrow(34, 52, 30, 62), greyPanel(78, 84, 34, 24, at(95, 96, 0.5, spider(1, GREY2))), cross(95, 96, 8)),
 
   // 2767 Kommunikation mellan djur
   'beteende.kommunicera': all(bg(), field(96), at(24, 104, 0.55, wolf()), atf(96, 104, 0.55, wolf()), arcs(50, 70, 0.8, 1), arcs(70, 70, 0.8, -1), scent(46, 92, 2, 1), scent(74, 96, 2, -1), arrow(46, 54, 72, 54), arrow(74, 46, 48, 46)),
