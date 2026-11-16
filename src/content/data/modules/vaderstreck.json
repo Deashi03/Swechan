@@ -1,0 +1,179 @@
+{
+ "id": "m.vaderstreck",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Väderstreck",
+ "titleJa": "{方角|ほうがく}",
+ "descriptionSv": "Väderstreck: väderstreck, kompass, magnetisk, kompassnål, kompassros, nordost, nordväst, sydost, sydväst, nordlig, sydlig, österut, västerut, orientera sig, Polstjärnan, söderläge och vindflöjel.",
+ "descriptionJa": "{方角|ほうがく}：{方角|ほうがく}、コンパス、{磁性|じせい}のある、{方位磁針|ほういじしん}の{針|はり}、{方位図|ほういず}、{北東|ほくとう}、{北西|ほくせい}、{南東|なんとう}、{南西|なんせい}、{北|きた}の、{南|みなみ}の、{東|ひがし}へ、{西|にし}へ、{方角|ほうがく}をつかむ、{北極星|ほっきょくせい}、{南向|みなみむ}き、{風見|かざみ}。",
+ "categoryId": "R05-A06-T01",
+ "tags": [
+  "natur",
+  "geografi",
+  "kartor"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.medborgarnas-miljoval"
+ ],
+ "related": [],
+ "recommendedOrder": 3001,
+ "words": [
+  {
+   "senseId": "s.väderstreck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kompassnål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompassros.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nordost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nordväst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sydost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sydväst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nordlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sydlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.österut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.västerut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orientera-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Polstjärnan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.söderläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindflöjel.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Utan mobil i skogen",
+  "paragraphs": [
+   "Aiko kommer från Japan och bor i Umeå. En lördag i september går hon på en kurs i skogen. Ledaren heter Lars. – I dag ska ni lära er hur man orienterar sig utan mobil, säger han. Alla får en karta och en kompass.",
+   "Först visar Lars hur kompassen fungerar. Kompassnålen är magnetisk, och den röda delen pekar alltid mot norr. På kartan finns en kompassros som visar alla väderstreck. – Norr är alltid uppåt på kartan, säger Lars.",
+   "Gruppen ska gå till en sjö som ligger nordost om parkeringen. Först går de österut på en liten väg. Vid ett stort hus står en gammal vindflöjel på taket. – Vinden är nordlig i dag, säger Lars. Det blir en kall dag. I går var vinden sydlig och mycket varmare.",
+   "Vid sjön äter de lunch. Lars frågar var de andra sjöarna på kartan ligger. – En ligger nordväst om oss, och två ligger sydost, säger Aiko. Efter lunch går de västerut och sedan mot sydväst, mot solen som står lågt på himlen. Aiko tänker på sin lägenhet i stan. Balkongen har söderläge, så där är det varmt och ljust hela eftermiddagen.",
+   "När det blir mörkt frågar Lars: – Hur hittar man norr på natten, utan kompass? Aiko vet svaret. – Man letar efter Polstjärnan, säger hon. Lars ler. – Precis. Och om ni ser solen gå ner, vet ni var väster är."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad får alla i gruppen av Lars?",
+    "options": [
+     "En ny mobil",
+     "En vindflöjel",
+     "En karta och en kompass",
+     "En lampa och en karta"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Alla får en karta och en kompass.",
+    "explanationJa": "{全員|ぜんいん}が{地図|ちず}とコンパスをもらいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Åt vilket väderstreck pekar den röda delen av kompassnålen?",
+    "options": [
+     "Söder",
+     "Norr",
+     "Öster",
+     "Väster"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Kompassnålen är magnetisk, och den röda delen pekar alltid mot norr.",
+    "explanationJa": "{針|はり}の{赤|あか}い{方|ほう}はいつも{北|きた}を{指|さ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att vinden är nordlig?",
+    "options": [
+     "Att den blåser mot norr",
+     "Att den är varm",
+     "Att den kommer från havet",
+     "Att den kommer från norr"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Vinden är nordlig i dag, säger Lars. Det blir en kall dag.",
+    "explanationJa": "「nordlig vind」は{北|きた}から{吹|ふ}く{風|かぜ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Aikos balkong får mycket sol.",
+    "correct": true,
+    "explanationSv": "Balkongen har söderläge, så där är det varmt och ljust hela eftermiddagen.",
+    "explanationJa": "{南向|みなみむ}きなので、{日当|ひあ}たりがいいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Lars säger att man inte kan hitta norr utan kompass.",
+    "correct": false,
+    "explanationSv": "– Man letar efter Polstjärnan, säger hon. Lars ler. – Precis.",
+    "explanationJa": "{北極星|ほっきょくせい}を{使|つか}えば、コンパスがなくても{北|きた}がわかります。"
+   }
+  ],
+  "factSources": [
+   "Kompassnålens norra ände pekar mot den magnetiska nordpolen, som inte ligger exakt vid den geografiska nordpolen; skillnaden är liten i Sverige (allmän geografisk kunskap).",
+   "Polstjärnan står mindre än en grad från himlens nordpol och syns inte från södra halvklotet (allmän astronomisk kunskap)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om väderstreck och om hur man hittar rätt.",
+  "discussionPoints": [
+   "Hur hittar du rätt i en stad som du inte känner?",
+   "Vet du åt vilket väderstreck ditt fönster ligger?",
+   "Har du någon gång använt en kompass?",
+   "Vilket väderstreck vill du helst att din balkong ska ha, och varför?"
+  ]
+ }
+}
