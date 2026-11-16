@@ -2,7 +2,7 @@
 
 ## Osläppt – 2026-11-16: språkgranskning av *Människan & hälsa*
 
-Alla 252 moduler i *Människan & hälsa* (R02) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. Alla ordposter som modulerna använder och som inte redan lästes med *Vardag & hem* (3 698 betydelser) är lästa: japansk glosa, svensk definition, exempel, svensk förklaring, användningsnot och böjning. 84 moduler i R02, 3 moduler utanför R02 (japansk stavning av Johan i två, böjningen av *sms* i en) och 21 ordlistefiler är ändrade. Versionen och service workern är inte höjda.
+Alla 252 moduler i *Människan & hälsa* (R02) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. Alla ordposter som modulerna använder och som inte redan lästes med *Vardag & hem* (3 698 betydelser) är lästa: japansk glosa, svensk definition, exempel, svensk förklaring, användningsnot och böjning. De japanska definitionerna, förklaringarna och användningsnoterna är jämförda med svenskan mening för mening. 91 moduler i R02, 3 moduler utanför R02 (japansk stavning av Johan i två, böjningen av *sms* i en) och 29 ordlistefiler är ändrade. Versionen och service workern är inte höjda.
 
 ### Sakfel och logiska fel
 - *Biverkningar och varningar*: texten sa att trafikfarliga läkemedel har en röd varningstriangel på förpackningen. Den togs bort 2005. Nu säger mamma att triangeln fanns förr, och frågan, ordposterna *varningstriangel* och *trafikfarlig* är ändrade på samma sätt.
@@ -35,8 +35,12 @@ Alla 252 moduler i *Människan & hälsa* (R02) är genomlästa: lästexter, frå
 ### Faktakällor
 - 62 moduler i *Kroppen & sinnena* och *Hälsa & sjukvård* hade `Vardagsscen utan faktapåståenden.` fast texten innehåller medicinska fakta eller regler. De har nu faktakällor (1177 Vårdguiden, Folkhälsomyndigheten, Socialstyrelsen, Läkemedelsverket, Livsmedelsverket, HLR-rådet, SOS Alarm, patientlagen m.fl.). Källorna anges på nivån myndighet och ämne. Fyra uppgifter är kontrollerade mot källan i den här sessionen: varningstriangeln (2005), högkostnadsskyddet (1 450 kronor 2026), cellprov (23–70 år) och riskbruk (10 standardglas).
 
+### Japanska definitioner och förklaringar
+- Jämförelsen med svenskan gav tio rättelser i nio ordlistefiler. Sakfel: *blåskatarr* (förklaringen sa att man får det av att frysa eller sitta i våta badkläder; nu står det att man trodde så förr och att orsaken är bakterier, på båda språken).
+- Japanskan sa något annat än svenskan: *marschera* (”som soldater” → i ett band), *halta* (”går oregelbundet” → står nästan inte på det ena benet), *frustration* (”besvikelse” → trötthet), *långväxt* (”stor till kroppen” struket), *sommarjobb* (”ofta” saknades), *svarslös* (”oväntad fråga” → konstig), *monoton* (”blir sömniga” → trötta), *hytta med näven* (”tecknad film” → film), *skeptisk* (onaturligt ord för erbjudande).
+- En automatisk kontroll hittade ingen kanji utan furigana i R02.
+
 ### Inte gjort
-- De japanska definitionerna, förklaringarna och användningsnoterna i R02 är inte lästa mening för mening mot svenskan (det gjordes för R01). Japanskan är läst för glosor, modulernas förklaringar och allt som ändrades. En automatisk kontroll hittade ingen kanji utan furigana i R02.
 - Personernas roller växlar mellan modulerna i R02 (Aiko och Leo är barn i vissa moduler och vuxna i andra; Johan, Karin, Kenji och Sara har olika släktskap). Det är inte ändrat.
 - Bilden till *varningstriangel* är inte kontrollerad mot den nya definitionen (bilder ingick inte).
 - `npm run typecheck`, `npm test`, bygget och e2e har inte körts (inga paket installerade, ingen nätåtkomst). `validateContent` och `checkVocabulary` har körts över allt innehåll utan fel, och modulindexet är omgenererat.
