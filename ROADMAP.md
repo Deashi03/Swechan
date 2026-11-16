@@ -156,6 +156,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.44 – Djurvärlden (klar)
 - 42 nya moduler i Natur & geografi → Djurvärlden med 506 nya ordbilder. 14 ord saknar bild efter två blindtestomgångar.
 
+## v0.45 – Växter & svampar (klar)
+- 42 nya moduler i Natur & geografi → Växter & svampar med 462 nya ordbilder. 13 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

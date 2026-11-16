@@ -213,13 +213,13 @@ try {
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), Historiska epoker (0.36) and
   // Militärhistoria (0.37), Religion & idéhistoria (0.38), Filosofi & etik (0.39), Arkeologi & kulturarv (0.40) and
   // Civilisationer & världsdelars historia (0.41) are fully published, so all of Historia & humaniora is done; in Natur &
-  // geografi, Landskap & geologi (0.42), Väder & klimat (0.43) and Djurvärlden (0.44) are published, so the planned entry is
-  // Växter & svampar → Träd & buskar → Svenska lövträd.
+  // geografi, Landskap & geologi (0.42), Väder & klimat (0.43) and Djurvärlden (0.44) and Växter & svampar (0.45) are
+  // published, so the planned entry is Ekologi & miljö → Ekosystemets grunder → Art och population.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Natur & geografi/ }).first().click();
-  await page.getByRole('link', { name: /Växter & svampar/ }).first().click();
-  await page.getByRole('link', { name: /Träd & buskar/ }).first().click();
-  await page.getByRole('link', { name: /Svenska lövträd/ }).first().click();
+  await page.getByRole('link', { name: /Ekologi & miljö/ }).first().click();
+  await page.getByRole('link', { name: /Ekosystemets grunder/ }).first().click();
+  await page.getByRole('link', { name: /Art och population/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);

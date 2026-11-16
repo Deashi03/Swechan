@@ -1,0 +1,180 @@
+{
+ "id": "m.svampodling",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Svampodling",
+ "titleJa": "きのこ{栽培|さいばい}",
+ "descriptionSv": "Svampodling: svampodling, odla, champinjon, ostronskivling, shiitakesvamp, substrat, halm, sågspån, kaffesump, trästock, borra, odlingspåse, sterilisera, luftfuktighet, fukta, mögla och skörda.",
+ "descriptionJa": "きのこ{栽培|さいばい}：きのこ{栽培|さいばい}、{栽培|さいばい}する、マッシュルーム、ヒラタケ、シイタケ、{培地|ばいち}、{藁|わら}、おがくず、コーヒーかす、{丸太|まるた}、{穴|あな}をあける、{栽培|さいばい}{袋|ぶくろ}、{殺菌|さっきん}する、{湿度|しつど}、{湿|しめ}らせる、カビが{生|は}える、{収穫|しゅうかく}する。",
+ "categoryId": "R05-A04-T04",
+ "tags": [
+  "natur",
+  "svampar"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.nedbrytare-i-naturen"
+ ],
+ "related": [],
+ "recommendedOrder": 2836,
+ "words": [
+  {
+   "senseId": "s.svampodling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.odla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.champinjon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kaffesump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sågspån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ostronskivling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.shiitakesvamp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.substrat.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trästock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.odlingspåse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sterilisera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.luftfuktighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fukta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mögla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skörda.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Svamp i källaren",
+  "paragraphs": [
+   "Kenji kommer från Japan och bor nu i Västerås. Han saknar japansk mat, och han har börjat med svampodling i källaren. – Det är lättare än man tror att odla svamp, säger han.",
+   "Champinjoner köper de flesta i affären. De odlas på kompost. Kenji odlar i stället ostronskivlingar och shiitakesvamp. Ostronskivlingar växer bra på halm eller kaffesump. Han får kaffesump gratis från ett kafé i närheten.",
+   "Shiitakesvampen odlar han på två sätt: i odlingspåsar med sågspån och på en trästock av ek. I stocken borrade han hål och satte in mycel. Substratet måste man ofta sterilisera först, annars kan andra svampar växa där.",
+   "Svamparna behöver hög luftfuktighet. Kenji fuktar dem med vatten varje morgon och kväll. Men det får inte vara för blött, för då kan substratet mögla.",
+   "Efter två eller tre veckor kan han skörda de första ostronskivlingarna. Shiitakesvampen på stocken tar mycket längre tid, ibland ett år. – Men det är värt att vänta, säger Kenji och ler."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var odlar Kenji svamp?",
+    "options": [
+     "I trädgården",
+     "I källaren",
+     "På balkongen",
+     "I skogen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han saknar japansk mat, och han har börjat med svampodling i källaren.",
+    "explanationJa": "{地下室|ちかしつ}で{栽培|さいばい}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var får Kenji kaffesump ifrån?",
+    "options": [
+     "Från ett kafé",
+     "Från affären",
+     "Från sin kollega",
+     "Från Japan"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han får kaffesump gratis från ett kafé i närheten.",
+    "explanationJa": "{近|ちか}くのカフェからもらっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför steriliserar man ofta substratet?",
+    "options": [
+     "För att svampen ska bli större",
+     "Annars kan andra svampar växa där",
+     "För att det ska lukta gott",
+     "För att det ska bli torrt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Substratet måste man ofta sterilisera först, annars kan andra svampar växa där.",
+    "explanationJa": "{他|ほか}の{菌|きん}が{育|そだ}たないようにするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Svamparna mår bra av att vara mycket blöta.",
+    "correct": false,
+    "explanationSv": "Men det får inte vara för blött, för då kan substratet mögla.",
+    "explanationJa": "{水|みず}が{多|おお}すぎると{培地|ばいち}にカビが{生|は}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Shiitakesvampar på stock växer snabbare än ostronskivlingar.",
+    "correct": false,
+    "explanationSv": "Shiitakesvampen på stocken tar mycket längre tid, ibland ett år.",
+    "explanationJa": "{丸太|まるた}のシイタケのほうがずっと{時間|じかん}がかかります。"
+   }
+  ],
+  "factSources": [
+   "Champinjoner odlas kommersiellt på kompost (ofta baserad på halm och hästgödsel).",
+   "Ostronskivling kan odlas på halm, kaffesump och trä; de första fruktkropparna kommer ofta efter 2–4 veckor.",
+   "Shiitake odlas på stockar av lövträd (t.ex. ek) eller på block av sågspån; på stock kan det ta 6–12 månader innan den första skörden.",
+   "Kenji är påhittad."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att odla svamp hemma.",
+  "discussionPoints": [
+   "Skulle du vilja odla svamp hemma? Vilken svamp?",
+   "Vilka svampar odlar man i Japan?",
+   "Vad kan man göra med kaffesump och andra rester?",
+   "Vad är svårt med att odla något själv?"
+  ]
+ }
+}
