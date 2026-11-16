@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.45.0 (släppt 2026-11-16) · **Senast uppdaterad:** 2026-11-16 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.46.0 (släppt 2026-11-16) · **Senast uppdaterad:** 2026-11-16 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 181 publicerade moduler. 1 176 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) och överämnena *Landskap & geologi* (R05-A01, 0.42), *Väder & klimat* (R05-A02, 0.43), *Djurvärlden* (R05-A03, 0.44) och *Växter & svampar* (R05-A04, 0.45) i *Natur & geografi*. De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 223 publicerade moduler. 1 218 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) och överämnena *Landskap & geologi* (R05-A01, 0.42), *Väder & klimat* (R05-A02, 0.43), *Djurvärlden* (R05-A03, 0.44), *Växter & svampar* (R05-A04, 0.45) och *Ekologi & miljö* (R05-A05, 0.46) i *Natur & geografi*. De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Ekologi & miljö* (R05-A05) i *Natur & geografi*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Världsgeografi* (R05-A06), det sista i *Natur & geografi*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 14 079 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 14 351 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Ekologi & miljö* (R05-A05) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Världsgeografi* (R05-A06) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -167,6 +167,13 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Växters liv: `s.fosfor.1`, `s.förökning.1`, `s.avge.1`
   - Trädgård & odling: `s.hålla-sig.1`
   - Förväxlingarna gällde mest närliggande ord: *frodas/tillväxt*, *släkte/växtfamilj/art*, *indikatorart/skägglav/luftförorening*, *förväxlingsrisk/förväxla*, *livsfarlig/dödlig/giftig*, *murken/röta/förmultna*, *vid minsta tvekan/ta det säkra före det osäkra*, *fosfor/växtnäring/kalium*, *förökning/föröka sig/fortplantning*, *avge/avdunsta* och *hålla sig/förvara/lagra*. *livsfarlig* och *dödlig* är markerade som synonymer; *dödlig* (.2) har bild.
+- **Från 0.46 (43 ord):**
+  - Ekosystemets grunder: `s.talrik.1`, `s.förekomma.1`, `s.rubba.1`, `s.samexistera.1`
+  - Biologisk mångfald: `s.artfattig.1`, `s.artrikedom.1`, `s.ärva.2`, `s.genetisk.1`, `s.nära-hotad.1`, `s.hotad.1`, `s.dö-ut.1`, `s.utrota.1`, `s.främmande-art.1`, `s.invasiv.1`, `s.inhemsk.1`, `s.naturvård.1`, `s.naturhänsyn.1`, `s.återställa.1`
+  - Föroreningar & avfall: `s.förorenad.1`, `s.nedbrytbar.1`, `s.materialåtervinning.1`
+  - Hållbar resursanvändning: `s.bioenergi.1`, `s.ta-slut.1`, `s.outtömlig.1`, `s.knapphet.1`, `s.klimatavtryck.1`, `s.livscykel.2`
+  - Miljöpolitik & samhälle: `s.miljökvalitetsmål.1`, `s.indikator.1`, `s.föreläggande.1`, `s.försiktighetsprincip.1`, `s.vite.1`, `s.miljösanktionsavgift.1`, `s.skyddat-område.1`, `s.inrätta.1`, `s.skötselplan.1`, `s.utsläppshandel.1`, `s.utsläppsrätt.1`, `s.miljökonsekvensbeskrivning.1`, `s.miljökonsekvensbedömning.1`, `s.sakägare.1`, `s.exploatör.1`, `s.miljömärkning.1`
+  - Förväxlingarna gällde nästan alltid närliggande ord i samma modul: *talrik/population/bestånd*, *rubba/jämvikt*, *artrikedom/artrik/mångfald*, *artfattig/monokultur*, *hotad/nära hotad/utrotningshotad/sårbar*, *dö ut/utrota/utdöd*, *främmande art/invasiv/inhemsk/införa*, *återställa/restaurering*, *förorenad/vattenförorening*, *nedbrytbar/bryta ner*, *materialåtervinning/återvunnen*, *ta slut/förbruka*, *outtömlig/förnybar*, *bioenergi/biobränsle*, *klimatavtryck/ekologiskt fotavtryck*, *livscykel/från vagga till grav*, *miljömål/miljökvalitetsmål*, *vite/föreläggande/miljösanktionsavgift*, *utsläppsrätt/utsläppshandel*, *miljökonsekvensbedömning/-beskrivning*, *exploatör/exploatera*, *miljömärkning/miljömärkt*. Ordpar som *utsläppsrätt/utsläppshandel* och *vite/föreläggande* är inte synonymer; de behöver andra visualiseringar (t.ex. animationer) eller en annan ordfördelning mellan modulerna.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -417,6 +424,15 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **0.45, fakta (står i `factSources`):** skogsmark ungefär 69–70 % av landytan, ädellövträd enligt skogsvårdslagen, björksav kräver markägarens tillstånd, backsippan fridlyst, linnea Smålands landskapsblomma, lupin och jätteloka invasiva, johannesört påverkar läkemedel, naturläkemedel godkänns av Läkemedelsverket, omkring 1 100 mossarter och 2 000 lavarter, vitmossa håller 20–25 gånger sin vikt, torv växer 0,5–1 mm per år, isranunkeln växer högst upp i Sverige, symtomtider för lömsk flugsvamp och toppig giftspindling, Livsmedelsverket avråder från stenmurkla, jättemycelet i Oregon, nattfrost i slutet av maj, jordkällare 4–8 °C, kompost 1–2 år; källorna är angivna ur minnet
 - **0.45, bilder:** artbilder som är svåra att skilja (lind, alm, asp, hassel, ask, gräs- och lavarter) har `quiz: false`. Medelsäkra men godkända bland annat: *vintergrön*, *uråldrig*, *gynnsam*, *insektspollinerad*, *vetenskapligt namn*, *mossig*, *härdig*, *lågväxt*, *dödlig*, *fördröjd*, *välvd*, *underjordisk*, *mikroskopisk*, *utbyte*, *svampkunnig*, *kalium*, *vedartad*, *örtartad*, *grobar*, *ettårig*, *flerårig*, *vildvuxen*, *nyttodjur*, *missfärgad* (visas som en fläckig tröja).
 - **0.45, arbetsform:** etappen kördes i samma session som 0.40 på produktägarens uttryckliga begäran.
+- **0.46, svenska:**
+  - böjning och lemman att kontrollera mot SAOL: *koppar* (utan plural), *litium*, *miljöpåverkan*, *naturum* (naturumet, plural naturum), *död botten* (döda bottnen/bottnar), *ansamlas* (deponens, C1), *färgrest*, *nära hotad*, *allemansrätt*, *miljöbalk* och *försiktighetsprincip* (används mest i bestämd form), *förorenaren betalar* och *bräckt vatten* (SAOL har även *brackvatten*) som fraser
+  - *population* och *bestånd* är skilda åt så att *bestånd* gäller djur som jagas eller fiskas; *sällsynt.2* (om arter) är en egen betydelse; *tillgång* har bara betydelsen "mängd som finns"; *skördare* används om skogsmaskinen; *loppis* är vardagligt; *vindpinad* är litterärt
+  - *miljökonsekvensbedömning* heter sedan 2018 *miljöbedömning* i lagtexten (står i `factSources`); *mark- och miljödomstol* kunde inte bli post och omskrivs i texten
+- **0.46, japanska:**
+  - fackord att granska: {生息数|せいそくすう} (*bestånd*), ワラジムシ (*gråsugga*), {送粉者|そうふんしゃ} (*pollinatör*), ヨーロッパムナグロ (*ljungpipare*), ウミガラス (*sillgrissla*), ヒバマタ (*blåstång*), {草本層|そうほんそう}/{地表層|ちひょうそう} (*fält-/bottenskikt*), {緩衝帯|かんしょうたい} (*kantzon*), {生態回廊|せいたいかいろう} (*spridningskorridor*), {在来品種|ざいらいひんしゅ} (*lantras*), サーマルリサイクル (*energiåtervinning*), {死|し}の{海底|かいてい} (*död botten*), ハーベスタ, パルプ{材|ざい}, {最小体長|さいしょうたいちょう}, カーボンフットプリント, {環境質目標|かんきょうしつもくひょう}, {段階目標|だんかいもくひょう}, {世代目標|せだいもくひょう}, {環境法典|かんきょうほうてん}, {環境制裁金|かんきょうせいさいきん}, {履行強制金|りこうきょうせいきん} (*vite*), {是正命令|ぜせいめいれい} (*föreläggande*), ナトゥールム (*naturum*)
+- **0.46, fakta (står i `factSources`, ungefärliga):** lämmelår vart tredje till femte år, tio procent energiöverföring per led, 69 % skogsmark, jätteek från en meters diameter, tillträdesförbud på fågelskär 1 april–31 juli, omkring 100 000 sjöar, rödlistan vart femte år, östra Östersjötorsken stängd sedan 2019, bävern återinförd 1922–39, 80 000 möjligt förorenade områden, EU:s förbud mot engångsplast 3 juli 2021, pant 1 krona, kostråd om strömming, 80 % av EU:s järnmalm, 140 liter vatten per person och dygn, 300 000 skogsägare, en sjundedel skyddad yta och ett trettiotal nationalparker, klimatfinansiering 100/300 miljarder dollar, EU-direktivet mot grönmålning från hösten 2026, USA:s utträde ur Parisavtalet (kan ändras)
+- **0.46, bilder:** varningsromberna i *miljöfarlig* och *hälsofarlig* är förenklade GHS-symboler utan text. Många abstrakta ord fick bild bara efter medelsäkra svar som integratören godtog (t.ex. *population*, *tillgång*, *biomassa*, *resurs*, *generalist*, *arvsmassa*, *allemansrätt*, *luftkvalitet*, *förvalta*, *delningsekonomi*, *miljöbalk*, *klimaträttvisa*).
+- **0.46, arbetsform:** etappen kördes i samma session som 0.40 och 0.45 på produktägarens uttryckliga begäran.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -435,16 +451,17 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v49`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v50`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Art och population* (SWC-NAT-05-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Ekosystemets grunder* (R05-A05-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Väderstreck* (SWC-NAT-06-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Kartor & orientering* (R05-A06-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.
 - **Testtimeout:** när tre gruppagenter kör vitest samtidigt kan tunga tester (`vocabularyCheck`, `learning`, `tools`) slå i 60-sekundersgränsen. Kör då om de testfilerna separat. I CI föll testjobbet i 0.41 och 0.42 på "Timeout calling onTaskUpdate" trots att alla tester passerade: de synkrona innehållstesterna blockerade workerns event-loop i över en minut. Från 0.42 släpper `src/test/setup.ts` event-loopen efter varje test.
 - **Integration av grupper:** lägg in grupperna i katalogordning när det går. Blir en senare grupp klar först och delar poster med en tidigare grupp som ännu inte är inlagd: backa den senare gruppens innehåll (`git checkout -- src/content/data && git clean -fdq src/content/data`), lägg in den tidigare först och låt den senare synka och referera dess poster, så blir förkunskapskedjan mellan grupperna rätt utan efterhandsrättning. Integratören behöver bildcommiten, skripten och `spec.json`; körordning: skripten, `npm run visuals:plan`, `vis.py spec.json`, `conf.py` för synonymer, `check.sh`.
+- **Abstrakta fackord:** i 0.46 saknade 43 av 135 symbolbilder bild efter två omgångar, mest för ordpar i samma modul (*utsläppsrätt/utsläppshandel*, *vite/föreläggande*). Be gruppagenterna att redan i första omgången rita ordpar i samma modul som tydliga kontraster och att undvika två nära fackord i samma modul när det går.
 - **Skyddade emblem:** rött kors på vit botten ritas inte som vårdsymbol; vård markeras med ett grönt kors (se `firstaid.ts`). I 0.45 rättade integratören en sådan bild före blindtestet.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
 - Regler för innehåll och bilder står i `CONTENT_GUIDELINES.md`, för kod i `ARCHITECTURE.md`, och produktionsarbetet i `docs/PRODUCTION_BRIEF.md`.
