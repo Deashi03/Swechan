@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.43.0 (släppt 2026-11-15) · **Senast uppdaterad:** 2026-11-15 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.44.0 (släppt 2026-11-16) · **Senast uppdaterad:** 2026-11-16 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 097 publicerade moduler. 1 092 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) och överämnena *Landskap & geologi* (R05-A01, 0.42) och *Väder & klimat* (R05-A02, 0.43) i *Natur & geografi*. De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 139 publicerade moduler. 1 134 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) och överämnena *Landskap & geologi* (R05-A01, 0.42), *Väder & klimat* (R05-A02, 0.43) och *Djurvärlden* (R05-A03, 0.44) i *Natur & geografi*. De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Djurvärlden* (R05-A03) i *Natur & geografi*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Växter & svampar* (R05-A04) i *Natur & geografi*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 13 111 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 13 617 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp, i en ny session: överämnet *Djurvärlden* (R05-A03) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp, i en ny session: överämnet *Växter & svampar* (R05-A04) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -153,6 +153,12 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Klimatzoner: `s.arid.1`, `s.sträng.2`, `s.polar.1`
   - Klimatförändringar: `s.uppvärmning.2`, `s.påverkan.2`, `s.global-uppvärmning.1`, `s.beräkna.1`, `s.självförstärkande.1`, `s.klimatmål.1`, `s.fossilfri.1`
   - Förväxlingarna gällde adjektiv mot substantiv/verb ur samma familj (*halt/halka*, *blåsig/blåst*, *dimmig/dimma*, *disig/dis*, *frostig/rimfrost*, *polar/polarområde*), substantiv mot verb (*avdunstning/avdunsta*, *kondensation/kondensera*, *beräkna/beräkning*) och nära synonymer (*mulen/gråväder*, *strålande/solig*, *hektopascal/lufttryck*, *hemberedskap/krisberedskap*, *insnöad/snödriva*, *global uppvärmning/uppvärmning/temperaturökning*, *självförstärkande/återkoppling*, *klimatmål/utsläppsminskning*, *fossilfri/fasa ut/förnybar*). Produktägaren kan överväga synonymmarkering för några av paren.
+- **Från 0.44 (14 ord):**
+  - Däggdjur: `s.parningstid.1`, `s.anpassning.2`, `s.varmblodig.1`
+  - Fåglar: `s.övervintra.1`, `s.flyttande.1`, `s.flygfärdig.1`
+  - Kräldjur & groddjur: `s.frostfri.1`, `s.trög.1`, `s.yttre-befruktning.1`
+  - Djurens beteenden: `s.revirhävdande.1`, `s.monogam.1`, `s.dominant.1`, `s.migration.2`, `s.instinkt.1`
+  - Förväxlingarna gällde mest närliggande ord: *övervintra/vinterkvarter/stannfågel*, *flyttande/flyttfågel/flytta*, *flygfärdig/lämna boet*, *frostfri/övervintringsplats*, *trög/stel*, *yttre befruktning/befruktning/grodrom*, *revirhävdande/revirsång/markera revir/hotfull*, *monogam/trogen*, *dominant/ledare*, *migration/migrera/vandra* och *instinkt/medfödd*. Senare grupper som återanvänder orden (t.ex. *övervintra* i Kräldjur) saknar bild där också.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -378,6 +384,18 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - klimatförändringar: uppvärmning ungefär 1,2 °C (Sverige nästan 2 °C), drygt 420 miljondelar CO₂, havsnivå ungefär 20 cm sedan 1900, utsläppen minskade med ungefär en tredjedel sedan 1990 (territoriella), klimatmålet 2045 förenklat
 - **0.43, bilder:** svagare bilder som klarade testet med medelsäkerhet: *halvklar*, *molnig*, *lätta*, *fuktig*, *råkall*, *isande*, *se ut att*, *väder*, *klar*, *sikt*, *kvav*, *argon*, *ädelgas*, *isobar*, *vakuum*, *mättad*, *daggpunkt*, *molnbildning*, *underkyld*, *front* (3), *kraftig* (3), *nederbördsrik*, *luftmassa*, *i sträck*, *tropisk*, *tempererad*, *nederbördsfattig*, *infraröd*, *miljondel*, *temperaturökning*, *osäkerhet* (2) med flera. *hemberedskap* fick hög säkerhet i omgång 2 men underkändes eftersom granskaren skrev att *krisberedskap* passar nästan lika bra.
 - **0.43, blindtest:** granskarna ombads från 0.43 märka varje alternativt ord med "(lika bra)", "(nästan lika bra)", "(delvis)" eller "(svagt)". Integratören godtog medelsvar där alternativen bara var "delvis"/"svagt" och underkände "(nästan) lika bra", låg säkerhet och "otydlig" om kärnan.
+- **0.44, svenska:**
+  - *mask* (djur) är inte målord, eftersom posten *mask* böjs som ansiktsmask (*masker*). Lästexten i *Maskar och snäckor* har *maskar*; en egen post för djuret kräver stöd för homonymer i verktygen.
+  - böjning att kontrollera: *axolotl* (axolotln/axolotler), *kväka* (kväkte/kväkt; SAOL har även kvakte/kvakt), *revirhävdande* (satt oböjligt)
+  - *kläcka.1* är definierat för fåglar men används även om insektsägg; *bröla* används om kronhjortens brunstläte; facktermerna *lekvandring* och *vandringshinder* är C1
+  - tjäderns *spel* står bara i texterna (ingen egen post)
+- **0.44, japanska:** artnamn att granska: ヤマキチョウ (*citronfjäril*), オオモンシロチョウ (*kålfjäril*), ヨーロッパミヤマクワガタ (*ekoxe*), ヤツバキクイムシ (*granbarkborre*), ツチボタル (*lysmask*), ニワオニグモ (*korsspindel*), スペインナメクジ (*mördarsnigel*), ヨーロッパヤマカガシ (*snok*), ヨーロッパナメラ (*hasselsnok*), ニワカナヘビ (*sandödla*), コモチカナヘビ (*skogsödla*), ヒメアシナシトカゲ (*kopparödla*), クシイモリ/スベイモリ (*större/mindre vattensalamander*), ヨーロッパオオライチョウ (*tjäder*), スズメバチ (*geting*).
+- **0.44, fakta (står i `factSources`, försiktigt formulerade):**
+  - insekter: cirka 2 700 fjärilsarter (drygt 100 dagfjärilar), cirka 4 500 skalbaggsarter och cirka 300 vildbiarter i Sverige; vaccin mot TBE men inte mot borrelia; mördarsnigeln sedan 1970-talet
+  - kräldjur: 6 kräldjur och 13 groddjur i Sverige, alla groddjur fridlysta, levandefödande huggorm/hasselsnok/kopparödla/skogsödla, temperaturstyrt kön hos krokodildjur och havssköldpaddor; kajman och pilgiftsgroda förenklat till "Sydamerika"
+  - beteenden: vargflockens "alfa"-bild beskrivs som omdiskuterad; ålens lek i Sargassohavet är ett antagande; laxen hittar "oftast" hem med luktsinnet; binas dans (von Frisch, Nobelpriset 1973)
+- **0.44, bilder:** *livscykel* och *metamorfos* visas med fågel respektive groda för att inte förväxlas med *fullständig förvandling*. Medelsäkra men godkända bland annat: *vårtecken*, *utrotningshotad*, *ryggradslös*, *rödlistad*, *artrik*, *parasit*, *metamorfos*, *benlös*, *nykläckt*, *hudandning*, *solvarm*, *läderartad*, *kön*, *hotfull*, *kommunicera*, *underkastelse*, *orörlig*, *hemområde*.
+- **0.44, arbetsform:** etappen kördes i samma session som 0.41–0.43 på produktägarens uttryckliga begäran.
 - **0.42, arbetsform:** etappen kördes i samma session som 0.41 på produktägarens uttryckliga begäran. T03 och T06 blev klara före de grupper som kommer före dem i katalogen; T03:s förkunskap rättades i efterhand, och T06:s innehåll backades och lades in först efter T05.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
@@ -397,11 +415,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v47`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v48`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Vanliga svenska däggdjur* (SWC-NAT-03-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Däggdjur* (R05-A03-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Svenska lövträd* (SWC-NAT-04-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Träd & buskar* (R05-A04-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.

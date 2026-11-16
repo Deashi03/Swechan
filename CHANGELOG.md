@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.44.0 – 2026-11-16
+
+42 nya moduler som gör överämnet *Djurvärlden* (R05-A03) komplett, det tredje överämnet i *Natur & geografi*. Varje nytt modulord har en egen bild, utom de 14 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 703 målord)
+- **Däggdjur** (2701–2707): vanliga svenska däggdjur, rovdjur och bytesdjur, hjortdjur och klövdjur, gnagare och smådäggdjur, havslevande däggdjur, däggdjurens fortplantning och anpassningar.
+- **Fåglar** (2711–2717): småfåglar i Sverige, rovfåglar, sjöfåglar, flyttfåglar, näbbar och fjäderdräkt, häckning och bon samt fåglars läten och beteenden.
+- **Fiskar & vattenlevande djur** (2721–2727): sötvattensfiskar, havsfiskar, hajar och rockor, kräftdjur, blötdjur, fiskarnas anatomi och liv i korallrev.
+- **Insekter & andra ryggradslösa** (2731–2737): fjärilar och nattfjärilar, bin och humlor, myror och kolonier, skalbaggar, spindlar och kvalster, maskar och snäckor samt metamorfos och livscykler.
+- **Kräldjur & groddjur** (2741–2747): ormar och ödlor, sköldpaddor, krokodildjur, grodor och paddor, salamandrar, växelvarm anpassning samt fortplantning i vatten och på land.
+- **Djurens beteenden** (2761–2767): jakt och födosök, kamouflage och försvar, revir och territorium, parning och uppvaktning, sociala flockar, migration och vandring samt kommunikation mellan djur.
+- Varje modul har 15–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 485 nya ordposter.
+- 34 nya betydelser på befintliga poster, bland annat *byte* (rovdjurets), *flytta* och *vandra* (om djur), *fjäll* (på fisk), *skal*, *snäcka*, *koloni*, *arbetare* och *drönare* (hos insekter), *spinna* (spindel och katt), *pansar* (på djur), *migration*, *rangordning*, *uppvaktning* och *ultraljud* (hos djur).
+- Integratören rättade tre saker vid inläggningen:
+  - *mask* (djur) ströks som målord. Betydelsen hade lagts på ansiktsmaskens post, som böjs *masker*.
+  - Katternas *spinna* hade fått samma nummer som spindelns och skulle ha skrivit över den. Den fick ett eget nummer, *s.spinna.3*.
+  - *rom* böjs nu *rommen*.
+- En grupp hade lagt *gapa* i sin bildspec och därmed skrivit över en befintlig, godkänd bild. Den gamla bilden är återställd.
+- Parallella grupper ville skapa samma poster (*klo*, *dyka*, *kull*, *byte*, *gadd*, *växelvarm*, *ligga på lur*, *väsa*, *koloni*, *ögonfläck*, *spillning* med flera). Posten finns bara i den grupp som kommer först i katalogen, och de andra refererar dess `senseId`.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Växter & svampar* (R05-A04): Träd & buskar → Svenska lövträd.
+
+### Bilder (506 nya ordbilder)
+- 59 symbolbilder, 251 bilder som får användas i bildövningar och resten scener.
+- 73 symbol- och adjektivbilder blindtestades. 59 klarade testet efter högst två omgångar.
+- **14 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Nya bildfiler i `src/ui/wordArt/`: `mammals.ts`, `birds.ts`, `aquatic.ts`, `invertebrates.ts`, `reptiles.ts` och `animalBehaviour.ts`.
+
+Service workern är `swechan-v48`.
+
+
 ## 0.43.0 – 2026-11-15
 
 42 nya moduler som gör överämnet *Väder & klimat* (R05-A02) komplett, det andra överämnet i *Natur & geografi*. Varje nytt modulord har en egen bild, utom de 30 ord som underkändes i två blindtestomgångar.
