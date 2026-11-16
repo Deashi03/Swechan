@@ -379,8 +379,13 @@ export const AQUATIC_MOTIFS: Record<string, Svg> = {
 
   // 2725 Blötdjur
   'fisk.blötdjur': all(water(SEA), sandFloor(96, SAND), at(28, 90, 0.7, snail('#a07a50')), at(86, 92, 0.65, musselShell('#2f3550')), at(58, 44, 0.75, octopus()), oval(60, 64, 52, 46)),
-  'fisk.ryggradslös': all(bg('#eef4f8'), greyed(at(30, 62, 0.85, fishSide({ ...generic('#b8c4cc'), marks: all(line('M-20 0 L18 0', C.ink, 2.4), ...range(8).map((i) => line(`M${-14 + i * 4} -6 L${-14 + i * 4} 6`, C.ink, 1))) }))),
-    line('M60 10 L60 108', C.grey2, 1.4), at(88, 66, 0.7, octopus()), at(88, 22, 1, ...range(4).map((i) => rect(-6 + i * 3.4, -3, 3, 6, BONE, 1, C.ink, 0.8)), ban(1, 0, 10))),
+  'fisk.ryggradslös': all(bg('#eef4f8'),
+    greyed(at(58, 30, 1.25, path('M-36 0 C-30 -14 22 -16 30 -3 L42 -12 L40 0 L42 12 L30 3 C22 16 -30 14 -36 0 Z', '#dfe6ec', C.ink, 1.3), line('M-28 0 L34 0', C.ink, 1.2),
+      ...range(12).map((i) => rect(-27 + i * 5, -2.4, 4, 4.8, BONE, 1, C.ink, 0.8)), ...range(11).map((i) => line(`M${-24.5 + i * 5} -2 L${-22 + i * 5} -10 M${-24.5 + i * 5} 2 L${-22 + i * 5} 10`, C.ink, 0.9)),
+      path('M-36 0 C-34 -6 -30 -8 -26 -6 L-26 6 C-30 8 -34 6 -36 0 Z', BONE, C.ink, 0.9), circle(-31, -2, 1.4, C.ink, null))),
+    line('M8 56 L112 56', C.grey2, 1.4),
+    at(30, 86, 1, ...range(6).map((i) => rect(-21 + i * 7, -5, 6, 10, BONE, 1.5, C.ink, 1)), line('M-22 0 L22 0', C.ink, 0.8), line('M-24 -14 L24 14 M-24 14 L24 -14', C.red, 3.6)),
+    at(86, 76, 0.72, octopus()), ellipse(86, 70, 15, 15, 'none', HL, 2.4)),
   'fisk.blåmussla': all(water(SEA), path('M4 112 L4 80 C30 70 80 70 116 84 L116 112 Z', ROCK, C.ink, 1.3), ...[[30, 76, -20], [46, 72, 10], [62, 74, -30], [80, 78, 20], [96, 82, -10], [40, 88, 30], [70, 90, -10]].map(([x, y, r]) => atR(x!, y!, 0.75, r!, musselShell('#1f2a4a'))), at(58, 40, 1.4, musselShell('#1f2a4a', true))),
   'fisk.filtrera.2': all(water(SEA), sandFloor(96, SAND), at(60, 76, 1.5, musselShell('#2f3550', true)), ...range(12).map((i) => circle(10 + (i % 4) * 7, 50 + ((i / 4) | 0) * 7, 1.2, '#8a7a4a', null)), arrow(26, 66, 40, 72, '#8a7a4a', 2), arrow(80, 72, 100, 62, HL, 2.6), ...range(3).map((i) => circle(98 + i * 5, 50 - i * 4, 1.6, 'none', '#ffffff', 0.9))),
   'fisk.ostron': all(bg('#f3ede2'), ellipse(60, 84, 48, 14, '#e8eef2', C.ink, 1.2), ...range(10).map((i) => rect(18 + i * 8, 80 + (i % 2) * 3, 6, 4, '#ffffff', 1, '#c8d8e4', 0.6)), at(42, 74, 1.1, oysterShell(true)), at(82, 66, 1, oysterShell(false))),
