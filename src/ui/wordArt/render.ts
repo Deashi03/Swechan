@@ -178,6 +178,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'fore.': () => import('./pollution').then((m) => m.POLLUTION_MOTIFS),
   'hres.': () => import('./sustainability').then((m) => m.SUSTAINABILITY_MOTIFS),
   'mpol.': () => import('./environmentPolicy').then((m) => m.ENV_POLICY_MOTIFS),
+  'geu.': () => import('./europeGeo').then((m) => m.EUROPE_GEO_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
