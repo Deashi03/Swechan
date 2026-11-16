@@ -153,6 +153,9 @@ const cloudberry = (x: number, y: number, s = 1, col = ORANGE) => at(x, y, s, li
 const berry = (x: number, y: number, r: number, col: string, shine = true) => all(circle(x, y, r, col, C.ink, 0.8), shine ? circle(f1(x - r * 0.35), f1(y - r * 0.35), f1(r * 0.3), 'rgba(255,255,255,0.7)', null) : '');
 const crookedBirch = (x: number, y: number, s = 1) => at(x, y, s, path('M-3 0 C-4 -8 -10 -12 -8 -22 M1 0 C2 -10 0 -16 6 -24 M3 0 C6 -6 12 -10 12 -16', 'none', C.ink, 4.4), path('M-3 0 C-4 -8 -10 -12 -8 -22 M1 0 C2 -10 0 -16 6 -24 M3 0 C6 -6 12 -10 12 -16', 'none', WHITE, 2.8), line('M-6 -12 l2 0 M2 -14 l2 0 M9 -10 l2 0', C.ink, 1), ellipse(-8, -27, 7, 6, '#8cc04a', C.ink, 1), ellipse(6, -29, 7, 6, '#8cc04a', C.ink, 1), ellipse(13, -19, 5, 4.4, '#8cc04a', C.ink, 1));
 
+/** A vertical measuring scale (red bottom, yellow middle, green top) with a pointer high or low. */
+const gauge = (x: number, y: number, lvl: 'hi' | 'lo') => all(rect(x - 4, y, 8, 15, '#4caf50', 0, null), rect(x - 4, y + 15, 8, 14, YEL, 0, null), rect(x - 4, y + 29, 8, 15, '#e04a3a', 0, null), rect(x - 4, y, 8, 44, 'none', 2, C.ink, 1.2),
+  path(lvl === 'hi' ? `M${x - 9} ${y + 5} L${x - 4} ${y + 8} L${x - 9} ${y + 11} Z` : `M${x - 9} ${y + 34} L${x - 4} ${y + 37} L${x - 9} ${y + 40} Z`, C.ink, C.ink, 0.8), rect(x - 2, y + 44, 4, 6, '#c0c6cc', 0.5, C.ink, 0.8));
 export const GRASSES_MOSSES_MOTIFS: Record<string, Svg> = {
   // ── 2821 Vanliga gräsarter ──
   /** gräsart: four clearly different grasses stand side by side – one with a dense cylinder ear, one with an airy panicle, one with a drooping panicle, one in a tussock – grouped by an orange bracket above. */
@@ -320,9 +323,10 @@ export const GRASSES_MOSSES_MOTIFS: Record<string, Svg> = {
   /** kartlav: a grey rock covered with yellow-green patches of crust lichen, each fenced by black lines, so that it looks like a map of countries with borders; a paper map beside it for comparison. */
   'grms.kartlav': all(bg(SKY), ground, rock(48, 112, 84, 66, STONE), ...[[30, 76, 9, 1], [50, 68, 10, 2], [68, 80, 9, 3], [40, 94, 9, 4], [60, 98, 8, 5]].map(([x, y, r, s]) => blob(x!, y!, r!, '#c8d84a', s!, 1.6)),
     rect(88, 28, 24, 30, '#f6eed8', 1, C.ink, 1.2), path('M90 40 L98 34 L106 38 L110 30 M92 50 L100 46 L110 52 M98 34 L100 46', 'none', C.ink, 0.9), rect(90, 30, 8, 6, '#c8d84a', 0, null)),
-  /** indikatorart: two forests side by side: on the left clean air, a tree full of beard lichen and blue sky (ringed in orange); on the right grey smoky air from a factory and a bare tree with no lichen, drawn grey. */
-  'grms.indikatorart': all(bg(), rect(6, 10, 52, 100, SKY, 2, C.ink, 1.2), rect(26, 20, 6, 90, '#6a4a30', 1, C.ink, 1), branchH(30, 54, 40), branchH(30, 52, 70), beard(42, 38, 18), beard(36, 68, 16), beard(48, 66, 14), ring(40, 56, 18, 34),
-    greyed(rect(62, 10, 52, 100, '#c8c8c8', 2, C.ink, 1.2), rect(86, 20, 6, 90, '#6a4a30', 1, C.ink, 1), branchH(90, 110, 40), branchH(90, 108, 70), rect(66, 76, 14, 34, '#8a847c', 0.5, C.ink, 1), circle(74, 66, 5, '#7a7a80', null), circle(80, 58, 6, '#6e6e74', null), circle(88, 50, 7, '#66666c', null))),
+  /** indikatorart: two panels of the same rock. Left: clean air, blue sky and sun; small green plants and lichen spots grow on the rock (ringed in orange), and a dotted arrow leads from them to a measuring scale beside it whose pointer stands high in the green zone. Right: grey smoky air from a factory; the same rock is bare, and the scale's pointer stands low in the red zone. */
+  'grms.indikatorart': all(bg(), rect(6, 10, 52, 100, SKY, 2, C.ink, 1.2), sunG(16, 22, 5), rock(26, 108, 34, 30), cushion(20, 86, 16, 9, MOSS, 3), cushion(33, 86, 14, 8, MOSS, 4), blob(22, 99, 4, '#9ac060', 5), blob(34, 98, 3.4, '#c8d84a', 6), ring(27, 89, 16, 13),
+    gauge(48, 24, 'hi'), line('M34 76 C40 70 40 60 42 54', HL, 1.4, '2 2'),
+    rect(62, 10, 52, 100, '#c8c4bc', 2, C.ink, 1.2), rect(66, 50, 10, 58, '#8a847c', 0.5, C.ink, 1), circle(72, 44, 4, '#7a7a80', null), circle(78, 36, 5, '#6e6e74', null), circle(86, 28, 6, '#66666c', null), rock(90, 108, 30, 30), gauge(104, 24, 'lo'), rect(6, 10, 52, 100, 'none', 2, C.ink, 1.2), rect(62, 10, 52, 100, 'none', 2, C.ink, 1.2)),
 
   // ── 2826 Myrvegetation ──
   /** myr: a wide, open, flat wet bog with brown and green moss, small pools of water, low tussocks with white cotton-grass, and a forest edge far away. */
