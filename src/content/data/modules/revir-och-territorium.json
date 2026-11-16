@@ -1,0 +1,178 @@
+{
+ "id": "m.revir-och-territorium",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Revir och territorium",
+ "titleJa": "{縄張|なわば}り",
+ "descriptionSv": "Revir och territorium: revir, hemområde, försvara, gräns, markera revir, revirsång, hackspett, trumning, doftmärka, urin, spillning, klösa, revirhävdande, inkräktare, hotfull och jaga bort.",
+ "descriptionJa": "{縄張|なわば}り：{縄張|なわば}り、{行動圏|こうどうけん}、{守|まも}る、{境界|きょうかい}、{縄張|なわば}りを{主張|しゅちょう}する、{縄張|なわば}り{宣言|せんげん}のさえずり、キツツキ、ドラミング、においでマーキングする、{尿|にょう}、ふん、ひっかく、{縄張|なわば}り{意識|いしき}の{強|つよ}い、{侵入者|しんにゅうしゃ}、{威嚇|いかく}するような、{追|お}い{払|はら}う。",
+ "categoryId": "R05-A03-T06",
+ "tags": [
+  "natur",
+  "djur",
+  "beteende"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kamouflage-och-forsvar"
+ ],
+ "related": [],
+ "recommendedOrder": 2763,
+ "words": [
+  {
+   "senseId": "s.revir.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemområde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.försvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.markera-revir.1",
+   "active": true
+  },
+  {
+   "senseId": "s.revirsång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hackspett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trumning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.doftmärka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spillning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klösa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.revirhävdande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inkräktare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hotfull.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jaga-bort.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Här bor jag!",
+  "paragraphs": [
+   "Det är en morgon i april. Johan och hans dotter Maja går en promenad i skogen. Överallt sjunger fåglar. – Det är revirsång, säger Johan. Hanen sjunger för att visa att det här är hans revir. Ett revir har en gräns, och den försvarar han mot andra hanar.",
+   "Från ett dött träd hörs ett snabbt ljud. Det är en hackspett. – Trumningen är hackspettens sätt att markera revir, säger Johan. Vid stigen sitter en koltrast. När en annan hane landar i närheten blir koltrasten hotfull och jagar bort inkräktaren.",
+   "Däggdjur använder ofta lukt i stället för ljud. Vid en stor sten ser Maja spillning. – Utter och räv lämnar spillning och urin på stenar, säger Johan. Vargar och lodjur doftmärker längs gränsen till reviret. På ett träd ser de djupa märken. – Här har en björn klöst, säger Johan.",
+   "– Är hela skogen björnens revir? frågar Maja. – Nej, svarar Johan. Björnens hemområde är mycket stort, och det delar den med andra björnar. Men vissa djur är mycket revirhävdande. En liten rödhake kan slåss för sitt lilla revir."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "usage",
+    "promptSv": "Varför sjunger fågelhanarna på våren?",
+    "options": [
+     "För att visa att de har ett revir",
+     "För att de är rädda",
+     "För att de har hittat mat",
+     "För att de ska flytta"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hanen sjunger för att visa att det här är hans revir.",
+    "explanationJa": "{縄張|なわば}りがあることを{示|しめ}すためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör koltrasten när en annan hane kommer?",
+    "options": [
+     "Den flyger sin väg",
+     "Den sjunger tillsammans med honom",
+     "Den jagar bort honom",
+     "Den spelar död"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… koltrasten blir hotfull och jagar bort inkräktaren.",
+    "explanationJa": "ほかのオスを{追|お}い{払|はら}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur markerar vargar och lodjur sina revir?",
+    "options": [
+     "Med sång",
+     "Med trumning",
+     "Med färger",
+     "Med lukt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Vargar och lodjur doftmärker längs gränsen till reviret.",
+    "explanationJa": "においでマーキングします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Märkena på tallen kommer från en hackspett.",
+    "correct": false,
+    "explanationSv": "– Här har en björn klöst, säger Johan.",
+    "explanationJa": "{木|き}の{跡|あと}はクマがひっかいたものです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ett hemområde är alltid samma sak som ett revir.",
+    "correct": false,
+    "explanationSv": "Björnens hemområde är mycket stort, och det delar den med andra björnar.",
+    "explanationJa": "クマの{行動圏|こうどうけん}はほかのクマと{共有|きょうゆう}されています。"
+   }
+  ],
+  "factSources": [
+   "Hos många tättingar sjunger hanen på våren för att hävda revir och locka till sig en hona.",
+   "Större hackspetten trummar med snabba slag på torra, klingande grenar för att markera revir och för att kommunicera med en partner.",
+   "Uttrar och rävar lämnar spillning och urin på framträdande platser, vilket tolkas som doftmarkering; vargar och lodjur doftmarkerar längs sina revir.",
+   "Björnar klöser, biter och gnider sig mot träd; forskare tolkar det som ett sätt att lämna doftsignaler till andra björnar. Björnens hemområde är stort och överlappar med andras.",
+   "Rödhaken försvarar sitt revir kraftigt mot andra rödhakar.",
+   "Johan och Maja är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om revir hos djur och människor.",
+  "discussionPoints": [
+   "Vilket sätt att markera revir tycker du är mest intressant?",
+   "Har du hört revirsång eller trumning i naturen?",
+   "Kan människor också vara revirhävdande? Ge ett exempel.",
+   "Har du något eget \"revir\" hemma eller på jobbet?"
+  ]
+ }
+}
