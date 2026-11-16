@@ -1,5 +1,46 @@
 # Changelog
 
+## Osläppt – 2026-11-16: språkgranskning av *Människan & hälsa*
+
+Alla 252 moduler i *Människan & hälsa* (R02) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. Alla ordposter som modulerna använder och som inte redan lästes med *Vardag & hem* (3 698 betydelser) är lästa: japansk glosa, svensk definition, exempel, svensk förklaring, användningsnot och böjning. 84 moduler i R02, 3 moduler utanför R02 (japansk stavning av Johan i två, böjningen av *sms* i en) och 21 ordlistefiler är ändrade. Versionen och service workern är inte höjda.
+
+### Sakfel och logiska fel
+- *Biverkningar och varningar*: texten sa att trafikfarliga läkemedel har en röd varningstriangel på förpackningen. Den togs bort 2005. Nu säger mamma att triangeln fanns förr, och frågan, ordposterna *varningstriangel* och *trafikfarlig* är ändrade på samma sätt.
+- *Förkylning och influensa*: på 1177 svarar sjuksköterskor, inte läkare.
+- *Diabetes och ämnesomsättning*: ”lågt blodsocker är farligare” → ”blir farligt snabbare” (text och fråga).
+- *Hjärt-kärlsjukdomar*: ”halvsidig förlamning i ena armen” gick inte ihop; nu ”domning i ena armen eller halvsidig förlamning”.
+- *Kroniska sjukdomar*: KOL ”blev bättre” när farfar slutade röka, fast sjukdomen är obotlig; nu mår han bättre.
+- *Allergier och astma* och ordposten *pollensäsong*: säsongen börjar ”på våren”, inte ”i mars med björken”.
+- *Mor- och farföräldrar*: farmor var änka fast farföräldrarna bor i Skåne; nu är det farmors syster.
+- *Beskriva ett släktträd*: Saras barn hade ”sina rötter i Japan” utan förklaring, och mormor var avliden här men levde i grannmodulen. Nu är det gammelfarfar som föddes i Finland, och Aiko berättar om sin egen släkt.
+- *Lära känna någon*: Aiko träffade svenska Sara på en kurs i svenska; nu en kurs i dans.
+- *Njurar och urinvägar*: lillebrors replik (”Säg kiss som alla andra!”) passade inte till det Mia hade sagt.
+- Ordposter: *frikort* (taket är 1 450 kronor 2026, inte ”några tusen”), *cellprov* (23–70 år, inte 23–64), *riskbruk* (tio glas eller mer, inte mer än tio), *snus* (förbjudet att sälja i alla andra EU-länder, inte ”de flesta”), *korsband* (man bryter inte ett korsband).
+
+### Språk
+- *urin* är ett en-ord: *urinen* i modulen *Njurar och urinvägar*, i ordposten (böjning, exempel) och i definitioner och förklaringar till sju andra ord.
+- *stressymptom* → *stressymtom* (modulen *Stressreaktioner* och ordposten; ID:t `s.stressymptom.1` är orört).
+- *pratar teckenspråk* → *använder*, *har lite tempen* → *har lite temp* / *är tempen inte lika hög*, *klämma om näsan* → *kläm*, *föra vidare dem*, *kutar efter den* (ett band), *Ni har lite fettlever* → *Du*, *djupt glad* → *djupt tacksam*, *kysste* mitt i presens, *tappat bort sin buss*, *köper biljetter på en höft*, *Ett fosterbarn bor alltid … för alltid* m.fl.
+- Ordposter: *orädd* (exemplet hade *orätt*), *längta tillbaka* (*vill jag längta*), *svedd*, *ge efter* och *tjuvläsa* (otydliga förklaringar).
+- Namnet Johan skrevs ジョアン, ジョハン och ヨーハン i fyra moduler; nu ヨハン som i övriga 19.
+
+### Böjning
+- *decibel* (*decibeln*), *vit lögn* och *blind date* (understreck i formerna).
+- *fobi*, *mammografi*, *screening*, *gåshud* och *sms* saknade böjning.
+
+### Frågor och förklaringar
+- *Mor- och farföräldrar* q2: frågan (”Vad ger morfar barnen?”) passade inte till svaren (”Med glass och sagor”).
+- *Födelsedagar* q4, *Lever och gallblåsa* q3, *Sömn och vakenhet* q1 m.fl.: förklaringen citerar nu texten som den står.
+
+### Faktakällor
+- 62 moduler i *Kroppen & sinnena* och *Hälsa & sjukvård* hade `Vardagsscen utan faktapåståenden.` fast texten innehåller medicinska fakta eller regler. De har nu faktakällor (1177 Vårdguiden, Folkhälsomyndigheten, Socialstyrelsen, Läkemedelsverket, Livsmedelsverket, HLR-rådet, SOS Alarm, patientlagen m.fl.). Källorna anges på nivån myndighet och ämne. Fyra uppgifter är kontrollerade mot källan i den här sessionen: varningstriangeln (2005), högkostnadsskyddet (1 450 kronor 2026), cellprov (23–70 år) och riskbruk (10 standardglas).
+
+### Inte gjort
+- De japanska definitionerna, förklaringarna och användningsnoterna i R02 är inte lästa mening för mening mot svenskan (det gjordes för R01). Japanskan är läst för glosor, modulernas förklaringar och allt som ändrades. En automatisk kontroll hittade ingen kanji utan furigana i R02.
+- Personernas roller växlar mellan modulerna i R02 (Aiko och Leo är barn i vissa moduler och vuxna i andra; Johan, Karin, Kenji och Sara har olika släktskap). Det är inte ändrat.
+- Bilden till *varningstriangel* är inte kontrollerad mot den nya definitionen (bilder ingick inte).
+- `npm run typecheck`, `npm test`, bygget och e2e har inte körts (inga paket installerade, ingen nätåtkomst). `validateContent` och `checkVocabulary` har körts över allt innehåll utan fel, och modulindexet är omgenererat.
+
 ## Osläppt – 2026-11-16: språkgranskning av *Vardag & hem*
 
 Alla 252 moduler i *Vardag & hem* (R01) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. 141 moduler och 3 ordposter är ändrade. Versionen och service workern är inte höjda (utvecklingsläget nollställer progressionen vid ny `APP_VERSION`); ändringarna följer med nästa release.
