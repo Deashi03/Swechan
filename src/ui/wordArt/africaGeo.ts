@@ -71,8 +71,11 @@ const wreck = (x: number, y: number, s = 1) => at(x, y, s, path('M-30 0 L-26 -12
 // ── Map of Africa (simplified) ───────────────────────────────────────
 const AF = 'M24 22 L30 16 L44 14 L56 18 L58 14 L62 20 L72 22 L82 22 L88 25 L92 34 L98 46 L104 52 L114 51 L108 62 L100 76 L98 86 L92 96 L86 104 L76 110 L66 112 L60 108 L56 96 L52 84 L50 72 L52 62 L46 58 L36 57 L24 56 L14 48 L8 40 L10 32 L16 26 Z';
 const MADA = 'M104 84 L108 82 L110 88 L106 100 L102 98 Z';
-const ARABIA = 'M92 26 L116 22 L116 50 L104 48 L98 40 Z';
-const EUROPE_EDGE = 'M4 4 L116 4 L116 10 L90 14 L70 12 L50 8 L30 10 L4 12 Z';
+const SAMERICA = 'M40 10 L70 16 L90 34 L84 52 L70 64 L60 90 L50 110 L44 100 L46 70 L34 46 L30 24 Z';
+/** Seven oranges heaped on top of a crate (shifted dx). */
+const fruits = (dx: number) => all(...[[18, 50], [28, 46], [38, 48], [48, 51], [23, 42], [34, 40], [44, 43]].map(([x, y]) => all(circle(x! + dx, y!, 6, C.orange, C.ink, 1), line(`M${x! + dx} ${y! - 6} l1 -2`, '#4f7a3a', 1.2))));
+/** A wooden crate (top-left corner x, y; 46×48) seen from the front. */
+const crate = (x: number, y: number, col: string) => all(rect(x, y, 46, 48, col, 1, C.ink, 1.4), line(`M${x} ${y + 6} L${x + 46} ${y + 6} M${x} ${y + 42} L${x + 46} ${y + 42}`, '#a0673d', 1.2), line(`M${x + 4} ${y} L${x + 4} ${y + 48} M${x + 42} ${y} L${x + 42} ${y + 48}`, '#a0673d', 1.2));
 
 // ── River helpers ────────────────────────────────────────────────────
 const river = (d: string, col: string = WATER2, w = 5) => all(path(d, 'none', C.ink, w + 1.6), path(d, 'none', col, w));
@@ -128,7 +131,10 @@ export const AFRICA_GEO_MOTIFS: Record<string, Svg> = {
   'gaf.diamantgruva': all(bg(), path('M4 112 L4 40 L116 40 L116 112 Z', '#b9a37a', C.ink, 1.1), ellipse(60, 66, 50, 22, '#8a7a5a', C.ink, 1.2), ellipse(60, 70, 40, 16, '#7a6a4a', C.ink, 1), ellipse(60, 74, 30, 11, '#6a5a3e', C.ink, 1), ellipse(60, 78, 19, 7, '#4f4430', C.ink, 1), ellipse(60, 80, 10, 3.6, '#3a6a7a', C.ink, 0.9),
     ...[[18, 40], [30, 38], [96, 38]].map(([x, y]) => all(rect(x! - 4, y! - 8, 8, 8, C.white, 0.5, C.ink, 0.8), path(`M${x! - 5} ${y! - 8} L${x} ${y! - 12} L${x! + 5} ${y! - 8} Z`, C.grey, C.ink, 0.6))), tiny(104, 104, 0.9, C.orange), diamond(92, 22, 1.3), sparkle(104, 14, 3), sparkle(80, 14, 2.4)),
   // 3036 Afrikas länder och huvudstäder
-  'gaf.afrikansk': all(mapBg(), greyed(path(EUROPE_EDGE, GREYLAND, C.ink, 1), path(ARABIA, GREYLAND, C.ink, 1)), path(AF, HLFILL, C.ink, 1.2), path(MADA, HLFILL, C.ink, 1), path(AF, 'none', HL, 2.4), path(MADA, 'none', HL, 2), ...[[40, 34], [70, 40], [62, 70], [86, 66], [74, 96], [30, 46], [90, 50]].map(([x, y]) => dot(x!, y!, 1.8, C.dark)), sparkle(20, 84, 3), sparkle(100, 112 - 14, 2.4)),
+  'gaf.afrikansk': all(bg('#f6f2ea'), rect(4, 100, 112, 12, '#d9c8a8', 0, null), line('M4 100 L116 100', C.ink, 1),
+    fruits(0),
+    crate(10, 52, HLFILL), at(13.5, 56, 0.32, path(AF, '#e4572e', C.ink, 2.4), path(MADA, '#e4572e', C.ink, 2)), oval(33, 76, 30, 30), sparkle(10, 30, 3), sparkle(56, 28, 2.6),
+    greyed(fruits(54), crate(64, 52, '#e8dcc4'), at(67.8, 56.8, 0.32, path(SAMERICA, '#5a6b7a', C.ink, 2.4)))),
   'gaf.kustland': all(mapBg(), rect(4, 4, 112, 34, GREYLAND, 3, null), line('M4 38 L116 38', C.ink, 1), line('M44 4 L44 38 M84 4 L84 38', C.ink, 1), path('M4 38 L44 38 L50 60 L44 80 C30 84 16 82 4 86 Z', GREYLAND, C.ink, 1.1),
     path('M44 38 L84 38 L86 62 C90 72 94 80 96 88 C80 92 64 88 52 86 L44 80 L50 60 Z', HLFILL, C.ink, 1.4), path('M84 38 L116 38 L116 84 C108 84 100 86 96 88 C94 80 90 72 86 62 Z', GREYLAND, C.ink, 1.1), path('M52 86 C64 88 80 92 96 88', 'none', HL, 3.6), path('M44 38 L84 38 L86 62 C90 72 94 80 96 88 C80 92 64 88 52 86 L44 80 L50 60 Z', 'none', HL, 2.2),
     waves(14, 104, 98), waves(20, 100, 106), dot(66, 60, 3, C.red), at(70, 100, 0.8, path('M-10 -3 L10 -3 L7 3 L-7 3 Z', C.white, C.ink, 1), line('M0 -3 L0 -12', C.ink, 0.9), path('M1 -11 L7 -4 L1 -4 Z', C.white, C.ink, 0.7))),
