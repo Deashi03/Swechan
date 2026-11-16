@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-0. **Före nästa release:** kör `npm run typecheck && npm test` på språkgranskningen av *Vardag & hem* (2026-11-16, se `CHANGELOG.md` → *Osläppt*). Den är validerad med `validateContent` och `checkVocabulary`, men hela testsviten har inte körts. Ordposterna i R01 är lästa och rättade, utom japanska definitioner och förklaringar. Kvar: en egen ordpost för *ton* (tonfall), plural för *tång* (redskap), och berättelsen mellan ämnesgrupperna som inte hänger ihop (radhus/hyresrätt/bostadsrätt).
+0. **Före nästa release:** kör `npm run typecheck && npm test` på språkgranskningen av *Vardag & hem* (2026-11-16, se `CHANGELOG.md` → *Osläppt*). Den är validerad med `validateContent` och `checkVocabulary`, men hela testsviten har inte körts. Ordposterna i R01 är lästa och rättade, även de japanska definitionerna och förklaringarna. Kvar: plural för *tång* (redskap), furigana tecken för tecken, och berättelsen mellan ämnesgrupperna som inte hänger ihop (radhus/hyresrätt/bostadsrätt).
 1. Nästa etapp, i en ny session: överämnet *Världsgeografi* (R05-A06) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.

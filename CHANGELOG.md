@@ -35,11 +35,12 @@ Alla 252 moduler i *Vardag & hem* (R01) är genomlästa: lästexter, frågor, sv
   - **Sakfel:** *kontantinsats* (minst 10 procent sedan 1 april 2026, inte 15), *moms* (exemplet angav tolv procent på mat), *lättmjölk* (en halv procent, inte under).
   - **Svenska:** exempel eller förklaring till *vänta med*, *i jämförelse med*, *kiosk*, *dubbdäck*, *turbulens*, *vigselring*, *styv*, *solros*, *gyllenbrun*, *kokpunkt*, *sköljmedel* och *dammråtta*.
   - **Japanska:** *lyhörd* (筒抜け, inte 筋抜け), *duka fram* (fil översatt som yoghurt), *växelfel* (中央駅 för *stationen*).
+- Japanska definitioner, förklaringar och användningsnoter för samma 3 774 betydelser är jämförda med de svenska. De stämde nästan överallt; fem rättningar: *miljard* (1000百万 → 10億), *klänning* (*tröja* översatt som セーター), *tonfisk* (noten sa sushi i stället för färsk), *barnvagn* (noten *Detta gäller …* syftade inte på något) och den svenska definitionen av *fasad* (*Ett hus yta*).
+- *ton* (vikt) har nu pluralformen *tonnen*. *tonen* (av *en ton*, tonfall) ligger i stället i grundordförrådets `irregularForms`, eftersom 17 moduler utanför *Vardag & hem* använder formen.
 
 ### Inte gjort
-- Ordposternas japanska definitioner (`defJa`) och japanska förklaringar är inte jämförda med de svenska. Japanska uppslagsord och exempelöversättningar är lästa.
-- *ton* (vikt) har kvar pluralformen *tonen* i stället för *tonnen*: 17 moduler utanför *Vardag & hem* använder *tonen* (av *en ton*) och godkänns bara genom den formen. Det behövs en egen ordpost för *ton* i betydelsen tonfall.
-- *tång* (redskap) delar ordpost med *tång* (i havet) och saknar därför pluralformerna *tänger*, *tängerna*.
+- *tång* (redskap) saknar pluralformerna *tänger*, *tängerna*. Den delar ordpost med *tång* (i havet), och betydelse-ID:t `s.tång.2` måste börja med ordpostens ID, så betydelsen kan inte få en egen ordpost utan att ett publicerat ID byts.
+- Furigana (läsningarna inom `{漢字|かんじ}`) är inte kontrollerade tecken för tecken.
 - Berättelsen hänger inte ihop mellan ämnesgrupperna: radhuset köps i *Bostadstyper & rum*, men i *Hyra, köpa & grannar* hyr paret en lägenhet och köper en bostadsrätt, och i *Resor & lokaltrafik* har Aiko, Erik och Leo andra roller. Det kräver omskrivning och ett beslut av produktägaren.
 - `npm test` och bygget har inte körts i den här sessionen (inga paket installerade). `validateContent` och `checkVocabulary` har körts över allt innehåll utan fel, och modulindexet är omgenererat.
 
