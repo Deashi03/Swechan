@@ -197,6 +197,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.hålla-sig.1',
   // 0.46 (Ekosystemets grunder), after two blind-test rounds
   's.talrik.1', 's.förekomma.1', 's.rubba.1', 's.samexistera.1',
+  // 0.46 (Biologisk mångfald), after two blind-test rounds
+  's.artfattig.1', 's.artrikedom.1', 's.ärva.2', 's.genetisk.1', 's.nära-hotad.1', 's.hotad.1', 's.dö-ut.1', 's.utrota.1', 's.främmande-art.1', 's.invasiv.1', 's.inhemsk.1', 's.naturvård.1', 's.naturhänsyn.1', 's.återställa.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
