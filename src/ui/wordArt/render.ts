@@ -160,6 +160,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'klimz.': () => import('./climateZones').then((m) => m.CLIMATE_ZONE_MOTIFS),
   'extrem.': () => import('./extremeWeather').then((m) => m.EXTREME_WEATHER_MOTIFS),
   'klimf.': () => import('./climateChange').then((m) => m.CLIMATE_CHANGE_MOTIFS),
+  'fagel.': () => import('./birds').then((m) => m.BIRD_MOTIFS),
+  'dagg.': () => import('./mammals').then((m) => m.MAMMAL_MOTIFS),
+  'fisk.': () => import('./aquatic').then((m) => m.AQUATIC_MOTIFS),
+  'insekt.': () => import('./invertebrates').then((m) => m.INVERTEBRATE_MOTIFS),
+  'krald.': () => import('./reptiles').then((m) => m.REPTILE_MOTIFS),
+  'beteende.': () => import('./animalBehaviour').then((m) => m.ANIMAL_BEHAVIOUR_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
