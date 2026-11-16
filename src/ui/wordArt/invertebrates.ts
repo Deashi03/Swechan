@@ -382,7 +382,6 @@ export const INVERTEBRATE_MOTIFS: Record<string, Svg> = {
   'insekt.lockespindel': all(bg('#efe9df'), rect(4, 4, 112, 108, '#e6ded0', 0, null), line('M4 70 L116 70', '#d4cabb', 1), at(60, 52, 1.7, harvestman())),
   'insekt.fästingbett': all(skinBg(), circle(60, 70, 22, 'rgba(214,69,69,0.18)', null), at(60, 70, 2.6, tick(true)), ring(60, 70, 30)),
   // 2736 Maskar och snäckor
-  'insekt.mask.2': all(bg(), field(60, '#9fc56a'), rect(4, 70, 112, 42, SOIL, 0, null), at(40, 60, 1, wormPath('M-26 0 C-20 -8 -10 6 -2 -2 C6 -10 14 0 22 -4')), at(70, 92, 1, wormPath('M-20 0 C-14 6 -6 -6 2 0 C10 6 18 -2 24 2', '#e6d6c0', 3.4)), at(92, 62, 1, wormPath('M-12 0 C-6 -6 2 4 10 -2', '#c97a6a', 3.6))),
   'insekt.luckra-upp': all(bg(), field(26, GRASS), panel(6, 32, 52, 76, rect(7, 33, 50, 74, '#7a5a3e', 2, null), ...range(18).map((i) => circle(12 + ((i * 29) % 44), 40 + ((i * 17) % 62), 3, '#9a7a56', null)), line('M20 40 C24 56 14 70 22 90 M42 38 C36 54 46 72 40 96', '#c9a882', 3.4), at(30, 76, 0.7, wormPath('M-12 0 C-6 -6 2 4 10 -2')), arrow(46, 40, 46, 66, WATER, 2), arrow(16, 40, 16, 60, '#cfe3f2', 2)),
     greyPanel(62, 32, 52, 76, rect(63, 33, 50, 74, '#a8a49e', 2, null), line('M66 50 L110 50 M66 70 L110 70 M66 90 L110 90', '#8f8b86', 2), arrow(88, 36, 88, 46, GREY2, 2), cross(88, 60, 6))),
   'insekt.vinbergssnäcka': all(bg('#e2ecd6'), rect(4, 92, 112, 20, '#9a9590', 0, null), leafShape(22, 86, 1.2, -20), at(58, 92, 2, snail('#d4b07a', '#cfbca2'))),
