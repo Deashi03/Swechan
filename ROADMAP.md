@@ -162,6 +162,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.46 – Ekologi & miljö (klar)
 - 42 nya moduler i Natur & geografi → Ekologi & miljö med 272 nya ordbilder. 43 ord saknar bild efter två blindtestomgångar.
 
+## v0.47 – Världsgeografi (klar)
+- 42 nya moduler i Natur & geografi → Världsgeografi med 243 nya ordbilder. 8 ord saknar bild efter två blindtestomgångar. Hela Natur & geografi (R05) är nu publicerat.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
