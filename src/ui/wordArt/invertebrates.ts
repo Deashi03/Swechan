@@ -257,6 +257,21 @@ const cycle = (icons: Svg[], cx = 60, cy = 58, r = 34) => {
   }));
 };
 
+// ── Frog and bird stages (blind-test round 2: livscykel, metamorfos) ─
+const FROG = '#6f9a3f';
+/** Tadpole to frog, side view facing right, belly at y=0: 0 tadpole, 1 hind legs, 2 four legs and short tail, 3 frog. */
+function frogStage(k: 0 | 1 | 2 | 3): Svg {
+  const tail = k === 0 ? 'M-4 -6 C-14 -10 -24 -4 -30 -8 C-24 0 -14 0 -4 -2 Z' : k === 1 ? 'M-4 -6 C-12 -9 -20 -4 -26 -7 C-20 0 -12 0 -4 -2 Z' : 'M-4 -5 C-8 -7 -11 -5 -13 -6 C-10 -2 -8 -2 -4 -2 Z';
+  if (k === 3) return all(path('M-10 0 C-16 -2 -16 -8 -10 -9 L-2 -4 Z', FROG, C.ink, 1.1), path('M-12 -2 C-12 -14 -2 -18 8 -16 C14 -15 16 -10 14 -6 C10 -1 0 0 -12 -2 Z', FROG, C.ink, 1.2),
+    path('M-8 -6 C-14 -10 -18 -4 -12 0 L-2 0 Z', shade(FROG, 0.85), C.ink, 1.1), line('M8 -8 L10 0 L14 0', C.ink, 1.4), line('M8 -8 L10 0 L14 0', FROG, 0.6), circle(8, -16, 3, FROG, C.ink, 1.1), circle(8.6, -16.4, 1.4, C.ink, null), line('M10 -9 C12 -8 14 -8 15 -9', C.ink, 0.8));
+  return all(path(tail, k === 2 ? FROG : '#5a5a4a', C.ink, 1), k >= 1 ? line('M-4 -3 L-8 2 L-4 3', C.ink, 1.6) + line('M-4 -3 L-8 2 L-4 3', k === 2 ? FROG : '#6a6a52', 0.8) : '',
+    k === 2 ? line('M6 -3 L7 2 L10 2', C.ink, 1.4) : '', ellipse(2, -5, 9, 6, k === 2 ? FROG : '#5a5a4a', C.ink, 1.2), circle(6, -7, 1.6, C.ink, null), circle(6.5, -7.5, 0.6, C.white, null));
+}
+/** A small bird side view facing right, feet at y=0. */
+const birdS = (col = '#c98a4a', s = 1) => at(0, 0, s, line('M-1 -4 L-2 0 M2 -4 L2 0', C.ink, 1.1), path('M-14 -10 L-6 -9 L-6 -6 Z', shade(col, 0.8), C.ink, 1), ellipse(0, -9, 8, 6, col, C.ink, 1.1), circle(7, -15, 4.4, col, C.ink, 1.1), path('M11 -16 L15 -15 L11 -13 Z', C.yellow, C.ink, 0.8), circle(8, -16, 0.9, C.ink, null), path('M-6 -10 C-2 -14 4 -12 4 -8 C0 -6 -4 -7 -6 -10 Z', shade(col, 0.8), null));
+const nestEggs = (n = 3) => all(path('M-12 -3 C-12 4 12 4 12 -3 Z', '#9a6a3a', C.ink, 1.1), ...range(n).map((i) => ellipse(-5 + i * 5, -4, 2.6, 3.2, '#cfe6ef', C.ink, 0.8)), line('M-12 -3 l3 2 M-6 1 l3 -2 M2 1 l3 -2 M8 -1 l3 2', '#7a4a24', 0.9));
+const chick = () => all(path('M-8 0 C-9 -6 -6 -10 -2 -9 L0 0 Z', '#e6eef2', C.ink, 0.9), ellipse(2, -6, 5, 5, '#f2d24a', C.ink, 1), circle(5, -11, 3.2, '#f2d24a', C.ink, 1), path('M8 -12 L11 -11 L8 -10 Z', '#ef8a3c', null), circle(5.6, -11.6, 0.7, C.ink, null), path('M-4 0 C-4 -3 8 -3 8 0 Z', '#e6eef2', C.ink, 0.9));
+
 // ── Recurring scenes ─────────────────────────────────────────────────
 const meadow = () => all(bg(), field(92), grassTufts(100, [12, 40, 86, 104]));
 const night = () => all(bg(NIGHT), starDot(20, 16), starDot(44, 24), starDot(98, 14), starDot(108, 34));
@@ -398,13 +413,17 @@ export const INVERTEBRATE_MOTIFS: Record<string, Svg> = {
     path('M30 40 C50 30 80 30 88 44 C96 58 70 62 50 58 C30 54 26 70 40 80 C54 90 80 88 90 82', 'none', '#f4efd8', 6), line('M30 40 C50 30 80 30 88 44 C96 58 70 62 50 58 C30 54 26 70 40 80 C54 90 80 88 90 82', '#c9bf9a', 6, '0.8 3'), circle(30, 40, 3, '#f4efd8', C.ink, 1)),
   // 2737 Metamorfos och livscykler
   'insekt.fluga.3': all(bg('#f3e6d4'), rect(4, 80, 112, 32, '#c9a27a', 0, null), path('M20 84 C20 66 100 66 100 84 Z', '#e0b070', C.ink, 1.4), path('M26 80 C30 72 90 72 94 80', 'none', '#f2d8a8', 2), at(62, 60, 2.6, fly())),
-  'insekt.livscykel': all(bg('#f2ede2'), cycle([stageIcon(0), stageIcon(1), stageIcon(2), stageIcon(3)])),
+  'insekt.livscykel': all(bg('#f2ede2'), circle(60, 60, 38, 'none', HL, 4.6), ...[0, 1, 2, 3].map((q) => { const a = -Math.PI / 2 + (q + 0.5) * Math.PI / 2 + 0.25, x = 60 + Math.cos(a) * 38, y = 60 + Math.sin(a) * 38, t = a + Math.PI / 2; return path(`M${f1(x + Math.cos(t) * 8)} ${f1(y + Math.sin(t) * 8)} L${f1(x + Math.cos(a) * 7)} ${f1(y + Math.sin(a) * 7)} L${f1(x - Math.cos(a) * 7)} ${f1(y - Math.sin(a) * 7)} Z`, HL, null); }),
+    circle(60, 22, 15, C.white, C.ink, 1.2), at(60, 28, 1, nestEggs()), circle(98, 60, 15, C.white, C.ink, 1.2), at(98, 67, 1, chick()), circle(60, 98, 15, C.white, C.ink, 1.2), at(60, 107, 0.8, birdS('#d9a86a')), circle(22, 60, 15, C.white, C.ink, 1.2), at(22, 70, 0.95, birdS()),
+    path('M50 54 C50 46 70 46 70 56 C70 64 58 66 54 60', 'none', GREY2, 2), path('M54 60 l-1 -6 l-5 4 Z', GREY2, null)),
   'insekt.larv': all(bg('#e6f2dc'), line('M8 70 C40 60 80 58 112 50', '#7a5a3a', 3.4), leafShape(40, 52, 2, -30), at(72, 54, 1.9, caterpillar()), strip(1)),
   'insekt.puppa': all(bg('#e6f2dc'), line('M10 14 L110 14', '#7a5a3a', 4), leafShape(30, 26, 1.2, 30), at(64, 16, 1.9, chrysalis()), strip(2)),
   'insekt.förpuppa-sig': all(bg('#e6f2dc'), line('M8 14 L112 14', '#7a5a3a', 4), at(30, 16, 1, line('M0 0 L0 6', C.ink, 1.4), g('rotate(90) translate(26 0)', caterpillar('#7cc44f', false, 6))),
     arrow(46, 46, 70, 46, HL, 3), at(88, 16, 1.7, chrysalis())),
   'insekt.fullbildad': all(bg('#e6f2dc'), rot(62, 42, 0, 0.95, bfly({ fw: '#ef8a3c', hw: '#e0602a', tips: C.ink, spots: [[-26, -18, 2.4, C.ink], [-18, 12, 2, C.ink]] })), strip(3)),
-  'insekt.metamorfos': all(bg('#f2ede2'), at(20, 96, 0.9, caterpillar()), at(58, 70, 1, chrysalis()), rot(96, 40, 0, 0.55, bfly({ fw: '#ef8a3c', hw: '#e0602a', tips: C.ink })), path('M20 80 C24 50 40 40 54 62', 'none', HL, 2.4), path('M54 62 l-2 -8 l-5 6 Z', HL, null), path('M66 72 C78 70 84 62 88 58', 'none', HL, 2.4), path('M88 58 l-8 1 l4 6 Z', HL, null)),
+  'insekt.metamorfos': all(bg(), rect(4, 58, 112, 54, WATER, 0, null), line('M4 58 L116 58', C.white, 1.2), path('M86 58 C90 50 116 48 116 52 L116 58 Z', '#8a7a5a', C.ink, 1), ellipse(96, 58, 18, 4, '#7fb356', C.ink, 1.1),
+    at(36, 106, 1.1, frogStage(0)), at(62, 92, 1.05, frogStage(1)), at(80, 76, 1.05, frogStage(2)), at(94, 56, 1.2, frogStage(3)),
+    path('M10 92 C16 50 50 30 84 30', 'none', HL, 3), path('M86 30 l-8 -4 l0 9 Z', HL, null)),
   'insekt.fullständig-förvandling': all(bg('#f2ede2'), cycle([stageIcon(0), stageIcon(1), stageIcon(2), stageIcon(3)]), circle(60, 58, 11, C.white, HL, 2.4), num(60, 62, '4', 12, HL)),
   'insekt.nymf': all(bg('#d4e8f5'), rect(4, 30, 112, 82, '#6fa8d6', 0, null), line('M4 30 L116 30', C.white, 1.2), rect(4, 100, 112, 12, '#8a7a5a', 0, null), line('M80 112 C78 80 84 50 82 20', LEAF2, 3), at(56, 80, 1.8, dragonNymph()), ring(58, 78, 26)),
   'insekt.ofullständig-förvandling': all(bg('#f2ede2'), cycle([at(0, 2, 1.4, egg()), at(2, 4, 0.3, grasshopper('#6fb33f', false)), at(3, 7, 0.46, grasshopper())]), circle(60, 58, 11, C.white, HL, 2.4), num(60, 62, '3', 12, HL),
