@@ -164,6 +164,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'dagg.': () => import('./mammals').then((m) => m.MAMMAL_MOTIFS),
   'fisk.': () => import('./aquatic').then((m) => m.AQUATIC_MOTIFS),
   'insekt.': () => import('./invertebrates').then((m) => m.INVERTEBRATE_MOTIFS),
+  'krald.': () => import('./reptiles').then((m) => m.REPTILE_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
