@@ -1,0 +1,180 @@
+{
+ "id": "m.fiskeforvaltning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Fiskeförvaltning",
+ "titleJa": "{漁業資源|ぎょぎょうしげん}の{管理|かんり}",
+ "descriptionSv": "Fiskeförvaltning: fiskebestånd, överfiske, förvalta, fiskekvot, fiskare, fiskebåt, trål, torsk, fångst, bifångst, fiskeförbud, återhämta sig, minimimått, fredad, fredningstid, fritidsfiske och fiskodling.",
+ "descriptionJa": "{漁業資源|ぎょぎょうしげん}の{管理|かんり}：{魚類資源|ぎょるいしげん}、{乱獲|らんかく}、{管理|かんり}する、{漁獲枠|ぎょかくわく}、{漁師|りょうし}、{漁船|ぎょせん}、トロール{網|あみ}、タラ、{漁獲|ぎょかく}、{混獲|こんかく}、{禁漁|きんりょう}、{回復|かいふく}する、{最小|さいしょう}{体長|たいちょう}、{保護|ほご}された、{禁漁期|きんりょうき}、{遊漁|ゆうぎょ}、{養魚場|ようぎょじょう}。",
+ "categoryId": "R05-A05-T05",
+ "tags": [
+  "natur",
+  "miljö",
+  "fiske"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.skogsbruk"
+ ],
+ "related": [],
+ "recommendedOrder": 2945,
+ "words": [
+  {
+   "senseId": "s.fiskebestånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överfiske.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvalta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fiskekvot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fiskare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fiskebåt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.torsk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fångst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bifångst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fiskeförbud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återhämta-sig.2",
+   "active": true
+  },
+  {
+   "senseId": "s.minimimått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fredad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fredningstid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fritidsfiske.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fiskodling.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är torsken?",
+  "paragraphs": [
+   "Göran är fiskare på västkusten, precis som hans pappa och morfar var. Förr kom fiskebåten in med en stor fångst av torsk nästan varje dag. I dag är det annorlunda.",
+   "Under många år fiskade man för mycket. Överfiske gjorde att fiskebestånden blev små. I östra Östersjön har torsken ännu inte återhämtat sig, och sedan 2019 är det fiskeförbud för torsk där.",
+   "Nu försöker man förvalta haven bättre. Forskare räknar ut hur mycket fisk som kan tas upp, och EU bestämmer en fiskekvot för varje land. Trålarna har också fått större hål, så att det blir mindre bifångst.",
+   "Det finns regler för fritidsfiske också. Fiskar som är mindre än minimimåttet ska släppas tillbaka. Under fredningstiden, när fiskarna lägger sina ägg, är vissa arter fredade.",
+   "Mycket av den fisk vi äter i dag kommer från fiskodling. – Det är inte samma sak som vild fisk, säger Göran, men jag hoppas att mina barnbarn också kan bli fiskare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur var fisket förr?",
+    "options": [
+     "Det fanns ingen torsk alls",
+     "Man fick bara fiska på sommaren",
+     "Man fiskade bara i sjöar",
+     "Båten kom in med mycket torsk nästan varje dag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Förr kom fiskebåten in med en stor fångst av torsk nästan varje dag.",
+    "explanationJa": "{昔|むかし}はほとんど{毎日|まいにち}タラがたくさん{獲|と}れました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blev fiskebestånden små?",
+    "options": [
+     "Vattnet blev för kallt",
+     "Man fiskade för mycket",
+     "Fiskarna flyttade till sjöar",
+     "Det kom för många fiskodlingar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Överfiske gjorde att fiskebestånden blev små.",
+    "explanationJa": "{獲|と}りすぎたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är en fiskekvot i texten?",
+    "options": [
+     "Ett nät med stora hål",
+     "En båt som fiskar torsk",
+     "Hur mycket fisk ett land får ta upp",
+     "En regel om fiskens längd"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… EU bestämmer en fiskekvot för varje land.",
+    "explanationJa": "{国|くに}ごとに{獲|と}ってよい{魚|さかな}の{量|りょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En fisk som är mindre än minimimåttet får man behålla.",
+    "correct": false,
+    "explanationSv": "Fiskar som är mindre än minimimåttet ska släppas tillbaka.",
+    "explanationJa": "{水|みず}に{戻|もど}さなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Göran hoppas att det finns fisk kvar i framtiden.",
+    "correct": true,
+    "explanationSv": "… jag hoppas att mina barnbarn också kan bli fiskare.",
+    "explanationJa": "{孫|まご}も{漁師|りょうし}になれることを{願|ねが}っています。"
+   }
+  ],
+  "factSources": [
+   "Torskbestånden i Östersjön minskade kraftigt, bland annat på grund av överfiske, och sedan 2019 är riktat fiske efter torsk i östra Östersjön stängt (Europeiska unionens råd; Havs- och vattenmyndigheten).",
+   "EU fastställer årliga fiskekvoter för bestånden i Östersjön och Västerhavet utifrån vetenskapliga råd från ICES (Havs- och vattenmyndigheten).",
+   "För fritidsfisket finns minimimått och fredningstider för vissa arter, och reglerna kan skilja sig mellan olika vatten; i havet och de största sjöarna är handredskapsfiske i regel fritt (Havs- och vattenmyndigheten)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fiske och om hur man kan skydda fisken i haven.",
+  "discussionPoints": [
+   "Äter du ofta fisk? Vilken sort?",
+   "Har du fiskat någon gång? Berätta!",
+   "Är det bättre att äta vild fisk eller fisk från en fiskodling? Varför?",
+   "Vad tycker du om fiskeförbud när ett fiskebestånd är litet?"
+  ]
+ }
+}
