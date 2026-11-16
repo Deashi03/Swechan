@@ -169,6 +169,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'trad.': () => import('./treesShrubs').then((m) => m.TREES_SHRUBS_MOTIFS),
   'blom.': () => import('./flowersHerbs').then((m) => m.FLOWERS_HERBS_MOTIFS),
   'grms.': () => import('./grassesMosses').then((m) => m.GRASSES_MOSSES_MOTIFS),
+  'svamp.': () => import('./fungi').then((m) => m.FUNGI_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
