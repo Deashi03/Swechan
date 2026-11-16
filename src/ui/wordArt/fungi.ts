@@ -65,7 +65,6 @@ const ring = (x: number, y: number, r: number, col: string = HL) => circle(x, y,
 const oval = (x: number, y: number, rx: number, ry: number, col: string = HL) => ellipse(x, y, rx, ry, 'none', col, 2.4);
 const warn = (x: number, y: number, s = 1) => at(x, y, s, path('M0 -11 L11 8 L-11 8 Z', '#ffe08a', RED, 2.4), line('M0 -4 L0 2', C.ink, 2.2), circle(0, 5, 1.2, C.ink, null));
 const check = (x: number, y: number, s = 1) => at(x, y, s, circle(0, 0, 8, WHITE, C.green, 2), line('M-4 0 L-1 3.5 L4.5 -3.5', C.green, 2.4));
-const cross = (x: number, y: number, s = 1) => at(x, y, s, circle(0, 0, 8, WHITE, RED, 2), line('M-3.5 -3.5 L3.5 3.5 M3.5 -3.5 L-3.5 3.5', RED, 2.4));
 const qmark = (x: number, y: number, s = 1) => at(x, y, s, circle(0, 0, 8, WHITE, C.navy, 1.6), path('M-3 -2.5 C-3 -7 3 -7 3 -3 C3 -0.5 0 0 0 2.5', 'none', C.navy, 2), circle(0, 5.2, 1.2, C.navy, null));
 const zoom = (cx: number, cy: number, r: number, fx: number, fy: number, inner: Svg) => all(
   line(`M${fx} ${fy} L${f1(cx - r * 0.7)} ${f1(cy + r * 0.7)}`, C.grey, 1.2, '2 2'), circle(fx, fy, 3, 'none', C.grey, 1.2), circle(cx, cy, r, WHITE, C.ink, 1.6), inner);
@@ -159,11 +158,9 @@ const bed = (x: number, y: number) => all(rect(x - 30, y, 60, 9, C.white, 2, C.i
 const sprayer = (x: number, y: number, s = 1) => at(x, y, s, rect(-6, -6, 12, 22, '#7ab8e8', 3, C.ink, 1.2), rect(-3, -12, 6, 6, C.white, 1, C.ink, 1), path('M3 -12 L12 -12 L12 -9 L3 -9 Z', C.white, C.ink, 1), path('M-3 -10 L-8 -4', 'none', C.ink, 1.6));
 const mist = (x: number, y: number) => all(...[[0, 0], [4, -3], [5, 3], [9, -1], [10, 5], [13, -4], [14, 2]].map(([dx, dy]) => circle(x + dx!, y + dy!, 1, WATERC, null)));
 const drop = (x: number, y: number, s = 1, col: string = WATERC) => path(`M${x} ${f1(y - 5 * s)} C${f1(x + 4 * s)} ${y} ${f1(x + 3 * s)} ${f1(y + 4 * s)} ${x} ${f1(y + 4 * s)} C${f1(x - 3 * s)} ${f1(y + 4 * s)} ${f1(x - 4 * s)} ${y} ${x} ${f1(y - 5 * s)} Z`, col, C.ink, 0.9);
-const sugarCube = (x: number, y: number, s = 1) => at(x, y, s, path('M-5 -3 L0 -6 L5 -3 L5 3 L0 6 L-5 3 Z', WHITE, C.ink, 1), line('M-5 -3 L0 0 L5 -3 M0 0 L0 6', C.ink, 0.8));
 const geo = (x: number, h = 1) => { const s = 0.84 * h, ty = 112 - 49 * s; return { s, ty, sy: f1(ty - 38 * s), sl: f1(x - 13 * s), sr: f1(x + 13 * s) }; };
 const reach = (x: number, h: number, side: -1 | 1, tx: number, ty: number) => { const q = geo(x, h); return all(arm(side < 0 ? q.sl : q.sr, q.sy, tx, ty), circle(tx, ty, f1(3 * Math.max(0.6, h)), C.skin, C.ink, 1.2)); };
 const fig = (x: number, top: string, mood: Mood = 'smile', h = 1, more: Record<string, unknown> = {}) => F({ x, top, mood, h, ...more });
-const thumbUp = (x: number, y: number, s = 1) => at(x, y, s, rect(-10, -2, 8, 16, C.skin, 2, C.ink, 1.2), path('M-2 0 C2 -4 3 -10 4 -14 C6 -18 10 -16 9 -11 L8 -4 L15 -4 C18 -4 19 0 17 2 C19 4 18 7 16 8 C18 10 16 13 14 13 L-2 13 Z', C.skin, C.ink, 1.2));
 const palm = (x: number, y: number, s = 1) => at(x, y, s, path('M-8 14 L-8 -2 C-8 -6 -4 -6 -4 -2 L-4 -10 C-4 -14 0 -14 0 -10 L0 -12 C0 -16 4 -16 4 -12 L4 -9 C4 -13 8 -13 8 -9 L8 6 C8 12 4 16 -2 16 Z', C.skin, C.ink, 1.2));
 const pulseFlat = (x: number, y: number, w: number, beat = true) => line(beat ? `M${x} ${y} L${x + w * 0.2} ${y} L${x + w * 0.26} ${y - 9} L${x + w * 0.34} ${y + 8} L${x + w * 0.4} ${y} L${x + w} ${y}` : `M${x} ${y} L${x + w} ${y}`, beat ? '#4ac06a' : RED, 2);
 const monitor = (x: number, y: number, beat: boolean) => all(rect(x - 20, y - 14, 40, 28, C.dark, 3, C.ink, 1.4), pulseFlat(x - 16, y, 32, beat), line(`M${x} ${y + 14} L${x} ${y + 22} M${x - 8} ${y + 22} L${x + 8} ${y + 22}`, C.ink, 2));
@@ -171,6 +168,18 @@ const calendar = (x: number, y: number, hi: number[], icon: (cx: number, cy: num
   ...range(12).map((i) => { const cx = x - 34 + (i % 4) * 23, cy = y - 12 + Math.floor(i / 4) * 17; const on = hi.includes(i + 1); return all(rect(cx - 10, cy - 7, 20, 15, on ? '#ffe6b8' : '#eef0f2', 2, on ? HL : C.grey2, on ? 1.6 : 0.8), on ? icon(cx + 4, cy + 6) : '', num(cx - 4, cy + 1, String(i + 1), 6.5, on ? C.ink : C.grey)); }));
 const hunterCap = (x: number, y: number, s = 1) => at(x, y, s, path('M-8 0 C-8 -9 8 -9 8 0 Z', AUT_O, C.ink, 1), rect(-2, -1, 14, 2.4, AUT_O, 1, C.ink, 0.8));
 const moose = (x: number, y: number, s = 1) => at(x, y, s, ellipse(0, -16, 14, 8, '#6a4a30', C.ink, 1.1), line('M-9 -10 L-9 0 M-4 -10 L-4 0 M5 -10 L5 0 M10 -10 L10 0', '#4a3020', 2.4), path('M12 -20 L20 -26 L26 -22 L24 -18 L16 -16 Z', '#6a4a30', C.ink, 1.1), path('M18 -26 C14 -32 16 -36 12 -38 M18 -26 C20 -32 24 -34 22 -38 M19 -26 C24 -30 28 -30 28 -34', 'none', '#c8a878', 2));
+
+const gauge = (x: number, y: number, r: number, v: number) => all(
+  path(`M${x - r} ${y} A${r} ${r} 0 0 1 ${f1(x - r * 0.5)} ${f1(y - r * 0.866)} L${x} ${y} Z`, '#7ac06a', C.ink, 1),
+  path(`M${f1(x - r * 0.5)} ${f1(y - r * 0.866)} A${r} ${r} 0 0 1 ${f1(x + r * 0.5)} ${f1(y - r * 0.866)} L${x} ${y} Z`, '#f2c14e', C.ink, 1),
+  path(`M${f1(x + r * 0.5)} ${f1(y - r * 0.866)} A${r} ${r} 0 0 1 ${x + r} ${y} L${x} ${y} Z`, RED, C.ink, 1),
+  line(`M${x} ${y} L${f1(x - Math.cos(v * Math.PI) * r * 0.85)} ${f1(y - Math.sin(v * Math.PI) * r * 0.85)}`, C.ink, 2.4), circle(x, y, 2.4, C.ink, null));
+const stopSign = (x: number, y: number, r: number) => all(path(range(8).map((i) => { const a = (i / 8) * Math.PI * 2 + Math.PI / 8; return `${i ? 'L' : 'M'}${f1(x + Math.cos(a) * r)} ${f1(y + Math.sin(a) * r)}`; }).join(' ') + ' Z', RED, C.ink, 1.6), palm(x, f1(y - 1), f1(r / 20)));
+const heartP = (x: number, y: number, s = 1, col: string = RED) => at(x, y, s, path('M0 8 C-12 0 -10 -10 -4 -10 C-1 -10 0 -8 0 -6 C0 -8 1 -10 4 -10 C10 -10 12 0 0 8 Z', col, C.ink, 1.2));
+const apple = (x: number, y: number, s = 1) => at(x, y, s, path('M0 -6 C-4 -9 -10 -7 -10 0 C-10 7 -5 10 0 8 C5 10 10 7 10 0 C10 -7 4 -9 0 -6 Z', RED, C.ink, 1.1), line('M0 -6 L1 -10', BARK, 1.4), path('M1 -9 C4 -12 7 -10 7 -9 C5 -8 3 -8 1 -9 Z', LEAF, C.ink, 0.6));
+const ball = (x: number, y: number, col: string) => circle(x, y, 3.6, col, C.ink, 1);
+
+const umbrella = (x: number, y: number, s = 1) => at(x, y, s, path('M-10 0 C-10 -12 10 -12 10 0 Z', C.red, C.ink, 1), line('M0 0 L0 12', C.ink, 1.2));
 
 // ── Motifs ───────────────────────────────────────────────────────────
 export const FUNGI_MOTIFS: Record<string, Svg> = {
@@ -204,8 +213,10 @@ export const FUNGI_MOTIFS: Record<string, Svg> = {
   'svamp.svampförgiftning': all(bg(PAPER), bed(66, 82), at(0, 0, 1, path('M44 82 C44 72 50 70 56 72 L94 74 C96 76 96 82 94 82 Z', '#bfe3f5', C.ink, 1.2)), circle(44, 72, 8, '#cfe0b0', C.ink, 1.4), path('M40 74 q2 -2 4 0 M46 74 q2 -2 4 0', 'none', C.ink, 1), path('M41 79 q3 -2 6 0', 'none', C.ink, 1.1), path('M36 66 C36 60 52 60 52 66 Z', C.hair, null),
     rect(84, 64, 30, 4, C.tan, 1, C.ink, 1), line('M90 68 L90 112 M108 68 L108 112', C.brown, 2.4), ellipse(99, 62, 12, 3, WHITE, C.ink, 1.1), mush(99, 62, 0.45, { cap: CORT, shape: 'cone' }), line('M20 30 C24 24 28 36 32 30 C36 24 40 36 44 30', '#7ab060', 1.6), warn(98, 30, 1.2)),
   'svamp.dödlig.2': all(bg(PAPER), deathCap(26, 92, 1.3), arrow(44, 64, 62, 64, HL, 3), monitor(88, 62, false), greyed(monitor(88, 26, true))),
-  'svamp.livsfarlig': all(bg(), floor(96), fig(36, C.green, 'smile', 0.9), reach(36, 0.9, 1, 54, 64), at(54, 64, 0.5, deathCap(0, 10, 1)), warn(84, 48, 3), line('M100 22 L110 14 M104 30 L114 28', RED, 2)),
-  'svamp.förväxlingsrisk': all(bg(), floor(96), tratt(34, 104, 2.2), cortin(84, 104, 1.6, { cap: '#8a5a3a', stem: '#e8b860' }), path('M54 58 L66 58 M54 66 L66 66', 'none', C.ink, 2.2), check(34, 22, 1.2), warn(84, 22, 1.3), path('M44 40 C52 30 68 30 76 40', 'none', HL, 2.4), path('M73 34 L76 40 L70 41', 'none', HL, 2.4), path('M47 34 L44 40 L50 41', 'none', HL, 2.4)),
+  'svamp.livsfarlig': all(bg(), floor(100), line('M56 4 L56 14 M56 20 L56 30', C.ink, 0.8), line('M56 14 L53 17 M56 14 L59 17 M56 20 L53 17.5 M56 20 L59 17.5', C.ink, 0.5), heartP(56, 48, 2), pulseFlat(44, 46, 24, true), warn(92, 28, 1.4), deathCap(56, 106, 0.85),
+    greyed(heartP(104, 98, 0.9), chant(86, 108, 0.45))),
+  'svamp.förväxlingsrisk': all(bg(), floor(100), tratt(24, 98, 1.5), cortin(52, 98, 1.05, { cap: '#7a5a3a', stem: '#e8c040' }), gauge(38, 40, 22, 0.88), warn(70, 22, 1),
+    greyed(flyAg(84, 108, 0.6), chant(106, 108, 0.6), gauge(95, 72, 13, 0.12))),
   'svamp.fördröjd': all(bg(PAPER), line('M10 100 L110 100', C.grey, 2), fig(18, C.green, 'smile', 0.42), at(30, 92, 0.4, cortin(0, 0, 1)), line('M30 78 L82 78', HL, 2.6, '4 4'), path('M82 72 L90 78 L82 84', 'none', HL, 2.6), clock(56, 54, 11, 9), num(56, 34, '48', 9), fig(100, C.green, 'sick', 0.42, { skin: '#cfe0b0' })),
 
   // 2833 Svampens byggnad
@@ -241,17 +252,24 @@ export const FUNGI_MOTIFS: Record<string, Svg> = {
   'svamp.häxring': all(bg(), rect(4, 40, 112, 72, '#8cc96a', 0, null), line('M4 40 L116 40', '#6fae55', 1), ...range(13).map((i) => { const a = (i / 13) * Math.PI * 2; return mush(f1(60 + Math.cos(a) * 40), f1(80 + Math.sin(a) * 22), f1(0.42 + Math.sin(a) * 0.08), { shape: 'dome', cap: '#d8c8a8', stem: WHITE }); }), ellipse(60, 80, 30, 14, 'none', '#6fae55', 1, )),
   'svamp.underjordisk': all(bg(), section(48), greyed(decid(26, 45, 0.6), mush(90, 45, 0.6)), threads(84, 70, 0.7), line('M26 46 C22 60 14 66 10 72 M26 46 C30 62 38 70 46 74', BARK2, 2), at(60, 96, 1, ellipse(0, 0, 14, 6, '#4a3424', C.ink, 1), ellipse(-6, -2, 4, 3, '#7a6a5a', null)), arrow(60, 30, 60, 60, HL, 3.4), rect(8, 52, 104, 56, 'none', 3, HL, 2)),
   'svamp.mikroskopisk': all(bg(PAPER), microscope(28, 104, 1.4), zoom(84, 44, 26, 32, 70, all(...[[72, 36], [84, 30], [96, 40], [80, 52], [92, 56], [70, 50]].map(([x, y]) => ellipse(x!, y!, 4.6, 3, '#a8784a', C.ink, 1)))), circle(30, 69, 0.8, '#a8784a', null), greyed(circle(96, 98, 7, '#a8784a', C.ink, 1))),
-  'svamp.utbyte': all(bg(), section(70), at(28, 70, 1, decid(0, 0, 0.8)), mush(92, 70, 0.9, { shape: 'bun', cap: '#c8803a' }), thread('M92 72 C80 84 50 86 34 80 M28 72 C34 80 38 84 34 80', 1.3), path('M42 36 C58 26 72 26 86 36', 'none', HL, 2.6), path('M80 30 L86 36 L78 38', 'none', HL, 2.6), sugarCube(64, 22, 1.3), path('M86 54 C72 64 56 64 42 54', 'none', '#3f86c0', 2.6), path('M48 60 L42 54 L50 52', 'none', '#3f86c0', 2.6), drop(64, 66, 1.4)),
+  'svamp.utbyte': all(bg(PAPER), floor(104, '#d9d2c4'), fig(22, C.orange, 'smile', 0.75), fig(98, C.green, 'smile', 0.75), apple(44, 40, 1.2), book(78, 40, 0.42),
+    path('M38 26 C52 12 68 12 82 24', 'none', HL, 2.6), path('M76 18 L83 25 L74 27', 'none', HL, 2.6), path('M84 58 C70 70 50 70 36 58', 'none', '#3f86c0', 2.6), path('M43 66 L36 58 L45 56', 'none', '#3f86c0', 2.6),
+    greyed(arrow(46, 94, 74, 94, C.grey, 2.4))),
 
   // 2835 Nedbrytare i naturen
-  'svamp.angripa.2': all(bg(), floor(100), at(42, 108, 1.4, path('M-5 0 L-4 -40 L4 -40 L5 0 Z', BARK, C.ink, 1.2), line('M0 -36 L-12 -48 M0 -38 L12 -52', BARK, 2.4), ...[[-12, -52, 8], [12, -56, 8], [0, -58, 9]].map(([x, y, r]) => circle(x!, y!, r!, '#b8b060', C.ink, 1))),
-    ...[[36, 92], [50, 82], [36, 72]].map(([x, y], i) => bracket(x!, y!, 0.7, '#c8a878', i === 1)), arrow(22, 86, 34, 84, HL, 2.4), arrow(66, 76, 54, 78, HL, 2.4), greyed(decid(100, 108, 0.8))),
+  'svamp.angripa.2': all(bg(), rot(52, 62, -30, 1, path('M-40 0 C-24 -26 20 -28 42 0 C20 28 -24 26 -40 0 Z', LEAF, C.ink, 1.4), line('M-40 0 L42 0 M-20 0 L-8 -14 M0 0 L10 -16 M-20 0 L-8 14 M0 0 L10 16', LEAF2, 1), line('M-52 0 L-40 0', LEAF2, 2)),
+    circle(60, 56, 16, '#c8b040', null), circle(60, 56, 10, '#a87a30', null), circle(60, 56, 5, '#5a3a18', null), ...[[46, 48], [76, 66], [72, 44]].map(([x, y]) => circle(x!, y!, 2.6, '#8a5a2a', null)),
+    spores(60, 20, 10, 10, '#5a3a20'), arrow(60, 18, 60, 40, '#8a5a2a', 1.8), oval(60, 56, 20, 18),
+    greyed(rot(98, 98, -20, 0.45, path('M-40 0 C-24 -26 20 -28 42 0 C20 28 -24 26 -40 0 Z', LEAF, C.ink, 1.4)))),
   'svamp.rötsvamp': all(bg(), floor(100), at(54, 104, 1, rect(-40, -16, 80, 18, '#a87a4a', 3, C.ink, 1.3), ...[[-30, -10], [-10, -12], [12, -8], [28, -12]].map(([x, y]) => path(`M${x} ${y} l3 3 l-2 3 l4 2`, 'none', '#5a3a20', 1)), ...[[-24, 2], [6, 3], [30, 2]].map(([x, y]) => ellipse(x!, y!, 3, 1.6, '#c8a070', C.ink, 0.6))), mush(36, 88, 0.6, { cap: '#c8a060', shape: 'flat' }), mush(48, 88, 0.45, { cap: '#c8a060', shape: 'flat' }), mush(72, 88, 0.5, { cap: '#c8a060', shape: 'flat' }),
     zoom(88, 34, 20, 60, 92, all(path('M72 30 L104 30 L104 44 L72 44 Z', '#c8a070', C.ink, 1), path('M74 34 l4 4 l-3 3 M86 32 l2 5 l4 2 M96 36 l3 4', 'none', '#5a3a20', 1), thread('M72 26 C80 20 90 30 104 24', 1.6)))),
   'svamp.ticka': all(bg(), floor(100), at(50, 112, 1, path('M-10 0 L-9 -100 L9 -100 L10 0 Z', BIRCH, C.ink, 1.4), line('M-8 -20 L2 -20 M-2 -46 L8 -46 M-8 -72 L0 -72 M2 -86 L8 -86', C.ink, 1.6)), bracket(60, 50, 1.4, '#b89a78'), bracket(60, 70, 1.1, '#a88a6a'), bracket(40, 82, 1, '#b89a78', true), oval(76, 52, 20, 11), greyed(spruce(100, 108, 0.9))),
-  'svamp.murken': all(bg(), floor(100), stock(14, 92, 54, 10, '#a87a4a'), ...[[40, 104], [48, 108], [34, 108], [44, 112]].map(([x, y]) => rect(x!, y! - 4, 4, 3, '#a87a4a', 1, C.ink, 0.6)), path('M38 82 l3 4 l-2 4 l4 3 M52 84 l2 4 l-3 4', 'none', '#5a3a20', 1), fig(92, C.orange, 'shock', 0.8), reach(92, 0.8, -1, 62, 82), greyed(stock(20, 30, 40, 7, BARK))),
-  'svamp.frigöra': all(bg(), section(70), rot(60, 52, -10, 2.4, path('M0 0 C4 -6 16 -6 22 0 C16 6 4 6 0 0 Z', '#a8783a', C.ink, 0.7)), path('M70 44 l3 4 l-3 3 M80 52 l2 3', 'none', '#5a3a20', 0.8), ...range(10).map((i) => circle(50 + (i % 5) * 9, 74 + Math.floor(i / 5) * 10 + (i % 2) * 3, 2, C.yellow, C.ink, 0.7)),
-    ...[[54, 70, 52, 86], [72, 70, 70, 84], [88, 70, 92, 86]].map(([a, b, c, d]) => arrow(a!, b!, c!, d!, HL, 2.2)), at(22, 70, 1, line('M0 0 L0 -30', LEAF2, 2.2), path('M0 -16 C-8 -22 -12 -16 -12 -12 C-6 -12 -2 -14 0 -16 Z M0 -24 C8 -30 12 -24 12 -20 C6 -20 2 -22 0 -24 Z', LEAF, C.ink, 1), line('M0 0 L-6 14 M0 0 L6 16 M0 0 L0 20', '#e8e0c8', 1.4)), path('M40 96 C30 96 26 92 22 88', 'none', HL, 2, ), path('M27 86 L22 88 L25 93', 'none', HL, 2)),
+  'svamp.murken': all(bg(), greyed(rect(14, 36, 72, 14, WOODL, 2, C.ink, 1.3), line('M20 41 L80 41 M24 46 L74 46', WOODD, 0.8), at(50, 20, 1, palm(0, 0, 0.9))),
+    path('M14 84 L40 84 C44 92 56 92 60 84 L86 84 L86 98 L14 98 Z', '#c8a070', C.ink, 1.3), ...[[22, 90], [32, 94], [70, 90], [78, 94], [64, 95]].map(([x, y]) => ellipse(x!, y!, 1.8, 1.1, '#6a4a2a', null)), path('M42 86 l3 4 M56 86 l-3 4 M48 92 l2 3', 'none', '#6a4a2a', 1),
+    at(50, 70, 1, palm(0, 0, 1)), ...[[40, 104], [46, 108], [56, 106], [62, 110], [50, 111]].map(([x, y]) => rect(x!, y!, 3, 2, '#c8a070', 0.5, C.ink, 0.5)), line('M30 78 l-4 -3 M70 78 l4 -3', HL, 1.6), oval(50, 92, 16, 9)),
+  'svamp.frigöra': all(bg(), rect(16, 50, 40, 40, 'none', 2, C.dark, 2), line('M26 50 L26 90 M36 50 L36 90 M46 50 L46 90', C.dark, 1.6), path('M56 50 L80 34 L80 74 L56 90', 'none', C.dark, 2), line('M64 45 L64 85 M72 40 L72 79', C.dark, 1.4),
+    ball(30, 82, C.yellow), ...[[70, 30, C.yellow], [86, 46, '#7ab8e8'], [96, 26, C.pink], [104, 60, C.mint], [90, 16, '#f0a040']].map(([x, y, c]) => all(ball(x as number, y as number, c as string), line(`M${(x as number) - 10} ${(y as number) + 6} l6 -3`, C.grey, 1.2))), arrow(56, 66, 70, 58, HL, 2.4),
+    greyed(rect(16, 94, 22, 14, 'none', 1, C.dark, 1.6), line('M23 94 L23 108 M30 94 L30 108', C.dark, 1.2), ball(26, 102, C.yellow), ball(33, 102, C.pink))),
 
   // 2836 Svampodling
   'svamp.svampodling': all(bg('#ece6dc'), rect(10, 20, 4, 92, WOODD, 0, C.ink, 1), rect(106, 20, 4, 92, WOODD, 0, C.ink, 1), ...[44, 76, 106].map((y) => rect(10, y, 100, 4, WOODD, 1, C.ink, 1)),
@@ -276,11 +294,15 @@ export const FUNGI_MOTIFS: Record<string, Svg> = {
   'svamp.svampplockare': all(bg(), floor(100), spruce(20, 104, 0.8), spruce(104, 102, 0.75), fig(54, C.orange, 'smile', 0.9, { bottom: C.green }), basket(80, 96, 1.1, all(chant(-4, -12, 0.35), chant(4, -12, 0.3))), reach(54, 0.9, 1, 72, 82), chant(30, 108, 0.7), chant(40, 110, 0.5)),
   'svamp.svampkniv': all(bg(), knife(62, 56, -20, 2.4), oval(25, 69, 10, 9), greyed(knife(66, 98, 0, 1.4, false))),
   'svamp.svampbok': all(bg(PAPER), book(52, 54, 1.6, all(chant(-14, 18, 0.45), tratt(-6, 18, 0.35)), all(bolete(14, 18, 0.4), flyAg(6, 18, 0.25))), chant(100, 104, 0.9), arrow(94, 84, 80, 72, HL, 2.4)),
-  'svamp.svampkunnig': all(bg(), floor(100), fig(32, C.green, 'laugh', 0.85), at(56, 52, 1, chant(0, 0, 0.5), check(10, -18, 0.6)), at(10, 34, 1, flyAg(0, 0, 0.35), cross(10, -12, 0.5)), greyed(fig(92, C.grey, 'frown', 0.75)), greyed(mush(110, 100, 0.5)), qmark(92, 18, 1)),
+  'svamp.svampkunnig': all(bg(), floor(100), fig(24, C.green, 'laugh', 0.75), reach(24, 0.75, 1, 40, 76), book(42, 70, 0.3), ellipse(64, 24, 36, 16, WHITE, C.ink, 1.4), circle(36, 46, 2.6, WHITE, C.ink, 1), circle(42, 39, 3.4, WHITE, C.ink, 1),
+    chant(40, 30, 0.35), bolete(54, 32, 0.32), flyAg(68, 30, 0.3), tratt(80, 32, 0.4), russula(90, 30, 0.3, '#7aa84a'), check(48, 14, 0.4), check(74, 14, 0.4),
+    greyed(fig(98, C.grey, 'frown', 0.6), ellipse(102, 40, 12, 8, WHITE, C.ink, 1.2), circle(100, 52, 2, WHITE, C.ink, 1))),
   'svamp.svampkonsulent': all(bg(PAPER), rect(4, 82, 112, 6, C.tan, 2, C.ink, 1.2), line('M14 88 L14 112 M106 88 L106 112', C.brown, 3), fig(30, C.navy, 'calm', 0.85), basket(64, 82, 1.2, all(chant(-5, -12, 0.35), mush(5, -12, 0.35, { cap: CORT, shape: 'cone' }))), at(46, 64, 1, circle(0, 0, 7, 'rgba(220,240,250,0.6)', C.ink, 1.6), line('M5 5 L11 11', C.dark, 3)), reach(30, 0.85, 1, 42, 66),
     fig(96, C.orange, 'smile', 0.75), at(30, 52, 1, rect(-5, -3, 10, 7, C.yellow, 1, C.ink, 0.8), chant(0, 3, 0.12))),
-  'svamp.vid-minsta-tvekan': all(bg(), floor(100), fig(34, C.green, 'calm', 0.85), at(64, 58, 1, cortin(0, 0, 0.6)), qmark(54, 16, 0.6), arrow(72, 46, 86, 46, HL, 2.6), palm(100, 46, 1.2), cross(100, 80, 1.2)),
-  'svamp.tumregel': all(bg(PAPER), thumbUp(24, 60, 1.6), rect(50, 20, 60, 80, WHITE, 3, C.ink, 1.4), at(64, 40, 1, chant(0, 8, 0.3)), check(94, 38, 0.9), at(64, 64, 1, qmark(0, 0, 0.7)), cross(94, 64, 0.9), at(64, 88, 1, mush(0, 6, 0.3, { cap: CORT, shape: 'cone' })), cross(94, 86, 0.9)),
+  'svamp.vid-minsta-tvekan': all(bg(), floor(100), fig(30, C.green, 'calm', 0.8), reach(30, 0.8, 1, 46, 70), at(46, 74, 1, cortin(0, 0, 0.45)), qmark(38, 22, 0.32), ring(38, 22, 6), arrow(52, 34, 66, 40, HL, 2.4), stopSign(90, 52, 22),
+    greyed(qmark(104, 92, 1.1))),
+  'svamp.tumregel': all(bg(), line('M60 46 L60 112', C.dark, 3), rect(30, 8, 60, 38, WHITE, 4, C.ink, 1.8), at(46, 27, 1, path('M-10 4 C-14 4 -14 -4 -8 -4 C-8 -10 2 -12 4 -6 C10 -8 12 2 6 4 Z', C.grey2, C.ink, 1)), arrow(56, 27, 66, 27, C.ink, 1.8), umbrella(76, 26, 0.9),
+    ...[[18, 0.6, C.orange], [40, 0.45, C.yellow], [96, 0.6, C.navy]].map(([x, h, c]) => { const hh = h as number, xx = x as number; return all(fig(xx, c as string, 'smile', hh), umbrella(xx + 6, f1(112 - 92 * hh - 10), 0.8), reach(xx, hh, 1, xx + 6, f1(112 - 92 * hh + 4)), check(xx + 14, f1(112 - 92 * hh - 22), 0.55)); })),
   'svamp.jaktsäsong': all(bg('#f4ead8'), floor(98, '#b8a86a'), spruce(20, 104, 0.8), decid(100, 100, 0.8, AUT_O), moose(78, 106, 1), fig(38, AUT_O, 'calm', 0.8, { bottom: '#5a6a3a' }), hunterCap(38, 30, 1.1), line('M50 70 L66 52', C.dark, 2.6), reach(38, 0.8, 1, 54, 66),
     at(98, 24, 0.7, rect(-14, -12, 28, 26, WHITE, 2, C.ink, 1.2), rect(-14, -12, 28, 6, RED, 2, C.ink, 1), leafBit(-6, 6, -30, AUT_O, 1))),
 };
