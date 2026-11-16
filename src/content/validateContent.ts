@@ -177,6 +177,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.uppvärmning.2', 's.påverkan.2', 's.global-uppvärmning.1', 's.beräkna.1', 's.självförstärkande.1', 's.klimatmål.1', 's.fossilfri.1',
   // 0.44 (Däggdjur), after two blind-test rounds
   's.parningstid.1', 's.anpassning.2', 's.varmblodig.1',
+  // 0.44 (Fåglar), after two blind-test rounds
+  's.övervintra.1', 's.flyttande.1', 's.flygfärdig.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
