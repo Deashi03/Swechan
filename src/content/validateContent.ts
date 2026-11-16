@@ -207,6 +207,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.miljökvalitetsmål.1', 's.indikator.1', 's.föreläggande.1', 's.försiktighetsprincip.1', 's.vite.1', 's.miljösanktionsavgift.1', 's.skyddat-område.1', 's.inrätta.1', 's.skötselplan.1', 's.utsläppshandel.1', 's.utsläppsrätt.1', 's.miljökonsekvensbeskrivning.1', 's.sakägare.1', 's.miljökonsekvensbedömning.1', 's.exploatör.1', 's.miljömärkning.1',
   // 0.47 (Europa), after two blind-test rounds
   's.gränsa-till.1', 's.dvärgstat.1', 's.areal.1', 's.regeringssäte.1', 's.nordbo.1',
+  // 0.47 (Kartor & orientering), after two blind-test rounds
+  's.sydlig.1', 's.i-verkligheten.1', 's.position.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
