@@ -1,7 +1,7 @@
 {
  "id": "m.incheckning-och-sakerhetskontroll",
  "contentVersion": 2,
- "updatedAt": "2026-11-16",
+ "updatedAt": "2026-11-17",
  "titleSv": "Incheckning och säkerhetskontroll",
  "titleJa": "チェックインと{保安|ほあん}{検査|けんさ}",
  "descriptionSv": "Incheckning och säkerhetskontroll: passagerare, incheckning, checka in, självincheckning, incheckningsdisk, bagageinlämning, boardingkort, boarding, säkerhetskontroll, säkerhetspersonal, tömma fickorna, skanna, larma, kroppsvisitera, förbjudna föremål och sista utrop.",
@@ -86,11 +86,11 @@
  "reading": {
   "titleSv": "Nästan för sent",
   "paragraphs": [
-   "Leo ska flyga till London. Han checkar in i appen kvällen före. Incheckningen går snabbt, men han har en stor väska.",
+   "Jonas ska flyga till London. Han checkar in i appen kvällen före. Incheckningen går snabbt, men han har en stor väska.",
    "På flygplatsen går han först till självincheckningen och skriver ut en lapp till väskan. Sedan lämnar han väskan vid bagageinlämningen. Vid incheckningsdisken frågar han om en fönsterplats.",
    "Sedan går han till säkerhetskontrollen. Det är lång kö. Säkerhetspersonalen säger: – Du måste tömma fickorna och ta av bältet.",
-   "När Leo går igenom larmar det. Han har glömt nycklarna i jackan. En man kroppsvisiterar honom. Sedan skannar de hans väska igen. Där ligger en liten kniv, och förbjudna föremål måste man slänga.",
-   "Plötsligt hör Leo: – Sista utrop för passagerare till London! Han springer till gaten.",
+   "När Jonas går igenom larmar det. Han har glömt nycklarna i jackan. En man kroppsvisiterar honom. Sedan skannar de hans väska igen. Där ligger en liten kniv, och förbjudna föremål måste man slänga.",
+   "Plötsligt hör Jonas: – Sista utrop för passagerare till London! Han springer till gaten.",
    "Där har boardingen redan börjat. Han visar sitt boardingkort och kommer med i sista stund."
   ],
   "questions": [
@@ -98,7 +98,7 @@
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "När gör Leo incheckningen?",
+    "promptSv": "När gör Jonas incheckningen?",
     "options": [
      "På morgonen vid disken",
      "Kvällen före i appen",
@@ -115,8 +115,8 @@
     "focus": "cause",
     "promptSv": "Varför larmar det?",
     "options": [
-     "Leo har nycklar i jackan",
-     "Leo har en kniv i fickan",
+     "Jonas har nycklar i jackan",
+     "Jonas har en kniv i fickan",
      "Väskan är för stor",
      "Maskinen är trasig"
     ],
@@ -128,7 +128,7 @@
     "kind": "truefalse",
     "id": "q3",
     "focus": "detail",
-    "statementSv": "Leo får behålla kniven.",
+    "statementSv": "Jonas får behålla kniven.",
     "correct": false,
     "explanationSv": "… förbjudna föremål måste man slänga.",
     "explanationJa": "{捨|す}てなければなりません。"
@@ -137,7 +137,7 @@
     "kind": "choice",
     "id": "q4",
     "focus": "detail",
-    "promptSv": "Vad hör Leo efter säkerhetskontrollen?",
+    "promptSv": "Vad hör Jonas efter säkerhetskontrollen?",
     "options": [
      "Spårändring",
      "Att planet har landat",
@@ -152,7 +152,7 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Leo hinner med planet.",
+    "statementSv": "Jonas hinner med planet.",
     "correct": true,
     "explanationSv": "… kommer med i sista stund.",
     "explanationJa": "ぎりぎり{間|ま}に{合|あ}いました。"
