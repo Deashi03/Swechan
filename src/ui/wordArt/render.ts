@@ -196,6 +196,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'prob.': () => import('./probability').then((m) => m.PROBABILITY_MOTIFS),
   'disk.': () => import('./discreteMath').then((m) => m.DISCRETE_MOTIFS),
   'mspec.': () => import('./mathSpecial').then((m) => m.MATHSPECIAL_MOTIFS),
+  'mek.': () => import('./mechanics').then((m) => m.MECHANICS_MOTIFS),
+  'vag.': () => import('./wavesSound').then((m) => m.WAVES_MOTIFS),
+  'opt.': () => import('./lightOptics').then((m) => m.OPTICS_MOTIFS),
+  'elm.': () => import('./electricity').then((m) => m.ELECTRICITY_MOTIFS),
+  'term.': () => import('./thermo').then((m) => m.THERMO_MOTIFS),
+  'mfys.': () => import('./modernPhysics').then((m) => m.MODERNPHYS_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};

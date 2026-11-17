@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.49.0 (släppt 2026-11-17) · **Senast uppdaterad:** 2026-11-17 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.50.0 (släppt 2026-11-17) · **Senast uppdaterad:** 2026-11-17 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 349 publicerade moduler. 1 344 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48) och *Avancerad matematik* (R06-A02, 0.49). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 391 publicerade moduler. 1 386 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48), *Avancerad matematik* (R06-A02, 0.49) och *Fysik* (R06-A03, 0.50). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Fysik* (R06-A03) i *Matematik & naturvetenskap*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Kemi* (R06-A04) i *Matematik & naturvetenskap*. Grupperna *Atomer & periodiska systemet* och *Molekyler & kemiska bindningar* innehåller redan de ursprungliga modulerna *Atomer och molekyler* och *Material och ämnen* (åtta val var). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 15 135 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 15 427 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp: överämnet *Fysik* (R06-A03) i *Matematik & naturvetenskap*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp: överämnet *Kemi* (R06-A04) i *Matematik & naturvetenskap*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -194,6 +194,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Diskret matematik: `s.implikation.1`, `s.omvändning.1`, `s.motsägelsebevis.1`, `s.direkt-bevis.1`, `s.axiom.1`, `s.graf.2`, `s.träd.2`, `s.sökning.1`, `s.föregående.1`, `s.komplexitet.1`
   - Matematikens specialområden: `s.deformera.1`, `s.exakt.1`, `s.noggrannhet.2`, `s.numerisk.1`, `s.startvärde.1`, `s.målfunktion.1`, `s.chiffer.1`, `s.kryptografi.1`, `s.öppen-nyckel.1`
   - Förväxlingarna: *derivata/derivera/lutning*, *tangeringspunkt/tangent/nudda*, *primitiv funktion/integrera*, *integrationskonstant/konstant*, *tillryggalagd/sträcka*, *begynnelsevillkor/villkor*, *vektor/riktning*, *komponent/koordinat*, *egenvärde/faktor*, *osannolik/sannolikhet*, *komplementhändelse/händelse*, *permutation/ordningsföljd*, *väntevärde/medelvärde*, *varians/spridning*, *implikation/tillräckligt villkor*, *omvändning/nödvändigt villkor*, *motsägelsebevis/motsägelse*, *graf/nätverk*, *träd/hierarki*, *sökning/linjär sökning*, *deformera/töja*, *exakt/noggrannhet*, *chiffer/kryptera/kryptografi*, *målfunktion/maximera*. Högskolematematikens fackord ligger ofta i par (verb/substantiv, begrepp/metod) som inte går att skilja i en stillbild.
+- **Från 0.50 (32 ord):**
+  - Mekanik: `s.förflyttning.1`, `s.rörelse.1`, `s.momentanhastighet.1`, `s.retardation.1`, `s.newton.1`, `s.motkraft.1`, `s.energiomvandling.1`, `s.vridmoment.1`
+  - Vågor & ljud: `s.svängning.1`, `s.hertz.1`, `s.periodisk.1`
+  - Ljus & optik: `s.reflektion.2`, `s.förstoring.1`, `s.samlingslins.1`, `s.spridningslins.1`
+  - Elektricitet & magnetism: `s.resistans.1`
+  - Värmelära & termodynamik: `s.smältpunkt.1`, `s.tillföra.1`, `s.värmeförlust.1`, `s.termodynamik.1`, `s.inre-energi.1`, `s.energiprincipen.1`, `s.entropi.1`, `s.diffusion.1`, `s.oordning.1`
+  - Modern fysik: `s.foton.1`, `s.kvantum.1`, `s.kvanttal.1`, `s.spektrallinje.1`, `s.sönderfall.1`, `s.kvantmekanik.1`, `s.partikelstråle.1`
+  - Förväxlingarna: *retardation/bromsa*, *newton/tyngd*, *vridmoment/hävstång*, *energiomvandling/omvandla*, *svängning/vibration*, *hertz/frekvens*, *periodisk/regelbunden*, *reflektion/reflektera*, *förstoring/lupp*, *samlings-/spridningslins/konvex/konkav*, *resistans/motstånd*, *smältpunkt/smälta*, *värmeförlust/värmeöverföring*, *inre energi/värme*, *energiprincipen/verkningsgrad*, *oordning/kaos*, *diffusion/blandning*, *foton/kvantum*, *kvanttal/elektronskal*, *spektrallinje/spektrum*, *sönderfall/alfastrålning*, *partikelstråle/partikelaccelerator*.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -483,6 +491,16 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **0.49, fakta (står i `factSources`, kan ändras):** Stockholm–Uppsala cirka 70 km, Göteborg–Malmö cirka 270 km, skrivsättet ]a, b[ i Sverige, Newtons avsvalningslag och 70-regeln, PageRank (1998), gångbroar och resonans (Millennium Bridge 2000), registreringsskyltar med bokstav som sista tecken sedan 2019 (bör kontrolleras), kroppslängd ungefär normalfördelad, Euler och Königsbergs broar 1736, tvillingprimtalsförmodan obevisad (2026), Japan 50/60 Hz, kontrollsiffran i personnumret (Luhn), Beurling och Geheimschreiber 1940, Kantorovitj (1939) och Dantzig (1947), Erlang (1909), George Box. Räkneexempel är påhittade men kontrollräknade.
 - **0.49, bilder:** bokstäver som variabelnamn (x, y, t, i, σ) och notationen P(A | B) förekommer; *tillryggalagd* visar "12 km"; Caesarchiffret i *chiffer* visar bokstäverna A–I men ordet saknar bild.
 - **0.49, arbetsform:** etappen kördes direkt efter 0.48 i samma session på produktägarens uttryckliga begäran ("fortsätt direkt efter avancerad matematik-modulerna").
+- **0.50, svenska:**
+  - ord och böjning att kontrollera mot SAOL/SO: *berg-och-dal-bana* (skrivs med bindestreck eftersom ordtolkningen inte känner igen "berg- och dalbana"), *trycka ifrån*, *newton*/*hertz*/*kelvin*/*joule* (plural utan ändelse), *retardation* (C1), *avlägsna sig* (C1), *celsiusskala*, *värmerörelse*, *reflektionsvinkel* (alt. *reflexionsvinkel*), *polarisation* (*polarisering* finns redan i politisk betydelse), *spektrum* (pl. spektrum/spektra), *kvantum* (pl. kvanta, best. pl. osäker), *neutrino* (neutriner), *ett radon*, *spinn*, *våg-partikeldualitet*, *Faradays bur*, *van de Graaff-generator*
+  - *kraft*, *rörelse*, *arbete*, *effekt*, *huvudsats* och *diffus* har bara fysikbetydelsen som egen betydelse; vardagsbetydelserna nämns i förklaringarna
+  - *nod*/*buk* (stående våg) och *utslag* (svängning) är skolfysiktermer; *kedjereaktion* används om kärnreaktioner med den allmänna betydelsen
+  - *volt* och *ampere* är inte modulord (går inte att skilja från spänning och ström i bild)
+- **0.50, japanska:**
+  - termer att granska: {速度違反取締|そくどいはんとりしま}りカメラ (*fartkamera*), {秒速|びょうそく}〜メートル, {疎|そ}な{部分|ぶぶん}/{密|みつ}な{部分|ぶぶん} (*förtunning/förtätning*), {超低周波音|ちょうていしゅうはおん} (*infraljud*), {強|つよ}め{合|あ}う/{弱|よわ}め{合|あ}う{干渉|かんしょう}, {節|ふし}/{腹|はら}, サーモグラフィーカメラ, {逃|に}げ{水|みず}/{蜃気楼|しんきろう} (*luftspegling*), N{極|きょく}/S{極|きょく}, IHクッキングヒーター, {摂氏温度|せっしおんど}の{目盛|めも}り, {熱容量|ねつようりょう}・{比熱|ひねつ}, {海洋性気候|かいようせいきこう}, {亜原子|あげんし} (*subatomär*), {時間|じかん}の{遅|おく}れ, {長|なが}さの{収縮|しゅうしゅく}, もつれ (*sammanflätning*), {被曝線量|ひばくせんりょう} (*stråldos*)
+- **0.50, fakta (står i `factSources`, kan ändras):** tyngdacceleration 9,82 m/s², glödlampans verkningsgrad 5 %, jordaxelns lutning 23,4°, Principia 1687, ljudhastighet 340 m/s i luft och 1 500 m/s i vatten, tre sekunder per kilometer vid åska, 50 Hz i Sverige och 50/60 Hz i Japan, Broughton-bron 1831, ljudvallen bröts 1947, blåljus i Sverige och rött i Japan, valars läten nära infraljud (bör kontrolleras), ljusets hastighet 299 792 km/s, 230 V i vägguttag, glödtråd cirka 2 500 °C, kapacitiva pekskärmar, elinstallation endast av registrerat företag, bensinmotorns verkningsgrad 25–35 %, värmepumpens faktor 3–4, slutförvaret i Forsmark (beslut 2022, cirka 500 m), kvantdatorn på Chalmers, MAX IV och ESS i Lund, närmaste svarta hål cirka 1 500 ljusår, GPS-klockor 38 µs per dygn, radonmätning oktober–april
+- **0.50, bilder:** varningssymbolen för strålning (trefoil) används som allmän symbol; utryckningsfordon visas utan rött kors; siffror och enheter (m/s, 300 000 km/s, ×10) förekommer men inga ord.
+- **0.50, arbetsform:** etappen kördes direkt efter 0.48 och 0.49 i samma session på produktägarens uttryckliga begäran. Användningsgränsen nåddes en gång; agenterna återupptogs från sina worktrees.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -501,11 +519,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v53`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v54`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Sträcka och förflyttning* (SWC-VET-03-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Mekanik* (R06-A03-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Reaktanter och produkter* (SWC-VET-04-03-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Kemiska reaktioner* (R06-A04-T03; T01 och T02 har en ursprunglig modul var och kan inte användas) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp. Integreras en grupp före gruppen som kommer före den i katalogen (0.48: T05 före T04), sätt `PREV_FALLBACK` till den senast inlagda modulen och kör om gruppens första skript när den tidigare gruppen är inlagd, så att förkunskapen pekar rätt.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.

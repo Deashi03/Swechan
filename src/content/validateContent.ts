@@ -253,6 +253,24 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.noggrannhet.2', 's.numerisk.1', 's.startvärde.1', 's.målfunktion.1', 's.kryptografi.1', 's.öppen-nyckel.1',
   // 0.49 Matematikens specialområden: förväxlas med töja, noggrannhet respektive kryptera efter två blindomgångar
   's.deformera.1', 's.exakt.1', 's.chiffer.1',
+  // 0.50 Mekanik: förväxlas med närliggande ord i samma modul
+  's.förflyttning.1', 's.rörelse.1', 's.momentanhastighet.1', 's.retardation.1', 's.newton.1', 's.motkraft.1', 's.energiomvandling.1', 's.vridmoment.1',
+  // 0.50 Ljus & optik: förväxlas med reflektera respektive lupp
+  's.reflektion.2', 's.förstoring.1',
+  // 0.50 Ljus & optik: förväxlas med konkav/konvex efter två blindomgångar
+  's.spridningslins.1', 's.samlingslins.1',
+  // 0.50 Vågor & ljud: förväxlas med vibration, frekvens respektive regelbunden
+  's.svängning.1', 's.hertz.1', 's.periodisk.1',
+  // 0.50 Elektricitet & magnetism: förväxlas med motstånd
+  's.resistans.1',
+  // 0.50 Värmelära & termodynamik: abstrakta fackord som förväxlas med närliggande ord
+  's.tillföra.1', 's.värmeförlust.1', 's.termodynamik.1', 's.inre-energi.1', 's.energiprincipen.1', 's.entropi.1', 's.diffusion.1', 's.oordning.1',
+  // 0.50 Värmelära & termodynamik: förväxlas med smälta efter två blindomgångar
+  's.smältpunkt.1',
+  // 0.50 Modern fysik: abstrakta fackord som förväxlas med närliggande ord
+  's.kvantum.1', 's.kvanttal.1', 's.spektrallinje.1', 's.sönderfall.1', 's.kvantmekanik.1', 's.partikelstråle.1',
+  // 0.50 Modern fysik: förväxlas med kvantum efter två blindomgångar
+  's.foton.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

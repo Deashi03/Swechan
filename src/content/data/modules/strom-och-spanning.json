@@ -1,0 +1,174 @@
+{
+ "id": "m.strom-och-spanning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Ström och spänning",
+ "titleJa": "{電流|でんりゅう}と{電圧|でんあつ}",
+ "descriptionSv": "Ström och spänning: batteri, pluspol, minuspol, ström, uttag, stickkontakt, spänning, växelström, likström, laddare, powerbank, kraftledning, elnät, strömavbrott, mätare och effekt.",
+ "descriptionJa": "{電流|でんりゅう}と{電圧|でんあつ}：{電池|でんち}、プラス{極|きょく}、マイナス{極|きょく}、{電流|でんりゅう}、コンセント、プラグ、{電圧|でんあつ}、{交流|こうりゅう}、{直流|ちょくりゅう}、{充電器|じゅうでんき}、モバイルバッテリー、{送電線|そうでんせん}、{送電網|そうでんもう}、{停電|ていでん}、メーター、{仕事率|しごとりつ}。",
+ "categoryId": "R06-A03-T04",
+ "tags": [
+  "fysik",
+  "elektricitet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.elektrisk-laddning"
+ ],
+ "related": [],
+ "recommendedOrder": 3342,
+ "words": [
+  {
+   "senseId": "s.batteri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pluspol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minuspol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ström.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uttag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stickkontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växelström.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likström.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.powerbank.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftledning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elnät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömavbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.effekt.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En kväll utan ström",
+  "paragraphs": [
+   "Yuki bor i en lägenhet i Luleå. En kväll i november blåser det mycket. Plötsligt blir det mörkt i hela huset – det är strömavbrott. Stormen har skadat elnätet, och en kraftledning har fallit ner.",
+   "Yuki tar fram en lampa som har två batterier. Hon tittar på dem: den ena änden är pluspolen och den andra är minuspolen. När lampan är tänd går en ström av elektroner genom lampan.",
+   "Batterierna har låg spänning, och de ger likström. I vägguttaget är spänningen mycket högre, och där finns växelström. Därför ska man aldrig stoppa något annat än en stickkontakt i ett uttag.",
+   "Mobilen har bara lite ström kvar. Yuki kan inte använda laddaren, för den behöver el från uttaget. Som tur är har hon en powerbank i väskan.",
+   "Efter tre timmar kommer elen tillbaka. Yuki tittar på mätaren i hallen. Hon tänker på att apparater med hög effekt, som spisen och tvättmaskinen, använder mycket el."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför blev det strömavbrott?",
+    "options": [
+     "Stormen hade skadat elnätet",
+     "Yuki hade glömt att betala",
+     "Batterierna var slut",
+     "Mobilen var trasig"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Stormen har skadat elnätet, och en kraftledning har fallit ner.",
+    "explanationJa": "{嵐|あらし}で{送電網|そうでんもう}が{壊|こわ}れたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad heter batteriets två ändar?",
+    "options": [
+     "Toppen och botten",
+     "Pluspolen och minuspolen",
+     "Laddaren och mätaren",
+     "Uttaget och kontakten"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… den ena änden är pluspolen och den andra är minuspolen.",
+    "explanationJa": "プラス{極|きょく}とマイナス{極|きょく}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken sorts ström finns i vägguttaget?",
+    "options": [
+     "Växelström",
+     "Likström",
+     "Statisk elektricitet",
+     "Ingen ström alls"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I vägguttaget är spänningen mycket högre, och där finns växelström.",
+    "explanationJa": "コンセントには{交流|こうりゅう}が{来|き}ています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Spänningen i vägguttaget är lägre än i batterierna.",
+    "correct": false,
+    "explanationSv": "I vägguttaget är spänningen mycket högre …",
+    "explanationJa": "コンセントの{電圧|でんあつ}のほうがずっと{高|たか}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yuki kunde ladda mobilen fast det var strömavbrott.",
+    "correct": true,
+    "explanationSv": "Som tur är har hon en powerbank i väskan.",
+    "explanationJa": "モバイルバッテリーがあったので{充電|じゅうでん}できました。"
+   }
+  ],
+  "factSources": [
+   "Batterier ger likström; vägguttag i Sverige ger växelström med spänningen 230 volt.",
+   "Elektronerna rör sig från minuspolen till pluspolen; strömmens riktning räknas av tradition från plus till minus."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om el hemma och om strömavbrott.",
+  "discussionPoints": [
+   "Har du varit med om ett långt strömavbrott?",
+   "Vad gör du när mobilen inte har någon ström kvar?",
+   "Vilka apparater hemma använder mest el, tror du?",
+   "Hur många laddare har du hemma?"
+  ]
+ }
+}
