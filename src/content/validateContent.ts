@@ -223,6 +223,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.variera.1', 's.potens.1', 's.ordningsföljd.1', 's.isolera.2', 's.olikhet.1',
   // 0.48 Funktioner & grafer: abstrakt, kan inte skiljas från funktionsvärde/motsvara
   's.funktion.2', 's.bero-på.2',
+  // 0.48 Funktioner & grafer: förväxlas efter två blindomgångar
+  's.linjär.2', 's.i-takt-med.1', 's.samband.1', 's.proportionalitet.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
