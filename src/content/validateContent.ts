@@ -211,6 +211,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.sydlig.1', 's.i-verkligheten.1', 's.position.1',
   // 0.48 Tal & räkning: abstrakt substantiv, kan inte skiljas från rimlig
   's.rimlighet.1',
+  // 0.48 Tal & räkning: förväxlas med synonym eller samma ordfamilj efter två blindomgångar
+  's.delbar.2', 's.storleksordning.1', 's.addition.1', 's.subtraktion.1', 's.överslag.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
