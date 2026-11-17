@@ -225,6 +225,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.funktion.2', 's.bero-på.2',
   // 0.48 Funktioner & grafer: förväxlas efter två blindomgångar
   's.linjär.2', 's.i-takt-med.1', 's.samband.1', 's.proportionalitet.1',
+  // 0.48 Statistikens grunder: abstrakta fackord som förväxlas med synonym eller samma ordfamilj
+  's.data.1', 's.datamängd.1', 's.i-tabellform.1', 's.föra-in.1', 's.lägesmått.1', 's.förekomma.2', 's.korrelation.1', 's.relativ-frekvens.1', 's.jämnt-fördelad.1', 's.i-genomsnitt.1', 's.skilja-sig-åt.1', 's.mittersta.1', 's.spridningsmått.1', 's.spridning.2',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
