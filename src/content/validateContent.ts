@@ -265,6 +265,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.resistans.1',
   // 0.50 Värmelära & termodynamik: abstrakta fackord som förväxlas med närliggande ord
   's.tillföra.1', 's.värmeförlust.1', 's.termodynamik.1', 's.inre-energi.1', 's.energiprincipen.1', 's.entropi.1', 's.diffusion.1', 's.oordning.1',
+  // 0.50 Värmelära & termodynamik: förväxlas med smälta efter två blindomgångar
+  's.smältpunkt.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
