@@ -267,6 +267,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.tillföra.1', 's.värmeförlust.1', 's.termodynamik.1', 's.inre-energi.1', 's.energiprincipen.1', 's.entropi.1', 's.diffusion.1', 's.oordning.1',
   // 0.50 Värmelära & termodynamik: förväxlas med smälta efter två blindomgångar
   's.smältpunkt.1',
+  // 0.50 Modern fysik: abstrakta fackord som förväxlas med närliggande ord
+  's.kvantum.1', 's.kvanttal.1', 's.spektrallinje.1', 's.sönderfall.1', 's.kvantmekanik.1', 's.partikelstråle.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
