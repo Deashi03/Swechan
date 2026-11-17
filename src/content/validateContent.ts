@@ -263,6 +263,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.svängning.1', 's.hertz.1', 's.periodisk.1',
   // 0.50 Elektricitet & magnetism: förväxlas med motstånd
   's.resistans.1',
+  // 0.50 Värmelära & termodynamik: abstrakta fackord som förväxlas med närliggande ord
+  's.tillföra.1', 's.värmeförlust.1', 's.termodynamik.1', 's.inre-energi.1', 's.energiprincipen.1', 's.entropi.1', 's.diffusion.1', 's.oordning.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
