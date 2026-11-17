@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.48.0 – 2026-11-17
+
+42 nya moduler som gör överämnet *Matematikens grunder* (R06-A01) komplett, det första överämnet i *Matematik & naturvetenskap* (R06). Modulerna lär ut det svenska ordförrådet för skolmatematik, inte matematiken i sig. Varje nytt modulord har en egen bild, utom de 46 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 680 målord)
+- **Tal & räkning** (3101–3107): heltal och naturliga tal, positiva och negativa tal, udda och jämna tal, talens storleksordning, addition och subtraktion, multiplikation och division samt rimlighetsbedömning.
+- **Bråk & decimaler** (3111–3117): täljare och nämnare, blandad form och bråkform, jämföra bråk, decimalform, avrundning, procent i vardagen och procentuell förändring.
+- **Algebraiska uttryck** (3121–3127): variabler och konstanter, termer och koefficienter, parenteser och prioriteringsregler, förenkla uttryck, lösa enkla ekvationer, olikheter och formler i vardagen.
+- **Geometrins grundformer** (3131–3137): punkt och linje, vinklar och vinkeltyper, trianglar, fyrhörningar, cirklar, omkrets och area samt volym och rymdgeometri.
+- **Funktioner & grafer** (3141–3147): matematiska koordinatsystem, punkter och axlar, räta linjens ekvation, lutning och skärning, proportionalitet, funktionsvärden och tolka grafer.
+- **Statistikens grunder** (3151–3157): datamängder, frekvens och fördelning, medelvärde och median, typvärde och variationsbredd, diagramtyper, urval och population samt vilseledande statistik.
+- Varje modul har 15–17 målord, lästext med fem frågor och konversationsunderlag. Det finns 326 nya ordposter. Grundord som *produkt*, *halv*, *bokstav*, *lösa*, *diagram* och *rad* har fått egna poster.
+- 35 nya betydelser på befintliga poster, bland andra *rest*, *division*, *växla* och *ställa upp* (räkning), *förkorta* och *förlänga* (bråk), *term*, *variabel*, *värde* och *isolera* (algebra), *skala*, *lutning*, *skära* och *funktion* (grafer), *sträcka*, *volym* och *pyramid* (geometri) samt *spridning*, *intervall* och *population* (statistik). Den gamla betydelsen har fått en etikett.
+- Användningsnoter förklarar skillnader mot japansk skolmatematik, till exempel att 0 räknas som naturligt tal i Sverige och att *k* och *m* i y = kx + m motsvarar *a* och *b* i Japan.
+- Parallella grupper ville skapa samma poster (*miniräknare*, *fördubbla*, *i enklaste form*, *mittpunkt*, *kurva*, *vågrät*, *tvådimensionell*, *det högsta/lägsta värdet*, *sätta in*). Posten finns bara i den grupp som lade in den först, och de andra refererar dess `senseId`.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Avancerad matematik* (R06-A02): Analys & derivata → Gränsvärden.
+
+### Bilder (317 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `numbers.ts`, `fractions.ts`, `algebra.ts`, `geometry.ts`, `functions.ts` och `statistics.ts`. Bilderna visar siffror och räknetecken men inga ord.
+- 245 symbol- och adjektivbilder blindtestades. 199 klarade testet efter högst två omgångar.
+- **46 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*. De flesta är abstrakta fackord som granskaren förväxlade med en synonym eller ett ord ur samma ordfamilj (*addition/lägga ihop*, *potens/exponent*, *median/mittersta*, *spridning/utspridd*).
+- Äkta synonymer är markerade som förväxlingsbara: *en och en halv/halvannan* och *medelvärde/genomsnitt*.
+
+Service workern är `swechan-v52`.
+
+
 ## 0.47.0 – 2026-11-17
 
 42 nya moduler som gör överämnet *Världsgeografi* (R05-A06) komplett. Därmed är hela *Natur & geografi* (R05) publicerat. Varje nytt modulord har en egen bild, utom de 8 ord som underkändes i två blindtestomgångar.
