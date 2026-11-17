@@ -10,7 +10,7 @@
  * kortaste vägen on the same network; träd/rot/löv on the same upside-down tree; linjär/binär sökning on the
  * same row of numbered boxes.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, star, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
 import { HL, P, T, bolt, bubble, cloud, drops } from './people';
 import { greyed } from './blindFix';
 
@@ -172,8 +172,8 @@ export const DISCRETE_MOTIFS: Record<string, Svg> = {
   'disk.rot.2': all(bg(), tree({ hl: [0] }), arrow(96, 14, 74, 20, HL, 2.6)),
   /** löv: the same tree in grey; the four dots at the bottom are ringed and highlighted. */
   'disk.löv.2': all(bg(), tree({ hl: [3, 4, 5, 6] })),
-  /** sökning: a magnifying glass moves over a grid of grey shapes and finds the one star. */
-  'disk.sökning': all(bg(), ...range(4).flatMap((r) => range(5).map((c) => (r === 2 && c === 3 ? '' : circle(18 + c * 20, 22 + r * 20, 5, C.grey2, C.grey, 1.2)))), circle(78, 62, 18, 'rgba(255,255,255,0.7)', C.ink, 3), star(78, 62, 9, C.yellow), line('M91 75 L106 92', C.ink, 5), line('M91 75 L106 92', HL, 2.4)),
+  /** sökning: a woman with a big magnifying glass goes along a bookshelf book by book; a thought bubble shows the red book she wants, and that book on the shelf is ringed and highlighted. */
+  'disk.sökning': (() => { const cols = [C.sky, C.green, C.tan, C.purple, C.yellow, C.red, C.mint]; return all(bg(), ground, rect(48, 52, 66, 60, C.brown, 2, C.ink, 1.8), line('M48 82 L114 82', C.ink, 1.8), ...cols.map((c, k) => rect(52 + k * 8.6, 56 + (k % 3), 7, 25 - (k % 3), c, 1, C.ink, 1)), ...cols.slice().reverse().map((c, k) => rect(52 + k * 8.6, 86 + (k % 2), 7, 24 - (k % 2), c === C.red ? C.orange : c, 1, C.ink, 1)), rect(94.5, 52, 11, 32, 'none', 2, HL, 2.6), P(24, { top: C.orange, hairStyle: 'long' }), line('M38 66 L50 60', C.skin, 5), circle(58, 62, 9, 'rgba(255,255,255,0.6)', C.ink, 2.4), arrow(70, 46, 90, 46, HL, 2.2), bubble(62, 20, 26, rect(58, 12, 8, 14, C.red, 1, C.ink, 1))); })(),
   /** linjär sökning: eight boxes in a row; highlighted hops go from the first box to the next, one at a time, ticking each, until box 26 is found. */
   'disk.linjär-sökning': all(bg(), ...range(8).map((i) => box(i, i < 5 ? '#eef2f5' : i === 5 ? MARK : C.white, i === 5 ? HL : C.grey)), ...range(5).map((i) => hop(i, i + 1)), ...range(5).map((i) => check(14 + i * 13, 88, 0.6, C.grey)), circle(85, 68, 11, 'none', HL, 2.2), num(30, 30, '26 ?', 14, HL)),
   /** binär sökning: the same eight sorted boxes; the left half is greyed out, a big hop lands in the middle, then a smaller hop finds 26. */
@@ -191,8 +191,8 @@ export const DISCRETE_MOTIFS: Record<string, Svg> = {
   'disk.matrjosjka': all(bg(), ground, doll(24, 1.5, C.red, true), doll(58, 1.15, C.orange), doll(84, 0.85, C.yellow), doll(104, 0.6, C.green)),
   /** basfall: a staircase of numbers 3, 2, 1, 0 going down with arrows; the last step 0 is highlighted with a red stop sign without text. */
   'disk.basfall': all(bg(), ...['3', '2', '1', '0'].map((s, i) => all(rect(8 + i * 22, 20 + i * 20, 22, 20, i === 3 ? MARK : C.white, 2, i === 3 ? HL : C.grey, i === 3 ? 2.6 : 1.6), num(19 + i * 22, 35 + i * 20, s, 12, i === 3 ? HL : C.dark))), ...range(3).map((i) => arrow(26 + i * 22, 34 + i * 20, 32 + i * 22, 44 + i * 20, C.grey, 2)), path('M100 70 L108 70 L114 76 L114 84 L108 90 L100 90 L94 84 L94 76 Z', C.red, C.ink, 1.6), line('M99 80 L109 80', C.white, 3)),
-  /** föregående: the numbers 1 1 2 3 5 8 in a row; 8 is grey and two highlighted arrows point back from it to the two numbers just before it, 3 and 5, which are highlighted. */
-  'disk.föregående': all(bg(), ...['1', '1', '2', '3', '5', '8'].map((s, i) => all(rect(6 + i * 18, 56, 16, 20, i === 3 || i === 4 ? MARK : C.white, 2, i === 3 || i === 4 ? HL : C.grey, i === 3 || i === 4 ? 2.4 : 1.4), num(14 + i * 18, 71, s, 12, i === 3 || i === 4 ? HL : C.dark))), path('M104 54 Q92 30 68 52', 'none', HL, 2.2), arrow(70, 46, 68, 53, HL, 2), path('M104 54 Q96 38 86 52', 'none', HL, 2.2), arrow(88, 48, 86, 53, HL, 2), num(77, 98, '3 + 5 = 8', 11, C.dark)),
+  /** föregående: four people in a queue facing a counter on the right, with tickets 1–4 above them; person 3 has a grey ring, and a highlighted arrow points from them to the person just before them (2), who is ringed and highlighted. */
+  'disk.föregående': (() => { const Qs: [number, string, number][] = [[86, C.green, 1], [62, C.orange, 2], [38, C.sky, 3], [14, C.pink, 4]]; return all(bg(), ground, rect(100, 58, 16, 54, C.tan, 2, C.ink, 1.6), ...Qs.map(([x, c, n]) => all(n === 2 ? ellipse(x, 82, 14, 32, MARK, HL, 2.8) : n === 3 ? ellipse(x, 82, 14, 32, 'none', C.grey, 2) : '', at(x, 0, 0.55, g('translate(0 91)', P(0, { top: c }))), rect(x - 8, 30, 16, 13, n === 2 ? MARK : C.white, 2, n === 2 ? HL : C.grey, n === 2 ? 2.4 : 1.4), num(x, 40.5, String(n), 10, n === 2 ? HL : C.dark))), path('M38 26 Q50 10 60 24', 'none', HL, 2.6), arrow(57, 19, 61, 26, HL, 2.2)); })(),
   /** delproblem: one big grey box splits along arrows into three small highlighted boxes, each with a tick. */
   'disk.delproblem': all(bg(), rect(30, 10, 60, 32, C.grey2, 3, C.grey, 2), num(60, 31, '?', 16, C.dark), ...[22, 60, 98].map((x) => all(arrow(60, 44, x, 66, C.grey, 2), rect(x - 13, 70, 26, 22, MARK, 3, HL, 2.4), check(x, 81, 0.9)))),
   /** fraktal: a triangle made of smaller triangles made of even smaller triangles (a Sierpiński triangle), highlighted. */
