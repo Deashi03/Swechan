@@ -193,6 +193,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'ana.': () => import('./analysis').then((m) => m.ANALYSIS_MOTIFS),
   'lina.': () => import('./linearAlgebra').then((m) => m.LINALG_MOTIFS),
   'intg.': () => import('./integrals').then((m) => m.INTEGRAL_MOTIFS),
+  'prob.': () => import('./probability').then((m) => m.PROBABILITY_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
