@@ -211,13 +211,14 @@ try {
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), all of Historia & humaniora
-  // (0.36–0.41), all of Natur & geografi (0.42–0.47), Matematikens grunder (0.48) and Avancerad matematik (0.49) are
-  // published, so the planned entry is Matematik & naturvetenskap → Fysik → Mekanik → Sträcka och förflyttning.
+  // (0.36–0.41), all of Natur & geografi (0.42–0.47), Matematikens grunder (0.48), Avancerad matematik (0.49) and Fysik
+  // (0.50) are published, so the planned entry is Matematik & naturvetenskap → Kemi → Atomer & periodiska systemet →
+  // Atomens grunddelar.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Matematik & naturvetenskap/ }).first().click();
-  await page.getByRole('link', { name: /Fysik/ }).first().click();
-  await page.getByRole('link', { name: /Mekanik/ }).first().click();
-  await page.getByRole('link', { name: /Sträcka och förflyttning/ }).first().click();
+  await page.getByRole('link', { name: /Kemi/ }).first().click();
+  await page.getByRole('link', { name: /Atomer & periodiska systemet/ }).first().click();
+  await page.getByRole('link', { name: /Atomens grunddelar/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
