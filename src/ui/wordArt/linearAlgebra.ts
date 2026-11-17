@@ -63,12 +63,13 @@ const car = (x: number, y: number, col: string = C.red, flip = false) => g(`tran
 const clock = (inner: Svg) => all(bg(), circle(60, 60, 30, C.white, C.ink, 2.2), ...range(12).map((i) => { const a = (i / 12) * Math.PI * 2; return line(`M${f1(60 + Math.sin(a) * 26)} ${f1(60 - Math.cos(a) * 26)} L${f1(60 + Math.sin(a) * 29)} ${f1(60 - Math.cos(a) * 29)}`, C.ink, i % 3 ? 1 : 2); }), num(60, 42, '12', 8), line('M60 60 L60 40', C.ink, 2.4), line('M60 60 L72 66', C.ink, 2.4), circle(60, 60, 2.4, C.ink, null), inner);
 /** Circular arrow around the clock: ccw = against the hands. */
 const turn = (ccw: boolean) => {
-  const r = 42, a0 = -60, a1 = 210, pt = (d: number) => [f1(60 + Math.cos((d * Math.PI) / 180) * r), f1(60 + Math.sin((d * Math.PI) / 180) * r)] as const;
-  const [sx, sy] = pt(a0), [ex, ey] = pt(a1);
+  // screen angles grow clockwise (y points down): 0 = 3 o'clock, 90 = 6 o'clock
+  const r = 42, pt = (d: number) => [f1(60 + Math.cos((d * Math.PI) / 180) * r), f1(60 + Math.sin((d * Math.PI) / 180) * r)] as const;
+  const [sx, sy] = pt(-60), [ex, ey] = pt(210);
   const arc = path(`M${sx} ${sy} A${r} ${r} 0 1 1 ${ex} ${ey}`, 'none', HL, 4);
-  const head = (d: number, dir: 1 | -1) => { const [x, y] = pt(d), tx = -Math.sin((d * Math.PI) / 180) * dir, ty = Math.cos((d * Math.PI) / 180) * dir; return arrow(f1(x - tx * 6), f1(y - ty * 6), f1(x + tx * 3), f1(y + ty * 3), HL, 4); };
-  // the arc runs clockwise on screen from a0 to a1 (sweep 1); for ccw the head sits at the start pointing back
-  return all(arc, ccw ? head(a0, -1) : head(a1, 1));
+  /** Arrow head at angle d pointing clockwise (dir 1) or counterclockwise (dir -1) on screen. */
+  const head = (d: number, dir: 1 | -1) => { const [x, y] = pt(d), tx = -Math.sin((d * Math.PI) / 180) * dir, ty = Math.cos((d * Math.PI) / 180) * dir; return arrow(f1(x - tx * 7), f1(y - ty * 7), f1(x + tx * 3), f1(y + ty * 3), HL, 4); };
+  return all(arc, ...(ccw ? [-60, 45, 150] : [210, 105, 0]).map((d) => head(d, ccw ? -1 : 1)));
 };
 /** Swing on a frame with a child; returns the drawing. */
 const swing = (push: boolean) => all(line('M14 82 L26 20 L38 82 M26 20 L64 20', C.brown, 3), line('M26 20 L18 34', C.brown, 2), line('M30 22 L50 66 M40 21 L58 64', C.dark, 1.4), at(54, 12, 0.5, P({ x: 0, h: 0.75, top: C.orange })), rect(46, 64, 16, 3, C.brown, 1, C.ink, 1), path('M30 74 C38 84 52 86 66 80', 'none', C.grey, 1.6, ), push ? at(88, 13, 0.62, P({ x: 0, h: 0.9, top: C.green })) : '', push ? arrow(78, 54, 66, 60, HL, 2.4) : '');
@@ -80,16 +81,16 @@ const wave = (y: number, grow: boolean) => {
 
 export const LINALG_MOTIFS: Record<string, Svg> = {
   // ── 3231 Vektorer ────────────────────────────────────────────────────
-  /** vektor: a coordinate grid with one big highlighted arrow (length and direction marked); a grey thermometer card with 20° in the corner. */
-  'lina.vektor': plane(all(greyed(card(70, 70, 38, 30), num(89, 91, '20°', 13)), vecG([0, 0], [5, 6], HL, 4.4), path(`M${OX + 20} ${OY} A20 20 0 0 0 ${f1(OX + 20 * Math.cos(0.876))} ${f1(OY - 20 * Math.sin(0.876))}`, 'none', BLUE, 2), line(`M${OX - 8} ${OY - 6} L${OX + 52} ${OY - 78}`, HL, 1.2, '3 3'))),
+  /** vektor: top, two arrows with the same direction but lengths 2 and 4 are not equal (≠); bottom, two arrows with the same length but different directions are not equal (≠). */
+  'lina.vektor': all(bg(), rect(8, 10, 104, 46, C.white, 5, C.ink, 1.4), vec(16, 34, 40, 34, HL, 4), line('M16 46 L40 46', C.grey, 1.4), num(28, 54, '2', 8, C.grey), num(56, 39, '≠', 16, C.dark), vec(68, 34, 108, 34, HL, 4), line('M68 46 L108 46', C.grey, 1.4), num(88, 54, '4', 8, C.grey), rect(8, 62, 104, 46, C.white, 5, C.ink, 1.4), vec(16, 96, 44, 96, HL, 4), num(56, 91, '≠', 16, C.dark), vec(80, 100, 80, 72, HL, 4), path('M18 88 A8 8 0 0 1 26 96', 'none', C.grey, 1.2), path('M88 100 A8 8 0 0 0 80 92', 'none', BLUE, 1.6)),
   /** skalär: the same corner card, now large and highlighted: a thermometer with the number 20°; a grey arrow below is crossed out. */
   'lina.skalär': all(bg(), rect(10, 10, 100, 62, MARK, 6, HL, 2.6), thermo(32, 52), num(76, 52, '20°', 30, HL), greyed(vec(22, 104, 64, 84, C.dark, 3)), cross(44, 94, 1.1)),
   /** pil: a signpost with a green sign showing a big white arrow pointing right. */
   'lina.pil.2': all(bg(SKY), rect(56, 50, 6, 62, C.grey, 1, C.ink, 1.4), rect(18, 18, 84, 38, OK, 4, C.ink, 2), path('M28 32 L70 32 L70 24 L92 37 L70 50 L70 42 L28 42 Z', C.white, C.ink, 1.4), path('M4 112 C30 104 90 104 116 112 Z', '#8cc96a', null), ground),
   /** belopp: the arrow (3, 4) on a grid with a ruler laid along it; the tag on the ruler says 5 (highlighted); the legs 3 and 4 are grey. */
   'lina.belopp.2': plane(all(line(`M${G(0, 0)[0]} ${G(0, 0)[1]} L${G(3, 0)[0]} ${G(3, 0)[1]} L${G(3, 4)[0]} ${G(3, 4)[1]}`, C.grey, 1.6, '3 3'), num(G(1.5, 0)[0], OY + 11, '3', 9, C.grey), num(G(3, 2)[0] + 8, G(3, 2)[1] + 3, '4', 9, C.grey), g(`translate(${G(0, 0)[0]} ${G(0, 0)[1]}) rotate(-53.13)`, rect(0, -18, 60, 9, C.yellow, 1, C.ink, 1.2), ...range(6).map((i) => line(`M${i * 12} -18 L${i * 12} -13`, C.ink, 1))), vecG([0, 0], [3, 4], C.dark, 3.4), mark(G(1.2, 3.6)[0], G(1.2, 3.6)[1], 22, 20), num(G(1.2, 3.6)[0], G(1.2, 3.6)[1] + 6, '5', 16, HL), num(86, 30, '|v| = 5', 12, HL))),
-  /** komponent: the same arrow (3, 4); now the dashed sideways part 3 and the upward part 4 are highlighted with their numbers. */
-  'lina.komponent': plane(all(vecG([0, 0], [3, 4], C.dark, 3), line(`M${G(0, 0)[0]} ${G(0, 0)[1] + 0} L${G(3, 0)[0]} ${G(3, 0)[1]}`, HL, 4), line(`M${G(3, 0)[0]} ${G(3, 0)[1]} L${G(3, 4)[0]} ${G(3, 4)[1]}`, HL, 4), mark(G(1.5, 0)[0], OY + 9, 16, 15), num(G(1.5, 0)[0], OY + 13, '3', 11, HL), mark(G(3, 2)[0] + 11, G(3, 2)[1], 16, 15), num(G(3, 2)[0] + 11, G(3, 2)[1] + 4, '4', 11, HL), num(88, 30, '(3, 4)', 12, C.dark))),
+  /** komponent: a thin grey arrow on a grid split into a thick highlighted sideways arrow and a thick highlighted upward arrow; a card shows ↗ = → + ↑. No numbers. */
+  'lina.komponent': plane(all(vecG([0, 0], [4, 5], C.grey, 2.2), vecG([0, 0], [4, 0], HL, 5), vecG([4, 0], [4, 5], HL, 5, false), circle(G(4, 0)[0], G(4, 0)[1], 3, HL, null), card(66, 10, 48, 26), vec(70, 31, 80, 17, C.grey, 2, false), num(85, 28, '=', 9, C.dark), vec(89, 31, 98, 31, HL, 2.6, false), num(101, 28, '+', 9, C.dark), vec(108, 31, 108, 17, HL, 2.6, false))),
   /** startpunkt: a dark arrow on a grid; its start is a big highlighted ring with a small start flag. */
   'lina.startpunkt': plane(all(vecG([1, 1], [6, 5], C.dark, 3.4, false), circle(G(1, 1)[0], G(1, 1)[1], 7, MARK, HL, 3), circle(G(1, 1)[0], G(1, 1)[1], 2.6, HL, null), line(`M${G(1, 1)[0]} ${G(1, 1)[1] - 7} L${G(1, 1)[0]} ${G(1, 1)[1] - 30}`, C.ink, 1.6), path(`M${G(1, 1)[0]} ${G(1, 1)[1] - 30} L${G(1, 1)[0] + 14} ${G(1, 1)[1] - 25} L${G(1, 1)[0]} ${G(1, 1)[1] - 20} Z`, HL, C.ink, 1.2))),
   /** nollvektor: on the grid only a highlighted dot at the origin with (0, 0); a grey arrow beside it is crossed out. */
@@ -190,13 +191,13 @@ export const LINALG_MOTIFS: Record<string, Svg> = {
   'lina.sökmotor': all(bg(), rect(8, 10, 104, 96, C.white, 4, C.ink, 1.8), rect(8, 10, 104, 12, '#e1e7ed', 4, null), ...[16, 24, 32].map((x, i) => circle(x, 16, 2.4, [C.red, C.yellow, OK][i]!, null)), rect(18, 30, 84, 16, C.white, 8, HL, 2.2), circle(90, 38, 4, 'none', HL, 2), line('M93 41 L97 45', HL, 2.4), line('M26 38 L64 38', C.grey, 2), ...range(3).map((i) => all(num(22, 66 + i * 14, `${i + 1}`, 9, HL), line(`M30 ${61 + i * 14} L${96 - i * 12} ${61 + i * 14}`, BLUE, 2.4), line(`M30 ${66 + i * 14} L${84 - i * 8} ${66 + i * 14}`, C.grey2, 1.6)))),
 
   // ── 3237 Linjära transformationer ─────────────────────────────────────
-  /** transformation: a grey square grid on the left → arrow → a highlighted slanted and turned grid on the right; the origin dot stays in the corner of both. */
-  'lina.transformation': all(bg(), g('translate(12 92)', ...range(4).map((i) => line(`M${i * 10} 0 L${i * 10} -30 M0 ${-i * 10} L30 ${-i * 10}`, C.grey, 1.4)), circle(0, 0, 2.6, C.ink, null)), arrow(48, 76, 62, 76, HL, 3), g('translate(70 92)', ...range(4).map((i) => line(`M${i * 12} ${-i * 4} L${i * 12 + 10} ${-i * 4 - 36} M${i * 3.3} ${-i * 12} L${36 + i * 3.3} ${-i * 12 - 12}`, HL, 1.8)), circle(0, 0, 2.6, C.ink, null)), num(60, 28, 'A', 14, C.dark)),
+  /** transformation: one frame with four kinds: the same grey flag turned, mirrored, slanted and enlarged (highlighted), around a matrix A. */
+  'lina.transformation': all(bg(), rect(6, 8, 108, 98, MARK, 6, HL, 2.2), g('translate(32 32)', rect(-24, -21, 48, 42, C.white, 4, C.ink, 1.2), greyed(path('M-10 10 L-10 -10 L6 -10 L6 -3 L-4 -3 L-4 10 Z', C.grey2, C.grey, 1.4)), g('translate(9 0) rotate(-90)', path('M-10 10 L-10 -10 L6 -10 L6 -3 L-4 -3 L-4 10 Z', MARK, HL, 1.4))), g('translate(88 32)', rect(-24, -21, 48, 42, C.white, 4, C.ink, 1.2), greyed(path('M-10 10 L-10 -10 L6 -10 L6 -3 L-4 -3 L-4 10 Z', C.grey2, C.grey, 1.4)), g('translate(10 0) scale(-1 1)', path('M-10 10 L-10 -10 L6 -10 L6 -3 L-4 -3 L-4 10 Z', MARK, HL, 1.4))), g('translate(32 82)', rect(-24, -21, 48, 42, C.white, 4, C.ink, 1.2), greyed(path('M-10 10 L-10 -10 L6 -10 L6 -3 L-4 -3 L-4 10 Z', C.grey2, C.grey, 1.4)), g('translate(10 0) matrix(1 0 -0.6 1 0 0)', path('M-10 10 L-10 -10 L6 -10 L6 -3 L-4 -3 L-4 10 Z', MARK, HL, 1.4))), g('translate(88 82)', rect(-24, -21, 48, 42, C.white, 4, C.ink, 1.2), greyed(path('M-10 10 L-10 -10 L6 -10 L6 -3 L-4 -3 L-4 10 Z', C.grey2, C.grey, 1.4)), g('translate(5 -2) scale(1.3)', path('M-10 10 L-10 -10 L6 -10 L6 -3 L-4 -3 L-4 10 Z', MARK, HL, 1.4))), circle(60, 57, 9, C.white, C.ink, 1.4), num(60, 62, 'A', 11, C.dark)),
   /** rotation: on a grid, a grey arrow-shaped flag pointing right and the same flag highlighted pointing up; an arc with 90° between them, around the origin. */
   'lina.rotation.2': plane(all(greyed(vecG([0, 0], [6, 0], C.dark, 3.4), path(`M${G(4, 0)[0]} ${G(4, 0)[1]} L${G(4, 1.4)[0]} ${G(4, 1.4)[1]} L${G(5.4, 0)[0]} ${G(5.4, 0)[1]} Z`, C.dark, null)), vecG([0, 0], [0, 6], HL, 3.4), path(`M${G(0, 4)[0]} ${G(0, 4)[1]} L${G(-1.4, 4)[0]} ${G(-1.4, 4)[1]} L${G(0, 5.4)[0]} ${G(0, 5.4)[1]} Z`, HL, null), path(`M${G(3.5, 0)[0]} ${G(3.5, 0)[1]} A42 42 0 0 0 ${G(0, 3.5)[0]} ${G(0, 3.5)[1]}`, 'none', BLUE, 2.2), arrow(G(0.9, 3.4)[0], G(0.9, 3.4)[1] - 1, G(0, 3.5)[0] + 2, G(0, 3.5)[1], BLUE, 2.2), mark(76, 44, 32, 20), num(76, 50, '90°', 13, HL))),
-  /** moturs: a clock with a big highlighted circular arrow going against the hands. */
+  /** moturs: a clock with a big highlighted circular arrow with three heads, all going against the hands (12 → 9 → 6 → 3). */
   'lina.moturs': clock(turn(true)),
-  /** medurs: the same clock with the big highlighted circular arrow going the same way as the hands. */
+  /** medurs: the same clock; the three heads go the same way as the hands (12 → 3 → 6 → 9). */
   'lina.medurs': clock(turn(false)),
   /** skjuvning: a straight grey stack of cards on the left; on the right the same stack pushed sideways at the top so it leans, highlighted, with arrows that get longer upwards. */
   'lina.skjuvning': all(bg(), ...range(6).map((i) => rect(10, 98 - i * 10, 30, 9, C.grey2, 1, C.grey, 1)), ...range(6).map((i) => rect(60 + i * 5, 98 - i * 10, 30, 9, i % 2 ? MARK : C.white, 1, HL, 1.6)), ...[2, 4].map((i) => arrow(56 + i * 5 - 14, 102 - i * 10, 56 + i * 5 - 2, 102 - i * 10, BLUE, 2)), arrow(74, 42, 94, 42, BLUE, 2.4), ground),
