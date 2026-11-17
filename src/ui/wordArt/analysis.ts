@@ -129,9 +129,8 @@ const rulePic = (op: 'prod' | 'quot') => all(card(8, 10, 104, 40, HL, 2.4, 'rgba
 
 export const ANALYSIS_MOTIFS: Record<string, Svg> = {
   // ── 3211 Gränsvärden ─────────────────────────────────────────────
-  'ana.gränsvärde.2': all(card(6, 6, 108, 30, HL, 2.2, 'rgba(228,87,46,0.08)'), T(18, 26, '2,1', 9), T(40, 26, '2,01', 9), T(66, 26, '2,001', 9), arrow(80, 22, 89, 22, HL, 2.2), T(101, 28, '2', 18, HL), ring(101, 22, 10),
-    q1(false, 40), line('M20 67 L110 67', C.grey, 1.6, '5 4'), path(smooth(plot((x) => 2 + 1.8 / x, 1.15, 7.8, (x) => 20 + x * 11.5, (y) => 100 - y * 16.5)), 'none', C.ink, 2.6),
-    dot(20, 67, HL, 3.6), ring(20, 67, 8), arrow(80, 58, 104, 63, HL, 2)),
+  'ana.gränsvärde.2': all(q1(false), line('M20 52 L110 52', C.grey, 1.4, '5 4'), path(smooth(plot((x) => 2 + 1.6 / x, 0.9, 7.8, (x) => 20 + x * 11.5, (y) => 100 - y * 24)), 'none', C.grey, 1.8),
+    arrow(70, 70, 100, 58, C.grey, 1.6), dot(20, 52, HL, 4), ring(20, 52, 8), arrow(38, 62, 26, 55, HL, 2.6), rect(30, 62, 32, 36, 'rgba(228,87,46,0.14)', 6, HL, 3), T(46, 91, '2', 30, HL)),
   'ana.närma-sig': all(line('M4 112 L116 112', C.grey2, 2), path('M86 112 L86 78 L101 64 L116 78 L116 112 Z', C.beige, C.ink, 1.6), path('M82 80 L101 60 L120 80', 'none', RED, 3), rect(96, 92, 10, 20, C.brown, 1, C.ink, 1.2),
     greyed(g('translate(14 100) scale(1.1)', mini(0, 0, C.grey)), g('translate(40 100) scale(1.1)', mini(0, 0, C.grey))), g('translate(62 100) scale(1.1)', mini(0, 0, C.orange)),
     arrow(18, 70, 36, 70, C.grey, 2.2), arrow(42, 70, 56, 70, C.grey, 2.2), arrow(68, 80, 80, 80, HL, 3), line('M20 64 L20 76 M86 64 L86 76', C.grey, 1)),
@@ -139,8 +138,9 @@ export const ANALYSIS_MOTIFS: Record<string, Svg> = {
     arrow(96, 34, 96, 41, C.ink, 1.4), arrow(96, 54, 96, 47, C.ink, 1.4), T(103, 38, '∞', 11, C.grey)),
   'ana.konvergera': seqPic(true),
   'ana.divergera': seqPic(false),
-  'ana.försumbar': all(line('M10 104 L110 104', C.ink, 1.8), rect(22, 38, 28, 66, BLUE, 1, C.ink, 1.4), rect(70, 38, 28, 66, BLUE, 1, C.ink, 1.4), T(60, 60, '≈', 18), T(36, 76, '100', 11, C.white), T(84, 76, '100,001', 8, C.white),
-    rect(70, 36.5, 28, 1.8, HL, 0, null), circle(96, 18, 12, 'rgba(255,255,255,0.9)', C.ink, 2), line('M88 27 L80 35', C.ink, 3.4), rect(88, 16, 16, 5, HL, 0, null), line('M88 21 L104 21', BLUE, 3)),
+  'ana.försumbar': all(T(60, 24, '1 000 000', 17), T(60, 45, '+ 0,01', 13, HL), line('M36 41 L84 41', C.ink, 1.3), line('M14 52 L106 52', C.ink, 1.6), T(60, 70, '≈ 1 000 000', 15),
+    line('M60 84 L60 106 M44 108 L76 108', C.ink, 2.4), line('M18 86 L102 86', C.ink, 2.4), path('M10 90 L32 90 L28 98 L14 98 Z', C.grey2, C.ink, 1.2), path('M88 90 L110 90 L106 98 L92 98 Z', C.grey2, C.ink, 1.2),
+    rect(13, 76, 20, 14, BLUE, 1, C.ink, 1.2), rect(89, 76, 20, 14, BLUE, 1, C.ink, 1.2), circle(110, 72, 1.6, HL, null), ring(110, 72, 4.5)),
   'ana.studsa': all(line('M4 108 L116 108', C.grey2, 2), line('M12 20 L22 108 C30 46 46 46 54 108 C60 74 72 74 78 108 C82 90 90 90 94 108 C96 100 102 100 104 108', C.grey, 1.6, '3 3'),
     circle(66, 74, 8, RED, C.ink, 1.6), path('M60 70 C64 66 70 66 73 70', 'none', C.white, 1.6), line('M50 106 l-4 -3 M58 106 l4 -3 M18 106 l-4 -3 M26 106 l4 -3', HL, 1.6)),
   // ── 3212 Kontinuitet ─────────────────────────────────────────────
@@ -173,8 +173,8 @@ export const ANALYSIS_MOTIFS: Record<string, Svg> = {
   // ── 3214 Deriveringsregler ──────────────────────────────────────
   'ana.formelsamling': all(path('M10 24 L58 30 L58 108 L10 102 Z', C.white, C.ink, 1.8), path('M110 24 L62 30 L62 108 L110 102 Z', C.white, C.ink, 1.8), path('M58 30 C59 28 61 28 62 30 L62 108 C61 106 59 106 58 108 Z', C.grey2, C.ink, 1),
     rect(14, 18, 92, 6, BLUE, 2, C.ink, 1), T(34, 46, 'a²+b²=c²', 7), T(34, 62, 'πr²', 9), T(34, 78, 'x² → 2x', 8), T(34, 94, 'k·x+m', 8), T(86, 48, 'sin²+cos²', 6), T(86, 64, '(a+b)²', 8), T(86, 80, 'eˣ → eˣ', 8), T(86, 96, '½·b·h', 8)),
-  'ana.derivera': all(card(8, 20, 104, 44, HL, 2.4, 'rgba(228,87,46,0.08)'), T(28, 50, 'x³', 22), arrow(44, 42, 70, 42, HL, 4), T(52, 34, '′', 16, HL), T(92, 50, '3x²', 22, HL),
-    greyed(T(28, 98, 'x²', 15, C.grey), arrow(42, 93, 64, 93, C.grey, 2.4), T(90, 98, '2x', 15, C.grey))),
+  'ana.derivera': all(card(8, 8, 104, 64, C.grey2, 1.2), T(44, 56, 'f', 46), path('M66 22 L60 40', 'none', HL, 5), pen(60, 40, 22, 1.3), line('M76 30 l6 -2 M78 38 l6 0 M76 46 l6 2', HL, 1.8),
+    T(30, 98, 'x³', 17), arrow(46, 92, 72, 92, HL, 3.4), T(92, 98, '3x²', 17)),
   'ana.exponentialfunktion': all(q1(false), greyed(line('M20 92 L108 60', C.grey, 2, '4 3')), path(smooth(plot((x) => 2 ** x, 0, 6.2, (x) => 20 + x * 14, (y) => 100 - y * 1.25)), 'none', HL, 3.6),
     T(86, 26, '2ˣ', 15, HL), ...[0, 1, 2, 3, 4, 5, 6].map((i) => dot(20 + i * 14, f1(100 - 2 ** i * 1.25), HL, 2.4))),
   'ana.sinus': trigPic('sin'),
@@ -187,8 +187,9 @@ export const ANALYSIS_MOTIFS: Record<string, Svg> = {
   // ── 3215 Tangenter och förändring ───────────────────────────────
   'ana.nudda': all(circle(76, 70, 24, '#8cc7e8', C.ink, 2), path('M64 56 C68 52 74 51 78 52', 'none', C.white, 2.4),
     rect(6, 61, 12, 20, C.denim, 2, C.ink, 1.4), hand(34, 71, 1.8), line('M48 62 l4 -3 M48 78 l4 3 M46 70 l4 0', HL, 1.8), ring(51, 70, 4.5)),
-  'ana.tangeringspunkt': (() => { const { pts, P, k } = tanBase(96); return all(grid(10, 10, 110, 110, 10), path(smooth(pts), 'none', C.ink, 2.8),
-    greyed(line(`M${P[0] - 44} ${f1(P[1] + 44 * k)} L${P[0] + 44} ${f1(P[1] - 44 * k)}`, C.grey, 2.2)), dot(P[0], P[1], HL, 5), ring(P[0], P[1], 11), arrow(P[0] - 22, P[1] - 30, P[0] - 9, P[1] - 12, HL, 2.4)); })(),
+  'ana.tangeringspunkt': (() => { const { pts, P, k } = tanBase(96); return all(grid(10, 10, 110, 110, 10), path(smooth(pts), 'none', C.ink, 2.4),
+    line(`M${P[0] - 44} ${f1(P[1] + 44 * k)} L${P[0] + 44} ${f1(P[1] - 44 * k)}`, C.grey, 1.2, '3 3'), circle(P[0], P[1], 16, 'rgba(228,87,46,0.18)', null), dot(P[0], P[1], HL, 7.5), ring(P[0], P[1], 16),
+    arrow(P[0] - 30, P[1] - 36, P[0] - 14, P[1] - 16, HL, 3), arrow(P[0] + 30, P[1] + 32, P[0] + 14, P[1] + 15, HL, 3)); })(),
   'ana.normal-noun': (() => { const { pts, P, k } = tanBase(96), nk = -1 / k, d = 34 / Math.sqrt(1 + nk * nk);
     return all(grid(10, 10, 110, 110, 10), path(smooth(pts), 'none', C.ink, 2.8), greyed(line(`M${P[0] - 44} ${f1(P[1] + 44 * k)} L${P[0] + 44} ${f1(P[1] - 44 * k)}`, C.grey, 2.2)),
       line(`M${f1(P[0] - d)} ${f1(P[1] - d * nk * -1)} L${f1(P[0] + d)} ${f1(P[1] + d * nk * -1)}`, HL, 3.6),
