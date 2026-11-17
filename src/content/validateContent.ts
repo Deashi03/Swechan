@@ -215,6 +215,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.delbar.2', 's.storleksordning.1', 's.addition.1', 's.subtraktion.1', 's.överslag.1',
   // 0.48 Bråk & decimaler: kan inte skiljas från avrunda respektive prisökning
   's.avrundning.1', 's.procentuell.1',
+  // 0.48 Bråk & decimaler: förväxlas efter två blindomgångar
+  's.närmevärde.1', 's.procent.1', 's.andel.2', 's.minskning.1', 's.ökning.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
