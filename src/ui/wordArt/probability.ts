@@ -11,8 +11,8 @@
  * and σ only; no words, no brands.
  */
 import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, star, type Svg } from './kit';
-import { HL, T, mini } from './people';
-import { greyed } from './blindFix';
+import { HL, T, cloud, mini } from './people';
+import { P, greyed } from './blindFix';
 
 // ── Palette and basics ───────────────────────────────────────────────
 const SOFT = '#f4f6f8';
@@ -116,7 +116,8 @@ export const PROBABILITY_MOTIFS: Record<string, Svg> = {
   /** komplementhändelse: the same frame; now 2, 4, 6 are grey in a grey ring and the rest, 1, 3, 5, is ringed in orange; "1 −" in the corner. */
   'prob.komplementhändelse': all(bg(), rect(10, 18, 100, 84, C.white, 6, C.grey, 1.6), greyed(rect(16, 26, 88, 32, 'none', 12, C.dark, 2), ...[2, 4, 6].map((n, i) => die(32 + i * 28, 42, 22, n))), rect(16, 64, 88, 32, TINT, 12, HL, 3), ...[1, 3, 5].map((n, i) => die(32 + i * 28, 80, 22, n, { stroke: HL })), rect(80, 4, 34, 16, MARK, 3, HL, 1.6), num(97, 16, '1 −', 11, HL)),
   /** osannolik: a scale from 0 to 1; the orange pointer stands very close to 0 (5 %); a grey pointer near 1 for contrast. */
-  'prob.osannolik': scale01(0.05, 0.9),
+  /** osannolik: a dark cloud sends a lightning bolt down beside a tiny person; a big orange card says 1 : 1 000 000; a grey die with 1 : 6 for contrast. */
+  'prob.osannolik': all(bg('#e4ecf3'), cloud(34, 22, 1.5, C.grey), path('M38 32 L28 56 L36 56 L26 84 L46 50 L38 50 L46 32 Z', C.yellow, C.ink, 1.4), path('M4 112 C30 104 90 104 116 112 Z', '#8cc96a', null), g('translate(56 65) scale(0.42)', P({ x: 0, top: C.green })), rect(64, 28, 50, 34, MARK, 4, HL, 2.4), num(89, 42, '1 :', 12, HL), num(89, 56, '1 000 000', 9.5, HL), greyed(die(98, 88, 14, 1), num(98, 108, '1 : 6', 8)), ground),
   /** trolig: the same 0–1 scale; the orange pointer stands close to 1 (85 %); a grey pointer near 0 for contrast. */
   'prob.trolig': scale01(0.85, 0.05),
   /** femtio-femtio: a circle split exactly in two halves, orange and blue, with 50 % on each half; a coin above. */
