@@ -269,6 +269,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.smältpunkt.1',
   // 0.50 Modern fysik: abstrakta fackord som förväxlas med närliggande ord
   's.kvantum.1', 's.kvanttal.1', 's.spektrallinje.1', 's.sönderfall.1', 's.kvantmekanik.1', 's.partikelstråle.1',
+  // 0.50 Modern fysik: förväxlas med kvantum efter två blindomgångar
+  's.foton.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
