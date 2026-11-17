@@ -1,0 +1,179 @@
+{
+ "id": "m.matematiska-modeller",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Matematiska modeller",
+ "titleJa": "{数理|すうり}モデル",
+ "descriptionSv": "Matematiska modeller: verklighet, matematisk modell, förenkling, antagande, parameter, mätvärde, validera, prognos, scenario, osäkerhet, trafikflöde, köteori, spelteori, klimatmodell, rovdjur, bytesdjur och strategi.",
+ "descriptionJa": "{数理|すうり}モデル：{現実|げんじつ}、{数理|すうり}モデル、{単純化|たんじゅんか}、{仮定|かてい}、パラメーター、{測定値|そくていち}、{検証|けんしょう}する、{予測|よそく}、シナリオ、{不確実性|ふかくじつせい}、{交通|こうつう}の{流|なが}れ、{待|ま}ち{行列|ぎょうれつ}{理論|りろん}、ゲーム{理論|りろん}、{気候|きこう}モデル、{肉食獣|にくしょくじゅう}、{獲物|えもの}、{戦略|せんりゃく}。",
+ "categoryId": "R06-A02-T06",
+ "tags": [
+  "matematik",
+  "modeller"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kryptografisk-matematik"
+ ],
+ "related": [],
+ "recommendedOrder": 3267,
+ "words": [
+  {
+   "senseId": "s.verklighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matematisk-modell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förenkling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antagande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parameter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.validera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prognos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.scenario.1",
+   "active": false
+  },
+  {
+   "senseId": "s.osäkerhet.2",
+   "active": false
+  },
+  {
+   "senseId": "s.trafikflöde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köteori.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spelteori.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klimatmodell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rovdjur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bytesdjur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strategi.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En modell av staden",
+  "paragraphs": [
+   "Hannah arbetar med matematiska modeller på kommunen. Politikerna vill veta vad som händer med trafikflödet om staden bygger en ny bro. Det går inte att pröva i verkligheten först. Därför bygger Hannah en modell i datorn.",
+   "Verkligheten är för svår för att räkna på i alla detaljer. Varje modell bygger därför på antaganden och förenklingar. Hannah räknar som om alla bilar kör lika fort och som om de flesta vill till centrum på morgonen. Modellen har flera parametrar, till exempel hur många bilar som kommer varje minut.",
+   "Innan hon litar på modellen, validerar hon den. Hon låter modellen räkna fram trafiken förra året och jämför med mätvärden från kamerorna vid vägarna. Det stämmer ganska bra. Sedan gör hon en prognos för tre olika scenarier: ingen ny bro, en liten bro och en stor bro. Hon visar också hur stor osäkerheten är.",
+   "Hannah har också använt köteori, för att räkna ut hur många bussar som behövs för att ingen ska vänta för länge vid hållplatsen. Och när två kommuner diskuterar vem som ska betala bron, tänker hon på spelteori. Om båda har samma strategi och väntar på att den andra ska betala, blir det ingen bro alls.",
+   "Matematiska modeller används överallt. Klimatmodeller visar hur temperaturen kan förändras, och forskare räknar på hur många rovdjur och bytesdjur som kan leva i en skog. Om det blir fler rävar, blir det färre harar, och sedan blir det färre rävar igen. – Ingen modell är perfekt, säger Hannah. Men utan modeller skulle vi bara gissa."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför bygger Hannah en modell?",
+    "options": [
+     "Hennes chef tycker om matematik",
+     "Bron är redan byggd",
+     "Man kan inte pröva en ny bro i verkligheten först",
+     "Det finns inga bilar i staden"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det går inte att pröva i verkligheten först. Därför bygger Hannah en modell i datorn.",
+    "explanationJa": "{現実|げんじつ}で{先|さき}に{試|ため}すことはできないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken förenkling gör Hannah?",
+    "options": [
+     "Hon räknar bara med bussar",
+     "Hon räknar som om det inte finns några broar",
+     "Hon räknar bara på helgerna",
+     "Hon räknar som om alla bilar kör lika fort"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hannah räknar som om alla bilar kör lika fort …",
+    "explanationJa": "すべての{車|くるま}が{同|おな}じ{速|はや}さで{走|はし}ると{考|かんが}えて{計算|けいさん}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur validerar Hannah modellen?",
+    "options": [
+     "Hon frågar bilförarna",
+     "Hon bygger en liten bro",
+     "Hon gissar",
+     "Hon jämför med mätvärden från förra året"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon låter modellen räkna fram trafiken förra året och jämför med mätvärden från kamerorna vid vägarna.",
+    "explanationJa": "{去年|きょねん}の{交通|こうつう}を{計算|けいさん}させ、{測定値|そくていち}と{比|くら}べます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Hannah gör en prognos för tre olika scenarier.",
+    "correct": true,
+    "explanationSv": "Sedan gör hon en prognos för tre olika scenarier: ingen ny bro, en liten bro och en stor bro.",
+    "explanationJa": "{三|みっ}つのシナリオについて{予測|よそく}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Enligt texten blir det alltid fler rävar och fler harar samtidigt.",
+    "correct": false,
+    "explanationSv": "Om det blir fler rävar, blir det färre harar, och sedan blir det färre rävar igen.",
+    "explanationJa": "キツネが{増|ふ}えるとウサギが{減|へ}り、その{後|あと}キツネも{減|へ}ります。"
+   }
+  ],
+  "factSources": [
+   "Påhittad scen; kommunen är inte verklig.",
+   "”Alla modeller är fel, men en del är användbara” tillskrivs statistikern George Box (1976).",
+   "Köteorin grundades av A. K. Erlang (1909) för telefonväxlar. Lodjur och snöskohare i Kanada är ett känt exempel på cykler mellan rovdjur och bytesdjur (Lotka–Volterra-modellen); rävar och harar här är ett förenklat exempel."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om modeller och prognoser i samhället.",
+  "discussionPoints": [
+   "Vilka prognoser litar du på, och vilka litar du inte på?",
+   "Vilken förenkling gör du själv när du planerar din vecka?",
+   "Var i din vardag står du i kö, och hur skulle man kunna göra kön kortare?",
+   "Kan du komma på en situation där det som är bäst för dig inte är bäst för alla?"
+  ]
+ }
+}
