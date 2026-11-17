@@ -251,6 +251,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.sökning.1', 's.föregående.1',
   // 0.49 Matematikens specialområden: förväxlas med närliggande fackord
   's.noggrannhet.2', 's.numerisk.1', 's.startvärde.1', 's.målfunktion.1', 's.kryptografi.1', 's.öppen-nyckel.1',
+  // 0.49 Matematikens specialområden: förväxlas med töja, noggrannhet respektive kryptera efter två blindomgångar
+  's.deformera.1', 's.exakt.1', 's.chiffer.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
