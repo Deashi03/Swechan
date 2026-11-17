@@ -187,6 +187,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'tal.': () => import('./numbers').then((m) => m.NUMBER_MOTIFS),
   'brak.': () => import('./fractions').then((m) => m.FRACTION_MOTIFS),
   'algx.': () => import('./algebra').then((m) => m.ALGEBRA_MOTIFS),
+  'funk.': () => import('./functions').then((m) => m.FUNCTION_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
