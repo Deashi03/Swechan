@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.50.0 – 2026-11-17
+
+42 nya moduler som gör överämnet *Fysik* (R06-A03) komplett. Modulerna lär ut det svenska ordförrådet för skolfysik med vardagliga exempel (cykel, kök, väder, mobiltelefon, elnät). Varje nytt modulord har en egen bild, utom de 32 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 698 målord)
+- **Mekanik** (3311–3317): sträcka och förflyttning, hastighet och acceleration, kraft och massa, Newtons rörelselagar, arbete och energi, rörelsemängd och impuls samt rotation och vridmoment.
+- **Vågor & ljud** (3321–3327): svängningar, frekvens och period, våglängd och amplitud, ljudets utbredning, resonans, dopplereffekten samt interferens och diffraktion.
+- **Ljus & optik** (3331–3337): reflektion, brytning, linser och speglar, färger och spektrum, elektromagnetiska vågor, polarisation och optiska instrument.
+- **Elektricitet & magnetism** (3341–3347): elektrisk laddning, ström och spänning, resistans och ledare, elektriska fält, magnetfält, elektromagnetisk induktion och elektriska kretsar.
+- **Värmelära & termodynamik** (3351–3357): temperatur och värme, aggregationstillstånd, värmekapacitet, värmeledning och isolering, termodynamikens huvudsatser, entropi och värmemaskiner.
+- **Modern fysik** (3361–3367): atomer och subatomära partiklar, elektroner och kvanttal, fotoner och kvanta, radioaktivitet och kärnreaktioner, relativitetsteori, kvantmekanikens grundidéer och partikelacceleratorer.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 295 nya ordposter. Grundord som *kraft*, *rörelse*, *arbete*, *effekt*, *spänning*, *ballong* och *foton* har fått egna poster.
+- 26 nya betydelser på befintliga poster, där vardagsordet fått sin fysikbetydelse: bland andra *fjäder* och *impuls* (mekanik), *frekvens*, *våg*, *utslag*, *nod*, *buk* och *spalt* (vågor), *reflektion*, *prisma*, *mottagare* och *fokusera* (optik), *ström*, *ledare*, *motstånd*, *induktion*, *komponent*, *nordpol* och *sydpol* (el), *värme*, *frysa* och *isolering* (värme) samt *energinivå* (modern fysik). Den gamla betydelsen har fått en etikett.
+- Parallella grupper ville skapa samma poster (*skimra*, *turbin*, *lysdiod*, *fjäder*, *stötdämpare*, *varvtal*). Posten finns bara i den grupp som lade in den först, och de andra refererar dess `senseId`.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Kemi* (R06-A04): Kemiska reaktioner → Reaktanter och produkter. De två första kemigrupperna innehåller redan var sin ursprunglig modul (*Atomer och molekyler*, *Material och ämnen*) och har därför åtta val.
+
+### Bilder (292 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `mechanics.ts`, `wavesSound.ts`, `lightOptics.ts`, `electricity.ts`, `thermo.ts` och `modernPhysics.ts`. Bilderna visar siffror, enheter som m/s och tecken men inga ord.
+- 175 symbol- och adjektivbilder blindtestades. 143 klarade testet efter högst två omgångar.
+- **32 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+
+Service workern är `swechan-v54`.
+
+
 ## 0.49.0 – 2026-11-17
 
 42 nya moduler som gör överämnet *Avancerad matematik* (R06-A02) komplett. Modulerna lär ut det svenska ordförrådet för gymnasie- och högskolematematik med vardagliga exempel (hastighet, ränta, spel, nätverk, kryptering). Varje nytt modulord har en egen bild, utom de 41 ord som underkändes i två blindtestomgångar.
