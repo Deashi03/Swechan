@@ -257,6 +257,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.förflyttning.1', 's.rörelse.1', 's.momentanhastighet.1', 's.retardation.1', 's.newton.1', 's.motkraft.1', 's.energiomvandling.1', 's.vridmoment.1',
   // 0.50 Ljus & optik: förväxlas med reflektera respektive lupp
   's.reflektion.2', 's.förstoring.1',
+  // 0.50 Ljus & optik: förväxlas med konkav/konvex efter två blindomgångar
+  's.spridningslins.1', 's.samlingslins.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
