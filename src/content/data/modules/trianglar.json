@@ -1,0 +1,178 @@
+{
+ "id": "m.trianglar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Trianglar",
+ "titleJa": "{三角形|さんかくけい}",
+ "descriptionSv": "Trianglar: triangel, sida, hörn, bas, höjd, liksidig, likbent, oliksidig, rätvinklig, spetsvinklig, trubbvinklig, vinkelsumma, katet, hypotenusa, Pythagoras sats, kongruent och likformig.",
+ "descriptionJa": "{三角形|さんかくけい}：{三角形|さんかくけい}、{辺|へん}、{頂点|ちょうてん}、{底辺|ていへん}、{高|たか}さ、3{辺|へん}が{等|ひと}しい、2{辺|へん}が{等|ひと}しい、{不等辺|ふとうへん}の、{直角|ちょっかく}の、{鋭角|えいかく}の、{鈍角|どんかく}の、{角|かく}の{和|わ}、{直角|ちょっかく}をはさむ{辺|へん}、{斜辺|しゃへん}、ピタゴラスの{定理|ていり}、{合同|ごうどう}な、{相似|そうじ}な。",
+ "categoryId": "R06-A01-T04",
+ "tags": [
+  "matematik",
+  "geometri"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.vinklar-och-vinkeltyper"
+ ],
+ "related": [],
+ "recommendedOrder": 3133,
+ "words": [
+  {
+   "senseId": "s.triangel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.liksidig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likbent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oliksidig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rätvinklig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trubbvinklig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spetsvinklig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vinkelsumma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.katet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hypotenusa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Pythagoras-sats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kongruent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.likformig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett förråd i trädgården",
+  "paragraphs": [
+   "Kenji och hans granne Emil ska bygga ett litet förråd i trädgården. Först gör de en ram av trä. Alla fyra hörn måste vara räta vinklar, annars blir förrådet snett.",
+   "– Hur vet vi att hörnet är rätt? frågar Emil. Kenji mäter tre meter längs den ena sidan och fyra meter längs den andra. Sedan mäter han avståndet mellan ändpunkterna. Det är precis fem meter. – Då är det en rät vinkel, säger han. Det är Pythagoras sats: i en rätvinklig triangel med kateterna 3 och 4 är hypotenusan 5.",
+   "Taket ska se ut som en likbent triangel, med två lika långa sidor. Basen är lika lång som förrådet är brett, och höjden är avståndet från basen upp till det översta hörnet.",
+   "Emil ritar triangeln på ett papper. Vinkeln högst upp är större än 90 grader, så det blir en trubbvinklig triangel. – Vinkelsumman i en triangel är alltid 180 grader, säger Kenji. Om vinklarna vid basen är 30 grader var, är vinkeln högst upp 120 grader. En liksidig triangel skulle bli för hög, eftersom den är spetsvinklig, och en oliksidig triangel skulle se konstig ut.",
+   "De gör två trianglar av trä, en för varje ände av taket. Trianglarna måste vara kongruenta, alltså exakt lika stora. Emil har också gjort en liten modell av förrådet. Den är likformig med det riktiga förrådet: formen är densamma, men allt är tio gånger mindre."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur långt var avståndet mellan ändpunkterna när hörnet var rätt?",
+    "options": [
+     "Tre meter",
+     "Fyra meter",
+     "Sju meter",
+     "Fem meter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sedan mäter han avståndet mellan ändpunkterna. Det är precis fem meter.",
+    "explanationJa": "{端点|たんてん}の{間|あいだ}はちょうど5メートルでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad kallas den längsta sidan i en rätvinklig triangel?",
+    "options": [
+     "Hypotenusan",
+     "Kateten",
+     "Basen",
+     "Höjden"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… i en rätvinklig triangel med kateterna 3 och 4 är hypotenusan 5.",
+    "explanationJa": "{直角三角形|ちょっかくさんかくけい}でいちばん{長|なが}い{辺|へん}は{斜辺|しゃへん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur stor är vinkelsumman i en triangel?",
+    "options": [
+     "180 grader",
+     "90 grader",
+     "270 grader",
+     "360 grader"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vinkelsumman i en triangel är alltid 180 grader …",
+    "explanationJa": "{三角形|さんかくけい}の{内角|ないかく}の{和|わ}はいつも180{度|ど}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Trianglarna i de två ändarna av taket måste vara lika stora.",
+    "correct": true,
+    "explanationSv": "Trianglarna måste vara kongruenta, alltså exakt lika stora.",
+    "explanationJa": "{両端|りょうはし}の{三角形|さんかくけい}は{合同|ごうどう}でなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emils modell är lika stor som det riktiga förrådet.",
+    "correct": false,
+    "explanationSv": "Den är likformig med det riktiga förrådet: formen är densamma, men allt är tio gånger mindre.",
+    "explanationJa": "{模型|もけい}は{相似|そうじ}ですが、10{分|ぶん}の1の{大|おお}きさです。"
+   }
+  ],
+  "factSources": [
+   "Vinkelsumman i en triangel är 180° (euklidisk geometri).",
+   "Pythagoras sats: a² + b² = c² i en rätvinklig triangel; 3–4–5 är en rätvinklig triangel (9 + 16 = 25). Satsen var känd i Babylonien långt före Pythagoras."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om trianglar i vardagen och i skolan.",
+  "discussionPoints": [
+   "Var ser du trianglar omkring dig, till exempel i hus eller skyltar?",
+   "Kommer du ihåg Pythagoras sats från skolan i Japan?",
+   "Vad är skillnaden mellan kongruent och likformig?",
+   "Vilken sorts triangel tycker du är vackrast?"
+  ]
+ }
+}
