@@ -247,6 +247,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.osannolik.1',
   // 0.49 Diskret matematik: abstrakta fackord som förväxlas med närliggande ord
   's.implikation.1', 's.omvändning.1', 's.motsägelsebevis.1', 's.direkt-bevis.1', 's.axiom.1', 's.graf.2', 's.träd.2', 's.komplexitet.1',
+  // 0.49 Diskret matematik: förväxlas med linjär sökning respektive räkna baklänges efter två blindomgångar
+  's.sökning.1', 's.föregående.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
