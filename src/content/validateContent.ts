@@ -239,6 +239,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.derivera.1', 's.tangeringspunkt.1',
   // 0.49 Linjär algebra: förväxlas med riktning respektive koordinat efter två blindomgångar
   's.vektor.1', 's.komponent.1',
+  // 0.49 Integraler & differentialekvationer: kan inte skiljas från integrera, konstant, sträcka respektive villkor
+  's.primitiv-funktion.1', 's.integrationskonstant.1', 's.tillryggalagd.1', 's.begynnelsevillkor.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
