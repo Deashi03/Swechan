@@ -61,7 +61,6 @@ const cakeSide = (x: number, y: number, w: number) => all(rect(x - w / 2, y - 16
 const plate = (x: number, y: number, rx = 26) => ellipse(x, y, rx, 5, C.white, C.ink, 1.6);
 /** Vertical number scale from a (bottom) to b (top) at x, from y1 (bottom) to y2 (top). */
 const vscale = (x: number, y1: number, y2: number, a: string, b: string) => all(line(`M${x} ${y1} L${x} ${y2}`, C.ink, 2), line(range(11).map((i) => `M${x - (i % 5 ? 3 : 6)} ${f1(y1 + ((y2 - y1) / 10) * i)} l${i % 5 ? 6 : 12} 0`).join(' '), C.ink, 1.3), T(x - 18, y1 + 5, a, 14), T(x - 18, y2 + 5, b, 14));
-const bars = (hs: number[], col: string = BLUE) => all(line('M14 104 L106 104 M14 104 L14 22', C.ink, 1.8), ...hs.map((h, i) => rect(24 + i * 28, 104 - h, 18, h, col, 1, C.ink, 1.4)));
 
 export const FRACTION_MOTIFS: Record<string, Svg> = {
   // ── 3111 Täljare och nämnare ─────────────────────────────────────
@@ -79,7 +78,7 @@ export const FRACTION_MOTIFS: Record<string, Svg> = {
   'brak.tiondel': all(strip(10, 44, 100, 22, 10, [0], HL), T(60, 94, '1/10', 18, HL), arrow(15, 82, 15, 70, HL, 2.4)),
   // ── 3112 Blandad form och bråkform ────────────────────────────────
   'brak.blandad-form': all(pie(28, 40, 18, 4, [0, 1, 2, 3]), T(55, 46, '+', 18), pie(82, 40, 18, 4, [0, 1, 2]), mixed(56, 86, '1', '3', '4', 34, [HL, HL]), box(28, 62, 58, 44), greyed(frac(104, 88, '7', '4', 14))),
-  'brak.bråkform': all(pie(28, 40, 18, 4, [0, 1, 2, 3]), T(55, 46, '+', 18), pie(82, 40, 18, 4, [0, 1, 2]), frac(56, 84, '7', '4', 26, [HL, HL, HL]), box(36, 62, 40, 46), greyed(mixed(102, 84, '1', '3', '4', 16))),
+  'brak.bråkform': all(greyed(T(26, 66, '0,5', 22)), arrow(44, 60, 60, 60, HL, 3), frac(86, 56, '1', '2', 34, [HL, HL, HL]), box(66, 20, 40, 72)),
   'brak.heltalsdel': all(pie(30, 38, 20, 4, [0, 1, 2, 3]), circle(30, 38, 23, 'none', HL, 2.6), greyed(pie(84, 38, 20, 4, [0, 1, 2])), mixed(58, 86, '1', '3', '4', 36, [HL, C.grey]), ring(46, 86, 15), arrow(34, 64, 42, 71, HL, 2.4)),
   'brak.äkta-bråk': all(circle(36, 50, 24, 'none', C.grey, 1.6, ), pie(36, 50, 24, 4, [0, 1, 2], HL), frac(84, 46, '3', '4', 26, [HL, C.ink, C.ink]), T(84, 98, '< 1', 20, HL), greyed(frac(36, 92, '5', '4', 12))),
   'brak.oäkta-bråk': all(pie(24, 50, 16, 4, [0, 1, 2, 3], HL), pie(58, 50, 16, 4, [0], HL), frac(94, 46, '5', '4', 26, [HL, C.ink, C.ink]), T(94, 98, '> 1', 20, HL), greyed(frac(40, 92, '3', '4', 12))),
@@ -104,22 +103,22 @@ export const FRACTION_MOTIFS: Record<string, Svg> = {
   'brak.öre': all(tagShape(56, 58, 92, 44), T(46, 68, '14,', 26), T(78, 68, '90', 26, HL), box(63, 44, 32, 32), greyed(coin(24, 98, 8)), cross(24, 98, 7)),
   // ── 3115 Avrundning ─────────────────────────────────────────────
   'brak.avrundning': all(line('M10 70 L110 70', C.ink, 2), line(range(11).map((i) => `M${10 + i * 10} ${i % 5 ? 66 : 62} L${10 + i * 10} ${i % 5 ? 74 : 78}`).join(' '), C.ink, 1.4), T(10, 94, '4', 14), T(110, 94, '5', 14), circle(90, 70, 4, C.ink, null), T(84, 56, '4,8', 13), path('M92 60 C98 36 108 40 110 62', 'none', HL, 2.6), arrow(108, 54, 110, 63, HL, 2.6), circle(110, 70, 5, 'none', HL, 2.6)),
-  'brak.avrunda-uppåt': all(vscale(64, 102, 22, '3', '4'), circle(64, 46, 5, C.ink, null), T(94, 51, '3,7', 16), arrow(78, 42, 78, 26, HL, 3.4), circle(64, 22, 7, 'none', HL, 2.8)),
+  'brak.avrunda-uppåt': all(vscale(40, 102, 22, '3', '4'), circle(40, 46, 5, C.ink, null), T(18, 51, '3,7', 12), path('M70 104 L70 52 L58 52 L82 18 L106 52 L94 52 L94 104 Z', HL, C.ink, 1.6), circle(40, 22, 7, 'none', HL, 2.8), line('M47 22 L60 22', HL, 2, '3 2')),
   'brak.avrunda-nedåt': all(vscale(64, 102, 22, '3', '4'), circle(64, 86, 5, C.ink, null), T(94, 91, '3,2', 16), arrow(78, 90, 78, 104, HL, 3.4), circle(64, 102, 7, 'none', HL, 2.8)),
-  'brak.närmevärde': all(circle(50, 60, 40, C.white, C.ink, 2), circle(50, 60, 28, '#cfe6f7', C.ink, 1.4), circle(50, 60, 14, C.white, C.ink, 1.4), circle(50, 60, 5, C.grey, null), T(50, 92, 'π', 12, C.grey), line('M56 56 L98 24', C.brown, 2.4), path('M98 24 l8 -4 l-2 8 Z', HL, C.ink, 1), circle(56, 56, 2.4, HL, null), T(96, 108, '3,14', 15, HL)),
+  'brak.närmevärde': all(greyed(T(60, 34, 'π = 3,14159…', 15)), arrow(60, 44, 60, 60, HL, 3), rect(30, 64, 60, 34, 'rgba(228,87,46,0.12)', 4, HL, 2.8), T(60, 90, '3,14', 26, HL)),
   'brak.ungefär-lika-med': all(T(24, 60, '9,8', 20), path('M48 46 c4 -4 8 -4 12 0 s8 4 12 0 M48 58 c4 -4 8 -4 12 0 s8 4 12 0', 'none', HL, 4.4), T(96, 60, '10', 22), greyed(T(60, 100, '=', 22)), cross(60, 93, 7)),
   'brak.öresavrundning': all(rect(12, 18, 44, 60, C.white, 2, C.ink, 1.6), line('M18 30 L48 30 M18 38 L42 38 M18 46 L46 46', C.grey2, 2), line('M16 56 L52 56', C.ink, 1), T(34, 70, '47,60', 12), arrow(60, 48, 74, 48, HL, 3), rect(78, 30, 34, 36, 'rgba(228,87,46,0.12)', 4, HL, 2.4), T(95, 54, '48', 18, HL), coin(28, 98, 8), coin(46, 98, 8), coin(64, 98, 8), coin(82, 98, 8)),
   'brak.värdesiffra': all(T(25, 70, '0,0', 28, C.grey), rect(48, 44, 66, 36, 'rgba(228,87,46,0.12)', 4, HL, 2.4), T(81, 70, '350', 28, HL), ...[59, 81, 103].map((x) => circle(x, 92, 3, HL, null))),
   // ── 3116 Procent i vardagen ──────────────────────────────────────
-  'brak.procent': all(grid(10, 18, 6.4, 25, BLUE), T(96, 64, '25', 20, HL), T(96, 88, '%', 26, HL)),
+  'brak.procent': all(circle(60, 60, 46, '#fbe1d6', HL, 3), circle(42, 40, 11, 'none', HL, 7), circle(78, 80, 11, 'none', HL, 7), line('M82 30 L38 90', HL, 8)),
   'brak.procentform': all(greyed(frac(20, 46, '1', '4', 18), T(52, 58, '=', 16), T(80, 58, '0,25', 16)), T(60, 100, '25 %', 26, HL), box(28, 76, 64, 32)),
-  'brak.andel.2': all(...range(10).map((i) => g(`translate(${12 + (i % 5) * 24} ${i < 5 ? 34 : 70})`, mini(0, 0, i < 4 ? C.orange : C.grey2))), box(2, 20, 46, 32), box(2, 56, 46, 32), pie(96, 100, 12, 10, [0, 1, 2, 3], HL), T(72, 106, '40 %', 11, HL)),
+  'brak.andel.2': all(...range(5).map((i) => g(`translate(${16 + i * 22} 52)`, mini(0, 0, i < 3 ? C.orange : C.grey2))), box(3, 32, 66, 34), path('M8 70 L8 76 L64 76 L64 70', 'none', HL, 2.4), frac(36, 94, '3', '5', 18, [HL, HL, HL]), greyed(frac(98, 94, '2', '5', 14))),
   'brak.var-tredje': all(...range(6).map((i) => g(`translate(${14 + i * 18.4} 70)`, mini(0, 0, i % 3 === 2 ? C.orange : C.grey2))), ...[2, 5].map((i) => arrow(14 + i * 18.4, 36, 14 + i * 18.4, 54, HL, 2.6)), T(60, 106, '1/3', 16, HL)),
   'brak.hundra-procent': all(rect(10, 30, 92, 24, C.white, 6, C.ink, 2), rect(13, 33, 86, 18, GREEN, 4, null), T(56, 47, '100 %', 13, C.white), ok(108, 42, 8), greyed(rect(10, 80, 92, 18, C.white, 6, C.ink, 1.6), rect(13, 83, 50, 12, GREEN, 3, null), T(80, 94, '60 %', 10))),
   // ── 3117 Procentuell förändring ──────────────────────────────────
   'brak.procentuell': all(line('M14 104 L106 104', C.ink, 1.8), rect(26, 54, 26, 50, C.grey2, 1, C.ink, 1.4), T(39, 48, '100', 12), rect(70, 44, 26, 60, BLUE, 1, C.ink, 1.4), rect(70, 44, 26, 10, HL, 1, C.ink, 1.2), T(83, 38, '120', 12), tagShape(58, 18, 44, 18, '#fbe1d6'), T(55, 23, '+20 %', 11, HL)),
-  'brak.ökning': all(bars([24, 44, 66]), arrow(20, 92, 98, 18, HL, 4)),
-  'brak.minskning': all(bars([66, 44, 24]), arrow(20, 18, 98, 92, HL, 4)),
+  'brak.ökning': all(ground, ...range(3).map((i) => g(`translate(${14 + i * 12} 100)`, mini(0, 0, C.grey2))), arrow(50, 92, 62, 92, C.grey, 2.4), ...range(6).map((i) => g(`translate(${72 + (i % 3) * 14} ${i < 3 ? 100 : 76})`, mini(0, 0, C.orange))), arrow(60, 60, 60, 16, HL, 5)),
+  'brak.minskning': all(ground, ...range(6).map((i) => g(`translate(${14 + (i % 3) * 14} ${i < 3 ? 100 : 76})`, mini(0, 0, C.grey2))), arrow(56, 92, 68, 92, C.grey, 2.4), ...range(3).map((i) => g(`translate(${80 + i * 12} 100)`, mini(0, 0, C.orange))), arrow(60, 16, 60, 60, HL, 5)),
   'brak.förändringsfaktor': all(T(22, 56, '100', 18), T(44, 56, '×', 18), T(70, 56, '1,05', 18, HL), ring(70, 50, 18), T(60, 96, '= 105', 20)),
   'brak.prissänkning': all(tagShape(56, 40, 84, 34), T(48, 48, '800', 22, C.grey), line('M28 38 L70 48', '#d64545', 3), tagShape(56, 88, 84, 34, '#fbe1d6'), T(48, 96, '600', 22, HL), arrow(104, 46, 104, 80, HL, 3.4)),
 };
