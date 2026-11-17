@@ -273,6 +273,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.foton.1',
   // 0.51 Molekyler & kemiska bindningar: förväxlas med huvudordet eller samma ordfamilj
   's.positiv-jon.1', 's.negativ-jon.1', 's.laddad.1', 's.leda-ström.1', 's.vinklad.1', 's.bindningsvinkel.1', 's.flyktig.1', 's.intermolekylär-kraft.1', 's.van-der-Waals-kraft.1',
+  // 0.51 Molekyler & kemiska bindningar: förväxlas med kristall respektive lösa sig efter två blindomgångar
+  's.gitter.1', 's.fettlöslig.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
