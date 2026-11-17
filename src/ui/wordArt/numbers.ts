@@ -120,9 +120,8 @@ export const NUMBER_MOTIFS: Record<string, Svg> = {
   'tal.heltal': (() => { const L = nline(70, -3, 3, 16, 104, { size: 10 }); return all(bg(), L.svg, ...range(7).map((i) => dot(L.X(i - 3), 70, 4.6, C.orange)), ...range(6).map((i) => all(line(`M${f1(L.X(i - 3) + 7.3)} 66 L${f1(L.X(i - 3) + 7.3)} 74`, C.grey2, 1), num(f1(L.X(i - 3) + 7.3), 58, '½', 7, C.grey))), rect(8, 54, 104, 40, 'none', 6, HL, 1.6), num(60, 30, '… −2, −1, 0, 1, 2 …', 12, HL)); })(),
   /** naturligt tal: the same number line; only 0, 1, 2, 3, 4 … are coloured, continuing right; the negatives are grey. */
   'tal.naturligt-tal': (() => { const L = nline(70, -3, 4, 14, 102, { size: 10, col: (n) => (n < 0 ? C.grey2 : C.ink) }); return all(bg(), L.svg, ...range(5).map((i) => dot(L.X(i), 70, 4.6, C.green)), ...range(3).map((i) => dot(L.X(i - 3), 70, 3.4, C.grey2)), rect(f1(L.X(0) - 7), 54, f1(L.X(4) - L.X(0) + 16), 40, 'none', 6, HL, 1.8), arrow(84, 44, 108, 44, C.green, 3), num(52, 32, '0, 1, 2, 3 …', 14, C.green)); })(),
-  /** grundtal: three apples counted 1, 2, 3 and a big coloured 3 ("how many"); a grey podium with the place 3 as reference. */
-  'tal.grundtal': all(bg(), apple(22, 40, 1.6), apple(46, 40, 1.6), apple(70, 40, 1.6), num(22, 62, '1', 10, C.grey), num(46, 62, '2', 10, C.grey), num(70, 62, '3', 10, C.grey), line('M14 70 L80 70', HL, 1.6), arrow(46, 74, 46, 84, HL, 2.4), mark(46, 96, 26, 22), num(46, 104, '3', 22, HL),
-    greyed(rect(88, 74, 12, 30, C.silver, 0, C.ink, 1), rect(100, 64, 12, 40, C.gold, 0, C.ink, 1), rect(76, 82, 12, 22, C.tan, 0, C.ink, 1), num(82, 98, '3.', 8)), ground),
+  /** grundtal: three apples counted 1, 2, 3; a brace gathers all of them into one big coloured 3 – how many there are. */
+  'tal.grundtal': all(bg(), apple(26, 36, 1.8), apple(60, 36, 1.8), apple(94, 36, 1.8), num(26, 60, '1', 10, C.grey), num(60, 60, '2', 10, C.grey), num(94, 60, '3', 10, C.grey), path('M16 66 Q16 74 38 74 Q56 74 60 82 Q64 74 82 74 Q104 74 104 66', 'none', HL, 2.4), mark(60, 96, 28, 24), num(60, 105, '3', 24, HL)),
   /** ental: "4 352" with the last digit marked; two unit cubes below. */
   'tal.ental': place(3),
   /** tiotal: "4 352" with the 5 marked; five ten-rods below. */
@@ -177,8 +176,8 @@ export const NUMBER_MOTIFS: Record<string, Svg> = {
   'tal.bli-över': all(bg('#f6efe4'), rect(6, 70, 108, 6, C.tan, 2, C.ink, 1.4), ...[22, 52, 82].map((x) => all(plate(x, 62), bun(x - 5, 58), bun(x + 5, 58))), bun(106, 50), ring(106, 50, 10), arrow(104, 30, 106, 40, HL, 2.2), num(98, 24, '1', 14, HL), num(52, 30, '7 : 2', 14, C.dark)),
   /** gå jämnt upp: six buns on three plates, two each, and nothing left over; a check mark. */
   'tal.gå-jämnt-upp': all(bg('#f6efe4'), rect(6, 70, 108, 6, C.tan, 2, C.ink, 1.4), ...[22, 52, 82].map((x) => all(plate(x, 62), bun(x - 5, 58), bun(x + 5, 58))), circle(106, 54, 9, 'none', C.grey, 1.2, ), num(106, 58, '0', 11, C.grey), check(104, 30, 1.2), num(52, 30, '6 : 2', 14, C.dark)),
-  /** delbar: twelve dots split into three equal circled groups of four; "12 : 3" with a check. */
-  'tal.delbar.2': all(bg(), groups([24, 60, 96], 66, 4, C.orange), num(46, 30, '12 : 3', 16), check(92, 26, 1.2), line('M10 92 L110 92', C.grey2, 1), num(60, 106, '4 + 4 + 4', 10, C.grey)),
+  /** delbar: a big 12; a list of checks shows that 12 can be divided by 2, 3, 4 and 6; the 5 row is grey with a cross. */
+  'tal.delbar.2': all(bg(), circle(26, 58, 20, MARK, HL, 2.6), num(26, 66, '12', 20, HL), ...[2, 3, 4, 6].map((d, i) => all(num(70, 24 + i * 18, `: ${d}`, 13), check(98, 20 + i * 18, 0.8))), greyed(num(70, 98, ': 5', 13)), cross(98, 94, 0.7), line('M50 58 L56 58', HL, 2), line('M56 18 L56 102', C.grey2, 1)),
   /** multipel: hops of 3 along a number line 0…12 land on 3, 6, 9 and 12, which are highlighted. */
   'tal.multipel': (() => { const L = nline(80, 0, 12, 12, 108, { size: 8, col: (n) => (n % 3 === 0 && n > 0 ? HL : C.grey) }); return all(bg(), L.svg, ...[0, 3, 6, 9].map((n) => all(path(`M${L.X(n)} 74 Q${f1((L.X(n) + L.X(n + 3)) / 2)} 46 ${L.X(n + 3)} 74`, 'none', HL, 2), path(`M${L.X(n + 3)} 74 l-5 -3 l1 5 Z`, HL, null))), ...[3, 6, 9, 12].map((n) => dot(L.X(n), 80, 4, HL)), num(36, 28, '× 3', 16, HL)); })(),
   /** delare: 12 in the centre; spokes lead to 1, 2, 3, 4, 6 and 12 in circles; a grey 5 is crossed out. */
@@ -193,9 +192,8 @@ export const NUMBER_MOTIFS: Record<string, Svg> = {
   'tal.mindre-än': all(bg(), stack(24, 3, C.sky), stack(96, 8, C.orange), mark(60, 62, 30, 30), num(60, 74, '<', 32, HL), ground),
   /** lika med: a level balance with 3 + 4 on one pan and 7 on the other; a highlighted = above. */
   'tal.lika-med': all(bg(), balance(60, 0, num(0, -2, '3+4', 11), num(0, -2, '7', 12)), mark(60, 28, 26, 22), num(60, 36, '=', 24, HL), ground),
-  /** storleksordning: a grey jumble of five stacks, an arrow, and the same stacks sorted from smallest to largest. */
-  'tal.storleksordning': all(bg(), greyed(bars([14, 26, 38, 50], [30, 12, 40, 20], [C.grey, C.grey, C.grey, C.grey], 50, 9)), arrow(60, 32, 78, 32, HL, 2.6), bars([84, 96, 108], [10, 22, 36], [C.yellow, C.orange, WARM], 50, 9),
-    bars([22, 42, 62, 82, 102], [12, 22, 32, 42, 52], ['#fde7c4', '#f9cf9a', '#f6b26b', '#ef8a3c', WARM], 106, 14), rect(10, 50, 104, 58, 'none', 6, HL, 1.6), ground),
+  /** storleksordning: a scale 1 – 10 – 100 – 1 000 (cm) with an ant, a mouse, a person and a house above it; each sits at its rough size, not in a sorted row of equal steps. */
+  'tal.storleksordning': all(bg(), line('M10 92 L110 92', C.ink, 2), ...[16, 46, 76, 106].map((x, i) => all(line(`M${x} 88 L${x} 96`, C.ink, 1.6), num(x, 106, ['1', '10', '100', '1000'][i]!, 8))), num(60, 116, '', 1), circle(16, 80, 2.2, C.dark, null), circle(13.5, 80, 1.6, C.dark, null), circle(18.5, 80, 1.4, C.dark, null), at(46, 80, 1, ellipse(0, 0, 8, 5, C.grey, C.ink, 1), circle(7, -2, 3, C.grey, C.ink, 0.8), line('M-8 1 C-14 2 -16 -2 -18 0', C.ink, 1)), P({ x: 76, h: 0.42, top: C.orange }), at(106, 86, 1, rect(-10, -36, 20, 36, C.beige, 1, C.ink, 1.2), path('M-13 -36 L0 -50 L13 -36 Z', C.red, C.ink, 1.2), rect(-3, -12, 6, 12, C.brown, 0.5, null)), ...[16, 46, 76, 106].map((x) => line(`M${x} 26 L${x} 88`, HL, 1, '2 3')), rect(6, 24, 108, 90, 'none', 6, HL, 1.4), num(60, 18, '× 10   × 10   × 10', 9, HL)),
   /** i stigande ordning: 2, 5, 9 on steps that go up from left to right; an arrow rises. */
   'tal.i-stigande-ordning': stairs([2, 5, 9], 1),
   /** i fallande ordning: 9, 5, 2 on steps that go down from left to right; an arrow falls. */
@@ -216,12 +214,12 @@ export const NUMBER_MOTIFS: Record<string, Svg> = {
   'tal.räknesätt': all(bg(), ...[['+', C.orange, 34, 34], ['−', C.sky, 86, 34], ['×', C.green, 34, 84], ['÷', C.purple, 86, 84]].map(([t, c, x, y]) => all(rect((x as number) - 22, (y as number) - 22, 44, 44, c as string, 8, C.ink, 1.6), num(x as number, (y as number) + 12, t as string, 34, C.white)))),
   /** lägga ihop: two hands push a pile of three apples and a pile of four apples together on a table. */
   'tal.lägga-ihop': all(bg('#f6efe4'), rect(6, 84, 108, 6, C.tan, 2, C.ink, 1.4), apple(30, 74, 1.1), apple(42, 74, 1.1), apple(36, 64, 1.1), apple(72, 74, 1.1), apple(84, 74, 1.1), apple(78, 64, 1.1), apple(90, 64, 1.1), arrow(8, 60, 22, 66, HL, 2.6), arrow(112, 60, 100, 66, HL, 2.6), hnd(14, 72, 5), hnd(106, 72, 5), num(60, 30, '3 + 4', 16, HL), line('M58 50 L60 58 L62 50', HL, 1.6)),
-  /** addition: "3 + 4 = 7" with the plus sign highlighted; three and four dots join above. */
-  'tal.addition': all(bg(), dotArray(14, 32, 3, 1, 9, C.orange), dotArray(48, 32, 4, 1, 9, C.sky), arrow(40, 44, 76, 50, C.grey, 1.4), dotArray(76, 56, 7, 1, 5, C.dark), eq(92, ['3', '+', '4', '=', '7'], [1])),
+  /** addition: the written sum 23 + 45 = 68 on a board, with the plus sign highlighted; no objects. */
+  'tal.addition': all(bg(), rect(8, 26, 104, 60, '#2f5d50', 4, C.ink, 1.6), rect(8, 86, 104, 5, C.brown, 1, C.ink, 1), mark(42, 58, 20, 20), num(22, 64, '23', 15, C.white), rect(40, 51, 4, 14, HL, 1, null), rect(35, 56, 14, 4, HL, 1, null), num(62, 64, '45', 15, C.white), num(81, 64, '=', 15, C.white), num(99, 64, '68', 15, C.white)),
   /** dra ifrån: ten apples on a table; a hand lifts four of them away (arrow out). */
   'tal.dra-ifrån': all(bg('#f6efe4'), rect(6, 84, 108, 6, C.tan, 2, C.ink, 1.4), ...range(6).map((i) => apple(14 + i * 12, 74, 1)), greyed(...range(4).map((i) => apple(60 + i * 12, 40, 1))), arrow(70, 66, 82, 50, HL, 2.6), hnd(104, 34, 5), rect(52, 28, 56, 22, 'none', 4, HL, 1.6), num(30, 30, '10 − 4', 14, HL)),
-  /** subtraktion: "9 − 5 = 4" with the minus sign highlighted; nine dots, five of them crossed out. */
-  'tal.subtraktion': all(bg(), ...range(9).map((i) => all(dot(16 + i * 11, 40, 3.6, i < 4 ? C.sky : C.grey2), i >= 4 ? cross(16 + i * 11, 40, 0.6, C.red) : '')), eq(92, ['9', '−', '5', '=', '4'], [1])),
+  /** subtraktion: the written difference 68 − 25 = 43 on a board, with the minus sign highlighted; no objects. */
+  'tal.subtraktion': all(bg(), rect(8, 26, 104, 60, '#2f5d50', 4, C.ink, 1.6), rect(8, 86, 104, 5, C.brown, 1, C.ink, 1), mark(42, 58, 20, 20), num(22, 64, '68', 15, C.white), rect(35, 56, 14, 4, HL, 1, null), num(62, 64, '25', 15, C.white), num(81, 64, '=', 15, C.white), num(99, 64, '43', 15, C.white)),
   /** differens: two bars of 10 and 4 side by side; the part where the tall bar is taller is bracketed and labelled 6. */
   'tal.differens': all(bg(), rect(28, 24, 22, 80, C.orange, 2, C.ink, 1.2), rect(66, 72, 22, 32, C.sky, 2, C.ink, 1.2), num(39, 116, '', 1), num(39, 18, '10', 11), num(77, 66, '4', 11), line('M64 72 L90 72', C.grey, 1, '3 2'), line('M66 24 L90 24', C.grey, 1, '3 2'), rect(66, 24, 22, 48, MARK, 2, HL, 2, ), num(77, 54, '6', 16, HL), line('M96 24 L100 24 L100 72 L96 72', HL, 2), ground),
   /** kolumn: a grid of numbers; one vertical column is highlighted from top to bottom. */
@@ -263,8 +261,8 @@ export const NUMBER_MOTIFS: Record<string, Svg> = {
   // ── 3107 Rimlighetsbedömning ─────────────────────────────────────
   /** rimlighet: a balance with a bus on one pan and "12 m" on the other stays level (check); a grey "120 m" is crossed out. */
   'tal.rimlighet': all(bg(), balance(60, 0, at(-12, -4, 0.55, bus(0, 0, 44)), num(0, -2, '12 m', 10, OK)), check(60, 30, 1.2), greyed(num(100, 22, '120 m', 9)), cross(100, 18, 0.8), ground),
-  /** överslag: "49 × 21" in grey becomes "50 × 20 = 1 000" in round numbers, joined by a ≈ sign. */
-  'tal.överslag': all(bg(), rect(14, 14, 92, 30, C.white, 4, C.grey, 1.2), num(60, 36, '49 × 21', 16, C.grey), mark(60, 56, 22, 16), num(60, 62, '≈', 18, HL), rect(10, 70, 100, 30, MARK, 4, HL, 2), num(60, 92, '50 × 20 = 1 000', 13, HL)),
+  /** överslag: a receipt 49 + 21 + 29; an arrow leads to a quick sum in round numbers 50 + 20 + 30 ≈ 100 (highlighted), done before the grey calculator. */
+  'tal.överslag': all(bg(), path('M8 10 L44 10 L44 96 L40 100 L36 96 L32 100 L28 96 L24 100 L20 96 L16 100 L12 96 L8 100 Z', C.white, C.ink, 1.2), ...[49, 21, 29].map((v, i) => all(rect(12, 22 + i * 16, 14, 3, C.grey2, 1, null), num(36, 28 + i * 16, `${v}`, 9))), line('M12 74 L40 74', C.ink, 1), arrow(48, 44, 58, 44, HL, 2.6), rect(58, 14, 56, 54, MARK, 4, HL, 2.2), num(86, 30, '50', 11, HL), num(86, 44, '+20', 11, HL), num(86, 58, '+30', 11, HL), num(86, 84, '≈ 100', 13, HL), greyed(calc(100, 100, 0.45, '99'))),
   /** uppskattning: a person looks at a jar of sweets and thinks "≈ 100"; the jar is ringed. */
   'tal.uppskattning.2': all(bg('#f3eee8'), P({ x: 30, h: 0.9, top: C.purple, mood: 'calm' }), thought(72, 22, 50, num(72, 26, '≈100', 12, HL)), path('M78 66 L78 110 L108 110 L108 66 Z', 'rgba(214,236,248,0.6)', C.ink, 1.4), rect(80, 60, 26, 6, C.brown, 1, C.ink, 1), ...range(16).map((i) => circle(82 + (i % 4) * 7, 104 - Math.floor(i / 4) * 9, 3, [C.red, C.yellow, C.green, C.sky][i % 4]!, C.ink, 0.6)), ground),
   /** enhet: a ruler with m, a scale with kg and a coin with kr; each unit tag is highlighted beside its number. */
