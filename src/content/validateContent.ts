@@ -245,6 +245,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.slumpförsök.1', 's.komplementhändelse.1', 's.permutation.1', 's.kombinatorik.1', 's.sannolikhetsfördelning.1', 's.väntevärde.1', 's.varians.1',
   // 0.49 Sannolikhetsteori: förväxlas med sannolikhet efter två blindomgångar
   's.osannolik.1',
+  // 0.49 Diskret matematik: abstrakta fackord som förväxlas med närliggande ord
+  's.implikation.1', 's.omvändning.1', 's.motsägelsebevis.1', 's.direkt-bevis.1', 's.axiom.1', 's.graf.2', 's.träd.2', 's.komplexitet.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
