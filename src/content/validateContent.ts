@@ -221,6 +221,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.storhet.1',
   // 0.48 Algebraiska uttryck: förväxlas med synonym eller samma ordfamilj efter två blindomgångar
   's.variera.1', 's.potens.1', 's.ordningsföljd.1', 's.isolera.2', 's.olikhet.1',
+  // 0.48 Funktioner & grafer: abstrakt, kan inte skiljas från funktionsvärde/motsvara
+  's.funktion.2', 's.bero-på.2',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
