@@ -63,8 +63,6 @@ const eq = (x: number, y: number, toks: string[], size: number, hl: number[] = [
   return all(...toks.map((t, i) => T(f1(x0 + i * gap), y, t, size, hl.includes(i) ? HL : base)));
 };
 const eqX = (x: number, toks: string[], i: number, size: number, gap = size * 0.78) => f1(x - ((toks.length - 1) * gap) / 2 + i * gap);
-/** Slope triangle under a line: from (x, y) one unit right (grey) and k units up (orange). */
-const coin = (x: number, y: number) => all(ellipse(x, y, 8, 3, C.gold, C.ink, 1), ellipse(x, y - 1.5, 8, 3, '#f2d27a', C.ink, 1));
 const weight = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, circle(0, -16, 4, 'none', C.dark, 2.4), path('M-9 0 L-6 -13 L6 -13 L9 0 Z', C.dark, C.ink, 1.2), T(0, -3.5, '1', 9, C.white));
 const cab = (x: number, y: number) => g(`translate(${x} ${y})`, path('M-26 -6 L-24 -14 L-14 -16 L-8 -26 L12 -26 L18 -16 L26 -14 L27 -6 Z', C.yellow, C.ink, 1.6), path('M-6 -24 L-2 -17 L10 -17 L8 -24 Z', '#cfe8f7', C.ink, 1), path('M-12 -17 L-8 -24 L-4 -24 L-5 -17 Z', '#cfe8f7', C.ink, 1), rect(-4, -32, 12, 6, C.white, 1, C.ink, 1), line('M-1 -29 L5 -29', C.ink, 1.4, '1.5 1.5'), circle(-14, -5, 6, C.dark, C.ink, 1.2), circle(16, -5, 6, C.dark, C.ink, 1.2), circle(-14, -5, 2.2, C.silver, null), circle(16, -5, 2.2, C.silver, null));
 const flagPole = (x: number, y: number, col: string = HL) => all(line(`M${x} ${y} L${x} ${y - 30}`, C.ink, 2), path(`M${x} ${y - 30} L${x + 16} ${y - 25} L${x} ${y - 20} Z`, col, C.ink, 1.2));
@@ -139,10 +137,11 @@ export const FUNCTION_MOTIFS: Record<string, Svg> = {
   'funk.rak': all(line('M12 40 L108 40', HL, 5), ok(104, 22, 8), greyed(path('M12 86 C24 70 34 102 48 86 S72 70 84 86 S100 100 108 86', 'none', C.grey, 4)), cross(108, 104, 6)),
   'funk.dra-en-linje': all(g('rotate(-33.7 60 60)', ruler(10, 63, 100)), line('M24 84 L70 53.3', HL, 3.4), line('M70 53.3 L96 36', C.grey, 1.6, '3 4'), dot(24, 84), dot(96, 36), pen(70, 53.3, 20)),
   'funk.graf': all(q1(), line(poly([P(0, 1), P(1, 3), P(2, 3.5), P(3, 5), P(4, 4.5), P(5, 6), P(6, 6.5)]), HL, 3), ...[[0, 1], [1, 3], [2, 3.5], [3, 5], [4, 4.5], [5, 6], [6, 6.5]].map(([i, j]) => dot(P(i!, j!)[0], P(i!, j!)[1], HL, 2.8))),
-  'funk.linjär.2': all(q1(), greyed(path(`M${P(0, 0.5)[0]} ${P(0, 0.5)[1]} C${P(4, 0.5)[0]} ${P(4, 0.5)[1]} ${P(5, 3)[0]} ${P(5, 3)[1]} ${P(5.6, 7.4)[0]} ${P(5.6, 7.4)[1]}`, 'none', C.grey, 2)),
-    line(`M${P(0, 1)[0]} ${P(0, 1)[1]} L${P(6.5, 7.5)[0]} ${P(6.5, 7.5)[1]}`, HL, 3.4),
-    ...[0, 2, 4].map((i) => line(`M${P(i, i + 1)[0]} ${P(i, i + 1)[1]} L${P(i + 2, i + 1)[0]} ${P(i, i + 1)[1]} L${P(i + 2, i + 3)[0]} ${P(i + 2, i + 3)[1]}`, C.ink, 1.4, '2 2')),
-    ...[0, 2, 4, 6].map((i) => dot(P(i, i + 1)[0], P(i, i + 1)[1], HL, 3))),
+  'funk.linjär.2': all(rect(8, 8, 104, 40, C.white, 3, C.ink, 1.6), line('M8 28 L112 28 M28 8 L28 48', C.ink, 1.4), line('M49 8 L49 48 M70 8 L70 48 M91 8 L91 48', C.grey, 1),
+    T(18, 23, 'x', 12, C.ink, 700), T(18, 43, 'y', 12, C.ink, 700), ...[0, 1, 2, 3].map((i) => all(T(38 + i * 21, 23, String(i), 12), T(38 + i * 21, 43, String(1 + 3 * i), 12, HL))),
+    ...[0, 1, 2].map((i) => all(path(`M${40 + i * 21} 50 C${44 + i * 21} 58 ${54 + i * 21} 58 ${58 + i * 21} 50`, 'none', HL, 1.8), T(49 + i * 21, 66, '+3', 10, HL))),
+    arrow(14, 110, 110, 110, C.ink, 1.6), arrow(16, 112, 16, 70, C.ink, 1.6), line('M16 104 L104 74', HL, 2.4), ...[0, 1, 2, 3].map((i) => dot(f1(16 + i * 26), f1(104 - i * 8.9), HL, 3)),
+    greyed(...[[24, 96], [50, 80], [76, 90], [100, 72]].map(([x, y]) => dot(x!, y!, C.grey, 2.2)))),
   'funk.räta-linjens-ekvation': all(rect(8, 8, 104, 34, 'rgba(228,87,46,0.10)', 6, HL, 2.6), eq(60, 33, ['y', '=', '2', 'x', '+', '1'], 20, [0, 1, 2, 3, 4, 5]),
     grid(24, 50, 104, 106, 8), axes(24, 106, { x1: 18, x2: 112, yt: 48, yb: 112, step: 8, labels: false }), line('M24 98 L52 42', HL, 3), ...[0, 1, 2].map((i) => dot(24 + i * 8, 98 - i * 16, HL, 2.6))),
   'funk.k-värde': kmPic('k'),
@@ -172,15 +171,16 @@ export const FUNCTION_MOTIFS: Record<string, Svg> = {
   'funk.förhållande.2': all(path('M20 28 L64 28 L60 106 L24 106 Z', '#cfe8f7', C.ink, 2), path('M23.1 90.4 L60.9 90.4 L60 106 L24 106 Z', '#d6455c', null), path('M20 28 L64 28 L60 106 L24 106 Z', 'none', C.ink, 2),
     line(range(4).map((i) => `M${f1(22 + i * 0.2)} ${f1(43.6 + i * 15.6)} l6 0`).join(' '), C.ink, 1.2), path('M70 28 C76 28 76 90 70 90', 'none', C.grey, 1.6), path('M70 91 C74 91 74 105 70 105', 'none', HL, 2), T(84, 64, '4', 14, C.grey), T(80, 103, '1', 14, HL),
     rect(76, 10, 40, 26, C.white, 4, HL, 2.4), T(96, 29, '1:4', 16, HL)),
-  'funk.per': all(path('M8 12 L94 12 L110 30 L94 48 L8 48 Z', '#f6e08a', C.ink, 1.8), circle(98, 30, 3, C.white, C.ink, 1), T(30, 39, '30', 22), T(56, 41, '/', 30, HL), weight(78, 42, 1),
-    ...[24, 60, 96].map((x) => all(weight(x, 82, 0.9), arrow(x, 86, x, 94, HL, 1.8), coin(x, 104), T(x, 117, '30', 9)))),
-  'funk.samband': all(circle(28, 60, 18, PALE, C.ink, 2), circle(92, 60, 18, PALE, C.ink, 2), circle(28, 60, 4, C.ink, null), circle(92, 60, 4, C.ink, null), line('M28 60 L28 46 M92 60 L92 46', C.ink, 2),
-    path('M28 40 L92 40 A20 20 0 0 1 92 80 L28 80 A20 20 0 0 1 28 40 Z', 'none', HL, 4), arrow(54, 40, 68, 40, HL, 3), arrow(66, 80, 52, 80, HL, 3), T(28, 106, 'x', 13, C.ink, 700), T(92, 106, 'y', 13, C.ink, 700)),
-  'funk.i-takt-med': all(...[0, 1, 2].map((i) => all(...range(i + 1).map((k) => rect(18 + i * 36, 44 - k * 11, 20, 10, BLUE, 2, C.ink, 1.2)), ...range(i + 1).map((k) => coin(28 + i * 36, 104 - k * 6)))),
-    arrow(14, 44, 106, 12, HL, 3), arrow(14, 100, 106, 74, HL, 3), line('M8 60 L112 60', C.grey2, 1.2, '3 3')),
-  'funk.proportionalitet': all(q1(), line(`M${O[0]} ${O[1]} L${P(3.6, 7.2)[0]} ${P(3.6, 7.2)[1]}`, HL, 3.4), dot(O[0], O[1], HL, 4), ring(O[0], O[1], 8),
-    line(`M${P(1, 2)[0]} ${P(1, 2)[1]} L${P(1, 0)[0]} ${O[1]} M${P(2, 4)[0]} ${P(2, 4)[1]} L${P(2, 0)[0]} ${O[1]} M${P(1, 2)[0]} ${P(1, 2)[1]} L${O[0]} ${P(1, 2)[1]} M${P(2, 4)[0]} ${P(2, 4)[1]} L${O[0]} ${P(2, 4)[1]}`, C.grey, 1.2, '3 3'),
-    dot(P(1, 2)[0], P(1, 2)[1], HL, 3), dot(P(2, 4)[0], P(2, 4)[1], HL, 3), T(88, 50, '×2', 14, HL), T(88, 70, '×2', 14, HL), greyed(arrow(64, 64, 74, 54, C.grey, 1.4))),
+  'funk.per': all(line('M4 112 L116 112', C.grey2, 2), ...[22, 60, 98].map((x) => all(g(`translate(${x} 92) scale(1.2)`, mini(0, 0, C.orange)),
+    ...[-10, 0, 10].map((dx) => all(circle(x + dx, 52, 5, RED, C.ink, 1.1), line(`M${x + dx} 47 L${x + dx + 1} 44`, C.brown, 1.4))), path(`M${x - 16} 60 C${x - 16} 64 ${x + 16} 64 ${x + 16} 60`, 'none', HL, 2), T(x, 36, '3', 14, HL)))),
+  'funk.samband': all(arrow(8, 100, 60, 100, C.ink, 1.6), arrow(10, 102, 10, 30, C.ink, 1.6), ...[[18, 92], [22, 86], [26, 88], [30, 78], [34, 80], [38, 70], [42, 72], [46, 60], [50, 62], [52, 52]].map(([x, y]) => dot(x!, y!, HL, 2.6)), arrow(16, 96, 56, 48, HL, 2.2),
+    greyed(arrow(66, 100, 116, 100, C.ink, 1.6), arrow(68, 102, 68, 30, C.ink, 1.6), ...[[76, 60], [80, 92], [86, 74], [90, 50], [94, 86], [98, 64], [102, 94], [106, 56], [108, 78], [84, 46]].map(([x, y]) => dot(x!, y!, C.grey, 2.6))), cross(104, 20, 6), ok(34, 20, 8)),
+  'funk.i-takt-med': all(line('M4 108 L116 108', C.grey2, 2), ...[[22, 0.6, 22], [60, 0.85, 36], [98, 1.1, 50]].map(([x, s, h]) => all(
+    rect(x! + 6, 108 - h!, 4, h!, C.brown, 1, C.ink, 1), circle(x! + 8, 108 - h!, h! * 0.32, GREEN, C.ink, 1.2),
+    g(`translate(${x! - 8} ${108 - 16 * s!}) scale(${s})`, mini(0, 0, C.orange)))),
+    arrow(14, 72, 104, 40, HL, 2.6), arrow(26, 62, 108, 18, HL, 2.6)),
+  'funk.proportionalitet': all(...[1, 2, 3].map((n, r) => all(...range(n).map((k) => weight(16 + k * 14, 32 + r * 36, 0.8)), arrow(58, 24 + r * 36, 72, 24 + r * 36, C.ink, 2), T(92, 30 + r * 36, String(30 * n), 18))),
+    path('M108 20 C116 30 116 50 108 58', 'none', HL, 2.2), arrow(110, 56, 108, 59, HL, 2), T(92, 49, '×2', 11, HL), path('M34 20 C26 30 26 50 34 58', 'none', HL, 2.2), T(44, 44, '×2', 11, HL)),
   'funk.proportionalitetskonstant': all(rect(10, 10, 100, 44, C.white, 3, C.ink, 1.6), line('M10 32 L110 32 M30 10 L30 54', C.ink, 1.4), line('M57 10 L57 54 M84 10 L84 54', C.grey, 1),
     T(20, 26, 'x', 12, C.ink, 700), T(20, 48, 'y', 12, C.ink, 700), ...[1, 2, 3].map((i) => all(T(17 + i * 27, 26, String(i), 12), T(17 + i * 27, 48, String(i * 30), 12), T(17 + i * 27, 72, '÷', 13, C.grey), arrow(17 + i * 27, 76, 17 + i * 27, 86, HL, 2))),
     rect(30, 88, 80, 24, 'rgba(228,87,46,0.12)', 4, HL, 2.4), ...[1, 2, 3].map((i) => T(17 + i * 27, 106, '30', 14, HL))),
@@ -212,9 +212,13 @@ export const FUNCTION_MOTIFS: Record<string, Svg> = {
   'funk.plana-ut': all(q1({ labels: false }), path('M22 96 C34 50 48 32 66 28', 'none', C.ink, 2.6), line('M66 28 L108 27', HL, 4), arrow(70, 42, 104, 42, HL, 2.4), arrow(104, 42, 70, 42, HL, 2.4), greyed(line('M66 28 L96 4', C.grey, 1.4, '3 3'))),
   'funk.högsta-värde': hillPic(true),
   'funk.lägsta-värde': hillPic(false),
-  'funk.förlopp': all(flagPole(14, 104, GREEN), line(poly([[18, 92], [40, 52], [62, 76], [84, 38], [104, 48]]), C.ink, 2.4),
-    ...[[18, 92, 40, 52], [40, 52, 62, 76], [62, 76, 84, 38], [84, 38, 104, 48]].map(([a, b, c, d]) => arrow(f1(a! + (c! - a!) * 0.3), f1(b! + (d! - b!) * 0.3), f1(a! + (c! - a!) * 0.72), f1(b! + (d! - b!) * 0.72), HL, 2.6)),
-    ...[[18, 92], [40, 52], [62, 76], [84, 38], [104, 48]].map(([x, y], i) => all(circle(x!, y!, 7, C.white, HL, 2), T(x!, y! + 4, String(i + 1), 9, HL))), path('M104 41 L104 14 L116 18 L104 22', 'none', C.ink, 1.6)),
+  'funk.förlopp': all(...[[30, 30, 'ok'], [90, 30, 'sick'], [90, 88, 'fever'], [30, 88, 'ok2']].map(([x, y, m]) => all(rect((x as number) - 26, (y as number) - 24, 52, 48, C.white, 6, C.grey2, 1.2),
+    circle(x as number, y as number, 14, m === 'sick' ? '#d9e8c8' : C.skin, C.ink, 1.6), circle((x as number) - 5, (y as number) - 3, 1.6, C.ink, null), circle((x as number) + 5, (y as number) - 3, 1.6, C.ink, null),
+    m === 'ok' || m === 'ok2' ? path(`M${(x as number) - 6} ${(y as number) + 5} Q${x} ${(y as number) + 10} ${(x as number) + 6} ${(y as number) + 5}`, 'none', C.ink, 1.6) : path(`M${(x as number) - 6} ${(y as number) + 8} Q${x} ${(y as number) + 3} ${(x as number) + 6} ${(y as number) + 8}`, 'none', C.ink, 1.6),
+    m === 'sick' ? path(`M${(x as number) + 14} ${(y as number) - 10} c3 4 3 7 0 7 c-3 0 -3 -3 0 -7 Z`, '#8cc7e8', C.ink, 0.8) : '',
+    m === 'fever' ? all(circle((x as number) - 8, (y as number) + 3, 3, 'rgba(214,69,69,0.5)', null), circle((x as number) + 8, (y as number) + 3, 3, 'rgba(214,69,69,0.5)', null), line(`M${(x as number) + 4} ${(y as number) + 7} L${(x as number) + 20} ${(y as number) + 14}`, C.grey, 3), circle((x as number) + 20, (y as number) + 14, 2.4, RED, null)) : '',
+    m === 'ok2' ? line(`M${(x as number) + 16} ${(y as number) - 16} l4 -4 M${(x as number) + 18} ${(y as number) - 10} l6 0`, C.gold, 1.6) : '')),
+    arrow(58, 30, 62, 30, HL, 3), arrow(90, 56, 90, 62, HL, 3), arrow(62, 88, 58, 88, HL, 3), ...[[30, 30, '1'], [90, 30, '2'], [90, 88, '3'], [30, 88, '4']].map(([x, y, t]) => all(circle((x as number) - 19, (y as number) - 17, 6, HL, null), T((x as number) - 19, (y as number) - 13.5, t as string, 9, C.white)))),
   'funk.feberkurva': all(rect(14, 10, 100, 96, C.white, 3, C.ink, 1.6), grid(26, 18, 110, 94, 12), line('M26 58 L110 58', C.grey, 1.4, '4 3'), T(19, 34, '39', 8), T(19, 62, '37', 8),
     line(poly([[32, 62], [44, 40], [56, 28], [68, 36], [80, 50], [92, 46], [104, 60]]), RED, 3), ...[[32, 62], [44, 40], [56, 28], [68, 36], [80, 50], [92, 46], [104, 60]].map(([x, y]) => dot(x!, y!, RED, 2.6)),
     rect(4, 70, 8, 34, C.white, 4, C.ink, 1.4), rect(6, 80, 4, 22, RED, 2, null), circle(8, 104, 5, RED, C.ink, 1.4)),
