@@ -185,6 +185,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'gam.': () => import('./americasGeo').then((m) => m.AMERICAS_GEO_MOTIFS),
   'gop.': () => import('./oceaniaPolar').then((m) => m.OCEANIA_POLAR_MOTIFS),
   'tal.': () => import('./numbers').then((m) => m.NUMBER_MOTIFS),
+  'brak.': () => import('./fractions').then((m) => m.FRACTION_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
