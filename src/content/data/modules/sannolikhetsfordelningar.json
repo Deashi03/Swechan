@@ -1,0 +1,173 @@
+{
+ "id": "m.sannolikhetsfordelningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Sannolikhetsfördelningar",
+ "titleJa": "{確率分布|かくりつぶんぷ}",
+ "descriptionSv": "Sannolikhetsfördelningar: fördelning, sannolikhetsfördelning, stokastisk variabel, sannolikhet, tärning, summa, likformig fördelning, jämnt fördelad, normalfördelning, symmetrisk, kurva, medelvärde, diskret, kontinuerlig, stapeldiagram och histogram.",
+ "descriptionJa": "{確率分布|かくりつぶんぷ}：{配分|はいぶん}、{確率分布|かくりつぶんぷ}、{確率変数|かくりつへんすう}、{確率|かくりつ}、サイコロ、{合計|ごうけい}、{一様分布|いちようぶんぷ}、{均等|きんとう}に{分|わ}かれた、{正規分布|せいきぶんぷ}、{左右対称|さゆうたいしょう}の、{曲線|きょくせん}、{平均値|へいきんち}、{離散的|りさんてき}な、{連続|れんぞく}した、{棒|ぼう}グラフ、ヒストグラム。",
+ "categoryId": "R06-A02-T04",
+ "tags": [
+  "matematik",
+  "sannolikhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kombinatorik"
+ ],
+ "related": [],
+ "recommendedOrder": 3246,
+ "words": [
+  {
+   "senseId": "s.fördelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sannolikhetsfördelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stokastisk-variabel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sannolikhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tärning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.summa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likformig-fördelning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jämnt-fördelad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.normalfördelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.symmetrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kurva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diskret.3",
+   "active": false
+  },
+  {
+   "senseId": "s.kontinuerlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stapeldiagram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.histogram.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Varför är sju så vanligt?",
+  "paragraphs": [
+   "Nora och hennes kompisar spelar ett brädspel där man kastar två tärningar och flyttar lika många steg som summan. Efter en timme säger Nora: – Det blir ju nästan alltid sju!",
+   "Hennes kompis Kenji studerar matematik. Han förklarar att summan av två tärningar är en stokastisk variabel. Den kan vara 2, 3 och så vidare upp till 12. Sannolikhetsfördelningen visar hur stor chansen är för varje summa. Summan sju kan man få på sex sätt, men summan tolv bara på ett.",
+   "Kenji ritar ett stapeldiagram. Staplarna är låga vid 2 och 12 och högst vid 7. – För en enda tärning ser det annorlunda ut, säger han. Där har vi en likformig fördelning, och alla staplar är lika höga. Sannolikheten är jämnt fördelad.",
+   "Antalet steg är diskret, eftersom man inte kan gå två och ett halvt steg. Längd är däremot kontinuerlig. Om man mäter längden på tusen vuxna och ritar ett histogram, får man en symmetrisk kurva som ser ut som en klocka. Det är en normalfördelning, och toppen ligger vid medelvärdet.",
+   "– Så när jag får sju är det inte tur, utan matematik, säger Nora. – Precis, säger Kenji. Men nu fick du tolv, så du får flytta tolv steg."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många tärningar kastar man i spelet?",
+    "options": [
+     "En",
+     "Tre",
+     "Sex",
+     "Två"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… där man kastar två tärningar och flyttar lika många steg som summan.",
+    "explanationJa": "2つです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är summan sju vanligast?",
+    "options": [
+     "Tärningarna är falska",
+     "Man kan få den på flest sätt",
+     "Sju är ett bra tal",
+     "Man kastar bara en tärning"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Summan sju kan man få på sex sätt, men summan tolv bara på ett.",
+    "explanationJa": "7は{出|で}る{組|く}み{合|あ}わせがいちばん{多|おお}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Hur ser stapeldiagrammet ut för en enda tärning?",
+    "options": [
+     "Staplarna är högst i mitten",
+     "Alla staplar är lika höga",
+     "Staplarna blir lägre åt höger",
+     "Det finns bara en stapel"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Där har vi en likformig fördelning, och alla staplar är lika höga.",
+    "explanationJa": "すべての{棒|ぼう}が{同|おな}じ{高|たか}さです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Enligt texten är längd en diskret storhet.",
+    "correct": false,
+    "explanationSv": "Längd är däremot kontinuerlig.",
+    "explanationJa": "{長|なが}さは{連続的|れんぞくてき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "På slutet får Nora summan tolv.",
+    "correct": true,
+    "explanationSv": "Men nu fick du tolv, så du får flytta tolv steg.",
+    "explanationJa": "{最後|さいご}に12が{出|で}ました。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen. Matematiken är kontrollerad: med två tärningar kan summan 7 fås på 6 av 36 sätt och summan 12 på 1 sätt; en tärning ger en likformig fördelning. Att kroppslängd hos vuxna är ungefär normalfördelad är en vanlig och väl belagd approximation."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fördelningar i spel och i vardagen.",
+  "discussionPoints": [
+   "Vilka spel med två tärningar känner du till?",
+   "Ge exempel på något som är diskret och något som är kontinuerligt.",
+   "Vad i vardagen tror du är ungefär normalfördelat?",
+   "Har du sett ett histogram i nyheterna? Vad visade det?"
+  ]
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "entries": [
+  {
+   "id": "e.sannolikhetsfördelning",
+   "lemma": "sannolikhetsfördelning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "sannolikhetsfördelning",
+    "defSg": "sannolikhetsfördelningen",
+    "indefPl": "sannolikhetsfördelningar",
+    "defPl": "sannolikhetsfördelningarna"
+   },
+   "senses": [
+    {
+     "id": "s.sannolikhetsfördelning.1",
+     "ja": "{確率分布|かくりつぶんぷ}",
+     "defSv": "En beskrivning av vilka värden som är möjliga och hur stor sannolikhet varje värde har.",
+     "defJa": "どんな{値|あたい}がありうるか、それぞれの{値|あたい}の{確率|かくりつ}がどれだけかを{示|しめ}したもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Sannolikhetsfördelningen för summan av två tärningar har sin topp vid 7.",
+       "ja": "2つのサイコロの{和|わ}の{確率分布|かくりつぶんぷ}は、7で{最|もっと}も{高|たか}くなります。"
+      }
+     ],
+     "explanation": {
+      "sv": "En sannolikhetsfördelning visar hur stor sannolikhet varje möjligt värde har. Man kan visa den i en tabell eller i ett diagram med staplar. Alla sannolikheter tillsammans blir alltid 1. När man kastar två tärningar är summan 7 vanligast, medan 2 och 12 är ovanligast.",
+      "ja": "「sannolikhetsfördelning」は、{確率|かくりつ}がありうる{値|あたい}にどのように{割|わ}り{振|ふ}られているかを{示|しめ}します。{表|ひょう}や{棒|ぼう}グラフで{表|あらわ}せます。すべての{確率|かくりつ}を{足|た}すと、いつも1になります。サイコロを2つ{投|な}げると、{和|わ}は7がいちばん{多|おお}く、2と12がいちばん{少|すく}なくなります。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.stokastisk-variabel",
+   "lemma": "stokastisk variabel",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "stokastisk variabel",
+    "defSg": "stokastiska variabeln",
+    "indefPl": "stokastiska variabler",
+    "defPl": "stokastiska variablerna"
+   },
+   "senses": [
+    {
+     "id": "s.stokastisk-variabel.1",
+     "ja": "{確率変数|かくりつへんすう}",
+     "defSv": "En storhet vars värde bestäms av slumpen, till exempel summan av två tärningar.",
+     "defJa": "2つのサイコロの{和|わ}のように、{偶然|ぐうぜん}によって{値|あたい}が{決|き}まる{量|りょう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Låt X vara en stokastisk variabel som anger antalet sexor.",
+       "ja": "Xを6が{出|で}る{回数|かいすう}を{表|あらわ}す{確率変数|かくりつへんすう}とします。"
+      }
+     ],
+     "explanation": {
+      "sv": "En stokastisk variabel ger ett tal till varje utfall i ett slumpförsök. Om man kastar tre mynt kan variabeln vara antalet krona: 0, 1, 2 eller 3. Man skriver den ofta med en stor bokstav, till exempel X. Man säger också slumpvariabel.",
+      "ja": "「stokastisk variabel」は、{試行|しこう}のそれぞれの{結果|けっか}に{数|かず}を{割|わ}り{当|あ}てるものです。コインを3{枚|まい}{投|な}げるなら、{表|おもて}の{枚数|まいすう}（0、1、2、3）を{確率変数|かくりつへんすう}にできます。よくXのような{大文字|おおもじ}で{書|か}きます。「slumpvariabel」とも{言|い}います。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.normalfördelning",
+   "lemma": "normalfördelning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "normalfördelning",
+    "defSg": "normalfördelningen",
+    "indefPl": "normalfördelningar",
+    "defPl": "normalfördelningarna"
+   },
+   "senses": [
+    {
+     "id": "s.normalfördelning.1",
+     "ja": "{正規分布|せいきぶんぷ}",
+     "defSv": "En symmetrisk fördelning som ser ut som en klocka, där de flesta värden ligger nära medelvärdet.",
+     "defJa": "{釣|つ}り{鐘|がね}のような{形|かたち}の{左右対称|さゆうたいしょう}の{分布|ぶんぷ}。ほとんどの{値|あたい}が{平均|へいきん}の{近|ちか}くに{集|あつ}まる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Längden hos vuxna kvinnor följer ungefär en normalfördelning.",
+       "ja": "{大人|おとな}の{女性|じょせい}の{身長|しんちょう}は、だいたい{正規分布|せいきぶんぷ}にしたがいます。"
+      }
+     ],
+     "explanation": {
+      "sv": "En normalfördelning har en kurva som är högst i mitten och sjunker lika mycket åt båda hållen, som en klocka. Mitten är medelvärdet. Många saker i naturen är ungefär normalfördelade, till exempel människors längd och fel när man mäter. Ju fler värden som läggs ihop, desto mer liknar summan en normalfördelning.",
+      "ja": "{正規分布|せいきぶんぷ}の{曲線|きょくせん}は{真|ま}ん{中|なか}がいちばん{高|たか}く、{左右|さゆう}に{同|おな}じように{下|さ}がっていて、{釣|つ}り{鐘|がね}のような{形|かたち}です。{真|ま}ん{中|なか}が{平均値|へいきんち}です。{人|ひと}の{身長|しんちょう}や{測定|そくてい}の{誤差|ごさ}など、{自然|しぜん}の{多|おお}くのものはだいたい{正規分布|せいきぶんぷ}にしたがいます。たくさんの{値|あたい}を{足|た}し{合|あ}わせるほど、その{和|わ}は{正規分布|せいきぶんぷ}に{近|ちか}づきます。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.likformig-fördelning",
+   "lemma": "likformig fördelning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "likformig fördelning",
+    "defSg": "likformiga fördelningen",
+    "indefPl": "likformiga fördelningar",
+    "defPl": "likformiga fördelningarna"
+   },
+   "senses": [
+    {
+     "id": "s.likformig-fördelning.1",
+     "ja": "{一様分布|いちようぶんぷ}",
+     "defSv": "En fördelning där alla möjliga värden har samma sannolikhet.",
+     "defJa": "ありうるすべての{値|あたい}の{確率|かくりつ}が{同|おな}じである{分布|ぶんぷ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ett kast med en vanlig tärning ger en likformig fördelning.",
+       "ja": "ふつうのサイコロを{投|な}げると、{一様分布|いちようぶんぷ}になります。"
+      }
+     ],
+     "explanation": {
+      "sv": "I en likformig fördelning är alla utfall lika sannolika. Om man ritar den med staplar blir alla staplar lika höga. En tärning är ett bra exempel: varje sida har sannolikheten en sjättedel. En slumpgenerator som väljer ett tal mellan 0 och 1 ger också en likformig fördelning.",
+      "ja": "「likformig fördelning」では、すべての{結果|けっか}が{同様|どうよう}に{確|たし}からしいです。{棒|ぼう}グラフにすると、すべての{棒|ぼう}が{同|おな}じ{高|たか}さになります。サイコロはよい{例|れい}で、どの{面|めん}も{確率|かくりつ}は6{分|ぶん}の1です。0と1の{間|あいだ}の{数|かず}を{選|えら}ぶ{乱数発生器|らんすうはっせいき}も、{一様分布|いちようぶんぷ}になります。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}
