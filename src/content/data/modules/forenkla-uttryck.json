@@ -1,0 +1,173 @@
+{
+ "id": "m.forenkla-uttryck",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Förenkla uttryck",
+ "titleJa": "{式|しき}の{簡略化|かんりゃくか}",
+ "descriptionSv": "Förenkla uttryck: förenkla, krånglig, skriva om, slå ihop, ta bort, multiplicera in, byta tecken, ta ut varandra, bryta ut, gemensam faktor, i enklaste form, likvärdig, överskådlig, utföra, kontrollera och jämföra.",
+ "descriptionJa": "{式|しき}の{簡略化|かんりゃくか}：{簡単|かんたん}にする、ややこしい、{書|か}き{直|なお}す、まとめる、{取|と}り{除|のぞ}く、かっこを{外|はず}す、{符号|ふごう}が{変|か}わる、{打|う}ち{消|け}し{合|あ}う、くくり{出|だ}す、{共通因数|きょうつういんすう}、もっとも{簡単|かんたん}な{形|かたち}で、{同等|どうとう}の、{見|み}やすい、{行|おこな}う、{確認|かくにん}する、{比|くら}べる。",
+ "categoryId": "R06-A01-T03",
+ "tags": [
+  "matematik",
+  "algebra"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.parenteser-och-prioriteringsregler"
+ ],
+ "related": [],
+ "recommendedOrder": 3124,
+ "words": [
+  {
+   "senseId": "s.förenkla.2",
+   "active": true
+  },
+  {
+   "senseId": "s.krånglig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriva-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.multiplicera-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-tecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-ut-varandra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bryta-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gemensam-faktor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-enklaste-form.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likvärdig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överskådlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett krångligt uttryck",
+  "paragraphs": [
+   "Ali går en kurs i matematik för vuxna. I läxan står det: Förenkla uttrycket 3(x + 4) − (x − 2) + 2x. Först tycker Ali att uttrycket ser väldigt krångligt ut.",
+   "Läraren har sagt att man ska ta bort parenteserna först. Ali utför ett steg i taget. Han multiplicerar in 3 i den första parentesen: 3(x + 4) blir 3x + 12. Framför den andra parentesen står ett minus. Då måste termerna inom parentesen byta tecken: −(x − 2) blir −x + 2.",
+   "Nu kan han skriva om uttrycket så här: 3x + 12 − x + 2 + 2x. Sedan ska han slå ihop termer av samma slag: 3x − x + 2x = 4x och 12 + 2 = 14. Svaret i enklaste form är 4x + 14. Det nya uttrycket är kortare och mer överskådligt.",
+   "Ali ser också att både 4x och 14 kan delas med 2. Talet 2 är alltså en gemensam faktor. Om man bryter ut 2, kan svaret skrivas som 2(2x + 7). Båda svaren är likvärdiga.",
+   "För att kontrollera svaret sätter Ali in x = 1 i det första och det sista uttrycket och jämför dem. Båda blir 18. – I nästa uppgift kommer 5x och −5x att ta ut varandra, säger läraren. Då blir det ännu enklare!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad blir 3(x + 4) när man multiplicerar in 3?",
+    "options": [
+     "3x + 12",
+     "3x + 4",
+     "x + 12",
+     "7x"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han multiplicerar in 3 i den första parentesen: 3(x + 4) blir 3x + 12.",
+    "explanationJa": "3x + 12になります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför byter termerna i −(x − 2) tecken?",
+    "options": [
+     "Termerna är av samma slag",
+     "Talet 2 är en gemensam faktor",
+     "Det står ett minus framför parentesen",
+     "Uttrycket är i enklaste form"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Framför den andra parentesen står ett minus. Då måste termerna inom parentesen byta tecken.",
+    "explanationJa": "かっこの{前|まえ}にマイナスがあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad är svaret i enklaste form?",
+    "options": [
+     "2x + 14",
+     "4x + 10",
+     "6x + 14",
+     "4x + 14"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Svaret i enklaste form är 4x + 14.",
+    "explanationJa": "4x + 14です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Talet 2 är en gemensam faktor i 4x + 14.",
+    "correct": true,
+    "explanationSv": "Ali ser också att både 4x och 14 kan delas med 2. Talet 2 är alltså en gemensam faktor.",
+    "explanationJa": "4xも14も2で{割|わ}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Svaren 4x + 14 och 2(2x + 7) får olika värden när x = 1.",
+    "correct": false,
+    "explanationSv": "Båda svaren är likvärdiga.",
+    "explanationJa": "{二|ふた}つの{答|こた}えは{同|おな}じ{値|あたい}になります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen. Räkneexemplet är kontrollerat: 3(x + 4) − (x − 2) + 2x = 4x + 14 = 2(2x + 7)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att göra krångliga saker enklare, i matematik och i vardagen.",
+  "discussionPoints": [
+   "Vad i vardagen tycker du är krångligt?",
+   "Hur brukar du göra för att förenkla något svårt?",
+   "Tycker du om att kontrollera dina svar, eller litar du på dig själv?",
+   "Var det lätt eller svårt att förenkla uttryck i skolan?"
+  ]
+ }
+}

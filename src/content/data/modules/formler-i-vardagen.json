@@ -1,0 +1,175 @@
+{
+ "id": "m.formler-i-vardagen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Formler i vardagen",
+ "titleJa": "{日常|にちじょう}の{公式|こうしき}",
+ "descriptionSv": "Formler i vardagen: formel, sträcka, hastighet, medelhastighet, enhet, storhet, lösa ut, ange, uppskatta, jämförpris, kilopris, förbrukning, grad, omvandla, ränta och BMI.",
+ "descriptionJa": "{日常|にちじょう}の{公式|こうしき}：{式|しき}・{公式|こうしき}、{距離|きょり}、{速度|そくど}、{平均速度|へいきんそくど}、{単位|たんい}、{量|りょう}、〜について{解|と}く、{示|しめ}す、{見積|みつ}もる、{単位価格|たんいかかく}、キロあたりの{値段|ねだん}、{消費量|しょうひりょう}、{度|ど}、{変換|へんかん}する、{利子|りし}、{体格指数|たいかくしすう}。",
+ "categoryId": "R06-A01-T03",
+ "tags": [
+  "matematik",
+  "algebra"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.olikheter"
+ ],
+ "related": [],
+ "recommendedOrder": 3127,
+ "words": [
+  {
+   "senseId": "s.formel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelhastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storhet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lösa-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ange.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämförpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilopris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbrukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ränta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.BMI.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Formler på resan",
+  "paragraphs": [
+   "Kenji och hans fru ska åka bil från Stockholm till Göteborg. Sträckan är ungefär 470 kilometer. Kenji vill räkna ut hur lång tid resan tar. Då kan han använda en formel: s = v · t. Där är s sträckan, v hastigheten och t tiden.",
+   "Varje bokstav står för en storhet, och varje storhet har en enhet. Sträckan mäts i kilometer, tiden i timmar och hastigheten i kilometer i timmen. Det är viktigt att ange rätt enhet i svaret.",
+   "Kenji vill veta tiden, så han löser ut t ur formeln: t = s / v. Om bilens medelhastighet blir 90 kilometer i timmen, blir tiden 470 / 90, alltså drygt fem timmar. Han uppskattar att de behöver ungefär sex timmar med pauser.",
+   "Formler finns också i affären. Jämförpriset visar vad varan kostar per kilo eller liter. Om ett paket kaffe på 0,5 kilo kostar 60 kronor, blir kilopriset 60 / 0,5 = 120 kronor. Bilens förbrukning kan man också räkna ut: 30 liter bensin på 470 kilometer är ungefär 0,64 liter per mil.",
+   "I både Japan och Sverige mäter man temperatur i grader Celsius, men i USA mäter man på ett annat sätt. Man kan omvandla grader Celsius till amerikanska grader med formeln F = 1,8 · C + 32. Andra formler i vardagen räknar ut ränta på ett lån eller BMI."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång är sträckan från Stockholm till Göteborg i texten?",
+    "options": [
+     "Ungefär 90 kilometer",
+     "Ungefär 120 kilometer",
+     "Ungefär 470 kilometer",
+     "Ungefär 30 kilometer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Sträckan är ungefär 470 kilometer.",
+    "explanationJa": "{約|やく}470キロメートルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad står bokstaven t för i formeln s = v · t?",
+    "options": [
+     "Sträckan",
+     "Hastigheten",
+     "Temperaturen",
+     "Tiden"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där är s sträckan, v hastigheten och t tiden.",
+    "explanationJa": "tは{時間|じかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför löser Kenji ut t ur formeln?",
+    "options": [
+     "Han vill veta hur lång tid resan tar",
+     "Han vill veta hur långt det är",
+     "Han vill köpa billigt kaffe",
+     "Han vill omvandla grader"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kenji vill veta tiden, så han löser ut t ur formeln.",
+    "explanationJa": "{時間|じかん}を{知|し}りたいからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kilopriset för kaffet är 120 kronor.",
+    "correct": true,
+    "explanationSv": "Om ett paket kaffe på 0,5 kilo kostar 60 kronor, blir kilopriset 60 / 0,5 = 120 kronor.",
+    "explanationJa": "60 ÷ 0.5 = 120クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji tror att resan tar mindre än fem timmar.",
+    "correct": false,
+    "explanationSv": "Han uppskattar att de behöver ungefär sex timmar med pauser.",
+    "explanationJa": "{休憩|きゅうけい}を{入|い}れて{約|やく}6{時間|じかん}と{見積|みつ}もっています。"
+   }
+  ],
+  "factSources": [
+   "Bilvägen mellan Stockholm och Göteborg (E4/E20) är ungefär 470 kilometer.",
+   "Omvandling mellan grader Celsius och Fahrenheit: F = 1,8 · C + 32. Japan och Sverige använder Celsius; USA använder Fahrenheit i vardagen.",
+   "Räkneexemplen är kontrollerade: 470 / 90 ≈ 5,2; 60 / 0,5 = 120; 30 / 47 ≈ 0,64."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om formler och beräkningar som man använder i vardagen.",
+  "discussionPoints": [
+   "Vilka formler använder du i vardagen, utan att tänka på det?",
+   "Brukar du titta på jämförpriset när du handlar?",
+   "Hur lång tid tar en resa som du ofta gör, och vilken medelhastighet blir det?",
+   "Vilka enheter är olika i Japan och i Sverige?"
+  ]
+ }
+}

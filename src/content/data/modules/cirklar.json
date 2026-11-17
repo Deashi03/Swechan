@@ -1,0 +1,174 @@
+{
+ "id": "m.cirklar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Cirklar",
+ "titleJa": "{円|えん}",
+ "descriptionSv": "Cirklar: cirkel, medelpunkt, radie, diameter, passare, slå en cirkel, rund, halvcirkel, kvartscirkel, cirkelbåge, cirkelsektor, korda, tangent, koncentrisk, ellips och pi.",
+ "descriptionJa": "{円|えん}：{円|えん}、{中心|ちゅうしん}、{半径|はんけい}、{直径|ちょっけい}、コンパス、{円|えん}をかく、{丸|まる}い、{半円|はんえん}、4{分|ぶん}の1{円|えん}、{弧|こ}、{扇形|おうぎがた}、{弦|げん}、{接線|せっせん}、{同心|どうしん}の、{楕円|だえん}、{円周率|えんしゅうりつ}。",
+ "categoryId": "R06-A01-T04",
+ "tags": [
+  "matematik",
+  "geometri"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.fyrhorningar"
+ ],
+ "related": [],
+ "recommendedOrder": 3135,
+ "words": [
+  {
+   "senseId": "s.cirkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diameter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-en-cirkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rund.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvcirkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvartscirkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkelbåge.1",
+   "active": false
+  },
+  {
+   "senseId": "s.cirkelsektor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tangent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koncentrisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ellips.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pi.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Saki ritar en klocka",
+  "paragraphs": [
+   "Saki ska rita en klocka till skolan. Hon tar fram sin passare och sätter spetsen mitt på papperet. Den punkten blir cirkelns medelpunkt. Nu ska hon slå en cirkel.",
+   "Avståndet från medelpunkten ut till cirkeln kallas radie. Sakis radie är sex centimeter, så diametern blir tolv centimeter. Diametern är alltid dubbelt så lång som radien.",
+   "Nu delar hon cirkeln. Ett streck genom medelpunkten delar den i två halvcirklar, och två streck som är vinkelräta delar den i fyra kvartscirklar. En bit av den runda linjen kallas cirkelbåge, och en bit som ser ut som en tårtbit kallas cirkelsektor.",
+   "Hennes pappa Kenji ritar ett streck över cirkeln som inte går genom medelpunkten. – Det är en korda, säger han. En linje som bara rör vid cirkeln i en enda punkt kallas tangent.",
+   "Till sist ritar Saki flera cirklar med samma medelpunkt, inuti varandra. De är koncentriska, som ringar på vatten. – Varför är ett ägg inte runt? frågar hon. – Det ser mer ut som en ellips, säger Kenji. Han berättar också om talet pi, som är ungefär 3,14. Om man tar diametern gånger pi får man reda på hur långt det är runt cirkeln."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Saki med passaren?",
+    "options": [
+     "Hon mäter en vinkel",
+     "Hon slår en cirkel",
+     "Hon drar en diagonal",
+     "Hon ritar en ellips"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nu ska hon slå en cirkel.",
+    "explanationJa": "コンパスで{円|えん}をかきます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång är diametern på Sakis cirkel?",
+    "options": [
+     "Tolv centimeter",
+     "Sex centimeter",
+     "Tre centimeter",
+     "Tjugo centimeter"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sakis radie är sex centimeter, så diametern blir tolv centimeter.",
+    "explanationJa": "{半径|はんけい}が6センチなので、{直径|ちょっけい}は12センチです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad kallas en bit av cirkeln som ser ut som en tårtbit?",
+    "options": [
+     "En cirkelsektor",
+     "En korda",
+     "En tangent",
+     "En halvcirkel"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… en bit som ser ut som en tårtbit kallas cirkelsektor.",
+    "explanationJa": "ケーキの{一切|ひとき}れのような{部分|ぶぶん}は{扇形|おうぎがた}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En korda måste alltid gå genom medelpunkten.",
+    "correct": false,
+    "explanationSv": "Hennes pappa Kenji ritar ett streck över cirkeln som inte går genom medelpunkten. – Det är en korda …",
+    "explanationJa": "{弦|げん}は{中心|ちゅうしん}を{通|とお}らなくてもかまいません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Koncentriska cirklar har samma medelpunkt.",
+    "correct": true,
+    "explanationSv": "Till sist ritar Saki flera cirklar med samma medelpunkt, inuti varandra. De är koncentriska …",
+    "explanationJa": "{同心円|どうしんえん}は{中心|ちゅうしん}が{同|おな}じです。"
+   }
+  ],
+  "factSources": [
+   "π ≈ 3,14159 är ett irrationellt tal; cirkelns omkrets = π · diametern.",
+   "Jordens bana runt solen är en ellips (Keplers första lag), men nästan cirkelformad."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om cirklar och runda saker i vardagen.",
+  "discussionPoints": [
+   "Vilka runda saker använder du varje dag?",
+   "Hur många decimaler av pi kan du?",
+   "Använde du passare i skolan? Var det svårt?",
+   "Hur säger man radie och diameter på japanska?"
+  ]
+ }
+}

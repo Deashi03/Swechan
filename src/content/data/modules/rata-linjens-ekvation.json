@@ -1,0 +1,173 @@
+{
+ "id": "m.rata-linjens-ekvation",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Räta linjens ekvation",
+ "titleJa": "{直線|ちょくせん}の{式|しき}",
+ "descriptionSv": "Räta linjens ekvation: räkna ut, linjal, rak, dra en linje, graf, linjär, räta linjens ekvation, k-värde, m-värde, minustecken, värdetabell, sätta in, kontrollera, uppfylla, facit och stämma.",
+ "descriptionJa": "{直線|ちょくせん}の{式|しき}：{計算|けいさん}する、{定規|じょうぎ}、まっすぐな、{線|せん}を{引|ひ}く、グラフ、{一次|いちじ}の、{直線|ちょくせん}の{式|しき}、k の{値|あたい}、m の{値|あたい}、マイナス{記号|きごう}、{対応表|たいおうひょう}、{代入|だいにゅう}する、{確|たし}かめる、{満|み}たす、{解答|かいとう}、{合|あ}っている。",
+ "categoryId": "R06-A01-T05",
+ "tags": [
+  "matematik",
+  "funktioner"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.punkter-och-axlar"
+ ],
+ "related": [],
+ "recommendedOrder": 3143,
+ "words": [
+  {
+   "senseId": "s.räkna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-en-linje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.graf.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjär.2",
+   "active": false
+  },
+  {
+   "senseId": "s.räta-linjens-ekvation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.k-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.m-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minustecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värdetabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sätta-in.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppfylla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.facit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stämma.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lenas sparande som en rak linje",
+  "paragraphs": [
+   "Lena har 200 kronor i en burk. Hon bestämmer sig för att lägga 50 kronor i burken varje vecka. Hon undrar hur mycket hon har efter ett år och vill räkna ut det på ett enkelt sätt.",
+   "Hennes son Nils går i årskurs nio. – Det är ett linjärt samband, säger han. Vi kan använda räta linjens ekvation, y = k · x + m. Här är x antalet veckor och y antalet kronor i burken.",
+   "– Varje vecka blir det 50 kronor mer, så k-värdet är 50. När du började hade du 200 kronor, så m-värdet är 200. Räta linjens ekvation blir y = 50x + 200. Om du tar pengar ur burken får k ett minustecken framför sig.",
+   "Nils gör en värdetabell. Han sätter in x = 0, x = 4 och x = 8 och räknar ut y. Sedan prickar han in punkterna och drar en linje med linjalen. Grafen blir rak, precis som han sa.",
+   "Lena vill kontrollera. Efter 52 veckor borde hon ha 50 · 52 + 200 = 2 800 kronor. Punkten (52, 2 800) uppfyller räta linjens ekvation, och den ligger också på linjen när Nils gör grafen längre. – Det stämmer, säger Nils, som om han hade facit."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket lägger Lena i burken varje vecka?",
+    "options": [
+     "200 kronor",
+     "52 kronor",
+     "2 800 kronor",
+     "50 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon bestämmer sig för att lägga 50 kronor i burken varje vecka.",
+    "explanationJa": "{毎週|まいしゅう} 50 クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är m-värdet för Lenas linje?",
+    "options": [
+     "50",
+     "52",
+     "200",
+     "0"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När du började hade du 200 kronor, så m-värdet är 200.",
+    "explanationJa": "{最初|さいしょ}にあった 200 クローナが m の{値|あたい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör Nils innan han ritar grafen?",
+    "options": [
+     "Han köper en ny burk",
+     "Han gör en värdetabell",
+     "Han frågar sin lärare",
+     "Han tittar i facit"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nils gör en värdetabell.",
+    "explanationJa": "グラフの{前|まえ}に{対応表|たいおうひょう}を{作|つく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Grafen över Lenas sparande blir rak.",
+    "correct": true,
+    "explanationSv": "Grafen blir rak, precis som han sa.",
+    "explanationJa": "グラフはまっすぐになります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Efter ett år har Lena mindre än 2 000 kronor i burken.",
+    "correct": false,
+    "explanationSv": "Efter 52 veckor borde hon ha 50 · 52 + 200 = 2 800 kronor.",
+    "explanationJa": "1{年|ねん}{後|ご}には 2 800 クローナになります。"
+   }
+  ],
+  "factSources": [
+   "Skrivsättet y = k · x + m för räta linjens ekvation är det vanliga i svensk skolmatematik (i Japan skrivs ofta y = ax + b)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att spara pengar och om att räkna med linjer.",
+  "discussionPoints": [
+   "Sparar du pengar varje vecka eller varje månad?",
+   "Hur skriver man räta linjens ekvation i Japan?",
+   "Vad är lättast för dig: en värdetabell eller en graf?",
+   "Hur brukar du kontrollera att ett svar stämmer?"
+  ]
+ }
+}

@@ -1,0 +1,177 @@
+{
+ "id": "m.volym-och-rymdgeometri",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Volym och rymdgeometri",
+ "titleJa": "{体積|たいせき}と{立体図形|りったいずけい}",
+ "descriptionSv": "Volym och rymdgeometri: tredimensionell, geometrisk kropp, volym, kub, rätblock, kant, basyta, sidoyta, begränsningsyta, cylinder, kon, klot, pyramid, prisma, kubikcentimeter, kubikdecimeter och kubikmeter.",
+ "descriptionJa": "{体積|たいせき}と{立体図形|りったいずけい}：{三次元|さんじげん}の、{立体|りったい}、{体積|たいせき}、{立方体|りっぽうたい}、{直方体|ちょくほうたい}、{辺|へん}、{底面|ていめん}、{側面|そくめん}、{表面積|ひょうめんせき}、{円柱|えんちゅう}、{円錐|えんすい}、{球|きゅう}、{角錐|かくすい}、{角柱|かくちゅう}、{立方|りっぽう}センチメートル、{立方|りっぽう}デシメートル、{立方|りっぽう}メートル。",
+ "categoryId": "R06-A01-T04",
+ "tags": [
+  "matematik",
+  "geometri"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.omkrets-och-area"
+ ],
+ "related": [],
+ "recommendedOrder": 3137,
+ "words": [
+  {
+   "senseId": "s.tredimensionell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volym.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kub.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rätblock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cylinder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.geometrisk-kropp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.basyta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sidoyta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.begränsningsyta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pyramid.2",
+   "active": true
+  },
+  {
+   "senseId": "s.prisma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kubikcentimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kubikdecimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kubikmeter.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kartonger och kubikmeter",
+  "paragraphs": [
+   "Kenji och Saki ska flytta och packar sina saker i kartonger. Saki håller upp en kartong. – Den här är inte platt som en ritning på ett papper, säger hon. Ritningen är platt, men kartongen är tredimensionell!",
+   "En kartong är en geometrisk kropp som kallas rätblock. Den har tolv kanter och åtta hörn. Den yta som kartongen står på är basytan, och på sidorna finns fyra sidoytor. Om alla kanter är lika långa är det en kub.",
+   "Kenji räknar ut volymen av en kartong. Den är sex decimeter lång, fyra decimeter bred och fyra decimeter hög: 6 · 4 · 4 = 96 kubikdecimeter. En kubikdecimeter är lika mycket som en liter, så det får plats 96 liter i kartongen.",
+   "Saki vill måla en av kartongerna. Då behöver hon veta begränsningsytan, alltså arean av alla ytor på kartongen tillsammans. I köket packar de en burk som är en cylinder, en boll som är ett klot och en hatt som är en kon. Saki hittar också en liten pyramid av sten och ett prisma av glas.",
+   "Bilen som de har hyrt rymmer 20 kubikmeter. – Hur många kubikcentimeter är det? frågar Saki. – Tjugo miljoner, svarar Kenji och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många kanter har ett rätblock?",
+    "options": [
+     "Sex",
+     "Tolv",
+     "Åtta",
+     "Fyra"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den har tolv kanter och åtta hörn.",
+    "explanationJa": "{直方体|ちょくほうたい}には{辺|へん}が12{本|ほん}あります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur stor volym har kartongen?",
+    "options": [
+     "14 kubikdecimeter",
+     "24 kubikdecimeter",
+     "20 kubikmeter",
+     "96 kubikdecimeter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "6 · 4 · 4 = 96 kubikdecimeter.",
+    "explanationJa": "{体積|たいせき}は96{立方|りっぽう}デシメートルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är begränsningsytan av en kartong?",
+    "options": [
+     "Hur mycket som får plats i den",
+     "Längden av alla kanter",
+     "Ytan som den står på",
+     "Arean av alla ytor tillsammans"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… begränsningsytan, alltså arean av alla ytor på kartongen tillsammans.",
+    "explanationJa": "{表面積|ひょうめんせき}は、すべての{面|めん}の{面積|めんせき}の{合計|ごうけい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En kubikdecimeter är lika mycket som en liter.",
+    "correct": true,
+    "explanationSv": "En kubikdecimeter är lika mycket som en liter …",
+    "explanationJa": "1{立方|りっぽう}デシメートルは1リットルです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En ritning på ett papper är tredimensionell.",
+    "correct": false,
+    "explanationSv": "Ritningen är platt, men kartongen är tredimensionell!",
+    "explanationJa": "{紙|かみ}の{図|ず}は{二次元|にじげん}です。"
+   }
+  ],
+  "factSources": [
+   "1 dm³ = 1 liter; 1 m³ = 1 000 000 cm³; en kubikdecimeter vatten väger ungefär 1 kg (SI-enheter)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om former och volym i vardagen.",
+  "discussionPoints": [
+   "Vilka geometriska kroppar kan du hitta i köket?",
+   "Hur många kartonger behövde du när du flyttade senast?",
+   "Är det lättare att tänka i liter eller i kubikdecimeter?",
+   "Har du sett en film i 3D? Hur var det?"
+  ]
+ }
+}

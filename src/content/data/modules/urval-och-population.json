@@ -1,0 +1,177 @@
+{
+ "id": "m.urval-och-population",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Urval och population",
+ "titleJa": "{標本|ひょうほん}と{母集団|ぼしゅうだん}",
+ "descriptionSv": "Urval och population: undersökning, population, totalundersökning, urval, stickprov, välja ut, slumpmässig, lotta, representativ, skev, tillfråga, respondent, bortfall, uppskatta, felmarginal, generalisera och dra slutsatser.",
+ "descriptionJa": "{標本|ひょうほん}と{母集団|ぼしゅうだん}：{調査|ちょうさ}、{母集団|ぼしゅうだん}、{全数調査|ぜんすうちょうさ}、{標本|ひょうほん}、{抜|ぬ}き{取|と}り{検査|けんさ}、{選|えら}び{出|だ}す、{無作為|むさくい}の、くじで{決|き}める、{代表的|だいひょうてき}な、{偏|かたよ}った、{尋|たず}ねる、{回答者|かいとうしゃ}、{無回答|むかいとう}、{見積|みつ}もる、{誤差|ごさ}、{一般化|いっぱんか}する、{結論|けつろん}を{出|だ}す。",
+ "categoryId": "R06-A01-T06",
+ "tags": [
+  "matematik",
+  "statistik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.diagramtyper"
+ ],
+ "related": [],
+ "recommendedOrder": 3156,
+ "words": [
+  {
+   "senseId": "s.undersökning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.population.2",
+   "active": true
+  },
+  {
+   "senseId": "s.totalundersökning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.urval.3",
+   "active": true
+  },
+  {
+   "senseId": "s.stickprov.1",
+   "active": false
+  },
+  {
+   "senseId": "s.välja-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slumpmässig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lotta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.representativ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skev.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillfråga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.respondent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bortfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felmarginal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.generalisera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-slutsatser.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad tycker stadens invånare?",
+  "paragraphs": [
+   "En kommun med 80 000 invånare vill göra en undersökning. Man vill veta vad invånarna tycker om stadens bussar. Alla vuxna som bor i kommunen är populationen.",
+   "Att fråga alla, alltså att göra en totalundersökning, skulle ta lång tid och kosta mycket pengar. Därför vill kommunen välja ut ett urval på 1 000 personer. Det blir ett stickprov ur populationen.",
+   "Urvalet ska vara slumpmässigt. En dator lottar vilka som ska vara med, så att alla har samma chans att komma med. Då blir urvalet representativt, alltså likt hela befolkningen.",
+   "Om man bara tillfrågar dem som står och väntar på bussen blir urvalet skevt. Där finns ju nästan bara de som redan åker buss. Ett annat problem är bortfall: av de 1 000 personerna svarar bara 640. Om många respondenter i en viss grupp inte svarar kan resultatet bli fel.",
+   "Med hjälp av svaren kan kommunen uppskatta vad alla invånare tycker. Resultatet har en felmarginal på några procentenheter. Man ska vara försiktig med att generalisera och dra slutsatser om grupper där nästan ingen svarade."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka är populationen i undersökningen?",
+    "options": [
+     "Bara de som åker buss",
+     "De 1 000 personerna i urvalet",
+     "Alla vuxna som bor i kommunen",
+     "Kommunens anställda"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Alla vuxna som bor i kommunen är populationen.",
+    "explanationJa": "{市|し}に{住|す}むすべての{大人|おとな}が{母集団|ぼしゅうだん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför gör kommunen ingen totalundersökning?",
+    "options": [
+     "Det är förbjudet",
+     "Ingen vill svara",
+     "Det skulle ta lång tid och kosta mycket",
+     "Datorn kan inte lotta så många"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Att fråga alla … skulle ta lång tid och kosta mycket pengar.",
+    "explanationJa": "{時間|じかん}もお{金|かね}もかかりすぎるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Varför blir urvalet skevt om man bara frågar dem som väntar på bussen?",
+    "options": [
+     "Där är det för mycket ljud",
+     "Där bor inga invånare",
+     "Där svarar alla",
+     "Där finns nästan bara de som redan åker buss"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där finns ju nästan bara de som redan åker buss.",
+    "explanationJa": "バスに{乗|の}る{人|ひと}ばかりに{偏|かたよ}るからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Alla 1 000 personer i urvalet svarade.",
+    "correct": false,
+    "explanationSv": "… av de 1 000 personerna svarar bara 640.",
+    "explanationJa": "{答|こた}えたのは640{人|にん}だけです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "I ett slumpmässigt urval har alla samma chans att komma med.",
+    "correct": true,
+    "explanationSv": "En dator lottar vilka som ska vara med, så att alla har samma chans att komma med.",
+    "explanationJa": "{無作為|むさくい}に{選|えら}ぶので、{全員|ぜんいん}に{同|おな}じチャンスがあります。"
+   }
+  ],
+  "factSources": [
+   "Kommunen och siffrorna är påhittade. Att ett slumpmässigt urval behövs för att kunna dra slutsatser om hela populationen, och att felmarginalen beror på hur stort urvalet är, är allmän statistisk kunskap (se t.ex. SCB:s beskrivningar av urvalsundersökningar). Med 640 svar är felmarginalen ungefär ±4 procentenheter."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om undersökningar och om hur man väljer vem man ska fråga.",
+  "discussionPoints": [
+   "Har du blivit tillfrågad i en undersökning? Vad handlade den om?",
+   "Hur skulle du välja ut ett representativt urval på din arbetsplats eller i din skola?",
+   "Varför svarar en del människor inte på enkäter?",
+   "När kan det vara farligt att generalisera?"
+  ]
+ }
+}

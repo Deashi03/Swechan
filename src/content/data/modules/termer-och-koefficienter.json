@@ -1,0 +1,173 @@
+{
+ "id": "m.termer-och-koefficienter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Termer och koefficienter",
+ "titleJa": "{項|こう}と{係数|けいすう}",
+ "descriptionSv": "Termer och koefficienter: summa, term, ingå i, koefficient, styckpris, tal, variabelterm, konstantterm, förtecken, underförstådd, termer av samma slag, bestå av, skilja på, dela upp, sortera och sammanlagt.",
+ "descriptionJa": "{項|こう}と{係数|けいすう}：{合計|ごうけい}、{項|こう}、{含|ふく}まれる、{係数|けいすう}、{一個|いっこ}あたりの{値段|ねだん}、{数|かず}、{文字|もじ}の{項|こう}、{定数項|ていすうこう}、{符号|ふごう}、{暗黙|あんもく}の、{同類項|どうるいこう}、〜から{成|な}る、{区別|くべつ}する、{分|わ}ける、{分類|ぶんるい}する、{合計|ごうけい}で。",
+ "categoryId": "R06-A01-T03",
+ "tags": [
+  "matematik",
+  "algebra"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.variabler-och-konstanter"
+ ],
+ "related": [],
+ "recommendedOrder": 3122,
+ "words": [
+  {
+   "senseId": "s.summa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.term.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ingå-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koefficient.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styckpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.variabelterm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konstantterm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förtecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underförstådd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.termer-av-samma-slag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bestå-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skilja-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sammanlagt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Beställningen på kaféet",
+  "paragraphs": [
+   "Ali arbetar på ett kafé och ska räkna ut vad en beställning kostar. En kund köper tre bullar som kostar x kronor styck och två koppar kaffe som kostar y kronor styck. Hela beställningen kan skrivas som 3x + 2y. Uttrycket består av två termer, och styckpriserna är x och y.",
+   "I termen 3x är talet 3 en koefficient. Det visar hur många bullar kunden köper. På samma sätt är 2 koefficienten i termen 2y. Båda termerna är variabeltermer, eftersom en variabel ingår i dem.",
+   "Kunden har också en rabatt på 15 kronor. Då blir uttrycket 3x + 2y − 15. Talet 15 är en konstantterm, eftersom det inte finns någon bokstav i den. Förtecknet framför 15 är minus, så termen är −15.",
+   "Sedan vill kunden ha en bulle till. Uttrycket blir 3x + 2y − 15 + x. I termen x ser man ingen koefficient, men koefficienten 1 är underförstådd. Termerna 3x och x är termer av samma slag, eftersom de har samma variabel.",
+   "Ali tycker att det är bra att dela upp ett uttryck i termer. Då kan man sortera dem och skilja på variabeltermer och konstanttermer. En bulle kostar 25 kronor och en kopp kaffe 30 kronor. Summan blir sammanlagt 4 · 25 + 2 · 30 − 15 = 145 kronor."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är koefficienten i termen 2y?",
+    "options": [
+     "2",
+     "y",
+     "3",
+     "15"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På samma sätt är 2 koefficienten i termen 2y.",
+    "explanationJa": "2yの{係数|けいすう}は2です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför är 15 en konstantterm?",
+    "options": [
+     "Den har förtecknet plus",
+     "Den är en variabel",
+     "Den står först i uttrycket",
+     "Det finns ingen bokstav i den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Talet 15 är en konstantterm, eftersom det inte finns någon bokstav i den.",
+    "explanationJa": "{文字|もじ}を{含|ふく}まないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken koefficient är underförstådd i termen x?",
+    "options": [
+     "1",
+     "0",
+     "3",
+     "15"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I termen x ser man ingen koefficient, men koefficienten 1 är underförstådd.",
+    "explanationJa": "xの{係数|けいすう}は1で、{書|か}かれていません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Termerna 3x och 2y är termer av samma slag.",
+    "correct": false,
+    "explanationSv": "Termerna 3x och x är termer av samma slag, eftersom de har samma variabel.",
+    "explanationJa": "3xと2yは{変数|へんすう}が{違|ちが}うので{同類項|どうるいこう}ではありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Med rabatten kostade beställningen mindre än 150 kronor.",
+    "correct": true,
+    "explanationSv": "Summan blir sammanlagt 4 · 25 + 2 · 30 − 15 = 145 kronor.",
+    "explanationJa": "{合計|ごうけい}は145クローナです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden. Priserna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att räkna ut priser och om matematiska ord på svenska och japanska.",
+  "discussionPoints": [
+   "Hur räknar du ut vad du ska betala när du handlar?",
+   "Är det lätt att skilja på variabeltermer och konstanttermer?",
+   "Vilka matematiska ord är svårast på svenska?",
+   "Vad heter koefficient och term på japanska?"
+  ]
+ }
+}

@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.47.0 (släppt 2026-11-17) · **Senast uppdaterad:** 2026-11-17 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.48.0 (släppt 2026-11-17) · **Senast uppdaterad:** 2026-11-17 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 265 publicerade moduler. 1 260 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) och hela *Natur & geografi* (R05, 0.42–0.47). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 307 publicerade moduler. 1 302 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) och *Matematikens grunder* (R06-A01, 0.48). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Matematikens grunder* (R06-A01), det första i *Matematik & naturvetenskap*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Avancerad matematik* (R06-A02) i *Matematik & naturvetenskap*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 14 594 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 14 911 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -30,7 +30,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 ## Nästa steg
 
 0. **Före nästa release:** kör `npm run typecheck && npm test` på språkgranskningen av *Vardag & hem* (2026-11-16, se `CHANGELOG.md` → *Osläppt*). Den är validerad med `validateContent` och `checkVocabulary`, men hela testsviten har inte körts. Ordposterna i R01 är lästa och rättade, även de japanska definitionerna och förklaringarna. Kvar: plural för *tång* (redskap), furigana tecken för tecken, och berättelsen mellan ämnesgrupperna som inte hänger ihop (radhus/hyresrätt/bostadsrätt). Samma dag granskades också *Människan & hälsa* (R02): alla 252 moduler och 3 698 ordbetydelser är lästa och rättade, även de japanska definitionerna och förklaringarna, och 62 moduler om kropp och vård har fått faktakällor. Uppföljning 2026-11-17: Aiko är vuxen och Leo ett barn i hela R01 och R02 (skolflickan i kropp och vård heter Mei), bostadsberättelsen i R01 hänger ihop, furigana är kontrollerade och *tång* har plural. Kvar: tio testfiler som kräver IndexedDB eller webbläsarmiljö, typkontroll, bygge och e2e är inte körda i granskningssessionen; kör `npm run typecheck && npm test && npm run build && npm run e2e` före sammanslagning. Den 2026-11-17 granskades också *Samhälle & institutioner* (R03) på samma sätt: alla 252 moduler och 3 056 ordbetydelser är lästa och rättade, och lagändringar från 2025–2026 är införda (straffbarhetsålder, villkorlig frigivning, bygglov, medborgarskap, Gy25, bolåneregler). Se `CHANGELOG.md` → *Osläppt*.
-1. Nästa etapp, i en ny session: överämnet *Matematikens grunder* (R06-A01) i *Natur & geografi*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp: överämnet *Avancerad matematik* (R06-A02) i *Matematik & naturvetenskap*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -179,6 +179,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Kartor & orientering: `s.sydlig.1`, `s.i-verkligheten.1`, `s.position.1`
   - Europa: `s.gränsa-till.1`, `s.dvärgstat.1`, `s.areal.1`, `s.regeringssäte.1`, `s.nordbo.1`
   - Förväxlingarna: *sydlig/söderläge*, *i verkligheten/motsvara/skala*, *position/koordinat/du är här*, *gränsa till/gräns/grannland*, *dvärgstat/furstendöme/enklav*, *areal/kvadratkilometer*, *regeringssäte/huvudstad* och *nordbo/nordisk*.
+- **Från 0.48 (46 ord):**
+  - Tal & räkning: `s.rimlighet.1`, `s.delbar.2`, `s.storleksordning.1`, `s.addition.1`, `s.subtraktion.1`, `s.överslag.1`
+  - Bråk & decimaler: `s.avrundning.1`, `s.procentuell.1`, `s.närmevärde.1`, `s.procent.1`, `s.andel.2`, `s.ökning.1`, `s.minskning.1`
+  - Algebraiska uttryck: `s.storhet.1`, `s.variera.1`, `s.potens.1`, `s.ordningsföljd.1`, `s.isolera.2`, `s.olikhet.1`
+  - Geometrins grundformer: `s.symmetrilinje.1`, `s.rektangulär.1`, `s.rund.1`, `s.area.1`, `s.kvadratdecimeter.1`
+  - Funktioner & grafer: `s.funktion.2`, `s.bero-på.2`, `s.linjär.2`, `s.i-takt-med.1`, `s.samband.1`, `s.proportionalitet.1`
+  - Statistikens grunder: `s.data.1`, `s.datamängd.1`, `s.i-tabellform.1`, `s.föra-in.1`, `s.lägesmått.1`, `s.förekomma.2`, `s.korrelation.1`, `s.relativ-frekvens.1`, `s.jämnt-fördelad.1`, `s.i-genomsnitt.1`, `s.skilja-sig-åt.1`, `s.mittersta.1`, `s.spridningsmått.1`, `s.spridning.2`, `s.utspridd.1`, `s.population.2`
+  - Förväxlingarna: *addition/lägga ihop*, *subtraktion/dra ifrån*, *överslag/uppskattning*, *delbar/delare*, *storleksordning/tiopotens*, *rimlighet/rimlig*, *avrundning/avrunda*, *närmevärde/avrunda*, *procent/procentform*, *andel/majoritet*, *ökning/fördubbla*, *minskning/halvera*, *storhet/enhet*, *variera/rörlig*, *potens/exponent*, *ordningsföljd/steg för steg*, *isolera/flytta över*, *olikhet/olikhetstecken*, *symmetrilinje/symmetrisk*, *rektangulär/rektangel*, *rund/cirkel*, *area/sammansatt figur*, *kvadratdecimeter/kvadratcentimeter*, *linjär/rak*, *samband/i takt med/proportionalitet*, *data/datamängd*, *median/mittersta*, *spridning/utspridd*, *variationsbredd/spridningsmått*, *korrelation/orsakssamband*. Granskaren valde ofta rätt ord men med medelsäkerhet och nämnde synonymen som lika bra; *addition*, *subtraktion* och *procent* kan produktägaren välja att godkänna ändå.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -448,6 +456,17 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **0.47, fakta (står i `factSources`, kan ändras):** Mont Blanc ungefär 4 800 m, Island omkring 400 000 invånare, Venedigs avgift för dagsturister, Japan 14 125 öar och 111 aktiva vulkaner, Indonesien omkring 17 000 öar, Everest 8 849 m, Döda havet mer än 400 m under havsytan, Jakarta/Dhaka/Tokyo över 30 miljoner (FN, WUP 2025), Sahara omkring 9 miljoner km², Kilimanjaro 5 895 m, 54 stater i Afrika varav 16 inlandsstater, Nigeria över 200 miljoner invånare, Tchadsjön krymper, Rio de Janeiro: en femtedel i favelor (IBGE 2022), Nya Zeeland 23–25 miljoner får, Antarktisfördraget omkring 58 parter, Påskön omkring 3 500 km från Chile, gränserna mellan Melanesien, Mikronesien och Polynesien varierar
 - **0.47, bilder:** länder och platser är förenklade kartor med området i orange; folkslagsorden visar en person bredvid en markerad karta; nordiska flaggor (med kors) förekommer i *nordbo*-motivet men ordet saknar bild; *dollar*-sedeln visar tecknet $; väderstrecksbokstäverna N/Ö/S/V finns i kartbilderna som i `nav.ts`.
 - **0.47, arbetsform:** etappen kördes i samma session som 0.40, 0.45 och 0.46 på produktägarens uttryckliga begäran.
+- **0.48, svenska:**
+  - läroboksord att kontrollera mot SAOL: *variabelterm*, *konstantterm*, *funktionsmaskin*, *bruten axel*, *kvartscirkel*, *åttahörning*, *full vinkel*, *rak vinkel*, *värdesiffra* (C1), *tiokamrat* (utelämnad)
+  - böjning: *decimalkomma* (pl. -komman), *obekant* som substantiv, *origo* (ett, utan plural), *data* (utan plural, förklaras i not), *hektar* (en/ett), *prismor*, *parallellogrammer*, *omvänt proportionell*
+  - uttryck att granska: *delare till 6*, *ställa upp* (skriva tal under varandra), *tre halva*, *flytta över*, *slå en cirkel*, *skilja sig åt*, ordföljden "Talet 3,7 ska man avrunda uppåt till 4"
+  - *i enklaste form* (`s.i-enklaste-form.1`) är definierad för bråk men används också om uttryck; *gränsvärde* (`s.gränsvärde.1`) har bara miljöbetydelsen, så *Gränsvärden* i 0.49 behöver en ny betydelse
+  - *minst* och *högst* är adverbposter för antal; *addera/subtrahera/multiplicera/dividera* nämns bara i japanska noter; formeln skrivs "y = k · x + m" eftersom ordkontrollen inte godkänner "kx"
+- **0.48, japanska:**
+  - termer att granska: {繰|く}り{下|さ}げる (*växla*), {倍分|ばいぶん}する (*förlänga*), {帯分数|たいぶんすう}/{仮分数|かぶんすう}/{真分数|しんぶんすう}/{既約分数|きやくぶんすう}, {未知数|みちすう} (*obekant*), {同類項|どうるいこう} (*termer av samma slag*), omskrivningen för *isolera*, {隣|となり}り{合|あ}う{角|かく} (*sidovinkel*), glosan för *liggande stolen*, *stolpdiagram* och *feberkurva*; rubriken 「{答|こた}えの{妥当性|だとうせい}の{判断|はんだん}」
+- **0.48, fakta (står i `factSources`, kan ändras):** 0 som naturligt tal i svensk skola, Sveriges lägsta punkt i Kristianstad (cirka 2,4 m under havet), udda och jämna husnummer på var sin sida, liggande stolen, multiplikationstabellen till 10 × 10, öresavrundning sedan 30 september 2010, moms 25 %, mjölk 3 % och lättmjölk 0,5 % fett, dricks cirka 10 %, kommunalskatt cirka 32 %, Stockholm–Göteborg cirka 470 km, åldersgräns 15 år för film, luftkvalitetsförordningen (2010:477), F = 1,8·C + 32, taxibolag sätter egna priser och visar jämförpris, BVC:s tillväxtkurvor, felmarginal ±4 procentenheter för 640 svar (egen beräkning), SCB redovisar lön som median (inte kontrollerat), vinkelsumman 180°, Pythagoras sats känd i Babylonien (inte kontrollerat), 1 ha = 10 000 m², 1 dm³ = 1 liter
+- **0.48, bilder:** bilderna visar siffror och räknetecken men inga ord; åttahörningen är en röd stoppskylt utan text; enhetsbilden visar m, kg och kr. Flera matematikord blev utan bild trots att granskaren valde rätt ord, eftersom en synonym nämndes som lika bra (se *Saknade bilder*).
+- **0.48, arbetsform:** etappen kördes i samma session som 0.40, 0.45–0.47 på produktägarens uttryckliga begäran. Containern startades om två gånger och användningsgränsen nåddes en gång; gruppagenterna återupptogs från sina worktrees.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -466,13 +485,13 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v51`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v52`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Heltal och naturliga tal* (SWC-VET-01-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Tal & räkning* (R06-A01-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Gränsvärden* (SWC-VET-02-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Analys & derivata* (R06-A02-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
-- **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp.
+- **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp. Integreras en grupp före gruppen som kommer före den i katalogen (0.48: T05 före T04), sätt `PREV_FALLBACK` till den senast inlagda modulen och kör om gruppens första skript när den tidigare gruppen är inlagd, så att förkunskapen pekar rätt.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.
 - **Testtimeout:** när tre gruppagenter kör vitest samtidigt kan tunga tester (`vocabularyCheck`, `learning`, `tools`) slå i 60-sekundersgränsen. Kör då om de testfilerna separat. I CI föll testjobbet i 0.41 och 0.42 på "Timeout calling onTaskUpdate" trots att alla tester passerade: de synkrona innehållstesterna blockerade workerns event-loop i över en minut. Från 0.42 släpper `src/test/setup.ts` event-loopen efter varje test.
 - **Integration av grupper:** lägg in grupperna i katalogordning när det går. Blir en senare grupp klar först och delar poster med en tidigare grupp som ännu inte är inlagd: backa den senare gruppens innehåll (`git checkout -- src/content/data && git clean -fdq src/content/data`), lägg in den tidigare först och låt den senare synka och referera dess poster, så blir förkunskapskedjan mellan grupperna rätt utan efterhandsrättning. Integratören behöver bildcommiten, skripten och `spec.json`; körordning: skripten, `npm run visuals:plan`, `vis.py spec.json`, `conf.py` för synonymer, `check.sh`.

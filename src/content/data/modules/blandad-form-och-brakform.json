@@ -1,0 +1,169 @@
+{
+ "id": "m.blandad-form-och-brakform",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Blandad form och bråkform",
+ "titleJa": "{帯分数|たいぶんすう}と{分数|ぶんすう}の{形|かたち}",
+ "descriptionSv": "Blandad form och bråkform: blandad form, bråkform, heltalsdel, äkta bråk, oäkta bråk, omvandla, halv, en och en halv, halvannan, tre kvart, halvtimme, halvliter, deciliter, halvår och kvartal.",
+ "descriptionJa": "{帯分数|たいぶんすう}と{分数|ぶんすう}の{形|かたち}：{帯分数|たいぶんすう}、{分数|ぶんすう}の{形|かたち}、{整数部分|せいすうぶぶん}、{真分数|しんぶんすう}、{仮分数|かぶんすう}、{変換|へんかん}する、{半分|はんぶん}の、1と2{分|ぶん}の1、1つ{半|はん}、45{分|ふん}、30{分|ぷん}、500ミリリットル、デシリットル、{半年|はんとし}、{四半期|しはんき}。",
+ "categoryId": "R06-A01-T02",
+ "tags": [
+  "matematik",
+  "bråk"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.taljare-och-namnare"
+ ],
+ "related": [],
+ "recommendedOrder": 3112,
+ "words": [
+  {
+   "senseId": "s.blandad-form.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bråkform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.heltalsdel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.äkta-bråk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oäkta-bråk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.halv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.en-och-en-halv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvannan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tre-kvart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvtimme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvliter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deciliter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvartal.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Bullar och bråk",
+  "paragraphs": [
+   "På lördag ska Kenji baka bullar med sin dotter Emma. I receptet står det 1 ½ dl socker. – Hur läser man det? frågar Emma. – En och en halv deciliter, säger Kenji. Man kan också säga halvannan deciliter.",
+   "Talet 1 ½ står i blandad form. Det har en heltalsdel, ett, och ett bråk, en halv. Kenji visar att man kan omvandla talet till bråkform. Då blir det 3/2, alltså tre halva.",
+   "– I bråkform är täljaren större än nämnaren här, säger Kenji. Ett sådant bråk kallas oäkta bråk. Ett bråk som är mindre än ett, till exempel tre fjärdedelar, är ett äkta bråk.",
+   "Degen ska jäsa i tre kvart, och sedan ska bullarna stå i ugnen i en kvart. Medan de väntar dricker Kenji en halvliter vatten. Allt tar ungefär en och en halv timme, inte bara en halvtimme som Kenji trodde.",
+   "Emma tänker på andra delar av tal i vardagen. Ett halvår är sex månader, och ett kvartal är tre månader, alltså en fjärdedel av ett år. – Matematik finns överallt, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket socker står det i receptet?",
+    "options": [
+     "En halv deciliter",
+     "En och en halv deciliter",
+     "Tre deciliter",
+     "Tre kvarts deciliter"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I receptet står det 1 ½ dl socker.",
+    "explanationJa": "レシピには{砂糖|さとう}1.5デシリットルと{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vilken är heltalsdelen i talet 1 ½?",
+    "options": [
+     "En halv",
+     "Ett",
+     "Tre",
+     "Två"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det har en heltalsdel, ett, och ett bråk, en halv.",
+    "explanationJa": "1 ½ の{整数部分|せいすうぶぶん}は1です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Hur skriver man 1 ½ i bråkform?",
+    "options": [
+     "3/2",
+     "1/2",
+     "2/3",
+     "1/3"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Då blir det 3/2, alltså tre halva.",
+    "explanationJa": "{分数|ぶんすう}の{形|かたち}では 3/2 です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Tre fjärdedelar är ett oäkta bråk.",
+    "correct": false,
+    "explanationSv": "Ett bråk som är mindre än ett, till exempel tre fjärdedelar, är ett äkta bråk.",
+    "explanationJa": "4{分|ぶん}の3は1より{小|ちい}さいので{真分数|しんぶんすう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det tog längre tid att baka än Kenji trodde.",
+    "correct": true,
+    "explanationSv": "Allt tar ungefär en och en halv timme, inte bara en halvtimme som Kenji trodde.",
+    "explanationJa": "ケンは30{分|ぷん}だと{思|おも}っていましたが、1{時間|じかん}{半|はん}かかりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om halva och hela tal i recept, tider och priser.",
+  "discussionPoints": [
+   "Hur säger man 1 ½ timme på japanska?",
+   "Läser du recept med bråk, till exempel ½ dl?",
+   "Vad tycker du är lättast: 1 ½ eller 3/2?",
+   "Vad gör du på tre kvart?"
+  ]
+ }
+}

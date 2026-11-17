@@ -1,0 +1,173 @@
+{
+ "id": "m.talens-storleksordning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Talens storleksordning",
+ "titleJa": "{数|かず}の{大小|だいしょう}",
+ "descriptionSv": "Talens storleksordning: jämföra, större än, mindre än, lika med, lika stor, jämförelse, storleksordning, i stigande ordning, i fallande ordning, avstånd, mittemellan, näst störst, betydligt, överstiga, understiga och tiopotens.",
+ "descriptionJa": "{数|かず}の{大小|だいしょう}：{比|くら}べる、〜より{大|おお}きい、〜より{小|ちい}さい、イコール、{同|おな}じ{大|おお}きさの、{比較|ひかく}、{大|おお}きさの{順|じゅん}、{小|ちい}さい{順|じゅん}に、{大|おお}きい{順|じゅん}に、{距離|きょり}、ちょうど{真|ま}ん{中|なか}に、2{番目|ばんめ}に{大|おお}きい、かなり、〜を{超|こ}える、〜を{下回|したまわ}る、10の{累乗|るいじょう}。",
+ "categoryId": "R06-A01-T01",
+ "tags": [
+  "matematik",
+  "tal"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.udda-och-jamna-tal"
+ ],
+ "related": [],
+ "recommendedOrder": 3104,
+ "words": [
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.större-än.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mindre-än.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lika-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lika-stor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämförelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storleksordning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-stigande-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-fallande-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mittemellan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.näst-störst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betydligt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överstiga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.understiga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tiopotens.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vilket tal är störst?",
+  "paragraphs": [
+   "På fredagar spelar Anna och hennes vänner ett spel med frågor. I kväll handlar alla frågor om tal. Först ska de jämföra två tal och sätta rätt tecken mellan dem: större än, mindre än eller lika med.",
+   "– Vilket tal är störst av 199, 919 och 991? frågar Jonas. – 991, svarar Anna. Det är betydligt större än 199. Talet 919 är näst störst.",
+   "Nästa uppgift är att skriva talen 40, 4 000, 400 och 4 i storleksordning. Elin skriver dem i stigande ordning: 4, 40, 400, 4 000. Jonas skriver dem i fallande ordning. Båda har rätt. – Varje tal är tio gånger så stort som det förra, säger Anna. Talen 10, 100 och 1 000 kallas tiopotenser.",
+   "– Vilket tal ligger mittemellan 30 och 50? frågar Elin. – 40, förstås. Avståndet är tio åt båda hållen. Det är lika stor skillnad till båda talen.",
+   "Den sista frågan handlar om pengar. Spelet får inte kosta mer än 100 kronor per person. – Vi får alltså inte överstiga 100 kronor, säger Elin. Om vi understiger gränsen får vi pengar över till glass! I jämförelse med förra veckan var frågorna lätta."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket tal är näst störst av 199, 919 och 991?",
+    "options": [
+     "991",
+     "919",
+     "199",
+     "100"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Talet 919 är näst störst.",
+    "explanationJa": "2{番目|ばんめ}に{大|おお}きいのは919です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur skriver Elin talen?",
+    "options": [
+     "Från det största till det minsta",
+     "Från det minsta till det största",
+     "Bara de udda talen",
+     "Med romerska siffror"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Elin skriver dem i stigande ordning: 4, 40, 400, 4 000.",
+    "explanationJa": "エリンは{小|ちい}さい{順|じゅん}に{書|か}きました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att man inte får överstiga 100 kronor?",
+    "options": [
+     "Man måste betala exakt 100 kronor",
+     "Man får inte betala mindre än 100 kronor",
+     "Man får inte betala alls",
+     "Man får inte betala mer än 100 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Spelet får inte kosta mer än 100 kronor per person.",
+    "explanationJa": "100クローナより{多|おお}く{払|はら}ってはいけないという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Talet 40 ligger mittemellan 30 och 50.",
+    "correct": true,
+    "explanationSv": "– 40, förstås. Avståndet är tio åt båda hållen.",
+    "explanationJa": "40は30と50のちょうど{真|ま}ん{中|なか}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Jonas och Elin skrev talen i samma ordning.",
+    "correct": false,
+    "explanationSv": "Elin skriver dem i stigande ordning … Jonas skriver dem i fallande ordning.",
+    "explanationJa": "{二人|ふたり}は{逆|ぎゃく}の{順|じゅん}に{書|か}きました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni jämför tal och storlekar i vardagen.",
+  "discussionPoints": [
+   "Hur skriver man större än och mindre än i Japan?",
+   "Vilka priser jämför du när du handlar?",
+   "Vad är det största tal du har ett namn för på japanska?",
+   "När finns det en gräns som man inte får överstiga?"
+  ]
+ }
+}

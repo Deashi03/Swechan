@@ -1,0 +1,177 @@
+{
+ "id": "m.losa-enkla-ekvationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Lösa enkla ekvationer",
+ "titleJa": "{簡単|かんたん}な{方程式|ほうていしき}を{解|と}く",
+ "descriptionSv": "Lösa enkla ekvationer: likhetstecken, ekvation, vänsterled, högerled, lösa, obekant, lösning, lika stor, våg, jämvikt, isolera, i båda leden, flytta över, pröva, pröva sig fram, metod och facit.",
+ "descriptionJa": "{簡単|かんたん}な{方程式|ほうていしき}を{解|と}く：{等号|とうごう}、{方程式|ほうていしき}、{左辺|さへん}、{右辺|うへん}、{解|と}く、{未知数|みちすう}、{解|かい}、{同|おな}じ{大|おお}きさの、はかり、つり{合|あ}い、xだけを{残|のこ}す、{両辺|りょうへん}に、{移項|いこう}する、{確|たし}かめる、{試行錯誤|しこうさくご}する、{方法|ほうほう}、{解答|かいとう}。",
+ "categoryId": "R06-A01-T03",
+ "tags": [
+  "matematik",
+  "algebra"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.forenkla-uttryck"
+ ],
+ "related": [],
+ "recommendedOrder": 3125,
+ "words": [
+  {
+   "senseId": "s.likhetstecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ekvation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vänsterled.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högerled.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obekant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lika-stor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämvikt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.isolera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.i-båda-leden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flytta-över.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pröva.2",
+   "active": true
+  },
+  {
+   "senseId": "s.pröva-sig-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.metod.1",
+   "active": false
+  },
+  {
+   "senseId": "s.facit.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad kostade en biljett?",
+  "paragraphs": [
+   "Maria har varit på bio med sina barn. Hon köpte fyra biljetter och en stor påse popcorn för 30 kronor. Sammanlagt betalade hon 470 kronor. Men vad kostade en biljett? Det kan man räkna ut med en ekvation.",
+   "Priset för en biljett är den obekanta, och den kallar vi x. Då blir ekvationen 4x + 30 = 470. Det som står till vänster om likhetstecknet kallas vänsterled, och det som står till höger kallas högerled. Summan i vänsterledet är lika stor som talet i högerledet.",
+   "Man kan tänka på en ekvation som en våg i jämvikt. Om man tar bort lika mycket i båda leden, är vågen fortfarande i jämvikt. Målet är att isolera x, alltså få x att stå ensamt.",
+   "Först tar Maria bort 30 i båda leden: 4x = 440. Man kan också säga att hon flyttar över 30 till högerledet, där det blir −30. Sedan delar hon båda leden med 4: x = 110. Lösningen är x = 110, så en biljett kostade 110 kronor.",
+   "Hon prövar svaret: 4 · 110 + 30 = 470. Det stämmer! Hennes son ville hellre pröva sig fram med olika tal, men Maria tycker att hennes metod går snabbare. Det är som att lösa en gåta, säger hon. I boken finns också ett facit, och där står det att svaret är rätt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket betalade Maria sammanlagt?",
+    "options": [
+     "470 kronor",
+     "440 kronor",
+     "110 kronor",
+     "30 kronor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sammanlagt betalade hon 470 kronor.",
+    "explanationJa": "{合計|ごうけい}470クローナ{払|はら}いました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad står i vänsterledet i ekvationen 4x + 30 = 470?",
+    "options": [
+     "470",
+     "4x + 30",
+     "x",
+     "110"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det som står till vänster om likhetstecknet kallas vänsterled.",
+    "explanationJa": "{等号|とうごう}の{左|ひだり}にある4x + 30が{左辺|さへん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför tar Maria bort 30 i båda leden?",
+    "options": [
+     "För att popcornen var gratis",
+     "För att få en större summa",
+     "För att vågen ska bli tyngre",
+     "För att isolera x"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Målet är att isolera x, alltså få x att stå ensamt.",
+    "explanationJa": "xだけを{残|のこ}すためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En biljett kostade 110 kronor.",
+    "correct": true,
+    "explanationSv": "Lösningen är x = 110, så en biljett kostade 110 kronor.",
+    "explanationJa": "1{枚|まい}110クローナでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Marias son ville helst räkna på samma sätt som Maria.",
+    "correct": false,
+    "explanationSv": "Hennes son ville hellre pröva sig fram med olika tal.",
+    "explanationJa": "{息子|むすこ}はいろいろな{数|かず}で{試|ため}したがりました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen. Priserna är påhittade; räkneexemplet är kontrollerat: 4 · 110 + 30 = 470."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att lösa problem, med ekvationer och på andra sätt.",
+  "discussionPoints": [
+   "Brukar du pröva dig fram, eller vill du ha en metod?",
+   "Kan du hitta på en ekvation om något som du har köpt?",
+   "Tycker du att det är bra att böcker har facit?",
+   "Vilket problem i ditt liv skulle du vilja lösa med en ekvation?"
+  ]
+ }
+}
