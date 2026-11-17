@@ -1,5 +1,38 @@
 # Changelog
 
+## Osläppt – 2026-11-17: språk- och faktagranskning av *Samhälle & institutioner*
+
+Alla 252 moduler i *Samhälle & institutioner* (R03) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. Alla 3 056 ordbetydelser som inte redan lästes med R01 och R02 är lästa på svenska och japanska: glosa, definition, exempel, förklaring, användningsnot och böjning. Uppgifter som kan ha ändrats kontrollerades mot källa. 108 moduler och 49 ordboksfiler är ändrade; alla ändrade moduler har ny `contentVersion`.
+
+### Lagar och regler som har ändrats
+- *Brottets rekvisit* och ordposten *straffmyndig*: 15 år gäller fortfarande, men sedan den 10 september 2026 kan den som har fyllt 14 år få straff för mycket allvarliga brott.
+- *Böter och fängelse* och ordposten *villkorlig frigivning*: två tredjedelar gäller fortfarande för de flesta, men tre fjärdedelar för straff på sex år eller mer (från 1 januari 2026).
+- *Vanliga brottsrubriceringar*: inbrott i bostad heter *inbrottsstöld* (inte grov stöld), och *snatteri* heter *ringa stöld* i lagen sedan 2017. Exemplet på ofredande beskrev sexuellt ofredande; nu ropar mannen efter flickorna. Samma rättningar i ordposterna *snatteri* och *ofredande*.
+- *Detaljplan och bygglov* och ordposterna *friggebod* och *attefallshus*: orden togs bort ur lagen den 1 december 2025. Texten och posterna säger nu det, och att små hus på högst 30 kvadratmeter får byggas utan bygglov.
+- *Medborgarskap*: sedan den 6 juni 2026 krävs också svenska och egen försörjning. Lars bor i Finland i stället för Spanien.
+- *Gymnasieskolans program* och ordposterna *gymnasiepoäng*, *gymnasiegemensamt ämne*, *individuellt val*, *gymnasieexamen*, *ämnesplan* och *nationellt prov*: gymnasiet har ämnen med nivåer i stället för kurser (Gy25).
+- Ordposten *kamerabevakning*: tillstånd behövs inte längre (2025). *Amorteringskrav*: reglerna står i lag sedan den 1 april 2026.
+- Faktakällor uppdaterade: lagen om ordningsvakter (2023:421), gränsen för förenklat tvistemål 2026 (29 600 kronor), lagen om begränsning av bostadskrediter.
+
+### Sakfel och logiska fel i texterna
+- *Hyra och boenderätt*: Maja hyrde ett rum men texten handlade om andrahandsuthyrning av en lägenhet; det var hyresnämnden som avgjorde en förverkad hyresrätt (nu tingsrätten).
+- *Förskola och grundskola*: familjen flyttade i mars men dottern hade gått två år på förskolan; Kenji gick i årskurs 6 samma år som Yui började förskoleklass, men i *Betyg och bedömning* går han i sexan när Yui går i ettan; nu är han tio år och går i fyran.
+- *Skolstart och skolplikt*: ”Skolan är statlig eller kommunal” (de flesta skolor är kommunala eller fristående).
+- *Pensionssparande*, *Studievägledning*, *Att tolka en lagtext*, *Nybyggnation* (kommunstyrelsens ordförande), *Tvister och förlikning*, *Jämföra utbildningssystem* (PISA görs inte längre vart tredje år) och *Målgrupper* (”säger hon” utan person).
+- Ordposter: *skiljeförfarande* (konsumenter), *statlig inkomstskatt* (gränsen), *avgiftsbelagd* (EU-studenter), *kunskapsmätning*, *föreläsning* (akademisk kvart), *ledare*, *staket*, *halvsanning*, *studie*.
+
+### Roller och namn
+- Vuxna Leo, Mia och Aiko som inte är familjen i radhuset har fått andra namn i sex moduler. Erik har bytt namn i tolv moduler där han var åklagare, student, barn eller sambo med någon annan.
+- Namn i katakana skrivs lika i hela området (カリン, ヨナス, ペル, リサ m.fl.); två japanska förklaringar hade fel namn.
+
+### Svenska, japanska och böjning
+- Ett trettiotal språkfel i lästexter, frågor och ordposter (*är sjukt*, *bli medlem*, *svensk rabarber*, *till till exempel*, dubbla punkter, *fryses ut*, *Man kan ta den efter …*).
+- Japanska: fyra förklaringar saknade meningar som fanns på svenska; *säga upp* hade fel subjekt; två furiganafel (*違法*, *4分*).
+- Böjning: *damm* (dammen, dammar – med not om *dammet* för smuts), *motion* (motioner), och fem poster där pluralen var ett streck.
+
+### Kontroll
+`validateContent` och `checkVocabulary`: 0 problem. Furigana i R03 är kontrollerad maskinellt (läsningar per kanjisträng, räkneord).
+
 ## Osläppt – 2026-11-16: språkgranskning av *Människan & hälsa*
 
 Alla 252 moduler i *Människan & hälsa* (R02) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. Alla ordposter som modulerna använder och som inte redan lästes med *Vardag & hem* (3 698 betydelser) är lästa: japansk glosa, svensk definition, exempel, svensk förklaring, användningsnot och böjning. De japanska definitionerna, förklaringarna och användningsnoterna är jämförda med svenskan mening för mening. 91 moduler i R02, 3 moduler utanför R02 (japansk stavning av Johan i två, böjningen av *sms* i en) och 29 ordlistefiler är ändrade. Versionen och service workern är inte höjda.

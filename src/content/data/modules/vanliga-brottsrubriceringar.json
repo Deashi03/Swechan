@@ -1,7 +1,7 @@
 {
  "id": "m.vanliga-brottsrubriceringar",
- "contentVersion": 1,
- "updatedAt": "2026-11-11",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Vanliga brottsrubriceringar",
  "titleJa": "よくある{罪名|ざいめい}",
  "descriptionSv": "Vanliga brottsrubriceringar: brottsrubricering, stöld, stjäla, snatteri, inbrott, rån, bedrägeri, misshandel, grov, olaga hot, ofredande, skadegörelse, klotter, rattfylleri, mord och dråp.",
@@ -87,9 +87,9 @@
   "titleSv": "Veckans brott i Norrby",
   "paragraphs": [
    "Varje måndag skriver lokaltidningen om brott som polisen har fått veta om under veckan. Här är några av dem. Polisen påpekar att brottsrubriceringen kan ändras när man vet mer.",
-   "Snatteri: En man tog två flaskor öl i en mataffär utan att betala. Personalen stoppade honom vid dörren. Stöld: En cykel stals utanför stationen på tisdagen. Inbrott: Någon bröt sig in i ett hus på Storgatan medan familjen var bortrest och stal smycken och en dator. Eftersom den som gjorde inbrottet tog sig in i en bostad, kan brottet räknas som grov stöld.",
+   "Snatteri (i lagen heter brottet nu ringa stöld): En man tog två flaskor öl i en mataffär utan att betala. Personalen stoppade honom vid dörren. Stöld: En cykel stals utanför stationen på tisdagen. Inbrott: Någon bröt sig in i ett hus på Storgatan medan familjen var bortrest och stal smycken och en dator. Eftersom den som gjorde inbrottet tog sig in i en bostad, heter brottet inbrottsstöld. Det är minst lika allvarligt som grov stöld.",
    "Rån: En man visade en kniv för en ung kvinna, och hon fick lämna ifrån sig sin mobil. Bedrägeri: En äldre man lurades att ge sina bankuppgifter till någon som låtsades ringa från banken. Han förlorade 40 000 kronor.",
-   "Misshandel: Två män bråkade utanför en restaurang, och den ene slog den andre i ansiktet. Olaga hot: En kvinna fick sms från sin före detta pojkvän om att han skulle skada henne. Ofredande: En man följde efter flera flickor på väg till skolan och tog på dem.",
+   "Misshandel: Två män bråkade utanför en restaurang, och den ene slog den andre i ansiktet. Olaga hot: En kvinna fick sms från sin före detta pojkvän om att han skulle skada henne. Ofredande: En man följde efter flera flickor på väg till skolan och ropade efter dem.",
    "Skadegörelse och klotter: Under helgen hade någon krossat rutor och målat klotter på skolans vägg. Rattfylleri: Polisen stoppade en bil på fredagskvällen. Föraren hade druckit och misstänks för rattfylleri. Mord och dråp är ovanliga i Norrby; det senaste fallet var för flera år sedan."
   ],
   "questions": [
@@ -97,7 +97,7 @@
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "Varför kan inbrottet räknas som grov stöld?",
+    "promptSv": "Varför heter brottet inbrottsstöld?",
     "options": [
      "Personen hade en kniv",
      "Familjen var hemma",
@@ -105,7 +105,7 @@
      "Personen körde bil"
     ],
     "correctIndex": 2,
-    "explanationSv": "Eftersom den som gjorde inbrottet tog sig in i en bostad, kan brottet räknas som grov stöld.",
+    "explanationSv": "Eftersom den som gjorde inbrottet tog sig in i en bostad, heter brottet inbrottsstöld.",
     "explanationJa": "{住宅|じゅうたく}に{侵入|しんにゅう}したからです。"
    },
    {
@@ -144,7 +144,7 @@
     "focus": "detail",
     "statementSv": "Mannen som tog öl i mataffären misstänks för snatteri.",
     "correct": true,
-    "explanationSv": "Snatteri: En man tog två flaskor öl i en mataffär utan att betala.",
+    "explanationSv": "Snatteri (i lagen heter brottet nu ringa stöld): En man tog två flaskor öl i en mataffär utan att betala.",
     "explanationJa": "{店|みせ}でビールを{取|と}ったのは{万引|まんび}きです。"
    },
    {
@@ -158,7 +158,7 @@
    }
   ],
   "factSources": [
-   "Stöld, snatteri (stöld av ringa värde), grov stöld och rån regleras i brottsbalken 8 kap. 1, 2, 4 och 5 §§; vid bedömningen av om stölden är grov beaktas bland annat om den skett efter intrång i bostad.",
+   "Stöld, ringa stöld (före 2017 kallad snatteri), grov stöld, inbrottsstöld och rån regleras i brottsbalken 8 kap. 1, 2, 4, 4 a och 5 §§; stöld efter intrång i bostad är sedan 2021 ett eget brott, inbrottsstöld.",
    "Bedrägeri regleras i brottsbalken 9 kap. 1 §, misshandel i 3 kap. 5–6 §§, olaga hot i 4 kap. 5 § och ofredande i 4 kap. 7 §.",
    "Skadegörelse regleras i brottsbalken 12 kap. 1 §; ringa skadegörelse kallas åverkan (12 kap. 2 §). Klotter bedöms normalt som skadegörelse.",
    "Rattfylleri föreligger vid minst 0,2 promille alkohol i blodet och grovt rattfylleri vid minst 1,0 promille (lagen 1951:649 om straff för vissa trafikbrott, 4 och 4 a §§).",

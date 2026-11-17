@@ -1,7 +1,7 @@
 {
  "id": "m.examensarbete",
- "contentVersion": 1,
- "updatedAt": "2026-11-12",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Examensarbete",
  "titleJa": "{卒業論文|そつぎょうろんぶん}",
  "descriptionSv": "Examensarbete: uppsats, examensarbete, exjobb, självständigt arbete, kandidatuppsats, handledare, handleda, handledning, disposition, utkast, korrekturläsa, deadline, slutseminarium, opponent, opponera, opposition och uppdragsgivare.",
@@ -91,18 +91,18 @@
  "reading": {
   "titleSv": "Uppsatsen",
   "paragraphs": [
-   "Sofia läser sista terminen på sin kandidatexamen i historia. Nu ska hon skriva sitt examensarbete, en kandidatuppsats på femton högskolepoäng. Kursen heter Självständigt arbete, men alla säger uppsats. Hon skriver tillsammans med sin kurskamrat Leo. Deras uppsats handlar om varför unga flyttar från små orter.",
-   "De får en handledare som heter Karin. Hon handleder fem grupper den här terminen. De har handledning varannan vecka. På det första mötet visar Sofia och Leo sin disposition. Karin tycker att den är bra, men att frågan är för stor.",
-   "I mars intervjuar de tolv unga i Värmland. Sedan börjar de skriva. Varje vecka skickar de ett nytt utkast till Karin. Hon skriver frågor och råd i texten och påminner dem om deadline i maj. Leos bror gör samtidigt ett exjobb på en högskola i Luleå, med ett energibolag som uppdragsgivare.",
+   "Sofia läser sista terminen på sin kandidatexamen i historia. Nu ska hon skriva sitt examensarbete, en kandidatuppsats på femton högskolepoäng. Kursen heter Självständigt arbete, men alla säger uppsats. Hon skriver tillsammans med sin kurskamrat Daniel. Deras uppsats handlar om varför unga flyttar från små orter.",
+   "De får en handledare som heter Karin. Hon handleder fem grupper den här terminen. De har handledning varannan vecka. På det första mötet visar Sofia och Daniel sin disposition. Karin tycker att den är bra, men att frågan är för stor.",
+   "I mars intervjuar de tolv unga i Värmland. Sedan börjar de skriva. Varje vecka skickar de ett nytt utkast till Karin. Hon skriver frågor och råd i texten och påminner dem om deadline i maj. Daniels bror gör samtidigt ett exjobb på en högskola i Luleå, med ett energibolag som uppdragsgivare.",
    "Kvällen före deadline korrekturläser Sofias pappa hela texten. Han hittar många små fel. Klockan elva på kvällen lämnar de in uppsatsen.",
-   "En vecka senare är det slutseminarium. Deras opponent är en student som heter Maja. Under oppositionen ställer hon många frågor, men hon säger också att uppsatsen är intressant. Samma dag ska Sofia och Leo opponera på en annan grupps uppsats. Efter seminariet är de trötta men nöjda."
+   "En vecka senare är det slutseminarium. Deras opponent är en student som heter Maja. Under oppositionen ställer hon många frågor, men hon säger också att uppsatsen är intressant. Samma dag ska Sofia och Daniel opponera på en annan grupps uppsats. Efter seminariet är de trötta men nöjda."
   ],
   "questions": [
    {
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "Vad handlar Sofias och Leos uppsats om?",
+    "promptSv": "Vad handlar Sofias och Daniels uppsats om?",
     "options": [
      "Studentliv i Uppsala",
      "Energi i Värmland",
@@ -137,7 +137,7 @@
      "Handledaren",
      "Opponenten",
      "Sofias pappa",
-     "Leos bror"
+     "Daniels bror"
     ],
     "correctIndex": 2,
     "explanationSv": "Kvällen före deadline korrekturläser Sofias pappa hela texten.",
@@ -147,7 +147,7 @@
     "kind": "truefalse",
     "id": "q4",
     "focus": "detail",
-    "statementSv": "Maja är opponent på Sofias och Leos uppsats.",
+    "statementSv": "Maja är opponent på Sofias och Daniels uppsats.",
     "correct": true,
     "explanationSv": "Deras opponent är en student som heter Maja.",
     "explanationJa": "マヤが{質問者|しつもんしゃ}です。"
@@ -156,7 +156,7 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Sofia och Leo lämnade in uppsatsen för sent.",
+    "statementSv": "Sofia och Daniel lämnade in uppsatsen för sent.",
     "correct": false,
     "explanationSv": "Klockan elva på kvällen lämnar de in uppsatsen.",
     "explanationJa": "{締|し}め{切|き}りの{前|まえ}の{晩|ばん}に{提出|ていしゅつ}しました。"
