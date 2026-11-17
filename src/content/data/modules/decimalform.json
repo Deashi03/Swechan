@@ -1,0 +1,170 @@
+{
+ "id": "m.decimalform",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Decimalform",
+ "titleJa": "{小数|しょうすう}の{形|かたち}",
+ "descriptionSv": "Decimalform: decimalform, decimal, decimalkomma, tiondel, hundradel, tusendel, nolla, öre, prislapp, hekto, centiliter, millimeter, omvandla, miniräknare och oändlig.",
+ "descriptionJa": "{小数|しょうすう}の{形|かたち}：{小数|しょうすう}の{形|かたち}、{小数点以下|しょうすうてんいか}の{位|くらい}、{小数点|しょうすうてん}、10{分|ぶん}の1、100{分|ぶん}の1、1000{分|ぶん}の1、ゼロ、エーレ、{値札|ねふだ}、100グラム、センチリットル、ミリメートル、{変換|へんかん}する、{電卓|でんたく}、{無限|むげん}の。",
+ "categoryId": "R06-A01-T02",
+ "tags": [
+  "matematik",
+  "decimaltal"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.jamfora-brak"
+ ],
+ "related": [],
+ "recommendedOrder": 3114,
+ "words": [
+  {
+   "senseId": "s.decimalform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decimal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decimalkomma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tiondel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hundradel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tusendel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prislapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hekto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.centiliter.1",
+   "active": false
+  },
+  {
+   "senseId": "s.millimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miniräknare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oändlig.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Kronor, öre och decimaler",
+  "paragraphs": [
+   "Aiko har flyttat till Sverige och handlar mat. På en prislapp står det 24,90 kronor. – Tjugofyra kronor och nittio öre, läser hon. I Sverige skriver man ett decimalkomma, inte en punkt som i Japan.",
+   "Priset står i decimalform. Talet 24,90 har två decimaler. Den första decimalen visar tiondelar och den andra hundradelar. Det finns inga mynt för öre längre, men priserna skrivs fortfarande med öre.",
+   "Aiko köper två hekto ost. Två hekto är 0,2 kilo. Nollan före kommat visar att det är mindre än ett helt kilo. Hon köper också en liten juice på 33 centiliter, alltså 0,33 liter.",
+   "Hemma vill hon omvandla bråk till decimalform. Hon tar fram sin miniräknare och räknar 1/4. Svaret blir 0,25. Sedan räknar hon 1/3. Då blir svaret 0,333… med oändligt många decimaler.",
+   "En millimeter är en tusendel av en meter, alltså 0,001 meter. – Tiondelar, hundradelar och tusendelar, säger Aiko. Nu förstår jag hur decimaler fungerar!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "usage",
+    "promptSv": "Hur läser Aiko priset 24,90 kronor?",
+    "options": [
+     "Tjugofyra kronor och nio öre",
+     "Nittio kronor",
+     "Tjugofyra kronor och nittio öre",
+     "Tjugofyra och nittio kronor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Tjugofyra kronor och nittio öre, läser hon.",
+    "explanationJa": "「24クローナ90エーレ」と{読|よ}みます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad visar den andra decimalen i 24,90?",
+    "options": [
+     "Hundradelar",
+     "Tiondelar",
+     "Tusendelar",
+     "Hela kronor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den första decimalen visar tiondelar och den andra hundradelar.",
+    "explanationJa": "2{桁目|けため}は100{分|ぶん}の1の{位|くらい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur mycket är två hekto i kilo?",
+    "options": [
+     "0,2 kilo",
+     "2 kilo",
+     "0,02 kilo",
+     "20 kilo"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Två hekto är 0,2 kilo.",
+    "explanationJa": "2ヘクトは0.2キロです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I Sverige skriver man en punkt i stället för ett decimalkomma.",
+    "correct": false,
+    "explanationSv": "I Sverige skriver man ett decimalkomma, inte en punkt som i Japan.",
+    "explanationJa": "スウェーデンではコンマを{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "1/3 kan inte skrivas exakt med ett fåtal decimaler.",
+    "correct": true,
+    "explanationSv": "Då blir svaret 0,333… med oändligt många decimaler.",
+    "explanationJa": "1/3 は{小数|しょうすう}にすると{終|お}わりがありません。"
+   }
+  ],
+  "factSources": [
+   "Sverige använder decimalkomma (Språkrådet, Svenska skrivregler); Japan använder decimalpunkt.",
+   "Öresmynt finns inte längre: den sista, 50-öringen, slutade gälla 30 september 2010 (Riksbanken); priser anges ändå i öre."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tal med decimaler i vardagen: priser, mått och tider.",
+  "discussionPoints": [
+   "Hur skriver och läser man decimaltal på japanska?",
+   "Var ser du decimaler varje dag?",
+   "Räknar du i huvudet eller med miniräknare när du handlar?",
+   "Saknar du några mynt i Sverige?"
+  ]
+ }
+}

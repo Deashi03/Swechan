@@ -1,0 +1,169 @@
+{
+ "id": "m.jamfora-brak",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Jämföra bråk",
+ "titleJa": "{分数|ぶんすう}の{比較|ひかく}",
+ "descriptionSv": "Jämföra bråk: jämföra, jämförelse, gemensam nämnare, förlänga, förkorta, i enklaste form, likvärdig, motsvara, lika stor, tårtbit, drygt, knappt, betydligt, dubbelt så och hälften så.",
+ "descriptionJa": "{分数|ぶんすう}の{比較|ひかく}：{比|くら}べる、{比較|ひかく}、{公分母|こうぶんぼ}、{倍分|ばいぶん}する、{約分|やくぶん}する、{既約分数|きやくぶんすう}で、{同等|どうとう}の、{相当|そうとう}する、{同|おな}じ{大|おお}きさの、ケーキの{一切|ひとき}れ、〜{強|きょう}、〜{弱|じゃく}、かなり、2{倍|ばい}、{半分|はんぶん}の。",
+ "categoryId": "R06-A01-T02",
+ "tags": [
+  "matematik",
+  "bråk"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.blandad-form-och-brakform"
+ ],
+ "related": [],
+ "recommendedOrder": 3113,
+ "words": [
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämförelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gemensam-nämnare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlänga.2",
+   "active": true
+  },
+  {
+   "senseId": "s.förkorta.2",
+   "active": true
+  },
+  {
+   "senseId": "s.i-enklaste-form.1",
+   "active": false
+  },
+  {
+   "senseId": "s.likvärdig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motsvara.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lika-stor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tårtbit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drygt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knappt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betydligt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dubbelt-så.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälften-så.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vilken tårta har mest kvar?",
+  "paragraphs": [
+   "Sara och Johan har köpt två lika stora tårtor till ett kalas på jobbet. Kalaset varar i drygt en timme. Efteråt finns det tårtbitar kvar. Den första tårtan var delad i sex bitar, och två finns kvar. Den andra var delad i tio bitar, och fyra finns kvar. – Vilken tårta har mest kvar? frågar Johan.",
+   "– Vi måste jämföra 2/6 och 4/10, säger Sara. Det är svårt när nämnarna är olika, så vi behöver en gemensam nämnare. Hon förlänger båda bråken: 2/6 blir 10/30 och 4/10 blir 12/30.",
+   "– Nu är jämförelsen lätt, säger hon. 12/30 är mer än 10/30. Den andra tårtan har knappt hälften kvar, och den första har en tredjedel kvar.",
+   "Johan förkortar 4/10 med två och får 2/5. – Nu är bråket i enklaste form, säger han. 4/10 och 2/5 är likvärdiga bråk. De motsvarar lika stor del av tårtan.",
+   "Men bitarna är olika stora. En bit av den första tårtan är en sjättedel, och en bit av den andra är en tiondel. Den första biten är betydligt större, nästan dubbelt så stor. – Och en tiondel är hälften så stor som en femtedel, säger Johan och tar två bitar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många bitar finns kvar av den andra tårtan?",
+    "options": [
+     "Två",
+     "Sex",
+     "Fyra",
+     "Tio"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den andra var delad i tio bitar, och fyra finns kvar.",
+    "explanationJa": "2つ{目|め}のケーキは4{切|き}れ{残|のこ}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför behöver Sara en gemensam nämnare?",
+    "options": [
+     "Tårtorna är olika stora",
+     "Täljarna är lika",
+     "Nämnarna är olika",
+     "Johan vill ha mer tårta"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det är svårt när nämnarna är olika, så vi behöver en gemensam nämnare.",
+    "explanationJa": "{分母|ぶんぼ}が{違|ちが}うので、{公分母|こうぶんぼ}が{必要|ひつよう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad blir 4/10 förkortat med två?",
+    "options": [
+     "8/20",
+     "2/5",
+     "4/5",
+     "2/10"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Johan förkortar 4/10 med två och får 2/5.",
+    "explanationJa": "4/10 を2で{約分|やくぶん}すると 2/5 です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Den första tårtan har mest kvar.",
+    "correct": false,
+    "explanationSv": "12/30 är mer än 10/30. Den andra tårtan har knappt hälften kvar, och den första har en tredjedel kvar.",
+    "explanationJa": "2つ{目|め}のケーキのほうが{多|おお}く{残|のこ}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En bit av den första tårtan är större än en bit av den andra.",
+    "correct": true,
+    "explanationSv": "Den första biten är betydligt större, nästan dubbelt så stor.",
+    "explanationJa": "6{分|ぶん}の1は10{分|ぶん}の1より{大|おお}きいです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden; räkningarna (2/6 = 10/30, 4/10 = 12/30 = 2/5) är kontrollerade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni jämför bråk och delar i vardagen, till exempel när man delar mat.",
+  "discussionPoints": [
+   "Vilket är störst: 2/3 eller 3/4? Hur tänker du?",
+   "Hur brukar ni dela en tårta när ni är många?",
+   "Är det lättare att jämföra bråk eller procent?",
+   "När räcker det att säga drygt eller knappt i stället för ett exakt tal?"
+  ]
+ }
+}

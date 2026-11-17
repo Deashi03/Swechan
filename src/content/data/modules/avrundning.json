@@ -1,0 +1,174 @@
+{
+ "id": "m.avrundning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Avrundning",
+ "titleJa": "{四捨五入|ししゃごにゅう}",
+ "descriptionSv": "Avrundning: avrundning, avrunda, avrunda uppåt, avrunda nedåt, halvvägs, decimal, hundradel, närmevärde, ungefär lika med, ungefärlig, i runda tal, uppskatta, kontant, öresavrundning, jämna pengar och värdesiffra.",
+ "descriptionJa": "{四捨五入|ししゃごにゅう}：{四捨五入|ししゃごにゅう}、{四捨五入|ししゃごにゅう}する、{切|き}り{上|あ}げる、{切|き}り{捨|す}てる、{半分|はんぶん}のところで、{小数点以下|しょうすうてんいか}の{位|くらい}、100{分|ぶん}の1、{近似値|きんじち}、ほぼ{等|ひと}しい、おおよその、{概数|がいすう}で、{見積|みつ}もる、{現金|げんきん}の、エーレの{端数処理|はすうしょり}、ちょうどの{金額|きんがく}、{有効数字|ゆうこうすうじ}。",
+ "categoryId": "R06-A01-T02",
+ "tags": [
+  "matematik",
+  "decimaltal"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.decimalform"
+ ],
+ "related": [],
+ "recommendedOrder": 3115,
+ "words": [
+  {
+   "senseId": "s.avrundning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avrunda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avrunda-uppåt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avrunda-nedåt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvvägs.1",
+   "active": false
+  },
+  {
+   "senseId": "s.decimal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hundradel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närmevärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ungefär-lika-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ungefärlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-runda-tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öresavrundning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämna-pengar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värdesiffra.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "48 kronor, tack",
+  "paragraphs": [
+   "Omar köper kaffe och en bulle på ett kafé. Det kostar 47,60 kronor. Han vill betala kontant. – Då blir det 48 kronor, säger kvinnan i kassan. Omar undrar varför.",
+   "– Det är öresavrundning, förklarar hon. När man betalar kontant avrundar man till hela kronor. Under 50 öre ska man avrunda nedåt, och från 50 öre ska man avrunda uppåt. Med kort betalar man exakt 47,60.",
+   "Hemma tänker Omar på avrundning i matematik. Regeln är enkel: om nästa siffra är fem eller mer, ska man avrunda uppåt. Talet 3,5 ligger precis halvvägs mellan 3 och 4, men man avrundar ändå till 4.",
+   "Han räknar ut 10 delat med 3 på miniräknaren och får 3,333… Om man avrundar till två decimaler, alltså till hundradelar, blir det 3,33. Det är ett närmevärde, inte ett exakt svar. Därför skriver man ungefär lika med: 10/3 ≈ 3,33.",
+   "I vardagen uppskattar man ofta i runda tal, och ett ungefärligt svar räcker för det mesta. Men Omars syster arbetar på ett laboratorium, och där måste man räkna noga med värdesiffror. Nästa dag har Omar jämna pengar på kaféet: 48 kronor."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket betalar Omar kontant?",
+    "options": [
+     "47 kronor",
+     "47,60 kronor",
+     "50 kronor",
+     "48 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Då blir det 48 kronor, säger kvinnan i kassan.",
+    "explanationJa": "{現金|げんきん}では48クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir priset 48 kronor och inte 47 kronor?",
+    "options": [
+     "Kaféet vill ha mer pengar",
+     "Kaffet blev dyrare",
+     "Man ska avrunda uppåt från 50 öre",
+     "Omar betalar med kort"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Under 50 öre ska man avrunda nedåt, och från 50 öre ska man avrunda uppåt.",
+    "explanationJa": "50エーレ{以上|いじょう}は{切|き}り{上|あ}げるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad blir 3,5 avrundat till ett heltal?",
+    "options": [
+     "3",
+     "3,4",
+     "5",
+     "4"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Talet 3,5 ligger precis halvvägs mellan 3 och 4, men man avrundar ändå till 4.",
+    "explanationJa": "3,5 は 4 になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Med kort betalar man det exakta priset.",
+    "correct": true,
+    "explanationSv": "Med kort betalar man exakt 47,60.",
+    "explanationJa": "カードでは{正確|せいかく}な{値段|ねだん}を{払|はら}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "3,33 är det exakta svaret på 10/3.",
+    "correct": false,
+    "explanationSv": "Det är ett närmevärde, inte ett exakt svar.",
+    "explanationJa": "3,33 は{近似値|きんじち}で、{正確|せいかく}な{答|こた}えではありません。"
+   }
+  ],
+  "factSources": [
+   "Öresavrundning vid kontant betalning sedan 30 september 2010: under 50 öre avrundas nedåt, från 50 öre uppåt (Riksbanken).",
+   "Avrundningsregeln (fem eller mer avrundas uppåt) är den vanliga skolregeln i Sverige."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om när man avrundar och när man behöver exakta tal.",
+  "discussionPoints": [
+   "Betalar du ibland kontant? Har du märkt öresavrundning?",
+   "När räcker det att svara i runda tal?",
+   "Hur avrundar man i Japan, och skriver man ≈ eller ≒?",
+   "När är det viktigt att räkna exakt?"
+  ]
+ }
+}
