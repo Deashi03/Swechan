@@ -40,10 +40,15 @@ Alla 252 moduler i *Människan & hälsa* (R02) är genomlästa: lästexter, frå
 - Japanskan sa något annat än svenskan: *marschera* (”som soldater” → i ett band), *halta* (”går oregelbundet” → står nästan inte på det ena benet), *frustration* (”besvikelse” → trötthet), *långväxt* (”stor till kroppen” struket), *sommarjobb* (”ofta” saknades), *svarslös* (”oväntad fråga” → konstig), *monoton* (”blir sömniga” → trötta), *hytta med näven* (”tecknad film” → film), *skeptisk* (onaturligt ord för erbjudande).
 - En automatisk kontroll hittade ingen kanji utan furigana i R02.
 
+### Uppföljning 2026-11-17: listan ”inte gjort” åtgärdad
+- **Roller:** Aiko är nu vuxen i alla moduler. Skolflickan i 43 moduler om kropp och vård heter Mei (メイ). Leo är alltid ett barn: den vuxne Leo heter Jonas i tre moduler i R02 och Leonardo i *Avstånd och närhet*. Aikos man heter Erik även i *Svärfamilj och ingifta*, och kollegan med bröder i *Föräldrar och barn* heter Karin, eftersom Sara har systrar i grannmodulen. Övriga namn (Johan, Karin, Kenji, Sara med flera) används fortfarande fritt mellan ämnesgrupperna; det finns inget fastställt persongalleri att rätta mot.
+- **Fakta mot källa:** brännskador kyls i femton minuter, inte tjugo (1177 Vårdguiden varnar för nedkylning efter en kvart); text, fråga, ordpost och faktakälla är ändrade. Kontrollerade utan ändring: näsblod (tio minuter), sömnbehov (sju till nio timmar), vårdgarantin (90 dagar), stelkrampsvaccin (vart tjugonde år), drunkningstal (103 personer 2025) och barnbidrag (1 250 kr). Alla sifferuppgifter i ordposternas definitioner och förklaringar i R02 är lästa en gång till; övriga är inte hämtade en och en från källan.
+- **Bilden till *varningstriangel*** visar en läkemedelsask med triangel. Det stämmer med modulens text om hur det var förr, så bilden är oförändrad.
+- **Furigana** i R01 och R02 (120 019 läsningar, 6 689 olika kanjiskrivningar) är kontrollerade: alla skrivningar med flera läsningar, alla räkneord efter siffra och alla sammansättningar vars läsning inte följer av delarnas vanliga läsningar. Fem rättelser: 食べ{物|もの}, 6{本|ぽん}, 15{分|ふん}, 8{分|ぷん} och {隅|すみ} i stället för {角|すみ}.
+- **Tester:** paketen går inte att installera här, så `npm test` kan inte köras som det är. Med en egen körare (esbuild och en liten ersättare för vitest) går 16 av 26 testfiler, och alla 1 555 tester i dem godkänns, bland annat innehållsvalidering, ordförrådskontroll, furigana, bilder, ordbok, samtal och övningar.
+
 ### Inte gjort
-- Personernas roller växlar mellan modulerna i R02 (Aiko och Leo är barn i vissa moduler och vuxna i andra; Johan, Karin, Kenji och Sara har olika släktskap). Det är inte ändrat.
-- Bilden till *varningstriangel* är inte kontrollerad mot den nya definitionen (bilder ingick inte).
-- `npm run typecheck`, `npm test`, bygget och e2e har inte körts (inga paket installerade, ingen nätåtkomst). `validateContent` och `checkVocabulary` har körts över allt innehåll utan fel, och modulindexet är omgenererat.
+- Tio testfiler kräver IndexedDB eller en webbläsarmiljö (lagring, repetition, modulflöde, backup, katalog, utvecklarverktyg, tre gränssnittstester) och är inte körda. `npm run typecheck`, bygget och e2e är inte heller körda. Grenen ändrar ingen kod, bara innehållsfiler.
 
 ## Osläppt – 2026-11-16: språkgranskning av *Vardag & hem*
 
@@ -83,12 +88,14 @@ Alla 252 moduler i *Vardag & hem* (R01) är genomlästa: lästexter, frågor, sv
 - Japanska definitioner, förklaringar och användningsnoter för samma 3 774 betydelser är jämförda med de svenska. De stämde nästan överallt; fem rättningar: *miljard* (1000百万 → 10億), *klänning* (*tröja* översatt som セーター), *tonfisk* (noten sa sushi i stället för färsk), *barnvagn* (noten *Detta gäller …* syftade inte på något) och den svenska definitionen av *fasad* (*Ett hus yta*).
 - *ton* (vikt) har nu pluralformen *tonnen*. *tonen* (av *en ton*, tonfall) ligger i stället i grundordförrådets `irregularForms`, eftersom 17 moduler utanför *Vardag & hem* använder formen.
 
-### Inte gjort
-- *tång* (redskap) saknar pluralformerna *tänger*, *tängerna*. Den delar ordpost med *tång* (i havet), och betydelse-ID:t `s.tång.2` måste börja med ordpostens ID, så betydelsen kan inte få en egen ordpost utan att ett publicerat ID byts.
-- Furigana (läsningarna inom `{漢字|かんじ}`) är inte kontrollerade tecken för tecken.
-- Berättelsen hänger inte ihop mellan ämnesgrupperna: radhuset köps i *Bostadstyper & rum*, men i *Hyra, köpa & grannar* hyr paret en lägenhet och köper en bostadsrätt, och i *Resor & lokaltrafik* har Aiko, Erik och Leo andra roller. Det kräver omskrivning och ett beslut av produktägaren.
-- `npm test` och bygget har inte körts i den här sessionen (inga paket installerade). `validateContent` och `checkVocabulary` har körts över allt innehåll utan fel, och modulindexet är omgenererat.
+### Uppföljning 2026-11-17: listan ”inte gjort” åtgärdad
+- *tång* har fått pluralformerna *tänger*, *tängerna*, och båda betydelserna har en användningsnot som säger vilken betydelse pluralen hör till. Ordposten och ID:na är oförändrade.
+- Bostadsberättelsen hänger ihop: Aiko och Erik bor i radhuset. De fem modulerna i *Hyra, köpa & grannar* där ett par hyr lägenhet och köper bostadsrätt handlar nu om Eriks syster Lisa och hennes sambo Emil.
+- Rollerna i *Resor & lokaltrafik*: Erik är alltid Aikos man och Leo alltid ett barn. Yuis vän och den vuxne Leo heter Jonas (elva moduler), sextonåringen i *Hjälmar och reflexer* heter Mei, och i *Avstånd och riktningar* letar Aiko stuga med Erik.
+- Furigana är kontrollerade, se uppföljningen under *Människan & hälsa*.
 
+### Inte gjort
+- Samma som för *Människan & hälsa*: tio testfiler, typkontroll, bygge och e2e är inte körda.
 
 ## 0.46.0 – 2026-11-16
 

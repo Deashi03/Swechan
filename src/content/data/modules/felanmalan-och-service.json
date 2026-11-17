@@ -1,7 +1,7 @@
 {
  "id": "m.felanmalan-och-service",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Felanmälan och service",
  "titleJa": "{修理依頼|しゅうりいらい}とサービス",
  "descriptionSv": "När något är trasigt: felanmälan, vicevärd, fastighetsskötare, jour, säkringar och lås.",
@@ -86,11 +86,11 @@
   "titleSv": "Kallt i sovrummet",
   "paragraphs": [
    "En morgon i november är det kallt i sovrummet. Elementet under fönstret är kallt, fast de andra elementen är varma.",
-   "Aiko gör en felanmälan på hyresvärdens hemsida. Hon skriver vad som är fel och får ett nummer på sitt ärende. ”Vi åtgärdar felet inom tre dagar”, står det.",
-   "Samma kväll går en säkring och halva lägenheten blir mörk. Erik går ut i hallen och öppnar elcentralen. Han byter säkringen och lampan lyser igen.",
-   "Nästa dag ringer vicevärden. ”Vår fastighetsskötare kommer på torsdag. Har han lov att gå in med huvudnyckeln om ni inte är hemma?” ”Ja, men jag kan också släppa in honom”, säger Aiko.",
+   "Eriks syster Lisa gör en felanmälan på hyresvärdens hemsida. Hon skriver vad som är fel och får ett nummer på sitt ärende. ”Vi åtgärdar felet inom tre dagar”, står det.",
+   "Samma kväll går en säkring och halva lägenheten blir mörk. Hennes sambo Emil går ut i hallen och öppnar elcentralen. Han byter säkringen och lampan lyser igen.",
+   "Nästa dag ringer vicevärden. ”Vår fastighetsskötare kommer på torsdag. Har han lov att gå in med huvudnyckeln om ni inte är hemma?” ”Ja, men jag kan också släppa in honom”, säger Lisa.",
    "Vicevärden berättar också om jouren. ”Om något akut händer, till exempel en stor läcka, kan ni ringa jouren dygnet runt.”",
-   "På kvällen kan Erik inte låsa dörren. Låset är trasigt. Han felanmäler det, men på natten är det akut, så han ringer en låssmed."
+   "På kvällen kan Emil inte låsa dörren. Låset är trasigt. Han felanmäler det, men på natten är det akut, så han ringer en låssmed."
   ],
   "questions": [
    {
@@ -112,7 +112,7 @@
     "kind": "choice",
     "id": "q2",
     "focus": "detail",
-    "promptSv": "Hur gör Aiko felanmälan?",
+    "promptSv": "Hur gör Lisa felanmälan?",
     "options": [
      "Hon ringer jouren",
      "Hon skriver en lapp",
@@ -120,14 +120,14 @@
      "Hon går till vicevärden"
     ],
     "correctIndex": 2,
-    "explanationSv": "Aiko gör en felanmälan på hyresvärdens hemsida.",
+    "explanationSv": "Lisa gör en felanmälan på hyresvärdens hemsida.",
     "explanationJa": "{大家|おおや}のウェブサイトで{届|とど}け{出|で}ます。"
    },
    {
     "kind": "truefalse",
     "id": "q3",
     "focus": "detail",
-    "statementSv": "Erik byter en säkring i elcentralen.",
+    "statementSv": "Emil byter en säkring i elcentralen.",
     "correct": true,
     "explanationSv": "Han byter säkringen och lampan lyser igen.",
     "explanationJa": "ヒューズを{替|か}えました。"
@@ -151,7 +151,7 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Erik väntar på att fastighetsskötaren ska laga låset.",
+    "statementSv": "Emil väntar på att fastighetsskötaren ska laga låset.",
     "correct": false,
     "explanationSv": "På natten är det akut, så han ringer en låssmed.",
     "explanationJa": "{緊急|きんきゅう}なので{鍵屋|かぎや}に{電話|でんわ}します。"

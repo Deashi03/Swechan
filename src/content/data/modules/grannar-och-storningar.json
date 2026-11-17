@@ -1,7 +1,7 @@
 {
  "id": "m.grannar-och-storningar",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Grannar och störningar",
  "titleJa": "{近所付|きんじょづ}き{合|あ}いと{騒音|そうおん}",
  "descriptionSv": "Grannar och störningar: ljud, klagomål, ordningsregler och att visa hänsyn.",
@@ -86,19 +86,19 @@
  "reading": {
   "titleSv": "Musik genom väggen",
   "paragraphs": [
-   "Huset där Aiko och Erik bor är lyhört. En lördag kväll festar grannarna under dem. Basen dunkar genom golvet och de hör oväsen ända till klockan två.",
-   "Aiko kan inte sova. ”Ska vi ringa hyresvärden och göra ett klagomål?” frågar hon. ”Nej, vi pratar med dem först”, säger Erik.",
-   "Nästa dag knackar de på. ”Hej, vi bor ovanför er. Det var lite högt i går”, säger Erik vänligt. ”Ursäkta om vi störde er! Vi tänkte inte på det”, säger grannen. ”Vi ska sänka musiken nästa gång.”",
+   "Huset där Eriks syster Lisa och hennes sambo Emil bor är lyhört. En lördag kväll festar grannarna under dem. Basen dunkar genom golvet och de hör oväsen ända till klockan två.",
+   "Lisa kan inte sova. ”Ska vi ringa hyresvärden och göra ett klagomål?” frågar hon. ”Nej, vi pratar med dem först”, säger Emil.",
+   "Nästa dag knackar de på. ”Hej, vi bor ovanför er. Det var lite högt i går”, säger Emil vänligt. ”Ursäkta om vi störde er! Vi tänkte inte på det”, säger grannen. ”Vi ska sänka musiken nästa gång.”",
    "På anslagstavlan i trappan sitter ordningsreglerna. Där står det att man inte får borra kvällstid och att det ska vara tyst efter klockan tio.",
    "Det finns också en annan störning: en hund på tredje våningen skäller när ägaren är borta.",
-   "Erik skriver en vänlig lapp till hundens ägare. ”Om alla visar lite hänsyn blir det god grannsämja”, säger han."
+   "Emil skriver en vänlig lapp till hundens ägare. ”Om alla visar lite hänsyn blir det god grannsämja”, säger han."
   ],
   "questions": [
    {
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "Vad hör Aiko och Erik på lördagen?",
+    "promptSv": "Vad hör Lisa och Emil på lördagen?",
     "options": [
      "En hund som skäller",
      "Musik från en fest",
@@ -113,9 +113,9 @@
     "kind": "truefalse",
     "id": "q2",
     "focus": "detail",
-    "statementSv": "Erik vill först prata med grannarna.",
+    "statementSv": "Emil vill först prata med grannarna.",
     "correct": true,
-    "explanationSv": "”Nej, vi pratar med dem först”, säger Erik.",
+    "explanationSv": "”Nej, vi pratar med dem först”, säger Emil.",
     "explanationJa": "まず{直接話|ちょくせつはな}したいと{思|おも}っています。"
    },
    {
@@ -126,7 +126,7 @@
     "options": [
      "Att de ska flytta",
      "Att de inte hörde något",
-     "Att Aiko ska ringa hyresvärden",
+     "Att Lisa ska ringa hyresvärden",
      "Att de ska sänka musiken nästa gång"
     ],
     "correctIndex": 3,
@@ -152,9 +152,9 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Erik är arg och skriver en arg lapp.",
+    "statementSv": "Emil är arg och skriver en arg lapp.",
     "correct": false,
-    "explanationSv": "Erik skriver en vänlig lapp.",
+    "explanationSv": "Emil skriver en vänlig lapp.",
     "explanationJa": "{丁寧|ていねい}なメモを{書|か}きます。"
    }
   ],
