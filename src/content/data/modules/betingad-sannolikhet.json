@@ -1,0 +1,173 @@
+{
+ "id": "m.betingad-sannolikhet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Betingad sannolikhet",
+ "titleJa": "{条件付|じょうけんつ}き{確率|かくりつ}",
+ "descriptionSv": "Betingad sannolikhet: betingad sannolikhet, sannolikhet, villkor, träddiagram, i så fall, snabbtest, provsvar, falskt positiv, blodprov, screening, fyrfältstabell, sällsynt, samband, osäkerhet, urval och risk.",
+ "descriptionJa": "{条件付|じょうけんつ}き{確率|かくりつ}：{条件付|じょうけんつ}き{確率|かくりつ}、{確率|かくりつ}、{条件|じょうけん}、{樹形図|じゅけいず}、その{場合|ばあい}は、{迅速検査|じんそくけんさ}、{検査結果|けんさけっか}、{偽陽性|ぎようせい}の、{血液検査|けつえきけんさ}、スクリーニング、{四分割表|よんぶんかつひょう}、まれな、{関係|かんけい}、{不確実性|ふかくじつせい}、{標本|ひょうほん}、リスク。",
+ "categoryId": "R06-A02-T04",
+ "tags": [
+  "matematik",
+  "sannolikhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.handelser-och-sannolikheter"
+ ],
+ "related": [],
+ "recommendedOrder": 3243,
+ "words": [
+  {
+   "senseId": "s.betingad-sannolikhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sannolikhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träddiagram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-så-fall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snabbtest.1",
+   "active": true
+  },
+  {
+   "senseId": "s.provsvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.falskt-positiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.screening.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fyrfältstabell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sällsynt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.osäkerhet.2",
+   "active": false
+  },
+  {
+   "senseId": "s.urval.3",
+   "active": false
+  },
+  {
+   "senseId": "s.risk.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad betyder ett positivt test?",
+  "paragraphs": [
+   "Mika arbetar på en vårdcentral. En dag kommer en patient som har gjort ett snabbtest hemma. Testet är positivt, och patienten är orolig. – Betyder det att jag är sjuk? frågar hon.",
+   "Mika förklarar att svaret beror på en betingad sannolikhet: hur stor chans är det att man är sjuk, om man vet att testet är positivt? Villkoret är alltså ett positivt test. Det är inte samma sak som hur ofta testet visar rätt. Sjukdomen är sällsynt. Bara en av hundra har den.",
+   "Mika ritar ett träddiagram, och sedan en fyrfältstabell för tusen personer. Ungefär tio av dem är sjuka, och testet hittar nio av dem. Det finns ett samband mellan testet och sjukdomen, men det är inte perfekt. Testet ger också falskt positiva svar för fem procent av de friska, alltså för ungefär femtio personer.",
+   "Av de ungefär sextio som får ett positivt svar är alltså bara nio sjuka. Sannolikheten att vara sjuk när testet är positivt är ungefär femton procent. Samma sak gäller vid en screening av ett stort urval friska personer.",
+   "– I så fall är risken inte så stor, säger patienten. – Nej, men vi tar ett blodprov för att vara säkra, säger Mika. Det finns alltid en viss osäkerhet. Två dagar senare kommer provsvaret: negativt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har patienten gjort hemma?",
+    "options": [
+     "Ett blodprov",
+     "Ett snabbtest",
+     "En screening",
+     "Ett träddiagram"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "En dag kommer en patient som har gjort ett snabbtest hemma.",
+    "explanationJa": "{家|いえ}で{簡易検査|かんいけんさ}をしました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur vanlig är sjukdomen?",
+    "options": [
+     "Hälften har den",
+     "Fem av hundra har den",
+     "En av hundra har den",
+     "Ingen har den"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Bara en av hundra har den.",
+    "explanationJa": "100{人|にん}に1{人|ひとり}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Ungefär hur många av de tusen personerna får ett falskt positivt svar?",
+    "options": [
+     "Ungefär nio",
+     "Ungefär tio",
+     "Ungefär sextio",
+     "Ungefär femtio"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… för fem procent av de friska, alltså för ungefär femtio personer.",
+    "explanationJa": "およそ50{人|にん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Ett positivt snabbtest betyder här att man nästan säkert är sjuk.",
+    "correct": false,
+    "explanationSv": "Sannolikheten att vara sjuk när testet är positivt är ungefär femton procent.",
+    "explanationJa": "{病気|びょうき}である{確率|かくりつ}は、およそ15パーセントだけです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Patienten var inte sjuk.",
+    "correct": true,
+    "explanationSv": "Två dagar senare kommer provsvaret: negativt.",
+    "explanationJa": "{血液検査|けつえきけんさ}の{結果|けっか}は{陰性|いんせい}でした。"
+   }
+  ],
+  "factSources": [
+   "Påhittade siffror för en tänkt sjukdom och ett tänkt test (förekomst 1 %, testet hittar 90 % av de sjuka, 5 % falskt positiva bland friska). Räkningen är kontrollerad: av 1 000 personer är cirka 10 sjuka (9 positiva) och 990 friska (cirka 50 falskt positiva), så P(sjuk | positiv) ≈ 9/59 ≈ 15 %."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tester, provsvar och hur ny information ändrar en sannolikhet.",
+  "discussionPoints": [
+   "Har du gjort ett snabbtest? Vad kände du när du väntade på svaret?",
+   "Varför kan ett positivt test vara fel?",
+   "Om det är molnigt på morgonen, hur ändras då sannolikheten för regn?",
+   "Ge ett exempel från vardagen där ny information ändrar din bedömning."
+  ]
+ }
+}

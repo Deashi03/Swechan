@@ -1,0 +1,173 @@
+{
+ "id": "m.begynnelsevillkor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Begynnelsevillkor",
+ "titleJa": "{初期条件|しょきじょうけん}",
+ "descriptionSv": "Begynnelsevillkor: villkor, tidpunkt, mätvärde, entydig, saldo, insättning, ränta, badkar, vattenkran, propp, fylla på, läcka, vattennivå, stoppur, nollställa och begynnelsevillkor.",
+ "descriptionJa": "{初期条件|しょきじょうけん}：{条件|じょうけん}、{時点|じてん}、{測定値|そくていち}、{一義的|いちぎてき}な、{残高|ざんだか}、{入金|にゅうきん}、{利子|りし}、{浴槽|よくそう}、{蛇口|じゃぐち}、{栓|せん}、{補充|ほじゅう}する、もれる、{水位|すいい}、ストップウォッチ、ゼロに{戻|もど}す、{初期条件|しょきじょうけん}。",
+ "categoryId": "R06-A02-T02",
+ "tags": [
+  "matematik",
+  "differentialekvationer"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.differentialekvationer"
+ ],
+ "related": [],
+ "recommendedOrder": 3226,
+ "words": [
+  {
+   "senseId": "s.villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.entydig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.saldo.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insättning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ränta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.badkar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenkran.1",
+   "active": true
+  },
+  {
+   "senseId": "s.propp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fylla-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattennivå.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stoppur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nollställa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.begynnelsevillkor.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Badkaret och sparkontot",
+  "paragraphs": [
+   "Saki läser en kurs i differentialekvationer. Veckans uppgift handlar om ett badkar. Vattenkranen fyller på 12 liter per minut, men proppen är dålig, så vatten läcker ut hela tiden. Ju högre vattennivån är, desto mer vatten läcker ut.",
+   "Saki skriver en differentialekvation för mängden vatten. Hon hittar den allmänna lösningen, men den innehåller en konstant C. – Det finns ju oändligt många lösningar, säger hon till sin kompis Omar. Vilken är den rätta?",
+   "– Du behöver ett begynnelsevillkor, svarar Omar. Hur mycket vatten fanns i badkaret när du började? I uppgiften står det att badkaret innehöll 20 liter vid tidpunkten t = 0. Det villkoret gör att C får ett bestämt värde, och då blir lösningen entydig.",
+   "För att testa lösningen gör Saki ett försök hemma. Hon nollställer ett stoppur, öppnar kranen och mäter vattnet varje minut. Hennes mätvärden ligger nära kurvan, men inte exakt på den.",
+   "Nästa uppgift handlar om ett sparkonto. Omar sätter in 10 000 kronor, och räntan läggs till hela tiden. Här är begynnelsevillkoret saldot på dagen för insättningen. – Det är samma sak som med badkaret, säger Saki. Man måste veta var man börjar för att veta var man hamnar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket vatten fyller kranen på varje minut?",
+    "options": [
+     "20 liter",
+     "10 liter",
+     "12 liter",
+     "2 liter"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Vattenkranen fyller på 12 liter per minut …",
+    "explanationJa": "{蛇口|じゃぐち}からは1{分|ぷん}に 12 リットル{入|はい}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför räcker inte den allmänna lösningen för Saki?",
+    "options": [
+     "Den är fel",
+     "Den innehåller en konstant C och ger många lösningar",
+     "Den handlar om ett sparkonto",
+     "Den har inget svar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon hittar den allmänna lösningen, men den innehåller en konstant C.",
+    "explanationJa": "{一般解|いっぱんかい}には{定数|ていすう} C があり、{解|かい}が{無数|むすう}にあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilket begynnelsevillkor står i uppgiften om badkaret?",
+    "options": [
+     "Badkaret är fullt efter 12 minuter",
+     "Proppen är dålig",
+     "Vattnet är 40 grader",
+     "Det fanns 20 liter vatten när t = 0"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… badkaret innehöll 20 liter vid tidpunkten t = 0.",
+    "explanationJa": "t = 0 のときに 20 リットルの{水|みず}がありました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sakis mätvärden ligger exakt på kurvan.",
+    "correct": false,
+    "explanationSv": "Hennes mätvärden ligger nära kurvan, men inte exakt på den.",
+    "explanationJa": "{測定値|そくていち}は{曲線|きょくせん}に{近|ちか}いですが、ぴったりではありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "För sparkontot är begynnelsevillkoret saldot på dagen för insättningen.",
+    "correct": true,
+    "explanationSv": "Här är begynnelsevillkoret saldot på dagen för insättningen.",
+    "explanationJa": "{預金|よきん}の{初期条件|しょきじょうけん}は、{入金|にゅうきん}した{日|ひ}の{残高|ざんだか}です。"
+   }
+  ],
+  "factSources": [
+   "Att ett begynnelsevillkor bestämmer konstanten i den allmänna lösningen så att lösningen blir entydig är standardinnehåll i gymnasiets Matematik 5; uppgifterna om badkaret och sparkontot är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om varför man måste veta hur något började.",
+  "discussionPoints": [
+   "Hur lång tid tar det att fylla ett badkar, tror du?",
+   "Vilka saker i vardagen mäter du med ett stoppur eller en klocka?",
+   "Varför är det viktigt att veta saldot när man vill räkna ut räntan?",
+   "Kan du ge ett exempel från ditt eget liv där början bestämde hur det slutade?"
+  ]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "id": "m.optimeringsproblem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Optimeringsproblem",
+ "titleJa": "{最適化|さいてきか}の{問題|もんだい}",
+ "descriptionSv": "Optimeringsproblem: stängsel, omkrets, mått, bredd, area, optimal, rimlig, burk, volym, minimera, materialåtgång, kartong, maximera, vinst, intäkt, kostnad och avvägning.",
+ "descriptionJa": "{最適化|さいてきか}の{問題|もんだい}：{柵|さく}、{周囲|しゅうい}の{長|なが}さ、{寸法|すんぽう}、{幅|はば}、{面積|めんせき}、{最適|さいてき}な、{妥当|だとう}な、{缶|かん}、{体積|たいせき}、{最小化|さいしょうか}する、{材料|ざいりょう}の{使用量|しようりょう}、ボール{箱|ばこ}、{最大化|さいだいか}する、{利益|りえき}、{収益|しゅうえき}、{費用|ひよう}、{比較検討|ひかくけんとう}。",
+ "categoryId": "R06-A02-T01",
+ "tags": [
+  "matematik",
+  "analys"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.extremvarden"
+ ],
+ "related": [],
+ "recommendedOrder": 3217,
+ "words": [
+  {
+   "senseId": "s.stängsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omkrets.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mått.2",
+   "active": true
+  },
+  {
+   "senseId": "s.bredd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.area.1",
+   "active": true
+  },
+  {
+   "senseId": "s.optimal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rimlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.burk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volym.2",
+   "active": true
+  },
+  {
+   "senseId": "s.minimera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.materialåtgång.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kartong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maximera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intäkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvägning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Den bästa lösningen",
+  "paragraphs": [
+   "Anders har en liten gård och 40 meter stängsel. Han vill sätta upp stängslet runt en bit mark åt sina får, och marken ska ha formen av en rektangel. Omkretsen blir alltså 40 meter. Men vilka mått ger störst area?",
+   "Om bredden är x meter, blir längden 20 − x meter, och arean blir x · (20 − x). Anders deriverar och ser att derivatan är noll när x = 10. Det optimala området är alltså en kvadrat med sidan 10 meter och arean 100 kvadratmeter. Svaret är rimligt: en lång och smal rektangel får mycket mindre area.",
+   "Hans dotter Elin arbetar på en fabrik som gör burkar av plåt. Varje burk ska ha volymen en liter. Fabriken vill minimera materialåtgången, alltså använda så lite plåt som möjligt. Elin räknar ut att den optimala burken är lika hög som den är bred. Burkarna packas sedan i kartonger.",
+   "Fabriken vill också maximera sin vinst. Om priset för en burk är högt, får fabriken en stor intäkt för varje burk, men då köper kunderna färre burkar. Om priset är lågt säljer fabriken många burkar, men kostnaden för varje burk är densamma. Att hitta rätt pris är en avvägning.",
+   "– Det är samma matematik på gården och på fabriken, säger Elin. Man skriver en funktion, deriverar och letar efter det största eller minsta värdet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket stängsel har Anders?",
+    "options": [
+     "20 meter",
+     "10 meter",
+     "40 meter",
+     "100 meter"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Anders har en liten gård och 40 meter stängsel.",
+    "explanationJa": "40 メートルの{柵|さく}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken form har det optimala området?",
+    "options": [
+     "En lång och smal rektangel",
+     "En cirkel",
+     "En triangel",
+     "En kvadrat med sidan 10 meter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det optimala området är alltså en kvadrat med sidan 10 meter …",
+    "explanationJa": "{一辺|いっぺん} 10 メートルの{正方形|せいほうけい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad vill fabriken minimera?",
+    "options": [
+     "Materialåtgången",
+     "Volymen",
+     "Antalet kunder",
+     "Sin vinst"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Fabriken vill minimera materialåtgången, alltså använda så lite plåt som möjligt.",
+    "explanationJa": "{材料|ざいりょう}の{使用量|しようりょう}を{最小|さいしょう}にしたいと{考|かんが}えています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Den optimala burken är lika hög som den är bred.",
+    "correct": true,
+    "explanationSv": "Elin räknar ut att den optimala burken är lika hög som den är bred.",
+    "explanationJa": "{最適|さいてき}な{缶|かん}は、{高|たか}さと{幅|はば}が{同|おな}じです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Med ett mycket högt pris blir fabrikens vinst alltid störst.",
+    "correct": false,
+    "explanationSv": "… men då köper kunderna färre burkar. … Att hitta rätt pris är en avvägning.",
+    "explanationJa": "{値段|ねだん}が{高|たか}すぎると{買|か}う{人|ひと}が{減|へ}るので、ちょうどよい{値段|ねだん}を{探|さが}す{必要|ひつよう}があります。"
+   }
+  ],
+  "factSources": [
+   "En rektangel med given omkrets får störst area när den är en kvadrat (omkrets 40 m ger sidan 10 m och arean 100 m²).",
+   "En sluten cylinder med given volym får minst yta när höjden är lika med diametern. Gården och fabriken är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att hitta den bästa lösningen i vardagen och på jobbet.",
+  "discussionPoints": [
+   "Vad försöker du maximera eller minimera i din vardag, till exempel tid eller pengar?",
+   "Kan du ge ett exempel på en avvägning som du har gjort nyligen?",
+   "Vad är en optimal temperatur för dig när du sover?",
+   "Har du löst ett optimeringsproblem i skolan? Vad handlade det om?"
+  ]
+ }
+}

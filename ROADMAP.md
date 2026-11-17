@@ -168,6 +168,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.48 – Matematikens grunder (klar)
 - 42 nya moduler i Matematik & naturvetenskap → Matematikens grunder med 317 nya ordbilder. 46 ord saknar bild efter två blindtestomgångar.
 
+## v0.49 – Avancerad matematik (klar)
+- 42 nya moduler i Matematik & naturvetenskap → Avancerad matematik med 224 nya ordbilder. 41 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

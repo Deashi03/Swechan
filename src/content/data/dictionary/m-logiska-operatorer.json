@@ -1,0 +1,322 @@
+{
+ "entries": [
+  {
+   "id": "e.konjunktion",
+   "lemma": "konjunktion",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "konjunktion",
+    "defSg": "konjunktionen",
+    "indefPl": "konjunktioner",
+    "defPl": "konjunktionerna"
+   },
+   "senses": [
+    {
+     "id": "s.konjunktion.1",
+     "ja": "（{論理|ろんり}の）{連言|れんげん}、「かつ」",
+     "defSv": "I logik: två påståenden som kopplas ihop med \"och\". Hela påståendet är sant bara om båda delarna är sanna.",
+     "defJa": "{論理|ろんり}で、{二|ふた}つの{命題|めいだい}を「かつ」で{結|むす}んだもの。{両方|りょうほう}が{真|しん}のときだけ{全体|ぜんたい}が{真|しん}になる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "\"Det är mörkt och det regnar\" är en konjunktion.",
+       "ja": "「{暗|くら}くて、かつ{雨|あめ}が{降|ふ}っている」は{連言|れんげん}です。"
+      }
+     ],
+     "labelSv": "i logik",
+     "explanation": {
+      "sv": "En konjunktion är ett påstående av typen \"A och B\". Den är sann bara när både A och B är sanna. Man skriver den A ∧ B. Det fungerar som två strömbrytare efter varandra: lampan lyser bara om båda är på. I grammatik betyder konjunktion ett ord som och, men eller eller, som kopplar ihop delar av en mening.",
+      "ja": "「konjunktion」は「AかつB」という{形|かたち}の{命題|めいだい}です。AとBの{両方|りょうほう}が{真|しん}のときだけ{真|しん}になります。A ∧ Bと{書|か}きます。{直列|ちょくれつ}につないだ{二|ふた}つのスイッチのようなもので、{両方|りょうほう}がオンのときだけ{電灯|でんとう}がつきます。{文法|ぶんぽう}では「och」「men」「eller」などの{接続詞|せつぞくし}のことも「konjunktion」と{言|い}います。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.disjunktion",
+   "lemma": "disjunktion",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "disjunktion",
+    "defSg": "disjunktionen",
+    "indefPl": "disjunktioner",
+    "defPl": "disjunktionerna"
+   },
+   "senses": [
+    {
+     "id": "s.disjunktion.1",
+     "ja": "（{論理|ろんり}の）{選言|せんげん}、「または」",
+     "defSv": "I logik: två påståenden som kopplas ihop med \"eller\". Hela påståendet är sant om minst en av delarna är sann.",
+     "defJa": "{論理|ろんり}で、{二|ふた}つの{命題|めいだい}を「または」で{結|むす}んだもの。{少|すく}なくとも{一方|いっぽう}が{真|しん}なら{全体|ぜんたい}が{真|しん}になる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "\"Jag tar bussen eller cykeln\" är en disjunktion.",
+       "ja": "「バスか{自転車|じてんしゃ}で{行|い}く」は{選言|せんげん}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "En disjunktion är ett påstående av typen \"A eller B\". Den är sann om A är sann, om B är sann eller om båda är sanna. Man skriver den A ∨ B. Det fungerar som två strömbrytare bredvid varandra: det räcker att en av dem är på för att lampan ska lysa.",
+      "ja": "「disjunktion」は「AまたはB」という{形|かたち}の{命題|めいだい}です。Aが{真|しん}でも、Bが{真|しん}でも、{両方|りょうほう}が{真|しん}でも{真|しん}になります。A ∨ Bと{書|か}きます。{並列|へいれつ}につないだ{二|ふた}つのスイッチのようなもので、どちらか{一方|いっぽう}がオンなら{電灯|でんとう}がつきます。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.negation",
+   "lemma": "negation",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "negation",
+    "defSg": "negationen",
+    "indefPl": "negationer",
+    "defPl": "negationerna"
+   },
+   "senses": [
+    {
+     "id": "s.negation.1",
+     "ja": "{否定|ひてい}",
+     "defSv": "Ett påstående med \"inte\", som är sant när det ursprungliga påståendet är falskt.",
+     "defJa": "「〜ない」をつけた{命題|めいだい}。もとの{命題|めいだい}が{偽|ぎ}のときに{真|しん}になる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Negationen av \"lampan lyser\" är \"lampan lyser inte\".",
+       "ja": "「{電灯|でんとう}がついている」の{否定|ひてい}は「{電灯|でんとう}がついていない」です。"
+      }
+     ],
+     "explanation": {
+      "sv": "En negation vänder på sanningsvärdet: om A är sant är \"inte A\" falskt, och tvärtom. Man skriver ¬A. Negationen av \"alla katter är svarta\" är inte \"alla katter är vita\", utan \"minst en katt är inte svart\". Ordet används också i grammatik om ord som inte och aldrig.",
+      "ja": "「negation」は{真理値|しんりち}を{逆|ぎゃく}にします。Aが{真|しん}なら「Aでない」は{偽|ぎ}で、その{逆|ぎゃく}も{同|おな}じです。¬Aと{書|か}きます。「すべての{猫|ねこ}は{黒|くろ}い」の{否定|ひてい}は「すべての{猫|ねこ}は{白|しろ}い」ではなく、「{黒|くろ}くない{猫|ねこ}が{少|すく}なくとも{一匹|いっぴき}いる」です。{文法|ぶんぽう}では「inte」や「aldrig」などの{否定語|ひていご}にも{使|つか}います。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.implikation",
+   "lemma": "implikation",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "implikation",
+    "defSg": "implikationen",
+    "indefPl": "implikationer",
+    "defPl": "implikationerna"
+   },
+   "senses": [
+    {
+     "id": "s.implikation.1",
+     "ja": "（{論理|ろんり}の）{含意|がんい}、「ならば」",
+     "defSv": "I logik: ett påstående av typen \"om A, så B\".",
+     "defJa": "{論理|ろんり}で、「AならばB」という{形|かたち}の{命題|めいだい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "\"Om det regnar, så blir gatan blöt\" är en implikation.",
+       "ja": "「{雨|あめ}が{降|ふ}れば{道|みち}がぬれる」は{含意|がんい}です。"
+      }
+     ],
+     "labelSv": "i logik",
+     "explanation": {
+      "sv": "En implikation säger att om A är sant, så är också B sant. Man skriver A ⇒ B. Implikationen är bara falsk när A är sant men B är falskt. Observera att den inte säger något om vad som händer när A är falskt. I vardagen betyder implikation också en följd eller konsekvens av något.",
+      "ja": "「implikation」は、Aが{真|しん}ならBも{真|しん}だ、ということを{表|あらわ}します。A ⇒ Bと{書|か}きます。Aが{真|しん}でBが{偽|ぎ}のときだけ{偽|ぎ}になります。Aが{偽|ぎ}のときについては{何|なに}も{言|い}っていないことに{注意|ちゅうい}しましょう。ふだんの{言葉|ことば}では「（{何|なに}かの）{影響|えいきょう}、{結果|けっか}」という{意味|いみ}もあります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.ekvivalens",
+   "lemma": "ekvivalens",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "ekvivalens",
+    "defSg": "ekvivalensen",
+    "indefPl": "ekvivalenser",
+    "defPl": "ekvivalenserna"
+   },
+   "senses": [
+    {
+     "id": "s.ekvivalens.1",
+     "ja": "{同値|どうち}",
+     "defSv": "I logik: när två påståenden alltid är sanna eller falska samtidigt, \"A om och endast om B\".",
+     "defJa": "{論理|ろんり}で、{二|ふた}つの{命題|めいだい}がいつも{同時|どうじ}に{真|しん}または{偽|ぎ}になること。「AのときかつそのときにかぎりB」。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "\"Ett tal är jämnt om och endast om det är delbart med 2\" är en ekvivalens.",
+       "ja": "「{数|かず}が{偶数|ぐうすう}であるのは、2で{割|わ}り{切|き}れるときかつそのときにかぎる」は{同値|どうち}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "En ekvivalens betyder att implikationen gäller åt båda hållen: A ⇒ B och B ⇒ A. Man skriver A ⇔ B och läser \"A om och endast om B\". Två sådana påståenden säger egentligen samma sak med olika ord.",
+      "ja": "「ekvivalens」は、{含意|がんい}が{両方向|りょうほうこう}に{成|な}り{立|た}つこと、つまりA ⇒ BかつB ⇒ Aです。A ⇔ Bと{書|か}き、「A om och endast om B（AのときかつそのときにかぎりB）」と{読|よ}みます。{同値|どうち}な{二|ふた}つの{命題|めいだい}は、{実際|じっさい}には{同|おな}じことを{別|べつ}の{言葉|ことば}で{言|い}っています。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.omvändning",
+   "lemma": "omvändning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "omvändning",
+    "defSg": "omvändningen",
+    "indefPl": "omvändningar",
+    "defPl": "omvändningarna"
+   },
+   "senses": [
+    {
+     "id": "s.omvändning.1",
+     "ja": "（{命題|めいだい}の）{逆|ぎゃく}",
+     "defSv": "I logik: påståendet man får när man byter plats på delarna i en implikation, så att \"om A, så B\" blir \"om B, så A\".",
+     "defJa": "{論理|ろんり}で、「AならばB」の{前後|ぜんご}を{入|い}れ{替|か}えた「BならばA」という{命題|めいだい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Omvändningen av \"om det regnar, så är gatan blöt\" är inte alltid sann.",
+       "ja": "「{雨|あめ}が{降|ふ}れば{道|みち}がぬれる」の{逆|ぎゃく}は、いつも{正|ただ}しいとはかぎりません。"
+      }
+     ],
+     "labelSv": "i logik",
+     "explanation": {
+      "sv": "Omvändningen av \"om A, så B\" är \"om B, så A\". Även om en implikation är sann behöver omvändningen inte vara det: om det regnar är gatan blöt, men en blöt gata kan också bero på att någon har spolat den. Att tro att omvändningen alltid gäller är ett vanligt tankefel.",
+      "ja": "「AならばB」の「omvändning（{逆|ぎゃく}）」は「BならばA」です。もとの{含意|がんい}が{正|ただ}しくても、{逆|ぎゃく}が{正|ただ}しいとはかぎりません。{雨|あめ}が{降|ふ}れば{道|みち}はぬれますが、{道|みち}がぬれているのは{誰|だれ}かが{水|みず}をまいたからかもしれません。{逆|ぎゃく}がいつも{成|な}り{立|た}つと{思|おも}いこむのは、よくある{考|かんが}え{違|ちが}いです。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.sanningstabell",
+   "lemma": "sanningstabell",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "sanningstabell",
+    "defSg": "sanningstabellen",
+    "indefPl": "sanningstabeller",
+    "defPl": "sanningstabellerna"
+   },
+   "senses": [
+    {
+     "id": "s.sanningstabell.1",
+     "ja": "{真理値表|しんりちひょう}",
+     "defSv": "En tabell som visar om ett sammansatt påstående är sant eller falskt för alla möjliga kombinationer av sant och falskt i delarna.",
+     "defJa": "{部分|ぶぶん}の{真|しん}と{偽|ぎ}のすべての{組|く}み{合|あ}わせについて、{全体|ぜんたい}の{命題|めいだい}が{真|しん}か{偽|ぎ}かを{示|しめ}す{表|ひょう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Sanningstabellen för \"A och B\" har fyra rader.",
+       "ja": "「AかつB」の{真理値表|しんりちひょう}は{四行|よんぎょう}あります。"
+      }
+     ],
+     "explanation": {
+      "sv": "I en sanningstabell skriver man alla möjliga kombinationer av sant och falskt i en rad var. Med två påståenden blir det fyra rader, med tre påståenden åtta rader. I den sista kolumnen ser man om hela påståendet är sant. Ofta skriver man 1 för sant och 0 för falskt.",
+      "ja": "「sanningstabell」では、{真|しん}と{偽|ぎ}のあり{得|う}る{組|く}み{合|あ}わせを{一行|いちぎょう}ずつ{書|か}きます。{命題|めいだい}が{二|ふた}つなら{四行|よんぎょう}、{三|みっ}つなら{八行|はちぎょう}になります。{最後|さいご}の{列|れつ}を{見|み}ると、{全体|ぜんたい}が{真|しん}かどうかがわかります。{真|しん}を1、{偽|ぎ}を0と{書|か}くこともよくあります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.antingen-eller",
+   "lemma": "antingen eller",
+   "pos": "phrase",
+   "level": "B1",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.antingen-eller.1",
+     "ja": "どちらか{一方|いっぽう}だけ",
+     "defSv": "Om två saker: den ena eller den andra, men inte båda.",
+     "defJa": "{二|ふた}つのうち、{一方|いっぽう}か{他方|たほう}のどちらかで、{両方|りょうほう}ではない。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Du får antingen glass eller kaka, inte båda.",
+       "ja": "アイスかケーキのどちらか{一方|いっぽう}だけですよ。{両方|りょうほう}はだめです。"
+      }
+     ],
+     "usageNote": {
+      "sv": "Orden står ofta isär i meningen: antingen … eller. I logik skiljer man det från vanligt eller, som också kan betyda båda.",
+      "ja": "{二|ふた}つの{語|ご}は{文|ぶん}の{中|なか}でよく{離|はな}れて{置|お}かれます：antingen … eller。{論理|ろんり}では、{両方|りょうほう}の{場合|ばあい}も{含|ふく}む{普通|ふつう}の「eller」と{区別|くべつ}します。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

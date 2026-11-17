@@ -1,0 +1,177 @@
+{
+ "id": "m.grafer-och-natverk",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Grafer och nätverk",
+ "titleJa": "グラフとネットワーク",
+ "descriptionSv": "Grafer och nätverk: tunnelbanekarta, graf, station, nod, kant, koppla ihop, korsning, knutpunkt, riktad graf, enkelriktad, avstånd, kortaste vägen, omväg, förbindelse, nätverk och sammanhängande.",
+ "descriptionJa": "グラフとネットワーク：{地下鉄|ちかてつ}の{路線図|ろせんず}、グラフ、{駅|えき}、{頂点|ちょうてん}、{辺|へん}、つなげる、{交差点|こうさてん}、{交通|こうつう}の{要所|ようしょ}、{有向|ゆうこう}グラフ、{一方通行|いっぽうつうこう}の、{距離|きょり}、{最短経路|さいたんけいろ}、{回|まわ}り{道|みち}、{交通|こうつう}の{便|びん}、ネットワーク、ひと{続|つづ}きの。",
+ "categoryId": "R06-A02-T05",
+ "tags": [
+  "matematik",
+  "diskret matematik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.bevismetoder"
+ ],
+ "related": [],
+ "recommendedOrder": 3254,
+ "words": [
+  {
+   "senseId": "s.tunnelbanekarta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.graf.2",
+   "active": true
+  },
+  {
+   "senseId": "s.station.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kant.2",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korsning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knutpunkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.riktad-graf.1",
+   "active": false
+  },
+  {
+   "senseId": "s.enkelriktad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortaste-vägen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbindelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanhängande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nätverk.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Allt hänger ihop",
+  "paragraphs": [
+   "En tunnelbanekarta är ett bra exempel på en graf i matematiken. Varje station är en nod, och varje sträcka mellan två stationer är en kant. Kartan visar inte exakt var stationerna ligger, bara hur de är kopplade ihop.",
+   "Grafteorin började år 1736, när matematikern Leonhard Euler funderade på sju broar i staden Königsberg. Kunde man ta en promenad över alla broar exakt en gång? Euler ritade landområdena som noder och broarna som kanter, och han visade att det inte gick.",
+   "En karta i mobilen räknar också med grafer. Korsningar och andra knutpunkter är noder, och gatorna är kanter. I en riktad graf har kanterna en riktning, precis som en enkelriktad gata. Varje kant kan dessutom få ett tal, till exempel avståndet i meter.",
+   "När du frågar efter vägen hem letar appen efter den kortaste vägen mellan två noder. Ibland föreslår den en omväg, om det är kö på den vanliga vägen. Ett flygbolag ser på samma sätt sina förbindelser mellan städer som en graf.",
+   "Även människor bildar nätverk. I ett socialt nätverk är varje person en nod, och en kant betyder att två personer känner varandra. Om man kan komma från vilken person som helst till vilken annan som helst längs kanterna, är grafen sammanhängande. Datorer i ett nätverk kan beskrivas på samma sätt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad motsvarar en station på tunnelbanekartan?",
+    "options": [
+     "En nod",
+     "En kant",
+     "En omväg",
+     "Ett avstånd"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Varje station är en nod …",
+    "explanationJa": "{駅|えき}は{頂点|ちょうてん}にあたります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad funderade Euler på år 1736?",
+    "options": [
+     "Hur långt det var mellan två städer",
+     "Om man kunde gå över sju broar exakt en gång var",
+     "Hur man ritar en tunnelbanekarta",
+     "Vilken bro som var längst"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Kunde man ta en promenad över alla broar exakt en gång?",
+    "explanationJa": "すべての{橋|はし}をちょうど{一回|いっかい}ずつ{渡|わた}れるかどうかです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är speciellt med en riktad graf?",
+    "options": [
+     "Den har inga noder",
+     "Kanterna har en riktning",
+     "Alla kanter är lika långa",
+     "Den visar bara broar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I en riktad graf har kanterna en riktning, precis som en enkelriktad gata.",
+    "explanationJa": "{辺|へん}に{向|む}きがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Appen föreslår aldrig en omväg.",
+    "correct": false,
+    "explanationSv": "Ibland föreslår den en omväg, om det är kö på den vanliga vägen.",
+    "explanationJa": "{渋滞|じゅうたい}のときは{回|まわ}り{道|みち}を{提案|ていあん}することがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "I en sammanhängande graf kan man nå varje nod från vilken annan nod som helst.",
+    "correct": true,
+    "explanationSv": "Om man kan komma från vilken person som helst till vilken annan som helst längs kanterna, är grafen sammanhängande.",
+    "explanationJa": "つながったグラフでは、どの{頂点|ちょうてん}からでもほかのすべての{頂点|ちょうてん}に{行|い}けます。"
+   }
+  ],
+  "factSources": [
+   "Leonhard Euler löste problemet med Königsbergs sju broar år 1736 (Encyclopaedia Britannica, \"Königsberg bridge problem\"; Euler, \"Solutio problematis ad geometriam situs pertinentis\")."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om nätverk och förbindelser i vardagen, från tunnelbanan till vänner.",
+  "discussionPoints": [
+   "Vilken tunnelbanekarta eller busskarta använder du mest?",
+   "Hur hittar du den kortaste vägen när du är i en ny stad?",
+   "Hur ser ditt eget nätverk av vänner och kollegor ut?",
+   "Vilka förbindelser finns mellan din hemstad i Japan och Sverige?"
+  ]
+ }
+}

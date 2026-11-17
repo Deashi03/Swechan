@@ -1,0 +1,328 @@
+{
+ "entries": [
+  {
+   "id": "e.mängd",
+   "lemma": "mängd",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "mängd",
+    "defSg": "mängden",
+    "indefPl": "mängder",
+    "defPl": "mängderna"
+   },
+   "senses": [
+    {
+     "id": "s.mängd.1",
+     "ja": "（{数学|すうがく}の）{集合|しゅうごう}",
+     "defSv": "I matematik: en samling saker, till exempel tal, som man räknar som en helhet.",
+     "defJa": "{数学|すうがく}で、ひとまとまりとして{扱|あつか}う、{数|かず}などのものの{集|あつ}まり。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Mängden {1, 2, 3} har tre element.",
+       "ja": "{集合|しゅうごう}｛1, 2, 3｝には{要素|ようそ}が{三|みっ}つあります。"
+      }
+     ],
+     "labelSv": "i matematik",
+     "explanation": {
+      "sv": "I vardagen betyder mängd ungefär hur mycket det finns av något, till exempel en stor mängd snö. I matematik är en mängd en samling saker som hör ihop, och sakerna kallas element. Man skriver ofta elementen så här: {1, 2, 3}. Ordningen spelar ingen roll, och varje element räknas bara en gång.",
+      "ja": "ふだんの{言葉|ことば}では「mängd」は「{量|りょう}」という{意味|いみ}で、「en stor mängd snö（{大量|たいりょう}の{雪|ゆき}）」のように{使|つか}います。{数学|すうがく}では、まとまったものの{集|あつ}まりを「mängd（{集合|しゅうごう}）」と{言|い}い、{中|なか}のものを「element（{要素|ようそ}）」と{呼|よ}びます。{要素|ようそ}は{波|なみ}かっこの{中|なか}に{書|か}きます：｛1, 2, 3｝。{順番|じゅんばん}は{関係|かんけい}なく、{同|おな}じ{要素|ようそ}は{一度|いちど}だけ{数|かぞ}えます。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.delmängd",
+   "lemma": "delmängd",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "delmängd",
+    "defSg": "delmängden",
+    "indefPl": "delmängder",
+    "defPl": "delmängderna"
+   },
+   "senses": [
+    {
+     "id": "s.delmängd.1",
+     "ja": "{部分集合|ぶぶんしゅうごう}",
+     "defSv": "En mängd där alla element också finns i en annan, större mängd.",
+     "defJa": "すべての{要素|ようそ}が、ほかの（より{大|おお}きな）{集合|しゅうごう}にも{入|はい}っている{集合|しゅうごう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "{1, 2} är en delmängd av {1, 2, 3}.",
+       "ja": "｛1, 2｝は｛1, 2, 3｝の{部分集合|ぶぶんしゅうごう}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "En delmängd ligger helt inuti en annan mängd. Mängden av alla katter är till exempel en delmängd av mängden av alla djur. Man skriver A ⊆ B. Varje mängd är en delmängd av sig själv, och den tomma mängden är en delmängd av alla mängder.",
+      "ja": "「delmängd」は、ほかの{集合|しゅうごう}の{中|なか}にすっぽり{入|はい}っている{集合|しゅうごう}です。たとえば、すべての{猫|ねこ}の{集合|しゅうごう}は、すべての{動物|どうぶつ}の{集合|しゅうごう}の{部分集合|ぶぶんしゅうごう}です。A ⊆ Bと{書|か}きます。どの{集合|しゅうごう}も{自分自身|じぶんじしん}の{部分集合|ぶぶんしゅうごう}で、{空集合|くうしゅうごう}はすべての{集合|しゅうごう}の{部分集合|ぶぶんしゅうごう}です。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.snitt",
+   "lemma": "snitt",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "snitt",
+    "defSg": "snittet",
+    "indefPl": "snitt",
+    "defPl": "snitten"
+   },
+   "senses": [
+    {
+     "id": "s.snitt.1",
+     "ja": "（{集合|しゅうごう}の）{共通部分|きょうつうぶぶん}",
+     "defSv": "En ny mängd med bara de element som finns i båda av två mängder.",
+     "defJa": "{二|ふた}つの{集合|しゅうごう}の{両方|りょうほう}に{入|はい}っている{要素|ようそ}だけを{集|あつ}めた{集合|しゅうごう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Snittet av {1, 2} och {2, 3} är {2}.",
+       "ja": "｛1, 2｝と｛2, 3｝の{共通部分|きょうつうぶぶん}は｛2｝です。"
+      }
+     ],
+     "labelSv": "mängder",
+     "explanation": {
+      "sv": "Snittet av två mängder är det som de har gemensamt. Man skriver det så här: A ∩ B. Om A är de som dricker kaffe och B de som dricker te, är snittet de som dricker båda. Jämför med unionen, som är allt som finns i minst en av mängderna. I vardagen betyder snitt också genomsnitt, till exempel i snitt tre timmar om dagen.",
+      "ja": "{二|ふた}つの{集合|しゅうごう}の「snitt」は、{両方|りょうほう}に{共通|きょうつう}するものです。{記号|きごう}は∩です。Aをコーヒーを{飲|の}む{人|ひと}、Bを{紅茶|こうちゃ}を{飲|の}む{人|ひと}とすると、{共通部分|きょうつうぶぶん}は{両方|りょうほう}を{飲|の}む{人|ひと}です。どちらか{少|すく}なくとも{一方|いっぽう}に{入|はい}っているもの{全部|ぜんぶ}である「union（{和集合|わしゅうごう}）」と{比|くら}べてみましょう。ふだんの{言葉|ことば}では「i snitt（{平均|へいきん}で）」という{意味|いみ}もあります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.komplement",
+   "lemma": "komplement",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "komplement",
+    "defSg": "komplementet",
+    "indefPl": "komplement",
+    "defPl": "komplementen"
+   },
+   "senses": [
+    {
+     "id": "s.komplement.1",
+     "ja": "（{集合|しゅうごう}の）{補集合|ほしゅうごう}",
+     "defSv": "Alla element som inte finns i en viss mängd, men som finns i den större mängd man talar om.",
+     "defJa": "{考|かんが}えている{全体|ぜんたい}の{中|なか}で、ある{集合|しゅうごう}に{入|はい}っていない{要素|ようそ}すべて。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om vi talar om talen 1 till 5, är komplementet till {1, 2} mängden {3, 4, 5}.",
+       "ja": "1から5までの{数|かず}について{言|い}えば、｛1, 2｝の{補集合|ほしゅうごう}は｛3, 4, 5｝です。"
+      }
+     ],
+     "labelSv": "mängder",
+     "explanation": {
+      "sv": "Komplementet till en mängd är allt det som inte finns i den. Man måste alltid veta vilken helhet man talar om, till exempel alla elever i klassen. Om A är de elever som har cykel, är komplementet till A de elever som inte har cykel. Ordet komplement betyder också något som kompletterar, till exempel ett komplement till vanlig undervisning.",
+      "ja": "ある{集合|しゅうごう}の「komplement」は、その{集合|しゅうごう}に{入|はい}っていないもの{全部|ぜんぶ}です。いつも、たとえば「クラスの{生徒|せいと}{全員|ぜんいん}」のように、どの{全体|ぜんたい}について{話|はな}しているかを{知|し}っておく{必要|ひつよう}があります。Aを{自転車|じてんしゃ}を{持|も}っている{生徒|せいと}とすると、Aの{補集合|ほしゅうごう}は{自転車|じてんしゃ}を{持|も}っていない{生徒|せいと}です。「komplement」には「{補|おぎな}うもの」という{意味|いみ}もあります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.relation",
+   "lemma": "relation",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "relation",
+    "defSg": "relationen",
+    "indefPl": "relationer",
+    "defPl": "relationerna"
+   },
+   "senses": [
+    {
+     "id": "s.relation.1",
+     "ja": "{関係|かんけい}",
+     "defSv": "Ett samband mellan två saker eller personer. I matematik: en regel som säger vilka element som hör ihop två och två.",
+     "defJa": "{二|ふた}つのものや{人|ひと}の{間|あいだ}のつながり。{数学|すうがく}では、どの{要素|ようそ}どうしが{二|ふた}つずつ{結|むす}びつくかを{決|き}める{決|き}まり。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "\"Är äldre än\" är en relation mellan människor.",
+       "ja": "「〜より{年上|としうえ}である」は{人|ひと}と{人|ひと}の{間|あいだ}の{関係|かんけい}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "En relation är ett samband mellan saker. I vardagen talar man om relationer mellan människor eller länder. I matematik är en relation en regel som kopplar ihop element, till exempel \"är mindre än\" mellan tal eller \"är förälder till\" mellan personer. En relation kan beskrivas som en mängd av ordnade par.",
+      "ja": "「relation」は、ものとものの{間|あいだ}のつながりです。ふだんは{人|ひと}や{国|くに}どうしの{関係|かんけい}について{使|つか}います。{数学|すうがく}では、{数|かず}の「〜より{小|ちい}さい」や{人|ひと}の「〜の{親|おや}である」のように、{要素|ようそ}を{組|く}にする{決|き}まりを「relation」と{言|い}います。{関係|かんけい}は{順序対|じゅんじょつい}の{集合|しゅうごう}として{表|あらわ}すことができます。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.ordnat-par",
+   "lemma": "ordnat par",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "ordnat par",
+    "defSg": "ordnade paret",
+    "indefPl": "ordnade par",
+    "defPl": "ordnade paren"
+   },
+   "senses": [
+    {
+     "id": "s.ordnat-par.1",
+     "ja": "{順序対|じゅんじょつい}",
+     "defSv": "Två saker som står i en bestämd ordning, till exempel (2, 5), där det spelar roll vad som kommer först.",
+     "defJa": "（2, 5）のように、どちらが{先|さき}かに{意味|いみ}がある、{決|き}まった{順番|じゅんばん}の{二|ふた}つのもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Punkten (2, 5) är ett ordnat par.",
+       "ja": "{点|てん}(2, 5)は{順序対|じゅんじょつい}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "I ett ordnat par spelar ordningen roll: (2, 5) och (5, 2) är två olika par. Därför skriver man paret med vanliga parenteser och inte med klammerparenteser som för en mängd. En punkt i ett koordinatsystem är ett vanligt exempel på ett ordnat par.",
+      "ja": "「ordnat par」では{順番|じゅんばん}が{大切|たいせつ}で、(2, 5)と(5, 2)は{別|べつ}の{組|くみ}です。そのため、{集合|しゅうごう}のような{波|なみ}かっこではなく、{普通|ふつう}の{丸|まる}かっこで{書|か}きます。{座標|ざひょう}の{点|てん}は、{順序対|じゅんじょつい}のよくある{例|れい}です。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.klammerparentes",
+   "lemma": "klammerparentes",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "klammerparentes",
+    "defSg": "klammerparentesen",
+    "indefPl": "klammerparenteser",
+    "defPl": "klammerparenteserna"
+   },
+   "senses": [
+    {
+     "id": "s.klammerparentes.1",
+     "ja": "{波|なみ}かっこ、{中|ちゅう}かっこ",
+     "defSv": "Parenteserna { och }, som man till exempel skriver runt elementen i en mängd.",
+     "defJa": "「｛」と「｝」の{記号|きごう}。たとえば{集合|しゅうごう}の{要素|ようそ}を{囲|かこ}むのに{使|つか}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Skriv elementen inom klammerparenteser: {a, b, c}.",
+       "ja": "{要素|ようそ}を{波|なみ}かっこの{中|なか}に{書|か}いてください：｛a, b, c｝。"
+      }
+     ],
+     "explanation": {
+      "sv": "Klammerparenteser ser ut som { och }. I matematik skriver man en mängd inom klammerparenteser, till exempel {1, 2, 3}. I vardagen kallas de ibland måsvingar. Andra parenteser är vanliga parenteser ( ) och hakparenteser [ ].",
+      "ja": "「klammerparentes」は「｛」と「｝」の{形|かたち}をしています。{数学|すうがく}では｛1, 2, 3｝のように、{集合|しゅうごう}を{波|なみ}かっこの{中|なか}に{書|か}きます。ふだんは「måsvingar（カモメの{翼|つばさ}）」と{呼|よ}ばれることもあります。ほかに、{普通|ふつう}の{丸|まる}かっこ( )と{角|かく}かっこ[ ]があります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.räkna-upp",
+   "lemma": "räkna upp",
+   "pos": "verb",
+   "level": "B1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "räkna upp",
+    "present": "räknar upp",
+    "past": "räknade upp",
+    "supine": "räknat upp",
+    "imperative": "räkna upp",
+    "group": "1"
+   },
+   "senses": [
+    {
+     "id": "s.räkna-upp.1",
+     "ja": "{一|ひと}つずつ{挙|あ}げる、{列挙|れっきょ}する",
+     "defSv": "Säga eller skriva saker en i taget, till exempel alla element i en mängd.",
+     "defJa": "{集合|しゅうごう}の{要素|ようそ}など、ものを{一|ひと}つずつ{言|い}ったり{書|か}いたりする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kan du räkna upp alla veckans dagar?",
+       "ja": "{一週間|いっしゅうかん}の{曜日|ようび}を{全部|ぜんぶ}{挙|あ}げられますか？"
+      }
+     ],
+     "frame": {
+      "subject": "Hon",
+      "complement": "namnen på listan"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

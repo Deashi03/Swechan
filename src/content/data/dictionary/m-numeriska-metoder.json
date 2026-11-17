@@ -1,0 +1,278 @@
+{
+ "entries": [
+  {
+   "id": "e.numerisk",
+   "lemma": "numerisk",
+   "pos": "adjective",
+   "level": "C1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "numerisk",
+    "neuter": "numeriskt",
+    "plural": "numeriska",
+    "definite": "numeriska"
+   },
+   "senses": [
+    {
+     "id": "s.numerisk.1",
+     "ja": "{数値的|すうちてき}な、{数値|すうち}による",
+     "defSv": "Som räknar fram ett svar med siffror i många små steg, ofta med en dator, i stället för med en formel.",
+     "defJa": "{公式|こうしき}を{使|つか}う{代|か}わりに、たいていコンピューターで、{小|ちい}さな{段階|だんかい}をくり{返|かえ}して{数字|すうじ}で{答|こた}えを{求|もと}める。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ekvationen löstes med en numerisk metod på datorn.",
+       "ja": "その{方程式|ほうていしき}はコンピューターで{数値的|すうちてき}な{方法|ほうほう}を{使|つか}って{解|と}かれました。"
+      }
+     ],
+     "explanation": {
+      "sv": "En numerisk metod ger oftast ett närmevärde, inte ett exakt svar. Men man kan göra närmevärdet så bra som man behöver. Många problem i verkligheten, som väder, trafik och hur en bro rör sig i stark vind, går inte att lösa med en formel. Då använder man numeriska metoder.",
+      "ja": "{数値的|すうちてき}な{方法|ほうほう}で{得|え}られるのはたいてい{近似値|きんじち}で、{厳密|げんみつ}な{答|こた}えではありません。それでも、{必要|ひつよう}なだけ{正確|せいかく}にすることができます。{天気|てんき}、{交通|こうつう}、{強|つよ}い{風|かぜ}の{中|なか}で{橋|はし}がどう{動|うご}くかなど、{現実|げんじつ}の{多|おお}くの{問題|もんだい}は{公式|こうしき}では{解|と}けません。そこで{数値的|すうちてき}な{方法|ほうほう}を{使|つか}います。"
+     },
+     "tags": [
+      "matematik",
+      "numeriska metoder"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.exakt",
+   "lemma": "exakt",
+   "pos": "adjective",
+   "level": "B1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "exakt",
+    "neuter": "exakt",
+    "plural": "exakta",
+    "definite": "exakta"
+   },
+   "senses": [
+    {
+     "id": "s.exakt.1",
+     "ja": "{正確|せいかく}な、{厳密|げんみつ}な",
+     "defSv": "Som är helt rätt, utan minsta fel.",
+     "defJa": "{少|すこ}しの{誤|あやま}りもなく、まったく{正|ただ}しい。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det exakta värdet av 1/3 går inte att skriva med decimaler.",
+       "ja": "1/3の{厳密|げんみつ}な{値|あたい}は{小数|しょうすう}では{書|か}き{表|あらわ}せません。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "numeriska metoder"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.avrundningsfel",
+   "lemma": "avrundningsfel",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "avrundningsfel",
+    "defSg": "avrundningsfelet",
+    "indefPl": "avrundningsfel",
+    "defPl": "avrundningsfelen"
+   },
+   "senses": [
+    {
+     "id": "s.avrundningsfel.1",
+     "ja": "{丸|まる}め{誤差|ごさ}",
+     "defSv": "Det lilla fel som blir när man avrundar ett tal.",
+     "defJa": "{数|かず}を{四捨五入|ししゃごにゅう}などで{丸|まる}めたときに{生|しょう}じる{小|ちい}さな{誤差|ごさ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "1/3 blir 0,333, och tre gånger det blir 0,999 i stället för 1. Det är ett avrundningsfel.",
+       "ja": "1/3は0.333になり、その3{倍|ばい}は1ではなく0.999になります。これが{丸|まる}め{誤差|ごさ}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "En dator sparar bara ett visst antal decimaler. Därför blir det nästan alltid små avrundningsfel. Ett enda fel är mycket litet, men om datorn räknar miljoner steg efter varandra kan felen växa och bli stora. Därför måste man tänka på avrundningsfel när man skriver program.",
+      "ja": "コンピューターは{決|き}まった{桁数|けたすう}の{小数|しょうすう}しか{保存|ほぞん}できません。そのため、ほとんどいつも{小|ちい}さな{丸|まる}め{誤差|ごさ}が{出|で}ます。{一|ひと}つひとつの{誤差|ごさ}はとても{小|ちい}さいですが、{何百万回|なんびゃくまんかい}も{続|つづ}けて{計算|けいさん}すると、{誤差|ごさ}が{積|つ}み{重|かさ}なって{大|おお}きくなることがあります。プログラムを{書|か}くときには{丸|まる}め{誤差|ごさ}に{気|き}をつけなければなりません。"
+     },
+     "tags": [
+      "matematik",
+      "numeriska metoder"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.startvärde",
+   "lemma": "startvärde",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "startvärde",
+    "defSg": "startvärdet",
+    "indefPl": "startvärden",
+    "defPl": "startvärdena"
+   },
+   "senses": [
+    {
+     "id": "s.startvärde.1",
+     "ja": "{初期値|しょきち}",
+     "defSv": "Det första värdet som man börjar räkna med, till exempel en gissning som man sedan gör bättre.",
+     "defJa": "{計算|けいさん}を{始|はじ}めるときの{最初|さいしょ}の{値|あたい}。たとえば、あとでよくしていく{推測|すいそく}の{値|あたい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Som startvärde väljer vi x = 1.",
+       "ja": "{初期値|しょきち}としてx = 1を{選|えら}びます。"
+      }
+     ],
+     "explanation": {
+      "sv": "Många numeriska metoder behöver ett startvärde. Ett bra startvärde gör att man snabbare kommer nära svaret. Ett dåligt startvärde kan göra att man hamnar vid fel svar eller aldrig kommer fram alls. Därför börjar man ofta med att rita en graf och se ungefär var svaret ligger.",
+      "ja": "{多|おお}くの{数値的|すうちてき}な{方法|ほうほう}には{初期値|しょきち}が{必要|ひつよう}です。よい{初期値|しょきち}を{選|えら}ぶと、{早|はや}く{答|こた}えに{近|ちか}づけます。{悪|わる}い{初期値|しょきち}だと、{違|ちが}う{答|こた}えにたどり{着|つ}いたり、いつまでも{答|こた}えが{出|で}なかったりします。そこで、まずグラフを{描|か}いて、{答|こた}えがだいたいどこにあるかを{見|み}ることがよくあります。"
+     },
+     "tags": [
+      "matematik",
+      "numeriska metoder"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.iteration",
+   "lemma": "iteration",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "iteration",
+    "defSg": "iterationen",
+    "indefPl": "iterationer",
+    "defPl": "iterationerna"
+   },
+   "senses": [
+    {
+     "id": "s.iteration.1",
+     "ja": "{反復|はんぷく}（{計算|けいさん}）",
+     "defSv": "Att göra samma räkning många gånger, där varje svar blir början på nästa räkning.",
+     "defJa": "{同|おな}じ{計算|けいさん}を{何度|なんど}もくり{返|かえ}し、{毎回|まいかい}の{答|こた}えを{次|つぎ}の{計算|けいさん}の{出発点|しゅっぱつてん}にすること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Efter fem iterationer var närmevärdet mycket bra.",
+       "ja": "5{回|かい}の{反復|はんぷく}で、{近似値|きんじち}はとてもよくなりました。"
+      }
+     ],
+     "explanation": {
+      "sv": "Ordet iteration kommer från latin och betyder ungefär upprepning. Varje iteration för oftast svaret lite närmare det rätta värdet. Datorer är bra på iteration, eftersom de kan göra samma sak miljontals gånger på en sekund.",
+      "ja": "「iteration」はラテン{語|ご}から{来|き}た{言葉|ことば}で、「くり{返|かえ}し」という{意味|いみ}です。{反復|はんぷく}するたびに、{答|こた}えはたいてい{正|ただ}しい{値|あたい}に{少|すこ}しずつ{近|ちか}づきます。コンピューターは{同|おな}じことを1{秒|びょう}に{何百万回|なんびゃくまんかい}もできるので、{反復|はんぷく}{計算|けいさん}が{得意|とくい}です。"
+     },
+     "tags": [
+      "matematik",
+      "numeriska metoder"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.intervallhalvering",
+   "lemma": "intervallhalvering",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "intervallhalvering",
+    "defSg": "intervallhalveringen",
+    "indefPl": "intervallhalveringar",
+    "defPl": "intervallhalveringarna"
+   },
+   "senses": [
+    {
+     "id": "s.intervallhalvering.1",
+     "ja": "{二分法|にぶんほう}",
+     "defSv": "En metod där man delar ett intervall på mitten om och om igen och behåller den halva där lösningen finns.",
+     "defJa": "{区間|くかん}をくり{返|かえ}し{半分|はんぶん}に{分|わ}け、{解|かい}のある{方|ほう}の{半分|はんぶん}を{残|のこ}していく{方法|ほうほう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med intervallhalvering hittade vi lösningen mellan 1 och 2.",
+       "ja": "{二分法|にぶんほう}で、1と2の{間|あいだ}にある{解|かい}を{見|み}つけました。"
+      }
+     ],
+     "explanation": {
+      "sv": "Intervallhalvering fungerar som när man ska gissa ett tal mellan 1 och 100 och bara får höra ”högre” eller ”lägre”. Om man alltid gissar i mitten, hittar man talet på högst sju gissningar. Metoden är ganska långsam, men den hittar alltid fram om det finns en lösning i intervallet.",
+      "ja": "{二分法|にぶんほう}は、1から100までの{数|かず}を{当|あ}てるゲームで「もっと{大|おお}きい」「もっと{小|ちい}さい」とだけ{教|おし}えてもらうときのやり{方|かた}に{似|に}ています。いつも{真|ま}ん{中|なか}を{言|い}えば、{多|おお}くても7{回|かい}で{当|あ}てられます。{少|すこ}し{時間|じかん}はかかりますが、{区間|くかん}の{中|なか}に{解|かい}があれば{必|かなら}ず{見|み}つかる{方法|ほうほう}です。"
+     },
+     "tags": [
+      "matematik",
+      "numeriska metoder"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.steglängd",
+   "lemma": "steglängd",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "steglängd",
+    "defSg": "steglängden",
+    "indefPl": "steglängder",
+    "defPl": "steglängderna"
+   },
+   "senses": [
+    {
+     "id": "s.steglängd.1",
+     "ja": "{刻|きざ}み{幅|はば}、ステップ{幅|はば}",
+     "defSv": "Hur långt man går fram i varje steg när man räknar fram något i små steg, till exempel 0,1 sekunder.",
+     "defJa": "{小|ちい}さな{段階|だんかい}に{分|わ}けて{計算|けいさん}するとき、1{回|かい}ごとに{進|すす}む{幅|はば}。たとえば0.1{秒|びょう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med en kortare steglängd blir resultatet noggrannare.",
+       "ja": "{刻|きざ}み{幅|はば}を{短|みじか}くすると、{結果|けっか}がより{正確|せいかく}になります。"
+      }
+     ],
+     "explanation": {
+      "sv": "När en dator räknar ut hur en boll flyger, räknar den först ut var bollen är efter ett litet steg i tiden, sedan efter ett steg till, och så vidare. Med en kort steglängd blir resultatet bättre, men det tar längre tid. Med en lång steglängd går det fort, men felen blir större.",
+      "ja": "コンピューターがボールの{飛|と}び{方|かた}を{計算|けいさん}するときは、まず{少|すこ}しだけ{時間|じかん}を{進|すす}めたときのボールの{位置|いち}を{求|もと}め、さらにもう{少|すこ}し{進|すす}め…とくり{返|かえ}します。{刻|きざ}み{幅|はば}が{短|みじか}いと{結果|けっか}はよくなりますが、{時間|じかん}がかかります。{長|なが}いと{速|はや}く{終|お}わりますが、{誤差|ごさ}が{大|おお}きくなります。"
+     },
+     "tags": [
+      "matematik",
+      "numeriska metoder"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

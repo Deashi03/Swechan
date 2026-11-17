@@ -1,0 +1,173 @@
+{
+ "id": "m.linjara-ekvationssystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Linjära ekvationssystem",
+ "titleJa": "{連立一次方程式|れんりついちじほうていしき}",
+ "descriptionSv": "Linjära ekvationssystem: ekvation, obekant, ekvationssystem, lösning, samtidigt, uppfylla, sätta in, lösa ut, substitutionsmetod, eliminera, additionsmetod, grafiskt, skärningspunkt, sakna lösning, oändligt många lösningar och pröva.",
+ "descriptionJa": "{連立一次方程式|れんりついちじほうていしき}：{方程式|ほうていしき}、{未知数|みちすう}、{連立方程式|れんりつほうていしき}、{解|かい}、{同時|どうじ}に、{満|み}たす、{代入|だいにゅう}する、（ある{文字|もじ}について）{解|と}く、{代入法|だいにゅうほう}、{消去|しょうきょ}する、{加減法|かげんほう}、グラフで、{交点|こうてん}、{解|かい}がない、{無数|むすう}の{解|かい}、{確|たし}かめる。",
+ "categoryId": "R06-A02-T03",
+ "tags": [
+  "matematik",
+  "linjär algebra"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.matrisoperationer"
+ ],
+ "related": [],
+ "recommendedOrder": 3234,
+ "words": [
+  {
+   "senseId": "s.ekvation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obekant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ekvationssystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.samtidigt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppfylla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sätta-in.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lösa-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.substitutionsmetod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eliminera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.additionsmetod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grafiskt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skärningspunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sakna-lösning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oändligt-många-lösningar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pröva.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad kostar en bulle?",
+  "paragraphs": [
+   "Ali och Elsa går till samma kafé. Ali köper två kaffe och en bulle för 85 kronor. Elsa köper en kaffe och två bullar för 80 kronor. Men vad kostar en kaffe, och vad kostar en bulle? De skriver det som ett ekvationssystem med två obekanta: 2k + b = 85 och k + 2b = 80.",
+   "Ali vill använda substitutionsmetoden. Han löser ut b ur den första ekvationen: b = 85 − 2k. Han sätter in uttrycket i den andra ekvationen och får k + 2(85 − 2k) = 80. Det blir en vanlig ekvation med bara en obekant, och lösningen är k = 30.",
+   "Elsa tycker att additionsmetoden är snabbare. Hon räknar den andra ekvationen gånger 2 och subtraherar den första. På det sättet eliminerar hon k och får 3b = 75, alltså b = 25. Svaret är detsamma: en kaffe kostar 30 kronor och en bulle 25 kronor. De två talen uppfyller båda ekvationerna samtidigt.",
+   "Till sist prövar de lösningen: 2 · 30 + 25 = 85 och 30 + 2 · 25 = 80. Det stämmer! Elsa ritar också ekvationerna grafiskt som två linjer. Linjernas skärningspunkt ligger precis vid k = 30 och b = 25.",
+   "– Men tänk om linjerna är parallella? frågar Ali. – Då säger man att systemet saknar lösning, svarar Elsa. Och om de två linjerna ligger på varandra finns det oändligt många lösningar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket betalar Ali?",
+    "options": [
+     "80 kronor",
+     "55 kronor",
+     "85 kronor",
+     "30 kronor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ali köper två kaffe och en bulle för 85 kronor.",
+    "explanationJa": "アリは85クローナ{払|はら}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad gör Ali när han använder substitutionsmetoden?",
+    "options": [
+     "Han löser ut b och sätter in det i den andra ekvationen",
+     "Han adderar de två ekvationerna",
+     "Han ritar två linjer",
+     "Han frågar kassan"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han löser ut b ur den första ekvationen … Han sätter in uttrycket i den andra ekvationen …",
+    "explanationJa": "bについて{解|と}き、それをもう{一方|いっぽう}の{方程式|ほうていしき}に{代入|だいにゅう}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad kostar en bulle?",
+    "options": [
+     "30 kronor",
+     "25 kronor",
+     "20 kronor",
+     "35 kronor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… en kaffe kostar 30 kronor och en bulle 25 kronor.",
+    "explanationJa": "パン{一|ひと}つは25クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Linjernas skärningspunkt visar samma lösning som Ali och Elsa räknade fram.",
+    "correct": true,
+    "explanationSv": "Linjernas skärningspunkt ligger precis vid k = 30 och b = 25.",
+    "explanationJa": "{交点|こうてん}は{計算|けいさん}と{同|おな}じ{解|かい}を{示|しめ}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Om de två linjerna är parallella har systemet oändligt många lösningar.",
+    "correct": false,
+    "explanationSv": "– Då säger man att systemet saknar lösning, svarar Elsa.",
+    "explanationJa": "{平行|へいこう}なら{解|かい}はありません。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen med påhittade priser. Räkneexemplen är kontrollerade: 2 · 30 + 25 = 85, 30 + 2 · 25 = 80; x + y = 10, x − y = 2 ger x = 6, y = 4."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att lösa problem med flera obekanta.",
+  "discussionPoints": [
+   "Kan du komma på en situation i vardagen med två obekanta?",
+   "Vilken metod tycker du är lättast: substitutionsmetoden, additionsmetoden eller att rita grafiskt?",
+   "Varför är det bra att pröva lösningen?",
+   "Hur förklarar du för en vän att ett system kan sakna lösning?"
+  ]
+ }
+}

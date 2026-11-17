@@ -1,0 +1,248 @@
+{
+ "entries": [
+  {
+   "id": "e.händelse",
+   "lemma": "händelse",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "händelse",
+    "defSg": "händelsen",
+    "indefPl": "händelser",
+    "defPl": "händelserna"
+   },
+   "senses": [
+    {
+     "id": "s.händelse.1",
+     "ja": "{出来事|できごと}",
+     "defSv": "Något som händer, ofta något viktigt eller ovanligt.",
+     "defJa": "{起|お}こったこと。とくに、{大切|たいせつ}なことや{珍|めずら}しいこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Bröllopet var en stor händelse för hela familjen.",
+       "ja": "{結婚式|けっこんしき}は{家族|かぞく}みんなにとって{大|おお}きな{出来事|できごと}でした。"
+      }
+     ],
+     "labelSv": "något som händer",
+     "tags": [
+      "vardag"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.händelse.2",
+     "ja": "（{確率|かくりつ}の）{事象|じしょう}",
+     "defSv": "En eller flera av de möjliga utfallen i ett slumpförsök, till exempel att få ett jämnt tal.",
+     "defJa": "{試行|しこう}で{起|お}こりうる{結果|けっか}のうちの1つ、または{複数|ふくすう}をまとめたもの。たとえば「{偶数|ぐうすう}が{出|で}る」こと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Händelsen ”jämnt tal” består av utfallen 2, 4 och 6.",
+       "ja": "「{偶数|ぐうすう}が{出|で}る」という{事象|じしょう}は、2、4、6の{結果|けっか}からなります。"
+      }
+     ],
+     "labelSv": "i sannolikhetslära",
+     "explanation": {
+      "sv": "I sannolikhetslära är en händelse en grupp av utfall som man är intresserad av. När man kastar en tärning kan händelsen vara ”jämnt tal” (2, 4, 6) eller ”minst 5” (5, 6). Sannolikheten för en händelse är antalet utfall i händelsen delat med antalet möjliga utfall, om alla är lika sannolika.",
+      "ja": "{確率|かくりつ}の{分野|ぶんや}では、「händelse」は{注目|ちゅうもく}する{結果|けっか}のまとまりです。サイコロなら「{偶数|ぐうすう}（2、4、6）」や「5{以上|いじょう}（5、6）」などが{事象|じしょう}になります。すべての{結果|けっか}が{同様|どうよう}に{確|たし}からしいなら、{事象|じしょう}の{確率|かくりつ}は、その{事象|じしょう}に{入|はい}る{結果|けっか}の{数|かず}を、{起|お}こりうる{結果|けっか}の{数|かず}で{割|わ}ったものです。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.komplementhändelse",
+   "lemma": "komplementhändelse",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "komplementhändelse",
+    "defSg": "komplementhändelsen",
+    "indefPl": "komplementhändelser",
+    "defPl": "komplementhändelserna"
+   },
+   "senses": [
+    {
+     "id": "s.komplementhändelse.1",
+     "ja": "{余事象|よじしょう}",
+     "defSv": "Händelsen att något inte inträffar; alla utfall som inte finns i den första händelsen.",
+     "defJa": "ある{事象|じしょう}が{起|お}こらないという{事象|じしょう}。もとの{事象|じしょう}に{入|はい}らないすべての{結果|けっか}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Komplementhändelsen till ”sexa” är ”inte sexa”.",
+       "ja": "「6が{出|で}る」の{余事象|よじしょう}は「6が{出|で}ない」です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Komplementhändelsen är motsatsen till en händelse: allt som kan hända utom just den händelsen. En händelse och dess komplementhändelse har tillsammans sannolikheten 1. Därför är det ofta lättare att räkna ut 1 minus sannolikheten för komplementhändelsen, till exempel för ”minst en sexa på tre kast”.",
+      "ja": "「komplementhändelse」は、ある{事象|じしょう}の{反対|はんたい}、つまりその{事象|じしょう}{以外|いがい}に{起|お}こりうるすべてのことです。{事象|じしょう}とその{余事象|よじしょう}の{確率|かくりつ}を{足|た}すと1になります。そのため「3{回|かい}{投|な}げて{少|すく}なくとも1{回|かい}6が{出|で}る」のような{場合|ばあい}は、1から{余事象|よじしょう}の{確率|かくりつ}を{引|ひ}くほうが{簡単|かんたん}なことがよくあります。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.osannolik",
+   "lemma": "osannolik",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "osannolik",
+    "neuter": "osannolikt",
+    "plural": "osannolika",
+    "definite": "osannolika"
+   },
+   "senses": [
+    {
+     "id": "s.osannolik.1",
+     "ja": "ありそうもない、{起|お}こりそうにない",
+     "defSv": "Som nog inte kommer att hända; med liten sannolikhet.",
+     "defJa": "たぶん{起|お}こらない。{確率|かくりつ}が{小|ちい}さい。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det är osannolikt att det snöar i juli.",
+       "ja": "7{月|がつ}に{雪|ゆき}が{降|ふ}ることは、まずありません。"
+      }
+     ],
+     "explanation": {
+      "sv": "Osannolik betyder att chansen är liten, men inte noll. Något som är osannolikt kan alltså ändå hända. Man säger ofta det är osannolikt att … eller högst osannolikt. Motsatsen är sannolik.",
+      "ja": "「osannolik」は、{可能性|かのうせい}は{小|ちい}さいけれど、ゼロではないという{意味|いみ}です。つまり、ありそうもないことでも{起|お}こることはあります。「det är osannolikt att …（…はありそうもない）」や「högst osannolikt（きわめてありそうもない）」とよく{言|い}います。{反対|はんたい}の{言葉|ことば}は「sannolik」です。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.trolig",
+   "lemma": "trolig",
+   "pos": "adjective",
+   "level": "B1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "trolig",
+    "neuter": "troligt",
+    "plural": "troliga",
+    "definite": "troliga",
+    "comparative": "troligare",
+    "superlative": "troligast"
+   },
+   "senses": [
+    {
+     "id": "s.trolig.1",
+     "ja": "ありそうな、たぶんそうなる",
+     "defSv": "Som man tror kommer att hända eller är sant.",
+     "defJa": "{起|お}こりそうだ、または{本当|ほんとう}らしいと{思|おも}われる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det är troligt att det blir regn i eftermiddag.",
+       "ja": "{午後|ごご}は{雨|あめ}になりそうです。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.femtio-femtio",
+   "lemma": "femtio-femtio",
+   "pos": "adverb",
+   "level": "B1",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.femtio-femtio.1",
+     "ja": "{五分五分|ごぶごぶ}で、フィフティー・フィフティーで",
+     "defSv": "Med lika stor chans åt båda hållen; hälften var.",
+     "defJa": "どちらになる{可能性|かのうせい}も{同|おな}じで。または{半分|はんぶん}ずつで。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Chansen att vi vinner är väl femtio-femtio.",
+       "ja": "{私|わたし}たちが{勝|か}つ{可能性|かのうせい}は、まあ{五分五分|ごぶごぶ}でしょう。"
+      }
+     ],
+     "register": "informal",
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.de-stora-talens-lag",
+   "lemma": "de stora talens lag",
+   "pos": "phrase",
+   "level": "C1",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.de-stora-talens-lag.1",
+     "ja": "{大数|たいすう}の{法則|ほうそく}",
+     "defSv": "Regeln att den relativa frekvensen kommer närmare sannolikheten ju fler gånger man upprepar ett försök.",
+     "defJa": "{試行|しこう}をくり{返|かえ}すほど、{相対度数|そうたいどすう}が{確率|かくりつ}に{近|ちか}づいていくという{法則|ほうそく}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Enligt de stora talens lag blir andelen krona nära hälften efter tusen kast.",
+       "ja": "{大数|たいすう}の{法則|ほうそく}によれば、1000{回|かい}{投|な}げると{表|おもて}の{割合|わりあい}は{半分|はんぶん}に{近|ちか}くなります。"
+      }
+     ],
+     "explanation": {
+      "sv": "De stora talens lag säger att slumpen jämnar ut sig när man gör många försök. Om man singlar slant tio gånger kan man få krona sju gånger. Men efter tiotusen kast ligger andelen krona mycket nära 50 procent. Lagen säger inget om nästa enskilda kast.",
+      "ja": "「de stora talens lag」は、たくさん{試行|しこう}すると{偶然|ぐうぜん}のばらつきがならされる、という{法則|ほうそく}です。コインを10{回|かい}{投|な}げると、{表|おもて}が7{回|かい}{出|で}ることもあります。しかし1{万回|まんかい}{投|な}げれば、{表|おもて}の{割合|わりあい}は50パーセントにとても{近|ちか}くなります。この{法則|ほうそく}は、{次|つぎ}の1{回|かい}の{結果|けっか}については{何|なに}も{言|い}いません。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

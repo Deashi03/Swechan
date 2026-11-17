@@ -1,0 +1,160 @@
+{
+ "entries": [
+  {
+   "id": "e.väntevärde",
+   "lemma": "väntevärde",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "väntevärde",
+    "defSg": "väntevärdet",
+    "indefPl": "väntevärden",
+    "defPl": "väntevärdena"
+   },
+   "senses": [
+    {
+     "id": "s.väntevärde.1",
+     "ja": "{期待値|きたいち}",
+     "defSv": "Det resultat som man i genomsnitt kan vänta sig om man upprepar ett slumpförsök väldigt många gånger.",
+     "defJa": "{試行|しこう}をとても{多|おお}くくり{返|かえ}したときに{期待|きたい}できる、{平均|へいきん}の{結果|けっか}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Väntevärdet för ett tärningskast är 3,5.",
+       "ja": "サイコロを1{回|かい}{振|ふ}るときの{期待値|きたいち}は3.5です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Väntevärdet räknar man ut genom att ta varje möjligt värde gånger dess sannolikhet och lägga ihop allt. För en tärning blir det 3,5, fast ingen sida visar 3,5. Väntevärdet säger alltså inte vad som händer nästa gång, utan vad man får i genomsnitt i längden. I spel visar ett negativt väntevärde att man förlorar pengar i längden.",
+      "ja": "{期待値|きたいち}は、ありうるそれぞれの{値|あたい}にその{確率|かくりつ}を{掛|か}けて、{全部|ぜんぶ}{足|た}して{求|もと}めます。サイコロでは3.5になりますが、3.5の{面|めん}はありません。つまり{期待値|きたいち}は{次|つぎ}に{何|なに}が{起|お}こるかではなく、{長|なが}い{目|め}で{見|み}た{平均|へいきん}を{表|あらわ}します。ゲームで{期待値|きたいち}がマイナスなら、{長|なが}い{目|め}で{見|み}るとお{金|かね}を{失|うしな}うということです。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.varians",
+   "lemma": "varians",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "varians",
+    "defSg": "variansen",
+    "indefPl": "varianser",
+    "defPl": "varianserna"
+   },
+   "senses": [
+    {
+     "id": "s.varians.1",
+     "ja": "{分散|ぶんさん}",
+     "defSv": "Ett mått på hur mycket värdena sprider sig kring medelvärdet.",
+     "defJa": "{値|あたい}が{平均|へいきん}のまわりにどれだけ{散|ち}らばっているかを{表|あらわ}す{数|かず}。{平均|へいきん}からのずれを2{乗|じょう}したものの{平均|へいきん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Två spel kan ha samma väntevärde men olika varians.",
+       "ja": "2つのゲームは、{期待値|きたいち}が{同|おな}じでも{分散|ぶんさん}が{違|ちが}うことがあります。"
+      }
+     ],
+     "explanation": {
+      "sv": "För att räkna ut variansen tar man varje värdes avstånd till medelvärdet, tar avståndet gånger sig självt och tar medelvärdet av resultaten. En stor varians betyder att värdena ligger långt ifrån varandra; en liten varians att de ligger nära medelvärdet. Därför får variansen en annan enhet, till exempel kronor i kvadrat.",
+      "ja": "{分散|ぶんさん}を{求|もと}めるには、それぞれの{値|あたい}と{平均|へいきん}との{差|さ}を2{乗|じょう}して、その{平均|へいきん}をとります。{分散|ぶんさん}が{大|おお}きいと{値|あたい}は{互|たが}いに{離|はな}れていて、{小|ちい}さいと{平均|へいきん}の{近|ちか}くに{集|あつ}まっています。{差|さ}を2{乗|じょう}するので、{分散|ぶんさん}の{単位|たんい}は「クローナの2{乗|じょう}」のように{変|か}わります。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.standardavvikelse",
+   "lemma": "standardavvikelse",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "standardavvikelse",
+    "defSg": "standardavvikelsen",
+    "indefPl": "standardavvikelser",
+    "defPl": "standardavvikelserna"
+   },
+   "senses": [
+    {
+     "id": "s.standardavvikelse.1",
+     "ja": "{標準偏差|ひょうじゅんへんさ}",
+     "defSv": "Ett mått på hur långt värdena i genomsnitt ligger från medelvärdet; roten ur variansen.",
+     "defJa": "{値|あたい}が{平均|へいきん}からだいたいどれだけ{離|はな}れているかを{表|あらわ}す{数|かず}。{分散|ぶんさん}の{平方根|へいほうこん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Medellängden är 167 centimeter och standardavvikelsen är 6 centimeter.",
+       "ja": "{平均身長|へいきんしんちょう}は167センチで、{標準偏差|ひょうじゅんへんさ}は6センチです。"
+      }
+     ],
+     "explanation": {
+      "sv": "Standardavvikelsen är kvadratroten ur variansen, och den har samma enhet som värdena, till exempel centimeter eller kronor. Därför är den lättare att förstå. I en normalfördelning ligger ungefär två tredjedelar av alla värden inom en standardavvikelse från medelvärdet. Man skriver den ofta med den grekiska bokstaven σ.",
+      "ja": "{標準偏差|ひょうじゅんへんさ}は{分散|ぶんさん}の{平方根|へいほうこん}で、センチやクローナのように、もとの{値|あたい}と{同|おな}じ{単位|たんい}をもちます。そのため{分散|ぶんさん}よりわかりやすいです。{正規分布|せいきぶんぷ}では、すべての{値|あたい}のおよそ3{分|ぶん}の2が、{平均|へいきん}から{標準偏差|ひょうじゅんへんさ}1つ{分|ぶん}の{範囲|はんい}に{入|はい}ります。よくギリシャ{文字|もじ}のσ（シグマ）で{表|あらわ}します。"
+     },
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.skraplott",
+   "lemma": "skraplott",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "skraplott",
+    "defSg": "skraplotten",
+    "indefPl": "skraplotter",
+    "defPl": "skraplotterna"
+   },
+   "senses": [
+    {
+     "id": "s.skraplott.1",
+     "ja": "スクラッチくじ",
+     "defSv": "En liten kartong där man skrapar bort ett lager med ett mynt för att se om man har vunnit.",
+     "defJa": "コインなどで{表面|ひょうめん}を{削|けず}って、{当|あ}たりかどうかを{見|み}るくじ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon fick en skraplott i present på sin födelsedag.",
+       "ja": "{彼女|かのじょ}は{誕生日|たんじょうび}のプレゼントにスクラッチくじをもらいました。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "sannolikhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

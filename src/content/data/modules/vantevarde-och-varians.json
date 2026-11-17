@@ -1,0 +1,177 @@
+{
+ "id": "m.vantevarde-och-varians",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Väntevärde och varians",
+ "titleJa": "{期待値|きたいち}と{分散|ぶんさん}",
+ "descriptionSv": "Väntevärde och varians: väntevärde, medelvärde, i genomsnitt, i längden, skraplott, insats, vinst, förlust, lönsam, rättvis, försäkring, premie, risk, varians, standardavvikelse, spridning och avvikelse.",
+ "descriptionJa": "{期待値|きたいち}と{分散|ぶんさん}：{期待値|きたいち}、{平均値|へいきんち}、{平均|へいきん}して、{長|なが}い{目|め}で{見|み}れば、スクラッチくじ、{賭|か}け{金|きん}、{賞金|しょうきん}、{損失|そんしつ}、もうかる、{公平|こうへい}な、{保険|ほけん}、{保険料|ほけんりょう}、リスク、{分散|ぶんさん}、{標準偏差|ひょうじゅんへんさ}、ばらつき、ずれ。",
+ "categoryId": "R06-A02-T04",
+ "tags": [
+  "matematik",
+  "sannolikhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.sannolikhetsfordelningar"
+ ],
+ "related": [],
+ "recommendedOrder": 3247,
+ "words": [
+  {
+   "senseId": "s.väntevärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-genomsnitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-längden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skraplott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insats.2",
+   "active": true
+  },
+  {
+   "senseId": "s.vinst.2",
+   "active": true
+  },
+  {
+   "senseId": "s.förlust.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lönsam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försäkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.premie.1",
+   "active": false
+  },
+  {
+   "senseId": "s.risk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varians.1",
+   "active": false
+  },
+  {
+   "senseId": "s.standardavvikelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spridning.2",
+   "active": false
+  },
+  {
+   "senseId": "s.avvikelse.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Lönar det sig att skrapa?",
+  "paragraphs": [
+   "Jonas köper en skraplott för 30 kronor i matbutiken. Han skrapar och får ingenting. – Nästa gång vinner jag, säger han. Hans flickvän Ella, som är statistiker, börjar räkna på en servett.",
+   "På skraplotten står det att en av tio skraplotter ger en vinst på 100 kronor och att en av tusen ger 10 000 kronor. Väntevärdet är 0,1 · 100 + 0,001 · 10 000 = 20 kronor. Insatsen är 30 kronor. I genomsnitt får man alltså en förlust på 10 kronor per skraplott.",
+   "– Spelet är inte rättvist, säger Ella. Det är bara lönsamt för den som säljer skraplotterna. Om man spelar en gång kan man ha tur, men i längden förlorar man nästan alltid. Väntevärdet är som ett medelvärde för väldigt många spel.",
+   "Ella berättar att försäkringsbolag också räknar med väntevärden. En försäkring kostar en premie varje år. Bolaget vet hur stor risken är att något händer, och premien blir lite större än väntevärdet för vad bolaget måste betala ut.",
+   "Två spel kan ha samma väntevärde men olika spridning. Om man får 20 kronor varje gång är variansen noll. Om en på tusen vinner 20 000 kronor är variansen och standardavvikelsen mycket stora, eftersom avvikelsen från medelvärdet är stor. Jonas tittar på servetten. – Jag köper glass i stället, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket kostar skraplotten?",
+    "options": [
+     "20 kronor",
+     "30 kronor",
+     "10 kronor",
+     "100 kronor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Jonas köper en skraplott för 30 kronor i matbutiken.",
+    "explanationJa": "30クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är väntevärdet för vinsten på en skraplott?",
+    "options": [
+     "30 kronor",
+     "20 kronor",
+     "10 kronor",
+     "100 kronor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Väntevärdet är 0,1 · 100 + 0,001 · 10 000 = 20 kronor.",
+    "explanationJa": "20クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur stor är förlusten per skraplott i genomsnitt?",
+    "options": [
+     "20 kronor",
+     "30 kronor",
+     "10 kronor",
+     "Ingen förlust"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I genomsnitt får man alltså en förlust på 10 kronor per skraplott.",
+    "explanationJa": "1{枚|まい}あたり{平均|へいきん}10クローナの{損|そん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Försäkringsbolaget tar en premie som är lite större än väntevärdet för det som det betalar ut.",
+    "correct": true,
+    "explanationSv": "… premien blir lite större än väntevärdet för vad bolaget måste betala ut.",
+    "explanationJa": "{保険料|ほけんりょう}は{期待値|きたいち}より{少|すこ}し{高|たか}く{設定|せってい}されます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Jonas köper en ny skraplott på slutet.",
+    "correct": false,
+    "explanationSv": "– Jag köper glass i stället, säger han.",
+    "explanationJa": "くじの{代|か}わりにアイスを{買|か}います。"
+   }
+  ],
+  "factSources": [
+   "Påhittad lott med påhittade vinster (inte en verklig produkt). Räkningen är kontrollerad: 0,1 · 100 + 0,001 · 10 000 = 20 kr i väntevärde mot 30 kr i insats ger −10 kr per lott. Väntevärdet för ett tärningskast är 3,5. I en normalfördelning ligger cirka 68 % av värdena inom en standardavvikelse från medelvärdet."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om spel, försäkringar och om det lönar sig i längden.",
+  "discussionPoints": [
+   "Har du köpt en skraplott? Vann du något?",
+   "Varför tror du att människor spelar fast väntevärdet är negativt?",
+   "Vilka försäkringar har du, och varför?",
+   "Vill du hellre ha en säker liten vinst eller en liten chans till en stor vinst?"
+  ]
+ }
+}

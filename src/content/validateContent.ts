@@ -231,6 +231,28 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.utspridd.1', 's.population.2',
   // 0.48 Geometrins grundformer: förväxlas med ord ur samma ordfamilj efter två blindomgångar
   's.symmetrilinje.1', 's.rektangulär.1', 's.rund.1', 's.area.1', 's.kvadratdecimeter.1',
+  // 0.49 Analys & derivata: förväxlas med lutning respektive högsta/lägsta värde
+  's.derivata.1', 's.förändringshastighet.1', 's.extremvärde.2',
+  // 0.49 Linjär algebra: förväxlas med startpunkt, sätta in respektive faktor
+  's.nollvektor.1', 's.substitutionsmetod.1', 's.egenvärde.1',
+  // 0.49 Analys & derivata: förväxlas med derivata respektive tangent efter två blindomgångar
+  's.derivera.1', 's.tangeringspunkt.1',
+  // 0.49 Linjär algebra: förväxlas med riktning respektive koordinat efter två blindomgångar
+  's.vektor.1', 's.komponent.1',
+  // 0.49 Integraler & differentialekvationer: kan inte skiljas från integrera, konstant, sträcka respektive villkor
+  's.primitiv-funktion.1', 's.integrationskonstant.1', 's.tillryggalagd.1', 's.begynnelsevillkor.1',
+  // 0.49 Sannolikhetsteori: abstrakta fackord som förväxlas med synonym eller samma ordfamilj
+  's.slumpförsök.1', 's.komplementhändelse.1', 's.permutation.1', 's.kombinatorik.1', 's.sannolikhetsfördelning.1', 's.väntevärde.1', 's.varians.1',
+  // 0.49 Sannolikhetsteori: förväxlas med sannolikhet efter två blindomgångar
+  's.osannolik.1',
+  // 0.49 Diskret matematik: abstrakta fackord som förväxlas med närliggande ord
+  's.implikation.1', 's.omvändning.1', 's.motsägelsebevis.1', 's.direkt-bevis.1', 's.axiom.1', 's.graf.2', 's.träd.2', 's.komplexitet.1',
+  // 0.49 Diskret matematik: förväxlas med linjär sökning respektive räkna baklänges efter två blindomgångar
+  's.sökning.1', 's.föregående.1',
+  // 0.49 Matematikens specialområden: förväxlas med närliggande fackord
+  's.noggrannhet.2', 's.numerisk.1', 's.startvärde.1', 's.målfunktion.1', 's.kryptografi.1', 's.öppen-nyckel.1',
+  // 0.49 Matematikens specialområden: förväxlas med töja, noggrannhet respektive kryptera efter två blindomgångar
+  's.deformera.1', 's.exakt.1', 's.chiffer.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

@@ -1,0 +1,173 @@
+{
+ "id": "m.linjara-transformationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Linjära transformationer",
+ "titleJa": "{線形変換|せんけいへんかん}",
+ "descriptionSv": "Linjära transformationer: vektor, matris, transformation, origo, rutnät, rotation, moturs, medurs, vinkel, spegla, spegelbild, förstora, skjuvning, projektion, invers och datorgrafik.",
+ "descriptionJa": "{線形変換|せんけいへんかん}：ベクトル、{行列|ぎょうれつ}、{変換|へんかん}、{原点|げんてん}、{方眼|ほうがん}、{回転|かいてん}、{反時計回|はんとけいまわ}りに、{時計回|とけいまわ}りに、{角度|かくど}、{対称|たいしょう}に{移|うつ}す、{鏡|かがみ}に{映|うつ}った{姿|すがた}、{拡大|かくだい}する、せん{断|だん}、{射影|しゃえい}、{逆行列|ぎゃくぎょうれつ}、コンピューターグラフィックス。",
+ "categoryId": "R06-A02-T03",
+ "tags": [
+  "matematik",
+  "linjär algebra"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.egenvarden-och-egenvektorer"
+ ],
+ "related": [],
+ "recommendedOrder": 3237,
+ "words": [
+  {
+   "senseId": "s.vektor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transformation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.origo.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rutnät.2",
+   "active": false
+  },
+  {
+   "senseId": "s.rotation.2",
+   "active": true
+  },
+  {
+   "senseId": "s.moturs.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medurs.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vinkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spegla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spegelbild.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förstora.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjuvning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.projektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.invers.1",
+   "active": false
+  },
+  {
+   "senseId": "s.datorgrafik.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Matriser i spelvärlden",
+  "paragraphs": [
+   "Yuki arbetar med datorgrafik på ett spelföretag i Stockholm. I hennes spel springer en liten katt runt i en stad. Varje gång katten vrider sig, hoppar eller blir större räknar datorn med en matris.",
+   "En linjär transformation flyttar alla punkter enligt samma regel. Origo stannar på samma plats, och rutnätet förblir jämnt: raka linjer blir inte böjda. Därför kan varje sådan transformation skrivas som en matris som verkar på en vektor.",
+   "När katten svänger gör datorn en rotation. Vinkeln mäts i grader, och i matematik vrider man oftast moturs. Om katten ska vända tillbaka vrider datorn lika många grader medurs. Det är matrisens invers.",
+   "Ibland vill Yuki spegla katten, så att den springer åt andra hållet. Då blir katten sin egen spegelbild. Hon kan också förstora katten när den äter en stor fisk. En skjuvning gör att katten lutar framåt när den springer snabbt.",
+   "Kattens skugga på marken räknas fram med en projektion. Den har ingen invers, eftersom man inte kan se hur hög katten är bara genom att titta på skuggan. – Jag trodde aldrig att jag skulle använda linjär algebra varje dag, säger Yuki och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad räknar datorn med när katten vrider sig eller blir större?",
+    "options": [
+     "En karta",
+     "En matris",
+     "En klocka",
+     "En tabell med priser"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Varje gång katten vrider sig, hoppar eller blir större räknar datorn med en matris.",
+    "explanationJa": "{行列|ぎょうれつ}で{計算|けいさん}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad händer med origo vid en linjär transformation?",
+    "options": [
+     "Det stannar på samma plats",
+     "Det flyttas till höger",
+     "Det försvinner",
+     "Det blir en linje"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Origo stannar på samma plats …",
+    "explanationJa": "{原点|げんてん}は{動|うご}きません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur vänder katten tillbaka efter en rotation moturs?",
+    "options": [
+     "Datorn speglar katten",
+     "Datorn vrider lika många grader medurs",
+     "Datorn förstorar katten",
+     "Datorn gör en projektion"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om katten ska vända tillbaka vrider datorn lika många grader medurs.",
+    "explanationJa": "{同|おな}じ{角度|かくど}だけ{時計回|とけいまわ}りに{回|まわ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En skjuvning gör att katten lutar framåt.",
+    "correct": true,
+    "explanationSv": "En skjuvning gör att katten lutar framåt när den springer snabbt …",
+    "explanationJa": "せん{断|だん}{変換|へんかん}で{猫|ねこ}が{前|まえ}に{傾|かたむ}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan räkna ut hur hög katten är bara genom att titta på skuggan.",
+    "correct": false,
+    "explanationSv": "… man inte kan se hur hög katten är bara genom att titta på skuggan.",
+    "explanationJa": "{影|かげ}だけでは{猫|ねこ}の{高|たか}さはわかりません。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen. Matematiken är kontrollerad: rotation, spegling, förstoring och skjuvning är inverterbara linjära avbildningar; en projektion har determinanten 0 och saknar invers."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om spel, bilder och hur saker rör sig på en skärm.",
+  "discussionPoints": [
+   "Spelar du spel med datorgrafik? Vilka?",
+   "Vad i vardagen vrider man medurs, och vad vrider man moturs?",
+   "Var ser du spegelbilder och skuggor i vardagen?",
+   "Varför tror du att datorer behöver räkna så snabbt i spel?"
+  ]
+ }
+}

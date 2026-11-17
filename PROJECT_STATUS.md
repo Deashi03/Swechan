@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.48.0 (släppt 2026-11-17) · **Senast uppdaterad:** 2026-11-17 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.49.0 (släppt 2026-11-17) · **Senast uppdaterad:** 2026-11-17 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 307 publicerade moduler. 1 302 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) och *Matematikens grunder* (R06-A01, 0.48). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 349 publicerade moduler. 1 344 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48) och *Avancerad matematik* (R06-A02, 0.49). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Avancerad matematik* (R06-A02) i *Matematik & naturvetenskap*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Fysik* (R06-A03) i *Matematik & naturvetenskap*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 14 911 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 15 135 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp: överämnet *Avancerad matematik* (R06-A02) i *Matematik & naturvetenskap*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp: överämnet *Fysik* (R06-A03) i *Matematik & naturvetenskap*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -186,6 +186,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Funktioner & grafer: `s.funktion.2`, `s.bero-på.2`, `s.linjär.2`, `s.i-takt-med.1`, `s.samband.1`, `s.proportionalitet.1`
   - Statistikens grunder: `s.data.1`, `s.datamängd.1`, `s.i-tabellform.1`, `s.föra-in.1`, `s.lägesmått.1`, `s.förekomma.2`, `s.korrelation.1`, `s.relativ-frekvens.1`, `s.jämnt-fördelad.1`, `s.i-genomsnitt.1`, `s.skilja-sig-åt.1`, `s.mittersta.1`, `s.spridningsmått.1`, `s.spridning.2`, `s.utspridd.1`, `s.population.2`
   - Förväxlingarna: *addition/lägga ihop*, *subtraktion/dra ifrån*, *överslag/uppskattning*, *delbar/delare*, *storleksordning/tiopotens*, *rimlighet/rimlig*, *avrundning/avrunda*, *närmevärde/avrunda*, *procent/procentform*, *andel/majoritet*, *ökning/fördubbla*, *minskning/halvera*, *storhet/enhet*, *variera/rörlig*, *potens/exponent*, *ordningsföljd/steg för steg*, *isolera/flytta över*, *olikhet/olikhetstecken*, *symmetrilinje/symmetrisk*, *rektangulär/rektangel*, *rund/cirkel*, *area/sammansatt figur*, *kvadratdecimeter/kvadratcentimeter*, *linjär/rak*, *samband/i takt med/proportionalitet*, *data/datamängd*, *median/mittersta*, *spridning/utspridd*, *variationsbredd/spridningsmått*, *korrelation/orsakssamband*. Granskaren valde ofta rätt ord men med medelsäkerhet och nämnde synonymen som lika bra; *addition*, *subtraktion* och *procent* kan produktägaren välja att godkänna ändå.
+- **Från 0.49 (41 ord):**
+  - Analys & derivata: `s.derivata.1`, `s.derivera.1`, `s.förändringshastighet.1`, `s.extremvärde.2`, `s.tangeringspunkt.1`
+  - Integraler & differentialekvationer: `s.primitiv-funktion.1`, `s.integrationskonstant.1`, `s.tillryggalagd.1`, `s.begynnelsevillkor.1`
+  - Linjär algebra: `s.vektor.1`, `s.nollvektor.1`, `s.komponent.1`, `s.substitutionsmetod.1`, `s.egenvärde.1`
+  - Sannolikhetsteori: `s.slumpförsök.1`, `s.osannolik.1`, `s.komplementhändelse.1`, `s.permutation.1`, `s.kombinatorik.1`, `s.sannolikhetsfördelning.1`, `s.väntevärde.1`, `s.varians.1`
+  - Diskret matematik: `s.implikation.1`, `s.omvändning.1`, `s.motsägelsebevis.1`, `s.direkt-bevis.1`, `s.axiom.1`, `s.graf.2`, `s.träd.2`, `s.sökning.1`, `s.föregående.1`, `s.komplexitet.1`
+  - Matematikens specialområden: `s.deformera.1`, `s.exakt.1`, `s.noggrannhet.2`, `s.numerisk.1`, `s.startvärde.1`, `s.målfunktion.1`, `s.chiffer.1`, `s.kryptografi.1`, `s.öppen-nyckel.1`
+  - Förväxlingarna: *derivata/derivera/lutning*, *tangeringspunkt/tangent/nudda*, *primitiv funktion/integrera*, *integrationskonstant/konstant*, *tillryggalagd/sträcka*, *begynnelsevillkor/villkor*, *vektor/riktning*, *komponent/koordinat*, *egenvärde/faktor*, *osannolik/sannolikhet*, *komplementhändelse/händelse*, *permutation/ordningsföljd*, *väntevärde/medelvärde*, *varians/spridning*, *implikation/tillräckligt villkor*, *omvändning/nödvändigt villkor*, *motsägelsebevis/motsägelse*, *graf/nätverk*, *träd/hierarki*, *sökning/linjär sökning*, *deformera/töja*, *exakt/noggrannhet*, *chiffer/kryptera/kryptografi*, *målfunktion/maximera*. Högskolematematikens fackord ligger ofta i par (verb/substantiv, begrepp/metod) som inte går att skilja i en stillbild.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -466,6 +474,15 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **0.48, fakta (står i `factSources`, kan ändras):** 0 som naturligt tal i svensk skola, Sveriges lägsta punkt i Kristianstad (cirka 2,4 m under havet), udda och jämna husnummer på var sin sida, liggande stolen, multiplikationstabellen till 10 × 10, öresavrundning sedan 30 september 2010, moms 25 %, mjölk 3 % och lättmjölk 0,5 % fett, dricks cirka 10 %, kommunalskatt cirka 32 %, Stockholm–Göteborg cirka 470 km, åldersgräns 15 år för film, luftkvalitetsförordningen (2010:477), F = 1,8·C + 32, taxibolag sätter egna priser och visar jämförpris, BVC:s tillväxtkurvor, felmarginal ±4 procentenheter för 640 svar (egen beräkning), SCB redovisar lön som median (inte kontrollerat), vinkelsumman 180°, Pythagoras sats känd i Babylonien (inte kontrollerat), 1 ha = 10 000 m², 1 dm³ = 1 liter
 - **0.48, bilder:** bilderna visar siffror och räknetecken men inga ord; åttahörningen är en röd stoppskylt utan text; enhetsbilden visar m, kg och kr. Flera matematikord blev utan bild trots att granskaren valde rätt ord, eftersom en synonym nämndes som lika bra (se *Saknade bilder*).
 - **0.48, arbetsform:** etappen kördes i samma session som 0.40, 0.45–0.47 på produktägarens uttryckliga begäran. Containern startades om två gånger och användningsgränsen nåddes en gång; gruppagenterna återupptogs från sina worktrees.
+- **0.49, svenska:**
+  - ord och böjning att kontrollera mot SAOL/SO: *sinus*/*cosinus* (sinusen, ingen plural), *indata* (en, indatan), *matrjosjka*, *möbiusband*, *klockaritmetik*, *fyrfältstabell*, *lottorad*, *elementvis*, *korsvis*, *skjuvning*, *spegelvänd* (B2), *substitutionsmetod*/*additionsmetod* (obestämd form som lemma), *maximipunkt*/*minimipunkt*, *teckentabell* (alt. *teckenschema*), *största gemensamma delare* i plural, *falskt positiv* och *lika sannolik* (handskriven böjning), *femtio-femtio* (vardagligt)
+  - *snitt*, *sats*, *mängd*, *konjunktion* och *komplement* har bara den matematiska betydelsen som egen post; vardagsbetydelserna nämns i förklaringarna
+  - *talplan* används som lemma för "det komplexa talplanet"; *munk* (bakverk) beskrivs med hål, med en not om svenska munkar utan hål
+- **0.49, japanska:**
+  - termer att granska: {接線|せっせん}が{水平|すいへい}な{変曲点|へんきょくてん} (*terrasspunkt*), {零点|れいてん} (*nollställe*), {増減表|ぞうげんひょう} (*teckentabell*), {連鎖律|れんさりつ} (*kedjeregel*), {方向場|ほうこうば} (*riktningsfält*), {倍増時間|ばいぞうじかん} (*fördubblingstid*), {下端|かたん}/{上端|じょうたん}, たすき{掛|が}け (*korsvis*), {正方|せいほう}の (*kvadratisk*), せん{断|だん} (*skjuvning*), {添|そ}え{字|じ} (*index*), {正則|せいそく}な (*inverterbar*), {四分割表|しぶんかつひょう} (*fyrfältstabell*), {迅速検査|じんそくけんさ} (*snabbtest*), ekvivalens och omvändning (命題の逆), {時計|とけい}の{算術|さんじゅつ} (*klockaritmetik*, ingen etablerad term), {複素数平面|ふくそすうへいめん} (*talplan*)
+- **0.49, fakta (står i `factSources`, kan ändras):** Stockholm–Uppsala cirka 70 km, Göteborg–Malmö cirka 270 km, skrivsättet ]a, b[ i Sverige, Newtons avsvalningslag och 70-regeln, PageRank (1998), gångbroar och resonans (Millennium Bridge 2000), registreringsskyltar med bokstav som sista tecken sedan 2019 (bör kontrolleras), kroppslängd ungefär normalfördelad, Euler och Königsbergs broar 1736, tvillingprimtalsförmodan obevisad (2026), Japan 50/60 Hz, kontrollsiffran i personnumret (Luhn), Beurling och Geheimschreiber 1940, Kantorovitj (1939) och Dantzig (1947), Erlang (1909), George Box. Räkneexempel är påhittade men kontrollräknade.
+- **0.49, bilder:** bokstäver som variabelnamn (x, y, t, i, σ) och notationen P(A | B) förekommer; *tillryggalagd* visar "12 km"; Caesarchiffret i *chiffer* visar bokstäverna A–I men ordet saknar bild.
+- **0.49, arbetsform:** etappen kördes direkt efter 0.48 i samma session på produktägarens uttryckliga begäran ("fortsätt direkt efter avancerad matematik-modulerna").
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -484,11 +501,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v52`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v53`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Gränsvärden* (SWC-VET-02-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Analys & derivata* (R06-A02-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Sträcka och förflyttning* (SWC-VET-03-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Mekanik* (R06-A03-T01) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp. Integreras en grupp före gruppen som kommer före den i katalogen (0.48: T05 före T04), sätt `PREV_FALLBACK` till den senast inlagda modulen och kör om gruppens första skript när den tidigare gruppen är inlagd, så att förkunskapen pekar rätt.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.

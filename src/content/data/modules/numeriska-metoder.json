@@ -1,0 +1,179 @@
+{
+ "id": "m.numeriska-metoder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Numeriska metoder",
+ "titleJa": "{数値計算法|すうちけいさんほう}",
+ "descriptionSv": "Numeriska metoder: algoritm, numerisk, exakt, närmevärde, decimal, avrunda, avrundningsfel, noggrannhet, gissning, startvärde, iteration, konvergera, intervallhalvering, simulera, steglängd, väderprognos och miniräknare.",
+ "descriptionJa": "{数値計算法|すうちけいさんほう}：アルゴリズム、{数値的|すうちてき}な、{厳密|げんみつ}な、{近似値|きんじち}、{小数点以下|しょうすうてんいか}の{位|くらい}、{四捨五入|ししゃごにゅう}する、{丸|まる}め{誤差|ごさ}、{精度|せいど}、{推測|すいそく}、{初期値|しょきち}、{反復|はんぷく}、{収束|しゅうそく}する、{二分法|にぶんほう}、シミュレートする、{刻|きざ}み{幅|はば}、{天気予報|てんきよほう}、{電卓|でんたく}。",
+ "categoryId": "R06-A02-T06",
+ "tags": [
+  "matematik",
+  "numeriska metoder"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.komplexa-tal"
+ ],
+ "related": [],
+ "recommendedOrder": 3264,
+ "words": [
+  {
+   "senseId": "s.algoritm.1",
+   "active": false
+  },
+  {
+   "senseId": "s.numerisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närmevärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decimal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avrunda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avrundningsfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.noggrannhet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.gissning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.startvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.iteration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konvergera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.intervallhalvering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.simulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.steglängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderprognos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miniräknare.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Datorn som räknar steg för steg",
+  "paragraphs": [
+   "Elin gör praktik på en arbetsplats där man gör väderprognoser. Hennes handledare Hiroshi visar henne de stora datorerna. – Vädret går inte att räkna ut exakt med en formel, säger han. Vi använder numeriska metoder. Datorn följer en algoritm och räknar fram närmevärden.",
+   "Hiroshi börjar med ett enkelt exempel: kvadratroten ur 2. Det exakta värdet har oändligt många decimaler. Han tar 1 som startvärde. Sedan räknar han ut medelvärdet av 1 och 2/1 och får 1,5. Han gör samma sak med 1,5 och får ungefär 1,4167. Efter tre iterationer får han 1,414216. Det rätta värdet börjar med 1,414214. Närmevärdena konvergerar alltså snabbt mot √2.",
+   "– Men datorn kan inte spara alla decimaler, säger Hiroshi. Den måste avrunda, och då blir det små avrundningsfel. Om datorn räknar miljoner steg, kan felen växa. Därför kontrollerar vi alltid noggrannheten.",
+   "Sedan visar han intervallhalvering. – Det är som när barn ska gissa ett tal mellan 1 och 100, säger han. Man börjar i mitten och får höra ”högre” eller ”lägre”. Efter varje gissning är intervallet hälften så stort. På samma sätt kan datorn hitta lösningen till en ekvation. Det går mycket snabbare än med en miniräknare.",
+   "Till sist får Elin se hur prognosen görs. Datorn simulerar luften över hela Europa och räknar fram hur vädret ändras, med en steglängd på några minuter. Med en kortare steglängd skulle väderprognosen bli bättre, men då skulle datorn inte bli klar i tid. – Vi måste alltid välja mellan tid och noggrannhet, säger Hiroshi."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför använder man numeriska metoder för att räkna fram vädret?",
+    "options": [
+     "Datorerna är gamla",
+     "Det är billigare att gissa",
+     "Formlerna är hemliga",
+     "Vädret går inte att räkna ut exakt med en formel"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Vädret går inte att räkna ut exakt med en formel, säger han. Vi använder numeriska metoder.",
+    "explanationJa": "{天気|てんき}は{公式|こうしき}で{厳密|げんみつ}に{計算|けいさん}できないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket startvärde väljer Hiroshi för kvadratroten ur 2?",
+    "options": [
+     "2",
+     "1",
+     "1,5",
+     "0"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han tar 1 som startvärde.",
+    "explanationJa": "{初期値|しょきち}は1です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir det avrundningsfel i datorn?",
+    "options": [
+     "Hiroshi räknar fel",
+     "Datorn kan inte spara alla decimaler",
+     "Formeln är fel",
+     "Startvärdet är för litet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Men datorn kan inte spara alla decimaler, säger Hiroshi. Den måste avrunda …",
+    "explanationJa": "コンピューターはすべての{桁|けた}を{保存|ほぞん}できないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Vid intervallhalvering blir intervallet hälften så stort efter varje gissning.",
+    "correct": true,
+    "explanationSv": "Efter varje gissning är intervallet hälften så stort.",
+    "explanationJa": "{毎回|まいかい}、{区間|くかん}は{半分|はんぶん}になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En kortare steglängd skulle göra väderprognosen sämre.",
+    "correct": false,
+    "explanationSv": "Med en kortare steglängd skulle väderprognosen bli bättre, men då skulle datorn inte bli klar i tid.",
+    "explanationJa": "{刻|きざ}み{幅|はば}を{短|みじか}くすると{予報|よほう}はよくなりますが、{時間|じかん}がかかります。"
+   }
+  ],
+  "factSources": [
+   "Påhittad scen. Räkningarna är kontrollerade (Herons/babyloniska metoden x → (x + 2/x)/2 med startvärdet 1): 1,5; 1,41667; 1,414216; √2 = 1,4142136 …",
+   "Med intervallhalvering räcker sju gissningar för talen 1–100, eftersom 2⁷ = 128.",
+   "Att numeriska väderprognoser räknar i tidssteg på några minuter är en förenkling; steglängden varierar mellan olika modeller."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att räkna ungefär och att räkna exakt.",
+  "discussionPoints": [
+   "När räcker det att räkna ungefär, och när måste man räkna exakt?",
+   "Hur skulle du gissa ett tal mellan 1 och 1 000 så snabbt som möjligt?",
+   "Litar du på väderprognosen? Varför eller varför inte?",
+   "Har du varit med om att ett litet fel blev ett stort problem?"
+  ]
+ }
+}

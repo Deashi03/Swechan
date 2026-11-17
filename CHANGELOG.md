@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.49.0 – 2026-11-17
+
+42 nya moduler som gör överämnet *Avancerad matematik* (R06-A02) komplett. Modulerna lär ut det svenska ordförrådet för gymnasie- och högskolematematik med vardagliga exempel (hastighet, ränta, spel, nätverk, kryptering). Varje nytt modulord har en egen bild, utom de 41 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 689 målord)
+- **Analys & derivata** (3211–3217): gränsvärden, kontinuitet, derivatans betydelse, deriveringsregler, tangenter och förändring, extremvärden och optimeringsproblem.
+- **Integraler & differentialekvationer** (3221–3227): primitiva funktioner, bestämd integral, area under kurvan, integrationsmetoder, differentialekvationer, begynnelsevillkor och modellering av förändring.
+- **Linjär algebra** (3231–3237): vektorer, matriser, matrisoperationer, linjära ekvationssystem, determinanter, egenvärden och egenvektorer samt linjära transformationer.
+- **Sannolikhetsteori** (3241–3247): slumpförsök och utfall, händelser och sannolikheter, betingad sannolikhet, oberoende händelser, kombinatorik, sannolikhetsfördelningar samt väntevärde och varians.
+- **Diskret matematik** (3251–3257): mängder och relationer, logiska operatorer, bevismetoder, grafer och nätverk, träd och sökning, rekursion och algoritmisk komplexitet.
+- **Matematikens specialområden** (3261–3267): talteori, topologi, komplexa tal, numeriska metoder, optimeringsteori, kryptografisk matematik och matematiska modeller.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 236 nya ordposter.
+- 25 nya betydelser på befintliga poster, bland andra *gränsvärde* och *extremvärde* (matematik), *element*, *index*, *belopp* och *rotation* (linjär algebra), *oberoende*, *urna*, *fakultet*, *diskret*, *insats* och *vinst* (sannolikhet), *union*, *graf*, *kant*, *träd*, *rot* och *löv* (diskret matematik) samt *munk*, *noggrannhet* och *knäcka* (specialområden). Den gamla betydelsen har fått en etikett.
+- Namnen *Leonhard*, *Euler*, *Königsberg*, *Fibonacci* och *Fibonaccis* är tillagda i grundordförrådet, utan omsortering.
+- Parallella grupper ville skapa samma poster (*nollställe*, *formelsamling*, *sinus*, *cosinus*). Posten finns bara i den grupp som kommer först i katalogen, och de andra refererar dess `senseId`.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Fysik* (R06-A03): Mekanik → Sträcka och förflyttning.
+
+### Bilder (224 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `analysis.ts`, `integrals.ts`, `linearAlgebra.ts`, `probability.ts`, `discreteMath.ts` och `mathSpecial.ts`. Bilderna visar siffror, matematiska tecken och variabelnamn men inga ord.
+- 217 symbol- och adjektivbilder blindtestades. 176 klarade testet efter högst två omgångar.
+- **41 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Blindtestet hittade att *moturs*/*medurs* var lätta att läsa åt fel håll; bilderna har nu tre pilhuvuden och klarade omgång 2.
+
+Service workern är `swechan-v53`.
+
+
 ## 0.48.0 – 2026-11-17
 
 42 nya moduler som gör överämnet *Matematikens grunder* (R06-A01) komplett, det första överämnet i *Matematik & naturvetenskap* (R06). Modulerna lär ut det svenska ordförrådet för skolmatematik, inte matematiken i sig. Varje nytt modulord har en egen bild, utom de 46 ord som underkändes i två blindtestomgångar.

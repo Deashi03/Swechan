@@ -1,0 +1,290 @@
+{
+ "entries": [
+  {
+   "id": "e.kryptografi",
+   "lemma": "kryptografi",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "kryptografi",
+    "defSg": "kryptografin",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.kryptografi.1",
+     "ja": "{暗号学|あんごうがく}、{暗号技術|あんごうぎじゅつ}",
+     "defSv": "Läran om hur man skriver meddelanden så att bara den som ska läsa dem kan förstå dem.",
+     "defJa": "{読|よ}むべき{人|ひと}だけが{理解|りかい}できるように{情報|じょうほう}を{書|か}く{方法|ほうほう}についての{学問|がくもん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kryptografi skyddar dina kortbetalningar på nätet.",
+       "ja": "{暗号技術|あんごうぎじゅつ}は、インターネットでのカード{決済|けっさい}を{守|まも}っています。"
+      }
+     ],
+     "explanation": {
+      "sv": "Förr användes kryptografi mest av kungar och i krig. I dag använder alla kryptografi varje dag, ofta utan att veta om det: när man skickar meddelanden i telefonen, går in på bankens sida eller betalar med kort. Modern kryptografi bygger på matematik, särskilt på talteori.",
+      "ja": "{昔|むかし}、{暗号|あんごう}を{使|つか}うのは{主|おも}に{王|おう}や{戦争|せんそう}のときでした。{今|いま}では、{誰|だれ}もが{毎日|まいにち}、{気|き}づかないうちに{暗号技術|あんごうぎじゅつ}を{使|つか}っています。スマートフォンでメッセージを{送|おく}るとき、{銀行|ぎんこう}にログインするとき、カードで{支払|しはら}うときなどです。{現代|げんだい}の{暗号|あんごう}は{数学|すうがく}、とくに{整数論|せいすうろん}に{基|もと}づいています。"
+     },
+     "tags": [
+      "matematik",
+      "kryptografi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.kryptera",
+   "lemma": "kryptera",
+   "pos": "verb",
+   "level": "C1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "kryptera",
+    "present": "krypterar",
+    "past": "krypterade",
+    "supine": "krypterat",
+    "imperative": "kryptera",
+    "group": "1",
+    "pastParticiple": "krypterad"
+   },
+   "senses": [
+    {
+     "id": "s.kryptera.1",
+     "ja": "{暗号化|あんごうか}する",
+     "defSv": "Göra om en text eller annan information med en hemlig regel, så att andra inte kan läsa den.",
+     "defJa": "{他|ほか}の{人|ひと}に{読|よ}まれないように、{秘密|ひみつ}の{規則|きそく}で{文|ぶん}や{情報|じょうほう}を{変換|へんかん}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Appen krypterar alla meddelanden innan de skickas.",
+       "ja": "そのアプリは、すべてのメッセージを{送信前|そうしんまえ}に{暗号化|あんごうか}します。"
+      }
+     ],
+     "explanation": {
+      "sv": "För att kryptera, och för att göra om den krypterade texten till vanlig text igen, behöver man en nyckel, som är ett hemligt tal eller en hemlig kod. Utan nyckeln ser den krypterade texten ut som en blandning av tecken utan mening.",
+      "ja": "{暗号化|あんごうか}するときにも、{暗号化|あんごうか}された{文|ぶん}を{元|もと}の{文|ぶん}に{戻|もど}す（dekryptera）ときにも、{秘密|ひみつ}の{数|かず}やコードである「{鍵|かぎ}」が{必要|ひつよう}です。{鍵|かぎ}がなければ、{暗号化|あんごうか}された{文|ぶん}は{意味|いみ}のない{記号|きごう}の{並|なら}びにしか{見|み}えません。"
+     },
+     "frame": {
+      "subject": "Banken",
+      "complement": "meddelandet"
+     },
+     "tags": [
+      "matematik",
+      "kryptografi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.chiffer",
+   "lemma": "chiffer",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "chiffer",
+    "defSg": "chiffret",
+    "indefPl": "chiffer",
+    "defPl": "chiffren"
+   },
+   "senses": [
+    {
+     "id": "s.chiffer.1",
+     "ja": "{暗号|あんごう}（の{方式|ほうしき}）",
+     "defSv": "Ett system för att byta ut bokstäver eller tecken mot andra, så att en text blir hemlig.",
+     "defJa": "{文|ぶん}を{秘密|ひみつ}にするために、{文字|もじ}や{記号|きごう}を{別|べつ}のものに{置|お}き{換|か}える{方式|ほうしき}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Barnen skrev hemliga brev med ett enkelt chiffer.",
+       "ja": "{子|こ}どもたちは{簡単|かんたん}な{暗号|あんごう}で{秘密|ひみつ}の{手紙|てがみ}を{書|か}きました。"
+      }
+     ],
+     "explanation": {
+      "sv": "Ett av de äldsta kända chiffren användes redan i Rom för 2 000 år sedan: varje bokstav flyttas tre steg i alfabetet, så att A blir D och B blir E. Det är lätt att knäcka, eftersom det bara finns 25 olika sätt att flytta bokstäverna. Moderna chiffer bygger på matematik och är mycket svårare.",
+      "ja": "もっとも{古|ふる}い{暗号|あんごう}の{一|ひと}つは、2000{年前|ねんまえ}のローマですでに{使|つか}われていました。{各文字|かくもじ}をアルファベットで3つずらし、AをDに、BをEにするものです。ずらし{方|かた}は25{通|とお}りしかないので、{簡単|かんたん}に{解読|かいどく}できます。{現代|げんだい}の{暗号|あんごう}は{数学|すうがく}に{基|もと}づいていて、ずっと{難|むずか}しくなっています。"
+     },
+     "tags": [
+      "matematik",
+      "kryptografi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.öppen-nyckel",
+   "lemma": "öppen nyckel",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "öppen nyckel",
+    "defSg": "öppna nyckeln",
+    "indefPl": "öppna nycklar",
+    "defPl": "öppna nycklarna"
+   },
+   "senses": [
+    {
+     "id": "s.öppen-nyckel.1",
+     "ja": "{公開鍵|こうかいかぎ}",
+     "defSv": "En nyckel som alla får se och använda för att kryptera meddelanden till en viss person. Bara den personen har den hemliga nyckel som behövs för att läsa dem.",
+     "defJa": "{誰|だれ}でも{見|み}て、ある{人|ひと}{宛|あ}てのメッセージを{暗号化|あんごうか}するのに{使|つか}える{鍵|かぎ}。{読|よ}むのに{必要|ひつよう}な{秘密|ひみつ}の{鍵|かぎ}はその{人|ひと}だけが{持|も}っている。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon skickade sin öppna nyckel till alla kollegor.",
+       "ja": "{彼女|かのじょ}は{自分|じぶん}の{公開鍵|こうかいかぎ}を{同僚|どうりょう}{全員|ぜんいん}に{送|おく}りました。"
+      }
+     ],
+     "explanation": {
+      "sv": "Det är som ett hänglås som man delar ut till alla: vem som helst kan låsa en låda med det, men bara den som har nyckeln kan öppna lådan. Metoden började användas på 1970-talet. En känd metod bygger på att det är lätt att ta två stora primtal gånger varandra, men mycket svårt att göra primtalsfaktoriseringen av svaret.",
+      "ja": "{誰|だれ}にでも{配|くば}る{南京錠|なんきんじょう}のようなものです。{誰|だれ}でもそれで{箱|はこ}に{鍵|かぎ}をかけられますが、{箱|はこ}を{開|あ}けられるのは{鍵|かぎ}を{持|も}っている{人|ひと}だけです。この{方法|ほうほう}は1970{年代|ねんだい}に{使|つか}われ{始|はじ}めました。{有名|ゆうめい}な{方式|ほうしき}の{一|ひと}つは、{大|おお}きな{素数|そすう}{二|ふた}つを{掛|か}けるのは{簡単|かんたん}でも、その{答|こた}えを{素因数分解|そいんすうぶんかい}するのはとても{難|むずか}しい、ということを{利用|りよう}しています。"
+     },
+     "tags": [
+      "matematik",
+      "kryptografi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.envägsfunktion",
+   "lemma": "envägsfunktion",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "envägsfunktion",
+    "defSg": "envägsfunktionen",
+    "indefPl": "envägsfunktioner",
+    "defPl": "envägsfunktionerna"
+   },
+   "senses": [
+    {
+     "id": "s.envägsfunktion.1",
+     "ja": "{一方向関数|いちほうこうかんすう}",
+     "defSv": "En räkning som är lätt att göra men nästan omöjlig att göra baklänges.",
+     "defJa": "{計算|けいさん}するのは{簡単|かんたん}でも、{逆|ぎゃく}にたどるのはほとんど{不可能|ふかのう}な{計算|けいさん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Att ta två stora primtal gånger varandra fungerar som en envägsfunktion.",
+       "ja": "{大|おお}きな{素数|そすう}{二|ふた}つを{掛|か}け{合|あ}わせることは、{一方向関数|いちほうこうかんすう}のように{働|はたら}きます。"
+      }
+     ],
+     "explanation": {
+      "sv": "Man kan jämföra med att blanda färger: det är lätt att blanda gul och blå färg till grön, men nästan omöjligt att få tillbaka den gula och den blå. Envägsfunktioner används till exempel för att spara lösenord. Webbplatsen sparar inte själva lösenordet, utan bara svaret från en envägsfunktion.",
+      "ja": "{絵|え}の{具|ぐ}を{混|ま}ぜることにたとえられます。{黄色|きいろ}と{青|あお}を{混|ま}ぜて{緑|みどり}にするのは{簡単|かんたん}ですが、{元|もと}の{黄色|きいろ}と{青|あお}に{戻|もど}すのはほとんど{不可能|ふかのう}です。{一方向関数|いちほうこうかんすう}は、たとえばパスワードの{保存|ほぞん}に{使|つか}われます。ウェブサイトはパスワードそのものではなく、{一方向関数|いちほうこうかんすう}で{計算|けいさん}した{結果|けっか}だけを{保存|ほぞん}します。"
+     },
+     "tags": [
+      "matematik",
+      "kryptografi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.digital-signatur",
+   "lemma": "digital signatur",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "digital signatur",
+    "defSg": "digitala signaturen",
+    "indefPl": "digitala signaturer",
+    "defPl": "digitala signaturerna"
+   },
+   "senses": [
+    {
+     "id": "s.digital-signatur.1",
+     "ja": "{電子署名|でんししょめい}",
+     "defSv": "En kod som visar vem som har skickat ett meddelande eller skrivit under en fil, och att ingen har ändrat innehållet.",
+     "defJa": "{誰|だれ}がメッセージを{送|おく}ったか、またはファイルに{署名|しょめい}したかを{示|しめ}し、{内容|ないよう}が{変|か}えられていないことを{保証|ほしょう}するコード。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Avtalet skrevs under med en digital signatur.",
+       "ja": "その{契約|けいやく}には{電子署名|でんししょめい}で{署名|しょめい}されました。"
+      }
+     ],
+     "explanation": {
+      "sv": "En digital signatur fungerar som en underskrift med penna, men den är mycket svårare att fuska med. Den görs med personens hemliga nyckel och kan kontrolleras av alla som har personens öppna nyckel. I Sverige skriver många under avtal och papper till myndigheter med en e-legitimation, som bygger på samma idé.",
+      "ja": "{電子署名|でんししょめい}は{手書|てが}きのサインのようなものですが、{偽造|ぎぞう}するのはずっと{難|むずか}しいです。その{人|ひと}の{秘密|ひみつ}の{鍵|かぎ}で{作|つく}られ、その{人|ひと}の{公開鍵|こうかいかぎ}を{持|も}っている{人|ひと}なら{誰|だれ}でも{確|たし}かめられます。スウェーデンでは、{多|おお}くの{人|ひと}が{同|おな}じしくみの{電子身分証明|でんしみぶんしょうめい}（e-legitimation）で{契約|けいやく}や{役所|やくしょ}への{書類|しょるい}に{署名|しょめい}しています。"
+     },
+     "tags": [
+      "matematik",
+      "kryptografi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.kontrollsiffra",
+   "lemma": "kontrollsiffra",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "kontrollsiffra",
+    "defSg": "kontrollsiffran",
+    "indefPl": "kontrollsiffror",
+    "defPl": "kontrollsiffrorna"
+   },
+   "senses": [
+    {
+     "id": "s.kontrollsiffra.1",
+     "ja": "チェックディジット、{検査数字|けんさすうじ}",
+     "defSv": "En extra siffra i slutet av ett nummer. Man räknar fram den från de andra siffrorna för att se om något är fel skrivet.",
+     "defJa": "{番号|ばんごう}の{最後|さいご}につける{追加|ついか}の{数字|すうじ}。{書|か}き{間違|まちが}いがないかを{確|たし}かめるために、ほかの{数字|すうじ}から{計算|けいさん}して{求|もと}める。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Den sista siffran i personnumret är en kontrollsiffra.",
+       "ja": "{個人番号|こじんばんごう}の{最後|さいご}の{数字|すうじ}はチェックディジットです。"
+      }
+     ],
+     "explanation": {
+      "sv": "Kontrollsiffror finns i personnummer, kontonummer, streckkoder och kortnummer. Om man skriver fel på en siffra, stämmer inte kontrollsiffran, och datorn säger till direkt. En kontrollsiffra skyddar inte mot den som vill fuska. Den är till för att hitta misstag.",
+      "ja": "チェックディジットは、{個人番号|こじんばんごう}、{口座番号|こうざばんごう}、バーコード、カード{番号|ばんごう}などについています。{数字|すうじ}を{一|ひと}つ{書|か}き{間違|まちが}えるとチェックディジットが{合|あ}わなくなり、コンピューターがすぐに{知|し}らせてくれます。{不正|ふせい}を{防|ふせ}ぐものではなく、{間違|まちが}いを{見|み}つけるためのものです。"
+     },
+     "tags": [
+      "matematik",
+      "kryptografi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,173 @@
+{
+ "id": "m.mangder-och-relationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Mängder och relationer",
+ "titleJa": "{集合|しゅうごう}と{関係|かんけい}",
+ "descriptionSv": "Mängder och relationer: mängd, element, räkna upp, klammerparentes, ändlig, oändlig, delmängd, överlappa, gemensam, snitt, union, komplement, sortera, kategori, relation och ordnat par.",
+ "descriptionJa": "{集合|しゅうごう}と{関係|かんけい}：{集合|しゅうごう}、{要素|ようそ}、{列挙|れっきょ}する、{波|なみ}かっこ、{有限|ゆうげん}の、{無限|むげん}の、{部分集合|ぶぶんしゅうごう}、{重|かさ}なり{合|あ}う、{共通|きょうつう}の、{共通部分|きょうつうぶぶん}、{和集合|わしゅうごう}、{補集合|ほしゅうごう}、{分|わ}ける、カテゴリー、{関係|かんけい}、{順序対|じゅんじょつい}。",
+ "categoryId": "R06-A02-T05",
+ "tags": [
+  "matematik",
+  "diskret matematik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.vantevarde-och-varians"
+ ],
+ "related": [],
+ "recommendedOrder": 3251,
+ "words": [
+  {
+   "senseId": "s.mängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.3",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klammerparentes.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ändlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oändlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delmängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överlappa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gemensam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.union.2",
+   "active": true
+  },
+  {
+   "senseId": "s.komplement.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kategori.1",
+   "active": false
+  },
+  {
+   "senseId": "s.relation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordnat-par.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kaffe, te eller både och?",
+  "paragraphs": [
+   "På en kurs i diskret matematik börjar läraren Lena med en enkel fråga: vem i gruppen tycker om kaffe, och vem tycker om te? Hon skriver namnen på tavlan och sätter klammerparenteser runt dem: K = {Aiko, Erik, Sara} och T = {Erik, Jonas}. – Varje namn är ett element i en mängd, säger hon. Vi kan räkna upp elementen, eller beskriva dem med en regel.",
+   "Sedan ritar Lena två cirklar som överlappar varandra. Erik hamnar i mitten, eftersom han hör till båda mängderna. – Det som är gemensamt för K och T kallas snittet, förklarar hon. Snittet är {Erik}. Unionen är alla som tycker om kaffe eller te, alltså {Aiko, Erik, Sara, Jonas}.",
+   "– Om vi tittar på hela gruppen, vad är då komplementet till K? frågar Lena. Aiko svarar att det är de som inte tycker om kaffe, alltså Jonas. En mängd som ligger helt inuti en annan mängd är en delmängd. {Erik} är till exempel en delmängd av K.",
+   "Mängderna på tavlan är ändliga, eftersom de har ett bestämt antal element. Mängden av alla heltal är däremot oändlig. – Matematiker sorterar saker i mängder, ungefär som en butik sorterar varor i olika kategorier, säger Lena.",
+   "Till sist pratar de om relationer. En relation kopplar ihop element två och två, till exempel \"är äldre än\". Ett ordnat par skrivs med vanliga parenteser, och där spelar ordningen roll: (Aiko, Erik) betyder inte samma sak som (Erik, Aiko)."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför hamnar Erik i mitten av de två cirklarna?",
+    "options": [
+     "Han tycker inte om kaffe",
+     "Han är läraren",
+     "Han kom sist till kursen",
+     "Han hör till båda mängderna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik hamnar i mitten, eftersom han hör till båda mängderna.",
+    "explanationJa": "{両方|りょうほう}の{集合|しゅうごう}に{入|はい}っているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är snittet av K och T?",
+    "options": [
+     "{Erik}",
+     "{Aiko, Erik, Sara, Jonas}",
+     "{Jonas}",
+     "{Aiko, Sara}"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Snittet är {Erik}.",
+    "explanationJa": "{共通部分|きょうつうぶぶん}は｛Erik｝です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilka tecken sätter Lena runt namnen?",
+    "options": [
+     "Vanliga parenteser",
+     "Hakparenteser",
+     "Klammerparenteser",
+     "Citattecken"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon skriver namnen på tavlan och sätter klammerparenteser runt dem.",
+    "explanationJa": "{波|なみ}かっこを{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mängden av alla heltal är ändlig.",
+    "correct": false,
+    "explanationSv": "Mängden av alla heltal är däremot oändlig.",
+    "explanationJa": "すべての{整数|せいすう}の{集合|しゅうごう}は{無限|むげん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "(Aiko, Erik) och (Erik, Aiko) är samma ordnade par.",
+    "correct": false,
+    "explanationSv": "… där spelar ordningen roll: (Aiko, Erik) betyder inte samma sak som (Erik, Aiko).",
+    "explanationJa": "{順序対|じゅんじょつい}では{順番|じゅんばん}が{大切|たいせつ}なので、{別|べつ}の{組|くみ}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man delar in saker i grupper och mängder i vardagen.",
+  "discussionPoints": [
+   "Vilka mängder hör du själv till, till exempel på jobbet eller i familjen?",
+   "Vad har du gemensamt med en vän, och vad är olika?",
+   "Hur sorterar du saker hemma, till exempel kläder eller böcker?",
+   "Kan du komma på en relation mellan människor där ordningen spelar roll?"
+  ]
+ }
+}

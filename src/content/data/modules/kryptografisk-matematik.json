@@ -1,0 +1,176 @@
+{
+ "id": "m.kryptografisk-matematik",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Kryptografisk matematik",
+ "titleJa": "{暗号|あんごう}の{数学|すうがく}",
+ "descriptionSv": "Kryptografisk matematik: hemlighet, kryptografi, kryptera, chiffer, knäcka, lösenord, pinkod, avlyssna, öppen nyckel, primtal, primtalsfaktorisering, klockaritmetik, envägsfunktion, slumpgenerator, digital signatur och kontrollsiffra.",
+ "descriptionJa": "{暗号|あんごう}の{数学|すうがく}：{秘密|ひみつ}、{暗号学|あんごうがく}、{暗号化|あんごうか}する、{暗号|あんごう}、{解読|かいどく}する、パスワード、{暗証番号|あんしょうばんごう}、{傍受|ぼうじゅ}する、{公開鍵|こうかいかぎ}、{素数|そすう}、{素因数分解|そいんすうぶんかい}、{時計|とけい}の{算術|さんじゅつ}、{一方向関数|いちほうこうかんすう}、{乱数発生器|らんすうはっせいき}、{電子署名|でんししょめい}、チェックディジット。",
+ "categoryId": "R06-A02-T06",
+ "tags": [
+  "matematik",
+  "kryptografi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.optimeringsteori"
+ ],
+ "related": [],
+ "recommendedOrder": 3266,
+ "words": [
+  {
+   "senseId": "s.hemlighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kryptografi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryptera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chiffer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäcka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lösenord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pinkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlyssna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.öppen-nyckel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.primtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.primtalsfaktorisering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klockaritmetik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.envägsfunktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slumpgenerator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.digital-signatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollsiffra.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hemliga meddelanden",
+  "paragraphs": [
+   "Hana skriver hemliga brev till sin kompis med ett chiffer: varje bokstav flyttas tre steg, så att A blir D. Hennes pappa Kenta knäcker koden på två minuter. – Det finns bara 25 sätt att flytta bokstäverna, säger han. Det är lätt att pröva alla.",
+   "Kenta arbetar med kryptografi på en bank. Han berättar att banken krypterar alla meddelanden mellan kunderna och banken. Annars skulle någon kunna avlyssna trafiken på nätet och se lösenord och pinkoder. Men hur kan banken och en kund ha en gemensam hemlighet, om de aldrig har träffats?",
+   "Svaret är en öppen nyckel. Banken visar sin öppna nyckel för alla, och vem som helst kan kryptera med den. Men bara banken har den hemliga nyckel som behövs för att läsa meddelandet. Metoden bygger på talteori. Det är lätt att ta två stora primtal gånger varandra, men en primtalsfaktorisering av svaret kan ta tusentals år. Det är en sorts envägsfunktion. Räkningarna görs dessutom med klockaritmetik.",
+   "De hemliga nycklarna måste vara helt omöjliga att gissa. Därför skapas de med en slumpgenerator. Med samma matematik kan banken också sätta en digital signatur på sina meddelanden. Då vet kunden att de verkligen kommer från banken.",
+   "Hana frågar om hennes personnummer också är hemligt. – Nej, säger Kenta, men den sista siffran är en kontrollsiffra. Den räknas fram från de andra siffrorna. Om någon skriver fel på en siffra, märker datorn det direkt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång tid tar det för Kenta att knäcka Hanas kod?",
+    "options": [
+     "Två timmar",
+     "Två dagar",
+     "Tusentals år",
+     "Två minuter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hennes pappa Kenta knäcker koden på två minuter.",
+    "explanationJa": "2{分|ふん}で{解読|かいどく}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför krypterar banken meddelandena?",
+    "options": [
+     "För att meddelandena ska bli kortare",
+     "För att kunderna ska betala mer",
+     "För att datorerna ska gå snabbare",
+     "Annars kan någon avlyssna trafiken och se lösenord och pinkoder"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Annars skulle någon kunna avlyssna trafiken på nätet och se lösenord och pinkoder.",
+    "explanationJa": "そうしないと、{誰|だれ}かが{通信|つうしん}を{傍受|ぼうじゅ}してパスワードや{暗証番号|あんしょうばんごう}を{見|み}られるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Alla får se bankens öppna nyckel.",
+    "correct": true,
+    "explanationSv": "Banken visar sin öppna nyckel för alla, och vem som helst kan kryptera med den.",
+    "explanationJa": "{公開鍵|こうかいかぎ}は{誰|だれ}でも{見|み}られます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad är svårt i metoden med öppen nyckel?",
+    "options": [
+     "Att göra en primtalsfaktorisering av ett stort tal",
+     "Att ta två primtal gånger varandra",
+     "Att skicka ett meddelande",
+     "Att hitta bankens öppna nyckel"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det är lätt att ta två stora primtal gånger varandra, men en primtalsfaktorisering av svaret kan ta tusentals år.",
+    "explanationJa": "{大|おお}きな{数|かず}の{素因数分解|そいんすうぶんかい}が{難|むずか}しいのです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kontrollsiffran gör personnumret hemligt.",
+    "correct": false,
+    "explanationSv": "– Nej, säger Kenta, men den sista siffran är en kontrollsiffra. … Om någon skriver fel på en siffra, märker datorn det direkt.",
+    "explanationJa": "チェックディジットは{番号|ばんごう}を{秘密|ひみつ}にするものではなく、{書|か}き{間違|まちが}いを{見|み}つけるためのものです。"
+   }
+  ],
+  "factSources": [
+   "Påhittad scen. Caesarchiffret (förskjutning med tre steg) har 25 möjliga förskjutningar i ett alfabet med 26 bokstäver.",
+   "Kryptering med öppen nyckel (Diffie–Hellman 1976, RSA 1977) bygger på att faktorisering av stora tal och liknande problem är svåra; RSA räknar med modulär aritmetik.",
+   "Arne Beurling knäckte den tyska Geheimschreiber-koden på cirka två veckor 1940.",
+   "Sista siffran i svenska personnummer är en kontrollsiffra beräknad med Luhn-algoritmen. E-legitimation används för digitala underskrifter i Sverige (läget 2026)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hemligheter, koder och säkerhet på nätet.",
+  "discussionPoints": [
+   "Skrev du hemliga meddelanden när du var barn? Hur gjorde du?",
+   "Hur skapar du ett bra lösenord?",
+   "Vilka tjänster på nätet använder du där säkerheten är viktig?",
+   "Tycker du att staten ska få avlyssna krypterade meddelanden? Varför eller varför inte?"
+  ]
+ }
+}

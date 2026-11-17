@@ -1,0 +1,203 @@
+{
+ "entries": [
+  {
+   "id": "e.integral",
+   "lemma": "integral",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "integral",
+    "defSg": "integralen",
+    "indefPl": "integraler",
+    "defPl": "integralerna"
+   },
+   "senses": [
+    {
+     "id": "s.integral.1",
+     "ja": "（{定|てい}）{積分|せきぶん}",
+     "defSv": "Ett tal som man får när man integrerar en funktion mellan två värden på x. Man räknar F(b) − F(a).",
+     "defJa": "ある{関数|かんすう}を x の2つの{値|あたい}の{間|あいだ}で{積分|せきぶん}して{得|え}られる{数|かず}。F(b) − F(a) で{求|もと}める。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Integralen av 2x från 1 till 3 är 8.",
+       "ja": "1 から 3 までの 2x の{積分|せきぶん}は 8 です。"
+      }
+     ],
+     "usageNote": {
+      "sv": "Man säger också bestämd integral. Utan de två värdena talar man i stället om en primitiv funktion.",
+      "ja": "「bestämd integral（{定積分|ていせきぶん}）」とも{言|い}います。{範囲|はんい}の{値|あたい}がないときは「primitiv funktion（{原始関数|げんしかんすう}）」と{言|い}います。"
+     },
+     "explanation": {
+      "sv": "En integral visar hur mycket något har vuxit eller samlats mellan två värden på x. Man räknar ut den med en primitiv funktion F: man tar F för det större värdet minus F för det mindre. Svaret är ett tal, inte en funktion, och därför behöver man ingen integrationskonstant.",
+      "ja": "「integral」は、x の2つの{値|あたい}の{間|あいだ}で、{何|なに}かがどれだけ{増|ふ}えたか、またはたまったかを{表|あらわ}します。{原始関数|げんしかんすう} F を{使|つか}い、{大|おお}きいほうの{値|あたい}での F から{小|ちい}さいほうの{値|あたい}での F を{引|ひ}いて{求|もと}めます。{答|こた}えは{関数|かんすう}ではなく{数|かず}なので、{積分定数|せきぶんていすう}は{要|い}りません。"
+     },
+     "tags": [
+      "matematik",
+      "integraler"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.undre-gräns",
+   "lemma": "undre gräns",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "undre gräns",
+    "defSg": "undre gränsen",
+    "indefPl": "undre gränser",
+    "defPl": "undre gränserna"
+   },
+   "senses": [
+    {
+     "id": "s.undre-gräns.1",
+     "ja": "（{積分|せきぶん}の）{下端|かたん}",
+     "defSv": "Det mindre talet längst ner vid integraltecknet. Där börjar intervallet.",
+     "defJa": "{積分記号|せきぶんきごう}の{下|した}に{書|か}く{小|ちい}さいほうの{数|かず}。{区間|くかん}はそこから{始|はじ}まる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I integralen från 1 till 3 är 1 den undre gränsen.",
+       "ja": "1 から 3 までの{積分|せきぶん}では、1 が{下端|かたん}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Den undre gränsen är det x där man börjar räkna. Man skriver den nere vid integraltecknet. Man sätter in den undre gränsen i den primitiva funktionen och drar bort det svaret från det första.",
+      "ja": "「undre gräns」は、{計算|けいさん}を{始|はじ}める x の{値|あたい}です。{積分記号|せきぶんきごう}の{下|した}に{書|か}きます。{下端|かたん}を{原始関数|げんしかんすう}に{代入|だいにゅう}し、その{答|こた}えを{引|ひ}きます。"
+     },
+     "tags": [
+      "matematik",
+      "integraler"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.övre-gräns",
+   "lemma": "övre gräns",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "övre gräns",
+    "defSg": "övre gränsen",
+    "indefPl": "övre gränser",
+    "defPl": "övre gränserna"
+   },
+   "senses": [
+    {
+     "id": "s.övre-gräns.1",
+     "ja": "（{積分|せきぶん}の）{上端|じょうたん}",
+     "defSv": "Det större talet högst upp vid integraltecknet. Där slutar intervallet.",
+     "defJa": "{積分記号|せきぶんきごう}の{上|うえ}に{書|か}く{大|おお}きいほうの{数|かず}。{区間|くかん}はそこで{終|お}わる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I integralen från 1 till 3 är 3 den övre gränsen.",
+       "ja": "1 から 3 までの{積分|せきぶん}では、3 が{上端|じょうたん}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Den övre gränsen är det x där man slutar räkna. Man skriver den uppe vid integraltecknet. Först sätter man in den övre gränsen i F(x), sedan drar man bort värdet för den undre gränsen.",
+      "ja": "「övre gräns」は、{計算|けいさん}を{終|お}える x の{値|あたい}です。{積分記号|せきぶんきごう}の{上|うえ}に{書|か}きます。まず{上端|じょうたん}を F(x) に{代入|だいにゅう}し、そこから{下端|かたん}での{値|あたい}を{引|ひ}きます。"
+     },
+     "tags": [
+      "matematik",
+      "integraler"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.tillryggalagd",
+   "lemma": "tillryggalagd",
+   "pos": "adjective",
+   "level": "C1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "tillryggalagd",
+    "neuter": "tillryggalagt",
+    "plural": "tillryggalagda",
+    "definite": "tillryggalagda"
+   },
+   "senses": [
+    {
+     "id": "s.tillryggalagd.1",
+     "ja": "（{距離|きょり}を）{進|すす}んだ、{移動|いどう}した",
+     "defSv": "Om en sträcka: som man redan har åkt, gått eller sprungit.",
+     "defJa": "{距離|きょり}について：すでに{乗|の}り{物|もの}で{行|い}ったり、{歩|ある}いたり{走|はし}ったりした。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Den tillryggalagda sträckan var 12 kilometer.",
+       "ja": "{移動|いどう}した{距離|きょり}は 12 キロメートルでした。"
+      }
+     ],
+     "explanation": {
+      "sv": "Tillryggalagd används nästan bara om sträckor: en tillryggalagd sträcka är hur långt man har kommit. Om man vet hastigheten vid varje tidpunkt, kan man räkna ut den tillryggalagda sträckan med en integral. Ordet är formellt och vanligt i fysik och matematik.",
+      "ja": "「tillryggalagd」はほとんど{距離|きょり}についてだけ{使|つか}い、「en tillryggalagd sträcka」は、どこまで{進|すす}んだかという{移動距離|いどうきょり}です。それぞれの{時点|じてん}での{速度|そくど}がわかれば、{移動距離|いどうきょり}を{積分|せきぶん}で{求|もと}められます。かたい{言葉|ことば}で、{物理|ぶつり}や{数学|すうがく}でよく{使|つか}われます。"
+     },
+     "tags": [
+      "matematik",
+      "integraler"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.grafräknare",
+   "lemma": "grafräknare",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "grafräknare",
+    "defSg": "grafräknaren",
+    "indefPl": "grafräknare",
+    "defPl": "grafräknarna"
+   },
+   "senses": [
+    {
+     "id": "s.grafräknare.1",
+     "ja": "グラフ{電卓|でんたく}",
+     "defSv": "En miniräknare med en skärm där man kan rita grafer och räkna ut integraler.",
+     "defJa": "グラフを{描|か}いたり{積分|せきぶん}を{計算|けいさん}したりできる、{画面|がめん}のついた{電卓|でんたく}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "På provet får man använda grafräknare.",
+       "ja": "テストではグラフ{電卓|でんたく}を{使|つか}ってもよいです。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "integraler"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}
