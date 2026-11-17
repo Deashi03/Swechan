@@ -11,11 +11,10 @@
  * Digits, maths signs and the variable names x, y, t and u only; no words, no brands.
  */
 import { C, all, arrow, circle, g, line, path, rect, type Svg } from './kit';
-import { HL, T, mini } from './people';
+import { HL, T } from './people';
 import { greyed } from './blindFix';
 
 // ── Palette and basics ───────────────────────────────────────────────
-const PALE = '#eef3f8';
 const SOFT = 'rgba(228,87,46,0.18)';
 const SCREEN = '#d6ead2';
 const f1 = (n: number) => +n.toFixed(1);
@@ -73,7 +72,8 @@ const stopwatch = (x: number, y: number, s = 1, hand = -40, face: string = C.whi
   line(range(12).map((i) => { const a = (i * Math.PI) / 6; return `M${f1(Math.sin(a) * 24)} ${f1(-Math.cos(a) * 24)} L${f1(Math.sin(a) * (i % 3 ? 22 : 19))} ${f1(-Math.cos(a) * (i % 3 ? 22 : 19))}`; }).join(' '), C.ink, 1.4),
   g(`rotate(${hand})`, line('M0 4 L0 -20', C.red, 2.4)), circle(0, 0, 2.6, C.ink, null));
 const display = (x: number, y: number, txt: string, col: string) => all(rect(x - 34, y - 15, 68, 26, '#1f2a26', 4, C.ink, 1.8), rect(x - 30, y - 11, 60, 18, SCREEN, 2, null), T(x, y + 4, txt, 15, col, 800));
-const house = (x: number, y: number, col: string) => all(rect(x - 6, y - 10, 12, 10, col, 1, C.ink, 1.2), path(`M${x - 8} ${y - 9} L${x} ${y - 17} L${x + 8} ${y - 9} Z`, C.red, C.ink, 1.2));
+/** A pencil whose tip is at (x, y). */
+const pen = (x: number, y: number, rot = 30, s = 1) => g(`translate(${x} ${y}) rotate(${rot}) scale(${s})`, path('M-2.6 -6 L0 0 L2.6 -6 Z', C.tan, C.ink, 0.9), path('M-1 -2.4 L0 0 L1 -2.4 Z', C.ink, null), rect(-2.6, -28, 5.2, 22, C.yellow, 0.6, C.ink, 1), rect(-2.6, -32, 5.2, 4, C.pink, 0.6, C.ink, 0.9));
 
 export const INTEGRAL_MOTIFS: Record<string, Svg> = {
   // ── 3221 Primitiva funktioner ─────────────────────────────────────
@@ -83,7 +83,15 @@ export const INTEGRAL_MOTIFS: Record<string, Svg> = {
     axes(20, 100, 10, 114, 50, 112, C.ink, 1.8),
     path(plot((x) => { const u = (x - 60) / 26; return f1(84 - 18 * (u * u * u - 1.6 * u)); }, 26, 100), 'none', HL, 3)),
   'intg.primitiv-funktion': primPic('F'),
-  'intg.integrera': primPic('arrow'),
+  'intg.integrera': all(
+    rect(4, 46, 26, 22, C.white, 3, C.ink, 1.4), T(17, 62, '2x', 13),
+    arrow(31, 57, 41, 57, HL, 3),
+    rect(42, 32, 38, 50, HL, 6, C.ink, 2), T(61, 70, '∫', 34, C.white, 500),
+    path('M50 28 C54 18 68 18 72 28', 'none', HL, 2.6), path('M72 28 l-7 -1 l4 -6 Z', HL, HL, 1),
+    path('M70 88 C66 98 54 98 50 88', 'none', HL, 2.6), path('M50 88 l7 1 l-4 6 Z', HL, HL, 1),
+    arrow(81, 57, 91, 57, HL, 3),
+    rect(92, 40, 26, 34, C.white, 3, C.ink, 1.4), T(105, 54, 'x²', 11), line('M97 64 L106 64', HL, 2), pen(106, 64, 25, 0.8),
+    greyed(line('M8 108 L112 108', C.grey2, 1.4))),
   'intg.integrationskonstant': all(
     axes(60, 108, 10, 114, 6, 114, C.ink, 1.6),
     greyed(path('M30 66 Q60 126 90 66', 'none', C.grey, 2.4)),
@@ -112,8 +120,9 @@ export const INTEGRAL_MOTIFS: Record<string, Svg> = {
   'intg.avgränsa.2': all(
     axes(14, 100, 8, 116, 8, 112, C.ink, 1.8),
     greyed(path('M14 84 C24 70 30 64 34 60', 'none', C.grey, 2.2), path('M90 34 C98 28 104 26 112 24', 'none', C.grey, 2.2)),
-    path('M34 100 L34 60 C50 46 70 42 90 34 L90 100 Z', SOFT, HL, 3.6),
-    line('M34 30 L34 112 M90 20 L90 112', C.grey, 1, '3 3')),
+    path('M34 100 L34 60 C50 46 70 42 90 34 L90 100 Z', C.paper, HL, 5),
+    ...[[34, 100], [34, 80], [34, 60], [52, 50], [72, 42], [90, 34], [90, 56], [90, 78], [90, 100], [52, 100], [72, 100]].map(([x, y]) => rect(x! - 3, y! - 6, 6, 12, C.white, 1, C.ink, 1.4)),
+    arrow(62, 82, 62, 104, HL, 2), arrow(62, 70, 62, 48, HL, 2), arrow(48, 76, 36, 76, HL, 2), arrow(76, 76, 88, 76, HL, 2)),
   'intg.underskatta': sumPic('under'),
   'intg.överskatta': sumPic('over'),
   // ── 3224 Integrationsmetoder ──────────────────────────────────────
@@ -162,13 +171,15 @@ export const INTEGRAL_MOTIFS: Record<string, Svg> = {
     rect(36, 12, 52, 22, C.white, 4, HL, 2), T(62, 28, 't = 0', 13, HL), line('M36 26 L28 30', HL, 1.8)),
   // ── 3227 Modellering av förändring ────────────────────────────────
   'intg.modellera': all(
-    rect(4, 30, 42, 60, PALE, 6, C.grey2, 1.4),
-    house(14, 82, C.yellow), house(30, 82, C.white), house(22, 62, C.sky), house(38, 62, C.yellow),
-    mini(16, 44, C.orange), mini(32, 44, C.green),
-    arrow(48, 60, 64, 60, HL, 4),
-    axes(70, 100, 66, 116, 20, 104, C.ink, 1.6),
-    ...[[76, 92], [84, 91], [92, 78], [100, 64], [106, 33]].map(([x, y]) => dot(x!, y!, C.ink, 2.6)),
-    path(plot((x) => f1(98 - 2.4 * Math.exp((x - 70) / 11)), 70, 110), 'none', HL, 3)),
+    line('M4 112 L60 112', C.grey2, 2),
+    line('M14 90 L10 111 M14 90 L19 111', C.ink, 3), path('M8 74 L20 74 L19 92 L9 92 Z', C.green, C.ink, 1.4),
+    circle(14, 66, 7, C.skin, C.ink, 1.4), path('M7 64 C7 56 21 56 21 64 C18 61 10 61 7 64 Z', C.hair, null),
+    line('M19 76 L26 64', C.skin, 4.4), line('M19 76 L26 64', C.ink, 0.6), line('M9 77 L4 88', C.skin, 4.4),
+    line('M28 60 C36 14 52 14 58 108', C.grey, 1.8, '4 4'), circle(28, 60, 4.5, C.orange, C.ink, 1.2),
+    arrow(46, 44, 62, 44, HL, 3.4),
+    g('rotate(4 90 70)', rect(64, 28, 52, 72, C.white, 2, C.ink, 1.6), line('M70 92 L112 92 M72 94 L72 36', C.ink, 1.4),
+      path('M72 90 Q88 30 104 90', 'none', HL, 3), dot(72, 90, HL, 2.6)),
+    pen(104, 88, 28, 1)),
   'intg.exponentiell': all(
     axes(16, 106, 10, 116, 4, 112, C.ink, 1.8),
     greyed(line('M16 103 L112 58', C.grey, 2.6)),
