@@ -199,6 +199,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'mek.': () => import('./mechanics').then((m) => m.MECHANICS_MOTIFS),
   'vag.': () => import('./wavesSound').then((m) => m.WAVES_MOTIFS),
   'opt.': () => import('./lightOptics').then((m) => m.OPTICS_MOTIFS),
+  'elm.': () => import('./electricity').then((m) => m.ELECTRICITY_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
