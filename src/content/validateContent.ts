@@ -229,6 +229,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.data.1', 's.datamängd.1', 's.i-tabellform.1', 's.föra-in.1', 's.lägesmått.1', 's.förekomma.2', 's.korrelation.1', 's.relativ-frekvens.1', 's.jämnt-fördelad.1', 's.i-genomsnitt.1', 's.skilja-sig-åt.1', 's.mittersta.1', 's.spridningsmått.1', 's.spridning.2',
   // 0.48 Statistikens grunder: förväxlas efter två blindomgångar
   's.utspridd.1', 's.population.2',
+  // 0.48 Geometrins grundformer: förväxlas med ord ur samma ordfamilj efter två blindomgångar
+  's.symmetrilinje.1', 's.rektangulär.1', 's.rund.1', 's.area.1', 's.kvadratdecimeter.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
