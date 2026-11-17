@@ -1,0 +1,180 @@
+{
+ "id": "m.atomer-och-subatomara-partiklar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Atomer och subatomära partiklar",
+ "titleJa": "{原子|げんし}と{亜原子粒子|あげんしりゅうし}",
+ "descriptionSv": "Atomer och subatomära partiklar: atom, partikel, atomkärna, proton, neutron, elektron, subatomär, kvark, elektronmoln, atommodell, grundämne, väte, kol, periodiska systemet, atomnummer, isotop och masstal.",
+ "descriptionJa": "{原子|げんし}と{亜原子粒子|あげんしりゅうし}：{原子|げんし}、{粒子|りゅうし}、{原子核|げんしかく}、{陽子|ようし}、{中性子|ちゅうせいし}、{電子|でんし}、{原子|げんし}より{小|ちい}さい、クォーク、{電子雲|でんしうん}、{原子模型|げんしもけい}、{元素|げんそ}、{水素|すいそ}、{炭素|たんそ}、{周期表|しゅうきひょう}、{原子番号|げんしばんごう}、{同位体|どういたい}、{質量数|しつりょうすう}。",
+ "categoryId": "R06-A03-T06",
+ "tags": [
+  "fysik",
+  "modern fysik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.varmemaskiner"
+ ],
+ "related": [],
+ "recommendedOrder": 3361,
+ "words": [
+  {
+   "senseId": "s.atom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.partikel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.atomkärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.proton.1",
+   "active": true
+  },
+  {
+   "senseId": "s.neutron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.subatomär.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kvark.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elektronmoln.1",
+   "active": false
+  },
+  {
+   "senseId": "s.atommodell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundämne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.periodiska-systemet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.atomnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.isotop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.masstal.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Världen i små bitar",
+  "paragraphs": [
+   "Kenji hjälper sin dotter Lina med läxan i fysik. Hon ska bygga en atommodell till skolan. – Allt omkring oss är byggt av atomer, säger Kenji. Bordet, vattnet i glaset och vi själva.",
+   "Lina läser i boken. Varje atom har en atomkärna i mitten. I kärnan finns protoner och neutroner, och runt kärnan finns elektroner. De är subatomära partiklar, alltså mindre än en atom. Protoner och neutroner är i sin tur byggda av ännu mindre partiklar, som heter kvarkar.",
+   "– Hur stor är kärnan? frågar Lina. Kenji läser högt: om en atom var lika stor som en stor kyrka, skulle kärnan vara som en liten ärta mitt i kyrkan. Nästan hela atomen är tom. I boken ritar man elektronerna som ett elektronmoln runt kärnan.",
+   "På väggen i Linas klassrum hänger periodiska systemet. Där står alla grundämnen i ordning efter atomnummer. Väte har atomnummer 1, eftersom väteatomen bara har en proton. Kol har atomnummer 6.",
+   "Lina läser också om isotoper. Atomer av samma grundämne har alltid lika många protoner, men antalet neutroner kan vara olika. Därför kan de ha olika masstal. På kvällen är modellen klar: en kolatom med sex röda kulor, sex gröna kulor och sex blå elektroner på ståltråd."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska Lina bygga till skolan?",
+    "options": [
+     "En tabell",
+     "Ett mikroskop",
+     "En atommodell",
+     "En kyrka"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon ska bygga en atommodell till skolan.",
+    "explanationJa": "{原子模型|げんしもけい}を{作|つく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är protoner och neutroner byggda av?",
+    "options": [
+     "Elektroner",
+     "Ärtor",
+     "Kvarkar",
+     "Atomer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Protoner och neutroner är i sin tur byggda av ännu mindre partiklar, som heter kvarkar.",
+    "explanationJa": "クォークでできています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "inference",
+    "promptSv": "Vad visar jämförelsen med kyrkan?",
+    "options": [
+     "Att atomer är lika stora som ärtor",
+     "Att elektronerna är större än kärnan",
+     "Att kärnan är mycket liten jämfört med hela atomen",
+     "Att atomer är tunga"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… skulle kärnan vara som en liten ärta mitt i kyrkan. Nästan hela atomen är tom.",
+    "explanationJa": "{原子核|げんしかく}は{原子全体|げんしぜんたい}に{比|くら}べてとても{小|ちい}さいということです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Väte har atomnummer 1 eftersom väteatomen har en proton.",
+    "correct": true,
+    "explanationSv": "Väte har atomnummer 1, eftersom väteatomen bara har en proton.",
+    "explanationJa": "{水素|すいそ}の{原子|げんし}には{陽子|ようし}が{一|ひと}つしかありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Isotoper av samma grundämne har olika många protoner.",
+    "correct": false,
+    "explanationSv": "Atomer av samma grundämne har alltid lika många protoner, men antalet neutroner kan vara olika.",
+    "explanationJa": "{陽子|ようし}の{数|かず}は{同|おな}じで、{中性子|ちゅうせいし}の{数|かず}が{違|ちが}います。"
+   }
+  ],
+  "factSources": [
+   "En atom består av en kärna med protoner och neutroner och av elektroner runt kärnan; protoner och neutroner består av tre kvarkar var.",
+   "Jämförelsen med en ärta mitt i en stor kyrka är en vanlig förenkling av storleksskillnaden mellan atomkärnan och hela atomen (kärnan är ungefär 10 000–100 000 gånger mindre).",
+   "Atomnumret är antalet protoner: väte 1, kol 6. Isotoper har samma antal protoner men olika antal neutroner; vanligt kol har masstalet 12.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om atomer och om fysik i skolan.",
+  "discussionPoints": [
+   "Vad minns du om atomer från skolan?",
+   "Hur skulle du förklara för ett barn vad en atom är?",
+   "Tycker du att det är konstigt att nästan hela atomen är tom? Varför?",
+   "Vilket grundämne tycker du är mest intressant?"
+  ]
+ }
+}
