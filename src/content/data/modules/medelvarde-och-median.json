@@ -1,0 +1,177 @@
+{
+ "id": "m.medelvarde-och-median",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Medelvärde och median",
+ "titleJa": "{平均値|へいきんち}と{中央値|ちゅうおうち}",
+ "descriptionSv": "Medelvärde och median: medelvärde, genomsnitt, i genomsnitt, summa, division, medellön, median, i stigande ordning, mittersta, udda, jämn, mittemellan, extremvärde, lägesmått, medeltemperatur, över genomsnittet och under genomsnittet.",
+ "descriptionJa": "{平均値|へいきんち}と{中央値|ちゅうおうち}：{平均値|へいきんち}、{平均|へいきん}、{平均|へいきん}して、{合計|ごうけい}、{割|わ}り{算|ざん}、{平均給与|へいきんきゅうよ}、{中央値|ちゅうおうち}、{小|ちい}さい{順|じゅん}に、{真|ま}ん{中|なか}の、{奇数|きすう}の、{偶数|ぐうすう}の、ちょうど{真|ま}ん{中|なか}に、{外|はず}れ{値|ち}、{代表値|だいひょうち}、{平均気温|へいきんきおん}、{平均|へいきん}より{上|うえ}で、{平均|へいきん}より{下|した}で。",
+ "categoryId": "R06-A01-T06",
+ "tags": [
+  "matematik",
+  "statistik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.frekvens-och-fordelning"
+ ],
+ "related": [],
+ "recommendedOrder": 3153,
+ "words": [
+  {
+   "senseId": "s.medelvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genomsnitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-genomsnitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.summa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.division.2",
+   "active": false
+  },
+  {
+   "senseId": "s.medellön.1",
+   "active": true
+  },
+  {
+   "senseId": "s.median.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-stigande-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mittersta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.udda.2",
+   "active": true
+  },
+  {
+   "senseId": "s.jämn.3",
+   "active": true
+  },
+  {
+   "senseId": "s.mittemellan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.extremvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägesmått.1",
+   "active": false
+  },
+  {
+   "senseId": "s.medeltemperatur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.över-genomsnittet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.under-genomsnittet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur hög är lönen egentligen?",
+  "paragraphs": [
+   "På ett litet företag arbetar fem personer. Fyra av dem har 30 000, 32 000, 33 000 och 35 000 kronor i lön i månaden. Chefen har 120 000 kronor. Hur hög är lönen i genomsnitt på företaget?",
+   "För att räkna ut medelvärdet lägger man ihop alla löner och delar summan med antalet personer. Det är en division. Summan är 250 000 kronor. Om man delar med fem blir medellönen 50 000 kronor. Men fyra av fem personer får mycket mindre än så!",
+   "Medianen ger en annan bild. Man ställer lönerna i stigande ordning och tar det mittersta värdet: 30 000, 32 000, 33 000, 35 000, 120 000. Fem är ett udda tal, så det finns ett mittersta värde. Medianen är alltså 33 000 kronor. Om antalet värden är jämnt tar man talet mittemellan de två mittersta.",
+   "Chefens lön är ett extremvärde. Ett extremvärde drar upp medelvärdet mycket, men medianen påverkas nästan inte alls. Därför använder man ofta medianen när man talar om löner. Både medelvärde och median är lägesmått.",
+   "Samma sak gäller vädret. Om en vecka har en enda mycket varm dag kan medeltemperaturen hamna över genomsnittet för årstiden, fast de flesta dagarna låg under genomsnittet. Därför är det bra att titta på flera lägesmått innan man drar slutsatser."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur hög lön har chefen i månaden?",
+    "options": [
+     "120 000 kronor",
+     "50 000 kronor",
+     "33 000 kronor",
+     "35 000 kronor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Chefen har 120 000 kronor.",
+    "explanationJa": "{社長|しゃちょう}は{月|つき}12{万|まん}クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är medellönen på företaget?",
+    "options": [
+     "33 000 kronor",
+     "50 000 kronor",
+     "30 000 kronor",
+     "250 000 kronor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om man delar med fem blir medellönen 50 000 kronor.",
+    "explanationJa": "25{万|まん}を5で{割|わ}ると5{万|まん}クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför använder man ofta medianen när man talar om löner?",
+    "options": [
+     "Den är alltid högre än medelvärdet",
+     "Den är lättare att räkna ut i huvudet",
+     "Extremvärden påverkar den nästan inte",
+     "Den visar summan av alla löner"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett extremvärde drar upp medelvärdet mycket, men medianen påverkas nästan inte alls.",
+    "explanationJa": "{中央値|ちゅうおうち}は{外|はず}れ{値|ち}の{影響|えいきょう}をほとんど{受|う}けないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Medianen är det mittersta värdet när värdena står i storleksordning.",
+    "correct": true,
+    "explanationSv": "Man ställer lönerna i stigande ordning och tar det mittersta värdet …",
+    "explanationJa": "{小|ちい}さい{順|じゅん}に{並|なら}べて{真|ま}ん{中|なか}の{値|あたい}を{取|と}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De flesta på företaget har högre lön än medellönen.",
+    "correct": false,
+    "explanationSv": "Men fyra av fem personer får mycket mindre än så!",
+    "explanationJa": "5{人中|にんちゅう}4{人|にん}は{平均|へいきん}よりずっと{少|すく}ないです。"
+   }
+  ],
+  "factSources": [
+   "Lönerna i exemplet är påhittade. Att lönestatistik ofta redovisas som median, eftersom medianen påverkas mindre av extremvärden, framgår av Statistiska centralbyråns (SCB) lönestatistik."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om medelvärde och median i vardagen.",
+  "discussionPoints": [
+   "Hur lång tid tar din resa till jobbet eller skolan i genomsnitt?",
+   "När tycker du att medianen är bättre än medelvärdet?",
+   "Kan du ge ett exempel på ett extremvärde?",
+   "Var det varmare eller kallare än genomsnittet förra månaden?"
+  ]
+ }
+}

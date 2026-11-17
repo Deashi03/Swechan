@@ -1,0 +1,173 @@
+{
+ "id": "m.typvarde-och-variationsbredd",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Typvärde och variationsbredd",
+ "titleJa": "{最頻値|さいひんち}と{範囲|はんい}",
+ "descriptionSv": "Typvärde och variationsbredd: provresultat, poäng, typvärde, förekomma, lika ofta, högsta värde, lägsta värde, differens, variationsbredd, spridning, utspridd, skilja sig åt, variera, avvikande, spridningsmått och jämförelse.",
+ "descriptionJa": "{最頻値|さいひんち}と{範囲|はんい}：テストの{結果|けっか}、{点数|てんすう}、{最頻値|さいひんち}、{現|あらわ}れる、{同|おな}じ{回数|かいすう}だけ、{最大値|さいだいち}、{最小値|さいしょうち}、{差|さ}、{範囲|はんい}、ばらつき、{散|ち}らばった、{互|たが}いに{異|こと}なる、{変|か}わる、{通常|つうじょう}と{異|こと}なる、{散布度|さんぷど}、{比較|ひかく}。",
+ "categoryId": "R06-A01-T06",
+ "tags": [
+  "matematik",
+  "statistik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.medelvarde-och-median"
+ ],
+ "related": [],
+ "recommendedOrder": 3154,
+ "words": [
+  {
+   "senseId": "s.provresultat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.poäng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.typvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förekomma.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lika-ofta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högsta-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägsta-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.differens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.variationsbredd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spridning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.utspridd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skilja-sig-åt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.variera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvikande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spridningsmått.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jämförelse.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Två klasser, samma prov",
+  "paragraphs": [
+   "Klass 9A och klass 9B skrev samma prov i matematik. Man kunde få högst 40 poäng. Läraren Karin vill jämföra provresultaten i de två klasserna.",
+   "Först tittar hon på typvärdet, alltså det värde som förekommer flest gånger. I 9A fick flest elever 24 poäng. I 9B förekommer 22 och 27 poäng lika ofta, så där finns två typvärden.",
+   "Sedan räknar hon ut variationsbredden. I 9A är det högsta värdet 29 poäng och det lägsta värdet 19 poäng. Differensen är 10 poäng. I 9B är det högsta värdet 38 poäng och det lägsta 4 poäng, så variationsbredden är 34 poäng.",
+   "Resultaten i de två klasserna skiljer sig åt mycket. I 9A ligger alla nära varandra, men i 9B är resultaten utspridda. Spridningen i 9B är mycket större. En elev med bara 4 poäng har ett avvikande resultat.",
+   "Variationsbredden är ett enkelt spridningsmått, men den bygger bara på två värden. Ett enda avvikande värde kan göra den mycket stor. Därför gör Karin också en jämförelse med förra årets resultat. Hon ser att resultaten varierar lite från år till år."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många poäng kunde man få som mest på provet?",
+    "options": [
+     "38 poäng",
+     "29 poäng",
+     "34 poäng",
+     "40 poäng"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Man kunde få högst 40 poäng.",
+    "explanationJa": "{満点|まんてん}は40{点|てん}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket typvärde har klass 9A?",
+    "options": [
+     "22 poäng",
+     "27 poäng",
+     "19 poäng",
+     "24 poäng"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I 9A fick flest elever 24 poäng.",
+    "explanationJa": "9Aでいちばん{多|おお}かったのは24{点|てん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Hur räknar man ut variationsbredden?",
+    "options": [
+     "Summan delat med antalet",
+     "Det högsta värdet minus det lägsta värdet",
+     "Man tar det mittersta värdet",
+     "Man tar det vanligaste värdet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I 9A är det högsta värdet 29 poäng och det lägsta värdet 19 poäng. Differensen är 10 poäng.",
+    "explanationJa": "{最大値|さいだいち}から{最小値|さいしょうち}を{引|ひ}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Resultaten i 9B är mer utspridda än i 9A.",
+    "correct": true,
+    "explanationSv": "I 9A ligger alla nära varandra, men i 9B är resultaten utspridda.",
+    "explanationJa": "9Bのほうがばらつきが{大|おお}きいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "I 9B finns det bara ett typvärde.",
+    "correct": false,
+    "explanationSv": "I 9B förekommer 22 och 27 poäng lika ofta, så där finns två typvärden.",
+    "explanationJa": "9Bには{最頻値|さいひんち}が{二|ふた}つあります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni jämför resultat och pratar om vad som är vanligast.",
+  "discussionPoints": [
+   "Vilken skostorlek tror du är typvärdet i din familj eller på ditt jobb?",
+   "Hur stor är variationsbredden mellan den äldsta och den yngsta i din familj?",
+   "Inom vilka områden tycker du att människors åsikter skiljer sig åt mycket?",
+   "Varierar vädret mycket där du kommer ifrån?"
+  ]
+ }
+}

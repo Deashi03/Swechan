@@ -1,0 +1,173 @@
+{
+ "id": "m.diagramtyper",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Diagramtyper",
+ "titleJa": "グラフの{種類|しゅるい}",
+ "descriptionSv": "Diagramtyper: diagram, illustrera, jämföra, stapeldiagram, stapel, cirkeldiagram, andel, linjediagram, lämpa sig, över tid, trend, stolpdiagram, histogram, intervall, spridningsdiagram och rubrik.",
+ "descriptionJa": "グラフの{種類|しゅるい}：グラフ、わかりやすく{示|しめ}す、{比|くら}べる、{棒|ぼう}グラフ、{棒|ぼう}、{円|えん}グラフ、{割合|わりあい}、{折|お}れ{線|せん}グラフ、{向|む}いている、{時間|じかん}がたつにつれて、{傾向|けいこう}、{細|ほそ}い{線|せん}の{棒|ぼう}グラフ、ヒストグラム、{区間|くかん}、{散布図|さんぷず}、{見出|みだ}し。",
+ "categoryId": "R06-A01-T06",
+ "tags": [
+  "matematik",
+  "statistik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.typvarde-och-variationsbredd"
+ ],
+ "related": [],
+ "recommendedOrder": 3155,
+ "words": [
+  {
+   "senseId": "s.diagram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.illustrera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stapeldiagram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stapel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkeldiagram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andel.2",
+   "active": true
+  },
+  {
+   "senseId": "s.linjediagram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämpa-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.över-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trend.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stolpdiagram.1",
+   "active": false
+  },
+  {
+   "senseId": "s.histogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intervall.2",
+   "active": true
+  },
+  {
+   "senseId": "s.spridningsdiagram.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rubrik.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rätt diagram för rätt data",
+  "paragraphs": [
+   "Siffror i en tabell kan vara svåra att läsa. Ett diagram kan illustrera samma data så att man förstår den snabbare. Men vilket diagram ska man välja? Det beror på vad man vill visa.",
+   "Ett stapeldiagram passar bra när man vill jämföra grupper, till exempel hur många som åker buss, cyklar eller går. Varje stapel visar en grupp. Ju högre stapel, desto fler personer. Ett cirkeldiagram visar i stället hur stor andel varje grupp är av helheten.",
+   "Ett linjediagram lämpar sig för att visa förändringar över tid, till exempel temperaturen varje månad under ett år. Linjen gör det lätt att se en trend: går det uppåt eller nedåt?",
+   "Ett stolpdiagram ser ut som ett stapeldiagram, men stolparna är smala linjer. Det används ofta för tal som man räknar, till exempel antal syskon. Ett histogram har breda staplar utan mellanrum. Varje stapel visar ett intervall, till exempel längder mellan 150 och 160 centimeter.",
+   "Ett spridningsdiagram består av många punkter. Varje punkt visar två värden för samma person, till exempel längd och skostorlek. Vilket diagram man än väljer behöver det en tydlig rubrik, så att läsaren vet vad det handlar om."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "usage",
+    "promptSv": "Vilket diagram passar bäst för att visa förändringar över tid?",
+    "options": [
+     "Ett cirkeldiagram",
+     "Ett linjediagram",
+     "Ett stolpdiagram",
+     "En tabell"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ett linjediagram lämpar sig för att visa förändringar över tid …",
+    "explanationJa": "{時間|じかん}による{変化|へんか}には{折|お}れ{線|せん}グラフが{向|む}いています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad visar ett cirkeldiagram?",
+    "options": [
+     "Hur temperaturen ändras under ett år",
+     "Två värden för varje person",
+     "Hur stor andel varje grupp är av helheten",
+     "Längder i olika intervall"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett cirkeldiagram visar i stället hur stor andel varje grupp är av helheten.",
+    "explanationJa": "{円|えん}グラフは{全体|ぜんたい}に{占|し}める{割合|わりあい}を{示|しめ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur skiljer sig ett histogram från ett vanligt stapeldiagram?",
+    "options": [
+     "Staplarna är smala linjer",
+     "Det har bara en stapel",
+     "Staplarna står utan mellanrum",
+     "Det är runt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett histogram har breda staplar utan mellanrum.",
+    "explanationJa": "ヒストグラムの{棒|ぼう}にはすき{間|ま}がありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I ett spridningsdiagram visar varje punkt två värden.",
+    "correct": true,
+    "explanationSv": "Varje punkt visar två värden för samma person …",
+    "explanationJa": "{点|てん}{一|ひと}つが{二|ふた}つの{値|あたい}を{表|あらわ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Enligt texten behöver bara linjediagram en rubrik.",
+    "correct": false,
+    "explanationSv": "Vilket diagram man än väljer behöver det en tydlig rubrik …",
+    "explanationJa": "どのグラフにも、わかりやすい{見出|みだ}しが{必要|ひつよう}です。"
+   }
+  ],
+  "factSources": [
+   "Allmän beskrivning av vanliga diagramtyper i svensk skolmatematik; texten innehåller inga siffror ur verkliga källor."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om diagram som ni ser i nyheter, på jobbet eller i skolan.",
+  "discussionPoints": [
+   "Vilken typ av diagram ser du oftast?",
+   "Vilket diagram skulle du välja för att visa hur du använder dina pengar under en månad?",
+   "Tycker du att diagram är lättare att förstå än tabeller?",
+   "Kan du beskriva ett diagram som du har sett nyligen?"
+  ]
+ }
+}
