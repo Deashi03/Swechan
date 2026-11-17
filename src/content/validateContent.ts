@@ -243,6 +243,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.primitiv-funktion.1', 's.integrationskonstant.1', 's.tillryggalagd.1', 's.begynnelsevillkor.1',
   // 0.49 Sannolikhetsteori: abstrakta fackord som förväxlas med synonym eller samma ordfamilj
   's.slumpförsök.1', 's.komplementhändelse.1', 's.permutation.1', 's.kombinatorik.1', 's.sannolikhetsfördelning.1', 's.väntevärde.1', 's.varians.1',
+  // 0.49 Sannolikhetsteori: förväxlas med sannolikhet efter två blindomgångar
+  's.osannolik.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
