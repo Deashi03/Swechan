@@ -1,0 +1,244 @@
+{
+ "entries": [
+  {
+   "id": "e.rekursion",
+   "lemma": "rekursion",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "rekursion",
+    "defSg": "rekursionen",
+    "indefPl": "rekursioner",
+    "defPl": "rekursionerna"
+   },
+   "senses": [
+    {
+     "id": "s.rekursion.1",
+     "ja": "{再帰|さいき}",
+     "defSv": "När något beskrivs eller löses med hjälp av en mindre del av sig självt.",
+     "defJa": "{何|なに}かを、それ{自身|じしん}のより{小|ちい}さな{部分|ぶぶん}を{使|つか}って{説明|せつめい}したり{解|と}いたりすること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Rekursion är vanligt i datorprogram.",
+       "ja": "{再帰|さいき}はコンピューターのプログラムでよく{使|つか}われます。"
+      }
+     ],
+     "explanation": {
+      "sv": "Rekursion betyder att något använder sig självt. I en talföljd kan varje tal räknas ut från de föregående talen. Ett datorprogram kan lösa ett problem genom att först lösa en mindre del av samma problem. För att det ska ta slut behövs alltid ett fall där man stannar.",
+      "ja": "「rekursion」は、{何|なに}かが{自分自身|じぶんじしん}を{使|つか}うことです。それぞれの{数|かず}を{前|まえ}の{数|かず}から{計算|けいさん}する{数列|すうれつ}は、{再帰的|さいきてき}に{表|あらわ}せます。{同|おな}じ{問題|もんだい}の{小|ちい}さな{版|ばん}を{解|と}くことで{問題|もんだい}を{解|と}くプログラムも{再帰的|さいきてき}です。{終|お}わらせるためには、いつも「basfall（{基底|きてい}ケース）」が{必要|ひつよう}です。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.basfall",
+   "lemma": "basfall",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "basfall",
+    "defSg": "basfallet",
+    "indefPl": "basfall",
+    "defPl": "basfallen"
+   },
+   "senses": [
+    {
+     "id": "s.basfall.1",
+     "ja": "（{再帰|さいき}の）{基底|きてい}ケース",
+     "defSv": "Det lättaste fallet i en rekursion, där svaret är känt direkt och upprepningen slutar.",
+     "defJa": "{再帰|さいき}の{中|なか}でもっとも{簡単|かんたん}な{場合|ばあい}。{答|こた}えがすぐにわかり、くり{返|かえ}しがそこで{終|お}わる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om man räknar baklänges till noll är noll basfallet.",
+       "ja": "ゼロまで{逆|ぎゃく}に{数|かぞ}えるなら、ゼロが{基底|きてい}ケースです。"
+      }
+     ],
+     "explanation": {
+      "sv": "Basfallet är det fall där man slutar. I en talföljd kan basfallen vara de två första talen, som man inte räknar ut från något annat. Om en rekursion saknar basfall fortsätter den i all oändlighet, och ett datorprogram kan då sluta fungera.",
+      "ja": "「basfall」は、そこで{止|と}まる{場合|ばあい}です。{数列|すうれつ}では、ほかから{計算|けいさん}しない{最初|さいしょ}の{二|ふた}つの{数|かず}が{基底|きてい}ケースになることがあります。{基底|きてい}ケースのない{再帰|さいき}は{永遠|えいえん}に{続|つづ}き、プログラムが{止|と}まってしまうことがあります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.matrjosjka",
+   "lemma": "matrjosjka",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "matrjosjka",
+    "defSg": "matrjosjkan",
+    "indefPl": "matrjosjkor",
+    "defPl": "matrjosjkorna"
+   },
+   "senses": [
+    {
+     "id": "s.matrjosjka.1",
+     "ja": "マトリョーシカ",
+     "defSv": "En docka av trä från Ryssland som går att öppna och som har en mindre docka inuti, som i sin tur har en ännu mindre docka inuti.",
+     "defJa": "{開|ひら}けると{中|なか}に{小|ちい}さな{人形|にんぎょう}が{入|はい}っていて、その{中|なか}にさらに{小|ちい}さな{人形|にんぎょう}が{入|はい}っている、ロシアの{木|き}の{人形|にんぎょう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I den största matrjosjkan finns sex mindre dockor.",
+       "ja": "{一番|いちばん}{大|おお}きいマトリョーシカの{中|なか}には、{小|ちい}さな{人形|にんぎょう}が{六|むっ}つ{入|はい}っています。"
+      }
+     ],
+     "explanation": {
+      "sv": "En matrjosjka är en målad docka av trä från Ryssland. När man öppnar den hittar man en mindre docka inuti, och så vidare tills man kommer till den minsta, som inte går att öppna. Därför används den ofta som en bild för rekursion.",
+      "ja": "「matrjosjka」は、ロシアの{色|いろ}を{塗|ぬ}った{木|き}の{人形|にんぎょう}です。{開|ひら}けると{中|なか}にもっと{小|ちい}さな{人形|にんぎょう}があり、{開|ひら}けられない{一番|いちばん}{小|ちい}さな{人形|にんぎょう}まで{続|つづ}きます。そのため、{再帰|さいき}のたとえとしてよく{使|つか}われます。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.fraktal",
+   "lemma": "fraktal",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "fraktal",
+    "defSg": "fraktalen",
+    "indefPl": "fraktaler",
+    "defPl": "fraktalerna"
+   },
+   "senses": [
+    {
+     "id": "s.fraktal.1",
+     "ja": "フラクタル",
+     "defSv": "En figur där varje liten del ser ut som hela figuren i mindre storlek.",
+     "defJa": "どの{小|ちい}さな{部分|ぶぶん}も、{全体|ぜんたい}を{小|ちい}さくしたような{形|かたち}をしている{図形|ずけい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "En snöflinga kan se ut nästan som en fraktal.",
+       "ja": "{雪|ゆき}の{結晶|けっしょう}はほとんどフラクタルのように{見|み}えることがあります。"
+      }
+     ],
+     "explanation": {
+      "sv": "I en fraktal upprepas samma form om och om igen i mindre och mindre storlek. Man kan rita en fraktal med en regel som upprepas, till exempel genom att dela en triangel i mindre trianglar och göra samma sak med varje ny triangel. I naturen liknar snöflingor, blixtar och kustlinjer fraktaler.",
+      "ja": "「fraktal」では、{同|おな}じ{形|かたち}がどんどん{小|ちい}さくなりながらくり{返|かえ}されます。たとえば{三角形|さんかっけい}を{小|ちい}さな{三角形|さんかっけい}に{分|わ}け、{新|あたら}しい{三角形|さんかっけい}にも{同|おな}じことをする、という{再帰的|さいきてき}な{決|き}まりで{描|か}くことができます。{自然|しぜん}の{中|なか}では、{雪|ゆき}の{結晶|けっしょう}、{稲妻|いなずま}、{海岸線|かいがんせん}などがフラクタルに{似|に}ています。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.föregående",
+   "lemma": "föregående",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "föregående",
+    "neuter": "föregående",
+    "plural": "föregående",
+    "definite": "föregående",
+    "indeclinable": true
+   },
+   "senses": [
+    {
+     "id": "s.föregående.1",
+     "ja": "{前|まえ}の、{直前|ちょくぜん}の",
+     "defSv": "Som kommer närmast före något annat, i tid eller i en ordning.",
+     "defJa": "{時間|じかん}や{順番|じゅんばん}で、すぐ{前|まえ}に{来|く}る。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Varje tal är summan av de två föregående talen.",
+       "ja": "どの{数|かず}も、{前|まえ}の{二|ふた}つの{数|かず}の{和|わ}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Föregående betyder det som kom just före. Man talar om föregående år, föregående sida eller det föregående talet i en talföljd. Motsatsen är nästa eller följande. Ordet är lite formellt; i vardagen säger man oftare förra, till exempel förra veckan.",
+      "ja": "「föregående」は、すぐ{前|まえ}に{来|き}たものという{意味|いみ}です。「föregående år（{前年|ぜんねん}）」「föregående sida（{前|まえ}のページ）」や、{数列|すうれつ}の{前|まえ}の{数|かず}について{使|つか}います。{反対|はんたい}は「nästa」や「följande」です。{少|すこ}しかたい{言葉|ことば}で、ふだんは「förra veckan（{先週|せんしゅう}）」のように「förra」をよく{使|つか}います。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.delproblem",
+   "lemma": "delproblem",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "delproblem",
+    "defSg": "delproblemet",
+    "indefPl": "delproblem",
+    "defPl": "delproblemen"
+   },
+   "senses": [
+    {
+     "id": "s.delproblem.1",
+     "ja": "{部分問題|ぶぶんもんだい}、{小|ちい}さな{問題|もんだい}",
+     "defSv": "En mindre del av ett stort problem, som man kan lösa för sig.",
+     "defJa": "{大|おお}きな{問題|もんだい}の{中|なか}の、それだけで{解|と}くことのできる{小|ちい}さな{部分|ぶぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi delar upp uppgiften i tre delproblem.",
+       "ja": "この{課題|かだい}を{三|みっ}つの{部分問題|ぶぶんもんだい}に{分|わ}けましょう。"
+      }
+     ],
+     "explanation": {
+      "sv": "Ett delproblem är en bit av ett större problem. Många svåra uppgifter blir lättare om man delar upp dem i delproblem och löser dem ett i taget. I en rekursion är delproblemen av samma sort som det stora problemet, bara mindre.",
+      "ja": "「delproblem」は、より{大|おお}きな{問題|もんだい}の{一部|いちぶ}です。{難|むずか}しい{課題|かだい}の{多|おお}くは、{部分問題|ぶぶんもんだい}に{分|わ}けて{一|ひと}つずつ{解|と}けば{簡単|かんたん}になります。{再帰|さいき}では、{部分問題|ぶぶんもんだい}は{大|おお}きな{問題|もんだい}と{同|おな}じ{種類|しゅるい}で、{小|ちい}さいだけです。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

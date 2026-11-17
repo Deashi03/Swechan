@@ -1,0 +1,227 @@
+{
+ "entries": [
+  {
+   "id": "e.sökning",
+   "lemma": "sökning",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "sökning",
+    "defSg": "sökningen",
+    "indefPl": "sökningar",
+    "defPl": "sökningarna"
+   },
+   "senses": [
+    {
+     "id": "s.sökning.1",
+     "ja": "{検索|けんさく}、{探索|たんさく}",
+     "defSv": "Det att leta efter något, till exempel ett ord i en lista eller en sida på internet.",
+     "defJa": "リストの{中|なか}の{言葉|ことば}やインターネットのページなど、{何|なに}かを{探|さが}すこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "En sökning på nätet ger ofta tusentals svar.",
+       "ja": "インターネットで{検索|けんさく}すると、よく{何千|なんぜん}もの{結果|けっか}が{出|で}ます。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.linjär-sökning",
+   "lemma": "linjär sökning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "linjär sökning",
+    "defSg": "linjära sökningen",
+    "indefPl": "linjära sökningar",
+    "defPl": "linjära sökningarna"
+   },
+   "senses": [
+    {
+     "id": "s.linjär-sökning.1",
+     "ja": "{線形探索|せんけいたんさく}",
+     "defSv": "Ett sätt att söka där man tittar på en sak i taget, från början av listan till slutet.",
+     "defJa": "リストの{最初|さいしょ}から{最後|さいご}まで、{一|ひと}つずつ{順番|じゅんばん}に{見|み}ていく{探|さが}し{方|かた}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med linjär sökning kan det ta lång tid att hitta ett namn i en lång lista.",
+       "ja": "{線形探索|せんけいたんさく}では、{長|なが}いリストから{名前|なまえ}を{見|み}つけるのに{時間|じかん}がかかることがあります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Vid linjär sökning börjar man med den första saken och fortsätter en i taget tills man hittar det man letar efter. Listan behöver inte vara sorterad. Om listan är dubbelt så lång tar det i genomsnitt dubbelt så lång tid.",
+      "ja": "「linjär sökning」では、{最初|さいしょ}のものから{始|はじ}めて、{探|さが}しているものが{見|み}つかるまで{一|ひと}つずつ{進|すす}みます。リストが{並|なら}べ{替|か}えられている{必要|ひつよう}はありません。リストが{二倍|にばい}{長|なが}くなると、{平均|へいきん}して{二倍|にばい}の{時間|じかん}がかかります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.binär-sökning",
+   "lemma": "binär sökning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "binär sökning",
+    "defSg": "binära sökningen",
+    "indefPl": "binära sökningar",
+    "defPl": "binära sökningarna"
+   },
+   "senses": [
+    {
+     "id": "s.binär-sökning.1",
+     "ja": "{二分探索|にぶんたんさく}",
+     "defSv": "Ett sätt att söka i en sorterad lista där man tittar i mitten och sedan bara fortsätter med den halva där svaret kan finnas.",
+     "defJa": "{並|なら}べ{替|か}えられたリストの{真|ま}ん{中|なか}を{見|み}て、{答|こた}えがありうる{半分|はんぶん}だけを{続|つづ}けて{探|さが}す{方法|ほうほう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med binär sökning hittar man ett tal bland tusen på högst tio steg.",
+       "ja": "{二分探索|にぶんたんさく}なら、{千|せん}の{数|かず}の{中|なか}から{一|ひと}つを{最大|さいだい}10{回|かい}で{見|み}つけられます。"
+      }
+     ],
+     "explanation": {
+      "sv": "Binär sökning fungerar bara om listan är sorterad. Man jämför med saken i mitten: är det man söker mindre, fortsätter man i den första halvan, annars i den andra. Varje steg halverar det som är kvar, så även mycket långa listor går snabbt. Leken där man gissar ett tal och får svaret \"högre\" eller \"lägre\" bygger på samma idé.",
+      "ja": "「binär sökning」は、リストが{並|なら}べ{替|か}えられているときだけ{使|つか}えます。{真|ま}ん{中|なか}のものと{比|くら}べて、{探|さが}しているものが{小|ちい}さければ{前|まえ}の{半分|はんぶん}、そうでなければ{後|うし}ろの{半分|はんぶん}で{続|つづ}けます。{一回|いっかい}ごとに{残|のこ}りが{半分|はんぶん}になるので、とても{長|なが}いリストでもすぐに{見|み}つかります。{数|かず}を{当|あ}てて「もっと{大|おお}きい」「もっと{小|ちい}さい」と{答|こた}えてもらう{遊|あそ}びも、{同|おな}じ{考|かんが}え{方|かた}です。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.mapp",
+   "lemma": "mapp",
+   "pos": "noun",
+   "level": "A2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "mapp",
+    "defSg": "mappen",
+    "indefPl": "mappar",
+    "defPl": "mapparna"
+   },
+   "senses": [
+    {
+     "id": "s.mapp.1",
+     "ja": "フォルダー",
+     "defSv": "En plats i en dator eller mobil där man sparar dokument och bilder som hör ihop.",
+     "defJa": "コンピューターやスマートフォンで、まとまった{文書|ぶんしょ}や{写真|しゃしん}を{入|い}れておく{場所|ばしょ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag sparade bilderna i en ny mapp.",
+       "ja": "{写真|しゃしん}を{新|あたら}しいフォルダーに{保存|ほぞん}しました。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.ordbok",
+   "lemma": "ordbok",
+   "pos": "noun",
+   "level": "A2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "ordbok",
+    "defSg": "ordboken",
+    "indefPl": "ordböcker",
+    "defPl": "ordböckerna"
+   },
+   "senses": [
+    {
+     "id": "s.ordbok.1",
+     "ja": "{辞書|じしょ}",
+     "defSv": "En bok eller app där man kan slå upp ord och se vad de betyder.",
+     "defJa": "{言葉|ことば}を{引|ひ}いて、その{意味|いみ}を{調|しら}べることができる{本|ほん}やアプリ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag slog upp ordet i en ordbok.",
+       "ja": "その{言葉|ことば}を{辞書|じしょ}で{引|ひ}きました。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.i-alfabetisk-ordning",
+   "lemma": "i alfabetisk ordning",
+   "pos": "phrase",
+   "level": "B1",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.i-alfabetisk-ordning.1",
+     "ja": "アルファベット{順|じゅん}に",
+     "defSv": "I samma ordning som bokstäverna i alfabetet, från A till Ö.",
+     "defJa": "AからÖまで、アルファベットの{文字|もじ}と{同|おな}じ{順番|じゅんばん}で。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Namnen på listan står i alfabetisk ordning.",
+       "ja": "リストの{名前|なまえ}はアルファベット{順|じゅん}に{並|なら}んでいます。"
+      }
+     ],
+     "usageNote": {
+      "sv": "Det svenska alfabetet slutar med å, ä och ö.",
+      "ja": "スウェーデン{語|ご}のアルファベットは、å、ä、öで{終|お}わります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

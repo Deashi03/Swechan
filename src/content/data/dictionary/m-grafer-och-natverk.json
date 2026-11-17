@@ -1,0 +1,159 @@
+{
+ "entries": [
+  {
+   "id": "e.nod",
+   "lemma": "nod",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "nod",
+    "defSg": "noden",
+    "indefPl": "noder",
+    "defPl": "noderna"
+   },
+   "senses": [
+    {
+     "id": "s.nod.1",
+     "ja": "（グラフの）{頂点|ちょうてん}、ノード",
+     "defSv": "En punkt i en graf eller ett nätverk, där linjer möts.",
+     "defJa": "グラフやネットワークの{中|なか}の{点|てん}。{線|せん}が{集|あつ}まるところ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Varje station på kartan är en nod.",
+       "ja": "{路線図|ろせんず}の{駅|えき}はそれぞれ{頂点|ちょうてん}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "En nod är en punkt i en graf. Den kan stå för en station, en stad, en dator eller en person. Linjerna mellan noderna kallas kanter. Varje dator i ett datornätverk kan också kallas en nod.",
+      "ja": "「nod」はグラフの{中|なか}の{点|てん}です。{駅|えき}、{都市|とし}、コンピューター、{人|ひと}などを{表|あらわ}すことができます。{頂点|ちょうてん}どうしを{結|むす}ぶ{線|せん}は「kant（{辺|へん}）」と{呼|よ}びます。コンピューターネットワークの{中|なか}のそれぞれのコンピューターもノードと{呼|よ}ぶことができます。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.riktad-graf",
+   "lemma": "riktad graf",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "riktad graf",
+    "defSg": "riktade grafen",
+    "indefPl": "riktade grafer",
+    "defPl": "riktade graferna"
+   },
+   "senses": [
+    {
+     "id": "s.riktad-graf.1",
+     "ja": "{有向|ゆうこう}グラフ",
+     "defSv": "En graf där varje kant har en riktning, så att man bara kan gå åt ett håll längs den.",
+     "defJa": "それぞれの{辺|へん}に{向|む}きがあり、{一方向|いっぽうこう}にしか{進|すす}めないグラフ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "En stad med många enkelriktade gator kan beskrivas med en riktad graf.",
+       "ja": "{一方通行|いっぽうつうこう}の{道|みち}が{多|おお}い{町|まち}は、{有向|ゆうこう}グラフで{表|あらわ}せます。"
+      }
+     ],
+     "explanation": {
+      "sv": "I en riktad graf ritar man kanterna som pilar. Att det går en pil från A till B betyder inte att man kan gå från B till A. Riktade grafer används till exempel för enkelriktade gator, för vem som följer vem på sociala medier och för länkar mellan webbsidor.",
+      "ja": "「riktad graf」では{辺|へん}を{矢印|やじるし}で{描|か}きます。AからBへ{矢印|やじるし}があっても、BからAへ{行|い}けるとはかぎりません。{一方通行|いっぽうつうこう}の{道|みち}、SNSで{誰|だれ}が{誰|だれ}をフォローしているか、ウェブページどうしのリンクなどに{使|つか}われます。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.kortaste-vägen",
+   "lemma": "kortaste vägen",
+   "pos": "phrase",
+   "level": "B1",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.kortaste-vägen.1",
+     "ja": "{最短経路|さいたんけいろ}、{一番|いちばん}{近|ちか}い{道|みち}",
+     "defSv": "Den väg mellan två platser som är kortast av alla möjliga vägar.",
+     "defJa": "{二|ふた}つの{場所|ばしょ}の{間|あいだ}の、あり{得|う}るすべての{道|みち}の{中|なか}で{一番|いちばん}{短|みじか}い{道|みち}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Appen visar den kortaste vägen till stationen.",
+       "ja": "アプリが{駅|えき}までの{最短経路|さいたんけいろ}を{示|しめ}します。"
+      }
+     ],
+     "usageNote": {
+      "sv": "Står oftast i bestämd form: den kortaste vägen, ta kortaste vägen.",
+      "ja": "たいてい{既知形|きちけい}で{使|つか}います：den kortaste vägen、ta kortaste vägen。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.förbindelse",
+   "lemma": "förbindelse",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "förbindelse",
+    "defSg": "förbindelsen",
+    "indefPl": "förbindelser",
+    "defPl": "förbindelserna"
+   },
+   "senses": [
+    {
+     "id": "s.förbindelse.1",
+     "ja": "（{交通|こうつう}の）{便|びん}、つながり",
+     "defSv": "En väg, linje eller kabel som kopplar ihop två platser, till exempel ett flyg eller ett tåg mellan två städer.",
+     "defJa": "{二|ふた}つの{場所|ばしょ}を{結|むす}ぶ{道|みち}、{路線|ろせん}、ケーブル。たとえば{二|ふた}つの{都市|とし}を{結|むす}ぶ{飛行機|ひこうき}や{列車|れっしゃ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det finns en direkt förbindelse mellan Stockholm och Tokyo.",
+       "ja": "ストックホルムと{東京|とうきょう}の{間|あいだ}には{直行便|ちょっこうびん}があります。"
+      }
+     ],
+     "explanation": {
+      "sv": "En förbindelse är något som kopplar ihop två platser så att man kan resa eller skicka något mellan dem. Man talar om tågförbindelser, flygförbindelser och en dålig förbindelse när telefonen eller internet inte fungerar bra. I en graf motsvarar en förbindelse en kant.",
+      "ja": "「förbindelse」は、{旅行|りょこう}したり{何|なに}かを{送|おく}ったりできるように、{二|ふた}つの{場所|ばしょ}をつなぐものです。{列車|れっしゃ}の{便|びん}、{飛行機|ひこうき}の{便|びん}のほか、{電話|でんわ}やインターネットの{接続|せつぞく}が{悪|わる}いときにも「dålig förbindelse」と{言|い}います。グラフでは{辺|へん}にあたります。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

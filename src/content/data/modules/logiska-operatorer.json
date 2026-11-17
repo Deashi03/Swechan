@@ -1,0 +1,173 @@
+{
+ "id": "m.logiska-operatorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Logiska operatorer",
+ "titleJa": "{論理演算子|ろんりえんざんし}",
+ "descriptionSv": "Logiska operatorer: påstående, sanningsvärde, logisk, konjunktion, strömbrytare, sanningstabell, disjunktion, antingen eller, både och, negation, villkor, implikation, tillräckligt villkor, nödvändigt villkor, omvändning och ekvivalens.",
+ "descriptionJa": "{論理演算子|ろんりえんざんし}：{主張|しゅちょう}、{真理値|しんりち}、{論理的|ろんりてき}な、{連言|れんげん}、スイッチ、{真理値表|しんりちひょう}、{選言|せんげん}、どちらか{一方|いっぽう}だけ、{両方|りょうほう}、{否定|ひてい}、{条件|じょうけん}、{含意|がんい}、{十分条件|じゅうぶんじょうけん}、{必要条件|ひつようじょうけん}、（{命題|めいだい}の）{逆|ぎゃく}、{同値|どうち}。",
+ "categoryId": "R06-A02-T05",
+ "tags": [
+  "matematik",
+  "diskret matematik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.mangder-och-relationer"
+ ],
+ "related": [],
+ "recommendedOrder": 3252,
+ "words": [
+  {
+   "senseId": "s.påstående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sanningsvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.logisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konjunktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömbrytare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sanningstabell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.disjunktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antingen-eller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.både-och.1",
+   "active": true
+  },
+  {
+   "senseId": "s.negation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.villkor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.implikation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillräckligt-villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödvändigt-villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvändning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ekvivalens.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Regler för en ny lampa",
+  "paragraphs": [
+   "Aiko har köpt en lampa till hallen som hon kan styra med en app. I appen kan hon skriva egna regler. Varje villkor i en regel är ett påstående som har ett sanningsvärde: det är antingen sant eller falskt. – Det känns logiskt, tänker hon.",
+   "Den första regeln är en konjunktion: lampan tänds om det är mörkt och någon går i hallen. Båda delarna måste vara sanna. Aiko gör en liten sanningstabell med alla fyra fallen, och lampan lyser bara i ett av dem. Det fungerar som två strömbrytare efter varandra: båda måste vara på.",
+   "Den andra regeln är en disjunktion: musiken startar om Aiko kommer hem eller om klockan är sju. Det räcker att en av delarna är sann, men det går också bra om båda är det. I vardagen betyder eller ofta antingen eller, alltså bara det ena av två. I logik betyder eller däremot också både och.",
+   "Med en negation vänder man på sanningsvärdet. \"Lampan lyser inte\" är sant precis när \"lampan lyser\" är falskt. En implikation har formen \"om A, så B\": om det regnar, så blir gatan blöt. Regn är alltså ett tillräckligt villkor för en blöt gata, och en blöt gata är ett nödvändigt villkor för regn.",
+   "Men omvändningen gäller inte: gatan kan vara blöt för att någon har spolat den. Om både en implikation och dess omvändning är sanna har man en ekvivalens. Då gäller A om och endast om B gäller. – Nu förstår jag varför min första regel inte fungerade på dagen, skrattar Aiko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När tänds lampan enligt den första regeln?",
+    "options": [
+     "När det är mörkt eller någon går i hallen",
+     "När det är mörkt och någon går i hallen",
+     "När klockan är sju",
+     "När Aiko kommer hem"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… lampan tänds om det är mörkt och någon går i hallen.",
+    "explanationJa": "{暗|くら}くて、かつ{誰|だれ}かが{廊下|ろうか}を{歩|ある}いているときです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad räcker för att en disjunktion ska vara sann?",
+    "options": [
+     "Att båda delarna är falska",
+     "Att exakt en av delarna är falsk",
+     "Att minst en av delarna är sann",
+     "Att det finns en negation"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det räcker att en av delarna är sann, men det går också bra om båda är det.",
+    "explanationJa": "{少|すく}なくとも{一方|いっぽう}が{真|しん}であれば{十分|じゅうぶん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "usage",
+    "statementSv": "I logik betyder eller alltid antingen eller.",
+    "correct": false,
+    "explanationSv": "I logik betyder eller däremot också både och.",
+    "explanationJa": "{論理|ろんり}の「または」は「{両方|りょうほう}」の{場合|ばあい}も{含|ふく}みます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför gäller inte omvändningen av \"om det regnar, så blir gatan blöt\"?",
+    "options": [
+     "Det regnar aldrig på gatan",
+     "Regn gör inte gatan blöt",
+     "Implikationen är falsk",
+     "Gatan kan vara blöt av andra skäl"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… gatan kan vara blöt för att någon har spolat den.",
+    "explanationJa": "{道|みち}がぬれているのは、{誰|だれ}かが{水|みず}をまいたからかもしれないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "En negation vänder på sanningsvärdet.",
+    "correct": true,
+    "explanationSv": "Med en negation vänder man på sanningsvärdet.",
+    "explanationJa": "{否定|ひてい}は{真理値|しんりち}を{逆|ぎゃく}にします。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om logik i vardagen och om ord som och, eller och om.",
+  "discussionPoints": [
+   "När betyder eller \"antingen eller\" för dig, och när betyder det \"både och\"?",
+   "Kan du ge ett exempel på en regel med \"om …, så …\" från ditt liv?",
+   "Har du någon gång trott att omvändningen av något var sann, fast den inte var det?",
+   "Hur säger man \"och\", \"eller\" och \"inte\" på japanska i logik?"
+  ]
+ }
+}
