@@ -1,0 +1,173 @@
+{
+ "id": "m.matrisoperationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Matrisoperationer",
+ "titleJa": "{行列|ぎょうれつ}の{演算|えんざん}",
+ "descriptionSv": "Matrisoperationer: räknesätt, räkna ut, miniräknare, subtrahera, elementvis, multiplikation, faktor, produkt, matrismultiplikation, skalärprodukt, i tur och ordning, byta plats, kommutativ, transponera, invers och i kvadrat.",
+ "descriptionJa": "{行列|ぎょうれつ}の{演算|えんざん}：{計算|けいさん}の{種類|しゅるい}、{計算|けいさん}する、{電卓|でんたく}、{引|ひ}く、{成分|せいぶん}ごとに、{掛|か}け{算|ざん}、{因数|いんすう}、{積|せき}、{行列|ぎょうれつ}の{積|せき}、{内積|ないせき}、{順番|じゅんばん}に、{場所|ばしょ}を{入|い}れ{替|か}える、{可換|かかん}な、{転置|てんち}する、{逆行列|ぎゃくぎょうれつ}、2{乗|じょう}。",
+ "categoryId": "R06-A02-T03",
+ "tags": [
+  "matematik",
+  "linjär algebra"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.matriser"
+ ],
+ "related": [],
+ "recommendedOrder": 3233,
+ "words": [
+  {
+   "senseId": "s.räknesätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miniräknare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.subtrahera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elementvis.1",
+   "active": false
+  },
+  {
+   "senseId": "s.multiplikation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.faktor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.produkt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.matrismultiplikation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skalärprodukt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-tur-och-ordning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.byta-plats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kommutativ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transponera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.invers.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-kvadrat.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Kvittot och matrisen",
+  "paragraphs": [
+   "Omar köper fika till sina kollegor. Han tar två kaffe för 30 kronor styck, tre bullar för 25 kronor styck och en smörgås för 60 kronor. Kassan räknar ut summan: 2 · 30 + 3 · 25 + 1 · 60 = 195 kronor.",
+   "Omars kollega Lisa läser matematik på kvällarna. – Det där är en skalärprodukt, säger hon. Antalet varor är en vektor och priserna är en annan vektor. Man räknar komponent för komponent och lägger sedan ihop svaren.",
+   "Nästa dag jämför de två kaféer. Lisa ställer upp priserna i en matris med en kolumn för varje kafé. Hon subtraherar priserna i det ena kaféet från priserna i det andra, elementvis. Då ser hon direkt var det är billigast. Sedan gör hon en matrismultiplikation: rad gånger kolumn ger vad hela fikat kostar på varje ställe.",
+   "– Måste man räkna i tur och ordning? frågar Omar. – Ja, svarar Lisa. Vanlig multiplikation är ett kommutativt räknesätt, men matrismultiplikation är det inte. Om matriserna byter plats blir produkten oftast en annan. Därför är det viktigt vilken faktor som står först.",
+   "Till sist visar hon hur man transponerar matrisen, så att raderna blir kolumner. Hon räknar ut matrisen i kvadrat, alltså matrisen gånger sig själv. Hon berättar också om inversen, som tar bort det som en matris gör. Omar skrattar: – Jag tror att jag håller mig till miniräknaren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket kostar Omars fika?",
+    "options": [
+     "195 kronor",
+     "115 kronor",
+     "165 kronor",
+     "210 kronor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "2 · 30 + 3 · 25 + 1 · 60 = 195 kronor.",
+    "explanationJa": "{合計|ごうけい}は195クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför kallar Lisa uträkningen för en skalärprodukt?",
+    "options": [
+     "Man räknar bara med ett enda tal",
+     "Man subtraherar priserna",
+     "Man räknar två vektorer komponent för komponent och lägger ihop svaren",
+     "Man byter plats på raderna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Man räknar komponent för komponent och lägger sedan ihop svaren.",
+    "explanationJa": "{成分|せいぶん}ごとに{掛|か}けて{合計|ごうけい}するからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur jämför Lisa priserna i de två kaféerna först?",
+    "options": [
+     "Hon frågar personalen",
+     "Hon transponerar matrisen",
+     "Hon subtraherar priserna elementvis",
+     "Hon räknar ut inversen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon subtraherar priserna i det ena kaféet från priserna i det andra, elementvis.",
+    "explanationJa": "{成分|せいぶん}ごとに{値段|ねだん}を{引|ひ}き{算|ざん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Enligt Lisa spelar ordningen ingen roll vid matrismultiplikation.",
+    "correct": false,
+    "explanationSv": "Vanlig multiplikation är kommutativ, men matrismultiplikation är det inte.",
+    "explanationJa": "{行列|ぎょうれつ}の{掛|か}け{算|ざん}では{順番|じゅんばん}が{大切|たいせつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "När man transponerar en matris blir raderna kolumner.",
+    "correct": true,
+    "explanationSv": "… hur man transponerar matrisen, så att raderna blir kolumner.",
+    "explanationJa": "{転置|てんち}すると、{行|ぎょう}が{列|れつ}になります。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen med påhittade priser. Räkneexemplen är kontrollerade: 2 · 30 + 3 · 25 + 1 · 60 = 195 och (2, 3) · (4, 1) = 11."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att räkna med matriser och om när ordningen spelar roll.",
+  "discussionPoints": [
+   "Var i vardagen räknar man antal gånger pris och lägger ihop?",
+   "Kan du komma på något i vardagen där ordningen spelar roll?",
+   "Räknar du hellre i huvudet, på papper eller med miniräknare?",
+   "Varför tror du att datorer är bra på att räkna med matriser?"
+  ]
+ }
+}

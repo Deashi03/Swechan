@@ -1,0 +1,249 @@
+{
+ "entries": [
+  {
+   "id": "e.ekvationssystem",
+   "lemma": "ekvationssystem",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "ekvationssystem",
+    "defSg": "ekvationssystemet",
+    "indefPl": "ekvationssystem",
+    "defPl": "ekvationssystemen"
+   },
+   "senses": [
+    {
+     "id": "s.ekvationssystem.1",
+     "ja": "{連立方程式|れんりつほうていしき}",
+     "defSv": "Två eller flera ekvationer med flera obekanta, som ska gälla samtidigt.",
+     "defJa": "{複数|ふくすう}の{未知数|みちすう}をもつ{二|ふた}つ{以上|いじょう}の{方程式|ほうていしき}で、{同時|どうじ}に{成|な}り{立|た}つ{必要|ひつよう}があるもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ekvationssystemet x + y = 10 och x − y = 2 har lösningen x = 6, y = 4.",
+       "ja": "{連立方程式|れんりつほうていしき}x + y = 10、x − y = 2の{解|かい}は、x = 6、y = 4です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Ett ekvationssystem består av två eller flera ekvationer som hör ihop. Man söker värden på de obekanta som stämmer i alla ekvationerna på en gång. Ofta skriver man ekvationerna under varandra. Med två obekanta behöver man i regel två ekvationer.",
+      "ja": "{連立方程式|れんりつほうていしき}は、{組|く}になった{二|ふた}つ{以上|いじょう}の{方程式|ほうていしき}です。すべての{方程式|ほうていしき}で{同時|どうじ}に{正|ただ}しくなる{未知数|みちすう}の{値|あたい}を{求|もと}めます。{方程式|ほうていしき}はよく{縦|たて}に{並|なら}べて{書|か}きます。{未知数|みちすう}が{二|ふた}つなら、ふつう{方程式|ほうていしき}も{二|ふた}つ{必要|ひつよう}です。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.substitutionsmetod",
+   "lemma": "substitutionsmetod",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "substitutionsmetod",
+    "defSg": "substitutionsmetoden",
+    "indefPl": "substitutionsmetoder",
+    "defPl": "substitutionsmetoderna"
+   },
+   "senses": [
+    {
+     "id": "s.substitutionsmetod.1",
+     "ja": "{代入法|だいにゅうほう}",
+     "defSv": "Ett sätt att lösa ett ekvationssystem: man löser ut en obekant ur en ekvation och sätter in den i den andra.",
+     "defJa": "{連立方程式|れんりつほうていしき}の{解|と}き{方|かた}の{一|ひと}つ。{一|ひと}つの{方程式|ほうていしき}で{未知数|みちすう}を{表|あらわ}し、もう{一方|いっぽう}の{方程式|ほうていしき}に{代入|だいにゅう}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med substitutionsmetoden skriver man först y = 10 − x och sätter sedan in det i den andra ekvationen.",
+       "ja": "{代入法|だいにゅうほう}では、まずy = 10 − xと{書|か}き、それをもう{一方|いっぽう}の{方程式|ほうていしき}に{代入|だいにゅう}します。"
+      }
+     ],
+     "explanation": {
+      "sv": "I substitutionsmetoden löser man först ut en obekant, till exempel y = 10 − x. Sedan sätter man in det uttrycket i stället för y i den andra ekvationen. Då får man en vanlig ekvation med bara x, som är lätt att lösa.",
+      "ja": "{代入法|だいにゅうほう}では、まずy = 10 − xのように{一|ひと}つの{未知数|みちすう}について{解|と}きます。{次|つぎ}に、もう{一方|いっぽう}の{方程式|ほうていしき}のyのところにその{式|しき}を{入|い}れます。するとxだけの{普通|ふつう}の{方程式|ほうていしき}になり、{簡単|かんたん}に{解|と}けます。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.eliminera",
+   "lemma": "eliminera",
+   "pos": "verb",
+   "level": "C1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "eliminera",
+    "present": "eliminerar",
+    "past": "eliminerade",
+    "supine": "eliminerat",
+    "imperative": "eliminera",
+    "group": "1",
+    "pastParticiple": "eliminerad"
+   },
+   "senses": [
+    {
+     "id": "s.eliminera.1",
+     "ja": "{消去|しょうきょ}する、{取|と}り{除|のぞ}く",
+     "defSv": "Få bort en obekant ur en ekvation, eller ta bort något helt.",
+     "defJa": "{方程式|ほうていしき}から{未知数|みちすう}を{消|け}す。または、{何|なに}かを{完全|かんぜん}に{取|と}り{除|のぞ}く。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "När man adderar ekvationerna elimineras y.",
+       "ja": "{方程式|ほうていしき}を{足|た}すと、yが{消去|しょうきょ}されます。"
+      }
+     ],
+     "explanation": {
+      "sv": "Att eliminera en obekant betyder att man räknar så att den försvinner. Om den ena ekvationen innehåller +y och den andra −y, försvinner y när man adderar dem. Ordet används också utanför matematiken, till exempel om att eliminera en risk eller ett problem.",
+      "ja": "{未知数|みちすう}を「eliminera」するとは、それが{消|き}えるように{計算|けいさん}することです。{一方|いっぽう}の{方程式|ほうていしき}に+y、もう{一方|いっぽう}に−yがあれば、{足|た}すとyが{消|き}えます。{数学|すうがく}の{外|そと}でも、リスクや{問題|もんだい}を{取|と}り{除|のぞ}くという{意味|いみ}で{使|つか}います。"
+     },
+     "frame": {
+      "subject": "Man",
+      "complement": "en obekant"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.additionsmetod",
+   "lemma": "additionsmetod",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "additionsmetod",
+    "defSg": "additionsmetoden",
+    "indefPl": "additionsmetoder",
+    "defPl": "additionsmetoderna"
+   },
+   "senses": [
+    {
+     "id": "s.additionsmetod.1",
+     "ja": "{加減法|かげんほう}",
+     "defSv": "Ett sätt att lösa ett ekvationssystem: man adderar eller subtraherar ekvationerna så att en obekant elimineras.",
+     "defJa": "{連立方程式|れんりつほうていしき}の{解|と}き{方|かた}の{一|ひと}つ。{方程式|ほうていしき}どうしを{足|た}したり{引|ひ}いたりして、{一|ひと}つの{未知数|みちすう}を{消去|しょうきょ}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med additionsmetoden adderar man x + y = 10 och x − y = 2 och får 2x = 12.",
+       "ja": "{加減法|かげんほう}では、x + y = 10とx − y = 2を{足|た}して2x = 12を{得|え}ます。"
+      }
+     ],
+     "explanation": {
+      "sv": "I additionsmetoden lägger man ihop två ekvationer, vänsterled med vänsterled och högerled med högerled. Om en obekant har motsatta tecken i ekvationerna elimineras den. Ibland måste man först räkna en av ekvationerna gånger ett tal för att det ska gå.",
+      "ja": "{加減法|かげんほう}では、{二|ふた}つの{方程式|ほうていしき}を{左辺|さへん}どうし、{右辺|うへん}どうし{足|た}します。ある{未知数|みちすう}の{符号|ふごう}が{反対|はんたい}なら、それが{消|き}えます。そのために、まず{一方|いっぽう}の{方程式|ほうていしき}に{数|かず}を{掛|か}ける{必要|ひつよう}があることもあります。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.sakna-lösning",
+   "lemma": "sakna lösning",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "sakna lösning",
+    "present": "saknar lösning",
+    "past": "saknade lösning",
+    "supine": "saknat lösning",
+    "imperative": "sakna lösning",
+    "group": "1"
+   },
+   "senses": [
+    {
+     "id": "s.sakna-lösning.1",
+     "ja": "{解|かい}がない",
+     "defSv": "Om en ekvation eller ett ekvationssystem: inte ha något värde som gör att allt stämmer.",
+     "defJa": "{方程式|ほうていしき}や{連立方程式|れんりつほうていしき}について、すべてを{成|な}り{立|た}たせる{値|あたい}が{一|ひと}つもない。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Systemet x + y = 3 och x + y = 5 saknar lösning.",
+       "ja": "{連立方程式|れんりつほうていしき}x + y = 3、x + y = 5には{解|かい}がありません。"
+      }
+     ],
+     "explanation": {
+      "sv": "Ett ekvationssystem saknar lösning om ekvationerna säger emot varandra. x + y kan inte vara både 3 och 5. Om man ritar de två ekvationerna som linjer blir de parallella, så de har ingen skärningspunkt.",
+      "ja": "{方程式|ほうていしき}どうしが{矛盾|むじゅん}していると、{連立方程式|れんりつほうていしき}には{解|かい}がありません。x + yが3でもあり5でもあることはできません。{二|ふた}つの{方程式|ほうていしき}を{直線|ちょくせん}として{描|か}くと{平行|へいこう}になり、{交点|こうてん}がありません。"
+     },
+     "frame": {
+      "subject": "Systemet"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.oändligt-många-lösningar",
+   "lemma": "oändligt många lösningar",
+   "pos": "phrase",
+   "level": "C1",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.oändligt-många-lösningar.1",
+     "ja": "{無数|むすう}の{解|かい}",
+     "defSv": "När ett ekvationssystem har hur många lösningar som helst, eftersom ekvationerna egentligen säger samma sak.",
+     "defJa": "{方程式|ほうていしき}が{実|じつ}は{同|おな}じことを{言|い}っているため、{連立方程式|れんりつほうていしき}の{解|かい}がいくらでもあること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Systemet x + y = 3 och 2x + 2y = 6 har oändligt många lösningar.",
+       "ja": "{連立方程式|れんりつほうていしき}x + y = 3、2x + 2y = 6には{無数|むすう}の{解|かい}があります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Om den ena ekvationen bara är den andra gånger ett tal, säger de samma sak. Då stämmer varje punkt på linjen, och systemet har oändligt många lösningar. I en bild ligger de två linjerna precis på varandra. Ett ekvationssystem har alltså antingen en lösning, ingen lösning eller oändligt många lösningar.",
+      "ja": "{一方|いっぽう}の{方程式|ほうていしき}がもう{一方|いっぽう}に{数|かず}を{掛|か}けただけなら、{二|ふた}つは{同|おな}じことを{言|い}っています。すると{直線上|ちょくせんじょう}のすべての{点|てん}が{当|あ}てはまり、{解|かい}は{無数|むすう}にあります。{図|ず}では{二本|にほん}の{直線|ちょくせん}がぴったり{重|かさ}なります。つまり{連立方程式|れんりつほうていしき}の{解|かい}は、{一|ひと}つ、なし、{無数|むすう}のどれかです。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

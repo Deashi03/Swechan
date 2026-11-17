@@ -1,0 +1,173 @@
+{
+ "id": "m.egenvarden-och-egenvektorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Egenvärden och egenvektorer",
+ "titleJa": "{固有値|こゆうち}と{固有|こゆう}ベクトル",
+ "descriptionSv": "Egenvärden och egenvektorer: riktning, egenvektor, egenvärde, faktor, förstärka, krympa, dämpa, stabil, på lång sikt, karakteristisk ekvation, diagonalisera, vibrera, egenfrekvens, resonans, sökmotor och rangordna.",
+ "descriptionJa": "{固有値|こゆうち}と{固有|こゆう}ベクトル：{方向|ほうこう}、{固有|こゆう}ベクトル、{固有値|こゆうち}、{因数|いんすう}、{強|つよ}める、{縮|ちぢ}む、{弱|よわ}める、{安定|あんてい}した、{長期的|ちょうきてき}に、{固有方程式|こゆうほうていしき}、{対角化|たいかくか}する、{振動|しんどう}する、{固有振動数|こゆうしんどうすう}、{共振|きょうしん}、{検索|けんさく}エンジン、{順位|じゅんい}をつける。",
+ "categoryId": "R06-A02-T03",
+ "tags": [
+  "matematik",
+  "linjär algebra"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.determinanter"
+ ],
+ "related": [],
+ "recommendedOrder": 3236,
+ "words": [
+  {
+   "senseId": "s.riktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egenvektor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egenvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.faktor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förstärka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krympa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dämpa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stabil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.på-lång-sikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.karakteristisk-ekvation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.diagonalisera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vibrera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.egenfrekvens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resonans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rangordna.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Pilar som inte svänger av",
+  "paragraphs": [
+   "Anna läser linjär algebra och ska förklara egenvektorer för sin lillebror Leo. Hon ritar ett rutnät på en ballong och många små pilar på ballongen. När hon drar i ballongen åt sidan ändrar de flesta pilarna riktning.",
+   "Men en pil som pekar rakt åt sidan behåller sin riktning; den blir bara längre. – Den pilen är en egenvektor, säger Anna. Den blev dubbelt så lång, så egenvärdet är 2. Egenvärdet är alltså den faktor som vektorn blir längre eller kortare med.",
+   "Egenvärden används för att se vad som händer på lång sikt. Tänk dig en stad där antalet invånare varje år blir gånger 1,1. Faktorn 1,1 förstärker ökningen år efter år. Med faktorn 0,9 krymper staden i stället, och faktorn dämpar förändringen. Ett egenvärde på precis 1 betyder att läget är stabilt. Man hittar egenvärdena genom att lösa den karakteristiska ekvationen, och sedan kan man diagonalisera matrisen.",
+   "Anna berättar också om broar. En bro kan vibrera, och varje bro har en egenfrekvens. Om många människor går i samma takt som brons egenfrekvens kan det uppstå resonans, och bron börjar svänga kraftigt. Därför räknar ingenjörer noga på egenvärden.",
+   "– Används det här någon annanstans? frågar Leo. – Ja, svarar Anna. En känd sökmotor rangordnade från början webbsidor med hjälp av en egenvektor. Sidor som många viktiga sidor länkade till hamnade högst upp."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer med de flesta pilarna när Anna drar i ballongen?",
+    "options": [
+     "De försvinner",
+     "De blir alla dubbelt så långa",
+     "De ändrar riktning",
+     "De byter färg"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När hon drar i ballongen åt sidan ändrar de flesta pilarna riktning.",
+    "explanationJa": "ほとんどの{矢印|やじるし}は{向|む}きが{変|か}わります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför är egenvärdet 2 i Annas exempel?",
+    "options": [
+     "Det finns två pilar",
+     "Egenvektorn blev dubbelt så lång",
+     "Ballongen har två färger",
+     "Pilen pekar åt två håll"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den blev dubbelt så lång, så egenvärdet är 2.",
+    "explanationJa": "{固有|こゆう}ベクトルの{長|なが}さが2{倍|ばい}になったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad händer med staden om faktorn är 0,9?",
+    "options": [
+     "Den växer snabbt",
+     "Den krymper",
+     "Den är helt stabil",
+     "Den får en ny bro"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Med faktorn 0,9 krymper staden i stället …",
+    "explanationJa": "{町|まち}は{小|ちい}さくなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "cause",
+    "statementSv": "Resonans kan uppstå om många människor går i samma takt som brons egenfrekvens.",
+    "correct": true,
+    "explanationSv": "Om många människor går i samma takt som brons egenfrekvens kan det uppstå resonans …",
+    "explanationJa": "{固有振動数|こゆうしんどうすう}と{同|おな}じ{速|はや}さで{歩|ある}くと{共振|きょうしん}が{起|お}こることがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Enligt Anna används egenvektorer bara i skolböcker.",
+    "correct": false,
+    "explanationSv": "En känd sökmotor rangordnade från början webbsidor med hjälp av en egenvektor.",
+    "explanationJa": "{検索|けんさく}エンジンでも{使|つか}われました。"
+   }
+  ],
+  "factSources": [
+   "Sökmotorn: Googles ursprungliga PageRank-algoritm (Brin & Page 1998) rangordnar sidor med en egenvektor till länkmatrisen. Broar: att gående i takt kan sätta broar i svängning är väldokumenterat (t.ex. Millennium Bridge i London 2000), men texten nämner ingen bro vid namn. Övriga exempel är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker som växer, krymper eller svänger.",
+  "discussionPoints": [
+   "Kan du komma på något som växer eller krymper lite varje år?",
+   "Har du känt en bro eller ett golv vibrera?",
+   "Hur tror du att en sökmotor bestämmer vilka sidor som hamnar högst upp?",
+   "Vad är stabilt i ditt liv på lång sikt?"
+  ]
+ }
+}

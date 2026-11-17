@@ -1,0 +1,330 @@
+{
+ "entries": [
+  {
+   "id": "e.subtrahera",
+   "lemma": "subtrahera",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "subtrahera",
+    "present": "subtraherar",
+    "past": "subtraherade",
+    "supine": "subtraherat",
+    "imperative": "subtrahera",
+    "group": "1",
+    "pastParticiple": "subtraherad"
+   },
+   "senses": [
+    {
+     "id": "s.subtrahera.1",
+     "ja": "{引|ひ}く、{減|げん}じる",
+     "defSv": "Dra bort ett tal från ett annat, alltså räkna minus.",
+     "defJa": "ある{数|かず}から{別|べつ}の{数|かず}を{取|と}り{去|さ}る。マイナスで{計算|けいさん}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om man subtraherar 3 från 10 får man 7.",
+       "ja": "10から3を{引|ひ}くと7になります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Subtrahera är ett formellt ord för att räkna minus eller dra ifrån. När man subtraherar två matriser av samma storlek drar man varje element i den andra matrisen från elementet på samma plats i den första. I vardagen säger man oftare dra ifrån eller ta bort.",
+      "ja": "「subtrahera」は、マイナスで{計算|けいさん}する、{引|ひ}くという{意味|いみ}のかたい{言葉|ことば}です。{同|おな}じ{大|おお}きさの{行列|ぎょうれつ}どうしを{引|ひ}くときは、{二|ふた}つ{目|め}の{行列|ぎょうれつ}の{各成分|かくせいぶん}を、{一|ひと}つ{目|め}の{同|おな}じ{位置|いち}の{成分|せいぶん}から{引|ひ}きます。ふだんは「dra ifrån」や「ta bort」とよく{言|い}います。"
+     },
+     "frame": {
+      "subject": "Man",
+      "complement": "3 från 10"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.elementvis",
+   "lemma": "elementvis",
+   "pos": "adverb",
+   "level": "C1",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.elementvis.1",
+     "ja": "{成分|せいぶん}ごとに",
+     "defSv": "Ett element i taget, så att man räknar med de element som står på samma plats.",
+     "defJa": "{同|おな}じ{位置|いち}にある{成分|せいぶん}どうしで、{一|ひと}つずつ{計算|けいさん}するように。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Två matriser av samma storlek adderas elementvis.",
+       "ja": "{同|おな}じ{大|おお}きさの{二|ふた}つの{行列|ぎょうれつ}は、{成分|せいぶん}ごとに{足|た}されます。"
+      }
+     ],
+     "explanation": {
+      "sv": "Elementvis betyder att man räknar med ett element i taget: elementet på rad 1 och kolumn 1 i den ena matrisen med elementet på samma plats i den andra, och så vidare. Addition och subtraktion av matriser görs alltid elementvis. Därför måste matriserna vara lika stora.",
+      "ja": "「elementvis」は、{成分|せいぶん}を{一|ひと}つずつ{計算|けいさん}するという{意味|いみ}です。{一方|いっぽう}の{行列|ぎょうれつ}の1{行|ぎょう}1{列|れつ}の{成分|せいぶん}を、もう{一方|いっぽう}の{同|おな}じ{位置|いち}の{成分|せいぶん}と{計算|けいさん}し、{次|つぎ}も{同|おな}じようにします。{行列|ぎょうれつ}の{足|た}し{算|ざん}と{引|ひ}き{算|ざん}はいつも{成分|せいぶん}ごとに{行|おこな}うので、{行列|ぎょうれつ}は{同|おな}じ{大|おお}きさでなければなりません。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.matrismultiplikation",
+   "lemma": "matrismultiplikation",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "matrismultiplikation",
+    "defSg": "matrismultiplikationen",
+    "indefPl": "matrismultiplikationer",
+    "defPl": "matrismultiplikationerna"
+   },
+   "senses": [
+    {
+     "id": "s.matrismultiplikation.1",
+     "ja": "{行列|ぎょうれつ}の{掛|か}け{算|ざん}、{行列|ぎょうれつ}の{積|せき}",
+     "defSv": "När man räknar två matriser gånger varandra, rad gånger kolumn.",
+     "defJa": "{二|ふた}つの{行列|ぎょうれつ}を、{行|ぎょう}と{列|れつ}を{組|く}み{合|あ}わせて{掛|か}け{合|あ}わせること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vid matrismultiplikation räknar man varje rad i den första matrisen gånger varje kolumn i den andra.",
+       "ja": "{行列|ぎょうれつ}の{掛|か}け{算|ざん}では、{一|ひと}つ{目|め}の{行列|ぎょうれつ}の{各行|かくぎょう}に、{二|ふた}つ{目|め}の{行列|ぎょうれつ}の{各列|かくれつ}を{掛|か}けます。"
+      }
+     ],
+     "explanation": {
+      "sv": "Matrismultiplikation görs inte elementvis. I stället tar man en rad i den första matrisen och en kolumn i den andra, räknar talen gånger varandra parvis och adderar. Svaret blir ett enda element i den nya matrisen. Därför måste den första matrisen ha lika många kolumner som den andra har rader.",
+      "ja": "{行列|ぎょうれつ}の{掛|か}け{算|ざん}は{成分|せいぶん}ごとには{行|おこな}いません。{一|ひと}つ{目|め}の{行列|ぎょうれつ}の{行|ぎょう}と{二|ふた}つ{目|め}の{行列|ぎょうれつ}の{列|れつ}を{取|と}り、{数|かず}を{組|く}ごとに{掛|か}けてから{足|た}します。その{答|こた}えが、{新|あたら}しい{行列|ぎょうれつ}の{一|ひと}つの{成分|せいぶん}になります。そのため、{一|ひと}つ{目|め}の{行列|ぎょうれつ}の{列|れつ}の{数|かず}と、{二|ふた}つ{目|め}の{行列|ぎょうれつ}の{行|ぎょう}の{数|かず}が{同|おな}じでなければなりません。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.skalärprodukt",
+   "lemma": "skalärprodukt",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "skalärprodukt",
+    "defSg": "skalärprodukten",
+    "indefPl": "skalärprodukter",
+    "defPl": "skalärprodukterna"
+   },
+   "senses": [
+    {
+     "id": "s.skalärprodukt.1",
+     "ja": "{内積|ないせき}、スカラー{積|せき}",
+     "defSv": "Ett tal som man får när man räknar två vektorer gånger varandra komponent för komponent och sedan lägger ihop svaren.",
+     "defJa": "{二|ふた}つのベクトルの{成分|せいぶん}どうしを{掛|か}け、その{答|こた}えを{合計|ごうけい}して{得|え}られる{数|かず}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Skalärprodukten av (2, 3) och (4, 1) är 2 · 4 + 3 · 1 = 11.",
+       "ja": "(2, 3)と(4, 1)の{内積|ないせき}は、2·4 + 3·1 = 11です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Skalärprodukten av två vektorer är ett vanligt tal, alltså en skalär. Man räknar komponenterna gånger varandra parvis och adderar. Ett vardagligt exempel är ett kvitto: antalet varor gånger priset för varje vara, och sedan summan. Om skalärprodukten är noll är vektorerna vinkelräta mot varandra.",
+      "ja": "{内積|ないせき}は{二|ふた}つのベクトルから{得|え}られる{普通|ふつう}の{数|かず}、つまりスカラーです。{成分|せいぶん}を{組|く}ごとに{掛|か}けて{足|た}します。{身近|みぢか}な{例|れい}はレシートで、{品物|しなもの}の{数|かず}にそれぞれの{値段|ねだん}を{掛|か}け、{最後|さいご}に{合計|ごうけい}します。{内積|ないせき}が0なら、{二|ふた}つのベクトルは{垂直|すいちょく}です。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.byta-plats",
+   "lemma": "byta plats",
+   "pos": "verb",
+   "level": "B1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "byta plats",
+    "present": "byter plats",
+    "past": "bytte plats",
+    "supine": "bytt plats",
+    "imperative": "byt plats",
+    "group": "2"
+   },
+   "senses": [
+    {
+     "id": "s.byta-plats.1",
+     "ja": "{場所|ばしょ}を{入|い}れ{替|か}える",
+     "defSv": "Flytta två saker eller personer så att var och en hamnar där den andra var.",
+     "defJa": "{二|ふた}つのものや{二人|ふたり}を、{互|たが}いに{相手|あいて}のいた{場所|ばしょ}へ{移|うつ}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kan vi byta plats? Jag vill sitta vid fönstret.",
+       "ja": "{席|せき}を{替|か}わってもらえますか。{窓際|まどぎわ}に{座|すわ}りたいんです。"
+      }
+     ],
+     "frame": {
+      "subject": "Vi"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.kommutativ",
+   "lemma": "kommutativ",
+   "pos": "adjective",
+   "level": "C1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "kommutativ",
+    "neuter": "kommutativt",
+    "plural": "kommutativa",
+    "definite": "kommutativa"
+   },
+   "senses": [
+    {
+     "id": "s.kommutativ.1",
+     "ja": "{可換|かかん}な、{交換法則|こうかんほうそく}が{成|な}り{立|た}つ",
+     "defSv": "Om ett räknesätt: som ger samma svar även om talen byter plats.",
+     "defJa": "{計算|けいさん}の{種類|しゅるい}について、{数|かず}の{順番|じゅんばん}を{入|い}れ{替|か}えても{同|おな}じ{答|こた}えになる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vanlig multiplikation är kommutativ: 3 · 5 = 5 · 3.",
+       "ja": "{普通|ふつう}の{掛|か}け{算|ざん}は{可換|かかん}です。3·5 = 5·3。"
+      }
+     ],
+     "explanation": {
+      "sv": "Ett räknesätt är kommutativt om ordningen inte spelar någon roll. Addition och multiplikation av vanliga tal är kommutativa: 2 + 7 = 7 + 2. Men matrismultiplikation är inte kommutativ. A gånger B och B gånger A blir oftast olika matriser, så man måste vara noga med ordningen.",
+      "ja": "{計算|けいさん}の{順番|じゅんばん}が{関係|かんけい}ないとき、その{計算|けいさん}は「kommutativ（{可換|かかん}）」です。{普通|ふつう}の{数|かず}の{足|た}し{算|ざん}と{掛|か}け{算|ざん}は{可換|かかん}で、2 + 7 = 7 + 2です。しかし{行列|ぎょうれつ}の{掛|か}け{算|ざん}は{可換|かかん}ではありません。A×BとB×Aはたいてい{違|ちが}う{行列|ぎょうれつ}になるので、{順番|じゅんばん}に{気|き}をつける{必要|ひつよう}があります。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.transponera",
+   "lemma": "transponera",
+   "pos": "verb",
+   "level": "C1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "transponera",
+    "present": "transponerar",
+    "past": "transponerade",
+    "supine": "transponerat",
+    "imperative": "transponera",
+    "group": "1",
+    "pastParticiple": "transponerad"
+   },
+   "senses": [
+    {
+     "id": "s.transponera.1",
+     "ja": "{転置|てんち}する",
+     "defSv": "Göra om en matris så att raderna blir kolumner och kolumnerna blir rader.",
+     "defJa": "{行列|ぎょうれつ}の{行|ぎょう}を{列|れつ}に、{列|れつ}を{行|ぎょう}に{入|い}れ{替|か}える。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om man transponerar en 2 × 3-matris får man en 3 × 2-matris.",
+       "ja": "2×3{行列|ぎょうれつ}を{転置|てんち}すると、3×2{行列|ぎょうれつ}になります。"
+      }
+     ],
+     "explanation": {
+      "sv": "När man transponerar en matris byter rader och kolumner plats: den första raden blir den första kolumnen, och så vidare. Elementen på huvuddiagonalen stannar kvar. Den nya matrisen skrivs ofta med ett litet T. Ordet transponera används också i musik, när man spelar en låt i en annan tonart.",
+      "ja": "{行列|ぎょうれつ}を{転置|てんち}すると、{行|ぎょう}と{列|れつ}が{入|い}れ{替|か}わります。1{行目|ぎょうめ}が1{列目|れつめ}になり、ほかも{同|おな}じです。{主対角線|しゅたいかくせん}の{成分|せいぶん}はそのまま{残|のこ}ります。{新|あたら}しい{行列|ぎょうれつ}（{転置行列|てんちぎょうれつ}）は、よく{小|ちい}さなTをつけて{書|か}きます。{音楽|おんがく}で{曲|きょく}を{別|べつ}の{調|ちょう}に{移|うつ}すときにも、この{言葉|ことば}を{使|つか}います。"
+     },
+     "frame": {
+      "subject": "Man",
+      "complement": "en matris"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.invers",
+   "lemma": "invers",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "invers",
+    "defSg": "inversen",
+    "indefPl": "inverser",
+    "defPl": "inverserna"
+   },
+   "senses": [
+    {
+     "id": "s.invers.1",
+     "ja": "{逆行列|ぎゃくぎょうれつ}、{逆|ぎゃく}",
+     "defSv": "Den matris som tar bort det som en annan matris gör, så att produkten blir enhetsmatrisen.",
+     "defJa": "ある{行列|ぎょうれつ}のはたらきを{打|う}ち{消|け}す{行列|ぎょうれつ}。{掛|か}けると{単位行列|たんいぎょうれつ}になる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Inversen till A skrivs A⁻¹.",
+       "ja": "Aの{逆行列|ぎゃくぎょうれつ}はA⁻¹と{書|か}きます。"
+      }
+     ],
+     "explanation": {
+      "sv": "Inversen till en matris gör det motsatta som matrisen gör. Om A vrider en bild åt vänster, vrider inversen den tillbaka åt höger. A gånger inversen blir enhetsmatrisen, ungefär som 5 · 1/5 = 1. Bara kvadratiska matriser kan ha en invers, och inte ens alla av dem har det.",
+      "ja": "{逆行列|ぎゃくぎょうれつ}は、もとの{行列|ぎょうれつ}と{反対|はんたい}のはたらきをします。Aが{画像|がぞう}を{左|ひだり}に{回|まわ}すなら、{逆行列|ぎゃくぎょうれつ}は{右|みぎ}に{戻|もど}します。5·1/5 = 1のように、Aと{逆行列|ぎゃくぎょうれつ}を{掛|か}けると{単位行列|たんいぎょうれつ}になります。{逆行列|ぎゃくぎょうれつ}をもてるのは{正方行列|せいほうぎょうれつ}だけで、そのすべてがもつわけでもありません。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

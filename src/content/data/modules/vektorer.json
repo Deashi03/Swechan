@@ -1,0 +1,177 @@
+{
+ "id": "m.vektorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Vektorer",
+ "titleJa": "ベクトル",
+ "descriptionSv": "Vektorer: vektor, skalär, pil, riktning, belopp, hastighet, komponent, startpunkt, spets, nollvektor, enhetsvektor, motsatt, parallell, koordinat, förskjutning, vindriktning och addera.",
+ "descriptionJa": "ベクトル：ベクトル、スカラー、{矢印|やじるし}、{方向|ほうこう}、{大|おお}きさ、{速度|そくど}、{成分|せいぶん}、{始点|してん}、{先端|せんたん}、ゼロベクトル、{単位|たんい}ベクトル、{反対|はんたい}の、{平行|へいこう}な、{座標|ざひょう}、{平行移動|へいこういどう}、{風向|かざむ}き、{足|た}す。",
+ "categoryId": "R06-A02-T03",
+ "tags": [
+  "matematik",
+  "linjär algebra"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.optimeringsproblem"
+ ],
+ "related": [],
+ "recommendedOrder": 3231,
+ "words": [
+  {
+   "senseId": "s.vektor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skalär.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pil.2",
+   "active": true
+  },
+  {
+   "senseId": "s.riktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belopp.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komponent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.addera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.startpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spets.2",
+   "active": true
+  },
+  {
+   "senseId": "s.nollvektor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.enhetsvektor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.motsatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parallell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koordinat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förskjutning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vindriktning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett spel med pilar",
+  "paragraphs": [
+   "Sara studerar matematik och gör ett litet spel på fritiden. I spelet flyger en drönare över en stad. Varje sekund flyttas drönaren enligt en vektor. En vektor är som en pil: den har en riktning och en längd.",
+   "Sara ritar vektorerna i ett koordinatsystem. Varje pil har en startpunkt och en spets. Vektorn (3, 4) har komponenterna 3 och 4. Pilens belopp, alltså längden, är 5. Det betyder att drönaren har hastigheten 5 rutor per sekund.",
+   "Men i spelet blåser det också. Vindriktningen ändras hela tiden. När vinden kommer från höger adderar Sara vindens vektor (−1, 0) till drönarens vektor. Då blir förskjutningen varje sekund (2, 4) i stället för (3, 4).",
+   "Om vinden är lika stark som drönaren och blåser i motsatt riktning, står drönaren helt still. Summan av de två vektorerna blir då nollvektorn. Två vektorer som pekar åt samma håll, eller rakt åt motsatt håll, kallas parallella.",
+   "Temperaturen i staden visas också i spelet, men den är ingen pil. Den är en skalär, ett vanligt tal utan riktning. – Matte är roligare när man ser det röra sig, säger Sara. Nästa vecka vill hon lära sig mer om enhetsvektorer och koordinater i tre dimensioner."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har en vektor enligt texten?",
+    "options": [
+     "Bara ett tal",
+     "Bara en färg",
+     "En startpunkt men ingen spets",
+     "En riktning och en längd"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En vektor är som en pil: den har en riktning och en längd.",
+    "explanationJa": "ベクトルには{方向|ほうこう}と{長|なが}さがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång är vektorn (3, 4)?",
+    "options": [
+     "3",
+     "5",
+     "4",
+     "7"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Pilens belopp, alltså längden, är 5.",
+    "explanationJa": "ベクトル(3, 4)の{大|おお}きさは5です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir förskjutningen (2, 4) i stället för (3, 4)?",
+    "options": [
+     "Sara adderar vindens vektor",
+     "Drönaren blir tyngre",
+     "Spelet blir långsammare",
+     "Temperaturen ändras"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När vinden kommer från höger adderar Sara vindens vektor (−1, 0) till drönarens vektor.",
+    "explanationJa": "{風|かぜ}のベクトル(−1, 0)を{足|た}すからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Om vinden är lika stark och blåser i motsatt riktning, rör sig drönaren snabbare.",
+    "correct": false,
+    "explanationSv": "… står drönaren helt still.",
+    "explanationJa": "ドローンはまったく{動|うご}かなくなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "usage",
+    "statementSv": "Temperaturen är en skalär eftersom den inte har någon riktning.",
+    "correct": true,
+    "explanationSv": "Den är en skalär, ett vanligt tal utan riktning.",
+    "explanationJa": "{気温|きおん}には{向|む}きがないので、スカラーです。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen. Räkneexemplen är kontrollerade: |(3, 4)| = 5 och (3, 4) + (−1, 0) = (2, 4)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker i vardagen som har både storlek och riktning.",
+  "discussionPoints": [
+   "Vilka saker i vardagen kan man beskriva med en vektor?",
+   "Är temperatur, vikt och pris skalärer eller vektorer?",
+   "Hur ser man vindriktningen på en väderkarta?",
+   "Hur skulle du förklara vad en vektor är för ett barn?"
+  ]
+ }
+}
