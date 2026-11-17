@@ -1,0 +1,178 @@
+{
+ "id": "m.gransvarden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Gränsvärden",
+ "titleJa": "{極限|きょくげん}",
+ "descriptionSv": "Gränsvärden: gränsvärde, närma sig, oändligheten, talföljd, studsa, halvera, hälften, miniräknare, decimal, försumbar, konvergera, divergera, summa, närmevärde, svalna, rumstemperatur och asymptot.",
+ "descriptionJa": "{極限|きょくげん}：{極限|きょくげん}、{近|ちか}づく、{無限|むげん}、{数列|すうれつ}、{跳|は}ねる、{半分|はんぶん}にする、{半分|はんぶん}、{電卓|でんたく}、{小数|しょうすう}、{無視|むし}できる、{収束|しゅうそく}する、{発散|はっさん}する、{和|わ}、{近似値|きんじち}、{冷|さ}める、{室温|しつおん}、{漸近線|ぜんきんせん}。",
+ "categoryId": "R06-A02-T01",
+ "tags": [
+  "matematik",
+  "analys"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.vilseledande-statistik"
+ ],
+ "related": [],
+ "recommendedOrder": 3211,
+ "words": [
+  {
+   "senseId": "s.gränsvärde.2",
+   "active": true
+  },
+  {
+   "senseId": "s.närma-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oändlighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talföljd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.studsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälften.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miniräknare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decimal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försumbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konvergera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.divergera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.summa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närmevärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svalna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rumstemperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.asymptot.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Bollen som studsar lägre och lägre",
+  "paragraphs": [
+   "Emma läser matematik på universitetet. En kväll släpper hon en boll från två meters höjd. Varje gång bollen studsar kommer den bara upp till hälften så högt som förra gången: 1 meter, 0,5 meter, 0,25 meter och så vidare.",
+   "Höjderna bildar en talföljd. Emma tar fram sin miniräknare och halverar talet igen och igen. Efter tjugo gånger är svaret ett tal med många decimaler, ungefär 0,000002 meter. – Den höjden är försumbar, säger hon.",
+   "Talföljden närmar sig noll, men den blir aldrig exakt noll. Man säger att den konvergerar och att gränsvärdet är noll. Om bollen i stället kom dubbelt så högt varje gång den studsade, skulle talföljden divergera.",
+   "Sedan lägger Emma ihop alla höjderna: 1 + 0,5 + 0,25 + … Summan blir aldrig större än 2, även om bollen studsar i all oändlighet. Talet 1,999 är ett bra närmevärde, men gränsvärdet är exakt 2.",
+   "Under tiden har hennes te svalnat. Temperaturen närmar sig rumstemperatur, 21 grader. I en graf över temperaturen blir linjen y = 21 en asymptot. – Matematik finns överallt, tänker Emma, även i en kopp te."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur högt kommer bollen varje gång den studsar?",
+    "options": [
+     "Lika högt som förra gången",
+     "Hälften så högt som förra gången",
+     "Dubbelt så högt som förra gången",
+     "En meter varje gång"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Varje gång bollen studsar kommer den bara upp till hälften så högt som förra gången.",
+    "explanationJa": "{毎回|まいかい}、{前|まえ}の{半分|はんぶん}の{高|たか}さまでしか{上|あ}がりません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför säger Emma att höjden är försumbar?",
+    "options": [
+     "Den är så liten att den inte spelar någon roll",
+     "Miniräknaren visar fel svar",
+     "Bollen har gått sönder",
+     "Hon har glömt att räkna"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Efter tjugo gånger är svaret … ungefär 0,000002 meter. – Den höjden är försumbar.",
+    "explanationJa": "{高|たか}さが{小|ちい}さすぎて、{無視|むし}できるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad är gränsvärdet för talföljden av höjderna?",
+    "options": [
+     "Två",
+     "En",
+     "21",
+     "Noll"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Man säger att den konvergerar och att gränsvärdet är noll.",
+    "explanationJa": "{高|たか}さの{数列|すうれつ}の{極限|きょくげん}は 0 です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Summan av alla höjderna blir till slut större än 2.",
+    "correct": false,
+    "explanationSv": "Summan blir aldrig större än 2, även om bollen studsar i all oändlighet.",
+    "explanationJa": "{和|わ}は{決|けっ}して 2 より{大|おお}きくなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Teets temperatur kommer närmare och närmare 21 grader.",
+    "correct": true,
+    "explanationSv": "Temperaturen närmar sig rumstemperatur, 21 grader.",
+    "explanationJa": "お{茶|ちゃ}の{温度|おんど}は{室温|しつおん}の 21 {度|ど}に{近|ちか}づきます。"
+   }
+  ],
+  "factSources": [
+   "Förenklat räkneexempel: en verklig boll förlorar inte exakt hälften av höjden vid varje studs.",
+   "Summan 1 + 1/2 + 1/4 + … har gränsvärdet 2 (geometrisk summa). Ett te som svalnar närmar sig rumstemperaturen men når den i teorin aldrig (Newtons avsvalningslag, förenklat)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker i vardagen som kommer närmare och närmare ett gränsvärde.",
+  "discussionPoints": [
+   "Kan du ge ett exempel på något som närmar sig ett gränsvärde i vardagen?",
+   "Hur förklarar man ordet asymptot på japanska?",
+   "När är en skillnad så liten att den är försumbar för dig?",
+   "Vad tänker du på när du hör ordet oändligheten?"
+  ]
+ }
+}
