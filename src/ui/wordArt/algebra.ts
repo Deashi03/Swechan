@@ -7,7 +7,7 @@
  * term/koefficient/variabelterm/konstantterm/förtecken on 4x + 7 − 2y; vänsterled/högerled on 2x + 1 = 9;
  * multiplicera in/bryta ut with the arrows going in opposite directions; ≥/≤ on the same number line).
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
+import { C, all, arrow, circle, g, line, path, rect, type Svg } from './kit';
 import { HL, T, thought } from './people';
 import { P, greyed } from './blindFix';
 
@@ -57,13 +57,6 @@ const sheet = (x: number, y: number, w: number, h: number) => all(rect(x, y, w, 
 const padlock = (x: number, y: number, s = 1) => at(x, y, s, path('M-6 -4 L-6 -11 C-6 -19 6 -19 6 -11 L6 -4', 'none', C.ink, 2.4), rect(-9, -4, 18, 14, C.gold, 2, C.ink, 1.4), circle(0, 2, 1.8, C.ink, null));
 /** A dial whose pointer can turn, with a circular arrow (= changes). */
 const spin = (x: number, y: number, r: number, col: string = HL) => all(path(`M${x + r} ${y} A${r} ${r} 0 1 1 ${f1(x + r * 0.2)} ${f1(y - r * 0.98)}`, 'none', col, 2.2), path(`M${f1(x + r * 0.2)} ${f1(y - r * 0.98)} l7 -3 l-2 7 Z`, col, col, 1));
-/** Balance scale with something on each pan. */
-const balance = (cx: number, tilt: number, left: Svg, right: Svg, col: string = C.ink) => all(
-  path(`M${cx - 12} 108 L${cx + 12} 108 L${cx} 96 Z`, C.grey, C.ink, 1.2), line(`M${cx} 96 L${cx} 52`, col, 2.4),
-  g(`rotate(${tilt} ${cx} 52)`, line(`M${cx - 40} 52 L${cx + 40} 52`, col, 2.4), line(`M${cx - 40} 52 L${cx - 50} 72 M${cx - 40} 52 L${cx - 30} 72 M${cx + 40} 52 L${cx + 30} 72 M${cx + 40} 52 L${cx + 50} 72`, C.ink, 1),
-    path(`M${cx - 54} 72 L${cx - 26} 72 C${cx - 28} 80 ${cx - 52} 80 ${cx - 54} 72 Z`, C.silver, C.ink, 1.2), path(`M${cx + 26} 72 L${cx + 54} 72 C${cx + 52} 80 ${cx + 28} 80 ${cx + 26} 72 Z`, C.silver, C.ink, 1.2),
-    g(`translate(${cx - 40} 66) rotate(${-tilt})`, left), g(`translate(${cx + 40} 66) rotate(${-tilt})`, right)),
-  circle(cx, 52, 3, C.dark, null));
 /** Number line from a to b; returns svg and X(). */
 const nline = (y: number, a: number, b: number, x0 = 16, x1 = 104) => {
   const step = (x1 - x0) / (b - a), X = (n: number) => f1(x0 + (n - a) * step), out: Svg[] = [line(`M${x0 - 8} ${y} L${x1 + 8} ${y}`, C.ink, 1.8)];
@@ -103,8 +96,8 @@ export const ALGEBRA_MOTIFS: Record<string, Svg> = {
   'algx.algebraiskt-uttryck': (() => { const toks: Tok[] = [['3', 0.62], ['a', 0.62], ['+', 0.82], ['2', 0.62], ['b', 0.62], ['−', 0.82], ['5', 0.66]]; const e = expr(60, 64, toks, 20, [1, 4], { box: false }); return all(bg(), rect(10, 38, 100, 40, MARK, 6, HL, 2.6), e.svg, greyed(card(30, 88, 60, 18), num(60, 101, '3 + 2 = 5', 10)), cross(92, 97, 0.9)); })(),
   /** värde: x on a card with a tag hanging from it; on the tag the highlighted number 3. */
   'algx.värde.2': all(bg(), card(14, 22, 44, 44), num(36, 54, 'x', 30, C.ink), line('M58 44 C70 44 70 60 78 64', C.ink, 1.6), path('M78 52 L108 52 L108 84 L78 84 L72 68 Z', MARK, HL, 2.2), circle(78, 68, 2, C.ink, null), num(92, 77, '3', 22, HL), num(36, 94, 'x = 3', 14, C.grey)),
-  /** variera: a price curve that goes up and down month by month (highlighted) against a flat grey line. */
-  'algx.variera': all(bg(), line('M14 18 L14 98 L108 98', C.ink, 1.8), line('M14 70 L106 70', C.grey, 2, '4 3'), line('M16 72 L28 48 L40 80 L52 38 L64 62 L76 30 L88 76 L102 52', HL, 3), ...[28, 40, 52, 64, 76, 88, 102].map((x) => line(`M${x} 96 L${x} 100`, C.ink, 1.2)), arrow(20, 24, 20, 14, C.ink, 1.6)),
+  /** variera: seven thermometers for the seven days of a week, each at a different height with a different number. */
+  'algx.variera': all(bg(), ...[12, 4, 9, 15, 6, 11, 2].map((v, i) => { const x = 14 + i * 15, top = 86 - v * 3.6; return all(rect(x - 4, 26, 8, 64, C.white, 4, C.ink, 1.2), rect(x - 2, f1(top), 4, f1(88 - top), HL, 1, null), circle(x, 92, 5.5, HL, C.ink, 1.2), num(x, 20, `${v}`, 9, HL), circle(x, 106, 2.2, C.grey, null)); })),
   /** sätta in: a tile with 4 drops into the place of x in 2x + 1; below, 2 · 4 + 1. */
   'algx.sätta-in.2': (() => { const toks: Tok[] = [['2', 0.62], ['x', 0.8], ['+', 0.82], ['1', 0.62]]; const e = expr(60, 66, toks, 22, [], { dim: false }); return all(bg(), card(14, 44, 92, 34), rect(e.xs[1]! - 10, 46, 20, 26, 'none', 3, HL, 2, ), e.svg, rect(e.xs[1]! - 10, 8, 20, 22, MARK, 3, HL, 2.2), num(e.xs[1]!, 26, '4', 18, HL), arrow(e.xs[1]!, 31, e.xs[1]!, 44, HL, 2.6), num(60, 100, '2 · 4 + 1', 15, C.dark)); })(),
   /** fast avgift: three monthly bills; the 99 at the top of each is identical and highlighted, the grey extra part differs. */
@@ -131,14 +124,14 @@ export const ALGEBRA_MOTIFS: Record<string, Svg> = {
   // ── 3123 Parenteser och prioriteringsregler ────────────────────────
   /** parentes: 2 · (3 + 4) where only the two brackets are highlighted and drawn large. */
   'algx.parentes': (() => { const toks: Tok[] = [['2', 0.62], ['·', 0.6], ['(', 0.62], ['3', 0.62], ['+', 0.8], ['4', 0.62], [')', 0.62]]; const e = expr(60, 66, toks, 24, [2, 6], { dim: true }); return all(bg(), card(4, 36, 112, 46), e.svg, arrow(e.xs[2]!, 20, e.xs[2]!, 34, HL, 2.4), arrow(e.xs[6]!, 20, e.xs[6]!, 34, HL, 2.4)); })(),
-  /** ordningsföljd: three numbered steps 1 → 2 → 3 (sock, shoe, tied lace); the numbers are highlighted. */
-  'algx.ordningsföljd': all(bg(), ...[[22, '1'], [60, '2'], [98, '3']].map(([x, n]) => all(circle(x as number, 26, 10, MARK, HL, 2.2), num(x as number, 31, n as string, 13, HL), rect((x as number) - 16, 46, 32, 40, C.white, 4, C.ink, 1.2))), path('M16 58 L24 58 L24 74 L30 78 L30 82 L16 82 Z', C.red, C.ink, 1), path('M50 76 C50 66 60 64 64 70 L72 74 L72 82 L50 82 Z', C.denim, C.ink, 1), line('M50 76 L72 76', C.ink, 0.8), path('M88 76 C88 66 98 64 102 70 L110 74 L110 82 L88 82 Z', C.denim, C.ink, 1), path('M94 70 C90 62 102 62 98 70 M98 70 C106 62 106 74 98 70', 'none', C.white, 1.6), arrow(40, 26, 48, 26, HL, 2.4), arrow(78, 26, 86, 26, HL, 2.4), ground),
+  /** ordningsföljd: top row in the right order, 1 sock → 2 shoe, ticked; bottom row in the wrong order, shoe → sock, grey and crossed out. */
+  'algx.ordningsföljd': (() => { const sk = (x: number, y: number) => path(`M${x - 5} ${y - 14} L${x + 3} ${y - 14} L${x + 3} ${y} L${x + 10} ${y + 4} L${x + 10} ${y + 9} L${x - 5} ${y + 9} Z`, C.red, C.ink, 1.2), sh = (x: number, y: number) => path(`M${x - 8} ${y + 9} L${x - 8} ${y - 2} C${x - 8} ${y - 8} ${x + 2} ${y - 8} ${x + 4} ${y - 2} L${x + 12} ${y + 2} L${x + 12} ${y + 9} Z`, C.denim, C.ink, 1.2); return all(bg(), rect(8, 10, 104, 44, MARK, 5, HL, 2), num(24, 24, '1', 11, HL), sk(28, 38), arrow(46, 36, 58, 36, HL, 2.6), num(70, 24, '2', 11, HL), sh(74, 38), check(100, 36, 1.1), greyed(rect(8, 62, 104, 44, C.white, 5, C.ink, 1.4), num(24, 76, '1', 11), sh(28, 90), arrow(46, 88, 58, 88, C.dark, 2.6), num(70, 76, '2', 11), sk(74, 90)), cross(100, 86, 1.1)); })(),
   /** prioriteringsregel: a ranked ladder: 1 ( ), 2 x², 3 · ÷, 4 + −. */
   'algx.prioriteringsregel': all(bg(), ...[['( )', 18], ['x²', 40], ['·  ÷', 62], ['+  −', 84]].map(([t, y], i) => all(circle(24, (y as number) + 2, 9, i === 0 ? MARK : C.white, HL, 2), num(24, (y as number) + 7, `${i + 1}`, 12, HL), rect(40, (y as number) - 8, 70 - i * 10, 20, i === 0 ? MARK : C.white, 4, i === 0 ? HL : C.ink, 1.6), num(40 + (70 - i * 10) / 2, (y as number) + 8, t as string, 15, C.ink))), arrow(10, 22, 10, 96, C.grey, 2)),
   /** från vänster till höger: 9 − 4 + 2 with a long highlighted arrow under it pointing right. */
   'algx.från-vänster-till-höger': all(bg(), card(8, 30, 104, 40), num(60, 58, '9  −  4  +  2', 22), arrow(14, 88, 106, 88, HL, 4), circle(14, 88, 4, HL, null), at(12, 104, 0.9, circle(0, -4, 3, C.grey, null)), at(108, 104, 0.9, circle(0, -4, 3, C.grey, null))),
-  /** potens: 2³ highlighted as a whole; below, = 2 · 2 · 2 = 8. */
-  'algx.potens': all(bg(), mark(60, 38, 54, 50), num(54, 56, '2', 40, HL), sup(76, 56, '3', 40, HL), num(60, 98, '2 · 2 · 2 = 8', 15, C.dark)),
+  /** potens: three different powers 2³, 5² and 10⁴, each framed as a whole (base and small number together); compare exponent, where only the small number is marked. */
+  'algx.potens': all(bg(), ...[[30, 34, '2', '3'], [86, 34, '5', '2'], [56, 84, '10', '4']].map(([x, y, b, e]) => { const bx = x as number, by = y as number, w = (b as string).length > 1 ? 50 : 40; return all(mark(bx + 4, by - 8, w, 38), num(bx, by + 6, b as string, 28, HL), sup(bx + (w > 40 ? 22 : 15), by + 6, e as string, 28, HL)); })),
   /** exponent: the same 2³, but only the small 3 is highlighted; the 2 is grey and three 2s are counted below. */
   'algx.exponent': all(bg(), num(54, 56, '2', 40, C.grey), mark(78, 30, 22, 26), sup(78, 56, '3', 40, HL), arrow(88, 26, 102, 14, HL, 2), num(30, 98, '2', 16, C.grey), num(60, 98, '2', 16, C.grey), num(90, 98, '2', 16, C.grey), ...[30, 60, 90].map((x, i) => all(circle(x, 76, 6, MARK, HL, 1.6), num(x, 80, `${i + 1}`, 9, HL)))),
   /** i kvadrat: a square of 3 × 3 small squares with side 3 marked on two sides, and 3² = 9 beside it. */
@@ -147,8 +140,8 @@ export const ALGEBRA_MOTIFS: Record<string, Svg> = {
   'algx.uträkning': all(bg('#eef2f6'), rect(18, 8, 78, 100, C.white, 2, C.ink, 1.4), ...['4 + 2 · 3', '= 4 + 6', '= 10'].map((t, i) => num(52, 30 + i * 22, t, 13, HL)), line('M28 82 L76 82', C.ink, 1.4), line('M28 84 L76 84', C.ink, 1.4), check(84, 74), line('M24 40 L24 72', HL, 1.6, '2 3'), pencil(104, 92, -25)),
 
   // ── 3124 Förenkla uttryck ───────────────────────────────────────────
-  /** förenkla: a long grey card x + x + x + 2 + 3 → arrow → a short highlighted card 3x + 5. */
-  'algx.förenkla.2': all(bg(), card(6, 14, 108, 30), num(60, 35, 'x + x + x + 2 + 3', 14, C.grey), arrow(60, 48, 60, 64, HL, 3), rect(30, 68, 60, 32, MARK, 5, HL, 2.4), num(60, 91, '3x + 5', 18, HL)),
+  /** förenkla: a long grey card 2(x + 3) − x − 6 with a long length bar → arrow → a tiny highlighted card with only x and a short bar. */
+  'algx.förenkla.2': all(bg(), card(4, 12, 112, 30), num(60, 33, '2(x + 3) − x − 6', 14, C.grey), line('M8 50 L112 50', C.grey, 2), line('M8 46 L8 54 M112 46 L112 54', C.grey, 2), arrow(60, 56, 60, 70, HL, 3), rect(46, 74, 28, 26, MARK, 5, HL, 2.6), num(60, 94, 'x', 20, HL), line('M46 106 L74 106', HL, 2.4), line('M46 102 L46 110 M74 102 L74 110', HL, 2.4)),
   /** krånglig: a tangled, knotted line (highlighted) next to a short straight grey line. */
   'algx.krånglig': all(bg(), path('M14 60 C20 20 50 20 44 50 C38 80 70 90 76 60 C82 30 40 30 52 64 C60 90 96 86 92 56 C88 30 66 44 74 58 C80 70 100 70 106 50', 'none', HL, 3), path('M30 40 C60 10 90 40 60 70 C40 90 20 70 40 52', 'none', HL, 2.4), greyed(line('M20 100 L100 100', C.dark, 3))),
   /** skriva om: an old crossed-out scribble line (grey) and, below, the same line rewritten neatly by a pencil. */
@@ -169,8 +162,8 @@ export const ALGEBRA_MOTIFS: Record<string, Svg> = {
   // ── 3125 Lösa enkla ekvationer ──────────────────────────────────────
   /** likhetstecken: a pencil drawing a big highlighted = on a sheet between grey 4 + 3 and 7. */
   'algx.likhetstecken': all(bg('#eef2f6'), sheet(10, 14, 100, 84), num(30, 66, '4+3', 16, C.grey), mark(66, 58, 30, 24), num(66, 70, '=', 30, HL), num(96, 66, '7', 18, C.grey), pencil(84, 82, -35)),
-  /** ekvation: a balance in equilibrium: x + 3 on the left pan, 7 on the right; the whole is framed. */
-  'algx.ekvation': all(bg(), balance(60, 0, num(0, -2, 'x+3', 12, HL), num(0, -2, '7', 13, HL)), rect(10, 14, 100, 26, MARK, 5, HL, 2), num(60, 33, 'x + 3 = 7', 15, HL)),
+  /** ekvation: a written card x + 3 = 7 where both the unknown x (with a question mark above) and the = sign are highlighted. */
+  'algx.ekvation': (() => { const toks: Tok[] = [['x', 0.7], ['+', 0.85], ['3', 0.7], ['=', 0.95], ['7', 0.7]]; const e = expr(60, 72, toks, 21, [0, 3], { dim: false }); return all(bg(), rect(6, 44, 108, 44, C.white, 5, HL, 2.4), e.svg, num(e.xs[0]!, 32, '?', 18, HL)); })(),
   /** vänsterled: 2x + 1 = 9 with everything left of = boxed and highlighted; an arrow points left. */
   'algx.vänsterled': sides(true),
   /** högerled: the same card with everything right of = boxed and highlighted; an arrow points right. */
@@ -181,16 +174,16 @@ export const ALGEBRA_MOTIFS: Record<string, Svg> = {
   'algx.lösning.2': all(bg(), card(14, 14, 92, 30), num(60, 35, 'x + 3 = 7', 16, C.grey), line('M60 48 L60 56', C.grey, 1.6), rect(26, 60, 68, 32, MARK, 5, HL, 2.6), num(60, 83, 'x = 4', 20, HL), line('M34 98 L86 98 M34 102 L86 102', HL, 2)),
   /** obekant: x + 3 = 7 where x is a highlighted box with a question mark. */
   'algx.obekant': all(bg(), card(8, 34, 104, 46), rect(14, 40, 28, 34, MARK, 4, HL, 2.6), num(28, 66, '?', 24, HL), num(76, 66, '+ 3 = 7', 20, C.grey), num(28, 100, 'x', 18, HL), line('M28 78 L28 86', HL, 1.6, '2 2')),
-  /** isolera: x = 4 where x stands alone inside a highlighted ring; the +3 is pushed away out of the ring. */
-  'algx.isolera.2': all(bg(), ellipse(34, 56, 22, 26, MARK, HL, 2.6), num(34, 66, 'x', 30, HL), num(70, 64, '=', 24, C.dark), num(96, 64, '4', 24, C.dark), greyed(num(96, 104, '+3', 14)), arrow(56, 74, 84, 96, C.grey, 2)),
+  /** isolera: grey 2x + 3 = 11 at the top; below, x stands alone inside a little fence on the left, and the 3 and the 2 have moved to the right side: (11 − 3) / 2. */
+  'algx.isolera.2': all(bg(), card(10, 8, 100, 28), num(60, 28, '2x + 3 = 11', 15, C.grey), arrow(60, 40, 60, 52, HL, 2.6), rect(8, 58, 34, 40, MARK, 4, HL, 2.6), ...[14, 25, 36].map((x) => line(`M${x} 54 L${x} 102`, C.brown, 2)), num(25, 86, 'x', 24, HL), num(52, 84, '=', 18), num(86, 74, '11 − 3', 13, C.dark), line('M66 80 L106 80', C.dark, 1.6), num(86, 96, '2', 13, C.dark)),
   /** i båda leden: x + 3 = 7 with −3 written under both sides, each highlighted, and two arrows. */
   'algx.i-båda-leden': all(bg(), card(8, 18, 104, 34), num(34, 42, 'x + 3', 18), num(64, 42, '=', 18), num(90, 42, '7', 18), line('M64 56 L64 104', C.grey, 1.4, '3 3'), arrow(34, 56, 34, 70, HL, 2.4), arrow(90, 56, 90, 70, HL, 2.4), mark(34, 84, 34, 24), num(34, 92, '− 3', 18, HL), mark(90, 84, 34, 24), num(90, 92, '− 3', 18, HL)),
   /** flytta över: x + 3 = 7: an arc carries the +3 over the = sign, where it lands as −3. */
   'algx.flytta-över': all(bg(), card(6, 54, 108, 32), num(18, 78, 'x', 20), rect(30, 60, 26, 22, 'none', 3, C.grey, 1.4), num(43, 77, '+3', 15, C.grey), num(66, 78, '=', 20), num(82, 78, '7', 20), mark(101, 71, 22, 20), num(101, 77, '−3', 14, HL), path('M43 56 C50 18 94 18 100 54', 'none', HL, 2.6), arrow(99, 46, 100, 55, HL, 2.6)),
 
   // ── 3126 Olikheter ──────────────────────────────────────────────────
-  /** olikhet: the card x > 3 highlighted, and a number line with an open ring at 3 and a ray to the right. */
-  'algx.olikhet': (() => { const L = nline(94, 0, 6); return all(bg(), rect(28, 12, 64, 34, MARK, 5, HL, 2.4), num(60, 38, 'x > 3', 20, HL), L.svg, ray(L, 94, 3, 1, false, 108)); })(),
+  /** olikhet: three different inequalities x > 3, y ≤ 5 and a < b grouped in one frame; a grey equation x = 4 below is crossed out. */
+  'algx.olikhet': all(bg(), rect(10, 8, 100, 70, MARK, 6, HL, 2.2), card(18, 14, 84, 18), num(60, 28, 'x > 3', 13, HL), card(18, 36, 84, 18), num(60, 50, 'y ≤ 5', 13, HL), card(18, 58, 84, 18), num(60, 72, 'a < b', 13, HL), greyed(card(30, 86, 60, 20), num(60, 101, 'x = 4', 13)), cross(96, 96, 1)),
   /** olikhetstecken: the two signs < and > big and highlighted, with small grey numbers 2 … 5 and 9 … 4. */
   'algx.olikhetstecken': all(bg(), card(14, 14, 92, 40), num(36, 44, '2', 22, C.grey), mark(60, 36, 28, 30), num(60, 46, '<', 30, HL), num(84, 44, '5', 22, C.grey), card(14, 64, 92, 40), num(36, 94, '9', 22, C.grey), mark(60, 86, 28, 30), num(60, 96, '>', 30, HL), num(84, 94, '4', 22, C.grey)),
   /** större än eller lika med: big ≥; number line with a filled dot at 3 and a ray to the right. */
@@ -205,8 +198,8 @@ export const ALGEBRA_MOTIFS: Record<string, Svg> = {
   // ── 3127 Formler i vardagen ─────────────────────────────────────────
   /** formel: a card s = v · t; small symbols above the letters: a road (s), a speedometer (v), a clock (t). */
   'algx.formel': all(bg(), rect(10, 56, 100, 40, MARK, 6, HL, 2.4), num(60, 84, 's = v · t', 22, HL), line('M18 38 L42 38', C.dark, 4), line('M20 38 L40 38', C.white, 1, '3 3'), path('M60 42 A12 12 0 0 1 84 42', 'none', C.ink, 1.6), line('M72 42 L78 33', C.red, 1.6), circle(98, 34, 9, C.white, C.ink, 1.4), line('M98 34 L98 28 M98 34 L102 36', C.ink, 1.2)),
-  /** medelhastighet: a speedometer whose grey needle traces swing, with one highlighted needle in the middle at the average. */
-  'algx.medelhastighet': all(bg(), path('M18 80 A42 42 0 0 1 102 80', 'none', C.ink, 3), ...range(9).map((i) => { const a = Math.PI + (i * Math.PI) / 8; return line(`M${f1(60 + Math.cos(a) * 36)} ${f1(80 + Math.sin(a) * 36)} L${f1(60 + Math.cos(a) * 42)} ${f1(80 + Math.sin(a) * 42)}`, C.ink, 1.4); }), ...[-60, -30, 30, 50].map((d) => g(`rotate(${d} 60 80)`, line('M60 80 L60 46', C.grey2, 2))), line('M60 80 L60 42', HL, 3.6), circle(60, 80, 4, C.dark, null), num(60, 100, 'Ø 90', 14, HL), line('M14 108 L106 108', C.dark, 3)),
+  /** medelhastighet: a graph of speed over a trip that goes up and down (grey-blue), with one straight dashed highlighted line at the average; a small car at the start. */
+  'algx.medelhastighet': all(bg(), line('M16 14 L16 92 L108 92', C.ink, 1.8), path('M16 90 C22 40 30 30 38 50 C44 66 50 70 56 40 C62 20 70 30 76 60 C82 82 90 40 98 34 L104 70', 'none', BLUE, 2.4), line('M16 56 L106 56', HL, 3.2, '6 4'), at(30, 104, 0.7, rect(-12, -6, 24, 8, C.red, 3, C.ink, 1), circle(-6, 3, 3, C.dark, null), circle(6, 3, 3, C.dark, null)), arrow(44, 104, 100, 104, C.grey, 1.8)),
   /** storhet: three things being measured, each highlighted: a ruler (length), a stopwatch (time), a thermometer (temperature). */
   'algx.storhet': all(bg(), rect(10, 30, 30, 70, MARK, 4, HL, 1.8), rect(19, 36, 12, 58, C.yellow, 1, C.ink, 1.2), ...range(6).map((i) => line(`M19 ${40 + i * 9} L25 ${40 + i * 9}`, C.ink, 1)), rect(45, 30, 30, 70, MARK, 4, HL, 1.8), circle(60, 66, 12, C.white, C.ink, 1.6), rect(57, 48, 6, 5, C.dark, 1, null), line('M60 66 L60 58 M60 66 L66 69', C.ink, 1.4), rect(80, 30, 30, 70, MARK, 4, HL, 1.8), rect(92, 38, 6, 46, C.white, 3, C.ink, 1.2), rect(93.5, 60, 3, 24, C.red, 1, null), circle(95, 88, 6, C.red, C.ink, 1.2), num(25, 22, '?', 12, HL), num(60, 22, '?', 12, HL), num(95, 22, '?', 12, HL)),
   /** lösa ut: s = v · t (grey) → t = s / v, where the t is now alone on the left and highlighted. */
