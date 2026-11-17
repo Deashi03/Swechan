@@ -261,6 +261,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.spridningslins.1', 's.samlingslins.1',
   // 0.50 Vågor & ljud: förväxlas med vibration, frekvens respektive regelbunden
   's.svängning.1', 's.hertz.1', 's.periodisk.1',
+  // 0.50 Elektricitet & magnetism: förväxlas med motstånd
+  's.resistans.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
