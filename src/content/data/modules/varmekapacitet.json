@@ -1,0 +1,179 @@
+{
+ "id": "m.varmekapacitet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Värmekapacitet",
+ "titleJa": "{熱容量|ねつようりょう}",
+ "descriptionSv": "Värmekapacitet: värmekapacitet, joule, kalori, tillföra, temperaturhöjning, massa, vattenkokare, varmvattenberedare, gjutjärnsgryta, lagra, svalna, sandstrand, kustklimat, inlandsklimat, bastu, uppvärmning och energiåtgång.",
+ "descriptionJa": "{熱容量|ねつようりょう}：{熱容量|ねつようりょう}、ジュール、カロリー、（エネルギーを）{加|くわ}える、{温度上昇|おんどじょうしょう}、{質量|しつりょう}、{電気|でんき}ケトル、{給湯器|きゅうとうき}、{鋳鉄|ちゅうてつ}の{鍋|なべ}、{蓄|たくわ}える、{冷|さ}める、{砂浜|すなはま}、{海洋性気候|かいようせいきこう}、{内陸性気候|ないりくせいきこう}、サウナ、{暖房|だんぼう}、エネルギー{消費量|しょうひりょう}。",
+ "categoryId": "R06-A03-T05",
+ "tags": [
+  "fysik",
+  "värmelära"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.aggregationstillstand"
+ ],
+ "related": [],
+ "recommendedOrder": 3353,
+ "words": [
+  {
+   "senseId": "s.värmekapacitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.joule.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kalori.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillföra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.temperaturhöjning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.massa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenkokare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmvattenberedare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gjutjärnsgryta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svalna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sandstrand.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kustklimat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inlandsklimat.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bastu.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppvärmning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energiåtgång.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Varför är havet kallt i juni?",
+  "paragraphs": [
+   "Det är en varm dag i juni. Sofia och hennes son Leo är på en sandstrand utanför Göteborg. Sanden är så varm att det gör ont i fötterna, men vattnet är bara 16 grader. – Varför är havet så kallt när solen har varit framme hela dagen? frågar Leo.",
+   "– Det beror på värmekapacitet, säger Sofia, som är lärare i fysik. Vatten behöver mycket energi för att bli varmare. Det behövs ungefär 4 200 joule för att ge en liter vatten en temperaturhöjning på en grad. Sand behöver mycket mindre energi, så den blir varm snabbt. Men den svalnar också snabbt på kvällen.",
+   "Havet lagrar värmen från sommaren och ger tillbaka den på hösten. Därför har Göteborg ett kustklimat med ganska mild vinter. Långt från havet är det inlandsklimat, med kallare vinter.",
+   "Hemma kokar Sofia vatten i vattenkokaren. Ju större massa vatten man har, desto mer energi måste man tillföra. Det märks på elräkningen: varmvattenberedaren och uppvärmningen av huset står för en stor del av familjens energiåtgång. Energin i maten mäter man ofta i kalorier, men i fysiken använder man joule.",
+   "På kvällen lagar Sofia soppa i en gjutjärnsgryta. Grytan blir varm långsamt, men den håller värmen länge. – Det är som stenarna i bastun, säger Leo. De är varma länge efter att man har stängt av den."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur varmt är vattnet på stranden?",
+    "options": [
+     "16 grader",
+     "4 grader",
+     "100 grader",
+     "26 grader"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… men vattnet är bara 16 grader.",
+    "explanationJa": "{水|みず}は16{度|ど}しかありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir sanden varm snabbare än vattnet?",
+    "options": [
+     "Sand är blöt",
+     "Vattnet får ingen sol",
+     "Sand behöver mycket mindre energi för att bli varmare",
+     "Sand har större massa"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Sand behöver mycket mindre energi, så den blir varm snabbt.",
+    "explanationJa": "{砂|すな}は{温|あたた}まるのに{必要|ひつよう}なエネルギーがずっと{少|すく}ないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör havet med värmen från sommaren?",
+    "options": [
+     "Det lagrar den och ger tillbaka den på hösten",
+     "Det förlorar den på en dag",
+     "Det skickar den till inlandet",
+     "Det gör den till is"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Havet lagrar värmen från sommaren och ger tillbaka den på hösten.",
+    "explanationJa": "{海|うみ}は{夏|なつ}の{熱|ねつ}を{蓄|たくわ}えて、{秋|あき}に{戻|もど}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det behövs mer energi för att värma mycket vatten än lite vatten.",
+    "correct": true,
+    "explanationSv": "Ju större massa vatten man har, desto mer energi måste man tillföra.",
+    "explanationJa": "{水|みず}の{質量|しつりょう}が{大|おお}きいほど、{多|おお}くのエネルギーが{必要|ひつよう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Gjutjärnsgrytan blir snabbt kall när man har lagat maten.",
+    "correct": false,
+    "explanationSv": "Grytan blir varm långsamt, men den håller värmen länge.",
+    "explanationJa": "{鋳鉄|ちゅうてつ}の{鍋|なべ}は{熱|ねつ}を{長|なが}く{保|たも}ちます。"
+   }
+  ],
+  "factSources": [
+   "Vattnets specifika värmekapacitet är ungefär 4,18 kJ/(kg·K), så det behövs cirka 4 200 J för att värma 1 liter vatten 1 grad.",
+   "1 kalori ≈ 4,2 joule; att lyfta 100 g en meter kräver cirka 1 joule.",
+   "Havsvattnets temperatur vid Göteborg i juni (cirka 16 °C) och storleken på villors varmvattenberedare (100–300 liter) är ungefärliga värden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om värme och energi i hemmet och i naturen.",
+  "discussionPoints": [
+   "Är havet eller sjön kall eller varm där du bor på sommaren?",
+   "Vilka saker hemma använder mest energi, tror du?",
+   "Går du i bastu? Hur varmt tycker du att det ska vara?",
+   "Har du ett kök med en tung gryta som håller värmen länge?"
+  ]
+ }
+}

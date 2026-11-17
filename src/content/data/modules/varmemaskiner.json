@@ -1,0 +1,180 @@
+{
+ "id": "m.varmemaskiner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Värmemaskiner",
+ "titleJa": "{熱機関|ねつきかん}",
+ "descriptionSv": "Värmemaskiner: värmemaskin, ångmaskin, bränsle, förbränning, förbränningsmotor, kolv, motor, avgas, turbin, kraftverk, spillvärme, fjärrvärme, kylskåp, kompressor, värmepump, bergvärme och verkningsgrad.",
+ "descriptionJa": "{熱機関|ねつきかん}：{熱機関|ねつきかん}、{蒸気機関|じょうききかん}、{燃料|ねんりょう}、{燃焼|ねんしょう}、{内燃機関|ないねんきかん}、ピストン、エンジン、{排気|はいき}ガス、タービン、{発電所|はつでんしょ}、{廃熱|はいねつ}、{地域暖房|ちいきだんぼう}、{冷蔵庫|れいぞうこ}、コンプレッサー、ヒートポンプ、{地中熱|ちちゅうねつ}{暖房|だんぼう}、{効率|こうりつ}。",
+ "categoryId": "R06-A03-T05",
+ "tags": [
+  "fysik",
+  "värmelära"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.entropi"
+ ],
+ "related": [],
+ "recommendedOrder": 3357,
+ "words": [
+  {
+   "senseId": "s.värmemaskin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ångmaskin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbränning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.förbränningsmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolv.1",
+   "active": false
+  },
+  {
+   "senseId": "s.motor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turbin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spillvärme.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fjärrvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kylskåp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompressor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.värmepump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bergvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verkningsgrad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från ånglok till värmepump",
+  "paragraphs": [
+   "Yuki och hennes mormor besöker ett museum för teknik i Stockholm. Där står en gammal ångmaskin. – Det här är en värmemaskin, läser Yuki på skylten. Den gör om värme till rörelse.",
+   "En guide förklarar. I ångmaskinen brann bränsle, ofta kol eller ved. Förbränningen värmde vatten tills det blev ånga, och ångan tryckte en kolv fram och tillbaka. I en bil finns i stället en förbränningsmotor, där bensinen brinner inne i motorn. Avgaserna kommer ut bakom bilen.",
+   "I dag används ånga mest i kraftverk. Ångan får en turbin att snurra, och turbinen gör el. Men ingen värmemaskin har en verkningsgrad på 100 procent. En stor del av energin blir spillvärme. I många svenska städer tar man vara på den och skickar den ut som fjärrvärme.",
+   "– Finns det värmemaskiner hemma hos oss? frågar mormor. – Ja, kylskåpet! svarar guiden. Det fungerar baklänges. En kompressor flyttar värme från insidan till baksidan av kylskåpet. Känn efter nästa gång, det är varmt där bak.",
+   "På vägen hem pratar de om mormors hus. Hon har bergvärme, och i källaren står en värmepump. Den flyttar värme från berget under huset in i huset. – Så min värmepump är som ett kylskåp för hela berget, skrattar mormor."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör en värmemaskin enligt skylten?",
+    "options": [
+     "Den gör om el till ljus",
+     "Den gör om värme till rörelse",
+     "Den kyler ner mat",
+     "Den mäter temperatur"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den gör om värme till rörelse.",
+    "explanationJa": "{熱|ねつ}を{動|うご}きに{変|か}えます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tryckte kolven fram och tillbaka i ångmaskinen?",
+    "options": [
+     "Bensinen",
+     "Ångan",
+     "Vinden",
+     "Avgaserna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… och ångan tryckte en kolv fram och tillbaka.",
+    "explanationJa": "{蒸気|じょうき}がピストンを{押|お}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör man med spillvärmen i många svenska städer?",
+    "options": [
+     "Man skickar ut den som fjärrvärme",
+     "Man släpper ut den i havet",
+     "Man gör bensin av den",
+     "Man lagrar den i kylskåp"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I många svenska städer tar man vara på den och skickar den ut som fjärrvärme.",
+    "explanationJa": "{地域暖房|ちいきだんぼう}として{送|おく}り{出|だ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det är varmt på baksidan av ett kylskåp.",
+    "correct": true,
+    "explanationSv": "Känn efter nästa gång, det är varmt där bak.",
+    "explanationJa": "{冷蔵庫|れいぞうこ}の{後|うし}ろは{温|あたた}かいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mormors värmepump tar värme från luften i köket.",
+    "correct": false,
+    "explanationSv": "Den flyttar värme från berget under huset in i huset.",
+    "explanationJa": "{家|いえ}の{下|した}の{岩盤|がんばん}から{熱|ねつ}を{取|と}ります。"
+   }
+  ],
+  "factSources": [
+   "En bensinmotor omvandlar ungefär 25–35 % av bränslets energi till rörelse (ungefärligt värde).",
+   "En värmepump kan ge cirka 3–4 gånger mer värme än den el den använder (värmefaktor, varierar).",
+   "Spillvärme från industrier och datorhallar används i flera svenska fjärrvärmenät.",
+   "Ingen värmemaskin kan ha 100 % verkningsgrad (termodynamikens andra huvudsats)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om motorer, kraftverk och värmepumpar.",
+  "discussionPoints": [
+   "Har du sett en ångmaskin eller ett ånglok? Var?",
+   "Hur värms husen upp där du kommer ifrån?",
+   "Vad tycker du om bilar med förbränningsmotor jämfört med elbilar?",
+   "Vilka maskiner hemma blir varma när de används?"
+  ]
+ }
+}
