@@ -1,0 +1,177 @@
+{
+ "id": "m.primitiva-funktioner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Primitiva funktioner",
+ "titleJa": "{原始関数|げんしかんすう}",
+ "descriptionSv": "Primitiva funktioner: funktion, graf, lutning, konstant, term, exponent, i kvadrat, sätta in, uträkning, kontrollera, parallell, ursprunglig, polynom, primitiv funktion, integrera, integrationskonstant och integraltecken.",
+ "descriptionJa": "{原始関数|げんしかんすう}：{関数|かんすう}、グラフ、{傾|かたむ}き、{定数|ていすう}、{項|こう}、{指数|しすう}、2{乗|じょう}、{代入|だいにゅう}する、{途中式|とちゅうしき}、{確認|かくにん}する、{平行|へいこう}な、もとの、{多項式|たこうしき}、{原始関数|げんしかんすう}、{積分|せきぶん}する、{積分定数|せきぶんていすう}、{積分記号|せきぶんきごう}。",
+ "categoryId": "R06-A02-T02",
+ "tags": [
+  "matematik",
+  "integraler"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.optimeringsproblem"
+ ],
+ "related": [],
+ "recommendedOrder": 3221,
+ "words": [
+  {
+   "senseId": "s.funktion.2",
+   "active": true
+  },
+  {
+   "senseId": "s.graf.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lutning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.konstant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.term.2",
+   "active": true
+  },
+  {
+   "senseId": "s.exponent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-kvadrat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sätta-in.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uträkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parallell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ursprunglig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.polynom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.primitiv-funktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.integrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.integrationskonstant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.integraltecken.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Baklänges från lutningen",
+  "paragraphs": [
+   "Yuki läser matematik på gymnasiet i Uppsala. I dag ska klassen lära sig om primitiva funktioner. Läraren Anders skriver en funktion på tavlan: f(x) = 2x.",
+   "– Förra veckan räknade vi ut lutningen för grafen till en funktion, säger Anders. Nu gör vi tvärtom. Vi letar efter en funktion F(x) som har lutningen 2x för varje x. Den kallas en primitiv funktion.",
+   "Yuki tänker en stund. Om F(x) är x i kvadrat, så har grafen lutningen 2x. Men hennes kompis Leo säger att x² + 5 också fungerar. Båda har rätt. En konstant ändrar inte lutningen, så graferna blir parallella kurvor. Därför skriver man F(x) = x² + C, där C är integrationskonstanten.",
+   "Sedan får de integrera ett polynom: f(x) = 3x² + 4x + 1. Framför uppgiften står integraltecknet ∫. Anders visar en regel: man ökar exponenten med ett och delar med den nya exponenten. Det ger termerna x³, 2x² och x. Den primitiva funktionen blir F(x) = x³ + 2x² + x + C.",
+   "– Kontrollera alltid er uträkning, säger Anders. Derivera F(x) och se om ni får den ursprungliga funktionen f(x). Yuki gör det och ser att det stämmer. Hon sätter in x = 1 också och får F(1) = 4 + C. Att integrera känns som att gå baklänges, tänker hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken funktion skriver Anders först på tavlan?",
+    "options": [
+     "f(x) = x²",
+     "f(x) = 3x² + 4x + 1",
+     "f(x) = 2x",
+     "f(x) = x + 5"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Läraren Anders skriver en funktion på tavlan: f(x) = 2x.",
+    "explanationJa": "{最初|さいしょ}に{書|か}いたのは f(x) = 2x です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför skriver man + C i den primitiva funktionen?",
+    "options": [
+     "En konstant ändrar inte lutningen",
+     "C är ett nytt polynom",
+     "Anders tycker om bokstaven C",
+     "Lutningen blir större med C"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En konstant ändrar inte lutningen, så graferna blir parallella kurvor.",
+    "explanationJa": "{定数|ていすう}は{傾|かたむ}きを{変|か}えないので、+ C をつけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör man med Anders regel när man integrerar ett polynom?",
+    "options": [
+     "Man tar bort alla termer",
+     "Man ökar exponenten med ett och delar med den nya exponenten",
+     "Man gör exponenten mindre",
+     "Man sätter in x = 0 i alla termer"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Man ökar exponenten med ett och delar med den nya exponenten.",
+    "explanationJa": "{指数|しすう}を1つ{増|ふ}やし、{新|あたら}しい{指数|しすう}で{割|わ}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Leo tycker att x² + 5 också är en primitiv funktion till 2x.",
+    "correct": true,
+    "explanationSv": "Men hennes kompis Leo säger att x² + 5 också fungerar.",
+    "explanationJa": "レオは x² + 5 でもよいと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yuki kontrollerar inte sin uträkning.",
+    "correct": false,
+    "explanationSv": "Yuki gör det och ser att det stämmer.",
+    "explanationJa": "ユキは F(x) を{微分|びぶん}して、{答|こた}えが{合|あ}っていることを{確|たし}かめました。"
+   }
+  ],
+  "factSources": [
+   "Räkneregeln för primitiva funktioner till potenser (exponenten ökas med ett och man delar med den nya exponenten) och integrationskonstanten C är standardinnehåll i gymnasiets Matematik 3; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om primitiva funktioner och om att lära sig matematik på svenska.",
+  "discussionPoints": [
+   "Hur skulle du förklara vad det betyder att integrera, med dina egna ord?",
+   "Varför tror du att många glömmer integrationskonstanten?",
+   "Hur kontrollerar du dina uträkningar?",
+   "Vilka matematiska ord är svårast på svenska, och vilka är lätta?"
+  ]
+ }
+}

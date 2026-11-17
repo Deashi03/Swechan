@@ -1,0 +1,397 @@
+{
+ "entries": [
+  {
+   "id": "e.vektor",
+   "lemma": "vektor",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "vektor",
+    "defSg": "vektorn",
+    "indefPl": "vektorer",
+    "defPl": "vektorerna"
+   },
+   "senses": [
+    {
+     "id": "s.vektor.1",
+     "ja": "ベクトル",
+     "defSv": "En storhet som har både en storlek och en riktning. Man ritar den som en pil.",
+     "defJa": "{大|おお}きさと{向|む}きの{両方|りょうほう}をもつ{量|りょう}。{矢印|やじるし}で{表|あらわ}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vinden är en vektor: den blåser 8 meter per sekund mot norr.",
+       "ja": "{風|かぜ}はベクトルです。{北|きた}に{向|む}かって{秒速|びょうそく}8メートルで{吹|ふ}いています。"
+      }
+     ],
+     "explanation": {
+      "sv": "En vektor har både storlek och riktning. Därför räcker det inte att säga hur stor den är, man måste också säga åt vilket håll den går. Hastighet, kraft och vind beskrivs ofta med vektorer. I ett koordinatsystem skriver man en vektor med två tal, till exempel (3, 4).",
+      "ja": "「vektor」は、{大|おお}きさと{向|む}きの{両方|りょうほう}をもつものです。だから、どれくらい{大|おお}きいかだけでなく、どちらへ{向|む}かうかも{言|い}う{必要|ひつよう}があります。{速度|そくど}、{力|ちから}、{風|かぜ}などはよくベクトルで{表|あらわ}されます。{座標系|ざひょうけい}では(3, 4)のように{二|ふた}つの{数|かず}で{書|か}きます。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.skalär",
+   "lemma": "skalär",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "skalär",
+    "defSg": "skalären",
+    "indefPl": "skalärer",
+    "defPl": "skalärerna"
+   },
+   "senses": [
+    {
+     "id": "s.skalär.1",
+     "ja": "スカラー",
+     "defSv": "En storhet som bara har en storlek, alltså ett vanligt tal utan riktning.",
+     "defJa": "{向|む}きをもたず、{大|おお}きさだけをもつ{量|りょう}。{普通|ふつう}の{数|かず}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Temperaturen är en skalär, men vinden är en vektor.",
+       "ja": "{気温|きおん}はスカラーですが、{風|かぜ}はベクトルです。"
+      }
+     ],
+     "explanation": {
+      "sv": "En skalär är ett vanligt tal, till exempel en temperatur, en vikt eller ett pris. Den har ingen riktning. Ordet används mest när man vill visa skillnaden mot en vektor: 20 grader är en skalär, men 20 meter per sekund mot öster är en vektor.",
+      "ja": "「skalär」は、{気温|きおん}、{重|おも}さ、{値段|ねだん}のような{普通|ふつう}の{数|かず}です。{向|む}きはありません。ベクトルとの{違|ちが}いを{示|しめ}したいときによく{使|つか}います。20{度|ど}はスカラーですが、「{東|ひがし}へ{秒速|びょうそく}20メートル」はベクトルです。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.komponent",
+   "lemma": "komponent",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "komponent",
+    "defSg": "komponenten",
+    "indefPl": "komponenter",
+    "defPl": "komponenterna"
+   },
+   "senses": [
+    {
+     "id": "s.komponent.1",
+     "ja": "（ベクトルの）{成分|せいぶん}",
+     "defSv": "En av de delar som en vektor kan delas upp i, till exempel hur långt den går åt sidan och hur långt den går uppåt.",
+     "defJa": "ベクトルを{分|わ}けたときの{各部分|かくぶぶん}。たとえば{横|よこ}にどれだけ、{上|うえ}にどれだけ{進|すす}むか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vektorn (3, 4) har komponenterna 3 och 4.",
+       "ja": "ベクトル(3, 4)の{成分|せいぶん}は3と4です。"
+      }
+     ],
+     "explanation": {
+      "sv": "En vektor i planet har två komponenter: den första säger hur långt pilen går åt sidan och den andra hur långt den går uppåt. I rummet finns en tredje komponent. Ordet komponent betyder i vardagen också en del i en maskin eller en dator.",
+      "ja": "{平面|へいめん}のベクトルには{成分|せいぶん}が{二|ふた}つあります。{一|ひと}つ{目|め}（x{成分|せいぶん}）は{矢印|やじるし}が{横|よこ}にどれだけ{進|すす}むか、{二|ふた}つ{目|め}（y{成分|せいぶん}）は{上|うえ}にどれだけ{進|すす}むかを{表|あらわ}します。{空間|くうかん}では{三|みっ}つ{目|め}の{成分|せいぶん}があります。ふだんの{言葉|ことば}では、{機械|きかい}やコンピューターの{部品|ぶひん}という{意味|いみ}もあります。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.startpunkt",
+   "lemma": "startpunkt",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "startpunkt",
+    "defSg": "startpunkten",
+    "indefPl": "startpunkter",
+    "defPl": "startpunkterna"
+   },
+   "senses": [
+    {
+     "id": "s.startpunkt.1",
+     "ja": "{始点|してん}、{出発点|しゅっぱつてん}",
+     "defSv": "Den punkt där något börjar, till exempel där en vektor börjar.",
+     "defJa": "{何|なに}かが{始|はじ}まる{点|てん}。たとえばベクトルの{始|はじ}まる{点|てん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vektorn har sin startpunkt i origo.",
+       "ja": "そのベクトルの{始点|してん}は{原点|げんてん}にあります。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.nollvektor",
+   "lemma": "nollvektor",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "nollvektor",
+    "defSg": "nollvektorn",
+    "indefPl": "nollvektorer",
+    "defPl": "nollvektorerna"
+   },
+   "senses": [
+    {
+     "id": "s.nollvektor.1",
+     "ja": "ゼロベクトル",
+     "defSv": "Den vektor som har längden noll och därför ingen riktning.",
+     "defJa": "{長|なが}さがゼロで、そのため{向|む}きのないベクトル。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om man går tre steg fram och tre steg tillbaka blir resultatet nollvektorn.",
+       "ja": "３{歩|ほ}{前|まえ}に{進|すす}んで３{歩|ほ}{戻|もど}ると、{結果|けっか}はゼロベクトルになります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Nollvektorn skrivs (0, 0) i planet. Den har längden noll, så man kan inte rita den som en pil; den är bara en punkt. Om man adderar en vektor och samma vektor med motsatt riktning får man nollvektorn.",
+      "ja": "ゼロベクトルは{平面|へいめん}では(0, 0)と{書|か}きます。{長|なが}さがゼロなので{矢印|やじるし}としては{描|か}けず、ただの{点|てん}になります。あるベクトルと、それと{逆向|ぎゃくむ}きの{同|おな}じベクトルを{足|た}すと、ゼロベクトルになります。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.enhetsvektor",
+   "lemma": "enhetsvektor",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "enhetsvektor",
+    "defSg": "enhetsvektorn",
+    "indefPl": "enhetsvektorer",
+    "defPl": "enhetsvektorerna"
+   },
+   "senses": [
+    {
+     "id": "s.enhetsvektor.1",
+     "ja": "{単位|たんい}ベクトル",
+     "defSv": "En vektor som har längden 1.",
+     "defJa": "{長|なが}さが1のベクトル。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vektorn (0, 1) är en enhetsvektor som pekar rakt uppåt.",
+       "ja": "ベクトル(0, 1)は、まっすぐ{上|うえ}を{向|む}く{単位|たんい}ベクトルです。"
+      }
+     ],
+     "explanation": {
+      "sv": "En enhetsvektor har alltid längden 1, men den kan peka åt vilket håll som helst. Man använder den när bara riktningen är viktig. I ett koordinatsystem är (1, 0) och (0, 1) de vanligaste enhetsvektorerna.",
+      "ja": "{単位|たんい}ベクトルはいつも{長|なが}さが1ですが、どの{方向|ほうこう}を{向|む}いてもかまいません。{向|む}きだけが{大切|たいせつ}なときに{使|つか}います。{座標系|ざひょうけい}では、(1, 0)と(0, 1)がいちばんよく{使|つか}われる{単位|たんい}ベクトルです。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.motsatt",
+   "lemma": "motsatt",
+   "pos": "adjective",
+   "level": "B1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "motsatt",
+    "neuter": "motsatt",
+    "plural": "motsatta",
+    "definite": "motsatta"
+   },
+   "senses": [
+    {
+     "id": "s.motsatt.1",
+     "ja": "{反対|はんたい}の、{逆|ぎゃく}の",
+     "defSv": "Som går åt helt andra hållet, eller som är så olikt som möjligt.",
+     "defJa": "まったく{反対|はんたい}の{方向|ほうこう}に{向|む}かう、または{正反対|せいはんたい}の。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "De två bilarna kör i motsatt riktning.",
+       "ja": "{二台|にだい}の{車|くるま}は{反対|はんたい}{方向|ほうこう}に{走|はし}っています。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.förskjutning",
+   "lemma": "förskjutning",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "förskjutning",
+    "defSg": "förskjutningen",
+    "indefPl": "förskjutningar",
+    "defPl": "förskjutningarna"
+   },
+   "senses": [
+    {
+     "id": "s.förskjutning.1",
+     "ja": "{平行移動|へいこういどう}、{移動|いどう}",
+     "defSv": "När något flyttas ett stycke åt ett visst håll utan att vridas.",
+     "defJa": "{何|なに}かを{回|まわ}さずに、ある{方向|ほうこう}へ{一定|いってい}の{距離|きょり}だけ{動|うご}かすこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Förskjutningen flyttar figuren fyra rutor åt höger.",
+       "ja": "その{平行移動|へいこういどう}で、{図形|ずけい}は{右|みぎ}へ4マス{動|うご}きます。"
+      }
+     ],
+     "explanation": {
+      "sv": "En förskjutning flyttar en punkt eller en figur ett visst stycke åt ett visst håll. Figuren vrids inte och blir inte större eller mindre. Man kan beskriva en förskjutning med en vektor: (4, 0) betyder fyra steg åt höger. Ordet används också om att något flyttas lite, till exempel en förskjutning av ett möte.",
+      "ja": "「förskjutning」は、{点|てん}や{図形|ずけい}をある{方向|ほうこう}へ{一定|いってい}の{距離|きょり}だけ{動|うご}かすことです。{図形|ずけい}は{回|まわ}らず、{大|おお}きさも{変|か}わりません。ベクトルで{表|あらわ}すことができ、(4, 0)は{右|みぎ}へ4{歩|ほ}という{意味|いみ}です。{会議|かいぎ}の{日程|にってい}が{少|すこ}しずれることなど、{何|なに}かが{少|すこ}し{動|うご}くことにも{使|つか}います。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.vindriktning",
+   "lemma": "vindriktning",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "vindriktning",
+    "defSg": "vindriktningen",
+    "indefPl": "vindriktningar",
+    "defPl": "vindriktningarna"
+   },
+   "senses": [
+    {
+     "id": "s.vindriktning.1",
+     "ja": "{風向|かざむ}き",
+     "defSv": "Det håll som vinden blåser från eller åt.",
+     "defJa": "{風|かぜ}が{吹|ふ}いてくる、または{吹|ふ}いていく{方向|ほうこう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "På väderkartan visar pilarna vindriktningen.",
+       "ja": "{天気図|てんきず}では、{矢印|やじるし}が{風向|かざむ}きを{示|しめ}しています。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.addera",
+   "lemma": "addera",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "addera",
+    "present": "adderar",
+    "past": "adderade",
+    "supine": "adderat",
+    "imperative": "addera",
+    "group": "1",
+    "pastParticiple": "adderad"
+   },
+   "senses": [
+    {
+     "id": "s.addera.1",
+     "ja": "{足|た}す、{加|くわ}える",
+     "defSv": "Räkna ihop två tal eller två vektorer.",
+     "defJa": "{二|ふた}つの{数|かず}や{二|ふた}つのベクトルを{合|あ}わせて{計算|けいさん}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om man adderar vektorerna (2, 1) och (1, 3) får man (3, 4).",
+       "ja": "ベクトル(2, 1)と(1, 3)を{足|た}すと(3, 4)になります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Addera är ett mer formellt ord för att lägga ihop eller räkna plus. När man adderar två vektorer adderar man de första komponenterna för sig och de andra komponenterna för sig. I en bild sätter man den andra pilen där den första slutar.",
+      "ja": "「addera」は、{足|た}す、プラスで{計算|けいさん}するという{意味|いみ}の、{少|すこ}しかたい{言葉|ことば}です。{二|ふた}つのベクトルを{足|た}すときは、x{成分|せいぶん}どうし、y{成分|せいぶん}どうしをそれぞれ{足|た}します。{図|ず}では、{一|ひと}つ{目|め}の{矢印|やじるし}が{終|お}わるところに{二|ふた}つ{目|め}の{矢印|やじるし}を{置|お}きます。"
+     },
+     "frame": {
+      "subject": "Man",
+      "complement": "två vektorer"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

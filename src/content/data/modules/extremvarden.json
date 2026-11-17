@@ -1,0 +1,174 @@
+{
+ "id": "m.extremvarden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Extremvärden",
+ "titleJa": "{極値|きょくち}",
+ "descriptionSv": "Extremvärden: extremvärde, högsta värde, lägsta värde, maximipunkt, minimipunkt, vågrät, derivata, ekvation, lösa, nollställe, undersöka, teckentabell, andraderivata, terrasspunkt, intervall och ändpunkt.",
+ "descriptionJa": "{極値|きょくち}：{極値|きょくち}、{最大値|さいだいち}、{最小値|さいしょうち}、{極大点|きょくだいてん}、{極小点|きょくしょうてん}、{水平|すいへい}な、{微分係数|びぶんけいすう}、{方程式|ほうていしき}、{解|と}く、{零点|れいてん}、{調|しら}べる、{増減表|ぞうげんひょう}、{第二次導関数|だいにじどうかんすう}、{接線|せっせん}が{水平|すいへい}な{変曲点|へんきょくてん}、{区間|くかん}、{端点|たんてん}。",
+ "categoryId": "R06-A02-T01",
+ "tags": [
+  "matematik",
+  "analys"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.tangenter-och-forandring"
+ ],
+ "related": [],
+ "recommendedOrder": 3216,
+ "words": [
+  {
+   "senseId": "s.extremvärde.2",
+   "active": true
+  },
+  {
+   "senseId": "s.högsta-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägsta-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maximipunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minimipunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vågrät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.derivata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ekvation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nollställe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undersöka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.terrasspunkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.teckentabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andraderivata.1",
+   "active": false
+  },
+  {
+   "senseId": "s.intervall.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ändpunkt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Dygnets varmaste och kallaste timme",
+  "paragraphs": [
+   "Ida läser om klimat och har en funktion som beskriver temperaturen under ett dygn i juli. Kurvan går ner under natten och når ett lägsta värde tidigt på morgonen. Sedan stiger den till ett högsta värde på eftermiddagen. Ida vill räkna ut exakt när det händer.",
+   "I en maximipunkt eller en minimipunkt är tangenten vågrät, och derivatan är noll. Ida deriverar funktionen och löser ekvationen f′(t) = 0. Derivatans nollställen blir t = 5 och t = 15, alltså klockan fem på morgonen och klockan tre på eftermiddagen.",
+   "För att undersöka vilken punkt som är vilken gör hon en teckentabell. Före klockan fem är derivatan negativ, och efter är den positiv: där finns en minimipunkt. Klockan tre går derivatan från plus till minus, så där finns en maximipunkt. Hon kan också använda andraderivatan. Om den är negativ, är punkten en maximipunkt.",
+   "Ibland är derivatan noll, men funktionen fortsätter åt samma håll efteråt. Då är punkten en terrasspunkt. Kurvan blir vågrät en kort stund och fortsätter sedan uppåt eller nedåt.",
+   "Funktionens extremvärden kan också finnas i ändpunkterna av ett intervall. Om man bara tittar på intervallet mellan klockan 18 och 24, är temperaturen högst klockan 18, fast derivatan inte är noll där. – Man måste alltid titta på ändpunkterna också, säger Ida."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När är temperaturen lägst enligt Idas funktion?",
+    "options": [
+     "Klockan tre på eftermiddagen",
+     "Klockan 18",
+     "Klockan fem på morgonen",
+     "Vid midnatt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Derivatans nollställen blir t = 5 och t = 15 … där finns en minimipunkt.",
+    "explanationJa": "{最低|さいてい}{気温|きおん}は{朝|あさ}の 5 {時|じ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad gör Ida för att undersöka vilken punkt som är en maximipunkt?",
+    "options": [
+     "Hon mäter temperaturen",
+     "Hon frågar en kompis",
+     "Hon ritar en cirkel",
+     "Hon gör en teckentabell"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "För att undersöka vilken punkt som är vilken gör hon en teckentabell.",
+    "explanationJa": "{増減表|ぞうげんひょう}を{作|つく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad kallas en punkt där derivatan är noll men funktionen fortsätter åt samma håll?",
+    "options": [
+     "En maximipunkt",
+     "En minimipunkt",
+     "En ändpunkt",
+     "En terrasspunkt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Då är punkten en terrasspunkt.",
+    "explanationJa": "それは{接線|せっせん}が{水平|すいへい}な{変曲点|へんきょくてん}（terrasspunkt）です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Om andraderivatan är negativ, är punkten en maximipunkt.",
+    "correct": true,
+    "explanationSv": "Om den är negativ, är punkten en maximipunkt.",
+    "explanationJa": "{第二次導関数|だいにじどうかんすう}が{負|ふ}なら{極大点|きょくだいてん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ett extremvärde kan bara finnas där derivatan är noll.",
+    "correct": false,
+    "explanationSv": "Funktionens extremvärden kan också finnas i ändpunkterna av ett intervall.",
+    "explanationJa": "{区間|くかん}の{端|はし}にあることもあります。"
+   }
+  ],
+  "factSources": [
+   "Idas temperaturfunktion är ett påhittat exempel. Att dygnets lägsta temperatur ofta inträffar kring soluppgången och den högsta på eftermiddagen stämmer i stora drag, men varierar med väder och plats.",
+   "Maximipunkt, minimipunkt och terrasspunkt är termer från svenska gymnasieläroböcker (kurs 3c); maxpunkt och minpunkt är vanliga vardagliga former. Japanska motsvarigheter: 極大点, 極小点, 増減表, 第二次導関数."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om högsta och lägsta värden i vardagen och hur man hittar dem.",
+  "discussionPoints": [
+   "När på dygnet brukar det vara varmast där du bor?",
+   "Kan du ge ett exempel på ett högsta eller lägsta värde som du följer, till exempel ett pris?",
+   "Vad är skillnaden mellan en maximipunkt och en terrasspunkt?",
+   "Använde ni teckentabeller i skolan i Japan?"
+  ]
+ }
+}

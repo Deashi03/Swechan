@@ -1,0 +1,177 @@
+{
+ "id": "m.differentialekvationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Differentialekvationer",
+ "titleJa": "{微分方程式|びぶんほうていしき}",
+ "descriptionSv": "Differentialekvationer: förändring, samband, i takt med, temperatur, termometer, rumstemperatur, svalna, avta, bakterie, ögonblick, lösning, uppfylla, proportionell, differentialekvation, riktningsfält, allmän lösning och partikulär lösning.",
+ "descriptionJa": "{微分方程式|びぶんほうていしき}：{変化|へんか}、{関係|かんけい}、〜につれて、{温度|おんど}、{温度計|おんどけい}、{室温|しつおん}、{冷|さ}める、おさまる、{細菌|さいきん}、{瞬間|しゅんかん}、（{方程式|ほうていしき}の）{解|かい}、{満|み}たす、{比例|ひれい}した、{微分方程式|びぶんほうていしき}、{方向場|ほうこうば}、{一般解|いっぱんかい}、{特殊解|とくしゅかい}。",
+ "categoryId": "R06-A02-T02",
+ "tags": [
+  "matematik",
+  "differentialekvationer"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.integrationsmetoder"
+ ],
+ "related": [],
+ "recommendedOrder": 3225,
+ "words": [
+  {
+   "senseId": "s.förändring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-takt-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.temperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.termometer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rumstemperatur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svalna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakterie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonblick.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lösning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uppfylla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.proportionell.2",
+   "active": true
+  },
+  {
+   "senseId": "s.differentialekvation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riktningsfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allmän-lösning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.partikulär-lösning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När kaffet svalnar",
+  "paragraphs": [
+   "Hiroshi och Elin gör ett projekt i matematik. De ska undersöka hur kaffe svalnar. Elin häller upp en kopp kaffe som är 80 grader, och Hiroshi sätter en termometer i koppen. Rumstemperaturen är 20 grader.",
+   "Var femte minut skriver de upp temperaturen. I början sjunker den snabbt, men sedan avtar förändringen. När kaffet är 60 grader varmare än rummet svalnar det mycket snabbare än när det bara är 10 grader varmare.",
+   "Läraren förklarar sambandet: hur snabbt kaffet svalnar är proportionellt mot skillnaden mellan kaffets och rummets temperatur. I varje ögonblick gäller alltså T′ = −k(T − 20). Det är en differentialekvation, eftersom den innehåller både temperaturen T och hur snabbt temperaturen ändras.",
+   "Med datorn ritar de ett riktningsfält. Strecken visar att alla kurvor närmar sig 20 grader i takt med att tiden går. Den allmänna lösningen innehåller en konstant C, så den ger en hel familj av kurvor.",
+   "Hiroshi och Elin vill ha den partikulära lösningen som passar just deras kaffe, alltså kurvan som börjar på 80 grader. De kontrollerar att funktionen uppfyller ekvationen och jämför lösningen med sina mätningar. – Bakterier som växer kan man beskriva på ett liknande sätt, säger läraren. Men då blir de fler och fler i stället för att närma sig ett värde."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken temperatur har rummet?",
+    "options": [
+     "20 grader",
+     "80 grader",
+     "60 grader",
+     "10 grader"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Rumstemperaturen är 20 grader.",
+    "explanationJa": "{室温|しつおん}は 20{度|ど}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ändras temperaturen efter en stund?",
+    "options": [
+     "Den sjunker snabbare och snabbare",
+     "Förändringen avtar",
+     "Den börjar stiga",
+     "Den är samma hela tiden"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I början sjunker den snabbt, men sedan avtar förändringen.",
+    "explanationJa": "しばらくすると、{温度|おんど}の{変化|へんか}がゆっくりになります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är T′ = −k(T − 20) en differentialekvation?",
+    "options": [
+     "Den har två lösningar",
+     "Den handlar om kaffe",
+     "Den har ett minustecken",
+     "Den innehåller både temperaturen och hur snabbt den ändras"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… eftersom den innehåller både temperaturen T och hur snabbt temperaturen ändras.",
+    "explanationJa": "{温度|おんど}と、{温度|おんど}の{変化|へんか}の{速|はや}さの{両方|りょうほう}を{含|ふく}むからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Den allmänna lösningen ger bara en enda kurva.",
+    "correct": false,
+    "explanationSv": "Den allmänna lösningen innehåller en konstant C, så den ger en hel familj av kurvor.",
+    "explanationJa": "{一般解|いっぱんかい}は{曲線|きょくせん}の{家族|かぞく}{全体|ぜんたい}を{表|あらわ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Hiroshi och Elin söker den kurva som börjar på 80 grader.",
+    "correct": true,
+    "explanationSv": "… alltså kurvan som börjar på 80 grader.",
+    "explanationJa": "80{度|ど}から{始|はじ}まる{曲線|きょくせん}を{探|さが}しています。"
+   }
+  ],
+  "factSources": [
+   "Att ett föremål svalnar ungefär i proportion till temperaturskillnaden mot omgivningen (Newtons avsvalningslag, T′ = −k(T − T₀)) är en standardmodell i gymnasiets Matematik 5 och i fysik; projektet och siffrorna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker i vardagen som ändras snabbt i början och sedan långsammare.",
+  "discussionPoints": [
+   "Hur lång tid tar det innan ditt kaffe eller te har svalnat?",
+   "Kan du komma på något annat som avtar med tiden?",
+   "Vad kan man använda differentialekvationer till i samhället?",
+   "Tycker du att det är lättare att förstå en formel eller en bild, till exempel ett riktningsfält?"
+  ]
+ }
+}

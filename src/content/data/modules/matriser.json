@@ -1,0 +1,173 @@
+{
+ "id": "m.matriser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Matriser",
+ "titleJa": "{行列|ぎょうれつ}",
+ "descriptionSv": "Matriser: tabell, rad, kolumn, matris, element, hakparentes, index, kvadratisk, huvuddiagonal, enhetsmatris, nollmatris, rutnät, pixel, kalkylark, avståndstabell och lagra.",
+ "descriptionJa": "{行列|ぎょうれつ}：{表|ひょう}、{行|ぎょう}、{列|れつ}、{行列|ぎょうれつ}、{成分|せいぶん}、{角括弧|かくかっこ}、{添|そ}え{字|じ}、{正方|せいほう}の、{主対角線|しゅたいかくせん}、{単位行列|たんいぎょうれつ}、{零行列|れいぎょうれつ}、{方眼|ほうがん}、ピクセル、{表計算|ひょうけいさん}シート、{距離表|きょりひょう}、{保存|ほぞん}する。",
+ "categoryId": "R06-A02-T03",
+ "tags": [
+  "matematik",
+  "linjär algebra"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.vektorer"
+ ],
+ "related": [],
+ "recommendedOrder": 3232,
+ "words": [
+  {
+   "senseId": "s.tabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolumn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hakparentes.1",
+   "active": false
+  },
+  {
+   "senseId": "s.index.2",
+   "active": false
+  },
+  {
+   "senseId": "s.kvadratisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvuddiagonal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enhetsmatris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nollmatris.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rutnät.2",
+   "active": false
+  },
+  {
+   "senseId": "s.pixel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kalkylark.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avståndstabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Tabeller överallt",
+  "paragraphs": [
+   "Emma arbetar på ett företag som kör varor mellan olika städer. På hennes skärm finns en avståndstabell. Varje rad är en stad och varje kolumn är en stad. Där en rad och en kolumn möts står avståndet i kilometer.",
+   "Emma kör från Stockholm till Göteborg, ungefär 470 kilometer. Därifrån kör hon till Malmö, ungefär 270 kilometer. Tabellen har tre rader och tre kolumner, så den är kvadratisk. På huvuddiagonalen står bara nollor, eftersom det är noll kilometer från en stad till samma stad.",
+   "I matematik kallas en sådan tabell av tal för en matris. Man skriver den inom två stora hakparenteser. Varje tal är ett element, och två små index visar på vilken rad och i vilken kolumn elementet står.",
+   "Emmas bror Jonas arbetar med bilder. Han förklarar att en bild på en skärm är ett rutnät av pixlar. Datorn lagrar bilden som en matris: varje element säger vilken färg en pixel har. En helt svart bild kan därför sparas som en nollmatris.",
+   "På kvällen gör Emma en budget i ett kalkylark. Det är också rader och kolumner. – Jag trodde att matriser bara fanns i skolan, säger hon. – Nej, de finns överallt, svarar Jonas. Han visar henne också enhetsmatrisen, som har ettor på huvuddiagonalen och nollor på alla andra platser."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står där en rad och en kolumn möts i avståndstabellen?",
+    "options": [
+     "Namnet på en stad",
+     "Avståndet i kilometer",
+     "Priset för en resa",
+     "Hur lång tid resan tar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Där en rad och en kolumn möts står avståndet i kilometer.",
+    "explanationJa": "{行|ぎょう}と{列|れつ}が{交|まじ}わるところに、キロメートル{単位|たんい}の{距離|きょり}が{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför står det bara nollor på huvuddiagonalen?",
+    "options": [
+     "Emma har glömt att skriva talen",
+     "Det är noll kilometer från en stad till samma stad",
+     "Städerna ligger på samma gata",
+     "Tabellen är inte klar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… eftersom det är noll kilometer från en stad till samma stad.",
+    "explanationJa": "{同|おな}じ{町|まち}から{同|おな}じ{町|まち}までの{距離|きょり}は0キロメートルだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad visar de två små indexen på ett element?",
+    "options": [
+     "Hur stort elementet är",
+     "På vilken rad och i vilken kolumn elementet står",
+     "Vilken färg elementet har",
+     "Hur många matriser det finns"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… två små index visar på vilken rad och i vilken kolumn elementet står.",
+    "explanationJa": "{添|そ}え{字|じ}は、その{成分|せいぶん}が{何行目|なんぎょうめ}・{何列目|なんれつめ}にあるかを{示|しめ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En helt svart bild kan sparas som en nollmatris.",
+    "correct": true,
+    "explanationSv": "En helt svart bild kan därför sparas som en nollmatris.",
+    "explanationJa": "{真|ま}っ{黒|くろ}な{画像|がぞう}は{零行列|れいぎょうれつ}として{保存|ほぞん}できます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emma visste redan från början att matriser finns överallt i vardagen.",
+    "correct": false,
+    "explanationSv": "– Jag trodde att matriser bara fanns i skolan, säger hon.",
+    "explanationJa": "エマは、{行列|ぎょうれつ}は{学校|がっこう}にしかないと{思|おも}っていました。"
+   }
+  ],
+  "factSources": [
+   "Vägavstånden är avrundade: Stockholm–Göteborg cirka 470 km och Göteborg–Malmö cirka 270 km (Trafikverket/vägkartor; kan variera med vald väg)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tabeller och matriser som man möter i vardagen.",
+  "discussionPoints": [
+   "Var i vardagen ser du tabeller med rader och kolumner?",
+   "Använder du kalkylark? Till vad?",
+   "Varför är det praktiskt att ordna tal i en matris?",
+   "Hur många pixlar har skärmen på din telefon, tror du?"
+  ]
+ }
+}

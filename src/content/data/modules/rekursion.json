@@ -1,0 +1,174 @@
+{
+ "id": "m.rekursion",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Rekursion",
+ "titleJa": "{再帰|さいき}",
+ "descriptionSv": "Rekursion: rekursion, matrjosjka, basfall, upprepning, talföljd, föregående, formel, ränta på ränta, dela upp, delproblem, steg för steg, räkna baklänges, upprepa, oändlighet, fraktal och spegel.",
+ "descriptionJa": "{再帰|さいき}：{再帰|さいき}、マトリョーシカ、{基底|きてい}ケース、くり{返|かえ}し、{数列|すうれつ}、{前|まえ}の、{式|しき}、{複利|ふくり}、{分|わ}ける、{部分問題|ぶぶんもんだい}、{一歩|いっぽ}ずつ、{逆|ぎゃく}に{数|かぞ}える、くり{返|かえ}す、{無限|むげん}、フラクタル、{鏡|かがみ}。",
+ "categoryId": "R06-A02-T05",
+ "tags": [
+  "matematik",
+  "diskret matematik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.trad-och-sokning"
+ ],
+ "related": [],
+ "recommendedOrder": 3256,
+ "words": [
+  {
+   "senseId": "s.rekursion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matrjosjka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.basfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.talföljd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föregående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.formel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ränta-på-ränta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delproblem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.steg-för-steg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-baklänges.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oändlighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fraktal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spegel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Dockor i dockor",
+  "paragraphs": [
+   "Rekursion betyder att något beskrivs med hjälp av sig självt. En matrjosjka är en bra bild: när man öppnar dockan finns en mindre docka inuti, och i den en ännu mindre. Till slut kommer man till den minsta dockan, som inte går att öppna. Den motsvarar basfallet, där upprepningen tar slut.",
+   "I matematik beskriver man ofta en talföljd på det sättet. I Fibonaccis talföljd 1, 1, 2, 3, 5, 8, 13 … är varje tal summan av de två föregående talen. Formeln säger bara hur man går från ett steg till nästa, och de två första talen är basfallen.",
+   "Ränta på ränta fungerar likadant. Pengarna på kontot efter ett år är pengarna från året innan plus räntan på dem. Om du sätter in 1 000 kronor med 5 procent ränta har du 1 050 kronor efter ett år och 1 102,50 kronor efter två år.",
+   "En dator kan lösa stora problem med rekursion. Man delar upp problemet i mindre delproblem av samma sort och löser dem steg för steg. Ett enkelt exempel är att räkna baklänges från 10: säg 10, och räkna sedan baklänges från 9. När du kommer till 0 slutar du – det är basfallet. Utan basfall skulle datorn upprepa samma sak i all oändlighet.",
+   "Rekursion finns också i naturen och i konsten. En fraktal är en figur där varje del liknar hela figuren, ungefär som grenarna på ett träd. Och om du ställer två speglar mot varandra ser du bilder i bilder som verkar fortsätta hur långt som helst."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad motsvarar den minsta dockan i en matrjosjka?",
+    "options": [
+     "Det största delproblemet",
+     "Den första upprepningen",
+     "Hela talföljden",
+     "Basfallet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den motsvarar basfallet, där upprepningen tar slut.",
+    "explanationJa": "{基底|きてい}ケースにあたります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Hur får man nästa tal i Fibonaccis talföljd?",
+    "options": [
+     "Man tar det föregående talet två gånger",
+     "Man lägger till 1",
+     "Man lägger ihop de två föregående talen",
+     "Man halverar det föregående talet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… är varje tal summan av de två föregående talen.",
+    "explanationJa": "{前|まえ}の{二|ふた}つの{数|かず}を{足|た}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur mycket pengar har man på kontot efter två år?",
+    "options": [
+     "1 050 kronor",
+     "1 100 kronor",
+     "1 102,50 kronor",
+     "1 000 kronor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… och 1 102,50 kronor efter två år.",
+    "explanationJa": "1 102,50クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Utan basfall skulle datorn aldrig sluta räkna.",
+    "correct": true,
+    "explanationSv": "Utan basfall skulle datorn upprepa samma sak i all oändlighet.",
+    "explanationJa": "{基底|きてい}ケースがないと、{同|おな}じことを{永遠|えいえん}にくり{返|かえ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "I en fraktal liknar varje del hela figuren.",
+    "correct": true,
+    "explanationSv": "En fraktal är en figur där varje del liknar hela figuren …",
+    "explanationJa": "フラクタルでは、どの{部分|ぶぶん}も{全体|ぜんたい}に{似|に}ています。"
+   }
+  ],
+  "factSources": [
+   "Fibonaccis talföljd 1, 1, 2, 3, 5, 8, 13 …: varje tal är summan av de två föregående (standarddefinition).",
+   "Ränteexemplet är uträknat: 1 000 · 1,05 = 1 050; 1 050 · 1,05 = 1 102,50."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker som upprepar sig själva, i matematik, natur och vardag.",
+  "discussionPoints": [
+   "Har du sett en matrjosjka eller något liknande i Japan?",
+   "Kan du hitta något i naturen som ser ut som en fraktal?",
+   "Hur brukar du dela upp en stor uppgift i mindre delar?",
+   "Vad händer om man ställer två speglar mot varandra?"
+  ]
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "id": "m.trad-och-sokning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Träd och sökning",
+ "titleJa": "{木|き}と{探索|たんさく}",
+ "descriptionSv": "Träd och sökning: träd, rot, löv, släktträd, mapp, hierarki, sökning, linjär sökning, sorterad, ordbok, i alfabetisk ordning, mittemellan, binär sökning, halvera, i stigande ordning och sökmotor.",
+ "descriptionJa": "{木|き}と{探索|たんさく}：{木|き}、{根|ね}、{葉|は}、{家系図|かけいず}、フォルダー、ヒエラルキー、{検索|けんさく}、{線形探索|せんけいたんさく}、そろった、{辞書|じしょ}、アルファベット{順|じゅん}に、ちょうど{真|ま}ん{中|なか}に、{二分探索|にぶんたんさく}、{半分|はんぶん}にする、{小|ちい}さい{順|じゅん}に、{検索|けんさく}エンジン。",
+ "categoryId": "R06-A02-T05",
+ "tags": [
+  "matematik",
+  "diskret matematik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.grafer-och-natverk"
+ ],
+ "related": [],
+ "recommendedOrder": 3255,
+ "words": [
+  {
+   "senseId": "s.mapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träd.2",
+   "active": true
+  },
+  {
+   "senseId": "s.rot.2",
+   "active": true
+  },
+  {
+   "senseId": "s.löv.2",
+   "active": true
+  },
+  {
+   "senseId": "s.släktträd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hierarki.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjär-sökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sorterad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ordbok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-alfabetisk-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mittemellan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.binär-sökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-stigande-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökmotor.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Att hitta rätt",
+  "paragraphs": [
+   "Inom datavetenskap är ett träd en figur som ser ut som ett träd upp och ner. Högst upp finns roten, och längst ner finns löven, de punkter som inte har något mer under sig. Ett släktträd och mapparna i en dator är bekanta exempel. Även en hierarki på en arbetsplats kan ritas som ett träd.",
+   "Att hitta något bland mycket information kallas sökning. Det lättaste sättet är linjär sökning: man tittar på en sak i taget, från början till slut. Om listan har en miljon namn kan det ta lång tid, särskilt om namnet man söker står sist.",
+   "Om listan är sorterad finns det ett snabbare sätt. Tänk på hur du slår upp ett ord i en ordbok. Orden står i alfabetisk ordning, så du öppnar boken ungefär mittemellan och ser om ordet kommer före eller efter. Sedan fortsätter du bara i den ena halvan.",
+   "Det kallas binär sökning. Varje gång halverar man den del som är kvar. Med tal i stigande ordning räcker det med ungefär tjugo steg för att hitta ett tal bland en miljon, eftersom man kan halvera en miljon ungefär tjugo gånger innan bara ett tal är kvar.",
+   "En sökmotor på nätet använder många olika knep, men grundidén är densamma: ordna informationen först, så går det snabbare att söka sedan. Därför sparas data ofta i träd, där man vid varje punkt väljer vänster eller höger."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var i trädet finns roten?",
+    "options": [
+     "Högst upp",
+     "Längst ner",
+     "I mitten",
+     "Utanför trädet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Högst upp finns roten …",
+    "explanationJa": "{根|ね}は{一番|いちばん}{上|うえ}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Hur fungerar linjär sökning?",
+    "options": [
+     "Man börjar alltid i mitten",
+     "Man halverar listan varje gång",
+     "Man tittar på en sak i taget från början",
+     "Man börjar med den sista saken"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… linjär sökning: man tittar på en sak i taget, från början till slut.",
+    "explanationJa": "{最初|さいしょ}から{一|ひと}つずつ{見|み}ていきます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "inference",
+    "promptSv": "Vad måste gälla för att man ska kunna använda binär sökning?",
+    "options": [
+     "Listan måste vara kort",
+     "Listan måste vara sorterad",
+     "Listan måste ha jämnt antal saker",
+     "Listan måste finnas på nätet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om listan är sorterad finns det ett snabbare sätt.",
+    "explanationJa": "リストが{並|なら}べ{替|か}えられている{必要|ひつよう}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vid binär sökning halverar man den del som är kvar varje gång.",
+    "correct": true,
+    "explanationSv": "Varje gång halverar man den del som är kvar.",
+    "explanationJa": "{一回|いっかい}ごとに{残|のこ}りを{半分|はんぶん}にします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Binär sökning bland en miljon tal kräver ungefär en miljon steg.",
+    "correct": false,
+    "explanationSv": "… räcker det med ungefär tjugo steg för att hitta ett tal bland en miljon …",
+    "explanationJa": "{約|やく}20{回|かい}で{十分|じゅうぶん}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man letar efter saker och information, både på papper och på nätet.",
+  "discussionPoints": [
+   "Hur ordnar du mapparna i din dator eller mobil?",
+   "Använder du en ordbok på papper eller i en app?",
+   "Hur letar du efter något när du har tappat bort det hemma?",
+   "Hur många steg behöver du för att gissa ett tal mellan 1 och 100?"
+  ]
+ }
+}

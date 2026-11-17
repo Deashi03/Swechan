@@ -1,0 +1,286 @@
+{
+ "entries": [
+  {
+   "id": "e.egenvektor",
+   "lemma": "egenvektor",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "egenvektor",
+    "defSg": "egenvektorn",
+    "indefPl": "egenvektorer",
+    "defPl": "egenvektorerna"
+   },
+   "senses": [
+    {
+     "id": "s.egenvektor.1",
+     "ja": "{固有|こゆう}ベクトル",
+     "defSv": "En vektor som behåller sin riktning när en matris verkar på den. Den blir bara längre eller kortare.",
+     "defJa": "{行列|ぎょうれつ}を{掛|か}けても{向|む}きが{変|か}わらず、{長|なが}くなるか{短|みじか}くなるだけのベクトル。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vektorn (1, 1) är en egenvektor: matrisen gör den bara dubbelt så lång.",
+       "ja": "ベクトル(1, 1)は{固有|こゆう}ベクトルです。{行列|ぎょうれつ}はその{長|なが}さを2{倍|ばい}にするだけです。"
+      }
+     ],
+     "explanation": {
+      "sv": "När en matris verkar på vektorer vrids de flesta av dem åt ett nytt håll. Men vissa vektorer behåller sin riktning; de blir bara längre eller kortare. De kallas egenvektorer. Ordet egen visar att de hör till just den matrisen.",
+      "ja": "{行列|ぎょうれつ}をベクトルに{掛|か}けると、ほとんどのベクトルは{新|あたら}しい{向|む}きに{回|まわ}ります。しかし、{向|む}きを{変|か}えずに{長|なが}くなるか{短|みじか}くなるだけのベクトルもあり、それを{固有|こゆう}ベクトルと{呼|よ}びます。「egen（{固有|こゆう}の）」は、それがその{行列|ぎょうれつ}だけのものであることを{示|しめ}しています。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.egenvärde",
+   "lemma": "egenvärde",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "egenvärde",
+    "defSg": "egenvärdet",
+    "indefPl": "egenvärden",
+    "defPl": "egenvärdena"
+   },
+   "senses": [
+    {
+     "id": "s.egenvärde.1",
+     "ja": "{固有値|こゆうち}",
+     "defSv": "Det tal som visar hur många gånger längre eller kortare en egenvektor blir.",
+     "defJa": "{固有|こゆう}ベクトルが{何倍|なんばい}の{長|なが}さになるかを{示|しめ}す{数|かず}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Egenvärdet är 2, eftersom vektorn blir dubbelt så lång.",
+       "ja": "ベクトルの{長|なが}さが2{倍|ばい}になるので、{固有値|こゆうち}は2です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Varje egenvektor har ett egenvärde. Om egenvärdet är 2 blir vektorn dubbelt så lång, om det är 0,5 blir den hälften så lång. Ett negativt egenvärde betyder att vektorn byter till motsatt riktning. Egenvärden visar till exempel om något växer eller krymper på lång sikt.",
+      "ja": "{固有|こゆう}ベクトルにはそれぞれ{固有値|こゆうち}があります。{固有値|こゆうち}が2ならベクトルは2{倍|ばい}、0.5なら{半分|はんぶん}の{長|なが}さになります。{負|ふ}の{固有値|こゆうち}は、ベクトルが{反対|はんたい}{向|む}きになることを{意味|いみ}します。{固有値|こゆうち}を{見|み}ると、たとえば{何|なに}かが{長期的|ちょうきてき}に{増|ふ}えるか{減|へ}るかがわかります。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.karakteristisk-ekvation",
+   "lemma": "karakteristisk ekvation",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "karakteristisk ekvation",
+    "defSg": "karakteristiska ekvationen",
+    "indefPl": "karakteristiska ekvationer",
+    "defPl": "karakteristiska ekvationerna"
+   },
+   "senses": [
+    {
+     "id": "s.karakteristisk-ekvation.1",
+     "ja": "{固有方程式|こゆうほうていしき}、{特性方程式|とくせいほうていしき}",
+     "defSv": "Den ekvation som man löser för att hitta egenvärdena till en matris.",
+     "defJa": "{行列|ぎょうれつ}の{固有値|こゆうち}を{求|もと}めるために{解|と}く{方程式|ほうていしき}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Den karakteristiska ekvationen har lösningarna 2 och 3.",
+       "ja": "{固有方程式|こゆうほうていしき}の{解|かい}は2と3です。"
+      }
+     ],
+     "explanation": {
+      "sv": "För att hitta egenvärdena ställer man upp den karakteristiska ekvationen. Man drar ett okänt tal från varje element på huvuddiagonalen och sätter determinanten lika med noll. Lösningarna till ekvationen är matrisens egenvärden.",
+      "ja": "{固有値|こゆうち}を{求|もと}めるには、{固有方程式|こゆうほうていしき}を{立|た}てます。{主対角線|しゅたいかくせん}の{各成分|かくせいぶん}から{未知|みち}の{数|かず}を{引|ひ}き、{行列式|ぎょうれつしき}を0とおきます。この{方程式|ほうていしき}の{解|かい}が{行列|ぎょうれつ}の{固有値|こゆうち}です。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.diagonalisera",
+   "lemma": "diagonalisera",
+   "pos": "verb",
+   "level": "C1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "diagonalisera",
+    "present": "diagonaliserar",
+    "past": "diagonaliserade",
+    "supine": "diagonaliserat",
+    "imperative": "diagonalisera",
+    "group": "1",
+    "pastParticiple": "diagonaliserad"
+   },
+   "senses": [
+    {
+     "id": "s.diagonalisera.1",
+     "ja": "{対角化|たいかくか}する",
+     "defSv": "Skriva om en matris så att den bara har tal på huvuddiagonalen och nollor på alla andra platser.",
+     "defJa": "{行列|ぎょうれつ}を、{主対角線|しゅたいかくせん}にだけ{数|かず}があり、ほかはすべて0になるように{書|か}き{直|なお}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om man diagonaliserar matrisen blir det lätt att räkna ut den i tionde potens.",
+       "ja": "{行列|ぎょうれつ}を{対角化|たいかくか}すると、10{乗|じょう}を{簡単|かんたん}に{計算|けいさん}できます。"
+      }
+     ],
+     "explanation": {
+      "sv": "När man diagonaliserar en matris använder man dess egenvektorer som nya axlar. Då blir matrisen en diagonalmatris, med egenvärdena på huvuddiagonalen och nollor överallt annars. Med en sådan matris är det mycket lättare att räkna, till exempel när man vill veta vad som händer efter många steg.",
+      "ja": "{行列|ぎょうれつ}を{対角化|たいかくか}するときは、その{固有|こゆう}ベクトルを{新|あたら}しい{軸|じく}として{使|つか}います。すると{行列|ぎょうれつ}は、{主対角線|しゅたいかくせん}に{固有値|こゆうち}が{並|なら}び、ほかがすべて0の{対角行列|たいかくぎょうれつ}になります。そのような{行列|ぎょうれつ}は、たとえば{何段階|なんだんかい}も{先|さき}に{何|なに}が{起|お}こるかを{知|し}りたいとき、ずっと{計算|けいさん}しやすくなります。"
+     },
+     "frame": {
+      "subject": "Man",
+      "complement": "en matris"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.egenfrekvens",
+   "lemma": "egenfrekvens",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "egenfrekvens",
+    "defSg": "egenfrekvensen",
+    "indefPl": "egenfrekvenser",
+    "defPl": "egenfrekvenserna"
+   },
+   "senses": [
+    {
+     "id": "s.egenfrekvens.1",
+     "ja": "{固有振動数|こゆうしんどうすう}",
+     "defSv": "Den takt som en sak helst svänger eller vibrerar i, om man sätter den i rörelse och sedan släpper den.",
+     "defJa": "ものを{動|うご}かしてから{離|はな}したときに、そのものが{自然|しぜん}に{揺|ゆ}れたり{振動|しんどう}したりする{速|はや}さ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "En gunga har en egenfrekvens på ungefär ett fram och tillbaka var tredje sekund.",
+       "ja": "ぶらんこには、およそ3{秒|びょう}に{一往復|いちおうふく}の{固有振動数|こゆうしんどうすう}があります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Allt som kan svänga, till exempel en gunga, en bro eller ett högt hus, har en eller flera egenfrekvenser. Det är den takt som saken svänger i av sig själv. Ingenjörer räknar ut egenfrekvenser med egenvärden. Det är viktigt att en bro inte svänger mycket när människor eller vind påverkar den.",
+      "ja": "ぶらんこ、{橋|はし}、{高|たか}い{建物|たてもの}など、{揺|ゆ}れることのできるものには、{一|ひと}つまたは{複数|ふくすう}の{固有振動数|こゆうしんどうすう}があります。それは、そのものが{自然|しぜん}に{揺|ゆ}れる{速|はや}さです。{技術者|ぎじゅつしゃ}は{固有値|こゆうち}を{使|つか}って{固有振動数|こゆうしんどうすう}を{計算|けいさん}します。{人|ひと}や{風|かぜ}の{力|ちから}で{橋|はし}が{大|おお}きく{揺|ゆ}れないようにするために{大切|たいせつ}です。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.resonans",
+   "lemma": "resonans",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "resonans",
+    "defSg": "resonansen",
+    "indefPl": "resonanser",
+    "defPl": "resonanserna"
+   },
+   "senses": [
+    {
+     "id": "s.resonans.1",
+     "ja": "{共振|きょうしん}、{共鳴|きょうめい}",
+     "defSv": "När något börjar svänga mycket kraftigt, eftersom det får små knuffar i samma takt som dess egenfrekvens.",
+     "defJa": "{固有振動数|こゆうしんどうすう}と{同|おな}じ{速|はや}さで{小|ちい}さな{力|ちから}を{受|う}けるため、ものがとても{大|おお}きく{揺|ゆ}れ{始|はじ}めること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om man knuffar gungan i rätt takt uppstår resonans.",
+       "ja": "ちょうどよい{速|はや}さでぶらんこを{押|お}すと、{共振|きょうしん}が{起|お}こります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Resonans uppstår när små knuffar kommer i precis samma takt som en saks egenfrekvens. Då blir rörelsen större och större. Det är därför ett barn på en gunga kommer högre om man knuffar i rätt ögonblick. Resonans kan vara bra, till exempel i musik, men farlig för broar och byggnader.",
+      "ja": "{共振|きょうしん}は、{小|ちい}さな{力|ちから}がものの{固有振動数|こゆうしんどうすう}とちょうど{同|おな}じ{速|はや}さで{加|くわ}わるときに{起|お}こり、{揺|ゆ}れがどんどん{大|おお}きくなります。ぶらんこの{子|こ}どもを{正|ただ}しいタイミングで{押|お}すと{高|たか}く{上|あ}がるのはそのためです。{音楽|おんがく}などではよいはたらきをしますが、{橋|はし}や{建物|たてもの}にとっては{危険|きけん}なことがあります。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.sökmotor",
+   "lemma": "sökmotor",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "sökmotor",
+    "defSg": "sökmotorn",
+    "indefPl": "sökmotorer",
+    "defPl": "sökmotorerna"
+   },
+   "senses": [
+    {
+     "id": "s.sökmotor.1",
+     "ja": "{検索|けんさく}エンジン",
+     "defSv": "En tjänst på internet som hjälper en att hitta webbsidor om det man skriver in.",
+     "defJa": "{入力|にゅうりょく}した{言葉|ことば}に{関|かん}するウェブページを{見|み}つけるのを{助|たす}けてくれる、インターネットのサービス。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag skrev in frågan i en sökmotor och fick tusentals svar.",
+       "ja": "{検索|けんさく}エンジンに{質問|しつもん}を{入力|にゅうりょく}すると、{何千|なんぜん}もの{答|こた}えが{出|で}てきました。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

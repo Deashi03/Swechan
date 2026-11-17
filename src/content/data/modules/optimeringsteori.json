@@ -1,0 +1,179 @@
+{
+ "id": "m.optimeringsteori",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Optimeringsteori",
+ "titleJa": "{最適化理論|さいてきかりろん}",
+ "descriptionSv": "Optimeringsteori: logistik, leverera, resurs, budget, kostnad, maximera, optimal, målfunktion, bivillkor, kapacitet, linjärprogrammering, pröva sig fram, avvägning, effektiv, ruttplanering, schemaläggning och flaskhals.",
+ "descriptionJa": "{最適化理論|さいてきかりろん}：ロジスティクス、{配達|はいたつ}する、{資源|しげん}、{予算|よさん}、{費用|ひよう}、{最大化|さいだいか}する、{最適|さいてき}な、{目的関数|もくてきかんすう}、{制約条件|せいやくじょうけん}、{容量|ようりょう}、{線形計画法|せんけいけいかくほう}、{試行錯誤|しこうさくご}する、{兼|か}ね{合|あ}い、{効率的|こうりつてき}な、ルート{計画|けいかく}、スケジューリング、ボトルネック。",
+ "categoryId": "R06-A02-T06",
+ "tags": [
+  "matematik",
+  "optimering"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.numeriska-metoder"
+ ],
+ "related": [],
+ "recommendedOrder": 3265,
+ "words": [
+  {
+   "senseId": "s.logistik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.leverera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resurs.1",
+   "active": false
+  },
+  {
+   "senseId": "s.budget.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maximera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.optimal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.målfunktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bivillkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kapacitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjärprogrammering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pröva-sig-fram.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avvägning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effektiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ruttplanering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.schemaläggning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flaskhals.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Den bästa vägen",
+  "paragraphs": [
+   "Mika arbetar med logistik på ett företag som levererar paket i Göteborg. Varje morgon ska tolv bilar lämna flera tusen paket. Mikas uppgift är att hitta den optimala planen. Målfunktionen är enkel: kostnaden för bränsle och arbetstid ska bli så låg som möjligt.",
+   "Men det finns många bivillkor. Varje bil har en viss kapacitet och kan inte ta hur många paket som helst. Förarna får inte jobba mer än åtta timmar, och en del kunder vill ha sina paket före klockan tio. Företagets resurser, budget och regler bestämmer vad som är möjligt.",
+   "Förut gjorde man ruttplaneringen för hand och fick pröva sig fram. I dag använder Mika ett program som bygger på linjärprogrammering och andra metoder. Programmet hittar på några minuter en plan som är mycket mer effektiv än den gamla.",
+   "Ibland finns det ingen plan som är bäst på alla sätt. Om bilarna kör kortare sträckor, får en del kunder vänta längre. Det blir en avvägning mellan kostnad och service. Mikas chef vill maximera vinsten, och Mika ritar en kurva som visar vinsten för olika antal bilar. Vinsten är som störst vid tolv bilar.",
+   "Ett av de största problemen finns i lagret. Alla paket ska gå igenom en enda maskin som sorterar dem, och den är en flaskhals. Hur bra ruttplaneringen än är, kan bilarna inte åka förrän paketen är sorterade. Nästa år ska företaget köpa en maskin till. Mika har också fått ansvar för schemaläggningen i lagret, och där väntar nya problem."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska bli så lågt som möjligt?",
+    "options": [
+     "Antalet kunder",
+     "Antalet paket",
+     "Antalet bilar",
+     "Kostnaden för bränsle och arbetstid"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Målfunktionen är enkel: kostnaden för bränsle och arbetstid ska bli så låg som möjligt.",
+    "explanationJa": "{燃料|ねんりょう}と{労働時間|ろうどうじかん}の{費用|ひよう}をできるだけ{低|ひく}くしたいのです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket av följande är ett bivillkor?",
+    "options": [
+     "Kostnaden ska bli så låg som möjligt",
+     "Programmet är snabbt",
+     "Förarna får inte jobba mer än åtta timmar",
+     "Göteborg är en stor stad"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Men det finns många bivillkor. … Förarna får inte jobba mer än åtta timmar …",
+    "explanationJa": "{運転手|うんてんしゅ}が8{時間|じかん}を{超|こ}えて{働|はたら}けないことは{制約条件|せいやくじょうけん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Programmet hittar en plan som är mer effektiv än den gamla.",
+    "correct": true,
+    "explanationSv": "Programmet hittar på några minuter en plan som är mycket mer effektiv än den gamla.",
+    "explanationJa": "プログラムは{古|ふる}い{計画|けいかく}よりずっと{効率的|こうりつてき}な{計画|けいかく}を{見|み}つけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför är maskinen som sorterar paketen en flaskhals?",
+    "options": [
+     "Den är för dyr",
+     "Alla paket måste gå igenom den",
+     "Den sorterar fel",
+     "Den står långt bort"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Alla paket ska gå igenom en enda maskin som sorterar dem, och den är en flaskhals.",
+    "explanationJa": "すべての{荷物|にもつ}が{一台|いちだい}の{機械|きかい}を{通|とお}らなければならないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Om bilarna kör kortare sträckor, blir alla kunder nöjdare.",
+    "correct": false,
+    "explanationSv": "Om bilarna kör kortare sträckor, får en del kunder vänta längre.",
+    "explanationJa": "{走行距離|そうこうきょり}を{短|みじか}くすると、{待|ま}つ{時間|じかん}が{長|なが}くなる{客|きゃく}もいます。"
+   }
+  ],
+  "factSources": [
+   "Påhittad scen; företaget är inte verkligt.",
+   "Linjärprogrammering utvecklades av bl.a. Leonid Kantorovitj (1939) och George Dantzig (simplexmetoden, 1947). Om ett linjärt problem har en optimal lösning finns en sådan i ett hörn av det tillåtna området.",
+   "20 adresser kan besökas i 20! ≈ 2,4 · 10¹⁸ olika ordningar."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att planera smart i vardagen.",
+  "discussionPoints": [
+   "Hur planerar du dina ärenden när du ska till flera ställen samma dag?",
+   "Var i din stad finns det en flaskhals i trafiken?",
+   "Vilka bivillkor har du när du planerar en resa?",
+   "Hur görs schemaläggningen på din arbetsplats eller i din skola?"
+  ]
+ }
+}

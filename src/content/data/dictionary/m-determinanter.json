@@ -1,0 +1,197 @@
+{
+ "entries": [
+  {
+   "id": "e.determinant",
+   "lemma": "determinant",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "determinant",
+    "defSg": "determinanten",
+    "indefPl": "determinanter",
+    "defPl": "determinanterna"
+   },
+   "senses": [
+    {
+     "id": "s.determinant.1",
+     "ja": "{行列式|ぎょうれつしき}",
+     "defSv": "Ett tal som man räknar ut från en kvadratisk matris och som visar hur mycket matrisen gör ytor större eller mindre.",
+     "defJa": "{正方行列|せいほうぎょうれつ}から{計算|けいさん}する{数|かず}で、その{行列|ぎょうれつ}が{面積|めんせき}をどれだけ{大|おお}きく、または{小|ちい}さくするかを{示|しめ}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Determinanten av matrisen är 10.",
+       "ja": "その{行列|ぎょうれつ}の{行列式|ぎょうれつしき}は10です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Determinanten är ett enda tal som man räknar ut från en kvadratisk matris. För en 2 × 2-matris med elementen a, b, c och d är determinanten a · d − b · c. Talet visar hur mycket matrisen gör en yta större eller mindre. Om determinanten är noll har matrisen ingen invers.",
+      "ja": "{行列式|ぎょうれつしき}は、{正方行列|せいほうぎょうれつ}から{計算|けいさん}するただ{一|ひと}つの{数|かず}です。{成分|せいぶん}がa、b、c、dの2×2{行列|ぎょうれつ}なら、{行列式|ぎょうれつしき}はa·d − b·cです。この{数|かず}は、{行列|ぎょうれつ}が{面積|めんせき}をどれだけ{大|おお}きく、または{小|ちい}さくするかを{表|あらわ}します。{行列式|ぎょうれつしき}が0なら、その{行列|ぎょうれつ}には{逆行列|ぎゃくぎょうれつ}がありません。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.korsvis",
+   "lemma": "korsvis",
+   "pos": "adverb",
+   "level": "B2",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.korsvis.1",
+     "ja": "{斜|なな}めに{交差|こうさ}して、たすき{掛|が}けに",
+     "defSv": "I kors, så att två linjer eller saker går snett över varandra.",
+     "defJa": "{二|ふた}つの{線|せん}やものが{斜|なな}めに{交|まじ}わるように。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "För en 2 × 2-matris räknar man elementen korsvis: a · d − b · c.",
+       "ja": "2×2{行列|ぎょうれつ}では、{成分|せいぶん}をたすき{掛|が}けにして{計算|けいさん}します：a·d − b·c。"
+      }
+     ],
+     "explanation": {
+      "sv": "Korsvis betyder i kors, alltså snett över varandra som ett X. När man räknar ut en determinant för en 2 × 2-matris räknar man de två diagonalerna korsvis och tar skillnaden. Ordet används också i vardagen, till exempel om att lägga två pinnar korsvis.",
+      "ja": "「korsvis」は、Xの{字|じ}のように{斜|なな}めに{交差|こうさ}してという{意味|いみ}です。2×2{行列|ぎょうれつ}の{行列式|ぎょうれつしき}を{計算|けいさん}するときは、{二本|にほん}の{対角線|たいかくせん}をたすき{掛|が}けに{掛|か}けて、その{差|さ}をとります。{二本|にほん}の{棒|ぼう}を{交差|こうさ}させて{置|お}くなど、ふだんの{言葉|ことば}でも{使|つか}います。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.skalfaktor",
+   "lemma": "skalfaktor",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "skalfaktor",
+    "defSg": "skalfaktorn",
+    "indefPl": "skalfaktorer",
+    "defPl": "skalfaktorerna"
+   },
+   "senses": [
+    {
+     "id": "s.skalfaktor.1",
+     "ja": "{倍率|ばいりつ}、{拡大率|かくだいりつ}",
+     "defSv": "Det tal som visar hur många gånger större eller mindre något blir.",
+     "defJa": "{何倍|なんばい}{大|おお}きく、または{小|ちい}さくなるかを{示|しめ}す{数|かず}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med skalfaktorn 3 blir en sträcka på 2 centimeter 6 centimeter lång.",
+       "ja": "{倍率|ばいりつ}3では、2cmの{線分|せんぶん}が6cmになります。"
+      }
+     ],
+     "explanation": {
+      "sv": "En skalfaktor säger hur många gånger större något blir. Skalfaktorn 2 gör sträckor dubbelt så långa, och skalfaktorn 0,5 gör dem hälften så långa. För en matris är determinantens absolutbelopp skalfaktorn för ytor: med determinanten 10 blir varje yta tio gånger större.",
+      "ja": "{倍率|ばいりつ}は、{何倍|なんばい}{大|おお}きくなるかを{表|あらわ}します。{倍率|ばいりつ}2では{長|なが}さが2{倍|ばい}に、0.5では{半分|はんぶん}になります。{行列|ぎょうれつ}では、{行列式|ぎょうれつしき}の{絶対値|ぜったいち}が{面積|めんせき}の{倍率|ばいりつ}です。{行列式|ぎょうれつしき}が10なら、どの{面積|めんせき}も10{倍|ばい}になります。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.inverterbar",
+   "lemma": "inverterbar",
+   "pos": "adjective",
+   "level": "C1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "inverterbar",
+    "neuter": "inverterbart",
+    "plural": "inverterbara",
+    "definite": "inverterbara"
+   },
+   "senses": [
+    {
+     "id": "s.inverterbar.1",
+     "ja": "{逆行列|ぎゃくぎょうれつ}をもつ、{正則|せいそく}な",
+     "defSv": "Om en matris: som har en invers.",
+     "defJa": "{行列|ぎょうれつ}について、{逆行列|ぎゃくぎょうれつ}をもっている。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "En matris är inverterbar om determinanten inte är noll.",
+       "ja": "{行列式|ぎょうれつしき}が0でなければ、その{行列|ぎょうれつ}は{逆行列|ぎゃくぎょうれつ}をもちます。"
+      }
+     ],
+     "explanation": {
+      "sv": "En inverterbar matris har en invers, alltså en matris som tar bort det den gör. Man kan se det på determinanten: om den inte är noll är matrisen inverterbar. Om determinanten är noll trycks allt ihop, och då går det inte att komma tillbaka.",
+      "ja": "「inverterbar」な{行列|ぎょうれつ}は{逆行列|ぎゃくぎょうれつ}、つまりそのはたらきを{打|う}ち{消|け}す{行列|ぎょうれつ}をもっています。{行列式|ぎょうれつしき}を{見|み}ればわかり、0でなければ{逆行列|ぎゃくぎょうれつ}があります。{行列式|ぎょうれつしき}が0だとすべてがつぶれてしまい、もとに{戻|もど}ることができません。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.spegelvänd",
+   "lemma": "spegelvänd",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "spegelvänd",
+    "neuter": "spegelvänt",
+    "plural": "spegelvända",
+    "definite": "spegelvända"
+   },
+   "senses": [
+    {
+     "id": "s.spegelvänd.1",
+     "ja": "{左右|さゆう}が{反転|はんてん}した、{鏡像|きょうぞう}の",
+     "defSv": "Som är vänd som i en spegel, så att höger och vänster har bytt plats.",
+     "defJa": "{鏡|かがみ}に{映|うつ}したように、{右|みぎ}と{左|ひだり}が{入|い}れ{替|か}わった。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "På bilden från telefonens kamera var texten spegelvänd.",
+       "ja": "スマートフォンのカメラの{写真|しゃしん}では、{文字|もじ}が{左右反転|さゆうはんてん}していました。"
+      }
+     ],
+     "explanation": {
+      "sv": "Något som är spegelvänt ser ut som i en spegel: höger har blivit vänster. En text som är spegelvänd är svår att läsa. I linjär algebra betyder en negativ determinant att matrisen gör bilden spegelvänd, samtidigt som den kanske gör den större eller mindre.",
+      "ja": "「spegelvänd」なものは、{鏡|かがみ}に{映|うつ}したように{右|みぎ}が{左|ひだり}になっています。{左右反転|さゆうはんてん}した{文字|もじ}は{読|よ}みにくいです。{線形代数|せんけいだいすう}では、{行列式|ぎょうれつしき}が{負|ふ}なら、その{行列|ぎょうれつ}は{図|ず}を{左右反転|さゆうはんてん}させます。{同時|どうじ}に{大|おお}きくしたり{小|ちい}さくしたりすることもあります。"
+     },
+     "tags": [
+      "matematik",
+      "linjär algebra"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

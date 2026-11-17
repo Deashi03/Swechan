@@ -1,0 +1,173 @@
+{
+ "id": "m.kombinatorik",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Kombinatorik",
+ "titleJa": "{場合|ばあい}の{数|かず}（{組|く}み{合|あ}わせ{論|ろん}）",
+ "descriptionSv": "Kombinatorik: kombinatorik, kombination, permutation, fakultet, ordningsföljd, spela roll, bordsplacering, kodlås, pinkod, lösenord, registreringsskylt, lottorad, välja ut, möjlighet, alternativ och upprepning.",
+ "descriptionJa": "{場合|ばあい}の{数|かず}：{組|く}み{合|あ}わせ{論|ろん}、{組|く}み{合|あ}わせ、{順列|じゅんれつ}、{階乗|かいじょう}、{順序|じゅんじょ}、{重要|じゅうよう}である、{席順|せきじゅん}、ダイヤル{錠|じょう}、{暗証番号|あんしょうばんごう}、パスワード、ナンバープレート、ロトの{一口|ひとくち}、{選|えら}び{出|だ}す、{可能性|かのうせい}、{選択肢|せんたくし}、くり{返|かえ}し。",
+ "categoryId": "R06-A02-T04",
+ "tags": [
+  "matematik",
+  "sannolikhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.oberoende-handelser"
+ ],
+ "related": [],
+ "recommendedOrder": 3245,
+ "words": [
+  {
+   "senseId": "s.kombinatorik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kombination.1",
+   "active": true
+  },
+  {
+   "senseId": "s.permutation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fakultet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ordningsföljd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spela-roll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bordsplacering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kodlås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pinkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösenord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.registreringsskylt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lottorad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.välja-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.möjlighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.alternativ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "På hur många sätt?",
+  "paragraphs": [
+   "Hana har glömt koden till sitt kodlås. Låset har tre hjul med siffrorna 0 till 9. Hur många möjligheter finns det? Det är en fråga för kombinatoriken. Varje hjul har tio alternativ, så det finns 10 · 10 · 10 = 1 000 olika koder.",
+   "En pinkod har fyra siffror, och upprepning är tillåten. Då finns det 10 000 olika pinkoder. Ett långt lösenord med både bokstäver och siffror har mycket fler möjligheter. Det är därför det är svårare att gissa. En svensk registreringsskylt har tre bokstäver och tre siffror, och det ger också miljontals möjligheter.",
+   "På lördag ska Hana ha middag för fem vänner, och hon funderar på bordsplaceringen. Här är det ordningsföljden som spelar roll. Den första gästen kan sitta på fem platser, nästa på fyra, och så vidare. Det ger 5 · 4 · 3 · 2 · 1 = 120 permutationer. Det skrivs 5! och läses fem fakultet.",
+   "På en lottorad är det annorlunda. Där ska man välja ut sju nummer av 35, och ordningen spelar ingen roll. Det är en kombination. Det finns mer än 6,7 miljoner olika lottorader.",
+   "Till slut hittar Hana koden. Hon hade skrivit den på en lapp i plånboken. – Kombinatorik är bra, men en lapp är bättre, säger hon och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många olika koder kan låset ha?",
+    "options": [
+     "100",
+     "10 000",
+     "1 000",
+     "120"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… så det finns 10 · 10 · 10 = 1 000 olika koder.",
+    "explanationJa": "1000{通|とお}りです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur många vänner bjuder Hana på middag?",
+    "options": [
+     "Fyra",
+     "Fem",
+     "Sju",
+     "Tio"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På lördag ska Hana ha middag för fem vänner …",
+    "explanationJa": "5{人|にん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder 5! i texten?",
+    "options": [
+     "5 + 4 + 3 + 2 + 1",
+     "5 · 4 · 3 · 2 · 1",
+     "5 · 5",
+     "5 gånger 10"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det ger 5 · 4 · 3 · 2 · 1 = 120 permutationer. Det skrivs 5! …",
+    "explanationJa": "5・4・3・2・1という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "På en lottorad spelar ordningen på talen roll.",
+    "correct": false,
+    "explanationSv": "… och ordningen spelar ingen roll. Det är en kombination.",
+    "explanationJa": "ロトでは{順番|じゅんばん}は{関係|かんけい}ありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Hana hittar koden på en lapp.",
+    "correct": true,
+    "explanationSv": "Hon hade skrivit den på en lapp i plånboken.",
+    "explanationJa": "{財布|さいふ}の{中|なか}のメモに{書|か}いてありました。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen. Räkningarna är kontrollerade: 10³ = 1 000 koder med tre hjul, 10⁴ = 10 000 fyrsiffriga pinkoder, 5! = 120, och antalet sätt att välja 7 av 35 är 6 724 520. Lottoformen 7 av 35 är ett exempel och kan ändras av spelbolaget. Svenska registreringsskyltar har tre bokstäver och tre tecken (siffror; sedan 2019 kan det sista tecknet vara en bokstav), vilket ger miljontals kombinationer (Transportstyrelsen)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om koder, lösenord och om att räkna möjligheter.",
+  "discussionPoints": [
+   "Hur många lösenord och pinkoder har du? Hur kommer du ihåg dem?",
+   "Ge ett exempel där ordningsföljden spelar roll, och ett där den inte gör det.",
+   "Hur gör man bordsplacering vid en fest i Japan?",
+   "Har du fyllt i en lottorad? Varför eller varför inte?"
+  ]
+ }
+}

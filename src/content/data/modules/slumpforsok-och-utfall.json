@@ -1,0 +1,173 @@
+{
+ "id": "m.slumpforsok-och-utfall",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Slumpförsök och utfall",
+ "titleJa": "{試行|しこう}と{結果|けっか}",
+ "descriptionSv": "Slumpförsök och utfall: slump, slumpförsök, utfall, utfallsrum, tärning, tärningskast, singla slant, krona eller klave, kortlek, lyckohjul, slumpgenerator, slumpmässig, lika sannolik, oförutsägbar, förutsäga och upprepa.",
+ "descriptionJa": "{試行|しこう}と{結果|けっか}：{偶然|ぐうぜん}、{確率|かくりつ}の{試行|しこう}、{結果|けっか}、{標本空間|ひょうほんくうかん}、サイコロ、サイコロを{振|ふ}ること、コインを{投|な}げて{決|き}める、{表|おもて}か{裏|うら}か、トランプ、{回転式|かいてんしき}の{抽選盤|ちゅうせんばん}、{乱数発生器|らんすうはっせいき}、ランダムな、{同様|どうよう}に{確|たし}からしい、{予測|よそく}できない、{予測|よそく}する、くり{返|かえ}す。",
+ "categoryId": "R06-A02-T04",
+ "tags": [
+  "matematik",
+  "sannolikhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.linjara-transformationer"
+ ],
+ "related": [],
+ "recommendedOrder": 3241,
+ "words": [
+  {
+   "senseId": "s.slump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slumpförsök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utfallsrum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tärning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tärningskast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.singla-slant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krona-eller-klave.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyckohjul.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slumpgenerator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slumpmässig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lika-sannolik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oförutsägbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förutsäga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem ska diska?",
+  "paragraphs": [
+   "Fyra vänner har ätit middag hos Sara. Nu ska någon diska, men ingen vill. – Vi låter slumpen bestämma, säger Sara. Hon hämtar en tärning från spelhyllan.",
+   "Ett tärningskast är ett slumpförsök. Man kan inte förutsäga vad som kommer att hända, men man vet vilka utfall som är möjliga: talen 1 till 6. Det är hela utfallsrummet. Om tärningen är bra är alla sex utfall lika sannolika.",
+   "Alla kastar en gång. Både Sara och Jonas får en etta. Nu måste de två singla slant. – Krona eller klave? frågar Jonas. Myntet landar på krona, och Sara förlorar. Hon skrattar och säger att resultatet är helt oförutsägbart.",
+   "Nästa gång vill de prova något annat. Saras bror har ett litet lyckohjul från en marknad, och hon har en kortlek. Man kan också använda en slumpgenerator i mobilen, som väljer ett namn slumpmässigt.",
+   "Jonas säger att han vill upprepa försöket hundra gånger för att se om tärningen är bra. – Gör det i morgon, säger Sara och ger honom en handduk. – Nu hjälper du mig med disken."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hämtar Sara för att låta slumpen bestämma?",
+    "options": [
+     "En kortlek",
+     "En tärning",
+     "Ett lyckohjul",
+     "En mobil"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon hämtar en tärning från spelhyllan.",
+    "explanationJa": "サイコロを{持|も}ってきます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vilka utfall är möjliga när man kastar en tärning?",
+    "options": [
+     "Talen 1 till 6",
+     "Bara krona eller klave",
+     "Talen 1 till 52",
+     "Bara jämna tal"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… man vet vilka utfall som är möjliga: talen 1 till 6.",
+    "explanationJa": "1から6までの{数|かず}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför måste Sara och Jonas singla slant?",
+    "options": [
+     "Tärningen försvann",
+     "Jonas ville inte kasta",
+     "De fick samma tal på tärningen",
+     "Sara ville vinna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Både Sara och Jonas får en etta. Nu måste de två singla slant.",
+    "explanationJa": "{二人|ふたり}とも1を{出|だ}したからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Jonas förlorar när de singlar slant.",
+    "correct": false,
+    "explanationSv": "Myntet landar på krona, och Sara förlorar.",
+    "explanationJa": "{負|ま}けたのはサラです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara får diska.",
+    "correct": true,
+    "explanationSv": "Myntet landar på krona, och Sara förlorar. … – Nu hjälper du mig med disken.",
+    "explanationJa": "サラが{負|ま}けたので、{皿洗|さらあら}いをします。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen. Matematiken är kontrollerad: en vanlig tärning har sex lika sannolika utfall, och utfallsrummet är {1, 2, 3, 4, 5, 6}."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man bestämmer saker med hjälp av slumpen.",
+  "discussionPoints": [
+   "När låter du slumpen bestämma något?",
+   "Brukar du singla slant? Vad frågar man då på japanska?",
+   "Vilka spel med tärning eller kortlek tycker du om?",
+   "Är det rättvist att låta slumpen bestämma vem som ska diska?"
+  ]
+ }
+}

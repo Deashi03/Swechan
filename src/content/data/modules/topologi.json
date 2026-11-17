@@ -1,0 +1,178 @@
+{
+ "id": "m.topologi",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Topologi",
+ "titleJa": "{位相幾何学|いそうきかがく}",
+ "descriptionSv": "Topologi: topologi, yta, hål, kaffekopp, munk, ihålig, sammanhängande, töja, deformera, klippa, limma, kant, möbiusband, sfär, knut, tunnelbanekarta och bro.",
+ "descriptionJa": "{位相幾何学|いそうきかがく}：{位相幾何学|いそうきかがく}、{表面|ひょうめん}、{穴|あな}、コーヒーカップ、ドーナツ、{中|なか}が{空洞|くうどう}の、ひと{続|つづ}きの、{伸|の}ばす、{変形|へんけい}させる、（はさみで）{切|き}る、{接着|せっちゃく}する、{縁|ふち}、メビウスの{帯|おび}、{球面|きゅうめん}、{結|むす}び{目|め}、{地下鉄|ちかてつ}の{路線図|ろせんず}、{橋|はし}。",
+ "categoryId": "R06-A02-T06",
+ "tags": [
+  "matematik",
+  "topologi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.talteori"
+ ],
+ "related": [],
+ "recommendedOrder": 3262,
+ "words": [
+  {
+   "senseId": "s.topologi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kaffekopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.munk.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ihålig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sammanhängande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.töja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deformera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klippa-verb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.limma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kant.1",
+   "active": false
+  },
+  {
+   "senseId": "s.möbiusband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sfär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knut.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tunnelbanekarta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bro.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Kaffekoppen och munken",
+  "paragraphs": [
+   "Saki läser topologi på universitetet. En eftermiddag fikar hon med sin vän Erik. Hon tittar på hans kaffekopp och på munken på tallriken. – I topologi är de samma sak, säger hon. Erik skrattar och tror att hon skämtar.",
+   "Saki förklarar. I topologi spelar längd och form ingen roll. Man får töja och deformera en sak hur mycket man vill, som om den vore av mjuk lera. Men man får inte klippa eller limma. Både koppen och munken har ett hål, så man kan deformera koppen till en munk. En boll är en sfär, alltså en rund yta. Bollen är ihålig, men den har inget hål som går rakt igenom. Därför kan den aldrig bli en munk.",
+   "Sedan tar Saki fram en pappersremsa. Hon vrider den ett halvt varv och limmar ihop ändarna. Det blir ett möbiusband. Erik drar en penna längs möbiusbandet och kommer tillbaka till samma ställe. Möbiusbandet har bara en sida och en kant! Saki klipper det på mitten, men det blir inte två delar, utan en enda lång ring.",
+   "– Men vad ska man ha det till? frågar Erik. Saki visar tunnelbanekartan i telefonen. Den visar inte de riktiga avstånden, men den visar vilka stationer som hänger ihop. Det är topologi. Ett nät av ledningar och vägar måste vara sammanhängande, annars kommer man inte överallt.",
+   "Topologin började på 1700-talet i en stad med sju broar. Folk undrade om man kunde gå en promenad över alla broar exakt en gång. En matematiker visade att det inte går. I dag studerar forskare också knutar: Hur vet man om en knut går att lösa upp utan att klippa?"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför är en kaffekopp och en munk samma sak i topologi?",
+    "options": [
+     "Båda är runda",
+     "Båda finns på kaféer",
+     "Båda är gjorda av lera",
+     "Båda har ett hål"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Både koppen och munken har ett hål, så man kan deformera koppen till en munk.",
+    "explanationJa": "どちらにも{穴|あな}が{一|ひと}つあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad får man inte göra i topologi?",
+    "options": [
+     "Töja",
+     "Deformera",
+     "Böja",
+     "Klippa och limma"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men man får inte klippa eller limma.",
+    "explanationJa": "{切|き}ったり{貼|は}ったりしてはいけません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Möbiusbandet har två sidor och två kanter.",
+    "correct": false,
+    "explanationSv": "Möbiusbandet har bara en sida och en kant!",
+    "explanationJa": "メビウスの{帯|おび}には{面|めん}も{縁|ふち}も{一|ひと}つしかありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Vad visar tunnelbanekartan?",
+    "options": [
+     "De riktiga avstånden",
+     "Hur lång tid resan tar",
+     "Var det finns kaféer",
+     "Vilka stationer som hänger ihop"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den visar inte de riktiga avstånden, men den visar vilka stationer som hänger ihop.",
+    "explanationJa": "{駅|えき}どうしのつながりを{表|あらわ}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan deformera en sfär till en munk.",
+    "correct": false,
+    "explanationSv": "Bollen är ihålig, men den har inget hål som går rakt igenom. Därför kan den aldrig bli en munk.",
+    "explanationJa": "{球面|きゅうめん}には{穴|あな}がないので、ドーナツにはなりません。"
+   }
+  ],
+  "factSources": [
+   "Påhittad scen. Möbiusbandet har en sida och en kant, och klipper man det på mitten blir det ett enda band (med två hela varv); bandet är uppkallat efter August Ferdinand Möbius (1790–1868).",
+   "Problemet med de sju broarna i Königsberg (nuvarande Kaliningrad) löstes av Leonhard Euler 1736 och räknas som en början på grafteori och topologi."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om former, hål och kartor.",
+  "discussionPoints": [
+   "Vilka saker hemma har ett hål, två hål eller inget hål alls?",
+   "Har du gjort ett möbiusband? Vad hände när du klippte det?",
+   "Hur hittar du rätt i tunnelbanan i en ny stad?",
+   "Vilken knut kan du göra, och vad använder du den till?"
+  ]
+ }
+}

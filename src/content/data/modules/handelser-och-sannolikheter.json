@@ -1,0 +1,173 @@
+{
+ "id": "m.handelser-och-sannolikheter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Händelser och sannolikheter",
+ "titleJa": "{事象|じしょう}と{確率|かくりつ}",
+ "descriptionSv": "Händelser och sannolikheter: händelse, sannolikhet, komplementhändelse, inträffa, bråkform, decimalform, procent, andel, osannolik, trolig, femtio-femtio, risk, väderprognos, mynt, relativ frekvens och de stora talens lag.",
+ "descriptionJa": "{事象|じしょう}と{確率|かくりつ}：{事象|じしょう}、{確率|かくりつ}、{余事象|よじしょう}、{起|お}こる、{分数|ぶんすう}の{形|かたち}、{小数|しょうすう}の{形|かたち}、パーセント、{割合|わりあい}、ありそうもない、ありそうな、{五分五分|ごぶごぶ}で、リスク、{天気予報|てんきよほう}、{硬貨|こうか}、{相対度数|そうたいどすう}、{大数|たいすう}の{法則|ほうそく}。",
+ "categoryId": "R06-A02-T04",
+ "tags": [
+  "matematik",
+  "sannolikhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.slumpforsok-och-utfall"
+ ],
+ "related": [],
+ "recommendedOrder": 3242,
+ "words": [
+  {
+   "senseId": "s.händelse.2",
+   "active": true
+  },
+  {
+   "senseId": "s.sannolikhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komplementhändelse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inträffa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bråkform.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decimalform.1",
+   "active": false
+  },
+  {
+   "senseId": "s.procent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andel.2",
+   "active": true
+  },
+  {
+   "senseId": "s.osannolik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trolig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.femtio-femtio.1",
+   "active": true
+  },
+  {
+   "senseId": "s.risk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderprognos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mynt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.relativ-frekvens.1",
+   "active": false
+  },
+  {
+   "senseId": "s.de-stora-talens-lag.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Sjuttio procent risk för regn",
+  "paragraphs": [
+   "Väderprognosen i Kenjis mobil säger: ”70 % risk för regn”. Vad betyder det egentligen? Sannolikheten är ett tal mellan 0 och 1. Man kan skriva den i bråkform, i decimalform eller i procent. Här är sannolikheten 0,7.",
+   "Händelsen ”det regnar” är alltså ganska trolig. Komplementhändelsen är ”det regnar inte”. Den har sannolikheten 1 minus 0,7, alltså 0,3 eller 30 procent. Det är inte omöjligt att det blir sol, men det är mindre troligt.",
+   "Kenjis kollega Lina tar fram ett mynt. – När man singlar slant är chansen femtio-femtio, säger hon. Händelsen ”krona” har sannolikheten en halv. Att få tio krona i rad är däremot mycket osannolikt, men det kan inträffa.",
+   "Lina berättar att hon en gång singlade slant hundra gånger på en lektion. Andelen krona blev 46 procent. Det är den relativa frekvensen. Ju fler gånger man kastar, desto närmare 50 procent kommer man. Det kallas de stora talens lag.",
+   "Kenji tittar ut. Himlen är grå. Han tar med sig ett paraply. – Sjuttio procent är ganska mycket, säger han. På eftermiddagen skiner solen. Ibland händer det som är mindre troligt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur stor är risken för regn enligt prognosen?",
+    "options": [
+     "70 procent",
+     "30 procent",
+     "50 procent",
+     "100 procent"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Väderprognosen i Kenjis mobil säger: ”70 % risk för regn”.",
+    "explanationJa": "70パーセントです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är komplementhändelsen till ”det regnar”?",
+    "options": [
+     "Det regnar mycket",
+     "Det snöar",
+     "Det regnar i morgon",
+     "Det regnar inte"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Komplementhändelsen är ”det regnar inte”.",
+    "explanationJa": "「{雨|あめ}が{降|ふ}らない」です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur stor blev andelen krona när Lina singlade slant hundra gånger?",
+    "options": [
+     "50 procent",
+     "70 procent",
+     "10 procent",
+     "46 procent"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Andelen krona blev 46 procent.",
+    "explanationJa": "46パーセントでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Enligt Lina är det omöjligt att få tio krona i rad.",
+    "correct": false,
+    "explanationSv": "Att få tio krona i rad är däremot mycket osannolikt, men det kan inträffa.",
+    "explanationJa": "{不可能|ふかのう}ではなく、ありそうもないだけです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det regnade på eftermiddagen.",
+    "correct": false,
+    "explanationSv": "På eftermiddagen skiner solen.",
+    "explanationJa": "{午後|ごご}は{晴|は}れました。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen. Matematiken är kontrollerad: P(inte A) = 1 − P(A), så 70 % risk för regn ger 30 % för uppehåll; de stora talens lag gäller den relativa frekvensen i många försök, inte enskilda kast."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om väderprognoser, risker och chanser i vardagen.",
+  "discussionPoints": [
+   "Hur många procents risk för regn behövs för att du tar med paraply?",
+   "Nämn något som är troligt och något som är osannolikt i morgon.",
+   "När säger du att något är femtio-femtio?",
+   "Hur skriver man sannolikheter på japanska väderprognoser?"
+  ]
+ }
+}

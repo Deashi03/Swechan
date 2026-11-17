@@ -1,0 +1,174 @@
+{
+ "id": "m.algoritmisk-komplexitet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Algoritmisk komplexitet",
+ "titleJa": "アルゴリズムの{計算量|けいさんりょう}",
+ "descriptionSv": "Algoritmisk komplexitet: algoritm, effektiv, komplexitet, indata, sorteringsalgoritm, körtid, programmerare, uppskatta, genomsnitt, i värsta fall, tidskrävande, exponentiell, superdator, flaskhals, beräkning och lagra.",
+ "descriptionJa": "アルゴリズムの{計算量|けいさんりょう}：アルゴリズム、{効率的|こうりつてき}な、{計算量|けいさんりょう}、{入力|にゅうりょく}データ、{並|なら}べ{替|か}えアルゴリズム、{実行時間|じっこうじかん}、プログラマー、{見積|みつ}もる、{平均|へいきん}、{最悪|さいあく}の{場合|ばあい}、{時間|じかん}のかかる、{指数関数的|しすうかんすうてき}な、スーパーコンピューター、ボトルネック、{計算|けいさん}、{保存|ほぞん}する。",
+ "categoryId": "R06-A02-T05",
+ "tags": [
+  "matematik",
+  "diskret matematik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.rekursion"
+ ],
+ "related": [],
+ "recommendedOrder": 3257,
+ "words": [
+  {
+   "senseId": "s.algoritm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effektiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komplexitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.indata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sorteringsalgoritm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.körtid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.programmerare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genomsnitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-värsta-fall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidskrävande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exponentiell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.superdator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flaskhals.1",
+   "active": false
+  },
+  {
+   "senseId": "s.beräkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Snabb eller långsam?",
+  "paragraphs": [
+   "En algoritm är en exakt beskrivning av hur man löser ett problem steg för steg. Två algoritmer kan ge samma svar men vara olika effektiva. Komplexiteten säger hur mycket tid och minne en algoritm behöver när indatan blir större.",
+   "Ta en sorteringsalgoritm som ska ordna en lista med namn. En enkel metod jämför alla namn med alla andra. Med 10 namn blir det ungefär 100 jämförelser, men med en miljon namn blir det en miljon miljoner. Körtiden växer alltså mycket snabbare än listan.",
+   "Bättre sorteringsalgoritmer delar upp listan i mindre delar. Då behövs bara ungefär 20 miljoner jämförelser för en miljon namn. Programmerare brukar uppskatta hur körtiden växer, både i genomsnitt och i värsta fall.",
+   "Vissa problem är mycket tidskrävande. Ett exempel är att hitta den kortaste vägen genom många städer och tillbaka hem. Om man prövar alla ordningar växer antalet ännu snabbare än exponentiellt, och redan med 20 städer finns det mer än tio miljoner miljarder vägar. Inte ens en superdator hinner pröva alla.",
+   "Därför letar programmerare efter flaskhalsar, de delar av ett program där beräkningarna tar mest tid. Ibland går det att lagra resultat som man redan har räknat ut, så att datorn inte behöver göra samma beräkning flera gånger."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad säger komplexiteten?",
+    "options": [
+     "Hur många programmerare som behövs",
+     "Hur dyr en dator är",
+     "Hur lång en algoritm är att läsa",
+     "Hur mycket tid och minne en algoritm behöver när indatan växer"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Komplexiteten säger hur mycket tid och minne en algoritm behöver när indatan blir större.",
+    "explanationJa": "{入力|にゅうりょく}データが{大|おお}きくなるとき、どれだけの{時間|じかん}と{記憶容量|きおくようりょう}が{必要|ひつよう}かを{示|しめ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Ungefär hur många jämförelser behöver den enkla metoden för 10 namn?",
+    "options": [
+     "10",
+     "20",
+     "100",
+     "1 000"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Med 10 namn blir det ungefär 100 jämförelser …",
+    "explanationJa": "{約|やく}100{回|かい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Bättre sorteringsalgoritmer delar upp listan i mindre delar.",
+    "correct": true,
+    "explanationSv": "Bättre sorteringsalgoritmer delar upp listan i mindre delar.",
+    "explanationJa": "よりよいアルゴリズムはリストを{小|ちい}さく{分|わ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför hinner inte ens en superdator pröva alla vägar genom 20 städer?",
+    "options": [
+     "Superdatorn har för lite ström",
+     "Städerna ligger för långt bort",
+     "Antalet vägar är enormt stort",
+     "Det finns bara en väg"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… redan med 20 städer finns det mer än tio miljoner miljarder vägar.",
+    "explanationJa": "{道順|みちじゅん}の{数|かず}がとてつもなく{多|おお}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "usage",
+    "statementSv": "En flaskhals är den del av ett program som går snabbast.",
+    "correct": false,
+    "explanationSv": "… flaskhalsar, de delar av ett program där beräkningarna tar mest tid.",
+    "explanationJa": "ボトルネックは、{一番|いちばん}{時間|じかん}がかかる{部分|ぶぶん}です。"
+   }
+  ],
+  "factSources": [
+   "Antalet jämförelser är uppskattningar: n² ≈ 100 för n = 10; n · log₂ n ≈ 20 miljoner för n = 1 000 000.",
+   "Antalet rundresor genom 20 städer med fast start och utan hänsyn till riktning är 19!/2 ≈ 6 · 10¹⁶, alltså mer än tio miljoner miljarder (10¹⁶)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om datorer, väntetider och om att göra saker på ett smartare sätt.",
+  "discussionPoints": [
+   "Vilket program eller vilken app tycker du är för långsam?",
+   "Hur sorterar du saker när du har väldigt många av dem?",
+   "Kan du ge ett exempel på en flaskhals på jobbet eller i vardagen?",
+   "Vad skulle du vilja att en superdator räknade ut?"
+  ]
+ }
+}

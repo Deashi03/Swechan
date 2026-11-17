@@ -1,0 +1,183 @@
+{
+ "id": "m.talteori",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Talteori",
+ "titleJa": "{整数論|せいすうろん}",
+ "descriptionSv": "Talteori: talteori, heltal, jämn, udda, gå jämnt upp, delare, multipel, primtal, sammansatt tal, kvadrattal, primtalsfaktorisering, siffersumma, största gemensamma delare, minsta gemensamma multipel, oändlighet, tvillingprimtal, rest och klockaritmetik.",
+ "descriptionJa": "{整数論|せいすうろん}：{整数論|せいすうろん}、{整数|せいすう}、{偶数|ぐうすう}の、{奇数|きすう}の、{割|わ}り{切|き}れる、{約数|やくすう}、{倍数|ばいすう}、{素数|そすう}、{合成数|ごうせいすう}、{平方数|へいほうすう}、{素因数分解|そいんすうぶんかい}、{各位|かくい}の{数字|すうじ}の{和|わ}、{最大公約数|さいだいこうやくすう}、{最小公倍数|さいしょうこうばいすう}、{無限|むげん}、{双子素数|ふたごそすう}、{余|あま}り、{時計|とけい}の{算術|さんじゅつ}。",
+ "categoryId": "R06-A02-T06",
+ "tags": [
+  "matematik",
+  "talteori"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.algoritmisk-komplexitet"
+ ],
+ "related": [],
+ "recommendedOrder": 3261,
+ "words": [
+  {
+   "senseId": "s.talteori.1",
+   "active": true
+  },
+  {
+   "senseId": "s.heltal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämn.3",
+   "active": true
+  },
+  {
+   "senseId": "s.udda.2",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-jämnt-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.multipel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.primtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammansatt-tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvadrattal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.primtalsfaktorisering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.siffersumma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.största-gemensamma-delare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minsta-gemensamma-multipel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oändlighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tvillingprimtal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rest.2",
+   "active": true
+  },
+  {
+   "senseId": "s.klockaritmetik.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Talens hemligheter",
+  "paragraphs": [
+   "Kenta går en kvällskurs i talteori på universitetet. Läraren Eva börjar med en enkel fråga: Vilka heltal går jämnt upp i 12? Svaret är 1, 2, 3, 4, 6 och 12. Det är delarna till 12. Talen 24, 36 och 48 är multipler av 12.",
+   "Ett primtal har bara två delare: 1 och talet självt. 2, 3, 5, 7 och 11 är primtal. 2 är det enda jämna primtalet; alla andra primtal är udda. Tal som 9 och 12 är sammansatta tal. Kvadrattal som 25 = 5 · 5 är också sammansatta tal. Varje sammansatt tal har en primtalsfaktorisering, till exempel 60 = 2 · 2 · 3 · 5.",
+   "Sedan visar Eva ett knep. Siffersumman av 471 är 4 + 7 + 1 = 12. Eftersom 3 går jämnt upp i 12, går 3 också jämnt upp i 471. Kenta räknar på telefonen: 471 = 3 · 157. Det stämmer!",
+   "Efter pausen räknar de med exempel från vardagen. Kenta har 12 onigiri och 18 kakor till en fest och vill lägga dem på så många likadana tallrikar som möjligt. Den största gemensamma delaren till 12 och 18 är 6, så det blir 6 tallrikar. Den gröna bussen går var fjärde minut och den röda var sjätte. Den minsta gemensamma multipeln av 4 och 6 är 12, så bussarna går samtidigt var 12:e minut.",
+   "Till sist berättar Eva att det finns en oändlighet av primtal. Det visade man i Grekland redan för mer än 2 000 år sedan. Men ingen vet om det finns oändligt många tvillingprimtal, som 11 och 13. Hon ritar också en klocka på tavlan. I klockaritmetik är 10 + 5 = 3, eftersom man bara tittar på resten när man delar med 12. – Det har ni gjort hela livet utan att veta om det, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka tal är delare till 12?",
+    "options": [
+     "24, 36 och 48",
+     "2, 3, 5, 7 och 11",
+     "Bara 1 och 12",
+     "1, 2, 3, 4, 6 och 12"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Svaret är 1, 2, 3, 4, 6 och 12. Det är delarna till 12.",
+    "explanationJa": "12を{割|わ}り{切|き}る{数|かず}は1、2、3、4、6、12です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket är det enda jämna primtalet?",
+    "options": [
+     "4",
+     "2",
+     "9",
+     "12"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "2 är det enda jämna primtalet; alla andra primtal är udda.",
+    "explanationJa": "{偶数|ぐうすう}の{素数|そすう}は2だけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Hur vet Kenta att 3 går jämnt upp i 471?",
+    "options": [
+     "471 är ett primtal",
+     "Siffersumman är 12, och 3 går jämnt upp i 12",
+     "471 är ett jämnt tal",
+     "Talet slutar på 1"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Siffersumman av 471 är 4 + 7 + 1 = 12. Eftersom 3 går jämnt upp i 12, går 3 också jämnt upp i 471.",
+    "explanationJa": "{各位|かくい}の{数字|すうじ}の{和|わ}12が3で{割|わ}り{切|き}れるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Den gröna och den röda bussen går samtidigt var 12:e minut.",
+    "correct": true,
+    "explanationSv": "Den minsta gemensamma multipeln av 4 och 6 är 12, så bussarna går samtidigt var 12:e minut.",
+    "explanationJa": "4と6の{最小公倍数|さいしょうこうばいすう}は12なので、12{分|ふん}ごとに{同時|どうじ}に{出|で}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "I dag vet man att det finns oändligt många tvillingprimtal.",
+    "correct": false,
+    "explanationSv": "Men ingen vet om det finns oändligt många tvillingprimtal …",
+    "explanationJa": "{双子素数|ふたごそすう}が{無限|むげん}にあるかどうかは、まだわかっていません。"
+   }
+  ],
+  "factSources": [
+   "Påhittad scen. Räkningarna är kontrollerade: 471 = 3 · 157, 60 = 2 · 2 · 3 · 5, SGD(12, 18) = 6 och MGM(4, 6) = 12.",
+   "Att det finns oändligt många primtal bevisades i Euklides Elementa (omkring 300 f.Kr.).",
+   "Förmodan att det finns oändligt många tvillingprimtal är obevisad (läget 2026); kan ändras om ett bevis publiceras."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tal och mönster i vardagen.",
+  "discussionPoints": [
+   "Har du ett favorittal? Varför tycker du om det?",
+   "När räknar du med klockaritmetik i vardagen, till exempel med tider och veckodagar?",
+   "Hur skulle du dela 24 kakor och 36 mandariner i lika stora grupper?",
+   "Tycker du att olösta problem i matematiken är spännande?"
+  ]
+ }
+}

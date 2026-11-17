@@ -1,0 +1,165 @@
+{
+ "entries": [
+  {
+   "id": "e.komplexitet",
+   "lemma": "komplexitet",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "komplexitet",
+    "defSg": "komplexiteten",
+    "indefPl": "komplexiteter",
+    "defPl": "komplexiteterna"
+   },
+   "senses": [
+    {
+     "id": "s.komplexitet.1",
+     "ja": "（アルゴリズムの）{計算量|けいさんりょう}",
+     "defSv": "Hur mycket tid och minne en algoritm behöver när det den ska arbeta med blir större.",
+     "defJa": "{扱|あつか}うデータが{大|おお}きくなったときに、アルゴリズムがどれだけの{時間|じかん}と{記憶容量|きおくようりょう}を{必要|ひつよう}とするか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Algoritmens komplexitet visar hur snabbt körtiden växer.",
+       "ja": "アルゴリズムの{計算量|けいさんりょう}は、{実行時間|じっこうじかん}がどれだけ{速|はや}く{増|ふ}えるかを{示|しめ}します。"
+      }
+     ],
+     "labelSv": "algoritmer",
+     "explanation": {
+      "sv": "Komplexiteten säger inte hur många sekunder ett program tar, utan hur tiden växer när det programmet ska arbeta med blir större. Om tiden fördubblas när listan blir dubbelt så lång, växer den linjärt. Om den blir fyra gånger så lång, växer den med kvadraten. I vardagen betyder komplexitet hur svårt något är att förstå, till exempel komplexiteten i ett problem.",
+      "ja": "「komplexitet」は、プログラムが{何秒|なんびょう}かかるかではなく、{入力|にゅうりょく}データが{大|おお}きくなると{時間|じかん}がどう{増|ふ}えるかを{表|あらわ}します。リストが{二倍|にばい}になると{時間|じかん}も{二倍|にばい}になるなら{線形|せんけい}に{増|ふ}え、{四倍|よんばい}になるなら{二乗|にじょう}で{増|ふ}えます。ふだんの{言葉|ことば}では「{複雑|ふくざつ}さ」という{意味|いみ}で、{問題|もんだい}の{複雑|ふくざつ}さなどについて{使|つか}います。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.körtid",
+   "lemma": "körtid",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "körtid",
+    "defSg": "körtiden",
+    "indefPl": "körtider",
+    "defPl": "körtiderna"
+   },
+   "senses": [
+    {
+     "id": "s.körtid.1",
+     "ja": "{実行時間|じっこうじかん}",
+     "defSv": "Den tid det tar för en dator att köra ett program eller en algoritm.",
+     "defJa": "コンピューターがプログラムやアルゴリズムを{実行|じっこう}するのにかかる{時間|じかん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med den nya algoritmen blev körtiden en sekund i stället för en timme.",
+       "ja": "{新|あたら}しいアルゴリズムで、{実行時間|じっこうじかん}が{一時間|いちじかん}から{一秒|いちびょう}になりました。"
+      }
+     ],
+     "explanation": {
+      "sv": "Körtid är hur lång tid ett program behöver från start till slut. Den beror både på hur snabb datorn är och på hur bra algoritmen är. Ordet kommer från verbet köra, som man också använder om program: man kör ett program på datorn.",
+      "ja": "「körtid」は、プログラムが{始|はじ}まってから{終|お}わるまでにかかる{時間|じかん}です。コンピューターの{速|はや}さと、アルゴリズムのよさの{両方|りょうほう}で{決|き}まります。{動詞|どうし}「köra（{運転|うんてん}する）」から{来|き}た{言葉|ことば}で、「köra ett program（プログラムを{実行|じっこう}する）」のようにも{使|つか}います。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.indata",
+   "lemma": "indata",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "indata",
+    "defSg": "indatan",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.indata.1",
+     "ja": "{入力|にゅうりょく}データ",
+     "defSv": "Det som man ger ett program eller en algoritm att arbeta med, till exempel en lista med tal.",
+     "defJa": "プログラムやアルゴリズムに{与|あた}えて{処理|しょり}させるもの。たとえば{数|かず}のリスト。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Algoritmen tar en lista med namn som indata.",
+       "ja": "そのアルゴリズムは{名前|なまえ}のリストを{入力|にゅうりょく}データとして{受|う}け{取|と}ります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Indata är det som går in i ett program. Det kan vara tal, text eller bilder. Det som kommer ut kallas resultatet. När man talar om komplexitet frågar man hur körtiden växer när indatan blir större, till exempel när listan som ska sorteras blir längre.",
+      "ja": "「indata」はプログラムに{入|はい}るものです。{数|かず}、{文章|ぶんしょう}、{画像|がぞう}などがあります。{出|で}てくるものは「resultat（{結果|けっか}）」と{呼|よ}びます。{計算量|けいさんりょう}について{話|はな}すときは、{並|なら}べ{替|か}えるリストが{長|なが}くなるなど、{入力|にゅうりょく}データが{大|おお}きくなると{実行時間|じっこうじかん}がどう{増|ふ}えるかを{考|かんが}えます。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.sorteringsalgoritm",
+   "lemma": "sorteringsalgoritm",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "sorteringsalgoritm",
+    "defSg": "sorteringsalgoritmen",
+    "indefPl": "sorteringsalgoritmer",
+    "defPl": "sorteringsalgoritmerna"
+   },
+   "senses": [
+    {
+     "id": "s.sorteringsalgoritm.1",
+     "ja": "{並|なら}べ{替|か}えアルゴリズム、ソートアルゴリズム",
+     "defSv": "En algoritm som ordnar saker i en bestämd ordning, till exempel tal från minst till störst.",
+     "defJa": "{数|かず}を{小|ちい}さい{順|じゅん}に{並|なら}べるなど、ものを{決|き}まった{順番|じゅんばん}に{並|なら}べるアルゴリズム。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "En bra sorteringsalgoritm ordnar en miljon namn på en sekund.",
+       "ja": "よい{並|なら}べ{替|か}えアルゴリズムは、{百万|ひゃくまん}の{名前|なまえ}を{一秒|いちびょう}で{並|なら}べます。"
+      }
+     ],
+     "explanation": {
+      "sv": "En sorteringsalgoritm tar en lista där sakerna ligger i fel ordning och ger tillbaka samma saker i ordning, till exempel i alfabetisk ordning eller efter storlek. Det finns många olika sorteringsalgoritmer. Enkla algoritmer jämför alla saker med alla andra och blir långsamma för långa listor, medan bättre algoritmer delar upp listan i mindre delar.",
+      "ja": "「sorteringsalgoritm」は、ばらばらのリストを{受|う}け{取|と}り、アルファベット{順|じゅん}や{大|おお}きさの{順|じゅん}などに{並|なら}べて{返|かえ}します。いろいろな{種類|しゅるい}があります。{簡単|かんたん}なものは、すべてをほかのすべてと{比|くら}べるので{長|なが}いリストでは{遅|おそ}くなります。よりよいものはリストを{小|ちい}さな{部分|ぶぶん}に{分|わ}けます。"
+     },
+     "tags": [
+      "matematik",
+      "diskret matematik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}

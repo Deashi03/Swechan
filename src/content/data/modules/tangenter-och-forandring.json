@@ -1,0 +1,178 @@
+{
+ "id": "m.tangenter-och-forandring",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Tangenter och förändring",
+ "titleJa": "{接線|せっせん}と{変化|へんか}",
+ "descriptionSv": "Tangenter och förändring: kurva, fallande, gradvis, plana ut, vågrät, tangent, nudda, tangeringspunkt, lutning, derivata, vinkelrät, normal, räta linjens ekvation, k-värde, förutsäga, stigande och skärningspunkt.",
+ "descriptionJa": "{接線|せっせん}と{変化|へんか}：{曲線|きょくせん}、{右下|みぎさ}がりの、だんだん、{横|よこ}ばいになる、{水平|すいへい}な、{接線|せっせん}、{軽|かる}く{触|ふ}れる、{接点|せってん}、{傾|かたむ}き、{微分係数|びぶんけいすう}、{垂直|すいちょく}な、{法線|ほうせん}、{直線|ちょくせん}の{式|しき}、k の{値|あたい}、{予測|よそく}する、{右上|みぎあ}がりの、{交点|こうてん}。",
+ "categoryId": "R06-A02-T01",
+ "tags": [
+  "matematik",
+  "analys"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.deriveringsregler"
+ ],
+ "related": [],
+ "recommendedOrder": 3215,
+ "words": [
+  {
+   "senseId": "s.kurva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fallande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gradvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plana-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vågrät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tangent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nudda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tangeringspunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lutning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.derivata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinkelrät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.normal-noun.1",
+   "active": false
+  },
+  {
+   "senseId": "s.räta-linjens-ekvation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.k-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förutsäga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stigande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärningspunkt.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Skidor och tangenter",
+  "paragraphs": [
+   "Jonas åker skidor. Backen ser ut som en kurva i ett koordinatsystem. Den är fallande hela vägen men blir gradvis mindre brant. Den planar ut längst ner och blir nästan vågrät.",
+   "I varje punkt åker Jonas i samma riktning som tangenten. Tangenten nuddar kurvan i en enda punkt, tangeringspunkten. Tangentens lutning är derivatan i den punkten. Högt upp är derivatan −1, längre ner bara −0,2.",
+   "Den linje som är vinkelrät mot tangenten i tangeringspunkten kallas normalen. När Jonas står i backen, trycker snön på skidorna i normalens riktning.",
+   "Med räta linjens ekvation kan man skriva upp tangentens ekvation. K-värdet är derivatan i tangeringspunkten. Tangenten kan användas för att förutsäga hur kurvan går en liten bit till. Det fungerar bra nära punkten, men sämre längre bort.",
+   "Nedanför backen börjar en stigande väg upp mot stugan. Där backen och vägen möts finns en skärningspunkt mellan de två kurvorna. – Matematik är roligare på snö, säger Jonas."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur ser backen ut längst ner?",
+    "options": [
+     "Den planar ut och blir nästan vågrät",
+     "Den blir brantare",
+     "Den går rakt uppåt",
+     "Den slutar plötsligt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den planar ut längst ner och blir nästan vågrät.",
+    "explanationJa": "{一番下|いちばんした}では{平|たい}らになり、ほぼ{水平|すいへい}になります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "I vilken riktning åker Jonas i varje punkt?",
+    "options": [
+     "I normalens riktning",
+     "I samma riktning som tangenten",
+     "Rakt nedåt",
+     "Mot stugan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I varje punkt åker Jonas i samma riktning som tangenten.",
+    "explanationJa": "どの{点|てん}でも{接線|せっせん}と{同|おな}じ{方向|ほうこう}に{滑|すべ}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad kallas linjen som är vinkelrät mot tangenten i tangeringspunkten?",
+    "options": [
+     "Sekanten",
+     "Asymptoten",
+     "Normalen",
+     "X-axeln"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den linje som är vinkelrät mot tangenten i tangeringspunkten kallas normalen.",
+    "explanationJa": "{接線|せっせん}に{垂直|すいちょく}な{線|せん}は{法線|ほうせん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Högt upp i backen är derivatan −1.",
+    "correct": true,
+    "explanationSv": "Högt upp är derivatan −1, längre ner bara −0,2.",
+    "explanationJa": "{上|うえ}のほうでは{微分係数|びぶんけいすう}は −1 です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Tangenten förutsäger kurvan lika bra långt bort som nära tangeringspunkten.",
+    "correct": false,
+    "explanationSv": "Det fungerar bra nära punkten, men sämre längre bort.",
+    "explanationJa": "{接点|せってん}から{離|はな}れるほど、{予測|よそく}は{悪|わる}くなります。"
+   }
+  ],
+  "factSources": [
+   "Påhittad backe; talen för derivatan är exempel.",
+   "Tangentens k-värde är derivatan i tangeringspunkten; normalens k-värde är −1/k. Normalkraften från underlaget verkar vinkelrätt mot underlaget (förenklad fysik)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om backar, kurvor och hur man kan förutsäga en förändring.",
+  "discussionPoints": [
+   "Har du åkt skidor? Hur såg backen ut?",
+   "Kan du ge ett exempel på något som ökar snabbt och sedan planar ut?",
+   "När har du försökt förutsäga hur något ska utvecklas?",
+   "Vad är skillnaden mellan en tangent och en normal?"
+  ]
+ }
+}

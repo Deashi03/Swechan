@@ -173,6 +173,7 @@
        "ja": "{外|はず}れ{値|ち}が{一|ひと}つあるだけで、{平均値|へいきんち}が{大|おお}きく{変|か}わることがあります。"
       }
      ],
+     "labelSv": "statistik",
      "explanation": {
       "sv": "Ett extremvärde skiljer sig mycket från de andra värdena, till exempel en lön på 120 000 kronor när alla andra har en lön runt 30 000. Extremvärden kan dra medelvärdet uppåt eller nedåt. Ibland beror de på ett fel när man har samlat in data.",
       "ja": "「extremvärde」は、ほかの{値|あたい}と{大|おお}きく{違|ちが}う{値|あたい}です。たとえば、ほかの{人|ひと}がみな3{万|まん}クローナ{前後|ぜんご}なのに、{一人|ひとり}だけ12{万|まん}クローナの{給料|きゅうりょう}がある{場合|ばあい}です。{外|はず}れ{値|ち}は{平均値|へいきんち}を{上|あ}げたり{下|さ}げたりします。データを{集|あつ}めるときのミスが{原因|げんいん}のこともあります。"
@@ -180,6 +181,31 @@
      "tags": [
       "matematik",
       "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.extremvärde.2",
+     "ja": "（{関数|かんすう}の）{極値|きょくち}、{最大値|さいだいち}・{最小値|さいしょうち}",
+     "defSv": "Ett största eller minsta värde för en funktion, i hela definitionsmängden eller i en del av den.",
+     "defJa": "{関数|かんすう}がとる、いちばん{大|おお}きい{値|あたい}またはいちばん{小|ちい}さい{値|あたい}。{全体|ぜんたい}で{見|み}る{場合|ばあい}も、{一部|いちぶ}の{範囲|はんい}で{見|み}る{場合|ばあい}もある。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Funktionen har två extremvärden i intervallet.",
+       "ja": "この{関数|かんすう}は、この{区間|くかん}に{二|ふた}つの{極値|きょくち}をもちます。"
+      }
+     ],
+     "labelSv": "funktion",
+     "explanation": {
+      "sv": "I analys är ett extremvärde ett högsta eller lägsta värde för en funktion. Ett lokalt extremvärde är störst eller minst bara jämfört med värdena nära omkring, som en topp eller en dal i grafen. Man hittar extremvärden där derivatan är noll, men också i ändpunkterna av ett intervall. I statistik betyder extremvärde i stället ett värde som är mycket större eller mindre än de andra.",
+      "ja": "{解析|かいせき}での「extremvärde」は、{関数|かんすう}のいちばん{大|おお}きい{値|あたい}または{小|ちい}さい{値|あたい}です。「lokalt extremvärde（{極値|きょくち}）」は、グラフの{山|やま}や{谷|たに}のように、まわりの{値|あたい}と{比|くら}べたときだけいちばん{大|おお}きい、または{小|ちい}さい{値|あたい}です。{極値|きょくち}は{微分係数|びぶんけいすう}が 0 になるところで{見|み}つかりますが、{区間|くかん}の{端|はし}にあることもあります。{統計|とうけい}では、ほかよりずっと{大|おお}きい、または{小|ちい}さい「{外|はず}れ{値|ち}」の{意味|いみ}になります。"
+     },
+     "tags": [
+      "matematik",
+      "analys"
      ],
      "quality": {
       "status": "ai-draft"

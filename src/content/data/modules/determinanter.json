@@ -1,0 +1,173 @@
+{
+ "id": "m.determinanter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Determinanter",
+ "titleJa": "{行列式|ぎょうれつしき}",
+ "descriptionSv": "Determinanter: kvadratisk, huvuddiagonal, determinant, korsvis, formel, förtecken, byta tecken, absolutbelopp, parallellogram, skalfaktor, volym, inverterbar, platta till, rät linje, spegelvänd och kontrollera.",
+ "descriptionJa": "{行列式|ぎょうれつしき}：{正方|せいほう}の、{主対角線|しゅたいかくせん}、{行列式|ぎょうれつしき}、たすき{掛|が}けに、{式|しき}、{符号|ふごう}、{符号|ふごう}が{変|か}わる、{絶対値|ぜったいち}、{平行四辺形|へいこうしへんけい}、{倍率|ばいりつ}、{体積|たいせき}、{逆行列|ぎゃくぎょうれつ}をもつ、{平|たい}らにつぶす、{直線|ちょくせん}、{左右|さゆう}が{反転|はんてん}した、{確認|かくにん}する。",
+ "categoryId": "R06-A02-T03",
+ "tags": [
+  "matematik",
+  "linjär algebra"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.linjara-ekvationssystem"
+ ],
+ "related": [],
+ "recommendedOrder": 3235,
+ "words": [
+  {
+   "senseId": "s.kvadratisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvuddiagonal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.determinant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korsvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.formel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förtecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-tecken.1",
+   "active": false
+  },
+  {
+   "senseId": "s.absolutbelopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parallellogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skalfaktor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volym.2",
+   "active": false
+  },
+  {
+   "senseId": "s.inverterbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.platta-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rät-linje.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spegelvänd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett tal som säger mycket",
+  "paragraphs": [
+   "Leo gör en app som ändrar bilder. Varje ändring styrs av en kvadratisk 2 × 2-matris. Hans lärare säger att han ska räkna ut matrisens determinant innan han testar den på en bild.",
+   "Formeln är enkel: man räknar elementen korsvis och tar skillnaden. För matrisen med raderna 3, 1 och 2, 4 räknar man talen 3 och 4 på huvuddiagonalen gånger varandra och drar bort 1 · 2. Determinanten blir 3 · 4 − 1 · 2 = 10. Determinanten byter tecken om man byter plats på de två raderna. Den blir då −10.",
+   "Determinanten visar hur mycket bilden växer. En liten kvadrat på bilden blir en parallellogram, och dess area blir tio gånger större. Determinantens absolutbelopp, alltså 10, är skalfaktorn för ytan. I tre dimensioner visar determinanten i stället hur mycket en volym ändras.",
+   "Förtecknet säger också något viktigt. När Leo testar en matris med determinanten −1 blir bilden spegelvänd: höger och vänster byter plats. En matris med determinanten 0 plattar till hela bilden, och allt hamnar på en rät linje.",
+   "– Kan jag få tillbaka bilden? frågar Leo. – Nej, svarar läraren. En matris med determinanten 0 är inte inverterbar. Därför ska du alltid kontrollera determinanten först."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är determinanten av matrisen med raderna 3, 1 och 2, 4?",
+    "options": [
+     "14",
+     "5",
+     "10",
+     "−10"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Determinanten blir 3 · 4 − 1 · 2 = 10.",
+    "explanationJa": "{行列式|ぎょうれつしき}は10です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad visar determinantens absolutbelopp?",
+    "options": [
+     "Hur många rader matrisen har",
+     "Hur många gånger större en yta blir",
+     "Vilken färg bilden får",
+     "Hur lång tid appen tar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Determinantens absolutbelopp, alltså 10, är skalfaktorn för ytan.",
+    "explanationJa": "{面積|めんせき}が{何倍|なんばい}になるかを{示|しめ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir bilden spegelvänd?",
+    "options": [
+     "Determinanten är 10",
+     "Matrisen är för stor",
+     "Leo har tagit fel bild",
+     "Determinanten är negativ"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "När Leo testar en matris med determinanten −1 blir bilden spegelvänd …",
+    "explanationJa": "{行列式|ぎょうれつしき}が{負|ふ}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Med determinanten 0 hamnar hela bilden på en rät linje.",
+    "correct": true,
+    "explanationSv": "En matris med determinanten 0 plattar till hela bilden, och allt hamnar på en rät linje.",
+    "explanationJa": "{画像|がぞう}{全体|ぜんたい}が{一本|いっぽん}の{直線上|ちょくせんじょう}につぶれます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En matris med determinanten 0 har en invers.",
+    "correct": false,
+    "explanationSv": "En matris med determinanten 0 är inte inverterbar.",
+    "explanationJa": "{行列式|ぎょうれつしき}が0の{行列|ぎょうれつ}には{逆行列|ぎゃくぎょうれつ}がありません。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen. Räkneexemplen är kontrollerade: det [[3, 1], [2, 4]] = 3 · 4 − 1 · 2 = 10; radbyte ger −10; |det| är areaskalan för en linjär avbildning i planet."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att förstora, förminska och spegla bilder.",
+  "discussionPoints": [
+   "Har du sett en spegelvänd text? Var?",
+   "Hur förstorar eller förminskar du bilder i telefonen?",
+   "Varför är det bra att kontrollera en uträkning innan man använder den?",
+   "Kan du förklara med egna ord vad en determinant visar?"
+  ]
+ }
+}

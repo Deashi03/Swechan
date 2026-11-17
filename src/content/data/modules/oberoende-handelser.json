@@ -1,0 +1,173 @@
+{
+ "id": "m.oberoende-handelser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Oberoende händelser",
+ "titleJa": "{独立|どくりつ}な{事象|じしょう}",
+ "descriptionSv": "Oberoende händelser: oberoende, sannolikhet, händelse, multiplikation, samtidigt, urna, utan återläggning, lägga tillbaka, i rad, rulett, otur, slump, tärning, singla slant, kortlek och strömavbrott.",
+ "descriptionJa": "{独立|どくりつ}な{事象|じしょう}：{独立|どくりつ}した、{確率|かくりつ}、{事象|じしょう}、{掛|か}け{算|ざん}、{同時|どうじ}に、{玉|たま}の{入|はい}った{箱|はこ}、{戻|もど}さずに、{元|もと}に{戻|もど}す、{続|つづ}けて、ルーレット、{不運|ふうん}、{偶然|ぐうぜん}、サイコロ、コインを{投|な}げて{決|き}める、トランプ、{停電|ていでん}。",
+ "categoryId": "R06-A02-T04",
+ "tags": [
+  "matematik",
+  "sannolikhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.betingad-sannolikhet"
+ ],
+ "related": [],
+ "recommendedOrder": 3244,
+ "words": [
+  {
+   "senseId": "s.oberoende.2",
+   "active": true
+  },
+  {
+   "senseId": "s.sannolikhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.händelse.2",
+   "active": true
+  },
+  {
+   "senseId": "s.multiplikation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samtidigt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urna.2",
+   "active": false
+  },
+  {
+   "senseId": "s.utan-återläggning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lägga-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-rad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rulett.1",
+   "active": false
+  },
+  {
+   "senseId": "s.otur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tärning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.singla-slant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömavbrott.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Har tärningen ett minne?",
+  "paragraphs": [
+   "Emil spelar ett brädspel med sin syster Aiko. Han har kastat tärningen fem gånger i rad utan att få en sexa. – Nu måste det bli en sexa, säger han. – Nej, säger Aiko. Tärningen kommer inte ihåg vad som har hänt. Varje kast är oberoende av det förra.",
+   "Aiko förklarar att sannolikheten för en sexa alltid är en sjättedel. Fem kast utan sexa är bara otur och slump. Samma sak gäller när man singlar slant, eller när kulan stannar i ruletten: hjulet har inget minne.",
+   "Om två händelser är oberoende får man sannolikheten att båda inträffar genom multiplikation. Chansen att få krona på två mynt samtidigt är en halv gånger en halv, alltså en fjärdedel.",
+   "Men det är annorlunda om man drar kort ur en kortlek utan återläggning. Om man drar en kung och inte lägger tillbaka den, finns det bara tre kungar kvar. Då ändras sannolikheten för nästa kort. Samma sak gäller kulor i en urna.",
+   "Aiko arbetar med datorer på ett sjukhus. Där har man två system för el som är oberoende av varandra. Om risken för strömavbrott är en på hundra för varje system, är risken att båda slutar fungera samtidigt bara en på tiotusen. Emil kastar igen. Det blir en etta."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många gånger i rad har Emil kastat utan att få en sexa?",
+    "options": [
+     "Två gånger",
+     "Sex gånger",
+     "Fem gånger",
+     "Tio gånger"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han har kastat tärningen fem gånger i rad utan att få en sexa.",
+    "explanationJa": "5{回|かい}{続|つづ}けてです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Hur får man sannolikheten att två oberoende händelser båda inträffar?",
+    "options": [
+     "Man lägger ihop sannolikheterna",
+     "Man delar med två",
+     "Man drar bort den minsta",
+     "Man tar sannolikheterna gånger varandra"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… får man sannolikheten att båda inträffar genom multiplikation.",
+    "explanationJa": "{確率|かくりつ}を{掛|か}け{合|あ}わせます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför ändras sannolikheten när man drar kort utan återläggning?",
+    "options": [
+     "Korten blandas igen",
+     "Det finns färre kort kvar",
+     "Kortleken blir större",
+     "Kungen kommer tillbaka"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om man drar en kung och inte lägger tillbaka den, finns det bara tre kungar kvar.",
+    "explanationJa": "{残|のこ}りのカードが{少|すく}なくなるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Efter fem kast utan sexa är chansen för en sexa större än en sjättedel.",
+    "correct": false,
+    "explanationSv": "Aiko förklarar att sannolikheten för en sexa alltid är en sjättedel.",
+    "explanationJa": "{確率|かくりつ}はいつも6{分|ぶん}の1のままです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Emil får en sexa på det sista kastet.",
+    "correct": false,
+    "explanationSv": "Emil kastar igen. Det blir en etta.",
+    "explanationJa": "{最後|さいご}は1でした。"
+   }
+  ],
+  "factSources": [
+   "Påhittad vardagsscen. Matematiken är kontrollerad: P(krona och krona) = 1/2 · 1/2 = 1/4; två oberoende system med risken 1/100 var ger 1/10 000 att båda fallerar. En vanlig kortlek har fyra kungar. En europeisk rulett har 18 röda, 18 svarta och ett grönt fack (nollan)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tur, otur och om slumpen har ett minne.",
+  "discussionPoints": [
+   "Har du någon gång trott att ”nu måste det bli min tur”?",
+   "Vilka saker i vardagen är oberoende av varandra?",
+   "Varför har sjukhus ofta två elsystem?",
+   "Spelar du något spel där man drar kort utan att lägga tillbaka dem?"
+  ]
+ }
+}

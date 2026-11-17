@@ -1,0 +1,174 @@
+{
+ "id": "m.kontinuitet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Kontinuitet",
+ "titleJa": "{連続性|れんぞくせい}",
+ "descriptionSv": "Kontinuitet: funktion, graf, kontinuerlig, lyfta pennan, tidpunkt, avbrott, språng, nämnare, division, odefinierad, definitionsmängd, tallinje, intervall, ändpunkt, slutet intervall och öppet intervall.",
+ "descriptionJa": "{連続性|れんぞくせい}：{関数|かんすう}、グラフ、{連続|れんぞく}した、ペンを{紙|かみ}から{離|はな}す、{時点|じてん}、{中断|ちゅうだん}、{跳|と}び、{分母|ぶんぼ}、{割|わ}り{算|ざん}、{定義|ていぎ}されていない、{定義域|ていぎいき}、{数直線|すうちょくせん}、{区間|くかん}、{端点|たんてん}、{閉区間|へいくかん}、{開区間|かいくかん}。",
+ "categoryId": "R06-A02-T01",
+ "tags": [
+  "matematik",
+  "analys"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.gransvarden"
+ ],
+ "related": [],
+ "recommendedOrder": 3212,
+ "words": [
+  {
+   "senseId": "s.funktion.2",
+   "active": true
+  },
+  {
+   "senseId": "s.graf.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontinuerlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyfta-pennan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.språng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nämnare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.division.2",
+   "active": true
+  },
+  {
+   "senseId": "s.odefinierad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.definitionsmängd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tallinje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intervall.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ändpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutet-intervall.1",
+   "active": false
+  },
+  {
+   "senseId": "s.öppet-intervall.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Temperaturen och parkeringen",
+  "paragraphs": [
+   "Karin är lärare på gymnasiet. Hon ritar två grafer på tavlan. Den första visar temperaturen ute under ett dygn. – Temperaturen ändras hela tiden, men den hoppar aldrig, säger hon. Vid varje tidpunkt finns det en temperatur.",
+   "– Den här funktionen är kontinuerlig, fortsätter Karin. Man kan rita grafen utan att lyfta pennan.",
+   "Den andra grafen visar vad det kostar att parkera vid skolan. Den första timmen kostar 20 kronor. När timmen har gått blir priset plötsligt 40 kronor. Grafen har ett språng vid varje hel timme, och där måste man lyfta pennan. Den funktionen är inte kontinuerlig.",
+   "Sedan skriver Karin f(x) = 1/x. – Vad händer när x är noll? frågar hon. Nämnaren blir noll, och division med noll är odefinierad. Därför är x = 0 inte med i definitionsmängden, och grafen har ett avbrott där.",
+   "Till sist ritar hon en tallinje. – Det slutna intervallet 1 ≤ x ≤ 3 innehåller sina ändpunkter, men det öppna intervallet 1 < x < 3 gör det inte. En funktion kan vara kontinuerlig i ett intervall, även om den inte är det överallt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar den första grafen?",
+    "options": [
+     "Priset för att parkera",
+     "Hur många elever som finns i klassen",
+     "Hur långt Karin går till skolan",
+     "Temperaturen ute under ett dygn"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den första visar temperaturen ute under ett dygn.",
+    "explanationJa": "{一日|いちにち}の{外|そと}の{気温|きおん}を{表|あらわ}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför är parkeringsfunktionen inte kontinuerlig?",
+    "options": [
+     "Parkeringen är gratis",
+     "Grafen är en rak linje",
+     "Temperaturen ändras",
+     "Grafen har ett språng vid varje hel timme"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Grafen har ett språng vid varje hel timme, och där måste man lyfta pennan.",
+    "explanationJa": "{一時間|いちじかん}ごとにグラフが{跳|と}ぶからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är x = 0 inte med i definitionsmängden för 1/x?",
+    "options": [
+     "Noll är ett negativt tal",
+     "Grafen är kontinuerlig där",
+     "Nämnaren blir 1",
+     "Division med noll är odefinierad"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Nämnaren blir noll, och division med noll är odefinierad.",
+    "explanationJa": "0 で{割|わ}ることは{定義|ていぎ}されていないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det öppna intervallet 1 < x < 3 innehåller talet 3.",
+    "correct": false,
+    "explanationSv": "… men det öppna intervallet 1 < x < 3 gör det inte.",
+    "explanationJa": "{開区間|かいくかん}は{端|はし}の{点|てん} 3 を{含|ふく}みません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan rita temperaturgrafen utan att lyfta pennan.",
+    "correct": true,
+    "explanationSv": "Man kan rita grafen utan att lyfta pennan.",
+    "explanationJa": "{気温|きおん}のグラフはペンを{離|はな}さずに{描|か}けます。"
+   }
+  ],
+  "factSources": [
+   "Påhittat parkeringspris (20 kronor per påbörjad timme) för exemplets skull.",
+   "Skrivsättet ]a, b[ för öppna intervall är vanligt i svensk skolmatematik; (a, b) används också, bland annat i Japan."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker som ändras hela tiden och saker som ändras i hopp.",
+  "discussionPoints": [
+   "Kan du ge ett exempel på något som ändras kontinuerligt?",
+   "Vad i vardagen ändras med ett språng, till exempel ett pris?",
+   "Vad händer på din miniräknare om du delar med noll?",
+   "Hur skriver man ett öppet intervall i Japan?"
+  ]
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "id": "m.derivatans-betydelse",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Derivatans betydelse",
+ "titleJa": "{微分係数|びぶんけいすう}の{意味|いみ}",
+ "descriptionSv": "Derivatans betydelse: förändring, hastighet, per, sträcka, medelhastighet, hastighetsmätare, ögonblick, accelerera, bromsa, förändringshastighet, kurva, lutning, sekant, tangent, derivata och tidpunkt.",
+ "descriptionJa": "{微分係数|びぶんけいすう}の{意味|いみ}：{変化|へんか}、{速度|そくど}、〜あたり、{距離|きょり}、{平均速度|へいきんそくど}、スピードメーター、{瞬間|しゅんかん}、{加速|かそく}する、ブレーキをかける、{変化|へんか}の{速|はや}さ、{曲線|きょくせん}、{傾|かたむ}き、{割線|かっせん}、{接線|せっせん}、{微分係数|びぶんけいすう}、{時点|じてん}。",
+ "categoryId": "R06-A02-T01",
+ "tags": [
+  "matematik",
+  "analys"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kontinuitet"
+ ],
+ "related": [],
+ "recommendedOrder": 3213,
+ "words": [
+  {
+   "senseId": "s.förändring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.per.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelhastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighetsmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögonblick.1",
+   "active": false
+  },
+  {
+   "senseId": "s.accelerera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kurva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lutning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tangent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.derivata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förändringshastighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sekant.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidpunkt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad visar hastighetsmätaren?",
+  "paragraphs": [
+   "Sara kör bil från Stockholm till Uppsala, en sträcka på ungefär 70 kilometer. Resan tar en timme. Hennes medelhastighet är alltså ungefär 70 kilometer per timme.",
+   "Men hastighetsmätaren visar nästan aldrig 70. När Sara kör ut från staden accelererar hon, och vid ett rödljus bromsar hon och står stilla en stund. På motorvägen visar mätaren 110. Hastigheten är olika i varje ögonblick.",
+   "Hennes son Leo går på gymnasiet och läser om derivatan. Han ritar en kurva som visar hur långt Sara har kört vid varje tidpunkt. – Om man drar en sekant mellan två punkter på kurvan, så är lutningen medelhastigheten mellan dem, förklarar han.",
+   "– Men om man vill veta hastigheten precis klockan tio, måste punkterna komma närmare och närmare varandra. Till slut blir sekanten en tangent. Tangentens lutning är derivatan, och den är just det som hastighetsmätaren visar.",
+   "Derivatan beskriver alltså en förändring: den är en förändringshastighet. Den kan visa hur fort en bil kör, men också hur snabbt ett pris eller en temperatur förändras. – Matematiken sitter i bilen, säger Sara och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång tid tar Saras resa?",
+    "options": [
+     "30 minuter",
+     "Två timmar",
+     "110 minuter",
+     "En timme"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Resan tar en timme.",
+    "explanationJa": "{移動|いどう}は{一時間|いちじかん}かかります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Sara vid rödljuset?",
+    "options": [
+     "Hon accelererar",
+     "Hon bromsar och står stilla",
+     "Hon kör 110",
+     "Hon byter bil"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… vid ett rödljus bromsar hon och står stilla en stund.",
+    "explanationJa": "{赤信号|あかしんごう}でブレーキをかけて、しばらく{止|と}まります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad visar lutningen på en sekant mellan två punkter på kurvan?",
+    "options": [
+     "Hastigheten precis klockan tio",
+     "Hur långt det är till Uppsala",
+     "Temperaturen i bilen",
+     "Medelhastigheten mellan punkterna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… så är lutningen medelhastigheten mellan dem.",
+    "explanationJa": "{割線|かっせん}の{傾|かたむ}きは、{二点|にてん}{間|かん}の{平均|へいきん}の{速|はや}さです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Tangentens lutning är det som hastighetsmätaren visar.",
+    "correct": true,
+    "explanationSv": "Tangentens lutning är derivatan, och den är just det som hastighetsmätaren visar.",
+    "explanationJa": "{接線|せっせん}の{傾|かたむ}きが、スピードメーターの{表示|ひょうじ}にあたります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Derivatan kan bara användas för bilar.",
+    "correct": false,
+    "explanationSv": "Den kan visa hur fort en bil kör, men också hur snabbt ett pris eller en temperatur förändras.",
+    "explanationJa": "{値段|ねだん}や{気温|きおん}の{変化|へんか}にも{使|つか}えます。"
+   }
+  ],
+  "factSources": [
+   "Avståndet Stockholm–Uppsala med bil är ungefär 70 kilometer (avrundat; beror på vägen och var man startar).",
+   "Medelhastighet = sträcka delat med tid. Derivatan av sträckan som funktion av tiden är den momentana hastigheten."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hastighet, förändring och vad derivatan betyder i vardagen.",
+  "discussionPoints": [
+   "Hur ofta tittar du på hastighetsmätaren när du åker bil?",
+   "Vad är skillnaden mellan medelhastighet och hastigheten i ett visst ögonblick?",
+   "Kan du ge ett exempel på en förändringshastighet som inte handlar om bilar?",
+   "Hur lärde du dig derivatan i skolan i Japan?"
+  ]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "id": "m.deriveringsregler",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Deriveringsregler",
+ "titleJa": "{微分|びぶん}の{公式|こうしき}",
+ "descriptionSv": "Deriveringsregler: derivata, derivera, potens, exponent, konstant, term, koefficient, exponentialfunktion, sinus, cosinus, utantill, produktregel, kvotregel, kedjeregel, formelsamling, tillämpa och förenkla.",
+ "descriptionJa": "{微分|びぶん}の{公式|こうしき}：{微分係数|びぶんけいすう}・{導関数|どうかんすう}、{微分|びぶん}する、{累乗|るいじょう}、{指数|しすう}、{定数|ていすう}、{項|こう}、{係数|けいすう}、{指数関数|しすうかんすう}、サイン、コサイン、{暗記|あんき}して、{積|せき}の{微分法|びぶんほう}、{商|しょう}の{微分法|びぶんほう}、{合成関数|ごうせいかんすう}の{微分法|びぶんほう}、{公式集|こうしきしゅう}、{適用|てきよう}する、{簡単|かんたん}にする。",
+ "categoryId": "R06-A02-T01",
+ "tags": [
+  "matematik",
+  "analys"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.derivatans-betydelse"
+ ],
+ "related": [],
+ "recommendedOrder": 3214,
+ "words": [
+  {
+   "senseId": "s.derivata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.derivera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.potens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exponent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konstant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.term.2",
+   "active": true
+  },
+  {
+   "senseId": "s.koefficient.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exponentialfunktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sinus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cosinus.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utantill.1",
+   "active": true
+  },
+  {
+   "senseId": "s.produktregel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvotregel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kedjeregel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.formelsamling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillämpa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förenkla.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kvällen före provet",
+  "paragraphs": [
+   "Nora ska skriva ett prov i matematik i morgon. Hon sitter vid köksbordet med sin formelsamling och ett papper med tjugo uppgifter. Alla handlar om att derivera.",
+   "Hon börjar med de enkla reglerna. När man deriverar en potens som x³, flyttar man ner exponenten framför x och gör exponenten ett mindre: derivatan blir 3x². Derivatan av en konstant är noll, så i 4x³ + 7 försvinner termen 7. Koefficienten 4 är kvar, och derivatan blir 12x².",
+   "Sedan kommer exponentialfunktionen eˣ. Den är speciell, för derivatan är samma funktion igen. Nora vet också att derivatan av sinus är cosinus. – De reglerna kan jag utantill, säger hon till sin pappa.",
+   "Svårare är produktregeln och kvotregeln, som man använder när en funktion är en produkt eller en kvot av två funktioner. Där tittar Nora i formelsamlingen. Kedjeregeln är svårast: när man deriverar (3x + 1)⁵, måste man också ta svaret gånger derivatan av det som står inuti parentesen, alltså gånger 3.",
+   "– Det är inte svårt att hitta reglerna, säger pappan. Det svåra är att veta när man ska tillämpa vilken regel. Efter två timmar har Nora gjort alla uppgifterna. Hon förenklar det sista svaret och går och lägger sig."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad handlar uppgifterna på Noras papper om?",
+    "options": [
+     "Att rita trianglar",
+     "Att räkna procent",
+     "Att derivera",
+     "Att läsa diagram"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Alla handlar om att derivera.",
+    "explanationJa": "すべて{微分|びぶん}の{問題|もんだい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad blir derivatan av 4x³ + 7?",
+    "options": [
+     "12x²",
+     "4x²",
+     "12x² + 7",
+     "3x²"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Koefficienten 4 är kvar, och derivatan blir 12x².",
+    "explanationJa": "{導関数|どうかんすう}は 12x² です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vilken regel använder Nora när hon deriverar (3x + 1)⁵?",
+    "options": [
+     "Kedjeregeln",
+     "Kvotregeln",
+     "Produktregeln",
+     "Ingen regel"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kedjeregeln är svårast: när man deriverar (3x + 1)⁵ …",
+    "explanationJa": "{合成関数|ごうせいかんすう}の{微分法|びぶんほう}を{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Nora kan reglerna för eˣ och sinus utantill.",
+    "correct": true,
+    "explanationSv": "– De reglerna kan jag utantill, säger hon till sin pappa.",
+    "explanationJa": "eˣ とサインの{規則|きそく}は{暗記|あんき}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Enligt pappan är det svåraste att hitta reglerna i formelsamlingen.",
+    "correct": false,
+    "explanationSv": "Det svåra är att veta när man ska tillämpa vilken regel.",
+    "explanationJa": "{難|むずか}しいのは、どの{規則|きそく}をいつ{使|つか}うかを{判断|はんだん}することです。"
+   }
+  ],
+  "factSources": [
+   "Deriveringsreglerna (potensregeln, D(eˣ) = eˣ, D(sin x) = cos x, D(cos x) = −sin x, produkt-, kvot- och kedjeregeln) är standardinnehåll i gymnasiets matematikkurser 3 och 4.",
+   "Om formelsamling får användas beror på provet; texten beskriver en påhittad situation."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att lära sig regler i matematik och om prov.",
+  "discussionPoints": [
+   "Vilka regler i matematik kan du fortfarande utantill?",
+   "Fick du använda en formelsamling på prov i skolan?",
+   "Vad tycker du är svårast: att komma ihåg en regel eller att veta när man ska tillämpa den?",
+   "Hur säger man sinus och cosinus på japanska?"
+  ]
+ }
+}

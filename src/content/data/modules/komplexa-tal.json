@@ -1,0 +1,178 @@
+{
+ "id": "m.komplexa-tal",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Komplexa tal",
+ "titleJa": "{複素数|ふくそすう}",
+ "descriptionSv": "Komplexa tal: negativt tal, kvadratrot, tallinje, reellt tal, imaginär enhet, komplext tal, andragradsekvation, realdel, imaginärdel, talplan, koordinat, absolutbelopp, vinkel, rotation, spegla, konjugat och växelström.",
+ "descriptionJa": "{複素数|ふくそすう}：{負|ふ}の{数|かず}、{平方根|へいほうこん}、{数直線|すうちょくせん}、{実数|じっすう}、{虚数単位|きょすうたんい}、{複素数|ふくそすう}、{二次方程式|にじほうていしき}、{実部|じつぶ}、{虚部|きょぶ}、{複素数平面|ふくそすうへいめん}、{座標|ざひょう}、{絶対値|ぜったいち}、{角度|かくど}、{回転|かいてん}、{対称|たいしょう}に{移|うつ}す、{共役複素数|きょうやくふくそすう}、{交流|こうりゅう}。",
+ "categoryId": "R06-A02-T06",
+ "tags": [
+  "matematik",
+  "komplexa tal"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.topologi"
+ ],
+ "related": [],
+ "recommendedOrder": 3263,
+ "words": [
+  {
+   "senseId": "s.negativt-tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvadratrot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tallinje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reellt-tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.imaginär-enhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komplext-tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andragradsekvation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.realdel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.imaginärdel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talplan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koordinat.1",
+   "active": false
+  },
+  {
+   "senseId": "s.absolutbelopp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vinkel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rotation.2",
+   "active": true
+  },
+  {
+   "senseId": "s.spegla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konjugat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växelström.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Talet som inte fanns",
+  "paragraphs": [
+   "Naoko läser till ingenjör. I matematiken ska de nu lära sig komplexa tal. Läraren börjar med en andragradsekvation på tavlan: x² = −1. – Vilket tal gånger sig självt blir −1? frågar han. Ingen svarar. Ett negativt tal gånger sig självt blir positivt, och ett positivt tal blir också positivt.",
+   "Bland de reella talen på tallinjen finns alltså ingen kvadratrot ur −1. Därför började matematiker för flera hundra år sedan använda ett nytt tal, den imaginära enheten i, där i · i = −1. Ett komplext tal, till exempel 3 + 2i, har en realdel, 3, och en imaginärdel, 2.",
+   "Läraren ritar ett talplan för komplexa tal. Tallinjen går åt sidan och en ny axel går uppåt. Talet 3 + 2i blir en punkt med koordinaterna (3, 2). Avståndet från 0 till punkten är talets absolutbelopp, och pilen från 0 till punkten bildar en vinkel med tallinjen.",
+   "Sedan visar han något som överraskar Naoko. När man tar ett tal gånger i, blir det en rotation på 90 grader runt 0. Om man i stället byter tecken på imaginärdelen, får man konjugatet, 3 − 2i. Det är som att spegla punkten i tallinjen.",
+   "– Men varför behöver en ingenjör det här? frågar Naoko. Läraren förklarar att växelströmmen i vägguttaget byter riktning 50 gånger i sekunden. Med komplexa tal kan man beskriva det som en pil som snurrar runt och runt. Då blir räkningarna mycket enklare. Naoko berättar att strömmen i Japan byter riktning 50 gånger i sekunden i öst, men 60 gånger i väst."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken ekvation börjar läraren med?",
+    "options": [
+     "x² = 9",
+     "x + 1 = 0",
+     "x² = −1",
+     "x² + 2x = 0"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Läraren börjar med en andragradsekvation på tavlan: x² = −1.",
+    "explanationJa": "x² = −1という{二次方程式|にじほうていしき}から{始|はじ}めました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är realdelen av 3 + 2i?",
+    "options": [
+     "2",
+     "3",
+     "2i",
+     "5"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ett komplext tal, till exempel 3 + 2i, har en realdel, 3, och en imaginärdel, 2.",
+    "explanationJa": "3 + 2iの{実部|じつぶ}は3です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad händer när man tar ett tal gånger i?",
+    "options": [
+     "Punkten speglas i tallinjen",
+     "Punkten roterar 90 grader runt 0",
+     "Talet blir negativt",
+     "Talet blir ett reellt tal"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När man tar ett tal gånger i, blir det en rotation på 90 grader runt 0.",
+    "explanationJa": "iを{掛|か}けると、0を{中心|ちゅうしん}に90{度|ど}{回転|かいてん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Konjugatet till 3 + 2i är 3 − 2i.",
+    "correct": true,
+    "explanationSv": "Om man i stället byter tecken på imaginärdelen, får man konjugatet, 3 − 2i.",
+    "explanationJa": "{虚部|きょぶ}の{符号|ふごう}を{変|か}えると3 − 2iになります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "I hela Japan byter strömmen riktning lika många gånger i sekunden.",
+    "correct": false,
+    "explanationSv": "Naoko berättar att strömmen i Japan byter riktning 50 gånger i sekunden i öst, men 60 gånger i väst.",
+    "explanationJa": "{日本|にほん}では{東|ひがし}が50{回|かい}、{西|にし}が60{回|かい}です。"
+   }
+  ],
+  "factSources": [
+   "Påhittad scen. Räkningarna är kontrollerade: i · i = −1, (3 + 2i)(3 − 2i) = 13, och multiplikation med i är en rotation med 90° moturs.",
+   "Elnätet i Sverige har 230 V och 50 Hz. I Japan har östra delen (bl.a. Tokyo) 50 Hz och västra delen (bl.a. Osaka) 60 Hz."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tal som är svåra att föreställa sig.",
+  "discussionPoints": [
+   "Tycker du att komplexa tal finns på riktigt? Varför eller varför inte?",
+   "Vilka tal använder du mest i vardagen?",
+   "Har du haft problem med el när du har rest till ett annat land?",
+   "Vad i matematiken har överraskat dig mest?"
+  ]
+ }
+}

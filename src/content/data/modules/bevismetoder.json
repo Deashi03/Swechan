@@ -1,0 +1,173 @@
+{
+ "id": "m.bevismetoder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Bevismetoder",
+ "titleJa": "{証明|しょうめい}の{方法|ほうほう}",
+ "descriptionSv": "Bevismetoder: bevisa, sats, axiom, antagande, slutsats, följa av, deduktion, direkt bevis, steg för steg, jämn, udda, vilket skulle bevisas, motsägelsebevis, motsägelse, induktionsbevis och motexempel.",
+ "descriptionJa": "{証明|しょうめい}の{方法|ほうほう}：{証明|しょうめい}する、{定理|ていり}、{公理|こうり}、{仮定|かてい}、{結論|けつろん}、{導|みちび}かれる、{演繹|えんえき}、{直接証明|ちょくせつしょうめい}、{一歩|いっぽ}ずつ、{偶数|ぐうすう}の、{奇数|きすう}の、{以上|いじょう}で{証明|しょうめい}{終|お}わり、{背理法|はいりほう}、{矛盾|むじゅん}、{帰納法|きのうほう}による{証明|しょうめい}、{反例|はんれい}。",
+ "categoryId": "R06-A02-T05",
+ "tags": [
+  "matematik",
+  "diskret matematik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.logiska-operatorer"
+ ],
+ "related": [],
+ "recommendedOrder": 3253,
+ "words": [
+  {
+   "senseId": "s.bevisa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.axiom.1",
+   "active": false
+  },
+  {
+   "senseId": "s.antagande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.följa-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deduktion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.direkt-bevis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.steg-för-steg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämn.3",
+   "active": true
+  },
+  {
+   "senseId": "s.udda.2",
+   "active": true
+  },
+  {
+   "senseId": "s.vilket-skulle-bevisas.1",
+   "active": false
+  },
+  {
+   "senseId": "s.motsägelsebevis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motsägelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.induktionsbevis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motexempel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur vet man att något alltid stämmer?",
+  "paragraphs": [
+   "I matematik räcker det inte att något verkar stämma i några exempel. Man måste bevisa det. En sats är ett påstående som har bevisats, och varje bevis bygger till slut på några axiom, enkla regler som man accepterar utan bevis. Från dem drar man slutsatser genom deduktion: om det man börjar med är sant, måste slutsatsen också vara sann.",
+   "Ett direkt bevis går steg för steg från det man vet till det man vill visa. Ta satsen \"summan av två jämna tal är jämn\". Ett jämnt tal kan skrivas 2a och ett annat 2b. Summan blir 2a + 2b = 2(a + b), alltså också ett jämnt tal. Slutsatsen följer av de första stegen, och på sista raden kan man skriva \"vilket skulle bevisas\".",
+   "I ett motsägelsebevis börjar man med motsatsen till det man vill visa. Vill man visa att det inte finns något största heltal, gör man antagandet att N är det största heltalet. Men N + 1 är ännu större. Det är en motsägelse, så antagandet måste vara fel.",
+   "Ett induktionsbevis liknar en lång rad med brickor som står på kant. Först visar man att påståendet gäller för talet 1: den första brickan faller. Sedan visar man att om påståendet gäller för ett tal, så gäller det också för nästa: varje bricka fäller nästa. Då faller alla brickor, och påståendet gäller för alla positiva heltal.",
+   "Det räcker däremot med ett enda motexempel för att visa att ett påstående är fel. Påståendet \"summan av två udda tal är udda\" faller redan med 1 + 3 = 4. Därför är matematiker försiktiga: tusen exempel bevisar ingenting, men ett motexempel motbevisar allt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är en sats i matematik?",
+    "options": [
+     "En regel som man accepterar utan bevis",
+     "Ett exempel som visar att något är fel",
+     "Ett påstående som har bevisats",
+     "En gissning som ingen har testat"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En sats är ett påstående som har bevisats …",
+    "explanationJa": "{証明|しょうめい}された{命題|めいだい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför är 2a + 2b ett jämnt tal?",
+    "options": [
+     "a och b är udda",
+     "Det är större än 2",
+     "Det kan skrivas 2(a + b)",
+     "Det är ett axiom"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Summan blir 2a + 2b = 2(a + b), alltså också ett jämnt tal.",
+    "explanationJa": "2(a + b)と{書|か}けるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Hur börjar ett motsägelsebevis?",
+    "options": [
+     "Med motsatsen till det man vill visa",
+     "Med ett motexempel",
+     "Med talet 1",
+     "Med \"vilket skulle bevisas\""
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I ett motsägelsebevis börjar man med motsatsen till det man vill visa.",
+    "explanationJa": "{示|しめ}したいことの{反対|はんたい}を{仮定|かてい}して{始|はじ}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "För ett induktionsbevis räcker det att visa att påståendet gäller för talet 1.",
+    "correct": false,
+    "explanationSv": "Sedan visar man att om påståendet gäller för ett tal, så gäller det också för nästa …",
+    "explanationJa": "{次|つぎ}の{数|かず}でも{成|な}り{立|た}つことを{示|しめ}す{必要|ひつよう}もあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Ett enda motexempel räcker för att visa att ett påstående är fel.",
+    "correct": true,
+    "explanationSv": "Det räcker däremot med ett enda motexempel för att visa att ett påstående är fel.",
+    "explanationJa": "{反例|はんれい}が{一|ひと}つあれば{十分|じゅうぶん}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man kan veta att något är sant, i matematik och i vardagen.",
+  "discussionPoints": [
+   "Har du någon gång bevisat något i skolan? Hur kändes det?",
+   "Vilken bevismetod tycker du är lättast att förstå, och varför?",
+   "Kan du komma på ett motexempel till ett påstående som många tror på?",
+   "Räcker många exempel för att vara säker i vardagen, fast det inte räcker i matematik?"
+  ]
+ }
+}
