@@ -1,0 +1,173 @@
+{
+ "id": "m.lutning-och-skarning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Lutning och skärning",
+ "titleJa": "{傾|かたむ}きと{交点|こうてん}",
+ "descriptionSv": "Lutning och skärning: jämföra, nolla, skillnad, kvot, ökning, minskning, i y-led, i x-led, lutning, stigande, fallande, vågrät, k-värde, skära, skärningspunkt och grafiskt.",
+ "descriptionJa": "{傾|かたむ}きと{交点|こうてん}：{比|くら}べる、ゼロ、{差|さ}、{商|しょう}、{増加|ぞうか}、{減少|げんしょう}、y {方向|ほうこう}に、x {方向|ほうこう}に、{傾|かたむ}き、{右上|みぎあ}がりの、{右下|みぎさ}がりの、{水平|すいへい}な、k の{値|あたい}、{交|まじ}わる、{交点|こうてん}、グラフで。",
+ "categoryId": "R06-A01-T05",
+ "tags": [
+  "matematik",
+  "funktioner"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.rata-linjens-ekvation"
+ ],
+ "related": [],
+ "recommendedOrder": 3144,
+ "words": [
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skillnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minskning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-y-led.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-x-led.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lutning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stigande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fallande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vågrät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.k-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skära.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skärningspunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grafiskt.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Två ljus som brinner",
+  "paragraphs": [
+   "Fatima tänder två ljus på kvällen. Det långa ljuset är 20 centimeter och det korta 12 centimeter. Hon märker att det långa ljuset brinner snabbare. Hennes dotter Sara frågar när de två ljusen blir lika långa.",
+   "De bestämmer sig för att mäta varje timme. Det långa ljuset blir 2 centimeter kortare varje timme, och det korta 1 centimeter kortare. Det är alltså en minskning och ingen ökning. Sara ritar ett koordinatsystem med timmar på x-axeln och centimeter på y-axeln.",
+   "Båda linjerna blir fallande, eftersom ljusen blir kortare. Det långa ljuset har lutningen −2: ett steg i x-led ger två steg ner i y-led, och kvoten mellan dem är −2. Det korta ljuset har lutningen −1, så den linjen är inte lika brant. Om man jämför linjerna ser man att skillnaden mellan dem blir mindre och mindre.",
+   "Sara drar linjerna längre. Efter åtta timmar skär linjerna varandra. I skärningspunkten (8, 4) är båda ljusen 4 centimeter långa. – Vi har löst uppgiften grafiskt, säger Fatima.",
+   "Sara funderar vidare. – Om ett ljus inte brann alls skulle linjen vara vågrät, med en nolla som k-värde. Och om det växte i stället skulle linjen vara stigande. Fatima skrattar: – Ett ljus som växer har jag aldrig sett!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur långt är det korta ljuset från början?",
+    "options": [
+     "20 centimeter",
+     "12 centimeter",
+     "8 centimeter",
+     "4 centimeter"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det långa ljuset är 20 centimeter och det korta 12 centimeter.",
+    "explanationJa": "{短|みじか}いろうそくは 12 センチです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir båda linjerna fallande?",
+    "options": [
+     "Ljusen blir längre",
+     "Ljusen blir kortare",
+     "Sara ritar fel",
+     "Klockan går fel"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Båda linjerna blir fallande, eftersom ljusen blir kortare.",
+    "explanationJa": "ろうそくが{短|みじか}くなるので、{右下|みぎさ}がりになります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder lutningen −2 för det långa ljuset?",
+    "options": [
+     "Det brinner i 2 timmar",
+     "Det är 2 centimeter långt",
+     "Det blir 2 centimeter längre varje timme",
+     "Det blir 2 centimeter kortare varje timme"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det långa ljuset blir 2 centimeter kortare varje timme …",
+    "explanationJa": "1{時間|じかん}ごとに 2 センチ{短|みじか}くなるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I skärningspunkten är båda ljusen lika långa.",
+    "correct": true,
+    "explanationSv": "I skärningspunkten (8, 4) är båda ljusen 4 centimeter långa.",
+    "explanationJa": "{交点|こうてん}では{両方|りょうほう}とも 4 センチです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ett ljus som inte brinner skulle ge en stigande linje.",
+    "correct": false,
+    "explanationSv": "Om ett ljus inte brann alls skulle linjen vara vågrät …",
+    "explanationJa": "{燃|も}えなければ、{線|せん}は{水平|すいへい}になります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker som ökar eller minskar lika mycket hela tiden.",
+  "discussionPoints": [
+   "Kan du ge ett exempel på något i vardagen som minskar lika mycket varje dag?",
+   "Är det lättare för dig att räkna ut svaret eller att lösa en uppgift grafiskt?",
+   "Vad säger man på japanska för lutning och skärningspunkt?",
+   "Vilka grafer ser du i nyheterna, och är de oftast stigande eller fallande?"
+  ]
+ }
+}

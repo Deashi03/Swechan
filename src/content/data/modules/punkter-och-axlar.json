@@ -1,0 +1,173 @@
+{
+ "id": "m.punkter-och-axlar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Punkter och axlar",
+ "titleJa": "{点|てん}と{軸|じく}",
+ "descriptionSv": "Punkter och axlar: punkt, koordinat, åt höger, åt vänster, ruta, x-koordinat, y-koordinat, talpar, pricka in, markera, kryss, avstånd, mittpunkt, spegelbild, spegla och symmetrisk.",
+ "descriptionJa": "{点|てん}と{軸|じく}：{点|てん}、{座標|ざひょう}、{右|みぎ}へ、{左|ひだり}へ、マス、x{座標|ざひょう}、y{座標|ざひょう}、{数|かず}の{組|くみ}、{点|てん}を{書|か}き{込|こ}む、{印|しるし}をつける、バツ{印|じるし}、{距離|きょり}、{中点|ちゅうてん}、{鏡像|きょうぞう}、{対称|たいしょう}に{移|うつ}す、{左右対称|さゆうたいしょう}の。",
+ "categoryId": "R06-A01-T05",
+ "tags": [
+  "matematik",
+  "funktioner"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.matematiska-koordinatsystem"
+ ],
+ "related": [],
+ "recommendedOrder": 3142,
+ "words": [
+  {
+   "senseId": "s.punkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koordinat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åt-höger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åt-vänster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ruta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.x-koordinat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.y-koordinat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talpar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pricka-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.markera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mittpunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spegelbild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spegla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.symmetrisk.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Skatten på det rutade pappret",
+  "paragraphs": [
+   "Kenta och hans dotter Aiko leker ett spel på rutat papper. Aiko har ritat ett koordinatsystem och gömt en skatt i en punkt. Kenta ska gissa var skatten ligger.",
+   "– Varje punkt har två koordinater, säger Aiko. Först kommer x-koordinaten och sedan y-koordinaten. Du ska säga ett talpar, till exempel (2, 5).",
+   "Kenta gissar (3, 4). Aiko prickar in punkten och markerar den med ett kryss. – Fel! Gå två rutor åt höger, inte åt vänster, och en ruta upp, säger hon. Avståndet till skatten är inte så stort.",
+   "Kenta gissar igen. Nu säger han (5, 5), och det stämmer. Aiko ritar en liten skattkista i punkten. Sedan vill hon visa en sak till. Hon ritar en punkt i (−5, 5), på andra sidan y-axeln.",
+   "– Jag har speglat skatten i y-axeln, säger hon. Den nya punkten är en spegelbild av den gamla, och bilden blir symmetrisk. Mittpunkten mellan de två punkterna är (0, 5), och den ligger precis på y-axeln. Kenta skrattar: – Nu har vi två skatter!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ritar Aiko?",
+    "options": [
+     "En karta över staden",
+     "Ett hus",
+     "Ett koordinatsystem",
+     "En klocka"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko har ritat ett koordinatsystem och gömt en skatt i en punkt.",
+    "explanationJa": "アイコは{座標系|ざひょうけい}をかきました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket tal kommer först i ett talpar?",
+    "options": [
+     "y-koordinaten",
+     "Det största talet",
+     "Det minsta talet",
+     "x-koordinaten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först kommer x-koordinaten och sedan y-koordinaten.",
+    "explanationJa": "{最初|さいしょ}は x{座標|ざひょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör Aiko när Kenta har gissat (3, 4)?",
+    "options": [
+     "Hon tar bort koordinatsystemet",
+     "Hon ger honom skatten",
+     "Hon prickar in punkten och markerar den med ett kryss",
+     "Hon byter till ett nytt papper"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko prickar in punkten och markerar den med ett kryss.",
+    "explanationJa": "{点|てん}を{書|か}き{込|こ}んで、バツ{印|じるし}をつけます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Skatten ligger i punkten (5, 5).",
+    "correct": true,
+    "explanationSv": "Nu säger han (5, 5), och det stämmer.",
+    "explanationJa": "(5, 5) で{正解|せいかい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den speglade punkten ligger på samma sida av y-axeln som skatten.",
+    "correct": false,
+    "explanationSv": "Hon ritar en punkt i (−5, 5), på andra sidan y-axeln.",
+    "explanationJa": "y{軸|じく}の{反対側|はんたいがわ}にあります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om spel och om att hitta rätt plats med hjälp av tal.",
+  "discussionPoints": [
+   "Har du spelat något spel där man gissar koordinater?",
+   "Hur förklarar du vägen till ditt hem: åt höger, åt vänster, hur många kvarter?",
+   "Vad är symmetriskt i ditt hem eller i din stad?",
+   "Var i vardagen behöver man koordinater, till exempel i en karta i mobilen?"
+  ]
+ }
+}

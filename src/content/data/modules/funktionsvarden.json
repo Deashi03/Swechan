@@ -1,0 +1,173 @@
+{
+ "id": "m.funktionsvarden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Funktionsvärden",
+ "titleJa": "{関数|かんすう}の{値|あたい}",
+ "descriptionSv": "Funktionsvärden: miniräknare, kilometer, uppskatta, ersätta, motsvara, sätta in, värdetabell, bero på, funktion, funktionsmaskin, funktionsvärde, definitionsmängd, värdemängd, startavgift, taxameter och räkna ut.",
+ "descriptionJa": "{関数|かんすう}の{値|あたい}：{電卓|でんたく}、キロメートル、{見積|みつ}もる、{置|お}き{換|か}える、{相当|そうとう}する、{代入|だいにゅう}する、{対応表|たいおうひょう}、〜によって{決|き}まる、{関数|かんすう}、{関数|かんすう}マシン、{関数|かんすう}の{値|あたい}、{定義域|ていぎいき}、{値域|ちいき}、{基本料金|きほんりょうきん}、タクシーメーター、{計算|けいさん}する。",
+ "categoryId": "R06-A01-T05",
+ "tags": [
+  "matematik",
+  "funktioner"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.proportionalitet"
+ ],
+ "related": [],
+ "recommendedOrder": 3146,
+ "words": [
+  {
+   "senseId": "s.miniräknare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilometer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ersätta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.motsvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sätta-in.2",
+   "active": true
+  },
+  {
+   "senseId": "s.värdetabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bero-på.2",
+   "active": true
+  },
+  {
+   "senseId": "s.funktion.2",
+   "active": true
+  },
+  {
+   "senseId": "s.funktionsmaskin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.funktionsvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.definitionsmängd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.värdemängd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.startavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.taxameter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-ut.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad kostar taxin?",
+  "paragraphs": [
+   "Hiroshi kommer till Göteborg sent på kvällen och tar en taxi från stationen. På dörren står det att startavgiften är 50 kronor och att varje kilometer kostar 15 kronor. Han vill räkna ut ungefär vad resan kommer att kosta.",
+   "Han tar fram sin miniräknare. Priset beror på hur långt han åker, tänker han. Det är en funktion: y = 15x + 50, där x är antalet kilometer och y priset i kronor. Han tänker på funktionsmaskinen från skolan: man stoppar in ett tal och får ut ett nytt.",
+   "Hiroshi gör en liten värdetabell. Han sätter in x = 2, x = 5 och x = 8. Funktionsvärdet för x = 5 är 15 · 5 + 50 = 125. Fem kilometer motsvarar alltså 125 kronor. Om han ersätter 5 med 8 blir priset 170 kronor.",
+   "Hotellet ligger ungefär fem kilometer bort, så han uppskattar att resan kostar cirka 125 kronor. När taxin stannar visar taxametern 131 kronor. Vägen var lite längre än han trodde.",
+   "På hotellet funderar Hiroshi vidare. Antalet kilometer kan inte vara negativt, så definitionsmängden börjar på noll. Priset kan aldrig bli lägre än startavgiften, så värdemängden börjar på 50 kronor. Sedan somnar han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur stor är startavgiften för taxin?",
+    "options": [
+     "15 kronor",
+     "125 kronor",
+     "131 kronor",
+     "50 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… startavgiften är 50 kronor …",
+    "explanationJa": "{基本料金|きほんりょうきん}は 50 クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är funktionsvärdet för x = 5?",
+    "options": [
+     "75",
+     "50",
+     "170",
+     "125"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Funktionsvärdet för x = 5 är 15 · 5 + 50 = 125.",
+    "explanationJa": "x = 5 のとき 125 です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad beror priset på?",
+    "options": [
+     "Vilken dag det är",
+     "Hur långt han åker",
+     "Hur mycket han väger",
+     "Vilket hotell han bor på"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Priset beror på hur långt han åker, tänker han.",
+    "explanationJa": "どれだけ{遠|とお}くまで{行|い}くかで{決|き}まります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Taxametern visar exakt det pris som Hiroshi har uppskattat.",
+    "correct": false,
+    "explanationSv": "När taxin stannar visar taxametern 131 kronor.",
+    "explanationJa": "メーターは 131 クローナで、{予想|よそう}より{少|すこ}し{高|たか}かったです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Priset för taxiresan kan aldrig bli lägre än 50 kronor.",
+    "correct": true,
+    "explanationSv": "Priset kan aldrig bli lägre än startavgiften …",
+    "explanationJa": "{基本料金|きほんりょうきん}より{安|やす}くはなりません。"
+   }
+  ],
+  "factSources": [
+   "Taxipriserna i texten är påhittade exempel. I Sverige sätter varje taxibolag själv sina priser och måste visa jämförpriset på bilen."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om priser som beror på något, till exempel taxi, el eller mobil.",
+  "discussionPoints": [
+   "Hur brukar du uppskatta vad en resa kommer att kosta?",
+   "Har taxin i Japan också en startavgift? Hur fungerar det där?",
+   "Vilka andra priser beror på hur mycket man använder, till exempel el eller vatten?",
+   "Tycker du att funktioner är svåra eller roliga? Varför?"
+  ]
+ }
+}
