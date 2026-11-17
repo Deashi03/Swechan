@@ -231,6 +231,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.utspridd.1', 's.population.2',
   // 0.48 Geometrins grundformer: förväxlas med ord ur samma ordfamilj efter två blindomgångar
   's.symmetrilinje.1', 's.rektangulär.1', 's.rund.1', 's.area.1', 's.kvadratdecimeter.1',
+  // 0.49 Analys & derivata: förväxlas med lutning respektive högsta/lägsta värde
+  's.derivata.1', 's.förändringshastighet.1', 's.extremvärde.2',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
