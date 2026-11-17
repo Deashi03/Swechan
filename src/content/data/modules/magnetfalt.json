@@ -1,0 +1,179 @@
+{
+ "id": "m.magnetfalt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Magnetfält",
+ "titleJa": "{磁場|じば}",
+ "descriptionSv": "Magnetfält: järn, magnetisk, gem, nordpol, sydpol, stavmagnet, hästskomagnet, magnetfält, järnfilspån, kompass, kompassnål, spik, magnetisera, elektromagnet, magnetkamera, solvind och norrsken.",
+ "descriptionJa": "{磁場|じば}：{鉄|てつ}、{磁性|じせい}のある、クリップ、N{極|きょく}、S{極|きょく}、{棒磁石|ぼうじしゃく}、U{字形|じがた}{磁石|じしゃく}、{磁場|じば}、{鉄粉|てっぷん}、{方位磁石|ほういじしゃく}、{方位磁針|ほういじしん}の{針|はり}、{釘|くぎ}、{磁化|じか}する、{電磁石|でんじしゃく}、MRI、{太陽風|たいようふう}、オーロラ。",
+ "categoryId": "R06-A03-T04",
+ "tags": [
+  "fysik",
+  "magnetism"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.elektriska-falt"
+ ],
+ "related": [],
+ "recommendedOrder": 3345,
+ "words": [
+  {
+   "senseId": "s.järn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nordpol.2",
+   "active": true
+  },
+  {
+   "senseId": "s.sydpol.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stavmagnet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hästskomagnet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.järnfilspån.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kompass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompassnål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetisera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elektromagnet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetkamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solvind.1",
+   "active": false
+  },
+  {
+   "senseId": "s.norrsken.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Magneter på köksbordet",
+  "paragraphs": [
+   "Hiro har köpt en låda med magneter till sin dotter Mia. I lådan finns en stavmagnet och en hästskomagnet. Mia håller magneten mot ett gem, och gemet fastnar direkt. – Gemet är gjort av järn, och järn är magnetiskt, förklarar Hiro.",
+   "Varje magnet har en nordpol och en sydpol. Mia håller två stavmagneter mot varandra. När nordpolen möter sydpolen drar de ihop sig. När två nordpoler möts trycker de bort varandra.",
+   "Runt en magnet finns ett magnetfält. Hiro lägger ett papper över magneten och strör järnfilspån på papperet. De små bitarna lägger sig i fina linjer från den ena änden till den andra.",
+   "Jorden är också som en stor magnet. Därför pekar kompassnålen i en kompass mot norr. Mia magnetiserar en spik genom att dra magneten längs den många gånger. Sedan kan spiken lyfta ett gem.",
+   "Hiro berättar att en elektromagnet bara fungerar när det går ström genom den. Stora elektromagneter finns till exempel i en magnetkamera på sjukhuset. Jordens magnetfält skyddar oss också mot solvinden. Nära nordpolen och sydpolen kommer en del partiklar in, och då kan man se norrsken."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför fastnar gemet på magneten?",
+    "options": [
+     "Det är gjort av järn",
+     "Det är gjort av plast",
+     "Det är blött",
+     "Det är mycket lätt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Gemet är gjort av järn, och järn är magnetiskt …",
+    "explanationJa": "クリップは{鉄|てつ}でできているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer när två nordpoler möts?",
+    "options": [
+     "De trycker bort varandra",
+     "De drar ihop sig",
+     "Ingenting händer",
+     "De blir varma"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När två nordpoler möts trycker de bort varandra.",
+    "explanationJa": "{互|たが}いに{反発|はんぱつ}し{合|あ}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad strör Hiro på papperet?",
+    "options": [
+     "Järnfilspån",
+     "Socker",
+     "Sand",
+     "Gem"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hiro lägger ett papper över magneten och strör järnfilspån på papperet.",
+    "explanationJa": "{鉄粉|てっぷん}をまきます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En elektromagnet fungerar utan ström.",
+    "correct": false,
+    "explanationSv": "… en elektromagnet bara fungerar när det går ström genom den.",
+    "explanationJa": "{電磁石|でんじしゃく}は{電流|でんりゅう}が{流|なが}れているときだけはたらきます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Norrsken har något med solvinden att göra.",
+    "correct": true,
+    "explanationSv": "Nära nordpolen och sydpolen kommer en del partiklar in, och då kan man se norrsken.",
+    "explanationJa": "{太陽風|たいようふう}の{粒子|りゅうし}が{入|はい}ってくると、オーロラが{見|み}えます。"
+   }
+  ],
+  "factSources": [
+   "Kompassnålens nordpol pekar mot norr eftersom jordens magnetiska sydpol ligger nära den geografiska nordpolen.",
+   "Norrsken uppstår när laddade partiklar från solvinden kommer in i atmosfären nära polerna.",
+   "En magnetkamera (MR) använder en mycket stark elektromagnet."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om magneter i vardagen.",
+  "discussionPoints": [
+   "Var hemma hos dig finns det magneter?",
+   "Har du använt en kompass någon gång?",
+   "Har du sett norrsken? Var var du då?",
+   "Vad skulle du vilja lyfta med en stor elektromagnet?"
+  ]
+ }
+}

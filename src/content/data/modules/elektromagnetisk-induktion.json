@@ -1,0 +1,176 @@
+{
+ "id": "m.elektromagnetisk-induktion",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Elektromagnetisk induktion",
+ "titleJa": "{電磁誘導|でんじゆうどう}",
+ "descriptionSv": "Elektromagnetisk induktion: rörelseenergi, omvandla, energiomvandling, spole, induktion, dynamo, generator, turbin, kraftverk, vattenkraft, vindkraftverk, transformator, elmotor, induktionshäll, trådlös laddning och vevradio.",
+ "descriptionJa": "{電磁誘導|でんじゆうどう}：{運動|うんどう}エネルギー、{変換|へんかん}する、エネルギー{変換|へんかん}、コイル、{電磁誘導|でんじゆうどう}、ダイナモ、{発電機|はつでんき}、タービン、{発電所|はつでんしょ}、{水力|すいりょく}、{風力発電機|ふうりょくはつでんき}、{変圧器|へんあつき}、{電動|でんどう}モーター、IHクッキングヒーター、ワイヤレス{充電|じゅうでん}、{手回|てまわ}し{充電|じゅうでん}ラジオ。",
+ "categoryId": "R06-A03-T04",
+ "tags": [
+  "fysik",
+  "elektricitet",
+  "magnetism"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.magnetfalt"
+ ],
+ "related": [],
+ "recommendedOrder": 3346,
+ "words": [
+  {
+   "senseId": "s.rörelseenergi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.energiomvandling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spole.1",
+   "active": true
+  },
+  {
+   "senseId": "s.induktion.2",
+   "active": true
+  },
+  {
+   "senseId": "s.dynamo.1",
+   "active": true
+  },
+  {
+   "senseId": "s.generator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turbin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindkraftverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transformator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.induktionshäll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trådlös-laddning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vevradio.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Från älven till köket",
+  "paragraphs": [
+   "Linnea bor i Sundsvall och studerar fysik. I sommar har hon jobbat i ett kraftverk vid en älv. Där visar hon besökarna hur vattenkraft fungerar.",
+   "Vattnet rinner ner genom stora rör och får turbinen att snurra. Turbinen sitter ihop med en generator. Generatorn omvandlar rörelseenergi till el. – Det är en energiomvandling, förklarar Linnea.",
+   "Inne i generatorn snurrar stora magneter förbi spolar av koppar. När magnetfältet ändras börjar det gå en ström i spolarna. Det kallas induktion. En dynamo på en cykel fungerar på samma sätt, bara mycket mindre. Ett vindkraftverk har också en generator.",
+   "Elen från kraftverket har mycket hög spänning. Innan den kommer in i husen sänker en transformator spänningen. – Utan induktion skulle vi inte ha någon el i uttagen, säger Linnea.",
+   "Hemma lagar hon mat på en induktionshäll, och mobilen laddas med trådlös laddning. Båda fungerar med induktion. I garderoben har hon en vevradio, som hon kan ladda själv om det blir strömavbrott. Och i hennes cykel sitter en liten elmotor, som gör tvärtom mot en generator."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var har Linnea jobbat i sommar?",
+    "options": [
+     "I en affär",
+     "På ett sjukhus",
+     "I ett kraftverk",
+     "I en skola"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I sommar har hon jobbat i ett kraftverk vid en älv.",
+    "explanationJa": "{発電所|はつでんしょ}で{働|はたら}きました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad får turbinen att snurra?",
+    "options": [
+     "Vinden",
+     "Solen",
+     "Vattnet",
+     "En elmotor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Vattnet rinner ner genom stora rör och får turbinen att snurra.",
+    "explanationJa": "{水|みず}がタービンを{回|まわ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad kallas det när det börjar gå en ström i spolarna?",
+    "options": [
+     "Resistans",
+     "Statisk elektricitet",
+     "Induktion",
+     "Likström"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När magnetfältet ändras börjar det gå en ström i spolarna. Det kallas induktion.",
+    "explanationJa": "{電磁誘導|でんじゆうどう}と{言|い}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Transformatorn gör spänningen högre innan elen kommer in i husen.",
+    "correct": false,
+    "explanationSv": "Innan den kommer in i husen sänker en transformator spänningen.",
+    "explanationJa": "{変圧器|へんあつき}は{電圧|でんあつ}を{下|さ}げます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En elmotor gör rörelse av el.",
+    "correct": true,
+    "explanationSv": "… en liten elmotor, som gör tvärtom mot en generator.",
+    "explanationJa": "{発電機|はつでんき}の{逆|ぎゃく}なので、{電気|でんき}から{動|うご}きを{作|つく}ります。"
+   }
+  ],
+  "factSources": [
+   "I ett vattenkraftverk driver vattnet en turbin som sitter ihop med en generator.",
+   "Transformatorer fungerar bara med växelström och kan höja eller sänka spänningen.",
+   "Induktionshällar och trådlös laddning bygger på elektromagnetisk induktion; induktionen upptäcktes av Michael Faraday 1831."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur elen görs och om induktion hemma.",
+  "discussionPoints": [
+   "Vet du var elen i ditt hem kommer ifrån?",
+   "Har du lagat mat på en induktionshäll? Vad tycker du?",
+   "Vilka saker hemma har en elmotor?",
+   "Har du en vevradio eller något annat som du kan använda vid strömavbrott?"
+  ]
+ }
+}

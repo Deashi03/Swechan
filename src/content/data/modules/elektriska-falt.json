@@ -1,0 +1,175 @@
+{
+ "id": "m.elektriska-falt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Elektriska fält",
+ "titleJa": "{電場|でんば}",
+ "descriptionSv": "Elektriska fält: kraft, riktning, avstånd, partikel, elektriskt fält, fältlinje, kondensator, pekskärm, hårstrå, van de Graaff-generator, åskväder, åskmoln, blixt, blixtnedslag, åskledare och Faradays bur.",
+ "descriptionJa": "{電場|でんば}：{力|ちから}、{方向|ほうこう}、{距離|きょり}、{粒子|りゅうし}、{電場|でんば}、{力線|りきせん}、コンデンサー、タッチパネル、{髪|かみ}の{毛|け}、ヴァンデグラフ{起電機|きでんき}、{雷雨|らいう}、{雷雲|らいうん}、{稲妻|いなずま}、{落雷|らくらい}、{避雷針|ひらいしん}、ファラデーケージ。",
+ "categoryId": "R06-A03-T04",
+ "tags": [
+  "fysik",
+  "elektricitet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.resistans-och-ledare"
+ ],
+ "related": [],
+ "recommendedOrder": 3344,
+ "words": [
+  {
+   "senseId": "s.kraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.partikel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektriskt-fält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fältlinje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kondensator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pekskärm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårstrå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.van-de-graaff-generator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.åskväder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åskmoln.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blixt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blixtnedslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åskledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Faradays-bur.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Åskväder vid sjön",
+  "paragraphs": [
+   "Familjen Nilsson är på landet i juli. Det är varmt, och på eftermiddagen växer ett stort åskmoln över sjön. – Det blir åskväder, säger pappa Anders.",
+   "I molnet rör sig små partiklar av is upp och ner. De gnuggas mot varandra, och molnet får positiv laddning upptill och negativ laddning nedtill. Mellan molnet och marken uppstår ett starkt elektriskt fält.",
+   "Till sist blir fältet så starkt att det kommer en blixt. Ett blixtnedslag kan träffa höga träd och hus, och därför har huset en åskledare på taket. Familjen sätter sig i bilen. – En bil är som en Faradays bur, säger Anders. Där är vi säkra.",
+   "Dottern Ella har läst om elektriska fält i skolan. Hon berättar att man kan rita fältet med fältlinjer. Pilarna visar fältets riktning, och kraften blir svagare när avståndet blir större.",
+   "På ett museum förra veckan rörde hon vid en van de Graaff-generator. Varje hårstrå fick samma laddning, och håret stod rakt ut. – Pekskärmen på mobilen fungerar också med ett elektriskt fält, säger hon. Under glaset finns en sorts kondensator som känner av fingret."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var växer åskmolnet?",
+    "options": [
+     "Över staden",
+     "Över skogen",
+     "Över bilen",
+     "Över sjön"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… på eftermiddagen växer ett stort åskmoln över sjön.",
+    "explanationJa": "{湖|みずうみ}の{上|うえ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför sätter sig familjen i bilen?",
+    "options": [
+     "Det börjar regna",
+     "Bilen fungerar som en Faradays bur",
+     "De ska åka hem",
+     "Bilen har en åskledare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– En bil är som en Faradays bur, säger Anders. Där är vi säkra.",
+    "explanationJa": "{車|くるま}はファラデーケージのようなものなので、{安全|あんぜん}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad visar pilarna på fältlinjerna?",
+    "options": [
+     "Hur varmt det är",
+     "Var molnet är",
+     "Hur många partiklar det finns",
+     "Fältets riktning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Pilarna visar fältets riktning …",
+    "explanationJa": "{場|ば}の{向|む}きを{示|しめ}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kraften blir starkare när avståndet blir större.",
+    "correct": false,
+    "explanationSv": "… kraften blir svagare när avståndet blir större.",
+    "explanationJa": "{距離|きょり}が{大|おお}きくなると、{力|ちから}は{弱|よわ}くなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Pekskärmen på en mobil fungerar med ett elektriskt fält.",
+    "correct": true,
+    "explanationSv": "Pekskärmen på mobilen fungerar också med ett elektriskt fält …",
+    "explanationJa": "タッチパネルも{電場|でんば}を{使|つか}っています。"
+   }
+  ],
+  "factSources": [
+   "I ett åskmoln får toppen oftast positiv laddning och botten negativ laddning när partiklar av is gnuggas mot varandra.",
+   "En bil av metall skyddar mot blixten eftersom laddningen går på utsidan (Faradays bur).",
+   "Vanliga pekskärmar i mobiler är kapacitiva: de känner av hur fingret ändrar ett elektriskt fält."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om åska och om elektriska fält i vardagen.",
+  "discussionPoints": [
+   "Vad gör du när det åskar?",
+   "Har du sett ett blixtnedslag på nära håll?",
+   "Varför tror du att man är säker i en bil när det åskar?",
+   "Hur tror du att en pekskärm vet var fingret är?"
+  ]
+ }
+}
