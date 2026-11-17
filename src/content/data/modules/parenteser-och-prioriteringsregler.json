@@ -1,0 +1,173 @@
+{
+ "id": "m.parenteser-och-prioriteringsregler",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Parenteser och prioriteringsregler",
+ "titleJa": "かっこと{計算|けいさん}の{順序|じゅんじょ}",
+ "descriptionSv": "Parenteser och prioriteringsregler: räkna fel, räknesätt, parentes, ordningsföljd, prioriteringsregel, gå före, prioritera, från vänster till höger, potens, exponent, i kvadrat, uträkning, beräkning, huvudräkning, miniräknare och steg för steg.",
+ "descriptionJa": "かっこと{計算|けいさん}の{順序|じゅんじょ}：{計算|けいさん}を{間違|まちが}える、{四則|しそく}、かっこ、{順序|じゅんじょ}、{計算|けいさん}の{決|き}まり、{優先|ゆうせん}する、{優先順位|ゆうせんじゅんい}をつける、{左|ひだり}から{右|みぎ}へ、{累乗|るいじょう}、{指数|しすう}、{二乗|にじょう}、{途中式|とちゅうしき}、{計算|けいさん}、{暗算|あんざん}、{電卓|でんたく}、{一歩|いっぽ}ずつ。",
+ "categoryId": "R06-A01-T03",
+ "tags": [
+  "matematik",
+  "algebra"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.termer-och-koefficienter"
+ ],
+ "related": [],
+ "recommendedOrder": 3123,
+ "words": [
+  {
+   "senseId": "s.räkna-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räknesätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parentes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordningsföljd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.potens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exponent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prioriteringsregel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-före.2",
+   "active": true
+  },
+  {
+   "senseId": "s.prioritera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.från-vänster-till-höger.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-kvadrat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uträkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beräkning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.huvudräkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miniräknare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.steg-för-steg.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Två olika svar",
+  "paragraphs": [
+   "Yuki läser matematik på kvällarna. En kväll räknar hon och hennes granne Erik samma uppgift: 4 + 2 · 3. Yuki räknar från vänster till höger och får 18. Erik får 10. Vem har räknat fel?",
+   "Erik har rätt. När ett uttryck har flera räknesätt, måste man följa prioriteringsreglerna. Gånger och delat med går före plus och minus. Därför räknar man först 2 · 3 = 6 och sedan 4 + 6 = 10.",
+   "Ordningsföljden är: först det som står inom parentes, sedan potenser, sedan gånger och delat med, och sist plus och minus. Om man vill att 4 + 2 ska räknas först, måste man skriva en parentes: (4 + 2) · 3 = 18.",
+   "Nästa uppgift har en potens: 2 + 3². Exponenten 2 betyder att 3 ska räknas i kvadrat, alltså 3 · 3 = 9. Svaret blir 11. Yuki gör en noggrann uträkning steg för steg och skriver varje beräkning på en ny rad.",
+   "Erik är bra på huvudräkning, men Yuki tittar också på sin miniräknare. Den följer prioriteringsreglerna. – Man måste prioritera rätt, både i matematik och i livet, skrattar Erik."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket svar fick Yuki på 4 + 2 · 3?",
+    "options": [
+     "10",
+     "24",
+     "18",
+     "14"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Yuki räknar från vänster till höger och får 18.",
+    "explanationJa": "{左|ひだり}から{右|みぎ}へ{計算|けいさん}して18になりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför räknar man 2 · 3 först i 4 + 2 · 3?",
+    "options": [
+     "Gånger går före plus",
+     "Man räknar alltid från vänster till höger",
+     "Det står inom parentes",
+     "Talet 3 är störst"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Gånger och delat med går före plus och minus.",
+    "explanationJa": "かけ{算|ざん}はたし{算|ざん}より{先|さき}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad blir 3 i kvadrat?",
+    "options": [
+     "6",
+     "5",
+     "9",
+     "32"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Exponenten 2 betyder att 3 ska räknas i kvadrat, alltså 3 · 3 = 9.",
+    "explanationJa": "3 × 3 = 9です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I uttrycket (4 + 2) · 3 räknar man 4 + 2 först.",
+    "correct": true,
+    "explanationSv": "Om man vill att 4 + 2 ska räknas först, måste man skriva en parentes: (4 + 2) · 3 = 18.",
+    "explanationJa": "かっこの{中|なか}を{先|さき}に{計算|けいさん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yukis miniräknare räknar alltid från vänster till höger.",
+    "correct": false,
+    "explanationSv": "Den följer prioriteringsreglerna.",
+    "explanationJa": "{電卓|でんたく}も{計算|けいさん}の{順序|じゅんじょ}の{決|き}まりに{従|したが}います。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen. Prioriteringsreglerna följer svensk skolmatematik: parentes, potens, multiplikation och division, addition och subtraktion."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att räkna i olika ordning och om huvudräkning och miniräknare.",
+  "discussionPoints": [
+   "Är du bra på huvudräkning?",
+   "När använder du miniräknare i vardagen?",
+   "Har du någon gång räknat fel för att du räknade i fel ordning?",
+   "Vad är viktigast att prioritera i ditt liv just nu?"
+  ]
+ }
+}
