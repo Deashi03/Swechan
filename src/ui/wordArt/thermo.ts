@@ -118,9 +118,13 @@ export const THERMO_MOTIFS: Record<string, Svg> = {
   'term.aggregationstillstånd': all(particlesIn(4, 40, 34, 46, range(9).map((i) => [7 + (i % 3) * 10, 22 + Math.floor(i / 3) * 9] as [number, number]), ICE), iceCube(21, 30, 0.8),
     particlesIn(43, 40, 34, 46, [[7, 38], [15, 36], [23, 39], [30, 36], [10, 30], [20, 29], [27, 30], [14, 22]], WATER), ellipse(60, 58, 13, 2, 'none', COLD, 1), particlesIn(82, 40, 34, 46, [[6, 8], [24, 12], [14, 24], [28, 32], [8, 38], [20, 6]], C.white, 3), steam(99, 36),
     line('M4 96 L4 102 L116 102 L116 96', HL, 2.6), num(21, 116, '1', 10, HL), num(60, 116, '2', 10, HL), num(99, 116, '3', 10, HL)),
-  /** smältpunkt: thermometer with an orange mark at the level where the ice cube beside it is turning into a puddle. */
-  'term.smältpunkt': all(ground(), therm(30, 100, 84, 0.45, HOT, 9), line('M20 63 L48 63', HL, 2.8), num(56, 60, '0', 12, HL), line('M46 63 L72 63', HL, 1.4, '3 3'),
-    ellipse(88, 108, 22, 4, WATER, C.ink, 1.2), path('M76 106 C74 92 80 82 88 82 C96 82 102 92 100 106 Z', ICE, C.ink, 1.3), line('M80 96 L84 90', C.white, 1.6), path('M98 98 C101 100 101 103 98 104', 'none', COLD, 1.4), circle(70, 104, 2.4, WATER, C.ink, 0.8), ring(88, 96, 20)),
+  /** smältpunkt (omgång 2): a big thermometer dominates; two orange points on its scale (0 and 30) are linked to the small things that melt exactly there – an ice cube and a piece of chocolate, each with a drop. */
+  'term.smältpunkt': all(ground(), rect(30, 6, 22, 98, C.white, 8, C.ink, 1.8), rect(37, 30, 8, 72, HOT, 3, null), circle(41, 100, 10, HOT, C.ink, 1.6),
+    line(range(10).map((i) => `M52 ${16 + i * 8} l${i % 2 ? 4 : 7} 0`).join(' '), C.ink, 1.1),
+    circle(41, 80, 5, HL, C.ink, 1.2), circle(41, 48, 5, HL, C.ink, 1.2), num(14, 84, '0', 12, HL), num(14, 52, '30', 12, HL),
+    line('M47 80 L74 80 M47 48 L74 48', HL, 1.6, '3 2'),
+    iceCube(86, 78, 0.8), path('M86 88 C89 92 89 95 86 96 C83 95 83 92 86 88 Z', WATER, C.ink, 0.8),
+    rect(76, 40, 20, 12, '#6b3e26', 2, C.ink, 1.2), line('M83 40 L83 52 M89 40 L89 52 M76 46 L96 46', '#4e2b19', 0.9), path('M92 52 C95 56 95 59 92 60 C89 59 89 56 92 52 Z', '#6b3e26', C.ink, 0.8)),
   /** frysa (bli till is): a glass of water, an arrow, the same glass frozen to ice; thermometer below zero. */
   'term.frysa.2': all(ground(), greyed(glass(26, 110, 26, 40, WATER)), arrow(44, 88, 62, 88, HL, 3), glass(84, 110, 26, 40, ICE), path('M73 81 L95 81 L94 108 L74 108 Z', '#e8f6fd', null), line('M76 86 L82 92 M86 84 L90 96 M78 100 L84 98', '#9ccbe8', 1.2), glass(84, 110, 26, 40, 'none', 0),
     ring(84, 92, 22), therm(108, 62, 34, 0.1, COLD, 5), num(106, 20, '−5', 10, COLD), snow(84, 20, 6), snow(66, 30, 4)),
