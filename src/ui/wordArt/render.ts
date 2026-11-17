@@ -178,6 +178,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'fore.': () => import('./pollution').then((m) => m.POLLUTION_MOTIFS),
   'hres.': () => import('./sustainability').then((m) => m.SUSTAINABILITY_MOTIFS),
   'mpol.': () => import('./environmentPolicy').then((m) => m.ENV_POLICY_MOTIFS),
+  'geu.': () => import('./europeGeo').then((m) => m.EUROPE_GEO_MOTIFS),
+  'kort.': () => import('./mapsOrientation').then((m) => m.MAPS_ORIENTATION_MOTIFS),
+  'gas.': () => import('./asiaGeo').then((m) => m.ASIA_GEO_MOTIFS),
+  'gaf.': () => import('./africaGeo').then((m) => m.AFRICA_GEO_MOTIFS),
+  'gam.': () => import('./americasGeo').then((m) => m.AMERICAS_GEO_MOTIFS),
+  'gop.': () => import('./oceaniaPolar').then((m) => m.OCEANIA_POLAR_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};

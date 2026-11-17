@@ -1,0 +1,177 @@
+{
+ "id": "m.geografiska-koordinatsystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-16",
+ "titleSv": "Geografiska koordinatsystem",
+ "titleJa": "{地理座標系|ちりざひょうけい}",
+ "descriptionSv": "Geografiska koordinatsystem: koordinat, koordinatsystem, breddgrad, längdgrad, position, ange, satellit, GPS, navigera, sjökort, sjömil, lantmätare, kartlägga, noggrannhet, felmarginal och du är här.",
+ "descriptionJa": "{地理座標系|ちりざひょうけい}：{座標|ざひょう}、{座標系|ざひょうけい}、{緯度|いど}、{経度|けいど}、{位置|いち}、{示|しめ}す、{人工衛星|じんこうえいせい}、GPS、{航行|こうこう}する、{海図|かいず}、{海里|かいり}、{測量士|そくりょうし}、{地図|ちず}を{作|つく}る、{正確|せいかく}さ、{誤差|ごさ}、{現在地|げんざいち}。",
+ "categoryId": "R05-A06-T01",
+ "tags": [
+  "natur",
+  "geografi",
+  "kartor"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.latitud-och-longitud"
+ ],
+ "related": [],
+ "recommendedOrder": 3005,
+ "words": [
+  {
+   "senseId": "s.koordinat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koordinatsystem.1",
+   "active": false
+  },
+  {
+   "senseId": "s.breddgrad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.längdgrad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.position.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ange.1",
+   "active": true
+  },
+  {
+   "senseId": "s.satellit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.GPS.1",
+   "active": true
+  },
+  {
+   "senseId": "s.navigera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjökort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjömil.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lantmätare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kartlägga.2",
+   "active": false
+  },
+  {
+   "senseId": "s.noggrannhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felmarginal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.du-är-här.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var exakt är du?",
+  "paragraphs": [
+   "Johan är lantmätare och besöker en klass i svenska för vuxna. Han har med sig en GPS och ett gammalt sjökort. – Förr tog det många år att kartlägga ett land, säger han. I dag hjälper satelliter oss.",
+   "Han förklarar att man behöver ett koordinatsystem för att ange en exakt position. – Det vanligaste är breddgrader och längdgrader. Breddgraden visar hur långt norr eller söder om ekvatorn man är, och längdgraden hur långt öster eller väster.",
+   "Johan sätter på sin GPS. På skärmen står det ”du är här” och två tal: 59,86 och 17,64. – Det är våra koordinater just nu, säger han. Mobiler har också GPS. Men noggrannheten är inte alltid så bra. I en stad med höga hus kan felmarginalen vara flera meter.",
+   "Sedan visar han sjökortet. – Till sjöss mäter man avstånd i sjömil. En sjömil är 1 852 meter. Den som navigerar en båt måste kunna hitta latitud och longitud på kartan.",
+   "Kenji räcker upp handen. – Varför behöver vanliga människor kunna det? Johan svarar: – Om du ringer efter hjälp i skogen eller på havet, kan du ange dina koordinater. Då vet de som ska hjälpa dig exakt var du är."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har Johan med sig till klassen?",
+    "options": [
+     "En jordglob och en kompass",
+     "En dator och en kartapp",
+     "En GPS och ett gammalt sjökort",
+     "En linjal och en terrängkarta"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han har med sig en GPS och ett gammalt sjökort.",
+    "explanationJa": "GPSと{古|ふる}い{海図|かいず}を{持|も}ってきました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad visar längdgraden?",
+    "options": [
+     "Hur långt öster eller väster man är",
+     "Hur långt norr eller söder man är",
+     "Hur högt över havet man är",
+     "Hur snabbt man rör sig"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… och längdgraden hur långt öster eller väster.",
+    "explanationJa": "{経度|けいど}は{東西|とうざい}の{位置|いち}を{示|しめ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kan felmarginalen bli stor i en stad?",
+    "options": [
+     "Där finns för många människor",
+     "Där finns höga hus",
+     "Satelliterna når inte städer",
+     "Mobilerna är för gamla"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I en stad med höga hus kan felmarginalen vara flera meter.",
+    "explanationJa": "{高|たか}い{建物|たてもの}があると{誤差|ごさ}が{大|おお}きくなることがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En sjömil är lika lång som en svensk mil.",
+    "correct": false,
+    "explanationSv": "En sjömil är 1 852 meter.",
+    "explanationJa": "1{海里|かいり}は1852メートルで、10キロのスウェーデンのミールより{短|みじか}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det kan vara bra att kunna ange sina koordinater när man behöver hjälp.",
+    "correct": true,
+    "explanationSv": "Om du ringer efter hjälp i skogen eller på havet, kan du ange dina koordinater.",
+    "explanationJa": "{救助|きゅうじょ}を{呼|よ}ぶとき、{座標|ざひょう}を{伝|つた}えると{役|やく}に{立|た}ちます。"
+   }
+  ],
+  "factSources": [
+   "En sjömil (nautisk mil) är definierad som 1 852 meter och motsvarar ungefär en bågminut längs en meridian (allmän kunskap).",
+   "Koordinaterna 59,86° N, 17,64° O ligger i Uppsala; Uppsala ligger nära 60° N (allmän geografisk kunskap).",
+   "Lantmäteriet är den svenska myndighet som ansvarar för kartor och fastighetsindelning; svenska kartor använder bl.a. koordinatsystemet SWEREF 99 med koordinater i meter (Lantmäteriet, uppgift som kan ändras).",
+   "GPS i mobiler har ofta en noggrannhet på några meter, sämre mellan höga hus (allmän kunskap; varierar)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om GPS, koordinater och hur man hittar en exakt plats.",
+  "discussionPoints": [
+   "Hur ofta använder du GPS i mobilen?",
+   "Har du någon gång gett någon dina koordinater?",
+   "Hur hittade människor rätt innan det fanns GPS?",
+   "Vilka problem kan det finnas om alla bara litar på GPS?"
+  ]
+ }
+}

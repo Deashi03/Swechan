@@ -96,6 +96,32 @@ Alla 252 moduler i *Vardag & hem* (R01) är genomlästa: lästexter, frågor, sv
 
 ### Inte gjort
 - Samma som för *Människan & hälsa*: tio testfiler, typkontroll, bygge och e2e är inte körda.
+## 0.47.0 – 2026-11-17
+
+42 nya moduler som gör överämnet *Världsgeografi* (R05-A06) komplett. Därmed är hela *Natur & geografi* (R05) publicerat. Varje nytt modulord har en egen bild, utom de 8 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 719 målord)
+- **Kartor & orientering** (3001–3007): väderstreck, karttecken och symboler, skala och avstånd, latitud och longitud, geografiska koordinatsystem, höjdkurvor och att läsa en världskarta.
+- **Europa** (3011–3017): Europas regioner, bergskedjor, floder, länder och huvudstäder, Nordens geografi, Medelhavsområdet samt öar och halvöar.
+- **Asien** (3021–3027): Östasiens geografi, Sydostasiens övärld, Sydasiens berg och floder, Centralasiens stäpper, Mellanösterns landskap, Asiens länder och huvudstäder samt stora städer.
+- **Afrika** (3031–3037): Nordafrikas öknar, Sahel och savann, Kongobäckenet, Östafrikas högland, Södra Afrikas landskap, Afrikas länder och huvudstäder samt större floder och sjöar.
+- **Amerika** (3041–3047): Nordamerikas naturregioner, Centralamerikas geografi, Andernas bergsområden, Amazonas regnskog, Karibiska övärlden, Amerikas länder och huvudstäder samt storstadsregioner.
+- **Oceanien & polarområden** (3051–3057): australiska landskap, Nya Zeelands geografi, Stilla havets övärld, Mikronesien och Polynesien, Arktis, Antarktis och världshavens geografi.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 246 nya ordposter, bland dem geografiska namn som *Klippiga bergen*, *Anderna*, *Stilla havet* och *Arktis* som egna poster.
+- Nya betydelser på befintliga poster: *skalstock* (på karta), *grad* (vinkel), *kartlägga* (göra karta), *bäcken* (lågt område) och *isbrytare* (fartyg).
+- 191 geografiska namn (länder, huvudstäder, floder, berg) är tillagda i grundordförrådet, utan omsortering.
+- Parallella grupper ville skapa samma poster (*huvudö*, *östat*, *inlandsstat*, *officiellt språk*, *stenöken*, *dadelpalm*, *wadi*, *kustslätt*, *lian*, *saltsjö*, *termitstack*, *kratersjö*). Posten finns bara i den grupp som lade in den först, och de andra refererar dess `senseId`.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Matematik & naturvetenskap* (R06): Matematikens grunder → Tal & räkning → Heltal och naturliga tal.
+
+### Bilder (243 nya ordbilder)
+- 29 symbolbilder, 164 bilder som får användas i bildövningar och resten scener. Asien, Amerika och Oceanien har bara scener och förenklade kartor.
+- 37 symbol- och adjektivbilder blindtestades. 29 klarade testet efter högst två omgångar.
+- **8 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *breddgrad/latitud* och *längdgrad/longitud*.
+- Nya bildfiler i `src/ui/wordArt/`: `mapsOrientation.ts`, `europeGeo.ts`, `asiaGeo.ts`, `africaGeo.ts`, `americasGeo.ts` och `oceaniaPolar.ts`.
+
+Service workern är `swechan-v51`.
+
 
 ## 0.46.0 – 2026-11-16
 
