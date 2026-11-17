@@ -211,14 +211,14 @@ try {
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), all of Historia & humaniora
-  // (0.36–0.41), all of Natur & geografi (0.42–0.47), Matematikens grunder (0.48), Avancerad matematik (0.49) and Fysik
-  // (0.50) are published, so the planned entry is Matematik & naturvetenskap → Kemi → Kemiska reaktioner →
-  // Reaktanter och produkter (T01 and T02 also hold original modules).
+  // (0.36–0.41), all of Natur & geografi (0.42–0.47), Matematikens grunder (0.48), Avancerad matematik (0.49), Fysik
+  // (0.50) and Kemi (0.51) are published, so the planned entry is Matematik & naturvetenskap → Biologi → Cellbiologi →
+  // Cellens delar.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Matematik & naturvetenskap/ }).first().click();
-  await page.getByRole('link', { name: /Kemi/ }).first().click();
-  await page.getByRole('link', { name: /Kemiska reaktioner/ }).first().click();
-  await page.getByRole('link', { name: /Reaktanter och produkter/ }).first().click();
+  await page.getByRole('link', { name: /Biologi/ }).first().click();
+  await page.getByRole('link', { name: /Cellbiologi/ }).first().click();
+  await page.getByRole('link', { name: /Cellens delar/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);

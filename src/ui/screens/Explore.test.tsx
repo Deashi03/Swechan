@@ -28,18 +28,18 @@ describe('Kurser (catalog navigation)', () => {
   });
 
   it('a topic group lists its seven planned modules, clearly marked and not startable', async () => {
-    wrap(<Explore categoryId="R06-A04-T03" />);
+    wrap(<Explore categoryId="R06-A05-T01" />);
     const items = await choices();
     expect(items.length).toBe(7);
     expect(screen.getAllByText('Planerad').length).toBeGreaterThanOrEqual(7);
-    expect(screen.getByText('Reaktanter och produkter')).toBeInTheDocument();
+    expect(screen.getByText('Cellens delar')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
   });
 
   it('a planned module has an information view without a start button', async () => {
-    // Fysik is published from 0.50; Kemi is still planned.
-    wrap(<CatalogModuleView id="SWC-VET-04-03-01" />);
-    expect(await screen.findByText('Reaktanter och produkter')).toBeInTheDocument();
+    // Kemi is published from 0.51; Biologi is still planned.
+    wrap(<CatalogModuleView id="SWC-VET-05-01-01" />);
+    expect(await screen.findByText('Cellens delar')).toBeInTheDocument();
     expect(screen.getByText(/inte färdig än/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
     expect(screen.queryByRole('link', { name: /Starta/ })).toBeNull();
