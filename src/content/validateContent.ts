@@ -209,6 +209,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.gränsa-till.1', 's.dvärgstat.1', 's.areal.1', 's.regeringssäte.1', 's.nordbo.1',
   // 0.47 (Kartor & orientering), after two blind-test rounds
   's.sydlig.1', 's.i-verkligheten.1', 's.position.1',
+  // 0.48 Tal & räkning: abstrakt substantiv, kan inte skiljas från rimlig
+  's.rimlighet.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
