@@ -1,0 +1,173 @@
+{
+ "id": "m.bestamd-integral",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Bestämd integral",
+ "titleJa": "{定積分|ていせきぶん}",
+ "descriptionSv": "Bestämd integral: intervall, skillnad, minustecken, beräkna, närmevärde, hastighet, medelhastighet, sträcka, sammanlagt, förbrukning, dygn, integral, undre gräns, övre gräns, tillryggalagd och grafräknare.",
+ "descriptionJa": "{定積分|ていせきぶん}：{区間|くかん}、{差|さ}、マイナス{記号|きごう}、{計算|けいさん}する、{近似値|きんじち}、{速度|そくど}、{平均速度|へいきんそくど}、{距離|きょり}、{合計|ごうけい}で、{使用量|しようりょう}、{一昼夜|いっちゅうや}、{積分|せきぶん}、{下端|かたん}、{上端|じょうたん}、{移動|いどう}した、グラフ{電卓|でんたく}。",
+ "categoryId": "R06-A02-T02",
+ "tags": [
+  "matematik",
+  "integraler"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.primitiva-funktioner"
+ ],
+ "related": [],
+ "recommendedOrder": 3222,
+ "words": [
+  {
+   "senseId": "s.intervall.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skillnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minustecken.1",
+   "active": false
+  },
+  {
+   "senseId": "s.beräkna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närmevärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelhastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanlagt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbrukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dygn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.integral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undre-gräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övre-gräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillryggalagd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grafräknare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur långt cyklade Maja?",
+  "paragraphs": [
+   "Maja cyklar till skolan varje morgon. Hennes mobil visar hastigheten hela tiden, men inte hur långt hon har cyklat. I matematiken har klassen just börjat med integraler, och läraren Johan vill använda Majas cykelturer som exempel.",
+   "– Om hastigheten är 4 meter per sekund i 100 sekunder, hur lång är sträckan då? frågar Johan. Det är lätt: 4 gånger 100 blir 400 meter. Men om hastigheten ändras hela tiden behöver man en integral. Den tillryggalagda sträckan är integralen av hastigheten.",
+   "Johan skriver en integral på tavlan. Den undre gränsen är 0 och den övre gränsen är 10. Intervallet är alltså de första tio sekunderna, när Maja kör i gång. Hastigheten är v(t) = 0,6t, och en primitiv funktion är 0,3t². Man sätter in gränserna och beräknar skillnaden: 0,3 · 100 − 0 = 30 meter.",
+   "– Glöm inte minustecknet mellan F för den övre gränsen och F för den undre gränsen, säger Johan. Sedan får eleverna kontrollera svaret med en grafräknare. Den ger ett närmevärde: 30,0. Det stämmer. Maja räknar också ut sin medelhastighet för hela turen: 1 800 meter delat med 360 sekunder blir 5 meter per sekund.",
+   "På kvällen tittar Majas pappa på hur mycket el huset har använt. Maja tänker att förbrukningen av el fungerar på samma sätt som cykelturen. Om man vet hur mycket el huset använder varje timme, kan man räkna ut hur mycket el det har använt sammanlagt under ett dygn. Det är också en integral."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar Majas mobil?",
+    "options": [
+     "Sträckan",
+     "Hastigheten",
+     "Tiden i skolan",
+     "Förbrukningen av el"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hennes mobil visar hastigheten hela tiden, men inte hur långt hon har cyklat.",
+    "explanationJa": "{携帯電話|けいたいでんわ}は{速度|そくど}を{表示|ひょうじ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken är den övre gränsen i Johans integral?",
+    "options": [
+     "0",
+     "30",
+     "100",
+     "10"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den undre gränsen är 0 och den övre gränsen är 10.",
+    "explanationJa": "{上端|じょうたん}は 10 です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är den tillryggalagda sträckan enligt Johan?",
+    "options": [
+     "Hastigheten gånger två",
+     "Integralen av hastigheten",
+     "Skillnaden mellan två hastigheter",
+     "Ett närmevärde från mobilen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den tillryggalagda sträckan är integralen av hastigheten.",
+    "explanationJa": "{移動距離|いどうきょり}は{速度|そくど}の{積分|せきぶん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Grafräknaren ger ett annat svar än Johans uträkning.",
+    "correct": false,
+    "explanationSv": "Den ger ett närmevärde: 30,0. Det stämmer.",
+    "explanationJa": "グラフ{電卓|でんたく}の{答|こた}えも 30 で、{計算|けいさん}と{合|あ}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan använda en integral också för att räkna ut förbrukningen av el.",
+    "correct": true,
+    "explanationSv": "… kan man räkna ut hur mycket el det har använt sammanlagt under ett dygn. Det är också en integral.",
+    "explanationJa": "1{日|にち}の{電気|でんき}の{使用量|しようりょう}も{積分|せきぶん}で{求|もと}められます。"
+   }
+  ],
+  "factSources": [
+   "Att sträckan är integralen av hastigheten och att en integral räknas som F(b) − F(a) är standardinnehåll i gymnasiets Matematik 3; siffrorna om cykelturen är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om integraler i vardagen: sträckor, el och vatten.",
+  "discussionPoints": [
+   "Har din mobil eller klocka en app som mäter hastighet eller sträcka?",
+   "Vad mer i vardagen kan man räkna ut med en integral?",
+   "Får man använda grafräknare på prov i ditt land?",
+   "Räknar du hellre för hand eller med en grafräknare? Varför?"
+  ]
+ }
+}

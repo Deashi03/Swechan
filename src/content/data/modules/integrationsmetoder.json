@@ -1,0 +1,173 @@
+{
+ "id": "m.integrationsmetoder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Integrationsmetoder",
+ "titleJa": "{積分|せきぶん}の{方法|ほうほう}",
+ "descriptionSv": "Integrationsmetoder: metod, faktor, produkt, parentes, skriva om, förenkla, knep, pröva sig fram, slarvfel, steg för steg, bråk, formelsamling, sinus, cosinus, substitution och partiell integration.",
+ "descriptionJa": "{積分|せきぶん}の{方法|ほうほう}：{方法|ほうほう}、{因数|いんすう}、{積|せき}、かっこ、{書|か}き{直|なお}す、（{式|しき}を）{簡単|かんたん}にする、こつ、{試行錯誤|しこうさくご}する、ケアレスミス、{一歩|いっぽ}ずつ、{分数|ぶんすう}、{公式集|こうしきしゅう}、サイン、コサイン、{置換積分|ちかんせきぶん}、{部分積分|ぶぶんせきぶん}。",
+ "categoryId": "R06-A02-T02",
+ "tags": [
+  "matematik",
+  "integraler"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.area-under-kurvan"
+ ],
+ "related": [],
+ "recommendedOrder": 3224,
+ "words": [
+  {
+   "senseId": "s.metod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.faktor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.produkt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.parentes.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skriva-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förenkla.2",
+   "active": true
+  },
+  {
+   "senseId": "s.knep.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pröva-sig-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slarvfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.steg-för-steg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bråk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.formelsamling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sinus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cosinus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.substitution.1",
+   "active": true
+  },
+  {
+   "senseId": "s.partiell-integration.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Flera vägar till svaret",
+  "paragraphs": [
+   "Aiko pluggar till ett prov i matematik på universitetet. Hon har en formelsamling, men den hjälper inte alltid. – Att integrera är svårare än att derivera, säger hennes kompis Erik. Det finns ingen regel som alltid fungerar. Man behöver flera olika metoder.",
+   "Den första uppgiften är att integrera cosinus x. Den kan Aiko direkt: svaret är sinus x + C. Den andra är svårare: 2x gånger (x² + 1) i kvadrat. Erik visar ett knep som heter substitution. Han kallar det som står i parentesen för u. Då blir uppgiften u i kvadrat, och den är lätt att integrera.",
+   "Den tredje uppgiften är x gånger sinus x. Det är en produkt av två faktorer, och då kan man använda partiell integration. Aiko prövar sig fram. Först väljer hon fel faktor, och uttrycket blir längre i stället för kortare. Sedan byter hon och lyckas.",
+   "– Gör det steg för steg, säger Erik. Och skriv om uttrycket innan du börjar. Ibland kan man förenkla ett bråk eller ta bort en parentes, och då blir integralen mycket lättare. Det är inte alltid den första metoden som är den bästa.",
+   "När Aiko kontrollerar sina svar hittar hon ett slarvfel: hon har glömt minustecknet framför cosinus. Integralen av sinus x är ju −cosinus x + C. – Bra att du såg det, säger Erik. Det är det vanligaste felet av alla."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har Aiko med sig när hon pluggar?",
+    "options": [
+     "En formelsamling",
+     "En grafräknare",
+     "Ett rutat papper",
+     "En karta"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon har en formelsamling, men den hjälper inte alltid.",
+    "explanationJa": "アイコは{公式集|こうしきしゅう}を{持|も}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vilken metod visar Erik på den andra uppgiften?",
+    "options": [
+     "Partiell integration",
+     "Substitution",
+     "Han letar i formelsamlingen",
+     "Han ritar en graf"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Erik visar ett knep som heter substitution.",
+    "explanationJa": "エリックは{置換積分|ちかんせきぶん}を{見|み}せました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kan man använda partiell integration på den tredje uppgiften?",
+    "options": [
+     "Funktionen är ett bråk",
+     "Funktionen är en produkt av två faktorer",
+     "Uppgiften har ett minustecken",
+     "Svaret står i formelsamlingen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det är en produkt av två faktorer, och då kan man använda partiell integration.",
+    "explanationJa": "{関数|かんすう}が2つの{因数|いんすう}の{積|せき}だからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Aiko väljer rätt faktor på första försöket.",
+    "correct": false,
+    "explanationSv": "Först väljer hon fel faktor …",
+    "explanationJa": "{最初|さいしょ}は{間違|まちが}った{因数|いんすう}を{選|えら}びました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Aikos slarvfel handlar om ett minustecken.",
+    "correct": true,
+    "explanationSv": "… hon har glömt minustecknet framför cosinus.",
+    "explanationJa": "cos の{前|まえ}のマイナス{記号|きごう}を{忘|わす}れていました。"
+   }
+  ],
+  "factSources": [
+   "Primitiva funktioner till sinus och cosinus (∫ cos x = sin x + C, ∫ sin x = −cos x + C), substitution och partiell integration ingår i gymnasiets Matematik 4 och i inledande högskolekurser; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att lösa svåra uppgifter och om att plugga till prov.",
+  "discussionPoints": [
+   "Har du något knep när en uppgift känns för svår?",
+   "Brukar du pröva dig fram, eller vill du ha en plan från början?",
+   "Vilka slarvfel gör du oftast, i matematik eller i svenska?",
+   "Får man ha en formelsamling på prov där du har studerat?"
+  ]
+ }
+}

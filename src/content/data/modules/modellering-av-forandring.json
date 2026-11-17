@@ -1,0 +1,177 @@
+{
+ "id": "m.modellering-av-forandring",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Modellering av förändring",
+ "titleJa": "{変化|へんか}のモデル{化|か}",
+ "descriptionSv": "Modellering av förändring: verklighet, antagande, förutsäga, prognos, simulera, linjär, förändringsfaktor, ränta på ränta, population, befolkningstillväxt, smittspridning, halt, halveringstid, plana ut, modellera, exponentiell och fördubblingstid.",
+ "descriptionJa": "{変化|へんか}のモデル{化|か}：{現実|げんじつ}、{仮定|かてい}、{予測|よそく}する、{見通|みとお}し、シミュレートする、{一次|いちじ}の、{変化|へんか}の{倍率|ばいりつ}、{複利|ふくり}、{個体群|こたいぐん}、{人口増加|じんこうぞうか}、{感染拡大|かんせんかくだい}、{含有量|がんゆうりょう}、{半減期|はんげんき}、{横|よこ}ばいになる、モデル{化|か}する、{指数関数的|しすうかんすうてき}な、{倍増時間|ばいぞうじかん}。",
+ "categoryId": "R06-A02-T02",
+ "tags": [
+  "matematik",
+  "differentialekvationer"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.begynnelsevillkor"
+ ],
+ "related": [],
+ "recommendedOrder": 3227,
+ "words": [
+  {
+   "senseId": "s.verklighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antagande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förutsäga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prognos.1",
+   "active": false
+  },
+  {
+   "senseId": "s.simulera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.linjär.2",
+   "active": true
+  },
+  {
+   "senseId": "s.förändringsfaktor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ränta-på-ränta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.population.1",
+   "active": true
+  },
+  {
+   "senseId": "s.befolkningstillväxt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smittspridning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.halveringstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plana-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.modellera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exponentiell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördubblingstid.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur många bor här om tjugo år?",
+  "paragraphs": [
+   "Naoko arbetar på en kommun i norra Sverige. Kommunen vill veta hur många som bor där om tjugo år, för att kunna planera skolor och bostäder. Hennes uppgift är att modellera befolkningstillväxten.",
+   "Först gör hon ett antagande: befolkningen växer med 2 procent per år. Det ger förändringsfaktorn 1,02. Tillväxten blir då exponentiell, precis som ränta på ränta på ett bankkonto. Fördubblingstiden blir ungefär 35 år.",
+   "Hennes kollega Daniel tycker att modellen är för enkel. – I verkligheten kan en population inte växa hur länge som helst, säger han. Det finns inte plats och jobb för alla. Förr eller senare kommer kurvan att plana ut.",
+   "Naoko jämför också med en linjär modell, där befolkningen ökar med lika många personer varje år. På tjugo år blir skillnaden mellan modellerna inte så stor. Men på hundra år blir den mycket stor. Därför är det svårt att förutsäga vad som händer långt fram i tiden.",
+   "Till slut simulerar hon tre olika framtider på datorn och skriver en prognos med alla tre. – Samma matematik används för smittspridning och för halten av ett läkemedel i blodet, säger Daniel. Där talar man ofta om halveringstid i stället för fördubblingstid."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad vill kommunen veta?",
+    "options": [
+     "Hur hög räntan blir",
+     "Hur snabbt kaffe svalnar",
+     "Hur många som bor där om tjugo år",
+     "Hur många skolor som finns i dag"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Kommunen vill veta hur många som bor där om tjugo år …",
+    "explanationJa": "20{年後|ねんご}に{何人|なんにん}が{住|す}んでいるかを{知|し}りたいのです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket antagande gör Naoko först?",
+    "options": [
+     "Att befolkningen minskar",
+     "Att alla flyttar därifrån",
+     "Att befolkningen ökar med 100 personer per år",
+     "Att befolkningen växer med 2 procent per år"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först gör hon ett antagande: befolkningen växer med 2 procent per år.",
+    "explanationJa": "{人口|じんこう}が{毎年|まいとし} 2 パーセント{増|ふ}えると{仮定|かてい}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför tycker Daniel att modellen är för enkel?",
+    "options": [
+     "En population kan inte växa hur länge som helst",
+     "Den har för många siffror",
+     "Den är linjär",
+     "Den handlar bara om ränta"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I verkligheten kan en population inte växa hur länge som helst …",
+    "explanationJa": "{現実|げんじつ}には、{人口|じんこう}はいつまでも{増|ふ}え{続|つづ}けることはできないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "På tjugo år är skillnaden mellan den linjära och den exponentiella modellen mycket stor.",
+    "correct": false,
+    "explanationSv": "På tjugo år blir skillnaden mellan modellerna inte så stor.",
+    "explanationJa": "20{年|ねん}では、2つのモデルの{差|さ}はあまり{大|おお}きくありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Naoko skriver en prognos med tre olika framtider.",
+    "correct": true,
+    "explanationSv": "… skriver en prognos med alla tre.",
+    "explanationJa": "3つの{未来|みらい}を{含|ふく}む{予測|よそく}を{書|か}きました。"
+   }
+  ],
+  "factSources": [
+   "Tumregeln att fördubblingstiden ungefär är 70 delat med den procentuella tillväxten (2 procent ger cirka 35 år, 7 procent cirka 10 år) är en vanlig närmeregel; kommunen och siffrorna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att använda matematik för att förstå och förutsäga förändringar.",
+  "discussionPoints": [
+   "Växer eller minskar befolkningen där du bor? Varför, tror du?",
+   "Har du hört ordet exponentiellt i nyheterna? I vilket sammanhang?",
+   "Vilka antaganden är farliga att göra när man förutsäger framtiden?",
+   "Skulle du lita mer på en prognos med en framtid eller med tre? Varför?"
+  ]
+ }
+}

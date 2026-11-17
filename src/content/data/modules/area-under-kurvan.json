@@ -1,0 +1,173 @@
+{
+ "id": "m.area-under-kurvan",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Area under kurvan",
+ "titleJa": "{曲線|きょくせん}の{下|した}の{面積|めんせき}",
+ "descriptionSv": "Area under kurvan: area, areaenhet, kvadratmeter, tomt, rektangel, rutat papper, dela in, uppskatta, x-axel, kurva, skärningspunkt, oändlig, nollställe, avgränsa, underskatta och överskatta.",
+ "descriptionJa": "{曲線|きょくせん}の{下|した}の{面積|めんせき}：{面積|めんせき}、{面積|めんせき}の{単位|たんい}、{平方|へいほう}メートル、{敷地|しきち}、{長方形|ちょうほうけい}、{方眼紙|ほうがんし}、{区切|くぎ}る、{見積|みつ}もる、x{軸|じく}、{曲線|きょくせん}、{交点|こうてん}、{無限|むげん}の、{零点|れいてん}、{囲|かこ}む、{少|すく}なく{見積|みつ}もる、{多|おお}く{見積|みつ}もる。",
+ "categoryId": "R06-A02-T02",
+ "tags": [
+  "matematik",
+  "integraler"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.bestamd-integral"
+ ],
+ "related": [],
+ "recommendedOrder": 3223,
+ "words": [
+  {
+   "senseId": "s.area.1",
+   "active": true
+  },
+  {
+   "senseId": "s.areaenhet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kvadratmeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tomt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rektangel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rutat-papper.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dela-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.x-axel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kurva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärningspunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oändlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nollställe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgränsa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.underskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överskatta.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Gräsmattan med den böjda kanten",
+  "paragraphs": [
+   "Kenta och hans pappa ska lägga ny gräsmatta på en del av sin tomt. Ena sidan av gräsmattan är rak, men den andra sidan följer en böjd gång. Hur stor är arean? Kenta går andra året på gymnasiet och har just lärt sig om area under kurvan.",
+   "Han ritar gräsmattan på rutat papper. Den raka sidan ligger längs x-axeln, och den böjda kanten blir en kurva, f(x) = 6x − x². En ruta är en kvadratmeter. Kurvan har två nollställen, x = 0 och x = 6. Där har kurvan två skärningspunkter med x-axeln. Kurvan och x-axeln avgränsar alltså ett område, och det är gräsmattan.",
+   "Först vill Kenta uppskatta arean. Han delar in området i sex smala rektanglar. Om rektanglarna ligger helt under kurvan underskattar han arean, och om de går upp över kurvan överskattar han den. Det första svaret blir 26 och det andra 44 kvadratmeter. Det rätta svaret ligger någonstans mellan dem.",
+   "– Med fler och smalare rektanglar kommer man närmare, säger pappa. Med oändligt många rektanglar får man det rätta svaret. Det är just det som en integral gör. Kenta beräknar integralen av f(x) från 0 till 6 och får 36. Arean är alltså 36 kvadratmeter.",
+   "– Glöm inte areaenheten, säger Kenta. Svaret är inte bara 36, utan 36 kvadratmeter. Pappa köper gräsmatta för 40 kvadratmeter, för det är bra att ha lite extra. På kvällen visar Kenta sin uträkning för läraren, som tycker att det är ett bra exempel på hur man använder matematik hemma."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför är det svårt att räkna ut arean av gräsmattan?",
+    "options": [
+     "Ena sidan följer en böjd kurva",
+     "Gräsmattan är för stor",
+     "Kenta har inget rutat papper",
+     "Pappa vet inte var tomten är"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ena sidan av gräsmattan är rak, men den andra sidan följer en böjd gång.",
+    "explanationJa": "{片側|かたがわ}が{曲|ま}がっているので、{面積|めんせき}を{求|もと}めるのが{難|むずか}しいのです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer när rektanglarna går upp över kurvan?",
+    "options": [
+     "Man underskattar arean",
+     "Man får exakt rätt svar",
+     "Man överskattar arean",
+     "Kurvan får fler nollställen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… och om de går upp över kurvan överskattar han den.",
+    "explanationJa": "{曲線|きょくせん}より{上|うえ}にはみ{出|だ}すと、{面積|めんせき}を{多|おお}く{見積|みつ}もります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Var ligger kurvans nollställen?",
+    "options": [
+     "Där kurvan möter x-axeln",
+     "Där kurvan är högst",
+     "Mitt i gräsmattan",
+     "I varje ruta"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kurvan har två nollställen, x = 0 och x = 6. Där har kurvan två skärningspunkter med x-axeln.",
+    "explanationJa": "{零点|れいてん}は、{曲線|きょくせん}が x{軸|じく}と{交|まじ}わるところです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kenta delar in området i sex rektanglar.",
+    "correct": true,
+    "explanationSv": "Han delar in området i sex smala rektanglar.",
+    "explanationJa": "{領域|りょういき}を6つの{長方形|ちょうほうけい}に{分|わ}けました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Pappa köper precis så mycket gräsmatta som behövs för 36 kvadratmeter.",
+    "correct": false,
+    "explanationSv": "Pappa köper gräsmatta för 40 kvadratmeter, för det är bra att ha lite extra.",
+    "explanationJa": "{少|すこ}し{多|おお}めに、40{平方|へいほう}メートル{分|ぶん}を{買|か}いました。"
+   }
+  ],
+  "factSources": [
+   "Att rektanglar under och över kurvan ger en undre och en övre uppskattning av arean, och att integralen av 6x − x² från 0 till 6 är 36, är standardinnehåll i gymnasiets Matematik 3; familjen och trädgården är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att uppskatta och räkna ut area i vardagen.",
+  "discussionPoints": [
+   "När behöver man veta en area hemma eller på jobbet?",
+   "Brukar du underskatta eller överskatta hur lång tid saker tar?",
+   "Hur skulle du uppskatta arean av en sjö på en karta?",
+   "Är det bättre att köpa lite för mycket eller lite för lite? Varför?"
+  ]
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "entries": [
+  {
+   "id": "e.differentialekvation",
+   "lemma": "differentialekvation",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "differentialekvation",
+    "defSg": "differentialekvationen",
+    "indefPl": "differentialekvationer",
+    "defPl": "differentialekvationerna"
+   },
+   "senses": [
+    {
+     "id": "s.differentialekvation.1",
+     "ja": "{微分方程式|びぶんほうていしき}",
+     "defSv": "En ekvation där man söker en okänd funktion y, och där både y och lutningen y′ finns med, till exempel y′ = 2y.",
+     "defJa": "{未知|みち}の{関数|かんすう} y を{求|もと}める{方程式|ほうていしき}で、y とその{傾|かたむ}き y′ の{両方|りょうほう}を{含|ふく}むもの。たとえば y′ = 2y。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Differentialekvationen y′ = 0,1y beskriver en befolkning som växer.",
+       "ja": "{微分方程式|びぶんほうていしき} y′ = 0.1y は、{増|ふ}えていく{人口|じんこう}を{表|あらわ}しています。"
+      }
+     ],
+     "explanation": {
+      "sv": "En vanlig ekvation har ett tal som lösning, till exempel x = 4. En differentialekvation har i stället en funktion som lösning. Den beskriver ett samband mellan hur stort något är och hur snabbt det ändras. Därför används differentialekvationer i fysik, biologi och ekonomi, till exempel för temperatur, bakterier och pengar på ett konto.",
+      "ja": "ふつうの{方程式|ほうていしき}の{解|かい}は x = 4 のような{数|かず}ですが、{微分方程式|びぶんほうていしき}の{解|かい}は{関数|かんすう}です。{何|なに}かの{大|おお}きさと、それがどれだけ{速|はや}く{変|か}わるかの{関係|かんけい}を{表|あらわ}します。そのため、{温度|おんど}、{細菌|さいきん}、{口座|こうざ}のお{金|かね}など、{物理|ぶつり}、{生物|せいぶつ}、{経済|けいざい}で{広|ひろ}く{使|つか}われます。"
+     },
+     "tags": [
+      "matematik",
+      "differentialekvationer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.riktningsfält",
+   "lemma": "riktningsfält",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "riktningsfält",
+    "defSg": "riktningsfältet",
+    "indefPl": "riktningsfält",
+    "defPl": "riktningsfälten"
+   },
+   "senses": [
+    {
+     "id": "s.riktningsfält.1",
+     "ja": "{方向場|ほうこうば}",
+     "defSv": "En bild med många små streck i ett koordinatsystem. Varje streck visar vilken lutning en lösning har just där.",
+     "defJa": "{座標平面|ざひょうへいめん}にたくさんの{短|みじか}い{線|せん}をかいた{図|ず}。それぞれの{線|せん}は、その{場所|ばしょ}で{解|かい}がもつ{傾|かたむ}きを{示|しめ}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I riktningsfältet kan man se hur lösningarna går.",
+       "ja": "{方向場|ほうこうば}を{見|み}ると、{解|かい}がどう{進|すす}むかがわかります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Ett riktningsfält ritar man ofta med en dator eller en grafräknare. Man behöver inte lösa differentialekvationen för att se hur lösningarna ser ut: man följer bara strecken, ungefär som en båt som följer strömmen i vattnet.",
+      "ja": "{方向場|ほうこうば}は、ふつうコンピューターやグラフ{電卓|でんたく}でかきます。{微分方程式|びぶんほうていしき}を{解|と}かなくても、{線|せん}をたどるだけで{解|かい}のようすがわかります。{船|ふね}が{水|みず}の{流|なが}れに{乗|の}って{進|すす}むようなイメージです。"
+     },
+     "tags": [
+      "matematik",
+      "differentialekvationer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.allmän-lösning",
+   "lemma": "allmän lösning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "allmän lösning",
+    "defSg": "allmänna lösningen",
+    "indefPl": "allmänna lösningar",
+    "defPl": "allmänna lösningarna"
+   },
+   "senses": [
+    {
+     "id": "s.allmän-lösning.1",
+     "ja": "{一般解|いっぱんかい}",
+     "defSv": "En lösning till en differentialekvation som innehåller en konstant C, så att den beskriver alla lösningar på en gång.",
+     "defJa": "{定数|ていすう} C を{含|ふく}み、すべての{解|かい}をまとめて{表|あらわ}す、{微分方程式|びぶんほうていしき}の{解|かい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Den allmänna lösningen till y′ = 2 är y = 2x + C.",
+       "ja": "y′ = 2 の{一般解|いっぱんかい}は y = 2x + C です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Den allmänna lösningen är som en hel familj av kurvor. Varje värde på konstanten C ger en egen kurva. I ett riktningsfält ser man att alla dessa kurvor följer samma streck, men ligger olika högt.",
+      "ja": "{一般解|いっぱんかい}は、{曲線|きょくせん}の{家族|かぞく}のようなものです。{定数|ていすう} C の{値|あたい}ごとに、1{本|ぽん}の{曲線|きょくせん}ができます。{方向場|ほうこうば}を{見|み}ると、これらの{曲線|きょくせん}はどれも{同|おな}じ{線|せん}に{沿|そ}っていて、{高|たか}さだけが{違|ちが}うことがわかります。"
+     },
+     "tags": [
+      "matematik",
+      "differentialekvationer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.partikulär-lösning",
+   "lemma": "partikulär lösning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "partikulär lösning",
+    "defSg": "partikulära lösningen",
+    "indefPl": "partikulära lösningar",
+    "defPl": "partikulära lösningarna"
+   },
+   "senses": [
+    {
+     "id": "s.partikulär-lösning.1",
+     "ja": "{特殊解|とくしゅかい}",
+     "defSv": "En enda lösning till en differentialekvation, där konstanten C har fått ett bestämt värde.",
+     "defJa": "{定数|ていすう} C に{決|き}まった{値|あたい}が{入|はい}った、{微分方程式|びぶんほうていしき}のただ1つの{解|かい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "y = 2x + 3 är en partikulär lösning till y′ = 2.",
+       "ja": "y = 2x + 3 は y′ = 2 の{特殊解|とくしゅかい}です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Om den allmänna lösningen är en familj av kurvor, är en partikulär lösning en av kurvorna i familjen. Man väljer den med hjälp av ett känt värde, till exempel temperaturen när man börjar mäta. Uttrycket partikulär lösning hör man sällan i vardagen. Det används nästan bara i matematik.",
+      "ja": "{一般解|いっぱんかい}が{曲線|きょくせん}の{家族|かぞく}だとすると、{特殊解|とくしゅかい}はその{中|なか}の1{本|ぽん}の{曲線|きょくせん}です。{測|はか}り{始|はじ}めたときの{温度|おんど}のような、わかっている{値|あたい}を{使|つか}って{選|えら}びます。「partikulär lösning」はふだんはほとんど{聞|き}かない、{主|おも}に{数学|すうがく}で{使|つか}う{表現|ひょうげん}です。"
+     },
+     "tags": [
+      "matematik",
+      "differentialekvationer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}
