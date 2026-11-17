@@ -1,0 +1,177 @@
+{
+ "id": "m.datamangder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Datamängder",
+ "titleJa": "データの{集|あつ}まり",
+ "descriptionSv": "Datamängder: data, statistik, samla in, enkät, svarsalternativ, fylla i, mätvärde, värde, datamängd, tabell, föra in, rad, kolumn, sortera, kategori, sammanställa och i tabellform.",
+ "descriptionJa": "データの{集|あつ}まり：データ、{統計|とうけい}、{集|あつ}める、アンケート、{回答|かいとう}の{選択肢|せんたくし}、{記入|きにゅう}する、{測定値|そくていち}、{値|あたい}、データセット、{表|ひょう}、{書|か}き{入|い}れる、{行|ぎょう}、{列|れつ}、{分|わ}ける、カテゴリー、まとめる、{表|ひょう}の{形|かたち}で。",
+ "categoryId": "R06-A01-T06",
+ "tags": [
+  "matematik",
+  "statistik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tolka-grafer"
+ ],
+ "related": [],
+ "recommendedOrder": 3151,
+ "words": [
+  {
+   "senseId": "s.data.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statistik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samla-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enkät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svarsalternativ.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fylla-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värde.2",
+   "active": true
+  },
+  {
+   "senseId": "s.datamängd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föra-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolumn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kategori.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanställa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-tabellform.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Klassens undersökning",
+  "paragraphs": [
+   "Klass 8B vill veta hur eleverna tar sig till skolan och hur lång tid resan tar. Därför bestämmer de sig för att samla in data. Varje elev får en kort enkät med två frågor.",
+   "Den första frågan har fyra svarsalternativ: buss, cykel, bil eller till fots. Eleverna fyller i enkäten och väljer ett svar. På den andra frågan skriver de hur många minuter resan tar. Det blir ett mätvärde för varje elev.",
+   "Alla svar tillsammans bildar en datamängd. Statistik handlar om att göra en sådan datamängd lätt att förstå. Ett enda värde, till exempel 12 minuter, säger inte så mycket. Men tjugo värden tillsammans kan visa något intressant.",
+   "Sara och Omar för in svaren i en tabell. Varje rad är en elev, och varje kolumn är en fråga. Sedan sorterar de svaren i kategorier: alla som åker buss för sig, alla som cyklar för sig och så vidare.",
+   "Till sist sammanställer klassen resultatet i tabellform. Tabellen visar att nio elever cyklar, sex åker buss, tre går och två åker bil. – Nu har vi fakta i stället för gissningar, säger läraren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad vill klass 8B veta?",
+    "options": [
+     "Vad eleverna äter till lunch",
+     "Hur många syskon eleverna har",
+     "Hur eleverna tar sig till skolan",
+     "Vilken sport eleverna tycker om"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Klass 8B vill veta hur eleverna tar sig till skolan och hur lång tid resan tar.",
+    "explanationJa": "{生徒|せいと}たちがどうやって{学校|がっこう}に{来|く}るかを{知|し}りたいのです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur många svarsalternativ har den första frågan?",
+    "options": [
+     "Två",
+     "Tre",
+     "Fyra",
+     "Fem"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den första frågan har fyra svarsalternativ: buss, cykel, bil eller till fots.",
+    "explanationJa": "バス、{自転車|じてんしゃ}、{車|くるま}、{徒歩|とほ}の4つです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad visar varje rad i tabellen?",
+    "options": [
+     "En elev",
+     "En fråga",
+     "En kategori",
+     "En minut"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Varje rad är en elev, och varje kolumn är en fråga.",
+    "explanationJa": "{行|ぎょう}は{生徒|せいと}、{列|れつ}は{質問|しつもん}を{表|あらわ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Fler elever åker buss än cyklar.",
+    "correct": false,
+    "explanationSv": "Tabellen visar att nio elever cyklar, sex åker buss …",
+    "explanationJa": "{自転車|じてんしゃ}が9{人|にん}、バスが6{人|にん}なので、{自転車|じてんしゃ}のほうが{多|おお}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Datamängden består av svar från tjugo elever.",
+    "correct": true,
+    "explanationSv": "Men tjugo värden tillsammans kan visa något intressant.",
+    "explanationJa": "9+6+3+2で20{人分|にんぶん}の{回答|かいとう}です。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni planerar en liten undersökning i klassen eller på jobbet.",
+  "discussionPoints": [
+   "Vilken data skulle du vilja samla in?",
+   "Vilka svarsalternativ skulle du ha i din enkät?",
+   "Hur skulle du sortera svaren i kategorier?",
+   "Har du någon gång fyllt i en enkät? Vad handlade den om?"
+  ]
+ }
+}

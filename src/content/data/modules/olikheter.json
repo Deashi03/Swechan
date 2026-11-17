@@ -1,0 +1,174 @@
+{
+ "id": "m.olikheter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Olikheter",
+ "titleJa": "{不等式|ふとうしき}",
+ "descriptionSv": "Olikheter: olikhet, olikhetstecken, större än, mindre än, större än eller lika med, mindre än eller lika med, tallinje, minst, högst, gräns, överstiga, understiga, åldersgräns, gränsvärde, kilometer i timmen och uppfylla.",
+ "descriptionJa": "{不等式|ふとうしき}：{不等式|ふとうしき}、{不等号|ふとうごう}、〜より{大|おお}きい、〜より{小|ちい}さい、〜{以上|いじょう}、〜{以下|いか}、{数直線|すうちょくせん}、{少|すく}なくとも、{多|おお}くとも、{境界|きょうかい}・{限度|げんど}、{上回|うわまわ}る、{下回|したまわ}る、{年齢制限|ねんれいせいげん}、{基準値|きじゅんち}、{時速|じそく}〜キロ、{満|み}たす。",
+ "categoryId": "R06-A01-T03",
+ "tags": [
+  "matematik",
+  "algebra"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.losa-enkla-ekvationer"
+ ],
+ "related": [],
+ "recommendedOrder": 3126,
+ "words": [
+  {
+   "senseId": "s.olikhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.olikhetstecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.större-än.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mindre-än.1",
+   "active": true
+  },
+  {
+   "senseId": "s.större-än-eller-lika-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mindre-än-eller-lika-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tallinje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överstiga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.understiga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.åldersgräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gränsvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kilometer-i-timmen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppfylla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Gränser i vardagen",
+  "paragraphs": [
+   "Olikheter finns överallt i vardagen, inte bara i skolan. En olikhet visar att något är större än eller mindre än något annat. Olikhetstecknet > betyder större än, och < betyder mindre än. Till exempel är 7 > 4 och 2 < 9.",
+   "Det finns också två andra tecken: ≥ betyder större än eller lika med, och ≤ betyder mindre än eller lika med. Om åldersgränsen för en film är 15 år, måste man vara minst 15 år. Det kan man skriva som x ≥ 15, där x är ens ålder.",
+   "På en gata där man får köra högst 50 kilometer i timmen gäller olikheten v ≤ 50. Om farten överstiger 50, kör föraren för fort. En fart på 45 uppfyller olikheten, men 60 gör det inte.",
+   "Man kan visa en olikhet på en tallinje. För x > 3 ritar man en tom ring vid 3 och en pil åt höger, eftersom alla tal som är större än 3 räknas. Talet 3 räknas inte. För x ≥ 3 fyller man i ringen, eftersom 3 också räknas.",
+   "Även för luften i städerna finns en gräns, ett så kallat gränsvärde. Det betyder att det får finnas högst en viss mängd av farliga ämnen i luften. Om mängden understiger gränsvärdet, är luften bra nog."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad betyder < ?",
+    "options": [
+     "Större än",
+     "Lika med",
+     "Mindre än",
+     "Större än eller lika med"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "< betyder mindre än.",
+    "explanationJa": "＜は「〜より{小|ちい}さい」です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Hur kan man skriva att man måste vara minst 15 år?",
+    "options": [
+     "x ≥ 15",
+     "x ≤ 15",
+     "x < 15",
+     "x = 15"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det kan man skriva som x ≥ 15, där x är ens ålder.",
+    "explanationJa": "x ≥ 15と{書|か}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken fart uppfyller olikheten v ≤ 50?",
+    "options": [
+     "45 kilometer i timmen",
+     "60 kilometer i timmen",
+     "55 kilometer i timmen",
+     "70 kilometer i timmen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En fart på 45 uppfyller olikheten, men 60 gör det inte.",
+    "explanationJa": "{時速|じそく}45キロなら{不等式|ふとうしき}を{満|み}たします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "När man visar x > 3 på en tallinje, räknas talet 3.",
+    "correct": false,
+    "explanationSv": "Talet 3 räknas inte.",
+    "explanationJa": "x > 3では3は{含|ふく}まれません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Luften är bra nog när mängden farliga ämnen understiger gränsvärdet.",
+    "correct": true,
+    "explanationSv": "Om mängden understiger gränsvärdet, är luften bra nog.",
+    "explanationJa": "{基準値|きじゅんち}を{下回|したまわ}れば{十分|じゅうぶん}きれいです。"
+   }
+  ],
+  "factSources": [
+   "I Sverige är 50 km/h en vanlig hastighetsgräns i tätort (Transportstyrelsen). Åldersgränsen 15 år är en av Statens medieråds åldersgränser för film.",
+   "Gränsvärden för luftkvalitet finns i luftkvalitetsförordningen (2010:477) och bygger på EU:s luftkvalitetsdirektiv; exemplet nämner inga siffror."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om gränser och regler i vardagen och hur man kan skriva dem som olikheter.",
+  "discussionPoints": [
+   "Vilka åldersgränser finns i Sverige och i Japan?",
+   "Hur fort får man köra på gatan där du bor?",
+   "Kan du hitta en regel i vardagen som man kan skriva som en olikhet?",
+   "Vad betyder minst och högst på japanska?"
+  ]
+ }
+}

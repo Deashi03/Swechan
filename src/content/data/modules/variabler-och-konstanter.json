@@ -1,0 +1,177 @@
+{
+ "id": "m.variabler-och-konstanter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Variabler och konstanter",
+ "titleJa": "{変数|へんすう}と{定数|ていすう}",
+ "descriptionSv": "Variabler och konstanter: algebra, bokstav, värde, variabel, konstant, algebraiskt uttryck, beteckna, utelämna, variera, bero på, sätta in, räkna ut, valfri, kostnad, fast avgift, rörlig och abstrakt.",
+ "descriptionJa": "{変数|へんすう}と{定数|ていすう}：{代数学|だいすうがく}、{文字|もじ}、{値|あたい}、{変数|へんすう}、{定数|ていすう}、{文字式|もじしき}、{表|あらわ}す、{省|はぶ}く、{変|か}わる、〜による、{代入|だいにゅう}する、{計算|けいさん}する、{自由|じゆう}に{選|えら}べる、{費用|ひよう}、{固定料金|こていりょうきん}、{変動|へんどう}する、{抽象的|ちゅうしょうてき}な。",
+ "categoryId": "R06-A01-T03",
+ "tags": [
+  "matematik",
+  "algebra"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.procentuell-forandring"
+ ],
+ "related": [],
+ "recommendedOrder": 3121,
+ "words": [
+  {
+   "senseId": "s.algebra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bokstav.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värde.2",
+   "active": true
+  },
+  {
+   "senseId": "s.variabel.2",
+   "active": true
+  },
+  {
+   "senseId": "s.konstant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.algebraiskt-uttryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beteckna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utelämna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.variera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bero-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sätta-in.2",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.valfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kostnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fast-avgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.abstrakt.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Algebra i mobilen",
+  "paragraphs": [
+   "Lina har börjat läsa matematik på komvux. Den här veckan handlar det om algebra. Läraren säger att algebra kan kännas abstrakt i början, men att man använder den i vardagen hela tiden.",
+   "Ett exempel är Linas mobil. Hon betalar en fast avgift på 99 kronor i månaden. Dessutom betalar hon 5 kronor för varje minut som hon ringer till Japan. Den delen av kostnaden är rörlig, eftersom den varierar från månad till månad.",
+   "I algebra använder man en bokstav för det som kan ändras. Lina betecknar antalet minuter med x. Då kan hela kostnaden skrivas som det algebraiska uttrycket 99 + 5x. Mellan 5 och x står inget tecken för gånger. Man brukar utelämna det, så 5x betyder 5 · x.",
+   "I uttrycket är x en variabel, eftersom värdet kan variera. Talet 99 är en konstant: det är alltid detsamma. Hur mycket Lina betalar beror på x.",
+   "För att räkna ut kostnaden kan man sätta in ett värde för x. En månad ringde Lina 20 minuter. Då blev kostnaden 99 + 5 · 20 = 199 kronor. – Prova nu själv med ett valfritt tal, säger läraren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur stor är den fasta avgiften?",
+    "options": [
+     "5 kronor i månaden",
+     "119 kronor i månaden",
+     "99 kronor i månaden",
+     "4 kronor i månaden"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon betalar en fast avgift på 99 kronor i månaden.",
+    "explanationJa": "{基本料金|きほんりょうきん}は{月|つき}99クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Varför är x en variabel i uttrycket 99 + 5x?",
+    "options": [
+     "Värdet är alltid 99",
+     "Det är ett tecken för gånger",
+     "Värdet kan variera",
+     "Det är priset för en månad"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I uttrycket är x en variabel, eftersom värdet kan variera.",
+    "explanationJa": "xの{値|あたい}は{変|か}わることができるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad kostade mobilen den månad då Lina ringde 20 minuter?",
+    "options": [
+     "99 kronor",
+     "199 kronor",
+     "104 kronor",
+     "100 kronor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Då blev kostnaden 99 + 5 · 20 = 199 kronor.",
+    "explanationJa": "99 + 5 × 20 = 199クローナです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "I uttrycket 99 + 5x är 99 en konstant.",
+    "correct": true,
+    "explanationSv": "Talet 99 är en konstant: det är alltid detsamma.",
+    "explanationJa": "99はいつも{同|おな}じなので{定数|ていすう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lina betalar lika mycket för mobilen varje månad.",
+    "correct": false,
+    "explanationSv": "Den delen av kostnaden är rörlig, eftersom den varierar från månad till månad.",
+    "explanationJa": "{使|つか}った{量|りょう}によって{料金|りょうきん}の{一部|いちぶ}が{変|か}わります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden. Priserna i mobilexemplet är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att räkna med bokstäver och om fasta och rörliga kostnader i vardagen.",
+  "discussionPoints": [
+   "Vilka av dina kostnader är fasta, och vilka är rörliga?",
+   "Tycker du att algebra känns abstrakt?",
+   "Hur skulle du skriva din egen mobilkostnad som ett algebraiskt uttryck?",
+   "Läste du algebra i skolan i Japan? Hur var det?"
+  ]
+ }
+}

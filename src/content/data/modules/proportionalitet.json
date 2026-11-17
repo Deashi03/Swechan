@@ -1,0 +1,173 @@
+{
+ "id": "m.proportionalitet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Proportionalitet",
+ "titleJa": "{比例|ひれい}",
+ "descriptionSv": "Proportionalitet: kilopris, jämförpris, timlön, hastighet, portion, fördubbla, halvera, dubbelt så, kvot, per, samband, förhållande, proportionalitet, i takt med, proportionalitetskonstant och omvänt proportionell.",
+ "descriptionJa": "{比例|ひれい}：キロあたりの{値段|ねだん}、{単位|たんい}{価格|かかく}、{時給|じきゅう}、{速度|そくど}、{一人前|いちにんまえ}、2 {倍|ばい}にする、{半分|はんぶん}にする、2 {倍|ばい}の、{商|しょう}、〜あたり、{関係|かんけい}、{比|ひ}、{比例|ひれい}、〜につれて、{比例定数|ひれいていすう}、{反比例|はんぴれい}する。",
+ "categoryId": "R06-A01-T05",
+ "tags": [
+  "matematik",
+  "funktioner"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.lutning-och-skarning"
+ ],
+ "related": [],
+ "recommendedOrder": 3145,
+ "words": [
+  {
+   "senseId": "s.kilopris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämförpris.1",
+   "active": false
+  },
+  {
+   "senseId": "s.timlön.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.portion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördubbla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbelt-så.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.per.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förhållande.2",
+   "active": true
+  },
+  {
+   "senseId": "s.proportionalitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-takt-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.proportionalitetskonstant.1",
+   "active": false
+  },
+  {
+   "senseId": "s.omvänt-proportionell.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Dubbelt så många gäster",
+  "paragraphs": [
+   "Amina ska laga mat till sin dotters födelsedag. Receptet räcker till fyra portioner, men det kommer åtta personer. Hon måste fördubbla allt: dubbelt så mycket ris, dubbelt så mycket kyckling och dubbelt så mycket grädde.",
+   "I affären tittar hon på kilopriset. Kycklingen kostar 90 kronor per kilo. Ett kilo kostar 90 kronor, två kilo 180 kronor. Priset ökar i takt med vikten. Det är ett exempel på proportionalitet, tänker Amina. Kvoten mellan pris och vikt är alltid 90, och 90 är proportionalitetskonstanten.",
+   "Hon jämför också två förpackningar ris. Den stora ser billig ut, men jämförpriset visar att den lilla är billigare per kilo. Sambandet mellan pris och vikt är alltså inte alltid lika enkelt.",
+   "Till efterrätt gör hon saft. På flaskan står det att man ska blanda saft och vatten i förhållandet 1 till 4. Om hon vill halvera mängden tar hon hälften av båda.",
+   "Efter festen hjälps alla åt att diska. Ensam skulle Amina behöva en timme, men med fyra personer tar det bara en kvart. Tiden är omvänt proportionell mot antalet personer. – Det är som timlön och hastighet, fast tvärtom, skrattar hennes man."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför måste Amina fördubbla receptet?",
+    "options": [
+     "Maten är för salt",
+     "Det kommer dubbelt så många personer",
+     "Receptet är fel",
+     "Hon vill spara mat till nästa dag"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Receptet räcker till fyra portioner, men det kommer åtta personer.",
+    "explanationJa": "{人数|にんずう}が 2 {倍|ばい}になるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kostar två kilo kyckling?",
+    "options": [
+     "90 kronor",
+     "45 kronor",
+     "270 kronor",
+     "180 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ett kilo kostar 90 kronor, två kilo 180 kronor.",
+    "explanationJa": "2 キロで 180 クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad visar jämförpriset för riset?",
+    "options": [
+     "Att den stora förpackningen är godast",
+     "Att riset kommer från Japan",
+     "Att den lilla förpackningen är billigare per kilo",
+     "Att båda kostar lika mycket"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… jämförpriset visar att den lilla är billigare per kilo.",
+    "explanationJa": "{小|ちい}さいほうがキロあたり{安|やす}いことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Saften ska blandas i förhållandet 1 till 4.",
+    "correct": true,
+    "explanationSv": "… blanda saft och vatten i förhållandet 1 till 4.",
+    "explanationJa": "1 {対|たい} 4 で{混|ま}ぜます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Disken går långsammare när fler hjälper till.",
+    "correct": false,
+    "explanationSv": "Ensam skulle Amina behöva en timme, men med fyra personer tar det bara en kvart.",
+    "explanationJa": "{人|ひと}が{多|おお}いほど{早|はや}く{終|お}わります。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om priser, recept och saker som hänger ihop.",
+  "discussionPoints": [
+   "Brukar du titta på kilopriset eller jämförpriset när du handlar?",
+   "Hur gör du när ett recept är för fyra personer men ni är fler?",
+   "Kan du ge ett exempel på något som är omvänt proportionellt?",
+   "Finns det ett samband mellan hur mycket man arbetar och hur glad man är?"
+  ]
+ }
+}

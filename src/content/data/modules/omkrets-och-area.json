@@ -1,0 +1,177 @@
+{
+ "id": "m.omkrets-och-area",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Omkrets och area",
+ "titleJa": "{周|まわ}りの{長|なが}さと{面積|めんせき}",
+ "descriptionSv": "Omkrets och area: omkrets, sidlängd, bredd, längdenhet, area, areaenhet, kvadratcentimeter, kvadratdecimeter, kvadratmeter, kvadratkilometer, hektar, rutat papper, sammansatt figur, räkna ut, tomt, staket och boyta.",
+ "descriptionJa": "{周|まわ}りの{長|なが}さと{面積|めんせき}：{周|まわ}りの{長|なが}さ、{辺|へん}の{長|なが}さ、{幅|はば}、{長|なが}さの{単位|たんい}、{面積|めんせき}、{面積|めんせき}の{単位|たんい}、{平方|へいほう}センチメートル、{平方|へいほう}デシメートル、{平方|へいほう}メートル、{平方|へいほう}キロメートル、ヘクタール、{方眼紙|ほうがんし}、{複合図形|ふくごうずけい}、{計算|けいさん}する、{敷地|しきち}、{柵|さく}、{居住面積|きょじゅうめんせき}。",
+ "categoryId": "R06-A01-T04",
+ "tags": [
+  "matematik",
+  "geometri"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.cirklar"
+ ],
+ "related": [],
+ "recommendedOrder": 3136,
+ "words": [
+  {
+   "senseId": "s.omkrets.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sidlängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bredd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.längdenhet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.area.1",
+   "active": true
+  },
+  {
+   "senseId": "s.areaenhet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kvadratcentimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvadratdecimeter.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kvadratmeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvadratkilometer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hektar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rutat-papper.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammansatt-figur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tomt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.staket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boyta.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En plats för grönsaker",
+  "paragraphs": [
+   "Yuki och hennes man har köpt ett hus med en stor tomt. Nu vill Yuki göra en plats där hon kan odla grönsaker. Platsen ska vara en rektangel som är sex meter lång och fyra meter bred.",
+   "Först behöver hon ett staket runt platsen. Då måste hon räkna ut omkretsen. Hon lägger ihop alla sidlängder: 6 + 4 + 6 + 4 = 20. Omkretsen är alltså 20 meter. Meter är en längdenhet.",
+   "Sedan vill hon veta hur stor yta hon ska fylla med jord. Det är arean. För en rektangel tar man längden gånger bredden: 6 · 4 = 24. Arean är 24 kvadratmeter. Kvadratmeter är en areaenhet.",
+   "Yuki ritar platsen på rutat papper. Varje ruta är en kvadratcentimeter, och tio gånger tio rutor blir en kvadratdecimeter. Hon ritar också en liten triangel bredvid rektangeln, så att det blir en sammansatt figur. Då räknar hon ut arean för varje del och lägger ihop dem.",
+   "Huset har en boyta på 120 kvadratmeter, och hela tomten är 1 200 kvadratmeter. – Det är bara en liten del av ett hektar, säger hennes man. Ett hektar är 10 000 kvadratmeter, och hundra hektar är en kvadratkilometer."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför måste Yuki räkna ut omkretsen?",
+    "options": [
+     "Hon behöver ett staket runt platsen",
+     "Hon ska köpa jord",
+     "Hon vill rita på rutat papper",
+     "Hon ska sälja tomten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Först behöver hon ett staket runt platsen. Då måste hon räkna ut omkretsen.",
+    "explanationJa": "{周|まわ}りに{柵|さく}が{必要|ひつよう}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur stor är arean av platsen?",
+    "options": [
+     "20 kvadratmeter",
+     "10 kvadratmeter",
+     "120 kvadratmeter",
+     "24 kvadratmeter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Arean är 24 kvadratmeter.",
+    "explanationJa": "6×4で、{面積|めんせき}は24{平方|へいほう}メートルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vilket av orden är en areaenhet?",
+    "options": [
+     "Meter",
+     "Hektar",
+     "Liter",
+     "Kilo"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ett hektar är 10 000 kvadratmeter …",
+    "explanationJa": "ヘクタールは{面積|めんせき}の{単位|たんい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Omkretsen räknar man ut genom att ta längden gånger bredden.",
+    "correct": false,
+    "explanationSv": "Hon lägger ihop alla sidlängder … För en rektangel tar man längden gånger bredden … Det är arean.",
+    "explanationJa": "{周|まわ}りの{長|なが}さは{辺|へん}を{足|た}し、{面積|めんせき}は{縦|たて}×{横|よこ}で{求|もと}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yukis tomt är större än ett hektar.",
+    "correct": false,
+    "explanationSv": "… hela tomten är 1 200 kvadratmeter. – Det är bara en liten del av ett hektar …",
+    "explanationJa": "1200{平方|へいほう}メートルは1ヘクタール（1{万|まん}{平方|へいほう}メートル）より{小|ちい}さいです。"
+   }
+  ],
+  "factSources": [
+   "1 hektar = 10 000 m²; 100 hektar = 1 km²; 1 dm² = 100 cm² (SI-enheter)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om omkrets och area i hemmet.",
+  "discussionPoints": [
+   "Hur stor boyta har din bostad, ungefär?",
+   "När behöver man räkna ut area i vardagen?",
+   "Mäter man bostäder i kvadratmeter i Japan, eller på något annat sätt?",
+   "Vad är lättast att förstå: omkrets eller area?"
+  ]
+ }
+}

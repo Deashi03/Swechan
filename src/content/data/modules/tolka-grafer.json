@@ -1,0 +1,173 @@
+{
+ "id": "m.tolka-grafer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Tolka grafer",
+ "titleJa": "グラフを{読|よ}み{取|と}る",
+ "descriptionSv": "Tolka grafer: mätvärde, över tid, tillfällig, trend, tillväxtkurva, tolka, dra slutsatser, öka, minska, kurva, tidsaxel, plana ut, högsta värde, lägsta värde, förlopp och feberkurva.",
+ "descriptionJa": "グラフを{読|よ}み{取|と}る：{測定値|そくていち}、{時間|じかん}がたつにつれて、{一時的|いちじてき}な、{傾向|けいこう}、{成長曲線|せいちょうきょくせん}、{解釈|かいしゃく}する、{結論|けつろん}を{出|だ}す、{増|ふ}える、{減|へ}る、{曲線|きょくせん}、{時間軸|じかんじく}、{横|よこ}ばいになる、{最大値|さいだいち}、{最小値|さいしょうち}、{経過|けいか}、{体温|たいおん}の{推移|すいい}グラフ。",
+ "categoryId": "R06-A01-T05",
+ "tags": [
+  "matematik",
+  "funktioner"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.funktionsvarden"
+ ],
+ "related": [],
+ "recommendedOrder": 3147,
+ "words": [
+  {
+   "senseId": "s.mätvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.över-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillfällig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trend.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tillväxtkurva.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tolka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-slutsatser.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kurva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidsaxel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.plana-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högsta-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägsta-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlopp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.feberkurva.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Yukis feberkurva",
+  "paragraphs": [
+   "Yuki, sex år, blir sjuk på en måndag. Hennes pappa Kenta mäter hennes feber morgon och kväll och skriver upp varje mätvärde. På onsdagen ringer han vården. Sköterskan ber honom rita en feberkurva.",
+   "Kenta ritar en tidsaxel med dagarna och en axel med grader. Sedan prickar han in punkterna och drar en kurva mellan dem. Nu kan han se hela förloppet på en gång.",
+   "Han försöker tolka grafen. På måndagen ökar febern snabbt. Det högsta värdet är 39,5 grader på tisdagskvällen. Sedan minskar febern, och på torsdagen börjar kurvan plana ut. Det lägsta värdet, 36,8 grader, har hon på fredagen.",
+   "På torsdagskvällen går febern upp lite igen, men bara tillfälligt. Trenden över tid är tydlig: febern går ner. Sköterskan säger att man kan dra slutsatser av kurvan: Yuki håller på att bli frisk.",
+   "Kenta tycker om grafer. Han berättar för sköterskan att han också har sparat Yukis tillväxtkurva från BVC. – Där ser man att hon har vuxit fint, säger han. – Ja, svarar sköterskan, en bra graf säger mer än många ord."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem ber Kenta att rita en feberkurva?",
+    "options": [
+     "Sköterskan",
+     "Yukis lärare",
+     "Hans fru",
+     "En granne"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sköterskan ber honom rita en feberkurva.",
+    "explanationJa": "{看護師|かんごし}が{頼|たの}みました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När har Yuki sitt högsta värde?",
+    "options": [
+     "På måndagsmorgonen",
+     "På tisdagskvällen",
+     "På torsdagen",
+     "På fredagen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det högsta värdet är 39,5 grader på tisdagskvällen.",
+    "explanationJa": "{火曜日|かようび}の{夜|よる}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att kurvan börjar plana ut på torsdagen?",
+    "options": [
+     "Febern ökar snabbt",
+     "Febern ändras inte längre så mycket",
+     "Kenta slutar mäta",
+     "Kurvan försvinner"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… på torsdagen börjar kurvan plana ut.",
+    "explanationJa": "{熱|ねつ}があまり{変|か}わらなくなるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Febern på torsdagskvällen är början på en ny, lång ökning.",
+    "correct": false,
+    "explanationSv": "På torsdagskvällen går febern upp lite igen, men bara tillfälligt.",
+    "explanationJa": "{一時的|いちじてき}に{上|あ}がっただけです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Grafen visar att Yuki blir friskare under veckan.",
+    "correct": true,
+    "explanationSv": "Trenden över tid är tydlig: febern går ner.",
+    "explanationJa": "{全体|ぜんたい}として{熱|ねつ}は{下|さ}がっています。"
+   }
+  ],
+  "factSources": [
+   "BVC (barnavårdscentralen) följer barns längd och vikt i tillväxtkurvor (Rikshandboken i barnhälsovård, 1177)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om grafer i vardagen och om hur man läser dem.",
+  "discussionPoints": [
+   "Vilka grafer har du sett den senaste veckan, till exempel i en app, i tidningen eller hos läkaren?",
+   "Hur brukar du tolka en graf: tittar du först på axlarna eller på kurvan?",
+   "Kan du ge ett exempel på något som ökar snabbt och sedan planar ut?",
+   "Har du någon gång dragit fel slutsats av en graf?"
+  ]
+ }
+}

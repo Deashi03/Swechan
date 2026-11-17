@@ -1,0 +1,173 @@
+{
+ "id": "m.frekvens-och-fordelning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Frekvens och fördelning",
+ "titleJa": "{度数|どすう}と{分布|ぶんぷ}",
+ "descriptionSv": "Frekvens och fördelning: tärning, utfall, streck, frekvens, förekomma, frekvenstabell, oftast, sällan, totalt, relativ frekvens, andel, procent, fördelning, jämnt fördelad, gruppera och intervall.",
+ "descriptionJa": "{度数|どすう}と{分布|ぶんぷ}：サイコロ、{結果|けっか}、{線|せん}、{度数|どすう}、{現|あらわ}れる、{度数分布表|どすうぶんぷひょう}、たいてい、めったに〜ない、{全部|ぜんぶ}で、{相対度数|そうたいどすう}、{割合|わりあい}、パーセント、{配分|はいぶん}、{均等|きんとう}に{分|わ}かれた、グループに{分|わ}ける、{区間|くかん}。",
+ "categoryId": "R06-A01-T06",
+ "tags": [
+  "matematik",
+  "statistik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.datamangder"
+ ],
+ "related": [],
+ "recommendedOrder": 3152,
+ "words": [
+  {
+   "senseId": "s.tärning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.utfall.1",
+   "active": false
+  },
+  {
+   "senseId": "s.streck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frekvens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förekomma.2",
+   "active": true
+  },
+  {
+   "senseId": "s.frekvenstabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oftast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sällan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.totalt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.relativ-frekvens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andel.2",
+   "active": true
+  },
+  {
+   "senseId": "s.procent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördelning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jämnt-fördelad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gruppera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intervall.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Är tärningen rättvis?",
+  "paragraphs": [
+   "Lina vill veta om hennes tärning är rättvis. Hon kastar den 60 gånger och skriver upp varje utfall. För varje kast gör hon ett streck vid rätt siffra. När hon har fyra streck drar hon det femte snett över de andra.",
+   "Sedan räknar hon strecken och gör en frekvenstabell. Frekvensen visar hur många gånger varje siffra förekommer. Sexan kom oftast, 13 gånger. Ettan kom mer sällan, bara 7 gånger. Totalt blev det 60 kast.",
+   "Lina räknar också ut den relativa frekvensen. Sexan kom 13 av 60 gånger, alltså en andel på ungefär 22 procent. Om tärningen är rättvis borde varje siffra komma ungefär 10 gånger av 60, alltså cirka 17 procent.",
+   "Hennes lärare tycker ändå att fördelningen ser normal ut. – Med bara 60 kast blir det sällan helt jämnt fördelat, förklarar han. Om du kastar tusen gånger blir skillnaderna mindre.",
+   "Nästa uppgift handlar om sömn. Alla i klassen skriver hur många timmar de sover. Eftersom svaren är så olika grupperar Lina dem i intervall: 5–6 timmar, 7–8 timmar och 9–10 timmar. De flesta hamnar i intervallet 7–8 timmar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många gånger kastar Lina tärningen?",
+    "options": [
+     "13 gånger",
+     "100 gånger",
+     "60 gånger",
+     "6 gånger"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon kastar den 60 gånger och skriver upp varje utfall.",
+    "explanationJa": "60{回|かい}{投|な}げます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad visar frekvensen i Linas tabell?",
+    "options": [
+     "Hur stor tärningen är",
+     "Hur lång tid ett kast tar",
+     "Hur många gånger varje siffra förekommer",
+     "Vilken siffra Lina tycker bäst om"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Frekvensen visar hur många gånger varje siffra förekommer.",
+    "explanationJa": "{度数|どすう}は、それぞれの{数字|すうじ}が{何回|なんかい}{出|で}たかを{示|しめ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken siffra kom mest sällan enligt texten?",
+    "options": [
+     "Sexan",
+     "Ettan",
+     "Trean",
+     "Femman"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ettan kom mer sällan, bara 7 gånger.",
+    "explanationJa": "1は7{回|かい}しか{出|で}ませんでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Läraren tror att tärningen är helt orättvis.",
+    "correct": false,
+    "explanationSv": "Hennes lärare tycker ändå att fördelningen ser normal ut.",
+    "explanationJa": "{先生|せんせい}は、{分布|ぶんぷ}はふつうだと{考|かんが}えています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Lina grupperar svaren om sömn i intervall.",
+    "correct": true,
+    "explanationSv": "Eftersom svaren är så olika grupperar Lina dem i intervall …",
+    "explanationJa": "{回答|かいとう}がばらばらなので、{区間|くかん}に{分|わ}けました。"
+   }
+  ],
+  "factSources": [
+   "På en rättvis tärning är chansen för varje sida 1/6, alltså ungefär 17 procent (matematisk sanning). Linas kast är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker som händer ofta och sällan.",
+  "discussionPoints": [
+   "Vad gör du oftast på helgerna?",
+   "Vad gör du sällan men skulle vilja göra oftare?",
+   "Hur skulle du göra en frekvenstabell över dina vänners favoritmat?",
+   "Tror du att en tärning alltid är rättvis?"
+  ]
+ }
+}

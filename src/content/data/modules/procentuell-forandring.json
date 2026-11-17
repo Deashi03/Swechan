@@ -1,0 +1,173 @@
+{
+ "id": "m.procentuell-forandring",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Procentuell förändring",
+ "titleJa": "{変化率|へんかりつ}",
+ "descriptionSv": "Procentuell förändring: förändring, procentuell, ökning, minskning, förändringsfaktor, procentenhet, relativ, jämfört med, ordinarie pris, prissänkning, prisökning, värdeökning, värdeminskning, ränta på ränta, fördubbla och halvera.",
+ "descriptionJa": "{変化率|へんかりつ}：{変化|へんか}、パーセントで{表|あらわ}した、{増加|ぞうか}、{減少|げんしょう}、{変化|へんか}の{倍率|ばいりつ}、パーセントポイント、{相対的|そうたいてき}な、〜と{比|くら}べて、{通常|つうじょう}{価格|かかく}、{値下|ねさ}げ、{値上|ねあ}がり、{価値|かち}の{上昇|じょうしょう}、{価値|かち}の{下落|げらく}、{複利|ふくり}、2{倍|ばい}にする、{半分|はんぶん}にする。",
+ "categoryId": "R06-A01-T02",
+ "tags": [
+  "matematik",
+  "procent"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.procent-i-vardagen"
+ ],
+ "related": [],
+ "recommendedOrder": 3117,
+ "words": [
+  {
+   "senseId": "s.förändring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.procentuell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minskning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förändringsfaktor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.procentenhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.relativ.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jämfört-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ordinarie-pris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prissänkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prisökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värdeökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värdeminskning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ränta-på-ränta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördubbla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur mycket blev det?",
+  "paragraphs": [
+   "Maria får ett brev från hyresvärden. Hyran ska gå upp från 8 000 till 8 400 kronor i månaden. Ökningen är 400 kronor. – Men hur stor är den procentuella förändringen? undrar hon.",
+   "Hon delar ökningen med den gamla hyran: 400 delat med 8 000 är 0,05, alltså 5 procent. Förändringsfaktorn är 1,05. Den nya hyran är alltså den gamla hyran gånger 1,05.",
+   "Samma vecka ser hon en prissänkning i en affär. En jacka kostar 600 kronor i stället för ordinarie pris, som är 800 kronor. Minskningen är 200 kronor, alltså 25 procent. Jämfört med förra veckan är jackan en fjärdedel billigare.",
+   "På nyheterna säger de att räntan har gått från 2 till 3 procent. – Det är en ökning med en procentenhet, säger Marias bror. Men den relativa ökningen är 50 procent! En prisökning eller en ränta kan vara svår att förstå.",
+   "Maria har lite pengar i en fond. Förra året kom en värdeminskning, men i år kom en värdeökning. Med ränta på ränta kan man fördubbla pengarna på ungefär tolv år om de växer med sex procent om året. – Men om en kris skulle halvera värdet, måste man sedan fördubbla det för att komma tillbaka, säger hennes bror."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket ökar hyran i kronor?",
+    "options": [
+     "8 400 kronor",
+     "5 kronor",
+     "400 kronor",
+     "800 kronor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hyran ska gå upp från 8 000 till 8 400 kronor i månaden. Ökningen är 400 kronor.",
+    "explanationJa": "{家賃|やちん}は400クローナ{上|あ}がります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vilken är förändringsfaktorn när hyran ökar med 5 procent?",
+    "options": [
+     "1,05",
+     "0,05",
+     "1,5",
+     "0,95"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Förändringsfaktorn är 1,05.",
+    "explanationJa": "5パーセントの{増加|ぞうか}の{倍率|ばいりつ}は1.05です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur stor är minskningen av jackans pris i procent?",
+    "options": [
+     "20 procent",
+     "200 procent",
+     "75 procent",
+     "25 procent"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Minskningen är 200 kronor, alltså 25 procent.",
+    "explanationJa": "ジャケットの{値段|ねだん}は25パーセント{下|さ}がりました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "När räntan går från 2 till 3 procent är ökningen en procentenhet.",
+    "correct": true,
+    "explanationSv": "Det är en ökning med en procentenhet, säger Marias bror.",
+    "explanationJa": "2パーセントから3パーセントは1ポイントの{上昇|じょうしょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "cause",
+    "statementSv": "Enligt hennes bror räcker det att värdet går upp 50 procent om en kris har gjort det hälften så stort.",
+    "correct": false,
+    "explanationSv": "Men om en kris skulle halvera värdet, måste man sedan fördubbla det för att komma tillbaka.",
+    "explanationJa": "{半分|はんぶん}になった{後|あと}は、2{倍|ばい}にならないと{元|もと}に{戻|もど}りません。"
+   }
+  ],
+  "factSources": [
+   "Räkneexemplen är kontrollerade: 400/8 000 = 5 %, 200/800 = 25 %, 2 → 3 % = 1 procentenhet och 50 % relativ ökning, 1,06^12 ≈ 2,01."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur priser, hyror och räntor förändras och hur man räknar ut förändringen i procent.",
+  "discussionPoints": [
+   "Har din hyra eller något annat pris gått upp det senaste året? Med hur många procent?",
+   "Vad är skillnaden mellan procent och procentenheter?",
+   "Tycker du att det är lättare att tänka i kronor eller i procent?",
+   "Vad skulle du göra om din lön fördubblades?"
+  ]
+ }
+}

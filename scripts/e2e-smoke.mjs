@@ -211,13 +211,13 @@ try {
   assert(await visible(page.getByRole('link', { name: /Skära och hacka/ })), 'catalog menu shows the published module in its topic group');
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), all of Historia & humaniora
-  // (0.36–0.41) and all of Natur & geografi (0.42–0.47) are published, so the planned entry is the first module of
-  // Matematik & naturvetenskap: Matematikens grunder → Tal & räkning → Heltal och naturliga tal.
+  // (0.36–0.41), all of Natur & geografi (0.42–0.47) and Matematikens grunder (0.48) are published, so the planned entry
+  // is Matematik & naturvetenskap → Avancerad matematik → Analys & derivata → Gränsvärden.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Matematik & naturvetenskap/ }).first().click();
-  await page.getByRole('link', { name: /Matematikens grunder/ }).first().click();
-  await page.getByRole('link', { name: /Tal & räkning/ }).first().click();
-  await page.getByRole('link', { name: /Heltal och naturliga tal/ }).first().click();
+  await page.getByRole('link', { name: /Avancerad matematik/ }).first().click();
+  await page.getByRole('link', { name: /Analys & derivata/ }).first().click();
+  await page.getByRole('link', { name: /Gränsvärden/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);

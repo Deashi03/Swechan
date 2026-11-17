@@ -1,0 +1,275 @@
+{
+ "entries": [
+  {
+   "id": "e.typvärde",
+   "lemma": "typvärde",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "typvärde",
+    "defSg": "typvärdet",
+    "indefPl": "typvärden",
+    "defPl": "typvärdena"
+   },
+   "senses": [
+    {
+     "id": "s.typvärde.1",
+     "ja": "{最頻値|さいひんち}",
+     "defSv": "Det värde eller svar som förekommer flest gånger i en datamängd.",
+     "defJa": "データの{中|なか}で、いちばん{多|おお}く{出|で}てくる{値|あたい}や{回答|かいとう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Typvärdet för skostorlek i klassen är 39.",
+       "ja": "クラスの{靴|くつ}のサイズの{最頻値|さいひんち}は39です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Typvärdet är det vanligaste värdet. Man hittar det genom att se vilket värde som förekommer flest gånger. En datamängd kan ha flera typvärden, om två värden förekommer lika ofta. Typvärdet kan också användas för svar som inte är tal, till exempel favoritfärg.",
+      "ja": "「typvärde」は、いちばんよく{出|で}てくる{値|あたい}です。どの{値|あたい}がいちばん{多|おお}く{出|で}てくるかを{見|み}て{求|もと}めます。{二|ふた}つの{値|あたい}が{同|おな}じ{回数|かいすう}だけ{出|で}てくれば、{最頻値|さいひんち}が{複数|ふくすう}になることもあります。{好|す}きな{色|いろ}のように、{数|かず}ではない{回答|かいとう}にも{使|つか}えます。"
+     },
+     "tags": [
+      "matematik",
+      "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.variationsbredd",
+   "lemma": "variationsbredd",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "variationsbredd",
+    "defSg": "variationsbredden",
+    "indefPl": "variationsbredder",
+    "defPl": "variationsbredderna"
+   },
+   "senses": [
+    {
+     "id": "s.variationsbredd.1",
+     "ja": "{範囲|はんい}、レンジ（{最大値|さいだいち}と{最小値|さいしょうち}の{差|さ}）",
+     "defSv": "Skillnaden mellan det största och det minsta värdet i en datamängd.",
+     "defJa": "データの{中|なか}の、いちばん{大|おお}きい{値|あたい}といちばん{小|ちい}さい{値|あたい}の{差|さ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Variationsbredden är 12 – 3 = 9.",
+       "ja": "{範囲|はんい}は12－3＝9です。"
+      }
+     ],
+     "explanation": {
+      "sv": "Variationsbredden räknar man ut genom att ta det största värdet minus det minsta värdet. Den är ett enkelt sätt att visa spridning. Men den bygger bara på två värden, så ett enda extremvärde kan göra den mycket stor.",
+      "ja": "「variationsbredd」は、{最大値|さいだいち}から{最小値|さいしょうち}を{引|ひ}いて{求|もと}めます。ばらつきを{示|しめ}す{簡単|かんたん}な{方法|ほうほう}ですが、{二|ふた}つの{値|あたい}だけをもとにしているので、{外|はず}れ{値|ち}が{一|ひと}つあるだけでとても{大|おお}きくなることがあります。"
+     },
+     "tags": [
+      "matematik",
+      "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.spridningsmått",
+   "lemma": "spridningsmått",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "spridningsmått",
+    "defSg": "spridningsmåttet",
+    "indefPl": "spridningsmått",
+    "defPl": "spridningsmåtten"
+   },
+   "senses": [
+    {
+     "id": "s.spridningsmått.1",
+     "ja": "{散布度|さんぷど}",
+     "defSv": "Ett tal som visar hur mycket värdena i en datamängd skiljer sig från varandra, till exempel variationsbredden.",
+     "defJa": "{範囲|はんい}のように、データの{値|あたい}どうしがどれくらい{違|ちが}うかを{示|しめ}す{数|かず}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Variationsbredden är ett enkelt spridningsmått.",
+       "ja": "{範囲|はんい}は{簡単|かんたん}な{散布度|さんぷど}の{一|ひと}つです。"
+      }
+     ],
+     "explanation": {
+      "sv": "Ett spridningsmått visar hur utspridda värdena är, medan ett lägesmått visar var mitten ligger. I grundskolan lär man sig främst variationsbredden. På gymnasiet lär man sig fler spridningsmått.",
+      "ja": "「spridningsmått」は{値|あたい}がどれくらい{散|ち}らばっているかを{示|しめ}し、「lägesmått（{代表値|だいひょうち}）」は{真|ま}ん{中|なか}がどこにあるかを{示|しめ}します。{小中学校|しょうちゅうがっこう}では{主|おも}に{範囲|はんい}を{習|なら}い、{高校|こうこう}ではほかの{散布度|さんぷど}も{習|なら}います。"
+     },
+     "tags": [
+      "matematik",
+      "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.utspridd",
+   "lemma": "utspridd",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "utspridd",
+    "neuter": "utspritt",
+    "plural": "utspridda",
+    "definite": "utspridda"
+   },
+   "senses": [
+    {
+     "id": "s.utspridd.1",
+     "ja": "{散|ち}らばった",
+     "defSv": "Som finns på många olika ställen, långt ifrån varandra.",
+     "defJa": "{多|おお}くの{違|ちが}う{場所|ばしょ}に、{互|たが}いに{離|はな}れてある。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Värdena är utspridda mellan 4 och 38.",
+       "ja": "{値|あたい}は4から38までの{間|あいだ}に{散|ち}らばっています。"
+      }
+     ],
+     "explanation": {
+      "sv": "Utspridd betyder att saker inte är samlade på ett ställe utan finns här och där. Man kan säga att husen i en by ligger utspridda, eller att värdena i en datamängd är utspridda. Motsatsen är att något ligger samlat eller tätt.",
+      "ja": "「utspridd」は、{物|もの}が{一|ひと}か{所|しょ}に{集|あつ}まっておらず、あちこちにあることです。{村|むら}の{家|いえ}が{散|ち}らばって{建|た}っている、データの{値|あたい}が{散|ち}らばっている、のように{使|つか}います。{反対|はんたい}は「samlad（まとまった）」や「tät（{密集|みっしゅう}した）」です。"
+     },
+     "tags": [
+      "matematik",
+      "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.skilja-sig-åt",
+   "lemma": "skilja sig åt",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "skilja sig åt",
+    "present": "skiljer sig åt",
+    "past": "skilde sig åt",
+    "supine": "skilt sig åt",
+    "imperative": "skilj er åt",
+    "group": "2",
+    "particle": "åt"
+   },
+   "senses": [
+    {
+     "id": "s.skilja-sig-åt.1",
+     "ja": "（{互|たが}いに）{異|こと}なる",
+     "defSv": "Vara olika varandra.",
+     "defJa": "{互|たが}いに{違|ちが}っている。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Svaren skiljer sig åt mycket mellan klasserna.",
+       "ja": "{回答|かいとう}はクラスによって{大|おお}きく{異|こと}なります。"
+      }
+     ],
+     "explanation": {
+      "sv": "Skilja sig åt används när två eller flera saker är olika varandra. Därför används det oftast med ord i plural: Resultaten skiljer sig åt. Om man jämför en sak med en annan säger man i stället skilja sig från: Hennes svar skiljer sig från mitt. Uttrycket ska inte blandas ihop med skilja sig, som betyder att avsluta ett äktenskap.",
+      "ja": "「skilja sig åt」は、{二|ふた}つ{以上|いじょう}のものが{互|たが}いに{違|ちが}うときに{使|つか}います。そのため{主語|しゅご}はふつう{複数|ふくすう}です：Resultaten skiljer sig åt（{結果|けっか}が{互|たが}いに{異|こと}なる）。{一|ひと}つのものを{別|べつ}のものと{比|くら}べるときは「skilja sig från」と{言|い}います。「skilja sig（{離婚|りこん}する）」と{混同|こんどう}しないように{注意|ちゅうい}しましょう。"
+     },
+     "frame": {
+      "subject": "Svaren"
+     },
+     "tags": [
+      "matematik",
+      "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.lika-ofta",
+   "lemma": "lika ofta",
+   "pos": "phrase",
+   "level": "B1",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.lika-ofta.1",
+     "ja": "{同|おな}じ{回数|かいすう}だけ",
+     "defSv": "Lika många gånger.",
+     "defJa": "{同|おな}じ{回数|かいすう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Talen 5 och 7 förekommer lika ofta.",
+       "ja": "5と7は{同|おな}じ{回数|かいすう}だけ{出|で}てきます。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e.poäng",
+   "lemma": "poäng",
+   "pos": "noun",
+   "level": "A2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "poäng",
+    "defSg": "poängen",
+    "indefPl": "poäng",
+    "defPl": "poängen"
+   },
+   "senses": [
+    {
+     "id": "s.poäng.1",
+     "ja": "{点|てん}、{点数|てんすう}",
+     "defSv": "Ett tal som visar hur bra man har gjort det på ett prov, i en match eller i ett spel.",
+     "defJa": "テストや{試合|しあい}、ゲームで、どれくらいよくできたかを{示|しめ}す{数|かず}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon fick 34 poäng av 40 på provet.",
+       "ja": "{彼女|かのじょ}はテストで40{点中|てんちゅう}34{点|てん}を{取|と}りました。"
+      }
+     ],
+     "tags": [
+      "matematik",
+      "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ]
+  }
+ ]
+}
