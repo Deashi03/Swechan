@@ -1,7 +1,7 @@
 {
  "id": "m.resa-med-nattag",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Resa med nattåg",
  "titleJa": "{夜行|やこう}{列車|れっしゃ}の{旅|たび}",
  "descriptionSv": "Resa med nattåg: nattåg, kupé, sovvagn, sovkupé, liggvagn, bädd, överbädd, underbädd, stege, dela kupé, konduktör, tågvärd, restaurangvagn, väckning och skumpa.",
@@ -82,11 +82,11 @@
  "reading": {
   "titleSv": "Nattåget norrut",
   "paragraphs": [
-   "Yui och Erik tar nattåget från Stockholm till Kiruna. Resan tar sexton timmar.",
-   "Erik ville åka liggvagn, för det är billigare. Men Yui ville ha en egen sovkupé i sovvagnen. Hon vill inte dela kupé med människor hon inte känner.",
-   "En tågvärd visar dem till kupén. Där finns två bäddar, ett litet bord och lakan. Yui tar underbädden, och Erik klättrar upp i överbädden på en liten stege.",
+   "Yui och Jonas tar nattåget från Stockholm till Kiruna. Resan tar sexton timmar.",
+   "Jonas ville åka liggvagn, för det är billigare. Men Yui ville ha en egen sovkupé i sovvagnen. Hon vill inte dela kupé med människor hon inte känner.",
+   "En tågvärd visar dem till kupén. Där finns två bäddar, ett litet bord och lakan. Yui tar underbädden, och Jonas klättrar upp i överbädden på en liten stege.",
    "Konduktören kommer och kontrollerar biljetterna. Sedan går de till restaurangvagnen och äter middag.",
-   "Tåget skumpar lite, men Yui sover gott. Erik vaknar flera gånger.",
+   "Tåget skumpar lite, men Yui sover gott. Jonas vaknar flera gånger.",
    "På morgonen är det väckning en halvtimme före ankomst. Ute är det snö och berg. – Vilken resa! säger Yui."
   ],
   "questions": [
@@ -108,8 +108,8 @@
    {
     "kind": "choice",
     "id": "q2",
-    "focus": "detail",
-    "promptSv": "Varför ville Erik åka liggvagn?",
+    "focus": "cause",
+    "promptSv": "Varför ville Jonas åka liggvagn?",
     "options": [
      "Det är skönare",
      "Det är billigare",
@@ -117,7 +117,7 @@
      "Yui ville det"
     ],
     "correctIndex": 1,
-    "explanationSv": "Erik ville åka liggvagn, för det är billigare.",
+    "explanationSv": "Jonas ville åka liggvagn, för det är billigare.",
     "explanationJa": "{安|やす}いからです。"
    },
    {
@@ -148,9 +148,9 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Yui sover bättre än Erik.",
+    "statementSv": "Yui sover bättre än Jonas.",
     "correct": true,
-    "explanationSv": "Yui sover gott. Erik vaknar flera gånger.",
+    "explanationSv": "Yui sover gott. Jonas vaknar flera gånger.",
     "explanationJa": "ユイのほうがよく{眠|ねむ}れました。"
    }
   ],

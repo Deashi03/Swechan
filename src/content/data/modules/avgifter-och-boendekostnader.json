@@ -1,7 +1,7 @@
 {
  "id": "m.avgifter-och-boendekostnader",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Avgifter och boendekostnader",
  "titleJa": "{住居費|じゅうきょひ}と{各種料金|かくしゅりょうきん}",
  "descriptionSv": "Vad det kostar att bo: hyra, el, uppvärmning, bredband, avgifter och räkningar.",
@@ -86,12 +86,12 @@
  "reading": {
   "titleSv": "Vad kostar det att bo?",
   "paragraphs": [
-   "Aiko och Erik vill veta hur stor deras boendekostnad är. De sätter sig vid bordet med alla räkningar.",
+   "Eriks syster Lisa och hennes sambo Emil vill veta hur stor deras boendekostnad är. De sätter sig vid bordet med alla räkningar.",
    "Hyran är den största kostnaden. Uppvärmning och varmvatten ingår i hyran, men inte el och bredband.",
    "Elräkningen kommer varje månad från elbolaget. På vintern är den högre, för då är förbrukningen större och elpriset ofta högre.",
-   "Erik har ett elavtal med rörligt pris. ”Kanske ska vi byta till fast pris”, säger Aiko. Hon går ner i källaren och tittar på mätaren.",
+   "Emil har ett elavtal med rörligt pris. ”Kanske ska vi byta till fast pris”, säger Lisa. Hon går ner i källaren och tittar på mätaren.",
    "De hyr också en parkeringsplats på gården. Avgiften för den är fyra hundra kronor i månaden. Sophämtning betalar de inte, den ingår.",
-   "Erik skriver allt i en lista. ”Vattnet betalar vi en gång per kvartal i det gamla huset, men här ingår det”, säger han."
+   "Emil skriver allt i en lista. ”Vattnet betalade vi en gång per kvartal i det gamla huset, men här ingår det”, säger han."
   ],
   "questions": [
    {
@@ -121,7 +121,7 @@
    {
     "kind": "choice",
     "id": "q3",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför är elräkningen högre på vintern?",
     "options": [
      "De använder mer el och priset är ofta högre.",
@@ -152,7 +152,7 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Aiko tycker att elavtalet kanske ska ändras.",
+    "statementSv": "Lisa tycker att elavtalet kanske ska ändras.",
     "correct": true,
     "explanationSv": "Hon säger att de kanske ska byta till fast pris.",
     "explanationJa": "{固定料金|こていりょうきん}に{変|か}えたほうがいいかもしれないと{言|い}っています。"

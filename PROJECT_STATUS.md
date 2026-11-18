@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. **Kvalitetsplanen styr ordningen** (produktägarens beslut 2026-11-18). Ta nästa obockade etapp i `docs/QUALITY_PLAN.md`. Nästa är **A1: slå ihop PR #66**. Bakgrund och mätvärden: `docs/QUALITY_AUDIT_2026-11.md`.
+1. **Kvalitetsplanen styr ordningen** (produktägarens beslut 2026-11-18). Ta nästa obockade etapp i `docs/QUALITY_PLAN.md`. A1 är klar (språkgranskningen av R01–R03 är sammanslagen). Nästa är **A2: mätning och spärr**. Bakgrund och mätvärden: `docs/QUALITY_AUDIT_2026-11.md`.
    - Ordning: hela del A (systemet) och de snabba rättningarna B1–B4, **sedan** *Datorer & internet* (R07-A01) enligt den nya produktionsinstruktionen. Resten av eftersläpningen varvas därefter med ny produktion.
    - Ingen ny modulproduktion förrän A7 är klar.
    - Beslut: matchningstest för symbolbilder, manuellt spår för bilder som underkänts två gånger (aldrig `none`), kort förklaring för abstrakta B1-ord.

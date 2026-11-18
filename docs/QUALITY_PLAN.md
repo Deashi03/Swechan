@@ -23,7 +23,7 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 ## Del A. Systemet (gör att nya moduler inte upprepar felen)
 
 ### A1. Slå ihop språkgranskningen (PR #66)
-- [ ] Synka `granskning/vardag-och-hem` med `main`, lös krockarna i `CHANGELOG.md` och `PROJECT_STATUS.md`, bygg om modulindex, kör alla kontroller, slå ihop.
+- [x] Synka `granskning/vardag-och-hem` med `main`, lös krockarna i `CHANGELOG.md` och `PROJECT_STATUS.md`, bygg om modulindex, kör alla kontroller, slå ihop.
 
 **Klart när:** PR #66 är sammanslagen och CI är grön. Rättningarna från R01–R03 finns på `main`.
 

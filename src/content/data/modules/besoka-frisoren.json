@@ -1,7 +1,7 @@
 {
  "id": "m.besoka-frisoren",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Besöka frisören",
  "titleJa": "{美容院|びよういん}に{行|い}く",
  "descriptionSv": "Hos frisören: frisörsalong, drop-in, önskemål, klippning, klippa sig, toppa, tunna ur, trimma, färgning och permanenta.",
@@ -85,14 +85,14 @@
    "Leo sätter sig i frisörstolen, och frisören Sara sätter en skyddskappa runt honom. ”Har du några önskemål?” frågar hon.",
    "”Kort, men inte snagg”, säger Leo. Klippningen tar en kvart. Leo snurrar i stolen hela tiden.",
    "Efter Leo är det Aikos tur. Hon vill bara toppa håret, men det är så tjockt att Sara vill tunna ur det också. Klippning med hårtvätt kostar mer än utan.",
-   "Mia vill ha färgning, men det tar för lång tid i dag. Morfar kommer in och vill att Sara ska trimma hans skägg.",
-   "Mormor berättar att hon ofta permanentade håret förr. ”En gång var jag så missnöjd att jag grät”, skrattar hon."
+   "Mia vill ha färgning, men det tar för lång tid i dag. Farfar kommer in och vill att Sara ska trimma hans skägg.",
+   "Farmor berättar att hon ofta permanentade håret förr. ”En gång var jag så missnöjd att jag grät”, skrattar hon."
   ],
   "questions": [
    {
     "kind": "choice",
     "id": "q1",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför måste Leo klippa sig?",
     "options": [
      "Han ska på fest.",
@@ -132,7 +132,7 @@
     "kind": "choice",
     "id": "q4",
     "focus": "detail",
-    "promptSv": "Vad vill morfar?",
+    "promptSv": "Vad vill farfar?",
     "options": [
      "Att Sara trimmar skägget",
      "En färgning",
@@ -140,14 +140,14 @@
      "En hårtvätt"
     ],
     "correctIndex": 0,
-    "explanationSv": "Morfar vill att Sara ska trimma hans skägg.",
+    "explanationSv": "Farfar vill att Sara ska trimma hans skägg.",
     "explanationJa": "ひげを{整|ととの}えてほしいです。"
    },
    {
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Mormor var en gång mycket ledsen över en frisyr.",
+    "statementSv": "Farmor var en gång mycket ledsen över en frisyr.",
     "correct": true,
     "explanationSv": "”En gång var jag så missnöjd att jag grät.”",
     "explanationJa": "{泣|な}くほど{不満|ふまん}でした。"

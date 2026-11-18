@@ -1,7 +1,7 @@
 {
  "id": "m.cykelvagar-och-cykelbanor",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Cykelvägar och cykelbanor",
  "titleJa": "{自転車|じてんしゃ}{道|どう}",
  "descriptionSv": "Cykelvägar och cykelbanor: cykelväg, cykelfält, trafikseparerad, cykelöverfart, cykelpassage, cykelställ, cykelled, cykelpendlare, cykelvänlig, hyrcykel, elcykel, lådcykel, cykeltur, ta cykeln och sida vid sida.",
@@ -82,19 +82,19 @@
  "reading": {
   "titleSv": "En cykelvänlig stad",
   "paragraphs": [
-   "Leo bor i Malmö, en mycket cykelvänlig stad. Han är cykelpendlare och tar cykeln till jobbet varje dag.",
+   "Jonas bor i Malmö, en mycket cykelvänlig stad. Han är cykelpendlare och tar cykeln till jobbet varje dag.",
    "Det mesta av vägen cyklar han på en trafikseparerad cykelväg. Bara i centrum måste han cykla i ett cykelfält på gatan, bredvid bilarna.",
-   "Vid en stor gata finns en cykelöverfart. Där stannar bilarna för honom. Men vid nästa gata är det en cykelpassage, och där får Leo vänta.",
-   "På morgonen cyklar många sida vid sida. Leos granne kör sina barn i en lådcykel, och hans kollega har en elcykel.",
-   "Vid jobbet ställer Leo cykeln i cykelstället. Turister tar hyrcyklar från stationen.",
-   "På helgen gör Leo och hans vänner en lång cykeltur på en cykelled längs havet."
+   "Vid en stor gata finns en cykelöverfart. Där stannar bilarna för honom. Men vid nästa gata är det en cykelpassage, och där får Jonas vänta.",
+   "På morgonen cyklar många sida vid sida. Jonass granne kör sina barn i en lådcykel, och hans kollega har en elcykel.",
+   "Vid jobbet ställer Jonas cykeln i cykelstället. Turister tar hyrcyklar från stationen.",
+   "På helgen gör Jonas och hans vänner en lång cykeltur på en cykelled längs havet."
   ],
   "questions": [
    {
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "Var bor Leo?",
+    "promptSv": "Var bor Jonas?",
     "options": [
      "I Lund",
      "I Stockholm",
@@ -102,14 +102,14 @@
      "I Malmö"
     ],
     "correctIndex": 3,
-    "explanationSv": "Leo bor i Malmö.",
+    "explanationSv": "Jonas bor i Malmö.",
     "explanationJa": "マルメです。"
    },
    {
     "kind": "choice",
     "id": "q2",
     "focus": "detail",
-    "promptSv": "Var cyklar Leo i centrum?",
+    "promptSv": "Var cyklar Jonas i centrum?",
     "options": [
      "På en cykelled",
      "På trottoaren",
@@ -124,16 +124,16 @@
     "kind": "truefalse",
     "id": "q3",
     "focus": "detail",
-    "statementSv": "Vid cykelpassagen stannar bilarna för Leo.",
+    "statementSv": "Vid cykelpassagen stannar bilarna för Jonas.",
     "correct": false,
-    "explanationSv": "Vid nästa gata är det en cykelpassage, och där får Leo vänta.",
-    "explanationJa": "{待|ま}つのはレオです。"
+    "explanationSv": "Vid nästa gata är det en cykelpassage, och där får Jonas vänta.",
+    "explanationJa": "{待|ま}つのはヨナスです。"
    },
    {
     "kind": "choice",
     "id": "q4",
     "focus": "detail",
-    "promptSv": "Vad har Leos kollega?",
+    "promptSv": "Vad har Jonass kollega?",
     "options": [
      "En lådcykel",
      "En elcykel",
@@ -148,9 +148,9 @@
     "kind": "truefalse",
     "id": "q5",
     "focus": "inference",
-    "statementSv": "Leo cyklar både på vardagar och på helgen.",
+    "statementSv": "Jonas cyklar både på vardagar och på helgen.",
     "correct": true,
-    "explanationSv": "Han tar cykeln till jobbet varje dag … På helgen gör Leo … en lång cykeltur.",
+    "explanationSv": "Han tar cykeln till jobbet varje dag … På helgen gör Jonas … en lång cykeltur.",
     "explanationJa": "{平日|へいじつ}も{週末|しゅうまつ}も{乗|の}ります。"
    }
   ],

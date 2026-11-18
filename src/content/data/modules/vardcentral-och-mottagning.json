@@ -1,7 +1,7 @@
 {
  "id": "m.vardcentral-och-mottagning",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Vårdcentral och mottagning",
  "titleJa": "{診療所|しんりょうじょ}と{外来|がいらい}",
  "descriptionSv": "Vårdcentral och mottagning: vårdcentral, mottagning, öppettider, läkarbesök, väntrum, personnummer, patientavgift, frikort, sjuksköterska, allmänläkare, listad, barnavårdscentral, akutmottagning, akuten och jourcentral.",
@@ -83,19 +83,19 @@
  "reading": {
   "titleSv": "På vårdcentralen",
   "paragraphs": [
-   "Aiko har haft ont i örat i flera dagar. Hon är listad på vårdcentralen nära skolan. Mottagningen har öppettider från åtta till fem. Hon har aldrig gjort ett läkarbesök i Sverige förut.",
-   "I receptionen sitter en receptionist. – Vad är ditt personnummer? frågar hon. Aiko har bara bott i Sverige i ett år, men hon har redan ett personnummer.",
-   "Aiko är under 18 år, så hon behöver inte betala någon patientavgift. Hennes mormor, som bor hos dem, har ett frikort, för hon har varit hos läkaren många gånger i år.",
+   "Mei har haft ont i örat i flera dagar. Hon är listad på vårdcentralen nära skolan. Mottagningen har öppettider från åtta till fem. Hon har aldrig gjort ett läkarbesök i Sverige förut.",
+   "I receptionen sitter en receptionist. – Vad är ditt personnummer? frågar hon. Mei har bara bott i Sverige i ett år, men hon har redan ett personnummer.",
+   "Mei är under 18 år, så hon behöver inte betala någon patientavgift. Hennes mormor, som bor hos dem, har ett frikort, för hon har varit hos läkaren många gånger i år.",
    "I väntrummet sitter en mamma med en liten bebis. Hon berättar att de var på barnavårdscentralen i går, och att bebisen växer som den ska.",
-   "Först träffar Aiko en sjuksköterska som tittar i örat. Sedan kommer en allmänläkare. – Det är en infektion i örat, säger han. Om det blir värre i helgen kan du gå till jourcentralen.",
-   "– Men om du får mycket hög feber eller svårt att andas ska du åka till akutmottagningen på sjukhuset, säger läkaren. Aiko hoppas att hon aldrig behöver åka till akuten."
+   "Först träffar Mei en sjuksköterska som tittar i örat. Sedan kommer en allmänläkare. – Det är en infektion i örat, säger han. Om det blir värre i helgen kan du gå till jourcentralen.",
+   "– Men om du får mycket hög feber eller svårt att andas ska du åka till akutmottagningen på sjukhuset, säger läkaren. Mei hoppas att hon aldrig behöver åka till akuten."
   ],
   "questions": [
    {
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "Varför går Aiko till vårdcentralen?",
+    "promptSv": "Varför går Mei till vårdcentralen?",
     "options": [
      "Hon har brutit armen",
      "Hon behöver vaccin",
@@ -103,14 +103,14 @@
      "Hon har ont i magen"
     ],
     "correctIndex": 2,
-    "explanationSv": "Aiko har haft ont i örat i flera dagar.",
+    "explanationSv": "Mei har haft ont i örat i flera dagar.",
     "explanationJa": "{耳|みみ}が{痛|いた}いからです。"
    },
    {
     "kind": "choice",
     "id": "q2",
     "focus": "detail",
-    "promptSv": "Varför betalar inte Aiko någon patientavgift?",
+    "promptSv": "Varför betalar inte Mei någon patientavgift?",
     "options": [
      "Hon har frikort",
      "Hon har ett personnummer",
@@ -118,23 +118,23 @@
      "Hon är under 18 år"
     ],
     "correctIndex": 3,
-    "explanationSv": "Aiko är under 18 år, så hon behöver inte betala någon patientavgift.",
+    "explanationSv": "Mei är under 18 år, så hon behöver inte betala någon patientavgift.",
     "explanationJa": "18{歳|さい}{未満|みまん}だからです。"
    },
    {
     "kind": "truefalse",
     "id": "q3",
     "focus": "detail",
-    "statementSv": "Aiko träffar läkaren först.",
+    "statementSv": "Mei träffar läkaren först.",
     "correct": false,
-    "explanationSv": "Först träffar Aiko en sjuksköterska …",
+    "explanationSv": "Först träffar Mei en sjuksköterska …",
     "explanationJa": "まず{看護師|かんごし}に{会|あ}います。"
    },
    {
     "kind": "choice",
     "id": "q4",
     "focus": "detail",
-    "promptSv": "Vart kan Aiko gå om det blir värre i helgen?",
+    "promptSv": "Vart kan Mei gå om det blir värre i helgen?",
     "options": [
      "Till jourcentralen",
      "Till barnavårdscentralen",
@@ -156,7 +156,8 @@
    }
   ],
   "factSources": [
-   "Vardagsscen utan faktapåståenden."
+   "Barn och unga betalar i de flesta regioner ingen patientavgift i öppen vård; högkostnadsskyddet ger frikort när man har betalat 1 450 kronor (2026) under en tolvmånadersperiod (1177.se: patientavgifter, högkostnadsskydd för öppenvård).",
+   "Barnavårdscentralen (BVC) följer barns hälsa och utveckling upp till skolåldern; jourmottagningar tar emot på kvällar och helger, och akutmottagningen är till för akuta och allvarliga besvär (1177.se)."
   ]
  },
  "conversation": {

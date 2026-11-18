@@ -1,7 +1,7 @@
 {
  "id": "m.biverkningar-och-varningar",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Biverkningar och varningar",
  "titleJa": "{副作用|ふくさよう}と{警告|けいこく}",
  "descriptionSv": "Biverkningar och varningar: biverkning, sällsynt, dåsighet, varningstriangel, trafikfarlig, interaktion, beroende, beroendeframkallande, abstinens, försiktighet, amma, observera, riskera, rapportera och Läkemedelsverket.",
@@ -82,11 +82,11 @@
  "reading": {
   "titleSv": "Läs bipacksedeln",
   "paragraphs": [
-   "Aikos mamma har fått en ny medicin mot allergi. Hon läser bipacksedeln noga. Där står det vilka biverkningar medicinen kan ge.",
-   "Vanliga biverkningar är huvudvärk och dåsighet. Allvarliga biverkningar är sällsynta. På förpackningen finns en röd varningstriangel. – Den betyder att medicinen kan vara trafikfarlig, säger mamma. Jag kör inte bil i dag.",
+   "Meis mamma har fått en ny medicin mot allergi. Hon läser bipacksedeln noga. Där står det vilka biverkningar medicinen kan ge.",
+   "Vanliga biverkningar är huvudvärk och dåsighet. Allvarliga biverkningar är sällsynta. Det står också att medicinen kan vara trafikfarlig. – Förr fanns det en röd varningstriangel på sådana förpackningar, säger mamma. Nu måste man läsa själv. Jag kör inte bil i dag.",
    "Det står också: Observera att medicinen inte ska tas med alkohol. Mamma frågar apotekaren om det finns någon interaktion med hennes andra tabletter. Det gör det inte.",
    "Mormor tar sömnmedel ibland. Läkaren har sagt att det är beroendeframkallande, och att hon riskerar att få ett beroende om hon tar det varje kväll. Om man slutar för snabbt kan man få abstinens.",
-   "Aikos moster har nyss fått barn och ammar. Hon måste använda vissa läkemedel med försiktighet, eftersom medicinen kan gå över i mjölken.",
+   "Meis moster har nyss fått barn och ammar. Hon måste använda vissa läkemedel med försiktighet, eftersom medicinen kan gå över i mjölken.",
    "Om man får en konstig biverkning kan man rapportera den till Läkemedelsverket. Myndigheten samlar in information om alla läkemedel i Sverige."
   ],
   "questions": [
@@ -109,16 +109,16 @@
     "kind": "choice",
     "id": "q2",
     "focus": "detail",
-    "promptSv": "Vad betyder den röda varningstriangeln?",
+    "promptSv": "Vad betydde den röda varningstriangeln förr?",
     "options": [
-     "Att medicinen är billig",
-     "Att medicinen kan vara trafikfarlig",
-     "Att medicinen är för barn",
-     "Att medicinen är gammal"
+     "Att medicinen var billig",
+     "Att medicinen kunde vara trafikfarlig",
+     "Att medicinen var för barn",
+     "Att medicinen var gammal"
     ],
     "correctIndex": 1,
-    "explanationSv": "– Den betyder att medicinen kan vara trafikfarlig …",
-    "explanationJa": "{運転|うんてん}に{危険|きけん}かもしれないという{意味|いみ}です。"
+    "explanationSv": "– Förr fanns det en röd varningstriangel på sådana förpackningar …",
+    "explanationJa": "{運転|うんてん}に{危険|きけん}かもしれないという{意味|いみ}でした。"
    },
    {
     "kind": "truefalse",
@@ -155,7 +155,8 @@
    }
   ],
   "factSources": [
-   "Vardagsscen utan faktapåståenden."
+   "Den röda varningstriangeln på svenska läkemedelsförpackningar togs bort den 1 juli 2005; den som tar ett läkemedel ansvarar själv för att bedöma om hen kan köra, med hjälp av bipacksedeln (Läkemedelsverket; NTF).",
+   "Både vårdpersonal och allmänhet kan rapportera misstänkta biverkningar till Läkemedelsverket; sömnmedel kan vara beroendeframkallande, och vissa läkemedel går över i bröstmjölken (Läkemedelsverket; 1177 Vårdguiden)."
   ]
  },
  "conversation": {

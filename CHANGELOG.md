@@ -7,6 +7,137 @@ Inget innehåll och ingen kod är ändrad.
 - `docs/QUALITY_AUDIT_2026-11.md`: revision av hela materialet vid 0.51.0. Systematiska fel i bildtäckning, laddtid, animationer, betydelser, förklaringar, språk och process, med mätvärden per ämnesgrupp.
 - `docs/QUALITY_PLAN.md`: etapper för systemet (mätning och spärr, laddtid, bildsystem, datamodell för betydelser, kvalitetskontrakt) och för eftersläpningen. Systemet och de snabba rättningarna går före nästa nya överämne; resten varvas med ny produktion.
 - Produktägarens beslut: matchningstest för symbolbilder, manuellt spår efter två underkända omgångar, kort förklaring för abstrakta B1-ord.
+- **Etapp A1 klar:** språk- och faktagranskningen av *Vardag & hem*, *Människan & hälsa* och *Samhälle & institutioner* (PR #66, de tre avsnitten nedan) är sammanslagen med `main`.
+
+## Osläppt – 2026-11-17: språk- och faktagranskning av *Samhälle & institutioner*
+
+Alla 252 moduler i *Samhälle & institutioner* (R03) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. Alla 3 056 ordbetydelser som inte redan lästes med R01 och R02 är lästa på svenska och japanska: glosa, definition, exempel, förklaring, användningsnot och böjning. Uppgifter som kan ha ändrats kontrollerades mot källa. 108 moduler och 49 ordboksfiler är ändrade; alla ändrade moduler har ny `contentVersion`.
+
+### Lagar och regler som har ändrats
+- *Brottets rekvisit* och ordposten *straffmyndig*: 15 år gäller fortfarande, men sedan den 10 september 2026 kan den som har fyllt 14 år få straff för mycket allvarliga brott.
+- *Böter och fängelse* och ordposten *villkorlig frigivning*: två tredjedelar gäller fortfarande för de flesta, men tre fjärdedelar för straff på sex år eller mer (från 1 januari 2026).
+- *Vanliga brottsrubriceringar*: inbrott i bostad heter *inbrottsstöld* (inte grov stöld), och *snatteri* heter *ringa stöld* i lagen sedan 2017. Exemplet på ofredande beskrev sexuellt ofredande; nu ropar mannen efter flickorna. Samma rättningar i ordposterna *snatteri* och *ofredande*.
+- *Detaljplan och bygglov* och ordposterna *friggebod* och *attefallshus*: orden togs bort ur lagen den 1 december 2025. Texten och posterna säger nu det, och att små hus på högst 30 kvadratmeter får byggas utan bygglov.
+- *Medborgarskap*: sedan den 6 juni 2026 krävs också svenska och egen försörjning. Lars bor i Finland i stället för Spanien.
+- *Gymnasieskolans program* och ordposterna *gymnasiepoäng*, *gymnasiegemensamt ämne*, *individuellt val*, *gymnasieexamen*, *ämnesplan* och *nationellt prov*: gymnasiet har ämnen med nivåer i stället för kurser (Gy25).
+- Ordposten *kamerabevakning*: tillstånd behövs inte längre (2025). *Amorteringskrav*: reglerna står i lag sedan den 1 april 2026.
+- Faktakällor uppdaterade: lagen om ordningsvakter (2023:421), gränsen för förenklat tvistemål 2026 (29 600 kronor), lagen om begränsning av bostadskrediter.
+
+### Sakfel och logiska fel i texterna
+- *Hyra och boenderätt*: Maja hyrde ett rum men texten handlade om andrahandsuthyrning av en lägenhet; det var hyresnämnden som avgjorde en förverkad hyresrätt (nu tingsrätten).
+- *Förskola och grundskola*: familjen flyttade i mars men dottern hade gått två år på förskolan; Kenji gick i årskurs 6 samma år som Yui började förskoleklass, men i *Betyg och bedömning* går han i sexan när Yui går i ettan; nu är han tio år och går i fyran.
+- *Skolstart och skolplikt*: ”Skolan är statlig eller kommunal” (de flesta skolor är kommunala eller fristående).
+- *Pensionssparande*, *Studievägledning*, *Att tolka en lagtext*, *Nybyggnation* (kommunstyrelsens ordförande), *Tvister och förlikning*, *Jämföra utbildningssystem* (PISA görs inte längre vart tredje år) och *Målgrupper* (”säger hon” utan person).
+- Ordposter: *skiljeförfarande* (konsumenter), *statlig inkomstskatt* (gränsen), *avgiftsbelagd* (EU-studenter), *kunskapsmätning*, *föreläsning* (akademisk kvart), *ledare*, *staket*, *halvsanning*, *studie*.
+
+### Roller och namn
+- Vuxna Leo, Mia och Aiko som inte är familjen i radhuset har fått andra namn i sex moduler. Erik har bytt namn i tolv moduler där han var åklagare, student, barn eller sambo med någon annan.
+- Namn i katakana skrivs lika i hela området (カリン, ヨナス, ペル, リサ m.fl.); två japanska förklaringar hade fel namn.
+
+### Svenska, japanska och böjning
+- Ett trettiotal språkfel i lästexter, frågor och ordposter (*är sjukt*, *bli medlem*, *svensk rabarber*, *till till exempel*, dubbla punkter, *fryses ut*, *Man kan ta den efter …*).
+- Japanska: fyra förklaringar saknade meningar som fanns på svenska; *säga upp* hade fel subjekt; två furiganafel (*違法*, *4分*).
+- Böjning: *damm* (dammen, dammar – med not om *dammet* för smuts), *motion* (motioner), och fem poster där pluralen var ett streck.
+
+### Kontroll
+`validateContent` och `checkVocabulary`: 0 problem. Furigana i R03 är kontrollerad maskinellt (läsningar per kanjisträng, räkneord).
+
+## Osläppt – 2026-11-16: språkgranskning av *Människan & hälsa*
+
+Alla 252 moduler i *Människan & hälsa* (R02) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. Alla ordposter som modulerna använder och som inte redan lästes med *Vardag & hem* (3 698 betydelser) är lästa: japansk glosa, svensk definition, exempel, svensk förklaring, användningsnot och böjning. De japanska definitionerna, förklaringarna och användningsnoterna är jämförda med svenskan mening för mening. 91 moduler i R02, 3 moduler utanför R02 (japansk stavning av Johan i två, böjningen av *sms* i en) och 29 ordlistefiler är ändrade. Versionen och service workern är inte höjda.
+
+### Sakfel och logiska fel
+- *Biverkningar och varningar*: texten sa att trafikfarliga läkemedel har en röd varningstriangel på förpackningen. Den togs bort 2005. Nu säger mamma att triangeln fanns förr, och frågan, ordposterna *varningstriangel* och *trafikfarlig* är ändrade på samma sätt.
+- *Förkylning och influensa*: på 1177 svarar sjuksköterskor, inte läkare.
+- *Diabetes och ämnesomsättning*: ”lågt blodsocker är farligare” → ”blir farligt snabbare” (text och fråga).
+- *Hjärt-kärlsjukdomar*: ”halvsidig förlamning i ena armen” gick inte ihop; nu ”domning i ena armen eller halvsidig förlamning”.
+- *Kroniska sjukdomar*: KOL ”blev bättre” när farfar slutade röka, fast sjukdomen är obotlig; nu mår han bättre.
+- *Allergier och astma* och ordposten *pollensäsong*: säsongen börjar ”på våren”, inte ”i mars med björken”.
+- *Mor- och farföräldrar*: farmor var änka fast farföräldrarna bor i Skåne; nu är det farmors syster.
+- *Beskriva ett släktträd*: Saras barn hade ”sina rötter i Japan” utan förklaring, och mormor var avliden här men levde i grannmodulen. Nu är det gammelfarfar som föddes i Finland, och Aiko berättar om sin egen släkt.
+- *Lära känna någon*: Aiko träffade svenska Sara på en kurs i svenska; nu en kurs i dans.
+- *Njurar och urinvägar*: lillebrors replik (”Säg kiss som alla andra!”) passade inte till det Mia hade sagt.
+- Ordposter: *frikort* (taket är 1 450 kronor 2026, inte ”några tusen”), *cellprov* (23–70 år, inte 23–64), *riskbruk* (tio glas eller mer, inte mer än tio), *snus* (förbjudet att sälja i alla andra EU-länder, inte ”de flesta”), *korsband* (man bryter inte ett korsband).
+
+### Språk
+- *urin* är ett en-ord: *urinen* i modulen *Njurar och urinvägar*, i ordposten (böjning, exempel) och i definitioner och förklaringar till sju andra ord.
+- *stressymptom* → *stressymtom* (modulen *Stressreaktioner* och ordposten; ID:t `s.stressymptom.1` är orört).
+- *pratar teckenspråk* → *använder*, *har lite tempen* → *har lite temp* / *är tempen inte lika hög*, *klämma om näsan* → *kläm*, *föra vidare dem*, *kutar efter den* (ett band), *Ni har lite fettlever* → *Du*, *djupt glad* → *djupt tacksam*, *kysste* mitt i presens, *tappat bort sin buss*, *köper biljetter på en höft*, *Ett fosterbarn bor alltid … för alltid* m.fl.
+- Ordposter: *orädd* (exemplet hade *orätt*), *längta tillbaka* (*vill jag längta*), *svedd*, *ge efter* och *tjuvläsa* (otydliga förklaringar).
+- Namnet Johan skrevs ジョアン, ジョハン och ヨーハン i fyra moduler; nu ヨハン som i övriga 19.
+
+### Böjning
+- *decibel* (*decibeln*), *vit lögn* och *blind date* (understreck i formerna).
+- *fobi*, *mammografi*, *screening*, *gåshud* och *sms* saknade böjning.
+
+### Frågor och förklaringar
+- *Mor- och farföräldrar* q2: frågan (”Vad ger morfar barnen?”) passade inte till svaren (”Med glass och sagor”).
+- *Födelsedagar* q4, *Lever och gallblåsa* q3, *Sömn och vakenhet* q1 m.fl.: förklaringen citerar nu texten som den står.
+
+### Faktakällor
+- 62 moduler i *Kroppen & sinnena* och *Hälsa & sjukvård* hade `Vardagsscen utan faktapåståenden.` fast texten innehåller medicinska fakta eller regler. De har nu faktakällor (1177 Vårdguiden, Folkhälsomyndigheten, Socialstyrelsen, Läkemedelsverket, Livsmedelsverket, HLR-rådet, SOS Alarm, patientlagen m.fl.). Källorna anges på nivån myndighet och ämne. Fyra uppgifter är kontrollerade mot källan i den här sessionen: varningstriangeln (2005), högkostnadsskyddet (1 450 kronor 2026), cellprov (23–70 år) och riskbruk (10 standardglas).
+
+### Japanska definitioner och förklaringar
+- Jämförelsen med svenskan gav tio rättelser i nio ordlistefiler. Sakfel: *blåskatarr* (förklaringen sa att man får det av att frysa eller sitta i våta badkläder; nu står det att man trodde så förr och att orsaken är bakterier, på båda språken).
+- Japanskan sa något annat än svenskan: *marschera* (”som soldater” → i ett band), *halta* (”går oregelbundet” → står nästan inte på det ena benet), *frustration* (”besvikelse” → trötthet), *långväxt* (”stor till kroppen” struket), *sommarjobb* (”ofta” saknades), *svarslös* (”oväntad fråga” → konstig), *monoton* (”blir sömniga” → trötta), *hytta med näven* (”tecknad film” → film), *skeptisk* (onaturligt ord för erbjudande).
+- En automatisk kontroll hittade ingen kanji utan furigana i R02.
+
+### Uppföljning 2026-11-17: listan ”inte gjort” åtgärdad
+- **Roller:** Aiko är nu vuxen i alla moduler. Skolflickan i 43 moduler om kropp och vård heter Mei (メイ). Leo är alltid ett barn: den vuxne Leo heter Jonas i tre moduler i R02 och Leonardo i *Avstånd och närhet*. Aikos man heter Erik även i *Svärfamilj och ingifta*, och kollegan med bröder i *Föräldrar och barn* heter Karin, eftersom Sara har systrar i grannmodulen. Övriga namn (Johan, Karin, Kenji, Sara med flera) används fortfarande fritt mellan ämnesgrupperna; det finns inget fastställt persongalleri att rätta mot.
+- **Fakta mot källa:** brännskador kyls i femton minuter, inte tjugo (1177 Vårdguiden varnar för nedkylning efter en kvart); text, fråga, ordpost och faktakälla är ändrade. Kontrollerade utan ändring: näsblod (tio minuter), sömnbehov (sju till nio timmar), vårdgarantin (90 dagar), stelkrampsvaccin (vart tjugonde år), drunkningstal (103 personer 2025) och barnbidrag (1 250 kr). Alla sifferuppgifter i ordposternas definitioner och förklaringar i R02 är lästa en gång till; övriga är inte hämtade en och en från källan.
+- **Bilden till *varningstriangel*** visar en läkemedelsask med triangel. Det stämmer med modulens text om hur det var förr, så bilden är oförändrad.
+- **Furigana** i R01 och R02 (120 019 läsningar, 6 689 olika kanjiskrivningar) är kontrollerade: alla skrivningar med flera läsningar, alla räkneord efter siffra och alla sammansättningar vars läsning inte följer av delarnas vanliga läsningar. Fem rättelser: 食べ{物|もの}, 6{本|ぽん}, 15{分|ふん}, 8{分|ぷん} och {隅|すみ} i stället för {角|すみ}.
+- **Tester:** paketen går inte att installera här, så `npm test` kan inte köras som det är. Med en egen körare (esbuild och en liten ersättare för vitest) går 16 av 26 testfiler, och alla 1 555 tester i dem godkänns, bland annat innehållsvalidering, ordförrådskontroll, furigana, bilder, ordbok, samtal och övningar.
+
+### Inte gjort
+- Tio testfiler kräver IndexedDB eller en webbläsarmiljö (lagring, repetition, modulflöde, backup, katalog, utvecklarverktyg, tre gränssnittstester) och är inte körda. `npm run typecheck`, bygget och e2e är inte heller körda. Grenen ändrar ingen kod, bara innehållsfiler.
+
+## Osläppt – 2026-11-16: språkgranskning av *Vardag & hem*
+
+Alla 252 moduler i *Vardag & hem* (R01) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. 141 moduler och 3 ordposter är ändrade. Versionen och service workern är inte höjda (utvecklingsläget nollställer progressionen vid ny `APP_VERSION`); ändringarna följer med nästa release.
+
+### Sakfel och logiska fel
+- *Toalett och handfat*: lappen sa att papper inte får slängas i toaletten. I Sverige spolar man ner toalettpapper; nu gäller lappen torkpapper.
+- *Badrumsproblem och reparation*: en granne under radhuset fick vatten i taket. Nu droppar det i familjens eget kök.
+- *Säkerhet i köket*: brännskadan kyls med svalt vatten (1177), inte kallt.
+- *Klaga och begära ersättning*: ARN:s beslut är en rekommendation; butiken ”måste” inte längre, den följer beslutet.
+- *Sedlar och mynt*: ogiltiga sedlar löses in hos Riksbanken, inte ”på banken”.
+- *Prislappar och jämförpriser*: avrundning till hela kronor gäller kontant betalning.
+- *Klockslag och tidpunkter*: tidsskillnaden mot Japan stämde inte (”mitt på dagen … nästan midnatt”).
+- *Resa mellan svenska städer*: ”de flesta bor i småstäder” är ändrat till ”många”, och frågan är utbytt.
+- *Biljetter och periodkort*: trettonåriga Mia var ”student” med studentrabatt; nu är det Eriks kusin.
+- *Ungefärliga mängder*, *Sängar och sovrumsmöbler*, *Avgifter och boendekostnader*, *Paket och spårning*, *Sömmar och detaljer*, *Hotellrum och reception*: motsägelser inom texten.
+- **Farmor och farfar:** i *Kläder & personlig stil*, *Tid & vardagsrutiner*, *Handel & vardagstjänster* och två moduler i *Kollektivtrafik* kallades barnens svenska far- och morföräldrar (Lars, Skåne, stugan) *mormor* och *morfar*, fast Aiko är från Japan och hennes mamma bor där. De heter nu *farmor* och *farfar* (51 moduler). ”Sin/hennes mormor” är orört.
+- Faktakällor: MSB heter Myndigheten för civilt försvar från 2026; återvinningsstationerna drivs av kommunerna sedan 2024.
+
+### Frågor och förklaringar
+- Frågor där svaret inte följde av texten eller var tvetydigt: *Veckostädning och rutiner* q1, *Beskriva en maträtt* q4, *Mellanmål och fika* q4, *Pendla hemifrån* q2, *Kassa och betalning* q5, *Skador och slitage* q3, *Underkläder och strumpor* q2.
+- Japanska förklaringar som inte stämde med svenskan: *Trafikskyltar i vardagen* q1 (弟 → 友だち), *Morgon- och kvällsvanor* q1 (ヨガ → 運動), *Byxor och kjolar* q5.
+- 99 *Varför*-frågor var märkta `detail` och är nu `cause`.
+
+### Språk
+- *pytteliten* → *pyttelitet* om Stockholm, *något möglig* → *mögligt*, *halal mat*, *vänta med*, *träffas med*, *i tempura*, *från hemma*, *i varje gata*, *på en annan affär*, *säger receptet* m.fl.
+
+### Ordposter
+- *att göra-lista*: böjningen var trasig (*att*, *göra-listan*, *att*).
+- *munskölj*: bestämd form *munsköljet*.
+- *skottår*: exempelmeningen saknade ordet.
+- Alla ordposter som modulerna i *Vardag & hem* använder (3 774 betydelser) är lästa: svensk definition, exempel med översättning, svensk förklaring och böjning. 31 rättningar i 25 filer:
+  - **Böjning:** *mysa* (*myste*, inte *mös*), *prio* (ingen plural), *ton* (*tonnet*), *buffé* (*buffén*, *bufféer*), *pålägg* (*påläggen*), *sprucken* (*sprucket*), *allrengöring* (*en*, *allrengöringen*), *impregneringsspray* (*impregneringssprayen*).
+  - **Sakfel:** *kontantinsats* (minst 10 procent sedan 1 april 2026, inte 15), *moms* (exemplet angav tolv procent på mat), *lättmjölk* (en halv procent, inte under).
+  - **Svenska:** exempel eller förklaring till *vänta med*, *i jämförelse med*, *kiosk*, *dubbdäck*, *turbulens*, *vigselring*, *styv*, *solros*, *gyllenbrun*, *kokpunkt*, *sköljmedel* och *dammråtta*.
+  - **Japanska:** *lyhörd* (筒抜け, inte 筋抜け), *duka fram* (fil översatt som yoghurt), *växelfel* (中央駅 för *stationen*).
+- Japanska definitioner, förklaringar och användningsnoter för samma 3 774 betydelser är jämförda med de svenska. De stämde nästan överallt; fem rättningar: *miljard* (1000百万 → 10億), *klänning* (*tröja* översatt som セーター), *tonfisk* (noten sa sushi i stället för färsk), *barnvagn* (noten *Detta gäller …* syftade inte på något) och den svenska definitionen av *fasad* (*Ett hus yta*).
+- *ton* (vikt) har nu pluralformen *tonnen*. *tonen* (av *en ton*, tonfall) ligger i stället i grundordförrådets `irregularForms`, eftersom 17 moduler utanför *Vardag & hem* använder formen.
+
+### Uppföljning 2026-11-17: listan ”inte gjort” åtgärdad
+- *tång* har fått pluralformerna *tänger*, *tängerna*, och båda betydelserna har en användningsnot som säger vilken betydelse pluralen hör till. Ordposten och ID:na är oförändrade.
+- Bostadsberättelsen hänger ihop: Aiko och Erik bor i radhuset. De fem modulerna i *Hyra, köpa & grannar* där ett par hyr lägenhet och köper bostadsrätt handlar nu om Eriks syster Lisa och hennes sambo Emil.
+- Rollerna i *Resor & lokaltrafik*: Erik är alltid Aikos man och Leo alltid ett barn. Yuis vän och den vuxne Leo heter Jonas (elva moduler), sextonåringen i *Hjälmar och reflexer* heter Mei, och i *Avstånd och riktningar* letar Aiko stuga med Erik.
+- Furigana är kontrollerade, se uppföljningen under *Människan & hälsa*.
+
+### Inte gjort
+- Samma som för *Människan & hälsa*: tio testfiler, typkontroll, bygge och e2e är inte körda.
 ## 0.53.0 – 2026-11-18
 
 42 nya moduler som gör överämnet *Astronomi & rymd* (R06-A06) komplett. Därmed är hela *Matematik & naturvetenskap* (R06) publicerad. Modulerna lär ut det svenska ordförrådet för astronomi och rymdfart med vardagliga exempel (stjärnhimlen, månen, årstider, nyheter om rymdfart, planetarium, GPS). Varje nytt modulord har en egen bild, utom de 8 ord som underkändes i två blindtestomgångar.

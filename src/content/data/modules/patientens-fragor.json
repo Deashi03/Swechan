@@ -1,7 +1,7 @@
 {
  "id": "m.patientens-fragor",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-17",
  "titleSv": "Patientens frågor",
  "titleJa": "{患者|かんじゃ}の{質問|しつもん}",
  "descriptionSv": "Patientens frågor: frågelista, fackord, tolk, tolka, närstående, anhörig, tystnadsplikt, samtycke, samtycka, delaktig, förnyad bedömning, patientlag, synpunkt, Patientnämnden och bemötande.",
@@ -83,9 +83,9 @@
  "reading": {
   "titleSv": "Mormor och läkaren",
   "paragraphs": [
-   "Mormor ska träffa en läkare om sitt hjärta. Kvällen innan skriver hon och Aiko en frågelista, så att de inte glömmer något.",
-   "Mormor har bett om en tolk, för det är viktigt att förstå allt. Tolken tolkar mellan japanska och svenska. Aiko får också följa med som närstående.",
-   "Läkaren använder många fackord. Aiko ber honom säga det med enklare ord. Han förklarar att han vill göra en liten operation, men att den inte görs utan mormors samtycke.",
+   "Mormor ska träffa en läkare om sitt hjärta. Kvällen innan skriver hon och Mei en frågelista, så att de inte glömmer något.",
+   "Mormor har bett om en tolk, för det är viktigt att förstå allt. Tolken tolkar mellan japanska och svenska. Mei får också följa med som närstående.",
+   "Läkaren använder många fackord. Mei ber honom säga det med enklare ord. Han förklarar att han vill göra en liten operation, men att den inte görs utan mormors samtycke.",
    "Mormor vill vara delaktig. Hon frågar om det finns andra behandlingar. – Jag vill tänka på det, säger hon. Kan jag få en förnyad bedömning av en annan läkare? – Ja, det har du rätt till enligt patientlagen, säger läkaren.",
    "Efter några veckor samtycker mormor till operationen. Läkaren frågar om han får berätta om den för hennes anhöriga. Han har tystnadsplikt, så han måste fråga först.",
    "Efteråt lämnar mormor synpunkter på webben. Bemötandet var bra, skriver hon. Men hon berättar att om man inte är nöjd kan man vända sig till Patientnämnden."
@@ -95,7 +95,7 @@
     "kind": "choice",
     "id": "q1",
     "focus": "detail",
-    "promptSv": "Varför skriver mormor och Aiko en frågelista?",
+    "promptSv": "Varför skriver mormor och Mei en frågelista?",
     "options": [
      "För att inte glömma något",
      "För att läkaren vill det",
@@ -156,7 +156,7 @@
    }
   ],
   "factSources": [
-   "Vardagsscen utan faktapåståenden."
+   "Patientlagen (2014:821): vård får inte ges utan patientens samtycke (4 kap. 2 §), patienten ska göras delaktig och få information som hen förstår, vid behov med tolk, och har vid livshotande eller särskilt allvarlig sjukdom rätt till en ny medicinsk bedömning (8 kap. 1 §); vårdpersonal har tystnadsplikt, och patientnämnden tar emot synpunkter och klagomål (1177.se: patientlagen, lämna synpunkter eller klaga på vården)."
   ]
  },
  "conversation": {

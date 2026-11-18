@@ -1,7 +1,7 @@
 {
  "id": "m.biljetter-och-periodkort",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Biljetter och periodkort",
  "titleJa": "{切符|きっぷ}と{定期券|ていきけん}",
  "descriptionSv": "Biljetter och periodkort: biljett, enkelbiljett, reseapp, resekort, periodkort, reskassa, zon, giltighetstid, pensionär, reducerat pris, studentrabatt, biljettkontroll, kontrollant, planka och tilläggsavgift.",
@@ -86,7 +86,7 @@
    "Aikos mamma ska åka buss i Stockholm. ”Hur köper man biljett?” frågar hon. Man kan köpa en enkelbiljett i reseappen. Den har en giltighetstid på 75 minuter.",
    "Aiko och Erik har resekort. Erik har ett periodkort, eftersom han reser varje dag. Aiko har reskassa på sitt kort, eftersom hon ofta cyklar.",
    "I vissa städer finns det zoner, och biljetten kostar mer om man åker långt. Men i Stockholm kostar det lika mycket överallt.",
-   "Mormor är pensionär och reser till reducerat pris. Mia är student och har studentrabatt.",
+   "Farmor är pensionär och reser till reducerat pris. Eriks kusin är student och har studentrabatt.",
    "En dag är det biljettkontroll på tunnelbanan. En kontrollant vill se Leos biljett. Leo har glömt att ladda kortet.",
    "Han får betala en tilläggsavgift på 1 500 kronor. ”Jag tänkte inte planka!” säger han. Men det hjälper inte."
   ],
@@ -109,7 +109,7 @@
    {
     "kind": "choice",
     "id": "q2",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför har Erik periodkort?",
     "options": [
      "Han är student",
@@ -138,11 +138,11 @@
     "options": [
      "Erik",
      "Aiko",
-     "Mormor",
+     "Farmor",
      "Leo"
     ],
     "correctIndex": 2,
-    "explanationSv": "Mormor är pensionär och reser till reducerat pris.",
+    "explanationSv": "Farmor är pensionär och reser till reducerat pris.",
     "explanationJa": "おばあちゃんです。"
    },
    {

@@ -1,7 +1,7 @@
 {
  "id": "m.skjuta-upp-och-flytta-fram",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-16",
  "titleSv": "Skjuta upp och flytta fram",
  "titleJa": "{延期|えんき}と{日時変更|にちじへんこう}",
  "descriptionSv": "Att skjuta upp och flytta fram: uppskjuten, senarelägga, tidigarelägga, ställa in, inställd, på grund av, tills vidare, dra ut på tiden, bli av och besked.",
@@ -86,14 +86,14 @@
    "Mias skolresa kommer inte att bli av heller. Skolan ställde in den på grund av ett oväntat problem med bussen.",
    "Erik skulle ha haft ett möte klockan nio, men en kollega vill flytta fram det till två. Sedan kommer ett nytt mejl: kollegan vill senarelägga det igen, till tre. Det framflyttade mötet blir kort.",
    "Badrummet hemma ska renoveras, men det drar ut på tiden. Hantverkarna har skjutit upp jobbet två gånger. Nu är det stängt tills vidare.",
-   "Mormor vill i stället tidigarelägga sitt besök, och komma redan på fredag.",
+   "Farmor vill i stället tidigarelägga sitt besök, och komma redan på fredag.",
    "Aiko skjuter på att städa. ”Det kan också vänta”, säger hon och skrattar."
   ],
   "questions": [
    {
     "kind": "choice",
     "id": "q1",
-    "focus": "detail",
+    "focus": "cause",
     "promptSv": "Varför är Leos match inställd?",
     "options": [
      "På grund av regnet",
@@ -133,7 +133,7 @@
     "kind": "choice",
     "id": "q4",
     "focus": "detail",
-    "promptSv": "Vad vill mormor göra?",
+    "promptSv": "Vad vill farmor göra?",
     "options": [
      "Skjuta upp besöket",
      "Komma redan på fredag",
@@ -141,7 +141,7 @@
      "Renovera badrummet"
     ],
     "correctIndex": 1,
-    "explanationSv": "Mormor vill tidigarelägga sitt besök, och komma redan på fredag.",
+    "explanationSv": "Farmor vill tidigarelägga sitt besök, och komma redan på fredag.",
     "explanationJa": "{金曜日|きんようび}に{来|き}たいです。"
    },
    {
