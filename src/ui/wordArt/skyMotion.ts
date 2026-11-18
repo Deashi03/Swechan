@@ -20,7 +20,6 @@ import { figure } from './figures';
 const PAPER = '#f6f2ea';
 const DAY = '#d6ecf7';
 const NIGHT = '#1f2a4a';
-const NIGHT2 = '#33426b';
 const DUSK = '#f3c98b';
 const MOON = '#f3ecc8';
 const MOON_D = '#4a5170';
@@ -175,11 +174,13 @@ export const SKYMOT_MOTIFS: Record<string, Svg> = {
   'himrel.månuppgång': all(bg('#3a4a7a'), rect(4, 56, 112, 30, '#55669a', 0, null), dot(18, 14, 1.2), dot(50, 22, 0.9), dot(96, 16, 1.1),
     moon(60, 80, 20, 0.5, MOON_D, '#f5dfae'), hills(80, '#1f2a4a'), arrow(60, 52, 60, 34, HL, 2.6), sea(96)),
   // ── Sol- och månförmörkelse ────────────────────────────────────────
-  'himrel.solförmörkelse': all(night(), sun(14, 30, 9, false), circle(56, 30, 4, '#15151c', '#8a93b5', 1), path('M56 26 L98 28 L98 32 L56 34 Z', 'rgba(0,0,0,0.6)', null), earth(100, 30, 10),
-    line('M24 30 L52 30', C.grey, 1, '2 2'), panel(24, 54, 72, 52, '#7d93b8'), eclipseView(60, 80, 16, 'total'), ring(60, 80, 24)),
-  'himrel.månförmörkelse': all(night(), sun(14, 30, 9, false), earth(56, 30, 8), path('M64 27 L98 28 L98 32 L64 33 Z', 'rgba(0,0,0,0.5)', null), circle(100, 30, 4, BLOOD, '#8a93b5', 1),
-    line('M24 30 L47 30', C.grey, 1, '2 2'), panel(24, 54, 72, 52, NIGHT2), circle(60, 80, 16, BLOOD, C.ink, 1.2), circle(54, 75, 3, 'rgba(0,0,0,0.15)', null), circle(65, 85, 4, 'rgba(0,0,0,0.15)', null), ring(60, 80, 22)),
-  'himrel.total': all(eclipseBig('total'), num('100 %', 60, 80, 10, WHITE)),
+  'himrel.solförmörkelse': all(night(), sun(14, 30, 9, false), line('M24 30 L50 30', C.grey, 1, '2 2'), circle(56, 30, 4, MOON_D, '#8a93b5', 1), path('M58 27 L94 29 L94 31 L58 33 Z', 'rgba(0,0,0,0.55)', null),
+    earth(100, 30, 10), circle(91.5, 30, 3, '#0d1020', null), ring(91.5, 30, 6), panel(24, 54, 72, 52, '#7d93b8'), eclipseView(60, 80, 16, 'partiell'), ring(60, 80, 22)),
+  'himrel.månförmörkelse': all(night(), stars(8), sun(14, 60, 11, false), line('M27 60 L44 60', C.grey, 1, '2 2'), earth(56, 60, 12),
+    path('M64 51 L112 56 L112 64 L64 69 Z', 'rgba(0,0,0,0.6)', null), circle(98, 60, 7, '#5a5d6a', '#8a93b5', 1.2), ring(98, 60, 11),
+    greyed(circle(98, 96, 7, MOON, C.ink, 1), circle(98, 24, 7, MOON, C.ink, 1)), line('M98 32 L98 50 M98 70 L98 88', '#8a93b5', 1, '2 2')),
+  'himrel.total': all(bg(), greyed(circle(30, 58, 20, WHITE, C.ink, 1.4), path('M30 58 L30 38 A20 20 0 1 1 11 64.2 Z', '#e8a050', C.ink, 1.2), num('60 %', 30, 96, 10)),
+    circle(80, 58, 28, '#e8a050', C.ink, 1.6), num('100 %', 80, 62, 11, WHITE), ring(80, 58, 33)),
   'himrel.partiell': eclipseBig('partiell'),
   'himrel.ringformig': all(eclipseBig('ringformig'), ring(60, 42, 30)),
   'himrel.kärnskugga': shadowDiagram('kärn'),
@@ -206,9 +207,8 @@ export const SKYMOT_MOTIFS: Record<string, Svg> = {
   'himrel.Karlavagnen': all(night(), stars(10), line('M14 46 L32 50 L48 56 L62 66 L66 88 L94 92 L98 70 L62 66', '#9fb4e6', 1.4), ...[[14, 46], [32, 50], [48, 56], [62, 66], [66, 88], [94, 92], [98, 70]].map(([x, y]) => twinkle(x!, y!, 4.2)), hills(104)),
   'himrel.stjärnklar': all(bg(), rect(8, 14, 50, 82, NIGHT, 3, C.ink, 1.2), ...STARS.slice(0, 12).map(([x, y]) => dot(8 + x * 0.42, 16 + y * 1.1, 1)), twinkle(24, 30, 3), twinkle(44, 22, 3), house(33, 96, 1), frame(5, 11, 56, 88),
     greyed(rect(62, 14, 50, 82, '#3d4560', 3, C.ink, 1.2), ellipse(80, 34, 16, 8, '#7a8090', null), ellipse(96, 44, 16, 9, '#7a8090', null), ellipse(82, 54, 18, 8, '#7a8090', null), house(87, 96, 1))),
-  'himrel.tindra': all(night(), ...[0, 1, 2].map((i) => all(twinkle(24 + i * 36, 30, i === 1 ? 4 : 9, '#fffbe6'), circle(24 + i * 36, 30, i === 1 ? 2 : 4, '#fffbe6', null))),
-    ...[52, 60, 68].map((y) => line(`M8 ${y} C20 ${y - 4} 32 ${y + 4} 44 ${y} C56 ${y - 4} 68 ${y + 4} 80 ${y} C92 ${y - 4} 104 ${y + 4} 112 ${y}`, '#5d6f9e', 1.4)), hills(100),
-    figure({ x: 60, h: 0.34, top: '#5a6a9a', bottom: '#2f3a5a' }), frame(8, 12, 104, 36)),
+  'himrel.tindra': all(night(), ...[9, 3.5, 9].map((r, i) => all(rect(8 + i * 36, 34, 32, 52, '#26335a', 3, '#5d6f9e', 1), twinkle(24 + i * 36, 60, r * 1.4, '#fffbe6'), circle(24 + i * 36, 60, r * 0.45, '#fffbe6', null))),
+    arrow(14, 98, 106, 98, HL, 2.4), frame(5, 30, 110, 60)),
   'himrel.ljusförorening': all(night(), ...STARS.slice(0, 15).filter(([x]) => x > 60).map(([x, y]) => dot(x, y, 1.2)), path('M4 112 L4 50 C20 30 50 30 66 50 L66 112 Z', 'rgba(240,160,70,0.45)', null),
     ...[[6, 76, 10, 36], [18, 66, 12, 46], [32, 80, 10, 32], [44, 70, 14, 42]].map(([x, y, w, h]) => all(rect(x!, y!, w!, h!, '#3a3f55', 0, C.ink, 1), ...range(3).map((j) => rect(x! + 3, y! + 5 + j * 9, 3, 3, '#f6d36b', 0, null)))),
     hills(104, '#1a2340'), path('M2 112 L2 46 C20 22 52 22 68 46', 'none', HL, 2.6)),
@@ -239,11 +239,12 @@ export const SKYMOT_MOTIFS: Record<string, Svg> = {
   'himrel.himmelssfär': all(night(), circle(60, 60, 48, '#2a3860', null), stars(15), ellipse(60, 60, 48, 13, 'none', '#5d6f9e', 1), ellipse(60, 60, 13, 48, 'none', '#5d6f9e', 1), earth(60, 60, 8), circle(60, 60, 48, 'none', HL, 3)),
   'himrel.zenit': all(bg('#2a3860'), path('M4 96 A56 82 0 0 1 116 96 Z', '#1f2a4a', null), stars(12), rect(4, 96, 112, 16, '#2f4a33', 0, null), figure({ x: 60, h: 0.42, top: '#5a6a9a', bottom: '#2f3a5a' }),
     line('M60 74 L60 20', WHITE, 1.2, '3 3'), twinkle(60, 16, 5, '#fffbe6'), ring(60, 16, 9), greyed(line('M8 96 L112 96', WHITE, 1.2))),
-  'himrel.himmelspol': all(night(), ...[10, 18, 26, 34, 42].map((r, i) => path(arcPath(64, 40, r, i * 0.4, i * 0.4 + 2.6), 'none', '#9fb4e6', 1.2)), twinkle(64, 40, 4, '#fffbe6'), ring(64, 40, 7),
-    hills(100), earth(30, 98, 8), line('M30 98 L58 46', C.grey2, 1, '3 3')),
+  'himrel.himmelspol': all(night(), circle(60, 64, 46, '#2a3860', '#8a93b5', 1.4), ellipse(60, 64, 46, 12, 'none', '#5d6f9e', 1), earth(60, 64, 9), line('M60 98 L60 18', C.grey2, 1.4, '3 2'),
+    ...[7, 13, 19].map((r) => ellipse(60, 22, r, r * 0.45, 'none', '#9fb4e6', 1.1)), ...[[67, 22], [47, 23], [72, 26], [41, 21]].map(([x, y]) => dot(x!, y!, 1.3)), circle(60, 18, 2.6, '#fffbe6', null), ring(60, 18, 6)),
   'himrel.himmelsekvator': sphere('ekvator'),
   'himrel.ekliptika': sphere('ekliptika'),
-  'himrel.vårpunkt': sphere('vårpunkt'),
+  'himrel.vårpunkt': all(night(), circle(60, 60, 48, '#2a3860', '#8a93b5', 1.4), stars(15), earth(60, 60, 9), ellipse(60, 60, 46, 12, 'none', '#7fb3e6', 1.8), g('rotate(-23 60 60)', ellipse(60, 60, 46, 12, 'none', '#e8c37a', 1.8)),
+    circle(14.6, 62, 3.2, WHITE, C.ink, 1), ring(14.6, 62, 9)),
   'himrel.djurkrets': all(night(), ellipse(60, 60, 50, 28, 'none', HL, 12), ellipse(60, 60, 50, 28, 'none', '#2a3860', 9),
     ...range(12).map((i) => { const [x, y] = [60 + Math.cos((i / 12) * Math.PI * 2) * 50, 60 + Math.sin((i / 12) * Math.PI * 2) * 28]; return all(twinkle(f1(x - 2), f1(y - 1.5), 2.2), twinkle(f1(x + 2.4), f1(y + 1.6), 1.8)); }),
     sun(60, 60, 6, false), circle(60, 60, 18, 'none', '#7fb3e6', 1), earth(78, 60, 3.4)),
@@ -255,8 +256,8 @@ export const SKYMOT_MOTIFS: Record<string, Svg> = {
   'himrel.solur': all(bg(DAY), sun(20, 18, 7), rect(4, 96, 112, 16, GRASS, 0, null), rect(50, 76, 20, 22, '#b9b2a4', 1, C.ink, 1.3), ellipse(60, 74, 40, 12, '#d8d1c2', C.ink, 1.5),
     ...range(7).map((i) => { const a = Math.PI + (i / 6) * Math.PI; const [x, y] = [60 + Math.cos(a) * 34, 74 + Math.sin(a) * 10]; return line(`M${f1(60 + Math.cos(a) * 26)} ${f1(74 + Math.sin(a) * 7.6)} L${f1(x)} ${f1(y)}`, C.ink, 1); }),
     path('M60 74 L60 56 L72 74 Z', '#7a7a80', C.ink, 1.2), path('M60 74 L92 80 L94 77 Z', 'rgba(40,40,50,0.55)', null)),
-  'himrel.soltid': all(bg(DAY), rect(4, 92, 112, 20, GRASS, 0, null), line('M10 92 C30 20 90 20 110 92', C.grey, 1.2, '3 3'), sun(60, 36, 8), ring(60, 36, 14),
-    line('M60 70 L60 92', '#7a5232', 3), ellipse(62, 93, 4, 1.6, 'rgba(0,0,0,0.4)', null), clock(94, 72, 12, 12, 0), greyed(sun(22, 70, 5, false), sun(98, 52, 5, false))),
+  'himrel.soltid': all(bg(DAY), rect(4, 96, 112, 16, GRASS, 0, null), line('M10 96 C30 30 90 30 110 96', C.grey, 1.2, '3 3'), sun(60, 44, 8), line('M60 56 L60 96', C.gold, 1, '2 2'),
+    clock(28, 22, 14, 12, 0), ring(28, 22, 18), arrow(48, 40, 40, 32, HL, 2), greyed(clock(92, 22, 14, 12, 25))),
   'himrel.solår': all(bg(), circle(60, 60, 36, 'none', C.grey, 1.2), sun(60, 60, 9), earth(96, 60, 6), arcArrow(60, 60, 44, 0.2, Math.PI * 2 - 0.2),
     at(60, 18, 1, circle(0, 0, 4, '#ef9fb5', C.ink, 0.8), circle(0, 0, 1.6, SUN, null)), sun(24, 60, 4, false), at(60, 102, 1, path('M0 -5 C5 -5 6 2 0 6 C-6 2 -5 -5 0 -5 Z', '#e07a2c', C.ink, 0.8)), snowflake(96, 92, 5), num('365', 60, 64, 8)),
   'himrel.gregoriansk-kalender': all(bg(), rect(16, 22, 60, 74, WHITE, 3, C.ink, 1.6), rect(16, 22, 60, 16, RED, 3, C.ink, 1.6), num('1582', 46, 34, 11, WHITE), line('M30 18 L30 26 M62 18 L62 26', C.ink, 2.2),
