@@ -311,6 +311,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.testversion.1', 's.operativsystem.1',
   // 0.54 Internet & webben: förväxlas med lagra respektive med varandra/krångla efter två blindomgångar
   's.cache.1', 's.ligga-nere.1', 's.driftstörning.1',
+  // 0.54 Nätverk & uppkoppling: förväxlas med uppkoppling, surf, fördröjning, kapacitet, räckvidd, avbrott respektive kryptera efter två blindomgångar
+  's.uppkopplad.1', 's.mobildata.1', 's.svarstid.1', 's.bandbredd.1', 's.täckning.2', 's.tappa-uppkopplingen.1', 's.VPN.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
