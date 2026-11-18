@@ -208,6 +208,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'org.': () => import('./organicChem').then((m) => m.ORGANIC_MOTIFS),
   'syra.': () => import('./acidsBases').then((m) => m.ACIDS_MOTIFS),
   'labk.': () => import('./labChem').then((m) => m.LABCHEM_MOTIFS),
+  'gen.': () => import('./genetics').then((m) => m.GENETICS_MOTIFS),
+  'cell.': () => import('./cellBiology').then((m) => m.CELL_MOTIFS),
+  'evo.': () => import('./evolution').then((m) => m.EVOLUTION_MOTIFS),
+  'mikro.': () => import('./microbio').then((m) => m.MICROBIO_MOTIFS),
+  'fysio.': () => import('./physiology').then((m) => m.PHYSIO_MOTIFS),
+  'ekob.': () => import('./ecologyBio').then((m) => m.ECOBIO_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};

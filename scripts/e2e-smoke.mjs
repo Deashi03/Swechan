@@ -212,13 +212,13 @@ try {
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), all of Historia & humaniora
   // (0.36–0.41), all of Natur & geografi (0.42–0.47), Matematikens grunder (0.48), Avancerad matematik (0.49), Fysik
-  // (0.50) and Kemi (0.51) are published, so the planned entry is Matematik & naturvetenskap → Biologi → Cellbiologi →
-  // Cellens delar.
+  // (0.50), Kemi (0.51) and Biologi (0.52) are published, so the planned entry is Matematik & naturvetenskap →
+  // Astronomi & rymd → Solens system → Solen.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Matematik & naturvetenskap/ }).first().click();
-  await page.getByRole('link', { name: /Biologi/ }).first().click();
-  await page.getByRole('link', { name: /Cellbiologi/ }).first().click();
-  await page.getByRole('link', { name: /Cellens delar/ }).first().click();
+  await page.getByRole('link', { name: /Astronomi & rymd/ }).first().click();
+  await page.getByRole('link', { name: /Solens system/ }).first().click();
+  await page.getByRole('link', { name: /^Solen/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);

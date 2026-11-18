@@ -285,6 +285,18 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.pH-värde.1', 's.försurning.1', 's.ta-ut-varandra.2', 's.lösning.3', 's.koncentration.2',
   // 0.51 Organisk kemi: förväxlas med tvål
   's.förtvålning.1',
+  // 0.52 Cellbiologi: förväxlas med transportprotein efter två blindomgångar
+  's.passiv-transport.1',
+  // 0.52 Evolution: förväxlas med stamträd respektive uppvaktning
+  's.gren.2', 's.sexuell-selektion.1',
+  // 0.52 Evolution: förväxlas med fossil respektive hane efter två blindomgångar
+  's.förstenad.1', 's.ståtlig.1',
+  // 0.52 Genetik & arv: förväxlas med mutation, slå på respektive genteknik
+  's.kopieringsfel.1', 's.genuttryck.1', 's.genmodifierad.1',
+  // 0.52 Genetik & arv: förväxlas med miljögift efter två blindomgångar
+  's.skadlig.1',
+  // 0.52 Ekologi & organismvärlden: förväxlas med topprovdjur respektive lämmelår efter två blindomgångar
+  's.tertiärkonsument.1', 's.massförökning.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
