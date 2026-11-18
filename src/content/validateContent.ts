@@ -291,6 +291,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.gren.2', 's.sexuell-selektion.1',
   // 0.52 Evolution: förväxlas med fossil respektive hane efter två blindomgångar
   's.förstenad.1', 's.ståtlig.1',
+  // 0.52 Genetik & arv: förväxlas med mutation, slå på respektive genteknik
+  's.kopieringsfel.1', 's.genuttryck.1', 's.genmodifierad.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
