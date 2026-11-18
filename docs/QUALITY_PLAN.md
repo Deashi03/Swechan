@@ -65,7 +65,17 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 - [ ] Byggsteg som skriver **ett bildpaket per modul** med exakt de motiv modulen använder. Källfilerna i `src/ui/wordArt/` ändras inte. Repetition utanför en modul laddar paketet för ordets första modul.
 - [ ] Lyft ordboken ur startpaketet: starta med ett sökindex (lemma, böjningsformer, glosa, id) och ladda ordposter per modul eller vid uppslag. Sökning, ordboksblad och övningsgeneratorn (distraktorer) ska fungera som förut, också offline för öppnade moduler.
 
-**Klart när:** en modul laddar en bildfil i stället för flera delar, startpaketet är under 1,5 MB gzip, och offlinetesterna är gröna.
+**Genomfört 2026-11-19 (delvis).** Ordboken är uppdelad i en fil per ämnesgrupp och en storleksspärr finns i CI (`scripts/bundle-report.mjs`). Med förladdningen och den beständiga cachen från A3 är väntan mellan korten borta, så bildpaket per modul och en asynkron ordbok flyttas till **A4b** nedan. Skäl: att lyfta ut ordboken kräver att `getContent()` blir asynkront i alla skärmar som slår upp ord (sökning, övningsgeneratorn, repetition över alla moduler, dagens ord, ordlistan). Det är en egen etapp med egen testning, inte något som ska göras i förbifarten.
+
+**Klart när (ursprungligt mål):** en modul laddar en bildfil i stället för flera delar, startpaketet är under 1,5 MB gzip, och offlinetesterna är gröna.
+
+### A4b. Asynkron ordbok och bildpaket per modul (efter A7)
+- [ ] Sökindex (lemma, böjningsformer, glosa, id) som egen liten fil, byggd av ett skript; ordlistan och sökningen läser den.
+- [ ] Ordposter laddas per ämnesgrupp vid behov: `getContent()` får ett `ensureSenses(ids)` som skärmarna väntar på innan de visar ord (inlärning, repetition, ordboksblad, dagens ord). Övningsgeneratorn tar distraktorer ur laddade poster.
+- [ ] Bildpaket per modul (förrenderade SVG:er för modulens motiv) om mätningen i e2e visar att förladdningen inte räcker.
+- [ ] Startpaketet under 1,5 MB gzip (`npm run bundle:report`).
+
+**Klart när:** startpaketet är under 1,5 MB gzip, offline fungerar för öppnade moduler, och e2e är grönt.
 
 ### A5. Bildsystemet
 - [ ] **Matchningstest:** nytt läge i `art:blind` och `art:blind:record`. Granskaren får ord + glosa och ett ark med modulens bilder och väljer bild. Godkänt = rätt bild med hög säkerhet. Resultatet sparas i `blindTest` med `method: "match"`. Befintliga godkända bilder behöver inte testas om.
