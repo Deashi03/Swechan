@@ -5,7 +5,7 @@
  * the part the word names is ringed or framed in orange, and grey copies show what the word is not.
  * Close words share one layout where only the marked part differs: vit dvärg/röd dvärg/gul dvärg/röd jätte/superjätte
  * (the same row of five stars from small to big; only the named star is coloured and ringed, the others are grey);
- * blåvit (three stars of one size: only the colour differs);
+ * blåvit (five stars of one size and brightness: only the colour differs);
  * gasmoln/protostjärna (the same dark cloud, empty or with a glowing ball and a flat disc in the middle);
  * planetarisk nebulosa/supernovarest (a smooth round coloured ring around a white dot, or ragged threads flying outward).
  * Digits and maths signs only; no words, no brands and no pointing fingers.
@@ -97,8 +97,8 @@ export const STARS_MOTIFS: Record<string, Svg> = {
   'stjarn.fusionsreaktor': all(bg('#e4e7ea'), line('M4 112 L116 112', C.grey2, 2), ellipse(54, 66, 44, 22, '#b9c0c8', C.ink, 2), ellipse(54, 66, 22, 9, '#e4e7ea', C.ink, 1.8), ellipse(54, 66, 33, 15, 'none', 'rgba(190,120,255,0.9)', 4.5), ellipse(54, 66, 33, 15, 'none', '#f0d8ff', 1.4), ...[-36, -20, 0, 20, 36].map((dx) => rect(54 + dx - 2.5, 66 - Math.sqrt(1 - (dx / 44) ** 2) * 22 - 2, 5, Math.sqrt(1 - (dx / 44) ** 2) * 44 + 4, 'rgba(200,120,60,0.85)', 1, C.ink, 1)), rect(46, 88, 16, 24, '#8a929c', 2, C.ink, 1.6), person(104, C.orange, { h: 0.55 }), path('M98.5 60 C98.5 53 109.5 53 109.5 60 Z', C.yellow, C.ink, 1.2)),
 
   // ── 3633 Stjärnors spektralklasser ───────────────────────────────────
-  /** blåvit: three stars of the same size side by side: a red one and a yellow one in grey, and a blue-white one in colour with a blue glow that is ringed. */
-  'stjarn.blåvit': all(sky(), greyed(circle(22, 64, 12, RED, C.ink, 1.2)), greyed(circle(50, 64, 12, YEL, C.ink, 1.2)), ball(88, 64, 16, BW, BLUE), circle(88, 64, 9, WHITE, null), ring(88, 64, 22)),
+  /** blåvit: five flat round stars of exactly the same size and brightness in a row, each in its own colour (yellow, red, blue-white, orange, white; no glow, no rays); the blue-white one in the middle is ringed. */
+  'stjarn.blåvit': all(sky((_x, y) => y < 40 || y > 84), ...([[14, YEL], [36, RED], [58, '#b9d6ff'], [80, ORANGE], [102, WHITE]] as [number, string][]).map(([x, col]) => circle(x, 62, 9, col, C.ink, 1.4)), ring(58, 62, 14)),
   /** spektralklass: seven boxes side by side, each holding small stars of one colour from blue to red; the yellow box is framed. */
   'stjarn.spektralklass': all(sky((_x, y) => y < 30 || y > 92), ...[BLUE, BW, WHITE, '#fff2c0', YEL, ORANGE, RED].map((col, i) => all(rect(6 + i * 15.5, 38, 14, 48, 'rgba(255,255,255,0.08)', 2, 'rgba(255,255,255,0.5)', 1), circle(13 + i * 15.5, 50, 4, col, C.ink, 0.8), circle(13 + i * 15.5, 62, 3.2, col, C.ink, 0.8), circle(13 + i * 15.5, 74, 3.6, col, C.ink, 0.8))), frame(66, 34, 21, 56)),
   /** gul dvärg: a row of five stars from small to big; only the small yellow sun-like star (third) is coloured and ringed. */
