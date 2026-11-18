@@ -297,6 +297,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.skadlig.1',
   // 0.52 Ekologi & organismvärlden: förväxlas med topprovdjur respektive lämmelår efter två blindomgångar
   's.tertiärkonsument.1', 's.massförökning.1',
+  // 0.53 Solens system: förväxlas med den röda planeten respektive kollision/jordnära efter två blindomgångar
+  's.livlös.1', 's.kollisionskurs.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
