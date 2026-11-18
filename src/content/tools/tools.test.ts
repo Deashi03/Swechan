@@ -42,7 +42,7 @@ describe('module:new / drafts', () => {
 describe('module:validate', () => {
   it('every published module passes all checks', () => {
     for (const r of checkModules(repo.modules.map((m) => m.id), repo, core, catalog)) expect(r.errors, r.moduleId).toEqual([]);
-  });
+  }, 240_000); // grows with the content (~60 s at 1 517 modules on CI)
   it('rejects planned and unknown IDs', () => {
     expect(checkModule(PLANNED.catalogId, repo, core, catalog).errors[0]).toMatch(/finns inte/);
   });
