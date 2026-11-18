@@ -146,3 +146,4 @@ ui  ──►  daily / modules / dictionary / conversation / stats / audio / fee
 9. Använd konfiguration (`config/appConfig.ts`, `Settings`).
 10. Bevara enkelheten.
 11. Bilder bedöms av någon annan än den som ritat dem (0.19.1) – symbol- och egenskapsbilder kräver ett godkänt blindtest av exakt den bild som visas (`blindTest` i bildregistret, se `CONTENT_GUIDELINES.md`). Testet stoppar annars bygget.
+12. Kvalitetsspärren (kvalitetsplanen A2) – `npm run audit:content -- --check` i CI: inget kvalitetsmått i `quality/metrics.json` får bli sämre, och nya moduler (och moduler med `standard: 2`) ska uppfylla `quality/contract.json`. `contentVersion` räknas ut av `npm run content:version`.

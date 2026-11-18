@@ -22,6 +22,8 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run content:index -- --check
+      - run: npm run content:version -- --check
+      - run: npm run audit:content -- --check
       - run: npm run catalog:validate
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
