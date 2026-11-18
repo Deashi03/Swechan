@@ -98,14 +98,21 @@ const shell = (x: number, y: number, s = 1, col = '#d6b27a') => at(x, y, s, circ
 const beaver = (x: number, y: number, s = 1) => at(x, y, s, ellipse(-18, 3, 9, 4, '#6a4a2c', C.ink, 1.1), line('M-24 2 L-12 2 M-22 5 L-14 5', '#4a3220', 0.7), ellipse(0, 0, 13, 9, '#9a6a3a', C.ink, 1.3), circle(12, -5, 6.5, '#9a6a3a', C.ink, 1.3), circle(9, -11, 2, '#9a6a3a', C.ink, 0.9), circle(14, -7, 1.1, C.ink, null), rect(16, -3, 3, 3, WHITE, 0.5, C.ink, 0.6), line('M-6 8 L-7 11 M6 8 L7 11', C.ink, 1.4));
 const cow = (x: number, y: number, s = 1) => at(x, y, s, rect(-14, -14, 26, 13, WHITE, 5, C.ink, 1.2), circle(-6, -9, 3.5, C.dark, null), circle(6, -6, 2.5, C.dark, null), path('M12 -14 L20 -12 L22 -4 L14 -4 Z', WHITE, C.ink, 1.1), line('M-11 -1 L-11 5 M-6 -1 L-6 5 M4 -1 L4 5 M9 -1 L9 5', C.ink, 1.6), line('M14 -14 L13 -18 M18 -13 L19 -17', C.ink, 1));
 
+const critter = (x: number, y: number, s = 1, col = '#9a8ab8') => at(x, y, s, line('M-4 3 L-6 7 M0 4 L0 8 M4 3 L6 7', C.ink, 1), ellipse(0, 0, 7, 5, col, C.ink, 1.1), circle(6, -3, 3.4, col, C.ink, 1), circle(7, -4, 0.8, C.ink, null));
+
+const badge = (x: number, y: number, sign: string) => all(circle(x, y, 8, sign === '+' ? C.green : sign === '−' ? RED : C.grey2, C.ink, 1.2), sign === '+' ? line(`M${x - 4} ${y} L${x + 4} ${y} M${x} ${y - 4} L${x} ${y + 4}`, WHITE, 2.4) : sign === '−' ? line(`M${x - 4} ${y} L${x + 4} ${y}`, WHITE, 2.4) : circle(x, y, 3.4, 'none', C.dark, 1.8));
+const pairSigns = (y: number, a: string, b: string, dim: boolean) => { const k = all(badge(14, y, a), circle(38, y, 10, '#9fd07a', C.ink, 1.3), circle(35, y - 2, 1.2, C.ink, null), circle(41, y - 2, 1.2, C.ink, null), line(`M50 ${y} L66 ${y}`, C.ink, 1.4), circle(80, y, 13, '#c9b49a', C.ink, 1.3), circle(76, y - 3, 1.4, C.ink, null), circle(84, y - 3, 1.4, C.ink, null), badge(106, y, b)); return dim ? greyed(k) : k; };
+
 export const ECOBIO_MOTIFS: Record<string, Svg> = {
   // ── Fotosyntes och cellandning ─────────────────────────────────────
   'ekob.cellandning': all(bg(), cellBase(), glucose(12, 44, 1.2), o2(14, 80, 1.1), arrow(24, 46, 42, 54, C.grey, 2.4), arrow(26, 78, 42, 70, HL, 3.4),
     co2(102, 40, 0.95), h2o(104, 62), bolt(103, 88, 1.15), arrow(80, 54, 90, 44, C.grey, 2.2), arrow(82, 62, 92, 62, C.grey, 2.2), arrow(80, 72, 92, 84, C.grey, 2.2), ring(14, 80, 13, 10)),
   'ekob.anaerob': all(bg(), cellBase(), glucose(12, 44, 1.2), greyed(o2(14, 80, 1.1)), cross(14, 80, 9), arrow(24, 46, 42, 54, C.grey, 2.4),
     bolt(102, 62, 0.6), arrow(82, 62, 94, 62, C.grey, 2.2), path('M98 82 C98 78 102 74 102 74 C102 74 106 78 106 82 C106 86 98 86 98 82 Z', '#f6f0c8', C.ink, 1), frame(4.5, 64, 22, 32)),
-  'ekob.ljusenergi': all(bg(SKY), field(96), sunAt(22, 22, 11), leafShape(56, 84, 1.5, -24), line('M70 82 L68 112', GRASS2, 2.4),
-    ...[[34, 30, 66, 66], [38, 20, 80, 56], [28, 38, 56, 72]].map(([a, b, c, d]) => line(`M${a} ${b} Q${f1((a! + c!) / 2 + 4)} ${f1((b! + d!) / 2 - 6)} ${c} ${d}`, '#e8a020', 3)), ring(55, 46, 22, 20), bolt(98, 40, 0.9)),
+  'ekob.ljusenergi': all(bg(SKY), sunAt(18, 18, 8), field(100),
+    ...[[28, 26, 30, 92], [30, 22, 92, 92]].map(([a, b, c, d]) => line(`M${a} ${b} L${c} ${d}`, '#e8a020', 3)),
+    bolt(28, 50, 1.25), bolt(31, 72, 1.25), bolt(52, 46, 1.25), bolt(72, 66, 1.25), ring(46, 58, 34, 28),
+    leafShape(18, 100, 0.6, -20), line('M30 96 L30 112', GRASS2, 2), at(92, 100, 1, path('M-14 0 L-10 -10 L14 -10 L10 0 Z', '#3f6fb5', C.ink, 1.3), line('M-12 -5 L12 -5 M-6 -10 L-8 0 M2 -10 L0 0', '#9fc4ef', 0.9), line('M0 0 L0 12', C.grey, 2))),
   'ekob.förbränna': all(bg('#eef4ea'), field(104, '#d9c9a8'), figure({ x: 40, top: C.orange, bottom: C.navy, h: 0.82 }),
     path('M40 66 C33 60 36 50 41 45 C41 52 46 52 46 47 C52 54 50 64 43 67 Z', '#f08a2c', C.ink, 1.2), path('M41 64 C39 60 41 56 43 54 C45 58 47 60 43 64 Z', YEL, null), heat(40, 34, 0.7),
     panel(78, 50, 34, 28), path('M84 72 L106 72 L95 56 Z', '#f3d9a8', C.ink, 1.1), line('M86 68 L104 68', '#ef9fb5', 2), circle(95, 55, 2, RED, C.ink, 0.6), arrow(78, 64, 58, 62, HL, 3), ring(42, 56, 13, 15)),
@@ -114,10 +121,10 @@ export const ECOBIO_MOTIFS: Record<string, Svg> = {
     bolt(20, 44, 1.2), bolt(34, 40, 1.4), bolt(48, 44, 1.2), ring(34, 58, 26, 30),
     greyed(ellipse(88, 80, 22, 7, WHITE, C.ink, 1.4), ...[[80, 76], [88, 75], [96, 76]].map(([x, y]) => all(circle(x!, y!, 4.4, '#a8d48a', C.ink, 0.9), circle(x!, y!, 2.6, '#e0f0c8', null))), bolt(88, 52, 0.6))),
   // ── Näringsvävar ───────────────────────────────────────────────────
-  'ekob.tertiärkonsument': all(bg(WATER), rect(4, 4, 112, 14, SKY, 0, null), line('M4 18 L116 18', WATER2, 1.6),
-    greyed(...range(6).map((i) => circle(10 + (i % 3) * 5, 98 - Math.floor(i / 3) * 5, 2, '#6fbf5a', C.ink, 0.6)), at(30, 80, 1, ellipse(0, 0, 4, 2.6, '#e8d6b0', C.ink, 0.8), line('M-3 2 L-5 5 M0 2 L0 5 M3 2 L5 5', C.ink, 0.6)), fish(50, 62, 0.65, { body: '#c9ced4', fin: '#e08a7a' })),
-    fish(84, 40, 1.15, { body: '#7aa860', fin: '#5f8a45', stripes: '#c8e09a' }), arrow(18, 90, 26, 84, C.grey, 2), arrow(34, 76, 42, 68, C.grey, 2), arrow(58, 58, 64, 50, C.grey, 2),
-    num('1', 30, 70, 9, C.grey), num('2', 50, 52, 9, C.grey), num('3', 84, 64, 13), ring(84, 40, 28, 16)),
+  'ekob.tertiärkonsument': all(bg(), rect(6, 96, 26, 14, '#d9e8c8', 2, C.ink, 1), rect(32, 78, 26, 32, '#e6e2d8', 2, C.ink, 1), rect(58, 60, 26, 50, '#e6e2d8', 2, C.ink, 1), rect(84, 42, 28, 68, '#fde3cf', 2, C.ink, 1.4),
+    tuft(19, 96, 1.4), greyed(critter(45, 70, 0.9), critter(71, 52, 1.05)), critter(97, 32, 1.25, '#e08a4a'),
+    arrow(24, 88, 36, 74, C.grey, 2), arrow(50, 66, 62, 54, C.grey, 2), arrow(76, 46, 88, 34, C.grey, 2),
+    num('1', 45, 98, 14, C.grey), num('2', 71, 92, 14, C.grey), num('3', 98, 84, 22, HL), frame(82, 14, 32, 96)),
   'ekob.energipyramid': all(bg(), path('M60 10 L76 34 L44 34 Z', '#e4572e', C.ink, 1.4), path('M44 34 L76 34 L90 58 L30 58 Z', '#f2a65a', C.ink, 1.4), path('M30 58 L90 58 L104 82 L16 82 Z', YEL, C.ink, 1.4), path('M16 82 L104 82 L114 104 L6 104 Z', GRASS, C.ink, 1.4),
     tuft(40, 100, 1.4), tuft(60, 100, 1.4), tuft(80, 100, 1.4), hare(52, 74, 0.8), hare(72, 74, 0.8), at(60, 50, 0.7, ellipse(0, 0, 10, 6, '#e07a2c', C.ink, 1.1), circle(9, -5, 5, '#e07a2c', C.ink, 1.1), path('M6 -9 L7 -14 L10 -9 Z M10 -9 L13 -13 L13 -7 Z', '#e07a2c', C.ink, 0.8), path('M-9 -1 C-16 -4 -18 4 -12 4 Z', '#e07a2c', C.ink, 0.8)),
     at(60, 28, 0.55, path('M-14 0 C-6 -8 6 -8 14 0 L6 -2 L0 4 L-6 -2 Z', '#6a4a2c', C.ink, 1.2))),
@@ -141,11 +148,11 @@ export const ECOBIO_MOTIFS: Record<string, Svg> = {
     sunAt(46, 20, 6), rect(39, 34, 14, 56, C.grey2, 2, C.ink, 1), rect(39, 34, 14, 56, YEL, 2, C.ink, 1),
     path('M74 12 C74 12 80 20 80 24 C80 28 74 28 74 28 C74 28 68 28 68 24 C68 20 74 12 74 12 Z', WATER2, C.ink, 1), rect(67, 34, 14, 56, WATER, 2, C.ink, 1),
     hexa(102, 20, 1, '#a8784a'), rect(95, 34, 14, 56, C.grey2, 2, C.ink, 1), rect(95, 78, 14, 12, '#a8784a', 2, C.ink, 1), frame(91, 30, 22, 64)),
-  'ekob.massförökning': all(bg(), field(104), spruce(32, 104, 1.6, '#a8784a'), ...range(18).map((i) => beetle(18 + (i * 37) % 30, 32 + (i * 23) % 60, 0.55)),
-    greyed(spruce(88, 104, 1.1), beetle(88, 70, 0.55)), panel(70, 8, 42, 30), line('M74 32 L80 32 L86 30 L92 12 L96 30 L108 32', HL, 2.4), ring(32, 62, 24, 40)),
+  'ekob.massförökning': all(bg(), field(76), panel(8, 82, 30, 26, '#e6f2d8'), critter(18, 92, 0.6), critter(28, 100, 0.6),
+    rect(50, 54, 62, 54, '#e6f2d8', 3, C.ink, 1.4), ...range(30).map((i) => critter(56 + (i % 6) * 10, 62 + Math.floor(i / 6) * 9.5, 0.55)), frame(47, 51, 68, 60), arrow(38, 94, 48, 88, HL, 2.6),
+    panel(8, 10, 58, 40), line('M12 46 L62 46 M12 46 L12 14', C.ink, 1), line('M14 44 L30 43 L38 38 L46 16 L52 40 L60 43', HL, 2.6)),
   // ── Symbios och parasitism ─────────────────────────────────────────
-  'ekob.kommensalism': all(bg(SKY), field(104), oak(52, 104, 1.6), ellipse(74, 56, 10, 4, '#a8784a', C.ink, 1.1), line('M66 56 L82 56', BARK, 0.8), bird(74, 46, 0.6, { body: '#c98a4a', wing: '#8a5a2e' }),
-    circle(96, 26, 8, C.green, C.ink, 1.2), line('M92 26 L100 26 M96 22 L96 30', WHITE, 2.2), circle(22, 50, 8, C.grey2, C.ink, 1.2), num('0', 22, 54, 11, C.dark), ring(74, 50, 14, 12)),
+  'ekob.kommensalism': all(bg(), pairSigns(24, '+', '+', true), pairSigns(62, '+', '0', false), pairSigns(98, '+', '−', true), frame(4, 46, 112, 32)),
   'ekob.städarfisk': all(bg(WATER), rect(4, 96, 112, 16, '#e8d3a2', 0, null), at(18, 100, 1, path('M0 0 L-4 -14 M0 0 L4 -16 M0 0 L0 -20', 'none', '#e07a7a', 3)), at(102, 100, 1, path('M0 0 L-5 -12 M0 0 L5 -14', 'none', '#c87ab0', 3)),
     atF(54, 54, 2.1, path('M-15 0 L-22 -7 L-22 7 Z', '#8a7a5a', C.ink, 0.8), path('M-16 0 C-10 -10 8 -10 15 -1 L10 1 L15 3 C8 9 -10 9 -16 0 Z', '#a89a72', C.ink, 0.8), circle(8, -3, 1.3, C.ink, null), circle(-2, 3, 1.1, '#6a5a3a', null), circle(-8, -2, 1, '#6a5a3a', null)),
     at(26, 52, 0.55, path('M-15 0 L-22 -6 L-22 6 Z', '#3a6ad0', C.ink, 1.4), path('M-16 0 C-10 -6 8 -6 14 0 C8 6 -10 6 -16 0 Z', '#7ab0f0', C.ink, 1.6), line('M-14 0 L13 0', C.dark, 2.4), circle(9, -2, 1.5, C.ink, null)), ring(28, 52, 12, 9)),
@@ -176,9 +183,13 @@ export const ECOBIO_MOTIFS: Record<string, Svg> = {
   'ekob.kolets-kretslopp': all(bg(SKY), field(92), co2(60, 18, 1.2), oak(24, 100, 0.8), cow(86, 102, 1.2), ellipse(58, 106, 10, 3, '#7a5232', C.ink, 1),
     path('M44 22 C30 26 24 36 24 44', 'none', HL, 2.4), path('M24 44 L20 38 L28 38 Z', HL, null), path('M40 70 C52 80 62 84 70 86', 'none', HL, 2.4), path('M70 86 L63 87 L66 80 Z', HL, null),
     path('M96 76 C100 56 92 34 76 22', 'none', HL, 2.4), path('M76 22 L84 22 L80 28 Z', HL, null), line('M58 102 L58 34', C.grey, 1.6, '3 3')),
-  'ekob.urlakning': all(bg(SKY), rect(4, 46, 84, 66, SOIL, 0, null), rect(88, 60, 28, 52, '#7ab070', 0, null), line('M88 60 L116 60', WATER2, 1.4), ...range(5).map((i) => line(`M${12 + i * 16} 10 l-3 8 M${20 + i * 16} 22 l-3 8`, WATER2, 1.8)),
-    at(30, 46, 1, line('M0 0 L0 -14', GRASS2, 2), path('M0 -10 C-6 -14 -10 -12 -12 -10 C-8 -8 -4 -8 0 -10 Z M0 -12 C6 -16 10 -14 12 -12 C8 -10 4 -10 0 -12 Z', '#c9c86a', C.ink, 0.8)),
-    ...range(9).map((i) => circle(20 + (i % 3) * 18 + Math.floor(i / 3) * 8, 62 + Math.floor(i / 3) * 14, 2.6, ['#3f6fb5', '#f2c14e', '#d0679a'][i % 3]!, C.ink, 0.6)), arrow(30, 86, 84, 98, HL, 3), ...range(4).map((i) => circle(94 + i * 5, 72 + (i % 2) * 6, 2, '#4f9d4a', null))),
+  'ekob.urlakning': all(bg(SKY), rect(4, 36, 112, 26, SOIL, 0, null), rect(4, 62, 112, 26, '#c9a77a', 0, null), rect(4, 88, 112, 24, '#d9c9a8', 0, null), line('M4 62 L116 62 M4 88 L116 88', C.ink, 0.8),
+    ...range(6).map((i) => line(`M${12 + i * 18} 8 l-3 8 M${20 + i * 18} 20 l-3 8`, WATER2, 1.8)),
+    at(60, 36, 1, line('M0 0 L0 -14', GRASS2, 2), path('M0 -10 C-6 -14 -10 -12 -12 -10 C-8 -8 -4 -8 0 -10 Z M0 -12 C6 -16 10 -14 12 -12 C8 -10 4 -10 0 -12 Z', '#c9c86a', C.ink, 0.8), line('M0 0 L-4 10 M0 0 L4 12', '#e8d3a2', 1.2)),
+    ...[[20, 44], [96, 46], [86, 54]].map(([x, y]) => circle(x!, y!, 2.6, '#3f6fb5', C.ink, 0.6)),
+    ...[[30, 48, 30, 104], [60, 56, 64, 106], [88, 46, 90, 104]].map(([a, b, c, d]) => line(`M${a} ${b} L${c} ${d}`, WATER2, 3, '4 3')),
+    ...[[30, 68, '#f2c14e'], [31, 92, '#d0679a'], [62, 80, '#3f6fb5'], [63, 98, '#f2c14e'], [89, 74, '#d0679a'], [90, 96, '#3f6fb5']].map(([x, y, c]) => circle(x as number, y as number, 2.8, c as string, C.ink, 0.6)),
+    arrow(30, 100, 30, 110, HL, 2.6), arrow(64, 102, 64, 111, HL, 2.6), arrow(90, 100, 90, 110, HL, 2.6), frame(16, 64, 88, 46)),
   // ── Organismers livscykler ─────────────────────────────────────────
   'ekob.äggläggning': all(bg('#eef4ea'), path('M6 30 C30 10 90 14 114 34 C90 40 30 42 6 30 Z', LEAF, C.ink, 1.4), line('M6 30 L112 32', LEAF2, 1.2),
     butterfly(56, 60, 1.6, '#f6f2ea'), circle(48, 52, 2, C.dark, null), ...range(7).map((i) => ellipse(68 + (i % 4) * 6, 40 + Math.floor(i / 4) * 5, 2.2, 2.8, YEL, C.ink, 0.7)), ring(76, 42, 14, 8), line('M60 64 C64 54 66 48 68 44', C.dark, 1.2)),
