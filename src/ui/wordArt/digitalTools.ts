@@ -171,11 +171,15 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
   /** signatur (i ett mejl): an open mail with grey text bars; at the bottom, under a thin line, a block with a round profile picture, a dark name bar, a small phone and a row of digits; this block is framed. */
   'digverk.signatur': all(bg(), rect(10, 10, 100, 100, SCR, 3, C.ink, 1.6), rect(10, 10, 100, 9, BLUE, 3, null), greyed(bars(18, 28, 84, 7, 6)), line('M18 72 L60 72', C.grey, 1),
     avatar(28, 86, 8), line('M42 81 L80 81', C.ink, 3), rect(42, 88, 6, 10, C.dark, 1.5, null), txt(70, 96, '070 123', 8, '#5a636e', 700), frame(14, 74, 92, 30, 4)),
-  /** frånvaromeddelande: a laptop on a desk in front of an empty chair; an envelope comes in from the left; at once another envelope with a small sun and a calendar with crossed-out days goes back along an orange arrow; the returning envelope is ringed. */
-  'digverk.frånvaromeddelande': all(bg(), ground, rect(76, 60, 22, 26, '#7a8590', 3, C.ink, 1.4), rect(78, 86, 3, 26, '#5a636e', 1, null), rect(93, 86, 3, 26, '#5a636e', 1, null), desk(88), laptop(60, 88, 0.55, envelope(0, -20, 0.7)),
-    arr(6, 74, 34, 74, C.grey, 1.8), envelope(14, 66, 0.5), carr(48, 50, 30, 56, 20, 46, HL, 2.4), envelope(36, 30, 1.1),
-    at(30, 20, 1, circle(0, 0, 4, YEL, '#e0a020', 1), ...range(6).map((i) => line(`M${f1(Math.cos(i) * 6)} ${f1(Math.sin(i) * 6)} L${f1(Math.cos(i) * 8)} ${f1(Math.sin(i) * 8)}`, '#e0a020', 1))),
-    rect(44, 14, 14, 12, C.white, 1, C.ink, 1), rect(44, 14, 14, 3, '#d9534f', 1, null), line('M46 19 L56 25 M56 19 L46 25', RED, 1.2), ring(38, 28, 20)),
+  /** frånvaromeddelande: nobody is at the desk: an empty chair, a suitcase on the floor and a wall calendar with crossed-out days; a grey envelope comes in from the left along a straight grey arrow into the laptop; at once a big envelope with a grey cog wheel goes straight back to the left along a thick orange arrow; the returning envelope with the cog is ringed. */
+  'digverk.frånvaromeddelande': all(bg(), ground,
+    rect(80, 8, 32, 28, C.white, 2, C.ink, 1.4), rect(80, 8, 32, 7, '#d9534f', 2, null), ...range(6).map((i) => { const x = 83 + (i % 3) * 10, y = 18 + Math.floor(i / 3) * 9; return all(rect(x, y, 7, 6, '#eef1f4', 0.5, null), line(`M${x} ${y} L${x + 7} ${y + 6} M${x + 7} ${y} L${x} ${y + 6}`, RED, 1.3)); }),
+    rect(90, 58, 18, 28, '#7a8590', 3, C.ink, 1.4), desk(86), laptop(62, 86, 0.6, envelope(0, -20, 0.8)),
+    rect(22, 94, 20, 16, '#3a6ab0', 3, C.ink, 1.4), path('M28 94 L28 90 L36 90 L36 94', 'none', C.ink, 1.6), line('M27 98 L27 108 M37 98 L37 108', '#2a4a80', 1.2),
+    envelope(14, 72, 0.6, '#eef1f4'), arr(24, 72, 40, 72, C.grey, 2),
+    arr(62, 40, 44, 40, HL, 3.4), envelope(24, 42, 1.4),
+    at(38, 29, 1.4, circle(0, 0, 5, '#9aa3ad', C.ink, 1), ...range(8).map((i) => line(`M${f1(Math.cos((i * Math.PI) / 4) * 5)} ${f1(Math.sin((i * Math.PI) / 4) * 5)} L${f1(Math.cos((i * Math.PI) / 4) * 7.5)} ${f1(Math.sin((i * Math.PI) / 4) * 7.5)}`, '#9aa3ad', 2.6)), circle(0, 0, 2, C.white, C.ink, 0.8)),
+    ring(27, 39, 23)),
 
   // ── 3762 Molnlagring ─────────────────────────────────────────────────
   /** moln (på internet): a big white cloud at the top holding a document, a photo and a music note; dashed lines go down from it to a laptop, a phone and a tablet; the cloud is framed. */
