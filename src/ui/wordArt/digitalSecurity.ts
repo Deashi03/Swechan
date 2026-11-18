@@ -101,10 +101,10 @@ export const DIGSEC_MOTIFS: Record<string, Svg> = {
     ...range(4).map((i) => all(rect(-7.5, -5 + i * 4.4, 15, 3.6, C.white, 0.6, null), circle(-5.5, -3.2 + i * 4.4, 1.2, [C.denim, C.red, C.green, C.purple][i]!, null),
       ...range(4).map((j) => circle(-1.5 + j * 2.4, -3.2 + i * 4.4, 0.55, C.ink, null)))))),
   keyIcon(98, 30, 1.2, -30), keyIcon(22, 30, 1, 210), keyIcon(100, 86, 1, 20), ring(60, 62, 52)),
-  'digsak.byta-lösenord': all(rect(6, 30, 44, 22, C.white, 3, C.ink, 1.6), greyed(dots(10, 36, 36, 6)), line('M10 32 L46 50 M46 32 L10 50', C.red, 2.4),
-    rect(70, 30, 44, 22, C.white, 3, C.ink, 1.6), dots(74, 36, 36, 9, HL), arrow(52, 41, 68, 41, HL, 3),
-    path('M40 80 A20 20 0 1 1 80 80', 'none', C.green, 3), arrow(78, 76, 80, 86, C.green, 3), path('M80 92 A20 20 0 0 1 40 92', 'none', C.green, 3), arrow(42, 96, 40, 86, C.green, 3),
-    keyIcon(60, 86, 1.1), frame(66, 26, 52, 30)),
+  'digsak.byta-lösenord': all(at(60, 30, 1, rect(-18, -18, 36, 34, C.white, 3, C.ink, 1.6), rect(-18, -18, 36, 9, C.red, 3, C.ink, 1.6), line('M-10 -22 L-10 -14 M10 -22 L10 -14', C.ink, 2.4),
+    ...range(9).map((i) => circle(-11 + (i % 3) * 11, -2 + Math.floor(i / 3) * 7, 1.8, C.grey, null)), ring(11, 12, 5.5)),
+    rect(4, 70, 44, 22, C.white, 3, C.ink, 1.6), greyed(dots(8, 76, 36, 5)), line('M8 72 L44 90 M44 72 L8 90', C.red, 2.4),
+    arrow(50, 81, 66, 81, HL, 3), rect(68, 70, 48, 22, C.white, 3, C.ink, 1.6), T(86, 85, '#7%k!', 10, C.purple), check(108, 70, 0.7), frame(64, 64, 54, 32)),
 
   // ── 3752 Tvåfaktorsautentisering ───────────────────────────────────
   'digsak.tvåfaktorsautentisering': all(ground(), laptop(38, 100, 1.3, all(dots(-18, -28, 36, 6), circle(-18, -32, 6, C.navy, C.ink, 1), T(-18, -28, '1', 8, C.white))),
@@ -148,9 +148,12 @@ export const DIGSEC_MOTIFS: Record<string, Svg> = {
   // ── 3755 Kryptering ────────────────────────────────────────────────
   'digsak.kryptering': message(true),
   'digsak.klartext': message(false),
-  'digsak.dataläcka': all(ground(), at(44, 50, 1, ...[24, 8, -8].map((dy) => all(ellipse(0, dy + 8, 26, 7, '#7fa6d6', C.ink, 1.6), rect(-26, dy - 8, 52, 16, '#7fa6d6', 0, null), line(`M-26 ${dy - 8} L-26 ${dy + 8} M26 ${dy - 8} L26 ${dy + 8}`, C.ink, 1.6))), ellipse(0, -16, 26, 7, '#a8c4e6', C.ink, 1.6)),
-    path('M66 46 L74 54 L68 58 L76 66', 'none', C.ink, 2.2), doc(84, 62, 0.9), at(94, 84, 1, rect(-9, -6, 18, 12, C.white, 2, C.ink, 1.2), userIcon(-4, 0, 0.6), line('M1 -2 L6 -2 M1 2 L5 2', C.grey, 1)),
-    at(80, 102, 1, rect(-12, -5, 24, 10, C.white, 2, C.ink, 1.2), ...range(4).map((i) => circle(-7 + i * 4.6, 0, 1.4, C.ink, null))), line('M70 60 C78 70 74 80 70 92', '#7fa6d6', 2, '2 3'), ring(76, 60, 12)),
+  'digsak.dataläcka': all(at(36, 40, 1, ...[16, 0, -16].map((dy) => all(ellipse(0, dy + 8, 24, 6.5, '#7fa6d6', C.ink, 1.6), rect(-24, dy - 8, 48, 16, '#7fa6d6', 0, null), line(`M-24 ${dy - 8} L-24 ${dy + 8} M24 ${dy - 8} L24 ${dy + 8}`, C.ink, 1.6))), ellipse(0, -24, 24, 6.5, '#a8c4e6', C.ink, 1.6),
+    path('M24 -6 L18 0 L24 4 L19 10 L24 16', 'none', C.ink, 2.2)),
+    doc(70, 46, 0.7), at(78, 64, 0.8, rect(-9, -6, 18, 12, C.white, 2, C.ink, 1.2), userIcon(-4, 0, 0.6), line('M1 -2 L6 -2 M1 2 L5 2', C.grey, 1)), at(66, 80, 0.8, rect(-12, -5, 24, 10, C.white, 2, C.ink, 1.2), ...range(4).map((i) => circle(-7 + i * 4.6, 0, 1.4, C.ink, null))),
+    path('M60 44 C64 40 66 40 68 42', 'none', '#7fa6d6', 1.6), line('M62 50 L66 92', '#7fa6d6', 2, '2 4'),
+    circle(84, 100, 14, '#bfe3f5', C.ink, 1.6), path('M76 94 C80 90 84 96 80 100 C76 104 74 98 76 94 Z M88 98 C92 94 96 100 92 106 C88 108 86 102 88 98 Z', C.green, C.ink, 0.8),
+    ...[[104, 80], [108, 96], [100, 108], [62, 106]].map(([x, y]) => at(x!, y!, 0.8, circle(0, 0, 6, C.white, C.ink, 1), circle(0, 0, 2.6, C.grey, null))), ring(60, 46, 14, HL)),
 
   // ── 3756 Integritet på nätet ───────────────────────────────────────
   'digsak.digitalt-fotavtryck': all(phone(18, 92, 1.1), foot(36, 82, 60, '#f6c9a8', circle(0, 0, 3, C.denim, null)), foot(50, 68, 40, '#f6c9a8', rect(-3, -3, 6, 5, C.green, 1, null)),
@@ -171,6 +174,8 @@ export const DIGSEC_MOTIFS: Record<string, Svg> = {
     path('M24 50 A38 38 0 0 1 88 26', 'none', C.green, 3), arrow(84, 22, 92, 30, C.green, 3), path('M96 76 A38 38 0 0 1 32 100', 'none', C.green, 3), arrow(36, 104, 28, 96, C.green, 3), ring(60, 62, 46)),
   'digsak.täppa-till': all(brick(6, 14, 108, 98), ellipse(56, 62, 16, 13, C.black, C.ink, 1.4), rect(40, 50, 34, 26, C.tan, 2, C.ink, 1.8), circle(44, 54, 1.4, C.ink, null), circle(70, 54, 1.4, C.ink, null), circle(44, 72, 1.4, C.ink, null), circle(70, 72, 1.4, C.ink, null),
     at(92, 70, 1, rect(-4, -2, 26, 8, C.skin, 3, C.ink, 1.4), rect(-12, -6, 12, 16, C.skin, 4, C.ink, 1.4)), arrow(100, 40, 80, 52, HL, 3), ring(57, 63, 26)),
-  'digsak.säkerhetsrisk': all(phone(46, 64, 2.6, all(line('M-6 -12 L-1 -4 L-4 2 L3 10', C.ink, 0.7), line('M-1 -4 L6 -6', C.ink, 0.6)), '#d7dbe0', '#6c707c'),
-    warn(94, 30, 2), bug(96, 84, 1.3), arrow(88, 80, 74, 72, C.red, 2.4), greyed(phone(14, 98, 0.6, shieldS(0, -1, 0.5))), frame(18, 12, 56, 98)),
+  'digsak.säkerhetsrisk': all(path('M14 70 A46 46 0 0 1 106 70 Z', C.white, C.ink, 1.8), path('M20 70 A40 40 0 0 1 32 41.7 L44 53.8 A23 23 0 0 0 37 70 Z', C.green, null),
+    path('M32 41.7 A40 40 0 0 1 88 41.7 L76 53.8 A23 23 0 0 0 44 53.8 Z', C.yellow, null), path('M88 41.7 A40 40 0 0 1 100 70 L83 70 A23 23 0 0 0 76 53.8 Z', C.red, null),
+    greyed(line('M60 70 L36 50', C.ink, 3)), line('M60 70 L92 52', C.ink, 3.4), circle(60, 70, 4, C.dark, C.ink, 1.2), warn(98, 34, 1.3), frame(80, 20, 36, 54),
+    phone(96, 96, 0.75, all(rect(-6, -10, 12, 12, C.grey, 2, null), T(0, 10, '1.0', 6, C.ink)), '#d7dbe0'), greyed(phone(24, 96, 0.75, all(shieldS(0, -4, 0.4), T(0, 10, '9.0', 6, C.ink)))), line('M96 80 L94 72', C.red, 1.4, '2 2')),
 };
