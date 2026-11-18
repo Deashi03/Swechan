@@ -245,6 +245,33 @@ try {
   assert(newCards.length >= 3, `words from the new module became review cards (${newCards.length})`);
   assert(backup2.data.reviewEvents.some((e) => e.date === '2026-11-05'), 'day 4 review completed with events');
 
+  // Kvalitetsplanen A3: time from "next" to a visible picture in a module whose words come from many
+  // picture chunks (Matematik & naturvetenskap). Budget: median under 150 ms once the session has
+  // preloaded its pictures.
+  await page.goto(`${BASE}#/module/${encodeURIComponent('m.arbete-och-energi')}`);
+  await click(/Starta: Lär dig orden|Fortsätt: Lär dig orden/);
+  await page.getByRole('button', { name: 'Jag förstår – nästa' }).first().waitFor();
+  await page.waitForTimeout(2500); // the learner reads the first card; preloading runs meanwhile
+  const timings = [];
+  for (let i = 0; i < 6; i++) {
+    const next = page.getByRole('button', { name: 'Jag förstår – nästa' }).first();
+    if (!(await next.isVisible().catch(() => false))) break;
+    await page.evaluate(() => { document.querySelectorAll('main *').forEach((e) => e.setAttribute('data-old', '1')); window.__t0 = performance.now(); });
+    await next.click();
+    const h = await page.waitForFunction(() => {
+      const fresh = document.querySelector('main button:not([data-old])');
+      if (!fresh) return false;
+      const img = document.querySelector('main .word-image:not([data-old])');
+      return !img || !img.classList.contains('loading') ? performance.now() - window.__t0 : false;
+    }, null, { timeout: 8000 });
+    timings.push(Math.round(await h.jsonValue()));
+    await page.waitForTimeout(600);
+  }
+  timings.sort((a, b) => a - b);
+  const median = timings[Math.floor(timings.length / 2)];
+  log(`next card → picture (ms): ${timings.join(', ')}; median ${median}`);
+  assert(timings.length >= 3 && median < 150, `a card's picture is visible within 150 ms of "next" (median ${median} ms)`);
+
   const relevantErrors = errors.filter((e) => !/favicon|speechSynthesis/i.test(e));
   assert(relevantErrors.length === 0, `no console/page errors (${relevantErrors.join(' | ')})`);
   console.log('\nE2E ACCEPTANCE FLOW PASSED');

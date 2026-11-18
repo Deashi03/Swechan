@@ -1,4 +1,5 @@
-import { allWordImages, imageFor, photoUrl, sceneUrl } from '../../content/images';
+import { allWordImages, photoUrl } from '../../content/images';
+import { preloadVisuals } from '../components/preloadVisual';
 import { useEffect, useState } from 'react';
 import { markModuleOffline } from '../../content/offlineModules';
 import { getContent } from '../../content/repository';
@@ -32,11 +33,8 @@ export function prefetchModuleVisuals(moduleId: string): void {
   prefetchedVisuals.add(moduleId);
   const m = getContent().getModule(moduleId);
   if (!m) return;
-  for (const w of m.words) {
-    const v = imageFor(w.senseId);
-    if (v?.kind === 'animation') fetch(sceneUrl(v.file)).catch(() => undefined);
-  }
-  import('../components/AnimatedWordVisual').catch(() => undefined);
+  // Kvalitetsplanen A3: every word's visual (illustrations too, not only animations).
+  preloadVisuals(m.words.map((w) => w.senseId));
 }
 
 /** Prefetch all published lesson bodies when the browser is idle (makes them available offline). */

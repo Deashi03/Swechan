@@ -18,6 +18,7 @@ import { Icon } from '../components/Icon';
 import { ProgressBar } from '../components/Progress';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
 import { ExerciseView } from '../exercises/ExerciseView';
+import { exerciseSenseIds, preloadVisuals } from '../components/preloadVisual';
 
 const MEANING_TYPES: ExerciseType[] = ['meaning_choice', 'reverse_choice', 'context_choice', 'synonym_choice'];
 const MEANING_TYPES_WITH_PICTURE: ExerciseType[] = [...MEANING_TYPES, ...IMAGE_TYPES];
@@ -50,6 +51,37 @@ export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
     if (!card || !date || card.id !== currentId) return null;
     return generateExercise(exerciseTypeFor(card.id, card.dimension, date, !!quizImageFor(card.senseId)), card.senseId, { repo: getContent(), poolSenseIds: pool, seed: hashString(card.id + date) });
   }, [card, date, pool, currentId]);
+
+  // Kvalitetsplanen A3: preload the visuals of every word in the session, and the next two cards'
+  // exercises (with their picture options), so a card never waits for its picture.
+  const planKey = ids.join(',');
+  useEffect(() => {
+    if (!planKey) return;
+    let alive = true;
+    getDb().cards.bulkGet(planKey.split(',')).then((cards) => {
+      if (!alive) return;
+      preloadVisuals(cards.map((c) => c?.senseId));
+    }).catch(() => undefined);
+    return () => { alive = false; };
+  }, [planKey]);
+  useEffect(() => { preloadVisuals(exerciseSenseIds(exercise)); }, [exercise]);
+  useEffect(() => {
+    if (!date || !pool || !planKey) return;
+    const upcoming = planKey.split(',').slice(index + 1, index + 3);
+    if (!upcoming.length) return;
+    let alive = true;
+    getDb().cards.bulkGet(upcoming).then((cards) => {
+      if (!alive) return;
+      for (const c of cards) {
+        if (!c) continue;
+        try {
+          const ex = generateExercise(exerciseTypeFor(c.id, c.dimension, date, !!quizImageFor(c.senseId)), c.senseId, { repo: getContent(), poolSenseIds: pool, seed: hashString(c.id + date) });
+          preloadVisuals(exerciseSenseIds(ex));
+        } catch { preloadVisuals([c.senseId]); }
+      }
+    }).catch(() => undefined);
+    return () => { alive = false; };
+  }, [planKey, index, date, pool]);
 
   const onDone = async (r: ExerciseResult) => {
     if (!currentId || !date || busy) return;

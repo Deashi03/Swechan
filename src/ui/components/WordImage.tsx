@@ -8,20 +8,13 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { imageFor, photoUrl } from '../../content/images';
 
-type RenderModule = typeof import('../wordArt/render');
-let rendererPromise: Promise<RenderModule> | null = null;
-let renderer: RenderModule | null = null;
-/** Load the illustration renderer and the chunk that holds `motif`. */
-function loadRenderer(motif: string): Promise<void> {
-  rendererPromise ??= import('../wordArt/render').then((m) => (renderer = m));
-  return rendererPromise.then((m) => m.loadMotif(motif));
-}
+import { loadRenderer, loadedRenderer } from './preloadVisual';
 const AnimatedWordVisual = lazy(() => import('./AnimatedWordVisual'));
 const AnimatedFace = lazy(() => import('./AnimatedFace'));
 
 function Illustration({ motif, size, aria }: { motif: string; size: number; aria: string }) {
   const [, force] = useState(0);
-  const svg = renderer?.renderWordArt(motif) ?? null;
+  const svg = loadedRenderer()?.renderWordArt(motif) ?? null;
   useEffect(() => { if (!svg) loadRenderer(motif).then(() => force((n) => n + 1)).catch(() => undefined); }, [motif, svg]);
   const style = { width: size, height: size };
   return svg

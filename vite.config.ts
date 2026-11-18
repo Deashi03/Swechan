@@ -1,12 +1,26 @@
 /// <reference types="vitest/config" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import type { Plugin } from 'vite';
+
+/**
+ * Writes dist/asset-list.json: every hashed file of this build. The service worker (public/sw.js)
+ * keeps cached assets across releases and removes only files that are no longer listed.
+ */
+const assetList: Plugin = {
+  name: 'swechan-asset-list',
+  apply: 'build',
+  generateBundle(_options, bundle) {
+    const files = Object.keys(bundle).filter((f) => f.startsWith('assets/')).sort();
+    this.emitFile({ type: 'asset', fileName: 'asset-list.json', source: JSON.stringify(files) });
+  },
+};
 
 // base: './' keeps every asset path relative, so the same build works on
 // GitHub Pages (/Swechan/), any sub-path and locally. Routing is hash-based.
 export default defineConfig({
   base: './',
-  plugins: [react()],
+  plugins: [react(), assetList],
   build: {
     target: 'es2020',
     sourcemap: false,
