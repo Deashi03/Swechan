@@ -212,6 +212,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'cell.': () => import('./cellBiology').then((m) => m.CELL_MOTIFS),
   'evo.': () => import('./evolution').then((m) => m.EVOLUTION_MOTIFS),
   'mikro.': () => import('./microbio').then((m) => m.MICROBIO_MOTIFS),
+  'fysio.': () => import('./physiology').then((m) => m.PHYSIO_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
