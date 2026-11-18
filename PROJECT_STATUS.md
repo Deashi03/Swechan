@@ -29,7 +29,10 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp: överämnet *Biologi* (R06-A05) i *Matematik & naturvetenskap*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. **Kvalitetsplanen går före all ny produktion** (produktägarens beslut 2026-11-18). Ta nästa obockade etapp i `docs/QUALITY_PLAN.md`. Nästa är **A1: slå ihop PR #66**. Bakgrund och mätvärden: `docs/QUALITY_AUDIT_2026-11.md`.
+   - Beslut: matchningstest för symbolbilder, manuellt spår för bilder som underkänts två gånger (aldrig `none`), kort förklaring för abstrakta B1-ord.
+   - Arbetet görs av Opus (produktägarens val).
+   - Därefter: överämnet *Biologi* (R06-A05) enligt den nya produktionsinstruktionen.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.

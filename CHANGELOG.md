@@ -1,5 +1,13 @@
 # Changelog
 
+## Osläppt – 2026-11-18: kvalitetsrevision och kvalitetsplan
+
+Inget innehåll och ingen kod är ändrad.
+
+- `docs/QUALITY_AUDIT_2026-11.md`: revision av hela materialet vid 0.51.0. Systematiska fel i bildtäckning, laddtid, animationer, betydelser, förklaringar, språk och process, med mätvärden per ämnesgrupp.
+- `docs/QUALITY_PLAN.md`: etapper för systemet (mätning och spärr, laddtid, bildsystem, datamodell för betydelser, kvalitetskontrakt) och för eftersläpningen. Planen går före *Biologi*.
+- Produktägarens beslut: matchningstest för symbolbilder, manuellt spår efter två underkända omgångar, kort förklaring för abstrakta B1-ord.
+
 ## 0.51.0 – 2026-11-18
 
 42 nya moduler som gör överämnet *Kemi* (R06-A04) komplett. Modulerna lär ut det svenska ordförrådet för skolkemi med vardagliga exempel (kök, städning, mat, kropp, natur). Varje nytt modulord har en egen bild, utom de 27 ord som underkändes i två blindtestomgångar.

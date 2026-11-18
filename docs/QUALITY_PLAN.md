@@ -1,0 +1,129 @@
+# Kvalitetsplan: system och eftersläpning före *Biologi*
+
+Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `docs/QUALITY_AUDIT_2026-11.md` (läs Del 1, Del 3 och Del 5 där innan du börjar). Den här filen säger **vad som ska göras, i vilken ordning och när en etapp är klar**.
+
+## Så arbetar du
+
+- **En etapp per session.** När etappen är inlagd: bocka av den här nedanför, uppdatera `PROJECT_STATUS.md`, lägg till överst i `CHANGELOG.md`, stanna och be produktägaren starta en ny session.
+- **Ingen ny modulproduktion** (*Biologi* och framåt) förrän del A är klar och del B är klar eller produktägaren säger annat.
+- Reglerna i `CLAUDE.md` gäller som vanligt: bevara användardata, ändra aldrig `m.*`- eller `s.*`-ID:n, tester före commit, högst tre ämnesgrupper parallellt.
+- **Varje etapp slutar med ett mätvärde.** Från etapp A2 ska `npm run audit:content` visa att etappens mått har förbättrats och att inget annat har försämrats.
+- Hittar du ett nytt *systematiskt* fel: lägg till ett mått och en valideringsregel för det, inte bara en rättning.
+
+## Produktägarens beslut som styr planen
+
+1. Symbolbilder godkänns med **matchningstest** (ord + japansk glosa → välj rätt bild bland modulens bilder). Bilder med `quiz: true` behåller det öppna blindtestet.
+2. En bild som underkänts två gånger går till ett **manuellt spår** med större kreativ frihet. Den får aldrig sluta som `none`.
+3. **Abstrakta B1-ord** får en kort förklaring första gången de är modulord.
+4. Allt i den här planen görs **före *Biologi***.
+
+---
+
+## Del A. Systemet (gör att nya moduler inte upprepar felen)
+
+### A1. Slå ihop språkgranskningen (PR #66)
+- [ ] Synka `granskning/vardag-och-hem` med `main`, lös krockarna i `CHANGELOG.md` och `PROJECT_STATUS.md`, bygg om modulindex, kör alla kontroller, slå ihop.
+
+**Klart när:** PR #66 är sammanslagen och CI är grön. Rättningarna från R01–R03 finns på `main`.
+
+### A2. Mätning och spärr
+- [ ] `npm run audit:content` (nytt skript, t.ex. `tools/audit/audit.ts`) som skriver `quality/metrics.json` med måtten nedan, totalt och per ämnesgrupp.
+- [ ] CI-steg som jämför med den incheckade filen och **fallerar om något mått försämrats**. Förbättringar checkas in och blir ny lägstanivå.
+- [ ] Lägg `npm run audit:content` i `tools/production/check.sh`.
+- [ ] Nya valideringsregler i `validateContent.ts`. Inför dem som fel med ett tak lika med dagens antal (`quality/ceilings.json`), så att bygget är grönt från start och taken bara kan sänkas:
+  1. `plan.kind` ≠ levererad bildsort.
+  2. Samma kanjiord med två läsningar, om paret inte står i `quality/readings-allow.json`.
+  3. Typografi: `..`, dubbla ord (med undantagslista), dubbla blanksteg, raka citattecken, blanksteg före skiljetecken.
+  4. Citat i `explanationSv` som inte finns ordagrant i lästexten.
+  5. `descriptionSv` som bara räknar upp målorden.
+  6. Förklaring som säger "kan också betyda" (och liknande) i en post med en enda betydelse.
+  7. Japansk text med annat antal meningar än den svenska (förklaring, exempel).
+  8. Lemma i grundordförrådet vars post saknar grundbetydelsen.
+- [ ] `quality/characters.json`: namn, katakana, ålder, roll, relationer. Validera katakanan mot tabellen.
+- [ ] `contentVersion` och `updatedAt` räknas ut av ett skript ur innehållets hash (också för moduler som delar en ändrad betydelse). Ta bort det manuella steget ur instruktionerna.
+
+**Mått i `metrics.json`:** andel modulkort utan bild · andel verb och processord (substantiv vars `defSv` börjar med "När ") med animation · planerad men ej levererad animation · andel poster med fler än en betydelse · "kan också betyda" utan egen betydelse · grundord med bara fackbetydelse · andel B2+ med två exempel, med användningsuppgift, med nämnda förväxlingspar · abstrakta B1-ord med förklaring · avvikande läsningar · typografifel · meningsantal SV≠JA · bilddelar per modul · startpaketets storlek.
+
+**Klart när:** måtten stämmer med tabellerna i revisionen (± ändringarna från A1), och ett testfall visar att CI fallerar när ett mått försämras.
+
+### A3. Laddtid, del 1 (det eleven märker)
+- [ ] `prefetchModuleVisuals()` anropar `loadMotif()` för alla ord i modulen eller passet när det öppnas, inte bara animationer.
+- [ ] Förladda alltid nästa korts bild (och bildalternativen i nästa bildövning) medan det nuvarande kortet visas.
+- [ ] `public/sw.js`: sluta byta cachenamn per release. Radera bara filer som inte finns i den nya versionens fillista. Filer med hash i namnet behålls.
+- [ ] Behåll föregående bild tills nästa är klar. Visa pulsen först efter cirka 300 ms.
+- [ ] Rita nästa kort utan att vänta på `logLearnEvent` och `onSave` (skriv i bakgrunden, men behåll ordningen och felhanteringen; tester krävs eftersom det rör daglig session).
+- [ ] e2e-mätning: tid från "Nästa" till synlig bild. Budget: under 150 ms med varm cache, under 400 ms med kall cache på strypt nät. Skriv värdet till `metrics.json`.
+
+**Klart när:** budgeten hålls i e2e i en modul ur R06, och `npm run build && npm run e2e` är grönt.
+
+### A4. Laddtid, del 2 (skalning)
+- [ ] Byggsteg som skriver **ett bildpaket per modul** med exakt de motiv modulen använder. Källfilerna i `src/ui/wordArt/` ändras inte. Repetition utanför en modul laddar paketet för ordets första modul.
+- [ ] Lyft ordboken ur startpaketet: starta med ett sökindex (lemma, böjningsformer, glosa, id) och ladda ordposter per modul eller vid uppslag. Sökning, ordboksblad och övningsgeneratorn (distraktorer) ska fungera som förut, också offline för öppnade moduler.
+
+**Klart när:** en modul laddar en bildfil i stället för flera delar, startpaketet är under 1,5 MB gzip, och offlinetesterna är gröna.
+
+### A5. Bildsystemet
+- [ ] **Matchningstest:** nytt läge i `art:blind` och `art:blind:record`. Granskaren får ord + glosa och ett ark med modulens bilder och väljer bild. Godkänt = rätt bild med hög säkerhet. Resultatet sparas i `blindTest` med `method: "match"`. Befintliga godkända bilder behöver inte testas om.
+- [ ] **Reservtrappa:** animation → scen → symbol → manuellt spår. `none` är inte längre ett giltigt slutläge för modulord. Efter två underkända omgångar får planen `status: "manual"` och ordet hamnar i den genererade kön `quality/backlog/visual-manual.json`.
+- [ ] **Manuellt spår** (egen etapptyp, se B5): en session som bara arbetar med kön. Fria medel: egen ritning i stället för mallfigurer, animation, bildserie i två–tre rutor, kontrastpar, närbild. Godkänns med matchningstest. Klarar bilden inte det visas den för produktägaren med en rad om varför, i stället för att strykas.
+- [ ] **En källa:** `visualPlan.json` bär all status. Ta bort `VISUAL_MISSING_AFTER_BLIND_TEST` ur `validateContent.ts` och listan *Saknade bilder* ur `PROJECT_STATUS.md`. Ersätt med den genererade kön.
+- [ ] **Animationer tillbaka:**
+  - `visuals-plan.mjs` sätter `animation` för verb, processord och ord vars definition beskriver rörelse eller förändring.
+  - `tools/production/vis.py` får inte skriva över planen, bara uppfylla den. Avsteg kräver `waiver` med skäl i planen.
+  - **Animation för saker:** låt en kodillustration innehålla rörelse (SVG-animation i motivfilen). Stillbild som posterbild i övningar och vid "minskad rörelse". Scenmotorn (`scripts/scenes/`) behålls för människor.
+  - Tester: posterbild finns, animationen respekterar "minskad rörelse", bildövningar visar bara posterbilden.
+
+**Klart när:** en provmodul ur Fysik (*Arbete och energi*) har animation på *rörelseenergi*, *lägesenergi* och *omvandla*, ett tidigare bildlöst ord har gått genom matchningstestet, och den hårdkodade mängden är borta.
+
+### A6. Datamodell för betydelser
+- [ ] `order` på betydelsen (visningsordning skild från ID). `OtherSenses`, ordboken och sökningen sorterar på den.
+- [ ] `level` på betydelsen, med postens nivå som reserv.
+- [ ] `inflection` på betydelsen som överskuggar postens (homonymer med olika genus, t.ex. *damm*).
+- [ ] `senseInventory: { checkedAgainst, date }` på posten.
+- [ ] `tools/production/senses.py <ord>`: visar postens betydelser, om lemmat är grundord, och vad som saknas. Ersätter `exists.py` i briefen.
+- [ ] Uppdatera `DATA_MODEL.md` och schemat. Inga lagrade användardata ändras (ID:n är oförändrade), men bekräfta det med backup- och migreringstesterna.
+
+**Klart när:** *arbete* har vardagsbetydelsen inlagd, visas först i ordboken och har nivå A1, medan `s.arbete.1` är oförändrad.
+
+### A7. Kontrakt, brief och dokument
+- [ ] `quality/contract.json` med K1–K9 ur revisionen, justerat efter besluten: K1 = animation, scen eller symbol, annars manuell kö. K7 = kort förklaring (1–2 meningar, svenska och japanska) för B1-ord med plan `symbol`.
+- [ ] Fältet `standard: 1 | 2` på modulen. `check.sh` stoppar nya moduler som inte uppfyller `standard: 2`.
+- [ ] `factSources` blir `{ text, source, checked, recheck }`. Äldre fria strängar godtas för `standard: 1`.
+- [ ] **Ny `docs/PRODUCTION_BRIEF.md`:** betydelseinventering före skrivandet, animationsavsnitt med ett exempel av varje sort, förklaringsmall (exempel + användning + skillnad mot förväxlingsord), två exempel för B2+, matchningstest, manuell kö. Håll den kort: det som en grind stoppar behöver bara en rad.
+- [ ] **`CLAUDE.md`:** lägg till "Kör `npm run audit:content`; inget mätvärde får försämras" och hänvisa bildregeln till kontraktet.
+- [ ] **`PROJECT_STATUS.md` ned till cirka 80 rader:** nuläge, nästa steg, regler. Flytta *Öppna osäkerheter* till `quality/backlog/uncertainties.json` (eller en fil per överämne).
+- [ ] **`CHANGELOG.md`:** en fil per release under `changelog/`, så att sammanslagningar inte krockar. Behåll regeln "läs aldrig hela".
+
+**Klart när:** en provmodul skriven enligt nya briefen går igenom `check.sh` som `standard: 2`, och en avsiktligt bristfällig modul (utan animation på ett verb, utan betydelseinventering, med ett exempel) stoppas.
+
+---
+
+## Del B. Eftersläpningen (befintliga 1 433 moduler)
+
+Varje kö genereras av `npm run audit:content -- --backlog` till `quality/backlog/`. Arbeta i katalogordning, så att det eleven möter först rättas först. En modul sätts till `standard: 2` när den uppfyller hela kontraktet.
+
+| Etapp | Kö | Omfattning | Sessioner (ungefär) |
+|---|---|---|---|
+| B1 | Skriptbar typografi och läsningar: citattecken, `..`, dubbla ord, säkra felläsningar | cirka 1 500 strängar | 1 |
+| B2 | Säkra betydelser: "kan också betyda" (177), 「；」 och "Också:" (109) → egna betydelser med `order` | cirka 290 poster | 1–2 |
+| B3 | Grundord med bara fackbetydelse: lägg till grundbetydelsen | 265 poster | 1–2 |
+| B4 | Planerade men ej levererade animationer (46), sedan Fysik och Kemi | cirka 350 ord | 2–3 |
+| B5 | Manuellt spår för bildlösa ord | 573 ord | en ämnesgrupp per session, värsta först: Avancerad matematik, Filosofi & etik, Ekologi & miljö, Matematikens grunder |
+| B6 | Per överämne, i ordning R01 → R06: betydelseinventering, förklaringar (K5–K7), andra exempel, animationer för verb och processord, strukturerade fakta | 34 ämnesgrupper | en ämnesgrupp per session, högst tre parallellt |
+| B7 | Språkgranskning av R04–R06 med metoden från R01–R03. Kan göras i samma pass som B6 för de grupperna | 676 moduler | ingår i B6 |
+
+**Ordning inom B6 för en ämnesgrupp:**
+1. `senses.py` för varje ord → lägg till saknade betydelser, sätt `order` och `senseInventory`.
+2. Förklaringar: lägg till exempel, användningsuppgift och en mening om skillnaden mot varje ord i `confusableWith`. Kort förklaring för abstrakta B1-ord.
+3. Andra exempelmening för B2+.
+4. Animation där planen säger det.
+5. Fakta: källa och datum.
+6. Språkgranskning (R04–R06), sätt `standard: 2`, kör alla kontroller.
+
+**Del B är klar när** alla moduler är `standard: 2`, `quality/backlog/` är tomt utom det som väntar på produktägaren, och taken i `quality/ceilings.json` är noll.
+
+---
+
+## Därefter
+
+*Biologi* (R06-A05) enligt den nya briefen. Före verklig användning återstår som tidigare: stäng av `devConfig.resetProgressOnUpdate` och testa på fysisk iPhone.
