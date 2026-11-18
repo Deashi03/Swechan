@@ -190,11 +190,17 @@ export const MICROBIO_MOTIFS: Record<string, Svg> = {
   /** arké: a steaming hot spring with orange edges; a lens shows lobed orange cells living in the hot water. */
   'mikro.arké': all(ellipse(34, 96, 30, 12, ARC, C.ink, 1.6), ellipse(34, 96, 22, 8, '#f6d36b', null), ellipse(34, 96, 14, 5, '#8fd0e6', null), steam(24, 84), steam(36, 82), steam(46, 86),
     zoom(34, 96, 5, 80, 40, 32, all(rect(40, 0, 80, 80, '#d6eef6', 0, null), arch(70, 28, 1), arch(92, 36, 0.9, 40), arch(76, 52, 1.1, -20), arch(96, 58, 0.8, 80), arch(62, 46, 0.7, 10), rect(84, 16, 12, 10, ARC, 1, C.ink, 1.2)), 'mz3')),
-  /** värmeälskande: a bubbling beaker at 90° full of happy orange cells is framed; a cool beaker at 20° with one cell is greyed. */
-  'mikro.värmeälskande': all(ground(),
-    path('M10 50 L52 50 L52 106 C52 110 48 112 44 112 L18 112 C14 112 10 110 10 106 Z', '#f6b39a', C.ink, 1.8), ...[[18, 66], [30, 60], [44, 70], [22, 88], [36, 82], [46, 96], [26, 100]].map(([x, y]) => all(arch(x!, y!, 0.55), smile(x!, y!, 0.6))),
-    circle(20, 56, 2, C.white, C.ink, 0.8), circle(38, 54, 2.4, C.white, C.ink, 0.8), steam(20, 44), steam(32, 42), steam(44, 44), thermo(4, 98, 36), num(30, 22, '90°', 12, C.red), frame(2, 10, 56, 104),
-    greyed(path('M68 50 L110 50 L110 106 C110 110 106 112 102 112 L76 112 C72 112 68 110 68 106 Z', WATER, C.ink, 1.8), arch(90, 84, 0.55), thermo(116, 98, 10, C.sky), num(90, 30, '20°', 12))),
+  /** värmeälskande: the same orange microbe twice: in warm water it smiles, has a heart and many happy copies (framed); in icy water it shivers, frowns and is crossed out. */
+  'mikro.värmeälskande': all(
+    rect(4, 14, 54, 98, '#f9c6a4', 6, C.ink, 1.6), line('M10 26 C14 22 18 30 22 26 M30 24 C34 20 38 28 42 24', '#e0824a', 1.6),
+    arch(30, 62, 1.7), smile(30, 61, 1.9), path('M30 40 C26 34 20 38 24 43 L30 48 L36 43 C40 38 34 34 30 40 Z', C.red, C.ink, 1),
+    arch(14, 96, 0.6), smile(14, 96, 0.65), arch(30, 100, 0.6), smile(30, 100, 0.65), arch(46, 94, 0.6), smile(46, 94, 0.65), arch(46, 80, 0.5), smile(46, 80, 0.55),
+    thermo(52, 104, 34), frame(1, 11, 60, 104, HL, 3),
+    rect(64, 14, 52, 98, '#dceffa', 6, C.ink, 1.6), path('M66 14 L114 14 L110 22 L104 18 L98 24 L92 18 L86 24 L80 18 L74 24 L68 18 Z', C.white, '#8cb6cc', 1),
+    arch(90, 66, 1.7, 0, '#e8c8b0'), circle(86, 64, 1.6, C.ink, null), circle(94, 64, 1.6, C.ink, null), line('M85 71 Q90 67 95 71', C.ink, 1.4),
+    line('M70 60 l-3 -2 M70 66 l-4 0 M70 72 l-3 2 M110 60 l3 -2 M110 66 l4 0 M110 72 l3 2', '#5a8fb0', 1.4),
+    ...[[76, 96], [104, 92], [88, 102]].map(([x, y]) => line(`M${x! - 4} ${y} L${x! + 4} ${y} M${x} ${y! - 4} L${x} ${y! + 4} M${x! - 3} ${y! - 3} L${x! + 3} ${y! + 3} M${x! + 3} ${y! - 3} L${x! - 3} ${y! + 3}`, '#6aa6cc', 1.3)),
+    cross(90, 66, 16), thermo(112, 104, 6, C.sky)),
   /** syrefri: water with O₂ above a layer of dark mud; in the framed mud O₂ is crossed out and cells make gas bubbles. */
   'mikro.syrefri': all(rect(4, 6, 112, 46, WATER, 4, null), num(26, 26, 'O₂', 11, C.navy), num(66, 40, 'O₂', 11, C.navy), num(96, 22, 'O₂', 11, C.navy),
     rect(4, 52, 112, 60, '#6f5038', 4, null), ...[[22, 92], [50, 100], [80, 90], [100, 102], [36, 72]].map(([x, y]) => arch(x!, y!, 0.6)),
