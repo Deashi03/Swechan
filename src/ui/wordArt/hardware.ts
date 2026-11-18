@@ -4,8 +4,8 @@
  * and troubleshooting hardware.
  * Recurring signs: the part that the word names is outlined in orange (ring or frame) and grey parts show
  * what the word is not. Words in a contrast pair share one layout where only the marked part differs:
- * stationär/bärbar dator (one desk with a desktop computer and a laptop), hårdvara/programvara (one laptop:
- * the parts you can touch or the programs on the screen), hårddisk/SSD (big disk, small grey other disk),
+ * stationär/bärbar dator (one desk with a desktop computer and a laptop), hårdvara/programvara (one computer:
+ * the parts you can touch or the apps on the screen), hårddisk/SSD (big disk, small grey other disk),
  * mörkt läge (light grey phone beside a dark one), spelkonsol/handkontroll (one TV corner: the box or the
  * controller) and spelutvecklare/grafisk formgivare (one desk: game and code or a poster layout on the screen).
  * Digits, maths signs and key labels (Ctrl, C) only; no words, no brands, no logos.
@@ -106,8 +106,6 @@ const game = (x: number, y: number, w: number, h: number) => all(rect(x, y, w, h
   circle(x + w * 0.25, y + h * 0.42, h * 0.08, C.skin, C.ink, 0.7), rect(x + w * 0.21, y + h * 0.49, w * 0.08, h * 0.17, C.red, 1, C.ink, 0.7), path(`M${x + w * 0.4} ${y + h * 0.78} L${x + w * 0.44} ${y + h * 0.68} L${x + w * 0.48} ${y + h * 0.78} Z`, C.purple, null));
 const flake = (x: number, y: number, s = 1, col = '#5aa7d6') => at(x, y, s, line('M0 -8 L0 8 M-7 -4 L7 4 M-7 4 L7 -4 M-2 -6 L0 -4 L2 -6 M-2 6 L0 4 L2 6', col, 1.8));
 const puff = (x: number, y: number, r: number) => path(`M${x - r} ${y} C${x - r} ${y - r} ${x} ${y - r * 1.2} ${x + r * 0.3} ${y - r * 0.6} C${x + r} ${y - r} ${x + r * 1.4} ${y} ${x + r} ${y + r * 0.4} Z`, '#b9b2a6', C.ink, 0.8);
-const palmFlat = (x: number, y: number, s = 1) => at(x, y, s, ...[-4.6, -1.6, 1.4, 4.4].map((d, i) => rect(d - 1.3, -9 + Math.abs(i - 1.5) * 1.2, 2.6, 9, C.skin, 1.3, C.ink, 0.9)),
-  path('M-5.5 -1 L5.5 -1 L5 5 C4 8 -4 8 -5 5 Z', C.skin, C.ink, 1), path('M-5.4 1 L-9 -3 C-10 -4 -11 -2 -10 -1 L-5 5', C.skin, C.ink, 1));
 
 // ── Shared layouts ───────────────────────────────────────────────────
 /** stationär/bärbar dator: one desk with a desktop computer (monitor + tower) and a laptop. */
@@ -118,9 +116,11 @@ const computers = (desktop: boolean) => {
 };
 /** hårdvara/programvara: one laptop, the touchable parts or the programs on the screen. */
 const hardSoft = (hard: boolean) => {
-  const body = all(laptop(60, 108, 1.15, '', C.silver), cpu(22, 30, 0.75), ram(96, 28, 0.55), palmFlat(64, 104, 1.1));
-  const progs = at(60, 108, 1.15, apps([C.red, C.yellow, C.green]), rect(-20, -16, 40, 3, C.denim, 1, null));
-  return all(hard ? all(body, greyed(progs), frame(6, 12, 108, 100)) : all(greyed(body), progs, frame(34, 62, 52, 33), arrow(60, 22, 60, 58, HL, 3.4)));
+  const physical = all(monitor(24, 8, 72, 52, '', 72), keyboard(60, 92, 76), cpu(13, 36, 0.5), ram(105, 36, 0.38, 90));
+  const content = all(rect(29, 13, 30, 22, C.white, 1.5, C.ink, 0.8), rect(29, 13, 30, 4, C.red, 1, null), rect(62, 13, 29, 22, C.white, 1.5, C.ink, 0.8), rect(62, 13, 29, 4, C.green, 1, null),
+    codeLines(64, 20, 3, 18), circle(44, 26, 4, C.yellow, null), ...[C.denim, C.orange, C.purple, C.green].map((c, i) => rect(32 + i * 15, 40, 10, 10, c, 2.5, null)), rect(29, 53, 62, 3, '#9fc3dc', 1, null));
+  return hard ? all(physical, greyed(content), rect(24, 8, 72, 52, 'none', 3, HL, 2.6), ring(13, 36, 11), ring(105, 36, 13.5), frame(19, 69, 82, 46))
+    : all(greyed(physical), content, frame(27, 11, 66, 48));
 };
 /** hårddisk/SSD: the big disk is the word, the small grey disk the other kind. */
 const disks = (isHdd: boolean) => all(
@@ -158,18 +158,22 @@ export const HARDWARE_MOTIFS: Record<string, Svg> = {
     ...range(8).map((i) => { const cx = -34 + (i % 4) * 17.5, cy = -30 + Math.floor(i / 4) * 31; return line(`M${cx + 3} ${cy + 6} L${cx + 12} ${cy + 6} M${cx + 3} ${cy + 12} L${cx + 12} ${cy + 12} M${cx + 3} ${cy + 18} L${cx + 9} ${cy + 18}`, i === 1 ? HL : C.grey, 1.2); }))),
   'hardw.minne.2': all(boardBg(4, 74, 112, 34), rect(14, 84, 92, 6, C.black, 1, C.ink, 1), rect(14, 96, 92, 6, C.black, 1, C.ink, 1), greyed(ram(60, 92, 1.45)),
     ram(60, 40, 1.5), arrow(60, 58, 60, 74, HL, 3), frame(10, 24, 100, 32)),
-  'hardw.prestanda': all(path('M16 86 A44 44 0 0 1 104 86', 'none', C.grey2, 10), path('M78.4 46 A44 44 0 0 1 104 86', 'none', '#f6b48a', 10),
-    ...range(9).map((i) => { const a = rad(180 + i * 22.5); return line(`M${f1(60 + Math.cos(a) * 32)} ${f1(86 + Math.sin(a) * 32)} L${f1(60 + Math.cos(a) * 38)} ${f1(86 + Math.sin(a) * 38)}`, C.ink, 1.4); }),
-    greyed(line(`M60 86 L${f1(60 + Math.cos(rad(215)) * 34)} ${f1(86 + Math.sin(rad(215)) * 34)}`, C.dark, 3.4)), line(`M60 86 L${f1(60 + Math.cos(rad(320)) * 36)} ${f1(86 + Math.sin(rad(320)) * 36)}`, HL, 4),
-    circle(60, 86, 6, C.dark, C.ink, 1.4), line('M84 22 L104 22 M88 30 L110 30 M92 38 L112 38', HL, 2.2), ground(104)),
+  'hardw.prestanda': all(ground(104), ...[[30, false], [90, true]].map(([x, fast]) => { const f = fast as boolean, X = x as number;
+    const lt = laptop(X, 66, 0.82, all(rect(-18, -26, 36, 7, C.white, 2, C.ink, 0.8), rect(-18, -26, f ? 36 : 9, 7, f ? C.green : C.denim, 2, null),
+      f ? line('M-6 -16 L-1 -11 L8 -20', C.green, 2.6) : path('M-4 -20 L4 -20 L0 -15 L4 -10 L-4 -10 L0 -15 Z', C.gold, C.ink, 0.6)));
+    const tb = all(circle(X - 22, 86, 5, C.white, C.ink, 1.2), line(`M${X - 22} 83 L${X - 22} 86 L${X - 20} 87`, C.ink, 1), rect(X - 14, 83, f ? 12 : 40, 6, f ? HL : C.grey, 2, C.ink, 0.8));
+    return f ? all(lt, tb, frame(X - 29, 28, 57, 66)) : greyed(lt, tb); })),
   'hardw.uppgradera': all(boardBg(4, 82, 112, 26), rect(14, 92, 92, 6, C.black, 1, C.ink, 1), greyed(ram(32, 36, 0.75, -18)), arrow(42, 54, 30, 46, C.grey, 2.4),
     ram(62, 66, 1.05), arrow(62, 76, 62, 88, HL, 2.6), frame(26, 54, 72, 24), arrow(108, 100, 108, 18, HL, 4), line('M101 34 L115 34 M108 27 L108 41', HL, 2.6)),
   // ── 3712 Hårddisk och lagring ────────────────────────────────────
   'hardw.hårddisk': disks(true),
   'hardw.SSD': disks(false),
-  'hardw.lagringsutrymme': all(phone(60, 58, 2.8, all(...range(9).map((i) => rect(-7.5 + (i % 3) * 5.4, -13 + Math.floor(i / 3) * 5.4, 4.6, 4.6, ['#f2a3a3', '#9fd3ee', '#f6e08a', '#a8dcc0', '#c7b3e6'][i % 5]!, 0.6, null)),
-    rect(-7.5, 5, 15, 4, C.white, 1, C.ink, 0.4), rect(-7.5, 5, 6, 4, C.denim, 0, null), rect(-1.5, 5, 4, 4, C.green, 0, null), rect(2.5, 5, 3.5, 4, C.purple, 0, null))),
-    frame(36, 66, 48, 21)),
+  'hardw.lagringsutrymme': all(ground(), ...[[8, true], [64, false]].map(([x, full]) => { const X = x as number, F = full as boolean;
+    const slots = range(12).map((i) => { const sx = X + 4 + (i % 3) * 15, sy = 22 + Math.floor(i / 3) * 22; const has = F || i < 2;
+      return all(rect(sx, sy, 13, 20, '#f3ead8', 1, C.ink, 0.8), has ? all(path(`M${sx + 3} ${sy + 4} L${sx + 8} ${sy + 4} L${sx + 10} ${sy + 6} L${sx + 10} ${sy + 18} L${sx + 3} ${sy + 18} Z`, [C.sky, C.yellow, C.pink, C.mint][i % 4]!, C.ink, 0.8)) : ''); });
+    const cab = all(rect(X, 18, 49, 94, C.brown, 3, C.ink, 1.8), ...slots);
+    return F ? greyed(cab) : all(cab, rect(X + 34, 22, 13, 20, 'rgba(228,87,46,0.18)', 1, null), rect(X + 4, 44, 43, 64, 'rgba(228,87,46,0.18)', 1, null),
+      path(`M${X + 34} 21 L${X + 48} 21 L${X + 48} 109 L${X + 3} 109 L${X + 3} 43 L${X + 34} 43 Z`, 'none', HL, 2.6, )); })),
   'hardw.USB-minne': all(ground(), desk(92), laptop(40, 92, 1, apps()), rect(68, 86, 4, 4, C.dark, 0, null), usbStick(92, 88, 1.4, 180), arrow(110, 74, 86, 74, HL, 2.6), ring(92, 88, 22)),
   'hardw.minneskort': all(rect(10, 40, 66, 46, C.dark, 6, C.ink, 1.8), rect(18, 32, 20, 10, C.dark, 3, C.ink, 1.6), circle(44, 63, 17, C.black, C.ink, 1.8), circle(44, 63, 11, '#4a6a8a', C.ink, 1.2), circle(40, 59, 3, C.white, null),
     rect(76, 50, 4, 26, C.black, 1, C.ink, 1), sdCard(96, 58, 1.5, 0), arrow(102, 96, 86, 80, HL, 2.6), ring(96, 58, 21)),
