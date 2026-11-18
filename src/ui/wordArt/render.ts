@@ -217,6 +217,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'solsys.': () => import('./solarSystem').then((m) => m.SOLSYS_MOTIFS),
   'himrel.': () => import('./skyMotion').then((m) => m.SKYMOT_MOTIFS),
   'stjarn.': () => import('./stars').then((m) => m.STARS_MOTIFS),
+  'galax.': () => import('./galaxies').then((m) => m.GALAX_MOTIFS),
   'rymdf.': () => import('./spaceflight').then((m) => m.SPACEFL_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
