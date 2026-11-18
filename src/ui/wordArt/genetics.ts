@@ -46,7 +46,6 @@ const arr = (x1: number, y1: number, x2: number, y2: number, col: string = HL, s
 const carr = (x1: number, y1: number, cx: number, cy: number, x2: number, y2: number, col: string = HL, sw = 3, dash?: string) => all(line(`M${x1} ${y1} Q${cx} ${cy} ${x2} ${y2}`, col, sw, dash), head(x2, y2, Math.atan2(y2 - cy, x2 - cx), col, sw / 3 + 0.3));
 const check = (x: number, y: number, s = 1) => at(x, y, s, circle(0, 0, 9, '#dff2e4', C.green, 1.8), line('M-4.5 0 L-1 3.8 L5 -4', C.green, 2.6));
 const cross = (x: number, y: number, s = 1) => at(x, y, s, circle(0, 0, 9, '#f8dede', C.red, 1.8), line('M-4 -4 L4 4 M4 -4 L-4 4', C.red, 2.6));
-const warn = (x: number, y: number, s = 1) => at(x, y, s, path('M0 -11 L11 8 L-11 8 Z', C.yellow, C.ink, 1.8), line('M0 -4 L0 2', C.ink, 2.2), circle(0, 5, 1.2, C.ink, null));
 const sign = (x: number, y: number, s: string, size = 14, col: string = C.ink) => T(x, y, s, size, col);
 
 // ── DNA ──────────────────────────────────────────────────────────────
@@ -185,9 +184,6 @@ const tube = (x: number, y: number, h = 46, liq: string = '#d6ecf8', level = 0.5
 const toggle = (x: number, y: number, on: boolean) => all(rect(x - 9, y - 5, 18, 10, on ? C.green : C.grey2, 5, C.ink, 1.3), circle(on ? x + 4 : x - 4, y, 3.8, C.white, C.ink, 1.1));
 const strawberry = (x: number, y: number, s = 1) => at(x, y, s, path('M0 10 C-10 2 -9 -7 -4 -8 C-2 -9 2 -9 4 -8 C9 -7 10 2 0 10 Z', '#e04a4a', C.ink, 1.4),
   path('M-5 -8 L-2 -12 L0 -8 L2 -12 L5 -8 Z', '#5bb36a', C.ink, 1), ...[[-3, -3], [2, -4], [-1, 2], [3, 1]].map(([a, b]) => circle(a ?? 0, b ?? 0, 0.8, '#f8e08a', null)));
-const lungs = (x: number, y: number, s = 1, col = '#f2a0a8', spots = false) => at(x, y, s, line('M0 -22 L0 -8 M0 -8 L-6 -2 M0 -8 L6 -2', C.ink, 2.4),
-  path('M-4 -6 C-6 -14 -20 -14 -22 4 C-23 16 -14 20 -4 14 Z', col, C.ink, 1.6), path('M4 -6 C6 -14 20 -14 22 4 C23 16 14 20 4 14 Z', col, C.ink, 1.6),
-  spots ? all(...[[-14, 2], [-10, 9], [13, 0], [16, 8], [9, 6]].map(([a, b]) => circle(a ?? 0, b ?? 0, 2.2, '#5a4a4a', null))) : '');
 const milkGlass = (x: number, y: number, s = 1) => at(x, y, s, path('M-7 -18 L7 -18 L6 0 L-6 0 Z', C.white, C.ink, 1.6), line('M-6 -13 L6 -13', '#d8dde3', 1));
 const tomato = (x: number, y: number, r: number, col = '#e04a3a') => all(circle(x, y, r, col, C.ink, 1.2), path(`M${f1(x - r * 0.5)} ${f1(y - r * 0.8)} L${x} ${f1(y - r * 0.5)} L${f1(x + r * 0.5)} ${f1(y - r * 0.8)}`, 'none', OK, 1.4));
 const plant = (x: number, y: number, h: number, fruitR: number, nFruit: number) => all(line(`M${x} ${y} L${x} ${y - h}`, OK, 2.6),
@@ -265,8 +261,9 @@ export const GENETICS_MOTIFS: Record<string, Svg> = {
   'gen.allel': all(bg(), rod(32, 100, LILA, 70), rod(60, 100, VIT, 70), rod(88, 100, '#f2a8c0', 70), oval(60, bandY(100, 70), 42, 10), flower(32, 26, LILA, 0.4, 10), flower(60, 26, VIT, 0.4, 10), flower(88, 26, '#f2a8c0', 0.4, 10)),
   /** dominant (genetik): two rows (purple+white → purple flower; white+white → white flower); the top row is framed in orange, the bottom row grey. */
   'gen.dominant.2': all(twoRows('top'), ring(22, bandY(56, 40), 8)),
-  /** recessiv: the same two rows; now the bottom row (white+white → white flower) is framed and the top row grey. */
-  'gen.recessiv': twoRows('bottom'),
+  /** recessiv: one pair with a purple and a white band; the white band is ringed, but the flower that grows is purple. A dashed arrow from the white band leads to a faint dashed white flower that is crossed out: the white allele is there but does not show. */
+  'gen.recessiv': all(bg(), ground, pair(32, 108, LILA, VIT, 76, 22), ring(43, bandY(108, 76), 9), arr(48, 74, 62, 84, C.grey, 2.2), flower(86, 110, LILA, 1.05, 28),
+    line('M50 62 C60 52 68 44 74 40', HL, 2, '3 3'), `<g opacity="0.55">${flower(92, 46, VIT, 0.95, 12).replace(/stroke="#2b2a33"/g, 'stroke="#9aa3ad" stroke-dasharray="2 2"')}</g>`, cross(106, 16, 0.75)),
   /** homozygot: a pair with two equal purple bands and an orange = between them, framed; a small grey pair with purple+white as reference. */
   'gen.homozygot': all(bg(), rect(16, 20, 56, 90, MARK, 6, null), pair(44, 104, LILA, LILA, 76, 26), sign(44, bandY(104, 76) + 6, '=', 18, HL), frame(16, 20, 56, 90), greyed(pair(96, 104, LILA, VIT, 44, 14))),
   /** heterozygot: the same layout with one purple and one white band and an orange ≠ between them, framed; a small grey purple+purple pair as reference. */
@@ -293,9 +290,12 @@ export const GENETICS_MOTIFS: Record<string, Svg> = {
   /** hudcancer: a forearm with a large, uneven dark spot in an orange ring; a hot sun in the corner; a small normal round mole on the arm stays plain. */
   'gen.hudcancer': all(bg('#fff7e6'), sun(18, 18, 8), line('M30 26 L40 36 M26 32 L34 44', C.gold, 1.8), g('translate(2 22)', path('M0 46 C30 40 70 40 96 44 L96 82 C70 86 30 86 0 80 Z', C.skin, C.ink, 2.2), path('M94 40 C108 38 118 46 118 62 C118 80 108 86 94 84 Z', C.skin, C.ink, 2.2),
     circle(26, 70, 2.2, '#8a5a3a', null), path('M58 54 C64 50 72 54 70 60 C74 64 68 72 62 69 C56 72 50 66 54 61 C50 57 54 53 58 54 Z', '#4a3026', C.ink, 1), circle(62, 58, 2.4, '#7a4a32', null)), ring(64, 83, 16)),
-  /** skadlig: a cigarette with dark smoke drifting to a pair of lungs with dark spots; a warning triangle beside them. */
-  'gen.skadlig': all(bg(), rect(8, 96, 40, 7, C.white, 2, C.ink, 1.4), rect(8, 96, 12, 7, '#e8a85a', 1, C.ink, 1.2), rect(46, 96, 4, 7, '#e85a3a', 1, null),
-    path('M50 92 C46 82 58 78 52 68 C48 60 60 56 58 48', 'none', '#6a6a72', 4), path('M50 92 C46 82 58 78 52 68 C48 60 60 56 58 48', 'none', '#9a9aa2', 2), lungs(84, 62, 1.1, '#d8a0a6', true), warn(102, 98, 1)),
+  /** skadlig: a bottle with a red hazard diamond gives off dark green fumes; a man next to it holds his belly and looks sick; a small plant beside the bottle has wilted. No cigarette, no cells. */
+  'gen.skadlig': all(bg(), ground, path('M14 112 L14 70 Q14 62 22 60 L22 50 L32 50 L32 60 Q40 62 40 70 L40 112 Z', '#d6ecf8', C.ink, 1.8), rect(21, 44, 12, 7, C.dark, 2, C.ink, 1.2),
+    at(27, 88, 1, path('M0 -11 L11 0 L0 11 L-11 0 Z', C.white, C.red, 2.2), line('M0 -5 L0 2', C.ink, 2.2), circle(0, 5.5, 1.3, C.ink, null)),
+    path('M30 42 C24 32 38 28 32 18 M38 44 C46 34 40 26 50 20', 'none', '#6b8f3a', 3), circle(52, 24, 3, '#9bbf5a', null), circle(44, 12, 2.4, '#9bbf5a', null),
+    P({ x: 82, top: C.sky, mood: 'sick' }), line('M72 76 L80 72 M88 72 L94 76', C.skin, 2), line('M66 30 l4 -2 M68 36 l5 0', C.ink, 1.2),
+    line('M52 112 L52 98 C52 92 56 92 58 96', OK, 2), path('M52 100 C46 100 44 104 46 108 C50 106 52 104 52 100 Z', '#a8b86a', C.ink, 1)),
   /** albino: a white rabbit with a red eye, ringed in orange; a grey brown rabbit as the ordinary reference. */
   'gen.albino': all(bg('#eef6ea'), ground, greyed(rabbit(26, 112, 0.8, '#a07850', C.ink)), circle(78, 86, 28, MARK, null), rabbit(72, 112, 1.05, C.white, '#e03a4a'), ring(78, 86, 28)),
   /** pigment: a patch of brown skin with a zoom circle that shows many small brown grains in the cells, ringed; the colour comes from the grains. */
