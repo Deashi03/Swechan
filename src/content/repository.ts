@@ -18,7 +18,24 @@ import type { Module as ModuleBody } from './schema';
 /** Index entry of a published module (no lesson body). */
 type ModuleT = ModuleMeta;
 
+/**
+ * A sense with its headword. `entry` is a view of the headword as this sense sees it (kvalitetsplanen A6):
+ * a sense's own `level` and `inflection` replace the entry's, so every screen and exercise that reads
+ * `ref.entry.level` / `ref.entry.inflection` uses the right values. `senseIndex` is the display position.
+ */
 export type SenseRef = { entry: VocabularyEntry; sense: WordSense; senseIndex: number };
+
+/** Senses in display order: senses with `order` first (lower first), then the others in file order. */
+export function orderSenses(e: VocabularyEntry): VocabularyEntry {
+  if (!e.senses.some((s) => s.order !== undefined)) return e;
+  const pos = new Map(e.senses.map((s, i) => [s.id, i]));
+  const key = (s: WordSense) => s.order ?? Number.POSITIVE_INFINITY;
+  return { ...e, senses: [...e.senses].sort((a, b) => (key(a) === key(b) ? 0 : key(a) < key(b) ? -1 : 1) || pos.get(a.id)! - pos.get(b.id)!) };
+}
+function senseView(e: VocabularyEntry, s: WordSense): VocabularyEntry {
+  if (!s.level && !s.inflection) return e;
+  return { ...e, level: s.level ?? e.level, inflection: s.inflection ?? e.inflection };
+}
 
 export type RawContent = {
   dictionaries: unknown[];
@@ -57,7 +74,7 @@ export class ContentRepository {
   private loadBody: (bodyFile: string) => Promise<unknown>;
 
   constructor(raw: RawContent) {
-    this.entries = raw.dictionaries.flatMap((d) => DictionaryFile.parse(d).entries);
+    this.entries = raw.dictionaries.flatMap((d) => DictionaryFile.parse(d).entries).map(orderSenses);
     this.categories = CategoriesFile.parse(raw.categories).categories;
     if (raw.modules) {
       // Full modules given (tests/tooling): derive the index, keep the bodies in memory.
@@ -76,7 +93,7 @@ export class ContentRepository {
 
     for (const e of this.entries) {
       this.entryById.set(e.id, e);
-      e.senses.forEach((sense, senseIndex) => this.senseById.set(sense.id, { entry: e, sense, senseIndex }));
+      e.senses.forEach((sense, senseIndex) => this.senseById.set(sense.id, { entry: senseView(e, sense), sense, senseIndex }));
     }
     for (const c of this.categories) this.categoryById.set(c.id, c);
     for (const n of this.grammarNotes) this.noteById.set(n.id, n);

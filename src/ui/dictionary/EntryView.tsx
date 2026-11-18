@@ -87,7 +87,12 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
                 <Ja text={s.ja} className="prompt-ja" />
               </div>
               {s.register !== 'neutral' && <span className="badge">{REGISTER_SV[s.register]}</span>}
+              {s.level && s.level !== entry.level && <span className="badge">nivå {s.level}</span>}
             </div>
+            {s.inflection && (
+              // Kvalitetsplanen A6: this sense inflects differently from the headword (ett damm / en damm).
+              <p className="small muted">Böjning i den här betydelsen: {s.inflection.kind === 'noun' && `${s.inflection.gender} `}{inflectionForms(s.inflection).map((f) => f.form).join(', ')}{s.inflection.kind === 'noun' && s.inflection.indefPl === null ? ' (ingen plural)' : ''}</p>
+            )}
             <p><SvText text={s.defSv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></p>
             <Ja text={s.defJa} as="p" className="ja-word" />
             {s.explanation && (
