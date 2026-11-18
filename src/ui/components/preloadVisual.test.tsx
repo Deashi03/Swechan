@@ -25,3 +25,17 @@ describe('förladdning av ordbilder (kvalitetsplanen A3)', () => {
     expect(() => { preloadVisual('s.finns-inte.1'); preloadVisual('s.finns-inte.1'); preloadVisual(null); }).not.toThrow();
   });
 });
+
+describe('rörelse i illustrationer (kvalitetsplanen A5)', () => {
+  it('spelas bara i ordintroduktionen; annars visas affischbilden', async () => {
+    const img = allWordImages().find((i) => i.kind === 'illustration' && i.animated)!;
+    if (img.kind !== 'illustration') throw new Error('no animated illustration');
+    preloadVisual(img.senseId);
+    await vi.waitFor(() => expect(loadedRenderer()?.renderWordArt(img.motif)).toBeTruthy(), { timeout: 10000 });
+    const intro = render(<WordImage senseId={img.senseId} size={120} label="a" mode="intro" />);
+    expect(intro.container.querySelector('.word-image.play [data-wa]')).not.toBeNull();
+    const still = render(<WordImage senseId={img.senseId} size={120} label="b" />);
+    expect(still.container.querySelector('.word-image.play')).toBeNull();
+    expect(still.container.querySelector('[data-wa]')).not.toBeNull();
+  });
+});

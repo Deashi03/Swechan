@@ -78,15 +78,17 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 **Klart när:** startpaketet är under 1,5 MB gzip, offline fungerar för öppnade moduler, och e2e är grönt.
 
 ### A5. Bildsystemet
-- [ ] **Matchningstest:** nytt läge i `art:blind` och `art:blind:record`. Granskaren får ord + glosa och ett ark med modulens bilder och väljer bild. Godkänt = rätt bild med hög säkerhet. Resultatet sparas i `blindTest` med `method: "match"`. Befintliga godkända bilder behöver inte testas om.
-- [ ] **Reservtrappa:** animation → scen → symbol → manuellt spår. `none` är inte längre ett giltigt slutläge för modulord. Efter två underkända omgångar får planen `status: "manual"` och ordet hamnar i den genererade kön `quality/backlog/visual-manual.json`.
-- [ ] **Manuellt spår** (egen etapptyp, se B5): en session som bara arbetar med kön. Fria medel: egen ritning i stället för mallfigurer, animation, bildserie i två–tre rutor, kontrastpar, närbild. Godkänns med matchningstest. Klarar bilden inte det visas den för produktägaren med en rad om varför, i stället för att strykas.
-- [ ] **En källa:** `visualPlan.json` bär all status. Ta bort `VISUAL_MISSING_AFTER_BLIND_TEST` ur `validateContent.ts` och listan *Saknade bilder* ur `PROJECT_STATUS.md`. Ersätt med den genererade kön.
-- [ ] **Animationer tillbaka:**
+- [x] **Matchningstest:** nytt läge i `art:blind` och `art:blind:record`. Granskaren får ord + glosa och ett ark med modulens bilder och väljer bild. Godkänt = rätt bild med hög säkerhet. Resultatet sparas i `blindTest` med `method: "match"`. Befintliga godkända bilder behöver inte testas om.
+- [x] **Reservtrappa:** animation → scen → symbol → manuellt spår. `none` är inte längre ett giltigt slutläge för modulord. Efter två underkända omgångar får planen `status: "manual"` och ordet hamnar i den genererade kön `quality/backlog/visual-manual.json`.
+- [x] **Manuellt spår** (egen etapptyp, se B5): en session som bara arbetar med kön. Fria medel: egen ritning i stället för mallfigurer, animation, bildserie i två–tre rutor, kontrastpar, närbild. Godkänns med matchningstest. Klarar bilden inte det visas den för produktägaren med en rad om varför, i stället för att strykas.
+- [x] **En källa:** `visualPlan.json` bär all status. Ta bort `VISUAL_MISSING_AFTER_BLIND_TEST` ur `validateContent.ts` och listan *Saknade bilder* ur `PROJECT_STATUS.md`. Ersätt med den genererade kön.
+- [x] **Animationer tillbaka:**
   - `visuals-plan.mjs` sätter `animation` för verb, processord och ord vars definition beskriver rörelse eller förändring.
   - `tools/production/vis.py` får inte skriva över planen, bara uppfylla den. Avsteg kräver `waiver` med skäl i planen.
   - **Animation för saker:** låt en kodillustration innehålla rörelse (SVG-animation i motivfilen). Stillbild som posterbild i övningar och vid "minskad rörelse". Scenmotorn (`scripts/scenes/`) behålls för människor.
   - Tester: posterbild finns, animationen respekterar "minskad rörelse", bildövningar visar bara posterbilden.
+
+**Genomfört 2026-11-19.** Kön för det manuella spåret är `quality/backlog/ord-utan-bild.json` (genereras av `npm run audit:content -- --backlog`). Rörelse för saker är CSS i motivet (`moving()`), inte SMIL. *Omvandla* rör sig, *energiomvandling* (manuellt spår) görs om i B5. Inget tidigare bildlöst ord har ännu gått igenom matchningstestet: det kräver en oberoende granskare och görs i B5, med verktyget som nu finns.
 
 **Klart när:** en provmodul ur Fysik (*Arbete och energi*) har animation på *rörelseenergi*, *lägesenergi* och *omvandla*, ett tidigare bildlöst ord har gått genom matchningstestet, och den hårdkodade mängden är borta.
 

@@ -1,5 +1,6 @@
 import { toolingRepository as getContent } from './tooling';
-import { validateContent, VISUAL_EXCEPTIONS_BEFORE_0_29, VISUAL_MISSING_AFTER_BLIND_TEST } from './validateContent';
+import { validateContent, visualMissingAllowed } from './validateContent';
+import { allPlannedVisuals } from './visualPlan';
 import { imageFor } from './images';
 
 describe('content validation', () => {
@@ -19,12 +20,12 @@ describe('content validation', () => {
     }
   });
 
-  it('every module word has a picture, animation or symbol (0.29) – only the listed exceptions lack one', () => {
+  it('every module word has a picture, animation or symbol – or waits in the manual track (kvalitetsplanen A5)', () => {
     const repo = getContent();
-    expect(VISUAL_EXCEPTIONS_BEFORE_0_29.size).toBe(14);
-    const missing = repo.modules.flatMap((m) => m.words.map((w) => w.senseId)).filter((id) => !imageFor(id) && !VISUAL_EXCEPTIONS_BEFORE_0_29.has(id) && !VISUAL_MISSING_AFTER_BLIND_TEST.has(id));
-    // the missing ones really lack a picture and are planned as `none`
-    for (const id of VISUAL_MISSING_AFTER_BLIND_TEST) expect(imageFor(id)).toBeUndefined();
+    const missing = repo.modules.flatMap((m) => m.words.map((w) => w.senseId)).filter((id) => !imageFor(id) && !visualMissingAllowed(id));
     expect(missing).toEqual([]);
+    // no module word is planned as "none", and a word in the manual track really lacks a picture
+    for (const m of repo.modules) for (const w of m.words) expect(allPlannedVisuals()[w.senseId]?.kind, w.senseId).not.toBe('none');
+    for (const [id, p] of Object.entries(allPlannedVisuals())) if (p.status === 'manual') expect(imageFor(id), id).toBeUndefined();
   });
 });

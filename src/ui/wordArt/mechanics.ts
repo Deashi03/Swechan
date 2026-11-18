@@ -10,7 +10,7 @@
  * collision) and centripetalkraft/centrifugalkraft (ball on a string seen from above, arrow in or out).
  * Digits, maths signs and the variable names m, v, F, t and p only; no words, no brands.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, star, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, star, type Svg } from './kit';
 import { HL, T } from './people';
 import { greyed } from './blindFix';
 import { clock } from './time';
@@ -120,9 +120,13 @@ const strobe = (kind: 'const' | 'acc' | 'ret') => {
   return all(...out);
 };
 /** A hill: plateau on the left, slope down to the right. Ball at the top (pot) or at the bottom (kin). */
+// Kvalitetsplanen A5: the ball moves along the hill (rolls down for rörelseenergi, is lifted up for
+// lägesenergi); the still picture (poster frame) is unchanged.
+const ROLL = '0%{transform:translate(-80px,-64px)}12%{transform:translate(-68px,-64px)}32%{transform:translate(-50px,-40px)}46%{transform:translate(-35px,-13px)}56%{transform:translate(-20px,-1px)}70%,100%{transform:translate(0,0)}';
+const LIFT = '0%,10%{transform:translate(80px,64px)}40%{transform:translate(40px,60px)}60%{transform:translate(12px,30px)}75%,100%{transform:translate(0,0)}';
 const hill = (atTop: boolean) => all(rect(0, 0, 120, 112, '#eaf5fb', 0, null), path('M0 112 L0 40 L32 40 C52 40 60 104 88 104 L120 104 L120 112 Z', '#bfe0a6', C.ink, 1.6),
-  atTop ? all(ball(20, 31, 9, C.red), circle(20, 31, 15, 'rgba(228,87,46,0.18)', null), vbr(8, 40, 104, HL), line('M4 104 L32 104', C.grey, 1.2, '3 3'), greyed(ball(100, 95, 9, C.red)))
-    : all(greyed(ball(20, 31, 9, C.red)), ball(100, 95, 9, C.red), speed(88, 95, HL, 3, 16), arrow(92, 80, 116, 80, HL, 3)));
+  atTop ? all(moving('mek-lift', LIFT, { dur: 3.2 }, ball(20, 31, 9, C.red), circle(20, 31, 15, 'rgba(228,87,46,0.18)', null)), vbr(8, 40, 104, HL), line('M4 104 L32 104', C.grey, 1.2, '3 3'), greyed(ball(100, 95, 9, C.red)))
+    : all(greyed(ball(20, 31, 9, C.red)), moving('mek-roll', ROLL, { dur: 3.2 }, ball(100, 95, 9, C.red)), speed(88, 95, HL, 3, 16), arrow(92, 80, 116, 80, HL, 3)));
 /** Before (top row) and after (bottom row) a collision of two balls. */
 const collide = (elastic: boolean) => {
   const A = elastic ? (x: number, y: number) => ball(x, y, 9, BLUE) : (x: number, y: number) => all(circle(x, y, 9, '#c98b5a', C.ink, 1.6), path(`M${x - 4} ${y - 2} q3 -3 6 0`, 'none', '#a0673d', 1));
@@ -232,7 +236,7 @@ export const MECHANICS_MOTIFS: Record<string, Svg> = {
     path('M2 70 C14 56 30 20 44 24 C58 28 62 90 74 90 C86 90 94 52 104 50 C112 48 116 60 118 64', 'none', C.dark, 3.4), path('M2 74 C14 60 30 24 44 28 C58 32 62 94 74 94 C86 94 94 56 104 54 C112 52 116 64 118 68', 'none', C.red, 1.6),
     g('translate(58 56) rotate(64)', rect(-9, -8, 18, 9, C.yellow, 2, C.ink, 1.4), circle(-4, -11, 3, C.skin, C.ink, 1), circle(4, -11, 3, C.skin, C.ink, 1), line('M-4 -14 L-6 -20 M4 -14 L6 -20', C.ink, 1.4)),
     g('translate(48 32) rotate(30)', rect(-9, -8, 18, 9, C.yellow, 2, C.ink, 1.4), circle(0, -11, 3, C.skin, C.ink, 1), line('M0 -14 L-2 -20 M0 -14 L3 -20', C.ink, 1.4))),
-  'mek.dynamo': all(cycWheel(46, 74, 34), line('M46 74 L74 22 L96 22', C.dark, 3.4), g('translate(77 48) rotate(28)', rect(-5, -12, 10, 20, C.silver, 3, HL, 2.6), rect(-3, 8, 6, 4, C.dark, 1, null)),
+  'mek.dynamo': all(moving('mek-wheel', '0%{transform:rotate(0)}100%{transform:rotate(360deg)}', { dur: 2.4, spin: true }, cycWheel(46, 74, 34)), line('M46 74 L74 22 L96 22', C.dark, 3.4), g('translate(77 48) rotate(28)', rect(-5, -12, 10, 20, C.silver, 3, HL, 2.6), rect(-3, 8, 6, 4, C.dark, 1, null)),
     path('M80 36 C90 30 92 20 98 20', 'none', C.red, 1.4), g('translate(102 22)', rect(-6, -6, 12, 12, C.dark, 3, C.ink, 1.2), circle(5, 0, 4, C.yellow, C.ink, 1.2)), line('M110 16 L118 12 M110 22 L118 22 M110 28 L118 32', C.gold, 2),
     arc(46, 74, 42, 60, 20, HL, 2.2)),
   // ── 3316 Rörelsemängd och impuls ────────────────────────────────

@@ -7,7 +7,8 @@
  *   node scripts/visuals-plan.mjs --recompute – also re-classify rows that are still `by: heuristic`
  *
  * Kinds (see docs in DATA_MODEL.md):
- *   animation – actions and processes (verbs, verb phrases): moving scene, poster frame in quizzes
+ *   animation – actions, processes and movement (verbs, verb phrases, nouns defined as "När …", words whose
+ *               definition describes movement or change): moving scene, poster frame in quizzes
  *   scene     – concrete things (nouns, some adjectives): still or lightly moving scene, quiz-eligible
  *   symbol    – abstractions, feelings, properties, idioms: symbolic scene + Japanese gloss, never quiz
  *   none      – function words where a picture would mislead
@@ -29,6 +30,9 @@ const visuals = JSON.parse(readFileSync(join(ROOT, 'src/content/data/images/word
 const visualBySense = new Map(visuals.map((v) => [v.senseId, v]));
 
 const ABSTRACT_AREAS = ['R02-A03']; // Känslor & psykologi
+// Kvalitetsplanen A5: processes and movement carry their meaning in motion.
+const MOTION_DEF = /\b(rör sig|röra sig|flyttar|faller|snurrar|rullar|rinner|stiger|sjunker|växer|ökar|minskar|smälter|kokar|kastar|hoppar|lyfter|trycker|skakar|böjer|sprider|förändras|omvandlas|går från)\b/;
+const isProcess = (entry, sense) => (entry.pos === 'noun' && /^När\s/.test(sense.defSv ?? '')) || MOTION_DEF.test(sense.defSv ?? '');
 const ABSTRACT_SUFFIX = /(het|else|ism|tion|sion|skap|ande|ende|dom|nad|itet|ans|ens|eri)$/;
 const CONCRETE_HET = new Set(['lägenhet', 'enhet', 'sevärdhet', 'nyhet', 'helhet', 'tillgänglighet']);
 
@@ -43,6 +47,7 @@ function classify(entry, sense, area) {
   }
   if (v) return v.symbol ? 'symbol' : 'scene';
   const abstractArea = ABSTRACT_AREAS.some((a) => area?.startsWith(a));
+  if (!abstractArea && isProcess(entry, sense)) return 'animation';
   const lemma = entry.lemma.toLowerCase();
   switch (entry.pos) {
     // multiword verbs in abstract areas are idioms (acceptera sig själv, gå i taket): symbolic scene

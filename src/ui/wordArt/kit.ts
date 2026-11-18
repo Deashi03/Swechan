@@ -24,6 +24,17 @@ export const rect = (x: number, y: number, w: number, h: number, fill: string, r
 export const line = (d: string, color: string = C.ink, sw = 2.2, dash?: string): Svg => `<path d="${d}" fill="none" stroke="${color}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round"${dash ? ` stroke-dasharray="${dash}"` : ''}/>`;
 export const g = (transform: string, ...children: Svg[]): Svg => `<g transform="${transform}">${children.join('')}</g>`;
 export const all = (...children: Svg[]): Svg => children.join('');
+/**
+ * Kvalitetsplanen A5 – motion for things (a ball that rolls, energy that flows, a wheel that turns).
+ * Wraps part of a drawing in a CSS animation. The wrapped drawing in its base state IS the poster
+ * frame: it is what picture exercises, "reduce motion" and blind-test reviewers see, so draw the
+ * final state and let `keyframes` move the part from elsewhere to there (`transform`/`opacity` only).
+ * The animation plays only in the word introduction (`.word-image.play`). posterOf() in
+ * content/blindTest.ts strips the wrapper, so adding motion never invalidates a blind test of the
+ * still picture. Set `"animated": true` on the image in wordVisuals.json.
+ */
+export const moving = (name: string, keyframes: string, opts: { dur?: number; delay?: number; spin?: boolean }, ...children: Svg[]): Svg =>
+  `<style data-wa>@keyframes wa-${name}{${keyframes}}.wa-${name}{animation:wa-${name} ${opts.dur ?? 3}s ease-in-out ${opts.delay ?? 0}s infinite both${opts.spin ? ';transform-box:fill-box;transform-origin:center' : ''}}</style><g data-wa="${name}" class="wa-${name}">${children.join('')}</g><!--/wa-->`;
 /** Place a full 120×120 drawing scaled into a box. */
 export const place = (x: number, y: number, scale: number, ...children: Svg[]): Svg => g(`translate(${x} ${y}) scale(${scale})`, ...children);
 export const mirror = (...children: Svg[]): Svg => g('translate(120 0) scale(-1 1)', ...children);

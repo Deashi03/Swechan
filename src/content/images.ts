@@ -17,11 +17,17 @@ const Common = {
   quiz: z.boolean(),
   confusableWith: z.array(z.string().regex(/^s\./)).optional(),
   symbol: z.boolean().optional(),
-  /** 0.19.1: independent blind test – `hash` fingerprints the tested picture (see blindTest.ts). */
-  blindTest: z.object({ result: z.enum(['pass', 'synonym']), round: z.string().min(1), hash: z.string().regex(/^[0-9a-f]{8}$/) }).optional(),
+  /**
+   * 0.19.1: independent blind test – `hash` fingerprints the tested picture (see blindTest.ts).
+   * method (kvalitetsplanen A5): `open` = the reviewer names the word from the picture alone (required for
+   * quiz pictures); `match` = the reviewer gets the word and its gloss and picks its picture among the
+   * module's pictures (enough for symbol pictures, which are always shown with the gloss). Missing = open.
+   */
+  blindTest: z.object({ result: z.enum(['pass', 'synonym']), round: z.string().min(1), hash: z.string().regex(/^[0-9a-f]{8}$/), method: z.enum(['open', 'match']).optional() }).optional(),
 };
 export const WordImageSchema = z.discriminatedUnion('kind', [
-  z.object({ kind: z.literal('illustration'), motif: z.string().min(1), ...Common }),
+  /** animated (kvalitetsplanen A5): the motif SVG contains CSS animation; its base state is the poster frame. */
+  z.object({ kind: z.literal('illustration'), motif: z.string().min(1), animated: z.boolean().optional(), ...Common }),
   z.object({ kind: z.literal('photo'), file: z.string().regex(/^[\w-]+\.(webp|jpg|png)$/), credit: Credit, ...Common }),
   z.object({
     kind: z.literal('animation'),

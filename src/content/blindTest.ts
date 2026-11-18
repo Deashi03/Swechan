@@ -14,9 +14,17 @@ export function visualHash(text: string): string {
   return h.toString(16).padStart(8, '0');
 }
 
-/** What the reviewer actually saw: the rendered illustration, or the scene data of an animation/face. */
+/**
+ * The poster frame of an illustration: the SVG without the motion wrappers of `moving()` (wordArt/kit.ts).
+ * A blind test judges the still picture; adding motion to it does not change what was tested.
+ */
+export function posterOf(svg: string): string {
+  return svg.replace(/<style data-wa>[^<]*<\/style>/g, '').replace(/<g data-wa="[^"]*" class="[^"]*">/g, '').replace(/<\/g><!--\/wa-->/g, '');
+}
+
+/** What the reviewer actually saw: the rendered illustration (poster frame), or the scene data of an animation/face. */
 export function visualFingerprintSource(img: WordImage, io: { renderMotif: (m: string) => string | null; sceneFile: (f: string) => string; faceScene: (senseId: string) => unknown }): string | null {
-  if (img.kind === 'illustration') return io.renderMotif(img.motif);
+  if (img.kind === 'illustration') { const svg = io.renderMotif(img.motif); return svg === null ? null : posterOf(svg); }
   if (img.kind === 'animation') return io.sceneFile(img.file);
   if (img.kind === 'face') return JSON.stringify(io.faceScene(img.senseId) ?? null);
   return null;
