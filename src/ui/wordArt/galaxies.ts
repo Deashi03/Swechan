@@ -162,29 +162,33 @@ export const GALAX_MOTIFS: Record<string, Svg> = {
     circle(84, 54, 1.6, C.white, null), hill(), rect(26, 64, 26, 16, C.dark, 3, C.ink, 1.4), circle(39, 72, 5, '#5a6a8a', C.ink, 1.2), rect(30, 60, 8, 5, C.dark, 1, C.ink, 1), line('M39 80 L28 110 M39 80 L39 110 M39 80 L50 110', '#9aa3ad', 2),
     circle(96, 92, 12, C.white, C.ink, 1.6), path('M96 92 L96 80 A12 12 0 1 1 84 92 Z', 'rgba(228,87,46,0.55)', null), line('M96 92 L96 82 M96 92 L88 94', C.ink, 1.6)),
   // ── Universums expansion ───────────────────────────────────────────
-  /** expandera: a small grey circle with four galaxy dots, and to the right the same dots in a much bigger circle, farther apart, with orange arrows pointing outwards. */
-  'galax.expandera': all(bg(), greyed(circle(22, 58, 14, '#2a3560', C.grey2, 1.4), ...[[16, 52], [28, 54], [20, 64], [27, 63]].map(([x, y]) => circle(x!, y!, 2.4, CORE, null))),
-    arrow(40, 58, 50, 58, C.grey2, 2), circle(82, 58, 30, '#2a3560', C.grey2, 1.4), ...[[68, 46], [94, 50], [74, 74], [96, 70]].map(([x, y]) => spiral(x!, y!, 0.12)),
-    ...[[-1, -1], [1, -1], [-1, 1], [1, 1], [0, -1.4], [0, 1.4], [-1.4, 0], [1.4, 0]].map(([dx, dy]) => arrow(f1(82 + dx! * 21), f1(58 + dy! * 21), f1(82 + dx! * 30), f1(58 + dy! * 30), HL, 2.2))),
-  /** mörk energi: the universe drawn as a widening shape from a dot on the left (time going right) that opens faster and faster at the right end; a dark purple ? glows inside and orange arrows push outwards. */
-  'galax.mörk-energi': all(bg(), path('M10 60 C40 50 70 46 90 34 C100 28 108 18 112 10 L112 110 C108 102 100 92 90 86 C70 74 40 70 10 60 Z', 'rgba(122,79,196,0.35)', ARM, 1.4), circle(10, 60, 2.6, C.white, null),
-    ...[[40, 60], [62, 56], [62, 66], [84, 48], [84, 72], [100, 40], [100, 80]].map(([x, y]) => circle(x!, y!, 1.8, CORE, null)), glow(80, 60, 18, DM, 4, 0.5), num('?', 80, 66, 18, '#d8c8ff'),
-    arrow(98, 30, 108, 16, HL, 2.4), arrow(98, 90, 108, 104, HL, 2.4), line('M10 104 L60 104', C.grey2, 1.4), path('M60 104 L55 101 L55 107 Z', C.grey2, null)),
+  /** expandera: the same square of nine dots in three steps, small, bigger and biggest (framed); the distance between all the dots grows, shown by an orange measure under each step that gets longer. */
+  'galax.expandera': all(bg(C.paper), ...([[6, 18, 0.45], [30, 30, 0.7], [66, 48, 1]] as const).map(([x, w, o], i) => {
+    const y = 58 - w / 2, d = w * 0.3;
+    return all(op(o, rect(x, y, w, w, '#e4ecf8', 2, C.grey, 1.2)), ...range(9).map((j) => circle(f1(x + w * (0.2 + (j % 3) * 0.3)), f1(y + w * (0.2 + Math.floor(j / 3) * 0.3)), 2.2, '#3f6fb5', C.ink, 0.8)),
+      line(`M${f1(x + w * 0.2)} ${f1(y + w + 8)} L${f1(x + w * 0.2 + d)} ${f1(y + w + 8)}`, i === 2 ? HL : C.grey, 2.4), line(`M${f1(x + w * 0.2)} ${f1(y + w + 5)} l0 6 M${f1(x + w * 0.2 + d)} ${f1(y + w + 5)} l0 6`, i === 2 ? HL : C.grey, 1.6));
+  }), frame(62, 30, 56, 56)),
+  /** mörk energi: above, in grey, two galaxies pulled together by gravity (grey arrows inwards); below, framed, the same two galaxies pushed apart by an unknown dark purple force with a ? between them (orange arrows outwards). */
+  'galax.mörk-energi': all(bg(), starDots(20, 67),
+    greyed(panel(8, 8, 104, 44), spiral(30, 30, 0.22), spiral(90, 30, 0.22), arrow(46, 30, 56, 30, C.grey2, 2.4), arrow(74, 30, 64, 30, C.grey2, 2.4)),
+    panel(8, 60, 104, 48), glow(60, 84, 20, DM, 4, 0.6), num('?', 60, 91, 20, '#e2d6ff'), spiral(24, 84, 0.22), spiral(96, 84, 0.22), arrow(44, 84, 34, 84, HL, 2.6), arrow(76, 84, 86, 84, HL, 2.6),
+    frame(6, 58, 108, 52)),
   // ── Rödförskjutning ────────────────────────────────────────────────
   /** ljusvåg: a lamp on the left sends a yellow wavy line across to an eye on the right. */
   'galax.ljusvåg': all(bg(C.paper), circle(20, 50, 10, '#fff3a0', C.ink, 1.6), rect(15, 60, 10, 8, C.grey, 1, C.ink, 1.2), line('M8 50 L4 50 M20 36 L20 32 M10 40 L7 37 M30 40 L33 37', C.gold, 2),
     wave(34, 52, 62, 9, 16, C.gold, 3), path('M96 52 L90 47 L90 57 Z', C.gold, null), eye(106, 52, 0.9), ring(64, 52, 32, 16)),
-  /** blåförskjutning: like rödförskjutning, but the star moves left towards an eye; the lines in the orange-framed spectrum lie further left (towards blue) than in the grey one above. */
-  'galax.blåförskjutning': all(bg('#1f2a44'), eye(14, 22, 0.9), sparkle(96, 22, 7, C.yellow), arrow(86, 22, 62, 22, C.white, 2), sparkle(54, 22, 4, C.yellow),
-    ...[0, 1].map((r) => all(...RAINBOW.map((c, i) => rect(14 + i * 13, 40 + r * 36, 13, 18, c, 0, null)))), greyed(rect(14, 40, 91, 18, 'none', 0, C.white, 1.4)),
-    ...[46, 64, 88].map((x) => line(`M${x} 40 L${x} 58`, C.black, 2.4)), rect(12, 74, 95, 22, 'none', 2, HL, 2.6), ...[30, 48, 72].map((x) => line(`M${x} 76 L${x} 94`, C.black, 2.4)), arrow(80, 104, 40, 104, HL, 2.6)),
+  /** blåförskjutning: a star moves left towards an eye; the light waves in front of it are pressed close together and blue (with a blue glow), the waves behind it are wide apart and grey; a small spectrum strip below has its dark lines moved to the blue end. */
+  'galax.blåförskjutning': all(bg('#1f2a44'), glow(34, 50, 26, '#4f8fff', 4, 0.4),
+    ...range(4).map((k) => { const cx = 58 + 6 * k, r = 8 + 10 * k; return all(`<path d="M${cx} ${50 - r} A${r} ${r} 0 0 1 ${cx} ${50 + r}" fill="none" stroke="${C.grey}" stroke-width="1.4"/>`, `<path d="M${cx} ${50 - r} A${r} ${r} 0 0 0 ${cx} ${50 + r}" fill="none" stroke="#5aa0ff" stroke-width="3"/>`); }),
+    sparkle(58, 50, 7, C.yellow), circle(58, 50, 2.4, C.white, null), arrow(56, 62, 44, 62, C.white, 2), eye(14, 50, 0.9), ring(44, 50, 12, 36, HL),
+    ...RAINBOW.map((c, i) => rect(30 + i * 9, 96, 9, 10, c, 0, null)), ...[36, 47, 63].map((x) => line(`M${x} 96 L${x} 106`, C.black, 1.8)), arrow(98, 101, 90, 101, HL, 2)),
   // ── Mörk materia ───────────────────────────────────────────────────
   /** mörk materia: a spiral galaxy in colour inside a much bigger dark purple cloud that cannot be seen (dashed edge), ringed. */
   'galax.mörk-materia': all(bg(), starDots(26, 47), glow(60, 58, 52, DM, 5, 0.32), `<circle cx="60" cy="58" r="50" fill="none" stroke="${DM}" stroke-width="1.6" stroke-dasharray="4 3"/>`, spiral(60, 58, 0.5), num('?', 26, 34, 12, '#d8c8ff'), num('?', 94, 88, 12, '#d8c8ff'), ring(60, 58, 52)),
-  /** gravitationslins: an eye on the left, a heavy group of galaxies in the middle and a small blue galaxy on the right; light from the blue galaxy bends around the group to the eye, and blue arcs show around the group. */
-  'galax.gravitationslins': all(bg(), starDots(20, 53), eye(12, 58, 0.9), ...[[54, 52], [62, 60], [56, 66], [66, 50], [60, 56]].map(([x, y]) => elliptical(x!, y!, 0.16)), glow(60, 58, 16, '#ffd88a', 3, 0.25),
-    irregular(104, 58, 0.22), path('M100 54 C84 24 40 24 22 54', 'none', '#bcd4ff', 1.8), path('M100 62 C84 92 40 92 22 62', 'none', '#bcd4ff', 1.8), path('M22 54 L28 49 L29 56 Z M22 62 L29 60 L28 67 Z', '#bcd4ff', null),
-    path('M46 36 C54 32 66 32 74 36', 'none', '#8fb4ff', 3.2), path('M46 80 C54 84 66 84 74 80', 'none', '#8fb4ff', 3.2), ring(60, 58, 26, 30)),
+  /** gravitationslins: an eye on the left, a heavy group of yellow galaxies in the middle and a small blue galaxy far away on the right; its light bends around the group, so the eye sees the blue galaxy as two blue arcs around the group, outlined in orange. */
+  'galax.gravitationslins': all(bg(), starDots(20, 53), eye(12, 58, 0.9), glow(62, 58, 16, '#ffd88a', 3, 0.3), ...[[56, 52], [64, 60], [58, 66], [68, 50], [62, 56]].map(([x, y]) => elliptical(x!, y!, 0.16)),
+    op(0.8, irregular(106, 58, 0.18)), path('M102 54 C88 26 40 26 22 54', 'none', '#bcd4ff', 1.4), path('M102 62 C88 90 40 90 22 62', 'none', '#bcd4ff', 1.4), path('M22 54 L28 49 L29 56 Z M22 62 L29 60 L28 67 Z', '#bcd4ff', null),
+    ...['M44 40 C52 33 72 33 80 40', 'M44 76 C52 83 72 83 80 76'].map((d) => all(line(d, HL, 8), line(d, '#8fb4ff', 4.4), line(d, '#e6efff', 1.4)))),
   // ── Kosmisk bakgrundsstrålning ─────────────────────────────────────
   /** kosmisk bakgrundsstrålning: an oval map of the whole sky covered in small blue, yellow and red spots; below, a horn antenna catches wavy lines coming from it. */
   'galax.kosmisk-bakgrundsstrålning': all(bg(), ellipse(60, 38, 52, 28, '#4a7ad0', C.white, 1.4), (() => { const r = rng(59); const cols = ['#2f5fb8', '#7fb0e8', '#f2d24e', '#f39a3c', '#e2463a', '#5f8fd8']; return all(...range(150).map(() => { const a = r() * Math.PI * 2, d = Math.sqrt(r()); return ellipse(f1(60 + Math.cos(a) * d * 48), f1(38 + Math.sin(a) * d * 24), f1(2 + r() * 3), f1(1.6 + r() * 2), cols[Math.floor(r() * 6)]!, null); })); })(),
