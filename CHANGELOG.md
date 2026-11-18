@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.54.0 – 2026-11-18
+
+42 nya moduler som gör överämnet *Datorer & internet* (R07-A01) komplett, det första i *Teknik & digital värld* (R07). Modulerna lär ut det svenska ordförrådet för datorer och internet i vardag, studier och arbete (köpa och laga dator, wifi hemma, BankID, e-post, digitala tjänster, distansarbete). Varje nytt modulord har en egen bild, utom de 17 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 707 målord)
+- **Datorns delar** (3711–3717): processor och minne, hårddisk och lagring, moderkort och portar, skärmar och upplösning, tangentbord och mus, grafikkort samt att felsöka hårdvara.
+- **Operativsystem & filer** (3721–3727): skrivbord och fönster, mappar och filtyper, installera program, inställningar och behörighet, säkerhetskopiering, komprimerade filer samt uppdateringar och drivrutiner.
+- **Internet & webben** (3731–3737): webbläsare och flikar, webbplatser och webbadresser, sökmotorer, länkar och nedladdningar, cookies och cache, domäner och servrar samt felmeddelanden på webben.
+- **Nätverk & uppkoppling** (3741–3747): wifi och router, mobildata, IP-adresser, bandbredd och svarstid, trådlös täckning, nätverksproblem och hemnätverkets säkerhet.
+- **Digital säkerhet** (3751–3757): starka lösenord, tvåfaktorsautentisering, nätfiske, skadlig programvara, kryptering, integritet på nätet och säkerhetsuppdateringar.
+- **Digitala vardagsverktyg** (3761–3767): e-post och inkorg, molnlagring, dokument och kalkylblad, digitala kalenderverktyg, videosamtalsprogram, fotohantering och digitala samarbetsverktyg.
+- Varje modul har 15–20 målord, lästext med fem frågor och konversationsunderlag. Det finns 218 nya ordposter, bland andra *dokument*, *app*, *wifi* och *e-post*.
+- 41 nya betydelser på befintliga poster, där vardagsordet fått sin datorbetydelse: bland andra *minne*, *port*, *mus*, *tangent*, *frysa* (datorn), *skrivbord*, *fönster*, *fil*, *papperskorg*, *genväg*, *meny*, *markera*, *ångra*, *surfa*, *fält*, *fiber*, *enhet*, *täckning*, *störning*, *virus*, *moln*, *cell*, *formel*, *filter* och *väntrum* (i ett videomöte). Den gamla betydelsen har fått en etikett.
+- Parallella grupper ville skapa samma poster (*muspekare*, *högerklicka*, *uppgradera*, *ansluta*, *mörkt läge*, *logga in/ut*, *ladda upp*, *klistra in*, *meny*, *markera*, *flygplansläge*, *enhet*). Posten finns bara i den grupp som kommer först i katalogen, och de andra refererar dess `senseId`.
+- Äkta synonymer är markerade som förväxlingsbara: *hänga sig/frysa* (om datorn).
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Programmering & artificiell intelligens* (R07-A02): Programmeringens grunder → Variabler och datatyper.
+
+### Bilder (247 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `hardware.ts`, `osFiles.ts`, `web.ts`, `networking.ts`, `digitalSecurity.ts` och `digitalTools.ts`. Bilderna har inga logotyper; tangentetiketter (Ctrl, C), @ och Aa förekommer.
+- 68 symbol- och adjektivbilder blindtestades. 51 klarade testet efter högst två omgångar.
+- **17 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+
+Service workern är `swechan-v58`.
+
+
 ## 0.53.0 – 2026-11-18
 
 42 nya moduler som gör överämnet *Astronomi & rymd* (R06-A06) komplett. Därmed är hela *Matematik & naturvetenskap* (R06) publicerad. Modulerna lär ut det svenska ordförrådet för astronomi och rymdfart med vardagliga exempel (stjärnhimlen, månen, årstider, nyheter om rymdfart, planetarium, GPS). Varje nytt modulord har en egen bild, utom de 8 ord som underkändes i två blindtestomgångar.

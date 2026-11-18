@@ -315,6 +315,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.uppkopplad.1', 's.mobildata.1', 's.svarstid.1', 's.bandbredd.1', 's.täckning.2', 's.tappa-uppkopplingen.1', 's.VPN.1',
   // 0.54 Digital säkerhet: förväxlas med lösenord respektive sårbarhet efter två blindomgångar
   's.byta-lösenord.1', 's.säkerhetsrisk.1',
+  // 0.54 Digitala vardagsverktyg: förväxlas med e-post/skicka vidare efter två blindomgångar
+  's.frånvaromeddelande.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

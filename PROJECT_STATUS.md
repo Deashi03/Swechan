@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.53.0 (släppt 2026-11-18) · **Senast uppdaterad:** 2026-11-18 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.54.0 (släppt 2026-11-18) · **Senast uppdaterad:** 2026-11-18 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 517 publicerade moduler. 1 512 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48), *Avancerad matematik* (R06-A02, 0.49), *Fysik* (R06-A03, 0.50), *Kemi* (R06-A04, 0.51), *Biologi* (R06-A05, 0.52) och *Astronomi & rymd* (R06-A06, 0.53), alltså hela *Matematik & naturvetenskap* (R06). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 559 publicerade moduler. 1 554 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48), *Avancerad matematik* (R06-A02, 0.49), *Fysik* (R06-A03, 0.50), *Kemi* (R06-A04, 0.51), *Biologi* (R06-A05, 0.52) och *Astronomi & rymd* (R06-A06, 0.53), alltså hela *Matematik & naturvetenskap* (R06), och *Datorer & internet* (R07-A01, 0.54). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Datorer & internet* (R07-A01) i *Teknik & digital värld* (R07). I *Kemi* har grupperna *Atomer & periodiska systemet* och *Molekyler & kemiska bindningar* åtta val var, eftersom de också innehåller de ursprungliga modulerna *Atomer och molekyler* och *Material och ämnen*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Programmering & artificiell intelligens* (R07-A02) i *Teknik & digital värld* (R07). I *Kemi* har grupperna *Atomer & periodiska systemet* och *Molekyler & kemiska bindningar* åtta val var, eftersom de också innehåller de ursprungliga modulerna *Atomer och molekyler* och *Material och ämnen*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 16 113 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 16 360 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp: överämnet *Datorer & internet* (R07-A01) i *Teknik & digital värld*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp: överämnet *Programmering & artificiell intelligens* (R07-A02) i *Teknik & digital värld*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -221,6 +221,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Galaxer & universum: `s.mörk-energi.1`, `s.blåförskjutning.1`
   - Astronomins metoder: `s.spektroskopi.1`
   - Förväxlingarna: *livlös/den röda planeten*, *kollisionskurs/kollision/jordnära*, *månförmörkelse/kärnskugga*, *vårpunkt/vårdagjämning*, *soltid/solur*, *mörk energi/expandera/accelerera*, *blåförskjutning/dopplereffekt*, *spektroskopi/spektrum/streckkod*.
+- **Från 0.54 (17 ord):**
+  - Datorns delar: `s.prestanda.1`, `s.lagringsutrymme.1`
+  - Operativsystem & filer: `s.testversion.1`, `s.operativsystem.1`
+  - Internet & webben: `s.cache.1`, `s.ligga-nere.1`, `s.driftstörning.1`
+  - Nätverk & uppkoppling: `s.uppkopplad.1`, `s.mobildata.1`, `s.svarstid.1`, `s.bandbredd.1`, `s.täckning.2`, `s.tappa-uppkopplingen.1`, `s.VPN.1`
+  - Digital säkerhet: `s.byta-lösenord.1`, `s.säkerhetsrisk.1`
+  - Digitala vardagsverktyg: `s.frånvaromeddelande.1`
+  - Förväxlingarna: *prestanda/uppgradera*, *lagringsutrymme/rymma*, *testversion/licens*, *operativsystem/drivrutin*, *cache/lagra*, *ligga nere/driftstörning*, *driftstörning/krångla*, *uppkopplad/uppkoppling*, *mobildata/surf*, *svarstid/fördröjning*, *bandbredd/kapacitet*, *täckning/räckvidd*, *tappa uppkopplingen/avbrott*, *VPN/kryptera*, *byta lösenord/lösenord*, *säkerhetsrisk/sårbarhet*, *frånvaromeddelande/skicka vidare*. Nätverksorden i samma modul (*svarstid/fördröjning*, *bandbredd/kapacitet*, *täckning/räckvidd*) gick inte att skilja i stillbild.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -547,6 +555,15 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **0.53, japanska:** 黄色矮星 (おうしょくわいせい), 事象の地平面/地平線, ガス雲 (ガスうん), 星座 för både *stjärnbild* och *stjärntecken* (skiljs med förklaring), 光害 läses ひかりがい hos T02 men こうがい hos T04, 推力, ペイロード, 地上局, 再突入, 着水する, 耐熱シールド, 月面車, レンズ状銀河, 矮小銀河, 宇宙マイクロ波背景放射, 屈折/反射望遠鏡, 分光学, 天文単位, 視差; glosorna för *inre/yttre planet* skiljer sig avsiktligt från 内惑星/外惑星
 - **0.53, fakta (står i `factSources`, kan ändras):** mer än 90 månar för Jupiter och Saturnus, Venus rotation 243 dygn mot omloppstid 225 dygn, Stora röda fläcken mer än 150 år, solförmörkelser i Japan 2012 och 2035, skottsekunder avskaffas senast 2035, gregoriansk kalender i Japan 1873, solen som röd jätte "kanske 200 gånger större", en tesked neutronstjärna "flera miljarder ton", Teika och Meigetsuki, Andromeda–Vintergatan-sammanslagningen osäker (Sawala m.fl. 2025), 13,8 miljarder år, 2,7 K, ISS cirka 400 km och 90 minuter, geostationär bana cirka 35 800 km, Fuglesang 2006/2009 och Wandt 2024, Hayabusa2 2020, Apollo (tolv personer, 382 kg), Galileos förstoring, Svenska solteleskopet cirka 2 360 m, Onsala och bilden av det svarta hålet 2019 (förenklat), Parkes-mikrovågsugnen 2015, WASP-39 b 2022; källhänvisningarna till ESA, SSC och Rymdstyrelsen bör stämmas av
 - **0.53, arbetsform:** etappen kördes direkt efter 0.48–0.52 i samma session på produktägarens uttryckliga begäran. T02 och T03 blev klara före T01 och lades in först när T01 var inlagd; T05 lades in före T04.
+- **0.54, svenska:**
+  - ord och böjning att kontrollera mot SAOL/SO: *cookie* (cookies, cookiesen), *cache* (ingen plural), *datacenter* (datacentret, datacentren; även *datacentrum*), *snedstreck*, *wifi* (ett wifi, wifit), *VPN* (ett VPN; även *en VPN*), *simkort* (även *SIM-kort*), *bluff-sms* (även *bluffsms*), *id-kapning* (även *ID-kapning*), *snabel-a* (pl. snabel-an), *kalenderinbjudan* (pl. kalenderinbjudningar), *dra och släppa* (drog och släppte)
+  - ordval: *streama* (Språkrådet föreslår *strömma*), *cookie* (svenska webbplatser skriver ofta *kakor*), *googla*, *snylta* och *seg* om datorer (vardagligt), *surfzon* (Android; på iPhone "personlig hotspot"), *arrangör* (i Outlook "organisatör"), *mellanslag* om tangenten (egentligen *mellanslagstangent*), *gemen* (fackord för liten bokstav), *klartext* (B2, kanske C1)
+  - betydelser som borde få egna poster senare: *data* (datorbetydelsen använder s.data.1 "uppgifter som samlats in"), *klippa ut*/*klistra in* (bara databetydelsen), *överbelastad*, *mottagare*/*avsändare* och *lämna in* (definierade för andra sammanhang)
+  - posten *fil* fick pluralformer (filer) via databetydelsen; de gäller nu också *fil* (mjölk)
+- **0.54, japanska:** ソリッドステートドライブ (*SSD*, bokstäverna godkändes inte i glosan), {提出|ていしゅつ}する för *lämna in* en dator (passar dåligt), シークレットモード, レンタルサーバー, テザリング (*surfzon*), {応答時間|おうとうじかん}/レイテンシー, 解凍/展開 (*packa upp*), パス (*sökväg*), 平文 (*klartext*), なりすまし (*id-kapning*), クラウド, フラッシュ, 待機室, 修正案
+- **0.54, fakta (står i `factSources`, kan ändras):** HDD och SSD, garantin och egna skador (Konsumentverket, Hallå konsument), spelutvecklare i Stockholm, datacenter i Luleå sedan 2013, .se-domäner förnyas årsvis, EU:s roamingregler (sedan 2017, förlängda 2022), IP-adress och lagen om elektronisk kommunikation, gränserna 20 och 100 ms för svarstid, Polisens råd om utpressningsprogram, kreditupplysning (kopia per post), IMY-anmälan inom 72 timmar, Arbetsförmedlingens cv-mallar, distansarbete under pandemin (SCB), molnpriser som exempel
+- **0.54, bilder:** tecknen @ och Aa och tangentetiketterna Ctrl och C förekommer; bilden för *typsnitt* beror på vilka typsnitt som finns där den visas. Två modulord (*ligga nere*, *driftstörning*) användes först i *Nätverksproblem* men byttes tillbaka mot *avbrott* när de saknade bild.
+- **0.54, arbetsform:** etappen kördes direkt efter 0.48–0.53 i samma session på produktägarens uttryckliga begäran. T03 blev klar före T02 och lades in efter den.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -565,11 +582,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v57`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v58`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Processor och minne* (SWC-TEK-01-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Datorns delar* (R07-A01-T01; kontrollera att gruppen inte har en ursprunglig modul) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Variabler och datatyper* (SWC-TEK-02-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Programmeringens grunder* (R07-A02-T01; kontrollera att gruppen inte har en ursprunglig modul) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp. Integreras en grupp före gruppen som kommer före den i katalogen (0.48: T05 före T04), sätt `PREV_FALLBACK` till den senast inlagda modulen och kör om gruppens första skript när den tidigare gruppen är inlagd, så att förkunskapen pekar rätt.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.
@@ -578,6 +595,8 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **Testtidsgräns för bilder:** `images.test.ts` laddar alla bildfiler i `beforeAll`. Tiden växer med varje release; i 0.51 slog kroken i standardgränsen 10 s på CI och har nu 120 s.
 - **GROUPS i `render.ts`:** när integratören hämtar `render.ts` från en agents worktree (`git checkout <gren> -- …`) försvinner rader som andra grupper lagt in under tiden (0.52: `'evo.'`). Lös konflikter så att alla rader behålls och kontrollera listan före commit.
 - **Blindprov efter integration i fel ordning:** `art:blind … pending` tar med alla bilder som inte är registrerade, också från en annan grupp. Registrera ett blindtest innan nästa grupps prov förbereds, eller ta bort de andra gruppernas ark och nycklar ur katalogen före granskningen (0.53).
+- **Ord utan bild i nya moduler:** när ett ord får planen `none` efter blindtest, meddela grupperna som ännu inte är inlagda, så att de inte använder det som modulord (0.54: *ligga nere*, *driftstörning*).
+- **Nära fackord i samma modul:** i 0.54 föll 7 av 28 symbolbilder i *Nätverk & uppkoppling* efter två omgångar (*svarstid/fördröjning*, *bandbredd/kapacitet*, *täckning/räckvidd*). Be gruppen välja bort ett av orden i sådana par redan när modulen skrivs, om båda behöver symbolbild.
 - **Abstrakta fackord:** i 0.46 saknade 43 av 135 symbolbilder bild efter två omgångar, mest för ordpar i samma modul (*utsläppsrätt/utsläppshandel*, *vite/föreläggande*). Be gruppagenterna att redan i första omgången rita ordpar i samma modul som tydliga kontraster och att undvika två nära fackord i samma modul när det går.
 - **Skyddade emblem:** rött kors på vit botten ritas inte som vårdsymbol; vård markeras med ett grönt kors (se `firstaid.ts`). I 0.45 rättade integratören en sådan bild före blindtestet.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.
