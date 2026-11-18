@@ -1,0 +1,179 @@
+{
+ "id": "m.processor-och-minne",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Processor och minne",
+ "titleJa": "プロセッサーとメモリ",
+ "descriptionSv": "Processor och minne: stationär dator, bärbar dator, surfplatta, smartklocka, digital, hårdvara, programvara, processor, beräkning, kärna, minne, kapacitet, prestanda, fläkt, uppgradera, elektronikbutik och tillverkare.",
+ "descriptionJa": "プロセッサーとメモリ：デスクトップパソコン、ノートパソコン、タブレット、スマートウォッチ、デジタルの、ハードウェア、ソフトウェア、プロセッサー、{計算|けいさん}、コア、メモリ、{容量|ようりょう}、{性能|せいのう}、ファン、アップグレードする、{家電|かでん}{量販店|りょうはんてん}、メーカー。",
+ "categoryId": "R07-A01-T01",
+ "tags": [
+  "datorer",
+  "teknik",
+  "hårdvara"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.observation-och-hypotesprovning"
+ ],
+ "related": [],
+ "recommendedOrder": 3711,
+ "words": [
+  {
+   "senseId": "s.stationär-dator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bärbar-dator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.surfplatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smartklocka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.digital.2",
+   "active": false
+  },
+  {
+   "senseId": "s.hårdvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.programvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.processor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beräkning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kärna.4",
+   "active": true
+  },
+  {
+   "senseId": "s.minne.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kapacitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.prestanda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fläkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppgradera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektronikbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillverkare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En ny dator till Yuki",
+  "paragraphs": [
+   "Yuki studerar i Uppsala. Hon har en gammal bärbar dator som har blivit mycket långsam, och hon vill köpa en ny. En lördag går hon till en elektronikbutik med sin vän Erik, som kan mycket om datorer.",
+   "– Vill du ha en stationär dator eller en bärbar? frågar säljaren. – En bärbar, svarar Yuki. Jag skriver ofta på biblioteket. En surfplatta är för liten, och en smartklocka har jag redan.",
+   "Erik förklarar skillnaden mellan hårdvara och programvara. Hårdvaran är det man kan ta på, till exempel processorn. Programvaran är programmen. Processorn gör alla beräkningar. – Den här processorn har åtta kärnor, så datorn kan göra många saker samtidigt, säger han.",
+   "Minnet är också viktigt. Med 16 GB minne kan Yuki ha många program öppna utan problem. Den kapaciteten räcker gott för hennes studier. Säljaren visar en lista där man kan jämföra datorernas prestanda.",
+   "En lite dyrare modell har en tyst fläkt som kyler processorn. Till slut väljer Yuki en dator från en känd tillverkare. – Om några år kan du uppgradera minnet, säger Erik. I dag gör vi nästan allt digitalt, så det är bra att ha en dator som håller länge."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Yuki köpa en ny dator?",
+    "options": [
+     "Den gamla datorn är stulen",
+     "Den gamla datorn har blivit långsam",
+     "Hon har fått pengar av Erik",
+     "Hon ska börja ett nytt jobb"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon har en gammal bärbar dator som har blivit mycket långsam.",
+    "explanationJa": "{古|ふる}いノートパソコンがとても{遅|おそ}くなったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör processorn enligt Erik?",
+    "options": [
+     "Den kyler datorn",
+     "Alla beräkningar",
+     "Den sparar bilder",
+     "Den visar text"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Processorn gör alla beräkningar.",
+    "explanationJa": "プロセッサーがすべての{計算|けいさん}をします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att processorn har åtta kärnor?",
+    "options": [
+     "Den kan göra många saker samtidigt",
+     "Den är mycket stor",
+     "Den har åtta fläktar",
+     "Den kostar mycket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den här processorn har åtta kärnor, så datorn kan göra många saker samtidigt.",
+    "explanationJa": "コアが{八|やっ}つあるので、{同時|どうじ}にたくさんのことができます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Yuki väljer en stationär dator.",
+    "correct": false,
+    "explanationSv": "– En bärbar, svarar Yuki.",
+    "explanationJa": "ユキが{選|えら}んだのはノートパソコンです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yuki kan göra datorn bättre senare utan att köpa en ny.",
+    "correct": true,
+    "explanationSv": "– Om några år kan du uppgradera minnet, säger Erik.",
+    "explanationJa": "{数年後|すうねんご}にメモリをアップグレードできます。"
+   }
+  ],
+  "factSources": [
+   "Allmänna fakta om datorns delar: processorn räknar och styr datorn, en processor kan ha flera kärnor som arbetar samtidigt, och arbetsminnet (RAM) används medan program är igång (Nationalencyklopedin, \"dator\" och \"processor\").",
+   "Siffrorna (åtta kärnor, 16 GB minne) är exempel i en vardagsscen och inga påståenden om en viss modell."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om datorer och andra digitala saker som ni använder.",
+  "discussionPoints": [
+   "Har du en stationär eller en bärbar dator? Varför?",
+   "Vad är viktigast för dig när du köper en ny dator?",
+   "Har du en surfplatta eller en smartklocka? Vad använder du den till?",
+   "Brukar du uppgradera din dator, eller köper du hellre en ny?"
+  ]
+ }
+}
