@@ -26,6 +26,7 @@ jobs:
       - run: npm run audit:content -- --check
       - run: npm run catalog:validate
       - run: npm run build
+      - run: node scripts/bundle-report.mjs --check
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main'
         with:

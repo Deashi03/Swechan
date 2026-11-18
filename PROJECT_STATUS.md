@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. **Kvalitetsplanen styr ordningen** (produktägarens beslut 2026-11-18). Ta nästa obockade etapp i `docs/QUALITY_PLAN.md`. A1 och A2 är klara (språkgranskningen av R01–R03 är sammanslagen; `npm run audit:content` och kvalitetsspärren finns i CI). A3 (laddtid del 1) är klar. Nästa är **A4: laddtid, del 2**. Bakgrund och mätvärden: `docs/QUALITY_AUDIT_2026-11.md`.
+1. **Kvalitetsplanen styr ordningen** (produktägarens beslut 2026-11-18). Ta nästa obockade etapp i `docs/QUALITY_PLAN.md`. A1 och A2 är klara (språkgranskningen av R01–R03 är sammanslagen; `npm run audit:content` och kvalitetsspärren finns i CI). A3 och A4 (laddtid) är klara; A4b (asynkron ordbok) ligger kvar som egen etapp efter A7. Nästa är **A5: bildsystemet**. Bakgrund och mätvärden: `docs/QUALITY_AUDIT_2026-11.md`.
    - Ordning: hela del A (systemet) och de snabba rättningarna B1–B4, **sedan** *Datorer & internet* (R07-A01) enligt den nya produktionsinstruktionen. Resten av eftersläpningen varvas därefter med ny produktion.
    - Ingen ny modulproduktion förrän A7 är klar.
    - Beslut: matchningstest för symbolbilder, manuellt spår för bilder som underkänts två gånger (aldrig `none`), kort förklaring för abstrakta B1-ord.
