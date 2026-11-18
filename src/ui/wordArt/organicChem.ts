@@ -93,7 +93,6 @@ const wineGlass = (x: number, y: number, wine: string = '#9b2335') => all(path(`
 const poison = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M0 -11 L11 0 L0 11 L-11 0 Z', C.white, HOT, 2), circle(0, -1.5, 3.6, C.ink, null), rect(-2, 1, 4, 3, C.ink, 0.5, null), circle(-1.4, -2, 1, C.white, null), circle(1.4, -2, 1, C.white, null), line('M-5 5 L5 1 M-5 1 L5 5', C.ink, 1.1));
 /** GHS-style flame diamond (flammable). */
 const flamDiamond = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M0 -11 L11 0 L0 11 L-11 0 Z', C.white, HOT, 2), path('M0 6 C-4 6 -5 2 -3 -1 C-2 1 -1 0 -1 -2 C0 -5 2 -6 2 -7 C3 -4 5 -2 4 2 C4 5 2 6 0 6 Z', C.ink, null));
-const lemonHalf = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, ellipse(0, 0, 12, 9, '#fbe36b', '#d9b417', 1.8), ...range(6).map((i) => { const a = (i * Math.PI) / 3; return line(`M0 0 L${f1(Math.cos(a) * 9)} ${f1(Math.sin(a) * 6.5)}`, '#e8c93a', 1); }));
 const pear = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M0 -14 C5 -14 6 -7 6 -4 C12 0 13 12 0 13 C-13 12 -12 0 -6 -4 C-6 -7 -5 -14 0 -14 Z', '#c9d65a', C.ink, 1.4), line('M0 -14 L1 -19', '#6b4a2a', 1.6), path('M1 -17 C5 -20 8 -18 9 -16 C6 -15 3 -15 1 -17 Z', C.green, C.ink, 0.8));
 const banana = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-14 -6 C-8 8 8 10 16 -2 C14 -1 12 -1 11 -2 C4 6 -6 4 -10 -6 Z', C.yellow, C.ink, 1.4), line('M-14 -6 L-15 -9', '#6b4a2a', 2));
 const potato = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, path('M-14 0 C-14 -9 -4 -11 4 -10 C12 -9 16 -4 15 2 C14 9 6 11 -2 10 C-10 9 -14 6 -14 0 Z', '#c99a5b', C.ink, 1.4), circle(-6, -3, 0.9, '#7a5a3a', null), circle(5, 3, 0.9, '#7a5a3a', null), circle(8, -4, 0.8, '#7a5a3a', null));
@@ -193,8 +192,13 @@ export const ORGANIC_MOTIFS: Record<string, Svg> = {
     (() => { const p = zig(38, 32, 3, 22, 6); return all(...p.slice(1).map(([x, y], i) => bond(p[i]![0], p[i]![1], x, y)), ...p.map(([x, y], i) => oh(x, y, 0, i % 2 ? -10 : 11, 4.4)), ...p.map(([x, y]) => at(x, y, 5.8, CARB))); })(), frame(18, 4, 84, 58)),
 
   // ── 3453 Karboxylsyror ──────────────────────────────────────────
-  /** karboxylsyra: a molecule with a carbon chain and the COOH group at its end ringed; a grey alcohol with only OH beside it. */
-  'org.karboxylsyra': all(chain(zig(14, 50, 3, 14, 5), 5.4), bond(42, 55, 56, 50), g('translate(56 50)', cooh(0, 0, 5.4)), ring(64, 46, 20), num(66, 84, 'COOH', 14, HL), greyed(ethanol(30, 104, 0.9)), lemonHalf(96, 100, 0.9)),
+  /** karboxylsyra: three different carbon chains (one, three and four carbons), each ending in the same COOH group, ringed; framed together as one group; a grey alcohol (only OH) outside. */
+  'org.karboxylsyra': all(
+    g('translate(0 30)', at(38, 4, 4.4, CARB), bond(38, 4, 52, 0), g('translate(52 0)', cooh(0, 0, 4.4)), ring(59, -3, 13)),
+    g('translate(0 64)', chain(zig(16, 0, 3, 11, 4), 4.4), bond(38, 4, 52, 0), g('translate(52 0)', cooh(0, 0, 4.4)), ring(59, -3, 13)),
+    g('translate(0 98)', chain(zig(10, 0, 4, 10, 4), 4.4), bond(40, -4, 52, 0), g('translate(52 0)', cooh(0, 0, 4.4)), ring(59, -3, 13)),
+    frame(3, 10, 79, 104), num(101, 52, 'COOH', 10, HL),
+    greyed(ethanol(104, 100, 0.55)), cross(102, 98, 8, C.grey)),
   /** ättika: a bottle of clear vinegar pours into a jar of cucumber slices. */
   'org.ättika': all(ground(), g('translate(34 34) rotate(-60)', bottle(0, 22, 18, 46, '#f2f6f8', C.red, 0.7)), drop(52, 52, 1.2, '#e9f2f6'), drop(55, 62, 1, '#e9f2f6'),
     jar(66, 110, 46, 40, 'rgba(225,240,220,0.8)'), ...[[54, 96], [70, 90], [80, 100], [60, 80], [76, 78]].map(([x, y]) => all(circle(x!, y!, 6, '#9cc96b', C.ink, 1), circle(x!, y!, 3, '#d7ebb4', null))), ring(34, 26, 18)),
