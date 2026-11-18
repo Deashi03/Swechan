@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.52.0 (släppt 2026-11-18) · **Senast uppdaterad:** 2026-11-18 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.53.0 (släppt 2026-11-18) · **Senast uppdaterad:** 2026-11-18 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 475 publicerade moduler. 1 470 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48), *Avancerad matematik* (R06-A02, 0.49), *Fysik* (R06-A03, 0.50), *Kemi* (R06-A04, 0.51) och *Biologi* (R06-A05, 0.52). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 517 publicerade moduler. 1 512 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48), *Avancerad matematik* (R06-A02, 0.49), *Fysik* (R06-A03, 0.50), *Kemi* (R06-A04, 0.51), *Biologi* (R06-A05, 0.52) och *Astronomi & rymd* (R06-A06, 0.53), alltså hela *Matematik & naturvetenskap* (R06). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Astronomi & rymd* (R06-A06) i *Matematik & naturvetenskap*. I *Kemi* har grupperna *Atomer & periodiska systemet* och *Molekyler & kemiska bindningar* åtta val var, eftersom de också innehåller de ursprungliga modulerna *Atomer och molekyler* och *Material och ämnen*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Datorer & internet* (R07-A01) i *Teknik & digital värld* (R07). I *Kemi* har grupperna *Atomer & periodiska systemet* och *Molekyler & kemiska bindningar* åtta val var, eftersom de också innehåller de ursprungliga modulerna *Atomer och molekyler* och *Material och ämnen*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 15 917 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 16 113 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -30,7 +30,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 ## Nästa steg
 
 1. **Kvalitetsplanen styr ordningen** (produktägarens beslut 2026-11-18). Ta nästa obockade etapp i `docs/QUALITY_PLAN.md`. Nästa är **A1: slå ihop PR #66**. Bakgrund och mätvärden: `docs/QUALITY_AUDIT_2026-11.md`.
-   - Ordning: hela del A (systemet) och de snabba rättningarna B1–B4, **sedan** *Astronomi & rymd* (R06-A06) enligt den nya produktionsinstruktionen. Resten av eftersläpningen varvas därefter med ny produktion.
+   - Ordning: hela del A (systemet) och de snabba rättningarna B1–B4, **sedan** *Datorer & internet* (R07-A01) enligt den nya produktionsinstruktionen. Resten av eftersläpningen varvas därefter med ny produktion.
    - Ingen ny modulproduktion förrän A7 är klar.
    - Beslut: matchningstest för symbolbilder, manuellt spår för bilder som underkänts två gånger (aldrig `none`), kort förklaring för abstrakta B1-ord.
    - Arbetet görs av Opus (produktägarens val).
@@ -219,6 +219,12 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Evolution: `s.gren.2`, `s.sexuell-selektion.1`, `s.förstenad.1`, `s.ståtlig.1`
   - Ekologi & organismvärlden: `s.tertiärkonsument.1`, `s.massförökning.1`
   - Förväxlingarna: *passiv transport/transportprotein*, *kopieringsfel/mutation*, *genuttryck/slå på*, *genmodifierad/genteknik*, *skadlig/miljögift*, *gren/stamträd*, *sexuell selektion/uppvaktning*, *förstenad/fossil*, *ståtlig/hane*, *tertiärkonsument/topprovdjur*, *massförökning/lämmelår*.
+- **Från 0.53 (8 ord):**
+  - Solens system: `s.livlös.1`, `s.kollisionskurs.1`
+  - Himlens rörelser: `s.månförmörkelse.1`, `s.vårpunkt.1`, `s.soltid.1`
+  - Galaxer & universum: `s.mörk-energi.1`, `s.blåförskjutning.1`
+  - Astronomins metoder: `s.spektroskopi.1`
+  - Förväxlingarna: *livlös/den röda planeten*, *kollisionskurs/kollision/jordnära*, *månförmörkelse/kärnskugga*, *vårpunkt/vårdagjämning*, *soltid/solur*, *mörk energi/expandera/accelerera*, *blåförskjutning/dopplereffekt*, *spektroskopi/spektrum/streckkod*.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -537,6 +543,14 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **0.52, fakta (står i `factSources`, kan ändras):** gemensam förfader med schimpansen 6–7 miljoner år, Lucy 3,2 miljoner år, homo sapiens cirka 300 000 år, neandertalarna dog ut för cirka 40 000 år sedan, trilobiter i Ölands kalksten, hjärnvolymer, cirka 350 hundraser (FCI), cirka 180 l primärurin och 1,5 l urin per dygn, vilopuls 60–80, matsmältningskanalen 8–9 m, reaktionstid 0,2–0,3 s, syremättnad 95–100 %, tiondelsregeln för energi mellan näringsnivåer, hare–lodjurscykler, fem massutdöenden (senast för 66 miljoner år sedan), mistel i södra Sverige
 - **0.52, bilder:** *ståtlig* visade ett lejon fast exemplet handlar om en kronhjort (ordet saknar nu bild); *könshormon* visar ♀ och ♂ som ritade symboler.
 - **0.52, arbetsform:** etappen kördes direkt efter 0.48–0.51 i samma session på produktägarens uttryckliga begäran. Användningsgränsen nåddes; agenterna återupptogs från sina worktrees.
+- **0.53, svenska:**
+  - ord att kontrollera mot SAOL/SO: *zenit* (neutrum, *zenitet*), *perihelium/aphelium* (bestämd form *-iet*, ingen plural), *himmelssfär*, *vårpunkt*, *stenplanet* (även "jordliknande planet"), *iskalott* och *kollisionskurs* (C1), *rumtid* (även *rum-tid*), *gäststjärna* (översättning av 客星), *linsformad/irreguljär galax* (även *linsformig*, *oregelbunden*), *stavspiralgalax* (C1), *solsköld*, *plaska ner*, *månbil*, *markstation*, *förbiflygning*, *fjärrstyra* (böjning)
+  - *den röda planeten* och *med blotta ögat* som frasposter; *myrornas krig* som vardagligt; *blåvit* betyder också "blå och vit"; *stoft* är högtidligt (vardagligt *damm*); *docka* som verb kan bli homonym med leksaken
+  - *inre planet* definieras som de fyra stenplaneterna; texten i *Planeternas banor* skrevs om efter T01:s definition
+  - *förmörkelse* och *landa/landning* är inte målord (huvudord i sammansättningar respektive definierade för flyg och fartyg)
+- **0.53, japanska:** 黄色矮星 (おうしょくわいせい), 事象の地平面/地平線, ガス雲 (ガスうん), 星座 för både *stjärnbild* och *stjärntecken* (skiljs med förklaring), 光害 läses ひかりがい hos T02 men こうがい hos T04, 推力, ペイロード, 地上局, 再突入, 着水する, 耐熱シールド, 月面車, レンズ状銀河, 矮小銀河, 宇宙マイクロ波背景放射, 屈折/反射望遠鏡, 分光学, 天文単位, 視差; glosorna för *inre/yttre planet* skiljer sig avsiktligt från 内惑星/外惑星
+- **0.53, fakta (står i `factSources`, kan ändras):** mer än 90 månar för Jupiter och Saturnus, Venus rotation 243 dygn mot omloppstid 225 dygn, Stora röda fläcken mer än 150 år, solförmörkelser i Japan 2012 och 2035, skottsekunder avskaffas senast 2035, gregoriansk kalender i Japan 1873, solen som röd jätte "kanske 200 gånger större", en tesked neutronstjärna "flera miljarder ton", Teika och Meigetsuki, Andromeda–Vintergatan-sammanslagningen osäker (Sawala m.fl. 2025), 13,8 miljarder år, 2,7 K, ISS cirka 400 km och 90 minuter, geostationär bana cirka 35 800 km, Fuglesang 2006/2009 och Wandt 2024, Hayabusa2 2020, Apollo (tolv personer, 382 kg), Galileos förstoring, Svenska solteleskopet cirka 2 360 m, Onsala och bilden av det svarta hålet 2019 (förenklat), Parkes-mikrovågsugnen 2015, WASP-39 b 2022; källhänvisningarna till ESA, SSC och Rymdstyrelsen bör stämmas av
+- **0.53, arbetsform:** etappen kördes direkt efter 0.48–0.52 i samma session på produktägarens uttryckliga begäran. T02 och T03 blev klara före T01 och lades in först när T01 var inlagd; T05 lades in före T04.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -555,11 +569,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v56`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v57`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Solen* (SWC-VET-06-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Solens system* (R06-A06-T01; kontrollera att gruppen inte har en ursprunglig modul) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Processor och minne* (SWC-TEK-01-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Datorns delar* (R07-A01-T01; kontrollera att gruppen inte har en ursprunglig modul) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp. Integreras en grupp före gruppen som kommer före den i katalogen (0.48: T05 före T04), sätt `PREV_FALLBACK` till den senast inlagda modulen och kör om gruppens första skript när den tidigare gruppen är inlagd, så att förkunskapen pekar rätt.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.
@@ -567,6 +581,7 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **Integration av grupper:** lägg in grupperna i katalogordning när det går. Blir en senare grupp klar först och delar poster med en tidigare grupp som ännu inte är inlagd: backa den senare gruppens innehåll (`git checkout -- src/content/data && git clean -fdq src/content/data`), lägg in den tidigare först och låt den senare synka och referera dess poster, så blir förkunskapskedjan mellan grupperna rätt utan efterhandsrättning. Integratören behöver bildcommiten, skripten och `spec.json`; körordning: skripten, `npm run visuals:plan`, `vis.py spec.json`, `conf.py` för synonymer, `check.sh`.
 - **Testtidsgräns för bilder:** `images.test.ts` laddar alla bildfiler i `beforeAll`. Tiden växer med varje release; i 0.51 slog kroken i standardgränsen 10 s på CI och har nu 120 s.
 - **GROUPS i `render.ts`:** när integratören hämtar `render.ts` från en agents worktree (`git checkout <gren> -- …`) försvinner rader som andra grupper lagt in under tiden (0.52: `'evo.'`). Lös konflikter så att alla rader behålls och kontrollera listan före commit.
+- **Blindprov efter integration i fel ordning:** `art:blind … pending` tar med alla bilder som inte är registrerade, också från en annan grupp. Registrera ett blindtest innan nästa grupps prov förbereds, eller ta bort de andra gruppernas ark och nycklar ur katalogen före granskningen (0.53).
 - **Abstrakta fackord:** i 0.46 saknade 43 av 135 symbolbilder bild efter två omgångar, mest för ordpar i samma modul (*utsläppsrätt/utsläppshandel*, *vite/föreläggande*). Be gruppagenterna att redan i första omgången rita ordpar i samma modul som tydliga kontraster och att undvika två nära fackord i samma modul när det går.
 - **Skyddade emblem:** rött kors på vit botten ritas inte som vårdsymbol; vård markeras med ett grönt kors (se `firstaid.ts`). I 0.45 rättade integratören en sådan bild före blindtestet.
 - **Långa ord:** rubrikord med `.fit-word` i en `.fit-box` krymper så att ordets längsta del får plats (`components/fitWord.ts`). Använd samma mönster för nya ställen som visar ett ord i stor storlek.

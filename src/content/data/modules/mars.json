@@ -1,0 +1,183 @@
+{
+ "id": "m.mars",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Mars",
+ "titleJa": "{火星|かせい}",
+ "descriptionSv": "Mars: den röda planeten, rost, öken, dammstorm, vulkan, kanjon, iskalott, frusen, minusgrader, flodbädd, fossil, mikroorganism, robot, terräng, jordprov, livlös och bosättning.",
+ "descriptionJa": "{火星|かせい}：{赤|あか}い{惑星|わくせい}、さび、{砂漠|さばく}、{砂嵐|すなあらし}、{火山|かざん}、{大峡谷|だいきょうこく}、{氷冠|ひょうかん}、{凍|こお}った、{氷点下|ひょうてんか}、{川底|かわぞこ}、{化石|かせき}、{微生物|びせいぶつ}、ロボット、{地形|ちけい}、{土壌|どじょう}サンプル、{生命|せいめい}のない、{居住地|きょじゅうち}。",
+ "categoryId": "R06-A06-T01",
+ "tags": [
+  "astronomi",
+  "solsystemet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.jorden-och-manen"
+ ],
+ "related": [],
+ "recommendedOrder": 3614,
+ "words": [
+  {
+   "senseId": "s.den-röda-planeten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dammstorm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vulkan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kanjon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.iskalott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frusen.2",
+   "active": true
+  },
+  {
+   "senseId": "s.minusgrader.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flodbädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fossil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikroorganism.1",
+   "active": false
+  },
+  {
+   "senseId": "s.robot.2",
+   "active": true
+  },
+  {
+   "senseId": "s.terräng.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jordprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bosättning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Nyheter från Mars",
+  "paragraphs": [
+   "Aiko och hennes son Leo tittar på nyheterna. En robot på Mars har skickat hem nya bilder. – Mars kallas den röda planeten, säger Aiko. Vet du varför? Leo vet inte. Färgen kommer från rost i dammet på marken.",
+   "På bilderna ser Mars ut som en kall öken. Atmosfären är mycket tunn, och det är nästan alltid många minusgrader, i genomsnitt ungefär minus 60. Ibland blåser det upp dammstormar som kan täcka hela planeten i flera veckor.",
+   "Mars har också den högsta vulkanen i hela solsystemet. Den heter Olympus Mons och är ungefär 22 kilometer hög. Där finns också en kanjon som är ungefär 4 000 kilometer lång. Längst i norr och längst i söder ligger iskalotter av vanlig is och frusen koldioxid.",
+   "Robotarna har hittat gamla, torra flodbäddar. Det betyder att det för länge sedan fanns vatten som rann på Mars. Därför letar forskarna efter spår av liv, till exempel fossil av mikroorganismer. Roboten kör försiktigt i den steniga terrängen och tar jordprov.",
+   "Än så länge verkar Mars vara en livlös planet. – Kommer människor att bo där en dag? frågar Leo. – Kanske, säger Aiko. Många drömmer om en bosättning på Mars. Men resan tar ungefär sju månader, och man kan inte andas luften där. Leo tänker en stund. – Jag tror att jag stannar på jorden."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför kallas Mars den röda planeten?",
+    "options": [
+     "Det finns rost i dammet på marken",
+     "Det är mycket varmt där",
+     "Det finns många vulkaner",
+     "Solen gör himlen röd"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Färgen kommer från rost i dammet på marken.",
+    "explanationJa": "{地面|じめん}のほこりにさびが{含|ふく}まれているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kan ibland täcka hela Mars i flera veckor?",
+    "options": [
+     "Dammstormar",
+     "Iskalotter",
+     "Moln av svavelsyra",
+     "Hav av vatten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ibland blåser det upp dammstormar som kan täcka hela planeten i flera veckor.",
+    "explanationJa": "{砂嵐|すなあらし}が{惑星|わくせい}{全体|ぜんたい}を{覆|おお}うことがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "inference",
+    "promptSv": "Vad visar de torra flodbäddarna?",
+    "options": [
+     "Att det ofta regnar på Mars",
+     "Att det har runnit vatten på Mars för länge sedan",
+     "Att människor har bott där",
+     "Att det finns fisk i marken"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det betyder att det för länge sedan fanns vatten som rann på Mars.",
+    "explanationJa": "{昔|むかし}、{火星|かせい}に{水|みず}が{流|なが}れていたことを{示|しめ}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Iskalotterna på Mars består bara av vanlig is.",
+    "correct": false,
+    "explanationSv": "Längst i norr och längst i söder ligger iskalotter av vanlig is och frusen koldioxid.",
+    "explanationJa": "{極冠|きょっかん}はふつうの{氷|こおり}と{凍|こお}った{二酸化炭素|にさんかたんそ}でできています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Forskarna har redan hittat liv på Mars.",
+    "correct": false,
+    "explanationSv": "Än så länge verkar Mars vara en livlös planet.",
+    "explanationJa": "{今|いま}のところ、{火星|かせい}に{生命|せいめい}は{見|み}つかっていません。"
+   }
+  ],
+  "factSources": [
+   "Mars röda färg kommer från järnoxid (rost) i dammet; atmosfären är tunn och består mest av koldioxid, och medeltemperaturen är ungefär −60 °C (NASA, \"Mars: Facts\").",
+   "Dammstormar på Mars kan ibland täcka hela planeten i flera veckor (NASA, \"Dust Storms on Mars\").",
+   "Olympus Mons är solsystemets högsta kända vulkan, ungefär 22 km hög; kanjonsystemet Valles Marineris är ungefär 4 000 km långt (NASA, \"Olympus Mons\"; NASA, \"Valles Marineris\").",
+   "Iskalotterna vid Mars poler består av vattenis och frusen koldioxid (NASA, \"Mars Polar Caps\").",
+   "Uttorkade flodbäddar visar att det en gång har runnit vatten på Mars; robotar som Curiosity och Perseverance tar jordprov och letar efter spår av forntida mikroskopiskt liv (NASA, \"Mars Exploration\"). Inget liv har hittats hittills (2026).",
+   "En resa till Mars tar ungefär sju månader med dagens teknik (NASA, \"Mars Exploration\").",
+   "Aiko och Leo är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om Mars och om drömmen att resa dit.",
+  "discussionPoints": [
+   "Har du sett Mars på himlen?",
+   "Tror du att det har funnits liv på Mars?",
+   "Skulle du vilja bo i en bosättning på Mars? Varför eller varför inte?",
+   "Har du varit med om en sandstorm eller en dammstorm?"
+  ]
+ }
+}

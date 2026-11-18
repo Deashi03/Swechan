@@ -1,0 +1,177 @@
+{
+ "id": "m.satelliter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Satelliter",
+ "titleJa": "{人工衛星|じんこうえいせい}",
+ "descriptionSv": "Satelliter: satellit, GPS, radiovåg, navigera, uppkoppling, vädersatellit, väderprognos, orkan, solpanel, antenn, sändare, markstation, kamera, övervaka, satellitbild och livslängd.",
+ "descriptionJa": "{人工衛星|じんこうえいせい}：{人工衛星|じんこうえいせい}、GPS、{電波|でんぱ}、{針路|しんろ}を{決|き}める、（ネットの）{接続|せつぞく}、{気象衛星|きしょうえいせい}、{天気予報|てんきよほう}、ハリケーン、ソーラーパネル、アンテナ、{送信機|そうしんき}、{地上局|ちじょうきょく}、カメラ、{監視|かんし}する、{衛星画像|えいせいがぞう}、{寿命|じゅみょう}。",
+ "categoryId": "R06-A06-T05",
+ "tags": [
+  "astronomi",
+  "rymdfart"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.omloppsbanor"
+ ],
+ "related": [],
+ "recommendedOrder": 3653,
+ "words": [
+  {
+   "senseId": "s.satellit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.GPS.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radiovåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.navigera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppkoppling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vädersatellit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderprognos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orkan.2",
+   "active": true
+  },
+  {
+   "senseId": "s.solpanel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antenn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sändare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.markstation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervaka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.satellitbild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livslängd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Satelliterna i vardagen",
+  "paragraphs": [
+   "Aiko arbetar på en tidning och ska skriva om satelliter. Hon träffar forskaren Lars. – Vi använder satelliter hela tiden utan att tänka på det, säger han. Det finns tusentals satelliter runt jorden.",
+   "– När du använder GPS i mobilen, tar den emot radiovågor från flera satelliter samtidigt. Mobilen räknar ut var du är, och du kan navigera i en okänd stad. Satelliter används också för tv, telefon och uppkoppling till internet på platser långt från städerna.",
+   "Vädersatelliter tar bilder av molnen. Utan dem skulle väderprognosen vara mycket sämre. – För några år sedan såg en vädersatellit en orkan långt ute över havet flera dagar innan den kom in över land, berättar Lars. Då hann människor flytta i säkerhet.",
+   "En satellit får el från sina solpaneler. Med en antenn tar den emot meddelanden från jorden, och en sändare skickar ner data. På marken finns markstationer med stora antenner, till exempel nära Kiruna. Satelliter med bra kameror kan också övervaka skogsbränder och översvämningar.",
+   "Aiko tittar på en satellitbild av Stockholm. Hon kan se hamnen och sitt eget kvarter. – Hur länge håller en satellit? frågar hon. – Livslängden är ofta mellan fem och femton år, svarar Lars. Sedan tar bränslet slut, eller så går något sönder."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör mobilen när du använder GPS?",
+    "options": [
+     "Den skickar bilder till en vädersatellit",
+     "Den ringer en markstation",
+     "Den laddar sig med solpaneler",
+     "Den tar emot radiovågor från flera satelliter"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "När du använder GPS i mobilen, tar den emot radiovågor från flera satelliter samtidigt.",
+    "explanationJa": "{複数|ふくすう}の{衛星|えいせい}から{電波|でんぱ}を{受|う}け{取|と}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var får en satellit el ifrån?",
+    "options": [
+     "Från markstationen",
+     "Från ett batteri på jorden",
+     "Från vädret",
+     "Från sina solpaneler"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En satellit får el från sina solpaneler.",
+    "explanationJa": "ソーラーパネルから{電気|でんき}を{得|え}ます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är en satellitbild?",
+    "options": [
+     "En bild som en satellit har tagit av jorden",
+     "En bild av en satellit på himlen",
+     "En ritning av en raket",
+     "En karta som man ritar för hand"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Aiko tittar på en satellitbild av Stockholm. Hon kan se hamnen och sitt eget kvarter.",
+    "explanationJa": "{衛星|えいせい}が{宇宙|うちゅう}から{撮|と}った{地球|ちきゅう}の{写真|しゃしん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vädersatelliten såg orkanen först när den kom in över land.",
+    "correct": false,
+    "explanationSv": "… såg en vädersatellit en orkan långt ute över havet flera dagar innan den kom in över land …",
+    "explanationJa": "{陸|りく}に{着|つ}く{何日|なんにち}も{前|まえ}に{見|み}つけていました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En satellit fungerar inte för alltid.",
+    "correct": true,
+    "explanationSv": "Livslängden är ofta mellan fem och femton år …",
+    "explanationJa": "{衛星|えいせい}の{寿命|じゅみょう}はふつう5～15{年|ねん}です。"
+   }
+  ],
+  "factSources": [
+   "En GPS-mottagare räknar ut sin position med signaler från minst fyra satelliter (GPS.gov, \"GPS: The Global Positioning System\").",
+   "Vädersatelliter kan vara geostationära eller gå i lägre banor över polerna (SMHI, \"Vädersatelliter\").",
+   "Vid Esrange utanför Kiruna finns en markstation som tar emot data från satelliter i polära banor (SSC, \"Satellite ground stations\").",
+   "Satelliters livslängd är olika, men ofta mellan fem och femton år (ESA, \"Satellite lifetime\").",
+   "Aiko och Lars är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur satelliter används i vardagen.",
+  "discussionPoints": [
+   "Hur ofta använder du GPS? Till vad?",
+   "Har du letat efter ditt hus på en satellitbild?",
+   "Vad tycker du om att satelliter kan övervaka hela jorden?",
+   "Vilken sorts satellit tycker du är viktigast?"
+  ]
+ }
+}

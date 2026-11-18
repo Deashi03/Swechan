@@ -5,8 +5,8 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 ## Så arbetar du
 
 - **En etapp per session.** När etappen är inlagd: bocka av den här nedanför, uppdatera `PROJECT_STATUS.md`, lägg till överst i `CHANGELOG.md`, stanna och be produktägaren starta en ny session.
-- **Ordning** (produktägarens beslut): 1) hela del A, 2) de snabba rättningarna B1–B4, 3) ny produktion startar igen med *Astronomi & rymd* (R06-A06) enligt den nya briefen, 4) resten av del B (B5–B7) **varvas** med ny produktion: en eftersläpningsetapp mellan varje nytt överämne.
-- **Ingen ny modulproduktion förrän A7 är klar.** *Biologi* (0.52.0) hann släppas med den gamla arbetsgången medan planen skrevs. Den ingår därför i eftersläpningen, och mätvärdena i revisionen (tagna vid 0.51.0) räknas om i A2.
+- **Ordning** (produktägarens beslut): 1) hela del A, 2) de snabba rättningarna B1–B4, 3) ny produktion startar igen med *Datorer & internet* (R07-A01) enligt den nya briefen, 4) resten av del B (B5–B7) **varvas** med ny produktion: en eftersläpningsetapp mellan varje nytt överämne.
+- **Ingen ny modulproduktion förrän A7 är klar.** *Biologi* (0.52.0) och *Astronomi & rymd* (0.53.0) hann släppas med den gamla arbetsgången medan planen skrevs. De ingår därför i eftersläpningen, och mätvärdena i revisionen (tagna vid 0.51.0) räknas om i A2.
 - Reglerna i `CLAUDE.md` gäller som vanligt: bevara användardata, ändra aldrig `m.*`- eller `s.*`-ID:n, tester före commit, högst tre ämnesgrupper parallellt.
 - **Varje etapp slutar med ett mätvärde.** Från etapp A2 ska `npm run audit:content` visa att etappens mått har förbättrats och att inget annat har försämrats.
 - Hittar du ett nytt *systematiskt* fel: lägg till ett mått och en valideringsregel för det, inte bara en rättning.
@@ -99,7 +99,7 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 
 ---
 
-## Del B. Eftersläpningen (befintliga moduler, 1 475 vid 0.52.0)
+## Del B. Eftersläpningen (befintliga moduler, 1 517 vid 0.53.0)
 
 Varje kö genereras av `npm run audit:content -- --backlog` till `quality/backlog/`. Arbeta i katalogordning, så att det eleven möter först rättas först. En modul sätts till `standard: 2` när den uppfyller hela kontraktet.
 
@@ -110,7 +110,7 @@ Varje kö genereras av `npm run audit:content -- --backlog` till `quality/backlo
 | B3 | Grundord med bara fackbetydelse: lägg till grundbetydelsen | 265 poster | 1–2 |
 | B4 | Planerade men ej levererade animationer (46), sedan Fysik och Kemi | cirka 350 ord | 2–3 |
 | B5 | Manuellt spår för bildlösa ord | 573 ord | en ämnesgrupp per session, värsta först: Avancerad matematik, Filosofi & etik, Ekologi & miljö, Matematikens grunder |
-| B6 | Per överämne, i ordning R01 → R06: betydelseinventering, förklaringar (K5–K7), andra exempel, animationer för verb och processord, strukturerade fakta | 35 ämnesgrupper | en ämnesgrupp per session, högst tre parallellt |
+| B6 | Per överämne, i ordning R01 → R06: betydelseinventering, förklaringar (K5–K7), andra exempel, animationer för verb och processord, strukturerade fakta | 36 ämnesgrupper | en ämnesgrupp per session, högst tre parallellt |
 | B7 | Språkgranskning av R04–R06 med metoden från R01–R03. Kan göras i samma pass som B6 för de grupperna | cirka 720 moduler | ingår i B6 |
 
 **Ordning inom B6 för en ämnesgrupp:**
@@ -127,4 +127,4 @@ Varje kö genereras av `npm run audit:content -- --backlog` till `quality/backlo
 
 ## Ny produktion
 
-Startar igen efter A7 och B1–B4 med *Astronomi & rymd* (R06-A06), enligt den nya briefen och som `standard: 2`. Efter varje nytt överämne: en etapp ur B5–B7. Före verklig användning återstår som tidigare: stäng av `devConfig.resetProgressOnUpdate` och testa på fysisk iPhone.
+Startar igen efter A7 och B1–B4 med *Datorer & internet* (R07-A01), enligt den nya briefen och som `standard: 2`. Efter varje nytt överämne: en etapp ur B5–B7. Före verklig användning återstår som tidigare: stäng av `devConfig.resetProgressOnUpdate` och testa på fysisk iPhone.

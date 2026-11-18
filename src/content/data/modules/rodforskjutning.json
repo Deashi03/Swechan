@@ -1,0 +1,180 @@
+{
+ "id": "m.rodforskjutning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Rödförskjutning",
+ "titleJa": "{赤方偏移|せきほうへんい}",
+ "descriptionSv": "Rödförskjutning: ljuskälla, ljusvåg, våglängd, frekvens, prisma, regnbåge, spektrum, utryckningsfordon, siren, tonhöjd, dopplereffekt, hastighet, ljushastighet, närma sig, rödförskjutning, blåförskjutning och avlägsen.",
+ "descriptionJa": "{赤方偏移|せきほうへんい}：{光源|こうげん}、{光|ひかり}の{波|なみ}、{波長|はちょう}、{振動数|しんどうすう}、プリズム、{虹|にじ}、スペクトル、{緊急車両|きんきゅうしゃりょう}、サイレン、{音|おと}の{高|たか}さ、ドップラー{効果|こうか}、{速度|そくど}、{光速|こうそく}、{近|ちか}づく、{赤方偏移|せきほうへんい}、{青方偏移|せいほうへんい}、{遠|とお}く{離|はな}れた。",
+ "categoryId": "R06-A06-T04",
+ "tags": [
+  "astronomi",
+  "rymd",
+  "ljus"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.universums-expansion"
+ ],
+ "related": [],
+ "recommendedOrder": 3645,
+ "words": [
+  {
+   "senseId": "s.ljuskälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljusvåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våglängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frekvens.2",
+   "active": false
+  },
+  {
+   "senseId": "s.prisma.2",
+   "active": false
+  },
+  {
+   "senseId": "s.regnbåge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spektrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utryckningsfordon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.siren.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tonhöjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dopplereffekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljushastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närma-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rödförskjutning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåförskjutning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlägsen.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ljus som ändrar färg",
+  "paragraphs": [
+   "Ett utryckningsfordon kör förbi med sirenen på. När bilen närmar sig får ljudet högre tonhöjd, och när den kör bort blir ljudet lägre. Det här kallas dopplereffekten. Samma sak händer med ljus.",
+   "Ljus rör sig som vågor. Om man skickar vitt ljus genom ett prisma delas det upp i ett spektrum, som i en regnbåge. Rött ljus har längre våglängd och lägre frekvens än blått ljus.",
+   "När en ljuskälla avlägsnar sig från oss blir ljusvågorna längre. Då blir ljuset lite rödare. Det kallas rödförskjutning. När en ljuskälla närmar sig blir ljusvågorna i stället kortare och ljuset lite blåare. Det kallas blåförskjutning.",
+   "Forskare mäter hur mycket färgen på ljuset från galaxer har ändrats. Nästan alla galaxer har rödförskjutning, och ju mer avlägsen en galax är, desto större är den. Det visar att universum expanderar.",
+   "Andromedagalaxen är inte som de andra. Den har blåförskjutning, eftersom den närmar sig oss med drygt 100 kilometer i sekunden. Det låter snabbt, men det är ingenting jämfört med ljushastigheten, som är nästan 300 000 kilometer i sekunden. Av färgen kan forskarna räkna ut galaxens hastighet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer med ljudet när utryckningsfordonet kör bort?",
+    "options": [
+     "Det blir högre",
+     "Det blir likadant",
+     "Det blir lägre",
+     "Sirenen slutar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… och när den kör bort blir ljudet lägre.",
+    "explanationJa": "{遠|とお}ざかると{音|おと}が{低|ひく}くなります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken färg har längst våglängd av dessa?",
+    "options": [
+     "Blått",
+     "Lila",
+     "Grönt",
+     "Rött"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Rött ljus har längre våglängd och lägre frekvens än blått ljus.",
+    "explanationJa": "{赤|あか}い{光|ひかり}の{波長|はちょう}がいちばん{長|なが}いです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir ljuset rödare när en ljuskälla avlägsnar sig?",
+    "options": [
+     "Ljuset blir varmare",
+     "Ljuset går genom ett prisma",
+     "Ljusvågorna blir längre",
+     "Ljuset blir svagare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När en ljuskälla avlägsnar sig från oss blir ljusvågorna längre. Då blir ljuset lite rödare.",
+    "explanationJa": "{光|ひかり}の{波|なみ}が{長|なが}くなるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Andromedagalaxen har rödförskjutning.",
+    "correct": false,
+    "explanationSv": "Den har blåförskjutning, eftersom den närmar sig oss …",
+    "explanationJa": "アンドロメダ{銀河|ぎんが}は{近|ちか}づいているので、{青方偏移|せいほうへんい}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En mycket avlägsen galax har oftast större rödförskjutning än en galax som ligger närmare.",
+    "correct": true,
+    "explanationSv": "… ju mer avlägsen en galax är, desto större är den.",
+    "explanationJa": "{遠|とお}い{銀河|ぎんが}ほど{赤方偏移|せきほうへんい}が{大|おお}きくなります。"
+   }
+  ],
+  "factSources": [
+   "Rödförskjutning hos galaxer visar att universum expanderar (Nationalencyklopedin, rödförskjutning).",
+   "Andromedagalaxen närmar sig Vintergatan med omkring 110 km/s och visar blåförskjutning (NASA 2012; van der Marel m.fl. 2012).",
+   "Ljusets hastighet i vakuum är 299 792 km/s (Nationalencyklopedin, ljushastighet)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om dopplereffekten och om ljus från galaxer.",
+  "discussionPoints": [
+   "Har du hört dopplereffekten från ett tåg eller ett utryckningsfordon?",
+   "Hur skulle du förklara rödförskjutning med egna ord?",
+   "Har du sett ett spektrum, till exempel i en regnbåge eller genom ett prisma?",
+   "Vad tycker du är mest förvånande med ljus?"
+  ]
+ }
+}
