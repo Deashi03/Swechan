@@ -65,7 +65,7 @@ export default defineConfig({
           // Lesson bodies are lazy-loaded: let each become its own chunk (0.4 phase D).
           if (id.includes('/src/content/data/modules/')) return undefined;
           const dict = id.match(/\/src\/content\/data\/dictionary\/m-([^/]+)\.json$/);
-          if (dict) return `dict-${dictArea.get(dict[1]) ?? 'misc'}`;
+          if (dict) return `dict-${dictArea.get(dict[1]!) ?? 'misc'}`;
           if (id.includes('/src/content/data/dictionary/')) return 'dict-base';
           if (id.endsWith('/src/content/data/images/wordVisuals.json')) return 'visuals';
           if (id.endsWith('/src/content/data/moduleIndex.json')) return 'module-index';
