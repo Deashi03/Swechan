@@ -287,6 +287,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.förtvålning.1',
   // 0.52 Cellbiologi: förväxlas med transportprotein efter två blindomgångar
   's.passiv-transport.1',
+  // 0.52 Evolution: förväxlas med stamträd respektive uppvaktning
+  's.gren.2', 's.sexuell-selektion.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
