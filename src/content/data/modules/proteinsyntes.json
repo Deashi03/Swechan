@@ -1,0 +1,178 @@
+{
+ "id": "m.proteinsyntes",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Proteinsyntes",
+ "titleJa": "たんぱく{質|しつ}{合成|ごうせい}",
+ "descriptionSv": "Proteinsyntes: protein, aminosyra, byggsten, proteinsyntes, ribosom, tillverka, enzym, antikropp, keratin, kollagen, muskelmassa, proteinrik, kosttillskott, proteinpulver, äggvita och stelna.",
+ "descriptionJa": "たんぱく{質|しつ}{合成|ごうせい}：たんぱく{質|しつ}、アミノ{酸|さん}、{構成要素|こうせいようそ}、たんぱく{質|しつ}{合成|ごうせい}、リボソーム、{製造|せいぞう}する、{酵素|こうそ}、{抗体|こうたい}、ケラチン、コラーゲン、{筋肉量|きんにくりょう}、たんぱく{質|しつ}の{多|おお}い、サプリメント、プロテインパウダー、{卵白|らんぱく}、{固|かた}まる。",
+ "categoryId": "R06-A05-T01",
+ "tags": [
+  "biologi",
+  "cellbiologi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.mitokondrier"
+ ],
+ "related": [],
+ "recommendedOrder": 3515,
+ "words": [
+  {
+   "senseId": "s.protein.1",
+   "active": true
+  },
+  {
+   "senseId": "s.aminosyra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byggsten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ribosom.1",
+   "active": false
+  },
+  {
+   "senseId": "s.proteinsyntes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillverka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enzym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antikropp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.keratin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kollagen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.muskelmassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.proteinrik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kosttillskott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.proteinpulver.1",
+   "active": true
+  },
+  {
+   "senseId": "s.äggvita.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stelna.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ägg och proteinpulver",
+  "paragraphs": [
+   "Johan har börjat träna på gym. Han vill få större muskelmassa och har köpt en stor burk proteinpulver. Hans sambo Mika står och steker ägg till frukost. – Titta, säger hon. Äggvitan stelnar och blir vit. Det är proteinerna som ändrar form när de blir varma.",
+   "Mika är biologilärare. Hon förklarar att ett protein är en lång kedja av aminosyror. Aminosyrorna är byggstenarna, och ordningen bestämmer vad proteinet gör. När vi äter protein delar magen upp det i aminosyror, och sedan använder cellerna dem för att tillverka nya proteiner.",
+   "Det kallas proteinsyntes. Hur proteinet ska se ut står i arvsmassan i cellkärnan. En kopia går ut till ribosomerna i cytoplasman, och där sätts aminosyrorna ihop i rätt ordning, en i taget.",
+   "Kroppen gör tusentals olika proteiner: enzym som hjälper till i magen, antikroppar som skyddar mot bakterier, keratin i hår och naglar och kollagen i huden. – Och muskler, säger Johan.",
+   "– Ja, men du behöver nog inget kosttillskott, säger Mika. Om du äter proteinrik mat, som ägg, fisk, bönor och mjölk, får du tillräckligt. Johan tittar på burken. – Då kanske jag tar ett ägg till i stället."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför blir äggvitan vit och fast i stekpannan?",
+    "options": [
+     "Ägget får mer salt",
+     "Vattnet blir till luft",
+     "Proteinerna ändrar form när de blir varma",
+     "Mika har lagt i mjölk"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det är proteinerna som ändrar form när de blir varma.",
+    "explanationJa": "{熱|ねつ}でたんぱく{質|しつ}の{形|かたち}が{変|か}わるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är ett protein enligt Mika?",
+    "options": [
+     "En sorts socker",
+     "En lång kedja av aminosyror",
+     "Ett litet hål i cellen",
+     "En sorts fett"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon förklarar att ett protein är en lång kedja av aminosyror.",
+    "explanationJa": "アミノ{酸|さん}の{長|なが}い{鎖|くさり}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var sätts aminosyrorna ihop?",
+    "options": [
+     "I cellkärnan",
+     "I ribosomerna",
+     "I magen",
+     "I naglarna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "En kopia går ut till ribosomerna i cytoplasman, och där sätts aminosyrorna ihop i rätt ordning.",
+    "explanationJa": "リボソームでつなげられます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Keratin finns i hår och naglar.",
+    "correct": true,
+    "explanationSv": "… keratin i hår och naglar …",
+    "explanationJa": "ケラチンは{髪|かみ}と{爪|つめ}にあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Mika tycker att Johan måste dricka proteinpulver för att få tillräckligt med protein.",
+    "correct": false,
+    "explanationSv": "Om du äter proteinrik mat, som ägg, fisk, bönor och mjölk, får du tillräckligt.",
+    "explanationJa": "たんぱく{質|しつ}の{多|おお}い{食事|しょくじ}で{十分|じゅうぶん}だと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Proteiner byggs av 20 aminosyror; nio av dem är essentiella för vuxna och måste fås via kosten.",
+   "Vid proteinsyntesen skrivs genen av till mRNA i cellkärnan; mRNA går ut genom kärnporerna och översätts av ribosomerna i cytoplasman till en aminosyrakedja.",
+   "Keratin finns i hår, naglar och hudens hornlager; kollagen är kroppens vanligaste protein och finns i hud, senor, brosk och ben.",
+   "Äggvitans proteiner denatureras och koagulerar vid upphettning.",
+   "Livsmedelsverket: de flesta som äter varierat får tillräckligt med protein från vanlig mat och behöver inte proteintillskott.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om protein i maten och i kroppen.",
+  "discussionPoints": [
+   "Vilken proteinrik mat äter du ofta?",
+   "Vad tycker du om kosttillskott och proteinpulver?",
+   "Vilka proteiner i kroppen kommer du ihåg från texten?",
+   "Hur skulle du förklara proteinsyntes med en bild från vardagen, till exempel en fabrik eller ett kök?"
+  ]
+ }
+}
