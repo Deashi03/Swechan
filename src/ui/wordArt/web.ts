@@ -239,10 +239,11 @@ export const WEB_MOTIFS: Record<string, Svg> = {
   'webb.personanpassad': all(bg(), ground, greyed(person(18, C.green, { h: 0.7 }), rect(32, 46, 26, 30, SCR, 2, C.ink, 1.2), rect(36, 50, 8, 8, '#7ab0e8', 1, null), circle(51, 54, 4, C.white, C.ink, 1), circle(40, 68, 4, '#e07a3a', C.ink, 1), rect(48, 64, 8, 8, '#7a5a8a', 1, null)),
     person(76, C.orange, { hairStyle: 'long', h: 0.7 }), path('M70 22 C62 22 62 10 72 10 L94 10 C104 10 104 22 94 22 L84 22 L80 28 L79 22 Z', C.white, C.ink, 1.2), path('M74 19 L74 14 L80 14 C82 17 86 17 90 18 C92 19 92 20 91 20 L74 20 Z', BLUE, C.ink, 0.8),
     rect(90, 46, 26, 30, SCR, 2, C.ink, 1.4), ...[[96, 54], [109, 54], [96, 68], [109, 68]].map(([x, y]) => path(`M${x! - 4} ${y! + 2} L${x! - 4} ${y! - 2} L${x! - 1} ${y! - 2} C${x!} ${y!} ${x! + 2} ${y!} ${x! + 4} ${y! + 1} L${x! + 4} ${y! + 2} Z`, BLUE, C.ink, 0.6)), frame(87, 43, 32, 36, 4)),
-  /** cache: a browser window on the left opens a page fast (a yellow lightning bolt); right next to it a small drawer inside the computer holds saved picture pieces, with a short orange arrow to the page; far away on the right a grey server with a long dashed grey road; the drawer is ringed. */
-  'webb.cache': all(bg(), win(6, 14, 64, 56, { inner: page(10, 38, 56, 30) }), path('M74 18 L66 30 L71 30 L67 40 L77 26 L72 26 Z', YEL, C.ink, 1),
-    rect(22, 82, 44, 22, '#c8a070', 2, C.ink, 1.6), rect(26, 86, 36, 14, '#e8d4a8', 1, C.ink, 1), pic(28, 88, 9, 7), pic(39, 88, 9, 7), rect(50, 88, 9, 7, BLUE, 1, C.ink, 0.8), circle(44, 102, 1.4, C.ink, null),
-    arr(44, 80, 44, 72, HL, 2.8), greyed(rack(104, 60, 0.45), line('M98 82 C90 100 80 104 70 96', C.grey, 1.6, '3 3')), ring(44, 93, 26)),
+  /** cache: the same page is opened twice. Top (1, grey): the browser fetches it from a far server along a long dashed road with an hourglass. Bottom (2, coloured): the browser takes it at once from a small box of saved page pieces right next to it, along a short orange arrow with a yellow lightning bolt; the small box and the short way are ringed. */
+  'webb.cache': all(bg(), num(9, 22, '1', 9, C.grey, 900), greyed(win(14, 8, 46, 36, { inner: all(rect(18, 32, 38, 4, BLUE, 1, null), bars(18, 39, 30, 1)) }), rack(104, 26, 0.3), line('M96 26 L62 26', C.grey, 2, '4 3'), head(62, 26, Math.PI, C.grey, 0.8),
+    path('M75 18 L85 18 L80 26 L85 34 L75 34 L80 26 Z', '#e8d4a8', C.ink, 1.2)), line('M4 54 L116 54', C.grey2, 1.2, '3 3'),
+    num(9, 72, '2', 9, C.ink, 900), win(14, 60, 46, 36, { inner: all(rect(18, 84, 38, 4, BLUE, 1, null), bars(18, 91, 30, 1)) }), rect(72, 70, 26, 18, '#c8a070', 2, C.ink, 1.4), rect(75, 73, 20, 12, '#e8d4a8', 1, C.ink, 0.8), pic(76, 75, 8, 7), rect(86, 75, 8, 7, BLUE, 1, null),
+    arr(70, 79, 62, 79, HL, 3), path('M68 60 L62 68 L66 68 L63 75 L71 65 L67 65 Z', YEL, C.ink, 0.8), greyed(rack(108, 80, 0.3)), ring(80, 80, 20)),
   /** rensa (i datorn): a settings panel with three rows (a clock list, a biscuit, picture pieces); an orange arrow sweeps them into a grey trash can; the panel behind is now clean, with sparkles. */
   'webb.rensa.4': all(bg(), rect(8, 14, 70, 90, SCR, 3, C.ink, 1.6), rect(8, 14, 70, 9, CHROME, 3, null),
     greyed(clockIcon(20, 36, 5), bars(30, 36, 40, 1), biscuit(20, 56, 5), bars(30, 56, 40, 1), pic(15, 70, 10, 8), bars(30, 74, 40, 1)), line('M16 92 L70 92', C.grey2, 1),
@@ -273,12 +274,14 @@ export const WEB_MOTIFS: Record<string, Svg> = {
   'webb.felmeddelande': errBox(false),
   /** felkod: the same error box over a grey page, but here only the big red digits 404 are coloured and ringed, the text is grey. */
   'webb.felkod': errBox(true),
-  /** ligga nere: a screen shows a grey page with a pulled-out plug and a red downward arrow; in front, a person waits with a clock showing that hours go by; the screen is ringed. */
-  'webb.ligga-nere': all(bg(), ground, monitor(30, 10, 80, 60, all(greyed(page(36, 16, 68, 48)), path('M60 34 L68 34 L68 30 L72 30 L72 46 L68 46 L68 42 L60 42 Z', C.dark, null), line('M74 33 L78 33 M74 43 L78 43', C.dark, 2), path('M86 38 L82 38 L82 42 L88 42 L88 34 L82 34', 'none', C.dark, 1.4), line('M90 38 C100 38 98 52 92 56', C.dark, 1.6), arr(48, 26, 48, 50, RED, 3.4))),
-    person(16, C.green, { h: 0.6 }), clockIcon(16, 36, 7), frame(27, 7, 86, 66, 5)),
-  /** driftstörning: a yellow warning triangle with a lightning bolt in the middle; around it three small grey services with red zigzags: a train, a web page and wifi waves; the triangle is ringed. */
-  'webb.driftstörning': all(bg(), greyed(at(24, 30, 0.9, rect(-14, -10, 28, 18, '#d8dde2', 4, C.ink, 1.4), rect(-10, -6, 8, 6, C.white, 1, null), rect(2, -6, 8, 6, C.white, 1, null), circle(-8, 10, 3, C.dark, null), circle(8, 10, 3, C.dark, null)), mini(96, 30, 0.8), at(60, 96, 1, path('M-14 -4 C-6 -12 6 -12 14 -4', 'none', C.dark, 2.4), path('M-9 1 C-4 -4 4 -4 9 1', 'none', C.dark, 2.4), circle(0, 6, 2.4, C.dark, null))),
-    ...[[24, 46], [96, 52], [76, 94]].map(([x, y]) => line(`M${x! - 6} ${y} l3 -4 l3 4 l3 -4 l3 4`, RED, 1.8)), warnIcon(60, 60, 2), path('M62 46 L54 60 L60 60 L56 72 L66 56 L60 56 Z', '#e2553a', C.ink, 0.8), ring(60, 60, 30)),
+  /** ligga nere: a server machine with every light red, switched off, with a big red cross; next to it a big screen that is completely black; below, three people's phones are black too, each with a red cross: nobody gets in at all; the dead server and black screen are framed. */
+  'webb.ligga-nere': all(bg(), rack(24, 42, 0.62, true), no(24, 14, 8), rect(46, 14, 66, 48, C.dark, 3, C.ink, 1.8), rect(49, 17, 60, 42, '#111216', 1, null), path('M77 62 L83 62 L86 70 L74 70 Z', '#9aa3ad', C.ink, 1.2),
+    line('M34 42 L46 38', RED, 2, '3 3'), frame(6, 8, 108, 66, 5),
+    ...[24, 60, 96].map((x) => all(phone(x, 94, 0.55, rect(-11.5, -19, 23, 37, '#111216', 1, null)), no(x + 9, 82, 5)))),
+  /** driftstörning: one server at the top with a yellow warning triangle; uneven, broken zigzag lines go down from it to four phones; every phone shows the page half loaded and the same small red error box at the same time; the server with the triangle is ringed. */
+  'webb.driftstörning': all(bg(), rack(56, 32, 0.45), warnIcon(76, 22, 1), ring(62, 30, 22),
+    ...[18, 46, 74, 102].map((x, i) => all(line(`M56 52 L${f1((56 + x) / 2 + (i % 2 ? 4 : -4))} 70 L${x} 76`, i % 2 ? RED : '#e8a03a', 1.6, i % 2 ? '2 3' : '5 2'),
+      phone(x, 94, 0.55, all(page(-11.5, -19, 23, 14), rect(-9, 0, 18, 12, C.white, 2, C.ink, 0.8), bang(-4, 6, 3.4), line('M0 4 L6 4 M0 8 L5 8', BAR, 1.2)))))),
   /** åtkomst: a door with a lock and a card reader with a green light; a coloured person with a key card walks in along a green arrow and a tick; a grey person stands outside with a red cross; the open way in is ringed. */
   'webb.åtkomst': all(bg(), ground, rect(50, 30, 32, 82, '#e8e2d4', 1, C.ink, 1.6), path('M54 34 L78 34 L78 112 L54 112 Z', '#fff6d8', C.ink, 1.4), path('M54 34 L64 38 L64 108 L54 112 Z', '#a0673d', C.ink, 1.4),
     rect(86, 56, 10, 16, C.dark, 2, C.ink, 1.2), circle(91, 61, 2, '#7ee07e', null), padlock(91, 80, 0.5, '#3a9a5a'),
