@@ -118,6 +118,10 @@ const spaceScope = (x: number, y: number, s = 1, rot = -20) => g(`translate(${x}
 const hex = (x: number, y: number, r: number, col: string) => path(range(6).map((i) => { const a = (i / 6) * Math.PI * 2; return `${i ? 'L' : 'M'}${f1(x + Math.cos(a) * r)} ${f1(y + Math.sin(a) * r)}`; }).join(' ') + ' Z', col, C.ink, 0.8);
 const goldMirror = (x: number, y: number, r = 5) => all(hex(x, y, r, '#e8b84a'), ...range(6).map((i) => { const a = (i / 6) * Math.PI * 2 + Math.PI / 6; return hex(f1(x + Math.cos(a) * r * 1.74), f1(y + Math.sin(a) * r * 1.74), r, '#e8b84a'); }));
 
+/** Spectrum colours and the places of the black lines (spektroskopi). */
+const SPEC = ['#e2553a', '#f29a3a', '#ffd34d', '#5fbf6a', '#4f8fe0', '#8a6bbf'];
+const LINES = [69, 78, 83, 99, 104];
+
 export const ASTROMET_MOTIFS: Record<string, Svg> = {
   // ── 3661 Teleskop ────────────────────────────────────────────────────
   /** linsteleskop: a telescope tube on a tripod, drawn cut open: yellow light rays from the left pass through a big glass lens at the front and meet at the small eyepiece at the back; the front lens is ringed. */
@@ -155,15 +159,20 @@ export const ASTROMET_MOTIFS: Record<string, Svg> = {
     path('M44 70 Q60 30 88 26', 'none', HL, 2.4, ), `<path d="M44 70 Q60 30 88 26" fill="none" stroke="#2a3352" stroke-width="2.6" stroke-dasharray="3 4"/>`, head(89, 26, -0.15, HL, 0.9)),
 
   // ── 3663 Spektroskopi ────────────────────────────────────────────────
-  /** spektroskopi: starlight goes into a glass prism and comes out as a rainbow band with thin black lines; below, the same black-line pattern stands next to a small atom, with an equals sign between them; the band and the pattern are framed. */
-  'astmet.spektroskopi': all(sky((x, y) => y > 70 || x < 30), ball(14, 32, 7, YEL, '#ffe08a'),
-    line('M22 32 L36 32', RAY, 2.4), path('M36 46 L46 18 L56 46 Z', 'rgba(200,230,255,0.75)', C.ink, 1.4),
-    ...['#e2553a', '#f29a3a', '#ffd34d', '#5fbf6a', '#4f8fe0', '#8a6bbf'].map((col, i) => all(line(`M50 ${30 + i * 1.2} L64 ${22 + i * 4.4}`, col, 1.4), rect(64 + i * 8, 22, 8, 26, col, 0, null))),
-    ...[69, 78, 83, 99, 104].map((x) => line(`M${x} 22 L${x} 48`, '#111111', 1.4)), rect(64, 22, 48, 26, 'none', 0, C.ink, 1),
-    rect(64, 70, 48, 14, WHITE, 0, C.ink, 1), ...[69, 78, 83, 99, 104].map((x) => line(`M${x} 70 L${x} 84`, '#111111', 1.4)),
-    path('M44 74 L56 74 M44 80 L56 80', 'none', WHITE, 2.2),
-    circle(22, 77, 3, RED, null), ellipse(22, 77, 14, 5, 'none', WHITE, 1.2), ellipse(22, 77, 5, 14, 'none', WHITE, 1.2), circle(36, 77, 1.6, '#9fd2ee', null), circle(22, 63, 1.6, '#9fd2ee', null),
-    frame(61, 19, 54, 32), frame(61, 67, 54, 20)),
+  /** spektroskopi: the method in three steps. Top, at night: light from a star goes into a small telescope fixed to a dark instrument box, and out of the box comes a rainbow band with thin black lines. Bottom, in a bright lab: a glowing glass tube of gas on a bench gives a band with black lines in exactly the same places. Orange dashed lines join the matching lines from top to bottom, and a green tick shows that they match. */
+  'astmet.spektroskopi': all(rect(4, 4, 112, 54, NIGHT, 3, null), dots((x, y) => y < 54 && x < 60), rect(4, 58, 112, 54, '#eef1f4', 0, null), line('M4 58 L116 58', C.grey2, 1.4),
+    ball(11, 12, 4.5, YEL, '#ffe08a'), ray([[15, 16], [22, 24]], RAY, 1.8),
+    g('rotate(35 34 34)', rect(24, 30, 20, 8, METAL, 2, C.ink, 1.3), rect(23, 29, 3, 10, C.dark, 1, null)),
+    rect(34, 30, 20, 16, '#4a5068', 2, C.ink, 1.4), circle(44, 38, 2.4, '#9fd2ee', null),
+    arr(55, 38, 63, 38, WHITE, 1.8),
+    ...SPEC.map((col, i) => rect(64 + i * 8, 26, 8, 22, col, 0, null)), ...LINES.map((x) => line(`M${x} 26 L${x} 48`, '#111111', 1.6)), rect(64, 26, 48, 22, 'none', 0, C.ink, 1.2),
+    rect(8, 100, 44, 4, C.tan, 1, C.ink, 1.2), line('M12 104 L12 112 M48 104 L48 112', C.brown, 2),
+    rect(22, 70, 10, 30, 'rgba(230,140,255,0.55)', 5, C.ink, 1.4), rect(25, 74, 4, 22, 'rgba(255,200,255,0.9)', 2, null), rect(24, 66, 6, 4, C.grey, 1, C.ink, 1),
+    line('M18 64 L14 60 M36 64 L40 60', '#c58ae8', 1.4),
+    arr(36, 84, 62, 84, C.dark, 1.8),
+    ...SPEC.map((col, i) => rect(64 + i * 8, 74, 8, 22, col, 0, null)), ...LINES.map((x) => line(`M${x} 74 L${x} 96`, '#111111', 1.6)), rect(64, 74, 48, 22, 'none', 0, C.ink, 1.2),
+    ...LINES.map((x) => line(`M${x} 49 L${x} 73`, HL, 1.6, '2 2')),
+    circle(56, 63, 6.5, '#4f9d69', C.ink, 1.2), line('M52.5 63 L55 66 L59.5 60', WHITE, 2)),
 
   // ── 3664 Radioteleskop ───────────────────────────────────────────────
   /** radioteleskop: in a field at dusk a huge white dish on a tall foot opens towards the sky; wavy radio waves come down to it from a star; a tiny person stands next to the foot for size. */
