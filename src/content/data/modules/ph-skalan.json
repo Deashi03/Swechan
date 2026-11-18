@@ -1,0 +1,176 @@
+{
+ "id": "m.ph-skalan",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "pH-skalan",
+ "titleJa": "pHスケール",
+ "descriptionSv": "pH-skalan: pH-värde, sur, neutral, basisk, indikator, lackmuspapper, rödkål, pH-mätare, destillerat vatten, läskedryck, magsyra, regnvatten, surt regn, försurning, tandemalj och karies.",
+ "descriptionJa": "pHスケール：pH{値|ち}、{酸性|さんせい}の、{中性|ちゅうせい}の、{塩基性|えんきせい}の、{指示薬|しじやく}、リトマス{紙|し}、{赤|あか}キャベツ、pHメーター、{蒸留水|じょうりゅうすい}、ソフトドリンク、{胃酸|いさん}、{雨水|あまみず}、{酸性雨|さんせいう}、{酸性化|さんせいか}、{歯|は}のエナメル{質|しつ}、{虫歯|むしば}。",
+ "categoryId": "R06-A04-T04",
+ "tags": [
+  "kemi",
+  "syror och baser"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.syror-och-baser"
+ ],
+ "related": [],
+ "recommendedOrder": 3442,
+ "words": [
+  {
+   "senseId": "s.pH-värde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sur.2",
+   "active": true
+  },
+  {
+   "senseId": "s.basisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.neutral.3",
+   "active": true
+  },
+  {
+   "senseId": "s.indikator.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lackmuspapper.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rödkål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pH-mätare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.destillerat-vatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.läskedryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magsyra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regnvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.surt-regn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försurning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tandemalj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.karies.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rödkål i köket",
+  "paragraphs": [
+   "Mats är lärare i kemi. En kväll gör han ett försök i köket med sin dotter Klara. – Vi ska ta reda på hur sura olika saker är, säger han. Det mäter man med ett tal mellan 0 och 14. Ett pH-värde under 7 är surt, 7 är neutralt och över 7 är basiskt.",
+   "Mats har inget lackmuspapper hemma, men han har en rödkål. Han kokar bladen i vatten. Saften blir lila. – Rödkålssaft är en indikator, förklarar han. Den får olika färger i sura och basiska lösningar.",
+   "Klara häller saften i sex glas. I det första har hon destillerat vatten, och saften förblir lila. Med vinäger blir den röd, och med citronsaft också. Med tvål blir den grön och med tvättsoda gulgrön. – Vinäger är surt och tvål är basiskt, säger Klara.",
+   "Sedan prövar de en läskedryck. Saften blir röd. – Läsk har ett pH-värde på ungefär 3, säger Mats. Syran löser upp tandemaljen, och då får bakterierna lättare att ge karies. Magsyra är ännu surare, den har pH-värdet 1 eller 2.",
+   "Till sist berättar Mats om naturen. Regnvatten är alltid lite surt. Men förr kom det mycket surt regn från fabriker, och försurning gjorde att fisk dog i många sjöar. I skolan har de en pH-mätare som visar pH-värdet med siffror. – Men rödkål är roligare, säger Klara."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad använder Mats som indikator?",
+    "options": [
+     "Lackmuspapper",
+     "En pH-mätare",
+     "Citronsaft",
+     "Saft från rödkål"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Rödkålssaft är en indikator, förklarar han.",
+    "explanationJa": "{赤|あか}キャベツの{汁|しる}を{指示薬|しじやく}として{使|つか}いました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vilken färg får saften i det destillerade vattnet?",
+    "options": [
+     "Lila",
+     "Röd",
+     "Grön",
+     "Gulgrön"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I det första har hon destillerat vatten, och saften förblir lila.",
+    "explanationJa": "{蒸留水|じょうりゅうすい}では{紫|むらさき}のままでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "inference",
+    "promptSv": "Vilket pH-värde har tvål, ungefär?",
+    "options": [
+     "Under 7",
+     "Exakt 7",
+     "Mellan 1 och 2",
+     "Över 7"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Med tvål blir den grön … – Vinäger är surt och tvål är basiskt, säger Klara.",
+    "explanationJa": "せっけんは{塩基性|えんきせい}なので、pHは７より{大|おお}きいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mats säger att magsyra är surare än läsk.",
+    "correct": true,
+    "explanationSv": "Magsyra är ännu surare, den har pH-värdet 1 eller 2.",
+    "explanationJa": "{胃酸|いさん}のpHは１か２で、ソフトドリンクより{酸性|さんせい}が{強|つよ}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "cause",
+    "statementSv": "Enligt Mats är regnvatten alltid neutralt.",
+    "correct": false,
+    "explanationSv": "Regnvatten är alltid lite surt.",
+    "explanationJa": "{雨水|あまみず}はいつも{少|すこ}し{酸性|さんせい}です。"
+   }
+  ],
+  "factSources": [
+   "pH-skalan går i vardagsbruk från 0 till 14; under 7 är surt, 7 är neutralt (rent vatten vid 25 °C) och över 7 är basiskt.",
+   "Rödkålssaft är lila i neutral lösning, röd–rosa i sur och grön–gul i basisk lösning; lackmus blir rött i sur och blått i basisk lösning.",
+   "Ungefärliga pH-värden: magsyra 1–2, citronsaft cirka 2, cola cirka 2,5–3, kaffe cirka 5, rent regnvatten cirka 5,6 (koldioxid), tvål cirka 9–10.",
+   "Surt regn orsakade försurning av många svenska sjöar under 1900-talet, med fiskdöd som följd; sjöarna kalkas sedan 1970–80-talet."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om pH-värden i vardagen.",
+  "discussionPoints": [
+   "Vilka sura saker äter eller dricker du ofta?",
+   "Har du gjort försök med en indikator i skolan?",
+   "Hur skyddar du tandemaljen?",
+   "Finns det problem med surt regn eller försurning i Japan?"
+  ]
+ }
+}
