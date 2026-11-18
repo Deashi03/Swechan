@@ -310,6 +310,8 @@ export function isWordListDescription(m, c) {
   const body = m.descriptionSv.replace(/^[^:]{2,80}:\s*/, '').replace(/[.]$/, '');
   const parts = body.split(/,\s*|\s+och\s+/).map((x) => x.trim().toLowerCase()).filter(Boolean);
   if (parts.length < 3) return false;
+  // a list consists of short items (a word or a short phrase each); prose has longer clauses
+  if (parts.filter((p) => p.split(/\s+/).length <= 3).length / parts.length < 0.8) return false;
   const hit = parts.filter((p) => lemmas.some((l) => p === l || p.startsWith(l + ' ') || p.endsWith(' ' + l) || p.includes(l))).length;
   return hit / parts.length >= 0.6;
 }

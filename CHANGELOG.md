@@ -1,43 +1,6 @@
 # Changelog
 
-## Osläppt – 2026-11-19: etapp A6, datamodell för betydelser
-
-- `order`, `level` och `inflection` på betydelsen, `senseInventory` på posten (schema, `DATA_MODEL.md`). Visningsordningen är skild från id:t, så vardagsbetydelsen kan stå först utan att något id byts. Repositoriet låter `getSense(id).entry` bära betydelsens egen nivå och böjning.
-- Ordboken visar en betydelses egen nivå och böjning; validatorn kontrollerar unika `order`, att `coreSense` finns i posten och att betydelsens böjning passar ordklassen.
-- `tools/production/senses.py <ord>` visar postens betydelser i visningsordning, var de lärs ut, om lemmat är grundord och om inventeringen är gjord; `--mark` sätter `senseInventory`. Ersätter `exists.py` i produktionen.
-- *arbete* har fått vardagsbetydelsen (*jobb*, A1, `s.arbete.2`) som visas först; fysikbetydelsen `s.arbete.1` är oförändrad men har nivå B2. *damm* i betydelsen smuts böjs nu *ett damm, dammet* (ingen plural).
-
-## Osläppt – 2026-11-19: etapp A5, bildsystemet
-
-- **Matchningstest** för symbolbilder (produktägarens beslut): `npm run art:blind -- <dir> pending --match` visar modulens alla bilder numrerade och listar orden som testas med glosa; granskaren väljer bild. `art:blind:record` registrerar `blindTest.method: "match"`. Bilder i bildövningar kräver fortfarande det öppna testet (testas).
-- **Manuellt spår i stället för `none`:** de 592 bildlösa modulorden har nu en riktig bildsort och `status: "manual"` i planen. Validatorn kräver bild eller manuellt spår och förbjuder `none` för modulord. De hårdkodade listorna `VISUAL_EXCEPTIONS_BEFORE_0_29` och `VISUAL_MISSING_AFTER_BLIND_TEST` är borttagna; avsnittet *Saknade bilder* i statusfilen är ersatt av kön och `quality/visual-manual-notes.md`.
-- **Animationer tillbaka i planen:** `visuals-plan.mjs` planerar animation också för processord ("När …") och ord vars definition beskriver rörelse eller förändring. `tools/production/vis.py` skriver inte längre över planen; en stillbild där planen säger animation kräver `waiver` med skäl (annars varning, och spärren stoppar nya moduler).
-- **Rörelse för saker:** `moving()` i `src/ui/wordArt/kit.ts` lägger CSS-rörelse i ett motiv. Grundläget är affischbilden, rörelsen spelas bara i ordintroduktionen och aldrig med "minska rörelse". Blindtestets fingeravtryck räknas på affischbilden, så godkända bilder behöver inte testas om.
-- **Provmodul *Arbete och energi*:** *rörelseenergi* (kulan rullar nerför backen), *lägesenergi* (kulan lyfts upp), *omvandla* (energin flödar sol → panel → lampa) och *dynamo* (hjulet snurrar) rör sig.
-
-## Osläppt – 2026-11-19: etapp A4, laddtid del 2 (delvis)
-
-- **Innehållet delas upp:** ordboken låg i en enda fil på 25 MB (6 MB komprimerad) som laddades om vid varje release. Nu blir det en fil per ämnesgrupp (`dict-R01-A01` …, 0,3–0,9 MB vardera) plus `visuals` och `module-index`. En release ändrar bara de filer vars innehåll ändrats; resten ligger kvar i cachen (A3).
-- **Storleksspärr:** `node scripts/bundle-report.mjs --check` körs i CI efter bygget, skriver ut startpaketets storlek och fallerar om en enskild fil blir större än 5 MB.
-- Kvar till etapp A4b (se `docs/QUALITY_PLAN.md`): ordboken ur startpaketet (kräver ett asynkront innehålls-API) och bildpaket per modul.
-
-## Osläppt – 2026-11-19: etapp A3, laddtid del 1
-
-- **Förladdning:** ett pass (inlärning, repetition, egna ord) förladdar bilden till varje ord när det startar, och nästa korts bild och bildalternativ medan det nuvarande kortet visas. Modulsidan förladdar alla modulens bilder, inte bara animationer (`src/ui/components/preloadVisual.ts`).
-- **Cachen töms inte längre vid release:** service workern byter inte namn per version. Filer med hash i namnet ligger kvar mellan releaser; bara filer som varken finns i den nya eller förra versionens `asset-list.json` (skrivs av bygget) tas bort. Animationer, foton och ikoner serveras direkt ur cachen och uppdateras i bakgrunden.
-- **Nästa kort väntar inte på sparningen:** svaret sparas i bakgrunden i en ordnad kö (`src/lib/saveQueue.ts`, med tester); passet väntar in kön innan det lämnas.
-- Väntebildens puls syns först efter 300 ms.
-- e2e mäter tiden från "nästa" till synlig bild i *Arbete och energi* (budget: median under 150 ms).
-
-## Osläppt – 2026-11-19: etapp A2, mätning och kvalitetsspärr
-
-- `npm run audit:content` (`scripts/audit-content.mjs`) mäter 22 kvalitetsmått för de befintliga modulerna (bildlösa ord, animationer, betydelser, förklaringar, läsningar, typografi, namn, sv/ja) och kontrollerar kvalitetskontraktet (`quality/contract.json`) för nya moduler och moduler med `standard: 2`. `--report` ger en tabell per ämnesgrupp, `--backlog` arbetsköer i `quality/backlog/`.
-- Spärren: `quality/metrics.json` är lägstanivån. CI fallerar om ett mått blir sämre eller om en modul bryter mot kontraktet. Förbättringar skrivs in med `--update`; en avsiktlig försämring kräver `--allow-worse "<mått>: <skäl>"` och skälet sparas.
-- `quality/legacy-modules.json`: de 1 517 moduler som fanns före kontraktet. En modul som inte står där måste ha `standard: 2`.
-- `npm run content:version` (`scripts/content-version.mjs`): `contentVersion` och `updatedAt` räknas ut ur ett fingeravtryck av modulen och dess ordposter, också när en delad ordpost ändras. CI kontrollerar att inget glömts. Versionen ska inte längre ändras för hand.
-- `quality/characters.json`: personnamn med enda tillåtna katakana och fasta roller (Aiko, Erik, Mia, Leo, Mei). `quality/readings-allow.json`: kanjiord med flera godkända läsningar och kända felläsningar; tonande första ljud godtas automatiskt.
-- `tools/production/check.sh` kör nu också `content:version` och spärren.
-- Utgångsläge: 592 ord utan bild, 311 animerade ord, 3 920 verb och processord utan animation, 8 459 svåra ord med ett enda exempel, 1 753 abstrakta B1-ord utan förklaring, 175 poster som säger "kan också betyda" utan att ha betydelsen.
+> **Arkiv till och med 2026-11-18.** Nya poster skrivs som egna filer i `changelog/` (se `changelog/README.md`), så att parallella grenar inte krockar i den här filen. Läs aldrig hela filen.
 
 ## Osläppt – 2026-11-18: kvalitetsrevision och kvalitetsplan
 

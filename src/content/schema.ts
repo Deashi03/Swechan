@@ -236,12 +236,24 @@ export const ModuleWord = z.object({
 });
 export type ModuleWord = z.infer<typeof ModuleWord>;
 
+export const FactSource = z.object({
+  text: z.string().min(1),
+  source: z.string().min(3),
+  checked: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  recheck: z.enum(['årligen', 'aldrig']),
+});
+export type FactSource = z.infer<typeof FactSource>;
+
 export const ReadingText = z.object({
   titleSv: z.string(),
   paragraphs: z.array(z.string()).min(1),
   questions: z.array(ReadingQuestion).min(3),
-  /** Where the facts were checked (free text). */
-  factSources: z.array(z.string()).optional(),
+  /**
+   * Where the facts were checked. Kvalitetsplanen A7: { text, source, checked, recheck } – what is claimed,
+   * where it was checked, when, and whether it must be re-checked every year (laws, amounts, ages).
+   * Free text is accepted only in modules from before the contract (standard 1).
+   */
+  factSources: z.array(z.union([z.string(), FactSource])).optional(),
 });
 export type ReadingText = z.infer<typeof ReadingText>;
 
@@ -273,6 +285,12 @@ export const Module = z.object({
   words: z.array(ModuleWord).min(15).max(20),
   reading: ReadingText,
   conversation: ConversationConfig,
+  /**
+   * Kvalitetsplanen A7: 2 = the module meets the quality contract (quality/contract.json), checked by
+   * `npm run audit:content`. Missing = a module from before the contract (listed in quality/legacy-modules.json).
+   * Every new module has standard 2.
+   */
+  standard: z.literal(2).optional(),
 });
 export type Module = z.infer<typeof Module>;
 

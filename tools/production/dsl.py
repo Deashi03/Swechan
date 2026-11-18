@@ -4,6 +4,9 @@ v('koka','1 kokar kokade kokat koka pp=kokt','A1', s(...))
 a('färsk','färskt färska färska färskare färskast','A2', s(...))   # or 'indecl'
 x('ofta','adverb','A1', s(...))
 s(ja, defSv, defJa, exSv, exJa, **kw)  kw: lab, tags, frame='Subj|compl', note=(sv,ja), coll=[...], concept, reg, syn=[(id,rel)], gn=[...], ex2=(sv,ja)
+    kvalitetsplanen A6/A7: order=<visningsordning>, lv='B2' (betydelsens nivå), infl={...} (betydelsens böjning)
+Entry kw (n/v/a/x): inv='SO' or inv=('SO', <nummer på grundbetydelsen>) or inv=('SO', n, 'anteckning') -> senseInventory
+module(..., factSources=[(text, källa, 'årligen'|'aldrig'), …]) – new modules get "standard": 2 (quality/contract.json)
 """
 import json, glob, os, re, sys
 REPO=os.environ.get('SWECHAN_REPO', os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')))
@@ -12,7 +15,7 @@ import datetime
 U=os.environ.get('SWECHAN_DATE', datetime.date.today().isoformat())
 VER=os.environ.get('SWECHAN_VERSION', re.search(r"APP_VERSION = '([0-9]+\.[0-9]+)", open(REPO+'/src/config/appConfig.ts').read()).group(1))
 TAGS=['mat']
-def s(ja,defSv,defJa,exSv,exJa,lab=None,tags=None,frame=None,note=None,coll=None,concept=False,reg=None,syn=None,gn=None,ex2=None,alt=None,expl=None):
+def s(ja,defSv,defJa,exSv,exJa,lab=None,tags=None,frame=None,note=None,coll=None,concept=False,reg=None,syn=None,gn=None,ex2=None,alt=None,expl=None,order=None,lv=None,infl=None):
     d={"ja":ja,"defSv":defSv,"defJa":defJa,"concept":concept,"examples":[{"sv":exSv,"ja":exJa}]}
     if ex2: d["examples"].append({"sv":ex2[0],"ja":ex2[1]})
     if lab: d["labelSv"]=lab
@@ -30,37 +33,45 @@ def s(ja,defSv,defJa,exSv,exJa,lab=None,tags=None,frame=None,note=None,coll=None
         d["frame"]=f
     d["tags"]=tags if tags is not None else list(TAGS)
     d["quality"]={"status":"ai-draft"}
+    if order is not None: d["order"]=order
+    if lv: d["level"]=lv
+    if infl: d["inflection"]=infl
     return d
-def _entry(lemma,pos,level,infl,senses,pron=None,key=None):
+def _entry(lemma,pos,level,infl,senses,pron=None,key=None,inv=None):
     key=key or lemma.replace(' ','-')
     e={"id":"e."+key,"lemma":lemma,"pos":pos,"level":level,"inflection":infl}
     if pron: e["pronunciationNote"]=pron
     e["senses"]=[dict(sn,id=f"s.{key}.{i}") for i,sn in enumerate(senses,1)]
     # key order: id first
     e["senses"]=[{"id":sn["id"],**{k:v for k,v in sn.items() if k!="id"}} for sn in e["senses"]]
+    if inv:
+        src,core,note=(inv,None,None) if isinstance(inv,str) else (tuple(inv)+(None,None))[:3]
+        e["senseInventory"]={"checkedAgainst":src,"date":U}
+        if core: e["senseInventory"]["coreSense"]=f"s.{key}.{core}"
+        if note: e["senseInventory"]["note"]=note
     return e
-def n(lemma,forms,level,*senses,pron=None,variants=None,key=None):
+def n(lemma,forms,level,*senses,pron=None,variants=None,key=None,inv=None):
     f=forms.split(); g=f[0]; rest=[None if x=='-' else x for x in f[1:]]
     infl={"kind":"noun","gender":g,"indefSg":lemma,"defSg":rest[0],"indefPl":rest[1],"defPl":rest[2]}
     if variants: infl["variants"]=variants
-    return _entry(lemma,"noun",level,infl,senses,pron,key)
-def v(lemma,forms,level,*senses,pron=None,variants=None,particle=None,key=None):
+    return _entry(lemma,"noun",level,infl,senses,pron,key,inv)
+def v(lemma,forms,level,*senses,pron=None,variants=None,particle=None,key=None,inv=None):
     f=[t.replace('_',' ') for t in forms.split()]; grp=f[0]; pres,past,sup,imp=f[1:5]
     infl={"kind":"verb","infinitive":lemma,"present":pres,"past":past,"supine":sup,"imperative":imp,"group":grp}
     for t in f[5:]:
         if t.startswith('pp='): infl["pastParticiple"]=t[3:]
     if particle: infl["particle"]=particle
     if variants: infl["variants"]=variants
-    return _entry(lemma,"verb",level,infl,senses,pron,key)
-def a(lemma,forms,level,*senses,pron=None,variants=None):
+    return _entry(lemma,"verb",level,infl,senses,pron,key,inv)
+def a(lemma,forms,level,*senses,pron=None,variants=None,inv=None):
     if forms=='indecl': infl={"kind":"adjective","common":lemma,"neuter":lemma,"plural":lemma,"definite":lemma,"indeclinable":True}
     else:
         f=forms.split(); infl={"kind":"adjective","common":lemma,"neuter":f[0],"plural":f[1],"definite":f[2]}
         if len(f)>3: infl["comparative"]=f[3]; infl["superlative"]=f[4]
     if variants: infl["variants"]=variants
-    return _entry(lemma,"adjective",level,infl,senses,pron)
-def x(lemma,pos,level,*senses,pron=None,key=None):
-    return _entry(lemma,pos,level,{"kind":"none"},senses,pron,key)
+    return _entry(lemma,"adjective",level,infl,senses,pron,None,inv)
+def x(lemma,pos,level,*senses,pron=None,key=None,inv=None):
+    return _entry(lemma,pos,level,{"kind":"none"},senses,pron,key,inv)
 
 def existing_entries(exclude_file=None):
     out={}
@@ -88,7 +99,7 @@ def catalog_entry(cid):
     c=json.load(open(REPO+'/planning/catalog/swechan-catalog.v1.json'))
     return next(m for m in c['modules'] if m['catalogId']==cid)
 
-def module(slug,cid,titleJa,descSv,descJa,level,prereq,words,reading,conversation,entries,order,tags=None,related=None,factSources=None,dictfile=None):
+def module(slug,cid,titleJa,descSv,descJa,level,prereq,words,reading,conversation,entries,order,tags=None,related=None,factSources=None,dictfile=None,standard=2):
     """words: list of senseIds; suffix '*' = passive (active False)."""
     cat=catalog_entry(cid)
     if not 15<=len(words)<=20: sys.exit(f'{slug}: {len(words)} ord – en modul ska ha 15–20 ord')
@@ -113,8 +124,12 @@ def module(slug,cid,titleJa,descSv,descJa,level,prereq,words,reading,conversatio
     m={"id":f"m.{slug}","contentVersion":1,"updatedAt":U,"titleSv":cat['titleSv'],"titleJa":titleJa,
        "descriptionSv":descSv,"descriptionJa":descJa,"categoryId":cat['catalogCategoryId'],
        "tags":tags or list(TAGS),"level":level,"prerequisites":prereq,"related":related or [],"recommendedOrder":order,
-       "words":ws,"reading":{"titleSv":title,"paragraphs":paras,"questions":qs,"factSources":factSources or ["Vardagsscen utan faktapåståenden."]},
+       "words":ws,"reading":{"titleSv":title,"paragraphs":paras,"questions":qs,"factSources":[
+           f if isinstance(f,(str,dict)) else {"text":f[0],"source":f[1],"checked":U,"recheck":f[2] if len(f)>2 else "årligen"}
+           for f in (factSources or [])]},
        "conversation":{"scenarioSv":scen,"discussionPoints":points}}
+    if standard==2: m["standard"]=2  # kvalitetskontraktet (quality/contract.json) gäller
+    if not m["reading"]["factSources"]: del m["reading"]["factSources"]
     with open(D+f'modules/{slug}.json','w') as f: json.dump(m,f,ensure_ascii=False,indent=1); f.write("\n")
     # verified 1:1 link
     p=D+'catalog/publishedMapping.json'; mp=json.load(open(p))

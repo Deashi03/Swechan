@@ -4,8 +4,8 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 
 ## Så arbetar du
 
-- **En etapp per session.** När etappen är inlagd: bocka av den här nedanför, uppdatera `PROJECT_STATUS.md`, lägg till överst i `CHANGELOG.md`, stanna och be produktägaren starta en ny session.
-- **Ordning** (produktägarens beslut): 1) hela del A, 2) de snabba rättningarna B1–B4, 3) ny produktion startar igen med *Datorer & internet* (R07-A01) enligt den nya briefen, 4) resten av del B (B5–B7) **varvas** med ny produktion: en eftersläpningsetapp mellan varje nytt överämne.
+- **En etapp per session.** När etappen är inlagd: bocka av den här nedanför, uppdatera `PROJECT_STATUS.md`, skriv en ny fil i `changelog/`, stanna och be produktägaren starta en ny session. (A2–A7 gjordes i en session på produktägarens uttryckliga begäran 2026-11-19.)
+- **Ordning** (produktägarens beslut): 1) hela del A (klar 2026-11-19 utom A4b), 2) de snabba rättningarna B1–B4, 3) ny produktion startar igen med *Datorer & internet* (R07-A01) enligt den nya briefen, 4) resten av del B (B5–B7) **varvas** med ny produktion: en eftersläpningsetapp mellan varje nytt överämne. A4b kan tas när som helst.
 - **Ingen ny modulproduktion förrän A7 är klar.** *Biologi* (0.52.0) och *Astronomi & rymd* (0.53.0) hann släppas med den gamla arbetsgången medan planen skrevs. De ingår därför i eftersläpningen, och mätvärdena i revisionen (tagna vid 0.51.0) räknas om i A2.
 - Reglerna i `CLAUDE.md` gäller som vanligt: bevara användardata, ändra aldrig `m.*`- eller `s.*`-ID:n, tester före commit, högst tre ämnesgrupper parallellt.
 - **Varje etapp slutar med ett mätvärde.** Från etapp A2 ska `npm run audit:content` visa att etappens mått har förbättrats och att inget annat har försämrats.
@@ -105,13 +105,15 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 **Klart när:** *arbete* har vardagsbetydelsen inlagd, visas först i ordboken och har nivå A1, medan `s.arbete.1` är oförändrad.
 
 ### A7. Kontrakt, brief och dokument
-- [ ] `quality/contract.json` med K1–K9 ur revisionen, justerat efter besluten: K1 = animation, scen eller symbol, annars manuell kö. K7 = kort förklaring (1–2 meningar, svenska och japanska) för B1-ord med plan `symbol`.
-- [ ] Fältet `standard: 1 | 2` på modulen. `check.sh` stoppar nya moduler som inte uppfyller `standard: 2`.
-- [ ] `factSources` blir `{ text, source, checked, recheck }`. Äldre fria strängar godtas för `standard: 1`.
-- [ ] **Ny `docs/PRODUCTION_BRIEF.md`:** betydelseinventering före skrivandet, animationsavsnitt med ett exempel av varje sort, förklaringsmall (exempel + användning + skillnad mot förväxlingsord), två exempel för B2+, matchningstest, manuell kö. Håll den kort: det som en grind stoppar behöver bara en rad.
-- [ ] **`CLAUDE.md`:** lägg till "Kör `npm run audit:content`; inget mätvärde får försämras" och hänvisa bildregeln till kontraktet.
-- [ ] **`PROJECT_STATUS.md` ned till cirka 80 rader:** nuläge, nästa steg, regler. Flytta *Öppna osäkerheter* till `quality/backlog/uncertainties.json` (eller en fil per överämne).
-- [ ] **`CHANGELOG.md`:** en fil per release under `changelog/`, så att sammanslagningar inte krockar. Behåll regeln "läs aldrig hela".
+- [x] `quality/contract.json` med K1–K9 ur revisionen, justerat efter besluten: K1 = animation, scen eller symbol, annars manuell kö. K7 = kort förklaring (1–2 meningar, svenska och japanska) för B1-ord med plan `symbol`.
+- [x] Fältet `standard: 1 | 2` på modulen. `check.sh` stoppar nya moduler som inte uppfyller `standard: 2`.
+- [x] `factSources` blir `{ text, source, checked, recheck }`. Äldre fria strängar godtas för `standard: 1`.
+- [x] **Ny `docs/PRODUCTION_BRIEF.md`:** betydelseinventering före skrivandet, animationsavsnitt med ett exempel av varje sort, förklaringsmall (exempel + användning + skillnad mot förväxlingsord), två exempel för B2+, matchningstest, manuell kö. Håll den kort: det som en grind stoppar behöver bara en rad.
+- [x] **`CLAUDE.md`:** lägg till "Kör `npm run audit:content`; inget mätvärde får försämras" och hänvisa bildregeln till kontraktet.
+- [x] **`PROJECT_STATUS.md` ned till cirka 80 rader:** nuläge, nästa steg, regler. Flytta *Öppna osäkerheter* till `quality/backlog/uncertainties.json` (eller en fil per överämne).
+- [x] **`CHANGELOG.md`:** en fil per release under `changelog/`, så att sammanslagningar inte krockar. Behåll regeln "läs aldrig hela".
+
+**Genomfört 2026-11-19.** Kontraktet kontrolleras av `scripts/audit-content.mjs` (samma verktyg som spärren). Provmodul: *Observation och hypotesprövning* är lyft till `standard: 2` och uppfyller kontraktet (strukturerade `factSources`, beskrivning i stället för ordlista). *Arbete och energi* kan lyftas först när *energiomvandling* har fått sin bild i det manuella spåret (B5). Den avsiktligt bristfälliga modulen är ett test (`scripts/audit-content.test.mjs`): verb utan animation, ingen inventering, ett exempel och fakta i fritext stoppas. Hela eftersläpningen mot kontraktet: cirka 45 800 kontraktsfel i de befintliga modulerna, varav 16 700 saknad `senseInventory`.
 
 **Klart när:** en provmodul skriven enligt nya briefen går igenom `check.sh` som `standard: 2`, och en avsiktligt bristfällig modul (utan animation på ett verb, utan betydelseinventering, med ett exempel) stoppas.
 
