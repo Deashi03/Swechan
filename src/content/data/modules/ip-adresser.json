@@ -1,0 +1,181 @@
+{
+ "id": "m.ip-adresser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "IP-adresser",
+ "titleJa": "IPアドレス",
+ "descriptionSv": "IP-adresser: IP-adress, enhet, lokalt nätverk, router, tilldela, unik, skrivare, datapaket, avsändare, mottagare, identifiera, ungefärlig, spåra, anonym, dölja, utlandet och geoblockering.",
+ "descriptionJa": "IPアドレス：IPアドレス、{機器|きき}、ローカルネットワーク、ルーター、{割|わ}り{当|あ}てる、{唯一|ゆいいつ}の、プリンター、データパケット、{差出人|さしだしにん}、{受取人|うけとりにん}、{特定|とくてい}する、おおよその、{追跡|ついせき}する、{匿名|とくめい}の、{隠|かく}す、{外国|がいこく}、ジオブロッキング。",
+ "categoryId": "R07-A01-T04",
+ "tags": [
+  "datorer",
+  "internet",
+  "nätverk"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.mobildata"
+ ],
+ "related": [],
+ "recommendedOrder": 3743,
+ "words": [
+  {
+   "senseId": "s.IP-adress.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enhet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lokalt-nätverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.router.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tilldela.1",
+   "active": false
+  },
+  {
+   "senseId": "s.unik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.datapaket.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avsändare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mottagare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.identifiera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ungefärlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spåra.3",
+   "active": true
+  },
+  {
+   "senseId": "s.anonym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dölja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utlandet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.geoblockering.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Skrivaren som försvann",
+  "paragraphs": [
+   "Kenji arbetar på ett litet kontor i Malmö. En måndag morgon kan ingen skriva ut. Datorerna hittar inte skrivaren. Kenji ringer till Petra, som tar hand om datorerna på kontoret.",
+   "– Alla enheter i vårt lokala nätverk har en IP-adress, förklarar Petra. Det är en rad med siffror, till exempel 192.168.1.25. Routern tilldelar adresserna, och varje adress måste vara unik. I helgen startade routern om, och då fick skrivaren en ny adress. Därför hittar datorerna den inte.",
+   "Petra ger skrivaren en fast adress, och sedan fungerar allt igen. Kenji blir nyfiken. – Hur fungerar det när jag skickar ett mejl? frågar han. – Mejlet delas upp i små datapaket, säger Petra. Varje paket har en avsändare och en mottagare, ungefär som ett brev. IP-adresserna visar vägen.",
+   "– Kan man identifiera mig med min IP-adress? frågar Kenji. – Inte direkt, säger Petra. Men en webbplats kan se din ungefärliga plats. Polisen kan ibland spåra en IP-adress med hjälp av internetleverantören. Helt anonym är man alltså inte på nätet, även om det finns tjänster som döljer adressen.",
+   "Kenji berättar att han inte kunde se ett program från svensk tv när han var i Japan förra sommaren. – Det var geoblockering, säger Petra. Tjänsten såg på din IP-adress att du var i utlandet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket problem har kontoret på måndagen?",
+    "options": [
+     "Internet är för långsamt",
+     "Routern har gått sönder",
+     "Datorerna startar inte",
+     "Ingen kan skriva ut"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En måndag morgon kan ingen skriva ut.",
+    "explanationJa": "{月曜日|げつようび}の{朝|あさ}、{誰|だれ}も{印刷|いんさつ}できません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför hittar datorerna inte skrivaren?",
+    "options": [
+     "Skrivaren har inget papper",
+     "Skrivaren har fått en ny IP-adress",
+     "Någon har stängt av routern",
+     "Kabeln är trasig"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I helgen startade routern om, och då fick skrivaren en ny adress.",
+    "explanationJa": "{週末|しゅうまつ}にルーターが{再起動|さいきどう}して、プリンターに{新|あたら}しいアドレスが{割|わ}り{当|あ}てられたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att varje adress måste vara unik?",
+    "options": [
+     "Adressen ändras varje dag",
+     "Adressen är hemlig",
+     "Två enheter får inte ha samma adress",
+     "Adressen är mycket kort"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Routern tilldelar adresserna, och varje adress måste vara unik.",
+    "explanationJa": "{同|おな}じアドレスを{二|ふた}つの{機器|きき}が{使|つか}ってはいけない、という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt Petra kan en webbplats se ungefär var man är.",
+    "correct": true,
+    "explanationSv": "Men en webbplats kan se din ungefärliga plats.",
+    "explanationJa": "ネットのサービスは、おおよその{場所|ばしょ}がわかります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji kunde se det svenska programmet i Japan.",
+    "correct": false,
+    "explanationSv": "… han inte kunde se ett program från svensk tv när han var i Japan …",
+    "explanationJa": "ジオブロッキングのせいで、{日本|にほん}では{見|み}られませんでした。"
+   }
+  ],
+  "factSources": [
+   "Allmän teknisk kunskap: IP-adresser, privata adresser som 192.168.x.x i lokala nätverk och uppdelning i datapaket.",
+   "Att polisen vid brottsutredning kan begära ut vem som hade en viss IP-adress från internetleverantören följer av svensk lag (lagen om elektronisk kommunikation); detaljerna kan ändras.",
+   "Geoblockering beror på licensavtal; vilka program som kan ses utomlands varierar mellan tjänster.",
+   "Personer och detaljer i texten är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om IP-adresser och om vad andra kan se om en på nätet.",
+  "discussionPoints": [
+   "Hur många enheter finns i ditt lokala nätverk hemma?",
+   "Har du någon gång haft problem med en skrivare i nätverket?",
+   "Vill du vara anonym på nätet? När?",
+   "Har du råkat ut för geoblockering när du var utomlands?"
+  ]
+ }
+}
