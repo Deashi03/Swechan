@@ -279,6 +279,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.kemisk-förändring.1', 's.bildas.1', 's.oxidation.1', 's.reaktionshastighet.1',
   // 0.51 Atomer & periodiska systemet: förväxlas med närliggande ord
   's.nukleon.1', 's.reaktiv.1', 's.deuterium.1', 's.instabil.2', 's.fullt-skal.1',
+  // 0.51 Atomer & periodiska systemet: förväxlas med grupp efter två blindomgångar
+  's.halogen.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
