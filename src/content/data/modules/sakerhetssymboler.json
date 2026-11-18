@@ -1,0 +1,180 @@
+{
+ "id": "m.sakerhetssymboler",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Säkerhetssymboler",
+ "titleJa": "{安全|あんぜん}のための{絵表示|えひょうじ}",
+ "descriptionSv": "Säkerhetssymboler: farosymbol, etikett, kemikalie, explosiv, brandfarlig, oxiderande, gas under tryck, frätande, giftig, hälsofarlig, miljöfarlig, skyddsglasögon, skyddshandske, labbrock, dragskåp, ögondusch och brandsläckare.",
+ "descriptionJa": "{安全|あんぜん}のための{絵表示|えひょうじ}：ハザードシンボル、ラベル、{化学物質|かがくぶっしつ}、{爆発性|ばくはつせい}の、{燃|も}えやすい、{酸化性|さんかせい}の、{高圧|こうあつ}ガス、{腐食性|ふしょくせい}の、{有毒|ゆうどく}な、{健康|けんこう}に{有害|ゆうがい}な、{環境|かんきょう}に{有害|ゆうがい}な、{保護|ほご}メガネ、{保護手袋|ほごてぶくろ}、{白衣|はくい}、ドラフト、{洗眼器|せんがんき}、{消火器|しょうかき}。",
+ "categoryId": "R06-A04-T06",
+ "tags": [
+  "kemi",
+  "laboratoriekemi",
+  "säkerhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.matinstrument"
+ ],
+ "related": [],
+ "recommendedOrder": 3463,
+ "words": [
+  {
+   "senseId": "s.farosymbol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.etikett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kemikalie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.explosiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandfarlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oxiderande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gas-under-tryck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.frätande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.giftig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hälsofarlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljöfarlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skyddsglasögon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddshandske.1",
+   "active": true
+  },
+  {
+   "senseId": "s.labbrock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dragskåp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ögondusch.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandsläckare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Symbolerna under diskbänken",
+  "paragraphs": [
+   "Innan klassen börjar arbeta i laboratoriet får alla en läxa: titta på förpackningarna under diskbänken hemma. Mei hittar en flaska med ugnsrengöring. På etiketten finns en farosymbol, en röd ruta som står på ena hörnet.",
+   "På lektionen går läraren igenom symbolerna. En låga betyder att kemikalien är brandfarlig, till exempel tändvätska. En låga ovanför en ring betyder att ämnet är oxiderande. En bomb som sprängs betyder explosiv, och en gastub betyder gas under tryck, som i en tub med gas till grillen.",
+   "Mei berättar om sin ugnsrengöring. Symbolen visar en hand och en yta som skadas av droppar, alltså att medlet är frätande. En dödskalle visar att något är giftigt, en människa med en stjärna på bröstet betyder hälsofarlig, och ett dött träd och en död fisk betyder miljöfarlig.",
+   "Sedan visar läraren hur man skyddar sig. I laboratoriet har man alltid skyddsglasögon och labbrock. När man arbetar med frätande ämnen tar man på sig skyddshandskar, och ämnen som ger farliga gaser använder man bara i dragskåpet.",
+   "Till sist visar han var ögonduschen och brandsläckaren finns. – Om något händer ska ni veta var de är utan att tänka, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var hittar Mei farosymbolen?",
+    "options": [
+     "I en bok i skolan",
+     "På en tub med gas",
+     "På dörren till laboratoriet",
+     "På etiketten på en flaska med ugnsrengöring"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Mei hittar en flaska med ugnsrengöring. På etiketten finns en farosymbol …",
+    "explanationJa": "オーブンクリーナーのラベルにありました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad betyder en låga ovanför en ring?",
+    "options": [
+     "Att ämnet är giftigt",
+     "Att det är gas under tryck",
+     "Att ämnet är oxiderande",
+     "Att ämnet är miljöfarligt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En låga ovanför en ring betyder att ämnet är oxiderande.",
+    "explanationJa": "{酸化性|さんかせい}の{物質|ぶっしつ}だという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "När ska man använda dragskåpet?",
+    "options": [
+     "När ett ämne ger farliga gaser",
+     "När man ska väga något",
+     "När man ska skriva rapporten",
+     "När man ska diska"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… ämnen som ger farliga gaser använder man bara i dragskåpet.",
+    "explanationJa": "{危険|きけん}なガスが{出|で}る{物質|ぶっしつ}を{扱|あつか}うときです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mei har en ugnsrengöring som är frätande.",
+    "correct": true,
+    "explanationSv": "… alltså att medlet är frätande.",
+    "explanationJa": "メイのオーブンクリーナーは{腐食性|ふしょくせい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Läraren vill att eleverna ska behöva leta efter ögonduschen om något händer.",
+    "correct": false,
+    "explanationSv": "Om något händer ska ni veta var de är utan att tänka …",
+    "explanationJa": "{何|なに}かあったとき、{考|かんが}えなくてもすぐわかるようにしてほしいと{思|おも}っています。"
+   }
+  ],
+  "factSources": [
+   "Farosymbolerna följer EU:s CLP-förordning (bygger på FN:s GHS): nio symboler med svart bild på vit botten i en röd romb. Kemikalieinspektionen kallar dem bland annat explosivt, brandfarligt, oxiderande, gas under tryck, frätande, akut toxicitet (dödskalle), hälsofarlig (människa med stjärna) och miljöfarlig (dött träd och död fisk).",
+   "Ugnsrengöring är ofta frätande; tändvätska är brandfarlig; gasolflaskor innehåller gas under tryck.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om farliga produkter hemma och om hur man skyddar sig.",
+  "discussionPoints": [
+   "Vilka farosymboler finns på förpackningar hos dig hemma?",
+   "Hur förvarar du rengöringsmedel om det finns barn i hemmet?",
+   "Ser farosymbolerna likadana ut i Japan och i Sverige?",
+   "När har du använt skyddsglasögon eller skyddshandskar?"
+  ]
+ }
+}

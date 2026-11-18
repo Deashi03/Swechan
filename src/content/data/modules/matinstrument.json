@@ -1,0 +1,174 @@
+{
+ "id": "m.matinstrument",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Mätinstrument",
+ "titleJa": "{測定器|そくていき}",
+ "descriptionSv": "Mätinstrument: mätinstrument, våg, analysvåg, termometer, stoppur, linjal, måttband, skjutmått, mätcylinder, skala, visare, mätare, sensor, barometer, hygrometer och kalibrera.",
+ "descriptionJa": "{測定器|そくていき}：{測定器|そくていき}、はかり、{精密天秤|せいみつてんびん}、{温度計|おんどけい}、ストップウォッチ、{定規|じょうぎ}、メジャー、ノギス、メスシリンダー、{目盛|めも}り、（{計器|けいき}の）{針|はり}、メーター、センサー、{気圧計|きあつけい}、{湿度計|しつどけい}、{較正|こうせい}する。",
+ "categoryId": "R06-A04-T06",
+ "tags": [
+  "kemi",
+  "laboratoriekemi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.laboratorieglas"
+ ],
+ "related": [],
+ "recommendedOrder": 3462,
+ "words": [
+  {
+   "senseId": "s.mätinstrument.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.analysvåg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.termometer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stoppur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.måttband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjutmått.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mätcylinder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skala-noun.2",
+   "active": true
+  },
+  {
+   "senseId": "s.visare.2",
+   "active": true
+  },
+  {
+   "senseId": "s.mätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sensor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barometer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hygrometer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kalibrera.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mätinstrument överallt",
+  "paragraphs": [
+   "Läraren Erik börjar lektionen med en fråga: – Hur många mätinstrument har ni hemma? Eleverna tänker efter. Alla har en termometer, och de flesta har en våg i köket och ett måttband i en låda.",
+   "I laboratoriet finns fler mätinstrument. Med en linjal mäter man längder i centimeter, men för små saker använder man ett skjutmått. Volymen av en vätska mäter man i en mätcylinder. Där läser man av skalan på sidan. Tiden mäter man med ett stoppur.",
+   "Skolan har också en analysvåg. Den är mycket noggrann och visar massan med fyra decimaler. – Den är så känslig att ett hårstrå syns på skärmen, säger Erik.",
+   "Några mätinstrument har en visare, andra visar siffror. Mätaren för el i källaren har siffror. På väggen i klassrummet sitter en gammal barometer med visare, och bredvid den en hygrometer som mäter luftfuktigheten.",
+   "Många mätinstrument har i dag en sensor, till exempel termometern i en modern ugn. – Men alla mätinstrument måste vara rätt inställda, säger Erik. Därför kalibrerar vi analysvågen varje år."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket mätinstrument har alla elever hemma?",
+    "options": [
+     "En analysvåg",
+     "Ett skjutmått",
+     "En termometer",
+     "En hygrometer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Alla har en termometer …",
+    "explanationJa": "みんなの{家|いえ}に{温度計|おんどけい}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad mäter man med en mätcylinder?",
+    "options": [
+     "Hur tung en sak är",
+     "Hur lång tid något tar",
+     "Hur fuktig luften är",
+     "Volymen av en vätska"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Volymen av en vätska mäter man i en mätcylinder.",
+    "explanationJa": "{液体|えきたい}の{体積|たいせき}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur många decimaler visar analysvågen?",
+    "options": [
+     "En",
+     "Två",
+     "Ingen",
+     "Fyra"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… visar massan med fyra decimaler.",
+    "explanationJa": "{小数点以下|しょうすうてんいか}4{桁|けた}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Barometern i klassrummet har en visare.",
+    "correct": true,
+    "explanationSv": "På väggen i klassrummet sitter en gammal barometer med visare …",
+    "explanationJa": "{教室|きょうしつ}の{気圧計|きあつけい}には{針|はり}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att man aldrig behöver kontrollera mätinstrument.",
+    "correct": false,
+    "explanationSv": "… alla mätinstrument måste vara rätt inställda … Därför kalibrerar vi analysvågen varje år.",
+    "explanationJa": "{毎年|まいとし}{較正|こうせい}すると{言|い}っているので、{確認|かくにん}が{必要|ひつよう}だと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "En analysvåg i skolan visar ofta massan med fyra decimaler i gram (0,1 mg) och står i ett vindskydd av glas; ett skjutmått mäter vanligen på 0,1 mm.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om mätinstrument hemma, i skolan och på jobbet.",
+  "discussionPoints": [
+   "Vilka mätinstrument använder du varje vecka?",
+   "Gillar du instrument med visare eller med siffror bäst? Varför?",
+   "När är det viktigt att mäta mycket noggrant?",
+   "Vilka mätinstrument fanns i din skola i Japan?"
+  ]
+ }
+}

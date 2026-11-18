@@ -1,0 +1,175 @@
+{
+ "id": "m.titrering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Titrering",
+ "titleJa": "{滴定|てきてい}",
+ "descriptionSv": "Titrering: titrera, ättika, erlenmeyerkolv, pipett, stativ, byrett, fylla på, magnetomrörare, droppa, droppvis, färgomslag, läsa av, förbruka, mätvärde, upprepa och medelvärde.",
+ "descriptionJa": "{滴定|てきてい}：{滴定|てきてい}する、{酢|す}、{三角|さんかく}フラスコ、ピペット、スタンド、ビュレット、{補充|ほじゅう}する、マグネチックスターラー、ぽたぽた{落|お}ちる、{一滴|いってき}ずつ、{変色|へんしょく}、（メーターなどを）{読|よ}む、{消費|しょうひ}する、{測定値|そくていち}、くり{返|かえ}す、{平均値|へいきんち}。",
+ "categoryId": "R06-A04-T06",
+ "tags": [
+  "kemi",
+  "laboratoriekemi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.filtrering-och-destillation"
+ ],
+ "related": [],
+ "recommendedOrder": 3466,
+ "words": [
+  {
+   "senseId": "s.titrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ättika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.erlenmeyerkolv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pipett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stativ.2",
+   "active": false
+  },
+  {
+   "senseId": "s.byrett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fylla-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetomrörare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.droppa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.droppvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgomslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsa-av.2",
+   "active": true
+  },
+  {
+   "senseId": "s.förbruka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mätvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelvärde.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur sur är ättikan?",
+  "paragraphs": [
+   "På flaskan med ättika står det 12 %. Klassen ska kontrollera om det stämmer. – Vi ska titrera, säger läraren Lars. Det betyder att vi droppar en bas med känd styrka i ättikan, tills den inte är sur längre.",
+   "Jonas blandar lite ättika med vatten. Med en pipett tar han 10 milliliter och häller det i en erlenmeyerkolv. Han tillsätter några droppar av ett ämne som byter färg. Sedan ställer han kolven på en magnetomrörare, så att vätskan hela tiden blandas.",
+   "Byretten sitter fast i ett stativ. Jonas fyller på basen upp till noll. Han öppnar kranen och låter basen droppa ner i kolven. När han ser att det blir rosa en kort stund, tillsätter han basen droppvis.",
+   "Plötsligt kommer färgomslaget: hela lösningen blir svagt rosa och färgen stannar kvar. Jonas stänger kranen och läser av byretten. Han har förbrukat 16,4 milliliter.",
+   "Ett mätvärde räcker inte. Jonas upprepar titreringen två gånger till och räknar ut medelvärdet. Med hjälp av Lars får han fram att ättikan är 12 % – precis som det står på flaskan."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står det på flaskan med ättika?",
+    "options": [
+     "24 %",
+     "5 %",
+     "12 %",
+     "100 %"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På flaskan med ättika står det 12 %.",
+    "explanationJa": "12%と{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför ställer Jonas kolven på en magnetomrörare?",
+    "options": [
+     "Så att vätskan blir varm",
+     "Så att kolven inte går sönder",
+     "Så att färgen försvinner",
+     "Så att vätskan hela tiden blandas"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… så att vätskan hela tiden blandas.",
+    "explanationJa": "{液体|えきたい}をずっと{混|ま}ぜるためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "När slutar Jonas att droppa?",
+    "options": [
+     "När byretten är tom",
+     "När färgen stannar kvar",
+     "När kolven är full",
+     "När läraren säger det"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Plötsligt kommer färgomslaget … färgen stannar kvar. Jonas stänger kranen …",
+    "explanationJa": "{色|いろ}が{変|か}わって{戻|もど}らなくなったときです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Jonas förbrukade 16,4 milliliter av basen.",
+    "correct": true,
+    "explanationSv": "Han har förbrukat 16,4 milliliter.",
+    "explanationJa": "16.4ミリリットル{使|つか}いました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Jonas nöjer sig med ett enda mätvärde.",
+    "correct": false,
+    "explanationSv": "Ett mätvärde räcker inte. Jonas upprepar titreringen två gånger till …",
+    "explanationJa": "{二回|にかい}くり{返|かえ}して{平均値|へいきんち}を{出|だ}しています。"
+   }
+  ],
+  "factSources": [
+   "Ättika i svenska butiker innehåller vanligen 12 % ättiksyra (det finns också 24 %). Vid skoltitrering späds ättikan och titreras med natriumhydroxidlösning med fenolftalein, som är färglös i sur lösning och blir rosa i basisk.",
+   "Talen i texten är exempel; 16,4 ml är ett påhittat mätvärde.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ättika, mat och om att mäta mycket noggrant.",
+  "discussionPoints": [
+   "Vad använder du ättika eller vinäger till?",
+   "Hur sur tycker du att inlagd sill eller gurka är?",
+   "Varför ska man upprepa ett försök flera gånger?",
+   "Har du någon gång tillsatt något droppvis när du lagar mat?"
+  ]
+ }
+}
