@@ -1,0 +1,177 @@
+{
+ "id": "m.raketer-och-raketmotorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Raketer och raketmotorer",
+ "titleJa": "ロケットとロケットエンジン",
+ "descriptionSv": "Raketer och raketmotorer: raket, raketmotor, bränsle, bränsletank, flytande, syre, förbränning, avgas, dragkraft, ton, raketsteg, hastighet, nyttolast, nedräkning, uppskjutning och explosion.",
+ "descriptionJa": "ロケットとロケットエンジン：ロケット、ロケットエンジン、{燃料|ねんりょう}、{燃料|ねんりょう}タンク、{液体|えきたい}の、{酸素|さんそ}、{燃焼|ねんしょう}、{排気|はいき}ガス、{推力|すいりょく}、トン、ロケットの{段|だん}、{速度|そくど}、ペイロード、カウントダウン、{打|う}ち{上|あ}げ、{爆発|ばくはつ}。",
+ "categoryId": "R06-A06-T05",
+ "tags": [
+  "astronomi",
+  "rymdfart"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kosmisk-bakgrundsstralning"
+ ],
+ "related": [],
+ "recommendedOrder": 3651,
+ "words": [
+  {
+   "senseId": "s.raket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.raketmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bränsletank.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flytande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.syre.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbränning.2",
+   "active": false
+  },
+  {
+   "senseId": "s.avgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dragkraft.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ton.1",
+   "active": false
+  },
+  {
+   "senseId": "s.raketsteg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nyttolast.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nedräkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskjutning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.explosion.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En uppskjutning i Kiruna",
+  "paragraphs": [
+   "Yuki bor i Kiruna och arbetar som lärare. En morgon i mars åker hon med sin klass till Esrange utanför staden. Där skjuter forskare upp raketer som gör experiment högt över jorden.",
+   "En ingenjör visar en raket som ligger på marken. – Den är tolv meter lång, men det mesta är bränsletankar, säger hon. Bränslet kan vara fast eller flytande. Vissa raketer har också flytande syre med sig, eftersom det inte finns någon luft i rymden.",
+   "I raketmotorn sker en förbränning, och heta avgaser sprutar ut bakåt. Det ger en dragkraft framåt. – Raketen lyfter när dragkraften är större än tyngden, förklarar ingenjören. De största raketerna kan väga flera hundra ton.",
+   "Stora raketer har flera raketsteg. När bränslet i det första steget är slut, släpper det och faller ner. Då blir raketen lättare, och hastigheten ökar. Längst upp sitter nyttolasten, till exempel en satellit eller några mätinstrument.",
+   "Klockan elva börjar nedräkningen. Eleverna räknar högt: – Tre, två, ett! Raketen lyfter med ett starkt ljud. – Alla uppskjutningar går inte bra, säger ingenjören. Ibland blir det en explosion. Men i dag går allt som det ska. Yuki berättar att Japan har en liknande plats på ön Tanegashima."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är det mesta av raketen?",
+    "options": [
+     "Mätinstrument",
+     "Solpaneler",
+     "Fönster",
+     "Bränsletankar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den är tolv meter lång, men det mesta är bränsletankar.",
+    "explanationJa": "ロケットのほとんどは{燃料|ねんりょう}タンクです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför har vissa raketer flytande syre med sig?",
+    "options": [
+     "Syret gör raketen lättare",
+     "Det finns ingen luft i rymden",
+     "Eleverna ska andas syret",
+     "Syret gör motorn kallare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Vissa raketer har också flytande syre med sig, eftersom det inte finns någon luft i rymden.",
+    "explanationJa": "{宇宙|うちゅう}には{空気|くうき}がないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad händer med det första raketsteget när bränslet är slut?",
+    "options": [
+     "Det släpper och faller ner",
+     "Det får nytt bränsle",
+     "Det blir nyttolast",
+     "Det sitter kvar hela resan"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När bränslet i det första steget är slut, släpper det och faller ner.",
+    "explanationJa": "{切|き}り{離|はな}されて{落|お}ちます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Raketen lyfter när dragkraften är mindre än tyngden.",
+    "correct": false,
+    "explanationSv": "Raketen lyfter när dragkraften är större än tyngden.",
+    "explanationJa": "{推力|すいりょく}が{重|おも}さより{大|おお}きいときに{上|あ}がります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Uppskjutningen som klassen såg gick bra.",
+    "correct": true,
+    "explanationSv": "Men i dag går allt som det ska.",
+    "explanationJa": "{今日|きょう}はすべて{順調|じゅんちょう}でした。"
+   }
+  ],
+  "factSources": [
+   "Esrange utanför Kiruna är en plats där man skjuter upp forskningsraketer och ballonger (SSC, \"Esrange Space Center\").",
+   "En raket har med sig både bränsle och syre (eller ett annat ämne som gör att bränslet kan brinna) och fungerar därför utan luft (Nationalencyklopedin, \"raket\").",
+   "Stora rymdraketer väger flera hundra ton eller mer vid uppskjutningen och har oftast två eller tre steg (Nationalencyklopedin, \"raket\").",
+   "Tanegashima är Japans största plats för uppskjutningar (JAXA, \"Tanegashima Space Center\").",
+   "Yuki och ingenjören är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om raketer och om uppskjutningar som ni har sett eller hört om.",
+  "discussionPoints": [
+   "Har du sett en uppskjutning, på riktigt eller på tv?",
+   "Varför tror du att stora raketer har flera raketsteg?",
+   "Skulle du vilja besöka Esrange eller Tanegashima? Varför?",
+   "Vad tycker du om att raketer använder så mycket bränsle?"
+  ]
+ }
+}

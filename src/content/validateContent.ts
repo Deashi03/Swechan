@@ -297,6 +297,14 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.skadlig.1',
   // 0.52 Ekologi & organismvärlden: förväxlas med topprovdjur respektive lämmelår efter två blindomgångar
   's.tertiärkonsument.1', 's.massförökning.1',
+  // 0.53 Solens system: förväxlas med den röda planeten respektive kollision/jordnära efter två blindomgångar
+  's.livlös.1', 's.kollisionskurs.1',
+  // 0.53 Himlens rörelser: förväxlas med kärnskugga, vårdagjämning respektive solur efter två blindomgångar
+  's.månförmörkelse.1', 's.vårpunkt.1', 's.soltid.1',
+  // 0.53 Galaxer & universum: förväxlas med avlägsna sig/accelerera respektive dopplereffekt efter två blindomgångar
+  's.mörk-energi.1', 's.blåförskjutning.1',
+  // 0.53 Astronomins metoder: förväxlas med spektrum/fingeravtryck/analysera efter två blindomgångar
+  's.spektroskopi.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

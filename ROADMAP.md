@@ -180,6 +180,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.52 – Biologi (klar)
 - 42 nya moduler i Matematik & naturvetenskap → Biologi med 234 nya ordbilder. 11 ord saknar bild efter två blindtestomgångar.
 
+## v0.53 – Astronomi & rymd (klar)
+- 42 nya moduler i Matematik & naturvetenskap → Astronomi & rymd med 196 nya ordbilder. 8 ord saknar bild efter två blindtestomgångar. Hela *Matematik & naturvetenskap* är nu publicerad.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
