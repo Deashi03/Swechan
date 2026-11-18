@@ -124,8 +124,8 @@ const syringeDrop = (x: number, y: number, col: string) => all(rect(x - 4, y - 2
 
 export const ACIDS_MOTIFS: Record<string, Svg> = {
   // ── 3441 Syror och baser ────────────────────────────────────────────
-  /** syra (kemi): a beaker of pink-red liquid full of small white H⁺ balls, ringed in orange, with a lemon beside it; a small grey blue beaker as reference. */
-  'syra.syra.2': all(bg(), beaker(52, 104, 52, 62, ACID, 0.7, hIon(40, 70), hIon(58, 62), hIon(48, 86), hIon(64, 82), hIon(36, 94), hIon(62, 98)), ring(52, 76, 36), lemon(28, 24, 1.1), greyed(beaker(98, 104, 20, 28, BASE, 0.6))),
+  /** syra (kemi): a beaker of pink-red liquid full of small white H⁺ balls, ringed in orange; a big + badge above it; a small grey blue beaker with OH⁻ ions as the base reference. No fruit, no bottle. */
+  'syra.syra.2': all(bg(), beaker(50, 106, 56, 66, ACID, 0.72, hIon(36, 70), hIon(56, 62), hIon(46, 84), hIon(64, 80), hIon(34, 96), hIon(60, 98)), ring(50, 76, 38), hIon(50, 20, 9), greyed(beaker(100, 106, 24, 34, BASE, 0.7, ohIon(96, 92, 4)))),
   /** bas (kemi): the same beaker with blue liquid full of red-and-white OH⁻ ions, ringed in orange, with a bar of soap beside it; a small grey red beaker as reference. */
   'syra.bas.2': all(bg(), beaker(52, 104, 52, 62, BASE, 0.7, ohIon(38, 70), ohIon(58, 64), ohIon(46, 86), ohIon(64, 84), ohIon(36, 98), ohIon(60, 98)), ring(52, 76, 36), soap(30, 26, 1.1), greyed(beaker(98, 104, 20, 28, ACID, 0.6))),
   /** vätejon: one big white H ball with a red + badge in an orange ring; a small grey electron flies away from it along a dashed line. */
