@@ -5,8 +5,9 @@
  * craters; a rocket is white with a red nose, a capsule a grey cone with a round window and a dark heat shield below,
  * a satellite a gold box with two blue solar panels, an astronaut a white suit with a gold visor. The part the word
  * names is ringed or framed in orange, and a grey copy beside it shows what the word is not.
- * Close words share one layout where only the marked part differs: obemannad/bemannad (the same capsule, the window
- * empty or with a face), värmesköld/återinträde (the shield ringed close up, or the whole capsule falling through the
+ * Close words share one layout where only the marked part differs: obemannad/bemannad (the same small vehicle twice,
+ * one with a crew in helmets, one with empty seats steered by a signal from a ground dish; the marked one is ringed),
+ * värmesköld/återinträde (the shield ringed close up, or the whole capsule falling through the
  * atmosphere), rymddräkt/rymdpromenad (the empty suit on a stand, or the astronaut outside the station),
  * raketsteg/bränsletank (the lower stage falling away, or the tanks seen inside the rocket).
  * Digits and maths signs only; no words, no flags, no brands and no pointing fingers.
@@ -115,6 +116,19 @@ const sea = (y = 96) => all(rect(4, y, 112, 112 - y, SEA, 0, null), line(`M10 ${
 const dome = (x: number, y: number, r: number, col = '#e3e6ea') => all(path(`M${x - r} ${y} A${r} ${r} 0 0 1 ${x + r} ${y} Z`, col, C.ink, 1.4), line(`M${x - r * 0.7} ${f1(y - r * 0.7)} L${x + r * 0.7} ${f1(y - r * 0.7)} M${x} ${y - r} L${x} ${y}`, C.grey, 0.8), rect(x - 3, y - 6, 6, 6, C.dark, 1, null));
 const boot = (x: number, y: number, s = 1) => at(x, y, s, path('M-8 -20 L6 -20 L6 -6 L14 -4 C17 -3 17 2 14 2 L-8 2 Z', WHITE, C.ink, 1.4), rect(-9, 0, 25, 4, C.grey, 1, C.ink, 1));
 
+/** The same small vehicle twice (obemannad/bemannad): crew in helmets on the left, empty seats and a control signal from a ground dish on the right. */
+const pod = (x: number, crew: boolean) => {
+  const y = 96;
+  return all(rect(x - 24, y - 38, 48, 36, '#e3e6ea', 8, C.ink, 1.6), line(`M${x + 14} ${y - 38} L${x + 14} ${y - 50}`, C.ink, 1.4), circle(x + 14, y - 51, 2.2, RED, C.ink, 1),
+    rect(x - 20, y - 33, 40, 18, '#bfe3f5', 3, C.ink, 1.3),
+    crew ? all(...[-12, 0, 12].map((dx) => all(path(`M${x + dx - 5} ${y - 15} C${x + dx - 5} ${y - 21} ${x + dx + 5} ${y - 21} ${x + dx + 5} ${y - 15} Z`, C.navy, C.ink, 0.8), circle(x + dx, y - 24, 3.6, C.skin, C.ink, 0.8), path(`M${x + dx - 4.4} ${y - 24} C${x + dx - 4.4} ${y - 30} ${x + dx + 4.4} ${y - 30} ${x + dx + 4.4} ${y - 24} Z`, WHITE, C.ink, 0.8))))
+      : all(...[-12, 0, 12].map((dx) => all(rect(x + dx - 3.5, y - 27, 7, 8, '#8a6a4a', 1.5, null), rect(x + dx - 4.5, y - 19, 9, 3, '#8a6a4a', 1, null)))),
+    line(`M${x - 24} ${y - 10} L${x + 24} ${y - 10}`, C.grey, 1), circle(x - 13, y, 6, C.dark, C.ink, 1.3), circle(x + 13, y, 6, C.dark, C.ink, 1.3), circle(x - 13, y, 2, C.grey, null), circle(x + 13, y, 2, C.grey, null));
+};
+const podScene = (mark: 'crew' | 'empty') => all(bg(PAPER), rect(4, 102, 112, 10, '#d9cdb8', 0, null),
+  mark === 'crew' ? pod(31, true) : greyed(pod(31, true)), mark === 'empty' ? pod(89, false) : greyed(pod(89, false)),
+  dishGround(60, 110, 0.7), line('M60 96 L60 40', '#e4572e', 1.4, '3 3'), waves(66, 42, 0, '#e4572e'), waves(88, 44, 0, '#e4572e'), mark === 'crew' ? ring(31, 74, 28, 30) : ring(89, 74, 28, 30));
+
 // ── Scenes ───────────────────────────────────────────────────────────
 export const SPACEFL_MOTIFS: Record<string, Svg> = {
   // ── Raketer och raketmotorer ───────────────────────────────────────
@@ -165,7 +179,7 @@ export const SPACEFL_MOTIFS: Record<string, Svg> = {
   'rymdf.landare': all(bg('#e9b48f'), marsGround(84), lander(60, 96, 1.6), ...[[20, 102, 4], [100, 98, 3], [86, 106, 2.4]].map(([x, y, r]) => ellipse(x!, y!, r!, r! * 0.6, MARS2, C.ink, 1)), ring(60, 70, 36, 32)),
   'rymdf.förbiflygning': all(space(), circle(54, 66, 22, MARS, C.ink, 1.4), ellipse(48, 60, 6, 3, MARS2, null), line('M10 16 C40 30 86 34 96 58 C104 78 92 98 110 104', '#f2c14e', 1.6, '4 3'), arrow(104, 96, 112, 106, '#f2c14e', 2),
     probe(88, 42, 0.8), ring(88, 40, 16)),
-  'rymdf.obemannad': all(space(), capsule(56, 92, 2.2, { window: 'empty' }), ring(56, 61, 18), greyed(capsule(100, 46, 0.7, { window: 'face' }))),
+  'rymdf.obemannad': podScene('empty'),
 
   // ── Månlandningar ──────────────────────────────────────────────────
   'rymdf.månlandning': all(space(), earth(96, 24, 10), moonGround(86), lander(48, 100, 1.4), astronaut(88, 84, 0.7), arrow(26, 20, 40, 52, HL, 3)),
@@ -181,7 +195,7 @@ export const SPACEFL_MOTIFS: Record<string, Svg> = {
     capsule(60, 92, 1), path('M38 92 C36 82 42 80 44 88 M82 92 C84 82 78 80 76 88 M46 90 C44 80 50 78 50 86', 'none', WHITE, 2.2), ring(60, 84, 30, 16)),
 
   // ── Framtida rymdmissioner ─────────────────────────────────────────
-  'rymdf.bemannad': all(space(), capsule(56, 92, 2.2, { window: 'face' }), ring(56, 61, 18), greyed(capsule(100, 46, 0.7, { window: 'empty' }))),
+  'rymdf.bemannad': podScene('crew'),
   'rymdf.rymdturist': all(bg('#e3e6ea'), rect(48, 14, 62, 62, SPACE, 30, C.ink, 2.2), stars([[60, 24], [96, 22], [102, 40]]), at(78, 58, 1, earth(0, 0, 14)),
     g('translate(26 4) rotate(-10)', figure({ x: 0, top: C.orange, bottom: C.denim, h: 0.8 })), rect(36, 46, 10, 7, C.dark, 1, C.ink, 1), circle(41, 49.5, 2, '#9fd2ee', null), ring(24, 64, 20, 42)),
   'rymdf.månbas': all(space(), earth(96, 22, 10), moonGround(80), dome(36, 92, 16), dome(66, 94, 12), rect(48, 88, 8, 6, '#e3e6ea', 1, C.ink, 1),
