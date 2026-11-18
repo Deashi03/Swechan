@@ -1,0 +1,174 @@
+{
+ "id": "m.cookies-och-cache",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Cookies och cache",
+ "titleJa": "クッキーとキャッシュ",
+ "descriptionSv": "Cookies och cache: cookie, godkänna, neka, samtycke, kryssa i, lagra, samla in, personuppgift, spåra, tredje part, personanpassad, statistik, anonym, cache, rensa och integritet.",
+ "descriptionJa": "クッキーとキャッシュ：クッキー、{承認|しょうにん}する、{拒否|きょひ}する、{同意|どうい}、チェックを{入|い}れる、{保存|ほぞん}する、{収集|しゅうしゅう}する、{個人情報|こじんじょうほう}、{追跡|ついせき}する、{第三者|だいさんしゃ}、パーソナライズされた、{統計|とうけい}、{匿名|とくめい}の、キャッシュ、{消去|しょうきょ}する、プライバシー。",
+ "categoryId": "R07-A01-T03",
+ "tags": [
+  "datorer",
+  "internet",
+  "integritet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.lankar-och-nedladdningar"
+ ],
+ "related": [],
+ "recommendedOrder": 3735,
+ "words": [
+  {
+   "senseId": "s.cookie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.neka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samtycke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryssa-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samla-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spåra.3",
+   "active": true
+  },
+  {
+   "senseId": "s.tredje-part.1",
+   "active": false
+  },
+  {
+   "senseId": "s.personanpassad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statistik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.anonym.1",
+   "active": false
+  },
+  {
+   "senseId": "s.cache.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rensa.4",
+   "active": true
+  },
+  {
+   "senseId": "s.integritet.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Kakor på varje sida",
+  "paragraphs": [
+   "Varje gång Lina öppnar en ny webbplats kommer samma ruta: Vi använder cookies. Hon brukar bara klicka på Godkänn alla. Men en dag läser hon vad det står.",
+   "Webbplatsen vill lagra cookies i hennes webbläsare. Vissa cookies behövs för att sidan ska fungera. Andra samlar in personuppgifter och spårar vad hon gör på nätet. En del delas med tredje part, till exempel företag som säljer annonser. Då kan hon få personanpassade annonser på andra webbplatser.",
+   "Lina vill inte ge sitt samtycke till allt. Hon klickar på Inställningar. Där kan hon kryssa i vilka cookies hon godkänner. Hon godkänner cookies för statistik, eftersom de är anonyma. Hon nekar cookies för annonser.",
+   "Samma vecka visar bankens webbplats gamla siffror. Linas bror förklarar att webbläsaren har sparat en gammal kopia av sidan i cachen. – Rensa cachen och ladda om sidan, säger han. Lina gör det, och nu ser hon rätt siffror.",
+   "Efteråt rensar hon också historiken och alla gamla cookies. Hon tänker att integritet på nätet är viktigt, men att det tar tid att läsa allt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad brukar Lina göra när rutan om cookies kommer?",
+    "options": [
+     "Hon klickar på Godkänn alla",
+     "Hon stänger datorn",
+     "Hon läser allt noga",
+     "Hon nekar alla cookies"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon brukar bara klicka på Godkänn alla.",
+    "explanationJa": "いつもは「すべて{許可|きょか}」をクリックしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför godkänner Lina cookies för statistik?",
+    "options": [
+     "De gör sidan snabbare",
+     "Hon vill ha annonser",
+     "De är anonyma",
+     "Banken säger att hon måste"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon godkänner cookies för statistik, eftersom de är anonyma.",
+    "explanationJa": "{統計|とうけい}のクッキーは{匿名|とくめい}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad hjälper när bankens sida visar gamla siffror?",
+    "options": [
+     "Att godkänna fler cookies",
+     "Att byta lösenord",
+     "Att rensa cachen och ladda om sidan",
+     "Att skriva ut sidan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Rensa cachen och ladda om sidan, säger han.",
+    "explanationJa": "キャッシュを{消去|しょうきょ}してページを{再読|さいよ}み{込|こ}みすると{直|なお}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lina nekar cookies för annonser.",
+    "correct": true,
+    "explanationSv": "Hon nekar cookies för annonser.",
+    "explanationJa": "{広告|こうこく}のクッキーは{拒否|きょひ}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Cookies från tredje part kan göra att Lina får annonser på andra webbplatser.",
+    "correct": true,
+    "explanationSv": "En del delas med tredje part … Då kan hon få personanpassade annonser på andra webbplatser.",
+    "explanationJa": "{第三者|だいさんしゃ}と{共有|きょうゆう}されると、ほかのサイトでも{個人|こじん}{向|む}けの{広告|こうこく}が{出|で}ます。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om cookies, annonser och integritet på nätet.",
+  "discussionPoints": [
+   "Brukar du godkänna alla cookies, eller väljer du?",
+   "Vad tycker du om personanpassade annonser?",
+   "Har du någon gång rensat cachen eller historiken? Varför?",
+   "Vilka personuppgifter vill du inte dela på nätet?"
+  ]
+ }
+}

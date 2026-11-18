@@ -1,0 +1,174 @@
+{
+ "id": "m.webbplatser-och-webbadresser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Webbplatser och webbadresser",
+ "titleJa": "ウェブサイトとウェブアドレス",
+ "descriptionSv": "Webbplatser och webbadresser: webbplats, webbadress, snedstreck, startsida, undersida, meny, rubrik, mobilanpassad, besökare, lägga ut, e-tjänst, lösenord, BankID, logga in, användarnamn och logga ut.",
+ "descriptionJa": "ウェブサイトとウェブアドレス：ウェブサイト、ウェブアドレス、スラッシュ、トップページ、{下層|かそう}ページ、メニュー、{見出|みだ}し、スマホ{対応|たいおう}の、{訪問者|ほうもんしゃ}、ネットに{載|の}せる、オンラインサービス、パスワード、BankID、ログインする、ユーザー{名|めい}、ログアウトする。",
+ "categoryId": "R07-A01-T03",
+ "tags": [
+  "datorer",
+  "internet",
+  "webbplatser"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.webblasare-och-flikar"
+ ],
+ "related": [],
+ "recommendedOrder": 3732,
+ "words": [
+  {
+   "senseId": "s.webbplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.webbadress.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snedstreck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.startsida.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undersida.2",
+   "active": false
+  },
+  {
+   "senseId": "s.meny.2",
+   "active": true
+  },
+  {
+   "senseId": "s.rubrik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mobilanpassad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.besökare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lägga-ut.2",
+   "active": true
+  },
+  {
+   "senseId": "s.e-tjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösenord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.BankID.1",
+   "active": true
+  },
+  {
+   "senseId": "s.logga-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.användarnamn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.logga-ut.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kommunens webbplats",
+  "paragraphs": [
+   "Kenji har bott i Sverige i två månader. Han vill börja läsa svenska och vill veta mer om kurserna. En kollega säger att allt finns på kommunens webbplats.",
+   "Kenji skriver webbadressen i adressfältet. Den har en punkt och två snedstreck. Han kommer till startsidan. Där finns en stor bild av stadshuset, en rubrik och en meny högst upp. I menyn klickar han på Utbildning och kommer till en undersida om kurser i svenska.",
+   "Webbplatsen är mobilanpassad, så Kenji kan läsa allt på mobilen på bussen. Kommunen lägger ut nyheter på webbplatsen varje vecka. Många besökare läser dem.",
+   "För att söka till kursen måste Kenji använda en e-tjänst. Han kan logga in med BankID eller med ett användarnamn och ett lösenord. Kenji har inte BankID än, så han skapar ett konto och väljer ett starkt lösenord.",
+   "En vecka senare kan han logga in igen. Han ser att han har fått en plats på kursen. Han blir glad. Kenji använder en dator på biblioteket, så han kommer ihåg att logga ut innan han går hem."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var hittar Kenji information om kurserna i svenska?",
+    "options": [
+     "I en tidning",
+     "På bussen",
+     "På en undersida på kommunens webbplats",
+     "I ett brev från kommunen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I menyn klickar han på Utbildning och kommer till en undersida om kurser i svenska.",
+    "explanationJa": "{市|し}のウェブサイトの{下層|かそう}ページで{見|み}つけました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför kan Kenji läsa webbplatsen på mobilen på bussen?",
+    "options": [
+     "Han har en stor mobil",
+     "Webbplatsen är mobilanpassad",
+     "Bussen har en dator",
+     "Han har skrivit ut sidan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Webbplatsen är mobilanpassad, så Kenji kan läsa allt på mobilen på bussen.",
+    "explanationJa": "ウェブサイトがスマホに{対応|たいおう}しているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur kommer Kenji in i e-tjänsten?",
+    "options": [
+     "Med BankID",
+     "Med sitt telefonnummer",
+     "Med användarnamn och lösenord",
+     "Han använder inte e-tjänsten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Kenji har inte BankID än, så han skapar ett konto och väljer ett starkt lösenord.",
+    "explanationJa": "BankIDをまだ{持|も}っていないので、ユーザー{名|めい}とパスワードを{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kommunen lägger ut nyheter på webbplatsen varje vecka.",
+    "correct": true,
+    "explanationSv": "Kommunen lägger ut nyheter på webbplatsen varje vecka.",
+    "explanationJa": "{市|し}は{毎週|まいしゅう}ウェブサイトにニュースを{載|の}せています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji loggar ut för att andra inte ska komma in på hans konto.",
+    "correct": true,
+    "explanationSv": "Kenji använder en dator på biblioteket, så han kommer ihåg att logga ut innan han går hem.",
+    "explanationJa": "{図書館|としょかん}のパソコンはほかの{人|ひと}も{使|つか}うので、ログアウトしました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om webbplatser som ni använder i vardagen i Sverige.",
+  "discussionPoints": [
+   "Vilka webbplatser besöker du varje vecka?",
+   "Hur många användarnamn och lösenord har du?",
+   "Vad gör en webbplats lätt eller svår att använda?",
+   "Brukar du logga ut när du har använt en webbplats?"
+  ]
+ }
+}

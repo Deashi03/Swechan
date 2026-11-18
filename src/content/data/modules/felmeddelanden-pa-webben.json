@@ -1,0 +1,182 @@
+{
+ "id": "m.felmeddelanden-pa-webben",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Felmeddelanden på webben",
+ "titleJa": "ウェブのエラーメッセージ",
+ "descriptionSv": "Felmeddelanden på webben: felmeddelande, felkod, krångla, uppkoppling, ligga nere, driftstörning, underhåll, tillfällig, kontrollera, formulär, fält, fylla i, obligatorisk, ogiltig, gå ut, åtkomst, skärmdump och support.",
+ "descriptionJa": "ウェブのエラーメッセージ：エラーメッセージ、エラーコード、うまく{動|うご}かない、{接続|せつぞく}、ダウンしている、{障害|しょうがい}、メンテナンス、{一時的|いちじてき}な、{確認|かくにん}する、フォーム、{入力欄|にゅうりょくらん}、{記入|きにゅう}する、{必須|ひっす}の、{無効|むこう}の、（{期限|きげん}が）{切|き}れる、アクセス、スクリーンショット、サポート。",
+ "categoryId": "R07-A01-T03",
+ "tags": [
+  "datorer",
+  "internet",
+  "felmeddelanden"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.domaner-och-servrar"
+ ],
+ "related": [],
+ "recommendedOrder": 3737,
+ "words": [
+  {
+   "senseId": "s.felmeddelande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krångla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppkoppling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ligga-nere.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driftstörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underhåll.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tillfällig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.formulär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fält.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fylla-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obligatorisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ogiltig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åtkomst.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skärmdump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.support.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Felkod 404",
+  "paragraphs": [
+   "Sara vill söka en ny lägenhet. Hon klickar på en länk i ett mejl, men får ett felmeddelande: Sidan kunde inte hittas. Felkod 404. Hon kontrollerar adressen och ser att länken är gammal.",
+   "Hon går till webbplatsens startsida i stället, men nu krånglar allt. Först tror hon att det är fel på hennes uppkoppling. Men grannen kan inte heller komma in. Webbplatsen ligger nere. På en annan sida står det att det är en driftstörning. I går var sidan stängd för planerat underhåll. Det står att felet är tillfälligt.",
+   "På kvällen fungerar webbplatsen igen. Sara öppnar formuläret för att söka lägenhet och fyller i alla fält. Hon klickar på Skicka. Ett rött felmeddelande kommer: Fältet telefonnummer är obligatoriskt. Hon har glömt det. Sedan står det att hennes mejladress är ogiltig. Hon har skrivit en punkt på fel ställe.",
+   "Sara hämtar kaffe. När hon kommer tillbaka har tiden gått ut, och hon måste logga in igen. Sedan står det: Du har inte åtkomst till sidan.",
+   "Nu tar Sara en skärmdump av felmeddelandet och skickar den till webbplatsens support. Nästa dag får hon svar. Felet är löst, och hon kan skicka formuläret."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför får Sara felkod 404 när hon klickar på länken?",
+    "options": [
+     "Länken är gammal",
+     "Hennes uppkoppling är dålig",
+     "Hon har inte loggat in",
+     "Formuläret är fel"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon kontrollerar adressen och ser att länken är gammal.",
+    "explanationJa": "リンクが{古|ふる}かったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur förstår Sara att det inte är fel på hennes uppkoppling?",
+    "options": [
+     "Hon ringer till supporten",
+     "Grannen kan inte heller komma in",
+     "Hon får ett mejl",
+     "Hon laddar om sidan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Men grannen kan inte heller komma in. Webbplatsen ligger nere.",
+    "explanationJa": "{隣|となり}の{人|ひと}も{入|はい}れなかったので、サイトがダウンしているとわかりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att fältet telefonnummer är obligatoriskt?",
+    "options": [
+     "Man får inte fylla i det",
+     "Det är fel nummer",
+     "Numret är för långt",
+     "Man måste fylla i det"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Fältet telefonnummer är obligatoriskt. Hon har glömt det.",
+    "explanationJa": "{必|かなら}ず{入力|にゅうりょく}しなければならない、という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mejladressen var ogiltig eftersom Sara hade skrivit en punkt på fel ställe.",
+    "correct": true,
+    "explanationSv": "Hon har skrivit en punkt på fel ställe.",
+    "explanationJa": "ピリオドの{位置|いち}を{間違|まちが}えたので、メールアドレスが{無効|むこう}になりました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Skärmdumpen hjälper supporten att förstå felet.",
+    "correct": true,
+    "explanationSv": "Nu tar Sara en skärmdump av felmeddelandet och skickar den till webbplatsens support.",
+    "explanationJa": "エラーメッセージのスクリーンショットを{送|おく}ったので、サポートは{問題|もんだい}を{理解|りかい}しやすくなりました。"
+   }
+  ],
+  "factSources": [
+   "Felkod 404 (Not Found) är en standardkod i HTTP för en sida som inte finns."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om felmeddelanden och problem på nätet.",
+  "discussionPoints": [
+   "Vilket felmeddelande har du sett många gånger?",
+   "Vad gör du först när en webbplats inte fungerar?",
+   "Har du någon gång kontaktat support? Hur gick det?",
+   "Vilka fält i ett formulär tycker du är jobbiga att fylla i?"
+  ]
+ }
+}

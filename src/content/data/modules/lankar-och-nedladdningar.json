@@ -1,0 +1,174 @@
+{
+ "id": "m.lankar-och-nedladdningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Länkar och nedladdningar",
+ "titleJa": "リンクとダウンロード",
+ "descriptionSv": "Länkar och nedladdningar: länk, klicka, ladda ner, nedladdning, streama, ladda upp, bifoga, bilaga, markera, kopiera, klistra in, dela, skicka vidare, QR-kod, skanna och radera.",
+ "descriptionJa": "リンクとダウンロード：リンク、クリックする、ダウンロードする、ダウンロード、ストリーミングする、アップロードする、{添付|てんぷ}する、{添付書類|てんぷしょるい}、{選択|せんたく}する、コピーする、{貼|は}り{付|つ}ける、シェアする、{転送|てんそう}する、QRコード、スキャンする、{削除|さくじょ}する。",
+ "categoryId": "R07-A01-T03",
+ "tags": [
+  "datorer",
+  "internet",
+  "länkar"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sokmotorer"
+ ],
+ "related": [],
+ "recommendedOrder": 3734,
+ "words": [
+  {
+   "senseId": "s.länk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klicka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nedladdning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.streama.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bifoga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bilaga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.markera.3",
+   "active": true
+  },
+  {
+   "senseId": "s.kopiera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klistra-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-vidare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.QR-kod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skanna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En länk från skolan",
+  "paragraphs": [
+   "Haruto får ett mejl från sin dotters skola. I mejlet finns en länk. Han klickar på länken och kommer till en sida där han kan ladda ner ett dokument om skolresan. Nedladdningen går snabbt.",
+   "Han skriver ut dokumentet, fyller i det och skriver under. Sedan tar han en bild av det med mobilen. Skolan vill att föräldrarna laddar upp dokumentet på skolans webbplats. Haruto kan också bifoga det i ett mejl, som en bilaga. Han väljer att ladda upp det.",
+   "I dokumentet står en adress till en sida med mer information. Haruto markerar adressen, kopierar den och klistrar in den i ett meddelande till sin fru. Hon delar sedan länken med en annan familj, och den familjen skickar vidare länken till fler föräldrar.",
+   "På vägen hem ser Haruto en affisch om en konsert. På affischen finns en QR-kod. Han skannar koden med mobilen och kommer direkt till konsertens webbplats.",
+   "På kvällen streamar familjen en film. Haruto vill inte ha för mycket i mobilen, så han raderar de bilder och dokument som han inte behöver längre."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer när Haruto klickar på länken?",
+    "options": [
+     "Han får ett sms",
+     "Mobilen stängs av",
+     "Han kommer till konsertens webbplats",
+     "Han kommer till en sida där han kan ladda ner ett dokument"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han klickar på länken och kommer till en sida där han kan ladda ner ett dokument om skolresan.",
+    "explanationJa": "ダウンロードできるページに{移|うつ}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur skickar Haruto dokumentet till skolan?",
+    "options": [
+     "Han laddar upp det på skolans webbplats",
+     "Han bifogar det i ett mejl",
+     "Han ger det till sin dotter",
+     "Han skickar det med posten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han väljer att ladda upp det.",
+    "explanationJa": "{学校|がっこう}のウェブサイトにアップロードしました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör Haruto innan han kopierar adressen?",
+    "options": [
+     "Han markerar den",
+     "Han raderar den",
+     "Han skannar den",
+     "Han skriver ut den"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Haruto markerar adressen, kopierar den och klistrar in den …",
+    "explanationJa": "まずアドレスを{選択|せんたく}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Haruto skannar QR-koden med mobilen.",
+    "correct": true,
+    "explanationSv": "Han skannar koden med mobilen och kommer direkt till konsertens webbplats.",
+    "explanationJa": "スマホでQRコードを{読|よ}み{取|と}りました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Familjen laddar ner filmen innan de tittar på den.",
+    "correct": false,
+    "explanationSv": "På kvällen streamar familjen en film.",
+    "explanationJa": "ストリーミングなので、ダウンロードはしていません。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om länkar, nedladdningar och att dela saker på nätet.",
+  "discussionPoints": [
+   "Vad laddar du oftast ner från nätet?",
+   "Klickar du alltid på länkar som du får i mejl eller sms?",
+   "Streamar du filmer och musik, eller laddar du ner dem?",
+   "Hur brukar du skicka dokument till jobbet eller skolan?"
+  ]
+ }
+}
