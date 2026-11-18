@@ -281,6 +281,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.nukleon.1', 's.reaktiv.1', 's.deuterium.1', 's.instabil.2', 's.fullt-skal.1',
   // 0.51 Atomer & periodiska systemet: förväxlas med grupp efter två blindomgångar
   's.halogen.1',
+  // 0.51 Syror, baser & lösningar: förväxlas med närliggande ord eller samma ordfamilj
+  's.pH-värde.1', 's.försurning.1', 's.ta-ut-varandra.2', 's.lösning.3', 's.koncentration.2',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
