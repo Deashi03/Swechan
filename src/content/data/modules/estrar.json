@@ -1,0 +1,180 @@
+{
+ "id": "m.estrar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Estrar",
+ "titleJa": "エステル",
+ "descriptionSv": "Estrar: doft, dofta, arom, flyktig, päron, banan, godis, katalysator, ester, förestring, syntetisk, smakämne, luftfräschare, doftljus, vax, nagellack och lösningsmedel.",
+ "descriptionJa": "エステル：{香|かお}り、{香|かお}りがする、アロマ、{揮発性|きはつせい}の、{洋梨|ようなし}、バナナ、お{菓子|かし}、{触媒|しょくばい}、エステル、エステル{化|か}、{合成|ごうせい}の、{香料|こうりょう}、{芳香剤|ほうこうざい}、アロマキャンドル、ろう、マニキュア、{溶剤|ようざい}。",
+ "categoryId": "R06-A04-T05",
+ "tags": [
+  "kemi",
+  "organisk kemi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.karboxylsyror"
+ ],
+ "related": [],
+ "recommendedOrder": 3454,
+ "words": [
+  {
+   "senseId": "s.doft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dofta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flyktig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.päron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.banan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.katalysator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ester.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förestring.1",
+   "active": false
+  },
+  {
+   "senseId": "s.syntetisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smakämne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftfräschare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.doftljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vax.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nagellack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösningsmedel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Doften av päron",
+  "paragraphs": [
+   "Oskar jobbar på en fabrik som gör godis. – Vet du varför det här godiset doftar päron? frågar han. Det finns inget päron i det. Doften kommer från en ester.",
+   "Estrar är ämnen som bildas av en karboxylsyra och en alkohol. Många små estrar är flyktiga, så de blir lätt till gas och når vår näsa. Det är därför de doftar så tydligt. I naturen ger estrar arom åt till exempel bananer, päron och jordgubbar.",
+   "På fabriken gör man förestring i stora tankar. Man blandar syran och alkoholen, värmer och tillsätter en katalysator. Då bildas estern och vatten. Den syntetiska estern är samma ämne som det i frukten.",
+   "Smakämnen av estrar finns inte bara i godis. De finns i läsk, i doftljus och i luftfräschare. Vax från bin är också en ester, men en mycket stor, och därför doftar det inte lika mycket.",
+   "Vissa estrar är bra lösningsmedel. Oskars dotter tar bort nagellack med ett medel som innehåller en ester. – Det luktar lite som godis, säger hon. – Ja, det är kemi, svarar Oskar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varifrån kommer doften av päron i godiset?",
+    "options": [
+     "Från riktiga päron",
+     "Från en ester",
+     "Från socker",
+     "Från vax"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det finns inget päron i det. Doften kommer från en ester.",
+    "explanationJa": "エステルから{来|き}ています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför doftar små estrar så tydligt?",
+    "options": [
+     "De är tunga",
+     "De är röda",
+     "De är flyktiga och når näsan",
+     "De innehåller salt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Många små estrar är flyktiga, så de blir lätt till gas och når vår näsa.",
+    "explanationJa": "{揮発|きはつ}しやすく、{鼻|はな}に{届|とど}くからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad bildas vid förestringen?",
+    "options": [
+     "En alkohol och socker",
+     "En ester och vatten",
+     "Koldioxid och vatten",
+     "Vax och salt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Då bildas estern och vatten.",
+    "explanationJa": "エステルと{水|みず}ができます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Den syntetiska estern är ett annat ämne än estern i frukten.",
+    "correct": false,
+    "explanationSv": "Den syntetiska estern är samma ämne som det i frukten.",
+    "explanationJa": "{合成|ごうせい}したエステルは{果物|くだもの}のものと{同|おな}じ{物質|ぶっしつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Vax från bin är en ester.",
+    "correct": true,
+    "explanationSv": "Vax från bin är också en ester, men en mycket stor.",
+    "explanationJa": "ミツバチのろうもエステルです。"
+   }
+  ],
+  "factSources": [
+   "En ester bildas av en karboxylsyra och en alkohol under avspjälkning av vatten (förestring, kondensationsreaktion), ofta med svavelsyra som katalysator.",
+   "Många fruktdofter beror på estrar (t.ex. isoamylacetat i banan, propylacetat/hexylacetat i päron); syntetiskt framställda estrar är kemiskt identiska med de naturliga.",
+   "Bivax består till stor del av estrar av långa fettsyror och långa alkoholer. Etylacetat är en ester som används som lösningsmedel, bland annat i vissa nagellacksborttagningsmedel.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om dofter och smaker i vardagen.",
+  "discussionPoints": [
+   "Vilken doft tycker du bäst om?",
+   "Spelar det någon roll för dig om ett smakämne är naturligt eller syntetiskt?",
+   "Har du luftfräschare eller doftljus hemma?",
+   "Vilken frukt doftar mest, tycker du?"
+  ]
+ }
+}
