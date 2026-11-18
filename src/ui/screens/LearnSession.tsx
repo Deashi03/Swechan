@@ -3,7 +3,7 @@
  * Progress is persisted after every item (pause/resume safe).
  */
 import { useLiveQuery } from 'dexie-react-hooks';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { getContent } from '../../content/repository';
 import { generateExercise } from '../../learning/exercises/generate';
 import type { ExerciseResult } from '../../learning/exercises/types';
@@ -27,6 +27,8 @@ import { ProgressBar } from '../components/Progress';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
 import { ExerciseView } from '../exercises/ExerciseView';
 import { WordIntro } from '../exercises/WordIntro';
+import { exerciseSenseIds, preloadVisuals } from '../components/preloadVisual';
+import { createSaveQueue } from '../../lib/saveQueue';
 
 type Props = {
   state: LearnSessionState;
@@ -37,9 +39,13 @@ type Props = {
   finishedLabel: string;
 };
 
-export function LearnSession({ state: initial, poolSenseIds, onSave, onExit, onFinished, finishedLabel }: Props) {
+export function LearnSession({ state: initial, poolSenseIds, onSave, onExit: exitNow, onFinished: finishNow, finishedLabel }: Props) {
   const [state, setState] = useState(initial);
-  const [busy, setBusy] = useState(false);
+  // Kvalitetsplanen A3: the next card is shown at once; answers are saved in the background, in order.
+  const saves = useMemo(() => createSaveQueue(), []);
+  const handled = useRef<LearnSessionState | null>(null);
+  const onExit = () => { void saves.flush().then(exitNow); };
+  const onFinished = () => { void saves.flush().then(finishNow); };
   const dict = useDictionarySheet();
   const placement = useLiveQuery(() => getMeta<PlacementResult>('placement'), []);
   const repo = getContent();
@@ -51,18 +57,30 @@ export function LearnSession({ state: initial, poolSenseIds, onSave, onExit, onF
     return generateExercise(item.exerciseType as never, item.senseId, { repo, poolSenseIds, seed: state.seed + state.index * 7919 });
   }, [item, repo, poolSenseIds, state.seed, state.index]);
 
-  const advance = async (outcome: Parameters<typeof advanceLearnSession>[1], result?: ExerciseResult) => {
-    if (busy) return;
-    setBusy(true);
+  // Preload every word's visual when the session starts, and the next card's (with its picture options).
+  useEffect(() => { preloadVisuals(initial.plan.map((it) => it.senseId)); }, [initial]);
+  useEffect(() => { preloadVisuals(exerciseSenseIds(exercise)); }, [exercise]);
+  useEffect(() => {
+    const nx = state.plan[state.index + 1];
+    if (!nx) return;
+    if (nx.kind !== 'exercise') { preloadVisuals([nx.senseId]); return; }
     try {
-      const next = advanceLearnSession(state, outcome);
-      if (result) await logLearnEvent(result, now(), await todayStudyDate());
+      const ex = generateExercise(nx.exerciseType as never, nx.senseId, { repo, poolSenseIds, seed: state.seed + (state.index + 1) * 7919 });
+      preloadVisuals(exerciseSenseIds(ex));
+    } catch { preloadVisuals([nx.senseId]); }
+  }, [state.plan, state.index, state.seed, repo, poolSenseIds]);
+
+  const advance = (outcome: Parameters<typeof advanceLearnSession>[1], result?: ExerciseResult) => {
+    if (handled.current === state) return; // a second tap on the same card
+    handled.current = state;
+    const next = advanceLearnSession(state, outcome);
+    const at = now();
+    setState(next);
+    window.scrollTo(0, 0);
+    void saves.push(async () => {
+      if (result) await logLearnEvent(result, at, await todayStudyDate());
       await onSave(next);
-      setState(next);
-      window.scrollTo(0, 0);
-    } finally {
-      setBusy(false);
-    }
+    });
   };
 
   if (isLearnSessionDone(state)) {
@@ -98,7 +116,7 @@ export function LearnSession({ state: initial, poolSenseIds, onSave, onExit, onF
         <span className="xsmall muted" style={{ fontWeight: 800 }}>Del {bp.part} av {bp.parts}</span>
         {devConfig.toolsEnabled && (
           <button className="icon-btn" title="Hoppa över steget (utvecklare)" aria-label="Hoppa över steget (utvecklare)"
-            onClick={async () => { const fin = finishAllForDev(state); await onSave(fin); setState(fin); }}>⏭</button>
+            onClick={() => { const fin = finishAllForDev(state); setState(fin); void saves.push(() => onSave(fin)); }}>⏭</button>
         )}
         <button className="icon-btn" onClick={() => dict.open()} aria-label="Öppna ordboken"><Icon name="book" /></button>
       </div>

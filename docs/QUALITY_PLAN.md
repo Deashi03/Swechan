@@ -50,12 +50,14 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 **Klart när:** måtten stämmer med tabellerna i revisionen (± ändringarna från A1), och ett testfall visar att CI fallerar när ett mått försämras.
 
 ### A3. Laddtid, del 1 (det eleven märker)
-- [ ] `prefetchModuleVisuals()` anropar `loadMotif()` för alla ord i modulen eller passet när det öppnas, inte bara animationer.
-- [ ] Förladda alltid nästa korts bild (och bildalternativen i nästa bildövning) medan det nuvarande kortet visas.
-- [ ] `public/sw.js`: sluta byta cachenamn per release. Radera bara filer som inte finns i den nya versionens fillista. Filer med hash i namnet behålls.
-- [ ] Behåll föregående bild tills nästa är klar. Visa pulsen först efter cirka 300 ms.
-- [ ] Rita nästa kort utan att vänta på `logLearnEvent` och `onSave` (skriv i bakgrunden, men behåll ordningen och felhanteringen; tester krävs eftersom det rör daglig session).
-- [ ] e2e-mätning: tid från "Nästa" till synlig bild. Budget: under 150 ms med varm cache, under 400 ms med kall cache på strypt nät. Skriv värdet till `metrics.json`.
+- [x] `prefetchModuleVisuals()` anropar `loadMotif()` för alla ord i modulen eller passet när det öppnas, inte bara animationer.
+- [x] Förladda alltid nästa korts bild (och bildalternativen i nästa bildövning) medan det nuvarande kortet visas.
+- [x] `public/sw.js`: sluta byta cachenamn per release. Radera bara filer som inte finns i den nya versionens fillista. Filer med hash i namnet behålls.
+- [x] Behåll föregående bild tills nästa är klar. Visa pulsen först efter cirka 300 ms.
+- [x] Rita nästa kort utan att vänta på `logLearnEvent` och `onSave` (skriv i bakgrunden, men behåll ordningen och felhanteringen; tester krävs eftersom det rör daglig session).
+- [x] e2e-mätning: tid från "Nästa" till synlig bild. Budget: under 150 ms med varm cache, under 400 ms med kall cache på strypt nät. Skriv värdet till `metrics.json`.
+
+**Genomfört 2026-11-19.** "Behåll föregående bild" löstes med förladdning plus fördröjd puls: en förladdad bild ritas i samma bildruta som kortet. Kall cache på strypt nät mäts inte i e2e (CI har inget strypt nät); varm cache har budgeten 150 ms.
 
 **Klart när:** budgeten hålls i e2e i en modul ur R06, och `npm run build && npm run e2e` är grönt.
 

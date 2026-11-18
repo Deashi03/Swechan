@@ -1,5 +1,13 @@
 # Changelog
 
+## Osläppt – 2026-11-19: etapp A3, laddtid del 1
+
+- **Förladdning:** ett pass (inlärning, repetition, egna ord) förladdar bilden till varje ord när det startar, och nästa korts bild och bildalternativ medan det nuvarande kortet visas. Modulsidan förladdar alla modulens bilder, inte bara animationer (`src/ui/components/preloadVisual.ts`).
+- **Cachen töms inte längre vid release:** service workern byter inte namn per version. Filer med hash i namnet ligger kvar mellan releaser; bara filer som varken finns i den nya eller förra versionens `asset-list.json` (skrivs av bygget) tas bort. Animationer, foton och ikoner serveras direkt ur cachen och uppdateras i bakgrunden.
+- **Nästa kort väntar inte på sparningen:** svaret sparas i bakgrunden i en ordnad kö (`src/lib/saveQueue.ts`, med tester); passet väntar in kön innan det lämnas.
+- Väntebildens puls syns först efter 300 ms.
+- e2e mäter tiden från "nästa" till synlig bild i *Arbete och energi* (budget: median under 150 ms).
+
 ## Osläppt – 2026-11-19: etapp A2, mätning och kvalitetsspärr
 
 - `npm run audit:content` (`scripts/audit-content.mjs`) mäter 22 kvalitetsmått för de befintliga modulerna (bildlösa ord, animationer, betydelser, förklaringar, läsningar, typografi, namn, sv/ja) och kontrollerar kvalitetskontraktet (`quality/contract.json`) för nya moduler och moduler med `standard: 2`. `--report` ger en tabell per ämnesgrupp, `--backlog` arbetsköer i `quality/backlog/`.
