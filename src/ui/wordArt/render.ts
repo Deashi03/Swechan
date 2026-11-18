@@ -205,6 +205,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'bind.': () => import('./bonds').then((m) => m.BONDS_MOTIFS),
   'atom.': () => import('./atomsPeriodic').then((m) => m.ATOMS_MOTIFS),
   'reak.': () => import('./reactions').then((m) => m.REACTIONS_MOTIFS),
+  'org.': () => import('./organicChem').then((m) => m.ORGANIC_MOTIFS),
   'syra.': () => import('./acidsBases').then((m) => m.ACIDS_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
