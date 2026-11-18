@@ -224,6 +224,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'osfil.': () => import('./osFiles').then((m) => m.OSFILES_MOTIFS),
   'webb.': () => import('./web').then((m) => m.WEB_MOTIFS),
   'natv.': () => import('./networking').then((m) => m.NETWORK_MOTIFS),
+  'digsak.': () => import('./digitalSecurity').then((m) => m.DIGSEC_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
