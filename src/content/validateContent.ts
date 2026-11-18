@@ -309,6 +309,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.prestanda.1', 's.lagringsutrymme.1',
   // 0.54 Operativsystem & filer: förväxlas med licens respektive drivrutin efter två blindomgångar
   's.testversion.1', 's.operativsystem.1',
+  // 0.54 Internet & webben: förväxlas med lagra respektive med varandra/krångla efter två blindomgångar
+  's.cache.1', 's.ligga-nere.1', 's.driftstörning.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
