@@ -305,6 +305,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.mörk-energi.1', 's.blåförskjutning.1',
   // 0.53 Astronomins metoder: förväxlas med spektrum/fingeravtryck/analysera efter två blindomgångar
   's.spektroskopi.1',
+  // 0.54 Datorns delar: förväxlas med uppgradera respektive rymma/lagra efter två blindomgångar
+  's.prestanda.1', 's.lagringsutrymme.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
