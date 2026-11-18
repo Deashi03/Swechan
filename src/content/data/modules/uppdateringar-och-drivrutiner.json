@@ -1,0 +1,173 @@
+{
+ "id": "m.uppdateringar-och-drivrutiner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Uppdateringar och drivrutiner",
+ "titleJa": "アップデートとドライバー",
+ "descriptionSv": "Uppdateringar och drivrutiner: uppdatera, uppdatering, operativsystem, version, föråldrad, bugg, hänga sig, omstart, mikrofon, kamera, högtalare, skrivare, ansluta, tillverkare, drivrutin och felsöka.",
+ "descriptionJa": "アップデートとドライバー：アップデートする、アップデート、OS、バージョン、{時代遅|じだいおく}れの、バグ、フリーズする、{再起動|さいきどう}、マイク、カメラ、スピーカー、プリンター、{接続|せつぞく}する、メーカー、ドライバー、{原因|げんいん}を{調|しら}べる。",
+ "categoryId": "R07-A01-T02",
+ "tags": [
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.komprimerade-filer"
+ ],
+ "related": [],
+ "recommendedOrder": 3727,
+ "words": [
+  {
+   "senseId": "s.uppdatera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdatering.2",
+   "active": true
+  },
+  {
+   "senseId": "s.version.1",
+   "active": true
+  },
+  {
+   "senseId": "s.operativsystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föråldrad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bugg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänga-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omstart.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mikrofon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högtalare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansluta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillverkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drivrutin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Skrivaren som inte ville skriva ut",
+  "paragraphs": [
+   "Yusuf jobbar hemma två dagar i veckan. En morgon kommer ett meddelande på skärmen: det finns en ny uppdatering till operativsystemet. Yusuf klickar på ”Senare”, eftersom han har ett möte om fem minuter.",
+   "Under mötet hänger sig datorn flera gånger, och kollegorna hör honom inte, eftersom mikrofonen slutar fungera. Efter mötet gör han en omstart och låter datorn uppdatera sig. Det tar en halvtimme.",
+   "Efter uppdateringen vill skrivaren inte skriva ut. Yusuf ansluter den med en sladd, men ingenting händer. Han ringer till kundtjänsten hos tillverkaren för att felsöka. – Skrivaren behöver en ny drivrutin, säger de. Den gamla är föråldrad och fungerar inte med den nya versionen av operativsystemet.",
+   "Yusuf laddar ner drivrutinen från tillverkarens sida på nätet, och sedan fungerar skrivaren igen. Men nu har kameran och högtalarna problem.",
+   "Han läser på nätet att det finns en bugg i den nya versionen. Tillverkaren lovar att den ska försvinna med nästa uppdatering. – Det är alltid något, säger Yusuf och skrattar. Men han vet att det är viktigt att uppdatera datorn, eftersom uppdateringar också gör den mer säker."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför väntar Yusuf med uppdateringen?",
+    "options": [
+     "Datorn är för gammal",
+     "Han har ett möte om fem minuter",
+     "Han har inte behörighet",
+     "Skrivaren är trasig"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Yusuf klickar på ”Senare”, eftersom han har ett möte om fem minuter.",
+    "explanationJa": "{五分後|ごふんご}に{会議|かいぎ}があるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer under mötet?",
+    "options": [
+     "Skrivaren skriver ut för mycket",
+     "Datorn hänger sig flera gånger",
+     "Kameran får en ny drivrutin",
+     "Kollegorna loggar ut"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Under mötet hänger sig datorn flera gånger …",
+    "explanationJa": "{会議中|かいぎちゅう}にパソコンが{何度|なんど}もフリーズします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför fungerar skrivaren inte efter uppdateringen?",
+    "options": [
+     "Den gamla drivrutinen är föråldrad",
+     "Sladden är trasig",
+     "Skrivaren har inget papper",
+     "Yusuf har glömt sitt lösenord"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den gamla är föråldrad och fungerar inte med den nya versionen av operativsystemet.",
+    "explanationJa": "{古|ふる}いドライバーが{新|あたら}しいOSに{対応|たいおう}していないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Yusuf hittar den nya drivrutinen på tillverkarens sida.",
+    "correct": true,
+    "explanationSv": "Yusuf laddar ner drivrutinen från tillverkarens sida på nätet.",
+    "explanationJa": "メーカーのサイトからドライバーをダウンロードします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yusuf tycker att man ska sluta uppdatera datorn.",
+    "correct": false,
+    "explanationSv": "Men han vet att det är viktigt att uppdatera datorn, eftersom uppdateringar också gör den mer säker.",
+    "explanationJa": "ユスフは、アップデートは{安全|あんぜん}のために{大切|たいせつ}だと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om uppdateringar och problem med datorer och mobiler.",
+  "discussionPoints": [
+   "Uppdaterar du mobilen direkt, eller väntar du?",
+   "Har din dator hängt sig någon gång i ett viktigt läge?",
+   "Vad gör du först när en skrivare eller en kamera inte fungerar?",
+   "Har du en gammal dator eller mobil som är föråldrad? Vad gör du med den?"
+  ]
+ }
+}

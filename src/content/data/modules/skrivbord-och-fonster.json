@@ -1,0 +1,173 @@
+{
+ "id": "m.skrivbord-och-fonster",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Skrivbord och fönster",
+ "titleJa": "デスクトップとウィンドウ",
+ "descriptionSv": "Skrivbord och fönster: skärm, ikon, skrivbord, fönster, muspekare, klicka, dubbelklicka, högerklicka, meny, startmeny, aktivitetsfält, markera, scrolla, minimera, maximera och skärmdump.",
+ "descriptionJa": "デスクトップとウィンドウ：{画面|がめん}、アイコン、デスクトップ、ウィンドウ、マウスポインター、クリックする、ダブルクリックする、{右|みぎ}クリックする、メニュー、スタートメニュー、タスクバー、{選択|せんたく}する、スクロールする、{最小化|さいしょうか}する、{最大化|さいだいか}する、スクリーンショット。",
+ "categoryId": "R07-A01-T02",
+ "tags": [
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.felsoka-hardvara"
+ ],
+ "related": [],
+ "recommendedOrder": 3721,
+ "words": [
+  {
+   "senseId": "s.skärm.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ikon.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skrivbord.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fönster.2",
+   "active": true
+  },
+  {
+   "senseId": "s.muspekare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klicka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbelklicka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högerklicka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.meny.2",
+   "active": true
+  },
+  {
+   "senseId": "s.startmeny.1",
+   "active": true
+  },
+  {
+   "senseId": "s.aktivitetsfält.1",
+   "active": false
+  },
+  {
+   "senseId": "s.markera.3",
+   "active": true
+  },
+  {
+   "senseId": "s.scrolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minimera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.maximera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skärmdump.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En ny dator på jobbet",
+  "paragraphs": [
+   "Kenta har börjat på ett nytt jobb på ett kontor i Malmö. Den första dagen får han en dator. När han startar den ser han skrivbordet på skärmen. Där finns många små ikoner.",
+   "Hans kollega Elin visar hur allt fungerar. – Flytta muspekaren till en ikon och klicka en gång, så markerar du den. Om du dubbelklickar öppnas programmet i ett nytt fönster. Och om du högerklickar kommer en meny upp med fler val.",
+   "Längst ner på skärmen finns aktivitetsfältet. Där ser Kenta klockan och en knapp till startmenyn. I startmenyn hittar han alla program som finns på datorn.",
+   "Snart har Kenta många fönster öppna. Elin visar att han kan minimera ett fönster, så att det blir en liten ikon längst ner. Han kan också maximera ett fönster, så att det fyller hela skärmen. I ett långt dokument kan han scrolla med musen.",
+   "På eftermiddagen kommer ett felmeddelande upp som Kenta inte förstår. – Ta en skärmdump och skicka den till mig, säger Elin. Kenta tar en skärmdump och skickar bilden. Efter en dag känner han sig hemma vid den nya datorn."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ser Kenta när han startar datorn?",
+    "options": [
+     "Skrivbordet med många små ikoner",
+     "En meny med fler val",
+     "Ett felmeddelande",
+     "Ett långt dokument"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När han startar den ser han skrivbordet på skärmen. Där finns många små ikoner.",
+    "explanationJa": "デスクトップとたくさんの{小|ちい}さなアイコンが{見|み}えます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad händer när man dubbelklickar på en ikon?",
+    "options": [
+     "En meny kommer upp med fler val",
+     "Fönstret blir en liten ikon",
+     "Programmet öppnas i ett nytt fönster",
+     "Datorn stängs av"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Om du dubbelklickar öppnas programmet i ett nytt fönster.",
+    "explanationJa": "ダブルクリックすると、プログラムが{新|あたら}しいウィンドウで{開|ひら}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var finns aktivitetsfältet?",
+    "options": [
+     "Längst ner på skärmen",
+     "Uppe i hörnet av ett fönster",
+     "Inne i startmenyn",
+     "I en skärmdump"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Längst ner på skärmen finns aktivitetsfältet.",
+    "explanationJa": "タスクバーは{画面|がめん}のいちばん{下|した}にあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Om man maximerar ett fönster fyller det hela skärmen.",
+    "correct": true,
+    "explanationSv": "Han kan också maximera ett fönster, så att det fyller hela skärmen.",
+    "explanationJa": "{最大化|さいだいか}すると、ウィンドウが{画面|がめん}いっぱいになります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenta förstod felmeddelandet direkt.",
+    "correct": false,
+    "explanationSv": "På eftermiddagen kommer ett felmeddelande upp som Kenta inte förstår.",
+    "explanationJa": "ケンタはエラーメッセージがわからなかったので、エリンに{画面|がめん}の{写真|しゃしん}を{送|おく}りました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni använder datorn hemma och på jobbet.",
+  "discussionPoints": [
+   "Har du många ikoner på skrivbordet, eller bara några få?",
+   "Brukar du ha många fönster öppna samtidigt?",
+   "Vad gör du när ett felmeddelande kommer upp på skärmen?",
+   "Har du tagit en skärmdump någon gång? Varför?"
+  ]
+ }
+}

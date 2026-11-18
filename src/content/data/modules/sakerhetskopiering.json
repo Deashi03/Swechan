@@ -1,0 +1,173 @@
+{
+ "id": "m.sakerhetskopiering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Säkerhetskopiering",
+ "titleJa": "バックアップ",
+ "descriptionSv": "Säkerhetskopiering: säkerhetskopia, kopia, krascha, strömavbrott, vattenskada, stöld, tappa bort, skadeprogram, skadad, oersättlig, regelbundet, lagra, synkronisera, skriva över, av misstag och hämta tillbaka.",
+ "descriptionJa": "バックアップ：バックアップ、コピー、クラッシュする、{停電|ていでん}、{水|みず}による{損害|そんがい}、{窃盗|せっとう}、なくす、マルウェア、{損傷|そんしょう}した、かけがえのない、{定期的|ていきてき}に、{保存|ほぞん}する、{同期|どうき}する、{上書|うわが}きする、うっかり、{取|と}り{戻|もど}す。",
+ "categoryId": "R07-A01-T02",
+ "tags": [
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.installningar-och-behorighet"
+ ],
+ "related": [],
+ "recommendedOrder": 3725,
+ "words": [
+  {
+   "senseId": "s.säkerhetskopia.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kopia.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krascha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömavbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenskada.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stöld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tappa-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadeprogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oersättlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.regelbundet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synkronisera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriva-över.1",
+   "active": true
+  },
+  {
+   "senseId": "s.av-misstag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hämta-tillbaka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När datorn kraschade",
+  "paragraphs": [
+   "Omar skriver sitt examensarbete på högskolan. En kväll i maj kraschar hans dator, och den startar inte igen. Alla hans dokument och bilder finns på datorn. Han har ingen säkerhetskopia.",
+   "Omar blir mycket orolig. Arbetet är oersättligt för honom efter ett års forskning. En man i en datorbutik lyckas till slut hämta tillbaka de flesta filerna, men några bilder är skadade och går inte att öppna.",
+   "Efter det bestämmer sig Omar för att göra säkerhetskopior regelbundet. En dator kan gå sönder av många orsaker, till exempel ett strömavbrott, en vattenskada eller ett skadeprogram. Den kan också bli stulen vid en stöld, och man kan tappa bort den på tåget.",
+   "Nu lagrar Omar sina filer på tre ställen: i datorn, i en molntjänst och på en gammal dator hemma. Molntjänsten synkroniserar mappen automatiskt, så att samma filer finns i datorn och i mobilen. En kopia av de viktigaste dokumenten har han också på papper.",
+   "Omar skrev över en viktig fil av misstag en gång. Han sparade ett nytt dokument med samma namn som det gamla. Men tack vare säkerhetskopian kunde han hämta tillbaka den gamla filen. – Nu förstår jag varför alla pratar om säkerhetskopior, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer med Omars dator en kväll i maj?",
+    "options": [
+     "Den blir stulen på tåget",
+     "Den kraschar och startar inte igen",
+     "Den får en vattenskada",
+     "Den synkroniserar alla filer"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "En kväll i maj kraschar hans dator, och den startar inte igen.",
+    "explanationJa": "パソコンがクラッシュして、もう{起動|きどう}しなくなりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad var problemet med några av bilderna?",
+    "options": [
+     "De låg i papperskorgen",
+     "De var för stora för mejlet",
+     "De var skadade och gick inte att öppna",
+     "De fanns bara i mobilen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… men några bilder är skadade och går inte att öppna.",
+    "explanationJa": "{何枚|なんまい}かの{写真|しゃしん}は{壊|こわ}れていて{開|ひら}けませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör molntjänsten med Omars mapp?",
+    "options": [
+     "Den raderar mappen varje natt",
+     "Den synkroniserar mappen automatiskt",
+     "Den skriver över mappen",
+     "Den skickar mappen till högskolan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Molntjänsten synkroniserar mappen automatiskt, så att samma filer finns i datorn och i mobilen.",
+    "explanationJa": "クラウドサービスはフォルダーを{自動的|じどうてき}に{同期|どうき}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Omar hade en säkerhetskopia när datorn kraschade.",
+    "correct": false,
+    "explanationSv": "Han har ingen säkerhetskopia.",
+    "explanationJa": "そのときオマルはバックアップを{持|も}っていませんでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Säkerhetskopian hjälpte Omar när han hade skrivit över en fil.",
+    "correct": true,
+    "explanationSv": "Men tack vare säkerhetskopian kunde han hämta tillbaka den gamla filen.",
+    "explanationJa": "バックアップのおかげで、{古|ふる}いファイルを{取|と}り{戻|もど}せました。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni skyddar era viktiga filer och bilder.",
+  "discussionPoints": [
+   "Gör du säkerhetskopior av dina filer? Hur ofta?",
+   "Har din dator eller mobil kraschat någon gång? Vad hände?",
+   "Vilka filer eller bilder är oersättliga för dig?",
+   "Synkroniserar du mobilen med datorn eller en molntjänst?"
+  ]
+ }
+}

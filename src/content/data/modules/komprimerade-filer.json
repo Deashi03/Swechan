@@ -1,0 +1,173 @@
+{
+ "id": "m.komprimerade-filer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Komprimerade filer",
+ "titleJa": "{圧縮|あっしゅく}ファイル",
+ "descriptionSv": "Komprimerade filer: bifoga, bilaga, filstorlek, storleksgräns, utrymme, komprimera, zip-fil, minska, kvalitet, lösenordsskydda, mottagare, dela upp, ladda upp, avsändare, packa upp och överföra.",
+ "descriptionJa": "{圧縮|あっしゅく}ファイル：{添付|てんぷ}する、{添付書類|てんぷしょるい}、ファイルサイズ、サイズの{上限|じょうげん}、スペース、{圧縮|あっしゅく}する、ZIPファイル、{減|へ}らす、{品質|ひんしつ}、パスワードで{保護|ほご}する、{受取人|うけとりにん}、{分|わ}ける、アップロードする、{差出人|さしだしにん}、{解凍|かいとう}する、{移|うつ}す。",
+ "categoryId": "R07-A01-T02",
+ "tags": [
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sakerhetskopiering"
+ ],
+ "related": [],
+ "recommendedOrder": 3726,
+ "words": [
+  {
+   "senseId": "s.bifoga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bilaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filstorlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utrymme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komprimera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.zip-fil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.storleksgräns.1",
+   "active": false
+  },
+  {
+   "senseId": "s.minska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvalitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösenordsskydda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mottagare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avsändare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.packa-upp.2",
+   "active": true
+  },
+  {
+   "senseId": "s.överföra.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En ansökan som var för stor",
+  "paragraphs": [
+   "Naoko söker jobb som lärare i Uppsala. Hon ska skicka sin ansökan, sina betyg och fem intyg till skolan med mejl. Men när hon försöker bifoga alla filerna kommer ett meddelande upp: bilagan är för stor.",
+   "Mejlprogrammet har en storleksgräns för bilagor. Filstorleken på Naokos filer är mer än dubbelt så stor som gränsen, eftersom hon har fotograferat intygen med mobilen. Bilderna tar också mycket utrymme i mobilen.",
+   "Hennes dotter Lisa visar hur man komprimerar filer. Hon markerar alla dokument, högerklickar och gör en zip-fil. Zip-filen är mycket mindre än filerna var tillsammans. Lisa minskar också storleken på bilderna, men kvaliteten är fortfarande bra.",
+   "Lisa säger att Naoko ska lösenordsskydda zip-filen, eftersom betygen innehåller personuppgifter. Mottagaren får lösenordet i ett sms. Om en fil fortfarande är för stor kan man dela upp den i flera mejl, eller ladda upp den till en molntjänst och skicka en länk.",
+   "Några dagar senare får Naoko ett svar. Avsändaren är skolans rektor. – Vi fick din ansökan, men vi kunde inte packa upp zip-filen. Kan du överföra filerna på ett annat sätt? Naoko skrattar och ringer till Lisa igen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför kunde Naoko inte skicka mejlet först?",
+    "options": [
+     "Hon hade glömt lösenordet",
+     "Skolan hade ingen mejladress",
+     "Datorn kraschade",
+     "Bilagan var för stor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… kommer ett meddelande upp: bilagan är för stor.",
+    "explanationJa": "{添付|てんぷ}ファイルが{大|おお}きすぎたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Lisa med dokumenten?",
+    "options": [
+     "Hon raderar dem",
+     "Hon skriver ut dem",
+     "Hon gör en zip-fil av dem",
+     "Hon skickar dem med vanlig post"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon markerar alla dokument, högerklickar och gör en zip-fil.",
+    "explanationJa": "{文書|ぶんしょ}をまとめてZIPファイルにします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför ska Naoko lösenordsskydda zip-filen?",
+    "options": [
+     "Betygen innehåller personuppgifter",
+     "Filen blir mindre då",
+     "Rektorn har bett om det",
+     "Annars går den inte att ladda upp"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… eftersom betygen innehåller personuppgifter.",
+    "explanationJa": "{成績証明書|せいせきしょうめいしょ}に{個人情報|こじんじょうほう}が{含|ふく}まれているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kvaliteten på bilderna blev dålig när Lisa minskade storleken.",
+    "correct": false,
+    "explanationSv": "Lisa minskar också storleken på bilderna, men kvaliteten är fortfarande bra.",
+    "explanationJa": "{画質|がしつ}はまだよいままです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Rektorn hade problem med Naokos zip-fil.",
+    "correct": true,
+    "explanationSv": "… men vi kunde inte packa upp zip-filen.",
+    "explanationJa": "{校長|こうちょう}はZIPファイルを{解凍|かいとう}できませんでした。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att skicka och ta emot stora filer.",
+  "discussionPoints": [
+   "Har du fått ett meddelande om att en bilaga är för stor? Vad gjorde du då?",
+   "Hur skickar du många bilder till din familj eller dina vänner?",
+   "Har du något utrymme kvar i din mobil?",
+   "Vilka filer skulle du vilja lösenordsskydda?"
+  ]
+ }
+}

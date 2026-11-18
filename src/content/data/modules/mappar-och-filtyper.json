@@ -1,0 +1,173 @@
+{
+ "id": "m.mappar-och-filtyper",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Mappar och filtyper",
+ "titleJa": "フォルダーとファイルの{種類|しゅるい}",
+ "descriptionSv": "Mappar och filtyper: mapp, undermapp, fil, dokument, filtyp, döpa om, sökväg, sökfält, sortera, kopiera, klippa ut, klistra in, radera, papperskorg, tömma och ångra.",
+ "descriptionJa": "フォルダーとファイルの{種類|しゅるい}：フォルダー、サブフォルダー、ファイル、{文書|ぶんしょ}、ファイルの{種類|しゅるい}、{名前|なまえ}を{変更|へんこう}する、パス、{検索欄|けんさくらん}、{分|わ}ける、コピーする、{切|き}り{取|と}る、{貼|は}り{付|つ}ける、{削除|さくじょ}する、ごみ{箱|ばこ}、{空|から}にする、{取|と}り{消|け}す。",
+ "categoryId": "R07-A01-T02",
+ "tags": [
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.skrivbord-och-fonster"
+ ],
+ "related": [],
+ "recommendedOrder": 3722,
+ "words": [
+  {
+   "senseId": "s.mapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undermapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fil.2",
+   "active": true
+  },
+  {
+   "senseId": "s.dokument.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filtyp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.döpa-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökväg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sökfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kopiera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klippa-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klistra-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.papperskorg.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tömma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ångra.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ordning i datorn",
+  "paragraphs": [
+   "Aiko studerar svenska på komvux. Hon har sparat alla sina filer direkt på skrivbordet: dokument från skolan, bilder från semestern och brev från banken. Nu hittar hon ingenting.",
+   "Hennes granne Sara hjälper henne. – Gör en mapp för skolan och en för semestern, säger Sara. I mappen för skolan kan du ha en undermapp för varje kurs. Sedan kan du sortera filerna efter filtyp, till exempel bilder för sig och dokument för sig.",
+   "Aiko markerar några bilder och klipper ut dem. Sedan öppnar hon den nya mappen och klistrar in dem där. Ett viktigt dokument kopierar hon, så att hon har det på två ställen. Hon döper om några filer också, så att namnen blir tydligare.",
+   "Plötsligt raderar Aiko fel fil. – Ingen fara, säger Sara. Den ligger i papperskorgen, och du kan hämta tillbaka den därifrån. Du kan också ångra direkt. Men töm inte papperskorgen förrän du är säker.",
+   "Om Aiko inte vet var en fil ligger kan hon skriva namnet i sökfältet. Sara visar också sökvägen, som visar alla mappar som filen ligger i. Nu har Aiko ordning i datorn."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var hade Aiko sparat sina filer från början?",
+    "options": [
+     "I många undermappar",
+     "I papperskorgen",
+     "I sin mobil",
+     "Direkt på skrivbordet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon har sparat alla sina filer direkt på skrivbordet.",
+    "explanationJa": "{最初|さいしょ}は{全部|ぜんぶ}デスクトップに{保存|ほぞん}していました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kan Aiko ha i mappen för skolan, enligt Sara?",
+    "options": [
+     "Bilder från semestern",
+     "Brev från banken",
+     "Bara en enda fil",
+     "En undermapp för varje kurs"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I mappen för skolan kan du ha en undermapp för varje kurs.",
+    "explanationJa": "{授業|じゅぎょう}ごとにサブフォルダーを{作|つく}れます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Hur flyttar Aiko bilderna till den nya mappen?",
+    "options": [
+     "Hon raderar dem och tömmer papperskorgen",
+     "Hon döper om dem",
+     "Hon skriver namnen i sökfältet",
+     "Hon klipper ut dem och klistrar in dem i mappen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Aiko markerar några bilder och klipper ut dem. Sedan öppnar hon den nya mappen och klistrar in dem där.",
+    "explanationJa": "{切|き}り{取|と}って、{新|あたら}しいフォルダーに{貼|は}り{付|つ}けます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En fil som man har raderat kan ligga kvar i papperskorgen.",
+    "correct": true,
+    "explanationSv": "Den ligger i papperskorgen, och du kan hämta tillbaka den därifrån.",
+    "explanationJa": "{消|け}したファイルはごみ{箱|ばこ}に{残|のこ}っていて、{元|もと}に{戻|もど}せます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara tycker att Aiko ska tömma papperskorgen med en gång.",
+    "correct": false,
+    "explanationSv": "Men töm inte papperskorgen förrän du är säker.",
+    "explanationJa": "サラは、{確信|かくしん}が{持|も}てるまでごみ{箱|ばこ}を{空|から}にしないように{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni har ordning på filer och papper.",
+  "discussionPoints": [
+   "Har du ordning bland filerna i din dator eller mobil?",
+   "Hur sorterar du dina foton?",
+   "Har du raderat en viktig fil någon gång? Vad hände sedan?",
+   "Vilka filtyper använder du mest?"
+  ]
+ }
+}
