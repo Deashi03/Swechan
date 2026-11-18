@@ -1,0 +1,174 @@
+{
+ "id": "m.elektriska-kretsar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Elektriska kretsar",
+ "titleJa": "{電気回路|でんきかいろ}",
+ "descriptionSv": "Elektriska kretsar: apparat, komponent, strömkrets, strömbrytare, lysdiod, seriekoppling, parallellkoppling, kopplingsschema, löda, kortslutning, säkring, elcentral, grenuttag, överbelastning, brandrisk och elektriker.",
+ "descriptionJa": "{電気回路|でんきかいろ}：{電気|でんき}{機器|きき}、{電子|でんし}{部品|ぶひん}、{電気回路|でんきかいろ}、スイッチ、{発光|はっこう}ダイオード、{直列接続|ちょくれつせつぞく}、{並列接続|へいれつせつぞく}、{回路図|かいろず}、はんだ{付|づ}けする、ショート、ヒューズ、{分電盤|ぶんでんばん}、{電源|でんげん}タップ、{過負荷|かふか}、{火災|かさい}の{危険|きけん}、{電気工事士|でんきこうじし}。",
+ "categoryId": "R06-A03-T04",
+ "tags": [
+  "fysik",
+  "elektricitet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.elektromagnetisk-induktion"
+ ],
+ "related": [],
+ "recommendedOrder": 3347,
+ "words": [
+  {
+   "senseId": "s.apparat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komponent.2",
+   "active": true
+  },
+  {
+   "senseId": "s.strömkrets.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömbrytare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lysdiod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.seriekoppling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parallellkoppling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kopplingsschema.1",
+   "active": false
+  },
+  {
+   "senseId": "s.löda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kortslutning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elcentral.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grenuttag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överbelastning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektriker.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lampan som inte ville lysa",
+  "paragraphs": [
+   "Oskar och hans kompis Sara bygger en liten lampa till Saras rum. De har ett batteri, en strömbrytare, några sladdar och tre lysdioder. Först ritar de ett kopplingsschema på ett papper.",
+   "Sedan kopplar de ihop allt till en strömkrets. När strömbrytaren är på, går strömmen från batteriet genom lysdioderna och tillbaka. De gör en seriekoppling, där lysdioderna sitter efter varandra. Men när en lysdiod går sönder, slocknar alla.",
+   "Därför gör de om det till en parallellkoppling. Nu har varje lysdiod sin egen väg, och de andra lyser fast en går sönder. Till sist löder Oskar fast trådarna, så att alla komponenter sitter ordentligt.",
+   "Samma kväll slocknar alla lampor i köket. En säkring har gått. Saras pappa går till elcentralen. – Vi hade för många apparater i samma grenuttag, säger han. Det blev överbelastning.",
+   "Han förklarar att både kortslutning och överbelastning ger brandrisk, och att säkringen därför stänger av strömmen. – Med batterier och små komponenter kan man bygga själv. Men arbete med fasta ledningar i väggen ska en elektriker göra, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ritar Oskar och Sara först?",
+    "options": [
+     "En karta",
+     "En lampa",
+     "Ett kopplingsschema",
+     "Ett hus"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Först ritar de ett kopplingsschema på ett papper.",
+    "explanationJa": "{最初|さいしょ}に{回路図|かいろず}を{描|か}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför gör de om seriekopplingen?",
+    "options": [
+     "Batteriet är för litet",
+     "Lysdioderna lyser för starkt",
+     "Strömbrytaren är trasig",
+     "Alla lysdioder slocknar när en går sönder"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men när en lysdiod går sönder, slocknar alla.",
+    "explanationJa": "{一|ひと}つ{切|き}れるとすべて{消|き}えてしまうからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför gick säkringen i köket?",
+    "options": [
+     "En lysdiod gick sönder",
+     "Batteriet var slut",
+     "Det regnade",
+     "De hade för många apparater i samma grenuttag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Vi hade för många apparater i samma grenuttag …",
+    "explanationJa": "{一|ひと}つの{電源|でんげん}タップに{機器|きき}をつなぎすぎたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I en parallellkoppling har varje lysdiod sin egen väg.",
+    "correct": true,
+    "explanationSv": "Nu har varje lysdiod sin egen väg …",
+    "explanationJa": "{並列接続|へいれつせつぞく}では、それぞれに{通|とお}り{道|みち}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Saras pappa tycker att man själv kan ändra de fasta ledningarna i väggen.",
+    "correct": false,
+    "explanationSv": "Men arbete med fasta ledningar i väggen ska en elektriker göra …",
+    "explanationJa": "{壁|かべ}の{中|なか}の{配線|はいせん}は{電気工事士|でんきこうじし}の{仕事|しごと}です。"
+   }
+  ],
+  "factSources": [
+   "I en seriekoppling går samma ström genom alla delar; i en parallellkoppling får alla delar samma spänning.",
+   "I Sverige får elinstallationer i fasta ledningar bara göras av ett registrerat elinstallationsföretag; enklare arbete som att byta säkring eller sladd får man göra själv (Elsäkerhetsverket, regler kan ändras)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om el och säkerhet hemma.",
+  "discussionPoints": [
+   "Har du byggt något med batterier och lampor?",
+   "Har en säkring gått hemma hos dig? Vad gjorde du då?",
+   "Hur många apparater har du i samma grenuttag?",
+   "Vad får man göra själv med el hemma, och vad ska en elektriker göra?"
+  ]
+ }
+}

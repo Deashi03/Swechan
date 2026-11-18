@@ -1,0 +1,184 @@
+{
+ "id": "m.antibiotikaresistens",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Antibiotikaresistens",
+ "titleJa": "{薬剤耐性|やくざいたいせい}",
+ "descriptionSv": "Antibiotikaresistens: antibiotika, penicillin, bakterieinfektion, virus, prov, odling, halsfluss, lunginflammation, urinvägsinfektion, skriva ut, apotek, kur, fullfölja, biverkning, överleva, resistent, överanvändning och plasmid.",
+ "descriptionJa": "{薬剤耐性|やくざいたいせい}：{抗生物質|こうせいぶっしつ}、ペニシリン、{細菌感染|さいきんかんせん}、ウイルス、{検体|けんたい}、{培養検査|ばいようけんさ}、{扁桃炎|へんとうえん}、{肺炎|はいえん}、{尿路感染症|にょうろかんせんしょう}、{処方|しょほう}する、{薬局|やっきょく}、{服薬期間|ふくやくきかん}、{最後|さいご}までやり{遂|と}げる、{副作用|ふくさよう}、{生|い}き{延|の}びる、{耐性|たいせい}のある、{使|つか}いすぎ、プラスミド。",
+ "categoryId": "R06-A05-T04",
+ "tags": [
+  "biologi",
+  "mikrobiologi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.smittvagar"
+ ],
+ "related": [],
+ "recommendedOrder": 3546,
+ "words": [
+  {
+   "senseId": "s.antibiotika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.penicillin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakterieinfektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.virus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prov.2",
+   "active": true
+  },
+  {
+   "senseId": "s.odling.2",
+   "active": true
+  },
+  {
+   "senseId": "s.halsfluss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lunginflammation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urinvägsinfektion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skriva-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.apotek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fullfölja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biverkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överleva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.resistent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överanvändning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.plasmid.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ingen medicin mot viruset",
+  "paragraphs": [
+   "Takeshi har haft feber och ont i halsen i tre dagar. Han går till vårdcentralen och vill ha antibiotika. Läkaren Lena tar ett prov från halsen och skickar det på odling.",
+   "Dagen efter ringer Lena. – Odlingen visar att det inte är halsfluss. Du har ett virus. Antibiotika dödar bakterier, men det hjälper inte mot virus. Du får vila tills du blir frisk.",
+   "Lena förklarar varför hon är försiktig med antibiotika. Överanvändning av antibiotika är ett stort problem i världen. När man tar antibiotika dör de flesta bakterierna, men några få kan överleva. De som överlever är resistenta, och de blir fler och fler. Bakterier kan också ge varandra plasmider som gör dem resistenta.",
+   "Förr dog många människor av lunginflammation och infekterade sår. När penicillinet kom på 1940-talet blev de sjukdomarna lätta att bota. Men om bakterierna blir resistenta kan vanliga sjukdomar som urinvägsinfektion bli farliga igen.",
+   "Ett år senare får Takeshi en riktig bakterieinfektion. Lena skriver ut penicillin, och Takeshi hämtar det på apoteket. – Du måste fullfölja kuren även om du mår bättre, säger Lena. Och hör av dig om du får biverkningar, till exempel diarré."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför fick Takeshi ingen antibiotika första gången?",
+    "options": [
+     "Apoteket var stängt",
+     "Han var inte sjuk",
+     "Lena hade ingen tid",
+     "Han hade ett virus"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Odlingen visar att det inte är halsfluss. Du har ett virus.",
+    "explanationJa": "ウイルスに{感染|かんせん}していたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gjorde Lena med provet från halsen?",
+    "options": [
+     "Hon slängde det",
+     "Hon skickade det på odling",
+     "Hon gav det till Takeshi",
+     "Hon tittade på det med bara ögonen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Läkaren Lena tar ett prov från halsen och skickar det på odling.",
+    "explanationJa": "{検体|けんたい}を{培養検査|ばいようけんさ}に{出|だ}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir de resistenta bakterierna fler och fler?",
+    "options": [
+     "De äter penicillinet",
+     "De överlever när de andra bakterierna dör",
+     "Läkarna odlar dem",
+     "De kommer från virus"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När man tar antibiotika dör de flesta bakterierna, men några få kan överleva. De som överlever är resistenta …",
+    "explanationJa": "{他|ほか}の{細菌|さいきん}が{死|し}んでも、{耐性|たいせい}のある{細菌|さいきん}は{生|い}き{残|のこ}るからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Penicillinet kom på 1940-talet.",
+    "correct": true,
+    "explanationSv": "När penicillinet kom på 1940-talet blev de sjukdomarna lätta att bota.",
+    "explanationJa": "ペニシリンは1940{年代|ねんだい}に{使|つか}われ{始|はじ}めました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Takeshi kan sluta ta penicillinet när han mår bättre.",
+    "correct": false,
+    "explanationSv": "– Du måste fullfölja kuren även om du mår bättre, säger Lena.",
+    "explanationJa": "{気分|きぶん}がよくなっても、{最後|さいご}まで{飲|の}み{続|つづ}けなければなりません。"
+   }
+  ],
+  "factSources": [
+   "Antibiotika verkar mot bakterier men inte mot virus (Folkhälsomyndigheten; Strama).",
+   "Penicillin upptäcktes av Alexander Fleming 1928 och började användas i stor skala under 1940-talet.",
+   "Antibiotikaresistens uppstår genom mutationer och urval när antibiotika används, och resistensgener kan överföras mellan bakterier, bland annat med plasmider. WHO räknar antibiotikaresistens som ett av de största hoten mot global hälsa.",
+   "I Sverige tar man ofta en odling för att se om halsont beror på bakterier; patienten ska ta hela den förskrivna kuren om inte läkaren säger något annat (1177 Vårdguiden)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om antibiotika och om när man behöver det.",
+  "discussionPoints": [
+   "Har du fått antibiotika någon gång? Mot vad?",
+   "Är det lätt eller svårt att få antibiotika i ditt hemland?",
+   "Varför tror du att många vill ha antibiotika när de är förkylda?",
+   "Vad kan man göra för att färre bakterier ska bli resistenta?"
+  ]
+ }
+}

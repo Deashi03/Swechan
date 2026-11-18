@@ -1,0 +1,184 @@
+{
+ "id": "m.optiska-instrument",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Optiska instrument",
+ "titleJa": "{光学機器|こうがくきき}",
+ "descriptionSv": "Optiska instrument: optik, lupp, mikroskop, objektiv, okular, förstoring, kikare, teleskop, observatorium, periskop, kamera, fotografera, stativ, zooma in, fokusera, bländare, projektor och laser.",
+ "descriptionJa": "{光学機器|こうがくきき}：{光学|こうがく}、ルーペ、{顕微鏡|けんびきょう}、{対物|たいぶつ}レンズ、{接眼|せつがん}レンズ、{倍率|ばいりつ}、{双眼鏡|そうがんきょう}、{望遠鏡|ぼうえんきょう}、{天文台|てんもんだい}、{潜望鏡|せんぼうきょう}、カメラ、{写真|しゃしん}を{撮|と}る、{三脚|さんきゃく}、ズームインする、ピントを{合|あ}わせる、{絞|しぼ}り、プロジェクター、レーザー。",
+ "categoryId": "R06-A03-T03",
+ "tags": [
+  "fysik",
+  "optik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.polarisation"
+ ],
+ "related": [],
+ "recommendedOrder": 3337,
+ "words": [
+  {
+   "senseId": "s.optik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lupp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikroskop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.objektiv-noun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.okular.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förstoring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kikare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.teleskop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.observatorium.1",
+   "active": false
+  },
+  {
+   "senseId": "s.periskop.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotografera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stativ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.zooma-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fokusera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.bländare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.projektor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laser.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag på museet",
+  "paragraphs": [
+   "Elins klass besöker ett museum om optik. Först får de titta i en lupp och sedan i ett mikroskop. Mikroskopet har två sorters linser: objektivet nere vid det man tittar på och okularet uppe vid ögat. Med 400 gångers förstoring ser Elin små djur i en droppe vatten.",
+   "Sedan tittar de på apparater som gör saker långt bort större. En kikare har två rör, ett för varje öga. Ett teleskop är ofta mycket större och står i ett observatorium. Med det kan man se stjärnor och planeter. I ett rum finns också ett periskop. Med det kan man se över en hög vägg.",
+   "Elin tycker om att fotografera. Guiden visar en stor kamera på ett stativ. – Om man zoomar in kommer saker långt bort närmare, säger guiden. Men då måste man fokusera noga, annars blir bilden suddig.",
+   "Kameran har också en bländare. När det är mörkt blir hålet större, så att mer ljus kommer in. När solen lyser blir hålet mindre. Det fungerar ungefär som det svarta hålet mitt i ögat.",
+   "Till sist visar guiden en film med en projektor. Efter filmen får Elin prova en laser. Den ger en smal, röd ljusstråle. – Titta aldrig in i en laser, säger guiden. Den kan skada ögat."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken lins i mikroskopet är närmast ögat?",
+    "options": [
+     "Objektivet",
+     "Okularet",
+     "Luppen",
+     "Bländaren"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… objektivet nere vid det man tittar på och okularet uppe vid ögat.",
+    "explanationJa": "{目|め}に{近|ちか}いのは{接眼|せつがん}レンズです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var står ofta ett stort teleskop?",
+    "options": [
+     "På en båt",
+     "I ett klassrum",
+     "På taket på ett hus",
+     "I ett observatorium"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ett teleskop är ofta mycket större och står i ett observatorium.",
+    "explanationJa": "{天文台|てんもんだい}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför måste man fokusera noga när man zoomar in?",
+    "options": [
+     "Annars går kameran sönder",
+     "Annars blir bilden mörk",
+     "Annars blir bilden suddig",
+     "Annars blir bilden för stor"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Men då måste man fokusera noga, annars blir bilden suddig.",
+    "explanationJa": "そうしないと{写真|しゃしん}がぼやけるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "När det är mörkt blir hålet i bländaren mindre.",
+    "correct": false,
+    "explanationSv": "När det är mörkt blir hålet större, så att mer ljus kommer in.",
+    "explanationJa": "{暗|くら}いときは{穴|あな}が{大|おお}きくなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Guiden säger att man aldrig ska titta in i en laser.",
+    "correct": true,
+    "explanationSv": "– Titta aldrig in i en laser, säger guiden.",
+    "explanationJa": "レーザーをのぞきこんではいけないと{言|い}いました。"
+   }
+  ],
+  "factSources": [
+   "Ett ljusmikroskop har objektiv (nära föremålet) och okular (vid ögat); den totala förstoringen är produkten av objektivets och okularets förstoring (t.ex. 40 × 10 = 400 gånger).",
+   "Kamerans bländare öppnas mer i svagt ljus och fungerar ungefär som ögats pupill.",
+   "Laserljus kan skada ögat även från små lasrar.",
+   "Vardagsscen; personen och museet är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om optiska instrument som ni har använt.",
+  "discussionPoints": [
+   "Har du tittat i ett mikroskop eller ett teleskop? Vad såg du?",
+   "Vad tycker du om att fotografera?",
+   "När skulle du vilja ha en kikare?",
+   "Var har du sett en projektor eller en laser?"
+  ]
+ }
+}

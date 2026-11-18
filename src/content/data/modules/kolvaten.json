@@ -1,0 +1,180 @@
+{
+ "id": "m.kolvaten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Kolväten",
+ "titleJa": "{炭化水素|たんかすいそ}",
+ "descriptionSv": "Kolväten: kol, väte, kolväte, metan, gasol, butan, naturgas, olja, oljeraffinaderi, bensin, fotogen, asfalt, kolkedja, enkelbindning, dubbelbindning, fossilt bränsle och brandfarlig.",
+ "descriptionJa": "{炭化水素|たんかすいそ}：{炭素|たんそ}、{水素|すいそ}、{炭化水素|たんかすいそ}、メタン、プロパンガス、ブタン、{天然|てんねん}ガス、{石油|せきゆ}、{石油精製所|せきゆせいせいじょ}、ガソリン、{灯油|とうゆ}、アスファルト、{炭素鎖|たんそさ}、{単結合|たんけつごう}、{二重結合|にじゅうけつごう}、{化石燃料|かせきねんりょう}、{燃|も}えやすい。",
+ "categoryId": "R06-A04-T05",
+ "tags": [
+  "kemi",
+  "organisk kemi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.buffertlosningar"
+ ],
+ "related": [],
+ "recommendedOrder": 3451,
+ "words": [
+  {
+   "senseId": "s.kol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolväte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.metan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gasol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.butan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.naturgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.olja.2",
+   "active": true
+  },
+  {
+   "senseId": "s.oljeraffinaderi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bensin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotogen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.asfalt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolkedja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enkelbindning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dubbelbindning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fossilt-bränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandfarlig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från gasol till asfalt",
+  "paragraphs": [
+   "Sara läser kemi på kvällarna. Läraren börjar med kolväten. – Ett kolväte är ett ämne som bara består av kol och väte, säger han. Det låter enkelt, men det finns tusentals olika kolväten.",
+   "Det minsta kolvätet är metan, som är den viktigaste delen i naturgas. Sedan kommer gaser som finns i gasol, till exempel butan. Ju fler atomer kol det finns i kolkedjan, desto större blir molekylen.",
+   "Olja från marken är en blandning av många kolväten. På ett oljeraffinaderi delar man upp oljan. Korta kolkedjor blir gasol och bensin. Lite längre kedjor blir fotogen och diesel, och av den tjocka resten gör man asfalt till vägarna.",
+   "Läraren ritar strukturformler på tavlan. I vissa kolväten finns bara enkelbindningar mellan kolatomerna. I andra finns en dubbelbindning, och då kan molekylen lättare reagera med andra ämnen.",
+   "Nästan alla kolväten är brandfarliga, och det är därför vi använder dem som bränsle. Men olja, kol och naturgas är fossila bränslen. När de brinner bildas koldioxid, som påverkar klimatet. – Därför försöker vi använda mindre av dem, säger läraren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka grundämnen finns i ett kolväte?",
+    "options": [
+     "Kol och väte",
+     "Kol och syre",
+     "Väte och syre",
+     "Kol, väte och kväve"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ett kolväte är ett ämne som bara består av kol och väte.",
+    "explanationJa": "{炭素|たんそ}と{水素|すいそ}だけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är den viktigaste delen i naturgas?",
+    "options": [
+     "Butan",
+     "Metan",
+     "Bensin",
+     "Asfalt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det minsta kolvätet är metan, som är den viktigaste delen i naturgas.",
+    "explanationJa": "メタンです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör man på ett oljeraffinaderi?",
+    "options": [
+     "Man delar upp olja i olika produkter",
+     "Man tar upp olja ur marken",
+     "Man bygger vägar",
+     "Man säljer gasol till kunder"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På ett oljeraffinaderi delar man upp oljan.",
+    "explanationJa": "{石油|せきゆ}をいろいろな{製品|せいひん}に{分|わ}けます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Bensin har längre kolkedjor än asfalt.",
+    "correct": false,
+    "explanationSv": "Korta kolkedjor blir gasol och bensin … av den tjocka resten gör man asfalt.",
+    "explanationJa": "ガソリンの{炭素鎖|たんそさ}はアスファルトより{短|みじか}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "cause",
+    "statementSv": "Man använder kolväten som bränsle eftersom de kan brinna.",
+    "correct": true,
+    "explanationSv": "Nästan alla kolväten är brandfarliga, och det är därför vi använder dem som bränsle.",
+    "explanationJa": "{燃|も}えやすいので、{燃料|ねんりょう}として{使|つか}われます。"
+   }
+  ],
+  "factSources": [
+   "Kolväten består bara av kol och väte; metan är huvudbeståndsdelen i naturgas, och gasol är i huvudsak propan och butan. Butan är gas vid rumstemperatur men flytande under tryck i tändare.",
+   "I ett oljeraffinaderi delas råolja upp genom destillation efter kokpunkt: gasol och bensin (korta kolkedjor), fotogen och diesel (längre), och tunga rester som bitumen till asfalt. Sverige har stora raffinaderier i Göteborg och Lysekil.",
+   "Förbränning av fossila bränslen bildar koldioxid, som är en växthusgas.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kolväten som ni använder i vardagen.",
+  "discussionPoints": [
+   "Vilka bränslen använder du hemma eller i bilen?",
+   "Har du grillat med gasol eller med kol?",
+   "Hur skulle vardagen se ut utan olja?",
+   "Vad tycker du att vi ska använda i stället för fossila bränslen?"
+  ]
+ }
+}

@@ -1,0 +1,186 @@
+{
+ "id": "m.dopplereffekten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Dopplereffekten",
+ "titleJa": "ドップラー{効果|こうか}",
+ "descriptionSv": "Dopplereffekten: ambulans, siren, utryckningsfordon, närma sig, avlägsna sig, passera, susa, tonhöjd, dopplereffekt, perrong, hastighet, radar, fartkontroll, väderradar, ultraljud, rödförskjutning, ljudvall och överljudsknall.",
+ "descriptionJa": "ドップラー{効果|こうか}：{救急車|きゅうきゅうしゃ}、サイレン、{緊急車両|きんきゅうしゃりょう}、{近|ちか}づく、{遠|とお}ざかる、{通|とお}り{過|す}ぎる、ビューと{音|おと}を{立|た}てる、{音|おと}の{高|たか}さ、ドップラー{効果|こうか}、ホーム、{速度|そくど}、レーダー、スピード{違反|いはん}の{取|と}り{締|し}まり、{気象|きしょう}レーダー、{超音波|ちょうおんぱ}{検査|けんさ}、{赤方偏移|せきほうへんい}、{音|おと}の{壁|かべ}、ソニックブーム。",
+ "categoryId": "R06-A03-T02",
+ "tags": [
+  "fysik",
+  "vågor",
+  "ljud"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.resonans"
+ ],
+ "related": [],
+ "recommendedOrder": 3326,
+ "words": [
+  {
+   "senseId": "s.ambulans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.siren.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utryckningsfordon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.närma-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlägsna-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.susa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tonhöjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dopplereffekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.perrong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fartkontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderradar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ultraljud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rödförskjutning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ljudvall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överljudsknall.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Sirenen som bytte ton",
+  "paragraphs": [
+   "Yuki står på perrongen och väntar på pendeltåget. Plötsligt hör hon en siren. En ambulans närmar sig på gatan bakom stationen, och sedan kommer en brandbil. Bilarna kör åt sidan för utryckningsfordonen.",
+   "När ambulansen passerar och sedan avlägsnar sig, hör Yuki att sirenen byter ton. Först låter den ljusare, sedan plötsligt mörkare. Strax efter susar ett godståg förbi utan att stanna, och samma sak händer med ljudet från tåget.",
+   "Det här kallas dopplereffekten. När ljudkällan kommer närmare trycks ljudvågorna ihop, och tonhöjden stiger. När den åker bort blir våglängden längre, och tonhöjden sjunker. Ju högre hastighet, desto större blir skillnaden.",
+   "Dopplereffekten används i många apparater. Polisen använder radar vid fartkontroller, och väderradarn visar hur regnet rör sig. På sjukhuset använder man ultraljud för att se hur fort blodet strömmar. Astronomer ser rödförskjutning i ljuset från stjärnor som rör sig bort från oss.",
+   "Om ett flygplan flyger lika fort som ljudet, hinner ljudvågorna inte komma bort från planet. Planet måste bryta ljudvallen, och på marken hör man en överljudsknall. Därför får plan inte flyga fortare än ljudet över städer."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka bilar ser Yuki?",
+    "options": [
+     "En ambulans och en brandbil",
+     "Två polisbilar",
+     "En buss och en taxi",
+     "Ett godståg och en polisbil"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En ambulans närmar sig på gatan bakom stationen, och sedan kommer en brandbil.",
+    "explanationJa": "{救急車|きゅうきゅうしゃ}と{消防車|しょうぼうしゃ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Hur låter sirenen när ambulansen avlägsnar sig?",
+    "options": [
+     "Ljusare",
+     "Mörkare",
+     "Exakt likadant",
+     "Den slutar höras direkt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Först låter den ljusare, sedan plötsligt mörkare.",
+    "explanationJa": "{遠|とお}ざかるとき、サイレンは{低|ひく}く{聞|き}こえます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför stiger tonhöjden när ljudkällan kommer närmare?",
+    "options": [
+     "Ljudet blir starkare",
+     "Ljudkällan blir större",
+     "Luften blir varmare",
+     "Ljudvågorna trycks ihop"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "När ljudkällan kommer närmare trycks ljudvågorna ihop, och tonhöjden stiger.",
+    "explanationJa": "{音波|おんぱ}が{押|お}し{縮|ちぢ}められるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Polisen använder dopplereffekten vid fartkontroller.",
+    "correct": true,
+    "explanationSv": "Polisen använder radar vid fartkontroller …",
+    "explanationJa": "{警察|けいさつ}はレーダーでドップラー{効果|こうか}を{使|つか}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Flygplan får flyga fortare än ljudet över städer.",
+    "correct": false,
+    "explanationSv": "Därför får plan inte flyga fortare än ljudet över städer.",
+    "explanationJa": "{都市|とし}の{上空|じょうくう}では{禁止|きんし}されています。"
+   }
+  ],
+  "factSources": [
+   "Dopplereffekten är uppkallad efter den österrikiske fysikern Christian Doppler, som beskrev den 1842 (Nationalencyklopedin, dopplereffekt).",
+   "Ljudvallen bröts första gången 1947 av Bell X-1 (Nationalencyklopedin, ljudvallen).",
+   "Civil överljudsflygning över land är förbjuden i bl.a. USA och EU på grund av överljudsknallar (Transportstyrelsen; FAA).",
+   "Rödförskjutning hos galaxer visar att universum expanderar (Nationalencyklopedin, rödförskjutning).",
+   "Svenska utryckningsfordon har blå ljus; i Japan är de röda (Transportstyrelsen; 道路運送車両法)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om dopplereffekten och om ljud från saker som rör sig.",
+  "discussionPoints": [
+   "Har du märkt att en siren byter ton när den åker förbi?",
+   "Hur låter ett tåg som susar förbi en perrong?",
+   "Var i vardagen används radar och ultraljud?",
+   "Vad tycker du om att plan inte får flyga fortare än ljudet över städer?"
+  ]
+ }
+}

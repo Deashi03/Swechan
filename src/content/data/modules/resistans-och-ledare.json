@@ -1,0 +1,175 @@
+{
+ "id": "m.resistans-och-ledare",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Resistans och ledare",
+ "titleJa": "{抵抗|ていこう}と{導体|どうたい}",
+ "descriptionSv": "Resistans och ledare: metall, koppar, sladd, ledare, isolator, halvledare, resistans, motstånd, Ohms lag, tvärsnittsarea, överhettad, glödlampa, glödtråd, brödrost, vattenkokare och element.",
+ "descriptionJa": "{抵抗|ていこう}と{導体|どうたい}：{金属|きんぞく}、{銅|どう}、コード、{導体|どうたい}、{絶縁体|ぜつえんたい}、{半導体|はんどうたい}、{電気抵抗|でんきていこう}、{抵抗器|ていこうき}、オームの{法則|ほうそく}、{断面積|だんめんせき}、{熱|あつ}くなりすぎた、{電球|でんきゅう}、フィラメント、トースター、{電気|でんき}ケトル、ラジエーター。",
+ "categoryId": "R06-A03-T04",
+ "tags": [
+  "fysik",
+  "elektricitet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.strom-och-spanning"
+ ],
+ "related": [],
+ "recommendedOrder": 3343,
+ "words": [
+  {
+   "senseId": "s.metall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sladd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledare.4",
+   "active": true
+  },
+  {
+   "senseId": "s.isolator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvledare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.resistans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motstånd.2",
+   "active": true
+  },
+  {
+   "senseId": "s.Ohms-lag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tvärsnittsarea.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överhettad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glödlampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glödtråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brödrost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenkokare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Varför blir brödrosten varm?",
+  "paragraphs": [
+   "En morgon tittar Emil på brödrosten. Trådarna inne i den blir röda och varma, men sladden är kall. – Varför då? frågar han sin mamma, som är lärare i fysik.",
+   "Mamman förklarar att alla material inte leder el lika bra. Metaller, till exempel koppar, är bra ledare. Plast och gummi är isolatorer – där kan strömmen nästan inte gå. Därför har sladden koppar inuti och plast runt om.",
+   "Trådarna i brödrosten har mycket högre resistans än kopparn i sladden. När strömmen går igenom dem blir de varma. Samma sak händer i en vattenkokare och i ett element. – Det är också därför glödtråden i en gammal glödlampa lyser, säger mamman.",
+   "Hon ritar på ett papper. – Med Ohms lag kan man räkna ut hur stor strömmen blir. En tjock kabel har stor tvärsnittsarea och låg resistans. En för tunn sladd kan bli överhettad om man kopplar in en stor apparat.",
+   "Till sist tar hon fram en gammal del från en dator. Där sitter små motstånd med färgade ringar och svarta små delar av halvledare. – Utan halvledare skulle det inte finnas några mobiler, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket material finns inuti sladden?",
+    "options": [
+     "Plast",
+     "Gummi",
+     "Glas",
+     "Koppar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Därför har sladden koppar inuti och plast runt om.",
+    "explanationJa": "コードの{中|なか}には{銅|どう}が{入|はい}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir trådarna i brödrosten varma?",
+    "options": [
+     "De är gjorda av plast",
+     "De är isolatorer",
+     "De har hög resistans",
+     "De har stor tvärsnittsarea"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Trådarna i brödrosten har mycket högre resistans än kopparn i sladden.",
+    "explanationJa": "{抵抗|ていこう}が{大|おお}きいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är en isolator?",
+    "options": [
+     "Ett material där strömmen nästan inte kan gå",
+     "En tjock kabel",
+     "En sorts batteri",
+     "En lampa som lyser"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Plast och gummi är isolatorer – där kan strömmen nästan inte gå.",
+    "explanationJa": "{電気|でんき}をほとんど{通|とお}さない{物質|ぶっしつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En tjock kabel har lägre resistans än en tunn.",
+    "correct": true,
+    "explanationSv": "En tjock kabel har stor tvärsnittsarea och låg resistans.",
+    "explanationJa": "{太|ふと}いケーブルは{抵抗|ていこう}が{小|ちい}さいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Plasten runt sladden leder el bra.",
+    "correct": false,
+    "explanationSv": "Plast och gummi är isolatorer …",
+    "explanationJa": "プラスチックは{絶縁体|ぜつえんたい}なので、{電気|でんき}を{通|とお}しません。"
+   }
+  ],
+  "factSources": [
+   "Ohms lag: U = R · I.",
+   "Resistansen i en tråd ökar med längden och minskar när tvärsnittsarean blir större.",
+   "Glödtråden i en glödlampa blir omkring 2 500 °C; det mesta av energin blir värme."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om el och värme hemma i köket.",
+  "discussionPoints": [
+   "Vilka apparater hemma blir varma när man använder dem?",
+   "Har du någon gång känt att en sladd har blivit varm?",
+   "Vad gör du med gamla sladdar och laddare?",
+   "Vilka saker hemma innehåller halvledare, tror du?"
+  ]
+ }
+}

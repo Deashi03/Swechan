@@ -1,5 +1,14 @@
 # Changelog
 
+## Osläppt – 2026-11-18: kvalitetsrevision och kvalitetsplan
+
+Inget innehåll och ingen kod är ändrad.
+
+- `docs/QUALITY_AUDIT_2026-11.md`: revision av hela materialet vid 0.51.0. Systematiska fel i bildtäckning, laddtid, animationer, betydelser, förklaringar, språk och process, med mätvärden per ämnesgrupp.
+- `docs/QUALITY_PLAN.md`: etapper för systemet (mätning och spärr, laddtid, bildsystem, datamodell för betydelser, kvalitetskontrakt) och för eftersläpningen. Systemet och de snabba rättningarna går före nästa nya överämne; resten varvas med ny produktion.
+- Produktägarens beslut: matchningstest för symbolbilder, manuellt spår efter två underkända omgångar, kort förklaring för abstrakta B1-ord.
+- **Etapp A1 klar:** språk- och faktagranskningen av *Vardag & hem*, *Människan & hälsa* och *Samhälle & institutioner* (PR #66, de tre avsnitten nedan) är sammanslagen med `main`.
+
 ## Osläppt – 2026-11-17: språk- och faktagranskning av *Samhälle & institutioner*
 
 Alla 252 moduler i *Samhälle & institutioner* (R03) är genomlästa: lästexter, frågor, svarsalternativ, förklaringar och samtalsunderlag. Alla 3 056 ordbetydelser som inte redan lästes med R01 och R02 är lästa på svenska och japanska: glosa, definition, exempel, förklaring, användningsnot och böjning. Uppgifter som kan ha ändrats kontrollerades mot källa. 108 moduler och 49 ordboksfiler är ändrade; alla ändrade moduler har ny `contentVersion`.
@@ -129,6 +138,111 @@ Alla 252 moduler i *Vardag & hem* (R01) är genomlästa: lästexter, frågor, sv
 
 ### Inte gjort
 - Samma som för *Människan & hälsa*: tio testfiler, typkontroll, bygge och e2e är inte körda.
+## 0.53.0 – 2026-11-18
+
+42 nya moduler som gör överämnet *Astronomi & rymd* (R06-A06) komplett. Därmed är hela *Matematik & naturvetenskap* (R06) publicerad. Modulerna lär ut det svenska ordförrådet för astronomi och rymdfart med vardagliga exempel (stjärnhimlen, månen, årstider, nyheter om rymdfart, planetarium, GPS). Varje nytt modulord har en egen bild, utom de 8 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 699 målord)
+- **Solens system** (3611–3617): solen, Merkurius och Venus, jorden och månen, Mars, gasjättarna, dvärgplaneter samt asteroider och kometer.
+- **Himlens rörelser** (3621–3627): dygn och årstider, månens faser, sol- och månförmörkelse, stjärnbilder, planeternas banor, ekliptikan och tidmätning med himlakroppar.
+- **Stjärnor** (3631–3637): stjärnors födelse, kärnfusion i stjärnor, spektralklasser, röda jättar, supernovor, neutronstjärnor och svarta hål.
+- **Galaxer & universum** (3641–3647): Vintergatan, galaxers former, stjärnhopar och nebulosor, universums expansion, rödförskjutning, mörk materia och kosmisk bakgrundsstrålning.
+- **Rymdfart** (3651–3657): raketer och raketmotorer, omloppsbanor, satelliter, rymdstationer, rymdsonder, månlandningar och framtida rymdmissioner.
+- **Astronomins metoder** (3661–3667): teleskop, observatorier, spektroskopi, radioteleskop, mätning av avstånd, rymdteleskop samt observation och hypotesprövning.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 194 nya ordposter, bland andra grundord som *stjärna*, *planet*, *måne* och *galax*.
+- 5 nya betydelser på befintliga poster: *krater* (på planet och måne), *ring* (runt en planet), *jordnära* (i rymden), *kärna* (i en stjärna) och *centrum* (mitten av något stort). Den gamla betydelsen har fått en etikett.
+- Parallella grupper ville skapa samma poster (*inre/yttre planet*, *omloppstid*, *morgon-/aftonstjärna*, *månsken*, *yttemperatur*, *tindra*, *ljusstark*, *ljusförorening*, *osynlig*). Posten finns bara i den grupp som kommer först i katalogen, och de andra refererar dess `senseId`.
+- Rymdfart blev klar före Galaxer & universum och kopplades tillfälligt efter Stjärnor; när Galaxer & universum var inlagd kördes Rymdfarts första modul om, så att förkunskapen är *Kosmisk bakgrundsstrålning*.
+- Nya namn i grundordförrådet: planeter och himlakroppar (Merkurius, Saturnus, Uranus, Neptunus, Pluto, Ceres, Eris, Kuiperbältet, Halley), stjärnor och nebulosor (Orion, Rigel, Betelgeuse, Vintergatan, Andromedagalaxen, Sjustjärnorna, Krabbnebulosan, Orionnebulosan), rymdfart (Esrange, Tanegashima, Voyager, Hayabusa, Ryugu, Apollo) och forskare och astronauter (Hubble, Zwicky, Rubin, Penzias, Wilson, Tycho Brahe, Jocelyn Bell, Fuglesang, Wandt, Armstrong).
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Teknik & digital värld* (R07): Datorer & internet → Datorns delar → Processor och minne.
+
+### Bilder (196 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `solarSystem.ts`, `skyMotion.ts`, `stars.ts`, `galaxies.ts`, `spaceflight.ts` och `astroMethods.ts`. Bilderna visar siffror men inga ord, flaggor eller logotyper.
+- 76 symbol- och adjektivbilder blindtestades. 68 klarade testet efter högst två omgångar.
+- **8 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *meteor/stjärnfall*.
+
+Service workern är `swechan-v57`.
+
+
+## 0.52.0 – 2026-11-18
+
+42 nya moduler som gör överämnet *Biologi* (R06-A05) komplett. Modulerna lär ut det svenska ordförrådet för skolbiologi med vardagliga exempel (mat, sjukdom, träning, skog och sjö, trädgård). Varje nytt modulord har en egen bild, utom de 11 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 706 målord)
+- **Cellbiologi** (3511–3517): cellens delar, cellmembranet, cellkärnan, mitokondrier, proteinsyntes, celldelning och cellsignalering.
+- **Genetik & arv** (3521–3527): DNA och RNA, gener och kromosomer, alleler och nedärvning, mutationer, genuttryck, genetisk variation och arv samt genteknikens metoder.
+- **Evolution** (3531–3537): naturligt urval, anpassning och selektion, artbildning, fossil och släktskap, evolutionära träd, sexuell selektion och människans evolution.
+- **Mikrobiologi** (3541–3547): bakteriers uppbyggnad, virus och viruspartiklar, arkéer, mikroskopiska svampar, smittvägar, antibiotikaresistens och mikroorganismer i ekosystem.
+- **Människans fysiologi** (3551–3557): hjärtats funktion, lungornas gasutbyte, matsmältningssystemet, nervimpulser, hormonsystemet, njurarnas filtrering och immunförsvarets celler.
+- **Ekologi & organismvärlden** (3561–3567): fotosyntes och cellandning, näringsvävar, populationsdynamik, symbios och parasitism, biodiversitet, kretslopp av näringsämnen och organismers livscykler.
+- Varje modul har 15–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 232 nya ordposter.
+- 13 nya betydelser på befintliga poster, där vardagsordet fått sin biologibetydelse: *förbränning* (i kroppen), *blockera*, *dominant*, *korsning*, *förädla*, *gren* (i ett stamträd), *kolonisera*, *odla* och *odling* (bakterier), *svamp* (organism), *rotknöl*, *reflex* (i kroppen) och *livslängd* (levande varelser). Den gamla betydelsen har fått en etikett.
+- Grupperna återanvänder varandras poster i stället för att skapa dubbletter, t.ex. *kvävefixerande* och *rotknöl* från Mikrobiologi i Ekologi och *kapillär* mellan fysiologimodulerna; exists.py kördes efter varje inlagd grupp.
+- Rättning: posten *myrsyra* beskrev fortfarande myrsyra som stark syra i ordboken för *Myror och kolonier*; nu står det bara *syra*.
+- Namnet *Galapagos* är tillagt i grundordförrådet.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Astronomi & rymd* (R06-A06): Solens system → Solen.
+- `images.test.ts` laddar alla bildfiler i `beforeAll` med 120 sekunders tidsgräns; standardgränsen 10 s räckte inte längre på CI.
+
+### Bilder (234 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `cellBiology.ts`, `genetics.ts`, `evolution.ts`, `microbio.ts`, `physiology.ts` och `ecologyBio.ts`. Bilderna visar siffror och kemiska tecken (O₂, CO₂) men inga ord och inget rött kors.
+- 72 symbol- och adjektivbilder blindtestades. 61 klarade testet efter högst två omgångar.
+- **11 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *biodiversitet/biologisk mångfald*.
+
+Service workern är `swechan-v56`.
+
+
+## 0.51.0 – 2026-11-18
+
+42 nya moduler som gör överämnet *Kemi* (R06-A04) komplett. Modulerna lär ut det svenska ordförrådet för skolkemi med vardagliga exempel (kök, städning, mat, kropp, natur). Varje nytt modulord har en egen bild, utom de 27 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 693 målord)
+- **Atomer & periodiska systemet** (3411–3417): atomens grunddelar, grundämnen, atomnummer och masstal, periodiska systemets grupper, metaller och icke-metaller, isotoper samt elektronskal och valenselektroner. Gruppen innehåller också den ursprungliga modulen *Atomer och molekyler*.
+- **Molekyler & kemiska bindningar** (3421–3427): molekyler och kemiska formler, kovalenta bindningar, joner och jonbindning, metallbindning, molekylers former, polära och opolära molekyler samt intermolekylära krafter. Gruppen innehåller också den ursprungliga modulen *Material och ämnen*.
+- **Kemiska reaktioner** (3431–3437): reaktanter och produkter, reaktionsformler, balansera reaktioner, förbränning, oxidation och reduktion, fällningsreaktioner och reaktionshastighet.
+- **Syror, baser & lösningar** (3441–3447): syror och baser, pH-skalan, starka och svaga syror, neutralisation, salter, lösningar och koncentration samt buffertlösningar.
+- **Organisk kemi** (3451–3457): kolväten, alkoholer, karboxylsyror, estrar, kolhydraters kemi, fett och fettsyror samt polymerer och plaster.
+- **Laboratoriekemi** (3461–3467): laboratorieglas, mätinstrument, säkerhetssymboler, väga och mäta, filtrering och destillation, titrering och att dokumentera laborationer.
+- Varje modul har 15–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 253 nya ordposter. Grundord som *grupp*, *period*, *salt*, *sur*, *alkohol* och *mäta* har fått egna poster med en vardaglig och en kemisk betydelse.
+- 27 nya betydelser på befintliga poster, där vardagsordet fått sin kemibetydelse: bland andra *stabil*, *instabil*, *avge* (atomer), *index* och *spröd* (bindningar), *produkt*, *koefficient*, *balansera*, *överskott*, *reduktion*, *klar* och *tillsätta* (reaktioner), *syra*, *bas*, *neutral*, *indikator*, *lösning*, *mättad* och *koncentration* (lösningar) samt *bägare*, *spatel*, *visare*, *menisk*, *separera* och *stativ* (laboratoriet). Den gamla betydelsen har fått en etikett.
+- Parallella grupper ville skapa samma poster (*ädelgasstruktur*, *elektronformel*, *formbar*, *spröd*, *index*, *avkalka*, *citronsyra*, *mjölksyra*, *droppvis*, *ättika*). Posten finns bara i den grupp som lade in den först, och de andra refererar dess `senseId`.
+- Rättning: posten *myrsyra* (`s.myrsyra.1`) beskrev myrsyra som en stark syra; den är svag.
+- Namnen *CH* och *CO* är tillagda i grundordförrådet så att formler som CH₄ och CO₂ godkänns.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Biologi* (R06-A05): Cellbiologi → Cellens delar.
+
+### Bilder (256 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `atomsPeriodic.ts`, `bonds.ts`, `reactions.ts`, `acidsBases.ts`, `organicChem.ts` och `labChem.ts`. Farosymbolerna är förenklade GHS-romber utan text.
+- 146 symbol- och adjektivbilder blindtestades. 119 klarade testet efter högst två omgångar.
+- **27 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *koksalt/natriumklorid*.
+
+Service workern är `swechan-v55`.
+
+
+## 0.50.0 – 2026-11-17
+
+42 nya moduler som gör överämnet *Fysik* (R06-A03) komplett. Modulerna lär ut det svenska ordförrådet för skolfysik med vardagliga exempel (cykel, kök, väder, mobiltelefon, elnät). Varje nytt modulord har en egen bild, utom de 32 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 698 målord)
+- **Mekanik** (3311–3317): sträcka och förflyttning, hastighet och acceleration, kraft och massa, Newtons rörelselagar, arbete och energi, rörelsemängd och impuls samt rotation och vridmoment.
+- **Vågor & ljud** (3321–3327): svängningar, frekvens och period, våglängd och amplitud, ljudets utbredning, resonans, dopplereffekten samt interferens och diffraktion.
+- **Ljus & optik** (3331–3337): reflektion, brytning, linser och speglar, färger och spektrum, elektromagnetiska vågor, polarisation och optiska instrument.
+- **Elektricitet & magnetism** (3341–3347): elektrisk laddning, ström och spänning, resistans och ledare, elektriska fält, magnetfält, elektromagnetisk induktion och elektriska kretsar.
+- **Värmelära & termodynamik** (3351–3357): temperatur och värme, aggregationstillstånd, värmekapacitet, värmeledning och isolering, termodynamikens huvudsatser, entropi och värmemaskiner.
+- **Modern fysik** (3361–3367): atomer och subatomära partiklar, elektroner och kvanttal, fotoner och kvanta, radioaktivitet och kärnreaktioner, relativitetsteori, kvantmekanikens grundidéer och partikelacceleratorer.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 295 nya ordposter. Grundord som *kraft*, *rörelse*, *arbete*, *effekt*, *spänning*, *ballong* och *foton* har fått egna poster.
+- 26 nya betydelser på befintliga poster, där vardagsordet fått sin fysikbetydelse: bland andra *fjäder* och *impuls* (mekanik), *frekvens*, *våg*, *utslag*, *nod*, *buk* och *spalt* (vågor), *reflektion*, *prisma*, *mottagare* och *fokusera* (optik), *ström*, *ledare*, *motstånd*, *induktion*, *komponent*, *nordpol* och *sydpol* (el), *värme*, *frysa* och *isolering* (värme) samt *energinivå* (modern fysik). Den gamla betydelsen har fått en etikett.
+- Parallella grupper ville skapa samma poster (*skimra*, *turbin*, *lysdiod*, *fjäder*, *stötdämpare*, *varvtal*). Posten finns bara i den grupp som lade in den först, och de andra refererar dess `senseId`.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Kemi* (R06-A04): Kemiska reaktioner → Reaktanter och produkter. De två första kemigrupperna innehåller redan var sin ursprunglig modul (*Atomer och molekyler*, *Material och ämnen*) och har därför åtta val.
+
+### Bilder (292 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `mechanics.ts`, `wavesSound.ts`, `lightOptics.ts`, `electricity.ts`, `thermo.ts` och `modernPhysics.ts`. Bilderna visar siffror, enheter som m/s och tecken men inga ord.
+- 175 symbol- och adjektivbilder blindtestades. 143 klarade testet efter högst två omgångar.
+- **32 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+
+Service workern är `swechan-v54`.
+
 
 ## 0.49.0 – 2026-11-17
 

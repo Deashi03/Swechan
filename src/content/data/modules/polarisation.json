@@ -1,0 +1,177 @@
+{
+ "id": "m.polarisation",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Polarisation",
+ "titleJa": "{偏光|へんこう}",
+ "descriptionSv": "Polarisation: riktning, vinkelrät, parallell, vågrät, filter, polarisation, släppa igenom, kristall, rotera, solglasögon, dämpa, ljusstyrka, intensitet, skärm, blänk och bi.",
+ "descriptionJa": "{偏光|へんこう}：{方向|ほうこう}、{垂直|すいちょく}な、{平行|へいこう}な、{水平|すいへい}な、フィルター、{偏光|へんこう}、{通|とお}す、{結晶|けっしょう}、{回転|かいてん}させる、サングラス、{弱|よわ}める、{明|あか}るさ、{強|つよ}さ、{画面|がめん}、ぎらつき、ハチ。",
+ "categoryId": "R06-A03-T03",
+ "tags": [
+  "fysik",
+  "optik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.elektromagnetiska-vagor"
+ ],
+ "related": [],
+ "recommendedOrder": 3336,
+ "words": [
+  {
+   "senseId": "s.riktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinkelrät.1",
+   "active": false
+  },
+  {
+   "senseId": "s.parallell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vågrät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.polarisation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släppa-igenom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kristall.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rotera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solglasögon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dämpa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljusstyrka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intensitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skärm.2",
+   "active": true
+  },
+  {
+   "senseId": "s.blänk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bi.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Solglasögon vid sjön",
+  "paragraphs": [
+   "Johan ska fiska med sin dotter Ida. Solen står lågt, och det är mycket blänk på vattnet. Det bländar dem. Johan tar på sig sina solglasögon. Plötsligt kan han se fiskarna under vattnet.",
+   "Johan förklarar att ljus är en våg som svänger åt alla håll. Men när ljuset reflekteras mot vatten svänger det mest vågrätt. Det kallas polarisation. Solglasögonen har ett filter som bara släpper igenom ljus som svänger lodrätt. Därför dämpar de blänket från vattnet.",
+   "Hemma visar Johan ett försök. Han håller två filter framför en lampa. När filtren är parallella går ljuset igenom. Sedan roterar han det ena filtret långsamt. När filtren står vinkelrätt mot varandra blir det nästan mörkt. Vissa kristaller kan också ge ljuset polarisation.",
+   "Ida tittar på skärmen på sin dator med solglasögonen på. När hon vrider på huvudet ändras ljusstyrkan. I en viss riktning blir skärmen nästan svart. Ljusets intensitet blir lägre, eftersom skärmen också använder polarisation.",
+   "På helgen går de på bio och ser en film i 3D med särskilda glasögon. Glasögonen har olika filter för höger och vänster öga, så att bilden ser ut att ha djup. – Bin kan se polarisation på himlen och använder den för att hitta hem, säger Johan. Ida tycker att ljus är mer spännande än hon trodde."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför tar Johan på sig solglasögonen?",
+    "options": [
+     "Det regnar",
+     "Blänket på vattnet bländar dem",
+     "Han vill se ut som en filmstjärna",
+     "Han har glömt sina vanliga glasögon"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Solen står lågt, och det är mycket blänk på vattnet. Det bländar dem.",
+    "explanationJa": "{水面|すいめん}のぎらつきがまぶしいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur svänger ljuset som reflekteras mot vatten?",
+    "options": [
+     "Mest vågrätt",
+     "Mest lodrätt",
+     "Inte alls",
+     "Åt alla håll lika mycket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Men när ljuset reflekteras mot vatten svänger det mest vågrätt.",
+    "explanationJa": "おもに{横|よこ}{向|む}きに{振動|しんどう}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad händer när filtren står vinkelrätt mot varandra?",
+    "options": [
+     "Ljuset blir starkare",
+     "Det blir nästan mörkt",
+     "Ljuset blir rött",
+     "Ingenting händer"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När filtren står vinkelrätt mot varandra blir det nästan mörkt.",
+    "explanationJa": "ほとんど{暗|くら}くなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Bin kan använda polarisation på himlen för att hitta hem.",
+    "correct": true,
+    "explanationSv": "– Bin kan se polarisation på himlen och använder den för att hitta hem …",
+    "explanationJa": "ミツバチは{空|そら}の{偏光|へんこう}を{使|つか}って{巣|す}に{帰|かえ}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Solglasögonen släpper mest igenom ljus som svänger vågrätt.",
+    "correct": false,
+    "explanationSv": "Solglasögonen har ett filter som bara släpper igenom ljus som svänger lodrätt.",
+    "explanationJa": "サングラスは{縦|たて}{向|む}きに{振動|しんどう}する{光|ひかり}だけを{通|とお}します。"
+   }
+  ],
+  "factSources": [
+   "Ljus som reflekteras mot vatten blir delvis polariserat i vågrät riktning; polariserande solglasögon släpper främst igenom lodrätt svängande ljus och dämpar därför blänk.",
+   "Två polarisationsfilter som står vinkelrätt mot varandra släpper nästan inte igenom något ljus; vissa kristaller (t.ex. kalkspat, turmalin) påverkar ljusets polarisation.",
+   "LCD-skärmar använder polarisationsfilter; många 3D-biografer använder glasögon med polarisationsfilter.",
+   "Bin kan uppfatta himlens polarisationsmönster och använder det för att orientera sig.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om solglasögon, skärmar och ljus som svänger åt olika håll.",
+  "discussionPoints": [
+   "När använder du solglasögon?",
+   "Var har du sett mycket blänk, och vad gjorde du då?",
+   "Hur ändrar du ljusstyrkan på din mobil, och när gör du det?",
+   "Vad tror du att man kan använda polarisation till?"
+  ]
+ }
+}

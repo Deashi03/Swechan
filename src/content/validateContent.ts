@@ -253,6 +253,58 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.noggrannhet.2', 's.numerisk.1', 's.startvärde.1', 's.målfunktion.1', 's.kryptografi.1', 's.öppen-nyckel.1',
   // 0.49 Matematikens specialområden: förväxlas med töja, noggrannhet respektive kryptera efter två blindomgångar
   's.deformera.1', 's.exakt.1', 's.chiffer.1',
+  // 0.50 Mekanik: förväxlas med närliggande ord i samma modul
+  's.förflyttning.1', 's.rörelse.1', 's.momentanhastighet.1', 's.retardation.1', 's.newton.1', 's.motkraft.1', 's.energiomvandling.1', 's.vridmoment.1',
+  // 0.50 Ljus & optik: förväxlas med reflektera respektive lupp
+  's.reflektion.2', 's.förstoring.1',
+  // 0.50 Ljus & optik: förväxlas med konkav/konvex efter två blindomgångar
+  's.spridningslins.1', 's.samlingslins.1',
+  // 0.50 Vågor & ljud: förväxlas med vibration, frekvens respektive regelbunden
+  's.svängning.1', 's.hertz.1', 's.periodisk.1',
+  // 0.50 Elektricitet & magnetism: förväxlas med motstånd
+  's.resistans.1',
+  // 0.50 Värmelära & termodynamik: abstrakta fackord som förväxlas med närliggande ord
+  's.tillföra.1', 's.värmeförlust.1', 's.termodynamik.1', 's.inre-energi.1', 's.energiprincipen.1', 's.entropi.1', 's.diffusion.1', 's.oordning.1',
+  // 0.50 Värmelära & termodynamik: förväxlas med smälta efter två blindomgångar
+  's.smältpunkt.1',
+  // 0.50 Modern fysik: abstrakta fackord som förväxlas med närliggande ord
+  's.kvantum.1', 's.kvanttal.1', 's.spektrallinje.1', 's.sönderfall.1', 's.kvantmekanik.1', 's.partikelstråle.1',
+  // 0.50 Modern fysik: förväxlas med kvantum efter två blindomgångar
+  's.foton.1',
+  // 0.51 Molekyler & kemiska bindningar: förväxlas med huvudordet eller samma ordfamilj
+  's.positiv-jon.1', 's.negativ-jon.1', 's.laddad.1', 's.leda-ström.1', 's.vinklad.1', 's.bindningsvinkel.1', 's.flyktig.1', 's.intermolekylär-kraft.1', 's.van-der-Waals-kraft.1',
+  // 0.51 Molekyler & kemiska bindningar: förväxlas med kristall respektive lösa sig efter två blindomgångar
+  's.gitter.1', 's.fettlöslig.1',
+  // 0.51 Kemiska reaktioner: förväxlas med reaktion, rost respektive hastighet
+  's.kemisk-förändring.1', 's.bildas.1', 's.oxidation.1', 's.reaktionshastighet.1',
+  // 0.51 Atomer & periodiska systemet: förväxlas med närliggande ord
+  's.nukleon.1', 's.reaktiv.1', 's.deuterium.1', 's.instabil.2', 's.fullt-skal.1',
+  // 0.51 Atomer & periodiska systemet: förväxlas med grupp efter två blindomgångar
+  's.halogen.1',
+  // 0.51 Syror, baser & lösningar: förväxlas med närliggande ord eller samma ordfamilj
+  's.pH-värde.1', 's.försurning.1', 's.ta-ut-varandra.2', 's.lösning.3', 's.koncentration.2',
+  // 0.51 Organisk kemi: förväxlas med tvål
+  's.förtvålning.1',
+  // 0.52 Cellbiologi: förväxlas med transportprotein efter två blindomgångar
+  's.passiv-transport.1',
+  // 0.52 Evolution: förväxlas med stamträd respektive uppvaktning
+  's.gren.2', 's.sexuell-selektion.1',
+  // 0.52 Evolution: förväxlas med fossil respektive hane efter två blindomgångar
+  's.förstenad.1', 's.ståtlig.1',
+  // 0.52 Genetik & arv: förväxlas med mutation, slå på respektive genteknik
+  's.kopieringsfel.1', 's.genuttryck.1', 's.genmodifierad.1',
+  // 0.52 Genetik & arv: förväxlas med miljögift efter två blindomgångar
+  's.skadlig.1',
+  // 0.52 Ekologi & organismvärlden: förväxlas med topprovdjur respektive lämmelår efter två blindomgångar
+  's.tertiärkonsument.1', 's.massförökning.1',
+  // 0.53 Solens system: förväxlas med den röda planeten respektive kollision/jordnära efter två blindomgångar
+  's.livlös.1', 's.kollisionskurs.1',
+  // 0.53 Himlens rörelser: förväxlas med kärnskugga, vårdagjämning respektive solur efter två blindomgångar
+  's.månförmörkelse.1', 's.vårpunkt.1', 's.soltid.1',
+  // 0.53 Galaxer & universum: förväxlas med avlägsna sig/accelerera respektive dopplereffekt efter två blindomgångar
+  's.mörk-energi.1', 's.blåförskjutning.1',
+  // 0.53 Astronomins metoder: förväxlas med spektrum/fingeravtryck/analysera efter två blindomgångar
+  's.spektroskopi.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

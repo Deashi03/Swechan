@@ -1,0 +1,174 @@
+{
+ "id": "m.dokumentera-laborationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Dokumentera laborationer",
+ "titleJa": "{実験|じっけん}の{記録|きろく}",
+ "descriptionSv": "Dokumentera laborationer: laboration, labbrapport, rubrik, syfte, hypotes, material, riskbedömning, utförande, observation, anteckna, beskriva, tabell, diagram, slutsats, felkälla och sammanfattning.",
+ "descriptionJa": "{実験|じっけん}の{記録|きろく}：（{理科|りか}の）{実験|じっけん}、{実験|じっけん}レポート、{見出|みだ}し、{目的|もくてき}、{仮説|かせつ}、{材料|ざいりょう}、リスク{評価|ひょうか}、{手順|てじゅん}、{観察|かんさつ}、メモする、{説明|せつめい}する、{表|ひょう}、グラフ、{結論|けつろん}、{誤差|ごさ}の{原因|げんいん}、{要約|ようやく}。",
+ "categoryId": "R06-A04-T06",
+ "tags": [
+  "kemi",
+  "laboratoriekemi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.titrering"
+ ],
+ "related": [],
+ "recommendedOrder": 3467,
+ "words": [
+  {
+   "senseId": "s.laboration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.labbrapport.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rubrik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.syfte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hypotes.1",
+   "active": true
+  },
+  {
+   "senseId": "s.material.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riskbedömning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utförande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.observation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.anteckna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beskriva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diagram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felkälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanfattning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rapporten efter titreringen",
+  "paragraphs": [
+   "Efter varje laboration skriver Jonas en labbrapport. Läraren har gett klassen samma rubriker att använda varje gång. Överst skriver man en kort sammanfattning av hela försöket.",
+   "Under syfte skriver Jonas varför de gjorde försöket: att ta reda på hur sur ättikan är. Under hypotes skriver han vad han tror: att ättikan är 12 %, som det står på flaskan. Sedan kommer material, en lista över allt de använde, och en riskbedömning: basen är frätande, så man ska ha skyddsglasögon.",
+   "I utförandet beskriver han steg för steg vad de gjorde. Under laborationen antecknade han allt i en bok, så nu är det lätt att skriva. Han beskriver också sina observationer, till exempel att lösningen blev rosa.",
+   "Resultaten sätter han i en tabell med tre mätvärden och ett medelvärde. Han ritar också ett enkelt diagram.",
+   "I diskussionen skriver han om felkällor: en gång läste han av byretten från fel höjd. Till sist kommer slutsatsen: ättikan var 12 %, och hypotesen stämde."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad skriver man överst i labbrapporten?",
+    "options": [
+     "Slutsatsen",
+     "En tabell",
+     "En kort sammanfattning",
+     "Materialet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Överst skriver man en kort sammanfattning av hela försöket.",
+    "explanationJa": "{一番上|いちばんうえ}には{短|みじか}い{要約|ようやく}を{書|か}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad skriver Jonas under hypotes?",
+    "options": [
+     "Varför de gjorde försöket",
+     "Vad som var farligt",
+     "Vad han tror att resultatet blir",
+     "Vad de använde"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Under hypotes skriver han vad han tror …",
+    "explanationJa": "{結果|けっか}がどうなると{思|おも}うかを{書|か}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är det lätt för Jonas att skriva utförandet?",
+    "options": [
+     "Han antecknade allt under laborationen",
+     "Läraren skrev det åt honom",
+     "Han kom ihåg allt utan att skriva",
+     "Försöket var mycket kort"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Under laborationen antecknade han allt i en bok, så nu är det lätt att skriva.",
+    "explanationJa": "{実験中|じっけんちゅう}にすべてメモしていたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Jonas sätter sina resultat i en tabell.",
+    "correct": true,
+    "explanationSv": "Resultaten sätter han i en tabell …",
+    "explanationJa": "{結果|けっか}を{表|ひょう}にまとめています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Jonas hypotes visade sig vara fel.",
+    "correct": false,
+    "explanationSv": "… ättikan var 12 %, och hypotesen stämde.",
+    "explanationJa": "{仮説|かせつ}は{正|ただ}しかったです。"
+   }
+  ],
+  "factSources": [
+   "En labbrapport i svensk skola har ofta rubrikerna syfte, hypotes, material, riskbedömning, utförande, resultat, diskussion och slutsats; mallen varierar mellan skolor.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att skriva rapporter i skolan och på jobbet.",
+  "discussionPoints": [
+   "Har du skrivit en labbrapport eller en annan rapport? Vad var svårast?",
+   "Varför är det bra att anteckna under ett försök?",
+   "Vad är skillnaden mellan en hypotes och en slutsats?",
+   "Tycker du om att göra tabeller och diagram?"
+  ]
+ }
+}

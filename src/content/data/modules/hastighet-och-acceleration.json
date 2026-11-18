@@ -1,0 +1,175 @@
+{
+ "id": "m.hastighet-och-acceleration",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-17",
+ "titleSv": "Hastighet och acceleration",
+ "titleJa": "{速度|そくど}と{加速度|かそくど}",
+ "descriptionSv": "Hastighet och acceleration: hastighet, medelhastighet, momentanhastighet, hastighetsmätare, kilometer i timmen, meter per sekund, konstant hastighet, acceleration, retardation, bromsa, bromssträcka, sakta ner, hastighetsgräns, fartkamera, fritt fall och stoppur.",
+ "descriptionJa": "{速度|そくど}と{加速度|かそくど}：{速度|そくど}、{平均速度|へいきんそくど}、{瞬間速度|しゅんかんそくど}、スピードメーター、{時速|じそく}〜キロ、{秒速|びょうそく}〜メートル、{等速|とうそく}、{加速度|かそくど}、{減速|げんそく}、ブレーキをかける、{制動距離|せいどうきょり}、スピードを{落|お}とす、{制限速度|せいげんそくど}、{速度|そくど}{違反|いはん}{取締|とりしま}りカメラ、{自由落下|じゆうらっか}、ストップウォッチ。",
+ "categoryId": "R06-A03-T01",
+ "tags": [
+  "fysik",
+  "mekanik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.stracka-och-forflyttning"
+ ],
+ "related": [],
+ "recommendedOrder": 3312,
+ "words": [
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelhastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.momentanhastighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hastighetsmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilometer-i-timmen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.meter-per-sekund.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konstant-hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.acceleration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.retardation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromssträcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sakta-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighetsgräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fartkamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fritt-fall.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stoppur.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Johans cykeltur",
+  "paragraphs": [
+   "Johan cyklar till jobbet varje morgon. Han har en liten hastighetsmätare på cykeln. När han startar vid huset står den på noll. Sedan trampar han hårt och får en stor acceleration.",
+   "På den långa raka vägen längs ån håller han konstant hastighet: 20 kilometer i timmen. Det är ungefär 5,6 meter per sekund. Hastighetsmätaren visar hans momentanhastighet, alltså hur fort han cyklar just nu.",
+   "Vid skolan är hastighetsgränsen 30 kilometer i timmen för bilar, och där står en fartkamera. Johan saktar ner ändå, eftersom det finns många barn där. När han bromsar har cykeln en retardation.",
+   "Plötsligt springer en katt ut på vägen. Johan bromsar hårt. Bromssträckan blir bara tre meter, och katten klarar sig. Johan tänker: om det hade regnat hade bromssträckan blivit längre.",
+   "På jobbet tittar han på sitt stoppur. Han cyklade fem kilometer på 20 minuter, så hans medelhastighet var 15 kilometer i timmen. På lunchen ser han en film om människor som hoppar från ett flygplan. De första sekunderna är de nästan i fritt fall. När de öppnar fallskärmen minskar hastigheten snabbt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar hastighetsmätaren på Johans cykel?",
+    "options": [
+     "Hur långt han har cyklat",
+     "Hur lång tid resan tar",
+     "Vilken väg han ska ta",
+     "Hur fort han cyklar just nu"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hastighetsmätaren visar hans momentanhastighet, alltså hur fort han cyklar just nu.",
+    "explanationJa": "{今|いま}どのくらいの{速|はや}さで{走|はし}っているか（{瞬間速度|しゅんかんそくど}）を{示|しめ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur fort cyklar Johan längs ån?",
+    "options": [
+     "30 kilometer i timmen",
+     "20 kilometer i timmen",
+     "15 kilometer i timmen",
+     "5 kilometer i timmen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På den långa raka vägen längs ån håller han konstant hastighet: 20 kilometer i timmen.",
+    "explanationJa": "{川|かわ}{沿|ぞ}いでは{時速|じそく}20キロの{一定|いってい}の{速度|そくど}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför saktar Johan ner vid skolan?",
+    "options": [
+     "Det finns många barn där",
+     "Han har ont i benen",
+     "Cykeln är trasig",
+     "Han är framme vid jobbet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Johan saktar ner ändå, eftersom det finns många barn där.",
+    "explanationJa": "{子|こ}どもがたくさんいるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Bromssträckan blev tre meter när katten sprang ut.",
+    "correct": true,
+    "explanationSv": "Bromssträckan blir bara tre meter, och katten klarar sig.",
+    "explanationJa": "{制動距離|せいどうきょり}はたった3メートルでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Johans medelhastighet var högre än hastigheten längs ån.",
+    "correct": false,
+    "explanationSv": "… så hans medelhastighet var 15 kilometer i timmen.",
+    "explanationJa": "{平均速度|へいきんそくど}は{時速|じそく}15キロで、{川|かわ}{沿|ぞ}いの20キロより{遅|おそ}いです。"
+   }
+  ],
+  "factSources": [
+   "Fritt fall nära jordytan: hastigheten ökar med ungefär 9,8 m/s varje sekund (tyngdaccelerationen är cirka 9,82 m/s² i Sverige).",
+   "1 m/s = 3,6 km/h; 20 km/h ≈ 5,6 m/s; 5 km på 20 minuter = 15 km/h.",
+   "Hastighetsgränsen vid skolor är ofta 30 km/h i svenska tätorter men bestäms lokalt; scenen är påhittad."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fart och trafik.",
+  "discussionPoints": [
+   "Hur fort brukar du cykla eller gå?",
+   "Vad tycker du om fartkameror?",
+   "Varför blir bromssträckan längre när det är halt?",
+   "Har du åkt något med stor acceleration, till exempel ett flygplan som lyfter?"
+  ]
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "id": "m.atomnummer-och-masstal",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Atomnummer och masstal",
+ "titleJa": "{原子番号|げんしばんごう}と{質量数|しつりょうすう}",
+ "descriptionSv": "Atomnummer och masstal: atomnummer, masstal, proton, neutron, elektron, kemiskt tecken, periodiska systemet, väte, kol, lika många, räkna ut, summa, skillnad, subtrahera, atommassa, medelvärde och avrunda.",
+ "descriptionJa": "{原子番号|げんしばんごう}と{質量数|しつりょうすう}：{原子番号|げんしばんごう}、{質量数|しつりょうすう}、{陽子|ようし}、{中性子|ちゅうせいし}、{電子|でんし}、{元素記号|げんそきごう}、{周期表|しゅうきひょう}、{水素|すいそ}、{炭素|たんそ}、{同|おな}じ{数|かず}の、{計算|けいさん}する、{合計|ごうけい}、{差|さ}、{引|ひ}く、{原子量|げんしりょう}、{平均値|へいきんち}、{四捨五入|ししゃごにゅう}する。",
+ "categoryId": "R06-A04-T01",
+ "tags": [
+  "kemi",
+  "atomer"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.grundamnen"
+ ],
+ "related": [],
+ "recommendedOrder": 3413,
+ "words": [
+  {
+   "senseId": "s.atomnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.masstal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.proton.1",
+   "active": true
+  },
+  {
+   "senseId": "s.neutron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kemiskt-tecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.periodiska-systemet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lika-många.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räkna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.summa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skillnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.subtrahera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.atommassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avrunda.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Räkna med atomer",
+  "paragraphs": [
+   "Takeshi läser kemi på kvällarna. På kylskåpet sitter periodiska systemet, och varje ruta har ett kemiskt tecken. C står för kol, O för syre och N för kväve. – Varför heter kväve N? frågar hans dotter Emma. – Det kommer från latin, säger Takeshi.",
+   "Ovanför varje kemiskt tecken står atomnumret. Det är antalet protoner i atomkärnan. Väte har atomnummer 1, kol har 6 och syre har 8. I en neutral atom finns det lika många elektroner som protoner, så en kolatom har också sex elektroner.",
+   "Sedan läser Takeshi om masstalet. Det är summan av protonerna och neutronerna i kärnan. Om man vill räkna ut hur många neutroner en atom har, subtraherar man atomnumret från masstalet. Kol har masstal 12, och skillnaden mellan 12 och 6 är 6. Alltså har kolatomen sex neutroner.",
+   "Men i rutan för kol står det också 12,01. – Vad är det för tal? frågar Emma. Det är atommassan, alltså hur mycket en kolatom väger i medeltal. Några kolatomer har fler neutroner och väger lite mer. Atommassan är ett medelvärde, och om man avrundar den får man 12.",
+   "Emma vill testa sin pappa. – Järn har atomnummer 26 och masstal 56. Hur många neutroner har en järnatom? Takeshi räknar i huvudet: 56 minus 26 är 30. – Rätt! säger Emma. Nu får du laga middag."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar atomnumret?",
+    "options": [
+     "Antalet protoner i kärnan",
+     "Hur mycket atomen väger",
+     "Antalet neutroner i kärnan",
+     "Hur gammal atomen är"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ovanför varje kemiskt tecken står atomnumret. Det är antalet protoner i atomkärnan.",
+    "explanationJa": "{原子番号|げんしばんごう}は{原子核|げんしかく}の{中|なか}の{陽子|ようし}の{数|かず}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Hur räknar man ut antalet neutroner?",
+    "options": [
+     "Man lägger ihop atomnumret och masstalet",
+     "Man avrundar atommassan",
+     "Man subtraherar atomnumret från masstalet",
+     "Man räknar elektronerna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… subtraherar man atomnumret från masstalet.",
+    "explanationJa": "{質量数|しつりょうすう}から{原子番号|げんしばんごう}を{引|ひ}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför har atommassan för kol decimaler?",
+    "options": [
+     "Man har mätt fel",
+     "Den är ett medelvärde av många atomer",
+     "Kol har halva protoner",
+     "Det är ett kemiskt tecken"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Några kolatomer har fler neutroner och väger lite mer. Atommassan är ett medelvärde …",
+    "explanationJa": "{原子|げんし}によって{重|おも}さが{少|すこ}し{違|ちが}うので、{平均|へいきん}の{値|あたい}になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En kolatom har lika många elektroner som protoner.",
+    "correct": true,
+    "explanationSv": "… så en kolatom har också sex elektroner.",
+    "explanationJa": "{炭素原子|たんそげんし}には{陽子|ようし}と{同|おな}じ6{個|こ}の{電子|でんし}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En järnatom har fler protoner än neutroner.",
+    "correct": false,
+    "explanationSv": "Järn har atomnummer 26 … 56 minus 26 är 30.",
+    "explanationJa": "{陽子|ようし}は26{個|こ}、{中性子|ちゅうせいし}は30{個|こ}なので、{中性子|ちゅうせいし}のほうが{多|おお}いです。"
+   }
+  ],
+  "factSources": [
+   "Atomnumret är antalet protoner (väte 1, kol 6, syre 8, järn 26); masstalet är antalet protoner och neutroner tillsammans.",
+   "Den vanligaste järnisotopen har masstal 56 och alltså 30 neutroner.",
+   "Kolets atommassa är ungefär 12,01 u, ett vägt medelvärde av isotoperna kol-12 och kol-13.",
+   "Tecknet N för kväve kommer från det latinska namnet nitrogenium.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att räkna med atomer och om periodiska systemet.",
+  "discussionPoints": [
+   "Tycker du om att räkna? Var i vardagen räknar du mest?",
+   "Vilka kemiska tecken kan du utan att titta?",
+   "Varför tror du att alla länder använder samma kemiska tecken?",
+   "Hur skulle du förklara skillnaden mellan atomnummer och masstal?"
+  ]
+ }
+}

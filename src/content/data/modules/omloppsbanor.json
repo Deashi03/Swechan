@@ -1,0 +1,181 @@
+{
+ "id": "m.omloppsbanor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Omloppsbanor",
+ "titleJa": "{軌道|きどう}",
+ "descriptionSv": "Omloppsbanor: omloppsbana, kretsa, höjd, varv, passera, synlig, med blotta ögat, tyngdkraft, jordklot, fritt fall, centripetalkraft, luftmotstånd, atmosfär, geostationär, ekvator, rymdskrot och kollidera.",
+ "descriptionJa": "{軌道|きどう}：{軌道|きどう}、（〜の{周|まわ}りを）{回|まわ}る、{高|たか}さ、{一周|いっしゅう}、{通|とお}り{過|す}ぎる、{見|み}える、{肉眼|にくがん}で、{重力|じゅうりょく}、{地球|ちきゅう}、{自由落下|じゆうらっか}、{向心力|こうしんりょく}、{空気抵抗|くうきていこう}、{大気|たいき}、{静止軌道|せいしきどう}の、{赤道|せきどう}、スペースデブリ、{衝突|しょうとつ}する。",
+ "categoryId": "R06-A06-T05",
+ "tags": [
+  "astronomi",
+  "rymdfart"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.raketer-och-raketmotorer"
+ ],
+ "related": [],
+ "recommendedOrder": 3652,
+ "words": [
+  {
+   "senseId": "s.omloppsbana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kretsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.med-blotta-ögat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tyngdkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jordklot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fritt-fall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.centripetalkraft.1",
+   "active": false
+  },
+  {
+   "senseId": "s.luftmotstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.atmosfär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.geostationär.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ekvator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rymdskrot.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kollidera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En ljuspunkt på himlen",
+  "paragraphs": [
+   "En klar kväll i september står Kenji och hans dotter Emma på balkongen. Plötsligt ser de en ljus punkt som rör sig snabbt över himlen. Den blinkar inte. – Det är rymdstationen ISS, säger Kenji. Den är synlig med blotta ögat när solen lyser på den.",
+   "ISS kretsar runt jorden på en höjd av ungefär 400 kilometer. Den gör ett varv på ungefär en och en halv timme. Den passerar alltså över Sverige flera gånger om dagen, men man kan bara se den ibland.",
+   "– Varför faller den inte ner? frågar Emma. – Den faller faktiskt hela tiden, svarar Kenji. Tyngdkraften drar stationen mot jordklotet, men den åker så fort framåt att den faller runt jorden i stället för ner. Det kallas fritt fall. Tyngdkraften fungerar som en centripetalkraft som håller stationen kvar i sin omloppsbana.",
+   "Lite luft finns kvar även på den höjden. Luftmotståndet bromsar stationen långsamt, och den skulle sjunka ner i atmosfären om man inte ibland lyfte den högre med raketmotorer. – Andra satelliter är geostationära, berättar Kenji. De ligger mycket längre bort, över ekvatorn, och är alltid över samma plats.",
+   "Emma har läst om rymdskrot. Runt jorden finns gamla satelliter och delar av raketer. – Om två saker kolliderar, blir det ännu fler bitar, säger hon allvarligt. Ljuspunkten försvinner bakom ett hus, och Emma vill genast veta när stationen passerar nästa gång."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur högt över jorden kretsar ISS?",
+    "options": [
+     "Ungefär 400 kilometer",
+     "Ungefär 40 kilometer",
+     "Ungefär 36 000 kilometer",
+     "Ungefär 4 000 kilometer"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "ISS kretsar runt jorden på en höjd av ungefär 400 kilometer.",
+    "explanationJa": "{約|やく}400キロメートルの{高|たか}さを{回|まわ}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför faller ISS inte ner på jorden?",
+    "options": [
+     "Det finns ingen tyngdkraft där",
+     "Den har stora vingar",
+     "Den hänger i en geostationär satellit",
+     "Den åker så fort framåt att den faller runt jorden"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… den åker så fort framåt att den faller runt jorden i stället för ner.",
+    "explanationJa": "{前|まえ}に{進|すす}む{速|はや}さがとても{速|はや}いので、{地球|ちきゅう}の{周|まわ}りを{落|お}ち{続|つづ}けているのです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att en satellit är geostationär?",
+    "options": [
+     "Den kretsar mycket nära jorden",
+     "Den är alltid över samma plats",
+     "Den har slutat fungera",
+     "Den syns bara på vintern"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De ligger mycket längre bort, över ekvatorn, och är alltid över samma plats.",
+    "explanationJa": "いつも{同|おな}じ{場所|ばしょ}の{上|うえ}にある{衛星|えいせい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Luftmotståndet gör att ISS långsamt sjunker.",
+    "correct": true,
+    "explanationSv": "Luftmotståndet bromsar stationen långsamt, och den skulle sjunka ner i atmosfären …",
+    "explanationJa": "{空気抵抗|くうきていこう}でステーションは{少|すこ}しずつ{下|さ}がります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emma tycker att rymdskrot inte är något problem.",
+    "correct": false,
+    "explanationSv": "– Om två saker kolliderar, blir det ännu fler bitar, säger hon allvarligt.",
+    "explanationJa": "エマは{真剣|しんけん}に{心配|しんぱい}しています。"
+   }
+  ],
+  "factSources": [
+   "ISS går runt jorden på ungefär 400 kilometers höjd och gör ett varv på ungefär 90 minuter; den syns som en ljus punkt som inte blinkar (NASA, \"International Space Station Facts and Figures\").",
+   "Luftmotståndet gör att ISS sjunker långsamt, och stationen lyfts därför regelbundet med raketmotorer (ESA, \"ISS reboost\").",
+   "Geostationära satelliter ligger ungefär 35 800 kilometer över ekvatorn och går ett varv på samma tid som jorden roterar (Nationalencyklopedin, \"geostationär bana\").",
+   "Kollisioner mellan föremål i omloppsbana skapar ännu mer rymdskrot (ESA, \"Space debris\").",
+   "Kenji och Emma är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om satelliter och rymdstationer som går runt jorden.",
+  "discussionPoints": [
+   "Har du sett ISS eller en satellit på himlen?",
+   "Hur skulle du förklara varför en satellit inte faller ner?",
+   "Vad tycker du att man ska göra med rymdskrot?",
+   "Vilka satelliter använder du i vardagen, tror du?"
+  ]
+ }
+}
