@@ -1,0 +1,179 @@
+{
+ "id": "m.sakerhetsuppdateringar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Säkerhetsuppdateringar",
+ "titleJa": "セキュリティ{更新|こうしん}",
+ "descriptionSv": "Säkerhetsuppdateringar: säkerhetsuppdatering, uppdatering, uppdatera, påminnelse, skjuta upp, starta om, cyberattack, drabba, angripare, sårbarhet, tillverkare, täppa till, åtgärda, enhet, säkerhetsrisk, föråldrad och skydda.",
+ "descriptionJa": "セキュリティ{更新|こうしん}：セキュリティ{更新|こうしん}、アップデート、{更新|こうしん}する、リマインダー、{延期|えんき}する、{再起動|さいきどう}する、サイバー{攻撃|こうげき}、{被害|ひがい}を{与|あた}える、{攻撃者|こうげきしゃ}、{脆弱性|ぜいじゃくせい}、メーカー、ふさぐ、{対処|たいしょ}する、{機器|きき}、セキュリティ{上|じょう}のリスク、{時代遅|じだいおく}れの、{守|まも}る。",
+ "categoryId": "R07-A01-T05",
+ "tags": [
+  "datorer",
+  "teknik",
+  "digital säkerhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.integritet-pa-natet"
+ ],
+ "related": [],
+ "recommendedOrder": 3757,
+ "words": [
+  {
+   "senseId": "s.säkerhetsuppdatering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdatering.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdatera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påminnelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjuta-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.starta-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cyberattack.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drabba.1",
+   "active": true
+  },
+  {
+   "senseId": "s.angripare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sårbarhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillverkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.täppa-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åtgärda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.enhet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetsrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föråldrad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skydda.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Uppdatera nu eller senare?",
+  "paragraphs": [
+   "Varje gång Kenta sätter på sin dator kommer en påminnelse: ”En säkerhetsuppdatering väntar.” Varje gång klickar han på ”Senare”. Han skjuter upp den i flera veckor, eftersom datorn måste starta om.",
+   "En dag läser han i tidningen om en stor cyberattack. Cyberattacken drabbade tusentals datorer, mest sådana som inte hade uppdaterats. Angriparna använde en sårbarhet i ett vanligt program. Tillverkaren hade redan en månad tidigare släppt en uppdatering som täppte till hålet.",
+   "Kenta frågar sin kollega Erik. – En sårbarhet är som ett öppet fönster i ett hus, förklarar Erik. Säkerhetsuppdateringar åtgärdar sådana problem. Därför ska man uppdatera så snart man kan.",
+   "– Och det gäller alla dina enheter, fortsätter Erik. Inte bara datorn, utan också mobilen, surfplattan och tv:n. En gammal mobil som inte får uppdateringar längre är en säkerhetsrisk. Den är föråldrad, även om den fortfarande fungerar.",
+   "Samma kväll uppdaterar Kenta datorn och startar om den. Det tar bara tio minuter. Nu har han också valt automatiska uppdateringar, så att datorn kan skydda sig själv på natten."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför skjuter Kenta upp uppdateringen?",
+    "options": [
+     "Uppdateringen kostar pengar",
+     "Han har ingen internetuppkoppling",
+     "Datorn måste starta om",
+     "Erik säger att han ska vänta"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han skjuter upp den i flera veckor, eftersom datorn måste starta om.",
+    "explanationJa": "パソコンを{再起動|さいきどう}しなければならないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka datorer drabbades mest av cyberattacken?",
+    "options": [
+     "Datorer som inte hade uppdaterats",
+     "Nya datorer",
+     "Datorer på skolor",
+     "Kentas dator"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Cyberattacken drabbade tusentals datorer, mest sådana som inte hade uppdaterats.",
+    "explanationJa": "{更新|こうしん}されていなかったパソコンが{多|おお}く{被害|ひがい}にあいました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad menar Erik när han jämför en sårbarhet med ett öppet fönster?",
+    "options": [
+     "Det är bra att ha frisk luft",
+     "Datorn blir varm",
+     "Det är en svag punkt där någon kan ta sig in",
+     "Huset är för gammalt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– En sårbarhet är som ett öppet fönster i ett hus …",
+    "explanationJa": "{誰|だれ}かが{入|はい}りこめる{弱|よわ}い{所|ところ}だという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Erik säger att bara datorn behöver uppdateras.",
+    "correct": false,
+    "explanationSv": "Inte bara datorn, utan också mobilen, surfplattan och tv:n.",
+    "explanationJa": "パソコンだけでなく、スマートフォンやタブレット、テレビも{更新|こうしん}が{必要|ひつよう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenta behöver inte längre klicka på ”Senare” varje kväll.",
+    "correct": true,
+    "explanationSv": "Nu har han också valt automatiska uppdateringar …",
+    "explanationJa": "{自動|じどう}{更新|こうしん}を{選|えら}んだので、もう「{後|あと}で」を{押|お}す{必要|ひつよう}はありません。"
+   }
+  ],
+  "factSources": [
+   "Att säkerhetsuppdateringar täpper till kända sårbarheter, att många attacker drabbar enheter som inte har uppdaterats och att man bör slå på automatiska uppdateringar är allmänna råd från MSB och CERT-SE.",
+   "Cyberattacken i texten är ett påhittat exempel."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om uppdateringar av datorer, mobiler och andra enheter.",
+  "discussionPoints": [
+   "Uppdaterar du din mobil och dator direkt, eller skjuter du upp det?",
+   "Hur många enheter har du hemma som är anslutna till internet?",
+   "Har du en gammal mobil eller dator som inte får uppdateringar längre? Vad gör du med den?",
+   "Tycker du att automatiska uppdateringar är bra? Varför eller varför inte?"
+  ]
+ }
+}

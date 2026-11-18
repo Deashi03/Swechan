@@ -1,0 +1,179 @@
+{
+ "id": "m.tvafaktorsautentisering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Tvåfaktorsautentisering",
+ "titleJa": "{二要素認証|にようそにんしょう}",
+ "descriptionSv": "Tvåfaktorsautentisering: tvåfaktorsautentisering, inloggningsförsök, obehörig, engångskod, sms, giltig, verifiera, e-legitimation, BankID, legitimera sig, personnummer, QR-kod, skanna, godkänna, fingeravtryck, ansiktsigenkänning och säkerhetsnyckel.",
+ "descriptionJa": "{二要素認証|にようそにんしょう}：{二要素認証|にようそにんしょう}、ログインの{試|こころ}み、{権限|けんげん}のない、ワンタイムパスワード、SMS、{有効|ゆうこう}な、{確認|かくにん}する、{電子|でんし}{身分証明|みぶんしょうめい}、BankID、{身分|みぶん}を{証明|しょうめい}する、{個人番号|こじんばんごう}、QRコード、スキャンする、{承認|しょうにん}する、{指紋|しもん}、{顔認証|かおにんしょう}、セキュリティキー。",
+ "categoryId": "R07-A01-T05",
+ "tags": [
+  "datorer",
+  "teknik",
+  "digital säkerhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.starka-losenord"
+ ],
+ "related": [],
+ "recommendedOrder": 3752,
+ "words": [
+  {
+   "senseId": "s.tvåfaktorsautentisering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inloggningsförsök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obehörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.engångskod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.giltig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.verifiera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.e-legitimation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.BankID.1",
+   "active": true
+  },
+  {
+   "senseId": "s.legitimera-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.QR-kod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skanna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fingeravtryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansiktsigenkänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetsnyckel.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Två steg är bättre än ett",
+  "paragraphs": [
+   "En kväll får Takeshi ett sms med en engångskod. Men han har inte försökt komma in på något konto! Strax efter kommer ett mejl: ”Vi har stoppat ett inloggningsförsök från en okänd dator.”",
+   "Takeshi förstår att någon har hans lösenord. Men tack vare tvåfaktorsautentisering kom personen inte in. Lösenordet var bara det första steget. Utan koden i Takeshis mobil kunde den obehöriga personen inte göra något, och koden är bara giltig i några minuter.",
+   "Nästa dag berättar han om det för sin kollega Sara. – I Sverige använder vi BankID nästan överallt, säger hon. Det är en e-legitimation. Man legitimerar sig med sitt personnummer och en kod eller sitt fingeravtryck. Ofta skannar man en QR-kod på skärmen med mobilen.",
+   "– Men vad gör jag om någon ber mig godkänna något i BankID? frågar Takeshi. – Om det inte är du själv som har bett om det, ska du aldrig godkänna, svarar Sara. Då kan en okänd person komma in på ditt konto.",
+   "Sara visar också andra sätt att verifiera vem man är. Hennes mobil har ansiktsigenkänning, och på jobbet använder hon en säkerhetsnyckel som hon sätter i datorn. Samma kväll byter Takeshi lösenord och slår på tvåfaktorsautentisering på alla sina viktiga konton."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står det i mejlet som Takeshi får?",
+    "options": [
+     "Att han har fått ett nytt jobb",
+     "Att någon har försökt komma in på hans konto",
+     "Att hans mobil är trasig",
+     "Att han ska betala en räkning"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "”Vi har stoppat ett inloggningsförsök från en okänd dator.”",
+    "explanationJa": "{知|し}らないパソコンからのログインの{試|こころ}みを{止|と}めた、と{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför kom personen inte in på Takeshis konto?",
+    "options": [
+     "Personen hade inte koden i Takeshis mobil",
+     "Personen hade fel lösenord",
+     "Kontot var redan stängt",
+     "Sara stoppade personen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Utan koden i Takeshis mobil kunde den obehöriga personen inte göra något",
+    "explanationJa": "タケシのスマートフォンに{届|とど}くコードがなかったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör man när man legitimerar sig med BankID?",
+    "options": [
+     "Man visar vem man är",
+     "Man betalar en räkning",
+     "Man byter lösenord",
+     "Man skickar ett sms till banken"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Man legitimerar sig med sitt personnummer och en kod eller sitt fingeravtryck.",
+    "explanationJa": "{自分|じぶん}が{誰|だれ}であるかを{示|しめ}すことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sara säger att man alltid ska godkänna det som dyker upp i BankID.",
+    "correct": false,
+    "explanationSv": "– Om det inte är du själv som har bett om det, ska du aldrig godkänna.",
+    "explanationJa": "{自分|じぶん}で{頼|たの}んでいないときは、{決|けっ}して{承認|しょうにん}してはいけません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara använder mer än ett sätt att visa vem hon är.",
+    "correct": true,
+    "explanationSv": "Hennes mobil har ansiktsigenkänning, och på jobbet använder hon en säkerhetsnyckel.",
+    "explanationJa": "{顔認証|かおにんしょう}とセキュリティキーの{両方|りょうほう}を{使|つか}っています。"
+   }
+  ],
+  "factSources": [
+   "BankID är en vanlig e-legitimation i Sverige som används av banker, myndigheter och företag. Man legitimerar sig i appen med en säkerhetskod, fingeravtryck eller ansiktsigenkänning och skannar ofta en QR-kod (bankid.com).",
+   "Rådet att aldrig godkänna något i BankID som man inte själv har startat kommer från Polisen och bankerna (polisen.se)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man visar vem man är på nätet.",
+  "discussionPoints": [
+   "Använder du tvåfaktorsautentisering? På vilka konton?",
+   "Hur visar man vem man är på nätet i Japan? Finns det något som liknar BankID?",
+   "Vad tycker du om ansiktsigenkänning och fingeravtryck i mobilen?",
+   "Har du någon gång fått en engångskod som du inte hade bett om?"
+  ]
+ }
+}

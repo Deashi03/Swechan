@@ -1,0 +1,192 @@
+{
+ "id": "m.integritet-pa-natet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Integritet på nätet",
+ "titleJa": "ネット{上|じょう}のプライバシー",
+ "descriptionSv": "Integritet på nätet: integritet, personuppgift, digitalt fotavtryck, lägga ut, profil, sekretessinställning, synlig, radera, spåra, dela sin position, röstassistent, mikrofon, riktad reklam, cookie, inkognitoläge, användarvillkor, id-kapning, kreditupplysning, dataskyddsförordningen och registerutdrag.",
+ "descriptionJa": "ネット{上|じょう}のプライバシー：プライバシー、{個人情報|こじんじょうほう}、デジタル・フットプリント、{投稿|とうこう}する、プロフィール、プライバシー{設定|せってい}、{見|み}える、{削除|さくじょ}する、{追跡|ついせき}する、{位置情報|いちじょうほう}を{共有|きょうゆう}する、{音声|おんせい}アシスタント、マイク、ターゲティング{広告|こうこく}、クッキー、シークレットモード、{利用規約|りようきやく}、なりすまし、{信用調査|しんようちょうさ}、{一般|いっぱん}データ{保護|ほご}{規則|きそく}、{登録情報|とうろくじょうほう}の{開示|かいじ}。",
+ "categoryId": "R07-A01-T05",
+ "tags": [
+  "datorer",
+  "teknik",
+  "digital säkerhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kryptering"
+ ],
+ "related": [],
+ "recommendedOrder": 3756,
+ "words": [
+  {
+   "senseId": "s.integritet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.digitalt-fotavtryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-ut.2",
+   "active": true
+  },
+  {
+   "senseId": "s.profil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sekretessinställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spåra.3",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-sin-position.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röstassistent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikrofon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riktad-reklam.1",
+   "active": false
+  },
+  {
+   "senseId": "s.cookie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inkognitoläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.användarvillkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.id-kapning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kreditupplysning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dataskyddsförordningen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.registerutdrag.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad vet nätet om dig?",
+  "paragraphs": [
+   "Kenji ska söka jobb i Stockholm. Hans svenska vän Anna säger: – Sök på ditt eget namn först. Många arbetsgivare gör det. Kenji hittar bilder från en fest som han lade ut för tio år sedan. Det är en del av hans digitala fotavtryck.",
+   "Anna hjälper honom att gå igenom sekretessinställningarna. Nu är hans profil inte synlig för alla, bara för hans vänner. Han raderar också gamla inlägg. – Det du lägger ut kan finnas kvar länge, säger hon.",
+   "Sedan tittar de på mobilen. Flera appar spårar var Kenji är, och han delar sin position med alla i en träningsapp. Han har också en röstassistent som alltid har mikrofonen på. Uppgifterna används bland annat till riktad reklam. Det står i användarvillkoren, men Kenji har aldrig läst dem. Anna visar hur han kan neka cookies och när det kan vara bra att använda inkognitoläge.",
+   "Anna berättar att hennes pappa blev utsatt för en id-kapning. Någon använde hans namn och personnummer för att låna pengar på nätet. Han märkte det först när han fick ett brev om en kreditupplysning som han inte hade bett om. – Var försiktig med dina personuppgifter, säger Anna.",
+   "Enligt dataskyddsförordningen har alla rätt att få veta vilka uppgifter ett företag har om dem. Kenji ber ett företag om ett registerutdrag och blir förvånad över hur mycket det vet om honom. Nu tänker han mer på sin integritet på nätet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hittar Kenji när han söker på sitt namn?",
+    "options": [
+     "Ett nytt jobb",
+     "Annas profil",
+     "Ett brev från banken",
+     "Bilder från en fest"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Kenji hittar bilder från en fest som han lade ut för tio år sedan.",
+    "explanationJa": "{十年前|じゅうねんまえ}に{投稿|とうこう}したパーティーの{写真|しゃしん}を{見|み}つけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem kan se Kenjis profil efter ändringen?",
+    "options": [
+     "Alla",
+     "Bara arbetsgivare",
+     "Ingen",
+     "Bara hans vänner"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Nu är hans profil inte synlig för alla, bara för hans vänner.",
+    "explanationJa": "{友達|ともだち}だけが{見|み}られるようになりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Hur märkte Annas pappa att något var fel?",
+    "options": [
+     "Banken ringde honom",
+     "Han såg det i tidningen",
+     "Han fick ett brev om en kreditupplysning",
+     "Hans mobil slutade fungera"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han märkte det först när han fick ett brev om en kreditupplysning som han inte hade bett om.",
+    "explanationJa": "{頼|たの}んでいない{信用調査|しんようちょうさ}についての{手紙|てがみ}が{届|とど}いたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kenji har läst alla användarvillkor noga.",
+    "correct": false,
+    "explanationSv": "Det står i användarvillkoren, men Kenji har aldrig läst dem. Anna visar hur han kan neka cookies och när det kan vara bra att använda inkognitoläge.",
+    "explanationJa": "ケンジは{利用規約|りようきやく}を{一度|いちど}も{読|よ}んだことがありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji får veta mer om vad ett företag vet om honom.",
+    "correct": true,
+    "explanationSv": "Kenji ber ett företag om ett registerutdrag och blir förvånad över hur mycket det vet om honom.",
+    "explanationJa": "{登録情報|とうろくじょうほう}の{開示|かいじ}を{求|もと}めて、{会社|かいしゃ}が{知|し}っていることを{知|し}りました。"
+   }
+  ],
+  "factSources": [
+   "Rätten att få veta vilka personuppgifter ett företag behandlar (registerutdrag) kommer från dataskyddsförordningen (GDPR), artikel 15 (Integritetsskyddsmyndigheten, imy.se).",
+   "I Sverige får man en kopia per post när någon tar en kreditupplysning på en, och det är ofta det första tecknet på en id-kapning (Polisen, polisen.se; UC).",
+   "Personerna och händelserna i texten är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om integritet och om vad man delar på nätet.",
+  "discussionPoints": [
+   "Har du någon gång sökt på ditt eget namn? Vad hittade du?",
+   "Delar du din position med någon? När och varför?",
+   "Har du en röstassistent hemma? Känns det tryggt?",
+   "Vad tänker du på innan du lägger ut en bild?"
+  ]
+ }
+}
