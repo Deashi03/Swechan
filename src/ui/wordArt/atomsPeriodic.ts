@@ -183,8 +183,8 @@ export const ATOMS_MOTIFS: Record<string, Svg> = {
   /** natrium: a salt shaker held upside down pours little white salt cubes onto a plate; beside it a soft silver metal block that a knife has cut straight through, its fresh cut shining, ringed in orange. */
   'atom.natrium': all(bg('#f3efe6'), rect(8, 92, 104, 6, C.tan, 2, C.ink, 1.6), line('M16 98 L16 112 M104 98 L104 112', C.brown, 3), g('rotate(150 26 50)', shaker(26, 60)), ...[[22, 70], [27, 76], [20, 80], [25, 86], [30, 88], [18, 90]].map(([x, y]) => rect(x!, y!, 2.6, 2.6, C.white, 0.4, C.grey, 0.6)), ellipse(24, 92, 12, 2, C.white, C.ink, 1),
     rect(54, 72, 22, 20, '#c3c9cf', 2, C.ink, 1.6), rect(82, 72, 22, 20, '#c3c9cf', 2, C.ink, 1.6), rect(76, 73, 6, 18, '#f4f7fa', 1, null), path('M76 36 L82 36 L82 70 L79 74 L76 70 Z', '#e6ebef', C.ink, 1.2), rect(75, 22, 8, 15, C.brown, 2, C.ink, 1.2), sparkle(79, 82, 3, C.white), ring(79, 80, 22)),
-  /** halogen: the periodic-table outline with column 17 (next to the last) orange; under it a closed glass flask filled with a yellow-green gas. */
-  'atom.halogen': all(bg(), PT((c) => c === 16), path('M54 70 L54 80 C40 84 38 108 60 108 C82 108 80 84 66 80 L66 70 Z', 'rgba(190,220,80,0.55)', C.ink, 1.6), rect(52, 66, 16, 5, C.tan, 1, C.ink, 1.2), arr(102, 62, 76, 82, HL, 1.6, '3 2')),
+  /** halogen: only the periodic-table outline, drawn large; the column next to the last (column 17) is orange, nothing else is marked. */
+  'atom.halogen': all(bg(), ptable(7, 22, 5.9, 11, (c) => c === 16)),
   /** övergångsmetall: the periodic-table outline with the low middle block orange; under it an iron pan, a copper pipe and a gold ring. */
   'atom.övergångsmetall': all(bg(), PT((c, r) => c >= 2 && c <= 11 && r >= 3), ellipse(28, 96, 16, 6, '#3d3f4a', C.ink, 1.6), line('M44 96 L58 92', C.dark, 3), rect(62, 90, 26, 8, '#d07a3a', 4, C.ink, 1.4), ringJewel(100, 96, GOLD, '#a87a10'), arr(60, 68, 60, 82, HL, 1.6, '3 2')),
 
