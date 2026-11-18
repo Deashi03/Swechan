@@ -47,6 +47,11 @@ export function validateContent(repo: ContentRepository): ContentIssue[] {
     }
     if (infl.kind === 'adjective' && infl.common !== e.lemma) add(e.id, 'common måste vara lika med uppslagsordet');
     if (e.pos !== infl.kind && infl.kind !== 'none') add(e.id, `Ordklass ${e.pos} matchar inte böjningstyp ${infl.kind}`);
+    // Kvalitetsplanen A6: display order, sense inventory and per-sense inflection
+    const orders = e.senses.map((s) => s.order).filter((o): o is number => o !== undefined);
+    if (new Set(orders).size !== orders.length) add(e.id, 'Två betydelser har samma order');
+    if (e.senseInventory?.coreSense && !e.senses.some((s) => s.id === e.senseInventory!.coreSense)) add(e.id, `senseInventory.coreSense ${e.senseInventory.coreSense} är inte en betydelse i posten`);
+    for (const s of e.senses) if (s.inflection && s.inflection.kind !== 'none' && s.inflection.kind !== e.pos) add(s.id, `Betydelsens böjning (${s.inflection.kind}) matchar inte ordklassen ${e.pos}`);
     for (const s of e.senses) {
       unique(s.id, s.id);
       if (!s.id.startsWith(`s.${e.id.slice(2)}.`)) add(s.id, `Betydelse-ID ska börja med s.${e.id.slice(2)}.`);

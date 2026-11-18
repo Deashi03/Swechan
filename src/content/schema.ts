@@ -122,8 +122,30 @@ export const WordSense = z.object({
   /** Tags (topic labels) for search and grouping. */
   tags: z.array(z.string()).optional(),
   quality: ReviewStatus,
+  /**
+   * Kvalitetsplanen A6. Display order among the headword's senses: senses with `order` come first (lower
+   * first), the others follow in file order. The id number never changes, so the everyday sense can be shown first even if it was
+   * added later (e.g. s.arbete.2 "jobb" before s.arbete.1 "i fysik").
+   */
+  order: z.number().int().positive().optional(),
+  /** Level of this sense (default: the entry's level), e.g. arbete "jobb" A1, arbete "i fysik" B2. */
+  level: Level.optional(),
+  /** Inflection of this sense when it differs from the entry's (homonyms: ett damm "dust" / en damm "pond"). */
+  inflection: Inflection.optional(),
 });
 export type WordSense = z.infer<typeof WordSense>;
+
+/** Kvalitetsplanen A6: the headword's senses were checked against a dictionary (tools/production/senses.py). */
+export const SenseInventory = z.object({
+  /** Which dictionary the senses were checked against, e.g. "SO", "SAOL", "Lexin". */
+  checkedAgainst: z.string().min(2),
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  /** For a lemma in the core vocabulary: the id of its basic (everyday) sense. */
+  coreSense: z.string().regex(/^s\./).optional(),
+  /** Common senses deliberately left out, and why. */
+  note: z.string().optional(),
+});
+export type SenseInventory = z.infer<typeof SenseInventory>;
 
 export const VocabularyEntry = z.object({
   id: z.string().regex(/^e\.[\wåäöéü-]+$/),
@@ -134,6 +156,7 @@ export const VocabularyEntry = z.object({
   /** Optional stress/pronunciation hint in Swedish, e.g. "betoning på andra stavelsen". */
   pronunciationNote: z.string().optional(),
   senses: z.array(WordSense).min(1),
+  senseInventory: SenseInventory.optional(),
 });
 export type VocabularyEntry = z.infer<typeof VocabularyEntry>;
 

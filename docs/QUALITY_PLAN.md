@@ -93,12 +93,14 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 **Klart när:** en provmodul ur Fysik (*Arbete och energi*) har animation på *rörelseenergi*, *lägesenergi* och *omvandla*, ett tidigare bildlöst ord har gått genom matchningstestet, och den hårdkodade mängden är borta.
 
 ### A6. Datamodell för betydelser
-- [ ] `order` på betydelsen (visningsordning skild från ID). `OtherSenses`, ordboken och sökningen sorterar på den.
-- [ ] `level` på betydelsen, med postens nivå som reserv.
-- [ ] `inflection` på betydelsen som överskuggar postens (homonymer med olika genus, t.ex. *damm*).
-- [ ] `senseInventory: { checkedAgainst, date }` på posten.
-- [ ] `tools/production/senses.py <ord>`: visar postens betydelser, om lemmat är grundord, och vad som saknas. Ersätter `exists.py` i briefen.
-- [ ] Uppdatera `DATA_MODEL.md` och schemat. Inga lagrade användardata ändras (ID:n är oförändrade), men bekräfta det med backup- och migreringstesterna.
+- [x] `order` på betydelsen (visningsordning skild från ID). `OtherSenses`, ordboken och sökningen sorterar på den.
+- [x] `level` på betydelsen, med postens nivå som reserv.
+- [x] `inflection` på betydelsen som överskuggar postens (homonymer med olika genus, t.ex. *damm*).
+- [x] `senseInventory: { checkedAgainst, date }` på posten.
+- [x] `tools/production/senses.py <ord>`: visar postens betydelser, om lemmat är grundord, och vad som saknas. Ersätter `exists.py` i briefen.
+- [x] Uppdatera `DATA_MODEL.md` och schemat. Inga lagrade användardata ändras (ID:n är oförändrade), men bekräfta det med backup- och migreringstesterna.
+
+**Genomfört 2026-11-19.** Visningsordning: betydelser med `order` först, sedan resten i filordning. Ingen lagrad användardata ändras, så ingen ny `db.version` behövs; backup- och migreringstesterna körs i CI.
 
 **Klart när:** *arbete* har vardagsbetydelsen inlagd, visas först i ordboken och har nivå A1, medan `s.arbete.1` är oförändrad.
 
