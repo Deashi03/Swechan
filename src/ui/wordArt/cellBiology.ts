@@ -173,7 +173,8 @@ function transport(active: boolean): Svg {
   const few: [number, number][] = [[86, 38], [100, 70], [90, 92]];
   const dots = all(...many.map(([x, y]) => circle(x, y, 3.2, '#5aa0c8', C.ink, 0.8)), ...few.map(([x, y]) => circle(x, y, 3.2, '#5aa0c8', C.ink, 0.8)));
   const mem = vbilayer(60, 14, 112, 7, 0.7);
-  if (!active) return all(dots, mem, arrow(30, 64, 92, 64, HL, 3.6), circle(60, 64, 3.2, '#5aa0c8', C.ink, 0.8),
+  if (!active) return all(dots, mem, rect(50, 52, 8, 26, '#7bc4a4', 3, C.ink, 1.4), rect(62, 52, 8, 26, '#7bc4a4', 3, C.ink, 1.4), arrow(30, 65, 92, 65, HL, 3.6), circle(60, 65, 3.2, '#5aa0c8', C.ink, 0.8), ring(60, 65, 18),
+    greyed(bolt(60, 98, 0.9)), cross(60, 98, 9),
     path('M76 22 L112 22 L76 6 Z', 'none', C.grey, 1.6), circle(84, 12, 3, C.grey2, C.ink, 1), arrow(90, 12, 102, 18, C.grey, 1.6));
   return all(dots, mem, rect(52, 54, 16, 22, '#7bc4a4', 5, C.ink, 1.4), arrow(92, 64, 30, 64, HL, 3.6), bolt(60, 92, 0.9),
     path('M4 22 L40 22 L40 6 Z', 'none', C.grey, 1.6), circle(30, 13, 3, C.grey2, C.ink, 1), arrow(26, 20, 34, 10, C.grey, 1.6));
@@ -301,9 +302,13 @@ export const CELL_MOTIFS: Record<string, Svg> = {
     ...[74, 86, 98].map((x) => all(line(`M${x - 8} 32 L${x - 4} 32`, C.ink, 1.6), circle(x, 32, 5, C.yellow, C.ink, 1.2), num(x, 35, 'P', 7))), sparkle(106, 22, 5, HL), ring(76, 32, 32),
     arrow(76, 66, 70, 76, C.grey, 2.2), g('translate(30 46) scale(0.6)', figure({ x: 60, muscle: true, top: C.orange })), bolt(92, 88, 0.9)),
   /** förbränning (i kroppen): a jogger; bread and O₂ go in, CO₂ and heat come out; the glowing body is framed. */
-  'cell.förbränning.3': all(ground(), figure({ x: 60, top: C.orange }), ...[[44, 50], [76, 50], [60, 34]].map(([x, y]) => line(`M${x! - 3} ${y} c-3 -4 3 -8 0 -12`, HL, 1.6)),
-    g('translate(16 30)', path('M-12 6 L-12 -1 C-12 -9 12 -9 12 -1 L12 6 Z', '#e0b070', C.ink, 1.4), line('M-5 -6 L-7 4 M1 -7 L-1 4 M7 -5 L5 4', '#a8742e', 1.2)), ...[[34, 72], [34, 90], [88, 72], [88, 90]].map(([x, y]) => line(`M${x! - 3} ${y} c-3 -4 3 -8 0 -12`, HL, 1.8)), arrow(26, 34, 40, 50, C.grey, 2), num(16, 62, 'O₂', 10, '#3a7ab8'), arrow(24, 60, 40, 64, C.grey, 2),
-    arrow(72, 26, 92, 18, C.grey, 2), num(102, 18, 'CO₂', 9, C.grey), frame(38, 10, 44, 102)),
+  'cell.förbränning.3': all(ground(),
+    greyed(line('M8 108 L40 98 M8 98 L40 108', C.brown, 5), path('M24 98 C12 98 12 82 18 74 C20 80 22 80 22 76 C22 66 28 62 30 56 C30 66 38 72 36 84 C36 92 32 98 24 98 Z', C.orange, C.ink, 1.4),
+      num(10, 52, 'O₂', 9), arrow(14, 56, 18, 70, C.grey, 1.6), num(38, 30, 'CO₂', 8), ...[[8, 44], [40, 46]].map(([x, y]) => line(`M${x! - 2} ${y} c-3 -4 3 -8 0 -12`, C.red, 1.6))),
+    num(52, 70, '≈', 16, C.grey),
+    g('translate(84 30)', path('M-9 5 L-9 -1 C-9 -7 9 -7 9 -1 L9 5 Z', '#e0b070', C.ink, 1.2), line('M-4 -4 L-5 3 M1 -5 L0 3 M5 -3 L4 3', '#a8742e', 1)), arrow(84, 38, 84, 46, C.grey, 1.6),
+    g('translate(42 50) scale(0.55)', figure({ x: 76, top: C.orange })), num(72, 52, 'O₂', 9, '#3a7ab8'), arrow(74, 56, 80, 62, C.grey, 1.6),
+    num(108, 46, 'CO₂', 8, C.grey), ...[[74, 92], [100, 80], [100, 98]].map(([x, y]) => line(`M${x! - 2} ${y} c-3 -4 3 -8 0 -12`, HL, 1.8)), bolt(84, 82, 0.6), frame(62, 16, 56, 98)),
   /** muskelcell: a flexed arm; the zoom shows a long striped muscle cell with several nuclei, ringed. */
   'cell.muskelcell': all(path('M8 108 C8 84 26 76 36 80 C38 68 54 66 60 76 C66 88 60 108 60 108 Z', SKIN, C.ink, 1.8), zoom(40, 86, 7, 80, 40, 34, all(rect(40, 0, 80, 80, '#fbe4dc', 0, null),
     rect(52, 30, 58, 18, '#f09a94', 9, MEM, 1.4), ...range(12).map((i) => line(`M${58 + i * 4.4} 32 L${58 + i * 4.4} 46`, '#c95a5a', 1)), ...[64, 84, 102].map((x) => ellipse(x, 39, 3, 2, NUC2, null)),
