@@ -1,0 +1,334 @@
+# Öppna osäkerheter (för mänsklig granskning)
+
+Flyttat från `PROJECT_STATUS.md` 2026-11-19 (kvalitetsplanen A7). Lägg nya punkter under rätt version längst ned. Punkter som är rättade stryks.
+
+- **Allt innehåll är AI-utkast** (`quality.status: ai-draft`). Japanska läsningar och översättningar är den största kvalitetsrisken. Validatorn hittar saknad furigana, men inte fel läsning.
+- **0.29, svenska:**
+  - pluralen *dealar*
+  - imperativen *hörs* (av *höras*) och *åldras*
+  - nyansen i *kohandel*, *gränslös*, *lova bättring* och *tumma på*
+  - *jobba kvar*, som bara definieras som "fortsätta arbeta på samma ställe"
+  - *pixlig*, *chattspråk*, *läskvitto* och pluralen *emojier*
+- **0.29, japanska:**
+  - {間遠|まどお}, {心|こころ}ばかりの{品|しな}, {芯|しん}の{強|つよ}さ, {気骨|きこつ}
+  - 方便のうそ (*nödlögn*), 恩 (*tacksamhetsskuld*), 性に合わない (*inte min grej*)
+  - 市民農園 (*kolonilott*), 准看護師・介護士 (*undersköterska*)
+- **0.29, fakta:**
+  - du-reformen (Bror Rexed 1967)
+  - *Sju sorters kakor* (1945)
+  - pensionssystemet, som medvetet hålls allmänt utan exakta åldrar
+- **0.30, svenska:**
+  - *taktikrösta*, *fyraprocentsspärr*, *valkretsmandat* och *budröst* finns inte säkert i SAOL
+  - *frysa tillgångar* böjs starkt (frös/frusit); svag böjning är också möjlig
+  - *kommunfullmäktige*/*regionfullmäktige* som oböjliga poster; *lägga ned* utan varianten *lägga ner*
+  - några definitioner är vaga, eftersom ordförrådskontrollen inte godkände *kommun*, *länsstyrelsen* och minoriteternas namn i den tidiga kedjan
+- **0.30, japanska:**
+  - egna översättningar: {総合防衛義務|そうごうぼうえいぎむ} (*totalförsvarsplikt*), {単純過半数|たんじゅんかはんすう}, {選挙審査会|せんきょしんさかい} (*Valprövningsnämnden*), {首相承認投票|しゅしょうしょうにんとうひょう} (*statsministeromröstning*)
+  - ungefärliga motsvarigheter: *interpellation*, *talmansrunda*, *stödparti*, *partisekreterare* ({幹事長|かんじちょう}), *remiss* ({意見照会|いけんしょうかい}), *idéströmning*, *förankra*
+  - vissa japanska förklaringar innehåller mer än de svenska, till exempel minoriteternas namn och Montesquieu
+- **0.30, fakta (kan ändras över tid):**
+  - 15 utskott med 17 ledamöter, ett tjugotal statsråd och partistödets villkor
+  - mandatfördelningen 310 + 39, minst 21 ledamöter i kommunfullmäktige och kommunalskatten på drygt 30 procent
+  - EU:s 27 medlemsländer, FN:s 193 och Sveriges Natomedlemskap 2024
+- **0.31, svenska:**
+  - *personuppgiftsansvarig*, *sekretessmarkering*, *skäligen misstänkt* och *ockerhyra* finns kanske inte i SAOL; *maska* (maskera uppgifter) är myndighetsjargong
+  - substantiverade particip med bestämd form på -n (*skadelidanden*, *käranden*, *svaranden*), *förlikas* (deponens) och *tilltalad*/*sakkunnig* som adjektiv
+  - *misstänkt* (adjektiv) sammanfaller med supinum av *misstänka*; *stämning* och *lag* har nu bara sina juridiska betydelser som egna poster
+  - texterna i Polis och Civilrätt skriver runt ord från parallella grupper (*något olagligt* i stället för *brott*, *de två sidorna* i stället för *parterna*); de kan göras naturligare nu när hela kedjan finns
+- **0.31, japanska:**
+  - ungefärliga motsvarigheter: *god man* ({補佐人|ほさにん}), *huvudman*, *lagrum*, *villkorlig dom* ({条件|じょうけん}つき{判決|はんけつ}), *dråp* ({故殺|こさつ}), *målsägande* ({被害者|ひがいしゃ}), *strafföreläggande* ({略式命令|りゃくしきめいれい}), *nämndeman* ({参審員|さんしんいん})
+  - egna översättningar av myndigheter: *hyresnämnden* ({賃貸|ちんたい}{紛争|ふんそう}{委員会|いいんかい}), *Kronofogden* ({執行庁|しっこうちょう})
+  - *avvisa* ({却下|きゃっか}) mot *avslå*, och {要配慮個人情報|ようはいりょこじんじょうほう}, {黒塗|くろぬ}り
+- **0.31, fakta (kontrollera lagrum):**
+  - RB 36:17 (ledande frågor), lag 2018:1693 (dna-registret), prövotider (BrB 27–28 kap.), förvaltningslagen 5–7 och 40–46 §§, TF 2 kap. 15 §, föräldrabalken 11:4–5
+  - beloppsgränsen för förenklat tvistemål (ungefär 30 000 kronor, ett halvt prisbasbelopp) ändras varje år
+  - Brå-sammanfattningen om att upptäcktsrisken avskräcker mer än straffets längd
+- **0.32, svenska:**
+  - pluralord böjda som *glasögon*: *skyddsglasögon*, *samarbetssvårigheter*, *sociala medier*; *trakasseri* som singularlemma
+  - *anställd* som substantiv (egentligen particip/adjektiv), *driven* i platsannonsbetydelsen, *säga upp sig* utan `particle`
+  - *intervju* i stället för *arbetsintervju* (ordförrådskontrollen godkände inte sammansättningen)
+  - *slogan* (sloganen, slogans), *vd* (vd:n, vd:ar), *handelspartner* (pluralen *partner*, SAOL tillåter även *partners*), *låna upp* om stater och företag
+  - *Konkurrensverket* och *Arbetsförmedlingen* som oböjliga egennamn; *Bolagsverket* och andra myndighetsnamn står bara i `factSources`
+- **0.32, japanska:**
+  - egna eller ungefärliga översättningar: *OB-tillägg* ({深夜|しんや}・{休日|きゅうじつ}{勤務手当|きんむてあて}), *friskvårdsbidrag* ({健康増進手当|けんこうぞうしんてあて}), *F-skatt*, *handelsbolag* ({合名会社|ごうめいがいしゃ}), *trafikförsäkring* ({自賠責保険|じばいせきほけん}), *skattetabell*, *jobbskatteavdrag* ({勤労所得|きんろうしょとく}の{税額控除|ぜいがくこうじょ}), *köpstopp* ({買|か}い{物断|ものだ}ち)
+  - *Arbetsförmedlingen* ({公共職業安定所|こうきょうしょくぎょうあんていじょ}), *permittera* ({一時帰休|いちじききゅう}させる), *statsskuld*, *placering* ({運用先|うんようさき}), *riktålder* ({目安年齢|めやすねんれい}), *premiepension* ({積立年金|つみたてねんきん})
+- **0.32, fakta (kan ändras över tid):**
+  - amorteringskravet (texten nämner bara 1 % över 50 % och 2 % över 70 % belåning) och bolånetaket 2026
+  - gränsen för statlig inkomstskatt (ungefär 50 000 kr i månaden), nettolönsexemplet i Uppsala, sista dag för deklarationen
+  - arbetsgivaravgiften (ungefär 31 %), aktiekapital 25 000 kr, momssatser, bokföringen sparas i 7 år
+  - arbetstidslagen (11 timmars dygnsvila, rast efter fem timmar), läkarintyg från dag 8, LAS efter 2022 (provanställning högst sex månader, skriftlig information inom sju dagar)
+  - inflationsmålet 2 % (KPIF), att ungefär hälften av produktionen exporteras och att Norge och Tyskland är de största handelspartnerna
+  - insättningsgarantin (ungefär en miljon kronor), riktåldern 67 år 2026, pensionsavgiften 18,5 % (16 + 2,5)
+- **0.33, svenska:**
+  - *tentamen* och *studentexamen* med pluralen *tentamina*/*studentexamina* (SAOL tillåter också *tentamen*); *studiesvårighet*, *koncentrationssvårighet*, *extra anpassning* och *ordningsregel* används mest i plural
+  - *pugga* (vardagligt, delvis regionalt), *kugga* (vardagligt, intransitivt), *återkalla* i betydelsen "i minnet" (formellt), *betänketid* i allmän betydelse, *kärnämne* (äldre term)
+  - *upprop* har bara skolbetydelsen (namnupprop); universitetets upprop vid kursstart beskrivs i texten
+  - *informerat samtycke* används bara i obestämd form; *vederlägga* böjs som grupp 4 (vederlade, vederlagt); *rankning* utan varianten *ranking*
+  - nivåer: många forsknings- och pedagogikord är satta till C1 (t.ex. *progression*, *inkludering*, *formativ bedömning*, *empirisk*, *vederlägga*); *kollegium* C1
+- **0.33, japanska:**
+  - egna återgivningar av myndigheter: *Skolverket* ({学校庁|がっこうちょう}), *Skolinspektionen* ({学校監督庁|がっこうかんとくちょう})
+  - ungefärliga motsvarigheter: *grundskola* ({基礎学校|きそがっこう}), *friskola* ({独立系|どくりつけい}の{学校|がっこう}), *förstelärare* ({主任教諭|しゅにんきょうゆ}), *utvecklingssamtal* i skolan ({三者面談|さんしゃめんだん}), *lektor* ({講師|こうし}、{准教授|じゅんきょうじゅ}), *upprop* ({出欠確認|しゅっけつかくにん}), *magister*/*master* (båda {修士号|しゅうしごう})
+  - *ramsa* ({唱|とな}え{言葉|ことば}), *lässtrategi* ({読|よ}み{方|かた}の{工夫|くふう}), *liknelse* (たとえ), *bedömningsmatris* (ルーブリック), *åka snålskjuts* (ただ{乗|の}りする), *referentgranskad* ({査読付|さどくつ}きの), *förkasta* ({棄却|ききゃく}する), *bortfall*, *tes* ({主張|しゅちょう}・テーゼ); *kulturchock* och *kulturkrock* har samma glosa
+- **0.33, fakta (kan ändras över tid):**
+  - 18 nationella program (6 högskoleförberedande och 12 yrkesprogram), APL minst 15 veckor, 2 500 gymnasiepoäng
+  - namnbytet grundsärskola → anpassad grundskola (2 juli 2023), minst fem elever för modersmålsundervisning, socialtjänstlagen från 2025 (utan paragrafnummer)
+  - högskoleprovets giltighet (8 år), studieavgifter för studenter utanför EU/EES och Schweiz, kårobligatoriet avskaffat 2010, ny examinator efter två underkända prov, sista ansökningsdag 15 april/15 oktober
+  - examensomfång (kandidat 180, magister 60, master 120, doktor 240 hp), Etikprövningsmyndigheten (lag 2003:460)
+  - utlandsfakta: skoluniform i japanska högstadier, *juku* som "kvällsskola", skolstart vid fem år i USA, tysk uppdelning efter fyra år (de flesta delstater), siffran för lärartäthet i ett exempel
+- **0.34, svenska:**
+  - pluralformer: *bastu* (bastur), *monter* (montrar), *container* (containrar), *lastkaj* (lastkajer), *kontaktcenter* (kontaktcentret, kontaktcentren), *centrum* (centrumet/centrum)
+  - *simglasögon* böjt som *glasögon*; *grannsamverkan* utan bestämd form; *stadga* som singularlemma (används i plural); *vara skriven* som verbfras i grupp 4; *utrikes född* som adjektiv med handsatt böjning; *styrka sin identitet* som egen post
+  - nivåer: *s.stämning.2* ärver C1 från posten; *grannehörande*, *ansvarsfrihet*, *skattereduktion*, *testamentera* och *mobilisera* är C1; *nybyggnation* kritiseras ibland men står i SO
+  - *dödstal*/*födelsetal* definieras som antal per år (ofta per tusen invånare); *renoveringsvräkning* och *gentrifiering* är laddade debattord
+  - *miljonprogrammet* används bara i bestämd form; *90-konto* är inte målord eftersom siffror inte tokeniseras
+- **0.34, japanska:**
+  - egna eller ungefärliga översättningar: *miljonprogrammet* ({百万戸住宅計画|ひゃくまんこじゅうたくけいかく}), *slutbesked*, *strandskydd* ({水辺|みずべ}の{保護規制|ほごきせい}), *trygghetsvandring*, *första spadtaget* ({起工|きこう})
+  - *brukare* ({利用者|りようしゃ}), *tillsyn* ({見守|みまも}り), *avlösning* (レスパイト), *kommunvägledare*, *region* (レギオン), *valberedning* ({役員選考委員会|やくいんせんこういいんかい}), *revisor* i en förening ({監事|かんじ}), *domkyrka* (förklaringen nämner {教区|きょうく})
+  - våningar: *andra våningen* översatt med {二階|にかい}
+- **0.34, fakta (kan ändras över tid):**
+  - tätort (minst 200 invånare, högst 150 m mellan husen, nästan nio av tio bor i tätort), miljonprogrammet 1965–1974
+  - friggebod 15 m² (1979), attefallshus 30 m² (2014), strandskydd 100 m, trängselskatt i Stockholm 2007 och Göteborg 2013, klimatmålet netto noll 2045
+  - ungefär hälften av dricksvattnet från grundvatten, biljettintäkterna täcker ungefär halva kostnaden, Hesa Fredrik testas kl. 15 första helgfria måndagen i mars, juni, september och december
+  - flyttanmälan inom en vecka, samordningsnummer (dag + 60), etableringsprogrammet högst två år, dubbelt medborgarskap sedan 2001, ungefär en halv miljon utlandssvenskar, ungefär var femte invånare utrikes född, 1,3 miljoner utvandrare 1850–1930; hemvisttiden för medborgarskap anges medvetet utan antal år
+  - passexpeditionen (foto tas på plats) är skriven ur minnet; texten om dagvatten i Uppsala är förenklad
+- **0.35, svenska:**
+  - nyare eller branschord som kanske inte står i SAOL: *avpublicera*, *deepfake* (deepfaken, deepfakes), *trenda* (vardagligt), *vlogg*, *selfie* (selfier), *nättroll*, *pixla*, *reklammärkning* (lagen säger *reklamidentifiering*), *köpsug*, *köphets*, *skrämseltaktik*
+  - böjningar: *influencer* (plural influencer/influencers), *image* (utan plural, uttal [ímmitj]), *samarbetspartner* (plural samarbetspartner), *jury* (juryer), *ansvarig utgivare* (ansvariga utgivaren)
+  - *inrikesnyhet*/*utrikesnyhet* som nya sammansättningar; *stå bakom* som egen post (*ligga bakom* betyder orsak); *tendens* har bara källkritiksbetydelsen; *vi och dom* med talspråksformen *dom*
+  - egna betydelser för *gå framåt* och *backa* i opinionen kan diskuteras
+  - nivåer: C1 för t.ex. *nyhetsvärdering*, *allmänintresse*, *grävande journalistik*, *avpublicera*, *presstalesperson*, *marknadsföringslagen*, *refusera*, *tillbakavisa*
+- **0.35, japanska:**
+  - ungefärliga motsvarigheter: *Justitiekanslern* ({司法長官|しほうちょうかん}), *hets mot folkgrupp* (ヘイトスピーチ), *den tredje statsmakten* (jämförs med {第四|だいよん}の{権力|けんりょく}), *ledare* ({社説|しゃせつ}), *ledarskribent* ({論説委員|ろんせついいん}), *debattör* ({論客|ろんきゃく}), *pajkastning* ({泥仕合|どろじあい}), *folkbildning* ({民衆教育|みんしゅうきょういく}), *vlogg* (ブイログ)
+- **0.35, fakta (kan ändras över tid):**
+  - Justitiekanslerns ämbete 1713, Pressens opinionsnämnd 1916, Mediernas etiska nämnd och Medieombudsmannen från 2020, olaga integritetsintrång (BrB 4:6 c) från 2018, yttrandefrihetsgrundlagen 1992, nio jurymedlemmar i tryckfrihetsmål; paragrafnummer i tryckfrihetsförordningen är medvetet utelämnade (numreringen ändrades 2019)
+  - produktplacering ska visas i början och slutet av tv-program (radio- och tv-lagen), reklam ska märkas tydligt och tidigt (marknadsföringslagen, Konsumentverket)
+  - kvällstidningarna kom förr ut på eftermiddagen, chefredaktören är "ofta" ansvarig utgivare, felmarginalen ungefär 2 procentenheter vid 1 000 intervjuer, saklighetskravet för SVT och SR, folkhögskolor från 1868
+- **0.36, svenska:**
+  - lemman i bestämd form: *antiken*, *upplysningen*, *mellankrigstiden*, *efterkrigstiden*, *kolonialtiden*, *östblocket*, *västvärlden*, *järnridån*, *folkhemmet*, *kalla kriget*, *spanska sjukan*, *digerdöden*; versal i *Förintelsen*, *Berlinmuren*, *Nationernas förbund* (och i deras `senseId`)
+  - *stenålder*, *bronsålder*, *järnålder* i obestämd form med not om bestämd form; *säd*, *boskap*, *svagdricka* utan plural; *upptäcktsresande* böjt som substantiv; *tionde* som substantiv (neutrum); *icke-våld*; *ömsesidigt beroende* som substantivfras
+  - betydelser som bara finns i en variant: *samlare* (jägare och samlare, med not), *stånd* (samhällsgrupp förr), *isolering* (avskildhet), *last* (på ett fartyg), *munk* (klosterbroder), *klassisk* .2 (antiken; .1 utan bild och inte modulord), *ledare* och *läger* från 0.35
+  - nivåer: många C1-bedömningar (t.ex. *årder*, *envälde*, *furstendöme*, *nationalromantik*, *statare*, *strejkbrytare*, *skräckvälde*, *sanitär*)
+- **0.36, japanska:**
+  - granska särskilt: {原始的|げんしてき}な{犂|すき} (*årder*), {沼鉄鉱|しょうてっこう} (*myrmalm*), ロングハウス (*långhus*), {王国参事会|おうこくさんじかい} (*riksråd*), エーリック{街道巡行|かいどうじゅんこう} (*eriksgata*), {小作農|こさくのう} (*landbo*), {自作農|じさくのう} (*skattebonde*), {国民学校|こくみんがっこう} (*folkskola*), {小作人|こさくにん} (*torpare*), *statare* och *hyreskasern*
+- **0.36, fakta (läroboksvärden, står i `factSources`):**
+  - förhistoria: människor i Sverige för omkring 14 000 år sedan, jordbruk för omkring 6 000 år sedan, bronsåldern ca 3 700–2 500 och järnåldern ca 2 500–1 000 år sedan, Tanum världsarv 1994, kol-14 (Libby, 1940-talet)
+  - antiken: folkförsamlingen omkring 40 gånger om året (300-talet f.Kr.), lånord från latin (*skola* ytterst grekiskt)
+  - medeltiden: Alsnö stadga omkring 1280, digerdöden 1349–1350 (en tredjedel till hälften dog), Kalmarunionen 1397–1523, skråna avskaffade 1846
+  - tidigmodern tid: omkring 12 miljoner i den transatlantiska slavhandeln, Magellan 1519–1522, Galilei 1633, enväldet 1680–1718, kyrkan skild från staten 2000
+  - 1800-tal: första maj 1890, storstrejken 1909 (omkring 300 000), barnarbetsförbud 1881, Stockholm över 300 000 invånare år 1900, statarsystemet avskaffat 1945
+  - 1900-tal: spanska sjukan (omkring 35 000 döda i Sverige), omkring tio miljoner stupade i första världskriget, omkring 64 000 skyddsrum (MSB), mer än 80 nya stater 1945–1975
+- **0.37, svenska:**
+  - *förnödenheter* som uppslagsord i plural (SAOL har *förnödenhet*); *order* (plural order/ordrar); *materiel* mot *material* och *flotta* mot *flotte* förklaras i posterna; *ingenmansland*, *umbärande* och *gisslan* utan böjning; *fri lejd* med konstruerad bestämd form; *svälta ut* (svälte ut/svält ut)
+  - nya poster med extra betydelser utan bild och som inte är modulord: *pik* (elak kommentar), *skott* (på växter), *mynning* (flod), *ställning* (sport), *knekt* (kortspel)
+  - *robot* lärs ut i militär betydelse (= missil) med not om vardagsroboten; *s.läger.1* har glosan キャンプ också i militära sammanhang; *s.häva.1* (häva förbud) används om att häva en belägring; *fat* i Visby-sägnen pekar på serveringsfat
+  - *borgherre*, *tornerspel*, *kartesch* (kartescher), *överste* (överstar), *fältskär* (fältskärer) bör kontrolleras mot SAOL
+- **0.37, japanska:**
+  - beskrivande översättningar utan etablerad term: *rote* (兵士を出す農家の組), *indelningsverk* (割当制度), *fältskär* (軍医), *spansk ryttare* (拒馬), *falk* (ハヤブサ), *tornerspel* ({馬上槍試合|ばじょうやりじあい})
+- **0.37, fakta (läroboksvärden, står i `factSources`):**
+  - antiken: Teutoburgerskogen år 9 e.Kr., Cannae 216 f.Kr. (namnen bara i `factSources`, eftersom de saknas i grundordförrådet)
+  - medeltiden: Visby 1361 (brandskattades, de tre fyllda faten är en sägen), Stockholm kapitulerade i september 1520 och blodbadet följde i november, Kalmar som "rikets nyckel"; vindeltrappor som gick medsols är omdiskuterat
+  - tidigmodern tid: två–tre skott i minuten med musköt, kompanier på omkring 150 man, karolinsk uniform blå och gul från 1680-talet, vintern 1708–1709; Breitenfeld, Lützen och Poltava står bara i `factSources`
+  - världskrigen: Somme 1916, Skagerrak 1916 (omkring 250 fartyg), Dagen D (omkring 156 000 man), omkring 70 000 finska krigsbarn varav omkring 15 000 stannade, Flygvapnet 1926
+  - modern tid: värnplikten återinförd 2017, Genèvekonventionerna, MSB:s råd om hemberedskap
+- **0.38, svenska:**
+  - genus och böjning att kontrollera mot SAOL: *ett nirvana*, *en karma*, *bodhisattvor*, *sutror*, *stupor*, *ämbetsexamina*, *predikan* (pl. *predikningar*), *mirakel/miraklen*, *gurdwaror*; *fornkyrka*, *östkyrka* och *västkyrka* används nästan bara i bestämd form; *tron* (av *tro*) sammanfaller med *tron* (tronstol); *universum* med usageNote om *universumet*
+  - stavning av lånord efter NE: *chanukka*, *challa*, *getto*, *rosh hashana*, *jom kippur*, *pesach*, *sukkot*, *hijra*, *eid al-fitr*; ordval *slöja*, *böneutropare* (muezzin), *rättsskola* (madhhab), *helgedomsport* (torii), *offerlåda*, *nyårsbesök* (hatsumode), *offerplats* (sieidi), *religiös mångfald*
+  - *hedning* har en registeranmärkning om att ordet kan låta nedsättande; *Gud* används i stället för Allah; *be* har bara betydelsen 祈る (inte "be om"), *offer* bara 捧げ物 (inte brottsoffer)
+  - T01:s definition av *månkalender* (ny månad när månen inte syns) och T03:s *nymåne* (när den första smala skäran syns) bör stämmas av
+- **0.38, japanska:**
+  - termer att granska: 五行 (*de fem pelarna*), 犠牲祭, ムアッジン, 法学派, ダルヴィーシュ, 正教会/奉神礼, 家庭試問 (*husförhör*), ユールオッタ (*julotta*), シナゴーグ, ハッラー, カントル, ランガル, グルドワーラー, ノアイディ, ヨイク, 既知形 (bestämd form), den långa glosan på *katedralskola*
+  - *präst* glosas 牧師, 神官 eller 司祭 beroende på sammanhang; *helgedom* → 神社, *gudabild* → 神像
+- **0.38, fakta (ungefärliga värden, står i `factSources`):**
+  - religion i världen: 85–90 % sunni, omkring två miljoner pilgrimer på hajj, guldåldern ca 750–1250, zakat ofta 2,5 %, omkring 500 miljoner buddhister, över en miljard hinduer, omkring 25 miljoner sikher, över 80 000 shintohelgedomar, omkring 1 % kristna i Japan, Bibeln på över 700 språk, omkring 200 kardinaler
+  - Sverige: över 100 000 katoliker, omkring 20 000 judar, judiska församlingar sedan 1775, ungefär hälften medlemmar i Svenska kyrkan, kyrkoavgift omkring en procent, kvinnliga präster sedan 1960, prästerskapet ett riksdagsstånd till 1866, borgerlig vigsel 1908, religionsfrihetslagen 1951, Katedralskolan i Lund 1085, Uppsala universitet 1477, Svenska kyrkans ursäkt till samerna 2021
+  - historia: ämbetsexamen 605–1905, Japan på månkalender till 1872, Galilei 1633 och erkännandet 1992, Picos tal 1486, Erasmus grekiska Nya testamente 1516, dalai lama i Indien sedan 1959
+- **0.38, bilder:** *ateism*, *sekulär humanism* och *religionskritik* använder överkorsade, neutrala symboler (strålar från moln, en liten kyrka). Produktägaren bör bedöma om det känns respektfullt nog. *osmansk* visar den historiska osmanska flaggan.
+- **0.39, svenska:**
+  - lemman som mest används i bestämd form: *skadeprincip*, *skillnadsprincip*, *allmänvilja*, *eftervärlden*, *tinget i sig*; *metodiskt tvivel* (metodiska tvivlet, ingen plural); *tabula rasa* som fras
+  - böjningar att kontrollera mot SAOL: *hörsägen* (hörsägnen/hörsägner), *hyckleri*, *samvetskval*, *orätt* (utan plural), *förundran* (utan plural), *motsäga* (motsade/motsagt), *slump* (slumpar), *växelverkan*, *jag* som substantiv (ett jag, jaget), *kännande* som oböjligt adjektiv, *materien*
+  - *död* är nu ett substantiv med nyckeln `e.död`; ett senare adjektiv *död* behöver en egen nyckel
+  - *ond tro* har Sartres betydelse (juridiska betydelsen nämns i förklaringen); *svartvit* bara bildligt; *plikttrogen*, *rättrådig* och *överhet* är något ålderdomliga
+  - *s.robot.1* (missil) fick etiketten "vapen" när *robot* (maskin) blev betydelse 2; *s.kollektiv.1* fick "boende", *s.mogna.1* "frukt", *s.tro.1* "religion"
+  - lästexter är förenklade för ordförrådskontrollen: Thoreaus skäl, Platon och hönan (fjädrarna bara i `factSources`), induktion med solen (Hume) i stället för svanar, Turing och Popper utan namn, *tala för/emot* lite styltigt i *Evidens och belägg*
+- **0.39, japanska:**
+  - termer att granska: 真理値, わら人形論法, 循環論法, 多義的/一義的, 合理論, 方法的懐疑, 解釈の優先権 (*tolkningsföreträde*), 準拠枠 (*referensram*), また{聞|ぎ}き (*hörsägen*), 帰結主義, 義務論, 格率, 無知のヴェール, 消極的自由/積極的自由, 危害原理, 一般意志, 格差原理, 分配的正義, 暴力の独占, お{上|かみ} (*överhet*), 心的な (*mental*), 自己認識 (*självuppfattning*), 人格の同一性, 体感時間, 首尾一貫感覚 (*KASAM*), 自由の刑に処せられた, 自己欺瞞 (*ond tro*)
+  - exemplet för *åberopa* översätts friare (黙秘権を行使しました); `jaAlt` saknas i *Medvetande & identitet*
+- **0.39, fakta (står i `factSources`, NE-uppslagen är skrivna ur minnet):**
+  - Platon (*Theaitetos*, Gyges ring), Locke 1690/1694, Descartes 1637/1641, Kant 1781, Russell 1948, Gettier 1963, Protagoras, W. E. Hill 1915, Sokrates enligt *Apologia*, patientsäkerhetslagen 6 kap. 1 §
+  - Foot 1967 (spårvagnsproblemet, "en filosof från England"), Mill, Rawls 1971, Aristoteles medelväg; organdonation är förenklad och nämner inte presumerat samtycke
+  - Berlin 1958, Mill 1859, Weber 1919/1922, Thoreau 1846/1849, Hobbes 1651, Rousseau 1762, FN 1948, Tocqueville 1835–40, regeringsformen 1 kap. 1 § och 2 kap.
+  - Gallup 1970 och skator i spegeltestet, Laplace 1814, Libet 1983, Searles argument
+  - Leibniz 1714, Hume (*Enquiry* VII), Augustinus (*Bekännelser* XI:14, fritt), Minkowski 1908, Epikuros (fritt), Heidegger 1927, Camus 1942/1951, Antonovsky 1987
+- **0.39, bilder:** filosofer är neutrala figurer utan porträttlikhet; *förgänglighet* visar en neutral blomma (körsbärsblommor nämns bara i texten).
+- **0.40, svenska:**
+  - lemman och böjning att kontrollera mot SAOL: *kulturmiljölag* (används i bestämd form, ingen plural), *superpositionsprincipen* som fras, *frilägga* och *levandegöra* i grupp 4, *gruvlave* (gruvlavar), *stadsprivilegium* (används mest i plural), *rödfärg*, *timmer*, *virke*, *sly*, *sot*, *träkol* och *muntlig historia* utan plural, *akt* bara i arkivbetydelsen, *redogöra* (imperativ *redogör*)
+  - fack- och ovanliga ord: *alv*, *lösfynd*, *fornfynd*, *hänkel*, *ärg*, *urkund*, *nedteckna*, *magasin* (museets förråd), *deponera* (C1), *k-märkt* (vardagligt; formellt q-märkning), *pussla ihop* (vardagligt), *kvarleva* som källkritisk term
+  - ordförrådskontrollen tvingade fram omskrivningar som bör läsas igenom: "vittrar av regn och is", "lade döda" (begravde), "skurits" (sågats), "slutet av järnåldern" i stället för *vikingatiden* i Historiska föremål, ortnamn (Tanum, Uppåkra, Sigtuna, Östergötland) och kungen Kristian står bara i `factSources`; *Fynd och fyndplatser* skriver "ruttna" i stället för *förmultna* och har därför bara 15 ord
+- **0.40, japanska:**
+  - termer att granska: {地山|じやま} (*alv*), {遺物包含層|いぶつほうがんそう} (*kulturlager*), {記録保存|きろくほぞん}{調査|ちょうさ} (*uppdragsarkeologi*), {型式学|けいしきがく} (*typologi*), {報労金|ほうろうきん} (*hittelön*), {埋蔵|まいぞう}{文化財|ぶんかざい} (*fornfynd*), {船形列石|ふながたれっせき} (*skeppssättning*), {羨道墳|せんどうふん} (*gånggrift*), {立石|たていし} (*bautasten*), {柱穴|はしらあな} (*stolphål*, även ちゅうけつ), 楕円形ブローチ (*spännbuckla*), ノールビンドニング (*nålbindning*), {常設展|じょうせつてん}, {巡回展|じゅんかいてん}, {保存修復師|ほぞんしゅうふくし}, {収蔵庫|しゅうぞうこ}, {寄託|きたく}, セーテリ (*säteri*), {立坑|たてこう}やぐら (*gruvlave*), しっくい{壁画|へきが} (*kalkmålning*), {赤色塗料|せきしょくとりょう} (*rödfärg*), {叙述史料|じょじゅつしりょう} (*berättande källa*), {遺物|いぶつ} (*kvarleva*), {教区|きょうく}の{住民記録簿|じゅうみんきろくぼ} (*husförhörslängd*)
+  - glosor som ligger nära varandra: *hänkel/handtag* (båda 取っ手), *tillverkningsort/ursprung*, *offerplats/kultplats*, *skanna* .1/.2
+- **0.40, fakta (står i `factSources`, ungefärliga eller omdiskuterade):**
+  - arkeologi: kulturmiljölagen 2 kap. (tillstånd, exploatören betalar, anmälan av fornfynd, hittelön, metallsökare; paragrafnumren är inte kontrollerade), C14-halveringstid ungefär 5 700 år (5 730), Steno 1669, Montelius, strontium- och syreisotoper
+  - fornlämningar: omkring 1 100 fornborgar, svenska världsarv (15 år 2024, texten säger "flera"), runstenar som arvsdokument (Sawyers tolkning), "akrobater" och fruktbarhetstolkning av hällristningar, kyrkor på äldre kultplatser
+  - föremål: mer än 700 silverskatter på Gotland, de första svenska mynten omkring 995, Västgötalagens äldsta handskrift omkring 1280, Helgöbuddhan (ort och datering osäkra), att svenska mynt i dag präglas utomlands
+  - museer: Washingtonprinciperna 1998, återlämningar till samer och urfolk, riktvärden för luftfuktighet, nitril- mot bomullshandskar, DigitaltMuseum och Kringla
+  - byggnader: Uppsala domkyrkas torn 118,7 m och invigning 1435, kryptan i Lund 1123, kakelugnen 1767, Drottningholm (bostad sedan 1981, världsarv 1991), Göteborgs stadsprivilegier 1621, Uppsala stadsbrand 1702, Engelsbergs bruk världsarv 1993, omkring 2 500 byggnadsminnen, rokoko omkring 1740–1770, Stockholmsutställningen 1930, *vapenhus* (delvis folketymologi)
+  - historisk forskning: omkring 70 000 finska krigsbarn, över en miljon emigranter 1850–1930, över 80 dödade vid Stockholms blodbad, omkring 350 000 namn i namninsamlingen 1914, fattigvårdsstrecket avskaffat 1945; missväxtens betydelse för utvandringen och Karl XII-bilden är förenklade
+  - personer, museer och fynd i lästexterna är påhittade (t.ex. "Stadsmuseet i Lund")
+- **0.40, bilder:** svagare bilder som klarade testet: *avbilda* (personen skymmer älgen), *fornnordisk* (torshammaren kan läsas som ett T), *gobeläng*, *kalkmålning* och *workshop*. *motiv* (betydelse 2) klarade omgång 2 med medelsäkerhet.
+- **0.41, svenska:**
+  - lemman och böjning att kontrollera mot SAOL: *rikskanslerer*, *ziggurat*, *janitsjar*, *seladon* (genus), *sanskriten*, *mausoleer*, *epos*, *griot* (grioter), *dhow* (dhower), *swahilin*, *maori* (maorier), *aborigin*, *lama* (lamor), *bison* (bisonar), *guldrush*, *smittkoppor*; *frihetstid* och *stormaktstid* har obestämd form som lemma, *rekordåren* bestämd
+  - genomskinliga eller ovanliga sammansättningar: *krigarklass*, *borgstad* (城下町), *gravfigur* (埴輪), *länsfurste* (大名), *hovadel* (公家), *kandake*, *lermoské*, *pyramidtempel*, *sjöfågel* (bilden visar en havsfågel)
+  - *utskrivning* och *reduktion* har bara den historiska betydelsen; *hungerstrejk* för Gandhis fastor är inte helt exakt
+  - ordförrådskontrollen tvingade fram omskrivningar: "riket i Persien", "folket från det historiska Armenien", "den arabiska befolkningen i Palestina", "de tre rikenas tid", "kungens mamma", "några öar till" (Färöarna)
+  - `names` i `coreVocabulary.json` fick några ord som inte är egennamn för att texterna skulle klara kontrollen: *no*, *holländare*, *koreansk*, *förbundet*, *tamil*, *sasaniderna*, *parterna*, *khan*, *shahen*, *mexica*, *quipu*, *moai* m.fl. Bättre vore att lägga in folkslagsord som ordposter.
+  - tokeniseraren delar ord vid á, í, ó och ú, så namn skrivs utan accent (*Bolivar*, *San Martin*, *Cordoba*, *Potosi*). Kan rättas i `WORD_RE`.
+- **0.41, japanska:** termer att granska: ハット党/キャップ党, {摂政|せっしょう} (*riksföreståndare*), {土地回収政策|とちかいしゅうせいさく} (*reduktion*), {土地統合改革|とちとうごうかいかく} (*laga skifte*), ストックホルムの{血浴|けつよく}, {北欧理事会|ほくおうりじかい}, {百済|くだら}, {世宗|せいそう}, {大河文明|たいがぶんめい} (*flodkultur*), {勅令|ちょくれい} (*edikt*), ギリシアの{火|ひ}, {玄室|げんしつ} (*gravkammare*), アヤトラ, {急流|きゅうりゅう} (*katarakt*), ベルリン{会議|かいぎ} (kan förväxlas med Berlinkongressen 1878), キープ（{結縄|けつじょう}）, クリオーリョ, {流刑植民地|るけいしょくみんち}; titeln {古代|こだい}{西|にし}アフリカの{王国|おうこく} trots att Mali och Songhai är medeltida.
+- **0.41, fakta (står i `factSources`, ungefärliga eller omdiskuterade):**
+  - Norden: husbehovsbränningen förbjuden 1855 (trädde i kraft senare), Olof Skötkonung som förste döpte kung, omkring 80 avrättade i Stockholms blodbad (80–100), "över en miljon" emigranter (cirka 1,2 miljoner)
+  - Östasien: Yayois början (omdebatterad), tyfonen 1281, bushido nedskriven senare, Himiko efter Weizhi
+  - Sydasien: indoariernas ankomst, delningen 1947 (10–20 miljoner flyktingar, dödstal några hundra tusen till två miljoner), Aurangzebs religionspolitik, nollan "under och efter Guptatiden"
+  - Mellanöstern: Kungsvägen över 2 500 km, Cheops pyramid nästan 150 m, avlönade pyramidbyggare, folkmordet 1915 (riksdagen 2010), omkring 700 000 flyktingar 1948
+  - Afrika: omkring 600 svenskar i Kongostaten, svenskt stöd till ANC från 1970-talet (1973), megastäder över tio miljoner beroende på avgränsning
+  - Amerika & Oceanien: Inkavägnätet omkring 30 000 km, Cahokia 10 000–20 000 invånare, omkring 4 000 döda på Trail of Tears, 574 erkända urfolk i USA, 4,9 miljoner förslavade till Brasilien, omkring 160 000 deporterade till Australien, Nya Zeeland 1893 som "första landet" med kvinnlig rösträtt (självstyrande land), Haiti som första stat ur ett slavuppror
+  - inga påhittade personer eller platser
+- **0.41, bilder:** *kungadöme/rike* är markerade som synonymer (kan diskuteras eftersom *rike* också kan betyda imperium). Svagare bilder som klarade testet med medelsäkerhet: *amnesti*, *reduktion*, *stift*, *rusttjänst*, *ojämlik*, *övergiven*, *sionism*, *fredsprocess* (duva med olivkvist), *protektorat*, *flerpartisystem*, *förbund*, *omvända*, *reservat*, *kreol*, *markrättighet*. Våldsamma ord (*blodbad*, *avrätta*, *massaker*, *slaveri*) är återhållsamt ritade.
+- **0.42, svenska:**
+  - böjning att kontrollera mot SAOL: *epicentrum/hypocentrum* (-umet, även epicentret/epicentra), *biflod* (bifloder), *lågland/högland* (-länder), *dalbotten* (dalbottnen), *lerskiffrar*, *glimmerskiffrar*, *isälvsdelta* (-deltan/-deltor), *U-dal*; *stelna* och *ström* har egna poster trots att de är vanliga ord
+  - *flod* har två betydelser (vattendrag/högvatten) och är markerad som synonym till *älv*; *kalva* (om is) har ko-betydelsen bara i förklaringen; *skiffer* och *lerskiffer* är skilda poster; *konglomerat* betyder också företagsgrupp
+  - *skikt* (T03) kunde inte användas i *Sedimentära bergarter* eftersom exemplet innehåller *jordklotet*; T02 skriver *lager*
+  - omskrivningar: "is som faller" för hagel, "längs den stora floden" för Göta älv
+- **0.42, japanska:** termer att granska: {先|せん}カンブリア{時代|じだい}の{古|ふる}い{基盤岩|きばんがん} (*urberg*), ソープストーン (*täljsten*), テーブル{状|じょう}の{山|やま} (*platåberg*), ラウク (*rauk*), {外側|そとがわ}の{群島|ぐんとう} (*ytterskärgård*), {終堆石|しゅうたいせき} (*ändmorän*), {羊背岩|ようはいがん} (*rundhäll*), {氷河擦痕|ひょうがさっこん} (*isräffla*), ケトル (*dödisgrop*), {甌穴|おうけつ} (*jättegryta*), パルサ (*pals*), クイッククレイ (*kvicklera*), {漂白層|ひょうはくそう}/{集積層|しゅうせきそう} (*blekjord/rostjord*), {褐色森林土|かっしょくしんりんど} (*brunjord*), {皆伐地|かいばつち} (*kalhygge*), {凍結破砕|とうけつはさい} (*frostsprängning*); {震度|しんど} förklaras bara i den japanska förklaringen till *magnitud*.
+- **0.42, fakta (står i `factSources`, ungefärliga eller omdiskuterade):**
+  - landskap: Kebnekaise "drygt 2 000 m", Kinnekulle omkring 300 m, Sveriges öar "mer än 200 000" (267 570 enligt SCB 2013), Japan 14 125 öar, Stockholms skärgård omkring 30 000 öar
+  - berggrund: Falu gruvas andel av världens koppar ("en stor del", källan säger ofta två tredjedelar), Kirunamalmens järnhalt "ofta över sextio procent", Sveriges andel av EU:s järnmalm 80–90 %
+  - jordens inre: fjällen "kanske lika höga som Himalaya", omkring 18 000 döda eller försvunna i Tohoku 2011, Sakurajimas utbrott, plattornas hastighet 3–4 cm per år, Nordamerikanska plattan/Ochotskplattan vid Japan
+  - vatten: Göta kanal 58 slussar och 1832, Klarälven–Göta älv cirka 720 km, Njupeskär 93 m, vattenkraft cirka 40 % av elen, tidvatten på västkusten "några decimeter", flaskposten 1886/2018
+  - is: Storglaciären mätt sedan 1945/46, Weichsel, EPICA 800 000 år, morän på cirka 75 % av Sveriges yta, Baltiska issjöns tömning, landhöjningen vid Skuleberget 286 m
+  - mark: Tuveskredet 1977 (omkring 65 hus, nio döda), markanvändning enligt SCB 2020, åkermarkens minskning sedan 1920-talet
+  - personer i lästexterna är påhittade och markerade så
+- **0.42, bilder:** *omkomma* och skred/jordbävning är återhållsamt ritade. Svagare bilder som klarade testet med medelsäkerhet: *stenig*, *skuggig*, *karg*, *smalna av*, *frodig*, *ödslig*, *flack* (tallrik), *urberg*, *densitet*, *glans* (2), *halt*, *geologi*, *magmatisk*, *process*, *glida isär* (2), *kontinentaldrift*, *efterskalv*, *slocknad*, *veckning*, *litosfär*, *bergskedjebildning*, *sjörik*, *organisk*, *näringsfattig* och *forma* (lerskål).
+- **0.43, svenska:**
+  - nya poster för kärnord med bara väderbetydelsen: *klar* ("om himlen"), *lätta* ("om dimma"), *frysa* ("känna sig kall"), *blixt* ("vid åska"); grundbetydelserna kan läggas till med `add_sense`
+  - böjning att kontrollera: *hektopascal* (bestämd plural), *vakuum*, *tajga* (tajgor), *aridt*, *vindstilla* (oböjligt), *snöslask*/*nysnö*/*solsken* utan plural
+  - register: *hundkall*, *stekhet*, *ösregna*, *gråväder*, *ruskväder*, *snökaos* är markerade som vardagliga; *singla* och *torna upp sig* är litterära
+  - *skiktmoln* följer SMHI (altostratus) och *dimmoln* används för stratus; *hagel* täcker både 雹 och 霰
+  - texterna använder singular ("mild vinter") eftersom ordkontrollen inte känner igen regelbunden plural av grundord
+- **0.43, japanska:** termer att granska: {晴|は}れ{時々|ときどき}{曇|くも}り/{晴|は}れたり{曇|くも}ったり (*halvklar/växlande molnighet*), しっとりした{雪|ゆき} (*kramsnö*), しばれる (*hundkall*, dialektalt), {貴|き}ガス (*ädelgas*), {雲粒|くもつぶ} (*molndroppe*), サーマル (*termik*), {冷|ひ}え{込|こ}み/{霜|しも} (*frost*), {霧氷|むひょう} (*rimfrost*), {至点|してん} (*solstånd*), {極圏|きょくけん}の{境界線|きょうかいせん} (*polcirkel*), （{山|やま}の）{風下側|かざしもがわ}の{雨|あめ}の{少|すく}ない{地域|ちいき} (*regnskugga*), {産業革命前|さんぎょうかくめいまえ}, {脱化石燃料|だつかせきねんりょう}.
+- **0.43, fakta (står i `factSources`, ungefärliga eller omdiskuterade):**
+  - väder: −52,6 °C i Vuoggatjålme 1966 och +38,0 °C i Målilla 1947, SMHI:s varningssystem från oktober 2021, sjöskalans gränser för kuling/storm/orkan, Gudrun 2005 ("nästan en årsavverkning"), snökaoset i Gävle 1998 (datum att kontrollera), Kumagaya 41,1 °C 2018
+  - atmosfär: luftens sammansättning, 1013 hPa, lagrens höjder, Montrealprotokollet 1987, kvicksilverförbudet (förenklat)
+  - moln och nederbörd: molnens höjder, blixtens temperatur, 1 mm = 1 l/m², årsnederbörd 500–800 mm
+  - klimatzoner: Ojmjakon −67,7 °C (omstritt), Jakutsk, växtsäsongens längd i Sverige, Köppen-klasser för Tokyo och Hokkaido
+  - klimatförändringar: uppvärmning ungefär 1,2 °C (Sverige nästan 2 °C), drygt 420 miljondelar CO₂, havsnivå ungefär 20 cm sedan 1900, utsläppen minskade med ungefär en tredjedel sedan 1990 (territoriella), klimatmålet 2045 förenklat
+- **0.43, bilder:** svagare bilder som klarade testet med medelsäkerhet: *halvklar*, *molnig*, *lätta*, *fuktig*, *råkall*, *isande*, *se ut att*, *väder*, *klar*, *sikt*, *kvav*, *argon*, *ädelgas*, *isobar*, *vakuum*, *mättad*, *daggpunkt*, *molnbildning*, *underkyld*, *front* (3), *kraftig* (3), *nederbördsrik*, *luftmassa*, *i sträck*, *tropisk*, *tempererad*, *nederbördsfattig*, *infraröd*, *miljondel*, *temperaturökning*, *osäkerhet* (2) med flera. *hemberedskap* fick hög säkerhet i omgång 2 men underkändes eftersom granskaren skrev att *krisberedskap* passar nästan lika bra.
+- **0.43, blindtest:** granskarna ombads från 0.43 märka varje alternativt ord med "(lika bra)", "(nästan lika bra)", "(delvis)" eller "(svagt)". Integratören godtog medelsvar där alternativen bara var "delvis"/"svagt" och underkände "(nästan) lika bra", låg säkerhet och "otydlig" om kärnan.
+- **0.44, svenska:**
+  - *mask* (djur) är inte målord, eftersom posten *mask* böjs som ansiktsmask (*masker*). Lästexten i *Maskar och snäckor* har *maskar*; en egen post för djuret kräver stöd för homonymer i verktygen.
+  - böjning att kontrollera: *axolotl* (axolotln/axolotler), *kväka* (kväkte/kväkt; SAOL har även kvakte/kvakt), *revirhävdande* (satt oböjligt)
+  - *kläcka.1* är definierat för fåglar men används även om insektsägg; *bröla* används om kronhjortens brunstläte; facktermerna *lekvandring* och *vandringshinder* är C1
+  - tjäderns *spel* står bara i texterna (ingen egen post)
+- **0.44, japanska:** artnamn att granska: ヤマキチョウ (*citronfjäril*), オオモンシロチョウ (*kålfjäril*), ヨーロッパミヤマクワガタ (*ekoxe*), ヤツバキクイムシ (*granbarkborre*), ツチボタル (*lysmask*), ニワオニグモ (*korsspindel*), スペインナメクジ (*mördarsnigel*), ヨーロッパヤマカガシ (*snok*), ヨーロッパナメラ (*hasselsnok*), ニワカナヘビ (*sandödla*), コモチカナヘビ (*skogsödla*), ヒメアシナシトカゲ (*kopparödla*), クシイモリ/スベイモリ (*större/mindre vattensalamander*), ヨーロッパオオライチョウ (*tjäder*), スズメバチ (*geting*).
+- **0.44, fakta (står i `factSources`, försiktigt formulerade):**
+  - insekter: cirka 2 700 fjärilsarter (drygt 100 dagfjärilar), cirka 4 500 skalbaggsarter och cirka 300 vildbiarter i Sverige; vaccin mot TBE men inte mot borrelia; mördarsnigeln sedan 1970-talet
+  - kräldjur: 6 kräldjur och 13 groddjur i Sverige, alla groddjur fridlysta, levandefödande huggorm/hasselsnok/kopparödla/skogsödla, temperaturstyrt kön hos krokodildjur och havssköldpaddor; kajman och pilgiftsgroda förenklat till "Sydamerika"
+  - beteenden: vargflockens "alfa"-bild beskrivs som omdiskuterad; ålens lek i Sargassohavet är ett antagande; laxen hittar "oftast" hem med luktsinnet; binas dans (von Frisch, Nobelpriset 1973)
+- **0.44, bilder:** *livscykel* och *metamorfos* visas med fågel respektive groda för att inte förväxlas med *fullständig förvandling*. Medelsäkra men godkända bland annat: *vårtecken*, *utrotningshotad*, *ryggradslös*, *rödlistad*, *artrik*, *parasit*, *metamorfos*, *benlös*, *nykläckt*, *hudandning*, *solvarm*, *läderartad*, *kön*, *hotfull*, *kommunicera*, *underkastelse*, *orörlig*, *hemområde*.
+- **0.44, arbetsform:** etappen kördes i samma session som 0.41–0.43 på produktägarens uttryckliga begäran.
+- **0.42, arbetsform:** etappen kördes i samma session som 0.41 på produktägarens uttryckliga begäran. T03 och T06 blev klara före de grupper som kommer före dem i katalogen; T03:s förkunskap rättades i efterhand, och T06:s innehåll backades och lades in först efter T05.
+- **0.45, svenska:**
+  - böjning och plural att kontrollera mot SAOL: *spång* (spångar/spänger), *tussilago* (tussilagor), *vallmo* (vallmor), *örtte* (örtteer), *agn* (agnen/agnar), *skvattram* (skvattrammen), *självså sig* (självsådde/självsått), *förtära* (imperativ *förtär*), *övervattna* (kanske inte i SAOL); arter och ämnen utan plural (*timotej*, *rosmarin*, *oregano*, *kåda*, *sav*, *granris*, *gödsel* m.fl.)
+  - fack- och ovanliga ord: *vårved*, *sommarved*, *fröämne* (C1), *näringsupptag*, *bladskiva*, *klyvöppning*, *frövila* (C1), *strumpa* (volva) och *rör* på svamp, *shiitakesvamp* i stället för *shiitake*, *karljohansvamp*
+  - poster med särskild nyckel: *blomma* som verb (`blomma-verb`), *så* som verb (`så-verb`), *spricka* som verb (`spricka-verb`), *skära* (redskap) från 0.40
+  - *blad* har en egen post med not om skillnaden mot *löv*; *hålla sig* har bara matbetydelsen; *befruktning.2* är förenklat definierad
+  - *Beskära och gallra* behöver *Prydnadsbuskar* som extra förkunskap eftersom *häck* och *häcksax* förklaras med *buske*
+- **0.45, japanska:**
+  - artnamn att granska: ヤマナラシ (*asp*), ダケカンバの仲間 (*fjällbjörk*), セッコウボク (*snöbär*), シモツケ/ユキヤナギの仲間 (*spirea*), {貴重|きちょう}な{広葉樹|こうようじゅ} (*ädellövträd*), ビタースイート (*besksöta*), フウロソウ (*midsommarblomster*), イトシャジン (*blåklocka*), キバナノクリンザクラ (*gullviva*), セイヨウミヤコグサ (*käringtand*), マツムシソウの仲間 (*ängsvädd*), キサントリア (*vägglav*), {氷河|ひょうが}キンポウゲ (*isranunkel*), フウセンタケの{一種|いっしゅ} (*toppig giftspindling*), ミキイロウスタケ (*trattkantarell*), サルノコシカケ (*ticka*), ゴボウ（の{実|み}） (*kardborre*), ひこばえ (*rotskott*)
+  - fackord: {葉序|ようじょ}, {蒴果|さくか}, {浮葉|ふよう}, {気孔|きこう}, {徒長枝|とちょうし}, {底面給水式|ていめんきゅうすいしき}
+- **0.45, fakta (står i `factSources`):** skogsmark ungefär 69–70 % av landytan, ädellövträd enligt skogsvårdslagen, björksav kräver markägarens tillstånd, backsippan fridlyst, linnea Smålands landskapsblomma, lupin och jätteloka invasiva, johannesört påverkar läkemedel, naturläkemedel godkänns av Läkemedelsverket, omkring 1 100 mossarter och 2 000 lavarter, vitmossa håller 20–25 gånger sin vikt, torv växer 0,5–1 mm per år, isranunkeln växer högst upp i Sverige, symtomtider för lömsk flugsvamp och toppig giftspindling, Livsmedelsverket avråder från stenmurkla, jättemycelet i Oregon, nattfrost i slutet av maj, jordkällare 4–8 °C, kompost 1–2 år; källorna är angivna ur minnet
+- **0.45, bilder:** artbilder som är svåra att skilja (lind, alm, asp, hassel, ask, gräs- och lavarter) har `quiz: false`. Medelsäkra men godkända bland annat: *vintergrön*, *uråldrig*, *gynnsam*, *insektspollinerad*, *vetenskapligt namn*, *mossig*, *härdig*, *lågväxt*, *dödlig*, *fördröjd*, *välvd*, *underjordisk*, *mikroskopisk*, *utbyte*, *svampkunnig*, *kalium*, *vedartad*, *örtartad*, *grobar*, *ettårig*, *flerårig*, *vildvuxen*, *nyttodjur*, *missfärgad* (visas som en fläckig tröja).
+- **0.45, arbetsform:** etappen kördes i samma session som 0.40 på produktägarens uttryckliga begäran.
+- **0.46, svenska:**
+  - böjning och lemman att kontrollera mot SAOL: *koppar* (utan plural), *litium*, *miljöpåverkan*, *naturum* (naturumet, plural naturum), *död botten* (döda bottnen/bottnar), *ansamlas* (deponens, C1), *färgrest*, *nära hotad*, *allemansrätt*, *miljöbalk* och *försiktighetsprincip* (används mest i bestämd form), *förorenaren betalar* och *bräckt vatten* (SAOL har även *brackvatten*) som fraser
+  - *population* och *bestånd* är skilda åt så att *bestånd* gäller djur som jagas eller fiskas; *sällsynt.2* (om arter) är en egen betydelse; *tillgång* har bara betydelsen "mängd som finns"; *skördare* används om skogsmaskinen; *loppis* är vardagligt; *vindpinad* är litterärt
+  - *miljökonsekvensbedömning* heter sedan 2018 *miljöbedömning* i lagtexten (står i `factSources`); *mark- och miljödomstol* kunde inte bli post och omskrivs i texten
+- **0.46, japanska:**
+  - fackord att granska: {生息数|せいそくすう} (*bestånd*), ワラジムシ (*gråsugga*), {送粉者|そうふんしゃ} (*pollinatör*), ヨーロッパムナグロ (*ljungpipare*), ウミガラス (*sillgrissla*), ヒバマタ (*blåstång*), {草本層|そうほんそう}/{地表層|ちひょうそう} (*fält-/bottenskikt*), {緩衝帯|かんしょうたい} (*kantzon*), {生態回廊|せいたいかいろう} (*spridningskorridor*), {在来品種|ざいらいひんしゅ} (*lantras*), サーマルリサイクル (*energiåtervinning*), {死|し}の{海底|かいてい} (*död botten*), ハーベスタ, パルプ{材|ざい}, {最小体長|さいしょうたいちょう}, カーボンフットプリント, {環境質目標|かんきょうしつもくひょう}, {段階目標|だんかいもくひょう}, {世代目標|せだいもくひょう}, {環境法典|かんきょうほうてん}, {環境制裁金|かんきょうせいさいきん}, {履行強制金|りこうきょうせいきん} (*vite*), {是正命令|ぜせいめいれい} (*föreläggande*), ナトゥールム (*naturum*)
+- **0.46, fakta (står i `factSources`, ungefärliga):** lämmelår vart tredje till femte år, tio procent energiöverföring per led, 69 % skogsmark, jätteek från en meters diameter, tillträdesförbud på fågelskär 1 april–31 juli, omkring 100 000 sjöar, rödlistan vart femte år, östra Östersjötorsken stängd sedan 2019, bävern återinförd 1922–39, 80 000 möjligt förorenade områden, EU:s förbud mot engångsplast 3 juli 2021, pant 1 krona, kostråd om strömming, 80 % av EU:s järnmalm, 140 liter vatten per person och dygn, 300 000 skogsägare, en sjundedel skyddad yta och ett trettiotal nationalparker, klimatfinansiering 100/300 miljarder dollar, EU-direktivet mot grönmålning från hösten 2026, USA:s utträde ur Parisavtalet (kan ändras)
+- **0.46, bilder:** varningsromberna i *miljöfarlig* och *hälsofarlig* är förenklade GHS-symboler utan text. Många abstrakta ord fick bild bara efter medelsäkra svar som integratören godtog (t.ex. *population*, *tillgång*, *biomassa*, *resurs*, *generalist*, *arvsmassa*, *allemansrätt*, *luftkvalitet*, *förvalta*, *delningsekonomi*, *miljöbalk*, *klimaträttvisa*).
+- **0.46, arbetsform:** etappen kördes i samma session som 0.40 och 0.45 på produktägarens uttryckliga begäran.
+- **0.47, svenska:**
+  - geografiska namn som egna poster (*Klippiga bergen*, *Stora sjöarna*, *Anderna*, *Stilla havet*, *Arktis* m.fl.) har `inflection: none`; *Yucatanhalvön* och *Brasilia* skrivs utan accent eftersom ordtolkningen delar ord vid á/í (Medellín står inte i texten); *Mexikanska golfen* heter officiellt "Gulf of America" i USA sedan 2025 (står i `factSources`)
+  - böjning och ord att kontrollera mot SAOL: *sjömil*, *GPS* (GPS:en), *ange* (grupp 4), *segelbar* (C1; alt. *farbar*), *östat*, *riksha* (alt. *rickshaw*), *finanscentrum* (pl. *-centrum/-centra*), *jak* (jakar), *wadi* (wadier), *löss* (sammanfaller med plural av *lus*), *saltpanna* (geografisk betydelse), *shelfis* (alt. *isshelf*), *Sydalperna*, *känguru* (känguruer), *kiwi* (kiwier), *inuit* (inuiter), *inland* i stället för *outback*
+  - befintligt datafel: posten *damm* (`e.damm`) har böjningen för betydelsen "ett damm" även för betydelserna "en damm" (.2, .3), så formen *dammen* känns inte igen; lästexten i *Afrikas större floder och sjöar* använder därför obestämd form
+  - *provins* (`s.provins.1`) har en definition som utgår från Rom med tillägg om i dag; *alpacka* betyder ullen
+- **0.47, japanska:**
+  - termer att granska: {行政区分図|ぎょうせいくぶんず} (*politisk karta*), {地勢図|ちせいず} (*fysisk karta*), {包領|ほうりょう} (*enklav*), {陸上|りくじょう}の{連絡路|れんらくろ} (*fast förbindelse*), {塩類平原|えんるいへいげん} (*saltpanna*), {北島|ほくとう}/{南島|なんとう}; glosan för *korean* ({韓国|かんこく}・{朝鮮人|ちょうせんじん}) är känslig och bör granskas av en människa; lästexten i *Andernas bergsområden* är omskriven på japanska
+- **0.47, fakta (står i `factSources`, kan ändras):** Mont Blanc ungefär 4 800 m, Island omkring 400 000 invånare, Venedigs avgift för dagsturister, Japan 14 125 öar och 111 aktiva vulkaner, Indonesien omkring 17 000 öar, Everest 8 849 m, Döda havet mer än 400 m under havsytan, Jakarta/Dhaka/Tokyo över 30 miljoner (FN, WUP 2025), Sahara omkring 9 miljoner km², Kilimanjaro 5 895 m, 54 stater i Afrika varav 16 inlandsstater, Nigeria över 200 miljoner invånare, Tchadsjön krymper, Rio de Janeiro: en femtedel i favelor (IBGE 2022), Nya Zeeland 23–25 miljoner får, Antarktisfördraget omkring 58 parter, Påskön omkring 3 500 km från Chile, gränserna mellan Melanesien, Mikronesien och Polynesien varierar
+- **0.47, bilder:** länder och platser är förenklade kartor med området i orange; folkslagsorden visar en person bredvid en markerad karta; nordiska flaggor (med kors) förekommer i *nordbo*-motivet men ordet saknar bild; *dollar*-sedeln visar tecknet $; väderstrecksbokstäverna N/Ö/S/V finns i kartbilderna som i `nav.ts`.
+- **0.47, arbetsform:** etappen kördes i samma session som 0.40, 0.45 och 0.46 på produktägarens uttryckliga begäran.
+- **0.48, svenska:**
+  - läroboksord att kontrollera mot SAOL: *variabelterm*, *konstantterm*, *funktionsmaskin*, *bruten axel*, *kvartscirkel*, *åttahörning*, *full vinkel*, *rak vinkel*, *värdesiffra* (C1), *tiokamrat* (utelämnad)
+  - böjning: *decimalkomma* (pl. -komman), *obekant* som substantiv, *origo* (ett, utan plural), *data* (utan plural, förklaras i not), *hektar* (en/ett), *prismor*, *parallellogrammer*, *omvänt proportionell*
+  - uttryck att granska: *delare till 6*, *ställa upp* (skriva tal under varandra), *tre halva*, *flytta över*, *slå en cirkel*, *skilja sig åt*, ordföljden "Talet 3,7 ska man avrunda uppåt till 4"
+  - *i enklaste form* (`s.i-enklaste-form.1`) är definierad för bråk men används också om uttryck; *gränsvärde* (`s.gränsvärde.1`) har bara miljöbetydelsen, så *Gränsvärden* i 0.49 behöver en ny betydelse
+  - *minst* och *högst* är adverbposter för antal; *addera/subtrahera/multiplicera/dividera* nämns bara i japanska noter; formeln skrivs "y = k · x + m" eftersom ordkontrollen inte godkänner "kx"
+- **0.48, japanska:**
+  - termer att granska: {繰|く}り{下|さ}げる (*växla*), {倍分|ばいぶん}する (*förlänga*), {帯分数|たいぶんすう}/{仮分数|かぶんすう}/{真分数|しんぶんすう}/{既約分数|きやくぶんすう}, {未知数|みちすう} (*obekant*), {同類項|どうるいこう} (*termer av samma slag*), omskrivningen för *isolera*, {隣|となり}り{合|あ}う{角|かく} (*sidovinkel*), glosan för *liggande stolen*, *stolpdiagram* och *feberkurva*; rubriken 「{答|こた}えの{妥当性|だとうせい}の{判断|はんだん}」
+- **0.48, fakta (står i `factSources`, kan ändras):** 0 som naturligt tal i svensk skola, Sveriges lägsta punkt i Kristianstad (cirka 2,4 m under havet), udda och jämna husnummer på var sin sida, liggande stolen, multiplikationstabellen till 10 × 10, öresavrundning sedan 30 september 2010, moms 25 %, mjölk 3 % och lättmjölk 0,5 % fett, dricks cirka 10 %, kommunalskatt cirka 32 %, Stockholm–Göteborg cirka 470 km, åldersgräns 15 år för film, luftkvalitetsförordningen (2010:477), F = 1,8·C + 32, taxibolag sätter egna priser och visar jämförpris, BVC:s tillväxtkurvor, felmarginal ±4 procentenheter för 640 svar (egen beräkning), SCB redovisar lön som median (inte kontrollerat), vinkelsumman 180°, Pythagoras sats känd i Babylonien (inte kontrollerat), 1 ha = 10 000 m², 1 dm³ = 1 liter
+- **0.48, bilder:** bilderna visar siffror och räknetecken men inga ord; åttahörningen är en röd stoppskylt utan text; enhetsbilden visar m, kg och kr. Flera matematikord blev utan bild trots att granskaren valde rätt ord, eftersom en synonym nämndes som lika bra (se *Saknade bilder*).
+- **0.48, arbetsform:** etappen kördes i samma session som 0.40, 0.45–0.47 på produktägarens uttryckliga begäran. Containern startades om två gånger och användningsgränsen nåddes en gång; gruppagenterna återupptogs från sina worktrees.
+- **0.49, svenska:**
+  - ord och böjning att kontrollera mot SAOL/SO: *sinus*/*cosinus* (sinusen, ingen plural), *indata* (en, indatan), *matrjosjka*, *möbiusband*, *klockaritmetik*, *fyrfältstabell*, *lottorad*, *elementvis*, *korsvis*, *skjuvning*, *spegelvänd* (B2), *substitutionsmetod*/*additionsmetod* (obestämd form som lemma), *maximipunkt*/*minimipunkt*, *teckentabell* (alt. *teckenschema*), *största gemensamma delare* i plural, *falskt positiv* och *lika sannolik* (handskriven böjning), *femtio-femtio* (vardagligt)
+  - *snitt*, *sats*, *mängd*, *konjunktion* och *komplement* har bara den matematiska betydelsen som egen post; vardagsbetydelserna nämns i förklaringarna
+  - *talplan* används som lemma för "det komplexa talplanet"; *munk* (bakverk) beskrivs med hål, med en not om svenska munkar utan hål
+- **0.49, japanska:**
+  - termer att granska: {接線|せっせん}が{水平|すいへい}な{変曲点|へんきょくてん} (*terrasspunkt*), {零点|れいてん} (*nollställe*), {増減表|ぞうげんひょう} (*teckentabell*), {連鎖律|れんさりつ} (*kedjeregel*), {方向場|ほうこうば} (*riktningsfält*), {倍増時間|ばいぞうじかん} (*fördubblingstid*), {下端|かたん}/{上端|じょうたん}, たすき{掛|が}け (*korsvis*), {正方|せいほう}の (*kvadratisk*), せん{断|だん} (*skjuvning*), {添|そ}え{字|じ} (*index*), {正則|せいそく}な (*inverterbar*), {四分割表|しぶんかつひょう} (*fyrfältstabell*), {迅速検査|じんそくけんさ} (*snabbtest*), ekvivalens och omvändning (命題の逆), {時計|とけい}の{算術|さんじゅつ} (*klockaritmetik*, ingen etablerad term), {複素数平面|ふくそすうへいめん} (*talplan*)
+- **0.49, fakta (står i `factSources`, kan ändras):** Stockholm–Uppsala cirka 70 km, Göteborg–Malmö cirka 270 km, skrivsättet ]a, b[ i Sverige, Newtons avsvalningslag och 70-regeln, PageRank (1998), gångbroar och resonans (Millennium Bridge 2000), registreringsskyltar med bokstav som sista tecken sedan 2019 (bör kontrolleras), kroppslängd ungefär normalfördelad, Euler och Königsbergs broar 1736, tvillingprimtalsförmodan obevisad (2026), Japan 50/60 Hz, kontrollsiffran i personnumret (Luhn), Beurling och Geheimschreiber 1940, Kantorovitj (1939) och Dantzig (1947), Erlang (1909), George Box. Räkneexempel är påhittade men kontrollräknade.
+- **0.49, bilder:** bokstäver som variabelnamn (x, y, t, i, σ) och notationen P(A | B) förekommer; *tillryggalagd* visar "12 km"; Caesarchiffret i *chiffer* visar bokstäverna A–I men ordet saknar bild.
+- **0.49, arbetsform:** etappen kördes direkt efter 0.48 i samma session på produktägarens uttryckliga begäran ("fortsätt direkt efter avancerad matematik-modulerna").
+- **0.50, svenska:**
+  - ord och böjning att kontrollera mot SAOL/SO: *berg-och-dal-bana* (skrivs med bindestreck eftersom ordtolkningen inte känner igen "berg- och dalbana"), *trycka ifrån*, *newton*/*hertz*/*kelvin*/*joule* (plural utan ändelse), *retardation* (C1), *avlägsna sig* (C1), *celsiusskala*, *värmerörelse*, *reflektionsvinkel* (alt. *reflexionsvinkel*), *polarisation* (*polarisering* finns redan i politisk betydelse), *spektrum* (pl. spektrum/spektra), *kvantum* (pl. kvanta, best. pl. osäker), *neutrino* (neutriner), *ett radon*, *spinn*, *våg-partikeldualitet*, *Faradays bur*, *van de Graaff-generator*
+  - *kraft*, *rörelse*, *arbete*, *effekt*, *huvudsats* och *diffus* har bara fysikbetydelsen som egen betydelse; vardagsbetydelserna nämns i förklaringarna
+  - *nod*/*buk* (stående våg) och *utslag* (svängning) är skolfysiktermer; *kedjereaktion* används om kärnreaktioner med den allmänna betydelsen
+  - *volt* och *ampere* är inte modulord (går inte att skilja från spänning och ström i bild)
+- **0.50, japanska:**
+  - termer att granska: {速度違反取締|そくどいはんとりしま}りカメラ (*fartkamera*), {秒速|びょうそく}〜メートル, {疎|そ}な{部分|ぶぶん}/{密|みつ}な{部分|ぶぶん} (*förtunning/förtätning*), {超低周波音|ちょうていしゅうはおん} (*infraljud*), {強|つよ}め{合|あ}う/{弱|よわ}め{合|あ}う{干渉|かんしょう}, {節|ふし}/{腹|はら}, サーモグラフィーカメラ, {逃|に}げ{水|みず}/{蜃気楼|しんきろう} (*luftspegling*), N{極|きょく}/S{極|きょく}, IHクッキングヒーター, {摂氏温度|せっしおんど}の{目盛|めも}り, {熱容量|ねつようりょう}・{比熱|ひねつ}, {海洋性気候|かいようせいきこう}, {亜原子|あげんし} (*subatomär*), {時間|じかん}の{遅|おく}れ, {長|なが}さの{収縮|しゅうしゅく}, もつれ (*sammanflätning*), {被曝線量|ひばくせんりょう} (*stråldos*)
+- **0.50, fakta (står i `factSources`, kan ändras):** tyngdacceleration 9,82 m/s², glödlampans verkningsgrad 5 %, jordaxelns lutning 23,4°, Principia 1687, ljudhastighet 340 m/s i luft och 1 500 m/s i vatten, tre sekunder per kilometer vid åska, 50 Hz i Sverige och 50/60 Hz i Japan, Broughton-bron 1831, ljudvallen bröts 1947, blåljus i Sverige och rött i Japan, valars läten nära infraljud (bör kontrolleras), ljusets hastighet 299 792 km/s, 230 V i vägguttag, glödtråd cirka 2 500 °C, kapacitiva pekskärmar, elinstallation endast av registrerat företag, bensinmotorns verkningsgrad 25–35 %, värmepumpens faktor 3–4, slutförvaret i Forsmark (beslut 2022, cirka 500 m), kvantdatorn på Chalmers, MAX IV och ESS i Lund, närmaste svarta hål cirka 1 500 ljusår, GPS-klockor 38 µs per dygn, radonmätning oktober–april
+- **0.50, bilder:** varningssymbolen för strålning (trefoil) används som allmän symbol; utryckningsfordon visas utan rött kors; siffror och enheter (m/s, 300 000 km/s, ×10) förekommer men inga ord.
+- **0.50, arbetsform:** etappen kördes direkt efter 0.48 och 0.49 i samma session på produktägarens uttryckliga begäran. Användningsgränsen nåddes en gång; agenterna återupptogs från sina worktrees.
+- **0.51, svenska:**
+  - ord och böjning att kontrollera mot SAOL/SO: genus för grundämnen (*ett klor*, *ett svavel*, *en kisel*, *ett aluminium*), *elektronhölje*, *fullt skal*, *elektronkonfiguration*, *kulstavsmodell* (alt. *kulstavmodell*), *kalottmodell*, *van der Waals-kraft*, *gitter* (ofta *jongitter*), *aceton*, *brandtriangel*, *exoterm/endoterm* (alt. *-isk*), *fattas*, *promille* (pl. promille), *mol* (pl. mol), *vätekarbonat*, *syra-basbalans*, *läskedryck*, *gasol*, *butan*, *fotogen*, *etanol*, *silikon* och *vax* (ett), *glycerol* (alt. *glycerin*), *karboxylsyra*, *hydroxylgrupp*, *förestring*, *erlenmeyerkolv* (i skolan *E-kolv*), *laboratorium* (ofta *labb*), *tarera* (C1)
+  - *index* används för siffran i en kemisk formel; *neutralisation* och *buffert* har inga egna poster (samma ordfamilj som *neutralisera*/*buffertlösning*), så texterna undviker dem trots att de är modultitlar
+  - kemiska tecken med två bokstäver (Fe, Au, Na) och formler som NaCl går inte igenom ordkontrollen; texterna skriver "metallatom" eller har formlerna i de japanska texterna och i `factSources`
+  - s.sur.1 och s.salt.1 (vardagsbetydelserna) är inte modulord och har ingen bild
+- **0.51, japanska:**
+  - termer att granska: {電子殻|でんしかく}, {原子核|げんしかく}のまわりの{電子|でんし}の{部分|ぶぶん} (*elektronhölje*), {毛管力|もうかんりょく} (*kapillärkraft*), {貴|き}ガス{型|がた}の{電子配置|でんしはいち} (*ädelgasstruktur*), {加工|かこう}しやすい (*formbar*), {発火点|はっかてん} (*antändningstemperatur*), {燃焼|ねんしょう}の{三要素|さんようそ} (*brandtriangel*), {添|そ}え{字|じ} (*index*), {電離|でんり} (*protolys*, approximation), プロパンガス/LPガス (*gasol*), {燃料用|ねんりょうよう}アルコール (*rödsprit*), {発泡|はっぽう}プラスチック (*cellplast*), ジャガイモでんぷん (*potatismjöl*), ドラフト (*dragskåp*), {洗浄瓶|せんじょうびん} (*spolflaska*), {風袋|ふうたい}を{引|ひ}く (*tarera*), {精密天秤|せいみつてんびん} (*analysvåg*)
+- **0.51, fakta (står i `factSources`, kan ändras):** 118 grundämnen varav cirka 90 i naturen, jodberikat salt, argon mellan fönsterglas, Mendelejev 1869, fluor-18 cirka 110 minuter, tungt vatten densitet 1,11, kol-14 cirka 5 730 år, bindningsvinklar 105°/109°, metan kokar −162 °C, natriumklorid smälter 801 °C, klorgas vid blandning av rengöringsmedel, papper antänds cirka 230 °C, silver svartnar av svavel, hortensior blå i sur jord, pH för läsk, promillegränsen 0,2, Avogadros tal, svensk ättika 12 %, bensoesyra i lingon, raffinaderier i Göteborg och Lysekil, Livsmedelsverkets fiskråd, sockerbetor i Skåne, cellplast 98 % luft, CLP/GHS nio symboler, analysvåg 0,1 mg
+- **0.51, bilder:** farosymbolerna är förenklade GHS-romber utan text; inga varumärken (*T-röd*, *frigolit* undvikna).
+- **0.51, arbetsform:** etappen kördes direkt efter 0.48–0.50 i samma session på produktägarens uttryckliga begäran. Veckogränsen nåddes en gång (arbetet pausade över natten); agenterna återupptogs från sina worktrees.
+- **0.52, svenska:**
+  - *stamträd* för fylogenetiskt träd (SAOL: "släktträd"), *urfågel* för Archaeopteryx, *homo sapiens* som `phrase`, *levande fossil* och *sexuell selektion* med manuell böjning, *upprätt* som adjektiv
+  - böjning att kontrollera: *antigen* (antigenet, antigener; pluralen *antigen* möjlig), *axon* (pl. axon), *hemoglobin* och *glukagon* som neutrum; *stora/lilla kretsloppet* och *centrala/perifera nervsystemet* som phrase-poster i bestämd form
+  - ordval: *mördarcell* (populärvetenskapligt), *avfallsprodukt* (i stället för *slaggprodukt*), *förbränna* bara i kroppsbetydelsen, *anaerob* (C1) nära *syrefri*
+  - vokabulärkontrollen godtar inte *schimpans*, *lejon* eller *hjort*; texterna skriver runt dem
+- **0.52, japanska:** ゴクラクチョウ/フウチョウ, ネアンデルタール人, {猿人|えんじん} (*förmänniska*, förenkling), {擬態|ぎたい} (*mimikry*), キラー{細胞|さいぼう} (*mördarcell*, både T-mördarceller och NK-celler), {体循環|たいじゅんかん}/{肺循環|はいじゅんかん}, {内分泌系|ないぶんぴつけい}, {環境収容力|かんきょうしゅうようりょく} (*bärförmåga*), {片利共生|へんりきょうせい} (*kommensalism*), キーストーン{種|しゅ} (*nyckelart*)
+- **0.52, fakta (står i `factSources`, kan ändras):** gemensam förfader med schimpansen 6–7 miljoner år, Lucy 3,2 miljoner år, homo sapiens cirka 300 000 år, neandertalarna dog ut för cirka 40 000 år sedan, trilobiter i Ölands kalksten, hjärnvolymer, cirka 350 hundraser (FCI), cirka 180 l primärurin och 1,5 l urin per dygn, vilopuls 60–80, matsmältningskanalen 8–9 m, reaktionstid 0,2–0,3 s, syremättnad 95–100 %, tiondelsregeln för energi mellan näringsnivåer, hare–lodjurscykler, fem massutdöenden (senast för 66 miljoner år sedan), mistel i södra Sverige
+- **0.52, bilder:** *ståtlig* visade ett lejon fast exemplet handlar om en kronhjort (ordet saknar nu bild); *könshormon* visar ♀ och ♂ som ritade symboler.
+- **0.52, arbetsform:** etappen kördes direkt efter 0.48–0.51 i samma session på produktägarens uttryckliga begäran. Användningsgränsen nåddes; agenterna återupptogs från sina worktrees.
+- **0.53, svenska:**
+  - ord att kontrollera mot SAOL/SO: *zenit* (neutrum, *zenitet*), *perihelium/aphelium* (bestämd form *-iet*, ingen plural), *himmelssfär*, *vårpunkt*, *stenplanet* (även "jordliknande planet"), *iskalott* och *kollisionskurs* (C1), *rumtid* (även *rum-tid*), *gäststjärna* (översättning av 客星), *linsformad/irreguljär galax* (även *linsformig*, *oregelbunden*), *stavspiralgalax* (C1), *solsköld*, *plaska ner*, *månbil*, *markstation*, *förbiflygning*, *fjärrstyra* (böjning)
+  - *den röda planeten* och *med blotta ögat* som frasposter; *myrornas krig* som vardagligt; *blåvit* betyder också "blå och vit"; *stoft* är högtidligt (vardagligt *damm*); *docka* som verb kan bli homonym med leksaken
+  - *inre planet* definieras som de fyra stenplaneterna; texten i *Planeternas banor* skrevs om efter T01:s definition
+  - *förmörkelse* och *landa/landning* är inte målord (huvudord i sammansättningar respektive definierade för flyg och fartyg)
+- **0.53, japanska:** 黄色矮星 (おうしょくわいせい), 事象の地平面/地平線, ガス雲 (ガスうん), 星座 för både *stjärnbild* och *stjärntecken* (skiljs med förklaring), 光害 läses ひかりがい hos T02 men こうがい hos T04, 推力, ペイロード, 地上局, 再突入, 着水する, 耐熱シールド, 月面車, レンズ状銀河, 矮小銀河, 宇宙マイクロ波背景放射, 屈折/反射望遠鏡, 分光学, 天文単位, 視差; glosorna för *inre/yttre planet* skiljer sig avsiktligt från 内惑星/外惑星
+- **0.53, fakta (står i `factSources`, kan ändras):** mer än 90 månar för Jupiter och Saturnus, Venus rotation 243 dygn mot omloppstid 225 dygn, Stora röda fläcken mer än 150 år, solförmörkelser i Japan 2012 och 2035, skottsekunder avskaffas senast 2035, gregoriansk kalender i Japan 1873, solen som röd jätte "kanske 200 gånger större", en tesked neutronstjärna "flera miljarder ton", Teika och Meigetsuki, Andromeda–Vintergatan-sammanslagningen osäker (Sawala m.fl. 2025), 13,8 miljarder år, 2,7 K, ISS cirka 400 km och 90 minuter, geostationär bana cirka 35 800 km, Fuglesang 2006/2009 och Wandt 2024, Hayabusa2 2020, Apollo (tolv personer, 382 kg), Galileos förstoring, Svenska solteleskopet cirka 2 360 m, Onsala och bilden av det svarta hålet 2019 (förenklat), Parkes-mikrovågsugnen 2015, WASP-39 b 2022; källhänvisningarna till ESA, SSC och Rymdstyrelsen bör stämmas av
+- **0.53, arbetsform:** etappen kördes direkt efter 0.48–0.52 i samma session på produktägarens uttryckliga begäran. T02 och T03 blev klara före T01 och lades in först när T01 var inlagd; T05 lades in före T04.
+- **Kända begränsningar:**
+  - Grundorden saknar japanska glosor och kan inte slås upp.
+  - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
+  - Morfologin känner bara igen lagrade former, inte delade partikelverb, s-passiv eller nya sammansättningar.
+  - Inget IPA-uttal. Uttalet kommer från enhetens talsyntes.
+  - `word_mastered` skickas inte ut.
+  - Det finns ingen ESLint-konfiguration.
+

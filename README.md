@@ -54,4 +54,4 @@ React 19 · TypeScript · Vite · Dexie (IndexedDB) · Zod · ts-fsrs (FSRS-algo
 - [`CONTENT_GUIDELINES.md`](CONTENT_GUIDELINES.md) – hur nya moduler och ord produceras och kvalitetssäkras
 - [`PEDAGOGY.md`](PEDAGOGY.md) – pedagogiska principer och hur de implementeras
 - [`ROADMAP.md`](ROADMAP.md) – planerade faser
-- [`CHANGELOG.md`](CHANGELOG.md) – ändringar per version
+- [`changelog/`](changelog/) – ändringar per release (äldre: [`CHANGELOG.md`](CHANGELOG.md))
