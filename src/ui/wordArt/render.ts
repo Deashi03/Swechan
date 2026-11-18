@@ -221,6 +221,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'rymdf.': () => import('./spaceflight').then((m) => m.SPACEFL_MOTIFS),
   'astmet.': () => import('./astroMethods').then((m) => m.ASTROMET_MOTIFS),
   'hardw.': () => import('./hardware').then((m) => m.HARDWARE_MOTIFS),
+  'osfil.': () => import('./osFiles').then((m) => m.OSFILES_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
