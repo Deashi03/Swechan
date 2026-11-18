@@ -9,7 +9,7 @@
  * layout: korsning (horse + donkey = mule) and ofruktsam (the mule without a foal beside a grey mare with one).
  * Digits and maths signs only; no words, no brands and no pointing fingers.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
 import { HL, heart } from './people';
 import { P as F, greyed } from './blindFix';
 
@@ -226,9 +226,13 @@ export const EVOLUTION_MOTIFS: Record<string, Svg> = {
   'evo.ofruktsam': all(bg(), ground, greyed(at(22, 108, 0.78, equid(0, 0, 1, 'horse')), at(46, 108, 0.45, equid(0, 0, 1, 'horse', { foal: true })), okC(40, 66, 6)),
     at(80, 108, 0.78, equid(0, 0, 1, 'mule')), at(102, 108, 0.5, line('M-12 -20 L-12 0 M-6 -20 L-6 0 M10 -20 L10 0 M15 -20 L15 0 M-15 -22 C-16 -34 16 -36 17 -24 C17 -18 12 -18 0 -18 C-10 -18 -15 -17 -15 -22 Z M12 -30 L18 -46 L23 -46 L32 -34 L29 -31 L22 -36 L19 -26 Z', '#7a828c', 2.4, '4 3')), cross(108, 92, 9), line('M64 20 L64 108', C.grey2, 1.2, '3 3')),
   // ── Fossil och släktskap ───────────────────────────────────────────
-  'evo.förstenad': all(bg(), ground, greyed(at(18, 112, 0.8, rect(-6, -46, 12, 46, BARK, 2, C.ink, 1.4), circle(0, -54, 14, LEAF, C.ink, 1.4))),
-    arrow(38, 84, 54, 84, HL, 2.6), T0('1 000 000', 6, 50, 76), at(86, 96, 1, path('M-26 -14 L22 -14 C28 -14 30 14 22 14 L-26 14 Z', '#b9a98a', C.ink, 1.6),
-      ellipse(-26, 0, 7, 14, '#d8b88a', C.ink, 1.6), ellipse(-26, 0, 4.6, 9.4, 'none', '#a8643a', 1.2), ellipse(-26, 0, 2.2, 4.6, 'none', '#7a8aa0', 1.2), line('M-16 -6 L14 -6 M-14 4 L18 4', '#8a7a62', 1), sparkle(-34, -16, 4), sparkle(10, -20, 3))),
+  'evo.förstenad': all(bg(), ground,
+    greyed(at(28, 96, 1.15, path('M-18 -14 L14 -14 L14 14 L-18 14 Z', '#c9a06a', C.ink, 1.6), ellipse(14, 0, 8, 14, '#e8c890', C.ink, 1.6), ellipse(14, 0, 5, 9, 'none', '#a8784a', 1), ellipse(14, 0, 2.4, 4.4, 'none', '#a8784a', 1),
+      line('M-14 -6 L8 -6 M-12 5 L10 5', '#8a6a3a', 1), g('translate(4 -14) rotate(-20)', rect(-1.6, -26, 3.2, 26, '#a0673d', 1, C.ink, 1), path('M-8 -30 L6 -30 L6 -22 L-8 -22 Z', '#9aa0aa', C.ink, 1.2)))),
+    at(84, 96, 1.15, path('M-18 -14 L14 -14 L14 14 L-18 14 Z', '#a8a29a', C.ink, 1.6), line('M-14 -8 L-6 -2 L2 -9 M-10 6 L0 2 L8 8', '#7a7470', 1), ellipse(14, 0, 8, 14, '#c9c2b8', C.ink, 1.6),
+      ellipse(14, 0, 6, 11, 'none', '#c0504a', 1.6), ellipse(14, 0, 4, 7.5, 'none', '#d8a03a', 1.6), ellipse(14, 0, 2.2, 4, '#8a6ab0', null),
+      g('translate(2 -30) rotate(25)', rect(-1.6, 0, 3.2, 20, '#a0673d', 1, C.ink, 1), rect(-8, -5, 16, 6, '#565b64', 1.5, C.ink, 1.2)), line('M-6 -18 l-5 -4 M2 -20 l0 -6 M10 -18 l5 -4', HL, 1.6), ring(2, -4, 24, 24)),
+    line('M60 64 L60 112', C.grey2, 1.2, '3 3')),
   'evo.avtryck': all(bg(), slab(30, 30, 80, 70), at(70, 64, 1.2, path('M-20 0 C-12 -14 12 -14 20 0 C12 14 -12 14 -20 0 Z', '#b0a080', '#6a5a3a', 1.6), line('M-20 0 L20 0 M-10 0 L-4 -7 M0 0 L6 -8 M-10 0 L-4 7 M0 0 L6 8 M10 0 L14 -4 M10 0 L14 4', '#6a5a3a', 1)),
     greyed(at(18, 26, 0.7, path('M-20 0 C-12 -14 12 -14 20 0 C12 14 -12 14 -20 0 Z', LEAF, C.ink, 1.4))), arrow(26, 38, 40, 50, HL, 2.4)),
   'evo.ammonit': all(bg(), rect(4, 4, 52, 108, SEA, 3, null), line('M10 20 l8 0 M30 90 l10 0', WHITE, 1.2),
@@ -275,8 +279,8 @@ export const EVOLUTION_MOTIFS: Record<string, Svg> = {
   'evo.paradisfågel': all(bg('#d8eccb'), path('M4 50 L116 44', 'none', BARK, 4), ellipse(14, 44, 10, 4, LEAF, C.ink, 0.8), ellipse(110, 38, 10, 4, LEAF, C.ink, 0.8),
     at(60, 40, 1.4, path('M-6 4 C-14 30 -26 50 -40 52 C-24 46 -14 28 -10 4 Z', '#f2c14e', C.ink, 0.8), path('M-4 4 C-8 30 -14 52 -22 58 C-12 50 -8 30 -6 4 Z', '#f4a24a', C.ink, 0.8),
       line('M-2 4 C0 24 8 40 4 54 M0 4 C6 20 14 34 18 50', '#3d3f4a', 0.8), circle(4, 54, 1.6, '#3d3f4a', null), circle(18, 50, 1.6, '#3d3f4a', null), bird(0, 0, 1, { body: '#6a3a2a', wing: '#4a2a1a', head: '#f2d24e', beak: 'thin', tail: 0 }), ellipse(11, -3, 3, 2, '#3ab07a', null))),
-  'evo.ståtlig': all(bg('#f2ead0'), field(100, '#d9c27a'), path('M50 100 L58 76 L100 74 L110 100 Z', ROCK, C.ink, 1.6), at(80, 76, 1.25, lionD(0, 0, 1)), sparkle(98, 22, 4), sparkle(58, 30, 3),
-    greyed(at(24, 104, 0.62, lionD(0, 0, 1, { mane: false })))),
+  'evo.ståtlig': all(bg('#f2ead0'), field(100, '#d9c27a'), at(68, 104, 1.3, lionD(0, 0, 1)),
+    greyed(g('translate(16 104) scale(0.5) rotate(8)', lionD(0, 0, 1, { mane: false })))),
   // ── Människans evolution ───────────────────────────────────────────
   'evo.människoapa': all(bg('#e2efd8'), field(96, GRASS),
     at(30, 0, 1, hominid(0, 0.95, { posture: 'knuckle', col: '#3d3f4a', face: '#6a6a72' })), at(66, 0, 1, hominid(0, 0.78, { posture: 'knuckle', col: '#6e4a2c' })), at(96, 0, 1, hominid(0, 0.8, { posture: 'knuckle', col: '#c96a2a', face: '#d9a57c' })),
