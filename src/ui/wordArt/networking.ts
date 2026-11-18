@@ -9,7 +9,7 @@
  * Digits and dots only (192.168.1.25, 0,001); no words, no brands, no logos.
  */
 import { C, all, arrow, circle, g, line, path, rect, type Svg } from './kit';
-import { HL, T, globe, padlock, box } from './people';
+import { HL, T, bolt, globe, padlock, box } from './people';
 import { P, greyed } from './blindFix';
 
 // ── Palette and basics ───────────────────────────────────────────────
@@ -67,9 +67,6 @@ const socket = (x: number, y: number, s = 1) => at(x, y, s, rect(-7, -7, 14, 14,
 /** Little sticker with a barcode. */
 const sticker = (x: number, y: number, w: number, h: number, inner: Svg = '') => all(rect(x, y, w, h, C.white, 2, C.ink, 1.2), line(range(Math.floor(w / 3)).map((i) => `M${x + 3 + i * 2.6} ${y + h - 9} L${x + 3 + i * 2.6} ${y + h - 3}`).join(' '), C.ink, i0w(w)), inner);
 function i0w(w: number) { return w > 30 ? 1.2 : 0.9; }
-/** Smiling face for a screen (video call). */
-const callFace = (x: number, y: number, s = 1, frozen = false) => at(x, y, s, circle(0, 4, 8, '#7ab0e8', null), circle(0, -5, 5.5, C.skin, C.ink, 0.8), path('M-5.5 -6 C-5 -12 5 -12 5.5 -6 C3 -9 -3 -9 -5.5 -6 Z', C.hair, null),
-  frozen ? line('M-2.8 -5.4 L-1.2 -5.4 M1.2 -5.4 L2.8 -5.4', C.ink, 0.9) : all(circle(-2, -5.4, 0.7, C.ink, null), circle(2, -5.4, 0.7, C.ink, null)), path(frozen ? 'M-1.6 -2.4 L1.6 -2.4' : 'M-1.8 -2.8 Q0 -1.4 1.8 -2.8', 'none', C.ink, 0.8));
 /** Simple country silhouette path around centre. */
 const country = (x: number, y: number, s: number, fill: string, stroke: string = C.ink) => at(x, y, s, path('M-14 -30 C-4 -34 6 -28 10 -20 C16 -12 12 -4 16 4 C20 14 12 26 2 30 C-6 32 -12 24 -10 16 C-8 8 -18 4 -18 -6 C-18 -16 -20 -26 -14 -30 Z', fill, stroke, 1.6));
 
@@ -92,10 +89,14 @@ export const NETWORK_MOTIFS: Record<string, Svg> = {
     greyed(fan(94, 40, 1.4, C.dark)), cross(94, 32, 12)),
   'natv.nätverkskabel': all(path('M30 70 C10 70 8 98 30 100 C52 102 70 90 60 70 C52 54 76 40 92 52', 'none', C.ink, 6.4), path('M30 70 C10 70 8 98 30 100 C52 102 70 90 60 70 C52 54 76 40 92 52', 'none', '#5aa7d6', 4.4),
     g('rotate(37 92 52)', plug(110, 52, 1.6)), plug(46, 70, 1.6), ring(102, 60, 18)),
-  'natv.uppkopplad': all(ground(), greyed(laptop(32, 112, 0.85, all(globe(0, -23, 9)))), cross(32, 70, 7), laptop(88, 112, 0.95, globe(0, -23, 10)), check(110, 54, 8), fan(88, 50, 0.9, C.green), frame(54, 40, 64, 76)),
+  'natv.uppkopplad': all(ground(), greyed(phone(32, 62, 2.4, all(rect(-8.5, -15, 17, 4.4, '#dfe6ec', 0, null), fan(-4.5, -11.4, 0.2, C.dark), line('M1.8 -13 L5.6 -13', C.dark, 1),
+    ...range(4).map((i) => rect(-6.5 + (i % 2) * 7, -7 + Math.floor(i / 2) * 8, 5.5, 6, C.white, 1, null))))),
+    phone(88, 62, 2.4, all(rect(-8.5, -15, 17, 4.4, '#dff2e4', 0, null), fan(-4.5, -11.4, 0.2, C.green), check(3.8, -12.8, 2),
+      ...range(4).map((i) => rect(-6.5 + (i % 2) * 7, -7 + Math.floor(i / 2) * 8, 5.5, 6, [C.red, C.yellow, C.sky, C.green][i]!, 1, null)))), frame(64, 18, 48, 18)),
   // ── 3742 Mobildata ───────────────────────────────────────────────
-  'natv.mobildata': all(mast(22, 108, 56), waves(28, 52, 0.9, C.sky), ground(), phone(72, 64, 2.3, all(arrow(-3.5, 8, -3.5, -9, HL, 2.6), arrow(3.5, -9, 3.5, 8, C.denim, 2.6), bars(-7, -11, 0.45, 4))),
-    greyed(fan(108, 104, 0.8, C.dark)), cross(108, 98, 6)),
+  'natv.mobildata': all(phone(42, 62, 2.6, all(path('M-6.5 1 A6.5 6.5 0 0 1 6.5 1', 'none', C.grey2, 2.2), path('M-6.5 1 A6.5 6.5 0 0 1 -4.6 -3.6', 'none', HL, 2.2), line('M0 1 L-4 -2.6', C.ink, 0.9), circle(0, 1, 0.9, C.ink, null),
+    T(0, 10, '2', 7))), ring(42, 62, 24),
+    T(96, 32, '10', 16, C.grey), arrow(96, 40, 96, 58, HL, 2.6), T(96, 82, '2', 22, HL), greyed(fan(96, 106, 0.6, C.dark)), cross(96, 101, 6)),
   'natv.mobilnät': all(rect(4, 8, 112, 104, GRASS, 4, C.ink, 1.4), ...[[30, 34], [86, 34], [58, 78], [20, 92], [100, 92]].map(([x, y]) => all(circle(x!, y!, 24, 'rgba(239,138,60,0.18)', HL, 1.4), mast(x!, y! + 8, 18, C.dark))),
     phone(46, 54, 0.6), phone(76, 96, 0.6)),
   'natv.simkort': all(path('M28 22 L80 22 L96 38 L96 102 L28 102 Z', C.denim, C.ink, 2), rect(42, 46, 40, 32, C.gold, 5, C.ink, 1.6), line('M42 58 L56 58 M68 58 L82 58 M42 66 L56 66 M68 66 L82 66 M56 46 L56 78 M68 46 L68 78', '#9a7420', 1.4), ring(62, 62, 46)),
@@ -121,10 +122,14 @@ export const NETWORK_MOTIFS: Record<string, Svg> = {
   // ── 3744 Bandbredd och svarstid ──────────────────────────────────
   'natv.hastighetstest': all(phone(60, 62, 2.7, all(path('M-7 2 A7 7 0 0 1 7 2', 'none', C.grey2, 2.4), path('M-7 2 A7 7 0 0 1 4.9 -3', 'none', HL, 2.4), line('M0 2 L4 -3', C.ink, 1), circle(0, 2, 1, C.ink, null),
     rect(-5, 7, 10, 3.6, C.green, 1.8, null))), ring(60, 64, 26)),
-  'natv.bandbredd': all(rect(10, 22, 100, 34, '#f6c39a', 5, C.ink, 2), ...range(12).map((i) => circle(18 + (i % 6) * 16 + (i > 5 ? 8 : 0), 32 + (i > 5 ? 14 : 0), 3.2, HL, null)), arrow(104, 39, 116, 39, HL, 2.4),
-    line('M6 22 L6 56', HL, 2.4), line('M3 25 L6 22 L9 25 M3 53 L6 56 L9 53', HL, 2), greyed(rect(10, 82, 100, 10, C.grey2, 3, C.ink, 1.6), circle(40, 87, 2.6, C.dark, null), circle(80, 87, 2.6, C.dark, null))),
-  'natv.svarstid': all(ground(), laptop(22, 112, 0.65), server(100, 112, 0.85), path('M40 84 C56 66 76 66 90 80', 'none', HL, 2.6), arrow(86, 76, 90, 80, HL, 2.6), path('M90 94 C76 104 56 104 40 96', 'none', C.denim, 2.6), arrow(44, 98, 40, 96, C.denim, 2.6),
-    stopwatch(60, 34, 18, all(line('M60 34 L60 22', C.ink, 2), line('M60 34 L69 39', HL, 2.4), circle(60, 34, 2, C.ink, null))), ring(60, 32, 25)),
+  'natv.bandbredd': all(rect(8, 14, 104, 48, '#f9d9bf', 6, C.ink, 2.2), line('M14 30 L106 30 M14 46 L106 46', '#e8b48c', 1, '4 3'),
+    ...[16, 52, 86].map((x) => path(`M${x} 17 L${x} 27 L${x + 9} 22 Z`, C.red, C.ink, 1)), ...[24, 60, 94].map((x) => all(line(`M${x} 41 L${x} 33 L${x + 6} 32 L${x + 6} 40`, C.navy, 1.6), circle(x - 1.6, 41, 2, C.navy, null), circle(x + 4.4, 40, 2, C.navy, null))),
+    ...[14, 50, 84].map((x) => all(rect(x, 50, 16, 8, C.dark, 3, null), circle(x + 4, 54, 1.2, C.white, null), circle(x + 12, 54, 1.2, C.yellow, null))),
+    line('M4 14 L4 62', HL, 2.4), line('M1 17 L4 14 L7 17 M1 59 L4 62 L7 59', HL, 2),
+    greyed(rect(8, 86, 104, 10, '#d8dde2', 3, C.ink, 1.6), path('M54 87.5 L54 94.5 L60 91 Z', C.dark, null))),
+  'natv.svarstid': all(laptop(18, 76, 0.55), server(102, 80, 0.7), line('M34 60 C50 40 70 40 90 50', HL, 2.6), arrow(86, 48, 92, 52, HL, 2.6), line('M90 66 C70 78 50 78 34 68', HL, 2.6), arrow(38, 70, 32, 66, HL, 2.6),
+    stopwatch(60, 58, 13, all(rect(50, 53, 20, 11, '#dfeee3', 2, C.ink, 1), T(60, 62, '20', 9))), frame(6, 30, 108, 56),
+    greyed(line('M16 104 C40 92 80 92 104 104', C.dark, 2), stopwatch(60, 102, 9, all(rect(52, 98, 16, 8, C.white, 1, C.ink, 0.8), T(60, 104.5, '300', 6))))),
   'natv.millisekund': all(stopwatch(60, 66, 40, all(rect(34, 56, 52, 20, '#dfeee3', 3, C.ink, 1.4), T(60, 71, '0,001', 13), line('M60 34 L60 44', C.ink, 2), path('M60 26 A40 40 0 0 1 61 26', 'none', HL, 4))), ring(60, 66, 30)),
   'natv.buffra': all(tv(60, 100, 1.9, all(path('M-23 -9 L-10 -24 L-2 -15 L6 -26 L23 -9 Z', '#9fcf8a', null), circle(14, -28, 3, C.yellow, null), rect(-23, -35, 46, 26, 'rgba(40,40,50,0.35)', 1, null),
     ...range(8).map((i) => { const a = (i / 8) * Math.PI * 2; return circle(f1(Math.cos(a) * 6), f1(-22 + Math.sin(a) * 6), 1.3, i < 5 ? C.white : 'rgba(255,255,255,0.4)', null); }),
@@ -140,16 +145,15 @@ export const NETWORK_MOTIFS: Record<string, Svg> = {
   'natv.störning.2': all(ground(), rect(4, 76, 112, 6, C.tan, 2, C.ink, 1.8), router(18, 76, 0.6), laptop(100, 76, 0.6), line('M30 56 C40 50 46 62 54 56', C.sky, 2.4), greyed(line('M70 56 C78 50 82 62 90 56', C.dark, 2.4)),
     rect(42, 82, 36, 22, C.white, 2, C.ink, 1.6), rect(46, 86, 20, 14, '#3d4250', 1, null), circle(72, 90, 1.4, C.ink, null), circle(72, 96, 1.4, C.ink, null),
     path('M60 76 L54 66 L64 60 L56 48 L66 40 M50 78 L44 70', 'none', HL, 2.6), ring(58, 56, 18)),
-  'natv.täckning.2': all(path('M40 8 C60 4 74 14 76 30 C80 46 98 52 96 72 C94 92 76 110 56 108 C38 106 30 92 22 80 C12 66 20 54 26 42 C30 30 24 12 40 8 Z', C.white, C.ink, 1.8),
-    circle(46, 30, 20, 'rgba(239,138,60,0.45)', null), circle(76, 72, 22, 'rgba(239,138,60,0.45)', null), circle(50, 94, 14, 'rgba(239,138,60,0.45)', null),
-    mast(46, 34, 12, C.dark), mast(76, 76, 12, C.dark), phone(56, 40, 0.55, bars(-6, -2, 0.45, 4)), greyed(phone(30, 70, 0.55, bars(-6, -2, 0.45, 0))), ring(30, 70, 12, C.grey)),
+  'natv.täckning.2': all(path('M48 8 L62 8 L70 22 L74 44 L34 44 L40 24 Z', '#e67b6b', C.ink, 1.6), path('M34 44 L74 44 L80 60 L78 76 L30 76 L28 60 Z', '#f2d26b', C.ink, 1.6), path('M30 76 L78 76 L72 92 L60 110 L46 108 L36 92 Z', '#7cc48a', C.ink, 1.6),
+    phone(98, 92, 0.9, bars(-6, -2, 0.45, 4)), line('M88 92 L62 94', C.grey, 1.2, '3 3'), ring(98, 92, 17), greyed(phone(98, 26, 0.9, bars(-6, -2, 0.45, 0))), line('M88 26 L58 26', C.grey, 1.2, '3 3')),
   'natv.streck.2': all(phone(30, 70, 1.6), rect(18, 46, 24, 6, 'rgba(0,0,0,0.12)', 1, null), bars(20, 51, 0.45, 1), line('M42 46 L62 26 M42 52 L62 84', C.grey, 1.2, '3 3'), rect(62, 20, 52, 66, C.white, 6, C.ink, 1.6),
     bars(70, 76, 2.2, 1, C.ink), frame(66, 24, 44, 58)),
   'natv.mobilmast': all(rect(4, 92, 112, 20, GRASS, 0, null), path('M20 96 C40 80 80 80 100 96 Z', '#86b874', null), mast(60, 92, 78), waves(66, 22, 1, C.sky), waves(54, 22, 1, C.sky, -1),
     ...[[16, 100], [104, 100], [28, 104]].map(([x, y]) => all(line(`M${x} ${y} L${x} ${y! - 8}`, C.brown, 2), path(`M${x! - 5} ${y! - 6} L${x} ${y! - 18} L${x! + 5} ${y! - 6} Z`, C.green, C.ink, 1)))),
   // ── 3746 Nätverksproblem ─────────────────────────────────────────
-  'natv.tappa-uppkopplingen': all(rect(4, 76, 112, 6, C.tan, 2, C.ink, 1.8), line('M12 82 L12 112 M108 82 L108 112', C.brown, 3), laptop(60, 76, 1.3, all(callFace(-6, -19, 1.2, true), greyed(fan(14, -24, 0.42, C.dark)), cross(14, -27, 3.4))),
-    path('M26 22 L32 28 M96 20 L90 28', 'none', HL, 2), ring(78, 41, 9)),
+  'natv.tappa-uppkopplingen': all(ground(), laptop(30, 104, 0.78, fan(0, -16, 0.7, C.green)), bolt(60, 50, 1.4), arrow(50, 80, 70, 80, C.grey, 2),
+    laptop(90, 104, 0.78, all(greyed(fan(0, -16, 0.7, C.dark)), cross(0, -23, 6))), frame(64, 60, 52, 50)),
   'natv.instabil.3': all(line('M8 96 L112 96', C.grey, 1.4), path('M10 86 L22 50 L32 82 L42 46 L52 88 L62 54 L72 90 L84 48 L94 86 L108 52', 'none', HL, 2.6),
     fan(22, 36, 0.6, C.green), greyed(fan(32, 72, 0.6, C.dark)), fan(42, 32, 0.6, C.green), greyed(fan(52, 76, 0.6, C.dark)), fan(62, 40, 0.6, C.green), greyed(fan(72, 78, 0.6, C.dark)), fan(84, 34, 0.6, C.green),
     frame(6, 20, 108, 80)),
@@ -170,6 +174,8 @@ export const NETWORK_MOTIFS: Record<string, Svg> = {
   'natv.offentligt-wifi': all(rect(4, 8, 112, 104, '#f3e6d0', 0, null), ground(), rect(36, 14, 48, 30, C.dark, 3, C.ink, 1.6), fan(60, 38, 1.2, C.white), ring(60, 29, 22),
     rect(8, 86, 104, 6, C.brown, 2, C.ink, 1.6), line('M20 92 L20 112 M100 92 L100 112', C.brown, 3), laptop(32, 86, 0.5), laptop(86, 86, 0.5), circle(58, 82, 4, C.white, C.ink, 1.2), circle(66, 82, 4, C.white, C.ink, 1.2),
     P({ x: 14, h: 0.5, top: C.orange, hairStyle: 'long' }), P({ x: 106, h: 0.5, top: C.green })),
-  'natv.VPN': all(ground(), laptop(18, 104, 0.55), globe(102, 74, 13), path('M34 74 C50 64 70 64 88 72', 'none', '#f6c39a', 16), path('M34 74 C50 64 70 64 88 72', 'none', HL, 1.6), padlock(60, 72, 0.8),
-    greyed(P({ x: 60, h: 0.42 })), path('M48 104 C52 98 68 98 72 104', 'none', C.grey, 1.2), frame(28, 52, 66, 30)),
+  'natv.VPN': all(country(64, 46, 0.95, '#bfe0a8'), server(64, 66, 0.55), path('M64 6 C58 6 56 12 58 16 L64 26 L70 16 C72 12 70 6 64 6 Z', C.red, C.ink, 1.2), circle(64, 12, 2.4, C.white, null),
+    laptop(18, 108, 0.55), line('M30 86 C34 70 44 60 56 54', '#f6c39a', 12), line('M30 86 C34 70 44 60 56 54', HL, 1.6), padlock(41, 68, 0.6),
+    line('M74 52 C88 56 96 66 98 78', C.ink, 1.6), rect(78, 78, 38, 30, C.white, 3, C.ink, 1.6), rect(78, 78, 38, 6, C.grey2, 2, C.ink, 1),
+    path('M97 88 C93 88 92 92 93 94 L97 100 L101 94 C102 92 101 88 97 88 Z', C.red, C.ink, 1), frame(24, 2, 66, 90)),
 };

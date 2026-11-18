@@ -4,8 +4,8 @@
  "updatedAt": "2026-11-18",
  "titleSv": "Nätverksproblem",
  "titleJa": "ネットワークのトラブル",
- "descriptionSv": "Nätverksproblem: tappa uppkopplingen, instabil, ligga nere, orsak, felsöka, router, lysa, nätverkskabel, glappkontakt, dra ur, starta om, stänga av, strömavbrott, driftstörning, kundtjänst, ärendenummer, fabriksinställning och tekniker.",
- "descriptionJa": "ネットワークのトラブル：{接続|せつぞく}が{切|き}れる、{不安定|ふあんてい}な、ダウンしている、{原因|げんいん}、トラブルの{原因|げんいん}を{探|さが}す、ルーター、{光|ひか}る、LANケーブル、{接触不良|せっしょくふりょう}、{抜|ぬ}く、{再起動|さいきどう}する、{電源|でんげん}を{切|き}る、{停電|ていでん}、{運用障害|うんようしょうがい}、カスタマーサービス、{受付|うけつけ}{番号|ばんごう}、{工場出荷時|こうじょうしゅっかじ}の{設定|せってい}、{技術者|ぎじゅつしゃ}。",
+ "descriptionSv": "Nätverksproblem: tappa uppkopplingen, instabil, avbrott, orsak, felsöka, router, lysa, nätverkskabel, glappkontakt, dra ur, starta om, stänga av, strömavbrott, kundtjänst, ärendenummer, fabriksinställning och tekniker.",
+ "descriptionJa": "ネットワークのトラブル：{接続|せつぞく}が{切|き}れる、{不安定|ふあんてい}な、{中断|ちゅうだん}、{原因|げんいん}、トラブルの{原因|げんいん}を{探|さが}す、ルーター、{光|ひか}る、LANケーブル、{接触不良|せっしょくふりょう}、{抜|ぬ}く、{再起動|さいきどう}する、{電源|でんげん}を{切|き}る、{停電|ていでん}、カスタマーサービス、{受付|うけつけ}{番号|ばんごう}、{工場出荷時|こうじょうしゅっかじ}の{設定|せってい}、{技術者|ぎじゅつしゃ}。",
  "categoryId": "R07-A01-T04",
  "tags": [
   "datorer",
@@ -28,7 +28,7 @@
    "active": true
   },
   {
-   "senseId": "s.ligga-nere.1",
+   "senseId": "s.avbrott.1",
    "active": true
   },
   {
@@ -72,10 +72,6 @@
    "active": true
   },
   {
-   "senseId": "s.driftstörning.1",
-   "active": true
-  },
-  {
    "senseId": "s.kundtjänst.1",
    "active": true
   },
@@ -95,10 +91,10 @@
  "reading": {
   "titleSv": "Inget internet mitt i mötet",
   "paragraphs": [
-   "Sofia jobbar hemifrån två dagar i veckan. En tisdag, mitt i ett viktigt möte, ser hon att datorn tappar uppkopplingen. Efter några minuter fungerar den igen, men sedan händer samma sak en gång till. Uppkopplingen är instabil hela förmiddagen. Först tror hon att företagets system ligger nere, men kollegorna på kontoret kan arbeta som vanligt.",
+   "Sofia jobbar hemifrån två dagar i veckan. En tisdag, mitt i ett viktigt möte, ser hon att datorn tappar uppkopplingen. Efter några minuter fungerar den igen, men sedan händer samma sak en gång till. Uppkopplingen är instabil hela förmiddagen.",
    "Sofia vill hitta orsaken och börjar felsöka. Först tittar hon på routern. En lampa som brukar lysa grönt lyser nu rött. Hon kontrollerar nätverkskabeln och märker att den sitter löst. Kanske är det glappkontakt?",
    "Hon byter kabel och gör som alla brukar säga. Hon drar ur routerns sladd, väntar en halv minut och startar om den. Först blir allt bra, men efter en timme kommer samma problem tillbaka. Hon stänger av datorn och sätter på den igen, men det hjälper inte.",
-   "Sofia ringer till kundtjänst hos internetleverantören och får ett ärendenummer. – Det har inte varit något strömavbrott eller någon driftstörning i ert område, säger kvinnan som svarar. Prova att återställa routern till fabriksinställningarna.",
+   "Sofia ringer till kundtjänst hos internetleverantören och får ett ärendenummer. – Det har inte varit något strömavbrott eller något annat avbrott i ert område, säger kvinnan som svarar. Prova att återställa routern till fabriksinställningarna.",
    "Det hjälper inte heller. Till slut skickar företaget en tekniker. Han ser att det är fel på uttaget i väggen, och efter tjugo minuter är allt lagat. Sofia kan äntligen jobba igen."
   ],
   "questions": [
@@ -153,8 +149,8 @@
     "focus": "detail",
     "statementSv": "Det har varit ett strömavbrott i Sofias område.",
     "correct": false,
-    "explanationSv": "– Det har inte varit något strömavbrott eller någon driftstörning i ert område …",
-    "explanationJa": "{停電|ていでん}も{通信|つうしん}{障害|しょうがい}もなかった、と{言|い}われました。"
+    "explanationSv": "– Det har inte varit något strömavbrott eller något annat avbrott i ert område …",
+    "explanationJa": "{停電|ていでん}もほかの{障害|しょうがい}もなかった、と{言|い}われました。"
    },
    {
     "kind": "truefalse",
