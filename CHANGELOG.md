@@ -5,8 +5,35 @@
 Inget innehåll och ingen kod är ändrad.
 
 - `docs/QUALITY_AUDIT_2026-11.md`: revision av hela materialet vid 0.51.0. Systematiska fel i bildtäckning, laddtid, animationer, betydelser, förklaringar, språk och process, med mätvärden per ämnesgrupp.
-- `docs/QUALITY_PLAN.md`: etapper för systemet (mätning och spärr, laddtid, bildsystem, datamodell för betydelser, kvalitetskontrakt) och för eftersläpningen. Planen går före *Biologi*.
+- `docs/QUALITY_PLAN.md`: etapper för systemet (mätning och spärr, laddtid, bildsystem, datamodell för betydelser, kvalitetskontrakt) och för eftersläpningen. Systemet och de snabba rättningarna går före nästa nya överämne; resten varvas med ny produktion.
 - Produktägarens beslut: matchningstest för symbolbilder, manuellt spår efter två underkända omgångar, kort förklaring för abstrakta B1-ord.
+## 0.52.0 – 2026-11-18
+
+42 nya moduler som gör överämnet *Biologi* (R06-A05) komplett. Modulerna lär ut det svenska ordförrådet för skolbiologi med vardagliga exempel (mat, sjukdom, träning, skog och sjö, trädgård). Varje nytt modulord har en egen bild, utom de 11 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 706 målord)
+- **Cellbiologi** (3511–3517): cellens delar, cellmembranet, cellkärnan, mitokondrier, proteinsyntes, celldelning och cellsignalering.
+- **Genetik & arv** (3521–3527): DNA och RNA, gener och kromosomer, alleler och nedärvning, mutationer, genuttryck, genetisk variation och arv samt genteknikens metoder.
+- **Evolution** (3531–3537): naturligt urval, anpassning och selektion, artbildning, fossil och släktskap, evolutionära träd, sexuell selektion och människans evolution.
+- **Mikrobiologi** (3541–3547): bakteriers uppbyggnad, virus och viruspartiklar, arkéer, mikroskopiska svampar, smittvägar, antibiotikaresistens och mikroorganismer i ekosystem.
+- **Människans fysiologi** (3551–3557): hjärtats funktion, lungornas gasutbyte, matsmältningssystemet, nervimpulser, hormonsystemet, njurarnas filtrering och immunförsvarets celler.
+- **Ekologi & organismvärlden** (3561–3567): fotosyntes och cellandning, näringsvävar, populationsdynamik, symbios och parasitism, biodiversitet, kretslopp av näringsämnen och organismers livscykler.
+- Varje modul har 15–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 232 nya ordposter.
+- 13 nya betydelser på befintliga poster, där vardagsordet fått sin biologibetydelse: *förbränning* (i kroppen), *blockera*, *dominant*, *korsning*, *förädla*, *gren* (i ett stamträd), *kolonisera*, *odla* och *odling* (bakterier), *svamp* (organism), *rotknöl*, *reflex* (i kroppen) och *livslängd* (levande varelser). Den gamla betydelsen har fått en etikett.
+- Grupperna återanvänder varandras poster i stället för att skapa dubbletter, t.ex. *kvävefixerande* och *rotknöl* från Mikrobiologi i Ekologi och *kapillär* mellan fysiologimodulerna; exists.py kördes efter varje inlagd grupp.
+- Rättning: posten *myrsyra* beskrev fortfarande myrsyra som stark syra i ordboken för *Myror och kolonier*; nu står det bara *syra*.
+- Namnet *Galapagos* är tillagt i grundordförrådet.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Astronomi & rymd* (R06-A06): Solens system → Solen.
+- `images.test.ts` laddar alla bildfiler i `beforeAll` med 120 sekunders tidsgräns; standardgränsen 10 s räckte inte längre på CI.
+
+### Bilder (234 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `cellBiology.ts`, `genetics.ts`, `evolution.ts`, `microbio.ts`, `physiology.ts` och `ecologyBio.ts`. Bilderna visar siffror och kemiska tecken (O₂, CO₂) men inga ord och inget rött kors.
+- 72 symbol- och adjektivbilder blindtestades. 61 klarade testet efter högst två omgångar.
+- **11 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *biodiversitet/biologisk mångfald*.
+
+Service workern är `swechan-v56`.
+
 
 ## 0.51.0 – 2026-11-18
 

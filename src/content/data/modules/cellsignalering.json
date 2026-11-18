@@ -1,0 +1,181 @@
+{
+ "id": "m.cellsignalering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Cellsignalering",
+ "titleJa": "{細胞|さいぼう}の{情報伝達|じょうほうでんたつ}",
+ "descriptionSv": "Cellsignalering: cellsignalering, signalmolekyl, receptor, binda, målcell, insulin, blodsocker, adrenalin, smaklök, doftämne, luktsinne, pollen, allergi, histamin, blockera, läkemedel och koffein.",
+ "descriptionJa": "{細胞|さいぼう}の{情報伝達|じょうほうでんたつ}：{細胞|さいぼう}の{情報伝達|じょうほうでんたつ}、シグナル{分子|ぶんし}、{受容体|じゅようたい}、{結合|けつごう}する、{標的細胞|ひょうてきさいぼう}、インスリン、{血糖|けっとう}、アドレナリン、{味蕾|みらい}、におい{物質|ぶっしつ}、{嗅覚|きゅうかく}、{花粉|かふん}、アレルギー、ヒスタミン、ふさぐ、{医薬品|いやくひん}、カフェイン。",
+ "categoryId": "R06-A05-T01",
+ "tags": [
+  "biologi",
+  "cellbiologi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.celldelning"
+ ],
+ "related": [],
+ "recommendedOrder": 3517,
+ "words": [
+  {
+   "senseId": "s.cellsignalering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.signalmolekyl.1",
+   "active": true
+  },
+  {
+   "senseId": "s.receptor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.binda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.målcell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.insulin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodsocker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.adrenalin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smaklök.1",
+   "active": true
+  },
+  {
+   "senseId": "s.doftämne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luktsinne.1",
+   "active": false
+  },
+  {
+   "senseId": "s.pollen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.allergi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blockera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.histamin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkemedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koffein.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag full av signaler",
+  "paragraphs": [
+   "Det är maj, och Takeshi vaknar med rinnande näsa. Han har allergi mot pollen från björkarna. När pollen kommer in i näsan släpper vissa celler ut histamin. Histaminet är en signalmolekyl som gör att näsan kliar och att han nyser.",
+   "Takeshi tar en allergitablett. Läkemedlet blockerar receptorerna för histamin, så att signalen inte når fram. Sedan dricker han en kopp kaffe. Även koffein blockerar receptorer, men i hjärnan, och därför känner han sig mindre trött.",
+   "På lunchen äter han misosoppa. Doftämnen från soppan binder till receptorer i näsan, och smaklökarna på tungan känner smaken. Både luktsinnet och smaken bygger på cellsignalering: celler tar emot ämnen och skickar signaler vidare till hjärnan.",
+   "Efter maten stiger blodsockret. Då skickar kroppen ut insulin. Insulinet passar i receptorer på målcellerna, till exempel i musklerna, och då tar cellerna upp socker från blodet.",
+   "På kvällen cyklar Takeshi hem. Plötsligt kör en bil ut framför honom. Han blir rädd, och kroppen släpper ut adrenalin. Hjärtat slår snabbare på en sekund. – Mina celler har haft en lång dag, tänker han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför kliar Takeshis näsa?",
+    "options": [
+     "Han har druckit för mycket kaffe",
+     "Insulinet binder till näsan",
+     "Cellerna släpper ut histamin när pollen kommer in",
+     "Han har ätit misosoppa"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När pollen kommer in i näsan släpper vissa celler ut histamin.",
+    "explanationJa": "{花粉|かふん}が{鼻|はな}に{入|はい}ると、{細胞|さいぼう}がヒスタミンを{出|だ}すからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur fungerar allergitabletten?",
+    "options": [
+     "Den blockerar receptorerna för histamin",
+     "Den tar bort allt pollen",
+     "Den gör mer histamin",
+     "Den sänker blodsockret"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Läkemedlet blockerar receptorerna för histamin, så att signalen inte når fram.",
+    "explanationJa": "ヒスタミンの{受容体|じゅようたい}をふさぎます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör insulinet?",
+    "options": [
+     "Det gör att man nyser",
+     "Det gör att hjärtat slår snabbare",
+     "Det ger maten smak",
+     "Det får målcellerna att ta upp socker från blodet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Insulinet passar i receptorer på målcellerna … och då tar cellerna upp socker från blodet.",
+    "explanationJa": "{標的細胞|ひょうてきさいぼう}に{血液中|けつえきちゅう}の{糖|とう}を{取|と}り{込|こ}ませます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Doftämnen binder till receptorer i näsan.",
+    "correct": true,
+    "explanationSv": "Doftämnen från soppan binder till receptorer i näsan.",
+    "explanationJa": "におい{物質|ぶっしつ}は{鼻|はな}の{受容体|じゅようたい}に{結合|けつごう}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Adrenalinet gör att Takeshis hjärta slår långsammare.",
+    "correct": false,
+    "explanationSv": "Hjärtat slår snabbare på en sekund.",
+    "explanationJa": "アドレナリンで{心臓|しんぞう}はより{速|はや}く{打|う}ちます。"
+   }
+  ],
+  "factSources": [
+   "Signalmolekyler (t.ex. hormoner och signalsubstanser) binder till specifika receptorer på eller i målcellerna; bindningen ändrar receptorns form och startar en reaktion i cellen.",
+   "Insulin binder till insulinreceptorer bland annat på muskel-, fett- och leverceller och ökar upptaget av glukos från blodet.",
+   "Vid pollenallergi frisätter mastceller histamin; antihistaminer blockerar histaminreceptorer (H1). Koffein blockerar adenosinreceptorer i hjärnan och minskar trötthetskänslan.",
+   "Doftmolekyler binder till luktreceptorer i näsans slemhinna; människan har omkring 400 olika typer av luktreceptorer. Adrenalin frisätts vid skräck och ökar hjärtfrekvensen.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur celler skickar signaler i vardagen.",
+  "discussionPoints": [
+   "Har du någon allergi? Vad gör du åt den?",
+   "Hur påverkar kaffe eller te dig?",
+   "Vilken lukt eller smak tycker du bäst om?",
+   "Kan du ge ett eget exempel på en signal i kroppen?"
+  ]
+ }
+}

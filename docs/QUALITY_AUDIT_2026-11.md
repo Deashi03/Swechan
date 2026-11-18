@@ -285,7 +285,7 @@ En etapp per session, i den här ordningen. Etapp 1–3 ger systemet, resten är
 1. **Matchningstest för symbolbilder: ja.** Granskaren får ordet och glosan och väljer rätt bild bland modulens bilder. Bilder med `quiz: true` behåller det öppna blindtestet.
 2. **Underkänd två gånger → manuellt spår.** Ordet får inte längre `none` och inte heller en automatisk bild av exempelmeningen. Det går till en kö där bilden skapas för hand med större kreativ frihet (egen ritning i stället för mallar, animation, bildserie, kontrastpar). Detta ersätter "kontextbild" i S3 och K1.
 3. **Kort förklaring för abstrakta B1-ord: ja**, när ordet är nytt för eleven (första gången det är modulord).
-4. **Allt före *Biologi*.** Systemet och hela eftersläpningen görs innan ny produktion startar. Arbetet görs av Opus enligt `docs/QUALITY_PLAN.md`.
+4. **Systemet först, sedan varvat.** Del A och de snabba rättningarna görs före nästa nya överämne. Resten av eftersläpningen varvas med ny produktion. Arbetet görs av Opus enligt `docs/QUALITY_PLAN.md`. (*Biologi*, 0.52.0, släpptes med den gamla arbetsgången medan planen skrevs och ingår i eftersläpningen.)
 
 ---
 

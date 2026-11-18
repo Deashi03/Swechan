@@ -4,7 +4,7 @@
 - **Alltid:** `PROJECT_STATUS.md`. Den beskriver nuläget, nästa steg, öppna osäkerheter och regler att komma ihåg.
 - **Vid ändringar i kod, datamodell eller lagring:** `ARCHITECTURE.md`.
 - **Vid nytt innehåll (moduler, ord, bilder):** `CONTENT_GUIDELINES.md`.
-- **Under kvalitetsarbetet (före *Biologi*):** `docs/QUALITY_PLAN.md`. Ta nästa obockade etapp. Ingen ny modulproduktion förrän planen säger det.
+- **Under kvalitetsarbetet:** `docs/QUALITY_PLAN.md`. Ta nästa obockade etapp. Ingen ny modulproduktion förrän planen säger det.
 - **`CHANGELOG.md`:** läs aldrig hela filen. Lägg bara till nytt överst.
 - **Agenter som skriver moduler och bilder:** läs bara `docs/PRODUCTION_BRIEF.md` och filerna för din egen ämnesgrupp.
 
