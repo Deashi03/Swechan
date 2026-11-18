@@ -1,5 +1,12 @@
 # Changelog
 
+## Osläppt – 2026-11-18: kvalitetsrevision och kvalitetsplan
+
+Inget innehåll och ingen kod är ändrad.
+
+- `docs/QUALITY_AUDIT_2026-11.md`: revision av hela materialet vid 0.51.0. Systematiska fel i bildtäckning, laddtid, animationer, betydelser, förklaringar, språk och process, med mätvärden per ämnesgrupp.
+- `docs/QUALITY_PLAN.md`: etapper för systemet (mätning och spärr, laddtid, bildsystem, datamodell för betydelser, kvalitetskontrakt) och för eftersläpningen. Systemet och de snabba rättningarna går före nästa nya överämne; resten varvas med ny produktion.
+- Produktägarens beslut: matchningstest för symbolbilder, manuellt spår efter två underkända omgångar, kort förklaring för abstrakta B1-ord.
 ## 0.53.0 – 2026-11-18
 
 42 nya moduler som gör överämnet *Astronomi & rymd* (R06-A06) komplett. Därmed är hela *Matematik & naturvetenskap* (R06) publicerad. Modulerna lär ut det svenska ordförrådet för astronomi och rymdfart med vardagliga exempel (stjärnhimlen, månen, årstider, nyheter om rymdfart, planetarium, GPS). Varje nytt modulord har en egen bild, utom de 8 ord som underkändes i två blindtestomgångar.
