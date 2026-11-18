@@ -215,6 +215,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'fysio.': () => import('./physiology').then((m) => m.PHYSIO_MOTIFS),
   'ekob.': () => import('./ecologyBio').then((m) => m.ECOBIO_MOTIFS),
   'solsys.': () => import('./solarSystem').then((m) => m.SOLSYS_MOTIFS),
+  'himrel.': () => import('./skyMotion').then((m) => m.SKYMOT_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};
