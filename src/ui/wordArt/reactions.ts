@@ -204,9 +204,10 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
     ...range(6).map((i) => ellipse(26 + (i % 3) * 34, 70 + Math.floor(i / 3) * 20, 12, 8, '#b8a383', C.ink, 1)),
     ...range(6).filter((i) => i !== 5).map((i) => ellipse(26 + (i % 3) * 34, 66 + Math.floor(i / 3) * 20, 9, 11, '#f7efe2', C.ink, 1.3)),
     ring(94, 90, 15), num(94, 50, '?', 16, HL)),
-  /** överskott (kemi): three buns and five sausages – three pairs fit together, two sausages are left over and framed. */
-  'reak.överskott.3': all(ground(), ...range(3).map((i) => g(`translate(${22 + i * 28} 50)`, rect(-12, -4, 24, 10, '#e2b36b', 5, C.ink, 1.4), rect(-13, -6, 26, 6, '#b5562b', 3, C.ink, 1.2))),
-    ...range(2).map((i) => g(`translate(${40 + i * 40} 92)`, rect(-14, -4, 28, 8, '#b5562b', 4, C.ink, 1.4))), frame(18, 80, 84, 24)),
+  /** överskott (kemi): 2 C + 4 O₂ → 2 CO₂; two O₂ molecules are left over after the arrow and framed. */
+  'reak.överskott.3': all(ground(),
+    at(14, 40, 6, CARB), at(14, 70, 6, CARB), plus(28, 55), O2(44, 28, 5), O2(44, 46, 5), O2(44, 64, 5), O2(44, 82, 5),
+    rx(56, 55, 70), CO2(92, 30, 5), CO2(92, 50, 5), O2(92, 84, 5), O2(92, 100, 5), frame(76, 72, 32, 38)),
   /** tvåatomig: O₂, H₂ and N₂ – each two balls joined – in an orange frame; a single grey atom beside. */
   'reak.tvåatomig': all(ground(), greyed(at(18, 60, 9, C.lilac)), cross(18, 60, 13, C.grey),
     O2(64, 30, 8), H2(64, 60, 6), all(at(56, 90, 8, '#5f7fd1'), at(72, 90, 8, '#5f7fd1')), frame(40, 14, 48, 92), num(102, 64, '2', 18, HL)),
@@ -255,8 +256,9 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
   'reak.löslig': dissolveRow(true),
   /** svårlöslig: a lump of chalk in water → after stirring it is still lying on the bottom (framed). */
   'reak.svårlöslig': dissolveRow(false),
-  /** klar (om vätska): a coin is seen through clear water (framed); in a grey cloudy glass it cannot be seen. */
-  'reak.klar.2': all(ground(), greyed(glass(30, 110, 36, 60, 0.85, '#c7b89a')), glass(90, 110, 36, 60, 0.85, '#dff0fa'), ellipse(90, 104, 8, 3, C.gold, C.ink, 1.2), frame(68, 44, 44, 68)),
+  /** klar (om vätska): stripes behind two glasses – seen through the clear water (framed), hidden by the grey cloudy liquid. */
+  'reak.klar.2': all(ground(), line(range(5).map((i) => `M6 ${56 + i * 10} L114 ${56 + i * 10}`).join(' '), '#5f7fd1', 3),
+    glass(30, 110, 36, 64, 0.9, '#d6d2ca'), ...range(12).map((i) => circle(f1(16 + (i * 7) % 28), f1(56 + ((i * 11) % 48)), 1.2, '#b9b2a4', null)), glass(90, 110, 36, 64, 0.9, 'rgba(223,240,250,0.45)'), line(range(5).map((i) => `M73 ${56 + i * 10} L107 ${56 + i * 10}`).join(' '), '#7f9be0', 3), frame(68, 40, 44, 72)),
   /** avkalka: an electric kettle with a white crust; a bottle pours in → the same kettle clean inside. */
   'reak.avkalka': all(ground(), greyed(kettle(28, 106, true)), bottle(30, 44, 120, '#f4f0d0'), drop(28, 56, 1, '#f4f0d0'), rx(52, 84, 64), kettle(92, 106, false), sparkle(108, 54, 5), frame(70, 50, 46, 62)),
   /** droppsten: a cave with stone icicles from the ceiling and stone cones from the floor; a drop falls; one icicle is ringed. */
