@@ -307,6 +307,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.spektroskopi.1',
   // 0.54 Datorns delar: förväxlas med uppgradera respektive rymma/lagra efter två blindomgångar
   's.prestanda.1', 's.lagringsutrymme.1',
+  // 0.54 Operativsystem & filer: förväxlas med licens respektive drivrutin efter två blindomgångar
+  's.testversion.1', 's.operativsystem.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
