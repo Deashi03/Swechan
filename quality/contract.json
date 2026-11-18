@@ -1,0 +1,17 @@
+{
+ "_comment": "Kvalitetskontraktet (version 2). Gäller nya moduler och befintliga moduler med \"standard\": 2. Kontrolleras av npm run audit:content (CI och tools/production/check.sh). Ett ord kontrolleras i den modul där det först är modulord.",
+ "version": 2,
+ "rules": {
+  "K1": { "text": "Varje modulord har animation, scen eller symbol. Efter två underkända testomgångar går ordet till det manuella spåret och skapas för hand – en modul publiceras inte med tomma kort." },
+  "K2": { "text": "Levererad bildsort = planens. plan: animation kräver animation, om inte planen har waiver med skäl. plan: none är inte tillåten för modulord." },
+  "K3": { "text": "Ordposten har senseInventory: alla vanliga betydelser är kontrollerade och inlagda (de behöver inte vara modulord)." },
+  "K4": { "text": "Ett lemma i grundordförrådet har grundbetydelsen som betydelse; senseInventory.coreSense pekar på den." },
+  "K5": { "text": "B2 och uppåt: användningsuppgift (collocations, usageNote eller register) och en mening om skillnaden mot varje förväxlingsord (confusableWith), eller en synonyms-länk." },
+  "K6": { "text": "B2 och uppåt: minst två exempel, helst med olika böjningsform eller konstruktion.", "minExamples": 2 },
+  "K7": { "text": "Abstrakta B1-ord (plan symbol) har en kort förklaring på svenska och japanska.", "maxSentences": 3 },
+  "K8": { "text": "Svensk och japansk text följs åt (inget saknas på japanska), och personnamn skrivs som i quality/characters.json." },
+  "K9": { "text": "Varje rad i factSources är { text, source, checked: ÅÅÅÅ-MM-DD, recheck: årligen | aldrig }." },
+  "K10": { "text": "Minst 60 % av modulens verb och processord (substantiv vars definition börjar med \"När\") har animation.", "minShare": 0.6, "minWords": 3 },
+  "TEXT": { "text": "Ingen typografisk fel (.., dubbla ord, dubbla blanksteg, raka citattecken, blanksteg före skiljetecken), inga avvikande kanjiläsningar, frågeförklaringar citerar bara text som finns, och descriptionSv beskriver vad eleven lär sig i stället för att räkna upp orden." }
+ }
+}

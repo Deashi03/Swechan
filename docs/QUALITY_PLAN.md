@@ -28,10 +28,10 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 **Klart när:** PR #66 är sammanslagen och CI är grön. Rättningarna från R01–R03 finns på `main`.
 
 ### A2. Mätning och spärr
-- [ ] `npm run audit:content` (nytt skript, t.ex. `tools/audit/audit.ts`) som skriver `quality/metrics.json` med måtten nedan, totalt och per ämnesgrupp.
-- [ ] CI-steg som jämför med den incheckade filen och **fallerar om något mått försämrats**. Förbättringar checkas in och blir ny lägstanivå.
-- [ ] Lägg `npm run audit:content` i `tools/production/check.sh`.
-- [ ] Nya valideringsregler i `validateContent.ts`. Inför dem som fel med ett tak lika med dagens antal (`quality/ceilings.json`), så att bygget är grönt från start och taken bara kan sänkas:
+- [x] `npm run audit:content` (nytt skript, t.ex. `tools/audit/audit.ts`) som skriver `quality/metrics.json` med måtten nedan, totalt och per ämnesgrupp.
+- [x] CI-steg som jämför med den incheckade filen och **fallerar om något mått försämrats**. Förbättringar checkas in och blir ny lägstanivå.
+- [x] Lägg `npm run audit:content` i `tools/production/check.sh`.
+- [x] Nya valideringsregler i `validateContent.ts`. Inför dem som fel med ett tak lika med dagens antal (`quality/ceilings.json`), så att bygget är grönt från start och taken bara kan sänkas:
   1. `plan.kind` ≠ levererad bildsort.
   2. Samma kanjiord med två läsningar, om paret inte står i `quality/readings-allow.json`.
   3. Typografi: `..`, dubbla ord (med undantagslista), dubbla blanksteg, raka citattecken, blanksteg före skiljetecken.
@@ -40,10 +40,12 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
   6. Förklaring som säger "kan också betyda" (och liknande) i en post med en enda betydelse.
   7. Japansk text med annat antal meningar än den svenska (förklaring, exempel).
   8. Lemma i grundordförrådet vars post saknar grundbetydelsen.
-- [ ] `quality/characters.json`: namn, katakana, ålder, roll, relationer. Validera katakanan mot tabellen.
-- [ ] `contentVersion` och `updatedAt` räknas ut av ett skript ur innehållets hash (också för moduler som delar en ändrad betydelse). Ta bort det manuella steget ur instruktionerna.
+- [x] `quality/characters.json`: namn, katakana, ålder, roll, relationer. Validera katakanan mot tabellen.
+- [x] `contentVersion` och `updatedAt` räknas ut av ett skript ur innehållets hash (också för moduler som delar en ändrad betydelse). Ta bort det manuella steget ur instruktionerna.
 
 **Mått i `metrics.json`:** andel modulkort utan bild · andel verb och processord (substantiv vars `defSv` börjar med "När ") med animation · planerad men ej levererad animation · andel poster med fler än en betydelse · "kan också betyda" utan egen betydelse · grundord med bara fackbetydelse · andel B2+ med två exempel, med användningsuppgift, med nämnda förväxlingspar · abstrakta B1-ord med förklaring · avvikande läsningar · typografifel · meningsantal SV≠JA · bilddelar per modul · startpaketets storlek.
+
+**Genomfört 2026-11-19.** Valideringsreglerna ligger i `scripts/audit-content.mjs` i stället för i `validateContent.ts`, och taken är lägstanivåerna i `quality/metrics.json` (ingen separat `ceilings.json`): samma spärr, en källa. Måtten räknas över befintliga moduler; nya moduler och moduler med `standard: 2` kontrolleras strikt mot kontraktet. Bilddelar per modul och startpaketets storlek mäts från A3/A4.
 
 **Klart när:** måtten stämmer med tabellerna i revisionen (± ändringarna från A1), och ett testfall visar att CI fallerar när ett mått försämras.
 

@@ -14,6 +14,8 @@
     "e2e": "node scripts/e2e-smoke.mjs",
     "catalog:validate": "vite-node scripts/cli/catalog-validate.ts",
     "content:index": "node scripts/build-module-index.mjs",
+    "content:version": "node scripts/content-version.mjs",
+    "audit:content": "node scripts/audit-content.mjs",
     "module:new": "vite-node scripts/cli/module-new.ts",
     "module:validate": "vite-node scripts/cli/module-validate.ts",
     "content:report": "vite-node scripts/cli/content-report.ts",
