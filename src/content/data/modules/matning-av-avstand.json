@@ -1,0 +1,181 @@
+{
+ "id": "m.matning-av-avstand",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Mätning av avstånd",
+ "titleJa": "{距離|きょり}の{測定|そくてい}",
+ "descriptionSv": "Mätning av avstånd: avstånd, kilometer, mätning, uppskatta, eko, radar, laser, reflektera, ljushastighet, astronomisk enhet, tumme, blunda, vinkel, triangel, parallax, ljusår och ljusstyrka.",
+ "descriptionJa": "{距離|きょり}の{測定|そくてい}：{距離|きょり}、キロメートル、{測定|そくてい}、{見積|みつ}もる、こだま、レーダー、レーザー、{反射|はんしゃ}する、{光速|こうそく}、{天文単位|てんもんたんい}、{親指|おやゆび}、{目|め}を{閉|と}じる、{角度|かくど}、{三角形|さんかくけい}、{視差|しさ}、{光年|こうねん}、{明|あか}るさ。",
+ "categoryId": "R06-A06-T06",
+ "tags": [
+  "astronomi",
+  "rymden",
+  "astronomins metoder"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.radioteleskop"
+ ],
+ "related": [],
+ "recommendedOrder": 3665,
+ "words": [
+  {
+   "senseId": "s.avstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilometer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eko.1",
+   "active": false
+  },
+  {
+   "senseId": "s.radar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laser.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reflektera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ljushastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.astronomisk-enhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tumme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blunda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.triangel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.parallax.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljusår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljusstyrka.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur långt bort är det?",
+  "paragraphs": [
+   "Hur vet man hur långt det är till månen? År 1969 lämnade astronauterna speglar på månen. I dag skickar forskare en stark laser från jorden mot speglarna. Speglarna reflekterar ljuset, och det kommer tillbaka efter ungefär 2,5 sekunder. Eftersom man vet ljushastigheten, kan man räkna ut avståndet: ungefär 384 000 kilometer.",
+   "Det fungerar ungefär som ett eko. På samma sätt mäter man avståndet till planeter och asteroider som är nära jorden med radar: radiovågor studsar mot dem och kommer tillbaka.",
+   "Avståndet mellan jorden och solen kallas en astronomisk enhet. Det är ungefär 150 miljoner kilometer. Ljuset från solen behöver drygt åtta minuter för att nå oss.",
+   "Till stjärnorna är det mycket längre. Där använder man parallax. Prova själv: håll upp tummen framför ansiktet och blunda med ett öga i taget. Tummen ser ut att hoppa fram och tillbaka mot bakgrunden. På samma sätt ser en nära stjärna ut att flytta sig lite, när jorden är på olika sidor om solen. Med vinkeln och en triangel kan man räkna ut avståndet. Den första sådana mätningen gjordes år 1838.",
+   "Den närmaste stjärnan efter solen ligger drygt fyra ljusår bort. För stjärnor som ligger ännu längre bort uppskattar man avståndet med hjälp av ljusstyrkan. Om man vet hur starkt en stjärna egentligen lyser, kan man räkna ut hur långt bort den är av hur svag den ser ut."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad skickar forskarna mot speglarna på månen?",
+    "options": [
+     "En stark laser",
+     "Radiovågor från en mobil",
+     "En raket",
+     "Ljud"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I dag skickar forskare en stark laser från jorden mot speglarna.",
+    "explanationJa": "{強|つよ}いレーザーを{送|おく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur långt är det till månen?",
+    "options": [
+     "Ungefär 150 miljoner kilometer",
+     "Ungefär fyra ljusår",
+     "Ungefär 384 000 kilometer",
+     "Ungefär 2,5 kilometer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… kan man räkna ut avståndet: ungefär 384 000 kilometer.",
+    "explanationJa": "{月|つき}までは{約|やく}38{万|まん}4000キロメートルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är en astronomisk enhet?",
+    "options": [
+     "Avståndet till den närmaste stjärnan",
+     "Avståndet mellan jorden och solen",
+     "Hur snabbt ljuset går",
+     "Hur stark en stjärna lyser"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Avståndet mellan jorden och solen kallas en astronomisk enhet.",
+    "explanationJa": "{地球|ちきゅう}と{太陽|たいよう}の{間|あいだ}の{距離|きょり}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "När man blundar med ett öga i taget ser tummen ut att flytta sig.",
+    "correct": true,
+    "explanationSv": "Tummen ser ut att hoppa fram och tillbaka mot bakgrunden.",
+    "explanationJa": "{親指|おやゆび}が{背景|はいけい}に{対|たい}して{動|うご}いて{見|み}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En stjärna som ser svag ut ligger alltid längre bort än en som ser stark ut.",
+    "correct": false,
+    "explanationSv": "Om man vet hur starkt en stjärna egentligen lyser, kan man räkna ut hur långt bort den är av hur svag den ser ut.",
+    "explanationJa": "{本当|ほんとう}の{明|あか}るさは{星|ほし}ごとに{違|ちが}うので、{暗|くら}く{見|み}える{星|ほし}がいつも{遠|とお}いとは{限|かぎ}りません。"
+   }
+  ],
+  "factSources": [
+   "Apollo 11 lämnade 1969 reflektorer (speglar) på månen; laserljus tar ungefär 2,5 sekunder fram och tillbaka, och medelavståndet till månen är cirka 384 400 km (NASA).",
+   "En astronomisk enhet är 149 597 870,7 km, och ljuset från solen når jorden på ungefär 8 minuter och 20 sekunder (IAU 2012; NASA).",
+   "Den första parallaxmätningen till en stjärna (61 Cygni) gjordes av Friedrich Bessel 1838 (Nationalencyklopedin, \"parallax\").",
+   "Den närmaste stjärnan efter solen, Proxima Centauri, ligger cirka 4,2 ljusår bort (NASA)."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om avstånd i vardagen och i rymden.",
+  "discussionPoints": [
+   "Hur långt är det från ditt hem till Japan, ungefär? Hur kan man ta reda på det?",
+   "Prova att blunda med ett öga i taget och titta på tummen. Vad händer?",
+   "Vilket avstånd i rymden tycker du är svårast att föreställa sig?",
+   "Skulle du vilja resa till månen om det bara tog några dagar?"
+  ]
+ }
+}
