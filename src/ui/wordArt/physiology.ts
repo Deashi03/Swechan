@@ -3,8 +3,8 @@
  * lungs, the digestive system, nerve impulses, the hormone system, kidney filtration and the immune system's cells.
  * Recurring signs (as in organs.ts): the part the word names is accent orange, the rest is muted; red = oxygen-rich
  * blood, blue = oxygen-poor blood (textbook convention); a grey reference shows what the word is not.
- * Close words share one layout where only the marked part differs: syrerik/syrefattig (the same vessel with many or
- * few O₂ on the red cells), stora/lilla kretsloppet (heart–body loop or heart–lung loop), axon/dendrit (the same
+ * Close words share one layout where only the marked part differs: syrerik/syrefattig (two blood drops, one packed
+ * with O₂ and a full bar, one with a single O₂ and an empty bar), stora/lilla kretsloppet (heart–body loop or heart–lung loop), axon/dendrit (the same
  * neuron, long fibre or short branches), synaps/signalsubstans (the same synapse, the gap ringed or the released
  * molecules), centrala/perifera nervsystemet (brain + spinal cord, or the nerves out in the body), ätcell/mördarcell/
  * minnescell (eats a bacterium, kills an infected cell, remembers a germ).
@@ -56,17 +56,18 @@ const body = (x: number, y: number, s = 1, fill = SKINB, stroke: string = C.ink)
   path('M0 0 C8 0 10 8 8 16 L6 20 C16 22 24 24 26 30 L34 58 L28 60 L20 38 L18 66 L20 78 L18 114 L4 114 L0 82 L-4 114 L-18 114 L-20 78 L-18 66 L-20 38 L-28 60 L-34 58 L-26 30 C-24 24 -16 22 -6 20 L-8 16 C-10 8 -8 0 0 0 Z', fill, stroke, 2));
 const smallHeart = (x: number, y: number, s = 1, col: string = HEART) => g(`translate(${x} ${y}) scale(${s})`, path('M0 8 C-12 0 -10 -10 -4 -10 C-1 -10 0 -8 0 -6 C0 -8 1 -10 4 -10 C10 -10 12 0 0 8 Z', col, C.ink, 1.6));
 
-// ── Vessel with red cells carrying O₂ (syrerik/syrefattig) ───────────
-function vessel(y: number, rich: boolean, grey = false): Svg {
-  const wall = rich ? '#f6c4c4' : '#c9d6ee', inner = rich ? '#e86b6b' : '#6f8fc8';
-  const out: Svg[] = [rect(6, y - 16, 108, 32, wall, 14, C.ink, 2), rect(10, y - 11, 100, 22, inner, 10, null)];
-  for (const [i, x] of [22, 52, 82].entries()) {
-    out.push(rbc(x, y, 1.3, rich ? '#e53935' : '#8e2b4a'));
-    const n = rich ? 3 : (i === 1 ? 1 : 0);
-    for (let k = 0; k < n; k++) out.push(o2(x - 9 + k * 9, y - 9 + (k === 1 ? -4 : 0), 1.15));
-  }
-  const s = all(...out);
-  return grey ? greyed(s) : s;
+// ── A blood drop loaded with O₂ and a level bar (syrerik/syrefattig) ──
+/** Drop at x: rich = packed with O₂ pairs and a full bar; poor = dark with one O₂ and an almost empty bar. */
+function o2Drop(x: number, rich: boolean, grey = false): Svg {
+  const d = `M${x} 8 C${x + 24} 36 ${x + 30} 58 ${x + 26} 72 C${x + 22} 88 ${x - 22} 88 ${x - 26} 72 C${x - 30} 58 ${x - 24} 36 ${x} 8 Z`;
+  const out: Svg[] = [path(d, rich ? '#e53935' : '#7a1f3a', C.ink, 2.4)];
+  const pts: [number, number][] = rich
+    ? [[0, 30], [-10, 42], [10, 42], [-16, 56], [0, 54], [16, 56], [-10, 68], [10, 68], [0, 78]]
+    : [[6, 58]];
+  for (const [dx, dy] of pts) out.push(o2(x + dx, dy, 1.25, '#7ec8f2'));
+  out.push(rect(x - 20, 94, 40, 14, C.white, 4, C.ink, 2), rect(x - 18, 96, rich ? 36 : 5, 10, '#5aa7d6', 3, null));
+  const sv = all(...out);
+  return grey ? greyed(sv) : sv;
 }
 
 // ── Circulation diagram (stora/lilla kretsloppet) ────────────────────
@@ -163,10 +164,10 @@ export const PHYSIO_MOTIFS: Record<string, Svg> = {
     ...[[30, 30], [62, 22], [92, 34], [34, 92], [64, 98], [92, 88], [48, 60], [78, 60]].map(([x, y]) => all(ellipse(x!, y!, 8, 6, '#fde3dc', '#d9798b', 1.2), circle(x!, y!, 2.2, '#b49ade', null))),
     line('M0 40 L22 50', C.ink, 9), line('M0 40 L22 50', RED, 7), line('M98 70 L120 80', C.ink, 9), line('M98 70 L120 80', BLUE, 7),
     line('M22 50 C40 40 70 44 98 70 M22 50 C40 64 70 76 98 70 M22 50 C44 52 72 58 98 70 M40 46 C46 56 56 60 60 66 M70 50 C72 58 80 64 84 64 M34 58 C40 48 52 46 56 52 M60 70 C66 62 76 62 82 70', C.ink, 3.6), line('M22 50 C40 40 70 44 98 70 M22 50 C40 64 70 76 98 70 M22 50 C44 52 72 58 98 70 M40 46 C46 56 56 60 60 66 M70 50 C72 58 80 64 84 64 M34 58 C40 48 52 46 56 52 M60 70 C66 62 76 62 82 70', HL, 2.2)),
-  /** syrerik: a red vessel whose red cells each carry three O₂ pairs; a grey blue vessel with few O₂ below. */
-  'fysio.syrerik': all(vessel(36, true), oval(52, 30, 52, 22), vessel(88, false, true)),
-  /** syrefattig: the same two vessels; now the dark, blue one with almost no O₂ is coloured and ringed, the red one is grey. */
-  'fysio.syrefattig': all(vessel(36, true, true), vessel(88, false), oval(56, 86, 54, 22)),
+  /** syrerik: a bright red blood drop packed with O₂ and a full bar beside a grey dark drop with one O₂; the full one is ringed. */
+  'fysio.syrerik': all(o2Drop(32, true), o2Drop(90, false, true), oval(32, 60, 30, 56), o2(61, 8, 0.9, '#7ec8f2'), num(61, 22, 'O₂', 8)),
+  /** syrefattig: the same two drops; now the dark drop with a single O₂ and an almost empty bar is coloured and ringed, the full one grey. */
+  'fysio.syrefattig': all(o2Drop(32, true, true), o2Drop(90, false), oval(90, 60, 30, 56), o2(61, 8, 0.9, '#7ec8f2'), num(61, 22, 'O₂', 8)),
   /** stora kretsloppet: heart in the middle, lungs above, body below; the heart–body loop is coloured and ringed. */
   'fysio.stora-kretsloppet': circulation('stora'),
   /** lilla kretsloppet: the same diagram; the heart–lung loop is coloured and ringed. */
