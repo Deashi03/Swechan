@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.50.0 (släppt 2026-11-17) · **Senast uppdaterad:** 2026-11-17 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.51.0 (släppt 2026-11-18) · **Senast uppdaterad:** 2026-11-18 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs aldrig hela den filen, lägg bara till nytt överst.
 
@@ -11,12 +11,12 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 391 publicerade moduler. 1 386 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48), *Avancerad matematik* (R06-A02, 0.49) och *Fysik* (R06-A03, 0.50). De andra 5 är de ursprungliga modulerna.
+- **Innehåll:** 1 433 publicerade moduler. 1 428 av dem motsvarar katalogposter: hela *Vardag & hem* (R01), hela *Människan & hälsa* (R02), hela *Samhälle & institutioner* (R03), hela *Historia & humaniora* (R04) hela *Natur & geografi* (R05, 0.42–0.47) *Matematikens grunder* (R06-A01, 0.48), *Avancerad matematik* (R06-A02, 0.49), *Fysik* (R06-A03, 0.50) och *Kemi* (R06-A04, 0.51). De andra 5 är de ursprungliga modulerna.
   - Katalogen `planning/catalog/swechan-catalog.v1.json` har 2 016 planerade moduler i 344 kategorier.
-  - Nästa överämne är *Kemi* (R06-A04) i *Matematik & naturvetenskap*. Grupperna *Atomer & periodiska systemet* och *Molekyler & kemiska bindningar* innehåller redan de ursprungliga modulerna *Atomer och molekyler* och *Material och ämnen* (åtta val var). De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
+  - Nästa överämne är *Biologi* (R06-A05) i *Matematik & naturvetenskap*. I *Kemi* har grupperna *Atomer & periodiska systemet* och *Molekyler & kemiska bindningar* åtta val var, eftersom de också innehåller de ursprungliga modulerna *Atomer och molekyler* och *Material och ämnen*. De ursprungliga modulerna *Medeltida borgar* och *Krig och försvar* ligger kvar som kompatibilitetsplaceringar i Militärhistoria (T02 och T03 har nu 8 val var).
 - **Bilder:**
   - Varje nivå i katalogmenyn har en illustration: rotområden, överämnen, ämnesgrupper och alla 2 016 moduler.
-  - 15 427 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
+  - 15 683 ordbilder. Varje modulord har bild, animation eller symbol, utom orden under *Saknade bilder*.
   - Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Regler som stoppas av validering och tester:**
   - kontrollerat ordförråd
@@ -29,7 +29,7 @@ Läs den här filen först. Historiken per version står i `CHANGELOG.md`. Läs 
 
 ## Nästa steg
 
-1. Nästa etapp: överämnet *Kemi* (R06-A04) i *Matematik & naturvetenskap*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
+1. Nästa etapp: överämnet *Biologi* (R06-A05) i *Matematik & naturvetenskap*, med bild på varje ord. Produktionen följer `docs/PRODUCTION_BRIEF.md`.
 2. Mänsklig granskning av språket, se *Öppna osäkerheter*.
 3. Nya bildidéer för orden under *Saknade bilder*.
 4. Test på fysisk iPhone: Safari/WebKit, riktig svensk röst och "Lägg till på hemskärmen". Inget av detta är testat ännu.
@@ -202,6 +202,13 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Värmelära & termodynamik: `s.smältpunkt.1`, `s.tillföra.1`, `s.värmeförlust.1`, `s.termodynamik.1`, `s.inre-energi.1`, `s.energiprincipen.1`, `s.entropi.1`, `s.diffusion.1`, `s.oordning.1`
   - Modern fysik: `s.foton.1`, `s.kvantum.1`, `s.kvanttal.1`, `s.spektrallinje.1`, `s.sönderfall.1`, `s.kvantmekanik.1`, `s.partikelstråle.1`
   - Förväxlingarna: *retardation/bromsa*, *newton/tyngd*, *vridmoment/hävstång*, *energiomvandling/omvandla*, *svängning/vibration*, *hertz/frekvens*, *periodisk/regelbunden*, *reflektion/reflektera*, *förstoring/lupp*, *samlings-/spridningslins/konvex/konkav*, *resistans/motstånd*, *smältpunkt/smälta*, *värmeförlust/värmeöverföring*, *inre energi/värme*, *energiprincipen/verkningsgrad*, *oordning/kaos*, *diffusion/blandning*, *foton/kvantum*, *kvanttal/elektronskal*, *spektrallinje/spektrum*, *sönderfall/alfastrålning*, *partikelstråle/partikelaccelerator*.
+- **Från 0.51 (27 ord):**
+  - Atomer & periodiska systemet: `s.nukleon.1`, `s.reaktiv.1`, `s.deuterium.1`, `s.instabil.2`, `s.fullt-skal.1`, `s.halogen.1`
+  - Molekyler & kemiska bindningar: `s.positiv-jon.1`, `s.negativ-jon.1`, `s.laddad.1`, `s.leda-ström.1`, `s.vinklad.1`, `s.bindningsvinkel.1`, `s.flyktig.1`, `s.intermolekylär-kraft.1`, `s.van-der-Waals-kraft.1`, `s.gitter.1`, `s.fettlöslig.1`
+  - Kemiska reaktioner: `s.kemisk-förändring.1`, `s.bildas.1`, `s.oxidation.1`, `s.reaktionshastighet.1`
+  - Syror, baser & lösningar: `s.pH-värde.1`, `s.försurning.1`, `s.ta-ut-varandra.2`, `s.lösning.3`, `s.koncentration.2`
+  - Organisk kemi: `s.förtvålning.1`
+  - Förväxlingarna: *positiv/negativ jon/jon*, *laddad/laddning*, *leda ström/ledare*, *vinklad/bindningsvinkel/vinkel*, *flyktig/avdunsta*, *intermolekylär kraft/van der Waals-kraft*, *gitter/kristall*, *fettlöslig/lösa sig*, *kemisk förändring/reaktion*, *oxidation/rost*, *reaktionshastighet/hastighet*, *nukleon/atomkärna*, *reaktiv/reagera*, *deuterium/isotop*, *instabil/sönderfall*, *fullt skal/elektronskal*, *halogen/klor/grupp*, *pH-värde/pH-mätare*, *försurning/surt regn*, *lösning/lösa sig*, *koncentration/koncentrerad*, *förtvålning/tvål*. Granskaren nämnde ofta huvudordet i en sammansättning (*jon*, *vinkel*, *hastighet*) som lika bra.
 - Orden från 0.29 och framåt står i `VISUAL_MISSING_AFTER_BLIND_TEST`.
 
 ## Öppna osäkerheter (för mänsklig granskning)
@@ -501,6 +508,16 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
 - **0.50, fakta (står i `factSources`, kan ändras):** tyngdacceleration 9,82 m/s², glödlampans verkningsgrad 5 %, jordaxelns lutning 23,4°, Principia 1687, ljudhastighet 340 m/s i luft och 1 500 m/s i vatten, tre sekunder per kilometer vid åska, 50 Hz i Sverige och 50/60 Hz i Japan, Broughton-bron 1831, ljudvallen bröts 1947, blåljus i Sverige och rött i Japan, valars läten nära infraljud (bör kontrolleras), ljusets hastighet 299 792 km/s, 230 V i vägguttag, glödtråd cirka 2 500 °C, kapacitiva pekskärmar, elinstallation endast av registrerat företag, bensinmotorns verkningsgrad 25–35 %, värmepumpens faktor 3–4, slutförvaret i Forsmark (beslut 2022, cirka 500 m), kvantdatorn på Chalmers, MAX IV och ESS i Lund, närmaste svarta hål cirka 1 500 ljusår, GPS-klockor 38 µs per dygn, radonmätning oktober–april
 - **0.50, bilder:** varningssymbolen för strålning (trefoil) används som allmän symbol; utryckningsfordon visas utan rött kors; siffror och enheter (m/s, 300 000 km/s, ×10) förekommer men inga ord.
 - **0.50, arbetsform:** etappen kördes direkt efter 0.48 och 0.49 i samma session på produktägarens uttryckliga begäran. Användningsgränsen nåddes en gång; agenterna återupptogs från sina worktrees.
+- **0.51, svenska:**
+  - ord och böjning att kontrollera mot SAOL/SO: genus för grundämnen (*ett klor*, *ett svavel*, *en kisel*, *ett aluminium*), *elektronhölje*, *fullt skal*, *elektronkonfiguration*, *kulstavsmodell* (alt. *kulstavmodell*), *kalottmodell*, *van der Waals-kraft*, *gitter* (ofta *jongitter*), *aceton*, *brandtriangel*, *exoterm/endoterm* (alt. *-isk*), *fattas*, *promille* (pl. promille), *mol* (pl. mol), *vätekarbonat*, *syra-basbalans*, *läskedryck*, *gasol*, *butan*, *fotogen*, *etanol*, *silikon* och *vax* (ett), *glycerol* (alt. *glycerin*), *karboxylsyra*, *hydroxylgrupp*, *förestring*, *erlenmeyerkolv* (i skolan *E-kolv*), *laboratorium* (ofta *labb*), *tarera* (C1)
+  - *index* används för siffran i en kemisk formel; *neutralisation* och *buffert* har inga egna poster (samma ordfamilj som *neutralisera*/*buffertlösning*), så texterna undviker dem trots att de är modultitlar
+  - kemiska tecken med två bokstäver (Fe, Au, Na) och formler som NaCl går inte igenom ordkontrollen; texterna skriver "metallatom" eller har formlerna i de japanska texterna och i `factSources`
+  - s.sur.1 och s.salt.1 (vardagsbetydelserna) är inte modulord och har ingen bild
+- **0.51, japanska:**
+  - termer att granska: {電子殻|でんしかく}, {原子核|げんしかく}のまわりの{電子|でんし}の{部分|ぶぶん} (*elektronhölje*), {毛管力|もうかんりょく} (*kapillärkraft*), {貴|き}ガス{型|がた}の{電子配置|でんしはいち} (*ädelgasstruktur*), {加工|かこう}しやすい (*formbar*), {発火点|はっかてん} (*antändningstemperatur*), {燃焼|ねんしょう}の{三要素|さんようそ} (*brandtriangel*), {添|そ}え{字|じ} (*index*), {電離|でんり} (*protolys*, approximation), プロパンガス/LPガス (*gasol*), {燃料用|ねんりょうよう}アルコール (*rödsprit*), {発泡|はっぽう}プラスチック (*cellplast*), ジャガイモでんぷん (*potatismjöl*), ドラフト (*dragskåp*), {洗浄瓶|せんじょうびん} (*spolflaska*), {風袋|ふうたい}を{引|ひ}く (*tarera*), {精密天秤|せいみつてんびん} (*analysvåg*)
+- **0.51, fakta (står i `factSources`, kan ändras):** 118 grundämnen varav cirka 90 i naturen, jodberikat salt, argon mellan fönsterglas, Mendelejev 1869, fluor-18 cirka 110 minuter, tungt vatten densitet 1,11, kol-14 cirka 5 730 år, bindningsvinklar 105°/109°, metan kokar −162 °C, natriumklorid smälter 801 °C, klorgas vid blandning av rengöringsmedel, papper antänds cirka 230 °C, silver svartnar av svavel, hortensior blå i sur jord, pH för läsk, promillegränsen 0,2, Avogadros tal, svensk ättika 12 %, bensoesyra i lingon, raffinaderier i Göteborg och Lysekil, Livsmedelsverkets fiskråd, sockerbetor i Skåne, cellplast 98 % luft, CLP/GHS nio symboler, analysvåg 0,1 mg
+- **0.51, bilder:** farosymbolerna är förenklade GHS-romber utan text; inga varumärken (*T-röd*, *frigolit* undvikna).
+- **0.51, arbetsform:** etappen kördes direkt efter 0.48–0.50 i samma session på produktägarens uttryckliga begäran. Veckogränsen nåddes en gång (arbetet pausade över natten); agenterna återupptogs från sina worktrees.
 - **Kända begränsningar:**
   - Grundorden saknar japanska glosor och kan inte slås upp.
   - Ordförrådskontrollen utgår från modulens förkunskaper, inte från vad användaren faktiskt har lärt sig.
@@ -519,11 +536,11 @@ Dessa modulord har planstatus `none`, eftersom de har underkänts i två blindte
   - Byt aldrig till en lättare modell för svensk eller japansk text eller för bilder utan att fråga produktägaren.
 - **Release:**
   - versionsnummer i `package.json`, `package-lock.json` (rad 3 och 9) och `APP_VERSION` i `src/config/appConfig.ts`
-  - `CACHE` i `public/sw.js` (nu `swechan-v54`)
+  - `CACHE` i `public/sw.js` (nu `swechan-v55`)
   - `CHANGELOG.md` (överst), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Reaktanter och produkter* (SWC-VET-04-03-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Kemiska reaktioner* (R06-A04-T03; T01 och T02 har en ursprunglig modul var och kan inte användas) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Cellens delar* (SWC-VET-05-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Cellbiologi* (R06-A05-T01; kontrollera att gruppen inte har en ursprunglig modul) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med exists.py efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp. Integreras en grupp före gruppen som kommer före den i katalogen (0.48: T05 före T04), sätt `PREV_FALLBACK` till den senast inlagda modulen och kör om gruppens första skript när den tidigare gruppen är inlagd, så att förkunskapen pekar rätt.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.

@@ -174,6 +174,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.50 – Fysik (klar)
 - 42 nya moduler i Matematik & naturvetenskap → Fysik med 292 nya ordbilder. 32 ord saknar bild efter två blindtestomgångar.
 
+## v0.51 – Kemi (klar)
+- 42 nya moduler i Matematik & naturvetenskap → Kemi med 256 nya ordbilder. 27 ord saknar bild efter två blindtestomgångar.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
