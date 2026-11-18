@@ -1,0 +1,179 @@
+{
+ "id": "m.vaga-och-mata",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Väga och mäta",
+ "titleJa": "{量|はか}ることと{測|はか}ること",
+ "descriptionSv": "Väga och mäta: mäta, mäta upp, väga, väga upp, tarera, massa, volym, densitet, milliliter, läsa av, menisk, ögonhöjd, mätvärde, mätfel, medelvärde, enhet och avrunda.",
+ "descriptionJa": "{量|はか}ることと{測|はか}ること：{測|はか}る、{測|はか}り{取|と}る、{重|おも}さを{量|はか}る、（{必要|ひつよう}な{量|りょう}を）{量|はか}り{取|と}る、{風袋|ふうたい}を{引|ひ}く、{質量|しつりょう}、{体積|たいせき}、{密度|みつど}、ミリリットル、（メーターなどを）{読|よ}む、メニスカス、{目|め}の{高|たか}さ、{測定値|そくていち}、{測定誤差|そくていごさ}、{平均値|へいきんち}、{単位|たんい}、{四捨五入|ししゃごにゅう}する。",
+ "categoryId": "R06-A04-T06",
+ "tags": [
+  "kemi",
+  "laboratoriekemi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sakerhetssymboler"
+ ],
+ "related": [],
+ "recommendedOrder": 3464,
+ "words": [
+  {
+   "senseId": "s.mäta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäta-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väga-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tarera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.massa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volym.2",
+   "active": true
+  },
+  {
+   "senseId": "s.densitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.milliliter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsa-av.2",
+   "active": true
+  },
+  {
+   "senseId": "s.menisk.2",
+   "active": false
+  },
+  {
+   "senseId": "s.ögonhöjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.medelvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avrunda.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur tung är en liter?",
+  "paragraphs": [
+   "I dag ska klassen mäta och väga vatten. Uppgiften är enkel: ta reda på massan av 100 milliliter vatten. Sara och Ali arbetar tillsammans.",
+   "Först ska Ali mäta upp 100 milliliter i en mätcylinder. Han läser av volymen. – Du måste ha ögonen i ögonhöjd med vattnet, säger Sara. Annars blir det mätfel. Ytan är böjd, och man läser av vid den lägsta punkten på menisken.",
+   "Sedan ställer Sara en tom bägare på vågen och tarerar den, så att vågen visar 0,0 gram. Ali häller i vattnet, och vågen visar 99,6 gram. – Nästan 100 gram, säger Ali. Vi väger upp lika mycket en gång till.",
+   "De gör tre försök och får tre olika mätvärden: 99,6, 100,2 och 99,8 gram. Medelvärdet blir 99,9 gram. När de avrundar till hela gram blir det 100 gram.",
+   "Läraren förklarar: – Vatten har densiteten ett gram per milliliter. Volym och massa har olika enheter, men för vatten är talen nästan lika. En liter vatten väger alltså ungefär ett kilo."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska Ali mäta upp i mätcylindern?",
+    "options": [
+     "100 gram salt",
+     "En liter mjölk",
+     "Tre bägare vatten",
+     "100 milliliter vatten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först mäter Ali upp 100 milliliter i en mätcylinder.",
+    "explanationJa": "100ミリリットルの{水|みず}を{量|はか}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför måste Ali ha ögonen i samma höjd som vattnet?",
+    "options": [
+     "Annars går glaset sönder",
+     "Annars blir vattnet varmt",
+     "Annars blir det mätfel",
+     "Annars ser läraren inte"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Du måste ha ögonen i ögonhöjd med vattnet … Annars blir det mätfel.",
+    "explanationJa": "そうしないと{測定誤差|そくていごさ}が{出|で}るからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Varför tarerar Sara vågen?",
+    "options": [
+     "Så att vågen blir varm",
+     "Så att vattnet blir kallt",
+     "Så att vågen visar kilo",
+     "Så att bara vattnet vägs, inte bägaren"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sara ställer en tom bägare på vågen och tarerar den, så att vågen visar 0,0 gram.",
+    "explanationJa": "ビーカーの{重|おも}さを{除|のぞ}いて、{水|みず}だけを{量|はか}るためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Medelvärdet av de tre mätvärdena blir 99,9 gram.",
+    "correct": true,
+    "explanationSv": "Medelvärdet blir 99,9 gram.",
+    "explanationJa": "{平均値|へいきんち}は99.9グラムです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En liter vatten väger ungefär tio kilo.",
+    "correct": false,
+    "explanationSv": "En liter vatten väger alltså ungefär ett kilo.",
+    "explanationJa": "1リットルの{水|みず}はおよそ1キロです。"
+   }
+  ],
+  "factSources": [
+   "Vatten har densiteten ungefär 1 g/ml (1,00 g/cm³ vid 4 °C, 0,998 g/cm³ vid 20 °C), så en liter vatten väger ungefär ett kilogram.",
+   "Man läser av en mätcylinder vid menisken med ögonen i samma höjd som vätskeytan; för vatten läser man av vid meniskens lägsta punkt.",
+   "Vardagsscen; personerna är påhittade."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att mäta och väga i köket och i laboratoriet.",
+  "discussionPoints": [
+   "Mäter du upp mjöl i deciliter eller väger du det i gram?",
+   "Brukar du tarera vågen när du bakar?",
+   "När har du gjort ett mätfel som blev ett problem?",
+   "Vilka enheter är olika i Japan och i Sverige?"
+  ]
+ }
+}

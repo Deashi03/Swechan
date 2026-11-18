@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.51.0 – 2026-11-18
+
+42 nya moduler som gör överämnet *Kemi* (R06-A04) komplett. Modulerna lär ut det svenska ordförrådet för skolkemi med vardagliga exempel (kök, städning, mat, kropp, natur). Varje nytt modulord har en egen bild, utom de 27 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 693 målord)
+- **Atomer & periodiska systemet** (3411–3417): atomens grunddelar, grundämnen, atomnummer och masstal, periodiska systemets grupper, metaller och icke-metaller, isotoper samt elektronskal och valenselektroner. Gruppen innehåller också den ursprungliga modulen *Atomer och molekyler*.
+- **Molekyler & kemiska bindningar** (3421–3427): molekyler och kemiska formler, kovalenta bindningar, joner och jonbindning, metallbindning, molekylers former, polära och opolära molekyler samt intermolekylära krafter. Gruppen innehåller också den ursprungliga modulen *Material och ämnen*.
+- **Kemiska reaktioner** (3431–3437): reaktanter och produkter, reaktionsformler, balansera reaktioner, förbränning, oxidation och reduktion, fällningsreaktioner och reaktionshastighet.
+- **Syror, baser & lösningar** (3441–3447): syror och baser, pH-skalan, starka och svaga syror, neutralisation, salter, lösningar och koncentration samt buffertlösningar.
+- **Organisk kemi** (3451–3457): kolväten, alkoholer, karboxylsyror, estrar, kolhydraters kemi, fett och fettsyror samt polymerer och plaster.
+- **Laboratoriekemi** (3461–3467): laboratorieglas, mätinstrument, säkerhetssymboler, väga och mäta, filtrering och destillation, titrering och att dokumentera laborationer.
+- Varje modul har 15–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 253 nya ordposter. Grundord som *grupp*, *period*, *salt*, *sur*, *alkohol* och *mäta* har fått egna poster med en vardaglig och en kemisk betydelse.
+- 27 nya betydelser på befintliga poster, där vardagsordet fått sin kemibetydelse: bland andra *stabil*, *instabil*, *avge* (atomer), *index* och *spröd* (bindningar), *produkt*, *koefficient*, *balansera*, *överskott*, *reduktion*, *klar* och *tillsätta* (reaktioner), *syra*, *bas*, *neutral*, *indikator*, *lösning*, *mättad* och *koncentration* (lösningar) samt *bägare*, *spatel*, *visare*, *menisk*, *separera* och *stativ* (laboratoriet). Den gamla betydelsen har fått en etikett.
+- Parallella grupper ville skapa samma poster (*ädelgasstruktur*, *elektronformel*, *formbar*, *spröd*, *index*, *avkalka*, *citronsyra*, *mjölksyra*, *droppvis*, *ättika*). Posten finns bara i den grupp som lade in den först, och de andra refererar dess `senseId`.
+- Rättning: posten *myrsyra* (`s.myrsyra.1`) beskrev myrsyra som en stark syra; den är svag.
+- Namnen *CH* och *CO* är tillagda i grundordförrådet så att formler som CH₄ och CO₂ godkänns.
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Biologi* (R06-A05): Cellbiologi → Cellens delar.
+
+### Bilder (256 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `atomsPeriodic.ts`, `bonds.ts`, `reactions.ts`, `acidsBases.ts`, `organicChem.ts` och `labChem.ts`. Farosymbolerna är förenklade GHS-romber utan text.
+- 146 symbol- och adjektivbilder blindtestades. 119 klarade testet efter högst två omgångar.
+- **27 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *koksalt/natriumklorid*.
+
+Service workern är `swechan-v55`.
+
+
 ## 0.50.0 – 2026-11-17
 
 42 nya moduler som gör överämnet *Fysik* (R06-A03) komplett. Modulerna lär ut det svenska ordförrådet för skolfysik med vardagliga exempel (cykel, kök, väder, mobiltelefon, elnät). Varje nytt modulord har en egen bild, utom de 32 ord som underkändes i två blindtestomgångar.

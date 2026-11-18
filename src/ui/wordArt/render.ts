@@ -202,6 +202,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'elm.': () => import('./electricity').then((m) => m.ELECTRICITY_MOTIFS),
   'term.': () => import('./thermo').then((m) => m.THERMO_MOTIFS),
   'mfys.': () => import('./modernPhysics').then((m) => m.MODERNPHYS_MOTIFS),
+  'bind.': () => import('./bonds').then((m) => m.BONDS_MOTIFS),
+  'atom.': () => import('./atomsPeriodic').then((m) => m.ATOMS_MOTIFS),
+  'reak.': () => import('./reactions').then((m) => m.REACTIONS_MOTIFS),
+  'org.': () => import('./organicChem').then((m) => m.ORGANIC_MOTIFS),
+  'syra.': () => import('./acidsBases').then((m) => m.ACIDS_MOTIFS),
+  'labk.': () => import('./labChem').then((m) => m.LABCHEM_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};

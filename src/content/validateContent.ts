@@ -271,6 +271,20 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.kvantum.1', 's.kvanttal.1', 's.spektrallinje.1', 's.sönderfall.1', 's.kvantmekanik.1', 's.partikelstråle.1',
   // 0.50 Modern fysik: förväxlas med kvantum efter två blindomgångar
   's.foton.1',
+  // 0.51 Molekyler & kemiska bindningar: förväxlas med huvudordet eller samma ordfamilj
+  's.positiv-jon.1', 's.negativ-jon.1', 's.laddad.1', 's.leda-ström.1', 's.vinklad.1', 's.bindningsvinkel.1', 's.flyktig.1', 's.intermolekylär-kraft.1', 's.van-der-Waals-kraft.1',
+  // 0.51 Molekyler & kemiska bindningar: förväxlas med kristall respektive lösa sig efter två blindomgångar
+  's.gitter.1', 's.fettlöslig.1',
+  // 0.51 Kemiska reaktioner: förväxlas med reaktion, rost respektive hastighet
+  's.kemisk-förändring.1', 's.bildas.1', 's.oxidation.1', 's.reaktionshastighet.1',
+  // 0.51 Atomer & periodiska systemet: förväxlas med närliggande ord
+  's.nukleon.1', 's.reaktiv.1', 's.deuterium.1', 's.instabil.2', 's.fullt-skal.1',
+  // 0.51 Atomer & periodiska systemet: förväxlas med grupp efter två blindomgångar
+  's.halogen.1',
+  // 0.51 Syror, baser & lösningar: förväxlas med närliggande ord eller samma ordfamilj
+  's.pH-värde.1', 's.försurning.1', 's.ta-ut-varandra.2', 's.lösning.3', 's.koncentration.2',
+  // 0.51 Organisk kemi: förväxlas med tvål
+  's.förtvålning.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {

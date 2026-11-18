@@ -9,7 +9,8 @@ import { isChoice } from '../learning/exercises/types';
 import { buildLearnPlan } from '../learning/learnPlan';
 import { hasMotif, loadAllMotifs, renderWordArt } from '../ui/wordArt/render';
 
-beforeAll(async () => { await loadAllMotifs(); });
+// Loading every word-art file grows with each release; on slower CI runners it can exceed the 10 s default hook timeout.
+beforeAll(async () => { await loadAllMotifs(); }, 120_000);
 import { exerciseTypeFor } from '../ui/screens/ReviewSession';
 import { Scene, migrateScene, compileScene, renderFrame, frameToSvg } from '../ui/anim/player';
 
