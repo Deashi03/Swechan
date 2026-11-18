@@ -1,0 +1,178 @@
+{
+ "id": "m.fotohantering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Fotohantering",
+ "titleJa": "{写真|しゃしん}の{管理|かんり}",
+ "descriptionSv": "Fotohantering: fotografera, selfie, självutlösare, stativ, panoramabild, motljus, blixt, zooma, beskära, rotera, filter, ljusstyrka, dubblett, rensa, radera, moln och skriva ut.",
+ "descriptionJa": "{写真|しゃしん}の{管理|かんり}：{写真|しゃしん}を{撮|と}る、{自撮|じど}り、セルフタイマー、{三脚|さんきゃく}、パノラマ{写真|しゃしん}、{逆光|ぎゃっこう}、フラッシュ、ズームする、トリミングする、{回転|かいてん}させる、フィルター、{明|あか}るさ、{重複|ちょうふく}したもの、{消去|しょうきょ}する、{削除|さくじょ}する、クラウド、{印刷|いんさつ}する。",
+ "categoryId": "R07-A01-T06",
+ "tags": [
+  "datorer",
+  "foto",
+  "mobil"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.videosamtalsprogram"
+ ],
+ "related": [],
+ "recommendedOrder": 3766,
+ "words": [
+  {
+   "senseId": "s.fotografera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.selfie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självutlösare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stativ.1",
+   "active": false
+  },
+  {
+   "senseId": "s.panoramabild.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blixt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.zooma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beskära.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rotera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.filter.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ljusstyrka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dubblett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rensa.4",
+   "active": true
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.moln.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skriva-ut.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Bilder från fjällen",
+  "paragraphs": [
+   "Familjen Sato har varit på semester i fjällen. Rina har fotograferat nästan hela tiden med mobilen. Barnen ville ta en selfie vid sjön varje dag.",
+   "För att hela familjen skulle komma med på en bild satte Rina mobilen på ett litet stativ och använde självutlösaren. Från toppen av ett berg tog hon en panoramabild av hela dalen.",
+   "Men alla bilder blev inte bra. På en bild står pappan i motljus, så hans ansikte är svart. I stugan på kvällen var blixten för stark, och alla ser vita ut. En hund var så långt bort att Rina var tvungen att zooma, och då blev bilden dålig.",
+   "Hemma sätter sig Rina med datorn. Hon beskär bilden på hunden och roterar några bilder som ligger på sidan. Hon lägger ett filter på bilden från sjön och ökar ljusstyrkan på bilden med pappan.",
+   "En app hittar 200 dubbletter. Rina rensar bort dem och raderar de suddiga bilderna. Resten sparar hon i molnet. De tio bästa bilderna vill hon skriva ut och sätta upp på väggen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur kom hela familjen med på en bild?",
+    "options": [
+     "Rina använde ett stativ och självutlösaren",
+     "En turist tog bilden",
+     "Barnen tog en selfie",
+     "Pappan höll mobilen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… satte Rina mobilen på ett litet stativ och använde självutlösaren.",
+    "explanationJa": "{三脚|さんきゃく}とセルフタイマーを{使|つか}いました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är pappans ansikte svart på en bild?",
+    "options": [
+     "Blixten var för stark",
+     "Han står i motljus",
+     "Bilden är beskuren",
+     "Rina har lagt ett filter på den"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På en bild står pappan i motljus, så hans ansikte är svart.",
+    "explanationJa": "{逆光|ぎゃっこう}だったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör Rina med bilden på hunden?",
+    "options": [
+     "Hon raderar den",
+     "Hon skriver ut den",
+     "Hon lägger ett filter på den",
+     "Hon beskär den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon beskär bilden på hunden …",
+    "explanationJa": "{犬|いぬ}の{写真|しゃしん}をトリミングします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Blixten gjorde bilderna i stugan bättre.",
+    "correct": false,
+    "explanationSv": "I stugan på kvällen var blixten för stark, och alla ser vita ut.",
+    "explanationJa": "フラッシュが{強|つよ}すぎて、みんな{白|しろ}く{写|うつ}りました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Rina vill ha några av bilderna på papper.",
+    "correct": true,
+    "explanationSv": "De tio bästa bilderna vill hon skriva ut och sätta upp på väggen.",
+    "explanationJa": "いちばんよい10{枚|まい}を{印刷|いんさつ}するつもりです。"
+   }
+  ],
+  "factSources": [
+   "Vardagsscen utan faktapåståenden."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni tar och sparar foton.",
+  "discussionPoints": [
+   "Hur många bilder har du i din mobil ungefär?",
+   "Brukar du redigera dina bilder, till exempel med filter?",
+   "Var sparar du dina viktigaste bilder?",
+   "Skriver du ut bilder, eller tittar du bara på dem på skärmen?"
+  ]
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "id": "m.digitala-kalenderverktyg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-18",
+ "titleSv": "Digitala kalenderverktyg",
+ "titleJa": "デジタルカレンダーツール",
+ "descriptionSv": "Digitala kalenderverktyg: kalenderinbjudan, lägga in, boka in, påminnelse, återkommande, heldag, delad kalender, upptagen, ledig tid, krocka, tacka ja, tacka nej, föreslå en ny tid, arrangör, deltagare, tidszon och veckonummer.",
+ "descriptionJa": "デジタルカレンダーツール：{会議|かいぎ}{招待|しょうたい}、（{予定|よてい}を）{入|い}れる、{予約|よやく}する、リマインダー、{定期的|ていきてき}な、{終日|しゅうじつ}、{共有|きょうゆう}カレンダー、{予定|よてい}がある、{空|あ}き{時間|じかん}、（{予定|よてい}が）{重|かさ}なる、{招待|しょうたい}を{受|う}ける、{招待|しょうたい}を{断|ことわ}る、{別|べつ}の{日時|にちじ}を{提案|ていあん}する、{主催者|しゅさいしゃ}、{参加者|さんかしゃ}、タイムゾーン、{週番号|しゅうばんごう}。",
+ "categoryId": "R07-A01-T06",
+ "tags": [
+  "datorer",
+  "kalender",
+  "arbete"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.dokument-och-kalkylblad"
+ ],
+ "related": [],
+ "recommendedOrder": 3764,
+ "words": [
+  {
+   "senseId": "s.kalenderinbjudan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boka-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påminnelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återkommande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.heldag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.delad-kalender.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upptagen.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ledig-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krocka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tacka-ja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tacka-nej.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föreslå-en-ny-tid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arrangör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deltagare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidszon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.veckonummer.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett möte med tre länder",
+  "paragraphs": [
+   "Kenji arbetar på ett företag i Göteborg som har kontor i Sverige, Japan och USA. Han ska vara arrangör för ett möte om ett nytt projekt. Han vill hitta en tid som passar alla deltagare.",
+   "Först tittar han i den delade kalendern. Där ser han när kollegorna är upptagna och när de har ledig tid. Han måste också tänka på tidszonen: när klockan är nio på morgonen i Göteborg är det redan eftermiddag i Tokyo.",
+   "Kenji bokar in mötet på torsdag i vecka 14 och skickar en kalenderinbjudan. I Sverige använder man ofta veckonummer, men kollegorna i Japan och USA ser datumet i inbjudan. Mötet ska vara återkommande, varje torsdag. Han vill också lägga in en påminnelse femton minuter innan.",
+   "Snart kommer svaren. De flesta tackar ja. En kollega i USA tackar nej, eftersom mötet krockar med hans morgonmöte. I stället vill han föreslå en ny tid: en timme senare.",
+   "Kenji flyttar mötet. Nu passar tiden alla. Han ser också att fredagen i vecka 15 är markerad som heldag för en kurs, så den dagen bokar han inget."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem ska ordna mötet?",
+    "options": [
+     "En kollega i USA",
+     "Chefen i Tokyo",
+     "Alla deltagare tillsammans",
+     "Kenji"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han ska vara arrangör för ett möte om ett nytt projekt.",
+    "explanationJa": "ケンジが{主催者|しゅさいしゃ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var ser Kenji när kollegorna är upptagna?",
+    "options": [
+     "I ett mejl från chefen",
+     "På en lapp på kontoret",
+     "I ett kalkylblad",
+     "I den delade kalendern"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först tittar han i den delade kalendern. Där ser han när kollegorna är upptagna …",
+    "explanationJa": "{共有|きょうゆう}カレンダーで{確認|かくにん}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför tackar kollegan i USA nej?",
+    "options": [
+     "Han är sjuk",
+     "Han har semester",
+     "Mötet krockar med hans morgonmöte",
+     "Han fick ingen inbjudan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… eftersom mötet krockar med hans morgonmöte.",
+    "explanationJa": "{朝|あさ}の{会議|かいぎ}と{重|かさ}なっているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mötet ska bara vara en gång.",
+    "correct": false,
+    "explanationSv": "Mötet ska vara återkommande, varje torsdag.",
+    "explanationJa": "{毎週|まいしゅう}{木曜日|もくようび}の{定例会議|ていれいかいぎ}になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Till slut blir mötet en timme senare än Kenjis första förslag.",
+    "correct": true,
+    "explanationSv": "I stället vill han föreslå en ny tid: en timme senare. Kenji flyttar mötet.",
+    "explanationJa": "アメリカの{同僚|どうりょう}の{提案|ていあん}どおり、1{時間|じかん}{遅|おそ}くなりました。"
+   }
+  ],
+  "factSources": [
+   "Tidsskillnaden Sverige–Japan är 8 timmar (7 under svensk sommartid); Japan har ingen sommartid."
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni planerar möten och tider med en digital kalender.",
+  "discussionPoints": [
+   "Använder du en digital kalender eller en almanacka av papper?",
+   "Har du en delad kalender med familjen eller på jobbet?",
+   "Vad gör du när två möten krockar?",
+   "Har du haft möten med någon i en annan tidszon?"
+  ]
+ }
+}
