@@ -203,6 +203,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'term.': () => import('./thermo').then((m) => m.THERMO_MOTIFS),
   'mfys.': () => import('./modernPhysics').then((m) => m.MODERNPHYS_MOTIFS),
   'bind.': () => import('./bonds').then((m) => m.BONDS_MOTIFS),
+  'atom.': () => import('./atomsPeriodic').then((m) => m.ATOMS_MOTIFS),
   'reak.': () => import('./reactions').then((m) => m.REACTIONS_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
