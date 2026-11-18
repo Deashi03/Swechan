@@ -5,15 +5,16 @@
   "B2+ förväxlingsord som inte nämns": 2128,
   "B2+ med ett exempel": 8459,
   "B2+ utan användningsuppgift": 8059,
-  "abstrakt B1 utan förklaring": 1753,
+  "abstrakt B1 utan förklaring": 1798,
   "avvikande läsning": 10,
   "beskrivning som bara räknar upp orden": 1505,
   "frågeförklaring citerar text som saknas": 1,
   "glosa med två betydelser": 102,
   "grundord med en betydelse, ej inventerat": 273,
   "namn med fel katakana": 10,
-  "ord med animation": 311,
+  "ord med animation": 315,
   "ord utan bild": 592,
+  "planerad animation saknas": 152,
   "poster med flera betydelser": 529,
   "sv/ja ur fas": 4,
   "typografi: blanksteg före skiljetecken": 1,
@@ -22,7 +23,15 @@
   "typografi: dubbla blanksteg": 1,
   "typografi: dubbla ord": 17,
   "typografi: raka citattecken": 1120,
-  "verb och processord utan animation": 3920
+  "verb och processord utan animation": 3919
  },
- "exceptions": []
+ "exceptions": [
+  {
+   "date": "2026-11-18",
+   "metric": "abstrakt B1 utan förklaring",
+   "reason": "A5 gav 592 bildlösa ord en riktig bildsort i stället för none; 45 abstrakta B1-ord bland dem syns nu i måttet",
+   "from": 1753,
+   "to": 1798
+  }
+ ]
 }

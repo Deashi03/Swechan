@@ -11,6 +11,10 @@
  * other in picture exercises. A low-confidence wrong answer counts only if the remark says the picture's
  * own word fits equally well. Everything else fails,
  * and a failed picture loses any earlier record. The record stores a fingerprint of the tested picture.
+ *
+ * Matching sheets (`art:blind -- … --match`, kvalitetsplanen A5): the answer per word is the picture number
+ * ({ "<word>": { pick, conf } }). Right picture with high confidence = pass (method "match"); a picked
+ * picture that belongs to a declared confusable word = synonym; anything else fails.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -34,8 +38,12 @@ for (const f of fs.readdirSync(R + 'dictionary')) {
 const norm = (s = '') => s.trim().toLowerCase();
 /** Whole-word mention (so that 'prio' is not found inside 'prioritering'). */
 const mentions = (text: string, w: string) => new RegExp(`(^|[^a-zåäöé])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-zåäöé])`).test(text);
-const key = JSON.parse(fs.readFileSync(path.join(dir, 'key.json'), 'utf8')) as Record<string, Record<string, string>>;
-const answers: Record<string, Record<string, { word?: string; conf?: string; problem?: string }>> = {};
+type MatchKey = { method: 'match'; pictures: Record<string, string>; words: Record<string, number> };
+const keyAll = JSON.parse(fs.readFileSync(path.join(dir, 'key.json'), 'utf8')) as Record<string, Record<string, string> | MatchKey>;
+const isMatch = (k: unknown): k is MatchKey => !!k && typeof k === 'object' && (k as MatchKey).method === 'match';
+const key = Object.fromEntries(Object.entries(keyAll).filter(([, k]) => !isMatch(k))) as Record<string, Record<string, string>>;
+const matchKeys = Object.entries(keyAll).filter(([, k]) => isMatch(k)) as [string, MatchKey][];
+const answers: Record<string, Record<string, { word?: string; conf?: string; problem?: string; pick?: number }>> = {};
 for (const f of fs.readdirSync(dir).filter((x) => /^answers_.*\.json$/.test(x))) Object.assign(answers, JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
 
 // candidate words per sheet (the reviewer's list)
@@ -71,6 +79,25 @@ for (const [m, map] of Object.entries(key)) {
       delete img.blindTest;
       tally.fail++;
       fails.push(`${sid}  → ${a.word ?? '–'} (${a.conf ?? '?'}) ${a.problem ?? ''}`);
+    }
+  }
+}
+for (const [m, k] of matchKeys) {
+  for (const [sid, correct] of Object.entries(k.words)) {
+    const img = bySense.get(sid)!;
+    const a = answers[m]?.[lemma.get(sid) ?? ''] ?? answers[m]?.[norm(lemma.get(sid))];
+    if (!a) { tally.unrated++; continue; }
+    const picked = k.pictures[String(a.pick)];
+    let result: 'pass' | 'synonym' | null = null;
+    if (Number(a.pick) === correct && (a.conf === 'high' || (a.conf === 'medium' && accept.has(sid)))) result = 'pass';
+    else if (picked && (img.confusableWith ?? []).includes(picked)) result = 'synonym';
+    if (result) {
+      img.blindTest = { result, round: version, hash: visualHash(visualFingerprintSource(img, io) ?? ''), method: 'match' };
+      tally[result]++;
+    } else {
+      delete img.blindTest;
+      tally.fail++;
+      fails.push(`${sid}  → bild ${a.pick ?? '–'} (${picked ?? '?'}, ${a.conf ?? '?'}) ${a.problem ?? ''}`);
     }
   }
 }

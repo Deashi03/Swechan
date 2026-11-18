@@ -8,6 +8,12 @@
  *   npm run art:blind -- <outDir> senses s.a.1,s.b.1
  *   npm run art:blind -- <outDir> pending          every symbol/adjective visual without a valid blind test record
  *
+ * Matching test (kvalitetsplanen A5, for symbol pictures – they are always shown with the Japanese gloss):
+ *   npm run art:blind -- <outDir> pending --match
+ * The sheet shows every picture of the module, numbered; m<order>.txt lists only the words under test
+ * (Swedish + gloss), and the reviewer picks the picture number for each word. Quiz pictures still need the
+ * open test above.
+ *
  * Record the reviewers' answers afterwards with `npm run art:blind:record -- <outDir>`.
  *
  * Writes <outDir>/m<order>.png (pictures, no labels), m<order>.txt (candidate words) and key.json (answers –
@@ -35,7 +41,9 @@ const modules = fs.readdirSync(R + 'modules').map((f) => JSON.parse(fs.readFileS
 const moduleOf = new Map<string, (typeof modules)[number]>();
 for (const m of modules) for (const w of m.words) moduleOf.set(w.senseId, m);
 
-const [outDir, mode = 'risk', arg = ''] = process.argv.slice(2);
+const argv = process.argv.slice(2).filter((a) => a !== '--match');
+const match = process.argv.includes('--match');
+const [outDir, mode = 'risk', arg = ''] = argv;
 if (!outDir) throw new Error('usage: art:blind <outDir> risk|modules A-B|senses ids|pending');
 let pick: Img[];
 if (mode === 'modules') { const [a, b] = arg.split('-').map(Number); pick = reg.filter((i) => { const m = moduleOf.get(i.senseId); return m && m.recommendedOrder >= a! && m.recommendedOrder <= (b ?? a)!; }); }
@@ -47,6 +55,7 @@ else if (mode === 'pending') {
 }
 else pick = reg.filter((i) => i.symbol || senses.get(i.senseId)?.pos === 'adjective');
 pick = pick.filter((i) => i.kind !== 'photo' && moduleOf.has(i.senseId));
+if (match) pick = pick.filter((i) => !(i as { quiz?: boolean }).quiz);
 
 const require = createRequire(import.meta.url);
 let pw: { chromium: { launch: () => Promise<any> } };
@@ -66,20 +75,27 @@ let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 214748364
 const byModule = new Map<number, Img[]>();
 for (const i of pick) { const o = moduleOf.get(i.senseId)!.recommendedOrder; byModule.set(o, [...(byModule.get(o) ?? []), i]); }
 fs.mkdirSync(outDir, { recursive: true });
-const key: Record<string, Record<number, string>> = {};
+const key: Record<string, unknown> = {};
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1000, height: 800 } });
-for (const [order, imgs] of [...byModule].sort((a, b) => a[0] - b[0])) {
+for (const [order, tested] of [...byModule].sort((a, b) => a[0] - b[0])) {
+  const mod = modules.find((x) => x.recommendedOrder === order)!;
+  // matching test: every picture of the module is a candidate; only the tested words are listed
+  const imgs = match ? reg.filter((i) => i.kind !== 'photo' && mod.words.some((w) => w.senseId === i.senseId)) : tested;
   const shuffled = [...imgs].sort(() => rnd() - 0.5);
-  key[`m${order}`] = Object.fromEntries(shuffled.map((i, n) => [n + 1, i.senseId]));
+  const pictures = Object.fromEntries(shuffled.map((i, n) => [n + 1, i.senseId]));
+  key[`m${order}`] = match
+    ? { method: 'match', pictures, words: Object.fromEntries(tested.map((i) => [i.senseId, shuffled.findIndex((x) => x.senseId === i.senseId) + 1])) }
+    : pictures;
   const cells = shuffled.map((i, n) => `<figure class="${i.kind === 'illustration' ? '' : 'wide'}"><b>${n + 1}</b><div>${cellSvg(i)}</div></figure>`).join('');
   fs.writeFileSync(path.join(outDir, `m${order}.html`), `<!doctype html><meta charset="utf-8"><style>body{margin:0;padding:10px;background:#fff;width:980px;font:700 18px system-ui}.g{display:flex;flex-wrap:wrap;gap:10px}figure{margin:0;width:230px;text-align:center}figure.wide{width:470px}figure div{display:flex;gap:4px}svg{width:220px;height:220px}figure.wide svg{width:150px;height:150px}</style><div class="g">${cells}</div>`);
   await page.goto('file://' + path.resolve(outDir, `m${order}.html`));
   await page.screenshot({ path: path.join(outDir, `m${order}.png`), fullPage: true });
-  const m = modules.find((x) => x.recommendedOrder === order)!;
-  const words = m.words.map((w) => senses.get(w.senseId)).filter(Boolean).map((s) => `${s!.lemma} — ${s!.ja}`).sort((a, b) => a.localeCompare(b, 'sv'));
+  const listed = match ? tested.map((i) => i.senseId) : mod.words.map((w) => w.senseId);
+  const words = listed.map((id) => senses.get(id)).filter(Boolean).map((s) => `${s!.lemma} — ${s!.ja}`).sort((a, b) => a.localeCompare(b, 'sv'));
   fs.writeFileSync(path.join(outDir, `m${order}.txt`), words.join('\n') + '\n');
 }
 await browser.close();
 fs.writeFileSync(path.join(outDir, 'key.json'), JSON.stringify(key, null, 1));
-console.log(`Skrev ${byModule.size} blindark (${pick.length} bilder) till ${outDir}`);
+console.log(`Skrev ${byModule.size} ${match ? 'matchningsark' : 'blindark'} (${pick.length} bilder) till ${outDir}`);
+if (match) console.log('Granskaren svarar i answers_<namn>.json: { "m<order>": { "<ord>": { "pick": <bildnummer>, "conf": "high|medium|low", "problem": "…" } } }');

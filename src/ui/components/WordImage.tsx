@@ -12,13 +12,13 @@ import { loadRenderer, loadedRenderer } from './preloadVisual';
 const AnimatedWordVisual = lazy(() => import('./AnimatedWordVisual'));
 const AnimatedFace = lazy(() => import('./AnimatedFace'));
 
-function Illustration({ motif, size, aria }: { motif: string; size: number; aria: string }) {
+function Illustration({ motif, size, aria, play = false }: { motif: string; size: number; aria: string; play?: boolean }) {
   const [, force] = useState(0);
   const svg = loadedRenderer()?.renderWordArt(motif) ?? null;
   useEffect(() => { if (!svg) loadRenderer(motif).then(() => force((n) => n + 1)).catch(() => undefined); }, [motif, svg]);
   const style = { width: size, height: size };
   return svg
-    ? <span className="word-image" role="img" aria-label={aria} style={style} dangerouslySetInnerHTML={{ __html: svg }} />
+    ? <span className={play ? 'word-image play' : 'word-image'} role="img" aria-label={aria} style={style} dangerouslySetInnerHTML={{ __html: svg }} />
     : <span className="word-image loading" role="img" aria-label={aria} style={style} />;
 }
 
@@ -45,7 +45,9 @@ export function WordImage({ senseId, size = 160, label, mode = 'still' }: { sens
       </Suspense>
     );
   }
-  return <Illustration motif={img.motif} size={size} aria={aria} />;
+  // Kvalitetsplanen A5: an animated illustration moves only in the word introduction; elsewhere (and with
+  // "reduce motion") it shows its base state, the poster frame.
+  return <Illustration motif={img.motif} size={size} aria={aria} play={mode === 'intro' && img.animated === true} />;
 }
 
 /** Short attribution line for photos (required by CC BY). */

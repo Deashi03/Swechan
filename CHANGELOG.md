@@ -1,5 +1,13 @@
 # Changelog
 
+## Osläppt – 2026-11-19: etapp A5, bildsystemet
+
+- **Matchningstest** för symbolbilder (produktägarens beslut): `npm run art:blind -- <dir> pending --match` visar modulens alla bilder numrerade och listar orden som testas med glosa; granskaren väljer bild. `art:blind:record` registrerar `blindTest.method: "match"`. Bilder i bildövningar kräver fortfarande det öppna testet (testas).
+- **Manuellt spår i stället för `none`:** de 592 bildlösa modulorden har nu en riktig bildsort och `status: "manual"` i planen. Validatorn kräver bild eller manuellt spår och förbjuder `none` för modulord. De hårdkodade listorna `VISUAL_EXCEPTIONS_BEFORE_0_29` och `VISUAL_MISSING_AFTER_BLIND_TEST` är borttagna; avsnittet *Saknade bilder* i statusfilen är ersatt av kön och `quality/visual-manual-notes.md`.
+- **Animationer tillbaka i planen:** `visuals-plan.mjs` planerar animation också för processord ("När …") och ord vars definition beskriver rörelse eller förändring. `tools/production/vis.py` skriver inte längre över planen; en stillbild där planen säger animation kräver `waiver` med skäl (annars varning, och spärren stoppar nya moduler).
+- **Rörelse för saker:** `moving()` i `src/ui/wordArt/kit.ts` lägger CSS-rörelse i ett motiv. Grundläget är affischbilden, rörelsen spelas bara i ordintroduktionen och aldrig med "minska rörelse". Blindtestets fingeravtryck räknas på affischbilden, så godkända bilder behöver inte testas om.
+- **Provmodul *Arbete och energi*:** *rörelseenergi* (kulan rullar nerför backen), *lägesenergi* (kulan lyfts upp), *omvandla* (energin flödar sol → panel → lampa) och *dynamo* (hjulet snurrar) rör sig.
+
 ## Osläppt – 2026-11-19: etapp A4, laddtid del 2 (delvis)
 
 - **Innehållet delas upp:** ordboken låg i en enda fil på 25 MB (6 MB komprimerad) som laddades om vid varje release. Nu blir det en fil per ämnesgrupp (`dict-R01-A01` …, 0,3–0,9 MB vardera) plus `visuals` och `module-index`. En release ändrar bara de filer vars innehåll ändrats; resten ligger kvar i cachen (A3).

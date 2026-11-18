@@ -7,7 +7,7 @@
  * Abstract words are small symbolic scenes: the coloured idea dominates and a grey copy stands beside it as contrast
  * where that helps. Digits only; no words, no letters, no brands and no pointing fingers.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, sparkle, type Svg } from './kit';
 import { type Build } from './figures';
 import { T, arm } from './people';
 import { P as F, type Mood, greyed } from './blindFix';
@@ -167,6 +167,9 @@ const sunI = (x: number, y: number, r = 5) => all(...Array.from({ length: 8 }, (
 const moonI = (x: number, y: number, r = 6) => path(`M${x + 2} ${y - r} A${r} ${r} 0 1 0 ${x + 2} ${y + r} A${f1(r * 0.75)} ${f1(r * 0.75)} 0 1 1 ${x + 2} ${y - r} Z`, '#f3e7a8', C.ink, 1.1);
 const ammonite = (x: number, y: number, s = 1, col = '#b89a6a') => at(x, y, s, circle(0, 0, 9, col, C.ink, 1.2), path('M0 0 C2 -2 4 0 3 3 C1 6 -4 5 -5 1 C-6 -4 -1 -8 4 -7', 'none', C.ink, 1), line('M0 -9 L0 -6 M6.4 -6.4 L4.4 -4.4 M9 0 L6 0 M6.4 6.4 L4.4 4.4 M0 9 L0 6 M-6.4 6.4 L-4.4 4.4 M-9 0 L-6 0', 'rgba(43,42,51,0.5)', 0.8));
 
+/** Fade-in in turn (kvalitetsplanen A5): the base state (fully visible) is the poster frame. */
+const FLOW = '0%{opacity:.12}25%,100%{opacity:1}';
+
 export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
   // ── 2511 Magmatiska bergarter ──
   /** bergart: three cut rock samples side by side, each clearly a different kind – speckled granite, layered sandstone, banded gneiss – grouped by a bracket above. */
@@ -256,8 +259,9 @@ export const ROCKS_MINERALS_MOTIFS: Record<string, Svg> = {
   // ── 2513 Metamorfa bergarter ──
   /** omvandla: sunlight → arrow → a solar panel → arrow → a glowing light bulb: one thing turned into something completely different. */
   'berg.omvandla': all(bg(), ground, circle(18, 30, 9, C.yellow, C.ink, 1.4), ...Array.from({ length: 8 }, (_, i) => { const a = (i / 8) * Math.PI * 2; return line(`M${f1(18 + Math.cos(a) * 12)} ${f1(30 + Math.sin(a) * 12)} L${f1(18 + Math.cos(a) * 16)} ${f1(30 + Math.sin(a) * 16)}`, GOLD, 2); }),
-    arrow(30, 44, 42, 58, C.accent, 2.6), path('M40 92 L56 64 L84 64 L68 92 Z', '#2f4a7a', C.ink, 1.4), line('M48 78 L76 78 M60 64 L52 92 M72 64 L64 92', '#8cb4e0', 1), line('M62 92 L62 106 M54 106 L70 106', C.ink, 2),
-    arrow(80, 82, 90, 74, C.accent, 2.6), circle(102, 56, 10, C.yellow, C.ink, 1.4), rect(98, 66, 8, 7, C.grey, 1, C.ink, 1.1), ...[-1, 0, 1].map((i) => line(`M${102 + i * 13} ${40 - (i === 0 ? 2 : 0)} l${i * 3} -5`, GOLD, 2))),
+    // Kvalitetsplanen A5: the energy flows – sunlight → panel → lamp lights up, in turn.
+    moving('berg-flow1', FLOW, { dur: 3 }, arrow(30, 44, 42, 58, C.accent, 2.6)), path('M40 92 L56 64 L84 64 L68 92 Z', '#2f4a7a', C.ink, 1.4), line('M48 78 L76 78 M60 64 L52 92 M72 64 L64 92', '#8cb4e0', 1), line('M62 92 L62 106 M54 106 L70 106', C.ink, 2),
+    moving('berg-flow2', FLOW, { dur: 3, delay: 0.6 }, arrow(80, 82, 90, 74, C.accent, 2.6)), circle(102, 56, 10, C.yellow, C.ink, 1.4), rect(98, 66, 8, 7, C.grey, 1, C.ink, 1.1), moving('berg-glow', FLOW, { dur: 3, delay: 1.2 }, ...[-1, 0, 1].map((i) => line(`M${102 + i * 13} ${40 - (i === 0 ? 2 : 0)} l${i * 3} -5`, GOLD, 2)))),
   /** metamorf: the changed rock – a big block whose minerals lie in light and dark bands that are bent and squeezed into waves, with pink grains in the light bands; a small grey block of ordinary speckled granite stands beside it as contrast. */
   'berg.metamorf': all(bg(), ground, block(8, 40, 64, 68, GN1, all(foldTex(8, 34, 64, 80, GN1, GN2, 9, 6, 1.2), grains(8, 40, 64, 68, 18, 1.8, [PINK, '#f0ece6'], 251, 0.3)), 8, 'bMt'),
     greyed(block(86, 82, 24, 26, GRAN, granTex(86, 82, 24, 26, 253, 3.2), 6, 'bMt2'))),

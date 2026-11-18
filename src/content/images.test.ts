@@ -62,6 +62,9 @@ describe('word images – data', () => {
       if (!needsBlindTest(img, repo.getSense(img.senseId)?.entry.pos, repo.modulesForSense(img.senseId).length > 0)) continue;
       if (!img.blindTest) { problems.push(`${img.senseId}: inget blindtest`); continue; }
       if (img.blindTest.hash !== visualHash(visualFingerprintSource(img, io) ?? '')) problems.push(`${img.senseId}: ändrad efter blindtestet`);
+      // Kvalitetsplanen A5: the matching test (word + gloss → picture) is enough only for pictures that are
+      // always shown with their gloss; a picture used in picture exercises needs the open test.
+      if (img.quiz && img.blindTest.method === 'match') problems.push(`${img.senseId}: bildövningsbild godkänd bara med matchningstest`);
     }
     expect(problems).toEqual([]);
   });

@@ -9,7 +9,14 @@ import { allWordImages } from './images';
 
 export const VISUAL_KINDS = ['animation', 'scene', 'symbol', 'none'] as const;
 export type VisualKind = (typeof VISUAL_KINDS)[number];
-const PlanRow = z.object({ kind: z.enum(VISUAL_KINDS), by: z.enum(['heuristic', 'manual']) });
+const PlanRow = z.object({
+  kind: z.enum(VISUAL_KINDS),
+  by: z.enum(['heuristic', 'manual']),
+  /** Kvalitetsplanen A5: two test rounds failed – the picture is made by hand in the manual track. */
+  status: z.enum(['manual']).optional(),
+  /** Why the word gets a still picture although the plan says animation (required for a waiver). */
+  waiver: z.string().min(10).optional(),
+});
 const PlanFile = z.object({ _comment: z.string().optional(), plan: z.record(z.string().regex(/^s\./), PlanRow) });
 const parsed = PlanFile.parse(raw);
 
