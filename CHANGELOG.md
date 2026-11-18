@@ -1,5 +1,32 @@
 # Changelog
 
+## 0.53.0 – 2026-11-18
+
+42 nya moduler som gör överämnet *Astronomi & rymd* (R06-A06) komplett. Därmed är hela *Matematik & naturvetenskap* (R06) publicerad. Modulerna lär ut det svenska ordförrådet för astronomi och rymdfart med vardagliga exempel (stjärnhimlen, månen, årstider, nyheter om rymdfart, planetarium, GPS). Varje nytt modulord har en egen bild, utom de 8 ord som underkändes i två blindtestomgångar.
+
+### Moduler (42 nya, 699 målord)
+- **Solens system** (3611–3617): solen, Merkurius och Venus, jorden och månen, Mars, gasjättarna, dvärgplaneter samt asteroider och kometer.
+- **Himlens rörelser** (3621–3627): dygn och årstider, månens faser, sol- och månförmörkelse, stjärnbilder, planeternas banor, ekliptikan och tidmätning med himlakroppar.
+- **Stjärnor** (3631–3637): stjärnors födelse, kärnfusion i stjärnor, spektralklasser, röda jättar, supernovor, neutronstjärnor och svarta hål.
+- **Galaxer & universum** (3641–3647): Vintergatan, galaxers former, stjärnhopar och nebulosor, universums expansion, rödförskjutning, mörk materia och kosmisk bakgrundsstrålning.
+- **Rymdfart** (3651–3657): raketer och raketmotorer, omloppsbanor, satelliter, rymdstationer, rymdsonder, månlandningar och framtida rymdmissioner.
+- **Astronomins metoder** (3661–3667): teleskop, observatorier, spektroskopi, radioteleskop, mätning av avstånd, rymdteleskop samt observation och hypotesprövning.
+- Varje modul har 16–18 målord, lästext med fem frågor och konversationsunderlag. Det finns 194 nya ordposter, bland andra grundord som *stjärna*, *planet*, *måne* och *galax*.
+- 5 nya betydelser på befintliga poster: *krater* (på planet och måne), *ring* (runt en planet), *jordnära* (i rymden), *kärna* (i en stjärna) och *centrum* (mitten av något stort). Den gamla betydelsen har fått en etikett.
+- Parallella grupper ville skapa samma poster (*inre/yttre planet*, *omloppstid*, *morgon-/aftonstjärna*, *månsken*, *yttemperatur*, *tindra*, *ljusstark*, *ljusförorening*, *osynlig*). Posten finns bara i den grupp som kommer först i katalogen, och de andra refererar dess `senseId`.
+- Rymdfart blev klar före Galaxer & universum och kopplades tillfälligt efter Stjärnor; när Galaxer & universum var inlagd kördes Rymdfarts första modul om, så att förkunskapen är *Kosmisk bakgrundsstrålning*.
+- Nya namn i grundordförrådet: planeter och himlakroppar (Merkurius, Saturnus, Uranus, Neptunus, Pluto, Ceres, Eris, Kuiperbältet, Halley), stjärnor och nebulosor (Orion, Rigel, Betelgeuse, Vintergatan, Andromedagalaxen, Sjustjärnorna, Krabbnebulosan, Orionnebulosan), rymdfart (Esrange, Tanegashima, Voyager, Hayabusa, Ryugu, Apollo) och forskare och astronauter (Hubble, Zwicky, Rubin, Penzias, Wilson, Tycho Brahe, Jocelyn Bell, Fuglesang, Wandt, Armstrong).
+- `catalog.test.ts`, `Explore.test.tsx` och e2e-testet har sina planerade exempel i *Teknik & digital värld* (R07): Datorer & internet → Datorns delar → Processor och minne.
+
+### Bilder (196 nya ordbilder)
+- Nya bildfiler i `src/ui/wordArt/`: `solarSystem.ts`, `skyMotion.ts`, `stars.ts`, `galaxies.ts`, `spaceflight.ts` och `astroMethods.ts`. Bilderna visar siffror men inga ord, flaggor eller logotyper.
+- 76 symbol- och adjektivbilder blindtestades. 68 klarade testet efter högst två omgångar.
+- **8 ord saknar bild** efter två underkända omgångar. De har planstatus `none` och står i `VISUAL_MISSING_AFTER_BLIND_TEST`, se `PROJECT_STATUS.md` → *Saknade bilder*.
+- Äkta synonymer är markerade som förväxlingsbara: *meteor/stjärnfall*.
+
+Service workern är `swechan-v57`.
+
+
 ## 0.52.0 – 2026-11-18
 
 42 nya moduler som gör överämnet *Biologi* (R06-A05) komplett. Modulerna lär ut det svenska ordförrådet för skolbiologi med vardagliga exempel (mat, sjukdom, träning, skog och sjö, trädgård). Varje nytt modulord har en egen bild, utom de 11 ord som underkändes i två blindtestomgångar.
