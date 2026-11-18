@@ -299,6 +299,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.tertiärkonsument.1', 's.massförökning.1',
   // 0.53 Solens system: förväxlas med den röda planeten respektive kollision/jordnära efter två blindomgångar
   's.livlös.1', 's.kollisionskurs.1',
+  // 0.53 Himlens rörelser: förväxlas med kärnskugga, vårdagjämning respektive solur efter två blindomgångar
+  's.månförmörkelse.1', 's.vårpunkt.1', 's.soltid.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
