@@ -283,6 +283,8 @@ export const VISUAL_MISSING_AFTER_BLIND_TEST: ReadonlySet<string> = new Set([
   's.halogen.1',
   // 0.51 Syror, baser & lösningar: förväxlas med närliggande ord eller samma ordfamilj
   's.pH-värde.1', 's.försurning.1', 's.ta-ut-varandra.2', 's.lösning.3', 's.koncentration.2',
+  // 0.51 Organisk kemi: förväxlas med tvål
+  's.förtvålning.1',
 ]);
 
 export function validateContent(repo: ContentRepository): ContentIssue[] {
