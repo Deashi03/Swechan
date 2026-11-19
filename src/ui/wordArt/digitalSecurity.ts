@@ -8,8 +8,12 @@
  * marked) and the four kinds of malware (one laptop; the marked part shows what the program does: spreads,
  * hides in a gift, watches, locks the files).
  * Digits, signs (! # % & @ * ?) and single letters (a b c / A B C on keys) only; no words, no brands, no logos.
+ * Standard 2 (0.55): verbs and process words move (b4-digsak-* classes; base state = the poster frame, transform and
+ * opacity only). byta-lösenord and säkerhetsrisk failed two blind-test rounds in 0.54 and are drawn by hand (manual
+ * track): byta lösenord = the old code is thrown in a bin while the new one is typed in; säkerhetsrisk = a password
+ * note stuck on a laptop under a big warning sign, next to a grey safe laptop.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, star, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, star, waBob, waIn, waPulse, waSway, type Svg } from './kit';
 import { HL, T } from './people';
 import { figure } from './figures';
 import { greyed } from './blindFix';
@@ -83,7 +87,7 @@ const message = (enc: boolean) => {
   const right = phone(102, 86, 1.25, msg(-5, line('M-4 -6 L4 -6 M-4 -3 L2 -3', C.navy, 1.2)));
   const spy = hood(60, 0.62);
   return all(ground(), left, right, arrow(30, 56, 90, 56, C.grey, 2.2), spy,
-    enc ? all(scr, frame(32, 10, 60, 42), at(74, 66, 1, circle(0, 0, 6, C.white, C.ink, 1), T(0, 4, '?', 10, C.red)))
+    enc ? all(waIn('b4-digsak-kryptering-1', -22, 26, scr), frame(32, 10, 60, 42), waPulse('b4-digsak-kryptering-2', at(74, 66, 1, circle(0, 0, 6, C.white, C.ink, 1), T(0, 4, '?', 10, C.red))))
       : all(plain, frame(32, 14, 56, 38), line('M57 69 L50 50 M63 69 L70 50', '#f2c14e', 1.4, '2 2')));
 };
 /** The four malware words share one laptop on a desk. */
@@ -101,10 +105,15 @@ export const DIGSEC_MOTIFS: Record<string, Svg> = {
     ...range(4).map((i) => all(rect(-7.5, -5 + i * 4.4, 15, 3.6, C.white, 0.6, null), circle(-5.5, -3.2 + i * 4.4, 1.2, [C.denim, C.red, C.green, C.purple][i]!, null),
       ...range(4).map((j) => circle(-1.5 + j * 2.4, -3.2 + i * 4.4, 0.55, C.ink, null)))))),
   keyIcon(98, 30, 1.2, -30), keyIcon(22, 30, 1, 210), keyIcon(100, 86, 1, 20), ring(60, 62, 52)),
-  'digsak.byta-lösenord': all(at(60, 30, 1, rect(-18, -18, 36, 34, C.white, 3, C.ink, 1.6), rect(-18, -18, 36, 9, C.red, 3, C.ink, 1.6), line('M-10 -22 L-10 -14 M10 -22 L10 -14', C.ink, 2.4),
-    ...range(9).map((i) => circle(-11 + (i % 3) * 11, -2 + Math.floor(i / 3) * 7, 1.8, C.grey, null)), ring(11, 12, 5.5)),
-    rect(4, 70, 44, 22, C.white, 3, C.ink, 1.6), greyed(dots(8, 76, 36, 5)), line('M8 72 L44 90 M44 72 L8 90', C.red, 2.4),
-    arrow(50, 81, 66, 81, HL, 3), rect(68, 70, 48, 22, C.white, 3, C.ink, 1.6), T(86, 85, '#7%k!', 10, C.purple), check(108, 70, 0.7), frame(64, 64, 54, 32)),
+  'digsak.byta-lösenord': all(ground(),
+    laptop(66, 72, 1.6, all(userIcon(0, -30, 0.8), rect(-20, -24, 40, 11, C.white, 2, C.ink, 1),
+      waIn('b4-digsak-byta-losenord-1', -10, 0, T(-2, -15.5, '#7%k!', 7.5, C.purple)), waPulse('b4-digsak-byta-losenord-2', line('M14 -22 L14 -15', C.ink, 1)))),
+    frame(32, 18, 68, 26), check(100, 18, 0.7),
+    line('M34 46 C24 50 18 56 16 62', C.grey, 2, '3 3'), path('M12 58 L15 66 L21 60', 'none', C.grey, 2),
+    moving('b4-digsak-byta-losenord-3', '0%,15%{transform:translate(38px,-42px)}65%,100%{transform:translate(0,0)}', { dur: 3.2 },
+      g('translate(26 78) rotate(-16)', rect(-17, -8, 34, 16, C.white, 2, C.ink, 1.4), T(0, 4, '1234', 10, C.ink), line('M-15 6 L15 -6', C.red, 2.4))),
+    cross(44, 72, 0.6),
+    path('M6 90 L46 90 L42 112 L10 112 Z', '#8d939c', C.ink, 1.6), rect(4, 86, 44, 5, '#a7adb5', 2, C.ink, 1.4), line('M17 95 L18 108 M26 95 L26 108 M35 95 L34 108', C.ink, 1)),
 
   // ── 3752 Tvåfaktorsautentisering ───────────────────────────────────
   'digsak.tvåfaktorsautentisering': all(ground(), laptop(38, 100, 1.3, all(dots(-18, -28, 36, 6), circle(-18, -32, 6, C.navy, C.ink, 1), T(-18, -28, '1', 8, C.white))),
@@ -119,15 +128,17 @@ export const DIGSEC_MOTIFS: Record<string, Svg> = {
   'digsak.säkerhetsnyckel': all(laptop(40, 92, 1.2, check(0, -23, 1.1)), at(84, 70, 1, rect(-10, -8, 14, 16, C.silver, 1, C.ink, 1.2), rect(4, -12, 22, 24, C.dark, 5, C.ink, 1.6), circle(15, 0, 6, C.gold, C.ink, 1.2),
     circle(15, 0, 3.5, 'none', '#a8801f', 0.8), circle(29, 0, 4, 'none', C.grey, 2)), ring(98, 70, 18), keyIcon(100, 102, 0.8, 30)),
   'digsak.inloggningsförsök': all(laptop(60, 104, 1.5, all(dots(-18, -33, 36, 6), userIcon(-15, -21, 0.6), line('M-9 -21 L10 -21', C.navy, 1.4))),
-    cross(18, 26, 0.9), cross(40, 18, 0.9), cross(62, 26, 0.9), T(90, 30, '3×', 16, C.red), frame(6, 8, 108, 30)),
+    moving('b4-digsak-inloggningsforsok-1', '0%,8%{opacity:0}20%,100%{opacity:1}', { dur: 3.6 }, cross(18, 26, 0.9)),
+    moving('b4-digsak-inloggningsforsok-2', '0%,33%{opacity:0}45%,100%{opacity:1}', { dur: 3.6 }, cross(40, 18, 0.9)),
+    moving('b4-digsak-inloggningsforsok-3', '0%,58%{opacity:0}70%,100%{opacity:1}', { dur: 3.6 }, cross(62, 26, 0.9)), T(90, 30, '3×', 16, C.red), frame(6, 8, 108, 30)),
 
   // ── 3753 Nätfiske ──────────────────────────────────────────────────
   'digsak.bluff-sms': all(phone(46, 62, 2.7, all(msg(-6, all(rect(-5, -9.5, 5, 4, C.tan, 0.4, C.ink, 0.3), line('M-5 -8 L0 -8', C.brown, 0.4), T(4, -6, '19', 3.6, C.red))),
     rect(-6, 3, 12, 2.4, C.denim, 0.6, null), line('M-5 4.2 L5 4.2', C.white, 0.5))), frame(22, 22, 48, 30), warn(98, 30, 1.6), at(100, 80, 1, circle(0, 0, 14, '#fde3cf', C.ink, 1.6), T(0, 5, '?', 16, C.red)),
     line('M70 38 L86 32', C.red, 1.6, '3 2')),
-  'digsak.utge-sig-för': all(ground(), hood(46, 1.15), line('M60 66 L72 44', C.brown, 3),
+  'digsak.utge-sig-för': all(ground(), hood(46, 1.15), waIn('b4-digsak-utge-sig-for-1', 12, 30, line('M60 66 L72 44', C.brown, 3),
     at(78, 34, 1, circle(0, 0, 15, C.skin, C.ink, 1.8), path('M-15 -2 C-15 -18 15 -18 15 -2 C9 -10 -9 -10 -15 -2 Z', C.hair, C.ink, 1.4), circle(-5, 0, 1.6, C.ink, null), circle(5, 0, 1.6, C.ink, null),
-      path('M-6 6 Q0 11 6 6', 'none', C.ink, 1.6), path('M-6 18 L6 18 L0 26 Z', C.navy, C.ink, 1)),
+      path('M-6 6 Q0 11 6 6', 'none', C.ink, 1.6), path('M-6 18 L6 18 L0 26 Z', C.navy, C.ink, 1))),
     at(96, 82, 1, rect(-14, -10, 28, 20, C.white, 2, C.ink, 1.4), path('M-10 -4 L0 -8 L10 -4 Z', C.grey, C.ink, 0.8), line('M-8 -3 L-8 5 M-3 -3 L-3 5 M3 -3 L3 5 M8 -3 L8 5 M-10 6 L10 6', C.ink, 1.2)),
     ring(78, 38, 22)),
 
@@ -150,7 +161,8 @@ export const DIGSEC_MOTIFS: Record<string, Svg> = {
   'digsak.klartext': message(false),
   'digsak.dataläcka': all(at(36, 40, 1, ...[16, 0, -16].map((dy) => all(ellipse(0, dy + 8, 24, 6.5, '#7fa6d6', C.ink, 1.6), rect(-24, dy - 8, 48, 16, '#7fa6d6', 0, null), line(`M-24 ${dy - 8} L-24 ${dy + 8} M24 ${dy - 8} L24 ${dy + 8}`, C.ink, 1.6))), ellipse(0, -24, 24, 6.5, '#a8c4e6', C.ink, 1.6),
     path('M24 -6 L18 0 L24 4 L19 10 L24 16', 'none', C.ink, 2.2)),
-    doc(70, 46, 0.7), at(78, 64, 0.8, rect(-9, -6, 18, 12, C.white, 2, C.ink, 1.2), userIcon(-4, 0, 0.6), line('M1 -2 L6 -2 M1 2 L5 2', C.grey, 1)), at(66, 80, 0.8, rect(-12, -5, 24, 10, C.white, 2, C.ink, 1.2), ...range(4).map((i) => circle(-7 + i * 4.6, 0, 1.4, C.ink, null))),
+    waIn('b4-digsak-datalacka-1', -10, -6, doc(70, 46, 0.7)), waIn('b4-digsak-datalacka-2', -18, -24, at(78, 64, 0.8, rect(-9, -6, 18, 12, C.white, 2, C.ink, 1.2), userIcon(-4, 0, 0.6), line('M1 -2 L6 -2 M1 2 L5 2', C.grey, 1))),
+    waIn('b4-digsak-datalacka-3', -6, -40, at(66, 80, 0.8, rect(-12, -5, 24, 10, C.white, 2, C.ink, 1.2), ...range(4).map((i) => circle(-7 + i * 4.6, 0, 1.4, C.ink, null)))),
     path('M60 44 C64 40 66 40 68 42', 'none', '#7fa6d6', 1.6), line('M62 50 L66 92', '#7fa6d6', 2, '2 4'),
     circle(84, 100, 14, '#bfe3f5', C.ink, 1.6), path('M76 94 C80 90 84 96 80 100 C76 104 74 98 76 94 Z M88 98 C92 94 96 100 92 106 C88 108 86 102 88 98 Z', C.green, C.ink, 0.8),
     ...[[104, 80], [108, 96], [100, 108], [62, 106]].map(([x, y]) => at(x!, y!, 0.8, circle(0, 0, 6, C.white, C.ink, 1), circle(0, 0, 2.6, C.grey, null))), ring(60, 46, 14, HL)),
@@ -159,23 +171,27 @@ export const DIGSEC_MOTIFS: Record<string, Svg> = {
   'digsak.digitalt-fotavtryck': all(phone(18, 92, 1.1), foot(36, 82, 60, '#f6c9a8', circle(0, 0, 3, C.denim, null)), foot(50, 68, 40, '#f6c9a8', rect(-3, -3, 6, 5, C.green, 1, null)),
     foot(64, 58, 60, '#f6c9a8', path('M-3 -3 L3 -3 L3 2 L-1 2 L-3 4 Z', C.white, C.ink, 0.6)), foot(78, 44, 40, '#f6c9a8', circle(0, 0, 2.6, 'none', C.ink, 1.2)), foot(92, 34, 60, '#f6c9a8', star(0, 0, 3, C.yellow)),
     path('M96 14 C104 6 116 12 112 20 C118 22 116 30 108 30 L94 30 C86 30 86 20 94 20 C92 16 94 14 96 14 Z', C.white, C.ink, 1.4), line('M22 98 C50 80 80 50 104 24', HL, 2, '2 4')),
-  'digsak.dela-sin-position': all(phone(60, 70, 2.4, all(rect(-8.5, -15, 17, 28, '#dfeedd', 1, null), line('M-8 -6 L8 4 M-3 -15 L1 13', C.white, 2), pin(0, -3, 0.45))),
-    path('M84 40 A10 10 0 0 1 84 56 M90 34 A18 18 0 0 1 90 62', 'none', HL, 2), path('M36 40 A10 10 0 0 0 36 56 M30 34 A18 18 0 0 0 30 62', 'none', HL, 2),
-    phone(106, 92, 0.8, pin(0, -2, 0.6)), phone(14, 92, 0.8, pin(0, -2, 0.6)), ring(60, 64, 32)),
+  'digsak.dela-sin-position': all(phone(60, 70, 2.4, all(rect(-8.5, -15, 17, 28, '#dfeedd', 1, null), line('M-8 -6 L8 4 M-3 -15 L1 13', C.white, 2), waBob('b4-digsak-dela-sin-position-1', 1.5, pin(0, -3, 0.45)))),
+    waPulse('b4-digsak-dela-sin-position-2', path('M84 40 A10 10 0 0 1 84 56 M90 34 A18 18 0 0 1 90 62', 'none', HL, 2), path('M36 40 A10 10 0 0 0 36 56 M30 34 A18 18 0 0 0 30 62', 'none', HL, 2)),
+    phone(106, 92, 0.8, moving('b4-digsak-dela-sin-position-3', '0%,30%{opacity:0}55%,100%{opacity:1}', { dur: 2.6 }, pin(0, -2, 0.6))), phone(14, 92, 0.8, moving('b4-digsak-dela-sin-position-4', '0%,30%{opacity:0}55%,100%{opacity:1}', { dur: 2.6 }, pin(0, -2, 0.6))), ring(60, 64, 32)),
   'digsak.röstassistent': all(ground(), figure({ x: 28, top: C.green, h: 0.95 }), at(56, 34, 1, path('M-14 -10 L14 -10 L14 8 L-2 8 L-8 14 L-7 8 L-14 8 Z', C.white, C.ink, 1.4), path('M-2 -6 L-2 3 M-2 -6 L5 -8 L5 1', 'none', C.navy, 1.6), circle(-4, 3, 2, C.navy, null), circle(3, 1, 2, C.navy, null)),
     at(92, 86, 1, rect(-14, -26, 28, 52, '#4a4d58', 12, C.ink, 1.8), ellipse(0, -24, 13, 4, C.sky, C.ink, 1), ...range(5).map((i) => line(`M-9 ${-12 + i * 7} L9 ${-12 + i * 7}`, '#6c707c', 1.6))),
     path('M76 52 A8 8 0 0 0 76 40 M70 56 A14 14 0 0 0 70 36', 'none', HL, 1.8), frame(74, 54, 36, 62)),
-  'digsak.id-kapning': all(ground(), hood(42, 1.2), at(70, 50, 1, rect(-18, -12, 36, 24, C.white, 3, C.ink, 1.6), circle(-9, -1, 6, C.skin, C.ink, 1), path('M-15 -2 C-15 -10 -3 -10 -3 -2 C-6 -5 -12 -5 -15 -2 Z', C.hair, null),
-    line('M2 -5 L13 -5 M2 0 L13 0 M2 5 L10 5', C.grey, 1.4)), line('M58 62 L62 58', C.ink, 1), ring(70, 50, 22),
-    coins(80, 106, 3), greyed(figure({ x: 104, h: 0.55, top: C.orange }))),
+  'digsak.id-kapning': all(ground(), hood(42, 1.2), waIn('b4-digsak-id-kapning-1', 30, 34, at(70, 50, 1, rect(-18, -12, 36, 24, C.white, 3, C.ink, 1.6), circle(-9, -1, 6, C.skin, C.ink, 1), path('M-15 -2 C-15 -10 -3 -10 -3 -2 C-6 -5 -12 -5 -15 -2 Z', C.hair, null),
+    line('M2 -5 L13 -5 M2 0 L13 0 M2 5 L10 5', C.grey, 1.4)), line('M58 62 L62 58', C.ink, 1)), ring(70, 50, 22),
+    moving('b4-digsak-id-kapning-2', '0%,40%{opacity:0;transform:translate(0,-10px)}70%,100%{opacity:1;transform:translate(0,0)}', { dur: 2.6 }, coins(80, 106, 3)), greyed(figure({ x: 104, h: 0.55, top: C.orange }))),
 
   // ── 3757 Säkerhetsuppdateringar ────────────────────────────────────
   'digsak.säkerhetsuppdatering': all(phone(60, 62, 2.7, all(shieldS(0, -3, 0.42, C.denim), line('M-2.4 -3 L-0.4 -1 L3 -5', C.white, 1.2), rect(-6, 8, 12, 2.4, C.white, 1, C.ink, 0.3), rect(-6, 8, 8, 2.4, C.green, 1, null))),
     path('M24 50 A38 38 0 0 1 88 26', 'none', C.green, 3), arrow(84, 22, 92, 30, C.green, 3), path('M96 76 A38 38 0 0 1 32 100', 'none', C.green, 3), arrow(36, 104, 28, 96, C.green, 3), ring(60, 62, 46)),
-  'digsak.täppa-till': all(brick(6, 14, 108, 98), ellipse(56, 62, 16, 13, C.black, C.ink, 1.4), rect(40, 50, 34, 26, C.tan, 2, C.ink, 1.8), circle(44, 54, 1.4, C.ink, null), circle(70, 54, 1.4, C.ink, null), circle(44, 72, 1.4, C.ink, null), circle(70, 72, 1.4, C.ink, null),
-    at(92, 70, 1, rect(-4, -2, 26, 8, C.skin, 3, C.ink, 1.4), rect(-12, -6, 12, 16, C.skin, 4, C.ink, 1.4)), arrow(100, 40, 80, 52, HL, 3), ring(57, 63, 26)),
-  'digsak.säkerhetsrisk': all(path('M14 70 A46 46 0 0 1 106 70 Z', C.white, C.ink, 1.8), path('M20 70 A40 40 0 0 1 32 41.7 L44 53.8 A23 23 0 0 0 37 70 Z', C.green, null),
-    path('M32 41.7 A40 40 0 0 1 88 41.7 L76 53.8 A23 23 0 0 0 44 53.8 Z', C.yellow, null), path('M88 41.7 A40 40 0 0 1 100 70 L83 70 A23 23 0 0 0 76 53.8 Z', C.red, null),
-    greyed(line('M60 70 L36 50', C.ink, 3)), line('M60 70 L92 52', C.ink, 3.4), circle(60, 70, 4, C.dark, C.ink, 1.2), warn(98, 34, 1.3), frame(80, 20, 36, 54),
-    phone(96, 96, 0.75, all(rect(-6, -10, 12, 12, C.grey, 2, null), T(0, 10, '1.0', 6, C.ink)), '#d7dbe0'), greyed(phone(24, 96, 0.75, all(shieldS(0, -4, 0.4), T(0, 10, '9.0', 6, C.ink)))), line('M96 80 L94 72', C.red, 1.4, '2 2')),
+  'digsak.täppa-till': all(brick(6, 14, 108, 98), ellipse(56, 62, 16, 13, C.black, C.ink, 1.4),
+    moving('b4-digsak-tappa-till-1', '0%,10%{transform:translate(34px,-14px)}60%,100%{transform:translate(0,0)}', { dur: 3 }, rect(40, 50, 34, 26, C.tan, 2, C.ink, 1.8),
+      at(92, 70, 1, rect(-4, -2, 26, 8, C.skin, 3, C.ink, 1.4), rect(-12, -6, 12, 16, C.skin, 4, C.ink, 1.4))),
+    moving('b4-digsak-tappa-till-2', '0%,60%{opacity:0}75%,100%{opacity:1}', { dur: 3 }, circle(44, 54, 1.4, C.ink, null), circle(70, 54, 1.4, C.ink, null), circle(44, 72, 1.4, C.ink, null), circle(70, 72, 1.4, C.ink, null)),
+    arrow(100, 40, 80, 52, HL, 3), ring(57, 63, 26)),
+  'digsak.säkerhetsrisk': all(ground(),
+    greyed(all(laptop(22, 108, 0.62, all(dots(-16, -27, 32, 5), lock(0, -14, 0.4))), check(22, 66, 0.6, C.grey))),
+    laptop(74, 108, 1.3, all(dots(-18, -30, 36, 6), lock(0, -16, 0.55, true, C.gold))),
+    waSway('b4-digsak-sakerhetsrisk-1', 6, g('translate(98 60) rotate(10)', rect(-11, -10, 22, 20, '#f7e27a', 1, C.ink, 1.2), T(0, 3, '1234', 7, C.ink))),
+    waPulse('b4-digsak-sakerhetsrisk-2', warn(74, 30, 2.1)), frame(40, 6, 76, 106)),
 };
