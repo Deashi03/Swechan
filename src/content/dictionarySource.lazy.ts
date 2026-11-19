@@ -8,13 +8,14 @@ import lexicon from 'virtual:swechan-lexicon';
 import { expandLexicon, type CompactLexicon } from './lexicon';
 import type { LexRow } from './repository';
 
-const files = import.meta.glob('./data/dictionary/*.json', { import: 'default' });
-
-export const dictionarySource: { dictionaries: unknown[]; lexicon?: LexRow[]; loadDictionary?: (file: string) => Promise<unknown> } = {
-  dictionaries: [],
-  lexicon: expandLexicon<LexRow>(lexicon as unknown as CompactLexicon),
-  loadDictionary: (file: string) => {
-    const load = files[`./data/dictionary/${file}`];
-    return load ? load() : Promise.reject(new Error(`Saknar ordboksfil ${file}`));
-  },
-};
+export function dictionarySource(): { dictionaries: unknown[]; lexicon?: LexRow[]; loadDictionary?: (file: string) => Promise<unknown> } {
+  const files = import.meta.glob('./data/dictionary/*.json', { import: 'default' });
+  return {
+    dictionaries: [],
+    lexicon: expandLexicon<LexRow>(lexicon as unknown as CompactLexicon),
+    loadDictionary: (file: string) => {
+      const load = files[`./data/dictionary/${file}`];
+      return load ? load() : Promise.reject(new Error(`Saknar ordboksfil ${file}`));
+    },
+  };
+}

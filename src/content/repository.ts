@@ -269,7 +269,7 @@ export function loadBundledContent(): RawContent {
   const bodies = import.meta.glob('./data/modules/*.json', { import: 'default' });
   const single = import.meta.glob(['./data/categories.json', './data/grammarNotes.json', './data/comparisons.json', './data/placement.json'], { eager: true, import: 'default' });
   return {
-    ...dictionarySource,
+    ...dictionarySource(),
     moduleIndex: index['./data/moduleIndex.json'],
     loadBody: (bodyFile: string) => {
       const loader = bodies[`./data/modules/${bodyFile}`];
