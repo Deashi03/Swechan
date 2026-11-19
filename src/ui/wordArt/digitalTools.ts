@@ -11,7 +11,7 @@
  * Digits, the signs @ # = + − ! ? % and ✓ ✗, and the sample glyphs Aa for fonts only; no words, no brands, no logos and
  * no pointing fingers.
  */
-import { C, all, circle, ellipse, g, line, path, rect, type Svg } from './kit';
+import { C, all, circle, ellipse, g, line, moving, path, rect, waBob, waGrow, waIn, waPulse, type Svg } from './kit';
 import { HL, arm } from './people';
 import { greyed } from './blindFix';
 import { figure, type Build } from './figures';
@@ -137,6 +137,10 @@ const house = (x: number, y: number, s = 1, col = '#e8d3b0', roof = '#c84a3a') =
 const tree = (x: number, y: number, s = 1) => at(x, y, s, rect(-1.5, 0, 3, 8, '#7a5030', 0.5, null), path('M0 -16 L8 2 L-8 2 Z', '#3f8a4f', C.ink, 1));
 const mini = (x: number, y: number, s = 1, top: string = C.orange, long = true) => g(`translate(${x} ${y}) scale(${s})`, all(rect(-6, -2, 12, 12, top, 3, C.ink, 1), circle(0, -7, 5, C.skin, C.ink, 1), long ? path('M-5 -8 C-5 -14 5 -14 5 -8 C3 -11 -3 -11 -5 -8 Z', C.hair, null) : path('M-5 -8 C-5 -13 5 -13 5 -8 Z', C.hair, null)));
 
+/** A striped beach parasol on a pole (manual drawing for frånvaromeddelande). */
+const parasol = (x: number, y: number, s = 1) => at(x, y, s, line('M0 -2 L0 24', '#7a5030', 2), path('M-16 0 C-14 -12 14 -12 16 0 Z', RED, C.ink, 1.2),
+  path('M-6 0 C-6 -8 -2 -10 0 -10 C2 -10 6 -8 6 0 Z', C.white, null), path('M-16 0 C-14 -12 14 -12 16 0 Z', 'none', C.ink, 1.2));
+
 export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
   // ── 3761 E-post och inkorg ───────────────────────────────────────────
   /** e-post: a laptop on the left and a phone on the right; a white envelope flies from the laptop to the phone along an orange arc, and a second envelope flies back below; the upper envelope is ringed. */
@@ -154,7 +158,7 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
     envelope(60, 64, 0.55), circle(102, 58, 7, RED, C.ink, 1.2), txt(102, 61.5, '3', 9, C.white, 900), frame(12, 46, 96, 58, 6)),
   /** mejla: a woman sits at a desk with a laptop; an envelope flies out of the laptop screen up to the right along a dashed orange arrow, with small motion lines; the flying envelope is ringed. */
   'digverk.mejla': all(bg(), ground, person(26, C.orange, { hairStyle: 'long', h: 0.78 }), reach(26, 0.78, 1, 48, 82), desk(86), laptop(62, 86, 0.6, bars(-20, -28, 40, 4, 5)),
-    carr(70, 58, 80, 34, 92, 30, HL, 2.2, '3 2'), envelope(98, 26, 0.8), line('M80 20 L86 20 M78 26 L84 26 M80 32 L85 32', C.grey, 1.4), ring(98, 26, 13)),
+    carr(70, 58, 80, 34, 92, 30, HL, 2.2, '3 2'), waIn('dv-mejla', -26, 28, envelope(98, 26, 0.8), line('M80 20 L86 20 M78 26 L84 26 M80 32 L85 32', C.grey, 1.4)), ring(98, 26, 13)),
   /** ämnesrad: a new-mail window with a blue top, a row with a small person icon, then a row with short thick dark bars, then many grey text bars and a send button; the second row (short and thick) is ringed. */
   'digverk.ämnesrad': all(bg(), mailWin(10, 12, 100, 96), line('M18 39 L58 39', C.ink, 3.6), greyed(bars(18, 52, 84, 7, 6)), rect(80, 96, 24, 8, BLUE, 3, null), path('M88 98 L98 100 L88 102 Z', C.white, null), oval(60, 39, 48, 9)),
   /** oläst (om mejl): a list of four mails; three rows are grey with open envelopes and thin bars; one row is pale blue with a blue dot, a closed envelope and thick dark bars, and it is ringed. */
@@ -162,7 +166,7 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
     greyed(mailRow(12, 30, 96), mailRow(12, 66, 96), mailRow(12, 84, 96)), mailRow(12, 48, 96, true), oval(60, 55, 54, 12)),
   /** svara alla: a woman in the middle answers a mail; from her, four envelopes fly at the same time to four people around her (two on each side) along orange arrows; all four arrows are coloured. */
   'digverk.svara-alla': all(bg(), ground, person(60, C.orange, { hairStyle: 'long', h: 0.62 }),
-    ...[[16, 30], [40, 14], [80, 14], [104, 30]].map(([x, y]) => all(avatar(x!, y!, 7), arr(60, 58, f1(x! + (60 - x!) * 0.3), f1(y! + 12), HL, 2), envelope(f1(x! + (60 - x!) * 0.55), f1(y! + (58 - y!) * 0.55 + 4), 0.38))),
+    ...[[16, 30], [40, 14], [80, 14], [104, 30]].map(([x, y], i) => all(avatar(x!, y!, 7), waIn(`dv-svaraalla${i}`, f1((60 - x!) * 0.45), f1((58 - y!) * 0.45), arr(60, 58, f1(x! + (60 - x!) * 0.3), f1(y! + 12), HL, 2), envelope(f1(x! + (60 - x!) * 0.55), f1(y! + (58 - y!) * 0.55 + 4), 0.38)))),
     carr(28, 70, 22, 90, 40, 96, C.grey, 1.6, '3 2'), envelope(22, 64, 0.5)),
   /** skräppost: at the top a white tray takes two normal envelopes with a green tick; below, envelopes with red ! and % signs are turned aside along an orange arrow into a grey folder with a red cross; the grey folder is ringed. */
   'digverk.skräppost': all(bg(), path('M10 30 L22 30 L26 38 L50 38 L54 30 L66 30 L66 50 L10 50 Z', '#cfe0f4', C.ink, 1.4), envelope(30, 24, 0.5), envelope(46, 20, 0.5), ok(60, 18, 6),
@@ -171,15 +175,17 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
   /** signatur (i ett mejl): an open mail with grey text bars; at the bottom, under a thin line, a block with a round profile picture, a dark name bar, a small phone and a row of digits; this block is framed. */
   'digverk.signatur': all(bg(), rect(10, 10, 100, 100, SCR, 3, C.ink, 1.6), rect(10, 10, 100, 9, BLUE, 3, null), greyed(bars(18, 28, 84, 7, 6)), line('M18 72 L60 72', C.grey, 1),
     avatar(28, 86, 8), line('M42 81 L80 81', C.ink, 3), rect(42, 88, 6, 10, C.dark, 1.5, null), txt(70, 96, '070 123', 8, '#5a636e', 700), frame(14, 74, 92, 30, 4)),
-  /** frånvaromeddelande: nobody is at the desk: an empty chair, a suitcase on the floor and a wall calendar with crossed-out days; a grey envelope comes in from the left along a straight grey arrow into the laptop; at once a big envelope with a grey cog wheel goes straight back to the left along a thick orange arrow; the returning envelope with the cog is ringed. */
-  'digverk.frånvaromeddelande': all(bg(), ground,
-    rect(80, 8, 32, 28, C.white, 2, C.ink, 1.4), rect(80, 8, 32, 7, '#d9534f', 2, null), ...range(6).map((i) => { const x = 83 + (i % 3) * 10, y = 18 + Math.floor(i / 3) * 9; return all(rect(x, y, 7, 6, '#eef1f4', 0.5, null), line(`M${x} ${y} L${x + 7} ${y + 6} M${x + 7} ${y} L${x} ${y + 6}`, RED, 1.3)); }),
-    rect(90, 58, 18, 28, '#7a8590', 3, C.ink, 1.4), desk(86), laptop(62, 86, 0.6, envelope(0, -20, 0.8)),
-    rect(22, 94, 20, 16, '#3a6ab0', 3, C.ink, 1.4), path('M28 94 L28 90 L36 90 L36 94', 'none', C.ink, 1.6), line('M27 98 L27 108 M37 98 L37 108', '#2a4a80', 1.2),
-    envelope(14, 72, 0.6, '#eef1f4'), arr(24, 72, 40, 72, C.grey, 2),
-    arr(62, 40, 44, 40, HL, 3.4), envelope(24, 42, 1.4),
-    at(38, 29, 1.4, circle(0, 0, 5, '#9aa3ad', C.ink, 1), ...range(8).map((i) => line(`M${f1(Math.cos((i * Math.PI) / 4) * 5)} ${f1(Math.sin((i * Math.PI) / 4) * 5)} L${f1(Math.cos((i * Math.PI) / 4) * 7.5)} ${f1(Math.sin((i * Math.PI) / 4) * 7.5)}`, '#9aa3ad', 2.6)), circle(0, 0, 2, C.white, C.ink, 0.8)),
-    ring(27, 39, 23)),
+  /** frånvaromeddelande (manuellt spår, egen ritning i två rutor): above, the owner of the mailbox lies in a deck chair under a striped parasol on a beach in the sun, far from work; below, an empty office desk with a laptop: a grey envelope comes in from the left and at once a reply envelope goes back out to the left along a thick orange arrow, and this reply carries a round badge with the same parasol; the reply is ringed. The parasol links the reply to the person who is away. */
+  'digverk.frånvaromeddelande': all(bg(),
+    rect(8, 8, 104, 44, '#cfe8f7', 4, C.ink, 1.4), rect(9, 32, 102, 8, '#5aa0d8', 0, null), path('M9 40 L111 40 L111 51 L9 51 Z', '#f2dfb0', null), rect(8, 8, 104, 44, 'none', 4, C.ink, 1.4),
+    circle(22, 19, 6, YEL, '#d9a520', 1), parasol(70, 22, 1),
+    path('M52 46 L64 38 L84 38', 'none', '#a0673d', 2.2), line('M56 44 L56 50 M80 38 L82 50', '#a0673d', 1.6),
+    circle(58, 37, 3.6, C.skin, C.ink, 1), path('M61 39 L80 36 L80 39 L62 42 Z', C.orange, C.ink, 1),
+    rect(8, 58, 104, 50, C.white, 4, C.ink, 1.4), rect(56, 99, 52, 4, '#c8a070', 1, C.ink, 1.2), line('M62 103 L62 107 M102 103 L102 107', '#a0673d', 2.4), laptop(84, 96, 0.55, parasol(0, -22, 0.7)),
+    waIn('dv-franvaro-in', -16, 0, envelope(22, 68, 0.6, '#eef1f4')), arr(32, 68, 64, 72, C.grey, 1.8),
+    moving('dv-franvaro-svar', '0%,40%{transform:translate(30px,0);opacity:0}75%,100%{transform:translate(0,0);opacity:1}', { dur: 3.4 },
+      arr(66, 84, 42, 84, HL, 3.4), envelope(26, 84, 1), circle(36, 92, 6.5, C.white, C.ink, 1), parasol(36, 92, 0.32)),
+    ring(29, 86, 15)),
 
   // ── 3762 Molnlagring ─────────────────────────────────────────────────
   /** moln (på internet): a big white cloud at the top holding a document, a photo and a music note; dashed lines go down from it to a laptop, a phone and a tablet; the cloud is framed. */
@@ -187,7 +193,7 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
     ...[[22, 78], [60, 82], [98, 78]].map(([x, y]) => line(`M60 52 L${x} ${y}`, BLUE, 1.4, '3 2')), laptop(22, 104, 0.4, pic(-16, -32, 32, 22)), phone(60, 96, 0.52, pic(-9, -14, 18, 14)), rect(84, 80, 28, 22, C.dark, 2, C.ink, 1.2), rect(86, 82, 24, 18, SCR, 1, null), pic(88, 84, 20, 14), frame(14, 8, 92, 50, 10)),
   /** komma åt: a woman on a train holds a phone that shows a document; a dashed line goes from a cloud above to the phone with a green tick; far away a grey home computer shows the same document; the phone is ringed. */
   'digverk.komma-åt': all(bg(), rect(4, 94, 112, 18, '#d8dde2', 0, null), line('M4 94 L116 94', C.grey, 1.4), rect(8, 14, 24, 20, '#bfe3f5', 3, C.ink, 1.2), rect(36, 14, 24, 20, '#bfe3f5', 3, C.ink, 1.2),
-    person(30, C.orange, { hairStyle: 'long', h: 0.8 }), reach(30, 0.8, 1, 52, 64), phone(58, 62, 0.62, all(docIcon(0, -2, 1.1))), cloud(96, 22, 1.1), line('M90 32 L64 50', BLUE, 1.6, '3 2'), ok(80, 44, 5),
+    person(30, C.orange, { hairStyle: 'long', h: 0.8 }), reach(30, 0.8, 1, 52, 64), phone(58, 62, 0.62, waGrow('dv-kommaat-dok', docIcon(0, -2, 1.1))), cloud(96, 22, 1.1), waPulse('dv-kommaat-linje', line('M90 32 L64 50', BLUE, 1.6, '3 2')), ok(80, 44, 5),
     greyed(monitor(84, 58, 28, 22, docIcon(98, 69, 0.7))), ring(58, 62, 18)),
   /** delad mapp: a big yellow folder in the middle with three small profile pictures on its front; lines go from it to three people around it; the folder is ringed. */
   'digverk.delad-mapp': all(bg(), ground, folder(60, 50, 2.2), avatar(46, 56, 5, '#e07a3a'), avatar(60, 56, 5, '#3a9a5a'), avatar(74, 56, 5, '#7ab0e8'),
@@ -217,7 +223,7 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
     rect(36, 56, 50, 30, '#f6f8fa', 3, C.ink, 1.2), line('M44 65 L68 65', C.dark, 2.2), ok(78, 65, 4), line('M44 77 L66 77', '#7a8590', 2), greyed(bars(18, 96, 84, 2, 6)), oval(54, 48, 19, 8)),
   /** infoga: a page with grey text bars above and below an empty dashed box; a picture from the right slides into the box along an orange arrow with a plus sign; the box is ringed. */
   'digverk.infoga': all(bg(), rect(8, 10, 70, 98, C.white, 3, C.ink, 1.6), bars(14, 20, 58, 3, 7), `<rect x="16" y="44" width="54" height="30" rx="2" fill="#f4f8fc" stroke="${HL}" stroke-width="1.6" stroke-dasharray="4 3"/>`, bars(14, 84, 58, 3, 7),
-    pic(86, 46, 26, 20), carr(96, 70, 92, 84, 66, 66, HL, 2.4), circle(104, 32, 7, GREEN, C.ink, 1.2), line('M100 32 L108 32 M104 28 L104 36', C.white, 2), ring(43, 59, 32)),
+    moving('dv-infoga', '0%,15%{transform:translate(0,0)}55%,80%{transform:translate(-56px,3px)}100%{transform:translate(0,0)}', { dur: 3.2 }, pic(86, 46, 26, 20)), carr(96, 70, 92, 84, 66, 66, HL, 2.4), circle(104, 32, 7, GREEN, C.ink, 1.2), line('M100 32 L108 32 M104 28 L104 36', C.white, 2), ring(43, 59, 32)),
   /** mall: on the left an empty page with only dashed boxes (a box for a heading, a box for a picture, dashed lines for text), ringed; orange arrows go to two smaller filled-in pages on the right with the same layout but real pictures and text. */
   'digverk.mall': all(bg(), sheet(8, 16, 50, 76, all(...[[14, 22, 38, 7], [14, 34, 20, 18]].map(([x, y, w, h]) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="1" fill="none" stroke="#7a8590" stroke-width="1.2" stroke-dasharray="3 2"/>`),
     ...range(4).map((i) => line(`M14 ${60 + i * 7} L52 ${60 + i * 7}`, '#9aa3ad', 1.2, '3 2')), line('M38 38 L52 38 M38 45 L50 45', '#9aa3ad', 1.2, '3 2'))),
@@ -242,7 +248,7 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
     block(0, 0, 2, '#7ab0e8'), block(1, 1, 1, '#7ac08a'), block(1, 3, 2, '#f0a060'), block(2, 0, 1, '#f0a060'), block(2, 2, 2, '#7ab0e8'), block(3, 1, 2, '#7ac08a'), block(4, 0, 1, '#7ab0e8'), block(4, 3, 2, '#f0a060'), block(0, 4, 2, '#7ac08a'),
     frame(6, 26, 108, 80, 5)),
   /** föreslå en ny tid: a week calendar; one grey block has a red cross; a curved orange arrow goes from it to a new orange block on another day, and a small speech bubble with a question mark is next to the new block; the new block is ringed. */
-  'digverk.föreslå-en-ny-tid': all(bg(), week(), block(1, 1, 2, '#c9ced4'), no(...blockC(1, 1, 2), 6), block(3, 3, 2, '#f7c79a', HL), carr(blockC(1, 1, 2)[0] + 8, blockC(1, 1, 2)[1] + 8, 60, 96, blockC(3, 3, 2)[0] - 10, blockC(3, 3, 2)[1] + 4, HL, 2.4),
+  'digverk.föreslå-en-ny-tid': all(bg(), week(), block(1, 1, 2, '#c9ced4'), no(...blockC(1, 1, 2), 6), waGrow('dv-nytid-block', block(3, 3, 2, '#f7c79a', HL)), waPulse('dv-nytid-pil', carr(blockC(1, 1, 2)[0] + 8, blockC(1, 1, 2)[1] + 8, 60, 96, blockC(3, 3, 2)[0] - 10, blockC(3, 3, 2)[1] + 4, HL, 2.4)),
     path('M92 6 L114 6 L114 22 L100 22 L95 27 L96 22 L92 22 Z', C.white, C.ink, 1.2), txt(103, 19, '?', 12, HL, 900), ring(...blockC(3, 3, 2), 16)),
   /** arrangör: a woman with a clipboard stands on the left; dashed orange arrows carry invitation cards from her to three small people on the right, and their answers come back as a tick, a tick and a cross; the woman is ringed. */
   'digverk.arrangör': all(bg(), ground, person(28, C.orange, { hairStyle: 'long', h: 0.86 }), reach(28, 0.86, 1, 44, 66), rect(42, 56, 14, 18, '#c8a070', 1, C.ink, 1.2), rect(44, 60, 10, 12, C.white, 0.5, null), bars(45, 63, 8, 3, 3, BAR, 1),
@@ -254,15 +260,15 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
   'digverk.möteslänk': all(bg(), rect(6, 14, 64, 88, C.white, 3, C.ink, 1.6), rect(6, 14, 64, 9, BLUE, 3, null), bars(12, 32, 50, 3, 7), chain(18, 62, 0.8), line('M26 62 L60 62', LINK, 2.4), line('M26 65.5 L60 65.5', LINK, 1), cursor(48, 62, 0.8),
     bars(12, 80, 50, 2, 7), oval(38, 63, 30, 9), carr(62, 52, 80, 34, 84, 46, HL, 2.4), meet(72, 50, 44, 40)),
   /** gå med (i ett möte): a dark video meeting with three faces and one empty dashed tile; a woman next to it moves into the empty tile along a green arrow; a green button with a camera is below; the empty tile is ringed. */
-  'digverk.gå-med': all(bg(), ground, meet(30, 12, 84, 66, 3), person(14, C.orange, { hairStyle: 'long', h: 0.56 }), carr(22, 64, 50, 104, 84, 62, GREEN, 3), rect(56, 88, 34, 14, GREEN, 7, C.ink, 1.2), camIcon(73, 95, 0.6), ring(93, 49, 18)),
+  'digverk.gå-med': all(bg(), ground, meet(30, 12, 84, 66, 3), moving('dv-gamed-person', '0%,100%{transform:translate(0,0)}50%{transform:translate(8px,-3px)}', { dur: 2.4 }, person(14, C.orange, { hairStyle: 'long', h: 0.56 })), waIn('dv-gamed-pil', -18, 10, carr(22, 64, 50, 104, 84, 62, GREEN, 3)), rect(56, 88, 34, 14, GREEN, 7, C.ink, 1.2), camIcon(73, 95, 0.6), ring(93, 49, 18)),
   /** lämna mötet: the same dark video meeting; one face leaves its tile along a red arrow out to the right side, and the red round hang-up button is big below; the button and the leaving face are ringed. */
-  'digverk.lämna-mötet': all(bg(), meet(6, 12, 84, 66, -1, 3), at(104, 50, 1, face(0, 0, 0.9, FACES[3]![0], FACES[3]![1], FACES[3]![2])), arr(70, 50, 92, 50, RED, 3), hangup(60, 96, 11), ring(60, 96, 16), ring(104, 52, 14)),
+  'digverk.lämna-mötet': all(bg(), meet(6, 12, 84, 66, -1, 3), waIn('dv-lamna-ansikte', -38, 0, at(104, 50, 1, face(0, 0, 0.9, FACES[3]![0], FACES[3]![1], FACES[3]![2]))), arr(70, 50, 92, 50, RED, 3), waPulse('dv-lamna-knapp', hangup(60, 96, 11)), ring(60, 96, 16), ring(104, 52, 14)),
   /** väntrum (i ett videomöte): on the left a screen with one person alone in a tile, a clock and three dots, ringed; on the right a second screen where the host sees a small card with that person and a green tick button. */
   'digverk.väntrum.2': all(bg(), monitor(6, 14, 58, 52, all(tile(12, 20, 46, 40, face(0, 0, 1, FACES[1]![0], FACES[1]![1], FACES[1]![2]), '#5a6070'), clockIcon(51, 27, 5), ...[0, 1, 2].map((i) => circle(28 + i * 7, 54, 1.8, C.white, null)))),
     monitor(70, 40, 44, 40, all(rect(76, 50, 32, 20, C.white, 2, C.ink, 1), avatar(84, 60, 5, '#7ac08a'), ok(100, 60, 5))), line('M64 38 L76 50', C.grey, 1.4, '3 2'), ring(35, 40, 30)),
   /** stänga av kameran: a video meeting with four tiles; one big tile is dark with only a grey round silhouette, and a big camera sign with a red slash across it is ringed. */
   'digverk.stänga-av-kameran': all(bg(), rect(6, 10, 108, 82, '#1f232b', 3, C.ink, 1.6), tile(9, 13, 102, 52, all(circle(0, -6, 12, '#6a7180', null), path('M-20 18 C-20 4 20 4 20 18 Z', '#6a7180', null)), '#2b2f38'),
-    ...range(3).map((i) => tile(9 + i * 34.5, 68, 32, 21, face(0, 0, 0.7, FACES[i]![0], FACES[i]![1], FACES[i]![2]))), camIcon(60, 104, 1), slash(60, 104, 10), ring(60, 104, 14)),
+    ...range(3).map((i) => tile(9 + i * 34.5, 68, 32, 21, face(0, 0, 0.7, FACES[i]![0], FACES[i]![1], FACES[i]![2]))), camIcon(60, 104, 1), waGrow('dv-kamera-av', slash(60, 104, 10)), ring(60, 104, 14)),
   /** textning: a video tile with a speaking man (open mouth, sound waves); under him a dark strip with white text bars across the bottom of the picture; the strip is framed. */
   'digverk.textning': all(bg(), rect(8, 12, 104, 86, '#5a6a80', 3, C.ink, 1.6), at(52, 54, 1.8, face(0, 0, 1, '#2f2521', '#f1c7a5', GREEN)), ellipse(52, 52, 3, 2, '#7a2a2a', null),
     path('M80 40 C86 46 86 54 80 60 M86 34 C96 44 96 56 86 66', 'none', C.white, 1.8), rect(14, 78, 92, 16, 'rgba(0,0,0,0.75)', 2, null), line('M22 83 L98 83', C.white, 2.2), line('M30 89 L84 89', C.white, 2.2), frame(11, 75, 98, 22, 4)),
@@ -308,7 +314,7 @@ export const DIGTOOLS_MOTIFS: Record<string, Svg> = {
   /** distansarbete: three small places far apart (a house in town, a red cottage among fir trees and a flat), each with a tiny person at a laptop; dashed lines join them to one chat bubble in the middle; the whole network is framed. */
   'digverk.distansarbete': all(bg(), house(22, 34, 1.1), mini(22, 52, 0.8, BLUE, false), laptop(30, 62, 0.16), house(96, 34, 1.1, '#b8322a', '#5a3a2a'), tree(80, 30, 0.8), tree(112, 30, 0.7), mini(96, 52, 0.8, C.orange), laptop(104, 62, 0.16),
     rect(46, 78, 28, 30, '#d8dde2', 1, C.ink, 1.2), ...range(4).map((i) => rect(50 + (i % 2) * 12, 82 + Math.floor(i / 2) * 10, 8, 6, '#bfe3f5', 0.5, C.ink, 0.6)), mini(30, 96, 0.8, GREEN), laptop(38, 106, 0.16),
-    path('M50 40 C50 30 70 30 70 40 C70 48 64 48 60 48 L56 54 L56 48 C52 48 50 46 50 40 Z', C.white, C.ink, 1.4), line('M55 38 L65 38 M55 42 L62 42', BAR, 1.4), line('M34 46 L50 42 M86 46 L70 42 M38 92 L54 52', C.dark, 1.4, '3 2'), frame(6, 10, 108, 100, 6)),
+    waBob('dv-distans-bubbla', 3, path('M50 40 C50 30 70 30 70 40 C70 48 64 48 60 48 L56 54 L56 48 C52 48 50 46 50 40 Z', C.white, C.ink, 1.4), line('M55 38 L65 38 M55 42 L62 42', BAR, 1.4)), waPulse('dv-distans-linjer', line('M34 46 L50 42 M86 46 L70 42 M38 92 L54 52', C.dark, 1.4, '3 2')), frame(6, 10, 108, 100, 6)),
   /** hybridmöte: a meeting room with a table; two people are at it, and on the wall a big screen shows two more faces in video tiles; the whole room with the screen is framed. */
   'digverk.hybridmöte': all(bg('#f2ede4'), rect(28, 12, 64, 38, C.dark, 3, C.ink, 1.6), tile(31, 15, 28, 32, face(0, 0, 0.95, FACES[1]![0], FACES[1]![1], FACES[1]![2])), tile(61, 15, 28, 32, face(0, 0, 0.95, FACES[3]![0], FACES[3]![1], FACES[3]![2])),
     person(32, C.orange, { hairStyle: 'long', h: 0.7 }), person(88, BLUE, { h: 0.72 }), rect(10, 84, 100, 8, '#c8a070', 2, C.ink, 1.4), line('M18 92 L18 112 M102 92 L102 112', '#a0673d', 3), laptop(60, 84, 0.3), frame(6, 8, 108, 104, 6)),
