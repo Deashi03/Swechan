@@ -127,7 +127,7 @@ Varje kö genereras av `npm run audit:content -- --backlog` till `quality/backlo
 
 | Etapp | Kö | Omfattning | Sessioner (ungefär) |
 |---|---|---|---|
-| B1 | Skriptbar typografi och läsningar: citattecken, `..`, dubbla ord, säkra felläsningar | cirka 1 500 strängar | 1 |
+| B1 ✅ | Skriptbar typografi och läsningar: citattecken, `..`, dubbla ord, säkra felläsningar (klar 2026-11-19) | cirka 1 500 strängar | 1 |
 | B2 | Säkra betydelser: "kan också betyda" (177), 「；」 och "Också:" (109) → egna betydelser med `order` | cirka 290 poster | 1–2 |
 | B3 | Grundord med bara fackbetydelse: lägg till grundbetydelsen | 265 poster | 1–2 |
 | B4 | Planerade men ej levererade animationer (46), sedan Fysik och Kemi | cirka 350 ord | 2–3 |

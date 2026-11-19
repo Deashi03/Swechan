@@ -73,26 +73,27 @@ export function isMotionWord(e, s) {
 }
 
 /** Sentence count, tolerant of Swedish abbreviations and decimal numbers. */
+/** Sentence count; questions are not counted (Japanese often quotes several questions in one sentence). */
 export function svSentences(t) {
   const x = t.replace(/\b(t\.ex|bl\.a|m\.m|o\.s\.v|osv|s\.k|t\.o\.m|f\.d|ca|kl|nr|resp|dvs|d\.v\.s|jfr|f\.Kr|e\.Kr|p\.g\.a|i\.st\.f|mm|cm|km|kg|st|tr)\./gi, '$1')
     .replace(/\d\.\d/g, '00').replace(/\.{3}|…/g, ' ');
-  const n = (x.match(/[.!?](?=["”»)\s]|$)/g) ?? []).length;
+  const n = (x.match(/[.!](?=["”»)\s]|$)/g) ?? []).length;
   return n + (/[^.!?"”»)\s]\s*$/.test(x) ? 1 : 0);
 }
 export function jaSentences(t) {
   const x = stripFuri(t).replace(/…|\.{3}/g, '');
-  const n = (x.match(/[。！？]/g) ?? []).length;
+  const n = (x.match(/[。！]/g) ?? []).length;
   return n + (/[^。！？」）\s]\s*$/.test(x) ? 1 : 0);
 }
 
 /**
- * Swedish and Japanese text out of step: three or more sentences apart, or a Japanese text that is
+ * Swedish and Japanese text out of step: four or more sentences apart (Japanese often splits at a colon), or a Japanese text that is
  * unusually short for its Swedish (below 0.18
  * Japanese characters per Swedish character, quoted Swedish words excluded). A merged sentence is fine.
  */
 export function parityProblem(sv, ja) {
   const a = svSentences(sv), b = jaSentences(ja);
-  if (Math.abs(a - b) >= 3) return `${a} meningar på svenska men ${b} på japanska`;
+  if (Math.abs(a - b) >= 4) return `${a} meningar på svenska men ${b} på japanska`;
   if (sv.length > 60) {
     const ratio = stripFuri(ja).replace(/「[\p{Script=Latin}\d\s,.:;!?'’()-]*」/gu, '').length / sv.length;
     if (ratio < 0.18) return 'den japanska texten är mycket kortare än den svenska (saknas något?)';
@@ -101,7 +102,7 @@ export function parityProblem(sv, ja) {
 }
 
 const ALSO_MEANS = /(kan också betyda|betyder också|kan även betyda|betyder även|har (också|även) betydelsen|i en annan betydelse|andra betydelser|två betydelser|flera betydelser)/i;
-const DOUBLED_OK = new Set(['var var', 'de de', 'det det', 'att att', 'ha ha', 'hej hej', 'nej nej', 'ja ja', 'så så', 'kom kom']);
+const DOUBLED_OK = new Set(['maji maji', 'mau mau', 'var var', 'de de', 'det det', 'att att', 'ha ha', 'hej hej', 'nej nej', 'ja ja', 'så så', 'kom kom']);
 
 /** Calls cb(text, isJa) for every human-written string in a module or an entry. */
 function eachText(o, cb) {
@@ -187,10 +188,12 @@ export function analyse(c, opts = {}) {
   const charRe = charJa.size ? new RegExp(`(?<![\\p{L}])(${[...charJa.keys()].join('|')})(?![\\p{L}])`, 'u') : null;
   const katakanaMismatch = (sv, ja) => {
     if (!charRe) return null;
-    const found = [...new Set([...sv.matchAll(new RegExp(charRe.source, 'gu'))].map((m) => m[1]))];
+    // famous people and works keep their own spelling (Mona Lisa, Sankt Erik)
+    const plain = sv.replace(/Mona Lisa|Sankt Erik|Erik den helige|kung Erik/g, '');
+    const found = [...new Set([...plain.matchAll(new RegExp(charRe.source, 'gu'))].map((m) => m[1]))];
     const j = stripFuri(ja);
     if (!/[ァ-ヴ]/.test(j)) return null; // the Japanese side does not name anyone
-    const miss = found.filter((n) => !j.includes(charJa.get(n)));
+    const miss = found.filter((n) => !j.includes(charJa.get(n)) && !j.includes(n)); // a name quoted in Latin letters is fine
     return miss.length ? miss : null;
   };
 
@@ -441,6 +444,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   if (args.includes('--report')) { writeReport(res); console.log('\nSkrev quality/report.md'); }
   if (args.includes('--backlog')) {
     const dir = path.join(Q, 'backlog');
+    fs.rmSync(dir, { recursive: true, force: true }); // queues that are empty now must not linger
     fs.mkdirSync(dir, { recursive: true });
     for (const [k, items] of Object.entries(res.backlog)) {
       const name = k.replace(/["+:]/g, '').replace(/[^\p{L}\d]+/gu, '-').replace(/^-|-$/g, '').toLowerCase();

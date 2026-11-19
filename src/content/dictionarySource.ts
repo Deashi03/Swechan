@@ -5,6 +5,6 @@
  */
 import type { LexRow } from './repository';
 
-export const dictionarySource: { dictionaries: unknown[]; lexicon?: LexRow[]; loadDictionary?: (file: string) => Promise<unknown> } = {
-  dictionaries: Object.values(import.meta.glob('./data/dictionary/*.json', { eager: true, import: 'default' })),
-};
+export function dictionarySource(): { dictionaries: unknown[]; lexicon?: LexRow[]; loadDictionary?: (file: string) => Promise<unknown> } {
+  return { dictionaries: Object.values(import.meta.glob('./data/dictionary/*.json', { eager: true, import: 'default' })) };
+}
