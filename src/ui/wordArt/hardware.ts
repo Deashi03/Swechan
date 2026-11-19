@@ -10,7 +10,7 @@
  * controller) and spelutvecklare/grafisk formgivare (one desk: game and code or a poster layout on the screen).
  * Digits, maths signs and key labels (Ctrl, C) only; no words, no brands, no logos.
  */
-import { C, all, arrow, circle, g, line, path, rect, star, type Svg } from './kit';
+import { C, all, arrow, circle, g, line, moving, path, rect, star, waBob, waGrow, waIn, waPulse, waShake, type Svg } from './kit';
 import { HL, T } from './people';
 import { greyed } from './blindFix';
 
@@ -158,22 +158,11 @@ export const HARDWARE_MOTIFS: Record<string, Svg> = {
     ...range(8).map((i) => { const cx = -34 + (i % 4) * 17.5, cy = -30 + Math.floor(i / 4) * 31; return line(`M${cx + 3} ${cy + 6} L${cx + 12} ${cy + 6} M${cx + 3} ${cy + 12} L${cx + 12} ${cy + 12} M${cx + 3} ${cy + 18} L${cx + 9} ${cy + 18}`, i === 1 ? HL : C.grey, 1.2); }))),
   'hardw.minne.2': all(boardBg(4, 74, 112, 34), rect(14, 84, 92, 6, C.black, 1, C.ink, 1), rect(14, 96, 92, 6, C.black, 1, C.ink, 1), greyed(ram(60, 92, 1.45)),
     ram(60, 40, 1.5), arrow(60, 58, 60, 74, HL, 3), frame(10, 24, 100, 32)),
-  'hardw.prestanda': all(ground(104), ...[[30, false], [90, true]].map(([x, fast]) => { const f = fast as boolean, X = x as number;
-    const lt = laptop(X, 66, 0.82, all(rect(-18, -26, 36, 7, C.white, 2, C.ink, 0.8), rect(-18, -26, f ? 36 : 9, 7, f ? C.green : C.denim, 2, null),
-      f ? line('M-6 -16 L-1 -11 L8 -20', C.green, 2.6) : path('M-4 -20 L4 -20 L0 -15 L4 -10 L-4 -10 L0 -15 Z', C.gold, C.ink, 0.6)));
-    const tb = all(circle(X - 22, 86, 5, C.white, C.ink, 1.2), line(`M${X - 22} 83 L${X - 22} 86 L${X - 20} 87`, C.ink, 1), rect(X - 14, 83, f ? 12 : 40, 6, f ? HL : C.grey, 2, C.ink, 0.8));
-    return f ? all(lt, tb, frame(X - 29, 28, 57, 66)) : greyed(lt, tb); })),
   'hardw.uppgradera': all(boardBg(4, 82, 112, 26), rect(14, 92, 92, 6, C.black, 1, C.ink, 1), greyed(ram(32, 36, 0.75, -18)), arrow(42, 54, 30, 46, C.grey, 2.4),
-    ram(62, 66, 1.05), arrow(62, 76, 62, 88, HL, 2.6), frame(26, 54, 72, 24), arrow(108, 100, 108, 18, HL, 4), line('M101 34 L115 34 M108 27 L108 41', HL, 2.6)),
+    waIn('hw-uppgradera', 0, -34, ram(62, 66, 1.05), arrow(62, 76, 62, 88, HL, 2.6), frame(26, 54, 72, 24)), arrow(108, 100, 108, 18, HL, 4), line('M101 34 L115 34 M108 27 L108 41', HL, 2.6)),
   // ── 3712 Hårddisk och lagring ────────────────────────────────────
   'hardw.hårddisk': disks(true),
   'hardw.SSD': disks(false),
-  'hardw.lagringsutrymme': all(ground(), ...[[8, true], [64, false]].map(([x, full]) => { const X = x as number, F = full as boolean;
-    const slots = range(12).map((i) => { const sx = X + 4 + (i % 3) * 15, sy = 22 + Math.floor(i / 3) * 22; const has = F || i < 2;
-      return all(rect(sx, sy, 13, 20, '#f3ead8', 1, C.ink, 0.8), has ? all(path(`M${sx + 3} ${sy + 4} L${sx + 8} ${sy + 4} L${sx + 10} ${sy + 6} L${sx + 10} ${sy + 18} L${sx + 3} ${sy + 18} Z`, [C.sky, C.yellow, C.pink, C.mint][i % 4]!, C.ink, 0.8)) : ''); });
-    const cab = all(rect(X, 18, 49, 94, C.brown, 3, C.ink, 1.8), ...slots);
-    return F ? greyed(cab) : all(cab, rect(X + 34, 22, 13, 20, 'rgba(228,87,46,0.18)', 1, null), rect(X + 4, 44, 43, 64, 'rgba(228,87,46,0.18)', 1, null),
-      path(`M${X + 34} 21 L${X + 48} 21 L${X + 48} 109 L${X + 3} 109 L${X + 3} 43 L${X + 34} 43 Z`, 'none', HL, 2.6, )); })),
   'hardw.USB-minne': all(ground(), desk(92), laptop(40, 92, 1, apps()), rect(68, 86, 4, 4, C.dark, 0, null), usbStick(92, 88, 1.4, 180), arrow(110, 74, 86, 74, HL, 2.6), ring(92, 88, 22)),
   'hardw.minneskort': all(rect(10, 40, 66, 46, C.dark, 6, C.ink, 1.8), rect(18, 32, 20, 10, C.dark, 3, C.ink, 1.6), circle(44, 63, 17, C.black, C.ink, 1.8), circle(44, 63, 11, '#4a6a8a', C.ink, 1.2), circle(40, 59, 3, C.white, null),
     rect(76, 50, 4, 26, C.black, 1, C.ink, 1), sdCard(96, 58, 1.5, 0), arrow(102, 96, 86, 80, HL, 2.6), ring(96, 58, 21)),
@@ -192,7 +181,7 @@ export const HARDWARE_MOTIFS: Record<string, Svg> = {
     rect(28, 34, 62, 48, C.dark, 3, C.ink, 1.8), circle(59, 58, 17, '#2e3038', C.ink, 1.2), line('M44 58 L74 58 M59 43 L59 73 M48 47 L70 69 M70 47 L48 69', C.grey, 1.2), circle(59, 58, 5, C.grey, C.ink, 1), rect(31, 66, 8, 10, C.black, 1, C.ink, 1),
     ...[C.yellow, C.red, C.black, C.yellow].map((c, i) => path(`M90 ${44 + i * 5} C104 ${44 + i * 5} 100 ${80 + i * 6} 112 ${86 + i * 5}`, 'none', c, 2.2)), frame(24, 30, 70, 56)),
   'hardw.ansluta': all(ground(), desk(84), laptop(32, 84, 0.85, apps()), monitor(66, 26, 46, 34, all(rect(70, 30, 38, 26, '#bfe3f5', 1, null)), 84),
-    path('M89 80 C89 92 66 92 64 82', 'none', C.ink, 2.4), rect(60, 76, 8, 6, C.dark, 1.5, C.ink, 1), arrow(66, 70, 59, 77, HL, 2.6), ring(60, 78, 11)),
+    path('M89 80 C89 92 66 92 64 82', 'none', C.ink, 2.4), waIn('hw-ansluta', 10, -8, rect(60, 76, 8, 6, C.dark, 1.5, C.ink, 1), arrow(66, 70, 59, 77, HL, 2.6)), ring(60, 78, 11)),
   'hardw.adapter': all(greyed(rect(4, 52, 18, 16, C.dark, 2, C.ink, 1.4), rect(22, 55, 10, 10, C.silver, 1, C.ink, 1.2)), arrow(28, 76, 42, 76, HL, 2.6),
     rect(42, 50, 34, 20, C.white, 4, C.ink, 1.6), rect(42, 55, 6, 10, C.dark, 1, null), path('M76 60 C86 60 84 60 92 60', 'none', C.ink, 2.6), rect(92, 55, 10, 10, C.white, 2, C.ink, 1.4), rect(102, 56.5, 7, 7, C.silver, 3, C.ink, 1.2), ring(70, 60, 30)),
   'hardw.dockningsstation': all(ground(), desk(86), greyed(laptop(26, 86, 0.62, apps()), monitor(78, 30, 34, 26, '', 86)), path('M44 82 C48 78 50 80 52 80', 'none', C.ink, 2), path('M74 80 C80 82 92 82 95 82', 'none', C.ink, 2),
@@ -204,7 +193,7 @@ export const HARDWARE_MOTIFS: Record<string, Svg> = {
     g('rotate(38 82 40)', rect(78, 6, 8, 52, '#5a5d68', 3, C.ink, 1.4), path('M78 58 L86 58 L82 68 Z', C.silver, C.ink, 1.2)), frame(56, 6, 52, 64)),
   'hardw.mörkt-läge': all(greyed(phone(32, 60, 2.3, all(circle(5, -11, 2.4, C.yellow, null), ...range(5).map((i) => rect(-6.5, -6 + i * 3.6, 13 - (i % 2) * 4, 1.6, C.dark, 0.6, null))), C.white)),
     phone(88, 60, 2.3, all(path('M5 -13 C2 -13 1 -9 3 -7.5 C5 -6 8 -7 8.4 -9 C7 -8 5 -9 5 -11 C5 -12 5 -12.6 5 -13 Z', C.yellow, null), ...range(5).map((i) => rect(-6.5, -6 + i * 3.6, 13 - (i % 2) * 4, 1.6, '#e8ebee', 0.6, null))), NIGHT), frame(62, 14, 52, 92)),
-  'hardw.flimra': all(monitor(14, 20, 92, 60, all(...range(6).map((i) => rect(17, 23 + i * 9, 86, 9, i % 2 ? '#e9f6fd' : '#5d7d96', 0, null))), 100),
+  'hardw.flimra': all(monitor(14, 20, 92, 60, moving('hw-flimra', '0%,100%{opacity:1}8%{opacity:.25}16%{opacity:1}30%{opacity:.5}36%{opacity:1}60%{opacity:.3}66%{opacity:1}', { dur: 1.4 }, ...range(6).map((i) => rect(17, 23 + i * 9, 86, 9, i % 2 ? '#e9f6fd' : '#5d7d96', 0, null))), 100),
     ...[[8, 30], [8, 60], [112, 40], [112, 70], [36, 12], [84, 12]].map(([x, y], i) => line(i < 4 ? `M${x} ${y! - 6} L${x! + (x! < 60 ? 3 : -3)} ${y! - 2} L${x} ${y! + 2} L${x! + (x! < 60 ? 3 : -3)} ${y! + 6}` : `M${x! - 6} ${y} L${x! - 2} ${y! + 3} L${x! + 2} ${y} L${x! + 6} ${y! + 3}`, HL, 2.2)), ground(104)),
   'hardw.skärmskydd': all(greyed(phone(50, 62, 2.6, all(...range(4).map((i) => rect(-6.5, -10 + i * 5, 13, 3, C.grey, 0.6, null))))),
     g('rotate(12 64 52)', rect(34, 8, 50, 90, 'rgba(230,244,252,0.75)', 8, HL, 2.6), line('M44 20 L58 12 M44 34 L72 18 M44 48 L80 26', C.white, 2.4)), arrow(100, 20, 86, 34, HL, 2.6)),
@@ -213,26 +202,27 @@ export const HARDWARE_MOTIFS: Record<string, Svg> = {
     thumbDown(60, 32, 0.9), frame(32, 26, 56, 54)),
   'hardw.mellanslag': all(rect(8, 12, 104, 30, C.white, 4, C.ink, 1.6), rect(16, 22, 30, 8, C.dark, 2, null), rect(66, 22, 36, 8, C.dark, 2, null), line('M48 34 L48 38 L64 38 L64 34', HL, 2.4), line('M64 18 L64 34', C.denim, 1.6),
     keyboard(60, 82, 108, '#f6b48a'), frame(31, 89, 59, 12), thumbDown(60, 92, 0.7)),
-  'hardw.kortkommando': all(greyed(keyboard(60, 100, 108)), ...[[12, 'Ctrl'], [70, 'C']].map(([x, l]) => all(path(`M${x} 70 L${+x! + 38} 70 L${+x! + 41} 80 L${+x! - 3} 80 Z`, '#c9ced4', C.ink, 1.4), rect(+x!, 36, 38, 34, '#f1f3f5', 4, HL, 2.6), T(+x! + 19, 58, l as string, l === 'C' ? 16 : 12, C.ink))),
+  'hardw.kortkommando': all(greyed(keyboard(60, 100, 108)), moving('hw-kortkommando', '0%,25%,100%{transform:translate(0,0)}40%,75%{transform:translate(0,4px)}', { dur: 2.4 }, ...[[12, 'Ctrl'], [70, 'C']].map(([x, l]) => all(path(`M${x} 70 L${+x! + 38} 70 L${+x! + 41} 80 L${+x! - 3} 80 Z`, '#c9ced4', C.ink, 1.4), rect(+x!, 36, 38, 34, '#f1f3f5', 4, HL, 2.6), T(+x! + 19, 58, l as string, l === 'C' ? 16 : 12, C.ink)))),
     line('M56 56 L64 56 M60 52 L60 60', C.ink, 2.8)),
   'hardw.musmatta': all(rect(4, 6, 112, 104, C.tan, 6, C.ink, 1.6), greyed(at(46, 24, 0.8, keyboard(0, 0, 96))), rect(30, 40, 82, 64, C.denim, 10, C.ink, 1.8), rect(30, 40, 82, 64, 'none', 10, HL, 2.6), greyed(mouse(72, 76, 1.5, C.white, C.white, true))),
-  'hardw.muspekare': all(monitor(6, 12, 80, 58, all(...range(3).map((i) => rect(14, 20 + i * 14, 10, 10, [C.yellow, C.green, C.red][i]!, 1.5, C.ink, 0.6)), cursor(46, 30, 1.7, C.white)), 82), ring(54, 46, 20), ground(),
-    greyed(mouse(100, 96, 1.3)), arrow(84, 98, 76, 98, C.grey, 2), arrow(116, 98, 118, 98, C.grey, 2)),
-  'hardw.högerklicka': all(mouse(42, 66, 2.6, C.white, '#f6b48a', true), line('M70 30 L76 24 M74 38 L82 36 M66 24 L68 16', HL, 2.4), rect(78, 44, 34, 40, C.white, 2, C.ink, 1.4), ...range(4).map((i) => rect(82, 50 + i * 8, 24 - (i % 2) * 6, 3, C.grey, 1, null)),
+  'hardw.muspekare': all(monitor(6, 12, 80, 58, all(...range(3).map((i) => rect(14, 20 + i * 14, 10, 10, [C.yellow, C.green, C.red][i]!, 1.5, C.ink, 0.6)), waIn('hw-muspekare', -26, 16, cursor(46, 30, 1.7, C.white))), 82), ring(54, 46, 20), ground(),
+    waIn('hw-muspekare-mus', -10, 0, greyed(mouse(100, 96, 1.3))), arrow(84, 98, 76, 98, C.grey, 2), arrow(116, 98, 118, 98, C.grey, 2)),
+  'hardw.högerklicka': all(mouse(42, 66, 2.6, C.white, '#f6b48a', true), waPulse('hw-hogerklicka', line('M70 30 L76 24 M74 38 L82 36 M66 24 L68 16', HL, 2.4)), waGrow('hw-hogerklicka-meny', rect(78, 44, 34, 40, C.white, 2, C.ink, 1.4), ...range(4).map((i) => rect(82, 50 + i * 8, 24 - (i % 2) * 6, 3, C.grey, 1, null))),
     at(42, 66, 2.6, path('M9 -2 C9 -12 5 -14 0 -14 L0 -2 Z', 'none', HL, 1.1))),
   'hardw.dra-och-släppa': all(rect(4, 10, 112, 88, C.dark, 4, C.ink, 1.8), rect(8, 14, 104, 80, SCR, 1, null), rect(14, 22, 26, 22, 'none', 2, C.grey, 1.6, ), path('M88 74 L88 60 L96 60 L99 64 L110 64 L110 88 L88 88 Z', C.yellow, C.ink, 1.4),
-    line('M30 50 C40 80 64 84 82 70', C.grey, 2, '4 3'), rect(62, 46, 26, 22, C.white, 2, C.ink, 1.4), path('M64 66 L72 56 L78 62 L82 58 L86 66 Z', C.green, null), circle(80, 52, 2.6, C.yellow, null), frame(58, 42, 34, 30), cursor(76, 58, 1.2, C.white)),
+    line('M30 50 C40 80 64 84 82 70', C.grey, 2, '4 3'), waIn('hw-dra-och-slappa', -48, -24, rect(62, 46, 26, 22, C.white, 2, C.ink, 1.4), path('M64 66 L72 56 L78 62 L82 58 L86 66 Z', C.green, null), circle(80, 52, 2.6, C.yellow, null), frame(58, 42, 34, 30), cursor(76, 58, 1.2, C.white))),
   'hardw.styrplatta': all(rect(8, 8, 104, 30, C.dark, 4, C.ink, 1.8), rect(12, 11, 96, 24, SCR, 1, null), rect(8, 38, 104, 70, C.silver, 4, C.ink, 1.8), greyed(...range(3).flatMap((r) => range(11).map((i) => rect(14 + i * 8.6, 44 + r * 8, 7, 6, '#e8ebee', 1, C.ink, 0.5)))),
     rect(38, 74, 44, 28, '#d9dde1', 3, C.ink, 1.2), frame(35, 71, 50, 34), arrow(50, 88, 70, 88, HL, 2.2), arrow(70, 88, 50, 88, HL, 2.2)),
   'hardw.hålla-in': all(greyed(rect(18, 84, 84, 20, '#5a5d68', 4, C.ink, 1.4)), circle(60, 78, 18, '#d9dde1', C.ink, 1.8), circle(60, 78, 13, C.white, C.ink, 1.2),
-    circle(60, 54, 44, 'none', C.grey2, 3), path(`M60 10 A44 44 0 1 1 ${f1(60 + Math.cos(rad(-90 - 60)) * 44)} ${f1(54 + Math.sin(rad(-90 - 60)) * 44)}`, 'none', HL, 4.4), T(98, 22, '5', 14, HL), thumbDown(60, 70, 0.95)),
-  'hardw.mus.2': all(mouse(60, 70, 3, C.white, C.white, true), ring(60, 70, 44)),
+    circle(60, 54, 44, 'none', C.grey2, 3), waPulse('hw-halla-in-tid', path(`M60 10 A44 44 0 1 1 ${f1(60 + Math.cos(rad(-90 - 60)) * 44)} ${f1(54 + Math.sin(rad(-90 - 60)) * 44)}`, 'none', HL, 4.4), T(98, 22, '5', 14, HL)),
+    moving('hw-halla-in', '0%{transform:translate(0,-10px)}20%,85%{transform:translate(0,0)}100%{transform:translate(0,-10px)}', { dur: 3.2 }, thumbDown(60, 70, 0.95))),
+  'hardw.mus.2': all(moving('hw-mus', '0%,100%{transform:translate(0,0)}30%{transform:translate(-8px,-4px)}70%{transform:translate(8px,3px)}', { dur: 3 }, mouse(60, 70, 3, C.white, C.white, true)), ring(60, 70, 44)),
   // ── 3716 Grafikkort ──────────────────────────────────────────────
   'hardw.grafikkort': all(gpu(62, 58, 1.2), frame(4, 30, 112, 60)),
   'hardw.datorspel': all(ground(), desk(88), monitor(10, 12, 100, 62, game(13, 15, 94, 56), 88), frame(6, 8, 108, 70)),
   'hardw.spelkonsol': tvCorner(true),
   'hardw.handkontroll': tvCorner(false),
-  'hardw.e-sport': all(rect(20, 6, 80, 40, C.dark, 3, C.ink, 1.8), game(23, 9, 74, 34), path('M52 54 L68 54 L66 64 C66 70 54 70 54 64 Z', C.gold, C.ink, 1.4), path('M52 56 C46 56 46 62 54 63 M68 56 C74 56 74 62 66 63', 'none', C.gold, 2), rect(56, 70, 8, 6, C.gold, 1, C.ink, 1),
+  'hardw.e-sport': all(rect(20, 6, 80, 40, C.dark, 3, C.ink, 1.8), game(23, 9, 74, 34), waBob('hw-e-sport', 3, path('M52 54 L68 54 L66 64 C66 70 54 70 54 64 Z', C.gold, C.ink, 1.4), path('M52 56 C46 56 46 62 54 63 M68 56 C74 56 74 62 66 63', 'none', C.gold, 2), rect(56, 70, 8, 6, C.gold, 1, C.ink, 1)),
     desk(84, 4, 46), desk(84, 74, 116), sitter(14, 84, C.red, 1, false, headsetOn(14, 43)), sitter(106, 84, C.denim, -1, true, headsetOn(106, 43)), greyed(...range(7).map((i) => circle(14 + i * 15.3, 112, 7, C.grey, C.ink, 1))), ring(60, 64, 16)),
   'hardw.VR-glasögon': all(ground(), ...[[16, 30, 6, C.yellow], [100, 26, 7, C.sky], [104, 70, 5, C.pink], [14, 72, 5, C.green]].map(([x, y, r, c]) => all(rect(+x! - +r!, +y! - +r!, 2 * +r!, 2 * +r!, c as string, 2, C.ink, 1))),
     g('translate(60 70.8) scale(0.84)', rect(-3.5, -48, 7, 7, C.skin, 2, C.ink, 1.6), circle(0, -56, 10, C.skin, C.ink, 2), path('M-10 -58 C-10 -72 10 -72 10 -58 C6 -63 -6 -63 -10 -58 Z', C.hair, C.ink, 1.8),
@@ -248,11 +238,11 @@ export const HARDWARE_MOTIFS: Record<string, Svg> = {
     line('M62 56 L62 90', C.red, 2), line('M74 54 L82 46 M74 46 L82 54', C.ink, 1.6), circle(73, 45, 2.4, 'none', C.ink, 1.2), circle(73, 55, 2.4, 'none', C.ink, 1.2), frame(9, 57, 102, 34), ground(104)),
   // ── 3717 Felsöka hårdvara ────────────────────────────────────────
   'hardw.frysa.3': all(ground(), laptop(60, 108, 1.55, all(rect(-20, -34, 40, 22, C.white, 1.5, C.ink, 0.8), rect(-20, -34, 40, 3, C.denim, 1, null),
-    path('M-4 -29 L4 -29 L0 -23 L4 -17 L-4 -17 L0 -23 Z', C.gold, C.ink, 0.6), cursor(6, -22, 0.4))), path('M24 50 L28 58 L32 50 L36 60 L40 50 L46 56 L52 50 L58 62 L64 50 L72 58 L80 50 L86 56 L96 50', 'none', '#5aa7d6', 2.2),
-    flake(20, 20, 1.2), flake(100, 22, 1.4), flake(108, 92, 1), flake(12, 90, 1)),
+    path('M-4 -29 L4 -29 L0 -23 L4 -17 L-4 -17 L0 -23 Z', C.gold, C.ink, 0.6), waShake('hw-frysa', cursor(6, -22, 0.4)))), path('M24 50 L28 58 L32 50 L36 60 L40 50 L46 56 L52 50 L58 62 L64 50 L72 58 L80 50 L86 56 L96 50', 'none', '#5aa7d6', 2.2),
+    waPulse('hw-frysa-frost', flake(20, 20, 1.2), flake(100, 22, 1.4), flake(108, 92, 1), flake(12, 90, 1))),
   'hardw.tryckluft': all(greyed(keyboard(66, 96, 96)), rect(14, 30, 22, 46, C.red, 4, C.ink, 1.8), rect(14, 40, 22, 14, C.white, 0, null), rect(18, 22, 14, 9, C.dark, 2, C.ink, 1.4), line('M30 25 L62 70', C.ink, 2.2),
     ...[0, 1, 2].map((i) => line(`M${62 + i * 6} ${70 - i * 3} l10 6`, '#5aa7d6', 1.8)), puff(80, 56, 6), puff(94, 44, 7), puff(104, 62, 5), puff(72, 40, 4), frame(10, 18, 30, 62)),
   'hardw.glappkontakt': all(ground(), desk(92), laptop(38, 92, 1.05, all(rect(-8, -28, 16, 9, 'none', 1.5, C.ink, 1.4), rect(8, -25.5, 2, 4, C.ink, 0, null), path('M1 -28 L-3 -23 L0 -23 L-2 -19', 'none', C.gold, 1.6, ),
-    line('M-14 -14 L-10 -14 M-6 -14 L-2 -14 M2 -14 L6 -14 M10 -14 L14 -14', C.grey, 1.6))), rect(72, 82, 3, 6, C.dark, 0, null), g('rotate(-14 84 84)', rect(80, 80, 12, 8, C.dark, 2, C.ink, 1.2), rect(76, 82, 5, 4, C.silver, 1, C.ink, 0.8)),
-    path('M92 82 C102 78 104 92 114 88', 'none', C.ink, 2.2), line('M74 70 L78 76 L72 76 L76 82', HL, 2.2), line('M86 66 L84 72 M94 70 L90 74', HL, 1.8), ring(80, 82, 14)),
+    line('M-14 -14 L-10 -14 M-6 -14 L-2 -14 M2 -14 L6 -14 M10 -14 L14 -14', C.grey, 1.6))), rect(72, 82, 3, 6, C.dark, 0, null), waShake('hw-glappkontakt', g('rotate(-14 84 84)', rect(80, 80, 12, 8, C.dark, 2, C.ink, 1.2), rect(76, 82, 5, 4, C.silver, 1, C.ink, 0.8))),
+    path('M92 82 C102 78 104 92 114 88', 'none', C.ink, 2.2), waPulse('hw-glappkontakt-gnista', line('M74 70 L78 76 L72 76 L76 82', HL, 2.2), line('M86 66 L84 72 M94 70 L90 74', HL, 1.8)), ring(80, 82, 14)),
 };
