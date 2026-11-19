@@ -38,6 +38,24 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "labelSv": "soldater"
+    },
+    {
+     "id": "s.garnison.2",
+     "ja": "{駐屯地|ちゅうとんち}",
+     "defSv": "En stad eller en plats där soldater bor och har sin bas.",
+     "defJa": "{兵士|へいし}が{住|す}み、{拠点|きょてん}にしている{町|まち}や{場所|ばしょ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Boden var länge en stor garnison.",
+       "ja": "ボーデンは{長|なが}い{間|あいだ}、{大|おお}きな{駐屯地|ちゅうとんち}でした。"
+      }
+     ],
+     "labelSv": "plats",
+     "quality": {
+      "status": "ai-draft"
      }
     }
    ]
@@ -58,8 +76,8 @@
    "senses": [
     {
      "id": "s.vakt.1",
-     "ja": "{番人|ばんにん}、{見張|みは}り、{警備|けいび}",
-     "defSv": "En person vars jobb är att passa en plats och se till att inget farligt händer. Också själva uppgiften att passa.",
+     "ja": "{番人|ばんにん}、{警備員|けいびいん}",
+     "defSv": "En person vars jobb är att passa en plats och se till att inget farligt händer.",
      "defJa": "ある{場所|ばしょ}を{守|まも}り、{危|あぶ}ないことが{起|お}こらないように{見張|みは}るのが{仕事|しごと}の{人|ひと}。また、その{見張|みは}りの{仕事|しごと}そのもの。",
      "concept": false,
      "examples": [
@@ -77,6 +95,24 @@
       "medeltiden",
       "försvar"
      ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "labelSv": "person"
+    },
+    {
+     "id": "s.vakt.2",
+     "ja": "{見張|みは}り（の{任務|にんむ}）",
+     "defSv": "Uppgiften att passa en plats, till exempel att gå vakt eller stå på vakt.",
+     "defJa": "ある{場所|ばしょ}を{見張|みは}る{仕事|しごと}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han står på vakt vid porten.",
+       "ja": "{彼|かれ}は{門|もん}のところで{見張|みは}りに{立|た}っています。"
+      }
+     ],
+     "labelSv": "uppgift",
      "quality": {
       "status": "ai-draft"
      }
@@ -118,6 +154,24 @@
       "medeltiden",
       "försvar"
      ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "labelSv": "soldat"
+    },
+    {
+     "id": "s.vaktpost.2",
+     "ja": "{見張|みは}り{所|じょ}",
+     "defSv": "Platsen där en soldat står och håller vakt.",
+     "defJa": "{兵士|へいし}が{立|た}って{見張|みは}りをする{場所|ばしょ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Soldaten gick tillbaka till sin vaktpost.",
+       "ja": "その{兵士|へいし}は{自分|じぶん}の{持|も}ち{場|ば}に{戻|もど}りました。"
+      }
+     ],
+     "labelSv": "plats",
      "quality": {
       "status": "ai-draft"
      }
@@ -193,7 +247,7 @@
       }
      ],
      "explanation": {
-      "sv": "Att hålla utkik betyder att man tittar noga efter något, till exempel fiender eller ett skepp. Ordet kan också betyda personen som tittar eller platsen där han står. På en fästning hade man alltid en utkik högst upp i ett torn, så att man kunde se faran långt innan den kom.",
+      "sv": "Att hålla utkik betyder att man tittar noga efter något, till exempel fiender eller ett skepp. Utkik används också om personen som tittar eller om platsen där hen står. På en fästning hade man alltid en utkik högst upp i ett torn, så att man kunde se faran långt innan den kom.",
       "ja": "「hålla utkik」は、{敵|てき}や{船|ふね}など{何|なに}かを{注意深|ちゅういぶか}く{見|み}ることです。{見|み}る{人|ひと}や、その{人|ひと}が{立|た}つ{場所|ばしょ}を{指|さ}すこともあります。{要塞|ようさい}では、{危険|きけん}がずっと{前|まえ}に{見|み}えるように、いつも{塔|とう}のいちばん{上|うえ}に{見張|みは}りを{置|お}きました。"
      },
      "tags": [
@@ -377,6 +431,24 @@
       "medeltiden",
       "försvar"
      ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "labelSv": "i krig"
+    },
+    {
+     "id": "s.slå-tillbaka.2",
+     "ja": "{殴|なぐ}り{返|かえ}す、やり{返|かえ}す",
+     "defSv": "Slå någon som har slagit en först.",
+     "defJa": "{殴|なぐ}られて、{相手|あいて}を{殴|なぐ}り{返|かえ}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han slog tillbaka när de andra började bråka.",
+       "ja": "ほかの{人|ひと}たちがけんかを{始|はじ}めると、{彼|かれ}はやり{返|かえ}しました。"
+      }
+     ],
+     "labelSv": "slå igen",
      "quality": {
       "status": "ai-draft"
      }

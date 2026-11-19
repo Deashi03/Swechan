@@ -17,8 +17,8 @@
    "senses": [
     {
      "id": "s.flytta.1",
-     "ja": "{引|ひ}っ{越|こ}す；{移|うつ}す",
-     "defSv": "Börja bo på ett nytt ställe. Också: ställa en sak på en annan plats.",
+     "ja": "{引|ひ}っ{越|こ}す",
+     "defSv": "Börja bo på ett nytt ställe.",
      "defJa": "{新|あたら}しい{場所|ばしょ}に{住|す}み{始|はじ}める。ものを{別|べつ}の{場所|ばしょ}に{移|うつ}すことも{言|い}う。",
      "concept": false,
      "examples": [
@@ -66,6 +66,23 @@
       "djur",
       "fåglar"
      ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.flytta.3",
+     "ja": "{移|うつ}す、{動|うご}かす",
+     "defSv": "Ställa en sak på en annan plats.",
+     "defJa": "{物|もの}を{別|べつ}の{場所|ばしょ}に{置|お}く。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kan du flytta stolen?",
+       "ja": "{椅子|いす}を{動|うご}かしてくれる？"
+      }
+     ],
+     "labelSv": "sak",
      "quality": {
       "status": "ai-draft"
      }
@@ -208,8 +225,8 @@
    "senses": [
     {
      "id": "s.märka.1",
-     "ja": "（ラベルなどで）{印|しるし}をつける；{気|き}づく",
-     "defSv": "Skriva på något vad det är eller vart det ska. Också: lägga märke till något.",
+     "ja": "（ラベルなどで）{印|しるし}をつける",
+     "defSv": "Skriva på något vad det är eller vart det ska.",
      "defJa": "{中身|なかみ}や{行|い}き{先|さき}を{書|か}いておく。{何|なに}かに{気|き}づくことも{言|い}う。",
      "concept": false,
      "examples": [
@@ -218,7 +235,7 @@
        "ja": "{箱|はこ}に{部屋|へや}の{名前|なまえ}を{書|か}いておいてください。"
       }
      ],
-     "labelSv": "skriva på",
+     "labelSv": "sätta märke",
      "frame": {
       "subject": "Hon",
       "complement": "lådan"
@@ -228,7 +245,26 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.märka.2",
+     "ja": "{気|き}づく",
+     "defSv": "Lägga märke till något.",
+     "defJa": "{何|なに}かに{気|き}がつく。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag märkte att hon var ledsen.",
+       "ja": "{彼女|かのじょ}が{悲|かな}しんでいることに{気|き}づきました。"
+      }
+     ],
+     "labelSv": "lägga märke till",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
     }
    ]
   },
@@ -515,8 +551,8 @@
    "senses": [
     {
      "id": "s.lämna.1",
-     "ja": "{去|さ}る、{離|はな}れる；{渡|わた}す、{返|かえ}す",
-     "defSv": "Gå från ett ställe. Också: ge något till någon.",
+     "ja": "{去|さ}る、{離|はな}れる",
+     "defSv": "Gå från ett ställe.",
      "defJa": "ある{場所|ばしょ}から{去|さ}る。{誰|だれ}かに{何|なに}かを{渡|わた}すことも{言|い}う。",
      "concept": false,
      "examples": [
@@ -535,6 +571,24 @@
      "tags": [
       "hemmet"
      ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "labelSv": "gå från"
+    },
+    {
+     "id": "s.lämna.2",
+     "ja": "{渡|わた}す、{返|かえ}す",
+     "defSv": "Ge något till någon, till exempel lämna tillbaka en bok.",
+     "defJa": "{本|ほん}を{返|かえ}すなど、{物|もの}を{相手|あいて}に{渡|わた}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag lämnar boken till dig i morgon.",
+       "ja": "{明日|あした}{本|ほん}を{渡|わた}します。"
+      }
+     ],
+     "labelSv": "ge",
      "quality": {
       "status": "ai-draft"
      }
@@ -558,8 +612,8 @@
    "senses": [
     {
      "id": "s.sakna.1",
-     "ja": "{恋|こい}しく{思|おも}う、ないのを{寂|さび}しく{思|おも}う；{欠|か}けている",
-     "defSv": "Vara ledsen för att någon eller något inte finns där längre. Också: inte ha något.",
+     "ja": "{恋|こい}しく{思|おも}う、ないのを{寂|さび}しく{思|おも}う",
+     "defSv": "Vara ledsen för att någon eller något inte finns där längre.",
      "defJa": "{誰|だれ}か・{何|なに}かがいなくなって{寂|さび}しく{思|おも}う。{何|なに}かが{足|た}りないことも{言|い}う。",
      "concept": false,
      "examples": [
@@ -575,6 +629,24 @@
      "tags": [
       "hemmet"
      ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "labelSv": "längta"
+    },
+    {
+     "id": "s.sakna.2",
+     "ja": "{欠|か}けている",
+     "defSv": "Inte ha något som man borde ha.",
+     "defJa": "あるべきものがない。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Boken saknar en sida.",
+       "ja": "その{本|ほん}は1ページ{欠|か}けています。"
+      }
+     ],
+     "labelSv": "inte ha",
      "quality": {
       "status": "ai-draft"
      }
