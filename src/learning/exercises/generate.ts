@@ -4,7 +4,7 @@
 import { stripFurigana } from '../../content/furigana';
 import { acceptedForms, allForms, inflectionForms, tokenize } from '../../content/morphology';
 import { imageDistractorAllowed, imageFor, quizImageFor } from '../../content/images';
-import type { ContentRepository, SenseRef } from '../../content/repository';
+import type { ContentRepository, LexRef, SenseRef } from '../../content/repository';
 import type { Inflection, VocabularyEntry } from '../../content/schema';
 import { learnConfig } from '../../config/appConfig';
 import { createRng, hashString, lazyShuffle, shuffle } from '../../lib/random';
@@ -29,14 +29,14 @@ function glossTerms(markup: string): string[] {
 
 const glossCache = new WeakMap<object, Set<string>>();
 /** Gloss terms of a sense, cached per sense object (the repository's data is immutable). */
-function glossSet(r: SenseRef): Set<string> {
+function glossSet(r: LexRef): Set<string> {
   let s = glossCache.get(r.sense);
   if (!s) { s = new Set(glossTerms(r.sense.ja)); glossCache.set(r.sense, s); }
   return s;
 }
 
 /** Senses that must not be offered together with `target` (same word, synonym, shared Japanese gloss). */
-function conflictsWith(target: SenseRef): (cand: SenseRef) => boolean {
+function conflictsWith(target: LexRef): (cand: LexRef) => boolean {
   const rel = new Set((target.sense.synonyms ?? []).filter((r) => r.relation !== 'antonym').map((r) => r.senseId));
   const t = glossSet(target);
   return (cand) => {
@@ -49,30 +49,32 @@ function conflictsWith(target: SenseRef): (cand: SenseRef) => boolean {
   };
 }
 
-const allSensesCache = new WeakMap<object, SenseRef[]>();
-function allSenses(repo: ContentRepository): SenseRef[] {
+// Kvalitetsplanen A4b: distractors come from the lexicon (lemma, gloss, word class, inflection, tags,
+// synonyms), which is always loaded; only the target needs its full entry.
+const allSensesCache = new WeakMap<object, LexRef[]>();
+function allSenses(repo: ContentRepository): LexRef[] {
   let a = allSensesCache.get(repo);
-  if (!a) { a = repo.entries.flatMap((e) => e.senses.map((s) => repo.getSense(s.id)!)); allSensesCache.set(repo, a); }
+  if (!a) { a = repo.lexicon.flatMap((e) => e.senses.map((s) => repo.getLex(s.id)!)); allSensesCache.set(repo, a); }
   return a;
 }
 
-function distractors(target: SenseRef, ctx: GenContext, n: number, rng: () => number, filter?: (r: SenseRef) => boolean): SenseRef[] {
-  const pool = ctx.poolSenseIds.map((id) => ctx.repo.getSense(id)).filter((r): r is SenseRef => !!r);
+function distractors(target: SenseRef, ctx: GenContext, n: number, rng: () => number, filter?: (r: LexRef) => boolean): LexRef[] {
+  const pool = ctx.poolSenseIds.map((id) => ctx.repo.getLex(id)).filter((r): r is LexRef => !!r);
   const conflicts = conflictsWith(target);
-  const ok = (r: SenseRef) => !conflicts(r) && (!filter || filter(r));
-  const samePos = (r: SenseRef) => r.entry.pos === target.entry.pos;
+  const ok = (r: LexRef) => !conflicts(r) && (!filter || filter(r));
+  const samePos = (r: LexRef) => r.entry.pos === target.entry.pos;
   const poolOk = pool.filter(ok);
   const all = allSenses(ctx.repo);
   // Preference order: pool (same POS), whole vocabulary (same POS), pool, whole vocabulary.
   // The whole-vocabulary stages are shuffled lazily and only as far as needed: filtering and
   // shuffling every sense for each exercise made generation scale with the size of the content.
-  function* ordered(): Generator<SenseRef> {
+  function* ordered(): Generator<LexRef> {
     yield* shuffle(poolOk.filter(samePos), rng);
     for (const r of lazyShuffle(all, rng)) if (samePos(r) && ok(r)) yield r;
     yield* shuffle(poolOk, rng);
     for (const r of lazyShuffle(all, rng)) if (ok(r)) yield r;
   }
-  const out: SenseRef[] = [];
+  const out: LexRef[] = [];
   const seenEntries = new Set<string>();
   // homographs (mod 'courage' / mod 'fashion') are separate entries with the same lemma and forms
   const seenLemmas = new Set<string>([target.entry.lemma]);
@@ -96,7 +98,7 @@ function assemble(correct: ChoiceOption, wrong: ChoiceOption[], rng: () => numbe
   return { options, correctIndex: options.indexOf(correct) };
 }
 
-const lemmaLabel = (e: VocabularyEntry) => (e.inflection.kind === 'noun' ? `${e.inflection.gender} ${e.lemma}` : e.lemma);
+const lemmaLabel = (e: Pick<VocabularyEntry, 'inflection' | 'lemma'>) => (e.inflection.kind === 'noun' ? `${e.inflection.gender} ${e.lemma}` : e.lemma);
 
 /**
  * Hide every form of the answer word in a text shown with a recall exercise
@@ -191,7 +193,7 @@ function formOf(infl: Inflection, key: string | null, lemma: string): string | n
 }
 
 /** Do two senses belong to the same topic? Then one may fit the other's sentence just as well. */
-function sameTopic(a: SenseRef, b: SenseRef): boolean {
+function sameTopic(a: LexRef, b: LexRef): boolean {
   const ta = new Set(a.sense.tags ?? []);
   return (b.sense.tags ?? []).some((t) => ta.has(t));
 }
@@ -203,10 +205,10 @@ export function genContextChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise
     if (!hit) continue;
     const surface = ex.sv.slice(hit.start, hit.end);
     const keepCase = (w: string) => (surface[0] === surface[0]!.toUpperCase() ? w[0]!.toUpperCase() + w.slice(1) : w);
-    const sameGender = (r: SenseRef) =>
+    const sameGender = (r: LexRef) =>
       ref.entry.inflection.kind !== 'noun' || (r.entry.inflection.kind === 'noun' && r.entry.inflection.gender === ref.entry.inflection.gender);
     // Same word class, same form AND (for nouns) same gender, so grammar never gives the answer away.
-    const sameForm = (r: SenseRef) => r.entry.pos === ref.entry.pos && sameGender(r) && formOf(r.entry.inflection, hit.formKey, r.entry.lemma) !== null;
+    const sameForm = (r: LexRef) => r.entry.pos === ref.entry.pos && sameGender(r) && formOf(r.entry.inflection, hit.formKey, r.entry.lemma) !== null;
     // Distractors come from OTHER topics, so only the target fits the sentence
     // ("Det ligger leksaker på ___": not säng/bord, which would also fit).
     // Different words can share a form (mod/mode → modet), so options are de-duplicated by label.
@@ -236,7 +238,7 @@ export function genSynonymChoice(ref: SenseRef, ctx: GenContext): ChoiceExercise
   if (!cmp) return null;
   const rng = createRng(ctx.seed + 3);
   const item = cmp.items.find((i) => i.senseId === ref.sense.id)!;
-  const opts: ChoiceOption[] = cmp.items.map((i) => ({ senseId: i.senseId, label: ctx.repo.getSense(i.senseId)!.entry.lemma, lang: 'sv' }));
+  const opts: ChoiceOption[] = cmp.items.map((i) => ({ senseId: i.senseId, label: ctx.repo.getLex(i.senseId)!.entry.lemma, lang: 'sv' }));
   const correct = opts.find((o) => o.senseId === ref.sense.id)!;
   const options = shuffle(opts, rng);
   return {
@@ -276,7 +278,7 @@ type InflectionTarget = { key: string; frame: [string, string] };
  *   adj:   "Det är ___."  "De är ___."  "Den här är ___ än den där."
  * A sense may override the verb subject/complement (`frame`), e.g. "Isen" for smälta.
  */
-function inflectionTargets(e: VocabularyEntry, frame?: { subject?: string; complement?: string }): InflectionTarget[] {
+function inflectionTargets(e: Pick<VocabularyEntry, 'inflection' | 'lemma' | 'pos'>, frame?: { subject?: string; complement?: string }): InflectionTarget[] {
   const i = e.inflection;
   switch (i.kind) {
     case 'noun': {
@@ -308,7 +310,7 @@ function inflectionTargets(e: VocabularyEntry, frame?: { subject?: string; compl
   }
 }
 
-export function hasInflectionExercise(e: VocabularyEntry): boolean {
+export function hasInflectionExercise(e: Pick<VocabularyEntry, 'inflection' | 'lemma' | 'pos'>): boolean {
   return inflectionTargets(e).length > 0;
 }
 
@@ -342,7 +344,7 @@ export function genInflection(ref: SenseRef, ctx: GenContext): TypedExercise | n
 }
 
 /** Wrong options for a picture exercise: only senses whose picture can never be mistaken for the target (see content/images). */
-function imageDistractors(ref: SenseRef, ctx: GenContext, rng: () => number): SenseRef[] | null {
+function imageDistractors(ref: SenseRef, ctx: GenContext, rng: () => number): LexRef[] | null {
   if (!quizImageFor(ref.sense.id)) return null;
   const wrong = distractors(ref, ctx, learnConfig.choiceCount - 1, rng, (r) => imageDistractorAllowed(ref.sense.id, r.sense.id));
   return wrong.length < learnConfig.choiceCount - 1 ? null : wrong;
@@ -374,7 +376,7 @@ export function genImagePick(ref: SenseRef, ctx: GenContext): ChoiceExercise | n
   const rng = createRng(ctx.seed + 6);
   const wrong = imageDistractors(ref, ctx, rng);
   if (!wrong) return null;
-  const opt = (r: SenseRef): ChoiceOption => ({ senseId: r.sense.id, label: lemmaLabel(r.entry), lang: 'sv', image: r.sense.id });
+  const opt = (r: LexRef): ChoiceOption => ({ senseId: r.sense.id, label: lemmaLabel(r.entry), lang: 'sv', image: r.sense.id });
   const { options, correctIndex } = assemble(opt(ref), wrong.map(opt), rng);
   return {
     type: 'image_pick', senseId: ref.sense.id, dimension: 'meaning',

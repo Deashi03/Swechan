@@ -7,17 +7,19 @@ import { href, navigate } from '../app/router';
 import { Ja } from '../components/Ja';
 import { EntryView } from '../dictionary/EntryView';
 import { SearchResults } from '../dictionary/SearchResults';
+import { EntryGate } from '../app/useSenses';
 
 export function DictionaryScreen({ entryId, tab }: { entryId?: string; tab?: 'saved' }) {
   const repo = getContent();
   const [q, setQ] = useState('');
   const saved = useLiveQuery(() => getDb().savedWords.orderBy('savedAt').reverse().toArray(), [], []);
-  const entry = entryId ? repo.getEntry(entryId) : undefined;
-  if (entry) {
+  if (entryId && repo.getLexEntry(entryId)) {
     return (
       <div className="stack">
         <button className="btn ghost small" style={{ paddingLeft: 0 }} onClick={() => history.back()}>‹ Tillbaka</button>
-        <EntryView entry={entry} onOpenSense={(senseId) => navigate({ name: 'dictionary', entryId: repo.getSense(senseId)!.entry.id })} />
+        <EntryGate entryId={entryId}>
+          {(entry) => <EntryView entry={entry} onOpenSense={(senseId) => navigate({ name: 'dictionary', entryId: repo.getLex(senseId)!.entry.id })} />}
+        </EntryGate>
       </div>
     );
   }
@@ -32,7 +34,7 @@ export function DictionaryScreen({ entryId, tab }: { entryId?: string; tab?: 'sa
         saved.length === 0 ? <p className="muted small">Inga sparade ord ännu. Tryck på ”Spara ord” i en ordpost.</p> : (
           <ul className="list card" style={{ padding: '0 16px' }}>
             {saved.map((w) => {
-              const ref = repo.getSense(w.senseId);
+              const ref = repo.getLex(w.senseId);
               if (!ref) return null;
               return (
                 <li key={w.senseId}>
@@ -51,9 +53,9 @@ export function DictionaryScreen({ entryId, tab }: { entryId?: string; tab?: 'sa
           <input className="input search" type="search" placeholder="Svenska, böjningsform, japanska, kana…" value={q} onChange={(e) => setQ(e.target.value)} aria-label="Sök i ordboken" autoCapitalize="off" autoCorrect="off" spellCheck={false} />
           {q.trim() ? <SearchResults hits={getDictionaryIndex().search(q, 40)} onOpen={(id) => navigate({ name: 'dictionary', entryId: id })} /> : (
             <section>
-              <div className="section-title">Alla ord ({repo.entries.length})</div>
+              <div className="section-title">Alla ord ({repo.lexicon.length})</div>
               <ul className="list card" style={{ padding: '0 16px' }}>
-                {[...repo.entries].sort((a, b) => a.lemma.localeCompare(b.lemma, 'sv')).map((e) => (
+                {[...repo.lexicon].sort((a, b) => a.lemma.localeCompare(b.lemma, 'sv')).map((e) => (
                   <li key={e.id}><a className="list-item" href={href({ name: 'dictionary', entryId: e.id })}><span className="grow"><strong lang="sv">{e.lemma}</strong> <Ja text={e.senses[0]!.ja} className="small ja-gloss" /></span></a></li>
                 ))}
               </ul>

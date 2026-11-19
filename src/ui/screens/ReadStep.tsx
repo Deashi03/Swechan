@@ -76,8 +76,8 @@ function ReadingText({ moduleId, onDone }: { moduleId: string; onDone: () => voi
   const voice = useSwedishVoice();
   const [speaking, setSpeaking] = useState(false);
   const [active, setActive] = useState<string | null>(null);
-  const targetEntries = useMemo(() => new Set(m.words.map((w) => repo.getSense(w.senseId)?.entry.id)), [m, repo]);
-  const senseFor = (entryId: string) => m.words.find((w) => repo.getSense(w.senseId)?.entry.id === entryId)?.senseId;
+  const targetEntries = useMemo(() => new Set(m.words.map((w) => repo.getLex(w.senseId)?.entry.id)), [m, repo]);
+  const senseFor = (entryId: string) => m.words.find((w) => repo.getLex(w.senseId)?.entry.id === entryId)?.senseId;
   const paragraphs = useMemo(() => m.reading.paragraphs.map((p) => segmentText(p, getDictionaryIndex())), [m]);
 
   const toggleSpeech = () => {

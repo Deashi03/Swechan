@@ -8,13 +8,18 @@ import type { Module } from '../../content/schema';
 /** Lazy-loads a published lesson body (reading text + conversation) with error/retry state. */
 export function useModuleBody(id: string): { body: Module | undefined; error: string | null; retry: () => void } {
   const repo = getContent();
-  const [body, setBody] = useState<Module | undefined>(() => repo.getLoadedModuleBody(id));
+  const [body, setBody] = useState<Module | undefined>(() => {
+    const b = repo.getLoadedModuleBody(id);
+    return b && repo.sensesLoaded(repo.getModule(id)?.words.map((w) => w.senseId) ?? []) ? b : undefined;
+  });
   const [error, setError] = useState<string | null>(null);
   const [attempt, setAttempt] = useState(0);
   useEffect(() => {
     let alive = true;
     setError(null);
+    // Kvalitetsplanen A4b: the lesson also needs the full entries of its words (tap-a-word, conversation prompt).
     repo.loadModuleBody(id)
+      .then((b) => repo.ensureSenses(repo.getModule(id)?.words.map((w) => w.senseId) ?? []).then(() => b))
       .then((b) => { if (!alive) return; setBody(b); markModuleOffline(id); prefetchModuleVisuals(id); })
       .catch((e: Error) => alive && setError(navigator.onLine === false ? 'Du verkar vara offline, och den här lektionen har inte laddats på enheten än.' : e.message));
     return () => { alive = false; };
@@ -41,6 +46,8 @@ export function prefetchModuleVisuals(moduleId: string): void {
 export function prefetchModuleBodies(): void {
   const run = () => {
     const repo = getContent();
+    // Kvalitetsplanen A4b: every dictionary chunk too, so that all words work offline (cached by the service worker).
+    repo.ensureAll().catch(() => { /* loaded again on demand */ });
     for (const m of repo.modules) repo.loadModuleBody(m.id).then(() => markModuleOffline(m.id)).catch(() => { /* retried on open */ });
     // Word pictures (0.6): the illustration chunk and the photos, so that they are cached by the service worker.
     import('../wordArt/render').catch(() => undefined);

@@ -109,7 +109,7 @@ export function SettingsScreen() {
         <ul className="stack-sm" style={{ paddingLeft: 18, margin: 0 }}>
           {allWordImages().map((img) => img.kind === 'photo' && (
             <li key={img.senseId}>
-              <span lang="sv">{getContent().getSense(img.senseId)?.entry.lemma}</span>: <a href={img.credit.source} target="_blank" rel="noreferrer">{img.credit.title}</a> av {img.credit.creator}, <a href={img.credit.licenseUrl} target="_blank" rel="noreferrer">{img.credit.license}</a> (beskuren och komprimerad)
+              <span lang="sv">{getContent().getLex(img.senseId)?.entry.lemma}</span>: <a href={img.credit.source} target="_blank" rel="noreferrer">{img.credit.title}</a> av {img.credit.creator}, <a href={img.credit.licenseUrl} target="_blank" rel="noreferrer">{img.credit.license}</a> (beskuren och komprimerad)
             </li>
           ))}
         </ul>

@@ -3,7 +3,8 @@
  * Bundle size report and guard (kvalitetsplanen A4). Run after `npm run build`.
  *
  *   node scripts/bundle-report.mjs           print the largest chunks and the startup size
- *   node scripts/bundle-report.mjs --check   also fail if a chunk is larger than MAX_CHUNK_MB
+ *   node scripts/bundle-report.mjs --check   also fail if a chunk is larger than MAX_CHUNK_MB or the
+ *                                            start bundle is larger than MAX_STARTUP_GZ_MB (A4b)
  *
  * "Startup" = the files index.html loads directly plus their static imports (the eager graph).
  */
@@ -12,6 +13,12 @@ import path from 'node:path';
 import zlib from 'node:zlib';
 
 const MAX_CHUNK_MB = 5; // raw size of one JS chunk; the old single content chunk was 25 MB. module-index (≈3.6 MB) is the largest.
+// Kvalitetsplanen A4b: the dictionary is loaded lazily; the start bundle holds the app, the module index,
+// the word-picture register and the lexicon (light part of every headword).
+const MAX_STARTUP_GZ_MB = 3;
+// The lexicon is needed whole at start (search, word lists, distractors), so it has its own limit; the
+// start-bundle limit above is what keeps it in check.
+const MAX_LEXICON_MB = 8;
 const dist = path.resolve('dist');
 const html = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
 const size = (f) => fs.statSync(path.join(dist, f)).size;
@@ -34,10 +41,10 @@ let sRaw = 0, sGz = 0;
 for (const f of seen) { sRaw += size(f); sGz += gz(f); }
 console.log(`Startpaket: ${seen.size} filer, ${(sRaw / 1e6).toFixed(1)} MB rått, ${(sGz / 1e6).toFixed(2)} MB gzip`);
 if (process.argv.includes('--check')) {
-  const big = rows.filter((r) => r.raw > MAX_CHUNK_MB * 1e6);
-  if (big.length) {
-    for (const r of big) console.error(`För stor fil: ${r.f} (${(r.raw / 1e6).toFixed(1)} MB > ${MAX_CHUNK_MB} MB). Dela upp den i vite.config.ts.`);
-    process.exit(1);
-  }
+  const big = rows.filter((r) => r.raw > (/\/lexicon-/.test(r.f) ? MAX_LEXICON_MB : MAX_CHUNK_MB) * 1e6);
+  for (const r of big) console.error(`För stor fil: ${r.f} (${(r.raw / 1e6).toFixed(1)} MB > ${MAX_CHUNK_MB} MB). Dela upp den i vite.config.ts.`);
+  const tooBig = sGz > MAX_STARTUP_GZ_MB * 1e6;
+  if (tooBig) console.error(`Startpaketet är ${(sGz / 1e6).toFixed(2)} MB gzip > ${MAX_STARTUP_GZ_MB} MB. Ladda något lat (se ARCHITECTURE.md).`);
+  if (big.length || tooBig) process.exit(1);
   console.log('Storleksspärren: OK.');
 }

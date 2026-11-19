@@ -29,6 +29,7 @@ import { ExerciseView } from '../exercises/ExerciseView';
 import { WordIntro } from '../exercises/WordIntro';
 import { exerciseSenseIds, preloadVisuals } from '../components/preloadVisual';
 import { createSaveQueue } from '../../lib/saveQueue';
+import { SensesGate } from '../app/useSenses';
 
 type Props = {
   state: LearnSessionState;
@@ -39,7 +40,16 @@ type Props = {
   finishedLabel: string;
 };
 
-export function LearnSession({ state: initial, poolSenseIds, onSave, onExit: exitNow, onFinished: finishNow, finishedLabel }: Props) {
+/**
+ * Kvalitetsplanen A4b: the session's words need their full entries (definitions, examples). In the
+ * production build they are loaded per subject group, so the session waits for them first.
+ */
+export function LearnSession(props: Props) {
+  const ids = useMemo(() => [...new Set(props.state.plan.map((it) => it.senseId))], [props.state]);
+  return <SensesGate ids={ids}><LearnSessionInner {...props} /></SensesGate>;
+}
+
+function LearnSessionInner({ state: initial, poolSenseIds, onSave, onExit: exitNow, onFinished: finishNow, finishedLabel }: Props) {
   const [state, setState] = useState(initial);
   // Kvalitetsplanen A3: the next card is shown at once; answers are saved in the background, in order.
   const saves = useMemo(() => createSaveQueue(), []);

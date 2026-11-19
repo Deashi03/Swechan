@@ -16,7 +16,7 @@ Läs den här filen först. Historik: `changelog/` (en fil per release eller eta
 - **Kvalitetssystemet (kvalitetsplanen A2–A7, 2026-11-19):**
   - `npm run audit:content -- --check` i CI: 23 kvalitetsmått för de befintliga modulerna får inte bli sämre (`quality/metrics.json`), och nya moduler måste uppfylla kontraktet (`quality/contract.json`, `"standard": 2`).
   - `contentVersion` sätts automatiskt (`npm run content:version`, kontrolleras i CI).
-  - Laddtid: förladdade bilder, cache som överlever releaser, ordboken delad per ämnesgrupp, storleksspärr (`npm run bundle:report`). Bild efter "nästa" på cirka 30 ms i e2e.
+  - Laddtid: förladdade bilder, cache som överlever releaser, ordboken laddas lat (uppslagsdel vid start, fulla poster per ämnesgrupp), storleksspärr (`npm run bundle:report`). Bild efter "nästa" på cirka 30 ms i e2e.
   - Matchningstest för symbolbilder, manuellt bildspår i stället för "ingen bild", rörelse i motiv (`moving()`).
   - Betydelser: `order`, `level` och `inflection` per betydelse, `senseInventory` per post (`tools/production/senses.py`).
 - **Regler som stoppas av validering och tester:** kontrollerat ordförråd, furigana, förklaringar för B2-ord och svårare, 15–20 ord per modul, bild eller manuellt spår för varje modulord, blindtest för symbol- och adjektivbilder, kvalitetsspärren och kontraktet.
@@ -24,7 +24,7 @@ Läs den här filen först. Historik: `changelog/` (en fil per release eller eta
 
 ## Nästa steg
 
-1. **Kvalitetsplanen** (`docs/QUALITY_PLAN.md`, produktägarens beslut 2026-11-18): del A är klar utom **A4b** (asynkron ordbok, kan tas när som helst). Nästa är **B1–B4**, de snabba rättningarna (typografi och läsningar, säkra betydelser, grundord, animationer i Fysik och Kemi). Köerna: `npm run audit:content -- --backlog`.
+1. **Kvalitetsplanen** (`docs/QUALITY_PLAN.md`, produktägarens beslut 2026-11-18): del A är klar (också A4b, lat ordbok). Nästa är **B1–B4**, de snabba rättningarna (typografi och läsningar, säkra betydelser, grundord, animationer i Fysik och Kemi). Köerna: `npm run audit:content -- --backlog`.
    - Därefter ny produktion: *Datorer & internet* (R07-A01) enligt `docs/PRODUCTION_BRIEF.md`, som `standard: 2`. Resten av eftersläpningen (B5–B7) varvas med ny produktion: en etapp mellan varje nytt överämne.
    - Beslut: matchningstest för symbolbilder, manuellt spår för bilder som underkänts två gånger (aldrig "ingen bild"), kort förklaring för abstrakta B1-ord.
    - Arbetet görs av Opus (produktägarens val).

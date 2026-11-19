@@ -48,7 +48,7 @@ export class DictionaryIndex {
       if (list) { if (!list.some((x) => x.entryId === p.entryId && x.senseId === p.senseId && x.kind === p.kind)) list.push(p); }
       else this.exact.set(k, [p]);
     };
-    for (const e of repo.entries) {
+    for (const e of repo.lexicon) {
       add(e.lemma, { entryId: e.id, kind: 'lemma' });
       for (const f of allForms(e)) if (f !== e.lemma.toLowerCase()) add(f, { entryId: e.id, kind: 'form' });
       for (const s of e.senses) {

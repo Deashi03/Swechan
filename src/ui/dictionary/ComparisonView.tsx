@@ -15,7 +15,7 @@ export function ComparisonView({ cmp, onOpenSense, highlight }: { cmp: Compariso
       <Ja text={cmp.summaryJa} as="p" className="ja-word" />
       <ul className="list">
         {cmp.items.map((it) => {
-          const ref = repo.getSense(it.senseId)!;
+          const ref = repo.getLex(it.senseId)!;
           return (
             <li key={it.senseId}>
               <div className="stack-sm" style={{ padding: '10px 0', background: highlight === it.senseId ? 'var(--c-highlight)' : undefined, borderRadius: 8 }}>

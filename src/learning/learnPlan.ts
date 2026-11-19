@@ -32,7 +32,7 @@ export function buildLearnPlan(words: ModuleWord[], repo: ContentRepository, see
     const r2: LearnPlanItem[] = [];
     const r3: LearnPlanItem[] = [];
     batch.forEach((w, i) => {
-      const ref = repo.getSense(w.senseId);
+      const ref = repo.getLex(w.senseId);
       if (!ref) return;
       const picture = !!quizImageFor(w.senseId);
       r1.push(ex(w.senseId, picture ? (i % 2 === 0 ? 'image_choice' : 'image_pick') : i % 2 === 0 ? 'meaning_choice' : 'reverse_choice'));
@@ -100,7 +100,7 @@ export function batchProgress(state: LearnSessionState): { part: number; parts: 
 
 /** Dimensions that get their own review card for a word. */
 export function dimensionsForWord(word: ModuleWord, repo: ContentRepository): Dimension[] {
-  const ref = repo.getSense(word.senseId);
+  const ref = repo.getLex(word.senseId);
   if (!ref) return [];
   if (!word.active) return ['meaning'];
   return ['meaning', 'spelling', ...(hasInflectionExercise(ref.entry) ? (['inflection'] as Dimension[]) : [])];

@@ -12,8 +12,8 @@ export function SearchResults({ hits, onOpen }: { hits: DictionaryHit[]; onOpen:
   return (
     <ul className="list" aria-label="Sökresultat">
       {rows.map((h) => {
-        const e = repo.getEntry(h.entryId)!;
-        const sense = (h.senseId && repo.getSense(h.senseId)?.sense) || e.senses[0]!;
+        const e = repo.getLexEntry(h.entryId)!;
+        const sense = (h.senseId && repo.getLex(h.senseId)?.sense) || e.senses[0]!;
         return (
           <li key={h.entryId}>
             <button className="list-item" onClick={() => onOpen(h.entryId, h.senseId)}>

@@ -21,7 +21,10 @@ export function ReviewHub() {
     const day = await ensureDailySession();
     const db = getDb();
     const [events, cards] = await Promise.all([db.reviewEvents.toArray(), db.cards.toArray()]);
-    return { day, load: await reviewLoad(), difficult: difficultItems(events, cards).slice(0, 12), pairs: confusedPairs(events), pending: await pendingPersonalWords(), stats: await computeStats(), cardCount: cards.length };
+    const pairs = confusedPairs(events);
+    // Kvalitetsplanen A4b: the pairs show definitions – load their full entries first.
+    await getContent().ensureSenses(pairs.flatMap((p) => [p.a, p.b])).catch(() => undefined);
+    return { day, load: await reviewLoad(), difficult: difficultItems(events, cards).slice(0, 12), pairs, pending: await pendingPersonalWords(), stats: await computeStats(), cardCount: cards.length };
   }, []);
   if (!data) return <p className="muted">Laddar…</p>;
   const { day, load, difficult, pairs, pending, stats } = data;
@@ -66,7 +69,7 @@ export function ReviewHub() {
         {difficult.length === 0 ? <p className="small muted">Inga svåra ord just nu. Ord som du ofta svarar fel på visas här, uppdelat på betydelse, stavning och böjning.</p> : (
           <ul className="list card" style={{ padding: '0 16px' }}>
             {difficult.map((d) => {
-              const ref = repo.getSense(d.senseId);
+              const ref = repo.getLex(d.senseId);
               if (!ref) return null;
               return (
                 <li key={`${d.senseId}|${d.dimension}`}>

@@ -59,7 +59,7 @@ export function acceptedForms(infl: Inflection, key: string): string[] {
 }
 
 /** Every surface form of an entry (lower-case, unique), including variants. */
-export function allForms(entry: VocabularyEntry): string[] {
+export function allForms(entry: Pick<VocabularyEntry, 'lemma' | 'inflection'>): string[] {
   const infl = entry.inflection;
   const set = new Set<string>([entry.lemma.toLowerCase()]);
   if (infl.kind !== 'none') {

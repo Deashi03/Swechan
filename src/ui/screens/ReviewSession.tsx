@@ -19,6 +19,7 @@ import { ProgressBar } from '../components/Progress';
 import { useDictionarySheet } from '../dictionary/DictionarySheet';
 import { ExerciseView } from '../exercises/ExerciseView';
 import { exerciseSenseIds, preloadVisuals } from '../components/preloadVisual';
+import { useSensesReady } from '../app/useSenses';
 
 const MEANING_TYPES: ExerciseType[] = ['meaning_choice', 'reverse_choice', 'context_choice', 'synonym_choice'];
 const MEANING_TYPES_WITH_PICTURE: ExerciseType[] = [...MEANING_TYPES, ...IMAGE_TYPES];
@@ -47,10 +48,14 @@ export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
   const index = mode === 'daily' ? day?.reviewIndex ?? 0 : extra?.index ?? 0;
   const currentId = ids[index];
   const card = useLiveQuery(() => (currentId ? getDb().cards.get(currentId) : undefined), [currentId]);
+  // Kvalitetsplanen A4b: the card's full entry may still be loading (production build) – wait for it
+  // instead of treating the word as missing.
+  const senseIds = useMemo(() => (card ? [card.senseId] : null), [card]);
+  const { ready: senseReady } = useSensesReady(senseIds);
   const exercise = useMemo(() => {
-    if (!card || !date || card.id !== currentId) return null;
+    if (!card || !date || card.id !== currentId || !senseReady) return null;
     return generateExercise(exerciseTypeFor(card.id, card.dimension, date, !!quizImageFor(card.senseId)), card.senseId, { repo: getContent(), poolSenseIds: pool, seed: hashString(card.id + date) });
-  }, [card, date, pool, currentId]);
+  }, [card, date, pool, currentId, senseReady]);
 
   // Kvalitetsplanen A3: preload the visuals of every word in the session, and the next two cards'
   // exercises (with their picture options), so a card never waits for its picture.
@@ -60,7 +65,9 @@ export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
     let alive = true;
     getDb().cards.bulkGet(planKey.split(',')).then((cards) => {
       if (!alive) return;
-      preloadVisuals(cards.map((c) => c?.senseId));
+      const senses = cards.map((c) => c?.senseId).filter((s): s is string => !!s);
+      preloadVisuals(senses);
+      getContent().ensureSenses(senses).catch(() => undefined); // the whole session's entries (A4b)
     }).catch(() => undefined);
     return () => { alive = false; };
   }, [planKey]);
@@ -118,7 +125,7 @@ export function ReviewSession({ mode }: { mode: 'daily' | 'extra' }) {
         <button className="icon-btn" onClick={() => dict.open()} aria-label="Öppna ordboken"><Icon name="book" /></button>
       </div>
       {exercise ? <ExerciseView key={`${currentId}-${index}`} exercise={exercise} onDone={onDone} />
-        : card && card.id === currentId ? <div className="stack"><p className="muted">Det här ordet finns inte längre i innehållet och kan inte visas.</p><button className="btn" onClick={() => navigate({ name: 'home' })}>Till startsidan</button></div>
+        : card && card.id === currentId && senseReady ? <div className="stack"><p className="muted">Det här ordet finns inte längre i innehållet och kan inte visas.</p><button className="btn" onClick={() => navigate({ name: 'home' })}>Till startsidan</button></div>
         : <p className="muted">Laddar…</p>}
     </div>
   );

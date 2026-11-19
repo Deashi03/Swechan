@@ -121,7 +121,7 @@ export function ModuleOverview({ id }: { id: string }) {
         <summary>Modulens ord ({m.words.length})</summary>
         <ul className="list">
           {m.words.map((w) => {
-            const ref = repo.getSense(w.senseId);
+            const ref = repo.getLex(w.senseId);
             if (!ref) return null;
             return (
               <li key={w.senseId}>
