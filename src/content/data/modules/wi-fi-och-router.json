@@ -1,0 +1,186 @@
+{
+ "id": "m.wi-fi-och-router",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Wi-Fi och router",
+ "titleJa": "Wi-Fiとルーター",
+ "descriptionSv": "Du lär dig att skaffa internet hemma och koppla upp dig: hur routern tar emot bredbandet och skickar det vidare, vad som skiljer en trådlös uppkoppling från en med kabel och hur du hittar lösenordet till nätverket.",
+ "descriptionJa": "{家|いえ}でインターネットを{始|はじ}めて{接続|せつぞく}する{方法|ほうほう}を{学|まな}びます。ルーターがブロードバンドを{受|う}け{取|と}ってほかの{機器|きき}に{送|おく}るしくみ、{無線|むせん}の{接続|せつぞく}とケーブルを{使|つか}う{接続|せつぞく}の{違|ちが}い、ネットワークのパスワードの{見|み}つけ{方|かた}がわかるようになります。",
+ "categoryId": "R07-A01-T04",
+ "tags": [
+  "datorer",
+  "internet",
+  "nätverk"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.felmeddelanden-pa-webben"
+ ],
+ "related": [],
+ "recommendedOrder": 3741,
+ "words": [
+  {
+   "senseId": "s.wifi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.router.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bredband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fiber.2",
+   "active": true
+  },
+  {
+   "senseId": "s.internetleverantör.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nätverk.2",
+   "active": true
+  },
+  {
+   "senseId": "s.trådlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trådbunden.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätverkskabel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antenn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.blinka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppkopplad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-upp-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösenord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppkoppling.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Internet i den nya lägenheten",
+  "paragraphs": [
+   "Yuki har just flyttat till en lägenhet i Västerås. Huset har fiber, men hon har inget bredband ännu. Hon jämför priserna och väljer en internetleverantör som hennes kollegor tycker är bra.",
+   "Efter tre dagar kommer ett paket med en router. Yuki kopplar in den i uttaget för fiber och i ett vanligt eluttag. Routern har två små antenner. Först blinkar en lampa, sedan lyser den grönt.",
+   "Under routern står namnet på nätverket och ett lösenord. Yuki tar fram mobilen och kopplar upp sig på det nya wifit. Det går fort, och snart är mobilen uppkopplad.",
+   "Men den gamla datorn i arbetsrummet kan inte använda trådlöst nätverk. Därför köper Yuki en lång nätverkskabel och drar den från routern till datorn. En trådbunden uppkoppling är dessutom ofta stabilare.",
+   "På kvällen ringer Yuki ett videosamtal till sin mamma i Osaka. Bilden är skarp och ljudet är bra. – Din uppkoppling är bättre än min! skrattar mamman."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hade Yuki inte när hon flyttade in?",
+    "options": [
+     "Fiber i huset",
+     "En mobil",
+     "Bredband",
+     "Ett arbetsrum"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Huset har fiber, men hon har inget bredband ännu.",
+    "explanationJa": "{家|いえ}に{光回線|ひかりかいせん}はありましたが、ブロードバンドの{契約|けいやく}はまだありませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör lampan på routern först?",
+    "options": [
+     "Den lyser rött",
+     "Den lyser grönt",
+     "Den blinkar",
+     "Den lyser inte alls"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Först blinkar en lampa, sedan lyser den grönt.",
+    "explanationJa": "{最初|さいしょ}はランプが{点滅|てんめつ}して、それから{緑|みどり}に{光|ひか}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var hittar Yuki lösenordet till wifit?",
+    "options": [
+     "I ett mejl",
+     "Hos en kollega",
+     "På fakturan",
+     "Under routern"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Under routern står namnet på nätverket och ett lösenord.",
+    "explanationJa": "ルーターの{底|そこ}に、ネットワークの{名前|なまえ}とパスワードが{書|か}いてあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Den gamla datorn kan koppla upp sig trådlöst.",
+    "correct": false,
+    "explanationSv": "Men den gamla datorn i arbetsrummet kan inte använda trådlöst nätverk.",
+    "explanationJa": "{古|ふる}いパソコンは{無線|むせん}のネットワークを{使|つか}えないので、ケーブルでつなぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yukis mamma tycker att Yuki har en bra uppkoppling.",
+    "correct": true,
+    "explanationSv": "– Din uppkoppling är bättre än min! skrattar mamman.",
+    "explanationJa": "お{母|かあ}さんは、ユキの{接続|せつぞく}のほうが{自分|じぶん}のより{良|よ}いと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En trådbunden uppkoppling är ofta stabilare och snabbare än wifi.",
+    "source": "Post- och telestyrelsen (PTS), råd om bredband hemma",
+    "checked": "2026-11-19",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "I många flerbostadshus med fiber kan man välja mellan flera internetleverantörer (öppna stadsnät).",
+    "source": "Post- och telestyrelsen (PTS), bredbandskartläggning",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om internet hemma.",
+  "discussionPoints": [
+   "Har du fiber hemma, eller använder du bara mobilen?",
+   "Var står routern hemma hos dig?",
+   "Använder du någon gång en nätverkskabel? Varför?",
+   "Vad gör du när wifit inte fungerar?"
+  ]
+ },
+ "standard": 2
+}

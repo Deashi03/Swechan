@@ -1,0 +1,190 @@
+{
+ "id": "m.kryptering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Kryptering",
+ "titleJa": "{暗号化|あんごうか}",
+ "descriptionSv": "Du lär dig att förklara hur kryptering skyddar meddelanden och uppgifter, vad som händer när uppgifter läcker ut och hur man ser att det man skickar är skyddat.",
+ "descriptionJa": "{暗号化|あんごうか}がメッセージや{情報|じょうほう}をどう{守|まも}るか、{情報|じょうほう}が{漏|も}れるとどうなるか、{送|おく}るものが{守|まも}られているかどうかをどう{確|たし}かめるかを{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A01-T05",
+ "tags": [
+  "datorer",
+  "teknik",
+  "digital säkerhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.skadlig-programvara"
+ ],
+ "related": [],
+ "recommendedOrder": 3755,
+ "words": [
+  {
+   "senseId": "s.kryptering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chattapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjuvläsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obegriplig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avlyssna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klartext.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänglås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dataläcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.obehörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäcka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stöld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårddisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemlighålla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skydda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.digital-signatur.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Hemliga meddelanden",
+  "paragraphs": [
+   "Yuki arbetar på en vårdcentral i Uppsala. I dag går hela personalen en kurs om säkerhet på nätet. Läraren börjar med en fråga: – Varför kan ingen tjuvläsa era meddelanden i en chattapp?",
+   "Svaret är kryptering. När man skickar ett meddelande i många chattappar görs texten om till en obegriplig rad av tecken. Bara mottagarens mobil har nyckeln som gör om dem till text igen. Även om någon avlyssnar trafiken, ser de bara tecken utan mening.",
+   "Ett vanligt sms är däremot inte krypterat på samma sätt. – Skicka aldrig lösenord eller personnummer i ett sms, säger läraren. Information som inte är krypterad kallas klartext. När man handlar på nätet ska man i stället titta efter hänglåset bredvid webbadressen. Det visar att uppgifterna krypteras på vägen.",
+   "Sedan berättar läraren om en dataläcka hos ett företag. Företaget hade lagrat kundernas personuppgifter i klartext. När obehöriga kom in i systemet, kunde de läsa allt direkt. Krypterade uppgifter hade varit mycket svårare att knäcka.",
+   "Kryptering skyddar också vid en stöld. På vårdcentralen är varje hårddisk krypterad, eftersom vårdcentralen måste hemlighålla patienternas uppgifter. Den som stjäl en dator kan inte läsa något. Till sist visar läraren hur en digital signatur visar att ett dokument verkligen kommer från rätt person."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var arbetar Yuki?",
+    "options": [
+     "På en vårdcentral",
+     "På en bank",
+     "I en skola",
+     "På ett företag som gör appar"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Yuki arbetar på en vårdcentral i Uppsala.",
+    "explanationJa": "ユキはウプサラの{診療所|しんりょうじょ}で{働|はたら}いています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem kan läsa ett krypterat meddelande i en chattapp?",
+    "options": [
+     "Alla som har samma app",
+     "Alla som avlyssnar trafiken",
+     "Bara den som har rätt nyckel",
+     "Bara läraren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Bara mottagarens mobil har nyckeln som gör om dem till text igen.",
+    "explanationJa": "{正|ただ}しいかぎを{持|も}っている{受信者|じゅしんしゃ}のスマートフォンだけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att uppgifterna låg i klartext?",
+    "options": [
+     "Vem som helst kunde läsa dem",
+     "De var krypterade",
+     "De var raderade",
+     "De var skrivna på papper"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Information som inte är krypterad kallas klartext. När man handlar på nätet ska man i stället titta efter hänglåset bredvid webbadressen. Det visar att uppgifterna krypteras på vägen.",
+    "explanationJa": "{暗号化|あんごうか}されていなかったので、{誰|だれ}でも{読|よ}めたという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Läraren tycker att man kan skicka personnummer i ett sms.",
+    "correct": false,
+    "explanationSv": "– Skicka aldrig lösenord eller personnummer i ett sms, säger läraren.",
+    "explanationJa": "{先生|せんせい}は、SMSで{個人番号|こじんばんごう}を{送|おく}らないように{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den som stjäl en dator från vårdcentralen kan inte läsa patienternas uppgifter.",
+    "correct": true,
+    "explanationSv": "Den som stjäl en dator kan inte läsa något.",
+    "explanationJa": "ハードディスクが{暗号化|あんごうか}されているので、{読|よ}めません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Många chattappar använder totalsträckskryptering, medan ett vanligt sms inte är krypterat hela vägen mellan avsändare och mottagare. En krypterad hårddisk skyddar uppgifterna om datorn blir stulen.",
+    "source": "Internetstiftelsen (internetkunskap.se); Nationalencyklopedin, ”kryptering”",
+    "checked": "2026-11-19",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "En personuppgiftsincident ska anmälas till Integritetsskyddsmyndigheten inom 72 timmar om den innebär en risk för de registrerade.",
+    "source": "Dataskyddsförordningen, artikel 33; Integritetsskyddsmyndigheten (imy.se)",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kryptering och om hur man skyddar sina uppgifter.",
+  "discussionPoints": [
+   "Vilka chattappar använder du? Vet du om de är krypterade?",
+   "Vilka uppgifter skulle du aldrig skicka i ett vanligt sms eller mejl?",
+   "Har du läst om en dataläcka i nyheterna? Vad hände?",
+   "Tycker du att polisen ska kunna läsa krypterade meddelanden? Varför eller varför inte?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,180 @@
+{
+ "id": "m.harddisk-och-lagring",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Hårddisk och lagring",
+ "titleJa": "ハードディスクとストレージ",
+ "descriptionSv": "Var datorer och mobiler sparar bilder, filmer och texter: hur en hårddisk skiljer sig från en SSD, hur man flyttar filer till ett USB-minne eller ett minneskort och vad man gör när lagringsutrymmet tar slut.",
+ "descriptionJa": "パソコンやスマートフォンが{写真|しゃしん}、{動画|どうが}、{文書|ぶんしょ}をどこに{保存|ほぞん}するか：ハードディスクとSSDの{違|ちが}い、USBメモリやメモリーカードへのファイルの{移|うつ}し{方|かた}、そしてストレージの{空|あ}き{容量|ようりょう}がなくなったときにどうするかを{学|まな}びます。",
+ "categoryId": "R07-A01-T01",
+ "tags": [
+  "datorer",
+  "teknik",
+  "hårdvara"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.processor-och-minne"
+ ],
+ "related": [],
+ "recommendedOrder": 3712,
+ "words": [
+  {
+   "senseId": "s.data.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hårddisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ömtålig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.SSD.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagringsutrymme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rymma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.USB-minne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minneskort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cd-skiva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kopiera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överföra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tappa-bort.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Fullt i mobilen",
+  "paragraphs": [
+   "Kenji bor i Göteborg och tar många bilder. En dag kommer ett meddelande på mobilen: lagringsutrymmet är nästan slut. Mobilen rymmer 128 GB, men den är full av bilder och filmer.",
+   "Han frågar sin kollega Anna om råd. – Du kan överföra bilderna till datorn, säger hon. Där kan du lagra dem på hårddisken. Men en vanlig hårddisk är ganska ömtålig. Data sparas magnetiskt på en rund del som snurrar, och om man tappar datorn kan den gå sönder.",
+   "Kenjis dator har en SSD. Den har inga delar som rör sig, och den är snabbare än en vanlig hårddisk. Han kopierar alla bilder från mobilen till datorn. Sedan kopierar han de viktigaste bilderna till ett USB-minne också.",
+   "Kenji har också en gammal kamera. På minneskortet finns bilder från en resa till Japan. I en låda hittar han dessutom gamla cd-skivor med musik. Hans nya dator kan inte spela cd-skivor.",
+   "När allt är kopierat raderar han bilderna i mobilen. Nu har han gott om plats igen. – Lägg USB-minnet på ett säkert ställe, säger Anna. Det är lätt att tappa bort det."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står det i meddelandet på Kenjis mobil?",
+    "options": [
+     "Att batteriet är slut",
+     "Att han har fått ett mejl",
+     "Att lagringsutrymmet nästan är slut",
+     "Att kameran är trasig"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Lagringsutrymmet är nästan slut.",
+    "explanationJa": "ストレージの{空|あ}き{容量|ようりょう}がもうすぐなくなるという{知|し}らせです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är en vanlig hårddisk ömtålig enligt Anna?",
+    "options": [
+     "Den blir för varm i solen",
+     "Den är gjord av papper",
+     "Den sparar bara musik",
+     "Den kan gå sönder om man tappar datorn"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… om man tappar datorn kan den gå sönder.",
+    "explanationJa": "パソコンを{落|お}とすと{壊|こわ}れることがあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var sparar Kenji de viktigaste bilderna också?",
+    "options": [
+     "På en cd-skiva",
+     "På ett minneskort",
+     "I en annan mobil",
+     "På ett USB-minne"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sedan kopierar han de viktigaste bilderna till ett USB-minne också.",
+    "explanationJa": "{大事|だいじ}な{写真|しゃしん}はUSBメモリにもコピーします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kenjis nya dator kan spela cd-skivor.",
+    "correct": false,
+    "explanationSv": "Hans nya dator kan inte spela cd-skivor.",
+    "explanationJa": "{新|あたら}しいパソコンではCDを{再生|さいせい}できません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "När Kenji har raderat bilderna i mobilen finns de kvar på datorn.",
+    "correct": true,
+    "explanationSv": "När allt är kopierat raderar han bilderna i mobilen.",
+    "explanationJa": "コピーが{終|お}わってから{消|け}したので、パソコンには{残|のこ}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En vanlig hårddisk sparar data magnetiskt på runda skivor som snurrar. En SSD sparar data i minneskretsar utan rörliga delar och är oftast snabbare och tål stötar bättre.",
+    "source": "Nationalencyklopedin, uppslagen ”hårddisk” och ”SSD”",
+    "checked": "2026-11-19",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om var ni sparar bilder, filmer och texter.",
+  "discussionPoints": [
+   "Var sparar du dina bilder: i mobilen, på datorn eller någon annanstans?",
+   "Har du någon gång tappat bort ett USB-minne eller ett minneskort?",
+   "Har du kvar några gamla cd-skivor? Vad finns på dem?",
+   "Hur ofta raderar du saker för att få mer lagringsutrymme?"
+  ]
+ },
+ "standard": 2
+}

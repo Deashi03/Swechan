@@ -1,0 +1,186 @@
+{
+ "id": "m.domaner-och-servrar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Domäner och servrar",
+ "titleJa": "ドメインとサーバー",
+ "descriptionSv": "Du lär dig förklara vad som finns bakom en webbplats: var den ligger, vad det kostar att ha en egen adress på nätet och varför en sida kan bli långsam när många besöker den samtidigt.",
+ "descriptionJa": "ウェブサイトの{裏側|うらがわ}に{何|なに}があるかを{説明|せつめい}する{言葉|ことば}を{学|まな}びます。サイトがどこに{置|お}かれているか、ネット{上|じょう}に{自分|じぶん}のアドレスを{持|も}つのにいくらかかるか、たくさんの{人|ひと}が{同時|どうじ}に{見|み}るとなぜページが{遅|おそ}くなるのかを{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A01-T03",
+ "tags": [
+  "datorer",
+  "internet",
+  "servrar"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.cookies-och-cache"
+ ],
+ "related": [],
+ "recommendedOrder": 3736,
+ "words": [
+  {
+   "senseId": "s.server.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätverk.2",
+   "active": true
+  },
+  {
+   "senseId": "s.dygnet-runt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.datacenter.1",
+   "active": false
+  },
+  {
+   "senseId": "s.strömavbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kapacitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överbelastad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besökare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.domän.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.registrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ägare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förnya.1",
+   "active": true
+  },
+  {
+   "senseId": "s.webbhotell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänglås.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Emmas kafé på nätet",
+  "paragraphs": [
+   "Emma har ett litet kafé i Uppsala. Hon vill att kunderna ska kunna beställa tårtor på nätet, så hon behöver en egen webbplats.",
+   "Först behöver hon en domän. Hon vill ha kaféets namn och ”.se”. Hon kontrollerar att domänen är ledig, och det är den. Hon registrerar domänen och blir dess ägare. Hon måste förnya den varje år.",
+   "Sedan behöver webbplatsen en plats att ligga på. Emma betalar ett webbhotell. Webbhotellet har sina servrar i ett datacenter i norra Sverige. Där är det kallt, och det är bra, eftersom servrarna blir varma. Stora fläktar kyler dem dygnet runt. Om det blir strömavbrott finns det el i reserv.",
+   "Servern skickar Emmas webbplats genom nätverket till alla som vill se den. Före jul får webbplatsen plötsligt tusen besökare på en timme. Servern blir överbelastad och sidan blir långsam. Emma ringer webbhotellet, som ger henne mer kapacitet.",
+   "En kund frågar om det är säkert att betala på webbplatsen. Emma svarar att det finns ett litet hänglås vid adressen. Det visar att uppgifterna skickas på ett säkert sätt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Emma innan hon registrerar domänen?",
+    "options": [
+     "Hon betalar ett webbhotell",
+     "Hon köper en server",
+     "Hon kontrollerar att den är ledig",
+     "Hon ringer en kund"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon kontrollerar att domänen är ledig, och det är den.",
+    "explanationJa": "まず、ドメインが{空|あ}いているか{確|たし}かめました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är det bra att datacentret ligger där det är kallt?",
+    "options": [
+     "Servrarna blir varma",
+     "Elen är dyr där",
+     "Det finns många kunder där",
+     "Emma bor där"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Där är det kallt, och det är bra, eftersom servrarna blir varma.",
+    "explanationJa": "サーバーが{熱|あつ}くなるので、{寒|さむ}い{場所|ばしょ}が{向|む}いています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad händer när webbplatsen får tusen besökare på en timme?",
+    "options": [
+     "Domänen blir ledig",
+     "Emma får ett nytt hänglås",
+     "Webbhotellet stänger",
+     "Servern blir överbelastad"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Servern blir överbelastad och sidan blir långsam.",
+    "explanationJa": "サーバーに{負担|ふたん}がかかりすぎて、ページが{遅|おそ}くなりました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Emma behöver bara betala för domänen en gång.",
+    "correct": false,
+    "explanationSv": "Hon måste förnya den varje år.",
+    "explanationJa": "ドメインは{毎年|まいとし}{更新|こうしん}しなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Hänglåset vid adressen gör kunden lugnare.",
+    "correct": true,
+    "explanationSv": "Emma svarar att det finns ett litet hänglås vid adressen. Det visar att uppgifterna skickas på ett säkert sätt.",
+    "explanationJa": "{錠|じょう}のマークは{安全|あんぜん}を{示|しめ}すので、{客|きゃく}は{安心|あんしん}できます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Det finns stora datacenter i norra Sverige, till exempel i Luleå sedan 2013; kallt klimat och god tillgång på el är viktiga skäl till att de byggs där.",
+    "source": "Luleå kommun; Nationalencyklopedin (datacenter)",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Domäner som slutar på ”.se” registreras hos en registrar och förnyas för ett eller flera år i taget.",
+    "source": "Internetstiftelsen, villkor för toppdomänen ”.se”",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad som finns bakom en webbplats.",
+  "discussionPoints": [
+   "Om du skulle starta en webbplats, vilken domän skulle du vilja ha?",
+   "Har du sett en webbplats bli långsam eller överbelastad? När?",
+   "Tittar du efter hänglåset innan du betalar på nätet?",
+   "Vad tycker du om att stora datacenter byggs i Sverige?"
+  ]
+ },
+ "standard": 2
+}

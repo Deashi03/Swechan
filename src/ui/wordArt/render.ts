@@ -220,6 +220,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'galax.': () => import('./galaxies').then((m) => m.GALAX_MOTIFS),
   'rymdf.': () => import('./spaceflight').then((m) => m.SPACEFL_MOTIFS),
   'astmet.': () => import('./astroMethods').then((m) => m.ASTROMET_MOTIFS),
+  'hardw.': () => import('./hardware').then((m) => m.HARDWARE_MOTIFS),
+  'osfil.': () => import('./osFiles').then((m) => m.OSFILES_MOTIFS),
+  'webb.': () => import('./web').then((m) => m.WEB_MOTIFS),
+  'natv.': () => import('./networking').then((m) => m.NETWORK_MOTIFS),
+  'digsak.': () => import('./digitalSecurity').then((m) => m.DIGSEC_MOTIFS),
+  'digverk.': () => import('./digitalTools').then((m) => m.DIGTOOLS_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
 };
 const loaded: Motifs = {};

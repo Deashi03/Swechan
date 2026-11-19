@@ -1,0 +1,180 @@
+{
+ "id": "m.sokmotorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Sökmotorer",
+ "titleJa": "{検索|けんさく}エンジン",
+ "descriptionSv": "Du lär dig söka efter information på nätet och prata om det som sökmotorn visar. Du kan också förklara hur man skiljer en annons från en vanlig träff och hur man tar reda på om en källa går att lita på.",
+ "descriptionJa": "ネットで{情報|じょうほう}を{探|さが}し、{検索|けんさく}エンジンに{表示|ひょうじ}されたものについて{話|はな}す{言葉|ことば}を{学|まな}びます。また、{広告|こうこく}とふつうの{検索結果|けんさくけっか}の{見分|みわ}け{方|かた}や、{情報源|じょうほうげん}が{信用|しんよう}できるかどうかの{確|たし}かめ{方|かた}を{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A01-T03",
+ "tags": [
+  "datorer",
+  "internet",
+  "sökmotorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.webbplatser-och-webbadresser"
+ ],
+ "related": [],
+ "recommendedOrder": 3733,
+ "words": [
+  {
+   "senseId": "s.sökmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.googla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökförslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stavfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökresultat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träff.2",
+   "active": true
+  },
+  {
+   "senseId": "s.algoritm.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rangordna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.annons.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sponsrad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filtrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.citattecken.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bildsökning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.relevant.1",
+   "active": false
+  },
+  {
+   "senseId": "s.källa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trovärdig.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Yuki letar efter en tandläkare",
+  "paragraphs": [
+   "Yuki har ont i en tand. Hon har inte någon tandläkare i Sverige än, så hon googlar. Hon öppnar en sökmotor och skriver ”tandläkare” i sökfältet.",
+   "Redan efter några bokstäver kommer sökförslag. Yuki väljer ”tandläkare akut Malmö”. Hon har gjort ett stavfel i namnet på staden, men sökmotorn förstår ändå vad hon menar.",
+   "Sökresultatet visar tusentals träffar. En algoritm rangordnar sidorna, men de första träffarna är annonser. Där står det att länkarna är sponsrade. Yuki filtrerar resultaten och väljer bara mottagningar som har öppet i dag. Hon sätter också citattecken runt ett namn, för att bara få träffar med exakt de orden.",
+   "Yuki vill se hur mottagningen ser ut från gatan. Hon gör en bildsökning och hittar ett foto av huset. Nu vet hon var hon ska gå.",
+   "På kvällen läser Yuki om tandvård i Sverige. Hon tänker på vilka källor som är trovärdiga. En sida från regionen är mer trovärdig än ett inlägg av en okänd person. Hon väljer också bara sökord som är relevanta, till exempel ”pris” och ”tandvård”."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad skriver Yuki först i sökfältet?",
+    "options": [
+     "Malmö",
+     "pris",
+     "tandläkare",
+     "akut"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon öppnar en sökmotor och skriver ”tandläkare” i sökfältet.",
+    "explanationJa": "{最初|さいしょ}に「tandläkare（{歯医者|はいしゃ}）」と{入力|にゅうりょく}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är de första träffarna i sökresultatet?",
+    "options": [
+     "Bilder",
+     "Annonser",
+     "Sidor från regionen",
+     "Inlägg av okända personer"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… men de första träffarna är annonser. Där står det att länkarna är sponsrade.",
+    "explanationJa": "{最初|さいしょ}のいくつかは{広告|こうこく}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför gör Yuki en bildsökning?",
+    "options": [
+     "Hon vill se hur mottagningen ser ut från gatan",
+     "Hon vill se en bild av sin tand",
+     "Hon vill hitta ett billigare pris",
+     "Hon vill läsa om tandvård"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Yuki vill se hur mottagningen ser ut från gatan. Hon gör en bildsökning …",
+    "explanationJa": "{歯科医院|しかいいん}の{外観|がいかん}を{見|み}たかったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sökmotorn förstår inte vad Yuki menar när hon gör ett stavfel.",
+    "correct": false,
+    "explanationSv": "… men sökmotorn förstår ändå vad hon menar.",
+    "explanationJa": "つづりを{間違|まちが}えても、{検索|けんさく}エンジンは{意味|いみ}を{理解|りかい}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yuki tycker att alla sidor på nätet är lika trovärdiga.",
+    "correct": false,
+    "explanationSv": "En sida från regionen är mer trovärdig än ett inlägg av en okänd person.",
+    "explanationJa": "{地域|ちいき}の{公式|こうしき}ページのほうが{信用|しんよう}できると{考|かんが}えています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni söker information på internet.",
+  "discussionPoints": [
+   "Vilken sökmotor använder du, och varför?",
+   "Hur vet du om en träff är en annons?",
+   "Vad gör du när du inte hittar det du söker?",
+   "Hur tar du reda på om en källa är trovärdig?"
+  ]
+ },
+ "standard": 2
+}

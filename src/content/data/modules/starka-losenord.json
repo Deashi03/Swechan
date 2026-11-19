@@ -1,0 +1,184 @@
+{
+ "id": "m.starka-losenord",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Starka lösenord",
+ "titleJa": "{強|つよ}いパスワード",
+ "descriptionSv": "Du lär dig att beskriva hur ett starkt lösenord ser ut, hur man skyddar det och hur man håller ordning på många lösenord.",
+ "descriptionJa": "{強|つよ}いパスワードがどんなものか、それをどう{守|まも}るか、たくさんのパスワードをどう{管理|かんり}するかを{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A01-T05",
+ "tags": [
+  "datorer",
+  "teknik",
+  "digital säkerhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hemnatverkets-sakerhet"
+ ],
+ "related": [],
+ "recommendedOrder": 3751,
+ "words": [
+  {
+   "senseId": "s.lösenord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inloggningsuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hemlighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-lösenord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förutsägbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hackare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knäcka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kombination.1",
+   "active": false
+  },
+  {
+   "senseId": "s.versal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gemen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.specialtecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.unik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återanvända.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glömma-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriva-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösenordshanterare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slumpmässig.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett nytt lösenord",
+  "paragraphs": [
+   "Aiko har just börjat arbeta på ett kontor i Göteborg. Första dagen får hon sina inloggningsuppgifter av Johan, som ansvarar för datorerna. – Ditt lösenord är en hemlighet. Berätta det aldrig för någon, inte ens för mig, säger han.",
+   "– Byt lösenord nu, innan du gör något annat, säger Johan. Aiko skriver sin hunds namn och sitt födelseår. – Det är alldeles för förutsägbart, säger Johan. En hackare kan knäcka ett sådant lösenord på några sekunder.",
+   "Johan förklarar reglerna. Lösenordet ska vara minst tolv tecken långt. Det ska vara en kombination av versaler, gemener, siffror och specialtecken. – Och det ska vara unikt. Återanvänd aldrig samma lösenord till flera konton, säger han.",
+   "– Men hur ska jag komma ihåg alla lösenord? frågar Aiko. Jag glömmer bort dem hela tiden, så jag brukar skriva ner dem på en lapp. – Gör inte det, säger Johan. Använd en lösenordshanterare i stället. Den kan också göra långa, slumpmässiga lösenord åt dig.",
+   "Nu har Aiko bara ett lösenord som hon måste komma ihåg: lösenordet till lösenordshanteraren. Hon har valt fyra ord som inte hör ihop och lagt till en siffra och ett specialtecken. Lösenordet är långt, men hon kommer lätt ihåg det."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad får Aiko av Johan första dagen?",
+    "options": [
+     "En ny dator",
+     "En lapp med alla lösenord",
+     "Sina inloggningsuppgifter",
+     "En nyckel till kontoret"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Första dagen får hon sina inloggningsuppgifter av Johan.",
+    "explanationJa": "{最初|さいしょ}の{日|ひ}に、ヨハンからログイン{情報|じょうほう}をもらいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför tycker Johan att Aikos första lösenord är dåligt?",
+    "options": [
+     "Det är för långt",
+     "Det har för många specialtecken",
+     "Det är lätt att gissa",
+     "Det är skrivet på japanska"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Det är alldeles för förutsägbart, säger Johan.",
+    "explanationJa": "{犬|いぬ}の{名前|なまえ}と{生|う}まれた{年|とし}は、{簡単|かんたん}に{当|あ}てられてしまいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att ett lösenord ska vara unikt?",
+    "options": [
+     "Det är mycket långt",
+     "Man använder det bara till ett konto",
+     "Det har bara stora bokstäver",
+     "Man skriver det på en lapp"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Återanvänd aldrig samma lösenord till flera konton.",
+    "explanationJa": "{一|ひと}つのパスワードを{一|ひと}つのアカウントだけに{使|つか}うという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Johan tycker att Aiko ska skriva ner sina lösenord på en lapp.",
+    "correct": false,
+    "explanationSv": "– Gör inte det, säger Johan. Använd en lösenordshanterare i stället.",
+    "explanationJa": "ヨハンはメモに{書|か}かないで、パスワード{管理|かんり}アプリを{使|つか}うように{言|い}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Aiko behöver nu bara komma ihåg ett enda lösenord.",
+    "correct": true,
+    "explanationSv": "Nu har Aiko bara ett lösenord som hon måste komma ihåg.",
+    "explanationJa": "パスワード{管理|かんり}アプリのパスワードだけを{覚|おぼ}えればよくなりました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Ett starkt lösenord är långt, gärna flera ord, och unikt för varje konto; en lösenordshanterare hjälper en att hålla ordning på lösenorden.",
+    "source": "Polisen (polisen.se); Internetstiftelsen (internetkunskap.se)",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om lösenord och om hur man kommer ihåg dem.",
+  "discussionPoints": [
+   "Hur många lösenord tror du att du har?",
+   "Hur gör du för att komma ihåg dina lösenord?",
+   "Har du någon gång glömt bort ett viktigt lösenord? Vad hände då?",
+   "Skulle du vilja använda en lösenordshanterare? Varför eller varför inte?"
+  ]
+ },
+ "standard": 2
+}

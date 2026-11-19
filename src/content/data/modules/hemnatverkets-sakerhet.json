@@ -1,0 +1,195 @@
+{
+ "id": "m.hemnatverkets-sakerhet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Hemnätverkets säkerhet",
+ "titleJa": "{家庭|かてい}ネットワークのセキュリティ",
+ "descriptionSv": "Du lär dig att skydda nätverket hemma: varför du ska byta lösenord på routern, hur gäster och barn kan använda nätet på ett säkert sätt och hur du skyddar dina uppgifter när du sitter på ett kafé eller ett tåg.",
+ "descriptionJa": "{家|いえ}のネットワークを{守|まも}る{方法|ほうほう}を{学|まな}びます。ルーターのパスワードを{変|か}えるべき{理由|りゆう}、お{客|きゃく}さんや{子|こ}どもが{安全|あんぜん}にネットを{使|つか}う{方法|ほうほう}、カフェや{電車|でんしゃ}で{自分|じぶん}の{情報|じょうほう}を{守|まも}る{方法|ほうほう}がわかるようになります。",
+ "categoryId": "R07-A01-T04",
+ "tags": [
+  "datorer",
+  "internet",
+  "nätverk",
+  "säkerhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.natverksproblem"
+ ],
+ "related": [],
+ "recommendedOrder": 3747,
+ "words": [
+  {
+   "senseId": "s.router.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skydda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.standardlösenord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obehörig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hackare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dataintrång.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppdatera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandvägg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enhet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.övervakningskamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gästnätverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.granne.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snylta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.föräldrakontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.offentligt-wifi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avlyssna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kryptera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.VPN.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem använder vårt wifi?",
+  "paragraphs": [
+   "Naoko och Oskar bor med sina två barn i en lägenhet i Göteborg. En kväll tittar Oskar i routerns app. Där står det att tolv enheter är uppkopplade, men familjen har bara sju.",
+   "Det visar sig att de aldrig har bytt routerns standardlösenord. Det står på en lapp under routern och är lätt att gissa. Kanske snyltar en granne på deras wifi? Eller är det något värre, en hackare som har gjort ett dataintrång?",
+   "Oskar byter lösenordet direkt. Han uppdaterar också routerns programvara och kontrollerar att brandväggen är på. Nu kan inga obehöriga personer komma in. Han märker också att familjens övervakningskamera vid dörren fortfarande har ett enkelt lösenord, så han byter det också.",
+   "När vänner kommer på besök får de använda gästnätverket. Då kommer de ut på internet, men inte åt familjens andra enheter. På barnens surfplattor slår Naoko på föräldrakontroll, så att barnen inte kan se vad som helst.",
+   "Naoko reser mycket i jobbet och använder ofta offentligt wifi på tåg och kaféer. – Där kan någon ibland avlyssna det du skickar, säger Oskar. Därför använder Naoko nu ett VPN som krypterar allt. Så kan hon skydda sina uppgifter även när hon inte är hemma."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många enheter är uppkopplade enligt appen?",
+    "options": [
+     "Sju",
+     "Tolv",
+     "Två",
+     "Fem"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Där står det att tolv enheter är uppkopplade, men familjen har bara sju.",
+    "explanationJa": "アプリには{十二台|じゅうにだい}と{表示|ひょうじ}されています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför var det lätt för andra att komma in i nätverket?",
+    "options": [
+     "Routern var trasig",
+     "De hade aldrig bytt standardlösenordet",
+     "Grannen hade fått lösenordet av dem",
+     "Brandväggen var för gammal"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det visar sig att de aldrig har bytt routerns standardlösenord.",
+    "explanationJa": "ルーターの{初期|しょき}パスワードを{一度|いちど}も{変|か}えていなかったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad kan vänner göra på gästnätverket?",
+    "options": [
+     "Ändra routerns lösenord",
+     "Titta på familjens övervakningskamera",
+     "Komma ut på internet, men inte åt familjens enheter",
+     "Slå av föräldrakontrollen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Då kommer de ut på internet, men inte åt familjens andra enheter.",
+    "explanationJa": "インターネットは{使|つか}えますが、{家族|かぞく}のほかの{機器|きき}にはアクセスできません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Oskar stänger av brandväggen.",
+    "correct": false,
+    "explanationSv": "… och kontrollerar att brandväggen är på.",
+    "explanationJa": "ファイアウォールがオンになっているか{確認|かくにん}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Naoko använder ett VPN när hon sitter på offentligt wifi.",
+    "correct": true,
+    "explanationSv": "Därför använder Naoko nu ett VPN som krypterar allt.",
+    "explanationJa": "{公衆|こうしゅう}Wi-Fiを{使|つか}うときは、VPNを{使|つか}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Vanliga råd för hemnätverket är att byta routerns standardlösenord, uppdatera routern och låta besökare använda ett gästnätverk.",
+    "source": "Myndigheten för samhällsskydd och beredskap (MSB), Tänk säkert",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   },
+   {
+    "text": "På offentligt wifi ger ett VPN extra skydd, även om de flesta webbplatser i dag använder kryptering.",
+    "source": "Internetstiftelsen, Internetkunskap",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om säkerhet i hemnätverket och på offentligt wifi.",
+  "discussionPoints": [
+   "Har du bytt standardlösenordet på din router?",
+   "Har ni ett gästnätverk hemma?",
+   "Använder du offentligt wifi? Var?",
+   "Vad tycker du om föräldrakontroll?"
+  ]
+ },
+ "standard": 2
+}

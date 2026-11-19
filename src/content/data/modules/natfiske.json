@@ -1,0 +1,188 @@
+{
+ "id": "m.natfiske",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Nätfiske",
+ "titleJa": "フィッシング{詐欺|さぎ}",
+ "descriptionSv": "Du lär dig att känna igen bedrägerier i sms, mejl och telefon, att beskriva varningstecknen och att berätta vad man gör om någon försöker lura en.",
+ "descriptionJa": "SMS、メール、{電話|でんわ}での{詐欺|さぎ}を{見分|みわ}け、{危険|きけん}なサインを{説明|せつめい}し、だまされそうになったときにどうするかを{話|はな}せるようになります。",
+ "categoryId": "R07-A01-T05",
+ "tags": [
+  "datorer",
+  "teknik",
+  "digital säkerhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tvafaktorsautentisering"
+ ],
+ "related": [],
+ "recommendedOrder": 3753,
+ "words": [
+  {
+   "senseId": "s.nätfiske.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bluff-sms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bedragare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lura.1",
+   "active": true
+  },
+  {
+   "senseId": "s.misstänksam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avsändare.2",
+   "active": true
+  },
+  {
+   "senseId": "s.varningstecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brådskande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stavfel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kortnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bilaga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.äkta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utge-sig-för.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lita-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spärra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.polisanmäla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Paketet som aldrig kom",
+  "paragraphs": [
+   "Naoko får ett sms: ”Ditt paket kan inte levereras. Betala 19 kronor i dag, annars skickas det tillbaka.” Hon väntar faktiskt på ett paket från Japan, så först blir hon inte misstänksam.",
+   "Men hennes man Lars läser meddelandet. – Det här är ett bluff-sms, säger han. Det kallas nätfiske. Bedragare skickar sådana meddelanden till tusentals människor för att lura dem. Titta på avsändaren. Det är ett konstigt nummer, inte ett riktigt företag.",
+   "Lars visar fler varningstecken. Meddelandet är brådskande, det har stavfel, och länken leder till en sida där hon ska skriva sitt kortnummer. Samma sak gäller mejl med en bilaga som man inte väntar på. – Ett äkta företag ber aldrig om din kod i ett sms, säger han.",
+   "Veckan efter ringer en man som utger sig för att vara från Naokos bank. Han säger att någon har tagit pengar från hennes konto och ber henne lämna ut koden från sitt BankID. Men Naoko vågar inte lita på honom. Hon lägger på och ringer själv till banken på numret som står på hennes bankkort.",
+   "Banken förklarar att det var ett försök till bedrägeri. Om hon hade lämnat ut koden, hade hon behövt spärra kortet och polisanmäla brottet direkt. Nu har ingenting hänt, men Naoko berättar om samtalet för sina vänner, så att de också kan skydda sig."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför blir Naoko först inte misstänksam?",
+    "options": [
+     "Hon väntar på ett paket",
+     "Hon känner avsändaren",
+     "Lars har skickat meddelandet",
+     "Hon har redan betalat"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon väntar faktiskt på ett paket från Japan, så först blir hon inte misstänksam.",
+    "explanationJa": "{実際|じっさい}に{日本|にほん}からの{荷物|にもつ}を{待|ま}っているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket varningstecken nämner Lars?",
+    "options": [
+     "Meddelandet är brådskande",
+     "Meddelandet är på japanska",
+     "Meddelandet är mycket långt",
+     "Meddelandet kommer från banken"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Meddelandet är brådskande, det har stavfel …",
+    "explanationJa": "{急|いそ}がせる{内容|ないよう}であることが{危険|きけん}なサインの{一|ひと}つです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att mannen utger sig för att vara från banken?",
+    "options": [
+     "Han arbetar verkligen på banken",
+     "Han ger banken pengar",
+     "Han går ut från banken",
+     "Han säger att han är från banken, men det är inte sant"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… en man som utger sig för att vara från Naokos bank.",
+    "explanationJa": "{本当|ほんとう}は{銀行|ぎんこう}の{人|ひと}ではないのに、そう{言|い}っているという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Naoko lämnar ut koden till mannen i telefonen.",
+    "correct": false,
+    "explanationSv": "Men Naoko vågar inte lita på honom. Hon lägger på …",
+    "explanationJa": "ナオコは{電話|でんわ}を{切|き}って、コードを{教|おし}えませんでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Naoko vill att hennes vänner inte ska bli lurade.",
+    "correct": true,
+    "explanationSv": "Naoko berättar om samtalet för sina vänner, så att de också kan skydda sig.",
+    "explanationJa": "{友達|ともだち}も{身|み}を{守|まも}れるように{話|はな}しています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Varningstecken på nätfiske är bland annat en brådskande ton, en okänd avsändare och krav på kod eller kortnummer. Lägg på och ring själv banken på ett nummer som du vet stämmer.",
+    "source": "Polisen (polisen.se), om bedrägerier",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bedragare på nätet och i telefon.",
+  "discussionPoints": [
+   "Har du fått ett bluff-sms eller ett konstigt mejl? Vad stod det i det?",
+   "Vilka varningstecken tittar du efter?",
+   "Vad skulle du göra om någon ringde och utgav sig för att vara från din bank?",
+   "Är nätfiske vanligt i Japan också? Hur ser det ut där?"
+  ]
+ },
+ "standard": 2
+}

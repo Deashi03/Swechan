@@ -1,0 +1,175 @@
+{
+ "id": "m.installera-program",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Installera program",
+ "titleJa": "プログラムのインストール",
+ "descriptionSv": "Hur man skaffar ett nytt program eller en app: kontrollera att det fungerar på datorn, prova det gratis, godkänna villkoren, installera det och ta bort det när man inte behöver det längre.",
+ "descriptionJa": "{新|あたら}しいプログラムやアプリを{入|い}れる{方法|ほうほう}を{学|まな}びます。パソコンで{動|うご}くか{確|たし}かめる、{無料|むりょう}で{試|ため}す、{条件|じょうけん}に{同意|どうい}する、インストールする、そして{要|い}らなくなったら{削除|さくじょ}する{方法|ほうほう}です。",
+ "categoryId": "R07-A01-T02",
+ "tags": [
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.mappar-och-filtyper"
+ ],
+ "related": [],
+ "recommendedOrder": 3723,
+ "words": [
+  {
+   "senseId": "s.datorprogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.app.1",
+   "active": true
+  },
+  {
+   "senseId": "s.appbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.installera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.systemkrav.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kompatibel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.testversion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.licens.1",
+   "active": false
+  },
+  {
+   "senseId": "s.villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryssa-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genväg.2",
+   "active": true
+  },
+  {
+   "senseId": "s.starta-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppgradera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prenumeration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avinstallera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett nytt program för kursen",
+  "paragraphs": [
+   "Hiroshi går en kurs i bokföring, och läraren säger att alla behöver ett speciellt datorprogram. Det finns ingen app för mobilen, så Hiroshi måste installera programmet på sin dator.",
+   "Först läser han om systemkraven på företagets sida på nätet. Hans dator är fem år gammal, men programmet är kompatibelt med den. Han laddar ner en testversion som är gratis i trettio dagar.",
+   "När han installerar programmet kommer en ruta med villkor och en licens. Hiroshi läser lite och kryssar i rutan för att godkänna villkoren. Programmet gör också en genväg på skrivbordet. Efteråt måste han starta om datorn.",
+   "Efter en månad slutar testversionen att fungera. Hiroshi kan uppgradera till hela programmet, men då behöver han en prenumeration för 99 kronor i månaden. Han bestämmer sig för att betala, eftersom kursen är viktig för honom.",
+   "Sedan öppnar han appbutiken i mobilen och letar efter appar som han inte använder längre. Han avinstallerar fyra gamla spel. Nu har mobilen mer plats."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför installerar Hiroshi programmet på datorn?",
+    "options": [
+     "Datorn är helt ny",
+     "Läraren har redan betalat",
+     "Programmet finns bara i appbutiken",
+     "Det finns ingen app för mobilen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det finns ingen app för mobilen, så Hiroshi måste installera programmet på sin dator.",
+    "explanationJa": "スマホ{用|よう}のアプリがないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad läser Hiroshi om först?",
+    "options": [
+     "Villkoren för prenumerationen",
+     "Systemkraven",
+     "Ett mejl från läraren",
+     "Gamla spel i mobilen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Först läser han om systemkraven på företagets sida på nätet.",
+    "explanationJa": "{最初|さいしょ}に{動作環境|どうさかんきょう}を{読|よ}みます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Hur godkänner Hiroshi villkoren?",
+    "options": [
+     "Han startar om datorn",
+     "Han kryssar i en ruta",
+     "Han laddar ner en testversion",
+     "Han ringer till företaget"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hiroshi läser lite och kryssar i rutan för att godkänna villkoren.",
+    "explanationJa": "チェックボックスにチェックを{入|い}れて{同意|どうい}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Testversionen är gratis i trettio dagar.",
+    "correct": true,
+    "explanationSv": "Han laddar ner en testversion som är gratis i trettio dagar.",
+    "explanationJa": "{試用版|しようばん}は{三十日間|さんじゅうにちかん}{無料|むりょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Hiroshi avinstallerar programmet för kursen när testversionen slutar fungera.",
+    "correct": false,
+    "explanationSv": "Han bestämmer sig för att betala, eftersom kursen är viktig för honom.",
+    "explanationJa": "ヒロシはお{金|かね}を{払|はら}ってプログラムを{使|つか}い{続|つづ}けます。{削除|さくじょ}したのは{古|ふる}いゲームです。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om program och appar som ni använder.",
+  "discussionPoints": [
+   "Vilka appar använder du varje dag?",
+   "Läser du villkoren innan du godkänner dem?",
+   "Betalar du för någon prenumeration på en app eller ett program?",
+   "Hur ofta avinstallerar du appar som du inte använder?"
+  ]
+ },
+ "standard": 2
+}

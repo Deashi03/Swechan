@@ -555,6 +555,7 @@
        "ja": "その{靴|くつ}を{買|か}ったことを{後悔|こうかい}しています。"
       }
      ],
+     "labelSv": "känsla",
      "frame": {
       "subject": "Hon",
       "complement": "köpet"
@@ -565,8 +566,61 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.ångra.2",
+     "ja": "（{操作|そうさ}を）{取|と}り{消|け}す",
+     "defSv": "Ta bort det senaste som man gjorde på datorn eller mobilen, så att det blir som förut.",
+     "defJa": "パソコンやスマホで、{最後|さいご}にしたことをなかったことにして、{前|まえ}の{状態|じょうたい}に{戻|もど}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag skrev fel ord, men jag kunde ångra det.",
+       "ja": "{間違|まちが}った{言葉|ことば}を{書|か}きましたが、{取|と}り{消|け}すことができました。"
+      }
+     ],
+     "labelSv": "på datorn",
+     "frame": {
+      "subject": "Hon",
+      "complement": "det"
+     },
+     "tags": [
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.ångra.3",
+     "ja": "（{購入|こうにゅう}や{注文|ちゅうもん}を）キャンセルする",
+     "defSv": "Ta tillbaka ett köp eller en beställning, så att den inte gäller längre.",
+     "defJa": "{買|か}い{物|もの}や{注文|ちゅうもん}を{取|と}り{消|け}して、{無効|むこう}にする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag ångrade beställningen samma dag.",
+       "ja": "その{日|ひ}のうちに{注文|ちゅうもん}をキャンセルしました。"
+      }
+     ],
+     "labelSv": "ett köp",
+     "frame": {
+      "subject": "Hon",
+      "complement": "köpet"
+     },
+     "tags": [
+      "handla"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19"
+   }
   }
  ]
 }

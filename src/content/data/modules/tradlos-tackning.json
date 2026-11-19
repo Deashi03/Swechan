@@ -1,0 +1,186 @@
+{
+ "id": "m.tradlos-tackning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Trådlös täckning",
+ "titleJa": "{無線|むせん}の{電波|でんぱ}が{届|とど}く{範囲|はんい}",
+ "descriptionSv": "Du lär dig att förklara varför wifit eller mobilen fungerar dåligt på vissa platser, hur långt en signal når och vad som står i vägen för den, och vad man kan göra för att få bättre signal i hela hemmet.",
+ "descriptionJa": "Wi-Fiやスマホが{場所|ばしょ}によってうまく{使|つか}えない{理由|りゆう}、{電波|でんぱ}がどこまで{届|とど}き、{何|なに}がそれをさえぎるのか、{家|いえ}じゅうで{電波|でんぱ}を{良|よ}くするために{何|なに}ができるかを{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A01-T04",
+ "tags": [
+  "datorer",
+  "internet",
+  "nätverk"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.bandbredd-och-svarstid"
+ ],
+ "related": [],
+ "recommendedOrder": 3745,
+ "words": [
+  {
+   "senseId": "s.trådlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.wifi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.router.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räckvidd.3",
+   "active": true
+  },
+  {
+   "senseId": "s.radiovåg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hinder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.placera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förstärkare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.störning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.täckning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.streck.2",
+   "active": true
+  },
+  {
+   "senseId": "s.mobilmast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.källare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tunnel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glesbygd.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett streck i källaren",
+  "paragraphs": [
+   "Ingrid och Johan har köpt ett gammalt hus med tre våningar i Dalarna. Routern står i hallen på bottenvåningen. Där fungerar wifit bra, men på övervåningen kan man knappt titta på en film. Routerns räckvidd räcker inte till hela huset.",
+   "Deras granne Lars jobbar med datorer, och han kommer över och tittar. – Wifi skickas med radiovågor, förklarar han. Tjocka väggar av sten är ett stort hinder. Ni ska placera routern mitt i huset och högt upp, inte bakom tv:n.",
+   "Ingrid och Johan flyttar routern och köper en förstärkare till övervåningen. Lars ser också att mikrovågsugnen står precis bredvid routern. – Den kan ge störningar, säger han. Efter en timme har de bra trådlöst nät i hela huset, utom i källaren.",
+   "Mobilen är ett annat problem. Huset ligger i glesbygd, och täckningen är dålig. I källaren har Ingrid bara ett streck, eller inget alls. Den närmaste mobilmasten står fem kilometer bort.",
+   "Johan pendlar till Falun med tåg. När tåget åker genom en tunnel försvinner täckningen, och hans samtal bryts. – Nästa år ska det byggas en ny mobilmast nära byn, säger Lars. Då blir det bättre."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var i huset fungerar wifit bra från början?",
+    "options": [
+     "På övervåningen",
+     "I källaren",
+     "På bottenvåningen",
+     "Överallt i huset"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Routern står i hallen på bottenvåningen. Där fungerar wifit bra …",
+    "explanationJa": "ルーターのある{一階|いっかい}では、Wi-Fiがよく{使|つか}えます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var ska de placera routern enligt Lars?",
+    "options": [
+     "Bakom tv:n",
+     "Mitt i huset och högt upp",
+     "I källaren",
+     "I köket nära mikrovågsugnen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ni ska placera routern mitt i huset och högt upp, inte bakom tv:n.",
+    "explanationJa": "{家|いえ}の{真|ま}ん{中|なか}の{高|たか}いところに{置|お}くように{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är mikrovågsugnen ett problem?",
+    "options": [
+     "Den drar för mycket el",
+     "Den är för varm",
+     "Den kan ge störningar",
+     "Den står i vägen för dörren"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Den kan ge störningar, säger han.",
+    "explanationJa": "{電子|でんし}レンジはWi-Fiの{電波|でんぱ}を{妨害|ぼうがい}することがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ingrid har bra täckning i källaren.",
+    "correct": false,
+    "explanationSv": "I källaren har Ingrid bara ett streck, eller inget alls.",
+    "explanationJa": "{地下室|ちかしつ}ではアンテナが{一本|いっぽん}か、{圏外|けんがい}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Johans samtal bryts när tåget åker genom en tunnel.",
+    "correct": true,
+    "explanationSv": "När tåget åker genom en tunnel försvinner täckningen, och hans samtal bryts.",
+    "explanationJa": "トンネルの{中|なか}では{電波|でんぱ}がなくなり、{通話|つうわ}が{切|き}れます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Väggar, golv och mikrovågsugnar kan försämra wifi, och var routern står påverkar hur långt signalen når.",
+    "source": "Post- och telestyrelsen (PTS), råd om wifi i hemmet",
+    "checked": "2026-11-19",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Mobiltäckningen är ofta sämre i glesbygd, i källare och i tunnlar.",
+    "source": "Post- och telestyrelsen (PTS), mobiltäckning och bredbandskartläggning",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om täckning och trådlöst nät.",
+  "discussionPoints": [
+   "Var i ditt hem är wifit sämst?",
+   "Finns det någon plats där du ofta har dålig täckning?",
+   "Har du en förstärkare eller flera routrar hemma?",
+   "Hur många streck har du på mobilen just nu?"
+  ]
+ },
+ "standard": 2
+}

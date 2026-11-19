@@ -1,0 +1,196 @@
+{
+ "id": "m.ip-adresser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "IP-adresser",
+ "titleJa": "IPアドレス",
+ "descriptionSv": "Du lär dig hur datorer, mobiler och skrivare hittar varandra i ett nätverk med hjälp av IP-adresser, hur det du skickar delas upp på vägen och vad andra kan se om dig när du är på nätet.",
+ "descriptionJa": "パソコン、スマホ、プリンターがIPアドレスを{使|つか}ってネットワークの{中|なか}でおたがいを{見|み}つけるしくみ、{送|おく}ったデータが{途中|とちゅう}でどのように{分|わ}けられるか、ネットを{使|つか}うとき{他人|たにん}に{何|なに}が{見|み}えるかを{学|まな}びます。",
+ "categoryId": "R07-A01-T04",
+ "tags": [
+  "datorer",
+  "internet",
+  "nätverk"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.mobildata"
+ ],
+ "related": [],
+ "recommendedOrder": 3743,
+ "words": [
+  {
+   "senseId": "s.IP-adress.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enhet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lokalt-nätverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.router.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tilldela.1",
+   "active": false
+  },
+  {
+   "senseId": "s.unik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.datapaket.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avsändare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mottagare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.identifiera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ungefärlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spåra.3",
+   "active": true
+  },
+  {
+   "senseId": "s.anonym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dölja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utlandet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.geoblockering.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Skrivaren som försvann",
+  "paragraphs": [
+   "Kenji arbetar på ett litet kontor i Malmö. En måndag morgon kan ingen skriva ut. Datorerna hittar inte skrivaren. Kenji ringer till Lena, som tar hand om datorerna på kontoret.",
+   "– Alla enheter i vårt lokala nätverk har en IP-adress, förklarar Lena. Det är en rad med siffror, till exempel 192.168.1.25. Routern tilldelar adresserna, och varje adress måste vara unik. I helgen startade routern om, och då fick skrivaren en ny adress. Därför hittar datorerna den inte.",
+   "Lena ger skrivaren en fast adress, och sedan fungerar allt igen. Kenji blir nyfiken. – Hur fungerar det när jag skickar ett mejl? frågar han. – Mejlet delas upp i små datapaket, säger Lena. Varje paket har en avsändare och en mottagare, ungefär som ett brev. IP-adresserna visar vägen.",
+   "– Kan man identifiera mig med min IP-adress? frågar Kenji. – Inte direkt, säger Lena. Men en webbplats kan se din ungefärliga plats. Polisen kan ibland spåra en IP-adress med hjälp av internetleverantören. Helt anonym är man alltså inte på nätet, även om det finns tjänster som döljer adressen.",
+   "Kenji berättar att han inte kunde se ett program från svensk tv när han var i Japan förra sommaren. – Det var geoblockering, säger Lena. Tjänsten såg på din IP-adress att du var i utlandet."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket problem har kontoret på måndagen?",
+    "options": [
+     "Internet är för långsamt",
+     "Routern har gått sönder",
+     "Datorerna startar inte",
+     "Ingen kan skriva ut"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En måndag morgon kan ingen skriva ut.",
+    "explanationJa": "{月曜日|げつようび}の{朝|あさ}、{誰|だれ}も{印刷|いんさつ}できません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför hittar datorerna inte skrivaren?",
+    "options": [
+     "Skrivaren har inget papper",
+     "Skrivaren har fått en ny IP-adress",
+     "Någon har stängt av routern",
+     "Kabeln är trasig"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I helgen startade routern om, och då fick skrivaren en ny adress.",
+    "explanationJa": "{週末|しゅうまつ}にルーターが{再起動|さいきどう}して、プリンターに{新|あたら}しいアドレスが{割|わ}り{当|あ}てられたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att varje adress måste vara unik?",
+    "options": [
+     "Adressen ändras varje dag",
+     "Adressen är hemlig",
+     "Två enheter får inte ha samma adress",
+     "Adressen är mycket kort"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Routern tilldelar adresserna, och varje adress måste vara unik.",
+    "explanationJa": "{同|おな}じアドレスを{二|ふた}つの{機器|きき}が{使|つか}ってはいけない、という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt Lena kan en webbplats se ungefär var man är.",
+    "correct": true,
+    "explanationSv": "Men en webbplats kan se din ungefärliga plats.",
+    "explanationJa": "ネットのサービスは、おおよその{場所|ばしょ}がわかります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji kunde se det svenska programmet i Japan.",
+    "correct": false,
+    "explanationSv": "… han inte kunde se ett program från svensk tv när han var i Japan …",
+    "explanationJa": "ジオブロッキングのせいで、{日本|にほん}では{見|み}られませんでした。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Adresser som börjar med 192.168 är privata och används bara i lokala nätverk.",
+    "source": "RFC 1918 (IETF): Address Allocation for Private Internets",
+    "checked": "2026-11-19",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Polisen kan i en brottsutredning få veta av internetleverantören vem som hade en viss IP-adress.",
+    "source": "Lag (2022:482) om elektronisk kommunikation",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Geoblockering beror oftast på licensavtal, och vad man kan se utomlands varierar mellan tjänster.",
+    "source": "Konsumentverket, Hallå konsument: Geoblockering",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om IP-adresser och om vad andra kan se om en på nätet.",
+  "discussionPoints": [
+   "Hur många enheter finns i ditt lokala nätverk hemma?",
+   "Har du någon gång haft problem med en skrivare i nätverket?",
+   "Vill du vara anonym på nätet? När?",
+   "Har du råkat ut för geoblockering när du var utomlands?"
+  ]
+ },
+ "standard": 2
+}

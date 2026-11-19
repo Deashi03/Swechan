@@ -1,0 +1,176 @@
+{
+ "id": "m.mobildata",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Mobildata",
+ "titleJa": "モバイルデータ",
+ "descriptionSv": "Du lär dig att tala om internet i mobilen: hur du väljer mellan kontantkort och abonnemang, hur du delar mobilens internet med datorn och vad som gäller för surfen när du reser utomlands.",
+ "descriptionJa": "スマホのインターネットについて{話|はな}せるようになります。プリペイドSIMと{契約|けいやく}のどちらを{選|えら}ぶか、スマホのネットをパソコンと{分|わ}ける{方法|ほうほう}、{外国|がいこく}に{旅行|りょこう}するときのデータ{通信|つうしん}のルールがわかります。",
+ "categoryId": "R07-A01-T04",
+ "tags": [
+  "datorer",
+  "internet",
+  "nätverk"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.wi-fi-och-router"
+ ],
+ "related": [],
+ "recommendedOrder": 3742,
+ "words": [
+  {
+   "senseId": "s.mobilnät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.operatör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.abonnemang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontantkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.simkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.surf.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obegränsad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbrukning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slå-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.surfzon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygplansläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utomlands.1",
+   "active": true
+  },
+  {
+   "senseId": "s.roaming.1",
+   "active": false
+  },
+  {
+   "senseId": "s.faktura.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mobilt-bredband.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mobilen utan wifi",
+  "paragraphs": [
+   "Hiroshi studerar i Uppsala sedan i höstas. Den första veckan köpte han ett kontantkort i en mataffär. Han satte in det nya simkortet i mobilen och kunde genast använda mobildata.",
+   "Men surfen tog slut redan efter två veckor, eftersom han tittade på filmer på bussen varje dag. Därför bytte han till ett abonnemang med obegränsad surf. Han valde en operatör som hans klasskamrater rekommenderade.",
+   "Mobilnätet är bra i Uppsala. Ibland behöver Hiroshi jobba på datorn när det inte finns något wifi. Då slår han på surfzonen i mobilen, och datorn kopplar upp sig genom mobilen. Det fungerar bra, men förbrukningen blir hög.",
+   "I juli reser Hiroshi först till Berlin. Inom EU kostar roaming oftast inget extra, så där kan han använda mobilen som hemma. Sedan flyger han hem till Japan. När planet lyfter sätter han mobilen i flygplansläge. Utomlands, utanför EU, kan mobildata bli mycket dyrt, så när han landar i Tokyo måste han slå av mobildatan. Han vill inte få en hög faktura.",
+   "I augusti hälsar Hiroshi på sin vän Elsa i hennes familjs sommarstuga. Där finns ingen fiber. I stället har familjen mobilt bredband: en liten router med ett simkort i."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var köpte Hiroshi sitt kontantkort?",
+    "options": [
+     "På flygplatsen",
+     "På nätet",
+     "I en mataffär",
+     "I Berlin"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den första veckan köpte han ett kontantkort i en mataffär.",
+    "explanationJa": "{最初|さいしょ}の{週|しゅう}に、スーパーでプリペイドSIMを{買|か}いました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför bytte Hiroshi till ett abonnemang?",
+    "options": [
+     "Kontantkortet gick sönder",
+     "Han flyttade till Berlin",
+     "Mobilnätet var dåligt",
+     "Surfen tog slut för snabbt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men surfen tog slut redan efter två veckor …",
+    "explanationJa": "データ{通信量|つうしんりょう}が{二週間|にしゅうかん}でなくなってしまったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör Hiroshi när han slår på surfzonen?",
+    "options": [
+     "Han stänger av mobilen",
+     "Han ringer till operatören",
+     "Han köper mer surf",
+     "Han delar mobildatan med datorn"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Då slår han på surfzonen i mobilen, och datorn kopplar upp sig genom mobilen.",
+    "explanationJa": "スマホのモバイルデータを、パソコンと{分|わ}け{合|あ}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Inom EU kostar roaming oftast mycket extra.",
+    "correct": false,
+    "explanationSv": "Inom EU kostar roaming oftast inget extra …",
+    "explanationJa": "EUの{中|なか}では、ふつう{追加料金|ついかりょうきん}はかかりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Elsas familj har ingen fiber i sommarstugan.",
+    "correct": true,
+    "explanationSv": "Där finns ingen fiber. I stället har familjen mobilt bredband …",
+    "explanationJa": "{別荘|べっそう}には{光回線|ひかりかいせん}がないので、モバイルブロードバンドを{使|つか}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Inom EU/EES betalar man för samtal, sms och surf som hemma (”Roam like at home”), men operatören får begränsa hur mycket surf som ingår. Utanför EU kan priserna vara mycket högre.",
+    "source": "EU:s roamingförordning (EU) 2022/612; Konsumenternas.se",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om mobilen och mobildata.",
+  "discussionPoints": [
+   "Har du kontantkort eller abonnemang?",
+   "Hur mycket surf använder du varje månad?",
+   "Har du någon gång fått en hög faktura efter en resa?",
+   "Använder du surfzonen i mobilen? När?"
+  ]
+ },
+ "standard": 2
+}

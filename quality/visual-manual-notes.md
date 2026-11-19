@@ -191,3 +191,11 @@ Dessa modulord underkändes i två blindtest. De hade tidigare planstatus `none`
   - Förväxlingarna: *livlös/den röda planeten*, *kollisionskurs/kollision/jordnära*, *månförmörkelse/kärnskugga*, *vårpunkt/vårdagjämning*, *soltid/solur*, *mörk energi/expandera/accelerera*, *blåförskjutning/dopplereffekt*, *spektroskopi/spektrum/streckkod*.
 - (Tidigare i `VISUAL_MISSING_AFTER_BLIND_TEST`, nu borttagen.)
 
+
+## 0.55 (Datorer & internet)
+
+Dessa 17 ord underkändes två gånger i 0.54-produktionen och ritades om för hand i 0.55. Alla utom *mobildata* klarade matchningstestet.
+
+- Förväxlingarna i blindtesten: *prestanda/uppgradera*, *lagringsutrymme/rymma*, *testversion/licens*, *operativsystem/drivrutin*, *cache/lagra*, *ligga nere/driftstörning*, *driftstörning/krångla*, *uppkopplad/uppkoppling*, *svarstid/fördröjning*, *bandbredd/kapacitet*, *täckning/räckvidd*, *tappa uppkopplingen/avbrott*, *VPN/kryptera*, *byta lösenord/lösenord*, *säkerhetsrisk/sårbarhet*, *frånvaromeddelande/skicka vidare*.
+- Det som fungerade för hand: kapplöpning (snabb dator mot snigel) för *prestanda*; tomt utrymme i en mobil där ett nytt foto får plats för *lagringsutrymme*; skyltfönster med neddragen rullgardin för *ligga nere* och flera mobiler som hackar samtidigt för *driftstörning*; motorväg med datapaket som bilar för *bandbredd*; karta med färgat område och vita fläckar för *täckning*; solstol och automatiskt svarskuvert för *frånvaromeddelande*.
+- *Mobildata* förväxlades med *surfzon* och *surf* också i två handritade försök (mobil med pilar, buss med GB-räknare). Ordet är inte längre modulord i *Mobildata* (produktägarens beslut 0.55).
