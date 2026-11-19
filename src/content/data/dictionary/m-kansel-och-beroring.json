@@ -93,8 +93,8 @@
    "senses": [
     {
      "id": "s.beröra.1",
-     "ja": "{触|ふ}れる；{心|こころ}を{動|うご}かす",
-     "defSv": "Röra vid något. Också: göra att någon känner något starkt.",
+     "ja": "{触|ふ}れる",
+     "defSv": "Röra vid något.",
      "defJa": "{何|なに}かに{触|ふ}れる。また、{誰|だれ}かに{強|つよ}い{気持|きも}ちを{起|お}こさせる。",
      "concept": false,
      "examples": [
@@ -111,6 +111,24 @@
       "kropp",
       "känsel"
      ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "labelSv": "röra vid"
+    },
+    {
+     "id": "s.beröra.2",
+     "ja": "{心|こころ}を{動|うご}かす",
+     "defSv": "Göra att någon känner något starkt.",
+     "defJa": "{人|ひと}に{強|つよ}い{気持|きも}ちを{感|かん}じさせる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Filmen berörde mig mycket.",
+       "ja": "その{映画|えいが}にとても{心|こころ}を{動|うご}かされました。"
+      }
+     ],
+     "labelSv": "känslor",
      "quality": {
       "status": "ai-draft"
      }
@@ -215,8 +233,8 @@
    "senses": [
     {
      "id": "s.klappa.1",
-     "ja": "（{軽|かる}く）たたく、なでる；{拍手|はくしゅ}する",
-     "defSv": "Slå lätt med handen, till exempel på en hund. Också: slå händerna mot varandra.",
+     "ja": "（{軽|かる}く）たたく、なでる",
+     "defSv": "Slå lätt med handen, till exempel på en hund.",
      "defJa": "{犬|いぬ}などを{手|て}で{軽|かる}くたたく。また、{手|て}をたたく。",
      "concept": false,
      "examples": [
@@ -233,6 +251,24 @@
       "kropp",
       "känsel"
      ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "labelSv": "med handen"
+    },
+    {
+     "id": "s.klappa.2",
+     "ja": "{拍手|はくしゅ}する",
+     "defSv": "Slå händerna mot varandra, till exempel efter en konsert.",
+     "defJa": "コンサートのあとなどに、{手|て}をたたく。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Alla klappade när hon sjöng klart.",
+       "ja": "{彼女|かのじょ}が{歌|うた}い{終|お}わると、{皆|みな}が{拍手|はくしゅ}しました。"
+      }
+     ],
+     "labelSv": "applådera",
      "quality": {
       "status": "ai-draft"
      }
@@ -558,8 +594,8 @@
    "senses": [
     {
      "id": "s.fingertoppskänsla.1",
-     "ja": "{指先|ゆびさき}の{感覚|かんかく}；（{比喩|ひゆ}）{細|こま}やかな{気配|きくば}り",
-     "defSv": "Känseln i fingertopparna. Också: förmågan att förstå hur man ska bete sig när något är svårt.",
+     "ja": "{指先|ゆびさき}の{感覚|かんかく}",
+     "defSv": "Känseln i fingertopparna.",
      "defJa": "{指先|ゆびさき}の{感覚|かんかく}。また、{難|むずか}しい{場面|ばめん}でどうふるまうべきかを{理解|りかい}する{力|ちから}。",
      "concept": false,
      "examples": [
@@ -578,7 +614,27 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "labelSv": "i fingrarna",
+     "order": 2
+    },
+    {
+     "id": "s.fingertoppskänsla.2",
+     "ja": "{細|こま}やかな{気配|きくば}り",
+     "defSv": "Förmågan att förstå hur man ska bete sig när något är svårt.",
+     "defJa": "{難|むずか}しい{場面|ばめん}で、どうふるまえばいいかわかる{力|ちから}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det kräver fingertoppskänsla att prata om det.",
+       "ja": "そのことを{話|はな}すには{細|こま}やかな{気配|きくば}りが{必要|ひつよう}です。"
+      }
+     ],
+     "labelSv": "känsla för andra",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
     }
    ]
   }
