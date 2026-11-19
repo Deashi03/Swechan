@@ -93,18 +93,18 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
               // Kvalitetsplanen A6: this sense inflects differently from the headword (ett damm / en damm).
               <p className="small muted">Böjning i den här betydelsen: {s.inflection.kind === 'noun' && `${s.inflection.gender} `}{inflectionForms(s.inflection).map((f) => f.form).join(', ')}{s.inflection.kind === 'noun' && s.inflection.indefPl === null ? ' (ingen plural)' : ''}</p>
             )}
-            <p><SvText text={s.defSv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></p>
+            <p><SvText text={s.defSv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getLexEntry(id)!.senses[0]!.id)} /></p>
             <Ja text={s.defJa} as="p" className="ja-word" />
             {s.explanation && (
               <div className="card tint-primary stack-sm small" style={{ boxShadow: 'none' }}>
                 <div className="xsmall muted" style={{ fontWeight: 800 }}>Förklaring · <Ja text="{詳|くわ}しい{説明|せつめい}" /></div>
-                <div><SvText text={s.explanation.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></div>
+                <div><SvText text={s.explanation.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getLexEntry(id)!.senses[0]!.id)} /></div>
                 <Ja text={s.explanation.ja} as="div" className="ja-word" />
               </div>
             )}
             {s.examples.map((ex, k) => (
               <div key={k} className="stack-sm" style={{ borderLeft: '3px solid var(--c-primary-tint)', paddingLeft: 10 }}>
-                <div className="row"><span className="grow"><SvText text={ex.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getEntry(id)!.senses[0]!.id)} /></span><SpeakButton text={ex.sv} label="Lyssna på meningen" /></div>
+                <div className="row"><span className="grow"><SvText text={ex.sv} exclude={[entry.id]} onOpen={(id) => onOpenSense(repo.getLexEntry(id)!.senses[0]!.id)} /></span><SpeakButton text={ex.sv} label="Lyssna på meningen" /></div>
                 <Ja text={ex.ja} as="div" className="ja-word ja-example" />
               </div>
             ))}
@@ -121,7 +121,7 @@ export function EntryView({ entry, focusSenseId, onOpenSense }: { entry: Vocabul
               <div className="stack-sm">
                 <div className="small muted">Närliggande ord</div>
                 {s.synonyms.map((r) => {
-                  const other = repo.getSense(r.senseId);
+                  const other = repo.getLex(r.senseId);
                   if (!other) return null;
                   return (
                     <div key={r.senseId} className="small">

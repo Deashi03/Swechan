@@ -27,7 +27,7 @@ export function statsFrom(cards: ReviewCardRecord[], events: ReviewEventRecord[]
   const repo = getContent();
   const cBy = groupBySense(cards);
   const eBy = groupBySense(events);
-  const senses = new Set([...cBy.keys(), ...eBy.keys()].filter((id) => repo.getSense(id)));
+  const senses = new Set([...cBy.keys(), ...eBy.keys()].filter((id) => repo.hasSense(id)));
   const levels: Record<KnowledgeLevel, number> = { introduced: 0, understood: 0, active: 0, consolidated: 0 };
   // Cumulative counts: an "active" word is also understood and introduced.
   for (const id of senses) {

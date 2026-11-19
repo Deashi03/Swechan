@@ -5,6 +5,7 @@ import type { Plugin } from 'vite';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildLexicon } from './src/content/lexicon';
 
 /**
  * Kvalitetsplanen A4: the dictionary is split into one chunk per subject group (R01-A01 …), so a
@@ -45,11 +46,33 @@ const assetList: Plugin = {
   },
 };
 
+/**
+ * Kvalitetsplanen A4b: `virtual:swechan-lexicon` – the light part of every headword (src/content/lexicon.ts)
+ * plus the dictionary file that holds it. Generated from src/content/data/dictionary at build time; the full
+ * entries are loaded per file when a screen needs them (src/content/dictionarySource.lazy.ts).
+ */
+const lexicon: Plugin = {
+  name: 'swechan-lexicon',
+  resolveId(id) { return id === 'virtual:swechan-lexicon' ? '\0virtual:swechan-lexicon' : null; },
+  load(id) {
+    if (id !== '\0virtual:swechan-lexicon') return null;
+    const dir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'src/content/data/dictionary');
+    const dicts = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).sort().map((file) => {
+      this.addWatchFile(path.join(dir, file));
+      return { file, entries: (JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8')) as { entries: Record<string, unknown>[] }).entries };
+    });
+    return `export default JSON.parse(${JSON.stringify(JSON.stringify(buildLexicon(dicts)))});`;
+  },
+};
+
 // base: './' keeps every asset path relative, so the same build works on
 // GitHub Pages (/Swechan/), any sub-path and locally. Routing is hash-based.
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   base: './',
-  plugins: [react(), assetList],
+  plugins: [react(), assetList, lexicon],
+  // Kvalitetsplanen A4b: the production build loads the dictionary lazily (lexicon at start, full
+  // entries per file); tests, tools and the dev server load everything at once.
+  resolve: command === 'build' ? { alias: [{ find: /^\.\/dictionarySource$/, replacement: path.resolve(path.dirname(fileURLToPath(import.meta.url)), 'src/content/dictionarySource.lazy.ts') }] } : undefined,
   build: {
     target: 'es2020',
     sourcemap: false,
@@ -58,6 +81,7 @@ export default defineConfig({
         // Separate chunks so app updates don't invalidate cached libraries/content.
         manualChunks(id) {
           if (id.includes('node_modules')) return 'vendor';
+          if (id.includes('virtual:swechan-lexicon')) return 'lexicon';
           // Animation player (0.12): its own lazily loaded chunk.
           if (id.includes('/src/ui/anim/')) return 'anim';
           // Face rig + face scenes (0.14): one lazy chunk, loaded when a face visual is shown.
@@ -84,4 +108,4 @@ export default defineConfig({
     // agent worktrees (.claude/worktrees) contain full copies of the repo
     exclude: ['**/node_modules/**', '**/dist/**', '.claude/**'],
   },
-});
+}));

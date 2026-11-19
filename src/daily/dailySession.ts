@@ -28,7 +28,7 @@ import type { DailySessionRecord } from '../storage/types';
  */
 async function liveCards() {
   const repo = getContent();
-  return (await getDb().cards.toArray()).filter((c) => !!repo.getSense(c.senseId));
+  return (await getDb().cards.toArray()).filter((c) => repo.hasSense(c.senseId));
 }
 
 async function planReview(at: Date, today: string, limit: number, exclude?: Set<string>) {

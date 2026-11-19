@@ -136,8 +136,8 @@ function SearchResults({ query, catalog }: { query: string; catalog: CatalogInde
     const words: Section = { key: 'words', title: 'Ord', rows: local.filter((r) => r.type === 'word').flatMap((r) => {
       if (r.type !== 'word' || seen.has(r.hit.entryId)) return [];
       seen.add(r.hit.entryId);
-      const e = repo.getEntry(r.hit.entryId)!;
-      const s = (r.hit.senseId && repo.getSense(r.hit.senseId)?.sense) || e.senses[0]!;
+      const e = repo.getLexEntry(r.hit.entryId)!;
+      const s = (r.hit.senseId && repo.getLex(r.hit.senseId)?.sense) || e.senses[0]!;
       return [{ key: e.id, node: <button className="list-item" onClick={() => dict.open({ entryId: e.id, senseId: r.hit.senseId })}><span className="grow"><strong lang="sv">{e.lemma}</strong> <Ja text={s.ja} className="small ja-gloss" /></span><span className="badge">ord</span></button> }];
     }) };
     return [published, words, areas, planned].filter((s) => s.rows.length > 0);

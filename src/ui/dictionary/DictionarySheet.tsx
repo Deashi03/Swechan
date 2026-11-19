@@ -4,6 +4,7 @@ import { getDictionaryIndex } from '../../dictionary/dictionaryService';
 import { BottomSheet } from '../components/BottomSheet';
 import { Icon } from '../components/Icon';
 import { EntryView } from './EntryView';
+import { EntryGate } from '../app/useSenses';
 import { SearchResults } from './SearchResults';
 
 type OpenArg = { senseId?: string; entryId?: string; query?: string };
@@ -40,8 +41,11 @@ export function DictionarySheetProvider({ children }: { children: ReactNode }) {
 function SheetContent({ arg, push }: { arg: OpenArg; push: (a: OpenArg) => void }) {
   const repo = getContent();
   const [q, setQ] = useState(arg.query ?? '');
-  const entry = arg.entryId ? repo.getEntry(arg.entryId) : arg.senseId ? repo.getSense(arg.senseId)?.entry : undefined;
-  if (entry) return <EntryView entry={entry} focusSenseId={arg.senseId} onOpenSense={(senseId) => push({ senseId })} />;
+  // Kvalitetsplanen A4b: the full entry is loaded on demand.
+  const entryId = arg.entryId ?? (arg.senseId ? repo.getLex(arg.senseId)?.entry.id : undefined);
+  if (entryId && repo.getLexEntry(entryId)) {
+    return <EntryGate entryId={entryId}>{(entry) => <EntryView entry={entry} focusSenseId={arg.senseId} onOpenSense={(senseId) => push({ senseId })} />}</EntryGate>;
+  }
   const hits = q.trim() ? getDictionaryIndex().search(q, 30) : [];
   return (
     <div className="stack">
