@@ -52,23 +52,80 @@
     },
     {
      "id": "s.skriva-ut.2",
-     "ja": "（プリンターで）{印刷|いんさつ}する",
-     "defSv": "Göra en kopia på papper med en skrivare.",
-     "defJa": "プリンターで{紙|かみ}に{印刷|いんさつ}する。",
+     "ja": "{印刷|いんさつ}する、プリントアウトする",
+     "defSv": "Få en text eller en bild från datorn eller mobilen på papper.",
+     "defJa": "パソコンやスマホの{文章|ぶんしょう}や{画像|がぞう}を{紙|かみ}に{出|だ}す。",
      "concept": false,
      "examples": [
       {
-       "sv": "Kan du skriva ut biljetten?",
-       "ja": "チケットを{印刷|いんさつ}してくれる？"
+       "sv": "Kan du skriva ut biljetten åt mig?",
+       "ja": "チケットを{印刷|いんさつ}してくれますか。"
       }
      ],
      "labelSv": "på papper",
+     "frame": {
+      "subject": "Hon",
+      "complement": "biljetten"
+     },
+     "tags": [
+      "datorer",
+      "internet",
+      "webbläsare"
+     ],
      "quality": {
       "status": "ai-draft"
      },
      "order": 1
+    },
+    {
+     "id": "s.skriva-ut.3",
+     "ja": "（{患者|かんじゃ}を）{退院|たいいん}させる",
+     "defSv": "Låta en patient lämna sjukhuset när vården där är klar.",
+     "defJa": "{病院|びょういん}での{治療|ちりょう}が{終|お}わって、{患者|かんじゃ}を{病院|びょういん}から{帰|かえ}らせる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon skrevs ut från sjukhuset efter tre dagar.",
+       "ja": "{彼女|かのじょ}は3{日|か}{後|ご}に{退院|たいいん}しました。"
+      }
+     ],
+     "labelSv": "från sjukhus",
+     "tags": [
+      "vård",
+      "sjukhus"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B2"
+    },
+    {
+     "id": "s.skriva-ut.4",
+     "ja": "（{略|りゃく}さずに）{全部|ぜんぶ}{書|か}く",
+     "defSv": "Skriva ett ord eller ett tal helt, utan att göra det kortare.",
+     "defJa": "{言葉|ことば}や{数|かず}を、{短|みじか}くしないで{全部|ぜんぶ}{書|か}く。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Skriv ut hela ditt namn.",
+       "ja": "{名前|なまえ}を{全部|ぜんぶ}{書|か}いてください。"
+      }
+     ],
+     "labelSv": "helt",
+     "tags": [
+      "skriva"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 4
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19"
+   }
   },
   {
    "id": "e.förskriva",
