@@ -107,6 +107,13 @@ const game = (x: number, y: number, w: number, h: number) => all(rect(x, y, w, h
 const flake = (x: number, y: number, s = 1, col = '#5aa7d6') => at(x, y, s, line('M0 -8 L0 8 M-7 -4 L7 4 M-7 4 L7 -4 M-2 -6 L0 -4 L2 -6 M-2 6 L0 4 L2 6', col, 1.8));
 const puff = (x: number, y: number, r: number) => path(`M${x - r} ${y} C${x - r} ${y - r} ${x} ${y - r * 1.2} ${x + r * 0.3} ${y - r * 0.6} C${x + r} ${y - r} ${x + r * 1.4} ${y} ${x + r} ${y + r * 0.4} Z`, '#b9b2a6', C.ink, 0.8);
 
+// ── Manual track (0.55): prestanda and lagringsutrymme, drawn by hand ─
+/** A snail crawling right, body on y, shell centre (x, y − 11). */
+const snail = (x: number, y: number) => all(path(`M${x - 16} ${y} C${x - 14} ${y - 6} ${x + 12} ${y - 6} ${x + 18} ${y - 3} L${x + 20} ${y - 10} M${x + 18} ${y - 3} L${x + 15} ${y - 11} M${x + 18} ${y - 3} C${x + 12} ${y + 1} ${x - 12} ${y + 1} ${x - 16} ${y} Z`, '#cdbfa8', C.ink, 1.3),
+  circle(x - 2, y - 11, 10, '#b98a5e', C.ink, 1.4), path(`M${x - 2} ${y - 11} C${x + 2} ${y - 11} ${x + 2} ${y - 16} ${x - 2} ${y - 16} C${x - 8} ${y - 16} ${x - 8} ${y - 7} ${x - 1} ${y - 6} C${x + 6} ${y - 6} ${x + 8} ${y - 13} ${x + 6} ${y - 17}`, 'none', C.ink, 1.1));
+/** Small picture tile: coloured sky with a hill (photos and apps on a phone). */
+const tile = (x: number, y: number, w: number, h: number, col: string) => all(rect(x, y, w, h, col, 0.6, null), path(`M${x} ${y + h} L${x + w * 0.4} ${y + h * 0.5} L${x + w} ${y + h} Z`, C.green, null));
+const tiles = (rows: number) => all(...range(rows * 3).map((i) => tile(-7.5 + (i % 3) * 5.2, -13 + Math.floor(i / 3) * 4.6, 4.4, 3.8, [C.sky, '#f6c9d4', C.yellow, '#c9b3e6'][i % 4]!)));
 // ── Shared layouts ───────────────────────────────────────────────────
 /** stationär/bärbar dator: one desk with a desktop computer (monitor + tower) and a laptop. */
 const computers = (desktop: boolean) => {
@@ -158,11 +165,20 @@ export const HARDWARE_MOTIFS: Record<string, Svg> = {
     ...range(8).map((i) => { const cx = -34 + (i % 4) * 17.5, cy = -30 + Math.floor(i / 4) * 31; return line(`M${cx + 3} ${cy + 6} L${cx + 12} ${cy + 6} M${cx + 3} ${cy + 12} L${cx + 12} ${cy + 12} M${cx + 3} ${cy + 18} L${cx + 9} ${cy + 18}`, i === 1 ? HL : C.grey, 1.2); }))),
   'hardw.minne.2': all(boardBg(4, 74, 112, 34), rect(14, 84, 92, 6, C.black, 1, C.ink, 1), rect(14, 96, 92, 6, C.black, 1, C.ink, 1), greyed(ram(60, 92, 1.45)),
     ram(60, 40, 1.5), arrow(60, 58, 60, 74, HL, 3), frame(10, 24, 100, 32)),
+  // prestanda (manual track): how fast and well the machine works – the marked laptop runs, the grey one rides a snail
+  'hardw.prestanda': all(ground(), line('M4 100 L116 100', C.grey2, 1, '4 4'),
+    greyed(snail(24, 110), laptop(22, 93, 0.42, apps())),
+    waPulse('hw-prestanda-fart', line('M40 50 L54 50 M34 60 L52 60 M40 70 L54 70', HL, 2.6)),
+    waBob('hw-prestanda', 3, laptop(84, 74, 0.82, apps()), line('M76 74 L70 88 L62 92 M92 74 L98 88 L106 86', C.ink, 3), frame(56, 34, 58, 64))),
   'hardw.uppgradera': all(boardBg(4, 82, 112, 26), rect(14, 92, 92, 6, C.black, 1, C.ink, 1), greyed(ram(32, 36, 0.75, -18)), arrow(42, 54, 30, 46, C.grey, 2.4),
     waIn('hw-uppgradera', 0, -34, ram(62, 66, 1.05), arrow(62, 76, 62, 88, HL, 2.6), frame(26, 54, 72, 24)), arrow(108, 100, 108, 18, HL, 4), line('M101 34 L115 34 M108 27 L108 41', HL, 2.6)),
   // ── 3712 Hårddisk och lagring ────────────────────────────────────
   'hardw.hårddisk': disks(true),
   'hardw.SSD': disks(false),
+  // lagringsutrymme (manual track): the free room inside the phone where a new photo fits; the grey phone is full
+  'hardw.lagringsutrymme': all(phone(46, 60, 2.6, all(tiles(3), line('M-7.5 0.8 L7.5 0.8 L7.5 12 L-7.5 12 Z', HL, 0.9, '1.6 1'))),
+    waIn('hw-lagringsutrymme', 44, -30, rect(38, 72, 16, 12, C.white, 1.5, C.ink, 1.2), tile(39.5, 73.5, 13, 9, C.sky), circle(49, 76, 1.6, C.yellow, null)),
+    greyed(phone(98, 80, 1.3, tiles(6))), line('M88 52 L108 72 M108 52 L88 72', C.grey, 2)),
   'hardw.USB-minne': all(ground(), desk(92), laptop(40, 92, 1, apps()), rect(68, 86, 4, 4, C.dark, 0, null), usbStick(92, 88, 1.4, 180), arrow(110, 74, 86, 74, HL, 2.6), ring(92, 88, 22)),
   'hardw.minneskort': all(rect(10, 40, 66, 46, C.dark, 6, C.ink, 1.8), rect(18, 32, 20, 10, C.dark, 3, C.ink, 1.6), circle(44, 63, 17, C.black, C.ink, 1.8), circle(44, 63, 11, '#4a6a8a', C.ink, 1.2), circle(40, 59, 3, C.white, null),
     rect(76, 50, 4, 26, C.black, 1, C.ink, 1), sdCard(96, 58, 1.5, 0), arrow(102, 96, 86, 80, HL, 2.6), ring(96, 58, 21)),
