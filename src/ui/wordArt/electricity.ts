@@ -12,7 +12,7 @@
  * lamps: one path or two) and grenuttag/överbelastning (one power strip: two plugs or full and hot).
  * Digits, maths signs and the variable names U, R, I, F, k, q and r only; no words, no brands.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, star, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, star, waIn, waPulse, type Svg } from './kit';
 import { HL, T } from './people';
 import { greyed } from './blindFix';
 
@@ -80,10 +80,10 @@ const earth = (x: number, y: number, r: number) => all(circle(x, y, r, '#8cc7e8'
 // ── Shared layouts ───────────────────────────────────────────────────
 /** Two pairs of charges: the marked pair on top, the other pair greyed below. */
 const pairs = (attract: boolean) => {
-  const att = (y: number, col: string) => all(chg(26, y, true, 11), chg(94, y, false, 11), arrow(40, y, 54, y, col, 3.4), arrow(80, y, 66, y, col, 3.4));
-  const rep = (y: number, col: string) => all(chg(40, y, false, 11), chg(80, y, false, 11), arrow(28, y, 8, y, col, 3.4), arrow(92, y, 112, y, col, 3.4));
-  return attract ? all(rect(4, 10, 112, 50, C.white, 6, HL, 2), att(35, HL), greyed(rep(88, C.grey)))
-    : all(rect(4, 10, 112, 50, C.white, 6, HL, 2), rep(35, HL), greyed(att(88, C.grey)));
+  const att = (y: number, col: string, mv = false) => all(mv ? waIn('b4-elm-attrahera-1', -12, 0, chg(26, y, true, 11)) : chg(26, y, true, 11), mv ? waIn('b4-elm-attrahera-2', 12, 0, chg(94, y, false, 11)) : chg(94, y, false, 11), arrow(40, y, 54, y, col, 3.4), arrow(80, y, 66, y, col, 3.4));
+  const rep = (y: number, col: string, mv = false) => all(mv ? waIn('b4-elm-repellera-1', 12, 0, chg(40, y, false, 11)) : chg(40, y, false, 11), mv ? waIn('b4-elm-repellera-2', -12, 0, chg(80, y, false, 11)) : chg(80, y, false, 11), arrow(28, y, 8, y, col, 3.4), arrow(92, y, 112, y, col, 3.4));
+  return attract ? all(rect(4, 10, 112, 50, C.white, 6, HL, 2), att(35, HL, true), greyed(rep(88, C.grey)))
+    : all(rect(4, 10, 112, 50, C.white, 6, HL, 2), rep(35, HL, true), greyed(att(88, C.grey)));
 };
 /** Battery at the bottom and a lamp at the top of a rectangular loop. */
 const loop = (mode: 'current' | 'voltage') => {
@@ -111,16 +111,16 @@ const magnetEnd = (north: boolean) => all(bar(14, 62, 92, 26), north ? all(ring(
   north ? clip(26, 86, 10) : clip(94, 86, -10));
 /** Battery and two lamps: in one row (series) or on two branches (parallel). */
 const twoLamps = (series: boolean) => series
-  ? all(wire('M18 96 L18 30 L102 30 L102 96 L84 96 M40 96 L18 96', HL, 3), bulb(44, 24, true, 9), bulb(76, 24, true, 9), batt(40, 96, 40, 16), arrow(56, 30, 64, 30, HL, 2.4), arrow(102, 50, 102, 66, HL, 2.4))
+  ? all(wire('M18 96 L18 30 L102 30 L102 96 L84 96 M40 96 L18 96', HL, 3), bulb(44, 24, true, 9), bulb(76, 24, true, 9), batt(40, 96, 40, 16), waIn('b4-elm-seriekoppling-1', -6, 0, arrow(56, 30, 64, 30, HL, 2.4)), waIn('b4-elm-seriekoppling-2', 0, -8, arrow(102, 50, 102, 66, HL, 2.4)))
   : all(wire('M18 96 L18 22 L102 22 L102 96 L84 96 M40 96 L18 96 M18 56 L102 56', HL, 3), bulb(60, 16, true, 8), bulb(60, 50, true, 8), batt(40, 96, 40, 16),
-    arrow(30, 22, 44, 22, HL, 2.4), arrow(30, 56, 44, 56, HL, 2.4), circle(18, 56, 3, C.ink, null), circle(102, 56, 3, C.ink, null));
+    waIn('b4-elm-parallellkoppling-1', -8, 0, arrow(30, 22, 44, 22, HL, 2.4)), waIn('b4-elm-parallellkoppling-2', -8, 0, arrow(30, 56, 44, 56, HL, 2.4)), circle(18, 56, 3, C.ink, null), circle(102, 56, 3, C.ink, null));
 /** Power strip with sockets; two plugs (normal) or full with an extra strip, hot cable and smoke. */
 const strip = (over: boolean) => all(rect(0, 0, 120, 112, '#f3efe6', 0, null), rect(102, 70, 16, 26, C.white, 3, C.ink, 1.4), socketFace(110, 83, 6),
   path('M108 83 C96 83 96 104 80 104 L20 104', 'none', over ? C.red : C.dark, over ? 3.4 : 2.4),
   rect(10, 80, 72, 18, C.white, 5, C.ink, 1.8), ...[22, 38, 54, 70].map((x) => socketFace(x, 89, 6)),
   over ? all(...[22, 38, 54, 70].map((x, i) => all(plug(x, 89, [C.dark, C.white, C.dark, C.yellow][i]), line(`M${x} 73 C${x} 60 ${x + (i - 1.5) * 10} 50 ${x + (i - 1.5) * 12} 40`, C.dark, 2))),
     rect(8, 28, 44, 12, C.white, 4, C.ink, 1.4), ...[18, 30, 42].map((x) => plug(x, 34, C.dark)), heat(86, 100, 3, C.red, 7), path('M30 26 C24 18 34 14 28 6 M40 26 C34 18 44 14 38 6', 'none', C.grey, 3),
-    star(108, 50, 8, C.yellow), T(108, 54, '!', 10, HL), rect(4, 74, 84, 30, 'none', 8, HL, 2.6))
+    waPulse('b4-elm-overbelastning-1', star(108, 50, 8, C.yellow), T(108, 54, '!', 10, HL)), rect(4, 74, 84, 30, 'none', 8, HL, 2.6))
     : all(plug(22, 89, C.dark), plug(54, 89, C.white), line('M22 73 C22 60 14 52 10 44 M54 73 C54 60 60 52 66 44', C.dark, 2), rect(4, 74, 84, 30, 'none', 8, HL, 2.6)));
 
 export const ELECTRICITY_MOTIFS: Record<string, Svg> = {
@@ -137,10 +137,10 @@ export const ELECTRICITY_MOTIFS: Record<string, Svg> = {
     circle(60, 56, 18, GLOW, null), zig(40, 56, 80, 56, C.yellow, 4.2), zig(40, 56, 80, 56, HL, 1.4), star(60, 56, 6, C.white), line('M52 36 L56 42 M68 36 L64 42 M52 76 L56 70 M68 76 L64 70', C.gold, 2)),
   'elm.få-en-stöt': all(rect(70, 4, 50, 108, '#cdb79e', 2, C.ink, 1.8), rect(80, 54, 30, 8, C.silver, 4, C.ink, 1.6), circle(84, 58, 6, C.silver, C.ink, 1.6),
     path('M2 70 L46 62 C52 60 56 62 58 64 L66 62 C68 62 68 66 66 66 L56 70 L4 82 Z', C.skin, C.ink, 1.8), zig(68, 62, 78, 58, C.yellow, 3.4), star(73, 60, 4, C.white),
-    line('M30 48 C38 40 48 40 56 46 M24 92 C34 100 46 98 54 92', HL, 2.4), arrow(40, 30, 16, 36, HL, 3), T(40, 22, '!', 18, HL)),
+    line('M30 48 C38 40 48 40 56 46 M24 92 C34 100 46 98 54 92', HL, 2.4), waIn('b4-elm-fa-en-stot-1', 14, -3, arrow(40, 30, 16, 36, HL, 3)), T(40, 22, '!', 18, HL)),
   'elm.jorda': all(rect(0, 92, 120, 20, '#b9a07c', 0, null), line('M0 92 L120 92', C.ink, 1.4), rect(10, 32, 54, 60, C.white, 4, C.ink, 2), rect(10, 32, 54, 12, '#e4e8ee', 4, C.ink, 1.6), circle(37, 66, 16, '#bfe3f5', C.ink, 2), circle(37, 66, 10, 'none', C.grey, 1.4), circle(54, 38, 3, C.grey, C.ink, 1),
     path('M64 50 L86 50 L86 100', 'none', C.green, 4.6), path('M64 50 L86 50 L86 100', 'none', C.yellow, 2, ), line('M64 50 L86 50 L86 100', HL, 1, '3 3'),
-    line('M72 100 L100 100 M76 105 L96 105 M81 110 L91 110', C.ink, 2.6), arrow(98, 56, 98, 88, HL, 3), ...[[76, 44], [92, 66], [80, 84]].map(([x, y]) => minus(x!, y!, 3.4, BLUE))),
+    line('M72 100 L100 100 M76 105 L96 105 M81 110 L91 110', C.ink, 2.6), waIn('b4-elm-jorda-1', -0, -14, arrow(98, 56, 98, 88, HL, 3)), ...[[76, 44], [92, 66], [80, 84]].map(([x, y]) => minus(x!, y!, 3.4, BLUE))),
   'elm.elektroskop': all(path('M28 112 L28 56 C28 40 92 40 92 56 L92 112 Z', 'rgba(191,227,245,0.5)', C.ink, 2), rect(48, 36, 24, 10, C.brown, 2, C.ink, 1.6), line('M60 46 L60 82', C.gold, 3), circle(60, 30, 7, C.gold, C.ink, 1.6),
     path('M60 82 L46 104 L49 105 L60 86 Z', HL, C.ink, 1), path('M60 82 L74 104 L71 105 L60 86 Z', HL, C.ink, 1), arc2(60, 82, 18, 210, 330), ...[[52, 98], [68, 98]].map(([x, y]) => minus(x!, y!, 2.6, BLUE)),
     ellipse(30, 12, 16, 9, C.red, C.ink, 1.6), ...[[24, 12], [32, 10], [38, 14]].map(([x, y]) => minus(x!, y!, 2.4, C.white)), arrow(44, 18, 52, 24, C.grey, 2)),
@@ -199,14 +199,14 @@ export const ELECTRICITY_MOTIFS: Record<string, Svg> = {
   'elm.järnfilspån': all(rect(4, 14, 112, 84, C.white, 3, C.ink, 1.6), greyed(bar(36, 56, 48, 14)), rect(36, 49, 48, 14, 'rgba(251,251,248,0.6)', 0, null),
     ...[8, 18, 30].map((d) => line(`M36 56 C${36 - d} ${56 - d * 1.5} ${84 + d} ${56 - d * 1.5} 84 56 C${84 + d} ${56 + d * 1.5} ${36 - d} ${56 + d * 1.5} 36 56`, C.dark, 1.8, '2 3')),
     line('M10 56 L32 56 M88 56 L110 56 M14 40 L30 50 M14 72 L30 62 M106 40 L90 50 M106 72 L90 62', C.dark, 1.8, '2 3'), rect(4, 14, 112, 84, 'none', 3, HL, 2.6)),
-  'elm.magnetisera': all(ground(), nail(10, 100, 92), ...[30, 54].map((x) => greyed(bar(x, 72, 30, 10))), bar(78, 72, 30, 10), arrow(30, 58, 96, 58, HL, 3), arrow(30, 50, 96, 50, HL, 2), clip(100, 104, 0), ring(98, 96, 12)),
+  'elm.magnetisera': all(ground(), nail(10, 100, 92), ...[30, 54].map((x) => greyed(bar(x, 72, 30, 10))), bar(78, 72, 30, 10), waIn('b4-elm-magnetisera-1', -14, -0, arrow(30, 58, 96, 58, HL, 3)), waIn('b4-elm-magnetisera-2', -14, -0, arrow(30, 50, 96, 50, HL, 2)), clip(100, 104, 0), ring(98, 96, 12)),
   'elm.elektromagnet': all(nail(18, 102, 50), coil(34, 88, 50, 8, 11, HL, 2.2), wire('M34 50 C30 70 30 86 40 92 M88 50 C92 70 92 86 82 92', C.dark, 2), batt(40, 92, 40, 14), ...[[106, 62, 0], [100, 70, 20], [110, 72, -20]].map(([x, y, r]) => clip(x!, y!, r!))),
   'elm.solvind': all(rect(0, 0, 120, 112, '#0f2040', 0, null), ...range(12).map((i) => circle(f1(8 + ((i * 37) % 104)), f1(6 + ((i * 53) % 100)), 0.9, C.white, null)), sun(4, 56, 22),
     ...[38, 50, 62, 74].map((y, i) => all(...[36, 50, 64].map((x) => circle(x + (i % 2) * 6, y, 2.2, HL, null)), arrow(70 + (i % 2) * 6, y, 80 + (i % 2) * 6, y, HL, 1.8))),
     path('M84 30 C110 26 118 50 120 56 C118 62 110 86 84 82', 'none', '#8fd0ff', 1.6), path('M88 40 C104 38 110 50 112 56 C110 62 104 74 88 72', 'none', '#8fd0ff', 1.6), earth(100, 56, 9)),
   // ── 3346 Elektromagnetisk induktion ─────────────────────────────
   'elm.induktion.2': all(coil(44, 92, 46, 6, 16, COPPER, 2.4), wire('M47 62 C46 84 54 92 60 92 M89 62 C90 84 82 92 78 92', C.dark, 2), gauge(69, 92, 14, 40),
-    bar(0, 46, 40, 14), arrow(10, 26, 36, 26, HL, 3.4), path('M2 52 C-2 60 4 66 10 62 L18 54', C.skin, C.ink, 1.6), ring(69, 92, 18)),
+    bar(0, 46, 40, 14), waIn('b4-elm-induktion-2-1', -14, -0, arrow(10, 26, 36, 26, HL, 3.4)), path('M2 52 C-2 60 4 66 10 62 L18 54', C.skin, C.ink, 1.6), ring(69, 92, 18)),
   'elm.spole': all(rect(18, 46, 84, 20, C.beige, 3, C.ink, 1.4), coil(22, 98, 56, 9, 15, COPPER, 2.6), wire('M24 70 C16 88 10 96 6 104 M96 70 C104 88 110 96 114 104', COPPER, 2), ring(60, 56, 50)),
   'elm.generator': all(ground(), rect(54, 40, 60, 60, C.grey2, 8, C.ink, 2), circle(84, 70, 24, C.white, C.ink, 1.6), coil(66, 102, 70, 4, 18, COPPER, 1.6), bar(70, 70, 28, 10, -30),
     rect(10, 66, 44, 8, C.silver, 2, C.ink, 1.4), g('translate(14 70)', path('M0 -20 L6 0 L0 20 L-6 0 Z', C.grey, C.ink, 1.4)), arc2(84, 70, 30, 140, 40), bolt(84, 22, 1.2), wire('M114 60 L118 60 L118 22 L94 22', C.dark, 2), ring(84, 70, 34)),
@@ -222,7 +222,7 @@ export const ELECTRICITY_MOTIFS: Record<string, Svg> = {
     path('M62 54 L62 34 C62 30 98 30 98 34 L98 54 C98 60 62 60 62 54 Z', C.silver, C.ink, 1.8), ellipse(80, 34, 18, 4, '#bfe3f5', C.ink, 1.4), line('M98 40 L112 36', C.dark, 3), heat(72, 28, 3, C.grey, 8), path('M68 62 C66 70 66 74 70 78 M92 62 C94 70 94 74 90 78', 'none', HL, 1.4, ), ring(80, 60, 28)),
   'elm.trådlös-laddning': all(rect(0, 76, 120, 36, C.tan, 0, null), line('M0 76 L120 76', C.ink, 1.4), ellipse(60, 80, 40, 9, C.dark, C.ink, 1.8), ellipse(60, 78, 36, 7, '#4a4f5a', null), circle(60, 78, 2, C.green, null),
     g('translate(60 62) rotate(-8)', rect(-28, -10, 56, 18, C.black, 4, C.ink, 1.8), rect(-24, -7, 48, 12, '#bfe3f5', 2, null), rect(-10, -4, 18, 6, C.white, 1, C.ink, 1), rect(-10, -4, 12, 6, C.green, 1, null), rect(8, -2.4, 2, 2.6, C.ink, 0, null)),
-    path('M24 44 C36 30 84 30 96 44 M32 36 C42 24 78 24 88 36', 'none', HL, 2.2), wire('M100 82 C110 84 112 96 118 100', C.dark, 2.2), ring(60, 66, 40)),
+    path('M24 44 C36 30 84 30 96 44 M32 36 C42 24 78 24 88 36', 'none', HL, 2.2), wire('M100 82 C110 84 112 96 118 100', C.dark, 2.2), waPulse('b4-elm-tradlos-laddning-1', ring(60, 66, 40))),
   // ── 3347 Elektriska kretsar ─────────────────────────────────────
   'elm.komponent.2': all(rect(0, 70, 120, 42, C.tan, 0, null), line('M0 70 L120 70', C.ink, 1.4), resistor(30, 58, 0.9, -20), led(64, 52, C.red, false, 1.1), capacitor(96, 52, 1), chip(40, 92, 0.7), resistor(86, 94, 0.7, 10),
     ring(60, 72, 50)),
@@ -236,9 +236,9 @@ export const ELECTRICITY_MOTIFS: Record<string, Svg> = {
     g('translate(104 96) rotate(-40)', rect(-3, -30, 6, 30, C.yellow, 1, C.ink, 1.2), path('M-3 0 L0 6 L3 0 Z', C.tan, C.ink, 1))),
   'elm.löda': all(rect(0, 74, 120, 38, '#3c8a55', 0, null), line('M0 74 L120 74', C.ink, 1.4), ...[20, 40, 60, 80].map((x) => circle(x, 92, 3, '#d4b26a', C.ink, 1)), wire('M10 66 C30 66 50 70 60 84', COPPER, 2.4),
     g('translate(62 84) rotate(-40)', line('M0 0 L0 -18', C.silver, 3), rect(-4, -40, 8, 22, C.silver, 2, C.ink, 1.4), rect(-6, -76, 12, 36, C.dark, 4, C.ink, 1.6)), circle(60, 86, 4, '#e6e6e6', C.ink, 1.2),
-    path('M104 40 C96 50 84 60 68 82', 'none', '#c8ccd2', 2.6), path('M62 70 C58 62 66 58 62 50 M70 72 C66 64 74 60 70 52', 'none', C.grey2, 2), ring(62, 84, 12)),
+    path('M104 40 C96 50 84 60 68 82', 'none', '#c8ccd2', 2.6), path('M62 70 C58 62 66 58 62 50 M70 72 C66 64 74 60 70 52', 'none', C.grey2, 2), waPulse('b4-elm-loda-1', ring(62, 84, 12))),
   'elm.kortslutning': all(wire('M60 24 L14 24 L14 94 L40 94 M84 94 L106 94 L106 24 L60 24', C.dark, 2.4), greyed(bulb(60, 18, false, 10)), batt(40, 94, 40, 16), wire('M14 60 L106 60', HL, 4),
-    circle(14, 60, 3, C.ink, null), circle(106, 60, 3, C.ink, null), star(60, 60, 9, C.yellow), arrow(30, 52, 50, 52, HL, 3), arrow(70, 52, 90, 52, HL, 3), heat(36, 86, 3, C.red, 9), path('M58 48 C54 40 62 36 58 28', 'none', C.grey, 2.4)),
+    circle(14, 60, 3, C.ink, null), circle(106, 60, 3, C.ink, null), star(60, 60, 9, C.yellow), waIn('b4-elm-kortslutning-1', -12, -0, arrow(30, 52, 50, 52, HL, 3)), waIn('b4-elm-kortslutning-2', -12, -0, arrow(70, 52, 90, 52, HL, 3)), heat(36, 86, 3, C.red, 9), path('M58 48 C54 40 62 36 58 28', 'none', C.grey, 2.4)),
   'elm.grenuttag': strip(false),
   'elm.överbelastning': strip(true),
 };

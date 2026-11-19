@@ -12,7 +12,7 @@
  * Element names are everyday scenes (balloon gas, hot spring, swimming pool, solar panel, foil, rings).
  * Digits, maths signs and chemical symbols that do not spell the word only; no words, no brands, no logos.
  */
-import { C, all, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
+import { C, all, circle, ellipse, g, line, moving, path, rect, sparkle, waIn, type Svg } from './kit';
 import { HL, T, globe } from './people';
 import { greyed } from './blindFix';
 
@@ -125,7 +125,7 @@ export const ATOMS_MOTIFS: Record<string, Svg> = {
   /** kretsa: the Moon goes round the Earth: a dashed oval path around a blue Earth, the Moon on the path, and three orange arrows following the path all the way round. */
   'atom.kretsa': all(bg('#1f2740'), ...[[12, 14], [30, 100], [104, 16], [98, 104], [16, 64], [108, 60]].map(([x, y]) => circle(x!, y!, 1.2, C.white, null)), globe(60, 60, 16),
     ellipse(60, 60, 46, 30, 'none', 'rgba(255,255,255,0.5)', 1.4), ellipse(60, 60, 46, 30, 'none', HL, 2.6),
-    head(24, 78, 2.6, HL, 1.3), head(96, 42, -0.55, HL, 1.3), head(60, 30, 0, HL, 1.3), circle(104, 62, 8, '#e3e3d8', C.ink, 1.4), circle(102, 60, 1.6, '#c9c9bc', null)),
+    head(24, 78, 2.6, HL, 1.3), head(96, 42, -0.55, HL, 1.3), head(60, 30, 0, HL, 1.3), moving('b4-atom-kretsa-1', '0.0%{transform:translate(0.0px,0.0px)}12.5%{transform:translate(-14.9px,20.8px)}25.0%{transform:translate(-48.0px,28.7px)}37.5%{transform:translate(-79.9px,19.0px)}50.0%{transform:translate(-91.9px,-2.6px)}62.5%{transform:translate(-77.0px,-23.4px)}75.0%{transform:translate(-44.0px,-31.3px)}87.5%{transform:translate(-12.0px,-21.6px)}100%{transform:translate(0.0px,-0.0px)}', { dur: 6 }, circle(104, 62, 8, '#e3e3d8', C.ink, 1.4)), circle(102, 60, 1.6, '#c9c9bc', null)),
   /** positiv laddning: one big red ball with a white + in the middle, framed in orange; a small grey electron (−) waits to the side. */
   'atom.positiv-laddning': all(bg(), rect(18, 20, 64, 76, MARK, 8, HL, 3), circle(50, 58, 26, PRO, C.ink, 2), line('M38 58 L62 58 M50 46 L50 70', C.white, 6), greyed(electron(100, 58, 10))),
   /** negativ laddning: the same layout: one big blue ball with a white − in the middle, framed in orange; a small grey proton (+) waits to the side. */
@@ -223,7 +223,7 @@ export const ATOMS_MOTIFS: Record<string, Svg> = {
   'atom.elektronkonfiguration': all(bg(), shellAtom(42, 52, [2, 8, 1], [11, 22, 33]), line('M53 52 L36 100 M64 52 L60 100 M75 52 L84 100', HL, 1.2, '3 2'),
     ...[[36, '2'], [60, '8'], [84, '1']].map(([x, d]) => all(rect((x as number) - 9, 98, 18, 14, MARK, 2, HL, 2), T(x as number, 109, d as string, 11)))),
   /** avge (elektroner): an atom with rings; one electron leaves the outer ring and flies away to the right along a thick orange arrow; its empty place is dashed. */
-  'atom.avge.2': all(bg(), shellAtom(44, 60, [2, 3], [14, 30], { gap: true }), arr(76, 60, 100, 60, HL, 3.4), electron(108, 60, 5)),
+  'atom.avge.2': all(bg(), shellAtom(44, 60, [2, 3], [14, 30], { gap: true }), waIn('b4-atom-avge-2-1', -14, -0, arr(76, 60, 100, 60, HL, 3.4)), electron(108, 60, 5)),
   /** ta upp (elektroner): the same atom; an electron comes in from the right along a thick orange arrow towards the empty dashed place on the outer ring. */
-  'atom.ta-upp-kropp.3': all(bg(), shellAtom(44, 60, [2, 3], [14, 30], { gap: true }), electron(108, 60, 5), arr(100, 60, 80, 60, HL, 3.4)),
+  'atom.ta-upp-kropp.3': all(bg(), shellAtom(44, 60, [2, 3], [14, 30], { gap: true }), electron(108, 60, 5), waIn('b4-atom-ta-upp-kropp-3-1', 12, -0, arr(100, 60, 80, 60, HL, 3.4))),
 };

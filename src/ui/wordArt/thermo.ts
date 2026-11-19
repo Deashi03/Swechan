@@ -10,7 +10,7 @@
  * oordning (ordered and spread particles versus a messy and a tidy shelf).
  * Digits and maths signs only; no words, no brands.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, waGrow, waIn, waPulse, type Svg } from './kit';
 import { HL, T } from './people';
 import { figure } from './figures';
 import { greyed } from './blindFix';
@@ -107,7 +107,7 @@ export const THERMO_MOTIFS: Record<string, Svg> = {
     particlesIn(68, 34, 46, 50, [[10, 10], [30, 12], [20, 26], [36, 34], [10, 40], [24, 42]], HL, 7, HL), therm(90, 104, 14, 0.9, HOT), frame(64, 30, 54, 58)),
   /** termisk jämvikt: two blocks that touch, both the same orange; two thermometers at the same level with = between. */
   'term.termisk-jämvikt': all(ground(), greyed(rect(10, 8, 22, 14, HOT, 2, C.ink, 1.2), rect(32, 8, 22, 14, COLD, 2, C.ink, 1.2)), arrow(58, 15, 66, 15, C.grey, 2), rect(70, 8, 22, 14, C.orange, 2, C.ink, 1.2), rect(92, 8, 22, 14, C.orange, 2, C.ink, 1.2),
-    rect(14, 70, 46, 42, C.orange, 3, C.ink, 1.8), rect(60, 70, 46, 42, C.orange, 3, C.ink, 1.8), therm(30, 64, 36, 0.55, C.orange, 6), therm(90, 64, 36, 0.55, C.orange, 6), num(60, 52, '=', 22, HL), line('M24 48 L36 48 M84 48 L96 48', HL, 2.4)),
+    rect(14, 70, 46, 42, C.orange, 3, C.ink, 1.8), rect(60, 70, 46, 42, C.orange, 3, C.ink, 1.8), therm(30, 64, 36, 0.55, C.orange, 6), therm(90, 64, 36, 0.55, C.orange, 6), num(60, 52, '=', 22, HL), waPulse('b4-term-termisk-jamvikt-1', line('M24 48 L36 48 M84 48 L96 48', HL, 2.4))),
   /** termostat: radiator under a window; the round knob with the numbers 1–5 is enlarged and ringed. */
   'term.termostat': all(ground(), rect(16, 10, 50, 36, '#cfe8f7', 2, C.ink, 1.6), line('M41 10 L41 46 M16 28 L66 28', C.ink, 1.2), radiator(12, 70, 7), line('M68 78 L74 78', C.ink, 3), circle(78, 78, 5, C.white, C.ink, 1.3),
     line('M82 74 L86 66', HL, 1.4, '3 2'), circle(90, 44, 18, C.white, C.ink, 1.8), circle(90, 44, 12, '#e8ecef', C.ink, 1.3), line('M90 44 L90 34', C.ink, 2.4),
@@ -126,11 +126,11 @@ export const THERMO_MOTIFS: Record<string, Svg> = {
     iceCube(86, 78, 0.8), path('M86 88 C89 92 89 95 86 96 C83 95 83 92 86 88 Z', WATER, C.ink, 0.8),
     rect(76, 40, 20, 12, '#6b3e26', 2, C.ink, 1.2), line('M83 40 L83 52 M89 40 L89 52 M76 46 L96 46', '#4e2b19', 0.9), path('M92 52 C95 56 95 59 92 60 C89 59 89 56 92 52 Z', '#6b3e26', C.ink, 0.8)),
   /** frysa (bli till is): a glass of water, an arrow, the same glass frozen to ice; thermometer below zero. */
-  'term.frysa.2': all(ground(), greyed(glass(26, 110, 26, 40, WATER)), arrow(44, 88, 62, 88, HL, 3), glass(84, 110, 26, 40, ICE), path('M73 81 L95 81 L94 108 L74 108 Z', '#e8f6fd', null), line('M76 86 L82 92 M86 84 L90 96 M78 100 L84 98', '#9ccbe8', 1.2), glass(84, 110, 26, 40, 'none', 0),
+  'term.frysa.2': all(ground(), greyed(glass(26, 110, 26, 40, WATER)), waIn('b4-term-frysa-2-1', -11, -0, arrow(44, 88, 62, 88, HL, 3)), glass(84, 110, 26, 40, ICE), path('M73 81 L95 81 L94 108 L74 108 Z', '#e8f6fd', null), line('M76 86 L82 92 M86 84 L90 96 M78 100 L84 98', '#9ccbe8', 1.2), glass(84, 110, 26, 40, 'none', 0),
     ring(84, 92, 22), therm(108, 62, 34, 0.1, COLD, 5), num(106, 20, '−5', 10, COLD), snow(84, 20, 6), snow(66, 30, 4)),
   /** sublimera: a solid block turns directly into gas; the arrow jumps over a greyed-out, crossed water drop. */
   'term.sublimera': all(ground(), rect(8, 82, 26, 26, '#eef6fa', 2, C.ink, 1.4), line('M12 86 L18 92', C.white, 1.6), greyed(path('M60 74 C66 84 68 90 60 94 C52 90 54 84 60 74 Z', WATER, C.ink, 1.3)), cross(60, 86, 9, C.grey),
-    path('M24 76 C34 32 86 32 96 70', 'none', HL, 3), path('M96 70 L89 63 L99 62 Z', HL, null), g('translate(98 92)', ellipse(0, 0, 16, 10, 'rgba(255,255,255,0.9)', C.grey, 1.4), ellipse(-8, -8, 9, 7, 'rgba(255,255,255,0.9)', C.grey, 1.4), ellipse(7, -9, 9, 7, 'rgba(255,255,255,0.9)', C.grey, 1.4))),
+    path('M24 76 C34 32 86 32 96 70', 'none', HL, 3), path('M96 70 L89 63 L99 62 Z', HL, null), waGrow('b4-term-sublimera-1', g('translate(98 92)', ellipse(0, 0, 16, 10, 'rgba(255,255,255,0.9)', C.grey, 1.4), ellipse(-8, -8, 9, 7, 'rgba(255,255,255,0.9)', C.grey, 1.4), ellipse(7, -9, 9, 7, 'rgba(255,255,255,0.9)', C.grey, 1.4)))),
   /** torris: a block of dry ice in a bowl with white fog flowing over the edge onto the table. */
   'term.torris': all(rect(4, 96, 112, 6, C.tan, 2, C.ink, 1.4), line('M14 102 L14 112 M106 102 L106 112', C.brown, 3), path('M30 70 L90 70 C88 92 76 96 60 96 C44 96 32 92 30 70 Z', '#3f6fb5', C.ink, 1.6),
     rect(40, 56, 18, 14, '#f4f8fb', 2, C.ink, 1.2), rect(56, 58, 16, 12, '#f4f8fb', 2, C.ink, 1.2), rect(48, 50, 14, 10, '#f4f8fb', 2, C.ink, 1.2),
@@ -150,7 +150,7 @@ export const THERMO_MOTIFS: Record<string, Svg> = {
     arrow(60, 8, 60, 58, HL, 5), num(82, 30, '+', 22, HL), therm(100, 70, 32, 0.6, HOT, 4)),
   /** temperaturhöjning: thermometer with the old level greyed and the new, higher level orange, arrow up and +10. */
   'term.temperaturhöjning': all(ground(), rect(48, 6, 24, 100, C.white, 8, C.ink, 1.6), rect(55, 30, 10, 74, HOT, 3, null), circle(60, 100, 10, HOT, C.ink, 1.5),
-    line(range(9).map((i) => `M72 ${18 + i * 10} l5 0`).join(' '), C.ink, 1), line('M40 66 L80 66', C.grey, 2, '4 3'), line('M40 30 L80 30', HL, 2.8), arrow(92, 64, 92, 32, HL, 3.4), num(102, 54, '+10', 10, HL), num(28, 70, '20', 10, C.grey), num(28, 34, '30', 10, HL)),
+    line(range(9).map((i) => `M72 ${18 + i * 10} l5 0`).join(' '), C.ink, 1), line('M40 66 L80 66', C.grey, 2, '4 3'), line('M40 30 L80 30', HL, 2.8), waIn('b4-term-temperaturhojning-1', -0, 14, arrow(92, 64, 92, 32, HL, 3.4)), num(102, 54, '+10', 10, HL), num(28, 70, '20', 10, C.grey), num(28, 34, '30', 10, HL)),
   /** varmvattenberedare: tall white tank in the basement with a red hot pipe out to a shower and a blue cold pipe in. */
   'term.varmvattenberedare': all(ground(), rect(14, 20, 36, 88, C.white, 14, C.ink, 1.8), line('M14 36 L50 36 M14 92 L50 92', C.grey2, 1.2), circle(32, 60, 6, C.white, C.ink, 1.2), line('M32 60 L35 57', HOT, 1.6),
     line('M42 20 L42 10 L96 10 L96 30', HOT, 4), line('M24 108 L24 112 M50 100 L70 100 L70 112', COLD, 4), path('M88 30 L104 30 L100 36 L92 36 Z', STEEL, C.ink, 1.2), line('M92 40 l-2 8 M96 40 l0 8 M100 40 l2 8 M94 52 l-1 6 M98 52 l1 6', WATER, 1.6), heat(18, 70, 18, 46, HL, 1.8), ring(32, 64, 30)),

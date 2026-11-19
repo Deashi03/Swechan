@@ -15,7 +15,7 @@
  * H···O dotted lines, long chains side by side).
  * Element letters and digits only; no words, no brands, no logos.
  */
-import { C, all, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
+import { C, all, circle, ellipse, g, line, path, rect, sparkle, waPulse, type Svg } from './kit';
 import { HL, T } from './people';
 import { greyed } from './blindFix';
 
@@ -142,7 +142,7 @@ export const BONDS_MOTIFS: Record<string, Svg> = {
   /** elektronpar: two blue electrons side by side inside an orange oval, with a small 2 beside them; a single grey electron alone to the left. */
   'bind.elektronpar': all(bg(), greyed(electron(22, 60, 7)), ellipse(70, 60, 34, 22, MARK, HL, 3), electron(56, 60, 11), electron(84, 60, 11), T(70, 100, '2', 18, HL)),
   /** ädelgasstruktur: left, a grey atom with seven electrons and one empty dashed slot; an arrow leads to the same atom on the right with all eight places filled and its outer ring orange, with a green check. */
-  'bind.ädelgasstruktur': all(bg(), greyed(shellAtom(28, 56, 18, 7, { slots: 8 })), arr(50, 56, 62, 56, C.grey, 2), circle(88, 56, 22, MARK, null), shellAtom(88, 56, 18, 8, { ringCol: HL, ringW: 3.4 }), check(88, 96)),
+  'bind.ädelgasstruktur': all(bg(), greyed(shellAtom(28, 56, 18, 7, { slots: 8 })), arr(50, 56, 62, 56, C.grey, 2), circle(88, 56, 22, MARK, null), waPulse('b4-bind-adelgasstruktur-1', shellAtom(88, 56, 18, 8, { ringCol: HL, ringW: 3.4 })), check(88, 96)),
   /** elektronformel: a card with H : O : H where the electrons are blue dots round the letters (two pairs between the atoms, two pairs on O above and below); the dots are ringed by an orange outline. */
   'bind.elektronformel': (() => {
     const dot = (x: number, y: number) => circle(x, y, 2.6, ELE, C.ink, 0.6);
@@ -232,9 +232,9 @@ export const BONDS_MOTIFS: Record<string, Svg> = {
   /** opolär: a straight symmetric carbon dioxide molecule in an even yellow halo outlined in orange, with no + or −; a small grey polar water halo with signs in the corner. */
   'bind.opolär': all(bg(), halo(60, 50, 50, 26, false), co2(60, 50, 2.2), greyed(halo(98, 96, 14, 11, true, C.grey), water(98, 94, 0.6))),
   /** lösa sig: three glasses of tea: a sugar cube falling in, the cube half gone with swirls, and clear tea with only the swirl left; the last glass is ringed in orange. */
-  'bind.lösa-sig': all(bg(), ground, glassW(22, 110, '#e8b878'), rect(17, 48, 10, 10, C.white, 1, C.ink, 1.2), arr(22, 62, 22, 76, C.grey, 1.6), glassW(60, 110, '#e8b878'), rect(56, 96, 8, 6, C.white, 1, C.ink, 1), path('M52 90 C58 84 64 92 70 86', 'none', C.white, 1.6), glassW(98, 110, '#e8b878'), line('M90 92 C96 86 102 94 108 88', C.white, 1.6, '2 2'), ring(98, 92, 22)),
+  'bind.lösa-sig': all(bg(), ground, glassW(22, 110, '#e8b878'), rect(17, 48, 10, 10, C.white, 1, C.ink, 1.2), arr(22, 62, 22, 76, C.grey, 1.6), glassW(60, 110, '#e8b878'), rect(56, 96, 8, 6, C.white, 1, C.ink, 1), path('M52 90 C58 84 64 92 70 86', 'none', C.white, 1.6), glassW(98, 110, '#e8b878'), line('M90 92 C96 86 102 94 108 88', C.white, 1.6, '2 2'), waPulse('b4-bind-losa-sig-1', ring(98, 92, 22))),
   /** blanda sig: water and red juice poured together become one even pink liquid with a green check; below in grey, a bottle where yellow oil lies on water, with a red cross. */
-  'bind.blanda-sig': all(bg(), glassW(26, 56, WATER, 22, 34), T(46, 46, '+', 14), glassW(64, 56, '#e86a6a', 22, 34), arr(80, 40, 88, 40, C.grey, 1.6), glassW(102, 56, '#f2a6a6', 22, 34), ring(102, 40, 20), check(102, 74, 0.8), greyed(rect(44, 80, 32, 30, C.white, 4, C.ink, 1.6), rect(46, 96, 28, 13, WATER, 2, null), rect(46, 86, 28, 10, '#f2d36b', 2, null)), cross(92, 96, 0.8)),
+  'bind.blanda-sig': all(bg(), glassW(26, 56, WATER, 22, 34), T(46, 46, '+', 14), glassW(64, 56, '#e86a6a', 22, 34), arr(80, 40, 88, 40, C.grey, 1.6), glassW(102, 56, '#f2a6a6', 22, 34), waPulse('b4-bind-blanda-sig-1', ring(102, 40, 20)), check(102, 74, 0.8), greyed(rect(44, 80, 32, 30, C.white, 4, C.ink, 1.6), rect(46, 96, 28, 13, WATER, 2, null), rect(46, 86, 28, 10, '#f2d36b', 2, null)), cross(92, 96, 0.8)),
   /** fettlöslig: the same red grains fall into two equal glasses; in the yellow oil they spread into red streaks (ringed in orange, green check); in the blue water they lie in a lump at the bottom (red cross) */
   'bind.fettlöslig': all(bg(), ground, glassW(32, 110, '#f2d36b', 36, 60), glassW(88, 110, WATER, 36, 60), ...[[27, 38], [32, 34], [35, 40]].map(([x, y]) => rect(x!, y!, 3, 3, C.red, 0.5, null)), ...[[83, 38], [88, 34], [91, 40]].map(([x, y]) => rect(x!, y!, 3, 3, C.red, 0.5, null)), arr(32, 44, 32, 52, C.grey, 1.4), arr(88, 44, 88, 52, C.grey, 1.4), line('M20 76 C26 70 32 82 40 74', '#e04a3a', 2.2), line('M22 92 C28 86 36 98 44 90', '#e04a3a', 2.2), line('M24 104 C30 99 36 106 42 101', '#e04a3a', 1.8), ring(32, 88, 20), ...[[84, 106], [88, 105], [92, 106], [86, 103], [90, 103]].map(([x, y]) => rect(x!, y!, 3, 3, C.red, 0.5, null)), check(32, 20, 0.8), cross(88, 20, 0.8)),
   /** vattenavstötande: a slanted blue jacket fabric with round water beads rolling off it (orange arrow); below in grey, a cloth with a dark wet patch soaked in. */

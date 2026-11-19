@@ -24,7 +24,7 @@ Läs den här filen först. Historik: `changelog/` (en fil per release eller eta
 
 ## Nästa steg
 
-1. **Kvalitetsplanen** (`docs/QUALITY_PLAN.md`, produktägarens beslut 2026-11-18): del A är klar (också A4b, lat ordbok). B1–B3 är klara. Nästa är **B4** (planerade animationer, sedan Fysik och Kemi). Köerna: `npm run audit:content -- --backlog`.
+1. **Kvalitetsplanen** (`docs/QUALITY_PLAN.md`, produktägarens beslut 2026-11-18): del A är klar (också A4b, lat ordbok). B1–B4 är klara. Nästa är **ny produktion: *Datorer & internet* (R07-A01)** enligt `docs/PRODUCTION_BRIEF.md` och som `standard: 2`. Efter det överämnet tas en etapp ur B5–B7. Kvar från B4: 152 planerade animationer och 13 processord utan bild i Fysik och Kemi ligger i det manuella bildspåret. Köerna: `npm run audit:content -- --backlog`.
    - Därefter ny produktion: *Datorer & internet* (R07-A01) enligt `docs/PRODUCTION_BRIEF.md`, som `standard: 2`. Resten av eftersläpningen (B5–B7) varvas med ny produktion: en etapp mellan varje nytt överämne.
    - Beslut: matchningstest för symbolbilder, manuellt spår för bilder som underkänts två gånger (aldrig "ingen bild"), kort förklaring för abstrakta B1-ord.
    - Arbetet görs av Opus (produktägarens val).

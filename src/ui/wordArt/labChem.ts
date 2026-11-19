@@ -9,7 +9,7 @@
  * or tipped to pour), filtrat (the filtration set with the clear liquid below marked).
  * Digits and maths signs only; no words.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, waIn, waPulse, type Svg } from './kit';
 import { HL, T } from './people';
 import { greyed } from './blindFix';
 
@@ -135,7 +135,7 @@ const still = (mark: 'all' | 'cool') => {
   const water = all(arrow(92, 92, 82, 82, '#3f8fd2', 2.2), arrow(42, 44, 50, 34, '#3f8fd2', 2.2));
   const vapour = line('M24 50 L24 40 L34 46 L92 80', HL, 2.4, '3 3');
   return all(ground(), mark === 'cool' ? greyed(flask, pipe, recv) : all(flask, pipe, recv), coolerJacket, water,
-    mark === 'all' ? all(vapour, ellipse(24, 64, 5, 2, 'none', HL, 1.2), arrow(100, 72, 100, 84, HL, 2)) : g('rotate(30 64 63)', rect(30, 52, 68, 22, 'none', 6, HL, 2.6)));
+    mark === 'all' ? all(waPulse('b4-labk-destillera-1', vapour), ellipse(24, 64, 5, 2, 'none', HL, 1.2), waIn('b4-labk-destillera-2', 0, -8, arrow(100, 72, 100, 84, HL, 2))) : g('rotate(30 64 63)', rect(30, 52, 68, 22, 'none', 6, HL, 2.6)));
 };
 /** Glass with water and sand at the bottom; tipped = being poured into a second glass (dekantera). */
 const sandGlass = (tipped: boolean) => {
@@ -145,7 +145,7 @@ const sandGlass = (tipped: boolean) => {
     path(`M${x - 14} ${y - 40} L${x - 14} ${y} L${x + 14} ${y} L${x + 14} ${y - 40}`, 'none', C.ink, 1.6));
   return tipped
     ? all(ground(), g('translate(34 82) rotate(50)', gl(0, 0, true, 0.45)), line('M6 104 L30 86', C.ink, 6.4), line('M6 104 L30 86', C.skin, 4.6), circle(31, 85, 3.4, C.skin, C.ink, 1.2),
-      path('M74 65 C80 64 84 68 86 80', 'none', LIQ, 3.4), gl(92, 110, false, 0.3), arrow(62, 36, 82, 52, HL, 2.6))
+      waPulse('b4-labk-dekantera-1', path('M74 65 C80 64 84 68 86 80', 'none', LIQ, 3.4)), gl(92, 110, false, 0.3), waIn('b4-labk-dekantera-2', -11, -9, arrow(62, 36, 82, 52, HL, 2.6)))
     : all(ground(), bench(96), gl(60, 96, true, 0.75), ring(60, 90, 17));
 };
 /** Filtration set: stand, funnel with folded paper and muddy water, flask below. */
@@ -253,15 +253,15 @@ export const LABCHEM_MOTIFS: Record<string, Svg> = {
   /** mäta: a parent measures how tall a child is against a wall with a measuring tape. */
   'labk.mäta.1': all(ground(), rect(84, 8, 6, 104, '#f2d16b', 1, C.ink, 1.2), line(range(20).map((i) => `M84 ${10 + i * 5} l${i % 2 ? 2.5 : 4} 0`).join(' '), C.ink, 0.8),
     g('translate(54 112) scale(0.62) translate(-60 -112)', worker(60, [[48, 92], [72, 92]], { top: C.green })), rect(50, 60, 36, 3, C.brown, 1, C.ink, 1),
-    worker(26, [[50, 62], [14, 94]], { top: C.orange, long: true }), arrow(96, 61, 104, 61, HL, 2), ring(87, 61, 9)),
+    worker(26, [[50, 62], [14, 94]], { top: C.orange, long: true }), waIn('b4-labk-mata-1-1', -5, -0, arrow(96, 61, 104, 61, HL, 2)), ring(87, 61, 9)),
   /** tarera: a bowl on a scale shows 52.3 (grey) → a palm presses the button and the display shows 0.0 (orange ring). */
   'labk.tarera': all(ground(), greyed(rect(4, 92, 46, 16, C.silver, 3, C.ink, 1.4), rect(10, 96, 26, 8, '#cfe8d0', 1, C.ink, 0.8), num(23, 102.5, '52.3', 6.5), beaker(27, 90, 26, 26, 0)),
     arrow(52, 78, 64, 78, C.grey, 2.4),
     rect(66, 92, 50, 16, C.silver, 3, C.ink, 1.4), rect(70, 96, 26, 8, '#cfe8d0', 1, C.ink, 0.8), num(83, 102.5, '0.0', 7), circle(106, 100, 3.6, HL, C.ink, 1.2), beaker(84, 90, 26, 26, 0),
-    path('M100 84 C100 78 112 78 112 84 L112 92 L100 92 Z', C.skin, C.ink, 1.3), ring(83, 100, 14)),
+    path('M100 84 C100 78 112 78 112 84 L112 92 L100 92 Z', C.skin, C.ink, 1.3), waPulse('b4-labk-tarera-1', ring(83, 100, 14))),
   /** läsa av (mätare): a person looks at an electricity meter on the wall (dashed line of sight) and writes the number in a notebook. */
   'labk.läsa-av.2': all(ground(), rect(72, 16, 40, 44, '#e6e9ec', 3, C.ink, 1.6), rect(78, 24, 28, 10, C.white, 1, C.ink, 1.2), num(92, 32, '04718', 7.5), circle(92, 46, 6, C.white, C.ink, 1), line('M88 46 L96 46', C.ink, 1),
-    worker(34, [[44, 82], [30, 88]], { top: C.navy }), rect(28, 80, 22, 14, C.white, 1, C.ink, 1.2), line('M31 85 L46 85 M31 89 L42 89', C.grey, 1), line('M38 40 L76 30', HL, 1.6, '3 3'), ring(92, 29, 12)),
+    worker(34, [[44, 82], [30, 88]], { top: C.navy }), rect(28, 80, 22, 14, C.white, 1, C.ink, 1.2), line('M31 85 L46 85 M31 89 L42 89', C.grey, 1), waPulse('b4-labk-lasa-av-2-1', line('M38 40 L76 30', HL, 1.6, '3 3')), ring(92, 29, 12)),
   /** menisk (vätskeyta): a magnifier over a cylinder shows the curved water surface; its lowest point is on a dashed line. */
   'labk.menisk.2': all(ground(), cylinder(26, 110, 90, 0.5, LIQ, 14), circle(26, 62, 10, 'none', C.grey, 1.4), line('M34 56 L58 40', C.grey, 1.4),
     circle(84, 50, 30, C.white, C.ink, 2), path('M58 46 Q84 66 110 46 L110 66 Q84 82 58 66 Z', LIQ, null), path('M58 46 Q84 66 110 46', 'none', '#2e6ea8', 2.4), line('M60 56 L108 56', HL, 1.8, '3 3'), line('M58 30 L58 72 M110 30 L110 72', C.ink, 1.4), ring(84, 56, 8)),
@@ -273,11 +273,11 @@ export const LABCHEM_MOTIFS: Record<string, Svg> = {
   /** mätfel: a ruler measures a pencil, but the pencil starts at 1 instead of 0; the reading 8 is crossed out in red. */
   'labk.mätfel': all(ground(), rect(6, 64, 108, 18, '#f2d16b', 1, C.ink, 1.4), line(range(11).map((i) => `M${12 + i * 10} 82 l0 -7`).join(' '), C.ink, 1), ...range(10).map((i) => num(12 + i * 10, 74, String(i), 6)),
     path('M22 48 L84 48 L94 54 L84 60 L22 60 Z', '#f2a93b', C.ink, 1.4), rect(16, 48, 6, 12, C.pink, 1, C.ink, 1.2), path('M90 52 L94 54 L90 56 Z', C.ink, null),
-    line('M12 40 L12 64', C.green, 1.6, '2 2'), line('M22 40 L22 64', RED, 1.6, '2 2'), ring(20, 66, 8), rect(86, 92, 26, 16, C.white, 3, C.ink, 1.2), num(99, 104, '8', 10), cross(99, 100, 9)),
+    line('M12 40 L12 64', C.green, 1.6, '2 2'), line('M22 40 L22 64', RED, 1.6, '2 2'), waPulse('b4-labk-matfel-1', ring(20, 66, 8)), rect(86, 92, 26, 16, C.white, 3, C.ink, 1.2), num(99, 104, '8', 10), cross(99, 100, 9)),
   // ── 3465 Filtrering och destillation ─────────────────────────────
   /** separera (blandning): a glass with mixed red and blue grains → arrows split them into two glasses, only red and only blue. */
   'labk.separera.2': all(ground(), beaker(24, 70, 30, 34, 0), ...range(14).map((i) => circle(f1(14 + (i * 7) % 20), f1(64 - Math.floor(i / 5) * 5 - (i % 2) * 2), 2, i % 2 ? '#e05252' : '#4a7fd0', C.ink, 0.5)),
-    arrow(44, 56, 70, 36, HL, 2.6), arrow(44, 62, 70, 86, HL, 2.6),
+    waIn('b4-labk-separera-2-1', -11, 9, arrow(44, 56, 70, 36, HL, 2.6)), waIn('b4-labk-separera-2-2', -10, -9, arrow(44, 62, 70, 86, HL, 2.6)),
     beaker(92, 46, 26, 28, 0), ...range(6).map((i) => circle(f1(84 + (i * 6) % 16), f1(42 - Math.floor(i / 3) * 4), 2, '#e05252', C.ink, 0.5)),
     beaker(92, 108, 26, 28, 0), ...range(6).map((i) => circle(f1(84 + (i * 6) % 16), f1(104 - Math.floor(i / 3) * 4), 2, '#4a7fd0', C.ink, 0.5))),
   /** tratt: juice is poured from a jug through a funnel into a bottle; the funnel is ringed. */
@@ -311,7 +311,7 @@ export const LABCHEM_MOTIFS: Record<string, Svg> = {
   // ── 3466 Titrering ───────────────────────────────────────────────
   /** titrera: a person in goggles opens the tap of a burette on a stand; drops fall into a flask that is turning pink. */
   'labk.titrera': all(ground(), bench(96), stand(84, 6, 64, 20), burette(64, 10, 66, 24), drop(64, 80, 0.8), erlen(64, 96, 0.55, 0.4, PINK),
-    worker(28, [[56, 68], [48, 92]], { goggles: true, long: true }), ring(60, 70, 8)),
+    worker(28, [[56, 68], [48, 92]], { goggles: true, long: true }), waPulse('b4-labk-titrera-1', ring(60, 70, 8))),
   /** stativ (laboratorium): a lab stand – heavy base, metal rod, clamp holding a burette (greyed); the stand is ringed. */
   'labk.stativ.2': all(ground(), greyed(burette(76, 14, 84, 30)), rect(28, 104, 56, 8, C.dark, 2, C.ink, 1.6), rect(40, 8, 5, 96, C.silver, 1.5, C.ink, 1.4),
     rect(37, 40, 11, 9, C.dark, 1.5, C.ink, 1.2), line('M48 44 L70 44', C.dark, 3), path('M70 38 L74 38 L74 50 L70 50 M82 38 L78 38 L78 50 L82 50', 'none', C.dark, 2.4), circle(36, 44, 3, C.dark, C.ink, 1),
@@ -323,7 +323,7 @@ export const LABCHEM_MOTIFS: Record<string, Svg> = {
     erlen(60, 80, 1.2, 0.42, '#9fd0ee'), path('M48 66 C52 72 68 72 72 66', 'none', '#2e6ea8', 1.4), rect(53, 74, 14, 4, C.white, 2, C.ink, 1),
     path('M42 70 C40 80 80 80 78 70', 'none', HL, 2.2), path('M78 70 l-5 -1 M78 70 l1 5', 'none', HL, 2.2), ring(60, 76, 12)),
   /** färgomslag: a colourless flask → one more drop → the same flask is pink; the pink flask is ringed. */
-  'labk.färgomslag': all(ground(), erlen(28, 104, 1.1, 0.4, '#eef6fb'), rx(48, 80, 68), drop(58, 64, 1.2), erlen(90, 104, 1.1, 0.4, PINK), sparkle(108, 44, 5), ring(90, 82, 26)),
+  'labk.färgomslag': all(ground(), erlen(28, 104, 1.1, 0.4, '#eef6fb'), rx(48, 80, 68), drop(58, 64, 1.2), erlen(90, 104, 1.1, 0.4, PINK), sparkle(108, 44, 5), waPulse('b4-labk-fargomslag-1', ring(90, 82, 26))),
   // ── 3467 Dokumentera laborationer ────────────────────────────────
   /** labbrapport: a stapled report page with a flask at the top, heading bars, a small table and a small line graph. */
   'labk.labbrapport': all(ground(), rect(24, 6, 72, 104, C.white, 2, C.ink, 1.8), rect(28, 2, 8, 8, C.silver, 1, C.ink, 1), erlen(40, 28, 0.4, 0.4, PINK), rect(52, 16, 36, 5, C.dark, 1, null), line('M52 25 L84 25', C.grey, 1.4),

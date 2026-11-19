@@ -13,7 +13,7 @@
  * coming out), löslig/svårlöslig (the same glass before and after, the lump gone or still there).
  * Digits, maths signs and chemical symbols only; no words, no brands.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, waGrow, waIn, waPulse, type Svg } from './kit';
 import { HL, T } from './people';
 import { greyed } from './blindFix';
 import { car } from './homeKit';
@@ -190,7 +190,7 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
   // ── 3433 Balansera reaktioner ───────────────────────────────────
   /** balansera (kemi): a level beam – 2 H₂ + O₂ on the left, 2 H₂O on the right with the added 2 in orange; an orange = and a level line. */
   'reak.balansera.2': all(ground(), beam(60, 80, all(H2(-9, -10, 4.4), H2(9, -10, 4.4), O2(0, -22, 4.6)), all(H2O(-6, -13, 5), H2O(10, -13, 5))),
-    num(78, 70, '2', 16, HL), num(60, 44, '=', 24, HL), line('M8 88 L112 88', HL, 1.6, '3 3')),
+    num(78, 70, '2', 16, HL), num(60, 44, '=', 24, HL), waPulse('b4-reak-balansera-2-1', line('M8 88 L112 88', HL, 1.6, '3 3'))),
   /** lagen om massans bevarande: a closed bottle on a scale before (tablet) and after (bubbles) – the same number on both displays. */
   'reak.lagen-om-massans-bevarande': all(ground(),
     rect(4, 96, 50, 14, C.dark, 3, C.ink, 1.4), rect(14, 99, 30, 8, '#d9f0d0', 2, C.ink, 1), num(29, 106, '250', 7.5, HL),
@@ -203,7 +203,7 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
   'reak.fattas': all(ground(), rect(10, 60, 100, 40, '#c9b79a', 4, C.ink, 1.8),
     ...range(6).map((i) => ellipse(26 + (i % 3) * 34, 70 + Math.floor(i / 3) * 20, 12, 8, '#b8a383', C.ink, 1)),
     ...range(6).filter((i) => i !== 5).map((i) => ellipse(26 + (i % 3) * 34, 66 + Math.floor(i / 3) * 20, 9, 11, '#f7efe2', C.ink, 1.3)),
-    ring(94, 90, 15), num(94, 50, '?', 16, HL)),
+    waPulse('b4-reak-fattas-1', ring(94, 90, 15)), num(94, 50, '?', 16, HL)),
   /** överskott (kemi): 2 C + 4 O₂ → 2 CO₂; two O₂ molecules are left over after the arrow and framed. */
   'reak.överskott.3': all(ground(),
     at(14, 40, 6, CARB), at(14, 70, 6, CARB), plus(28, 55), O2(44, 28, 5), O2(44, 46, 5), O2(44, 64, 5), O2(44, 82, 5),
@@ -234,7 +234,7 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
   /** kväva (eld): a burning pan on the stove; an orange lid is put on and the flames shrink. */
   'reak.kväva': all(ground(), rect(14, 92, 92, 20, '#e6e8ea', 2, C.ink, 1.6), rect(28, 76, 64, 16, C.dark, 3, C.ink, 1.6), line('M92 82 L112 80', C.dark, 4),
     flame(48, 78, 0.7), flame(60, 78, 0.6), flame(72, 78, 0.7),
-    path('M24 56 C24 44 96 44 96 56 Z', HL, C.ink, 1.6), rect(54, 40, 12, 6, C.dark, 2, C.ink, 1), arrow(60, 22, 60, 36, HL, 3)),
+    path('M24 56 C24 44 96 44 96 56 Z', HL, C.ink, 1.6), rect(54, 40, 12, 6, C.dark, 2, C.ink, 1), waIn('b4-reak-kvava-1', -0, -8, arrow(60, 22, 60, 36, HL, 3))),
 
   // ── 3435 Oxidation och reduktion ────────────────────────────────
   /** oxidation: a shiny nail → a rusty nail; an oxygen ball goes in (arrow down, into the reaction). */
@@ -243,7 +243,7 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
   'reak.reduktion.2': redoxRow(false),
   /** svartna: a bright silver spoon (greyed) → after many days (calendar 30) the same spoon is black, ringed. */
   'reak.svartna': all(ground(), greyed(spoon(24, 50, C.silver)), rx(44, 60, 66), rect(46, 30, 18, 18, C.white, 2, C.ink, 1.2), rect(46, 30, 18, 5, HOT, 1, null), num(55, 45, '30', 8),
-    spoon(90, 50, '#3a3a40'), ring(90, 60, 26)),
+    spoon(90, 50, '#3a3a40'), waPulse('b4-reak-svartna-1', ring(90, 60, 26))),
   /** antioxidant: two apple halves after an hour – the plain one has turned brown (grey), the one with lemon juice is still white; the lemon is ringed. */
   'reak.antioxidant': all(ground(), greyed(appleHalf(28, 80, '#b88a4a')), appleHalf(88, 80, '#fbf3dc'), lemonHalf(92, 30), drop(90, 48, 1.2, '#f7e27a'), drop(98, 54, 1, '#f7e27a'), ring(92, 30, 18)),
 
@@ -260,7 +260,7 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
   'reak.klar.2': all(ground(), line(range(5).map((i) => `M6 ${56 + i * 10} L114 ${56 + i * 10}`).join(' '), '#5f7fd1', 3),
     glass(30, 110, 36, 64, 0.9, '#d6d2ca'), ...range(12).map((i) => circle(f1(16 + (i * 7) % 28), f1(56 + ((i * 11) % 48)), 1.2, '#b9b2a4', null)), glass(90, 110, 36, 64, 0.9, 'rgba(223,240,250,0.45)'), line(range(5).map((i) => `M73 ${56 + i * 10} L107 ${56 + i * 10}`).join(' '), '#7f9be0', 3), frame(68, 40, 44, 72)),
   /** avkalka: an electric kettle with a white crust; a bottle pours in → the same kettle clean inside. */
-  'reak.avkalka': all(ground(), greyed(kettle(28, 106, true)), bottle(30, 44, 120, '#f4f0d0'), drop(28, 56, 1, '#f4f0d0'), rx(52, 84, 64), kettle(92, 106, false), sparkle(108, 54, 5), frame(70, 50, 46, 62)),
+  'reak.avkalka': all(ground(), greyed(kettle(28, 106, true)), bottle(30, 44, 120, '#f4f0d0'), drop(28, 56, 1, '#f4f0d0'), rx(52, 84, 64), kettle(92, 106, false), sparkle(108, 54, 5), waPulse('b4-reak-avkalka-1', frame(70, 50, 46, 62))),
   /** droppsten: a cave with stone icicles from the ceiling and stone cones from the floor; a drop falls; one icicle is ringed. */
   'reak.droppsten': all(rect(0, 0, 120, 120, '#5c5048', 0, null), path('M0 0 L120 0 L120 18 C100 22 80 14 60 20 C40 26 20 16 0 20 Z', caveRock, C.ink, 1.4),
     path('M20 18 L24 50 L28 18 Z M44 22 L48 64 L53 22 Z M70 18 L73 44 L77 18 Z M92 16 L96 56 L100 16 Z', caveRock, C.ink, 1.2),
@@ -268,7 +268,7 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
     drop(96, 64, 1.1, '#bfe3f5'), ring(48, 44, 16)),
   /** tillsätta (ämne): a small bottle pours drops into a beaker of liquid; orange arrow. */
   'reak.tillsätta.2': all(ground(), glass(60, 110, 50, 54, 0.6, '#dff0fa'), bottle(84, 30, -60, '#f6d2a8'), drop(72, 46, 1.2, '#f6a35b'), drop(68, 56, 1, '#f6a35b'), circle(64, 76, 6, '#f8c08a', null),
-    arrow(100, 18, 76, 50, HL, 2.6)),
+    waIn('b4-reak-tillsatta-2-1', 8, -11, arrow(100, 18, 76, 50, HL, 2.6))),
 
   // ── 3437 Reaktionshastighet ─────────────────────────────────────
   /** reaktionshastighet: two glasses with tablets – the grey one bubbles slowly (gauge low), the framed one fast (gauge high). */
@@ -290,8 +290,8 @@ export const REACTIONS_MOTIFS: Record<string, Svg> = {
     line('M22 80 L22 26 L62 26', C.grey, 1, '2 2'), arrow(22, 70, 22, 32, HL, 2.6), arrow(22, 36, 22, 76, HL, 2.6), arc2()),
   /** explosion: a big orange and yellow blast with pieces flying out and smoke. */
   'reak.explosion': all(ground(), smoke(30, 86, 1.4, C.grey2), smoke(92, 88, 1.3, C.grey2),
-    path(range(16).map((i) => { const a = (i * Math.PI) / 8, r = i % 2 ? 22 : 44; return `${i ? 'L' : 'M'}${f1(60 + Math.cos(a) * r)} ${f1(62 + Math.sin(a) * r)}`; }).join(' ') + ' Z', C.orange, C.ink, 1.6),
-    path(range(16).map((i) => { const a = (i * Math.PI) / 8 + 0.2, r = i % 2 ? 12 : 26; return `${i ? 'L' : 'M'}${f1(60 + Math.cos(a) * r)} ${f1(62 + Math.sin(a) * r)}`; }).join(' ') + ' Z', C.yellow, null),
+    waGrow('b4-reak-explosion-1', path(range(16).map((i) => { const a = (i * Math.PI) / 8, r = i % 2 ? 22 : 44; return `${i ? 'L' : 'M'}${f1(60 + Math.cos(a) * r)} ${f1(62 + Math.sin(a) * r)}`; }).join(' ') + ' Z', C.orange, C.ink, 1.6)),
+    waGrow('b4-reak-explosion-2', path(range(16).map((i) => { const a = (i * Math.PI) / 8 + 0.2, r = i % 2 ? 12 : 26; return `${i ? 'L' : 'M'}${f1(60 + Math.cos(a) * r)} ${f1(62 + Math.sin(a) * r)}`; }).join(' ') + ' Z', C.yellow, null)),
     rect(12, 18, 7, 5, C.dark, 1, null), rect(102, 24, 6, 6, C.dark, 1, null), rect(14, 100, 6, 4, C.dark, 1, null), rect(104, 98, 7, 4, C.dark, 1, null)),
 };
 
