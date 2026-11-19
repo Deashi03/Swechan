@@ -161,26 +161,95 @@
      "quality": {
       "status": "ai-draft"
      },
-     "labelSv": "rike"
+     "labelSv": "rike",
+     "order": 3
     },
     {
      "id": "s.upplösning.2",
-     "ja": "{解像度|かいぞうど}",
-     "defSv": "Hur skarp en bild är på en skärm eller ett foto.",
-     "defJa": "{画面|がめん}や{写真|しゃしん}の{画像|がぞう}がどれだけ{鮮明|せんめい}か。",
+     "ja": "（{画像|がぞう}・{画面|がめん}の）{解像度|かいぞうど}",
+     "defSv": "Hur många små punkter en bild består av. Ju fler punkter, desto skarpare blir bilden.",
+     "defJa": "{画像|がぞう}が、どれだけ{多|おお}くの{小|ちい}さな{点|てん}でできているか。{点|てん}が{多|おお}いほど、{画像|がぞう}がくっきりする。",
      "concept": false,
      "examples": [
       {
-       "sv": "Skärmen har hög upplösning.",
-       "ja": "その{画面|がめん}は{解像度|かいぞうど}が{高|たか}いです。"
+       "sv": "Bilden har hög upplösning.",
+       "ja": "この{画像|がぞう}は{解像度|かいぞうど}が{高|たか}いです。"
+      },
+      {
+       "sv": "Jag ändrade upplösningen, så nu ser texten skarpare ut.",
+       "ja": "{解像度|かいぞうど}を{変|か}えたので、{文字|もじ}がくっきり{見|み}えるようになりました。"
       }
      ],
-     "labelSv": "skärm",
+     "labelSv": "bild, skärm",
+     "collocations": [
+      "hög upplösning",
+      "låg upplösning",
+      "ändra upplösningen"
+     ],
+     "explanation": {
+      "sv": "En bild på 1920 × 1080 pixlar har högre upplösning än en bild på 640 × 480, och därför ser den skarpare ut. Man säger att en skärm, en kamera eller en bild har hög eller låg upplösning, och man kan ändra upplösningen i datorns inställningar. Ordet pixel betyder något annat: en pixel är en enda liten punkt, medan upplösningen säger hur många pixlar bilden har.",
+      "ja": "1920 × 1080ピクセルの{画像|がぞう}は、640 × 480の{画像|がぞう}より{解像度|かいぞうど}が{高|たか}いので、くっきり{見|み}えます。{画面|がめん}、カメラ、{画像|がぞう}について「hög upplösning（{高|たか}い{解像度|かいぞうど}）」「låg upplösning（{低|ひく}い{解像度|かいぞうど}）」と{言|い}い、パソコンの{設定|せってい}で{解像度|かいぞうど}を{変|か}えることもできます。「pixel（ピクセル）」は{別|べつ}の{意味|いみ}で、{一|ひと}つの{小|ちい}さな{点|てん}のことです。{解像度|かいぞうど}は、{画像|がぞう}にピクセルがいくつあるかを{表|あらわ}します。"
+     },
+     "tags": [
+      "datorer",
+      "teknik",
+      "hårdvara"
+     ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.upplösning.3",
+     "ja": "{溶解|ようかい}、{溶|と}けること",
+     "defSv": "När ett ämne löses upp i en vätska, till exempel socker i vatten.",
+     "defJa": "{砂糖|さとう}が{水|みず}に{溶|と}けるように、ある{物質|ぶっしつ}が{液体|えきたい}に{溶|と}けること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Upplösningen av sockret går snabbare i varmt vatten.",
+       "ja": "{砂糖|さとう}は、お{湯|ゆ}の{中|なか}のほうが{速|はや}く{溶|と}けます。"
+      }
+     ],
+     "labelSv": "i vätska",
+     "tags": [
+      "kemi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2",
+     "order": 4
+    },
+    {
+     "id": "s.upplösning.4",
+     "ja": "（{物語|ものがたり}などの）{結末|けつまつ}",
+     "defSv": "Slutet på en berättelse eller en film, när man får veta hur det går.",
+     "defJa": "{物語|ものがたり}や{映画|えいが}などの{終|お}わりの{部分|ぶぶん}で、どうなるかがわかるところ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Upplösningen i filmen var helt oväntad.",
+       "ja": "その{映画|えいが}の{結末|けつまつ}は、まったく{予想外|よそうがい}でした。"
+      }
+     ],
+     "labelSv": "slutet",
+     "tags": [
+      "litteratur",
+      "film"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2",
+     "order": 2
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19"
+   }
   }
  ]
 }

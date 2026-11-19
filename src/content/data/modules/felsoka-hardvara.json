@@ -1,0 +1,194 @@
+{
+ "id": "m.felsoka-hardvara",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Felsöka hårdvara",
+ "titleJa": "ハードウェアのトラブルを{調|しら}べる",
+ "descriptionSv": "Vad man gör när datorn krånglar: hur man beskriver vanliga fel, vad man själv kan prova först och hur det går till när man lämnar in en dator på garanti.",
+ "descriptionJa": "パソコンの{調子|ちょうし}が{悪|わる}いときにどうするか：よくあるトラブルの{説明|せつめい}のしかた、まず{自分|じぶん}で{試|ため}せること、そして{保証|ほしょう}でパソコンを{修理|しゅうり}に{出|だ}すときの{流|なが}れを{学|まな}びます。",
+ "categoryId": "R07-A01-T01",
+ "tags": [
+  "datorer",
+  "teknik",
+  "hårdvara"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.grafikkort"
+ ],
+ "related": [],
+ "recommendedOrder": 3717,
+ "words": [
+  {
+   "senseId": "s.felsöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.starta-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frysa.3",
+   "active": true
+  },
+  {
+   "senseId": "s.överhettad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.damm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckluft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glappkontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brumma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pip.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spilla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sprucken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.batteritid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.support.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lämna-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garanti.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvitto.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservdel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.byta-ut.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hjälp, datorn fryser!",
+  "paragraphs": [
+   "Maja arbetar som lärare i Lund. En morgon fryser hennes dator mitt i en lektion. Hon startar om den, men efter tio minuter händer samma sak igen. Datorn är också överhettad, och fläkten brummar högt.",
+   "Efter lektionen ringer hon skolans support. – Vi kan felsöka tillsammans, säger Ali, som svarar i telefon. Hör du något pip när du startar datorn? – Nej, men den blir väldigt varm. – Då kan det vara damm i fläkten. Du kan blåsa bort det med tryckluft.",
+   "Ali frågar också om laddaren. Den fungerar bara ibland. – Det är nog glappkontakt i kabeln, säger han. Dessutom har batteritiden blivit mycket kortare. De kanske måste byta ut batteriet.",
+   "Sedan berättar Maja att hon spillde kaffe på tangentbordet förra veckan. Skärmen är också lite sprucken, sedan hon tappade datorn i januari. – Då är det bäst att du lämnar in datorn, säger Ali.",
+   "Datorn är ganska ny, så den har fortfarande garanti. Maja letar fram kvittot och tar med det till butiken. Där byter de ut batteriet. Men skärmen får Maja betala själv, eftersom garantin inte gäller när man har tappat datorn. De måste beställa en reservdel, så det tar en vecka."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer med Majas dator mitt i lektionen?",
+    "options": [
+     "Den går sönder helt",
+     "Den börjar pipa",
+     "Den blir blöt",
+     "Den fryser"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En morgon fryser hennes dator mitt i en lektion.",
+    "explanationJa": "{授業中|じゅぎょうちゅう}にパソコンがフリーズします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir datorn så varm enligt Ali?",
+    "options": [
+     "Det kan vara damm i fläkten",
+     "Maja har spillt kaffe",
+     "Skärmen är sprucken",
+     "Laddaren är för stark"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Då kan det vara damm i fläkten.",
+    "explanationJa": "ファンにほこりがたまっているのかもしれません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att det är glappkontakt i kabeln?",
+    "options": [
+     "Kabeln är för lång",
+     "Det finns ingen kabel",
+     "Kabeln sitter dåligt, så att det ibland inte kommer el",
+     "Kabeln är ny"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den fungerar bara ibland. – Det är nog glappkontakt i kabeln …",
+    "explanationJa": "ケーブルのつながりが{悪|わる}く、ときどき{電気|でんき}が{来|こ}ないことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Maja har kvar kvittot.",
+    "correct": true,
+    "explanationSv": "Maja letar fram kvittot och tar med det till butiken.",
+    "explanationJa": "マヤはレシートを{探|さが}し{出|だ}して、{店|みせ}に{持|も}って{行|い}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Garantin betalar den nya skärmen.",
+    "correct": false,
+    "explanationSv": "… skärmen får Maja betala själv, eftersom garantin inte gäller när man har tappat datorn.",
+    "explanationJa": "パソコンを{落|お}とした{場合|ばあい}は{保証|ほしょう}が{効|き}かないので、{画面|がめん}は{自分|じぶん}で{払|はら}います。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Damm i fläkten kan göra att en dator blir för varm.",
+    "source": "Nationalencyklopedin, uppslaget ”dator”",
+    "checked": "2026-11-19",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "En garanti gäller oftast inte skador som köparen själv har orsakat, till exempel när man har tappat varan.",
+    "source": "Hallå konsument (Konsumentverket), ”Garanti”",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om problem med datorer och mobiler och om vad man kan göra.",
+  "discussionPoints": [
+   "Vad gör du först när datorn eller mobilen fryser?",
+   "Har du någon gång spillt något på en dator eller en mobil? Vad hände?",
+   "Har du lämnat in något på garanti? Hur gick det?",
+   "Brukar du spara kvittot när du köper en dator eller en mobil?"
+  ]
+ },
+ "standard": 2
+}
