@@ -36,9 +36,32 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "labelSv": "sjukdom"
+    },
+    {
+     "id": "s.virus.2",
+     "ja": "（コンピューター）ウイルス",
+     "defSv": "Ett program som skadar en dator.",
+     "defJa": "コンピューターを{壊|こわ}すプログラム。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Datorn fick ett virus.",
+       "ja": "パソコンがウイルスに{感染|かんせん}しました。"
+      }
+     ],
+     "labelSv": "dator",
+     "quality": {
+      "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.virus.1"
+   }
   },
   {
    "id": "e.värdcell",
@@ -240,7 +263,12 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.förkylning.1"
+   }
   },
   {
    "id": "e.munsår",
