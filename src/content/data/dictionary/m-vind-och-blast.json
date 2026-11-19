@@ -27,7 +27,7 @@
        "ja": "{今日|きょう}は{海辺|うみべ}で{風|かぜ}が{強|つよ}く{吹|ふ}いています。"
       }
      ],
-     "labelSv": "om vinden",
+     "labelSv": "vind",
      "collocations": [
       "det blåser",
       "det blåser kallt"
@@ -42,8 +42,30 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.blåsa.2",
+     "ja": "（{息|いき}を）{吹|ふ}く",
+     "defSv": "Låta luft gå ut ur munnen.",
+     "defJa": "{口|くち}から{息|いき}を{出|だ}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Blås ut ljusen!",
+       "ja": "ろうそくを{吹|ふ}き{消|け}して！"
+      }
+     ],
+     "labelSv": "med munnen",
+     "quality": {
+      "status": "ai-draft"
+     }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.blåsa.1"
+   }
   },
   {
    "id": "e.blåst",
@@ -537,9 +559,33 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.drake.2",
+     "ja": "ドラゴン、{竜|りゅう}",
+     "defSv": "Ett stort djur i sagor, som kan flyga och spruta eld.",
+     "defJa": "{物語|ものがたり}に{出|で}てくる、{空|そら}を{飛|と}び{火|ひ}を{吹|ふ}く{大|おお}きな{生|い}き{物|もの}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Riddaren slogs mot en drake.",
+       "ja": "{騎士|きし}はドラゴンと{戦|たたか}いました。"
+      }
+     ],
+     "labelSv": "sagodjur",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.drake.2"
+   }
   },
   {
    "id": "e.vindflöjel",

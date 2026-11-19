@@ -266,7 +266,7 @@
        "ja": "10{時|じ}ごろ{霧|きり}が{晴|は}れて、{太陽|たいよう}が{出|で}てきました。"
       }
      ],
-     "labelSv": "om dimma",
+     "labelSv": "dimma",
      "frame": {
       "subject": "Dimman"
      },
@@ -277,8 +277,30 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.lätta.2",
+     "ja": "{離陸|りりく}する",
+     "defSv": "Om ett flygplan: lyfta från marken.",
+     "defJa": "{飛行機|ひこうき}が{地面|じめん}から{飛|と}び{立|た}つ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Planet lättar klockan tio.",
+       "ja": "{飛行機|ひこうき}は{10時|じゅうじ}に{離陸|りりく}します。"
+      }
+     ],
+     "labelSv": "flygplan",
+     "quality": {
+      "status": "ai-draft"
+     }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.lätta.1"
+   }
   },
   {
    "id": "e.bryta-igenom",
@@ -356,7 +378,12 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.fuktig.1"
+   }
   },
   {
    "id": "e.immig",

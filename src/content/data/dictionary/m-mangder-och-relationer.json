@@ -26,7 +26,7 @@
        "ja": "{集合|しゅうごう}｛1, 2, 3｝には{要素|ようそ}が{三|みっ}つあります。"
       }
      ],
-     "labelSv": "i matematik",
+     "labelSv": "matematik",
      "explanation": {
       "sv": "I vardagen betyder mängd ungefär hur mycket det finns av något, till exempel en stor mängd snö. I matematik är en mängd en samling saker som hör ihop, och sakerna kallas element. Man skriver ofta elementen så här: {1, 2, 3}. Ordningen spelar ingen roll, och varje element räknas bara en gång.",
       "ja": "ふだんの{言葉|ことば}では「mängd」は「{量|りょう}」という{意味|いみ}で、「en stor mängd snö（{大量|たいりょう}の{雪|ゆき}）」のように{使|つか}います。{数学|すうがく}では、まとまったものの{集|あつ}まりを「mängd（{集合|しゅうごう}）」と{言|い}い、{中|なか}のものを「element（{要素|ようそ}）」と{呼|よ}びます。{要素|ようそ}は{波|なみ}かっこの{中|なか}に{書|か}きます：｛1, 2, 3｝。{順番|じゅんばん}は{関係|かんけい}なく、{同|おな}じ{要素|ようそ}は{一度|いちど}だけ{数|かぞ}えます。"
@@ -37,9 +37,33 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.mängd.2",
+     "ja": "{量|りょう}、たくさん",
+     "defSv": "Hur mycket det finns av något, eller mycket av något.",
+     "defJa": "どのくらいあるか、またはたくさんあること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det kom en stor mängd snö.",
+       "ja": "{大量|たいりょう}の{雪|ゆき}が{降|ふ}りました。"
+      }
+     ],
+     "labelSv": "hur mycket",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.mängd.2"
+   }
   },
   {
    "id": "e.delmängd",
@@ -220,7 +244,12 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.relation.1"
+   }
   },
   {
    "id": "e.ordnat-par",

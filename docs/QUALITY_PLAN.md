@@ -129,7 +129,7 @@ Varje kö genereras av `npm run audit:content -- --backlog` till `quality/backlo
 |---|---|---|---|
 | B1 ✅ | Skriptbar typografi och läsningar: citattecken, `..`, dubbla ord, säkra felläsningar (klar 2026-11-19) | cirka 1 500 strängar | 1 |
 | B2 ✅ | Säkra betydelser: "kan också betyda" (177), 「；」 och "Också:" (109) → egna betydelser med `order` | cirka 290 poster | 1–2 |
-| B3 | Grundord med bara fackbetydelse: lägg till grundbetydelsen | 265 poster | 1–2 |
+| B3 ✅ | Grundord med bara fackbetydelse: lägg till grundbetydelsen | 265 poster | 1–2 |
 | B4 | Planerade men ej levererade animationer (46), sedan Fysik och Kemi | cirka 350 ord | 2–3 |
 | B5 | Manuellt spår för bildlösa ord | 573 ord | en ämnesgrupp per session, värsta först: Avancerad matematik, Filosofi & etik, Ekologi & miljö, Matematikens grunder |
 | B6 | Per överämne, i ordning R01 → R06: betydelseinventering, förklaringar (K5–K7), andra exempel, animationer för verb och processord, strukturerade fakta | 36 ämnesgrupper | en ämnesgrupp per session, högst tre parallellt |

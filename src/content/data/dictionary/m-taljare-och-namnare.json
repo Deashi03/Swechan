@@ -26,7 +26,7 @@
        "ja": "4{分|ぶん}の3は{分数|ぶんすう}です。"
       }
      ],
-     "labelSv": "i matematik",
+     "labelSv": "matematik",
      "usageNote": {
       "sv": "I vardagen betyder bråk också oväsen eller gräl: Det var bråk på gården. Sammanhanget visar vilken betydelse det är.",
       "ja": "{日常|にちじょう}では「bråk」は「{騒|さわ}ぎ、けんか」という{意味|いみ}でも{使|つか}います：Det var bråk på gården（{中庭|なかにわ}で{騒|さわ}ぎがあった）。どちらの{意味|いみ}かは{文脈|ぶんみゃく}でわかります。"
@@ -37,9 +37,33 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.bråk.2",
+     "ja": "けんか、{騒|さわ}ぎ",
+     "defSv": "När människor grälar eller slåss, eller när det låter mycket.",
+     "defJa": "{人|ひと}が{言|い}い{争|あらそ}ったりけんかしたりすること、またはうるさい{騒|さわ}ぎ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det blev bråk på skolgården.",
+       "ja": "{校庭|こうてい}でけんかになりました。"
+      }
+     ],
+     "labelSv": "gräl",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.bråk.2"
+   }
   },
   {
    "id": "e.täljare",
@@ -350,7 +374,12 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.tiondel.1"
+   }
   }
  ]
 }

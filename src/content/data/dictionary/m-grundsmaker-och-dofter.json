@@ -615,7 +615,7 @@
        "ja": "にんにくの{味|あじ}を{感|かん}じます。"
       }
      ],
-     "labelSv": "märka med sinnena",
+     "labelSv": "med sinnena",
      "frame": {
       "subject": "Hon",
       "complement": "lukten"
@@ -625,9 +625,51 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 3
+    },
+    {
+     "id": "s.känna.2",
+     "ja": "（{人|ひと}を）{知|し}っている",
+     "defSv": "Veta vem någon är och ha träffat den.",
+     "defJa": "{誰|だれ}かと{知|し}り{合|あ}いである。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag känner hennes bror.",
+       "ja": "{私|わたし}は{彼女|かのじょ}のお{兄|にい}さんを{知|し}っています。"
+      }
+     ],
+     "labelSv": "veta vem",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.känna.3",
+     "ja": "（{気持|きも}ちを）{感|かん}じる",
+     "defSv": "Ha en känsla, till exempel glädje eller rädsla.",
+     "defJa": "{喜|よろこ}びや{怖|こわ}さなどの{気持|きも}ちを{感|かん}じる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag känner mig glad.",
+       "ja": "うれしい{気持|きも}ちです。"
+      }
+     ],
+     "labelSv": "känsla",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.känna.2"
+   }
   }
  ]
 }

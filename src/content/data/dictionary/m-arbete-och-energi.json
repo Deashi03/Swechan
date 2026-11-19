@@ -227,7 +227,7 @@
        "ja": "{新|あたら}しい{電子|でんし}レンジは{古|ふる}いものより{出力|しゅつりょく}が{高|たか}いです。"
       }
      ],
-     "labelSv": "i fysik",
+     "labelSv": "fysik",
      "explanation": {
       "sv": "Effekt säger hur snabbt energin omvandlas. Om två personer bär samma låda upp för samma trappa gör de lika mycket arbete, men den som går snabbast har störst effekt. I vardagen betyder effekt också verkan, till exempel att en medicin har god effekt.",
       "ja": "「effekt」は、エネルギーがどれだけ{速|はや}く{変換|へんかん}されるかを{表|あらわ}します。ふたりが{同|おな}じ{箱|はこ}を{同|おな}じ{階段|かいだん}の{上|うえ}まで{運|はこ}ぶと、{仕事|しごと}の{量|りょう}は{同|おな}じですが、{速|はや}く{上|あ}がった{人|ひと}のほうが{仕事率|しごとりつ}は{大|おお}きくなります。ふだんの{言葉|ことば}では「effekt」は「{効果|こうか}」という{意味|いみ}でも{使|つか}い、「en medicin har god effekt（{薬|くすり}がよく{効|き}く）」のように{言|い}います。"
@@ -238,9 +238,33 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.effekt.2",
+     "ja": "{効果|こうか}",
+     "defSv": "Det som händer på grund av något.",
+     "defJa": "{何|なに}かによって{起|お}こる{結果|けっか}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Medicinen hade god effekt.",
+       "ja": "その{薬|くすり}はよく{効|き}きました。"
+      }
+     ],
+     "labelSv": "verkan",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19",
+    "coreSense": "s.effekt.2"
+   }
   },
   {
    "id": "e.verkningsgrad",
