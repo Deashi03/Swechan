@@ -5,7 +5,7 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 ## Så arbetar du
 
 - **En etapp per session.** När etappen är inlagd: bocka av den här nedanför, uppdatera `PROJECT_STATUS.md`, skriv en ny fil i `changelog/`, stanna och be produktägaren starta en ny session. (A2–A7 gjordes i en session på produktägarens uttryckliga begäran 2026-11-19.)
-- **Ordning** (produktägarens beslut): 1) hela del A (klar 2026-11-19 utom A4b), 2) de snabba rättningarna B1–B4, 3) ny produktion startar igen med *Datorer & internet* (R07-A01) enligt den nya briefen, 4) resten av del B (B5–B7) **varvas** med ny produktion: en eftersläpningsetapp mellan varje nytt överämne. A4b kan tas när som helst.
+- **Ordning** (produktägarens beslut): 1) hela del A (klar 2026-11-19), 2) de snabba rättningarna B1–B4, 3) ny produktion startar igen med *Datorer & internet* (R07-A01) enligt den nya briefen, 4) resten av del B (B5–B7) **varvas** med ny produktion: en eftersläpningsetapp mellan varje nytt överämne.
 - **Ingen ny modulproduktion förrän A7 är klar.** *Biologi* (0.52.0) och *Astronomi & rymd* (0.53.0) hann släppas med den gamla arbetsgången medan planen skrevs. De ingår därför i eftersläpningen, och mätvärdena i revisionen (tagna vid 0.51.0) räknas om i A2.
 - Reglerna i `CLAUDE.md` gäller som vanligt: bevara användardata, ändra aldrig `m.*`- eller `s.*`-ID:n, tester före commit, högst tre ämnesgrupper parallellt.
 - **Varje etapp slutar med ett mätvärde.** Från etapp A2 ska `npm run audit:content` visa att etappens mått har förbättrats och att inget annat har försämrats.
@@ -70,10 +70,12 @@ Beslutad av produktägaren 2026-11-18. Bakgrund, mätvärden och motiv står i `
 **Klart när (ursprungligt mål):** en modul laddar en bildfil i stället för flera delar, startpaketet är under 1,5 MB gzip, och offlinetesterna är gröna.
 
 ### A4b. Asynkron ordbok och bildpaket per modul (efter A7)
-- [ ] Sökindex (lemma, böjningsformer, glosa, id) som egen liten fil, byggd av ett skript; ordlistan och sökningen läser den.
-- [ ] Ordposter laddas per ämnesgrupp vid behov: `getContent()` får ett `ensureSenses(ids)` som skärmarna väntar på innan de visar ord (inlärning, repetition, ordboksblad, dagens ord). Övningsgeneratorn tar distraktorer ur laddade poster.
+- [x] Sökindex (lemma, böjningsformer, glosa, id) som egen liten fil, byggd av ett skript; ordlistan och sökningen läser den.
+- [x] Ordposter laddas per ämnesgrupp vid behov: `getContent()` får ett `ensureSenses(ids)` som skärmarna väntar på innan de visar ord (inlärning, repetition, ordboksblad, dagens ord). Övningsgeneratorn tar distraktorer ur laddade poster.
 - [ ] Bildpaket per modul (förrenderade SVG:er för modulens motiv) om mätningen i e2e visar att förladdningen inte räcker.
 - [ ] Startpaketet under 1,5 MB gzip (`npm run bundle:report`).
+
+**Genomfört 2026-11-19.** Sökindexet byggs ur uppslagsdelen (`src/content/lexicon.ts`), som också räcker för ordlistor, statistik, inlärningsplaner och distraktorer. Fulla poster laddas per ordboksfil; skärmar som visar definitioner väntar på dem (`src/ui/app/useSenses.tsx`). Allt laddas i bakgrunden efter start, så offline fungerar som förut. Bildpaket per modul behövs inte: e2e visar cirka 30 ms från ”nästa” till bild. Startpaketets storlek: se `changelog/2026-11-19-a4b-lat-ordbok.md`.
 
 **Klart när:** startpaketet är under 1,5 MB gzip, offline fungerar för öppnade moduler, och e2e är grönt.
 
