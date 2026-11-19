@@ -1,0 +1,192 @@
+{
+ "id": "m.bandbredd-och-svarstid",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Bandbredd och svarstid",
+ "titleJa": "{帯域幅|たいいきはば}と{応答時間|おうとうじかん}",
+ "descriptionSv": "Du lär dig att beskriva hur snabbt internet är och varför det ibland går långsamt: skillnaden mellan hur mycket data som får plats och hur snabbt den kommer fram, hur man mäter hastigheten och vad som händer när en film stannar.",
+ "descriptionJa": "インターネットの{速|はや}さと、ときどき{遅|おそ}くなる{理由|りゆう}を{説明|せつめい}できるようになります。どれだけのデータが{通|とお}れるかと、どれだけ{速|はや}く{届|とど}くかの{違|ちが}い、{速度|そくど}の{測|はか}り{方|かた}、{映画|えいが}が{止|と}まるときに{何|なに}が{起|お}きているかを{学|まな}びます。",
+ "categoryId": "R07-A01-T04",
+ "tags": [
+  "datorer",
+  "internet",
+  "nätverk"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.ip-adresser"
+ ],
+ "related": [],
+ "recommendedOrder": 3744,
+ "words": [
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.seg.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighetstest.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genomsnitt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bandbredd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kapacitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överbelastad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svarstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.millisekund.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fördröjning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.realtid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.videosamtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.streama.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hacka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.buffra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.datorspel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fiber.2",
+   "active": true
+  },
+  {
+   "senseId": "s.flaskhals.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Varför är internet så segt?",
+  "paragraphs": [
+   "Aiko och Erik bor med sina barn Mia och Leo i ett radhus i Linköping. På kvällarna är internet ofta segt. Erik har videosamtal med sin syster i Australien, Aiko streamar en film och barnen spelar datorspel. Filmen buffrar, och bilden i Eriks samtal hackar.",
+   "Aiko gör ett hastighetstest i mobilen. Hon mäter hastigheten både på morgonen och på kvällen i en vecka. På morgonen går det snabbt, men på kvällen går det mycket långsammare. I genomsnitt får de bara hälften av den hastighet som de betalar för.",
+   "Aiko ringer till kundtjänst hos internetleverantören. – Ni är fyra personer som använder internet samtidigt, säger Jonas på kundtjänst. Då räcker inte er bandbredd. Uppkopplingen har inte tillräcklig kapacitet, så den blir överbelastad på kvällen.",
+   "Leo klagar mest på svarstiden. När han spelar måste allt ske i realtid. Svarstiden är ofta över 80 millisekunder, och den lilla fördröjningen gör att han förlorar. – Ni har fiber, så svarstiden borde vara kortare, säger Jonas. Det kan bero på er gamla router.",
+   "Familjen väljer ett abonnemang med större bandbredd och köper en ny router. Det visar sig att den gamla routern var flaskhalsen. Nu fungerar allt, och ingen tycker att internet är segt längre."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer med Aikos film på kvällarna?",
+    "options": [
+     "Den blir för ljus",
+     "Den går för fort",
+     "Den buffrar",
+     "Den börjar om"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Filmen buffrar, och bilden i Eriks samtal hackar.",
+    "explanationJa": "{映画|えいが}が{読|よ}み{込|こ}み{中|ちゅう}で{止|と}まります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När mäter Aiko hastigheten?",
+    "options": [
+     "Bara på natten",
+     "På morgonen och på kvällen",
+     "Bara mitt på dagen",
+     "När barnen sover"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon mäter hastigheten både på morgonen och på kvällen i en vecka.",
+    "explanationJa": "{一週間|いっしゅうかん}、{朝|あさ}と{夜|よる}の{両方|りょうほう}で{測|はか}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är svarstiden viktig för Leo?",
+    "options": [
+     "Han laddar ner stora filer",
+     "När han spelar måste allt ske i realtid",
+     "Han har många videosamtal",
+     "Han tittar på film"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När han spelar måste allt ske i realtid.",
+    "explanationJa": "ゲームでは、すべてがリアルタイムで{起|お}こる{必要|ひつよう}があるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Jonas säger att familjen har för stor bandbredd.",
+    "correct": false,
+    "explanationSv": "Då räcker inte er bandbredd.",
+    "explanationJa": "{帯域幅|たいいきはば}が{足|た}りない、と{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den gamla routern gjorde internet långsammare.",
+    "correct": true,
+    "explanationSv": "Det visar sig att den gamla routern var flaskhalsen.",
+    "explanationJa": "{古|ふる}いルーターがボトルネックになっていました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Bandbredd mäts i megabit per sekund och svarstid i millisekunder; gränserna 20 och 100 millisekunder är ungefärliga tumregler.",
+    "source": "Internetstiftelsen, Bredbandskollen",
+    "checked": "2026-11-19",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur snabbt internet är hemma och på jobbet.",
+  "discussionPoints": [
+   "Brukar du tycka att internet är segt? När?",
+   "Har du gjort ett hastighetstest någon gång? Vad visade det?",
+   "Vad är viktigast för dig: stor bandbredd eller kort svarstid?",
+   "Vad gör du när en film buffrar?"
+  ]
+ },
+ "standard": 2
+}

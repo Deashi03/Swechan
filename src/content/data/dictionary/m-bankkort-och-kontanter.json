@@ -373,23 +373,85 @@
     },
     {
      "id": "s.täckning.2",
-     "ja": "（{携帯電話|けいたいでんわ}の）{電波|でんぱ}",
-     "defSv": "När mobilen har kontakt med nätet på en plats.",
-     "defJa": "{携帯電話|けいたいでんわ}の{電波|でんぱ}が{届|とど}くこと。",
+     "ja": "（{携帯電話|けいたいでんわ}などの）{電波|でんぱ}が{届|とど}くこと、カバーエリア",
+     "defSv": "Om mobilen och internet: att signalen når fram, så att mobilen fungerar på en plats.",
+     "defJa": "スマホやインターネットについて：{電波|でんぱ}が{届|とど}いていて、その{場所|ばしょ}でスマホが{使|つか}えること。",
      "concept": false,
      "examples": [
       {
-       "sv": "Här finns ingen täckning.",
-       "ja": "ここは{電波|でんぱ}が{届|とど}きません。"
+       "sv": "Det finns ingen täckning i källaren.",
+       "ja": "{地下室|ちかしつ}では{電波|でんぱ}が{入|はい}りません。"
+      },
+      {
+       "sv": "Har du täckning där uppe på berget?",
+       "ja": "その{山|やま}の{上|うえ}では{電波|でんぱ}が{入|はい}りますか？"
       }
      ],
-     "labelSv": "mobil",
+     "labelSv": "mobil och wifi",
+     "collocations": [
+      "bra täckning",
+      "dålig täckning",
+      "ingen täckning",
+      "ha täckning"
+     ],
+     "explanation": {
+      "sv": "Om du står i en källare och samtalet bryts, eller om mobilen visar att du inte kan ringa ute i skogen, då har du ingen täckning. I städerna är täckningen oftast bra, men i glesbygd, i tunnlar och under marken kan den vara dålig. Räckvidd handlar om hur långt en router eller mast når; täckning handlar om att signalen finns just där du är.",
+      "ja": "{地下室|ちかしつ}で{通話|つうわ}が{切|き}れたり、{森|もり}の{中|なか}でスマホが{電話|でんわ}をかけられないと{表示|ひょうじ}したりしたら、それは「ingen täckning（{圏外|けんがい}）」です。{町|まち}ではたいてい{電波|でんぱ}が{良|よ}いですが、{過疎地|かそち}やトンネル、{地下|ちか}では{悪|わる}いことがあります。「räckvidd」はルーターや{基地局|きちきょく}の{電波|でんぱ}がどこまで{届|とど}くかで、「täckning」はあなたがいるその{場所|ばしょ}に{電波|でんぱ}があるかどうかです。"
+     },
+     "tags": [
+      "datorer",
+      "internet",
+      "nätverk"
+     ],
      "quality": {
       "status": "ai-draft"
-     },
-     "order": 1
+     }
+    },
+    {
+     "id": "s.täckning.3",
+     "ja": "（メディアの）{報道|ほうどう}",
+     "defSv": "Hur mycket tidningar, radio och tv berättar om något som har hänt.",
+     "defJa": "{新聞|しんぶん}、ラジオ、テレビが、ある{出来事|できごと}をどのくらい{伝|つた}えるか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Valet fick stor täckning i medierna.",
+       "ja": "{選挙|せんきょ}はメディアで{大|おお}きく{報道|ほうどう}されました。"
+      }
+     ],
+     "labelSv": "medier",
+     "tags": [
+      "medier"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.täckning.4",
+     "ja": "{裏付|うらづ}け、{根拠|こんきょ}",
+     "defSv": "Stöd eller bevis för att något stämmer.",
+     "defJa": "{何|なに}かが{正|ただ}しいことを{示|しめ}す{支|ささ}えや{証拠|しょうこ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det finns ingen täckning för det som han säger.",
+       "ja": "{彼|かれ}の{言|い}っていることには{根拠|こんきょ}がありません。"
+      }
+     ],
+     "labelSv": "belägg",
+     "tags": [
+      "samhälle"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-19"
+   }
   },
   {
    "id": "e.ta-ut-pengar",

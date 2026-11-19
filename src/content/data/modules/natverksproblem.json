@@ -1,0 +1,176 @@
+{
+ "id": "m.natverksproblem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Nätverksproblem",
+ "titleJa": "ネットワークのトラブル",
+ "descriptionSv": "Du lär dig att beskriva vad som är fel när internet krånglar, att leta efter orsaken steg för steg och att förklara problemet för kundtjänst eller en tekniker.",
+ "descriptionJa": "インターネットの{調子|ちょうし}が{悪|わる}いときに{何|なに}が{問題|もんだい}なのかを{説明|せつめい}し、{一|ひと}つずつ{原因|げんいん}を{探|さが}して、カスタマーサービスや{技術者|ぎじゅつしゃ}に{問題|もんだい}を{伝|つた}えられるようになります。",
+ "categoryId": "R07-A01-T04",
+ "tags": [
+  "datorer",
+  "internet",
+  "nätverk"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tradlos-tackning"
+ ],
+ "related": [],
+ "recommendedOrder": 3746,
+ "words": [
+  {
+   "senseId": "s.tappa-uppkopplingen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.instabil.3",
+   "active": true
+  },
+  {
+   "senseId": "s.avbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orsak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.router.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lysa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätverkskabel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glappkontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.starta-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stänga-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömavbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kundtjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ärendenummer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fabriksinställning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tekniker.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Inget internet mitt i mötet",
+  "paragraphs": [
+   "Sofia jobbar hemifrån två dagar i veckan. En tisdag, mitt i ett viktigt möte, ser hon att datorn tappar uppkopplingen. Efter några minuter fungerar den igen, men sedan händer samma sak en gång till. Uppkopplingen är instabil hela förmiddagen.",
+   "Sofia vill hitta orsaken och börjar felsöka. Först tittar hon på routern. En lampa som brukar lysa grönt lyser nu rött. Hon kontrollerar nätverkskabeln och märker att den sitter löst. Kanske är det glappkontakt?",
+   "Hon byter kabel och gör som alla brukar säga. Hon drar ur routerns sladd, väntar en halv minut och startar om den. Först blir allt bra, men efter en timme kommer samma problem tillbaka. Hon stänger av datorn och sätter på den igen, men det hjälper inte.",
+   "Sofia ringer till kundtjänst hos internetleverantören och får ett ärendenummer. – Det har inte varit något strömavbrott eller något annat avbrott i ert område, säger kvinnan som svarar. Prova att återställa routern till fabriksinställningarna.",
+   "Det hjälper inte heller. Till slut skickar företaget en tekniker. Han ser att det är fel på uttaget i väggen, och efter tjugo minuter är allt lagat. Sofia kan äntligen jobba igen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "När tappar Sofias dator uppkopplingen första gången?",
+    "options": [
+     "När hon äter lunch",
+     "På kvällen",
+     "När hon startar datorn",
+     "Mitt i ett viktigt möte"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En tisdag, mitt i ett viktigt möte, ser hon att datorn tappar uppkopplingen.",
+    "explanationJa": "{大事|だいじ}な{会議|かいぎ}の{最中|さいちゅう}に{接続|せつぞく}が{切|き}れます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken färg har lampan på routern när det är problem?",
+    "options": [
+     "Grön",
+     "Blå",
+     "Gul",
+     "Röd"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En lampa som brukar lysa grönt lyser nu rött.",
+    "explanationJa": "いつもは{緑|みどり}のランプが、いまは{赤|あか}く{光|ひか}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör Sofia för att starta om routern?",
+    "options": [
+     "Hon köper en ny router",
+     "Hon drar ur sladden och väntar en stund",
+     "Hon ringer till kundtjänst",
+     "Hon byter till en ny kabel"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon drar ur routerns sladd, väntar en halv minut och startar om den.",
+    "explanationJa": "コードを{抜|ぬ}いて{三十秒|さんじゅうびょう}{待|ま}ち、{再起動|さいきどう}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det har varit ett strömavbrott i Sofias område.",
+    "correct": false,
+    "explanationSv": "– Det har inte varit något strömavbrott eller något annat avbrott i ert område …",
+    "explanationJa": "{停電|ていでん}もほかの{障害|しょうがい}もなかった、と{言|い}われました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Felet satt inte i routern.",
+    "correct": true,
+    "explanationSv": "Han ser att det är fel på uttaget i väggen …",
+    "explanationJa": "{原因|げんいん}は{壁|かべ}の{差|さ}し{込|こ}み{口|ぐち}でした。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om problem med internet och om vad man kan göra.",
+  "discussionPoints": [
+   "Vad gör du först när du tappar uppkopplingen?",
+   "Har du någon gång ringt till kundtjänst för att internet inte fungerade? Hur gick det?",
+   "Brukar du starta om routern? Hjälper det?",
+   "Har en tekniker någon gång kommit hem till dig?"
+  ]
+ },
+ "standard": 2
+}
