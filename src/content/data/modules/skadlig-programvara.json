@@ -1,0 +1,186 @@
+{
+ "id": "m.skadlig-programvara",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-19",
+ "titleSv": "Skadlig programvara",
+ "titleJa": "マルウェア（{有害|ゆうがい}なソフトウェア）",
+ "descriptionSv": "Du lär dig att tala om olika sorters skadeprogram, hur de kommer in i en dator, vilka tecken man ska se upp med och hur man skyddar sig.",
+ "descriptionJa": "いろいろな{種類|しゅるい}のマルウェア、それがどうやってパソコンに{入|はい}るか、どんな{兆候|ちょうこう}に{気|き}をつけるか、どう{身|み}を{守|まも}るかを{話|はな}せるようになります。",
+ "categoryId": "R07-A01-T05",
+ "tags": [
+  "datorer",
+  "teknik",
+  "digital säkerhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.natfiske"
+ ],
+ "related": [],
+ "recommendedOrder": 3754,
+ "words": [
+  {
+   "senseId": "s.skadeprogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.programvara.1",
+   "active": false
+  },
+  {
+   "senseId": "s.drabba.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utpressningsprogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.virus.2",
+   "active": true
+  },
+  {
+   "senseId": "s.spionprogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trojan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klicka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hackare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dataintrång.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säkerhetskopia.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.antivirusprogram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandvägg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tecken-på.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Filerna går inte att öppna",
+  "paragraphs": [
+   "Hiroshi har en liten restaurang i Malmö. En morgon fungerar inte datorn i köket. På skärmen står det att ingen fil går att öppna och att han måste betala 10 000 kronor för att få tillbaka dem. Ett utpressningsprogram har drabbat restaurangen.",
+   "Hiroshis dotter Saki studerar till programmerare. Hon förklarar att ett utpressningsprogram är ett sorts skadeprogram, alltså skadlig programvara. Andra exempel är virus, som sprider sig från dator till dator, och spionprogram, som i hemlighet ser vad man gör.",
+   "– Hur kom det in i datorn? frågar Hiroshi. Saki tror att det var en trojan. Förra veckan bestämde sig Hiroshi för att ladda ner ett gratis program för att göra menyer. Programmet såg bra ut, men det innehöll skadlig kod. Ibland räcker det att man klickar på en bilaga i ett mejl.",
+   "Saki säger att de inte ska betala. Då vet man inte om man får tillbaka filerna, och hackarna får pengar till nya brott. Hiroshi polisanmäler dataintrånget. Som tur är har han en säkerhetskopia av alla recept och bokningar. Saki raderar allt på datorn och lägger in programmen igen.",
+   "Nu har datorn ett antivirusprogram och en brandvägg. Saki lär också sin pappa vilka tecken på skadeprogram han ska se upp med: att datorn plötsligt blir mycket långsam, att konstiga fönster dyker upp eller att program startar av sig själva."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står det på skärmen i restaurangens dator?",
+    "options": [
+     "Att datorn är för gammal",
+     "Att Hiroshi måste betala för att få tillbaka filerna",
+     "Att Saki har ringt",
+     "Att restaurangen är stängd"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På skärmen står det att ingen fil går att öppna och att han måste betala 10 000 kronor för att få tillbaka dem.",
+    "explanationJa": "ファイルを{取|と}り{戻|もど}すには、お{金|かね}を{払|はら}わなければならないと{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör ett spionprogram enligt Saki?",
+    "options": [
+     "Det låser alla filer",
+     "Det tar bort virus",
+     "Det gör datorn snabbare",
+     "Det ser i hemlighet vad man gör"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… och spionprogram, som i hemlighet ser vad man gör.",
+    "explanationJa": "{何|なに}をしているかをこっそり{見|み}ます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Hur kom skadeprogrammet troligen in i datorn?",
+    "options": [
+     "En kund använde datorn",
+     "Datorn var för gammal",
+     "Hiroshi laddade ner ett gratis program",
+     "Någon bröt sig in i köket"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Förra veckan bestämde sig Hiroshi för att ladda ner ett gratis program för att göra menyer.",
+    "explanationJa": "{無料|むりょう}のプログラムをダウンロードしたことが{原因|げんいん}のようです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Hiroshi betalar 10 000 kronor för att få tillbaka filerna.",
+    "correct": false,
+    "explanationSv": "Saki säger att de inte ska betala.",
+    "explanationJa": "サキは{払|はら}わないように{言|い}い、ヒロシはバックアップを{使|つか}いました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Hiroshi förlorade inte sina recept.",
+    "correct": true,
+    "explanationSv": "Som tur är har han en säkerhetskopia av alla recept och bokningar.",
+    "explanationJa": "バックアップがあったので、レシピは{失|うしな}われませんでした。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Skadlig kod delas ofta in i virus, trojaner, spionprogram och utpressningsprogram.",
+    "source": "MSB och CERT-SE (cert.se)",
+    "checked": "2026-11-19",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Polisen avråder från att betala lösensummor till brottslingar bakom utpressningsprogram.",
+    "source": "Polisen (polisen.se)",
+    "checked": "2026-11-19",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om virus och andra skadeprogram.",
+  "discussionPoints": [
+   "Har din dator eller mobil någon gång haft ett virus? Vad hände?",
+   "Har du ett antivirusprogram? Tycker du att man behöver ett?",
+   "Vad skulle du göra om datorn plötsligt visade att filerna var låsta?",
+   "Vilka tecken på skadeprogram känner du till?"
+  ]
+ },
+ "standard": 2
+}
