@@ -183,6 +183,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.53 – Astronomi & rymd (klar)
 - 42 nya moduler i Matematik & naturvetenskap → Astronomi & rymd med 196 nya ordbilder. 8 ord saknar bild efter två blindtestomgångar. Hela *Matematik & naturvetenskap* är nu publicerad.
 
+## v0.55 – Datorer & internet (klar)
+- 42 nya moduler i Teknik & digital värld → Datorer & internet, de första enligt standard 2 (kvalitetskontraktet), med 263 nya ordbilder varav 83 rörliga. Alla modulord har bild.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
