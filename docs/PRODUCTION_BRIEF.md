@@ -44,7 +44,7 @@ Varje ny modul har `"standard": 2` och ska uppfylla kvalitetskontraktet (`qualit
 Varje modulord får en visualisering (K1). Planen (`npm run visuals:plan`) säger vilken sort; verktygen skriver inte över den.
 
 - **Animation** (plan `animation`: verb, processord som börjar med "När …", ord om rörelse eller förändring – K2, K10):
-  - **Saker som rör sig** (en kula rullar, vatten kokar, en kurva växer, energi flödar): rita slutläget som vanligt och lägg rörelsen med `moving(namn, keyframes, { dur, delay, spin }, …delar)` från `kit.ts`. Grundläget är affischbilden. Använd bara `transform` och `opacity`. Sätt `"animated": true` i specen. Exempel: `mek.rörelseenergi` och `mek.lägesenergi` i `mechanics.ts`, `berg.omvandla` i `rocksMinerals.ts`.
+  - **Saker som rör sig** (en kula rullar, vatten kokar, en kurva växer, energi flödar): rita slutläget som vanligt och lägg rörelsen med `moving(namn, keyframes, { dur, delay, spin }, …delar)` från `kit.ts`. Grundläget är affischbilden. Använd bara `transform` och `opacity`. Sätt `"animated": true` i specen. Exempel: `mek.rörelseenergi` och `mek.lägesenergi` i `mechanics.ts`, `berg.omvandla` i `rocksMinerals.ts`. Färdiga rörelser: `waIn(namn, dx, dy, …)` (kommer in från ett håll, för pilar och partiklar), `waPulse` (glöder eller blinkar), `waShake`, `waBob`, `waSway`, `waGrow` (bildas eller sprids) och `waSpin`. Exempel: `atom.kretsa`, `vag.guppa`, `reak.explosion`.
   - **Människor som gör något:** en scen i `scripts/scenes/*.scenes.ts` (mall `body`), `npm run scenes:build`.
   - En stillbild där planen säger animation kräver `"waiver": "<skäl>"` i specen. Minst 60 % av modulens verb och processord ska röra sig.
 - **Konkret ord:** en tydlig scen. `quiz: true` bara om bilden är entydig.

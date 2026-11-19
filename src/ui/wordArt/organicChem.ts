@@ -10,7 +10,7 @@
  * molecule itself, or the whole reaction row with the arrow marked).
  * Digits, maths signs and chemical symbols only; no words, no brands.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, waGrow, waPulse, type Svg } from './kit';
 import { HL, T } from './people';
 import { greyed } from './blindFix';
 import { car } from './homeKit';
@@ -175,7 +175,7 @@ export const ORGANIC_MOTIFS: Record<string, Svg> = {
   /** jäsning: a big glass bottle with juice and yeast; bubbles rise and leave through a water lock on top. */
   'org.jäsning': all(ground(), path('M24 110 C10 110 10 60 40 56 L40 40 L56 40 L56 56 C86 60 86 110 72 110 Z', GLASS, C.ink, 1.8), path('M15 92 C16 70 30 66 40 64 L56 64 C68 66 80 70 81 92 C81 104 78 108 72 108 L24 108 C18 108 15 104 15 92 Z', '#e9b44c', null),
     ...range(10).map((i) => circle(f1(26 + (i * 17) % 46), f1(98 + (i % 3) * 3), 1.4, '#c98b2a', null)), bubbles(48, 80, [[-10, 6], [4, 0], [-2, -10], [10, -6], [0, 12], [-6, -4], [8, 8]], 2),
-    path('M44 40 L44 28 C44 20 52 20 52 28 L52 40', 'none', C.ink, 1.8), path('M46 28 C46 24 50 24 50 28', 'none', '#5a9ccc', 2.4), bubbles(48, 12, [[0, 0], [5, -6]], 2.4), ring(48, 84, 26)),
+    path('M44 40 L44 28 C44 20 52 20 52 28 L52 40', 'none', C.ink, 1.8), path('M46 28 C46 24 50 24 50 28', 'none', '#5a9ccc', 2.4), bubbles(48, 12, [[0, 0], [5, -6]], 2.4), waPulse('b4-org-jasning-1', ring(48, 84, 26))),
   /** alkoholhalt: a beer bottle (5 %) and a strong spirit bottle (40 %); a bar beside each shows the share; the percentages are ringed. */
   'org.alkoholhalt': all(ground(), bottle(26, 110, 18, 60, '#b77b2a', C.gold, 0.8), rect(12, 4, 28, 14, C.white, 3, C.ink, 1.2), num(26, 15, '5 %', 9, HL), rect(44, 50, 6, 60, C.white, 1, C.ink, 1), rect(44, 107, 6, 3, HL, 0, null),
     bottle(86, 110, 20, 66, '#e9eef2', C.dark, 0.85), rect(70, 4, 32, 14, C.white, 3, C.ink, 1.2), num(86, 15, '40 %', 9, HL), rect(104, 50, 6, 60, C.white, 1, C.ink, 1), rect(104, 86, 6, 24, HL, 0, null), ring(26, 11, 14, HL, 2), ring(86, 11, 17, HL, 2)),
@@ -250,9 +250,9 @@ export const ORGANIC_MOTIFS: Record<string, Svg> = {
     ellipse(60, 92, 34, 12, '#f2e3b6', C.ink, 1.6), ellipse(60, 90, 13, 6, '#1f2a5c', null), ring(46, 30, 22), greyed(ellipse(104, 100, 10, 5, '#f2e3b6', C.ink, 1.2)), drop(104, 92, 0.8, '#8a4b1f')),
   /** spjälka: a long chain of six-rings is cut by orange marks into single rings. */
   'org.spjälka': all(...range(5).map((i) => all(sugarRing(14 + i * 22, 30, 9, 6, '#fbf3dc'), i < 4 ? line(`M${23 + i * 22} 30 L${27 + i * 22} 30`, C.ink, 2) : '')), ...range(4).map((i) => line(`M${25 + i * 22} 20 L${25 + i * 22} 40`, HL, 2.4, '3 2')),
-    arrow(60, 48, 60, 64, C.grey, 3), ...range(5).map((i) => sugarRing(14 + i * 23, 86 + (i % 2) * 8, 9, 6, '#fbf3dc')), ...range(4).map((i) => sparkle(25 + i * 23, 76, 3.4, HL))),
+    arrow(60, 48, 60, 64, C.grey, 3), waGrow('b4-org-spjalka-1', ...range(5).map((i) => sugarRing(14 + i * 23, 86 + (i % 2) * 8, 9, 6, '#fbf3dc'))), waPulse('b4-org-spjalka-2', ...range(4).map((i) => sparkle(25 + i * 23, 76, 3.4, HL)))),
   /** karamellisera: white sugar (grey) → in a pan on the stove it melts into brown caramel, ringed. */
-  'org.karamellisera': all(stove(78, 92, 64), pan(72, 80, '#9a5a1e'), path('M58 82 C62 76 82 76 86 82', 'none', '#b8722a', 2), ...[[62, 72], [72, 68], [82, 72]].map(([x, y]) => line(`M${x!} ${y!} c-3 -4 3 -8 0 -12`, C.grey2, 1.4)), ring(72, 80, 22),
+  'org.karamellisera': all(stove(78, 92, 64), pan(72, 80, '#9a5a1e'), path('M58 82 C62 76 82 76 86 82', 'none', '#b8722a', 2), ...[[62, 72], [72, 68], [82, 72]].map(([x, y]) => line(`M${x!} ${y!} c-3 -4 3 -8 0 -12`, C.grey2, 1.4)), waPulse('b4-org-karamellisera-1', ring(72, 80, 22)),
     greyed(path('M8 70 C10 58 34 58 36 70 Z', C.white, C.ink, 1.4), ...range(6).map((i) => rect(12 + (i % 3) * 7, 62 + Math.floor(i / 3) * 4, 3, 3, C.white, 0.5, C.ink, 0.6))), arrow(30, 50, 48, 62, C.grey, 2.2)),
 
   // ── 3456 Fett och fettsyror ─────────────────────────────────────

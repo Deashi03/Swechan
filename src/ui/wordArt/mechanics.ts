@@ -10,7 +10,7 @@
  * collision) and centripetalkraft/centrifugalkraft (ball on a string seen from above, arrow in or out).
  * Digits, maths signs and the variable names m, v, F, t and p only; no words, no brands.
  */
-import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, star, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, star, waBob, waIn, waPulse, type Svg } from './kit';
 import { HL, T } from './people';
 import { greyed } from './blindFix';
 import { clock } from './time';
@@ -114,7 +114,7 @@ const strobe = (kind: 'const' | 'acc' | 'ret') => {
   xs.forEach((x, i) => { out.push(line(`M${x} 52 L${x} 80`, C.grey, 1.2, '2 2'), dot(x, 52, i === xs.length - 1 ? HL : C.ink, 3)); });
   xs.slice(1).forEach((x, i) => { const a = xs[i]!; if (x - a > 10) out.push(arrow(a + 1, 64, x - 1, 64, HL, 2.4)); else out.push(line(`M${a + 1} 64 L${x - 1} 64`, HL, 3.4)); });
   const last = xs[xs.length - 1]!, cx = Math.min(last, 98);
-  out.push(car(cx, 100, C.red, 0.7));
+  out.push(waIn(`b4-mek-strobe-${kind}`, -28, 0, car(cx, 100, C.red, 0.7)));
   if (kind === 'ret') out.push(line(`M${cx - 30} 103 L${cx - 10} 103 M${cx - 26} 99 L${cx - 12} 99`, C.dark, 1.6));
   if (kind === 'acc') out.push(speed(cx - 16, 92, C.white, 3, 12));
   return all(...out);
@@ -156,7 +156,7 @@ export const MECHANICS_MOTIFS: Record<string, Svg> = {
     g('translate(22 112)', rect(-3, -22, 6, 22, C.brown, 1, C.ink, 1.2), circle(0, -32, 14, C.green, C.ink, 1.6)), pal(100, 112, { top: C.green, s: 0.8 }),
     arrow(54, 60, 28, 60, HL, 2.4), arrow(66, 60, 94, 60, HL, 2.4), T(41, 54, '20', 9, HL), T(80, 54, '30', 9, HL)),
   'mek.tillryggalägga': all(rect(0, 0, 120, 112, '#eaf5fb', 0, null), rect(0, 84, 120, 28, '#d9d2c3', 0, null), line('M0 84 L120 84', C.ink, 1.2),
-    line('M4 98 L84 98', HL, 5), line('M84 98 L116 98', C.grey, 2.4, '4 4'),
+    waPulse('b4-mek-tillryggalagga-1', line('M4 98 L84 98', HL, 5)), line('M84 98 L116 98', C.grey, 2.4, '4 4'),
     ...[1, 2, 3, 4, 5].map((n, i) => g(`translate(${10 + i * 24} 84)`, line('M0 0 L0 -14', C.dark, 1.8), rect(-5, -24, 10, 10, C.white, 1, C.ink, 1), T(0, -16, String(n), 7, i < 4 ? HL : C.grey))),
     pal(88, 96, { lean: 14, a1: 60, a2: -40, k1: -70, k2: -60, l1: 40, l2: -30, top: C.yellow, s: 0.9 }), hbr(4, 84, 108, HL, 2)),
   'mek.rätlinjig': all(rect(4, 10, 112, 44, C.white, 4, HL, 2.4), line('M12 32 L104 32', HL, 3.4), ...[16, 34, 52, 70].map((x) => greyed(dot(x, 32, C.ink, 2.6))), ball(92, 32, 7, BLUE), arrow(100, 32, 114, 32, HL, 3),
@@ -178,7 +178,7 @@ export const MECHANICS_MOTIFS: Record<string, Svg> = {
   'mek.fritt-fall': all(rect(4, 44, 40, 68, '#cdb79e', 1, C.ink, 1.6), ...[56, 80].map((y) => all(rect(10, y, 10, 12, '#cfe8f7', 1, C.ink, 1), rect(28, y, 10, 12, '#cfe8f7', 1, C.ink, 1))), rect(2, 42, 44, 4, C.dark, 1, null),
     pal(28, 42, { s: 0.5, a2: 95, a1: 20 }), ground(),
     greyed(ball(48, 18, 5, C.red), ball(48, 24, 5, C.red), ball(48, 36, 5, C.red), ball(48, 54, 5, C.red)), ball(48, 82, 6, C.red),
-    arrow(80, 16, 80, 104, HL, 3.6), line('M64 16 L64 22 M64 26 L64 34 M64 40 L64 52 M64 58 L64 78', HL, 2.4)),
+    waIn('b4-mek-fritt-fall-1', -0, -14, arrow(80, 16, 80, 104, HL, 3.6)), line('M64 16 L64 22 M64 26 L64 34 M64 40 L64 52 M64 58 L64 78', HL, 2.4)),
   // ── 3313 Kraft och massa ────────────────────────────────────────
   'mek.kraft': all(ground(), pal(34, 112, { lean: 30, a1: 80, a2: 75, l1: -30, l2: 20, top: C.green }), box(56, 70, 40, 42), arrow(62, 90, 114, 90, HL, 5)),
   'mek.newton': all(palmUp(52, 86), apple(56, 76, 1.1), arrow(74, 72, 74, 108, HL, 3.6), T(90, 96, '1', 16, HL)),
@@ -200,7 +200,7 @@ export const MECHANICS_MOTIFS: Record<string, Svg> = {
     rect(52, 20, 16, 52, C.white, 3, HL, 2.6), spring(60, 24, 62, 4, 10, C.grey, 1.6), line(range(8).map((i) => `M53 ${26 + i * 6} L57 ${26 + i * 6}`).join(' '), C.ink, 1), rect(56, 62, 8, 4, HL, 1, null),
     line('M60 72 L60 82', C.dark, 2), path('M60 82 C66 82 66 88 60 88', 'none', C.dark, 1.8), path('M46 90 L74 90 L78 112 L42 112 Z', C.beige, C.ink, 1.6), line('M54 90 C54 84 66 84 66 90', C.ink, 1.4)),
   'mek.tyngdlöshet': all(rect(2, 4, 116, 108, '#e4e8ee', 16, C.ink, 2), circle(96, 26, 15, '#0f2040', C.ink, 1.6), path('M86 30 C90 22 98 34 104 24 C106 30 100 38 92 38 Z', '#4f9d69', null), circle(96, 26, 15, 'none', C.dark, 3),
-    g('rotate(-62 52 72)', pal(52, 96, { a1: 140, a2: 110, l1: 20, l2: -10, top: C.orange })), cupFloat(22, 30), ...[[30, 54], [24, 62], [36, 60]].map(([x, y]) => circle(x!, y!, 2.6, '#8cc7e8', C.ink, 0.8))),
+    waBob('b4-mek-tyngdloshet-1', 5, g('rotate(-62 52 72)', pal(52, 96, { a1: 140, a2: 110, l1: 20, l2: -10, top: C.orange }))), waBob('b4-mek-tyngdloshet-2', 3, cupFloat(22, 30)), ...[[30, 54], [24, 62], [36, 60]].map(([x, y]) => circle(x!, y!, 2.6, '#8cc7e8', C.ink, 0.8))),
   // ── 3314 Newtons rörelselagar ───────────────────────────────────
   'mek.tröghet': all(ground(), rect(4, 34, 112, 66, '#f2c14e', 10, C.ink, 2), rect(12, 42, 30, 24, '#cfe8f7', 3, C.ink, 1.4), rect(78, 42, 30, 24, '#cfe8f7', 3, C.ink, 1.4), rect(4, 86, 112, 4, C.dark, 0, null),
     circle(26, 102, 9, C.dark, C.ink, 1.6), circle(94, 102, 9, C.dark, C.ink, 1.6), line('M52 40 L52 50 L70 50', C.silver, 2.4),
@@ -208,16 +208,16 @@ export const MECHANICS_MOTIFS: Record<string, Svg> = {
   'mek.i-vila': twoFrames(false),
   'mek.glida': all(rect(0, 70, 120, 42, ICE, 0, null), line('M0 70 L120 70', '#9fcfe8', 2), line('M6 94 L70 94', '#b9dff2', 6), line('M10 100 L66 100 M20 88 L60 88', C.white, 1.4),
     g('translate(86 94)', ellipse(0, 4, 16, 6, C.grey, C.ink, 1.6), rect(-16, -4, 32, 8, C.grey2, 3, C.ink, 1.6), ellipse(0, -4, 16, 5, C.red, C.ink, 1.4), path('M-4 -6 L-4 -14 L10 -14', 'none', C.dark, 3)),
-    arrow(70, 60, 112, 60, HL, 3.6), speed(66, 92, HL, 3, 14)),
+    waIn('b4-mek-glida-1', -14, -0, arrow(70, 60, 112, 60, HL, 3.6)), speed(66, 92, HL, 3, 14)),
   'mek.tvärbromsa': all(road(80, 106), g('rotate(6 70 100)', car(70, 100, C.red, 1.1)), line('M30 100 L52 100 M34 105 L52 105', C.black, 2.4),
     ...[[46, 92], [40, 96], [92, 94], [86, 98]].map(([x, y]) => circle(x!, y!, 5, '#e4e8ee', C.grey, 1)), ball(108, 98, 6, C.yellow),
-    T(70, 52, '!', 26, HL), line('M56 66 l-6 -6 M84 66 l6 -6', HL, 2.4)),
+    T(70, 52, '!', 26, HL), waPulse('b4-mek-tvarbromsa-1', line('M56 66 l-6 -6 M84 66 l6 -6', HL, 2.4))),
   'mek.motkraft': all(rect(92, 4, 24, 108, '#cdb79e', 1, C.ink, 1.8), line('M92 20 L116 20 M92 40 L116 40 M92 60 L116 60 M92 80 L116 80 M92 100 L116 100 M104 4 L104 20 M104 40 L104 60 M104 80 L104 100 M98 20 L98 40 M110 60 L110 80', '#a8916f', 1),
     pal(48, 112, { lean: 22, a1: 82, a2: 78, l1: -24, l2: 16, top: C.orange }), arrow(72, 46, 90, 46, C.grey, 3.6), arrow(90, 62, 72, 62, HL, 4.2), circle(91, 54, 3, HL, null)),
   'mek.trycka-ifrån': all(rect(0, 26, 120, 86, '#8cc7e8', 0, null), rect(0, 4, 12, 108, C.white, 0, C.ink, 1.6), line('M12 26 L120 26', '#5aa7d6', 2),
     line('M12 50 L120 50', C.white, 1, '2 6'), line(range(4).map((i) => `M${20 + i * 26} 36 q4 -3 8 0`).join(' '), C.white, 1.2),
     g('translate(13 74) rotate(90)', pal(0, 0, { lean: 0, a1: 175, a2: 170, l1: 12, l2: -12, top: C.red, s: 0.9 })),
-    arrow(14, 96, 4, 96, C.grey, 2.4), arrow(86, 74, 116, 74, HL, 4), line('M56 66 L70 66 M52 82 L70 82', C.white, 2)),
+    arrow(14, 96, 4, 96, C.grey, 2.4), waIn('b4-mek-trycka-ifran-1', -14, -0, arrow(86, 74, 116, 74, HL, 4)), line('M56 66 L70 66 M52 82 L70 82', C.white, 2)),
   // ── 3315 Arbete och energi ──────────────────────────────────────
   'mek.arbete': all(ground(), greyed(box(14, 76, 30, 36)), pal(52, 112, { lean: 30, a1: 82, a2: 78, l1: -28, l2: 18, top: C.green }), box(74, 76, 30, 36),
     arrow(78, 64, 112, 64, HL, 3.4), T(96, 56, 'F', 11, HL), hbr(29, 89, 104, HL, 2.6)),

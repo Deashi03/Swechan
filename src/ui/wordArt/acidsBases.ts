@@ -11,7 +11,7 @@
  * kalkrik/kalkfattig (the same lake over bedrock with many or almost no white lime lumps).
  * Digits, maths signs and chemical symbols only; no words, no brands, no logos.
  */
-import { C, all, circle, ellipse, g, line, path, rect, sparkle, type Svg } from './kit';
+import { C, all, circle, ellipse, g, line, path, rect, sparkle, waIn, waPulse, type Svg } from './kit';
 import { HL, T, P } from './people';
 import { greyed } from './blindFix';
 
@@ -178,7 +178,7 @@ export const ACIDS_MOTIFS: Record<string, Svg> = {
   /** svag syra: the same beaker where nearly every acid molecule is still whole (H stuck to the grey ball); only one has split; ringed in orange; a small tag reads 4. */
   'syra.svag-syra': all(bg(), beaker(56, 108, 66, 72, '#f8cccc', 0.78, acidMol(34, 60), acidMol(64, 56), acidMol(40, 82, 5, true), acidMol(72, 80), acidMol(34, 100), acidMol(62, 98)), ring(56, 74, 42), rect(94, 14, 18, 18, C.white, 3, C.ink, 1.4), T(103, 28, '4', 12)),
   /** protolys: an acid molecule (white H on a grey ball) hands its H over to a water molecule along a curved orange arrow. */
-  'syra.protolys': all(bg(), ball(28, 66, 12, C.grey), sign(16, 50, '−', C.dark, 6), hIon(58, 38, 6), line('M34 54 C38 42 46 38 50 38', C.grey, 2, '3 3'), arr(66, 42, 78, 56, HL, 3), water(88, 70, 1.4), ring(58, 38, 12)),
+  'syra.protolys': all(bg(), ball(28, 66, 12, C.grey), sign(16, 50, '−', C.dark, 6), hIon(58, 38, 6), line('M34 54 C38 42 46 38 50 38', C.grey, 2, '3 3'), waIn('b4-syra-protolys-1', -7, -8, arr(66, 42, 78, 56, HL, 3)), water(88, 70, 1.4), ring(58, 38, 12)),
   /** oxoniumjon: a water molecule with three white H balls round a red O and a red + badge, in an orange ring; a small grey ordinary water molecule beside it. */
   'syra.oxoniumjon': all(bg(), circle(56, 60, 34, MARK, null), line('M56 58 L36 74 M56 58 L76 74 M56 58 L56 34', C.grey, 4), ball(56, 58, 13, O_, 'O', C.white), ball(34, 76, 8, H_, 'H'), ball(78, 76, 8, H_, 'H'), ball(56, 32, 8, H_, 'H'), sign(80, 36, '+', C.red, 8), ring(56, 60, 34), greyed(water(100, 98, 0.7))),
   /** saltsyra: a bottle with the label HCl, ringed in orange, next to a stomach outline with acid inside. */
@@ -198,7 +198,7 @@ export const ACIDS_MOTIFS: Record<string, Svg> = {
 
   // ── 3444 Neutralisation ─────────────────────────────────────────────
   /** neutralisera: a red beaker and a blue beaker are poured together into one green beaker, which is ringed in orange and has a green check. */
-  'syra.neutralisera': all(bg(), g('rotate(30 26 40)', beaker(26, 52, 26, 30, ACID, 0.7)), g('rotate(-30 94 40)', beaker(94, 52, 26, 30, BASE, 0.7)), path('M40 46 C46 52 52 58 56 66', 'none', ACID2, 2.4), path('M80 46 C74 52 68 58 64 66', 'none', BASE2, 2.4), beaker(60, 108, 40, 38, NEUT, 0.7), ring(60, 92, 24), check(96, 96)),
+  'syra.neutralisera': all(bg(), g('rotate(30 26 40)', beaker(26, 52, 26, 30, ACID, 0.7)), g('rotate(-30 94 40)', beaker(94, 52, 26, 30, BASE, 0.7)), path('M40 46 C46 52 52 58 56 66', 'none', ACID2, 2.4), path('M80 46 C74 52 68 58 64 66', 'none', BASE2, 2.4), beaker(60, 108, 40, 38, NEUT, 0.7), waPulse('b4-syra-neutralisera-1', ring(60, 92, 24)), check(96, 96)),
   /** droppvis: a dropper above a beaker lets single drops fall, one after another, numbered 1, 2, 3 in a vertical row; the falling drops are ringed in orange. */
   'syra.droppvis': all(bg(), syringeDrop(46, 34, BASE2), drop(46, 46, 0.6, BASE2), drop(46, 62, 0.6, BASE2), drop(46, 78, 0.6, BASE2), T(62, 50, '1', 10), T(62, 66, '2', 10), T(62, 82, '3', 10), ellipse(46, 62, 10, 24, 'none', HL, 2.4), beaker(46, 110, 40, 22, ACID, 0.5)),
   /** ta ut varandra (verkan): a block between two equally long arrows pushing in opposite directions – a red one from the left and a blue one from the right; the block does not move: below it = 0, framed in orange. */
@@ -219,7 +219,7 @@ export const ACIDS_MOTIFS: Record<string, Svg> = {
   'syra.kopparsulfat': all(bg(), beaker(60, 110, 70, 76, '#a9cff3', 0.75), line('M30 26 L90 26', C.brown, 3), line('M60 26 L60 58', C.ink, 1.2), blueCrystal(60, 70, 1.4), blueCrystal(42, 100, 0.8), blueCrystal(78, 100, 0.9), ring(60, 70, 24)),
   /** kristallisera: a shallow dish of salt water under the sun; wavy steam rises, and white cube crystals form at the edge, ringed in orange; an orange arrow points from the liquid to the crystals. */
   'syra.kristallisera': all(bg('#fbf6e6'), circle(98, 22, 10, C.yellow, C.ink, 1.4), line('M40 50 c-4 -5 4 -8 0 -13 c-4 -5 4 -8 0 -13 M56 50 c-4 -5 4 -8 0 -13 c-4 -5 4 -8 0 -13', C.grey, 1.8),
-    ellipse(56, 84, 46, 14, C.white, C.ink, 1.8), ellipse(56, 82, 36, 9, '#d6ecf8', null), crystalCube(86, 78, 6), crystalCube(96, 86, 5), crystalCube(78, 90, 5), ring(88, 84, 16), arr(56, 82, 72, 84, HL, 2.4)),
+    ellipse(56, 84, 46, 14, C.white, C.ink, 1.8), ellipse(56, 82, 36, 9, '#d6ecf8', null), crystalCube(86, 78, 6), crystalCube(96, 86, 5), crystalCube(78, 90, 5), ring(88, 84, 16), waIn('b4-syra-kristallisera-1', -10, -1, arr(56, 82, 72, 84, HL, 2.4))),
 
   // ── 3446 Lösningar och koncentration ────────────────────────────────
   /** lösning (kemi): sugar cubes go into a glass of water; an arrow leads to the same glass where the water is clear and the sugar can no longer be seen; the second glass is ringed in orange. */
@@ -247,7 +247,7 @@ export const ACIDS_MOTIFS: Record<string, Svg> = {
   /** vätekarbonat: a big red blood drop; inside, an ion card HCO₃⁻ catches a white H⁺ ball along an orange arrow; the card is ringed in orange. */
   'syra.vätekarbonat': all(bg(), path('M60 10 C76 34 98 54 98 76 C98 98 80 110 60 110 C40 110 22 98 22 76 C22 54 44 34 60 10 Z', '#f6c9c9', C.red, 2), rect(32, 62, 48, 20, C.white, 4, C.ink, 1.4), T(56, 77, 'HCO₃⁻', 11), ring(56, 72, 28), hIon(84, 42, 6), arr(80, 48, 70, 60, HL, 2.4)),
   /** hyperventilera: a person with a hand on the chest breathes fast – many short breath puffs come out of the mouth – sweat drops and a dizzy spiral above the head. */
-  'syra.hyperventilera': all(bg(), ground, P(46, { top: C.sky }), line('M38 60 L46 66', C.skin, 5), ...[[66, 26, 8], [76, 22, 6], [86, 30, 7], [80, 38, 5]].map(([x, y, r]) => ellipse(x!, y!, r!, r! * 0.7, C.white, C.grey, 1.2)), path('M40 6 c4 -4 10 0 6 4 c-3 3 -8 0 -4 -3', 'none', HL, 2), drop(32, 22, 0.5, '#8cc7e8'), drop(60, 18, 0.5, '#8cc7e8')),
+  'syra.hyperventilera': all(bg(), ground, P(46, { top: C.sky }), line('M38 60 L46 66', C.skin, 5), waIn('b4-syra-hyperventilera-1', -12, 4, ...[[66, 26, 8], [76, 22, 6], [86, 30, 7], [80, 38, 5]].map(([x, y, r]) => ellipse(x!, y!, r!, r! * 0.7, C.white, C.grey, 1.2))), path('M40 6 c4 -4 10 0 6 4 c-3 3 -8 0 -4 -3', 'none', HL, 2), drop(32, 22, 0.5, '#8cc7e8'), drop(60, 18, 0.5, '#8cc7e8')),
   /** kalkrik: a lake over bedrock with many white lime lumps (bedrock framed in orange); happy fish swim in the lake. */
   'syra.kalkrik': all(bg('#eef3f7'), path('M8 48 C30 42 90 42 112 48 L112 70 L8 70 Z', '#a9c7d9', C.ink, 1.4), fish(40, 58, 0.8), fish(76, 56, 0.8, C.yellow), rect(8, 70, 104, 40, '#8f8a82', 0, C.ink, 1.4),
     ...scatter(14, 14, 76, 90, 28, 3).map(([x, y]) => ellipse(x, y, 7, 4, LIME, C.ink, 1)), frame(6, 68, 108, 44)),

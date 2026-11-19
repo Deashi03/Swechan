@@ -35,6 +35,30 @@ export const all = (...children: Svg[]): Svg => children.join('');
  */
 export const moving = (name: string, keyframes: string, opts: { dur?: number; delay?: number; spin?: boolean }, ...children: Svg[]): Svg =>
   `<style data-wa>@keyframes wa-${name}{${keyframes}}.wa-${name}{animation:wa-${name} ${opts.dur ?? 3}s ease-in-out ${opts.delay ?? 0}s infinite both${opts.spin ? ';transform-box:fill-box;transform-origin:center' : ''}}</style><g data-wa="${name}" class="wa-${name}">${children.join('')}</g><!--/wa-->`;
+/**
+ * Kvalitetsplanen B4 – ready-made motions on top of `moving()`. Each takes a unique name (the CSS class is
+ * global) and draws the wrapped part in its final state, so the poster frame is unchanged.
+ */
+/** The part travels in from (dx, dy) and fades in: the direction of a process (an arrow, a particle). */
+export const waIn = (name: string, dx: number, dy: number, ...children: Svg[]): Svg =>
+  moving(name, `0%{transform:translate(${dx}px,${dy}px);opacity:.15}55%,100%{transform:translate(0,0);opacity:1}`, { dur: 2.6 }, ...children);
+/** The part fades out and in: something that glows, flashes or is marked. */
+export const waPulse = (name: string, ...children: Svg[]): Svg => moving(name, '0%,100%{opacity:1}50%{opacity:.25}', { dur: 1.6 }, ...children);
+/** Quick sideways shaking: vibration, trembling. */
+export const waShake = (name: string, ...children: Svg[]): Svg =>
+  moving(name, '0%,100%{transform:translate(0,0)}20%,60%{transform:translate(-2.5px,0)}40%,80%{transform:translate(2.5px,0)}', { dur: 0.9 }, ...children);
+/** Up and down: bobbing, floating. */
+export const waBob = (name: string, amp: number, ...children: Svg[]): Svg =>
+  moving(name, `0%,100%{transform:translate(0,0)}50%{transform:translate(0,${-amp}px)}`, { dur: 2.2 }, ...children);
+/** Rocks around its own centre by ±deg. */
+export const waSway = (name: string, deg: number, ...children: Svg[]): Svg =>
+  moving(name, `0%,100%{transform:rotate(0)}30%{transform:rotate(${-deg}deg)}70%{transform:rotate(${deg}deg)}`, { dur: 2.4, spin: true }, ...children);
+/** Grows from small to full size: something that forms, spreads or bursts. */
+export const waGrow = (name: string, ...children: Svg[]): Svg =>
+  moving(name, '0%{transform:scale(.3);opacity:.2}50%,100%{transform:scale(1);opacity:1}', { dur: 2.4, spin: true }, ...children);
+/** Turns round and round. */
+export const waSpin = (name: string, dur: number, ...children: Svg[]): Svg =>
+  moving(name, '0%{transform:rotate(0)}100%{transform:rotate(360deg)}', { dur, spin: true }, ...children);
 /** Place a full 120×120 drawing scaled into a box. */
 export const place = (x: number, y: number, scale: number, ...children: Svg[]): Svg => g(`translate(${x} ${y}) scale(${scale})`, ...children);
 export const mirror = (...children: Svg[]): Svg => g('translate(120 0) scale(-1 1)', ...children);
