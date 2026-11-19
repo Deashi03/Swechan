@@ -92,8 +92,9 @@ describe('hjälpfunktioner', () => {
   });
   it('meningar', () => {
     expect(svSentences('Det är t.ex. 3.5 meter. Bra!')).toBe(2);
+    expect(svSentences('Vem? Varför? Det vet ingen.')).toBe(1);
     expect(jaSentences('{雨|あめ}です。いいです')).toBe(2);
-    expect(parityProblem('En mening. Två meningar. Tre. Fyra meningar här.', '一つです。')).toMatch(/meningar/);
+    expect(parityProblem('En mening. Två meningar. Tre. Fyra. Fem meningar här.', '一つです。')).toMatch(/meningar/);
     expect(parityProblem('Kort.', '短い。')).toBeNull();
   });
 });
