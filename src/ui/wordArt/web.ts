@@ -14,7 +14,7 @@
  * nothing saved).
  * Digits, the signs . / ! ? + − and ✓ ✗ only; no words, no brands, no logos and no pointing fingers.
  */
-import { C, all, circle, ellipse, g, line, path, rect, type Svg } from './kit';
+import { C, all, circle, ellipse, g, line, moving, path, rect, waBob, waGrow, waIn, waPulse, waShake, waSpin, waSway, type Svg } from './kit';
 import { HL, arm } from './people';
 import { greyed } from './blindFix';
 import { figure, type Build } from './figures';
@@ -69,7 +69,6 @@ const docIcon = (x: number, y: number, s = 1, col: string = C.white) => at(x, y,
 const photoIcon = (x: number, y: number, s = 1) => at(x, y, s, rect(-10, -8, 20, 16, C.white, 2, C.ink, 1.3), pic(-8, -6, 16, 12));
 const padlock = (x: number, y: number, s = 1, col: string = '#e0b23c') => at(x, y, s, path('M-6 -3 L-6 -10 C-6 -18 6 -18 6 -10 L6 -3', 'none', C.ink, 3.4), path('M-6 -3 L-6 -10 C-6 -18 6 -18 6 -10 L6 -3', 'none', '#b9c0c8', 1.8), rect(-10, -4, 20, 16, col, 3, C.ink, 1.6), circle(0, 2, 2.2, C.ink, null), line('M0 2 L0 8', C.ink, 1.8));
 const avatarIcon = (x: number, y: number, r: number, col = '#7ab0e8') => all(circle(x, y, r, col, C.ink, 1.2), circle(x, f1(y - r * 0.25), f1(r * 0.36), C.white, null), path(`M${f1(x - r * 0.62)} ${f1(y + r * 0.72)} C${f1(x - r * 0.62)} ${f1(y + r * 0.05)} ${f1(x + r * 0.62)} ${f1(y + r * 0.05)} ${f1(x + r * 0.62)} ${f1(y + r * 0.72)}`, C.white, null));
-const warnIcon = (x: number, y: number, s = 1) => at(x, y, s, path('M0 -12 L12 9 L-12 9 Z', YEL, C.ink, 1.6), line('M0 -4 L0 3', C.ink, 2.2), circle(0, 6, 1.2, C.ink, null));
 const bang = (x: number, y: number, r: number) => all(circle(x, y, r, RED, C.ink, 1.2), line(`M${x} ${f1(y - r * 0.5)} L${x} ${f1(y + r * 0.15)}`, C.white, r * 0.28), circle(x, f1(y + r * 0.5), f1(r * 0.14), C.white, null));
 const coin = (x: number, y: number, r = 5) => all(circle(x, y, r, '#e0b23c', C.ink, 1.2), circle(x, y, f1(r * 0.6), 'none', '#b8860b', 0.8));
 
@@ -166,11 +165,11 @@ export const WEB_MOTIFS: Record<string, Svg> = {
   'webb.flik': all(bg(), greyed(stdWin({ tabs: 3, active: 1 })), win(W0.x, W0.y, W0.w, 12, { tabs: 3, active: 1, noBar: true }), oval(W0.x + 4 + 26 * 1.5, W0.y + 6, 17, 8)),
   /** adressfält: the browser window in grey; only the long address bar in the toolbar is coloured, with grey text and a dot and slash, and it is ringed. */
   'webb.adressfält': all(bg(), greyed(stdWin()), rect(34, 30, 76, 6.8, '#eef1f4', 3.4, C.ink, 1), addrStrip(36, 30.6, [['w', 18], ['d', 2], ['w', 8], ['s', 4], ['w', 12]], () => false, 5.6), oval(72, 33.4, 42, 8)),
-  /** zooma: on the left a grey page with tiny text; an orange arrow; on the right the same page with big text bars and a big magnifying glass with a plus sign over it. */
+  /** zooma: on the left a grey page with tiny text; an orange arrow; on the right the same page with big text bars and a big magnifying glass with a plus sign over it. Moving: the big text bars grow from small to big. */
   'webb.zooma': all(bg(), greyed(rect(10, 34, 30, 40, SCR, 2, C.ink, 1.4), bars(14, 40, 22, 6, 4, BAR, 1)), arr(44, 54, 56, 54, HL, 3),
-    rect(60, 16, 52, 82, SCR, 3, C.ink, 1.6), bars(66, 26, 40, 5, 12, '#7a8590', 5), at(88, 64, 2.2, circle(0, 0, 7, 'rgba(220,240,252,0.6)', C.ink, 1.2), line('M5 5 L11 11', C.ink, 2.2), line('M-3.5 0 L3.5 0 M0 -3.5 L0 3.5', HL, 1.6))),
-  /** ladda om: the browser window with an empty white page; the round reload arrow in the toolbar is drawn very big in orange in the middle of the page, with a cursor on it. */
-  'webb.ladda-om': all(bg(), stdWin({ inner: rect(14, 44, 92, 56, SCR, 1, null) }), ring(29, 33.6, 5.5), reloadIcon(60, 72, 16, HL, 4.4), cursor(70, 78, 1)),
+    rect(60, 16, 52, 82, SCR, 3, C.ink, 1.6), waGrow('webb-zooma-1', bars(66, 26, 40, 5, 12, '#7a8590', 5)), at(88, 64, 2.2, circle(0, 0, 7, 'rgba(220,240,252,0.6)', C.ink, 1.2), line('M5 5 L11 11', C.ink, 2.2), line('M-3.5 0 L3.5 0 M0 -3.5 L0 3.5', HL, 1.6))),
+  /** ladda om: the browser window with an empty white page; the round reload arrow in the toolbar is drawn very big in orange in the middle of the page, with a cursor on it. Moving: the big reload arrow turns round. */
+  'webb.ladda-om': all(bg(), stdWin({ inner: rect(14, 44, 92, 56, SCR, 1, null) }), ring(29, 33.6, 5.5), waSpin('webb-ladda-om-1', 2.2, reloadIcon(60, 72, 16, HL, 4.4)), cursor(70, 78, 1)),
   /** bokmärke: the browser window; the star at the end of the address bar is yellow and ringed; under the toolbar a strip of small saved page icons, and an orange dashed arrow goes from the star to the newest one. */
   'webb.bokmärke': all(bg(), greyed(stdWin()), rect(W0.x + 1, 40, W0.w - 2, 9, '#f2f4f6', 0, null), ...[0, 1, 2, 3].map((i) => all(rect(14 + i * 22, 42, 6, 5, i === 3 ? '#e07a3a' : BLUE, 1, null), line(`M${22 + i * 22} 44.5 L${30 + i * 22} 44.5`, BAR, 1.4))),
     starIcon(103, 33.6, 4.6, YEL), ring(103, 33.6, 7), carr(100, 40, 92, 46, 84, 45, HL, 1.8, '2.5 2')),
@@ -182,13 +181,13 @@ export const WEB_MOTIFS: Record<string, Svg> = {
     path('M31 60 L59 60 L55 56 L52 46 C50 42 40 42 38 46 L35 56 Z', '#c9d0d8', null), line('M28 60 L62 60', '#c9d0d8', 2.6),
     circle(39, 67, 5, '#c9d0d8', null), circle(51, 67, 5, '#c9d0d8', null), line('M44 67 L46 67', '#c9d0d8', 1.6),
     greyed(rect(88, 40, 26, 40, C.white, 2, C.ink, 1.2), clockIcon(101, 47, 4), bars(92, 56, 18, 4, 6)), no(101, 70, 7), frame(3, 11, 84, 96, 5)),
-  /** surfa (på nätet): a woman sits on the ground holding a phone; above her a row of small web pages rides on a blue wave, joined by curved orange arrows from page to page. */
+  /** surfa (på nätet): a woman sits on the ground holding a phone; above her a row of small web pages rides on a blue wave, joined by curved orange arrows from page to page. Moving: the pages bob on the wave and the arrows glide on from page to page. */
   'webb.surfa.2': all(bg(), ground, person(30, C.orange, { hairStyle: 'long', h: 0.72 }), reach(30, 0.72, 1, 50, 84), phone(54, 82, 0.55, page(-10, -17, 20, 30)),
     path('M4 40 C18 28 30 52 46 40 C62 28 74 52 90 40 C100 33 108 38 116 36', 'none', '#7ec8ff', 3),
-    mini(22, 24, 0.55), mini(58, 20, 0.55, GREEN), mini(94, 24, 0.55, '#7a5a8a'), carr(30, 16, 40, 6, 51, 13, HL, 2), carr(66, 12, 78, 4, 87, 16, HL, 2), carr(60, 66, 66, 56, 62, 46, HL, 1.6, '2 2')),
-  /** skriva ut (på papper): a laptop on a desk shows a picture; next to it a printer pushes out a sheet of paper with the same picture; an orange arrow goes from the laptop to the printer. */
+    waBob('webb-surfa-2-1', 3, mini(22, 24, 0.55), mini(58, 20, 0.55, GREEN), mini(94, 24, 0.55, '#7a5a8a')), waIn('webb-surfa-2-2', -10, 0, carr(30, 16, 40, 6, 51, 13, HL, 2), carr(66, 12, 78, 4, 87, 16, HL, 2)), carr(60, 66, 66, 56, 62, 46, HL, 1.6, '2 2')),
+  /** skriva ut (på papper): a laptop on a desk shows a picture; next to it a printer pushes out a sheet of paper with the same picture; an orange arrow goes from the laptop to the printer. Moving: the sheet slides out of the printer. */
   'webb.skriva-ut.2': all(bg(), rect(4, 86, 112, 6, '#c8a070', 1, C.ink, 1.4), laptop(34, 86, 0.75, all(pic(-20, -32, 40, 22), bars(-20, -8, 40, 1, 4))),
-    rect(70, 64, 42, 22, '#d8dde2', 4, C.ink, 1.6), rect(76, 60, 30, 6, '#9aa3ad', 1, C.ink, 1.2), rect(76, 80, 30, 3, '#3d3f4a', 1, null), path('M78 82 L104 82 L102 104 L80 104 Z', C.white, C.ink, 1.4), pic(83, 86, 16, 11), circle(106, 70, 1.6, '#7ee07e', null), arr(58, 72, 68, 72, HL, 2.6), ring(91, 94, 14)),
+    rect(70, 64, 42, 22, '#d8dde2', 4, C.ink, 1.6), rect(76, 60, 30, 6, '#9aa3ad', 1, C.ink, 1.2), rect(76, 80, 30, 3, '#3d3f4a', 1, null), waIn('webb-skriva-ut-2-1', 0, -14, path('M78 82 L104 82 L102 104 L80 104 Z', C.white, C.ink, 1.4), pic(83, 86, 16, 11)), circle(106, 70, 1.6, '#7ee07e', null), arr(58, 72, 68, 72, HL, 2.6), ring(91, 94, 14)),
 
   // ── 3732 Webbplatser och webbadresser ────────────────────────────────
   /** webbplats: a tree of pages: one top page with an orange header joined by lines to three lower pages; all of them are coloured and one big orange frame goes round the whole tree. */
@@ -209,25 +208,25 @@ export const WEB_MOTIFS: Record<string, Svg> = {
   /** användarnamn: a login card: a round profile picture at the top, a first field with a small person icon and a written name, a second field with dots, and a green button; the first field (the name) is ringed. */
   'webb.användarnamn': all(bg(), loginCard(60, 60, 1.45, true), oval(60, 57, 36, 11)),
   // ── 3733 Sökmotorer ──────────────────────────────────────────────────
-  /** googla: a man holds a phone; a thought bubble with a question mark is above his head; the phone shows a search box with a magnifying glass and a list of results under it. */
-  'webb.googla': all(bg(), ground, person(30, C.green), reach(30, 1, 1, 52, 70), phone(62, 66, 1.1, all(rect(-10, -16, 20, 6, C.white, 3, C.ink, 0.8), mag(6, -13, 0.4), ...[0, 1, 2].map((i) => all(line(`M-9 ${-5 + i * 7} L4 ${-5 + i * 7}`, LINK, 1.4), line(`M-9 ${-2 + i * 7} L8 ${-2 + i * 7}`, BAR, 1.2))))),
-    path('M18 18 C10 18 10 4 22 4 L46 4 C58 4 58 18 46 18 L36 18 L32 24 L31 18 Z', C.white, C.ink, 1.4), num(34, 16, '?', 12, HL, 900), mag(96, 34, 2.2, HL)),
+  /** googla: a man holds a phone; a thought bubble with a question mark is above his head; the phone shows a search box with a magnifying glass and a list of results under it. Moving: the results slide up into the list and the big magnifying glass sways as it searches. */
+  'webb.googla': all(bg(), ground, person(30, C.green), reach(30, 1, 1, 52, 70), phone(62, 66, 1.1, all(rect(-10, -16, 20, 6, C.white, 3, C.ink, 0.8), mag(6, -13, 0.4), waIn('webb-googla-1', 0, 6, ...[0, 1, 2].map((i) => all(line(`M-9 ${-5 + i * 7} L4 ${-5 + i * 7}`, LINK, 1.4), line(`M-9 ${-2 + i * 7} L8 ${-2 + i * 7}`, BAR, 1.2)))))),
+    path('M18 18 C10 18 10 4 22 4 L46 4 C58 4 58 18 46 18 L36 18 L32 24 L31 18 Z', C.white, C.ink, 1.4), num(34, 16, '?', 12, HL, 900), waSway('webb-googla-2', 12, mag(96, 34, 2.2, HL))),
   /** sökförslag: a search box with two grey letters typed and a blinking cursor; under it a dropdown list of four suggestions, each with a small magnifying glass and a bar that starts with the same dark part; the dropdown is framed. */
   'webb.sökförslag': all(bg(), rect(12, 18, 96, 14, C.white, 7, C.ink, 1.6), mag(98, 25, 0.8), line('M20 25 L30 25', C.dark, 3), ibeam(33, 20, 10),
     rect(12, 34, 96, 62, C.white, 3, C.ink, 1.4), ...[0, 1, 2, 3].map((i) => all(mag(22, 44 + i * 14, 0.5, '#7a8590'), line(`M30 ${44 + i * 14} L40 ${44 + i * 14}`, C.dark, 3), line(`M42 ${44 + i * 14} L${66 + ((i * 9) % 22)} ${44 + i * 14}`, BAR, 3))), frame(9, 31, 102, 68, 5)),
-  /** bildsökning: a search box with a small picture icon and a magnifying glass; under it a grid of nine small pictures (mountains, flowers, houses) instead of text; the grid is framed. */
+  /** bildsökning: a search box with a small picture icon and a magnifying glass; under it a grid of nine small pictures (mountains, flowers, houses) instead of text; the grid is framed. Moving: the grid of pictures slides in under the search box. */
   'webb.bildsökning': all(bg(), rect(12, 12, 96, 14, C.white, 7, C.ink, 1.6), photoIcon(24, 19, 0.45), line('M32 19 L60 19', BAR, 2.4), mag(98, 19, 0.8),
-    ...range(9).map((i) => { const x = 16 + (i % 3) * 30, y = 34 + Math.floor(i / 3) * 24; return i % 3 === 1 ? all(rect(x, y, 26, 20, '#f4e9f0', 1, C.ink, 1), circle(x + 13, y + 9, 4, '#e86a9a', C.ink, 0.8), circle(x + 13, y + 9, 1.6, YEL, null), line(`M${x + 13} ${y + 13} L${x + 13} ${y + 19}`, GREEN, 1.4)) : i % 3 === 2 ? all(rect(x, y, 26, 20, '#d8eef8', 1, C.ink, 1), rect(x + 7, y + 9, 12, 11, '#f2e2c4', 0, C.ink, 0.8), path(`M${x + 5} ${y + 9} L${x + 13} ${y + 3} L${x + 21} ${y + 9} Z`, '#c84a3a', C.ink, 0.8)) : pic(x, y, 26, 20); }), frame(12, 30, 96, 78, 5)),
+    waIn('webb-bildsokning-1', 0, -10, ...range(9).map((i) => { const x = 16 + (i % 3) * 30, y = 34 + Math.floor(i / 3) * 24; return i % 3 === 1 ? all(rect(x, y, 26, 20, '#f4e9f0', 1, C.ink, 1), circle(x + 13, y + 9, 4, '#e86a9a', C.ink, 0.8), circle(x + 13, y + 9, 1.6, YEL, null), line(`M${x + 13} ${y + 13} L${x + 13} ${y + 19}`, GREEN, 1.4)) : i % 3 === 2 ? all(rect(x, y, 26, 20, '#d8eef8', 1, C.ink, 1), rect(x + 7, y + 9, 12, 11, '#f2e2c4', 0, C.ink, 0.8), path(`M${x + 5} ${y + 9} L${x + 13} ${y + 3} L${x + 21} ${y + 9} Z`, '#c84a3a', C.ink, 0.8)) : pic(x, y, 26, 20); })), frame(12, 30, 96, 78, 5)),
 
   // ── 3734 Länkar och nedladdningar ────────────────────────────────────
   /** länk: a page of grey text bars; one piece of a line is blue and underlined, with the cursor on it and a small chain sign; a curved orange arrow goes from it to a second small page on the right; the blue piece is ringed. */
   'webb.länk': all(bg(), rect(8, 14, 66, 90, SCR, 3, C.ink, 1.6), bars(14, 24, 54, 4, 8), line('M14 64 L28 64', BAR, 1.8), line('M32 64 L56 64', LINK, 2.2), line('M32 67 L56 67', LINK, 1), line('M60 64 L66 64', BAR, 1.8), bars(14, 76, 54, 3, 8), cursor(48, 64, 0.8),
     at(44, 52, 0.9, ellipse(-5, 0, 6, 3.6, 'none', LINK, 1.8), ellipse(5, 0, 6, 3.6, 'none', LINK, 1.8)), oval(44, 65, 16, 8), carr(60, 60, 92, 50, 92, 34, HL, 2.4), mini(94, 30, 0.9, GREEN)),
-  /** nedladdning: a cloud at the top; a document comes down out of it along a thick orange arrow into a laptop; on the laptop screen a big progress bar is two-thirds green; the progress bar is framed. */
-  'webb.nedladdning': all(bg(), cloud(60, 20, 1.2), docIcon(60, 38, 0.9), arr(60, 48, 60, 62, HL, 4), laptop(60, 100, 1.15, all(rect(-22, -22, 44, 9, C.white, 4, C.ink, 1.2), rect(-21, -21, 28, 7, GREEN, 3.5, null), line('M-6 -32 L-6 -26 M-9 -29 L-6 -26 L-3 -29', '#7a8590', 1.4))), frame(32, 70, 56, 16, 5)),
-  /** streama: a laptop plays a film (a play triangle over a landscape); a long line of dots runs from a cloud straight into the screen; next to it a grey folder with a red cross shows that nothing is saved. */
+  /** nedladdning: a cloud at the top; a document comes down out of it along a thick orange arrow into a laptop; on the laptop screen a big progress bar is two-thirds green; the progress bar is framed. Moving: the document comes down from the cloud and the green bar fills up from the left. */
+  'webb.nedladdning': all(bg(), cloud(60, 20, 1.2), waIn('webb-nedladdning-1', 0, -14, docIcon(60, 38, 0.9)), arr(60, 48, 60, 62, HL, 4), laptop(60, 100, 1.15, all(rect(-22, -22, 44, 9, C.white, 4, C.ink, 1.2), moving('webb-nedladdning-2', '0%{transform:translateX(-14px) scaleX(0)}70%,100%{transform:translateX(0) scaleX(1)}', { dur: 2.6, spin: true }, rect(-21, -21, 28, 7, GREEN, 3.5, null)), line('M-6 -32 L-6 -26 M-9 -29 L-6 -26 L-3 -29', '#7a8590', 1.4))), frame(32, 70, 56, 16, 5)),
+  /** streama: a laptop plays a film (a play triangle over a landscape); a long line of dots runs from a cloud straight into the screen; next to it a grey folder with a red cross shows that nothing is saved. Moving: the dots flow from the cloud into the screen. */
   'webb.streama': all(bg(), cloud(20, 22, 1), laptop(66, 92, 1.3, all(pic(-25, -35, 50, 30), circle(0, -20, 8, 'rgba(0,0,0,0.45)', null), path('M-3 -25 L5 -20 L-3 -15 Z', C.white, null))),
-    ...range(7).map((i) => circle(f1(26 + i * 5.5), f1(32 + i * 3.4), 1.8, HL, null)), greyed(path('M86 14 L94 14 L97 18 L112 18 L112 34 L86 34 Z', '#e0b23c', C.ink, 1.2)), no(110, 38, 6)),
+    moving('webb-streama-1', '0%{transform:translate(-5.5px,-3.4px);opacity:.6}100%{transform:translate(0,0);opacity:1}', { dur: 0.7 }, ...range(7).map((i) => circle(f1(26 + i * 5.5), f1(32 + i * 3.4), 1.8, HL, null))), greyed(path('M86 14 L94 14 L97 18 L112 18 L112 34 L86 34 Z', '#e0b23c', C.ink, 1.2)), no(110, 38, 6)),
   // ── 3735 Cookies och cache ───────────────────────────────────────────
   /** cookie: a laptop shows a web page with a box across the bottom; in the box a round brown biscuit with chocolate dots, a green tick button and a grey button; the biscuit is ringed. */
   'webb.cookie': all(bg(), laptop(60, 98, 1.6, all(greyed(page(-26, -36, 52, 18)), rect(-26, -18, 52, 14, C.white, 1, C.ink, 0.8), biscuit(-18, -11, 5), bars(-10, -14, 16, 2, 3.5, '#7a8590', 1.2), rect(9, -16, 7, 5, GREEN, 1.5, null), rect(17, -16, 7, 5, '#c9ced4', 1.5, null))), ring(31, 80, 12)),
@@ -239,16 +238,21 @@ export const WEB_MOTIFS: Record<string, Svg> = {
   'webb.personanpassad': all(bg(), ground, greyed(person(18, C.green, { h: 0.7 }), rect(32, 46, 26, 30, SCR, 2, C.ink, 1.2), rect(36, 50, 8, 8, '#7ab0e8', 1, null), circle(51, 54, 4, C.white, C.ink, 1), circle(40, 68, 4, '#e07a3a', C.ink, 1), rect(48, 64, 8, 8, '#7a5a8a', 1, null)),
     person(76, C.orange, { hairStyle: 'long', h: 0.7 }), path('M70 22 C62 22 62 10 72 10 L94 10 C104 10 104 22 94 22 L84 22 L80 28 L79 22 Z', C.white, C.ink, 1.2), path('M74 19 L74 14 L80 14 C82 17 86 17 90 18 C92 19 92 20 91 20 L74 20 Z', BLUE, C.ink, 0.8),
     rect(90, 46, 26, 30, SCR, 2, C.ink, 1.4), ...[[96, 54], [109, 54], [96, 68], [109, 68]].map(([x, y]) => path(`M${x! - 4} ${y! + 2} L${x! - 4} ${y! - 2} L${x! - 1} ${y! - 2} C${x!} ${y!} ${x! + 2} ${y!} ${x! + 4} ${y! + 1} L${x! + 4} ${y! + 2} Z`, BLUE, C.ink, 0.6)), frame(87, 43, 32, 36, 4)),
-  /** cache: the same page is opened twice. Top (1, grey): the browser fetches it from a far server along a long dashed road with an hourglass. Bottom (2, coloured): the browser takes it at once from a small box of saved page pieces right next to it, along a short orange arrow with a yellow lightning bolt; the small box and the short way are ringed. */
-  'webb.cache': all(bg(), num(9, 22, '1', 9, C.grey, 900), greyed(win(14, 8, 46, 36, { inner: all(rect(18, 32, 38, 4, BLUE, 1, null), bars(18, 39, 30, 1)) }), rack(104, 26, 0.3), line('M96 26 L62 26', C.grey, 2, '4 3'), head(62, 26, Math.PI, C.grey, 0.8),
-    path('M75 18 L85 18 L80 26 L85 34 L75 34 L80 26 Z', '#e8d4a8', C.ink, 1.2)), line('M4 54 L116 54', C.grey2, 1.2, '3 3'),
-    num(9, 72, '2', 9, C.ink, 900), win(14, 60, 46, 36, { inner: all(rect(18, 84, 38, 4, BLUE, 1, null), bars(18, 91, 30, 1)) }), rect(72, 70, 26, 18, '#c8a070', 2, C.ink, 1.4), rect(75, 73, 20, 12, '#e8d4a8', 1, C.ink, 0.8), pic(76, 75, 8, 7), rect(86, 75, 8, 7, BLUE, 1, null),
-    arr(70, 79, 62, 79, HL, 3), path('M68 60 L62 68 L66 68 L63 75 L71 65 L67 65 Z', YEL, C.ink, 0.8), greyed(rack(108, 80, 0.3)), ring(80, 80, 20)),
-  /** rensa (i datorn): a settings panel with three rows (a clock list, a biscuit, picture pieces); an orange arrow sweeps them into a grey trash can; the panel behind is now clean, with sparkles. */
+  /** rensa (i datorn): a settings panel with three rows (a clock list, a biscuit, picture pieces); an orange arrow sweeps them into a grey trash can; the panel behind is now clean, with sparkles. Moving: the pieces fly into the trash can and the sparkle twinkles. */
   'webb.rensa.4': all(bg(), rect(8, 14, 70, 90, SCR, 3, C.ink, 1.6), rect(8, 14, 70, 9, CHROME, 3, null),
     greyed(clockIcon(20, 36, 5), bars(30, 36, 40, 1), biscuit(20, 56, 5), bars(30, 56, 40, 1), pic(15, 70, 10, 8), bars(30, 74, 40, 1)), line('M16 92 L70 92', C.grey2, 1),
-    carr(70, 44, 96, 48, 98, 70, HL, 3), trash(98, 92, 1.3), ...[[86, 66], [96, 62]].map(([x, y]) => biscuit(x!, y!, 3.4)),
-    path('M60 96 l2 -5 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 Z', YEL, null)),
+    carr(70, 44, 96, 48, 98, 70, HL, 3), trash(98, 92, 1.3), waIn('webb-rensa-4-1', -26, -14, ...[[86, 66], [96, 62]].map(([x, y]) => biscuit(x!, y!, 3.4))),
+    waPulse('webb-rensa-4-2', path('M60 96 l2 -5 l2 5 l5 2 l-5 2 l-2 5 l-2 -5 l-5 -2 Z', YEL, null))),
+
+  /** cache (manual track): two rows, the same small browser window opening the same page. Row 1 (grey): the page is still empty with a half-full grey loading bar and an hourglass, and a long dashed line runs far away to a cloud. Row 2 (coloured): the window is already full; right under its address bar sits a small strip of the same picture pieces, and they jump straight up into the page along short orange arrows with a yellow lightning bolt; the strip and the full page are framed. Moving: in row 2 the pieces jump up into the page again and again. */
+  'webb.cache': all(bg(),
+    greyed(num(9, 24, '1', 10, C.grey, 900), win(16, 8, 58, 44, { inner: all(rect(24, 38, 40, 5, C.white, 2.5, C.ink, 0.8), rect(25, 39, 16, 3, '#9aa3ad', 1.5, null)) }),
+      path('M86 22 L96 22 L91 30 L96 38 L86 38 L91 30 Z', '#e8d4a8', C.ink, 1.2), line('M76 44 L104 44', C.grey, 2, '3 3'), cloud(104, 32, 0.6)),
+    line('M4 58 L116 58', C.grey2, 1.2, '3 3'),
+    num(9, 76, '2', 10, C.ink, 900), win(16, 62, 58, 48, { inner: page(20, 84, 50, 24) }),
+    rect(80, 66, 34, 14, '#fff6d8', 3, C.ink, 1.4), pic(83, 69, 10, 8), rect(96, 69, 8, 8, BLUE, 1, null), line('M106 71 L111 71 M106 75 L110 75', BAR, 1.4),
+    waIn('webb-cache-1', 14, -8, pic(24, 95, 10, 8), rect(36, 95, 8, 6, BLUE, 1, null)), arr(84, 82, 74, 90, HL, 2.4),
+    path('M104 84 L98 94 L102 94 L99 104 L109 91 L104 91 Z', YEL, C.ink, 0.9), frame(78, 64, 38, 18, 4), frame(14, 60, 62, 52, 5)),
 
   // ── 3736 Domäner och servrar ─────────────────────────────────────────
   /** server: a tall dark machine with drawers and small coloured lights on the left; lines go out from it to a laptop, a phone and a tablet on the right, each showing a small page; the machine is ringed. */
@@ -274,14 +278,22 @@ export const WEB_MOTIFS: Record<string, Svg> = {
   'webb.felmeddelande': errBox(false),
   /** felkod: the same error box over a grey page, but here only the big red digits 404 are coloured and ringed, the text is grey. */
   'webb.felkod': errBox(true),
-  /** ligga nere: a server machine with every light red, switched off, with a big red cross; next to it a big screen that is completely black; below, three people's phones are black too, each with a red cross: nobody gets in at all; the dead server and black screen are framed. */
-  'webb.ligga-nere': all(bg(), rack(24, 42, 0.62, true), no(24, 14, 8), rect(46, 14, 66, 48, C.dark, 3, C.ink, 1.8), rect(49, 17, 60, 42, '#111216', 1, null), path('M77 62 L83 62 L86 70 L74 70 Z', '#9aa3ad', C.ink, 1.2),
-    line('M34 42 L46 38', RED, 2, '3 3'), frame(6, 8, 108, 66, 5),
-    ...[24, 60, 96].map((x) => all(phone(x, 94, 0.55, rect(-11.5, -19, 23, 37, '#111216', 1, null)), no(x + 9, 82, 5)))),
-  /** driftstörning: one server at the top with a yellow warning triangle; uneven, broken zigzag lines go down from it to four phones; every phone shows the page half loaded and the same small red error box at the same time; the server with the triangle is ringed. */
-  'webb.driftstörning': all(bg(), rack(56, 32, 0.45), warnIcon(76, 22, 1), ring(62, 30, 22),
-    ...[18, 46, 74, 102].map((x, i) => all(line(`M56 52 L${f1((56 + x) / 2 + (i % 2 ? 4 : -4))} 70 L${x} 76`, i % 2 ? RED : '#e8a03a', 1.6, i % 2 ? '2 3' : '5 2'),
-      phone(x, 94, 0.55, all(page(-11.5, -19, 23, 14), rect(-9, 0, 18, 12, C.white, 2, C.ink, 0.8), bang(-4, 6, 3.4), line('M0 4 L6 4 M0 8 L5 8', BAR, 1.2)))))),
+  /** ligga nere (manual track): a browser window whose whole page is a shop front: a striped awning, and over the door and the window a grey metal roller shutter pulled all the way down; a round clock hangs beside it; in front, a woman with a phone stands still with a question mark; on her phone the same closed shutter. The service is completely gone for a while. Moving: the shutter rolls down and the clock hand turns. */
+  'webb.ligga-nere': all(bg(), ground, win(6, 6, 108, 72, { tabs: 1, inner: all(
+      rect(12, 30, 96, 46, '#e8d3b0', 1, C.ink, 1.2), ...range(6).map((i) => path(`M${12 + i * 16} 30 L${28 + i * 16} 30 L${26 + i * 16} 38 L${14 + i * 16} 38 Z`, i % 2 ? C.white : RED, C.ink, 0.8)),
+      moving('webb-ligga-nere-1', '0%{transform:translateY(-30px);opacity:.3}60%,100%{transform:translateY(0);opacity:1}', { dur: 3 },
+        rect(18, 40, 84, 36, '#9aa3ad', 1, C.ink, 1.2), ...range(8).map((i) => line(`M18 ${44 + i * 4} L102 ${44 + i * 4}`, '#7a8590', 1)), rect(56, 72, 8, 3, '#5a636e', 1, null))) }),
+    circle(100, 92, 9, C.white, C.ink, 1.4), waSpin('webb-ligga-nere-2', 4, line('M100 92 L100 85.5', C.ink, 1.6)), line('M100 92 L104 94', C.ink, 1.4),
+    person(40, C.orange, { hairStyle: 'long', h: 0.42 }), reach(40, 0.42, 1, 52, 96), num(56, 78, '?', 11, HL, 900),
+    phone(58, 94, 0.36, all(rect(-11.5, -19, 23, 37, '#9aa3ad', 1, null), ...range(6).map((i) => line(`M-11 ${-15 + i * 6} L11 ${-15 + i * 6}`, '#7a8590', 1.4))))),
+  /** driftstörning (manual track): at the top one cloud that sends pages out; below it a crowd of five people in a row, each holding a phone; every phone shows the same page only half drawn, with a turning loading circle, and the lines from the cloud to the phones are broken into short flickering dashes; one person at the end, alone in grey, gets the page whole. The service works but stutters for many at once. Moving: the dashes flicker, the loading circles turn and the half pages jerk. */
+  'webb.driftstörning': all(bg(), ground, cloud(60, 18, 1.1),
+    waPulse('webb-driftstorning-1', ...[16, 38, 60, 82].map((x) => line(`M60 28 L${x + 8} 84`, LINK, 1.6, '3 4'))),
+    ...[16, 38, 60, 82].map((x, i) => all(person(x, [C.green, C.orange, C.purple, C.denim][i]!, { h: 0.42, ...(i % 2 ? { hairStyle: 'long' } : {}) }),
+      phone(x + 8, 95, 0.36, all(rect(-11.5, -19, 23, 7, BLUE, 1, null), waShake(`webb-driftstorning-s${i}`, bars(-9, -9, 18, 2, 5, '#7a8590', 2)),
+        waSpin(`webb-driftstorning-c${i}`, 1.2, path('M0 4 A6 6 0 1 1 -5.2 7', 'none', HL, 2.4)))))),
+    greyed(person(106, C.green, { h: 0.42 }), phone(112, 95, 0.36, page(-11.5, -19, 23, 37)), line('M70 26 L112 84', C.grey, 1.4)),
+    frame(4, 60, 92, 52, 5)),
   /** åtkomst: a door with a lock and a card reader with a green light; a coloured person with a key card walks in along a green arrow and a tick; a grey person stands outside with a red cross; the open way in is ringed. */
   'webb.åtkomst': all(bg(), ground, rect(50, 30, 32, 82, '#e8e2d4', 1, C.ink, 1.6), path('M54 34 L78 34 L78 112 L54 112 Z', '#fff6d8', C.ink, 1.4), path('M54 34 L64 38 L64 108 L54 112 Z', '#a0673d', C.ink, 1.4),
     rect(86, 56, 10, 16, C.dark, 2, C.ink, 1.2), circle(91, 61, 2, '#7ee07e', null), padlock(91, 80, 0.5, '#3a9a5a'),
