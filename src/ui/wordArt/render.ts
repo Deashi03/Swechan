@@ -228,6 +228,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'digverk.': () => import('./digitalTools').then((m) => m.DIGTOOLS_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
+  'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
 };
 const loaded: Motifs = {};
 const pending = new Map<string, Promise<void>>();

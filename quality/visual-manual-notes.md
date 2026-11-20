@@ -210,3 +210,27 @@ Dessa 17 ord underkändes två gånger i 0.54-produktionen och ritades om för h
 - `s.slumpförsök.1` (`manm.slumpförsök`, tärning, mynt och lyckohjul med frågetecken i en ram): förväxlas med *tärningskast*. Modulen har sju bilder av olika slumpförsök, så överbegreppet sticker inte ut.
 - `s.sökning.1` (`manm.sökning`, förstoringsglas över lista, bok och skärm): förväxlas med *sökmotor*, *linjär sökning* och *binär sökning*. Samma problem med överbegrepp.
 Förslag: låt de fyra ha en enkel symbolbild som godkänns utan blindtest (`waiver`), eller ta bort dem som modulord i de moduler där ett mer specifikt ord redan bär betydelsen.
+
+## B5 – manuellt spår, Filosofi & etik (2026-11-20)
+
+59 ord ritades för hand i `src/ui/wordArt/manualPhilosophy.ts` (prefix `manf.`). 41 klarade matchningstestet. Fem av dem räknas som synonymer, eftersom paren är äkta synonymer och nu är markerade som förväxlingsbara (`confusableWith`): *avsiktlig/med avsikt*, *finnas till/existera*, *på goda grunder/välgrundad*, *plikt/skyldighet* och *ändlighet/ändlig*.
+
+**Till produktägaren** – 18 ord klarade inte två omgångar. Motiven finns kvar i filen och planen har `status: "manual"`. Orsaken är nästan alltid densamma: modulerna i Filosofi & etik har redan bilder för ett närliggande ord, ofta samma begrepp i en annan ordklass eller som ett specifikt exempel, och granskaren valde den bilden.
+- `s.tro.2` → *villfarelse* och *tro på* (tankebubbla med bock)
+- `s.empirisk.1` → *empirism* (sinnen → kunskap)
+- `s.tvivla-på.1` → *skeptisk*
+- `s.evidens.1` → *bevisning*
+- `s.rättfärdiga.1` och `s.rättfärdigande.1` → *skäl* och varandra (verb och substantiv går inte att skilja i en bild)
+- `s.omoralisk.1` → *ondska*
+- `s.lika-möjligheter.1` → *likabehandling*
+- `s.tvång.1` → *påtvinga* och *tvinga*
+- `s.förnimmelse.1` → *smärta* och *perception*
+- `s.medvetenhet.1` → *medvetande*
+- `s.handling.1` → *med flit* (överbegrepp bland specifika handlingar)
+- `s.varande.1` → *existera*, *existens*
+- `s.sken.1` → *skenet bedrar*, *sinnesvilla*
+- `s.livsuppgift.1` → *livsmål*
+- `s.ha-något-att-leva-för.1` → *tacksamhet* och andra hjärtbilder
+- `s.existentialism.1` → *existensen föregår essensen*
+- `s.ond-tro.1` → *ångest* och *spela en roll*
+Förslag: produktägaren avgör om paren ska räknas som synonymer (`conf.py`), om det specifikare ordet räcker som modulord, eller om de abstraktaste orden (*varande*, *handling*, *existentialism*) får en symbolbild med `waiver`.
