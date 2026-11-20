@@ -25,7 +25,7 @@ import { createRequire } from 'node:module';
 import { loadAllMotifs, renderWordArt } from '../../src/ui/wordArt/render';
 import { Scene, migrateScene, compileScene, renderFrame, frameToSvg } from '../../src/ui/anim/player';
 import { faceSvg } from '../../src/ui/face/rig';
-import { needsBlindTest, visualFingerprintSource, visualHash } from '../../src/content/blindTest';
+import { needsBlindTest, posterOf, visualFingerprintSource, visualHash } from '../../src/content/blindTest';
 import type { WordImage } from '../../src/content/images';
 
 const R = 'src/content/data/';
@@ -63,7 +63,8 @@ try { pw = require('playwright'); } catch { pw = require(`${process.env.NODE_PAT
 const { chromium } = pw;
 await loadAllMotifs();
 const cellSvg = (i: Img): string => {
-  if (i.kind === 'illustration') return renderWordArt(i.motif!) ?? '';
+  // the poster frame (kvalitetsplanen B5): a sheet must not catch a moving() part in its start position
+  if (i.kind === 'illustration') return posterOf(renderWordArt(i.motif!) ?? '');
   if (i.kind === 'animation') {
     const sc = compileScene(Scene.parse(migrateScene(JSON.parse(fs.readFileSync(path.join('public/anim/scenes', `${i.file}.json`), 'utf8')))));
     return [0, sc.posterMs / 2, sc.posterMs].map((t) => frameToSvg(renderFrame(sc, t))).join('');
