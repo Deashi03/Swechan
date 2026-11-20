@@ -199,3 +199,14 @@ Dessa 17 ord underkändes två gånger i 0.54-produktionen och ritades om för h
 - Förväxlingarna i blindtesten: *prestanda/uppgradera*, *lagringsutrymme/rymma*, *testversion/licens*, *operativsystem/drivrutin*, *cache/lagra*, *ligga nere/driftstörning*, *driftstörning/krångla*, *uppkopplad/uppkoppling*, *svarstid/fördröjning*, *bandbredd/kapacitet*, *täckning/räckvidd*, *tappa uppkopplingen/avbrott*, *VPN/kryptera*, *byta lösenord/lösenord*, *säkerhetsrisk/sårbarhet*, *frånvaromeddelande/skicka vidare*.
 - Det som fungerade för hand: kapplöpning (snabb dator mot snigel) för *prestanda*; tomt utrymme i en mobil där ett nytt foto får plats för *lagringsutrymme*; skyltfönster med neddragen rullgardin för *ligga nere* och flera mobiler som hackar samtidigt för *driftstörning*; motorväg med datapaket som bilar för *bandbredd*; karta med färgat område och vita fläckar för *täckning*; solstol och automatiskt svarskuvert för *frånvaromeddelande*.
 - *Mobildata* förväxlades med *surfzon* och *surf* också i två handritade försök (mobil med pilar, buss med GB-räknare). Ordet är inte längre modulord i *Mobildata* (produktägarens beslut 0.55).
+
+## B5 – manuellt spår, Avancerad matematik (2026-11-20)
+
+58 ord ritades för hand i `src/ui/wordArt/manualMath.ts` (prefix `manm.`). Notation som ledtråd (f′, ≈, =, ⇒, +C, σ², E(X)), kontrastpar i samma layout och bildserier. 54 klarade matchningstestet (medelsvar med rätt bild godtogs när granskaren inte skrev att en annan bild passade lika bra, som för `accept.py`). Arken för rörliga motiv visade först startbilden i stället för affischbilden; `art-blind.ts` visar nu `posterOf`, och de orden fick en ny första omgång.
+
+**Till produktägaren** – fyra ord klarade inte två omgångar. Motiven finns kvar i filen men är inte registrerade, och planen har `status: "manual"`:
+- `s.egenvärde.1` (`manm.egenvärde`, v och 3v på samma linje med ×3 och λ): förväxlas med *karakteristisk ekvation*, som visar λ = 2, λ = 3. Egenvärdet är ett tal, och modulens andra bilder visar också λ eller skalning.
+- `s.numerisk.1` (`manm.numerisk`, staplar under en kurva ≈ 2,67 i stället för en överstruken formel): förväxlas med *iteration*, *miniräknare* och *startvärde*. ”Med siffror i stället för en formel” är ett sätt att räkna och syns inte i en enda bild.
+- `s.slumpförsök.1` (`manm.slumpförsök`, tärning, mynt och lyckohjul med frågetecken i en ram): förväxlas med *tärningskast*. Modulen har sju bilder av olika slumpförsök, så överbegreppet sticker inte ut.
+- `s.sökning.1` (`manm.sökning`, förstoringsglas över lista, bok och skärm): förväxlas med *sökmotor*, *linjär sökning* och *binär sökning*. Samma problem med överbegrepp.
+Förslag: låt de fyra ha en enkel symbolbild som godkänns utan blindtest (`waiver`), eller ta bort dem som modulord i de moduler där ett mer specifikt ord redan bär betydelsen.

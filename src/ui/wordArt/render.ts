@@ -227,6 +227,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'digsak.': () => import('./digitalSecurity').then((m) => m.DIGSEC_MOTIFS),
   'digverk.': () => import('./digitalTools').then((m) => m.DIGTOOLS_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
+  'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
 };
 const loaded: Motifs = {};
 const pending = new Map<string, Promise<void>>();
