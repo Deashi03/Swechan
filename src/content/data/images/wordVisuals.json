@@ -52991,7 +52991,8 @@
    "confusableWith": [
     "s.vid-medvetande.1",
     "s.vakna-till.1",
-    "s.medvetslöshet.1"
+    "s.medvetslöshet.1",
+    "s.medvetenhet.1"
    ],
    "blindTest": {
     "result": "pass",
@@ -76949,7 +76950,8 @@
    "group": "åsikt-bevis",
    "quiz": false,
    "confusableWith": [
-    "s.med-en-nypa-salt.1"
+    "s.med-en-nypa-salt.1",
+    "s.tvivla-på.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -89560,7 +89562,10 @@
     "result": "pass",
     "round": "0.30.0",
     "hash": "46d3dd2c"
-   }
+   },
+   "confusableWith": [
+    "s.lika-möjligheter.1"
+   ]
   },
   {
    "senseId": "s.lika-lön.1",
@@ -93224,7 +93229,10 @@
     "result": "pass",
     "round": "0.31.0",
     "hash": "c0e39b8d"
-   }
+   },
+   "confusableWith": [
+    "s.evidens.1"
+   ]
   },
   {
    "senseId": "s.bevisvärdering.1",
@@ -123248,7 +123256,10 @@
     "result": "pass",
     "round": "0.39.0",
     "hash": "345345ca"
-   }
+   },
+   "confusableWith": [
+    "s.empirisk.1"
+   ]
   },
   {
    "senseId": "s.empirist.1",
@@ -125599,7 +125610,11 @@
    "kind": "illustration",
    "motif": "polf.tvinga",
    "group": "polf",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.tvång.1",
+    "s.påtvinga.1"
+   ]
   },
   {
    "senseId": "s.negativ-frihet.1",
@@ -125652,7 +125667,11 @@
    "kind": "illustration",
    "motif": "polf.påtvinga",
    "group": "polf",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.tvång.1",
+    "s.tvinga.1"
+   ]
   },
   {
    "senseId": "s.skadeprincip.1",
@@ -126179,7 +126198,8 @@
    "quiz": false,
    "symbol": true,
    "confusableWith": [
-    "s.finnas-till.1"
+    "s.finnas-till.1",
+    "s.varande.1"
    ],
    "blindTest": {
     "result": "pass",
@@ -126493,7 +126513,10 @@
     "result": "pass",
     "round": "0.39.0",
     "hash": "2d92b801"
-   }
+   },
+   "confusableWith": [
+    "s.sken.1"
+   ]
   },
   {
    "senseId": "s.bedräglig.1",
@@ -126592,7 +126615,10 @@
     "result": "pass",
     "round": "0.39.0",
     "hash": "266f444d"
-   }
+   },
+   "confusableWith": [
+    "s.livsuppgift.1"
+   ]
   },
   {
    "senseId": "s.ge-mening-åt.1",
@@ -126830,7 +126856,10 @@
     "result": "pass",
     "round": "0.39.0",
     "hash": "c869b085"
-   }
+   },
+   "confusableWith": [
+    "s.existentialism.1"
+   ]
   },
   {
    "senseId": "s.det-absurda.1",
@@ -169017,6 +169046,361 @@
     "round": "0.55.0",
     "hash": "a07b1bbb",
     "method": "match"
+   }
+  },
+  {
+   "senseId": "s.egenvärde.1",
+   "kind": "illustration",
+   "motif": "manm.egenvärde",
+   "group": "b5-egenvärde",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "ec8a97b0",
+    "method": "match",
+    "waiver": "Förväxlas med karakteristisk ekvation, som också visar λ; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.numerisk.1",
+   "kind": "illustration",
+   "motif": "manm.numerisk",
+   "group": "b5-numerisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "b3051313",
+    "method": "match",
+    "waiver": "Ett sätt att räkna som inte syns i en enda bild bredvid iteration och miniräknare; godkänd av produktägaren 2026-11-21."
+   }
+  },
+  {
+   "senseId": "s.slumpförsök.1",
+   "kind": "illustration",
+   "motif": "manm.slumpförsök",
+   "group": "b5-slumpförsök",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "6222714f",
+    "method": "match",
+    "waiver": "Överbegrepp bland sju bilder av olika slumpförsök; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.sökning.1",
+   "kind": "illustration",
+   "motif": "manm.sökning",
+   "group": "b5-sökning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "2570672a",
+    "method": "match",
+    "waiver": "Överbegrepp bland sökmotor, linjär och binär sökning; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.tro.2",
+   "kind": "illustration",
+   "motif": "manf.tro",
+   "group": "b5-tro",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "711d7ce5",
+    "method": "match",
+    "waiver": "Förväxlas med villfarelse och tro på i samma modul; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.empirisk.1",
+   "kind": "illustration",
+   "motif": "manf.empirisk",
+   "group": "b5-empirisk",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.empirism.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "85d85b3b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tvivla-på.1",
+   "kind": "illustration",
+   "motif": "manf.tvivla-på",
+   "group": "b5-tvivla-på",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skeptisk.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "70200ef7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.evidens.1",
+   "kind": "illustration",
+   "motif": "manf.evidens",
+   "group": "b5-evidens",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.bevisning.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "8aa4459f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rättfärdiga.1",
+   "kind": "illustration",
+   "motif": "manf.rättfärdiga",
+   "group": "b5-rättfärdiga",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "b7f682d5",
+    "method": "match",
+    "waiver": "Verb och substantiv (rättfärdigande) och skäl går inte att skilja i en bild; godkänd av produktägaren 2026-11-21."
+   }
+  },
+  {
+   "senseId": "s.rättfärdigande.1",
+   "kind": "illustration",
+   "motif": "manf.rättfärdigande",
+   "group": "b5-rättfärdigande",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "95623750",
+    "method": "match",
+    "waiver": "Substantiv och verb (rättfärdiga) går inte att skilja i en bild; godkänd av produktägaren 2026-11-21."
+   }
+  },
+  {
+   "senseId": "s.omoralisk.1",
+   "kind": "illustration",
+   "motif": "manf.omoralisk",
+   "group": "b5-omoralisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "a1015b0b",
+    "method": "match",
+    "waiver": "Förväxlas med ondska i samma modul; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.lika-möjligheter.1",
+   "kind": "illustration",
+   "motif": "manf.lika-möjligheter",
+   "group": "b5-lika-möjligheter",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.likabehandling.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "c1ea7c55",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tvång.1",
+   "kind": "illustration",
+   "motif": "manf.tvång",
+   "group": "b5-tvång",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.påtvinga.1",
+    "s.tvinga.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "e00ae6fe",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förnimmelse.1",
+   "kind": "illustration",
+   "motif": "manf.förnimmelse",
+   "group": "b5-förnimmelse",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "ba22d54b",
+    "method": "match",
+    "waiver": "Förväxlas med smärta och perception i samma modul; godkänd av produktägaren 2026-11-21."
+   }
+  },
+  {
+   "senseId": "s.medvetenhet.1",
+   "kind": "illustration",
+   "motif": "manf.medvetenhet",
+   "group": "b5-medvetenhet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.medvetande.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "d758dc91",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.handling.1",
+   "kind": "illustration",
+   "motif": "manf.handling",
+   "group": "b5-handling",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "e4506ce3",
+    "method": "match",
+    "waiver": "Överbegrepp bland specifika handlingar i modulen; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.varande.1",
+   "kind": "illustration",
+   "motif": "manf.varande",
+   "group": "b5-varande",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.existera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "497cb689",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sken.1",
+   "kind": "illustration",
+   "motif": "manf.sken",
+   "group": "b5-sken",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skenet-bedrar.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "78c67ff6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.livsuppgift.1",
+   "kind": "illustration",
+   "motif": "manf.livsuppgift",
+   "group": "b5-livsuppgift",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.livsmål.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "fb20ed21",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ha-något-att-leva-för.1",
+   "kind": "illustration",
+   "motif": "manf.ha-något-att-leva-för",
+   "group": "b5-ha-något-att-leva-för",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "936a7150",
+    "method": "match",
+    "waiver": "Flera hjärtbilder i modulen konkurrerar; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.existentialism.1",
+   "kind": "illustration",
+   "motif": "manf.existentialism",
+   "group": "b5-existentialism",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.existensen-föregår-essensen.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "1e6e9a17",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ond-tro.1",
+   "kind": "illustration",
+   "motif": "manf.ond-tro",
+   "group": "b5-ond-tro",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "c0b8de10",
+    "method": "match",
+    "waiver": "Förväxlas med ångest och att spela en roll i samma modul; godkänd av produktägaren 2026-11-21."
    }
   }
  ]

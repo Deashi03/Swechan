@@ -23,7 +23,20 @@ const Common = {
    * quiz pictures); `match` = the reviewer gets the word and its gloss and picks its picture among the
    * module's pictures (enough for symbol pictures, which are always shown with the gloss). Missing = open.
    */
-  blindTest: z.object({ result: z.enum(['pass', 'synonym']), round: z.string().min(1), hash: z.string().regex(/^[0-9a-f]{8}$/), method: z.enum(['open', 'match']).optional() }).optional(),
+  blindTest: z
+    .object({
+      result: z.enum(['pass', 'synonym', 'waived']),
+      round: z.string().min(1),
+      hash: z.string().regex(/^[0-9a-f]{8}$/),
+      method: z.enum(['open', 'match']).optional(),
+      /**
+       * Kvalitetsplanen B5: `waived` = the picture failed two rounds and the product owner approved it anyway as a
+       * symbol picture (always shown with the gloss, never in picture exercises). The reason is required.
+       */
+      waiver: z.string().min(10).optional(),
+    })
+    .refine((b) => b.result !== 'waived' || !!b.waiver, { message: 'waived kräver waiver med skäl' })
+    .optional(),
 };
 export const WordImageSchema = z.discriminatedUnion('kind', [
   /** animated (kvalitetsplanen A5): the motif SVG contains CSS animation; its base state is the poster frame. */
