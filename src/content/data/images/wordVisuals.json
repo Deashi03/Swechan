@@ -22439,7 +22439,10 @@
    "kind": "illustration",
    "motif": "bost.ansöka",
    "group": "ansöka",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.ansökan.1"
+   ]
   },
   {
    "senseId": "s.godkänna.1",
@@ -39762,7 +39765,8 @@
    "group": "kundtjänst",
    "quiz": true,
    "confusableWith": [
-    "s.kundtjänst.1"
+    "s.kundtjänst.1",
+    "s.handlägga.1"
    ]
   },
   {
@@ -70259,7 +70263,10 @@
     "result": "pass",
     "round": "0.28.0",
     "hash": "89f0434e"
-   }
+   },
+   "confusableWith": [
+    "s.vägledning.1"
+   ]
   },
   {
    "senseId": "s.coach.1",
@@ -74911,7 +74918,8 @@
    "quiz": false,
    "confusableWith": [
     "s.diskret.2",
-    "s.hemlighet.1"
+    "s.hemlighet.1",
+    "s.sekretess.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -76089,7 +76097,8 @@
    "quiz": false,
    "confusableWith": [
     "s.nämligen.1",
-    "s.varför-då.1"
+    "s.varför-då.1",
+    "s.motivering.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -85253,7 +85262,10 @@
     "result": "pass",
     "round": "0.29.0",
     "hash": "d0aa09ef"
-   }
+   },
+   "confusableWith": [
+    "s.brottslig.1"
+   ]
   },
   {
    "senseId": "s.likhet-inför-lagen.1",
@@ -85506,7 +85518,10 @@
    "kind": "illustration",
    "motif": "demo.överklaga",
    "group": "institution",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.överklagande.1"
+   ]
   },
   {
    "senseId": "s.politik.1",
@@ -91052,7 +91067,8 @@
    "group": "oaktsam",
    "quiz": false,
    "confusableWith": [
-    "s.vårdslös.1"
+    "s.vårdslös.1",
+    "s.oaktsamhet.1"
    ],
    "blindTest": {
     "result": "pass",
@@ -91071,7 +91087,10 @@
     "result": "pass",
     "round": "0.31.0",
     "hash": "8bb3e8ec"
-   }
+   },
+   "confusableWith": [
+    "s.vårdslös.1"
+   ]
   },
   {
    "senseId": "s.olyckshändelse.1",
@@ -92166,7 +92185,10 @@
    "kind": "illustration",
    "motif": "polis.anhålla",
    "group": "häkte",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.anhållande.1"
+   ]
   },
   {
    "senseId": "s.underrätta.1",
@@ -92868,7 +92890,8 @@
    "group": "åtal",
    "quiz": false,
    "confusableWith": [
-    "s.väcka-åtal.1"
+    "s.väcka-åtal.1",
+    "s.åtal.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -169401,6 +169424,679 @@
     "hash": "c0b8de10",
     "method": "match",
     "waiver": "Förväxlas med ångest och att spela en roll i samma modul; godkänd av produktägaren 2026-11-21."
+   }
+  },
+  {
+   "senseId": "s.föreskrift.1",
+   "kind": "illustration",
+   "motif": "manj.föreskrift",
+   "group": "b5-föreskrift",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "8982b19a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.utfärda.1",
+   "kind": "illustration",
+   "motif": "manj.utfärda",
+   "group": "b5-utfärda",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "14577aaf",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.författning.1",
+   "kind": "illustration",
+   "motif": "manj.författning",
+   "group": "b5-författning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "f45e866f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.enligt-lag.1",
+   "kind": "illustration",
+   "motif": "manj.enligt-lag",
+   "group": "b5-enligt-lag",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "b890d4c8",
+    "method": "match",
+    "waiver": "Flera bilder i modulen visar lagbok och §; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.lagstadgad.1",
+   "kind": "illustration",
+   "motif": "manj.lagstadgad",
+   "group": "b5-lagstadgad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "ec3ff7c6",
+    "method": "match",
+    "waiver": "Går inte att skilja från föreskrift och lag i en bild; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.rätt.2",
+   "kind": "illustration",
+   "motif": "manj.rätt",
+   "group": "b5-rätt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "18da5447",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skyldig.3",
+   "kind": "illustration",
+   "motif": "manj.skyldig",
+   "group": "b5-skyldig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "9cd7b2da",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.utöva.1",
+   "kind": "illustration",
+   "motif": "manj.utöva",
+   "group": "b5-utöva",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "028a6227",
+    "method": "match",
+    "waiver": "Förväxlas med inflytande och rätt i samma modul; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.åligga.1",
+   "kind": "illustration",
+   "motif": "manj.åligga",
+   "group": "b5-åligga",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "f479054e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.offentlig-rätt.1",
+   "kind": "illustration",
+   "motif": "manj.offentlig-rätt",
+   "group": "b5-offentlig-rätt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "26f941a6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.privatperson.1",
+   "kind": "illustration",
+   "motif": "manj.privatperson",
+   "group": "b5-privatperson",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "ab84c828",
+    "method": "match",
+    "waiver": "Konkurrerar med en annan bild av en enskild person; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.brottslig.1",
+   "kind": "illustration",
+   "motif": "manj.brottslig",
+   "group": "b5-brottslig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.olaglig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "246b2be6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.straffbar.1",
+   "kind": "illustration",
+   "motif": "manj.straffbar",
+   "group": "b5-straffbar",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "d40f7ac5",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.gärning.1",
+   "kind": "illustration",
+   "motif": "manj.gärning",
+   "group": "b5-gärning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "5024b402",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.uppsåtlig.1",
+   "kind": "illustration",
+   "motif": "manj.uppsåtlig",
+   "group": "b5-uppsåtlig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "72c072f6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.oaktsamhet.1",
+   "kind": "illustration",
+   "motif": "manj.oaktsamhet",
+   "group": "b5-oaktsamhet",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.oaktsam.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "964bf033",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vårdslös.1",
+   "kind": "illustration",
+   "motif": "manj.vårdslös",
+   "group": "b5-vårdslös",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.grov-oaktsamhet.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "33455ec7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.anstiftan.1",
+   "kind": "illustration",
+   "motif": "manj.anstiftan",
+   "group": "b5-anstiftan",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "8929df0c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.straff.1",
+   "kind": "illustration",
+   "motif": "manj.straff",
+   "group": "b5-straff",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "19008046",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.individualprevention.1",
+   "kind": "illustration",
+   "motif": "manj.individualprevention",
+   "group": "b5-individualprevention",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "36285317",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skäligen-misstänkt.1",
+   "kind": "illustration",
+   "motif": "manj.skäligen-misstänkt",
+   "group": "b5-skäligen-misstänkt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "41322c18",
+    "method": "match",
+    "waiver": "Graden av misstanke syns inte i en bild bredvid andra misstankebilder; godkänd av produktägaren 2026-11-21."
+   }
+  },
+  {
+   "senseId": "s.anhållande.1",
+   "kind": "illustration",
+   "motif": "manj.anhållande",
+   "group": "b5-anhållande",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.anhålla.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "89f435d7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.försvåra.1",
+   "kind": "illustration",
+   "motif": "manj.försvåra",
+   "group": "b5-försvåra",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "a134be70",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rättegång.1",
+   "kind": "illustration",
+   "motif": "manj.rättegång",
+   "group": "b5-rättegång",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "6cec0677",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.yrka.1",
+   "kind": "illustration",
+   "motif": "manj.yrka",
+   "group": "b5-yrka",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "366bbdf0",
+    "method": "match",
+    "waiver": "Förväxlas med företräda bland flera domstolsbilder; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.yrkande.2",
+   "kind": "illustration",
+   "motif": "manj.yrkande",
+   "group": "b5-yrkande",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "8a40d491",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.åtal.1",
+   "kind": "illustration",
+   "motif": "manj.åtal",
+   "group": "b5-åtal",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.åtala.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "064251d7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.åtalsplikt.1",
+   "kind": "illustration",
+   "motif": "manj.åtalsplikt",
+   "group": "b5-åtalsplikt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "6e85fef9",
+    "method": "match",
+    "waiver": "Plikten syns inte bredvid bilden för åtal; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.stämning.1",
+   "kind": "illustration",
+   "motif": "manj.stämning",
+   "group": "b5-stämning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "bdb8a055",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.yttra-sig.1",
+   "kind": "illustration",
+   "motif": "manj.yttra-sig",
+   "group": "b5-yttra-sig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "e6dc71d7",
+    "method": "match",
+    "waiver": "Förväxlas med vittna bland flera bilder av personer som talar; godkänd av produktägaren 2026-11-21."
+   }
+  },
+  {
+   "senseId": "s.fria.2",
+   "kind": "illustration",
+   "motif": "manj.fria",
+   "group": "b5-fria",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "0b386077",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.frikänna.1",
+   "kind": "illustration",
+   "motif": "manj.frikänna",
+   "group": "b5-frikänna",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "1ba51535",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.överklagande.1",
+   "kind": "illustration",
+   "motif": "manj.överklagande",
+   "group": "b5-överklagande",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.överklaga.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "5fe671dc",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sakliga-skäl.1",
+   "kind": "illustration",
+   "motif": "manj.sakliga-skäl",
+   "group": "b5-sakliga-skäl",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "12c9d296",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.handlägga.1",
+   "kind": "illustration",
+   "motif": "manj.handlägga",
+   "group": "b5-handlägga",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.handläggare.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "49c6a7e0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.motivering.1",
+   "kind": "illustration",
+   "motif": "manj.motivering",
+   "group": "b5-motivering",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.motivera.2"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "a83989f8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ansökan.1",
+   "kind": "illustration",
+   "motif": "manj.ansökan",
+   "group": "b5-ansökan",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ansöka.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "2ad6916e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sekretess.1",
+   "kind": "illustration",
+   "motif": "manj.sekretess",
+   "group": "b5-sekretess",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.sekretessbelagd.1",
+    "s.hemlighålla.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "df2a3ac7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sekretessbelagd.1",
+   "kind": "illustration",
+   "motif": "manj.sekretessbelagd",
+   "group": "b5-sekretessbelagd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.sekretess.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "61dc1097",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.konfidentiell.1",
+   "kind": "illustration",
+   "motif": "manj.konfidentiell",
+   "group": "b5-konfidentiell",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "7c93de2d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sekretessmarkering.1",
+   "kind": "illustration",
+   "motif": "manj.sekretessmarkering",
+   "group": "b5-sekretessmarkering",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "b3849aad",
+    "method": "match",
+    "waiver": "Förväxlas med sekretessbelagd; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.serviceskyldighet.1",
+   "kind": "illustration",
+   "motif": "manj.serviceskyldighet",
+   "group": "b5-serviceskyldighet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "788aa26e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.service.2",
+   "kind": "illustration",
+   "motif": "manj.service",
+   "group": "b5-service",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "a0de6827",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vägledning.1",
+   "kind": "illustration",
+   "motif": "manj.vägledning",
+   "group": "b5-vägledning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.vägleda.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "1ae350c0",
+    "method": "match"
    }
   }
  ]

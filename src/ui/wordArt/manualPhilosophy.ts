@@ -10,27 +10,27 @@ import { HL, T, heart, cloud, globe, thought, bubble } from './people';
 import { greyed } from './blindFix';
 import { figure } from './figures';
 
-const SOFT = 'rgba(228,87,46,0.18)';
+export const SOFT = 'rgba(228,87,46,0.18)';
 const GR = C.grey;
 const f1 = (n: number) => +n.toFixed(1);
 const range = (n: number) => Array.from({ length: n }, (_, i) => i);
-const ground = line('M4 112 L116 112', C.grey2, 2);
+export const ground = line('M4 112 L116 112', C.grey2, 2);
 /** Head-and-shoulders person, scaled; (x, y) is the centre of the head. */
-const bust = (x: number, y: number, s = 1, top: string = C.sky, long = false, grey = false) => {
+export const bust = (x: number, y: number, s = 1, top: string = C.sky, long = false, grey = false) => {
   const sk = grey ? C.grey2 : C.skin, hr = grey ? C.grey : C.hair, tp = grey ? C.grey : top;
   return g(`translate(${x} ${y}) scale(${s})`, long ? path('M-12 0 C-14 14 14 14 12 0 Z', hr, null) : '', path('M-20 34 C-20 16 20 16 20 34 Z', tp, C.ink, 1.8), rect(-4, 8, 8, 8, sk, 2, C.ink, 1.4),
     circle(0, 0, 12, sk, C.ink, 1.8), path('M-12 -2 C-12 -18 12 -18 12 -2 C8 -8 -8 -8 -12 -2 Z', hr, C.ink, 1.4), circle(-4, 1, 1.4, C.ink, null), circle(4, 1, 1.4, C.ink, null));
 };
-const face = (x: number, y: number, mood: 'glad' | 'ledsen' | 'neutral', col: string = C.yellow) => all(circle(x, y, 9, col, C.ink, 1.4), circle(x - 3, y - 2, 1.1, C.ink, null), circle(x + 3, y - 2, 1.1, C.ink, null),
+export const face = (x: number, y: number, mood: 'glad' | 'ledsen' | 'neutral', col: string = C.yellow) => all(circle(x, y, 9, col, C.ink, 1.4), circle(x - 3, y - 2, 1.1, C.ink, null), circle(x + 3, y - 2, 1.1, C.ink, null),
   line(mood === 'glad' ? `M${x - 4} ${y + 2} Q${x} ${y + 6} ${x + 4} ${y + 2}` : mood === 'ledsen' ? `M${x - 4} ${y + 5} Q${x} ${y + 1} ${x + 4} ${y + 5}` : `M${x - 4} ${y + 4} L${x + 4} ${y + 4}`, C.ink, 1.3));
-const check = (x: number, y: number, col: string = C.green, s = 1) => line(`M${x - 6 * s} ${y} L${x - 2 * s} ${y + 5 * s} L${x + 7 * s} ${y - 6 * s}`, col, 3 * s);
-const cross = (x: number, y: number, col: string = C.red, s = 1) => line(`M${x - 6 * s} ${y - 6 * s} L${x + 6 * s} ${y + 6 * s} M${x + 6 * s} ${y - 6 * s} L${x - 6 * s} ${y + 6 * s}`, col, 3 * s);
-const qm = (x: number, y: number, size = 20, col: string = HL) => T(x, y, '?', size, col);
-const scale = (x: number, y: number, tilt: number, left: Svg, right: Svg, col: string = C.ink) => all(line(`M${x} ${y} L${x} ${y + 62}`, col, 3), path(`M${x - 16} ${y + 66} L${x + 16} ${y + 66} L${x + 8} ${y + 60} L${x - 8} ${y + 60} Z`, C.dark, C.ink, 1.2),
+export const check = (x: number, y: number, col: string = C.green, s = 1) => line(`M${x - 6 * s} ${y} L${x - 2 * s} ${y + 5 * s} L${x + 7 * s} ${y - 6 * s}`, col, 3 * s);
+export const cross = (x: number, y: number, col: string = C.red, s = 1) => line(`M${x - 6 * s} ${y - 6 * s} L${x + 6 * s} ${y + 6 * s} M${x + 6 * s} ${y - 6 * s} L${x - 6 * s} ${y + 6 * s}`, col, 3 * s);
+export const qm = (x: number, y: number, size = 20, col: string = HL) => T(x, y, '?', size, col);
+export const scale = (x: number, y: number, tilt: number, left: Svg, right: Svg, col: string = C.ink) => all(line(`M${x} ${y} L${x} ${y + 62}`, col, 3), path(`M${x - 16} ${y + 66} L${x + 16} ${y + 66} L${x + 8} ${y + 60} L${x - 8} ${y + 60} Z`, C.dark, C.ink, 1.2),
   g(`rotate(${tilt} ${x} ${y})`, line(`M${x - 38} ${y} L${x + 38} ${y}`, col, 3), line(`M${x - 38} ${y} L${x - 46} ${y + 22} M${x - 38} ${y} L${x - 30} ${y + 22} M${x + 38} ${y} L${x + 30} ${y + 22} M${x + 38} ${y} L${x + 46} ${y + 22}`, col, 1.4),
     path(`M${x - 50} ${y + 22} Q${x - 38} ${y + 32} ${x - 26} ${y + 22} Z`, C.gold, C.ink, 1.4), path(`M${x + 26} ${y + 22} Q${x + 38} ${y + 32} ${x + 50} ${y + 22} Z`, C.gold, C.ink, 1.4),
     g(`translate(${x - 38} ${y + 16})`, left), g(`translate(${x + 38} ${y + 16})`, right)), circle(x, y, 3.4, C.gold, C.ink, 1.2));
-const chain = (x: number, y: number, n: number, col: string = C.grey) => all(...range(n).map((i) => ellipse(x + i * 9, y, 6, 3.6, 'none', col, 2.2)));
+export const chain = (x: number, y: number, n: number, col: string = C.grey) => all(...range(n).map((i) => ellipse(x + i * 9, y, 6, 3.6, 'none', col, 2.2)));
 
 const ring = (x: number, y: number, r: number) => circle(x, y, r, 'none', HL, 2.6);
 
