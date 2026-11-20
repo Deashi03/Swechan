@@ -1,14 +1,14 @@
 {
  "_comment": "Lägstanivåer för kvalitetsmåtten. Skrivs av `npm run audit:content -- --update`. Redigera inte för hand.",
  "metrics": {
-  "B2+ förväxlingsord som inte nämns": 2128,
+  "B2+ förväxlingsord som inte nämns": 2131,
   "B2+ med ett exempel": 8459,
   "B2+ utan användningsuppgift": 8059,
   "abstrakt B1 utan förklaring": 1798,
   "beskrivning som bara räknar upp orden": 1495,
   "glosa med två betydelser": 3,
-  "ord med animation": 413,
-  "ord utan bild": 538,
+  "ord med animation": 417,
+  "ord utan bild": 497,
   "planerad animation saknas": 147,
   "poster med flera betydelser": 754,
   "verb och processord utan animation": 3824
@@ -20,6 +20,13 @@
    "reason": "A5 gav 592 bildlösa ord en riktig bildsort i stället för none; 45 abstrakta B1-ord bland dem syns nu i måttet",
    "from": 1753,
    "to": 1798
+  },
+  {
+   "date": "2026-11-20",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "fem synonympar från matchningstestet i B5 (avsiktlig/med avsikt, finnas till/existera, på goda grunder/välgrundad, plikt/skyldighet, ändlighet/ändlig) är nu markerade som förväxlingsbara",
+   "from": 2128,
+   "to": 2131
   }
  ]
 }
