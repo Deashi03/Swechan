@@ -235,6 +235,12 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
+  'manj.': () => import('./manualLaw').then((m) => m.MANUAL_LAW_MOTIFS),
+  'mane.': () => import('./manualEcology').then((m) => m.MANUAL_ECOLOGY_MOTIFS),
+  'manp.': () => import('./manualPhysics').then((m) => m.MANUAL_PHYSICS_MOTIFS),
+  'manb.': () => import('./manualMathBasics').then((m) => m.MANUAL_MATH_BASICS_MOTIFS),
+  'manv.': () => import('./manualWeather').then((m) => m.MANUAL_WEATHER_MOTIFS),
+  'mank.': () => import('./manualChemistry').then((m) => m.MANUAL_CHEMISTRY_MOTIFS),
 };
 const loaded: Motifs = {};
 const pending = new Map<string, Promise<void>>();

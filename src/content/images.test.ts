@@ -65,6 +65,8 @@ describe('word images – data', () => {
       // Kvalitetsplanen A5: the matching test (word + gloss → picture) is enough only for pictures that are
       // always shown with their gloss; a picture used in picture exercises needs the open test.
       if (img.quiz && img.blindTest.method === 'match') problems.push(`${img.senseId}: bildövningsbild godkänd bara med matchningstest`);
+      // Kvalitetsplanen B5: a product-owner waiver is only for symbol pictures that are never used in picture exercises.
+      if (img.blindTest.result === 'waived' && (img.quiz || !img.symbol || !img.blindTest.waiver)) problems.push(`${img.senseId}: undantag (waived) bara för symbolbilder utan bildövning, med skäl`);
     }
     expect(problems).toEqual([]);
   });

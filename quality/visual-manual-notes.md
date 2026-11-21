@@ -234,3 +234,10 @@ Förslag: låt de fyra ha en enkel symbolbild som godkänns utan blindtest (`wai
 - `s.existentialism.1` → *existensen föregår essensen*
 - `s.ond-tro.1` → *ångest* och *spela en roll*
 Förslag: produktägaren avgör om paren ska räknas som synonymer (`conf.py`), om det specifikare ordet räcker som modulord, eller om de abstraktaste orden (*varande*, *handling*, *existentialism*) får en symbolbild med `waiver`.
+
+### Produktägarens beslut (2026-11-21)
+
+Alla tre förslagen är godkända och genomförda för de 22 orden:
+- **Synonymer** (`confusableWith`, resultat `synonym`): *empirisk/empirism*, *tvivla på/skeptisk*, *evidens/bevisning*, *lika möjligheter/likabehandling*, *tvång/påtvinga/tvinga*, *medvetenhet/medvetande*, *varande/existera*, *sken/skenet bedrar*, *livsuppgift/livsmål* och *existentialism/existensen föregår essensen*.
+- **Undantag** (`blindTest.result: "waived"` med skäl, bara för symbolbilder utan bildövning): *tro* (`s.tro.2`), *rättfärdiga*, *rättfärdigande*, *omoralisk*, *förnimmelse*, *handling*, *ha något att leva för*, *ond tro*, *egenvärde*, *numerisk*, *slumpförsök* och *sökning*.
+- **Det specifikare ordet som modulord**: inget ord togs bort ur sin modul. Undantaget täcker samma fall utan att ändra modulerna eller elevernas repetitionsdata.
