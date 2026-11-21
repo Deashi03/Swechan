@@ -1,0 +1,233 @@
+{
+ "entries": [
+  {
+   "id": "e.prompt",
+   "lemma": "prompt",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "prompt",
+    "defSg": "prompten",
+    "indefPl": "promptar",
+    "defPl": "promptarna"
+   },
+   "senses": [
+    {
+     "id": "s.prompt.1",
+     "ja": "プロンプト（AIへの{指示文|しじぶん}）",
+     "defSv": "Den text, fråga eller instruktion som man skriver till en AI för att få ett svar.",
+     "defJa": "{答|こた}えをもらうためにAIに{書|か}く{文章|ぶんしょう}、{質問|しつもん}、{指示|しじ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon skrev en lång prompt med tre exempel.",
+       "ja": "{彼女|かのじょ}は{三|みっ}つの{例|れい}を{入|い}れた{長|なが}いプロンプトを{書|か}きました。"
+      },
+      {
+       "sv": "Med en tydligare prompt blev bilderna mycket bättre.",
+       "ja": "プロンプトをもっとはっきりさせたら、{画像|がぞう}がずっとよくなりました。"
+      }
+     ],
+     "collocations": [
+      "skriva en prompt",
+      "en bra prompt",
+      "ändra prompten"
+     ],
+     "explanation": {
+      "sv": "En prompt är det man skriver i rutan innan man trycker på skicka. Den kan vara en kort fråga eller en lång text med bakgrund, exempel och önskemål om längd och ton. En instruktion är en del av prompten: det man vill att AI:n ska göra. Hur bra svaret blir beror mycket på hur bra prompten är.",
+      "ja": "「prompt（プロンプト）」は、{送信|そうしん}ボタンを{押|お}す{前|まえ}に{入力欄|にゅうりょくらん}に{書|か}くものです。{短|みじか}い{質問|しつもん}のこともあれば、{背景|はいけい}、{例|れい}、{長|なが}さや{口調|くちょう}の{希望|きぼう}を{含|ふく}んだ{長|なが}い{文章|ぶんしょう}のこともあります。「instruktion（{指示|しじ}）」はプロンプトの{一部|いちぶ}で、AIにしてほしいことです。{答|こた}えのよさは、プロンプトのよさに{大|おお}きく{左右|さゆう}されます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Saknas i SO som AI-term; böjning efter allmänt bruk (en prompt, prompten, promptar)."
+   }
+  },
+  {
+   "id": "e.bakgrundsinformation",
+   "lemma": "bakgrundsinformation",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "bakgrundsinformation",
+    "defSg": "bakgrundsinformationen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.bakgrundsinformation.1",
+     "ja": "{背景情報|はいけいじょうほう}",
+     "defSv": "Information om situationen kring något, som gör att man förstår det bättre.",
+     "defJa": "ある{物事|ものごと}の{周|まわ}りの{事情|じじょう}についての{情報|じょうほう}。それがあると、よりよく{理解|りかい}できる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ge AI:n lite bakgrundsinformation om kunden först.",
+       "ja": "まず、お{客|きゃく}さんについての{背景情報|はいけいじょうほう}を{少|すこ}しAIに{与|あた}えてください。"
+      },
+      {
+       "sv": "Utan bakgrundsinformationen passade svaret inte alls.",
+       "ja": "{背景情報|はいけいじょうほう}がなかったので、{答|こた}えはまったく{合|あ}っていませんでした。"
+      }
+     ],
+     "collocations": [
+      "ge bakgrundsinformation",
+      "viktig bakgrundsinformation",
+      "bakgrundsinformation om …"
+     ],
+     "explanation": {
+      "sv": "Bakgrundsinformation är det man behöver veta för att förstå en situation: vem det handlar om, vad som har hänt förut och vad målet är. En AI vet ingenting om din arbetsplats eller din kund om du inte berättar det. Därför ger man bakgrundsinformation i början av prompten, till exempel ”Jag är lärare och har elever som är 15 år”.",
+      "ja": "「bakgrundsinformation（{背景情報|はいけいじょうほう}）」は、{状況|じょうきょう}を{理解|りかい}するために{必要|ひつよう}な{情報|じょうほう}です。{誰|だれ}のことか、{前|まえ}に{何|なに}があったか、{目的|もくてき}は{何|なに}かなどです。AIは、{伝|つた}えなければあなたの{職場|しょくば}やお{客|きゃく}さんについて{何|なに}も{知|し}りません。だから、「わたしは{教師|きょうし}で、15{歳|さい}の{生徒|せいと}がいます」のように、プロンプトの{最初|さいしょ}に{背景情報|はいけいじょうほう}を{書|か}きます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.omformulera",
+   "lemma": "omformulera",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "omformulera",
+    "present": "omformulerar",
+    "past": "omformulerade",
+    "supine": "omformulerat",
+    "imperative": "omformulera",
+    "group": "1",
+    "pastParticiple": "omformulerad"
+   },
+   "senses": [
+    {
+     "id": "s.omformulera.1",
+     "ja": "{言|い}い{換|か}える、{書|か}き{直|なお}す",
+     "defSv": "Säga eller skriva samma sak med andra ord.",
+     "defJa": "{同|おな}じことを{別|べつ}の{言葉|ことば}で{言|い}ったり{書|か}いたりする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag omformulerade frågan, och då fick jag ett bättre svar.",
+       "ja": "{質問|しつもん}を{言|い}い{換|か}えたら、もっとよい{答|こた}えがもらえました。"
+      },
+      {
+       "sv": "Kan du omformulera det här stycket så att det blir enklare?",
+       "ja": "この{段落|だんらく}を、もっと{簡単|かんたん}になるように{書|か}き{直|なお}してもらえますか。"
+      }
+     ],
+     "collocations": [
+      "omformulera frågan",
+      "omformulera en mening",
+      "omformulera sig"
+     ],
+     "explanation": {
+      "sv": "Att omformulera är att behålla innehållet men byta ord eller ordning. Om en AI inte förstår vad man menar kan man omformulera prompten. Man kan också be AI:n omformulera en text så att den blir enklare eller artigare. Att förtydliga är att göra något klarare, ofta genom att lägga till något; att omformulera är att säga det på ett nytt sätt.",
+      "ja": "「omformulera」は、{内容|ないよう}はそのままで、{言葉|ことば}や{順序|じゅんじょ}を{変|か}えることです。AIが{言|い}いたいことを{理解|りかい}しないときは、プロンプトを{言|い}い{換|か}えることができます。{文章|ぶんしょう}をもっと{簡単|かんたん}に、または{丁寧|ていねい}にするよう、AIに{書|か}き{直|なお}してもらうこともできます。「förtydliga」は、たいてい{何|なに}かを{付|つ}け{加|くわ}えてはっきりさせることで、「omformulera」は{新|あたら}しい{言|い}い{方|かた}にすることです。"
+     },
+     "frame": {
+      "subject": "Hon",
+      "complement": "frågan"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.finjustera",
+   "lemma": "finjustera",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "finjustera",
+    "present": "finjusterar",
+    "past": "finjusterade",
+    "supine": "finjusterat",
+    "imperative": "finjustera",
+    "group": "1",
+    "pastParticiple": "finjusterad"
+   },
+   "senses": [
+    {
+     "id": "s.finjustera.1",
+     "ja": "{微調整|びちょうせい}する",
+     "defSv": "Göra små ändringar i något som nästan är bra, så att det blir precis som man vill.",
+     "defJa": "ほとんどよいものに{小|ちい}さな{変更|へんこう}を{加|くわ}えて、{思|おも}いどおりにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon finjusterade prompten tills svaret blev lagom långt.",
+       "ja": "{彼女|かのじょ}は、{答|こた}えがちょうどいい{長|なが}さになるまでプロンプトを{微調整|びちょうせい}しました。"
+      },
+      {
+       "sv": "Ljudet är redan bra, vi behöver bara finjustera det lite.",
+       "ja": "{音|おと}はもうよいので、{少|すこ}し{微調整|びちょうせい}するだけです。"
+      }
+     ],
+     "collocations": [
+      "finjustera prompten",
+      "finjustera detaljerna",
+      "finjustera inställningarna"
+     ],
+     "explanation": {
+      "sv": "Att finjustera är att ändra lite i taget, som när man vrider försiktigt på en knapp tills ljudet blir perfekt. Man finjusterar en prompt genom att byta ett ord, lägga till en önskan om längd eller ändra tonen, och ser hur svaret förändras. Inom AI används ordet också när man tränar en färdig modell lite till för en särskild uppgift. Skillnaden mot omformulera är att man inte skriver om allt, utan bara ändrar små detaljer.",
+      "ja": "「finjustera」は、つまみを{少|すこ}しずつ{回|まわ}して{音|おと}を{完璧|かんぺき}にするように、{少|すこ}しずつ{変|か}えていくことです。プロンプトでは、{言葉|ことば}を{一|ひと}つ{変|か}えたり、{長|なが}さの{希望|きぼう}を{加|くわ}えたり、{口調|くちょう}を{変|か}えたりして、{答|こた}えがどう{変|か}わるかを{見|み}ます。AIの{分野|ぶんや}では、できあがったモデルを{特定|とくてい}の{作業|さぎょう}のために{少|すこ}し{追加|ついか}で{学習|がくしゅう}させることにも{使|つか}います。「omformulera」との{違|ちが}いは、{全部|ぜんぶ}を{書|か}き{直|なお}すのではなく、{細|こま}かいところだけを{変|か}える{点|てん}です。"
+     },
+     "frame": {
+      "subject": "Hon",
+      "complement": "prompten"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

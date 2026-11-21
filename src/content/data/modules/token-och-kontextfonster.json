@@ -1,0 +1,168 @@
+{
+ "id": "m.token-och-kontextfonster",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Token och kontextfönster",
+ "titleJa": "トークンとコンテキストウィンドウ",
+ "descriptionSv": "Hur man förklarar varför en AI-tjänst ibland glömmer det man skrev tidigare: hur texten delas i små bitar, hur mycket som får plats på en gång och vad det betyder för kostnader och gratisversioner.",
+ "descriptionJa": "AIサービスが{前|まえ}に{書|か}いたことを{忘|わす}れてしまう{理由|りゆう}をどう{説明|せつめい}するか：{文章|ぶんしょう}がどのように{小|ちい}さな{単位|たんい}に{分|わ}けられるか、{一度|いちど}にどれだけ{入|はい}るか、そしてそれが{料金|りょうきん}や{無料版|むりょうばん}にどう{関係|かんけい}するかを{学|まな}びます。",
+ "categoryId": "R07-A02-T06",
+ "tags": [
+  "programmering",
+  "teknik",
+  "AI"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.sprakmodeller"
+ ],
+ "related": [],
+ "recommendedOrder": 3862,
+ "words": [
+  {
+   "senseId": "s.token.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tecken.3",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontextfönster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rymma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minne.2",
+   "active": false
+  },
+  {
+   "senseId": "s.överskrida.1",
+   "active": false
+  },
+  {
+   "senseId": "s.begränsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korta-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klistra-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chatthistorik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gratisversion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prenumeration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kostnad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När AI:n glömde början",
+  "paragraphs": [
+   "Yuki studerar till sjuksköterska i Umeå. Hon skulle skriva en uppsats och klistrade in tre långa artiklar i en AI-assistent. Hon bad den jämföra artiklarna, men svaret handlade nästan bara om den sista.",
+   "Hennes kurskamrat Johan, som har jobbat med datorer, förklarade varför. – Språkmodellen läser inte ord, den läser token. Den delar upp texten i små bitar. Ett kort ord är ofta en token, men ett långt svenskt ord som ”sommarstuga” kan bli flera.",
+   "– Varje tjänst har ett kontextfönster, fortsatte Johan. Det är hur många token modellen kan ta hänsyn till på en gång. Fönstret rymmer både din text och svaret. Om du överskrider gränsen hamnar början utanför. Det har inget med minnet i din dator att göra.",
+   "Yuki använde gratisversionen, och den begränsar både kontextfönstret och antalet frågor. En prenumeration hade gett mer, men kostnaden var för hög för en student. Johan föreslog i stället att hon skulle korta ner artiklarna och bara ta med de viktigaste delarna.",
+   "Hon försökte igen. Den här gången delade hon artiklarna och laddade upp dem en i taget och bad om korta jämförelser. Allt syntes i chatthistoriken, så hon kunde gå tillbaka och läsa. – Nu förstår jag, sa Yuki. Det är som tavlan i klassrummet: när den är full måste man ta bort något för att skriva nytt. Och jag måste tänka på hur många tecken jag klistrar in."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad var problemet med det första svaret?",
+    "options": [
+     "Det var på engelska",
+     "Det var för kort",
+     "Det kom aldrig",
+     "Det handlade nästan bara om den sista artikeln"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon bad den jämföra artiklarna, men svaret handlade nästan bara om den sista.",
+    "explanationJa": "{答|こた}えがほとんど{最後|さいご}の{記事|きじ}のことだけでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är ett kontextfönster enligt Johan?",
+    "options": [
+     "Ett fönster på skärmen med reklam",
+     "Hur många token modellen kan ta hänsyn till på en gång",
+     "Minnet i Yukis dator",
+     "En lista med gamla meddelanden"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det är hur många token modellen kan ta hänsyn till på en gång.",
+    "explanationJa": "モデルが{一度|いちど}に{考慮|こうりょ}できるトークンの{数|かず}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför köpte Yuki ingen prenumeration?",
+    "options": [
+     "Johan sa att den var dålig",
+     "Den fanns inte på svenska",
+     "Hon behövde inte fler frågor",
+     "Den kostade för mycket för en student"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En prenumeration hade gett mer, men kostnaden var för hög för en student.",
+    "explanationJa": "{学生|がくせい}には{費用|ひよう}が{高|たか}すぎたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ett långt svenskt ord kan bli flera token.",
+    "correct": true,
+    "explanationSv": "ett långt svenskt ord som ”sommarstuga” kan bli flera.",
+    "explanationJa": "{長|なが}いスウェーデン{語|ご}の{単語|たんご}は、いくつかのトークンになることがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den andra gången laddade Yuki upp alla artiklar samtidigt.",
+    "correct": false,
+    "explanationSv": "Den här gången delade hon artiklarna och laddade upp dem en i taget",
+    "explanationJa": "{二回目|にかいめ}は{記事|きじ}を{一|ひと}つずつアップロードしました。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om långa texter, gränser och kostnader när man använder AI-tjänster.",
+  "discussionPoints": [
+   "Har du märkt att en AI-tjänst ”glömde” något du skrev tidigare?",
+   "Använder du gratisversioner eller betalar du för några appar? Varför?",
+   "Hur gör du när en text är för lång: kortar du ner den själv eller ber du om hjälp?",
+   "Sparar du din chatthistorik, eller raderar du den?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,176 @@
+{
+ "id": "m.hallucinationer-och-faktakontroll",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Hallucinationer och faktakontroll",
+ "titleJa": "ハルシネーションとファクトチェック",
+ "descriptionSv": "Hur man beskriver när en AI hittar på fakta och hur man kontrollerar uppgifter: skillnaden mellan ett misstag och ett påhitt, hur man ifrågasätter ett svar och hur man spårar en uppgift tillbaka till där den kommer ifrån.",
+ "descriptionJa": "AIが{事実|じじつ}をでっち{上|あ}げたときの{説明|せつめい}のしかたと、{情報|じょうほう}の{確|たし}かめ{方|かた}：{単|たん}なる{間違|まちが}いと{作|つく}り{話|ばなし}の{違|ちが}い、{答|こた}えを{疑|うたが}う{方法|ほうほう}、そして{情報|じょうほう}をもとの{出所|でどころ}までたどる{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A02-T06",
+ "tags": [
+  "programmering",
+  "teknik",
+  "AI"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.taligenkanning"
+ ],
+ "related": [],
+ "recommendedOrder": 3866,
+ "words": [
+  {
+   "senseId": "s.hallucination.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hitta-på.2",
+   "active": true
+  },
+  {
+   "senseId": "s.påhittad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självsäker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övertygande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.faktafel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.påstående.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rimlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ifrågasätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.faktakontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbelkolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verifiera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.källa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.originalkälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.källhänvisning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trovärdig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.källkritik.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Domen som aldrig fanns",
+  "paragraphs": [
+   "Sofia läser juridik i Uppsala. Inför ett seminarium bad hon en AI-assistent om exempel på domar om hyresrätt. Svaret var självsäkert och övertygande: tre domar med datum, nummer och källhänvisningar. Hon kopierade in dem i sin text.",
+   "På seminariet frågade läraren var hon hade hittat den andra domen. Sofia sökte i domstolarnas databas, men domen fanns inte. AI:n hade hittat på den. Läraren förklarade att det kallas en hallucination: modellen skapar något som låter rimligt, men som är påhittat.",
+   "– Det är inte samma sak som ett vanligt faktafel, sa läraren. Ett faktafel kan vara ett felaktigt årtal i en riktig text. En hallucination kan vara en hel dom, ett citat eller en forskare som inte finns. Och den ser lika trovärdig ut som det som är sant.",
+   "Läraren gav gruppen några råd. Ifrågasätt varje påstående som du ska använda. Gör en faktakontroll av namn, siffror och datum. Dubbelkolla i en annan källa, och gå helst till originalkällan, till exempel själva domen eller lagtexten. Om du inte kan verifiera en uppgift ska du inte använda den.",
+   "Efter seminariet skrev Sofia om sin text. Nu använder hon fortfarande AI, men bara för att få idéer och förklaringar. – Källkritik har alltid varit viktigt, säger hon. Men nu måste man vara källkritisk även mot en maskin som låter som en expert."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad bad Sofia AI-assistenten om?",
+    "options": [
+     "En sammanfattning av en bok",
+     "Hjälp att boka ett seminarium",
+     "En översättning till japanska",
+     "Exempel på domar om hyresrätt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Inför ett seminarium bad hon en AI-assistent om exempel på domar om hyresrätt.",
+    "explanationJa": "{賃貸|ちんたい}{住宅|じゅうたく}の{権利|けんり}に{関|かん}する{判決|はんけつ}の{例|れい}を{頼|たの}みました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad hade hänt med den andra domen?",
+    "options": [
+     "AI:n hade hittat på den",
+     "Den var för gammal",
+     "Den var på engelska",
+     "Läraren hade skrivit den"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "AI:n hade hittat på den.",
+    "explanationJa": "AIがでっち{上|あ}げたものでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vilken skillnad gör läraren mellan ett faktafel och en hallucination?",
+    "options": [
+     "Ett faktafel är alltid farligare",
+     "En hallucination är alltid lätt att se",
+     "En hallucination kan vara en helt påhittad uppgift",
+     "Det finns ingen skillnad"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En hallucination kan vara en hel dom, ett citat eller en forskare som inte finns.",
+    "explanationJa": "ハルシネーションは、{判決|はんけつ}{全体|ぜんたい}や{存在|そんざい}しない{引用|いんよう}のように、{情報|じょうほう}そのものが{作|つく}り{話|ばなし}であることがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Läraren rådde studenterna att gå till originalkällan.",
+    "correct": true,
+    "explanationSv": "gå helst till originalkällan, till exempel själva domen eller lagtexten.",
+    "explanationJa": "できれば{一次情報源|いちじじょうほうげん}を{見|み}るように{勧|すす}めました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sofia har slutat använda AI helt.",
+    "correct": false,
+    "explanationSv": "Nu använder hon fortfarande AI, men bara för att få idéer och förklaringar.",
+    "explanationJa": "アイデアや{説明|せつめい}のためには、まだAIを{使|つか}っています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man kontrollerar information från AI och från andra källor.",
+  "discussionPoints": [
+   "Har en AI gett dig ett svar som var fel? Hur märkte du det?",
+   "Hur gör du faktakontroll när du läser nyheter på svenska?",
+   "Varför tror du att människor litar på svar som låter självsäkra?",
+   "Vilka källor tycker du är mest trovärdiga, och varför?"
+  ]
+ },
+ "standard": 2
+}

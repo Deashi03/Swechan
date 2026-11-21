@@ -1,0 +1,172 @@
+{
+ "id": "m.promptar-och-instruktioner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Promptar och instruktioner",
+ "titleJa": "プロンプトと{指示|しじ}",
+ "descriptionSv": "Hur man ber en AI om något så att svaret blir bra: hur man ger sammanhang och mål, ställer krav på form och ton och förbättrar en fråga steg för steg när svaret inte blir som man tänkt.",
+ "descriptionJa": "よい{答|こた}えが{返|かえ}ってくるようにAIに{頼|たの}むにはどうするか：{状況|じょうきょう}や{目的|もくてき}の{伝|つた}え{方|かた}、{形式|けいしき}や{口調|くちょう}の{指定|してい}のしかた、そして{答|こた}えが{思|おも}ったとおりでないときに{質問|しつもん}を{少|すこ}しずつよくしていく{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A02-T06",
+ "tags": [
+  "programmering",
+  "teknik",
+  "AI"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.token-och-kontextfonster"
+ ],
+ "related": [],
+ "recommendedOrder": 3863,
+ "words": [
+  {
+   "senseId": "s.instruktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prompt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakgrundsinformation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.målgrupp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ton.3",
+   "active": true
+  },
+  {
+   "senseId": "s.vag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konkret.1",
+   "active": true
+  },
+  {
+   "senseId": "s.precisera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.detaljerad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ange.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mall.1",
+   "active": false
+  },
+  {
+   "senseId": "s.punktlista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.följdfråga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förtydliga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omformulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.finjustera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från vag fråga till bra svar",
+  "paragraphs": [
+   "Omar jobbar på kommunikationsavdelningen på regionen i Uppsala. Han skulle skriva en text till regionens webbplats om hur man bokar vaccin. Han skrev en kort prompt: ”Skriv om vaccin.” Svaret blev långt och svårt att läsa.",
+   "Kollegan Anna tittade på skärmen. – Prompten är för vag, sa hon. AI:n vet inte vem texten är till eller vad du vill ha. Du måste vara konkret. Ge först lite bakgrundsinformation, och skriv sedan en tydlig instruktion.",
+   "Omar försökte igen. Han angav målgruppen: personer över 65 år som inte är vana vid datorer. Han bad om en vänlig ton, korta meningar och högst 150 ord. Han preciserade också vad texten skulle innehålla och bad om en punktlista med tre steg. Det nya svaret var mycket bättre och mer detaljerat på rätt sätt.",
+   "En mening var ändå svår att förstå. Omar ställde en följdfråga och bad AI:n förtydliga vad den betydde. Sedan bad han den omformulera stycket med enklare ord. Till sist finjusterade han prompten lite i taget tills texten kändes rätt.",
+   "Nu har Omar sparat prompten som en mall. Nästa gång byter han bara ämnet. – Det är som att beställa på restaurang, säger han. Om du bara säger ”mat” får du något, men inte det du ville ha."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad var fel med Omars första prompt?",
+    "options": [
+     "Den var för lång",
+     "Den var på engelska",
+     "Den innehöll för många exempel",
+     "Den var för vag"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Prompten är för vag, sa hon.",
+    "explanationJa": "プロンプトがあいまいすぎました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken målgrupp angav Omar?",
+    "options": [
+     "Barn i skolan",
+     "Personer över 65 år som inte är vana vid datorer",
+     "Läkare och sjuksköterskor",
+     "Kollegor på kontoret"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han angav målgruppen: personer över 65 år som inte är vana vid datorer.",
+    "explanationJa": "パソコンに{慣|な}れていない65{歳|さい}{以上|いじょう}の{人|ひと}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gjorde Omar när han inte förstod ett ord?",
+    "options": [
+     "Han stängde av datorn",
+     "Han ringde regionen",
+     "Han ställde en följdfråga",
+     "Han tog bort hela texten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Omar ställde en följdfråga och bad AI:n förtydliga vad det betyder.",
+    "explanationJa": "{追加|ついか}の{質問|しつもん}をしました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Omar bad om en text på högst 150 ord.",
+    "correct": true,
+    "explanationSv": "Han bad om en vänlig ton, korta meningar och högst 150 ord.",
+    "explanationJa": "150{語|ご}{以内|いない}の{文章|ぶんしょう}を{頼|たの}みました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Omar måste skriva en helt ny prompt nästa gång.",
+    "correct": false,
+    "explanationSv": "Nu har Omar sparat prompten som en mall. Nästa gång byter han bara ämnet.",
+    "explanationJa": "テンプレートとして{保存|ほぞん}したので、{話題|わだい}を{変|か}えるだけです。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man ställer bra frågor, både till människor och till AI.",
+  "discussionPoints": [
+   "Vad behöver en AI veta om dig för att kunna hjälpa dig bättre?",
+   "Har du fått ett dåligt svar för att frågan var vag? Vad hände?",
+   "Vilken ton använder du i mejl på jobbet, och vilken använder du med vänner?",
+   "Är det lättare att ställa en tydlig fråga på svenska eller på japanska?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,190 @@
+{
+ "id": "m.ai-sakerhet-och-begransningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "AI-säkerhet och begränsningar",
+ "titleJa": "AIの{安全性|あんぜんせい}と{限界|げんかい}",
+ "descriptionSv": "Hur man diskuterar riskerna med AI på jobbet och i samhällsdebatten: hur tekniken kan användas på fel sätt, vilka skydd som finns och varför det behövs regler och människor som tar ansvar.",
+ "descriptionJa": "{職場|しょくば}や{社会|しゃかい}の{議論|ぎろん}で、AIのリスクについてどう{話|はな}すか：{技術|ぎじゅつ}がどのように{悪用|あくよう}されうるか、どんな{守|まも}りがあるか、そしてなぜ{規則|きそく}と{責任|せきにん}をとる{人間|にんげん}が{必要|ひつよう}なのかを{学|まな}びます。",
+ "categoryId": "R07-A02-T06",
+ "tags": [
+  "programmering",
+  "teknik",
+  "AI"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.hallucinationer-och-faktakontroll"
+ ],
+ "related": [],
+ "recommendedOrder": 3867,
+ "words": [
+  {
+   "senseId": "s.säkerhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.risk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.begränsning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.missbruka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bedrägeri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skadlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spärr.3",
+   "active": true
+  },
+  {
+   "senseId": "s.kringgå.2",
+   "active": true
+  },
+  {
+   "senseId": "s.känslig.3",
+   "active": true
+  },
+  {
+   "senseId": "s.integritet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sekretess.1",
+   "active": false
+  },
+  {
+   "senseId": "s.transparens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mänsklig-kontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansvar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.etisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reglera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förordning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem bär ansvaret?",
+  "paragraphs": [
+   "Lisa är jurist på ett försäkringsbolag i Stockholm. I höstas fick alla anställda en ny AI-assistent. Samtidigt kom en utbildning om säkerhet. – AI är ett bra verktyg, men det finns risker, sa läraren Per. Vi måste känna till verktygets begränsningar.",
+   "Den första regeln var enkel: klistra aldrig in känsliga uppgifter, till exempel kunders hälsa eller personnummer. Kundernas integritet går före. Utbildningen handlade också om sekretess: det som kunderna berättar ska stanna i företaget. Per berättade också hur människor som vill lura andra kan missbruka AI. De gör falska röster och skriver mejl som ser äkta ut, och antalet bedrägerier ökar.",
+   "Tjänsten har spärrar som gör att den vägrar hjälpa till med skadliga saker, till exempel att skriva virus. Men Per varnade: – Det finns alltid människor som försöker kringgå spärrarna. Därför räcker det inte med teknik. Vi behöver också regler och sunt förnuft.",
+   "Många tycker att det behövs lagar som reglerar hur AI får användas. EU har en förordning om AI. Den delar in olika system med AI efter hur stor risk de innebär. Vissa användningar är förbjudna, och för system som används till viktiga beslut om människor krävs mänsklig kontroll. Förordningen kräver också transparens: man ska få veta när man pratar med en AI och inte med en människa.",
+   "Efter utbildningen diskuterade Lisa och hennes kollegor ett svårt fall. Om AI:n föreslår att en kund inte ska få ersättning, och förslaget är fel, vem bär ansvaret då? Alla var överens om att det inte kan vara maskinen. – Det etiska ansvaret är alltid vårt, sa Lisa. AI:n kan hjälpa oss, men den kan inte stå till svars."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken var den första regeln på utbildningen?",
+    "options": [
+     "Att aldrig klistra in känsliga uppgifter",
+     "Att alltid använda AI",
+     "Att byta lösenord varje dag",
+     "Att inte prata med kunder"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den första regeln var enkel: klistra aldrig in känsliga uppgifter",
+    "explanationJa": "{慎重|しんちょう}な{扱|あつか}いが{必要|ひつよう}な{情報|じょうほう}を{貼|は}り{付|つ}けないことです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur kan människor som vill lura andra missbruka AI enligt Per?",
+    "options": [
+     "De gör falska röster och skriver mejl som ser äkta ut",
+     "De stänger av internet",
+     "De säljer gamla datorer",
+     "De skriver böcker om AI"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De gör falska röster och skriver mejl som ser äkta ut",
+    "explanationJa": "{偽|にせ}の{声|こえ}を{作|つく}ったり、{本物|ほんもの}らしいメールを{書|か}いたりします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför räcker det inte med spärrar i tekniken?",
+    "options": [
+     "Spärrarna är för dyra",
+     "Lagen säger nej till spärrar",
+     "Spärrarna gör tjänsten långsam",
+     "Människor försöker kringgå dem"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det finns alltid människor som försöker kringgå spärrarna.",
+    "explanationJa": "{制限|せいげん}をかいくぐろうとする{人|ひと}がいつもいるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt EU:s förordning om AI ska man få veta när man pratar med en AI.",
+    "correct": true,
+    "explanationSv": "man ska få veta när man pratar med en AI och inte med en människa.",
+    "explanationJa": "AIと{話|はな}しているときは、それを{知|し}らされるべきです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lisa menar att AI:n kan ta ansvaret om förslaget är fel.",
+    "correct": false,
+    "explanationSv": "Det etiska ansvaret är alltid vårt, sa Lisa.",
+    "explanationJa": "{倫理的|りんりてき}な{責任|せきにん}はいつも{人間|にんげん}にあると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "EU:s AI-förordning (förordning (EU) 2024/1689) delar in AI-system efter risk, förbjuder vissa användningar och kräver mänsklig tillsyn av högrisksystem.",
+    "source": "Europeiska unionens officiella tidning (EUR-Lex), förordning (EU) 2024/1689",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Enligt AI-förordningen ska människor informeras när de interagerar med ett AI-system, om det inte är uppenbart.",
+    "source": "Förordning (EU) 2024/1689, artikel 50 (EUR-Lex)",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om risker med AI och om vem som ska ta ansvar.",
+  "discussionPoints": [
+   "Vilka risker med AI tycker du är störst?",
+   "Vilka uppgifter skulle du aldrig skriva in i en AI-tjänst?",
+   "Ska det alltid finnas mänsklig kontroll när AI fattar beslut om människor? Varför?",
+   "Hur reglerar man AI i Japan jämfört med i Sverige och EU?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,172 @@
+{
+ "id": "m.bildgenerering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Bildgenerering",
+ "titleJa": "{画像生成|がぞうせいせい}",
+ "descriptionSv": "Hur man beskriver och beställer bilder från en AI, hur man talar om stil och kvalitet, och hur man diskuterar frågor om konstnärernas rättigheter och om vad som är äkta.",
+ "descriptionJa": "AIに{画像|がぞう}を{説明|せつめい}して{頼|たの}む{方法|ほうほう}、スタイルや{品質|ひんしつ}についての{話|はな}し{方|かた}、そして{芸術家|げいじゅつか}の{権利|けんり}や{本物|ほんもの}かどうかという{問題|もんだい}についての{議論|ぎろん}のしかたを{学|まな}びます。",
+ "categoryId": "R07-A02-T06",
+ "tags": [
+  "programmering",
+  "teknik",
+  "AI"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.promptar-och-instruktioner"
+ ],
+ "related": [],
+ "recommendedOrder": 3864,
+ "words": [
+  {
+   "senseId": "s.bildgenerator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ai-genererad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motiv.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tecknad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotorealistisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.illustration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.detalj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.variant.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upplösning.2",
+   "active": false
+  },
+  {
+   "senseId": "s.redigera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konstnär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upphovsrätt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenmärke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.manipulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deepfake.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Bilden till föreningens affisch",
+  "paragraphs": [
+   "Naoko är ordförande i en förening för japaner och svenskar i Göteborg. I våras behövde föreningen en affisch till en körsbärsfest. De hade inga pengar att betala någon som ritar, så Naoko testade en bildgenerator.",
+   "Hennes första prompt var: ”Körsbärsträd i en svensk park.” Resultatet var en fotorealistisk bild som såg ut som ett vanligt foto. Motivet var rätt, men stilen passade inte en affisch. Hon ändrade prompten och bad om en tecknad bild i japansk stil, med mjuka färger.",
+   "Bildgeneratorn gjorde fyra varianter. En av dem var nästan perfekt, men om man tittade noga var det fel på några detaljer: en person hade sex fingrar, och skylten i parken hade konstiga bokstäver. Naoko redigerade bilden i ett annat program och ökade upplösningen så att den kunde skrivas ut i stort format.",
+   "På mötet var inte alla nöjda. Lars, som är konstnär och målar själv, sa: – AI:n har lärt sig av bilder som riktiga konstnärer har gjort. Vem har upphovsrätten till en AI-genererad illustration? Ingen hade något säkert svar. Föreningen bestämde att det ska stå på affischen att bilden är gjord med AI.",
+   "Naoko märkte också att gratisversionen satte ett litet vattenmärke i hörnet. – Det är kanske bra, sa hon. Det finns ju människor som manipulerar bilder och gör deepfakes för att lura andra. Då är det bra att man kan se vad som är äkta."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför använde föreningen en bildgenerator?",
+    "options": [
+     "Naoko arbetar med datorer",
+     "Föreningen ville ha en film",
+     "De hade inga pengar att betala någon som ritar",
+     "Festen var inställd"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De hade inga pengar att betala någon som ritar, så Naoko testade en bildgenerator.",
+    "explanationJa": "{絵|え}を{描|か}く{人|ひと}に{払|はら}うお{金|かね}がなかったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad var fel med den första bilden?",
+    "options": [
+     "Stilen passade inte en affisch",
+     "Motivet var fel",
+     "Den var för liten",
+     "Den hade ett vattenmärke mitt i"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Motivet var rätt, men stilen passade inte en affisch.",
+    "explanationJa": "{題材|だいざい}は{正|ただ}しかったものの、スタイルがポスターに{合|あ}いませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilka fel fanns i detaljerna?",
+    "options": [
+     "Träden var blå",
+     "Himlen var svart",
+     "En person hade sex fingrar",
+     "Parken låg i Japan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "en person hade sex fingrar",
+    "explanationJa": "{指|ゆび}が{六本|ろっぽん}ある{人|ひと}がいました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Föreningen bestämde att affischen ska visa att bilden är gjord med AI.",
+    "correct": true,
+    "explanationSv": "Föreningen bestämde att det ska stå på affischen att bilden är gjord med AI.",
+    "explanationJa": "AIで{作|つく}ったことをポスターに{書|か}くと{決|き}めました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lars tycker att det är självklart vem som har upphovsrätten till bilden.",
+    "correct": false,
+    "explanationSv": "Vem har upphovsrätten till en AI-genererad illustration? Ingen hade något säkert svar.",
+    "explanationJa": "{誰|だれ}にも{確|たし}かな{答|こた}えはありませんでした。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om AI-genererade bilder, konst och vad som är äkta.",
+  "discussionPoints": [
+   "Har du gjort en bild med en bildgenerator? Vad bad du om?",
+   "Vilken stil gillar du mest: fotorealistisk eller tecknad?",
+   "Ska konstnärer få betalt om AI lär sig av deras bilder?",
+   "Hur kan man se om en bild är äkta eller manipulerad?"
+  ]
+ },
+ "standard": 2
+}

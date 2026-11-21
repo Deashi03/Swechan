@@ -231,6 +231,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'swark.': () => import('./softwareArch').then((m) => m.SWARCH_MOTIFS),
   'dalg.': () => import('./dataAlgo').then((m) => m.DATAALG_MOTIFS),
   'mlrn.': () => import('./machineLearning').then((m) => m.ML_MOTIFS),
+  'genai.': () => import('./generativeAI').then((m) => m.GENAI_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
