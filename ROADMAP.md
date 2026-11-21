@@ -189,6 +189,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.56 – Programmering & artificiell intelligens (klar)
 - 42 nya moduler i Teknik & digital värld → Programmering & artificiell intelligens enligt standard 2, med 269 nya ordbilder varav 47 rörliga. Alla modulord har bild; *programmering* är inte längre modulord.
 
+## v0.57 – Elektronik & energi (klar)
+- 42 nya moduler i Teknik & digital värld → Elektronik & energi enligt standard 2, med 260 nya ordbilder varav 88 rörliga. Alla 39 symbolbilder godkändes i första matchningstestet.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
