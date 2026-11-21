@@ -1,17 +1,17 @@
 {
  "_comment": "Lägstanivåer för kvalitetsmåtten. Skrivs av `npm run audit:content -- --update`. Redigera inte för hand.",
  "metrics": {
-  "B2+ förväxlingsord som inte nämns": 2158,
+  "B2+ förväxlingsord som inte nämns": 2165,
   "B2+ med ett exempel": 8459,
   "B2+ utan användningsuppgift": 8059,
   "abstrakt B1 utan förklaring": 1798,
   "beskrivning som bara räknar upp orden": 1495,
   "glosa med två betydelser": 3,
-  "ord med animation": 432,
-  "ord utan bild": 431,
-  "planerad animation saknas": 139,
+  "ord med animation": 439,
+  "ord utan bild": 386,
+  "planerad animation saknas": 132,
   "poster med flera betydelser": 754,
-  "verb och processord utan animation": 3816
+  "verb och processord utan animation": 3811
  },
  "exceptions": [
   {
@@ -41,6 +41,13 @@
    "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Juridik: tolv par, mest verb och substantiv som åtal/åtala)",
    "from": 2147,
    "to": 2158
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Ekologi: sex par, till exempel genetisk/gen och miljömärkning/miljömärkt)",
+   "from": 2158,
+   "to": 2165
   }
  ]
 }
