@@ -2238,8 +2238,8 @@
   },
   {
    "id": "m.tillaga-och-servera",
-   "contentVersion": 3,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 4,
+   "updatedAt": "2026-11-21",
    "titleSv": "Tillaga och servera",
    "titleJa": "{調理|ちょうり}と{盛|も}り{付|つ}け",
    "descriptionSv": "Att tillaga, lägga upp och servera mat – och vad man säger när man bjuder gäster.",
@@ -19755,8 +19755,8 @@
   },
   {
    "id": "m.cykelns-delar",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-16",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-21",
    "titleSv": "Cykelns delar",
    "titleJa": "{自転車|じてんしゃ}の{部品|ぶひん}",
    "descriptionSv": "Cykelns delar: sadel, styre, ram, eker, framhjul, bakhjul, pakethållare, cykelkorg, cykelstöd, cykellås, cykellampa, stänkskärm, barnsits, ventil och cykelpump.",
@@ -31342,7 +31342,7 @@
   },
   {
    "id": "m.balans-mellan-aktivitet-och-aterhamtning",
-   "contentVersion": 2,
+   "contentVersion": 3,
    "updatedAt": "2026-11-21",
    "titleSv": "Balans mellan aktivitet och återhämtning",
    "titleJa": "{活動|かつどう}と{回復|かいふく}のバランス",
@@ -145474,6 +145474,657 @@
    ],
    "standard": 2,
    "bodyFile": "stromavbrott.json"
+  },
+  {
+   "id": "m.uppvarmningssystem",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Uppvärmningssystem",
+   "titleJa": "{暖房|だんぼう}システム",
+   "descriptionSv": "Hur ett hus värms upp: vilka uppvärmningssystem som finns i svenska hem, hur värmen kommer ut i rummen och vad man kan göra själv när det blir kallt inne.",
+   "descriptionJa": "{家|いえ}の{暖|あたた}め{方|かた}：スウェーデンの{家|いえ}にはどんな{暖房|だんぼう}システムがあるか、{熱|ねつ}がどのように{部屋|へや}に{届|とど}くか、そして{家|いえ}の{中|なか}が{寒|さむ}くなったときに{自分|じぶん}で{何|なに}ができるかを{学|まな}びます。",
+   "categoryId": "R07-A03-T05",
+   "tags": [
+    "energi",
+    "boende",
+    "teknik"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.stromavbrott"
+   ],
+   "related": [],
+   "recommendedOrder": 3951,
+   "words": [
+    {
+     "senseId": "s.uppvärmningssystem.1",
+     "active": true
+    },
+    {
+     "senseId": "s.uppvärmning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värmekälla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.panna.3",
+     "active": true
+    },
+    {
+     "senseId": "s.element.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elvärme.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vattenburen.1",
+     "active": false
+    },
+    {
+     "senseId": "s.golvvärme.1",
+     "active": true
+    },
+    {
+     "senseId": "s.varmvattenberedare.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kamin.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kakelugn.1",
+     "active": false
+    },
+    {
+     "senseId": "s.värma-upp.2",
+     "active": true
+    },
+    {
+     "senseId": "s.skruva-upp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lufta.2",
+     "active": true
+    },
+    {
+     "senseId": "s.inomhustemperatur.1",
+     "active": true
+    },
+    {
+     "senseId": "s.frysa.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "uppvarmningssystem.json"
+  },
+  {
+   "id": "m.varmepumpar",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Värmepumpar",
+   "titleJa": "ヒートポンプ",
+   "descriptionSv": "Hur en värmepump fungerar och vilka sorter som finns, vad man behöver tänka på när man väljer och installerar en, och hur man räknar ut om den lönar sig.",
+   "descriptionJa": "ヒートポンプのしくみと{種類|しゅるい}、{選|えら}ぶときや{設置|せっち}するときに{気|き}をつけること、そして{元|もと}が{取|と}れるかどうかの{計算|けいさん}のしかたを{学|まな}びます。",
+   "categoryId": "R07-A03-T05",
+   "tags": [
+    "energi",
+    "boende",
+    "teknik"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.uppvarmningssystem"
+   ],
+   "related": [],
+   "recommendedOrder": 3952,
+   "words": [
+    {
+     "senseId": "s.värmepump.1",
+     "active": true
+    },
+    {
+     "senseId": "s.luftvärmepump.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utedel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kompressor.1",
+     "active": true
+    },
+    {
+     "senseId": "s.köldmedium.1",
+     "active": false
+    },
+    {
+     "senseId": "s.värmefaktor.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bergvärme.1",
+     "active": true
+    },
+    {
+     "senseId": "s.borra.1",
+     "active": true
+    },
+    {
+     "senseId": "s.borrhål.1",
+     "active": false
+    },
+    {
+     "senseId": "s.utvinna.1",
+     "active": false
+    },
+    {
+     "senseId": "s.minusgrader.1",
+     "active": true
+    },
+    {
+     "senseId": "s.installera.2",
+     "active": true
+    },
+    {
+     "senseId": "s.ROT-avdrag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.investering.1",
+     "active": true
+    },
+    {
+     "senseId": "s.återbetalningstid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bullra.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pumpa-verb.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "varmepumpar.json"
+  },
+  {
+   "id": "m.fjarrvarme",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Fjärrvärme",
+   "titleJa": "{地域暖房|ちいきだんぼう}",
+   "descriptionSv": "Hur fjärrvärme fungerar, från bränslet i verket till elementen i lägenheten, och hur man kan diskutera pris och miljö när det gäller fjärrvärme.",
+   "descriptionJa": "{地域暖房|ちいきだんぼう}のしくみを、プラントの{燃料|ねんりょう}からアパートのラジエーターまで{学|まな}び、{地域暖房|ちいきだんぼう}の{料金|りょうきん}や{環境|かんきょう}について{話|はな}し{合|あ}えるようになります。",
+   "categoryId": "R07-A03-T05",
+   "tags": [
+    "energi",
+    "boende",
+    "samhälle"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.varmepumpar"
+   ],
+   "related": [],
+   "recommendedOrder": 3953,
+   "words": [
+    {
+     "senseId": "s.fjärrvärme.1",
+     "active": true
+    },
+    {
+     "senseId": "s.flis.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kraftvärmeverk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spillvärme.1",
+     "active": false
+    },
+    {
+     "senseId": "s.avfallsförbränning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sopor.1",
+     "active": true
+    },
+    {
+     "senseId": "s.biobränsle.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rörledning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.cirkulera.1",
+     "active": false
+    },
+    {
+     "senseId": "s.värmeväxlare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.varmvatten.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ansluta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.leverera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fjärrkyla.1",
+     "active": false
+    },
+    {
+     "senseId": "s.monopol.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prishöjning.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "fjarrvarme.json"
+  },
+  {
+   "id": "m.isolering-och-varmeforlust",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Isolering och värmeförlust",
+   "titleJa": "{断熱|だんねつ}と{熱損失|ねつそんしつ}",
+   "descriptionSv": "Varför ett hus förlorar värme och var det händer, hur man hittar läckorna och vad man kan göra för att isolera och täta en bostad.",
+   "descriptionJa": "{家|いえ}からなぜ、どこから{熱|ねつ}が{逃|に}げるのか、その{場所|ばしょ}をどう{見|み}つけるのか、そして{住|す}まいの{断熱|だんねつ}やすきま{対策|たいさく}として{何|なに}ができるのかを{学|まな}びます。",
+   "categoryId": "R07-A03-T05",
+   "tags": [
+    "energi",
+    "boende",
+    "teknik"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.fjarrvarme"
+   ],
+   "related": [],
+   "recommendedOrder": 3954,
+   "words": [
+    {
+     "senseId": "s.isolering.2",
+     "active": true
+    },
+    {
+     "senseId": "s.isolera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värmeförlust.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tilläggsisolera.1",
+     "active": false
+    },
+    {
+     "senseId": "s.mineralull.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vind.1",
+     "active": true
+    },
+    {
+     "senseId": "s.köldbrygga.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värmekamera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.glipa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dragig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.täta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tätningslist.1",
+     "active": true
+    },
+    {
+     "senseId": "s.treglasfönster.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kondens.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fukt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fuktskada.1",
+     "active": false
+    },
+    {
+     "senseId": "s.energideklaration.1",
+     "active": true
+    },
+    {
+     "senseId": "s.läcka.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "isolering-och-varmeforlust.json"
+  },
+  {
+   "id": "m.ventilation",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Ventilation",
+   "titleJa": "{換気|かんき}",
+   "descriptionSv": "Hur luften byts i en bostad, varför ventilationen är viktig för hälsan och för huset, och hur man pratar med hyresvärden när luften inte är bra.",
+   "descriptionJa": "{住|す}まいの{空気|くうき}がどのように{入|い}れ{替|か}わるか、{換気|かんき}が{健康|けんこう}や{家|いえ}にとってなぜ{大切|たいせつ}か、そして{空気|くうき}がよくないときに{大家|おおや}さんとどう{話|はな}すかを{学|まな}びます。",
+   "categoryId": "R07-A03-T05",
+   "tags": [
+    "energi",
+    "boende",
+    "hälsa"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.isolering-och-varmeforlust"
+   ],
+   "related": [],
+   "recommendedOrder": 3955,
+   "words": [
+    {
+     "senseId": "s.ventilation.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ventil.2",
+     "active": true
+    },
+    {
+     "senseId": "s.luftkanal.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fläkt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.suga-ut.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spisfläkt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.matos.1",
+     "active": false
+    },
+    {
+     "senseId": "s.filter.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vädra.1",
+     "active": true
+    },
+    {
+     "senseId": "s.korsdrag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.självdrag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värmeåtervinning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kvav.1",
+     "active": true
+    },
+    {
+     "senseId": "s.luftfuktighet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mögel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.radon.1",
+     "active": true
+    },
+    {
+     "senseId": "s.luftkvalitet.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "ventilation.json"
+  },
+  {
+   "id": "m.smarta-elmatare",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Smarta elmätare",
+   "titleJa": "スマートメーター",
+   "descriptionSv": "Vad en smart elmätare gör, hur man läser och förstår en elräkning och vilka företag och avgifter som finns bakom det man betalar för elen.",
+   "descriptionJa": "スマートメーターが{何|なに}をするのか、{電気代|でんきだい}の{請求書|せいきゅうしょ}をどう{読|よ}んで{理解|りかい}するのか、そして{電気|でんき}に{払|はら}うお{金|かね}の{裏|うら}にどんな{会社|かいしゃ}や{料金|りょうきん}があるのかを{学|まな}びます。",
+   "categoryId": "R07-A03-T05",
+   "tags": [
+    "energi",
+    "boende",
+    "ekonomi"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.ventilation"
+   ],
+   "related": [],
+   "recommendedOrder": 3956,
+   "words": [
+    {
+     "senseId": "s.elmätare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smart.2",
+     "active": true
+    },
+    {
+     "senseId": "s.mätarställning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.läsa-av.2",
+     "active": true
+    },
+    {
+     "senseId": "s.kilowattimme.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förbrukning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.realtid.1",
+     "active": false
+    },
+    {
+     "senseId": "s.elräkning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elavtal.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elbolag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elnätsföretag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nätavgift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.effektavgift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spotpris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rörlig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fast-pris.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elbil.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "smarta-elmatare.json"
+  },
+  {
+   "id": "m.energibesparing-i-hemmet",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Energibesparing i hemmet",
+   "titleJa": "{家庭|かてい}での{省|しょう}エネ",
+   "descriptionSv": "Hur man kan använda mindre el och värme hemma med enkla vanor och bra val när man köper apparater, och hur man pratar om råd och resultat med familjen och en rådgivare.",
+   "descriptionJa": "{簡単|かんたん}な{習慣|しゅうかん}や{家電|かでん}を{買|か}うときの{上手|じょうず}な{選|えら}び{方|かた}で、{家|いえ}で{使|つか}う{電気|でんき}や{熱|ねつ}を{減|へ}らす{方法|ほうほう}を{学|まな}び、{家族|かぞく}やアドバイザーとアドバイスや{結果|けっか}について{話|はな}せるようになります。",
+   "categoryId": "R07-A03-T05",
+   "tags": [
+    "energi",
+    "boende",
+    "miljö"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.smarta-elmatare"
+   ],
+   "related": [],
+   "recommendedOrder": 3957,
+   "words": [
+    {
+     "senseId": "s.energibesparing.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energisnål.1",
+     "active": true
+    },
+    {
+     "senseId": "s.standbyläge.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energitjuv.2",
+     "active": true
+    },
+    {
+     "senseId": "s.dra-ur.1",
+     "active": true
+    },
+    {
+     "senseId": "s.släcka.2",
+     "active": true
+    },
+    {
+     "senseId": "s.sänka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avfrosta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lock.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energimärkning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ekoprogram.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lufttorka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.snålspolande.1",
+     "active": true
+    },
+    {
+     "senseId": "s.timer.1",
+     "active": false
+    },
+    {
+     "senseId": "s.slösa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energirådgivare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energieffektiv.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "energibesparing-i-hemmet.json"
   }
  ]
 }

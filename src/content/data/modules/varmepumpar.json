@@ -1,0 +1,190 @@
+{
+ "id": "m.varmepumpar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Värmepumpar",
+ "titleJa": "ヒートポンプ",
+ "descriptionSv": "Hur en värmepump fungerar och vilka sorter som finns, vad man behöver tänka på när man väljer och installerar en, och hur man räknar ut om den lönar sig.",
+ "descriptionJa": "ヒートポンプのしくみと{種類|しゅるい}、{選|えら}ぶときや{設置|せっち}するときに{気|き}をつけること、そして{元|もと}が{取|と}れるかどうかの{計算|けいさん}のしかたを{学|まな}びます。",
+ "categoryId": "R07-A03-T05",
+ "tags": [
+  "energi",
+  "boende",
+  "teknik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.uppvarmningssystem"
+ ],
+ "related": [],
+ "recommendedOrder": 3952,
+ "words": [
+  {
+   "senseId": "s.värmepump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftvärmepump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompressor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köldmedium.1",
+   "active": false
+  },
+  {
+   "senseId": "s.värmefaktor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bergvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borrhål.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utvinna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.minusgrader.1",
+   "active": true
+  },
+  {
+   "senseId": "s.installera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ROT-avdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.investering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återbetalningstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bullra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pumpa-verb.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Värmepump eller inte?",
+  "paragraphs": [
+   "Lena och Hiroshi bor i en villa utanför Umeå. Huset har elvärme, och förra vintern var elräkningen nästan 4 000 kronor i månaden. Nu vill de köpa en värmepump. En värmepump tar värme från luften, marken eller vattnet och pumpar in den i huset.",
+   "De bjuder hem Omar, som installerar värmepumpar, och han förklarar skillnaden. – En luftvärmepump är billigast. Den har en innedel på väggen och en utedel utanför huset. Inne i pumpen finns ett köldmedium som går runt i rören, och en kompressor som trycker ihop det.",
+   "– Bergvärme kostar mer, eftersom vi måste borra ett djupt borrhål på tomten. Men då kan pumpen utvinna värme ur berget hela vintern, även när det är 25 minusgrader ute. Den har en hög värmefaktor: den ger ungefär tre gånger så mycket värme som den använder el.",
+   "Hiroshi är orolig för ljudet. – Bullrar utedelen? Grannarna har ju sitt sovrum åt det hållet. – De nya modellerna är ganska tysta, säger Omar. Vi kan installera den på husets baksida. Men med bergvärme har ni ingen utedel alls.",
+   "Lena räknar på kostnaderna. Investeringen blir lägre med ROT-avdraget, eftersom staten betalar en del av arbetskostnaden. Om elräkningen blir hälften så stor, blir återbetalningstiden ungefär sex år. – Då väljer vi bergvärme, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken uppvärmning har huset i dag?",
+    "options": [
+     "Fjärrvärme",
+     "Bergvärme",
+     "Elvärme",
+     "En kamin"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Huset har elvärme, och förra vintern var elräkningen nästan 4 000 kronor i månaden.",
+    "explanationJa": "{今|いま}は{電気暖房|でんきだんぼう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var sitter luftvärmepumpens utedel?",
+    "options": [
+     "I källaren",
+     "Utanför huset",
+     "Under golvet",
+     "På vinden"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den har en innedel på väggen och en utedel utanför huset.",
+    "explanationJa": "{室外機|しつがいき}は{家|いえ}の{外|そと}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kostar bergvärme mer än en luftvärmepump?",
+    "options": [
+     "Pumpen är större",
+     "Man måste borra ett djupt hål",
+     "Den bullrar mer",
+     "Den använder mer el"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Bergvärme kostar mer, eftersom vi måste borra ett djupt borrhål på tomten.",
+    "explanationJa": "{土地|とち}に{深|ふか}い{穴|あな}を{掘|ほ}らなければならないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Hiroshi är rädd att utedelen ska störa grannarna.",
+    "correct": true,
+    "explanationSv": "– Bullrar utedelen? Grannarna har ju sitt sovrum åt det hållet.",
+    "explanationJa": "ヒロシは{室外機|しつがいき}の{音|おと}が{隣|となり}の{人|ひと}の{迷惑|めいわく}になると{心配|しんぱい}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Tack vare ROT-avdraget blir värmepumpen gratis.",
+    "correct": false,
+    "explanationSv": "Investeringen blir lägre med ROT-avdraget, eftersom staten betalar en del av arbetskostnaden.",
+    "explanationJa": "{国|くに}が{払|はら}うのは{工事費|こうじひ}の{一部|いちぶ}だけです。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En värmepump hämtar värme från luft, mark eller vatten och ger flera gånger mer värme än den el som den använder.",
+    "source": "Energimyndigheten, Värmepumpar",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "ROT-avdraget gäller arbetskostnaden när man installerar en värmepump, inte själva pumpen.",
+    "source": "Skatteverket, Rot och rut",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om värmepumpar och andra sätt att värma upp ett hus billigt.",
+  "discussionPoints": [
+   "Finns det värmepumpar där du bor? Hur ser de ut?",
+   "Vad skulle du välja: en luftvärmepump eller bergvärme? Varför?",
+   "Har du blivit störd av något som bullrar hemma eller hos grannen?",
+   "Hur lång återbetalningstid tycker du är rimlig för en stor investering i ett hus?"
+  ]
+ },
+ "standard": 2
+}

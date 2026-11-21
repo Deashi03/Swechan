@@ -1,0 +1,190 @@
+{
+ "id": "m.smarta-elmatare",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Smarta elmätare",
+ "titleJa": "スマートメーター",
+ "descriptionSv": "Vad en smart elmätare gör, hur man läser och förstår en elräkning och vilka företag och avgifter som finns bakom det man betalar för elen.",
+ "descriptionJa": "スマートメーターが{何|なに}をするのか、{電気代|でんきだい}の{請求書|せいきゅうしょ}をどう{読|よ}んで{理解|りかい}するのか、そして{電気|でんき}に{払|はら}うお{金|かね}の{裏|うら}にどんな{会社|かいしゃ}や{料金|りょうきん}があるのかを{学|まな}びます。",
+ "categoryId": "R07-A03-T05",
+ "tags": [
+  "energi",
+  "boende",
+  "ekonomi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.ventilation"
+ ],
+ "related": [],
+ "recommendedOrder": 3956,
+ "words": [
+  {
+   "senseId": "s.elmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smart.2",
+   "active": true
+  },
+  {
+   "senseId": "s.mätarställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsa-av.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kilowattimme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbrukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.realtid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elräkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elavtal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elbolag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elnätsföretag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effektavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spotpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fast-pris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elbil.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Mätaren som skickar siffrorna själv",
+  "paragraphs": [
+   "Ingrid och Takeshi bor i ett radhus i Gävle. I somras fick de en ny elmätare. Elnätsföretaget bytte ut den gamla mätaren mot en smart elmätare som skickar mätarställningen automatiskt. Nu behöver ingen läsa av mätaren och rapportera siffrorna längre.",
+   "Med en app kan Takeshi se förbrukningen nästan i realtid. – Titta, i går använde vi fyra kilowattimmar mellan sex och sju på kvällen! säger han. Det var när de lagade mat, tvättade och laddade elbilen samtidigt.",
+   "När elräkningen kommer förstår Ingrid inte allt. Hon ringer sitt elbolag. – Vi säljer elen till er, förklarar kvinnan i telefon. Men nätavgiften betalar ni till elnätsföretaget, som äger ledningarna och mätaren. Det är två olika företag och två olika räkningar.",
+   "Elnätsföretaget har också infört en effektavgift. Den blir högre om man använder mycket el på en gång. Därför försöker Takeshi nu ladda bilen på natten och inte köra tvättmaskinen när spisen är på.",
+   "Ingrid funderar på sitt elavtal. Hon har rörligt pris, som följer spotpriset. Ibland är spotpriset nästan noll på natten, men en kall vinterkväll kan det bli mycket högt. – Ska vi ta fast pris i stället? frågar hon. – Nej, nu när vi har en smart mätare kan vi använda el när den är billig, svarar Takeshi."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem bytte elmätaren?",
+    "options": [
+     "Ingrid och Takeshi",
+     "Elbolaget",
+     "En granne",
+     "Elnätsföretaget"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Elnätsföretaget bytte ut den gamla mätaren mot en smart elmätare …",
+    "explanationJa": "{送配電事業者|そうはいでんじぎょうしゃ}がメーターを{交換|こうかん}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför använde de mycket el mellan sex och sju?",
+    "options": [
+     "De hade gäster",
+     "De lagade mat, tvättade och laddade bilen samtidigt",
+     "Elementen var trasiga",
+     "De tittade på tv"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det var när de lagade mat, tvättade och laddade elbilen samtidigt.",
+    "explanationJa": "{料理|りょうり}と{洗濯|せんたく}と{車|くるま}の{充電|じゅうでん}を{同時|どうじ}にしていたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vem betalar man nätavgiften till?",
+    "options": [
+     "Elbolaget",
+     "Staten",
+     "Elnätsföretaget",
+     "Hyresvärden"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Men nätavgiften betalar ni till elnätsföretaget, som äger ledningarna och mätaren.",
+    "explanationJa": "{送配電事業者|そうはいでんじぎょうしゃ}に{払|はら}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Effektavgiften blir lägre om man använder många apparater samtidigt.",
+    "correct": false,
+    "explanationSv": "Den blir högre om man använder mycket el på en gång.",
+    "explanationJa": "{一度|いちど}にたくさん{使|つか}うと{高|たか}くなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Takeshi vill fortsätta med rörligt pris.",
+    "correct": true,
+    "explanationSv": "– Nej, nu när vi har en smart mätare kan vi använda el när den är billig, svarar Takeshi.",
+    "explanationJa": "タケシは{変動|へんどう}{料金|りょうきん}のままでいいと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Elnätsföretaget äger elmätaren och mäter förbrukningen. Nätavgiften betalas till elnätsföretaget, som man inte kan välja, medan man själv kan välja och byta elhandelsföretag.",
+    "source": "Energimarknadsinspektionen, Elnät och elhandel",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Spotpriset på el bestäms på elbörsen och är olika under dygnet och i Sveriges fyra elområden.",
+    "source": "Energimarknadsinspektionen, Elpriset",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om elräkningar, elpriser och om hur man kan se hur mycket el man använder.",
+  "discussionPoints": [
+   "Vet du ungefär hur mycket el du använder i månaden?",
+   "Vad tycker du är bäst: fast eller rörligt elpris? Varför?",
+   "Skulle du vilja se din förbrukning i en app? Varför eller varför inte?",
+   "Hur fungerar elräkningar och elbolag i Japan?"
+  ]
+ },
+ "standard": 2
+}
