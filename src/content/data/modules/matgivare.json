@@ -1,0 +1,172 @@
+{
+ "id": "m.matgivare",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Mätgivare",
+ "titleJa": "{測定|そくてい}センサー",
+ "descriptionSv": "Du lär dig att tala om hur apparater mäter världen omkring oss: vad en givare gör, hur ett mätvärde blir en signal som sparas och vad som händer när ett värde blir för högt eller när mätningen inte stämmer.",
+ "descriptionJa": "{装置|そうち}が{身|み}の{回|まわ}りの{世界|せかい}をどう{測|はか}っているかを{話|はな}せるようになります。センサーの{働|はたら}き、{測定値|そくていち}が{信号|しんごう}になって{保存|ほぞん}されるしくみ、そして{値|あたい}が{高|たか}すぎるときや{測定|そくてい}が{正|ただ}しくないときに{何|なに}が{起|お}きるかを{学|まな}びます。",
+ "categoryId": "R07-A03-T06",
+ "tags": [
+  "el",
+  "teknik",
+  "automation"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.energibesparing-i-hemmet"
+ ],
+ "related": [],
+ "recommendedOrder": 3961,
+ "words": [
+  {
+   "senseId": "s.mätgivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sensor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.signal.2",
+   "active": true
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tryck.2",
+   "active": true
+  },
+  {
+   "senseId": "s.luftfuktighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utslag.2",
+   "active": true
+  },
+  {
+   "senseId": "s.mätområde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.noggrannhet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.mätfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kalibrera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.logga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gränsvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larma.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Husets sinnen",
+  "paragraphs": [
+   "Omar läser till drifttekniker och gör praktik hos en stor hyresvärd i Örebro. Första dagen följer han med sin handledare Karin ner i källaren på ett stort hyreshus. – Här sitter husets sinnen, säger Karin och visar en rad små lådor på väggen.",
+   "– Det här är mätgivare, förklarar hon. En mäter temperaturen på vattnet i rören, en annan mäter trycket och en tredje luftfuktigheten i källaren. Varje givare omvandlar det den mäter till en elektrisk signal som går till en dator på kontoret.",
+   "På datorn ser Omar alla mätvärden. Systemet loggar dem var femte minut, så att man kan se hur temperaturen har ändrats under dygnet. – En sensor är bara så bra som sin noggrannhet, säger Karin. Därför kalibrerar vi givarna en gång om året.",
+   "Karin visar också en gammal tryckmätare med en visare. När trycket ökar ger visaren ett tydligt utslag. – Men titta här, säger hon. Mätområdet går bara upp till sex bar. Om trycket blir högre kan mätaren inte visa det, och då får man ett mätfel.",
+   "Varje givare har ett gränsvärde. Om luftfuktigheten i källaren blir för hög larmar systemet, och Karin får ett sms. – Förra hösten läckte ett rör här nere, berättar hon. Tack vare givaren hittade vi felet innan golvet blev förstört."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad mäter givarna i källaren?",
+    "options": [
+     "Temperatur, tryck och luftfuktighet",
+     "Hur många som bor i huset",
+     "Hur mycket el lägenheterna använder",
+     "Hur mycket ljud det är i trapphuset"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En mäter temperaturen på vattnet i rören, en annan mäter trycket och en tredje luftfuktigheten i källaren.",
+    "explanationJa": "{水|みず}の{温度|おんど}、{圧力|あつりょく}、{地下室|ちかしつ}の{湿度|しつど}を{測|はか}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför kalibrerar de givarna en gång om året?",
+    "options": [
+     "För att givarna ska använda mindre el",
+     "För att hyresgästerna vill det",
+     "För att givarna annars slutar logga",
+     "För att givarna ska mäta noggrant"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En sensor är bara så bra som sin noggrannhet, säger Karin. Därför kalibrerar vi givarna en gång om året.",
+    "explanationJa": "センサーの{値|あたい}は{精度|せいど}しだいなので、{正確|せいかく}に{測|はか}れるように{毎年|まいとし}{較正|こうせい}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad händer om trycket blir högre än sex bar?",
+    "options": [
+     "Visaren ger inget utslag alls",
+     "Mätaren kan inte visa det, och det blir ett mätfel",
+     "Systemet loggar trycket oftare",
+     "Datorn stänger av vattnet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om trycket blir högre kan mätaren inte visa det, och då får man ett mätfel.",
+    "explanationJa": "{測定範囲|そくていはんい}を{超|こ}えるので、{計器|けいき}は{正|ただ}しい{値|あたい}を{示|しめ}せず、{測定|そくてい}{誤差|ごさ}になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Systemet sparar mätvärdena var femte minut.",
+    "correct": true,
+    "explanationSv": "Systemet loggar dem var femte minut.",
+    "explanationJa": "{測定値|そくていち}は5{分|ふん}ごとに{記録|きろく}されます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Karin upptäckte felet först när golvet redan var förstört.",
+    "correct": false,
+    "explanationSv": "Tack vare givaren hittade vi felet innan golvet blev förstört.",
+    "explanationJa": "センサーのおかげで、{床|ゆか}がだめになる{前|まえ}に{水漏|みずも}れを{見|み}つけました。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om mätare och givare som finns omkring er, hemma och på jobbet.",
+  "discussionPoints": [
+   "Vilka mätgivare eller sensorer finns i ditt hem, i bilen eller i telefonen?",
+   "Har du någon gång fått ett larm från en apparat? Vad hade hänt?",
+   "Vilka mätvärden tittar du själv på ibland, till exempel temperatur eller luftfuktighet?",
+   "Vad kan hända om en givare mäter fel?"
+  ]
+ },
+ "standard": 2
+}

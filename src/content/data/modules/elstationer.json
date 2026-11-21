@@ -1,0 +1,180 @@
+{
+ "id": "m.elstationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Elstationer",
+ "titleJa": "{変電所|へんでんしょ}",
+ "descriptionSv": "Du lär dig att berätta vad som händer i en elstation, från den stora transformatorstationen till nätstationen i kvarteret, och att förstå hur personalen arbetar säkert och hittar fel i nätet.",
+ "descriptionJa": "{大|おお}きな{変電所|へんでんしょ}から{住宅地|じゅうたくち}の{小|ちい}さな{変電設備|へんでんせつび}まで、{変電所|へんでんしょ}で{何|なに}が{行|おこな}われているかを{話|はな}せるようになります。また、{職員|しょくいん}がどのように{安全|あんぜん}に{働|はたら}き、{電力網|でんりょくもう}の{故障|こしょう}を{見|み}つけるのかを{学|まな}びます。",
+ "categoryId": "R07-A03-T04",
+ "tags": [
+  "el",
+  "elnät",
+  "arbete"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kraftledningar"
+ ],
+ "related": [],
+ "recommendedOrder": 3944,
+ "words": [
+  {
+   "senseId": "s.transformatorstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stängsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obehörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördela.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddsutrustning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-bort.2",
+   "active": true
+  },
+  {
+   "senseId": "s.underhåll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrstyra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driftstörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sabotage.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elförsörjning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Praktik på nätföretaget",
+  "paragraphs": [
+   "Lisa läser till ingenjör och gör praktik på ett nätföretag i Sundsvall. Första dagen besöker hon en transformatorstation utanför staden. Runt stationen står ett högt stängsel med en skylt: ”Tillträde förbjudet för obehöriga”.",
+   "– Hit kommer elen från de stora ledningarna, förklarar handledaren Per. Transformatorerna sänker spänningen och fördelar elen vidare till stadens nätstationer. En nätstation är ett litet hus i bostadsområdet, där spänningen sänks till 400 volt.",
+   "Lisa får sätta på sig skyddsutrustning: hjälm, skyddsglasögon och kläder som inte brinner lätt. Per visar hur man kopplar bort en del av stationen inför underhåll. – Vi kopplar in den igen när arbetet är klart, säger han.",
+   "På eftermiddagen är de i kontrollrummet. Därifrån övervakar personalen hela nätet och kan fjärrstyra stationerna. Plötsligt går ett larm: det är en driftstörning i en nätstation.",
+   "Det visar sig att en ekorre har tagit sig in i nätstationen och orsakat en kortslutning. – Sådant händer oftare än sabotage, säger Per och skrattar. Efter en timme fungerar elförsörjningen i området igen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står runt transformatorstationen?",
+    "options": [
+     "Ett högt stängsel",
+     "En mur av sten",
+     "Ingenting",
+     "En häck"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Runt stationen står ett högt stängsel med en skylt: ”Tillträde förbjudet för obehöriga”.",
+    "explanationJa": "{変電所|へんでんしょ}のまわりには{高|たか}いフェンスがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var sänks spänningen till 400 volt?",
+    "options": [
+     "I kontrollrummet",
+     "I en nätstation",
+     "I de stora ledningarna",
+     "I kraftverket"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "En nätstation är ett litet hus i bostadsområdet, där spänningen sänks till 400 volt.",
+    "explanationJa": "{住宅地|じゅうたくち}の{配電用|はいでんよう}の{変電設備|へんでんせつび}で400ボルトまで{下|さ}げられます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör Per inför underhållet?",
+    "options": [
+     "Han ringer polisen",
+     "Han stänger kontrollrummet",
+     "Han byter kläder",
+     "Han kopplar bort en del av stationen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Per visar hur man kopplar bort en del av stationen inför underhåll.",
+    "explanationJa": "{点検|てんけん}の{前|まえ}に、{変電所|へんでんしょ}の{一部|いちぶ}を{切|き}り{離|はな}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Personalen kan fjärrstyra stationerna från kontrollrummet.",
+    "correct": true,
+    "explanationSv": "Därifrån övervakar personalen hela nätet och kan fjärrstyra stationerna.",
+    "explanationJa": "{制御室|せいぎょしつ}から{変電所|へんでんしょ}を{遠隔操作|えんかくそうさ}できます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "cause",
+    "statementSv": "Driftstörningen berodde på sabotage.",
+    "correct": false,
+    "explanationSv": "Det visar sig att en ekorre har tagit sig in i nätstationen och orsakat en kortslutning.",
+    "explanationJa": "{原因|げんいん}は{妨害工作|ぼうがいこうさく}ではなく、リスが{起|お}こしたショートでした。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I nätstationerna transformeras spänningen ner till 400 volt mellan faserna och 230 volt i hushållens uttag.",
+    "source": "Energiföretagen Sverige, Så fungerar elnätet",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om elstationer och om att arbeta med el.",
+  "discussionPoints": [
+   "Har du sett en nätstation eller en transformatorstation nära där du bor?",
+   "Vilken skyddsutrustning använder man i ditt yrke, eller i ett yrke du känner till?",
+   "Skulle du vilja arbeta i ett kontrollrum? Varför eller varför inte?",
+   "Vad tror du händer i samhället om elförsörjningen slutar fungera?"
+  ]
+ },
+ "standard": 2
+}

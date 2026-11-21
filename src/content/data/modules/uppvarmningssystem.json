@@ -1,0 +1,184 @@
+{
+ "id": "m.uppvarmningssystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Uppvärmningssystem",
+ "titleJa": "{暖房|だんぼう}システム",
+ "descriptionSv": "Hur ett hus värms upp: vilka uppvärmningssystem som finns i svenska hem, hur värmen kommer ut i rummen och vad man kan göra själv när det blir kallt inne.",
+ "descriptionJa": "{家|いえ}の{暖|あたた}め{方|かた}：スウェーデンの{家|いえ}にはどんな{暖房|だんぼう}システムがあるか、{熱|ねつ}がどのように{部屋|へや}に{届|とど}くか、そして{家|いえ}の{中|なか}が{寒|さむ}くなったときに{自分|じぶん}で{何|なに}ができるかを{学|まな}びます。",
+ "categoryId": "R07-A03-T05",
+ "tags": [
+  "energi",
+  "boende",
+  "teknik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.stromavbrott"
+ ],
+ "related": [],
+ "recommendedOrder": 3951,
+ "words": [
+  {
+   "senseId": "s.uppvärmningssystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppvärmning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmekälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.panna.3",
+   "active": true
+  },
+  {
+   "senseId": "s.element.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenburen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.golvvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmvattenberedare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kamin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kakelugn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.värma-upp.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skruva-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lufta.2",
+   "active": true
+  },
+  {
+   "senseId": "s.inomhustemperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frysa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett kallt hus i januari",
+  "paragraphs": [
+   "Kenji och Sara har köpt en gammal villa utanför Västerås. En kväll i januari blir det strömavbrott i flera timmar, och efteråt är det kallt i huset. Inomhustemperaturen har sjunkit till 16 grader, och Sara fryser trots att hon har två tröjor på sig.",
+   "– Vilket uppvärmningssystem har vi egentligen? frågar Kenji. De går ner i källaren. Där står en gammal panna som är husets viktigaste värmekälla. Den värmer vatten som går i rör till elementen i alla rum. Det är alltså ett vattenburet system. Bredvid pannan står en varmvattenberedare.",
+   "Grannen Per kommer över och tittar. – Ni behöver lufta elementen, säger han. Det har kommit in luft i dem, och därför blir de bara varma längst ner. När de har luftat alla element och skruvat upp värmen, blir det långsamt varmare.",
+   "I badrummet finns golvvärme, och i garaget har förra ägaren haft elvärme. – Elvärme är enkelt, men det blir dyrt när elen är dyr, säger Per. I många svenska villor finns en värmepump i dag, och de flesta lägenheter värms med fjärrvärme.",
+   "I vardagsrummet står en gammal kakelugn och i köket en kamin. På kvällen eldar Kenji med ved i kaminen. Det tar några timmar att värma upp hela huset, men till slut är det 21 grader inne. – Nästa år byter vi uppvärmning, säger Sara. Men vilken uppvärmning är bäst för oss?"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför är det kallt i huset?",
+    "options": [
+     "Pannan har gått sönder",
+     "Fönstren har stått öppna",
+     "Sara har stängt av värmen",
+     "Det har varit strömavbrott i flera timmar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En kväll i januari blir det strömavbrott i flera timmar, och efteråt är det kallt i huset.",
+    "explanationJa": "{何時間|なんじかん}も{停電|ていでん}したからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör pannan i källaren?",
+    "options": [
+     "Den värmer vatten till elementen",
+     "Den tvättar kläder",
+     "Den kyler maten",
+     "Den ger huset el"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den värmer vatten som går i rör till elementen i alla rum.",
+    "explanationJa": "{配管|はいかん}を{通|とお}ってラジエーターに{行|い}く{水|みず}を{温|あたた}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir elementen bara varma längst ner?",
+    "options": [
+     "De är för små",
+     "Det har kommit in luft i dem",
+     "Pannan är avstängd",
+     "Golvvärmen är på"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det har kommit in luft i dem, och därför blir de bara varma längst ner.",
+    "explanationJa": "ラジエーターに{空気|くうき}が{入|はい}ったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kenji eldar med ved i kaminen.",
+    "correct": true,
+    "explanationSv": "På kvällen eldar Kenji med ved i kaminen.",
+    "explanationJa": "ケンジは{夜|よる}にストーブで{薪|まき}を{燃|も}やします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Huset blir varmt på några minuter.",
+    "correct": false,
+    "explanationSv": "Det tar några timmar att värma upp hela huset …",
+    "explanationJa": "{家|いえ}{全体|ぜんたい}が{暖|あたた}まるまで{数時間|すうじかん}かかります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I många svenska villor finns en värmepump, och de flesta lägenheter (flerbostadshus) värms med fjärrvärme.",
+    "source": "Energimyndigheten, Energistatistik för småhus och flerbostadshus",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man värmer upp ett hus eller en lägenhet.",
+  "discussionPoints": [
+   "Hur värms ditt hem upp: med el, fjärrvärme, en värmepump eller något annat?",
+   "Vilken inomhustemperatur tycker du är lagom?",
+   "Hur värmde man upp husen där du växte upp?",
+   "Skulle du vilja ha en kamin eller en kakelugn hemma? Varför?"
+  ]
+ },
+ "standard": 2
+}

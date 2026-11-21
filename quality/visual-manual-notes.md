@@ -247,3 +247,11 @@ Alla tre förslagen är godkända och genomförda för de 22 orden:
 - **Underkända i första omgången, godkända omritade i andra:** *undantag*, *ramverk*, *modul*, *API*, *auktorisering*, *produktionsmiljö*, *översikt*, *statistisk* (punktmoln med trendlinje lästes som regression; nu histogram med klockkurva, folkmassa och %) och *stil* (samma träd i tre stilar förväxlades med *motiv* (`s.motiv.2`, samma motiv i olika stilar); nu samma scen i akvarell med pensel och som linjeteckning med blyerts).
 - **Manuellt spår:** *kvadratisk* godkänd ("2× fler → 4× mer arbete").
 - **Underkänd också i det manuella spåret:** *programmering* (`s.programmering.1`). Omgång 1 och 2 förväxlades med *programmerare*; den handritade bilden (veckoschema med programmeringslektionen ringad) förväxlades med *programmerare*/*koda*. Ämnet är svårt att skilja från handlingen och personen. Ordet är borttaget som modulord (produktägaren lät integratören avgöra 2026-11-21; samma lösning som *mobildata* i 0.55).
+
+## 0.57 – Elektronik & energi
+
+Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närliggande bilder (bevakas vid omarbetning):
+- *elinstallation* (kopplingsschema) ↔ elektriker med certifikat; *strömförande* ↔ spänningsprovare vid uttag
+- *transformatorstation* ↔ *nätstation* (skillnaden är storleken); *synkron* ↔ rytm; *mörklagd* ↔ mörkt hus med blixt
+- *vattenburen* ↔ värmesystem med rör; *energitjuv* ↔ tv i standby
+- *signal* ↔ mätdata till skärm; *börvärde* ↔ termometrar med referenslinje; *styrsystem* ↔ kontrollrum; *precision* ↔ gripklo med ägg; *stabil* ↔ balansvåg

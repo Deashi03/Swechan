@@ -1,0 +1,188 @@
+{
+ "id": "m.kraftledningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Kraftledningar",
+ "titleJa": "{送電線|そうでんせん}",
+ "descriptionSv": "Du lär dig att beskriva hur elnätet är byggt, från stamnätets stora ledningar till kablarna fram till ditt hus, och att förstå varför många ledningar grävs ner och vad en montör gör i skogen.",
+ "descriptionJa": "{基幹送電網|きかんそうでんもう}の{大|おお}きな{送電線|そうでんせん}から{家|いえ}までのケーブルまで、{電力網|でんりょくもう}がどのようにできているかを{説明|せつめい}できるようになります。また、なぜ{多|おお}くの{電線|でんせん}が{地中|ちちゅう}に{埋|う}められるのか、{作業員|さぎょういん}が{森|もり}で{何|なに}をしているのかを{学|まな}びます。",
+ "categoryId": "R07-A03-T04",
+ "tags": [
+  "el",
+  "elnät",
+  "arbete"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.hog-och-lagspanning"
+ ],
+ "related": [],
+ "recommendedOrder": 3943,
+ "words": [
+  {
+   "senseId": "s.elnät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stamnät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lokalnät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätägare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elstolpe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jordkabel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gräva-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.montör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.isolator.2",
+   "active": true
+  },
+  {
+   "senseId": "s.koppar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överföring.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ledningsgata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röja.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ledningarna i skogen",
+  "paragraphs": [
+   "Johan är montör på ett nätföretag i Småland. Det svenska elnätet har flera nivåer. Johan arbetar med lokalnätet, de mindre ledningarna som går fram till husen. Stamnätet, med de stora kraftledningarna på 400 och 220 kilovolt, ägs av staten och förvaltas av Svenska kraftnät.",
+   "Förr hängde nästan alla ledningar i luften mellan elstolpar av trä. Men luftledningar är känsliga. När stormen Gudrun kom i januari 2005 föll miljontals träd över ledningarna, och hundratusentals människor blev utan el.",
+   "Efter stormen började nätägarna gräva ner ledningarna. I dag lägger Johans arbetslag mest jordkabel. En jordkabel klarar storm och snö mycket bättre än en luftledning.",
+   "Där det fortfarande finns luftledningar måste skogen hållas borta. Med jämna mellanrum röjer man ledningsgatan, den breda gatan utan träd under ledningen. Johan klättrar också upp i stolparna och byter trasiga isolatorer av glas eller porslin.",
+   "Ledningarna är gjorda av aluminium eller koppar. Vid överföring av el över långa avstånd förlorar man alltid lite energi. – Därför har stamnätet så hög spänning, förklarar Johan för en praktikant."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken del av elnätet arbetar Johan med?",
+    "options": [
+     "Stamnätet",
+     "Telefonnätet",
+     "Vattennätet",
+     "Lokalnätet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Johan arbetar med lokalnätet, de mindre ledningarna som går fram till husen.",
+    "explanationJa": "ヨハンは{家|いえ}まで{電気|でんき}を{届|とど}ける{配電網|はいでんもう}で{働|はたら}いています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blev så många utan el efter stormen Gudrun?",
+    "options": [
+     "Träd föll över luftledningarna",
+     "Kraftverken stängdes",
+     "Ledningarna grävdes ner",
+     "Det blev för kallt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När stormen Gudrun kom i januari 2005 föll miljontals träd över ledningarna, och hundratusentals människor blev utan el.",
+    "explanationJa": "{何百万本|なんびゃくまんぼん}もの{木|き}が{電線|でんせん}の{上|うえ}に{倒|たお}れたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör man med ledningsgatan?",
+    "options": [
+     "Man asfalterar den",
+     "Man bygger hus där",
+     "Man planterar träd där",
+     "Man röjer den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Med jämna mellanrum röjer man ledningsgatan, den breda gatan utan träd under ledningen.",
+    "explanationJa": "{定期的|ていきてき}に{木|き}を{切|き}って、{電線|でんせん}の{下|した}を{開|ひら}けた{状態|じょうたい}にします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En jordkabel klarar storm bättre än en luftledning.",
+    "correct": true,
+    "explanationSv": "En jordkabel klarar storm och snö mycket bättre än en luftledning.",
+    "explanationJa": "{地中|ちちゅう}ケーブルのほうが{嵐|あらし}に{強|つよ}いです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Stamnätet ägs av ett privat företag.",
+    "correct": false,
+    "explanationSv": "Stamnätet, med de stora kraftledningarna på 400 och 220 kilovolt, ägs av staten och förvaltas av Svenska kraftnät.",
+    "explanationJa": "{基幹送電網|きかんそうでんもう}は{国|くに}のもので、スウェーデン{国営送電会社|こくえいそうでんがいしゃ}が{管理|かんり}しています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Stamnätet har spänningen 400 eller 220 kilovolt och förvaltas av det statliga affärsverket Svenska kraftnät.",
+    "source": "Svenska kraftnät",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Stormen Gudrun i januari 2005 fällde stora mängder skog, och hundratusentals elkunder blev utan ström.",
+    "source": "SMHI; Energimarknadsinspektionen",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Efter stormen Gudrun har nätföretagen ersatt många luftledningar med jordkabel.",
+    "source": "Energimarknadsinspektionen",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om elledningar där ni bor.",
+  "discussionPoints": [
+   "Finns det luftledningar eller elstolpar där du bor?",
+   "Hänger elledningarna i luften i Japan, eller ligger de i marken?",
+   "Skulle du vilja bo nära en stor kraftledning? Varför eller varför inte?",
+   "Vilket yrke tycker du verkar intressant: montör, elektriker eller ingenjör?"
+  ]
+ },
+ "standard": 2
+}

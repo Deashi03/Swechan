@@ -1,0 +1,172 @@
+{
+ "id": "m.reglerkretsar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Reglerkretsar",
+ "titleJa": "{制御|せいぎょ}ループ",
+ "descriptionSv": "Du lär dig att förklara hur saker kan styra sig själva: hur något mäts och jämförs med ett önskat värde, vad som rättar till skillnaden och hur samma idé finns i toaletten, i bilen och i husets värme.",
+ "descriptionJa": "ものがどうやって{自分|じぶん}で{自分|じぶん}を{制御|せいぎょ}するのかを{説明|せつめい}できるようになります。{何|なに}かを{測|はか}って{目標|もくひょう}の{値|あたい}と{比|くら}べるしくみ、そのずれを{直|なお}すもの、そして{同|おな}じ{考|かんが}え{方|かた}がトイレ、{車|くるま}、{家|いえ}の{暖房|だんぼう}にもあることを{学|まな}びます。",
+ "categoryId": "R07-A03-T06",
+ "tags": [
+  "el",
+  "teknik",
+  "automation"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.matgivare"
+ ],
+ "related": [],
+ "recommendedOrder": 3962,
+ "words": [
+  {
+   "senseId": "s.reglerkrets.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reglera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styra.3",
+   "active": true
+  },
+  {
+   "senseId": "s.börvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvikelse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ventil.4",
+   "active": true
+  },
+  {
+   "senseId": "s.ställdon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flottör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattennivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.farthållare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.automatisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.manuell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.justera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-till.2",
+   "active": true
+  },
+  {
+   "senseId": "s.konstant-adj.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Toaletten och bilen",
+  "paragraphs": [
+   "Johan läser till elektriker. I dag börjar läraren Per lektionen med en fråga: – Vad har en toalett och en bil gemensamt? Ingen svarar. – Båda har en reglerkrets, säger Per och ler.",
+   "Han ritar en toalett på tavlan. I vattentanken finns en flottör. När man spolar sjunker vattennivån, och flottören följer med ner. Då öppnas en ventil och nytt vatten rinner in. När vattnet stiger, stiger också flottören, och till slut stänger den ventilen igen. – Ingen människa behöver göra något. Det är helt automatiskt, säger Per.",
+   "– En reglerkrets har alltid ett börvärde, alltså det värde man vill ha. Här är det en viss vattennivå. Något mäter hur det är just nu. Om det finns en avvikelse, alltså om mätvärdet inte stämmer med börvärdet, gör reglerkretsen något åt det. I toaletten är det flottören som både mäter och styr ventilen.",
+   "Sedan visar Per en bild av en bil. – Farthållaren reglerar hastigheten på samma sätt. Du väljer 80 kilometer i timmen. Går det uppför och bilen tappar fart, ger farthållaren mer gas. Går det nerför, gasar den mindre. Hastigheten blir nästan konstant.",
+   "– Hemma gör värmen samma sak, fortsätter Per. När det blir för kallt hör man hur pannan slår till, och ett ställdon öppnar ventilen så att varmt vatten kommer in. Förr fick man justera allt för hand. Det går fortfarande att styra manuellt, men i dag är det mesta automatiskt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör flottören när vattnet stiger?",
+    "options": [
+     "Den stiger och stänger till slut ventilen",
+     "Den sjunker och öppnar ventilen",
+     "Den spolar toaletten",
+     "Den mäter hur varmt vattnet är"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När vattnet stiger, stiger också flottören, och till slut stänger den ventilen igen.",
+    "explanationJa": "{水|みず}が{増|ふ}えるとフロートも{上|あ}がり、{最後|さいご}に{弁|べん}を{閉|し}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är börvärdet i en reglerkrets?",
+    "options": [
+     "Det värde man vill ha",
+     "Det värde som mäts just nu",
+     "Skillnaden mellan två mätningar",
+     "Priset på en reglerkrets"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En reglerkrets har alltid ett börvärde, alltså det värde man vill ha.",
+    "explanationJa": "{目標値|もくひょうち}とは、そうなってほしい{値|あたい}のことです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör farthållaren när det går uppför?",
+    "options": [
+     "Den bromsar",
+     "Den ger mer gas",
+     "Den stänger av motorn",
+     "Den väljer en lägre hastighet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Går det uppför och bilen tappar fart, ger farthållaren mer gas.",
+    "explanationJa": "{上|のぼ}り{坂|ざか}で{速度|そくど}が{落|お}ちると、アクセルを{強|つよ}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I toaletten måste någon stänga ventilen för hand.",
+    "correct": false,
+    "explanationSv": "Ingen människa behöver göra något. Det är helt automatiskt, säger Per.",
+    "explanationJa": "{人|ひと}は{何|なに}もしなくてよく、すべて{自動|じどう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Per menar att man inte kan styra värmen manuellt längre.",
+    "correct": false,
+    "explanationSv": "Det går fortfarande att styra manuellt, men i dag är det mesta automatiskt.",
+    "explanationJa": "{手動|しゅどう}の{操作|そうさ}も{残|のこ}っていますが、{今|いま}はほとんどが{自動|じどう}です。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker omkring er som styr sig själva.",
+  "discussionPoints": [
+   "Vilka apparater i ditt hem slår till och från av sig själva?",
+   "Har du kört bil med farthållare? Vad tycker du om det?",
+   "Vad gör du hellre manuellt än automatiskt?",
+   "Kan du förklara hur flottören i en toalett fungerar, på svenska eller japanska?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,192 @@
+{
+ "id": "m.frekvens-och-vaxelstrom",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Frekvens och växelström",
+ "titleJa": "{周波数|しゅうはすう}と{交流|こうりゅう}",
+ "descriptionSv": "Du lär dig att förklara vad växelström och frekvens är, varför elnätet i Sverige har 50 hertz medan Japan har två frekvenser, och varför laddaren gör om strömmen innan den når mobilen.",
+ "descriptionJa": "{交流|こうりゅう}と{周波数|しゅうはすう}が{何|なに}かを{説明|せつめい}できるようになります。スウェーデンの{電力網|でんりょくもう}が50ヘルツなのに、なぜ{日本|にほん}には{二|ふた}つの{周波数|しゅうはすう}があるのか、そして{充電器|じゅうでんき}がなぜスマホに{届|とど}く{前|まえ}に{電気|でんき}を{変|か}えるのかを{学|まな}びます。",
+ "categoryId": "R07-A03-T04",
+ "tags": [
+  "el",
+  "fysik",
+  "elnät"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.elstationer"
+ ],
+ "related": [],
+ "recommendedOrder": 3945,
+ "words": [
+  {
+   "senseId": "s.växelström.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likström.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frekvens.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hertz.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fram-och-tillbaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.period.3",
+   "active": true
+  },
+  {
+   "senseId": "s.svängning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sinuskurva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.generator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turbin.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rotera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varvtal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.synkron.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likriktare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fas.2",
+   "active": true
+  },
+  {
+   "senseId": "s.avvika.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Elnätets puls",
+  "paragraphs": [
+   "Naoko kommer från Tokyo och har bott i Uppsala i ett år. I Japan finns det något speciellt: östra Japan, med Tokyo, har en frekvens på 50 hertz, men västra Japan, med Osaka, har 60 hertz. I Sverige är frekvensen 50 hertz i hela landet.",
+   "Frekvensen visar hur ofta växelströmmen byter riktning. Strömmen går fram och tillbaka, och en period tar en femtiondels sekund. Spänningen gör alltså 50 hela svängningar varje sekund. På en skärm ser den ut som en mjuk våg, en sinuskurva.",
+   "Frekvensen bestäms av generatorerna i kraftverken. När turbinen roterar med rätt varvtal får man 50 hertz. Alla stora generatorer i Sverige, Norge, Finland och östra Danmark är synkrona: de går i exakt samma takt.",
+   "I uttaget har man växelström, men datorer och mobiler behöver likström. Därför finns det en likriktare i laddaren. Elen till huset kommer i tre faser, och en spis eller en laddare för elbilen använder ofta alla tre.",
+   "Frekvensen får bara avvika lite från 50 hertz. Om den sjunker under 49,9 hertz måste kraftverken snabbt producera mer el. – Elnätet har en puls, precis som kroppen, säger Naoko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken frekvens har elnätet i Osaka?",
+    "options": [
+     "50 hertz",
+     "230 hertz",
+     "100 hertz",
+     "60 hertz"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "östra Japan, med Tokyo, har en frekvens på 50 hertz, men västra Japan, med Osaka, har 60 hertz.",
+    "explanationJa": "{大阪|おおさか}がある{西日本|にしにほん}は60ヘルツです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång tid tar en period vid 50 hertz?",
+    "options": [
+     "En sekund",
+     "En minut",
+     "En femtiondels sekund",
+     "En halv sekund"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Strömmen går fram och tillbaka, och en period tar en femtiondels sekund.",
+    "explanationJa": "{一周期|いっしゅうき}は50{分|ぶん}の1{秒|びょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att generatorerna är synkrona?",
+    "options": [
+     "De är lika stora",
+     "De står i samma kraftverk",
+     "De är nya",
+     "De går i exakt samma takt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Alla stora generatorer i Sverige, Norge, Finland och östra Danmark är synkrona: de går i exakt samma takt.",
+    "explanationJa": "まったく{同|おな}じリズムで{動|うご}いているという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mobiler behöver växelström.",
+    "correct": false,
+    "explanationSv": "I uttaget har man växelström, men datorer och mobiler behöver likström.",
+    "explanationJa": "スマホやパソコンには{直流|ちょくりゅう}が{必要|ひつよう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Om frekvensen sjunker för mycket måste kraftverken producera mer el.",
+    "correct": true,
+    "explanationSv": "Om den sjunker under 49,9 hertz måste kraftverken snabbt producera mer el.",
+    "explanationJa": "{周波数|しゅうはすう}が{下|さ}がりすぎると、{発電所|はつでんしょ}はすぐにもっと{発電|はつでん}しなければなりません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Elnätet i Sverige har frekvensen 50 hertz och hör till det nordiska synkronområdet tillsammans med Norge, Finland och östra Danmark.",
+    "source": "Svenska kraftnät",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Östra Japan har frekvensen 50 hertz och västra Japan 60 hertz.",
+    "source": "Japans ministerium för ekonomi, handel och industri (METI)",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Frekvensen i det nordiska elnätet ska normalt hållas mellan 49,9 och 50,1 hertz.",
+    "source": "Svenska kraftnät",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om el i Sverige och i Japan.",
+  "discussionPoints": [
+   "Vet du vilken frekvens elnätet har där du kommer ifrån?",
+   "Har du tagit med en elektrisk apparat från ett annat land? Fungerade den?",
+   "Vilka apparater hemma använder likström från ett batteri?",
+   "Varför tror du att Japan har två olika frekvenser?"
+  ]
+ },
+ "standard": 2
+}

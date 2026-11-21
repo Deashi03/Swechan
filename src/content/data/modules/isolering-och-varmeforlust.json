@@ -1,0 +1,188 @@
+{
+ "id": "m.isolering-och-varmeforlust",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Isolering och värmeförlust",
+ "titleJa": "{断熱|だんねつ}と{熱損失|ねつそんしつ}",
+ "descriptionSv": "Varför ett hus förlorar värme och var det händer, hur man hittar läckorna och vad man kan göra för att isolera och täta en bostad.",
+ "descriptionJa": "{家|いえ}からなぜ、どこから{熱|ねつ}が{逃|に}げるのか、その{場所|ばしょ}をどう{見|み}つけるのか、そして{住|す}まいの{断熱|だんねつ}やすきま{対策|たいさく}として{何|なに}ができるのかを{学|まな}びます。",
+ "categoryId": "R07-A03-T05",
+ "tags": [
+  "energi",
+  "boende",
+  "teknik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.fjarrvarme"
+ ],
+ "related": [],
+ "recommendedOrder": 3954,
+ "words": [
+  {
+   "senseId": "s.isolering.2",
+   "active": true
+  },
+  {
+   "senseId": "s.isolera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeförlust.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tilläggsisolera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mineralull.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vind.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köldbrygga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmekamera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glipa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dragig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.täta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tätningslist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.treglasfönster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kondens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fukt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fuktskada.1",
+   "active": false
+  },
+  {
+   "senseId": "s.energideklaration.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läcka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett dragigt radhus",
+  "paragraphs": [
+   "Yuki och Johan har köpt ett radhus från 1970-talet i Örebro. Redan i energideklarationen stod det att huset har stora värmeförluster. Den första vintern förstår de varför: vardagsrummet är dragigt, och golvet är kallt.",
+   "Johan lånar en värmekamera av en kollega. På skärmen syns kalla blå fält runt fönstren och en köldbrygga där balkongen sitter fast i väggen. Under ytterdörren finns en glipa, och där läcker den varma luften ut.",
+   "Det första de gör är enkelt. De tätar alla fönster och sätter ny tätningslist runt ytterdörren. Det kostar bara några hundra kronor, men skillnaden märks direkt.",
+   "Sedan klättrar Johan upp på vinden. Där ligger bara tio centimeter gammal isolering. – Vi måste tilläggsisolera, säger han. De köper mineralull och lägger ett tjockt lager över den gamla isoleringen. Varm luft stiger uppåt, så det är viktigt att vinden är välisolerad.",
+   "På morgnarna är det ofta kondens på insidan av de gamla fönstren. – Om det blir fukt i väggarna kan vi få en fuktskada, säger Yuki. Nästa år vill de byta till treglasfönster, som isolerar bättre. Men de är dyra, så först måste de spara."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad stod det i energideklarationen?",
+    "options": [
+     "Att huset har nya fönster",
+     "Att vinden är välisolerad",
+     "Att huset har stora värmeförluster",
+     "Att huset har fjärrvärme"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Redan i energideklarationen stod det att huset har stora värmeförluster.",
+    "explanationJa": "{家|いえ}の{熱損失|ねつそんしつ}が{大|おお}きいと{書|か}いてありました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var syns en köldbrygga?",
+    "options": [
+     "Under ytterdörren",
+     "Där balkongen sitter fast i väggen",
+     "Mitt på taket",
+     "I badrummet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På skärmen syns kalla blå fält runt fönstren och en köldbrygga där balkongen sitter fast i väggen.",
+    "explanationJa": "バルコニーが{壁|かべ}についているところです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör de först?",
+    "options": [
+     "De köper nya fönster",
+     "De byter uppvärmning",
+     "De tätar fönstren och dörren",
+     "De säljer huset"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De tätar alla fönster och sätter ny tätningslist runt ytterdörren.",
+    "explanationJa": "{窓|まど}とドアのすきまをふさぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det kostar mycket pengar att täta fönstren.",
+    "correct": false,
+    "explanationSv": "Det kostar bara några hundra kronor, men skillnaden märks direkt.",
+    "explanationJa": "{数百|すうひゃく}クローナしかかかりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yuki är rädd att fukten ska skada huset.",
+    "correct": true,
+    "explanationSv": "– Om det blir fukt i väggarna kan vi få en fuktskada, säger Yuki.",
+    "explanationJa": "ユキは{湿気|しっけ}で{家|いえ}が{傷|いた}むことを{心配|しんぱい}しています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Ett hus som säljs eller hyrs ut ska ha en energideklaration. Den görs av en certifierad energiexpert, visar energiklass A–G och gäller i tio år.",
+    "source": "Boverket, Energideklaration; lagen (2006:985) om energideklaration för byggnader",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om dragiga och kalla bostäder och om vad man kan göra åt dem.",
+  "discussionPoints": [
+   "Har du bott i en dragig eller kall bostad? Hur var det?",
+   "Vad kan man göra själv för att hålla värmen inne?",
+   "Är husen i Japan isolerade på samma sätt som i Sverige?",
+   "Brukar du få kondens på fönstren hemma? När?"
+  ]
+ },
+ "standard": 2
+}

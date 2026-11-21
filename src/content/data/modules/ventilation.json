@@ -1,0 +1,190 @@
+{
+ "id": "m.ventilation",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Ventilation",
+ "titleJa": "{換気|かんき}",
+ "descriptionSv": "Hur luften byts i en bostad, varför ventilationen är viktig för hälsan och för huset, och hur man pratar med hyresvärden när luften inte är bra.",
+ "descriptionJa": "{住|す}まいの{空気|くうき}がどのように{入|い}れ{替|か}わるか、{換気|かんき}が{健康|けんこう}や{家|いえ}にとってなぜ{大切|たいせつ}か、そして{空気|くうき}がよくないときに{大家|おおや}さんとどう{話|はな}すかを{学|まな}びます。",
+ "categoryId": "R07-A03-T05",
+ "tags": [
+  "energi",
+  "boende",
+  "hälsa"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.isolering-och-varmeforlust"
+ ],
+ "related": [],
+ "recommendedOrder": 3955,
+ "words": [
+  {
+   "senseId": "s.ventilation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ventil.2",
+   "active": true
+  },
+  {
+   "senseId": "s.luftkanal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.suga-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spisfläkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matos.1",
+   "active": false
+  },
+  {
+   "senseId": "s.filter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vädra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korsdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeåtervinning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvav.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftfuktighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mögel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftkvalitet.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Kvav luft i lägenheten",
+  "paragraphs": [
+   "Ali och Maja hyr en lägenhet i ett hus från 1950-talet i Malmö. På vintern är luften kvav i sovrummet, och det luktar ofta matos i hela lägenheten. I badrummet har det börjat växa mögel i taket.",
+   "Ali ringer hyresvärden, och en tekniker, Sofia, kommer på besök. – Ventilationen här är gammal. Huset har självdrag, förklarar hon. Den varma luften stiger upp genom luftkanaler och går ut över taket. Ny luft ska komma in genom ventilerna ovanför fönstren. Men ni har stängt alla ventiler!",
+   "– Det drog så kallt, säger Maja. – Jag förstår, men utan ny luft blir luftfuktigheten för hög, och då trivs mögel, säger Sofia. Hon tittar också på spisfläkten. Filtret är fullt av fett, så fläkten kan inte suga ut matoset. – Diska filtret varje månad, säger hon.",
+   "Sofia berättar att huset ska renoveras nästa år. Då får det fläktar och värmeåtervinning, så att den varma luften som går ut värmer den kalla luften som kommer in. Hon mäter också radon i källaren, eftersom radon kan göra luftkvaliteten farlig utan att man märker det.",
+   "På kvällen öppnar Maja fönstren i båda ändarna av lägenheten och vädrar med korsdrag i fem minuter. – Kort och effektivt, säger Ali. Men från och med nu får ventilerna stå öppna."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är problemet i badrummet?",
+    "options": [
+     "Det växer mögel i taket",
+     "Fläkten bullrar",
+     "Det är för kallt",
+     "Vattnet är smutsigt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I badrummet har det börjat växa mögel i taket.",
+    "explanationJa": "{浴室|よくしつ}の{天井|てんじょう}にカビが{生|は}えてきました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför kommer det inte in någon ny luft?",
+    "options": [
+     "Fönstren är trasiga",
+     "Fläkten är för stark",
+     "Ventilerna är stängda",
+     "Huset har ingen vind"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Men ni har stängt alla ventiler!",
+    "explanationJa": "{換気口|かんきこう}が{全部|ぜんぶ}{閉|し}まっているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kan spisfläkten inte suga ut matoset?",
+    "options": [
+     "Fläkten är avstängd",
+     "Filtret är fullt av fett",
+     "Ventilerna är för små",
+     "Spisen är ny"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Filtret är fullt av fett, så fläkten kan inte suga ut matoset.",
+    "explanationJa": "フィルターが{油|あぶら}でいっぱいだからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Efter renoveringen ska huset få värmeåtervinning.",
+    "correct": true,
+    "explanationSv": "Då får det fläktar och värmeåtervinning …",
+    "explanationJa": "{改修|かいしゅう}のあと、{熱回収|ねつかいしゅう}がつきます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Maja har fönstren öppna hela kvällen.",
+    "correct": false,
+    "explanationSv": "På kvällen öppnar Maja fönstren i båda ändarna av lägenheten och vädrar med korsdrag i fem minuter.",
+    "explanationJa": "{窓|まど}を{開|あ}けるのは5{分間|ふんかん}だけです。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Radon är en radioaktiv gas utan lukt och färg som kan komma från marken. Referensnivån för radon i bostäder är 200 becquerel per kubikmeter luft.",
+    "source": "Strålsäkerhetsmyndigheten, Radon i bostäder",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "I ett hus med självdrag ventileras bostaden utan fläktar: varm luft stiger och går ut genom kanaler, och ny luft kommer in genom ventiler.",
+    "source": "Boverket, Ventilation",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om luften inomhus och om hur man vädrar och ventilerar en bostad.",
+  "discussionPoints": [
+   "Hur ofta vädrar du hemma? Hur gör du?",
+   "Har du haft problem med fukt, mögel eller matos?",
+   "Hur ventilerar man bostäder i Japan?",
+   "Vad tycker du är viktigast för att luften inomhus ska vara bra?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,198 @@
+{
+ "id": "m.energisystemets-miljopaverkan",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Energisystemets miljöpåverkan",
+ "titleJa": "エネルギーシステムの{環境|かんきょう}への{影響|えいきょう}",
+ "descriptionSv": "Hur olika sätt att göra el påverkar klimatet och naturen, hur man jämför energikällor under hela livscykeln och hur man kan diskutera vilka avvägningar ett energisystem kräver.",
+ "descriptionJa": "{電気|でんき}のさまざまなつくり{方|かた}が{気候|きこう}や{自然|しぜん}にどう{影響|えいきょう}するか、ライフサイクル{全体|ぜんたい}でエネルギー{源|げん}をどう{比|くら}べるか、そしてエネルギーシステムにどんな{兼|か}ね{合|あ}いが{必要|ひつよう}かをどう{話|はな}し{合|あ}うかを{学|まな}びます。",
+ "categoryId": "R07-A03-T03",
+ "tags": [
+  "energi",
+  "miljö",
+  "elproduktion"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.elproduktionens-verkningsgrad"
+ ],
+ "related": [],
+ "recommendedOrder": 3937,
+ "words": [
+  {
+   "senseId": "s.energisystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energikälla.2",
+   "active": true
+  },
+  {
+   "senseId": "s.elmix.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fossilfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsläpp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koldioxid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljöpåverkan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livscykel.2",
+   "active": false
+  },
+  {
+   "senseId": "s.gruva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvinna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingrepp.2",
+   "active": true
+  },
+  {
+   "senseId": "s.biologisk-mångfald.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klimatneutral.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ursprungsgaranti.1",
+   "active": false
+  },
+  {
+   "senseId": "s.miljömärkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvägning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Debatt om elens miljöpåverkan",
+  "paragraphs": [
+   "Erik är lärare på ett gymnasium. I dag ska hans klass diskutera hur vårt energisystem påverkar miljön. Han visar ett diagram över Sveriges elmix. Den största delen kommer från vattenkraft, kärnkraft och vindkraft.",
+   "– Svensk el är nästan helt fossilfri, säger Maja. Den ger nästan inga utsläpp av koldioxid. – Men all elproduktion har en miljöpåverkan, svarar Erik. Man måste tänka på hela livscykeln, från gruvan där man tar upp metaller till dess att man ska återvinna allt.",
+   "Oskar tycker att vindkraft är bäst, men Ida håller inte med. – En vindpark är ett stort ingrepp i naturen, säger hon. Man bygger vägar i skogen, och det kan vara dåligt för den biologiska mångfalden. Erik påminner om att vattenkraften också har gjort det svårare för fisken i älvarna.",
+   "Emma berättar att hennes familj har ett elavtal med ursprungsgaranti. – Då vet vi vilken energikälla vår el kommer ifrån, säger hon. Erik förklarar att all el blandas i elnätet, men att garantin visar att lika mycket el har gjorts med till exempel vind. Miljömärkt el har ännu fler krav.",
+   "Till sist säger Erik att ingen energikälla är helt utan problem. Det handlar alltid om en avvägning mellan klimatet, naturen och priset. Sverige vill vara klimatneutralt år 2045, och då behövs mycket mer el."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar Erik för klassen?",
+    "options": [
+     "En film om kol",
+     "En karta över elområden",
+     "Ett diagram över Sveriges elmix",
+     "En elräkning"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han visar ett diagram över Sveriges elmix.",
+    "explanationJa": "スウェーデンの{電源構成|でんげんこうせい}のグラフを{見|み}せます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad menar Erik med att man måste tänka på hela livscykeln?",
+    "options": [
+     "Man måste tänka på allt från gruvan till återvinningen",
+     "Man ska bara tänka på utsläppen när elen görs",
+     "Man ska byta elavtal varje år",
+     "Man ska bara använda el från vind"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Man måste tänka på hela livscykeln, från gruvan där man tar upp metaller till dess att man ska återvinna allt.",
+    "explanationJa": "{鉱山|こうざん}からリサイクルまで、{全体|ぜんたい}を{考|かんが}えるという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför tycker Ida att en vindpark kan vara dålig?",
+    "options": [
+     "Den ger mycket koldioxid",
+     "Den gör el av kol",
+     "Den är ett stort ingrepp i naturen",
+     "Den är för liten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– En vindpark är ett stort ingrepp i naturen, säger hon.",
+    "explanationJa": "{自然|しぜん}を{大|おお}きく{変|か}えてしまうからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Med ursprungsgaranti kommer exakt samma el från vindkraftverket hem till Emma.",
+    "correct": false,
+    "explanationSv": "Erik förklarar att all el blandas i elnätet, men att garantin visar att lika mycket el har gjorts med till exempel vind.",
+    "explanationJa": "{電気|でんき}は{送電網|そうでんもう}で{混|ま}ざります。{証明|しょうめい}は{同|おな}じ{量|りょう}がつくられたことを{示|しめ}すだけです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik tycker att det finns en energikälla som är helt utan problem.",
+    "correct": false,
+    "explanationSv": "Till sist säger Erik att ingen energikälla är helt utan problem.",
+    "explanationJa": "{問題|もんだい}のまったくないエネルギー{源|げん}はない、と{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Sveriges elproduktion är nästan helt fossilfri och kommer främst från vattenkraft, kärnkraft och vindkraft.",
+    "source": "Energimyndigheten, Energiläget (elproduktion per kraftslag)",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Energimyndigheten utfärdar ursprungsgarantier för el, en garanti per megawattimme, och elbolag använder dem för att visa varifrån den sålda elen kommer.",
+    "source": "Energimyndigheten, ”Ursprungsgarantier”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Miljömärkningen Bra Miljöval för el ställer fler krav än en ursprungsgaranti, till exempel på hänsyn till naturen.",
+    "source": "Naturskyddsföreningen, ”Bra Miljöval El”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Sveriges klimatmål är att senast år 2045 inte ha några nettoutsläpp av växthusgaser.",
+    "source": "Naturvårdsverket, ”Sveriges klimatmål och klimatpolitiska ramverk”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni diskuterar hur elproduktion påverkar klimatet och naturen.",
+  "discussionPoints": [
+   "Vilken energikälla tycker du är bäst för miljön? Varför?",
+   "Vet du vilken elmix ditt elbolag har?",
+   "Vilka ingrepp i naturen tycker du är okej för att få mer el?",
+   "Skulle du betala mer för miljömärkt el?"
+  ]
+ },
+ "standard": 2
+}

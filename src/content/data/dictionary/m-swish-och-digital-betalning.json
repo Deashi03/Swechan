@@ -136,6 +136,7 @@
        "ja": "{送金|そうきん}はすぐに{届|とど}きます。"
       }
      ],
+     "labelSv": "pengar",
      "tags": [
       "handel",
       "pengar",
@@ -144,8 +145,70 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.överföring.2",
+     "ja": "{送電|そうでん}、（データなどの）{転送|てんそう}",
+     "defSv": "När el eller signaler förs från en plats till en annan.",
+     "defJa": "{電気|でんき}や{信号|しんごう}をある{場所|ばしょ}から{別|べつ}の{場所|ばしょ}へ{送|おく}ること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vid överföring av el över långa avstånd förlorar man lite energi.",
+       "ja": "{電気|でんき}を{遠|とお}くまで{送|おく}ると、エネルギーが{少|すこ}し{失|うしな}われます。"
+      },
+      {
+       "sv": "Man kan föra över el mycket långt.",
+       "ja": "{電気|でんき}はとても{遠|とお}くまで{送|おく}ることができます。"
+      }
+     ],
+     "labelSv": "el och data",
+     "collocations": [
+      "överföring av el",
+      "överföring av data",
+      "överföringen i stamnätet"
+     ],
+     "explanation": {
+      "sv": "Överföring betyder här att el eller data skickas iväg, ofta långt. Stamnätet är byggt för överföring av el från norra till södra Sverige. Verbet är föra över eller överföra. Om pengar säger man också överföring, men då menar man att pengar flyttas från ett konto till ett annat.",
+      "ja": "ここでの「överföring」は、{電気|でんき}やデータを、たいてい{遠|とお}くまで{送|おく}ることです。{基幹送電網|きかんそうでんもう}は、スウェーデンの{北部|ほくぶ}から{南部|なんぶ}へ{電気|でんき}を{送|おく}るために{作|つく}られています。{動詞|どうし}は「föra över」または「överföra」です。お{金|かね}についても「överföring」と{言|い}いますが、その{場合|ばあい}はある{口座|こうざ}から{別|べつ}の{口座|こうざ}へお{金|かね}を{移|うつ}すことです。"
+     },
+     "tags": [
+      "el",
+      "elnät",
+      "arbete"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    },
+    {
+     "id": "s.överföring.3",
+     "ja": "（{病気|びょうき}の）{感染|かんせん}、うつること",
+     "defSv": "När en sjukdom eller ett virus går från en person eller ett djur till en annan.",
+     "defJa": "{病気|びょうき}やウイルスが、ある{人|ひと}や{動物|どうぶつ}からほかの{人|ひと}や{動物|どうぶつ}にうつること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Handtvätt minskar risken för överföring av virus.",
+       "ja": "{手|て}を{洗|あら}うと、ウイルスがうつる{危険|きけん}が{小|ちい}さくなります。"
+      }
+     ],
+     "labelSv": "smitta",
+     "tags": [
+      "hälsa",
+      "sjukdom"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.BankID",

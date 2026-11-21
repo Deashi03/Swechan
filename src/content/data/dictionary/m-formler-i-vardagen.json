@@ -104,6 +104,7 @@
        "ja": "s = v · tをtについて{解|と}きなさい。"
       }
      ],
+     "labelSv": "ekvation",
      "explanation": {
       "sv": "Att lösa ut en bokstav betyder att man skriver om en formel så att just den bokstaven står ensam. Ur s = v · t kan man lösa ut t och få t = s / v. Då kan man räkna ut tiden direkt, om man vet sträckan och hastigheten. Man säger att man löser ut en bokstav ur en formel.",
       "ja": "「lösa ut」は、ある{文字|もじ}が{一|ひと}つだけになるように{公式|こうしき}を{書|か}き{直|なお}すことです。s = v · tをtについて{解|と}くと、t = s / vになります。そうすれば、{距離|きょり}と{速|はや}さがわかれば{時間|じかん}をすぐに{計算|けいさん}できます。「lösa ut t ur formeln（{公式|こうしき}をtについて{解|と}く）」のように{言|い}います。"
@@ -118,9 +119,75 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 3
+    },
+    {
+     "id": "s.lösa-ut.2",
+     "ja": "（ブレーカーなどが）{落|お}ちる、{作動|さどう}する",
+     "defSv": "Om en säkring löser ut, slår den av strömmen automatiskt för att något är fel.",
+     "defJa": "{異常|いじょう}があったときに、ヒューズなどが{自動的|じどうてき}に{電気|でんき}を{切|き}る。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Säkringen löste ut mitt i natten.",
+       "ja": "{夜中|よなか}にブレーカーが{落|お}ちました。"
+      },
+      {
+       "sv": "Om säkringen har löst ut, kan du slå på den igen.",
+       "ja": "ブレーカーが{落|お}ちたら、また{入|い}れることができます。"
+      }
+     ],
+     "labelSv": "säkring",
+     "collocations": [
+      "jordfelsbrytaren löser ut",
+      "säkringen har löst ut"
+     ],
+     "explanation": {
+      "sv": "Om du kopplar in för många apparater på en gång eller om något läcker ström, löser säkringen eller jordfelsbrytaren ut och lamporna slocknar. Det är skyddet som fungerar, inte ett fel i sig. Om en gammal propp har gått, säger man i stället att proppen har gått. Att lösa ut en ekvation i matematik är ett helt annat ord med samma form.",
+      "ja": "{一度|いちど}にたくさんの{機械|きかい}をつないだり、{漏電|ろうでん}したりすると、ヒューズや{漏電遮断器|ろうでんしゃだんき}が「lösa ut」して{電気|でんき}が{消|き}えます。これは{安全装置|あんぜんそうち}が{働|はたら}いたということで、{故障|こしょう}そのものではありません。{古|ふる}いねじ{込|こ}み{式|しき}のヒューズなら「proppen har gått」と{言|い}います。{数学|すうがく}で{式|しき}を{解|と}く「lösa ut」は、{形|かたち}が{同|おな}じでもまったく{別|べつ}の{意味|いみ}です。"
+     },
+     "frame": {
+      "subject": "Säkringen"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "vardag"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.lösa-ut.3",
+     "ja": "（{薬|くすり}や{荷物|にもつ}を）お{金|かね}を{払|はら}って{受|う}け{取|と}る",
+     "defSv": "Betala för och hämta något som väntar på en, till exempel medicin på apoteket eller ett paket.",
+     "defJa": "{薬局|やっきょく}の{薬|くすり}や{荷物|にもつ}など、{自分|じぶん}を{待|ま}っているものをお{金|かね}を{払|はら}って{受|う}け{取|と}る。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Du kan lösa ut medicinen på vilket apotek som helst.",
+       "ja": "{薬|くすり}はどの{薬局|やっきょく}でも{受|う}け{取|と}ることができます。"
+      }
+     ],
+     "labelSv": "hämta ut",
+     "tags": [
+      "vardag",
+      "hälsa"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   }
  ]
 }

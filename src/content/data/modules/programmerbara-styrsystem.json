@@ -1,0 +1,172 @@
+{
+ "id": "m.programmerbara-styrsystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Programmerbara styrsystem",
+ "titleJa": "プログラム{可能|かのう}な{制御|せいぎょ}システム",
+ "descriptionSv": "Du lär dig att beskriva hur datorer styr pumpar, motorer och ljus i en anläggning: hur signaler kommer in och order går ut, hur man bestämmer vad som ska hända och när, och vad personalen gör när något stannar.",
+ "descriptionJa": "コンピューターが{施設|しせつ}のポンプ、モーター、{明|あ}かりをどう{制御|せいぎょ}しているかを{説明|せつめい}できるようになります。{信号|しんごう}が{入|はい}り{命令|めいれい}が{出|で}ていくしくみ、{何|なに}をいつ{起|お}こすかの{決|き}め{方|かた}、そして{何|なに}かが{止|と}まったときに{働|はたら}く{人|ひと}たちが{何|なに}をするかを{学|まな}びます。",
+ "categoryId": "R07-A03-T06",
+ "tags": [
+  "el",
+  "teknik",
+  "automation"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.termostater"
+ ],
+ "related": [],
+ "recommendedOrder": 3964,
+ "words": [
+  {
+   "senseId": "s.styrsystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.programmerbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.programmera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styrskåp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ingång.2",
+   "active": true
+  },
+  {
+   "senseId": "s.utgång.2",
+   "active": true
+  },
+  {
+   "senseId": "s.pump.2",
+   "active": true
+  },
+  {
+   "senseId": "s.villkor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.automatisera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidsstyrd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.operatör.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollrum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.larm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driftstopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underhåll.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vatten dygnet runt",
+  "paragraphs": [
+   "Ali gör praktik på ett vattenverk som ger dricksvatten till 60 000 människor. Hans handledare heter Elin. – Här får ingenting stanna, säger hon. Folk vill ha vatten i kranen dygnet runt.",
+   "Elin öppnar ett grått styrskåp. Inne i skåpet sitter styrsystemet, en liten dator med många sladdar. – Det här är ett programmerbart styrsystem, säger hon. Vi kan programmera det själva från en vanlig dator.",
+   "Till varje ingång är en mätgivare kopplad. Den mäter till exempel hur mycket vatten som finns kvar. Varje utgång går till en motor eller en pump. Programmet består av villkor: om det finns för lite vatten, starta pump ett. På så sätt har vattenverket kunnat automatisera nästan allt.",
+   "En del är också tidsstyrt. Varje natt klockan tre rengörs filtren, eftersom det går åt lite vatten då. Ali sitter en stund med Sofia, som är operatör, i kontrollrummet. På stora skärmar kan hon övervaka hela vattenverket.",
+   "Mitt i natten kommer ett larm. En pump har stannat. – Ett driftstopp här kan bli allvarligt, säger Sofia. Men vi har alltid en extra pump som startar automatiskt. På morgonen byter de en del i pumpen. – Bra underhåll är det bästa sättet att undvika problem, säger Elin."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var sitter styrsystemet?",
+    "options": [
+     "I kontrollrummets skärmar",
+     "I Alis dator",
+     "Inne i pumpen",
+     "I ett grått styrskåp"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Elin öppnar ett grått styrskåp. Inne i skåpet sitter styrsystemet …",
+    "explanationJa": "{灰色|はいいろ}の{制御盤|せいぎょばん}の{中|なか}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är kopplat till styrsystemets ingångar?",
+    "options": [
+     "Pumpar",
+     "Mätgivare",
+     "Skärmar",
+     "Filter"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Till varje ingång är en mätgivare kopplad.",
+    "explanationJa": "{入力|にゅうりょく}{端子|たんし}には{測定|そくてい}センサーがつながっています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför rengörs filtren klockan tre på natten?",
+    "options": [
+     "Operatören har tid då",
+     "Pumparna är kalla då",
+     "Det går åt lite vatten då",
+     "Elen är billigast då"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Varje natt klockan tre rengörs filtren, eftersom det går åt lite vatten då.",
+    "explanationJa": "その{時間|じかん}は{水|みず}があまり{使|つか}われないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Operatören kan se hela vattenverket på skärmar i kontrollrummet.",
+    "correct": true,
+    "explanationSv": "På stora skärmar kan hon övervaka hela vattenverket.",
+    "explanationJa": "{大|おお}きな{画面|がめん}で{浄水場|じょうすいじょう}{全体|ぜんたい}を{監視|かんし}できます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "När pumpen stannade blev det inget vatten i stadens kranar.",
+    "correct": false,
+    "explanationSv": "Men vi har alltid en extra pump som startar automatiskt.",
+    "explanationJa": "{予備|よび}のポンプが{自動的|じどうてき}に{動|うご}き{出|だ}すので、{水|みず}は{止|と}まりません。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om automatik i samhället och om jobb där man styr och övervakar maskiner.",
+  "discussionPoints": [
+   "Vilka saker omkring dig är tidsstyrda, till exempel ljus eller värme?",
+   "Skulle du vilja arbeta som operatör i ett kontrollrum? Varför eller varför inte?",
+   "Har du varit med om ett driftstopp, till exempel i tåget, banken eller på jobbet?",
+   "Vad tycker du att man inte borde automatisera?"
+  ]
+ },
+ "standard": 2
+}

@@ -215,6 +215,7 @@
        "ja": "{入|い}り{口|ぐち}は{反対側|はんたいがわ}です。"
       }
      ],
+     "labelSv": "i byggnad",
      "tags": [
       "handel",
       "butik"
@@ -222,8 +223,49 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.ingång.2",
+     "ja": "{入力|にゅうりょく}{端子|たんし}、{差込口|さしこみぐち}",
+     "defSv": "Ett ställe på en apparat där man kopplar in en sladd, så att signaler eller ström kan komma in.",
+     "defJa": "{信号|しんごう}や{電気|でんき}が{入|はい}ってくるように、{線|せん}をつなぐ{装置|そうち}の{部分|ぶぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Sladden ska sitta i ingång nummer tre.",
+       "ja": "{線|せん}は3{番|ばん}の{入力|にゅうりょく}{端子|たんし}につなぎます。"
+      },
+      {
+       "sv": "Datorn har två ingångar för skärmar.",
+       "ja": "そのパソコンには、モニター{用|よう}の{入力|にゅうりょく}{端子|たんし}が{二|ふた}つあります。"
+      }
+     ],
+     "labelSv": "på apparat",
+     "collocations": [
+      "en ingång för hörlurar",
+      "koppla till en ingång",
+      "en digital ingång"
+     ],
+     "explanation": {
+      "sv": "På en apparat är en ingång det ställe där något kommer in: en signal från en givare, ljud från en mikrofon eller bild från en dator. En utgång är tvärtom det ställe där apparaten skickar något vidare. På en tv kallas ingångarna ofta för ”källor”.",
+      "ja": "{装置|そうち}の「ingång」は、センサーからの{信号|しんごう}、マイクからの{音|おと}、パソコンからの{映像|えいぞう}などが{入|はい}ってくる{所|ところ}です。「utgång」は{反対|はんたい}に、{装置|そうち}が{何|なに}かを{送|おく}り{出|だ}す{所|ところ}です。テレビでは、{入力|にゅうりょく}{端子|たんし}はよく「källor（ソース）」と{呼|よ}ばれます。"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.utgång",
@@ -251,6 +293,7 @@
        "ja": "{出口|でぐち}のそばでお{金|かね}を{払|はら}います。"
       }
      ],
+     "labelSv": "i byggnad",
      "tags": [
       "handel",
       "butik"
@@ -258,8 +301,75 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.utgång.2",
+     "ja": "{出力|しゅつりょく}{端子|たんし}",
+     "defSv": "Ett ställe på en apparat där signaler eller ström går ut till något annat, till exempel en motor eller en lampa.",
+     "defJa": "{信号|しんごう}や{電気|でんき}が、モーターやランプなどほかのものへ{出|で}ていく{装置|そうち}の{部分|ぶぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Sladden till lampan sitter i utgång fyra.",
+       "ja": "ランプの{線|せん}は4{番|ばん}の{出力|しゅつりょく}{端子|たんし}につながっています。"
+      },
+      {
+       "sv": "Styrsystemet har sexton utgångar.",
+       "ja": "その{制御|せいぎょ}システムには16の{出力|しゅつりょく}{端子|たんし}があります。"
+      }
+     ],
+     "labelSv": "på apparat",
+     "collocations": [
+      "en utgång för högtalare",
+      "koppla en lampa till en utgång",
+      "en digital utgång"
+     ],
+     "explanation": {
+      "sv": "En utgång skickar något från apparaten: ström till en motor, ljud till högtalare eller en signal till en lampa. Ingången tar emot det som kommer in. I ett styrsystem är givarna kopplade till ingångarna och motorerna till utgångarna.",
+      "ja": "「utgång」は{装置|そうち}から{何|なに}かを{送|おく}り{出|だ}します。モーターへの{電気|でんき}、スピーカーへの{音|おと}、ランプへの{信号|しんごう}などです。「ingång」は{入|はい}ってくるものを{受|う}け{取|と}ります。{制御|せいぎょ}システムでは、センサーは{入力|にゅうりょく}{端子|たんし}に、モーターは{出力|しゅつりょく}{端子|たんし}につながります。"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.utgång.3",
+     "ja": "（{期間|きかん}の）{終|お}わり",
+     "defSv": "Slutet på en tid, till exempel ett år eller ett avtal.",
+     "defJa": "{一年|いちねん}や{契約|けいやく}などの{期間|きかん}の{終|お}わり。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Avtalet gäller till årets utgång.",
+       "ja": "その{契約|けいやく}は{年末|ねんまつ}まで{有効|ゆうこう}です。"
+      }
+     ],
+     "labelSv": "slut",
+     "collocations": [
+      "vid årets utgång",
+      "till månadens utgång"
+     ],
+     "register": "formal",
+     "tags": [
+      "vardag"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.längst-in",

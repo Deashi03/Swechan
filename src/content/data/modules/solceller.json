@@ -1,0 +1,192 @@
+{
+ "id": "m.solceller",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Solceller",
+ "titleJa": "{太陽電池|たいようでんち}",
+ "descriptionSv": "Hur solceller på ett hus gör el av solljus, vad som påverkar hur mycket el de ger och hur man räknar på om det lönar sig att göra och sälja sin egen el.",
+ "descriptionJa": "{家|いえ}の{太陽電池|たいようでんち}が{太陽|たいよう}の{光|ひかり}からどうやって{電気|でんき}をつくるか、{発電量|はつでんりょう}は{何|なに}によって{変|か}わるか、そして{自分|じぶん}で{電気|でんき}をつくって{売|う}るのが{得|とく}かどうかをどう{計算|けいさん}するかを{学|まな}びます。",
+ "categoryId": "R07-A03-T03",
+ "tags": [
+  "energi",
+  "teknik",
+  "elproduktion"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.vindkraftverk"
+ ],
+ "related": [],
+ "recommendedOrder": 3933,
+ "words": [
+  {
+   "senseId": "s.solenergi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solcell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solpanel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.söderläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skugga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.molnig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solcellsanläggning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.installera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.växelriktare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elnät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överskott.2",
+   "active": true
+  },
+  {
+   "senseId": "s.elbolag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikroproducent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.löna-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återbetalningstid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.solfångare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Solceller på villan",
+  "paragraphs": [
+   "Naoko och Anders bor i en villa med ett stort tak i söderläge. Elpriset har varit högt, och nu funderar de på solenergi. En säljare kommer hem till dem för att titta på taket.",
+   "– Ert tak passar bra för solceller, säger säljaren. Det blir ingen skugga från träden. Men solpanelerna gör mindre el när det är molnigt, och mitt i vintern blir det nästan ingenting.",
+   "Säljaren berättar hur en solcellsanläggning fungerar. Två elektriker kommer och installerar panelerna på en dag. Elen från panelerna går till en växelriktare i garaget. Den gör om elen, så att familjen kan använda den i huset.",
+   "På sommaren gör panelerna ofta mer el än familjen använder. Då går överskottet ut på elnätet, och elbolaget betalar för det. Familjen blir alltså mikroproducent. – Men kommer det att löna sig? frågar Anders. Säljaren räknar och säger att återbetalningstiden är ungefär tolv år.",
+   "Naoko frågar om en solfångare också. – En solfångare ger bara varmt vatten, inte el, svarar säljaren. Till slut väljer de solceller. Nu tittar Naoko i appen varje kväll och ser hur mycket el taket har gjort."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför funderar Naoko och Anders på solenergi?",
+    "options": [
+     "De har fått ett nytt tak",
+     "Elpriset har varit högt",
+     "Säljaren är en vän",
+     "Huset har ingen el"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Elpriset har varit högt, och nu funderar de på solenergi.",
+    "explanationJa": "{電気料金|でんきりょうきん}が{高|たか}かったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När gör solpanelerna minst el?",
+    "options": [
+     "Mitt i vintern",
+     "På sommaren",
+     "När det är soligt",
+     "På dagen i juni"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Men solpanelerna gör mindre el när det är molnigt, och mitt i vintern blir det nästan ingenting.",
+    "explanationJa": "{真冬|まふゆ}にはほとんど{発電|はつでん}しません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör växelriktaren?",
+    "options": [
+     "Den värmer vatten till duschen",
+     "Den räknar ut återbetalningstiden",
+     "Den tar bort skuggan på taket",
+     "Den gör om elen så att den kan användas i huset"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den gör om elen, så att familjen kan använda den i huset.",
+    "explanationJa": "{家|いえ}で{使|つか}えるように{電気|でんき}を{変換|へんかん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Familjen kan sälja el som de inte använder själva.",
+    "correct": true,
+    "explanationSv": "Då går överskottet ut på elnätet, och elbolaget betalar för det.",
+    "explanationJa": "{余|あま}った{電気|でんき}は{電力会社|でんりょくがいしゃ}が{買|か}い{取|と}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En solfångare hade gett familjen el till huset.",
+    "correct": false,
+    "explanationSv": "– En solfångare ger bara varmt vatten, inte el, svarar säljaren.",
+    "explanationJa": "{太陽熱温水器|たいようねつおんすいき}はお{湯|ゆ}をつくるだけで、{電気|でんき}はつくりません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Solceller i Sverige ger mest el mellan april och september och mycket lite mitt i vintern.",
+    "source": "Energimyndigheten, ”Solceller” (solel över året)",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Den som säljer överskottsel från sina solceller behöver ett avtal med ett elhandelsföretag som köper elen.",
+    "source": "Energimarknadsinspektionen, ”Sälja egenproducerad el”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "En solfångare värmer vatten, medan solceller gör el.",
+    "source": "Energimyndigheten, ”Solvärme”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om solceller och om att göra sin egen el.",
+  "discussionPoints": [
+   "Har du eller någon du känner solceller på taket?",
+   "Skulle du vilja bli mikroproducent? Varför?",
+   "Hur lång återbetalningstid tycker du är rimlig?",
+   "Är solceller vanliga i ditt hemland?"
+  ]
+ },
+ "standard": 2
+}

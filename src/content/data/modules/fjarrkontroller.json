@@ -1,0 +1,180 @@
+{
+ "id": "m.fjarrkontroller",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Fjärrkontroller",
+ "titleJa": "リモコン",
+ "descriptionSv": "Hur man pratar om att styra apparater på avstånd: fjärrkontroller och deras knappar, tv-tittande hemma, vad man gör när fjärrkontrollen inte fungerar och andra saker som man styr med en kontroll eller en app.",
+ "descriptionJa": "{離|はな}れたところから{機器|きき}を{操作|そうさ}することについての{話|はな}し{方|かた}：リモコンとそのボタン、{家|いえ}でのテレビの{見方|みかた}、リモコンが{動|うご}かないときにすること、そしてコントローラーやアプリで{操作|そうさ}するほかの{物|もの}について{学|まな}びます。",
+ "categoryId": "R07-A03-T02",
+ "tags": [
+  "elektronik",
+  "teknik",
+  "hemma"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hogtalare-och-mikrofoner"
+ ],
+ "related": [],
+ "recommendedOrder": 3926,
+ "words": [
+  {
+   "senseId": "s.fjärrkontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trycka-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kanal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smart-tv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tv-box.1",
+   "active": true
+  },
+  {
+   "senseId": "s.universalfjärrkontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.zappa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volymknapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knappsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rikta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.infraröd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mottagare.2",
+   "active": false
+  },
+  {
+   "senseId": "s.sätta-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radiostyrd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räckvidd.3",
+   "active": false
+  },
+  {
+   "senseId": "s.fjärrstart.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Var är fjärrkontrollen?",
+  "paragraphs": [
+   "Hemma hos Aiko och Erik finns det många fjärrkontroller. En hör till tv:n, en till tv-boxen och en till högtalarna. Erik vill köpa en universalfjärrkontroll som kan styra allt.",
+   "Familjen har en smart-tv, så de kan titta både på vanliga kanaler och på appar. På kvällen sitter Erik i soffan och zappar mellan kanalerna. – Bestäm dig nu! säger Aiko. Hon tar fjärrkontrollen och trycker på volymknappen för att sänka ljudet. Sedan använder hon knappsatsen och skriver in numret till sin favoritkanal.",
+   "Plötsligt fungerar inte fjärrkontrollen. Erik riktar den mot tv:n och trycker igen, men ingenting händer. Mia förklarar att fjärrkontrollen skickar infrarött ljus som ögat inte kan se, och att mottagaren sitter längst ner på tv:n. Hon tittar på fjärrkontrollen genom kameran i mobilen, men ingen lampa lyser. Batterierna är slut. Erik sätter i nya batterier, och då fungerar den igen.",
+   "Leo leker med sin radiostyrda bil i hallen. Den har mycket längre räckvidd än fjärrkontrollen till tv:n, för den använder radiosignaler och fungerar även bakom en vägg.",
+   "En kall morgon i januari använder Erik en annan sorts fjärrkontroll: en app i mobilen. Med fjärrstarten sätter han på värmaren i bilen redan vid frukosten. När han går ut är bilen varm."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Erik köpa en universalfjärrkontroll?",
+    "options": [
+     "Den är billigare",
+     "Den gamla är stulen",
+     "Den har större knappar",
+     "Den kan styra alla apparater"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Erik vill köpa en universalfjärrkontroll som kan styra allt.",
+    "explanationJa": "{一|ひと}つですべての{機器|きき}を{操作|そうさ}できるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad gör Erik när han zappar?",
+    "options": [
+     "Han stänger av tv:n",
+     "Han sänker ljudet",
+     "Han byter kanal hela tiden",
+     "Han byter batterier"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "På kvällen sitter Erik i soffan och zappar mellan kanalerna.",
+    "explanationJa": "チャンネルを{次々|つぎつぎ}に{変|か}えています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför fungerar inte fjärrkontrollen?",
+    "options": [
+     "Tv:n är trasig",
+     "Mottagaren är smutsig",
+     "Batterierna är slut",
+     "Mia har gömt den"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Batterierna är slut.",
+    "explanationJa": "{電池|でんち}が{切|き}れていたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Leos bil fungerar inte bakom en vägg.",
+    "correct": false,
+    "explanationSv": "Den har mycket längre räckvidd än fjärrkontrollen till tv:n, för den använder radiosignaler och fungerar även bakom en vägg.",
+    "explanationJa": "{電波|でんぱ}を{使|つか}うので、{壁|かべ}の{後|うし}ろでも{動|うご}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Erik startar värmaren i bilen innan han går ut.",
+    "correct": true,
+    "explanationSv": "Med fjärrstarten sätter han på värmaren i bilen redan vid frukosten.",
+    "explanationJa": "{朝食|ちょうしょく}のときに、もうエンジンヒーターをつけています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En vanlig fjärrkontroll till en tv skickar signaler med infrarött ljus, som inte syns för ögat.",
+    "source": "Nationalencyklopedin, uppslaget ”fjärrkontroll”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fjärrkontroller och apparater som man styr på avstånd.",
+  "discussionPoints": [
+   "Hur många fjärrkontroller har du hemma?",
+   "Brukar du zappa, eller vet du vad du vill se?",
+   "Vilka apparater styr du med en app i mobilen?",
+   "Har du lekt med radiostyrda bilar eller flygplan?"
+  ]
+ },
+ "standard": 2
+}

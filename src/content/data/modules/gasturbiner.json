@@ -1,0 +1,190 @@
+{
+ "id": "m.gasturbiner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Gasturbiner",
+ "titleJa": "ガスタービン",
+ "descriptionSv": "Hur en gasturbin gör el genom förbränning av gas eller olja, varför den används som reservkraft när elen inte räcker och vad bränslet betyder för utsläppen.",
+ "descriptionJa": "ガスタービンがガスや{石油|せきゆ}を{燃|も}やしてどうやって{電気|でんき}をつくるか、なぜ{電気|でんき}が{足|た}りないときの{予備電源|よびでんげん}として{使|つか}われるのか、そして{燃料|ねんりょう}が{排出|はいしゅつ}にどう{関係|かんけい}するかを{学|まな}びます。",
+ "categoryId": "R07-A03-T03",
+ "tags": [
+  "energi",
+  "teknik",
+  "elproduktion"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.karnkraftverk"
+ ],
+ "related": [],
+ "recommendedOrder": 3935,
+ "words": [
+  {
+   "senseId": "s.bränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fossilt-bränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.naturgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biogas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vätgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbränning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kompressor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.driva.3",
+   "active": true
+  },
+  {
+   "senseId": "s.starta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gasturbin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skorsten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.strömavbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.planerbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effekttopp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.underhåll.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En kall morgon i januari",
+  "paragraphs": [
+   "Det är januari och minus 25 grader. Elin jobbar på ett företag som har gasturbiner som reservkraft för elnätet. Klockan sju på morgonen ringer telefonen: ett stort kärnkraftverk har stannat, och det är en effekttopp i hela landet.",
+   "Elin startar gasturbinerna. – En gasturbin kan starta på några minuter, förklarar hon för sin nya kollega Ali. Den är planerbar, precis som vattenkraft. Vind och sol kan vi inte styra på samma sätt.",
+   "Gasturbinen fungerar ungefär som motorn på ett flygplan. En kompressor trycker ihop luft, och sedan kommer bränslet in. Förbränningen ger heta gaser som driver turbinen, och turbinen driver en generator.",
+   "Här är bränslet olja, ett fossilt bränsle, men många gasturbiner drivs med naturgas. Avgaserna går ut genom en hög skorsten. – Det ger utsläpp, så vi kör bara när det behövs, säger Elin. I framtiden kan turbinerna kanske drivas med biogas eller vätgas.",
+   "Efter tre timmar fungerar kärnkraftverket igen, och gasturbinerna stängs av. Ingen fick strömavbrott. På eftermiddagen gör Elin och Ali underhåll på en av turbinerna, så att den är redo nästa gång."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför ringer telefonen klockan sju?",
+    "options": [
+     "Elin har glömt sin nyckel",
+     "En turbin har gått sönder",
+     "Ali är sjuk",
+     "Ett kärnkraftverk har stannat"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Klockan sju på morgonen ringer telefonen: ett stort kärnkraftverk har stannat, och det är en effekttopp i hela landet.",
+    "explanationJa": "{大|おお}きな{原子力発電所|げんしりょくはつでんしょ}が{止|と}まったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att gasturbinen är planerbar?",
+    "options": [
+     "Att den bara går när det blåser",
+     "Att den aldrig behöver underhåll",
+     "Att den inte ger några utsläpp",
+     "Att man kan starta den när man vill"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– En gasturbin kan starta på några minuter, förklarar hon för sin nya kollega Ali.",
+    "explanationJa": "{必要|ひつよう}なときにすぐ{起動|きどう}できるということです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad driver turbinen?",
+    "options": [
+     "Vatten från en älv",
+     "Heta gaser från förbränningen",
+     "Vind från havet",
+     "Ånga från en kärnreaktor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Förbränningen ger heta gaser som driver turbinen, och turbinen driver en generator.",
+    "explanationJa": "{燃焼|ねんしょう}でできた{熱|あつ}いガスがタービンを{動|うご}かします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Elins gasturbiner drivs med biogas.",
+    "correct": false,
+    "explanationSv": "Här är bränslet olja, ett fossilt bränsle, men många gasturbiner drivs med naturgas.",
+    "explanationJa": "エリンのところの{燃料|ねんりょう}は{石油|せきゆ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Gasturbinerna hjälpte till så att människor inte blev utan el.",
+    "correct": true,
+    "explanationSv": "Ingen fick strömavbrott.",
+    "explanationJa": "{停電|ていでん}は{起|お}きませんでした。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Svenska kraftnät har gasturbiner i en störningsreserv som kan starta snabbt när ett stort kraftverk eller en ledning plötsligt slutar fungera.",
+    "source": "Svenska kraftnät, ”Störningsreserven”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "I en gasturbin trycker en kompressor ihop luft som blandas med bränsle och brinner, och de heta gaserna driver turbinen och generatorn.",
+    "source": "Nationalencyklopedin, uppslaget ”gasturbin”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om reservkraft och om vad som händer när det behövs mycket el.",
+  "discussionPoints": [
+   "Har du varit med om ett strömavbrott? Vad gjorde du?",
+   "Vad gör du för att använda mindre el när det är kallt?",
+   "Är det rätt att använda fossila bränslen som reserv?",
+   "Vilka platser behöver alltid ha reservkraft?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,196 @@
+{
+ "id": "m.kondensatorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Kondensatorer",
+ "titleJa": "コンデンサー",
+ "descriptionSv": "Hur kondensatorer lagrar och släpper ut el i vardagens apparater: varför en gammal förstärkare kan brumma efter en spänningstopp, hur man känner igen en trasig kondensator, varför det är farligt att öppna elektronik och var tekniken finns, från kamerablixten till elbussen.",
+ "descriptionJa": "コンデンサーが{身|み}の{回|まわ}りの{機械|きかい}で{電気|でんき}をどうためて{放|はな}すか：{電圧|でんあつ}サージの{後|あと}に{古|ふる}いアンプがうなる{理由|りゆう}、{壊|こわ}れたコンデンサーの{見分|みわ}け{方|かた}、{電子機器|でんしきき}を{開|あ}けるのが{危険|きけん}な{理由|りゆう}、そしてカメラのフラッシュから{電気|でんき}バスまで、この{技術|ぎじゅつ}がどこに{使|つか}われているかを{学|まな}びます。",
+ "categoryId": "R07-A03-T01",
+ "tags": [
+  "el",
+  "teknik",
+  "elektronik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.motstand"
+ ],
+ "related": [],
+ "recommendedOrder": 3913,
+ "words": [
+  {
+   "senseId": "s.kondensator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urladdning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.superkondensator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.farad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.blixt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.jämna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spänningstopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flimra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brumma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svälla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livsfarlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pekskärm.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Förstärkaren efter stormen",
+  "paragraphs": [
+   "Efter en storm i november var strömmen borta i två timmar i Kenjis villa utanför Umeå. När elen kom tillbaka fungerade inte hans gamla förstärkare. Den brummade bara högt.",
+   "Kenji tar med den till Lars, som lagar gamla apparater. – Det kan ha varit en spänningstopp när strömmen kom tillbaka, säger Lars. Han öppnar förstärkaren och pekar på några små blå cylindrar. – Det här är kondensatorer. Två av dem har svällt. De är trasiga.",
+   "En kondensator kan lagra elektrisk laddning, förklarar Lars. Den laddas när ström går in, och den laddas ur när strömmen går ut igen. Hur mycket en kondensator rymmer mäts i farad. I förstärkaren ska kondensatorerna jämna ut spänningen, så att ljudet blir rent. Utan dem kan det brumma, och en lampa kan flimra.",
+   "– Öppna aldrig en sådan apparat själv, säger Lars. Även när man har dragit ur sladden kan stora kondensatorer vara laddade. En urladdning kan vara livsfarlig. Han laddar ur dem med ett särskilt verktyg innan han börjar.",
+   "Medan Lars byter kondensatorerna berättar han att samma teknik finns i blixten på kameran och i pekskärmen på mobilen. I vissa elbussar finns till och med superkondensatorer som laddas på några sekunder vid hållplatsen. Kenji är förvånad: – Så små saker, och de finns överallt!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför gick förstärkaren sönder, enligt Lars?",
+    "options": [
+     "Det kan ha varit en spänningstopp",
+     "Kenji tappade den",
+     "Den var för ny",
+     "Sladden var för kort"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "– Det kan ha varit en spänningstopp när strömmen kom tillbaka, säger Lars.",
+    "explanationJa": "{電気|でんき}が{戻|もど}ったときの{電圧|でんあつ}サージが{原因|げんいん}かもしれません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ser de trasiga kondensatorerna ut?",
+    "options": [
+     "De har svällt",
+     "De har smält",
+     "De har blivit röda",
+     "De har försvunnit"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Två av dem har svällt.",
+    "explanationJa": "{二|ふた}つのコンデンサーがふくらんでいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör kondensatorerna i förstärkaren?",
+    "options": [
+     "De jämnar ut spänningen",
+     "De gör ljudet högre",
+     "De lagrar musik",
+     "De kyler apparaten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I förstärkaren ska kondensatorerna jämna ut spänningen, så att ljudet blir rent.",
+    "explanationJa": "コンデンサーは{電圧|でんあつ}をならして、{音|おと}をきれいにします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det är ofarligt att öppna förstärkaren när sladden är utdragen.",
+    "correct": false,
+    "explanationSv": "Även när man har dragit ur sladden kan stora kondensatorer vara laddade.",
+    "explanationJa": "コードを{抜|ぬ}いても、{大|おお}きなコンデンサーには{電気|でんき}が{残|のこ}っていることがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Det finns kondensatorer i mobilen.",
+    "correct": true,
+    "explanationSv": "Medan Lars byter kondensatorerna berättar han att samma teknik finns i blixten på kameran och i pekskärmen på mobilen.",
+    "explanationJa": "スマホのタッチパネルにも{同|おな}じ{技術|ぎじゅつ}が{使|つか}われています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Kapacitans mäts i enheten farad, som har fått sitt namn efter Michael Faraday.",
+    "source": "Nationalencyklopedin, uppslagsordet farad",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Kondensatorer i elektriska apparater kan vara laddade även när apparaten inte är ansluten till elnätet.",
+    "source": "Nationalencyklopedin, uppslagsordet kondensator",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Superkondensatorer används i vissa bussar och spårvagnar för att snabbt lagra bromsenergi.",
+    "source": "Nationalencyklopedin, uppslagsordet kondensator",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om elektronik som går sönder och om strömavbrott.",
+  "discussionPoints": [
+   "Har en apparat hemma gått sönder efter ett strömavbrott eller åska?",
+   "Lagar du själv saker som går sönder, eller lämnar du in dem?",
+   "Hur kan man skydda elektronik mot spänningstoppar?",
+   "Vad gör du när mobilen laddas ur för snabbt?"
+  ]
+ },
+ "standard": 2
+}

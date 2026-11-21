@@ -1,0 +1,180 @@
+{
+ "id": "m.smarta-hem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Smarta hem",
+ "titleJa": "スマートホーム",
+ "descriptionSv": "Du lär dig att berätta om ett hem där lampor, värme och larm är uppkopplade: hur man styr dem med mobilen och rösten, vad som kan skötas av sig självt och vilka risker det finns för integriteten.",
+ "descriptionJa": "{明|あ}かり、{暖房|だんぼう}、{警報|けいほう}{装置|そうち}がネットにつながった{家|いえ}について{話|はな}せるようになります。{携帯|けいたい}や{声|こえ}での{操作|そうさ}のしかた、ひとりでに{任|まか}せられること、そしてプライバシーにどんな{危険|きけん}があるかを{学|まな}びます。",
+ "categoryId": "R07-A03-T06",
+ "tags": [
+  "el",
+  "teknik",
+  "automation"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.aterkoppling-och-stabilitet"
+ ],
+ "related": [],
+ "recommendedOrder": 3967,
+ "words": [
+  {
+   "senseId": "s.uppkopplad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.app.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smart.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrstyra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röststyrning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trådlös.1",
+   "active": false
+  },
+  {
+   "senseId": "s.robotdammsugare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.robotgräsklippare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.schemalägga.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hemlarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kodlås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervakningskamera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bekvämlighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.integritet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hackare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styra.3",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Huset som lyssnar",
+  "paragraphs": [
+   "Naoko och Anders har flyttat till ett radhus i Linköping. Anders älskar ny teknik och vill göra huset smart. Första helgen köper han lampor som är uppkopplade mot nätet. Nu kan de tända och släcka lamporna med en app i mobilen.",
+   "Snart har de också röststyrning. – Släck i köket, säger Naoko, och det blir mörkt. När de är på semester i Japan kan Anders fjärrstyra värmen och se att allt är som det ska. Han kan styra nästan allt i huset från telefonen.",
+   "I hallen sitter ett hemlarm med kodlås, och vid ytterdörren en övervakningskamera. En robotdammsugare städar varje förmiddag, och på sommaren klipper en robotgräsklippare gräset. Anders har schemalagt allt, så de behöver inte tänka på det. Nästan allt är trådlöst.",
+   "Naoko gillar bekvämligheten, men hon är också orolig. – Vad händer med vår integritet? frågar hon. Högtalaren lyssnar ju hela tiden, och kameran filmar. Vem kan se det? Hon har läst om en hackare som tog sig in i ett hemnätverk genom en smart lampa.",
+   "Anders lovar att byta alla lösenord och uppdatera apparaterna. De bestämmer också att kameran inte får filma grannens trädgård. – Ett smart hem ska göra livet lättare, säger Naoko. Det ska inte göra oss oroliga."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur kan de tända och släcka lamporna?",
+    "options": [
+     "Med en app i mobilen",
+     "Bara med en vanlig strömbrytare",
+     "Med en klocka",
+     "Med hemlarmet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Nu kan de tända och släcka lamporna med en app i mobilen.",
+    "explanationJa": "{携帯|けいたい}のアプリで{明|あ}かりをつけたり{消|け}したりできます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kan Anders göra när de är på semester i Japan?",
+    "options": [
+     "Fjärrstyra värmen",
+     "Klippa gräset själv",
+     "Byta lösenord på lamporna",
+     "Laga robotdammsugaren"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När de är på semester i Japan kan Anders fjärrstyra värmen …",
+    "explanationJa": "{日本|にほん}にいても、{暖房|だんぼう}を{遠隔|えんかく}{操作|そうさ}できます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är Naoko orolig?",
+    "options": [
+     "Hon är rädd för deras integritet",
+     "Hon tycker att lamporna är för dyra",
+     "Hon förstår inte appen",
+     "Hon tycker inte om robotgräsklipparen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vad händer med vår integritet? frågar hon.",
+    "explanationJa": "プライバシーがどうなるのか{心配|しんぱい}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Robotgräsklipparen klipper gräset på vintern.",
+    "correct": false,
+    "explanationSv": "… och på sommaren klipper en robotgräsklippare gräset.",
+    "explanationJa": "ロボット{芝刈|しばか}り{機|き}が{芝|しば}を{刈|か}るのは{夏|なつ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anders tänker byta lösenord på apparaterna.",
+    "correct": true,
+    "explanationSv": "Anders lovar att byta alla lösenord och uppdatera apparaterna.",
+    "explanationJa": "アンデシュは、パスワードをすべて{変|か}えると{約束|やくそく}しています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Den som filmar en plats där andra syns, till exempel en gata eller grannens tomt, måste följa reglerna om personuppgifter i dataskyddsförordningen (GDPR).",
+    "source": "Integritetsskyddsmyndigheten (IMY), kamerabevakning för privatpersoner",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om smarta prylar hemma, och om fördelar och risker med dem.",
+  "discussionPoints": [
+   "Har du några smarta apparater hemma? Vad använder du dem till?",
+   "Skulle du vilja styra lampor och värme med rösten? Varför eller varför inte?",
+   "Vad är viktigast för dig: bekvämlighet eller integritet?",
+   "Hur kan man skydda ett smart hem mot hackare?"
+  ]
+ },
+ "standard": 2
+}

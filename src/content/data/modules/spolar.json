@@ -1,0 +1,186 @@
+{
+ "id": "m.spolar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Spolar",
+ "titleJa": "コイル",
+ "descriptionSv": "Hur spolar och elektromagneter fungerar och var man möter dem: vad som finns inuti en elmotor, varför en järnkärna gör magneten starkare, vad ett relä gör när det klickar och hur portlås, lyftkranar och hörslingor bygger på samma teknik.",
+ "descriptionJa": "コイルと{電磁石|でんじしゃく}のしくみと、それにどこで{出会|であ}うか：モーターの{中|なか}に{何|なに}があるか、{鉄心|てっしん}でなぜ{磁石|じしゃく}が{強|つよ}くなるか、リレーがカチッと{鳴|な}るときに{何|なに}をしているか、そして{入|い}り{口|ぐち}の{鍵|かぎ}、クレーン、{磁気|じき}ループが{同|おな}じ{技術|ぎじゅつ}を{使|つか}っていることを{学|まな}びます。",
+ "categoryId": "R07-A03-T01",
+ "tags": [
+  "el",
+  "teknik",
+  "elektronik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.kondensatorer"
+ ],
+ "related": [],
+ "recommendedOrder": 3914,
+ "words": [
+  {
+   "senseId": "s.spole.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppartråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lindning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.järnkärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetfält.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektromagnet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.relä.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klicka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.magnetlås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lyftmagnet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.metalldetektor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörslinga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trådlös-laddning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.induktion.2",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Spolar överallt",
+  "paragraphs": [
+   "Lisa läser till elektriker och gör praktik på ett elbolag i Luleå. Första dagen visar handledaren Anders en gammal elmotor som har gått sönder. – Lindningen har brunnit, säger han. Någon måste linda en ny.",
+   "Inuti motorn ser Lisa koppartråd i hundratals varv. – Det är en spole, förklarar Anders. När ström går genom spolen bildas ett magnetfält. Med en järnkärna i mitten blir den en kraftig elektromagnet.",
+   "I ett skåp i verkstaden hör Lisa hur det klickar. – Det var ett relä, säger Anders. En liten ström i en spole slår till en mycket större ström. Reläer finns överallt, i allt från bilar till tvättmaskiner.",
+   "På vägen hem lägger Lisa märke till spolar överallt. Porten till hennes hus har ett magnetlås. Där man samlar skrot lyfter en kran gamla bilar med en stor lyftmagnet. På flygplatsen förra veckan gick hon genom en metalldetektor, och den har också spolar.",
+   "På kvällen går hon på teater med sin mormor Ingrid, som har hörapparat. Vid ingången sitter en skylt om att det finns hörslinga. – Då hör jag allt direkt i hörapparaten, säger Ingrid och ler. Hemma använder Lisa trådlös laddning till mobilen. Den fungerar också med två spolar, och det kallas induktion."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är fel på elmotorn?",
+    "options": [
+     "Den saknar järnkärna",
+     "Den är för liten",
+     "Lindningen har brunnit",
+     "Reläet har gått sönder"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Lindningen har brunnit, säger han.",
+    "explanationJa": "モーターの{巻線|まきせん}が{焼|や}けてしまいました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör en järnkärna med spolen?",
+    "options": [
+     "Den gör spolen kallare",
+     "Den stoppar strömmen",
+     "Den gör spolen till en kraftig elektromagnet",
+     "Den gör spolen lättare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Med en järnkärna i mitten blir den en kraftig elektromagnet.",
+    "explanationJa": "{真|ま}ん{中|なか}に{鉄心|てっしん}を{入|い}れると、{強|つよ}い{電磁石|でんじしゃく}になります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör ett relä?",
+    "options": [
+     "Det mäter spänningen",
+     "Det lagrar laddning",
+     "En liten ström slår till en större ström",
+     "Det gör ljudet starkare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En liten ström i en spole slår till en mycket större ström.",
+    "explanationJa": "コイルに{流|なが}れる{小|ちい}さな{電流|でんりゅう}で、ずっと{大|おお}きな{電流|でんりゅう}を{入|い}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ingrid hör sämre på teatern på grund av hörslingan.",
+    "correct": false,
+    "explanationSv": "– Då hör jag allt direkt i hörapparaten, säger Ingrid och ler.",
+    "explanationJa": "{磁気|じき}ループのおかげで、{音|おと}が{補聴器|ほちょうき}に{直接|ちょくせつ}{届|とど}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lisa upptäcker att spolar finns i många vardagliga saker.",
+    "correct": true,
+    "explanationSv": "På vägen hem lägger Lisa märke till spolar överallt.",
+    "explanationJa": "リサは{帰|かえ}り{道|みち}で、あちこちにコイルがあることに{気|き}づきます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En spole med en järnkärna ger ett starkare magnetfält än samma spole utan kärna.",
+    "source": "Nationalencyklopedin, uppslagsordet elektromagnet",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Hörslingor finns i många offentliga lokaler och märks ut med en skylt med ett öra.",
+    "source": "Hörselskadades Riksförbund (HRF), om hörslingor",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om magneter och spolar i vardagen.",
+  "discussionPoints": [
+   "Har porten där du bor ett magnetlås eller en vanlig nyckel?",
+   "Har du sett en skylt om hörslinga någonstans? Var?",
+   "Vilka apparater hemma har en elmotor?",
+   "Laddar du mobilen trådlöst eller med sladd?"
+  ]
+ },
+ "standard": 2
+}

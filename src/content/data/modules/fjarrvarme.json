@@ -1,0 +1,186 @@
+{
+ "id": "m.fjarrvarme",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Fjärrvärme",
+ "titleJa": "{地域暖房|ちいきだんぼう}",
+ "descriptionSv": "Hur fjärrvärme fungerar, från bränslet i verket till elementen i lägenheten, och hur man kan diskutera pris och miljö när det gäller fjärrvärme.",
+ "descriptionJa": "{地域暖房|ちいきだんぼう}のしくみを、プラントの{燃料|ねんりょう}からアパートのラジエーターまで{学|まな}び、{地域暖房|ちいきだんぼう}の{料金|りょうきん}や{環境|かんきょう}について{話|はな}し{合|あ}えるようになります。",
+ "categoryId": "R07-A03-T05",
+ "tags": [
+  "energi",
+  "boende",
+  "samhälle"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.varmepumpar"
+ ],
+ "related": [],
+ "recommendedOrder": 3953,
+ "words": [
+  {
+   "senseId": "s.fjärrvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftvärmeverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spillvärme.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avfallsförbränning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sopor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.biobränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkulera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.värmeväxlare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansluta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leverera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrkyla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.monopol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prishöjning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Praktik på kraftvärmeverket",
+  "paragraphs": [
+   "Naoko läser till energiingenjör i Linköping och gör praktik på det lokala energibolaget. Första dagen visar hennes handledare Anders henne runt på kraftvärmeverket. – Här gör vi både el och fjärrvärme, säger han.",
+   "Till en stor hall kommer lastbilar med flis. Flis och andra biobränslen från skogen är verkets viktigaste bränsle. Men här finns också avfallsförbränning: sopor som inte kan återvinnas bränns i en stor ugn, och värmen tas till vara. Även spillvärme från en fabrik i närheten används.",
+   "Det heta vattnet pumpas ut i ett långt nät av rörledningar under gatorna. Det cirkulerar till tusentals hus och kommer tillbaka lite kallare. I varje hus finns en värmeväxlare, så att fjärrvärmevattnet värmer husets element och varmvatten utan att blandas med det.",
+   "På sommaren gör bolaget också fjärrkyla till sjukhuset och några kontor. – Kan man ansluta alla hus till nätet? frågar Naoko. – Ja, om det finns rör i närheten, svarar Anders. Vi levererar värme till nästan alla lägenheter i stan.",
+   "Efter lunch läser Naoko en insändare i lokaltidningen. En villaägare är arg över en prishöjning på åtta procent. Fjärrvärmen är ett monopol, skriver han. Jag kan inte byta leverantör, som jag kan när det gäller el. Anders suckar. – Den diskussionen har vi varje höst."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var gör Naoko praktik?",
+    "options": [
+     "På ett sjukhus",
+     "På ett energibolag",
+     "På en tidning",
+     "På en fabrik"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Naoko läser till energiingenjör i Linköping och gör praktik på det lokala energibolaget.",
+    "explanationJa": "{地元|じもと}のエネルギー{会社|がいしゃ}で{実習|じっしゅう}をしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är verkets viktigaste bränsle?",
+    "options": [
+     "Flis och andra biobränslen",
+     "Olja",
+     "Kol",
+     "Bara sopor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Flis och andra biobränslen från skogen är verkets viktigaste bränsle.",
+    "explanationJa": "{森|もり}の{木|き}くずなどのバイオ{燃料|ねんりょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör värmeväxlaren i varje hus?",
+    "options": [
+     "Den gör el till huset",
+     "Den bränner sopor",
+     "Den kyler sjukhuset",
+     "Den värmer husets vatten utan att vattnet blandas"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I varje hus finns en värmeväxlare, så att fjärrvärmevattnet värmer husets element och varmvatten utan att blandas med det.",
+    "explanationJa": "{地域暖房|ちいきだんぼう}の{水|みず}と{混|ま}ぜずに、{家|いえ}の{水|みず}を{温|あたた}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vattnet är varmare när det kommer tillbaka till verket.",
+    "correct": false,
+    "explanationSv": "Det cirkulerar till tusentals hus och kommer tillbaka lite kallare.",
+    "explanationJa": "{戻|もど}ってくる{水|みず}は{少|すこ}し{冷|つめ}たくなっています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Villaägaren tycker att det är orättvist att han inte kan välja ett annat fjärrvärmebolag.",
+    "correct": true,
+    "explanationSv": "Fjärrvärmen är ett monopol, skriver han. Jag kan inte byta leverantör, som jag kan när det gäller el.",
+    "explanationJa": "{電気|でんき}と{違|ちが}って{会社|かいしゃ}を{変|か}えられないことに{怒|おこ}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Biobränslen och avfall är de vanligaste bränslena i svensk fjärrvärme, och en stor del produceras i kraftvärmeverk som gör både el och värme.",
+    "source": "Energiföretagen Sverige, Fjärrvärmestatistik",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "En fjärrvärmekund kan inte byta leverantör, eftersom det bara finns ett fjärrvärmenät på orten. Energimarknadsinspektionen har tillsyn över fjärrvärmeföretagen.",
+    "source": "Energimarknadsinspektionen, Fjärrvärme",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fjärrvärme och om var värmen i era hem kommer ifrån.",
+  "discussionPoints": [
+   "Vet du var värmen i ditt hem kommer ifrån?",
+   "Vad tycker du om att man bränner sopor för att få värme?",
+   "Är det ett problem att man inte kan byta fjärrvärmebolag? Varför?",
+   "Finns det något som liknar fjärrvärme i Japan?"
+  ]
+ },
+ "standard": 2
+}
