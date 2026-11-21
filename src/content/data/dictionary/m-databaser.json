@@ -1,0 +1,240 @@
+{
+ "entries": [
+  {
+   "id": "e.relationsdatabas",
+   "lemma": "relationsdatabas",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "relationsdatabas",
+    "defSg": "relationsdatabasen",
+    "indefPl": "relationsdatabaser",
+    "defPl": "relationsdatabaserna"
+   },
+   "senses": [
+    {
+     "id": "s.relationsdatabas.1",
+     "ja": "リレーショナルデータベース",
+     "defSv": "En databas där uppgifterna ligger i flera tabeller som hänger ihop med varandra.",
+     "defJa": "データが{複数|ふくすう}の{表|ひょう}に{分|わ}かれていて、それらの{表|ひょう}が{互|たが}いにつながっているデータベース。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Banken sparar alla konton i en stor relationsdatabas.",
+       "ja": "その{銀行|ぎんこう}はすべての{口座|こうざ}を{大|おお}きなリレーショナルデータベースに{保存|ほぞん}しています。"
+      },
+      {
+       "sv": "I en relationsdatabas behöver man bara skriva varje adress en gång.",
+       "ja": "リレーショナルデータベースでは、それぞれの{住所|じゅうしょ}を{一度|いちど}{書|か}くだけで{済|す}みます。"
+      }
+     ],
+     "collocations": [
+      "en relationsdatabas med … tabeller",
+      "bygga en relationsdatabas"
+     ],
+     "explanation": {
+      "sv": "I en relationsdatabas delar man upp uppgifterna i flera tabeller, till exempel en för kunder och en för köp. Tabellerna kopplas ihop med nummer, så att man kan se vilka köp som hör till vilken kund. Det är det vanligaste sättet att bygga databaser i företag och myndigheter. Ordet relation betyder här att två saker hänger ihop.",
+      "ja": "リレーショナルデータベースでは、データを{顧客|こきゃく}の{表|ひょう}と{購入|こうにゅう}の{表|ひょう}のように、いくつかの{表|ひょう}に{分|わ}けます。{表|ひょう}どうしは{番号|ばんごう}でつながっているので、どの{購入|こうにゅう}がどの{顧客|こきゃく}のものかがわかります。{企業|きぎょう}や{役所|やくしょ}でもっともよく{使|つか}われるデータベースの{作|つく}り{方|かた}です。ここでの「relation」は「{二|ふた}つのものがつながっていること」という{意味|いみ}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "data"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.primärnyckel",
+   "lemma": "primärnyckel",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "primärnyckel",
+    "defSg": "primärnyckeln",
+    "indefPl": "primärnycklar",
+    "defPl": "primärnycklarna"
+   },
+   "senses": [
+    {
+     "id": "s.primärnyckel.1",
+     "ja": "{主|しゅ}キー",
+     "defSv": "Ett värde som är unikt för varje rad i en tabell, till exempel ett kundnummer.",
+     "defJa": "{表|ひょう}のそれぞれの{行|ぎょう}に{一|ひと}つだけある{値|あたい}。たとえば{顧客番号|こきゃくばんごう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kundnumret är primärnyckel i tabellen.",
+       "ja": "{顧客番号|こきゃくばんごう}がその{表|ひょう}の{主|しゅ}キーです。"
+      },
+      {
+       "sv": "Två rader kan aldrig ha samma primärnyckel.",
+       "ja": "{二|ふた}つの{行|ぎょう}が{同|おな}じ{主|しゅ}キーを{持|も}つことはありません。"
+      }
+     ],
+     "collocations": [
+      "fungera som primärnyckel",
+      "en unik primärnyckel"
+     ],
+     "explanation": {
+      "sv": "En primärnyckel är det som skiljer en rad från alla andra i en tabell. Namn fungerar dåligt, eftersom två personer kan heta samma sak, så man använder i stället ett nummer som bara en rad har. Med primärnyckeln kan andra tabeller peka på just den raden.",
+      "ja": "「primärnyckel（{主|しゅ}キー）」は、{表|ひょう}の{中|なか}で{一|ひと}つの{行|ぎょう}をほかのすべての{行|ぎょう}と{区別|くべつ}するものです。{同|おな}じ{名前|なまえ}の{人|ひと}がいるので{名前|なまえ}は{向|む}かず、{代|か}わりに{一|ひと}つの{行|ぎょう}だけが{持|も}つ{番号|ばんごう}を{使|つか}います。{主|しゅ}キーを{使|つか}えば、ほかの{表|ひょう}からその{行|ぎょう}を{指|さ}すことができます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "data"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.lagring",
+   "lemma": "lagring",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "lagring",
+    "defSg": "lagringen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.lagring.1",
+     "ja": "{保存|ほぞん}、{保管|ほかん}",
+     "defSv": "När man sparar och förvarar något, till exempel varor eller data.",
+     "defJa": "{品物|しなもの}やデータなどを{保存|ほぞん}し、しまっておくこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Lagringen av alla bilder kostar mycket pengar.",
+       "ja": "すべての{画像|がぞう}を{保存|ほぞん}するには、たくさんのお{金|かね}がかかります。"
+      },
+      {
+       "sv": "Företaget betalar för lagring i molnet.",
+       "ja": "その{会社|かいしゃ}はクラウドへの{保存|ほぞん}にお{金|かね}を{払|はら}っています。"
+      }
+     ],
+     "labelSv": "spara",
+     "collocations": [
+      "lagring av data",
+      "säker lagring",
+      "lagring i molnet"
+     ],
+     "explanation": {
+      "sv": "Lagring betyder att något sparas och förvaras, så att man kan hämta det senare. Man talar om lagring av varor i ett lager och om lagring av data på en hårddisk eller i molnet. När det gäller personuppgifter finns det regler för hur länge lagringen får pågå. Verbet är lagra.",
+      "ja": "「lagring」は、あとで{取|と}り{出|だ}せるように{何|なに}かを{保存|ほぞん}し、しまっておくことです。{倉庫|そうこ}での{品物|しなもの}の{保管|ほかん}にも、ハードディスクやクラウドへのデータの{保存|ほぞん}にも{使|つか}います。{個人情報|こじんじょうほう}については、どのくらいの{期間|きかん}{保存|ほぞん}してよいかの{規則|きそく}があります。{動詞|どうし}は「lagra」です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "data"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.lagring.2",
+     "ja": "{熟成|じゅくせい}",
+     "defSv": "När ost, vin eller kött får ligga länge för att få mer smak.",
+     "defJa": "チーズやワインや{肉|にく}を、{味|あじ}がよくなるように{長|なが}い{間|あいだ}{置|お}いておくこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Osten har fått tolv månaders lagring.",
+       "ja": "そのチーズは{十二|じゅうに}か{月|げつ}{熟成|じゅくせい}されています。"
+      }
+     ],
+     "labelSv": "mat",
+     "tags": [
+      "mat"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.databasfråga",
+   "lemma": "databasfråga",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "databasfråga",
+    "defSg": "databasfrågan",
+    "indefPl": "databasfrågor",
+    "defPl": "databasfrågorna"
+   },
+   "senses": [
+    {
+     "id": "s.databasfråga.1",
+     "ja": "データベースへの{問|と}い{合|あ}わせ、クエリ",
+     "defSv": "En kort text som ber databasen att hitta, ändra eller ta bort vissa uppgifter.",
+     "defJa": "あるデータを{探|さが}したり、{変|か}えたり、{消|け}したりするように、データベースに{頼|たの}む{短|みじか}い{文|ぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med en databasfråga hittade hon alla kunder i Umeå.",
+       "ja": "データベースに{問|と}い{合|あ}わせて、{彼女|かのじょ}はウーメオの{顧客|こきゃく}を{全員|ぜんいん}{見|み}つけました。"
+      },
+      {
+       "sv": "Databasfrågan tog för lång tid, så sidan laddades långsamt.",
+       "ja": "{問|と}い{合|あ}わせに{時間|じかん}がかかりすぎたので、ページの{表示|ひょうじ}が{遅|おそ}くなりました。"
+      }
+     ],
+     "collocations": [
+      "skriva en databasfråga",
+      "köra en databasfråga"
+     ],
+     "explanation": {
+      "sv": "En databasfråga är en kort text i ett särskilt språk som säger exakt vad man vill ha ut av databasen, till exempel alla medlemmar som har betalat i mars. Databasen letar igenom tabellerna och skickar tillbaka svaret. Det engelska ordet för samma sak hör man också ofta på svenska arbetsplatser.",
+      "ja": "「databasfråga」は、データベースから{何|なに}を{取|と}り{出|だ}したいかを{正確|せいかく}に{伝|つた}える、{特別|とくべつ}な{言語|げんご}で{書|か}いた{短|みじか}い{文|ぶん}です。たとえば「3{月|がつ}に{支払|しはら}いをした{会員|かいいん}{全員|ぜんいん}」のように{指定|してい}します。データベースは{表|ひょう}を{探|さが}して{答|こた}えを{返|かえ}します。スウェーデンの{職場|しょくば}でも、{同|おな}じ{意味|いみ}の{英語|えいご}「query（クエリ）」をよく{耳|みみ}にします。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "data"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

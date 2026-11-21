@@ -1,0 +1,176 @@
+{
+ "id": "m.moduler-och-beroenden",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Moduler och beroenden",
+ "titleJa": "モジュールと{依存関係|いぞんかんけい}",
+ "descriptionSv": "Hur program byggs av mindre delar: varför man delar upp koden, hur man använder färdig kod som andra har skrivit och vad man måste tänka på när ett program ska fungera i många år.",
+ "descriptionJa": "プログラムが{小|ちい}さな{部分|ぶぶん}からどう{作|つく}られるか：なぜコードを{分|わ}けるのか、ほかの{人|ひと}が{書|か}いた{既製|きせい}のコードをどう{使|つか}うのか、そしてプログラムを{何年|なんねん}も{動|うご}かし{続|つづ}けるために{何|なに}に{気|き}をつけるべきかを{学|まな}びます。",
+ "categoryId": "R07-A02-T03",
+ "tags": [
+  "programmering",
+  "teknik",
+  "mjukvara"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.frontend-och-backend"
+ ],
+ "related": [],
+ "recommendedOrder": 3831,
+ "words": [
+  {
+   "senseId": "s.modul.2",
+   "active": true
+  },
+  {
+   "senseId": "s.källkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arkitektur.2",
+   "active": false
+  },
+  {
+   "senseId": "s.bibliotek.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ramverk.2",
+   "active": false
+  },
+  {
+   "senseId": "s.paket.2",
+   "active": true
+  },
+  {
+   "senseId": "s.pakethanterare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.importera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.beroende.3",
+   "active": true
+  },
+  {
+   "senseId": "s.återanvända.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öppen-källkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.licens.1",
+   "active": false
+  },
+  {
+   "senseId": "s.version.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompatibel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdatera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underhålla.2",
+   "active": true
+  },
+  {
+   "senseId": "s.teknisk-skuld.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Den nya appen",
+  "paragraphs": [
+   "Kenji har just börjat jobba på ett litet företag i Malmö. Företaget gör en app där man kan boka tid hos frisören. Första dagen visar hans kollega Sara hur appen är byggd. – Vi har delat upp källkoden i moduler, säger hon. En modul tar hand om betalningar, en annan tar hand om kalendern.",
+   "– Varför då? frågar Kenji. – Det är en bra arkitektur, svarar Sara. Då kan vi ändra en modul utan att resten går sönder. Vi skriver inte heller allt själva. Vi använder ett ramverk som ger appen en grund, och flera bibliotek med färdig kod.",
+   "Sara visar en lista med paket. – Pakethanteraren laddar ner alla paket och håller reda på vilken version vi har. Om du vill använda ett bibliotek importerar du det högst upp i filen. Men tänk på att varje beroende är kod som någon annan bestämmer över.",
+   "Många av paketen är öppen källkod. Alla får läsa koden och återanvända den, men man måste följa licensen. Ibland kommer en ny version som inte är kompatibel med resten av appen. – Därför uppdaterar vi paketen en gång i månaden och kontrollerar att allt fungerar, säger Sara.",
+   "– Vad är det svåraste med jobbet? frågar Kenji. Sara skrattar. – Att underhålla gammal kod. För tre år sedan hade vi bråttom, och vi valde många snabba lösningar. Nu har vi en stor teknisk skuld som vi betalar av lite i taget."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör företaget där Kenji jobbar?",
+    "options": [
+     "En app för betalningar i butiker",
+     "Datorspel för barn",
+     "En app där man kan boka tid hos frisören",
+     "En webbplats med nyheter"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Företaget gör en app där man kan boka tid hos frisören.",
+    "explanationJa": "{美容院|びよういん}の{予約|よやく}ができるアプリを{作|つく}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför har de delat upp källkoden i moduler?",
+    "options": [
+     "Appen blir billigare att köpa",
+     "De behöver då inga bibliotek",
+     "De kan ändra en modul utan att resten går sönder",
+     "Alla kan då läsa koden"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Då kan vi ändra en modul utan att resten går sönder.",
+    "explanationJa": "ほかの{部分|ぶぶん}を{壊|こわ}さずに、{一|ひと}つのモジュールを{変更|へんこう}できるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör pakethanteraren?",
+    "options": [
+     "Den skriver ny kod åt Sara",
+     "Den laddar ner paketen och håller reda på versionerna",
+     "Den betalar för licenserna",
+     "Den bokar tider hos frisören"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Pakethanteraren laddar ner alla paket och håller reda på vilken version vi har.",
+    "explanationJa": "パッケージをダウンロードし、バージョンを{管理|かんり}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Alla paket som företaget använder är öppen källkod.",
+    "correct": false,
+    "explanationSv": "Många av paketen är öppen källkod.",
+    "explanationJa": "「{多|おお}くの」パッケージで、すべてではありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Snabba lösningar för tre år sedan gör jobbet svårare i dag.",
+    "correct": true,
+    "explanationSv": "Nu har vi en stor teknisk skuld som vi betalar av lite i taget.",
+    "explanationJa": "{当時|とうじ}の{急|いそ}いだ{解決策|かいけつさく}が、{今|いま}の{技術的負債|ぎじゅつてきふさい}になっています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur program och appar byggs av delar.",
+  "discussionPoints": [
+   "Vilka appar använder du varje dag? Vilka delar tror du att de har?",
+   "Varför är det bra att återanvända kod som andra har skrivit?",
+   "Vad är bra och dåligt med öppen källkod?",
+   "Har du varit med om att en uppdatering gjorde att något slutade fungera?"
+  ]
+ },
+ "standard": 2
+}

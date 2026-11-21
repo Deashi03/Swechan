@@ -1,0 +1,480 @@
+{
+ "entries": [
+  {
+   "id": "e.testmiljö",
+   "lemma": "testmiljö",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "testmiljö",
+    "defSg": "testmiljön",
+    "indefPl": "testmiljöer",
+    "defPl": "testmiljöerna"
+   },
+   "senses": [
+    {
+     "id": "s.testmiljö.1",
+     "ja": "テスト{環境|かんきょう}",
+     "defSv": "En kopia av ett system där man kan prova ny kod utan att riktiga användare märker något.",
+     "defJa": "{本当|ほんとう}の{利用者|りようしゃ}に{気|き}づかれずに{新|あたら}しいコードを{試|ため}せる、システムのコピー。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi provar alltid nya versioner i testmiljön först.",
+       "ja": "{新|あたら}しいバージョンは、いつもまずテスト{環境|かんきょう}で{試|ため}します。"
+      },
+      {
+       "sv": "Felet syntes inte i testmiljön, bara hos kunderna.",
+       "ja": "そのエラーはテスト{環境|かんきょう}では{出|で}ず、{顧客|こきゃく}のところでだけ{出|で}ました。"
+      }
+     ],
+     "collocations": [
+      "i testmiljön",
+      "en egen testmiljö"
+     ],
+     "explanation": {
+      "sv": "En testmiljö är en plats där man kan göra fel utan att det spelar någon roll. Den liknar det riktiga systemet, men data är påhittade och inga riktiga kunder använder den. Skillnaden mot produktionsmiljön är just det: i produktionsmiljön är allt på riktigt.",
+      "ja": "「testmiljö（テスト{環境|かんきょう}）」は、まちがえても{問題|もんだい}にならない{場所|ばしょ}です。{本物|ほんもの}のシステムに{似|に}ていますが、データは{作|つく}りもので、{本当|ほんとう}の{顧客|こきゃく}は{使|つか}っていません。「produktionsmiljö（{本番環境|ほんばんかんきょう}）」との{違|ちが}いはまさにそこで、{本番環境|ほんばんかんきょう}ではすべてが{本物|ほんもの}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "drift"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.produktionsmiljö",
+   "lemma": "produktionsmiljö",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "produktionsmiljö",
+    "defSg": "produktionsmiljön",
+    "indefPl": "produktionsmiljöer",
+    "defPl": "produktionsmiljöerna"
+   },
+   "senses": [
+    {
+     "id": "s.produktionsmiljö.1",
+     "ja": "{本番環境|ほんばんかんきょう}",
+     "defSv": "Det system som de riktiga användarna använder varje dag.",
+     "defJa": "{本当|ほんとう}の{利用者|りようしゃ}が{毎日|まいにち}{使|つか}っているシステム。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ändra aldrig något direkt i produktionsmiljön.",
+       "ja": "{本番環境|ほんばんかんきょう}で{直接|ちょくせつ}{何|なに}かを{変更|へんこう}してはいけません。"
+      },
+      {
+       "sv": "Ett fel i produktionsmiljön kan stoppa tusentals kunder.",
+       "ja": "{本番環境|ほんばんかんきょう}での{一|ひと}つのエラーが、{何千人|なんぜんにん}もの{顧客|こきゃく}を{止|と}めてしまうことがあります。"
+      }
+     ],
+     "collocations": [
+      "i produktionsmiljön",
+      "släppa ut i produktionsmiljön"
+     ],
+     "explanation": {
+      "sv": "Produktionsmiljön är det riktiga systemet, där kunderna handlar, betalar och loggar in. Allt som går fel där märks direkt. Därför provar man ny kod i en testmiljö först. Programmerare säger ofta bara produktion: Nu ligger den nya versionen i produktion.",
+      "ja": "「produktionsmiljö（{本番環境|ほんばんかんきょう}）」は{本物|ほんもの}のシステムで、{顧客|こきゃく}が{買|か}い{物|もの}をしたり、{支払|しはら}ったり、ログインしたりします。そこで{起|お}きたまちがいはすぐに{気|き}づかれます。そのため、{新|あたら}しいコードはまずテスト{環境|かんきょう}で{試|ため}します。プログラマーは「produktion」とだけ{言|い}うことも{多|おお}く、「Nu ligger den nya versionen i produktion（{新|あたら}しいバージョンが{本番|ほんばん}に{出|で}た）」のように{使|つか}います。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "drift"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.driftsättning",
+   "lemma": "driftsättning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "driftsättning",
+    "defSg": "driftsättningen",
+    "indefPl": "driftsättningar",
+    "defPl": "driftsättningarna"
+   },
+   "senses": [
+    {
+     "id": "s.driftsättning.1",
+     "ja": "デプロイ、{本番|ほんばん}への{導入|どうにゅう}",
+     "defSv": "När man installerar en ny version av ett program på de servrar där användarna använder det.",
+     "defJa": "{利用者|りようしゃ}が{使|つか}っているサーバーに、プログラムの{新|あたら}しいバージョンをインストールすること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Driftsättningen sker på natten, när få använder tjänsten.",
+       "ja": "デプロイは、サービスを{使|つか}う{人|ひと}が{少|すく}ない{夜|よる}に{行|おこな}います。"
+      },
+      {
+       "sv": "Förr gjorde vi en driftsättning i månaden, nu gör vi flera om dagen.",
+       "ja": "{以前|いぜん}はデプロイが{月|つき}に{一回|いっかい}でしたが、{今|いま}は{一日|いちにち}に{何回|なんかい}も{行|おこな}います。"
+      }
+     ],
+     "collocations": [
+      "en lyckad driftsättning",
+      "automatisk driftsättning"
+     ],
+     "explanation": {
+      "sv": "Driftsättning är steget när koden flyttas från utvecklarnas datorer och testmiljön till produktionsmiljön, så att användarna kan använda den. Många företag har gjort driftsättningen automatisk, så att den går snabbt och utan fel.",
+      "ja": "「driftsättning（デプロイ）」は、コードが{開発者|かいはつしゃ}のパソコンやテスト{環境|かんきょう}から{本番環境|ほんばんかんきょう}に{移|うつ}され、{利用者|りようしゃ}が{使|つか}えるようになる{段階|だんかい}です。{多|おお}くの{会社|かいしゃ}はデプロイを{自動化|じどうか}して、{速|はや}くまちがいなく{行|おこな}えるようにしています。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "drift"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.drift",
+   "lemma": "drift",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "drift",
+    "defSg": "driften",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.drift.1",
+     "ja": "{運用|うんよう}、{稼働|かどう}",
+     "defSv": "Det arbete som behövs för att maskiner, system eller en verksamhet ska fortsätta att fungera.",
+     "defJa": "{機械|きかい}やシステムや{事業|じぎょう}を{動|うご}かし{続|つづ}けるために{必要|ひつよう}な{仕事|しごと}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Den nya stationen tas i drift i december.",
+       "ja": "{新|あたら}しい{駅|えき}は12{月|がつ}に{運用|うんよう}が{始|はじ}まります。"
+      },
+      {
+       "sv": "Hon har ansvar för driften av alla servrar.",
+       "ja": "{彼女|かのじょ}はすべてのサーバーの{運用|うんよう}を{担当|たんとう}しています。"
+      }
+     ],
+     "labelSv": "hålla igång",
+     "collocations": [
+      "ta i drift",
+      "vara i drift",
+      "ansvara för driften"
+     ],
+     "explanation": {
+      "sv": "Drift betyder att något används och fungerar, och det arbete som krävs för att det ska fortsätta så. Man tar ett kraftverk eller ett datasystem i drift när det börjar användas. På ett företag som gör appar är det driften som ser till att servrarna fungerar dygnet runt, medan andra skriver ny kod. Ordet finns i många sammansättningar, till exempel driftstörning och driftkostnad.",
+      "ja": "「drift」は、{何|なに}かが{動|うご}いて{働|はたら}いていること、またそれを{続|つづ}けるために{必要|ひつよう}な{仕事|しごと}を{表|あらわ}します。{発電所|はつでんしょ}やコンピューターシステムを{使|つか}い{始|はじ}めるとき「ta i drift（{運用|うんよう}を{始|はじ}める）」と{言|い}います。アプリを{作|つく}る{会社|かいしゃ}では、ほかの{人|ひと}が{新|あたら}しいコードを{書|か}いている{間|あいだ}、{運用|うんよう}{担当|たんとう}がサーバーを{二十四時間|にじゅうよじかん}{動|うご}かし{続|つづ}けます。「driftstörning（{運用障害|うんようしょうがい}）」「driftkostnad（{運用費|うんようひ}）」など、たくさんの{複合語|ふくごうご}があります。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "drift"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.drift.2",
+     "ja": "{本能|ほんのう}、{衝動|しょうどう}",
+     "defSv": "En stark vilja eller känsla som man föds med, till exempel att vilja äta eller skydda sina barn.",
+     "defJa": "{食|た}べたい、{子|こ}どもを{守|まも}りたいなど、{生|う}まれつき{持|も}っている{強|つよ}い{欲求|よっきゅう}や{気持|きも}ち。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Att skydda sina ungar är en stark drift hos många djur.",
+       "ja": "{子|こ}どもを{守|まも}ることは、{多|おお}くの{動物|どうぶつ}が{持|も}つ{強|つよ}い{本能|ほんのう}です。"
+      }
+     ],
+     "labelSv": "instinkt",
+     "tags": [
+      "psykologi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "C1"
+    },
+    {
+     "id": "s.drift.3",
+     "ja": "{漂流|ひょうりゅう}",
+     "defSv": "Det att något flyter iväg utan att någon styr det.",
+     "defJa": "{何|なに}かがだれにも{操|あやつ}られずに{流|なが}されていくこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Båten kom på drift i stormen.",
+       "ja": "ボートは{嵐|あらし}の{中|なか}で{漂流|ひょうりゅう}しました。"
+      }
+     ],
+     "labelSv": "på drift",
+     "usageNote": {
+      "sv": "Används nästan bara i uttrycket på drift: komma på drift, vara på drift.",
+      "ja": "ほとんど「på drift（{漂流|ひょうりゅう}して）」という{表現|ひょうげん}だけで{使|つか}います。"
+     },
+     "tags": [
+      "natur"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.logg",
+   "lemma": "logg",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "logg",
+    "defSg": "loggen",
+    "indefPl": "loggar",
+    "defPl": "loggarna"
+   },
+   "senses": [
+    {
+     "id": "s.logg.1",
+     "ja": "{航海日誌|こうかいにっし}、{記録簿|きろくぼ}",
+     "defSv": "En bok där man skriver upp vad som händer varje dag, till exempel på ett fartyg.",
+     "defJa": "{船|ふね}などで、{毎日|まいにち}{起|お}きたことを{書|か}き{留|と}めるノート。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kaptenen skrev om stormen i loggen.",
+       "ja": "{船長|せんちょう}は{嵐|あらし}のことを{航海日誌|こうかいにっし}に{書|か}きました。"
+      }
+     ],
+     "labelSv": "bok",
+     "tags": [
+      "sjöfart"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.logg.2",
+     "ja": "ログ",
+     "defSv": "En fil där ett program automatiskt skriver ner vad som händer, till exempel fel och när någon loggar in.",
+     "defJa": "エラーやログインなど、{起|お}きたことをプログラムが{自動的|じどうてき}に{書|か}き{込|こ}むファイル。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I loggen kunde vi se exakt när felet började.",
+       "ja": "ログを{見|み}ると、エラーがいつ{始|はじ}まったかが{正確|せいかく}にわかりました。"
+      },
+      {
+       "sv": "Loggarna sparas i trettio dagar.",
+       "ja": "ログは{三十日間|さんじゅうにちかん}{保存|ほぞん}されます。"
+      }
+     ],
+     "labelSv": "data",
+     "collocations": [
+      "läsa loggen",
+      "skriva till loggen",
+      "loggen visar …"
+     ],
+     "explanation": {
+      "sv": "En logg är en lång lista där ett program skriver en rad för varje sak som händer, med datum och klockslag: när någon loggar in, ett fel, en betalning. När något har gått fel läser man loggen för att förstå vad som hände. Ordet kommer från fartygens loggbok.",
+      "ja": "「logg（ログ）」は、ログイン、エラー、{支払|しはら}いなど、{起|お}きたことを{一|ひと}つずつ{日時|にちじ}といっしょにプログラムが{一行|いちぎょう}ずつ{書|か}いていく{長|なが}い{一覧|いちらん}です。{何|なに}か{問題|もんだい}が{起|お}きたとき、{何|なに}があったかを{知|し}るためにログを{読|よ}みます。もとは{船|ふね}の{航海日誌|こうかいにっし}から{来|き}た{言葉|ことば}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "drift"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.skala-upp",
+   "lemma": "skala upp",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "skala upp",
+    "present": "skalar upp",
+    "past": "skalade upp",
+    "supine": "skalat upp",
+    "imperative": "skala upp",
+    "group": "1"
+   },
+   "senses": [
+    {
+     "id": "s.skala-upp.1",
+     "ja": "スケールアップする、{規模|きぼ}を{拡大|かくだい}する",
+     "defSv": "Göra ett system eller en verksamhet större, så att det klarar fler användare eller mer arbete.",
+     "defJa": "より{多|おお}くの{利用者|りようしゃ}や{仕事|しごと}に{対応|たいおう}できるように、システムや{事業|じぎょう}を{大|おお}きくする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "När många användare kommer samtidigt skalar systemet upp automatiskt.",
+       "ja": "{大勢|おおぜい}の{利用者|りようしゃ}が{同時|どうじ}に{来|く}ると、システムは{自動的|じどうてき}にスケールアップします。"
+      },
+      {
+       "sv": "Företaget vill skala upp och öppna kontor i fler länder.",
+       "ja": "その{会社|かいしゃ}は{規模|きぼ}を{拡大|かくだい}して、より{多|おお}くの{国|くに}に{事務所|じむしょ}を{開|ひら}きたいと{考|かんが}えています。"
+      }
+     ],
+     "collocations": [
+      "skala upp verksamheten",
+      "skala upp snabbt"
+     ],
+     "explanation": {
+      "sv": "Att skala upp är att göra något större utan att behöva börja om från början. Ett system skalar upp genom att starta fler servrar när belastningen ökar, och ett företag skalar upp när det växer från en stad till hela landet. Motsatsen är skala ner. Man säger att en lösning är skalbar om den går att skala upp.",
+      "ja": "「skala upp」は、{最初|さいしょ}からやり{直|なお}さずに{何|なに}かを{大|おお}きくすることです。システムは{負荷|ふか}が{増|ふ}えるとサーバーを{増|ふ}やしてスケールアップし、{会社|かいしゃ}は{一|ひと}つの{町|まち}から{国|くに}{全体|ぜんたい}へと{成長|せいちょう}するときにスケールアップします。{反対|はんたい}は「skala ner」です。スケールアップできる{方法|ほうほう}を「skalbar（{拡張性|かくちょうせい}のある）」と{言|い}います。"
+     },
+     "frame": {
+      "subject": "Företaget",
+      "complement": "verksamheten"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "drift"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.distribution",
+   "lemma": "distribution",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "distribution",
+    "defSg": "distributionen",
+    "indefPl": "distributioner",
+    "defPl": "distributionerna"
+   },
+   "senses": [
+    {
+     "id": "s.distribution.1",
+     "ja": "{流通|りゅうつう}、{配布|はいふ}",
+     "defSv": "När varor, program eller filmer delas ut till kunder och användare.",
+     "defJa": "{品物|しなもの}やプログラムや{映画|えいが}を、{顧客|こきゃく}や{利用者|りようしゃ}に{届|とど}けること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Distributionen av den nya appen sker via appbutikerna.",
+       "ja": "{新|あたら}しいアプリの{配布|はいふ}は、アプリストアを{通|とお}じて{行|おこな}われます。"
+      },
+      {
+       "sv": "Företaget tar hand om distributionen av tidningar i hela Norrland.",
+       "ja": "その{会社|かいしゃ}はノルランド{全体|ぜんたい}で{新聞|しんぶん}の{配送|はいそう}を{担当|たんとう}しています。"
+      }
+     ],
+     "labelSv": "sprida",
+     "collocations": [
+      "distribution av …",
+      "sköta distributionen"
+     ],
+     "explanation": {
+      "sv": "Distribution handlar om hur något når ut till dem som ska ha det. Förr betydde det mest lastbilar som körde varor till butiker; i dag kan en app nå miljontals telefoner på en dag genom appbutiker. Skillnaden mot driftsättning är att driftsättning sker på företagets egna servrar, medan distribution betyder att programmet skickas ut till användarnas egna enheter.",
+      "ja": "「distribution」は、{何|なに}かを{必要|ひつよう}な{人|ひと}にどう{届|とど}けるかということです。{昔|むかし}は{主|おも}にトラックで{品物|しなもの}を{店|みせ}に{運|はこ}ぶことでしたが、{今|いま}はアプリがアプリストアを{通|とお}じて{一日|いちにち}で{何百万台|なんびゃくまんだい}もの{電話|でんわ}に{届|とど}くこともあります。「driftsättning（デプロイ）」との{違|ちが}いは、デプロイが{会社|かいしゃ}{自身|じしん}のサーバーで{行|おこな}われるのに{対|たい}し、distributionはプログラムを{利用者|りようしゃ}{自身|じしん}の{機器|きき}に{送|おく}り{出|だ}すことです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "drift"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.distribution.2",
+     "ja": "ディストリビューション",
+     "defSv": "En variant av ett fritt operativsystem, med vissa program och inställningar.",
+     "defJa": "{自由|じゆう}なOSの{一種|いっしゅ}で、{特定|とくてい}のプログラムや{設定|せってい}がついたもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han använder en distribution som är lätt för nybörjare.",
+       "ja": "{彼|かれ}は{初心者|しょしんしゃ}に{使|つか}いやすいディストリビューションを{使|つか}っています。"
+      }
+     ],
+     "labelSv": "operativsystem",
+     "tags": [
+      "programmering",
+      "teknik",
+      "drift"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "C1"
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

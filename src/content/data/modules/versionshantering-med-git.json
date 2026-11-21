@@ -1,0 +1,168 @@
+{
+ "id": "m.versionshantering-med-git",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Versionshantering med Git",
+ "titleJa": "Gitによるバージョン{管理|かんり}",
+ "descriptionSv": "Hur programmerare arbetar tillsammans i samma kod: hur varje ändring sparas och följs upp, hur man arbetar på egen hand utan att störa andra och hur man gör när två ändringar krockar.",
+ "descriptionJa": "プログラマーが{同|おな}じコードでどう{協力|きょうりょく}するか：{変更|へんこう}を{一|ひと}つずつどう{保存|ほぞん}して{追跡|ついせき}するか、ほかの{人|ひと}のじゃまをせずにどう{一人|ひとり}で{作業|さぎょう}するか、そして{二|ふた}つの{変更|へんこう}がぶつかったときにどうするかを{学|まな}びます。",
+ "categoryId": "R07-A02-T03",
+ "tags": [
+  "programmering",
+  "teknik",
+  "samarbete"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.autentisering-och-auktorisering"
+ ],
+ "related": [],
+ "recommendedOrder": 3835,
+ "words": [
+  {
+   "senseId": "s.versionshantering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kodförråd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klona.2",
+   "active": true
+  },
+  {
+   "senseId": "s.gren.4",
+   "active": true
+  },
+  {
+   "senseId": "s.ändring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.commit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.historik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ladda-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ändringsförslag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kodgranskning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parallellt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konflikt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.samarbeta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återställa.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Två ändringar på samma rad",
+  "paragraphs": [
+   "Saki och Johan arbetar på ett litet företag som gör en app där man kan lära sig japanska. Fem personer skriver i samma kod. – Utan versionshantering skulle det bli kaos, säger Saki. Hela koden ligger i ett gemensamt kodförråd på en server.",
+   "När Johan började på företaget klonade han kodförrådet till sin egen dator. Nu ska han bygga en ny del där man kan öva på japanska tecken. Han skapar en ny gren, så att han kan arbeta i lugn och ro utan att störa de andra.",
+   "Varje gång han har gjort en liten ändring sparar han den i en commit med ett kort meddelande, till exempel ”Lägg till övning med tecken”. I historiken kan alla se vem som har ändrat vad och när. När allt fungerar ska han ladda upp grenen och skicka ett ändringsförslag.",
+   "Innan ändringen får komma in gör Saki en kodgranskning. Hon läser koden och skriver några frågor. Sedan ska de slå ihop Johans gren med den gemensamma koden. Men då blir det en konflikt: Saki har arbetat parallellt och ändrat samma rad i samma fil.",
+   "De sätter sig tillsammans och bestämmer vilken version som ska vara kvar. – Det är så vi samarbetar, säger Saki. Och om något går fel kan vi alltid återställa koden till en tidigare version. Ingenting försvinner."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var ligger företagets kod?",
+    "options": [
+     "Bara på Sakis dator",
+     "I ett gemensamt kodförråd på en server",
+     "I en mapp på ett papper",
+     "I appen för att lära sig japanska"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hela koden ligger i ett gemensamt kodförråd på en server.",
+    "explanationJa": "サーバー{上|じょう}の{共有|きょうゆう}のリポジトリにあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför skapar Johan en ny gren?",
+    "options": [
+     "Han vill ta bort gammal kod",
+     "Han vill arbeta utan att störa de andra",
+     "Han har glömt sitt lösenord",
+     "Saki har bett honom sluta"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han skapar en ny gren, så att han kan arbeta i lugn och ro utan att störa de andra.",
+    "explanationJa": "ほかの{人|ひと}のじゃまをせずに{作業|さぎょう}するためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad kan man se i historiken?",
+    "options": [
+     "Vilka appar Johan har köpt",
+     "Vem som har ändrat vad och när",
+     "Hur mycket alla får i lön",
+     "Vilka tecken som är svårast"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I historiken kan alla se vem som har ändrat vad och när.",
+    "explanationJa": "だれが{何|なに}をいつ{変更|へんこう}したかがわかります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Konflikten uppstod eftersom Saki och Johan hade ändrat samma rad.",
+    "correct": true,
+    "explanationSv": "Saki har arbetat parallellt och ändrat samma rad i samma fil.",
+    "explanationJa": "{二人|ふたり}が{同|おな}じファイルの{同|おな}じ{行|ぎょう}を{変更|へんこう}したからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Om koden blir fel är den gamla versionen borta för alltid.",
+    "correct": false,
+    "explanationSv": "Och om något går fel kan vi alltid återställa koden till en tidigare version. Ingenting försvinner.",
+    "explanationJa": "いつでも{以前|いぜん}のバージョンに{戻|もど}せます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att arbeta tillsammans med samma texter eller filer.",
+  "discussionPoints": [
+   "Har du skrivit i samma dokument som andra samtidigt? Hur gick det?",
+   "Brukar du spara gamla versioner av viktiga filer?",
+   "Varför tror du att det är bra att någon annan läser ens arbete innan det blir klart?",
+   "Hur löser ni konflikter när två personer vill ändra samma sak?"
+  ]
+ },
+ "standard": 2
+}

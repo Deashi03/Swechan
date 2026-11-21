@@ -1,0 +1,168 @@
+{
+ "id": "m.distribution-och-driftsattning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Distribution och driftsättning",
+ "titleJa": "{配布|はいふ}とデプロイ",
+ "descriptionSv": "Hur ett program når användarna: hur en ny version provas och sätts i drift, hur man håller ett system igång när många använder det och vad som händer när något går fel.",
+ "descriptionJa": "プログラムがどう{利用者|りようしゃ}に{届|とど}くか：{新|あたら}しいバージョンをどう{試|ため}して{本番|ほんばん}に{導入|どうにゅう}するか、{大勢|おおぜい}が{使|つか}うときにシステムをどう{動|うご}かし{続|つづ}けるか、そして{何|なに}かがうまくいかないときに{何|なに}が{起|お}こるかを{学|まな}びます。",
+ "categoryId": "R07-A02-T03",
+ "tags": [
+  "programmering",
+  "teknik",
+  "drift"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.automatiserad-testning"
+ ],
+ "related": [],
+ "recommendedOrder": 3837,
+ "words": [
+  {
+   "senseId": "s.server.1",
+   "active": true
+  },
+  {
+   "senseId": "s.moln.2",
+   "active": true
+  },
+  {
+   "senseId": "s.virtuell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.testmiljö.1",
+   "active": true
+  },
+  {
+   "senseId": "s.produktionsmiljö.1",
+   "active": false
+  },
+  {
+   "senseId": "s.driftsättning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lansera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.användare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belastning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.logg.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skala-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driftstörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.distribution.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Natten före biljettsläppet",
+  "paragraphs": [
+   "I morgon ska Takeshis företag lansera en ny version av sin webbplats för konsertbiljetter. Den nya koden har redan provats i en testmiljö, en kopia av systemet där inga riktiga kunder finns. Där kan man göra fel utan att någon märker det.",
+   "På kvällen är det dags för driftsättningen. Den nya versionen installeras på servrarna i produktionsmiljön, alltså det system som kunderna använder. Företaget har inga egna datorer i källaren längre. Allt körs på virtuella servrar i molnet.",
+   "Lena, som har ansvar för driften, övervakar systemet hela natten. På en stor skärm ser hon hur många användare som är inne och hur stor belastningen är. Allt som händer skrivs i en logg, så att man kan se vad som har gått fel om det blir problem.",
+   "Klockan nio på morgonen släpps biljetterna till en populär konsert. På en minut kommer hundratusen användare. Systemet börjar gå långsamt. Lena skalar upp och startar tio nya servrar på några sekunder.",
+   "Ändå blir det en kort driftstörning, och vissa kunder får ett felmeddelande. Efter en kvart fungerar allt igen. Nästa vecka börjar distributionen av den nya mobilappen. – Då gör vi som vanligt, säger Takeshi. Först får en liten grupp användare den nya appen, sedan alla."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var har den nya koden provats?",
+    "options": [
+     "Hos de första kunderna",
+     "I en testmiljö utan riktiga kunder",
+     "På Lenas telefon",
+     "I produktionsmiljön"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den nya koden har redan provats i en testmiljö, en kopia av systemet där inga riktiga kunder finns.",
+    "explanationJa": "{本当|ほんとう}の{顧客|こきゃく}がいないテスト{環境|かんきょう}で{試|ため}されました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var finns företagets servrar?",
+    "options": [
+     "I källaren",
+     "På kontoret",
+     "Hos Lena hemma",
+     "I molnet"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Allt körs på virtuella servrar i molnet.",
+    "explanationJa": "すべてクラウドの{仮想|かそう}サーバーで{動|うご}いています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför skalar Lena upp systemet?",
+    "options": [
+     "En server har gått sönder",
+     "Hundratusen användare kommer på en minut",
+     "Takeshi ber henne om det",
+     "Testerna har fallerat"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På en minut kommer hundratusen användare. Systemet börjar gå långsamt.",
+    "explanationJa": "{一分|いっぷん}で{十万人|じゅうまんにん}の{利用者|りようしゃ}が{来|き}て、システムが{遅|おそ}くなったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Alla kunder kunde köpa biljetter utan problem.",
+    "correct": false,
+    "explanationSv": "Ändå blir det en kort driftstörning, och vissa kunder får ett felmeddelande.",
+    "explanationJa": "{短|みじか}い{障害|しょうがい}があり、エラーメッセージが{出|で}た{顧客|こきゃく}もいました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den nya mobilappen skickas inte ut till alla användare samtidigt.",
+    "correct": true,
+    "explanationSv": "Först får en liten grupp användare den nya appen, sedan alla.",
+    "explanationJa": "まず{少人数|しょうにんずう}のグループに{配布|はいふ}し、それから{全員|ぜんいん}に{届|とど}けます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om webbplatser och appar som slutar fungera, och om arbetet bakom dem.",
+  "discussionPoints": [
+   "Har du varit med om att en webbplats slutade fungera när många ville köpa något samtidigt?",
+   "Vilka tjänster skulle det vara svårast för dig att vara utan om de fick en driftstörning?",
+   "Skulle du vilja ha ett jobb där du övervakar system på natten? Varför eller varför inte?",
+   "Tycker du att företag ska berätta öppet om driftstörningar och fel?"
+  ]
+ },
+ "standard": 2
+}

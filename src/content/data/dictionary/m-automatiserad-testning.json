@@ -1,0 +1,383 @@
+{
+ "entries": [
+  {
+   "id": "e.manuell",
+   "lemma": "manuell",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "manuell",
+    "neuter": "manuellt",
+    "plural": "manuella",
+    "definite": "manuella"
+   },
+   "senses": [
+    {
+     "id": "s.manuell.1",
+     "ja": "{手作業|てさぎょう}の、{手動|しゅどう}の",
+     "defSv": "Som görs för hand av en människa, inte av en maskin.",
+     "defJa": "{機械|きかい}ではなく、{人|ひと}が{手|て}で{行|おこな}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Förut var allt arbete med fakturorna manuellt.",
+       "ja": "{以前|いぜん}は、{請求書|せいきゅうしょ}の{作業|さぎょう}はすべて{手作業|てさぎょう}でした。"
+      },
+      {
+       "sv": "Bilen har manuell växellåda.",
+       "ja": "その{車|くるま}はマニュアル{車|しゃ}です。"
+      }
+     ],
+     "collocations": [
+      "manuellt arbete",
+      "manuell växellåda",
+      "göra något manuellt"
+     ],
+     "explanation": {
+      "sv": "Manuell betyder att en människa gör arbetet själv, med händerna eller vid datorn, i stället för att en maskin gör det. Man talar om manuellt arbete, manuella tester och en bil med manuell växellåda. Motsatsen är automatisk. Man kan också säga: Vi kontrollerade allt manuellt.",
+      "ja": "「manuell」は、{機械|きかい}ではなく{人|ひと}が{手|て}やパソコンで{自分|じぶん}で{作業|さぎょう}することを{表|あらわ}します。「manuellt arbete（{手作業|てさぎょう}）」「manuella tester（{手動|しゅどう}テスト）」「manuell växellåda（マニュアルの{変速機|へんそくき}）」のように{使|つか}います。{反対|はんたい}は「automatisk（{自動|じどう}の）」です。「Vi kontrollerade allt manuellt（すべて{手作業|てさぎょう}で{確認|かくにん}した）」のようにも{言|い}えます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "kvalitet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.automatiserad",
+   "lemma": "automatiserad",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "automatiserad",
+    "neuter": "automatiserat",
+    "plural": "automatiserade",
+    "definite": "automatiserade"
+   },
+   "senses": [
+    {
+     "id": "s.automatiserad.1",
+     "ja": "{自動化|じどうか}された",
+     "defSv": "Som sköts av maskiner eller datorer, så att människor inte behöver göra arbetet själva.",
+     "defJa": "{人|ひと}が{自分|じぶん}で{作業|さぎょう}しなくてもいいように、{機械|きかい}やコンピューターが{行|おこな}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Fabriken är nästan helt automatiserad.",
+       "ja": "その{工場|こうじょう}はほとんど{完全|かんぜん}に{自動化|じどうか}されています。"
+      },
+      {
+       "sv": "Testerna är automatiserade och körs varje natt.",
+       "ja": "テストは{自動化|じどうか}されていて、{毎晩|まいばん}{実行|じっこう}されます。"
+      }
+     ],
+     "collocations": [
+      "helt automatiserad",
+      "automatiserad testning",
+      "en automatiserad process"
+     ],
+     "explanation": {
+      "sv": "Något som är automatiserat har man gjort så att det sker av sig självt, med hjälp av datorer eller maskiner. Det kan gälla en fabrik, en kassa i butiken eller testerna av ett program. Skillnaden mot manuell är vem som gör jobbet: maskinen eller människan.",
+      "ja": "「automatiserad」は、コンピューターや{機械|きかい}を{使|つか}って、ひとりでに{行|おこな}われるようにしたものを{表|あらわ}します。{工場|こうじょう}、{店|みせ}のレジ、プログラムのテストなどに{使|つか}います。「manuell（{手作業|てさぎょう}の）」との{違|ちが}いは、{機械|きかい}と{人|ひと}のどちらが{作業|さぎょう}をするかです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "kvalitet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.enhetstest",
+   "lemma": "enhetstest",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "enhetstest",
+    "defSg": "enhetstestet",
+    "indefPl": "enhetstester",
+    "defPl": "enhetstesterna"
+   },
+   "senses": [
+    {
+     "id": "s.enhetstest.1",
+     "ja": "{単体|たんたい}テスト、ユニットテスト",
+     "defSv": "Ett litet test som kontrollerar att en enda funktion eller modul fungerar som den ska.",
+     "defJa": "{一|ひと}つの{関数|かんすう}やモジュールが{正|ただ}しく{動|うご}くかを{確|たし}かめる{小|ちい}さなテスト。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon skrev ett enhetstest för funktionen som räknar ut priset.",
+       "ja": "{彼女|かのじょ}は{値段|ねだん}を{計算|けいさん}する{関数|かんすう}の{単体|たんたい}テストを{書|か}きました。"
+      },
+      {
+       "sv": "Projektet har över tusen enhetstester.",
+       "ja": "そのプロジェクトには{千|せん}を{超|こ}える{単体|たんたい}テストがあります。"
+      }
+     ],
+     "collocations": [
+      "skriva enhetstester",
+      "köra enhetstesterna"
+     ],
+     "explanation": {
+      "sv": "Ett enhetstest testar en liten enhet av koden för sig, till exempel en funktion som räknar ut moms. Testet ger funktionen ett värde och kontrollerar att svaret blir rätt. Eftersom varje enhetstest är litet går det mycket snabbt att köra tusentals av dem. Andra tester kontrollerar hur delarna fungerar tillsammans.",
+      "ja": "「enhetstest（{単体|たんたい}テスト）」は、たとえば{消費税|しょうひぜい}を{計算|けいさん}する{関数|かんすう}のように、コードの{小|ちい}さな{単位|たんい}を{単独|たんどく}でテストするものです。{関数|かんすう}に{値|あたい}を{与|あた}えて、{答|こた}えが{正|ただ}しいかを{確認|かくにん}します。{一|ひと}つ{一|ひと}つが{小|ちい}さいので、{何千|なんぜん}ものテストをとても{速|はや}く{実行|じっこう}できます。{部分|ぶぶん}どうしがいっしょに{正|ただ}しく{動|うご}くかは、ほかのテストで{確認|かくにん}します。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "kvalitet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.testfall",
+   "lemma": "testfall",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "testfall",
+    "defSg": "testfallet",
+    "indefPl": "testfall",
+    "defPl": "testfallen"
+   },
+   "senses": [
+    {
+     "id": "s.testfall.1",
+     "ja": "テストケース",
+     "defSv": "Ett bestämt exempel som man testar programmet med: vad man ger programmet och vilket svar man väntar sig.",
+     "defJa": "プログラムをテストするための{決|き}まった{例|れい}：プログラムに{何|なに}を{与|あた}え、どんな{答|こた}えを{期待|きたい}するか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi lade till ett testfall för personer som är födda den 29 februari.",
+       "ja": "2{月|がつ}29{日|にち}{生|う}まれの{人|ひと}のためのテストケースを{追加|ついか}しました。"
+      },
+      {
+       "sv": "Testet har fyra testfall: noll, ett negativt tal, ett litet och ett stort tal.",
+       "ja": "そのテストには、ゼロ、{負|ふ}の{数|かず}、{小|ちい}さな{数|かず}、{大|おお}きな{数|かず}の{四|よっ}つのテストケースがあります。"
+      }
+     ],
+     "collocations": [
+      "ett testfall för …",
+      "lägga till ett testfall"
+     ],
+     "explanation": {
+      "sv": "Ett testfall är ett konkret exempel: om man ger programmet det här, ska det svara så här. Bra testfall tar med de vanliga fallen men också de konstiga, till exempel ett tomt fält eller ett mycket stort tal. Ett test kan innehålla många testfall.",
+      "ja": "「testfall（テストケース）」は、「これを{与|あた}えたら、こう{答|こた}えるはず」という{具体的|ぐたいてき}な{例|れい}です。よいテストケースは、ふつうの{場合|ばあい}だけでなく、{空|から}の{入力欄|にゅうりょくらん}やとても{大|おお}きな{数|かず}のような、{変|か}わった{場合|ばあい}も{含|ふく}みます。{一|ひと}つのテストに、たくさんのテストケースが{入|はい}ることがあります。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "kvalitet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.förväntad",
+   "lemma": "förväntad",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "förväntad",
+    "neuter": "förväntat",
+    "plural": "förväntade",
+    "definite": "förväntade"
+   },
+   "senses": [
+    {
+     "id": "s.förväntad.1",
+     "ja": "{期待|きたい}される、{予想|よそう}される",
+     "defSv": "Som man räknar med eller tror ska komma.",
+     "defJa": "{来|く}るはずだと{考|かんが}えている、{予想|よそう}している。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det förväntade svaret är 42.",
+       "ja": "{期待|きたい}される{答|こた}えは42です。"
+      },
+      {
+       "sv": "Allt gick som förväntat.",
+       "ja": "すべて{予想|よそう}どおりに{進|すす}みました。"
+      }
+     ],
+     "collocations": [
+      "det förväntade resultatet",
+      "som förväntat",
+      "förväntad livslängd"
+     ],
+     "explanation": {
+      "sv": "Förväntad beskriver det man tror eller räknar med ska hända. När man testar ett program jämför man det förväntade resultatet med det svar man får: om de är lika går testet igenom. I nyheterna hör man också om förväntad livslängd. Uttrycket som förväntat betyder att det blev som man trodde.",
+      "ja": "「förväntad」は、{起|お}こるはずだと{考|かんが}えていることや{予想|よそう}していることを{表|あらわ}します。テストでは、{期待|きたい}される{結果|けっか}と{実際|じっさい}の{結果|けっか}を{比|くら}べ、{同|おな}じならテストは{合格|ごうかく}です。ニュースでは「förväntad livslängd（{平均余命|へいきんよみょう}）」という{言葉|ことば}も{聞|き}きます。「som förväntat」は「{予想|よそう}どおり」という{意味|いみ}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "kvalitet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.fallera",
+   "lemma": "fallera",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "fallera",
+    "present": "fallerar",
+    "past": "fallerade",
+    "supine": "fallerat",
+    "imperative": "fallera",
+    "group": "1"
+   },
+   "senses": [
+    {
+     "id": "s.fallera.1",
+     "ja": "{失敗|しっぱい}する、うまくいかない",
+     "defSv": "Inte fungera som det ska; misslyckas.",
+     "defJa": "うまく{働|はたら}かない、{失敗|しっぱい}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Två av testerna fallerade i natt.",
+       "ja": "{昨夜|さくや}、テストのうち{二|ふた}つが{失敗|しっぱい}しました。"
+      },
+      {
+       "sv": "Hela planen fallerade på grund av ett litet misstag.",
+       "ja": "{小|ちい}さなミスのせいで、{計画|けいかく}{全体|ぜんたい}がうまくいきませんでした。"
+      }
+     ],
+     "collocations": [
+      "testet fallerar",
+      "planen fallerade"
+     ],
+     "usageNote": {
+      "sv": "Lite formellt i vardagen, men mycket vanligt om tester och system bland dem som arbetar med datorer.",
+      "ja": "ふだんの{会話|かいわ}では{少|すこ}しかたい{言葉|ことば}ですが、コンピューターの{仕事|しごと}をする{人|ひと}の{間|あいだ}では、テストやシステムについてとてもよく{使|つか}われます。"
+     },
+     "explanation": {
+      "sv": "Att fallera betyder att något inte fungerar eller inte lyckas. Om ett test fallerar har programmet gett ett annat svar än det förväntade. Ordet används också om planer och system: Betalningen fallerade. Det liknar misslyckas, men misslyckas används oftare om människor och fallera oftare om saker och system.",
+      "ja": "「fallera」は、{何|なに}かがうまく{働|はたら}かない、{成功|せいこう}しないという{意味|いみ}です。テストが「fallera」したら、プログラムが{期待|きたい}と{違|ちが}う{答|こた}えを{出|だ}したということです。{計画|けいかく}やシステムにも「Betalningen fallerade（{支払|しはら}いが{失敗|しっぱい}した）」のように{使|つか}います。「misslyckas」に{似|に}ていますが、misslyckasは{人|ひと}について、falleraは{物|もの}やシステムについて{使|つか}うことが{多|おお}いです。"
+     },
+     "frame": {
+      "subject": "Testet"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "kvalitet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.testtäckning",
+   "lemma": "testtäckning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "testtäckning",
+    "defSg": "testtäckningen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.testtäckning.1",
+     "ja": "テストカバレッジ",
+     "defSv": "Hur stor del av koden som körs när man kör testerna, ofta i procent.",
+     "defJa": "テストを{実行|じっこう}したときにコードのどれだけの{部分|ぶぶん}が{実行|じっこう}されるか。たいていパーセントで{表|あらわ}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Projektet har en testtäckning på 80 procent.",
+       "ja": "そのプロジェクトのテストカバレッジは80パーセントです。"
+      },
+      {
+       "sv": "Chefen vill att vi förbättrar testtäckningen innan sommaren.",
+       "ja": "{上司|じょうし}は、{夏|なつ}までにテストカバレッジを{上|あ}げてほしいと{思|おも}っています。"
+      }
+     ],
+     "collocations": [
+      "hög testtäckning",
+      "öka testtäckningen"
+     ],
+     "explanation": {
+      "sv": "Testtäckning mäter hur mycket av koden som testerna faktiskt går igenom. Om testtäckningen är 60 procent finns det 40 procent av koden som inget test kontrollerar. Hög testtäckning är bra, men den visar inte att testerna är bra; man kan köra koden utan att kontrollera svaret.",
+      "ja": "「testtäckning（テストカバレッジ）」は、テストが{実際|じっさい}にコードのどれだけを{通|とお}っているかを{測|はか}るものです。カバレッジが60パーセントなら、どのテストも{確認|かくにん}していないコードが40パーセントあるということです。カバレッジが{高|たか}いのはよいことですが、テストの{質|しつ}がよいことを{示|しめ}すわけではありません。{答|こた}えを{確認|かくにん}せずにコードを{実行|じっこう}するだけのこともあるからです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "kvalitet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}
