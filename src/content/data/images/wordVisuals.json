@@ -84698,7 +84698,10 @@
    "kind": "illustration",
    "motif": "demo.diktator",
    "group": "demokrati",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.fascism.1"
+   ]
   },
   {
    "senseId": "s.makthavare.1",
@@ -89325,7 +89328,10 @@
    "kind": "illustration",
    "motif": "ideo.arbetarrörelse",
    "group": "arbetarrörelse",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.facklig.1"
+   ]
   },
   {
    "senseId": "s.fackförening.1",
@@ -89365,7 +89371,10 @@
     "result": "pass",
     "round": "0.30.0",
     "hash": "be6ce849"
-   }
+   },
+   "confusableWith": [
+    "s.välfärdssamhälle.1"
+   ]
   },
   {
    "senseId": "s.förstatliga.1",
@@ -112609,7 +112618,10 @@
    "kind": "illustration",
    "motif": "antik.stadsstat",
    "group": "stadsstat",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.civilisation.1"
+   ]
   },
   {
    "senseId": "s.grek.1",
@@ -113058,7 +113070,10 @@
     "result": "pass",
     "round": "0.36.0",
     "hash": "a4de2128"
-   }
+   },
+   "confusableWith": [
+    "s.kejsardöme.1"
+   ]
   },
   {
    "senseId": "s.vägnät.1",
@@ -114125,7 +114140,10 @@
    "kind": "illustration",
    "motif": "tmod.humanist",
    "group": "tmod-humanist",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.humanism.1"
+   ]
   },
   {
    "senseId": "s.återupptäcka.1",
@@ -131020,7 +131038,10 @@
    "kind": "illustration",
    "motif": "ostas.shogun",
    "group": "samuraj",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.shogunat.1"
+   ]
   },
   {
    "senseId": "s.tyfon.1",
@@ -174120,6 +174141,574 @@
     "result": "pass",
     "round": "0.55.0",
     "hash": "efab3862",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.befolkning.1",
+   "kind": "illustration",
+   "motif": "manh.befolkning",
+   "group": "b5-befolkning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "40c21c67",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rösträtt.1",
+   "kind": "illustration",
+   "motif": "manh.rösträtt",
+   "group": "b5-rösträtt",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "598b295f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kejsardöme.1",
+   "kind": "illustration",
+   "motif": "manh.kejsardöme",
+   "group": "b5-kejsardöme",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.rike.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "2ebce857",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ståthållare.1",
+   "kind": "illustration",
+   "motif": "manh.ståthållare",
+   "group": "b5-ståthållare",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "2a439ad6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.klassisk.2",
+   "kind": "illustration",
+   "motif": "manh.klassisk",
+   "group": "b5-klassisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "a63474a2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.helig.1",
+   "kind": "illustration",
+   "motif": "manh.helig",
+   "group": "b5-helig",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "598a9af6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.humanism.1",
+   "kind": "illustration",
+   "motif": "manh.humanism",
+   "group": "b5-humanism",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.humanist.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "afeded7d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kolonialism.1",
+   "kind": "illustration",
+   "motif": "manh.kolonialism",
+   "group": "b5-kolonialism",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "0105e00b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.prakt.1",
+   "kind": "illustration",
+   "motif": "manh.prakt",
+   "group": "b5-prakt",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.praktfull.1"
+   ],
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "caeea5b8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.praktfull.1",
+   "kind": "illustration",
+   "motif": "manh.praktfull",
+   "group": "b5-praktfull",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.prakt.1"
+   ],
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "ca74e9bb",
+    "method": "match",
+    "waiver": "Rätt bild men adjektivet går inte att skilja från prakt i en bild; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.beskatta.1",
+   "kind": "illustration",
+   "motif": "manh.beskatta",
+   "group": "b5-beskatta",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "f2258170",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.facklig.1",
+   "kind": "illustration",
+   "motif": "manh.facklig",
+   "group": "b5-facklig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.arbetarrörelse.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "237ca154",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.socialdemokrati.1",
+   "kind": "illustration",
+   "motif": "manh.socialdemokrati",
+   "group": "b5-socialdemokrati",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "b698b81b",
+    "method": "match",
+    "waiver": "Rätt bild men abstrakt bland flera bilder om arbetarrörelsen; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.depression.1",
+   "kind": "illustration",
+   "motif": "manh.depression",
+   "group": "b5-depression",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "a21eed22",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.fascism.1",
+   "kind": "illustration",
+   "motif": "manh.fascism",
+   "group": "b5-fascism",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.diktator.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "019dcc4f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.nazism.1",
+   "kind": "illustration",
+   "motif": "manh.nazism",
+   "group": "b5-nazism",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "2daedc24",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.folkmord.1",
+   "kind": "illustration",
+   "motif": "manh.folkmord",
+   "group": "b5-folkmord",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "11703ae7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.välfärdssamhälle.1",
+   "kind": "illustration",
+   "motif": "manh.välfärdssamhälle",
+   "group": "b5-välfärdssamhälle",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.välfärdsstat.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "0925bb1c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.socialförsäkring.1",
+   "kind": "illustration",
+   "motif": "manh.socialförsäkring",
+   "group": "b5-socialförsäkring",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "cb1fbc33",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.världsomspännande.1",
+   "kind": "illustration",
+   "motif": "manh.världsomspännande",
+   "group": "b5-världsomspännande",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "0eb290e0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rikssamling.1",
+   "kind": "illustration",
+   "motif": "manh.rikssamling",
+   "group": "b5-rikssamling",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "abe74898",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.befrielsekrig.1",
+   "kind": "illustration",
+   "motif": "manh.befrielsekrig",
+   "group": "b5-befrielsekrig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "e9c94916",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.landvinning.1",
+   "kind": "illustration",
+   "motif": "manh.landvinning",
+   "group": "b5-landvinning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "d3214268",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.representationsreform.1",
+   "kind": "illustration",
+   "motif": "manh.representationsreform",
+   "group": "b5-representationsreform",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "bc161ac3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.neutralitetspolitik.1",
+   "kind": "illustration",
+   "motif": "manh.neutralitetspolitik",
+   "group": "b5-neutralitetspolitik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "73a78599",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.shogunat.1",
+   "kind": "illustration",
+   "motif": "manh.shogunat",
+   "group": "b5-shogunat",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.shogun.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "7a948261",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ståndssamhälle.1",
+   "kind": "illustration",
+   "motif": "manh.ståndssamhälle",
+   "group": "b5-ståndssamhälle",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "9149ac5a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kolonialstyre.1",
+   "kind": "illustration",
+   "motif": "manh.kolonialstyre",
+   "group": "b5-kolonialstyre",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "9357dbfd",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kapitulation.1",
+   "kind": "illustration",
+   "motif": "manh.kapitulation",
+   "group": "b5-kapitulation",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "35834f94",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.folkrepublik.1",
+   "kind": "illustration",
+   "motif": "manh.folkrepublik",
+   "group": "b5-folkrepublik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "453bb16f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.civilisation.1",
+   "kind": "illustration",
+   "motif": "manh.civilisation",
+   "group": "b5-civilisation",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stadsstat.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "9769f892",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sanskrit.1",
+   "kind": "illustration",
+   "motif": "manh.sanskrit",
+   "group": "b5-sanskrit",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "2fdf55a2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.blomstra.1",
+   "kind": "illustration",
+   "motif": "manh.blomstra",
+   "group": "b5-blomstra",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "aeb07de4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sultanat.1",
+   "kind": "illustration",
+   "motif": "manh.sultanat",
+   "group": "b5-sultanat",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "4c7e7c12",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.expansion.1",
+   "kind": "illustration",
+   "motif": "manh.expansion",
+   "group": "b5-expansion",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "67d64fb8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.mandat.2",
+   "kind": "illustration",
+   "motif": "manh.mandat",
+   "group": "b5-mandat",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "a693f05e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.indirekt-styre.1",
+   "kind": "illustration",
+   "motif": "manh.indirekt-styre",
+   "group": "b5-indirekt-styre",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "7b7cd2c7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.arbetsplikt.1",
+   "kind": "illustration",
+   "motif": "manh.arbetsplikt",
+   "group": "b5-arbetsplikt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "2ab7fcb5",
     "method": "match"
    }
   }
