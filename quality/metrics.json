@@ -1,17 +1,17 @@
 {
  "_comment": "Lägstanivåer för kvalitetsmåtten. Skrivs av `npm run audit:content -- --update`. Redigera inte för hand.",
  "metrics": {
-  "B2+ förväxlingsord som inte nämns": 2183,
+  "B2+ förväxlingsord som inte nämns": 2191,
   "B2+ med ett exempel": 8459,
   "B2+ utan användningsuppgift": 8059,
   "abstrakt B1 utan förklaring": 1798,
   "beskrivning som bara räknar upp orden": 1495,
   "glosa med två betydelser": 3,
-  "ord med animation": 469,
-  "ord utan bild": 234,
-  "planerad animation saknas": 112,
+  "ord med animation": 472,
+  "ord utan bild": 212,
+  "planerad animation saknas": 110,
   "poster med flera betydelser": 754,
-  "verb och processord utan animation": 3792
+  "verb och processord utan animation": 3790
  },
  "exceptions": [
   {
@@ -76,6 +76,13 @@
    "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Medier: fem par, till exempel förtala/smutskasta och pressfrihet/tryckfrihet)",
    "from": 2174,
    "to": 2183
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Ekonomi: åtta par, till exempel konkurrent/konkurrens och riskspridning/sprida riskerna)",
+   "from": 2183,
+   "to": 2191
   }
  ]
 }

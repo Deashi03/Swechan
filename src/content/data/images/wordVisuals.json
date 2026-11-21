@@ -21872,7 +21872,10 @@
    "kind": "illustration",
    "motif": "städ.ansvar",
    "group": "ansvar",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.ha-hand-om.1"
+   ]
   },
   {
    "senseId": "s.ansvara.1",
@@ -89117,7 +89120,10 @@
     "result": "pass",
     "round": "0.30.0",
     "hash": "6da08466"
-   }
+   },
+   "confusableWith": [
+    "s.konkurrent.1"
+   ]
   },
   {
    "senseId": "s.privatisera.1",
@@ -95647,7 +95653,10 @@
     "result": "pass",
     "round": "0.32.0",
     "hash": "1ed58a59"
-   }
+   },
+   "confusableWith": [
+    "s.kränkande-särbehandling.1"
+   ]
   },
   {
    "senseId": "s.trakasseri.1",
@@ -95768,7 +95777,10 @@
    "kind": "illustration",
    "motif": "jobb.yrkestitel",
    "group": "anställd",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.befattning.1"
+   ]
   },
   {
    "senseId": "s.mellanchef.1",
@@ -96708,7 +96720,10 @@
     "result": "pass",
     "round": "0.32.0",
     "hash": "a2f3956a"
-   }
+   },
+   "confusableWith": [
+    "s.penningpolitik.1"
+   ]
   },
   {
    "senseId": "s.räntehöjning.1",
@@ -97876,7 +97891,10 @@
    "kind": "illustration",
    "motif": "ftg.marknadsföra",
    "group": "ftg",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.marknadsföring.1"
+   ]
   },
   {
    "senseId": "s.reklamkampanj.1",
@@ -99822,7 +99840,8 @@
    "group": "diversifiera",
    "quiz": false,
    "confusableWith": [
-    "s.sprida-riskerna.1"
+    "s.sprida-riskerna.1",
+    "s.riskspridning.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -173066,6 +173085,352 @@
     "result": "pass",
     "round": "0.55.0",
     "hash": "13333bc4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.låneränta.1",
+   "kind": "illustration",
+   "motif": "mano.låneränta",
+   "group": "b5-låneränta",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "1c8f8c7a",
+    "method": "match"
+   },
+   "confusableWith": [
+    "s.räntekostnad.1"
+   ]
+  },
+  {
+   "senseId": "s.räntekostnad.1",
+   "kind": "illustration",
+   "motif": "mano.räntekostnad",
+   "group": "b5-räntekostnad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.låneränta.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "42b78396",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.inflation.1",
+   "kind": "illustration",
+   "motif": "mano.inflation",
+   "group": "b5-inflation",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "571dbe94",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.inkomstskatt.1",
+   "kind": "illustration",
+   "motif": "mano.inkomstskatt",
+   "group": "b5-inkomstskatt",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "1de7cf48",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skattepliktig.1",
+   "kind": "illustration",
+   "motif": "mano.skattepliktig",
+   "group": "b5-skattepliktig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "d005e7ee",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hushålla.1",
+   "kind": "illustration",
+   "motif": "mano.hushålla",
+   "group": "b5-hushålla",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "c134630c",
+    "method": "match",
+    "waiver": "Rätt bild men läses som spara eller avstå; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.ha-hand-om.1",
+   "kind": "illustration",
+   "motif": "mano.ha-hand-om",
+   "group": "b5-ha-hand-om",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ansvar.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "ba044d0f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tjänstledighet.1",
+   "kind": "illustration",
+   "motif": "mano.tjänstledighet",
+   "group": "b5-tjänstledighet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "aaa8fca6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kränkande-särbehandling.1",
+   "kind": "illustration",
+   "motif": "mano.kränkande-särbehandling",
+   "group": "b5-kränkande-särbehandling",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.mobbning.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "b3f0fc70",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.befattning.1",
+   "kind": "illustration",
+   "motif": "mano.befattning",
+   "group": "b5-befattning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.yrkestitel.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "174c919c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.F-skatt.1",
+   "kind": "illustration",
+   "motif": "mano.F-skatt",
+   "group": "b5-F-skatt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b9297438",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.marknadsföring.1",
+   "kind": "illustration",
+   "motif": "mano.marknadsföring",
+   "group": "b5-marknadsföring",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.marknadsföra.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "f66a53f3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.bolag.1",
+   "kind": "illustration",
+   "motif": "mano.bolag",
+   "group": "b5-bolag",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "8347ba04",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.konkurrent.1",
+   "kind": "illustration",
+   "motif": "mano.konkurrent",
+   "group": "b5-konkurrent",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.konkurrens.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "c36fbda3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sektor.1",
+   "kind": "illustration",
+   "motif": "mano.sektor",
+   "group": "b5-sektor",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "8ae0d88c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.effektivisera.1",
+   "kind": "illustration",
+   "motif": "mano.effektivisera",
+   "group": "b5-effektivisera",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "31d186eb",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.arbetsmarknad.1",
+   "kind": "illustration",
+   "motif": "mano.arbetsmarknad",
+   "group": "b5-arbetsmarknad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "ee57dffa",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.finanspolitik.1",
+   "kind": "illustration",
+   "motif": "mano.finanspolitik",
+   "group": "b5-finanspolitik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "e658058c",
+    "method": "match",
+    "waiver": "Flera bilder med regeringsbyggnad i modulen konkurrerar; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.penningpolitik.1",
+   "kind": "illustration",
+   "motif": "mano.penningpolitik",
+   "group": "b5-penningpolitik",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.styrränta.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "d8a8b3ab",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.obligation.1",
+   "kind": "illustration",
+   "motif": "mano.obligation",
+   "group": "b5-obligation",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "52a7313c",
+    "method": "match",
+    "waiver": "Värdepapperssymbolen finns på flera bilder i modulen; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.riskspridning.1",
+   "kind": "illustration",
+   "motif": "mano.riskspridning",
+   "group": "b5-riskspridning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.sprida-riskerna.1",
+    "s.diversifiera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "e47474f7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sprida-riskerna.1",
+   "kind": "illustration",
+   "motif": "mano.sprida-riskerna",
+   "group": "b5-sprida-riskerna",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.riskspridning.1",
+    "s.diversifiera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "29f4d8be",
     "method": "match"
    }
   }
