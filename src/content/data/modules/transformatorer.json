@@ -1,0 +1,206 @@
+{
+ "id": "m.transformatorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Transformatorer",
+ "titleJa": "{変圧器|へんあつき}",
+ "descriptionSv": "Du lär dig att berätta hur elen byter spänning på vägen från kraftverket till uttaget: vad som finns inne i en transformator, varför den brummar och blir varm, och vad nätadaptern till datorn gör.",
+ "descriptionJa": "{発電所|はつでんしょ}からコンセントまでの{間|あいだ}に{電気|でんき}の{電圧|でんあつ}がどう{変|か}わるかを{説明|せつめい}できるようになります。{変圧器|へんあつき}の{中|なか}に{何|なに}があるのか、なぜブーンと{鳴|な}って{熱|あつ}くなるのか、パソコンのACアダプターが{何|なに}をしているのかを{学|まな}びます。",
+ "categoryId": "R07-A03-T04",
+ "tags": [
+  "el",
+  "energi",
+  "elnät"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.energisystemets-miljopaverkan"
+ ],
+ "related": [],
+ "recommendedOrder": 3941,
+ "words": [
+  {
+   "senseId": "s.transformator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ström.2",
+   "active": true
+  },
+  {
+   "senseId": "s.spole.1",
+   "active": false
+  },
+  {
+   "senseId": "s.magnetfält.1",
+   "active": false
+  },
+  {
+   "senseId": "s.järnkärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transformera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.höja.2",
+   "active": true
+  },
+  {
+   "senseId": "s.sänka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätadapter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brumma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energiförlust.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kylning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överhettad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektriker.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Den gröna lådan på gatan",
+  "paragraphs": [
+   "Kenji vill bli elektriker och går en utbildning i Västerås. En dag frågar läraren: – Varför brummar den gröna lådan på gatan utanför skolan? Ingen i klassen vet svaret. – Där inne står en transformator, säger läraren.",
+   "En transformator har en järnkärna och två spolar av koppartråd. När ström går fram och tillbaka i den första spolen bildas ett magnetfält i järnkärnan. Magnetfältet ger en spänning i den andra spolen. På det sättet kan transformatorn höja eller sänka spänningen.",
+   "Man transformerar elen flera gånger på vägen från kraftverket till hemmet. Spänningen höjs för att elen ska kunna skickas långt med liten energiförlust. Nära husen sänks den igen, så att man får 230 volt i uttagen.",
+   "Även hemma finns det små transformatorer. Kenji tittar på nätadaptern till sin bärbara dator. Den omvandlar strömmen från eluttaget så att datorn kan använda den. Adaptern ger datorn precis den effekt som den behöver. – Den blir varm när datorn laddas, säger han.",
+   "– Det är normalt, säger läraren. En transformator förlorar alltid lite energi, och den blir till värme. Stora transformatorer behöver därför kylning, ofta med olja. Om kylningen slutar fungera kan transformatorn bli överhettad. Och att transformatorn brummar beror på att järnkärnan vibrerar lite, hundra gånger per sekund."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står inne i den gröna lådan på gatan?",
+    "options": [
+     "En transformator",
+     "Ett batteri",
+     "En generator",
+     "En dator"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Där inne står en transformator, säger läraren.",
+    "explanationJa": "{中|なか}には{変圧器|へんあつき}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad bildas i järnkärnan när ström går i den första spolen?",
+    "options": [
+     "Ett magnetfält",
+     "Vatten",
+     "Ljus",
+     "Olja"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När ström går fram och tillbaka i den första spolen bildas ett magnetfält i järnkärnan.",
+    "explanationJa": "{鉄心|てっしん}の{中|なか}に{磁場|じば}ができます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför höjs spänningen innan elen skickas långt?",
+    "options": [
+     "För att husen behöver hög spänning",
+     "För att energiförlusten ska bli liten",
+     "För att transformatorn ska brumma",
+     "För att ledningarna ska bli varma"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Spänningen höjs för att elen ska kunna skickas långt med liten energiförlust.",
+    "explanationJa": "{遠|とお}くまで{送|おく}るときのエネルギーの{損失|そんしつ}を{小|ちい}さくするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Nätadaptern blir varm när datorn laddas.",
+    "correct": true,
+    "explanationSv": "– Den blir varm när datorn laddas, säger han.",
+    "explanationJa": "パソコンを{充電|じゅうでん}するとき、ACアダプターは{温|あたた}かくなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Stora transformatorer klarar sig utan kylning.",
+    "correct": false,
+    "explanationSv": "Stora transformatorer behöver därför kylning, ofta med olja.",
+    "explanationJa": "{大|おお}きな{変圧器|へんあつき}には{冷却|れいきゃく}が{必要|ひつよう}です。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Hushållen i Sverige får el med spänningen 230 volt och frekvensen 50 hertz.",
+    "source": "Elsäkerhetsverket",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "En transformator ändrar spänningen med två spolar på en gemensam järnkärna och fungerar bara med växelström.",
+    "source": "Nationalencyklopedin, transformator",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "En transformator brummar med 100 hertz, eftersom järnkärnan ändrar form två gånger per period när frekvensen är 50 hertz.",
+    "source": "Nationalencyklopedin, magnetostriktion",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Spänningen höjs innan elen förs över långa avstånd, eftersom förlusterna i ledningarna då blir mindre.",
+    "source": "Svenska kraftnät, Så fungerar kraftsystemet",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om el och apparater hemma.",
+  "discussionPoints": [
+   "Hur många nätadaptrar och laddare har du hemma?",
+   "Har du hört en transformator brumma någon gång? Var?",
+   "Vad gör du om en apparat blir mycket varm?",
+   "Skulle du vilja arbeta som elektriker? Varför eller varför inte?"
+  ]
+ },
+ "standard": 2
+}

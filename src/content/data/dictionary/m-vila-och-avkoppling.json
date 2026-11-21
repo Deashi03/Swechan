@@ -223,6 +223,7 @@
        "ja": "{休暇中|きゅうかちゅう}は{仕事|しごと}のことを{完全|かんぜん}に{忘|わす}れるようにしています。"
       }
      ],
+     "labelSv": "tankarna",
      "explanation": {
       "sv": "Att koppla bort något betyder att man slutar tänka på det och inte låter det störa en, till exempel jobbet, mejlen eller nyheterna. Många har svårt att koppla bort jobbet när de har mobilen med sig hela tiden. Uttrycket används också om att stänga av en apparat.",
       "ja": "「koppla bort」は、{仕事|しごと}・メール・ニュースなどのことを{考|かんが}えるのをやめ、{邪魔|じゃま}されないようにすることです。いつも{携帯|けいたい}を{持|も}っていると、{仕事|しごと}を{頭|あたま}から{切|き}り{離|はな}すのが{難|むずか}しい{人|ひと}も{多|おお}いです。{機械|きかい}の{接続|せつぞく}を{切|き}るという{意味|いみ}でも{使|つか}います。"
@@ -240,8 +241,52 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.koppla-bort.2",
+     "ja": "（{電源|でんげん}や{回線|かいせん}から）{切|き}り{離|はな}す",
+     "defSv": "Göra så att en apparat eller en del av ett nät inte längre får ström eller signaler.",
+     "defJa": "{機器|きき}や{電線|でんせん}、{電力網|でんりょくもう}の{一部|いちぶ}をほかから{切|き}り{離|はな}して、{電気|でんき}や{信号|しんごう}が{届|とど}かないようにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon kopplar bort datorn från nätet innan hon lagar den.",
+       "ja": "{彼女|かのじょ}は{修理|しゅうり}する{前|まえ}に、パソコンを{電源|でんげん}から{切|き}り{離|はな}します。"
+      },
+      {
+       "sv": "Om man inte betalar kan nätföretaget till slut koppla bort elen.",
+       "ja": "お{金|かね}を{払|はら}わないと、{最後|さいご}には{送配電会社|そうはいでんがいしゃ}が{電気|でんき}を{止|と}めることがあります。"
+      }
+     ],
+     "labelSv": "från elnätet",
+     "collocations": [
+      "koppla bort strömmen",
+      "koppla bort en del av nätet",
+      "kopplas bort från elnätet"
+     ],
+     "explanation": {
+      "sv": "Att koppla bort betyder här att man bryter förbindelsen, så att det inte kommer någon ström. Man gör det före underhåll, eller när en del av nätet är trasig. Motsatsen är koppla in. Med ett vardagligt ord kan man också säga stänga av, men koppla bort betyder att delen inte längre hänger ihop med resten.",
+      "ja": "ここでの「koppla bort」は、つながりを{切|き}って{電気|でんき}が{来|こ}ないようにすることです。{点検|てんけん}の{前|まえ}や、{電力網|でんりょくもう}の{一部|いちぶ}が{壊|こわ}れたときにします。{反対|はんたい}は「koppla in（つなぐ）」です。ふだんの{言葉|ことば}では「stänga av（{切|き}る）」とも{言|い}えますが、「koppla bort」はその{部分|ぶぶん}がほかとつながらなくなることを{表|あらわ}します。"
+     },
+     "frame": {
+      "subject": "Hon",
+      "complement": "datorn"
+     },
+     "tags": [
+      "el",
+      "elnät",
+      "arbete"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.göra-ingenting",

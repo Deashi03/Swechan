@@ -1,0 +1,200 @@
+{
+ "id": "m.elnatets-balans",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Elnätets balans",
+ "titleJa": "{電力網|でんりょくもう}のバランス",
+ "descriptionSv": "Du lär dig att förstå nyheter och samtal om elpriset: varför elen kostar olika mycket i olika delar av Sverige och vid olika tider, hur produktion och förbrukning hålls i balans, och hur du själv kan använda el när den är billig.",
+ "descriptionJa": "{電気料金|でんきりょうきん}についてのニュースや{会話|かいわ}がわかるようになります。スウェーデンの{地域|ちいき}や{時間|じかん}によって{電気|でんき}の{値段|ねだん}がなぜ{違|ちが}うのか、{発電|はつでん}と{消費|しょうひ}のバランスをどう{保|たも}つのか、そして{電気|でんき}が{安|やす}いときに{自分|じぶん}でどう{使|つか}えばよいかを{学|まな}びます。",
+ "categoryId": "R07-A03-T04",
+ "tags": [
+  "el",
+  "elnät",
+  "ekonomi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.frekvens-och-vaxelstrom"
+ ],
+ "related": [],
+ "recommendedOrder": 3946,
+ "words": [
+  {
+   "senseId": "s.balans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.produktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbrukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.efterfrågan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elområde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spotpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överskott.2",
+   "active": true
+  },
+  {
+   "senseId": "s.underskott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderberoende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.planerbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effekttopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.import.1",
+   "active": true
+  },
+  {
+   "senseId": "s.export.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flexibel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämna-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energilager.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prognos.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Varför är elen dyrare i Malmö?",
+  "paragraphs": [
+   "Anna bor i Malmö och har ett elavtal med rörligt pris. Varje morgon tittar hon i en app på dagens spotpris, eftersom elpriset ändras hela tiden. Sverige har fyra elområden, och Malmö ligger i elområde 4, där priset ofta är högst.",
+   "Varför är det så? I norra Sverige finns mycket vattenkraft och liten förbrukning, men i södra Sverige bor många människor. Det blir ett överskott av el i norr och ett underskott i söder, och ledningarna mellan områdena räcker inte alltid till.",
+   "Svenska kraftnät ansvarar för att produktion och förbrukning alltid är i balans. Det har blivit svårare, eftersom vindkraft och el från solen är väderberoende. Vattenkraft och kärnkraft är planerbara: man kan bestämma i förväg hur mycket el de ska ge.",
+   "På kalla vintermorgnar blir det ofta en effekttopp, när många lagar mat, duschar och laddar bilen samtidigt. Då stiger priset. Sverige kan också köpa el från grannländerna. Import behövs ibland, och när det blåser mycket blir det i stället export av el.",
+   "Anna försöker vara flexibel. Hon kör tvättmaskinen på natten och laddar elbilen när priset är lågt. Det hjälper till att jämna ut förbrukningen. Nätföretaget har också byggt ett energilager med batterier. Enligt Energimyndighetens prognos kommer efterfrågan på el att öka."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "I vilket elområde ligger Malmö?",
+    "options": [
+     "Elområde 1",
+     "Elområde 2",
+     "Elområde 4",
+     "Elområde 3"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Sverige har fyra elområden, och Malmö ligger i elområde 4, där priset ofta är högst.",
+    "explanationJa": "マルメは{電力価格区域|でんりょくかかくくいき}4にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir det underskott på el i södra Sverige?",
+    "options": [
+     "Där finns mycket vattenkraft",
+     "Där är det alltid varmt",
+     "Där finns inga ledningar",
+     "Där bor många människor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I norra Sverige finns mycket vattenkraft och liten förbrukning, men i södra Sverige bor många människor.",
+    "explanationJa": "{南部|なんぶ}にはたくさんの{人|ひと}が{住|す}んでいるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilka kraftslag kallar texten planerbara?",
+    "options": [
+     "Vindkraft och el från solen",
+     "Bara vindkraft",
+     "Vattenkraft och kärnkraft",
+     "Bara el från solen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Vattenkraft och kärnkraft är planerbara: man kan bestämma i förväg hur mycket el de ska ge.",
+    "explanationJa": "{水力|すいりょく}と{原子力|げんしりょく}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Priset stiger vid en effekttopp.",
+    "correct": true,
+    "explanationSv": "På kalla vintermorgnar blir det ofta en effekttopp, när många lagar mat, duschar och laddar bilen samtidigt. Då stiger priset.",
+    "explanationJa": "{需要|じゅよう}のピークには{値段|ねだん}が{上|あ}がります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anna kör tvättmaskinen när elen är som dyrast.",
+    "correct": false,
+    "explanationSv": "Hon kör tvättmaskinen på natten och laddar elbilen när priset är lågt.",
+    "explanationJa": "アンナは{電気|でんき}が{安|やす}い{夜|よる}に{洗濯機|せんたくき}を{使|つか}います。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Sverige är sedan den 1 november 2011 indelat i fyra elområden: SE1 Luleå, SE2 Sundsvall, SE3 Stockholm och SE4 Malmö.",
+    "source": "Svenska kraftnät",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Svenska kraftnät är systemansvarig myndighet och ser till att produktion och förbrukning av el hela tiden är i balans.",
+    "source": "Svenska kraftnät; Ellagen (1997:857)",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Energimyndigheten räknar i sina långsiktiga scenarier med att elanvändningen i Sverige ökar.",
+    "source": "Energimyndigheten, Långsiktiga scenarier för energisystemet",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om elpriset och om hur ni använder el.",
+  "discussionPoints": [
+   "Vet du vilket elområde du bor i, och vad elen kostar just nu?",
+   "Försöker du använda el när den är billig? Hur?",
+   "Tycker du att Sverige ska bygga mer vindkraft eller mer kärnkraft? Varför?",
+   "Hur diskuterar man el och energi i Japan?"
+  ]
+ },
+ "standard": 2
+}

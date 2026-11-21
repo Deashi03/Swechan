@@ -1,0 +1,196 @@
+{
+ "id": "m.hog-och-lagspanning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Hög- och lågspänning",
+ "titleJa": "{高電圧|こうでんあつ}と{低電圧|ていでんあつ}",
+ "descriptionSv": "Du lär dig att skilja på högspänning ute i elnätet och lågspänning inne i huset, att förstå varningsskyltar och vad en elektriker säger om elsäkerheten hemma, och vilka elarbeten du inte får göra själv.",
+ "descriptionJa": "{送電網|そうでんもう}の{高電圧|こうでんあつ}と{家|いえ}の{中|なか}の{低電圧|ていでんあつ}の{違|ちが}いがわかるようになります。{警告|けいこく}の{看板|かんばん}や、{電気工事士|でんきこうじし}が{家|いえ}の{電気|でんき}の{安全|あんぜん}について{言|い}うことを{理解|りかい}し、{自分|じぶん}でしてはいけない{電気工事|でんきこうじ}が{何|なに}かを{学|まな}びます。",
+ "categoryId": "R07-A03-T04",
+ "tags": [
+  "el",
+  "säkerhet",
+  "elnät"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.transformatorer"
+ ],
+ "related": [],
+ "recommendedOrder": 3942,
+ "words": [
+  {
+   "senseId": "s.högspänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lågspänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilovolt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livsfara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningsskylt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säkerhetsavstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elsäkerhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.behörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elcentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jordfelsbrytare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.få-en-stöt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dödlig.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uttag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jorda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elinstallation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elolycka.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Livsfara! Högspänning",
+  "paragraphs": [
+   "Sara och Omar har köpt ett gammalt hus utanför Örebro. På en promenad ser de en gul varningsskylt på en stolpe: ”Livsfara! Högspänning”. – Håll säkerhetsavstånd, säger Omar. – Men hur hög är spänningen där? undrar Sara.",
+   "Omar läser på nätet. Ledningen har en spänning på 130 kilovolt, alltså 130 000 volt. Allt över 1 000 volt räknas som högspänning. I huset har de lågspänning, 230 volt i de vanliga uttagen.",
+   "Men även lågspänning kan vara dödlig. Därför ringer de en behörig elektriker som ska kontrollera elsäkerheten i huset. Elektrikern öppnar elcentralen och skakar på huvudet. – Här finns gamla säkringar, men ingen jordfelsbrytare.",
+   "En jordfelsbrytare stänger av strömmen direkt om något är fel, till exempel om någon får en stöt. – Den kan rädda liv, säger elektrikern. Han säger också att uttaget i badrummet inte är jordat. Det ska det vara.",
+   "Elektrikern gör en ny elinstallation i köket. Omar vill hjälpa till, men det får han inte. De flesta elinstallationer får bara göras av ett företag som är registrerat hos Elsäkerhetsverket. – Varje år händer det elolyckor när folk gör sådant själva, säger elektrikern."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står det på skylten?",
+    "options": [
+     "Parkering förbjuden",
+     "Privat väg",
+     "Se upp för barn",
+     "Livsfara! Högspänning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På en promenad ser de en gul varningsskylt på en stolpe: ”Livsfara! Högspänning”.",
+    "explanationJa": "{看板|かんばん}には「{命|いのち}の{危険|きけん}！{高電圧|こうでんあつ}」と{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken spänning räknas som högspänning?",
+    "options": [
+     "Allt över 230 volt",
+     "Allt över 1 000 volt",
+     "Allt under 1 000 volt",
+     "Bara 130 000 volt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Allt över 1 000 volt räknas som högspänning.",
+    "explanationJa": "1000ボルトを{超|こ}える{電圧|でんあつ}が{高電圧|こうでんあつ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad saknas i elcentralen?",
+    "options": [
+     "Säkringar",
+     "En lampa",
+     "En jordfelsbrytare",
+     "Ett uttag"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Här finns gamla säkringar, men ingen jordfelsbrytare.",
+    "explanationJa": "{古|ふる}いヒューズはありますが、{漏電遮断器|ろうでんしゃだんき}がありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Omar får hjälpa elektrikern med elinstallationen.",
+    "correct": false,
+    "explanationSv": "Omar vill hjälpa till, men det får han inte.",
+    "explanationJa": "オマルは{手伝|てつだ}いたいと{思|おも}いましたが、{許|ゆる}されませんでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lågspänning är aldrig farlig.",
+    "correct": false,
+    "explanationSv": "Men även lågspänning kan vara dödlig.",
+    "explanationJa": "{低電圧|ていでんあつ}でも{命|いのち}にかかわることがあります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Växelspänning över 1 000 volt räknas som högspänning och spänning upp till 1 000 volt som lågspänning.",
+    "source": "Elsäkerhetsverket, begreppen hög- och lågspänning",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "De flesta elinstallationer får bara göras av ett elinstallationsföretag som är registrerat hos Elsäkerhetsverket.",
+    "source": "Elsäkerhetslagen (2016:732), Elsäkerhetsverket",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Elsäkerhetsverket rekommenderar jordfelsbrytare i alla bostäder.",
+    "source": "Elsäkerhetsverket",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om el och säkerhet hemma.",
+  "discussionPoints": [
+   "Har du sett varningsskyltar för högspänning? Var?",
+   "Vet du var elcentralen sitter där du bor?",
+   "Vad får man göra själv med elen hemma, och vad ska en elektriker göra?",
+   "Hur ser uttagen och stickkontakterna ut i Japan jämfört med i Sverige?"
+  ]
+ },
+ "standard": 2
+}
