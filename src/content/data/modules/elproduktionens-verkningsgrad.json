@@ -1,0 +1,204 @@
+{
+ "id": "m.elproduktionens-verkningsgrad",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Elproduktionens verkningsgrad",
+ "titleJa": "{発電|はつでん}の{効率|こうりつ}",
+ "descriptionSv": "Hur mycket av energin som blir el i olika kraftverk, vart resten tar vägen och hur man kan utnyttja spillvärmen, och hur man läser effekt och förbrukning på apparater och elräkningen.",
+ "descriptionJa": "さまざまな{発電所|はつでんしょ}でエネルギーのどれだけが{電気|でんき}になるか、{残|のこ}りはどこへ{行|い}くのか、{廃熱|はいねつ}をどう{生|い}かせるか、そして{機器|きき}や{電気料金|でんきりょうきん}の{請求書|せいきゅうしょ}で{出力|しゅつりょく}と{消費量|しょうひりょう}をどう{読|よ}むかを{学|まな}びます。",
+ "categoryId": "R07-A03-T03",
+ "tags": [
+  "energi",
+  "teknik",
+  "elproduktion"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.gasturbiner"
+ ],
+ "related": [],
+ "recommendedOrder": 3936,
+ "words": [
+  {
+   "senseId": "s.lägesenergi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rörelseenergi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elräkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilowattimme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbrukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verkningsgrad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.procent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energiförlust.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spillvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kyltorn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utnyttja.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftvärmeverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kol.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kapacitet.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vart tar energin vägen?",
+  "paragraphs": [
+   "Sofia går en utbildning om el och energi på gymnasiet. Hennes klass ska jämföra olika kraftverk. Läraren Per börjar med en fråga: – Hur mycket av energin blir el?",
+   "I ett vattenkraftverk omvandlar man vattnets lägesenergi först till rörelseenergi och sedan till el. Verkningsgraden är omkring 90 procent, alltså mycket hög. Energiförlusten är liten.",
+   "I ett kärnkraftverk blir bara ungefär en tredjedel av värmen el. Resten blir spillvärme som går ut i havet med kylvattnet. I många andra länder ser man stora kyltorn, där spillvärmen går ut i luften som ånga.",
+   "Ett kraftvärmeverk utnyttjar spillvärmen. Det gör både el och fjärrvärme och kan ta vara på nästan 90 procent av energin i bränslet. Förr eldade många kraftverk kol, men i dag eldar svenska kraftvärmeverk mest sopor och rester från skogen. Ett stort kraftvärmeverk har kapacitet att värma tusentals hem.",
+   "Hemma tittar Sofia på familjens elräkning. Där står förbrukningen i kilowattimmar. – Effekten står på varje apparat, förklarar hon för sin pappa. Om en apparat med hög effekt är på länge, använder den många kilowattimmar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska Sofias klass göra?",
+    "options": [
+     "Bygga ett vattenkraftverk",
+     "Jämföra olika kraftverk",
+     "Läsa elräkningar",
+     "Besöka ett kyltorn"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hennes klass ska jämföra olika kraftverk.",
+    "explanationJa": "いろいろな{発電所|はつでんしょ}を{比|くら}べます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att verkningsgraden är 90 procent?",
+    "options": [
+     "Att 90 procent av energin blir el",
+     "Att kraftverket är 90 år gammalt",
+     "Att elen kostar 90 öre",
+     "Att 90 procent blir spillvärme"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Verkningsgraden är omkring 90 procent, alltså mycket hög. Energiförlusten är liten.",
+    "explanationJa": "エネルギーの90パーセントが{電気|でんき}になるという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör ett kraftvärmeverk med spillvärmen?",
+    "options": [
+     "Gör fjärrvärme av den",
+     "Släpper ut den i havet",
+     "Gör kol av den",
+     "Sparar den till sommaren"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ett kraftvärmeverk utnyttjar spillvärmen. Det gör både el och fjärrvärme …",
+    "explanationJa": "{廃熱|はいねつ}を{地域暖房|ちいきだんぼう}に{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I ett kärnkraftverk blir det mesta av värmen el.",
+    "correct": false,
+    "explanationSv": "I ett kärnkraftverk blir bara ungefär en tredjedel av värmen el.",
+    "explanationJa": "{電気|でんき}になるのは{熱|ねつ}の{約|やく}3{分|ぶん}の1だけです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ett kraftvärmeverk utnyttjar energin bättre än ett kärnkraftverk.",
+    "correct": true,
+    "explanationSv": "Det gör både el och fjärrvärme och kan ta vara på nästan 90 procent av energin i bränslet.",
+    "explanationJa": "{熱電併給|ねつでんへいきゅう}プラントはエネルギーの{約|やく}90パーセントを{生|い}かせます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Ett vattenkraftverk har en verkningsgrad på omkring 90 procent.",
+    "source": "Nationalencyklopedin, uppslaget ”vattenkraft”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "I ett kärnkraftverk blir ungefär en tredjedel av värmen el; resten är spillvärme som förs bort med kylvattnet.",
+    "source": "Strålsäkerhetsmyndigheten, ”Så fungerar ett kärnkraftverk”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Ett kraftvärmeverk kan ta vara på omkring 90 procent av energin i bränslet genom att göra både el och fjärrvärme.",
+    "source": "Energimyndigheten, ”Kraftvärme”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "De svenska kärnkraftverken kyls med havsvatten och har inga kyltorn.",
+    "source": "Strålsäkerhetsmyndigheten, ”Kärnkraftverk i Sverige”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "En kilowattimme är den energi som en effekt på 1 000 watt ger under en timme.",
+    "source": "Nationalencyklopedin, uppslaget ”kilowattimme”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om energi som går förlorad och om er egen elförbrukning.",
+  "discussionPoints": [
+   "Vet du hur många kilowattimmar ditt hem använder på ett år?",
+   "Vilka apparater hemma tror du har störst effekt?",
+   "Har ni fjärrvärme där du bor?",
+   "Hur kan man utnyttja spillvärme på andra sätt?"
+  ]
+ },
+ "standard": 2
+}

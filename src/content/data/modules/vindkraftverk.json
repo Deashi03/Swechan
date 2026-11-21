@@ -1,0 +1,198 @@
+{
+ "id": "m.vindkraftverk",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Vindkraftverk",
+ "titleJa": "{風力発電機|ふうりょくはつでんき}",
+ "descriptionSv": "Hur ett vindkraftverk gör el när vinden får rotorbladen att gå runt, varför vindkraften beror på vädret och hur man kan diskutera för- och nackdelar när en ny vindpark ska byggas.",
+ "descriptionJa": "{風|かぜ}がブレードを{回|まわ}すと{風力発電機|ふうりょくはつでんき}がどうやって{電気|でんき}をつくるか、なぜ{風力発電|ふうりょくはつでん}は{天気|てんき}に{左右|さゆう}されるのか、そして{新|あたら}しいウインドファームをつくるときに{利点|りてん}と{欠点|けってん}をどう{話|はな}し{合|あ}うかを{学|まな}びます。",
+ "categoryId": "R07-A03-T03",
+ "tags": [
+  "energi",
+  "teknik",
+  "elproduktion"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.vattenkraftverk"
+ ],
+ "related": [],
+ "recommendedOrder": 3932,
+ "words": [
+  {
+   "senseId": "s.vindkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindkraftverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindstyrka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.torn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rotorblad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snurra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stå-still.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väderberoende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vindpark.1",
+   "active": true
+  },
+  {
+   "senseId": "s.havsbaserad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vindkrafttekniker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.buller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nackdel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.debatt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vindkraft i skogen",
+  "paragraphs": [
+   "Karin bor i en liten by i skogen. En dag får hon ett brev från kommunen. Ett företag vill bygga en vindpark med tjugo vindkraftverk, bara två kilometer från byn.",
+   "Karins kusin Simon jobbar som vindkrafttekniker. – Ett nytt vindkraftverk kan bli högre än 200 meter, berättar han. När det blåser snurrar rotorbladen, och då gör verket el. Simon klättrar upp i tornen och lagar dem när något går sönder.",
+   "På ett möte i byn blir det en lång debatt. Johan är emot vindparken. – Det blir buller, och skogen blir förstörd, säger han. Andra ser fördelar: byn får pengar från företaget, och det blir nya jobb.",
+   "Karin undrar vad som händer när det inte blåser. – Vindkraft är väderberoende, säger Simon. Vid låg vindstyrka kan verken stå still, och då behövs el från till exempel vattenkraft. Men i Sverige blåser det ofta mest på vintern, när vi behöver mest el.",
+   "En granne tycker att man borde bygga havsbaserad vindkraft i stället. Ute på havet blåser det mer, och verken stör färre människor. Nackdelen är att det kostar mer. Nu ska kommunen bestämma om den får byggas."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad vill företaget bygga?",
+    "options": [
+     "En vindpark nära byn",
+     "En ny skola i byn",
+     "Ett vattenkraftverk i älven",
+     "En väg genom skogen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ett företag vill bygga en vindpark med tjugo vindkraftverk, bara två kilometer från byn.",
+    "explanationJa": "{村|むら}の{近|ちか}くにウインドファームをつくろうとしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Simon i sitt jobb?",
+    "options": [
+     "Han klättrar upp i tornen och lagar verken",
+     "Han säljer el till byn",
+     "Han bestämmer var verken ska stå",
+     "Han skriver brev från kommunen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Simon klättrar upp i tornen och lagar dem när något går sönder.",
+    "explanationJa": "タワーに{登|のぼ}って、{故障|こしょう}したときに{修理|しゅうり}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad menar Simon med att vindkraft är väderberoende?",
+    "options": [
+     "Att verken gör el bara när det blåser",
+     "Att verken går sönder när det regnar",
+     "Att det alltid blåser på vintern",
+     "Att man inte får bygga verk i skogen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vid låg vindstyrka kan verken stå still, och då behövs el från till exempel vattenkraft.",
+    "explanationJa": "{風|かぜ}が{弱|よわ}いと{発電機|はつでんき}が{止|と}まってしまう、という{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Alla i byn är emot vindparken.",
+    "correct": false,
+    "explanationSv": "Andra ser fördelar: byn får pengar från företaget, och det blir nya jobb.",
+    "explanationJa": "{利点|りてん}を{見|み}ている{人|ひと}もいます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är billigare att bygga vindkraftverk på land än ute på havet.",
+    "correct": true,
+    "explanationSv": "Nackdelen är att det kostar mer.",
+    "explanationJa": "{洋上風力|ようじょうふうりょく}のほうがお{金|かね}がかかります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Vindkraften står för mer än en femtedel av Sveriges elproduktion.",
+    "source": "Energimyndigheten, Energiläget (elproduktion per kraftslag)",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Nya vindkraftverk på land kan vara högre än 200 meter, räknat till spetsen av rotorbladet, och ett rotorblad kan vara över 70 meter långt.",
+    "source": "Energimyndigheten, ”Vindkraftens storlek och utveckling”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Vindkraften producerar i Sverige mest el under vinterhalvåret, när det blåser mer.",
+    "source": "Energimyndigheten, ”Vindkraft” (produktion per månad)",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "En ny vindpark på land får bara byggas om kommunen har tillstyrkt den.",
+    "source": "Miljöbalken 16 kap. 4 §",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vindkraft och om var man ska bygga nya vindkraftverk.",
+  "discussionPoints": [
+   "Har du sett ett vindkraftverk på nära håll?",
+   "Skulle du vilja bo nära en vindpark? Varför eller varför inte?",
+   "Vilka fördelar och nackdelar har vindkraft?",
+   "Är havsbaserad vindkraft en bättre idé?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,214 @@
+{
+ "id": "m.karnkraftverk",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Kärnkraftverk",
+ "titleJa": "{原子力発電所|げんしりょくはつでんしょ}",
+ "descriptionSv": "Hur ett kärnkraftverk gör el av värmen från kärnbränsle, hur man arbetar med säkerhet och strålning och varför kärnavfall och kärnkraftens framtid väcker debatt i Sverige.",
+ "descriptionJa": "{原子力発電所|げんしりょくはつでんしょ}が{核燃料|かくねんりょう}の{熱|ねつ}からどうやって{電気|でんき}をつくるか、{安全|あんぜん}と{放射線|ほうしゃせん}にどう{取|と}り{組|く}んでいるか、そしてなぜ{核廃棄物|かくはいきぶつ}や{原子力|げんしりょく}の{将来|しょうらい}がスウェーデンで{議論|ぎろん}になるのかを{学|まな}びます。",
+ "categoryId": "R07-A03-T03",
+ "tags": [
+  "energi",
+  "teknik",
+  "elproduktion"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.solceller"
+ ],
+ "related": [],
+ "recommendedOrder": 3934,
+ "words": [
+  {
+   "senseId": "s.kärnkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kärnkraftverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kärnreaktor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uran.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kärnbränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ånga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kylvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strålning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollrum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.härdsmälta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jodtablett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kärnavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutförvar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.livslängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avveckla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.folkomröstning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett besök på ett kärnkraftverk",
+  "paragraphs": [
+   "Hiroshi läser till ingenjör i Uppsala. En dag åker hans klass på besök till ett kärnkraftverk vid havet. Där finns tre kärnreaktorer, och de gör en stor del av elen i Sverige.",
+   "En guide förklarar hur kraftverket fungerar. I kärnreaktorn finns kärnbränsle av uran. Det blir mycket varmt, och värmen gör vatten till ånga. Ångan får en turbin att gå runt, och generatorn gör el. Kylvattnet tar man från havet.",
+   "Säkerheten är mycket viktig. Alla besökare får bära en liten mätare som visar hur mycket strålning de får. Genom ett fönster ser de kontrollrummet, där personalen sitter vid skärmarna dygnet runt.",
+   "Hiroshi kommer från Japan och minns olyckan 2011, när det blev härdsmälta i tre kärnreaktorer. Guiden berättar att de som bor nära kraftverket här har fått jodtabletter hemskickade. – Men de ska bara tas om myndigheterna säger det, säger hon.",
+   "Till sist pratar de om kärnavfallet. Det ska ligga i ett slutförvar djupt nere i berget i 100 000 år. År 1980 röstade svenskarna i en folkomröstning om att avveckla kärnkraften. I dag vill många i stället öka kärnreaktorernas livslängd. Hiroshi vet inte riktigt vad han själv tycker."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var ligger kärnkraftverket som klassen besöker?",
+    "options": [
+     "I fjällen",
+     "Mitt i Uppsala",
+     "Vid havet",
+     "Vid en älv i norr"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En dag åker hans klass på besök till ett kärnkraftverk vid havet.",
+    "explanationJa": "{海|うみ}のそばにあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad gör ångan i kraftverket?",
+    "options": [
+     "Den kyler ner kärnreaktorn",
+     "Den blir till kärnavfall",
+     "Den får en turbin att gå runt",
+     "Den skyddar mot strålning"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ångan får en turbin att gå runt, och generatorn gör el.",
+    "explanationJa": "{蒸気|じょうき}がタービンを{回|まわ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "När ska man ta jodtabletterna?",
+    "options": [
+     "Varje morgon",
+     "När man besöker kraftverket",
+     "Om man känner sig sjuk",
+     "När myndigheterna säger det"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Men de ska bara tas om myndigheterna säger det, säger hon.",
+    "explanationJa": "{当局|とうきょく}が{指示|しじ}したときだけ{飲|の}みます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kärnavfallet ska ligga i slutförvaret i ungefär hundra år.",
+    "correct": false,
+    "explanationSv": "Det ska ligga i ett slutförvar djupt nere i berget i 100 000 år.",
+    "explanationJa": "{百年|ひゃくねん}ではなく、10{万年|まんねん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Alla i Sverige tycker likadant om kärnkraft.",
+    "correct": false,
+    "explanationSv": "År 1980 röstade svenskarna i en folkomröstning om att avveckla kärnkraften. I dag vill många i stället öka kärnreaktorernas livslängd.",
+    "explanationJa": "{原子力|げんしりょく}についての{意見|いけん}は{人|ひと}によって{違|ちが}い、{時代|じだい}によっても{変|か}わってきました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Forsmarks kärnkraftverk vid Östersjön, norr om Stockholm, har tre reaktorer i drift.",
+    "source": "Strålsäkerhetsmyndigheten, ”Kärnkraftverk i Sverige”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "De svenska kärnkraftverken ligger vid havet och använder havsvatten som kylvatten.",
+    "source": "Strålsäkerhetsmyndigheten, ”Så fungerar ett kärnkraftverk”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Efter jordbävningen och tsunamin i mars 2011 blev det härdsmälta i tre reaktorer i Fukushima Daiichi.",
+    "source": "IAEA, ”The Fukushima Daiichi Accident” (2015)",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Hushåll nära de svenska kärnkraftverken får jodtabletter, som bara ska tas när myndigheterna uppmanar till det.",
+    "source": "Strålsäkerhetsmyndigheten, ”Jodtabletter”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Det använda kärnbränslet ska slutförvaras i berget i Forsmark och isoleras i omkring 100 000 år.",
+    "source": "Svensk Kärnbränslehantering (SKB), ”Slutförvaret för använt kärnbränsle”",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Folkomröstningen om kärnkraft hölls den 23 mars 1980.",
+    "source": "Nationalencyklopedin, uppslaget ”kärnkraftsomröstningen”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kärnkraft och om säkerhet.",
+  "discussionPoints": [
+   "Finns det kärnkraftverk i ditt hemland?",
+   "Skulle du vilja bo nära ett kärnkraftverk?",
+   "Vad tycker du att man ska göra med kärnavfallet?",
+   "Ska Sverige bygga nya reaktorer? Varför eller varför inte?"
+  ]
+ },
+ "standard": 2
+}
