@@ -24,7 +24,7 @@ Läs den här filen först. Historik: `changelog/` (en fil per release eller eta
 
 ## Nästa steg
 
-1. **Kvalitetsplanen** (`docs/QUALITY_PLAN.md`, produktägarens beslut 2026-11-18): del A och B1–B4 är klara. *Datorer & internet* (0.55) och *Programmering & artificiell intelligens* (0.56) är producerade som `standard: 2`. Nästa är **en etapp ur B5–B7** (B5 pågår i en annan session, se *Saknade bilder*), därefter ny produktion av *Elektronik & energi* (R07-A03). **Öppet från 0.56:** produktägaren avgör om *programmering* (s.programmering.1) ska tillbaka som modulord i *Variabler och datatyper* som synonympar med *programmerare*/*koda* eller med `waived`, eller förbli borttaget (se `quality/visual-manual-notes.md`). Köerna: `npm run audit:content -- --backlog`.
+1. **Kvalitetsplanen** (`docs/QUALITY_PLAN.md`, produktägarens beslut 2026-11-18): del A och B1–B4 är klara. *Datorer & internet* (0.55) och *Programmering & artificiell intelligens* (0.56) är producerade som `standard: 2`. Nästa är **en etapp ur B5–B7** (B5 pågår i en annan session, se *Saknade bilder*), därefter ny produktion av *Elektronik & energi* (R07-A03). Köerna: `npm run audit:content -- --backlog`.
    - Resten av eftersläpningen (B5–B7) varvas med ny produktion: en etapp mellan varje nytt överämne.
    - Beslut: matchningstest för symbolbilder, manuellt spår för bilder som underkänts två gånger (aldrig "ingen bild"), kort förklaring för abstrakta B1-ord.
    - Arbetet görs av Opus (produktägarens val).
