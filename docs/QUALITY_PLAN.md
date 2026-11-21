@@ -131,7 +131,7 @@ Varje kö genereras av `npm run audit:content -- --backlog` till `quality/backlo
 | B2 ✅ | Säkra betydelser: "kan också betyda" (177), 「；」 och "Också:" (109) → egna betydelser med `order` | cirka 290 poster | 1–2 |
 | B3 ✅ | Grundord med bara fackbetydelse: lägg till grundbetydelsen | 265 poster | 1–2 |
 | B4 ✅ | Planerade men ej levererade animationer (46), sedan Fysik och Kemi | cirka 350 ord | 2–3 |
-| B5 | Manuellt spår för bildlösa ord. Klart: Avancerad matematik, Filosofi & etik (2026-11-20), Juridik & rättsväsende, Ekologi & miljö (2026-11-21) | 573 ord (386 kvar) | en ämnesgrupp per session, värsta först: Fysik, Matematikens grunder |
+| B5 | Manuellt spår för bildlösa ord. Klart: Avancerad matematik, Filosofi & etik (2026-11-20), Juridik & rättsväsende, Ekologi & miljö, Fysik (2026-11-21) | 573 ord (354 kvar) | en ämnesgrupp per session, värsta först: Matematikens grunder, Väder & klimat, Kemi |
 | B6 | Per överämne, i ordning R01 → R06: betydelseinventering, förklaringar (K5–K7), andra exempel, animationer för verb och processord, strukturerade fakta | 36 ämnesgrupper | en ämnesgrupp per session, högst tre parallellt |
 | B7 | Språkgranskning av R04–R06 med metoden från R01–R03. Kan göras i samma pass som B6 för de grupperna | cirka 720 moduler | ingår i B6 |
 
