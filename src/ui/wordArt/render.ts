@@ -236,6 +236,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'eldev.': () => import('./electronicDevices').then((m) => m.ELDEV_MOTIFS),
   'powgen.': () => import('./powerGeneration').then((m) => m.POWGEN_MOTIFS),
   'grid.': () => import('./powerGrid').then((m) => m.GRID_MOTIFS),
+  'blden.': () => import('./buildingEnergy').then((m) => m.BLDEN_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
