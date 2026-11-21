@@ -1,0 +1,172 @@
+{
+ "id": "m.css-och-layout",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "CSS och layout",
+ "titleJa": "CSSとレイアウト",
+ "descriptionSv": "Du lär dig att beskriva hur en webbsida ser ut och hur delarna på sidan är ordnade, och att förklara hur man ändrar utseendet på alla sidor på en gång med CSS.",
+ "descriptionJa": "ウェブページの{見|み}た{目|め}や、ページの{各部分|かくぶぶん}がどのように{並|なら}んでいるかを{説明|せつめい}し、CSSですべてのページの{見|み}た{目|め}を{一度|いちど}に{変|か}える{方法|ほうほう}を{話|はな}せるようになります。",
+ "categoryId": "R07-A02-T02",
+ "tags": [
+  "programmering",
+  "webb",
+  "design"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.html-element"
+ ],
+ "related": [],
+ "recommendedOrder": 3822,
+ "words": [
+  {
+   "senseId": "s.stilmall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.layout.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgkod.2",
+   "active": true
+  },
+  {
+   "senseId": "s.bakgrundsfärg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.teckenstorlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.marginal.2",
+   "active": true
+  },
+  {
+   "senseId": "s.avstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolumn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rutnät.2",
+   "active": false
+  },
+  {
+   "senseId": "s.centrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.justera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överlappa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.enhetlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utseende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pixel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dölja.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En ny stil för kaféet",
+  "paragraphs": [
+   "Efter två veckor börjar kursen med CSS. Med CSS bestämmer man hur en webbsida ser ut. Lars säger att man ska samla alla regler i en stilmall. Då får alla sidor på webbplatsen samma utseende.",
+   "Saki öppnar Elins webbplats igen. Kaféets skylt är mörkgrön, så hon tar fram färgkoden för den gröna färgen. Den blir bakgrundsfärg i sidhuvudet. Texten i stycket är för liten, så hon gör teckenstorleken större. Sedan centrerar hon rubriken.",
+   "Nu vill hon göra en ny layout. Hon delar sidan i ett rutnät med tre kolumner: bilder till vänster, text i mitten och öppettider till höger. Men två bilder överlappar varandra. Saki ökar avståndet mellan dem och lägger till en marginal runt texten. Lars visar hur man justerar måtten i pixlar.",
+   "I mobilen är menyn för stor, så Saki döljer den på små skärmar. – Det kan vi lösa bättre senare i kursen, säger Lars.",
+   "Till sist jämför Saki alla sidor. Färgerna och texten ser likadana ut överallt. – Nu har webbplatsen ett enhetligt utseende, säger Elin. Hon är glad."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var ska man samla alla regler, enligt Lars?",
+    "options": [
+     "I sidfoten",
+     "I en tabell",
+     "I en stilmall",
+     "I en bild"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Lars säger att man ska samla alla regler i en stilmall.",
+    "explanationJa": "ラーシュは、すべての{決|き}まりをスタイルシートにまとめるべきだと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Saki med rubriken?",
+    "options": [
+     "Hon centrerar den",
+     "Hon döljer den",
+     "Hon gör den grön",
+     "Hon tar bort den"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sedan centrerar hon rubriken.",
+    "explanationJa": "サキは{見出|みだ}しを{中央|ちゅうおう}にそろえます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur många kolumner har den nya layouten?",
+    "options": [
+     "Två",
+     "Tre",
+     "En",
+     "Fyra"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon delar sidan i ett rutnät med tre kolumner …",
+    "explanationJa": "ページを{三列|さんれつ}のグリッドに{分|わ}けています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Två bilder överlappar varandra i början.",
+    "correct": true,
+    "explanationSv": "Men två bilder överlappar varandra.",
+    "explanationJa": "{最初|さいしょ}は{二|に}{枚|まい}の{画像|がぞう}が{重|かさ}なっていました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Elin tycker att sidorna ser olika ut.",
+    "correct": false,
+    "explanationSv": "– Nu har webbplatsen ett enhetligt utseende, säger Elin.",
+    "explanationJa": "エリンは、{見|み}た{目|め}が{統一|とういつ}されたと{満足|まんぞく}しています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur webbsidor ser ut.",
+  "discussionPoints": [
+   "Vilka färger tycker du passar på en webbplats för ett kafé?",
+   "Vill du ha stor eller liten teckenstorlek när du läser i mobilen?",
+   "Vilken webbplats tycker du har en snygg layout?",
+   "Varför är det bra att en webbplats har ett enhetligt utseende?"
+  ]
+ },
+ "standard": 2
+}

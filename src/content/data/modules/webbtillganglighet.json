@@ -1,0 +1,196 @@
+{
+ "id": "m.webbtillganglighet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Webbtillgänglighet",
+ "titleJa": "ウェブアクセシビリティ",
+ "descriptionSv": "Du lär dig att tala om hur webbplatser kan göras tillgängliga för alla, vilka hjälpmedel personer med funktionsnedsättning använder och vilka regler som gäller i Sverige.",
+ "descriptionJa": "ウェブサイトを{誰|だれ}にとっても{使|つか}いやすくする{方法|ほうほう}、{障害|しょうがい}のある{人|ひと}が{使|つか}う{補助具|ほじょぐ}、そしてスウェーデンの{規則|きそく}について{話|はな}せるようになります。",
+ "categoryId": "R07-A02-T02",
+ "tags": [
+  "programmering",
+  "webb",
+  "tillgänglighet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.formular-och-validering"
+ ],
+ "related": [],
+ "recommendedOrder": 3826,
+ "words": [
+  {
+   "senseId": "s.tillgänglighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillgänglig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.funktionsnedsättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synnedsättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgblind.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjälpmedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talsyntes.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skärmläsare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.alternativtext.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tangentbord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.navigera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.textning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lättläst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riktlinje.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tillgänglighetsredogörelse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utesluta.2",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En webbplats för alla",
+  "paragraphs": [
+   "I slutet av kursen pratar Lars om tillgänglighet. En webbplats ska vara tillgänglig för alla, även för personer med en funktionsnedsättning. Han berättar att det finns en lag om detta för myndigheter, kommuner och regioner. Sedan 2025 gäller liknande krav också för många nätbutiker.",
+   "Kursen får besök av Omar, som har en synnedsättning. Han använder en skärmläsare som läser upp texten med talsyntes. Den är ett viktigt hjälpmedel för honom. Omar öppnar Elins sida, och skärmläsaren säger bara ”bild, bild, bild”. – Bilderna saknar alternativtext, säger han. Jag vet inte vad de visar.",
+   "Omar använder inte mus. Han navigerar med tangentbordet, men han kommer inte fram till knappen i formuläret. Saki förstår att hon har uteslutit honom utan att vilja det.",
+   "Lars visar också hur sidan ser ut för en person som är färgblind. Den gröna texten på den röda knappen syns nästan inte. Kontrasten är för låg. Filmen från kaféet behöver dessutom textning.",
+   "Saki läser riktlinjerna i WCAG och gör en lista. Hon skriver alternativtexter, ändrar färgerna och gör texten mer lättläst. Elin vill också ha en tillgänglighetsredogörelse på sidan. – Då kan kunderna se vad vi har gjort och vad vi ska göra bättre, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad säger skärmläsaren om bilderna på Elins sida?",
+    "options": [
+     "Bara ”bild, bild, bild”",
+     "Vad bilderna visar",
+     "Ingenting alls",
+     "Vilka färger bilderna har"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… skärmläsaren säger bara ”bild, bild, bild”.",
+    "explanationJa": "スクリーンリーダーは「{画像|がぞう}、{画像|がぞう}、{画像|がぞう}」としか{言|い}いません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur navigerar Omar?",
+    "options": [
+     "Med musen",
+     "Med tangentbordet",
+     "Med en pekskärm",
+     "Med en penna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han navigerar med tangentbordet …",
+    "explanationJa": "オマルはキーボードで{移動|いどう}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför syns texten på knappen nästan inte?",
+    "options": [
+     "Texten är för liten",
+     "Knappen är dold",
+     "Sidan är för långsam",
+     "Kontrasten är för låg"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Kontrasten är för låg.",
+    "explanationJa": "コントラストが{低|ひく}すぎるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Filmen från kaféet har redan textning.",
+    "correct": false,
+    "explanationSv": "Filmen från kaféet behöver dessutom textning.",
+    "explanationJa": "カフェの{動画|どうが}にはまだ{字幕|じまく}がありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Saki ville inte stänga ute Omar från sidan.",
+    "correct": true,
+    "explanationSv": "Saki förstår att hon har uteslutit honom utan att vilja det.",
+    "explanationJa": "サキはオマルを{締|し}め{出|だ}すつもりはありませんでした。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Lagen om tillgänglighet till digital offentlig service gäller sedan 2019. Den kräver att till exempel myndigheter, kommuner och regioner har tillgängliga webbplatser och en tillgänglighetsredogörelse.",
+    "source": "Lag (2018:1937) om tillgänglighet till digital offentlig service; Myndigheten för digital förvaltning (Digg)",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Sedan den 28 juni 2025 gäller krav på tillgänglighet också för vissa privata digitala tjänster, till exempel e-handel.",
+    "source": "Lag (2023:254) om vissa produkters och tjänsters tillgänglighet",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "WCAG är internationella riktlinjer för tillgänglighet på webben.",
+    "source": "W3C, Web Content Accessibility Guidelines (WCAG)",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om webbplatser som alla ska kunna använda.",
+  "discussionPoints": [
+   "Vad kan göra en webbplats svår att använda?",
+   "Känner du någon som använder ett hjälpmedel för att läsa eller skriva?",
+   "Brukar du titta på filmer med textning? Varför?",
+   "Varför är det viktigt att myndigheternas webbplatser är tillgängliga?"
+  ]
+ },
+ "standard": 2
+}

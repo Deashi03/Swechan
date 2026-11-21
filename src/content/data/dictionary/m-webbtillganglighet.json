@@ -1,0 +1,257 @@
+{
+ "entries": [
+  {
+   "id": "e.synnedsättning",
+   "lemma": "synnedsättning",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "synnedsättning",
+    "defSg": "synnedsättningen",
+    "indefPl": "synnedsättningar",
+    "defPl": "synnedsättningarna"
+   },
+   "senses": [
+    {
+     "id": "s.synnedsättning.1",
+     "ja": "{視覚障害|しかくしょうがい}",
+     "defSv": "Att man ser dåligt eller inte alls, även med glasögon.",
+     "defJa": "メガネをかけてもよく{見|み}えない、またはまったく{見|み}えないこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Omar har en synnedsättning.",
+       "ja": "オマルには{視覚障害|しかくしょうがい}があります。"
+      },
+      {
+       "sv": "Sidan ska fungera för personer med synnedsättningar.",
+       "ja": "そのサイトは、{視覚障害|しかくしょうがい}のある{人|ひと}にも{使|つか}えるものでなければなりません。"
+      }
+     ],
+     "collocations": [
+      "ha en synnedsättning",
+      "personer med synnedsättning"
+     ],
+     "explanation": {
+      "sv": "Synnedsättning är ett brett ord: det gäller både den som ser lite och den som inte ser alls. Man säger hellre ”en person med synnedsättning” än att man bara talar om sjukdomen. Den som är färgblind ser färger på ett annat sätt, men har oftast ingen synnedsättning.",
+      "ja": "「synnedsättning」は{幅|はば}の{広|ひろ}い{言葉|ことば}で、{少|すこ}ししか{見|み}えない{人|ひと}にも、まったく{見|み}えない{人|ひと}にも{使|つか}います。{障害|しょうがい}だけを{話題|わだい}にするより、「en person med synnedsättning（{視覚障害|しかくしょうがい}のある{人|ひと}）」という{言|い}い{方|かた}が{好|この}まれます。{色覚異常|しきかくいじょう}の{人|ひと}は{色|いろ}の{見|み}え{方|かた}が{違|ちが}いますが、たいてい{視覚障害|しかくしょうがい}はありません。"
+     },
+     "tags": [
+      "programmering",
+      "webb",
+      "tillgänglighet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.skärmläsare",
+   "lemma": "skärmläsare",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "skärmläsare",
+    "defSg": "skärmläsaren",
+    "indefPl": "skärmläsare",
+    "defPl": "skärmläsarna"
+   },
+   "senses": [
+    {
+     "id": "s.skärmläsare.1",
+     "ja": "スクリーンリーダー",
+     "defSv": "Ett program som läser upp texten på skärmen, så att personer som inte ser kan använda datorn eller mobilen.",
+     "defJa": "{画面|がめん}の{文字|もじ}を{読|よ}み{上|あ}げて、{目|め}の{見|み}えない{人|ひと}がパソコンやスマホを{使|つか}えるようにするプログラム。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han lyssnar på sidan med en skärmläsare.",
+       "ja": "{彼|かれ}はスクリーンリーダーでページを{聞|き}いています。"
+      }
+     ],
+     "tags": [
+      "programmering",
+      "webb",
+      "tillgänglighet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.alternativtext",
+   "lemma": "alternativtext",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "alternativtext",
+    "defSg": "alternativtexten",
+    "indefPl": "alternativtexter",
+    "defPl": "alternativtexterna"
+   },
+   "senses": [
+    {
+     "id": "s.alternativtext.1",
+     "ja": "{代替|だいたい}テキスト",
+     "defSv": "En kort text som beskriver en bild, så att en skärmläsare kan läsa upp vad bilden visar.",
+     "defJa": "{画像|がぞう}の{内容|ないよう}を{説明|せつめい}する{短|みじか}い{文|ぶん}。スクリーンリーダーが{読|よ}み{上|あ}げられるようにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Bilden saknar alternativtext.",
+       "ja": "その{画像|がぞう}には{代替|だいたい}テキストがありません。"
+      },
+      {
+       "sv": "Saki skrev alternativtexter till alla bilder.",
+       "ja": "サキはすべての{画像|がぞう}に{代替|だいたい}テキストをつけました。"
+      }
+     ],
+     "collocations": [
+      "skriva en alternativtext",
+      "alternativtext till en bild"
+     ],
+     "explanation": {
+      "sv": "En alternativtext står i ett attribut i bildens tagg och syns inte på sidan. Den ska säga vad bilden visar och varför den finns där, till exempel ”Kaféets uteservering i solen”. En bild som bara är till för att vara snygg kan ha en tom alternativtext.",
+      "ja": "{代替|だいたい}テキストは{画像|がぞう}のタグの{属性|ぞくせい}に{書|か}かれ、ページには{表示|ひょうじ}されません。「{日|ひ}の{当|あ}たるカフェのテラス{席|せき}」のように、{画像|がぞう}に{何|なに}が{写|うつ}っているか、なぜそこにあるかを{書|か}きます。{飾|かざ}りのためだけの{画像|がぞう}なら、{代替|だいたい}テキストは{空|から}でもかまいません。"
+     },
+     "tags": [
+      "programmering",
+      "webb",
+      "tillgänglighet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.riktlinje",
+   "lemma": "riktlinje",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "riktlinje",
+    "defSg": "riktlinjen",
+    "indefPl": "riktlinjer",
+    "defPl": "riktlinjerna"
+   },
+   "senses": [
+    {
+     "id": "s.riktlinje.1",
+     "ja": "{指針|ししん}、ガイドライン",
+     "defSv": "En regel eller ett råd om hur man bör göra något. Ordet används oftast i plural.",
+     "defJa": "{何|なに}かをどのように{行|おこな}うべきかについての{決|き}まりや{助言|じょげん}。たいてい{複数形|ふくすうけい}で{使|つか}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Följ riktlinjerna för tillgänglighet.",
+       "ja": "アクセシビリティのガイドラインに{従|したが}ってください。"
+      },
+      {
+       "sv": "Skolan har nya riktlinjer för mobiler.",
+       "ja": "{学校|がっこう}には、スマホについての{新|あたら}しい{指針|ししん}があります。"
+      }
+     ],
+     "collocations": [
+      "följa riktlinjerna",
+      "nya riktlinjer för …"
+     ],
+     "explanation": {
+      "sv": "Riktlinjer säger vad man bör göra, men de är inte alltid en lag. En myndighet kan till exempel ge riktlinjer för hur man ska skriva eller arbeta. För webben finns internationella riktlinjer för tillgänglighet som heter WCAG.",
+      "ja": "ガイドラインは、どうするべきかを{示|しめ}すものですが、{必|かなら}ずしも{法律|ほうりつ}ではありません。たとえば{役所|やくしょ}が、{文書|ぶんしょ}の{書|か}き{方|かた}や{仕事|しごと}の{進|すす}め{方|かた}についてガイドラインを{出|だ}すことがあります。ウェブにはWCAGという、アクセシビリティの{国際的|こくさいてき}なガイドラインがあります。"
+     },
+     "tags": [
+      "programmering",
+      "webb",
+      "tillgänglighet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.tillgänglighetsredogörelse",
+   "lemma": "tillgänglighetsredogörelse",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "tillgänglighetsredogörelse",
+    "defSg": "tillgänglighetsredogörelsen",
+    "indefPl": "tillgänglighetsredogörelser",
+    "defPl": "tillgänglighetsredogörelserna"
+   },
+   "senses": [
+    {
+     "id": "s.tillgänglighetsredogörelse.1",
+     "ja": "アクセシビリティ{報告書|ほうこくしょ}",
+     "defSv": "En text på en webbplats som berättar hur tillgänglig webbplatsen är och vad som ännu inte fungerar.",
+     "defJa": "ウェブサイトがどのくらいアクセシブルか、まだ{何|なに}がうまくいっていないかを{説明|せつめい}する、サイト{上|じょう}の{文書|ぶんしょ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Myndighetens tillgänglighetsredogörelse finns längst ner på sidan.",
+       "ja": "その{役所|やくしょ}のアクセシビリティ{報告書|ほうこくしょ}は、ページのいちばん{下|した}にあります。"
+      },
+      {
+       "sv": "Kommunen har uppdaterat sina tillgänglighetsredogörelser.",
+       "ja": "その{市|し}はアクセシビリティ{報告書|ほうこくしょ}を{更新|こうしん}しました。"
+      }
+     ],
+     "collocations": [
+      "publicera en tillgänglighetsredogörelse",
+      "läsa tillgänglighetsredogörelsen"
+     ],
+     "explanation": {
+      "sv": "I en tillgänglighetsredogörelse står vilka delar av webbplatsen som inte är tillgängliga och hur man kan kontakta någon om man har problem. Webbplatser från till exempel myndigheter och kommuner måste ha en sådan text enligt lag. Länken finns ofta i sidfoten.",
+      "ja": "アクセシビリティ{報告書|ほうこくしょ}には、サイトのどの{部分|ぶぶん}がアクセシブルでないか、{困|こま}ったときにどこへ{連絡|れんらく}すればよいかが{書|か}かれています。{役所|やくしょ}や{市町村|しちょうそん}などのサイトには、{法律|ほうりつ}でこの{文書|ぶんしょ}が{義務|ぎむ}づけられています。リンクはたいていフッターにあります。"
+     },
+     "tags": [
+      "programmering",
+      "webb",
+      "tillgänglighet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

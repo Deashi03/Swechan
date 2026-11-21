@@ -1,0 +1,176 @@
+{
+ "id": "m.frontend-och-backend",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Frontend och backend",
+ "titleJa": "フロントエンドとバックエンド",
+ "descriptionSv": "Du lär dig att tala om hur arbetet med en webbplats delas upp på en arbetsplats: vad användaren ser, vad som händer på servern och hur en grupp bygger och lanserar en tjänst tillsammans.",
+ "descriptionJa": "{職場|しょくば}でウェブサイトの{仕事|しごと}がどのように{分担|ぶんたん}されるかについて{話|はな}す{言葉|ことば}を{学|まな}びます。ユーザーに{見|み}える{部分|ぶぶん}、サーバーで{起|お}こること、そしてチームがサービスをどう{作|つく}って{公開|こうかい}するかを{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A02-T02",
+ "tags": [
+  "programmering",
+  "webb",
+  "arbete"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.webbtillganglighet"
+ ],
+ "related": [],
+ "recommendedOrder": 3827,
+ "words": [
+  {
+   "senseId": "s.webbutvecklare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konsult.1",
+   "active": false
+  },
+  {
+   "senseId": "s.uppdragsgivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prototyp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frontend.1",
+   "active": true
+  },
+  {
+   "senseId": "s.backend.1",
+   "active": true
+  },
+  {
+   "senseId": "s.server.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förfrågan.2",
+   "active": true
+  },
+  {
+   "senseId": "s.svarstid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belastning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ramverk.2",
+   "active": true
+  },
+  {
+   "senseId": "s.webbhotell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.arbetsfördelning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samarbeta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nätbutik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lansera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Första jobbet",
+  "paragraphs": [
+   "Efter kursen får Saki praktik på ett företag i Malmö som bygger webbplatser och appar. Där arbetar webbutvecklare och konsulter. Deras uppdragsgivare är ett företag som säljer kläder och vill ha en ny nätbutik. Gruppen har redan gjort en prototyp.",
+   "Saki ska jobba med frontend. Hon bygger det som kunderna ser: bilder på kläderna, knappar och formulär. Hennes kollega Daniel jobbar med backend. Han ser till att servern lagrar beställningar och kontrollerar betalningar.",
+   "Daniel förklarar hur det hänger ihop. När en kund klickar på en tröja skickar webbläsaren en förfrågan till servern. Servern hämtar uppgifterna och skickar tillbaka ett svar. Om svarstiden är lång blir kunden irriterad.",
+   "Före en stor rea testar de belastningen. Klarar servern tusentals förfrågningar samtidigt? De ser också över avtalet med webbhotellet. Saki bygger sidorna med ett ramverk, så hon behöver inte skriva all kod från början.",
+   "Varje måndag pratar gruppen om arbetsfördelningen. Saki märker hur viktigt det är att de som jobbar med frontend och backend samarbetar. I maj lanserar företaget den nya nätbutiken. – Nu är jag en riktig webbutvecklare, tänker Saki."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad vill uppdragsgivaren ha?",
+    "options": [
+     "En ny app för bussar",
+     "Ett nytt kafé",
+     "En ny skola",
+     "En ny nätbutik"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Deras uppdragsgivare är ett företag som säljer kläder och vill ha en ny nätbutik.",
+    "explanationJa": "{依頼主|いらいぬし}は、{服|ふく}を{売|う}る{会社|かいしゃ}で、{新|あたら}しいネットショップを{求|もと}めています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad jobbar Daniel med?",
+    "options": [
+     "Backend",
+     "Frontend",
+     "Kläder",
+     "Reklam"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hennes kollega Daniel jobbar med backend.",
+    "explanationJa": "ダニエルはバックエンドの{担当|たんとう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad skickar webbläsaren när en kund klickar på en tröja?",
+    "options": [
+     "Ett ramverk",
+     "En förfrågan till servern",
+     "En prototyp",
+     "En betalning till Daniel"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När en kund klickar på en tröja skickar webbläsaren en förfrågan till servern.",
+    "explanationJa": "ブラウザはサーバーにリクエストを{送|おく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Saki skriver all kod från början.",
+    "correct": false,
+    "explanationSv": "Saki bygger sidorna med ett ramverk, så hon behöver inte skriva all kod från början.",
+    "explanationJa": "フレームワークを{使|つか}うので、すべてを{一|いち}から{書|か}く{必要|ひつよう}はありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Den nya nätbutiken lanseras i maj.",
+    "correct": true,
+    "explanationSv": "I maj lanserar företaget den nya nätbutiken.",
+    "explanationJa": "{新|あたら}しいネットショップは{五月|ごがつ}に{公開|こうかい}されます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att arbeta med webbutveckling.",
+  "discussionPoints": [
+   "Skulle du hellre jobba med frontend eller backend? Varför?",
+   "Vad är viktigt när man samarbetar i en grupp på jobbet?",
+   "Vad gör du när en webbplats har lång svarstid?",
+   "Vilka jobb inom IT känner du till?"
+  ]
+ },
+ "standard": 2
+}

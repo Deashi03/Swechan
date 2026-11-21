@@ -1,0 +1,175 @@
+{
+ "id": "m.formular-och-validering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Formulär och validering",
+ "titleJa": "フォームと{入力|にゅうりょく}チェック",
+ "descriptionSv": "Du lär dig att tala om formulär på webben: hur man väljer och skriver in uppgifter, vad som måste fyllas i och vad som händer när datorn kontrollerar att allt är rätt.",
+ "descriptionJa": "ウェブのフォームについて{話|はな}す{言葉|ことば}を{学|まな}びます。{情報|じょうほう}の{選|えら}び{方|かた}や{入力|にゅうりょく}のしかた、{必|かなら}ず{記入|きにゅう}する{欄|らん}、そしてコンピューターが{入力|にゅうりょく}{内容|ないよう}をチェックするときに{何|なに}が{起|お}こるかを{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A02-T02",
+ "tags": [
+  "programmering",
+  "webb"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.responsiv-design"
+ ],
+ "related": [],
+ "recommendedOrder": 3825,
+ "words": [
+  {
+   "senseId": "s.formulär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fält.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fylla-i.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inmatning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.platshållartext.1",
+   "active": false
+  },
+  {
+   "senseId": "s.obligatorisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.asterisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kryssruta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.alternativknapp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rullgardinsmeny.1",
+   "active": true
+  },
+  {
+   "senseId": "s.e-postadress.1",
+   "active": true
+  },
+  {
+   "senseId": "s.validering.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ogiltig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felmeddelande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bekräftelse.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett formulär för bokningar",
+  "paragraphs": [
+   "Elin vill att kunderna ska kunna boka bord på webbplatsen. Saki bygger ett formulär med fält för namn, e-postadress och telefonnummer. I varje tomt fält står en grå platshållartext, till exempel ”Skriv ditt namn här”.",
+   "Namn och e-postadress är obligatoriska, och bredvid dem står en asterisk. Antal personer väljer man i en rullgardinsmeny, och tiden väljer man med alternativknappar: lunch eller middag. Längst ner finns en kryssruta för den som vill ha Elins nyhetsbrev.",
+   "Lars påminner om validering. Webbläsaren kan kontrollera att e-postadressen har ett @, men servern måste också kontrollera all inmatning. Annars kan någon skicka in fel uppgifter eller farlig kod.",
+   "Saki testar formuläret. Hon skriver ett telefonnummer med bokstäver. Ett felmeddelande visar att numret är ogiltigt. Hon rättar numret och fyller i resten av formuläret.",
+   "När hon skickar in formuläret kommer en bekräftelse: ”Tack! Ditt bord är bokat.” Samtidigt får Elin ett mejl om bokningen. – Äntligen behöver jag inte svara i telefon hela dagen, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står i de tomma fälten?",
+    "options": [
+     "Ett felmeddelande",
+     "En asterisk",
+     "En grå platshållartext",
+     "En länk"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I varje tomt fält står en grå platshållartext …",
+    "explanationJa": "{空|から}の{入力欄|にゅうりょくらん}には、{薄|うす}いプレースホルダーが{表示|ひょうじ}されています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur väljer man antal personer?",
+    "options": [
+     "I en rullgardinsmeny",
+     "Med en kryssruta",
+     "Med alternativknappar",
+     "I ett popupfönster"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Antal personer väljer man i en rullgardinsmeny …",
+    "explanationJa": "{人数|にんずう}はドロップダウンメニューで{選|えら}びます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför måste servern också kontrollera inmatningen?",
+    "options": [
+     "Annars kan någon skicka in fel uppgifter eller farlig kod",
+     "Webbläsaren är för långsam",
+     "Elin vill läsa allt först",
+     "Formuläret är för långt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Annars kan någon skicka in fel uppgifter eller farlig kod.",
+    "explanationJa": "サーバーでもチェックしないと、{間違|まちが}ったデータや{危険|きけん}なコードが{送|おく}られてしまうおそれがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Saki skriver ett telefonnummer med bokstäver.",
+    "correct": true,
+    "explanationSv": "Hon skriver ett telefonnummer med bokstäver.",
+    "explanationJa": "サキはわざと{文字|もじ}の{入|はい}った{電話番号|でんわばんごう}を{入力|にゅうりょく}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Elin behöver svara i telefon lika mycket som förut.",
+    "correct": false,
+    "explanationSv": "– Äntligen behöver jag inte svara i telefon hela dagen, säger hon.",
+    "explanationJa": "エリンは、もう{一日中|いちにちじゅう}{電話|でんわ}に{出|で}なくてもよくなりました。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om formulär på nätet.",
+  "discussionPoints": [
+   "Vilka formulär fyller du i på nätet?",
+   "Vad gör du när ett formulär visar ett felmeddelande?",
+   "Brukar du klicka i kryssrutan för nyhetsbrev?",
+   "Vad gör ett formulär lätt eller svårt att fylla i?"
+  ]
+ },
+ "standard": 2
+}

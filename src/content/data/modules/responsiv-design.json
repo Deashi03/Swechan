@@ -1,0 +1,176 @@
+{
+ "id": "m.responsiv-design",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Responsiv design",
+ "titleJa": "レスポンシブデザイン",
+ "descriptionSv": "Du lär dig att tala om hur en webbsida anpassar sig till olika skärmar, hur mobilen hålls och vad som gör en sida lätt att använda.",
+ "descriptionJa": "ウェブページがいろいろな{画面|がめん}にどう{合|あ}わせて{変|か}わるか、スマホの{向|む}き、そしてページを{使|つか}いやすくするものは{何|なに}かについて{話|はな}せるようになります。",
+ "categoryId": "R07-A02-T02",
+ "tags": [
+  "programmering",
+  "webb",
+  "design"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.javascript-i-webblasaren"
+ ],
+ "related": [],
+ "recommendedOrder": 3824,
+ "words": [
+  {
+   "senseId": "s.enhet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.surfplatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pekskärm.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skärmstorlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anpassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mobilanpassad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.responsiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flexibel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bredd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brytpunkt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stående-läge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.liggande-läge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rotera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hamburgermeny.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radbrytning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.zooma.1",
+   "active": false
+  },
+  {
+   "senseId": "s.användarupplevelse.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Samma sida på alla skärmar",
+  "paragraphs": [
+   "Efter jul börjar en ny del av kursen. Lars visar att de flesta som besöker Elins sida använder mobilen. Men sidan är gjord för en stor skärm. I mobilen måste man zooma och scrolla åt sidan för att kunna läsa.",
+   "Sidan behöver bli responsiv. En responsiv sida anpassar sig efter skärmstorleken. Den ska fungera på alla enheter: en stor dator, en surfplatta och en mobil med pekskärm. Den ska alltså vara mer än bara mobilanpassad.",
+   "Saki gör layouten flexibel. Hon sätter två brytpunkter. När skärmens bredd är mindre än en surfplattas blir tre kolumner till en, och menyn byts mot en hamburgermeny.",
+   "Sedan testar hon sidan i sin egen mobil. I stående läge ser allt bra ut. Men när hon roterar mobilen till liggande läge blir rubriken för stor, och radbrytningen hamnar mitt i kaféets namn.",
+   "Hon ändrar teckenstorleken och testar igen. – En bra användarupplevelse är viktigare än en snygg bild, säger Lars. Elin håller med. Nu kan hennes kunder läsa menyn utan att zooma."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad använder de flesta som besöker Elins sida?",
+    "options": [
+     "En stor dator",
+     "Mobilen",
+     "En surfplatta",
+     "En smartklocka"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Lars visar att de flesta som besöker Elins sida använder mobilen.",
+    "explanationJa": "エリンのページを{訪|おとず}れる{人|ひと}のほとんどはスマホを{使|つか}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer med menyn på små skärmar?",
+    "options": [
+     "Den försvinner helt",
+     "Den blir större",
+     "Den byts mot en hamburgermeny",
+     "Den flyttas till sidfoten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… och menyn byts mot en hamburgermeny.",
+    "explanationJa": "メニューはハンバーガーメニューに{置|お}き{換|か}わります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad blir fel i liggande läge?",
+    "options": [
+     "Bilderna försvinner",
+     "Sidan blir mörk",
+     "Rubriken blir för stor",
+     "Kartan syns inte"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… blir rubriken för stor …",
+    "explanationJa": "{横向|よこむ}きにすると{見出|みだ}しが{大|おお}きすぎてしまいます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Saki sätter tre brytpunkter.",
+    "correct": false,
+    "explanationSv": "Hon sätter två brytpunkter.",
+    "explanationJa": "ブレークポイントは{三|みっ}つではなく{二|ふた}つです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Elins kunder behöver inte längre zooma för att läsa menyn.",
+    "correct": true,
+    "explanationSv": "Nu kan hennes kunder läsa menyn utan att zooma.",
+    "explanationJa": "お{客|きゃく}さんはもうズームしなくてもメニューを{読|よ}めます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att använda webbplatser i mobilen.",
+  "discussionPoints": [
+   "Använder du oftast mobilen eller datorn när du surfar?",
+   "Vad är jobbigt med webbplatser som inte är mobilanpassade?",
+   "Läser du helst i stående eller liggande läge?",
+   "Vilken app tycker du har en bra användarupplevelse? Varför?"
+  ]
+ },
+ "standard": 2
+}

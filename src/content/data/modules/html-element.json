@@ -1,0 +1,171 @@
+{
+ "id": "m.html-element",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "HTML-element",
+ "titleJa": "HTMLの{要素|ようそ}",
+ "descriptionSv": "Du lär dig orden för hur en webbsida byggs upp med HTML: vad taggar och element är och vad delarna på en sida heter, så att du kan följa en nybörjarkurs i webbutveckling.",
+ "descriptionJa": "HTMLでウェブページがどのように{作|つく}られているかを{表|あらわ}す{言葉|ことば}を{学|まな}びます。タグや{要素|ようそ}とは{何|なに}か、ページの{各部分|かくぶぶん}を{何|なん}と{呼|よ}ぶかがわかり、{初心者|しょしんしゃ}{向|む}けのウェブ{開発|かいはつ}{講座|こうざ}についていけるようになります。",
+ "categoryId": "R07-A02-T02",
+ "tags": [
+  "programmering",
+  "webb"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kommentarer-och-dokumentation"
+ ],
+ "related": [],
+ "recommendedOrder": 3821,
+ "words": [
+  {
+   "senseId": "s.webbutvecklare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.märkspråk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tagg.2",
+   "active": true
+  },
+  {
+   "senseId": "s.snedstreck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.5",
+   "active": true
+  },
+  {
+   "senseId": "s.attribut.3",
+   "active": false
+  },
+  {
+   "senseId": "s.rubrik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stycke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.punktlista.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.länk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sidhuvud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sidfot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bädda-in.2",
+   "active": false
+  },
+  {
+   "senseId": "s.förhandsgranska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.publicera.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Sakis första webbsida",
+  "paragraphs": [
+   "Saki har bott i Malmö i tre år. På kvällarna går hon en kurs i webbutveckling, för hon vill bli webbutvecklare. Den första veckan handlar om HTML. Läraren Lars förklarar att HTML är ett märkspråk: man sätter taggar runt texten för att visa vad varje del är.",
+   "En tagg börjar med < och slutar med >. De flesta taggar kommer två och två. Den andra taggen har ett snedstreck. Taggarna och texten mellan dem är ett element. Vissa element har också ett attribut, till exempel adressen i en länk.",
+   "Saki gör en webbsida åt sin vän Elin, som har ett kafé. Högst upp skriver hon en rubrik med kaféets namn. Under rubriken kommer ett kort stycke om kaféet och en punktlista med veckans kakor. Priserna lägger hon i en tabell.",
+   "Sedan gör hon ett sidhuvud med en meny och en sidfot med adress och telefonnummer. I sidfoten finns också en länk till en karta. Till sist vill hon bädda in en kort film från kaféet.",
+   "Innan Saki publicerar sidan förhandsgranskar hon den i webbläsaren. Allt ser bra ut. – Det ser ut som en riktig webbplats! säger Lars. Elin blir glad och vill ha en sida till."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad handlar den första veckan av kursen om?",
+    "options": [
+     "Kaféer",
+     "Kartor",
+     "HTML",
+     "Filmer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den första veckan handlar om HTML.",
+    "explanationJa": "{講座|こうざ}の{最初|さいしょ}の{週|しゅう}はHTMLについてです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har den andra taggen i ett par?",
+    "options": [
+     "En bild",
+     "Ett snedstreck",
+     "En adress",
+     "Ett telefonnummer"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den andra taggen har ett snedstreck.",
+    "explanationJa": "ペアの{二|ふた}つ{目|め}のタグにはスラッシュがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var lägger Saki priserna?",
+    "options": [
+     "I sidfoten",
+     "I en punktlista",
+     "I en tabell",
+     "I rubriken"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Priserna lägger hon i en tabell.",
+    "explanationJa": "{値段|ねだん}は{表|ひょう}に{入|い}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Telefonnumret står i sidhuvudet.",
+    "correct": false,
+    "explanationSv": "… en sidfot med adress och telefonnummer.",
+    "explanationJa": "{電話番号|でんわばんごう}はヘッダーではなくフッターにあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Elin är nöjd med sidan.",
+    "correct": true,
+    "explanationSv": "Elin blir glad och vill ha en sida till.",
+    "explanationJa": "エリンは{喜|よろこ}んで、もう{一|ひと}つページがほしいと{思|おも}っています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur en webbsida är uppbyggd.",
+  "discussionPoints": [
+   "Vilka delar ser du på en webbsida som du ofta använder?",
+   "Vad brukar stå i sidfoten på en webbplats?",
+   "Har du någon gång gjort en egen webbsida?",
+   "Vilken webbplats tycker du är lätt att läsa? Varför?"
+  ]
+ },
+ "standard": 2
+}

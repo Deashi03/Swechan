@@ -309,6 +309,7 @@
        "ja": "{能力|のうりょく}の{認定|にんてい}を{受|う}けたあと、{彼|かれ}は{電気技師|でんきぎし}として{働|はたら}けるようになりました。"
       }
      ],
+     "labelSv": "av kunskaper",
      "explanation": {
       "sv": "Vid en validering testar man vad en person kan, till exempel genom att hen får visa sitt arbete. Då behöver man inte gå hela utbildningen igen. Validering är vanligt för dem som har ett yrke från ett annat land, men det används också för svenskar som har lärt sig ett yrke på jobbet.",
       "ja": "「validering」では、{例|たと}えば{実際|じっさい}に{作業|さぎょう}をしてもらって、その{人|ひと}に{何|なに}ができるかを{確|たし}かめます。そうすれば、{教育|きょういく}を{全部|ぜんぶ}{受|う}け{直|なお}す{必要|ひつよう}がありません。ほかの{国|くに}で{職業|しょくぎょう}を{身|み}につけた{人|ひと}によく{使|つか}われますが、{仕事|しごと}の{中|なか}で{技術|ぎじゅつ}を{覚|おぼ}えたスウェーデン{人|じん}にも{使|つか}われます。"
@@ -321,8 +322,47 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.validering.2",
+     "ja": "（{入力|にゅうりょく}の）{検証|けんしょう}、バリデーション",
+     "defSv": "När en dator kontrollerar att det som någon har skrivit är rätt, till exempel att en adress har rätt form.",
+     "defJa": "{入力|にゅうりょく}された{内容|ないよう}が{正|ただ}しいかどうかを、コンピューターが{確|たし}かめること。たとえば、アドレスの{形式|けいしき}が{正|ただ}しいかどうか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Valideringen visar att numret är för kort.",
+       "ja": "{検証|けんしょう}の{結果|けっか}、{番号|ばんごう}が{短|みじか}すぎることがわかります。"
+      },
+      {
+       "sv": "Utan validering kan fel uppgifter komma in.",
+       "ja": "バリデーションがないと、{間違|まちが}ったデータが{入|はい}ってしまうことがあります。"
+      }
+     ],
+     "labelSv": "av uppgifter",
+     "collocations": [
+      "validering av formulär",
+      "valideringen i webbläsaren"
+     ],
+     "explanation": {
+      "sv": "Validering betyder att datorn kontrollerar uppgifterna innan de sparas, till exempel att ett datum finns eller att ett fält inte är tomt. Det sker ofta två gånger: först i webbläsaren och sedan på servern. I andra sammanhang betyder validering att någon kontrollerar vad man redan kan, till exempel i ett yrke.",
+      "ja": "バリデーションとは、データを{保存|ほぞん}する{前|まえ}に、{日付|ひづけ}が{存在|そんざい}するか、{入力欄|にゅうりょくらん}が{空|から}でないかなどをコンピューターが{確|たし}かめることです。たいていブラウザとサーバーで{二回|にかい}{行|おこな}われます。{別|べつ}の{場面|ばめん}では、ある{職業|しょくぎょう}などで{身|み}につけている{知識|ちしき}や{技能|ぎのう}を{確認|かくにん}してもらうことも「validering」と{言|い}います。"
+     },
+     "tags": [
+      "programmering",
+      "webb"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   }
  ]
 }
