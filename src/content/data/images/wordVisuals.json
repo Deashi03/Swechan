@@ -85201,7 +85201,10 @@
     "result": "pass",
     "round": "0.29.0",
     "hash": "fe1d7057"
-   }
+   },
+   "confusableWith": [
+    "s.pressfrihet.1"
+   ]
   },
   {
    "senseId": "s.mötesfrihet.1",
@@ -109681,7 +109684,10 @@
     "result": "pass",
     "round": "0.35.0",
     "hash": "0387afd4"
-   }
+   },
+   "confusableWith": [
+    "s.vinkla.1"
+   ]
   },
   {
    "senseId": "s.sensationell.1",
@@ -111305,7 +111311,10 @@
     "result": "pass",
     "round": "0.35.0",
     "hash": "441733b3"
-   }
+   },
+   "confusableWith": [
+    "s.polariserad.1"
+   ]
   },
   {
    "senseId": "s.motsättning.1",
@@ -111838,14 +111847,20 @@
    "kind": "illustration",
    "motif": "yttr.smutskasta",
    "group": "yttr-fortal",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.förtala.1"
+   ]
   },
   {
    "senseId": "s.förolämpning.1",
    "kind": "illustration",
    "motif": "yttr.förolämpning",
    "group": "yttr-fortal",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.kränkande.1"
+   ]
   },
   {
    "senseId": "s.olaga-integritetsintrång.1",
@@ -172647,6 +172662,410 @@
     "result": "pass",
     "round": "0.55.0",
     "hash": "16da80e9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sensation.1",
+   "kind": "illustration",
+   "motif": "manm2.sensation",
+   "group": "b5-sensation",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "4153742b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.regional.1",
+   "kind": "illustration",
+   "motif": "manm2.regional",
+   "group": "b5-regional",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "32e42c14",
+    "method": "match",
+    "waiver": "Förväxlas med län, som också visar ett område på kartan; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.värdeladdad.1",
+   "kind": "illustration",
+   "motif": "manm2.värdeladdad",
+   "group": "b5-värdeladdad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b0536ea2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.faktagranskning.1",
+   "kind": "illustration",
+   "motif": "manm2.faktagranskning",
+   "group": "b5-faktagranskning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "6ec1de99",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.myt.1",
+   "kind": "illustration",
+   "motif": "manm2.myt",
+   "group": "b5-myt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "7d595b24",
+    "method": "match",
+    "waiver": "Förväxlas med sanningshalt och påhittad bland flera bilder om osanna påståenden; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.tendens.1",
+   "kind": "illustration",
+   "motif": "manm2.tendens",
+   "group": "b5-tendens",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "d097e525",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.framställa.1",
+   "kind": "illustration",
+   "motif": "manm2.framställa",
+   "group": "b5-framställa",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "77c6de08",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vinkla.1",
+   "kind": "illustration",
+   "motif": "manm2.vinkla",
+   "group": "b5-vinkla",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.vinkel.2"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "7ae98fd9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ensidig.1",
+   "kind": "illustration",
+   "motif": "manm2.ensidig",
+   "group": "b5-ensidig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "457cf120",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.källkritisk.1",
+   "kind": "illustration",
+   "motif": "manm2.källkritisk",
+   "group": "b5-källkritisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "9e384c8c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.trend.1",
+   "kind": "illustration",
+   "motif": "manm2.trend",
+   "group": "b5-trend",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "4cef50c4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.image.1",
+   "kind": "illustration",
+   "motif": "manm2.image",
+   "group": "b5-image",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "32eb1da8",
+    "method": "match",
+    "waiver": "Rätt bild men konkurrerar med rykte och varumärkesprofil; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.välgörenhet.1",
+   "kind": "illustration",
+   "motif": "manm2.välgörenhet",
+   "group": "b5-välgörenhet",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "764a317c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ledarskribent.1",
+   "kind": "illustration",
+   "motif": "manm2.ledarskribent",
+   "group": "b5-ledarskribent",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "a82654d5",
+    "method": "match",
+    "waiver": "Förväxlas med debattartikel bland flera bilder av skribenter; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.argumentation.1",
+   "kind": "illustration",
+   "motif": "manm2.argumentation",
+   "group": "b5-argumentation",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "a0c16737",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ta-debatten.1",
+   "kind": "illustration",
+   "motif": "manm2.ta-debatten",
+   "group": "b5-ta-debatten",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "639f2751",
+    "method": "match",
+    "waiver": "Förväxlas med rakt svar; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.saklighet.1",
+   "kind": "illustration",
+   "motif": "manm2.saklighet",
+   "group": "b5-saklighet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "ef1ef6eb",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.polariserad.1",
+   "kind": "illustration",
+   "motif": "manm2.polariserad",
+   "group": "b5-polariserad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.splittring.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "8e1660f1",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.åsiktsfrihet.1",
+   "kind": "illustration",
+   "motif": "manm2.åsiktsfrihet",
+   "group": "b5-åsiktsfrihet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "edd423d4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.inskränkning.1",
+   "kind": "illustration",
+   "motif": "manm2.inskränkning",
+   "group": "b5-inskränkning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "3a0f1ebb",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.pressfrihet.1",
+   "kind": "illustration",
+   "motif": "manm2.pressfrihet",
+   "group": "b5-pressfrihet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.tryckfrihet.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "2d8fb8b4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ensamansvar.1",
+   "kind": "illustration",
+   "motif": "manm2.ensamansvar",
+   "group": "b5-ensamansvar",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "a375ae7f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.upphovsrätt.1",
+   "kind": "illustration",
+   "motif": "manm2.upphovsrätt",
+   "group": "b5-upphovsrätt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "37876ed0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förtal.1",
+   "kind": "illustration",
+   "motif": "manm2.förtal",
+   "group": "b5-förtal",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "68e69576",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förtala.1",
+   "kind": "illustration",
+   "motif": "manm2.förtala",
+   "group": "b5-förtala",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.smutskasta.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "3f54b941",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kränkande.1",
+   "kind": "illustration",
+   "motif": "manm2.kränkande",
+   "group": "b5-kränkande",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.förolämpning.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "75fb80a3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.nedsättande.1",
+   "kind": "illustration",
+   "motif": "manm2.nedsättande",
+   "group": "b5-nedsättande",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "13333bc4",
     "method": "match"
    }
   }
