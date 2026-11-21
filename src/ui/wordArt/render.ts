@@ -228,6 +228,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'digverk.': () => import('./digitalTools').then((m) => m.DIGTOOLS_MOTIFS),
   'prog.': () => import('./programming').then((m) => m.PROG_MOTIFS),
   'webdev.': () => import('./webDev').then((m) => m.WEBDEV_MOTIFS),
+  'swark.': () => import('./softwareArch').then((m) => m.SWARCH_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
