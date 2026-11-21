@@ -1,0 +1,190 @@
+{
+ "id": "m.kopplingsscheman",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Kopplingsscheman",
+ "titleJa": "{回路図|かいろず}",
+ "descriptionSv": "Hur man läser ett kopplingsschema och bygger efter det: vad symbolerna betyder, hur man provar en krets innan man löder, vad färgerna på ledningarna visar och varför man alltid kontrollerar kopplingen mot schemat innan strömmen slås på.",
+ "descriptionJa": "{回路図|かいろず}の{読|よ}み{方|かた}と、それに{従|したが}った{組|く}み{立|た}て{方|かた}：{記号|きごう}の{意味|いみ}、はんだ{付|づ}けの{前|まえ}に{回路|かいろ}を{試|ため}す{方法|ほうほう}、{電線|でんせん}の{色|いろ}が{示|しめ}すこと、そして{電気|でんき}を{入|い}れる{前|まえ}に{必|かなら}ず{回路図|かいろず}と{見比|みくら}べる{理由|りゆう}を{学|まな}びます。",
+ "categoryId": "R07-A03-T01",
+ "tags": [
+  "el",
+  "teknik",
+  "utbildning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.transistorer"
+ ],
+ "related": [],
+ "recommendedOrder": 3917,
+ "words": [
+  {
+   "senseId": "s.kopplingsschema.1",
+   "active": true
+  },
+  {
+   "senseId": "s.symbol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komponent.2",
+   "active": true
+  },
+  {
+   "senseId": "s.seriekoppling.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parallellkoppling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koppla-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansluta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fas.2",
+   "active": true
+  },
+  {
+   "senseId": "s.pluspol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krokodilklämma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skala-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eltejp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lödkolv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.löda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kopplingsdosa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byggsats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felkoppling.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Första veckorna i skolan",
+  "paragraphs": [
+   "Ali har bott i Sverige i fyra år. I höstas började han en utbildning till elektriker inom vuxenutbildningen. De första veckorna handlar nästan allt om kopplingsscheman.",
+   "Ett kopplingsschema är en ritning som visar hur komponenterna ska kopplas ihop. Varje komponent har en egen symbol: ett batteri är två streck, en lampa är en cirkel med ett kryss och ett motstånd är en liten rektangel. Läraren Karin säger: – Den som kan läsa ett schema kan bygga nästan vad som helst.",
+   "Ali får en byggsats med en lysdiod, ett motstånd och ett batteri. Först kopplar han med krokodilklämmor, så att han kan pröva. Han ansluter den röda sladden till pluspolen. Sedan löder han fast komponenterna med en lödkolv. Till sist gör han en seriekoppling och en parallellkoppling med två lampor och jämför ljuset.",
+   "Senare får eleverna öva på riktiga ledningar. Ali skalar av plasten med en tång. Den bruna ledaren är fasen, den blå är nollan och den gula och gröna är skyddsjord. Ali kopplar ihop ledningarna i en kopplingsdosa. Karin visar också eltejp, men hon säger att tejp aldrig får ersätta ett ordentligt arbete.",
+   "Alis grupp gör en felkoppling, och lampan lyser inte. De jämför med schemat och ser att två ledningar har bytt plats. – Bra att ni hittade felet innan strömmen slogs på, säger Karin. Det är så man lär sig."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad handlar de första veckorna om?",
+    "options": [
+     "Elräkningar",
+     "Kopplingsscheman",
+     "Datorer",
+     "Säkringar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De första veckorna handlar nästan allt om kopplingsscheman.",
+    "explanationJa": "{最初|さいしょ}の{数週間|すうしゅうかん}は、ほとんど{回路図|かいろず}のことを{学|まな}びます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ritas ett motstånd i schemat?",
+    "options": [
+     "Som två streck",
+     "Som en cirkel med ett kryss",
+     "Som en pil",
+     "Som en liten rektangel"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Varje komponent har en egen symbol: ett batteri är två streck, en lampa är en cirkel med ett kryss och ett motstånd är en liten rektangel.",
+    "explanationJa": "{抵抗器|ていこうき}は{小|ちい}さな{長方形|ちょうほうけい}で{描|か}かれます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför använder Ali krokodilklämmor först?",
+    "options": [
+     "Eftersom lödkolven är trasig",
+     "Eftersom de är billigare",
+     "Eftersom läraren inte har några sladdar",
+     "Så att han kan pröva"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först kopplar han med krokodilklämmor, så att han kan pröva.",
+    "explanationJa": "まず{試|ため}せるように、ワニ{口|ぐち}クリップでつなぎます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Den blå ledaren är fasen.",
+    "correct": false,
+    "explanationSv": "Den bruna ledaren är fasen, den blå är nollan och den gula och gröna är skyddsjord.",
+    "explanationJa": "{茶色|ちゃいろ}の{線|せん}が{相|そう}で、{青|あお}は{中性線|ちゅうせいせん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Alis grupp hittade felet med hjälp av schemat.",
+    "correct": true,
+    "explanationSv": "De jämför med schemat och ser att två ledningar har bytt plats.",
+    "explanationJa": "{回路図|かいろず}と{見比|みくら}べて、{二本|にほん}の{線|せん}が{入|い}れ{替|か}わっていることに{気|き}づきました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I nya elinstallationer i Sverige är fasledaren brun, neutralledaren blå och skyddsledaren gulgrön.",
+    "source": "Svensk standard SS-EN 60445 och Elsäkerhetsverket",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Man kan utbilda sig till elektriker bland annat inom kommunal vuxenutbildning (yrkesvux).",
+    "source": "Skolverket, om yrkesutbildning inom komvux",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att bygga och laga saker med el.",
+  "discussionPoints": [
+   "Har du byggt något med en byggsats någon gång?",
+   "Kan du läsa en ritning eller ett kopplingsschema?",
+   "Vad tror du är svårast i en utbildning till elektriker?",
+   "Vilka yrken inom el och energi finns i ditt hemland?"
+  ]
+ },
+ "standard": 2
+}

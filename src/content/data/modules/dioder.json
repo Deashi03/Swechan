@@ -1,0 +1,192 @@
+{
+ "id": "m.dioder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Dioder",
+ "titleJa": "ダイオード",
+ "descriptionSv": "Hur dioder och lysdioder fungerar och hur man väljer lampor: varför en diod bara släpper igenom ström åt ett håll, vad som händer i en laddare och i en LED-lampa, och vad man ska titta på i affären när man vill ha rätt ljus hemma.",
+ "descriptionJa": "ダイオードと{発光|はっこう}ダイオードのしくみと、{電球|でんきゅう}の{選|えら}び{方|かた}：ダイオードがなぜ{一方向|いちほうこう}にしか{電流|でんりゅう}を{通|とお}さないか、{充電器|じゅうでんき}やLED{電球|でんきゅう}の{中|なか}で{何|なに}が{起|お}きているか、そして{家|いえ}に{合|あ}った{明|あ}かりがほしいとき、{店|みせ}で{何|なに}を{見|み}ればよいかを{学|まな}びます。",
+ "categoryId": "R07-A03-T01",
+ "tags": [
+  "el",
+  "teknik",
+  "belysning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.spolar"
+ ],
+ "related": [],
+ "recommendedOrder": 3915,
+ "words": [
+  {
+   "senseId": "s.diod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lysdiod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.halvledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släppa-igenom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likriktare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.likström.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växelström.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.LED-lampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glödlampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energisnål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lumen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dimbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmvit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljusslinga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blinka.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Nya lampor i november",
+  "paragraphs": [
+   "Det är november, och det är mörkt redan klockan fyra. Aiko och Erik åker till en affär för att köpa nya lampor. De sista gamla glödlamporna i huset ska bytas mot LED-lampor.",
+   "På hyllan finns hundratals förpackningar. – Förr tittade man på watt, säger Erik. Nu ska man titta på lumen. En LED-lampa på 800 lumen ger ungefär lika mycket ljus som en gammal glödlampa på 60 watt, men den är mycket mer energisnål.",
+   "Aiko vill ha varmvitt ljus i vardagsrummet, inte kallt ljus som på ett kontor. I vardagsrummet har de dimmer, så hon letar efter en lampa som är dimbar. Mia vill ha en ljusslinga till sitt fönster, en sådan som kan blinka.",
+   "I bilen hem frågar Mia hur en lysdiod fungerar. Erik, som är lärare, förklarar: – En lysdiod är en sorts diod. Den är gjord av en halvledare och kan släppa igenom ström bara åt ett håll. Därför lyser den inte om man kopplar den åt fel håll.",
+   "– Men uttaget ger ju växelström, säger Mia. – Ja, och därför finns det en liten likriktare inuti lampan, svarar Erik. Den gör om växelström till likström, precis som i din laddare. Hemma sätter de i de nya lamporna, och vardagsrummet blir varmt och ljust."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför åker Aiko och Erik till affären?",
+    "options": [
+     "För att köpa en ny laddare",
+     "För att lämna tillbaka en dimmer",
+     "För att köpa nya lampor",
+     "För att köpa julklappar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Aiko och Erik åker till en affär för att köpa nya lampor.",
+    "explanationJa": "アイコとエリックは{新|あたら}しい{電球|でんきゅう}を{買|か}いに{行|い}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad ska man titta på när man köper LED-lampor, enligt Erik?",
+    "options": [
+     "Watt",
+     "Lumen",
+     "Priset",
+     "Färgen på förpackningen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nu ska man titta på lumen.",
+    "explanationJa": "{今|いま}はルーメンを{見|み}るべきだと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför letar Aiko efter en dimbar lampa?",
+    "options": [
+     "Den är billigare",
+     "De har dimmer i vardagsrummet",
+     "Den ger kallt ljus",
+     "Mia vill ha den"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I vardagsrummet har de dimmer, så hon letar efter en lampa som är dimbar.",
+    "explanationJa": "リビングにディマーがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En lysdiod lyser åt vilket håll man än kopplar den.",
+    "correct": false,
+    "explanationSv": "Därför lyser den inte om man kopplar den åt fel håll.",
+    "explanationJa": "{逆向|ぎゃくむ}きにつなぐと、LEDは{光|ひか}りません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Det finns en likriktare i LED-lampan.",
+    "correct": true,
+    "explanationSv": "– Ja, och därför finns det en liten likriktare inuti lampan, svarar Erik.",
+    "explanationJa": "LED{電球|でんきゅう}の{中|なか}に{小|ちい}さな{整流器|せいりゅうき}があります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En LED-lampa på cirka 800 lumen ger ungefär lika mycket ljus som en glödlampa på 60 watt men använder betydligt mindre el.",
+    "source": "Energimyndigheten, råd om belysning",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Vanliga glödlampor fasades ut i EU mellan 2009 och 2012.",
+    "source": "Kommissionens förordning (EG) nr 244/2009",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "En diod leder ström i bara en riktning.",
+    "source": "Nationalencyklopedin, uppslagsordet diod",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om lampor och belysning hemma.",
+  "discussionPoints": [
+   "Vilket ljus tycker du om hemma: varmvitt eller kallt?",
+   "Har du ljusslingor eller andra lampor i fönstret på vintern?",
+   "Hur väljer du en ny lampa i affären?",
+   "Är belysningen i svenska hem annorlunda än i Japan?"
+  ]
+ },
+ "standard": 2
+}

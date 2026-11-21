@@ -1,0 +1,202 @@
+{
+ "id": "m.spanning-och-strom",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Spänning och ström",
+ "titleJa": "{電圧|でんあつ}と{電流|でんりゅう}",
+ "descriptionSv": "El i praktiken hemma: hur man läser av volt, ampere och watt på en laddare, vad som händer i elcentralen när en säkring går, hur en jordfelsbrytare skyddar mot stötar och vad man får göra själv och vad en elektriker måste göra.",
+ "descriptionJa": "{家|いえ}での{電気|でんき}の{実際|じっさい}：{充電器|じゅうでんき}に{書|か}いてあるボルト、アンペア、ワットの{読|よ}み{方|かた}、ヒューズが{飛|と}んだときに{分電盤|ぶんでんばん}で{何|なに}が{起|お}きているか、{漏電遮断器|ろうでんしゃだんき}がどう{感電|かんでん}から{守|まも}るか、そして{自分|じぶん}でしてよいことと{電気工事士|でんきこうじし}がしなければならないことを{学|まな}びます。",
+ "categoryId": "R07-A03-T01",
+ "tags": [
+  "el",
+  "teknik",
+  "vardag"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.ai-sakerhet-och-begransningar"
+ ],
+ "related": [],
+ "recommendedOrder": 3911,
+ "words": [
+  {
+   "senseId": "s.ström.2",
+   "active": true
+  },
+  {
+   "senseId": "s.spänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ampere.1",
+   "active": true
+  },
+  {
+   "senseId": "s.watt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uttag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jordat-uttag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömförande.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.propp.2",
+   "active": true
+  },
+  {
+   "senseId": "s.elcentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jordfelsbrytare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösa-ut.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skarvsladd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elinstallation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.behörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektriker.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När proppen gick",
+  "paragraphs": [
+   "Naoko har bott i Sverige i ett halvår. En kall morgon sätter hon på vattenkokaren, mikrovågsugnen och ett litet element i köket samtidigt. Plötsligt blir det mörkt och tyst. Kylskåpet slutar brumma.",
+   "Hon ringer till sin granne Per. – Proppen har gått, säger han. Gå till elcentralen i hallen. Där sitter säkringarna i rader. Naoko ser att en av säkringarna har löst ut. Det står 10 A på den: säkringen tål tio ampere, och tre apparater samtidigt var för mycket.",
+   "Bredvid säkringarna sitter en jordfelsbrytare med en testknapp. Per förklarar att den slår av strömmen om ström läcker ut, till exempel om någon får en stöt. Naoko slår på säkringen igen, och lamporna tänds.",
+   "På eftermiddagen köper Naoko en ny laddare till mobilen. På laddaren står det 100–240 volt och 20 watt. – I Japan har vi 100 volt i uttagen, i Sverige 230, säger hon till försäljaren. – Spänningen är olika, men den här laddaren fungerar i båda länderna, svarar han.",
+   "Hon vill också ha fler uttag i vardagsrummet. Per säger att hon inte ska lägga en skarvsladd under mattan. Nya uttag är en elinstallation, och den måste en behörig elektriker göra. Elektrikern kontrollerar först att ledningarna inte är strömförande. Sedan sätter hon upp två jordade uttag."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför gick proppen?",
+    "options": [
+     "Kylskåpet var trasigt",
+     "Det var åska",
+     "Laddaren var fel",
+     "Naoko använde tre apparater samtidigt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det står 10 A på den: säkringen tål tio ampere, och tre apparater samtidigt var för mycket.",
+    "explanationJa": "ヒューズは10アンペアまでで、{三|みっ}つの{機械|きかい}を{同時|どうじ}に{使|つか}うのは{多|おお}すぎました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var sitter säkringarna?",
+    "options": [
+     "I köket",
+     "I elcentralen i hallen",
+     "Bakom kylskåpet",
+     "Hos grannen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Gå till elcentralen i hallen.",
+    "explanationJa": "ヒューズは{玄関|げんかん}の{分電盤|ぶんでんばん}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur många volt har uttagen i Japan, enligt Naoko?",
+    "options": [
+     "230 volt",
+     "240 volt",
+     "100 volt",
+     "20 volt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– I Japan har vi 100 volt i uttagen, i Sverige 230, säger hon till försäljaren.",
+    "explanationJa": "{日本|にほん}のコンセントは100ボルトです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Naoko får sätta upp de nya uttagen själv.",
+    "correct": false,
+    "explanationSv": "Nya uttag är en elinstallation, och den måste en behörig elektriker göra.",
+    "explanationJa": "{新|あたら}しいコンセントは{電気工事|でんきこうじ}なので、{資格|しかく}のある{電気工事士|でんきこうじし}がしなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Naoko kan använda den nya laddaren både i Sverige och i Japan.",
+    "correct": true,
+    "explanationSv": "– Spänningen är olika, men den här laddaren fungerar i båda länderna, svarar han.",
+    "explanationJa": "この{充電器|じゅうでんき}は{両方|りょうほう}の{国|くに}で{使|つか}えます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Vanliga vägguttag har 230 volt i Sverige och 100 volt i Japan.",
+    "source": "Elsäkerhetsverket; Japans ministerium för ekonomi, handel och industri (METI)",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Säkringarna i en vanlig bostad är ofta på 10 eller 16 ampere.",
+    "source": "Elsäkerhetsverket, råd om säkringar och elcentral",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Elinstallationer ska göras av ett registrerat elinstallationsföretag, men vem som helst får byta en säkring.",
+    "source": "Elsäkerhetslagen (2016:732) och Elsäkerhetsverket",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "En jordfelsbrytare bryter strömmen när ström läcker ut, och man bör testa den regelbundet med testknappen.",
+    "source": "Elsäkerhetsverket, råd om jordfelsbrytare",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om el och elsäkerhet hemma.",
+  "discussionPoints": [
+   "Har du någon gång varit med om att proppen gick? Vad hände?",
+   "Var sitter elcentralen där du bor?",
+   "Vad står det på din mobilladdare?",
+   "Vad får man göra själv med el hemma, och vad ska en elektriker göra?"
+  ]
+ },
+ "standard": 2
+}

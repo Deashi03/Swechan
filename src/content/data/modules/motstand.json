@@ -1,0 +1,196 @@
+{
+ "id": "m.motstand",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Motstånd",
+ "titleJa": "{抵抗器|ていこうき}",
+ "descriptionSv": "Motstånd som komponent och i vardagen: hur man läser värdet på ett motstånd och mäter det, varför ett motstånd behövs för att skydda en lysdiod, hur en ratt kan ändra resistansen och hur man känner igen farlig värme i uttag och sladdar.",
+ "descriptionJa": "{部品|ぶひん}としての{抵抗器|ていこうき}と{日常|にちじょう}の{抵抗|ていこう}：{抵抗器|ていこうき}の{値|あたい}の{読|よ}み{方|かた}と{測|はか}り{方|かた}、LEDを{守|まも}るのになぜ{抵抗器|ていこうき}が{必要|ひつよう}か、つまみで{抵抗|ていこう}をどう{変|か}えられるか、そしてコンセントやコードの{危険|きけん}な{発熱|はつねつ}にどう{気|き}づくかを{学|まな}びます。",
+ "categoryId": "R07-A03-T01",
+ "tags": [
+  "el",
+  "teknik",
+  "elektronik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.spanning-och-strom"
+ ],
+ "related": [],
+ "recommendedOrder": 3912,
+ "words": [
+  {
+   "senseId": "s.motstånd.2",
+   "active": true
+  },
+  {
+   "senseId": "s.resistans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.multimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ohm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.Ohms-lag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reglage.1",
+   "active": true
+  },
+  {
+   "senseId": "s.potentiometer.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skruva-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.begränsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeutveckling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.glödtråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glöda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glappkontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmgång.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Johan och motståndet",
+  "paragraphs": [
+   "Johan går en kurs om el på kvällarna. Den här veckan handlar det om motstånd. Läraren Karin visar en liten del med färgade ringar. – Färgkoden visar hur stor resistansen är, säger hon. Det här motståndet är på 220 ohm.",
+   "Johan ska koppla en lysdiod till ett batteri. Utan motstånd går det för mycket ström, och lysdioden går sönder. Motståndet begränsar strömmen. Med Ohms lag räknar Johan ut hur stort motstånd han behöver.",
+   "Sedan mäter han motståndet med en multimeter. Den visar 218 ohm, nästan exakt rätt. Karin visar också en potentiometer: när man vrider på den ändras resistansen, och lysdioden lyser svagare eller starkare. – Så fungerar många gamla volymrattar, säger hon. Man skruvar upp ljudet genom att ändra ett motstånd.",
+   "Motstånd ger alltid värmeutveckling. I en brödrost glöder tunna trådar, och elementet hemma blir varmt av samma skäl. I en gammal glödlampa blir glödtråden så varm att den lyser.",
+   "Hemma tittar Johan på sin mormors gamla bordslampa. Reglaget på sladden är brunt, och det luktar bränt. – Det är varmgång, säger Karin när han visar en bild. Troligen finns det en glappkontakt. Använd inte lampan förrän en elektriker har tittat på den."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar färgkoden på ett motstånd?",
+    "options": [
+     "Hur gammalt motståndet är",
+     "Vilken färg lampan får",
+     "Hur mycket motståndet kostar",
+     "Hur stor resistansen är"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Färgkoden visar hur stor resistansen är, säger hon.",
+    "explanationJa": "{色|いろ}の{帯|おび}は{抵抗|ていこう}の{大|おお}きさを{示|しめ}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför behöver lysdioden ett motstånd?",
+    "options": [
+     "Annars går det för mycket ström",
+     "Annars blir lysdioden för kall",
+     "Annars lyser den rött",
+     "Annars går batteriet inte att ladda"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Utan motstånd går det för mycket ström, och lysdioden går sönder.",
+    "explanationJa": "{抵抗器|ていこうき}がないと{電流|でんりゅう}が{流|なが}れすぎて、LEDが{壊|こわ}れてしまいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad händer när man vrider på potentiometern?",
+    "options": [
+     "Batteriet laddas",
+     "Resistansen ändras",
+     "Lysdioden byter färg",
+     "Multimetern stängs av"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Karin visar också en potentiometer: när man vrider på den ändras resistansen, och lysdioden lyser svagare eller starkare.",
+    "explanationJa": "ポテンショメーターを{回|まわ}すと{抵抗|ていこう}が{変|か}わります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Multimetern visar att motståndet är helt fel.",
+    "correct": false,
+    "explanationSv": "Den visar 218 ohm, nästan exakt rätt.",
+    "explanationJa": "マルチメーターは218オームで、ほぼ{正|ただ}しい{値|あたい}でした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Johan borde inte använda mormors lampa just nu.",
+    "correct": true,
+    "explanationSv": "Använd inte lampan förrän en elektriker har tittat på den.",
+    "explanationJa": "{電気工事士|でんきこうじし}が{見|み}るまで、ランプを{使|つか}ってはいけません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Ohms lag säger att spänningen är resistansen gånger strömmen (U = R · I).",
+    "source": "Nationalencyklopedin, uppslagsordet Ohms lag",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Resistans mäts i enheten ohm (Ω), som har fått sitt namn efter Georg Simon Ohm.",
+    "source": "Nationalencyklopedin, uppslagsordet ohm",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Varma eller bruna uttag och stickkontakter är tecken på fel som kan leda till brand.",
+    "source": "Elsäkerhetsverket, råd om elsäkerhet hemma",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om värme och motstånd i vardagens apparater.",
+  "discussionPoints": [
+   "Vilka apparater hemma blir varma när de är på?",
+   "Har du någon gång märkt att en laddare eller en sladd blev varm? Vad gjorde du?",
+   "Har du använt en multimeter eller något annat mätinstrument?",
+   "Vilka saker hemma har ett reglage eller en ratt?"
+  ]
+ },
+ "standard": 2
+}
