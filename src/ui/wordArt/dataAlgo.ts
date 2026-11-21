@@ -219,12 +219,16 @@ export const DATAALG_MOTIFS: Record<string, Svg> = {
   /** konstant (tid): a chart with two axes; a thick orange line runs flat all the way, while a thin grey line climbs; on the flat line stand three identical small stopwatches; the flat line is framed. */
   'dalg.konstant-adj': all(bg(), axes(), greyed(line('M22 96 L104 26', '#7a8590', 1.8, '4 3')), line('M22 70 L104 70', HL, 4),
     ...[40, 64, 88].map((x) => stopwatch(x, 56, 6, 90, true)), frame(18, 62, 92, 16, 5)),
-  /** kvadratisk (om tillväxt): no chart: three square grids side by side, 3 × 3, 4 × 4 and 5 × 5; along the top and left edge of each grid stand the same coloured items, so every cell is one item compared with another; the squares grow step by step, the cells of the biggest grid fill in, and the biggest grid is framed. */
-  'dalg.kvadratisk.2': all(bg(), ...[[3, 14, 16, 7], [4, 42, 42, 7], [5, 74, 70, 8]].map(([n, x, y, c], k) => { const N = Number(n), X = Number(x), Y = Number(y), Cc = Number(c);
-    const cellsOf = () => range(N * N).map((i) => rect(X + (i % N) * Cc, Y + Math.floor(i / N) * Cc, Cc, Cc, (i % N + Math.floor(i / N)) % 2 ? '#fde3c8' : '#f6b26b', 0, C.ink, 0.7));
-    return all(...range(N).map((i) => rect(X + i * Cc + 1, Y - 7, Cc - 2, 5, TILE[i]!, 1, C.ink, 0.6)), ...range(N).map((i) => rect(X - 7, Y + i * Cc + 1, 5, Cc - 2, TILE[i]!, 1, C.ink, 0.6)),
-      k === 2 ? moving('dalg-kvadr', '0%,10%{opacity:0}60%,100%{opacity:1}', { dur: 3 }, ...cellsOf()) : all(...cellsOf())); }),
-    frame(63, 59, 53, 53, 4)),
+  /** kvadratisk (om tillväxt), hand-drawn (manual track): twice as much input gives four times as much work. Left: a small orange square with two data tiles along its top edge. An arrow leads right to a big square whose side is twice as long, with four tiles along its top edge marked ×2; the big square is made of four copies of the small square, which appear one by one, and a white badge in its middle says ×4; the big square is framed. */
+  'dalg.kvadratisk.2': all(bg(),
+    ...range(2).map((i) => rect(13 + i * 11, 50, 9, 6, TILE[i]!, 1, C.ink, 0.8)), rect(12, 60, 22, 22, '#f6b26b', 1, C.ink, 1.6),
+    arr(38, 71, 52, 71, C.ink, 2.2),
+    line('M58 18 L102 18', '#5a6472', 1.4), head(58, 18, Math.PI, '#5a6472', 0.6), head(102, 18, 0, '#5a6472', 0.6), mono(80, 15, '×2', 9, C.ink, 900),
+    ...range(4).map((i) => rect(59 + i * 11, 24, 9, 6, TILE[i]!, 1, C.ink, 0.8)),
+    ...[[58, 34], [80, 34], [58, 56], [80, 56]].map(([x, y], k) => k === 0 ? rect(x!, y!, 22, 22, '#f6b26b', 1, C.ink, 1.6)
+      : moving(`dalg-kvadr-${k}`, `0%,${k * 15}%{opacity:0}${k * 15 + 20}%,100%{opacity:1}`, { dur: 3.4 }, rect(x!, y!, 22, 22, '#f6b26b', 1, C.ink, 1.6))),
+    rect(68, 61, 24, 18, C.white, 4, C.ink, 1.4), mono(80, 75, '×4', 13, HL, 900),
+    frame(54, 30, 52, 52, 4)),
   /** logaritmisk: the same chart: a thick orange curve that rises fast at first and then flattens out while a yellow dot travels along it, and a thin grey straight line above it at the end; at the top right a bar that is cut in half again and again; the flat part of the curve is framed. */
   'dalg.logaritmisk': all(bg(), axes(), greyed(line('M22 96 L104 22', '#7a8590', 1.8, '4 3')), line(curve((t) => Math.log2(1 + 15 * t) / 4 * 0.55), HL, 4),
     moving('dalg-log', '0%{transform:translate(-82px,41.8px)}25%{transform:translate(-61.5px,18.3px)}50%{transform:translate(-41px,9.5px)}85%,100%{transform:translate(0,0)}', { dur: 3 }, circle(104, 54.2, 4, YEL, C.ink, 1.2)),
