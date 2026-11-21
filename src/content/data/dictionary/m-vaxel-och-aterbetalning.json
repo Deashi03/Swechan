@@ -26,6 +26,7 @@
        "ja": "おつりです。"
       }
      ],
+     "labelSv": "pengar",
      "tags": [
       "handel",
       "pengar"
@@ -33,8 +34,92 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.växel.2",
+     "ja": "ギア、{変速段|へんそくだん}",
+     "defSv": "Ett av lägena i en bil eller på en cykel som bestämmer hur fort hjulen går och hur tungt det är att köra.",
+     "defJa": "{車|くるま}や{自転車|じてんしゃ}で、{車輪|しゃりん}の{回|まわ}る{速|はや}さとこぐ{重|おも}さを{決|き}める{段|だん}の{一|ひと}つ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Cykeln har sju växlar.",
+       "ja": "この{自転車|じてんしゃ}にはギアが{七段|ななだん}あります。"
+      },
+      {
+       "sv": "Byt till en lägre växel när det går uppför.",
+       "ja": "{上|のぼ}り{坂|ざか}では、{低|ひく}いギアに{変|か}えてください。"
+      }
+     ],
+     "labelSv": "i fordon",
+     "collocations": [
+      "byta växel",
+      "lägga i en växel",
+      "en låg växel",
+      "en hög växel"
+     ],
+     "tags": [
+      "teknik",
+      "maskiner",
+      "fordon"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
+    },
+    {
+     "id": "s.växel.3",
+     "ja": "（{会社|かいしゃ}などの）{電話交換台|でんわこうかんだい}、{代表番号|だいひょうばんごう}",
+     "defSv": "Det telefonnummer till ett företag eller en myndighet där man får hjälp att komma till rätt person.",
+     "defJa": "{会社|かいしゃ}や{役所|やくしょ}の{代表|だいひょう}の{電話番号|でんわばんごう}で、{話|はな}したい{人|ひと}につないでもらえるところ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ring växeln och be att få prata med din läkare.",
+       "ja": "{代表番号|だいひょうばんごう}に{電話|でんわ}して、{担当|たんとう}の{医者|いしゃ}につないでもらってください。"
+      }
+     ],
+     "labelSv": "telefon",
+     "tags": [
+      "vardag",
+      "telefon"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B1"
+    },
+    {
+     "id": "s.växel.4",
+     "ja": "（{鉄道|てつどう}の）ポイント、{分岐器|ぶんきき}",
+     "defSv": "En plats där ett spår för tåg delar sig, så att tåget kan byta spår.",
+     "defJa": "{線路|せんろ}が{分|わ}かれていて、{列車|れっしゃ}が{別|べつ}の{線路|せんろ}に{移|うつ}れるところ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Tåget blev försenat på grund av ett fel i en växel.",
+       "ja": "ポイントの{故障|こしょう}で{列車|れっしゃ}が{遅|おく}れました。"
+      }
+     ],
+     "labelSv": "järnväg",
+     "tags": [
+      "resor",
+      "tåg"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 4,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.jämna-pengar",
@@ -167,8 +252,38 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.växla.3",
+     "ja": "ギアを{変|か}える、{変速|へんそく}する",
+     "defSv": "Byta från en växel till en annan i en bil eller på en cykel.",
+     "defJa": "{車|くるま}や{自転車|じてんしゃ}で、ギアを{別|べつ}の{段|だん}に{変|か}える。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Du måste växla innan det går uppför.",
+       "ja": "{上|のぼ}り{坂|ざか}になる{前|まえ}に、ギアを{変|か}えなければなりません。"
+      }
+     ],
+     "labelSv": "i fordon",
+     "frame": {
+      "subject": "Hon"
+     },
+     "tags": [
+      "teknik",
+      "maskiner",
+      "fordon"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.växla-in",

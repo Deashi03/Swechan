@@ -1,0 +1,184 @@
+{
+ "id": "m.hydraulik",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Hydraulik",
+ "titleJa": "{油圧|ゆあつ}",
+ "descriptionSv": "Hur hydraulik fungerar i grävmaskiner, domkrafter och pressar, och hur man på en verkstad beskriver delarna, letar efter en läcka och pratar om säkerhet när det finns högt tryck i en maskin.",
+ "descriptionJa": "ショベルカーやジャッキ、プレス{機|き}の{中|なか}で{油圧|ゆあつ}がどのように{働|はたら}くか、そして{整備工場|せいびこうじょう}で{部品|ぶひん}を{説明|せつめい}したり、もれを{探|さが}したり、{機械|きかい}に{高|たか}い{圧力|あつりょく}がかかっているときの{安全|あんぜん}について{話|はな}したりする{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A04-T01",
+ "tags": [
+  "teknik",
+  "maskiner",
+  "industri"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.skruvar-och-muttrar"
+ ],
+ "related": [],
+ "recommendedOrder": 4016,
+ "words": [
+  {
+   "senseId": "s.vätska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryck.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hydraulik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pump.2",
+   "active": true
+  },
+  {
+   "senseId": "s.pumpa-verb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cylinder.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kolv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ventil.4",
+   "active": false
+  },
+  {
+   "senseId": "s.hydraulolja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.packning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.läcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oljefläck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.domkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.press.3",
+   "active": false
+  },
+  {
+   "senseId": "s.grävmaskin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skopa.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Praktik på maskinverkstaden",
+  "paragraphs": [
+   "Takeshi läser till industritekniker på komvux. Nu gör han praktik på en verkstad som lagar grävmaskiner och andra stora maskiner. Hans handledare heter Lena och har arbetat med maskiner i trettio år.",
+   "– Nästan allt här fungerar med hydraulik, säger Lena. En pump pumpar hydraulolja genom slangar till cylindrarna. Trycket i vätskan skjuter ut kolven, och då rör sig armen. Med ventilerna styr föraren vart oljan ska gå. Därför kan en grävmaskin lyfta en skopa full med sten.",
+   "I dag står en grävmaskin på gården. Det är en stor oljefläck på marken under den. – Den läcker, säger Lena. Kan du hitta var? Takeshi letar länge. Till slut ser han att en slang är sprucken och att en packning i en cylinder är sliten. – Bra! säger Lena. Men stäng alltid av maskinen först. Det kan finnas högt tryck i slangarna, så håll händerna borta från slangen.",
+   "Efter lunch visar Lena verkstadens stora press, som också fungerar med hydraulik. Takeshi berättar att hans pappa har en liten bilverkstad i Osaka. – Där finns en domkraft som lyfter bilar. Jag visste inte att den fungerar på samma sätt, säger han.",
+   "På kvällen ringer han till sin pappa. – Jag har bytt en slang och en packning på en grävmaskin i dag, berättar han stolt. Pappan skrattar. – Då kan du hjälpa mig i verkstaden när du kommer hem i sommar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör pumpen i en grävmaskin?",
+    "options": [
+     "Den pumpar luft till däcken",
+     "Den kyler motorn",
+     "Den pumpar hydraulolja till cylindrarna",
+     "Den lyfter skopan själv"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En pump pumpar hydraulolja genom slangar till cylindrarna.",
+    "explanationJa": "ポンプは{作動油|さどうゆ}をシリンダーへ{送|おく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur ser Takeshi och Lena att grävmaskinen läcker?",
+    "options": [
+     "Den låter konstigt",
+     "Skopan är trasig",
+     "Motorn är varm",
+     "Det är en stor oljefläck under den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det är en stor oljefläck på marken under den.",
+    "explanationJa": "{下|した}の{地面|じめん}に{大|おお}きな{油|あぶら}のしみがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför ska man hålla händerna borta från slangen?",
+    "options": [
+     "Oljan är mycket kall",
+     "Slangen är svår att se",
+     "Det kan finnas högt tryck i slangarna",
+     "Lena vill göra det själv"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det kan finnas högt tryck i slangarna, så håll händerna borta från slangen.",
+    "explanationJa": "ホースの{中|なか}に{高|たか}い{圧力|あつりょく}が{残|のこ}っていることがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Takeshi hittar en sprucken slang och en sliten packning.",
+    "correct": true,
+    "explanationSv": "Till slut ser han att en slang är sprucken och att en packning i en cylinder är sliten.",
+    "explanationJa": "タケシは{割|わ}れたホースとすり{減|へ}ったパッキンを{見|み}つけました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Takeshi visste redan att en domkraft fungerar med hydraulik.",
+    "correct": false,
+    "explanationSv": "– Jag visste inte att den fungerar på samma sätt, säger han.",
+    "explanationJa": "タケシはジャッキが{同|おな}じしくみだと{知|し}りませんでした。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I en vätska som står under tryck sprids trycket lika mycket åt alla håll, så att en liten kraft på en liten kolv kan ge en stor kraft på en stor kolv. Det används i hydrauliska maskiner som grävmaskiner, domkrafter och pressar.",
+    "source": "Nationalencyklopedin, uppslagen ”hydraulik” och ”Pascals princip”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om stora maskiner och om att arbeta i en verkstad.",
+  "discussionPoints": [
+   "Vilka maskiner med hydraulik har du sett, till exempel på en byggarbetsplats?",
+   "Skulle du vilja arbeta i en verkstad? Vad skulle vara roligt eller svårt?",
+   "Vad gör du om du ser en oljefläck under din bil eller cykel?",
+   "Vilka yrken inom industrin är vanliga där du kommer ifrån?"
+  ]
+ },
+ "standard": 2
+}
