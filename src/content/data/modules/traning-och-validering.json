@@ -1,0 +1,180 @@
+{
+ "id": "m.traning-och-validering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Träning och validering",
+ "titleJa": "{訓練|くんれん}と{検証|けんしょう}",
+ "descriptionSv": "Hur man tränar en modell steg för steg: hur data delas upp, vad som händer under träningen och hur man med validering och testdata kontrollerar att modellen verkligen har lärt sig.",
+ "descriptionJa": "モデルを{一歩|いっぽ}ずつ{訓練|くんれん}する{方法|ほうほう}：データをどう{分|わ}けるか、{訓練|くんれん}の{間|あいだ}に{何|なに}が{起|お}こるか、そして{検証|けんしょう}とテストデータでモデルが{本当|ほんとう}に{学|まな}んだかをどう{確|たし}かめるかを{学|まな}びます。",
+ "categoryId": "R07-A02-T05",
+ "tags": [
+  "programmering",
+  "AI",
+  "maskininlärning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.klassificering-och-regression"
+ ],
+ "related": [],
+ "recommendedOrder": 3854,
+ "words": [
+  {
+   "senseId": "s.träna.3",
+   "active": true
+  },
+  {
+   "senseId": "s.träning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slumpmässig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andel.2",
+   "active": false
+  },
+  {
+   "senseId": "s.procent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.validering.3",
+   "active": true
+  },
+  {
+   "senseId": "s.testdata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.facit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inlärning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.validera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tidskrävande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.datorkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grafikkort.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En modell som känner igen fåglar",
+  "paragraphs": [
+   "Sara jobbar på ett företag i Umeå. Hon och hennes kollegor ska träna en modell som känner igen fåglar på hur de sjunger. De har 50 000 ljudfiler, och varje fil har en etikett med fågelns namn.",
+   "Först ska de dela upp alla filer slumpmässigt i tre delar. Den största andelen, 80 procent, blir träningsdata. Tio procent sparar de för validering, och tio procent blir testdata. – Testdata rör vi inte förrän allra sist, säger Sara.",
+   "Sedan börjar träningen. Modellen lyssnar på en fil, gissar vilken fågel det är och jämför med facit, alltså etiketten. Därefter ändras modellens parametrar lite. De upprepar det för alla filer, och sedan börjar allt om igen. Inlärningen går fort i början och långsammare sedan.",
+   "Efter varje gång validerar de modellen. Den får lyssna på filerna för validering, som den inte har tränats på. På så sätt kan Sara kontrollera att modellen inte bara kommer ihåg sina träningsdata.",
+   "Träningen är tidskrävande. Den kräver mycket datorkraft, så företaget hyr datorer med starka grafikkort. Efter tre dagar är modellen klar. Nu testar de den på testdata för första gången: den har rätt i 91 procent av fallen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur stor andel av filerna blir träningsdata?",
+    "options": [
+     "10 procent",
+     "50 procent",
+     "91 procent",
+     "80 procent"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den största andelen, 80 procent, blir träningsdata.",
+    "explanationJa": "80パーセントが{訓練|くんれん}データになります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är facit när modellen tränas?",
+    "options": [
+     "Testdata",
+     "Ljudet från fågeln",
+     "Saras gissning",
+     "Etiketten med fågelns namn"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… jämför med facit, alltså etiketten.",
+    "explanationJa": "{正解|せいかい}は、{鳥|とり}の{名前|なまえ}のラベルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför validerar de modellen på filer som den inte har tränats på?",
+    "options": [
+     "För att träningen ska gå fortare",
+     "För att filerna är för många",
+     "För att spara datorkraft",
+     "För att kontrollera att den inte bara kommer ihåg sina träningsdata"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På så sätt kan Sara kontrollera att modellen inte bara kommer ihåg sina träningsdata.",
+    "explanationJa": "{訓練|くんれん}データを{覚|おぼ}えているだけではないことを{確|たし}かめるためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Träningen tar bara några minuter.",
+    "correct": false,
+    "explanationSv": "Träningen är tidskrävande. … Efter tre dagar är modellen klar.",
+    "explanationJa": "{訓練|くんれん}には{三日|みっか}かかります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "De använder testdata först när träningen är klar.",
+    "correct": true,
+    "explanationSv": "Nu testar de den på testdata för första gången …",
+    "explanationJa": "テストデータを{使|つか}うのは{最後|さいご}です。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Det är vanligt att dela upp data slumpmässigt i träningsdata, data för validering och testdata, och att använda testdata först när modellen är klar.",
+    "source": "Google for Developers, Machine Learning Crash Course: Dividing the original dataset",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man tränar och kontrollerar en modell.",
+  "discussionPoints": [
+   "Vad tränar du själv på, och hur vet du att du blir bättre?",
+   "Varför är det viktigt att spara testdata till allra sist?",
+   "Vad skulle du vilja träna en modell att känna igen?",
+   "Tycker du att det är ett problem att träning av stora modeller kräver så mycket datorkraft och el?"
+  ]
+ },
+ "standard": 2
+}

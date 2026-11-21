@@ -457,8 +457,81 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.etikett.3",
+     "ja": "レッテル",
+     "defSv": "Ett ord som andra använder om en person eller en grupp, så att personen verkar enklare än hon är.",
+     "defJa": "{人|ひと}やグループを、たいてい{単純化|たんじゅんか}して{表|あらわ}すために{使|つか}う{言葉|ことば}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon är trött på etiketten ”den tysta”.",
+       "ja": "{彼女|かのじょ}は「おとなしい{人|ひと}」というレッテルにうんざりしています。"
+      },
+      {
+       "sv": "Det är lätt att sätta etiketter på människor man inte känner.",
+       "ja": "{知|し}らない{人|ひと}にレッテルを{貼|は}るのは{簡単|かんたん}です。"
+      }
+     ],
+     "labelSv": "om människor",
+     "collocations": [
+      "sätta en etikett på någon",
+      "få en etikett"
+     ],
+     "explanation": {
+      "sv": "Här är en etikett inte en lapp av papper, utan ett ord som andra använder om en person: lat, besvärlig, duktig. Man säger att man sätter en etikett på någon. Ofta är det negativt, eftersom etiketten gör personen enklare än hon är.",
+      "ja": "ここでの「etikett」は{紙|かみ}のラベルではなく、{他|ほか}の{人|ひと}がある{人|ひと}について{使|つか}う{言葉|ことば}です（{怠|なま}け{者|もの}、{面倒|めんどう}な{人|ひと}、{優秀|ゆうしゅう}な{人|ひと}など）。「sätta en etikett på någon（{人|ひと}にレッテルを{貼|は}る）」と{言|い}います。その{人|ひと}を{実際|じっさい}より{単純|たんじゅん}にしてしまうので、よくない{意味|いみ}で{使|つか}うことが{多|おお}いです。"
+     },
+     "tags": [
+      "samhälle"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
+    },
+    {
+     "id": "s.etikett.4",
+     "ja": "（{機械学習|きかいがくしゅう}の）ラベル、{正解|せいかい}ラベル",
+     "defSv": "Det rätta svaret som man skriver till varje exempel som en dator ska lära sig av, till exempel ”katt” till en bild av en katt.",
+     "defJa": "{機械学習|きかいがくしゅう}で、データの{一|ひと}つ{一|ひと}つの{例|れい}につける{正|ただ}しい{答|こた}え。たとえば{猫|ねこ}の{写真|しゃしん}につける「{猫|ねこ}」。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Varje bild får en etikett med namnet på svampen.",
+       "ja": "{写真|しゃしん}にはそれぞれ、キノコの{名前|なまえ}のラベルがつけられます。"
+      },
+      {
+       "sv": "Om etiketterna är fel, lär sig modellen fel saker.",
+       "ja": "ラベルが{間違|まちが}っていると、モデルは{間違|まちが}ったことを{学|まな}んでしまいます。"
+      }
+     ],
+     "labelSv": "i maskininlärning",
+     "collocations": [
+      "sätta etiketter på data",
+      "en felaktig etikett",
+      "data med etiketter"
+     ],
+     "explanation": {
+      "sv": "När man tränar en modell behöver den ofta exempel där svaret redan finns: en bild och ordet ”hund”, ett mejl och ordet ”skräppost”. Det svaret kallas etikett. Människor sätter etiketterna, ofta för hand, och det tar mycket tid. Verbet märka används också: man märker bilderna med etiketter.",
+      "ja": "AIモデルを{訓練|くんれん}するときには、{答|こた}えがすでについた{例|れい}が{必要|ひつよう}なことがよくあります。{写真|しゃしん}と「{犬|いぬ}」という{言葉|ことば}、メールと「{迷惑|めいわく}メール」という{言葉|ことば}などです。この{答|こた}えを「etikett（ラベル）」と{言|い}います。ラベルをつけるのは{人間|にんげん}で、{手作業|てさぎょう}のことが{多|おお}く、{時間|じかん}がかかります。{動詞|どうし}「märka」も{使|つか}い、「{写真|しゃしん}にラベルをつける」と{言|い}えます。"
+     },
+     "tags": [
+      "programmering",
+      "AI",
+      "maskininlärning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.ingrediens",

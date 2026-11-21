@@ -1,0 +1,186 @@
+{
+ "id": "m.traningsdata",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Träningsdata",
+ "titleJa": "{訓練|くんれん}データ",
+ "descriptionSv": "Hur en dator lär sig av exempel: varifrån träningsdata kommer, varför man märker data med rätt svar och vad som händer när data är för få, skeva eller innehåller personuppgifter.",
+ "descriptionJa": "コンピューターが{例|れい}から{学|まな}ぶしくみ：{訓練|くんれん}データはどこから{来|く}るのか、なぜデータに{正|ただ}しい{答|こた}えのラベルをつけるのか、そしてデータが{少|すく}なすぎたり{偏|かたよ}っていたり{個人情報|こじんじょうほう}を{含|ふく}んでいたりすると{何|なに}が{起|お}こるのかを{学|まな}びます。",
+ "categoryId": "R07-A02-T05",
+ "tags": [
+  "programmering",
+  "AI",
+  "maskininlärning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.visualisering-av-data"
+ ],
+ "related": [],
+ "recommendedOrder": 3851,
+ "words": [
+  {
+   "senseId": "s.artificiell-intelligens.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maskininlärning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.algoritm.1",
+   "active": false
+  },
+  {
+   "senseId": "s.träningsdata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.data.1",
+   "active": true
+  },
+  {
+   "senseId": "s.datamängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samla-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mönster.2",
+   "active": true
+  },
+  {
+   "senseId": "s.etikett.4",
+   "active": true
+  },
+  {
+   "senseId": "s.märka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvalitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.representativ.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skev.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördom.1",
+   "active": false
+  },
+  {
+   "senseId": "s.personuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anonymisera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En app som känner igen svampar",
+  "paragraphs": [
+   "Naoko jobbar på ett litet företag i Göteborg som gör appar. Företaget gör en app som ska känna igen svampar på foton. Appen bygger på artificiell intelligens, och mer exakt på maskininlärning. Ingen har skrivit in hur en kantarell ser ut. I stället ska en algoritm själv lära sig det.",
+   "– Det viktigaste är träningsdata, säger Naokos chef Johan. Algoritmen lär sig av stora mängder data. De samlar in över hundra tusen foton av svampar under ett år. Alla foton läggs i en stor datamängd.",
+   "Experter på svampar märker varje foto. De sätter en etikett på fotot, till exempel ”kantarell” eller ”flugsvamp”. Med hjälp av etiketterna kan algoritmen hitta mönster: färger och former som hör ihop med varje sort.",
+   "Men kvaliteten är lika viktig som mängden. Först kommer nästan alla foton från södra Sverige. Datamängden är inte representativ för hela landet, och appen blir sämre på svampar från norra Sverige. – Skeva data ger en skev app, säger Naoko. Hon har också läst att andra system har fått fördomar från sina data, till exempel mot vissa grupper av människor.",
+   "På några foton som användare har skickat in syns ansikten och bilnummer. Det är personuppgifter, så Naoko och hennes kollegor anonymiserar fotona innan de används. Nu är appen snart klar. Men Johan säger att man aldrig ska äta en svamp bara för att en app säger att den går att äta."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska företagets app göra?",
+    "options": [
+     "Visa var det finns svamp",
+     "Sälja svampar på nätet",
+     "Laga mat av svampar",
+     "Känna igen svampar på foton"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Företaget gör en app som ska känna igen svampar på foton.",
+    "explanationJa": "{写真|しゃしん}のキノコを{見分|みわ}けるアプリです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem sätter etiketter på fotona?",
+    "options": [
+     "Användarna av appen",
+     "Experter på svampar",
+     "Algoritmen själv",
+     "Johan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De sätter en etikett på fotot, till exempel ”kantarell” eller ”flugsvamp”.",
+    "explanationJa": "キノコの{専門家|せんもんか}がラベルをつけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blev appen sämre på svampar från norra Sverige?",
+    "options": [
+     "Det finns inga svampar i norr",
+     "Fotona var för stora",
+     "Etiketterna var på fel språk",
+     "Nästan alla foton kom från södra Sverige"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först kommer nästan alla foton från södra Sverige. Datamängden är inte representativ för hela landet …",
+    "explanationJa": "{写真|しゃしん}のほとんどがスウェーデン{南部|なんぶ}のものだったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Naoko och hennes kollegor använder fotona med personuppgifter utan att ändra dem.",
+    "correct": false,
+    "explanationSv": "Det är personuppgifter, så Naoko och hennes kollegor anonymiserar fotona innan de används.",
+    "explanationJa": "{個人情報|こじんじょうほう}なので、{使|つか}う{前|まえ}に{匿名化|とくめいか}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Johan tycker att man alltid kan lita på appen.",
+    "correct": false,
+    "explanationSv": "Men Johan säger att man aldrig ska äta en svamp bara för att en app säger att den går att äta.",
+    "explanationJa": "ヨハンは、アプリだけを{信|しん}じてキノコを{食|た}べてはいけないと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Maskininlärning betyder att ett datorprogram lär sig mönster ur exempel (träningsdata) i stället för att följa regler som en människa har skrivit, och skeva träningsdata kan ge skeva resultat.",
+    "source": "Nationalencyklopedin, uppslagsordet maskininlärning",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Foton där människor kan kännas igen räknas som personuppgifter och omfattas av dataskyddsförordningen (GDPR).",
+    "source": "Integritetsskyddsmyndigheten (IMY), imy.se",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om data och om appar som lär sig av exempel.",
+  "discussionPoints": [
+   "Vilka appar använder du som bygger på maskininlärning?",
+   "Skulle du vilja att dina foton blev träningsdata? Varför eller varför inte?",
+   "Varför är det viktigt att en datamängd är representativ?",
+   "Har du sett exempel på skeva data eller fördomar i en app?"
+  ]
+ },
+ "standard": 2
+}

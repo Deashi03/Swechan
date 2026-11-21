@@ -26,14 +26,100 @@
        "ja": "{荷物|にもつ}の{重|おも}さは2キロです。"
       }
      ],
+     "labelSv": "hur tung",
      "tags": [
       "mått"
      ],
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.vikt.2",
+     "ja": "{重要性|じゅうようせい}",
+     "defSv": "Hur viktigt något är.",
+     "defJa": "{何|なに}かがどのくらい{大切|たいせつ}か。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Skolan lägger stor vikt vid språk.",
+       "ja": "その{学校|がっこう}は{言語|げんご}をとても{重視|じゅうし}しています。"
+      }
+     ],
+     "labelSv": "betydelse",
+     "collocations": [
+      "lägga vikt vid något"
+     ],
+     "tags": [
+      "vardag"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B1"
+    },
+    {
+     "id": "s.vikt.3",
+     "ja": "ウエイト、おもり",
+     "defSv": "En tung sak som man lyfter när man tränar, eller som man lägger på en våg.",
+     "defJa": "トレーニングで{持|も}ち{上|あ}げたり、はかりに{載|の}せたりする{重|おも}いもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han lyfter vikter på gymmet.",
+       "ja": "{彼|かれ}はジムでウエイトを{持|も}ち{上|あ}げています。"
+      }
+     ],
+     "labelSv": "tung sak",
+     "tags": [
+      "sport"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "A2"
+    },
+    {
+     "id": "s.vikt.4",
+     "ja": "（ニューラルネットワークの）{重|おも}み",
+     "defSv": "I en modell i datorn: ett tal som bestämmer hur starkt en signal ska gå vidare från en del till nästa.",
+     "defJa": "あるニューロンからの{信号|しんごう}が、{次|つぎ}のニューロンにとってどのくらい{重要|じゅうよう}かを{決|き}める{数|かず}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "En stor vikt gör signalen starkare.",
+       "ja": "{大|おお}きな{重|おも}みは{信号|しんごう}を{強|つよ}くします。"
+      },
+      {
+       "sv": "Under träningen justeras vikterna lite i taget.",
+       "ja": "{訓練|くんれん}の{間|あいだ}に、{重|おも}みは{少|すこ}しずつ{調整|ちょうせい}されます。"
+      }
+     ],
+     "labelSv": "i neurala nätverk",
+     "collocations": [
+      "ändra vikterna",
+      "en stor vikt",
+      "miljarder vikter"
+     ],
+     "explanation": {
+      "sv": "I ett neuralt nätverk har varje linje mellan två neuroner en vikt. Vikten är ett tal: en stor vikt gör att signalen betyder mycket, en liten vikt gör att den nästan inte betyder något. Vikterna är nätverkets parametrar, och det är dem som ändras när nätverket tränas. Ordet hänger ihop med vikt i betydelsen ”hur viktigt något är”.",
+      "ja": "ニューラルネットワークでは、{二|ふた}つのニューロンの{間|あいだ}のつながりのそれぞれに「vikt（{重|おも}み）」があります。{重|おも}みは{数|かず}で、{大|おお}きければ{信号|しんごう}は{大|おお}きな{意味|いみ}を{持|も}ち、{小|ちい}さければほとんど{意味|いみ}を{持|も}ちません。{重|おも}みはネットワークのパラメーターで、{訓練|くんれん}で{変|か}わるのはこの{重|おも}みです。「{重要性|じゅうようせい}」という{意味|いみ}の「vikt」とつながりがあります。"
+     },
+     "tags": [
+      "programmering",
+      "AI",
+      "maskininlärning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.våg",

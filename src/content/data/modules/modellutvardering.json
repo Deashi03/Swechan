@@ -1,0 +1,190 @@
+{
+ "id": "m.modellutvardering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Modellutvärdering",
+ "titleJa": "モデルの{評価|ひょうか}",
+ "descriptionSv": "Hur man utvärderar en modell och pratar om resultatet: vad olika mått visar, varför falsklarm och fel som modellen missar spelar roll, och hur man diskuterar om en modell är rättvis, förklarbar och tillförlitlig.",
+ "descriptionJa": "モデルを{評価|ひょうか}し、その{結果|けっか}について{話|はな}す{方法|ほうほう}：さまざまな{指標|しひょう}が{何|なに}を{示|しめ}すか、{誤報|ごほう}やモデルの{見落|みお}としがなぜ{問題|もんだい}になるか、そしてモデルが{公平|こうへい}で{説明可能|せつめいかのう}で{信頼|しんらい}できるかをどう{話|はな}し{合|あ}うかを{学|まな}びます。",
+ "categoryId": "R07-A02-T05",
+ "tags": [
+  "programmering",
+  "AI",
+  "maskininlärning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.neurala-natverk"
+ ],
+ "related": [],
+ "recommendedOrder": 3857,
+ "words": [
+  {
+   "senseId": "s.utvärdera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utvärdering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träffsäkerhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.noggrannhet.2",
+   "active": false
+  },
+  {
+   "senseId": "s.mått.3",
+   "active": true
+  },
+  {
+   "senseId": "s.korrekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felaktig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.falsklarm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.falskt-positiv.1",
+   "active": false
+  },
+  {
+   "senseId": "s.jämförelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diskriminera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rättvis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.granska.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förklarbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillförlitlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansvar.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hur bra är modellen egentligen?",
+  "paragraphs": [
+   "Maria arbetar på en bank i Stockholm. Banken har en ny modell som ska hitta bedrägerier med bankkort. Innan modellen används ska Maria och hennes kollegor utvärdera den.",
+   "Först testar de modellen på ett år av gamla betalningar och jämför svaren med vad som faktiskt hände. Modellen har en träffsäkerhet på 99 procent, och siffran är räknad med stor noggrannhet. – Det låter bra, men det är inte ett bra mått här, säger Maria. Nästan alla betalningar är ju korrekta. En modell som alltid svarar ”inget bedrägeri” skulle också ha rätt nästan varje gång.",
+   "De tittar därför på felen. En del bedrägerier hittar modellen inte. Andra gånger stoppar den korrekta betalningar. Ett sådant falsklarm är jobbigt för kunden: kortet slutar fungera mitt i en resa. I statistiken kallas det ett falskt positivt svar.",
+   "Vid utvärderingen gör de också en jämförelse mellan olika grupper av kunder. Felaktiga larm är mycket vanligare för kunder som ofta handlar utomlands. – Modellen får inte diskriminera, säger Maria. Den måste vara rättvis mot alla kunder.",
+   "Till sist granskar en expert utanför banken modellen. Banken vill att besluten ska vara förklarbara, så att kunden kan få veta varför en betalning stoppades. Modellen är tillförlitlig nog att använda, men ansvaret ligger alltid hos banken, inte hos datorn."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska bankens modell hitta?",
+    "options": [
+     "Bedrägerier med bankkort",
+     "Nya kunder",
+     "Billiga resor",
+     "Fel i bankens datorer"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Banken har en ny modell som ska hitta bedrägerier med bankkort.",
+    "explanationJa": "カードの{不正利用|ふせいりよう}を{見|み}つけるモデルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är träffsäkerhet inte ett bra mått här enligt Maria?",
+    "options": [
+     "Modellen är för långsam",
+     "Nästan alla betalningar är korrekta",
+     "Siffran är fel räknad",
+     "Kunderna förstår inte procent"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nästan alla betalningar är ju korrekta.",
+    "explanationJa": "ほとんどの{支払|しはら}いは{正|ただ}しいものだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är ett falsklarm i texten?",
+    "options": [
+     "När modellen hittar ett bedrägeri",
+     "När kunden glömmer sin kod",
+     "När banken stänger",
+     "När modellen stoppar en korrekt betalning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Andra gånger stoppar den korrekta betalningar. Ett sådant falsklarm är jobbigt för kunden …",
+    "explanationJa": "{正|ただ}しい{支払|しはら}いを{止|と}めてしまうことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Felaktiga larm var lika vanliga för alla grupper av kunder.",
+    "correct": false,
+    "explanationSv": "Felaktiga larm är mycket vanligare för kunder som ofta handlar utomlands.",
+    "explanationJa": "{海外|かいがい}でよく{買|か}い{物|もの}をする{客|きゃく}に{多|おお}かったです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Enligt texten har banken ansvaret, inte datorn.",
+    "correct": true,
+    "explanationSv": "… men ansvaret ligger alltid hos banken, inte hos datorn.",
+    "explanationJa": "{責任|せきにん}はいつも{銀行|ぎんこう}にあります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Den som utsätts för ett automatiserat beslut har enligt dataskyddsförordningen rätt till meningsfull information om logiken bakom beslutet och i vissa fall rätt att få det prövat av en människa.",
+    "source": "Dataskyddsförordningen (GDPR), artiklarna 15 och 22; Integritetsskyddsmyndigheten (IMY)",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   },
+   {
+    "text": "När nästan alla fall tillhör samma klass kan träffsäkerheten bli hög även för en modell som alltid ger samma svar, därför används också andra mått.",
+    "source": "Google for Developers, Machine Learning Crash Course: Accuracy, precision and recall",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man vet om en AI-modell är bra och rättvis.",
+  "discussionPoints": [
+   "Har du varit med om ett falsklarm, till exempel med brandlarmet eller ditt bankkort?",
+   "Vilket mått tycker du är viktigast när man utvärderar en modell?",
+   "Ska man kunna få en förklaring när ett program fattar ett beslut om en? Varför?",
+   "Vem bär ansvaret när en AI gör fel: företaget, de som har gjort modellen eller användaren?"
+  ]
+ },
+ "standard": 2
+}

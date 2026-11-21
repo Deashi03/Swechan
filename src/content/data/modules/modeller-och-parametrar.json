@@ -1,0 +1,186 @@
+{
+ "id": "m.modeller-och-parametrar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Modeller och parametrar",
+ "titleJa": "モデルとパラメーター",
+ "descriptionSv": "Vad en AI-modell är: hur den tar emot indata och ger utdata, hur den hittar samband och hur dess parametrar justeras, så att du kan förstå och förklara hur en modell gör förutsägelser.",
+ "descriptionJa": "AIモデルとは{何|なに}か：{入力|にゅうりょく}データを{受|う}け{取|と}って{出力|しゅつりょく}データを{出|だ}すしくみ、{関係|かんけい}を{見|み}つけるしくみ、パラメーターが{調整|ちょうせい}されるしくみを{学|まな}び、モデルがどのように{予測|よそく}するのかを{理解|りかい}して{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A02-T05",
+ "tags": [
+  "programmering",
+  "AI",
+  "maskininlärning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.traningsdata"
+ ],
+ "related": [],
+ "recommendedOrder": 3852,
+ "words": [
+  {
+   "senseId": "s.modell.5",
+   "active": true
+  },
+  {
+   "senseId": "s.förenkling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.verklighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förutsäga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.indata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egenskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utdata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parameter.3",
+   "active": true
+  },
+  {
+   "senseId": "s.programmera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.justera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förutsägelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statistisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beräkna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljard.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inställning.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vad finns inne i en modell?",
+  "paragraphs": [
+   "Kenji går en kvällskurs om AI. Den första kvällen frågar läraren Ingrid: – Vad är en modell? Sedan svarar hon själv: En modell är en förenkling av verkligheten. En sådan modell är ett program som har lärt sig av data och som kan förutsäga saker.",
+   "Ingrid visar ett exempel. En modell ska förutsäga priset på en lägenhet. Indata är lägenhetens egenskaper: hur stor den är, hur många rum den har och var den ligger. Utdata är ett pris. – Modellen hittar samband, säger Ingrid. Till exempel kostar större lägenheter i centrum mer.",
+   "Inne i modellen finns parametrar. Det är tal som bestämmer hur mycket varje egenskap betyder för priset. Ingen har programmerat dem för hand. När modellen lär sig, justerar den parametrarna lite i taget, tills förutsägelserna blir bra.",
+   "– Är modellen säker på svaret? frågar Kenji. – Nej, det är en statistisk modell, svarar Ingrid. Den beräknar vilket pris som är mest troligt, men den kan ha fel.",
+   "Till sist berättar Ingrid att de stora modellerna som skriver text har flera hundra miljarder parametrar. På vägen hem öppnar Kenji en app i telefonen och tittar på inställningarna. Där kan han välja mellan en snabb och en stor modell."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är indata i Ingrids exempel?",
+    "options": [
+     "Priset på lägenheten",
+     "Kenjis telefon",
+     "Parametrarna",
+     "Lägenhetens egenskaper"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Indata är lägenhetens egenskaper: hur stor den är, hur många rum den har och var den ligger.",
+    "explanationJa": "{入力|にゅうりょく}データはマンションの{特徴|とくちょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad gör modellen med parametrarna när den lär sig?",
+    "options": [
+     "Den justerar dem lite i taget",
+     "Den tar bort dem",
+     "Den skriver ut dem",
+     "Den frågar läraren"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När modellen lär sig, justerar den parametrarna lite i taget, tills förutsägelserna blir bra.",
+    "explanationJa": "パラメーターを{少|すこ}しずつ{調整|ちょうせい}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "inference",
+    "promptSv": "Varför kan modellen ha fel?",
+    "options": [
+     "Den beräknar bara vad som är mest troligt",
+     "Den har för få parametrar",
+     "Ingrid har programmerat den fel",
+     "Den vet inte var Uppsala ligger"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den beräknar vilket pris som är mest troligt, men den kan ha fel.",
+    "explanationJa": "{最|もっと}もありそうな{値段|ねだん}を{計算|けいさん}するだけだからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Någon har programmerat parametrarna för hand.",
+    "correct": false,
+    "explanationSv": "Ingen har programmerat dem för hand.",
+    "explanationJa": "{誰|だれ}も{手|て}でプログラムしていません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "De stora modellerna som skriver text har flera hundra miljarder parametrar.",
+    "correct": true,
+    "explanationSv": "… de stora modellerna som skriver text har flera hundra miljarder parametrar.",
+    "explanationJa": "{文章|ぶんしょう}を{書|か}く{大|おお}きなモデルには{数千億|すうせんおく}のパラメーターがあります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I en maskininlärningsmodell justeras parametrarna automatiskt under träningen, så att modellens förutsägelser blir bättre.",
+    "source": "Nationalencyklopedin, uppslagsordet maskininlärning",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Stora språkmodeller har flera hundra miljarder parametrar; GPT-3 från 2020 hade till exempel 175 miljarder.",
+    "source": "Brown m.fl. (2020), Language Models are Few-Shot Learners, OpenAI",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad en modell är och vad den kan förutsäga.",
+  "discussionPoints": [
+   "Vad skulle du vilja att en modell kunde förutsäga åt dig?",
+   "Vilka egenskaper skulle du använda för att förutsäga priset på en lägenhet?",
+   "Litar du på en förutsägelse som en statistisk modell har gjort?",
+   "Brukar du ändra inställningarna i de appar du använder?"
+  ]
+ },
+ "standard": 2
+}

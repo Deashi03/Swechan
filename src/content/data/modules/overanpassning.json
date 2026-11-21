@@ -1,0 +1,176 @@
+{
+ "id": "m.overanpassning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Överanpassning",
+ "titleJa": "{過学習|かがくしゅう}",
+ "descriptionSv": "Varför en modell kan vara perfekt på sina träningsdata men dålig på nya data, hur man beskriver det problemet med jämförelser från skolan och vad man kan göra för att modellen ska kunna generalisera.",
+ "descriptionJa": "モデルが{訓練|くんれん}データでは{完璧|かんぺき}なのに{新|あたら}しいデータでは{成績|せいせき}が{悪|わる}くなる{理由|りゆう}、その{問題|もんだい}を{学校|がっこう}のたとえで{説明|せつめい}する{言|い}い{方|かた}、そしてモデルが{汎化|はんか}できるようにするための{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A02-T05",
+ "tags": [
+  "programmering",
+  "AI",
+  "maskininlärning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.traning-och-validering"
+ ],
+ "related": [],
+ "recommendedOrder": 3855,
+ "words": [
+  {
+   "senseId": "s.överanpassning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.memorera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prestera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.generalisera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.komplex.1",
+   "active": true
+  },
+  {
+   "senseId": "s.detalj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brus.2",
+   "active": true
+  },
+  {
+   "senseId": "s.slump.1",
+   "active": true
+  },
+  {
+   "senseId": "s.extremvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förenkla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anpassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvikelse.1",
+   "active": false
+  },
+  {
+   "senseId": "s.otillräcklig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.balans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-slutsatser.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "För bra för att vara sant",
+  "paragraphs": [
+   "Elin och Oskar läser en kurs i maskininlärning. Oskar är stolt: hans modell har rätt på 100 procent av sina träningsdata. Men när läraren testar den på nya data, har den bara rätt i hälften av fallen. – Det är överanpassning, säger läraren.",
+   "Läraren förklarar med en jämförelse. Tänk på en elev som memorerar alla svar i en gammal provbok i stället för att förstå. På samma prov presterar eleven perfekt. Men på ett nytt prov går det dåligt, eftersom eleven inte kan generalisera.",
+   "Oskars modell är för komplex för den lilla datamängden. Den har lärt sig varje detalj, också bruset: små fel i mätningarna och sådant som bara beror på slumpen. Ett extremvärde, en lägenhet som kostade tio gånger mer än de andra, fick modellen att ändra hela kurvan.",
+   "Det finns flera sätt att lösa problemet. Man kan förenkla modellen, så att den inte kan anpassa sig till varje liten avvikelse. Man kan också samla in mer data, eftersom otillräckliga data ofta leder till överanpassning.",
+   "– Det gäller att hitta en balans, säger läraren. En för enkel modell ser inga mönster, och en för komplex modell ser mönster som inte finns. Elin tycker att det låter som människor också: det är lätt att dra slutsatser av några få exempel."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur bra var Oskars modell på nya data?",
+    "options": [
+     "Den hade rätt i alla fall",
+     "Den hade rätt i hälften av fallen",
+     "Den hade aldrig rätt",
+     "Den hade rätt i 90 procent av fallen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Men när läraren testar den på nya data, har den bara rätt i hälften av fallen.",
+    "explanationJa": "{新|あたら}しいデータでは{半分|はんぶん}しか{正解|せいかい}しませんでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad gör eleven i lärarens jämförelse?",
+    "options": [
+     "Läser många olika böcker",
+     "Frågar läraren om hjälp",
+     "Skriver ett nytt prov",
+     "Memorerar svaren i stället för att förstå"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Tänk på en elev som memorerar alla svar i en gammal provbok i stället för att förstå.",
+    "explanationJa": "{理解|りかい}する{代|か}わりに{答|こた}えを{暗記|あんき}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Vad fick modellen att ändra hela kurvan?",
+    "options": [
+     "För mycket data",
+     "Ett extremvärde",
+     "Lärarens hjälp",
+     "En enkel modell"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ett extremvärde, en lägenhet som kostade tio gånger mer än de andra, fick modellen att ändra hela kurvan.",
+    "explanationJa": "{外|はず}れ{値|ち}が{原因|げんいん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mer data kan hjälpa mot överanpassning.",
+    "correct": true,
+    "explanationSv": "Man kan också samla in mer data, eftersom otillräckliga data ofta leder till överanpassning.",
+    "explanationJa": "データを{増|ふ}やすと{過学習|かがくしゅう}を{防|ふせ}ぐのに{役立|やくだ}ちます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Läraren tycker att en modell ska vara så komplex som möjligt.",
+    "correct": false,
+    "explanationSv": "– Det gäller att hitta en balans, säger läraren.",
+    "explanationJa": "{先生|せんせい}はバランスが{大切|たいせつ}だと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Överanpassning innebär att en modell passar träningsdata för väl och därför fungerar sämre på nya data; vanliga åtgärder är mer data och en enklare modell.",
+    "source": "Google for Developers, Machine Learning Crash Course: Overfitting",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att lära sig utantill och att förstå, både för människor och för modeller.",
+  "discussionPoints": [
+   "Har du någon gång memorerat svar utan att förstå? Hur gick det?",
+   "Hur kan man veta om man verkligen har förstått något?",
+   "Kan du ge ett exempel på när någon har dragit slutsatser av för få exempel?",
+   "Varför är det svårt att hitta en balans mellan en enkel och en komplex förklaring?"
+  ]
+ },
+ "standard": 2
+}
