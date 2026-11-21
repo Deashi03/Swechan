@@ -69204,7 +69204,10 @@
     "result": "pass",
     "round": "0.28.0",
     "hash": "622ea15f"
-   }
+   },
+   "confusableWith": [
+    "s.lärande.1"
+   ]
   },
   {
    "senseId": "s.inlärningskurva.1",
@@ -76045,7 +76048,8 @@
    "group": "åsikt-motivera",
    "quiz": false,
    "confusableWith": [
-    "s.påstå.1"
+    "s.påstå.1",
+    "s.tes.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -100664,7 +100668,10 @@
     "result": "pass",
     "round": "0.33.0",
     "hash": "486bf04b"
-   }
+   },
+   "confusableWith": [
+    "s.visualisera.1"
+   ]
   },
   {
    "senseId": "s.glömskekurva.1",
@@ -101705,7 +101712,10 @@
    "kind": "illustration",
    "motif": "uni.urval.2",
    "group": "urval.2",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.antagning.1"
+   ]
   },
   {
    "senseId": "s.antagningsbesked.1",
@@ -102379,7 +102389,10 @@
     "result": "pass",
     "round": "0.33.0",
     "hash": "7eb0bf4d"
-   }
+   },
+   "confusableWith": [
+    "s.bedömning.1"
+   ]
   },
   {
    "senseId": "s.individuell-utvecklingsplan.1",
@@ -102479,7 +102492,10 @@
    "kind": "illustration",
    "motif": "skol.stödundervisning",
    "group": "stödundervisning",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.särskilt-stöd.1"
+   ]
   },
   {
    "senseId": "s.anpassad-grundskola.1",
@@ -102583,7 +102599,10 @@
     "result": "pass",
     "round": "0.33.0",
     "hash": "be35becb"
-   }
+   },
+   "confusableWith": [
+    "s.ämnesplan.1"
+   ]
   },
   {
    "senseId": "s.centralt-innehåll.1",
@@ -102747,7 +102766,10 @@
     "result": "pass",
     "round": "0.33.0",
     "hash": "b217b5c8"
-   }
+   },
+   "confusableWith": [
+    "s.pedagogik.1"
+   ]
   },
   {
    "senseId": "s.katederundervisning.1",
@@ -103428,7 +103450,10 @@
    "kind": "illustration",
    "motif": "fors.tidskrift",
    "group": "tidskrift",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.publikation.1"
+   ]
   },
   {
    "senseId": "s.publicera.1",
@@ -173432,6 +173457,348 @@
     "round": "0.55.0",
     "hash": "29f4d8be",
     "method": "match"
+   }
+  },
+  {
+   "senseId": "s.friskola.1",
+   "kind": "illustration",
+   "motif": "manu.friskola",
+   "group": "b5-friskola",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "cdbad973",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.antagning.1",
+   "kind": "illustration",
+   "motif": "manu.antagning",
+   "group": "b5-antagning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.urval.2"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "f71391c7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.bedömning.1",
+   "kind": "illustration",
+   "motif": "manu.bedömning",
+   "group": "b5-bedömning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.skriftligt-omdöme.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "31fef8bd",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.specialpedagog.1",
+   "kind": "illustration",
+   "motif": "manu.specialpedagog",
+   "group": "b5-specialpedagog",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "eeaa92a4",
+    "method": "match",
+    "waiver": "Förväxlas med skolpsykolog bland flera bilder av vuxna som hjälper barn; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.särskilt-stöd.1",
+   "kind": "illustration",
+   "motif": "manu.särskilt-stöd",
+   "group": "b5-särskilt-stöd",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.stödundervisning.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "1b9ebdfc",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ämnesplan.1",
+   "kind": "illustration",
+   "motif": "manu.ämnesplan",
+   "group": "b5-ämnesplan",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kursplan.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "7b925b40",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.utexaminerad.1",
+   "kind": "illustration",
+   "motif": "manu.utexaminerad",
+   "group": "b5-utexaminerad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "44b07894",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.visualisera.1",
+   "kind": "illustration",
+   "motif": "manu.visualisera",
+   "group": "b5-visualisera",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.inre-bild.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "d117384b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.studiesvårighet.1",
+   "kind": "illustration",
+   "motif": "manu.studiesvårighet",
+   "group": "b5-studiesvårighet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "e393f3a7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.lärande.1",
+   "kind": "illustration",
+   "motif": "manu.lärande",
+   "group": "b5-lärande",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.inlärning.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "ec9b1b17",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.pedagogik.1",
+   "kind": "illustration",
+   "motif": "manu.pedagogik",
+   "group": "b5-pedagogik",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.undervisningsmetod.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "a0a3bead",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förmåga.1",
+   "kind": "illustration",
+   "motif": "manu.förmåga",
+   "group": "b5-förmåga",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "4147e115",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.respons.1",
+   "kind": "illustration",
+   "motif": "manu.respons",
+   "group": "b5-respons",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "0bbd1072",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.samarbete.1",
+   "kind": "illustration",
+   "motif": "manu.samarbete",
+   "group": "b5-samarbete",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "24db1491",
+    "method": "match",
+    "waiver": "Överbegrepp bland flera bilder av samarbete i modulen; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.förutsättning.2",
+   "kind": "illustration",
+   "motif": "manu.förutsättning",
+   "group": "b5-förutsättning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "51c546f1",
+    "method": "match",
+    "waiver": "Abstrakt; förväxlas med individanpassad; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.vetenskaplig.1",
+   "kind": "illustration",
+   "motif": "manu.vetenskaplig",
+   "group": "b5-vetenskaplig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "d29e0312",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.publikation.1",
+   "kind": "illustration",
+   "motif": "manu.publikation",
+   "group": "b5-publikation",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.tidskrift.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "5e6f7c26",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.referera.1",
+   "kind": "illustration",
+   "motif": "manu.referera",
+   "group": "b5-referera",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "4f549c52",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.fabricera.1",
+   "kind": "illustration",
+   "motif": "manu.fabricera",
+   "group": "b5-fabricera",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.forskningsfusk.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "c7e796bb",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tes.1",
+   "kind": "illustration",
+   "motif": "manu.tes",
+   "group": "b5-tes",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.påstående.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "17edfda2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skolgång.1",
+   "kind": "illustration",
+   "motif": "manu.skolgång",
+   "group": "b5-skolgång",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "150ae478",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.yrkeshögskola.1",
+   "kind": "illustration",
+   "motif": "manu.yrkeshögskola",
+   "group": "b5-yrkeshögskola",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "52c656af",
+    "method": "match",
+    "waiver": "Förväxlas med praktikplats och universitet; godkänd av produktägaren 2026-11-21 som symbolbild."
    }
   }
  ]
