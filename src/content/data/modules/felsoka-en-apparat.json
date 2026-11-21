@@ -1,0 +1,180 @@
+{
+ "id": "m.felsoka-en-apparat",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Felsöka en apparat",
+ "titleJa": "{機器|きき}の{故障|こしょう}を{調|しら}べる",
+ "descriptionSv": "Hur man tar reda på varför en apparat inte fungerar och berättar om det: vad som händer i elcentralen, hur man felsöker steg för steg, när man ska kontakta en elektriker eller en reparatör och vad garantin innebär.",
+ "descriptionJa": "{機器|きき}が{動|うご}かない{理由|りゆう}の{調|しら}べ{方|かた}とその{説明|せつめい}のしかた：{分電盤|ぶんでんばん}で{何|なに}が{起|お}きるか、{一歩|いっぽ}ずつ{原因|げんいん}を{調|しら}べる{方法|ほうほう}、{電気工事士|でんきこうじし}や{修理工|しゅうりこう}に{連絡|れんらく}すべきとき、そして{保証|ほしょう}の{意味|いみ}を{学|まな}びます。",
+ "categoryId": "R07-A03-T02",
+ "tags": [
+  "elektronik",
+  "teknik",
+  "reparationer"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.fjarrkontroller"
+ ],
+ "related": [],
+ "recommendedOrder": 3927,
+ "words": [
+  {
+   "senseId": "s.jordfelsbrytare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elcentral.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lösa-ut.2",
+   "active": true
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utesluta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lukta-bränt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektriker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.multimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortslutning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.starta-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återställa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fabriksinställning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.garanti.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reparatör.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När elen går",
+  "paragraphs": [
+   "En söndagsmorgon sätter Omar på kaffebryggaren. Plötsligt slocknar alla lampor i köket. Jordfelsbrytaren i elcentralen har löst ut. Omar fäller upp den igen, men efter några sekunder löser den ut på nytt.",
+   "Omar börjar felsöka. Han drar ur alla sladdar i köket och fäller upp jordfelsbrytaren. Nu fungerar strömmen. Sedan sätter han i en apparat i taget. När han sätter i kaffebryggaren går strömmen igen. Då kan han utesluta de andra apparaterna. Och det luktar bränt från kaffebryggaren.",
+   "Omars syster Lena läser till elektriker. Hon kommer över med en multimeter och mäter på kaffebryggaren. – Det är en kortslutning inne i bryggaren, säger hon. Den ska du inte använda mer. Hon kontrollerar också säkringarna, och alla är hela.",
+   "Samma dag krånglar Omars tvättmaskin. Displayen visar en felkod som han slår upp i bruksanvisningen. Han provar att starta om maskinen, och när det inte hjälper återställer han den till fabriksinställningarna. Efter det fungerar maskinen som vanligt.",
+   "Kaffebryggaren är bara ett år gammal, så den har fortfarande garanti. Omar lämnar in den i butiken där han köpte den. Butiken skickar den till en reparatör, som ska avgöra om den kan lagas eller om Omar får en ny."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad händer när Omar sätter på kaffebryggaren?",
+    "options": [
+     "Alla lampor i köket slocknar",
+     "Kaffet blir kallt",
+     "Tvättmaskinen startar",
+     "Brandvarnaren piper"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Plötsligt slocknar alla lampor i köket.",
+    "explanationJa": "{台所|だいどころ}の{電気|でんき}が{全部|ぜんぶ}{消|き}えます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Hur kan Omar utesluta de andra apparaterna?",
+    "options": [
+     "Lena säger det till honom",
+     "Strömmen går bara när han sätter i kaffebryggaren",
+     "De andra apparaterna är nya",
+     "De andra apparaterna har garanti"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När han sätter i kaffebryggaren går strömmen igen. Då kan han utesluta de andra apparaterna.",
+    "explanationJa": "コーヒーメーカーを{差|さ}し{込|こ}んだときだけ{電気|でんき}が{落|お}ちるので、ほかの{機器|きき}は{原因|げんいん}ではないとわかります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad hittar Lena med multimetern?",
+    "options": [
+     "En trasig säkring",
+     "En kortslutning i bryggaren",
+     "Ett fel i elcentralen",
+     "En lös lampa"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Det är en kortslutning inne i bryggaren, säger hon.",
+    "explanationJa": "コーヒーメーカーの{中|なか}のショートを{見|み}つけました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Tvättmaskinen fungerar efter att Omar har återställt den.",
+    "correct": true,
+    "explanationSv": "Efter det fungerar maskinen som vanligt.",
+    "explanationJa": "{初期設定|しょきせってい}に{戻|もど}したあと、{洗濯機|せんたくき}はいつものように{動|うご}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Omar måste själv betala för att få kaffebryggaren lagad.",
+    "correct": false,
+    "explanationSv": "Kaffebryggaren är bara ett år gammal, så den har fortfarande garanti.",
+    "explanationJa": "まだ{保証期間|ほしょうきかん}{中|ちゅう}なので、{自分|じぶん}で{払|はら}う{必要|ひつよう}はありません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En jordfelsbrytare bryter strömmen om ström läcker ut, och den bör provas regelbundet med testknappen.",
+    "source": "Elsäkerhetsverket, sidan om jordfelsbrytare",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om apparater som har gått sönder och om hur man tar reda på vad som är fel.",
+  "discussionPoints": [
+   "Har säkringen eller jordfelsbrytaren löst ut hemma hos dig? Vad gjorde du?",
+   "Vad gör du först när en apparat inte fungerar?",
+   "Lagar du hellre saker själv eller lämnar du dem till en reparatör?",
+   "Har du använt garantin någon gång? Hur gick det?"
+  ]
+ },
+ "standard": 2
+}

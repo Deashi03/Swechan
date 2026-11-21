@@ -1,0 +1,172 @@
+{
+ "id": "m.strombrytare-och-sensorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Strömbrytare och sensorer",
+ "titleJa": "スイッチとセンサー",
+ "descriptionSv": "Hur man pratar om knappar, strömbrytare och sensorer: hur man sätter på och stänger av saker hemma, vad olika knappar och lägen betyder och hur sensorer och skydd fungerar i en bostad och på en arbetsplats.",
+ "descriptionJa": "ボタン、スイッチ、センサーの{話|はな}し{方|かた}：{家|いえ}で{電源|でんげん}を{入|い}れたり{切|き}ったりする{言|い}い{方|かた}、いろいろなボタンやモードの{意味|いみ}、そして{住|す}まいや{職場|しょくば}でセンサーや{安全装置|あんぜんそうち}がどう{働|はたら}くかを{学|まな}びます。",
+ "categoryId": "R07-A03-T02",
+ "tags": [
+  "elektronik",
+  "teknik",
+  "vardag"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.batterier-och-laddare"
+ ],
+ "related": [],
+ "recommendedOrder": 3922,
+ "words": [
+  {
+   "senseId": "s.strömbrytare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slå-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömknapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.viloläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dimmer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.timer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörelsesensor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotocell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.känna-av.3",
+   "active": true
+  },
+  {
+   "senseId": "s.beröringskänslig.2",
+   "active": true
+  },
+  {
+   "senseId": "s.brandvarnare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödstopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överhettningsskydd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ringklocka.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Knappar överallt",
+  "paragraphs": [
+   "Ali har flyttat till en ny lägenhet. I hallen finns en vanlig strömbrytare, men i vardagsrummet sitter en dimmer, så att han kan välja hur starkt lampan ska lysa. Han slår på lampan i köket och slår av den i hallen.",
+   "Spisen i köket har beröringskänsliga knappar och en timer. Vattenkokaren har ett överhettningsskydd: om den är tom stänger den av sig själv. I taket sitter en brandvarnare, och Ali testar den direkt.",
+   "Utanför porten tänds lampan automatiskt när det blir mörkt, för den har en fotocell. I trappan finns en rörelsesensor som tänder ljuset när någon kommer. När Alis kompis kommer på besök använder hon ringklockan vid dörren.",
+   "På måndagen börjar Ali sin praktik på en fabrik. Handledaren visar varje maskin. – Här är nödstoppet. Om något händer trycker du på det, så stannar maskinen direkt. Om någon öppnar luckan till maskinen går ett larm, för en sensor känner av att luckan inte är stängd.",
+   "På kvällen ser Ali att datorn inte är avstängd, bara i viloläge. Han håller in strömknappen och stänger av den helt. – I dag har jag lärt mig mer om knappar än på flera år, tänker han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad kan Ali göra med dimmern?",
+    "options": [
+     "Välja hur starkt lampan ska lysa",
+     "Stänga av spisen",
+     "Testa brandvarnaren",
+     "Öppna porten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I vardagsrummet sitter en dimmer, så att han kan välja hur starkt lampan ska lysa.",
+    "explanationJa": "{調光器|ちょうこうき}で、ランプの{明|あか}るさを{選|えら}べます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför tänds lampan utanför porten när det blir mörkt?",
+    "options": [
+     "Den har en fotocell",
+     "Ali slår på den",
+     "Den har en timer",
+     "Grannen trycker på en knapp"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Utanför porten tänds lampan automatiskt när det blir mörkt, för den har en fotocell.",
+    "explanationJa": "{光|ひかり}センサーがついているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "När ska man trycka på nödstoppet?",
+    "options": [
+     "Varje morgon när man kommer",
+     "När man vill tända lampan",
+     "Om något händer vid maskinen",
+     "När maskinen behöver laddas"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Om något händer trycker du på det, så stannar maskinen direkt.",
+    "explanationJa": "{何|なに}か{起|お}きたときに{押|お}すと、{機械|きかい}がすぐに{止|と}まります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vattenkokaren stänger av sig själv om den är tom.",
+    "correct": true,
+    "explanationSv": "Vattenkokaren har ett överhettningsskydd: om den är tom stänger den av sig själv.",
+    "explanationJa": "{過熱防止装置|かねつぼうしそうち}があるので、{空|から}だと{自動的|じどうてき}に{切|き}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Datorn var helt avstängd när Ali kom hem.",
+    "correct": false,
+    "explanationSv": "På kvällen ser Ali att datorn inte är avstängd, bara i viloläge.",
+    "explanationJa": "パソコンは{切|き}れておらず、スリープモードでした。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om knappar, strömbrytare och sensorer hemma och på jobbet.",
+  "discussionPoints": [
+   "Vilka apparater hemma har en timer eller en sensor?",
+   "Tycker du om beröringskänsliga knappar, eller föredrar du vanliga knappar?",
+   "Har du sett ett nödstopp på en arbetsplats? Var?",
+   "Brukar du stänga av datorn helt eller låta den gå i viloläge?"
+  ]
+ },
+ "standard": 2
+}

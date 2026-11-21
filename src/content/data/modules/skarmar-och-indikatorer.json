@@ -1,0 +1,172 @@
+{
+ "id": "m.skarmar-och-indikatorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Skärmar och indikatorer",
+ "titleJa": "{画面|がめん}と{表示灯|ひょうじとう}",
+ "descriptionSv": "Hur man förstår och beskriver det som apparater visar: skärmar och displayer, lampor som lyser eller blinkar, symboler och mätare, och hur man tar reda på vad en lampa eller en symbol betyder.",
+ "descriptionJa": "{機器|きき}が{表示|ひょうじ}するものの{理解|りかい}と{説明|せつめい}：{画面|がめん}やディスプレイ、{光|ひか}ったり{点滅|てんめつ}したりするランプ、{記号|きごう}やメーター、そしてランプや{記号|きごう}の{意味|いみ}の{調|しら}べ{方|かた}を{学|まな}びます。",
+ "categoryId": "R07-A03-T02",
+ "tags": [
+  "elektronik",
+  "teknik",
+  "vardag"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kretskort"
+ ],
+ "related": [],
+ "recommendedOrder": 3924,
+ "words": [
+  {
+   "senseId": "s.skärm.2",
+   "active": true
+  },
+  {
+   "senseId": "s.display.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pekskärm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakgrundsbelysning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ikon.2",
+   "active": true
+  },
+  {
+   "senseId": "s.symbol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lysa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blinka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tänd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släckt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningslampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.batteriindikator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visare.2",
+   "active": true
+  },
+  {
+   "senseId": "s.analog.1",
+   "active": false
+  },
+  {
+   "senseId": "s.läsa-av.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lampor som pratar",
+  "paragraphs": [
+   "Kenji har köpt en begagnad tvättmaskin. Den har en liten display som visar hur lång tid som är kvar. Bredvid displayen finns flera symboler och en kontrollampa. När maskinen är på är kontrollampan tänd, och när den är av är lampan släckt.",
+   "En kväll börjar en röd lampa att blinka. Kenji förstår inte varför, så han letar i bruksanvisningen. Där står det att symbolen betyder att filtret behöver rengöras.",
+   "Mobilen visar också mycket information. Skärmen är en pekskärm, och varje app har en egen ikon. Överst finns en batteriindikator. När den lyser rött är batteriet nästan slut.",
+   "I bilen är det likadant. Om en varningslampa lyser måste man ta reda på varför. Bilens hastighetsmätare är analog: en visare pekar på rätt siffra.",
+   "Kenji jobbar som fastighetsskötare. Han läser av mätarna i källaren varje månad. Den gamla mätaren hade siffror som var svåra att se, men den nya har en display med bakgrundsbelysning, så att siffrorna syns även i den mörka källaren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar tvättmaskinens display?",
+    "options": [
+     "Hur lång tid som är kvar",
+     "Vilken dag det är",
+     "Hur mycket maskinen kostade",
+     "Temperaturen ute"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den har en liten display som visar hur lång tid som är kvar.",
+    "explanationJa": "{残|のこ}り{時間|じかん}が{表示|ひょうじ}されます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blinkar den röda lampan?",
+    "options": [
+     "Maskinen är full",
+     "Filtret behöver rengöras",
+     "Strömmen har gått",
+     "Tvätten är klar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Där står det att symbolen betyder att filtret behöver rengöras.",
+    "explanationJa": "フィルターの{掃除|そうじ}が{必要|ひつよう}だという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att kontrollampan är släckt?",
+    "options": [
+     "Att maskinen är trasig",
+     "Att maskinen är av",
+     "Att tvätten är klar",
+     "Att filtret är smutsigt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När maskinen är på är kontrollampan tänd, och när den är av är lampan släckt.",
+    "explanationJa": "{表示灯|ひょうじとう}が{消|き}えているのは、{洗濯機|せんたくき}の{電源|でんげん}が{切|き}れているということです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Bilens hastighetsmätare är digital.",
+    "correct": false,
+    "explanationSv": "Bilens hastighetsmätare är analog: en visare pekar på rätt siffra.",
+    "explanationJa": "スピードメーターはアナログで、{針|はり}が{数字|すうじ}を{指|さ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Utan bakgrundsbelysning vore det svårt att se siffrorna i källaren.",
+    "correct": true,
+    "explanationSv": "... den nya har en display med bakgrundsbelysning, så att siffrorna syns även i den mörka källaren.",
+    "explanationJa": "バックライトがあるので、{暗|くら}い{地下室|ちかしつ}でも{数字|すうじ}が{見|み}えます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om skärmar, lampor och symboler på apparater.",
+  "discussionPoints": [
+   "Vilka apparater hemma har en display?",
+   "Har du någon gång inte förstått vad en lampa eller symbol betydde? Vad gjorde du?",
+   "Föredrar du en analog eller en digital klocka?",
+   "Hur ofta tittar du på batteriindikatorn i mobilen?"
+  ]
+ },
+ "standard": 2
+}

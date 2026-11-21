@@ -39129,8 +39129,8 @@
   },
   {
    "id": "m.tolka-sociala-signaler",
-   "contentVersion": 3,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 4,
+   "updatedAt": "2026-11-21",
    "titleSv": "Tolka sociala signaler",
    "titleJa": "{社会的|しゃかいてき}なサインを{読|よ}み{取|と}る",
    "descriptionSv": "Tolka sociala signaler: samspel, läsa av, känna av, subtil, blandade signaler, förstå vinken, titta på klockan, gäspa, trumma med fingrarna, klia sig i huvudet, uttråkad, besvärad, avvisande, inbjudande, fingertoppskänsla, taktlös, trampa i klaveret och genomskåda.",
@@ -99866,8 +99866,8 @@
   },
   {
    "id": "m.metamorfos-och-livscykler",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-21",
    "titleSv": "Metamorfos och livscykler",
    "titleJa": "{変態|へんたい}とライフサイクル",
    "descriptionSv": "Metamorfos och livscykler: livscykel, stadium, larv, kläcka, puppa, förpuppa sig, kokong, fullbildad, metamorfos, fullständig förvandling, nymf, ofullständig förvandling, gräshoppa, trollslända, dagslända, fluga och mygga.",
@@ -129983,8 +129983,8 @@
   },
   {
    "id": "m.smittvagar",
-   "contentVersion": 3,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 4,
+   "updatedAt": "2026-11-21",
    "titleSv": "Smittvägar",
    "titleJa": "{感染経路|かんせんけいろ}",
    "descriptionSv": "Smittvägar: smittväg, smitta, smittsam, droppsmitta, nysa, armveck, munskydd, kontaktsmitta, dörrhandtag, tvätta händerna, handsprit, salmonella, matförgiftning, mygga, fästing, blodsmitta och smittbärare.",
@@ -143577,6 +143577,629 @@
    ],
    "standard": 2,
    "bodyFile": "kopplingsscheman.json"
+  },
+  {
+   "id": "m.batterier-och-laddare",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Batterier och laddare",
+   "titleJa": "{電池|でんち}と{充電器|じゅうでんき}",
+   "descriptionSv": "Batterier i vardagen: hur man pratar om olika sorters batterier, hur man laddar och byter dem, hur man förstår vad säljaren säger i butiken och var man lämnar gamla batterier.",
+   "descriptionJa": "{日常|にちじょう}の{電池|でんち}：いろいろな{種類|しゅるい}の{電池|でんち}の{言|い}い{方|かた}、{充電|じゅうでん}や{交換|こうかん}のしかた、{店|みせ}で{店員|てんいん}の{話|はなし}を{理解|りかい}するための{言葉|ことば}、そして{古|ふる}い{電池|でんち}をどこに{出|だ}すかを{学|まな}びます。",
+   "categoryId": "R07-A03-T02",
+   "tags": [
+    "elektronik",
+    "teknik",
+    "batterier"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.kopplingsscheman"
+   ],
+   "related": [],
+   "recommendedOrder": 3921,
+   "words": [
+    {
+     "senseId": "s.batteri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.engångsbatteri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.uppladdningsbar.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ladda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.urladdad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fulladdad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.snabbladda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.batteritid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kapacitet.1",
+     "active": false
+    },
+    {
+     "senseId": "s.litiumjonbatteri.1",
+     "active": false
+    },
+    {
+     "senseId": "s.knappcell.1",
+     "active": true
+    },
+    {
+     "senseId": "s.batterifack.1",
+     "active": true
+    },
+    {
+     "senseId": "s.powerbank.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trådlös-laddning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.batteriholk.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "batterier-och-laddare.json"
+  },
+  {
+   "id": "m.strombrytare-och-sensorer",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Strömbrytare och sensorer",
+   "titleJa": "スイッチとセンサー",
+   "descriptionSv": "Hur man pratar om knappar, strömbrytare och sensorer: hur man sätter på och stänger av saker hemma, vad olika knappar och lägen betyder och hur sensorer och skydd fungerar i en bostad och på en arbetsplats.",
+   "descriptionJa": "ボタン、スイッチ、センサーの{話|はな}し{方|かた}：{家|いえ}で{電源|でんげん}を{入|い}れたり{切|き}ったりする{言|い}い{方|かた}、いろいろなボタンやモードの{意味|いみ}、そして{住|す}まいや{職場|しょくば}でセンサーや{安全装置|あんぜんそうち}がどう{働|はたら}くかを{学|まな}びます。",
+   "categoryId": "R07-A03-T02",
+   "tags": [
+    "elektronik",
+    "teknik",
+    "vardag"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.batterier-och-laddare"
+   ],
+   "related": [],
+   "recommendedOrder": 3922,
+   "words": [
+    {
+     "senseId": "s.strömbrytare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slå-på.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slå-av.1",
+     "active": true
+    },
+    {
+     "senseId": "s.strömknapp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.viloläge.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dimmer.1",
+     "active": true
+    },
+    {
+     "senseId": "s.timer.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rörelsesensor.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fotocell.1",
+     "active": false
+    },
+    {
+     "senseId": "s.känna-av.3",
+     "active": true
+    },
+    {
+     "senseId": "s.beröringskänslig.2",
+     "active": true
+    },
+    {
+     "senseId": "s.brandvarnare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.larm.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nödstopp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.överhettningsskydd.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ringklocka.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "strombrytare-och-sensorer.json"
+  },
+  {
+   "id": "m.kretskort",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Kretskort",
+   "titleJa": "{回路基板|かいろきばん}",
+   "descriptionSv": "Vad som finns inuti en apparat och hur man pratar om att bygga och laga elektronik: delarna på ett kretskort, verktygen och arbetet vid en arbetsbänk, säkerhet vid arbetet och vad som händer med gammal elektronik.",
+   "descriptionJa": "{機器|きき}の{中|なか}に{何|なに}があるか、そして{電子機器|でんしきき}を{作|つく}ったり{直|なお}したりすることについての{話|はな}し{方|かた}：{回路基板|かいろきばん}の{部品|ぶひん}、{作業台|さぎょうだい}での{道具|どうぐ}と{作業|さぎょう}、{作業|さぎょう}の{安全|あんぜん}、{古|ふる}い{電子機器|でんしきき}がどうなるかを{学|まな}びます。",
+   "categoryId": "R07-A03-T02",
+   "tags": [
+    "elektronik",
+    "teknik",
+    "arbete"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.strombrytare-och-sensorer"
+   ],
+   "related": [],
+   "recommendedOrder": 3923,
+   "words": [
+    {
+     "senseId": "s.komponent.2",
+     "active": true
+    },
+    {
+     "senseId": "s.kretskort.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mikrochip.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elektronikmontör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.plocka-isär.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lysdiod.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ledningsbana.1",
+     "active": false
+    },
+    {
+     "senseId": "s.montera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.antistatisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pincett.1",
+     "active": true
+    },
+    {
+     "senseId": "s.löda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lödkolv.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lödtenn.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kylfläns.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kontaktdon.1",
+     "active": false
+    },
+    {
+     "senseId": "s.elavfall.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "kretskort.json"
+  },
+  {
+   "id": "m.skarmar-och-indikatorer",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Skärmar och indikatorer",
+   "titleJa": "{画面|がめん}と{表示灯|ひょうじとう}",
+   "descriptionSv": "Hur man förstår och beskriver det som apparater visar: skärmar och displayer, lampor som lyser eller blinkar, symboler och mätare, och hur man tar reda på vad en lampa eller en symbol betyder.",
+   "descriptionJa": "{機器|きき}が{表示|ひょうじ}するものの{理解|りかい}と{説明|せつめい}：{画面|がめん}やディスプレイ、{光|ひか}ったり{点滅|てんめつ}したりするランプ、{記号|きごう}やメーター、そしてランプや{記号|きごう}の{意味|いみ}の{調|しら}べ{方|かた}を{学|まな}びます。",
+   "categoryId": "R07-A03-T02",
+   "tags": [
+    "elektronik",
+    "teknik",
+    "vardag"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.kretskort"
+   ],
+   "related": [],
+   "recommendedOrder": 3924,
+   "words": [
+    {
+     "senseId": "s.skärm.2",
+     "active": true
+    },
+    {
+     "senseId": "s.display.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pekskärm.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bakgrundsbelysning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ikon.2",
+     "active": true
+    },
+    {
+     "senseId": "s.symbol.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kontrollampa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lysa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.blinka.2",
+     "active": true
+    },
+    {
+     "senseId": "s.tänd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.släckt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.varningslampa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.batteriindikator.1",
+     "active": true
+    },
+    {
+     "senseId": "s.visare.2",
+     "active": true
+    },
+    {
+     "senseId": "s.analog.1",
+     "active": false
+    },
+    {
+     "senseId": "s.läsa-av.2",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "skarmar-och-indikatorer.json"
+  },
+  {
+   "id": "m.hogtalare-och-mikrofoner",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Högtalare och mikrofoner",
+   "titleJa": "スピーカーとマイク",
+   "descriptionSv": "Hur man pratar om ljudutrustning: högtalare, mikrofoner och hörlurar, vanliga ljudproblem och hur man löser dem, och vad en ljudtekniker gör på en konferens eller en konsert.",
+   "descriptionJa": "{音響機器|おんきょうきき}についての{話|はな}し{方|かた}：スピーカー、マイク、イヤホン・ヘッドホン、よくある{音|おと}のトラブルとその{直|なお}し{方|かた}、そして{会議|かいぎ}やコンサートで{音響|おんきょう}エンジニアが{何|なに}をするかを{学|まな}びます。",
+   "categoryId": "R07-A03-T02",
+   "tags": [
+    "elektronik",
+    "ljud",
+    "teknik"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.skarmar-och-indikatorer"
+   ],
+   "related": [],
+   "recommendedOrder": 3925,
+   "words": [
+    {
+     "senseId": "s.högtalare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mikrofon.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ljudtekniker.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förstärkare.2",
+     "active": true
+    },
+    {
+     "senseId": "s.ljudanläggning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mikrofonstativ.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mygga.2",
+     "active": true
+    },
+    {
+     "senseId": "s.rundgång.1",
+     "active": false
+    },
+    {
+     "senseId": "s.volym.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spraka.2",
+     "active": true
+    },
+    {
+     "senseId": "s.headset.1",
+     "active": true
+    },
+    {
+     "senseId": "s.brus.1",
+     "active": false
+    },
+    {
+     "senseId": "s.spela-in.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hörlur.1",
+     "active": true
+    },
+    {
+     "senseId": "s.brusreducerande.1",
+     "active": false
+    },
+    {
+     "senseId": "s.parkoppla.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "hogtalare-och-mikrofoner.json"
+  },
+  {
+   "id": "m.fjarrkontroller",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Fjärrkontroller",
+   "titleJa": "リモコン",
+   "descriptionSv": "Hur man pratar om att styra apparater på avstånd: fjärrkontroller och deras knappar, tv-tittande hemma, vad man gör när fjärrkontrollen inte fungerar och andra saker som man styr med en kontroll eller en app.",
+   "descriptionJa": "{離|はな}れたところから{機器|きき}を{操作|そうさ}することについての{話|はな}し{方|かた}：リモコンとそのボタン、{家|いえ}でのテレビの{見方|みかた}、リモコンが{動|うご}かないときにすること、そしてコントローラーやアプリで{操作|そうさ}するほかの{物|もの}について{学|まな}びます。",
+   "categoryId": "R07-A03-T02",
+   "tags": [
+    "elektronik",
+    "teknik",
+    "hemma"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.hogtalare-och-mikrofoner"
+   ],
+   "related": [],
+   "recommendedOrder": 3926,
+   "words": [
+    {
+     "senseId": "s.fjärrkontroll.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trycka-på.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kanal.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smart-tv.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tv-box.1",
+     "active": true
+    },
+    {
+     "senseId": "s.universalfjärrkontroll.1",
+     "active": true
+    },
+    {
+     "senseId": "s.zappa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.volymknapp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.knappsats.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rikta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.infraröd.1",
+     "active": false
+    },
+    {
+     "senseId": "s.mottagare.2",
+     "active": false
+    },
+    {
+     "senseId": "s.sätta-i.1",
+     "active": true
+    },
+    {
+     "senseId": "s.radiostyrd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.räckvidd.3",
+     "active": false
+    },
+    {
+     "senseId": "s.fjärrstart.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "fjarrkontroller.json"
+  },
+  {
+   "id": "m.felsoka-en-apparat",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-21",
+   "titleSv": "Felsöka en apparat",
+   "titleJa": "{機器|きき}の{故障|こしょう}を{調|しら}べる",
+   "descriptionSv": "Hur man tar reda på varför en apparat inte fungerar och berättar om det: vad som händer i elcentralen, hur man felsöker steg för steg, när man ska kontakta en elektriker eller en reparatör och vad garantin innebär.",
+   "descriptionJa": "{機器|きき}が{動|うご}かない{理由|りゆう}の{調|しら}べ{方|かた}とその{説明|せつめい}のしかた：{分電盤|ぶんでんばん}で{何|なに}が{起|お}きるか、{一歩|いっぽ}ずつ{原因|げんいん}を{調|しら}べる{方法|ほうほう}、{電気工事士|でんきこうじし}や{修理工|しゅうりこう}に{連絡|れんらく}すべきとき、そして{保証|ほしょう}の{意味|いみ}を{学|まな}びます。",
+   "categoryId": "R07-A03-T02",
+   "tags": [
+    "elektronik",
+    "teknik",
+    "reparationer"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.fjarrkontroller"
+   ],
+   "related": [],
+   "recommendedOrder": 3927,
+   "words": [
+    {
+     "senseId": "s.jordfelsbrytare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elcentral.1",
+     "active": false
+    },
+    {
+     "senseId": "s.lösa-ut.2",
+     "active": true
+    },
+    {
+     "senseId": "s.felsöka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utesluta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lukta-bränt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elektriker.1",
+     "active": true
+    },
+    {
+     "senseId": "s.multimeter.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kortslutning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.säkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.felkod.1",
+     "active": true
+    },
+    {
+     "senseId": "s.starta-om.1",
+     "active": true
+    },
+    {
+     "senseId": "s.återställa.2",
+     "active": true
+    },
+    {
+     "senseId": "s.fabriksinställning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.garanti.1",
+     "active": true
+    },
+    {
+     "senseId": "s.reparatör.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "felsoka-en-apparat.json"
   }
  ]
 }
