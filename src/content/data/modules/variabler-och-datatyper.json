@@ -1,0 +1,176 @@
+{
+ "id": "m.variabler-och-datatyper",
+ "contentVersion": 3,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Variabler och datatyper",
+ "titleJa": "{変数|へんすう}とデータ{型|がた}",
+ "descriptionSv": "Hur man pratar om programmering på svenska: vad kod och programmeringsspråk är, hur ett program sparar värden i variabler och vilka sorters data ett program kan arbeta med.",
+ "descriptionJa": "スウェーデン{語|ご}でプログラミングについて{話|はな}す{方法|ほうほう}を{学|まな}びます。コードやプログラミング{言語|げんご}とは{何|なに}か、プログラムが{値|あたい}を{変数|へんすう}にどのように{保存|ほぞん}するか、そしてプログラムがどんな{種類|しゅるい}のデータを{扱|あつか}えるかを{学|まな}びます。",
+ "categoryId": "R07-A02-T01",
+ "tags": [
+  "programmering",
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.digitala-samarbetsverktyg"
+ ],
+ "related": [],
+ "recommendedOrder": 3811,
+ "words": [
+  {
+   "senseId": "s.programmera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.programmerare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.programmeringsspråk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kod.3",
+   "active": true
+  },
+  {
+   "senseId": "s.koda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kodrad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.variabel.3",
+   "active": true
+  },
+  {
+   "senseId": "s.värde.3",
+   "active": true
+  },
+  {
+   "senseId": "s.tilldela.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likhetstecken.1",
+   "active": false
+  },
+  {
+   "senseId": "s.datatyp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.heltal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.decimaltal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sträng-noun.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tecken.3",
+   "active": true
+  },
+  {
+   "senseId": "s.konstant.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Första kvällen på kursen",
+  "paragraphs": [
+   "Kenji bor i Malmö och jobbar på ett lager. Han har alltid tyckt att datorer är spännande, och nu går han en kvällskurs där han lär sig att programmera. Läraren heter Sara. Hon är programmerare på ett företag som gör appar.",
+   "– Ett program är en lång rad steg som datorn ska följa, säger Sara. Vi skriver stegen som kod i ett programmeringsspråk. Varje kodrad säger åt datorn att göra en sak. Kenji tänker att programmera är som att skriva ett mycket noggrant recept.",
+   "Först lär de sig om variabler. Sara skriver ålder = 42 på tavlan. – Nu har vi en variabel som heter ålder, säger hon. Vi tilldelar den värdet 42. Likhetstecknet betyder inte ”är lika med” här, utan ”lägg in”.",
+   "Sedan pratar de om datatyper. 42 är ett heltal, och priset 19,90 är ett decimaltal. Kenjis namn är en sträng, alltså text. – Datorn måste veta datatypen, säger Sara. Man kan räkna med tal, men man kan inte räkna med en sträng.",
+   "Till sist skriver alla ett litet program. Programmet lagrar ett namn och en ålder och visar dem på skärmen. Det räknar också hur många tecken namnet har: Kenji har fem. Sara visar en konstant också: en vecka har alltid sju dagar. På natten sitter Kenji hemma och kodar vidare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går Kenji kursen?",
+    "options": [
+     "Hans chef vill att han ska gå den",
+     "Han ska bli lärare",
+     "Han har fått en ny dator",
+     "Han har alltid tyckt att datorer är spännande"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han har alltid tyckt att datorer är spännande, och nu går han en kvällskurs där han lär sig att programmera.",
+    "explanationJa": "{前|まえ}からコンピューターがおもしろいと{思|おも}っていたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder likhetstecknet i ålder = 42?",
+    "options": [
+     "Åldern är alltid lika med 42",
+     "Datorn ska jämföra två tal",
+     "Lägg in värdet 42 i variabeln",
+     "Programmet ska sluta"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Likhetstecknet betyder inte ”är lika med” här, utan ”lägg in”.",
+    "explanationJa": "ここでは「{等|ひと}しい」ではなく「{入|い}れる」という{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken datatyp är priset 19,90?",
+    "options": [
+     "Ett decimaltal",
+     "Ett heltal",
+     "En sträng",
+     "En konstant"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "42 är ett heltal, och priset 19,90 är ett decimaltal.",
+    "explanationJa": "19,90は{小数|しょうすう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt Sara kan man räkna med en sträng.",
+    "correct": false,
+    "explanationSv": "Man kan räkna med tal, men man kan inte räkna med en sträng.",
+    "explanationJa": "{文字列|もじれつ}で{計算|けいさん}することはできません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji tyckte att den första kvällen var rolig.",
+    "correct": true,
+    "explanationSv": "På natten sitter Kenji hemma och kodar vidare.",
+    "explanationJa": "{夜|よる}も{家|いえ}でコードを{書|か}き{続|つづ}けているので、{楽|たの}しかったと{考|かんが}えられます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om programmering och om att lära sig något nytt på kvällarna.",
+  "discussionPoints": [
+   "Har du någon gång provat att programmera?",
+   "Vilka programmeringsspråk har du hört talas om?",
+   "Vilka variabler skulle ett program om dig själv ha?",
+   "Varför vill så många lära sig att koda i dag?"
+  ]
+ },
+ "standard": 2
+}

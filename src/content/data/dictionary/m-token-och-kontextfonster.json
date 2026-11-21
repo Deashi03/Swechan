@@ -1,0 +1,351 @@
+{
+ "entries": [
+  {
+   "id": "e.token",
+   "lemma": "token",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "token",
+    "defSg": "tokenen",
+    "indefPl": "token",
+    "defPl": "tokenen",
+    "variants": {
+     "indefPl": [
+      "tokens"
+     ]
+    }
+   },
+   "senses": [
+    {
+     "id": "s.token.1",
+     "ja": "トークン（AIが{文章|ぶんしょう}を{扱|あつか}う{単位|たんい}）",
+     "defSv": "En liten bit text, ofta ett kort ord eller en del av ett ord, som en språkmodell läser och räknar med.",
+     "defJa": "{言語|げんご}モデルが{読|よ}んで{数|かぞ}える{文章|ぶんしょう}の{小|ちい}さな{単位|たんい}。{短|みじか}い{単語|たんご}や{単語|たんご}の{一部|いちぶ}であることが{多|おお}い。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ordet ”sommarstuga” kan bli tre token för en språkmodell.",
+       "ja": "「sommarstuga」という{単語|たんご}は、{言語|げんご}モデルにとって{三|みっ}つのトークンになることがあります。"
+      },
+      {
+       "sv": "Tjänsten kostar en liten summa per tusen token.",
+       "ja": "そのサービスは、{千|せん}トークンごとに{少|すこ}しの{料金|りょうきん}がかかります。"
+      }
+     ],
+     "collocations": [
+      "räkna token",
+      "antalet token",
+      "betala per token"
+     ],
+     "usageNote": {
+      "sv": "I vardagligt tal hör man också pluralformen tokens: tusen tokens.",
+      "ja": "くだけた{会話|かいわ}では、{複数形|ふくすうけい}「tokens」もよく{聞|き}きます：「tusen tokens」。"
+     },
+     "explanation": {
+      "sv": "En språkmodell läser inte bokstav för bokstav och inte alltid ord för ord. Den delar upp texten i token: korta, vanliga ord blir ofta en token, medan långa eller ovanliga ord delas i flera bitar. Långa svenska ord som består av flera ord blir därför ofta flera token. När man betalar för ett AI-verktyg räknar man ofta i token, inte i ord eller tecken.",
+      "ja": "{言語|げんご}モデルは、{文字|もじ}を{一|ひと}つずつ{読|よ}むわけでも、いつも{単語|たんご}ごとに{読|よ}むわけでもありません。{文章|ぶんしょう}をトークンに{分|わ}けます。{短|みじか}くてよく{使|つか}う{単語|たんご}は{一|ひと}つのトークンになることが{多|おお}く、{長|なが}い{単語|たんご}やめずらしい{単語|たんご}はいくつかに{分|わ}けられます。そのため、スウェーデン{語|ご}の{複合語|ふくごうご}はよく{複数|ふくすう}のトークンになります。AIサービスの{料金|りょうきん}は、{単語|たんご}や{文字|もじ}ではなくトークンで{数|かぞ}えることがよくあります。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Saknas i SO som AI-term; böjning efter bruket i svenska fackartiklar (plural token eller tokens)."
+   }
+  },
+  {
+   "id": "e.kontextfönster",
+   "lemma": "kontextfönster",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "kontextfönster",
+    "defSg": "kontextfönstret",
+    "indefPl": "kontextfönster",
+    "defPl": "kontextfönstren"
+   },
+   "senses": [
+    {
+     "id": "s.kontextfönster.1",
+     "ja": "コンテキストウィンドウ",
+     "defSv": "Hur mycket text en språkmodell kan ta hänsyn till på en gång, både det man skriver och det den svarar.",
+     "defJa": "{言語|げんご}モデルが{一度|いちど}に{考慮|こうりょ}できる{文章|ぶんしょう}の{量|りょう}。{入力|にゅうりょく}した{文章|ぶんしょう}と{答|こた}えの{両方|りょうほう}を{含|ふく}む。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hela rapporten ryms i kontextfönstret.",
+       "ja": "レポート{全体|ぜんたい}がコンテキストウィンドウに{収|おさ}まります。"
+      },
+      {
+       "sv": "När samtalet blir för långt hamnar början utanför kontextfönstret.",
+       "ja": "{会話|かいわ}が{長|なが}くなりすぎると、{最初|さいしょ}の{部分|ぶぶん}はコンテキストウィンドウの{外|そと}に{出|で}てしまいます。"
+      }
+     ],
+     "collocations": [
+      "ett stort kontextfönster",
+      "rymmas i kontextfönstret",
+      "kontextfönstret tar slut"
+     ],
+     "explanation": {
+      "sv": "Kontextfönstret är som modellens skrivbord: bara det som får plats på bordet kan modellen titta på när den svarar. Storleken mäts i token. Om samtalet eller dokumentet blir längre än fönstret ”glömmer” modellen det som hamnar utanför, ofta början av samtalet. Det är inte samma sak som minnet i datorn; det handlar om hur mycket text modellen kan läsa på en gång.",
+      "ja": "「kontextfönster（コンテキストウィンドウ）」は、モデルの{作業机|さぎょうづくえ}のようなものです。{机|つくえ}の{上|うえ}に{載|の}るものだけを、モデルは{答|こた}えるときに{見|み}ることができます。{大|おお}きさはトークンで{測|はか}ります。{会話|かいわ}や{文書|ぶんしょ}がウィンドウより{長|なが}くなると、モデルは{外|そと}に{出|で}た{部分|ぶぶん}、たいていは{会話|かいわ}の{最初|さいしょ}を「{忘|わす}れて」しまいます。パソコンのメモリとは{違|ちが}い、モデルが{一度|いちど}にどれだけの{文章|ぶんしょう}を{読|よ}めるかということです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Saknas i SO; fackterm inom AI."
+   }
+  },
+  {
+   "id": "e.överskrida",
+   "lemma": "överskrida",
+   "pos": "verb",
+   "level": "C1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "överskrida",
+    "present": "överskrider",
+    "past": "överskred",
+    "supine": "överskridit",
+    "imperative": "överskrid",
+    "group": "4"
+   },
+   "senses": [
+    {
+     "id": "s.överskrida.1",
+     "ja": "（{限度|げんど}を）{超|こ}える",
+     "defSv": "Gå över en gräns eller ett bestämt mått.",
+     "defJa": "{限度|げんど}や{決|き}められた{量|りょう}を{超|こ}える。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Texten överskrider gränsen på 2 000 tecken.",
+       "ja": "その{文章|ぶんしょう}は2000{字|じ}の{上限|じょうげん}を{超|こ}えています。"
+      },
+      {
+       "sv": "Projektet har överskridit budgeten med tio procent.",
+       "ja": "そのプロジェクトは{予算|よさん}を10パーセント{超過|ちょうか}しています。"
+      }
+     ],
+     "collocations": [
+      "överskrida gränsen",
+      "överskrida budgeten",
+      "överskrida hastighetsgränsen"
+     ],
+     "explanation": {
+      "sv": "Att överskrida betyder att gå över en gräns som är satt i förväg: en budget, en tidsgräns, en hastighet eller en högsta längd. Om man överskrider gränsen för hur lång en text får vara, får man ofta ett felmeddelande. Ordet är formellt; i vardagen säger man att något är för långt eller att man går över gränsen. Substantivet är överskridande.",
+      "ja": "「överskrida」は、あらかじめ{決|き}められた{限度|げんど}を{超|こ}えることです。{予算|よさん}、{期限|きげん}、{速度|そくど}、{最大|さいだい}の{長|なが}さなどに{使|つか}います。{文章|ぶんしょう}の{長|なが}さの{上限|じょうげん}を{超|こ}えると、エラーメッセージが{出|で}ることがよくあります。かたい{言葉|ことば}で、ふだんは「för långt（{長|なが}すぎる）」や「gå över gränsen（{限度|げんど}を{超|こ}える）」と{言|い}います。{名詞|めいし}は「överskridande」です。"
+     },
+     "frame": {
+      "subject": "Texten",
+      "complement": "gränsen"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.korta-ner",
+   "lemma": "korta ner",
+   "pos": "verb",
+   "level": "B1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "korta ner",
+    "present": "kortar ner",
+    "past": "kortade ner",
+    "supine": "kortat ner",
+    "imperative": "korta ner",
+    "group": "1",
+    "pastParticiple": "nerkortad",
+    "particle": "ner"
+   },
+   "senses": [
+    {
+     "id": "s.korta-ner.1",
+     "ja": "{短|みじか}くする、{縮|ちぢ}める",
+     "defSv": "Göra en text, ett tal eller något annat kortare.",
+     "defJa": "{文章|ぶんしょう}やスピーチなどを{短|みじか}くする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kan du korta ner texten till en halv sida?",
+       "ja": "この{文章|ぶんしょう}を{半|はん}ページに{縮|ちぢ}めてもらえますか。"
+      },
+      {
+       "sv": "Den nerkortade versionen var mycket lättare att läsa.",
+       "ja": "{短|みじか}くしたバージョンのほうが、ずっと{読|よ}みやすかったです。"
+      }
+     ],
+     "collocations": [
+      "korta ner en text",
+      "korta ner till …",
+      "korta ner mötet"
+     ],
+     "explanation": {
+      "sv": "Att korta ner något är att ta bort delar så att det blir kortare, till exempel en text, ett mejl eller ett möte. Man kan korta ner en text själv eller be en AI-assistent att göra det. När man sammanfattar skriver man de viktigaste tankarna med egna ord; när man kortar ner tar man oftast bort meningar och ord.",
+      "ja": "「korta ner」は、{部分|ぶぶん}を{取|と}り{除|のぞ}いて{短|みじか}くすることです。{文章|ぶんしょう}、メール、{会議|かいぎ}などに{使|つか}います。{自分|じぶん}で{短|みじか}くすることも、AIアシスタントに{頼|たの}むこともできます。「sammanfatta（{要約|ようやく}する）」は{大事|だいじ}な{考|かんが}えを{自分|じぶん}の{言葉|ことば}でまとめることですが、「korta ner」はたいてい{文|ぶん}や{言葉|ことば}を{削|けず}ることです。"
+     },
+     "frame": {
+      "subject": "Hon",
+      "complement": "texten"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.chatthistorik",
+   "lemma": "chatthistorik",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "chatthistorik",
+    "defSg": "chatthistoriken",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.chatthistorik.1",
+     "ja": "チャット{履歴|りれき}",
+     "defSv": "Alla meddelanden som man tidigare har skickat och fått i en chatt, sparade i ordning.",
+     "defJa": "チャットでこれまでに{送|おく}ったり{受|う}け{取|と}ったりしたメッセージを、{順番|じゅんばん}に{保存|ほぞん}したもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han raderade hela chatthistoriken.",
+       "ja": "{彼|かれ}はチャット{履歴|りれき}をすべて{削除|さくじょ}しました。"
+      },
+      {
+       "sv": "I chatthistoriken kan du se vad du frågade i går.",
+       "ja": "チャット{履歴|りれき}で、{昨日|きのう}{何|なに}を{質問|しつもん}したかを{見|み}ることができます。"
+      }
+     ],
+     "collocations": [
+      "radera chatthistoriken",
+      "spara chatthistoriken"
+     ],
+     "explanation": {
+      "sv": "Chatthistoriken är listan med gamla meddelanden i en chatt, med de äldsta överst och de nyaste längst ner. I en AI-assistent kan man ofta öppna gamla samtal i chatthistoriken och fortsätta dem. Man kan också radera historiken, till exempel om den innehåller privata uppgifter.",
+      "ja": "「chatthistorik」は、チャットの{古|ふる}いメッセージのリストで、いちばん{古|ふる}いものが{上|うえ}、いちばん{新|あたら}しいものが{下|した}にあります。AIサービスでは、チャット{履歴|りれき}から{前|まえ}の{会話|かいわ}を{開|ひら}いて{続|つづ}けられることがよくあります。{個人的|こじんてき}な{情報|じょうほう}が{入|はい}っているときなどは、{履歴|りれき}を{削除|さくじょ}することもできます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Saknas i SO; sammansättning av chatt och historik."
+   }
+  },
+  {
+   "id": "e.gratisversion",
+   "lemma": "gratisversion",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "gratisversion",
+    "defSg": "gratisversionen",
+    "indefPl": "gratisversioner",
+    "defPl": "gratisversionerna"
+   },
+   "senses": [
+    {
+     "id": "s.gratisversion.1",
+     "ja": "{無料版|むりょうばん}",
+     "defSv": "En version av ett program eller en tjänst som man kan använda utan att betala, ofta med färre funktioner.",
+     "defJa": "お{金|かね}を{払|はら}わずに{使|つか}えるプログラムやサービスのバージョン。{機能|きのう}が{少|すく}ないことが{多|おお}い。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I gratisversionen får man bara ställa tio frågor om dagen.",
+       "ja": "{無料版|むりょうばん}では、{一日|いちにち}に{十|じゅっ}{個|こ}しか{質問|しつもん}できません。"
+      },
+      {
+       "sv": "Gratisversionerna har ofta reklam.",
+       "ja": "{無料版|むりょうばん}には{広告|こうこく}が{入|はい}っていることがよくあります。"
+      }
+     ],
+     "collocations": [
+      "gratisversionen av …",
+      "använda gratisversionen"
+     ],
+     "explanation": {
+      "sv": "En gratisversion låter en använda en tjänst utan att betala, men oftast med begränsningar: färre frågor, ett mindre kontextfönster eller reklam. Vill man ha mer får man betala, ofta med en prenumeration. Motsatsen kallas ofta betalversion.",
+      "ja": "「gratisversion（{無料版|むりょうばん}）」は、お{金|かね}を{払|はら}わずにサービスを{使|つか}えるバージョンですが、たいてい{質問|しつもん}の{回数|かいすう}が{少|すく}ない、コンテキストウィンドウが{小|ちい}さい、{広告|こうこく}があるなどの{制限|せいげん}があります。もっと{使|つか}いたい{場合|ばあい}は、{多|おお}くは{定期購読|ていきこうどく}でお{金|かね}を{払|はら}います。{反対|はんたい}は「betalversion（{有料版|ゆうりょうばん}）」とよく{言|い}います。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "AI"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Saknas i SO; vanlig sammansättning."
+   }
+  }
+ ]
+}

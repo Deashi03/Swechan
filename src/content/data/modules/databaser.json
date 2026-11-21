@@ -1,0 +1,180 @@
+{
+ "id": "m.databaser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Databaser",
+ "titleJa": "データベース",
+ "descriptionSv": "Hur en databas fungerar: hur uppgifterna ordnas i tabeller, hur man lägger in och hittar information och vilka regler som gäller när ett företag sparar uppgifter om människor.",
+ "descriptionJa": "データベースのしくみ：データが{表|ひょう}にどう{整理|せいり}されるか、{情報|じょうほう}をどう{入|い}れて{探|さが}すか、そして{会社|かいしゃ}が{人|ひと}についての{情報|じょうほう}を{保存|ほぞん}するときにどんな{規則|きそく}があるかを{学|まな}びます。",
+ "categoryId": "R07-A02-T03",
+ "tags": [
+  "programmering",
+  "teknik",
+  "data"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.api-er-och-granssnitt"
+ ],
+ "related": [],
+ "recommendedOrder": 3833,
+ "words": [
+  {
+   "senseId": "s.databas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kolumn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.relationsdatabas.1",
+   "active": false
+  },
+  {
+   "senseId": "s.primärnyckel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inmatning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.databasfråga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.register.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubblett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gallra.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säkerhetskopia.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dataläcka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Medlemmarna på gymmet",
+  "paragraphs": [
+   "Elin jobbar på kontoret för en kedja av gym. Alla medlemmar finns i en databas. – Tänk på databasen som många tabeller, förklarar hennes kollega Omar. Varje medlem är en rad, och varje kolumn är en sorts uppgift: namn, telefonnummer och när man började träna.",
+   "Det är en relationsdatabas. En tabell har medlemmarna, en annan har träningspassen och en tredje har betalningarna. Tabellerna hänger ihop genom primärnyckeln, ett nummer som varje medlem får när hon eller han börjar. Två personer kan heta samma sak, men de får aldrig samma nummer.",
+   "Elin tar hand om inmatningen när nya medlemmar kommer. Hon skriver in uppgifterna i ett formulär, och sedan sker lagringen automatiskt. När hon vill veta hur många som tränade i mars skriver Omar en databasfråga, och svaret kommer på en sekund.",
+   "Registret innehåller personuppgifter, så de måste vara försiktiga. En gång i månaden letar de efter dubbletter, till exempel när någon finns med två gånger. Uppgifter om medlemmar som slutade för mer än två år sedan raderar de. – Vi får inte spara mer än vi behöver, så vi måste gallra, säger Omar.",
+   "Varje natt görs en säkerhetskopia av hela databasen. – Om något går sönder kan vi hämta tillbaka allt, säger Omar. Men det värsta som kan hända är en dataläcka. Om någon stjäl uppgifterna måste vi oftast anmäla det till Integritetsskyddsmyndigheten inom 72 timmar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är en rad i tabellen med medlemmar?",
+    "options": [
+     "En sorts uppgift, till exempel namn",
+     "Ett träningspass",
+     "En medlem",
+     "En betalning"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Varje medlem är en rad, och varje kolumn är en sorts uppgift",
+    "explanationJa": "{会員|かいいん}{一人|ひとり}が{一|ひと}つの{行|ぎょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför kopplas tabellerna ihop med ett nummer och inte med namnet?",
+    "options": [
+     "Två personer kan heta samma sak",
+     "Nummer är lättare att komma ihåg",
+     "Namn är hemliga uppgifter",
+     "Omar tycker inte om namn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Två personer kan heta samma sak, men de får aldrig samma nummer.",
+    "explanationJa": "{同|おな}じ{名前|なまえ}の{人|ひと}がいても、{番号|ばんごう}は{決|けっ}して{同|おな}じになりません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör Omar när Elin vill veta hur många som tränade i mars?",
+    "options": [
+     "Han räknar för hand",
+     "Han ringer alla medlemmar",
+     "Han skriver en databasfråga",
+     "Han gör en säkerhetskopia"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När hon vill veta hur många som tränade i mars skriver Omar en databasfråga, och svaret kommer på en sekund.",
+    "explanationJa": "データベースへの{問|と}い{合|あ}わせを{書|か}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Gymmet sparar uppgifter om alla som någon gång har varit medlemmar.",
+    "correct": false,
+    "explanationSv": "Uppgifter om medlemmar som slutade för mer än två år sedan raderar de.",
+    "explanationJa": "{二年|にねん}{以上|いじょう}{前|まえ}にやめた{会員|かいいん}の{情報|じょうほう}は{消|け}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Säkerhetskopian hjälper om datorerna går sönder.",
+    "correct": true,
+    "explanationSv": "– Om något går sönder kan vi hämta tillbaka allt, säger Omar.",
+    "explanationJa": "{何|なに}かが{壊|こわ}れても、すべてを{取|と}り{戻|もど}せます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Personuppgifter får inte sparas längre än vad som behövs för ändamålet, och en personuppgiftsincident ska som regel anmälas till Integritetsskyddsmyndigheten inom 72 timmar.",
+    "source": "Dataskyddsförordningen (EU) 2016/679, artikel 5.1 e och artikel 33; Integritetsskyddsmyndigheten, imy.se",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om register och uppgifter som företag och myndigheter sparar om er.",
+  "discussionPoints": [
+   "I vilka register tror du att du finns?",
+   "Vilka uppgifter tycker du att ett gym eller en butik ska få spara om dig?",
+   "Har du hört talas om en dataläcka i nyheterna? Vad hände?",
+   "Hur länge tycker du att man ska få spara uppgifter om tidigare kunder?"
+  ]
+ },
+ "standard": 2
+}

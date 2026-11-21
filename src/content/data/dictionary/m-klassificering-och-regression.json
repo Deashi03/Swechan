@@ -1,0 +1,188 @@
+{
+ "entries": [
+  {
+   "id": "e.klassificering",
+   "lemma": "klassificering",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "klassificering",
+    "defSg": "klassificeringen",
+    "indefPl": "klassificeringar",
+    "defPl": "klassificeringarna"
+   },
+   "senses": [
+    {
+     "id": "s.klassificering.1",
+     "ja": "{分類|ぶんるい}",
+     "defSv": "När man bestämmer vilken grupp eller kategori varje sak hör till.",
+     "defJa": "それぞれのものがどのグループやカテゴリーに{入|はい}るかを{決|き}めること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Klassificering av mejl sker automatiskt.",
+       "ja": "メールの{分類|ぶんるい}は{自動|じどう}で{行|おこな}われます。"
+      },
+      {
+       "sv": "Vi gjorde en klassificering av alla böcker i biblioteket.",
+       "ja": "{私|わたし}たちは{図書館|としょかん}のすべての{本|ほん}を{分類|ぶんるい}しました。"
+      }
+     ],
+     "collocations": [
+      "klassificering av bilder",
+      "göra en klassificering",
+      "en uppgift för klassificering"
+     ],
+     "explanation": {
+      "sv": "Klassificering är när man sorterar saker i bestämda grupper. Inom maskininlärning är det en av de vanligaste uppgifterna: modellen ska välja rätt kategori, till exempel ”skräppost” eller ”inte skräppost”. Svaret är alltså ett namn på en grupp och inte ett tal. Verbet är klassificera.",
+      "ja": "「klassificering」は、ものを{決|き}まったグループに{分|わ}けることです。{機械学習|きかいがくしゅう}では{最|もっと}もよくある{課題|かだい}の{一|ひと}つで、モデルは「{迷惑|めいわく}メール」か「{迷惑|めいわく}メールではない」かのように、{正|ただ}しいカテゴリーを{選|えら}びます。つまり{答|こた}えは{数|かず}ではなく、グループの{名前|なまえ}です。{動詞|どうし}は「klassificera」です。"
+     },
+     "tags": [
+      "programmering",
+      "AI",
+      "maskininlärning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.regression",
+   "lemma": "regression",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "regression",
+    "defSg": "regressionen",
+    "indefPl": "regressioner",
+    "defPl": "regressionerna"
+   },
+   "senses": [
+    {
+     "id": "s.regression.1",
+     "ja": "{後退|こうたい}、{退行|たいこう}",
+     "defSv": "När något går tillbaka till ett tidigare och sämre läge, till exempel när ett barn börjar bete sig som ett yngre barn.",
+     "defJa": "{前|まえ}の、より{悪|わる}い{状態|じょうたい}に{戻|もど}ること。たとえば、{子|こ}どもがもっと{小|ちい}さい{子|こ}どものようにふるまい{始|はじ}めること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Efter flytten visade barnet tecken på regression.",
+       "ja": "{引|ひ}っ{越|こ}しの{後|あと}、その{子|こ}には{退行|たいこう}のしるしが{見|み}られました。"
+      }
+     ],
+     "labelSv": "tillbakagång",
+     "tags": [
+      "psykologi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.regression.2",
+     "ja": "{回帰|かいき}（{分析|ぶんせき}）",
+     "defSv": "En metod där man räknar ut ett tal, till exempel ett pris eller en temperatur, från andra tal som man redan vet.",
+     "defJa": "{分|わ}かっている{他|ほか}の{数|かず}から、{値段|ねだん}や{気温|きおん}などの{数|かず}を{計算|けいさん}して{出|だ}す{方法|ほうほう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med regression kan man uppskatta priset på ett hus.",
+       "ja": "{回帰|かいき}を{使|つか}うと、{家|いえ}の{値段|ねだん}を{推定|すいてい}できます。"
+      },
+      {
+       "sv": "Forskarna gjorde en regression för att se hur temperaturen påverkar elpriset.",
+       "ja": "{研究者|けんきゅうしゃ}たちは、{気温|きおん}が{電気料金|でんきりょうきん}にどう{影響|えいきょう}するかを{見|み}るために{回帰分析|かいきぶんせき}をしました。"
+      }
+     ],
+     "labelSv": "i statistik",
+     "collocations": [
+      "linjär regression",
+      "göra en regression",
+      "en modell för regression"
+     ],
+     "explanation": {
+      "sv": "Regression betyder här att en modell ska svara med ett tal, inte med en kategori. Om modellen ska säga hur mycket en lägenhet kostar eller hur varmt det blir i morgon, är det regression. Ett enkelt exempel är linjär regression, där man drar en rak linje genom punkterna i ett diagram. Skillnaden mot klassificering: där är svaret en grupp, som ”hund” eller ”katt”.",
+      "ja": "ここでの「regression」は、モデルがカテゴリーではなく{数|かず}で{答|こた}えることを{言|い}います。マンションがいくらか、{明日|あした}{何度|なんど}になるかを{答|こた}えるのは{回帰|かいき}です。{最|もっと}も{簡単|かんたん}なのは{線形回帰|せんけいかいき}（linjär regression）で、グラフの{点|てん}の{間|あいだ}にまっすぐな{線|せん}を{引|ひ}きます。{分類|ぶんるい}（klassificering）との{違|ちが}い：{分類|ぶんるい}では{答|こた}えは「{犬|いぬ}」「{猫|ねこ}」のようなグループです。"
+     },
+     "tags": [
+      "programmering",
+      "AI",
+      "maskininlärning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.bildigenkänning",
+   "lemma": "bildigenkänning",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "bildigenkänning",
+    "defSg": "bildigenkänningen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.bildigenkänning.1",
+     "ja": "{画像認識|がぞうにんしき}",
+     "defSv": "När en dator ser vad som finns på en bild, till exempel ett ansikte, en hund eller en bil.",
+     "defJa": "コンピューターが、{顔|かお}や{犬|いぬ}や{車|くるま}など、{画像|がぞう}に{何|なに}が{写|うつ}っているかを{見分|みわ}けること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Telefonen sorterar mina foton med hjälp av bildigenkänning.",
+       "ja": "{電話|でんわ}は{画像認識|がぞうにんしき}を{使|つか}って{私|わたし}の{写真|しゃしん}を{整理|せいり}します。"
+      },
+      {
+       "sv": "Bilen har kameror och bildigenkänning som ser fotgängare.",
+       "ja": "その{車|くるま}には、{歩行者|ほこうしゃ}を{見分|みわ}けるカメラと{画像認識|がぞうにんしき}があります。"
+      }
+     ],
+     "collocations": [
+      "använda bildigenkänning",
+      "bildigenkänning i bilar",
+      "program för bildigenkänning"
+     ],
+     "explanation": {
+      "sv": "Bildigenkänning är teknik som låter en dator förstå vad en bild visar. Den används i telefoner som sorterar foton, i bilar som ser vägskyltar och i sjukvården. Oftast är det en sorts klassificering: modellen väljer vad som finns på bilden. Ansiktsigenkänning är en särskild sorts bildigenkänning som bara gäller ansikten.",
+      "ja": "「bildigenkänning」は、{画像|がぞう}が{何|なに}を{写|うつ}しているかをコンピューターに{理解|りかい}させる{技術|ぎじゅつ}です。{写真|しゃしん}を{整理|せいり}する{電話|でんわ}、{道路標識|どうろひょうしき}を{読|よ}む{車|くるま}、{医療|いりょう}などで{使|つか}われています。たいていは{分類|ぶんるい}の{一種|いっしゅ}で、モデルは{画像|がぞう}に{何|なに}が{写|うつ}っているかを{選|えら}びます。「ansiktsigenkänning（{顔認識|かおにんしき}）」は{顔|かお}だけを{扱|あつか}う{特別|とくべつ}な{画像認識|がぞうにんしき}です。"
+     },
+     "tags": [
+      "programmering",
+      "AI",
+      "maskininlärning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Sammansättning som inte är eget uppslagsord i SO; betydelsen följer leden."
+   }
+  }
+ ]
+}

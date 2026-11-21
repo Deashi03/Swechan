@@ -1,0 +1,180 @@
+{
+ "id": "m.databearbetning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Databearbetning",
+ "titleJa": "データ{処理|しょり}",
+ "descriptionSv": "Hur man beskriver arbetet med data från insamling till resultat: att föra in, byta format, räkna ihop och skydda uppgifter, och hur man talar om data som delas öppet eller visas i samma stund som den skapas.",
+ "descriptionJa": "{収集|しゅうしゅう}から{結果|けっか}まで、データを{扱|あつか}う{作業|さぎょう}を{説明|せつめい}する{方法|ほうほう}を{学|まな}びます。データの{取|と}り{込|こ}み、{形式|けいしき}の{変換|へんかん}、{合計|ごうけい}、{情報|じょうほう}の{保護|ほご}、そして{公開|こうかい}されるデータや、{作|つく}られたその{瞬間|しゅんかん}に{表示|ひょうじ}されるデータについて{話|はな}す{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A02-T04",
+ "tags": [
+  "programmering",
+  "teknik",
+  "statistik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.datakvalitet"
+ ],
+ "related": [],
+ "recommendedOrder": 3846,
+ "words": [
+  {
+   "senseId": "s.medelvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rådata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.importera.3",
+   "active": true
+  },
+  {
+   "senseId": "s.kalkylark.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konvertera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.filtrera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slå-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gruppera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.summera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bearbeta.3",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanställa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.behandla-personuppgifter.1",
+   "active": false
+  },
+  {
+   "senseId": "s.anonymisera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exportera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.i-realtid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öppna-data.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Siffrorna om biblioteket",
+  "paragraphs": [
+   "Anders arbetar som analytiker på kommunen. Han ska ta reda på vad invånarna tycker om stadens bibliotek. Tre tusen personer har svarat på en enkät i en app. Nu har han all rådata i en stor fil.",
+   "Först importerar han filen till ett kalkylark. Vissa svar har kommit in som bilder, så han måste konvertera dem till text. Han filtrerar bort svar från personer som inte bor i kommunen. Sedan ska han slå ihop svaren från appen med svaren från papperslistorna på biblioteken.",
+   "Därefter grupperar han svaren efter ålder och stadsdel. Han summerar hur många som besöker biblioteket varje vecka och räknar ut ett medelvärde för hur nöjda de är. När han har bearbetat all data sammanställer han resultaten i en rapport.",
+   "Eftersom kommunen behandlar personuppgifter måste Anders vara noga. Han anonymiserar alla svar, så att ingen kan se vem som har svarat vad. Sedan exporterar han tabellerna och lägger dem på kommunens webbsida som öppna data. Det finns en lag om hur myndigheter ska dela sin data, och den gäller sedan 2022.",
+   "Nästa år ska antalet besökare räknas av en sensor i dörren och visas i realtid på webbsidan. – Då slipper jag sitta med kalkylarket hela hösten, säger Anders och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många personer har svarat på enkäten?",
+    "options": [
+     "Tre tusen",
+     "Tre hundra",
+     "Trettio",
+     "Trettio tusen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Tre tusen personer har svarat på en enkät i en app.",
+    "explanationJa": "3000{人|にん}が{回答|かいとう}しました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför måste Anders konvertera några svar?",
+    "options": [
+     "De har kommit in som bilder",
+     "De är på engelska",
+     "De är för gamla",
+     "De saknar namn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vissa svar har kommit in som bilder, så han måste konvertera dem till text.",
+    "explanationJa": "{画像|がぞう}として{届|とど}いた{回答|かいとう}があったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör Anders när han anonymiserar svaren?",
+    "options": [
+     "Han gör så att ingen kan se vem som har svarat vad",
+     "Han räknar ut ett medelvärde",
+     "Han lägger svaren på webbsidan",
+     "Han tar bort alla svar från äldre personer"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han anonymiserar alla svar, så att ingen kan se vem som har svarat vad.",
+    "explanationJa": "{誰|だれ}が{何|なに}と{答|こた}えたかわからないようにします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Anders lägger tabellerna på kommunens webbsida som öppna data.",
+    "correct": true,
+    "explanationSv": "Sedan exporterar han tabellerna och lägger dem på kommunens webbsida som öppna data.",
+    "explanationJa": "{表|ひょう}を{自治体|じちたい}のウェブページにオープンデータとして{公開|こうかい}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anders tycker att det är roligt att arbeta med kalkylarket hela hösten.",
+    "correct": false,
+    "explanationSv": "– Då slipper jag sitta med kalkylarket hela hösten, säger Anders och skrattar.",
+    "explanationJa": "アンデシュは、{秋|あき}じゅう{表計算|ひょうけいさん}シートに{向|む}かわなくて{済|す}むことを{喜|よろこ}んでいます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Sedan 2022 finns en lag om hur myndigheter ska dela sin data som öppna data.",
+    "source": "Lag (2022:818) om den offentliga sektorns tillhandahållande av data, i kraft 1 augusti 2022",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur data samlas in, bearbetas och delas.",
+  "discussionPoints": [
+   "Har du svarat på en enkät nyligen? Vad tror du händer med dina svar?",
+   "Vilka appar använder du som visar något i realtid?",
+   "Tycker du att det är viktigt att uppgifter anonymiseras? Varför?",
+   "Vilka öppna data skulle du vilja att din kommun delade?"
+  ]
+ },
+ "standard": 2
+}

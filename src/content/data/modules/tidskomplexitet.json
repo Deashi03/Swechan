@@ -1,0 +1,176 @@
+{
+ "id": "m.tidskomplexitet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Tidskomplexitet",
+ "titleJa": "{時間計算量|じかんけいさんりょう}",
+ "descriptionSv": "Hur man talar om hur snabbt ett program är och varför det blir långsamt: hur tiden växer när datamängden växer, hur man mäter och jämför algoritmer, och hur ett system görs större.",
+ "descriptionJa": "プログラムの{速|はや}さと、{遅|おそ}くなる{理由|りゆう}について{話|はな}す{方法|ほうほう}を{学|まな}びます。データが{増|ふ}えると{時間|じかん}がどう{増|ふ}えるか、アルゴリズムをどう{計|はか}って{比|くら}べるか、そしてシステムをどう{大|おお}きくするかを{学|まな}びます。",
+ "categoryId": "R07-A02-T04",
+ "tags": [
+  "programmering",
+  "teknik",
+  "datorer"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.algoritmer"
+ ],
+ "related": [],
+ "recommendedOrder": 3844,
+ "words": [
+  {
+   "senseId": "s.körtid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komplexitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tidskomplexitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-tid-på.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effektiv.1",
+   "active": false
+  },
+  {
+   "senseId": "s.konstant-adj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjär.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kvadratisk.2",
+   "active": false
+  },
+  {
+   "senseId": "s.logaritmisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.exponentiell.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-bästa-fall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-värsta-fall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minnesanvändning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prestanda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flaskhals.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skala-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.seg.2",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "När appen blev seg",
+  "paragraphs": [
+   "Hiroshi arbetar med en app där man bokar tvättstugan i sitt hus. När appen bara fanns i ett hus med trettio lägenheter fungerade allt. Nu använder tvåhundra hus appen, och den har blivit seg. Ibland tar det tio sekunder att visa en lista, och appens prestanda är dålig.",
+   "Hiroshi och hans kollega Ida tar tid på olika delar av programmet. Körtiden för att hämta en bokning är konstant: den tar lika lång tid oavsett hur många hus det finns. Men det tar mycket längre tid att visa alla lediga tider.",
+   "– Vi måste titta på tidskomplexiteten, säger Ida. Komplexitet handlar om hur arbetet växer. Hon ser att programmet jämför varje bokning med alla andra bokningar. – Det är kvadratiskt. Om antalet bokningar blir dubbelt så stort, tar det fyra gånger så lång tid. Det är vår flaskhals. Med en bättre algoritm blir tiden linjär i stället. – Tur att den inte är exponentiell, då hade appen aldrig blivit klar, skrattar Hiroshi.",
+   "De pratar också om sökningen. I bästa fall hittar programmet rätt bokning direkt, men i värsta fall måste det gå igenom hela listan. Om listan är sorterad kan programmet använda binär sökning, som är logaritmisk. Då behövs bara några få steg, även med en miljon bokningar. Det är mycket effektivt.",
+   "Till sist kontrollerar de minnesanvändningen. Den är låg, så de behöver inte köpa nya servrar ännu. – Men om fler hus börjar använda appen måste vi skala upp, säger Ida. Efter en vecka är appen snabb igen, och Hiroshi får en present av chefen: en ny kaffekopp."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför blev appen seg?",
+    "options": [
+     "Servrarna gick sönder",
+     "Fler hus började använda den",
+     "Hiroshi skrev fel kod",
+     "Tvättstugan var stängd"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nu använder tvåhundra hus appen, och den har blivit seg.",
+    "explanationJa": "{利用|りよう}する{建物|たてもの}が200{棟|とう}に{増|ふ}えたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att körtiden för att hämta en bokning är konstant?",
+    "options": [
+     "Den tar lika lång tid oavsett hur många hus det finns",
+     "Den blir längre för varje nytt hus",
+     "Den tar alltid tio sekunder",
+     "Den går inte att mäta"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Körtiden för att hämta en bokning är konstant: den tar lika lång tid oavsett hur många hus det finns.",
+    "explanationJa": "{建物|たてもの}の{数|かず}に{関係|かんけい}なく{同|おな}じ{時間|じかん}がかかるという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför var programmet kvadratiskt?",
+    "options": [
+     "Det använde binär sökning",
+     "Det hade för lite minne",
+     "Det tog tid på allt",
+     "Det jämförde varje bokning med alla andra bokningar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon ser att programmet jämför varje bokning med alla andra bokningar. – Det är kvadratiskt.",
+    "explanationJa": "それぞれの{予約|よやく}をほかのすべての{予約|よやく}と{比|くら}べていたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Binär sökning behöver bara några få steg, även med en miljon bokningar.",
+    "correct": true,
+    "explanationSv": "Då behövs bara några få steg, även med en miljon bokningar. Det är mycket effektivt.",
+    "explanationJa": "100{万件|まんけん}の{予約|よやく}でも、ほんの{数|すう}ステップで{済|す}みます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De måste köpa nya servrar direkt.",
+    "correct": false,
+    "explanationSv": "Den är låg, så de behöver inte köpa nya servrar ännu.",
+    "explanationJa": "メモリ{使用量|しようりょう}が{少|すく}ないので、まだ{新|あたら}しいサーバーは{必要|ひつよう}ありません。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om när datorer, appar och system blir långsamma.",
+  "discussionPoints": [
+   "Vilken app eller webbsida tycker du är seg? Vad händer då?",
+   "Har du någon gång tagit tid på något? Vad mätte du?",
+   "Vad är en flaskhals på din arbetsplats eller i din vardag?",
+   "Vad måste ett företag tänka på när det vill skala upp?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,171 @@
+{
+ "id": "m.javascript-i-webblasaren",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "JavaScript i webbläsaren",
+ "titleJa": "ブラウザで{動|うご}くJavaScript",
+ "descriptionSv": "Du lär dig att tala om vad som händer när en webbsida reagerar på det besökaren gör, varför en sida kan vara långsam och hur man stänger av och sätter på funktioner i webbläsaren.",
+ "descriptionJa": "ウェブページが{訪問者|ほうもんしゃ}の{操作|そうさ}に{反応|はんのう}するときに{何|なに}が{起|お}きているか、ページが{遅|おそ}くなるのはなぜか、ブラウザの{機能|きのう}をオフにしたりオンにしたりする{方法|ほうほう}について{話|はな}せるようになります。",
+ "categoryId": "R07-A02-T02",
+ "tags": [
+  "programmering",
+  "webb"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.css-och-layout"
+ ],
+ "related": [],
+ "recommendedOrder": 3823,
+ "words": [
+  {
+   "senseId": "s.webbläsare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skriptspråk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.interaktiv.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klicka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.händelse.3",
+   "active": true
+  },
+  {
+   "senseId": "s.popupfönster.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blockera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.statisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dynamisk.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdatera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bildspel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.scrolla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddningstid.2",
+   "active": false
+  },
+  {
+   "senseId": "s.tillägg.3",
+   "active": true
+  },
+  {
+   "senseId": "s.aktivera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inaktivera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Knappar som gör något",
+  "paragraphs": [
+   "I kursens tredje del lär sig Saki JavaScript. Det är ett skriptspråk som körs i webbläsaren. Med JavaScript blir en webbsida interaktiv: den kan reagera när besökaren gör något.",
+   "Lars förklarar att det är en händelse när någon klickar. Saki skriver kod som väntar på att någon klickar på knappen ”Boka bord”. Då öppnas ett popupfönster där man kan välja dag och tid. Men många webbläsare blockerar popupfönster, så Lars tycker att hon ska visa bokningen direkt på sidan i stället.",
+   "Elins gamla sida var statisk. Den såg likadan ut varje dag. Nu blir den dynamisk: Elin kan uppdatera dagens lunch från mobilen varje morgon, och ett bildspel visar nya bilder när man scrollar ner.",
+   "Men sidan blir långsam. Laddningstiden är nästan fem sekunder. Saki har ett tillägg i webbläsaren som visar att bilderna är för stora. Hon gör bilderna mindre, och sidan blir snabbare.",
+   "Till sist testar Lars sidan. Han inaktiverar JavaScript i webbläsaren. – Fungerar sidan ändå? frågar han. Saki ser att menyn försvinner. Hon får aktivera JavaScript igen och ändra koden så att menyn finns kvar även utan JavaScript."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är det när någon klickar, enligt Lars?",
+    "options": [
+     "Ett tillägg",
+     "En händelse",
+     "Ett bildspel",
+     "En tagg"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Lars förklarar att det är en händelse när någon klickar.",
+    "explanationJa": "ラーシュは、{誰|だれ}かがクリックすることはイベントだと{説明|せつめい}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför ska Saki visa bokningen direkt på sidan?",
+    "options": [
+     "Elin vill inte ha bokningar",
+     "Många webbläsare blockerar popupfönster",
+     "Sidan är för långsam",
+     "Knappen är för liten"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Men många webbläsare blockerar popupfönster …",
+    "explanationJa": "{多|おお}くのブラウザがポップアップをブロックするからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad kan Elin uppdatera varje morgon?",
+    "options": [
+     "Priserna på kaffe",
+     "Dagens lunch",
+     "Kartan",
+     "Sidfoten"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… Elin kan uppdatera dagens lunch från mobilen varje morgon …",
+    "explanationJa": "エリンは{毎朝|まいあさ}、スマホから{今日|きょう}のランチを{更新|こうしん}できます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Laddningstiden är nästan fem minuter.",
+    "correct": false,
+    "explanationSv": "Laddningstiden är nästan fem sekunder.",
+    "explanationJa": "{読|よ}み{込|こ}み{時間|じかん}は{五分|ごふん}ではなく、{約|やく}{五秒|ごびょう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sidan fungerar inte helt utan JavaScript i början.",
+    "correct": true,
+    "explanationSv": "Saki ser att menyn försvinner.",
+    "explanationJa": "JavaScriptを{無効|むこう}にするとメニューが{消|き}えてしまいました。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om webbsidor som reagerar när man använder dem.",
+  "discussionPoints": [
+   "Vilka interaktiva webbsidor använder du ofta?",
+   "Vad gör du när ett popupfönster öppnas?",
+   "Har du några tillägg i din webbläsare? Vilka?",
+   "Hur länge kan du vänta på en långsam webbsida?"
+  ]
+ },
+ "standard": 2
+}

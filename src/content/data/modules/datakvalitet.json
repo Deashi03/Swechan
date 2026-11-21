@@ -1,0 +1,176 @@
+{
+ "id": "m.datakvalitet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Datakvalitet",
+ "titleJa": "データ{品質|ひんしつ}",
+ "descriptionSv": "Hur man beskriver fel och brister i data, till exempel uppgifter som saknas, är gamla eller skrivna på olika sätt, och hur man talar om att rensa och rätta data så att den går att lita på.",
+ "descriptionJa": "データの{誤|あやま}りや{欠陥|けっかん}を{説明|せつめい}する{方法|ほうほう}を{学|まな}びます。たとえば、{抜|ぬ}けている{情報|じょうほう}、{古|ふる}くなった{情報|じょうほう}、ばらばらな{書|か}き{方|かた}の{情報|じょうほう}などです。また、データを{信頼|しんらい}できるものにするために、{整理|せいり}して{直|なお}すことについて{話|はな}す{方法|ほうほう}も{学|まな}びます。",
+ "categoryId": "R07-A02-T04",
+ "tags": [
+  "programmering",
+  "teknik",
+  "statistik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.tidskomplexitet"
+ ],
+ "related": [],
+ "recommendedOrder": 3845,
+ "words": [
+  {
+   "senseId": "s.korrekt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.felaktig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.datakvalitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ofullständig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubblett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stavfel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.format.2",
+   "active": true
+  },
+  {
+   "senseId": "s.inaktuell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.extremvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.mätfel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.felkälla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inkonsekvent.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rensa.6",
+   "active": true
+  },
+  {
+   "senseId": "s.korrigera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillförlitlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mata-in.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Fel adress på bussen",
+  "paragraphs": [
+   "Elin arbetar på kommunen med skolskjutsar. Varje höst får hon en lista från ett register med alla barn som ska åka buss till skolan. I år blev det fel: en buss stannade vid ett hus där ingen bodde längre, och ett barn fick ingen plats alls.",
+   "Elin och hennes kollega Nils börjar kontrollera listan. De hittar många problem. Några adresser är inaktuella, eftersom familjerna har flyttat. Vissa uppgifter är ofullständiga: det saknas telefonnummer till föräldrarna. Ett barn finns med två gånger, och en sådan dubblett tar en plats i bussen i onödan.",
+   "Det finns också stavfel i gatunamnen, och datumen är skrivna i olika format. En person har skrivit 2026-08-17 och en annan 17/8. – Det är inkonsekvent, säger Nils. Programmet förstår inte att det är samma dag. Ett barn har födelseåret 1926. – Det är ett extremvärde, skrattar Elin. Det måste finnas en felkälla. Kanske har någon skrivit fel, ungefär som ett mätfel när man väger något på en våg som visar fel.",
+   "De rensar listan och korrigerar alla felaktiga uppgifter. Sedan ringer de några familjer för att kontrollera att adresserna är korrekta. Det tar en hel vecka. – Nu är listan tillförlitlig, säger Elin.",
+   "Chefen vill köpa ett nytt program som planerar bussarna. – Det hjälper inte om datakvaliteten är dålig, säger Nils. Först måste någon mata in rätt uppgifter. Kommunen bestämmer att alla som skriver i registret ska följa samma regler i fortsättningen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gick fel med skolskjutsen i år?",
+    "options": [
+     "Bussen var för liten",
+     "Föraren var sjuk",
+     "En buss stannade vid ett hus där ingen bodde längre",
+     "Skolan hade flyttat"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I år blev det fel: en buss stannade vid ett hus där ingen bodde längre, och ett barn fick ingen plats alls.",
+    "explanationJa": "バスが、もう{誰|だれ}も{住|す}んでいない{家|いえ}の{前|まえ}に{止|と}まりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför var några adresser inaktuella?",
+    "options": [
+     "Det fanns stavfel",
+     "Telefonnumret saknades",
+     "Barnet fanns med två gånger",
+     "Familjerna hade flyttat"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Några adresser är inaktuella, eftersom familjerna har flyttat.",
+    "explanationJa": "{家族|かぞく}が{引|ひ}っ{越|こ}していたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad menar Nils med att datumen är inkonsekventa?",
+    "options": [
+     "De är för gamla",
+     "De är skrivna på olika sätt",
+     "De saknas helt",
+     "De är samma dag"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det finns också stavfel i gatunamnen, och datumen är skrivna i olika format.",
+    "explanationJa": "{日付|ひづけ}がいろいろな{形式|けいしき}で{書|か}かれているという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det tog en hel vecka att rensa och korrigera listan.",
+    "correct": true,
+    "explanationSv": "Det tar en hel vecka.",
+    "explanationJa": "まる1{週間|しゅうかん}かかりました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Nils tror att ett nytt program löser alla problem.",
+    "correct": false,
+    "explanationSv": "– Det hjälper inte om datakvaliteten är dålig, säger Nils.",
+    "explanationJa": "ニルスは、データの{品質|ひんしつ}が{悪|わる}ければ{新|あたら}しいプログラムも{役|やく}に{立|た}たないと{考|かんが}えています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fel i uppgifter och register, och hur man rättar dem.",
+  "discussionPoints": [
+   "Har du någon gång fått ett brev där dina uppgifter var felaktiga eller inaktuella?",
+   "Vilka uppgifter om dig finns i olika register? Hur kontrollerar du att de är korrekta?",
+   "Hur skriver man datum i Japan och i Sverige? Vilket format tycker du är tydligast?",
+   "Har du någon gång fått mata in samma uppgifter flera gånger? Var?"
+  ]
+ },
+ "standard": 2
+}

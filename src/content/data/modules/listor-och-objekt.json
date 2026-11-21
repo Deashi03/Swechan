@@ -1,0 +1,172 @@
+{
+ "id": "m.listor-och-objekt",
+ "contentVersion": 3,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Listor och objekt",
+ "titleJa": "リストとオブジェクト",
+ "descriptionSv": "Hur man beskriver hur ett program håller ordning på data: hur en lista fungerar och hur man hittar saker i den, och hur klasser och objekt beskriver saker med egna egenskaper.",
+ "descriptionJa": "プログラムがデータをどのように{整理|せいり}するかを{説明|せつめい}する{方法|ほうほう}を{学|まな}びます。リストのしくみと、その{中|なか}からものを{見|み}つける{方法|ほうほう}、そしてクラスとオブジェクトが{自分|じぶん}の{属性|ぞくせい}を{持|も}つものをどう{表|あらわ}すかを{学|まな}びます。",
+ "categoryId": "R07-A02-T01",
+ "tags": [
+  "programmering",
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.funktioner-och-parametrar"
+ ],
+ "related": [],
+ "recommendedOrder": 3815,
+ "words": [
+  {
+   "senseId": "s.lista.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-till.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-bort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.4",
+   "active": true
+  },
+  {
+   "senseId": "s.index.4",
+   "active": true
+  },
+  {
+   "senseId": "s.position.1",
+   "active": false
+  },
+  {
+   "senseId": "s.samling.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sortera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kategori.1",
+   "active": false
+  },
+  {
+   "senseId": "s.objekt.4",
+   "active": true
+  },
+  {
+   "senseId": "s.egenskap.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klass.4",
+   "active": true
+  },
+  {
+   "senseId": "s.nyckel.3",
+   "active": true
+  },
+  {
+   "senseId": "s.värde.3",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Biblioteket i appen",
+  "paragraphs": [
+   "Nu ska Kenji och Omar skriva en app för ett litet bibliotek. Biblioteket har en samling på tusen böcker, och appen ska hålla reda på dem. – Vi börjar med en lista, säger Sara.",
+   "När programmet startar är listan tom. Sedan kan man lägga till en bok i taget, och varje bok blir ett element i listan. Om en bok försvinner, måste man ta bort den. Varje element har ett index som visar dess position i listan. – Glöm inte att det första elementet har index 0, säger Sara.",
+   "Men en bok är mer än ett namn. Den har också en författare, ett år och en kategori, till exempel kokbok eller barnbok. – Då skriver vi en klass, säger Sara. Klassen Bok är som en mall. Den säger vilka egenskaper alla böcker har.",
+   "Varje bok i appen blir ett objekt av klassen Bok. Ett objekt kan till exempel ha egenskapen år med värdet 1945. Omar sparar också alla bibliotekskort med en nyckel och ett värde: nyckeln är kortets nummer, och värdet är namnet på den som lånar.",
+   "Till sist kan appen sortera böckerna efter år eller kategori. Anna, som arbetar på biblioteket, testar appen och blir glad. – Nu hittar jag allt på några sekunder, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur ser listan ut när programmet startar?",
+    "options": [
+     "Den är tom",
+     "Den har tusen böcker",
+     "Den har ett element",
+     "Den är sorterad efter år"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "När programmet startar är listan tom.",
+    "explanationJa": "プログラムが{始|はじ}まるとき、リストは{空|から}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket index har det första elementet?",
+    "options": [
+     "0",
+     "1",
+     "2",
+     "10"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Glöm inte att det första elementet har index 0, säger Sara.",
+    "explanationJa": "{最初|さいしょ}の{要素|ようそ}のインデックスは0です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att klassen Bok är som en mall?",
+    "options": [
+     "Den bestämmer vilka egenskaper alla böcker har",
+     "Den är en lista med alla böcker",
+     "Den tar bort gamla böcker",
+     "Den är ett rum i biblioteket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Klassen Bok är som en mall. Den säger vilka egenskaper alla böcker har.",
+    "explanationJa": "すべての{本|ほん}がどんな{属性|ぞくせい}を{持|も}つかを{決|き}めるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Varje bok i appen är ett objekt.",
+    "correct": true,
+    "explanationSv": "Varje bok i appen blir ett objekt av klassen Bok.",
+    "explanationJa": "アプリの{中|なか}の{本|ほん}は、どれもクラス「Bok」のオブジェクトです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anna tycker att det är svårare att hitta böcker med appen.",
+    "correct": false,
+    "explanationSv": "– Nu hittar jag allt på några sekunder, säger hon.",
+    "explanationJa": "アンナは{数秒|すうびょう}で{何|なん}でも{見|み}つけられると{言|い}っています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om listor och om hur man håller ordning på saker.",
+  "discussionPoints": [
+   "Vilka listor skriver du i vardagen?",
+   "Har du en samling av något hemma? Hur håller du ordning på den?",
+   "Vilka egenskaper skulle ett objekt för en kund i en butik ha?",
+   "Vilken app använder du för att lägga till och ta bort saker på en lista?"
+  ]
+ },
+ "standard": 2
+}

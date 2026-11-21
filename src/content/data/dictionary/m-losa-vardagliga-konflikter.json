@@ -26,6 +26,7 @@
        "ja": "{皿洗|さらあら}いのことでよくもめます。"
       }
      ],
+     "labelSv": "mellan människor",
      "tags": [
       "vardag",
       "problem",
@@ -34,8 +35,48 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.konflikt.2",
+     "ja": "（コードの）コンフリクト、{競合|きょうごう}",
+     "defSv": "När två ändringar i samma del av en fil inte går att slå ihop automatiskt.",
+     "defJa": "{同|おな}じファイルの{同|おな}じ{部分|ぶぶん}への{二|ふた}つの{変更|へんこう}を、{自動|じどう}で{統合|とうごう}できないこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det blev en konflikt när vi slog ihop grenarna.",
+       "ja": "ブランチを{統合|とうごう}したとき、コンフリクトが{起|お}きました。"
+      },
+      {
+       "sv": "Han löste konflikten genom att behålla båda ändringarna.",
+       "ja": "{彼|かれ}は{両方|りょうほう}の{変更|へんこう}を{残|のこ}すことでコンフリクトを{解決|かいけつ}しました。"
+      }
+     ],
+     "labelSv": "i kod",
+     "collocations": [
+      "lösa en konflikt",
+      "det blir en konflikt"
+     ],
+     "explanation": {
+      "sv": "En konflikt i versionshantering uppstår när två personer har ändrat samma rad på olika sätt. Programmet kan inte veta vilken ändring som är rätt, så en människa måste titta och bestämma. Det kallas att lösa konflikten. Ordet betyder annars att människor är oense och bråkar, men här handlar det bara om kod.",
+      "ja": "バージョン{管理|かんり}での「konflikt（コンフリクト）」は、{二人|ふたり}が{同|おな}じ{行|ぎょう}を{別々|べつべつ}に{変更|へんこう}したときに{起|お}こります。プログラムにはどちらの{変更|へんこう}が{正|ただ}しいかわからないので、{人|ひと}が{見|み}て{決|き}めなければなりません。これを「lösa konflikten（コンフリクトを{解決|かいけつ}する）」と{言|い}います。ふだんは{人|ひと}どうしの{対立|たいりつ}やもめごとという{意味|いみ}ですが、ここではコードだけの{話|はなし}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "samarbete"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.osams",

@@ -1,0 +1,168 @@
+{
+ "id": "m.automatiserad-testning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Automatiserad testning",
+ "titleJa": "{自動|じどう}テスト",
+ "descriptionSv": "Hur man kontrollerar att ett program fungerar: skillnaden mellan att testa för hand och att låta datorn göra det, hur ett bra test är byggt och vad man gör när något inte fungerar.",
+ "descriptionJa": "プログラムが{正|ただ}しく{動|うご}くかをどう{確|たし}かめるか：{手作業|てさぎょう}でテストすることとコンピューターに{任|まか}せることの{違|ちが}い、よいテストの{作|つく}り{方|かた}、そして{何|なに}かがうまく{動|うご}かないときにどうするかを{学|まな}びます。",
+ "categoryId": "R07-A02-T03",
+ "tags": [
+  "programmering",
+  "teknik",
+  "kvalitet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.versionshantering-med-git"
+ ],
+ "related": [],
+ "recommendedOrder": 3836,
+ "words": [
+  {
+   "senseId": "s.testa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.manuell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.automatiserad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enhetstest.1",
+   "active": true
+  },
+  {
+   "senseId": "s.testfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förväntad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fallera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bugg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.krascha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.testtäckning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kvalitet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Testerna som körs varje natt",
+  "paragraphs": [
+   "Hiroshi jobbar på ett företag som gör en app för bussbiljetter. Förut testade de appen manuellt. Två personer gick igenom alla sidor före varje ny version. Det tog tre dagar, och ändå hittade användarna buggar.",
+   "Nu är testerna automatiserade. För varje funktion skriver de enhetstester. Ett enhetstest kontrollerar en liten del av koden, till exempel att priset blir rätt. Varje test har flera testfall: en vuxen, ett barn och en pensionär. Det förväntade priset för ett barn är 20 kronor.",
+   "Testerna körs automatiskt varje natt och varje gång någon laddar upp ny kod. Datorn upprepar samma kontroller hundratals gånger utan att bli trött. Om ett test fallerar får hela gruppen ett meddelande på morgonen. Ingen ny kod blir godkänd förrän alla tester går igenom.",
+   "I går fallerade ett test. Priset för barn blev 0 kronor i stället för 20. Hiroshi började felsöka och hittade buggen på tio minuter. – Utan testet hade vi inte märkt något förrän kunderna klagade, säger han. Kanske hade appen till och med kraschat.",
+   "Företaget mäter också testtäckningen. Just nu körs 82 procent av koden när testerna körs. – Hundra procent är inte målet, säger chefen Anna. Tester kan aldrig visa att det inte finns några buggar, men de ger oss bättre kvalitet och lugnare nätter."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur testade företaget appen förut?",
+    "options": [
+     "Datorn körde tester varje natt",
+     "Två personer gick igenom alla sidor för hand",
+     "Kunderna testade appen",
+     "De testade den inte alls"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Förut testade de appen manuellt. Två personer gick igenom alla sidor före varje ny version.",
+    "explanationJa": "{以前|いぜん}は{二人|ふたり}が{手作業|てさぎょう}ですべてのページを{確認|かくにん}していました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket är det förväntade priset för ett barn?",
+    "options": [
+     "0 kronor",
+     "82 kronor",
+     "10 kronor",
+     "20 kronor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det förväntade priset för ett barn är 20 kronor.",
+    "explanationJa": "{子|こ}どもの{期待|きたい}される{値段|ねだん}は20クローナです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför får hela gruppen ett meddelande på morgonen?",
+    "options": [
+     "Ett test har fallerat under natten",
+     "Det är dags för möte",
+     "En ny kund har köpt en biljett",
+     "Testtäckningen har blivit 100 procent"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Om ett test fallerar får hela gruppen ett meddelande på morgonen.",
+    "explanationJa": "テストが{失敗|しっぱい}すると、{朝|あさ}にメッセージが{届|とど}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Hiroshi behövde flera dagar för att hitta buggen.",
+    "correct": false,
+    "explanationSv": "Hiroshi började felsöka och hittade buggen på tio minuter.",
+    "explanationJa": "{十分|じゅっぷん}でバグを{見|み}つけました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anna tror att testerna kan visa att appen inte har några buggar alls.",
+    "correct": false,
+    "explanationSv": "Tester kan aldrig visa att det inte finns några buggar",
+    "explanationJa": "テストでは、バグがまったくないことは{証明|しょうめい}できないと{言|い}っています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att kontrollera arbete och om att låta datorer göra det som upprepas.",
+  "discussionPoints": [
+   "Vilka uppgifter på ditt jobb eller i din vardag skulle du vilja automatisera?",
+   "Har du hittat en bugg i en app eller på en webbplats? Vad hände?",
+   "Hur kontrollerar du att ditt eget arbete är rätt innan du lämnar det?",
+   "Vad är bra och dåligt med att maskiner gör manuellt arbete?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,597 @@
+{
+ "entries": [
+  {
+   "id": "e.datastruktur",
+   "lemma": "datastruktur",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "datastruktur",
+    "defSg": "datastrukturen",
+    "indefPl": "datastrukturer",
+    "defPl": "datastrukturerna"
+   },
+   "senses": [
+    {
+     "id": "s.datastruktur.1",
+     "ja": "データ{構造|こうぞう}",
+     "defSv": "Det sätt som ett program ordnar och sparar data på, så att det går lätt att hitta och ändra.",
+     "defJa": "プログラムがデータを{並|なら}べて{保存|ほぞん}するしかた。{見|み}つけたり{変|か}えたりしやすくするためのもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "En lista är en enkel datastruktur.",
+       "ja": "リストは{簡単|かんたん}なデータ{構造|こうぞう}です。"
+      },
+      {
+       "sv": "Vilken datastruktur passar bäst för en kö på vårdcentralen?",
+       "ja": "{医療|いりょう}センターの{順番待|じゅんばんま}ちには、どのデータ{構造|こうぞう}が{一番|いちばん}{合|あ}っていますか。"
+      }
+     ],
+     "collocations": [
+      "välja en datastruktur",
+      "en enkel datastruktur",
+      "en bra datastruktur för …"
+     ],
+     "explanation": {
+      "sv": "Om data är saker i ett hem, är datastrukturen sättet att förvara dem: i en hylla, i lådor eller i en hög. Programmeraren väljer datastruktur efter vad programmet ska göra mest: hitta saker snabbt, lägga till nya eller ta ut dem i rätt ordning. Ordet struktur betyder ordning i allmänhet; en datastruktur är just ordningen för data i ett program.",
+      "ja": "データを{家|いえ}の{中|なか}の{物|もの}にたとえると、データ{構造|こうぞう}はそのしまい{方|かた}です。{棚|たな}に{並|なら}べるのか、{箱|はこ}に{入|い}れるのか、{積|つ}み{重|かさ}ねるのか、ということです。プログラマーは、プログラムが{一番|いちばん}よくすること、つまり{速|はや}く{見|み}つけるのか、{新|あたら}しいものを{加|くわ}えるのか、{正|ただ}しい{順番|じゅんばん}で{取|と}り{出|だ}すのかによってデータ{構造|こうぞう}を{選|えら}びます。「struktur」は{一般|いっぱん}に「{構造|こうぞう}、まとまり」という{意味|いみ}ですが、「datastruktur」はプログラムの{中|なか}のデータの{並|なら}べ{方|かた}のことです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.kö",
+   "lemma": "kö",
+   "pos": "noun",
+   "level": "A2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "kö",
+    "defSg": "kön",
+    "indefPl": "köer",
+    "defPl": "köerna"
+   },
+   "senses": [
+    {
+     "id": "s.kö.1",
+     "ja": "{列|れつ}、{行列|ぎょうれつ}",
+     "defSv": "En rad av människor som väntar på sin tur.",
+     "defJa": "{自分|じぶん}の{番|ばん}を{待|ま}っている{人|ひと}の{列|れつ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det var lång kö på posten i dag.",
+       "ja": "{今日|きょう}は{郵便局|ゆうびんきょく}に{長|なが}い{列|れつ}ができていました。"
+      }
+     ],
+     "labelSv": "människor som väntar",
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.kö.2",
+     "ja": "（プログラミングの）キュー、{待|ま}ち{行列|ぎょうれつ}",
+     "defSv": "En datastruktur där det som kommer in först också tas ut först, som när människor väntar på sin tur.",
+     "defJa": "{先|さき}に{入|はい}ったものが{先|さき}に{取|と}り{出|だ}されるデータ{構造|こうぞう}。{人|ひと}が{順番|じゅんばん}を{待|ま}つ{列|れつ}と{同|おな}じしくみ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Varje nytt samtal läggs sist i kön.",
+       "ja": "{新|あたら}しい{電話|でんわ}は、どれもキューの{一番|いちばん}{後|うし}ろに{入|はい}ります。"
+      },
+      {
+       "sv": "Skrivaren tar dokumenten i kön ett i taget.",
+       "ja": "プリンターは、キューに{入|はい}った{文書|ぶんしょ}を{一|ひと}つずつ{処理|しょり}します。"
+      }
+     ],
+     "labelSv": "i programmering",
+     "collocations": [
+      "lägga något i kön",
+      "först i kön",
+      "ta ut det första ur kön"
+     ],
+     "explanation": {
+      "sv": "En kö i ett program fungerar som kön i en butik: den som kom först får hjälp först, och den som kommer sist ställer sig längst bak. Program använder köer för till exempel samtal till kundtjänst, filer som ska skrivas ut och meddelanden som ska skickas. En stack fungerar tvärtom: där tas det som kom in sist ut först.",
+      "ja": "プログラムのキューは、{店|みせ}の{列|れつ}と{同|おな}じしくみです。{先|さき}に{来|き}た{人|ひと}が{先|さき}に{対応|たいおう}してもらい、{最後|さいご}に{来|き}た{人|ひと}は{一番|いちばん}{後|うし}ろに{並|なら}びます。プログラムは、たとえばカスタマーサービスへの{電話|でんわ}、{印刷|いんさつ}、{送信|そうしん}するメッセージなどにキューを{使|つか}います。「stack（スタック）」はその{逆|ぎゃく}で、{最後|さいご}に{入|はい}ったものが{最初|さいしょ}に{取|と}り{出|だ}されます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.kö.3",
+     "ja": "（ビリヤードの）キュー",
+     "defSv": "En lång pinne som man stöter bollarna med i biljard.",
+     "defJa": "ビリヤードで{玉|たま}を{突|つ}く{長|なが}い{棒|ぼう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon höll kön med båda händerna.",
+       "ja": "{彼女|かのじょ}は{両手|りょうて}でキューを{持|も}っていました。"
+      }
+     ],
+     "labelSv": "i biljard",
+     "tags": [
+      "sport"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "C1"
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "coreSense": "s.kö.1"
+   }
+  },
+  {
+   "id": "e.stack",
+   "lemma": "stack",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "stack",
+    "defSg": "stacken",
+    "indefPl": "stackar",
+    "defPl": "stackarna"
+   },
+   "senses": [
+    {
+     "id": "s.stack.1",
+     "ja": "（{干|ほ}し{草|くさ}などの）{山|やま}",
+     "defSv": "En stor hög av hö, halm eller ved, som man lägger ute på en äng eller en åker.",
+     "defJa": "{牧草地|ぼくそうち}や{畑|はたけ}に{積|つ}み{上|あ}げた、{干|ほ}し{草|くさ}、わら、{薪|まき}などの{大|おお}きな{山|やま}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "På ängen stod en stack med hö.",
+       "ja": "{牧草地|ぼくそうち}には{干|ほ}し{草|くさ}の{山|やま}がありました。"
+      }
+     ],
+     "labelSv": "hög",
+     "tags": [
+      "natur"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.stack.2",
+     "ja": "（プログラミングの）スタック",
+     "defSv": "En datastruktur där det som läggs in sist tas ut först, som en hög med tallrikar.",
+     "defJa": "{最後|さいご}に{入|い}れたものを{最初|さいしょ}に{取|と}り{出|だ}すデータ{構造|こうぞう}。{積|つ}み{重|かさ}ねた{皿|さら}のようなもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Appen sparar det du har gjort i en stack.",
+       "ja": "アプリは、あなたがしたことをスタックに{保存|ほぞん}します。"
+      },
+      {
+       "sv": "Stacken är tom när du inte har gjort något än.",
+       "ja": "まだ{何|なに}もしていないときは、スタックは{空|から}です。"
+      }
+     ],
+     "labelSv": "i programmering",
+     "collocations": [
+      "lägga något överst i stacken",
+      "ta bort det översta",
+      "stacken är tom"
+     ],
+     "explanation": {
+      "sv": "Tänk på en hög med rena tallrikar i köket: man lägger den nya tallriken överst och tar också den översta när man behöver en. Så fungerar en stack. När du trycker på ”ångra” i ett program tas det senaste du gjorde bort först, eftersom programmet har sparat dina steg i en stack. I en kö är det tvärtom: det som kom in först tas ut först. Ordet uttalas som stack i ”han stack”, men betyder något helt annat.",
+      "ja": "{台所|だいどころ}の{洗|あら}った{皿|さら}の{山|やま}を{思|おも}い{浮|う}かべてください。{新|あたら}しい{皿|さら}は{一番|いちばん}{上|うえ}に{置|お}き、{使|つか}うときも{一番|いちばん}{上|うえ}の{皿|さら}を{取|と}ります。スタックはこのしくみです。プログラムで「{元|もと}に{戻|もど}す」を{押|お}すと、{最後|さいご}にしたことから{先|さき}に{取|と}り{消|け}されます。プログラムがあなたの{操作|そうさ}をスタックに{保存|ほぞん}しているからです。キューはその{逆|ぎゃく}で、{先|さき}に{入|はい}ったものが{先|さき}に{出|で}ます。{発音|はつおん}は「han stack（{彼|かれ}は{刺|さ}した・{去|さ}った）」の「stack」と{同|おな}じですが、{意味|いみ}はまったく{違|ちが}います。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "coreSense": "s.stack.1"
+   }
+  },
+  {
+   "id": "e.nivå",
+   "lemma": "nivå",
+   "pos": "noun",
+   "level": "A2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "nivå",
+    "defSg": "nivån",
+    "indefPl": "nivåer",
+    "defPl": "nivåerna"
+   },
+   "senses": [
+    {
+     "id": "s.nivå.1",
+     "ja": "{高|たか}さ、{水位|すいい}",
+     "defSv": "Hur högt något är, till exempel vattnet i en sjö.",
+     "defJa": "{湖|みずうみ}の{水|みず}などが、どのくらいの{高|たか}さにあるか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vattnet i sjön har nått en ovanligt hög nivå.",
+       "ja": "{湖|みずうみ}の{水位|すいい}がいつもより{高|たか}くなっています。"
+      }
+     ],
+     "labelSv": "höjd",
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.nivå.2",
+     "ja": "レベル、{水準|すいじゅん}",
+     "defSv": "Hur bra, svårt eller mycket något är.",
+     "defJa": "どのくらいよいか、{難|むずか}しいか、{多|おお}いか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kursen ligger på rätt nivå för mig.",
+       "ja": "その{講座|こうざ}は{私|わたし}にちょうどいいレベルです。"
+      }
+     ],
+     "labelSv": "hur bra eller svårt",
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    },
+    {
+     "id": "s.nivå.3",
+     "ja": "（{階層|かいそう}の）{段|だん}、レベル",
+     "defSv": "Ett av stegen i en ordning där vissa delar står över andra, till exempel i ett träd eller ett företag.",
+     "defJa": "あるものがほかのものの{上|うえ}に{来|く}る{並|なら}びの{中|なか}の、{一|ひと}つの{段|だん}。たとえばツリーや{会社|かいしゃ}の{中|なか}の{段|だん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Alla mappar på samma nivå ligger direkt under roten.",
+       "ja": "{同|おな}じ{階層|かいそう}のフォルダーは、どれもルートのすぐ{下|した}にあります。"
+      }
+     ],
+     "labelSv": "i en ordning",
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B1"
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "coreSense": "s.nivå.1"
+   }
+  },
+  {
+   "id": "e.hierarkisk",
+   "lemma": "hierarkisk",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "hierarkisk",
+    "neuter": "hierarkiskt",
+    "plural": "hierarkiska",
+    "definite": "hierarkiska"
+   },
+   "senses": [
+    {
+     "id": "s.hierarkisk.1",
+     "ja": "{階層的|かいそうてき}な、ピラミッド{型|がた}の",
+     "defSv": "Ordnad i nivåer, så att vissa delar eller personer står över andra.",
+     "defJa": "いくつかの{段|だん}に{分|わ}かれていて、ある{部分|ぶぶん}や{人|ひと}がほかの{上|うえ}に{来|く}るように{並|なら}んでいる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Mapparna i datorn har en hierarkisk ordning.",
+       "ja": "コンピューターのフォルダーは{階層的|かいそうてき}に{並|なら}んでいます。"
+      },
+      {
+       "sv": "Företaget är mindre hierarkiskt än hon hade trott.",
+       "ja": "その{会社|かいしゃ}は、{彼女|かのじょ}が{思|おも}っていたほど{上下関係|じょうげかんけい}が{厳|きび}しくありません。"
+      }
+     ],
+     "collocations": [
+      "en hierarkisk organisation",
+      "en hierarkisk struktur",
+      "mindre hierarkisk"
+     ],
+     "explanation": {
+      "sv": "Något är hierarkiskt när det är byggt i nivåer, som en pyramid: överst finns en sak eller en person, och under den finns flera på varje nivå. Mappar i en dator, ett släktträd och ett företag med chefer och anställda är hierarkiska. Substantivet är hierarki. Svenska arbetsplatser beskrivs ofta som lite hierarkiska, eftersom chefen och de anställda pratar med varandra på samma nivå.",
+      "ja": "{階層的|かいそうてき}とは、ピラミッドのようにいくつかの{段|だん}でできていることです。{一番|いちばん}{上|うえ}に{一|ひと}つのものや{一人|ひとり}の{人|ひと}がいて、その{下|した}の{段|だん}ごとに{複数|ふくすう}のものがあります。コンピューターのフォルダー、{家系図|かけいず}、{上司|じょうし}と{社員|しゃいん}のいる{会社|かいしゃ}は{階層的|かいそうてき}です。{名詞|めいし}は「hierarki」です。スウェーデンの{職場|しょくば}は、{上司|じょうし}と{社員|しゃいん}が{対等|たいとう}に{話|はな}すので、あまり{階層的|かいそうてき}ではないとよく{言|い}われます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.uppsättning",
+   "lemma": "uppsättning",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "uppsättning",
+    "defSg": "uppsättningen",
+    "indefPl": "uppsättningar",
+    "defPl": "uppsättningarna"
+   },
+   "senses": [
+    {
+     "id": "s.uppsättning.1",
+     "ja": "ひとそろい、セット",
+     "defSv": "Flera saker av samma slag som hör ihop och används tillsammans.",
+     "defJa": "{同|おな}じ{種類|しゅるい}で、いっしょに{使|つか}うひとまとまりのもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Varje patient har en uppsättning uppgifter: namn, adress och telefon.",
+       "ja": "{患者|かんじゃ}にはそれぞれ、{名前|なまえ}、{住所|じゅうしょ}、{電話番号|でんわばんごう}というひとそろいの{情報|じょうほう}があります。"
+      },
+      {
+       "sv": "Hon köpte en ny uppsättning skruvmejslar.",
+       "ja": "{彼女|かのじょ}はドライバーのセットを{新|あたら}しく{買|か}いました。"
+      }
+     ],
+     "collocations": [
+      "en uppsättning verktyg",
+      "en uppsättning data",
+      "en hel uppsättning"
+     ],
+     "explanation": {
+      "sv": "En uppsättning är några saker som hör ihop, till exempel en uppsättning skruvmejslar i olika storlekar eller en uppsättning regler. Inom data talar man om en uppsättning värden eller uppgifter som beskriver samma sak. En samling kan vara stor och blandad, medan en uppsättning är ett bestämt antal saker som passar ihop.",
+      "ja": "「uppsättning」は、ひとまとまりになるいくつかのものです。たとえば、いろいろな{大|おお}きさのドライバーのセットや、ひとそろいの{規則|きそく}などです。データの{分野|ぶんや}では、{同|おな}じものを{説明|せつめい}するひとそろいの{値|あたい}や{情報|じょうほう}について{使|つか}います。「samling（コレクション）」は{大|おお}きくていろいろなものが{混|ま}ざっていてもかまいませんが、「uppsättning」は{組|く}み{合|あ}わさる{決|き}まった{数|かず}のもののことです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.uppsättning.2",
+     "ja": "（{演劇|えんげき}の）{上演|じょうえん}、{演出|えんしゅつ}",
+     "defSv": "När en teater spelar en berättelse på sitt eget sätt och visar den för publik.",
+     "defJa": "{劇場|げきじょう}が{劇|げき}を{独自|どくじ}のしかたで{作|つく}って、{観客|かんきゃく}に{見|み}せること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Teaterns nya uppsättning fick fina recensioner.",
+       "ja": "その{劇場|げきじょう}の{新|あたら}しい{上演|じょうえん}は、よい{批評|ひひょう}をもらいました。"
+      }
+     ],
+     "labelSv": "på teatern",
+     "tags": [
+      "kultur"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.länka",
+   "lemma": "länka",
+   "pos": "verb",
+   "level": "B1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "länka",
+    "present": "länkar",
+    "past": "länkade",
+    "supine": "länkat",
+    "imperative": "länka",
+    "group": "1"
+   },
+   "senses": [
+    {
+     "id": "s.länka.1",
+     "ja": "リンクを{張|は}る",
+     "defSv": "Lägga in en länk till en annan sida på nätet.",
+     "defJa": "インターネットで、ほかのページへのリンクを{入|い}れる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon länkar till artikeln i sitt inlägg.",
+       "ja": "{彼女|かのじょ}は{自分|じぶん}の{投稿|とうこう}に、その{記事|きじ}へのリンクを{張|は}っています。"
+      }
+     ],
+     "labelSv": "på nätet",
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.länka.2",
+     "ja": "（{鎖|くさり}のように）つなぐ",
+     "defSv": "Koppla ihop saker så att den ena leder till den andra, som ringarna i en kedja.",
+     "defJa": "{鎖|くさり}の{輪|わ}のように、{一|ひと}つが{次|つぎ}のものにつながるようにものを{結|むす}びつける。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Varje nod är länkad till nästa nod.",
+       "ja": "それぞれのノードは、{次|つぎ}のノードにつながっています。"
+      },
+      {
+       "sv": "Systemet länkar ihop varje kund med kundens beställningar.",
+       "ja": "そのシステムは、{客|きゃく}ひとりひとりを{本人|ほんにん}の{注文|ちゅうもん}と{結|むす}びつけています。"
+      }
+     ],
+     "labelSv": "koppla ihop",
+     "collocations": [
+      "länka ihop",
+      "vara länkad till",
+      "länka samman uppgifter"
+     ],
+     "explanation": {
+      "sv": "Att länka saker betyder att man kopplar ihop dem i en ordning, så att man kan gå från den ena till nästa. I en länkad lista vet varje del var nästa del finns. Man kan också länka ihop uppgifter, till exempel en kund med alla kundens beställningar. Koppla ihop är vanligare och betyder mer; länka används gärna när det blir en kedja eller när man kan följa en väg mellan sakerna.",
+      "ja": "「länka」は、ものを{順番|じゅんばん}につないで、{一|ひと}つから{次|つぎ}へたどれるようにすることです。リンクリストでは、それぞれの{部分|ぶぶん}が{次|つぎ}の{部分|ぶぶん}の{場所|ばしょ}を{知|し}っています。たとえば、ある{客|きゃく}とその{客|きゃく}の{注文|ちゅうもん}すべてを{結|むす}びつける、というように{情報|じょうほう}どうしをつなぐこともできます。「koppla ihop（つなぐ）」はもっと{一般的|いっぱんてき}な{言|い}い{方|かた}で、「länka」は{鎖|くさり}のようにつながるときや、もの{同士|どうし}の{間|あいだ}をたどれるときによく{使|つか}います。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.strukturera",
+   "lemma": "strukturera",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "strukturera",
+    "present": "strukturerar",
+    "past": "strukturerade",
+    "supine": "strukturerat",
+    "imperative": "strukturera",
+    "group": "1"
+   },
+   "senses": [
+    {
+     "id": "s.strukturera.1",
+     "ja": "{構造化|こうぞうか}する、{整理|せいり}して{組|く}み{立|た}てる",
+     "defSv": "Ordna något så att det får en tydlig form och varje del får sin plats.",
+     "defJa": "はっきりした{形|かたち}になり、それぞれの{部分|ぶぶん}が{決|き}まった{場所|ばしょ}に{入|はい}るように{整理|せいり}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon strukturerar sina anteckningar i mappar.",
+       "ja": "{彼女|かのじょ}はメモをフォルダーに{分|わ}けて{整理|せいり}しています。"
+      },
+      {
+       "sv": "Rapporten var väl strukturerad och lätt att läsa.",
+       "ja": "その{報告書|ほうこくしょ}はよく{整理|せいり}されていて、{読|よ}みやすかったです。"
+      }
+     ],
+     "collocations": [
+      "strukturera data",
+      "strukturera sitt arbete",
+      "väl strukturerad"
+     ],
+     "explanation": {
+      "sv": "Att strukturera betyder att man bestämmer en ordning för något som är rörigt: man delar upp det i delar och ger varje del en plats. Man kan strukturera en text med rubriker, sitt arbete med en plan eller data i tabeller och mappar. Data som redan har en fast ordning kallas strukturerad data. Att städa eller sortera gör man med saker, medan strukturera handlar mer om att skapa själva ordningen.",
+      "ja": "「strukturera」は、ごちゃごちゃしたものに{順序|じゅんじょ}を{決|き}めることです。{部分|ぶぶん}に{分|わ}けて、それぞれに{場所|ばしょ}を{与|あた}えます。{文章|ぶんしょう}を{見出|みだ}しで{整理|せいり}したり、{仕事|しごと}を{計画|けいかく}で{組|く}み{立|た}てたり、データを{表|ひょう}やフォルダーに{整理|せいり}したりします。すでに{決|き}まった{形|かたち}を{持|も}つデータは「strukturerad data（{構造化|こうぞうか}データ）」と{呼|よ}ばれます。「städa（{片付|かたづ}ける）」や「sortera（{分|わ}ける）」は{物|もの}に{対|たい}してすることですが、「strukturera」は{順序|じゅんじょ}そのものを{作|つく}ることに{重点|じゅうてん}があります。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

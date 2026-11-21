@@ -1,0 +1,453 @@
+{
+ "entries": [
+  {
+   "id": "e.API",
+   "lemma": "API",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "API",
+    "defSg": "API:et",
+    "indefPl": "API:er",
+    "defPl": "API:erna"
+   },
+   "senses": [
+    {
+     "id": "s.API.1",
+     "ja": "アプリケーション・プログラミング・インターフェース（エーピーアイ）",
+     "defSv": "Ett bestämt sätt för ett program att be ett annat program om information eller tjänster.",
+     "defJa": "あるプログラムがほかのプログラムに{情報|じょうほう}やサービスを{頼|たの}むための、{決|き}められた{方法|ほうほう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Väderappen hämtar sina data från ett API.",
+       "ja": "{天気|てんき}アプリは、APIからデータを{取|と}ってきます。"
+      },
+      {
+       "sv": "Myndigheten har öppnat ett API med data om kollektivtrafiken.",
+       "ja": "その{機関|きかん}は、{公共交通|こうきょうこうつう}のデータを{提供|ていきょう}するAPIを{公開|こうかい}しました。"
+      }
+     ],
+     "collocations": [
+      "ett öppet API",
+      "använda ett API",
+      "ett API för …"
+     ],
+     "explanation": {
+      "sv": "Ett API är en dörr in till ett program för andra program. Appen skickar en fråga i ett bestämt format, till exempel ”Hur blir vädret i Luleå i morgon?”, och tjänsten skickar tillbaka svaret. Användaren ser aldrig något API; det är program som talar med program. Ett API är en sorts gränssnitt, men ordet gränssnitt är bredare. Det uttalas som tre bokstäver: A, P och I.",
+      "ja": "「API」は、ほかのプログラムのための、プログラムへの{入|い}り{口|ぐち}です。アプリは{決|き}まった{形式|けいしき}で「{明日|あした}のルーレオの{天気|てんき}は？」のような{質問|しつもん}を{送|おく}り、APIが{答|こた}えを{返|かえ}します。{利用者|りようしゃ}がAPIを{目|め}にすることはなく、プログラムどうしのやりとりです。APIはインターフェースの{一種|いっしゅ}ですが、「gränssnitt（インターフェース）」はもっと{広|ひろ}い{意味|いみ}の{言葉|ことば}です。A、P、Iと{三|みっ}つの{文字|もじ}を{読|よ}みます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.gränssnitt",
+   "lemma": "gränssnitt",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "gränssnitt",
+    "defSg": "gränssnittet",
+    "indefPl": "gränssnitt",
+    "defPl": "gränssnitten"
+   },
+   "senses": [
+    {
+     "id": "s.gränssnitt.1",
+     "ja": "インターフェース、{接点|せってん}",
+     "defSv": "Platsen där två system eller delar möts och skickar information till varandra, och reglerna för hur det går till.",
+     "defJa": "{二|ふた}つのシステムや{部分|ぶぶん}が{出会|であ}って{情報|じょうほう}をやりとりするところと、そのやり{方|かた}の{決|き}まり。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Modulerna talar med varandra genom ett tydligt gränssnitt.",
+       "ja": "モジュールどうしは、はっきりしたインターフェースを{通|とお}してやりとりします。"
+      },
+      {
+       "sv": "Laddaren passar inte, eftersom gränssnitten är olika.",
+       "ja": "{接続部|せつぞくぶ}が{違|ちが}うので、{充電器|じゅうでんき}が{合|あ}いません。"
+      }
+     ],
+     "labelSv": "teknik",
+     "collocations": [
+      "ett tydligt gränssnitt",
+      "gränssnittet mellan … och …",
+      "ett enkelt gränssnitt"
+     ],
+     "explanation": {
+      "sv": "Ett gränssnitt är gränsen där två saker kopplas ihop: kontakten mellan laddare och telefon, eller reglerna för hur två moduler skickar information till varandra. Man behöver inte veta hur delen fungerar inuti, bara hur gränssnittet ser ut. Ett API är ett gränssnitt mellan program, och ett användargränssnitt är gränssnittet mellan människa och dator.",
+      "ja": "「gränssnitt（インターフェース）」は、{二|ふた}つのものがつながる{境目|さかいめ}です。{充電器|じゅうでんき}と{電話|でんわ}の{接続部|せつぞくぶ}や、{二|ふた}つのモジュールが{情報|じょうほう}を{送|おく}り{合|あ}う{決|き}まりなどを{指|さ}します。{中|なか}がどう{動|うご}いているかを{知|し}らなくても、インターフェースの{形|かたち}さえわかれば{使|つか}えます。APIはプログラムどうしのインターフェース、「användargränssnitt」は{人|ひと}とコンピューターの{間|あいだ}のインターフェースです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.gränssnitt.2",
+     "ja": "（{分野|ぶんや}どうしの）{接点|せってん}、{境界|きょうかい}",
+     "defSv": "Området där två ämnen eller verksamheter möts.",
+     "defJa": "{二|ふた}つの{分野|ぶんや}や{活動|かつどう}が{出会|であ}うところ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon forskar i gränssnittet mellan medicin och teknik.",
+       "ja": "{彼女|かのじょ}は{医学|いがく}と{工学|こうがく}の{境界|きょうかい}{領域|りょういき}を{研究|けんきゅう}しています。"
+      }
+     ],
+     "labelSv": "mellan ämnen",
+     "tags": [
+      "forskning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "C1"
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.användargränssnitt",
+   "lemma": "användargränssnitt",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "användargränssnitt",
+    "defSg": "användargränssnittet",
+    "indefPl": "användargränssnitt",
+    "defPl": "användargränssnitten"
+   },
+   "senses": [
+    {
+     "id": "s.användargränssnitt.1",
+     "ja": "ユーザーインターフェース",
+     "defSv": "Det som användaren ser och trycker på i ett program, till exempel knappar, menyer och bilder.",
+     "defJa": "プログラムで{利用者|りようしゃ}が{見|み}たり{押|お}したりする{部分|ぶぶん}。ボタン、メニュー、{画像|がぞう}など。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Den nya versionen har ett enklare användargränssnitt.",
+       "ja": "{新|あたら}しいバージョンは、ユーザーインターフェースがより{簡単|かんたん}になっています。"
+      },
+      {
+       "sv": "Många klagade på att användargränssnittet var rörigt.",
+       "ja": "{多|おお}くの{人|ひと}が、ユーザーインターフェースがごちゃごちゃしていると{苦情|くじょう}を{言|い}いました。"
+      }
+     ],
+     "collocations": [
+      "ett enkelt användargränssnitt",
+      "designa användargränssnittet"
+     ],
+     "explanation": {
+      "sv": "Användargränssnittet är den del av programmet som människor använder: skärmen med knappar, fält och menyer. Ett bra användargränssnitt gör det lätt att hitta rätt utan att läsa någon hjälp. Ett API har inget användargränssnitt, eftersom det bara används av andra program.",
+      "ja": "「användargränssnitt（ユーザーインターフェース）」は、{人|ひと}が{使|つか}うプログラムの{部分|ぶぶん}で、ボタンや{入力欄|にゅうりょくらん}、メニューのある{画面|がめん}のことです。よいユーザーインターフェースなら、{説明|せつめい}がなくても{正|ただ}しい{場所|ばしょ}がすぐ{見|み}つかります。APIはほかのプログラムだけが{使|つか}うので、ユーザーインターフェースはありません。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.begäran",
+   "lemma": "begäran",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "begäran",
+    "defSg": "begäran",
+    "indefPl": "begäranden",
+    "defPl": "begärandena"
+   },
+   "senses": [
+    {
+     "id": "s.begäran.1",
+     "ja": "{要求|ようきゅう}、{依頼|いらい}、リクエスト",
+     "defSv": "Det att man ber om något på ett formellt sätt, i ett brev eller ett meddelande.",
+     "defJa": "{手紙|てがみ}やメッセージなどで、{正式|せいしき}に{何|なに}かを{頼|たの}むこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han skickade en begäran om att få se sina uppgifter.",
+       "ja": "{彼|かれ}は、{自分|じぶん}の{情報|じょうほう}を{見|み}せてほしいという{依頼|いらい}を{送|おく}りました。"
+      },
+      {
+       "sv": "Servern tar emot tusentals begäranden varje minut.",
+       "ja": "サーバーは{毎分|まいふん}{何千|なんぜん}ものリクエストを{受|う}け{取|と}ります。"
+      }
+     ],
+     "collocations": [
+      "en begäran om …",
+      "på begäran",
+      "skicka en begäran"
+     ],
+     "explanation": {
+      "sv": "En begäran är när man ber om något, ofta skriftligt och formellt: en begäran om ledighet, en begäran om att få ut handlingar. När ett program skickar en fråga till en server och väntar på svar kallas det också en begäran. Uttrycket på begäran betyder att något görs för att någon har bett om det.",
+      "ja": "「begäran」は、{何|なに}かを{頼|たの}むことで、{多|おお}くは{書面|しょめん}での{正式|せいしき}な{依頼|いらい}です。{休暇|きゅうか}の{申請|しんせい}や{書類|しょるい}の{開示|かいじ}{請求|せいきゅう}などに{使|つか}います。プログラムがサーバーに{問|と}い{合|あ}わせを{送|おく}って{返事|へんじ}を{待|ま}つことも「begäran（リクエスト）」と{言|い}います。「på begäran」は「{求|もと}めに{応|おう}じて」という{意味|いみ}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.format",
+   "lemma": "format",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "format",
+    "defSg": "formatet",
+    "indefPl": "format",
+    "defPl": "formaten"
+   },
+   "senses": [
+    {
+     "id": "s.format.1",
+     "ja": "{判型|はんけい}、サイズ",
+     "defSv": "Storlek och form på papper, böcker eller bilder.",
+     "defJa": "{紙|かみ}や{本|ほん}や{写真|しゃしん}の{大|おお}きさと{形|かたち}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Skriv ut dokumentet i A4-format.",
+       "ja": "{文書|ぶんしょ}をA4サイズで{印刷|いんさつ}してください。"
+      }
+     ],
+     "labelSv": "storlek",
+     "tags": [
+      "skola"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.format.2",
+     "ja": "（データの）{形式|けいしき}、フォーマット",
+     "defSv": "Det sätt som data eller en fil är ordnad på, så att ett program kan läsa den.",
+     "defJa": "プログラムが{読|よ}めるように、データやファイルが{並|なら}べられている{方法|ほうほう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Tjänsten skickar svaret i ett format som är lätt att läsa.",
+       "ja": "サービスは{読|よ}みやすい{形式|けいしき}で{答|こた}えを{送|おく}ります。"
+      },
+      {
+       "sv": "Bilden gick inte att öppna, eftersom den hade fel format.",
+       "ja": "{形式|けいしき}がちがっていたので、その{画像|がぞう}は{開|ひら}けませんでした。"
+      }
+     ],
+     "labelSv": "data",
+     "collocations": [
+      "i ett annat format",
+      "byta format",
+      "ett vanligt format"
+     ],
+     "explanation": {
+      "sv": "Ett format bestämmer hur informationen ser ut i en fil eller ett meddelande: i vilken ordning sakerna kommer och vilka tecken som skiljer dem åt. Bilder kan ha olika format, och API:er skickar ofta data i ett format där varje värde har ett namn framför sig. Två program måste förstå samma format för att kunna skicka data till varandra.",
+      "ja": "「format」は、ファイルやメッセージの{中|なか}で{情報|じょうほう}がどう{並|なら}んでいるかを{決|き}めるものです。どんな{順番|じゅんばん}で{何|なに}が{来|く}るか、どんな{記号|きごう}で{区切|くぎ}るかを{表|あらわ}します。{画像|がぞう}にもいろいろな{形式|けいしき}があり、APIは、それぞれの{値|あたい}の{前|まえ}に{名前|なまえ}をつけた{形式|けいしき}でデータを{送|おく}ることがよくあります。{二|ふた}つのプログラムがデータをやりとりするには、{同|おな}じ{形式|けいしき}を{理解|りかい}していなければなりません。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    },
+    {
+     "id": "s.format.3",
+     "ja": "（{番組|ばんぐみ}などの）{形式|けいしき}、{構成|こうせい}",
+     "defSv": "Hur ett program på tv eller radio är upplagt.",
+     "defJa": "テレビやラジオの{番組|ばんぐみ}がどう{組|く}み{立|た}てられているか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Programmet har ett nytt format i år.",
+       "ja": "その{番組|ばんぐみ}は{今年|ことし}、{新|あたら}しい{形式|けいしき}になりました。"
+      }
+     ],
+     "labelSv": "tv och radio",
+     "tags": [
+      "medier"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.API-nyckel",
+   "lemma": "API-nyckel",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "API-nyckel",
+    "defSg": "API-nyckeln",
+    "indefPl": "API-nycklar",
+    "defPl": "API-nycklarna"
+   },
+   "senses": [
+    {
+     "id": "s.API-nyckel.1",
+     "ja": "APIキー",
+     "defSv": "En lång rad med tecken som visar vem som använder ett API och att man har rätt att göra det.",
+     "defJa": "だれがAPIを{使|つか}っているか、またその{権利|けんり}があるかを{示|しめ}す、{長|なが}い{文字|もじ}の{列|れつ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Du behöver en API-nyckel för att hämta väderdata.",
+       "ja": "{天気|てんき}のデータを{取|と}ってくるには、APIキーが{必要|ひつよう}です。"
+      },
+      {
+       "sv": "Någon hade lagt API-nyckeln öppet på nätet.",
+       "ja": "だれかがAPIキーをネット{上|じょう}に{公開|こうかい}したままにしていました。"
+      }
+     ],
+     "collocations": [
+      "skapa en API-nyckel",
+      "dela inte API-nyckeln"
+     ],
+     "explanation": {
+      "sv": "En API-nyckel är som ett lösenord för program. Den skickas med varje gång appen anropar tjänsten, så att tjänsten vet vem som frågar och kan räkna hur mycket man använder. Om någon annan får tag i nyckeln kan de använda tjänsten på ditt konto, så den ska hållas hemlig.",
+      "ja": "「API-nyckel（APIキー）」は、プログラムのためのパスワードのようなものです。{呼|よ}び{出|だ}しのたびにいっしょに{送|おく}られるので、サービスはだれが{問|と}い{合|あ}わせているかを{知|し}り、{利用量|りようりょう}を{数|かぞ}えることができます。ほかの{人|ひと}にキーを{知|し}られると、あなたのアカウントでサービスを{使|つか}われてしまうので、{秘密|ひみつ}にしておく{必要|ひつよう}があります。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.utbyta",
+   "lemma": "utbyta",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "utbyta",
+    "present": "utbyter",
+    "past": "utbytte",
+    "supine": "utbytt",
+    "imperative": "utbyt",
+    "group": "4"
+   },
+   "senses": [
+    {
+     "id": "s.utbyta.1",
+     "ja": "（{情報|じょうほう}などを）{交換|こうかん}する、やりとりする",
+     "defSv": "Ge varandra information, erfarenheter eller data, så att båda får något.",
+     "defJa": "{情報|じょうほう}や{経験|けいけん}やデータを{互|たが}いに{与|あた}え{合|あ}い、{両方|りょうほう}が{何|なに}かを{得|え}る。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Systemen utbyter data varje natt.",
+       "ja": "システムどうしは{毎晩|まいばん}データを{交換|こうかん}しています。"
+      },
+      {
+       "sv": "På mötet utbytte vi erfarenheter med andra skolor.",
+       "ja": "{会議|かいぎ}では、ほかの{学校|がっこう}と{経験|けいけん}を{交換|こうかん}しました。"
+      }
+     ],
+     "collocations": [
+      "utbyta information",
+      "utbyta erfarenheter",
+      "utbyta data"
+     ],
+     "explanation": {
+      "sv": "Att utbyta betyder att båda parter ger och får, oftast information, idéer eller erfarenheter. Två system utbyter data när de skickar uppgifter fram och tillbaka. Ordet är lite formellt; i vardagen säger man ofta byta. Skilj det från byta ut, som betyder att man tar bort något och sätter in något nytt i stället.",
+      "ja": "「utbyta」は、{両方|りょうほう}が{与|あた}えて{受|う}け{取|と}ることで、たいてい{情報|じょうほう}やアイデアや{経験|けいけん}について{使|つか}います。{二|ふた}つのシステムがデータを{行|い}ったり{来|き}たりさせるときも「utbyta data」と{言|い}います。{少|すこ}しかたい{言葉|ことば}で、ふだんは「byta」とよく{言|い}います。{古|ふる}いものを{取|と}り{除|のぞ}いて{新|あたら}しいものに{取|と}り{替|か}える「byta ut」とは{別|べつ}の{言葉|ことば}です。"
+     },
+     "frame": {
+      "subject": "Systemen",
+      "complement": "data"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

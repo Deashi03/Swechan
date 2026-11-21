@@ -1,0 +1,239 @@
+{
+ "entries": [
+  {
+   "id": "e.versionshantering",
+   "lemma": "versionshantering",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "versionshantering",
+    "defSg": "versionshanteringen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.versionshantering.1",
+     "ja": "バージョン{管理|かんり}",
+     "defSv": "Ett system som sparar varje ändring i koden eller i filer, så att man kan se vem som ändrat vad och gå tillbaka till äldre versioner.",
+     "defJa": "コードやファイルへのすべての{変更|へんこう}を{記録|きろく}し、だれが{何|なに}を{変|か}えたかを{見|み}たり、{古|ふる}いバージョンに{戻|もど}ったりできるようにするしくみ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Utan versionshantering vore det omöjligt för tio personer att skriva i samma kod.",
+       "ja": "バージョン{管理|かんり}がなければ、{十人|じゅうにん}が{同|おな}じコードを{書|か}くことは{不可能|ふかのう}でしょう。"
+      },
+      {
+       "sv": "Även författare kan använda versionshantering för sina texter.",
+       "ja": "{作家|さっか}も{原稿|げんこう}のバージョン{管理|かんり}を{使|つか}うことができます。"
+      }
+     ],
+     "collocations": [
+      "ett system för versionshantering",
+      "använda versionshantering"
+     ],
+     "explanation": {
+      "sv": "Versionshantering håller ordning på alla ändringar som görs i ett projekt. Varje sparad ändring får ett datum, ett namn och ett meddelande, så att man kan följa hur koden har vuxit. Det gör det möjligt för många att arbeta i samma kod och att gå tillbaka om något blir fel.",
+      "ja": "「versionshantering（バージョン{管理|かんり}）」は、プロジェクトで{行|おこな}われるすべての{変更|へんこう}を{整理|せいり}しておくものです。{保存|ほぞん}された{変更|へんこう}にはそれぞれ{日付|ひづけ}と{名前|なまえ}とメッセージがつくので、コードがどう{育|そだ}ってきたかをたどれます。そのおかげで、{大勢|おおぜい}が{同|おな}じコードで{作業|さぎょう}したり、まちがえたときに{前|まえ}に{戻|もど}ったりできます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "samarbete"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.kodförråd",
+   "lemma": "kodförråd",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "kodförråd",
+    "defSg": "kodförrådet",
+    "indefPl": "kodförråd",
+    "defPl": "kodförråden"
+   },
+   "senses": [
+    {
+     "id": "s.kodförråd.1",
+     "ja": "リポジトリ（コードの{保管場所|ほかんばしょ}）",
+     "defSv": "Den plats där all kod i ett projekt sparas, tillsammans med alla tidigare versioner.",
+     "defJa": "プロジェクトのすべてのコードを、{以前|いぜん}のすべてのバージョンといっしょに{保存|ほぞん}しておく{場所|ばしょ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hela appens kod ligger i ett kodförråd på nätet.",
+       "ja": "アプリのすべてのコードは、ネット{上|じょう}のリポジトリにあります。"
+      },
+      {
+       "sv": "Företaget har hundratals kodförråd, ett för varje projekt.",
+       "ja": "その{会社|かいしゃ}には、プロジェクトごとに{一|ひと}つずつ、{何百|なんびゃく}ものリポジトリがあります。"
+      }
+     ],
+     "collocations": [
+      "ett gemensamt kodförråd",
+      "ett öppet kodförråd"
+     ],
+     "explanation": {
+      "sv": "Ett kodförråd är projektets gemensamma arkiv: där finns koden och historiken över alla ändringar. Varje programmerare har ofta en kopia på sin egen dator och skickar sina ändringar till det gemensamma kodförrådet på en server. I vardagligt tal använder nästan alla ett kortare engelskt ord för samma sak.",
+      "ja": "「kodförråd（リポジトリ）」は、プロジェクトの{共有|きょうゆう}の{保管庫|ほかんこ}で、コードとすべての{変更|へんこう}の{履歴|りれき}が{入|はい}っています。プログラマーはそれぞれ{自分|じぶん}のパソコンにコピーを{持|も}っていることが{多|おお}く、{変更|へんこう}をサーバー{上|じょう}の{共有|きょうゆう}のリポジトリに{送|おく}ります。くだけた{会話|かいわ}では、ほとんどの{人|ひと}が{英語|えいご}から{来|き}た{短|みじか}い{言葉|ことば}「repo（リポ）」を{使|つか}います。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "samarbete"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.commit",
+   "lemma": "commit",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "commit",
+    "defSg": "commiten",
+    "indefPl": "commits",
+    "defPl": "commitsen"
+   },
+   "senses": [
+    {
+     "id": "s.commit.1",
+     "ja": "コミット（{変更|へんこう}の{記録|きろく}）",
+     "defSv": "En sparad ändring i versionshanteringen, med ett kort meddelande om vad man har gjort.",
+     "defJa": "バージョン{管理|かんり}に{保存|ほぞん}した{変更|へんこう}で、{何|なに}をしたかを{書|か}いた{短|みじか}いメッセージがつく。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Skriv ett tydligt meddelande till varje commit.",
+       "ja": "コミットのたびに、わかりやすいメッセージを{書|か}いてください。"
+      },
+      {
+       "sv": "I går gjorde hon tolv commits.",
+       "ja": "{昨日|きのう}、{彼女|かのじょ}は{十二回|じゅうにかい}コミットしました。"
+      }
+     ],
+     "collocations": [
+      "göra en commit",
+      "en commit med meddelandet …"
+     ],
+     "register": "informal",
+     "usageNote": {
+      "sv": "Lånord från engelskan som används på nästan alla svenska arbetsplatser där man skriver kod. Den svenska termen incheckning finns men används sällan.",
+      "ja": "コードを{書|か}くスウェーデンのほとんどの{職場|しょくば}で{使|つか}われている{英語|えいご}からの{外来語|がいらいご}です。スウェーデン{語|ご}の{用語|ようご}「incheckning」もありますが、あまり{使|つか}われません。"
+     },
+     "explanation": {
+      "sv": "En commit är som en sparad bild av koden i ett visst ögonblick. Man gör en commit när man har gjort klart en liten del, till exempel rättat en bugg, och skriver vad man gjorde. Alla commits tillsammans blir projektets historik. Skillnaden mot att bara spara en fil är att varje commit finns kvar, så att man kan gå tillbaka till den.",
+      "ja": "「commit（コミット）」は、ある{瞬間|しゅんかん}のコードを{保存|ほぞん}した{写真|しゃしん}のようなものです。バグを{直|なお}したなど、{小|ちい}さな{部分|ぶぶん}を{終|お}えたときにコミットし、{何|なに}をしたかを{書|か}きます。すべてのコミットが{集|あつ}まって、プロジェクトの{履歴|りれき}になります。ファイルをただ{保存|ほぞん}するのとの{違|ちが}いは、コミットが{一|ひと}つ{一|ひと}つ{残|のこ}るので、そこへ{戻|もど}れることです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "samarbete"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.parallellt",
+   "lemma": "parallellt",
+   "pos": "adverb",
+   "level": "B2",
+   "inflection": {
+    "kind": "none"
+   },
+   "senses": [
+    {
+     "id": "s.parallellt.1",
+     "ja": "{並行|へいこう}して、{同時|どうじ}に",
+     "defSv": "Samtidigt, men var för sig.",
+     "defJa": "{同|おな}じ{時|とき}に、でも{別々|べつべつ}に。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Tre personer arbetar parallellt med olika delar av appen.",
+       "ja": "{三人|さんにん}がアプリの{別々|べつべつ}の{部分|ぶぶん}を{並行|へいこう}して{作|つく}っています。"
+      },
+      {
+       "sv": "Hon studerar parallellt med jobbet.",
+       "ja": "{彼女|かのじょ}は{仕事|しごと}と{並行|へいこう}して{勉強|べんきょう}しています。"
+      }
+     ],
+     "labelSv": "samtidigt",
+     "collocations": [
+      "arbeta parallellt",
+      "pågå parallellt med …"
+     ],
+     "explanation": {
+      "sv": "Parallellt betyder att två eller flera saker pågår samtidigt utan att blanda sig med varandra. Man kan arbeta parallellt, studera parallellt med jobbet eller köra flera program parallellt. Med versionshantering kan många arbeta parallellt i samma kod, var och en i sin gren.",
+      "ja": "「parallellt」は、{二|ふた}つ{以上|いじょう}のことが{混|ま}ざり{合|あ}わずに{同時|どうじ}に{進|すす}むことを{表|あらわ}します。{並行|へいこう}して{働|はたら}く、{仕事|しごと}と{並行|へいこう}して{勉強|べんきょう}する、{複数|ふくすう}のプログラムを{同時|どうじ}に{動|うご}かす、などと{使|つか}います。バージョン{管理|かんり}を{使|つか}えば、{大勢|おおぜい}が{同|おな}じコードで、それぞれ{自分|じぶん}のブランチで{並行|へいこう}して{作業|さぎょう}できます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "samarbete"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.parallellt.2",
+     "ja": "{平行|へいこう}に",
+     "defSv": "Bredvid något och i samma riktning, hela tiden på samma avstånd.",
+     "defJa": "ほかのものの{横|よこ}を、いつも{同|おな}じ{距離|きょり}を{保|たも}って{同|おな}じ{方向|ほうこう}に。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Cykelvägen går parallellt med järnvägen.",
+       "ja": "{自転車道|じてんしゃどう}は{線路|せんろ}と{平行|へいこう}に{通|とお}っています。"
+      }
+     ],
+     "labelSv": "i samma riktning",
+     "tags": [
+      "trafik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

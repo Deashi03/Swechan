@@ -108,6 +108,7 @@
        "ja": "2x を{積分|せきぶん}すると x² + C になります。"
       }
      ],
+     "labelSv": "matematik",
      "explanation": {
       "sv": "Att integrera är att göra tvärtom mot att derivera. Man börjar med f(x) och letar efter F(x). Man säger att man integrerar en funktion, till exempel i en uppgift: Integrera 6x²!",
       "ja": "「integrera」は、{微分|びぶん}の{逆|ぎゃく}の{計算|けいさん}です。f(x) から{始|はじ}めて、F(x) を{探|さが}します。「Integrera 6x²!（6x² を{積分|せきぶん}せよ）」のように、{関数|かんすう}を{目的語|もくてきご}にして{使|つか}います。"
@@ -123,8 +124,53 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.integrera.2",
+     "ja": "{統合|とうごう}する、{組|く}み{込|こ}む",
+     "defSv": "Ta in något som en del av en större helhet, så att det fungerar tillsammans med resten.",
+     "defJa": "{何|なに}かを{大|おお}きな{全体|ぜんたい}の{一部|いちぶ}として{取|と}り{込|こ}み、ほかの{部分|ぶぶん}といっしょに{働|はたら}くようにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi integrerade en karttjänst i appen.",
+       "ja": "アプリに{地図|ちず}サービスを{組|く}み{込|こ}みました。"
+      },
+      {
+       "sv": "Bokningssystemet är integrerat med kassan.",
+       "ja": "{予約|よやく}システムはレジと{連携|れんけい}しています。"
+      }
+     ],
+     "labelSv": "göra till en del av",
+     "collocations": [
+      "integrera … i …",
+      "integrera med …",
+      "väl integrerad"
+     ],
+     "explanation": {
+      "sv": "Att integrera något är att ta in det i en helhet, så att delarna fungerar som en. Man integrerar en betaltjänst i en butik på nätet eller två system med varandra. Ordet används också om människor som blir en del av ett samhälle, och i matematiken betyder det att räkna ut en integral. Substantivet är integration.",
+      "ja": "「integrera」は、{何|なに}かを{全体|ぜんたい}に{組|く}み{込|こ}んで、{部分|ぶぶん}どうしが{一|ひと}つとして{働|はたら}くようにすることです。ネットショップに{決済|けっさい}サービスを{組|く}み{込|こ}んだり、{二|ふた}つのシステムを{連携|れんけい}させたりするときに{使|つか}います。{人|ひと}が{社会|しゃかい}の{一員|いちいん}になることや、{数学|すうがく}で{積分|せきぶん}することにも{使|つか}います。{名詞|めいし}は「integration」です。"
+     },
+     "frame": {
+      "subject": "Vi",
+      "complement": "en karttjänst"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.integrationskonstant",

@@ -1,0 +1,172 @@
+{
+ "id": "m.sokning-och-sortering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Sökning och sortering",
+ "titleJa": "{検索|けんさく}と{並|なら}べ{替|か}え",
+ "descriptionSv": "Hur man söker och sorterar i appar och program: hur man får fram rätt träffar, hur resultat ordnas efter relevans, pris eller datum, och hur man berättar var något hamnar i en lista.",
+ "descriptionJa": "アプリやプログラムで{検索|けんさく}したり{並|なら}べ{替|か}えたりする{方法|ほうほう}を{学|まな}びます。{正|ただ}しい{検索結果|けんさくけっか}の{出|だ}し{方|かた}、{結果|けっか}を{関連度|かんれんど}、{値段|ねだん}、{日付|ひづけ}で{並|なら}べる{方法|ほうほう}、そしてリストのどこに{何|なに}が{来|く}るかの{言|い}い{方|かた}を{学|まな}びます。",
+ "categoryId": "R07-A02-T04",
+ "tags": [
+  "programmering",
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.datastrukturer"
+ ],
+ "related": [],
+ "recommendedOrder": 3842,
+ "words": [
+  {
+   "senseId": "s.sökord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökfält.1",
+   "active": false
+  },
+  {
+   "senseId": "s.söka-igenom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.träff.2",
+   "active": true
+  },
+  {
+   "senseId": "s.sökresultat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sökbar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.relevans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filtrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.i-stigande-ordning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-fallande-ordning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.i-omvänd-ordning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kronologisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hamna.2",
+   "active": true
+  },
+  {
+   "senseId": "s.sökhistorik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-plats.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En begagnad cykel",
+  "paragraphs": [
+   "Omar letar efter en begagnad cykel i en app där man köper och säljer saker. Han skriver sökordet ”cykel” i sökfältet. Appen söker igenom flera tusen annonser och visar att det finns 2 300 träffar.",
+   "– Det är för många sökresultat, säger han till sin kollega Emma. Hon arbetar som programmerare och vet hur appen fungerar. – Först visas annonserna efter relevans. Appen gissar vad som passar dig bäst. Men du kan filtrera och bara visa cyklar i din stad.",
+   "Omar väljer att sortera efter pris, i stigande ordning. Då hamnar den billigaste cykeln först. Sedan provar han i fallande ordning, och de dyraste cyklarna hamnar först. – Kan man se de nyaste annonserna först? frågar han. – Ja, välj datum. Annars visas de i kronologisk ordning, med den äldsta först. Nu visas de i omvänd ordning, säger Emma.",
+   "Emma berättar att appen sorterar med en algoritm. Den jämför två annonser i taget och låter dem byta plats om de står i fel ordning. – Det går fort, eftersom alla annonser är sökbara i en stor databas.",
+   "På kvällen öppnar Omar appen igen. Hans sökhistorik visar alla sökningar från dagen. Han klickar på den sista sökningen och hittar en röd cykel för 900 kronor. Nästa dag köper han den."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många träffar får Omar först?",
+    "options": [
+     "2 300",
+     "900",
+     "23",
+     "230"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Appen söker igenom flera tusen annonser och visar att det finns 2 300 träffar.",
+    "explanationJa": "2 300{件|けん}の{検索結果|けんさくけっか}が{表示|ひょうじ}されます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad händer när Omar sorterar efter pris i stigande ordning?",
+    "options": [
+     "Den dyraste cykeln hamnar först",
+     "Den billigaste cykeln hamnar först",
+     "De nyaste annonserna hamnar först",
+     "Bara cyklar i hans stad visas"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Omar väljer att sortera efter pris, i stigande ordning. Då hamnar den billigaste cykeln först.",
+    "explanationJa": "{一番|いちばん}{安|やす}い{自転車|じてんしゃ}が{最初|さいしょ}に{来|き}ます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför visar appen annonserna efter relevans först?",
+    "options": [
+     "Den gissar vad som passar Omar bäst",
+     "De billigaste annonserna kommer först",
+     "Emma har bestämt det",
+     "Omar har filtrerat"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "– Först visas annonserna efter relevans. Appen gissar vad som passar dig bäst.",
+    "explanationJa": "アプリがオマルに{一番|いちばん}{合|あ}うものを{推測|すいそく}するからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Algoritmen låter två annonser byta plats om de står i fel ordning.",
+    "correct": true,
+    "explanationSv": "Den jämför två annonser i taget och låter dem byta plats om de står i fel ordning.",
+    "explanationJa": "{二|ふた}つの{広告|こうこく}を{比|くら}べて、{順番|じゅんばん}が{違|ちが}えば{入|い}れ{替|か}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Omar måste skriva sökordet en gång till på kvällen.",
+    "correct": false,
+    "explanationSv": "Hans sökhistorik visar alla sökningar från dagen. Han klickar på den sista sökningen …",
+    "explanationJa": "{検索履歴|けんさくりれき}から{最後|さいご}の{検索|けんさく}をクリックするだけです。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur ni söker och sorterar på nätet.",
+  "discussionPoints": [
+   "Vad söker du oftast efter på nätet eller i appar?",
+   "Sorterar du hellre efter pris, relevans eller datum när du handlar på nätet? Varför?",
+   "Brukar du titta i din sökhistorik eller rensa den?",
+   "Har du någon gång hamnat på en helt annan sida än du tänkt dig när du sökt?"
+  ]
+ },
+ "standard": 2
+}

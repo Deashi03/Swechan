@@ -186,6 +186,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.55 – Datorer & internet (klar)
 - 42 nya moduler i Teknik & digital värld → Datorer & internet, de första enligt standard 2 (kvalitetskontraktet), med 263 nya ordbilder varav 83 rörliga. Alla modulord har bild.
 
+## v0.56 – Programmering & artificiell intelligens (klar)
+- 42 nya moduler i Teknik & digital värld → Programmering & artificiell intelligens enligt standard 2, med 269 nya ordbilder varav 47 rörliga. Alla modulord har bild; *programmering* är inte längre modulord.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

@@ -1,0 +1,182 @@
+{
+ "id": "m.neurala-natverk",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Neurala nätverk",
+ "titleJa": "ニューラルネットワーク",
+ "descriptionSv": "Hur ett neuralt nätverk är uppbyggt och hur det skiljer sig från hjärnan: hur neuroner i lager skickar tal till varandra, vad vikterna gör och varför stora nätverk kan vara svåra att förstå.",
+ "descriptionJa": "ニューラルネットワークのしくみと{脳|のう}との{違|ちが}い：{層|そう}になったニューロンがどのように{数|かず}を{送|おく}り{合|あ}うか、{重|おも}みは{何|なに}をするのか、そしてなぜ{大|おお}きなネットワークは{理解|りかい}しにくいのかを{学|まな}びます。",
+ "categoryId": "R07-A02-T05",
+ "tags": [
+  "programmering",
+  "AI",
+  "maskininlärning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.overanpassning"
+ ],
+ "related": [],
+ "recommendedOrder": 3856,
+ "words": [
+  {
+   "senseId": "s.hjärna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nervcell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inspirera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.efterlikna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.neuralt-nätverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.neuron.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lager-förråd.3",
+   "active": true
+  },
+  {
+   "senseId": "s.dold.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vikt.4",
+   "active": true
+  },
+  {
+   "senseId": "s.förstärka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försvaga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-vidare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beräkning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.djupinlärning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svart-låda.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En kväll om neurala nätverk",
+  "paragraphs": [
+   "På stadsbiblioteket i Malmö pratar forskaren Lena om neurala nätverk en kväll. Hon börjar med en bild av en hjärna. – Hjärnan består av ungefär 86 miljarder nervceller, säger hon. De första neurala nätverken var inspirerade av dem, men de efterliknar bara hjärnan på ett mycket enkelt sätt.",
+   "Ett neuralt nätverk består av många neuroner i lager. Det första lagret tar emot indata, till exempel alla punkter i en bild. Det sista lagret ger utdata, till exempel ordet ”hund”. Mellan dem finns dolda lager, som man inte ser utifrån.",
+   "Varje neuron tar emot tal från neuronerna i lagret före. Talen räknas ihop med olika vikter. En stor vikt förstärker signalen, och en liten vikt försvagar den. Sedan ska neuronen skicka vidare ett nytt tal till nästa lager. Varje beräkning är enkel, men det blir väldigt många.",
+   "– Djupinlärning betyder att nätverket har många lager, säger Lena. Med djupinlärning har datorer blivit bra på att känna igen bilder, tal och språk.",
+   "Takeshi i publiken räcker upp handen: – Vet ni varför nätverket svarar som det gör? Lena skakar på huvudet. – Inte alltid. Med miljarder vikter är ett stort nätverk ofta en svart låda. Vi ser vad som går in och vad som kommer ut, men inte varför."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad var de första neurala nätverken inspirerade av?",
+    "options": [
+     "Datorer på internet",
+     "Fåglar som sjunger",
+     "Nervcellerna i hjärnan",
+     "Bilder av hundar"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De första neurala nätverken var inspirerade av dem …",
+    "explanationJa": "{脳|のう}の{神経細胞|しんけいさいぼう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var finns de dolda lagren?",
+    "options": [
+     "Mellan det första och det sista lagret",
+     "Före det första lagret",
+     "I hjärnan",
+     "I publiken"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Mellan dem finns dolda lager, som man inte ser utifrån.",
+    "explanationJa": "{最初|さいしょ}の{層|そう}と{最後|さいご}の{層|そう}の{間|あいだ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör en stor vikt med signalen?",
+    "options": [
+     "Den försvagar den",
+     "Den tar bort den",
+     "Den skickar den tillbaka",
+     "Den förstärker den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En stor vikt förstärker signalen …",
+    "explanationJa": "{信号|しんごう}を{強|つよ}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Djupinlärning betyder att nätverket har få lager.",
+    "correct": false,
+    "explanationSv": "– Djupinlärning betyder att nätverket har många lager …",
+    "explanationJa": "{層|そう}が{多|おお}いという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lena menar att man alltid kan förklara varför ett stort nätverk svarar som det gör.",
+    "correct": false,
+    "explanationSv": "– Inte alltid. Med miljarder vikter är ett stort nätverk ofta en svart låda.",
+    "explanationJa": "いつも{説明|せつめい}できるわけではありません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Den mänskliga hjärnan har ungefär 86 miljarder nervceller.",
+    "source": "Azevedo m.fl. (2009), Journal of Comparative Neurology; Nationalencyklopedin, uppslagsordet hjärna",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Artificiella neurala nätverk består av enkla enheter i lager som är kopplade med vikter, och djupinlärning betyder nätverk med många lager.",
+    "source": "Nationalencyklopedin, uppslagsorden neuronnät och djupinlärning",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hjärnan, neurala nätverk och om att förstå hur AI fungerar.",
+  "discussionPoints": [
+   "På vilka sätt är ett neuralt nätverk likt hjärnan, och på vilka sätt är det olikt?",
+   "Vilka saker kan datorer göra i dag tack vare djupinlärning?",
+   "Är det ett problem att stora modeller är svarta lådor? Varför?",
+   "Skulle du vilja lyssna på en forskare som pratar om AI? Vad skulle du fråga?"
+  ]
+ },
+ "standard": 2
+}

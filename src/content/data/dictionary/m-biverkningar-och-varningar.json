@@ -311,8 +311,49 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.beroende.3",
+     "ja": "（ソフトウェアの）{依存|いぞん}パッケージ、{依存関係|いぞんかんけい}",
+     "defSv": "Ett paket eller bibliotek som ett program behöver för att fungera.",
+     "defJa": "プログラムが{動|うご}くために{必要|ひつよう}なパッケージやライブラリ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Appen har tjugo beroenden.",
+       "ja": "そのアプリには{依存|いぞん}パッケージが{二十|にじゅう}あります。"
+      },
+      {
+       "sv": "Ju fler beroenden ett program har, desto mer kan gå sönder.",
+       "ja": "プログラムの{依存関係|いぞんかんけい}が{多|おお}ければ{多|おお}いほど、{壊|こわ}れる{可能性|かのうせい}のある{部分|ぶぶん}が{増|ふ}えます。"
+      }
+     ],
+     "labelSv": "i programvara",
+     "collocations": [
+      "ett beroende till …",
+      "uppdatera beroenden",
+      "färre beroenden"
+     ],
+     "explanation": {
+      "sv": "Ett beroende är ett paket som ens eget program inte klarar sig utan. Om paketet slutar fungera eller får ett säkerhetsproblem påverkas också programmet. Därför försöker man ha så få beroenden som möjligt. Ordet används annars om att vara beroende av något, till exempel av sina föräldrar.",
+      "ja": "「beroende」は、{自分|じぶん}のプログラムがそれなしでは{動|うご}かないパッケージのことです。そのパッケージが{動|うご}かなくなったり、セキュリティの{問題|もんだい}が{出|で}たりすると、プログラムにも{影響|えいきょう}します。そのため、{依存|いぞん}パッケージはできるだけ{少|すく}なくしようとします。ふだんは、{親|おや}に{頼|たよ}るなど、{何|なに}かに{依存|いぞん}することにも{使|つか}う{言葉|ことば}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.beroendeframkallande",

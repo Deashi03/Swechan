@@ -1,0 +1,168 @@
+{
+ "id": "m.autentisering-och-auktorisering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Autentisering och auktorisering",
+ "titleJa": "{認証|にんしょう}と{認可|にんか}",
+ "descriptionSv": "Hur ett system skyddar sina uppgifter: hur det kontrollerar vem som loggar in, hur det bestämmer vad varje användare får göra och hur man förhindrar att obehöriga tar sig in.",
+ "descriptionJa": "システムがデータをどう{守|まも}るか：ログインするのがだれかをどう{確|たし}かめるか、それぞれの{利用者|りようしゃ}が{何|なに}をしてよいかをどう{決|き}めるか、そして{権限|けんげん}のない{人|ひと}の{侵入|しんにゅう}をどう{防|ふせ}ぐかを{学|まな}びます。",
+ "categoryId": "R07-A02-T03",
+ "tags": [
+  "programmering",
+  "teknik",
+  "säkerhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.databaser"
+ ],
+ "related": [],
+ "recommendedOrder": 3834,
+ "words": [
+  {
+   "senseId": "s.logga-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inloggningsuppgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.autentisering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.auktorisering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.behörighet.2",
+   "active": true
+  },
+  {
+   "senseId": "s.session.3",
+   "active": true
+  },
+  {
+   "senseId": "s.logga-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hackare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kapa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.spärra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.intrång.2",
+   "active": false
+  },
+  {
+   "senseId": "s.åtkomst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.administratör.2",
+   "active": true
+  },
+  {
+   "senseId": "s.obehörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lösenordshanterare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem är du, och vad får du göra?",
+  "paragraphs": [
+   "Sofia arbetar med ett system där lärare skriver in betyg och föräldrar kan se om deras barn har varit borta från skolan. Hon har ansvar för säkerheten. – Det finns två frågor som vi alltid ställer, säger hon. Vem är du? Och vad får du göra?",
+   "Den första frågan handlar om autentisering. När någon loggar in kontrollerar systemet inloggningsuppgifterna: användarnamn, lösenord och en kod i mobilen. Den andra frågan handlar om auktorisering. En lärare har behörighet att ändra betyg, men en förälder får bara läsa.",
+   "När man har loggat in startar en session. Om man inte gör något på trettio minuter tar sessionen slut, och man loggas ut automatiskt. – Det är bra om någon glömmer att logga ut på en dator i skolan, förklarar Sofia.",
+   "Förra året försökte en hackare ta sig in. Han hade fått tag i en lärares lösenord och ville kapa hennes konto. Men systemet märkte att någon försökte logga in från ett annat land och spärrade kontot. Intrånget stoppades innan han fick åtkomst till några uppgifter.",
+   "Bara två administratörer kan ge nya användare behörighet. – Obehöriga ska inte kunna se någonting, säger Sofia. Hon tipsar också alla lärare om att använda en lösenordshanterare, så att de kan ha långa och olika lösenord på alla sina konton."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilka två frågor ställer Sofia alltid?",
+    "options": [
+     "Var bor du, och hur gammal är du?",
+     "Vem är du, och vad får du göra?",
+     "Vilket barn har du, och vilken klass går det i?",
+     "Har du en mobil, och har du en dator?"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Vem är du? Och vad får du göra?",
+    "explanationJa": "「あなたはだれ？」と「あなたは{何|なに}をしてよい？」です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är skillnaden mellan en lärare och en förälder i systemet?",
+    "options": [
+     "Läraren får ändra betyg, föräldern får bara läsa",
+     "Föräldern får ändra betyg, läraren får bara läsa",
+     "Båda får ändra betyg",
+     "Ingen av dem får se betygen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En lärare har behörighet att ändra betyg, men en förälder får bara läsa.",
+    "explanationJa": "{先生|せんせい}は{成績|せいせき}を{変更|へんこう}でき、{親|おや}は{見|み}るだけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad händer om man inte gör något på trettio minuter?",
+    "options": [
+     "Kontot spärras för alltid",
+     "Sessionen tar slut och man loggas ut",
+     "Lösenordet byts automatiskt",
+     "Datorn stängs av"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om man inte gör något på trettio minuter tar sessionen slut, och man loggas ut automatiskt.",
+    "explanationJa": "セッションが{終|お}わり、{自動的|じどうてき}にログアウトされます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Hackaren fick se elevernas betyg.",
+    "correct": false,
+    "explanationSv": "Intrånget stoppades innan han fick åtkomst till några uppgifter.",
+    "explanationJa": "{情報|じょうほう}にアクセスされる{前|まえ}に{止|と}められました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Systemet tyckte att det var konstigt att någon loggade in från ett annat land.",
+    "correct": true,
+    "explanationSv": "Men systemet märkte att någon försökte logga in från ett annat land och spärrade kontot.",
+    "explanationJa": "ほかの{国|くに}からのログインに{気|き}づいて、アカウントを{停止|ていし}しました。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om inloggning, lösenord och säkerhet på nätet.",
+  "discussionPoints": [
+   "Hur många konton tror du att du har på olika webbplatser och i olika appar?",
+   "Hur loggar du helst in: med lösenord, kod i mobilen eller ansiktet?",
+   "Känner du någon som har blivit kapad på sociala medier? Vad hände?",
+   "Vem tycker du ska ha behörighet att se dina uppgifter på jobbet eller i skolan?"
+  ]
+ },
+ "standard": 2
+}

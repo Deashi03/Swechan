@@ -1,0 +1,180 @@
+{
+ "id": "m.taligenkanning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Taligenkänning",
+ "titleJa": "{音声認識|おんせいにんしき}",
+ "descriptionSv": "Hur man talar om teknik som förstår och skapar tal: att styra med rösten, att göra om tal till text och text till tal, och varför uttal och omgivning påverkar hur bra det fungerar.",
+ "descriptionJa": "{話|はな}し{言葉|ことば}を{理解|りかい}したり{作|つく}ったりする{技術|ぎじゅつ}についてどう{話|はな}すか：{声|こえ}での{操作|そうさ}、{話|はな}し{言葉|ことば}を{文字|もじ}に、{文字|もじ}を{声|こえ}にすること、そして{発音|はつおん}や{周|まわ}りの{環境|かんきょう}がうまく{働|はたら}くかどうかにどう{影響|えいきょう}するかを{学|まな}びます。",
+ "categoryId": "R07-A02-T06",
+ "tags": [
+  "programmering",
+  "teknik",
+  "AI"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.bildgenerering"
+ ],
+ "related": [],
+ "recommendedOrder": 3865,
+ "words": [
+  {
+   "senseId": "s.taligenkänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röstassistent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röstkommando.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikrofon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spela-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljudfil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transkribera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diktera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.textning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talsyntes.1",
+   "active": false
+  },
+  {
+   "senseId": "s.läsa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uttal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dialekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brytning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.bakgrundsljud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mumla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.känna-igen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.missförstå.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Appen som lärde sig dialekter",
+  "paragraphs": [
+   "Takeshi har bott i Lund i fem år. Han talar bra svenska, men med lätt brytning. På morgonen använder han röstkommandon: ”Sätt på radion” och ”Vad blir vädret i dag?”. Röstassistenten i köket förstår honom nästan alltid.",
+   "På jobbet är det svårare. Takeshi arbetar på ett företag som gör appar för vården, och han testar deras nya funktion för taligenkänning. Sjuksköterskor ska kunna diktera anteckningar i telefonen i stället för att skriva. Appen gör om talet till text på några sekunder.",
+   "Testerna visar flera problem. Om det finns mycket bakgrundsljud, eller om någon mumlar, missförstår appen ofta. Den har också svårt med vissa dialekter. När en sjuksköterska från Skåne sa ”sjukhuset”, skrev appen ett helt annat ord. Uttalet av vissa ljud är helt olika i olika delar av landet.",
+   "Därför har gruppen spelat in hundratals personer från hela Sverige. De har bett dem tala långsamt och snabbt, nära och långt från mikrofonen. En människa transkriberar och kontrollerar varje ljudfil. Sedan används materialet för att förbättra appen, så att den känner igen fler sätt att tala.",
+   "Takeshis kollega Ida har dyslexi. Hon använder talsyntes, så att datorn läser upp långa texter för henne. På möten slår hon på automatisk textning. – För mig är det här inte bara en rolig funktion, säger hon. Det är skillnaden mellan att hänga med och att inte göra det."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad använder Takeshi röstkommandon till på morgonen?",
+    "options": [
+     "Att diktera mejl till chefen",
+     "Att boka tid hos läkaren",
+     "Att läsa nyheter på japanska",
+     "Att sätta på radion och fråga om vädret"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På morgonen använder han röstkommandon: ”Sätt på radion” och ”Vad blir vädret i dag?”.",
+    "explanationJa": "ラジオをつけたり、{天気|てんき}を{聞|き}いたりするのに{使|つか}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "När missförstår appen ofta?",
+    "options": [
+     "När man talar japanska",
+     "När det finns mycket bakgrundsljud",
+     "När telefonen är ny",
+     "När man skriver för hand"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om det finns mycket bakgrundsljud, eller om någon mumlar, missförstår appen ofta.",
+    "explanationJa": "{周|まわ}りの{音|おと}が{多|おお}いとき、よく{誤解|ごかい}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör en människa med varje ljudfil?",
+    "options": [
+     "Tar bort den direkt",
+     "Säljer den till ett annat företag",
+     "Spelar den på radio",
+     "Transkriberar och kontrollerar den"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En människa transkriberar och kontrollerar varje ljudfil.",
+    "explanationJa": "{人|ひと}が{文字|もじ}に{起|お}こして{確認|かくにん}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Takeshi talar svenska utan någon brytning alls.",
+    "correct": false,
+    "explanationSv": "Han talar bra svenska, men med lätt brytning.",
+    "explanationJa": "{少|すこ}しなまりがあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "För Ida är talsyntes och textning viktiga hjälpmedel.",
+    "correct": true,
+    "explanationSv": "För mig är det här inte bara en rolig funktion … Det är skillnaden mellan att hänga med och att inte göra det.",
+    "explanationJa": "イーダにとっては、ついていけるかどうかを{分|わ}ける{大切|たいせつ}な{道具|どうぐ}です。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att styra apparater med rösten och om när datorn förstår eller missförstår.",
+  "discussionPoints": [
+   "Använder du röstkommandon eller dikterar du meddelanden? På vilket språk?",
+   "Förstår taligenkänningen din svenska? Vad är svårt för den?",
+   "När är det bra att få en text uppläst?",
+   "Vilka dialekter i Sverige tycker du är svårast att förstå?"
+  ]
+ },
+ "standard": 2
+}

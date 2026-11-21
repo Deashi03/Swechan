@@ -1,0 +1,268 @@
+{
+ "entries": [
+  {
+   "id": "e.tidskomplexitet",
+   "lemma": "tidskomplexitet",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "tidskomplexitet",
+    "defSg": "tidskomplexiteten",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.tidskomplexitet.1",
+     "ja": "{時間計算量|じかんけいさんりょう}",
+     "defSv": "Hur mycket längre tid en algoritm behöver när indata blir större.",
+     "defJa": "{入力|にゅうりょく}データが{大|おお}きくなると、アルゴリズムにどのくらい{多|おお}くの{時間|じかん}がかかるようになるか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vilken tidskomplexitet har din sorteringsalgoritm?",
+       "ja": "あなたの{並|なら}べ{替|か}えアルゴリズムの{時間計算量|じかんけいさんりょう}はどれくらいですか。"
+      },
+      {
+       "sv": "Den nya algoritmen har lägre tidskomplexitet än den gamla.",
+       "ja": "{新|あたら}しいアルゴリズムは{古|ふる}いものより{時間計算量|じかんけいさんりょう}が{小|ちい}さいです。"
+      }
+     ],
+     "collocations": [
+      "låg tidskomplexitet",
+      "räkna ut tidskomplexiteten",
+      "tidskomplexiteten är linjär"
+     ],
+     "explanation": {
+      "sv": "Tidskomplexitet handlar inte om hur många sekunder ett program tar på din dator, utan om hur tiden växer när indata blir större. Om listan blir tio gånger längre, tar det då tio gånger längre tid, hundra gånger längre tid eller nästan lika lång tid? Körtiden är den verkliga tiden en gång, medan tidskomplexiteten beskriver hur algoritmen beter sig när datamängden växer. Komplexitet kan också gälla minnet.",
+      "ja": "{時間計算量|じかんけいさんりょう}とは、プログラムがあなたのコンピューターで{何秒|なんびょう}かかるかではなく、{入力|にゅうりょく}データが{大|おお}きくなったときに{時間|じかん}がどう{増|ふ}えるかを{表|あらわ}すものです。リストが10{倍|ばい}{長|なが}くなったら、{時間|じかん}は10{倍|ばい}かかるのか、100{倍|ばい}かかるのか、それともほとんど{同|おな}じなのか、ということです。「körtid（{実行時間|じっこうじかん}）」は{一回|いっかい}の{実際|じっさい}の{時間|じかん}ですが、{時間計算量|じかんけいさんりょう}はデータが{増|ふ}えたときのアルゴリズムのふるまいを{表|あらわ}します。{計算量|けいさんりょう}はメモリについて{言|い}うこともあります。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.ta-tid-på",
+   "lemma": "ta tid på",
+   "pos": "verb",
+   "level": "B1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "ta tid på",
+    "present": "tar tid på",
+    "past": "tog tid på",
+    "supine": "tagit tid på",
+    "imperative": "ta tid på",
+    "group": "4"
+   },
+   "senses": [
+    {
+     "id": "s.ta-tid-på.1",
+     "ja": "（{何|なに}かにかかる）{時間|じかん}を{計|はか}る",
+     "defSv": "Mäta hur lång tid något tar, till exempel med ett stoppur.",
+     "defJa": "ストップウォッチなどで、{何|なに}かにどのくらい{時間|じかん}がかかるかを{計|はか}る。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi tar tid på hur länge programmet kör.",
+       "ja": "プログラムがどのくらいの{時間|じかん}{動|うご}くかを{計|はか}ります。"
+      }
+     ],
+     "usageNote": {
+      "sv": "Skillnad: det tar tid betyder att något behöver mycket tid, men ta tid på betyder att man mäter tiden.",
+      "ja": "{違|ちが}いに{注意|ちゅうい}：「det tar tid」は「{時間|じかん}がかかる」、「ta tid på」は「{時間|じかん}を{計|はか}る」という{意味|いみ}です。"
+     },
+     "frame": {
+      "subject": "Vi",
+      "complement": "programmet"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.konstant-adj",
+   "lemma": "konstant",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "konstant",
+    "neuter": "konstant",
+    "plural": "konstanta",
+    "definite": "konstanta"
+   },
+   "senses": [
+    {
+     "id": "s.konstant-adj.1",
+     "ja": "{一定|いってい}の、{変|か}わらない",
+     "defSv": "Som inte ändras, utan är lika stor hela tiden.",
+     "defJa": "{変|か}わらず、いつも{同|おな}じ{大|おお}きさである。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Bilen höll en konstant fart.",
+       "ja": "{車|くるま}は{一定|いってい}の{速度|そくど}で{走|はし}っていました。"
+      },
+      {
+       "sv": "Att hämta det första elementet tar konstant tid.",
+       "ja": "{最初|さいしょ}の{要素|ようそ}を{取|と}り{出|だ}すのは{定数時間|ていすうじかん}です。"
+      }
+     ],
+     "collocations": [
+      "konstant tid",
+      "en konstant fart",
+      "hålla konstant"
+     ],
+     "explanation": {
+      "sv": "Konstant betyder att något är lika stort hela tiden. I vardagen talar man om konstant fart, konstant temperatur eller ett konstant ljud. När man skriver program säger man att en algoritm tar konstant tid när den är lika snabb oavsett hur mycket data det finns, till exempel när man tar det första elementet i en lista. Substantivet en konstant är ett tal som inte ändras; adjektivet beskriver något som inte ändras.",
+      "ja": "「konstant」は、いつも{同|おな}じ{大|おお}きさであることです。ふだんは、{一定|いってい}の{速度|そくど}、{一定|いってい}の{温度|おんど}、{絶|た}え{間|ま}ない{音|おと}などについて{言|い}います。プログラミングでは、データがどれだけあっても{同|おな}じ{速|はや}さで{終|お}わるアルゴリズムを「konstant tid（{定数時間|ていすうじかん}）」と{言|い}います。たとえばリストの{最初|さいしょ}の{要素|ようそ}を{取|と}るときです。{名詞|めいし}の「en konstant」は{変|か}わらない{数|かず}（{定数|ていすう}）で、{形容詞|けいようし}は{変|か}わらないものを{説明|せつめい}します。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.logaritmisk",
+   "lemma": "logaritmisk",
+   "pos": "adjective",
+   "level": "C1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "logaritmisk",
+    "neuter": "logaritmiskt",
+    "plural": "logaritmiska",
+    "definite": "logaritmiska"
+   },
+   "senses": [
+    {
+     "id": "s.logaritmisk.1",
+     "ja": "{対数|たいすう}の、{対数的|たいすうてき}な",
+     "defSv": "Som växer långsammare och långsammare: när indata blir dubbelt så stor, behövs bara ett steg till.",
+     "defJa": "だんだんゆっくり{増|ふ}えていく。{入力|にゅうりょく}データが2{倍|ばい}になっても、ステップが{一|ひと}つ{増|ふ}えるだけ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Binär sökning har logaritmisk tidskomplexitet.",
+       "ja": "{二分探索|にぶんたんさく}の{時間計算量|じかんけいさんりょう}は{対数|たいすう}です。"
+      },
+      {
+       "sv": "Kurvan växer logaritmiskt och blir nästan platt till slut.",
+       "ja": "その{曲線|きょくせん}は{対数的|たいすうてき}に{増|ふ}え、{最後|さいご}にはほとんど{平|たい}らになります。"
+      }
+     ],
+     "collocations": [
+      "logaritmisk tid",
+      "växa logaritmiskt",
+      "en logaritmisk skala"
+     ],
+     "explanation": {
+      "sv": "En logaritmisk algoritm halverar problemet i varje steg, som när man letar efter ett ord i en ordbok genom att öppna den på mitten. Med tusen ord behövs ungefär tio steg och med en miljon ord ungefär tjugo. Därför är logaritmiska algoritmer mycket snabba, även med stora datamängder. Motsatsen är exponentiell tillväxt, som går snabbare och snabbare.",
+      "ja": "{対数|たいすう}のアルゴリズムは、{辞書|じしょ}を{真|ま}ん{中|なか}で{開|ひら}いて{言葉|ことば}を{探|さが}すときのように、{一歩|いっぽ}ごとに{問題|もんだい}を{半分|はんぶん}にします。{言葉|ことば}が1000{語|ご}ならおよそ10ステップ、100{万語|まんご}でもおよそ20ステップで{済|す}みます。そのため、{対数|たいすう}のアルゴリズムは{大量|たいりょう}のデータでもとても{速|はや}いのです。その{反対|はんたい}は、どんどん{速|はや}く{増|ふ}える{指数関数的|しすうかんすうてき}な{増加|ぞうか}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.minnesanvändning",
+   "lemma": "minnesanvändning",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "minnesanvändning",
+    "defSg": "minnesanvändningen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.minnesanvändning.1",
+     "ja": "メモリ{使用量|しようりょう}",
+     "defSv": "Hur mycket av datorns minne som ett program använder.",
+     "defJa": "プログラムがコンピューターのメモリをどのくらい{使|つか}っているか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Appens minnesanvändning ökade när man hade använt den länge.",
+       "ja": "アプリを{長|なが}い{間|あいだ}{動|うご}かしていると、メモリ{使用量|しようりょう}が{増|ふ}えました。"
+      },
+      {
+       "sv": "Den nya versionen har lägre minnesanvändning.",
+       "ja": "{新|あたら}しいバージョンは、メモリ{使用量|しようりょう}が{少|すく}なくなっています。"
+      }
+     ],
+     "collocations": [
+      "hög minnesanvändning",
+      "minska minnesanvändningen",
+      "se minnesanvändningen"
+     ],
+     "explanation": {
+      "sv": "Minnesanvändning visar hur mycket plats ett program tar i datorns minne medan det körs. Om ett program har hög minnesanvändning kan datorn bli seg, eftersom andra program inte får plats. Man kan se minnesanvändningen i ett program som visar vad datorn arbetar med. Prestanda är hur bra och snabbt datorn arbetar; minnesanvändning är bara en av sakerna som påverkar den.",
+      "ja": "メモリ{使用量|しようりょう}は、プログラムが{動|うご}いている{間|あいだ}にコンピューターのメモリをどのくらい{占|し}めているかを{表|あらわ}します。メモリ{使用量|しようりょう}が{多|おお}いと、ほかのプログラムが{入|はい}りきらないので、コンピューターの{動|うご}きが{遅|おそ}くなることがあります。メモリ{使用量|しようりょう}は、コンピューターの{作業|さぎょう}を{表示|ひょうじ}するプログラムで{見|み}ることができます。「prestanda（{性能|せいのう}）」はコンピューターがどのくらいよく{速|はや}く{動|うご}くかで、メモリ{使用量|しようりょう}はそれに{影響|えいきょう}するものの{一|ひと}つにすぎません。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

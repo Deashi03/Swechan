@@ -1,0 +1,186 @@
+{
+ "id": "m.klassificering-och-regression",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Klassificering och regression",
+ "titleJa": "{分類|ぶんるい}と{回帰|かいき}",
+ "descriptionSv": "Skillnaden mellan två vanliga uppgifter inom maskininlärning: att välja rätt kategori och att uppskatta ett tal, med exempel från e-post, sjukvård och bostadspriser, och hur man beskriver en trend i ett diagram.",
+ "descriptionJa": "{機械学習|きかいがくしゅう}でよくある{二|ふた}つの{課題|かだい}、つまり{正|ただ}しいカテゴリーを{選|えら}ぶことと{数|かず}を{推定|すいてい}することの{違|ちが}いを、メール、{医療|いりょう}、{住宅価格|じゅうたくかかく}の{例|れい}で{学|まな}び、グラフの{傾向|けいこう}を{説明|せつめい}する{言|い}い{方|かた}も{学|まな}びます。",
+ "categoryId": "R07-A02-T05",
+ "tags": [
+  "programmering",
+  "AI",
+  "maskininlärning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.modeller-och-parametrar"
+ ],
+ "related": [],
+ "recommendedOrder": 3853,
+ "words": [
+  {
+   "senseId": "s.klassificering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klassificera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kategori.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regression.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uppskatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skräppost.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bildigenkänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.röntgenbild.1",
+   "active": false
+  },
+  {
+   "senseId": "s.diagnos.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sannolikhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.linjär.2",
+   "active": true
+  },
+  {
+   "senseId": "s.trend.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kontinuerlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kurva.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gruppera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-in.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kategori eller tal?",
+  "paragraphs": [
+   "Yuki läser datavetenskap i Linköping. I dag handlar föreläsningen om två vanliga uppgifter inom maskininlärning: klassificering och regression. – Vid klassificering ska modellen välja en kategori, säger läraren Anders. Vid regression ska den uppskatta ett tal.",
+   "Anders börjar med ett exempel som alla känner till: skräppost. Ett program klassificerar varje mejl som skräppost eller inte skräppost. Bildigenkänning är också klassificering, men med fler kategorier: hund, katt, cykel, bil och så vidare.",
+   "Sedan visar han en röntgenbild. På flera sjukhus i Sverige hjälper ett program läkarna att hitta cancer på sådana bilder. Programmet ställer ingen diagnos själv. Det säger hur stor sannolikheten är att något är fel, och sedan tittar en läkare på bilden.",
+   "– Och regression? frågar Yuki. Anders visar ett diagram med punkter. Varje punkt är en lägenhet: hur stor den är och vad den kostar. Han drar en rak linje genom punkterna. – Det här är linjär regression, säger han. Linjen visar trenden: större lägenheter kostar mer. Priset är kontinuerligt, det kan vara vilket tal som helst. Ibland passar en kurva bättre än en rak linje.",
+   "Till sist pratar de om att gruppera. Då finns inga kategorier från början. Modellen ska själv dela in till exempel kunder i grupper som liknar varandra. – Ett företag kan gruppera sina kunder så, men det är människor som måste förstå vad grupperna betyder, säger Anders."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska modellen göra vid regression?",
+    "options": [
+     "Uppskatta ett tal",
+     "Välja en kategori",
+     "Hitta skräppost",
+     "Ställa en diagnos"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vid regression ska den uppskatta ett tal.",
+    "explanationJa": "{回帰|かいき}では{数|かず}を{推定|すいてい}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket exempel på klassificering med många kategorier nämner Anders?",
+    "options": [
+     "Skräppost",
+     "Priset på lägenheter",
+     "Bildigenkänning",
+     "Kunder i grupper"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Bildigenkänning är också klassificering, men med fler kategorier …",
+    "explanationJa": "{画像認識|がぞうにんしき}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "inference",
+    "promptSv": "Vem bestämmer till slut om en patient är sjuk?",
+    "options": [
+     "Programmet",
+     "Yuki",
+     "Patienten själv",
+     "En läkare"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Programmet ställer ingen diagnos själv. … och sedan tittar en läkare på bilden.",
+    "explanationJa": "{最後|さいご}に{決|き}めるのは{医者|いしゃ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vid linjär regression drar man en rak linje genom punkterna.",
+    "correct": true,
+    "explanationSv": "Han drar en rak linje genom punkterna. – Det här är linjär regression …",
+    "explanationJa": "まっすぐな{線|せん}を{引|ひ}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "När modellen grupperar kunder finns kategorierna från början.",
+    "correct": false,
+    "explanationSv": "Då finns inga kategorier från början.",
+    "explanationJa": "{最初|さいしょ}はカテゴリーがありません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Klassificering betyder att en modell väljer en kategori, och regression att den uppskattar ett tal; linjär regression drar en rät linje genom datapunkterna.",
+    "source": "Nationalencyklopedin, uppslagsorden maskininlärning och regressionsanalys",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "I svensk sjukvård används och prövas AI-stöd för att granska röntgenbilder, till exempel vid mammografi, men det är läkare som ställer diagnosen.",
+    "source": "Lunds universitet, MASAI-studien (The Lancet Oncology 2023), och Socialstyrelsen",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om program som sorterar och uppskattar saker åt oss.",
+  "discussionPoints": [
+   "Vilka exempel på klassificering har du sett i din vardag?",
+   "Hur bra fungerar filtret för skräppost i din e-post?",
+   "Skulle du lita på ett program som läser röntgenbilder? Varför eller varför inte?",
+   "Vad skulle du vilja uppskatta med regression, till exempel ett pris?"
+  ]
+ },
+ "standard": 2
+}

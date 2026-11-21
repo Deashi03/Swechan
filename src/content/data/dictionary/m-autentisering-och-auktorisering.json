@@ -1,0 +1,291 @@
+{
+ "entries": [
+  {
+   "id": "e.autentisering",
+   "lemma": "autentisering",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "autentisering",
+    "defSg": "autentiseringen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.autentisering.1",
+     "ja": "{認証|にんしょう}、{本人確認|ほんにんかくにん}",
+     "defSv": "Kontroll av att en användare verkligen är den som hon eller han säger sig vara.",
+     "defJa": "{利用者|りようしゃ}が{本当|ほんとう}に{本人|ほんにん}であるかどうかを{確|たし}かめること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Appen använder fingeravtryck för autentisering.",
+       "ja": "そのアプリは{本人確認|ほんにんかくにん}に{指紋|しもん}を{使|つか}います。"
+      },
+      {
+       "sv": "Banken kräver stark autentisering när man betalar stora belopp.",
+       "ja": "{銀行|ぎんこう}は、{高額|こうがく}の{支払|しはら}いをするときに{強力|きょうりょく}な{本人確認|ほんにんかくにん}を{求|もと}めます。"
+      }
+     ],
+     "collocations": [
+      "stark autentisering",
+      "autentisering med …"
+     ],
+     "explanation": {
+      "sv": "Autentisering svarar på frågan ”Vem är du?”. Systemet kontrollerar något som bara du vet, har eller är: ett lösenord, en kod i mobilen eller ditt ansikte. Nästa steg är att kontrollera vad du får göra. Ordet är formellt; i vardagen säger man att man loggar in eller legitimerar sig.",
+      "ja": "「autentisering（{認証|にんしょう}）」は「あなたはだれ？」という{問|と}いに{答|こた}えるものです。システムは、あなただけが{知|し}っているもの、{持|も}っているもの、またはあなた{自身|じしん}の{特徴|とくちょう}を{確認|かくにん}します。パスワード、{携帯|けいたい}に{届|とど}くコード、{顔|かお}などです。{次|つぎ}の{段階|だんかい}は、{何|なに}をしてよいかを{確認|かくにん}することです。かたい{言葉|ことば}で、ふだんは「logga in」や「legitimera sig」と{言|い}います。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "säkerhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.auktorisering",
+   "lemma": "auktorisering",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "auktorisering",
+    "defSg": "auktoriseringen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.auktorisering.1",
+     "ja": "{認可|にんか}、{権限|けんげん}の{付与|ふよ}",
+     "defSv": "Kontroll av vad en användare har rätt att se och göra i ett system.",
+     "defJa": "システムの{中|なか}で{利用者|りようしゃ}が{何|なに}を{見|み}たり{行|おこな}ったりする{権利|けんり}があるかを{確|たし}かめること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "När du har loggat in tar systemet hand om auktoriseringen.",
+       "ja": "ログインしたあと、システムが{権限|けんげん}の{確認|かくにん}を{行|おこな}います。"
+      },
+      {
+       "sv": "Utan rätt auktorisering kan man inte öppna filerna om lönerna.",
+       "ja": "{正|ただ}しい{権限|けんげん}がなければ、{給与|きゅうよ}についてのファイルは{開|ひら}けません。"
+      }
+     ],
+     "collocations": [
+      "auktorisering av användare",
+      "kräva auktorisering"
+     ],
+     "explanation": {
+      "sv": "Auktorisering svarar på frågan ”Vad får du göra?”. När systemet vet vem du är kontrollerar det vilken behörighet du har: en lärare får ändra betyg, en elev får bara läsa sina egna. Skillnaden mot autentisering är alltså att autentisering kontrollerar vem du är, och auktorisering vad du får göra.",
+      "ja": "「auktorisering（{認可|にんか}）」は「あなたは{何|なに}をしてよい？」という{問|と}いに{答|こた}えるものです。システムはあなたがだれかを{知|し}ったうえで、どんな{権限|けんげん}があるかを{確認|かくにん}します。{先生|せんせい}は{成績|せいせき}を{変更|へんこう}でき、{生徒|せいと}は{自分|じぶん}の{成績|せいせき}を{見|み}るだけ、というように。つまり「autentisering（{認証|にんしょう}）」はだれかを{確|たし}かめ、「auktorisering」は{何|なに}をしてよいかを{確|たし}かめます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "säkerhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.session",
+   "lemma": "session",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "session",
+    "defSg": "sessionen",
+    "indefPl": "sessioner",
+    "defPl": "sessionerna"
+   },
+   "senses": [
+    {
+     "id": "s.session.1",
+     "ja": "（{議会|ぎかい}などの）{会期|かいき}",
+     "defSv": "Den tid när ett parlament eller en stor organisation har sina möten.",
+     "defJa": "{議会|ぎかい}や{大|おお}きな{組織|そしき}が{会議|かいぎ}を{開|ひら}いている{期間|きかん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "FN:s generalförsamling har sin session i september.",
+       "ja": "{国連総会|こくれんそうかい}は9{月|がつ}に{会期|かいき}を{迎|むか}えます。"
+      }
+     ],
+     "labelSv": "möten",
+     "tags": [
+      "samhälle"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "C1"
+    },
+    {
+     "id": "s.session.2",
+     "ja": "セッション、（{活動|かつどう}の）{一回|いっかい}",
+     "defSv": "Ett tillfälle då man gör något under en bestämd tid, till exempel tränar eller spelar in musik.",
+     "defJa": "トレーニングや{音楽|おんがく}の{録音|ろくおん}など、{決|き}まった{時間|じかん}に{何|なに}かをする{機会|きかい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Gruppen spelade in musik under en lång session.",
+       "ja": "グループは{長|なが}いセッションで{音楽|おんがく}を{録音|ろくおん}しました。"
+      }
+     ],
+     "labelSv": "tillfälle",
+     "tags": [
+      "fritid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    },
+    {
+     "id": "s.session.3",
+     "ja": "セッション（ログイン{中|ちゅう}の{期間|きかん}）",
+     "defSv": "Den tid som en användare är inloggad i ett system, från det att man loggar in tills man loggar ut.",
+     "defJa": "{利用者|りようしゃ}がシステムにログインしてからログアウトするまでの{時間|じかん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Din session har gått ut. Logga in igen.",
+       "ja": "セッションの{有効期限|ゆうこうきげん}が{切|き}れました。もう{一度|いちど}ログインしてください。"
+      },
+      {
+       "sv": "Av säkerhetsskäl avslutas sessionen efter en kvart.",
+       "ja": "{安全|あんぜん}のため、セッションは{十五分|じゅうごふん}で{終了|しゅうりょう}します。"
+      }
+     ],
+     "labelSv": "inloggad",
+     "collocations": [
+      "sessionen går ut",
+      "starta en session",
+      "avsluta sessionen"
+     ],
+     "explanation": {
+      "sv": "En session börjar när du loggar in och slutar när du loggar ut eller när systemet stänger den. Under sessionen kommer webbplatsen ihåg vem du är, så att du inte behöver logga in på varje sida. Många banker och myndigheter avslutar sessionen efter en stund om du inte gör något, så att ingen annan kan använda den. Meddelandet ”Din session har gått ut” betyder att du måste logga in igen.",
+      "ja": "「session（セッション）」は、ログインしたときに{始|はじ}まり、ログアウトしたときかシステムが{閉|と}じたときに{終|お}わります。セッションの{間|あいだ}、ウェブサイトはあなたがだれかを{覚|おぼ}えているので、ページごとにログインする{必要|ひつよう}はありません。{多|おお}くの{銀行|ぎんこう}や{役所|やくしょ}は、{何|なに}もしない{時間|じかん}がしばらく{続|つづ}くとセッションを{終|お}わらせ、ほかの{人|ひと}が{使|つか}えないようにしています。「Din session har gått ut」という{表示|ひょうじ}は、もう{一度|いちど}ログインする{必要|ひつよう}があるという{意味|いみ}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "säkerhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.kapa",
+   "lemma": "kapa",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "kapa",
+    "present": "kapar",
+    "past": "kapade",
+    "supine": "kapat",
+    "imperative": "kapa",
+    "group": "1"
+   },
+   "senses": [
+    {
+     "id": "s.kapa.1",
+     "ja": "{切|き}り{落|お}とす、{切断|せつだん}する",
+     "defSv": "Skära eller såga av något, till exempel en bräda eller ett rep.",
+     "defJa": "{板|いた}やロープなどを{切|き}ったりのこぎりで{切|き}ったりして{短|みじか}くする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han kapade brädan så att den passade.",
+       "ja": "{彼|かれ}は{板|いた}がぴったり{合|あ}うように{切|き}り{落|お}としました。"
+      }
+     ],
+     "labelSv": "skära av",
+     "tags": [
+      "bygga"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.kapa.2",
+     "ja": "{乗|の}っ{取|と}る",
+     "defSv": "Ta kontrollen över något som tillhör någon annan, till exempel ett flygplan eller ett konto på nätet.",
+     "defJa": "ほかの{人|ひと}のもの、たとえば{飛行機|ひこうき}やネットのアカウントを{奪|うば}って{支配|しはい}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Någon har kapat mitt konto och skickar konstiga meddelanden.",
+       "ja": "だれかがわたしのアカウントを{乗|の}っ{取|と}って、おかしなメッセージを{送|おく}っています。"
+      },
+      {
+       "sv": "Hennes konto blev kapat efter att hon klickat på en falsk länk.",
+       "ja": "{偽|にせ}のリンクをクリックしたあと、{彼女|かのじょ}のアカウントは{乗|の}っ{取|と}られました。"
+      }
+     ],
+     "labelSv": "ta kontrollen",
+     "collocations": [
+      "kapa ett konto",
+      "kontot blev kapat",
+      "kapa ett flygplan"
+     ],
+     "explanation": {
+      "sv": "Att kapa betyder att någon tar över något och styr det mot ägarens vilja. Förr talade man mest om att kapa flygplan, men i dag hör man oftast om kapade konton på sociala medier eller mejl. Den som kapar ett konto kan låtsas vara ägaren och be vänner om pengar. Man säger att kontot blev kapat.",
+      "ja": "「kapa」は、だれかが{持|も}ち{主|ぬし}の{意思|いし}に{反|はん}して{何|なに}かを{奪|うば}い、{操|あやつ}ることです。{昔|むかし}は{飛行機|ひこうき}の{乗|の}っ{取|と}りについてよく{言|い}いましたが、{今|いま}はSNSやメールのアカウントの{乗|の}っ{取|と}りの{話|はなし}がいちばんよく{聞|き}かれます。アカウントを{乗|の}っ{取|と}った{人|ひと}は{持|も}ち{主|ぬし}のふりをして、{友|とも}だちにお{金|かね}を{頼|たの}むことがあります。「kontot blev kapat（アカウントが{乗|の}っ{取|と}られた）」のように{言|い}います。"
+     },
+     "frame": {
+      "subject": "Någon",
+      "complement": "kontot"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "säkerhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

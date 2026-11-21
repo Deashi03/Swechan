@@ -1,0 +1,319 @@
+{
+ "entries": [
+  {
+   "id": "e.modul",
+   "lemma": "modul",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "modul",
+    "defSg": "modulen",
+    "indefPl": "moduler",
+    "defPl": "modulerna"
+   },
+   "senses": [
+    {
+     "id": "s.modul.1",
+     "ja": "モジュール、ユニット（{組|く}み{立|た}て{部品|ぶひん}）",
+     "defSv": "En färdig del som man kan sätta ihop med andra delar, till exempel i ett hus eller en möbel.",
+     "defJa": "{家|いえ}や{家具|かぐ}などで、ほかの{部分|ぶぶん}と{組|く}み{合|あ}わせられる{完成|かんせい}した{部分|ぶぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Huset byggdes av moduler som kom färdiga på en lastbil.",
+       "ja": "その{家|いえ}は、トラックで{完成品|かんせいひん}のまま{運|はこ}ばれてきたユニットで{建|た}てられました。"
+      }
+     ],
+     "labelSv": "byggdel",
+     "tags": [
+      "bygga",
+      "teknik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.modul.2",
+     "ja": "モジュール（プログラムの{部品|ぶひん}）",
+     "defSv": "En del av ett program som har en egen uppgift och som man kan skriva och ändra för sig.",
+     "defJa": "{独自|どくじ}の{役割|やくわり}をもち、{単独|たんどく}で{書|か}いたり{変更|へんこう}したりできるプログラムの{部分|ぶぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Appen har en modul för betalningar och en modul för kartor.",
+       "ja": "そのアプリには、{支払|しはら}いのモジュールと{地図|ちず}のモジュールがあります。"
+      },
+      {
+       "sv": "Vi delade upp den stora filen i flera mindre moduler.",
+       "ja": "{大|おお}きなファイルを、いくつかの{小|ちい}さなモジュールに{分|わ}けました。"
+      }
+     ],
+     "labelSv": "i ett program",
+     "collocations": [
+      "dela upp i moduler",
+      "en modul för …",
+      "en egen modul"
+     ],
+     "explanation": {
+      "sv": "En modul är en avgränsad del av ett program, till exempel den del som tar hand om betalningar. Varje modul har en tydlig uppgift, och man kan ändra den utan att ändra resten. Därför delar man upp stora program i moduler. Ordet används också om delar av hus och kurser.",
+      "ja": "「modul」は、ログインや{支払|しはら}いを{担当|たんとう}する{部分|ぶぶん}のように、プログラムの{中|なか}で{区切|くぎ}られた{一部分|いちぶぶん}です。それぞれのモジュールにははっきりした{役割|やくわり}があり、ほかの{部分|ぶぶん}を{変|か}えずに{変更|へんこう}できます。そのため、{大|おお}きなプログラムはモジュールに{分|わ}けて{作|つく}ります。{家|いえ}や{講座|こうざ}の{部分|ぶぶん}にも{使|つか}う{言葉|ことば}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.modul.3",
+     "ja": "（{講座|こうざ}の）{単元|たんげん}、モジュール",
+     "defSv": "En del av en kurs eller en utbildning.",
+     "defJa": "{講座|こうざ}や{教育|きょういく}の{一部分|いちぶぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kursen har fyra moduler, och varje modul tar två veckor.",
+       "ja": "その{講座|こうざ}は{四|よっ}つの{単元|たんげん}に{分|わ}かれていて、それぞれ{二週間|にしゅうかん}かかります。"
+      }
+     ],
+     "labelSv": "i en kurs",
+     "tags": [
+      "utbildning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.källkod",
+   "lemma": "källkod",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "källkod",
+    "defSg": "källkoden",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.källkod.1",
+     "ja": "ソースコード",
+     "defSv": "Den text som man skriver när man gör ett program, och som datorn sedan gör om till något den kan köra.",
+     "defJa": "プログラムを{作|つく}るときに{書|か}く{文字|もじ}の{列|れつ}で、あとでコンピューターが{実行|じっこう}できる{形|かたち}に{変換|へんかん}するもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Källkoden till appen ligger på företagets server.",
+       "ja": "そのアプリのソースコードは{会社|かいしゃ}のサーバーにあります。"
+      },
+      {
+       "sv": "Ingen utanför företaget får se källkoden.",
+       "ja": "{社外|しゃがい}の{人|ひと}はだれもソースコードを{見|み}ることができません。"
+      }
+     ],
+     "collocations": [
+      "läsa källkoden",
+      "ändra i källkoden",
+      "källkoden till …"
+     ],
+     "explanation": {
+      "sv": "Källkod är de rader med kod som människor skriver och kan läsa, till exempel x = 5. Datorn gör sedan om källkoden till ettor och nollor som den kan köra. Den som har källkoden kan ändra programmet. Ordet kod används ofta i samma betydelse i vardagen.",
+      "ja": "「källkod（ソースコード）」は、たとえば「x = 5」のように、{人|ひと}が{書|か}いて{読|よ}めるコードの{行|ぎょう}のことです。コンピューターはそれを、{実行|じっこう}できる{一|いち}と{零|ゼロ}の{形|かたち}に{変|か}えます。ソースコードを{持|も}っている{人|ひと}は、プログラムを{変更|へんこう}できます。ふだんは「kod」だけでも{同|おな}じ{意味|いみ}でよく{使|つか}います。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.pakethanterare",
+   "lemma": "pakethanterare",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "pakethanterare",
+    "defSg": "pakethanteraren",
+    "indefPl": "pakethanterare",
+    "defPl": "pakethanterarna"
+   },
+   "senses": [
+    {
+     "id": "s.pakethanterare.1",
+     "ja": "パッケージマネージャー",
+     "defSv": "Ett program som hämtar och installerar paket och håller reda på deras versioner.",
+     "defJa": "パッケージを{取|と}ってきてインストールし、そのバージョンを{管理|かんり}するプログラム。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Med en pakethanterare installerar man ett bibliotek med ett enda kommando.",
+       "ja": "パッケージマネージャーを{使|つか}えば、コマンド{一|ひと}つでライブラリをインストールできます。"
+      },
+      {
+       "sv": "Pakethanteraren varnade för ett paket med en känd bugg.",
+       "ja": "パッケージマネージャーが、{既知|きち}のバグがあるパッケージについて{警告|けいこく}しました。"
+      }
+     ],
+     "collocations": [
+      "installera med pakethanteraren",
+      "en pakethanterare för …"
+     ],
+     "explanation": {
+      "sv": "En pakethanterare är ett verktyg som laddar ner paket från internet, installerar dem och kommer ihåg vilken version varje paket har. Den ser också till att paketens egna beroenden kommer med. Utan pakethanterare skulle man behöva ladda ner allt för hand.",
+      "ja": "「pakethanterare（パッケージマネージャー）」は、インターネットからパッケージをダウンロードしてインストールし、それぞれのバージョンを{覚|おぼ}えておく{道具|どうぐ}です。パッケージが{必要|ひつよう}とするほかのパッケージも、いっしょに{入|い}れてくれます。これがなければ、すべてを{手作業|てさぎょう}でダウンロードしなければなりません。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.öppen-källkod",
+   "lemma": "öppen källkod",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "öppen källkod",
+    "defSg": "öppna källkoden",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.öppen-källkod.1",
+     "ja": "オープンソース",
+     "defSv": "Källkod som alla får läsa, använda och ändra, ofta utan att betala.",
+     "defJa": "だれでも{読|よ}んだり{使|つか}ったり{変更|へんこう}したりしてよいソースコードで、{無料|むりょう}のことが{多|おお}い。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Många program på våra datorer bygger på öppen källkod.",
+       "ja": "わたしたちのパソコンの{多|おお}くのプログラムは、オープンソースをもとにしています。"
+      },
+      {
+       "sv": "Företaget släppte sitt program som öppen källkod.",
+       "ja": "その{会社|かいしゃ}は{自社|じしゃ}のプログラムをオープンソースとして{公開|こうかい}しました。"
+      }
+     ],
+     "collocations": [
+      "bygga på öppen källkod",
+      "ett projekt med öppen källkod",
+      "släppa som öppen källkod"
+     ],
+     "explanation": {
+      "sv": "Öppen källkod betyder att källkoden är offentlig. Vem som helst får läsa den, rätta fel och använda den i egna program, så länge man följer licensen. Många stora projekt med öppen källkod sköts av frivilliga från hela världen tillsammans med företag.",
+      "ja": "「öppen källkod（オープンソース）」は、ソースコードが{公開|こうかい}されていることを{意味|いみ}します。ライセンスを{守|まも}れば、だれでも{読|よ}んだり、まちがいを{直|なお}したり、{自分|じぶん}のプログラムに{使|つか}ったりできます。{大|おお}きなオープンソースのプロジェクトの{多|おお}くは、{世界中|せかいじゅう}のボランティアと{企業|きぎょう}がいっしょに{運営|うんえい}しています。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.teknisk-skuld",
+   "lemma": "teknisk skuld",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "teknisk skuld",
+    "defSg": "tekniska skulden",
+    "indefPl": "tekniska skulder",
+    "defPl": "tekniska skulderna"
+   },
+   "senses": [
+    {
+     "id": "s.teknisk-skuld.1",
+     "ja": "{技術的負債|ぎじゅつてきふさい}",
+     "defSv": "Problem i koden som kommer av snabba lösningar, och som gör att framtida ändringar blir svårare och dyrare.",
+     "defJa": "{急|いそ}いで{作|つく}った{解決策|かいけつさく}のせいでコードに{残|のこ}る{問題|もんだい}で、あとの{変更|へんこう}を{難|むずか}しく{高|たか}くつくものにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi har en stor teknisk skuld i det gamla systemet.",
+       "ja": "{古|ふる}いシステムには{大|おお}きな{技術的負債|ぎじゅつてきふさい}があります。"
+      },
+      {
+       "sv": "Varje fredag betalar gruppen av lite på den tekniska skulden.",
+       "ja": "{毎週金曜日|まいしゅうきんようび}、チームは{技術的負債|ぎじゅつてきふさい}を{少|すこ}しずつ{返|かえ}しています。"
+      }
+     ],
+     "collocations": [
+      "betala av på den tekniska skulden",
+      "en stor teknisk skuld",
+      "skapa teknisk skuld"
+     ],
+     "explanation": {
+      "sv": "Teknisk skuld är en bild för det som händer när man väljer en snabb men dålig lösning för att bli klar i tid. Det fungerar just nu, men senare måste man ”betala tillbaka” genom att skriva om koden, och ju längre man väntar, desto dyrare blir det, som ränta på ett lån. Uttrycket är vanligt bland dem som skriver program och i diskussioner om gamla system hos myndigheter.",
+      "ja": "「teknisk skuld（{技術的負債|ぎじゅつてきふさい}）」は、{期限|きげん}に{間|ま}に{合|あ}わせるために、{速|はや}いけれどよくない{方法|ほうほう}を{選|えら}んだときに{起|お}こることのたとえです。{今|いま}は{動|うご}いても、あとでコードを{書|か}き{直|なお}して「{返済|へんさい}」しなければならず、{借金|しゃっきん}の{利子|りし}のように、{待|ま}てば{待|ま}つほど{高|たか}くつきます。プログラムを{書|か}く{人|ひと}たちの{間|あいだ}や、{役所|やくしょ}の{古|ふる}いシステムについての{議論|ぎろん}でよく{使|つか}われる{表現|ひょうげん}です。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}

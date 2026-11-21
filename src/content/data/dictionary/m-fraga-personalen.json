@@ -237,6 +237,7 @@
        "ja": "{倉庫|そうこ}を{見|み}てきます。"
       }
      ],
+     "labelSv": "förråd",
      "tags": [
       "handel",
       "butik",
@@ -245,8 +246,69 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.lager-förråd.2",
+     "ja": "{層|そう}",
+     "defSv": "Något som ligger som en jämn yta över eller under något annat, till exempel snö på marken eller färg på en vägg.",
+     "defJa": "{地面|じめん}の{雪|ゆき}や{壁|かべ}のペンキのように、{何|なに}かの{上|うえ}や{下|した}に{平|たい}らに{重|かさ}なっているもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det ligger ett tjockt lager snö på bilen.",
+       "ja": "{車|くるま}の{上|うえ}に{雪|ゆき}が{厚|あつ}く{積|つ}もっています。"
+      }
+     ],
+     "labelSv": "skikt",
+     "tags": [
+      "vardag"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "A2"
+    },
+    {
+     "id": "s.lager-förråd.3",
+     "ja": "（ニューラルネットワークの）{層|そう}",
+     "defSv": "En rad av små delar i en modell i datorn, som får tal från raden före och skickar tal till raden efter.",
+     "defJa": "ニューラルネットワークの{中|なか}のニューロンの{列|れつ}。{前|まえ}の{列|れつ}から{数|かず}を{受|う}け{取|と}り、{次|つぎ}の{列|れつ}へ{数|かず}を{送|おく}る。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Modellen har tolv lager.",
+       "ja": "そのモデルには{十二|じゅうに}の{層|そう}があります。"
+      },
+      {
+       "sv": "I de första lagren hittar modellen enkla linjer och kanter.",
+       "ja": "{最初|さいしょ}のほうの{層|そう}では、モデルは{簡単|かんたん}な{線|せん}や{縁|ふち}を{見|み}つけます。"
+      }
+     ],
+     "labelSv": "i neurala nätverk",
+     "collocations": [
+      "ett dolt lager",
+      "det första lagret",
+      "många lager"
+     ],
+     "explanation": {
+      "sv": "Ett lager i ett neuralt nätverk är en rad av neuroner som arbetar samtidigt. Det första lagret tar emot indata, det sista ger utdata, och däremellan finns dolda lager. Ordet är detsamma som när man talar om ett lager snö eller färg: lagren ligger efter varandra. Ett lager kan också vara ett förråd med varor, men det är en annan betydelse.",
+      "ja": "ニューラルネットワークの「lager」は、{同時|どうじ}に{働|はたら}くニューロンの{列|れつ}です。{最初|さいしょ}の{層|そう}が{入力|にゅうりょく}データを{受|う}け{取|と}り、{最後|さいご}の{層|そう}が{出力|しゅつりょく}データを{出|だ}し、その{間|あいだ}に{隠|かく}れ{層|そう}があります。{雪|ゆき}やペンキの「lager（{層|そう}）」と{同|おな}じ{言葉|ことば}で、{層|そう}が{順番|じゅんばん}に{重|かさ}なっています。「lager」には{商品|しょうひん}の{倉庫|そうこ}という{意味|いみ}もありますが、それは{別|べつ}の{意味|いみ}です。"
+     },
+     "tags": [
+      "programmering",
+      "AI",
+      "maskininlärning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.i-lager",

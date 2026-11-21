@@ -1,0 +1,168 @@
+{
+ "id": "m.api-er-och-granssnitt",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "API:er och gränssnitt",
+ "titleJa": "APIとインターフェース",
+ "descriptionSv": "Hur program talar med varandra: hur en app hämtar information från en annan tjänst, vad som skiljer det som användaren ser från det som sker bakom skärmen och vad man ska tänka på när man kopplar ihop tjänster.",
+ "descriptionJa": "プログラムどうしがどうやりとりするか：アプリがほかのサービスから{情報|じょうほう}をどう{取|と}ってくるか、{利用者|りようしゃ}に{見|み}える{部分|ぶぶん}と{画面|がめん}の{裏|うら}で{起|お}きていることの{違|ちが}い、そしてサービスどうしをつなぐときに{何|なに}に{気|き}をつけるべきかを{学|まな}びます。",
+ "categoryId": "R07-A02-T03",
+ "tags": [
+  "programmering",
+  "teknik",
+  "mjukvara"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.moduler-och-beroenden"
+ ],
+ "related": [],
+ "recommendedOrder": 3832,
+ "words": [
+  {
+   "senseId": "s.API.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gränssnitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.användargränssnitt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.protokoll.3",
+   "active": false
+  },
+  {
+   "senseId": "s.format.2",
+   "active": true
+  },
+  {
+   "senseId": "s.anropa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.begäran.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svarstid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utbyta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.integrera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjänst-favor.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tredje-part.1",
+   "active": true
+  },
+  {
+   "senseId": "s.API-nyckel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.specifikation.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Väderappen",
+  "paragraphs": [
+   "Yuki går en kurs på kvällarna där hon lär sig att skriva kod. Som slutprojekt bygger hon en väderapp. Hon vill inte mäta vädret själv, så appen hämtar data från ett API som en vädertjänst har gjort.",
+   "Först måste hon skapa en API-nyckel på vädertjänstens webbplats. Sedan läser hon specifikationen. Där står det hur hennes app ska anropa tjänsten och i vilket format svaret kommer. – Det är som ett protokoll, förklarar läraren Johan. Om du följer reglerna förstår ni varandra.",
+   "När någon öppnar appen skickas en begäran till servern: ”Hur blir vädret i Kiruna i morgon?” Svaret kommer tillbaka på mindre än en sekund. Svarstiden är viktig, säger Johan. Ingen vill vänta på vädret.",
+   "Yuki lägger mycket tid på användargränssnittet. Det ska vara enkelt, med stora siffror och tydliga bilder. Bakom skärmen finns ett annat gränssnitt, mellan hennes kod och vädertjänsten. Där utbyter programmen data, och användaren ser ingenting av det.",
+   "Till sist integrerar Yuki en karttjänst, så att man kan se regn och moln på en karta. Kartan kommer från en tredje part. – Med API:er kan man koppla ihop många tjänster, säger Johan. Men läs alltid villkoren, och lägg aldrig API-nyckeln där andra kan se den."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför använder Yuki ett API?",
+    "options": [
+     "Hon vill inte mäta vädret själv",
+     "Hon vill sälja väderdata",
+     "Läraren har gjort tjänsten",
+     "Appen ska fungera utan internet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon vill inte mäta vädret själv, så appen hämtar data från ett API som en vädertjänst har gjort.",
+    "explanationJa": "{自分|じぶん}で{天気|てんき}を{測|はか}りたくないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad står det i specifikationen?",
+    "options": [
+     "Hur mycket appen kostar",
+     "Hur appen ska anropa tjänsten och i vilket format svaret kommer",
+     "Vilka färger appen ska ha",
+     "Hur vädret blir i morgon"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Där står det hur hennes app ska anropa tjänsten och i vilket format svaret kommer.",
+    "explanationJa": "APIの{呼|よ}び{出|だ}し{方|かた}と、{答|こた}えの{形式|けいしき}が{書|か}いてあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vilket gränssnitt ser användaren?",
+    "options": [
+     "Gränssnittet mellan koden och vädertjänsten",
+     "API-nyckeln",
+     "Användargränssnittet med stora siffror och tydliga bilder",
+     "Servern"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Yuki lägger mycket tid på användargränssnittet. Det ska vara enkelt, med stora siffror och tydliga bilder.",
+    "explanationJa": "{利用者|りようしゃ}が{見|み}るのはユーザーインターフェースです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kartan i appen kommer från vädertjänsten.",
+    "correct": false,
+    "explanationSv": "Kartan kommer från en tredje part.",
+    "explanationJa": "{地図|ちず}は{第三者|だいさんしゃ}のサービスから{来|き}ています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Johan tycker att API-nyckeln ska vara hemlig.",
+    "correct": true,
+    "explanationSv": "Men läs alltid villkoren, och lägg aldrig API-nyckeln där andra kan se den.",
+    "explanationJa": "ほかの{人|ひと}に{見|み}られる{場所|ばしょ}に{置|お}かないように{言|い}っています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om appar som hämtar information från andra tjänster.",
+  "discussionPoints": [
+   "Vilka appar använder du som visar information från andra tjänster, till exempel väder eller kartor?",
+   "Vad gör ett användargränssnitt lätt eller svårt att använda?",
+   "Brukar du läsa villkoren innan du börjar använda en app?",
+   "Vad tycker du om att appar delar uppgifter med tredje part?"
+  ]
+ },
+ "standard": 2
+}

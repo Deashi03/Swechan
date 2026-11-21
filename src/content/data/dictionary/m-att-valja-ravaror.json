@@ -345,6 +345,7 @@
        "ja": "スウェーデンは{果物|くだもの}をたくさん{輸入|ゆにゅう}しています。"
       }
      ],
+     "labelSv": "varor",
      "frame": {
       "subject": "Sverige",
       "complement": "bananer"
@@ -355,8 +356,73 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.importera.2",
+     "ja": "（モジュールを）インポートする、{読|よ}み{込|こ}む",
+     "defSv": "Ta in färdig kod i sin egen kod så att man kan använda den.",
+     "defJa": "{既製|きせい}のコードを{自分|じぶん}のコードに{取|と}り{込|こ}んで、{使|つか}えるようにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Du måste importera koden innan du kan använda den.",
+       "ja": "コードを{使|つか}う{前|まえ}に、インポートしなければなりません。"
+      },
+      {
+       "sv": "Hon importerade alla namn från det gamla systemet till det nya.",
+       "ja": "{彼女|かのじょ}は{古|ふる}いシステムから{新|あたら}しいシステムに、すべての{名前|なまえ}を{取|と}り{込|こ}みました。"
+      }
+     ],
+     "labelSv": "i kod",
+     "collocations": [
+      "importera ett bibliotek",
+      "importera en modul",
+      "importera data"
+     ],
+     "explanation": {
+      "sv": "I kod betyder importera att man tar in en modul eller ett bibliotek, ofta på första raden i filen. Då kan man använda funktionerna där. Man kan också importera data, till exempel en lista med kunder från en fil. Motsatsen är exportera, att skicka ut data till en fil.",
+      "ja": "コードでの「importera」は、モジュールやライブラリを{取|と}り{込|こ}むことで、たいていファイルの{最初|さいしょ}の{行|ぎょう}に{書|か}きます。そうすると、その{中|なか}の{機能|きのう}が{使|つか}えます。ファイルから{顧客|こきゃく}の{一覧|いちらん}などのデータを{取|と}り{込|こ}むときにも{使|つか}います。{反対|はんたい}は「exportera」で、データをファイルに{書|か}き{出|だ}すことです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "mjukvara"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.importera.3",
+     "ja": "（データを）インポートする、{取|と}り{込|こ}む",
+     "defSv": "Ta in information eller en lista till datorn eller en app från en annan plats.",
+     "defJa": "ほかの{場所|ばしょ}から、{情報|じょうほう}やリストをコンピューターやアプリに{取|と}り{込|こ}む。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag importerar listan till en app i mobilen.",
+       "ja": "そのリストを、スマートフォンのアプリに{取|と}り{込|こ}みます。"
+      }
+     ],
+     "labelSv": "data i en app",
+     "tags": [
+      "programmering",
+      "teknik",
+      "statistik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.närproducerad",

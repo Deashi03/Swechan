@@ -1,0 +1,112 @@
+{
+ "entries": [
+  {
+   "id": "e.överanpassning",
+   "lemma": "överanpassning",
+   "pos": "noun",
+   "level": "C1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "överanpassning",
+    "defSg": "överanpassningen",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.överanpassning.1",
+     "ja": "{過学習|かがくしゅう}、オーバーフィッティング",
+     "defSv": "När en modell lär sig sina träningsdata för noga, också små fel och slump, så att den blir sämre på nya data.",
+     "defJa": "モデルが{訓練|くんれん}データを、{小|ちい}さな{誤|あやま}りや{偶然|ぐうぜん}まで{細|こま}かく{学|まな}びすぎて、{新|あたら}しいデータでは{性能|せいのう}が{悪|わる}くなること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Överanpassning är ett vanligt problem när man har lite data.",
+       "ja": "{過学習|かがくしゅう}は、データが{少|すく}ないときによくある{問題|もんだい}です。"
+      },
+      {
+       "sv": "För att undvika överanpassning gjorde de modellen enklare.",
+       "ja": "{過学習|かがくしゅう}を{避|さ}けるために、{彼|かれ}らはモデルを{簡単|かんたん}にしました。"
+      }
+     ],
+     "collocations": [
+      "risk för överanpassning",
+      "undvika överanpassning",
+      "leda till överanpassning"
+     ],
+     "explanation": {
+      "sv": "Överanpassning betyder att modellen är perfekt på sina träningsdata men dålig på nya data. Den har lärt sig sina exempel utantill i stället för det allmänna mönstret, ungefär som en elev som har memorerat svaren till ett gammalt prov. Motsatsen, när modellen är för enkel och inte ens klarar träningsdata, kallas underanpassning.",
+      "ja": "「överanpassning」は、モデルが{訓練|くんれん}データでは{完璧|かんぺき}なのに、{新|あたら}しいデータでは{成績|せいせき}が{悪|わる}いことです。{一般的|いっぱんてき}なパターンではなく{例|れい}を{丸暗記|まるあんき}してしまったのです。{古|ふる}い{試験|しけん}の{答|こた}えを{暗記|あんき}した{生徒|せいと}に{似|に}ています。{反対|はんたい}に、モデルが{簡単|かんたん}すぎて{訓練|くんれん}データにさえ{対応|たいおう}できないことは「underanpassning（{未学習|みがくしゅう}）」と{言|い}います。"
+     },
+     "tags": [
+      "programmering",
+      "AI",
+      "maskininlärning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Saknas som eget uppslagsord i SO; vanlig fackterm i maskininlärning."
+   }
+  },
+  {
+   "id": "e.komplex",
+   "lemma": "komplex",
+   "pos": "adjective",
+   "level": "B2",
+   "inflection": {
+    "kind": "adjective",
+    "common": "komplex",
+    "neuter": "komplext",
+    "plural": "komplexa",
+    "definite": "komplexa"
+   },
+   "senses": [
+    {
+     "id": "s.komplex.1",
+     "ja": "{複雑|ふくざつ}な",
+     "defSv": "Som består av många delar som hänger ihop, och som därför är svår att förstå.",
+     "defJa": "たくさんの{部分|ぶぶん}がつながっていて、そのために{理解|りかい}しにくい。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Klimatet är ett komplext system.",
+       "ja": "{気候|きこう}は{複雑|ふくざつ}なシステムです。"
+      },
+      {
+       "sv": "Frågan är mer komplex än den verkar.",
+       "ja": "その{問題|もんだい}は{見|み}かけよりも{複雑|ふくざつ}です。"
+      }
+     ],
+     "collocations": [
+      "ett komplext problem",
+      "en komplex modell",
+      "mer komplex"
+     ],
+     "explanation": {
+      "sv": "Komplex betyder att något har många delar som påverkar varandra. Ordet liknar svår, men svår handlar om hur mycket arbete något kräver, medan komplex handlar om att det finns många delar och samband. En komplex modell har många parametrar och kan beskriva många detaljer.",
+      "ja": "「komplex」は、{何|なに}かにお{互|たが}いに{影響|えいきょう}し{合|あ}うたくさんの{部分|ぶぶん}があることを{表|あらわ}します。「svår（{難|むずか}しい）」に{似|に}ていますが、「svår」はどれだけ{手間|てま}がかかるかを、「komplex」は{部分|ぶぶん}や{関係|かんけい}がたくさんあることを{言|い}います。{複雑|ふくざつ}なモデルはパラメーターが{多|おお}く、{細|こま}かい{点|てん}までたくさん{表|あらわ}せます。"
+     },
+     "tags": [
+      "programmering",
+      "AI",
+      "maskininlärning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  }
+ ]
+}
