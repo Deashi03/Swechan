@@ -1,0 +1,176 @@
+{
+ "id": "m.visualisering-av-data",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Visualisering av data",
+ "titleJa": "データの{可視化|かしか}",
+ "descriptionSv": "Hur man talar om att visa data i bilder: hur man ser trender och mönster, hur färger och diagram gör siffror tydliga, och hur man känner igen ett missvisande diagram och presenterar resultat för andra.",
+ "descriptionJa": "データを{図|ず}で{示|しめ}すことについて{話|はな}す{方法|ほうほう}を{学|まな}びます。{傾向|けいこう}やパターンの{見|み}つけ{方|かた}、{色|いろ}やグラフで{数字|すうじ}をわかりやすくする{方法|ほうほう}、そして{誤解|ごかい}を{招|まね}くグラフの{見分|みわ}け{方|かた}と、{結果|けっか}をほかの{人|ひと}に{発表|はっぴょう}する{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A02-T04",
+ "tags": [
+  "programmering",
+  "teknik",
+  "statistik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.databearbetning"
+ ],
+ "related": [],
+ "recommendedOrder": 3847,
+ "words": [
+  {
+   "senseId": "s.diagram.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tydlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visualisera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.datapunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mönster.2",
+   "active": true
+  },
+  {
+   "senseId": "s.trend.2",
+   "active": false
+  },
+  {
+   "senseId": "s.stapeldiagram.1",
+   "active": false
+  },
+  {
+   "senseId": "s.värmekarta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färgkoda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.infografik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.instrumentpanel.2",
+   "active": true
+  },
+  {
+   "senseId": "s.översikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.interaktiv.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lyfta-fram.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skala-noun.2",
+   "active": false
+  },
+  {
+   "senseId": "s.missvisande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.presentera.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Elpriset i bilder",
+  "paragraphs": [
+   "Maja arbetar på en tidning. Hon ska visualisera hur elpriset har ändrats de senaste fem åren. Hon har en tabell med ett pris för varje timme, alltså mer än fyrtio tusen datapunkter.",
+   "Alla diagram ska vara klara på fredag. Först gör hon ett linjediagram. Där syns en trend: priset har gått upp. Men hon ser också ett mönster som kommer tillbaka varje dag: elen är dyrast på morgonen och på kvällen, när många lagar mat och duschar.",
+   "För att visa detta gör hon en värmekarta. Varje ruta är en timme, och hon färgkodar rutorna: mörkrött betyder högt pris och ljusgult lågt. Sedan gör hon en infografik med en tvättmaskin och ett tydligt råd: tvätta på natten, då är elen billigast.",
+   "På tidningens webbsida finns också en interaktiv instrumentpanel. Där kan läsarna välja sin egen del av landet och få en snabb översikt över priset just nu. Maja lyfter fram den billigaste timmen med en grön stapel.",
+   "Innan artikeln publiceras visar kollegan Per ett stapeldiagram från en annan tidning. Skalan börjar på 90 öre i stället för noll, så en liten ökning ser enorm ut. – Det är missvisande, säger Maja. Nästa dag presenterar hon sina bilder på redaktionens möte, och alla tycker att de är tydliga."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har Maja i sin tabell?",
+    "options": [
+     "Ett pris för varje månad",
+     "Ett pris för varje timme i fem år",
+     "Namnen på alla läsare",
+     "Bilder på tvättmaskiner"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon har en tabell med ett pris för varje timme, alltså mer än fyrtio tusen datapunkter.",
+    "explanationJa": "5{年分|ねんぶん}の、1{時間|じかん}ごとの{値段|ねだん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vilket mönster ser Maja?",
+    "options": [
+     "Elen blir billigare varje år",
+     "Elen kostar lika mycket hela dagen",
+     "Elen är dyrast på morgonen och kvällen",
+     "Elen är dyrast på natten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Men hon ser också ett mönster som kommer tillbaka varje dag: elen är dyrast på morgonen och på kvällen …",
+    "explanationJa": "{毎日|まいにち}、{朝|あさ}と{夕方|ゆうがた}に{電気|でんき}が{一番|いちばん}{高|たか}くなるというパターンです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är den andra tidningens diagram missvisande?",
+    "options": [
+     "Skalan börjar inte på noll",
+     "Färgerna är fel",
+     "Det saknar en rubrik",
+     "Det visar för många år"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Skalan börjar på 90 öre i stället för noll, så en liten ökning ser enorm ut.",
+    "explanationJa": "{目盛|めも}りがゼロから{始|はじ}まっていないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "På värmekartan betyder mörkrött högt pris.",
+    "correct": true,
+    "explanationSv": "… mörkrött betyder högt pris och ljusgult lågt.",
+    "explanationJa": "{濃|こ}い{赤|あか}は{高|たか}い{値段|ねだん}を{表|あらわ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Läsarna kan bara se priset för hela landet på instrumentpanelen.",
+    "correct": false,
+    "explanationSv": "Där kan läsarna välja sin egen del av landet …",
+    "explanationJa": "{読者|どくしゃ}は{自分|じぶん}の{地域|ちいき}を{選|えら}ぶことができます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om diagram och bilder som visar siffror.",
+  "discussionPoints": [
+   "Vilket diagram eller vilken infografik har du sett nyligen? Var den tydlig?",
+   "Har du någon gång sett ett missvisande diagram i en nyhet eller i reklam?",
+   "Vilka mönster ser du i din egen vardag, till exempel i hur mycket du sover eller handlar?",
+   "Har du presenterat siffror för andra på jobbet eller i skolan? Hur gjorde du?"
+  ]
+ },
+ "standard": 2
+}

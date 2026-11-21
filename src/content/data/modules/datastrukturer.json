@@ -1,0 +1,172 @@
+{
+ "id": "m.datastrukturer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Datastrukturer",
+ "titleJa": "データ{構造|こうぞう}",
+ "descriptionSv": "Hur man beskriver hur ett program ordnar och sparar data: köer och stackar, träd med nivåer och noder, och hur uppgifter länkas och struktureras så att man hittar dem.",
+ "descriptionJa": "プログラムがデータをどのように{並|なら}べて{保存|ほぞん}するかを{説明|せつめい}する{方法|ほうほう}を{学|まな}びます。キューとスタック、{段|だん}とノードのあるツリー、そして{情報|じょうほう}を{見|み}つけやすくするためにどうつなぎ、どう{整理|せいり}するかを{学|まな}びます。",
+ "categoryId": "R07-A02-T04",
+ "tags": [
+  "programmering",
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.distribution-och-driftsattning"
+ ],
+ "related": [],
+ "recommendedOrder": 3841,
+ "words": [
+  {
+   "senseId": "s.datastruktur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lista.2",
+   "active": false
+  },
+  {
+   "senseId": "s.lagra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kö.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stack.2",
+   "active": true
+  },
+  {
+   "senseId": "s.träd.2",
+   "active": true
+  },
+  {
+   "senseId": "s.rot.2",
+   "active": false
+  },
+  {
+   "senseId": "s.nod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nivå.3",
+   "active": true
+  },
+  {
+   "senseId": "s.kategori.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hierarkisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppsättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.länka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.strukturera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.4",
+   "active": false
+  },
+  {
+   "senseId": "s.samling.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ordning i appen",
+  "paragraphs": [
+   "Saki har fått sitt första jobb som programmerare. Företaget gör en app för en vårdcentral. Första dagen säger chefen Lars: – Innan vi skriver något måste vi välja rätt datastruktur. Det är sättet som programmet ska lagra all information på.",
+   "Patienterna som ringer vårdcentralen ställs i en kö. Den som ringde först får svar först, precis som i kön på posten. Kön är en lista där varje element är ett samtal. Nya samtal läggs alltid sist.",
+   "Appen har också en stack. Där sparas det som personalen har gjort, så att man kan ångra det senaste. Det som lades in sist ligger överst och tas bort först, som i en hög med tallrikar.",
+   "Menyn i appen är byggd som ett träd. Roten är startsidan, och varje nod är en sida. Sidorna på samma nivå hör till samma kategori, till exempel ”Boka tid” eller ”Mina recept”. – Vårdcentralen är hierarkisk på samma sätt, skrattar Lars. Chefen står överst.",
+   "Varje patient har en uppsättning uppgifter: namn, personnummer och telefon. Uppgifterna är länkade till varandra, så att man hittar allt om en patient på en gång. På kvällen strukturerar Saki sin samling av anteckningar. – Det är som att städa, tänker hon. Allt måste ha sin plats."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad måste man göra innan man skriver något, enligt Lars?",
+    "options": [
+     "Ringa vårdcentralen",
+     "Köpa en ny dator",
+     "Rita menyn på papper",
+     "Välja rätt datastruktur"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Innan vi skriver något måste vi välja rätt datastruktur.",
+    "explanationJa": "まず{正|ただ}しいデータ{構造|こうぞう}を{選|えら}ばなければなりません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vem får svar först i kön?",
+    "options": [
+     "Den som ringde sist",
+     "Den som är sjukast",
+     "Den som har bokat tid",
+     "Den som ringde först"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den som ringde först får svar först, precis som i kön på posten.",
+    "explanationJa": "{最初|さいしょ}に{電話|でんわ}した{人|ひと}が{最初|さいしょ}に{応答|おうとう}してもらえます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför har appen en stack?",
+    "options": [
+     "För att patienterna ska få svar snabbare",
+     "För att menyn ska bli större",
+     "För att spara tallrikar",
+     "För att man ska kunna ångra det senaste"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där sparas det som personalen har gjort, så att man kan ångra det senaste.",
+    "explanationJa": "{最後|さいご}にしたことを{取|と}り{消|け}せるようにするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Startsidan är roten i trädet.",
+    "correct": true,
+    "explanationSv": "Roten är startsidan, och varje nod är en sida.",
+    "explanationJa": "スタートページがツリーのルートです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Uppgifterna om en patient finns på flera ställen som inte hänger ihop.",
+    "correct": false,
+    "explanationSv": "Uppgifterna är länkade till varandra, så att man hittar allt om en patient på en gång.",
+    "explanationJa": "{情報|じょうほう}はつながっているので、{一度|いちど}にすべて{見|み}つけられます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man håller ordning på saker och information.",
+  "discussionPoints": [
+   "Var i vardagen står du i kö, och hur lång tid tar det?",
+   "Hur strukturerar du filerna och mapparna i din dator eller mobil?",
+   "Är din arbetsplats eller skola hierarkisk? Hur märks det?",
+   "Vilken uppsättning uppgifter behöver en app för att boka tid hos en läkare?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,180 @@
+{
+ "id": "m.algoritmer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Algoritmer",
+ "titleJa": "アルゴリズム",
+ "descriptionSv": "Hur man beskriver hur en algoritm fungerar, från regler och instruktioner till flödesscheman och pseudokod, och hur man diskuterar automatiserade beslut och insyn i nyheter och samhälle.",
+ "descriptionJa": "アルゴリズムのしくみを{説明|せつめい}する{方法|ほうほう}を、ルールや{命令|めいれい}からフローチャートや{擬似|ぎじ}コードまで{学|まな}びます。また、ニュースや{社会|しゃかい}で{話題|わだい}になる{自動化|じどうか}された{決定|けってい}と{透明性|とうめいせい}について{話|はな}す{方法|ほうほう}も{学|まな}びます。",
+ "categoryId": "R07-A02-T04",
+ "tags": [
+  "programmering",
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.sokning-och-sortering"
+ ],
+ "related": [],
+ "recommendedOrder": 3843,
+ "words": [
+  {
+   "senseId": "s.algoritm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.steg-för-steg.1",
+   "active": false
+  },
+  {
+   "senseId": "s.instruktion.2",
+   "active": true
+  },
+  {
+   "senseId": "s.regel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.indata.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utdata.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flödesschema.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pseudokod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.problemlösning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bryta-ner.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lösa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.effektiv.1",
+   "active": false
+  },
+  {
+   "senseId": "s.optimera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortaste-vägen.1",
+   "active": false
+  },
+  {
+   "senseId": "s.automatiserad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insyn.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Algoritmen som valde skola",
+  "paragraphs": [
+   "Förra vintern läste Sofia en nyhet om en kommun som låter en algoritm bestämma vilken skola barnen ska gå i. Föräldrarna söker skola i en app, och sedan fattas ett automatiserat beslut. Ingen människa läser ansökan.",
+   "Sofia går en kurs där hon lär sig skriva program, och hennes lärare Anders förklarar hur en algoritm fungerar. – En algoritm är en rad instruktioner som datorn följer steg för steg. Indata är till exempel barnens adresser, och utdata är listan över vilken skola varje barn får.",
+   "Anders ritar ett flödesschema på tavlan. Algoritmen följer en enkel regel: barnet får den skola som ligger närmast. – Men vad betyder närmast? frågar han. Den kortaste vägen att gå, eller avståndet på kartan? I kommunen i nyheten mätte algoritmen fel, och några barn fick en skola på andra sidan en stor väg.",
+   "Sedan får klassen träna problemlösning. De ska skriva pseudokod för en bättre algoritm. Sofia bryter ner problemet i tre delar: hitta alla skolor, räkna ut gångvägen och välja den skola som ligger närmast. Till sist försöker de optimera algoritmen, så att den blir effektiv även med tusen barn.",
+   "– Det svåra är inte att lösa problemet i datorn, säger Anders. Det svåra är att föräldrarna ska ha insyn i hur beslutet fattas. Sedan 2018 säger lagen att en myndighet får fatta ett beslut automatiserat, men alla ska kunna förstå varför det blev som det blev."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem bestämmer vilken skola barnen får i kommunen i nyheten?",
+    "options": [
+     "Rektorn",
+     "Föräldrarna",
+     "En algoritm",
+     "Läraren Anders"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Förra vintern läste Sofia en nyhet om en kommun som låter en algoritm bestämma vilken skola barnen ska gå i.",
+    "explanationJa": "アルゴリズムが{決|き}めています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är indata i algoritmen som Anders beskriver?",
+    "options": [
+     "Listan över skolor som barnen får",
+     "Flödesschemat på tavlan",
+     "Barnens adresser",
+     "Föräldrarnas namn"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Indata är till exempel barnens adresser …",
+    "explanationJa": "{子|こ}どもたちの{住所|じゅうしょ}が{入力|にゅうりょく}データです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför fick några barn en skola på andra sidan en stor väg?",
+    "options": [
+     "Algoritmen mätte avståndet fel",
+     "Föräldrarna valde fel skola",
+     "Det fanns för få skolor",
+     "Appen gick sönder"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I kommunen i nyheten mätte algoritmen fel, och några barn fick en skola på andra sidan en stor väg.",
+    "explanationJa": "アルゴリズムが{距離|きょり}を{間違|まちが}って{測|はか}ったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sofia bryter ner problemet i tre delar.",
+    "correct": true,
+    "explanationSv": "Sofia bryter ner problemet i tre delar …",
+    "explanationJa": "ソフィアは{問題|もんだい}を3つに{分|わ}けました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anders tycker att det viktigaste är att datorn räknar snabbt.",
+    "correct": false,
+    "explanationSv": "– Det svåra är inte att lösa problemet i datorn, säger Anders. Det svåra är att föräldrarna ska ha insyn i hur beslutet fattas.",
+    "explanationJa": "アンデシュは、{親|おや}が{決定|けってい}の{過程|かてい}を{知|し}ることができるのが{大切|たいせつ}だと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Sedan 2018 säger förvaltningslagen att en myndighet får fatta ett beslut automatiserat.",
+    "source": "Förvaltningslag (2017:900) 28 §, i kraft 1 juli 2018",
+    "checked": "2026-11-21",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om algoritmer i vardagen och i samhället.",
+  "discussionPoints": [
+   "Vilka regler följer du steg för steg i vardagen, till exempel när du lagar mat?",
+   "Tycker du att en myndighet ska få fatta automatiserade beslut? Varför eller varför inte?",
+   "Hur bryter du ner en stor uppgift på jobbet eller i skolan?",
+   "Är du bra på problemlösning? Berätta om ett problem som du har löst."
+  ]
+ },
+ "standard": 2
+}

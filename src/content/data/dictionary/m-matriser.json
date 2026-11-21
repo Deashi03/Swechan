@@ -105,6 +105,7 @@
        "ja": "3×3{行列|ぎょうれつ}は{正方行列|せいほうぎょうれつ}ですが、2×3{行列|ぎょうれつ}はそうではありません。"
       }
      ],
+     "labelSv": "om en matris",
      "explanation": {
       "sv": "En kvadratisk matris har lika många rader som kolumner, till exempel 2 × 2 eller 3 × 3. Den ser ut som en kvadrat. Flera viktiga saker som man kan räkna ut finns bara för kvadratiska matriser. I vardagen betyder kvadratisk att något har formen av en kvadrat.",
       "ja": "{正方行列|せいほうぎょうれつ}は、2×2や3×3のように{行|ぎょう}と{列|れつ}の{数|かず}が{同|おな}じ{行列|ぎょうれつ}で、{正方形|せいほうけい}のように{見|み}えます。{行列式|ぎょうれつしき}や{逆行列|ぎゃくぎょうれつ}など、{多|おお}くの{大切|たいせつ}な{概念|がいねん}は{正方行列|せいほうぎょうれつ}にしかありません。ふだんの{言葉|ことば}では「{正方形|せいほうけい}の」という{意味|いみ}です。"
@@ -115,9 +116,50 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.kvadratisk.2",
+     "ja": "（{計算量|けいさんりょう}が）{二乗|にじょう}の",
+     "defSv": "Som växer mycket snabbt: om listan blir dubbelt så lång, tar det fyra gånger så lång tid.",
+     "defJa": "とても{速|はや}く{増|ふ}える。リストが2{倍|ばい}の{長|なが}さになると、4{倍|ばい}の{時間|じかん}がかかる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Datorn behöver kvadratisk tid för att sortera listan.",
+       "ja": "コンピューターがそのリストを{並|なら}べ{替|か}えるには、{二乗|にじょう}の{時間|じかん}がかかります。"
+      },
+      {
+       "sv": "Tiden växer kvadratiskt när listan blir längre.",
+       "ja": "リストが{長|なが}くなると、{時間|じかん}は{二乗|にじょう}で{増|ふ}えます。"
+      }
+     ],
+     "labelSv": "om tillväxt",
+     "collocations": [
+      "kvadratisk tid",
+      "växa kvadratiskt"
+     ],
+     "explanation": {
+      "sv": "En algoritm är kvadratisk när den jämför varje sak med alla andra saker. Med tio namn blir det ungefär hundra jämförelser, och med tusen namn ungefär en miljon. Därför fungerar en kvadratisk algoritm bra med lite data men blir mycket långsam när datamängden växer. En linjär algoritm växer bara lika mycket som indata, och en exponentiell växer ännu mycket snabbare än en kvadratisk.",
+      "ja": "アルゴリズムが{二乗|にじょう}になるのは、それぞれのものをほかのすべてのものと{比|くら}べるときです。{名前|なまえ}が10{個|こ}なら{比較|ひかく}はおよそ100{回|かい}、1000{個|こ}ならおよそ100{万回|まんかい}になります。そのため、{二乗|にじょう}のアルゴリズムはデータが{少|すく}なければうまくいきますが、データが{増|ふ}えるととても{遅|おそ}くなります。「linjär（{線形|せんけい}の）」アルゴリズムは{入力|にゅうりょく}と{同|おな}じだけしか{増|ふ}えず、「exponentiell（{指数関数的|しすうかんすうてき}な）」アルゴリズムは{二乗|にじょう}よりもさらにずっと{速|はや}く{増|ふ}えます。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "C1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.huvuddiagonal",
