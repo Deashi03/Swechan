@@ -128092,7 +128092,10 @@
    "kind": "illustration",
    "motif": "arkm.avlagring",
    "group": "avlagring",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.sedimentär.1"
+   ]
   },
   {
    "senseId": "s.profil.2",
@@ -133949,7 +133952,10 @@
    "kind": "illustration",
    "motif": "berg.hårdhetsskala",
    "group": "mineral.2",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.hårdhet.1"
+   ]
   },
   {
    "senseId": "s.repa-verb.1",
@@ -134857,7 +134863,10 @@
    "kind": "illustration",
    "motif": "istid.morän",
    "group": "morän",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.osorterad.1"
+   ]
   },
   {
    "senseId": "s.kantig.1",
@@ -173799,6 +173808,319 @@
     "hash": "52c656af",
     "method": "match",
     "waiver": "Förväxlas med praktikplats och universitet; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.vidsträckt.1",
+   "kind": "illustration",
+   "motif": "manl.vidsträckt",
+   "group": "b5-vidsträckt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "0d31e643",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sträcka-sig.1",
+   "kind": "illustration",
+   "motif": "manl.sträcka-sig",
+   "group": "b5-sträcka-sig",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "9a54e703",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.klippig.1",
+   "kind": "illustration",
+   "motif": "manl.klippig",
+   "group": "b5-klippig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "65594823",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.isolerad.2",
+   "kind": "illustration",
+   "motif": "manl.isolerad",
+   "group": "b5-isolerad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "fa7c5b02",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.naturskön.1",
+   "kind": "illustration",
+   "motif": "manl.naturskön",
+   "group": "b5-naturskön",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "d925cb3a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.storslagen.1",
+   "kind": "illustration",
+   "motif": "manl.storslagen",
+   "group": "b5-storslagen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "4df674ac",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sedimentär.1",
+   "kind": "illustration",
+   "motif": "manl.sedimentär",
+   "group": "b5-sedimentär",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.avlagring.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "24548e85",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.metamorf.1",
+   "kind": "illustration",
+   "motif": "manl.metamorf",
+   "group": "b5-metamorf",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "f8b6f349",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hårdhet.1",
+   "kind": "illustration",
+   "motif": "manl.hårdhet",
+   "group": "b5-hårdhet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.hårdhetsskala.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "02f62995",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.geologisk.1",
+   "kind": "illustration",
+   "motif": "manl.geologisk",
+   "group": "b5-geologisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "e971b7f9",
+    "method": "match",
+    "waiver": "Rätt bild men modulen har flera geologiska bilder och adjektivet är abstrakt; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.oceanisk.1",
+   "kind": "illustration",
+   "motif": "manl.oceanisk",
+   "group": "b5-oceanisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "34433dad",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tektonisk.1",
+   "kind": "illustration",
+   "motif": "manl.tektonisk",
+   "group": "b5-tektonisk",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.plattektonik.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "7c924fb0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.plattektonik.1",
+   "kind": "illustration",
+   "motif": "manl.plattektonik",
+   "group": "b5-plattektonik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "2d0ae673",
+    "method": "match"
+   },
+   "confusableWith": [
+    "s.tektonisk.1"
+   ]
+  },
+  {
+   "senseId": "s.vulkanisk.1",
+   "kind": "illustration",
+   "motif": "manl.vulkanisk",
+   "group": "b5-vulkanisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b6b61e2a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.erosion.1",
+   "kind": "illustration",
+   "motif": "manl.erosion",
+   "group": "b5-erosion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "1daa8d6d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.nedströms.1",
+   "kind": "illustration",
+   "motif": "manl.nedströms",
+   "group": "b5-nedströms",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "d1df1371",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.osorterad.1",
+   "kind": "illustration",
+   "motif": "manl.osorterad",
+   "group": "b5-osorterad",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.morän.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "ad9bddea",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sandig.1",
+   "kind": "illustration",
+   "motif": "manl.sandig",
+   "group": "b5-sandig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "26043c76",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.lerig.1",
+   "kind": "illustration",
+   "motif": "manl.lerig",
+   "group": "b5-lerig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "a91f9a9b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.lucker.1",
+   "kind": "illustration",
+   "motif": "manl.lucker",
+   "group": "b5-lucker",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "79ff1a77",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.omkomma.1",
+   "kind": "illustration",
+   "motif": "manl.omkomma",
+   "group": "b5-omkomma",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "efab3862",
+    "method": "match"
    }
   }
  ]
