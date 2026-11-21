@@ -106,6 +106,7 @@
        "ja": "パラメーターを{変|か}えると、{曲線|きょくせん}が{急|きゅう}になります。"
       }
      ],
+     "labelSv": "i matematik",
      "explanation": {
       "sv": "I formeln för en rät linje, y = k · x + m, är k och m parametrar. De är fasta för en viss linje, men olika för olika linjer. I en modell för trafik kan en parameter vara hur många bilar som kommer varje minut. Ordet används också i vardagen om något som påverkar ett resultat: Priset är bara en av flera parametrar.",
       "ja": "{直線|ちょくせん}の{式|しき}y = k · x + mでは、kとmがパラメーターです。ある{直線|ちょくせん}では{決|き}まった{値|あたい}ですが、{直線|ちょくせん}が{違|ちが}えば{値|あたい}も{違|ちが}います。{交通|こうつう}のモデルなら、1{分|ぷん}ごとに{何台|なんだい}の{車|くるま}が{来|く}るかがパラメーターになります。{日常|にちじょう}でも、{結果|けっか}に{影響|えいきょう}する{要素|ようそ}という{意味|いみ}で{使|つか}います：「{値段|ねだん}は{判断|はんだん}の{要素|ようそ}の{一|ひと}つにすぎない」。"
@@ -117,8 +118,48 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.parameter.2",
+     "ja": "（プログラミングの）パラメーター、{引数|ひきすう}",
+     "defSv": "Ett värde som man ger en funktion när man använder den, så att den vet vad den ska arbeta med.",
+     "defJa": "{関数|かんすう}を{使|つか}うときに{渡|わた}す{値|あたい}。{関数|かんすう}はそれを{使|つか}って{仕事|しごと}をする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Funktionen har två parametrar: bredd och höjd.",
+       "ja": "その{関数|かんすう}には「{幅|はば}」と「{高|たか}さ」という{二|ふた}つのパラメーターがあります。"
+      },
+      {
+       "sv": "Om du ändrar parametern, får du ett annat svar.",
+       "ja": "パラメーターを{変|か}えると、{違|ちが}う{答|こた}えが{出|で}ます。"
+      }
+     ],
+     "labelSv": "i programmering",
+     "collocations": [
+      "ta en parameter",
+      "skicka med en parameter",
+      "en funktion med två parametrar"
+     ],
+     "explanation": {
+      "sv": "En parameter är som en tom plats i funktionen som fylls i varje gång man använder den. En funktion som räknar ut en yta kan till exempel ha parametrarna bredd och höjd. Värdet som man skickar med kallas ibland argument, men i vardagen säger många programmerare parameter om båda. Parametrarna är det som går in i funktionen, och det som funktionen returnerar är det som kommer ut.",
+      "ja": "パラメーターは、{関数|かんすう}の{中|なか}の{空|あ}いた{場所|ばしょ}のようなもので、{関数|かんすう}を{使|つか}うたびにそこが{埋|う}められます。たとえば{面積|めんせき}を{計算|けいさん}する{関数|かんすう}なら、「{幅|はば}」と「{高|たか}さ」というパラメーターを{持|も}つでしょう。{実際|じっさい}に{渡|わた}す{値|あたい}は「argument（{引数|ひきすう}）」と{呼|よ}ばれることもありますが、ふだんは{両方|りょうほう}を「parameter」と{言|い}うプログラマーが{多|おお}いです。パラメーターは{関数|かんすう}に{入|はい}るもので、{関数|かんすう}が{返|かえ}すものは{出|で}てくるものです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "datorer"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.validera",

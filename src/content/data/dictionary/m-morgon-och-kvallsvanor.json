@@ -581,6 +581,7 @@
        "ja": "{私|わたし}はお{菓子|かし}を{食|た}べませんが、{今日|きょう}は{例外|れいがい}です。"
       }
      ],
+     "labelSv": "från en regel",
      "tags": [
       "vardag"
      ],
@@ -591,8 +592,48 @@
       "sv": "Ett undantag är något som inte följer den vanliga regeln. Om man aldrig äter godis men gör det på en fest, är festen ett undantag. ”Undantaget bekräftar regeln” är ett vanligt uttryck.",
       "ja": "「undantag」は、ふつうの{決|き}まりに{当|あ}てはまらないことです。お{菓子|かし}を{食|た}べない{人|ひと}がパーティーでだけ{食|た}べるなら、そのパーティーは{例外|れいがい}です。「{例外|れいがい}が{規則|きそく}を{証明|しょうめい}する」はよくある{言|い}い{回|まわ}しです。"
      }
+    },
+    {
+     "id": "s.undantag.2",
+     "ja": "（プログラミングの）{例外|れいがい}",
+     "defSv": "Ett problem som kommer plötsligt när datorn arbetar, och som koden måste ta hand om.",
+     "defJa": "コンピューターが{動|うご}いているときに{突然|とつぜん}{起|お}こり、コードが{対処|たいしょ}しなければならない{問題|もんだい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Koden tar hand om undantaget, så att appen inte stängs.",
+       "ja": "コードが{例外|れいがい}を{処理|しょり}するので、アプリは{閉|と}じません。"
+      },
+      {
+       "sv": "Ett undantag uppstod när filen inte fanns.",
+       "ja": "ファイルが{存在|そんざい}しなかったため、{例外|れいがい}が{発生|はっせい}しました。"
+      }
+     ],
+     "labelSv": "i programmering",
+     "collocations": [
+      "ta hand om ett undantag",
+      "fånga ett undantag",
+      "ett undantag uppstår"
+     ],
+     "explanation": {
+      "sv": "Ett undantag är ett problem som uppstår medan programmet körs, till exempel när någon skriver en bokstav där det ska stå en siffra, eller när internet försvinner. Om ingen del av koden tar hand om undantaget, kraschar programmet. Därför skriver programmerare kod som fångar undantag och visar ett tydligt meddelande i stället. En bugg är ett fel i själva koden, medan ett undantag kan uppstå även när koden är rätt skriven.",
+      "ja": "「undantag（{例外|れいがい}）」は、プログラムが{動|うご}いている{間|あいだ}に{起|お}こる{問題|もんだい}です。たとえば、{数字|すうじ}を{入|い}れるべきところに{文字|もじ}が{入力|にゅうりょく}されたときや、インターネットが{切|き}れたときです。コードのどの{部分|ぶぶん}も{例外|れいがい}を{処理|しょり}しなければ、プログラムはクラッシュします。そのためプログラマーは、{例外|れいがい}をとらえて、{代|か}わりにわかりやすいメッセージを{表示|ひょうじ}するコードを{書|か}きます。「bugg（バグ）」はコードそのものの{誤|あやま}りですが、{例外|れいがい}はコードが{正|ただ}しく{書|か}かれていても{起|お}こることがあります。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "problem"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   }
  ]
 }

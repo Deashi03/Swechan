@@ -1,0 +1,172 @@
+{
+ "id": "m.fel-och-undantag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Fel och undantag",
+ "titleJa": "エラーと{例外|れいがい}",
+ "descriptionSv": "Hur man pratar om fel i program: vad som händer när en app kraschar eller hänger sig, vilka sorters fel det finns och hur man letar efter orsaken och rättar felet.",
+ "descriptionJa": "プログラムのエラーについて{話|はな}す{方法|ほうほう}を{学|まな}びます。アプリがクラッシュしたりフリーズしたりしたときに{何|なに}が{起|お}こるか、どんな{種類|しゅるい}のエラーがあるか、そしてどうやって{原因|げんいん}を{探|さが}してエラーを{直|なお}すかを{学|まな}びます。",
+ "categoryId": "R07-A02-T01",
+ "tags": [
+  "programmering",
+  "teknik",
+  "problem"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.listor-och-objekt"
+ ],
+ "related": [],
+ "recommendedOrder": 3816,
+ "words": [
+  {
+   "senseId": "s.bugg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felmeddelande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krascha.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hänga-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.orsak.1",
+   "active": false
+  },
+  {
+   "senseId": "s.loggfil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.undantag.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ogiltig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oväntad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.syntaxfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stavfel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.logiskt-fel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åtgärda.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "När appen kraschar",
+  "paragraphs": [
+   "Biblioteksappen fungerar bra, tills Anna ringer till Kenji en dag. – Appen kraschade när jag skulle låna ut en bok, säger hon. Och i morse började appen hänga sig hela tiden. På skärmen stod det bara: ”Något gick fel.”",
+   "Kenji och Omar börjar felsöka. Först letar de efter orsaken i loggfilen. Där står ett felmeddelande med datum och tid. Programmet har fått ett undantag som ingen del av koden tar hand om.",
+   "Det visar sig att Anna har skrivit in ett ogiltigt kortnummer med bokstäver i. Programmet väntade sig bara siffror. – Det är en bugg, säger Omar. Programmet måste klara oväntade saker som användarna gör.",
+   "Sara förklarar att det finns olika sorters fel. Ett syntaxfel, till exempel ett stavfel eller en parentes som saknas, hittar datorn direkt. Ett logiskt fel är svårare: programmet kör, men svaret blir fel.",
+   "Kenji rättar koden, så att appen visar ett tydligt meddelande när kortnumret är ogiltigt. Nästa dag berättar Kenji för Anna att problemet är åtgärdat. En vecka senare ringer hon igen. – Nu har appen inte kraschat en enda gång, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad stod det på skärmen när appen kraschade?",
+    "options": [
+     "Välkommen tillbaka",
+     "Boken är redan utlånad",
+     "Fel lösenord",
+     "Något gick fel"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På skärmen stod det bara: ”Något gick fel.”",
+    "explanationJa": "{画面|がめん}には「{問題|もんだい}が{発生|はっせい}しました」とだけ{表示|ひょうじ}されていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var letar Kenji och Omar först efter orsaken?",
+    "options": [
+     "I en bok",
+     "Hos Sara",
+     "I Annas mobil",
+     "I loggfilen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först letar de efter orsaken i loggfilen.",
+    "explanationJa": "まずログファイルの{中|なか}で{原因|げんいん}を{探|さが}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför fick programmet ett undantag?",
+    "options": [
+     "Datorn var trasig",
+     "Anna skrev in ett kortnummer med bokstäver",
+     "Internet försvann",
+     "Sara hade ändrat koden"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det visar sig att Anna har skrivit in ett ogiltigt kortnummer med bokstäver i.",
+    "explanationJa": "アンナが{文字|もじ}の{入|はい}ったカード{番号|ばんごう}を{入力|にゅうりょく}したからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt Sara är ett logiskt fel lättare att hitta än ett syntaxfel.",
+    "correct": false,
+    "explanationSv": "Ett logiskt fel är svårare: programmet kör, men svaret blir fel.",
+    "explanationJa": "{論理|ろんり}エラーのほうが{見|み}つけにくいです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenjis ändring löste problemet.",
+    "correct": true,
+    "explanationSv": "– Nu har appen inte kraschat en enda gång, säger hon.",
+    "explanationJa": "その{後|ご}、アプリは{一度|いちど}もクラッシュしていません。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fel i datorer och appar och om hur man löser dem.",
+  "discussionPoints": [
+   "Har en app eller en dator kraschat för dig? Vad gjorde du då?",
+   "Vilket felmeddelande har du sett många gånger?",
+   "Hur brukar du felsöka när något går fel hemma?",
+   "Varför är det viktigt att en app klarar oväntade saker?"
+  ]
+ },
+ "standard": 2
+}

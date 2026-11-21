@@ -1,0 +1,172 @@
+{
+ "id": "m.kommentarer-och-dokumentation",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Kommentarer och dokumentation",
+ "titleJa": "コメントとドキュメント",
+ "descriptionSv": "Hur man pratar om att förklara kod för andra människor: varför kommentarer och dokumentation behövs, vad som gör kod läsbar och hur man tar över, granskar och sköter någon annans program.",
+ "descriptionJa": "コードをほかの{人|ひと}に{説明|せつめい}することについて{話|はな}す{方法|ほうほう}を{学|まな}びます。なぜコメントやドキュメントが{必要|ひつよう}なのか、{何|なに}がコードを{読|よ}みやすくするのか、そしてほかの{人|ひと}のプログラムをどう{引|ひ}き{継|つ}ぎ、{確認|かくにん}し、{維持|いじ}するのかを{学|まな}びます。",
+ "categoryId": "R07-A02-T01",
+ "tags": [
+  "programmering",
+  "teknik",
+  "arbete"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.fel-och-undantag"
+ ],
+ "related": [],
+ "recommendedOrder": 3817,
+ "words": [
+  {
+   "senseId": "s.kommentar.3",
+   "active": true
+  },
+  {
+   "senseId": "s.förklara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beskriva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dokumentera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dokumentation.2",
+   "active": true
+  },
+  {
+   "senseId": "s.instruktion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bruksanvisning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nybörjare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsbar.2",
+   "active": true
+  },
+  {
+   "senseId": "s.överskådlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.struktur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ta-över.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underhålla.2",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdatera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.granska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kodgranskning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Koden som ingen förstod",
+  "paragraphs": [
+   "Efter kursen får Kenji ett jobb som programmerare på ett litet företag i Malmö. Hans första uppgift är att ta över en app som kollegan Lisa har skrivit. Lisa ska snart sluta.",
+   "Kenji öppnar koden och blir förvånad. Det finns inga kommentarer, och variablerna heter bara a, b och x. Koden är inte alls läsbar. – Jag är ju nybörjare, och jag förstår ingenting, tänker han.",
+   "Lisa förklarar hur appen fungerar. – Jag borde ha dokumenterat bättre, säger hon. Tillsammans skriver de dokumentation: en text som beskriver vad varje del gör, och instruktioner för hur man startar appen. De ger också variablerna tydliga namn.",
+   "Sedan gör de koden mer överskådlig. De delar upp den i funktioner och ger den en tydlig struktur. Kenji skriver en kort kommentar ovanför varje funktion. – Nu blir appen mycket lättare att underhålla, säger Lisa.",
+   "Innan Kenji får uppdatera appen, gör hans chef Daniel en kodgranskning. Daniel granskar varje ändring och skriver några frågor. – Bra jobbat, säger han till sist. Bra dokumentation är som en bruksanvisning för nästa programmerare."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är Kenjis första uppgift på jobbet?",
+    "options": [
+     "Att skriva en helt ny app",
+     "Att gå en kurs till",
+     "Att ta över Lisas app",
+     "Att anställa en programmerare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hans första uppgift är att ta över en app som kollegan Lisa har skrivit.",
+    "explanationJa": "{最初|さいしょ}の{仕事|しごと}は、{同僚|どうりょう}のリサが{書|か}いたアプリを{引|ひ}き{継|つ}ぐことです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför är koden svår att förstå?",
+    "options": [
+     "Den är skriven på japanska",
+     "Datorn är för gammal",
+     "Den har inga kommentarer, och variablerna har dåliga namn",
+     "Lisa har tagit bort koden"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det finns inga kommentarer, och variablerna heter bara a, b och x.",
+    "explanationJa": "コメントがなく、{変数|へんすう}の{名前|なまえ}がa、b、xだけだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vem gör kodgranskningen?",
+    "options": [
+     "Lisa",
+     "Daniel",
+     "Kenji",
+     "Sara"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Innan Kenji får uppdatera appen, gör hans chef Daniel en kodgranskning.",
+    "explanationJa": "{上司|じょうし}のダニエルです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lisa tycker att hon har dokumenterat koden bra.",
+    "correct": false,
+    "explanationSv": "– Jag borde ha dokumenterat bättre, säger hon.",
+    "explanationJa": "リサは、もっとよく{記録|きろく}しておくべきだったと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Efter ändringarna blir det lättare för nästa programmerare att förstå appen.",
+    "correct": true,
+    "explanationSv": "Bra dokumentation är som en bruksanvisning för nästa programmerare.",
+    "explanationJa": "よいドキュメントは、{次|つぎ}のプログラマーにとって{説明書|せつめいしょ}のようなものです。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om instruktioner och dokumentation och om att ta över någon annans arbete.",
+  "discussionPoints": [
+   "Läser du bruksanvisningen innan du börjar använda något nytt?",
+   "Har du någon gång tagit över en uppgift från en kollega? Hur gick det?",
+   "Vad gör en text läsbar och överskådlig, tycker du?",
+   "Varför tror du att många programmerare inte skriver kommentarer?"
+  ]
+ },
+ "standard": 2
+}

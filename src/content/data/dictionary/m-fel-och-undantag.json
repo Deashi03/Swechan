@@ -1,0 +1,235 @@
+{
+ "entries": [
+  {
+   "id": "e.gå-fel",
+   "lemma": "gå fel",
+   "pos": "verb",
+   "level": "B1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "gå fel",
+    "present": "går fel",
+    "past": "gick fel",
+    "supine": "gått fel",
+    "imperative": "gå fel",
+    "group": "4"
+   },
+   "senses": [
+    {
+     "id": "s.gå-fel.1",
+     "ja": "うまくいかない、{失敗|しっぱい}する",
+     "defSv": "Inte bli som man hade tänkt eller planerat.",
+     "defJa": "{考|かんが}えていたとおり、または{計画|けいかく}していたとおりにならない。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Något gick fel, försök igen senare.",
+       "ja": "{問題|もんだい}が{発生|はっせい}しました。あとでもう{一度|いちど}お{試|ため}しください。"
+      },
+      {
+       "sv": "Vad var det som gick fel?",
+       "ja": "{何|なに}がうまくいかなかったのですか。"
+      }
+     ],
+     "labelSv": "misslyckas",
+     "tags": [
+      "programmering",
+      "teknik",
+      "problem"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.gå-fel.2",
+     "ja": "{道|みち}を{間違|まちが}える",
+     "defSv": "Gå åt fel håll, så att man inte kommer dit man ska.",
+     "defJa": "{違|ちが}う{方向|ほうこう}に{行|い}って、{目的地|もくてきち}に{着|つ}かない。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi gick fel och kom till en annan by.",
+       "ja": "{私|わたし}たちは{道|みち}を{間違|まちが}えて、{別|べつ}の{村|むら}に{着|つ}いてしまいました。"
+      }
+     ],
+     "labelSv": "gå åt fel håll",
+     "tags": [
+      "programmering",
+      "teknik",
+      "problem"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.syntaxfel",
+   "lemma": "syntaxfel",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "syntaxfel",
+    "defSg": "syntaxfelet",
+    "indefPl": "syntaxfel",
+    "defPl": "syntaxfelen"
+   },
+   "senses": [
+    {
+     "id": "s.syntaxfel.1",
+     "ja": "{構文|こうぶん}エラー",
+     "defSv": "Ett fel i hur koden är skriven, till exempel en parentes som saknas, så att datorn inte förstår den.",
+     "defJa": "（かっこが{足|た}りないなど）コードの{書|か}き{方|かた}の{誤|あやま}りで、コンピューターがそれを{理解|りかい}できないもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Programmet startar inte på grund av ett syntaxfel.",
+       "ja": "{構文|こうぶん}エラーのせいで、プログラムが{起動|きどう}しません。"
+      },
+      {
+       "sv": "Det saknas en parentes, och därför får du ett syntaxfel.",
+       "ja": "かっこが{一|ひと}つ{足|た}りないので、{構文|こうぶん}エラーになります。"
+      }
+     ],
+     "collocations": [
+      "få ett syntaxfel",
+      "hitta ett syntaxfel"
+     ],
+     "explanation": {
+      "sv": "Ett syntaxfel betyder att koden inte följer programmeringsspråkets regler, ungefär som ett grammatikfel i en mening. Det kan vara ett tecken som saknas eller ett stavfel i ett ord som språket använder. Datorn hittar oftast syntaxfel direkt. Ett logiskt fel är svårare: koden följer reglerna, men programmet gör ändå fel sak.",
+      "ja": "「syntaxfel（{構文|こうぶん}エラー）」は、コードがプログラミング{言語|げんご}の{規則|きそく}に{従|したが}っていないことです。{文|ぶん}の{文法|ぶんぽう}の{間違|まちが}いに{似|に}ています。{記号|きごう}が{一|ひと}つ{足|た}りなかったり、その{言語|げんご}の{単語|たんご}のつづりを{間違|まちが}えたりするのが{原因|げんいん}です。コンピューターはたいてい、{構文|こうぶん}エラーをすぐに{見|み}つけます。「logiskt fel（{論理|ろんり}エラー）」のほうが{難|むずか}しく、コードは{規則|きそく}どおりなのに、プログラムが{間違|まちが}ったことをします。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "problem"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Fackord som inte är ett eget uppslagsord i SO; betydelsen följer av leden syntax och fel."
+   }
+  },
+  {
+   "id": "e.logiskt-fel",
+   "lemma": "logiskt fel",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "logiskt fel",
+    "defSg": "logiska felet",
+    "indefPl": "logiska fel",
+    "defPl": "logiska felen"
+   },
+   "senses": [
+    {
+     "id": "s.logiskt-fel.1",
+     "ja": "{論理|ろんり}エラー",
+     "defSv": "Ett fel i hur ett program tänker: koden fungerar, men resultatet blir fel.",
+     "defJa": "プログラムの{考|かんが}え{方|かた}の{誤|あやま}り。コードは{動|うご}くが、{結果|けっか}が{間違|まちが}っている。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ett logiskt fel gjorde att appen räknade ut fel pris.",
+       "ja": "{論理|ろんり}エラーのせいで、アプリは{間違|まちが}った{値段|ねだん}を{計算|けいさん}しました。"
+      },
+      {
+       "sv": "Det tog två dagar att hitta det logiska felet.",
+       "ja": "{論理|ろんり}エラーを{見|み}つけるのに{二日|ふつか}かかりました。"
+      }
+     ],
+     "collocations": [
+      "hitta ett logiskt fel",
+      "ett logiskt fel i koden"
+     ],
+     "explanation": {
+      "sv": "Vid ett logiskt fel startar programmet och verkar fungera, men det gör inte det som programmeraren ville. Det kan till exempel räkna ut 2 + 2 och få 5. Därför är logiska fel ofta svårare att hitta än syntaxfel, som datorn själv säger till om.",
+      "ja": "{論理|ろんり}エラーがあると、プログラムは{起動|きどう}して{動|うご}いているように{見|み}えますが、プログラマーが{望|のぞ}んだことをしません。たとえば、2 + 2を{計算|けいさん}して5になることがあります。そのため{論理|ろんり}エラーは、コンピューター{自身|じしん}が{知|し}らせてくれる「syntaxfel（{構文|こうぶん}エラー）」よりも{見|み}つけにくいことが{多|おお}いのです。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "problem"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Fast förbindelse inom programmering som inte är ett eget uppslagsord i SO."
+   }
+  },
+  {
+   "id": "e.loggfil",
+   "lemma": "loggfil",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "loggfil",
+    "defSg": "loggfilen",
+    "indefPl": "loggfiler",
+    "defPl": "loggfilerna"
+   },
+   "senses": [
+    {
+     "id": "s.loggfil.1",
+     "ja": "ログファイル",
+     "defSv": "En fil där ett program skriver ner vad som händer och när, till exempel alla fel.",
+     "defJa": "プログラムが、エラーなど{何|なに}がいつ{起|お}こったかを{書|か}き{残|のこ}すファイル。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Felet står i loggfilen.",
+       "ja": "そのエラーはログファイルに{記録|きろく}されています。"
+      },
+      {
+       "sv": "Kenji letade i loggfilerna efter felmeddelandet.",
+       "ja": "ケンジはログファイルの{中|なか}からエラーメッセージを{探|さが}しました。"
+      }
+     ],
+     "collocations": [
+      "läsa loggfilen",
+      "skriva till en loggfil"
+     ],
+     "explanation": {
+      "sv": "En loggfil är som en dagbok för ett program. Programmet skriver en rad för varje viktig händelse, med datum och tid. När något har gått fel, kan man läsa loggfilen och se vad som hände precis innan.",
+      "ja": "ログファイルは、プログラムの{日記|にっき}のようなものです。プログラムは{大切|たいせつ}な{出来事|できごと}があるたびに、{日付|ひづけ}と{時刻|じこく}をつけて{一行|いちぎょう}{書|か}きます。{何|なに}かがうまくいかなかったとき、ログファイルを{読|よ}めば、その{直前|ちょくぜん}に{何|なに}が{起|お}こったかがわかります。"
+     },
+     "tags": [
+      "programmering",
+      "teknik",
+      "problem"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "note": "Sammansättning som inte är ett eget uppslagsord i SO; betydelsen följer av leden logg och fil."
+   }
+  }
+ ]
+}

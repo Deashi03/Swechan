@@ -1,0 +1,172 @@
+{
+ "id": "m.villkor-och-jamforelser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Villkor och jämförelser",
+ "titleJa": "{条件|じょうけん}と{比較|ひかく}",
+ "descriptionSv": "Hur man talar om de beslut som ett program fattar: hur datorn jämför två värden, vad som händer när ett villkor är sant eller falskt och hur man förklarar logiken bakom en app.",
+ "descriptionJa": "プログラムが{行|おこな}う{判断|はんだん}について{話|はな}す{方法|ほうほう}を{学|まな}びます。コンピューターが{二|ふた}つの{値|あたい}をどのように{比|くら}べるか、{条件|じょうけん}が{真|しん}または{偽|ぎ}のときに{何|なに}が{起|お}こるか、そしてアプリの{背後|はいご}にある{論理|ろんり}をどう{説明|せつめい}するかを{学|まな}びます。",
+ "categoryId": "R07-A02-T01",
+ "tags": [
+  "programmering",
+  "teknik",
+  "logik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.variabler-och-datatyper"
+ ],
+ "related": [],
+ "recommendedOrder": 3812,
+ "words": [
+  {
+   "senseId": "s.villkor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.villkorssats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppfylla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.annars.1",
+   "active": true
+  },
+  {
+   "senseId": "s.i-så-fall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämföra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämförelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.större-än.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mindre-än.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lika-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sann.1",
+   "active": true
+  },
+  {
+   "senseId": "s.falsk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sanningsvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.logisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stämma.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vem får komma in?",
+  "paragraphs": [
+   "Den andra veckan på kursen ska Kenji och de andra skriva en app för en bio. Appen ska kontrollera om en person får se en film som är förbjuden för barn under 15 år.",
+   "– Här behöver vi ett villkor, säger Sara. Vi skriver en villkorssats: om åldern är större än eller lika med 15, visar appen biljetten. Annars visar den ett meddelande. Villkoret är uppfyllt om personen är 15 år eller äldre.",
+   "Datorn gör en jämförelse mellan två värden, och svaret är alltid sant eller falskt. – Det kallas sanningsvärde, säger Sara. Om villkoret är falskt, visar programmet ingen biljett.",
+   "Kenjis kompis Omar testar appen. Han skriver in åldern 14, och appen säger nej. – Det stämmer, säger Kenji. 14 är mindre än 15. Sedan skriver Omar 15. – I så fall borde den säga ja, säger Omar. Men appen säger nej igen!",
+   "Kenji jämför koden med uppgiften. Han har skrivit ”större än 15” i stället för ”större än eller lika med 15”. – Det är ett vanligt fel, säger Sara. Datorn är helt logisk, den gör precis det som står i koden. Kenji ändrar koden, och nu fungerar appen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ska appen kontrollera?",
+    "options": [
+     "Om en person har betalat",
+     "Om en person är gammal nog att se filmen",
+     "Hur många som sitter på bion",
+     "Vilken film som är bäst"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Appen ska kontrollera om en person får se en film som är förbjuden för barn under 15 år.",
+    "explanationJa": "15{歳|さい}{未満|みまん}は{見|み}られない{映画|えいが}を、その{人|ひと}が{見|み}てもよいかどうかです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör appen om villkoret inte är uppfyllt?",
+    "options": [
+     "Den visar biljetten",
+     "Den stänger av sig",
+     "Den visar ett meddelande",
+     "Den frågar om åldern en gång till"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Annars visar den ett meddelande.",
+    "explanationJa": "{条件|じょうけん}が{満|み}たされない{場合|ばあい}は、メッセージを{表示|ひょうじ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför säger appen nej när Omar skriver 15?",
+    "options": [
+     "Kenji har skrivit fel villkor i koden",
+     "Omar är för ung",
+     "Datorn är trasig",
+     "Sara har ändrat koden"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han har skrivit ”större än 15” i stället för ”större än eller lika med 15”.",
+    "explanationJa": "ケンジがコードに{間違|まちが}った{条件|じょうけん}を{書|か}いたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Svaret på en jämförelse kan vara både sant och falskt.",
+    "correct": false,
+    "explanationSv": "Datorn gör en jämförelse mellan två värden, och svaret är alltid sant eller falskt.",
+    "explanationJa": "{答|こた}えはいつも{真|しん}か{偽|ぎ}のどちらかです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Datorn gjorde precis det som Kenji hade skrivit.",
+    "correct": true,
+    "explanationSv": "Datorn är helt logisk, den gör precis det som står i koden.",
+    "explanationJa": "コンピューターはコードに{書|か}かれたとおりに{動|うご}きます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om villkor och jämförelser i vardagen och i appar.",
+  "discussionPoints": [
+   "Vilka villkor måste vara uppfyllda för att du ska gå ut och springa?",
+   "Kan du ge ett exempel på en app som jämför två värden?",
+   "Vad gör du på helgen om det regnar, och vad gör du annars?",
+   "Varför är det bra att datorer är logiska? Finns det nackdelar?"
+  ]
+ },
+ "standard": 2
+}

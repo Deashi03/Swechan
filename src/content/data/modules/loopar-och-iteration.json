@@ -1,0 +1,168 @@
+{
+ "id": "m.loopar-och-iteration",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Loopar och iteration",
+ "titleJa": "ループと{反復|はんぷく}",
+ "descriptionSv": "Hur man beskriver upprepning i ett program: hur en loop fungerar och när den slutar, hur man håller reda på varven och hur man kan låta datorn ta över tråkiga uppgifter som upprepas.",
+ "descriptionJa": "プログラムの{中|なか}の{繰|く}り{返|かえ}しを{説明|せつめい}する{方法|ほうほう}を{学|まな}びます。ループがどのように{動|うご}き、いつ{終|お}わるのか、{回数|かいすう}をどう{数|かぞ}えるのか、そして{繰|く}り{返|かえ}しの{多|おお}い{退屈|たいくつ}な{作業|さぎょう}をどうコンピューターに{任|まか}せるのかを{学|まな}びます。",
+ "categoryId": "R07-A02-T01",
+ "tags": [
+  "programmering",
+  "teknik",
+  "arbete"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.villkor-och-jamforelser"
+ ],
+ "related": [],
+ "recommendedOrder": 3813,
+ "words": [
+  {
+   "senseId": "s.loop.2",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upprepning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.iteration.2",
+   "active": true
+  },
+  {
+   "senseId": "s.köra.3",
+   "active": true
+  },
+  {
+   "senseId": "s.räknare.2",
+   "active": true
+  },
+  {
+   "senseId": "s.öka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minska.1",
+   "active": false
+  },
+  {
+   "senseId": "s.så-länge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oändlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avbryta.2",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-igenom.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hoppa-över.1",
+   "active": false
+  },
+  {
+   "senseId": "s.repetitiv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.automatisera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hundra mejl på en minut",
+  "paragraphs": [
+   "Kenji jobbar på ett lager. Varje fredag måste han skicka ett mejl till alla hundra kunder om vad de har beställt. Det tar tre timmar, och arbetet är mycket repetitivt.",
+   "På kursen lär sig Kenji om loopar. – En loop upprepar samma kod om och om igen, säger Sara. Datorn går igenom en lista och gör samma sak för varje namn. Ett varv i loopen kallas en iteration.",
+   "De skriver en loop med en räknare. Räknaren börjar på ett och ökar med ett i varje iteration. Loopen fortsätter så länge räknaren är mindre än eller lika med hundra. En räknare kan också minska, till exempel om loopen ska räkna från tio till noll. – Glöm inte att räknaren måste ändras, säger Sara. Annars blir loopen oändlig.",
+   "Omar glömmer det. När han kör sitt program, skriver datorn samma rad hela tiden och slutar aldrig. Omar måste avbryta programmet. – Nu förstår jag varför upprepning kan vara farlig, skrattar han.",
+   "Hemma bestämmer sig Kenji för att automatisera sina fredagar. Han skriver en loop som hoppar över kunder som inte har beställt något och skickar ett mejl till alla andra. Nästa fredag tar arbetet en minut i stället för tre timmar. Kenjis chef blir mycket glad."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad måste Kenji göra varje fredag?",
+    "options": [
+     "Räkna alla varor på lagret",
+     "Skicka ett mejl till alla kunder",
+     "Gå på kursen",
+     "Ringa till sin chef"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Varje fredag måste han skicka ett mejl till alla hundra kunder om vad de har beställt.",
+    "explanationJa": "{毎週|まいしゅう}{金曜日|きんようび}に、100{人|にん}の{客|きゃく}{全員|ぜんいん}にメールを{送|おく}らなければなりません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad är en iteration?",
+    "options": [
+     "En lista med namn",
+     "Ett fel i programmet",
+     "Ett varv i loopen",
+     "En sorts dator"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett varv i loopen kallas en iteration.",
+    "explanationJa": "ループの{一回分|いっかいぶん}を「iteration」と{言|い}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blev Omars loop oändlig?",
+    "options": [
+     "Han glömde att räknaren måste ändras",
+     "Datorn var för gammal",
+     "Listan var för lång",
+     "Sara stängde av datorn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Glöm inte att räknaren måste ändras, säger Sara. Annars blir loopen oändlig.",
+    "explanationJa": "カウンターを{変|か}えるのを{忘|わす}れたので、ループが{終|お}わらなくなりました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kenjis program skickar mejl till alla kunder, också till dem som inte har beställt något.",
+    "correct": false,
+    "explanationSv": "Han skriver en loop som hoppar över kunder som inte har beställt något och skickar ett mejl till alla andra.",
+    "explanationJa": "{何|なに}も{注文|ちゅうもん}していない{客|きゃく}はとばします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji sparar mycket tid tack vare loopen.",
+    "correct": true,
+    "explanationSv": "Nästa fredag tar arbetet en minut i stället för tre timmar.",
+    "explanationJa": "3{時間|じかん}かかっていた{作業|さぎょう}が1{分|ぷん}で{終|お}わります。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om upprepning och om att låta datorer ta över arbete.",
+  "discussionPoints": [
+   "Vilka repetitiva uppgifter gör du hemma eller på jobbet?",
+   "Vad skulle du vilja automatisera i din vardag?",
+   "Finns det något som du gör om och om igen tills det blir rätt?",
+   "Tror du att många jobb kommer att automatiseras? Vilka?"
+  ]
+ },
+ "standard": 2
+}

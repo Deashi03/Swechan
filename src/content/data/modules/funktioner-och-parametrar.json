@@ -1,0 +1,168 @@
+{
+ "id": "m.funktioner-och-parametrar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Funktioner och parametrar",
+ "titleJa": "{関数|かんすう}とパラメーター",
+ "descriptionSv": "Hur man pratar om funktioner när man programmerar: hur ett stort problem delas upp i mindre delar, hur man ger en funktion det den behöver och hur den lämnar tillbaka ett svar.",
+ "descriptionJa": "プログラミングで{関数|かんすう}について{話|はな}す{方法|ほうほう}を{学|まな}びます。{大|おお}きな{問題|もんだい}をどう{小|ちい}さな{部分|ぶぶん}に{分|わ}けるか、{関数|かんすう}に{必要|ひつよう}なものをどう{渡|わた}すか、そして{関数|かんすう}がどのように{答|こた}えを{返|かえ}すかを{学|まな}びます。",
+ "categoryId": "R07-A02-T01",
+ "tags": [
+  "programmering",
+  "teknik",
+  "datorer"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.loopar-och-iteration"
+ ],
+ "related": [],
+ "recommendedOrder": 3814,
+ "words": [
+  {
+   "senseId": "s.funktion.3",
+   "active": true
+  },
+  {
+   "senseId": "s.dela-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.delproblem.1",
+   "active": false
+  },
+  {
+   "senseId": "s.steg-för-steg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.namnge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parameter.2",
+   "active": true
+  },
+  {
+   "senseId": "s.anropa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.skicka-med.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-emot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.indata.1",
+   "active": false
+  },
+  {
+   "senseId": "s.beräkna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.returnera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.utdata.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återanvända.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inbyggd.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En funktion för pizzan",
+  "paragraphs": [
+   "Kenjis program har blivit långt. Samma tio kodrader finns på fem olika ställen. – Då är det dags för funktioner, säger Sara. En funktion är en del av koden som har ett eget namn och gör en viss uppgift.",
+   "– Det är bra att dela upp ett stort problem i delproblem, säger hon. Varje delproblem kan bli en funktion, och man löser problemet steg för steg. Sedan namnger man funktionen så att alla förstår vad den gör.",
+   "Kenji skriver en funktion som beräknar priset på en beställning av pizzor. Funktionen har två parametrar: antalet pizzor och priset för en pizza. När Kenji anropar funktionen, måste han skicka med två värden. Funktionen tar emot dem som indata.",
+   "Funktionen räknar och returnerar sedan det totala priset. Programmet visar svaret på skärmen som utdata. – Nu kan du återanvända funktionen överallt, säger Sara. Du behöver bara skriva koden en gång.",
+   "Omar undrar om man måste skriva alla funktioner själv. – Nej, svarar Sara. Varje programmeringsspråk har många inbyggda funktioner, till exempel en som räknar hur många tecken en text har."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför behöver Kenji funktioner?",
+    "options": [
+     "Hans dator är för långsam",
+     "Sara vill äta pizza",
+     "Programmet har inga variabler",
+     "Samma kodrader finns på flera ställen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Samma tio kodrader finns på fem olika ställen.",
+    "explanationJa": "{同|おな}じ10{行|ぎょう}のコードが5か{所|しょ}にあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilka parametrar har Kenjis funktion?",
+    "options": [
+     "Kundens namn och ålder",
+     "Bredd och höjd",
+     "Adress och telefonnummer",
+     "Antalet pizzor och priset för en pizza"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Funktionen har två parametrar: antalet pizzor och priset för en pizza.",
+    "explanationJa": "ピザの{枚数|まいすう}と{一枚|いちまい}の{値段|ねだん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad returnerar funktionen?",
+    "options": [
+     "Antalet pizzor",
+     "Ett felmeddelande",
+     "Namnet på pizzan",
+     "Det totala priset"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Funktionen räknar och returnerar sedan det totala priset.",
+    "explanationJa": "{合計|ごうけい}{金額|きんがく}を{返|かえ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt Sara måste man skriva alla funktioner själv.",
+    "correct": false,
+    "explanationSv": "Varje programmeringsspråk har många inbyggda funktioner, till exempel en som räknar hur många tecken en text har.",
+    "explanationJa": "プログラミング{言語|げんご}には{組|く}み{込|こ}み{関数|かんすう}がたくさんあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Med funktionen blir Kenjis program kortare.",
+    "correct": true,
+    "explanationSv": "Du behöver bara skriva koden en gång.",
+    "explanationJa": "コードを{一度|いちど}{書|か}くだけでよいので、プログラムが{短|みじか}くなります。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att dela upp stora uppgifter och om funktioner i appar.",
+  "discussionPoints": [
+   "Hur brukar du dela upp en stor uppgift i mindre delar?",
+   "Vilka inbyggda funktioner i din mobil använder du varje dag?",
+   "Vilka saker återanvänder du hemma?",
+   "Vilken funktion skulle du vilja skriva för att göra din vardag enklare?"
+  ]
+ },
+ "standard": 2
+}
