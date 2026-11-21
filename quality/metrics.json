@@ -1,18 +1,18 @@
 {
  "_comment": "Lägstanivåer för kvalitetsmåtten. Skrivs av `npm run audit:content -- --update`. Redigera inte för hand.",
  "metrics": {
-  "B2+ förväxlingsord som inte nämns": 2174,
+  "B2+ förväxlingsord som inte nämns": 2226,
   "B2+ med ett exempel": 8459,
   "B2+ utan användningsuppgift": 8059,
   "abstrakt B1 utan förklaring": 1798,
   "avvikande läsning": 1,
   "beskrivning som bara räknar upp orden": 1495,
   "glosa med två betydelser": 3,
-  "ord med animation": 463,
-  "ord utan bild": 261,
-  "planerad animation saknas": 117,
+  "ord med animation": 487,
+  "ord utan bild": 100,
+  "planerad animation saknas": 101,
   "poster med flera betydelser": 787,
-  "verb och processord utan animation": 3797
+  "verb och processord utan animation": 3782
  },
  "exceptions": [
   {
@@ -70,6 +70,48 @@
    "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Kemi: flyktig/avdunsta, lösning/löslig)",
    "from": 2172,
    "to": 2174
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Medier: fem par, till exempel förtala/smutskasta och pressfrihet/tryckfrihet)",
+   "from": 2174,
+   "to": 2183
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Ekonomi: åtta par, till exempel konkurrent/konkurrens och riskspridning/sprida riskerna)",
+   "from": 2183,
+   "to": 2191
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Utbildning: tio par, till exempel lärande/inlärning och ämnesplan/kursplan)",
+   "from": 2191,
+   "to": 2203
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Landskap: fyra par, till exempel sedimentär/avlagring och tektonisk/plattektonik)",
+   "from": 2203,
+   "to": 2208
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Historia: åtta par, till exempel välfärdssamhälle/välfärdsstat och shogunat/shogun)",
+   "from": 2208,
+   "to": 2217
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "nya synonympar i B5 Politik & demokrati och Religion & idéhistoria (produktägarens beslut 2026-11-21)",
+   "from": 2217,
+   "to": 2226
   }
  ]
 }
