@@ -241,3 +241,9 @@ Alla tre förslagen är godkända och genomförda för de 22 orden:
 - **Synonymer** (`confusableWith`, resultat `synonym`): *empirisk/empirism*, *tvivla på/skeptisk*, *evidens/bevisning*, *lika möjligheter/likabehandling*, *tvång/påtvinga/tvinga*, *medvetenhet/medvetande*, *varande/existera*, *sken/skenet bedrar*, *livsuppgift/livsmål* och *existentialism/existensen föregår essensen*.
 - **Undantag** (`blindTest.result: "waived"` med skäl, bara för symbolbilder utan bildövning): *tro* (`s.tro.2`), *rättfärdiga*, *rättfärdigande*, *omoralisk*, *förnimmelse*, *handling*, *ha något att leva för*, *ond tro*, *egenvärde*, *numerisk*, *slumpförsök* och *sökning*.
 - **Det specifikare ordet som modulord**: inget ord togs bort ur sin modul. Undantaget täcker samma fall utan att ändra modulerna eller elevernas repetitionsdata.
+
+## 0.56 – Programmering & artificiell intelligens
+
+- **Underkända i första omgången, godkända omritade i andra:** *undantag*, *ramverk*, *modul*, *API*, *auktorisering*, *produktionsmiljö*, *översikt*, *statistisk* (punktmoln med trendlinje lästes som regression; nu histogram med klockkurva, folkmassa och %) och *stil* (samma träd i tre stilar förväxlades med *motiv* (`s.motiv.2`, samma motiv i olika stilar); nu samma scen i akvarell med pensel och som linjeteckning med blyerts).
+- **Manuellt spår:** *kvadratisk* godkänd ("2× fler → 4× mer arbete").
+- **Underkänd också i det manuella spåret:** *programmering* (`s.programmering.1`). Omgång 1 och 2 förväxlades med *programmerare*; den handritade bilden (veckoschema med programmeringslektionen ringad) förväxlades med *programmerare*/*koda*. Ämnet är svårt att skilja från handlingen och personen. Ordet är tills vidare borttaget som modulord. Förslag till produktägaren: (1) synonympar *programmering/programmera* och *programmering/koda* (`conf.py`), och ordet tillbaka i modulen med den handritade bilden, (2) `waived` som symbolbild utan bildövning, eller (3) låta det vara borttaget.
