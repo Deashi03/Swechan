@@ -219,10 +219,12 @@ export const DATAALG_MOTIFS: Record<string, Svg> = {
   /** konstant (tid): a chart with two axes; a thick orange line runs flat all the way, while a thin grey line climbs; on the flat line stand three identical small stopwatches; the flat line is framed. */
   'dalg.konstant-adj': all(bg(), axes(), greyed(line('M22 96 L104 26', '#7a8590', 1.8, '4 3')), line('M22 70 L104 70', HL, 4),
     ...[40, 64, 88].map((x) => stopwatch(x, 56, 6, 90, true)), frame(18, 62, 92, 16, 5)),
-  /** kvadratisk (om tillväxt): the same chart: a thick orange curve that bends up steeply while a yellow dot climbs along it, and a thin grey straight line; at the bottom right a small square grid of 4 × 4 cells; the steep curve is ringed at its top. */
-  'dalg.kvadratisk.2': all(bg(), axes(), greyed(line('M22 96 L104 56', '#7a8590', 1.8, '4 3')), line(curve((t) => t * t * 1.0), HL, 4),
-    moving('dalg-kvadr', '0%{transform:translate(-82px,76px)}35%{transform:translate(-41px,57px)}60%{transform:translate(-20.5px,33.2px)}85%,100%{transform:translate(0,0)}', { dur: 3 }, circle(104, 20, 4, YEL, C.ink, 1.2)),
-    ...range(16).map((i) => rect(66 + (i % 4) * 7, 66 + Math.floor(i / 4) * 6, 7, 6, (i % 4 + Math.floor(i / 4)) % 2 ? '#fde3c8' : '#f6b26b', 0, C.ink, 0.6)), oval(98, 30, 12, 16)),
+  /** kvadratisk (om tillväxt): no chart: three square grids side by side, 3 × 3, 4 × 4 and 5 × 5; along the top and left edge of each grid stand the same coloured items, so every cell is one item compared with another; the squares grow step by step, the cells of the biggest grid fill in, and the biggest grid is framed. */
+  'dalg.kvadratisk.2': all(bg(), ...[[3, 14, 16, 7], [4, 42, 42, 7], [5, 74, 70, 8]].map(([n, x, y, c], k) => { const N = Number(n), X = Number(x), Y = Number(y), Cc = Number(c);
+    const cellsOf = () => range(N * N).map((i) => rect(X + (i % N) * Cc, Y + Math.floor(i / N) * Cc, Cc, Cc, (i % N + Math.floor(i / N)) % 2 ? '#fde3c8' : '#f6b26b', 0, C.ink, 0.7));
+    return all(...range(N).map((i) => rect(X + i * Cc + 1, Y - 7, Cc - 2, 5, TILE[i]!, 1, C.ink, 0.6)), ...range(N).map((i) => rect(X - 7, Y + i * Cc + 1, 5, Cc - 2, TILE[i]!, 1, C.ink, 0.6)),
+      k === 2 ? moving('dalg-kvadr', '0%,10%{opacity:0}60%,100%{opacity:1}', { dur: 3 }, ...cellsOf()) : all(...cellsOf())); }),
+    frame(63, 59, 53, 53, 4)),
   /** logaritmisk: the same chart: a thick orange curve that rises fast at first and then flattens out while a yellow dot travels along it, and a thin grey straight line above it at the end; at the top right a bar that is cut in half again and again; the flat part of the curve is framed. */
   'dalg.logaritmisk': all(bg(), axes(), greyed(line('M22 96 L104 22', '#7a8590', 1.8, '4 3')), line(curve((t) => Math.log2(1 + 15 * t) / 4 * 0.55), HL, 4),
     moving('dalg-log', '0%{transform:translate(-82px,41.8px)}25%{transform:translate(-61.5px,18.3px)}50%{transform:translate(-41px,9.5px)}85%,100%{transform:translate(0,0)}', { dur: 3 }, circle(104, 54.2, 4, YEL, C.ink, 1.2)),
@@ -329,11 +331,12 @@ export const DATAALG_MOTIFS: Record<string, Svg> = {
     rect(61, 21, 44, 28, C.white, 2, '#c3cad2', 0.8), line('M65 42 L73 36 L80 39 L88 28 L96 31 L102 25', BLUE, 2),
     rect(15, 51, 44, 28, C.white, 2, '#c3cad2', 0.8), mono(37, 71, '98', 16, HL, 900),
     rect(61, 51, 44, 28, C.white, 2, '#c3cad2', 0.8), bars(66, 76, [8, 14, 11, 19, 16], 6, 2.4), frame(5, 11, 110, 78, 6)),
-  /** översikt: a map of a whole small town seen from above, with houses, roads, a river and a park, inside an orange frame; at the corner a small grey magnifier shows a single house close up. */
-  'dalg.översikt': all(bg(), rect(10, 10, 100, 84, '#e8f0e0', 3, null), path('M10 70 C34 60 60 84 110 66 L110 74 C60 92 34 68 10 78 Z', '#8cc7e8', null), line('M10 40 L110 36 M44 10 L50 94 M80 10 L84 94', C.white, 4),
-    ...[[24, 30], [32, 24], [62, 28], [70, 22], [96, 26], [24, 56], [64, 54], [96, 52], [30, 90], [66, 92]].map(([x, y], i) => rect(x! - 4, y! - 4, 8, 8, ['#e6c79c', '#d98c6a', '#c9d3dc'][i % 3]!, 1, C.ink, 0.8)),
-    circle(92, 84, 6, '#6fae5a', null), circle(100, 88, 5, '#6fae5a', null), frame(8, 8, 104, 88, 4),
-    greyed(at(100, 102, 0.55, circle(0, 0, 14, '#eef3f7', C.ink, 2), house(0, 8, 0.8), line('M10 10 L20 20', '#7a5030', 4)))),
+  /** översikt: a person in orange stands on top of a hill and looks out over a whole town; dashed lines of sight fan out over all the houses, roads and the river, and the whole town is framed; in the top left corner a grey person peeps through a small hole in a board and sees only one single house. */
+  'dalg.översikt': all(bg(), ground, path('M4 112 L4 70 C12 58 26 52 34 56 C40 62 44 90 46 112 Z', '#9cc98a', C.ink, 1.4), person(24, C.orange, { h: 0.42, hairStyle: 'long' }).replace(/translate\(24 [0-9.]+\)/, 'translate(24 39.7)'),
+    rect(50, 36, 64, 74, '#e8f0e0', 2, null), path('M50 90 C66 84 84 100 114 88 L114 95 C84 106 66 91 50 97 Z', '#8cc7e8', null), line('M50 62 L114 58 M74 36 L78 110 M98 36 L100 110', C.white, 3),
+    ...[[58, 46], [66, 52], [88, 44], [108, 48], [60, 76], [88, 70], [108, 74], [64, 104], [90, 104], [108, 104]].map(([x, y], i) => house(x!, y! + 4, 0.38, ['#e6c79c', '#d98c6a', '#c9d3dc'][i % 3]!)),
+    line('M28 34 L50 36 M28 34 L50 110 M28 34 L50 70', HL, 1.2, '3 2'), frame(48, 34, 68, 78, 3),
+    greyed(rect(6, 6, 34, 22, '#c8a070', 2, C.ink, 1.2), circle(28, 17, 3, '#2b2a33', null), bust(14, 18, 0.7, C.grey), house(44, 28, 0.3))),
   /** lyfta fram: a bar chart with five grey bars; the middle bar is orange, rises a little and glows, with small sparkles beside it; the orange bar is ringed. */
   'dalg.lyfta-fram': all(bg(), line('M10 96 L110 96', C.ink, 2), ...[24, 34, 0, 28, 20].map((h, i) => i === 2 ? '' : rect(14 + i * 20, 96 - h, 14, h, '#b7bec6', 1, C.ink, 1)),
     waBob('dalg-lyft', 4, rect(54, 40, 14, 56, HL, 1, C.ink, 1.4)), waPulse('dalg-lyft-glans', sparkle(76, 36, 5), sparkle(46, 30, 4)), oval(61, 66, 16, 36)),
