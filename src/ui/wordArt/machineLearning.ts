@@ -113,12 +113,17 @@ export const ML_MOTIFS: Record<string, Svg> = {
     ...range(8).map((i) => { const x = 30 + i * 8.6, y = 40 + ((i * 37) % 40); return all(line(`M${f1(x)} 34 L${f1(x)} 86`, '#9aa3ad', 1.8), i === 3 ? '' : rect(f1(x - 3.4), y - 2.5, 6.8, 5, '#f6b26b', 1.5, C.ink, 1)); }),
     moving('ml-par-slide', '0%,100%{transform:translate(0,0)}50%{transform:translate(0,-22px)}', { dur: 2.4 }, rect(f1(30 + 3 * 8.6 - 3.4), 70, 6.8, 5, HL, 1.5, C.ink, 1)),
     frame(18, 24, 84, 72, 5)),
-  /** statistisk: on the left a single grey dot with a small person; on the right a big cloud of many blue dots forming a rising band, with a smooth orange curve of how likely each value is; the cloud of many dots is framed. */
-  'mlrn.statistisk': all(bg(), greyed(dot(16, 60, BLUE, 3.4), circle(16, 82, 4, C.skin, C.ink, 1), rect(12, 86, 8, 12, C.sky, 2, C.ink, 1)),
-    axes(34, 100, 76, 82),
-    ...range(46).map((i) => { const x = 40 + ((i * 29) % 66), base = 92 - (x - 40) * 0.8, y = base - (((i * 53) % 21) - 10); return dot(x, f1(y), BLUE, 1.9); }),
-    line('M40 92 L106 39', HL, 2.4), line('M40 100 C52 100 56 70 70 70 C84 70 88 100 100 100', C.purple, 1.8, '3 2'),
-    frame(30, 14, 84, 92, 6)),
+  /** statistisk: a histogram of many blue bars rising to a peak in the middle and falling again, with a smooth orange bell curve over the bar tops and a dashed line at the peak; above it a small crowd of many tiny grey people from which the bars are counted, and "%" beside the peak; a single grey person alone on the left is crossed out; the histogram is framed. */
+  'mlrn.statistisk': all(bg(),
+    ...range(7).map((i) => circle(40 + i * 10, 14, 2.4, C.skin, C.ink, 0.7)), ...range(7).map((i) => rect(38.4 + i * 10, 17, 3.2, 6, '#9aa3ad', 1, C.ink, 0.6)),
+    ...range(6).map((i) => circle(45 + i * 10, 26, 2.4, C.skin, C.ink, 0.7)),
+    arr(74, 32, 74, 42, '#9aa3ad', 1.8),
+    greyed(circle(14, 60, 4, C.skin, C.ink, 1), rect(10, 64, 8, 12, C.sky, 2, C.ink, 1)), line('M6 52 L22 80 M22 52 L6 80', RED, 2.2),
+    axes(32, 102, 82, 54),
+    ...range(9).map((i) => { const x = 36 + i * 8.6, h = f1(46 * Math.exp(-(((i - 4) / 2) ** 2))) + 3; return rect(f1(x), f1(102 - h), 7.4, h, BLUE, 1, C.ink, 0.8); }),
+    path(`M33 101 ${range(41).map((j) => { const x = 33 + j * 2.05, t = (x - 73.3) / 17.2; return `L${f1(x)} ${f1(102 - 3 - 46 * Math.exp(-t * t))}`; }).join(' ')}`, 'none', HL, 2.6),
+    line('M73.3 102 L73.3 48', C.ink, 1.4, '3 2'), txt(96, 62, '%', 14, C.purple),
+    frame(28, 44, 88, 64, 6)),
 
   // ── 3853 Klassificering och regression ─────────────────────────────
   /** klassificering: photo cards ride along a belt; one card with a cat drops into the box marked with a cat face, the next card with a dog waits; two open boxes below are marked with a cat face and a dog face, and both boxes are framed. */
