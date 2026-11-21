@@ -43503,7 +43503,8 @@
    "confusableWith": [
     "s.hal.1",
     "s.blixthalka.1",
-    "s.sladda.1"
+    "s.sladda.1",
+    "s.halt-adj.1"
    ]
   },
   {
@@ -44972,7 +44973,8 @@
    "group": "dimma",
    "quiz": true,
    "confusableWith": [
-    "s.dålig-sikt.1"
+    "s.dålig-sikt.1",
+    "s.dimmig.1"
    ]
   },
   {
@@ -89668,7 +89670,10 @@
    "kind": "illustration",
    "motif": "ideo.klimatförändring",
    "group": "klimatförändring",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.global-uppvärmning.1"
+   ]
   },
   {
    "senseId": "s.utsläpp.1",
@@ -96733,7 +96738,10 @@
    "kind": "illustration",
    "motif": "pek.prisökning",
    "group": "ränta",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.stiga.1"
+   ]
   },
   {
    "senseId": "s.matpris.1",
@@ -106253,7 +106261,10 @@
    "kind": "illustration",
    "motif": "samh.krisberedskap",
    "group": "krisberedskap",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.hemberedskap.1"
+   ]
   },
   {
    "senseId": "s.VMA.1",
@@ -134600,7 +134611,10 @@
    "kind": "illustration",
    "motif": "vatt.kondensera",
    "group": "kondensera",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.kondensation.1"
+   ]
   },
   {
    "senseId": "s.nederbörd.1",
@@ -135709,7 +135723,10 @@
    "kind": "illustration",
    "motif": "vadr.vind.2",
    "group": "vind.2",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.blåsig.1"
+   ]
   },
   {
    "senseId": "s.blåsa.1",
@@ -135832,7 +135849,10 @@
    "kind": "illustration",
    "motif": "vadr.dis",
    "group": "dimmig",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.disig.1"
+   ]
   },
   {
    "senseId": "s.sikt.1",
@@ -136943,7 +136963,10 @@
    "kind": "illustration",
    "motif": "neder.frost",
    "group": "frost",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.frostig.1"
+   ]
   },
   {
    "senseId": "s.nattfrost.1",
@@ -137614,7 +137637,10 @@
    "kind": "illustration",
    "motif": "klimz.ökenklimat",
    "group": "ökenklimat",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.arid.1"
+   ]
   },
   {
    "senseId": "s.halvöken.1",
@@ -138023,7 +138049,10 @@
     "result": "pass",
     "round": "0.43.0",
     "hash": "5060ea16"
-   }
+   },
+   "confusableWith": [
+    "s.uppvärmning.2"
+   ]
   },
   {
    "senseId": "s.mätserie.1",
@@ -171706,6 +171735,523 @@
     "result": "pass",
     "round": "0.55.0",
     "hash": "9dae61da",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.strålande.1",
+   "kind": "illustration",
+   "motif": "manv.strålande",
+   "group": "b5-strålande",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "180f243d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.mulen.1",
+   "kind": "illustration",
+   "motif": "manv.mulen",
+   "group": "b5-mulen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "2c5d7593",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.regnig.1",
+   "kind": "illustration",
+   "motif": "manv.regnig",
+   "group": "b5-regnig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b3aa15ec",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.halt-adj.1",
+   "kind": "illustration",
+   "motif": "manv.halt-adj",
+   "group": "b5-halt-adj",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.halka-noun.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "2cc496e3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.blåsig.1",
+   "kind": "illustration",
+   "motif": "manv.blåsig",
+   "group": "b5-blåsig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.vind.2"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "688c0723",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dimmig.1",
+   "kind": "illustration",
+   "motif": "manv.dimmig",
+   "group": "b5-dimmig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.dimma.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "128bcbac",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.disig.1",
+   "kind": "illustration",
+   "motif": "manv.disig",
+   "group": "b5-disig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.dis.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "bc02dbd3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.mild.2",
+   "kind": "illustration",
+   "motif": "manv.mild",
+   "group": "b5-mild",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "33071bd4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hundkall.1",
+   "kind": "illustration",
+   "motif": "manv.hundkall",
+   "group": "b5-hundkall",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "0f82506d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.växlande-molnighet.1",
+   "kind": "illustration",
+   "motif": "manv.växlande-molnighet",
+   "group": "b5-växlande-molnighet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "899cab57",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.lufttryck.2",
+   "kind": "illustration",
+   "motif": "manv.lufttryck",
+   "group": "b5-lufttryck",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "eface3de",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hektopascal.1",
+   "kind": "illustration",
+   "motif": "manv.hektopascal",
+   "group": "b5-hektopascal",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "03680f89",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.stiga.1",
+   "kind": "illustration",
+   "motif": "manv.stiga",
+   "group": "b5-stiga",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.prisökning.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "2fe63f90",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.avdunstning.1",
+   "kind": "illustration",
+   "motif": "manv.avdunstning",
+   "group": "b5-avdunstning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "50214a0d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kondensation.1",
+   "kind": "illustration",
+   "motif": "manv.kondensation",
+   "group": "b5-kondensation",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.kondensera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "d3001c64",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.relativ-luftfuktighet.1",
+   "kind": "illustration",
+   "motif": "manv.relativ-luftfuktighet",
+   "group": "b5-relativ-luftfuktighet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b88c9a36",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.uppklarnande.1",
+   "kind": "illustration",
+   "motif": "manv.uppklarnande",
+   "group": "b5-uppklarnande",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "270b585a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.urladdning.1",
+   "kind": "illustration",
+   "motif": "manv.urladdning",
+   "group": "b5-urladdning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "1f9f8d37",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.frostig.1",
+   "kind": "illustration",
+   "motif": "manv.frostig",
+   "group": "b5-frostig",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.frost.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "f11cd359",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tränga-undan.1",
+   "kind": "illustration",
+   "motif": "manv.tränga-undan",
+   "group": "b5-tränga-undan",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "e6003c7d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.insnöad.1",
+   "kind": "illustration",
+   "motif": "manv.insnöad",
+   "group": "b5-insnöad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "5be14c34",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.framkomlighet.1",
+   "kind": "illustration",
+   "motif": "manv.framkomlighet",
+   "group": "b5-framkomlighet",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b08f7920",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.myndighet.1",
+   "kind": "illustration",
+   "motif": "manv.myndighet",
+   "group": "b5-myndighet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b347502a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hemberedskap.1",
+   "kind": "illustration",
+   "motif": "manv.hemberedskap",
+   "group": "b5-hemberedskap",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.krisberedskap.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "c2b64990",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.arid.1",
+   "kind": "illustration",
+   "motif": "manv.arid",
+   "group": "b5-arid",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.ökenklimat.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "f770de3f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kontinental.1",
+   "kind": "illustration",
+   "motif": "manv.kontinental",
+   "group": "b5-kontinental",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "32612292",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sträng.2",
+   "kind": "illustration",
+   "motif": "manv.sträng",
+   "group": "b5-sträng",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b436446e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.polar.1",
+   "kind": "illustration",
+   "motif": "manv.polar",
+   "group": "b5-polar",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "10855a57",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.uppvärmning.2",
+   "kind": "illustration",
+   "motif": "manv.uppvärmning",
+   "group": "b5-uppvärmning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "confusableWith": [
+    "s.temperaturökning.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "3f62199a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.global-uppvärmning.1",
+   "kind": "illustration",
+   "motif": "manv.global-uppvärmning",
+   "group": "b5-global-uppvärmning",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.klimatförändring.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "e57f1144",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.påverkan.2",
+   "kind": "illustration",
+   "motif": "manv.påverkan",
+   "group": "b5-påverkan",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "fd29362a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.självförstärkande.1",
+   "kind": "illustration",
+   "motif": "manv.självförstärkande",
+   "group": "b5-självförstärkande",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "dcde128e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.klimatmål.1",
+   "kind": "illustration",
+   "motif": "manv.klimatmål",
+   "group": "b5-klimatmål",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "049c7911",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.fossilfri.1",
+   "kind": "illustration",
+   "motif": "manv.fossilfri",
+   "group": "b5-fossilfri",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "1c9c73c7",
     "method": "match"
    }
   }
