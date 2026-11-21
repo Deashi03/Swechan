@@ -122,14 +122,6 @@ const backpack = (x: number, y: number) => all(rect(x - 7, y - 10, 14, 18, '#3a6
 
 export const PROG_MOTIFS: Record<string, Svg> = {
   // ── 3811 Variabler och datatyper ───────────────────────────────────
-  /** programmering (ämnet, manuellt spår): a school timetable for a week, five day columns and four lesson rows, with no computer and no person; every lesson is a small subject icon (plus and minus, the letters Aa, a music note, a ball); the lessons with the code sign { } are bright blue-black, all other lessons are grey, and one { } lesson is ringed. */
-  'prog.programmering': all(bg(), rect(8, 10, 104, 98, C.white, 4, C.ink, 1.6), rect(8, 10, 104, 14, '#5a8ad0', 4, null), rect(8, 18, 104, 6, '#5a8ad0', 0, null),
-    ...range(5).map((d) => circle(23 + d * 19, 17, 3, C.white, null)),
-    ...range(20).map((k) => { const d = k % 5, r = Math.floor(k / 5), x = 14 + d * 19, y = 30 + r * 19, s = [0, 4, 2, 1, 4, 1, 3, 4, 0, 2, 2, 0, 1, 4, 3, 3, 1, 2, 0, 4][k]!;
-      if (s === 4) return all(rect(x, y, 17, 16, ED, 2, C.ink, 1.2), mono(x + 8.5, y + 11.5, '{}', 9, KW, 800));
-      const icon = [txt(x + 8.5, y + 11.5, '+−', 8, C.white, 900), txt(x + 8.5, y + 11.5, 'Aa', 7.5, C.white, 900), all(path(`M${x + 7} ${y + 12} L${x + 7} ${y + 4} L${x + 12} ${y + 3} L${x + 12} ${y + 11}`, 'none', C.white, 1.3), circle(x + 6, y + 12, 1.6, C.white, null), circle(x + 11, y + 11, 1.6, C.white, null)), all(circle(x + 8.5, y + 8, 4.5, C.white, null), line(`M${x + 4} ${y + 8} L${x + 13} ${y + 8}`, C.grey, 0.8))][s]!;
-      return greyed(rect(x, y, 17, 16, ['#d96a5a', '#5a8ad0', '#6aa86a', '#e0a040'][s]!, 2, C.ink, 1), icon); }),
-    ring(41.5, 46, 14)),
   /** programmeringsspråk: three speech bubbles, each with code in its own sign system: curly braces, angle brackets with a slash, and round brackets; all three bubbles together are framed. */
   'prog.programmeringsspråk': all(bg(),
     path('M8 14 L58 14 L58 46 L22 46 L14 54 L16 46 L8 46 Z', ED, C.ink, 1.4), mono(20, 36, '{', 16, KW), code(26, 25, [[0, 16, ID], [4, 14, STR], [0, 12, NUM]], 6, 2.4), mono(52, 42, '}', 12, KW),
