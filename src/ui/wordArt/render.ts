@@ -240,6 +240,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'manu.': () => import('./manualEducation').then((m) => m.MANUAL_EDUCATION_MOTIFS),
   'manl.': () => import('./manualLandscape').then((m) => m.MANUAL_LANDSCAPE_MOTIFS),
   'manh.': () => import('./manualHistory1').then((m) => m.MANUAL_HISTORY1_MOTIFS),
+  'manr.': () => import('./manualPoliticsReligion').then((m) => m.MANUAL_POLITICS_RELIGION_MOTIFS),
 };
 const loaded: Motifs = {};
 const pending = new Map<string, Promise<void>>();

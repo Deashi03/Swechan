@@ -1,17 +1,17 @@
 {
  "_comment": "Lägstanivåer för kvalitetsmåtten. Skrivs av `npm run audit:content -- --update`. Redigera inte för hand.",
  "metrics": {
-  "B2+ förväxlingsord som inte nämns": 2217,
+  "B2+ förväxlingsord som inte nämns": 2226,
   "B2+ med ett exempel": 8459,
   "B2+ utan användningsuppgift": 8059,
   "abstrakt B1 utan förklaring": 1798,
   "beskrivning som bara räknar upp orden": 1495,
   "glosa med två betydelser": 3,
-  "ord med animation": 482,
-  "ord utan bild": 131,
-  "planerad animation saknas": 104,
+  "ord med animation": 487,
+  "ord utan bild": 100,
+  "planerad animation saknas": 101,
   "poster med flera betydelser": 754,
-  "verb och processord utan animation": 3785
+  "verb och processord utan animation": 3782
  },
  "exceptions": [
   {
@@ -104,6 +104,13 @@
    "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Historia: åtta par, till exempel välfärdssamhälle/välfärdsstat och shogunat/shogun)",
    "from": 2208,
    "to": 2217
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "nya synonympar i B5 Politik & demokrati och Religion & idéhistoria (produktägarens beslut 2026-11-21)",
+   "from": 2217,
+   "to": 2226
   }
  ]
 }

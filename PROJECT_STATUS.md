@@ -12,7 +12,7 @@ Läs den här filen först. Historik: `changelog/` (en fil per release eller eta
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
 - **Innehåll:** 1 559 publicerade moduler: R01–R05 hela, R06 *Matematik & naturvetenskap* hela och *Datorer & internet* (R07-A01, 0.55, första överämnet som skrivits enligt standard 2). Katalogen har 2 016 planerade moduler i 344 kategorier. Nästa överämne är *Programmering & artificiell intelligens* (R07-A02).
-- **Bilder:** 16 376 ordbilder, 398 rörliga. 131 modulord väntar i det manuella bildspåret (se nedan). Symbol- och adjektivbilder har klarat ett oberoende blindtest.
+- **Bilder:** 16 376 ordbilder, 398 rörliga. 100 modulord väntar i det manuella bildspåret (se nedan). Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Kvalitetssystemet (kvalitetsplanen A2–A7, 2026-11-19):**
   - `npm run audit:content -- --check` i CI: 23 kvalitetsmått för de befintliga modulerna får inte bli sämre (`quality/metrics.json`), och nya moduler måste uppfylla kontraktet (`quality/contract.json`, `"standard": 2`).
   - `contentVersion` sätts automatiskt (`npm run content:version`, kontrolleras i CI).
@@ -33,7 +33,7 @@ Läs den här filen först. Historik: `changelog/` (en fil per release eller eta
 
 ## Saknade bilder
 
-131 modulord väntar i det manuella bildspåret (`status: "manual"` i planen). B5 tar en ämnesgrupp i taget; Avancerad matematik och Filosofi & etik (2026-11-20), Juridik & rättsväsende, Ekologi & miljö, Fysik, Matematikens grunder, Väder & klimat, Kemi, Medier & samhällsdebatt, Ekonomi & arbetsliv, Utbildning & lärande, Landskap & geologi, Historiska epoker och Civilisationer (2026-11-21) är klara, nästa är Politik & demokrati (16), Religion & idéhistoria (15) och Militärhistoria (15). Efter två underkända omgångar gäller produktägarens regel: synonympar (`conf.py`) eller undantag (`waived`), se produktionsbriefen. Produktägaren beslutade 2026-11-21 om de 22 ord som underkänts två gånger: synonympar eller undantag (`blindTest.result: "waived"`), se `quality/visual-manual-notes.md`. Kö: `npm run audit:content -- --backlog` → `quality/backlog/ord-utan-bild.json`. Förväxlingar från blindtesten: `quality/visual-manual-notes.md`.
+100 modulord väntar i det manuella bildspåret (`status: "manual"` i planen). B5 tar en ämnesgrupp i taget; Avancerad matematik och Filosofi & etik (2026-11-20), Juridik & rättsväsende, Ekologi & miljö, Fysik, Matematikens grunder, Väder & klimat, Kemi, Medier & samhällsdebatt, Ekonomi & arbetsliv, Utbildning & lärande, Landskap & geologi, Historiska epoker, Civilisationer, Politik & demokrati och Religion & idéhistoria (2026-11-21) är klara, nästa är Militärhistoria (15) och Arkeologi (14). Efter två underkända omgångar gäller produktägarens regel: synonympar (`conf.py`) eller undantag (`waived`), se produktionsbriefen. Produktägaren beslutade 2026-11-21 om de 22 ord som underkänts två gånger: synonympar eller undantag (`blindTest.result: "waived"`), se `quality/visual-manual-notes.md`. Kö: `npm run audit:content -- --backlog` → `quality/backlog/ord-utan-bild.json`. Förväxlingar från blindtesten: `quality/visual-manual-notes.md`.
 
 ## Öppna osäkerheter
 
