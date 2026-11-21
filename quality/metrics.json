@@ -1,17 +1,17 @@
 {
  "_comment": "Lägstanivåer för kvalitetsmåtten. Skrivs av `npm run audit:content -- --update`. Redigera inte för hand.",
  "metrics": {
-  "B2+ förväxlingsord som inte nämns": 2172,
+  "B2+ förväxlingsord som inte nämns": 2174,
   "B2+ med ett exempel": 8459,
   "B2+ utan användningsuppgift": 8059,
   "abstrakt B1 utan förklaring": 1798,
   "beskrivning som bara räknar upp orden": 1495,
   "glosa med två betydelser": 3,
-  "ord med animation": 458,
-  "ord utan bild": 288,
-  "planerad animation saknas": 119,
+  "ord med animation": 463,
+  "ord utan bild": 261,
+  "planerad animation saknas": 117,
   "poster med flera betydelser": 754,
-  "verb och processord utan animation": 3799
+  "verb och processord utan animation": 3797
  },
  "exceptions": [
   {
@@ -62,6 +62,13 @@
    "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Väder & klimat: elva par, till exempel dimmig/dimma och frostig/frost)",
    "from": 2167,
    "to": 2172
+  },
+  {
+   "date": "2026-11-21",
+   "metric": "B2+ förväxlingsord som inte nämns",
+   "reason": "produktägaren godkände 2026-11-21 att ordpar från matchningstestet i B5 räknas som synonymer (Kemi: flyktig/avdunsta, lösning/löslig)",
+   "from": 2172,
+   "to": 2174
   }
  ]
 }
