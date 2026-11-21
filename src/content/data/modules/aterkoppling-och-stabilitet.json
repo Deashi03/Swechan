@@ -1,0 +1,172 @@
+{
+ "id": "m.aterkoppling-och-stabilitet",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Återkoppling och stabilitet",
+ "titleJa": "フィードバックと{安定性|あんていせい}",
+ "descriptionSv": "Du lär dig att förklara varför vissa system lugnar ner sig och andra skenar iväg: hur en fördröjning kan få ett värde att svänga, hur man rättar till en förändring och hur små orsaker kan växa sig stora, både i tekniken och i livet.",
+ "descriptionJa": "なぜ{落|お}ち{着|つ}くシステムと{暴走|ぼうそう}するシステムがあるのかを{説明|せつめい}できるようになります。{遅|おく}れがあると{値|あたい}がなぜ{揺|ゆ}れるのか、{変化|へんか}をどう{直|なお}すのか、そして{小|ちい}さな{原因|げんいん}がどう{大|おお}きく{育|そだ}つのかを、{技術|ぎじゅつ}と{生活|せいかつ}の{両方|りょうほう}から{学|まな}びます。",
+ "categoryId": "R07-A03-T06",
+ "tags": [
+  "el",
+  "teknik",
+  "automation"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.industrirobotar"
+ ],
+ "related": [],
+ "recommendedOrder": 3966,
+ "words": [
+  {
+   "senseId": "s.återkoppling.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stabil.3",
+   "active": true
+  },
+  {
+   "senseId": "s.pendla.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fördröjning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trög.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överreagera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dämpa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förstärka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korrigera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motverka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jämvikt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.balans.1",
+   "active": false
+  },
+  {
+   "senseId": "s.självreglerande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ond-cirkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snöbollseffekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.eskalera.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Duschen som aldrig blir rätt",
+  "paragraphs": [
+   "Kenji bor i en gammal studentkorridor i Lund. Varje morgon kämpar han med duschen. Först är vattnet för kallt, så han vrider kranen mot varmt. Ingenting händer. Han vrider lite till. Plötsligt blir det alldeles för varmt.",
+   "Han vrider tillbaka, och snart är det iskallt igen. Temperaturen pendlar fram och tillbaka. – Problemet är fördröjningen, förklarar Elsa, som bor i samma korridor och läser till ingenjör. Det tar flera sekunder innan det nya vattnet kommer fram. Systemet är trögt, och då överreagerar du.",
+   "– Det du gör är en sorts återkoppling, fortsätter Elsa. Du känner på vattnet och korrigerar. Men om du ändrar för mycket och för snabbt blir det aldrig stabilt. Vänta lite mellan varje ändring, så dämpar du ändringarna.",
+   "Elsa berättar att samma sak finns överallt. En termostat motverkar kylan: när det blir kallt ger den mer värme. Kroppen är också självreglerande. När du blir varm börjar du svettas, och då kyls du ner. Det kallas negativ återkoppling, och den skapar jämvikt och balans.",
+   "– Men det finns också positiv återkoppling, säger Elsa. Den förstärker en förändring i stället. Tänk på ett gräl som eskalerar: ett argt ord leder till ett ännu argare svar. Det blir en ond cirkel, en snöbollseffekt som är svår att stoppa."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är problemet med duschen enligt Elsa?",
+    "options": [
+     "Det tar flera sekunder innan det nya vattnet kommer fram",
+     "Kranen är trasig",
+     "Vattnet är för smutsigt",
+     "Kenji duschar för länge"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Problemet är fördröjningen … Det tar flera sekunder innan det nya vattnet kommer fram.",
+    "explanationJa": "{新|あたら}しい{水|みず}が{届|とど}くまでに{数秒|すうびょう}かかる「{遅|おく}れ」が{問題|もんだい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad råder Elsa Kenji att göra?",
+    "options": [
+     "Vänta lite mellan varje ändring",
+     "Vrida kranen snabbare",
+     "Duscha på kvällen i stället",
+     "Byta till en ny dusch"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vänta lite mellan varje ändring, så dämpar du ändringarna.",
+    "explanationJa": "{変|か}えるたびに{少|すこ}し{待|ま}つようにと{言|い}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör kroppen när den blir varm?",
+    "options": [
+     "Den börjar darra",
+     "Den blir trög",
+     "Den slutar reagera",
+     "Den börjar svettas"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "När du blir varm börjar du svettas, och då kyls du ner.",
+    "explanationJa": "{暑|あつ}くなると{汗|あせ}をかき、それで{体|からだ}が{冷|ひ}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Positiv återkoppling gör en förändring mindre.",
+    "correct": false,
+    "explanationSv": "Den förstärker en förändring i stället.",
+    "explanationJa": "{正|せい}のフィードバックは、{変化|へんか}を{小|ちい}さくするのではなく{大|おお}きくします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji gör för stora ändringar när han vrider på kranen.",
+    "correct": true,
+    "explanationSv": "Systemet är trögt, och då överreagerar du.",
+    "explanationJa": "{反応|はんのう}が{遅|おそ}いシステムなので、ケンジは{変|か}えすぎています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om saker som svänger fram och tillbaka och om saker som växer av sig själva.",
+  "discussionPoints": [
+   "Har du haft en dusch som var svår att få lagom varm? Vad gjorde du?",
+   "När överreagerar du lätt, och när tar du det lugnt?",
+   "Kan du ge ett exempel på en ond cirkel från vardagen eller från nyheterna?",
+   "Vad gör du för att hålla balans i livet?"
+  ]
+ },
+ "standard": 2
+}

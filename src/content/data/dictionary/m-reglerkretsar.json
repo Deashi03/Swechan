@@ -1,0 +1,460 @@
+{
+ "entries": [
+  {
+   "id": "e.reglerkrets",
+   "lemma": "reglerkrets",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "reglerkrets",
+    "defSg": "reglerkretsen",
+    "indefPl": "reglerkretsar",
+    "defPl": "reglerkretsarna"
+   },
+   "senses": [
+    {
+     "id": "s.reglerkrets.1",
+     "ja": "{制御|せいぎょ}ループ、フィードバック{制御|せいぎょ}",
+     "defSv": "Ett system där en mätgivare mäter något, en del jämför värdet med det man vill ha och en annan del ändrar på det, om och om igen.",
+     "defJa": "センサーが{何|なに}かを{測|はか}り、ある{部分|ぶぶん}がその{値|あたい}を{目標|もくひょう}と{比|くら}べ、{別|べつ}の{部分|ぶぶん}がそれを{直|なお}す、ということをくり{返|かえ}すしくみ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Värmen i huset styrs av en enkel reglerkrets.",
+       "ja": "{家|いえ}の{暖房|だんぼう}は、{簡単|かんたん}な{制御|せいぎょ}ループで{制御|せいぎょ}されています。"
+      },
+      {
+       "sv": "I reglerkretsar finns det alltid något som mäter och något som ändrar.",
+       "ja": "{制御|せいぎょ}ループには、いつも{測|はか}るものと{変|か}えるものがあります。"
+      }
+     ],
+     "collocations": [
+      "en enkel reglerkrets",
+      "reglerkretsen jämför …",
+      "en sluten reglerkrets"
+     ],
+     "explanation": {
+      "sv": "En reglerkrets är en ring av steg som upprepas hela tiden: mät, jämför, ändra, mät igen. Ett exempel är toaletten, som fylls på med vatten tills det når rätt nivå. En reglerkrets kan vara elektrisk, men den kan också fungera helt utan el.",
+      "ja": "{制御|せいぎょ}ループとは、「{測|はか}る、{比|くら}べる、{変|か}える、また{測|はか}る」という{手順|てじゅん}がずっとくり{返|かえ}される{輪|わ}のことです。たとえばトイレは、{水|みず}がちょうどよい{高|たか}さになるまで{水|みず}をためます。{制御|せいぎょ}ループは{電気|でんき}を{使|つか}うこともありますが、{電気|でんき}をまったく{使|つか}わずに{動|うご}くこともあります。"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.styra",
+   "lemma": "styra",
+   "pos": "verb",
+   "level": "B1",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "styra",
+    "present": "styr",
+    "past": "styrde",
+    "supine": "styrt",
+    "imperative": "styr",
+    "group": "2",
+    "pastParticiple": "styrd"
+   },
+   "senses": [
+    {
+     "id": "s.styra.1",
+     "ja": "（{乗|の}り{物|もの}を）{操縦|そうじゅう}する",
+     "defSv": "Bestämma åt vilket håll en bil, en cykel eller en båt ska åka.",
+     "defJa": "{車|くるま}、{自転車|じてんしゃ}、{船|ふね}などが{進|すす}む{方向|ほうこう}を{決|き}める。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon styrde cykeln runt hålet i vägen.",
+       "ja": "{彼女|かのじょ}は{道|みち}の{穴|あな}をよけて{自転車|じてんしゃ}を{走|はし}らせました。"
+      }
+     ],
+     "labelSv": "fordon",
+     "frame": {
+      "subject": "Hon",
+      "complement": "båten"
+     },
+     "tags": [
+      "trafik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.styra.2",
+     "ja": "{治|おさ}める、{運営|うんえい}する",
+     "defSv": "Bestämma över ett land, en organisation eller ett företag.",
+     "defJa": "{国|くに}、{団体|だんたい}、{会社|かいしゃ}を{取|と}りまとめて{動|うご}かす。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Samma parti har styrt kommunen i åtta år.",
+       "ja": "{同|おな}じ{政党|せいとう}が8{年間|ねんかん}、{市|し}を{運営|うんえい}しています。"
+      }
+     ],
+     "labelSv": "leda",
+     "frame": {
+      "subject": "Regeringen",
+      "complement": "landet"
+     },
+     "tags": [
+      "samhälle"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    },
+    {
+     "id": "s.styra.3",
+     "ja": "（{機械|きかい}を）{制御|せいぎょ}する、{操作|そうさ}する",
+     "defSv": "Få en maskin eller en apparat att arbeta på ett visst sätt, till exempel med en knapp, ett program eller en mobil.",
+     "defJa": "ボタン、プログラム、スマートフォンなどで、{機械|きかい}や{装置|そうち}を{決|き}まったやり{方|かた}で{動|うご}かす。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ett litet program styr pumpen i källaren.",
+       "ja": "{小|ちい}さなプログラムが{地下室|ちかしつ}のポンプを{制御|せいぎょ}しています。"
+      },
+      {
+       "sv": "Ljuset i hela huset styrs från en enda knapp.",
+       "ja": "{家|いえ}{全体|ぜんたい}の{明|あ}かりが、たった{一|ひと}つのボタンで{操作|そうさ}されています。"
+      }
+     ],
+     "labelSv": "apparat",
+     "collocations": [
+      "styra värmen med mobilen",
+      "styra en motor",
+      "styras av ett program"
+     ],
+     "explanation": {
+      "sv": "När något styr en apparat bestämmer det vad apparaten ska göra och när. Det kan vara en människa med en knapp, men ofta är det ett program eller en reglerkrets.",
+      "ja": "{何|なに}かが{装置|そうち}を「styra」するとは、その{装置|そうち}が{何|なに}をいつするかを{決|き}めることです。ボタンを{押|お}す{人|ひと}のこともありますが、プログラムや{制御|せいぎょ}ループであることがよくあります。"
+     },
+     "frame": {
+      "subject": "Datorn",
+      "complement": "värmen"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "coreSense": "s.styra.1"
+   }
+  },
+  {
+   "id": "e.börvärde",
+   "lemma": "börvärde",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "börvärde",
+    "defSg": "börvärdet",
+    "indefPl": "börvärden",
+    "defPl": "börvärdena"
+   },
+   "senses": [
+    {
+     "id": "s.börvärde.1",
+     "ja": "{目標値|もくひょうち}、{設定値|せっていち}",
+     "defSv": "Det värde som man vill att en reglerkrets ska hålla, till exempel 21 grader inomhus.",
+     "defJa": "{制御|せいぎょ}ループに{保|たも}ってほしい{値|あたい}。たとえば{室内|しつない}21{度|ど}など。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Börvärdet för vattnet är 60 grader.",
+       "ja": "{水|みず}の{目標値|もくひょうち}は60{度|ど}です。"
+      },
+      {
+       "sv": "Termostaten jämför mätvärdet med börvärdet hela tiden.",
+       "ja": "サーモスタットは、{測定値|そくていち}と{目標値|もくひょうち}をいつも{比|くら}べています。"
+      }
+     ],
+     "collocations": [
+      "ställa in börvärdet",
+      "ändra börvärdet",
+      "börvärdet är …"
+     ],
+     "explanation": {
+      "sv": "Börvärdet är målet, alltså det värde som det bör vara. Mätvärdet är det som givaren faktiskt mäter just nu. Om man vill ha 21 grader och det är 19 grader, är börvärdet 21 och mätvärdet 19. Ordet används mest av tekniker; hemma säger man oftare att man ställer in temperaturen.",
+      "ja": "「börvärde」は{目標|もくひょう}、つまり「そうあるべき{値|あたい}」です。「mätvärde」はセンサーが{今|いま}{実際|じっさい}に{測|はか}っている{値|あたい}です。21{度|ど}にしたいのに19{度|ど}なら、{目標値|もくひょうち}は21で{測定値|そくていち}は19です。この{言葉|ことば}は{主|おも}に{技術者|ぎじゅつしゃ}が{使|つか}い、{家|いえ}では「{温度|おんど}を{設定|せってい}する」と{言|い}うほうが{普通|ふつう}です。"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.ställdon",
+   "lemma": "ställdon",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "ställdon",
+    "defSg": "ställdonet",
+    "indefPl": "ställdon",
+    "defPl": "ställdonen"
+   },
+   "senses": [
+    {
+     "id": "s.ställdon.1",
+     "ja": "アクチュエーター、{作動|さどう}{装置|そうち}",
+     "defSv": "En liten motor eller annan del som öppnar eller stänger en ventil eller flyttar något annat när den får en signal.",
+     "defJa": "{信号|しんごう}を{受|う}けると、{弁|べん}を{開|あ}け{閉|し}めしたり{何|なに}かを{動|うご}かしたりする{小|ちい}さなモーターなどの{部品|ぶひん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Ställdonet på ventilen surrar när det öppnar.",
+       "ja": "{弁|べん}のアクチュエーターは、{開|ひら}くときにブーンと{音|おと}がします。"
+      },
+      {
+       "sv": "Två av ställdonen i ventilationen hade gått sönder.",
+       "ja": "{換気|かんき}{設備|せつび}のアクチュエーターのうち{二|ふた}つが{壊|こわ}れていました。"
+      }
+     ],
+     "collocations": [
+      "ett ställdon på ventilen",
+      "byta ställdonet",
+      "ställdonet öppnar …"
+     ],
+     "explanation": {
+      "sv": "Ställdonet är reglerkretsens händer. Givaren mäter, en dator bestämmer och ställdonet gör själva arbetet, till exempel vrider en ventil. En ventil är delen som släpper igenom vatten eller luft, medan ställdonet är det som rör på ventilen.",
+      "ja": "アクチュエーターは{制御|せいぎょ}ループの「{手|て}」です。センサーが{測|はか}り、コンピューターが{決|き}め、アクチュエーターが{弁|べん}を{回|まわ}すなどの{実際|じっさい}の{仕事|しごと}をします。「ventil」は{水|みず}や{空気|くうき}を{通|とお}す{部品|ぶひん}で、「ställdon」はその{弁|べん}を{動|うご}かすものです。"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.flottör",
+   "lemma": "flottör",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "flottör",
+    "defSg": "flottören",
+    "indefPl": "flottörer",
+    "defPl": "flottörerna"
+   },
+   "senses": [
+    {
+     "id": "s.flottör.1",
+     "ja": "フロート、{浮|う}き",
+     "defSv": "En lätt del som flyter på vattnet och följer med vattenytan, till exempel inne i en toalett.",
+     "defJa": "{水|みず}に{浮|う}いて{水面|すいめん}といっしょに{上下|じょうげ}する{軽|かる}い{部品|ぶひん}。たとえばトイレの{中|なか}にある。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Flottören i toaletten har fastnat, så vattnet rinner hela tiden.",
+       "ja": "トイレのフロートが{引|ひ}っかかっているので、{水|みず}がずっと{流|なが}れています。"
+      },
+      {
+       "sv": "När flottörerna i tanken flyter upp, stängs pumpen av.",
+       "ja": "タンクのフロートが{浮|う}き{上|あ}がると、ポンプが{止|と}まります。"
+      }
+     ],
+     "collocations": [
+      "flottören i toaletten",
+      "flottören har fastnat",
+      "en flottör med ventil"
+     ],
+     "explanation": {
+      "sv": "En flottör är en enkel men mycket bra del. När vattnet stiger flyter flottören upp och stänger till slut en ventil, och när vattnet sjunker följer den med ner och öppnar ventilen igen. Om vattnet i toaletten rinner hela tiden är det ofta flottören som har fastnat.",
+      "ja": "フロートは{簡単|かんたん}ですが、とてもよくできた{部品|ぶひん}です。{水|みず}が{増|ふ}えるとフロートが{浮|う}き{上|あ}がって{最後|さいご}に{弁|べん}を{閉|し}め、{水|みず}が{減|へ}るといっしょに{下|さ}がって{弁|べん}をまた{開|ひら}きます。トイレの{水|みず}がずっとちょろちょろ{流|なが}れているときは、たいていフロートが{引|ひ}っかかっています。"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.farthållare",
+   "lemma": "farthållare",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "farthållare",
+    "defSg": "farthållaren",
+    "indefPl": "farthållare",
+    "defPl": "farthållarna"
+   },
+   "senses": [
+    {
+     "id": "s.farthållare.1",
+     "ja": "クルーズコントロール、{定速|ていそく}{走行|そうこう}{装置|そうち}",
+     "defSv": "En funktion i en bil som håller samma hastighet utan att föraren behöver gasa själv.",
+     "defJa": "{運転|うんてん}する{人|ひと}がアクセルを{踏|ふ}まなくても、{同|おな}じ{速度|そくど}を{保|たも}つ{車|くるま}の{機能|きのう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "På motorvägen slår pappa på farthållaren.",
+       "ja": "{高速道路|こうそくどうろ}では、お{父|とう}さんはクルーズコントロールをオンにします。"
+      },
+      {
+       "sv": "Moderna farthållare bromsar också om bilen framför kör långsammare.",
+       "ja": "{最近|さいきん}のクルーズコントロールは、{前|まえ}の{車|くるま}が{遅|おそ}くなるとブレーキもかけます。"
+      }
+     ],
+     "collocations": [
+      "slå på farthållaren",
+      "köra med farthållare",
+      "en adaptiv farthållare"
+     ],
+     "explanation": {
+      "sv": "En farthållare håller bilen i samma fart. Den känner av om bilen saktar ner i en uppförsbacke och ger då mer gas, så att hastigheten blir nästan densamma.",
+      "ja": "クルーズコントロールは、{車|くるま}を{同|おな}じ{速|はや}さに{保|たも}ちます。{上|のぼ}り{坂|ざか}で{車|くるま}が{遅|おそ}くなると、それを{感|かん}じ{取|と}ってアクセルを{強|つよ}めるので、{速度|そくど}はほとんど{変|か}わりません。"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
+  },
+  {
+   "id": "e.automatisk",
+   "lemma": "automatisk",
+   "pos": "adjective",
+   "level": "B1",
+   "inflection": {
+    "kind": "adjective",
+    "common": "automatisk",
+    "neuter": "automatiskt",
+    "plural": "automatiska",
+    "definite": "automatiska"
+   },
+   "senses": [
+    {
+     "id": "s.automatisk.1",
+     "ja": "{自動|じどう}の",
+     "defSv": "Som fungerar av sig själv, utan att någon behöver göra något.",
+     "defJa": "{誰|だれ}も{何|なに}もしなくても、ひとりでに{動|うご}く。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Dörren till affären är automatisk.",
+       "ja": "その{店|みせ}のドアは{自動|じどう}です。"
+      }
+     ],
+     "labelSv": "av sig själv",
+     "collocations": [
+      "en automatisk dörr",
+      "helt automatiskt",
+      "automatisk styrning"
+     ],
+     "explanation": {
+      "sv": "Något som är automatiskt sköter sig självt. En automatisk dörr öppnas när man kommer fram, och en automatisk tvättmaskin väljer själv hur mycket vatten den ska ta.",
+      "ja": "「automatisk」なものは、ひとりでに{動|うご}きます。{自動|じどう}ドアは{人|ひと}が{近|ちか}づくと{開|ひら}き、{全自動|ぜんじどう}{洗濯機|せんたくき}は{使|つか}う{水|みず}の{量|りょう}を{自分|じぶん}で{選|えら}びます。"
+     },
+     "tags": [
+      "el",
+      "teknik",
+      "automation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1
+    },
+    {
+     "id": "s.automatisk.2",
+     "ja": "{無意識|むいしき}の、{反射的|はんしゃてき}な",
+     "defSv": "Som man gör utan att tänka på det.",
+     "defJa": "{考|かんが}えずにしてしまう。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Att säga förlåt är nästan automatiskt för honom.",
+       "ja": "{彼|かれ}にとって「ごめん」と{言|い}うのは、ほとんど{無意識|むいしき}のことです。"
+      }
+     ],
+     "labelSv": "utan att tänka",
+     "tags": [
+      "vardag"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21",
+    "coreSense": "s.automatisk.1"
+   }
+  }
+ ]
+}

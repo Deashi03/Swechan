@@ -1,0 +1,180 @@
+{
+ "id": "m.termostater",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Termostater",
+ "titleJa": "サーモスタット",
+ "descriptionSv": "Du lär dig att prata om värmen hemma: hur man väljer och ändrar temperaturen, hur värmen kan sänkas på natten och anpassas efter vädret och hur en termostat skyddar både huset och apparaterna.",
+ "descriptionJa": "{家|いえ}の{暖房|だんぼう}について{話|はな}せるようになります。{温度|おんど}の{選|えら}び{方|かた}と{変|か}え{方|かた}、{夜|よる}に{温度|おんど}を{下|さ}げたり{天気|てんき}に{合|あ}わせたりするしくみ、そしてサーモスタットが{家|いえ}と{機械|きかい}をどう{守|まも}るかを{学|まな}びます。",
+ "categoryId": "R07-A03-T06",
+ "tags": [
+  "el",
+  "teknik",
+  "automation"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.reglerkretsar"
+ ],
+ "related": [],
+ "recommendedOrder": 3963,
+ "words": [
+  {
+   "senseId": "s.termostat.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.1",
+   "active": true
+  },
+  {
+   "senseId": "s.golvvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rumstemperatur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ställa-in.2",
+   "active": true
+  },
+  {
+   "senseId": "s.sänka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nattsänkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utegivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frostskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trög.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varmvattenberedare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överhettning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strykjärn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bimetall.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elräkning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En kall januari",
+  "paragraphs": [
+   "Aiko och Erik bor i ett hus från 1970-talet utanför Uppsala. I december kom en elräkning som var mycket högre än vanligt. – Vi måste göra något, säger Aiko. Hon tittar på termostaten i hallen. Den står på 23 grader.",
+   "De ringer en elektriker, Lars, som kommer och tittar på värmen. – En vanlig rumstemperatur är 20 eller 21 grader, säger han. Om ni sänker med en grad sparar ni ungefär fem procent av energin till värmen.",
+   "Lars visar hur man ställer in termostaterna på elementen. Han sätter också upp en utegivare på norra sidan av huset. – Nu vet värmen hur kallt det är ute och kan börja värma innan det blir kallt inne. Sedan ställer han in nattsänkning: mellan klockan 23 och 6 blir det två grader svalare.",
+   "I badrummet har de golvvärme. – Golvvärme är trög, säger Lars. Det tar flera timmar innan golvet blir varmt, så nattsänkning passar inte så bra där. Han kontrollerar också varmvattenberedaren. Den har en egen termostat och ett skydd mot överhettning.",
+   "Mia undrar hur en termostat egentligen fungerar. Lars tar fram ett gammalt strykjärn. – Här inne sitter en bimetall. När den blir varm böjer den sig och bryter strömmen. När den svalnar kommer strömmen tillbaka. Innan Lars åker säger han: – Glöm inte att ställa termostaten i sommarstugan på frostskydd i vinter!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Aiko göra något åt värmen?",
+    "options": [
+     "Huset var för kallt",
+     "Elräkningen var mycket högre än vanligt",
+     "Termostaten hade gått sönder",
+     "Lars hade sagt att de måste"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I december kom en elräkning som var mycket högre än vanligt.",
+    "explanationJa": "12{月|がつ}の{電気代|でんきだい}の{請求書|せいきゅうしょ}が、いつもよりずっと{高|たか}かったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör utegivaren möjligt?",
+    "options": [
+     "Att golvet blir varmt snabbare",
+     "Att värmen kan börja innan det blir kallt inne",
+     "Att elräkningen kommer varje vecka",
+     "Att det blir svalare på natten"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nu vet värmen hur kallt det är ute och kan börja värma innan det blir kallt inne.",
+    "explanationJa": "{外|そと}の{寒|さむ}さがわかるので、{家|いえ}の{中|なか}が{寒|さむ}くなる{前|まえ}に{暖|あたた}め{始|はじ}められます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför passar nattsänkning inte så bra med golvvärme?",
+    "options": [
+     "Golvvärme använder ingen el",
+     "Golvvärme finns bara i badrummet",
+     "Golvvärme tar lång tid att bli varm",
+     "Golvvärme har ingen termostat"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Golvvärme är trög, säger Lars. Det tar flera timmar innan golvet blir varmt …",
+    "explanationJa": "{床暖房|ゆかだんぼう}は{反応|はんのう}が{遅|おそ}く、{床|ゆか}が{暖|あたた}まるまで{何時間|なんじかん}もかかるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt Lars sparar man ungefär fem procent av energin till värmen för varje grad man sänker.",
+    "correct": true,
+    "explanationSv": "Om ni sänker med en grad sparar ni ungefär fem procent av energin till värmen.",
+    "explanationJa": "1{度|ど}{下|さ}げると、{暖房|だんぼう}のエネルギーが{約|やく}5パーセント{節約|せつやく}できます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Bimetallen i strykjärnet böjer sig när den blir kall.",
+    "correct": false,
+    "explanationSv": "När den blir varm böjer den sig och bryter strömmen.",
+    "explanationJa": "バイメタルは{温|あたた}まると{曲|ま}がります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Om man sänker temperaturen inomhus med en grad minskar energin till uppvärmningen med ungefär fem procent.",
+    "source": "Energimyndigheten, råd om uppvärmning och inomhustemperatur",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om temperaturen hemma och om hur ni styr värmen.",
+  "discussionPoints": [
+   "Vilken temperatur tycker du är lagom inomhus, på dagen och på natten?",
+   "Har ni termostater på elementen där du bor? Brukar du ändra dem?",
+   "Hur värmer man hus i Japan, och hur skiljer det sig från Sverige?",
+   "Vad gör du för att elräkningen inte ska bli för hög på vintern?"
+  ]
+ },
+ "standard": 2
+}
