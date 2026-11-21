@@ -323,9 +323,15 @@ export const WEBDEV_MOTIFS: Record<string, Svg> = {
   'webdev.förfrågan.2': all(bg(), ground, win(6, 40, 40, 46, pageBody(9, 50, 34, 33)), rack(98, 84, 1),
     line('M48 62 L84 62', C.dark, 1.6, '4 3'), head(86, 62, 0, C.dark, 0.8),
     waIn('webdev-forfragan', -26, 0, rect(58, 52, 20, 18, C.white, 3, C.ink, 1.4), T(68, 66, '?', 13, HL)), ring(68, 61, 15)),
-  /** ramverk (i programmering): a ready frame like scaffolding with coloured building blocks with code signs already in place; a hand adds one last small block in the empty slot; the frame is ringed. */
-  'webdev.ramverk.2': all(bg(), ground, rect(14, 20, 72, 88, 'none', 2, C.dark, 3), line('M14 50 L86 50 M14 79 L86 79 M50 20 L50 108', C.dark, 3),
-    rect(18, 24, 28, 22, '#9fd1a8', 2, C.ink, 1), T(32, 40, '{ }', 11, C.ink), rect(54, 24, 28, 22, '#f3c28a', 2, C.ink, 1), T(68, 40, '&lt;/&gt;', 10, C.ink), rect(18, 54, 28, 21, '#c7b3e6', 2, C.ink, 1), T(32, 69, '( )', 11, C.ink), rect(54, 54, 28, 21, '#b9d3f0', 2, C.ink, 1), T(68, 69, '=', 12, C.ink), rect(18, 83, 28, 21, '#f6c9d4', 2, C.ink, 1), T(32, 98, '#', 11, C.ink),
-    rect(54, 83, 28, 21, 'none', 2, C.grey, 1, ), waIn('webdev-ramverk', 26, -20, rect(56, 85, 24, 17, YEL, 2, C.ink, 1.2)), path('M96 78 C90 80 86 86 82 92', 'none', C.skin, 6), circle(98, 76, 4, C.skin, C.ink, 1.2),
-    frame(10, 16, 80, 96, 5)),
+  /** ramverk (i programmering): a ready house frame (roof, posts and floors) with standard parts already built in – a menu band, buttons and a login box with a padlock – and one empty room with a dashed outline, into which the developer's own content (a yellow card with a picture) slides; the frame is ringed; beside it a grey heap of loose planks, bricks and parts (building everything from the ground). */
+  'webdev.ramverk.2': all(bg(), ground,
+    path('M6 30 L44 8 L82 30 Z', '#b98a5a', C.ink, 1.6), rect(8, 30, 72, 80, '#fbf6ec', 1, null),
+    line('M8 30 L8 110 M44 30 L44 110 M80 30 L80 110 M8 68 L80 68 M8 110 L80 110', '#8a5a33', 3.4),
+    rect(12, 34, 28, 10, BLUE, 1, null), line('M15 37 L21 37 M15 39.5 L21 39.5 M15 42 L21 42', C.white, 1.1), line('M25 39 L37 39', C.white, 1.4), bars(13, 50, 25, 3, 5),
+    rect(50, 38, 24, 9, GREEN, 4, C.ink, 1), rect(50, 52, 24, 9, C.orange, 4, C.ink, 1), line('M55 42.5 L69 42.5 M55 56.5 L69 56.5', C.white, 1.4),
+    rect(13, 73, 26, 32, C.white, 2, C.ink, 1), at(26, 82, 0.45, path('M-6 -3 L-6 -10 C-6 -18 6 -18 6 -10 L6 -3', 'none', C.ink, 3), rect(-10, -4, 20, 16, '#e0b23c', 3, C.ink, 1.6)), field(16, 90, 20, 5, C.grey, 0.8), field(16, 98, 20, 5, C.grey, 0.8),
+    line('M48 72 L76 72 L76 106 L48 106 Z', HL, 1.4, '3 2'),
+    waIn('webdev-ramverk', 24, -24, rect(51, 76, 22, 26, '#ffe08a', 2, C.ink, 1.2), pic(54, 80, 16, 11), line('M54 96 L68 96', C.dark, 1.6)),
+    greyed(line('M86 108 L114 100 M88 103 L112 108', '#a0673d', 3.4), rect(90, 92, 9, 6, '#c2563f', 1, C.ink, 0.8), rect(101, 93, 9, 6, '#c2563f', 1, C.ink, 0.8), rect(95, 86, 9, 6, '#c2563f', 1, C.ink, 0.8), rect(98, 76, 14, 6, GREEN, 3, C.ink, 0.8), at(92, 78, 0.35, path('M-6 -3 L-6 -10 C-6 -18 6 -18 6 -10 L6 -3', 'none', C.ink, 3), rect(-10, -4, 20, 16, '#e0b23c', 3, C.ink, 1.6))),
+    oval(44, 60, 42, 54)),
 };
