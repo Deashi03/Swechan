@@ -22276,7 +22276,10 @@
     "result": "pass",
     "round": "0.19.0",
     "hash": "f3229754"
-   }
+   },
+   "confusableWith": [
+    "s.variera.1"
+   ]
   },
   {
    "senseId": "s.förbrukning.1",
@@ -150321,7 +150324,10 @@
    "kind": "illustration",
    "motif": "tal.gå-jämnt-upp",
    "group": "bli-över",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.delbar.2"
+   ]
   },
   {
    "senseId": "s.multipel.1",
@@ -151678,7 +151684,10 @@
     "result": "pass",
     "round": "0.48.0",
     "hash": "df55775d"
-   }
+   },
+   "confusableWith": [
+    "s.olikhet.1"
+   ]
   },
   {
    "senseId": "s.större-än-eller-lika-med.1",
@@ -153014,7 +153023,10 @@
    "kind": "illustration",
    "motif": "geom.rektangel",
    "group": "fyrhörning",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.rektangulär.1"
+   ]
   },
   {
    "senseId": "s.parallellogram.1",
@@ -171227,6 +171239,473 @@
     "result": "pass",
     "round": "0.55.0",
     "hash": "2c602117",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.delbar.2",
+   "kind": "illustration",
+   "motif": "manb.delbar",
+   "group": "b5-delbar",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.gå-jämnt-upp.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "47c9f37d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.storleksordning.1",
+   "kind": "illustration",
+   "motif": "manb.storleksordning",
+   "group": "b5-storleksordning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "5ac53681",
+    "method": "match",
+    "waiver": "Rätt bild, men andra bilder i modulen visar också tal i storleksordning; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.addition.1",
+   "kind": "illustration",
+   "motif": "manb.addition",
+   "group": "b5-addition",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "b13d8864",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.subtraktion.1",
+   "kind": "illustration",
+   "motif": "manb.subtraktion",
+   "group": "b5-subtraktion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "395030f9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rimlighet.1",
+   "kind": "illustration",
+   "motif": "manb.rimlighet",
+   "group": "b5-rimlighet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "2116929b",
+    "method": "match",
+    "waiver": "Rätt bild, men en annan rimlighetsbedömning i modulen visar samma idé; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.överslag.1",
+   "kind": "illustration",
+   "motif": "manb.överslag",
+   "group": "b5-överslag",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "72c8dc81",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.avrundning.1",
+   "kind": "illustration",
+   "motif": "manb.avrundning",
+   "group": "b5-avrundning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "d00cbeb6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.procentuell.1",
+   "kind": "illustration",
+   "motif": "manb.procentuell",
+   "group": "b5-procentuell",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "3dc09e97",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ökning.1",
+   "kind": "illustration",
+   "motif": "manb.ökning",
+   "group": "b5-ökning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "2a9e07ca",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.minskning.1",
+   "kind": "illustration",
+   "motif": "manb.minskning",
+   "group": "b5-minskning",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "c2f1b843",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.variera.1",
+   "kind": "illustration",
+   "motif": "manb.variera",
+   "group": "b5-variera",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.rörlig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "82826249",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.isolera.2",
+   "kind": "illustration",
+   "motif": "manb.isolera",
+   "group": "b5-isolera",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "bf80a488",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.olikhet.1",
+   "kind": "illustration",
+   "motif": "manb.olikhet",
+   "group": "b5-olikhet",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.olikhetstecken.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.55.0",
+    "hash": "ce7e2a52",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.storhet.1",
+   "kind": "illustration",
+   "motif": "manb.storhet",
+   "group": "b5-storhet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "16236bd0",
+    "method": "match",
+    "waiver": "Förväxlas med enhet, eftersom en storhet alltid visas med sin enhet; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.rektangulär.1",
+   "kind": "illustration",
+   "motif": "manb.rektangulär",
+   "group": "b5-rektangulär",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.rektangel.1"
+   ],
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-21",
+    "hash": "76335c8d",
+    "method": "match",
+    "waiver": "Rätt bild, men adjektivet går inte att skilja från rektangel i en bild; godkänd av produktägaren 2026-11-21 som symbolbild."
+   }
+  },
+  {
+   "senseId": "s.symmetrilinje.1",
+   "kind": "illustration",
+   "motif": "manb.symmetrilinje",
+   "group": "b5-symmetrilinje",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "0d6e4abe",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rund.1",
+   "kind": "illustration",
+   "motif": "manb.rund",
+   "group": "b5-rund",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "1d04173b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kvadratdecimeter.1",
+   "kind": "illustration",
+   "motif": "manb.kvadratdecimeter",
+   "group": "b5-kvadratdecimeter",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "aa52cf23",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.proportionalitet.1",
+   "kind": "illustration",
+   "motif": "manb.proportionalitet",
+   "group": "b5-proportionalitet",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "f308dcda",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.bero-på.2",
+   "kind": "illustration",
+   "motif": "manb.bero-på",
+   "group": "b5-bero-på",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "139e35c3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.data.1",
+   "kind": "illustration",
+   "motif": "manb.data",
+   "group": "b5-data",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "0859911a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.datamängd.1",
+   "kind": "illustration",
+   "motif": "manb.datamängd",
+   "group": "b5-datamängd",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "438d96e3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.föra-in.1",
+   "kind": "illustration",
+   "motif": "manb.föra-in",
+   "group": "b5-föra-in",
+   "quiz": false,
+   "symbol": true,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "dce536db",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.i-tabellform.1",
+   "kind": "illustration",
+   "motif": "manb.i-tabellform",
+   "group": "b5-i-tabellform",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "4edef76a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förekomma.2",
+   "kind": "illustration",
+   "motif": "manb.förekomma",
+   "group": "b5-förekomma",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "4a0fda74",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.mittersta.1",
+   "kind": "illustration",
+   "motif": "manb.mittersta",
+   "group": "b5-mittersta",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "692a4c94",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.lägesmått.1",
+   "kind": "illustration",
+   "motif": "manb.lägesmått",
+   "group": "b5-lägesmått",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "94d1e03f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.utspridd.1",
+   "kind": "illustration",
+   "motif": "manb.utspridd",
+   "group": "b5-utspridd",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "7d4f9294",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skilja-sig-åt.1",
+   "kind": "illustration",
+   "motif": "manb.skilja-sig-åt",
+   "group": "b5-skilja-sig-åt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "c8170f68",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.spridningsmått.1",
+   "kind": "illustration",
+   "motif": "manb.spridningsmått",
+   "group": "b5-spridningsmått",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "f00ea182",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.population.2",
+   "kind": "illustration",
+   "motif": "manb.population",
+   "group": "b5-population",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "f0ce2b5f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.korrelation.1",
+   "kind": "illustration",
+   "motif": "manb.korrelation",
+   "group": "b5-korrelation",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.55.0",
+    "hash": "9dae61da",
     "method": "match"
    }
   }
