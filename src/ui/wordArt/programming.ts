@@ -15,7 +15,7 @@
  * Digits and code signs ({ } [ ] ( ) = > < + // ' and ✓ ✗) only; no words, no brands, no logos, no pointing fingers.
  */
 import { C, all, circle, ellipse, g, line, moving, path, rect, waBob, waGrow, waIn, waPulse, waShake, waSpin, waSway, type Svg } from './kit';
-import { HL, arm } from './people';
+import { HL, arm, bolt } from './people';
 import { greyed } from './blindFix';
 import { figure, type Build } from './figures';
 
@@ -122,12 +122,12 @@ const backpack = (x: number, y: number) => all(rect(x - 7, y - 10, 14, 18, '#3a6
 
 export const PROG_MOTIFS: Record<string, Svg> = {
   // ── 3811 Variabler och datatyper ───────────────────────────────────
-  /** programmering: a big laptop with coloured code bars and braces on its screen; around it, small things made with code (a phone with an app grid, a game pad, a little robot), joined to the laptop by dashed lines; the laptop is framed. */
-  'prog.programmering': all(bg(), laptop(60, 70, 1.1, all(mono(-18, -20, '{', 12, KW), code(-12, -26, [[0, 14, ID], [4, 18, STR], [4, 10, NUM], [0, 16, TXT]], 6, 2.4), mono(18, -10, '}', 12, KW))),
-    phone(18, 92, 0.5, all(...range(6).map((i) => rect(-8 + (i % 2) * 9, -14 + Math.floor(i / 2) * 9, 7, 7, [BLUE, GREEN, YEL, RED, '#8a6bbf', '#f6b26b'][i]!, 1.5, null)))),
-    at(98, 94, 0.9, rect(-12, -6, 24, 12, '#5a6472', 6, C.ink, 1.2), circle(-6, 0, 2, C.white, null), circle(6, -2, 1.6, RED, null), circle(8, 2, 1.6, GREEN, null)),
-    at(98, 22, 0.9, rect(-8, -6, 16, 14, '#b7c3d0', 3, C.ink, 1.2), circle(-3, 0, 1.8, BLUE, null), circle(3, 0, 1.8, BLUE, null), line('M0 -6 L0 -11', C.ink, 1.2), circle(0, -12, 1.6, RED, null)),
-    line('M30 64 L22 76 M90 64 L96 84 M90 34 L96 30', '#7a8590', 1.4, '3 2'), frame(20, 22, 80, 54, 6)),
+  /** programmering (ämnet): a shelf of four school books standing side by side, each with a subject sign on its spine: plus and minus, the letters Aa, a music note and curly braces; the first three are grey and the book with { } is bright and ringed; below, a strip without people shows the work: a light bulb, an arrow, a code window, an arrow, a phone with an app. */
+  'prog.programmering': all(bg(), rect(8, 62, 104, 4, '#a0673d', 1, C.ink, 1.2),
+    greyed(rect(14, 18, 18, 44, '#d96a5a', 2, C.ink, 1.4), txt(23, 44, '+−', 10, C.white, 900), rect(36, 22, 18, 40, '#5a8ad0', 2, C.ink, 1.4), txt(45, 46, 'Aa', 9, C.white, 900), rect(58, 16, 18, 46, '#6aa86a', 2, C.ink, 1.4), path('M64 46 L64 34 L71 32 L71 44', 'none', C.white, 1.6), circle(62.5, 46, 2, C.white, null), circle(69.5, 44, 2, C.white, null)),
+    rect(82, 12, 24, 50, ED, 2, C.ink, 1.6), mono(94, 44, '{}', 12, KW, 800), line('M86 22 L102 22 M86 54 L102 54', STR, 2), ring(94, 37, 20),
+    circle(18, 92, 7, YEL, C.ink, 1.2), rect(15, 99, 6, 4, '#9aa3ad', 1, C.ink, 1), arr(28, 94, 40, 94, C.dark, 1.8), editor(44, 80, 30, 26, code(48, 94, [[0, 12, KW], [3, 16, ID], [3, 10, STR]], 4, 1.8)), arr(78, 94, 88, 94, C.dark, 1.8),
+    phone(100, 94, 0.5, all(...range(4).map((k) => rect(-8 + (k % 2) * 9, -12 + Math.floor(k / 2) * 9, 7, 7, [BLUE, GREEN, YEL, RED][k]!, 1.5, null))))),
   /** programmeringsspråk: three speech bubbles, each with code in its own sign system: curly braces, angle brackets with a slash, and round brackets; all three bubbles together are framed. */
   'prog.programmeringsspråk': all(bg(),
     path('M8 14 L58 14 L58 46 L22 46 L14 54 L16 46 L8 46 Z', ED, C.ink, 1.4), mono(20, 36, '{', 16, KW), code(26, 25, [[0, 16, ID], [4, 14, STR], [0, 12, NUM]], 6, 2.4), mono(52, 42, '}', 12, KW),
@@ -257,9 +257,11 @@ export const PROG_MOTIFS: Record<string, Svg> = {
   'prog.loggfil': all(bg(), rect(14, 8, 92, 102, C.white, 3, C.ink, 1.6), path('M92 8 L106 8 L106 22 Z', '#e3e7eb', C.ink, 1.2),
     ...['08:01', '08:02', '08:05', '08:07', '08:09', '08:12', '08:15'].map((t, i) => all(i === 4 ? rect(16, 18 + i * 13, 88, 11, '#fde3dd', 1, null) : '', mono(30, 26.5 + i * 13, t, 7, '#5a6472', 600), circle(48, 23.5 + i * 13, 2.4, i === 4 ? RED : GREEN, null), line(`M54 ${23.5 + i * 13} L${86 + ((i * 5) % 14)} ${23.5 + i * 13}`, BAR, 2))),
     frame(10, 4, 100, 110, 6)),
-  /** undantag (i programmering): blue number tiles ride on a belt into a machine; one red tile with a letter on it is caught in a net on a pole before it reaches the machine; the red tile in the net is ringed. */
-  'prog.undantag.2': all(bg(), ground, belt(4, 86, 70), ...[14, 30, 62].map((x) => chip(x, 78, String((x / 2) % 10 | 0), '#dbe8f8', 8)), greyed(machine(94, 72)),
-    line('M46 26 L58 50', '#7a5030', 2.4), waSway('pg-undantag', 6, path('M36 52 C36 70 60 70 60 52 Z', 'rgba(255,255,255,0.6)', C.ink, 1.2), line('M40 56 L56 66 M56 56 L40 66 M48 52 L48 68', C.grey, 0.8), chip(48, 58, 'Q', '#fde3dd', 9)), ring(48, 60, 16)),
+  /** undantag (i programmering): two flows from left to right. Above, grey: a box, a lightning bolt hits the flow, and the flow ends in a broken red cross (the program crashes). Below, bright: the same box and lightning bolt, but the bolt is caught in a net, and the flow takes a curved detour round it and goes on to a big green tick; the net with the bolt is ringed. */
+  'prog.undantag.2': all(bg(), greyed(rect(8, 16, 20, 16, '#6fa0d8', 3, C.ink, 1.2), line('M28 24 L58 24', C.dark, 2.4), bolt(64, 24, 0.8), line('M70 24 L86 24', C.dark, 2.4, '3 3'), no(96, 24, 8)),
+    line('M8 46 L112 46', C.grey2, 1.4, '4 3'),
+    rect(8, 70, 20, 16, '#6fa0d8', 3, C.ink, 1.2), line('M28 78 L44 78', C.dark, 2.4), line('M44 60 L60 66', '#7a5030', 2.4), waSway('pg-undantag', 5, path('M42 66 C42 92 74 92 74 66 Z', 'rgba(255,255,255,0.7)', C.ink, 1.3), line('M46 72 L70 86 M70 72 L46 86 M58 66 L58 90', C.grey, 0.8), bolt(58, 78, 0.8)),
+    carr(36, 82, 58, 112, 88, 84, GREEN, 3), ok(100, 78, 10), ring(58, 78, 19)),
   /** syntaxfel: an editor window with a few lines of code; one line ends with a round bracket opened but a square bracket closing it, and has a red wavy line under it and a small red cross at the line number; this line is ringed. */
   'prog.syntaxfel': all(bg(), editor(6, 16, 108, 84, nums(13, 34, 6, 10), greyed(code(22, 34, [[0, 20, KW], [6, 34, ID]], 10)), line('M28 54 L52 54', ID, 3), mono(58, 57.5, '(', 10, TXT), line('M62 54 L80 54', STR, 3), mono(86, 57.5, ']', 10, RED),
     path('M28 60 q2 -2.5 4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0 t4 0', 'none', RED, 1.4), greyed(code(22, 74, [[6, 26, TXT], [0, 12, KW]], 10))), no(10, 54, 4), oval(60, 56, 46, 10)),
