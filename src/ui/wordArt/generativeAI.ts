@@ -219,11 +219,16 @@ export const GENAI_MOTIFS: Record<string, Svg> = {
     rect(20, 6, 80, 54, '#cfe8f7', 3, C.ink, 1.5), circle(84, 18, 6, C.yellow, C.ink, 1), path('M20 46 L44 24 L60 40 L70 32 L100 52 L100 60 L20 60 Z', '#5aa86a', C.ink, 1.2),
     path('M30 44 L40 36 L50 44 L50 54 L30 54 Z', RED, C.ink, 1.1), rect(37, 47, 6, 7, C.dark, 0, null), spark(18, 6, 5, C.yellow), spark(102, 58, 5, C.yellow),
     arrow(60, 70, 60, 62, AI, 2.4), frame(16, 2, 88, 62)),
-  /** stil: the same tree drawn three ways – in triangles, in soft blobs and as a line drawing. */
+  /** stil: the same little scene (house, tree and sun) painted twice – on the left in soft watercolour blobs with a round brush below, on the right as thin black line drawing with a pencil below; a two-way arrow between them; both pictures are framed, so the way of drawing is what differs. */
   'genai.stil': all(ground,
-    ...[8, 44, 80].map((x) => rect(x, 30, 32, 50, PAPER, 2, C.ink, 1.3)),
-    tree(24, 52, 'geo'), tree(60, 52, 'soft'), tree(96, 52, 'line'),
-    path('M10 90 C10 98 58 92 60 102 C62 92 110 98 110 90', 'none', HL, 2.4)),
+    rect(4, 14, 52, 60, PAPER, 2, C.ink, 1.3), rect(64, 14, 52, 60, PAPER, 2, C.ink, 1.3),
+    circle(44, 26, 7, 'rgba(250,200,70,0.85)', null), path('M10 66 L10 48 L22 38 L34 48 L34 66 Z', 'rgba(230,120,100,0.8)', null), rect(19, 54, 6, 12, 'rgba(120,80,60,0.75)', 2, null), tree(44, 54, 'soft'),
+    circle(104, 26, 7, 'none', C.ink, 1.4), ...[0, 1, 2, 3, 4, 5, 6, 7].map((i) => { const a = (i / 8) * Math.PI * 2; return line(`M${f1(104 + Math.cos(a) * 9)} ${f1(26 + Math.sin(a) * 9)} L${f1(104 + Math.cos(a) * 12)} ${f1(26 + Math.sin(a) * 12)}`, C.ink, 1.1); }),
+    path('M70 66 L70 48 L82 38 L94 48 L94 66 Z', 'none', C.ink, 1.4), rect(79, 54, 6, 12, 'none', 0, C.ink, 1.2), tree(104, 54, 'line'),
+    line('M50 92 L20 102', '#b08a5a', 4), path('M20 102 C14 104 12 106 10 108 C16 108 20 106 22 104 Z', '#5a8ad0', C.ink, 0.9),
+    line('M96 90 L76 104', '#f2c14e', 5), path('M76 104 L72 108 L78 106 Z', C.ink, null),
+    arrow(54, 44, 66, 44, HL, 2.2), arrow(66, 44, 54, 44, HL, 2.2),
+    frame(2, 12, 56, 64), frame(62, 12, 56, 64)),
   /** fotorealistisk: a shaded, shiny apple in a camera frame; a flat grey cartoon apple as contrast. */
   'genai.fotorealistisk': all(ground,
     `<defs><radialGradient id="genai-apple" cx="0.35" cy="0.3" r="0.75"><stop offset="0" stop-color="#ff8a7a"/><stop offset="0.45" stop-color="#d62f2a"/><stop offset="1" stop-color="#7a1414"/></radialGradient></defs>`,
