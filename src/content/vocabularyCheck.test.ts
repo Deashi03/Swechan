@@ -18,7 +18,7 @@ describe('controlled vocabulary', () => {
     const issues = checkVocabulary(getContent(), core);
     if (issues.length) console.error(`${issues.length} texter med okända ord:\n` + issues.map((i) => `${i.where}: [${i.unknown.join(', ')}]`).join('\n'));
     expect(issues).toEqual([]);
-  });
+  }, 240_000); // grows with the content (~72 s at 1 685 modules on CI)
 });
 
 describe('tokenizer', () => {
