@@ -192,6 +192,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.57 – Elektronik & energi (klar)
 - 42 nya moduler i Teknik & digital värld → Elektronik & energi enligt standard 2, med 260 nya ordbilder varav 88 rörliga. Alla 39 symbolbilder godkändes i första matchningstestet.
 
+## v0.58 – Maskiner & tillverkning (klar)
+- 42 nya moduler i Teknik & digital värld → Maskiner & tillverkning enligt standard 2, med 319 nya ordbilder varav 138 rörliga. 47 symbolbilder matchningstestade (en omritad, ett synonympar).
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
