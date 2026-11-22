@@ -240,6 +240,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'autom.': () => import('./automation').then((m) => m.AUTOM_MOTIFS),
   'mpart.': () => import('./machineParts').then((m) => m.MPART_MOTIFS),
   'wshop.': () => import('./workshop').then((m) => m.WSHOP_MOTIFS),
+  'matr.': () => import('./materialTech').then((m) => m.MATR_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
