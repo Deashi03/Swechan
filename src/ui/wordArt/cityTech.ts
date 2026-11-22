@@ -6,7 +6,7 @@
  * Soil is brown with small stones, water blue, night scenes have a dark blue sky. Words that are easy to mix up get
  * clearly different scenes: lyktstolpe (a whole pole in daylight), armatur (close-up of the lamp head with LED dots),
  * ljuskägla (night, a yellow cone of light on the ground with a person in it), slockna (three lamps at night, the
- * middle one goes dark) and upplyst (a dark grey path beside the same path lit up); fibernät (a cross-section with
+ * middle one goes dark) and upplyst (the same path bright with a visible walker, framed, beside it dark; no lamp pole); fibernät (a cross-section with
  * glowing lines from a node to several houses), fiberkabel (close-up of a cut cable with glowing strands), skyddsrör
  * (an empty orange pipe in a trench), blåsa in (a machine pushes a cable into the pipe with air), kopparnät (old
  * wooden poles with copper wires) and anslutning (one house linked to the main line with a plug); framledning (the
@@ -18,7 +18,7 @@
  * Digits only; no words, no brands, no logos.
  */
 import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, waGrow, type Svg } from './kit';
-import { HL } from './people';
+import { HL, mini } from './people';
 import { figure } from './figures';
 
 // ── Palette and basics ───────────────────────────────────────────────
@@ -85,11 +85,16 @@ export const CITYT_MOTIFS: Record<string, Svg> = {
   'cityt.ljuskägla': all(sky(), rect(0, 108, 120, 4, '#3d4560', 0, null),
     `<path d="M58 26 L70 26 L98 110 L30 110 Z" fill="${GLOW}" opacity="0.9"/>`, `<ellipse cx="64" cy="110" rx="34" ry="4" fill="${GLOW}"/>`,
     line('M58 26 L30 110 M70 26 L98 110', HL, 2, '4 3'), lamp(34, 26, 64), small(70, 0.62, C.red, { hairStyle: 'long' })),
-  // upplyst: grey, dark path with a lamp that is off (grey reference) beside the same path lit warm by two lamps.
-  'cityt.upplyst.2': all(rect(0, 0, 58, 120, '#3a3d48', 0, null), rect(62, 0, 58, 120, '#fdf1c8', 0, null), line('M60 4 L60 116', C.ink, 2),
-    path('M18 112 L28 70 L34 70 L44 112 Z', '#55585f', null), lamp(12, 40, 20, '#6b6e75', '#55585f', '#6b6e75'),
-    path('M80 112 L88 70 L94 70 L104 112 Z', '#f4c56a', C.ink, 1), cone(76, 40, 14, GLOW, 0.9), cone(108, 40, 12, GLOW, 0.9), lamp(70, 40, 78, HL, C.dark), lamp(114, 40, 108, HL, C.dark)),
-
+  // upplyst (round 2): the same footpath twice. Left, framed in orange: the path is bright and clearly seen, warm light from many small sources along it (windows, low bollards), a walker is easy to see. Right: the same path dark and grey, the same walker hardly visible. No street-lamp pole.
+  'cityt.upplyst.2': all(rect(0, 0, 120, 120, '#f6f2ea', 0, null),
+    rect(4, 8, 54, 104, '#fbe7a6', 2, null), path('M14 112 L27 40 L35 40 L48 112 Z', '#fff6d6', C.ink, 1),
+    ...[[10, 30], [10, 46], [50, 30], [50, 46]].map(([x, y]) => rect(x! - 4, y! - 5, 8, 9, '#ffe58a', 1, C.ink, 0.8)),
+    ...[[18, 64], [42, 64], [14, 84], [46, 84], [10, 104], [50, 104]].map(([x, y]) => all(circle(x!, y!, 5, '#fff3b0', null), circle(x!, y!, 2, C.yellow, C.ink, 0.6))),
+    small(31, 0.52, C.red, { hairStyle: 'long' }),
+    rect(4, 8, 54, 104, 'none', 2, HL, 3.4),
+    rect(62, 8, 54, 104, '#2f3240', 2, null), path('M72 112 L85 40 L93 40 L106 112 Z', '#3c3f4c', null),
+    ...[[68, 30], [68, 46], [108, 30], [108, 46]].map(([x, y]) => rect(x! - 4, y! - 5, 8, 9, '#3a3d4a', 1, '#4a4d5a', 0.8)),
+    g('translate(58 0)', small(31, 0.52, '#3e414e', { grey: true })), rect(62, 8, 54, 104, '#2f3240', 2, null).replace('fill="#2f3240"', 'fill="#2f3240" opacity="0.55"')),
   // ── Fibernät ──────────────────────────────────────────────────────
   // fibernät: cross-section; three houses on the ground, and under them glowing orange lines run from a grey node box to each house.
   'cityt.fibernät': all(sky('#dcecf6'), soil(64), house(10, 22, 46, 64, 32), house(48, 22, 46, 64, 32), house(86, 22, 46, 64, 32),
@@ -243,12 +248,19 @@ export const CITYT_MOTIFS: Record<string, Svg> = {
     ...range(9).map((i) => circle(60 + (i % 3) * 9, 78 + Math.floor(i / 3) * 9, 5, '#4f8a3f', C.ink, 0.8)),
     rect(6, 54, 18, 14, C.grey2, 1, C.ink, 1.2), rect(96, 54, 18, 14, C.grey2, 1, C.ink, 1.2),
     line('M24 61 C40 100 90 100 96 61', C.grey, 2.4, '5 4'), line('M24 61 C30 20 92 16 96 61', C.ink, 5), line('M24 61 C30 20 92 16 96 61', HL, 3.4, '6 3')),
-  // samhällsekonomisk: a big balance over a whole town: on one pan the costs (coins), on the other what society gains (people, a clock, a tree); grey: one small shop that only counts its own coin.
-  'cityt.samhällsekonomisk': all(sky('#f6f2ea'), ...[10, 26, 42, 58, 74, 90, 104].map((x, i) => rect(x, 112 - 16 - (i % 3) * 8, 13, 16 + (i % 3) * 8, '#f6c9a8', 0, HL, 1.2)),
-    line('M60 26 L60 84', C.ink, 3), line('M24 34 L96 30', C.ink, 3), line('M24 34 L18 52 M24 34 L32 52 M96 30 L88 48 M96 30 L104 48', C.ink, 1.2),
-    path('M14 52 L36 52 C34 58 16 58 14 52 Z', C.grey2, C.ink, 1.2), coin(20, 48, 4), coin(28, 48, 4), coin(24, 42, 4),
-    path('M84 48 L108 48 C106 54 86 54 84 48 Z', C.grey2, C.ink, 1.2), circle(90, 40, 3, C.skin, C.ink, 0.8), path('M86 47 C86 42 94 42 94 47 Z', C.sky, null), circle(100, 40, 4, C.white, C.ink, 0.8), line('M100 40 L100 37 M100 40 L102 41', C.ink, 0.8), tree(96, 0.3),
-    g('translate(2 8) scale(0.6)', rect(0, 10, 22, 16, C.grey2, 0, C.grey, 1), path('M-2 10 L11 2 L24 10 Z', C.grey, null), circle(30, 18, 5, C.grey2, C.grey, 1))),
+  // samhällsekonomisk (round 2): a new bridge above a big balance. Left pan (high, light): the cost – coins and a small digger. Right pan (low, heavy, framed in orange): what the whole society gains – many different people (commuter, child, elderly), a clock for shorter travel time, a green leaf for cleaner air and two cars with a crossing-out line for fewer accidents.
+  'cityt.samhällsekonomisk': all(sky('#f6f2ea'),
+    path('M24 12 C42 0 78 0 96 12', 'none', C.grey, 2.6), line('M18 12 L102 12', C.ink, 2.6), line('M36 12 L36 6 M48 12 L48 3 M60 12 L60 2 M72 12 L72 3 M84 12 L84 6', C.grey, 1.2), line('M22 12 L22 18 M98 12 L98 18', C.grey, 2),
+    rect(52, 104, 16, 8, C.dark, 1, C.ink, 1.2), line('M60 104 L60 30', C.ink, 3.4), circle(60, 30, 3, C.ink, null),
+    line('M14 22 L106 40', C.ink, 3.4),
+    line('M18 23 L10 42 M18 23 L28 42', C.ink, 1.2), path('M6 42 L32 42 C30 48 8 48 6 42 Z', C.grey2, C.ink, 1.4),
+    coin(12, 38, 3.6), coin(19, 38, 3.6), coin(15, 32, 3.6), g('translate(24 34) scale(0.32)', rect(0, 0, 22, 12, C.yellow, 1, C.ink, 2), rect(2, -8, 10, 8, C.yellow, 1, C.ink, 2), line('M20 2 L30 -8 L36 6', C.yellow, 5), rect(-2, 12, 26, 5, C.dark, 2, C.ink, 1.6)),
+    line('M100 39 L72 72 M100 39 L116 72', C.ink, 1.2),
+    rect(70, 72, 48, 40, '#fff6ea', 3, HL, 3),
+    mini(76, 84, C.sky), mini(88, 86, C.green, true), g('translate(98 82) scale(0.75)', mini(0, 8, C.pink)), line('M104 90 L105 102', C.grey, 1.4),
+    circle(78, 102, 6, C.white, C.ink, 1.2), line('M78 102 L78 98 M78 102 L81 103', C.ink, 1.2), path('M73 98 A6 6 0 0 1 78 96', 'none', HL, 1.8),
+    path('M88 106 C88 98 96 96 100 96 C100 102 96 106 88 106 Z', '#4f9d69', C.ink, 1), line('M88 106 L96 99', '#2f6d45', 0.8),
+    rect(104, 98, 6, 4, C.red, 1, C.ink, 0.6), rect(110, 102, 6, 4, C.sky, 1, C.ink, 0.6), line('M103 108 L117 96', C.ink, 1.6)),
   // kostnadsökning: a bar chart; the grey bar reaches the dashed line of the budget, then the orange part of the second bar shoots up far above it, coins beside.
   'cityt.kostnadsökning': all(sky('#f6f2ea'), line('M14 104 L110 104 M14 104 L14 14', C.ink, 2), line('M14 62 L110 62', C.ink, 1.6, '5 4'),
     rect(28, 62, 24, 42, C.grey2, 1, C.ink, 1.4), rect(64, 62, 24, 42, C.grey2, 1, C.ink, 1.4),
