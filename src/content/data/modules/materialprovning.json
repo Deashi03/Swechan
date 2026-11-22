@@ -1,0 +1,190 @@
+{
+ "id": "m.materialprovning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Materialprovning",
+ "titleJa": "{材料試験|ざいりょうしけん}",
+ "descriptionSv": "Hur man berättar om att testa material: hur provbitar dras, böjs och trycks tills de går sönder, hur man mäter hur starkt och hårt ett material är och varför tester och yrken följer gemensamma regler. Texten handlar om praktik på ett laboratorium.",
+ "descriptionJa": "{材料|ざいりょう}の{試験|しけん}についてどう{話|はな}すかを{学|まな}びます。{試験片|しけんへん}を{壊|こわ}れるまで{引|ひ}っぱったり、{曲|ま}げたり、{押|お}したりする{方法|ほうほう}、{材料|ざいりょう}の{強|つよ}さや{硬|かた}さの{測|はか}り{方|かた}、そしてなぜ{試験|しけん}や{職業|しょくぎょう}が{共通|きょうつう}の{決|き}まりにしたがうのかを{扱|あつか}います。{読|よ}み{物|もの}は{研究所|けんきゅうじょ}での{実習|じっしゅう}の{話|はなし}です。",
+ "categoryId": "R07-A04-T03",
+ "tags": [
+  "material",
+  "teknik",
+  "arbete"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.korrosion-och-slitage"
+ ],
+ "related": [],
+ "recommendedOrder": 4037,
+ "words": [
+  {
+   "senseId": "s.materialprovning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laboratorium.1",
+   "active": false
+  },
+  {
+   "senseId": "s.provbit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dragprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mäta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hållfasthet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elastisk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.belastning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deformera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brott.2",
+   "active": true
+  },
+  {
+   "senseId": "s.mikroskop.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spricka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårdhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.standard.2",
+   "active": true
+  },
+  {
+   "senseId": "s.certifierad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tåla.3",
+   "active": true
+  },
+  {
+   "senseId": "s.krocktest.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Håller materialet?",
+  "paragraphs": [
+   "Sofia läser till ingenjör och gör praktik på ett laboratorium för materialprovning. Där testar man om material och produkter håller som de ska.",
+   "Varje morgon får hon nya provbitar av stål och plast. Först gör hon ett dragprov: en maskin drar i provbiten tills den går av. En dator mäter hur mycket kraft som behövs. Så får man veta materialets hållfasthet.",
+   "Ett elastiskt material går tillbaka till sin form när belastningen slutar. Men om man drar för hårt kan maskinen deformera provbiten, och till slut blir det brott. I mikroskopet kan Sofia se små sprickor i ytan efter brottet.",
+   "Hon testar också hårdhet. En liten diamant trycks in i ytan, och sedan mäter man hur stor gropen blir. Ju mindre grop, desto hårdare material.",
+   "Alla tester följer en standard, så att resultaten går att jämföra mellan olika länder. Svetsare måste vara certifierade, och bitar som de har svetsat testas på samma sätt. Sofia tycker om att veta att en bro tål tunga lastbilar och att en bil klarar ett krocktest tack vare sådana tester."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör maskinen vid ett dragprov?",
+    "options": [
+     "Den värmer provbiten",
+     "Den drar i provbiten tills den går av",
+     "Den målar provbiten",
+     "Den trycker in en diamant"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… en maskin drar i provbiten tills den går av.",
+    "explanationJa": "{機械|きかい}は{試験片|しけんへん}が{切|き}れるまで{引|ひ}っぱります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att ett material är elastiskt?",
+    "options": [
+     "Det går tillbaka till sin form",
+     "Det går sönder direkt",
+     "Det är mycket hårt",
+     "Det rostar inte"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ett elastiskt material går tillbaka till sin form när belastningen slutar.",
+    "explanationJa": "もとの{形|かたち}にもどるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "inference",
+    "statementSv": "En stor grop betyder att materialet är mycket hårt.",
+    "correct": false,
+    "explanationSv": "Ju mindre grop, desto hårdare material.",
+    "explanationJa": "くぼみが{小|ちい}さいほど{硬|かた}い{材料|ざいりょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "cause",
+    "promptSv": "Varför följer alla tester en standard?",
+    "options": [
+     "Så att testerna går snabbare",
+     "Så att materialet blir starkare",
+     "Så att resultaten går att jämföra",
+     "Så att svetsarna blir billigare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Alla tester följer en standard, så att resultaten går att jämföra mellan olika länder.",
+    "explanationJa": "{結果|けっか}を{比|くら}べられるようにするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Svetsare måste vara certifierade.",
+    "correct": true,
+    "explanationSv": "Svetsare måste vara certifierade …",
+    "explanationJa": "{溶接工|ようせつこう}には{資格|しかく}が{必要|ひつよう}です。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Vid ett dragprov dras en provbit isär tills den går av, och vid hårdhetsprovning enligt Vickers trycks en diamant in i ytan.",
+    "source": "Nationalencyklopedin, uppslagen ”dragprovning” och ”hårdhet”",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Svetsare certifieras enligt standarden SS-EN ISO 9606, och standarder tas fram av bland annat ISO och Svenska institutet för standarder (SIS).",
+    "source": "Svenska institutet för standarder (SIS)",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att testa material och produkter.",
+  "discussionPoints": [
+   "Vilka saker hemma måste tåla mycket, till exempel värme eller vatten?",
+   "Läser du på förpackningen om något tål diskmaskin eller tvättmaskin?",
+   "Skulle du vilja arbeta på ett laboratorium? Varför eller varför inte?",
+   "Finns det yrken i Japan där man måste vara certifierad?"
+  ]
+ },
+ "standard": 2
+}
