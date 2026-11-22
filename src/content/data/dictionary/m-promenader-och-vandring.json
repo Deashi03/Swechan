@@ -442,6 +442,7 @@
        "ja": "{今日|きょう}の{行程|こうてい}は20キロです。"
       }
      ],
+     "labelSv": "del av resa",
      "tags": [
       "resor",
       "promenad",
@@ -449,9 +450,42 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.etapp.2",
+     "ja": "（{工事|こうじ}などの）{段階|だんかい}、{工期|こうき}の{区切|くぎ}り",
+     "defSv": "En del av ett stort arbete, som man gör färdig innan nästa del börjar.",
+     "defJa": "{大|おお}きな{仕事|しごと}の{一部分|いちぶぶん}で、それを{終|お}えてから{次|つぎ}の{部分|ぶぶん}を{始|はじ}める。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Bygget görs i tre etapper.",
+       "ja": "{工事|こうじ}は3つの{段階|だんかい}に{分|わ}けて{行|おこな}われます。"
+      },
+      {
+       "sv": "Den första etappen blir klar i maj.",
+       "ja": "{第一段階|だいいちだんかい}は5{月|がつ}に{終|お}わります。"
+      }
+     ],
+     "labelSv": "del av arbete",
+     "tags": [
+      "bygg",
+      "arbete",
+      "planering"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.terräng",

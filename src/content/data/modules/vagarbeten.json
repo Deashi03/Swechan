@@ -1,0 +1,186 @@
+{
+ "id": "m.vagarbeten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Vägarbeten",
+ "titleJa": "{道路工事|どうろこうじ}",
+ "descriptionSv": "Du lär dig att förstå trafikinformation och skyltar vid vägarbeten, hur man kör förbi ett vägarbete och vad man gör när en väg är avstängd och trafiken leds en annan väg.",
+ "descriptionJa": "{道路工事|どうろこうじ}についての{交通情報|こうつうじょうほう}や{標識|ひょうしき}がわかるようになります。{工事区間|こうじくかん}をどう{通|とお}り{抜|ぬ}けるのか、{道路|どうろ}が{通行止|つうこうど}めで{交通|こうつう}が{別|べつ}の{道|みち}に{迂回|うかい}させられるときにどうするのかを{学|まな}びます。",
+ "categoryId": "R07-A05-T04",
+ "tags": [
+  "vägar",
+  "trafik",
+  "infrastruktur"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.tunnlar"
+ ],
+ "related": [],
+ "recommendedOrder": 4146,
+ "words": [
+  {
+   "senseId": "s.vägarbete.1",
+   "active": true
+  },
+  {
+   "senseId": "s.köbildning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikkon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillfällig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vägarbetare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varselväst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flaggvakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lotsbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stänga-av.2",
+   "active": true
+  },
+  {
+   "senseId": "s.avstängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägbom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avspärrning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.leda-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.körplåt.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En sommar med vägarbeten",
+  "paragraphs": [
+   "Karin kör till jobbet i Västerås varje morgon. I måndags hörde hon på radion: – Vägarbete på väg 56. Räkna med köbildning i båda riktningarna under hela sommaren.",
+   "Redan efter några kilometer ser hon de första trafikkonerna. Ett körfält är avstängt, och det gäller en tillfällig hastighetsgräns på 50. Vägarbetare i orange varselväst står bredvid stora maskiner.",
+   "Längre fram står en flaggvakt med en skylt. Den ena sidan är röd, och den andra är grön. Karin får vänta i fem minuter. Sedan kommer en lotsbil med en gul lampa på taket, och alla bilar kör efter den förbi vägarbetet.",
+   "På fredagen har man stängt av en bro på vägen. En vägbom och en avspärrning stoppar bilarna, och man leder om trafiken via en mindre väg. Omledningen är en omväg på tolv kilometer, men skyltarna visar vägen tydligt.",
+   "Inne i stan har man grävt upp gatan för nya fjärrvärmerör. Över hålet ligger stora körplåtar som låter högt när bilarna kör över. – Varför gör de alla vägarbeten på sommaren? frågar Karin sin kollega Ali. – För att asfalten måste läggas när det är varmt, svarar han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad sa radion om vägarbetet?",
+    "options": [
+     "Att vägen är stängd i en vecka",
+     "Att man inte får köra bil",
+     "Att vägarbetet är klart",
+     "Att man ska räkna med köbildning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Räkna med köbildning i båda riktningarna under hela sommaren.",
+    "explanationJa": "{夏|なつ}の{間|あいだ}ずっと、{両方向|りょうほうこう}で{渋滞|じゅうたい}が{予想|よそう}されると{言|い}っていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör lotsbilen?",
+    "options": [
+     "Den kör före bilarna förbi vägarbetet",
+     "Den stänger av vägen",
+     "Den lagar asfalten",
+     "Den hämtar vägarbetarna"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sedan kommer en lotsbil med en gul lampa på taket, och alla bilar kör efter den förbi vägarbetet.",
+    "explanationJa": "{先導車|せんどうしゃ}が{先頭|せんとう}を{走|はし}り、ほかの{車|くるま}はその{後|うし}ろについていきます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur lång är omvägen när bron är avstängd?",
+    "options": [
+     "Fem kilometer",
+     "Femtio kilometer",
+     "Tolv kilometer",
+     "Två kilometer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Omledningen är en omväg på tolv kilometer, men skyltarna visar vägen tydligt.",
+    "explanationJa": "{迂回路|うかいろ}は12キロの{回|まわ}り{道|みち}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Flaggvakten använder en skylt med två färger.",
+    "correct": true,
+    "explanationSv": "Den ena sidan är röd, och den andra är grön.",
+    "explanationJa": "{標識|ひょうしき}の{片面|かためん}は{赤|あか}、もう{片面|かためん}は{緑|みどり}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "cause",
+    "statementSv": "Enligt Ali gör man vägarbeten på sommaren för att det är mindre trafik då.",
+    "correct": false,
+    "explanationSv": "– För att asfalten måste läggas när det är varmt, svarar han.",
+    "explanationJa": "アリは、アスファルトは{暖|あたた}かいときに{敷|し}かなければならないからだと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Vid vägarbeten gäller ofta en tillfällig lägre hastighetsgräns som visas med vägmärken.",
+    "source": "Transportstyrelsen, vägmärkesförordningen (2007:90)",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Asfalt läggs helst när det är varmt och torrt, och därför görs många beläggningsarbeten på sommaren.",
+    "source": "Trafikverket, om vägarbeten under sommarhalvåret",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vägarbeten och omvägar.",
+  "discussionPoints": [
+   "Finns det något vägarbete nära dig just nu? Vad gör man där?",
+   "Hur brukar du få veta att en väg är avstängd?",
+   "Har du någon gång fått köra efter en lotsbil?",
+   "Hur ser vägarbeten ut i Japan, jämfört med i Sverige?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,190 @@
+{
+ "id": "m.lackor-och-stopp",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Läckor och stopp",
+ "titleJa": "{水|みず}もれと{詰|つ}まり",
+ "descriptionSv": "Du lär dig att beskriva och anmäla vanliga problem med vatten och avlopp, både hemma och i staden, och att förstå vad kommunen gör när kranvattnet inte fungerar.",
+ "descriptionJa": "{家|いえ}や{町|まち}で{起|お}こる{上下水道|じょうげすいどう}のよくある{問題|もんだい}を{説明|せつめい}して{届|とど}け{出|で}る{方法|ほうほう}と、{水道|すいどう}が{使|つか}えないときに{市|し}が{何|なに}をするのかを{学|まな}びます。",
+ "categoryId": "R07-A05-T03",
+ "tags": [
+  "vatten",
+  "avlopp",
+  "boende"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.pumpstationer"
+ ],
+ "related": [],
+ "recommendedOrder": 4137,
+ "words": [
+  {
+   "senseId": "s.vattenläcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fuktfläck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läckagevakt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rensa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörmokare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spola.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fettpropp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spolbil.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rörbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenavstängning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grumlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kokningsrekommendation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felanmäla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En vecka med vattenproblem",
+  "paragraphs": [
+   "Måndag: Sara ser en fuktfläck i taket i köket. Grannens diskmaskin har läckt i flera veckor, och nu har det blivit en vattenläcka. – Om jag hade haft en läckagevakt hade jag märkt det tidigare, säger grannen. Nu ska försäkringsbolaget titta på vattenskadan.",
+   "Onsdag: Vattnet i Saras diskho rinner inte ner. Det är stopp. Hon försöker rensa avloppet själv, men det hjälper inte. En rörmokare kommer och spolar röret med högt tryck. – Det var en fettpropp, säger han. Häll aldrig ut fett i diskhon.",
+   "Torsdag: En gammal ledning under gatan får ett rörbrott, och gatan står under vatten. Kommunen meddelar vattenavstängning i hela kvarteret. Vid skolan ställer kommunen ut en stor behållare med nödvatten, och Sara hämtar vatten i flaskor.",
+   "Fredag: Vattnet kommer tillbaka, men det är grumligt. Kommunen ger en kokningsrekommendation. Man ska koka vattnet innan man dricker det, tills nya prover visar att det går att dricka igen.",
+   "På kvällen luktar det avlopp från en brunn på gatan, och vatten kommer upp ur den. Sara felanmäler det på kommunens webbplats. På natten kommer en spolbil och rensar ledningen. – Först när vattnet inte fungerar förstår man hur viktigt det är, säger Sara."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför har Sara en fuktfläck i taket?",
+    "options": [
+     "Grannens diskmaskin har läckt",
+     "Det har regnat in genom taket",
+     "Hennes eget rör har gått sönder",
+     "Det har varit ett rörbrott på gatan"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Grannens diskmaskin har läckt i flera veckor, och nu har det blivit en vattenläcka.",
+    "explanationJa": "{上|うえ}の{階|かい}の{隣人|りんじん}の{食器洗|しょっきあら}い{機|き}から{水|みず}がもれていたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Vad var det som stoppade avloppet i diskhon?",
+    "options": [
+     "Hår och tvål",
+     "Rötter från ett träd",
+     "Fett som hade blivit hårt",
+     "En våtservett"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det var en fettpropp, säger han.",
+    "explanationJa": "{固|かた}まった{油|あぶら}が{原因|げんいん}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var kunde Sara hämta vatten under vattenavstängningen?",
+    "options": [
+     "Hos grannen",
+     "I affären",
+     "Vid reningsverket",
+     "Vid skolan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Vid skolan ställer kommunen ut en stor behållare med nödvatten.",
+    "explanationJa": "{学校|がっこう}で{応急給水|おうきゅうきゅうすい}を{受|う}けられました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "På fredagen kunde man dricka vattnet direkt från kranen.",
+    "correct": false,
+    "explanationSv": "Man ska koka vattnet innan man dricker det.",
+    "explanationJa": "{煮沸|しゃふつ}してから{飲|の}む{必要|ひつよう}がありました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Sara löste inte stoppet i diskhon själv.",
+    "correct": true,
+    "explanationSv": "Hon försöker rensa avloppet själv, men det hjälper inte. En rörmokare kommer och spolar röret.",
+    "explanationJa": "{自分|じぶん}ではできず、{配管工|はいかんこう}が{直|なお}しました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Fett som hälls ut i avloppet stelnar när det kallnar och är en vanlig orsak till stopp i ledningarna.",
+    "source": "Svenskt Vatten, ”Spola rätt”",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Kommunen kan ge kokningsrekommendation när dricksvattnet kan innehålla bakterier, och då ska vattnet kokas innan man dricker det.",
+    "source": "Livsmedelsverket, ”Kokningsrekommendation”",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om problem med vatten och avlopp hemma och i staden.",
+  "discussionPoints": [
+   "Har du haft stopp i avloppet hemma? Hur löste du det?",
+   "Vad gör du med fettet från stekpannan?",
+   "Har du varit med om att kranvattnet inte gick att dricka?",
+   "Vem ringer man när det läcker där du bor?"
+  ]
+ },
+ "standard": 2
+}

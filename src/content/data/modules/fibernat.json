@@ -1,0 +1,188 @@
+{
+ "id": "m.fibernat",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Fibernät",
+ "titleJa": "{光|ひかり}ファイバー{網|もう}",
+ "descriptionSv": "Du lär dig att prata om fiber till huset: hur ett fibernät byggs och betalas, vad som händer på din egen tomt och inne i huset när fibern kopplas in och hur du sedan väljer internetleverantör.",
+ "descriptionJa": "{家|いえ}に{光回線|ひかりかいせん}を{引|ひ}くことについて{話|はな}せるようになります。{光|ひかり}ファイバー{網|もう}がどのように{作|つく}られ、{費用|ひよう}がどう{払|はら}われるのか、{光回線|ひかりかいせん}をつなぐときに{自分|じぶん}の{敷地|しきち}や{家|いえ}の{中|なか}で{何|なに}が{起|お}こるのか、そしてそのあとインターネット{業者|ぎょうしゃ}をどう{選|えら}ぶのかを{学|まな}びます。",
+ "categoryId": "R07-A05-T06",
+ "tags": [
+  "teknik",
+  "internet",
+  "boende"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.gatubelysning"
+ ],
+ "related": [],
+ "recommendedOrder": 4162,
+ "words": [
+  {
+   "senseId": "s.fibernät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fiber.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fiberkabel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bredband.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kopparnät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avveckla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fiberförening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anslutningsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tomtgräns.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gräva-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddsrör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blåsa-in.2",
+   "active": true
+  },
+  {
+   "senseId": "s.mediaomvandlare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anslutning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ansluta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.router.1",
+   "active": true
+  },
+  {
+   "senseId": "s.internetleverantör.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bindningstid.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Fiber till huset",
+  "paragraphs": [
+   "Anders och Naoko bor i ett hus utanför Sundsvall. I många år har de haft telefon och långsamt bredband via kopparnätet. Men de stora bolagen håller på att avveckla kopparnätet i hela Sverige, och därför har grannarna startat en fiberförening.",
+   "Anslutningsavgiften är 19 000 kronor per hus. För de pengarna ska föreningen gräva ner fiber längs vägen fram till varje tomtgräns. Från tomtgränsen fram till huset gräver Anders själv.",
+   "En lördag gräver Anders ett smalt dike genom trädgården. Där ska han gräva ner ett orange skyddsrör. Två veckor senare kommer en tekniker och blåser in fiberkabeln i röret. Det tar bara några minuter.",
+   "Inne i huset sätter teknikern upp en mediaomvandlare på väggen i tvättstugan. Där slutar fiberkabeln. Naoko ansluter deras gamla router till den med en nätverkskabel, och snart lyser alla lampor grönt.",
+   "Nu kan de själva välja internetleverantör i det nya fibernätet. Naoko jämför priser och väljer ett abonnemang utan bindningstid. – Snabbare bredband och billigare än förut, säger hon. Anders tycker att anslutningen till fiber var värd allt grävande."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför startade grannarna en fiberförening?",
+    "options": [
+     "De ville sälja sina hus",
+     "Kommunen bad dem om det",
+     "Kopparnätet ska avvecklas",
+     "Mobilnätet var för dyrt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Men de stora bolagen håller på att avveckla kopparnätet i hela Sverige, och därför har grannarna startat en fiberförening.",
+    "explanationJa": "{銅線|どうせん}{網|もう}が{廃止|はいし}されるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem gräver från tomtgränsen fram till huset?",
+    "options": [
+     "Föreningen",
+     "Teknikern",
+     "Anders själv",
+     "Kommunen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Från tomtgränsen fram till huset gräver Anders själv.",
+    "explanationJa": "{敷地|しきち}の{境界|きょうかい}から{家|いえ}までは、アンデシュが{自分|じぶん}で{掘|ほ}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur kommer fiberkabeln in i skyddsröret?",
+    "options": [
+     "Anders drar in den för hand",
+     "En tekniker blåser in den",
+     "Den ligger redan i röret",
+     "Grannarna skjuter in den"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Två veckor senare kommer en tekniker och blåser in fiberkabeln i röret.",
+    "explanationJa": "{技術者|ぎじゅつしゃ}が{空気|くうき}で{送|おく}り{込|こ}みます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Mediaomvandlaren sitter i köket.",
+    "correct": false,
+    "explanationSv": "Inne i huset sätter teknikern upp en mediaomvandlare på väggen i tvättstugan.",
+    "explanationJa": "メディアコンバーターは{洗濯室|せんたくしつ}の{壁|かべ}にあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Naoko kan byta abonnemang när hon vill.",
+    "correct": true,
+    "explanationSv": "Naoko jämför priser och väljer ett abonnemang utan bindningstid.",
+    "explanationJa": "{契約期間|けいやくきかん}の{縛|しば}りがないので、いつでも{変|か}えられます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Det gamla kopparnätet för fast telefoni håller på att avvecklas i Sverige.",
+    "source": "Post- och telestyrelsen (PTS)",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om internet hemma och om att dra in fiber i ett hus eller en lägenhet.",
+  "discussionPoints": [
+   "Har du fiber hemma? Hur fick du det?",
+   "Skulle du kunna tänka dig att gräva själv för att få fiber?",
+   "Vad är viktigast när du väljer internetleverantör: pris, hastighet eller bindningstid?",
+   "Hur får man internet i ett hus i Japan?"
+  ]
+ },
+ "standard": 2
+}

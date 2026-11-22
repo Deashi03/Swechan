@@ -1,0 +1,192 @@
+{
+ "id": "m.slutbesiktning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Slutbesiktning",
+ "titleJa": "{竣工検査|しゅんこうけんさ}",
+ "descriptionSv": "Du lär dig vad som händer när ett bygge är klart: hur en besiktning går till, hur fel skrivs ner och rättas till och när man får flytta in. Du lär dig också vilka rättigheter du har om fel visar sig senare.",
+ "descriptionJa": "{工事|こうじ}が{終|お}わったときに{何|なに}が{行|おこな}われるかを{学|まな}びます。{検査|けんさ}の{進|すす}め{方|かた}、{欠陥|けっかん}の{記録|きろく}と{修理|しゅうり}、{入居|にゅうきょ}できる{時期|じき}がわかるようになります。また、あとから{欠陥|けっかん}が{見|み}つかったときにどんな{権利|けんり}があるかも{学|まな}びます。",
+ "categoryId": "R07-A05-T02",
+ "tags": [
+  "bygg",
+  "boende",
+  "avtal"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.materialleveranser"
+ ],
+ "related": [],
+ "recommendedOrder": 4127,
+ "words": [
+  {
+   "senseId": "s.besiktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slutbesiktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besiktningsman.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besiktningsprotokoll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anmärkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åtgärda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avhjälpa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.godkänna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underkänd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egenkontroll.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontrollansvarig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slutbesked.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skötselanvisning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garantitid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garantibesiktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dolt-fel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Besiktningen av huset",
+  "paragraphs": [
+   "Naoko och Anders har låtit bygga en villa utanför Linköping. En dag i oktober är det slutbesiktning. Besiktningsmannen går igenom huset tillsammans med dem och med platschefen från entreprenören.",
+   "Hon tittar på allt: tak, fönster, golv och badrum. Hon frågar också efter hantverkarnas egenkontroller. I besiktningsprotokollet skriver hon fem anmärkningar, bland annat en dörr som tar i golvet och en spricka vid ett fönster.",
+   "– Inga stora fel, säger besiktningsmannen efter besiktningen. Jag godkänner slutbesiktningen, men entreprenören måste åtgärda anmärkningarna inom två månader. Huset hade blivit underkänt om det funnits allvarliga fel.",
+   "Den kontrollansvarige skickar sedan alla papper till kommunen, och en vecka senare kommer slutbesked. Nu får familjen flytta in. Platschefen ger dem en pärm med skötselanvisningar för ventilationen och värmepumpen.",
+   "I avtalet står det att garantitiden är fem år. Efter två år är det garantibesiktning. Då hittar besiktningsmannen ett dolt fel: ett rör under köket har läckt lite länge. Entreprenören måste avhjälpa felet, och Naoko och Anders behöver inte betala något."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem är med på slutbesiktningen?",
+    "options": [
+     "Bara besiktningsmannen",
+     "Kommunen och den kontrollansvarige",
+     "Besiktningsmannen, familjen och platschefen",
+     "Alla hantverkare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Besiktningsmannen går igenom huset tillsammans med dem och med platschefen från entreprenören.",
+    "explanationJa": "{検査員|けんさいん}、{家族|かぞく}、{請負業者|うけおいぎょうしゃ}の{現場所長|げんばしょちょう}が{立|た}ち{会|あ}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur många anmärkningar står i besiktningsprotokollet?",
+    "options": [
+     "Två",
+     "Inga",
+     "Tio",
+     "Fem"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "I besiktningsprotokollet skriver hon fem anmärkningar …",
+    "explanationJa": "{検査報告書|けんさほうこくしょ}には5つの{指摘|してき}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "När får familjen flytta in?",
+    "options": [
+     "När kommunen har gett slutbesked",
+     "Direkt efter slutbesiktningen",
+     "När garantitiden är slut",
+     "När alla anmärkningar är åtgärdade"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… en vecka senare kommer slutbesked. Nu får familjen flytta in.",
+    "explanationJa": "{市|し}から{完了検査|かんりょうけんさ}の{合格通知|ごうかくつうち}が{来|き}てから{入居|にゅうきょ}できます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Huset blev underkänt vid slutbesiktningen.",
+    "correct": false,
+    "explanationSv": "Jag godkänner slutbesiktningen …",
+    "explanationJa": "{竣工検査|しゅんこうけんさ}は{合格|ごうかく}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Felet med röret hittades innan garantitiden tog slut.",
+    "correct": true,
+    "explanationSv": "I avtalet står det att garantitiden är fem år. Efter två år är det garantibesiktning.",
+    "explanationJa": "{保証期間|ほしょうきかん}は5{年|ねん}で、{検査|けんさ}は2{年後|ねんご}だったので、まだ{保証期間中|ほしょうきかんちゅう}でした。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En byggnad får inte börja användas innan byggnadsnämnden har gett slutbesked.",
+    "source": "Plan- och bygglagen (2010:900) 10 kap. 4 §; Boverket",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "För de flesta åtgärder som kräver bygglov eller anmälan måste byggherren ha en certifierad kontrollansvarig.",
+    "source": "Plan- och bygglagen (2010:900) 10 kap. 9 §; Boverket",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Vid en garantibesiktning kontrolleras fel som har visat sig under garantitiden, och entreprenören ska avhjälpa fel som denne ansvarar för.",
+    "source": "Konsumentverket; Allmänna bestämmelser för småhusentreprenader (ABS 18)",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att ta över ett nytt hus eller en ny bostad och om vem som ska rätta till fel.",
+  "discussionPoints": [
+   "Har du varit med på en besiktning av en bostad? Vad hittade man?",
+   "Vad skulle du göra om du hittade ett dolt fel i din bostad?",
+   "Läser du skötselanvisningar, eller provar du dig fram?",
+   "Hur kontrollerar man nya hus i Japan?"
+  ]
+ },
+ "standard": 2
+}

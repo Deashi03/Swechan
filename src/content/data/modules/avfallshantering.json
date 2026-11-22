@@ -1,0 +1,188 @@
+{
+ "id": "m.avfallshantering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Avfallshantering",
+ "titleJa": "{廃棄物処理|はいきぶつしょり}",
+ "descriptionSv": "Du lär dig hur avfallet från ett hushåll tas om hand: olika sätt att samla in sopor i villor, hyreshus och nya stadsdelar, vad som händer med avfallet efteråt och varför det är bäst om saker kan användas igen.",
+ "descriptionJa": "{家庭|かてい}から{出|で}たごみがどのように{処理|しょり}されるかを{学|まな}びます。{一戸建|いっこだ}て、{賃貸住宅|ちんたいじゅうたく}、{新|あたら}しい{地区|ちく}でのごみの{集|あつ}め{方|かた}の{違|ちが}い、そのあとごみがどうなるのか、そして{物|もの}をもう{一度|いちど}{使|つか}うことがなぜいちばんよいのかがわかるようになります。",
+ "categoryId": "R07-A05-T06",
+ "tags": [
+  "avfall",
+  "miljö",
+  "stad"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.fjarrvarmenat"
+ ],
+ "related": [],
+ "recommendedOrder": 4164,
+ "words": [
+  {
+   "senseId": "s.avfallshantering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.renhållning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sophämtning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fyrfackskärl.1",
+   "active": true
+  },
+  {
+   "senseId": "s.matavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insamling.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tömma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sopnedkast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sopsug.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underjordsbehållare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avfallsförbränning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energiåtervinning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.materialåtervinning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.deponi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.återbruk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.farligt-avfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avfallstrappa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kretslopp.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Vart tar soporna vägen?",
+  "paragraphs": [
+   "Sofia studerar miljö och teknik och gör praktik på renhållningen i en kommun. Den första veckan lär hon sig hur avfallshanteringen fungerar, från soppåsen hemma till återvinningen.",
+   "I villaområdena har nästan alla hushåll två fyrfackskärl. I dem sorterar man matavfall, restavfall och olika förpackningar. Sedan 2024 ska alla kommuner erbjuda insamling av matavfall. Sophämtningen kommer varannan vecka, och sopbilen tömmer alla fack på en gång.",
+   "I de äldre hyreshusen finns fortfarande sopnedkast i trapphuset, men många har stängts eftersom de luktar och kan börja brinna. I stället står det underjordsbehållare på gårdarna. Det nya bostadsområdet vid stationen har sopsug: påsarna sugs genom rör under marken till en station en bit bort.",
+   "En dag följer Sofia med till kraftvärmeverket. Där sker avfallsförbränningen, och värmen går ut i fjärrvärmenätet. Det kallas energiåtervinning. Matavfallet blir biogas, och förpackningarna går till materialåtervinning. Bara en liten del hamnar på deponi.",
+   "På återvinningscentralen visar hennes handledare Lars en ny hall för återbruk. Där lämnar folk möbler, cyklar och leksaker som andra kan hämta gratis. Farligt avfall, som färg och batterier, lämnas i ett eget rum. – Tänk på avfallstrappan, säger Lars. Det bästa är när saker stannar kvar i kretsloppet så länge som möjligt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många fyrfackskärl har de flesta hushåll i villaområdena?",
+    "options": [
+     "Två",
+     "Ett",
+     "Tre",
+     "Fyra"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I villaområdena har nästan alla hushåll två fyrfackskärl.",
+    "explanationJa": "ほとんどの{家庭|かてい}に4{分別|ぶんべつ}のごみ{容器|ようき}が2つあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför har många sopnedkast stängts?",
+    "options": [
+     "De är för små",
+     "Ingen använder dem",
+     "De luktar och kan börja brinna",
+     "De är för dyra att tömma"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… många har stängts eftersom de luktar och kan börja brinna.",
+    "explanationJa": "においがして、{火事|かじ}になるおそれがあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur kommer soppåsarna bort i det nya bostadsområdet?",
+    "options": [
+     "Sopbilen hämtar dem varje dag",
+     "De sugs genom rör under marken",
+     "De boende kör dem till återvinningscentralen",
+     "De läggs i fyrfackskärl"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… påsarna sugs genom rör under marken till en station en bit bort.",
+    "explanationJa": "{地下|ちか}の{管|くだ}を{通|とお}って{吸|す}い{出|だ}されます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Värmen från avfallsförbränningen går ut i fjärrvärmenätet.",
+    "correct": true,
+    "explanationSv": "Där sker avfallsförbränningen, och värmen går ut i fjärrvärmenätet.",
+    "explanationJa": "ごみを{燃|も}やした{熱|ねつ}は{地域暖房|ちいきだんぼう}{網|もう}に{送|おく}られます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man måste betala för sakerna i hallen för återbruk.",
+    "correct": false,
+    "explanationSv": "Där lämnar folk möbler, cyklar och leksaker som andra kan hämta gratis.",
+    "explanationJa": "{物|もの}は{無料|むりょう}で{持|も}ち{帰|かえ}れます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Sedan den 1 januari 2024 ska alla kommuner erbjuda hushållen separat insamling av matavfall.",
+    "source": "Naturvårdsverket",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om sopor och sortering där ni bor och om vad som händer med avfallet.",
+  "discussionPoints": [
+   "Hur sorterar du soporna hemma? Är det lätt eller svårt?",
+   "Har du sopnedkast, underjordsbehållare eller sopsug där du bor?",
+   "Har du lämnat eller hittat något på ett återbruk?",
+   "Hur skiljer sig sophanteringen i Japan från den i Sverige?"
+  ]
+ },
+ "standard": 2
+}

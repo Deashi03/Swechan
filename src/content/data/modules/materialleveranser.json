@@ -1,0 +1,188 @@
+{
+ "id": "m.materialleveranser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Materialleveranser",
+ "titleJa": "{資材|しざい}の{配達|はいたつ}",
+ "descriptionSv": "Du lär dig hur material kommer till ett bygge: från beställning och leveranstid till att lasset lossas, kontrolleras och kvitteras. Du lär dig också hur materialet förvaras och skyddas och vad som händer med det som blir över.",
+ "descriptionJa": "{資材|しざい}が{工事現場|こうじげんば}に{届|とど}くまでの{流|なが}れを{学|まな}びます。{注文|ちゅうもん}と{納期|のうき}から、{荷降|におろ}し、{確認|かくにん}、{受領|じゅりょう}のサインまでがわかるようになります。また、{資材|しざい}をどう{保管|ほかん}して{守|まも}るか、{余|あま}ったものがどうなるかも{学|まな}びます。",
+ "categoryId": "R07-A05-T02",
+ "tags": [
+  "bygg",
+  "arbete",
+  "logistik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.arbetsmoment-och-etapper"
+ ],
+ "related": [],
+ "recommendedOrder": 4126,
+ "words": [
+  {
+   "senseId": "s.beställa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leverera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leveranstid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.restnoterad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lastbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kranbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lossa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.pall.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lyftband.1",
+   "active": false
+  },
+  {
+   "senseId": "s.följesedel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvittera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.upplag.1",
+   "active": false
+  },
+  {
+   "senseId": "s.presenning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stöld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byggavfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.container.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sortera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Leveransen klockan sju",
+  "paragraphs": [
+   "Jonas är arbetsledare på ett bygge med nya lägenheter. I mars beställde han fönster till hela huset från en fabrik som levererar till många byggen. Leveranstiden var fyra veckor, men tio av fönstren var restnoterade och kommer senare.",
+   "Klockan sju en tisdag kommer leveransen. Det är en kranbil, och föraren kan lossa allt själv. Han lägger lyftband runt pallarna och lyfter av dem med kranen, en efter en. En vanlig lastbil hade behövt byggkranen.",
+   "Jonas tar följesedeln och räknar. Det ska vara tolv pallar, men en pall har ett trasigt fönster. Han skriver det på följesedeln och kvitterar sedan leveransen med sitt namn.",
+   "Pallarna ställs på upplaget bakom bygget, och Jonas lägger en presenning över dem. Förra månaden var det en stöld på bygget, så nu står upplaget innanför stängslet, där det finns kameror.",
+   "Fönstren kom i papp och plast. Allt det blir byggavfall. Vid grinden står sex containrar, och alla på bygget måste sortera: trä i en container, metall i en annan och så vidare. – Det är bättre för miljön, och det kostar mindre, säger Jonas."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur lång var leveranstiden för fönstren?",
+    "options": [
+     "Två dagar",
+     "Tio veckor",
+     "En månad och en vecka",
+     "Fyra veckor"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Leveranstiden var fyra veckor, men tio av fönstren var restnoterade och kommer senare.",
+    "explanationJa": "{配達|はいたつ}までの{期間|きかん}は4{週間|しゅうかん}でした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför behövs inte byggkranen den här gången?",
+    "options": [
+     "Pallarna är lätta",
+     "Det regnar",
+     "Föraren har många hjälpare",
+     "Kranbilen har en egen kran"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det är en kranbil, och föraren kan lossa allt själv.",
+    "explanationJa": "クレーン{付|つ}きトラックなので、{運転手|うんてんしゅ}が{自分|じぶん}で{降|お}ろせます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad gör Jonas innan han kvitterar?",
+    "options": [
+     "Han ringer platschefen",
+     "Han betalar fönstren",
+     "Han lägger en presenning över pallarna",
+     "Han skriver på följesedeln att ett fönster är trasigt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han skriver det på följesedeln och kvitterar sedan leveransen med sitt namn.",
+    "explanationJa": "{受領|じゅりょう}のサインの{前|まえ}に、{壊|こわ}れた{窓|まど}のことを{納品書|のうひんしょ}に{書|か}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Upplaget står nu innanför stängslet.",
+    "correct": true,
+    "explanationSv": "… så nu står upplaget innanför stängslet, där det finns kameror.",
+    "explanationJa": "{盗難|とうなん}があったので、{資材置|しざいお}き{場|ば}はフェンスの{内側|うちがわ}にあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "På bygget slänger man allt avfall i samma container.",
+    "correct": false,
+    "explanationSv": "Vid grinden står sex containrar, och alla på bygget måste sortera …",
+    "explanationJa": "6つのコンテナがあり、ごみを{分別|ぶんべつ}しなければなりません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Bygg- och rivningsavfall ska sorteras i minst trä, mineral, metall, glas, plast och gips.",
+    "source": "Avfallsförordningen (2020:614); Naturvårdsverket",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om leveranser, både till ett bygge och hem till er själva.",
+  "discussionPoints": [
+   "Har du fått en leverans där något saknades? Vad gjorde du?",
+   "Vad brukar du kontrollera innan du kvitterar ett paket?",
+   "Hur sorterar man avfall där du bor?",
+   "Varför tror du att det är så många stölder på byggen?"
+  ]
+ },
+ "standard": 2
+}

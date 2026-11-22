@@ -1,0 +1,180 @@
+{
+ "id": "m.byggmaterial",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Byggmaterial",
+ "titleJa": "{建築資材|けんちくしざい}",
+ "descriptionSv": "Vilka material man bygger med och vad som skiljer dem åt: trä, sten, betong och metall, deras för- och nackdelar och hur man kan bygga med mindre klimatpåverkan.",
+ "descriptionJa": "{建物|たてもの}を{建|た}てる{材料|ざいりょう}とその{違|ちが}い：{木|き}、{石|いし}、コンクリート、{金属|きんぞく}の{長所|ちょうしょ}と{短所|たんしょ}、そして{環境|かんきょう}への{影響|えいきょう}を{減|へ}らして{建|た}てる{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A05-T01",
+ "tags": [
+  "bygg",
+  "hus",
+  "material"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.fonster-och-dorrar"
+ ],
+ "related": [],
+ "recommendedOrder": 4117,
+ "words": [
+  {
+   "senseId": "s.byggmaterial.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trä.1",
+   "active": true
+  },
+  {
+   "senseId": "s.virke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckimpregnerad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spånskiva.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brännbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lättbetong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.natursten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bruk.3",
+   "active": true
+  },
+  {
+   "senseId": "s.mura.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plåt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.byggvaruhus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återbruk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klimatavtryck.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett litet hus i trädgården",
+  "paragraphs": [
+   "Ali vill bygga ett litet hus i trädgården, där han kan arbeta på helgerna. En lördag åker han till byggvaruhuset med sin granne Nils för att titta på byggmaterial.",
+   "– Vilket material ska stommen vara av? frågar Ali. – Trä, säger Nils. Virke är lätt att arbeta med och inte så dyrt. Till delarna närmast marken tar du tryckimpregnerat virke. Det klarar fukt bättre.",
+   "Ali tänker på brand. – Trä är ju brännbart, säger han. – Ja, säger Nils, men det är spånskivor och plast också. Betong, tegel och sten brinner inte. Men de är tunga, och det tar längre tid att bygga med dem.",
+   "Nils visar block av lättbetong. – Min bror murade sitt garage av lättbetong, säger han. Blocken är stora, men man murar dem lätt med lite bruk. Längre bort i butiken ligger natursten, balkar av stål och plåt till tak.",
+   "Till sist berättar Nils om ett återbruk i staden, där man kan köpa gamla fönster, dörrar och virke. – Det är billigare, och klimatavtrycket blir mindre än med nytt material, säger han. Nästa lördag åker de dit, och Ali hittar ett fint gammalt fönster till sitt lilla hus."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför åker Ali till byggvaruhuset?",
+    "options": [
+     "För att köpa en ny cykel",
+     "För att arbeta där",
+     "För att titta på byggmaterial",
+     "För att träffa en kollega"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En lördag åker han till byggvaruhuset med sin granne Nils för att titta på byggmaterial.",
+    "explanationJa": "{建築資材|けんちくしざい}を{見|み}るためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket virke ska Ali använda närmast marken?",
+    "options": [
+     "Spånskivor",
+     "Lättbetong",
+     "Tryckimpregnerat virke",
+     "Plåt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Till delarna närmast marken tar du tryckimpregnerat virke.",
+    "explanationJa": "{地面|じめん}に{近|ちか}い{部分|ぶぶん}には{防腐|ぼうふ}{処理|しょり}された{木材|もくざい}を{使|つか}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad menar Ali när han säger att trä är brännbart?",
+    "options": [
+     "Att det är mycket tungt",
+     "Att det klarar fukt",
+     "Att det kan brinna",
+     "Att det är billigt"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Trä är ju brännbart, säger han.",
+    "explanationJa": "{木|き}は{燃|も}える{可能性|かのうせい}があるという{意味|いみ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Nils bror har murat sitt garage av natursten.",
+    "correct": false,
+    "explanationSv": "– Min bror murade sitt garage av lättbetong, säger han.",
+    "explanationJa": "{兄弟|きょうだい}のガレージは{軽量気泡|けいりょうきほう}コンクリートでできています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "På återbruket kan man köpa gammalt byggmaterial.",
+    "correct": true,
+    "explanationSv": "Till sist berättar Nils om ett återbruk i staden, där man kan köpa gamla fönster, dörrar och virke.",
+    "explanationJa": "リユースの{店|みせ}では{古|ふる}い{窓|まど}やドアや{木材|もくざい}が{買|か}えます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Återbruk av byggmaterial ger i regel mindre klimatpåverkan än nytillverkat material, och betong, tegel och sten är obrännbara material.",
+    "source": "Boverket, ”Återbruk av byggprodukter” och ”Brandskydd”",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om byggmaterial och om att bygga på ett sätt som är bra för klimatet.",
+  "discussionPoints": [
+   "Vilka byggmaterial är vanligast där du kommer ifrån?",
+   "Skulle du hellre bo i ett hus av trä eller av sten? Varför?",
+   "Har du köpt något gammalt till ditt hem i stället för något nytt?",
+   "Vad tycker du om höga hus av trä?"
+  ]
+ },
+ "standard": 2
+}

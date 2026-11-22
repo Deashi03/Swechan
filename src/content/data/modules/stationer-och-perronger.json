@@ -1,0 +1,181 @@
+{
+ "id": "m.stationer-och-perronger",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Stationer och perronger",
+ "titleJa": "{駅|えき}とホーム",
+ "descriptionSv": "Du lär dig att beskriva hur en station och dess perronger är byggda, särskilt för att alla ska kunna resa, och att förstå planer när en station byggs om.",
+ "descriptionJa": "{駅|えき}とホームが、とくに{誰|だれ}もが{移動|いどう}できるようにどう{造|つく}られているかを{説明|せつめい}できるようになります。また、{駅|えき}が{改築|かいちく}されるときの{計画|けいかく}がわかるようになります。",
+ "categoryId": "R07-A05-T05",
+ "tags": [
+  "järnväg",
+  "kollektivtrafik",
+  "infrastruktur"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kontaktledning"
+ ],
+ "related": [],
+ "recommendedOrder": 4154,
+ "words": [
+  {
+   "senseId": "s.tunnelbana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.station.1",
+   "active": true
+  },
+  {
+   "senseId": "s.perrong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetslinje.1",
+   "active": false
+  },
+  {
+   "senseId": "s.glipa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillgänglighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.insteg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledstråk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärmtak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ramp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gångtunnel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångbro.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bytespunkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.infartsparkering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.avgångstavla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utrop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlänga.3",
+   "active": true
+  },
+  {
+   "senseId": "s.bygga-om.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Stationen ska byggas om",
+  "paragraphs": [
+   "Anna åker tåg till jobbet varje dag. Hennes station är gammal, men nu ska man bygga om den. På en lapp vid perrongen står det vad som ska hända.",
+   "Man ska förlänga perrongerna, så att längre tåg får plats. Över perrongen kommer ett nytt skärmtak, så att man inte står i regnet när man väntar.",
+   "Stationen ska också få bättre tillgänglighet. Det blir plant insteg till tågen, så att man inte behöver gå upp några steg. Ett ledstråk ska gå längs hela perrongen, och vid trappan kommer en ramp.",
+   "I dag måste man gå över spåren på en gammal gångbro. Den ska tas bort, och i stället bygger man en gångtunnel under spåren.",
+   "Det blir också nya avgångstavlor och bättre utrop, så att alla kan se och höra när tåget kommer. Glipan mellan tåget och perrongen ska bli mindre, och säkerhetslinjen ska synas bättre.",
+   "Bredvid stationen bygger staden en infartsparkering och en ny hållplats för bussar. Stationen blir en bytespunkt där man lätt kan byta mellan bil, buss, tunnelbana och tåg. – Bra, säger Anna. Men det tar två år, och under tiden blir det många förseningar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför ska man förlänga perrongerna?",
+    "options": [
+     "Så att fler kan sitta",
+     "Så att det blir ett skärmtak",
+     "Så att bussar kan stanna där",
+     "Så att längre tåg får plats"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Man ska förlänga perrongerna, så att längre tåg får plats.",
+    "explanationJa": "{長|なが}い{列車|れっしゃ}が{止|と}まれるように、ホームを{延長|えんちょう}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad betyder det att det blir plant insteg?",
+    "options": [
+     "Man behöver inte gå upp några steg",
+     "Man måste gå upp en trappa",
+     "Tåget blir längre",
+     "Perrongen får ett tak"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det blir plant insteg till tågen, så att man inte behöver gå upp några steg.",
+    "explanationJa": "{段差|だんさ}がなくなるので、{階段|かいだん}を{上|あ}がる{必要|ひつよう}がありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad kommer i stället för den gamla gångbron?",
+    "options": [
+     "En ny gångbro",
+     "En gångtunnel",
+     "En hiss",
+     "En plankorsning"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den ska tas bort, och i stället bygger man en gångtunnel under spåren.",
+    "explanationJa": "{歩道橋|ほどうきょう}の{代|か}わりに{地下道|ちかどう}を{造|つく}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det blir en infartsparkering bredvid stationen.",
+    "correct": true,
+    "explanationSv": "Bredvid stationen bygger staden en infartsparkering och en ny hållplats för bussar.",
+    "explanationJa": "{駅|えき}の{隣|となり}にパークアンドライド{用|よう}の{駐車場|ちゅうしゃじょう}ができます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anna tror att ombyggnaden går snabbt och utan problem.",
+    "correct": false,
+    "explanationSv": "Men det tar två år, och under tiden blir det många förseningar.",
+    "explanationJa": "アンナは、{工事|こうじ}に2{年|ねん}かかり、その{間|あいだ}は{遅|おく}れが{多|おお}くなると{言|い}っています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om stationer, och om vad som gör dem bra för alla som reser.",
+  "discussionPoints": [
+   "Hur ser stationen ut där du brukar ta tåget eller tunnelbanan?",
+   "Vad är viktigast för att en station ska ha god tillgänglighet?",
+   "Finns det ledstråk och plant insteg på stationerna i ditt land?",
+   "Vad tycker du om stora bytespunkter med buss, tåg och parkering?"
+  ]
+ },
+ "standard": 2
+}

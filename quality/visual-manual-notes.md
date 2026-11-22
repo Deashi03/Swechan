@@ -261,3 +261,9 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
 - **Omritad i omgång 2:** *korrosion* (rostfläckar på plåt förväxlades med *rost*; nu tre metaller – järn, koppar, aluminium – som angrips av regn och salt, med en frisk metallbit som kontrast).
 - **Synonympar:** *additiv tillverkning* ↔ *3D-utskrift* (`conf.py`), äkta synonymer.
 - **Godkända men nära andra bilder (bevakas):** *slak* ↔ *hoppa av*; *noggrann* ↔ "mät två gånger"; *slät* ↔ *blank*; *hård* (läses som slagtest), *seg* ↔ *formbar*, *eldfast* ↔ brännugn, *lätt* ↔ glas/fjäder/sten, *hållfasthet* ↔ dragprov/bro; *defekt* ↔ *spricka*, *kvalitetssäkring* ↔ kvalitetskontroll på band; *skalenlig* ↔ skala-bilder, *plus minus*/*tolerans* ↔ ±-intervall, *revision* ↔ appuppdatering.
+
+## 0.59 – Byggnad & infrastruktur
+
+- **Omritade i omgång 2:** *upplyst* (gatlykta med ljuskägla förväxlades med *ljuskägla*; nu samma gångväg ljus och mörk utan lyktstolpe) och *samhällsekonomisk* (våg och stapeldiagram lästes som "statistik"; nu en bro över en våg där kostnaden vägs mot samhällets nytta).
+- **Synonympar:** *bygge* ↔ *byggarbetsplats*, *ställning* (bygg) ↔ *byggställning*.
+- **Godkända men nära andra bilder (bevakas):** *konstruktion* ↔ husstomme/bärande konstruktion; *säkerhetsintroduktion* ↔ arbetsplatsplan; *tätt hus* ↔ "skydd mot regn"; *kommunalt vatten* ↔ ledning i gatan; *hårdgjord* ↔ avrinning; *planskild* ↔ trafikplats; *strömlös* ↔ hus bortkopplat från elnätet; *punktlighet* ↔ tåg vid perrong med klocka; *upplyst* ↔ "trygg"; *samhällsekonomisk* ↔ pengar/avkastning.

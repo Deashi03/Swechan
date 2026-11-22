@@ -1,0 +1,168 @@
+{
+ "id": "m.vaxlar-och-signaler",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Växlar och signaler",
+ "titleJa": "ポイントと{信号|しんごう}",
+ "descriptionSv": "Du lär dig att förklara hur tåg byter spår och hur signalerna visar när de får köra, och att förstå varför växlar och signaler kan sluta fungera på vintern.",
+ "descriptionJa": "{列車|れっしゃ}がどのように{線路|せんろ}を{移|うつ}り、{信号|しんごう}が{走|はし}ってよいときをどう{示|しめ}すのかを{説明|せつめい}できるようになります。また、{冬|ふゆ}にポイントや{信号|しんごう}が{動|うご}かなくなる{理由|りゆう}がわかるようになります。",
+ "categoryId": "R07-A05-T05",
+ "tags": [
+  "järnväg",
+  "infrastruktur",
+  "trafik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.jarnvagsspar"
+ ],
+ "related": [],
+ "recommendedOrder": 4152,
+ "words": [
+  {
+   "senseId": "s.växel.4",
+   "active": true
+  },
+  {
+   "senseId": "s.växelfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växelvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frysa-fast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.signalfel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stoppsignal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grönt-ljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ställverk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sidospår.2",
+   "active": false
+  },
+  {
+   "senseId": "s.bom.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blinkande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plankorsning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avstängd.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "När växlarna frös fast",
+  "paragraphs": [
+   "Det är en kall morgon i januari, och det har snöat hela natten. Yuki ska ta tåget till jobbet, men på telefonen står det: ”Växelfel. Tågen är sena.”",
+   "I nyheterna förklarar en kvinna från järnvägen vad det är för fel. – En växel är den del av spåret där tåget kan byta till ett annat spår. Rälsen i växeln måste kunna röra sig. Men i natt har snö och is gjort att flera växlar har frusit fast.",
+   "Alla växlar har växelvärme, men när det snöar mycket och blåser räcker inte värmen. Därför arbetar personal i växlarna hela natten och tar bort snö och is.",
+   "Det blir också signalfel. Signalerna styrs från ett ställverk. Ett tåg får bara köra när signalen visar grönt ljus. När det är fel i systemet blir alla signaler stoppsignaler, och tågen måste stå still. Ett spår är helt avstängt, och det blir en försening på flera timmar.",
+   "Ett persontåg får vänta på ett sidospår medan ett annat tåg kör på det vanliga spåret. Vid en plankorsning utanför staden går bommarna ner, och de blinkande ljusen lyser, fast inget tåg kommer. – Det är farligt, säger kvinnan. Då vill folk korsa spåret fast det lyser rött. Vid lunch fungerar alla växlar igen, och Yuki kommer till jobbet två timmar sent."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför var tågen sena på morgonen?",
+    "options": [
+     "Det var för varmt",
+     "Flera växlar hade frusit fast",
+     "Personalen var sjuk",
+     "Ställverket brann"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Men i natt har snö och is gjort att flera växlar har frusit fast.",
+    "explanationJa": "{雪|ゆき}と{氷|こおり}でポイントが{凍|こお}りついたからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför räcker inte växelvärmen?",
+    "options": [
+     "Den är trasig",
+     "Det snöar mycket och blåser",
+     "Ingen har satt på den",
+     "Det är för varmt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Alla växlar har växelvärme, men när det snöar mycket och blåser räcker inte värmen.",
+    "explanationJa": "{雪|ゆき}がたくさん{降|ふ}って{風|かぜ}が{強|つよ}いからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Varifrån styrs signalerna?",
+    "options": [
+     "Från tåget",
+     "Från plankorsningen",
+     "Från ett sidospår",
+     "Från ett ställverk"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Signalerna styrs från ett ställverk.",
+    "explanationJa": "{信号|しんごう}は{連動装置|れんどうそうち}から{制御|せいぎょ}されています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ett tåg får köra när signalen visar rött.",
+    "correct": false,
+    "explanationSv": "Ett tåg får bara köra när signalen visar grönt ljus.",
+    "explanationJa": "{列車|れっしゃ}が{走|はし}れるのは{信号|しんごう}が{青|あお}のときだけです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Bommarna vid plankorsningen gick ner fast inget tåg kom.",
+    "correct": true,
+    "explanationSv": "Vid en plankorsning utanför staden går bommarna ner, och de blinkande ljusen lyser, fast inget tåg kommer.",
+    "explanationJa": "{列車|れっしゃ}が{来|こ}ないのに{遮断機|しゃだんき}が{下|お}りました。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tåg på vintern och om säkerhet vid järnvägen.",
+  "discussionPoints": [
+   "Har du varit med om att tåget var sent på grund av snö eller is?",
+   "Finns det plankorsningar där du bor? Hur ser de ut?",
+   "Vad gör man i ditt land för att tågen ska gå när det snöar?",
+   "Vad är viktigast för att det ska vara säkert vid en plankorsning?"
+  ]
+ },
+ "standard": 2
+}

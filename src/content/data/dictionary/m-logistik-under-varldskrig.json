@@ -109,6 +109,7 @@
        "ja": "{列車|れっしゃ}は{物資|ぶっし}を{前線|ぜんせん}の{後方|こうほう}の{補給所|ほきゅうじょ}へ{運|はこ}びました。"
       }
      ],
+     "labelSv": "i krig",
      "explanation": {
       "sv": "En depå är en plats där man samlar saker innan de skickas vidare. I krig låg depåerna en bit bakom fronten, så att det inte var för långt till soldaterna men inte heller för farligt. I vardagen finns till exempel bussdepåer, där bussarna står på natten.",
       "ja": "「depå」は、{物|もの}を{先|さき}へ{送|おく}る{前|まえ}に{集|あつ}めておく{場所|ばしょ}です。{戦争|せんそう}では、{兵士|へいし}から{遠|とお}すぎず、しかも{危険|きけん}すぎないように、{前線|ぜんせん}から{少|すこ}し{後|うし}ろに{置|お}かれました。{日常|にちじょう}でも、{夜|よる}にバスを{置|お}いておく「bussdepå（バス{車庫|しゃこ}）」などがあります。"
@@ -120,9 +121,50 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.depå.2",
+     "ja": "（{鉄道|てつどう}やバスの）{車両基地|しゃりょうきち}",
+     "defSv": "Ett område med hallar och spår där tåg eller bussar står när de inte används, och där man tar hand om dem.",
+     "defJa": "{使|つか}われていない{列車|れっしゃ}やバスが{止|と}まっていて、{点検|てんけん}や{手入|てい}れが{行|おこな}われる、{建物|たてもの}や{線路|せんろ}のある{場所|ばしょ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Tåget kör till depån efter den sista turen.",
+       "ja": "{最終便|さいしゅうびん}のあと、{列車|れっしゃ}は{車両基地|しゃりょうきち}へ{向|む}かいます。"
+      },
+      {
+       "sv": "I depån tvättar och fixar man tågen på natten.",
+       "ja": "{車両基地|しゃりょうきち}では、{夜|よる}の{間|あいだ}に{列車|れっしゃ}を{洗|あら}ったり{直|なお}したりします。"
+      }
+     ],
+     "labelSv": "tåg och buss",
+     "collocations": [
+      "köra in i depån",
+      "en ny depå för tåg"
+     ],
+     "explanation": {
+      "sv": "I en depå ställer man tåg eller bussar på natten. Där finns ofta en verkstad där man ser över och fixar dem, och en hall där man tvättar dem. Ordet depå används också om ett ställe där man har saker, till exempel i ett krig.",
+      "ja": "{車両基地|しゃりょうきち}には、{夜|よる}に{列車|れっしゃ}やバスが{止|と}められます。たいてい{点検|てんけん}や{修理|しゅうり}をする{工場|こうじょう}や、{車両|しゃりょう}を{洗|あら}う{建物|たてもの}があります。「depå」は、{戦争|せんそう}などで{物資|ぶっし}を{置|お}いておく{場所|ばしょ}という{意味|いみ}でも{使|つか}われます。"
+     },
+     "tags": [
+      "järnväg",
+      "underhåll",
+      "arbete"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.försörjningslinje",

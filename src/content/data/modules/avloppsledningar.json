@@ -1,0 +1,184 @@
+{
+ "id": "m.avloppsledningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Avloppsledningar",
+ "titleJa": "{下水管|げすいかん}",
+ "descriptionSv": "Du lär dig hur avloppsvattnet tar sig från huset till gatan, vad som kan gå fel i gamla avloppsrör och hur man lagar dem, och hur ett hus på landet med eget avlopp fungerar.",
+ "descriptionJa": "{下水|げすい}が{家|いえ}から{道路|どうろ}までどのように{流|なが}れるか、{古|ふる}い{排水管|はいすいかん}にどんな{問題|もんだい}が{起|お}こり、どう{直|なお}すのか、そして{自分|じぶん}の{排水設備|はいすいせつび}がある{田舎|いなか}の{家|いえ}のしくみを{学|まな}びます。",
+ "categoryId": "R07-A05-T03",
+ "tags": [
+  "avlopp",
+  "infrastruktur",
+  "boende"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.vattenledningar"
+ ],
+ "related": [],
+ "recommendedOrder": 4133,
+ "words": [
+  {
+   "senseId": "s.avlopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avloppsledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spillvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lutning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brunnslock.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenlås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avloppslukt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörinspektion.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rotinträngning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tät.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rost.1",
+   "active": false
+  },
+  {
+   "senseId": "s.relining.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stambyte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.enskilt-avlopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slamavskiljare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slamtömning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Lukt i källaren",
+  "paragraphs": [
+   "Anders och Lisa bor i en villa från 1960-talet. En dag känner de avloppslukt i källaren. Först tror Anders att vattenlåset i golvbrunnen har torkat ut, men lukten är kvar fast han häller vatten i brunnen.",
+   "De ringer en rörmokare. Hon gör en rörinspektion med en liten kamera. På skärmen ser de att avloppsledningen under gräsmattan har en spricka. Där finns också rotinträngning från en stor björk.",
+   "– Allt spillvatten från huset går med självfall ut till ledningen i gatan, förklarar rörmokaren. Därför måste ledningen ha rätt lutning. Hon visar ett brunnslock på gatan. Där under ligger kommunens ledning. Husets rör är inte längre täta, och det finns rost på de gamla rören i källaren.",
+   "Rörmokaren föreslår relining. Då behöver de inte gräva upp trädgården. – I stora hyreshus gör man ofta ett stambyte, men här räcker det med relining, säger hon.",
+   "Lisas föräldrar har en sommarstuga med enskilt avlopp. Där rinner spillvattnet först till en slamavskiljare på tomten. En gång om året kommer en stor bil för slamtömning. – Den bilen luktar mer än vår källare, skrattar Lisa."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tror Anders först att lukten beror på?",
+    "options": [
+     "Att en råtta har kommit in",
+     "Att vattenlåset har torkat ut",
+     "Att tvättmaskinen är trasig",
+     "Att slamavskiljaren är full"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Först tror Anders att vattenlåset i golvbrunnen har torkat ut.",
+    "explanationJa": "{最初|さいしょ}は{排水|はいすい}トラップの{水|みず}がなくなったと{思|おも}いました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad visar rörinspektionen?",
+    "options": [
+     "En spricka och rötter i ledningen",
+     "Att ledningen är helt ny",
+     "Att det inte finns någon lutning",
+     "Ett stopp i köket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På skärmen ser de att avloppsledningen under gräsmattan har en spricka. Där finns också rotinträngning från en stor björk.",
+    "explanationJa": "{下水管|げすいかん}のひびと{木|き}の{根|ね}の{侵入|しんにゅう}が{見|み}つかりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför föreslår rörmokaren relining?",
+    "options": [
+     "Det är det enda som fungerar i en villa",
+     "De behöver inte gräva upp trädgården",
+     "Kommunen bestämmer det",
+     "Det tar längre tid men är billigare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Rörmokaren föreslår relining. Då behöver de inte gräva upp trädgården.",
+    "explanationJa": "{庭|にわ}を{掘|ほ}り{返|かえ}す{必要|ひつよう}がないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Spillvattnet från villan pumpas ut till gatan.",
+    "correct": false,
+    "explanationSv": "Allt spillvatten från huset går med självfall ut till ledningen i gatan.",
+    "explanationJa": "ポンプではなく、{自然流下|しぜんりゅうか}で{流|なが}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lisas föräldrar är inte kopplade till kommunens avlopp i sommarstugan.",
+    "correct": true,
+    "explanationSv": "Lisas föräldrar har en sommarstuga med enskilt avlopp.",
+    "explanationJa": "{個別|こべつ}の{排水設備|はいすいせつび}があるので、{市|し}の{下水道|げすいどう}にはつながっていません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Den som vill bygga ett enskilt avlopp med vattentoalett behöver tillstånd från kommunen.",
+    "source": "Förordning (1998:899) om miljöfarlig verksamhet och hälsoskydd, 13 §",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om avloppet i olika slags hus.",
+  "discussionPoints": [
+   "Har du någon gång känt avloppslukt hemma? Vad gjorde du?",
+   "Skulle du låta göra en rörinspektion innan du köper ett hus?",
+   "Vad tycker du är bäst: relining eller stambyte?",
+   "Hur fungerar avloppet i ett hus på landet i Japan?"
+  ]
+ },
+ "standard": 2
+}

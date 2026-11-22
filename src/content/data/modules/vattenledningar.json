@@ -1,0 +1,190 @@
+{
+ "id": "m.vattenledningar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Vattenledningar",
+ "titleJa": "{水道管|すいどうかん}",
+ "descriptionSv": "Du lär dig hur vattnet kommer från gatan in i huset: hur ledningsnätet är byggt, vem som har ansvar för vilka ledningar, vad det kostar att ansluta ett hus och hur man skyddar rören mot kyla.",
+ "descriptionJa": "{水|みず}が{道路|どうろ}から{家|いえ}の{中|なか}までどのように{届|とど}くかを{学|まな}びます。{水道網|すいどうもう}のしくみ、どの{管|かん}にだれが{責任|せきにん}を{持|も}つのか、{家|いえ}を{水道|すいどう}につなぐ{費用|ひよう}、そして{寒|さむ}さから{管|かん}を{守|まも}る{方法|ほうほう}がわかるようになります。",
+ "categoryId": "R07-A05-T03",
+ "tags": [
+  "vatten",
+  "infrastruktur",
+  "boende"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.vattenverk"
+ ],
+ "related": [],
+ "recommendedOrder": 4132,
+ "words": [
+  {
+   "senseId": "s.vattenledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledningsnät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvudledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.servisledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbindelsepunkt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kommunalt-vatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ansluta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anslutningsavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brunn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plaströr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gjutjärn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvudkran.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ventil.4",
+   "active": false
+  },
+  {
+   "senseId": "s.vattentryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frysa-sönder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjäle.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett hus utanför staden",
+  "paragraphs": [
+   "Naoko och Johan har köpt ett gammalt hus utanför staden. Huset har inte kommunalt vatten. I stället har det en egen brunn på tomten. – Vattnet är gott, men brunnen blir nästan tom på sommaren, säger Naoko.",
+   "Nu bygger kommunen ut ledningsnätet i området. Kommunen lägger en stor huvudledning under vägen, och alla husägare kan ansluta sina hus. Anslutningsavgiften är hög, men Johan tycker att det är tryggt med kommunalt vatten.",
+   "En grävmaskin gräver ett djupt dike till huset. Den nya servisledningen är ett plaströr. Den ligger så djupt att tjälen inte når den på vintern. Vid gränsen till tomten finns förbindelsepunkten. Där slutar kommunens ansvar och Johans ansvar börjar.",
+   "I källaren monterar en rörmokare en vattenmätare och en ny huvudkran. – Om något läcker stänger ni av vattnet med huvudkranen, säger han. Det finns också en ventil vid varmvattenberedaren. Nu är vattentrycket mycket bättre än förut.",
+   "Rörmokaren berättar att många gamla vattenledningar i staden är gjorda av gjutjärn. En del är nästan hundra år gamla. Den första vintern var det ett rör i garaget som frös sönder. – Nästa vinter ska vi isolera rören, säger Naoko."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varifrån fick huset vatten innan det kopplades till kommunen?",
+    "options": [
+     "Från en egen brunn",
+     "Från en sjö",
+     "Från grannens hus",
+     "Från ett vattentorn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I stället har det en egen brunn på tomten.",
+    "explanationJa": "{敷地|しきち}にある{自分|じぶん}たちの{井戸|いど}からです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är den nya servisledningen gjord av?",
+    "options": [
+     "Gjutjärn",
+     "Koppar",
+     "Plast",
+     "Betong"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den nya servisledningen är ett plaströr.",
+    "explanationJa": "{新|あたら}しい{引|ひ}き{込|こ}み{管|かん}はプラスチック{管|かん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad visar förbindelsepunkten?",
+    "options": [
+     "Var vattenmätaren sitter",
+     "Hur djupt tjälen går",
+     "Var kommunens ansvar slutar",
+     "Hur mycket vatten huset använder"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Där slutar kommunens ansvar och Johans ansvar börjar.",
+    "explanationJa": "{市|し}の{責任|せきにん}が{終|お}わり、{持|も}ち{主|ぬし}の{責任|せきにん}が{始|はじ}まる{場所|ばしょ}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Huvudkranen används för att stänga av vattnet i hela huset.",
+    "correct": true,
+    "explanationSv": "Om något läcker stänger ni av vattnet med huvudkranen.",
+    "explanationJa": "{水|みず}もれのときは{元栓|もとせん}で{家|いえ}{全体|ぜんたい}の{水|みず}を{止|と}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Röret i garaget var isolerat den första vintern.",
+    "correct": false,
+    "explanationSv": "Den första vintern var det ett rör i garaget som frös sönder. – Nästa vinter ska vi isolera rören.",
+    "explanationJa": "{凍|こお}って{破裂|はれつ}したので、{断熱|だんねつ}されていなかったと{考|かんが}えられます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Kommunen ansvarar för de allmänna ledningarna fram till förbindelsepunkten, och fastighetsägaren för ledningarna efter den.",
+    "source": "Lag (2006:412) om allmänna vattentjänster",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Anslutningsavgiften för en villa till kommunalt vatten och avlopp är i de flesta kommuner mer än 100 000 kronor.",
+    "source": "Svenskt Vatten, statistik över VA-taxor",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vatten i olika slags bostäder.",
+  "discussionPoints": [
+   "Har du bott i ett hus med egen brunn? Hur var det?",
+   "Vem tycker du ska betala när en vattenledning går sönder?",
+   "Har du varit med om att vattnet var avstängt? Vad gjorde du då?",
+   "Vad gör man i Japan för att rören inte ska frysa sönder?"
+  ]
+ },
+ "standard": 2
+}

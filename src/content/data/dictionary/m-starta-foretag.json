@@ -374,26 +374,50 @@
      "quality": {
       "status": "ai-draft"
      },
-     "labelSv": "startar företag"
+     "labelSv": "startar företag",
+     "order": 1
     },
     {
      "id": "s.entreprenör.2",
-     "ja": "{請負業者|うけおいぎょうしゃ}",
+     "ja": "{請負業者|うけおいぎょうしゃ}、{建設会社|けんせつがいしゃ}",
      "defSv": "Ett företag som bygger något åt en kund, till exempel ett hus.",
-     "defJa": "{客|きゃく}のために{家|いえ}などを{建|た}てる{会社|かいしゃ}。",
+     "defJa": "{客|きゃく}の{依頼|いらい}を{受|う}けて、{家|いえ}などを{建|た}てる{会社|かいしゃ}。",
      "concept": false,
      "examples": [
       {
        "sv": "Entreprenören blev klar med huset i maj.",
-       "ja": "{請負業者|うけおいぎょうしゃ}は{5月|ごがつ}に{家|いえ}を{完成|かんせい}させました。"
+       "ja": "{請負業者|うけおいぎょうしゃ}は5{月|がつ}に{家|いえ}を{完成|かんせい}させました。"
+      },
+      {
+       "sv": "Vi valde en entreprenör som hade byggt flera hus i området.",
+       "ja": "{私|わたし}たちは、この{地域|ちいき}で{何軒|なんけん}も{家|いえ}を{建|た}てたことのある{請負業者|うけおいぎょうしゃ}を{選|えら}びました。"
       }
      ],
      "labelSv": "bygger",
+     "collocations": [
+      "anlita en entreprenör",
+      "byggentreprenör",
+      "entreprenören ansvarar för"
+     ],
+     "explanation": {
+      "sv": "När en kommun, ett företag eller en familj ska bygga, skriver de ofta ett avtal med en entreprenör. Entreprenören tar ansvar för arbetet och för att huset blir klart i tid. I den här betydelsen är en entreprenör alltså ett byggföretag. I den andra betydelsen är en entreprenör en person som startar nya företag.",
+      "ja": "{市|し}や{会社|かいしゃ}、{家族|かぞく}が{何|なに}かを{建|た}てるとき、たいてい「entreprenör（{請負業者|うけおいぎょうしゃ}）」と{契約|けいやく}を{結|むす}びます。{請負業者|うけおいぎょうしゃ}は{工事|こうじ}に{責任|せきにん}を{持|も}ち、{期限|きげん}までに{建物|たてもの}を{完成|かんせい}させます。この{意味|いみ}では{建設会社|けんせつがいしゃ}のことです。もう{一|ひと}つの{意味|いみ}では、{新|あたら}しい{会社|かいしゃ}を{立|た}ち{上|あ}げる{人|ひと}、つまり{起業家|きぎょうか}を{指|さ}します。"
+     },
+     "tags": [
+      "bygg",
+      "arbete",
+      "yrken"
+     ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.verksamhet",

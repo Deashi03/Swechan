@@ -1,0 +1,190 @@
+{
+ "id": "m.vattenverk",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Vattenverk",
+ "titleJa": "{浄水場|じょうすいじょう}",
+ "descriptionSv": "Du lär dig hur kranvattnet blir rent: var kommunen hämtar sitt vatten, hur vattnet renas och kontrolleras i vattenverket och hur det sedan når husen.",
+ "descriptionJa": "{水道|すいどう}の{水|みず}がどのようにきれいになるかを{学|まな}びます。{市|し}がどこから{水|みず}をとるか、{浄水場|じょうすいじょう}で{水|みず}をどう{浄化|じょうか}して{検査|けんさ}するか、そしてその{水|みず}がどのように{家|いえ}まで{届|とど}くかがわかるようになります。",
+ "categoryId": "R07-A05-T03",
+ "tags": [
+  "vatten",
+  "infrastruktur",
+  "samhälle"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.slutbesiktning"
+ ],
+ "related": [],
+ "recommendedOrder": 4131,
+ "words": [
+  {
+   "senseId": "s.vattenverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattentäkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ytvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.råvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.rena.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sandfilter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.filtrera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.desinficera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uv-ljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenkvalitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hårt-vatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattentorn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenskyddsområde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vattenförbrukning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Praktik på vattenverket",
+  "paragraphs": [
+   "Yuki studerar till ingenjör och gör praktik på kommunens vattenverk. Första dagen visar hennes handledare Lars henne runt. – Vår vattentäkt är den stora sjön här bredvid, säger han. Vi använder alltså ytvatten. Andra kommuner tar grundvatten ur marken.",
+   "Råvattnet kommer in i vattenverket genom ett långt rör från sjön. Först tar man bort större smuts. Sedan rinner vattnet genom stora sandfilter. – Här filtrerar vi bort små partiklar, förklarar Lars. Efter filtren är vattnet klart.",
+   "Men det räcker inte att vattnet är klart. Det ska vara rent också. Till sist desinficerar man vattnet, så att inga bakterier finns kvar. Vattenverket använder UV-ljus och lite klor.",
+   "Varje dag tar Yuki vattenprov som hon undersöker i laboratoriet. Vattenkvaliteten måste vara god, eftersom dricksvatten räknas som ett livsmedel i Sverige. Här har man hårt vatten, alltså vatten med mycket kalk.",
+   "Från vattenverket går vattnet till ett vattentorn på en kulle och sedan vidare ut till husen. Runt sjön finns ett vattenskyddsområde, där man inte får hälla ut bensin eller kemikalier. – Det är lättare att skydda vattnet än att rena det, säger Lars. Vattenförbrukningen är störst på morgonen, när alla duschar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var tar vattenverket sitt vatten?",
+    "options": [
+     "Från en stor sjö",
+     "Från havet",
+     "Ur marken",
+     "Från ett annat vattenverk"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vår vattentäkt är den stora sjön här bredvid.",
+    "explanationJa": "{水源|すいげん}はすぐそばの{大|おお}きな{湖|みずうみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer i sandfiltren?",
+    "options": [
+     "Vattnet blir varmare",
+     "Man tillsätter klor",
+     "Vattnet får mer kalk",
+     "Små partiklar fastnar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Här filtrerar vi bort små partiklar.",
+    "explanationJa": "{砂|すな}ろ{過|か}{池|ち}で{小|ちい}さな{粒子|りゅうし}が{取|と}り{除|のぞ}かれます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför måste vattenkvaliteten vara god?",
+    "options": [
+     "Dricksvatten räknas som ett livsmedel",
+     "Vattnet ska säljas till andra länder",
+     "Fiskarna i sjön behöver det",
+     "Annars blir vattnet hårt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Vattenkvaliteten måste vara god, eftersom dricksvatten räknas som ett livsmedel i Sverige.",
+    "explanationJa": "スウェーデンでは{飲|の}み{水|みず}は{食品|しょくひん}とみなされるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vattnet i kommunen innehåller lite kalk.",
+    "correct": false,
+    "explanationSv": "Här har man hårt vatten, alltså vatten med mycket kalk.",
+    "explanationJa": "この{市|し}の{水|みず}は{硬水|こうすい}で、{石灰|せっかい}が{多|おお}く{含|ふく}まれています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lars tycker att det är viktigt att skydda sjön.",
+    "correct": true,
+    "explanationSv": "Det är lättare att skydda vattnet än att rena det.",
+    "explanationJa": "{水|みず}を{浄化|じょうか}するより{守|まも}るほうが{簡単|かんたん}だと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I Sverige kommer ungefär hälften av dricksvattnet från ytvatten (sjöar och vattendrag) och resten från grundvatten, naturligt eller konstgjort.",
+    "source": "Svenskt Vatten, ”Dricksvatten – fakta”",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Dricksvatten räknas som ett livsmedel och kontrolleras enligt Livsmedelsverkets föreskrifter om dricksvatten.",
+    "source": "Livsmedelsverket, föreskrifter om dricksvatten (LIVSFS 2022:12)",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kranvattnet där ni bor och om hur det blir rent.",
+  "discussionPoints": [
+   "Dricker du vatten direkt från kranen? Varför eller varför inte?",
+   "Vet du var dricksvattnet i din kommun kommer ifrån?",
+   "Är vattnet hårt eller mjukt där du bor? Hur märker du det?",
+   "Hur är kranvattnet i Japan jämfört med i Sverige?"
+  ]
+ },
+ "standard": 2
+}

@@ -11,7 +11,15 @@
     "indefSg": "växel",
     "defSg": "växeln",
     "indefPl": null,
-    "defPl": null
+    "defPl": null,
+    "variants": {
+     "indefPl": [
+      "växlar"
+     ],
+     "defPl": [
+      "växlarna"
+     ]
+    }
    },
    "senses": [
     {
@@ -38,7 +46,7 @@
     {
      "id": "s.växel.2",
      "ja": "ギア、{変速段|へんそくだん}",
-     "defSv": "Ett av lägena i en bil eller på en cykel som bestämmer hur fort hjulen går och hur tungt det är att köra.",
+     "defSv": "En av de olika nivåerna i en bil eller på en cykel som bestämmer hur fort hjulen går och hur tungt det är att köra.",
      "defJa": "{車|くるま}や{自転車|じてんしゃ}で、{車輪|しゃりん}の{回|まわ}る{速|はや}さとこぐ{重|おも}さを{決|き}める{段|だん}の{一|ひと}つ。",
      "concept": false,
      "examples": [
@@ -47,7 +55,7 @@
        "ja": "この{自転車|じてんしゃ}にはギアが{七段|ななだん}あります。"
       },
       {
-       "sv": "Byt till en lägre växel när det går uppför.",
+       "sv": "Byt till en lägre växel när vägen går uppåt.",
        "ja": "{上|のぼ}り{坂|ざか}では、{低|ひく}いギアに{変|か}えてください。"
       }
      ],
@@ -96,18 +104,32 @@
      "id": "s.växel.4",
      "ja": "（{鉄道|てつどう}の）ポイント、{分岐器|ぶんきき}",
      "defSv": "En plats där ett spår för tåg delar sig, så att tåget kan byta spår.",
-     "defJa": "{線路|せんろ}が{分|わ}かれていて、{列車|れっしゃ}が{別|べつ}の{線路|せんろ}に{移|うつ}れるところ。",
+     "defJa": "{線路|せんろ}が{分|わ}かれていて、{列車|れっしゃ}が{別|べつ}の{線路|せんろ}に{移|うつ}れる{場所|ばしょ}。",
      "concept": false,
      "examples": [
       {
-       "sv": "Tåget blev försenat på grund av ett fel i en växel.",
-       "ja": "ポイントの{故障|こしょう}で{列車|れっしゃ}が{遅|おく}れました。"
+       "sv": "Tåget körde över en växel och bytte spår.",
+       "ja": "{列車|れっしゃ}はポイントを{通|とお}って、{別|べつ}の{線路|せんろ}に{移|うつ}りました。"
+      },
+      {
+       "sv": "Det finns många växlar där två järnvägar möts.",
+       "ja": "2つの{鉄道|てつどう}が{合流|ごうりゅう}するところには、ポイントがたくさんあります。"
       }
      ],
      "labelSv": "järnväg",
+     "collocations": [
+      "växeln ligger fel",
+      "lägga om en växel",
+      "växeln har frusit fast"
+     ],
+     "explanation": {
+      "sv": "En växel har delar av räls som kan röra sig. När man lägger om växeln flyttas de, och tåget kan köra in på ett annat spår. På vintern kan snö och is göra att växeln inte går att flytta, och då blir det växelfel.",
+      "ja": "ポイントには{動|うご}くレールの{部分|ぶぶん}があります。ポイントを{切|き}り{替|か}えるとその{部分|ぶぶん}が{動|うご}き、{列車|れっしゃ}は{別|べつ}の{線路|せんろ}に{入|はい}れます。{冬|ふゆ}は{雪|ゆき}や{氷|こおり}で{動|うご}かなくなることがあり、そうなると「växelfel（ポイント{故障|こしょう}）」になります。"
+     },
      "tags": [
-      "resor",
-      "tåg"
+      "järnväg",
+      "infrastruktur",
+      "trafik"
      ],
      "quality": {
       "status": "ai-draft"

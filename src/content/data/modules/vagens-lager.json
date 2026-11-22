@@ -1,0 +1,190 @@
+{
+ "id": "m.vagens-lager",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Vägens lager",
+ "titleJa": "{道路|どうろ}の{層|そう}",
+ "descriptionSv": "Du lär dig hur en väg är uppbyggd under asfalten: vilka lager som ligger där och vad de gör, varför man packar och dränerar och vad tjäle och nedsatt bärighet betyder för vägen på våren.",
+ "descriptionJa": "アスファルトの{下|した}で{道路|どうろ}がどのようにつくられているかを{学|まな}びます。どんな{層|そう}があってそれぞれ{何|なに}をするのか、なぜ{締|し}め{固|かた}めたり{排水|はいすい}したりするのか、そして{春|はる}の{凍結|とうけつ}や{耐荷力|たいかりょく}の{制限|せいげん}が{道路|どうろ}にとって{何|なに}を{意味|いみ}するのかがわかるようになります。",
+ "categoryId": "R07-A05-T04",
+ "tags": [
+  "vägar",
+  "byggande",
+  "infrastruktur"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.lackor-och-stopp"
+ ],
+ "related": [],
+ "recommendedOrder": 4141,
+ "words": [
+  {
+   "senseId": "s.vägbygge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägbana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vägren.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dike.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lager-förråd.2",
+   "active": true
+  },
+  {
+   "senseId": "s.slitlager.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bärlager.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förstärkningslager.1",
+   "active": false
+  },
+  {
+   "senseId": "s.makadam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.markduk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.packa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lutning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slänt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dränera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjäle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bärighet.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En väg med många lager",
+  "paragraphs": [
+   "Kenji gör praktik på kommunen. Den här veckan följer han med till ett vägbygge utanför Uppsala, där en ny väg ska gå till ett bostadsområde.",
+   "Arbetsledaren Lena visar en ritning. – En väg är som en tårta med flera lager, säger hon. Längst ner ligger ett tjockt förstärkningslager av grov sten. Ovanpå det kommer bärlagret, och överst ligger slitlagret av asfalt.",
+   "Först lägger arbetarna ut en markduk, så att leran under inte blandas med stenen. Sedan kör lastbilar dit makadam och grus. En maskin packar varje lager noga, annars kan vägbanan sjunka ihop senare.",
+   "Lena visar vägrenen och diket. – Vägbanan har en liten lutning åt sidan. Då rinner regnvattnet ner i slänten och diket. Vi måste dränera vägen ordentligt, för vatten i marken fryser till tjäle på vintern.",
+   "På vårvintern sätter kommunen ibland upp skyltar om nedsatt bärighet på de gamla grusvägarna. – Den här vägen är byggd på rätt sätt, så den slipper det, säger Lena. Kenji fotograferar alla lager och skriver ner allt han har lärt sig."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var gör Kenji praktik?",
+    "options": [
+     "På en bilverkstad",
+     "På kommunen",
+     "På ett asfaltverk",
+     "På en bank"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Kenji gör praktik på kommunen.",
+    "explanationJa": "ケンジは{市役所|しやくしょ}で{実習|じっしゅう}をしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket lager ligger överst?",
+    "options": [
+     "Förstärkningslagret",
+     "Slitlagret",
+     "Bärlagret",
+     "Markduken"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ovanpå det kommer bärlagret, och överst ligger slitlagret av asfalt.",
+    "explanationJa": "いちばん{上|うえ}にあるのは、アスファルトの{表層|ひょうそう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför lägger arbetarna ut en markduk?",
+    "options": [
+     "Så att vägen blir svart",
+     "För att stoppa snön",
+     "För att det ska bli tystare",
+     "Så att leran inte blandas med stenen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Först lägger arbetarna ut en markduk, så att leran under inte blandas med stenen.",
+    "explanationJa": "{下|した}の{粘土|ねんど}と{石|いし}が{混|ま}ざらないようにするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vägbanan är helt plan.",
+    "correct": false,
+    "explanationSv": "– Vägbanan har en liten lutning åt sidan.",
+    "explanationJa": "{路面|ろめん}は{横|よこ}に{少|すこ}し{傾|かたむ}いています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lena tror att den nya vägen klarar våren bättre än de gamla grusvägarna.",
+    "correct": true,
+    "explanationSv": "– Den här vägen är byggd på rätt sätt, så den slipper det, säger Lena.",
+    "explanationJa": "{正|ただ}しくつくられているので、{新|あたら}しい{道路|どうろ}には{制限|せいげん}が{要|い}らないとレーナは{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En väg byggs vanligen av flera lager: slitlager, bärlager och förstärkningslager ovanpå den naturliga marken.",
+    "source": "Trafikverket, TRVK Väg (tekniska krav för vägkonstruktion)",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Väghållaren kan tillfälligt sänka bärigheten på vägar under tjällossningen och skylta om det.",
+    "source": "Trafikverket, information om bärighet och tjällossning",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vägar och vägbyggen där ni bor.",
+  "discussionPoints": [
+   "Finns det ett vägbygge nära där du bor? Vad bygger man?",
+   "Har du sett vad som finns under asfalten, till exempel vid ett vägarbete?",
+   "Hur är vägarna på våren där du bor?",
+   "Är vägarna i Japan byggda på samma sätt som i Sverige, tror du?"
+  ]
+ },
+ "standard": 2
+}

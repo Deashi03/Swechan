@@ -1,0 +1,190 @@
+{
+ "id": "m.reningsverk",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Reningsverk",
+ "titleJa": "{下水処理場|げすいしょりじょう}",
+ "descriptionSv": "Du lär dig vad som händer med avloppsvattnet i ett reningsverk, steg för steg, varför det är viktigt för sjöar och hav och vad som är svårt att rena bort.",
+ "descriptionJa": "{下水処理場|げすいしょりじょう}で{下水|げすい}が{段階|だんかい}を{追|お}ってどう{処理|しょり}されるのか、それが{湖|みずうみ}や{海|うみ}にとってなぜ{大切|たいせつ}なのか、そして{何|なに}を{取|と}り{除|のぞ}くのが{難|むずか}しいのかを{学|まな}びます。",
+ "categoryId": "R07-A05-T03",
+ "tags": [
+  "avlopp",
+  "miljö",
+  "infrastruktur"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.avloppsledningar"
+ ],
+ "related": [],
+ "recommendedOrder": 4134,
+ "words": [
+  {
+   "senseId": "s.reningsverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reningssteg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.galler.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sandfång.1",
+   "active": false
+  },
+  {
+   "senseId": "s.biologisk-rening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bakterie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kväve.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kemisk-rening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fosfor.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sedimentera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slam.2",
+   "active": true
+  },
+  {
+   "senseId": "s.övergödning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rötkammare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.biogas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läkemedelsrest.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikroplast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsläpp.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett besök på reningsverket",
+  "paragraphs": [
+   "Erik är lärare och tar med sin klass på ett besök på reningsverket. Guiden heter Karin. – Hit kommer avloppsvattnet från hela staden, säger hon. Vattnet går genom flera reningssteg, och det tar många timmar innan det är renat.",
+   "Det första steget är ett galler. Där fastnar våtservetter, bomullspinnar och plast. Efter gallret kommer sandfånget, där sand och grus sjunker till botten. – Det mesta av det här borde aldrig hamna i toaletten, säger Karin.",
+   "Sedan kommer den biologiska reningen. I stora bassänger med luftbubblor äter bakterier upp smutsen, och mycket kväve försvinner. Efter det kommer kemisk rening, som tar bort fosfor. I en lugn bassäng får slammet sedimentera.",
+   "Kväve och fosfor är mat för alger. Om de kommer ut i havet blir det övergödning. Slammet pumpar man till en rötkammare, där det bildas biogas. Gasen används som bränsle till stadens bussar.",
+   "En elev frågar om vattnet är helt rent när det släpps ut i sjön. – Nästan, säger Karin. Men det finns fortfarande läkemedelsrester och mikroplast kvar. Nu bygger vi ett nytt steg för att minska utsläppen ännu mer."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad fastnar i gallret?",
+    "options": [
+     "Sand och grus",
+     "Våtservetter och plast",
+     "Kväve och fosfor",
+     "Läkemedelsrester"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Där fastnar våtservetter, bomullspinnar och plast.",
+    "explanationJa": "ウェットティッシュ、{綿棒|めんぼう}、プラスチックがひっかかります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör bakterierna i den biologiska reningen?",
+    "options": [
+     "De äter upp smutsen",
+     "De gör vattnet varmare",
+     "De sjunker till botten",
+     "De tar bort plasten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I stora bassänger med luftbubblor äter bakterier upp smutsen.",
+    "explanationJa": "{細菌|さいきん}が{汚|よご}れを{食|た}べます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är det viktigt att ta bort kväve och fosfor?",
+    "options": [
+     "Annars blir det övergödning i havet",
+     "Annars luktar vattnet",
+     "Annars fungerar inte rötkammaren",
+     "Annars kan man inte göra biogas"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Kväve och fosfor är mat för alger. Om de kommer ut i havet blir det övergödning.",
+    "explanationJa": "{海|うみ}に{出|で}ると{富栄養化|ふえいようか}が{起|お}こるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Biogasen från slammet används till bussar.",
+    "correct": true,
+    "explanationSv": "Gasen används som bränsle till stadens bussar.",
+    "explanationJa": "ガスは{町|まち}のバスの{燃料|ねんりょう}になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Vattnet som släpps ut är helt rent.",
+    "correct": false,
+    "explanationSv": "Men det finns fortfarande läkemedelsrester och mikroplast kvar.",
+    "explanationJa": "{残留医薬品|ざんりゅういやくひん}やマイクロプラスチックがまだ{残|のこ}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "De flesta större svenska reningsverk har mekanisk, biologisk och kemisk rening, där den kemiska reningen främst tar bort fosfor.",
+    "source": "Naturvårdsverket, ”Avloppsreningsverk” och Svenskt Vatten",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Vanliga reningsverk tar inte bort alla läkemedelsrester; flera kommuner bygger därför ett extra reningssteg.",
+    "source": "Naturvårdsverket, uppdrag om avancerad rening av avloppsvatten",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vad som händer med vattnet efter att det har försvunnit i avloppet.",
+  "discussionPoints": [
+   "Har du besökt ett reningsverk eller ett liknande ställe?",
+   "Vad tycker du att man inte ska spola ner i toaletten?",
+   "Vad gör du med gamla mediciner?",
+   "Skulle du vilja åka buss som går på biogas från avloppet?"
+  ]
+ },
+ "standard": 2
+}

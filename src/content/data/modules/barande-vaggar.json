@@ -1,0 +1,176 @@
+{
+ "id": "m.barande-vaggar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Bärande väggar",
+ "titleJa": "{耐力壁|たいりょくへき}",
+ "descriptionSv": "Hur väggar är byggda och vilka som bär huset: vad man behöver tänka på innan man river en vägg, hur lasten förs ner till grunden och varför kommunen ska ha en anmälan.",
+ "descriptionJa": "{壁|かべ}がどう{作|つく}られていて、どの{壁|かべ}が{家|いえ}を{支|ささ}えているか：{壁|かべ}を{壊|こわ}す{前|まえ}に{考|かんが}えるべきこと、{荷重|かじゅう}が{基礎|きそ}まで{伝|つた}わるしくみ、そしてなぜ{市|し}への{届|とど}け{出|で}が{必要|ひつよう}なのかを{学|まな}びます。",
+ "categoryId": "R07-A05-T01",
+ "tags": [
+  "bygg",
+  "hus",
+  "teknik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.grund-och-fundament"
+ ],
+ "related": [],
+ "recommendedOrder": 4112,
+ "words": [
+  {
+   "senseId": "s.vägg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gipsskiva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.regel.3",
+   "active": true
+  },
+  {
+   "senseId": "s.ihålig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bärande-vägg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stomme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riva.2",
+   "active": true
+  },
+  {
+   "senseId": "s.konstruktör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konstruktion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.last.2",
+   "active": true
+  },
+  {
+   "senseId": "s.balk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pelare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hållfasthet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stötta.2",
+   "active": true
+  },
+  {
+   "senseId": "s.startbesked.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett större kök",
+  "paragraphs": [
+   "Anna och Johan bor i en villa från 1950-talet. Köket är litet och mörkt, och de vill riva väggen mot vardagsrummet för att få en öppen planlösning.",
+   "Johan knackar på väggen. Den låter inte ihålig. – Det är ingen gipsskiva på reglar, säger han. Det är tegel. Kan det vara en bärande vägg?",
+   "De ringer en konstruktör, Lena. Hon tittar på ritningarna och går upp på vinden. – Väggen bär bjälklaget och en del av taket, säger hon. Den är en viktig del av husets stomme. Om ni tar bort den måste lasten bäras av något annat.",
+   "Lena föreslår en balk av stål ovanför den nya öppningen och en pelare vid ena änden. Hon räknar på hela konstruktionen och kontrollerar att balken har tillräcklig hållfasthet.",
+   "Eftersom ändringen påverkar husets bärande delar måste Anna och Johan göra en anmälan till kommunen och vänta på startbesked. När arbetet börjar stöttar byggarna upp bjälklaget med tillfälliga pelare. Efter två veckor är väggen borta, och köket är ljust och stort."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför vill Anna och Johan riva väggen?",
+    "options": [
+     "Väggen har fått en spricka",
+     "De vill sälja huset",
+     "De vill få en öppen planlösning",
+     "Köket ska bli ett sovrum"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Köket är litet och mörkt, och de vill riva väggen mot vardagsrummet för att få en öppen planlösning.",
+    "explanationJa": "{台所|だいどころ}と{居間|いま}をつなげて、{開放的|かいほうてき}な{間取|まど}りにしたいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "inference",
+    "promptSv": "Varför tror Johan att väggen kan vara bärande?",
+    "options": [
+     "Den är av tegel och låter inte ihålig",
+     "Den är mycket tunn",
+     "Det står så på väggen",
+     "Grannen har sagt det"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den låter inte ihålig. – Det är ingen gipsskiva på reglar, säger han. Det är tegel.",
+    "explanationJa": "{壁|かべ}を{叩|たた}いても{空洞|くうどう}の{音|おと}がせず、れんがでできているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad ska bära lasten när väggen är borta?",
+    "options": [
+     "Gipsskivor",
+     "En balk av stål och en pelare",
+     "Taket",
+     "Nya reglar av trä"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Lena föreslår en balk av stål ovanför den nya öppningen och en pelare vid ena änden.",
+    "explanationJa": "{鋼鉄|こうてつ}の{梁|はり}と{柱|はしら}が{荷重|かじゅう}を{支|ささ}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Anna och Johan måste vänta på startbesked från kommunen.",
+    "correct": true,
+    "explanationSv": "Eftersom ändringen påverkar husets bärande delar måste Anna och Johan göra en anmälan till kommunen och vänta på startbesked.",
+    "explanationJa": "{建物|たてもの}を{支|ささ}える{部分|ぶぶん}が{変|か}わるので、{市|し}の{着工|ちゃっこう}{許可|きょか}を{待|ま}たなければなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "usage",
+    "statementSv": "Byggarna tar bort pelarna innan de river väggen.",
+    "correct": false,
+    "explanationSv": "När arbetet börjar stöttar byggarna upp bjälklaget med tillfälliga pelare.",
+    "explanationJa": "{作業員|さぎょういん}たちは{壁|かべ}を{壊|こわ}す{前|まえ}に、{仮|かり}の{柱|はしら}で{床|ゆか}を{支|ささ}えます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Den som ändrar en byggnad så att den bärande konstruktionen påverkas måste göra en anmälan till byggnadsnämnden och får inte börja förrän nämnden har gett startbesked.",
+    "source": "Plan- och byggförordningen (2011:338) 6 kap. 5 §; Boverket, ”Anmälan”",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att bygga om en bostad och om vad man får och inte får ändra.",
+  "discussionPoints": [
+   "Skulle du vilja riva en vägg hemma? Vilken?",
+   "Hur kan man ta reda på om en vägg är bärande?",
+   "Vad är stommen gjord av i hus där du kommer ifrån?",
+   "Vill du hellre ha en öppen planlösning eller många små rum?"
+  ]
+ },
+ "standard": 2
+}

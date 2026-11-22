@@ -1,0 +1,190 @@
+{
+ "id": "m.dagvatten",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Dagvatten",
+ "titleJa": "{雨水|あまみず}の{排水|はいすい}",
+ "descriptionSv": "Du lär dig vart regnvattnet tar vägen i en stad, varför kraftigt regn kan ge översvämningar i källare och vad kommuner och husägare kan göra för att ta hand om vattnet.",
+ "descriptionJa": "{町|まち}の{雨水|あまみず}がどこへ{流|なが}れていくのか、なぜ{激|はげ}しい{雨|あめ}で{地下室|ちかしつ}が{浸水|しんすい}することがあるのか、そして{市|し}や{家|いえ}の{持|も}ち{主|ぬし}が{水|みず}にどう{対処|たいしょ}できるのかを{学|まな}びます。",
+ "categoryId": "R07-A05-T03",
+ "tags": [
+  "vatten",
+  "klimat",
+  "infrastruktur"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.reningsverk"
+ ],
+ "related": [],
+ "recommendedOrder": 4135,
+ "words": [
+  {
+   "senseId": "s.dagvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyfall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenmassa.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hårdgjord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.genomsläpplig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avrinning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stuprör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rännsten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gatubrunn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dike.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grönt-tak.1",
+   "active": false
+  },
+  {
+   "senseId": "s.regnbädd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.infiltrera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.dagvattendamm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fördröja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.källaröversvämning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.backventil.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Efter skyfallet",
+  "paragraphs": [
+   "En eftermiddag i augusti kom ett skyfall över staden. På en timme föll mer än 50 millimeter regn. Stora vattenmassor rann längs gatorna, och vattnet i rännstenen gick nästan upp till trottoaren.",
+   "Många fick källaröversvämning, bland annat Omar. Vattnet kom upp genom golvbrunnen. – Gatubrunnarna kunde inte ta emot allt vatten, förklarar Maria, som arbetar med dagvatten på kommunen.",
+   "Hon berättar att staden har många hårdgjorda ytor: gator, parkeringar och tak. Där blir avrinningen snabb. Från varje stuprör rinner vattnet rakt ner i ledningarna. I parker och på annan genomsläpplig mark kan regnet i stället infiltrera.",
+   "Nu bygger kommunen regnbäddar längs gatorna och gröna tak på skolorna. I utkanten av staden finns en ny dagvattendamm. Den fördröjer vattnet, så att ledningarna inte blir fulla så snabbt. Utanför staden tar diken hand om en stor del av vattnet.",
+   "Omar har låtit installera en backventil. – Om det blir ett skyfall igen kan vattnet inte komma in, säger han. Försäkringen betalade det mesta av skadorna, men han fick själv betala en del."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur mycket regn föll på en timme?",
+    "options": [
+     "Mer än 50 millimeter",
+     "Ungefär 5 millimeter",
+     "En hel meter",
+     "Lika mycket som på ett år"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "På en timme föll mer än 50 millimeter regn.",
+    "explanationJa": "{一時間|いちじかん}に{五十|ごじゅう}ミリ{以上|いじょう}の{雨|あめ}が{降|ふ}りました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur kom vattnet in i Omars källare?",
+    "options": [
+     "Genom fönstret",
+     "Upp genom golvbrunnen",
+     "Genom taket",
+     "Från stupröret"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Vattnet kom upp genom golvbrunnen.",
+    "explanationJa": "{床|ゆか}の{排水口|はいすいこう}から{上|あ}がってきました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir avrinningen snabb i staden?",
+    "options": [
+     "Det finns många hårdgjorda ytor",
+     "Det finns många diken",
+     "Regnbäddarna är fulla",
+     "Det regnar oftare i staden"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hon berättar att staden har många hårdgjorda ytor: gator, parkeringar och tak. Där blir avrinningen snabb.",
+    "explanationJa": "{舗装|ほそう}された{面|めん}が{多|おお}いからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Dagvattendammen gör att ledningarna blir fulla snabbare.",
+    "correct": false,
+    "explanationSv": "Den fördröjer vattnet, så att ledningarna inte blir fulla så snabbt.",
+    "explanationJa": "{雨水調整池|うすいちょうせいち}は{管|かん}がすぐにいっぱいにならないようにします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Omar vill skydda källaren mot nästa skyfall.",
+    "correct": true,
+    "explanationSv": "Om det blir ett skyfall igen kan vattnet inte komma in, säger han.",
+    "explanationJa": "{次|つぎ}の{集中豪雨|しゅうちゅうごうう}に{備|そな}えて{逆止弁|ぎゃくしべん}をつけました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "SMHI kallar regn skyfall när det faller minst 50 millimeter på en timme eller minst 1 millimeter på en minut.",
+    "source": "SMHI, ”Skyfall”",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Dagvatten leds ofta direkt till sjöar och vattendrag och renas då inte i reningsverket.",
+    "source": "Svenskt Vatten, ”Dagvatten”",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kraftigt regn och om hur staden kan ta hand om vattnet.",
+  "discussionPoints": [
+   "Har du varit med om ett skyfall? Vad hände?",
+   "Finns det många hårdgjorda ytor där du bor?",
+   "Vad tycker du om regnbäddar och gröna tak i staden?",
+   "Hur skyddar man hus mot kraftigt regn i Japan?"
+  ]
+ },
+ "standard": 2
+}

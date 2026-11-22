@@ -186,6 +186,7 @@
        "ja": "その{船|ふね}の{積|つ}み{荷|に}は{茶|ちゃ}と{磁器|じき}でした。"
       }
      ],
+     "labelSv": "på ett fartyg",
      "explanation": {
       "sv": "Lasten är allt som ett fartyg, ett tåg eller en bil har med sig. Man säger att ett fartyg har en last av till exempel salt eller kaffe. En lastbil är gjord för att ha last. Tänk på att last också kan betyda en dålig vana, men den betydelsen är mycket formell och ovanlig.",
       "ja": "「last」は、{船|ふね}や{列車|れっしゃ}、{車|くるま}が{運|はこ}んでいるもの{全部|ぜんぶ}です。「{船|ふね}が{塩|しお}やコーヒーのlastを{積|つ}んでいる」のように{言|い}います。「lastbil（トラック）」は{荷物|にもつ}を{運|はこ}ぶための{車|くるま}です。{注意|ちゅうい}：「last」には「{悪|わる}い{習慣|しゅうかん}、{悪徳|あくとく}」という{意味|いみ}もありますが、こちらはとてもかたく、めったに{使|つか}われません。"
@@ -197,9 +198,79 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.last.2",
+     "ja": "{荷重|かじゅう}",
+     "defSv": "Den tyngd som en del av en byggnad eller en bro måste kunna bära, till exempel av snö, människor eller möbler.",
+     "defJa": "{雪|ゆき}、{人|ひと}、{家具|かぐ}など、{建物|たてもの}や{橋|はし}の{部分|ぶぶん}が{支|ささ}えなければならない{重|おも}さ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Väggen måste klara lasten från taket och snön.",
+       "ja": "その{壁|かべ}は、{屋根|やね}と{雪|ゆき}の{荷重|かじゅう}に{耐|た}えなければなりません。"
+      },
+      {
+       "sv": "Hon räknade på hur stora laster väggen bär.",
+       "ja": "{彼女|かのじょ}は、その{壁|かべ}がどれくらいの{荷重|かじゅう}を{支|ささ}えているかを{計算|けいさん}しました。"
+      }
+     ],
+     "labelSv": "tyngd på en konstruktion",
+     "collocations": [
+      "bära en last",
+      "en tung last",
+      "fördela lasten"
+     ],
+     "explanation": {
+      "sv": "På ett bygge är last det som en konstruktion måste tåla: husets egen tyngd, snö på taket, människor och möbler. Lasten går nedåt genom stommen, via väggar och pelare, ner till grunden. Ordet tyngd säger bara hur tungt något är, medan last betonar att något annat måste bära det.",
+      "ja": "{建設|けんせつ}では、「last」は{構造物|こうぞうぶつ}が{耐|た}えなければならない{重|おも}さのことです。{家|いえ}{自体|じたい}の{重|おも}さ、{屋根|やね}の{雪|ゆき}、{人|ひと}や{家具|かぐ}などです。{荷重|かじゅう}は{骨組|ほねぐ}みを{通|とお}り、{壁|かべ}や{柱|はしら}から{基礎|きそ}へと{下|した}に{伝|つた}わります。「tyngd」は{物|もの}の{重|おも}さを{表|あらわ}すだけですが、「last」はほかのものがそれを{支|ささ}えなければならないことを{強調|きょうちょう}します。"
+     },
+     "tags": [
+      "bygg",
+      "hus",
+      "teknik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.last.3",
+     "ja": "{負担|ふたん}、{重荷|おもに}",
+     "defSv": "Något som är jobbigt för någon annan, i uttrycket ligga någon till last.",
+     "defJa": "ほかの{人|ひと}にとって{面倒|めんどう}になること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon ville inte ligga sina barn till last.",
+       "ja": "{彼女|かのじょ}は{子|こ}どもたちの{負担|ふたん}になりたくありませんでした。"
+      }
+     ],
+     "labelSv": "börda",
+     "usageNote": {
+      "sv": "Används i uttrycket ligga någon till last.",
+      "ja": "「ligga någon till last」という{表現|ひょうげん}で{使|つか}います。"
+     },
+     "tags": [
+      "bygg",
+      "hus",
+      "teknik"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "C1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.handelsfartyg",

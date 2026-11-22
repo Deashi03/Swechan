@@ -1,0 +1,192 @@
+{
+ "id": "m.tunnlar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Tunnlar",
+ "titleJa": "トンネル",
+ "descriptionSv": "Du lär dig att förstå nyheter och samtal om tunnelbyggen: hur man tar sig igenom berget, hur man gör tunneln säker och varför vattnet kan bli ett problem, och vilka delar en färdig tunnel har.",
+ "descriptionJa": "トンネル{工事|こうじ}についてのニュースや{会話|かいわ}がわかるようになります。どのように{岩|いわ}を{掘|ほ}り{進|すす}むのか、トンネルをどう{安全|あんぜん}にするのか、なぜ{水|みず}が{問題|もんだい}になるのか、そして{完成|かんせい}したトンネルにはどんな{部分|ぶぶん}があるのかを{学|まな}びます。",
+ "categoryId": "R07-A05-T04",
+ "tags": [
+  "vägar",
+  "tunnlar",
+  "infrastruktur"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.brotyper"
+ ],
+ "related": [],
+ "recommendedOrder": 4145,
+ "words": [
+  {
+   "senseId": "s.tunnel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bergtunnel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tunnelrör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tunnelmynning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spränga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sprängning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bergbult.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sprutbetong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ventilation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grundvatten.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tunnelborrmaskin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sänktunnel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.genomslag.2",
+   "active": false
+  },
+  {
+   "senseId": "s.nödutgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gångtunnel.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Genom berget under staden",
+  "paragraphs": [
+   "Omar går en utbildning för att arbeta med vägar och gör praktik där man bygger en stor tunnel. En ny väg ska gå i en bergtunnel under staden, med ett tunnelrör för varje körriktning.",
+   "Varje natt borrar en maskin hål i bergväggen. Hålen fylls med sprängämne, och sedan kommer sprängningen. – Vi spränger fem meter i taget, förklarar hans handledare Elin. Efter varje sprängning kör lastbilarna bort stenen.",
+   "Sedan måste berget säkras. Arbetarna borrar in långa bergbultar i taket, och en maskin sprutar på sprutbetong. Vid tunnelmynningen står en stor fläkt, för ventilationen är viktig när det finns damm och avgaser.",
+   "Ett problem är vattnet. Om för mycket vatten läcker in kan grundvattnet sjunka, och då kan husen ovanför få skador. Därför tätar man berget noga. På andra platser använder man en tunnelborrmaskin i stället för att spränga, och under vatten bygger man ibland en sänktunnel.",
+   "En dag i maj blir det genomslag: de två tunnlarna möts mitt under staden. Alla firar med tårta. – När tunneln är klar kommer det att finnas många nödutgångar, säger Elin. Och för cyklister och gående bygger vi en gångtunnel vid stationen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många tunnelrör får den nya tunneln?",
+    "options": [
+     "Ett",
+     "Tre",
+     "Fyra",
+     "Två, ett för varje körriktning"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En ny väg ska gå i en bergtunnel under staden, med ett tunnelrör för varje körriktning.",
+    "explanationJa": "{進行方向|しんこうほうこう}ごとに{一本|いっぽん}ずつ、{二本|にほん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör arbetarna för att säkra berget?",
+    "options": [
+     "De bygger en sänktunnel",
+     "De borrar in bergbultar och sprutar på betong",
+     "De sätter upp en fläkt",
+     "De spränger mer"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Arbetarna borrar in långa bergbultar i taket, och en maskin sprutar på sprutbetong.",
+    "explanationJa": "ロックボルトを{入|い}れて、コンクリートを{吹|ふ}き{付|つ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är det farligt om mycket vatten läcker in?",
+    "options": [
+     "Tunneln blir för kall",
+     "Bilarna kan halka",
+     "Grundvattnet kan sjunka och husen ovanför få skador",
+     "Maskinerna går sönder"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Om för mycket vatten läcker in kan grundvattnet sjunka, och då kan husen ovanför få skador.",
+    "explanationJa": "{地下水|ちかすい}が{下|さ}がり、{上|うえ}の{家|いえ}が{傷|いた}むことがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "usage",
+    "statementSv": "Genomslaget betyder att de två tunnlarna möts.",
+    "correct": true,
+    "explanationSv": "En dag i maj blir det genomslag: de två tunnlarna möts mitt under staden.",
+    "explanationJa": "{貫通|かんつう}とは、{二|ふた}つのトンネルがつながることです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Man spränger tjugo meter åt gången.",
+    "correct": false,
+    "explanationSv": "– Vi spränger fem meter i taget, förklarar hans handledare Elin.",
+    "explanationJa": "{一回|いっかい}に{爆破|ばくは}するのは5メートルです。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I bergtunnlar förstärker man ofta berget med bergbultar och sprutbetong.",
+    "source": "Trafikverket, TRVK Tunnel (tekniska krav för tunnlar)",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Om grundvatten läcker in i en tunnel kan grundvattennivån sjunka och ge sättningar i marken ovanför.",
+    "source": "SGU (Sveriges geologiska undersökning), om grundvatten och byggande under mark",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Tunneln under Öresund (Drogdentunneln) är en sänktunnel.",
+    "source": "Øresundsbro Konsortiet, fakta om förbindelsen",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tunnlar och tunnelbyggen.",
+  "discussionPoints": [
+   "Tycker du om att köra eller åka genom långa tunnlar?",
+   "Vilken är den längsta tunneln du har åkt igenom?",
+   "Vad är bäst i en stad: en tunnel eller en bro? Varför?",
+   "Japan har många tunnlar. Varför, tror du?"
+  ]
+ },
+ "standard": 2
+}

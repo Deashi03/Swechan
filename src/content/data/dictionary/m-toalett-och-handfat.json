@@ -141,6 +141,7 @@
        "ja": "{水|みず}を{流|なが}すのを{忘|わす}れないで！"
       }
      ],
+     "labelSv": "toalett",
      "frame": {
       "subject": "Han"
      },
@@ -149,9 +150,40 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.spola.2",
+     "ja": "（{水|みず}で）{洗|あら}い{流|なが}す",
+     "defSv": "Göra något rent med en kraftig stråle vatten.",
+     "defJa": "{勢|いきお}いのある{水|みず}で{何|なに}かをきれいにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon spolar golvet i garaget.",
+       "ja": "{彼女|かのじょ}はガレージの{床|ゆか}を{水|みず}で{洗|あら}い{流|なが}します。"
+      }
+     ],
+     "labelSv": "med vatten",
+     "frame": {
+      "subject": "Hon",
+      "complement": "golvet"
+     },
+     "tags": [
+      "vatten",
+      "avlopp"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.toalettpapper",
