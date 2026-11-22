@@ -74,7 +74,8 @@ export function allForms(entry: Pick<VocabularyEntry, 'lemma' | 'inflection'>): 
 
 export type Token = { text: string; start: number; end: number; isWord: boolean };
 
-const WORD_RE = /[A-Za-zÅÄÖåäöÉéÜü]+(?:-[A-Za-zÅÄÖåäöÉéÜü]+)*/g;
+// A leading digit group is part of the word only before letters and a hyphen (3D-skrivare, 3D-utskriften), so plain numbers stay outside.
+const WORD_RE = /(?:[0-9]+[A-Za-zÅÄÖåäö]+-)?[A-Za-zÅÄÖåäöÉéÜü]+(?:-[A-Za-zÅÄÖåäöÉéÜü]+)*/g;
 
 export function tokenize(text: string): Token[] {
   const out: Token[] = [];
