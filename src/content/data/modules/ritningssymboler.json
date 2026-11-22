@@ -1,0 +1,190 @@
+{
+ "id": "m.ritningssymboler",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Ritningssymboler",
+ "titleJa": "{製図|せいず}の{記号|きごう}",
+ "descriptionSv": "Hur man läser en teknisk ritning: vad olika linjer och symboler betyder, var man hittar uppgifter om skala och ritare, och varför ritningar följer en gemensam standard.",
+ "descriptionJa": "{技術的|ぎじゅつてき}な{図面|ずめん}の{読|よ}み{方|かた}：いろいろな{線|せん}や{記号|きごう}が{何|なに}を{意味|いみ}するか、{縮尺|しゅくしゃく}やかいた{人|ひと}の{情報|じょうほう}がどこにあるか、そしてなぜ{図面|ずめん}が{共通|きょうつう}の{規格|きかく}に{従|したが}うのかを{学|まな}びます。",
+ "categoryId": "R07-A04-T06",
+ "tags": [
+  "teknik",
+  "tillverkning",
+  "ritning"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.hallbar-industri"
+ ],
+ "related": [],
+ "recommendedOrder": 4061,
+ "words": [
+  {
+   "senseId": "s.ritning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.rita.2",
+   "active": true
+  },
+  {
+   "senseId": "s.symbol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.standard.2",
+   "active": true
+  },
+  {
+   "senseId": "s.heldragen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.streckad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mittlinje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hål.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diameter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ritningshuvud.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skala-noun.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förminska.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skalenlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.naturlig-storlek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.beteckning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.teckenförklaring.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ritningen är ett språk",
+  "paragraphs": [
+   "Kenji går en yrkesutbildning till industritekniker. I dag ska klassen lära sig att läsa en ritning. Läraren Karin delar ut en ritning av en enkel metallplatta med två hål. Plattan är ritad på ett företag som tillverkar delar till lastbilar.",
+   "– En ritning är som ett språk, säger Karin. Den som har ritat plattan använder symboler och linjer som följer en internationell standard. Därför kan en arbetare i Japan läsa samma ritning som en arbetare i Sverige. Om en symbol är ovanlig finns det ibland en teckenförklaring på ritningen.",
+   "Först tittar de på linjerna. Plattans kanter är ritade med heldragna linjer. Streckade linjer visar kanter som man inte kan se, till exempel på baksidan. Genom varje hål går en mittlinje. Vid hålen står ett tecken för diameter: hålen har en diameter på 10 millimeter. Plattans hörn är rundade med en radie på 5 millimeter.",
+   "Sedan tittar Kenji i ritningshuvudet i nedre högra hörnet. Där står ritningens nummer, datum, namnet på den som har ritat och skalan 1:2. Det betyder att ritningen är förminskad: plattan är dubbelt så stor i verkligheten. – Är ritningen skalenlig? frågar Kenji. – Ja, men mät aldrig på ritningen, säger Karin. Använd måtten som står där.",
+   "Till sist får de en ritning av en liten skruv. Den är ritad i naturlig storlek, så Kenji kan lägga skruven på papperet. Varje del på ritningen har en beteckning, och i en lista står vad delarna heter. – Nu förstår jag varför du säger att ritningen är ett språk, säger Kenji."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad visar ritningen som Karin delar ut?",
+    "options": [
+     "En lastbil",
+     "En skruv i naturlig storlek",
+     "En metallplatta med två hål",
+     "Ett hus i skala 1:2"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Läraren Karin delar ut en ritning av en enkel metallplatta med två hål.",
+    "explanationJa": "{二|ふた}つの{穴|あな}がある{金属|きんぞく}の{板|いた}の{図面|ずめん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför kan en arbetare i Japan läsa samma ritning som en arbetare i Sverige?",
+    "options": [
+     "Alla ritningar har en teckenförklaring på japanska",
+     "Arbetarna lär sig svenska",
+     "Symbolerna och linjerna följer en internationell standard",
+     "Ritningen är skalenlig"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den som har ritat plattan använder symboler och linjer som följer en internationell standard.",
+    "explanationJa": "{記号|きごう}と{線|せん}が{国際|こくさい}{規格|きかく}に{従|したが}っているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad visar de streckade linjerna på ritningen?",
+    "options": [
+     "Hålens mitt",
+     "Plattans radie",
+     "Kanter som man inte kan se",
+     "Skalan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Streckade linjer visar kanter som man inte kan se, till exempel på baksidan.",
+    "explanationJa": "{見|み}えない{縁|ふち}を{示|しめ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Plattan är mindre i verkligheten än på ritningen.",
+    "correct": false,
+    "explanationSv": "Det betyder att ritningen är förminskad: plattan är dubbelt så stor i verkligheten.",
+    "explanationJa": "{縮尺|しゅくしゃく}は1:2なので、{実際|じっさい}の{板|いた}は{図面|ずめん}の2{倍|ばい}の{大|おお}きさです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Kenji kan lägga skruven på ritningen, eftersom den är ritad i naturlig storlek.",
+    "correct": true,
+    "explanationSv": "Den är ritad i naturlig storlek, så Kenji kan lägga skruven på papperet.",
+    "explanationJa": "ねじは{実物大|じつぶつだい}でかかれているので、{紙|かみ}の{上|うえ}に{置|お}けます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Skalan 1:2 betyder att ritningen är hälften så stor som föremålet i verkligheten.",
+    "source": "Nationalencyklopedin, uppslagsordet ”skala”",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Tekniska ritningar följer internationella standarder från ISO, som i Sverige ges ut av Svenska institutet för standarder (SIS).",
+    "source": "SIS, Svenska institutet för standarder",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ritningar, symboler och kartor som ni har läst i skolan, på jobbet eller hemma.",
+  "discussionPoints": [
+   "Har du någon gång läst en ritning? Vad visade den?",
+   "Vilka symboler förstår alla, oavsett vilket språk de talar?",
+   "Varför är det viktigt att alla följer samma standard?",
+   "Har du ritat något själv, till exempel ett rum eller en möbel?"
+  ]
+ },
+ "standard": 2
+}

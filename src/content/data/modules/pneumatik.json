@@ -1,0 +1,180 @@
+{
+ "id": "m.pneumatik",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Pneumatik",
+ "titleJa": "{空気圧|くうきあつ}",
+ "descriptionSv": "Hur pneumatik och tryckluft driver verktyg, robotar, bromsar och fjädring, och hur man pratar om tryck, läckor och säkerhet på en fabrik och om lufttrycket i däcken hemma.",
+ "descriptionJa": "{空気圧|くうきあつ}と{圧縮空気|あっしゅくくうき}が{工具|こうぐ}、ロボット、ブレーキ、サスペンションをどのように{動|うご}かすか、そして{工場|こうじょう}での{圧力|あつりょく}やもれ、{安全|あんぜん}について、また{家|いえ}でのタイヤの{空気圧|くうきあつ}についてどう{話|はな}すかを{学|まな}びます。",
+ "categoryId": "R07-A04-T01",
+ "tags": [
+  "teknik",
+  "maskiner",
+  "industri"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.hydraulik"
+ ],
+ "related": [],
+ "recommendedOrder": 4017,
+ "words": [
+  {
+   "senseId": "s.tryckluft.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kompressor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.komprimera.2",
+   "active": false
+  },
+  {
+   "senseId": "s.pneumatik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slang.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cylinder.2",
+   "active": false
+  },
+  {
+   "senseId": "s.tryckmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pysa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spikpistol.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sugkopp.2",
+   "active": true
+  },
+  {
+   "senseId": "s.luftbroms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftfjädring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lufttryck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ventil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pumpa-verb.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag med tryckluft",
+  "paragraphs": [
+   "Naoko arbetar på en fabrik i Småland som bygger trähus. I en stor hall står väggar och tak i långa rader. Överallt hörs ljudet av tryckluft. En stor kompressor i ett rum bredvid komprimerar luften, och slangar går från den till alla verktyg.",
+   "Snickarna använder spikpistoler som drivs med tryckluft. – Rikta aldrig spikpistolen mot någon, säger arbetsledaren Anders till de nya. Vid en annan station lyfter en robot stora skivor med sugkoppar och lägger dem på plats. Robotens armar rör sig med pneumatik, och små cylindrar skjuter fram skivorna.",
+   "Mitt på dagen hör Naoko att det pyser från en slang. Hon tittar på tryckmätaren på kompressorn: trycket har sjunkit. – Det är en läcka, säger hon till Anders. De stänger av luften och byter slangen.",
+   "På kvällen åker Naoko buss hem. När bussen stannar vid en hållplats pyser det från luftbromsarna. En pappa med barnvagn ska gå på, och föraren sänker bussen med luftfjädringen. – Tryckluft finns visst överallt, tänker Naoko.",
+   "Hemma vill hennes son cykla till en kompis. Naoko kollar lufttrycket i däcken. Det är för lågt, så hon skruvar av locket på ventilen och pumpar däcken tills det är lagom hårt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör kompressorn på Naokos fabrik?",
+    "options": [
+     "Den komprimerar luften",
+     "Den bygger väggar",
+     "Den lyfter skivor",
+     "Den sågar trä"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En stor kompressor i ett rum bredvid komprimerar luften, och slangar går från den till alla verktyg.",
+    "explanationJa": "コンプレッサーは{空気|くうき}を{圧縮|あっしゅく}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lyfter roboten skivorna?",
+    "options": [
+     "Med en kedja",
+     "Med hydraulolja",
+     "Med sugkoppar",
+     "Med en spikpistol"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Vid en annan station lyfter en robot stora skivor med sugkoppar …",
+    "explanationJa": "ロボットは{吸盤|きゅうばん}で{板|いた}を{持|も}ち{上|あ}げます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför förstår Naoko att det är en läcka?",
+    "options": [
+     "Det luktar olja",
+     "Roboten stannar",
+     "Det pyser och trycket har sjunkit",
+     "En spikpistol går sönder"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Mitt på dagen hör Naoko att det pyser från en slang. Hon tittar på tryckmätaren på kompressorn: trycket har sjunkit.",
+    "explanationJa": "シューッという{音|おと}がして、{圧力|あつりょく}が{下|さ}がっていたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Föraren sänker bussen med luftfjädringen.",
+    "correct": true,
+    "explanationSv": "En pappa med barnvagn ska gå på, och föraren sänker bussen med luftfjädringen.",
+    "explanationJa": "{運転手|うんてんしゅ}はエアサスペンションでバスを{低|ひく}くします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Däcken på sonens cykel hade för mycket luft.",
+    "correct": false,
+    "explanationSv": "Det är för lågt, så hon skruvar av locket på ventilen och pumpar däcken …",
+    "explanationJa": "{空気圧|くうきあつ}は{低|ひく}すぎました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Bussar, lastbilar och tåg har ofta bromsar som drivs med tryckluft från en kompressor, och många bussar har luftfjädring som gör att de kan sänka sig vid hållplatsen.",
+    "source": "Nationalencyklopedin, uppslagen ”broms” och ”fjädring”",
+    "checked": "2026-11-21",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tryckluft i vardagen och på arbetsplatser.",
+  "discussionPoints": [
+   "Var har du hört luft som pyser, till exempel på en buss eller ett tåg?",
+   "Hur ofta kollar du lufttrycket i cykel- eller bildäcken?",
+   "Har du arbetat med verktyg som drivs med tryckluft eller el? Vad tycker du om dem?",
+   "Vad tycker du är viktigast för säkerheten på en fabrik?"
+  ]
+ },
+ "standard": 2
+}

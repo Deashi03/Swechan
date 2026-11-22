@@ -1,0 +1,200 @@
+{
+ "id": "m.arbetsmiljorisker",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Arbetsmiljörisker",
+ "titleJa": "{職場|しょくば}の{危険|きけん}",
+ "descriptionSv": "Vilka risker som finns i en verkstad eller en fabrik och hur man förebygger dem: skillnaden mellan en olycka och en skada som kommer långsamt, vad ett skyddsombud gör och hur man talar om risker, tillbud och skydd när man arbetar eller gör praktik.",
+ "descriptionJa": "{工場|こうじょう}や{整備工場|せいびこうじょう}にどんな{危険|きけん}があり、どう{予防|よぼう}するか：{事故|じこ}とゆっくり{起|お}こる{障害|しょうがい}の{違|ちが}い、{安全衛生委員|あんぜんえいせいいいん}が{何|なに}をするか、そして{仕事|しごと}や{実習|じっしゅう}のときに、{危険|きけん}、ヒヤリハット、{安全対策|あんぜんたいさく}についてどう{話|はな}すかを{学|まな}びます。",
+ "categoryId": "R07-A04-T05",
+ "tags": [
+  "teknik",
+  "industri",
+  "arbetsmiljö"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.automatiserade-fabriker"
+ ],
+ "related": [],
+ "recommendedOrder": 4056,
+ "words": [
+  {
+   "senseId": "s.arbetsmiljö.1",
+   "active": true
+  },
+  {
+   "senseId": "s.risk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riskbedömning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetsolycka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillbud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetsskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tunga-lyft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.belastningsskada.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ensidigt-arbete.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ergonomi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klämrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fallrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maskinskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödstopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.buller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kemikalie.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddsrond.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddsombud.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Skyddsronden",
+  "paragraphs": [
+   "Ali är skyddsombud på en verkstad i Umeå där man reparerar lastbilar. En gång om året går han en skyddsrond tillsammans med chefen. De gör en riskbedömning: var finns det risk att någon får en arbetsskada?",
+   "Först tittar de på lyften. Där finns det klämrisk, och en gång var det nära att en mekaniker fick handen i kläm. Det var ett tillbud, och Ali skrev en rapport om det. – Det är bättre att rapportera tillbud än att vänta på en arbetsolycka, säger han.",
+   "Vid en stor maskin sitter ett maskinskydd. En ny kollega hade tagit bort det för att jobbet skulle gå snabbare, men nu sitter det på plats igen. Bredvid finns en stor röd knapp för nödstopp. I verkstaden är det också mycket buller, och i ett rum förvaras kemikalier som måste ha tydliga skyltar.",
+   "Många mekaniker har ont i ryggen och axlarna. Tunga lyft och ensidigt arbete kan ge belastningsskador. Chefen lovar att köpa en lyfthjälp och att låta personalen byta arbetsuppgifter oftare. – Bra ergonomi lönar sig, säger Ali.",
+   "Till sist går de upp på en hög hylla där det finns fallrisk. De bestämmer att man bara får använda en säker stege med räcke. – En god arbetsmiljö är allas ansvar, säger Ali. Men arbetsgivaren har det största ansvaret enligt lagen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Ali och chefen en gång om året?",
+    "options": [
+     "De köper nya lastbilar",
+     "De har fest för personalen",
+     "De går en skyddsrond",
+     "De målar verkstaden"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En gång om året går han en skyddsrond tillsammans med chefen.",
+    "explanationJa": "{年|ねん}に{一回|いっかい}、{一緒|いっしょ}に{安全巡視|あんぜんじゅんし}をします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad var tillbudet vid lyften?",
+    "options": [
+     "En mekaniker föll från taket",
+     "En lastbil gick sönder",
+     "Någon glömde att stänga av lampan",
+     "Det var nära att en mekaniker fick handen i kläm"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Där finns det klämrisk, och en gång var det nära att en mekaniker fick handen i kläm.",
+    "explanationJa": "{整備士|せいびし}の{手|て}が{挟|はさ}まれそうになりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför hade en kollega tagit bort maskinskyddet?",
+    "options": [
+     "För att det var trasigt",
+     "För att jobbet skulle gå snabbare",
+     "För att chefen sa det",
+     "För att det var för tungt"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "En ny kollega hade tagit bort det för att jobbet skulle gå snabbare, men nu sitter det på plats igen.",
+    "explanationJa": "{作業|さぎょう}を{早|はや}く{進|すす}めるためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Chefen vill göra något åt mekanikernas ont i ryggen.",
+    "correct": true,
+    "explanationSv": "Chefen lovar att köpa en lyfthjälp och att låta personalen byta arbetsuppgifter oftare.",
+    "explanationJa": "{補助器具|ほじょきぐ}を{買|か}い、{作業|さぎょう}をもっと{交代|こうたい}させると{約束|やくそく}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Enligt Ali har arbetsgivaren inget ansvar för arbetsmiljön.",
+    "correct": false,
+    "explanationSv": "Men arbetsgivaren har det största ansvaret enligt lagen.",
+    "explanationJa": "{法律|ほうりつ}では、{雇用主|こようぬし}にいちばん{大|おお}きな{責任|せきにん}があります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Arbetsgivaren har huvudansvaret för arbetsmiljön och ska regelbundet undersöka risker och förebygga olyckor och ohälsa (systematiskt arbetsmiljöarbete).",
+    "source": "Arbetsmiljölagen (1977:1160) 3 kap. 2 § och Arbetsmiljöverkets föreskrifter AFS 2023:1",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Skyddsombud väljs på arbetsplatser med minst fem anställda och företräder de anställda i frågor om arbetsmiljö, till exempel vid skyddsronder.",
+    "source": "Arbetsmiljölagen (1977:1160) 6 kap. 2 §, Arbetsmiljöverket",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Belastningsfaktorer, som tunga lyft och ensidigt arbete, är den vanligaste orsaken till anmälda arbetssjukdomar i Sverige.",
+    "source": "Arbetsmiljöverket, Arbetsskador (årlig statistik)",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om risker på jobbet och om hur man kan förebygga olyckor och skador.",
+  "discussionPoints": [
+   "Vilka risker finns det på din arbetsplats eller i din skola?",
+   "Har du varit med om ett tillbud eller en olycka på jobbet?",
+   "Vad kan man göra för att undvika ont i rygg och axlar?",
+   "Vem tycker du har ansvaret för en säker arbetsplats?"
+  ]
+ },
+ "standard": 2
+}

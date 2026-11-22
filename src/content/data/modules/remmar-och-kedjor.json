@@ -1,0 +1,172 @@
+{
+ "id": "m.remmar-och-kedjor",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-21",
+ "titleSv": "Remmar och kedjor",
+ "titleJa": "ベルトとチェーン",
+ "descriptionSv": "Hur remmar och kedjor överför rörelse i cyklar, bilar och maskiner, hur man beskriver en kedja som är slak eller sliten och hur man pratar med en mekaniker om att spänna, smörja och byta delar.",
+ "descriptionJa": "ベルトとチェーンが{自転車|じてんしゃ}、{車|くるま}、{機械|きかい}の{中|なか}でどのように{動|うご}きを{伝|つた}えるか、たるんだりすり{減|へ}ったりしたチェーンをどう{表現|ひょうげん}するか、そして{部品|ぶひん}を{張|は}る、{油|あぶら}をさす、{交換|こうかん}することについて{整備士|せいびし}とどう{話|はな}すかを{学|まな}びます。",
+ "categoryId": "R07-A04-T01",
+ "tags": [
+  "teknik",
+  "maskiner",
+  "cykel"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.axlar-och-lager"
+ ],
+ "related": [],
+ "recommendedOrder": 4013,
+ "words": [
+  {
+   "senseId": "s.rem.2",
+   "active": true
+  },
+  {
+   "senseId": "s.remskiva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tandrem.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kedja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.länk.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kedjehjul.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kugge.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bakhjul.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kedjeskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spänna.2",
+   "active": true
+  },
+  {
+   "senseId": "s.slak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slira.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hoppa-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-av.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smörja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transportband.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Helgjobb på cykelverkstaden",
+  "paragraphs": [
+   "Omar vill arbeta med bilar och jobbar på en cykelverkstad på lördagarna. En morgon kommer en kvinna in med en gammal cykel. – Kedjan hoppar av hela tiden, säger hon.",
+   "Omar tittar på cykeln. Kedjan är slak och hänger ner under kedjeskyddet. – Den måste spännas, säger han. Han lossar bakhjulet, drar det lite bakåt och spänner kedjan. Sedan smörjer han den med lite olja.",
+   "Han visar också kedjehjulet vid pedalerna. Kuggarna är spetsiga och slitna. – Om kedjehjulet är slitet, kan kedjan slira och till slut gå av, förklarar han. Varje länk i en gammal kedja blir också lite längre med tiden.",
+   "På eftermiddagen kommer en man med en elektrisk lastcykel. Den har ingen kedja, utan en tandrem. – En rem behöver ingen olja och är tyst, säger Omar. Men om remmen går av måste man byta hela remmen. Den går runt två remskivor, och man kan inte laga den som en kedja.",
+   "På kvällen hämtar Omar sin syster på flygplatsen. De står länge och väntar vid transportbandet. – Allt rör sig med remmar och band, skrattar Omar när väskan äntligen kommer."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad är problemet med kvinnans cykel?",
+    "options": [
+     "Bromsarna fungerar inte",
+     "Det är fel på lampan",
+     "Sadeln är trasig",
+     "Kedjan hoppar av"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Kedjan hoppar av hela tiden, säger hon.",
+    "explanationJa": "チェーンがいつも{外|はず}れてしまいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Omar efter att han har spänt kedjan?",
+    "options": [
+     "Han byter den",
+     "Han tvättar cykeln",
+     "Han smörjer den",
+     "Han pumpar däcken"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Sedan smörjer han den med lite olja.",
+    "explanationJa": "チェーンに{油|あぶら}をさします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kan kedjan slira?",
+    "options": [
+     "Kedjan är ny",
+     "Kedjehjulet är slitet",
+     "Cykeln är för tung",
+     "Det är för mycket olja"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Om kedjehjulet är slitet, kan kedjan slira och till slut gå av, förklarar han.",
+    "explanationJa": "スプロケットがすり{減|へ}っているとチェーンがすべります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lastcykeln har en tandrem i stället för en kedja.",
+    "correct": true,
+    "explanationSv": "Den har ingen kedja, utan en tandrem.",
+    "explanationJa": "カーゴバイクにはチェーンではなくベルトがついています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "En rem kan lagas på samma sätt som en kedja.",
+    "correct": false,
+    "explanationSv": "Den går runt två remskivor, och man kan inte laga den som en kedja.",
+    "explanationJa": "ベルトはチェーンのように{修理|しゅうり}できません。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om cyklar, remmar och kedjor och om att laga saker själv.",
+  "discussionPoints": [
+   "Kan du laga en cykelkedja som har hoppat av?",
+   "Vill du hellre ha en cykel med kedja eller med rem? Varför?",
+   "Var har du sett transportband eller andra band och remmar som flyttar saker?",
+   "Lämnar du hellre cykeln till en verkstad, eller lagar du den själv?"
+  ]
+ },
+ "standard": 2
+}

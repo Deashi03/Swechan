@@ -1,0 +1,172 @@
+{
+ "id": "m.borrning-och-sagning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Borrning och sågning",
+ "titleJa": "{穴|あな}あけと{切断|せつだん}",
+ "descriptionSv": "Hur man berättar om att borra och såga: vilka sågar som passar för trä och metall, hur man gör hål som skruven sitter bra i och hur man håller fast arbetet medan man arbetar.",
+ "descriptionJa": "{穴|あな}をあけたり、のこぎりで{切|き}ったりすることについて{話|はな}す{方法|ほうほう}を{学|まな}びます。{木|き}や{金属|きんぞく}に{合|あ}うのこぎりの{種類|しゅるい}、ねじがしっかり{留|と}まる{穴|あな}のあけ{方|かた}、{作業中|さぎょうちゅう}に{材料|ざいりょう}を{固定|こてい}する{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A04-T02",
+ "tags": [
+  "verktyg",
+  "verkstad",
+  "trä"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.matverktyg"
+ ],
+ "related": [],
+ "recommendedOrder": 4024,
+ "words": [
+  {
+   "senseId": "s.arbetsbänk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sågbock.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kapa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkelsåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sågspån.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sticksåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tving.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borr.2",
+   "active": true
+  },
+  {
+   "senseId": "s.förborra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försänka.2",
+   "active": false
+  },
+  {
+   "senseId": "s.plugg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.såga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bågfil.1",
+   "active": false
+  },
+  {
+   "senseId": "s.såg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sågblad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En bokhylla till Emma",
+  "paragraphs": [
+   "Takeshi ska bygga en bokhylla till sin dotter Emma. Han ställer två sågbockar i garaget och lägger brädorna på dem. På arbetsbänken ligger alla verktyg som han behöver.",
+   "Först kapar han brädorna till rätt längd med en cirkelsåg. Det går snabbt, men sågspånet yr överallt. Hörnen på hyllan ska vara runda, så där använder han sticksågen. Han sätter fast brädan med en tving så att den inte rör sig.",
+   "Sedan ska han borra. Han sätter i en tunn borr och förborrar alla hål, så att träet inte spricker. Därefter försänker han hålen, så att skruvarnas huvuden inte sticker upp.",
+   "Hyllan ska sitta fast i väggen. Väggen är av betong, så Takeshi behöver en borr för sten och några pluggar. När han borrar i väggen ringer grannen på och frågar vad som händer.",
+   "Till sist sitter ett gammalt metallrör i vägen. Takeshi sågar av det med en bågfil, för en vanlig såg biter inte på metall. Efter dagen är sågbladen slöa och garaget är fullt av damm, men hyllan är klar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad lägger Takeshi brädorna på?",
+    "options": [
+     "Arbetsbänken",
+     "Golvet i garaget",
+     "Två sågbockar",
+     "Bilen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Han ställer två sågbockar i garaget och lägger brädorna på dem.",
+    "explanationJa": "{二|ふた}つのソーホースの{上|うえ}に{置|お}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför använder han sticksågen?",
+    "options": [
+     "Cirkelsågen är trasig",
+     "Hörnen ska vara runda",
+     "Sticksågen är tystare",
+     "Brädorna är av metall"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hörnen på hyllan ska vara runda, så där använder han sticksågen.",
+    "explanationJa": "{角|かど}を{丸|まる}くしたいからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför förborrar han hålen?",
+    "options": [
+     "Så att träet inte spricker",
+     "Så att skruvarna syns",
+     "Så att hyllan blir lättare",
+     "Så att grannen inte hör"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han sätter i en tunn borr och förborrar alla hål, så att träet inte spricker.",
+    "explanationJa": "{木|き}が{割|わ}れないようにするためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Takeshi behöver pluggar för att sätta upp hyllan i betongväggen.",
+    "correct": true,
+    "explanationSv": "Väggen är av betong, så Takeshi behöver en borr för sten och några pluggar.",
+    "explanationJa": "コンクリートの{壁|かべ}なので、アンカーが{必要|ひつよう}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Takeshi kunde lika gärna ha använt en vanlig såg till metallröret.",
+    "correct": false,
+    "explanationSv": "Takeshi sågar av det med en bågfil, för en vanlig såg biter inte på metall.",
+    "explanationJa": "ふつうののこぎりでは{金属|きんぞく}は{切|き}れません。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att borra, såga och bygga saker.",
+  "discussionPoints": [
+   "Har du någon gång borrat i en vägg? Hur gick det?",
+   "Vad skulle du vilja bygga själv?",
+   "Vilka verktyg tycker du är svårast eller farligast att använda?",
+   "Får man borra i väggarna där du bor? Vilka regler finns det?"
+  ]
+ },
+ "standard": 2
+}

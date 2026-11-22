@@ -255,3 +255,9 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
 - *transformatorstation* ↔ *nätstation* (skillnaden är storleken); *synkron* ↔ rytm; *mörklagd* ↔ mörkt hus med blixt
 - *vattenburen* ↔ värmesystem med rör; *energitjuv* ↔ tv i standby
 - *signal* ↔ mätdata till skärm; *börvärde* ↔ termometrar med referenslinje; *styrsystem* ↔ kontrollrum; *precision* ↔ gripklo med ägg; *stabil* ↔ balansvåg
+
+## 0.58 – Maskiner & tillverkning
+
+- **Omritad i omgång 2:** *korrosion* (rostfläckar på plåt förväxlades med *rost*; nu tre metaller – järn, koppar, aluminium – som angrips av regn och salt, med en frisk metallbit som kontrast).
+- **Synonympar:** *additiv tillverkning* ↔ *3D-utskrift* (`conf.py`), äkta synonymer.
+- **Godkända men nära andra bilder (bevakas):** *slak* ↔ *hoppa av*; *noggrann* ↔ "mät två gånger"; *slät* ↔ *blank*; *hård* (läses som slagtest), *seg* ↔ *formbar*, *eldfast* ↔ brännugn, *lätt* ↔ glas/fjäder/sten, *hållfasthet* ↔ dragprov/bro; *defekt* ↔ *spricka*, *kvalitetssäkring* ↔ kvalitetskontroll på band; *skalenlig* ↔ skala-bilder, *plus minus*/*tolerans* ↔ ±-intervall, *revision* ↔ appuppdatering.

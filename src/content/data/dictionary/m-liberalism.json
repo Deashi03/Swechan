@@ -239,6 +239,7 @@
        "ja": "{寛容|かんよう}とは、すべてに{賛成|さんせい}するという{意味|いみ}ではありません。"
       }
      ],
+     "labelSv": "mot andra",
      "explanation": {
       "sv": "Tolerans betyder att man låter andra ha sina åsikter och sitt sätt att leva, även om man själv inte gillar det. Ordet används om både människor och samhällen: ett samhälle med stor tolerans.",
       "ja": "「tolerans」は、{自分|じぶん}が{好|この}まなくても、{他人|たにん}が{自分|じぶん}の{意見|いけん}や{生|い}き{方|かた}を{持|も}つことを{認|みと}めることです。{人|ひと}にも{社会|しゃかい}にも{使|つか}います：「ett samhälle med stor tolerans（{寛容|かんよう}な{社会|しゃかい}）」。"
@@ -250,8 +251,71 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.tolerans.2",
+     "ja": "（{薬|くすり}などへの）{耐性|たいせい}",
+     "defSv": "Att kroppen vänjer sig vid ett ämne, så att det får mindre effekt.",
+     "defJa": "{体|からだ}がある{物質|ぶっしつ}に{慣|な}れて、{効|き}き{目|め}が{弱|よわ}くなること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Man kan få tolerans mot vissa smärtstillande mediciner.",
+       "ja": "ある{種|しゅ}の{痛|いた}み{止|ど}めには{耐性|たいせい}がつくことがあります。"
+      }
+     ],
+     "labelSv": "kroppen",
+     "tags": [
+      "hälsa"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "C1"
+    },
+    {
+     "id": "s.tolerans.3",
+     "ja": "（{寸法|すんぽう}の）{公差|こうさ}",
+     "defSv": "Hur mycket ett mått får avvika från det mått som står på ritningen.",
+     "defJa": "{寸法|すんぽう}が、{図面|ずめん}に{書|か}かれた{寸法|すんぽう}からどのくらいずれてもよいかという{範囲|はんい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hålet ska vara 10 millimeter med en tolerans på plus minus en tiondels millimeter.",
+       "ja": "{穴|あな}は10ミリで、{公差|こうさ}はプラスマイナス0.1ミリです。"
+      },
+      {
+       "sv": "Axeln var utanför toleransen och fick kasseras.",
+       "ja": "その{軸|じく}は{公差|こうさ}から{外|はず}れていたので、{廃棄|はいき}されました。"
+      }
+     ],
+     "labelSv": "mått",
+     "collocations": [
+      "snäv tolerans",
+      "inom toleransen",
+      "utanför toleransen"
+     ],
+     "explanation": {
+      "sv": "Ingen maskin kan tillverka helt exakt, så ritningen säger hur stort felet får vara. En liten tolerans betyder att delen måste bli nästan exakt rätt, och då blir den dyrare att tillverka. En del som är utanför toleransen passar kanske inte och kasseras.",
+      "ja": "どんな{機械|きかい}でも{完全|かんぜん}に{正確|せいかく}には{作|つく}れないので、{図面|ずめん}にはどこまでのずれが{許|ゆる}されるかが{書|か}いてあります。{公差|こうさ}が{小|ちい}さいということは、{部品|ぶひん}をほぼ{正確|せいかく}に{作|つく}らなければならないということで、そのぶん{製造|せいぞう}の{費用|ひよう}が{高|たか}くなります。{公差|こうさ}から{外|はず}れた{部品|ぶひん}は、うまく{合|あ}わないことがあるので{廃棄|はいき}されます。"
+     },
+     "tags": [
+      "teknik",
+      "tillverkning",
+      "ritning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.valfrihet",

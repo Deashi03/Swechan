@@ -28,18 +28,18 @@ describe('Kurser (catalog navigation)', () => {
   });
 
   it('a topic group lists its seven planned modules, clearly marked and not startable', async () => {
-    wrap(<Explore categoryId="R07-A04-T01" />);
+    wrap(<Explore categoryId="R07-A05-T01" />);
     const items = await choices();
     expect(items.length).toBe(7);
     expect(screen.getAllByText('Planerad').length).toBeGreaterThanOrEqual(7);
-    expect(screen.getByText('Kugghjul och växlar')).toBeInTheDocument();
+    expect(screen.getByText('Grund och fundament')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
   });
 
   it('a planned module has an information view without a start button', async () => {
-    // Elektronik & energi is published from 0.57; Maskiner & tillverkning is still planned.
-    wrap(<CatalogModuleView id="SWC-TEK-04-01-01" />);
-    expect(await screen.findByText('Kugghjul och växlar')).toBeInTheDocument();
+    // Maskiner & tillverkning is published from 0.58; Byggnad & infrastruktur is still planned.
+    wrap(<CatalogModuleView id="SWC-TEK-05-01-01" />);
+    expect(await screen.findByText('Grund och fundament')).toBeInTheDocument();
     expect(screen.getByText(/inte färdig än/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
     expect(screen.queryByRole('link', { name: /Starta/ })).toBeNull();

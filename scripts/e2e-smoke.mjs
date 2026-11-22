@@ -212,14 +212,14 @@ try {
   assert((await page.locator('main a.list-item').count()) <= 8, 'topic group menu has at most 8 choices');
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), all of Historia & humaniora
   // (0.36–0.41), all of Natur & geografi (0.42–0.47), Matematikens grunder (0.48), Avancerad matematik (0.49), Fysik
-  // (0.50), Kemi (0.51), Biologi (0.52), Astronomi & rymd (0.53) Datorer & internet (0.55), Programmering & AI (0.56) and Elektronik & energi (0.57) are
-  // published, so the planned entry is Teknik & digital värld → Maskiner & tillverkning → Mekanikens maskindelar →
-  // Kugghjul och växlar.
+  // (0.50), Kemi (0.51), Biologi (0.52), Astronomi & rymd (0.53) Datorer & internet (0.55), Programmering & AI (0.56), Elektronik & energi (0.57) and Maskiner &
+  // tillverkning (0.58) are published, so the planned entry is Teknik & digital värld → Byggnad & infrastruktur →
+  // Byggnadens konstruktion → Grund och fundament.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Teknik & digital värld/ }).first().click();
-  await page.getByRole('link', { name: /Maskiner & tillverkning/ }).first().click();
-  await page.getByRole('link', { name: /Mekanikens maskindelar/ }).first().click();
-  await page.getByRole('link', { name: /^Kugghjul och växlar/ }).first().click();
+  await page.getByRole('link', { name: /Byggnad & infrastruktur/ }).first().click();
+  await page.getByRole('link', { name: /Byggnadens konstruktion/ }).first().click();
+  await page.getByRole('link', { name: /^Grund och fundament/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);

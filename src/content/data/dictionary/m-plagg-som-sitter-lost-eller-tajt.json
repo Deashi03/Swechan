@@ -98,6 +98,7 @@
        "ja": "そのセーターはゆったりしています。"
       }
      ],
+     "labelSv": "om kläder",
      "synonyms": [
       {
        "senseId": "s.tajt.1",
@@ -110,8 +111,68 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.lös.2",
+     "ja": "（{部品|ぶひん}などが）ゆるんだ、{外|はず}れた",
+     "defSv": "Som inte sitter fast ordentligt.",
+     "defJa": "しっかり{固定|こてい}されていない。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Handtaget på dörren är löst.",
+       "ja": "ドアの{取|と}っ{手|て}がゆるんでいます。"
+      }
+     ],
+     "labelSv": "inte fast",
+     "collocations": [
+      "sitta löst",
+      "en lös skruv",
+      "gå lös"
+     ],
+     "explanation": {
+      "sv": "Något som är löst sitter inte fast som det ska. Då rör det sig när man tar i det.",
+      "ja": "きちんと{固定|こてい}されていない{状態|じょうたい}です。さわると{動|うご}きます。"
+     },
+     "tags": [
+      "teknik",
+      "maskiner",
+      "reparation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
+    },
+    {
+     "id": "s.lös.3",
+     "ja": "（{動物|どうぶつ}が）つながれていない、{放|はな}し{飼|が}いの",
+     "defSv": "Om ett djur: som inte hålls fast och kan springa var det vill.",
+     "defJa": "{動物|どうぶつ}がひもにつながれておらず、{自由|じゆう}に{走|はし}れる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hundar får inte springa lösa i parken.",
+       "ja": "{公園|こうえん}では{犬|いぬ}を{放|はな}してはいけません。"
+      }
+     ],
+     "labelSv": "djur",
+     "tags": [
+      "vardag",
+      "djur"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.åtsittande",
@@ -411,6 +472,7 @@
        "ja": "ズボンはウエストがぶかぶかです。"
       }
      ],
+     "labelSv": "kläder",
      "frame": {
       "subject": "Kragen"
      },
@@ -424,8 +486,50 @@
       "sv": "Om ett plagg glappar är det så löst att det blir ett mellanrum mellan tyget och kroppen, till exempel runt magen. Ordet används också om saker som sitter löst.",
       "ja": "{服|ふく}が「glappa」すると、ゆるすぎて{布|ぬの}と{体|からだ}の{間|あいだ}にすき{間|ま}ができます。ゆるんでいる{物|もの}にも{使|つか}います。"
      }
+    },
+    {
+     "id": "s.glappa.2",
+     "ja": "（{部品|ぶひん}に）がたがある、ぐらつく",
+     "defSv": "Om en maskindel: sitta så löst att den rör sig lite åt sidan när den inte ska.",
+     "defJa": "{機械|きかい}の{部品|ぶひん}がゆるくて、{動|うご}いてはいけない{方向|ほうこう}に{少|すこ}し{動|うご}く。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Framhjulet glappar, så något är nog slitet.",
+       "ja": "{前輪|ぜんりん}にがたがあるので、たぶんどこかがすり{減|へ}っています。"
+      },
+      {
+       "sv": "Det glappade i hjulet, så han lagade det.",
+       "ja": "{車輪|しゃりん}にがたがあったので、{彼|かれ}は{修理|しゅうり}しました。"
+      }
+     ],
+     "labelSv": "maskindel",
+     "collocations": [
+      "hjulet glappar",
+      "det glappar i styret"
+     ],
+     "explanation": {
+      "sv": "Om du tar i ett cykelhjul och kan röra det lite åt sidan, så glappar det. Det är ett tecken på att något sitter löst eller är slitet, till exempel ett lager. Kärva är nästan tvärtom: då sitter delen för hårt och går tungt.",
+      "ja": "{自転車|じてんしゃ}の{車輪|しゃりん}をつかんで{少|すこ}し{横|よこ}に{動|うご}かせるなら、「det glappar（がたがある）」と{言|い}います。ベアリングなど、{何|なに}かがゆるんでいるか、すり{減|へ}っているしるしです。「kärva」はほとんど{反対|はんたい}で、{部品|ぶひん}がきつすぎて{動|うご}きが{重|おも}いことです。"
+     },
+     "frame": {
+      "subject": "Hjulet"
+     },
+     "tags": [
+      "teknik",
+      "maskiner",
+      "reparation"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-21"
+   }
   },
   {
    "id": "e.pösa",

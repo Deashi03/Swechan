@@ -45,7 +45,7 @@ describe('module:validate', () => {
   }, 240_000); // grows with the content (~60 s at 1 517 modules on CI)
   it('rejects planned and unknown IDs', () => {
     expect(checkModule(PLANNED.catalogId, repo, core, catalog).errors[0]).toMatch(/finns inte/);
-  });
+  }, 240_000); // the check builds indexes over all content (~67 s at 1 685 modules on CI)
 });
 
 describe('content:report', () => {

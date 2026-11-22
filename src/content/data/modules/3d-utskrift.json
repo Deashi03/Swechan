@@ -1,0 +1,180 @@
+{
+ "id": "m.3d-utskrift",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "3D-utskrift",
+ "titleJa": "3Dプリント",
+ "descriptionSv": "Hur en 3D-skrivare fungerar och hur man använder den i vardagen, till exempel på biblioteket: hur ett föremål byggs lager för lager, vad som kan gå fel och hur additiv tillverkning skiljer sig från att fräsa eller gjuta.",
+ "descriptionJa": "3Dプリンターのしくみと、{図書館|としょかん}などでの{日常|にちじょう}の{使|つか}い{方|かた}：{物|もの}が{一層|いっそう}ずつ{作|つく}られる{様子|ようす}、{失敗|しっぱい}しやすい{点|てん}、そして{積層造形|せきそうぞうけい}がフライス{加工|かこう}や{鋳造|ちゅうぞう}とどう{違|ちが}うかを{学|まな}びます。",
+ "categoryId": "R07-A04-T04",
+ "tags": [
+  "teknik",
+  "tillverkning",
+  "3d-utskrift"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.formsprutning"
+ ],
+ "related": [],
+ "recommendedOrder": 4045,
+ "words": [
+  {
+   "senseId": "s.3D-skrivare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bibliotek.1",
+   "active": false
+  },
+  {
+   "senseId": "s.reservdel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ladda-ner.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fil.2",
+   "active": false
+  },
+  {
+   "senseId": "s.filament.1",
+   "active": true
+  },
+  {
+   "senseId": "s.munstycke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smälta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.byggplatta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lager-förråd.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stödmaterial.1",
+   "active": true
+  },
+  {
+   "senseId": "s.3D-utskrift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.misslyckas.1",
+   "active": false
+  },
+  {
+   "senseId": "s.additiv-tillverkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prototyp.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skräddarsy.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "3D-skrivaren på biblioteket",
+  "paragraphs": [
+   "Det är lördag, och Yuki går till stadsbiblioteket. Där finns en 3D-skrivare som alla får använda gratis. En liten del av plast i Yukis diskmaskin är trasig. Det finns ingen reservdel att köpa, så hon vill skriva ut en ny del själv.",
+   "Hemma har hon laddat ner en fil med en modell av delen. Per, som arbetar på biblioteket, hjälper henne att föra över filen till skrivaren. Sedan väljer de filament av vit plast.",
+   "Skrivaren värmer munstycket, och plasten smälter. Munstycket rör sig fram och tillbaka och lägger plasten på byggplattan, lager för lager. – Delen har en kant som hänger i luften, säger Per. Därför bygger skrivaren stödmaterial under den.",
+   "3D-utskriften tar två timmar. Första gången misslyckas den, eftersom delen lossnar från byggplattan. Andra gången går det bra. Per förklarar att det här kallas additiv tillverkning: man lägger till material i stället för att fräsa bort det.",
+   "– Företag använder 3D-skrivare för att göra en prototyp innan de börjar massproducera, säger Per. Inom vården kan man skräddarsy hjälpmedel för en viss patient. Hemma sätter Yuki in den nya delen i diskmaskinen. Den passar perfekt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför vill Yuki skriva ut en del?",
+    "options": [
+     "Hon vill göra en present",
+     "Det finns ingen reservdel att köpa",
+     "Hon ska sälja delar",
+     "Hennes lärare har sagt det"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det finns ingen reservdel att köpa, så hon vill skriva ut en ny del själv.",
+    "explanationJa": "{買|か}える{交換|こうかん}{部品|ぶひん}がないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad lägger munstycket plasten på?",
+    "options": [
+     "Bordet",
+     "Filamentet",
+     "Diskmaskinen",
+     "Byggplattan"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Munstycket rör sig fram och tillbaka och lägger plasten på byggplattan, lager för lager.",
+    "explanationJa": "ノズルはプラスチックをビルドプレートの{上|うえ}に{重|かさ}ねていきます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Varför bygger skrivaren stödmaterial?",
+    "options": [
+     "Plasten är för varm",
+     "Filamentet är vitt",
+     "Delen har en kant som hänger i luften",
+     "Delen är för liten"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Delen har en kant som hänger i luften … Därför bygger skrivaren stödmaterial under den.",
+    "explanationJa": "{宙|ちゅう}に{浮|う}いた{部分|ぶぶん}があるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "3D-utskriften lyckas första gången.",
+    "correct": false,
+    "explanationSv": "Första gången misslyckas den, eftersom delen lossnar från byggplattan.",
+    "explanationJa": "{一回目|いっかいめ}は{部品|ぶひん}がプレートからはがれて{失敗|しっぱい}しました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den nya delen fungerar i diskmaskinen.",
+    "correct": true,
+    "explanationSv": "Hemma sätter Yuki in den nya delen i diskmaskinen. Den passar perfekt.",
+    "explanationJa": "{新|あたら}しい{部品|ぶひん}はぴったり{合|あ}いました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "3D-skrivare används inom vården, till exempel för att tillverka hjälpmedel som är anpassade efter en viss patient.",
+    "source": "Nationalencyklopedin, uppslagsordet 3D-skrivare; regionernas verksamhet för medicinsk teknik",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om 3D-skrivare och om att laga eller tillverka saker själv.",
+  "discussionPoints": [
+   "Har du sett en 3D-skrivare? Var?",
+   "Vad skulle du vilja skriva ut med en 3D-skrivare?",
+   "Lagar du hellre en sak eller köper du en ny? Varför?",
+   "Vilka saker skulle det vara bra att skräddarsy?"
+  ]
+ },
+ "standard": 2
+}

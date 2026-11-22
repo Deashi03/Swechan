@@ -1,0 +1,176 @@
+{
+ "id": "m.montering",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Montering",
+ "titleJa": "{組|く}み{立|た}て",
+ "descriptionSv": "Hur saker sätts ihop, både i fabriken och hemma: hur montörer arbetar vid ett löpande band, hur man följer en monteringsanvisning till en möbel i platt paket och hur man berättar om det som går fel på vägen.",
+ "descriptionJa": "{工場|こうじょう}でも{家|いえ}でも{行|おこな}う{組|く}み{立|た}ての{話|はな}し{方|かた}：ラインで{働|はたら}く{組立工|くみたてこう}の{仕事|しごと}、フラットパックの{家具|かぐ}を{説明書|せつめいしょ}どおりに{組|く}み{立|た}てる{方法|ほうほう}、そして{途中|とちゅう}でうまくいかなかったことの{伝|つた}え{方|かた}を{学|まな}びます。",
+ "categoryId": "R07-A04-T04",
+ "tags": [
+  "teknik",
+  "tillverkning",
+  "montering"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.3d-utskrift"
+ ],
+ "related": [],
+ "recommendedOrder": 4046,
+ "words": [
+  {
+   "senseId": "s.montera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.montering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.montör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.löpande-band.1",
+   "active": false
+  },
+  {
+   "senseId": "s.komponent.2",
+   "active": true
+  },
+  {
+   "senseId": "s.nita.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nit.1",
+   "active": false
+  },
+  {
+   "senseId": "s.limma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sätta-ihop.1",
+   "active": true
+  },
+  {
+   "senseId": "s.platt-paket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.monteringsanvisning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byggsats.1",
+   "active": false
+  },
+  {
+   "senseId": "s.insexnyckel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.dra-åt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fattas.1",
+   "active": false
+  },
+  {
+   "senseId": "s.plocka-isär.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färdigmonterad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Montering på jobbet och hemma",
+  "paragraphs": [
+   "Ali arbetar som montör på en lastbilsfabrik. Där går lastbilarna långsamt framåt på ett löpande band, och varje montör har sin egen uppgift. Ali monterar dörrar. Han sätter fast komponenter som lås och fönster och drar åt skruvarna med ett elektriskt verktyg.",
+   "En del delar i dörren nitar man, och andra limmar man. – Montering är lagarbete, säger Ali. Om en person är långsam stannar allt.",
+   "På lördagen ska Ali och hans fru Maria sätta ihop en ny bokhylla. Den kom i ett platt paket från en möbelaffär. Maria läser monteringsanvisningen, och Ali sorterar skruvar och pluggar. Det är som en stor byggsats.",
+   "Efter en timme är de nästan klara, men det fattas en skruv. – Var är den? frågar Maria. De letar överallt. Till slut hittar Ali skruven under soffan, och de kan dra åt den sista skruven med insexnyckeln.",
+   "Men hyllan står snett. De har satt en hylla upp och ner, och måste plocka isär halva bokhyllan. – Nästa gång köper vi en färdigmonterad bokhylla, skrattar Maria. – Det kostar mer, svarar Ali. Och på jobbet gör jag ju aldrig sådana fel!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad monterar Ali på fabriken?",
+    "options": [
+     "Dörrar",
+     "Motorer",
+     "Hjul",
+     "Säten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Ali monterar dörrar.",
+    "explanationJa": "アリは{車|くるま}のドアを{取|と}り{付|つ}けます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför säger Ali att montering är lagarbete?",
+    "options": [
+     "Alla gör samma sak",
+     "Chefen bestämmer allt",
+     "Om en person är långsam stannar allt",
+     "De arbetar hemma"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Om en person är långsam stannar allt.",
+    "explanationJa": "{一人|ひとり}が{遅|おそ}いと、ライン{全体|ぜんたい}が{止|と}まるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör Maria när de sätter ihop bokhyllan?",
+    "options": [
+     "Hon läser monteringsanvisningen",
+     "Hon sorterar skruvar",
+     "Hon ringer affären",
+     "Hon limmar hyllorna"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Maria läser monteringsanvisningen, och Ali sorterar skruvar och pluggar.",
+    "explanationJa": "マリアは{組|く}み{立|た}て{説明書|せつめいしょ}を{読|よ}みます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "De hittar skruven som fattas under soffan.",
+    "correct": true,
+    "explanationSv": "Till slut hittar Ali skruven under soffan …",
+    "explanationJa": "{足|た}りなかったねじはソファの{下|した}にありました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Bokhyllan blir rätt redan första gången.",
+    "correct": false,
+    "explanationSv": "De har satt en hylla upp och ner, och måste plocka isär halva bokhyllan.",
+    "explanationJa": "{棚板|たないた}を{一枚|いちまい}{逆|さか}さまに{付|つ}けたので、{半分|はんぶん}{分解|ぶんかい}しなければなりませんでした。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att montera saker, på jobbet och hemma.",
+  "discussionPoints": [
+   "Har du satt ihop en möbel från ett platt paket? Hur gick det?",
+   "Läser du monteringsanvisningen, eller börjar du direkt?",
+   "Vad är bra och dåligt med att arbeta vid ett löpande band?",
+   "Köper du hellre färdigmonterade saker? Varför?"
+  ]
+ },
+ "standard": 2
+}

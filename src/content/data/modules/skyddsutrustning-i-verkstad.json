@@ -1,0 +1,180 @@
+{
+ "id": "m.skyddsutrustning-i-verkstad",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Skyddsutrustning i verkstad",
+ "titleJa": "{作業場|さぎょうば}の{保護具|ほごぐ}",
+ "descriptionSv": "Hur man talar om säkerhet på en verkstad: vilken skyddsutrustning som behövs för olika arbeten, vem som ska stå för den och var man hittar det som behövs om en olycka händer.",
+ "descriptionJa": "{作業場|さぎょうば}の{安全|あんぜん}について{話|はな}す{方法|ほうほう}を{学|まな}びます。{作業|さぎょう}によってどんな{保護具|ほごぐ}が{必要|ひつよう}か、{誰|だれ}がそれを{用意|ようい}するのか、{事故|じこ}が{起|お}きたときに{必要|ひつよう}なものがどこにあるのかを{学|まな}びます。",
+ "categoryId": "R07-A04-T02",
+ "tags": [
+  "verkstad",
+  "arbetsmiljö",
+  "säkerhet"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.svetsning"
+ ],
+ "related": [],
+ "recommendedOrder": 4027,
+ "words": [
+  {
+   "senseId": "s.säkerhetsföreskrift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddsutrustning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.overall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddssko.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddshandske.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varselväst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hörselskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skyddsglasögon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visir.1",
+   "active": true
+  },
+  {
+   "senseId": "s.andningsskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.punktutsug.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hjälm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödstopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandsläckare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbandslåda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ögondusch.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Första dagen på verkstaden",
+  "paragraphs": [
+   "Yuki har fått sommarjobb på en verkstad som tillverkar delar till lastbilar. Första dagen går skyddsombudet Anders igenom säkerhetsföreskrifterna med henne. – Läs dem noga. De gäller alla här, säger han.",
+   "Yuki får sin skyddsutrustning: en overall, skyddsskor och skyddshandskar. – Arbetsgivaren ska ge dig den skyddsutrustning som behövs, säger Anders. Du ska inte betala något själv. I hallen har alla också varselväst, eftersom stora maskiner kör där hela dagen.",
+   "Vid maskinerna är det högt ljud, så Yuki sätter på sig hörselskydd. När hon slipar har hon skyddsglasögon, och vid vinkelslipen ett visir som skyddar hela ansiktet. Där man lackerar har alla andningsskydd.",
+   "Ovanför varje svetsplats sitter ett punktutsug som suger bort röken. Hjälm behövs i lagret, där man lyfter tunga saker högt upp.",
+   "Till sist visar Anders var nödstoppen sitter och var brandsläckaren, förbandslådan och ögonduschen finns. – Om något händer ska du veta var allt är utan att leta, säger han. Yuki känner sig trygg."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem går igenom säkerhetsföreskrifterna med Yuki?",
+    "options": [
+     "Hennes chef",
+     "En annan kollega",
+     "En lärare från skolan",
+     "Skyddsombudet Anders"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Första dagen går skyddsombudet Anders igenom säkerhetsföreskrifterna med henne.",
+    "explanationJa": "{安全委員|あんぜんいいん}のアンデシュです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem ska betala skyddsutrustningen enligt Anders?",
+    "options": [
+     "Yuki själv",
+     "Facket",
+     "Arbetsgivaren",
+     "Kommunen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Arbetsgivaren ska ge dig den skyddsutrustning som behövs, säger Anders. Du ska inte betala något själv.",
+    "explanationJa": "{雇用主|こようぬし}が{用意|ようい}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför har alla varselväst i hallen?",
+    "options": [
+     "Det är kallt i hallen",
+     "Stora maskiner kör där hela dagen",
+     "Det är verkstadens färg",
+     "Det är mörkt på natten"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I hallen har alla också varselväst, eftersom stora maskiner kör där hela dagen.",
+    "explanationJa": "{大|おお}きな{機械|きかい}が{一日中|いちにちじゅう}{動|うご}いているからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vid vinkelslipen räcker det med skyddsglasögon.",
+    "correct": false,
+    "explanationSv": "När hon slipar har hon skyddsglasögon, och vid vinkelslipen ett visir som skyddar hela ansiktet.",
+    "explanationJa": "ディスクグラインダーでは、{顔|かお}{全体|ぜんたい}を{守|まも}るフェイスシールドを{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anders vill att Yuki snabbt ska hitta nödstopp och förbandslåda om något händer.",
+    "correct": true,
+    "explanationSv": "– Om något händer ska du veta var allt är utan att leta, säger han.",
+    "explanationJa": "{何|なに}かあったとき、{探|さが}さずに{見|み}つけられるようにするためです。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Om betryggande skydd inte kan nås på annat sätt ska personlig skyddsutrustning användas, och den ska tillhandahållas av arbetsgivaren.",
+    "source": "Arbetsmiljölagen (1977:1160), 2 kap. 7 §",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om säkerhet och skyddsutrustning på arbetsplatser.",
+  "discussionPoints": [
+   "Vilken skyddsutrustning har du använt på ett jobb eller i skolan?",
+   "Vad gör man i ditt hemland för att skydda arbetare i fabriker och verkstäder?",
+   "Har du sett någon arbeta utan skyddsutrustning? Vad tänkte du då?",
+   "Vad skulle du göra om en kollega inte följde säkerhetsföreskrifterna?"
+  ]
+ },
+ "standard": 2
+}

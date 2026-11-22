@@ -26,14 +26,42 @@
        "ja": "ちゃんとした{工具|こうぐ}がありますか。"
       }
      ],
+     "labelSv": "redskap",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.verktyg.2",
+     "ja": "（{目的|もくてき}を{果|は}たすための）{手段|しゅだん}、ツール",
+     "defSv": "Något som man använder för att nå ett mål, till exempel ett språk.",
+     "defJa": "{言葉|ことば}やプログラムなど、{目的|もくてき}を{果|は}たすために{使|つか}うもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Språket är ett viktigt verktyg för att komma in i samhället.",
+       "ja": "{言葉|ことば}は{社会|しゃかい}に{溶|と}け{込|こ}むための{大切|たいせつ}な{手段|しゅだん}です。"
+      }
+     ],
+     "labelSv": "medel",
+     "tags": [
+      "arbete",
+      "samhälle"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.verktygslåda",
@@ -96,14 +124,42 @@
        "ja": "ハンマーを{取|と}ってください。"
       }
      ],
+     "labelSv": "verktyg",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.hammare.2",
+     "ja": "つち{骨|こつ}（{耳|みみ}の{骨|ほね}）",
+     "defSv": "Ett av de tre små benen i örat som för ljudet vidare.",
+     "defJa": "{耳|みみ}の{中|なか}にある{三|みっ}つの{小|ちい}さな{骨|ほね}の{一|ひと}つで、{音|おと}を{伝|つた}える。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hammaren är ett litet ben i örat.",
+       "ja": "つち{骨|こつ}は{耳|みみ}の{中|なか}の{小|ちい}さな{骨|ほね}です。"
+      }
+     ],
+     "labelSv": "i örat",
+     "tags": [
+      "kroppen",
+      "hörsel"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.spik",
@@ -248,7 +304,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.borr",
@@ -276,14 +336,47 @@
        "ja": "ドリルの{音|おと}が{大|おお}きいです。"
       }
      ],
+     "labelSv": "maskin",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.borr.2",
+     "ja": "ドリルの{刃|は}",
+     "defSv": "Den vridna staven av metall med spets som man sätter i en borrmaskin och som gör hålet.",
+     "defJa": "{電動|でんどう}ドリルに{取|と}り{付|つ}けて{穴|あな}をあける、ねじれた{金属|きんぞく}の{棒|ぼう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Använd en borr på 6 millimeter till pluggen.",
+       "ja": "そのアンカーには6ミリのドリルの{刃|は}を{使|つか}ってください。"
+      }
+     ],
+     "labelSv": "i maskinen",
+     "usageNote": {
+      "sv": "Det finns olika borrar för trä, metall och sten.",
+      "ja": "{木|き}{用|よう}、{金属|きんぞく}{用|よう}、{石|いし}{用|よう}など、いろいろなドリルの{刃|は}があります。"
+     },
+     "tags": [
+      "verktyg",
+      "verkstad",
+      "trä"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.borra",
@@ -323,7 +416,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.plugg",
@@ -358,8 +455,39 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.plugg.2",
+     "ja": "{勉強|べんきょう}、{学校|がっこう}（くだけた{言|い}い{方|かた}）",
+     "defSv": "Vardagligt ord för skolarbete eller för skolan.",
+     "defJa": "{勉強|べんきょう}や{学校|がっこう}のことを{言|い}うくだけた{言葉|ことば}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det blir mycket plugg inför provet.",
+       "ja": "テストの{前|まえ}は{勉強|べんきょう}が{多|おお}くなります。"
+      },
+      {
+       "sv": "Hur går det i plugget?",
+       "ja": "{学校|がっこう}の{調子|ちょうし}はどう？"
+      }
+     ],
+     "labelSv": "studier",
+     "register": "informal",
+     "tags": [
+      "skola"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.lim",
