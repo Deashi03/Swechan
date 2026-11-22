@@ -1,0 +1,180 @@
+{
+ "id": "m.kvalitetskontroll",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Kvalitetskontroll",
+ "titleJa": "{品質|ひんしつ}{検査|けんさ}",
+ "descriptionSv": "Hur företag ser till att varor håller rätt kvalitet: hur man kontrollerar och inspekterar delar, vad som händer med defekta varor, varför standarder, certifiering och spårbarhet behövs och hur en vara återkallas när något har gått fel.",
+ "descriptionJa": "{企業|きぎょう}が{商品|しょうひん}の{品質|ひんしつ}を{守|まも}るしくみ：{部品|ぶひん}の{確認|かくにん}と{検査|けんさ}、{不良品|ふりょうひん}の{扱|あつか}い、{規格|きかく}・{認証|にんしょう}・トレーサビリティが{必要|ひつよう}な{理由|りゆう}、そして{問題|もんだい}が{起|お}きたときのリコールについて{学|まな}びます。",
+ "categoryId": "R07-A04-T04",
+ "tags": [
+  "teknik",
+  "tillverkning",
+  "kvalitet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.montering"
+ ],
+ "related": [],
+ "recommendedOrder": 4047,
+ "words": [
+  {
+   "senseId": "s.kvalitetskontroll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inspektera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stickprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.checklista.1",
+   "active": false
+  },
+  {
+   "senseId": "s.defekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spricka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.felfri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvikelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kassera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.godkänd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underkänd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kvalitetssäkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.standard.2",
+   "active": true
+  },
+  {
+   "senseId": "s.certifiering.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårbarhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återkalla.3",
+   "active": true
+  },
+  {
+   "senseId": "s.reklamation.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "När något är fel",
+  "paragraphs": [
+   "Sofia arbetar med kvalitetskontroll på en fabrik som tillverkar delar till bromsar. Varje morgon tar hon stickprov: hon plockar ut tjugo delar från det löpande bandet och kontrollerar dem enligt en checklista.",
+   "Hon mäter delarna och inspekterar ytan noga. En dag hittar hon en del med en liten spricka. – Den är defekt, säger hon. Vi måste kassera delen. Alla andra delar är felfria, men Sofia skriver ändå en rapport om avvikelsen.",
+   "Delar som är godkända får en grön lapp. En underkänd del får aldrig lämna fabriken. – Det är bättre att hitta felen här än att kunderna hittar dem, säger hennes chef. Men det bästa är god kvalitetssäkring, så att felen inte uppstår alls.",
+   "Fabriken följer en internationell standard och har en certifiering som kontrolleras varje år. Varje parti får ett nummer, så att man kan se när och var delarna tillverkades. Den spårbarheten är viktig.",
+   "För några år sedan hade en biltillverkare problem med bromsar från en annan fabrik. Tack vare numret på varje parti kunde man se exakt vilka bilar som hade fått de defekta delarna. Företaget återkallade bara de bilarna, och kunderna behövde inte göra någon reklamation själva."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tillverkar fabriken där Sofia arbetar?",
+    "options": [
+     "Leksaker",
+     "Delar till bromsar",
+     "Möbler",
+     "Telefoner"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Sofia arbetar med kvalitetskontroll på en fabrik som tillverkar delar till bromsar.",
+    "explanationJa": "ブレーキの{部品|ぶひん}を{作|つく}っている{工場|こうじょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad hittar Sofia på en av delarna?",
+    "options": [
+     "En liten spricka",
+     "En fläck",
+     "Ett fel nummer",
+     "En skruv som fattas"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En dag hittar hon en del med en liten spricka.",
+    "explanationJa": "{部品|ぶひん}のひとつに{小|ちい}さなひびを{見|み}つけました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad är det bästa enligt chefen?",
+    "options": [
+     "God kvalitetssäkring, så att felen inte uppstår",
+     "Att kunderna hittar felen",
+     "Att kontrollera fler delar",
+     "Att tillverka snabbare"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Men det bästa är god kvalitetssäkring, så att felen inte uppstår alls.",
+    "explanationJa": "{欠陥|けっかん}がそもそも{起|お}きないようにする{品質|ひんしつ}{保証|ほしょう}がいちばんだと{言|い}っています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Varje parti får ett nummer.",
+    "correct": true,
+    "explanationSv": "Varje parti får ett nummer, så att man kan se när och var delarna tillverkades.",
+    "explanationJa": "どのロットにも{番号|ばんごう}が{付|つ}けられます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Biltillverkaren återkallade alla sina bilar.",
+    "correct": false,
+    "explanationSv": "Företaget återkallade bara de bilarna …",
+    "explanationJa": "{欠陥|けっかん}のある{部品|ぶひん}が{使|つか}われた{車|くるま}だけをリコールしました。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om kvalitet, fel och reklamationer.",
+  "discussionPoints": [
+   "Har du köpt en vara som var defekt? Vad gjorde du?",
+   "Har du hört om ett företag som återkallade en produkt?",
+   "Varför tror du att spårbarhet är viktigt för mat?",
+   "I vilka yrken är kvalitetskontroll särskilt viktig?"
+  ]
+ },
+ "standard": 2
+}

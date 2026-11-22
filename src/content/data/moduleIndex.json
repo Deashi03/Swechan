@@ -1905,7 +1905,7 @@
   },
   {
    "id": "m.steka-och-bryna",
-   "contentVersion": 7,
+   "contentVersion": 8,
    "updatedAt": "2026-11-22",
    "titleSv": "Steka och bryna",
    "titleJa": "{焼|や}く・{焼|や}き{色|いろ}をつける",
@@ -50775,8 +50775,8 @@
   },
   {
    "id": "m.ansokan-och-tillstand",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-22",
    "titleSv": "Ansökan och tillstånd",
    "titleJa": "{申請|しんせい}と{許可|きょか}",
    "descriptionSv": "Ansökan och tillstånd: ansökan, ansöka, sökande, blankett, fylla i, bifoga, bilaga, intyg, komplettera, komplettering, ansökningsavgift, tillstånd, tillståndspliktig, bevilja, villkor, giltig, giltighetstid, förlänga, återkalla och dispens.",
@@ -56919,8 +56919,8 @@
   },
   {
    "id": "m.repetition-och-aterkallning",
-   "contentVersion": 1,
-   "updatedAt": "2026-11-12",
+   "contentVersion": 2,
+   "updatedAt": "2026-11-22",
    "titleSv": "Repetition och återkallning",
    "titleJa": "{復習|ふくしゅう}と{想起|そうき}",
    "descriptionSv": "Repetition och återkallning: repetera, repetition, glömma bort, glömskekurva, gå igenom, med jämna mellanrum, om och om igen, testa sig själv, återkalla, instuderingsfråga, facit, sitta i ryggmärgen, glosa, förhöra, kunskapslucka, nöta in och fräscha upp.",
@@ -148673,6 +148673,649 @@
    ],
    "standard": 2,
    "bodyFile": "materialprovning.json"
+  },
+  {
+   "id": "m.gjutning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Gjutning",
+   "titleJa": "{鋳造|ちゅうぞう}",
+   "descriptionSv": "Hur man formar metall genom att gjuta den: vad som händer i ett gjuteri från smältugnen till den färdiga delen, hur man beskriver att metall smälter, hälls i en form och stelnar, och vilka gjutna föremål man möter i vardagen.",
+   "descriptionJa": "{金属|きんぞく}を{鋳造|ちゅうぞう}して{形|かたち}を{作|つく}る{方法|ほうほう}：{溶解炉|ようかいろ}から{完成品|かんせいひん}までの{鋳造所|ちゅうぞうじょ}の{作業|さぎょう}、{金属|きんぞく}が{溶|と}けて{型|かた}に{流|なが}し{込|こ}まれ、{固|かた}まるまでの{言|い}い{方|かた}、そして{日常|にちじょう}で{目|め}にする{鋳造品|ちゅうぞうひん}について{学|まな}びます。",
+   "categoryId": "R07-A04-T04",
+   "tags": [
+    "teknik",
+    "tillverkning",
+    "metall"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.materialprovning"
+   ],
+   "related": [],
+   "recommendedOrder": 4041,
+   "words": [
+    {
+     "senseId": "s.gjutning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gjuta.2",
+     "active": true
+    },
+    {
+     "senseId": "s.gjuteri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.degel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smältugn.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skrot.1",
+     "active": false
+    },
+    {
+     "senseId": "s.smälta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smältpunkt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.flytande.1",
+     "active": false
+    },
+    {
+     "senseId": "s.slagg.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hälla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gjutform.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stelna.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gjutjärn.1",
+     "active": true
+    },
+    {
+     "senseId": "s.brons.1",
+     "active": false
+    },
+    {
+     "senseId": "s.staty.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "gjutning.json"
+  },
+  {
+   "id": "m.smidning-och-valsning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Smidning och valsning",
+   "titleJa": "{鍛造|たんぞう}と{圧延|あつえん}",
+   "descriptionSv": "Hur fast metall formas när den är varm: hur en smed arbetar vid ässjan och städet, hur ett stålverk valsar göt till plåt och balkar, och hur man talar om skillnaden mellan hantverk och industri.",
+   "descriptionJa": "{熱|あつ}くした{固体|こたい}の{金属|きんぞく}の{形|かたち}を{変|か}える{方法|ほうほう}：{火床|ほど}と{金床|かなとこ}での{鍛冶屋|かじや}の{仕事|しごと}、{製鋼所|せいこうじょ}でインゴットを{板|いた}や{梁|はり}に{圧延|あつえん}するしくみ、そして{手仕事|てしごと}と{工業|こうぎょう}の{違|ちが}いの{話|はな}し{方|かた}を{学|まな}びます。",
+   "categoryId": "R07-A04-T04",
+   "tags": [
+    "teknik",
+    "tillverkning",
+    "metall"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.gjutning"
+   ],
+   "related": [],
+   "recommendedOrder": 4042,
+   "words": [
+    {
+     "senseId": "s.smida.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smidning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smed.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smedja.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ässja.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stång.1",
+     "active": true
+    },
+    {
+     "senseId": "s.glödhet.1",
+     "active": false
+    },
+    {
+     "senseId": "s.städ.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hammare.1",
+     "active": false
+    },
+    {
+     "senseId": "s.press.3",
+     "active": false
+    },
+    {
+     "senseId": "s.formbar.1",
+     "active": false
+    },
+    {
+     "senseId": "s.smidesjärn.1",
+     "active": true
+    },
+    {
+     "senseId": "s.valsa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.göt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.plåt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.valsverk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.balk.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "smidning-och-valsning.json"
+  },
+  {
+   "id": "m.frasning-och-svarvning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Fräsning och svarvning",
+   "titleJa": "フライス{加工|かこう}と{旋盤|せんばん}{加工|かこう}",
+   "descriptionSv": "Hur man formar metall genom att skära bort material: skillnaden mellan att fräsa och att svarva, vad som händer vid en CNC-maskin och vilka ord man behöver på en yrkesutbildning eller i en verkstad där säkerhet och precision är viktiga.",
+   "descriptionJa": "{材料|ざいりょう}を{削|けず}り{取|と}って{金属|きんぞく}の{形|かたち}を{作|つく}る{方法|ほうほう}：フライス{加工|かこう}と{旋盤|せんばん}{加工|かこう}の{違|ちが}い、CNCマシンでの{作業|さぎょう}、そして{安全|あんぜん}と{精度|せいど}が{大切|たいせつ}な{職業|しょくぎょう}{訓練|くんれん}や{工房|こうぼう}で{必要|ひつよう}な{言葉|ことば}を{学|まな}びます。",
+   "categoryId": "R07-A04-T04",
+   "tags": [
+    "teknik",
+    "tillverkning",
+    "verkstad"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.smidning-och-valsning"
+   ],
+   "related": [],
+   "recommendedOrder": 4043,
+   "words": [
+    {
+     "senseId": "s.industritekniker.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slöjd.1",
+     "active": false
+    },
+    {
+     "senseId": "s.verkstad.1",
+     "active": false
+    },
+    {
+     "senseId": "s.manuell.1",
+     "active": false
+    },
+    {
+     "senseId": "s.CNC-maskin.1",
+     "active": true
+    },
+    {
+     "senseId": "s.arbetsstycke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.svarva.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skärverktyg.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spån.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fräsa.2",
+     "active": true
+    },
+    {
+     "senseId": "s.varvtal.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skärvätska.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skyddsglasögon.1",
+     "active": false
+    },
+    {
+     "senseId": "s.programmera.1",
+     "active": false
+    },
+    {
+     "senseId": "s.precision.1",
+     "active": true
+    },
+    {
+     "senseId": "s.operatör.2",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "frasning-och-svarvning.json"
+  },
+  {
+   "id": "m.formsprutning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Formsprutning",
+   "titleJa": "{射出成形|しゃしゅつせいけい}",
+   "descriptionSv": "Hur plastsaker tillverkas: hur granulat smälts och trycks in i en form, varför formen måste göras med stor precision, hur en kort cykeltid gör massproduktion möjlig och hur man diskuterar plast, engångsartiklar och återvinning.",
+   "descriptionJa": "プラスチック{製品|せいひん}の{作|つく}り{方|かた}：ペレットを{溶|と}かして{型|かた}に{押|お}しこむしくみ、{型|かた}に{高|たか}い{精度|せいど}が{必要|ひつよう}な{理由|りゆう}、{短|みじか}いサイクルタイムで{大量生産|たいりょうせいさん}ができること、そしてプラスチック、{使|つか}い{捨|す}て{用品|ようひん}、リサイクルについての{話|はな}し{方|かた}を{学|まな}びます。",
+   "categoryId": "R07-A04-T04",
+   "tags": [
+    "teknik",
+    "tillverkning",
+    "plast"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.frasning-och-svarvning"
+   ],
+   "related": [],
+   "recommendedOrder": 4044,
+   "words": [
+    {
+     "senseId": "s.verktygsmakare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.plast.1",
+     "active": true
+    },
+    {
+     "senseId": "s.granulat.1",
+     "active": true
+    },
+    {
+     "senseId": "s.formsprutning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.munstycke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tryck.2",
+     "active": false
+    },
+    {
+     "senseId": "s.hålrum.1",
+     "active": true
+    },
+    {
+     "senseId": "s.krympa.1",
+     "active": false
+    },
+    {
+     "senseId": "s.lock.1",
+     "active": false
+    },
+    {
+     "senseId": "s.cykeltid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.massproducera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.massproduktion.1",
+     "active": false
+    },
+    {
+     "senseId": "s.byggkloss.1",
+     "active": true
+    },
+    {
+     "senseId": "s.engångsartikel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.termoplast.1",
+     "active": false
+    },
+    {
+     "senseId": "s.härdplast.1",
+     "active": false
+    },
+    {
+     "senseId": "s.återvinna.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "formsprutning.json"
+  },
+  {
+   "id": "m.3d-utskrift",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "3D-utskrift",
+   "titleJa": "3Dプリント",
+   "descriptionSv": "Hur en 3D-skrivare fungerar och hur man använder den i vardagen, till exempel på biblioteket: hur ett föremål byggs lager för lager, vad som kan gå fel och hur additiv tillverkning skiljer sig från att fräsa eller gjuta.",
+   "descriptionJa": "3Dプリンターのしくみと、{図書館|としょかん}などでの{日常|にちじょう}の{使|つか}い{方|かた}：{物|もの}が{一層|いっそう}ずつ{作|つく}られる{様子|ようす}、{失敗|しっぱい}しやすい{点|てん}、そして{積層造形|せきそうぞうけい}がフライス{加工|かこう}や{鋳造|ちゅうぞう}とどう{違|ちが}うかを{学|まな}びます。",
+   "categoryId": "R07-A04-T04",
+   "tags": [
+    "teknik",
+    "tillverkning",
+    "3d-utskrift"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.formsprutning"
+   ],
+   "related": [],
+   "recommendedOrder": 4045,
+   "words": [
+    {
+     "senseId": "s.3D-skrivare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bibliotek.1",
+     "active": false
+    },
+    {
+     "senseId": "s.reservdel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ladda-ner.1",
+     "active": false
+    },
+    {
+     "senseId": "s.fil.2",
+     "active": false
+    },
+    {
+     "senseId": "s.filament.1",
+     "active": true
+    },
+    {
+     "senseId": "s.munstycke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smälta.1",
+     "active": false
+    },
+    {
+     "senseId": "s.byggplatta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lager-förråd.2",
+     "active": true
+    },
+    {
+     "senseId": "s.stödmaterial.1",
+     "active": true
+    },
+    {
+     "senseId": "s.3D-utskrift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.misslyckas.1",
+     "active": false
+    },
+    {
+     "senseId": "s.additiv-tillverkning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prototyp.1",
+     "active": false
+    },
+    {
+     "senseId": "s.skräddarsy.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "3d-utskrift.json"
+  },
+  {
+   "id": "m.montering",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Montering",
+   "titleJa": "{組|く}み{立|た}て",
+   "descriptionSv": "Hur saker sätts ihop, både i fabriken och hemma: hur montörer arbetar vid ett löpande band, hur man följer en monteringsanvisning till en möbel i platt paket och hur man berättar om det som går fel på vägen.",
+   "descriptionJa": "{工場|こうじょう}でも{家|いえ}でも{行|おこな}う{組|く}み{立|た}ての{話|はな}し{方|かた}：ラインで{働|はたら}く{組立工|くみたてこう}の{仕事|しごと}、フラットパックの{家具|かぐ}を{説明書|せつめいしょ}どおりに{組|く}み{立|た}てる{方法|ほうほう}、そして{途中|とちゅう}でうまくいかなかったことの{伝|つた}え{方|かた}を{学|まな}びます。",
+   "categoryId": "R07-A04-T04",
+   "tags": [
+    "teknik",
+    "tillverkning",
+    "montering"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.3d-utskrift"
+   ],
+   "related": [],
+   "recommendedOrder": 4046,
+   "words": [
+    {
+     "senseId": "s.montera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.montering.1",
+     "active": true
+    },
+    {
+     "senseId": "s.montör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.löpande-band.1",
+     "active": false
+    },
+    {
+     "senseId": "s.komponent.2",
+     "active": true
+    },
+    {
+     "senseId": "s.nita.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nit.1",
+     "active": false
+    },
+    {
+     "senseId": "s.limma.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sätta-ihop.1",
+     "active": true
+    },
+    {
+     "senseId": "s.platt-paket.1",
+     "active": true
+    },
+    {
+     "senseId": "s.monteringsanvisning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.byggsats.1",
+     "active": false
+    },
+    {
+     "senseId": "s.insexnyckel.1",
+     "active": false
+    },
+    {
+     "senseId": "s.dra-åt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fattas.1",
+     "active": false
+    },
+    {
+     "senseId": "s.plocka-isär.1",
+     "active": true
+    },
+    {
+     "senseId": "s.färdigmonterad.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "montering.json"
+  },
+  {
+   "id": "m.kvalitetskontroll",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Kvalitetskontroll",
+   "titleJa": "{品質|ひんしつ}{検査|けんさ}",
+   "descriptionSv": "Hur företag ser till att varor håller rätt kvalitet: hur man kontrollerar och inspekterar delar, vad som händer med defekta varor, varför standarder, certifiering och spårbarhet behövs och hur en vara återkallas när något har gått fel.",
+   "descriptionJa": "{企業|きぎょう}が{商品|しょうひん}の{品質|ひんしつ}を{守|まも}るしくみ：{部品|ぶひん}の{確認|かくにん}と{検査|けんさ}、{不良品|ふりょうひん}の{扱|あつか}い、{規格|きかく}・{認証|にんしょう}・トレーサビリティが{必要|ひつよう}な{理由|りゆう}、そして{問題|もんだい}が{起|お}きたときのリコールについて{学|まな}びます。",
+   "categoryId": "R07-A04-T04",
+   "tags": [
+    "teknik",
+    "tillverkning",
+    "kvalitet"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.montering"
+   ],
+   "related": [],
+   "recommendedOrder": 4047,
+   "words": [
+    {
+     "senseId": "s.kvalitetskontroll.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kontrollera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.inspektera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stickprov.1",
+     "active": true
+    },
+    {
+     "senseId": "s.checklista.1",
+     "active": false
+    },
+    {
+     "senseId": "s.defekt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spricka.1",
+     "active": false
+    },
+    {
+     "senseId": "s.felfri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avvikelse.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kassera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.godkänd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.underkänd.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kvalitetssäkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.standard.2",
+     "active": true
+    },
+    {
+     "senseId": "s.certifiering.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spårbarhet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.återkalla.3",
+     "active": true
+    },
+    {
+     "senseId": "s.reklamation.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "kvalitetskontroll.json"
   }
  ]
 }
