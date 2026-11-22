@@ -20593,8 +20593,8 @@
   },
   {
    "id": "m.byten-och-anslutningar",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-17",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-22",
    "titleSv": "Byten och anslutningar",
    "titleJa": "{乗|の}り{換|か}えと{接続|せつぞく}",
    "descriptionSv": "Byten och anslutningar: lokaltåg, regionaltåg, snabbtåg, fjärrtåg, direkttåg, byta tåg, anslutning, anslutningståg, missa anslutningen, invänta, göra uppehåll, delsträcka, resplan, reseplanerare och nästa avgång.",
@@ -22588,7 +22588,7 @@
   },
   {
    "id": "m.skador-i-rorelseapparaten",
-   "contentVersion": 2,
+   "contentVersion": 3,
    "updatedAt": "2026-11-22",
    "titleSv": "Skador i rörelseapparaten",
    "titleJa": "{運動器|うんどうき}のけが",
@@ -35041,8 +35041,8 @@
   },
   {
    "id": "m.jubileum-och-firanden",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-22",
    "titleSv": "Jubileum och firanden",
    "titleJa": "{記念祭|きねんさい}とお{祝|いわ}い",
    "descriptionSv": "Jubileum och firanden: jubileum, jubilar, bemärkelsedag, fylla jämnt, uppvakta, årsdag, silverbröllop, guldbröllop, överraskningsfest, festklädd, allsång, bildspel, skåla, hylla, hyllning, insamling, lyckönskan och avtackning.",
@@ -62765,8 +62765,8 @@
   },
   {
    "id": "m.insamlingar-och-donationer",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-21",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-22",
    "titleSv": "Insamlingar och donationer",
    "titleJa": "{募金|ぼきん}と{寄付|きふ}",
    "descriptionSv": "Insamlingar och donationer: insamling, donera, donation, gåva, skänka, givare, månadsgivare, insamlingsbössa, välgörenhet, välgörenhetsorganisation, skattereduktion, bidra, bistånd, katastrofhjälp, pant och testamentera.",
@@ -69390,7 +69390,7 @@
   },
   {
    "id": "m.upplysningen",
-   "contentVersion": 4,
+   "contentVersion": 5,
    "updatedAt": "2026-11-22",
    "titleSv": "Upplysningen",
    "titleJa": "{啓蒙|けいもう}{思想|しそう}",
@@ -77987,7 +77987,7 @@
   },
   {
    "id": "m.upplysningens-tankande",
-   "contentVersion": 5,
+   "contentVersion": 6,
    "updatedAt": "2026-11-22",
    "titleSv": "Upplysningens tänkande",
    "titleJa": "{啓蒙|けいもう}{思想|しそう}の{考|かんが}え{方|かた}",
@@ -153821,6 +153821,677 @@
    ],
    "standard": 2,
    "bodyFile": "trafikledning.json"
+  },
+  {
+   "id": "m.gatubelysning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Gatubelysning",
+   "titleJa": "{街路照明|がいろしょうめい}",
+   "descriptionSv": "Du lär dig att prata om belysningen på gator och vägar: hur lamporna tänds och släcks, vad du gör när en lampa har slocknat och varför ny belysning kan göra ett område både tryggare och mörkare mot himlen.",
+   "descriptionJa": "{通|とお}りや{道路|どうろ}の{照明|しょうめい}について{話|はな}せるようになります。{明|あか}かりがどのようにつき、{消|き}えるのか、{街灯|がいとう}が{消|き}えたときにどうすればよいか、そして{新|あたら}しい{照明|しょうめい}がなぜ{地域|ちいき}をより{安全|あんぜん}にし、{同時|どうじ}に{夜空|よぞら}を{暗|くら}く{保|たも}てるのかを{学|まな}びます。",
+   "categoryId": "R07-A05-T06",
+   "tags": [
+    "stad",
+    "teknik",
+    "belysning"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.trafikledning"
+   ],
+   "related": [],
+   "recommendedOrder": 4161,
+   "words": [
+    {
+     "senseId": "s.gatubelysning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lyktstolpe.1",
+     "active": true
+    },
+    {
+     "senseId": "s.armatur.1",
+     "active": true
+    },
+    {
+     "senseId": "s.LED-lampa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tända.1",
+     "active": true
+    },
+    {
+     "senseId": "s.släcka.2",
+     "active": true
+    },
+    {
+     "senseId": "s.slockna.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skymning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fotocell.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ljuskägla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.upplyst.2",
+     "active": true
+    },
+    {
+     "senseId": "s.ljusstyrka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.blända.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ljusförorening.1",
+     "active": false
+    },
+    {
+     "senseId": "s.energisnål.1",
+     "active": true
+    },
+    {
+     "senseId": "s.felanmäla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trygghetsvandring.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "gatubelysning.json"
+  },
+  {
+   "id": "m.fibernat",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Fibernät",
+   "titleJa": "{光|ひかり}ファイバー{網|もう}",
+   "descriptionSv": "Du lär dig att prata om fiber till huset: hur ett fibernät byggs och betalas, vad som händer på din egen tomt och inne i huset när fibern kopplas in och hur du sedan väljer internetleverantör.",
+   "descriptionJa": "{家|いえ}に{光回線|ひかりかいせん}を{引|ひ}くことについて{話|はな}せるようになります。{光|ひかり}ファイバー{網|もう}がどのように{作|つく}られ、{費用|ひよう}がどう{払|はら}われるのか、{光回線|ひかりかいせん}をつなぐときに{自分|じぶん}の{敷地|しきち}や{家|いえ}の{中|なか}で{何|なに}が{起|お}こるのか、そしてそのあとインターネット{業者|ぎょうしゃ}をどう{選|えら}ぶのかを{学|まな}びます。",
+   "categoryId": "R07-A05-T06",
+   "tags": [
+    "teknik",
+    "internet",
+    "boende"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.gatubelysning"
+   ],
+   "related": [],
+   "recommendedOrder": 4162,
+   "words": [
+    {
+     "senseId": "s.fibernät.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fiber.2",
+     "active": true
+    },
+    {
+     "senseId": "s.fiberkabel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bredband.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kopparnät.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avveckla.1",
+     "active": false
+    },
+    {
+     "senseId": "s.fiberförening.1",
+     "active": true
+    },
+    {
+     "senseId": "s.anslutningsavgift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tomtgräns.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gräva-ner.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skyddsrör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.blåsa-in.2",
+     "active": true
+    },
+    {
+     "senseId": "s.mediaomvandlare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.anslutning.2",
+     "active": true
+    },
+    {
+     "senseId": "s.ansluta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.router.1",
+     "active": true
+    },
+    {
+     "senseId": "s.internetleverantör.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bindningstid.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "fibernat.json"
+  },
+  {
+   "id": "m.fjarrvarmenat",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Fjärrvärmenät",
+   "titleJa": "{地域暖房|ちいきだんぼう}{網|もう}",
+   "descriptionSv": "Du lär dig hur fjärrvärmen kommer från värmeverket till elementen hemma: hur vattnet går ut och tillbaka i rören under gatan, vad som finns i källaren och vad som händer när en ledning läcker.",
+   "descriptionJa": "{地域暖房|ちいきだんぼう}の{熱|ねつ}が、{熱供給|ねつきょうきゅう}プラントから{家|いえ}のラジエーターまでどのように{届|とど}くのかを{学|まな}びます。{道路|どうろ}の{下|した}の{管|くだ}をお{湯|ゆ}がどう{行|い}き{来|き}するのか、{地下室|ちかしつ}に{何|なに}があるのか、{管|くだ}が{漏|も}れたときに{何|なに}が{起|お}こるのかがわかるようになります。",
+   "categoryId": "R07-A05-T06",
+   "tags": [
+    "teknik",
+    "energi",
+    "stad"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.fibernat"
+   ],
+   "related": [],
+   "recommendedOrder": 4163,
+   "words": [
+    {
+     "senseId": "s.fjärrvärmenät.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fjärrvärme.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värmeverk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kraftvärmeverk.1",
+     "active": false
+    },
+    {
+     "senseId": "s.flis.1",
+     "active": false
+    },
+    {
+     "senseId": "s.hetvatten.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pumpa-verb.1",
+     "active": true
+    },
+    {
+     "senseId": "s.framledning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.returledning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.svalna.1",
+     "active": true
+    },
+    {
+     "senseId": "s.cirkulera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kulvert.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värmeförlust.1",
+     "active": false
+    },
+    {
+     "senseId": "s.läcka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.driftstörning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.element.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fjärrvärmecentral.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värmeväxlare.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "fjarrvarmenat.json"
+  },
+  {
+   "id": "m.avfallshantering",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Avfallshantering",
+   "titleJa": "{廃棄物処理|はいきぶつしょり}",
+   "descriptionSv": "Du lär dig hur avfallet från ett hushåll tas om hand: olika sätt att samla in sopor i villor, hyreshus och nya stadsdelar, vad som händer med avfallet efteråt och varför det är bäst om saker kan användas igen.",
+   "descriptionJa": "{家庭|かてい}から{出|で}たごみがどのように{処理|しょり}されるかを{学|まな}びます。{一戸建|いっこだ}て、{賃貸住宅|ちんたいじゅうたく}、{新|あたら}しい{地区|ちく}でのごみの{集|あつ}め{方|かた}の{違|ちが}い、そのあとごみがどうなるのか、そして{物|もの}をもう{一度|いちど}{使|つか}うことがなぜいちばんよいのかがわかるようになります。",
+   "categoryId": "R07-A05-T06",
+   "tags": [
+    "avfall",
+    "miljö",
+    "stad"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.fjarrvarmenat"
+   ],
+   "related": [],
+   "recommendedOrder": 4164,
+   "words": [
+    {
+     "senseId": "s.avfallshantering.1",
+     "active": true
+    },
+    {
+     "senseId": "s.renhållning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.sophämtning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fyrfackskärl.1",
+     "active": true
+    },
+    {
+     "senseId": "s.matavfall.1",
+     "active": true
+    },
+    {
+     "senseId": "s.insamling.2",
+     "active": true
+    },
+    {
+     "senseId": "s.tömma.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sopnedkast.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sopsug.1",
+     "active": true
+    },
+    {
+     "senseId": "s.underjordsbehållare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avfallsförbränning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energiåtervinning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.materialåtervinning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.deponi.1",
+     "active": false
+    },
+    {
+     "senseId": "s.återbruk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.farligt-avfall.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avfallstrappa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kretslopp.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "avfallshantering.json"
+  },
+  {
+   "id": "m.dagvattensystem",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Dagvattensystem",
+   "titleJa": "{雨水排水|うすいはいすい}システム",
+   "descriptionSv": "Du lär dig hur en stad tar hand om regnvatten: varför asfalt och gamla ledningar ger problem vid kraftiga regn och hur diken, dammar och gröna ytor kan hålla kvar och rena vattnet.",
+   "descriptionJa": "{町|まち}が{雨水|あまみず}をどのように{処理|しょり}しているかを{学|まな}びます。アスファルトや{古|ふる}い{管|くだ}がなぜ{強|つよ}い{雨|あめ}のときに{問題|もんだい}になるのか、そして{溝|みぞ}や{池|いけ}、{緑地|りょくち}がどのように{水|みず}をとどめてきれいにできるのかがわかるようになります。",
+   "categoryId": "R07-A05-T06",
+   "tags": [
+    "vatten",
+    "stad",
+    "klimat"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.avfallshantering"
+   ],
+   "related": [],
+   "recommendedOrder": 4165,
+   "words": [
+    {
+     "senseId": "s.dagvattensystem.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dagvatten.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hårdgjord.1",
+     "active": true
+    },
+    {
+     "senseId": "s.genomsläpplig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.infiltrera.2",
+     "active": true
+    },
+    {
+     "senseId": "s.ledningsnät.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dimensionera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kapacitet.1",
+     "active": false
+    },
+    {
+     "senseId": "s.brädda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.grönt-tak.1",
+     "active": false
+    },
+    {
+     "senseId": "s.regnbädd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.svackdike.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dagvattendamm.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fördröjningsmagasin.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fördröja.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rena.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "dagvattensystem.json"
+  },
+  {
+   "id": "m.oversvamningsskydd",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Översvämningsskydd",
+   "titleJa": "{洪水対策|こうずいたいさく}",
+   "descriptionSv": "Du lär dig att prata om hur städer och husägare skyddar sig mot översvämningar: hur du tar reda på om ett hus ligger i farozonen, vilka skydd som används vid stormflod och skyfall och vad man själv kan göra i källaren.",
+   "descriptionJa": "{町|まち}や{家|いえ}の{持|も}ち{主|ぬし}が{洪水|こうずい}からどのように{身|み}を{守|まも}るかについて{話|はな}せるようになります。{家|いえ}が{危険|きけん}な{場所|ばしょ}にあるかどうかの{調|しら}べ{方|かた}、{高潮|たかしお}や{集中豪雨|しゅうちゅうごうう}のときに{使|つか}われる{対策|たいさく}、そして{地下室|ちかしつ}で{自分|じぶん}でできることを{学|まな}びます。",
+   "categoryId": "R07-A05-T06",
+   "tags": [
+    "vatten",
+    "klimat",
+    "boende"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.dagvattensystem"
+   ],
+   "related": [],
+   "recommendedOrder": 4166,
+   "words": [
+    {
+     "senseId": "s.översvämningsskydd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.översvämning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skyfall.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hundraårsregn.1",
+     "active": true
+    },
+    {
+     "senseId": "s.låglänt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vattennivå.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stormflod.1",
+     "active": true
+    },
+    {
+     "senseId": "s.havsnivåhöjning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.klimatanpassning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.skyfallskarta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.riskområde.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vall.1",
+     "active": true
+    },
+    {
+     "senseId": "s.översvämningsbarriär.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dämma-upp.1",
+     "active": false
+    },
+    {
+     "senseId": "s.sandsäck.1",
+     "active": true
+    },
+    {
+     "senseId": "s.evakuera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vattenskada.1",
+     "active": true
+    },
+    {
+     "senseId": "s.backventil.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "oversvamningsskydd.json"
+  },
+  {
+   "id": "m.infrastrukturplanering",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Infrastrukturplanering",
+   "titleJa": "インフラ{計画|けいかく}",
+   "descriptionSv": "Du lär dig att följa nyheter och debatter om stora infrastrukturprojekt: hur en ny järnväg utreds, räknas på och planeras, var allmänheten kan tycka till och varför projekten ofta blir dyrare och tar längre tid än tänkt.",
+   "descriptionJa": "{大規模|だいきぼ}なインフラ{事業|じぎょう}についてのニュースや{議論|ぎろん}が{理解|りかい}できるようになります。{新|あたら}しい{鉄道|てつどう}がどのように{調査|ちょうさ}され、{試算|しさん}され、{計画|けいかく}されるのか、{市民|しみん}がどこで{意見|いけん}を{言|い}えるのか、そしてなぜ{事業|じぎょう}が{予定|よてい}より{高|たか}くなり、{時間|じかん}もかかることが{多|おお}いのかを{学|まな}びます。",
+   "categoryId": "R07-A05-T06",
+   "tags": [
+    "infrastruktur",
+    "planering",
+    "samhälle"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.oversvamningsskydd"
+   ],
+   "related": [],
+   "recommendedOrder": 4167,
+   "words": [
+    {
+     "senseId": "s.infrastruktur.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stambana.1",
+     "active": true
+    },
+    {
+     "senseId": "s.höghastighetståg.1",
+     "active": false
+    },
+    {
+     "senseId": "s.flaskhals.1",
+     "active": true
+    },
+    {
+     "senseId": "s.underhållsskuld.1",
+     "active": true
+    },
+    {
+     "senseId": "s.restid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utredning.2",
+     "active": true
+    },
+    {
+     "senseId": "s.samhällsekonomisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kalkyl.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lönsam.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kostnadsökning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prioritera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sträckning.2",
+     "active": true
+    },
+    {
+     "senseId": "s.samråd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.remiss.2",
+     "active": false
+    },
+    {
+     "senseId": "s.överklaga.1",
+     "active": true
+    },
+    {
+     "senseId": "s.finansiera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.byggstart.1",
+     "active": true
+    },
+    {
+     "senseId": "s.investering.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "infrastrukturplanering.json"
   }
  ]
 }

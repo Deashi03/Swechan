@@ -1,0 +1,194 @@
+{
+ "id": "m.fjarrvarmenat",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Fjärrvärmenät",
+ "titleJa": "{地域暖房|ちいきだんぼう}{網|もう}",
+ "descriptionSv": "Du lär dig hur fjärrvärmen kommer från värmeverket till elementen hemma: hur vattnet går ut och tillbaka i rören under gatan, vad som finns i källaren och vad som händer när en ledning läcker.",
+ "descriptionJa": "{地域暖房|ちいきだんぼう}の{熱|ねつ}が、{熱供給|ねつきょうきゅう}プラントから{家|いえ}のラジエーターまでどのように{届|とど}くのかを{学|まな}びます。{道路|どうろ}の{下|した}の{管|くだ}をお{湯|ゆ}がどう{行|い}き{来|き}するのか、{地下室|ちかしつ}に{何|なに}があるのか、{管|くだ}が{漏|も}れたときに{何|なに}が{起|お}こるのかがわかるようになります。",
+ "categoryId": "R07-A05-T06",
+ "tags": [
+  "teknik",
+  "energi",
+  "stad"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.fibernat"
+ ],
+ "related": [],
+ "recommendedOrder": 4163,
+ "words": [
+  {
+   "senseId": "s.fjärrvärmenät.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeverk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kraftvärmeverk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flis.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hetvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pumpa-verb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.returledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svalna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cirkulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kulvert.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeförlust.1",
+   "active": false
+  },
+  {
+   "senseId": "s.läcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driftstörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.element.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrvärmecentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmeväxlare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hetvatten på Storgatan",
+  "paragraphs": [
+   "Takeshi läser till ingenjör och gör praktik på ett energibolag i Umeå. Bolaget äger stadens fjärrvärmenät. Ungefär hälften av alla bostäder och lokaler i Sverige värms med fjärrvärme. Första dagen får Takeshi se värmeverket, där pannorna eldar med flis och sopor.",
+   "– Härifrån pumpar vi ut hetvatten till hela staden, berättar hans handledare Karin. Vattnet går i framledningen under gatorna. Det kan vara över hundra grader, men det kokar inte eftersom trycket är högt. I husen svalnar vattnet, och sedan kommer det tillbaka till oss i returledningen. Så cirkulerar det hela tiden.",
+   "Rören ligger i en kulvert under trottoaren. De är väl isolerade, men lite värmeförlust blir det alltid. Det stora kraftvärmeverket på andra sidan staden gör både el och värme.",
+   "En morgon i januari ringer larmet. En gammal ledning läcker på Storgatan, och det kommer ånga ur marken. Det blir en driftstörning, och hundra hus får kalla element i några timmar. Takeshi följer med Karin ut och ser hur arbetarna spärrar av gatan.",
+   "På eftermiddagen besöker de ett hyreshus. I källaren visar Karin fjärrvärmecentralen. – Här möter nätets heta vatten husets eget vatten i värmeväxlaren, säger hon. De blandas aldrig. På kvällen är ledningen lagad, och värmen är tillbaka."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad eldar pannorna i värmeverket med?",
+    "options": [
+     "Flis och sopor",
+     "Olja och kol",
+     "Bara el",
+     "Gas från Norge"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Första dagen får Takeshi se värmeverket, där pannorna eldar med flis och sopor.",
+    "explanationJa": "{木|き}くずとごみを{燃|も}やしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför kokar inte vattnet i framledningen?",
+    "options": [
+     "Trycket är högt",
+     "Vattnet är kallt",
+     "Rören är av plast",
+     "Det är vinter"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det kan vara över hundra grader, men det kokar inte eftersom trycket är högt.",
+    "explanationJa": "{圧力|あつりょく}が{高|たか}いので{沸騰|ふっとう}しません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad händer med vattnet i husen?",
+    "options": [
+     "Det svalnar",
+     "Det kokar",
+     "Det blir smutsigt",
+     "Det försvinner"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "I husen svalnar vattnet, och sedan kommer det tillbaka till oss i returledningen.",
+    "explanationJa": "{建物|たてもの}の{中|なか}で{水|みず}は{冷|さ}めます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Vattnet från fjärrvärmenätet blandas med husets eget vatten.",
+    "correct": false,
+    "explanationSv": "De blandas aldrig.",
+    "explanationJa": "{網|もう}の{水|みず}と{家|いえ}の{水|みず}は{決|けっ}して{混|ま}ざりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Felet på Storgatan påverkade många hushåll.",
+    "correct": true,
+    "explanationSv": "Det blir en driftstörning, och hundra hus får kalla element i några timmar.",
+    "explanationJa": "100{軒|けん}の{家|いえ}のラジエーターが{冷|つめ}たくなりました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Ungefär hälften av alla bostäder och lokaler i Sverige värms med fjärrvärme.",
+    "source": "Energiföretagen Sverige",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Vattnet i fjärrvärmenätets framledning kan vara över 100 grader och kokar inte eftersom det står under tryck.",
+    "source": "Energiföretagen Sverige",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur husen värms upp där ni bor, i Sverige och i Japan.",
+  "discussionPoints": [
+   "Hur värms ditt hem upp: med fjärrvärme, värmepump eller något annat?",
+   "Har du varit med om att värmen eller vattnet försvann en dag? Vad gjorde du?",
+   "Vad tycker du om att bränna sopor för att värma upp hus?",
+   "Finns det fjärrvärme där du kommer ifrån i Japan?"
+  ]
+ },
+ "standard": 2
+}
