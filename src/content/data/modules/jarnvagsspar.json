@@ -1,0 +1,182 @@
+{
+ "id": "m.jarnvagsspar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Järnvägsspår",
+ "titleJa": "{鉄道|てつどう}の{線路|せんろ}",
+ "descriptionSv": "Du lär dig att berätta hur ett järnvägsspår är byggt, från rälsen ner till marken, och att förstå nyheter om fel på spåret när det är mycket varmt eller kallt.",
+ "descriptionJa": "{鉄道|てつどう}の{線路|せんろ}がレールから{地面|じめん}までどのように{造|つく}られているかを{話|はな}せるようになります。また、とても{暑|あつ}いときや{寒|さむ}いときに{起|お}こる{線路|せんろ}の{故障|こしょう}についてのニュースがわかるようになります。",
+ "categoryId": "R07-A05-T05",
+ "tags": [
+  "järnväg",
+  "infrastruktur",
+  "trafik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.underhall-av-vagar"
+ ],
+ "related": [],
+ "recommendedOrder": 4151,
+ "words": [
+  {
+   "senseId": "s.spår.2",
+   "active": true
+  },
+  {
+   "senseId": "s.järnväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tågtrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.persontåg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räls.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sliper.1",
+   "active": true
+  },
+  {
+   "senseId": "s.makadam.1",
+   "active": false
+  },
+  {
+   "senseId": "s.banvall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårvidd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.enkelspår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dubbelspår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stambana.1",
+   "active": true
+  },
+  {
+   "senseId": "s.solkurva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rälsbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spåra-ur.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Sommarjobb vid spåret",
+  "paragraphs": [
+   "Johan har ett sommarjobb på ett företag som tar hand om järnvägen. Första dagen går han längs spåret med sin chef Karin. – Här ser du rälsen, säger hon. Den ligger på sliprar av betong, och under sliprarna ligger makadam.",
+   "Makadamen är små, skarpa stenar som håller sliprarna på plats. Hela spåret ligger på en banvall, så att regnet kan rinna bort. – Spårvidden är hur långt det är mellan de två rälsen, förklarar Karin. I Sverige är den 1 435 millimeter, precis som för snabbtågen i Japan.",
+   "Här är det enkelspår, och det är mycket tågtrafik. Alla tåg måste vänta på varandra, och då blir tågen lätt sena. Nära staden är det dubbelspår, ett spår för varje håll.",
+   "Det är en het sommar. På eftermiddagen ringer Karins telefon: rälsen har böjt sig i värmen, och nu finns det en solkurva norr om staden. – Om ett tåg kör för fort där kan det spåra ur, säger Karin. Inga tåg får köra förrän felet är borta.",
+   "På vintern är det tvärtom. När det är mycket kallt kan rälsen gå sönder, och då blir det ett rälsbrott. På väg tillbaka visar Karin en gammal banvall i skogen. Där har det inte gått några persontåg på länge, och nu kan man cykla på den gamla banvallen. – I nyheterna pratar man om nya stambanor för snabba tåg, säger Johan. – Ja, men de kostar mycket pengar, svarar Karin."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad ligger under sliprarna?",
+    "options": [
+     "Betong",
+     "Snö",
+     "Makadam",
+     "Trä"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den ligger på sliprar av betong, och under sliprarna ligger makadam.",
+    "explanationJa": "{枕木|まくらぎ}の{下|した}にはバラストがあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Varför ligger spåret på en banvall?",
+    "options": [
+     "Så att tågen kan köra fortare",
+     "Så att regnet kan rinna bort",
+     "Så att man kan cykla där",
+     "Så att spåret blir billigare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hela spåret ligger på en banvall, så att regnet kan rinna bort.",
+    "explanationJa": "{雨|あめ}が{流|なが}れていくように、{線路|せんろ}は{盛|も}り{土|ど}の{上|うえ}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför blir tågen lätt sena på enkelspår?",
+    "options": [
+     "Rälsen är för gammal",
+     "Det finns för få tåg",
+     "De måste vänta på varandra",
+     "Spårvidden är för smal"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Alla tåg måste vänta på varandra, och då blir tågen lätt sena.",
+    "explanationJa": "{単線|たんせん}では{列車|れっしゃ}が{互|たが}いに{待|ま}たなければならないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "cause",
+    "statementSv": "Solkurvan kom av att det var mycket kallt.",
+    "correct": false,
+    "explanationSv": "Det är en het sommar. På eftermiddagen ringer Karins telefon: rälsen har böjt sig i värmen …",
+    "explanationJa": "レールのゆがみは{寒|さむ}さではなく、{暑|あつ}さで{起|お}きました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Man kan cykla på den gamla banvallen i skogen.",
+    "correct": true,
+    "explanationSv": "Där har det inte gått några persontåg på länge, och nu kan man cykla på den gamla banvallen.",
+    "explanationJa": "{使|つか}われなくなった{古|ふる}い{盛|も}り{土|ど}は、{自転車|じてんしゃ}で{走|はし}れる{道|みち}になっています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Normalspår, som används i Sverige och på Shinkansen i Japan, har spårvidden 1 435 millimeter. Finland har 1 524 millimeter och de flesta vanliga linjer i Japan 1 067 millimeter.",
+    "source": "Nationalencyklopedin, uppslagsordet spårvidd; Trafikverket",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "De första svenska stambanorna byggdes av staten på 1850- och 1860-talen; Västra stambanan mellan Stockholm och Göteborg blev klar 1862.",
+    "source": "Nationalencyklopedin, uppslagsordet stambana",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om järnvägen där ni bor och om tåg i värme och kyla.",
+  "discussionPoints": [
+   "Finns det enkelspår eller dubbelspår där du bor?",
+   "Har du varit med om att ett tåg blev sent på grund av värme eller kyla?",
+   "Vet du om en gammal banvall som nu är en väg för cykel eller promenad?",
+   "Tycker du att man ska bygga nya stambanor för snabbtåg? Varför eller varför inte?"
+  ]
+ },
+ "standard": 2
+}

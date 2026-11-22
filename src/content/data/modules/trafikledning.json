@@ -1,0 +1,181 @@
+{
+ "id": "m.trafikledning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Trafikledning",
+ "titleJa": "{運行管理|うんこうかんり}",
+ "descriptionSv": "Du lär dig att förklara hur tågtrafiken styrs och vad som händer när ett fel sprider sig till andra tåg, och att förstå trafikinformation och nyheter om punktlighet.",
+ "descriptionJa": "{列車|れっしゃ}の{運行|うんこう}がどのように{管理|かんり}されているか、また{一|ひと}つのトラブルがほかの{列車|れっしゃ}にどう{広|ひろ}がるかを{説明|せつめい}できるようになります。{運行情報|うんこうじょうほう}や{定時性|ていじせい}についてのニュースもわかるようになります。",
+ "categoryId": "R07-A05-T05",
+ "tags": [
+  "järnväg",
+  "trafik",
+  "arbete"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.tunnelbanesystem"
+ ],
+ "related": [],
+ "recommendedOrder": 4157,
+ "words": [
+  {
+   "senseId": "s.tidtabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.realtid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.övervaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.invänta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tågmöte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prioritera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kapacitet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flaskhals.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikstörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.följdförsening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leda-om.1",
+   "active": true
+  },
+  {
+   "senseId": "s.punktlighet.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En morgon på trafikledningen",
+  "paragraphs": [
+   "Kenji är trafikledare och arbetar på trafikledningen i Göteborg. Framför honom finns många datorer, där han kan övervaka alla tåg i realtid.",
+   "Klockan sju är det mycket trafik. Linjen mot kusten är enkelspår, och två företag trafikerar den med både persontåg och tåg med saker. Ett persontåg är fem minuter sent, så ett annat tåg måste invänta det vid ett tågmöte.",
+   "Plötsligt blir det signalfel norr om staden. Kenji måste prioritera: snabba persontåg får köra först, och de andra får vänta på sidospår.",
+   "Spåren in till Göteborg är en flaskhals. Där finns det inte tillräckligt med kapacitet, så ett enda fel ger snabbt följdförseningar för många tåg. Kenji bestämmer att man ska leda om några tåg på en annan linje. Omledningen gör resan längre, men tågen kommer i alla fall fram.",
+   "Information om trafikstörningen går ut till alla som reser. Efter två timmar är felet borta, och tågen går enligt tidtabellen igen.",
+   "På kvällen läser Kenji att punktligheten var dålig i dag. – Det är en del av jobbet, säger han. Vi gör allt för att tågen ska komma fram i tid."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur kan Kenji följa alla tåg?",
+    "options": [
+     "På datorer, i realtid",
+     "Genom att åka med tågen",
+     "Genom att ringa stationerna",
+     "På en karta av papper"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Framför honom finns många datorer, där han kan övervaka alla tåg i realtid.",
+    "explanationJa": "ケンジはコンピューターで、すべての{列車|れっしゃ}をリアルタイムで{監視|かんし}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför måste ett tåg invänta ett annat tåg?",
+    "options": [
+     "Det är dubbelspår",
+     "Det är enkelspår och ett tåg är sent",
+     "Det finns inga stationer",
+     "Det är rusningstrafik i tunnelbanan"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Linjen mot kusten är enkelspår … Ett persontåg är fem minuter sent, så ett annat tåg måste invänta det vid ett tågmöte.",
+    "explanationJa": "{単線|たんせん}で、{旅客列車|りょかくれっしゃ}が5{分|ふん}{遅|おく}れているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilka tåg får köra först när det blir signalfel?",
+    "options": [
+     "Tåg med saker",
+     "Snabba persontåg",
+     "Gamla tåg",
+     "Tåg som är tomma"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Kenji måste prioritera: snabba persontåg får köra först …",
+    "explanationJa": "{速|はや}い{旅客列車|りょかくれっしゃ}が{優先|ゆうせん}されます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Spåren in till Göteborg har mycket kapacitet.",
+    "correct": false,
+    "explanationSv": "Spåren in till Göteborg är en flaskhals. Där finns det inte tillräckligt med kapacitet …",
+    "explanationJa": "ヨーテボリへの{線路|せんろ}はボトルネックで、{容量|ようりょう}が{足|た}りません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Omledningen gör resan längre.",
+    "correct": true,
+    "explanationSv": "Omledningen gör resan längre, men tågen kommer i alla fall fram.",
+    "explanationJa": "{迂回|うかい}で{移動|いどう}{時間|じかん}は{長|なが}くなりますが、{列車|れっしゃ}は{目的地|もくてきち}に{着|つ}きます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Trafikverket räknar ett tåg som punktligt om det ankommer till slutstationen högst fem minuter efter tidtabellen.",
+    "source": "Trafikverket, Punktlighet på järnväg (officiell statistik)",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur tågtrafiken styrs och om vad man gör när tågen blir sena.",
+  "discussionPoints": [
+   "Skulle du vilja arbeta som trafikledare? Varför eller varför inte?",
+   "Vilka tåg tycker du ska prioriteras när det är fel på spåret?",
+   "Hur bra är punktligheten där du bor, tycker du?",
+   "Har du varit med om en lång omledning eller många följdförseningar?"
+  ]
+ },
+ "standard": 2
+}

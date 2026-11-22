@@ -1,0 +1,181 @@
+{
+ "id": "m.kontaktledning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Kontaktledning",
+ "titleJa": "{架線|かせん}",
+ "descriptionSv": "Du lär dig att förklara hur tåg får sin ström från ledningen över spåret, och att förstå varningar och nyheter om strömlösa ledningar och fel efter storm och åska.",
+ "descriptionJa": "{列車|れっしゃ}が{線路|せんろ}の{上|うえ}の{電線|でんせん}からどのように{電気|でんき}を{得|え}ているかを{説明|せつめい}できるようになります。また、{電気|でんき}の{止|と}まった{架線|かせん}や、{嵐|あらし}や{雷|かみなり}のあとの{故障|こしょう}についての{警告|けいこく}やニュースがわかるようになります。",
+ "categoryId": "R07-A05-T05",
+ "tags": [
+  "järnväg",
+  "el",
+  "infrastruktur"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.vaxlar-och-signaler"
+ ],
+ "related": [],
+ "recommendedOrder": 4153,
+ "words": [
+  {
+   "senseId": "s.elektrifiering.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kontaktledning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stolpe.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömavtagare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.diesellok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ellok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högspänning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.volt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.livsfara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-bort.2",
+   "active": true
+  },
+  {
+   "senseId": "s.strömlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.riva-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jorda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blixtnedslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gnista.2",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett träd över spåret",
+  "paragraphs": [
+   "En kväll i oktober blåser det mycket. Kenji sitter på tåget hem från jobbet. Plötsligt blir det mörkt i tåget, och det stannar mitt i skogen.",
+   "En röst säger: – Ett träd har fallit över spåret och rivit ner kontaktledningen. Nu är kontaktledningen strömlös, och vi kan inte köra vidare.",
+   "Kenji tittar ut. Längs spåret står stolpar, och mellan dem hänger kontaktledningen. Tåget får ström från den genom strömavtagaren på taket. Spänningen i kontaktledningen är 15 000 volt. Det är högspänning, och det är livsfara att komma nära.",
+   "Efter en timme kommer personal från järnvägen. De kopplar bort strömmen och jordar kontaktledningen, så att ingen kan få en stöt. Sedan tar de bort trädet.",
+   "Kenjis tåg dras till staden av ett diesellok. – Förr fanns det ingen el här, säger en äldre man. Då drogs alla tåg av diesellok. Efter elektrifieringen kom ellok, och de är både snabbare och tystare.",
+   "Hemma läser Kenji nyheterna. Det har varit flera fel på kontaktledningar i landet i kväll. På ett ställe har det varit ett blixtnedslag, och då blev det gnistor och fel i kontaktledningen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför stannade tåget?",
+    "options": [
+     "Det var signalfel",
+     "Ett träd hade rivit ner kontaktledningen",
+     "Växeln hade frusit fast",
+     "Det var för mycket snö"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ett träd har fallit över spåret och rivit ner kontaktledningen.",
+    "explanationJa": "{木|き}が{倒|たお}れて{架線|かせん}を{引|ひ}きちぎったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur får tåget ström?",
+    "options": [
+     "Genom rälsen",
+     "Från solen",
+     "Genom strömavtagaren på taket",
+     "Från stolparna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Tåget får ström från den genom strömavtagaren på taket.",
+    "explanationJa": "{屋根|やね}の{上|うえ}のパンタグラフを{通|とお}して{電気|でんき}を{取|と}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör personalen innan de tar bort trädet?",
+    "options": [
+     "De ringer polisen",
+     "De kopplar bort strömmen och jordar kontaktledningen",
+     "De byter räls",
+     "De fixar strömavtagaren"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "De kopplar bort strömmen och jordar kontaktledningen, så att ingen kan få en stöt.",
+    "explanationJa": "{電気|でんき}を{切|き}り、{架線|かせん}をアースします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Spänningen i kontaktledningen är låg och ofarlig.",
+    "correct": false,
+    "explanationSv": "Spänningen i kontaktledningen är 15 000 volt. Det är högspänning, och det är livsfara att komma nära.",
+    "explanationJa": "{架線|かせん}は1{万|まん}5000ボルトの{高電圧|こうでんあつ}で、{命|いのち}に{関|かか}わる{危険|きけん}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Kenjis tåg drogs vidare av ett diesellok.",
+    "correct": true,
+    "explanationSv": "Kenjis tåg dras till staden av ett diesellok.",
+    "explanationJa": "{列車|れっしゃ}はディーゼル{機関車|きかんしゃ}に{引|ひ}かれて{町|まち}まで{行|い}きました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Kontaktledningen på det svenska järnvägsnätet har växelspänningen 15 000 volt (15 kV, 16 2/3 Hz).",
+    "source": "Trafikverket, Banöverbyggnad och elanläggningar; Nationalencyklopedin, uppslagsordet kontaktledning",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tåg och el, och om vad man gör när strömmen går.",
+  "discussionPoints": [
+   "Har du suttit på ett tåg som stannade på grund av fel på kontaktledningen?",
+   "Vad tycker du är bäst: ellok eller diesellok? Varför?",
+   "Vilka varningar om högspänning har du sett vid järnvägen?",
+   "Varför tror du att det är viktigt med elektrifiering av järnvägen?"
+  ]
+ },
+ "standard": 2
+}

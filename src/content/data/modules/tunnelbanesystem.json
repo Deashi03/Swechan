@@ -1,0 +1,181 @@
+{
+ "id": "m.tunnelbanesystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Tunnelbanesystem",
+ "titleJa": "{地下鉄|ちかてつ}システム",
+ "descriptionSv": "Du lär dig att beskriva hur en tunnelbana fungerar under jorden, från strömmen till säkerheten på perrongen, och att förstå nyheter om nya linjer och störningar.",
+ "descriptionJa": "{地下鉄|ちかてつ}が{地下|ちか}でどのように{動|うご}いているかを、{電気|でんき}のしくみからホームの{安全|あんぜん}まで{説明|せつめい}できるようになります。また、{新|あたら}しい{路線|ろせん}や{運行|うんこう}の{乱|みだ}れについてのニュースがわかるようになります。",
+ "categoryId": "R07-A05-T05",
+ "tags": [
+  "tunnelbana",
+  "kollektivtrafik",
+  "infrastruktur"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.depaer-och-underhall"
+ ],
+ "related": [],
+ "recommendedOrder": 4156,
+ "words": [
+  {
+   "senseId": "s.tunnel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underjordisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spärr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rusningstrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trängsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turtäthet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utbyggnad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.strömskena.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plattformsdörr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förarlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obehörig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spårområde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ventilation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nödutgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utrymningsväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.evakuera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En ny station under jorden",
+  "paragraphs": [
+   "Sara bor i en stor stad där tunnelbanan byggs ut. Under rusningstrafiken är det trängsel på perrongerna, och därför behövs fler linjer och högre turtäthet.",
+   "En lördag får man besöka en av de nya stationerna. Den är underjordisk och ligger 30 meter under marken. Sara åker ner i en lång rulltrappa.",
+   "Längs perrongen finns plattformsdörrar. – De öppnas bara när tåget står vid perrongen, förklarar en kvinna som visar stationen. Då kan ingen ramla ner på spåret. Tågen kommer att vara förarlösa och styras av datorer.",
+   "Tåget får ström från en strömskena bredvid rälsen. Därför är det livsfara att gå ner på spåret. Om det finns obehöriga i spårområdet stoppas alla tåg.",
+   "I tunneln finns ventilation som tar ut rök om det brinner. Det finns också nödutgångar och utrymningsvägar, så att man snabbt kan evakuera alla som är på stationen.",
+   "Efter besöket går Sara ut genom spärren. – Utbyggnaden kostar mycket, säger hon till sin vän. Men det blir bra när den är klar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför behövs fler linjer?",
+    "options": [
+     "De gamla tunnlarna är farliga",
+     "Det är trängsel under rusningstrafiken",
+     "Tågen är för långsamma",
+     "Det finns för få stationer på landet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Under rusningstrafiken är det trängsel på perrongerna, och därför behövs fler linjer och högre turtäthet.",
+    "explanationJa": "ラッシュアワーにホームが{混雑|こんざつ}するからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "När öppnas plattformsdörrarna?",
+    "options": [
+     "När tåget står vid perrongen",
+     "Hela tiden",
+     "Bara på natten",
+     "När någon trycker på en knapp"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "De öppnas bara när tåget står vid perrongen …",
+    "explanationJa": "ホームドアは{列車|れっしゃ}がホームに{止|と}まっているときだけ{開|ひら}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Var får tåget ström ifrån?",
+    "options": [
+     "Från en kontaktledning",
+     "Från ett diesellok",
+     "Från solen",
+     "Från en strömskena"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Tåget får ström från en strömskena bredvid rälsen.",
+    "explanationJa": "{列車|れっしゃ}は{第三軌条|だいさんきじょう}から{電気|でんき}を{取|と}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Tågen på den nya linjen kommer att ha en förare.",
+    "correct": false,
+    "explanationSv": "Tågen kommer att vara förarlösa och styras av datorer.",
+    "explanationJa": "{列車|れっしゃ}は{無人運転|むじんうんてん}で、コンピューターで{動|うご}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Ventilationen i tunneln tar ut rök om det brinner.",
+    "correct": true,
+    "explanationSv": "I tunneln finns ventilation som tar ut rök om det brinner.",
+    "explanationJa": "トンネルの{換気|かんき}{設備|せつび}は、{火事|かじ}のときに{煙|けむり}を{外|そと}へ{出|だ}します。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Köpenhamns metro, som öppnade 2002, körs helt utan förare.",
+    "source": "Nationalencyklopedin, uppslagsordet Köpenhamn; Metroselskabet",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tunnelbanor i olika städer och om säkerhet under jorden.",
+  "discussionPoints": [
+   "Vilken stad har den bästa tunnelbanan som du har åkt med?",
+   "Skulle du känna dig trygg i ett förarlöst tåg? Varför eller varför inte?",
+   "Tycker du att alla stationer ska ha plattformsdörrar?",
+   "Vad gör du om det står i ett utrop att det finns obehöriga i spårområdet?"
+  ]
+ },
+ "standard": 2
+}
