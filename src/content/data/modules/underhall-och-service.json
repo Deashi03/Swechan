@@ -1,0 +1,180 @@
+{
+ "id": "m.underhall-och-service",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Underhåll och service",
+ "titleJa": "{保守|ほしゅ}と{点検|てんけん}",
+ "descriptionSv": "Hur man tar hand om maskiner och fordon så att de håller: skillnaden mellan förebyggande underhåll och att laga något som har gått sönder, hur en servicetekniker felsöker, och hur man talar om service, haverier och reservdelar på jobbet och med verkstaden.",
+ "descriptionJa": "{機械|きかい}や{乗|の}り{物|もの}を{長|なが}もちさせるための{手入|てい}れ：{予防保全|よぼうほぜん}と{壊|こわ}れたものの{修理|しゅうり}の{違|ちが}い、サービス{技術者|ぎじゅつしゃ}が{原因|げんいん}をどう{調|しら}べるか、そして{職場|しょくば}や{整備工場|せいびこうじょう}で、{点検|てんけん}、{故障|こしょう}、{交換部品|こうかんぶひん}についてどう{話|はな}すかを{学|まな}びます。",
+ "categoryId": "R07-A04-T05",
+ "tags": [
+  "teknik",
+  "industri",
+  "reparation"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.lager-och-logistik"
+ ],
+ "related": [],
+ "recommendedOrder": 4053,
+ "words": [
+  {
+   "senseId": "s.underhåll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.service.1",
+   "active": true
+  },
+  {
+   "senseId": "s.serva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.servicebok.1",
+   "active": true
+  },
+  {
+   "senseId": "s.servicetekniker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrollera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smörja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservdel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garanti.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slitdel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-ut.1",
+   "active": true
+  },
+  {
+   "senseId": "s.haveri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driftstopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felanmälan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jour.1",
+   "active": false
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.justera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förebyggande-underhåll.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En natt på jouren",
+  "paragraphs": [
+   "Ida är servicetekniker. Hon åker runt till fabriker i Västerås och servar maskiner som tillverkar förpackningar. – Mitt jobb är underhåll, säger hon. Jag ser till att maskinerna fungerar.",
+   "Det mesta av arbetet är förebyggande underhåll. Varje månad kontrollerar Ida maskinerna, smörjer kedjorna och byter ut slitdelar innan de går sönder. Allt hon gör skriver hon i maskinens servicebok.",
+   "Men ibland blir det haveri. En natt kommer en felanmälan från en fabrik till jouren: en motor har gått sönder, och hela linjen står still. Ett sådant driftstopp kostar mycket pengar. Ida åker dit direkt.",
+   "Först felsöker hon. Hon läser vad det står på skärmen och kontrollerar motorn. Det visar sig att en liten del är trasig. Som tur är har hon en reservdel i bilen. Efter två timmar fungerar maskinen igen, och Ida justerar den så att den går jämnt.",
+   "På helgen ska Ida själv lämna in sin bil på service. – Det är bra att serva bilen i tid, säger hon. Annars kan det bli dyrt, och ibland gäller inte garantin längre."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Ida för det mesta?",
+    "options": [
+     "Säljer nya maskiner",
+     "Förebyggande underhåll",
+     "Kör lastbil",
+     "Städar fabrikerna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det mesta av arbetet är förebyggande underhåll.",
+    "explanationJa": "{仕事|しごと}のほとんどは{予防保全|よぼうほぜん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför åker Ida till fabriken på natten?",
+    "options": [
+     "Hon ska göra sin vanliga kontroll",
+     "Hon har glömt sina verktyg där",
+     "En motor har gått sönder och linjen står still",
+     "Fabriken ska få en ny maskin"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "En natt kommer en felanmälan från en fabrik till jouren: en motor har gått sönder, och hela linjen står still.",
+    "explanationJa": "モーターが{壊|こわ}れて、ライン{全体|ぜんたい}が{止|と}まったからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör Ida först när hon kommer till fabriken?",
+    "options": [
+     "Hon felsöker",
+     "Hon ringer sin chef",
+     "Hon beställer en ny motor",
+     "Hon åker hem igen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Först felsöker hon.",
+    "explanationJa": "まず{原因|げんいん}を{調|しら}べます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ida skriver det hon gör i maskinens servicebok.",
+    "correct": true,
+    "explanationSv": "Allt hon gör skriver hon i maskinens servicebok.",
+    "explanationJa": "{作業|さぎょう}はすべて{整備記録簿|せいびきろくぼ}に{書|か}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ida måste vänta flera dagar på en reservdel.",
+    "correct": false,
+    "explanationSv": "Som tur är har hon en reservdel i bilen.",
+    "explanationJa": "{交換部品|こうかんぶひん}を{車|くるま}に{積|つ}んでいたので、{待|ま}つ{必要|ひつよう}はありませんでした。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att ta hand om saker så att de håller länge.",
+  "discussionPoints": [
+   "Lämnar du in din bil eller cykel på service? Hur ofta?",
+   "Har du varit med om att en maskin eller en apparat gick sönder vid fel tillfälle?",
+   "Vad kan man göra själv för att saker ska hålla längre?",
+   "Skulle du vilja jobba som servicetekniker? Varför eller varför inte?"
+  ]
+ },
+ "standard": 2
+}

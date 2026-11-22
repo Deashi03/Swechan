@@ -1,0 +1,176 @@
+{
+ "id": "m.produktionslinjer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Produktionslinjer",
+ "titleJa": "{生産|せいさん}ライン",
+ "descriptionSv": "Hur arbetet i en fabrik är organiserat: hur en produkt växer fram längs en produktionslinje, vad som händer vid varje arbetsstation och hur man talar om takt, skift och stopp när man gör praktik eller jobbar i industrin.",
+ "descriptionJa": "{工場|こうじょう}の{仕事|しごと}のしくみ：{製品|せいひん}が{生産|せいさん}ラインに{沿|そ}ってどのようにできあがるか、{各|かく}{作業|さぎょう}ステーションで{何|なに}をするか、そして{実習|じっしゅう}や{工場|こうじょう}の{仕事|しごと}で、ペース、シフト、{停止|ていし}についてどう{話|はな}すかを{学|まな}びます。",
+ "categoryId": "R07-A04-T05",
+ "tags": [
+  "teknik",
+  "industri",
+  "arbete"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.kvalitetskontroll"
+ ],
+ "related": [],
+ "recommendedOrder": 4051,
+ "words": [
+  {
+   "senseId": "s.produktionslinje.1",
+   "active": true
+  },
+  {
+   "senseId": "s.löpande-band.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillverka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.massproduktion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.råvara.2",
+   "active": true
+  },
+  {
+   "senseId": "s.komponent.2",
+   "active": true
+  },
+  {
+   "senseId": "s.slutprodukt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.arbetsstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.arbetsmoment.1",
+   "active": true
+  },
+  {
+   "senseId": "s.takt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.flaskhals.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stå-still.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ställa-om.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kapacitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.operatör.2",
+   "active": true
+  },
+  {
+   "senseId": "s.fabriksarbetare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Praktik vid linjen",
+  "paragraphs": [
+   "Kenji läser till industritekniker på en yrkesutbildning. Nu gör han praktik på en fabrik som tillverkar diskmaskiner. Fabriken har två långa produktionslinjer, och på varje linje arbetar ungefär tjugo fabriksarbetare.",
+   "Första dagen visar arbetsledaren Lena honom runt. – Allt börjar med råvaror som plåt och plast, säger hon. Sedan kommer komponenter från andra fabriker, till exempel motorer och pumpar. Längst bort står slutprodukten: en färdig diskmaskin i en kartong.",
+   "Längs det löpande bandet finns tolv arbetsstationer. Vid varje station gör en operatör eller en robot ett arbetsmoment, till exempel att skruva fast en dörr eller testa en pump. Linjen går i en jämn takt: var tredje minut kommer en ny maskin.",
+   "Kenji jobbar skift. Hans skift börjar klockan sex och slutar halv tre. En dag blir det ett stopp, och linjen får stå still i en halvtimme. Station sju är en flaskhals, eftersom testet där tar längre tid än de andra arbetsmomenten. – Vi behöver en person till här, annars räcker inte kapaciteten, säger Lena.",
+   "Nästa vecka ska fabriken ställa om linjen till en ny modell. Det tar två dagar. – Det här är massproduktion, säger Lena. Vi tillverkar nästan tusen maskiner om dagen, så varje minut räknas. Kenji tycker att det är roligt att se hur allt hänger ihop."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tillverkar fabriken?",
+    "options": [
+     "Bilar",
+     "Cyklar",
+     "Datorer",
+     "Diskmaskiner"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Nu gör han praktik på en fabrik som tillverkar diskmaskiner.",
+    "explanationJa": "{食器洗|しょっきあら}い{機|き}を{作|つく}る{工場|こうじょう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad gör man vid en arbetsstation?",
+    "options": [
+     "Man äter lunch",
+     "Man säljer diskmaskiner",
+     "Man beställer råvaror",
+     "Ett arbetsmoment, till exempel att skruva fast en dörr"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Vid varje station gör en operatör eller en robot ett arbetsmoment, till exempel att skruva fast en dörr eller testa en pump.",
+    "explanationJa": "ステーションごとに、オペレーターかロボットが{一|ひと}つの{作業|さぎょう}をします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är station sju en flaskhals?",
+    "options": [
+     "Testet där tar längre tid än de andra arbetsmomenten",
+     "Roboten där är trasig",
+     "Där arbetar för många",
+     "Där finns inga komponenter"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Station sju är en flaskhals, eftersom testet där tar längre tid än de andra arbetsmomenten.",
+    "explanationJa": "そこの{検査|けんさ}がほかの{作業|さぎょう}より{時間|じかん}がかかるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det kommer en ny maskin var tredje minut.",
+    "correct": true,
+    "explanationSv": "Linjen går i en jämn takt: var tredje minut kommer en ny maskin.",
+    "explanationJa": "3{分|ぷん}ごとに{新|あたら}しい{機械|きかい}が{来|き}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det går mycket snabbt att ställa om linjen till en ny modell.",
+    "correct": false,
+    "explanationSv": "Det tar två dagar.",
+    "explanationJa": "{切|き}り{替|か}えには{二日|ふつか}かかります。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fabriker och om att arbeta vid en produktionslinje.",
+  "discussionPoints": [
+   "Har du sett en produktionslinje, i verkligheten eller på film?",
+   "Skulle du vilja jobba skift? Varför eller varför inte?",
+   "Vilka saker i ditt hem är gjorda i massproduktion?",
+   "Vad är bäst: att göra samma arbetsmoment hela dagen eller att byta ofta?"
+  ]
+ },
+ "standard": 2
+}

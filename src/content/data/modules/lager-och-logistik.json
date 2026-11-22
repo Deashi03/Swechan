@@ -1,0 +1,180 @@
+{
+ "id": "m.lager-och-logistik",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Lager och logistik",
+ "titleJa": "{倉庫|そうこ}と{物流|ぶつりゅう}",
+ "descriptionSv": "Vad som händer med en vara på vägen från leverantören till kunden: hur ett lager tar emot, förvarar och skickar varor, och hur man talar om pallar, truckar, saldon och förseningar när man jobbar på ett lager eller väntar på en leverans.",
+ "descriptionJa": "{商品|しょうひん}が{仕入先|しいれさき}から{客|きゃく}に{届|とど}くまでに{何|なに}が{起|お}こるか：{倉庫|そうこ}が{商品|しょうひん}をどう{受|う}け{取|と}り、{保管|ほかん}し、{送|おく}り{出|だ}すか、そして{倉庫|そうこ}で{働|はたら}くときや{荷物|にもつ}を{待|ま}つときに、パレット、フォークリフト、{在庫数|ざいこすう}、{遅|おく}れについてどう{話|はな}すかを{学|まな}びます。",
+ "categoryId": "R07-A04-T05",
+ "tags": [
+  "teknik",
+  "industri",
+  "logistik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.produktionslinjer"
+ ],
+ "related": [],
+ "recommendedOrder": 4052,
+ "words": [
+  {
+   "senseId": "s.lager-förråd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagerarbetare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.distributionscentral.1",
+   "active": true
+  },
+  {
+   "senseId": "s.logistik.1",
+   "active": false
+  },
+  {
+   "senseId": "s.leverantör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lastkaj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gaffeltruck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.truckförare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lossa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.lasta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pall.2",
+   "active": true
+  },
+  {
+   "senseId": "s.pallställ.1",
+   "active": true
+  },
+  {
+   "senseId": "s.plocka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skanna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.streckkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lagersaldo.1",
+   "active": false
+  },
+  {
+   "senseId": "s.restnoterad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.inventering.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Helgjobb på lagret",
+  "paragraphs": [
+   "Saki studerar i Göteborg. På helgerna jobbar hon som lagerarbetare på en distributionscentral utanför staden. I lagret finns många tusen varor. Därifrån går de till butiker och till ett företag som säljer kläder på nätet.",
+   "Klockan sju kommer de första lastbilarna till lastkajen. Varorna kommer från olika leverantörer. En truckförare lossar lastbilarna och kör in pallarna med en gaffeltruck. Sedan ställer han dem i höga pallställ.",
+   "Saki har en lista med beställningar på en liten skärm. Hon går mellan hyllorna och plockar varor. Varje gång hon tar en vara skannar hon streckkoden. Då ändras lagersaldot i datorn direkt.",
+   "Ibland är en vara slut. – Den här jackan är restnoterad, säger hennes kollega Omar. Den kommer från leverantören först nästa vecka. Kunden får ett mejl om att leveransen blir sen.",
+   "Varje kväll lastar de lastbilar som kör ut till butikerna. En gång om året gör de inventering: då räknar alla varorna på hyllorna. – Logistik handlar om att rätt vara ska finnas på rätt plats i rätt tid, säger chefen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var jobbar Saki på helgerna?",
+    "options": [
+     "I en klädbutik i stan",
+     "På universitetets bibliotek",
+     "På en restaurang",
+     "På en distributionscentral utanför Göteborg"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "På helgerna jobbar hon som lagerarbetare på en distributionscentral utanför staden.",
+    "explanationJa": "{週末|しゅうまつ}は{町|まち}の{郊外|こうがい}にある{物流|ぶつりゅう}センターで{働|はたら}いています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör truckföraren?",
+    "options": [
+     "Han plockar varor till kunderna",
+     "Han skriver mejl till kunderna",
+     "Han räknar varorna en gång om året",
+     "Han lossar lastbilarna och kör in pallarna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En truckförare lossar lastbilarna och kör in pallarna med en gaffeltruck.",
+    "explanationJa": "トラックの{荷|に}を{降|お}ろし、フォークリフトでパレットを{運|はこ}び{入|い}れます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att jackan är restnoterad?",
+    "options": [
+     "Den är trasig",
+     "Den är billigare än förut",
+     "Den är redan skickad",
+     "Den är slut nu men kommer senare"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Den kommer från leverantören först nästa vecka.",
+    "explanationJa": "{今|いま}は{在庫|ざいこ}がなく、{来週|らいしゅう}{入荷|にゅうか}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Lagersaldot ändras när Saki skannar streckkoden.",
+    "correct": true,
+    "explanationSv": "Då ändras lagersaldot i datorn direkt.",
+    "explanationJa": "バーコードを{読|よ}み{取|と}ると、すぐに{在庫数|ざいこすう}が{変|か}わります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "De gör inventering varje vecka.",
+    "correct": false,
+    "explanationSv": "En gång om året gör de inventering: då räknar alla varorna på hyllorna.",
+    "explanationJa": "{棚卸|たなおろ}しは{年|ねん}に{一回|いっかい}です。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om lager, leveranser och om att handla på nätet.",
+  "discussionPoints": [
+   "Har du jobbat på ett lager eller i en butik?",
+   "Vad gör du när en vara som du vill köpa är restnoterad?",
+   "Vilka varor köper du på nätet, och vilka köper du hellre i en butik?",
+   "Tror du att robotar kommer att göra lagerarbetet i framtiden?"
+  ]
+ },
+ "standard": 2
+}

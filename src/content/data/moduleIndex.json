@@ -4698,8 +4698,8 @@
   },
   {
    "id": "m.bord-och-stolar",
-   "contentVersion": 3,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 4,
+   "updatedAt": "2026-11-22",
    "titleSv": "Bord och stolar",
    "titleJa": "テーブルと{椅子|いす}",
    "descriptionSv": "Bord och stolar: matbord, skrivbord, pall, utdragbart och fällbart, och möbler av ek.",
@@ -11178,8 +11178,8 @@
   },
   {
    "id": "m.arstider-och-datum",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-18",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-22",
    "titleSv": "Årstider och datum",
    "titleJa": "{季節|きせつ}と{日付|ひづけ}",
    "descriptionSv": "Årstider och datum: årstid, dagens datum, födelsedatum, årtal, skottår, halvår, sommartid, ställa om, midnattssol och mörker.",
@@ -20173,7 +20173,7 @@
   },
   {
    "id": "m.reparera-en-cykel",
-   "contentVersion": 4,
+   "contentVersion": 5,
    "updatedAt": "2026-11-22",
    "titleSv": "Reparera en cykel",
    "titleJa": "{自転車|じてんしゃ}の{修理|しゅうり}",
@@ -64474,8 +64474,8 @@
   },
   {
    "id": "m.algoritmer-och-floden",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-21",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-22",
    "titleSv": "Algoritmer och flöden",
    "titleJa": "アルゴリズムとフィード",
    "descriptionSv": "Algoritmer och flöden: algoritm, flöde, scrolla, oändlig, användare, klicka, rekommendera, dyka upp, skräddarsydd, kronologisk, filterbubbla, uppmärksamhet, skärmtid, beroendeframkallande och medveten.",
@@ -147107,7 +147107,7 @@
   },
   {
    "id": "m.skruvar-och-muttrar",
-   "contentVersion": 2,
+   "contentVersion": 3,
    "updatedAt": "2026-11-22",
    "titleSv": "Skruvar och muttrar",
    "titleJa": "ねじとナット",
@@ -149316,6 +149316,681 @@
    ],
    "standard": 2,
    "bodyFile": "kvalitetskontroll.json"
+  },
+  {
+   "id": "m.produktionslinjer",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Produktionslinjer",
+   "titleJa": "{生産|せいさん}ライン",
+   "descriptionSv": "Hur arbetet i en fabrik är organiserat: hur en produkt växer fram längs en produktionslinje, vad som händer vid varje arbetsstation och hur man talar om takt, skift och stopp när man gör praktik eller jobbar i industrin.",
+   "descriptionJa": "{工場|こうじょう}の{仕事|しごと}のしくみ：{製品|せいひん}が{生産|せいさん}ラインに{沿|そ}ってどのようにできあがるか、{各|かく}{作業|さぎょう}ステーションで{何|なに}をするか、そして{実習|じっしゅう}や{工場|こうじょう}の{仕事|しごと}で、ペース、シフト、{停止|ていし}についてどう{話|はな}すかを{学|まな}びます。",
+   "categoryId": "R07-A04-T05",
+   "tags": [
+    "teknik",
+    "industri",
+    "arbete"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.kvalitetskontroll"
+   ],
+   "related": [],
+   "recommendedOrder": 4051,
+   "words": [
+    {
+     "senseId": "s.produktionslinje.1",
+     "active": true
+    },
+    {
+     "senseId": "s.löpande-band.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tillverka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.massproduktion.1",
+     "active": false
+    },
+    {
+     "senseId": "s.råvara.2",
+     "active": true
+    },
+    {
+     "senseId": "s.komponent.2",
+     "active": true
+    },
+    {
+     "senseId": "s.slutprodukt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.arbetsstation.1",
+     "active": true
+    },
+    {
+     "senseId": "s.arbetsmoment.1",
+     "active": true
+    },
+    {
+     "senseId": "s.takt.2",
+     "active": true
+    },
+    {
+     "senseId": "s.flaskhals.1",
+     "active": false
+    },
+    {
+     "senseId": "s.stå-still.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ställa-om.2",
+     "active": true
+    },
+    {
+     "senseId": "s.kapacitet.1",
+     "active": false
+    },
+    {
+     "senseId": "s.skift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.operatör.2",
+     "active": true
+    },
+    {
+     "senseId": "s.fabriksarbetare.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "produktionslinjer.json"
+  },
+  {
+   "id": "m.lager-och-logistik",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Lager och logistik",
+   "titleJa": "{倉庫|そうこ}と{物流|ぶつりゅう}",
+   "descriptionSv": "Vad som händer med en vara på vägen från leverantören till kunden: hur ett lager tar emot, förvarar och skickar varor, och hur man talar om pallar, truckar, saldon och förseningar när man jobbar på ett lager eller väntar på en leverans.",
+   "descriptionJa": "{商品|しょうひん}が{仕入先|しいれさき}から{客|きゃく}に{届|とど}くまでに{何|なに}が{起|お}こるか：{倉庫|そうこ}が{商品|しょうひん}をどう{受|う}け{取|と}り、{保管|ほかん}し、{送|おく}り{出|だ}すか、そして{倉庫|そうこ}で{働|はたら}くときや{荷物|にもつ}を{待|ま}つときに、パレット、フォークリフト、{在庫数|ざいこすう}、{遅|おく}れについてどう{話|はな}すかを{学|まな}びます。",
+   "categoryId": "R07-A04-T05",
+   "tags": [
+    "teknik",
+    "industri",
+    "logistik"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.produktionslinjer"
+   ],
+   "related": [],
+   "recommendedOrder": 4052,
+   "words": [
+    {
+     "senseId": "s.lager-förråd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lagerarbetare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.distributionscentral.1",
+     "active": true
+    },
+    {
+     "senseId": "s.logistik.1",
+     "active": false
+    },
+    {
+     "senseId": "s.leverantör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lastkaj.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gaffeltruck.1",
+     "active": true
+    },
+    {
+     "senseId": "s.truckförare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lossa.2",
+     "active": true
+    },
+    {
+     "senseId": "s.lasta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pall.2",
+     "active": true
+    },
+    {
+     "senseId": "s.pallställ.1",
+     "active": true
+    },
+    {
+     "senseId": "s.plocka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skanna.1",
+     "active": true
+    },
+    {
+     "senseId": "s.streckkod.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lagersaldo.1",
+     "active": false
+    },
+    {
+     "senseId": "s.restnoterad.1",
+     "active": false
+    },
+    {
+     "senseId": "s.inventering.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "lager-och-logistik.json"
+  },
+  {
+   "id": "m.underhall-och-service",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Underhåll och service",
+   "titleJa": "{保守|ほしゅ}と{点検|てんけん}",
+   "descriptionSv": "Hur man tar hand om maskiner och fordon så att de håller: skillnaden mellan förebyggande underhåll och att laga något som har gått sönder, hur en servicetekniker felsöker, och hur man talar om service, haverier och reservdelar på jobbet och med verkstaden.",
+   "descriptionJa": "{機械|きかい}や{乗|の}り{物|もの}を{長|なが}もちさせるための{手入|てい}れ：{予防保全|よぼうほぜん}と{壊|こわ}れたものの{修理|しゅうり}の{違|ちが}い、サービス{技術者|ぎじゅつしゃ}が{原因|げんいん}をどう{調|しら}べるか、そして{職場|しょくば}や{整備工場|せいびこうじょう}で、{点検|てんけん}、{故障|こしょう}、{交換部品|こうかんぶひん}についてどう{話|はな}すかを{学|まな}びます。",
+   "categoryId": "R07-A04-T05",
+   "tags": [
+    "teknik",
+    "industri",
+    "reparation"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.lager-och-logistik"
+   ],
+   "related": [],
+   "recommendedOrder": 4053,
+   "words": [
+    {
+     "senseId": "s.underhåll.1",
+     "active": true
+    },
+    {
+     "senseId": "s.service.1",
+     "active": true
+    },
+    {
+     "senseId": "s.serva.1",
+     "active": true
+    },
+    {
+     "senseId": "s.servicebok.1",
+     "active": true
+    },
+    {
+     "senseId": "s.servicetekniker.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kontrollera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smörja.1",
+     "active": true
+    },
+    {
+     "senseId": "s.reservdel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.garanti.1",
+     "active": false
+    },
+    {
+     "senseId": "s.slitdel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.byta-ut.1",
+     "active": true
+    },
+    {
+     "senseId": "s.haveri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.driftstopp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.felanmälan.1",
+     "active": true
+    },
+    {
+     "senseId": "s.jour.1",
+     "active": false
+    },
+    {
+     "senseId": "s.felsöka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.justera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förebyggande-underhåll.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "underhall-och-service.json"
+  },
+  {
+   "id": "m.effektivisering",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Effektivisering",
+   "titleJa": "{効率化|こうりつか}",
+   "descriptionSv": "Hur en arbetsplats kan bli effektivare: hur man mäter och följer upp arbetet, hur man hittar slöseri i flödet och hur man talar om förbättringar, kostnader och besparingar, med exempel från en brödfabrik och från det japanska arbetssättet med ständiga förbättringar.",
+   "descriptionJa": "{職場|しょくば}をもっと{効率的|こうりつてき}にする{方法|ほうほう}：{仕事|しごと}をどう{測|はか}って{確認|かくにん}するか、{流|なが}れの{中|なか}の{無駄|むだ}をどう{見|み}つけるか、そして{改善|かいぜん}、コスト、{節約|せつやく}についてどう{話|はな}すかを、パン{工場|こうじょう}と{日本|にほん}の「カイゼン」の{例|れい}を{通|とお}して{学|まな}びます。",
+   "categoryId": "R07-A04-T05",
+   "tags": [
+    "teknik",
+    "industri",
+    "arbete"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.underhall-och-service"
+   ],
+   "related": [],
+   "recommendedOrder": 4054,
+   "words": [
+    {
+     "senseId": "s.effektiv.1",
+     "active": true
+    },
+    {
+     "senseId": "s.effektivisera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.produktivitet.1",
+     "active": false
+    },
+    {
+     "senseId": "s.mäta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nyckeltal.1",
+     "active": true
+    },
+    {
+     "senseId": "s.flöde.2",
+     "active": true
+    },
+    {
+     "senseId": "s.väntetid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ledtid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slöseri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spill.2",
+     "active": true
+    },
+    {
+     "senseId": "s.överproduktion.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kassera.1",
+     "active": false
+    },
+    {
+     "senseId": "s.standardisera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.optimera.1",
+     "active": false
+    },
+    {
+     "senseId": "s.besparing.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förbättringsförslag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ständiga-förbättringar.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "effektivisering.json"
+  },
+  {
+   "id": "m.automatiserade-fabriker",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Automatiserade fabriker",
+   "titleJa": "{自動化|じどうか}された{工場|こうじょう}",
+   "descriptionSv": "Hur robotar, sensorer och uppkopplade maskiner förändrar arbetet i en fabrik: vad människor gör när maskinerna går dygnet runt, och hur man talar om automatisering, nya arbetsuppgifter och att lära om, på jobbet och i debatten om framtidens jobb.",
+   "descriptionJa": "ロボット、センサー、ネットにつながった{機械|きかい}が{工場|こうじょう}の{仕事|しごと}をどう{変|か}えるか：{機械|きかい}が24{時間|じかん}{動|うご}いているとき{人|ひと}は{何|なに}をするのか、そして{職場|しょくば}やこれからの{仕事|しごと}についての{議論|ぎろん}で、{自動化|じどうか}、{新|あたら}しい{仕事|しごと}、{学|まな}び{直|なお}しについてどう{話|はな}すかを{学|まな}びます。",
+   "categoryId": "R07-A04-T05",
+   "tags": [
+    "teknik",
+    "industri",
+    "automation"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.effektivisering"
+   ],
+   "related": [],
+   "recommendedOrder": 4055,
+   "words": [
+    {
+     "senseId": "s.automatisera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.automatisering.1",
+     "active": false
+    },
+    {
+     "senseId": "s.industrirobot.1",
+     "active": true
+    },
+    {
+     "senseId": "s.robotarm.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kollaborativ-robot.1",
+     "active": false
+    },
+    {
+     "senseId": "s.sensor.1",
+     "active": true
+    },
+    {
+     "senseId": "s.självkörande.1",
+     "active": true
+    },
+    {
+     "senseId": "s.uppkopplad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.digitalisering.1",
+     "active": false
+    },
+    {
+     "senseId": "s.smart-fabrik.1",
+     "active": true
+    },
+    {
+     "senseId": "s.digital-tvilling.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kontrollrum.1",
+     "active": true
+    },
+    {
+     "senseId": "s.övervaka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.obemannad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dygnet-runt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ersätta.1",
+     "active": true
+    },
+    {
+     "senseId": "s.arbetstillfälle.1",
+     "active": true
+    },
+    {
+     "senseId": "s.omskola.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kompetens.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "automatiserade-fabriker.json"
+  },
+  {
+   "id": "m.arbetsmiljorisker",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Arbetsmiljörisker",
+   "titleJa": "{職場|しょくば}の{危険|きけん}",
+   "descriptionSv": "Vilka risker som finns i en verkstad eller en fabrik och hur man förebygger dem: skillnaden mellan en olycka och en skada som kommer långsamt, vad ett skyddsombud gör och hur man talar om risker, tillbud och skydd när man arbetar eller gör praktik.",
+   "descriptionJa": "{工場|こうじょう}や{整備工場|せいびこうじょう}にどんな{危険|きけん}があり、どう{予防|よぼう}するか：{事故|じこ}とゆっくり{起|お}こる{障害|しょうがい}の{違|ちが}い、{安全衛生委員|あんぜんえいせいいいん}が{何|なに}をするか、そして{仕事|しごと}や{実習|じっしゅう}のときに、{危険|きけん}、ヒヤリハット、{安全対策|あんぜんたいさく}についてどう{話|はな}すかを{学|まな}びます。",
+   "categoryId": "R07-A04-T05",
+   "tags": [
+    "teknik",
+    "industri",
+    "arbetsmiljö"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.automatiserade-fabriker"
+   ],
+   "related": [],
+   "recommendedOrder": 4056,
+   "words": [
+    {
+     "senseId": "s.arbetsmiljö.1",
+     "active": true
+    },
+    {
+     "senseId": "s.risk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.riskbedömning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.arbetsolycka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tillbud.1",
+     "active": true
+    },
+    {
+     "senseId": "s.arbetsskada.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tunga-lyft.1",
+     "active": true
+    },
+    {
+     "senseId": "s.belastningsskada.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ensidigt-arbete.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ergonomi.1",
+     "active": true
+    },
+    {
+     "senseId": "s.klämrisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fallrisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.maskinskydd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nödstopp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.buller.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kemikalie.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skyddsrond.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skyddsombud.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "arbetsmiljorisker.json"
+  },
+  {
+   "id": "m.hallbar-industri",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Hållbar industri",
+   "titleJa": "{持続可能|じぞくかのう}な{産業|さんぎょう}",
+   "descriptionSv": "Hur svensk industri försöker minska sina utsläpp: varför stål och batterier står i centrum, hur energi och material kan användas flera gånger, och hur man talar om miljökrav och den gröna omställningen i nyheter, studier och på jobbet.",
+   "descriptionJa": "スウェーデンの{産業|さんぎょう}が{排出|はいしゅつ}をどう{減|へ}らそうとしているか：なぜ{鉄鋼|てっこう}と{電池|でんち}が{中心|ちゅうしん}になっているのか、エネルギーや{材料|ざいりょう}をどう{繰|く}り{返|かえ}し{使|つか}えるのか、そしてニュース、{勉強|べんきょう}、{仕事|しごと}で、{環境基準|かんきょうきじゅん}やグリーン・トランジションについてどう{話|はな}すかを{学|まな}びます。",
+   "categoryId": "R07-A04-T05",
+   "tags": [
+    "teknik",
+    "industri",
+    "miljö"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.arbetsmiljorisker"
+   ],
+   "related": [],
+   "recommendedOrder": 4057,
+   "words": [
+    {
+     "senseId": "s.hållbar.2",
+     "active": true
+    },
+    {
+     "senseId": "s.utsläpp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.koldioxid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.klimatavtryck.1",
+     "active": false
+    },
+    {
+     "senseId": "s.fossilfri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.järnmalm.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vätgas.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stålverk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fossilfritt-stål.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energiförbrukning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elektrifiering.1",
+     "active": false
+    },
+    {
+     "senseId": "s.batterifabrik.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skrot.1",
+     "active": true
+    },
+    {
+     "senseId": "s.återvinna.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spillvärme.1",
+     "active": false
+    },
+    {
+     "senseId": "s.restprodukt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.miljökrav.1",
+     "active": true
+    },
+    {
+     "senseId": "s.grön-omställning.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "hallbar-industri.json"
   }
  ]
 }
