@@ -205,9 +205,20 @@ export const MATR_MOTIFS: Record<string, Svg> = {
     circle(96, 30, 18, C.white, C.ink, 1.6), rect(84, 22, 24, 4, '#e9dcc0', 0, C.ink, 0.8), rect(84, 26, 24, 8, C.white, 0, '#c9c9c4', 0.8), rect(84, 34, 24, 4, '#e9dcc0', 0, C.ink, 0.8), ring(96, 30, 20), ground()),
 
   // ── 4036 Korrosion och slitage ──
-  'matr.korrosion': all(...[[22, STEEL, '#b2582a'], [60, COPPER, PATINA], [98, ALU, C.white]].map(([x, col, spot]) => all(rect((x as number) - 16, 52, 32, 52, col as string, 2, C.ink, 1.6),
-    ...tup([[-8, 62, 5], [6, 72, 4], [-4, 86, 6], [8, 94, 3]]).map(([dx, y, r]) => ellipse((x as number) + (dx as number), y as number, r as number, (r as number) * 0.7, spot as string, C.ink, 0.6)))),
-    ...tup([[22, 30], [60, 24], [98, 30], [40, 40], [80, 38]]).map(([x, y]) => drop(x, y, 1.1)), frame(2, 46, 116, 64), ground()),
+  'matr.korrosion': all(
+    // common threat: a rain cloud with salt, arrows to all three metals
+    path('M30 26 C24 26 24 16 32 16 C34 8 46 6 50 13 C54 6 68 8 68 16 C76 16 76 26 70 26 Z', C.grey2, C.ink, 1.4),
+    ...tup([[34, 34], [46, 38], [58, 34], [66, 39]]).map(([x, y]) => drop(x, y, 0.8)), ...tup([[40, 33], [53, 39], [62, 32]]).map(([x, y]) => rect(x - 1.6, y - 1.6, 3.2, 3.2, C.white, 0.5, C.ink, 0.7)),
+    arrow(36, 44, 20, 60, C.dark, 2.2), arrow(48, 44, 48, 60, C.dark, 2.2), arrow(60, 44, 76, 60, C.dark, 2.2),
+    // iron: red-brown rust
+    rect(9, 66, 22, 38, STEEL, 2, C.ink, 1.4), ...tup([[15, 72, 3], [24, 80, 3.5], [14, 90, 2.5], [25, 97, 2.5]]).map(([x, y, r]) => ellipse(x, y, r, r * 0.7, '#b2582a', C.ink, 0.6)),
+    // copper: green patina
+    rect(37, 66, 22, 38, COPPER, 2, C.ink, 1.4), path('M37 68 C42 66 54 66 59 68 L59 80 C54 84 46 76 37 82 Z', PATINA, C.ink, 0.8), ...tup([[42, 92, 2.6], [53, 97, 2.2]]).map(([x, y, r]) => ellipse(x, y, r, r * 0.7, PATINA, C.ink, 0.6)),
+    // aluminium / zinc: white powdery coating
+    rect(65, 66, 22, 38, ALU, 2, C.ink, 1.4), ...tup([[70, 72], [79, 76], [73, 84], [82, 88], [69, 95], [78, 99], [84, 70]]).map(([x, y]) => circle(x, y, 2, C.white, C.grey, 0.9)),
+    frame(4, 58, 88, 50),
+    // grey healthy metal as the contrast (outside the group)
+    greyed(rect(97, 72, 18, 32, '#c9ced4', 2, C.ink, 1.4), line('M100 78 L104 74', C.white, 1.6)), ground()),
   'matr.vägsalt': all(rect(0, 0, 120, 70, '#dfe8f0', 0, null), rect(0, 70, 120, 42, '#f4f7fa', 0, null), line('M0 92 L120 92', '#c5ced6', 2, '8 6'), truck(70, 96, C.orange),
     path('M40 88 L10 74 L10 104 Z', 'rgba(255,255,255,0.6)', C.grey2, 1), waIn('mvs', 20, -4, ...range(16).map((i) => circle(f1(12 + (i * 17) % 28), f1(78 + (i * 11) % 24), 2.2, C.white, C.ink, 0.9))), ring(24, 89, 18), ...tup([[100, 20], [20, 28], [60, 14]]).map(([x, y]) => circle(x, y, 2, C.white, null))),
   'matr.rostskydd': all(wall('#eef1f4'), car(60, 62, C.sky), rect(20, 64, 6, 48, C.grey, 1, C.ink, 1.2), rect(94, 64, 6, 48, C.grey, 1, C.ink, 1.2), rect(14, 62, 92, 4, C.dark, 1, C.ink, 1.2),
