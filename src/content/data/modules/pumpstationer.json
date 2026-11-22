@@ -1,0 +1,184 @@
+{
+ "id": "m.pumpstationer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Pumpstationer",
+ "titleJa": "ポンプ{場|じょう}",
+ "descriptionSv": "Du lär dig hur vatten och avlopp kan flyttas dit det inte rinner av sig självt, hur pumpstationer övervakas och vad som händer när en pump stannar eller strömmen går.",
+ "descriptionJa": "{自然|しぜん}には{流|なが}れない{場所|ばしょ}へ{上下水|じょうげすい}をどう{運|はこ}ぶのか、ポンプ{場|じょう}がどのように{監視|かんし}されているのか、そしてポンプが{止|と}まったり{停電|ていでん}したりしたときに{何|なに}が{起|お}こるのかを{学|まな}びます。",
+ "categoryId": "R07-A05-T03",
+ "tags": [
+  "avlopp",
+  "infrastruktur",
+  "arbete"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.dagvatten"
+ ],
+ "related": [],
+ "recommendedOrder": 4136,
+ "words": [
+  {
+   "senseId": "s.pumpstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pump.2",
+   "active": true
+  },
+  {
+   "senseId": "s.pumpa-verb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckledning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.drifttekniker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jour.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flottör.1",
+   "active": false
+  },
+  {
+   "senseId": "s.larm.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driftstörning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.igensatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.våtservett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.haveri.1",
+   "active": false
+  },
+  {
+   "senseId": "s.brädda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.strömavbrott.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservkraft.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En natt med jour",
+  "paragraphs": [
+   "Ali arbetar som drifttekniker på kommunen. Han övervakar mer än hundra pumpstationer från en dator. Den här veckan har han jour, så han har telefonen med sig även på natten.",
+   "Klockan två på natten larmar telefonen. En pumpstation vid sjön har en driftstörning. Vattnet i pumpstationen stiger, och flottören har skickat ett larm. Ali kör dit direkt.",
+   "Avloppet i området kan inte gå med självfall, eftersom marken är för platt. I stället pumpar två pumpar vattnet genom en tryckledning upp till en högre punkt. Nu står den ena pumpen still.",
+   "När Ali lyfter upp pumpen ser han problemet. Pumpen är igensatt av våtservetter. – Våtservetter löses inte upp i vatten, säger han. Det är det vanligaste skälet till haveri hos oss. Efter en timme går pumpen igen.",
+   "Om pumpen hade stått still länge hade pumpstationen kunnat brädda, och då hade avloppsvatten runnit ut i sjön. I somras var det ett långt strömavbrott efter en storm. Då klarade sig pumpstationerna tack vare reservkraft."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur övervakar Ali pumpstationerna?",
+    "options": [
+     "Genom att åka runt varje dag",
+     "Från en dator",
+     "Med hjälp av grannarna",
+     "Genom att titta på sjön"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han övervakar mer än hundra pumpstationer från en dator.",
+    "explanationJa": "コンピューターで{監視|かんし}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad skickade larmet?",
+    "options": [
+     "En granne",
+     "Reningsverket",
+     "Flottören",
+     "Telefonbolaget"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Vattnet i pumpstationen stiger, och flottören har skickat ett larm.",
+    "explanationJa": "フロートが{警報|けいほう}を{送|おく}りました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför stod pumpen still?",
+    "options": [
+     "Det var strömavbrott",
+     "Tryckledningen hade gått sönder",
+     "Den var igensatt av våtservetter",
+     "Flottören var trasig"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Pumpen är igensatt av våtservetter.",
+    "explanationJa": "ウェットティッシュで{詰|つ}まっていたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Avloppet i området rinner med självfall till reningsverket.",
+    "correct": false,
+    "explanationSv": "Avloppet i området kan inte gå med självfall, eftersom marken är för platt.",
+    "explanationJa": "{土地|とち}が{平|たい}らなので、{自然流下|しぜんりゅうか}では{流|なが}れません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Pumpstationerna kan fungera en tid utan ström från elnätet.",
+    "correct": true,
+    "explanationSv": "Då klarade sig pumpstationerna tack vare reservkraft.",
+    "explanationJa": "{予備電源|よびでんげん}があるので、{停電|ていでん}のときも{動|うご}きます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Våtservetter löses inte upp i vatten och är en vanlig orsak till stopp i avloppspumpar.",
+    "source": "Svenskt Vatten, ”Spola rätt”",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om arbeten där man har jour och om saker som man inte ska spola ner.",
+  "discussionPoints": [
+   "Skulle du vilja ha ett jobb där man har jour på natten? Varför eller varför inte?",
+   "Vilka saker tror du att folk spolar ner i toaletten fast de inte borde?",
+   "Har du varit med om ett långt strömavbrott? Vad slutade fungera?",
+   "Vet du var den närmaste pumpstationen finns där du bor?"
+  ]
+ },
+ "standard": 2
+}
