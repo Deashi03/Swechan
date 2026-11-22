@@ -1,0 +1,188 @@
+{
+ "id": "m.handverktyg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Handverktyg",
+ "titleJa": "{手工具|てこうぐ}",
+ "descriptionSv": "Vad vanliga handverktyg heter på svenska och vad man gör med dem, så att du kan fråga efter rätt verktyg i butiken, förstå instruktioner och laga saker hemma eller i slöjden.",
+ "descriptionJa": "よく{使|つか}う{手工具|てこうぐ}のスウェーデン{語|ご}での{名前|なまえ}と{使|つか}い{方|かた}を{学|まな}び、{店|みせ}で{正|ただ}しい{道具|どうぐ}を{頼|たの}んだり、{説明|せつめい}を{理解|りかい}したり、{家|いえ}や{工作|こうさく}の{授業|じゅぎょう}で{物|もの}を{直|なお}したりできるようになります。",
+ "categoryId": "R07-A04-T02",
+ "tags": [
+  "verktyg",
+  "verkstad",
+  "teknik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.pneumatik"
+ ],
+ "related": [],
+ "recommendedOrder": 4021,
+ "words": [
+  {
+   "senseId": "s.byggvaruhus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.verktyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handverktyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hammare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slägga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gummiklubba.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skruvmejsel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avbitartång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skiftnyckel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blocknyckel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.insexnyckel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fil.4",
+   "active": true
+  },
+  {
+   "senseId": "s.hyvel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stämjärn.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kofot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mattkniv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skruvstycke.1",
+   "active": false
+  },
+  {
+   "senseId": "s.handtag.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Verktyg till det gamla huset",
+  "paragraphs": [
+   "Naoko har köpt ett gammalt hus utanför Västerås. Det finns mycket att laga, men hon har nästan inga verktyg. En lördag åker hon till byggvaruhuset med sin granne Lars, som är snickare.",
+   "– Börja med några bra handverktyg, säger Lars. En hammare och en skruvmejsel behöver alla. En gummiklubba är bra när man inte vill göra märken i träet. En slägga behöver du bara om du ska riva en vägg.",
+   "Vid hyllan med nycklar visar han en skiftnyckel, som passar många storlekar av muttrar, och en blocknyckel, som bara passar en storlek men sitter stadigt. – Insexnycklar får du ofta på köpet när du köper möbler, skrattar han. Naoko tar också en avbitartång för att klippa av ståltråd.",
+   "Naoko vill göra i ordning en gammal byrå. Lars visar en fil för metall, en hyvel som tar bort tunna skivor av trä och ett stämjärn för små hål och spår. – Med ett skruvstycke på bänken sitter träbiten fast medan du arbetar, säger han.",
+   "Till sist köper Naoko en kofot och en mattkniv. Lars känner på verktygen. – Välj ett handtag som ligger bra i handen, säger han. Hemma berättar Naoko om köpen för sin son. Han har slöjd i skolan och kan redan använda en hyvel. – Det lär sig alla barn i Sverige, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vem följer med Naoko till byggvaruhuset?",
+    "options": [
+     "Hennes son",
+     "En säljare från butiken",
+     "En kollega från jobbet",
+     "Hennes granne, som är snickare"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En lördag åker hon till byggvaruhuset med sin granne Lars, som är snickare.",
+    "explanationJa": "となりに{住|す}む{大工|だいく}のラーシュです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "När är en gummiklubba bra enligt Lars?",
+    "options": [
+     "När man inte vill göra märken i träet",
+     "När man ska riva en vägg",
+     "När man ska klippa ståltråd",
+     "När man ska dra ut en spik"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En gummiklubba är bra när man inte vill göra märken i träet.",
+    "explanationJa": "{木|き}に{傷|きず}をつけたくないときです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad är skillnaden mellan skiftnyckeln och blocknyckeln?",
+    "options": [
+     "Skiftnyckeln passar många storlekar, blocknyckeln bara en",
+     "Blocknyckeln är gjord av gummi",
+     "Skiftnyckeln används bara till möbler",
+     "Det finns ingen skillnad"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han visar en skiftnyckel, som passar många storlekar av muttrar, och en blocknyckel, som bara passar en storlek men sitter stadigt.",
+    "explanationJa": "モンキーレンチはいろいろなサイズに{合|あ}い、コンビネーションレンチは{一|ひと}つのサイズだけに{合|あ}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Ett skruvstycke håller fast det man arbetar med.",
+    "correct": true,
+    "explanationSv": "Med ett skruvstycke på bänken sitter träbiten fast medan du arbetar.",
+    "explanationJa": "{万力|まんりき}で{材料|ざいりょう}が{固定|こてい}されます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Naokos son har aldrig använt en hyvel.",
+    "correct": false,
+    "explanationSv": "Han har slöjd i skolan och kan redan använda en hyvel.",
+    "explanationJa": "{息子|むすこ}は{学校|がっこう}の{工作|こうさく}の{授業|じゅぎょう}で、もうかんなを{使|つか}えます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Slöjd är ett obligatoriskt ämne i den svenska grundskolan, och eleverna arbetar med verktyg för trä, metall och textil.",
+    "source": "Skolverket, Läroplan för grundskolan (Lgr22), kursplanen i slöjd",
+    "checked": "2026-11-22",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om verktyg och om att laga och bygga saker själv.",
+  "discussionPoints": [
+   "Vilka handverktyg har du hemma?",
+   "Vad har du lagat eller byggt själv?",
+   "Hade du slöjd eller teknik i skolan? Vad gjorde ni där?",
+   "Köper du hellre billiga eller dyra verktyg? Varför?"
+  ]
+ },
+ "standard": 2
+}

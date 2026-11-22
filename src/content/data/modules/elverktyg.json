@@ -1,0 +1,176 @@
+{
+ "id": "m.elverktyg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Elverktyg",
+ "titleJa": "{電動工具|でんどうこうぐ}",
+ "descriptionSv": "Hur man talar om elverktyg när man köper, hyr och använder dem: vad maskinerna och deras delar heter, hur de får ström och hur man följer enkla säkerhetsregler.",
+ "descriptionJa": "{電動工具|でんどうこうぐ}を{買|か}ったり、{借|か}りたり、{使|つか}ったりするときの{話|はな}し{方|かた}を{学|まな}びます。{機械|きかい}とその{部品|ぶひん}の{名前|なまえ}、{電気|でんき}のとり{方|かた}、そして{簡単|かんたん}な{安全|あんぜん}のルールを{守|まも}る{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A04-T02",
+ "tags": [
+  "verktyg",
+  "verkstad",
+  "teknik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.handverktyg"
+ ],
+ "related": [],
+ "recommendedOrder": 4022,
+ "words": [
+  {
+   "senseId": "s.elverktyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.borrmaskin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skruvdragare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.batteri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sladdlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppladdningsbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.chuck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bits.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avtryckare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varvtal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skruva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sladd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.effekt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förlängningssladd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-ur.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kenji köper sitt första elverktyg",
+  "paragraphs": [
+   "Kenji och Saki har flyttat till en lägenhet i Göteborg. De ska sätta upp hyllor och lampor, och Kenji vill köpa sitt första elverktyg. I byggvaruhuset frågar han en säljare om råd.",
+   "– Vill du ha en borrmaskin eller en skruvdragare? frågar säljaren. Med borrmaskinen gör du hål i väggen, och med skruvdragaren skruvar du i skruvarna. Kenji väljer en sladdlös modell som går på batteri. Batteriet är uppladdningsbart, och laddaren följer med.",
+   "Säljaren visar hur man öppnar chucken och sätter i en borr. Sedan visar hon en ask med bits för olika skruvar. – Tryck lätt på avtryckaren först, säger hon. Då är varvtalet lågt och borren glider inte.",
+   "Saki vill göra golvet i hallen fint, men en maskin för golv är dyr. – Den kan ni hyra här för en dag, säger säljaren. Maskinen har en sladd och hög effekt, så ni behöver nog också en förlängningssladd.",
+   "Hemma läser Kenji säkerhetsinstruktionerna. ”Ta ut batteriet eller dra ur sladden innan du byter borr”, står det. Efter en timme sitter hyllorna uppe, och Saki är glad."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör man med skruvdragaren enligt säljaren?",
+    "options": [
+     "Gör hål i väggen",
+     "Skruvar i skruvarna",
+     "Slipar golvet",
+     "Laddar batteriet"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Med borrmaskinen gör du hål i väggen, och med skruvdragaren skruvar du i skruvarna.",
+    "explanationJa": "{電動|でんどう}ドライバーでねじを{締|し}めます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilken sorts modell väljer Kenji?",
+    "options": [
+     "En modell med lång sladd",
+     "En gammal modell utan motor",
+     "En modell som man hyr",
+     "En sladdlös modell med batteri"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Kenji väljer en sladdlös modell som går på batteri.",
+    "explanationJa": "バッテリーで{動|うご}くコードレスのモデルです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför ska man först trycka lätt på avtryckaren?",
+    "options": [
+     "Då laddas batteriet",
+     "Då är varvtalet lågt och borren glider inte",
+     "Då öppnas chucken",
+     "Då blir maskinen tystare för grannarna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Tryck lätt på avtryckaren först, säger hon. Då är varvtalet lågt och borren glider inte.",
+    "explanationJa": "{回転数|かいてんすう}が{低|ひく}く、ドリルが{滑|すべ}らないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Saki och Kenji köper maskinen för golvet.",
+    "correct": false,
+    "explanationSv": "– Den kan ni hyra här för en dag, säger säljaren.",
+    "explanationJa": "{床用|ゆかよう}の{研磨機|けんまき}は{買|か}わずに、{一日|いちにち}{借|か}りることができます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Maskinen för golvet behöver ström från ett eluttag.",
+    "correct": true,
+    "explanationSv": "Maskinen har en sladd och hög effekt, så ni behöver nog också en förlängningssladd.",
+    "explanationJa": "コードがあるので、コンセントの{電気|でんき}が{必要|ひつよう}です。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om elverktyg hemma och på jobbet.",
+  "discussionPoints": [
+   "Har du något elverktyg hemma? Vad använder du det till?",
+   "Föredrar du verktyg med sladd eller med batteri? Varför?",
+   "Har du någon gång hyrt ett verktyg eller en maskin?",
+   "Vilka säkerhetsregler tycker du är viktigast när man använder elverktyg?"
+  ]
+ },
+ "standard": 2
+}
