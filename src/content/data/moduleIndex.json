@@ -4452,8 +4452,8 @@
   },
   {
    "id": "m.flytta-till-ny-bostad",
-   "contentVersion": 3,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 4,
+   "updatedAt": "2026-11-22",
    "titleSv": "Flytta till ny bostad",
    "titleJa": "{新|あたら}しい{住|す}まいへの{引|ひ}っ{越|こ}し",
    "descriptionSv": "Att flytta: packa, flyttkartonger, flyttfirma, flyttstäda och inflyttningsfest.",
@@ -9596,8 +9596,8 @@
   },
   {
    "id": "m.andra-och-laga-plagg",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-16",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-22",
    "titleSv": "Ändra och laga plagg",
    "titleJa": "{服|ふく}の{直|なお}しと{修繕|しゅうぜん}",
    "descriptionSv": "Att ändra och laga kläder: förkorta, ta in, släppa ut, lappa, knappnål, symaskin och sömmerska.",
@@ -12910,7 +12910,7 @@
   },
   {
    "id": "m.satta-pa-och-stanga-av",
-   "contentVersion": 3,
+   "contentVersion": 4,
    "updatedAt": "2026-11-22",
    "titleSv": "Sätta på och stänga av",
    "titleJa": "つけることと{消|け}すこと",
@@ -98238,8 +98238,8 @@
   },
   {
    "id": "m.sjofaglar",
-   "contentVersion": 1,
-   "updatedAt": "2026-11-16",
+   "contentVersion": 2,
+   "updatedAt": "2026-11-22",
    "titleSv": "Sjöfåglar",
    "titleJa": "{水鳥|みずどり}",
    "descriptionSv": "Sjöfåglar: sjöfågel, dyka, and, gräsand, knipa, ejder, skrake, svan, knölsvan, sångsvan, gås, grågås, mås, trut, tärna, skarv, lom och simhud.",
@@ -136237,8 +136237,8 @@
   },
   {
    "id": "m.installningar-och-behorighet",
-   "contentVersion": 1,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 2,
+   "updatedAt": "2026-11-22",
    "titleSv": "Inställningar och behörighet",
    "titleJa": "{設定|せってい}と{権限|けんげん}",
    "descriptionSv": "Hur man ställer in en mobil eller en dator så att den passar en själv: konto och inloggning, skärm och ljud, vilka appar som får se var man är, och vem som får ändra något på datorn.",
@@ -137685,7 +137685,7 @@
   },
   {
    "id": "m.natverksproblem",
-   "contentVersion": 2,
+   "contentVersion": 3,
    "updatedAt": "2026-11-22",
    "titleSv": "Nätverksproblem",
    "titleJa": "ネットワークのトラブル",
@@ -152571,6 +152571,633 @@
    ],
    "standard": 2,
    "bodyFile": "lackor-och-stopp.json"
+  },
+  {
+   "id": "m.vagens-lager",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Vägens lager",
+   "titleJa": "{道路|どうろ}の{層|そう}",
+   "descriptionSv": "Du lär dig hur en väg är uppbyggd under asfalten: vilka lager som ligger där och vad de gör, varför man packar och dränerar och vad tjäle och nedsatt bärighet betyder för vägen på våren.",
+   "descriptionJa": "アスファルトの{下|した}で{道路|どうろ}がどのようにつくられているかを{学|まな}びます。どんな{層|そう}があってそれぞれ{何|なに}をするのか、なぜ{締|し}め{固|かた}めたり{排水|はいすい}したりするのか、そして{春|はる}の{凍結|とうけつ}や{耐荷力|たいかりょく}の{制限|せいげん}が{道路|どうろ}にとって{何|なに}を{意味|いみ}するのかがわかるようになります。",
+   "categoryId": "R07-A05-T04",
+   "tags": [
+    "vägar",
+    "byggande",
+    "infrastruktur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.lackor-och-stopp"
+   ],
+   "related": [],
+   "recommendedOrder": 4141,
+   "words": [
+    {
+     "senseId": "s.vägbygge.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vägbana.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vägren.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dike.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lager-förråd.2",
+     "active": true
+    },
+    {
+     "senseId": "s.slitlager.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bärlager.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förstärkningslager.1",
+     "active": false
+    },
+    {
+     "senseId": "s.makadam.1",
+     "active": true
+    },
+    {
+     "senseId": "s.grus.1",
+     "active": true
+    },
+    {
+     "senseId": "s.markduk.1",
+     "active": false
+    },
+    {
+     "senseId": "s.packa.2",
+     "active": true
+    },
+    {
+     "senseId": "s.lutning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slänt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.dränera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tjäle.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bärighet.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "vagens-lager.json"
+  },
+  {
+   "id": "m.asfalt-och-belaggning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Asfalt och beläggning",
+   "titleJa": "アスファルトと{舗装|ほそう}",
+   "descriptionSv": "Du lär dig att prata om vad som ligger överst på gator och vägar: hur ny asfalt görs och läggs, vilka andra beläggningar som finns för vägar och uppfarter och hur man beskriver en väg som har blivit sliten.",
+   "descriptionJa": "{通|とお}りや{道路|どうろ}のいちばん{上|うえ}にあるものについて{話|はな}せるようになります。{新|あたら}しいアスファルトがどのようにつくられて{敷|し}かれるのか、{道路|どうろ}や{車|くるま}の{乗|の}り{入|い}れ{口|ぐち}にはほかにどんな{舗装|ほそう}があるのか、すり{減|へ}った{道路|どうろ}をどう{説明|せつめい}するのかを{学|まな}びます。",
+   "categoryId": "R07-A05-T04",
+   "tags": [
+    "vägar",
+    "byggande",
+    "infrastruktur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.vagens-lager"
+   ],
+   "related": [],
+   "recommendedOrder": 4142,
+   "words": [
+    {
+     "senseId": "s.asfalt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.beläggning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.asfaltera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.asfaltverk.1",
+     "active": false
+    },
+    {
+     "senseId": "s.asfaltläggare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vält.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ojämn.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hjulspår.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skarv.2",
+     "active": true
+    },
+    {
+     "senseId": "s.vägmarkering.1",
+     "active": true
+    },
+    {
+     "senseId": "s.oljegrus.1",
+     "active": false
+    },
+    {
+     "senseId": "s.grusväg.1",
+     "active": true
+    },
+    {
+     "senseId": "s.uppfart.1",
+     "active": true
+    },
+    {
+     "senseId": "s.marksten.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gatsten.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kullersten.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "asfalt-och-belaggning.json"
+  },
+  {
+   "id": "m.korsningar-och-trafikplatser",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Korsningar och trafikplatser",
+   "titleJa": "{交差点|こうさてん}とインターチェンジ",
+   "descriptionSv": "Du lär dig att beskriva hur vägar möts och hur trafiken leds förbi varandra: i vanliga korsningar i stan, på motorvägens trafikplatser och på mötesfria vägar, och hur man kör in i trafiken när två körfält blir ett.",
+   "descriptionJa": "{道路|どうろ}がどのように{交|まじ}わり、{交通|こうつう}がどのように{分|わ}けられているかを{説明|せつめい}できるようになります。{町|まち}の{普通|ふつう}の{交差点|こうさてん}、{高速道路|こうそくどうろ}のインターチェンジ、{対向車|たいこうしゃ}と{分離|ぶんり}された{道路|どうろ}、そして{二|ふた}つの{車線|しゃせん}が{一|ひと}つになるときの{合流|ごうりゅう}のしかたを{学|まな}びます。",
+   "categoryId": "R07-A05-T04",
+   "tags": [
+    "vägar",
+    "trafik",
+    "infrastruktur"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.asfalt-och-belaggning"
+   ],
+   "related": [],
+   "recommendedOrder": 4143,
+   "words": [
+    {
+     "senseId": "s.korsning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stopplinje.1",
+     "active": true
+    },
+    {
+     "senseId": "s.svängfält.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vänstersväng.1",
+     "active": true
+    },
+    {
+     "senseId": "s.cirkulationsplats.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trafikö.1",
+     "active": false
+    },
+    {
+     "senseId": "s.körriktning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.körfält.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trafikplats.1",
+     "active": true
+    },
+    {
+     "senseId": "s.påfart.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avfart.1",
+     "active": true
+    },
+    {
+     "senseId": "s.planskild.1",
+     "active": false
+    },
+    {
+     "senseId": "s.blixtlåsprincipen.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mitträcke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mötesfri-väg.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "korsningar-och-trafikplatser.json"
+  },
+  {
+   "id": "m.brotyper",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Brotyper",
+   "titleJa": "{橋|はし}の{種類|しゅるい}",
+   "descriptionSv": "Du lär dig att känna igen och beskriva olika sorters broar, från enkla broar över en väg till höga broar med torn och kablar, och vad man menar med en bros delar, spännvidd och segelfria höjd.",
+   "descriptionJa": "いろいろな{種類|しゅるい}の{橋|はし}を{見分|みわ}けて{説明|せつめい}できるようになります。{道路|どうろ}にかかる{簡単|かんたん}な{橋|はし}から、{塔|とう}とケーブルのある{高|たか}い{橋|はし}まで{扱|あつか}い、{橋|はし}の{部分|ぶぶん}やスパン、{桁下高|けたしただか}が{何|なに}を{意味|いみ}するのかも{学|まな}びます。",
+   "categoryId": "R07-A05-T04",
+   "tags": [
+    "vägar",
+    "broar",
+    "infrastruktur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.korsningar-och-trafikplatser"
+   ],
+   "related": [],
+   "recommendedOrder": 4144,
+   "words": [
+    {
+     "senseId": "s.bro.1",
+     "active": true
+    },
+    {
+     "senseId": "s.balkbro.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pelare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.brofäste.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bågbro.1",
+     "active": true
+    },
+    {
+     "senseId": "s.valv.1",
+     "active": false
+    },
+    {
+     "senseId": "s.hängbro.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vajer.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pylon.1",
+     "active": true
+    },
+    {
+     "senseId": "s.snedkabelbro.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spännvidd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.segelfri-höjd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.klaffbro.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pontonbro.1",
+     "active": false
+    },
+    {
+     "senseId": "s.viadukt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gångbro.1",
+     "active": true
+    },
+    {
+     "senseId": "s.räcke.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "brotyper.json"
+  },
+  {
+   "id": "m.tunnlar",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Tunnlar",
+   "titleJa": "トンネル",
+   "descriptionSv": "Du lär dig att förstå nyheter och samtal om tunnelbyggen: hur man tar sig igenom berget, hur man gör tunneln säker och varför vattnet kan bli ett problem, och vilka delar en färdig tunnel har.",
+   "descriptionJa": "トンネル{工事|こうじ}についてのニュースや{会話|かいわ}がわかるようになります。どのように{岩|いわ}を{掘|ほ}り{進|すす}むのか、トンネルをどう{安全|あんぜん}にするのか、なぜ{水|みず}が{問題|もんだい}になるのか、そして{完成|かんせい}したトンネルにはどんな{部分|ぶぶん}があるのかを{学|まな}びます。",
+   "categoryId": "R07-A05-T04",
+   "tags": [
+    "vägar",
+    "tunnlar",
+    "infrastruktur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.brotyper"
+   ],
+   "related": [],
+   "recommendedOrder": 4145,
+   "words": [
+    {
+     "senseId": "s.tunnel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bergtunnel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tunnelrör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tunnelmynning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.borra.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spränga.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sprängning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bergbult.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sprutbetong.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ventilation.1",
+     "active": true
+    },
+    {
+     "senseId": "s.grundvatten.1",
+     "active": false
+    },
+    {
+     "senseId": "s.tunnelborrmaskin.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sänktunnel.1",
+     "active": false
+    },
+    {
+     "senseId": "s.genomslag.2",
+     "active": false
+    },
+    {
+     "senseId": "s.nödutgång.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gångtunnel.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "tunnlar.json"
+  },
+  {
+   "id": "m.vagarbeten",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Vägarbeten",
+   "titleJa": "{道路工事|どうろこうじ}",
+   "descriptionSv": "Du lär dig att förstå trafikinformation och skyltar vid vägarbeten, hur man kör förbi ett vägarbete och vad man gör när en väg är avstängd och trafiken leds en annan väg.",
+   "descriptionJa": "{道路工事|どうろこうじ}についての{交通情報|こうつうじょうほう}や{標識|ひょうしき}がわかるようになります。{工事区間|こうじくかん}をどう{通|とお}り{抜|ぬ}けるのか、{道路|どうろ}が{通行止|つうこうど}めで{交通|こうつう}が{別|べつ}の{道|みち}に{迂回|うかい}させられるときにどうするのかを{学|まな}びます。",
+   "categoryId": "R07-A05-T04",
+   "tags": [
+    "vägar",
+    "trafik",
+    "infrastruktur"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.tunnlar"
+   ],
+   "related": [],
+   "recommendedOrder": 4146,
+   "words": [
+    {
+     "senseId": "s.vägarbete.1",
+     "active": true
+    },
+    {
+     "senseId": "s.köbildning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trafikkon.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tillfällig.1",
+     "active": false
+    },
+    {
+     "senseId": "s.vägarbetare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.varselväst.1",
+     "active": true
+    },
+    {
+     "senseId": "s.flaggvakt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lotsbil.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stänga-av.2",
+     "active": true
+    },
+    {
+     "senseId": "s.avstängd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vägbom.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avspärrning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.leda-om.1",
+     "active": true
+    },
+    {
+     "senseId": "s.omledning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.omväg.1",
+     "active": true
+    },
+    {
+     "senseId": "s.körplåt.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "vagarbeten.json"
+  },
+  {
+   "id": "m.underhall-av-vagar",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-22",
+   "titleSv": "Underhåll av vägar",
+   "titleJa": "{道路|どうろ}の{維持管理|いじかんり}",
+   "descriptionSv": "Du lär dig att prata om hur vägar sköts året runt: vilka skador som kommer efter vintern, vem som ansvarar för en väg och hur man anmäler ett fel, och varför uppskjutet underhåll blir en fråga i politiken.",
+   "descriptionJa": "{一年|いちねん}を{通|とお}して{道路|どうろ}がどのように{管理|かんり}されているかを{話|はな}せるようになります。{冬|ふゆ}のあとにどんな{傷|いた}みが{出|で}るのか、だれが{道路|どうろ}に{責任|せきにん}をもつのか、{不具合|ふぐあい}をどう{通報|つうほう}するのか、そして{先送|さきおく}りされた{維持管理|いじかんり}がなぜ{政治|せいじ}の{問題|もんだい}になるのかを{学|まな}びます。",
+   "categoryId": "R07-A05-T04",
+   "tags": [
+    "vägar",
+    "underhåll",
+    "infrastruktur"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.vagarbeten"
+   ],
+   "related": [],
+   "recommendedOrder": 4147,
+   "words": [
+    {
+     "senseId": "s.underhåll.1",
+     "active": true
+    },
+    {
+     "senseId": "s.väghållare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.inspektera.1",
+     "active": false
+    },
+    {
+     "senseId": "s.tjälskada.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spricka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.potthål.1",
+     "active": true
+    },
+    {
+     "senseId": "s.slitage.1",
+     "active": true
+    },
+    {
+     "senseId": "s.felanmäla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lappa.2",
+     "active": true
+    },
+    {
+     "senseId": "s.laga.2",
+     "active": true
+    },
+    {
+     "senseId": "s.halkbekämpning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.salta.2",
+     "active": true
+    },
+    {
+     "senseId": "s.vägkant.1",
+     "active": true
+    },
+    {
+     "senseId": "s.röja.2",
+     "active": false
+    },
+    {
+     "senseId": "s.dikesrensning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.underhållsskuld.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "underhall-av-vagar.json"
   }
  ]
 }

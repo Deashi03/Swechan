@@ -73,6 +73,7 @@
        "ja": "{映画館|えいがかん}では{携帯|けいたい}の{電源|でんげん}を{切|き}りなさい。"
       }
      ],
+     "labelSv": "apparat",
      "synonyms": [
       {
        "senseId": "s.sätta-på.1",
@@ -93,8 +94,74 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.stänga-av.2",
+     "ja": "（{道路|どうろ}を）{通行止|つうこうど}めにする、{封鎖|ふうさ}する",
+     "defSv": "Göra så att trafiken inte kan komma in på en väg, en gata eller ett område.",
+     "defJa": "{車|くるま}などが{道路|どうろ}や{通|とお}り、ある{場所|ばしょ}に{入|はい}れないようにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Polisen stängde av gatan efter olyckan.",
+       "ja": "{事故|じこ}のあと、{警察|けいさつ}は{通|とお}りを{通行止|つうこうど}めにしました。"
+      }
+     ],
+     "labelSv": "väg",
+     "frame": {
+      "subject": "Polisen",
+      "complement": "gatan"
+     },
+     "tags": [
+      "vägar",
+      "trafik",
+      "infrastruktur"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B1"
+    },
+    {
+     "id": "s.stänga-av.3",
+     "ja": "（{学校|がっこう}や{仕事|しごと}から）{一時的|いちじてき}に{締|し}め{出|だ}す、{停学|ていがく}・{出場停止|しゅつじょうていし}にする",
+     "defSv": "Tillfälligt förbjuda någon att vara med i en skola, ett arbete eller en idrott.",
+     "defJa": "{学校|がっこう}や{仕事|しごと}、スポーツに{参加|さんか}することを{一時的|いちじてき}に{禁止|きんし}する。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Spelaren stängdes av i tre matcher.",
+       "ja": "その{選手|せんしゅ}は3{試合|しあい}の{出場停止|しゅつじょうていし}になりました。"
+      },
+      {
+       "sv": "Hon stängdes av från jobbet i en vecka.",
+       "ja": "{彼女|かのじょ}は{一週間|いっしゅうかん}、{仕事|しごと}を{停止|ていし}させられました。"
+      }
+     ],
+     "labelSv": "förbjuda",
+     "collocations": [
+      "stängas av från skolan",
+      "stängas av i två matcher"
+     ],
+     "explanation": {
+      "sv": "Att stänga av någon är ett straff eller en åtgärd: personen får inte vara med en tid. Man stängs av från skolan, från jobbet eller i några matcher. Det används ofta i passiv form: han stängdes av. Att utesluta någon är hårdare och betyder ofta för alltid.",
+      "ja": "「stänga av」{人|ひと}は、{罰|ばつ}や{処分|しょぶん}として、しばらく{参加|さんか}させないことです。{学校|がっこう}や{仕事|しごと}、{何試合|なんしあい}かの{試合|しあい}から{外|はず}されます。「han stängdes av（{彼|かれ}は{停止|ていし}させられた）」のように{受|う}け{身|み}でよく{使|つか}います。「utesluta（{除名|じょめい}する）」はもっと{厳|きび}しく、ずっと{外|はず}すことが{多|おお}いです。"
+     },
+     "tags": [
+      "vägar",
+      "trafik",
+      "infrastruktur"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-22"
+   }
   },
   {
    "id": "e.slå-på",
