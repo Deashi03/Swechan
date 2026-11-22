@@ -182258,7 +182258,13 @@
    "motif": "prodm.cykeltid",
    "group": "T04",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.58.0",
+    "hash": "c5f20ede",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.massproducera.1",
@@ -182325,7 +182331,10 @@
    "motif": "prodm.3D-utskrift",
    "group": "T04",
    "quiz": true,
-   "animated": true
+   "animated": true,
+   "confusableWith": [
+    "s.additiv-tillverkning.1"
+   ]
   },
   {
    "senseId": "s.additiv-tillverkning.1",
@@ -182334,7 +182343,16 @@
    "group": "T04",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.3D-utskrift.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.58.0",
+    "hash": "70bd324d",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.skräddarsy.1",
@@ -182380,7 +182398,13 @@
    "motif": "prodm.färdigmonterad",
    "group": "T04",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.58.0",
+    "hash": "f28ee3e5",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.kvalitetskontroll.1",
@@ -182403,7 +182427,13 @@
    "motif": "prodm.defekt",
    "group": "T04",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.58.0",
+    "hash": "1d10274e",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.felfri.1",
@@ -182411,7 +182441,13 @@
    "motif": "prodm.felfri",
    "group": "T04",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.58.0",
+    "hash": "45df3d43",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.kvalitetssäkring.1",
@@ -182419,7 +182455,13 @@
    "motif": "prodm.kvalitetssäkring",
    "group": "T04",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.58.0",
+    "hash": "9e5f0a99",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.certifiering.1",
@@ -182434,7 +182476,13 @@
    "motif": "prodm.spårbarhet",
    "group": "T04",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.58.0",
+    "hash": "4c2d0bc6",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.återkalla.3",
