@@ -1,0 +1,190 @@
+{
+ "id": "m.mattsattning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Måttsättning",
+ "titleJa": "{寸法|すんぽう}の{記入|きにゅう}",
+ "descriptionSv": "Hur man mäter och skriver mått: hur mått anges på en ritning, vad som skiljer yttre och inre mått, och varför man inte ska avrunda när något ska passa exakt.",
+ "descriptionJa": "{寸法|すんぽう}の{測|はか}り{方|かた}と{書|か}き{方|かた}：{図面|ずめん}に{寸法|すんぽう}をどう{書|か}き{入|い}れるか、{外|そと}の{寸法|すんぽう}と{内|うち}の{寸法|すんぽう}はどう{違|ちが}うか、そしてぴったり{合|あ}わせたいときになぜ{数字|すうじ}を{丸|まる}めてはいけないのかを{学|まな}びます。",
+ "categoryId": "R07-A04-T06",
+ "tags": [
+  "teknik",
+  "tillverkning",
+  "ritning"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.ritningssymboler"
+ ],
+ "related": [],
+ "recommendedOrder": 4062,
+ "words": [
+  {
+   "senseId": "s.mått.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-mått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.måttsätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.måttlinje.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ange.1",
+   "active": true
+  },
+  {
+   "senseId": "s.millimeter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.längd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bredd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjocklek.1",
+   "active": true
+  },
+  {
+   "senseId": "s.yttermått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.innermått.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avrunda.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vinkel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinkelrät.1",
+   "active": false
+  },
+  {
+   "senseId": "s.parallell.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En hylla till köket",
+  "paragraphs": [
+   "Sara vill ha en hylla i köket, mellan kylskåpet och väggen. Hennes granne Johan har en liten verkstad och lovar att hjälpa henne. – Först måste vi ta mått, säger han och hämtar en tumstock.",
+   "Utrymmet är 42 centimeter brett. Johan mäter också höjden och djupet. – Ska vi ange måtten i tum? skämtar Sara. – Nej, på ritningar anger man alla mått i millimeter, svarar Johan. I Sverige använder vi tum mest för skärmar och cykelhjul. En tum är 25,4 millimeter.",
+   "Sedan ritar Johan hyllan och måttsätter ritningen. Varje måttlinje har en pil i båda ändarna, och siffran står ovanför linjen. Hyllans höjd är 600 millimeter och bredden är 400 millimeter. Brädorna har en tjocklek på 18 millimeter. Johan sågar fyra brädor i rätt längd.",
+   "Johan förklarar skillnaden mellan yttermått och innermått. Yttermåttet är 400 millimeter, men innermåttet är bara 364 millimeter, eftersom båda sidorna är 18 millimeter tjocka. – Mått på en ritning ska man inte avrunda, säger Johan. Ett fel på några millimeter kan göra att hyllan inte får plats.",
+   "Hyllplanen ska vara parallella med golvet och vinkelräta mot sidorna. Johan kontrollerar varje vinkel med en vinkelhake. På kvällen står hyllan på sin plats. Den passar perfekt, med en centimeter luft på varje sida."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Johan först?",
+    "options": [
+     "Han sågar brädor",
+     "Han köper en hylla",
+     "Han ritar ett kök",
+     "Han tar mått"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Först måste vi ta mått, säger han och hämtar en tumstock.",
+    "explanationJa": "まず{寸法|すんぽう}を{測|はか}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "I vilken enhet anger man mått på ritningar?",
+    "options": [
+     "Tum",
+     "Millimeter",
+     "Centimeter",
+     "Meter"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Nej, på ritningar anger man alla mått i millimeter, svarar Johan.",
+    "explanationJa": "{図面|ずめん}では、すべての{寸法|すんぽう}をミリで{書|か}きます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är innermåttet mindre än yttermåttet?",
+    "options": [
+     "Johan har avrundat måttet",
+     "Båda sidorna är 18 millimeter tjocka",
+     "Hyllan är för bred",
+     "Johan mätte fel"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Yttermåttet är 400 millimeter, men innermåttet är bara 364 millimeter, eftersom båda sidorna är 18 millimeter tjocka.",
+    "explanationJa": "{両側|りょうがわ}の{板|いた}の{厚|あつ}さがそれぞれ18ミリあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Siffran står under måttlinjen.",
+    "correct": false,
+    "explanationSv": "Varje måttlinje har en pil i båda ändarna, och siffran står ovanför linjen.",
+    "explanationJa": "{数字|すうじ}は{寸法線|すんぽうせん}の{上|うえ}に{書|か}いてあります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Hyllan får plats mellan kylskåpet och väggen.",
+    "correct": true,
+    "explanationSv": "Den passar perfekt, med en centimeter luft på varje sida.",
+    "explanationJa": "{両側|りょうがわ}に1センチずつ{余裕|よゆう}があり、ぴったり{入|はい}ります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En tum är 25,4 millimeter.",
+    "source": "Nationalencyklopedin, uppslagsordet ”tum”",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "På tekniska ritningar anges mått i regel i millimeter utan att enheten skrivs ut.",
+    "source": "SIS, Svenska institutet för standarder (SS-ISO 129-1)",
+    "checked": "2026-11-22",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att mäta och om mått i vardagen, till exempel när man köper möbler eller bygger något.",
+  "discussionPoints": [
+   "När tog du mått på något senast? Vad var det?",
+   "Har du köpt en möbel som inte fick plats? Vad hände?",
+   "Vilka mått använder man i ditt land: centimeter eller tum?",
+   "Vad är svårast när man ska bygga något själv?"
+  ]
+ },
+ "standard": 2
+}

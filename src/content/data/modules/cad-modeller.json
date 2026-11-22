@@ -1,0 +1,172 @@
+{
+ "id": "m.cad-modeller",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "CAD-modeller",
+ "titleJa": "CADモデル",
+ "descriptionSv": "Hur man talar om att konstruera i datorn: hur en idé går från skiss till modell på skärmen, hur man arbetar med delar och helheter, och hur man kan testa en produkt innan den finns.",
+ "descriptionJa": "コンピューターでの{設計|せっけい}についての{話|はな}し{方|かた}：アイデアがスケッチから{画面|がめん}の{上|うえ}のモデルになるまでの{流|なが}れ、{部品|ぶひん}と{全体|ぜんたい}の{扱|あつか}い{方|かた}、そして{製品|せいひん}ができる{前|まえ}にどうテストできるかを{学|まな}びます。",
+ "categoryId": "R07-A04-T06",
+ "tags": [
+  "teknik",
+  "tillverkning",
+  "ritning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.tvarsnitt-och-vyer"
+ ],
+ "related": [],
+ "recommendedOrder": 4065,
+ "words": [
+  {
+   "senseId": "s.konstruktör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ritbord.1",
+   "active": false
+  },
+  {
+   "senseId": "s.CAD-program.1",
+   "active": true
+  },
+  {
+   "senseId": "s.programvara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skissa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.CAD-modell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärm.2",
+   "active": true
+  },
+  {
+   "senseId": "s.rotera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.zooma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.detalj.2",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanställning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.simulera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.virtuell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kollidera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.version.1",
+   "active": true
+  },
+  {
+   "senseId": "s.visualisera.2",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Från ritbord till skärm",
+  "paragraphs": [
+   "Under sin praktik får Kenji besöka avdelningen där man tar fram nya produkter. Där arbetar Sara, som är konstruktör. Hon visar ett gammalt ritbord som står i ett hörn. – Här ritade man allt för hand förr, säger hon. Nu gör vi allt i ett CAD-program.",
+   "Sara skissar ofta en idé på papper först. Sedan bygger hon en CAD-modell på skärmen. Hon kan rotera modellen, zooma in på ett litet hål och se den från alla håll.",
+   "Just nu arbetar hon med en ny detalj till en lastbil, ett fäste i aluminium. Fästet ska sitta ihop med tio andra delar. I en sammanställning ser Kenji hur alla delar sitter ihop.",
+   "Programvaran kan också simulera hur fästet klarar stora krafter. – Förr byggde vi många modeller för att testa, säger Sara. Nu kan vi testa mycket i en virtuell värld innan vi tillverkar något. Programmet varnar också om två delar kolliderar med varandra.",
+   "Varje gång Sara ändrar något sparar hon en ny version av filen. – Med en CAD-modell kan alla visualisera produkten, även kunder som inte kan läsa ritningar, säger hon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad står i ett hörn på avdelningen?",
+    "options": [
+     "En lastbil",
+     "En skrivare",
+     "Ett gammalt ritbord",
+     "Ett fäste i aluminium"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon visar ett gammalt ritbord som står i ett hörn.",
+    "explanationJa": "{古|ふる}い{製図台|せいずだい}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Sara ofta innan hon bygger en CAD-modell?",
+    "options": [
+     "Hon ringer kunden",
+     "Hon tillverkar delen",
+     "Hon skriver ut ritningen",
+     "Hon skissar idén på papper"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Sara skissar ofta en idé på papper först.",
+    "explanationJa": "まず{紙|かみ}にアイデアをスケッチします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad visar sammanställningen?",
+    "options": [
+     "Hur stort hålet är",
+     "Hur alla delar sitter ihop",
+     "Vem som har ritat fästet",
+     "Hur gammalt ritbordet är"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "I en sammanställning ser Kenji hur alla delar sitter ihop.",
+    "explanationJa": "すべての{部品|ぶひん}がどう{組|く}み{合|あ}わさっているかを{示|しめ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "I dag bygger företaget fler modeller för att testa än förr.",
+    "correct": false,
+    "explanationSv": "Nu kan vi testa mycket i en virtuell värld innan vi tillverkar något.",
+    "explanationJa": "{今|いま}は{多|おお}くのことを{仮想|かそう}の{世界|せかい}でテストできます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Sara sparar en ny version av filen varje gång hon ändrar något.",
+    "correct": true,
+    "explanationSv": "Varje gång Sara ändrar något sparar hon en ny version av filen.",
+    "explanationJa": "{何|なに}かを{変|か}えるたびに、{新|あたら}しいバージョンを{保存|ほぞん}します。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att rita och planera saker för hand eller i datorn.",
+  "discussionPoints": [
+   "Har du använt ett program för att rita eller planera något, till exempel ett rum?",
+   "Vad är bättre med att skissa för hand än att rita i datorn?",
+   "Skulle du vilja arbeta som konstruktör? Varför eller varför inte?",
+   "Vilka saker skulle du vilja se som en CAD-modell innan du köper dem?"
+  ]
+ },
+ "standard": 2
+}

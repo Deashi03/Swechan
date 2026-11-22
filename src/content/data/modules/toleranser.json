@@ -1,0 +1,172 @@
+{
+ "id": "m.toleranser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-22",
+ "titleSv": "Toleranser",
+ "titleJa": "{公差|こうさ}",
+ "descriptionSv": "Hur man talar om noggrannhet i tillverkning: vad det betyder att ett mått får avvika lite, varför delar måste hålla sig inom gränserna för att passa ihop, och vad som händer med delar som inte gör det.",
+ "descriptionJa": "{製造|せいぞう}での{正確|せいかく}さについての{話|はな}し{方|かた}：{寸法|すんぽう}が{少|すこ}しずれてもよいとはどういうことか、{部品|ぶひん}がうまく{合|あ}うためにはなぜ{範囲|はんい}の{中|なか}に{収|おさ}まる{必要|ひつよう}があるのか、そして{範囲|はんい}から{外|はず}れた{部品|ぶひん}がどうなるのかを{学|まな}びます。",
+ "categoryId": "R07-A04-T06",
+ "tags": [
+  "teknik",
+  "tillverkning",
+  "ritning"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.mattsattning"
+ ],
+ "related": [],
+ "recommendedOrder": 4063,
+ "words": [
+  {
+   "senseId": "s.tolerans.3",
+   "active": true
+  },
+  {
+   "senseId": "s.plus-minus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hundradel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.exakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvika.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avvikelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.precision.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gränsvärde.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överskrida.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kassera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passa.3",
+   "active": true
+  },
+  {
+   "senseId": "s.utbytbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reservdel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felmarginal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.noggrannhet.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Hundradelar som gäller",
+  "paragraphs": [
+   "Kenji har praktik på en verkstad som tillverkar axlar till lastbilar. Hans handledare heter Anna. Första dagen visar hon en ritning. – Här står det att axeln ska vara 40 millimeter tjock, plus minus två hundradelar, säger hon. Det är toleransen.",
+   "Ingen maskin kan tillverka helt exakt. Därför anger ritningen hur mycket ett mått får avvika. Ju mindre tolerans, desto dyrare blir det att tillverka, eftersom maskinerna måste arbeta med stor precision.",
+   "Kenji mäter tio axlar och skriver upp varje mätvärde i en tabell. Nio axlar är inom toleransen. Den sista har en avvikelse på fyra hundradelar och överskrider gränsvärdet. – Den kasserar vi, säger Anna.",
+   "Varför är det så viktigt? Anna förklarar att axlarna ska passa i delar som en annan fabrik tillverkar. Om alla delar följer toleranserna är de utbytbara. När en lastbil går sönder kan verkstaden beställa en reservdel och vara säker på att den passar.",
+   "Kenji lär sig också att mätinstrumentet har en felmarginal. Därför måste han arbeta med stor noggrannhet och mäta varje axel två gånger. – Här är det hundradelar som gäller, inte millimeter, säger Anna och skrattar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur tjock ska axeln vara enligt ritningen?",
+    "options": [
+     "40 millimeter, helt exakt",
+     "40 millimeter, plus minus två hundradelar",
+     "42 millimeter",
+     "4 millimeter, plus minus en millimeter"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Här står det att axeln ska vara 40 millimeter tjock, plus minus två hundradelar, säger hon.",
+    "explanationJa": "40ミリ、プラスマイナス0.02ミリです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir det dyrare att tillverka med mindre tolerans?",
+    "options": [
+     "Delarna blir större",
+     "Man behöver fler ritningar",
+     "Man måste kassera alla delar",
+     "Maskinerna måste arbeta med stor precision"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ju mindre tolerans, desto dyrare blir det att tillverka, eftersom maskinerna måste arbeta med stor precision.",
+    "explanationJa": "{機械|きかい}がとても{高|たか}い{精度|せいど}で{作業|さぎょう}しなければならないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur många axlar är inom toleransen?",
+    "options": [
+     "Nio",
+     "Tio",
+     "Fyra",
+     "Två"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Nio axlar är inom toleransen.",
+    "explanationJa": "9{本|ほん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "inference",
+    "statementSv": "Den sista axeln kan användas, eftersom avvikelsen är liten.",
+    "correct": false,
+    "explanationSv": "– Den kasserar vi, säger Anna.",
+    "explanationJa": "{公差|こうさ}から{外|はず}れているので{廃棄|はいき}されます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Kenji mäter varje axel två gånger.",
+    "correct": true,
+    "explanationSv": "Därför måste han arbeta med stor noggrannhet och mäta varje axel två gånger.",
+    "explanationJa": "{測定器|そくていき}には{誤差|ごさ}があるので、{各|かく}{軸|じく}を2{回|かい}{測|はか}ります。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om när det är viktigt att vara exakt och när det räcker med ungefär.",
+  "discussionPoints": [
+   "När i livet måste något vara helt exakt?",
+   "Brukar du komma i tid, eller plus minus tio minuter?",
+   "Har du köpt en reservdel som inte passade? Vad hände?",
+   "Vilka yrken kräver stor noggrannhet?"
+  ]
+ },
+ "standard": 2
+}
