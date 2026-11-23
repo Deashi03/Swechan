@@ -379,6 +379,7 @@
        "ja": "その{文章|ぶんしょう}には、はっきりした{偏|かたよ}りがありました。"
       }
      ],
+     "labelSv": "partiskhet",
      "explanation": {
       "sv": "Slagsida betyder från början att en båt lutar åt ena sidan. I bildlig betydelse säger man att en text, en debatt eller en rapport har slagsida när den inte är rättvis och mest visar en sida. Uttrycket är vanligt i debatt om medier.",
       "ja": "「slagsida」は、もともと{船|ふね}が{片側|かたがわ}に{傾|かたむ}くことを{意味|いみ}します。{比喩的|ひゆてき}には、{文章|ぶんしょう}や{討論|とうろん}、{報告|ほうこく}が{公平|こうへい}でなく、おもに{一方|いっぽう}の{側|がわ}だけを{見|み}せているときに「ha slagsida」と{言|い}います。メディアについての{議論|ぎろん}でよく{使|つか}われる{表現|ひょうげん}です。"
@@ -390,9 +391,51 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.slagsida.2",
+     "ja": "（{船|ふね}の）{傾|かたむ}き",
+     "defSv": "Det att ett fartyg eller en båt lutar åt ena sidan, till exempel för att vatten har kommit in.",
+     "defJa": "{水|みず}が{入|はい}ったなどの{理由|りゆう}で、{船|ふね}やボートが{片側|かたがわ}に{傾|かたむ}いていること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Fartyget fick slagsida efter olyckan.",
+       "ja": "{事故|じこ}のあと、{船|ふね}は{傾|かたむ}きました。"
+      },
+      {
+       "sv": "Båten hade svår slagsida åt vänster.",
+       "ja": "ボートは{左|ひだり}に{大|おお}きく{傾|かたむ}いていました。"
+      }
+     ],
+     "labelSv": "fartyg",
+     "collocations": [
+      "få slagsida",
+      "ha slagsida",
+      "kraftig slagsida"
+     ],
+     "explanation": {
+      "sv": "Ett fartyg som har slagsida ligger snett i vattnet. Det kan bero på att vatten har läckt in eller att lasten har flyttat sig, så att det är mer vikt på ena sidan. Kraftig slagsida är farlig, eftersom fartyget då kan kantra. Bildligt säger man att en nyhet har slagsida när den bara visar en sida av en fråga.",
+      "ja": "{傾|かたむ}いている{船|ふね}は、{水|みず}の{上|うえ}で{斜|なな}めになっています。{水|みず}が{入|はい}ったり{貨物|かもつ}が{動|うご}いたりして、{片側|かたがわ}が{重|おも}くなることが{原因|げんいん}です。{大|おお}きく{傾|かたむ}くと{転覆|てんぷく}するおそれがあるので{危険|きけん}です。たとえとして、{問題|もんだい}の{一面|いちめん}だけを{伝|つた}えるニュースについて「slagsida がある（{偏|かたよ}っている）」とも{言|い}います。"
+     },
+     "tags": [
+      "sjöfart",
+      "fordon",
+      "säkerhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
   }
  ]
 }

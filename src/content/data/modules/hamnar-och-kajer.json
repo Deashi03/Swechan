@@ -1,0 +1,186 @@
+{
+ "id": "m.hamnar-och-kajer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Hamnar och kajer",
+ "titleJa": "{港|みなと}と{岸壁|がんぺき}",
+ "descriptionSv": "Du lär dig att beskriva vad som händer i en hamn när ett fartyg kommer och går: hur det läggs till och görs fast vid kajen, hur lasten kommer i land och hur fartyg väntar utanför, till exempel när du tar färjan till Gotland.",
+ "descriptionJa": "{船|ふね}が{港|みなと}に{着|つ}いて{出|で}ていくまでに{何|なに}が{起|お}きるかを{説明|せつめい}できるようになります。{船|ふね}を{岸壁|がんぺき}に{着|つ}けてつなぐ{方法|ほうほう}、{荷物|にもつ}を{陸|りく}に{降|お}ろす{方法|ほうほう}、{船|ふね}が{港|みなと}の{外|そと}で{待|ま}つようすなどを、ゴットランド{島|とう}へのフェリーを{例|れい}に{学|まな}びます。",
+ "categoryId": "R07-A06-T05",
+ "tags": [
+  "sjöfart",
+  "fordon",
+  "teknik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.navigering-till-sjoss"
+ ],
+ "related": [],
+ "recommendedOrder": 4255,
+ "words": [
+  {
+   "senseId": "s.hamn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vågbrytare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kaj.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färjeläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-till.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fender.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förtöja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pollare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tross.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hamnarbetare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lasta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lossa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ankare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ankra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-ut.3",
+   "active": true
+  },
+  {
+   "senseId": "s.sluss.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Färjan till Gotland",
+  "paragraphs": [
+   "Det är fredag morgon i en hamn söder om Stockholm. Karin ska ta färjan till Gotland och står vid färjeläget med sin bil. Färjan har just kommit in i hamnen, innanför vågbrytaren som skyddar mot vågorna.",
+   "Karin tittar på när färjan lägger till. Den glider långsamt mot kajen, och stora fendrar av gummi tar emot den. Två hamnarbetare fångar trossarna och lägger dem runt pollarna. Nu är färjan förtöjd.",
+   "Först kör bilarna och lastbilarna i land. Sedan lastar man nya. Längre bort lossar en kran containrar från ett annat fartyg.",
+   "Utanför hamnen ligger ett tankfartyg och väntar på en plats vid kajen. Det har ankrat, och ankaret håller det kvar trots strömmen.",
+   "Färjan lägger ut klockan tio. Resan till Visby tar drygt tre timmar. På söndag kör Karin hem förbi en sluss, där fartyg går mellan Östersjön och Mälaren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad skyddar hamnen mot vågorna?",
+    "options": [
+     "Färjeläget",
+     "Pollarna",
+     "Vågbrytaren",
+     "Slussen"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Färjan har just kommit in i hamnen, innanför vågbrytaren som skyddar mot vågorna.",
+    "explanationJa": "{防波堤|ぼうはてい}が{港|みなと}を{波|なみ}から{守|まも}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör hamnarbetarna med trossarna?",
+    "options": [
+     "De kastar dem i vattnet",
+     "De ger dem till Karin",
+     "De lägger dem runt pollarna",
+     "De lägger dem i bilarna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Två hamnarbetare fångar trossarna och lägger dem runt pollarna.",
+    "explanationJa": "{港湾労働者|こうわんろうどうしゃ}は、もやい{綱|づな}を{係船柱|けいせんちゅう}にかけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad lossar kranen längre bort?",
+    "options": [
+     "Bilar",
+     "Passagerare",
+     "Fendrar",
+     "Containrar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Längre bort lossar en kran containrar från ett annat fartyg.",
+    "explanationJa": "クレーンはほかの{船|ふね}からコンテナを{降|お}ろしています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "cause",
+    "statementSv": "Tankfartyget ligger stilla eftersom det har ankrat.",
+    "correct": true,
+    "explanationSv": "Det har ankrat, och ankaret håller det kvar trots strömmen.",
+    "explanationJa": "タンカーは{錨|いかり}を{下|お}ろしているので、{流|なが}れがあってもその{場所|ばしょ}にとどまっています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Karin kommer fram till Visby före klockan elva.",
+    "correct": false,
+    "explanationSv": "Färjan lägger ut klockan tio. Resan till Visby tar drygt tre timmar.",
+    "explanationJa": "{十時|じゅうじ}に{出港|しゅっこう}して{三時間|さんじかん}{以上|いじょう}かかるので、{着|つ}くのは{一時|いちじ}すぎです。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Färjan mellan Nynäshamn och Visby tar drygt tre timmar.",
+    "source": "Destination Gotland, tidtabell",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "I Södertälje finns en sluss mellan Östersjön och Mälaren.",
+    "source": "Sjöfartsverket, ”Södertälje kanal och sluss”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hamnar och färjeresor.",
+  "discussionPoints": [
+   "Finns det en hamn där du bor? Vad händer där?",
+   "Har du åkt bil på en färja? Hur gick det till?",
+   "Skulle du vilja arbeta som hamnarbetare? Varför eller varför inte?",
+   "Vilken färjeresa i Sverige eller Japan skulle du vilja göra?"
+  ]
+ },
+ "standard": 2
+}

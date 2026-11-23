@@ -1,0 +1,186 @@
+{
+ "id": "m.fartygsmotorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Fartygsmotorer",
+ "titleJa": "{船|ふね}のエンジン",
+ "descriptionSv": "Du lär dig att tala om vad som händer i ett fartygs maskinrum: hur motorerna driver fartyget och ger el ombord, vilka bränslen fartyg använder och hur rederier minskar utsläppen, till exempel med el från land i hamnen.",
+ "descriptionJa": "{船|ふね}の{機関室|きかんしつ}で{何|なに}が{起|お}きているかを{話|はな}せるようになります。エンジンが{船|ふね}を{動|うご}かし{船内|せんない}に{電気|でんき}を{送|おく}るしくみ、{船|ふね}が{使|つか}う{燃料|ねんりょう}、そして{港|みなと}で{陸|りく}から{電気|でんき}をもらうなど、{海運会社|かいうんがいしゃ}が{排出物|はいしゅつぶつ}を{減|へ}らす{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A06-T05",
+ "tags": [
+  "sjöfart",
+  "fordon",
+  "teknik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.skrov-och-dack"
+ ],
+ "related": [],
+ "recommendedOrder": 4252,
+ "words": [
+  {
+   "senseId": "s.maskinrum.1",
+   "active": true
+  },
+  {
+   "senseId": "s.maskinist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.huvudmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjälpmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driva.3",
+   "active": true
+  },
+  {
+   "senseId": "s.varvtal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kylvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjockolja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.metanol.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svavel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utsläpp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skrubber.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landström.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bunkra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knop.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag i maskinrummet",
+  "paragraphs": [
+   "Omar arbetar som maskinist på en färja som går över Östersjön. Hans arbetsplats är maskinrummet längst ner i fartyget, där det är varmt och mycket bullrigt.",
+   "Färjan har två stora huvudmotorer som driver fartyget framåt. Dessutom finns det hjälpmotorer som ger el till lampor, kök och hytter. Omar kontrollerar varvtalet och temperaturen på kylvattnet varje timme.",
+   "Förr gick färjan på tjockolja, ett billigt men smutsigt bränsle. Sedan 2015 får fartyg i Östersjön bara använda bränsle med mycket lite svavel, om de inte renar avgaserna. Därför byggde företaget om motorerna, så att de nu kan gå på metanol. Utsläppen har minskat mycket.",
+   "Andra fartyg har i stället en skrubber, som tvättar svavlet ur avgaserna med vatten innan de går ut genom skorstenen.",
+   "I hamnen stänger man av motorerna och kopplar in landström. Då blir det tyst ombord, och luften i staden blir renare. Innan färjan går igen ska den bunkra. Omar kontrollerar att allt är klart: om en timme ska de gå ut i 20 knop."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var arbetar Omar?",
+    "options": [
+     "I maskinrummet på en färja",
+     "På bryggan",
+     "På hamnens kontor",
+     "På ett varv"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hans arbetsplats är maskinrummet längst ner i fartyget.",
+    "explanationJa": "オマルの{職場|しょくば}は、{船|ふね}の{一番下|いちばんした}にある{機関室|きかんしつ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör hjälpmotorerna?",
+    "options": [
+     "De driver fartyget framåt",
+     "De ger el till lampor, kök och hytter",
+     "De tvättar avgaserna",
+     "De fyller på bränsle"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Dessutom finns det hjälpmotorer som ger el till lampor, kök och hytter.",
+    "explanationJa": "{補機|ほき}は{照明|しょうめい}や{調理場|ちょうりば}、{客室|きゃくしつ}に{電気|でんき}を{送|おく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför byggde företaget om motorerna?",
+    "options": [
+     "Tjockoljan tog slut i hamnen",
+     "Färjan skulle gå fortare",
+     "Fartyg i Östersjön får bara använda bränsle med lite svavel",
+     "Maskinisterna ville ha det tystare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Sedan 2015 får fartyg i Östersjön bara använda bränsle med mycket lite svavel, om de inte renar avgaserna. Därför byggde företaget om motorerna …",
+    "explanationJa": "2015{年|ねん}から、バルト{海|かい}の{船|ふね}は{硫黄|いおう}の{少|すく}ない{燃料|ねんりょう}しか{使|つか}えなくなったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En skrubber tvättar avgaserna med vatten.",
+    "correct": true,
+    "explanationSv": "Andra fartyg har i stället en skrubber, som tvättar svavlet ur avgaserna med vatten …",
+    "explanationJa": "スクラバーは{水|みず}で{排|はい}ガスから{硫黄|いおう}を{洗|あら}い{落|お}とします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Motorerna går hela tiden när färjan ligger i hamnen.",
+    "correct": false,
+    "explanationSv": "I hamnen stänger man av motorerna och kopplar in landström.",
+    "explanationJa": "{港|みなと}ではエンジンを{止|と}めて、{陸上電力|りくじょうでんりょく}を{使|つか}います。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Sedan 2015 får fartyg i Östersjön och Nordsjön bara använda bränsle med högst 0,10 procent svavel, om de inte renar avgaserna, till exempel med en skrubber.",
+    "source": "Transportstyrelsen, ”Svavelhalt i marint bränsle”; MARPOL bilaga VI (IMO)",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "En knop är en sjömil i timmen, det vill säga 1,852 kilometer i timmen.",
+    "source": "Nationalencyklopedin, uppslagsordet ”knop”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om fartyg, bränsle och miljö.",
+  "discussionPoints": [
+   "Skulle du vilja arbeta i ett maskinrum? Varför eller varför inte?",
+   "Vad är viktigast när ett rederi väljer bränsle: priset eller miljön?",
+   "Har du märkt avgaser eller buller från fartyg i en hamn?",
+   "Vilka fordon i din stad kopplas in till el när de står stilla?"
+  ]
+ },
+ "standard": 2
+}
