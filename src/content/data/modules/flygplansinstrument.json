@@ -1,0 +1,194 @@
+{
+ "id": "m.flygplansinstrument",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Flygplansinstrument",
+ "titleJa": "{飛行機|ひこうき}の{計器|けいき}",
+ "descriptionSv": "Du lär dig vad instrumenten i en cockpit visar och vad piloten styr med, och kan beskriva hur en pilot flyger i moln och vad som händer när ett larm går.",
+ "descriptionJa": "コックピットの{計器|けいき}が{何|なに}を{示|しめ}すのか、パイロットが{何|なに}で{操縦|そうじゅう}するのかを{学|まな}びます。{雲|くも}の{中|なか}をどう{飛|と}ぶのか、{警報|けいほう}が{鳴|な}ったときに{何|なに}が{起|お}こるのかを{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A06-T04",
+ "tags": [
+  "flyg",
+  "teknik",
+  "fordon"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.propellerflygplan"
+ ],
+ "related": [],
+ "recommendedOrder": 4245,
+ "words": [
+  {
+   "senseId": "s.instrumentpanel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.simulator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flyghöjd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.höjdmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighetsmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knop.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kompass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.konstgjord-horisont.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bränslemätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varningslampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.larma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.display.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsa-av.2",
+   "active": true
+  },
+  {
+   "senseId": "s.styrspak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gasreglage.1",
+   "active": false
+  },
+  {
+   "senseId": "s.autopilot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervaka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.instrumentflygning.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Inne i molnen",
+  "paragraphs": [
+   "En grå dag i oktober kan Hiroshi inte flyga, för molnen hänger lågt över flygfältet. I stället övar han i klubbens simulator tillsammans med Karin. – I dag ska vi titta på instrumentpanelen, säger hon.",
+   "Karin pekar på mätarna en efter en. Höjdmätaren visar flyghöjden, och hastighetsmätaren visar farten i knop. Kompassen visar åt vilket håll planet flyger, och bränslemätaren hur mycket bränsle som finns kvar.",
+   "Mitt på panelen sitter den konstgjorda horisonten. Den visar om planet lutar. – Inne i molnen kan du inte lita på din kropp, säger Karin. Då måste du läsa av mätarna hela tiden. Det kallas instrumentflygning.",
+   "Hiroshi håller i styrspaken med höger hand och har vänster hand på gasreglaget. Plötsligt tänds en varningslampa, och simulatorn larmar. På displayen står det att det finns för lite olja i motorn. Hiroshi blir nervös, men han lyckas landa planet.",
+   "Efteråt berättar Karin om sitt gamla jobb på flygbolaget. – I stora plan flyger autopiloten största delen av resan, säger hon. Men piloterna måste övervaka den och kunna ta över när som helst."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför övar Hiroshi i simulatorn?",
+    "options": [
+     "Molnen hänger lågt",
+     "Planet är trasigt",
+     "Karin är sjuk",
+     "Det är natt"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En grå dag i oktober kan Hiroshi inte flyga, för molnen hänger lågt över flygfältet.",
+    "explanationJa": "{雲|くも}が{低|ひく}く{垂|た}れ{込|こ}めていて{飛|と}べないからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad visar den konstgjorda horisonten?",
+    "options": [
+     "Hur mycket bränsle som finns kvar",
+     "Hur fort planet flyger",
+     "Vilken tid det är",
+     "Om planet lutar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Mitt på panelen sitter den konstgjorda horisonten. Den visar om planet lutar.",
+    "explanationJa": "{飛行機|ひこうき}が{傾|かたむ}いているかどうかを{示|しめ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad händer när varningslampan tänds?",
+    "options": [
+     "Autopiloten slås på",
+     "Simulatorn larmar",
+     "Karin går ut",
+     "Hiroshi slutar flyga"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Plötsligt tänds en varningslampa, och simulatorn larmar.",
+    "explanationJa": "シミュレーターが{警報|けいほう}を{鳴|な}らします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Hastighetsmätaren visar farten i kilometer i timmen.",
+    "correct": false,
+    "explanationSv": "… hastighetsmätaren visar farten i knop.",
+    "explanationJa": "{速度計|そくどけい}はノットで{速|はや}さを{示|しめ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Piloter i stora plan kan inte bara lämna allt åt autopiloten.",
+    "correct": true,
+    "explanationSv": "Men piloterna måste övervaka den och kunna ta över när som helst.",
+    "explanationJa": "パイロットは{自動操縦|じどうそうじゅう}を{監視|かんし}し、いつでも{代|か}われるようにしていなければなりません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En knop är en sjömil i timmen, alltså 1 852 meter i timmen.",
+    "source": "Nationalencyklopedin, uppslaget ”knop”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Flygplanets höjdmätare mäter lufttrycket och måste ställas in efter det aktuella lufttrycket.",
+    "source": "Nationalencyklopedin, uppslaget ”höjdmätare”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om instrument, mätare och teknik som hjälper oss.",
+  "discussionPoints": [
+   "Vilka mätare och varningslampor finns i en bil eller på en maskin som du använder?",
+   "Skulle du lita på ett plan som flög helt utan piloter? Varför eller varför inte?",
+   "Har du provat en simulator eller ett spel där man flyger eller kör?",
+   "När i livet måste man lita på instrument mer än på sina egna sinnen?"
+  ]
+ },
+ "standard": 2
+}

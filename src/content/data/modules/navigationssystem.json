@@ -1,0 +1,196 @@
+{
+ "id": "m.navigationssystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Navigationssystem",
+ "titleJa": "ナビゲーションシステム",
+ "descriptionSv": "Du lär dig hur ett flygplan hittar rätt väg och hur flygledarna håller ordning på trafiken, och kan förstå nyheter om förseningar och plan som måste landa någon annanstans.",
+ "descriptionJa": "{飛行機|ひこうき}がどのように{正|ただ}しい{道|みち}を{見|み}つけるのか、{管制官|かんせいかん}がどのように{空|そら}の{交通|こうつう}を{整理|せいり}しているのかを{学|まな}びます。{遅|おく}れや、{別|べつ}の{空港|くうこう}に{着陸|ちゃくりく}しなければならなくなった{飛行機|ひこうき}についてのニュースが{理解|りかい}できるようになります。",
+ "categoryId": "R07-A06-T04",
+ "tags": [
+  "flyg",
+  "teknik",
+  "fordon"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.flygplansinstrument"
+ ],
+ "related": [],
+ "recommendedOrder": 4246,
+ "words": [
+  {
+   "senseId": "s.navigation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.position.1",
+   "active": true
+  },
+  {
+   "senseId": "s.satellit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.GPS.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kurs.2",
+   "active": true
+  },
+  {
+   "senseId": "s.flygrutt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.färdplan.1",
+   "active": false
+  },
+  {
+   "senseId": "s.radiofyr.1",
+   "active": false
+  },
+  {
+   "senseId": "s.radar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.transponder.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flygtrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftrum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flygledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kontrolltorn.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anropa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anflygning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omdirigera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En morgon i tornet",
+  "paragraphs": [
+   "Saki läser till ingenjör i Göteborg. Hennes vän Johan är flygledare på flygplatsen utanför stan, och en morgon får hon följa med honom upp i kontrolltornet.",
+   "Från tornet ser man ut över hela flygplatsen. På skärmarna syns all flygtrafik i luftrummet runt Göteborg. – Varje prick är ett plan, säger Johan. Radarn hittar planen, och transpondern i varje plan skickar planets kod och flyghöjd.",
+   "Johan berättar att piloterna lämnar in en färdplan före varje resa. Där står flygrutten, flyghöjden och tiderna. Under resan sköts navigationen mest med GPS och satelliter, men det finns också radiofyrar på marken. – Ett plan vet alltid sin position och sin kurs, säger han.",
+   "En pilot anropar tornet över radion. Planet kommer från Tyskland och är på anflygning. – Ni får landa på landningsbana 21, svarar Johan lugnt.",
+   "Plötsligt kommer det tät dimma. Två plan kan inte landa, och Johan måste omdirigera dem till Stockholm. – Det är tråkigt för passagerarna, men säkerheten går först, säger Johan. Saki förstår att jobbet kräver lugn och koncentration."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var arbetar Johan?",
+    "options": [
+     "På en skola i Göteborg",
+     "I kontrolltornet på flygplatsen",
+     "På ett flygbolag i Tyskland",
+     "I en hangar i Stockholm"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hennes vän Johan är flygledare på flygplatsen utanför stan …",
+    "explanationJa": "ヨハンは{町|まち}の{外|そと}にある{空港|くうこう}の{管制官|かんせいかん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad skickar transpondern?",
+    "options": [
+     "Vädret på flygplatsen",
+     "Musik till passagerarna",
+     "Namnen på piloterna",
+     "Planets kod och flyghöjd"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "… transpondern i varje plan skickar planets kod och flyghöjd.",
+    "explanationJa": "トランスポンダーは{飛行機|ひこうき}のコードと{高度|こうど}を{送|おく}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför måste två plan omdirigeras till Stockholm?",
+    "options": [
+     "Banan är för kort",
+     "Planen har för lite bränsle",
+     "Det kommer tät dimma",
+     "Piloterna är sjuka"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Plötsligt kommer det tät dimma. Två plan kan inte landa, och Johan måste omdirigera dem till Stockholm.",
+    "explanationJa": "{急|きゅう}に{濃|こ}い{霧|きり}が{出|で}たからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "I dag sköts navigationen bara med radiofyrar.",
+    "correct": false,
+    "explanationSv": "Under resan sköts navigationen mest med GPS och satelliter, men det finns också radiofyrar på marken.",
+    "explanationJa": "ナビゲーションはおもにGPSと{衛星|えいせい}で{行|おこな}われます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Johan blir stressad när piloten anropar tornet.",
+    "correct": false,
+    "explanationSv": "– Ni får landa på landningsbana 21, svarar Johan lugnt.",
+    "explanationJa": "ヨハンは{落|お}ち{着|つ}いて{答|こた}えています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Göteborgs flygplats Landvetter har en landningsbana med beteckningen 03/21.",
+    "source": "Swedavia, ”Göteborg Landvetter Airport”",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "En transponder i flygplanet svarar på signaler från markradarn och skickar bland annat planets kod och flyghöjd.",
+    "source": "Nationalencyklopedin, uppslaget ”transponder”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Flygplan navigerar i dag främst med satellitnavigering (GPS), men radiofyrar på marken finns kvar som stöd.",
+    "source": "Luftfartsverket (LFV), ”Navigation”",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om navigation, GPS och yrket som flygledare.",
+  "discussionPoints": [
+   "Hur hittar du vägen i en ny stad: med karta, GPS eller genom att fråga någon?",
+   "Skulle du vilja arbeta som flygledare? Vad tror du är svårast?",
+   "Har ditt plan någon gång blivit försenat eller omdirigerat? Vad hände?",
+   "Vad skulle hända om GPS:en slutade fungera i hela världen en dag?"
+  ]
+ },
+ "standard": 2
+}
