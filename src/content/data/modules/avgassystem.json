@@ -1,0 +1,200 @@
+{
+ "id": "m.avgassystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Avgassystem",
+ "titleJa": "{排気系|はいきけい}",
+ "descriptionSv": "Du lär dig vad som händer med avgaserna på vägen från motorn och ut, vilka delar som gör dem renare och tystare och vilka regler som gäller för utsläpp, och du kan förstå mekanikerns förklaring när bilen låter eller ryker.",
+ "descriptionJa": "{排気|はいき}ガスがエンジンから{外|そと}に{出|で}るまでに{何|なに}が{起|お}こるか、どの{部品|ぶひん}がそれをきれいで{静|しず}かにするか、そして{排出|はいしゅつ}についてどんな{規則|きそく}があるかを{学|まな}びます。{車|くるま}の{音|おと}が{大|おお}きかったり{煙|けむり}が{出|で}たりするとき、{整備士|せいびし}の{説明|せつめい}がわかるようになります。",
+ "categoryId": "R07-A06-T01",
+ "tags": [
+  "bilar",
+  "teknik",
+  "miljö"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.elektriska-system-i-bilen"
+ ],
+ "related": [],
+ "recommendedOrder": 4216,
+ "words": [
+  {
+   "senseId": "s.avgassystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgasrör.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ljuddämpare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.katalysator.2",
+   "active": true
+  },
+  {
+   "senseId": "s.partikelfilter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgasrening.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kväveoxid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.koldioxid.1",
+   "active": false
+  },
+  {
+   "senseId": "s.utsläpp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.släppa-ut.2",
+   "active": true
+  },
+  {
+   "senseId": "s.miljöklass.1",
+   "active": true
+  },
+  {
+   "senseId": "s.miljözon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tomgångskörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rosta.2",
+   "active": true
+  },
+  {
+   "senseId": "s.läcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ryka.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Det låter om bilen",
+  "paragraphs": [
+   "Per kör en tolv år gammal dieselbil. En morgon i Göteborg låter bilen plötsligt mycket mer än vanligt, och det låter konstigt under bilen när han kör över farthinder. Han åker till verkstaden vid hamnen.",
+   "Mekanikern Elin tittar under bilen. – Avgasröret har rostat, och ljuddämparen har ett hål, säger hon. Därför låter bilen så mycket. Det läcker avgaser ut under bilen. Det är inte bra, för avgaserna kan komma in i kupén.",
+   "Elin kontrollerar resten av avgassystemet. – Katalysatorn ser bra ut, säger hon, men partikelfiltret är nästan fullt av sot. Det ryker svart ur avgasröret när du gasar. Du kör nog mest korta sträckor? Per nickar.",
+   "– Filtret behöver långa turer på motorvägen för att bränna bort sotet, förklarar Elin. Ett fungerande filter och god avgasrening är viktigt, för dieselbilar släpper ut kväveoxider och partiklar. Koldioxiden kan filtret däremot inte ta bort.",
+   "Per berättar att han ofta låter motorn gå när han väntar på sin dotter vid skolan. – Tomgångskörning ger bara onödiga utsläpp, säger Elin. Och tänk på att din bil har en gammal miljöklass. Snart får den kanske inte köra i miljözonen i centrum. Per bestämmer sig för att börja titta på elbilar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför låter Pers bil så mycket?",
+    "options": [
+     "Motorn saknar olja",
+     "Däcken är slitna",
+     "Radion är trasig",
+     "Ljuddämparen har ett hål"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "– Avgasröret har rostat, och ljuddämparen har ett hål, säger hon.",
+    "explanationJa": "マフラーに{穴|あな}があいているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är partikelfiltret nästan fullt av?",
+    "options": [
+     "Vatten",
+     "Sot",
+     "Olja",
+     "Sand"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "… men partikelfiltret är nästan fullt av sot.",
+    "explanationJa": "{粒子|りゅうし}フィルターは、すすでほとんどいっぱいです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför behöver bilen köra långa turer på motorvägen?",
+    "options": [
+     "För att ladda batteriet",
+     "För att bränna bort sotet i filtret",
+     "För att testa bromsarna",
+     "För att spara bensin"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Filtret behöver långa turer på motorvägen för att bränna bort sotet …",
+    "explanationJa": "フィルターのすすを{燃|も}やして{取|と}り{除|のぞ}くためです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt Elin kan partikelfiltret ta bort koldioxiden.",
+    "correct": false,
+    "explanationSv": "Koldioxiden kan filtret däremot inte ta bort.",
+    "explanationJa": "フィルターでは{二酸化炭素|にさんかたんそ}は{取|と}り{除|のぞ}けません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Per funderar på att byta till en elbil.",
+    "correct": true,
+    "explanationSv": "Per bestämmer sig för att börja titta på elbilar.",
+    "explanationJa": "ペールは{電気自動車|でんきじどうしゃ}を{探|さが}し{始|はじ}めることにしました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En katalysator omvandlar en stor del av kolmonoxid, kolväten och kväveoxider i avgaserna till mindre skadliga ämnen.",
+    "source": "Nationalencyklopedin, uppslaget ”katalysator”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "I många kommuner är det enligt lokala föreskrifter förbjudet att köra motorn på tomgång i mer än en minut.",
+    "source": "Kommunernas lokala trafik- och miljöföreskrifter, t.ex. Stockholms stad",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "I en miljözon får bara fordon som uppfyller kraven för zonens miljöklass köra.",
+    "source": "Transportstyrelsen, information om miljözoner",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om avgaser, luften i staden och regler för bilar.",
+  "discussionPoints": [
+   "Brukar du märka avgaser i luften där du bor?",
+   "Finns det miljözoner i städer i Japan?",
+   "Vad tycker du om förbud mot tomgångskörning?",
+   "Skulle du kunna tänka dig att köpa en elbil? Varför eller varför inte?"
+  ]
+ },
+ "standard": 2
+}

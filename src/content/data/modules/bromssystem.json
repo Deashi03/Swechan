@@ -1,0 +1,190 @@
+{
+ "id": "m.bromssystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Bromssystem",
+ "titleJa": "ブレーキシステム",
+ "descriptionSv": "Du lär dig vad bromsarnas delar heter och hur de samverkar när bilen stannar, och du kan berätta för verkstaden vad som känns eller låter fel när du bromsar.",
+ "descriptionJa": "ブレーキの{部品|ぶひん}の{名前|なまえ}と、{車|くるま}が{止|と}まるときにそれらがどのように{働|はたら}くかを{学|まな}びます。ブレーキをかけたときにおかしな{感|かん}じや{音|おと}がしたら、それを{整備工場|せいびこうじょう}に{伝|つた}えられるようになります。",
+ "categoryId": "R07-A06-T01",
+ "tags": [
+  "bilar",
+  "teknik",
+  "fordon"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.vaxellada-och-transmission"
+ ],
+ "related": [],
+ "recommendedOrder": 4213,
+ "words": [
+  {
+   "senseId": "s.broms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromspedal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.handbroms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsskiva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsbelägg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsok.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bromsvätska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.friktion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sliten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gnissla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ABS-broms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.låsa-sig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromssträcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nödbromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motorbromsa.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Det gnisslar när Takeshi bromsar",
+  "paragraphs": [
+   "Takeshi kör varje dag mellan Uppsala och Stockholm. En morgon hör han att det gnisslar när han bromsar, och bromspedalen känns konstig. Han ringer verkstaden och får en tid samma eftermiddag.",
+   "Mekanikern Lena lyfter upp bilen och tar av ett hjul. – Titta, säger hon. Här är bromsskivan, och runt den sitter bromsoket. När du trampar på bromsen trycks bromsbeläggen mot skivan. Friktionen gör att hjulet stannar.",
+   "– Dina bromsbelägg är nästan helt slitna, fortsätter Lena. Det är därför det gnisslar. Skivorna har också lite rost. Hon kontrollerar bromsvätskan och ser att ett av bromsljusen inte lyser. Handbromsen fungerar däremot bra.",
+   "Medan Lena byter delarna berättar Takeshi om förra vintern. En älg sprang ut på vägen, och han fick nödbromsa. – Hjulen låste sig inte, och jag kunde styra förbi, säger han. – Det var ABS-bromsarna som hjälpte dig, svarar Lena. Men på is blir bromssträckan ändå mycket längre.",
+   "– Ett tips till, säger Lena när hon är klar. När du kör ner för långa backar kan du motorbromsa. Då blir inte bromsarna lika varma, och de håller längre. Takeshi betalar och kör hem. Nu är det tyst när han bromsar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hör Takeshi när han bromsar?",
+    "options": [
+     "Att motorn låter högt",
+     "Att radion slutar fungera",
+     "Ingenting",
+     "Att det gnisslar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En morgon hör han att det gnisslar när han bromsar …",
+    "explanationJa": "ブレーキをかけるとキーキーと{音|おと}がします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad trycks mot bromsskivan när man bromsar?",
+    "options": [
+     "Bromsljusen",
+     "Bromsbeläggen",
+     "Handbromsen",
+     "Kylaren"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "När du trampar på bromsen trycks bromsbeläggen mot skivan.",
+    "explanationJa": "ブレーキパッドがディスクに{押|お}しつけられます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kunde Takeshi styra förbi älgen?",
+    "options": [
+     "Hjulen låste sig inte tack vare ABS-bromsarna",
+     "Han körde mycket långsamt",
+     "Älgen sprang bort",
+     "Han hade nya däck"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "– Det var ABS-bromsarna som hjälpte dig, svarar Lena.",
+    "explanationJa": "ABSのおかげで{車輪|しゃりん}がロックしなかったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Alla bromsljus på Takeshis bil fungerade.",
+    "correct": false,
+    "explanationSv": "… ser att ett av bromsljusen inte lyser.",
+    "explanationJa": "ブレーキランプの{一|ひと}つがついていませんでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lena tycker att Takeshi kan spara bromsarna i långa backar.",
+    "correct": true,
+    "explanationSv": "När du kör ner för långa backar kan du motorbromsa. Då blir inte bromsarna lika varma …",
+    "explanationJa": "{長|なが}い{坂|さか}ではエンジンブレーキを{使|つか}うと、ブレーキが{長持|ながも}ちします。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I en skivbroms trycker bromsoket bromsbeläggen mot en bromsskiva som sitter på hjulet.",
+    "source": "Nationalencyklopedin, uppslaget ”broms”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "ABS hindrar hjulen från att låsa sig vid kraftig inbromsning, så att föraren kan styra under inbromsningen.",
+    "source": "Nationalencyklopedin, uppslaget ”ABS”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bromsar och om farliga situationer i trafiken.",
+  "discussionPoints": [
+   "Har du någon gång behövt nödbromsa? Vad hände?",
+   "Vad gör du om bilen eller cykeln börjar gnissla när du bromsar?",
+   "Hur kör man säkert på is och snö?",
+   "Tycker du att alla borde lära sig motorbromsa?"
+  ]
+ },
+ "standard": 2
+}

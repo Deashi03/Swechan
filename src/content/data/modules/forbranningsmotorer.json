@@ -1,0 +1,190 @@
+{
+ "id": "m.forbranningsmotorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Förbränningsmotorer",
+ "titleJa": "{内燃機関|ないねんきかん}",
+ "descriptionSv": "Du lär dig hur en bilmotor fungerar inuti och vad mekanikern menar när hon talar om motorns delar, olja och kylning, och du kan beskriva när en motor låter eller går fel.",
+ "descriptionJa": "{車|くるま}のエンジンが{中|なか}でどのように{動|うご}くか、そして{整備士|せいびし}がエンジンの{部品|ぶひん}やオイル、{冷却|れいきゃく}について{話|はな}すときに{何|なに}を{言|い}っているのかを{学|まな}びます。エンジンの{音|おと}や{調子|ちょうし}がおかしいときに、それを{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A06-T01",
+ "tags": [
+  "bilar",
+  "teknik",
+  "fordon"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.infrastrukturplanering"
+ ],
+ "related": [],
+ "recommendedOrder": 4211,
+ "words": [
+  {
+   "senseId": "s.förbränningsmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bensinmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dieselmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cylinder.2",
+   "active": true
+  },
+  {
+   "senseId": "s.kolv.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tändstift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbränning.2",
+   "active": false
+  },
+  {
+   "senseId": "s.vevaxel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kamrem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motorolja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.oljesticka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kylare.2",
+   "active": true
+  },
+  {
+   "senseId": "s.turbo.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hästkraft.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vridmoment.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tomgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rusa.2",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Första veckan på verkstaden",
+  "paragraphs": [
+   "Hiroshi är 24 år och vill bli mekaniker. Nu gör han praktik på en bilverkstad i Västerås. Hans handledare heter Anders och har lagat bilar i trettio år.",
+   "Den första kunden har en gammal bil med bensinmotor. – Det här är en förbränningsmotor med fyra cylindrar, säger Anders och öppnar motorhuven. I varje cylinder finns en kolv. Ett tändstift gör en gnista, och förbränningen trycker ner kolven. Kolvarna får vevaxeln att gå runt.",
+   "– En dieselmotor har inga tändstift, fortsätter Anders. Där blir luften så varm när den trycks ihop att dieseln börjar brinna av sig själv. Han pekar på kamremmen. – Den här måste bytas snart. Går den av kan hela motorn bli förstörd.",
+   "Sedan visar han Hiroshi hur man kontrollerar motoroljan. Hiroshi drar upp oljestickan, torkar av den och sticker ner den igen. Det är för lite olja. De kontrollerar också kylaren, så att motorn inte blir för varm.",
+   "På eftermiddagen kommer en kund med en ny liten bil. Den har en turbo och 130 hästkrafter, och den har bra vridmoment redan vid låga varvtal. – Den går ojämnt på tomgång, och ibland rusar motorn, säger kunden. Anders lyssnar noga. – Vi provkör den i morgon, säger han."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var gör Hiroshi praktik?",
+    "options": [
+     "På en bensinstation",
+     "På en bilfabrik i Göteborg",
+     "På en bussdepå",
+     "På en bilverkstad i Västerås"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Nu gör han praktik på en bilverkstad i Västerås.",
+    "explanationJa": "ヴェステロースの{自動車整備工場|じどうしゃせいびこうじょう}で{実習|じっしゅう}をしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör tändstiftet?",
+    "options": [
+     "Det smörjer motorn",
+     "Det kyler motorn",
+     "Det gör en gnista",
+     "Det mäter oljan"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett tändstift gör en gnista, och förbränningen trycker ner kolven.",
+    "explanationJa": "{点火|てんか}プラグは{火花|ひばな}を{出|だ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför måste kamremmen bytas snart?",
+    "options": [
+     "Om den går av kan motorn bli förstörd",
+     "Den låter för mycket",
+     "Den är fel färg",
+     "Kunden vill ha en turbo"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Går den av kan hela motorn bli förstörd.",
+    "explanationJa": "{切|き}れるとエンジン{全体|ぜんたい}が{壊|こわ}れるおそれがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det fanns tillräckligt med motorolja i den gamla bilen.",
+    "correct": false,
+    "explanationSv": "Det är för lite olja.",
+    "explanationJa": "オイルが{足|た}りませんでした。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Anders vill köra den nya bilen innan han bestämmer vad som är fel.",
+    "correct": true,
+    "explanationSv": "– Vi provkör den i morgon, säger han.",
+    "explanationJa": "アンデシュは、まず{試運転|しうんてん}をしてから{原因|げんいん}を{調|しら}べるつもりです。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I en bensinmotor tänds bränslet av en gnista från ett tändstift; i en dieselmotor tänds det av att luften blir mycket varm när den trycks ihop.",
+    "source": "Nationalencyklopedin, uppslagen ”förbränningsmotor”, ”bensinmotor” och ”dieselmotor”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Kolvarnas rörelse upp och ner överförs till vevaxeln, som roterar.",
+    "source": "Nationalencyklopedin, uppslaget ”vevaxel”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bilmotorer och om att ta hand om en bil.",
+  "discussionPoints": [
+   "Har du eller din familj en bil med bensinmotor eller dieselmotor?",
+   "Har du någon gång kontrollerat motoroljan själv?",
+   "Hur viktigt är det för dig hur många hästkrafter en bil har?",
+   "Tror du att det kommer att finnas bilar med förbränningsmotor om trettio år?"
+  ]
+ },
+ "standard": 2
+}

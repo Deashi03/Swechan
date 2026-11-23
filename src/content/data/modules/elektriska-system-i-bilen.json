@@ -1,0 +1,200 @@
+{
+ "id": "m.elektriska-system-i-bilen",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Elektriska system i bilen",
+ "titleJa": "{車|くるま}の{電気系統|でんきけいとう}",
+ "descriptionSv": "Du lär dig vad bilens elektriska delar heter och vad de gör, från batteri och startmotor till säkringar, sensorer och lampor, och du kan beskriva ett elfel en kall vintermorgon.",
+ "descriptionJa": "バッテリーやスターターからヒューズ、センサー、ライトまで、{車|くるま}の{電気|でんき}の{部品|ぶひん}の{名前|なまえ}と{働|はたら}きを{学|まな}びます。{寒|さむ}い{冬|ふゆ}の{朝|あさ}に{起|お}きた{電気|でんき}の{故障|こしょう}を{説明|せつめい}できるようになります。",
+ "categoryId": "R07-A06-T01",
+ "tags": [
+  "bilar",
+  "teknik",
+  "el"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.styrning-och-hjulupphangning"
+ ],
+ "related": [],
+ "recommendedOrder": 4215,
+ "words": [
+  {
+   "senseId": "s.elsystem.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bilbatteri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.urladdad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.startmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.generator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tändning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkringsdosa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kortslutning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kablage.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sensor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styrenhet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.centrallås.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fönsterhiss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sätesvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motorvärmare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.helljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blända-av.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En kall morgon i januari",
+  "paragraphs": [
+   "Det är minus 22 grader i Luleå. Ida ska köra till jobbet, men när hon vrider om nyckeln klickar det bara. Bilen startar inte. Hon har glömt att sätta på motorvärmaren i går kväll.",
+   "Grannen Nils kommer ut med en startkabel. – Bilbatteriet är nog urladdat, säger han. Kylan tar mycket kraft från batteriet. De kopplar ihop bilarna, och efter några minuter startar motorn. – Startmotorn fungerar i alla fall, säger Nils.",
+   "På vägen märker Ida att fönsterhissen på förarsidan inte fungerar och att sätesvärmen inte blir varm. Efter jobbet åker hon till en verkstad. Elektrikern Simon slår på tändningen och tittar på lamporna. Sedan öppnar han säkringsdosan. – En säkring har gått, säger han.",
+   "– Det kan ha varit en liten kortslutning, fortsätter Simon. Han kontrollerar kablaget och ser att en kabel är skadad. Han läser också av bilens styrenhet. En sensor visar att generatorn inte laddar batteriet ordentligt. – Bilens elsystem behöver en översyn, säger han.",
+   "När Ida kör hem är det mörkt. På den tomma vägen kör hon med helljus. Varje gång en bil kommer emot är hon noga med att blända av. Hemma låser hon bilen med centrallåset och sätter direkt på motorvärmaren. I morgon ska bilen starta."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför startar inte bilen?",
+    "options": [
+     "Det finns ingen bensin",
+     "Bilbatteriet är urladdat",
+     "Däcken har ingen luft",
+     "Ida har tappat nyckeln"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "– Bilbatteriet är nog urladdat, säger han.",
+    "explanationJa": "バッテリーが{上|あ}がっているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har Ida glömt att göra?",
+    "options": [
+     "Låsa bilen",
+     "Sätta på motorvärmaren",
+     "Tanka bilen",
+     "Blända av"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon har glömt att sätta på motorvärmaren i går kväll.",
+    "explanationJa": "{昨夜|さくや}エンジンヒーターを{入|い}れるのを{忘|わす}れました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad hittar Simon i säkringsdosan?",
+    "options": [
+     "En mus",
+     "En ny startmotor",
+     "En säkring som har gått",
+     "Ingenting"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– En säkring har gått, säger han.",
+    "explanationJa": "ヒューズが{一|ひと}つ{切|き}れていました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Generatorn laddar batteriet som den ska.",
+    "correct": false,
+    "explanationSv": "En sensor visar att generatorn inte laddar batteriet ordentligt.",
+    "explanationJa": "オルタネーターはバッテリーをきちんと{充電|じゅうでん}していません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ida tänker inte glömma motorvärmaren igen.",
+    "correct": true,
+    "explanationSv": "Hemma låser hon bilen med centrallåset och sätter direkt på motorvärmaren.",
+    "explanationJa": "{家|いえ}に{着|つ}くとすぐにエンジンヒーターを{入|い}れました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En vanlig personbil har ett elsystem på 12 volt med ett startbatteri som laddas av generatorn när motorn går.",
+    "source": "Nationalencyklopedin, uppslagen ”bilbatteri” och ”generator”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Helljus får inte användas vid möte med andra fordon eller när det kan blända andra trafikanter.",
+    "source": "Trafikförordningen (1998:1276), 3 kap. om användning av belysning",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Motorvärmare minskar bränsleförbrukningen, slitaget och utsläppen vid kallstart.",
+    "source": "Energimyndigheten, råd om motorvärmare",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bilar och el när det är kallt och mörkt.",
+  "discussionPoints": [
+   "Har du varit med om att bilbatteriet var urladdat? Vad gjorde du?",
+   "Använder man motorvärmare i Japan?",
+   "Vilken av bilens elektriska funktioner skulle du sakna mest?",
+   "Kör du med helljus på landet? När är det svårt att komma ihåg att blända av?"
+  ]
+ },
+ "standard": 2
+}

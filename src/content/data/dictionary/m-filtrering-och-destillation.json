@@ -388,6 +388,7 @@
        "ja": "{冷却器|れいきゃくき}にはいつも{冷|つめ}たい{水|みず}が{流|なが}れています。"
       }
      ],
+     "labelSv": "destillation",
      "explanation": {
       "sv": "Kylaren är det glasrör där ångan blir vätska igen. Kallt vatten från kranen går in nedtill i ett yttre rör och ut upptill, och i det inre röret kondenserar ångan. Ordet kylare används också om den del i en bil som kyler motorn.",
       "ja": "「kylare」は、{蒸留|じょうりゅう}で{蒸気|じょうき}がまた{液体|えきたい}になる{部分|ぶぶん}です。{蛇口|じゃぐち}からの{冷|つめ}たい{水|みず}が{外側|そとがわ}の{管|くだ}に{下|した}から{入|はい}って{上|うえ}から{出|で}ていき、{内側|うちがわ}の{管|くだ}で{蒸気|じょうき}が{凝結|ぎょうけつ}します。{車|くるま}のエンジンを{冷|ひ}やすラジエーターも「kylare」と{言|い}います。"
@@ -398,9 +399,38 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.kylare.2",
+     "ja": "（{車|くるま}の）ラジエーター",
+     "defSv": "Den del längst fram i bilen där kylarvätskan blir kall av luften, så att motorn inte blir för varm.",
+     "defJa": "{車|くるま}のいちばん{前|まえ}にある{部品|ぶひん}。{冷却液|れいきゃくえき}を{空気|くうき}で{冷|ひ}やして、エンジンが{熱|あつ}くなりすぎないようにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kylaren läcker, så motorn blir för varm.",
+       "ja": "ラジエーターが{漏|も}れているので、エンジンが{熱|あつ}くなりすぎます。"
+      }
+     ],
+     "labelSv": "i bil",
+     "tags": [
+      "bilar",
+      "teknik",
+      "fordon"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
   }
  ]
 }
