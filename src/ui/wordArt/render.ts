@@ -253,6 +253,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'cartk.': () => import('./carTech').then((m) => m.CARTK_MOTIFS),
   'evchg.': () => import('./evCharging').then((m) => m.EVCHG_MOTIFS),
   'trainv.': () => import('./trainVehicles').then((m) => m.TRAINV_MOTIFS),
+  'aviat.': () => import('./aviation').then((m) => m.AVIAT_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
