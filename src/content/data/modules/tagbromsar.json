@@ -1,0 +1,190 @@
+{
+ "id": "m.tagbromsar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Tågbromsar",
+ "titleJa": "{列車|れっしゃ}のブレーキ",
+ "descriptionSv": "Du lär dig att förklara hur ett tåg bromsar och varför det är svårt att stanna när rälsen är hal, och att förstå vad personalen säger om bromsar och säkerhet ombord.",
+ "descriptionJa": "{列車|れっしゃ}がどのようにブレーキをかけるか、レールが{滑|すべ}りやすいとなぜ{止|と}まりにくいかを{説明|せつめい}できるようになります。ブレーキや{車内|しゃない}の{安全|あんぜん}についての{乗務員|じょうむいん}の{説明|せつめい}もわかるようになります。",
+ "categoryId": "R07-A06-T03",
+ "tags": [
+  "järnväg",
+  "fordon",
+  "säkerhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.sparvaxlar"
+ ],
+ "related": [],
+ "recommendedOrder": 4233,
+ "words": [
+  {
+   "senseId": "s.broms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsspak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftbroms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryckluft.2",
+   "active": false
+  },
+  {
+   "senseId": "s.bromskloss.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lossa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromsprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bromssträcka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tvärbromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gnista.3",
+   "active": false
+  },
+  {
+   "senseId": "s.nödbroms.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lövhalka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.slira.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sanda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glidskydd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjulplatta.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Höst på spåret",
+  "paragraphs": [
+   "Per är lokförare i Värmland. Varje morgon, innan han kör ut från depån, gör han ett bromsprov. Han bromsar, och en kollega kontrollerar att bromsklossarna trycks mot hjulen. Sedan lossar han bromsarna igen.",
+   "Tåget har luftbromsar som fungerar med tryckluft. När Per drar bromsspaken bakåt, går luft ut ur en ledning, och bromsklossarna trycks mot hjulen. Ju längre han drar, desto hårdare bromsar tåget.",
+   "På hösten är det svårt att bromsa. Löven faller på spåret och blir en hal massa på rälsen. Det kallas lövhalka. Hjulen kan slira när tåget startar, och bromssträckan blir mycket längre. Därför kan tåget sanda: lite sand sprutas ut framför hjulen.",
+   "Tåget har också glidskydd. Det släpper bromsen lite när ett hjul börjar glida. Annars kan hjulet få en hjulplatta, och då dunkar det för varje varv.",
+   "En morgon står en älg på spåret. Per tvärbromsar, och gnistor sprutar från hjulen. Tåget stannar precis framför älgen. I tåget finns det också en nödbroms. Den får resenärerna bara använda när det är fara, till exempel om någon har fastnat i dörren."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Per varje morgon innan han kör ut?",
+    "options": [
+     "En reparation av hjulen",
+     "Ett bromsprov",
+     "En tvätt av tåget",
+     "En kontroll av biljetterna"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Varje morgon gör han ett bromsprov innan han kör ut från depån.",
+    "explanationJa": "{毎朝|まいあさ}、{出発前|しゅっぱつまえ}にブレーキ{試験|しけん}をします。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer när Per drar bromsspaken bakåt?",
+    "options": [
+     "Luft går ut ur en ledning och bromsklossarna trycks mot hjulen",
+     "Tåget tar mer ström från kontaktledningen",
+     "Sand sprutas ut på spåret",
+     "Nödbromsen löser ut"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Texten säger att luft går ut ur en ledning och att bromsklossarna trycks mot hjulen.",
+    "explanationJa": "{管|くだ}から{空気|くうき}が{抜|ぬ}け、ブレーキシューが{車輪|しゃりん}に{押|お}し{付|つ}けられます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "cause",
+    "statementSv": "Lövhalka gör att bromssträckan blir längre.",
+    "correct": true,
+    "explanationSv": "Texten säger att bromssträckan blir mycket längre när det är lövhalka.",
+    "explanationJa": "{落|お}ち{葉|ば}で{滑|すべ}りやすいと、{制動距離|せいどうきょり}が{長|なが}くなります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "usage",
+    "promptSv": "Varför sprutar tåget ut sand?",
+    "options": [
+     "För att rengöra rälsen",
+     "För att hjulen inte ska slira",
+     "För att kyla bromsarna",
+     "För att varna djur"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Tåget sandar när det är halt, så att hjulen inte slirar och kan bromsa bättre.",
+    "explanationJa": "{車輪|しゃりん}がスリップしないように{砂|すな}をまきます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Resenärerna får använda nödbromsen om tåget är försenat.",
+    "correct": false,
+    "explanationSv": "Nödbromsen får bara användas när det är fara.",
+    "explanationJa": "{非常|ひじょう}ブレーキは{危険|きけん}なときだけ{使|つか}えます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Tågets luftbroms fungerar med tryckluft: när trycket i bromsledningen sjunker, trycks bromsklossarna mot hjulen.",
+    "source": "Nationalencyklopedin, uppslaget ”tryckluftsbroms”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Löv på spåret gör rälsen hal på hösten, och tåg sandar för att få bättre grepp.",
+    "source": "Trafikverket, ”Lövhalka”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur tåg och andra fordon bromsar, och om säkerhet ombord.",
+  "discussionPoints": [
+   "Har du varit med om att ett tåg eller en buss har tvärbromsat? Vad hände?",
+   "Varför tror du att det är svårare att bromsa ett tåg än en bil?",
+   "När tycker du att det är rätt att dra i nödbromsen?",
+   "Har du märkt att tågen blir sena på hösten där du bor?"
+  ]
+ },
+ "standard": 2
+}

@@ -406,6 +406,7 @@
        "ja": "{荷物|にもつ}の{受|う}け{取|と}りにサインが{必要|ひつよう}です。"
       }
      ],
+     "labelSv": "ta emot",
      "frame": {
       "subject": "Hon",
       "complement": "paketet"
@@ -421,9 +422,76 @@
      "explanation": {
       "sv": "Att kvittera betyder att man skriver sitt namn, ofta på en skärm eller ett papper, för att visa att man har fått något, till exempel ett paket. Det är ett bevis för företaget.",
       "ja": "「kvittera」は、{荷物|にもつ}などを{受|う}け{取|と}ったことを{示|しめ}すために、よく{画面|がめん}や{紙|かみ}に{名前|なまえ}を{書|か}くことです。{会社|かいしゃ}にとっての{証明|しょうめい}になります。"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.kvittera.2",
+     "ja": "（{警報|けいほう}・{信号|しんごう}を）{確認|かくにん}する",
+     "defSv": "Trycka på en knapp eller svara för att visa att man har sett en signal, en varning eller ett larm.",
+     "defJa": "{信号|しんごう}や{警告|けいこく}、{警報|けいほう}を{見|み}たことを{示|しめ}すために、ボタンを{押|お}したり{応答|おうとう}したりする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han kvitterar varningen genom att trycka på en knapp.",
+       "ja": "{彼|かれ}はボタンを{押|お}して{警告|けいこく}を{確認|かくにん}します。"
+      },
+      {
+       "sv": "Larmet slutar när någon har kvitterat det.",
+       "ja": "だれかが{確認|かくにん}すると、{警報|けいほう}が{止|と}まります。"
+      }
+     ],
+     "labelSv": "bekräfta en varning",
+     "collocations": [
+      "kvittera ett larm",
+      "kvittera en varning"
+     ],
+     "explanation": {
+      "sv": "Att kvittera en varning betyder att man visar systemet att man har sett den. I ett tåg gör föraren det med en knapp; om föraren inte kvitterar, bromsar systemet tåget. Ordet används också på kontor och i fabriker: kvittera ett larm.",
+      "ja": "「kvittera en varning」は、{警告|けいこく}を{見|み}たことをシステムに{知|し}らせることです。{列車|れっしゃ}では{運転士|うんてんし}がボタンで{行|おこな}い、{確認|かくにん}しないとシステムが{列車|れっしゃ}にブレーキをかけます。{事務所|じむしょ}や{工場|こうじょう}でも「kvittera ett larm（{警報|けいほう}を{確認|かくにん}する）」と{言|い}います。"
+     },
+     "tags": [
+      "järnväg",
+      "fordon",
+      "säkerhet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.kvittera.3",
+     "ja": "（スポーツで）{同点|どうてん}にする",
+     "defSv": "Göra mål så att det blir lika i en match.",
+     "defJa": "{試合|しあい}で{点|てん}を{入|い}れて、{同点|どうてん}にする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hemmalaget kvitterade till 1–1 i andra halvlek.",
+       "ja": "ホームチームは{後半|こうはん}に{得点|とくてん}し、1{対|たい}1の{同点|どうてん}にしました。"
+      },
+      {
+       "sv": "Det tog bara två minuter innan de kvitterade.",
+       "ja": "2{分|ふん}もしないうちに、{彼|かれ}らは{同点|どうてん}に{追|お}いつきました。"
+      }
+     ],
+     "labelSv": "i sport",
+     "tags": [
+      "sport"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
   },
   {
    "id": "e.utanför-dörren",

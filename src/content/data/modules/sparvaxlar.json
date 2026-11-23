@@ -1,0 +1,180 @@
+{
+ "id": "m.sparvaxlar",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Spårväxlar",
+ "titleJa": "ポイント（{分岐器|ぶんきき}）",
+ "descriptionSv": "Du lär dig att förklara hur ett tåg byter spår i en växel och vad som kan gå fel på vintern, och att förstå vad föraren säger i högtalaren när tåget står still.",
+ "descriptionJa": "{列車|れっしゃ}がポイントでどのように{線路|せんろ}を{移|うつ}るか、{冬|ふゆ}に{何|なに}が{起|お}こりうるかを{説明|せつめい}できるようになります。{列車|れっしゃ}が{止|と}まったときの{運転士|うんてんし}のアナウンスもわかるようになります。",
+ "categoryId": "R07-A06-T03",
+ "tags": [
+  "järnväg",
+  "fordon",
+  "vinter"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.lok-och-motorvagnar"
+ ],
+ "related": [],
+ "recommendedOrder": 4232,
+ "words": [
+  {
+   "senseId": "s.växel.4",
+   "active": true
+  },
+  {
+   "senseId": "s.växeltunga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.veva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägga-om.4",
+   "active": true
+  },
+  {
+   "senseId": "s.byta-spår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sidospår.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stickspår.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ändstation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.vända.2",
+   "active": true
+  },
+  {
+   "senseId": "s.växelfel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.växelvärme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frysa-fast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.krängning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gnissla.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sakta-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hastighetsbegränsning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Snö i växeln",
+  "paragraphs": [
+   "Yuki pendlar varje dag med tåg från Uppsala till Stockholm. En morgon i januari säger föraren i högtalaren: – Vi har ett växelfel strax norr om Stockholm. Vi måste sakta ner och vänta.",
+   "En växel är en plats där ett spår delar sig i två. I växeln finns växeltungor, rörliga delar som flyttas åt sidan. När man lägger om växeln, flyttas tungorna, och tåget kan byta spår.",
+   "I natt har det snöat mycket. Växlarna har växelvärme som ska smälta snön, men snö och is har ändå fastnat mellan växeltungan och rälsen. Växeln har frusit fast. En banarbetare går ut och vevar om växeln för hand.",
+   "Efter tjugo minuter får tåget köra igen. Genom växeln är det hastighetsbegränsning, så tåget kör långsamt. Yuki känner en krängning när tåget kör över till det andra spåret, och hjulen gnisslar.",
+   "Genom fönstret ser hon ett tåg för banarbetare som står på ett stickspår och ett godståg som väntar på ett sidospår. Stockholm är tågets ändstation. Där ska tåget vända och köra tillbaka till Uppsala, men nu är det en halvtimme sent."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför måste tåget sakta ner?",
+    "options": [
+     "Det är fel på en växel",
+     "En dörr är trasig",
+     "Det är för många resenärer",
+     "Föraren är sjuk"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Föraren säger att det är ett växelfel norr om Stockholm.",
+    "explanationJa": "ポイントの{故障|こしょう}があるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad händer med växeltungorna när man lägger om växeln?",
+    "options": [
+     "De flyttas åt sidan",
+     "De värms upp",
+     "De lyfts upp",
+     "De byts ut"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Texten säger att tungorna flyttas när man lägger om växeln.",
+    "explanationJa": "ポイントを{切|き}り{替|か}えると、トングレールが{横|よこ}に{動|うご}きます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "cause",
+    "statementSv": "Växeln frös fast trots växelvärmen.",
+    "correct": true,
+    "explanationSv": "Snö och is fastnade ändå mellan växeltungan och rälsen, och växeln frös fast.",
+    "explanationJa": "{融雪装置|ゆうせつそうち}があっても、ポイントは{凍|こお}りついてしまいました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Hur löser banarbetaren problemet?",
+    "options": [
+     "Han ringer till föraren",
+     "Han vevar om växeln för hand",
+     "Han sandar spåret",
+     "Han stänger av strömmen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "En banarbetare går ut och vevar om växeln för hand.",
+    "explanationJa": "{手|て}でハンドルを{回|まわ}して{切|き}り{替|か}えます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Godståget står på ett spår som tar slut.",
+    "correct": false,
+    "explanationSv": "Det är tåget för banarbetare som står på ett stickspår. Godståget väntar på ett sidospår.",
+    "explanationJa": "{行|ゆ}き{止|ど}まりの{側線|そくせん}にいるのは{作業用|さぎょうよう}の{列車|れっしゃ}です。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En växel har rörliga växeltungor som läggs om så att tåget kan köra in på ett annat spår, och växelvärme smälter snö och is i växeln.",
+    "source": "Nationalencyklopedin, uppslaget ”spårväxel”; Trafikverket, ”Växlar”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om tågresor på vintern och om vad som kan hända i växlarna.",
+  "discussionPoints": [
+   "Har du suttit på ett tåg som har stått still på grund av ett växelfel?",
+   "Vad tycker du att man ska göra för att tågen ska fungera bättre på vintern?",
+   "Märker du när tåget byter spår? Hur känns det?",
+   "Har du någon gång bytt spår i livet, till exempel bytt yrke?"
+  ]
+ },
+ "standard": 2
+}

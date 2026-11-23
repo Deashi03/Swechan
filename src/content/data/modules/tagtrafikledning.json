@@ -1,0 +1,176 @@
+{
+ "id": "m.tagtrafikledning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Tågtrafikledning",
+ "titleJa": "{列車|れっしゃ}の{運行管理|うんこうかんり}",
+ "descriptionSv": "Du lär dig att förstå hur personalen på tåget samarbetar med trafikledningen, och att förstå utrop och trafikinformation när ett tåg blir försenat eller inställt.",
+ "descriptionJa": "{列車|れっしゃ}の{乗務員|じょうむいん}が{運行指令|うんこうしれい}とどのように{協力|きょうりょく}しているかがわかるようになります。{列車|れっしゃ}が{遅|おく}れたり{運休|うんきゅう}になったりしたときのアナウンスや{運行情報|うんこうじょうほう}もわかるようになります。",
+ "categoryId": "R07-A06-T03",
+ "tags": [
+  "järnväg",
+  "trafik",
+  "arbete"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.signalsystem"
+ ],
+ "related": [],
+ "recommendedOrder": 4235,
+ "words": [
+  {
+   "senseId": "s.tidtabell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tågnummer.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tågvärd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgångssignal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trafikledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.radiokontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fordonsfel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tågmöte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.invänta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försening.1",
+   "active": false
+  },
+  {
+   "senseId": "s.trafikinformation.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klartecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.personalbrist.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inställd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ersättningsbuss.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En dag som tågvärd",
+  "paragraphs": [
+   "Anna är tågvärd på ett regionaltåg. Klockan sex på morgonen kommer hon till stationen och läser om dagens tåg. Hennes första tåg har tågnummer 8712 och ska gå enligt tidtabellen klockan 6.15.",
+   "På perrongen kontrollerar hon att alla resenärer har gått på. Sedan ger hon avgångssignal, och tåget kan åka. Föraren har radiokontakt med trafikledaren, som ser alla tåg på stora skärmar.",
+   "Efter en halvtimme ropar trafikledaren upp föraren i radion. Ett annat tåg har fått fordonsfel, och de måste invänta det vid ett tågmöte. Anna berättar om förseningen i högtalaren. Resenärerna kan också läsa trafikinformation i appen.",
+   "Efter tio minuter får föraren klartecken, och tåget kan köra vidare. I Linköping hör Anna att flera av eftermiddagens tåg är inställda på grund av personalbrist. Det finns inte tillräckligt många lokförare.",
+   "I stället för tågen kör ersättningsbussar. – Det är aldrig roligt att säga att ett tåg är inställt, säger Anna. Men det viktigaste är att alla kommer fram."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket tågnummer har Annas första tåg?",
+    "options": [
+     "6150",
+     "8712",
+     "537",
+     "4"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hennes första tåg har tågnummer 8712.",
+    "explanationJa": "{最初|さいしょ}の{列車|れっしゃ}は8712{号|ごう}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Anna innan tåget åker från stationen?",
+    "options": [
+     "Hon kör tåget ut från stationen",
+     "Hon ringer till trafikledaren",
+     "Hon säljer biljetter på perrongen",
+     "Hon kontrollerar att alla har gått på och ger avgångssignal"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon kontrollerar att alla resenärer har gått på och ger sedan avgångssignal.",
+    "explanationJa": "{全員|ぜんいん}が{乗|の}ったことを{確|たし}かめて、{出発合図|しゅっぱつあいず}を{出|だ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför måste tåget vänta vid ett tågmöte?",
+    "options": [
+     "Det är fel på signalerna",
+     "En resenär har blivit sjuk",
+     "Ett annat tåg har fått fordonsfel",
+     "Det ligger snö på spåret"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ett annat tåg har fått fordonsfel, och de måste invänta det.",
+    "explanationJa": "{別|べつ}の{列車|れっしゃ}が{車両故障|しゃりょうこしょう}を{起|お}こしたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Eftermiddagens tåg ställs in för att det saknas lokförare.",
+    "correct": true,
+    "explanationSv": "Flera tåg är inställda på grund av personalbrist, och det finns inte tillräckligt många lokförare.",
+    "explanationJa": "{運転士|うんてんし}が{足|た}りないので、{運休|うんきゅう}になります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Resenärerna får vänta på nästa dag för att komma fram.",
+    "correct": false,
+    "explanationSv": "I stället för tågen kör ersättningsbussar.",
+    "explanationJa": "{列車|れっしゃ}の{代|か}わりに{代行|だいこう}バスが{走|はし}ります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Trafikverket leder tågtrafiken på de statliga järnvägarna, och tågföretagen ansvarar för personalen ombord på tågen.",
+    "source": "Trafikverket, ”Så fungerar tågtrafiken”",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om arbetet på tåget och om vad som händer när tågen blir sena eller inställda.",
+  "discussionPoints": [
+   "Skulle du vilja arbeta som tågvärd? Vad verkar roligt eller svårt?",
+   "Hur får du trafikinformation när du reser?",
+   "Har du åkt ersättningsbuss någon gång? Hur var det?",
+   "Vilka yrken har personalbrist i ditt land just nu?"
+  ]
+ },
+ "standard": 2
+}

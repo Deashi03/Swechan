@@ -1,0 +1,176 @@
+{
+ "id": "m.signalsystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Signalsystem",
+ "titleJa": "{信号|しんごう}システム",
+ "descriptionSv": "Du lär dig att förklara hur signaler och ATC hjälper lokföraren att köra säkert, och att förstå nyheter om tillbud och fel i signalsystemet.",
+ "descriptionJa": "{信号|しんごう}やATCが、{運転士|うんてんし}が{安全|あんぜん}に{運転|うんてん}するのをどのように{助|たす}けているかを{説明|せつめい}できるようになります。{信号|しんごう}システムの{故障|こしょう}や、{事故|じこ}になりかけた{出来事|できごと}についてのニュースもわかるようになります。",
+ "categoryId": "R07-A06-T03",
+ "tags": [
+  "järnväg",
+  "fordon",
+  "säkerhet"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.tagbromsar"
+ ],
+ "related": [],
+ "recommendedOrder": 4234,
+ "words": [
+  {
+   "senseId": "s.lokförare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grönt-ljus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stoppsignal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blocksträcka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försignal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ATC.1",
+   "active": true
+  },
+  {
+   "senseId": "s.övervaka.1",
+   "active": false
+  },
+  {
+   "senseId": "s.balis.1",
+   "active": true
+  },
+  {
+   "senseId": "s.passera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kvittera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tvångsbromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.signalfel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.signalera.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tyfon.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tillbud.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Signaler längs spåret",
+  "paragraphs": [
+   "Lars är lokförare och har kört tåg i tjugo år. I dag berättar han för en grupp elever hur signalerna fungerar. – Spåret är delat i blocksträckor. På varje blocksträcka får det bara finnas ett tåg i taget, och mellan två blocksträckor står en signal.",
+   "– Grönt ljus betyder att jag får köra, och en stoppsignal betyder att jag måste stanna. Men ett tåg kan inte stanna snabbt. Därför finns det en försignal en bit före. Den visar vad nästa signal kommer att visa, så att jag hinner bromsa.",
+   "– Tåget har också ATC, som hela tiden övervakar hastigheten. Mellan rälsen sitter baliser, och när tåget passerar dem, får det information om signalerna. Om jag kör för fort, varnar ATC:n. Då måste jag kvittera varningen med en knapp. Annars tvångsbromsar ATC:n tåget.",
+   "– Ibland blir det signalfel. Då visar signalerna stopp, och jag får vänta tills trafikledaren ger mig lov att köra. Före en plankorsning signalerar jag med tyfonen, så att alla hör att tåget kommer.",
+   "Förra året läste Lars om ett tillbud: ett godståg körde förbi en stoppsignal, men ATC:n stoppade tåget innan något hände. – Därför är ATC så viktig, säger han. I framtiden ska den ersättas av ett nytt system som är gemensamt för hela Europa."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många tåg får vara på en blocksträcka samtidigt?",
+    "options": [
+     "Två",
+     "Tre",
+     "Så många som det får plats",
+     "Ett"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Lars säger att det bara får finnas ett tåg i taget på varje blocksträcka.",
+    "explanationJa": "1つの{閉塞区間|へいそくくかん}には、{一度|いちど}に1{本|ぽん}の{列車|れっしゃ}しか{入|はい}れません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför finns det en försignal före stoppsignalen?",
+    "options": [
+     "Så att resenärerna vet var de ska gå av",
+     "Så att tåget kan byta spår",
+     "Så att trafikledaren ser tåget",
+     "Så att föraren hinner bromsa"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Ett tåg kan inte stanna snabbt, och försignalen visar vad nästa signal kommer att visa.",
+    "explanationJa": "{列車|れっしゃ}はすぐに{止|と}まれないので、{遠方信号機|えんぽうしんごうき}で{前|まえ}もって{知|し}らせます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q3",
+    "focus": "detail",
+    "statementSv": "Baliserna sitter mellan rälsen.",
+    "correct": true,
+    "explanationSv": "Texten säger att baliserna sitter mellan rälsen.",
+    "explanationJa": "{地上子|ちじょうし}はレールの{間|あいだ}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q4",
+    "focus": "detail",
+    "promptSv": "Vad händer om Lars inte kvitterar varningen?",
+    "options": [
+     "ATC:n tvångsbromsar tåget",
+     "Tåget kör vidare som vanligt",
+     "Trafikledaren ringer honom",
+     "Tyfonen börjar låta"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Lars säger att ATC:n tvångsbromsar tåget om han inte kvitterar.",
+    "explanationJa": "{確認|かくにん}しないと、ATCが{自動|じどう}でブレーキをかけます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Vid tillbudet krockade godståget med ett annat tåg.",
+    "correct": false,
+    "explanationSv": "ATC:n stoppade tåget innan något hände.",
+    "explanationJa": "ATCが{列車|れっしゃ}を{止|と}めたので、{何|なに}も{起|お}こりませんでした。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "ATC (automatisk tågkontroll) övervakar tågets hastighet och bromsar tåget automatiskt om föraren inte gör det, och systemet ska på sikt ersättas av det europeiska signalsystemet ERTMS.",
+    "source": "Trafikverket, ”ATC” och ”ERTMS”",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om säkerhet på järnvägen och om hur signaler hjälper föraren.",
+  "discussionPoints": [
+   "Vilka signaler ser du när du åker tåg eller kör bil?",
+   "Tycker du att det är bra att ett system kan bromsa tåget automatiskt? Varför?",
+   "Skulle du vilja arbeta som lokförare? Vad verkar svårt?",
+   "Har du läst om något tillbud i trafiken på sistone?"
+  ]
+ },
+ "standard": 2
+}
