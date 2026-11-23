@@ -213,13 +213,13 @@ try {
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), all of Historia & humaniora
   // (0.36–0.41), all of Natur & geografi (0.42–0.47), Matematikens grunder (0.48), Avancerad matematik (0.49), Fysik
   // (0.50), Kemi (0.51), Biologi (0.52), Astronomi & rymd (0.53) Datorer & internet (0.55), Programmering & AI (0.56), Elektronik & energi (0.57), Maskiner &
-  // tillverkning (0.58) and Byggnad & infrastruktur (0.59) are published, so the planned entry is Teknik & digital
-  // värld → Transportteknik → Bilens teknik → Förbränningsmotorer.
+  // tillverkning (0.58), Byggnad & infrastruktur (0.59) and Transportteknik (0.60) are published, so the planned entry
+  // is Kultur & fritid → Språk & litteratur → Språkets uppbyggnad → Ordklasser och satsdelar.
   await page.goto(`${BASE}#/explore`);
-  await page.getByRole('link', { name: /Teknik & digital värld/ }).first().click();
-  await page.getByRole('link', { name: /Transportteknik/ }).first().click();
-  await page.getByRole('link', { name: /Bilens teknik/ }).first().click();
-  await page.getByRole('link', { name: /^Förbränningsmotorer/ }).first().click();
+  await page.getByRole('link', { name: /Kultur & fritid/ }).first().click();
+  await page.getByRole('link', { name: /Språk & litteratur/ }).first().click();
+  await page.getByRole('link', { name: /Språkets uppbyggnad/ }).first().click();
+  await page.getByRole('link', { name: /^Ordklasser och satsdelar/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
