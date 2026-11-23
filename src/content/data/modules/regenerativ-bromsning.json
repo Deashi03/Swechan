@@ -1,0 +1,184 @@
+{
+ "id": "m.regenerativ-bromsning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Regenerativ bromsning",
+ "titleJa": "{回生|かいせい}ブレーキ",
+ "descriptionSv": "Hur en elbil bromsar och sparar energi samtidigt: vad som händer med energin när bilen saktar in, hur man kör mjukt med en pedal, och hur man talar om körning i backar och i stadstrafik på en körlektion.",
+ "descriptionJa": "{電気自動車|でんきじどうしゃ}がブレーキをかけながらエネルギーを{節約|せつやく}するしくみ：{車|くるま}が{減速|げんそく}するときにエネルギーがどうなるか、ペダル{一|ひと}つでなめらかに{運転|うんてん}する{方法|ほうほう}、そして{教習|きょうしゅう}で{坂道|さかみち}や{街中|まちなか}の{運転|うんてん}についてどう{話|はな}すかを{学|まな}びます。",
+ "categoryId": "R07-A06-T02",
+ "tags": [
+  "elbilar",
+  "körning",
+  "energi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.snabbladdning"
+ ],
+ "related": [],
+ "recommendedOrder": 4226,
+ "words": [
+  {
+   "senseId": "s.bromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gaspedal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rörelseenergi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lägesenergi.1",
+   "active": false
+  },
+  {
+   "senseId": "s.generator.1",
+   "active": false
+  },
+  {
+   "senseId": "s.regenerativ-bromsning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.friktion.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bromskloss.1",
+   "active": false
+  },
+  {
+   "senseId": "s.släppa-gasen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rulla.3",
+   "active": true
+  },
+  {
+   "senseId": "s.enpedalskörning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nedförsbacke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppförsbacke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tvärbromsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ryckig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stadstrafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framförhållning.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Körlektion i elbil",
+  "paragraphs": [
+   "Yuki tar körkort i Uppsala. Körskolan har bara elbilar, och hennes körlärare heter Anders. I dag ska de öva på att bromsa på ett nytt sätt.",
+   "– I en elbil behöver du inte trycka på bromsen så ofta, säger Anders. När du lyfter foten från gaspedalen börjar bilen bromsa själv. Det kallas regenerativ bromsning. Elmotorn fungerar då som en generator och gör om bilens rörelseenergi till el, som går tillbaka till batteriet.",
+   "I en vanlig bil blir den energin bara värme, eftersom bromsklossarna bromsar med friktion. – Därför slits bromsarna nästan inte alls på en elbil, säger Anders. I en lång nedförsbacke kan batteriet till och med laddas lite. Bilens lägesenergi högst upp blir el på vägen ner. Men i en uppförsbacke går det åt mycket energi.",
+   "Sedan slår Anders på enpedalskörning. Nu stannar bilen helt om Yuki släpper gasen. Först åker bilen ryckigt, och Anders skrattar. – Släpp gasen mjukt, säger han. Låt bilen rulla fram till rödljuset. Efter tjugo minuter går det mycket bättre.",
+   "I stadstrafik är det viktigt att köra med framförhållning: titta långt fram och släpp gasen i god tid. Då behöver man nästan aldrig använda bromsen. – Men om ett barn springer ut på gatan måste du kunna tvärbromsa, säger Anders. Då är det bromspedalen som gäller."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad har körskolan för bilar?",
+    "options": [
+     "Bara bensinbilar",
+     "Både elbilar och bussar",
+     "Gamla dieselbilar",
+     "Bara elbilar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Körskolan har bara elbilar, och hennes körlärare heter Anders.",
+    "explanationJa": "{教習所|きょうしゅうじょ}には{電気自動車|でんきじどうしゃ}しかありません。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad händer med rörelseenergin vid regenerativ bromsning?",
+    "options": [
+     "Den blir bara värme",
+     "Den försvinner helt",
+     "Den blir el som går tillbaka till batteriet",
+     "Den gör bilen snabbare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Elmotorn fungerar då som en generator och gör om bilens rörelseenergi till el, som går tillbaka till batteriet.",
+    "explanationJa": "{運動|うんどう}エネルギーが{電気|でんき}になり、バッテリーに{戻|もど}ります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför åker bilen ryckigt i början?",
+    "options": [
+     "Hon är inte van vid enpedalskörning",
+     "Bilen är trasig",
+     "Det är halt på vägen",
+     "Anders bromsar"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Sedan slår Anders på enpedalskörning. Nu stannar bilen helt om Yuki släpper gasen. Först åker bilen ryckigt, och Anders skrattar.",
+    "explanationJa": "ワンペダル{走行|そうこう}に{慣|な}れていないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Bromsarna på en elbil slits lika mycket som på en vanlig bil.",
+    "correct": false,
+    "explanationSv": "Därför slits bromsarna nästan inte alls på en elbil, säger Anders.",
+    "explanationJa": "{電気自動車|でんきじどうしゃ}のブレーキはほとんどすり{減|へ}りません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man behöver fortfarande bromspedalen i en elbil.",
+    "correct": true,
+    "explanationSv": "Men om ett barn springer ut på gatan måste du kunna tvärbromsa, säger Anders.",
+    "explanationJa": "{急|きゅう}に{止|と}まるときにはブレーキペダルが{必要|ひつよう}です。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Vid regenerativ bromsning arbetar elmotorn som generator och gör om en del av fordonets rörelseenergi till el som laddar batteriet.",
+    "source": "Nationalencyklopedin, uppslagsordet elbil",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att köra bil och om att lära sig köra.",
+  "discussionPoints": [
+   "Har du tagit körkort? Var det svårt?",
+   "Vad tycker du är svårast med att köra i stadstrafik?",
+   "Har du åkt med någon som kör ryckigt? Hur kändes det?",
+   "Vad betyder det att köra med framförhållning, tycker du?"
+  ]
+ },
+ "standard": 2
+}

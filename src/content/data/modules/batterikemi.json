@@ -1,0 +1,200 @@
+{
+ "id": "m.batterikemi",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Batterikemi",
+ "titleJa": "{電池|でんち}の{化学|かがく}",
+ "descriptionSv": "Vad som händer inne i ett elbilsbatteri och hur man förstår nyheter om det: batteriets delar och ämnen, vad som gör ett batteri bra eller farligt, nya sorters batterier och frågor om var metallerna kommer ifrån.",
+ "descriptionJa": "{電気自動車|でんきじどうしゃ}のバッテリーの{中|なか}で{何|なに}が{起|お}きているか、そしてそれについてのニュースの{読|よ}み{方|かた}：{電池|でんち}の{部分|ぶぶん}と{物質|ぶっしつ}、よい{電池|でんち}や{危険|きけん}な{電池|でんち}を{分|わ}けるもの、{新|あたら}しい{種類|しゅるい}の{電池|でんち}、そして{金属|きんぞく}がどこから{来|く}るのかという{問題|もんだい}を{学|まな}びます。",
+ "categoryId": "R07-A06-T02",
+ "tags": [
+  "elbilar",
+  "batterier",
+  "kemi"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.batteripaket"
+ ],
+ "related": [],
+ "recommendedOrder": 4223,
+ "words": [
+  {
+   "senseId": "s.litiumjonbatteri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.litium.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jon.1",
+   "active": false
+  },
+  {
+   "senseId": "s.grafit.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nickel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kobolt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.katod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektrolyt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.natriumjonbatteri.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energitäthet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddcykel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.överhettas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandrisk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.råvara.2",
+   "active": false
+  },
+  {
+   "senseId": "s.gruva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utvinna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.batterifabrik.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Praktik på batterifabriken",
+  "paragraphs": [
+   "Hiroshi läser till ingenjör och gör praktik på en batterifabrik i norra Sverige. Fabriken tillverkar litiumjonbatterier till elbilar. Första dagen visar hans handledare Emma hur en cell är uppbyggd.",
+   "– Varje cell har två sidor, anoden och katoden, säger Emma. Anoden är gjord av grafit. Katoden innehåller litium, nickel och kobolt. Mellan dem finns elektrolyten. När man laddar batteriet flyttar sig joner av litium genom elektrolyten från katoden till anoden. När bilen kör går de tillbaka.",
+   "Hiroshi får också lära sig vad som gör ett bra batteri. Hög energitäthet betyder att bilen kan köra långt utan att batteriet blir för tungt. Batteriet ska också klara många laddcykler, så att det håller i många år. Emma förklarar att cellerna inte får överhettas. Därför testas varje cell noga, eftersom brandrisken är liten men allvarlig.",
+   "På lunchen pratar de om nyheter. Många forskar på natriumjonbatterier, som inte behöver litium eller kobolt. Natrium är billigt och finns i vanligt salt. – Men de är tyngre, så de passar bäst i små bilar, säger Emma.",
+   "Hiroshi frågar varifrån råvarorna kommer. Emma berättar att man utvinner metallerna i gruvor i många länder, och att det kan skada naturen. I gruvor där man bryter kobolt har arbetsvillkoren ibland varit dåliga. Därför vill fabriken veta mer om var metallerna kommer ifrån."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tillverkar fabriken?",
+    "options": [
+     "Elmotorer till bussar",
+     "Solceller till hus",
+     "Mobiltelefoner",
+     "Litiumjonbatterier till elbilar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Fabriken tillverkar litiumjonbatterier till elbilar.",
+    "explanationJa": "{電気自動車|でんきじどうしゃ}{用|よう}のリチウムイオン{電池|でんち}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad är anoden gjord av?",
+    "options": [
+     "Kobolt",
+     "Grafit",
+     "Nickel",
+     "Natrium"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Anoden är gjord av grafit.",
+    "explanationJa": "アノードは{黒鉛|こくえん}でできています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad betyder hög energitäthet för bilen?",
+    "options": [
+     "Den kan köra långt utan att batteriet blir för tungt",
+     "Den laddar alltid snabbare",
+     "Den behöver ingen elektrolyt",
+     "Den kan inte överhettas"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Hög energitäthet betyder att bilen kan köra långt utan att batteriet blir för tungt.",
+    "explanationJa": "バッテリーを{重|おも}くしすぎずに{遠|とお}くまで{走|はし}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Natriumjonbatterier behöver mycket kobolt.",
+    "correct": false,
+    "explanationSv": "Många forskar på natriumjonbatterier, som inte behöver litium eller kobolt.",
+    "explanationJa": "ナトリウムイオン{電池|でんち}にはリチウムもコバルトも{要|い}りません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Emma tycker att det är viktigt att veta var metallerna kommer ifrån.",
+    "correct": true,
+    "explanationSv": "Därför vill fabriken veta mer om var metallerna kommer ifrån.",
+    "explanationJa": "{金属|きんぞく}がどこから{来|く}るのかをもっと{知|し}りたいと{考|かんが}えています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I ett vanligt litiumjonbatteri är anoden av grafit och katoden innehåller ofta litium, nickel och kobolt; jonerna rör sig genom elektrolyten.",
+    "source": "Nationalencyklopedin, uppslagsordet litiumjonbatteri",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Natriumjonbatterier använder natrium i stället för litium och har lägre energitäthet än litiumjonbatterier.",
+    "source": "Nationalencyklopedin; Energimyndigheten, information om batteriteknik",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "En stor del av världens kobolt bryts i Kongo-Kinshasa, där arbetsvillkoren i en del gruvor har kritiserats.",
+    "source": "Nationalencyklopedin, uppslagsordet kobolt; Utrikespolitiska institutet, Landguiden",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om batterier, om metallerna i dem och om var de kommer ifrån.",
+  "discussionPoints": [
+   "Vilka saker hemma hos dig har ett litiumjonbatteri?",
+   "Tycker du att det är viktigt att veta var metallerna i en produkt kommer ifrån?",
+   "Har du någon gång haft ett batteri som blivit varmt? Vad gjorde du?",
+   "Vilka fördelar och nackdelar har elbilar, tycker du?"
+  ]
+ },
+ "standard": 2
+}

@@ -127741,8 +127741,8 @@
   },
   {
    "id": "m.cellens-delar",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-23",
    "titleSv": "Cellens delar",
    "titleJa": "{細胞|さいぼう}のつくり",
    "descriptionSv": "Cellens delar: cell, mikroskop, mikroskopisk, objektglas, encellig, flercellig, amöba, organell, cytoplasma, cellvägg, kloroplast, vakuol, växtcell, djurcell, vävnad, hudcell och nervcell.",
@@ -138725,8 +138725,8 @@
   },
   {
    "id": "m.dokument-och-kalkylblad",
-   "contentVersion": 1,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 2,
+   "updatedAt": "2026-11-23",
    "titleSv": "Dokument och kalkylblad",
    "titleJa": "{文書|ぶんしょ}とスプレッドシート",
    "descriptionSv": "Du lär dig att skriva och formge ett dokument, till exempel ett cv, och att göra en enkel budget i ett kalkylblad som räknar ut summor och visar dem i ett diagram.",
@@ -155159,6 +155159,677 @@
    ],
    "standard": 2,
    "bodyFile": "felsoka-bilens-funktioner.json"
+  },
+  {
+   "id": "m.elmotorer",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-23",
+   "titleSv": "Elmotorer",
+   "titleJa": "{電動|でんどう}モーター",
+   "descriptionSv": "Hur elbilens motor fungerar och hur man talar om den: vad som snurrar och vad som sitter still i en elmotor, hur man anger en bils effekt, och vad olika sorters drift betyder när man provkör och jämför elbilar.",
+   "descriptionJa": "{電気自動車|でんきじどうしゃ}のモーターのしくみと、その{話|はな}し{方|かた}：{電動|でんどう}モーターの{中|なか}で{何|なに}が{回|まわ}り{何|なに}が{止|と}まっているか、{車|くるま}の{出力|しゅつりょく}をどう{表|あらわ}すか、そして{電気自動車|でんきじどうしゃ}に{試乗|しじょう}したり{比|くら}べたりするときに、いろいろな{駆動方式|くどうほうしき}が{何|なに}を{意味|いみ}するかを{学|まな}びます。",
+   "categoryId": "R07-A06-T02",
+   "tags": [
+    "elbilar",
+    "fordon",
+    "teknik"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.felsoka-bilens-funktioner"
+   ],
+   "related": [],
+   "recommendedOrder": 4221,
+   "words": [
+    {
+     "senseId": "s.elbil.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elmotor.1",
+     "active": true
+    },
+    {
+     "senseId": "s.provköra.1",
+     "active": true
+    },
+    {
+     "senseId": "s.accelerera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vridmoment.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kilowatt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.hästkraft.1",
+     "active": false
+    },
+    {
+     "senseId": "s.verkningsgrad.1",
+     "active": false
+    },
+    {
+     "senseId": "s.magnetfält.1",
+     "active": false
+    },
+    {
+     "senseId": "s.elektromagnet.1",
+     "active": false
+    },
+    {
+     "senseId": "s.permanentmagnet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rotor.1",
+     "active": true
+    },
+    {
+     "senseId": "s.spole.1",
+     "active": false
+    },
+    {
+     "senseId": "s.stator.1",
+     "active": true
+    },
+    {
+     "senseId": "s.växelriktare.1",
+     "active": false
+    },
+    {
+     "senseId": "s.drivlina.1",
+     "active": false
+    },
+    {
+     "senseId": "s.enväxlad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.framhjulsdrift.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bakhjulsdrift.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fyrhjulsdrift.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "elmotorer.json"
+  },
+  {
+   "id": "m.batteripaket",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-23",
+   "titleSv": "Batteripaket",
+   "titleJa": "バッテリーパック",
+   "descriptionSv": "Elbilens stora batteri och hur man talar om det när man köper en begagnad bil: hur batteriet är uppbyggt, hur man förstår siffror om laddning och batteriets skick, och vad garanti, åldrande och andrahandsvärde betyder för köparen.",
+   "descriptionJa": "{電気自動車|でんきじどうしゃ}の{大|おお}きなバッテリーと、{中古車|ちゅうこしゃ}を{買|か}うときのその{話|はな}し{方|かた}：バッテリーがどのようにできているか、{充電|じゅうでん}やバッテリーの{状態|じょうたい}を{示|しめ}す{数字|すうじ}をどう{読|よ}むか、そして{保証|ほしょう}、{劣化|れっか}、{中古価格|ちゅうこかかく}が{買|か}う{人|ひと}にとって{何|なに}を{意味|いみ}するかを{学|まな}びます。",
+   "categoryId": "R07-A06-T02",
+   "tags": [
+    "elbilar",
+    "fordon",
+    "batterier"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.elmotorer"
+   ],
+   "related": [],
+   "recommendedOrder": 4222,
+   "words": [
+    {
+     "senseId": "s.batteripaket.1",
+     "active": true
+    },
+    {
+     "senseId": "s.cell.4",
+     "active": true
+    },
+    {
+     "senseId": "s.kilowattimme.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kapacitet.1",
+     "active": false
+    },
+    {
+     "senseId": "s.laddnivå.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vikt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.underrede.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kylning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.batterihälsa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.försämras.1",
+     "active": true
+    },
+    {
+     "senseId": "s.livslängd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.garanti.1",
+     "active": true
+    },
+    {
+     "senseId": "s.batteribyte.1",
+     "active": true
+    },
+    {
+     "senseId": "s.begagnad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mätarställning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.andrahandsvärde.1",
+     "active": true
+    },
+    {
+     "senseId": "s.återvinna.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "batteripaket.json"
+  },
+  {
+   "id": "m.batterikemi",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-23",
+   "titleSv": "Batterikemi",
+   "titleJa": "{電池|でんち}の{化学|かがく}",
+   "descriptionSv": "Vad som händer inne i ett elbilsbatteri och hur man förstår nyheter om det: batteriets delar och ämnen, vad som gör ett batteri bra eller farligt, nya sorters batterier och frågor om var metallerna kommer ifrån.",
+   "descriptionJa": "{電気自動車|でんきじどうしゃ}のバッテリーの{中|なか}で{何|なに}が{起|お}きているか、そしてそれについてのニュースの{読|よ}み{方|かた}：{電池|でんち}の{部分|ぶぶん}と{物質|ぶっしつ}、よい{電池|でんち}や{危険|きけん}な{電池|でんち}を{分|わ}けるもの、{新|あたら}しい{種類|しゅるい}の{電池|でんち}、そして{金属|きんぞく}がどこから{来|く}るのかという{問題|もんだい}を{学|まな}びます。",
+   "categoryId": "R07-A06-T02",
+   "tags": [
+    "elbilar",
+    "batterier",
+    "kemi"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.batteripaket"
+   ],
+   "related": [],
+   "recommendedOrder": 4223,
+   "words": [
+    {
+     "senseId": "s.litiumjonbatteri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.litium.1",
+     "active": true
+    },
+    {
+     "senseId": "s.jon.1",
+     "active": false
+    },
+    {
+     "senseId": "s.grafit.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nickel.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kobolt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.anod.1",
+     "active": true
+    },
+    {
+     "senseId": "s.katod.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elektrolyt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.natriumjonbatteri.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energitäthet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddcykel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.överhettas.1",
+     "active": true
+    },
+    {
+     "senseId": "s.brandrisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.råvara.2",
+     "active": false
+    },
+    {
+     "senseId": "s.gruva.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utvinna.1",
+     "active": false
+    },
+    {
+     "senseId": "s.batterifabrik.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "batterikemi.json"
+  },
+  {
+   "id": "m.laddkontakter",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-23",
+   "titleSv": "Laddkontakter",
+   "titleJa": "{充電|じゅうでん}プラグとコネクター",
+   "descriptionSv": "Hur man laddar en elbil hemma på ett säkert sätt: vad man behöver veta om uttag, kablar och kontakter, varför man skaffar en egen laddbox och hur en behörig elektriker installerar den.",
+   "descriptionJa": "{家|いえ}で{電気自動車|でんきじどうしゃ}を{安全|あんぜん}に{充電|じゅうでん}する{方法|ほうほう}：コンセント、ケーブル、プラグについて{知|し}っておくべきこと、{自宅用|じたくよう}の{充電|じゅうでん}ボックスを{設置|せっち}する{理由|りゆう}、そして{資格|しかく}のある{電気工事士|でんきこうじし}がそれをどう{取|と}り{付|つ}けるかを{学|まな}びます。",
+   "categoryId": "R07-A06-T02",
+   "tags": [
+    "elbilar",
+    "laddning",
+    "el"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.batterikemi"
+   ],
+   "related": [],
+   "recommendedOrder": 4224,
+   "words": [
+    {
+     "senseId": "s.uttag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stickkontakt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skarvsladd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.jordad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.jordfelsbrytare.1",
+     "active": false
+    },
+    {
+     "senseId": "s.säkring.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elcentral.1",
+     "active": false
+    },
+    {
+     "senseId": "s.laddkabel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddkontakt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddlucka.1",
+     "active": true
+    },
+    {
+     "senseId": "s.koppla-in.1",
+     "active": true
+    },
+    {
+     "senseId": "s.koppla-ur.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddbox.1",
+     "active": true
+    },
+    {
+     "senseId": "s.elektriker.1",
+     "active": true
+    },
+    {
+     "senseId": "s.behörig.1",
+     "active": false
+    },
+    {
+     "senseId": "s.installera.2",
+     "active": true
+    },
+    {
+     "senseId": "s.adapter.1",
+     "active": true
+    },
+    {
+     "senseId": "s.standard.2",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "laddkontakter.json"
+  },
+  {
+   "id": "m.snabbladdning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-23",
+   "titleSv": "Snabbladdning",
+   "titleJa": "{急速充電|きゅうそくじゅうでん}",
+   "descriptionSv": "Hur man laddar en elbil snabbt på en lång resa: skillnaden mellan att ladda hemma och vid vägen, hur man hittar, startar och betalar laddningen, och varför laddningen går långsammare när batteriet blir fullt.",
+   "descriptionJa": "{長距離|ちょうきょり}の{旅行|りょこう}で{電気自動車|でんきじどうしゃ}を{速|はや}く{充電|じゅうでん}する{方法|ほうほう}：{家|いえ}での{充電|じゅうでん}と{道路|どうろ}{沿|ぞ}いでの{充電|じゅうでん}の{違|ちが}い、{充電|じゅうでん}の{探|さが}し{方|かた}・{始|はじ}め{方|かた}・{払|はら}い{方|かた}、そしてバッテリーが{満|み}たされてくると{充電|じゅうでん}が{遅|おそ}くなる{理由|りゆう}を{学|まな}びます。",
+   "categoryId": "R07-A06-T02",
+   "tags": [
+    "elbilar",
+    "laddning",
+    "resor"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.laddkontakter"
+   ],
+   "related": [],
+   "recommendedOrder": 4225,
+   "words": [
+    {
+     "senseId": "s.snabbladda.1",
+     "active": true
+    },
+    {
+     "senseId": "s.snabbladdare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.snabbladdning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.normalladdning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.likström.1",
+     "active": false
+    },
+    {
+     "senseId": "s.växelström.1",
+     "active": false
+    },
+    {
+     "senseId": "s.laddstation.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddplats.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kö.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddeffekt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddkurva.1",
+     "active": false
+    },
+    {
+     "senseId": "s.laddtid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddapp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddkort.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddinfrastruktur.1",
+     "active": false
+    },
+    {
+     "senseId": "s.laddstolpe.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "snabbladdning.json"
+  },
+  {
+   "id": "m.regenerativ-bromsning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-23",
+   "titleSv": "Regenerativ bromsning",
+   "titleJa": "{回生|かいせい}ブレーキ",
+   "descriptionSv": "Hur en elbil bromsar och sparar energi samtidigt: vad som händer med energin när bilen saktar in, hur man kör mjukt med en pedal, och hur man talar om körning i backar och i stadstrafik på en körlektion.",
+   "descriptionJa": "{電気自動車|でんきじどうしゃ}がブレーキをかけながらエネルギーを{節約|せつやく}するしくみ：{車|くるま}が{減速|げんそく}するときにエネルギーがどうなるか、ペダル{一|ひと}つでなめらかに{運転|うんてん}する{方法|ほうほう}、そして{教習|きょうしゅう}で{坂道|さかみち}や{街中|まちなか}の{運転|うんてん}についてどう{話|はな}すかを{学|まな}びます。",
+   "categoryId": "R07-A06-T02",
+   "tags": [
+    "elbilar",
+    "körning",
+    "energi"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.snabbladdning"
+   ],
+   "related": [],
+   "recommendedOrder": 4226,
+   "words": [
+    {
+     "senseId": "s.bromsa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gaspedal.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rörelseenergi.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lägesenergi.1",
+     "active": false
+    },
+    {
+     "senseId": "s.generator.1",
+     "active": false
+    },
+    {
+     "senseId": "s.regenerativ-bromsning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.friktion.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bromskloss.1",
+     "active": false
+    },
+    {
+     "senseId": "s.släppa-gasen.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rulla.3",
+     "active": true
+    },
+    {
+     "senseId": "s.enpedalskörning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nedförsbacke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.uppförsbacke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tvärbromsa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ryckig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stadstrafik.1",
+     "active": true
+    },
+    {
+     "senseId": "s.framförhållning.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "regenerativ-bromsning.json"
+  },
+  {
+   "id": "m.rackvidd-och-energiforbrukning",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-23",
+   "titleSv": "Räckvidd och energiförbrukning",
+   "titleJa": "{航続距離|こうぞくきょり}とエネルギー{消費|しょうひ}",
+   "descriptionSv": "Hur långt en elbil kommer och vad som påverkar det: hur kyla, fart och last ändrar energiförbrukningen, vad man kan göra för att köra sparsamt och hur man planerar en lång resa med laddning på vägen.",
+   "descriptionJa": "{電気自動車|でんきじどうしゃ}がどこまで{走|はし}れるか、そしてそれに{影響|えいきょう}するもの：{寒|さむ}さ、{速度|そくど}、{荷物|にもつ}がエネルギー{消費|しょうひ}をどう{変|か}えるか、{節約|せつやく}して{運転|うんてん}するために{何|なに}ができるか、そして{途中|とちゅう}で{充電|じゅうでん}しながら{長距離|ちょうきょり}の{旅行|りょこう}をどう{計画|けいかく}するかを{学|まな}びます。",
+   "categoryId": "R07-A06-T02",
+   "tags": [
+    "elbilar",
+    "körning",
+    "resor"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.regenerativ-bromsning"
+   ],
+   "related": [],
+   "recommendedOrder": 4227,
+   "words": [
+    {
+     "senseId": "s.räckvidd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mil.1",
+     "active": true
+    },
+    {
+     "senseId": "s.energiförbrukning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förbrukning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.hastighet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.motorväg.1",
+     "active": true
+    },
+    {
+     "senseId": "s.luftmotstånd.1",
+     "active": false
+    },
+    {
+     "senseId": "s.takbox.1",
+     "active": true
+    },
+    {
+     "senseId": "s.minusgrader.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förvärma.1",
+     "active": true
+    },
+    {
+     "senseId": "s.värmepump.1",
+     "active": false
+    },
+    {
+     "senseId": "s.lufttryck.1",
+     "active": false
+    },
+    {
+     "senseId": "s.körstil.1",
+     "active": true
+    },
+    {
+     "senseId": "s.körläge.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sparsam.1",
+     "active": true
+    },
+    {
+     "senseId": "s.räckviddsångest.1",
+     "active": true
+    },
+    {
+     "senseId": "s.laddstopp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ruttplanerare.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "rackvidd-och-energiforbrukning.json"
   }
  ]
 }
