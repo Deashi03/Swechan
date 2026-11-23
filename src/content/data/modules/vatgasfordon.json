@@ -1,0 +1,196 @@
+{
+ "id": "m.vatgasfordon",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Vätgasfordon",
+ "titleJa": "{水素|すいそ}{自動車|じどうしゃ}",
+ "descriptionSv": "Du lär dig förklara hur ett fordon kan gå på vätgas, från tankning och säkerhet till hur gasen framställs, och du kan delta i ett samtal om vätgasens för- och nackdelar jämfört med batterier.",
+ "descriptionJa": "{車両|しゃりょう}が{水素|すいそ}でどのように{走|はし}るのかを、{燃料|ねんりょう}の{補給|ほきゅう}や{安全性|あんぜんせい}から{水素|すいそ}の{作|つく}り{方|かた}まで{説明|せつめい}できるようになります。また、バッテリーと{比|くら}べた{水素|すいそ}の{長所|ちょうしょ}と{短所|たんしょ}について{話|はな}し{合|あ}えるようになります。",
+ "categoryId": "R07-A06-T06",
+ "tags": [
+  "fordon",
+  "teknik",
+  "energi"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.elektrifiering-av-kollektivtrafik"
+ ],
+ "related": [],
+ "recommendedOrder": 4264,
+ "words": [
+  {
+   "senseId": "s.vätgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bränslecell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vätgasbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omvandla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vattenånga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsläpp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tryck.2",
+   "active": true
+  },
+  {
+   "senseId": "s.vätgastank.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brandfarlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vätgasstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tanka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räckvidd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektrolys.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framställa.2",
+   "active": true
+  },
+  {
+   "senseId": "s.grön-vätgas.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energibärare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.verkningsgrad.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En vecka med vätgasbil",
+  "paragraphs": [
+   "Anna är journalist och ska skriva om vätgasbilar. Hon får låna en vätgasbil i en vecka. Bilen ser ut som en vanlig bil, men under golvet sitter en bränslecell.",
+   "– Bränslecellen omvandlar vätgas och syre till el, förklarar Ali, som arbetar på ett energiföretag. Elen driver motorn. Det enda utsläppet är vattenånga, och ibland droppar det lite vatten under bilen.",
+   "Vätgasen finns i en stark vätgastank, och trycket i tanken är mycket högt. – Vätgas är brandfarlig, men tankarna testas noga, säger Ali.",
+   "Det svåra är att hitta en vätgasstation. Det finns bara några få i landet. Men det går fort att tanka: efter fem minuter är tanken full, och bilens räckvidd är ungefär 60 mil.",
+   "Ali berättar att hans företag framställer vätgas med elektrolys och el från vindkraft. Det kallas grön vätgas. – Vätgas är en energibärare, inte en energikälla, säger han. Verkningsgraden är lägre än i en elbil, men vätgas passar bra för tunga lastbilar."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var sitter bränslecellen?",
+    "options": [
+     "Under golvet",
+     "På taket",
+     "Bakom ratten",
+     "Under motorhuven"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Bilen ser ut som en vanlig bil, men under golvet sitter en bränslecell.",
+    "explanationJa": "{燃料電池|ねんりょうでんち}は{床|ゆか}の{下|した}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad kommer ut ur bilen?",
+    "options": [
+     "Svart rök",
+     "Vattenånga",
+     "Bensin",
+     "Sot"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det enda utsläppet är vattenånga, och ibland droppar det lite vatten under bilen.",
+    "explanationJa": "{出|で}てくるのは{水蒸気|すいじょうき}だけです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Vad är svårt med att köra vätgasbil?",
+    "options": [
+     "Att tanka tar lång tid",
+     "Att hitta en vätgasstation",
+     "Att bilen är mycket långsam",
+     "Att vätgasen luktar illa"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det svåra är att hitta en vätgasstation.",
+    "explanationJa": "{水素|すいそ}ステーションがなかなか{見|み}つからないことです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det tar flera timmar att tanka vätgasbilen.",
+    "correct": false,
+    "explanationSv": "efter fem minuter är tanken full",
+    "explanationJa": "5{分|ふん}で{満|まん}タンになります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Ali tror att vätgas passar bättre för tunga fordon än för vanliga bilar.",
+    "correct": true,
+    "explanationSv": "Verkningsgraden är lägre än i en elbil, men vätgas passar bra för tunga lastbilar.",
+    "explanationJa": "{効率|こうりつ}は{電気自動車|でんきじどうしゃ}より{低|ひく}いが、{重|おも}いトラックには{向|む}いていると{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I en bränslecell reagerar vätgas med syre så att det bildas el och vatten.",
+    "source": "Nationalencyklopedin, uppslaget ”bränslecell”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Vid elektrolys delas vatten upp i vätgas och syre med hjälp av elektrisk ström.",
+    "source": "Nationalencyklopedin, uppslaget ”elektrolys”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Det mesta av den vätgas som produceras i världen i dag framställs av naturgas.",
+    "source": "Internationella energiorganet (IEA), Global Hydrogen Review",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om vätgas som bränsle för fordon.",
+  "discussionPoints": [
+   "Skulle du vilja köra en vätgasbil? Varför eller varför inte?",
+   "Vad tror du är bäst för tunga lastbilar: batterier eller vätgas?",
+   "Finns det vätgasbilar eller vätgasbussar där du kommer ifrån?",
+   "Vad behövs för att fler ska välja fordon som går på vätgas?"
+  ]
+ },
+ "standard": 2
+}

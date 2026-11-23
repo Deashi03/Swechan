@@ -1,0 +1,196 @@
+{
+ "id": "m.sjalvkorande-fordon",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Självkörande fordon",
+ "titleJa": "{自動運転|じどううんてん}の{車両|しゃりょう}",
+ "descriptionSv": "Du lär dig tala om fordon som kör själva: hur de känner av omgivningen, vad människorna runt omkring gör när något händer och varför frågan om ansvar diskuteras i nyheterna.",
+ "descriptionJa": "{自分|じぶん}で{走|はし}る{車両|しゃりょう}について{話|はな}せるようになります。{車両|しゃりょう}がどのようにまわりの{様子|ようす}をとらえるか、{何|なに}かが{起|お}きたときにまわりの{人|ひと}が{何|なに}をするか、そしてなぜ{責任|せきにん}の{問題|もんだい}がニュースで{議論|ぎろん}されるのかを{学|まな}びます。",
+ "categoryId": "R07-A06-T06",
+ "tags": [
+  "fordon",
+  "teknik",
+  "framtid"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.sjosakerhet"
+ ],
+ "related": [],
+ "recommendedOrder": 4261,
+ "words": [
+  {
+   "senseId": "s.fordon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.självkörande.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förarlös.1",
+   "active": true
+  },
+  {
+   "senseId": "s.autonom.1",
+   "active": false
+  },
+  {
+   "senseId": "s.sensor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.lidar.1",
+   "active": false
+  },
+  {
+   "senseId": "s.radar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.automationsnivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.säkerhetsförare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ta-över.1",
+   "active": true
+  },
+  {
+   "senseId": "s.robottaxi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjärrövervaka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hinder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fotgängare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förutse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reagera.3",
+   "active": true
+  },
+  {
+   "senseId": "s.ansvarsfråga.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Bussen utan förare",
+  "paragraphs": [
+   "Kenji går en utbildning om trafik och gör praktik på ett trafikföretag. Just nu testar företaget en självkörande buss i ett nytt bostadsområde. Bussen är ett litet fordon med plats för tolv personer.",
+   "På taket sitter en lidar som snurrar, och runt bussen finns radar, kameror och andra sensorer. – Bussen kör på automationsnivå 4 här inne i området, förklarar Kenjis handledare Lena. Den är förarlös, men vi har ändå en säkerhetsförare i bussen under försöket.",
+   "Säkerhetsföraren heter Omar. Han sitter längst fram och kan ta över direkt om något händer. Det behöver han inte ofta. När en fotgängare plötsligt går ut på vägen reagerar bussen snabbt och stannar. Programmet försöker förutse vad människor och cyklister ska göra.",
+   "En lastbil som står på gatan blir ett problem. Bussen ser ett hinder och står still. I kontrollrummet fjärrövervakar Sara alla bussar på skärmar. Hon ser bilden från bussens kameror och ger den lov att köra runt lastbilen.",
+   "På kvällen läser Kenji om robottaxi i USA och Kina. Han tänker på ansvarsfrågan: vem har ansvaret om ett autonomt fordon krockar? – Det får politikerna bestämma, säger Lena. För att få testa en buss som vår behövs tillstånd från Transportstyrelsen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var testar företaget den självkörande bussen?",
+    "options": [
+     "I ett nytt bostadsområde",
+     "På en motorväg",
+     "På en flygplats",
+     "I en tunnel"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Just nu testar företaget en självkörande buss i ett nytt bostadsområde.",
+    "explanationJa": "{新|あたら}しい{住宅地|じゅうたくち}でテストしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör säkerhetsföraren?",
+    "options": [
+     "Han säljer biljetter",
+     "Han kör bussen hela tiden",
+     "Han lagar lidarn",
+     "Han kan ta över direkt om något händer"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Han sitter längst fram och kan ta över direkt om något händer.",
+    "explanationJa": "{何|なに}かあればすぐに{運転|うんてん}を{代|か}われるよう{準備|じゅんび}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför står bussen still vid lastbilen?",
+    "options": [
+     "Den ser ett hinder",
+     "Batteriet är slut",
+     "Säkerhetsföraren har rast",
+     "Det är rött ljus"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Bussen ser ett hinder och står still.",
+    "explanationJa": "{障害物|しょうがいぶつ}を{見|み}つけたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sara sitter i bussen och kör den.",
+    "correct": false,
+    "explanationSv": "I kontrollrummet fjärrövervakar Sara alla bussar på skärmar.",
+    "explanationJa": "サラは{管制室|かんせいしつ}で、{画面|がめん}を{見|み}てバスを{監視|かんし}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det är ännu inte bestämt vem som har ansvaret om ett autonomt fordon krockar.",
+    "correct": true,
+    "explanationSv": "– Det får politikerna bestämma, säger Lena.",
+    "explanationJa": "{責任|せきにん}の{問題|もんだい}は、まだ{政治家|せいじか}が{決|き}めなければならないことです。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Automationsnivåerna för fordon brukar delas in i sex steg, från 0 (ingen automation) till 5 (full automation).",
+    "source": "SAE International, standarden J3016",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Försök med självkörande fordon på allmän väg i Sverige kräver tillstånd från Transportstyrelsen.",
+    "source": "Förordning (2017:309) om försöksverksamhet med automatiserade fordon; Transportstyrelsen",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Robottaxi utan förare finns i kommersiell trafik i några städer i USA och Kina.",
+    "source": "Nyhetsrapportering, till exempel Sveriges Radio Ekot (2024–2025)",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om självkörande fordon och om framtidens trafik.",
+  "discussionPoints": [
+   "Skulle du våga åka med en buss utan förare?",
+   "Vilka fördelar och nackdelar ser du med självkörande fordon?",
+   "Vem tycker du ska ha ansvaret om en självkörande bil krockar?",
+   "Har du sett självkörande tåg eller bussar någonstans?"
+  ]
+ },
+ "standard": 2
+}

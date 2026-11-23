@@ -1,0 +1,180 @@
+{
+ "id": "m.mobilitetstjanster",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Mobilitetstjänster",
+ "titleJa": "モビリティサービス",
+ "descriptionSv": "Du lär dig tala om hur man reser i vardagen utan egen bil: att hyra och dela fordon via appar, vad det kostar, vilka problem det kan bli i staden och vilka lösningar som finns på landsbygden.",
+ "descriptionJa": "{自分|じぶん}の{車|くるま}を{持|も}たずに{日常|にちじょう}を{移動|いどう}することについて{話|はな}せるようになります。アプリで{乗|の}り{物|もの}を{借|か}りたり{共有|きょうゆう}したりすること、その{料金|りょうきん}、{町|まち}で{起|お}きる{問題|もんだい}、そして{田舎|いなか}にどんな{方法|ほうほう}があるかを{学|まな}びます。",
+ "categoryId": "R07-A06-T06",
+ "tags": [
+  "resor",
+  "vardag",
+  "stad"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.dronartransporter"
+ ],
+ "related": [],
+ "recommendedOrder": 4266,
+ "words": [
+  {
+   "senseId": "s.mobilitetstjänst.1",
+   "active": true
+  },
+  {
+   "senseId": "s.reseapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elsparkcykel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hyrcykel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mikromobilitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.låsa-upp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.startavgift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minutpris.1",
+   "active": true
+  },
+  {
+   "senseId": "s.parkera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felparkerad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bilpool.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.samåkning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.taxi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anropsstyrd-trafik.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dörr-till-dörr.1",
+   "active": true
+  },
+  {
+   "senseId": "s.prenumeration.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bilfri.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett år utan egen bil",
+  "paragraphs": [
+   "Karin och hennes sambo sålde sin bil förra året. De bor i ett bilfritt kvarter i Malmö och använder i stället olika mobilitetstjänster. Nästan allt finns i samma reseapp.",
+   "Till jobbet tar Karin ofta en elsparkcykel eller en hyrcykel. Hon låser upp den med mobilen. Det kostar en startavgift och sedan ett minutpris. – Mikromobilitet är perfekt för korta resor, säger hon.",
+   "Ibland är det irriterande. Många ställer elsparkcyklarna var som helst, och på morgonen ligger det ofta en felparkerad cykel framför porten. Därför får man nu bara parkera dem på vissa platser.",
+   "När de ska handla mycket eller hälsa på Karins föräldrar bokar de en bil i en bilpool. Till jobbet i Lund delar Karins sambo bil med tre kollegor. Samåkningen gör resan billigare och trevligare.",
+   "Karins mormor bor på landet. Där finns ingen buss, men hon kan boka anropsstyrd trafik och bli hämtad hemma, nästan dörr till dörr. Det kostar mindre än en taxi. Karin funderar på en prenumeration som samlar alla resor i ett pris."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur reser Karin och hennes sambo i stället för med egen bil?",
+    "options": [
+     "Med flyg",
+     "Med grannens bil",
+     "Bara till fots",
+     "Med olika mobilitetstjänster"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "De bor i ett bilfritt kvarter i Malmö och använder i stället olika mobilitetstjänster.",
+    "explanationJa": "いろいろなモビリティサービスを{使|つか}っています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad betalar Karin för elsparkcykeln?",
+    "options": [
+     "En avgift varje månad",
+     "Ingenting",
+     "En startavgift och ett minutpris",
+     "Ett pris för varje kilometer"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Det kostar en startavgift och sedan ett minutpris.",
+    "explanationJa": "{基本料金|きほんりょうきん}と{分単位|ふんたんい}の{料金|りょうきん}を{払|はら}います。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför får man nu bara parkera elsparkcyklarna på vissa platser?",
+    "options": [
+     "De gick sönder i regnet",
+     "Många ställde dem var som helst",
+     "De var för dyra",
+     "Det fanns för få cyklar"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Många ställer elsparkcyklarna var som helst, och på morgonen ligger det ofta en felparkerad cykel framför porten.",
+    "explanationJa": "{多|おお}くの{人|ひと}がどこにでも{止|と}めていたからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Karins mormor kan ta en vanlig buss hemifrån.",
+    "correct": false,
+    "explanationSv": "Där finns ingen buss, men hon kan boka anropsstyrd trafik och bli hämtad hemma, nästan dörr till dörr.",
+    "explanationJa": "ふつうのバスはなく、デマンド{交通|こうつう}を{予約|よやく}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Karins sambo betalar mindre för resan till Lund tack vare kollegorna.",
+    "correct": true,
+    "explanationSv": "Samåkningen gör resan billigare och trevligare.",
+    "explanationJa": "{相乗|あいの}りのおかげで、{移動|いどう}が{安|やす}くなっています。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om olika sätt att resa utan egen bil.",
+  "discussionPoints": [
+   "Vilka mobilitetstjänster har du använt?",
+   "Kan du tänka dig att leva utan egen bil? Varför eller varför inte?",
+   "Vad tycker du om elsparkcyklar i staden?",
+   "Har du provat samåkning eller anropsstyrd trafik?"
+  ]
+ },
+ "standard": 2
+}
