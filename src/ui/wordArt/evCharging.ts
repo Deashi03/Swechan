@@ -10,7 +10,8 @@
  * laddnivå (a battery icon filled to a marked level) and batterihälsa (a battery with a heart and a pulse line);
  * anod (the left plate with a minus sign), katod (the right plate with a plus sign) and elektrolyt (the liquid
  * between grey plates); snabbladdning (a big charger, a stopwatch and bars that fill fast) and normalladdning (a
- * house at night, a moon and bars that fill slowly); laddstation (a roof with several chargers), laddplats (one
+ * house at night, a moon and bars that fill slowly); laddstation (two panels: a marked pin on a route map, then the
+ * whole framed site with a roof, many chargers, queuing cars and a café), laddplats (one
  * painted parking space seen from above) and laddstopp (a route with a pause on the way); släppa gasen (a foot
  * lifting off the pedal) and enpedalskörning (only one pedal in use, the brake pedal greyed, and the digit 1).
  * Digits and code signs only; no words, no brands, no logos.
@@ -240,18 +241,23 @@ export const EVCHG_MOTIFS: Record<string, Svg> = {
     wallbox(40, 70, 0.9), path('M40 84 C42 100 60 102 66 96', 'none', C.dark, 2.6), evSide(88, 108, 0.6, { port: true }),
     rect(58, 30, 46, 18, C.white, 3, C.ink, 1.6), rect(104, 35, 3, 8, C.white, 1, null),
     ...range(4).map((i) => moving(`evcslow${i}`, `0%,${10 + i * 20}%{opacity:0}${18 + i * 20}%,100%{opacity:1}`, { dur: 6 }, rect(61 + i * 10.5, 33, 8.5, 12, CHARGE, 1.5, null)))),
-  'evchg.laddstation': all(rect(0, 0, 120, 120, '#b8dca4', 0, null),
-    rect(0, 98, 120, 18, ROAD, 0, null), line('M0 107 L120 107', C.white, 1.4, '7 5'), path('M2 98 C18 98 22 90 26 84 L34 84 C30 92 26 98 40 98 Z', ROAD, null),
-    rect(8, 22, 104, 64, '#a3a8b0', 3, C.ink, 1.4),
-    ...[14, 28, 42, 56, 70].map((x) => all(rect(x, 40, 12, 40, 'none', 0, C.white, 1.2), rect(x + 3, 30, 6, 7, '#e9edf0', 1.5, C.ink, 0.9), bolt(x + 6, 33.5, 0.22),
-      x === 56 ? '' : g(`translate(${x + 6} 60) scale(0.24)`, rect(-18, -46, 36, 92, x % 28 ? '#c84a3f' : CAR, 12, C.ink, 4), rect(-14, -22, 28, 12, GLASS, 2, null)))),
-    rect(10, 26, 76, 26, 'rgba(255,255,255,.55)', 2, C.ink, 1.2), line('M12 52 L12 26 M84 52 L84 26', STEEL, 2),
-    waPulse('evcstation', ...[20, 34, 48, 76].map((x) => bolt(x, 33.5, 0.22))),
-    g('translate(99 38)', rect(-11, -10, 22, 20, '#e8dccb', 2, C.ink, 1.4), path('M-13 -10 L0 -17 L13 -10 Z', '#b55b45', C.ink, 1.2), rect(-3, 2, 6, 8, '#7a5a3a', 1, null),
-      path('M2 -6 L8 -6 L7.4 -1 C7.4 1 2.6 1 2.6 -1 Z', C.white, C.ink, 0.8), path('M-8 -6 L-3 -6 L-3 -1 L-8 -1 Z', GLASS, C.ink, 0.6)),
-    g('translate(98 76)', line('M0 8 L0 -6', C.dark, 2), rect(-8, -18, 16, 13, '#2f55b8', 2, C.ink, 1.2), bolt(0, -11.5, 0.42)),
-    frame(5, 19, 110, 70),
-    greyed(g('translate(108 8)', rect(-3.5, -6, 7, 14, '#9aa3ad', 1.5, C.ink, 1), rect(-5, 8, 10, 2, C.dark, 0.5, null))), line('M94 2 L94 16 L118 16', C.grey, 1, '2 2')),
+  // manuellt spår (två omgångar underkända): bildserie – en nål på kartan, sedan själva stället man åker till
+  'evchg.laddstation': all(rect(0, 0, 120, 120, '#f3f6f8', 0, null),
+    rect(4, 4, 112, 38, '#e8f0e4', 5, C.ink, 1.6), path('M8 34 C26 30 34 14 54 18 C70 21 76 30 92 22 C100 18 106 12 112 10', 'none', '#f2d06a', 5),
+    path('M8 34 C26 30 34 14 54 18 C70 21 76 30 92 22', 'none', CAR, 1.8, ), circle(8, 34, 3.4, CAR, C.ink, 1),
+    ...([[30, 24], [54, 20], [104, 22]] as [number, number][]).map(([x, y]) => g(`translate(${x} ${y - 8})`, path('M0 7 C-6 0 -6 -7 0 -7 C6 -7 6 0 0 7 Z', '#9aa3ad', C.ink, 1), bolt(0, -1.6, 0.26))),
+    g('translate(84 16)', path('M0 10 C-9 0 -9 -10 0 -10 C9 -10 9 0 0 10 Z', HL, C.ink, 1.4), bolt(0, -2, 0.42)), waPulse('evcstation', circle(84, 16, 13, 'none', HL, 2)),
+    line('M84 30 L84 48', HL, 2, '3 3'), path('M79 44 L84 50 L89 44', 'none', HL, 2),
+    rect(6, 54, 108, 58, '#a3a8b0', 3, C.ink, 1.2), rect(6, 104, 108, 8, ROAD, 0, null),
+    ...[0, 1, 2, 3, 4, 5].map((i) => all(rect(11 + i * 11, 76, 10, 24, 'none', 0, C.white, 1), rect(13 + i * 11, 62, 6, 6, '#e9edf0', 1.2, C.ink, 0.8), bolt(16 + i * 11, 65, 0.18),
+      i === 3 ? '' : g(`translate(${16 + i * 11} 88) scale(0.2)`, rect(-18, -46, 36, 92, i % 2 ? '#c84a3f' : CAR, 12, C.ink, 5), rect(-14, -24, 28, 12, GLASS, 2, null)))),
+    rect(9, 58, 68, 16, 'rgba(255,255,255,.55)', 2, C.ink, 1), line('M10 74 L10 58 M76 74 L76 58', STEEL, 1.6),
+    ...[36, 54].map((x) => g(`translate(${x} 108) rotate(90) scale(0.18)`, rect(-18, -46, 36, 92, x === 36 ? '#4f9d69' : '#f2c14e', 12, C.ink, 5), rect(-14, -24, 28, 12, GLASS, 2, null))),
+    arrow(64, 108, 74, 108, C.white, 1.6),
+    g('translate(99 68)', rect(-11, -9, 22, 18, '#e8dccb', 2, C.ink, 1.2), path('M-13 -9 L0 -15 L13 -9 Z', '#b55b45', C.ink, 1.1), rect(-3, 2, 6, 7, '#7a5a3a', 1, null),
+      path('M2 -5 L8 -5 L7.4 -1 C7.4 1 2.6 1 2.6 -1 Z', C.white, C.ink, 0.8), path('M-8 -5 L-3 -5 L-3 -1 L-8 -1 Z', GLASS, C.ink, 0.6)),
+    g('translate(100 96)', line('M0 6 L0 -4', C.dark, 1.8), rect(-7, -15, 14, 11, '#2f55b8', 2, C.ink, 1.1), bolt(0, -9.5, 0.36)),
+    frame(3, 51, 114, 64)),
   'evchg.laddplats': all(rect(0, 0, 120, 120, '#9a9fa8', 0, null), line('M24 10 L24 116 M96 10 L96 116', C.white, 3),
     rect(26, 12, 68, 102, 'rgba(92,192,106,.25)', 0, null), path('M64 40 L46 66 L58 66 L52 90 L74 60 L62 60 L68 40 Z', 'none', C.white, 3),
     g('translate(60 8)', rect(-10, -6, 20, 12, '#e9edf0', 2, C.ink, 1.4), bolt(0, 0, 0.45)), greyed(evTop(8, 70, 0.5), evTop(112, 70, 0.5)),
