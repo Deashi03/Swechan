@@ -10,7 +10,7 @@
  * No brands; Japanese only as a red sun dot on a flag.
  */
 import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, sparkle, star, waBob, waIn, waShake, type Svg } from './kit';
-import { HL, T, bubble, cat, cup, flake, padlock, sun, thought } from './people';
+import { HL, T, bubble, cat, cup, flake, mini, padlock, sun, thought } from './people';
 import { figure } from './figures';
 import { P, greyed } from './blindFix';
 
@@ -250,11 +250,16 @@ const M6: Record<string, Svg> = {
   // the same person speaks one way to a child and another way to a boss
   'lstruc.register.2': all(ground(), P({ x: 60, h: 0.8, top: C.green, mood: 'smile' }), P({ x: 16, h: 0.42, top: C.yellow, mood: 'laugh' }), suitPerson(104, 0.78),
     bubble(32, 22, 34, all(heart2(26, 22), star(38, 22, 4)), false), bubble(86, 22, 40, lines(70, 18, 32, 3, 4, C.navy), true), ring(60, 50, 16)),
-  // formal: a structured letter with heading, logo, greeting line and signature (the chat message is grey)
-  'lstruc.formell': all(rect(8, 10, 64, 98, C.white, 2, C.ink, 1.6), circle(20, 22, 6, C.navy, C.ink, 1.2), path('M17 22 L20 18 L23 22 L20 26 Z', C.white, null), rect(30, 18, 34, 7, C.ink, 1.5, null),
-    lines(16, 38, 48, 3, 5, C.navy), lines(16, 58, 48, 4, 5, C.grey), line('M16 84 L44 84', C.ink, 1.6), path('M16 96 C20 88 24 100 28 92 C32 86 34 98 40 94', 'none', C.navy, 1.4), circle(60, 96, 7, 'none', C.red, 1.6), circle(60, 96, 3.6, C.red, null),
-    frame(4, 6, 72, 106),
-    greyed(rect(84, 34, 30, 54, C.dark, 4, C.ink, 1.4), rect(87, 40, 24, 40, '#bfe3f5', 1, null), rect(89, 46, 18, 9, C.white, 3, null), circle(100, 66, 6, C.yellow, C.ink, 1), circle(98, 65, 0.9, C.ink, null), circle(102, 65, 0.9, C.ink, null), path('M97 68 Q100 71 103 68', 'none', C.ink, 1))),
+  // manual track: the same person writes two messages. Framed: a letter to the authority (envelope, stamp,
+  // straight lines, greeting line; a casual ”Hej!” is crossed out). Grey: a chat message to a friend.
+  'lstruc.formell': all(
+    rect(6, 6, 64, 72, C.white, 2, C.ink, 1.6), rect(10, 10, 26, 14, C.white, 1, C.ink, 1.2), path('M10 10 L23 19 L36 10', 'none', C.ink, 1.1), rect(29, 12, 5, 5, C.red, 0.5, null),
+    circle(58, 18, 7, 'none', C.navy, 1.6), circle(58, 18, 3.4, C.navy, null), lines(12, 32, 52, 5, 5, C.navy), line('M12 62 L40 62', C.ink, 1.8), path('M12 72 C16 66 20 76 24 69 C28 64 30 74 36 70', 'none', C.navy, 1.2),
+    bubble(56, 64, 22, T(56, 67, 'Hej!', 7, C.grey, 800), false), cross(56, 62, 8), frame(2, 2, 72, 80),
+    greyed(rect(84, 10, 30, 54, C.dark, 4, C.ink, 1.4), rect(87, 16, 24, 40, '#bfe3f5', 1, null), rect(89, 20, 18, 9, C.white, 3, null), T(98, 27, '!!', 7, C.red, 900),
+      circle(98, 42, 6, C.yellow, C.ink, 1), circle(96, 41, 0.9, C.ink, null), circle(100, 41, 0.9, C.ink, null), path('M95 44 Q98 47 101 44', 'none', C.ink, 1)),
+    ground(), mini(38, 96, C.green), at(38, 112, 1, rect(-30, -14, 60, 4, C.tan, 1, C.ink, 1.2)), line('M46 104 L56 100', C.skin, 3), arrow(40, 88, 38, 84, HL, 2),
+    greyed(mini(98, 96, C.green), at(98, 112, 1, rect(-14, -14, 28, 4, C.tan, 1, C.ink, 1.2))), arrow(98, 88, 98, 68, C.grey, 2)),
   // polite: holding the door with a smile and a little bow; the other says thanks. Grey: someone pushing in first
   'lstruc.artig': all(ground(), rect(92, 20, 24, 92, C.brown, 2, C.ink, 1.6), path('M92 20 L80 28 L80 106 L92 112 Z', '#8a5533', C.ink, 1.4),
     g('rotate(-10 74 112)', P({ x: 74, h: 0.8, top: C.green, mood: 'smile' })), line('M80 62 L88 58', C.skin, 4),
@@ -295,11 +300,15 @@ const M7: Record<string, Svg> = {
   'lstruc.ungdomsspråk': all(ground(), P({ x: 30, h: 0.62, top: C.purple, mood: 'laugh' }), P({ x: 58, h: 0.6, top: C.green, hairStyle: 'long', mood: 'laugh' }),
     path('M20 54 C20 46 40 46 40 54 L46 54 L40 52', C.red, C.ink, 1.2), bubble(44, 22, 44, all(star(32, 22, 4), sparkle(44, 22, 4), star(56, 22, 4, C.orange)), true),
     greyed(P({ x: 98, h: 0.8, top: C.grey, mood: 'shock' })), qmark(98, 22, 14, C.grey), frame(6, 6, 72, 106)),
-  // switching language in the middle of one sentence: Swedish half, arrow, Japanese half; the listener nods
-  'lstruc.kodväxla': all(ground(), P({ x: 22, h: 0.72, top: C.denim, mood: 'smile' }), waBob('ls-kodv-nick', 2, P({ x: 98, h: 0.7, top: C.pink, hairStyle: 'long', mood: 'smile' })),
-    path('M10 10 L110 10 L110 40 L32 40 L24 50 L24 40 L10 40 Z', C.white, C.ink, 1.6), flagSe(16, 16, 36, 18), flagJp(68, 16, 36, 18),
-    moving('ls-kodv-pil', '0%,100%{opacity:1}50%{opacity:.3}', { dur: 1.6 }, path('M52 25 L66 25', 'none', HL, 2.6), path('M62 20 L67 25 L62 30', 'none', HL, 2.6)),
-    line('M60 12 L60 38', HL, 1.4, '3 2'), check(110, 54)),
+  // manual track: two bilingual friends; mid-sentence the speaker jumps from Swedish to Japanese (でも).
+  // Grey below: reading from a dictionary and translating is not code-switching.
+  'lstruc.kodväxla': all(
+    path('M8 8 L112 8 L112 32 L40 32 L32 40 L32 32 L8 32 Z', C.white, C.ink, 1.6), flagSe(12, 13, 14, 9), T(48, 24, 'Jag vill,', 8, C.ink, 800),
+    moving('ls-kodv-pil', '0%,100%{opacity:1}50%{opacity:.3}', { dur: 1.6 }, path('M68 20 C72 12 78 12 82 20', 'none', HL, 2.4), path('M78 18 L82 21 L84 16', 'none', HL, 2.2)),
+    T(96, 25, 'でも…', 9, C.red, 800), line('M66 10 L66 30', HL, 1.2, '2 2'),
+    mini(32, 52, C.denim), waBob('ls-kodv-nick', 1.5, mini(88, 52, C.pink, true)), check(104, 46), frame(2, 4, 116, 64),
+    greyed(openBook(36, 96, 1, true), mini(78, 96, C.grey), line('M70 104 L58 98', C.skin, 3), arrow(92, 84, 108, 84, C.grey, 2), rect(94, 90, 20, 14, C.white, 2, C.ink, 1), line('M97 95 L111 95 M97 99 L107 99', C.grey, 1)),
+    cross(96, 100, 9)),
 };
 
 export const LSTRUC_MOTIFS: Record<string, Svg> = { ...M1, ...M2, ...M3, ...M4, ...M5, ...M6, ...M7 };
