@@ -291,14 +291,22 @@ export const TTYPE_MOTIFS: Record<string, Svg> = {
     frame(66, 38, 44, 70)),
 
   // ── 4335 Krönikor och essäer ──
-  // essä (omgång 2): a long page with a heading bar and a big question mark; down the page runs a chain of reasoning –
-  // an idea (light bulb), three reasons, a conclusion (tick) – joined by arrows; no person, no portrait
-  'ttype.essä': all(bg(), sheet(18, 4, 84, 112, all(rect(24, 10, 52, 8, C.ink, 1, null), T(90, 20, '?', 18, HL, 900),
-      rect(26, 26, 68, 18, '#fff2c7', 3, C.ink, 1.2), circle(36, 34, 5, C.yellow, C.ink, 1), rect(33.5, 38.5, 5, 3, C.grey, 1, C.ink, 0.8), lines(46, 31, 42, 2, 6),
-      arrow(60, 45, 60, 53, HL, 2.2),
-      rect(26, 54, 68, 28, '#eef2f6', 3, C.ink, 1.2), ...[61, 68, 75].map((y) => all(circle(33, y, 2, HL, null), lines(39, y, 48, 1))),
-      arrow(60, 83, 60, 91, HL, 2.2),
-      rect(26, 92, 68, 18, '#e6f4e2', 3, C.ink, 1.2), circle(36, 101, 5, C.white, C.green, 1.6), tick(36, 101, 0.8), lines(46, 98, 42, 2, 6)))),
+  // essä (manuellt spår): a contrast pair. Left, ringed: a long text of many stacked pages with a big question mark at the
+  // top and a balance in the middle – on one hand, on the other hand – and many lines of reasoning. Right, small, grey and
+  // fenced off: a short newspaper column with a portrait (krönika), which the word is not
+  'ttype.essä': all(bg(),
+    ...[6, 4, 2].map((d) => rect(8 + d, 4 + d, 66, 104, '#f1ede2', 2, C.ink, 1.2)),
+    rect(8, 4, 66, 104, PAPER, 2, C.ink, 1.6),
+    T(41, 26, '?', 24, HL, 900), lines(14, 34, 54, 2, 5),
+    g('translate(41 58)', line('M0 -12 L0 12', C.ink, 2.4), path('M-6 14 L6 14 L4 10 L-4 10 Z', C.grey, C.ink, 1.2),
+      line('M-22 -8 L22 -12', C.ink, 2.2), circle(0, -10, 2, C.ink, null),
+      line('M-22 -8 L-28 2 M-22 -8 L-16 2 M22 -12 L16 -2 M22 -12 L28 -2', C.ink, 1),
+      path('M-30 2 L-14 2 C-15 7 -29 7 -30 2 Z', '#ffd9c7', C.ink, 1.2), path('M14 -2 L30 -2 C29 3 15 3 14 -2 Z', '#cfe7f5', C.ink, 1.2),
+      T(-22, 0, '+', 9, HL, 900), T(22, -4, '−', 9, BLUEB, 900)),
+    lines(14, 78, 54, 6, 5),
+    frame(4, 1, 78, 114),
+    line('M88 6 L88 114', C.grey2, 2, '4 3'),
+    greyed(newsPage(92, 30, 24, 52, all(rect(95, 34, 18, 4, C.ink, 1, null), mhead(104, 46, 4, C.hair, C.purple), lines(95, 60, 18, 4, 4.4))))),
   // kultursida: an open newspaper; the ringed page shows a book, a film strip, a music note and a paint palette, the grey page news
   'ttype.kultursida': all(bg(), greyed(newsPage(6, 16, 54, 88, all(rect(10, 20, 46, 6, C.ink, 1, null), rect(10, 30, 46, 24, '#bcd6e8', 1, C.ink, 1), rect(20, 42, 24, 8, C.red, 2, C.ink, 1), lines(10, 62, 44, 7, 5)))),
     newsPage(60, 16, 54, 88, all(rect(64, 20, 46, 6, C.ink, 1, null),
