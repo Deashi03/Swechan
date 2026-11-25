@@ -1,0 +1,172 @@
+{
+ "id": "m.recensioner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-25",
+ "titleSv": "Recensioner",
+ "titleJa": "レビュー",
+ "descriptionSv": "Hur man talar och skriver om böcker och filmer: hur en recension är uppbyggd, hur man ger både beröm och kritik, och hur man förstår betyg och omdömen i tidningar och på nätet.",
+ "descriptionJa": "{本|ほん}や{映画|えいが}についての{話|はな}し{方|かた}と{書|か}き{方|かた}：レビューの{構成|こうせい}、ほめることと{批判|ひはん}することの{両方|りょうほう}を{伝|つた}える{方法|ほうほう}、そして{新聞|しんぶん}やネットの{点数|てんすう}や{評価|ひょうか}の{読|よ}み{方|かた}を{学|まな}びます。",
+ "categoryId": "R08-A01-T03",
+ "tags": [
+  "litteratur",
+  "recension",
+  "kultur"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.instruktioner-och-manualer"
+ ],
+ "related": [],
+ "recommendedOrder": 4337,
+ "words": [
+  {
+   "senseId": "s.recension.1",
+   "active": true
+  },
+  {
+   "senseId": "s.recensent.1",
+   "active": true
+  },
+  {
+   "senseId": "s.recensera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.betygsätta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.omdöme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hylla-verb.1",
+   "active": true
+  },
+  {
+   "senseId": "s.såga.2",
+   "active": false
+  },
+  {
+   "senseId": "s.ris-och-ros.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rekommendera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sevärd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.läsvärd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.välskriven.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gripande-adj.1",
+   "active": false
+  },
+  {
+   "senseId": "s.förutsägbar.1",
+   "active": true
+  },
+  {
+   "senseId": "s.långrandig.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Två recensioner av samma bok",
+  "paragraphs": [
+   "Sara arbetar som recensent på en tidning i Göteborg. Varje vecka recenserar hon en ny bok och ger den ett betyg från ett till fem. Den här veckan har hon läst en bok om en japansk familj som flyttar till Sverige.",
+   "Sara tycker att boken är välskriven och gripande. Särskilt kapitlet om farmors sista sommar är starkt. Men hon ger också ris och ros: mitten är långrandig och slutet förutsägbart. Hennes omdöme blir ändå positivt, och hon betygsätter boken med fyra av fem.",
+   "I en annan tidning sågar recensenten samma bok. Hon skriver att boken är tråkig och har för många personer. – Så olika kan man läsa, säger Kenji när han läser båda recensionerna på tåget.",
+   "Kenji brukar läsa recensioner innan han väljer en bok på biblioteket. Han tittar mest på vad recensenten hyllar och vad hon kritiserar, inte på betyget. En bok med tre av fem kan vara läsvärd, om man gillar ämnet.",
+   "På kvällen rekommenderar Kenji boken för sin bokcirkel. Han berättar också att boken ska bli film nästa år. – Om filmen blir lika sevärd som boken är läsvärd, så går jag och ser den, skrattar Ingrid."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket betyg ger Sara boken?",
+    "options": [
+     "Fem av fem",
+     "Tre av fem",
+     "Ett av fem",
+     "Fyra av fem"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hennes omdöme blir ändå positivt, och hon betygsätter boken med fyra av fem.",
+    "explanationJa": "サラは{本|ほん}に{五|ご}{点|てん}{中|ちゅう}{四|よん}{点|てん}をつけます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad tycker Sara om mitten av boken?",
+    "options": [
+     "Att den är gripande",
+     "Att den är långrandig",
+     "Att den är för kort",
+     "Att den är välskriven"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Men hon ger också ris och ros: mitten är långrandig och slutet förutsägbart.",
+    "explanationJa": "{真|ま}ん{中|なか}の{部分|ぶぶん}は{長|なが}ったらしい、とサラは{書|か}いています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad tittar Kenji mest på i en recension?",
+    "options": [
+     "Betyget",
+     "Vad recensenten hyllar och kritiserar",
+     "Hur lång recensionen är",
+     "Vilken tidning den står i"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Han tittar mest på vad recensenten hyllar och vad hon kritiserar, inte på betyget.",
+    "explanationJa": "ケンジは{点数|てんすう}よりも、{批評家|ひひょうか}が{何|なに}をほめ、{何|なに}を{批判|ひはん}しているかを{見|み}ます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Alla recensenter tycker att boken är bra.",
+    "correct": false,
+    "explanationSv": "I en annan tidning sågar recensenten samma bok.",
+    "explanationJa": "{別|べつ}の{新聞|しんぶん}では、{同|おな}じ{本|ほん}が{酷評|こくひょう}されています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Kenji rekommenderar boken för sin bokcirkel.",
+    "correct": true,
+    "explanationSv": "På kvällen rekommenderar Kenji boken för sin bokcirkel.",
+    "explanationJa": "ケンジは{読書会|どくしょかい}の{仲間|なかま}にその{本|ほん}をすすめます。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om recensioner av böcker, filmer och restauranger.",
+  "discussionPoints": [
+   "Läser du recensioner innan du väljer en bok, en film eller en restaurang?",
+   "Vilken bok eller film tycker du är särskilt läsvärd eller sevärd?",
+   "Har du någon gång tyckt helt annorlunda än en recensent?",
+   "Recensera kort en bok eller en film som du har sett. Ge både ris och ros."
+  ]
+ },
+ "standard": 2
+}
