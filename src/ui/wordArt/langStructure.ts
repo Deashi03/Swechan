@@ -10,7 +10,7 @@
  * No brands; Japanese only as a red sun dot on a flag.
  */
 import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, sparkle, star, waBob, waIn, waShake, type Svg } from './kit';
-import { HL, T, bubble, cat, cup, flake, mini, padlock, sun, thought } from './people';
+import { HL, T, bubble, cat, cup, flake, padlock, sun, thought } from './people';
 import { figure } from './figures';
 import { P, greyed } from './blindFix';
 
@@ -161,7 +161,11 @@ const M3: Record<string, Svg> = {
 
 // ── 4314 Ords betydelser ─────────────────────────────────────────────
 const fork = (x: number, y: number) => line(`M${x} ${y} L${x} ${y + 14} M${x - 3} ${y} L${x - 3} ${y + 5} M${x + 3} ${y} L${x + 3} ${y + 5} M${x - 3} ${y + 5} L${x + 3} ${y + 5}`, C.silver, 1.6);
-const boat = (x: number, y: number, s = 1) => at(x, y, s, path('M-26 -6 L26 -6 L18 6 L-18 6 Z', C.brown, C.ink, 1.6), line('M-20 -2 L20 -2', '#7a4b2a', 1.2));
+/** Butterfly (for ”ha fjärilar i magen”). */
+const butterfly = (x: number, y: number, s = 1, col: string = C.yellow) => at(x, y, s, ellipse(-4, -3, 4, 3.4, col, C.ink, 1), ellipse(4, -3, 4, 3.4, col, C.ink, 1), ellipse(-3, 3, 3, 2.4, col, C.ink, 1), ellipse(3, 3, 3, 2.4, col, C.ink, 1), line('M0 -5 L0 5', C.ink, 1.4));
+/** Shared layout for bokstavlig/bildlig: the expression in a bubble at the top, one interpretation framed below. */
+const fjarilar = (scene: Svg) => all(rect(14, 6, 92, 22, C.white, 6, C.ink, 1.6), path('M54 28 L60 35 L66 28', C.white, C.ink, 1.6), rect(55, 26, 10, 3, C.white, 0, null),
+  T(60, 21, 'fjärilar i magen', 9, C.navy, 800), frame(8, 40, 104, 72), scene);
 const M4: Record<string, Svg> = {
   // a word points at what it stands for
   'lstruc.betydelse': all(hot(28, 40, 28, 'katt', 10), arrow(44, 46, 62, 60, HL, 2.6), thought(84, 50, 48, cat(84, 60, 0.9), true), ring(84, 56, 22), ground(), cat(32, 104, 0.8)),
@@ -179,13 +183,13 @@ const M4: Record<string, Svg> = {
   'lstruc.homonym': all(hot(60, 20, 26, 'fil', 11), arrow(50, 30, 30, 50, HL, 2.4), arrow(70, 30, 90, 50, HL, 2.4),
     at(28, 80, 1.3, path('M-12 -4 L12 -4 C12 6 6 10 0 10 C-6 10 -12 6 -12 -4 Z', '#d9e8f2', C.ink, 1.4), ellipse(0, -4, 12, 3, C.white, C.ink, 1.2)), line('M34 66 L44 54', C.silver, 2.4),
     path('M74 108 L84 58 L98 58 L110 108 Z', C.grey, C.ink, 1.4), line('M91 62 L91 70 M91 78 L91 86 M91 94 L91 104', C.white, 2)),
-  // literally: two people really sit in one boat
-  'lstruc.bokstavlig': all(sun(98, 18, 7), rect(4, 84, 112, 28, '#bfe3f5', 0, null), mini(46, 66, C.green), mini(74, 66, C.orange), boat(60, 84, 1.4),
-    line('M6 98 C20 94 30 102 44 98 C58 94 68 102 82 98 C96 94 106 102 116 98', '#5aa7d6', 1.6), ring(60, 76, 30)),
-  // figuratively: one shared problem (one cloud over both); the boat is only a picture in thought
-  'lstruc.bildlig': all(ground(), P({ x: 38, h: 0.62, top: C.green, mood: 'frown' }), P({ x: 82, h: 0.62, top: C.orange, mood: 'frown' }),
-    at(60, 30, 1.6, path('M-14 6 C-20 6 -20 -4 -13 -4 C-12 -12 -2 -14 2 -8 C6 -14 16 -10 14 -3 C20 -3 20 6 14 6 Z', C.grey, C.ink, 1.2)), line('M44 46 l-2 6 M56 46 l-2 6 M68 46 l-2 6 M80 46 l-2 6', C.sky, 2),
-    thought(100, 16, 30, boat(100, 18, 0.45), false), ring(60, 32, 26)),
+  // literally: real butterflies fly out of a surprised person's stomach
+  'lstruc.bokstavlig': fjarilar(all(P({ x: 40, h: 0.62, top: C.sky, mood: 'shock' }), ellipse(40, 86, 9, 8, 'rgba(255,255,255,0.75)', HL, 1.6),
+    butterfly(40, 86, 0.8), butterfly(62, 74, 1.1, C.orange), butterfly(80, 60, 1.2, C.purple), butterfly(94, 82, 1, C.yellow), line('M48 82 C56 80 58 78 60 76', C.grey, 1.2, '2 2'))),
+  // figuratively: the same words mean being nervous before a test; the heart beats fast
+  'lstruc.bildlig': fjarilar(all(rect(56, 92, 52, 5, C.tan, 1, C.ink, 1.4), line('M62 97 L62 112 M102 97 L102 112', C.brown, 2.6), rect(70, 82, 22, 10, C.white, 1, C.ink, 1.2), line('M73 85 L88 85 M73 88 L84 88', C.grey, 1),
+    P({ x: 40, h: 0.62, top: C.sky, mood: 'frown' }), line('M27 54 l-1 4 M53 54 l1 4', C.sky, 1.8), at(86, 58, 0.8, path('M0 8 C-12 0 -10 -10 -4 -10 C-1 -10 0 -8 0 -6 C0 -8 1 -10 4 -10 C10 -10 12 0 0 8 Z', C.red, C.ink, 1.4)),
+    line('M70 58 L74 58 L76 52 L79 64 L81 58 L84 58', HL, 1.6), line('M96 58 L102 58', HL, 1.6))),
 };
 
 // ── 4315 Idiom och fasta uttryck ─────────────────────────────────────
@@ -246,12 +250,16 @@ const M6: Record<string, Svg> = {
   // the same person speaks one way to a child and another way to a boss
   'lstruc.register.2': all(ground(), P({ x: 60, h: 0.8, top: C.green, mood: 'smile' }), P({ x: 16, h: 0.42, top: C.yellow, mood: 'laugh' }), suitPerson(104, 0.78),
     bubble(32, 22, 34, all(heart2(26, 22), star(38, 22, 4)), false), bubble(86, 22, 40, lines(70, 18, 32, 3, 4, C.navy), true), ring(60, 50, 16)),
-  // formal: suit, tie, a letter with a seal
-  'lstruc.formell': all(ground(), greyed(P({ x: 22, h: 0.7, top: C.yellow, mood: 'laugh' })), suitPerson(70, 0.9),
-    rect(86, 52, 26, 32, C.white, 1, C.ink, 1.4), lines(90, 58, 18, 4, 5, C.navy), circle(104, 78, 4, C.red, C.ink, 1), ring(70, 34, 15)),
-  // polite: holding the door open for someone
-  'lstruc.artig': all(ground(), rect(78, 20, 34, 92, C.brown, 2, C.ink, 1.6), path('M78 20 L64 28 L64 106 L78 112 Z', '#8a5533', C.ink, 1.4),
-    P({ x: 50, h: 0.85, top: C.green, mood: 'smile' }), line('M58 60 L66 56', C.skin, 4), P({ x: 22, h: 0.75, top: C.pink, hairStyle: 'long', mood: 'laugh' }), heart2(22, 22), frame(6, 14, 70, 98)),
+  // formal: a structured letter with heading, logo, greeting line and signature (the chat message is grey)
+  'lstruc.formell': all(rect(8, 10, 64, 98, C.white, 2, C.ink, 1.6), circle(20, 22, 6, C.navy, C.ink, 1.2), path('M17 22 L20 18 L23 22 L20 26 Z', C.white, null), rect(30, 18, 34, 7, C.ink, 1.5, null),
+    lines(16, 38, 48, 3, 5, C.navy), lines(16, 58, 48, 4, 5, C.grey), line('M16 84 L44 84', C.ink, 1.6), path('M16 96 C20 88 24 100 28 92 C32 86 34 98 40 94', 'none', C.navy, 1.4), circle(60, 96, 7, 'none', C.red, 1.6), circle(60, 96, 3.6, C.red, null),
+    frame(4, 6, 72, 106),
+    greyed(rect(84, 34, 30, 54, C.dark, 4, C.ink, 1.4), rect(87, 40, 24, 40, '#bfe3f5', 1, null), rect(89, 46, 18, 9, C.white, 3, null), circle(100, 66, 6, C.yellow, C.ink, 1), circle(98, 65, 0.9, C.ink, null), circle(102, 65, 0.9, C.ink, null), path('M97 68 Q100 71 103 68', 'none', C.ink, 1))),
+  // polite: holding the door with a smile and a little bow; the other says thanks. Grey: someone pushing in first
+  'lstruc.artig': all(ground(), rect(92, 20, 24, 92, C.brown, 2, C.ink, 1.6), path('M92 20 L80 28 L80 106 L92 112 Z', '#8a5533', C.ink, 1.4),
+    g('rotate(-10 74 112)', P({ x: 74, h: 0.8, top: C.green, mood: 'smile' })), line('M80 62 L88 58', C.skin, 4),
+    P({ x: 42, h: 0.74, top: C.pink, hairStyle: 'long', mood: 'laugh' }), bubble(44, 20, 30, all(heart2(38, 20), check(51, 20)), true),
+    greyed(P({ x: 12, h: 0.62, top: C.grey, mood: 'angry' })), arrow(4, 46, 20, 46, C.grey, 2), frame(26, 6, 66, 106)),
   // the doctor's special words; the patient does not follow
   'lstruc.fackspråk': all(ground(), P({ x: 36, h: 0.9, top: C.white, mood: 'smile' }), path('M30 40 C28 54 44 54 42 40', 'none', C.dark, 1.6), circle(36, 55, 2.4, C.silver, C.ink, 1),
     bubble(78, 22, 56, all(T(62, 26, 'Hb', 8, C.navy, 800), T(78, 26, 'mmol', 7, C.navy, 800), T(96, 26, '∑', 9, C.navy, 800)), true), P({ x: 92, h: 0.72, top: C.orange, mood: 'shock' }), qmark(108, 50, 12)),
@@ -287,10 +295,11 @@ const M7: Record<string, Svg> = {
   'lstruc.ungdomsspråk': all(ground(), P({ x: 30, h: 0.62, top: C.purple, mood: 'laugh' }), P({ x: 58, h: 0.6, top: C.green, hairStyle: 'long', mood: 'laugh' }),
     path('M20 54 C20 46 40 46 40 54 L46 54 L40 52', C.red, C.ink, 1.2), bubble(44, 22, 44, all(star(32, 22, 4), sparkle(44, 22, 4), star(56, 22, 4, C.orange)), true),
     greyed(P({ x: 98, h: 0.8, top: C.grey, mood: 'shock' })), qmark(98, 22, 14, C.grey), frame(6, 6, 72, 106)),
-  // two languages in one conversation, switching back and forth
-  'lstruc.kodväxla': all(ground(), P({ x: 26, h: 0.75, top: C.denim, mood: 'smile' }), P({ x: 94, h: 0.72, top: C.pink, hairStyle: 'long', mood: 'smile' }),
-    bubble(60, 26, 62, all(moving('ls-kodv-1', '0%,45%{opacity:1}55%,95%{opacity:.25}100%{opacity:1}', { dur: 2.8 }, flagSe(32, 19, 22, 14)), moving('ls-kodv-2', '0%,45%{opacity:.25}55%,95%{opacity:1}100%{opacity:.25}', { dur: 2.8 }, flagJp(66, 19, 22, 14)),
-      path('M56 22 L64 22 M64 30 L56 30', 'none', HL, 2), path('M61 19 L64 22 L61 25 M59 27 L56 30 L59 33', 'none', HL, 2)), true)),
+  // switching language in the middle of one sentence: Swedish half, arrow, Japanese half; the listener nods
+  'lstruc.kodväxla': all(ground(), P({ x: 22, h: 0.72, top: C.denim, mood: 'smile' }), waBob('ls-kodv-nick', 2, P({ x: 98, h: 0.7, top: C.pink, hairStyle: 'long', mood: 'smile' })),
+    path('M10 10 L110 10 L110 40 L32 40 L24 50 L24 40 L10 40 Z', C.white, C.ink, 1.6), flagSe(16, 16, 36, 18), flagJp(68, 16, 36, 18),
+    moving('ls-kodv-pil', '0%,100%{opacity:1}50%{opacity:.3}', { dur: 1.6 }, path('M52 25 L66 25', 'none', HL, 2.6), path('M62 20 L67 25 L62 30', 'none', HL, 2.6)),
+    line('M60 12 L60 38', HL, 1.4, '3 2'), check(110, 54)),
 };
 
 export const LSTRUC_MOTIFS: Record<string, Svg> = { ...M1, ...M2, ...M3, ...M4, ...M5, ...M6, ...M7 };
