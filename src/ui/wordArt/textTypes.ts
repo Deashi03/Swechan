@@ -143,13 +143,18 @@ export const TTYPE_MOTIFS: Record<string, Svg> = {
     arrow(46, 102, 74, 102, HL, 3), frame(60, 22, 50, 74)),
 
   // ── 4332 Miljö- och personbeskrivning ──
-  // beskrivning: three coloured lines of text, each joined by a dashed line to the matching thing on the person
-  'ttype.beskrivning': all(bg(), ground(), sheet(6, 22, 46, 64, all(
-      circle(13, 34, 3, C.yellow, C.ink, 1), lines(19, 34, 28, 1), circle(13, 48, 3, C.red, C.ink, 1), lines(19, 48, 28, 1), circle(13, 62, 3, BLUEB, C.ink, 1), lines(19, 62, 28, 1), lines(10, 74, 36, 2, 5))),
-    figure({ x: 90, h: 0.95, top: BLUEB }),
-    path('M80 21 L100 21 L97 14 C94 8 86 8 83 14 Z', C.yellow, C.ink, 1.4), rect(77, 20, 26, 3, C.yellow, 1, C.ink, 1.2),
-    path('M81 38 C86 42 94 42 99 38 L99 43 C94 47 86 47 81 43 Z', C.red, C.ink, 1.2), path('M93 44 L96 56 L91 56 Z', C.red, C.ink, 1),
-    line('M48 34 C60 30 70 22 78 20 M48 48 C62 48 72 44 80 42 M48 62 C60 64 72 62 82 58', HL, 1.4, '3 3')),
+  // beskrivning (omgång 2): a finished product sheet on a clipboard – picture of a chair, a heading bar, lines with small
+  // measure, colour and weight signs – each line joined by a dashed line to the real chair beside it; nobody is writing
+  'ttype.beskrivning': all(bg(), ground(),
+    rect(6, 10, 60, 98, '#b98a5a', 4, C.ink, 1.8), rect(24, 6, 24, 9, C.silver, 2, C.ink, 1.4),
+    rect(11, 18, 50, 86, PAPER, 2, C.ink, 1.4), rect(16, 23, 40, 7, C.ink, 1, null),
+    g('translate(36 46) scale(0.45)', rect(-14, -30, 6, 34, '#c46a3a', 1, C.ink, 2), rect(-14, -4, 30, 6, '#c46a3a', 1, C.ink, 2), line('M-12 2 L-12 24 M14 2 L14 24', C.ink, 3)),
+    line('M17 64 L25 64', C.ink, 1.4), line('M17 62 L17 66 M25 62 L25 66', C.ink, 1.2), lines(29, 64, 26, 1),
+    rect(17, 72, 7, 6, '#c46a3a', 1, C.ink, 1), lines(29, 75, 26, 1),
+    path('M17 92 L19 86 L23 86 L25 92 Z', C.grey, C.ink, 1), circle(21, 85, 1.4, 'none', C.ink, 1), lines(29, 89, 26, 1),
+    g('translate(94 112)', rect(-14, -60, 7, 34, '#c46a3a', 1, C.ink, 1.8), rect(-14, -30, 30, 7, '#c46a3a', 1, C.ink, 1.8), line('M-12 -23 L-12 0 M14 -23 L14 0', C.ink, 3)),
+    line('M56 64 C66 62 72 60 80 58 M56 75 C66 76 74 80 84 82 M56 89 C66 92 74 96 82 100', HL, 1.4, '3 3'),
+    line('M70 42 L70 48 M70 45 L112 45 M112 42 L112 48', C.ink, 1.2), frame(8, 12, 56, 94)),
   // miljö (i en berättelse): out of an open book rises a winter night – snowy forest, a red cottage with a lit window, the moon
   'ttype.miljö.3': all(bg(), rect(14, 6, 92, 66, NIGHT, 4, C.ink, 1.6), circle(90, 20, 7, '#f6e7a8', C.ink, 1),
     ...[[24, 18], [44, 12], [62, 24], [80, 34], [34, 32], [100, 44]].map(([x, y]) => circle(x!, y!, 1.2, C.white, null)),
@@ -175,14 +180,15 @@ export const TTYPE_MOTIFS: Record<string, Svg> = {
   'ttype.huvudperson': all(bg('#e9e4f0'), stage(), spot(60, 30),
     at(-12, figure({ x: 20, h: 0.56, grey: true }), figure({ x: 100, h: 0.56, grey: true })),
     at(-12, figure({ x: 60, h: 0.9, top: C.orange, hairStyle: 'long' })), ring(60, 26, 14)),
-  // målande: out of a book bursts a colourful scene – sun, sea, birds, flowers; beside it a grey book gives only grey lines
-  'ttype.målande': all(bg(), greyed(openBook(22, 110, 0.46, lines(-36, -32, 30, 5, 5), lines(6, -32, 30, 5, 5)), ellipse(22, 74, 16, 10, C.white, C.ink, 1.4), lines(12, 72, 20, 2, 4)),
-    openBook(76, 112, 0.8, lines(-36, -32, 30, 5, 5), lines(6, -32, 30, 5, 5)),
-    path('M50 80 C34 70 36 44 52 38 C54 22 74 14 86 24 C100 18 116 30 110 48 C118 60 108 80 94 80 Z', '#e6f4fb', C.ink, 1.6),
-    circle(92, 34, 6, C.yellow, C.ink, 1), path('M46 64 C56 60 66 68 76 64 C86 60 96 68 108 64 L106 74 L50 74 Z', '#4aa3d8', C.ink, 1),
-    path('M58 40 q4 -4 8 0 q4 -4 8 0 M72 30 q3 -3 6 0 q3 -3 6 0', 'none', C.ink, 1.4),
-    circle(56, 56, 3, C.pink, C.ink, 0.9), circle(64, 54, 3, C.red, C.ink, 0.9), circle(100, 56, 3, C.purple, C.ink, 0.9), sparkle(42, 32, 4, HL)),
-
+  // målande (omgång 2): an open book whose coloured words rise in coloured ribbons and turn into a bright picture above it –
+  // sun, sea and a bird; the words on the page are the same colours as the picture
+  'ttype.målande': all(bg(), openBook(60, 114, 1.15,
+      all(line('M-36 -34 L-24 -34', C.yellow, 3), lines(-21, -34, 15, 1), lines(-36, -27, 30, 1), line('M-36 -20 L-20 -20', '#2f86c8', 3), lines(-17, -20, 11, 1), lines(-36, -13, 22, 1)),
+      all(lines(6, -34, 30, 1), line('M6 -27 L20 -27', GREENB, 3), lines(23, -27, 13, 1), line('M10 -20 L24 -20', C.red, 3), lines(6, -13, 26, 1))),
+    line('M32 76 C28 62 30 50 36 40', C.yellow, 2.4, '4 3'), line('M42 84 C42 70 48 58 54 52', '#2f86c8', 2.4, '4 3'), line('M78 82 C82 70 80 56 76 46', GREENB, 2.4, '4 3'), line('M86 90 C94 76 96 60 92 42', C.red, 2.4, '4 3'),
+    rect(14, 6, 92, 50, '#e6f4fb', 6, C.ink, 1.6), circle(36, 22, 9, C.yellow, C.ink, 1.2), ...range(8).map((i) => { const a = (i * Math.PI) / 4; return line(`M${f1(36 + Math.cos(a) * 11)} ${f1(22 + Math.sin(a) * 11)} L${f1(36 + Math.cos(a) * 14)} ${f1(22 + Math.sin(a) * 14)}`, C.gold, 1.6); }),
+    path('M14 44 C30 38 44 50 60 44 C76 38 90 50 106 44 L106 56 L14 56 Z', '#2f86c8', C.ink, 1.2), path('M60 30 L70 22 L80 30 L76 30 L76 40 L64 40 L64 30 Z', C.red, C.ink, 1), rect(80, 34, 22, 6, GREENB, 1, null),
+    path('M82 16 q4 -4 8 0 q4 -4 8 0', 'none', C.ink, 1.6), sparkle(110, 64, 4, HL), sparkle(10, 66, 4, HL)),
   // ── 4333 Dialog i text ──
   // dialog (i en text): two people talk out of an open book; their bubbles take turns
   'ttype.dialog.2': all(bg(), openBook(60, 112, 1.2, lines(-36, -34, 30, 6, 5), lines(6, -34, 30, 6, 5)),
@@ -242,16 +248,18 @@ export const TTYPE_MOTIFS: Record<string, Svg> = {
     ...[12, 36, 60, 84, 108].map((x) => all(rect(x - 8, 104, 16, 10, C.grey2, 3, C.ink, 1), rect(x - 8, 112, 16, 6, C.grey, 1, C.ink, 1)))),
 
   // ── 4334 Sakprosa och reportage ──
-  // sakprosa: two shelves; the grey one has fantasy covers (castle, dragon, heart), the ringed one facts (globe, leaf, map, magnifier)
-  'ttype.sakprosa': all(bg(), greyed(rect(4, 18, 52, 84, '#b98a5a', 2, C.ink, 1.6), line('M4 60 L56 60', C.ink, 1.6),
-      rect(10, 24, 18, 32, C.purple, 1, C.ink, 1.2), path('M14 50 L14 38 L17 38 L17 34 L20 38 L23 34 L23 38 L24 38 L24 50 Z', C.white, C.ink, 0.8),
-      rect(31, 24, 18, 32, C.red, 1, C.ink, 1.2), heart(40, 40, 4, C.pink), rect(10, 66, 18, 32, GREENB, 1, C.ink, 1.2), path('M12 90 C16 78 26 78 26 86 C22 82 18 84 14 90 Z', '#2e5a3a', C.ink, 0.8), rect(31, 66, 18, 32, NIGHT, 1, C.ink, 1.2), star(40, 80, 5)),
-    rect(64, 18, 52, 84, '#b98a5a', 2, C.ink, 1.6), line('M64 60 L116 60', C.ink, 1.6),
-    rect(70, 24, 18, 32, '#bfe3f5', 1, C.ink, 1.2), circle(79, 40, 7, '#7fc4e8', C.ink, 1), path('M75 36 C78 34 80 38 78 41 C76 43 74 40 75 36 Z M81 42 C83 40 85 43 83 45 Z', GREENB, null),
-    rect(91, 24, 18, 32, '#f2e6c4', 1, C.ink, 1.2), path('M94 50 C94 38 104 32 106 30 C106 42 100 50 94 50 Z', GREENB, C.ink, 1), line('M94 50 L104 36', '#2e5a3a', 1),
-    rect(70, 66, 18, 32, '#e8f0d8', 1, C.ink, 1.2), path('M72 74 L78 72 L84 75 L86 74 L86 92 L80 94 L74 91 L72 92 Z', '#cfe7b8', C.ink, 0.9), line('M74 86 L78 80 L83 84', HL, 1.2, '2 1.5'),
-    rect(91, 66, 18, 32, '#ffe9c7', 1, C.ink, 1.2), circle(98, 78, 5, '#e6f4fb', C.ink, 1.4), line('M102 82 L106 88', C.ink, 2.4),
-    frame(60, 14, 60, 92)),
+  // sakprosa (omgång 2): a ringed shelf of real-life books – a cookbook (pot), a row of reference volumes, a biography
+  // (portrait), an atlas (globe) – and apart from it a fairy-tale book (dragon and castle) that is crossed out in red
+  'ttype.sakprosa': all(bg(),
+    rect(4, 26, 74, 70, '#b98a5a', 2, C.ink, 1.6), rect(8, 30, 66, 62, '#8f6640', 1, null), line('M4 96 L78 96', C.ink, 2),
+    rect(10, 46, 16, 46, C.red, 1, C.ink, 1.2), path('M13 60 L23 60 L22 66 L14 66 Z', C.dark, C.ink, 0.9), line('M12 60 L24 60', C.ink, 1.4), line('M16 56 C15 53 18 53 17 50 M20 56 C19 53 22 53 21 50', C.grey, 1),
+    ...[0, 1, 2].map((i) => all(rect(28 + i * 7, 40, 7, 52, '#2e5590', 1, C.ink, 1.1), rect(29 + i * 7, 48, 5, 4, GOLD, 0, null), rect(29 + i * 7, 80, 5, 4, GOLD, 0, null))),
+    rect(50, 44, 12, 48, '#e8d8b0', 1, C.ink, 1.2), mhead(56, 56, 3.4, '#d9d9d9', C.orange),
+    rect(63, 50, 10, 42, GREENB, 1, C.ink, 1.2), circle(68, 62, 4, '#7fc4e8', C.ink, 1), path('M66 60 C68 59 69 62 68 63 Z', GREENB, null),
+    frame(2, 22, 78, 78),
+    g('translate(98 70) rotate(8)', rect(-14, -22, 28, 40, C.purple, 2, C.ink, 1.6), path('M-8 10 L-8 -2 L-5 -2 L-5 -6 L-2 -2 L1 -6 L1 -2 L2 -2 L2 10 Z', C.white, C.ink, 0.9),
+      path('M2 -10 C6 -18 12 -16 10 -10 C14 -12 14 -6 10 -6 L6 -4 Z', '#3fa45b', C.ink, 0.9), star(-6, -14, 3.4)),
+    line('M84 50 L112 92 M112 50 L84 92', C.red, 4)),
   // biografi: a writer at a desk writes a book; above her runs another person's life – baby, child, adult, old
   'ttype.biografi': all(bg(), desk(88), P({ x: 28, h: 0.8, top: C.green, hairStyle: 'long', mood: 'calm' }),
     book(54, 64, 22, 24, '#8a5a32', mhead(66, 72, 4, '#d9d9d9', C.orange)), pen(84, 80, 30, 0.8),
@@ -283,13 +291,14 @@ export const TTYPE_MOTIFS: Record<string, Svg> = {
     frame(66, 38, 44, 70)),
 
   // ── 4335 Krönikor och essäer ──
-  // essä: a person at a desk thinks along a winding path from a question mark to a light bulb; a thick pile of written pages
-  'ttype.essä': all(bg(), desk(86), P({ x: 32, h: 0.84, top: C.purple, mood: 'calm' }),
-    ...range(4).map((i) => sheet(62 + i * 2, 54 - i * 3, 34, 32, lines(66 + i * 2, 60 - i * 3, 26, 4, 5))),
-    pen(104, 80, 25, 0.8),
-    ellipse(66, 22, 44, 17, C.white, C.ink, 1.6), circle(36, 40, 3, C.white, C.ink, 1.2), circle(32, 46, 2, C.white, C.ink, 1),
-    T(34, 28, '?', 16, C.grey, 900), line('M42 22 C50 10 56 34 66 22 C74 12 80 30 88 22', HL, 1.6, '3 2'),
-    circle(98, 20, 6, C.yellow, C.ink, 1.2), rect(95, 26, 6, 4, C.grey, 1, C.ink, 1)),
+  // essä (omgång 2): a long page with a heading bar and a big question mark; down the page runs a chain of reasoning –
+  // an idea (light bulb), three reasons, a conclusion (tick) – joined by arrows; no person, no portrait
+  'ttype.essä': all(bg(), sheet(18, 4, 84, 112, all(rect(24, 10, 52, 8, C.ink, 1, null), T(90, 20, '?', 18, HL, 900),
+      rect(26, 26, 68, 18, '#fff2c7', 3, C.ink, 1.2), circle(36, 34, 5, C.yellow, C.ink, 1), rect(33.5, 38.5, 5, 3, C.grey, 1, C.ink, 0.8), lines(46, 31, 42, 2, 6),
+      arrow(60, 45, 60, 53, HL, 2.2),
+      rect(26, 54, 68, 28, '#eef2f6', 3, C.ink, 1.2), ...[61, 68, 75].map((y) => all(circle(33, y, 2, HL, null), lines(39, y, 48, 1))),
+      arrow(60, 83, 60, 91, HL, 2.2),
+      rect(26, 92, 68, 18, '#e6f4e2', 3, C.ink, 1.2), circle(36, 101, 5, C.white, C.green, 1.6), tick(36, 101, 0.8), lines(46, 98, 42, 2, 6)))),
   // kultursida: an open newspaper; the ringed page shows a book, a film strip, a music note and a paint palette, the grey page news
   'ttype.kultursida': all(bg(), greyed(newsPage(6, 16, 54, 88, all(rect(10, 20, 46, 6, C.ink, 1, null), rect(10, 30, 46, 24, '#bcd6e8', 1, C.ink, 1), rect(20, 42, 24, 8, C.red, 2, C.ink, 1), lines(10, 62, 44, 7, 5)))),
     newsPage(60, 16, 54, 88, all(rect(64, 20, 46, 6, C.ink, 1, null),
@@ -298,10 +307,12 @@ export const TTYPE_MOTIFS: Record<string, Svg> = {
       g('translate(98 76)', path('M-10 0 C-10 -10 10 -12 11 -2 C12 4 6 2 4 6 C2 10 -10 10 -10 0 Z', C.tan, C.ink, 1.2), circle(-5, -3, 2, C.red, null), circle(1, -6, 2, C.yellow, null), circle(6, -2, 2, BLUEB, null)),
       lines(64, 92, 44, 2, 5))),
     frame(58, 12, 58, 96)),
-  // jagform: the writer (orange) beside her page; every line on the page starts with her own little face
-  'ttype.jagform': all(bg(), ground(), P({ x: 24, h: 0.84, top: C.orange, hairStyle: 'long', mood: 'smile' }),
-    sheet(46, 10, 68, 92, all(...[20, 40, 60, 80].map((y) => all(mhead(55, y - 2, 4.2, C.hair, C.orange), lines(66, y - 2, 40, 2, 5))))),
-    frame(48, 13, 14, 70), line('M38 50 L48 46', HL, 1.4, '3 3')),
+  // jagform (omgång 2): a plain page of text where the word "jag" is marked again and again; an arrow runs from the page
+  // to the writer herself, who sits beside it with a pen; no newspaper layout, no portrait in the text
+  'ttype.jagform': all(bg(), ground(), sheet(4, 8, 74, 98, all(
+      ...[[22, 'jag', 30], [38, 'jag', 46], [54, 'jag', 30], [70, 'jag', 52], [86, 'jag', 30]].map(([y, w, x]) => all(lines(10, +y!, +x! - 14, 1), rect(+x! - 3, +y! - 8, 20, 11, '#ffd9c7', 3, null), TL(+x! - 1, +y! + 1, String(w), 10, HL, 900), lines(+x! + 20, +y!, 50 - +x!, 1))))),
+    P({ x: 100, h: 0.8, top: C.green, hairStyle: 'long', mood: 'smile' }), pen(110, 80, 25, 0.7),
+    arrow(66, 40, 90, 34, HL, 2.6), ring(100, 39, 12)),
   // anekdot: at a café table a woman tells a short funny story – a gull steals an ice cream – and the two listening laugh
   'ttype.anekdot': all(bg(), ground(), rect(36, 86, 48, 5, C.tan, 2, C.ink, 1.4), line('M60 91 L60 112', C.brown, 3), cup(48, 86), cup(72, 86),
     P({ x: 18, h: 0.8, top: C.green, hairStyle: 'long', mood: 'smile' }), P({ x: 98, h: 0.76, top: C.sky, mood: 'laugh' }),
