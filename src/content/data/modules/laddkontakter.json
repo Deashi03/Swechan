@@ -1,0 +1,200 @@
+{
+ "id": "m.laddkontakter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Laddkontakter",
+ "titleJa": "{充電|じゅうでん}プラグとコネクター",
+ "descriptionSv": "Hur man laddar en elbil hemma på ett säkert sätt: vad man behöver veta om uttag, kablar och kontakter, varför man skaffar en egen laddbox och hur en behörig elektriker installerar den.",
+ "descriptionJa": "{家|いえ}で{電気自動車|でんきじどうしゃ}を{安全|あんぜん}に{充電|じゅうでん}する{方法|ほうほう}：コンセント、ケーブル、プラグについて{知|し}っておくべきこと、{自宅用|じたくよう}の{充電|じゅうでん}ボックスを{設置|せっち}する{理由|りゆう}、そして{資格|しかく}のある{電気工事士|でんきこうじし}がそれをどう{取|と}り{付|つ}けるかを{学|まな}びます。",
+ "categoryId": "R07-A06-T02",
+ "tags": [
+  "elbilar",
+  "laddning",
+  "el"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.batterikemi"
+ ],
+ "related": [],
+ "recommendedOrder": 4224,
+ "words": [
+  {
+   "senseId": "s.uttag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stickkontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skarvsladd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jordad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jordfelsbrytare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.säkring.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elcentral.1",
+   "active": false
+  },
+  {
+   "senseId": "s.laddkabel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddkontakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddlucka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-in.1",
+   "active": true
+  },
+  {
+   "senseId": "s.koppla-ur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddbox.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elektriker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.behörig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.installera.2",
+   "active": true
+  },
+  {
+   "senseId": "s.adapter.1",
+   "active": true
+  },
+  {
+   "senseId": "s.standard.2",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "En laddbox i garaget",
+  "paragraphs": [
+   "Takeshi och Ingrid har köpt sin första elbil. De bor i ett radhus i Linköping med ett eget garage. De första veckorna laddar de bilen i ett vanligt uttag med en laddkabel som följde med bilen.",
+   "En granne varnar dem. – Ett vanligt uttag är inte gjort för att ge mycket ström i många timmar. Stickkontakten kan bli varm i ett gammalt uttag. Uttaget måste vara jordat, och man ska aldrig använda en skarvsladd. Den kan bli varm och börja brinna. Det är också viktigt att det finns en jordfelsbrytare i elcentralen.",
+   "Takeshi och Ingrid bestämmer sig för att köpa en laddbox. En behörig elektriker kommer och installerar den på väggen i garaget. Han drar en ny ledning från elcentralen och sätter in en egen säkring. Eftersom det är en elinstallation i hemmet kan de få en skattereduktion för en del av kostnaden.",
+   "Elektrikern visar hur det går till. Laddkontakten på kabeln har en standard som heter typ 2. Den används på nästan alla nya elbilar i Europa. Man öppnar laddluckan på bilen och kopplar in kontakten. Medan bilen laddar sitter kontakten fast, så att ingen kan ta den.",
+   "– När ni ska köra måste ni först låsa upp bilen och koppla ur kabeln, säger elektrikern. Han berättar också att en del äldre elbilar har en annan kontakt. Då behöver man en adapter. – Men köp aldrig billiga adaptrar på nätet, säger han. De kan vara farliga."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur laddar Takeshi och Ingrid bilen de första veckorna?",
+    "options": [
+     "På en snabbladdare",
+     "Hos grannen",
+     "I ett vanligt uttag",
+     "På jobbet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "De första veckorna laddar de bilen i ett vanligt uttag med en laddkabel som följde med bilen.",
+    "explanationJa": "{最初|さいしょ}は{普通|ふつう}のコンセントで{充電|じゅうでん}しています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför ska man inte använda en skarvsladd?",
+    "options": [
+     "Den kan bli varm och börja brinna",
+     "Den är för kort",
+     "Den gör laddningen för snabb",
+     "Den kostar för mycket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Den kan bli varm och börja brinna.",
+    "explanationJa": "{熱|あつ}くなって{燃|も}え{出|だ}すことがあるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vem installerar laddboxen?",
+    "options": [
+     "Grannen",
+     "Takeshi själv",
+     "Bilhandlaren",
+     "En behörig elektriker"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En behörig elektriker kommer och installerar den på väggen i garaget.",
+    "explanationJa": "{資格|しかく}のある{電気工事士|でんきこうじし}が{取|と}り{付|つ}けます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Typ 2 används på nästan alla nya elbilar i Europa.",
+    "correct": true,
+    "explanationSv": "Den används på nästan alla nya elbilar i Europa.",
+    "explanationJa": "ヨーロッパのほとんどの{新|あたら}しい{電気自動車|でんきじどうしゃ}で{使|つか}われています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Man kan köra iväg medan kabeln fortfarande sitter i bilen.",
+    "correct": false,
+    "explanationSv": "När ni ska köra måste ni först låsa upp bilen och koppla ur kabeln, säger elektrikern.",
+    "explanationJa": "{走|はし}る{前|まえ}にケーブルを{抜|ぬ}かなければなりません。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Typ 2 är standardkontakten för laddning med växelström av elbilar i EU.",
+    "source": "EU:s förordning (EU) 2023/1804 om infrastruktur för alternativa drivmedel (AFIR)",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Elbilar ska inte laddas via skarvsladd, och vanliga uttag är inte gjorda för långvarig laddning; en laddbox ska installeras av en elinstallatör.",
+    "source": "Elsäkerhetsverket, Ladda elbilen säkert",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Den som installerar en laddningspunkt för elfordon i sin bostad kan få skattereduktion för grön teknik för en del av kostnaden.",
+    "source": "Skatteverket, Skattereduktion för grön teknik",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om el i hemmet och om att ladda en elbil hemma.",
+  "discussionPoints": [
+   "Hur många uttag har du i ditt kök? Räcker de?",
+   "Har du någon gång använt en skarvsladd på ett sätt som inte var säkert?",
+   "Skulle du vilja ha en laddbox hemma? Varför eller varför inte?",
+   "Vad gör du om säkringen går hemma?"
+  ]
+ },
+ "standard": 2
+}

@@ -267,3 +267,8 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
 - **Omritade i omgång 2:** *upplyst* (gatlykta med ljuskägla förväxlades med *ljuskägla*; nu samma gångväg ljus och mörk utan lyktstolpe) och *samhällsekonomisk* (våg och stapeldiagram lästes som "statistik"; nu en bro över en våg där kostnaden vägs mot samhällets nytta).
 - **Synonympar:** *bygge* ↔ *byggarbetsplats*, *ställning* (bygg) ↔ *byggställning*.
 - **Godkända men nära andra bilder (bevakas):** *konstruktion* ↔ husstomme/bärande konstruktion; *säkerhetsintroduktion* ↔ arbetsplatsplan; *tätt hus* ↔ "skydd mot regn"; *kommunalt vatten* ↔ ledning i gatan; *hårdgjord* ↔ avrinning; *planskild* ↔ trafikplats; *strömlös* ↔ hus bortkopplat från elnätet; *punktlighet* ↔ tåg vid perrong med klocka; *upplyst* ↔ "trygg"; *samhällsekonomisk* ↔ pengar/avkastning.
+
+## 0.60 – Transportteknik
+
+- **Underkänd också i det manuella spåret:** *laddstation* (`s.laddstation.1`). Omgång 1 (laddplats under tak) och omgång 2 (anläggning ovanifrån med kafé och skylt) och den handritade bildserien (karta med laddnålar → anläggningen) matchades alla till *laddstolpe*. Produktägarens beslut 2026-11-25: synonympar *laddstation*/*laddstolpe* (`conf.py`).
+- **Godkända men nära andra bilder (bevakas):** *transmission* ↔ växellåda/drivlina; *enväxlad* ↔ "kugghjul"; *energitäthet* ↔ "mer energi"; *aerodynamisk* ↔ tågnos; *navigation* ↔ kompass/flygrutt; *haverikommission* ↔ *inspektion*; *ombord* ↔ passagerare; *rederi* ↔ hamnkontor; *man överbord* ↔ räddning; *eldriven* ↔ diesel→elbuss; *vätgasstation* ↔ tankning; *felparkerad* ↔ "förbjudet"; *åkeri* ↔ samlastning.

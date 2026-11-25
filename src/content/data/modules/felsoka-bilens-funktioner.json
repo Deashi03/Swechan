@@ -1,0 +1,194 @@
+{
+ "id": "m.felsoka-bilens-funktioner",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Felsöka bilens funktioner",
+ "titleJa": "{車|くるま}の{故障|こしょう}の{原因|げんいん}を{調|しら}べる",
+ "descriptionSv": "Du lär dig beskriva ljud, lampor och lukter som visar att något är fel på bilen, förstå hur verkstaden felsöker och vad som händer vid besiktningen, och du kan hantera ett underkänt besiktningsprotokoll.",
+ "descriptionJa": "{車|くるま}の{不具合|ふぐあい}を{示|しめ}す{音|おと}、ランプ、においを{説明|せつめい}し、{整備工場|せいびこうじょう}がどのように{原因|げんいん}を{調|しら}べるか、{車検|しゃけん}で{何|なに}が{行|おこな}われるかを{学|まな}びます。{不合格|ふごうかく}になった{検査記録|けんさきろく}に{対応|たいおう}できるようになります。",
+ "categoryId": "R07-A06-T01",
+ "tags": [
+  "bilar",
+  "teknik",
+  "fordon"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.avgassystem"
+ ],
+ "related": [],
+ "recommendedOrder": 4217,
+ "words": [
+  {
+   "senseId": "s.varningslampa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felsöka.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felkod.1",
+   "active": true
+  },
+  {
+   "senseId": "s.felkodsläsare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.missljud.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skramla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tjuta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.knacka.2",
+   "active": true
+  },
+  {
+   "senseId": "s.hacka.4",
+   "active": true
+  },
+  {
+   "senseId": "s.lukta-bränt.1",
+   "active": false
+  },
+  {
+   "senseId": "s.provköra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kostnadsförslag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.åtgärda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besiktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besikta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.anmärkning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.ombesiktning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.körförbud.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Underkänd på besiktningen",
+  "paragraphs": [
+   "Kenji ska besikta sin bil i Linköping. På väg till besiktningen tänds en gul varningslampa på instrumentbrädan. Motorn hackar lite när han kör uppför en backe, men han hinner fram.",
+   "Besiktningsteknikern kontrollerar bilen i en halvtimme. Sedan får Kenji ett protokoll. Bilen är underkänd. Det finns tre anmärkningar: ett trasigt bromsljus, ett hål i avgassystemet och varningslampan. – Du måste laga felen och komma tillbaka på ombesiktning inom en månad, säger teknikern. Annars kan bilen få körförbud.",
+   "Kenji kör direkt till sin verkstad. Mekanikern Sofia kopplar in en felkodsläsare under ratten. – Felkoden visar att ett tändstift inte fungerar, säger hon. Det är därför motorn hackar. Hon frågar om bilen har haft några andra missljud.",
+   "– Ja, säger Kenji. Det skramlar under bilen, och ibland tjuter det när jag startar. Förra veckan tyckte jag också att det knackade lite från motorn. – Vi ska felsöka ordentligt, säger Sofia. Om det luktar bränt eller knackar mycket ska du stanna direkt.",
+   "Sofia provkör bilen och ger Kenji ett kostnadsförslag. Han tycker att det är dyrt, men han säger ja. Två dagar senare har verkstaden åtgärdat alla fel. På ombesiktningen blir bilen godkänd, och Kenji kör hem nöjd."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad tänds på instrumentbrädan?",
+    "options": [
+     "Helljuset",
+     "En gul varningslampa",
+     "Sätesvärmen",
+     "Ett grönt ljus"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "På väg till besiktningen tänds en gul varningslampa på instrumentbrädan.",
+    "explanationJa": "{計器盤|けいきばん}に{黄色|きいろ}い{警告灯|けいこくとう}がつきます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur många anmärkningar får bilen?",
+    "options": [
+     "En",
+     "Fem",
+     "Ingen",
+     "Tre"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det finns tre anmärkningar …",
+    "explanationJa": "{指摘|してき}は{三|みっ}つありました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför hackar motorn?",
+    "options": [
+     "Det finns för mycket bensin",
+     "Däcken är för hårda",
+     "Ett tändstift fungerar inte",
+     "Bromsarna är slitna"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Felkoden visar att ett tändstift inte fungerar, säger hon. Det är därför motorn hackar.",
+    "explanationJa": "{点火|てんか}プラグの{一|ひと}つが{働|はたら}いていないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Sofia läser felkoden med en felkodsläsare.",
+    "correct": true,
+    "explanationSv": "Mekanikern Sofia kopplar in en felkodsläsare under ratten.",
+    "explanationJa": "ソフィアは{故障診断機|こしょうしんだんき}でエラーコードを{読|よ}みます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji tyckte att reparationen var billig.",
+    "correct": false,
+    "explanationSv": "Han tycker att det är dyrt, men han säger ja.",
+    "explanationJa": "ケンジは{高|たか}いと{思|おも}いましたが、{修理|しゅうり}を{頼|たの}みました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En personbil ska besiktas första gången senast tre år efter att den togs i trafik, sedan efter två år och därefter ungefär varje år (3-2-1-regeln).",
+    "source": "Transportstyrelsen, regler för kontrollbesiktning av personbil",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Om en bil blir underkänd ska felen åtgärdas och bilen ombesiktas inom en månad; annars, eller om felen är farliga, kan bilen få körförbud.",
+    "source": "Transportstyrelsen, information om underkänd besiktning och körförbud",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om bilbesiktning och om att hitta fel på saker.",
+  "discussionPoints": [
+   "Finns det något som liknar bilbesiktningen i Japan? Hur fungerar det?",
+   "Vad gör du om en varningslampa tänds när du kör?",
+   "Har du hört ett konstigt missljud från en bil, en cykel eller en maskin? Vad var det?",
+   "Lagar du helst saker själv, eller lämnar du dem till en verkstad?"
+  ]
+ },
+ "standard": 2
+}

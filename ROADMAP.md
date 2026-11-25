@@ -198,6 +198,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.59 – Byggnad & infrastruktur (klar)
 - 42 nya moduler i Teknik & digital värld → Byggnad & infrastruktur enligt standard 2, med 321 nya ordbilder varav 108 rörliga. 17 symbolbilder matchningstestade (två omritade).
 
+## v0.60 – Transportteknik (klar)
+- 42 nya moduler i Teknik & digital värld → Transportteknik enligt standard 2, med 377 nya ordbilder varav 241 rörliga. Hela Teknik & digital värld (R07) är publicerad.
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).

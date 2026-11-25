@@ -1,0 +1,214 @@
+{
+ "id": "m.jetmotorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Jetmotorer",
+ "titleJa": "ジェットエンジン",
+ "descriptionSv": "Du lär dig förklara steg för steg hur en jetmotor fungerar, från luften som sugs in till gaserna som blåser ut, och kan samtala om flygbuller och flygets utsläpp.",
+ "descriptionJa": "ジェットエンジンが、{空気|くうき}を{吸|す}い{込|こ}んでからガスを{吹|ふ}き{出|だ}すまで、どのように{動|うご}くのかを{順|じゅん}を{追|お}って{説明|せつめい}できるようになります。また、{飛行機|ひこうき}の{騒音|そうおん}や{排出|はいしゅつ}について{話|はな}し{合|あ}えるようになります。",
+ "categoryId": "R07-A06-T04",
+ "tags": [
+  "flyg",
+  "teknik",
+  "fordon"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.lyftkraft-och-vingprofiler"
+ ],
+ "related": [],
+ "recommendedOrder": 4243,
+ "words": [
+  {
+   "senseId": "s.jetmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.jetplan.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftintag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fläkt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kompressor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.brännkammare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.turbin.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avgasstråle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dragkraft.1",
+   "active": false
+  },
+  {
+   "senseId": "s.efterbrännare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.fotogen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.flygbränsle.1",
+   "active": true
+  },
+  {
+   "senseId": "s.varvtal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.överljudsfart.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dåna.1",
+   "active": false
+  },
+  {
+   "senseId": "s.buller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utsläpp.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Motorerna under vingen",
+  "paragraphs": [
+   "Kenjis andra vecka på praktiken handlar om jetmotorer. Ingrid öppnar en av motorerna under vingen på ett jetplan. – Nu ska du få se hur den fungerar inuti, säger hon.",
+   "Längst fram sitter luftintaget och en stor fläkt. Fläkten suger in luften. En del av luften går in i kompressorn, som trycker ihop den. Sedan kommer brännkammaren, där flygbränslet sprutas in och brinner. Flygbränsle är ett slags fotogen.",
+   "De heta gaserna får turbinen att snurra, och turbinen driver i sin tur kompressorn och fläkten. Längst bak blåser gaserna ut som en het avgasstråle. Den ger planet dragkraft. – Därför får ingen stå bakom motorerna när de går, säger Ingrid.",
+   "På eftermiddagen provkör de en motor. Kenji har hörselskydd, men det dånar ändå. På skärmen ser han hur varvtalet stiger. – Bullret är ett problem för dem som bor nära flygplatsen, säger Ingrid. Och utsläppen av koldioxid är ett problem för hela världen.",
+   "På kvällen ser Kenji ett program om flygvapnet. Ett svenskt stridsflygplan startar med efterbrännaren påslagen, och en lång eld syns bakom planet. Det kan flyga i överljudsfart. Kenji bestämmer sig för att någon gång åka till Flygvapenmuseum i Linköping."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör kompressorn?",
+    "options": [
+     "Den tänder bränslet",
+     "Den kyler motorn",
+     "Den bromsar planet",
+     "Den trycker ihop luften"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "En del av luften går in i kompressorn, som trycker ihop den.",
+    "explanationJa": "コンプレッサーは{空気|くうき}を{圧縮|あっしゅく}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad för slags bränsle använder jetplan?",
+    "options": [
+     "Vanlig bensin",
+     "Ett slags fotogen",
+     "Diesel",
+     "El från batterier"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Flygbränsle är ett slags fotogen.",
+    "explanationJa": "ジェット{機|き}の{燃料|ねんりょう}は{灯油|とうゆ}の{一種|いっしゅ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför får ingen stå bakom motorerna när de går?",
+    "options": [
+     "Det är för mörkt där",
+     "Avgasstrålen är het och stark",
+     "Fläkten sitter där",
+     "Det är för kallt där"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Längst bak blåser gaserna ut som en het avgasstråle. … – Därför får ingen stå bakom motorerna när de går, säger Ingrid.",
+    "explanationJa": "{後|うし}ろからは{熱|あつ}くて{強|つよ}い{噴流|ふんりゅう}が{出|で}るからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Det var tyst när de provkörde motorn.",
+    "correct": false,
+    "explanationSv": "Kenji har hörselskydd, men det dånar ändå.",
+    "explanationJa": "{耳|みみ}あてをしていても、ごうごうと{大|おお}きな{音|おと}がしました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Stridsflygplanet kan flyga fortare än ljudet.",
+    "correct": true,
+    "explanationSv": "Det kan flyga i överljudsfart.",
+    "explanationJa": "{超音速|ちょうおんそく}で{飛|と}べるので、{音|おと}より{速|はや}く{飛|と}べます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I en jetmotor trycks luften ihop i en kompressor, blandas med bränsle som brinner i en brännkammare och driver en turbin innan gaserna strömmar ut bakåt.",
+    "source": "Nationalencyklopedin, uppslaget ”jetmotor”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Bränslet till jetmotorer är ett slags fotogen.",
+    "source": "Nationalencyklopedin, uppslaget ”jetbränsle”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Ljudets hastighet i luft nära marken är ungefär 340 meter per sekund, drygt 1 200 kilometer i timmen.",
+    "source": "Nationalencyklopedin, uppslaget ”ljudhastighet”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "I dag flyger inga passagerarplan i överljudsfart; Concorde, det senaste, slutade flyga 2003.",
+    "source": "Nationalencyklopedin, uppslaget ”Concorde”",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Det svenska stridsflygplanet JAS 39 Gripen har en motor med efterbrännare och kan flyga i överljudsfart.",
+    "source": "Försvarsmakten, ”JAS 39 Gripen”",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Flygvapenmuseum ligger i Linköping.",
+    "source": "Statens försvarshistoriska museer",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om jetmotorer, flygbuller och flygets utsläpp.",
+  "discussionPoints": [
+   "Bor du eller har du bott nära en flygplats? Störde bullret dig?",
+   "Vad tycker du om flygets utsläpp? Flyger du mindre i dag än förut?",
+   "Skulle du vilja flyga i överljudsfart om det gick? Varför?",
+   "Vilka andra maskiner känner du till som har en turbin eller en fläkt?"
+  ]
+ },
+ "standard": 2
+}

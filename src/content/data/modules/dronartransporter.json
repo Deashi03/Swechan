@@ -1,0 +1,194 @@
+{
+ "id": "m.dronartransporter",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Drönartransporter",
+ "titleJa": "ドローン{輸送|ゆそう}",
+ "descriptionSv": "Du lär dig tala om hur drönare kan frakta paket, medicin och prover, vilka regler som gäller när man flyger dem och hur en leverans går till, från start till mottagare.",
+ "descriptionJa": "ドローンが{荷物|にもつ}や{薬|くすり}、{検体|けんたい}をどのように{運|はこ}べるのか、ドローンを{飛|と}ばすときにどんなルールがあるのか、そして{出発|しゅっぱつ}から{受|う}け{取|と}りまで{配送|はいそう}がどのように{行|おこな}われるのかについて{話|はな}せるようになります。",
+ "categoryId": "R07-A06-T06",
+ "tags": [
+  "fordon",
+  "teknik",
+  "flyg"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.vatgasfordon"
+ ],
+ "related": [],
+ "recommendedOrder": 4265,
+ "words": [
+  {
+   "senseId": "s.drönare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.obemannad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.drönarpilot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.inom-synhåll.1",
+   "active": true
+  },
+  {
+   "senseId": "s.batteritid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftrum.1",
+   "active": false
+  },
+  {
+   "senseId": "s.flygförbudszon.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tillstånd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.paket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.drönarleverans.1",
+   "active": true
+  },
+  {
+   "senseId": "s.leverera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sväva.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fira-ner.1",
+   "active": true
+  },
+  {
+   "senseId": "s.landningsplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjärtstartare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.blodprov.1",
+   "active": true
+  },
+  {
+   "senseId": "s.glesbygd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skärgård.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Paket från luften",
+  "paragraphs": [
+   "Ingrid bor på en ö i skärgården. Förr tog det lång tid att få medicin och paket. Nu testar regionen drönarleveranser till öarna och till byar i glesbygden.",
+   "Drönaren är obemannad, men en drönarpilot följer den hela tiden. Piloten Omar står vid hamnen. – Enligt reglerna ska en drönare oftast vara inom synhåll, men vi har ett särskilt tillstånd att flyga längre, säger han.",
+   "Innan drönaren startar kontrollerar Omar vädret, batteritiden och kartan. Nära flygplatsen finns en flygförbudszon, och där får drönaren inte flyga. Den håller sig också lågt, så att den inte stör andra i luftrummet.",
+   "Över Ingrids hus stannar drönaren och svävar i luften. Den firar ner paketet i ett rep, och Ingrid tar emot det. På tio minuter har drönaren levererat hennes medicin.",
+   "Drönarna används också i vården. De flyger blodprov från vårdcentralen till sjukhuset och kan snabbt komma med en hjärtstartare om någons hjärta slutar slå. På sjukhusets tak finns en landningsplats."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var bor Ingrid?",
+    "options": [
+     "I centrum av en stor stad",
+     "Nära flygplatsen",
+     "På en ö i skärgården",
+     "Vid sjukhuset"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Ingrid bor på en ö i skärgården.",
+    "explanationJa": "{群島|ぐんとう}の{島|しま}に{住|す}んでいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vem följer drönaren när den flyger?",
+    "options": [
+     "Ingrid",
+     "En drönarpilot",
+     "En läkare",
+     "Ingen"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Drönaren är obemannad, men en drönarpilot följer den hela tiden.",
+    "explanationJa": "ドローン{操縦士|そうじゅうし}がずっと{見|み}ています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför får drönaren inte flyga nära flygplatsen?",
+    "options": [
+     "Där är det för kallt",
+     "Där finns en flygförbudszon",
+     "Batteriet räcker inte",
+     "Där bor inga människor"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Nära flygplatsen finns en flygförbudszon, och där får drönaren inte flyga.",
+    "explanationJa": "{空港|くうこう}の{近|ちか}くには{飛行禁止区域|ひこうきんしくいき}があるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Drönaren landar i Ingrids trädgård.",
+    "correct": false,
+    "explanationSv": "Den firar ner paketet i ett rep, och Ingrid tar emot det.",
+    "explanationJa": "ドローンは{着陸|ちゃくりく}せず、ロープで{荷物|にもつ}をつり{下|お}ろします。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Drönarna kan hjälpa till när det är bråttom i vården.",
+    "correct": true,
+    "explanationSv": "De flyger blodprov från vårdcentralen till sjukhuset och kan snabbt komma med en hjärtstartare om någons hjärta slutar slå.",
+    "explanationJa": "{急|いそ}ぎのとき、ドローンが{医療|いりょう}の{役|やく}に{立|た}ちます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Enligt EU:s regler ska en drönare i den öppna kategorin flygas inom synhåll för piloten; för att flyga längre krävs särskilt tillstånd.",
+    "source": "Transportstyrelsen; förordning (EU) 2019/947",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Det är förbjudet att flyga drönare i vissa områden, till exempel nära flygplatser, utan särskilt tillstånd.",
+    "source": "Transportstyrelsen; LFV",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om drönare och om att leverera saker genom luften.",
+  "discussionPoints": [
+   "Skulle du vilja få dina paket med drönare?",
+   "Vilka problem kan det bli om många drönare flyger över staden?",
+   "Var tror du att drönare gör mest nytta?",
+   "Har du själv flugit en drönare?"
+  ]
+ },
+ "standard": 2
+}

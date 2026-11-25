@@ -1,0 +1,176 @@
+{
+ "id": "m.propellrar-och-roder",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Propellrar och roder",
+ "titleJa": "プロペラと{舵|かじ}",
+ "descriptionSv": "Du lär dig hur ett fartyg drivs framåt och styrs, vad som händer på bryggan när det ska svänga eller undvika en annan båt och hur stora fartyg tar sig in i en trång hamn med extra hjälp.",
+ "descriptionJa": "{船|ふね}がどのように{前|まえ}に{進|すす}み、どのように{操縦|そうじゅう}されるのか、{向|む}きを{変|か}えたりほかの{船|ふね}をよけたりするときにブリッジで{何|なに}が{起|お}きるのか、そして{大|おお}きな{船|ふね}が{助|たす}けを{借|か}りて{狭|せま}い{港|みなと}に{入|はい}る{方法|ほうほう}を{学|まな}びます。",
+ "categoryId": "R07-A06-T05",
+ "tags": [
+  "sjöfart",
+  "fordon",
+  "teknik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.fartygsmotorer"
+ ],
+ "related": [],
+ "recommendedOrder": 4253,
+ "words": [
+  {
+   "senseId": "s.propeller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.propelleraxel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.roder.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rorsman.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gira.1",
+   "active": true
+  },
+  {
+   "senseId": "s.manövrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bogpropeller.1",
+   "active": true
+  },
+  {
+   "senseId": "s.backa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kölvatten.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väja.1",
+   "active": true
+  },
+  {
+   "senseId": "s.driva.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ström.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bogserbåt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bogsera.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vid ratten på färjan",
+  "paragraphs": [
+   "Sara har fått jobb som rorsman på en färja. Hon står vid ratten på bryggan och styr efter kaptenens order.",
+   "Under aktern sitter två stora propellrar. De drivs av motorerna via långa propelleraxlar. Bakom varje propeller sitter ett roder. När Sara vrider ratten vrids rodren, och fartyget girar.",
+   "Ute till havs är det lätt. Bakom färjan syns ett långt, vitt kölvatten. Men Sara måste hela tiden hålla utkik. Om två fartyg möts rakt mot varandra ska båda gira åt styrbord, och i trånga farleder måste små båtar väja för den stora färjan.",
+   "Svårast är det i hamnen. Där går färjan långsamt, och då hjälper rodren inte så mycket. I stället använder kaptenen bogpropellern, som kan skjuta fören åt sidan. Det krävs stor skicklighet för att manövrera ett så stort fartyg. Ibland måste färjan backa in mot kajen.",
+   "En blåsig dag stannade motorerna. Färjan började driva mot land med vinden och strömmen. Som tur var kom en bogserbåt snabbt och kunde bogsera färjan in i hamnen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Sara på bryggan?",
+    "options": [
+     "Hon lagar motorerna",
+     "Hon säljer biljetter",
+     "Hon lagar mat åt passagerarna",
+     "Hon styr fartyget vid ratten"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon står vid ratten på bryggan och styr efter kaptenens order.",
+    "explanationJa": "サラはブリッジで{舵輪|だりん}のところに{立|た}ち、{船長|せんちょう}の{指示|しじ}どおりに{操縦|そうじゅう}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad sitter bakom varje propeller?",
+    "options": [
+     "En bogpropeller",
+     "En mast",
+     "En landgång",
+     "Ett roder"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Bakom varje propeller sitter ett roder.",
+    "explanationJa": "それぞれのプロペラの{後|うし}ろには{舵|かじ}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför använder kaptenen bogpropellern i hamnen?",
+    "options": [
+     "Propellrarna är trasiga",
+     "Rodren hjälper inte så mycket när färjan går långsamt",
+     "Det är förbjudet att använda rodren",
+     "Bogpropellern gör färjan snabbare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Där går färjan långsamt, och då hjälper rodren inte så mycket.",
+    "explanationJa": "ゆっくり{進|すす}んでいるときは、{舵|かじ}があまり{効|き}かないからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Färjan drev mot land när motorerna hade stannat.",
+    "correct": true,
+    "explanationSv": "Färjan började driva mot land med vinden och strömmen.",
+    "explanationJa": "エンジンが{止|と}まったあと、フェリーは{風|かぜ}と{潮|しお}の{流|なが}れで{陸|りく}のほうへ{流|なが}され{始|はじ}めました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Den blåsiga dagen kom färjan in i hamnen med egna motorer.",
+    "correct": false,
+    "explanationSv": "Som tur var kom en bogserbåt snabbt och kunde bogsera färjan in i hamnen.",
+    "explanationJa": "タグボートがフェリーを{港|みなと}まで{曳航|えいこう}しました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Om två maskindrivna fartyg möts rakt mot varandra ska båda gira åt styrbord. Små båtar får inte hindra stora fartyg som bara kan gå i en trång farled.",
+    "source": "Internationella sjövägsreglerna (COLREG), regel 9 och 14; Transportstyrelsen",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att styra fordon och båtar.",
+  "discussionPoints": [
+   "Har du styrt en båt, eller vill du prova någon gång?",
+   "Vad tror du är svårast med att manövrera ett stort fartyg?",
+   "Har du sett en bogserbåt arbeta i en hamn? Vad gjorde den?",
+   "I vilka situationer måste man väja i trafiken på land?"
+  ]
+ },
+ "standard": 2
+}

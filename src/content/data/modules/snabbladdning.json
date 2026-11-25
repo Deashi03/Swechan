@@ -1,0 +1,180 @@
+{
+ "id": "m.snabbladdning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Snabbladdning",
+ "titleJa": "{急速充電|きゅうそくじゅうでん}",
+ "descriptionSv": "Hur man laddar en elbil snabbt på en lång resa: skillnaden mellan att ladda hemma och vid vägen, hur man hittar, startar och betalar laddningen, och varför laddningen går långsammare när batteriet blir fullt.",
+ "descriptionJa": "{長距離|ちょうきょり}の{旅行|りょこう}で{電気自動車|でんきじどうしゃ}を{速|はや}く{充電|じゅうでん}する{方法|ほうほう}：{家|いえ}での{充電|じゅうでん}と{道路|どうろ}{沿|ぞ}いでの{充電|じゅうでん}の{違|ちが}い、{充電|じゅうでん}の{探|さが}し{方|かた}・{始|はじ}め{方|かた}・{払|はら}い{方|かた}、そしてバッテリーが{満|み}たされてくると{充電|じゅうでん}が{遅|おそ}くなる{理由|りゆう}を{学|まな}びます。",
+ "categoryId": "R07-A06-T02",
+ "tags": [
+  "elbilar",
+  "laddning",
+  "resor"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.laddkontakter"
+ ],
+ "related": [],
+ "recommendedOrder": 4225,
+ "words": [
+  {
+   "senseId": "s.snabbladda.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snabbladdare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.snabbladdning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.normalladdning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.likström.1",
+   "active": false
+  },
+  {
+   "senseId": "s.växelström.1",
+   "active": false
+  },
+  {
+   "senseId": "s.laddstation.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddplats.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kö.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddeffekt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddkurva.1",
+   "active": false
+  },
+  {
+   "senseId": "s.laddtid.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddapp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddkort.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddinfrastruktur.1",
+   "active": false
+  },
+  {
+   "senseId": "s.laddstolpe.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Med elbil till Göteborg",
+  "paragraphs": [
+   "Saki och Oskar ska köra från Stockholm till Göteborg för att hälsa på Oskars föräldrar. Det är nästan 50 mil. Hemma laddar de bilen med normalladdning över natten, så batteriet är fullt när de åker.",
+   "Efter tre timmar är laddnivån 20 procent. De stannar vid en laddstation vid motorvägen. Där finns åtta snabbladdare under ett stort tak. Det är första gången Saki provar snabbladdning. Snabbladdarna ger likström direkt till batteriet. Hemma laddar bilen med växelström, och det går mycket långsammare.",
+   "Alla laddplatser är upptagna, så det blir kö. Efter fem minuter blir en plats ledig. Oskar öppnar laddappen i mobilen och startar laddningen. Saki har också ett laddkort i plånboken, om appen inte skulle fungera.",
+   "Laddaren klarar 300 kilowatt, men bilens högsta laddeffekt är 150. På skärmen ser de laddkurvan: först går det mycket snabbt, men efter 80 procent går det långsammare. – Det är bäst att snabbladda till 80 procent och sedan köra vidare, säger Oskar. Laddtiden blir då bara 25 minuter, och de hinner dricka kaffe.",
+   "I bilen lyssnar de på nyheterna. En politiker säger att laddinfrastrukturen i Sverige måste bli bättre, särskilt i norr, där avståndet mellan laddstolparna kan vara långt. Saki tänker att resan gick bra, men att kön vid laddstationen var lite irriterande."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur laddar Saki och Oskar bilen hemma?",
+    "options": [
+     "Med snabbladdning varje morgon",
+     "Med normalladdning över natten",
+     "På jobbet",
+     "De laddar aldrig hemma"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hemma laddar de bilen med normalladdning över natten, så batteriet är fullt när de åker.",
+    "explanationJa": "{家|いえ}では{夜|よる}の{間|あいだ}に{普通充電|ふつうじゅうでん}をしています。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför blir det kö vid laddstationen?",
+    "options": [
+     "Snabbladdarna är trasiga",
+     "Oskar har glömt laddkortet",
+     "Det är stängt",
+     "Alla laddplatser är upptagna"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Alla laddplatser är upptagna, så det blir kö.",
+    "explanationJa": "{充電|じゅうでん}スペースが{全部|ぜんぶ}ふさがっているからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Varför laddar bilen bara med 150 kilowatt?",
+    "options": [
+     "Laddaren är gammal",
+     "Batteriet är fullt",
+     "Det är för kallt",
+     "Bilens högsta laddeffekt är 150"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Laddaren klarar 300 kilowatt, men bilens högsta laddeffekt är 150.",
+    "explanationJa": "{車|くるま}の{最大充電出力|さいだいじゅうでんしゅつりょく}が１５０キロワットだからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Laddningen går lika snabbt hela tiden.",
+    "correct": false,
+    "explanationSv": "På skärmen ser de laddkurvan: först går det mycket snabbt, men efter 80 procent går det långsammare.",
+    "explanationJa": "８０パーセントを{過|す}ぎると{遅|おそ}くなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Det kan vara svårare att hitta en laddare i norra Sverige.",
+    "correct": true,
+    "explanationSv": "En politiker säger att laddinfrastrukturen i Sverige måste bli bättre, särskilt i norr, där avståndet mellan laddstolparna kan vara långt.",
+    "explanationJa": "{北部|ほくぶ}では{充電器|じゅうでんき}の{間|あいだ}の{距離|きょり}が{長|なが}いことがあります。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Snabbladdare ger likström direkt till batteriet, medan normalladdning sker med växelström; laddeffekten sjunker oftast när batteriet närmar sig fullt.",
+    "source": "Energimyndigheten, Ladda elbilen",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om långa bilresor och om att ladda på vägen.",
+  "discussionPoints": [
+   "Vad gör du medan du väntar, till exempel vid en laddstation eller på en flygplats?",
+   "Tycker du att det är irriterande att stå i kö? När händer det dig?",
+   "Vilka appar använder du när du reser?",
+   "Finns det många laddstolpar där du bor?"
+  ]
+ },
+ "standard": 2
+}

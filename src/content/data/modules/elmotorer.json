@@ -1,0 +1,196 @@
+{
+ "id": "m.elmotorer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Elmotorer",
+ "titleJa": "{電動|でんどう}モーター",
+ "descriptionSv": "Hur elbilens motor fungerar och hur man talar om den: vad som snurrar och vad som sitter still i en elmotor, hur man anger en bils effekt, och vad olika sorters drift betyder när man provkör och jämför elbilar.",
+ "descriptionJa": "{電気自動車|でんきじどうしゃ}のモーターのしくみと、その{話|はな}し{方|かた}：{電動|でんどう}モーターの{中|なか}で{何|なに}が{回|まわ}り{何|なに}が{止|と}まっているか、{車|くるま}の{出力|しゅつりょく}をどう{表|あらわ}すか、そして{電気自動車|でんきじどうしゃ}に{試乗|しじょう}したり{比|くら}べたりするときに、いろいろな{駆動方式|くどうほうしき}が{何|なに}を{意味|いみ}するかを{学|まな}びます。",
+ "categoryId": "R07-A06-T02",
+ "tags": [
+  "elbilar",
+  "fordon",
+  "teknik"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.felsoka-bilens-funktioner"
+ ],
+ "related": [],
+ "recommendedOrder": 4221,
+ "words": [
+  {
+   "senseId": "s.elbil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.elmotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.provköra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.accelerera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vridmoment.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kilowatt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hästkraft.1",
+   "active": false
+  },
+  {
+   "senseId": "s.verkningsgrad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.magnetfält.1",
+   "active": false
+  },
+  {
+   "senseId": "s.elektromagnet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.permanentmagnet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rotor.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spole.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stator.1",
+   "active": true
+  },
+  {
+   "senseId": "s.växelriktare.1",
+   "active": false
+  },
+  {
+   "senseId": "s.drivlina.1",
+   "active": false
+  },
+  {
+   "senseId": "s.enväxlad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.framhjulsdrift.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bakhjulsdrift.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fyrhjulsdrift.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kenji provkör en elbil",
+  "paragraphs": [
+   "Kenji bor i Västerås och har kört samma bensinbil i tolv år. Nu vill han byta till en elbil. En lördag går han till en bilaffär för att provköra en ny modell.",
+   "– Det första man märker är hur tyst det är, säger säljaren Karin. Kenji trycker på gaspedalen, och bilen accelererar snabbt utan ett ljud. – Elmotorn ger fullt vridmoment direkt, förklarar Karin. Därför känns bilen så stark.",
+   "Kenji frågar hur stark motorn är. – Den har 150 kilowatt, säger Karin. Det är ungefär 200 hästkrafter, och det räcker gott för en familj. Hon berättar också att elmotorn har hög verkningsgrad: nästan all energi från batteriet blir rörelse, och bara lite blir värme.",
+   "I bilhallen står en motor som man kan titta på. Karin visar rotorn i mitten, med starka permanentmagneter. Runt den sitter statorn med spolar av koppar. Strömmen gör spolarna till elektromagneter, och deras magnetfält får rotorn att snurra. En växelriktare gör om likströmmen från batteriet till växelström för motorn.",
+   "– Drivlinan är mycket enklare än i din gamla bil, säger Karin. Bilen är enväxlad, så det finns ingen vanlig växellåda. Den billigaste modellen har framhjulsdrift, en dyrare har bakhjulsdrift, och den dyraste har fyrhjulsdrift med två motorer, en fram och en bak. Kenji bor på landet och tänker på vintern. Han vill ha fyrhjulsdrift."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför går Kenji till bilaffären?",
+    "options": [
+     "Han vill provköra en elbil",
+     "Han ska sälja sin gamla bil",
+     "Han ska börja jobba där",
+     "Hans bil har gått sönder"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En lördag går han till en bilaffär för att provköra en ny modell.",
+    "explanationJa": "{新|あたら}しいモデルに{試乗|しじょう}するためです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder det att elmotorn har hög verkningsgrad?",
+    "options": [
+     "Motorn är mycket tung",
+     "Nästan all energi blir rörelse",
+     "Bilen kan bara köra långsamt",
+     "Motorn blir mycket varm"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Hon berättar också att elmotorn har hög verkningsgrad: nästan all energi från batteriet blir rörelse, och bara lite blir värme.",
+    "explanationJa": "バッテリーのエネルギーのほとんどが{動|うご}きに{変|か}わるという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vilken del av motorn snurrar?",
+    "options": [
+     "Statorn",
+     "Växelriktaren",
+     "Rotorn",
+     "Batteriet"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Strömmen gör spolarna till elektromagneter, och deras magnetfält får rotorn att snurra.",
+    "explanationJa": "{回|まわ}るのはローターです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Kenjis nya bil har en vanlig växellåda med många växlar.",
+    "correct": false,
+    "explanationSv": "Bilen är enväxlad, så det finns ingen vanlig växellåda.",
+    "explanationJa": "ギアは{一|ひと}つだけで、{普通|ふつう}のギアボックスはありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji vill ha den dyraste modellen.",
+    "correct": true,
+    "explanationSv": "Han vill ha fyrhjulsdrift.",
+    "explanationJa": "{四輪駆動|よんりんくどう}があるのは、いちばん{高|たか}いモデルだけです。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En elmotor gör om det mesta av den elektriska energin till rörelse (hög verkningsgrad), och i en elmotor med permanentmagneter sitter magneterna i rotorn medan statorns spolar gör magnetfältet.",
+    "source": "Nationalencyklopedin, uppslagsordet elmotor",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om elbilar och om hur det känns att köra dem.",
+  "discussionPoints": [
+   "Har du provkört en elbil? Hur kändes det?",
+   "Är det viktigt för dig hur stark motorn i en bil är?",
+   "Vilket tycker du är bäst: framhjulsdrift, bakhjulsdrift eller fyrhjulsdrift? Varför?",
+   "Vad är skillnaden mellan att köra en elbil och en bensinbil?"
+  ]
+ },
+ "standard": 2
+}

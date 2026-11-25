@@ -1036,6 +1036,7 @@
        "ja": "{鉄|てつ}は{空気|くうき}の{中|なか}の{酸素|さんそ}と{反応|はんのう}します。"
       }
      ],
+     "labelSv": "kemi",
      "usageNote": {
       "sv": "Om människor: reagera på något = göra eller säga något när något händer.",
       "ja": "{人|ひと}について：reagera på ～ ＝ ～に{反応|はんのう}する（{何|なに}かが{起|お}きたときに、{何|なに}かをしたり{言|い}ったりする）。"
@@ -1058,7 +1059,8 @@
      "explanation": {
       "sv": "I kemi betyder reagera att ämnen ändras när de möts och blir till nya ämnen, till exempel när järn rostar. I vardagen betyder reagera att man gör eller känner något som svar på något annat.",
       "ja": "{化学|かがく}で「reagera」は、{物質|ぶっしつ}が{出会|であ}って{変化|へんか}し、{鉄|てつ}がさびるように{新|あたら}しい{物質|ぶっしつ}になることです。ふだんは、{何|なに}かに{対|たい}して{何|なに}かをしたり{感|かん}じたりするという{意味|いみ}です。"
-     }
+     },
+     "order": 3
     },
     {
      "id": "s.reagera.2",
@@ -1090,9 +1092,42 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.reagera.3",
+     "ja": "（{状況|じょうきょう}に）{反応|はんのう}する、すぐに{対応|たいおう}する",
+     "defSv": "Göra något direkt när något händer, till exempel stanna när ett barn springer ut på vägen.",
+     "defJa": "{何|なに}かが{起|お}きたとき、すぐに{何|なに}かをする。たとえば、{子|こ}どもが{道|みち}に{飛|と}び{出|だ}したときに{止|と}まる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Bussen reagerade snabbt och stannade.",
+       "ja": "バスはすばやく{反応|はんのう}して{止|と}まりました。"
+      }
+     ],
+     "labelSv": "göra något direkt",
+     "frame": {
+      "subject": "Föraren"
+     },
+     "tags": [
+      "fordon",
+      "teknik",
+      "framtid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23",
+    "coreSense": "s.reagera.3"
+   }
   },
   {
    "id": "e.reaktion",

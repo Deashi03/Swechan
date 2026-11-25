@@ -1,0 +1,369 @@
+{
+ "entries": [
+  {
+   "id": "e.fordon",
+   "lemma": "fordon",
+   "pos": "noun",
+   "level": "B1",
+   "inflection": {
+    "kind": "noun",
+    "gender": "ett",
+    "indefSg": "fordon",
+    "defSg": "fordonet",
+    "indefPl": "fordon",
+    "defPl": "fordonen"
+   },
+   "senses": [
+    {
+     "id": "s.fordon.1",
+     "ja": "{乗|の}り{物|もの}、{車両|しゃりょう}",
+     "defSv": "Något som man kör eller åker i på väg eller spår, till exempel en bil, en buss, en lastbil eller ett tåg.",
+     "defJa": "{道路|どうろ}や{線路|せんろ}を{走|はし}って、{人|ひと}や{物|もの}を{運|はこ}ぶもの。たとえば{車|くるま}、バス、トラック、{電車|でんしゃ}など。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det står många fordon i kö vid bron.",
+       "ja": "{橋|はし}のところで、たくさんの{車両|しゃりょう}が{渋滞|じゅうたい}しています。"
+      }
+     ],
+     "tags": [
+      "fordon",
+      "teknik",
+      "framtid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
+  },
+  {
+   "id": "e.lidar",
+   "lemma": "lidar",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "lidar",
+    "defSg": "lidarn",
+    "indefPl": "lidarer",
+    "defPl": "lidarerna"
+   },
+   "senses": [
+    {
+     "id": "s.lidar.1",
+     "ja": "ライダー（レーザーで{周|まわ}りを{測|はか}るセンサー）",
+     "defSv": "En sensor som skickar ut laserljus och mäter hur lång tid det tar innan ljuset kommer tillbaka, så att den kan göra en bild av allt runt fordonet.",
+     "defJa": "レーザーの{光|ひかり}を{出|だ}して、{光|ひかり}が{戻|もど}ってくるまでの{時間|じかん}を{測|はか}り、{車両|しゃりょう}のまわりにあるものの{像|ぞう}を{作|つく}るセンサー。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Lidarn sitter på taket och snurrar hela tiden.",
+       "ja": "ライダーは{屋根|やね}の{上|うえ}についていて、ずっと{回|まわ}っています。"
+      },
+      {
+       "sv": "Lidarer fungerar sämre i tät dimma och snöfall.",
+       "ja": "ライダーは、{濃|こ}い{霧|きり}や{雪|ゆき}の{中|なか}ではうまく{働|はたら}きにくくなります。"
+      }
+     ],
+     "collocations": [
+      "en lidar på taket",
+      "lidar och radar"
+     ],
+     "explanation": {
+      "sv": "En lidar fungerar ungefär som en radar, men den använder laserljus i stället för radiovågor. Den ger en mycket noggrann bild av formen på bilar, cyklar och människor. Radarn ser längre och klarar regn och dimma bättre, och därför har många självkörande fordon båda.",
+      "ja": "ライダーはレーダーと{似|に}たしくみですが、{電波|でんぱ}の{代|か}わりにレーザーの{光|ひかり}を{使|つか}います。{車|くるま}や{自転車|じてんしゃ}、{人|ひと}の{形|かたち}をとても{正確|せいかく}にとらえることができます。レーダーのほうが{遠|とお}くまで{見|み}え、{雨|あめ}や{霧|きり}にも{強|つよ}いので、{多|おお}くの{自動運転車|じどううんてんしゃ}は{両方|りょうほう}をつけています。"
+     },
+     "tags": [
+      "fordon",
+      "teknik",
+      "framtid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
+  },
+  {
+   "id": "e.automationsnivå",
+   "lemma": "automationsnivå",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "automationsnivå",
+    "defSg": "automationsnivån",
+    "indefPl": "automationsnivåer",
+    "defPl": "automationsnivåerna"
+   },
+   "senses": [
+    {
+     "id": "s.automationsnivå.1",
+     "ja": "{自動化|じどうか}レベル、{自動運転|じどううんてん}レベル",
+     "defSv": "Ett tal från 0 till 5 som visar hur mycket av arbetet med att köra som fordonet klarar själv och hur mycket föraren måste göra.",
+     "defJa": "{運転|うんてん}のうちどれだけを{車両|しゃりょう}が{自分|じぶん}でこなし、どれだけを{運転者|うんてんしゃ}がしなければならないかを{示|しめ}す、0から5までの{段階|だんかい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Bussen kör på automationsnivå 4 inne i området.",
+       "ja": "このバスは、{地区|ちく}の{中|なか}では{自動運転|じどううんてん}レベル4で{走|はし}ります。"
+      },
+      {
+       "sv": "De flesta nya bilar har en låg automationsnivå: föraren måste hela tiden hålla koll på vägen.",
+       "ja": "{新|あたら}しい{車|くるま}のほとんどは{自動化|じどうか}レベルが{低|ひく}く、{運転者|うんてんしゃ}はいつも{道路|どうろ}に{注意|ちゅうい}していなければなりません。"
+      }
+     ],
+     "collocations": [
+      "automationsnivå 2",
+      "den högsta automationsnivån"
+     ],
+     "explanation": {
+      "sv": "Automationsnivåerna går från 0, där föraren gör allt, till 5, där fordonet kan köra överallt utan människa. På nivå 2 hjälper bilen till att styra och bromsa, men föraren har ansvaret. Först på nivå 4 och 5 kan man tala om ett självkörande fordon i vardaglig mening.",
+      "ja": "{自動化|じどうか}レベルは、{運転者|うんてんしゃ}がすべてを{行|おこな}う0から、{人|ひと}がいなくてもどこでも{走|はし}れる5まであります。レベル2では{車|くるま}がハンドル{操作|そうさ}やブレーキを{手伝|てつだ}いますが、{責任|せきにん}は{運転者|うんてんしゃ}にあります。ふつうの{意味|いみ}で「{自動運転車|じどううんてんしゃ}」と{言|い}えるのは、レベル4と5からです。"
+     },
+     "tags": [
+      "fordon",
+      "teknik",
+      "framtid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
+  },
+  {
+   "id": "e.säkerhetsförare",
+   "lemma": "säkerhetsförare",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "säkerhetsförare",
+    "defSg": "säkerhetsföraren",
+    "indefPl": "säkerhetsförare",
+    "defPl": "säkerhetsförarna"
+   },
+   "senses": [
+    {
+     "id": "s.säkerhetsförare.1",
+     "ja": "{保安|ほあん}{運転手|うんてんしゅ}",
+     "defSv": "En person som sitter i ett självkörande fordon under ett försök och kan bromsa eller styra om något går fel.",
+     "defJa": "{自動運転|じどううんてん}の{実験|じっけん}で{車両|しゃりょう}に{乗|の}り、{何|なに}か{問題|もんだい}が{起|お}きたらブレーキをかけたりハンドルを{操作|そうさ}したりできる{人|ひと}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Säkerhetsföraren sitter längst fram och håller koll på vägen.",
+       "ja": "{保安|ほあん}{運転手|うんてんしゅ}はいちばん{前|まえ}に{座|すわ}って、{道路|どうろ}の{様子|ようす}を{見|み}ています。"
+      },
+      {
+       "sv": "Om två år ska bussarna köra helt utan säkerhetsförare.",
+       "ja": "2{年後|ねんご}には、バスは{保安|ほあん}{運転手|うんてんしゅ}なしで{走|はし}る{予定|よてい}です。"
+      }
+     ],
+     "collocations": [
+      "en säkerhetsförare ombord",
+      "utan säkerhetsförare"
+     ],
+     "explanation": {
+      "sv": "Säkerhetsföraren kör inte själv, men kan ta över direkt. Under ett försök med självkörande bussar sitter det nästan alltid en säkerhetsförare i bussen. Det är skillnaden mot en vanlig förare, som kör hela tiden.",
+      "ja": "{保安|ほあん}{運転手|うんてんしゅ}は{自分|じぶん}で{運転|うんてん}するのではなく、いつでもすぐに{運転|うんてん}を{代|か}われるように{準備|じゅんび}しています。{自動運転|じどううんてん}バスの{実験|じっけん}では、ほとんどいつも{保安|ほあん}{運転手|うんてんしゅ}が{乗|の}っています。ずっと{運転|うんてん}しているふつうの{運転手|うんてんしゅ}とはそこが{違|ちが}います。"
+     },
+     "tags": [
+      "fordon",
+      "teknik",
+      "framtid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
+  },
+  {
+   "id": "e.robottaxi",
+   "lemma": "robottaxi",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "robottaxi",
+    "defSg": "robottaxin",
+    "indefPl": null,
+    "defPl": null
+   },
+   "senses": [
+    {
+     "id": "s.robottaxi.1",
+     "ja": "ロボタクシー、{無人|むじん}タクシー",
+     "defSv": "En taxi som kör utan förare och som man beställer med en app.",
+     "defJa": "{運転手|うんてんしゅ}なしで{走|はし}り、アプリで{呼|よ}ぶタクシー。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I några städer i USA och Kina kan man redan åka robottaxi.",
+       "ja": "アメリカや{中国|ちゅうごく}のいくつかの{都市|とし}では、もうロボタクシーに{乗|の}ることができます。"
+      },
+      {
+       "sv": "Robottaxin stannade vid trottoaren, och dörren öppnades av sig själv.",
+       "ja": "ロボタクシーは{歩道|ほどう}の{脇|わき}に{止|と}まり、ドアが{自動|じどう}で{開|ひら}きました。"
+      }
+     ],
+     "collocations": [
+      "åka robottaxi",
+      "beställa en robottaxi"
+     ],
+     "explanation": {
+      "sv": "En robottaxi fungerar som en vanlig taxi: man säger vart man vill åka och betalar för resan. Skillnaden är att ingen människa sitter vid ratten. Ordet används mest i nyheter om försök i stora städer.",
+      "ja": "ロボタクシーはふつうのタクシーと{同|おな}じように{使|つか}います。{行|い}き{先|さき}を{伝|つた}えて、{料金|りょうきん}を{払|はら}います。{違|ちが}いは、ハンドルの{前|まえ}に{誰|だれ}も{座|すわ}っていないことです。この{言葉|ことば}は、{大都市|だいとし}での{実験|じっけん}についてのニュースでよく{使|つか}われます。"
+     },
+     "tags": [
+      "fordon",
+      "teknik",
+      "framtid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
+  },
+  {
+   "id": "e.fjärrövervaka",
+   "lemma": "fjärrövervaka",
+   "pos": "verb",
+   "level": "B2",
+   "inflection": {
+    "kind": "verb",
+    "infinitive": "fjärrövervaka",
+    "present": "fjärrövervakar",
+    "past": "fjärrövervakade",
+    "supine": "fjärrövervakat",
+    "imperative": "fjärrövervaka",
+    "group": "1",
+    "pastParticiple": "fjärrövervakad"
+   },
+   "senses": [
+    {
+     "id": "s.fjärrövervaka.1",
+     "ja": "{遠隔監視|えんかくかんし}する",
+     "defSv": "Följa och kontrollera något på avstånd, till exempel från ett kontrollrum med skärmar.",
+     "defJa": "{離|はな}れた{場所|ばしょ}から、たとえば{画面|がめん}のある{管制室|かんせいしつ}から、{何|なに}かの{様子|ようす}を{見|み}て{確|たし}かめる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Från kontrollrummet fjärrövervakar Sara tre bussar samtidigt.",
+       "ja": "サラは{管制室|かんせいしつ}から、3{台|だい}のバスを{同時|どうじ}に{遠隔監視|えんかくかんし}しています。"
+      },
+      {
+       "sv": "Bussarna fjärrövervakas från ett kontrollrum i centrum.",
+       "ja": "バスは{町|まち}の{中心|ちゅうしん}にある{管制室|かんせいしつ}から{遠隔監視|えんかくかんし}されています。"
+      }
+     ],
+     "collocations": [
+      "fjärrövervaka fordon",
+      "fjärrövervakas från ett kontrollrum"
+     ],
+     "explanation": {
+      "sv": "Den som fjärrövervakar ett fordon sitter inte i det, utan ser bilder och data från det på en skärm. Om bussen stannar framför ett hinder kan personalen i kontrollrummet hjälpa den vidare. Fjärrstyra betyder något annat: då styr man själv fordonet på avstånd.",
+      "ja": "{車両|しゃりょう}を{遠隔監視|えんかくかんし}する{人|ひと}は、その{車両|しゃりょう}に{乗|の}っているのではなく、{画面|がめん}で{映像|えいぞう}やデータを{見|み}ています。バスが{障害物|しょうがいぶつ}の{前|まえ}で{止|と}まったら、{管制室|かんせいしつ}の{職員|しょくいん}が{先|さき}に{進|すす}めるよう{手助|てだす}けできます。「fjärrstyra」は{意味|いみ}が{違|ちが}い、{離|はな}れた{場所|ばしょ}から{自分|じぶん}で{車両|しゃりょう}を{操作|そうさ}することです。"
+     },
+     "frame": {
+      "subject": "Sara",
+      "complement": "bussarna"
+     },
+     "tags": [
+      "fordon",
+      "teknik",
+      "framtid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
+  },
+  {
+   "id": "e.ansvarsfråga",
+   "lemma": "ansvarsfråga",
+   "pos": "noun",
+   "level": "B2",
+   "inflection": {
+    "kind": "noun",
+    "gender": "en",
+    "indefSg": "ansvarsfråga",
+    "defSg": "ansvarsfrågan",
+    "indefPl": "ansvarsfrågor",
+    "defPl": "ansvarsfrågorna"
+   },
+   "senses": [
+    {
+     "id": "s.ansvarsfråga.1",
+     "ja": "{責任問題|せきにんもんだい}",
+     "defSv": "Frågan om vem som har ansvaret och ska betala om något går fel, till exempel efter en olycka.",
+     "defJa": "{何|なに}かがうまくいかなかったとき、たとえば{事故|じこ}の{後|あと}に、{誰|だれ}が{責任|せきにん}を{負|お}い、{誰|だれ}が{払|はら}うのかという{問題|もんだい}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Om en självkörande bil krockar blir ansvarsfrågan svår.",
+       "ja": "{自動運転車|じどううんてんしゃ}が{衝突|しょうとつ}したら、{責任問題|せきにんもんだい}は{難|むずか}しくなります。"
+      },
+      {
+       "sv": "Politikerna har ännu inte löst alla ansvarsfrågor kring självkörande fordon.",
+       "ja": "{政治家|せいじか}たちは、{自動運転車|じどううんてんしゃ}をめぐる{責任問題|せきにんもんだい}をまだすべて{解決|かいけつ}していません。"
+      }
+     ],
+     "collocations": [
+      "ansvarsfrågan är oklar",
+      "reda ut ansvarsfrågan"
+     ],
+     "explanation": {
+      "sv": "När en människa kör och krockar är det oftast föraren som har ansvaret. Men om bilen kör själv kan det vara tillverkaren, ägaren eller den som skrev programvaran. Därför talar man i nyheterna om ansvarsfrågan när det gäller självkörande fordon.",
+      "ja": "{人|ひと}が{運転|うんてん}して{事故|じこ}を{起|お}こした{場合|ばあい}は、たいてい{運転者|うんてんしゃ}が{責任|せきにん}を{負|お}います。しかし{車|くるま}が{自分|じぶん}で{走|はし}っていた{場合|ばあい}は、メーカー、{持|も}ち{主|ぬし}、ソフトウェアを{作|つく}った{人|ひと}のいずれかかもしれません。そのためニュースでは、{自動運転車|じどううんてんしゃ}について「{責任問題|せきにんもんだい}」がよく{話題|わだい}になります。"
+     },
+     "tags": [
+      "fordon",
+      "teknik",
+      "framtid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    }
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-23"
+   }
+  }
+ ]
+}

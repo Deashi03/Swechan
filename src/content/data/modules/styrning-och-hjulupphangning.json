@@ -1,0 +1,190 @@
+{
+ "id": "m.styrning-och-hjulupphangning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Styrning och hjulupphängning",
+ "titleJa": "ステアリングとサスペンション",
+ "descriptionSv": "Du lär dig hur bilen styrs och hur hjulen hålls på plats, och du kan beskriva hur bilen beter sig på dåliga vägar och i kurvor och förstå vad verkstaden föreslår.",
+ "descriptionJa": "{車|くるま}がどのように{操縦|そうじゅう}され、{車輪|しゃりん}がどのように{支|ささ}えられているかを{学|まな}びます。{悪|わる}い{道|みち}やカーブで{車|くるま}がどう{動|うご}くかを{説明|せつめい}し、{整備工場|せいびこうじょう}の{提案|ていあん}を{理解|りかい}できるようになります。",
+ "categoryId": "R07-A06-T01",
+ "tags": [
+  "bilar",
+  "teknik",
+  "fordon"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.bromssystem"
+ ],
+ "related": [],
+ "recommendedOrder": 4214,
+ "words": [
+  {
+   "senseId": "s.ratt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.styra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.servostyrning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dra-snett.1",
+   "active": true
+  },
+  {
+   "senseId": "s.hjulinställning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fälg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nav.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hjulupphängning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjäder.2",
+   "active": true
+  },
+  {
+   "senseId": "s.stötdämpare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fjädring.1",
+   "active": false
+  },
+  {
+   "senseId": "s.gropig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vibrera.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kränga.1",
+   "active": true
+  },
+  {
+   "senseId": "s.väghållning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.svängradie.1",
+   "active": false
+  },
+  {
+   "senseId": "s.antisladdsystem.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Bilen drar snett",
+  "paragraphs": [
+   "Maria kör hemtjänstbil i Sundsvall. En dag i april kör hon ner i en djup grop på en gropig grusväg. Efter det märker hon att bilen drar snett åt höger, och ratten vibrerar när hon kör fort.",
+   "Hon kör till verkstaden. Mekanikern Omar provkör bilen. – Du måste hela tiden styra lite åt vänster, säger han. Det betyder att hjulinställningen är fel. Han tittar också på fälgen. Den har fått en buckla, och därför vibrerar ratten. Navet i mitten av hjulet är däremot helt.",
+   "Omar lyfter upp bilen och visar hjulupphängningen. – Här sitter fjädern, och här sitter stötdämparen, säger han. De tar emot stötarna när du kör över gropar. Fjädringen ser hel ut, men den ena stötdämparen läcker olja.",
+   "– Märker du att bilen kränger mycket i kurvorna? frågar Omar. Maria nickar. – Det beror på stötdämparen. Väghållningen blir sämre, och på hal väg kan bilen lättare få sladd. Som tur är har bilen antisladdsystem, men du ska inte vänta med att byta.",
+   "Två dagar senare är bilen klar. Servostyrningen fungerar bra, och bilen går rakt igen. Maria kör ut från verkstaden och svänger runt på den lilla gården. – Vilken kort svängradie den har, tänker hon. Det har jag aldrig märkt förut."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad hände med bilen efter gropen?",
+    "options": [
+     "Den drog snett åt höger",
+     "Den startade inte",
+     "Den luktade bränt",
+     "Bromsarna gnisslade"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Efter det märker hon att bilen drar snett åt höger …",
+    "explanationJa": "{車|くるま}が{右|みぎ}に{流|なが}れるようになりました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför vibrerar ratten?",
+    "options": [
+     "Bromsbeläggen är slitna",
+     "Fälgen har fått en buckla",
+     "Motorn är för varm",
+     "Kylaren läcker"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Den har fått en buckla, och därför vibrerar ratten.",
+    "explanationJa": "ホイールがへこんだので、ハンドルが{振動|しんどう}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad är fel på stötdämparen?",
+    "options": [
+     "Den läcker olja",
+     "Den är för ny",
+     "Den saknas helt",
+     "Den är målad i fel färg"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "… men den ena stötdämparen läcker olja.",
+    "explanationJa": "ショックアブソーバーの{一|ひと}つからオイルが{漏|も}れています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Maria märker att bilen kränger i kurvorna.",
+    "correct": true,
+    "explanationSv": "Maria nickar.",
+    "explanationJa": "マリアは、カーブで{車|くるま}が{傾|かたむ}くことに{気|き}づいています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Omar tycker att Maria kan vänta länge med att byta stötdämpare.",
+    "correct": false,
+    "explanationSv": "… men du ska inte vänta med att byta.",
+    "explanationJa": "オマルは、{交換|こうかん}を{先延|さきの}ばしにしないようにと{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Sedan november 2014 ska alla nya personbilar som registreras i EU ha ett elektroniskt stabilitetssystem (antisladdsystem).",
+    "source": "EU-förordning 661/2009 om allmän säkerhet för motorfordon; Transportstyrelsen",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Servostyrning minskar den kraft som föraren behöver för att vrida ratten.",
+    "source": "Nationalencyklopedin, uppslaget ”servostyrning”",
+    "checked": "2026-11-23",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur det känns att köra på dåliga vägar.",
+  "discussionPoints": [
+   "Finns det många gropiga vägar där du bor?",
+   "Har du märkt att en bil eller cykel drar snett? Vad gjorde du?",
+   "Vad är viktigast för dig: en bil som är mjuk eller en bil med bra väghållning?",
+   "Åker du ofta buss? Hur känns det när bussen kränger i kurvorna?"
+  ]
+ },
+ "standard": 2
+}

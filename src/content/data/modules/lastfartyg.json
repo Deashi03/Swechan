@@ -1,0 +1,182 @@
+{
+ "id": "m.lastfartyg",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Lastfartyg",
+ "titleJa": "{貨物船|かもつせん}",
+ "descriptionSv": "Du lär dig att tala om hur varor transporteras över världshaven: vilka sorters lastfartyg som finns för olika last, vem som äger och bemannar dem och hur lasten hanteras och säkras ombord och i hamnen.",
+ "descriptionJa": "{品物|しなもの}が{世界|せかい}の{海|うみ}を{越|こ}えてどのように{運|はこ}ばれるかを{話|はな}せるようになります。{貨物|かもつ}に{合|あ}わせたさまざまな{貨物船|かもつせん}の{種類|しゅるい}、{船|ふね}を{持|も}ち{動|うご}かす{人|ひと}たち、そして{船|ふね}や{港|みなと}で{貨物|かもつ}をどう{扱|あつか}い{固定|こてい}するかを{学|まな}びます。",
+ "categoryId": "R07-A06-T05",
+ "tags": [
+  "sjöfart",
+  "fordon",
+  "teknik"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.hamnar-och-kajer"
+ ],
+ "related": [],
+ "recommendedOrder": 4256,
+ "words": [
+  {
+   "senseId": "s.lastfartyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.containerfartyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.container.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kanal.2",
+   "active": false
+  },
+  {
+   "senseId": "s.rederi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.besättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sjöman.1",
+   "active": true
+  },
+  {
+   "senseId": "s.containerkran.1",
+   "active": true
+  },
+  {
+   "senseId": "s.stuva.2",
+   "active": true
+  },
+  {
+   "senseId": "s.surra.2",
+   "active": true
+  },
+  {
+   "senseId": "s.tankfartyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bulkfartyg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.last.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frakta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.barlastvatten.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Ett containerfartyg i Göteborg",
+  "paragraphs": [
+   "I Göteborgs hamn lägger ett stort containerfartyg till. Det kommer från Kina och har gått genom en stor kanal mellan Asien och Europa. Ombord finns tusentals containrar med kläder, elektronik och leksaker.",
+   "Fartyget ägs av ett stort rederi. Besättningen består av tjugo sjömän från fem olika länder. De har varit borta från sina familjer i flera månader.",
+   "Höga containerkranar lyfter av containrarna en i taget. Under resan har containrarna varit stuvade i staplar och surrade med stålstänger, så att de inte ska falla i havet när det stormar.",
+   "Längre bort i hamnen ligger andra lastfartyg. Ett tankfartyg lossar olja, och ett bulkfartyg tar emot en last vete som rederiet ska frakta till Afrika. Fartyg fraktar största delen av världshandelns varor.",
+   "När containerfartyget är tomt pumpar det in barlastvatten för att ligga stabilt. Vattnet måste renas, så att inga djur och växter följer med till andra hav."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilken väg har containerfartyget tagit från Kina?",
+    "options": [
+     "Genom en stor kanal mellan Asien och Europa",
+     "Runt Sydamerika",
+     "Genom Östersjön",
+     "Över Atlanten"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det kommer från Kina och har gått genom en stor kanal mellan Asien och Europa.",
+    "explanationJa": "コンテナ{船|せん}は{中国|ちゅうごく}から、アジアとヨーロッパの{間|あいだ}の{大|おお}きな{運河|うんが}を{通|とお}ってきました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur många sjömän finns i besättningen?",
+    "options": [
+     "Tjugo",
+     "Fem",
+     "Tolv",
+     "Tusentals"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Besättningen består av tjugo sjömän från fem olika länder.",
+    "explanationJa": "{乗組員|のりくみいん}は{五|ご}か{国|こく}から{来|き}た20{人|にん}の{船員|せんいん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför är containrarna surrade under resan?",
+    "options": [
+     "Så att de inte ska falla i havet när det stormar",
+     "Så att kranarna kan lyfta dem",
+     "Så att ingen ska kunna stjäla dem",
+     "Så att de ska hålla sig kalla"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Under resan har containrarna varit stuvade i staplar och surrade med stålstänger, så att de inte ska falla i havet när det stormar.",
+    "explanationJa": "{嵐|あらし}のときに{海|うみ}に{落|お}ちないように{固定|こてい}されています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Tankfartyget i hamnen lossar vete.",
+    "correct": false,
+    "explanationSv": "Ett tankfartyg lossar olja, och ett bulkfartyg tar emot en last vete …",
+    "explanationJa": "タンカーが{降|お}ろしているのは{原油|げんゆ}で、{小麦|こむぎ}を{積|つ}むのはばら{積|づ}み{船|せん}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Containerfartyget behöver barlastvatten när containrarna har lyfts av.",
+    "correct": true,
+    "explanationSv": "När containerfartyget är tomt pumpar det in barlastvatten för att ligga stabilt.",
+    "explanationJa": "{空|から}になった{船|ふね}は、{安定|あんてい}するためにバラスト{水|すい}を{入|い}れます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Största delen av världshandelns varor, räknat i vikt, transporteras med fartyg.",
+    "source": "UNCTAD, Review of Maritime Transport",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Sedan 2017 måste fartyg i internationell trafik rena eller byta ut sitt barlastvatten enligt IMO:s barlastvattenkonvention.",
+    "source": "IMO, barlastvattenkonventionen (BWM), i kraft 2017; Transportstyrelsen",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om varor som kommer med fartyg.",
+  "discussionPoints": [
+   "Vilka saker i ditt hem har troligen kommit med fartyg?",
+   "Skulle du vilja arbeta som sjöman i flera månader i taget? Varför eller varför inte?",
+   "Vad tror du är svårast för en besättning från många olika länder?",
+   "Hur påverkar sjöfarten miljön, tror du?"
+  ]
+ },
+ "standard": 2
+}

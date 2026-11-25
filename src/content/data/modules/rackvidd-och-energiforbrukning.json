@@ -1,0 +1,188 @@
+{
+ "id": "m.rackvidd-och-energiforbrukning",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Räckvidd och energiförbrukning",
+ "titleJa": "{航続距離|こうぞくきょり}とエネルギー{消費|しょうひ}",
+ "descriptionSv": "Hur långt en elbil kommer och vad som påverkar det: hur kyla, fart och last ändrar energiförbrukningen, vad man kan göra för att köra sparsamt och hur man planerar en lång resa med laddning på vägen.",
+ "descriptionJa": "{電気自動車|でんきじどうしゃ}がどこまで{走|はし}れるか、そしてそれに{影響|えいきょう}するもの：{寒|さむ}さ、{速度|そくど}、{荷物|にもつ}がエネルギー{消費|しょうひ}をどう{変|か}えるか、{節約|せつやく}して{運転|うんてん}するために{何|なに}ができるか、そして{途中|とちゅう}で{充電|じゅうでん}しながら{長距離|ちょうきょり}の{旅行|りょこう}をどう{計画|けいかく}するかを{学|まな}びます。",
+ "categoryId": "R07-A06-T02",
+ "tags": [
+  "elbilar",
+  "körning",
+  "resor"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.regenerativ-bromsning"
+ ],
+ "related": [],
+ "recommendedOrder": 4227,
+ "words": [
+  {
+   "senseId": "s.räckvidd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.energiförbrukning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förbrukning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.hastighet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motorväg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.luftmotstånd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.takbox.1",
+   "active": true
+  },
+  {
+   "senseId": "s.minusgrader.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förvärma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värmepump.1",
+   "active": false
+  },
+  {
+   "senseId": "s.lufttryck.1",
+   "active": false
+  },
+  {
+   "senseId": "s.körstil.1",
+   "active": true
+  },
+  {
+   "senseId": "s.körläge.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sparsam.1",
+   "active": true
+  },
+  {
+   "senseId": "s.räckviddsångest.1",
+   "active": true
+  },
+  {
+   "senseId": "s.laddstopp.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ruttplanerare.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Med elbil till fjällen",
+  "paragraphs": [
+   "I februari ska Kenji och hans fru Lena åka från Stockholm till Åre för att åka skidor. Det är ungefär 60 mil. Det är första gången de kör så långt med sin elbil, och Lena har lite räckviddsångest. Enligt bilen är räckvidden 45 mil, men den siffran gäller på sommaren.",
+   "Kenji förklarar att energiförbrukningen ändras med vädret och vägen. På sommaren är förbrukningen ungefär 1,6 kilowattimmar per mil. På vintern, när det är tio minusgrader, kan den bli mycket högre. Det behövs energi för att värma batteriet och bilen. Som tur är har bilen en värmepump, som gör att värmen kostar mindre el.",
+   "Hög hastighet på motorvägen drar också mycket energi, eftersom luftmotståndet blir större. Takboxen med skidorna gör det ännu värre. Kenji kontrollerar lufttrycket i däcken, eftersom för lite luft också ökar förbrukningen.",
+   "På morgonen förvärmer de bilen medan den fortfarande laddar hemma. Då används el från elnätet och inte från batteriet. Kenji väljer det sparsamma körläget och kör med en lugn körstil. De håller 100 kilometer i timmen i stället för 120.",
+   "Bilens ruttplanerare föreslår två laddstopp, ett i Sundsvall och ett i Östersund. Vid varje laddstopp äter de och sträcker på benen. När de kommer fram till Åre är laddnivån 15 procent. – Det gick ju jättebra, säger Lena. Min räckviddsångest är borta!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Varför har Lena räckviddsångest?",
+    "options": [
+     "Bilen är gammal",
+     "Hon har aldrig åkt skidor",
+     "Kenji kör för snabbt",
+     "Det är första gången de kör så långt med elbilen"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Det är första gången de kör så långt med sin elbil, och Lena har lite räckviddsångest.",
+    "explanationJa": "{電気自動車|でんきじどうしゃ}でこんなに{遠|とお}くまで{行|い}くのは{初|はじ}めてだからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "cause",
+    "promptSv": "Varför ökar energiförbrukningen på vintern?",
+    "options": [
+     "Vägarna är längre",
+     "Det behövs energi för att värma batteriet och bilen",
+     "Bilen blir tyngre",
+     "Laddstolparna är långsammare"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det behövs energi för att värma batteriet och bilen.",
+    "explanationJa": "バッテリーと{車内|しゃない}を{温|あたた}めるのにエネルギーが{必要|ひつよう}だからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Varför förvärmer de bilen medan den laddar?",
+    "options": [
+     "Då används el från elnätet och inte från batteriet",
+     "Då går laddningen snabbare",
+     "Då blir däcken varma",
+     "Då behövs ingen värmepump"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Då används el från elnätet och inte från batteriet.",
+    "explanationJa": "バッテリーではなく、{電力網|でんりょくもう}の{電気|でんき}を{使|つか}えるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Takboxen gör att bilen drar mindre energi.",
+    "correct": false,
+    "explanationSv": "Takboxen med skidorna gör det ännu värre.",
+    "explanationJa": "ルーフボックスがあると、もっとエネルギーを{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Resan till Åre gick bättre än Lena hade trott.",
+    "correct": true,
+    "explanationSv": "– Det gick ju jättebra, säger Lena. Min räckviddsångest är borta!",
+    "explanationJa": "{心配|しんぱい}していたより、ずっとうまくいきました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En elbils räckvidd blir kortare i kyla och vid hög hastighet, och att förvärma bilen medan den är inkopplad sparar batteriet.",
+    "source": "Energimyndigheten, Kör energismart med elbil",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om långa resor med bil och om hur man kan spara energi.",
+  "discussionPoints": [
+   "Har du kört en lång bilresa på vintern? Vart åkte du?",
+   "Hur skulle du planera en resa med elbil till fjällen?",
+   "Har du någon gång haft räckviddsångest eller varit rädd att mobilen ska ta slut?",
+   "Vad kan man göra för att köra mer sparsamt?"
+  ]
+ },
+ "standard": 2
+}

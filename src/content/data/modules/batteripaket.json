@@ -1,0 +1,190 @@
+{
+ "id": "m.batteripaket",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-23",
+ "titleSv": "Batteripaket",
+ "titleJa": "バッテリーパック",
+ "descriptionSv": "Elbilens stora batteri och hur man talar om det när man köper en begagnad bil: hur batteriet är uppbyggt, hur man förstår siffror om laddning och batteriets skick, och vad garanti, åldrande och andrahandsvärde betyder för köparen.",
+ "descriptionJa": "{電気自動車|でんきじどうしゃ}の{大|おお}きなバッテリーと、{中古車|ちゅうこしゃ}を{買|か}うときのその{話|はな}し{方|かた}：バッテリーがどのようにできているか、{充電|じゅうでん}やバッテリーの{状態|じょうたい}を{示|しめ}す{数字|すうじ}をどう{読|よ}むか、そして{保証|ほしょう}、{劣化|れっか}、{中古価格|ちゅうこかかく}が{買|か}う{人|ひと}にとって{何|なに}を{意味|いみ}するかを{学|まな}びます。",
+ "categoryId": "R07-A06-T02",
+ "tags": [
+  "elbilar",
+  "fordon",
+  "batterier"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.elmotorer"
+ ],
+ "related": [],
+ "recommendedOrder": 4222,
+ "words": [
+  {
+   "senseId": "s.batteripaket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.cell.4",
+   "active": true
+  },
+  {
+   "senseId": "s.kilowattimme.1",
+   "active": true
+  },
+  {
+   "senseId": "s.kapacitet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.laddnivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vikt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.underrede.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kylning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.batterihälsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försämras.1",
+   "active": true
+  },
+  {
+   "senseId": "s.livslängd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.garanti.1",
+   "active": true
+  },
+  {
+   "senseId": "s.batteribyte.1",
+   "active": true
+  },
+  {
+   "senseId": "s.begagnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mätarställning.1",
+   "active": false
+  },
+  {
+   "senseId": "s.andrahandsvärde.1",
+   "active": true
+  },
+  {
+   "senseId": "s.återvinna.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Naoko köper en begagnad elbil",
+  "paragraphs": [
+   "Naoko arbetar som sjuksköterska i Örebro. Hon vill köpa en elbil, men en ny är för dyr. Därför tittar hon på begagnade bilar tillsammans med sin vän Lars, som är mekaniker.",
+   "Hos bilhandlaren hittar de en fem år gammal elbil. Mätarställningen är 6 000 mil. – Det viktigaste i en elbil är batteripaketet, säger Lars. Det sitter i underredet och består av tusentals små celler. Batteriet väger nästan 500 kilo, så det är en stor del av bilens vikt.",
+   "När bilen var ny kunde batteriet lagra 64 kilowattimmar. Men ett batteri försämras med tiden, och kapaciteten blir mindre. Lars ber verkstaden testa batterihälsan. Resultatet är 92 procent. – Det är bra för en bil i den åldern, säger han. Batteriet har också kylning med vätska. God kylning ger batteriet längre livslängd.",
+   "Naoko frågar om garantin. Säljaren förklarar att batteriet har åtta års garanti. Om batteriet går sönder före det, betalar tillverkaren för ett batteribyte. Laddnivån på skärmen visar 80 procent, så Naoko kan provköra bilen direkt.",
+   "Lars säger att elbilar med god batterihälsa har ett högt andrahandsvärde. Han berättar också att gamla batterier inte bara slängs. De kan användas för att lagra el från solceller, och till slut kan man återvinna metallerna i dem. Naoko bestämmer sig för att köpa bilen."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "cause",
+    "promptSv": "Varför tittar Naoko på begagnade bilar?",
+    "options": [
+     "Hon vill ha en gammal bensinbil",
+     "Lars säljer sin bil",
+     "En ny elbil är för dyr",
+     "Hon har inget körkort"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Hon vill köpa en elbil, men en ny är för dyr.",
+    "explanationJa": "{新車|しんしゃ}の{電気自動車|でんきじどうしゃ}は{高|たか}すぎるからです。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Var sitter batteripaketet?",
+    "options": [
+     "I underredet",
+     "Under motorhuven",
+     "I bagageluckan",
+     "På taket"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Det sitter i underredet och består av tusentals små celler.",
+    "explanationJa": "バッテリーパックは{車台|しゃだい}にあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "usage",
+    "promptSv": "Vad visar batterihälsan på 92 procent?",
+    "options": [
+     "Hur mycket el som finns i batteriet just nu",
+     "Hur många mil bilen har kört",
+     "Hur gammal bilen är",
+     "Hur mycket av den första kapaciteten som finns kvar"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Men ett batteri försämras med tiden, och kapaciteten blir mindre. Lars ber verkstaden testa batterihälsan. Resultatet är 92 procent.",
+    "explanationJa": "{最初|さいしょ}の{容量|ようりょう}のうち、どれだけ{残|のこ}っているかを{表|あらわ}します。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Om batteriet går sönder inom åtta år betalar Naoko själv för ett nytt.",
+    "correct": false,
+    "explanationSv": "Om batteriet går sönder före det, betalar tillverkaren för ett batteribyte.",
+    "explanationJa": "{保証期間|ほしょうきかん}{中|ちゅう}は、メーカーが{交換|こうかん}の{費用|ひよう}を{払|はら}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Gamla batterier kan vara till nytta även efter att de har suttit i en bil.",
+    "correct": true,
+    "explanationSv": "De kan användas för att lagra el från solceller, och till slut kan man återvinna metallerna i dem.",
+    "explanationJa": "{太陽光|たいようこう}の{電気|でんき}をためたり、{金属|きんぞく}をリサイクルしたりできます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Biltillverkare ger ofta åtta års garanti (eller garanti upp till en viss körsträcka) på elbilens batteri.",
+    "source": "Konsumentverket, Hallå konsument: köpa elbil; tillverkarnas garantivillkor",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Ett elbilsbatteri tappar kapacitet med tiden, och uttjänta batterier kan användas för att lagra el eller återvinnas.",
+    "source": "Energimyndigheten, information om elbilar och batterier",
+    "checked": "2026-11-23",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om att köpa en begagnad bil, och om vad man ska tänka på med en elbil.",
+  "discussionPoints": [
+   "Vad skulle du kontrollera om du köpte en begagnad elbil?",
+   "Är andrahandsvärdet viktigt för dig när du köper något dyrt?",
+   "Hur tänker du om en bil med hög mätarställning?",
+   "Vad tycker du att man ska göra med gamla batterier?"
+  ]
+ },
+ "standard": 2
+}
