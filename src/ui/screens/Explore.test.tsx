@@ -28,18 +28,18 @@ describe('Kurser (catalog navigation)', () => {
   });
 
   it('a topic group lists its seven planned modules, clearly marked and not startable', async () => {
-    wrap(<Explore categoryId="R08-A01-T01" />);
+    wrap(<Explore categoryId="R08-A02-T01" />);
     const items = await choices();
     expect(items.length).toBe(7);
     expect(screen.getAllByText('Planerad').length).toBeGreaterThanOrEqual(7);
-    expect(screen.getByText('Ordklasser och satsdelar')).toBeInTheDocument();
+    expect(screen.getByText('Melodi och rytm')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
   });
 
   it('a planned module has an information view without a start button', async () => {
-    // Teknik & digital värld is complete from 0.60; Kultur & fritid is still planned.
-    wrap(<CatalogModuleView id="SWC-KUL-01-01-01" />);
-    expect(await screen.findByText('Ordklasser och satsdelar')).toBeInTheDocument();
+    // Språk & litteratur is published from 0.61; Musik & scenkonst is still planned.
+    wrap(<CatalogModuleView id="SWC-KUL-02-01-01" />);
+    expect(await screen.findByText('Melodi och rytm')).toBeInTheDocument();
     expect(screen.getByText(/inte färdig än/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
     expect(screen.queryByRole('link', { name: /Starta/ })).toBeNull();
