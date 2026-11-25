@@ -43353,7 +43353,8 @@
    "quiz": true,
    "confusableWith": [
     "s.snabbladdare.1",
-    "s.laddkabel.1"
+    "s.laddkabel.1",
+    "s.laddstation.1"
    ]
   },
   {
@@ -186674,7 +186675,16 @@
    "group": "snabbladdning",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.laddstolpe.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.60.0",
+    "hash": "833bc568",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.laddplats.1",
