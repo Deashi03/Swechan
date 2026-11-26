@@ -455,10 +455,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     console.log(`\nSkrev ${Object.keys(res.backlog).length} köer till quality/backlog/`);
   }
   if (args.includes('--update')) {
-    const allow = args.includes('--allow-worse') ? args[args.indexOf('--allow-worse') + 1] : null;
+    // --allow-worse "<mått>: <skäl>" may be given more than once (0.62: B6 moves modules out of the legacy scope).
+    const allows = args.flatMap((a, i) => (a === '--allow-worse' ? [args[i + 1]] : []));
     const allowed = new Set();
-    if (allow) {
-      const [metric, ...why] = allow.split(':');
+    for (const allow of allows) {
+      const [metric, ...why] = (allow ?? '').split(':');
       if (!why.join(':').trim()) { console.error('--allow-worse kräver "<mått>: <skäl>"'); process.exit(1); }
       allowed.add(metric.trim());
       base.exceptions = [...(base.exceptions ?? []), { date: new Date().toISOString().slice(0, 10), metric: metric.trim(), reason: why.join(':').trim(), from: base.metrics[metric.trim()], to: res.metrics[metric.trim()] }];

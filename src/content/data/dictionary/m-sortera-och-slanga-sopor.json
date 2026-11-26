@@ -37,7 +37,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.sortera",
@@ -139,6 +143,10 @@
       {
        "sv": "Alla i huset källsorterar.",
        "ja": "{建物|たてもの}の{全員|ぜんいん}がごみを{分別|ぶんべつ}しています。"
+      },
+      {
+       "sv": "Vi har källsorterat i många år, så det går snabbt nu.",
+       "ja": "{何年|なんねん}も{前|まえ}からごみを{分別|ぶんべつ}しているので、{今|いま}はすぐにできます。"
       }
      ],
      "frame": {
@@ -154,9 +162,21 @@
      "explanation": {
       "sv": "Att källsortera betyder att man delar upp sina sopor hemma i olika grupper, till exempel papper, plast, glas och matavfall, redan innan man slänger dem. Då kan mer återvinnas. Det är mycket vanligt i Sverige.",
       "ja": "「källsortera」は、{捨|す}てる{前|まえ}に{家|いえ}で、{紙|かみ}・プラスチック・ガラス・{生|なま}ごみなどにごみを{分|わ}けることです。そうするともっとリサイクルできます。スウェーデンではとても{一般的|いっぱんてき}です。"
+     },
+     "collocations": [
+      "källsortera sopor",
+      "källsortera hemma"
+     ],
+     "usageNote": {
+      "sv": "Källsortera gör man hemma, till exempel i köket. Återvinningsstationen är platsen dit man sedan bär det som man har sorterat.",
+      "ja": "「källsortera」は、{台所|だいどころ}など{家|いえ}でするごみの{分別|ぶんべつ}です。「återvinningsstation」は、{分別|ぶんべつ}したごみをあとで{持|も}っていく{場所|ばしょ}です。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.återvinna",
@@ -185,6 +205,7 @@
        "ja": "ガラスは{何度|なんど}もリサイクルできます。"
       }
      ],
+     "labelSv": "material",
      "frame": {
       "subject": "Man",
       "complement": "glaset"
@@ -196,8 +217,34 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.återvinna.2",
+     "ja": "{取|と}り{戻|もど}す",
+     "defSv": "Få tillbaka något som man har förlorat.",
+     "defJa": "{失|うしな}ったものを{取|と}り{戻|もど}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Efter sjukdomen tog det ett år att återvinna hälsan.",
+       "ja": "{病気|びょうき}のあと、{健康|けんこう}を{取|と}り{戻|もど}すのに1{年|ねん}かかりました。"
+      }
+     ],
+     "labelSv": "få tillbaka",
+     "tags": [
+      "hemmet",
+      "miljö"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "C1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.återvinningsstation",
@@ -231,9 +278,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "En återvinningsstation är en plats utomhus med stora behållare för glas, papper, plast och metall. Dit tar man det som man har sorterat hemma. Stora saker och farligt avfall lämnar man på ett annat ställe.",
+      "ja": "リサイクルステーションは、ガラス、{紙|かみ}、プラスチック、{金属|きんぞく}を{入|い}れる{大|おお}きな{容器|ようき}がある{屋外|おくがい}の{場所|ばしょ}です。{家|いえ}で{分別|ぶんべつ}したものをそこへ{持|も}っていきます。{大|おお}きな{物|もの}や{有害|ゆうがい}ごみは、{別|べつ}の{場所|ばしょ}に{持|も}っていきます。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.återvinningscentral",
@@ -259,6 +314,10 @@
       {
        "sv": "Den gamla soffan kör vi till återvinningscentralen.",
        "ja": "{古|ふる}いソファはリサイクルセンターに{運|はこ}びます。"
+      },
+      {
+       "sv": "På återvinningscentralen kan man lämna gamla möbler och lampor.",
+       "ja": "リサイクルセンターには、{古|ふる}い{家具|かぐ}やランプを{出|だ}すことができます。"
       }
      ],
      "tags": [
@@ -271,9 +330,17 @@
      "explanation": {
       "sv": "En återvinningscentral är ett stort ställe utanför stan dit man kör med bil och lämnar stora saker, som möbler och en gammal tv. Där sorterar man allt i olika stora lådor.",
       "ja": "「återvinningscentral」は、{町|まち}の{外|そと}にある{大|おお}きな{施設|しせつ}で、{家具|かぐ}や{古|ふる}いテレビなどの{大|おお}きなものを{車|くるま}で{持|も}っていきます。そこで{全部|ぜんぶ}をいろいろな{大|おお}きな{箱|はこ}に{分|わ}けて{入|い}れます。"
-     }
+     },
+     "collocations": [
+      "köra till återvinningscentralen",
+      "lämna på återvinningscentralen"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.farligt-avfall",
@@ -294,6 +361,10 @@
       {
        "sv": "Batterier är farligt avfall.",
        "ja": "{電池|でんち}は{有害|ゆうがい}ごみです。"
+      },
+      {
+       "sv": "Gammal färg och lysrör ska lämnas som farligt avfall.",
+       "ja": "{古|ふる}いペンキや{蛍光灯|けいこうとう}は、{有害|ゆうがい}ごみとして{出|だ}さなければなりません。"
       }
      ],
      "tags": [
@@ -306,9 +377,17 @@
      "explanation": {
       "sv": "Farligt avfall är sopor som kan skada människor eller naturen, till exempel batterier, färg och lampor. Det får inte slängas i vanliga soporna, utan ska lämnas på särskilda ställen.",
       "ja": "「farligt avfall」は、{電池|でんち}・ペンキ・{電球|でんきゅう}など、{人|ひと}や{自然|しぜん}に{害|がい}を{与|あた}えるごみです。ふつうのごみに{捨|す}ててはいけず、{決|き}まった{場所|ばしょ}に{出|だ}します。"
-     }
+     },
+     "collocations": [
+      "lämna farligt avfall",
+      "sortera ut farligt avfall"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.pant",
@@ -334,8 +413,13 @@
       {
        "sv": "Det är en krona i pant på burken.",
        "ja": "その{缶|かん}には1クローナのデポジットがついています。"
+      },
+      {
+       "sv": "När vi lämnade burkarna fick vi tillbaka panten, nästan femtio kronor.",
+       "ja": "{缶|かん}を{返|かえ}したら、デポジットが{戻|もど}ってきました。50クローナ{近|ちか}くでした。"
       }
      ],
+     "labelSv": "på burkar",
      "grammarNotes": [
       "gn.mass-noun"
      ],
@@ -349,9 +433,39 @@
      "explanation": {
       "sv": "Pant är pengar som man betalar extra när man köper en burk eller flaska, oftast en eller två kronor. Man får tillbaka pengarna när man lämnar in den tomma burken i en maskin i affären. Det gör att nästan alla burkar återvinns.",
       "ja": "「pant」は、{缶|かん}やボトルを{買|か}うときに{余分|よぶん}に{払|はら}うお{金|かね}で、たいてい1〜2クローナです。{空|から}の{缶|かん}を{店|みせ}の{機械|きかい}に{入|い}れると、そのお{金|かね}が{戻|もど}ってきます。そのおかげでほとんどの{缶|かん}がリサイクルされます。"
-     }
+     },
+     "collocations": [
+      "pant på burkar",
+      "få tillbaka panten"
+     ]
+    },
+    {
+     "id": "s.pant.2",
+     "ja": "{担保|たんぽ}",
+     "defSv": "Något som man lämnar till någon när man lånar pengar, och som man får tillbaka när man betalar.",
+     "defJa": "お{金|かね}を{借|か}りるときに{相手|あいて}に{預|あず}け、お{金|かね}を{返|かえ}すと{戻|もど}ってくる{物|もの}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon lämnade sin klocka som pant.",
+       "ja": "{彼女|かのじょ}は{時計|とけい}を{担保|たんぽ}として{預|あず}けました。"
+      }
+     ],
+     "labelSv": "säkerhet för lån",
+     "tags": [
+      "hemmet",
+      "miljö"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "C1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.panta",
@@ -392,7 +506,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.soprum",
@@ -469,7 +587,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.returpapper",
@@ -508,7 +630,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.sopor",
@@ -565,6 +691,10 @@
       {
        "sv": "Grovsopor får man inte ställa i soprummet.",
        "ja": "{粗大|そだい}ごみはごみ{置|お}き{場|ば}に{置|お}いてはいけません。"
+      },
+      {
+       "sv": "Här i området hämtas grovsopor två gånger om året.",
+       "ja": "この{地域|ちいき}では、{粗大|そだい}ごみは{年|ねん}に2{回|かい}{回収|かいしゅう}されます。"
       }
      ],
      "tags": [
@@ -577,9 +707,17 @@
      "explanation": {
       "sv": "Grovsopor är stora saker som man slänger och som inte får plats bland de vanliga soporna, till exempel en gammal soffa eller en cykel. Man får inte ställa dem i soprummet, utan måste köra dem till en återvinningscentral.",
       "ja": "「grovsopor」は、{古|ふる}いソファや{自転車|じてんしゃ}など、ごみ{箱|ばこ}に{入|はい}らない{大|おお}きな{捨|す}てる{物|もの}です。ごみ{置|お}き{場|ば}に{置|お}いてはいけず、リサイクルセンターに{持|も}っていかなければなりません。"
-     }
+     },
+     "collocations": [
+      "slänga grovsopor",
+      "hämtning av grovsopor"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.hushållssopor",
@@ -610,7 +748,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

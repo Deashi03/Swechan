@@ -1,11 +1,11 @@
 {
  "id": "m.bostadsratt-och-forening",
- "contentVersion": 4,
- "updatedAt": "2026-11-21",
+ "contentVersion": 6,
+ "updatedAt": "2026-11-26",
  "titleSv": "Bostadsrätt och förening",
  "titleJa": "{分譲|ぶんじょう}マンション{利用権|りようけん}と{住宅組合|じゅうたくくみあい}",
- "descriptionSv": "Att köpa och äga en bostadsrätt: bostadsrättsförening, månadsavgift, kontantinsats, årsredovisning och tillstånd.",
- "descriptionJa": "{分譲|ぶんじょう}マンション{利用権|りようけん}の{購入|こうにゅう}と{所有|しょゆう}：{住宅組合|じゅうたくくみあい}、{管理費|かんりひ}、{頭金|あたまきん}、{年次報告書|ねんじほうこくしょ}、{許可|きょか}。",
+ "descriptionSv": "Du lär dig hur det fungerar att äga en bostadsrätt, vad föreningen bestämmer och vad du ska titta på innan du köper.",
+ "descriptionJa": "{分譲|ぶんじょう}マンションの{利用権|りようけん}を{持|も}つとはどういうことか、{組合|くみあい}が{何|なに}を{決|き}めるか、{買|か}う{前|まえ}に{何|なに}を{確|たし}かめるべきかを{学|まな}びます。",
  "categoryId": "R01-A01-T06",
  "tags": [
   "hemmet",
@@ -169,7 +169,18 @@
    }
   ],
   "factSources": [
-   "I en bostadsrättsförening äger medlemmarna huset gemensamt; andrahandsuthyrning och större ombyggnader kräver föreningens godkännande."
+   {
+    "text": "Bostadsrättsföreningen äger huset, och medlemmarna har rätt att använda var sin lägenhet.",
+    "source": "Bostadsrättslagen (1991:614), 1 kap. 1 §",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Andrahandsuthyrning och större ändringar i lägenheten, till exempel att riva en bärande vägg, kräver styrelsens tillstånd.",
+    "source": "Bostadsrättslagen (1991:614), 7 kap. 7 och 10 §§",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -180,5 +191,6 @@
    "Hur är bostadsmarknaden där du kommer ifrån?",
    "Finns det något som liknar bostadsrätt i Japan?"
   ]
- }
+ },
+ "standard": 2
 }

@@ -1,11 +1,11 @@
 {
  "id": "m.avgifter-och-boendekostnader",
- "contentVersion": 3,
+ "contentVersion": 5,
  "updatedAt": "2026-11-26",
  "titleSv": "Avgifter och boendekostnader",
  "titleJa": "{住居費|じゅうきょひ}と{各種料金|かくしゅりょうきん}",
- "descriptionSv": "Vad det kostar att bo: hyra, el, uppvärmning, bredband, avgifter och räkningar.",
- "descriptionJa": "{住|す}むためにかかるお{金|かね}：{家賃|やちん}、{電気|でんき}、{暖房|だんぼう}、ブロードバンド、{各種料金|かくしゅりょうきん}と{請求書|せいきゅうしょ}。",
+ "descriptionSv": "Du lär dig att räkna ut och jämföra vad det kostar att bo, och att förstå räkningarna för el, värme och bredband.",
+ "descriptionJa": "{住|す}むのにどれだけお{金|かね}がかかるかを{計算|けいさん}して{比|くら}べ、{電気|でんき}、{暖房|だんぼう}、インターネットの{請求書|せいきゅうしょ}を{理解|りかい}できるようになります。",
  "categoryId": "R01-A01-T06",
  "tags": [
   "hemmet",
@@ -159,7 +159,12 @@
    }
   ],
   "factSources": [
-   "I många svenska hyresrätter ingår värme och varmvatten i hyran medan hushållsel och bredband betalas separat."
+   {
+    "text": "I många svenska hyresrätter ingår värme och varmvatten i hyran, medan hushållsel och bredband betalas separat.",
+    "source": "Hyresgästföreningen, hyresgastforeningen.se",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -170,5 +175,6 @@
    "Är elen dyr i Japan på vintern eller på sommaren?",
    "Hur betalar du dina räkningar?"
   ]
- }
+ },
+ "standard": 2
 }

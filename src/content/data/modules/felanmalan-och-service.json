@@ -1,11 +1,11 @@
 {
  "id": "m.felanmalan-och-service",
- "contentVersion": 3,
- "updatedAt": "2026-11-21",
+ "contentVersion": 5,
+ "updatedAt": "2026-11-26",
  "titleSv": "Felanmälan och service",
  "titleJa": "{修理依頼|しゅうりいらい}とサービス",
- "descriptionSv": "När något är trasigt: felanmälan, vicevärd, fastighetsskötare, jour, säkringar och lås.",
- "descriptionJa": "{何|なに}かが{壊|こわ}れたとき：{修理依頼|しゅうりいらい}、{管理人|かんりにん}、{保守係|ほしゅがかり}、{緊急窓口|きんきゅうまどぐち}、ヒューズ、{錠|じょう}。",
+ "descriptionSv": "Du lär dig att anmäla fel i bostaden, beskriva vad som är trasigt och förstå vem som kommer och lagar det.",
+ "descriptionJa": "{住|す}まいの{故障|こしょう}を{届|とど}け{出|で}て、{何|なに}が{壊|こわ}れているかを{説明|せつめい}し、だれが{修理|しゅうり}に{来|く}るのかを{理解|りかい}できるようになります。",
  "categoryId": "R01-A01-T06",
  "tags": [
   "hemmet"
@@ -158,7 +158,12 @@
    }
   ],
   "factSources": [
-   "Hyresgäster gör felanmälan till hyresvärden, ofta via webben; akuta fel utanför kontorstid går till fastighetsjour."
+   {
+    "text": "Hyresgäster gör felanmälan till hyresvärden, ofta via webben; akuta fel utanför kontorstid går till en fastighetsjour.",
+    "source": "Hyresgästföreningen, hyresgastforeningen.se",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -169,5 +174,6 @@
    "Vem ringer man i Japan om något akut händer i lägenheten?",
    "Kan du byta en säkring själv?"
   ]
- }
+ },
+ "standard": 2
 }

@@ -33,7 +33,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.köksbord",
@@ -68,7 +72,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.skrivbord",
@@ -165,7 +173,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.bordsben",
@@ -200,7 +212,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.vinglig",
@@ -234,9 +250,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Vinglig säger man om en möbel som inte står stilla, till exempel ett bord där ett ben är kortare än de andra.",
+      "ja": "「vinglig」は、{脚|あし}が1{本|ぽん}だけ{短|みじか}いテーブルなど、しっかり{立|た}たない{家具|かぐ}に{使|つか}います。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.utdragbar",
@@ -268,9 +292,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Ett utdragbart bord kan man göra längre när det kommer gäster. Man drar ut bordet och lägger i en extra skiva.",
+      "ja": "「utdragbar」なテーブルは、お{客|きゃく}さんが{来|く}たときに{長|なが}くできます。テーブルを{引|ひ}き{出|だ}して、{板|いた}を1{枚|まい}{足|た}します。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.fällbar",
@@ -302,9 +334,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Fällbar säger man om en stol eller ett bord som man kan vika ihop. Då tar den lite plats när man inte använder den.",
+      "ja": "「fällbar」は、{折|お}りたためる{椅子|いす}やテーブルに{使|つか}います。{使|つか}わないときは{場所|ばしょ}をとりません。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.stapla",
@@ -344,7 +384,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.sits",
@@ -372,14 +416,38 @@
        "ja": "その{椅子|いす}は{座面|ざめん}がやわらかいです。"
       }
      ],
+     "labelSv": "på en stol",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.sits.2",
+     "ja": "（{困|こま}った）{状況|じょうきょう}",
+     "defSv": "En situation, ofta en svår.",
+     "defJa": "（{特|とく}に{難|むずか}しい）{立場|たちば}や{状況|じょうきょう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det är en jobbig sits för honom.",
+       "ja": "{彼|かれ}にとって{大変|たいへん}な{状況|じょうきょう}です。"
+      }
+     ],
+     "labelSv": "situation",
+     "register": "informal",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.pall",
@@ -486,7 +554,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.pinnstol",
@@ -521,7 +593,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.ek",
@@ -589,14 +665,41 @@
        "ja": "そのテーブルはオークの{無垢材|むくざい}です。"
       }
      ],
+     "labelSv": "samma material",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Ett bord i massiv ek är av ek hela vägen igenom, inte bara på ytan. Massiva möbler är ofta tunga och håller länge.",
+      "ja": "massivなオークのテーブルは、{表面|ひょうめん}だけでなく{中|なか}まで{全部|ぜんぶ}オークです。{無垢|むく}の{家具|かぐ}はよく{重|おも}く、{長持|ながも}ちします。"
      }
+    },
+    {
+     "id": "s.massiv.2",
+     "ja": "{大規模|だいきぼ}な、{強|つよ}い",
+     "defSv": "Mycket stor och stark.",
+     "defJa": "とても{大|おお}きくて{強|つよ}い。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han fick massiv hjälp av sina vänner.",
+       "ja": "{彼|かれ}は{友|とも}だちから{大|おお}きな{助|たす}けを{受|う}けました。"
+      }
+     ],
+     "labelSv": "mycket stor",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

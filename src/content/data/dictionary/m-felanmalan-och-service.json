@@ -33,7 +33,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.felanmäla",
@@ -73,7 +77,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.vicevärd",
@@ -99,6 +107,10 @@
       {
        "sv": "Ring vicevärden om hissen inte fungerar.",
        "ja": "エレベーターが{動|うご}かなければ{管理人|かんりにん}に{電話|でんわ}してください。"
+      },
+      {
+       "sv": "Vicevärden visade oss tvättstugan och förrådet.",
+       "ja": "{管理人|かんりにん}が、{洗濯室|せんたくしつ}と{物置|ものおき}を{案内|あんない}してくれました。"
       }
      ],
      "tags": [
@@ -110,9 +122,17 @@
      "explanation": {
       "sv": "En vicevärd är en person som tar hand om ett hus åt ägaren. Man kan ringa vicevärden om något är trasigt, om man har frågor om tvättstugan eller om grannar stör.",
       "ja": "「vicevärd」は、{持|も}ち{主|ぬし}に{代|か}わって{建物|たてもの}の{管理|かんり}をする{人|ひと}です。{何|なに}かが{壊|こわ}れたとき、{洗濯室|せんたくしつ}について{聞|き}きたいとき、{隣人|りんじん}がうるさいときに{連絡|れんらく}できます。"
-     }
+     },
+     "collocations": [
+      "kontakta vicevärden",
+      "husets vicevärd"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.fastighetsskötare",
@@ -138,6 +158,10 @@
       {
        "sv": "Fastighetsskötaren byter lampor i trappan.",
        "ja": "{保守係|ほしゅがかり}が{階段|かいだん}の{電球|でんきゅう}を{替|か}えます。"
+      },
+      {
+       "sv": "Fastighetsskötarna tar bort snön på gården varje morgon.",
+       "ja": "{保守係|ほしゅがかり}が、{毎朝|まいあさ}{中庭|なかにわ}の{雪|ゆき}をどけます。"
       }
      ],
      "tags": [
@@ -149,9 +173,17 @@
      "explanation": {
       "sv": "En fastighetsskötare lagar små saker och håller ordning i och runt ett hus, till exempel byter lampor, tar bort snö och klipper gräset. Man ringer ofta fastighetsskötaren när något går sönder i lägenheten.",
       "ja": "「fastighetsskötare」は、{電球|でんきゅう}を{替|か}えたり、{雪|ゆき}かきをしたり、{芝|しば}を{刈|か}ったりして、{建物|たてもの}の{中|なか}と{周|まわ}りの{小|ちい}さな{修理|しゅうり}や{管理|かんり}をする{人|ひと}です。{部屋|へや}で{何|なに}かが{壊|こわ}れるとよく{電話|でんわ}します。"
-     }
+     },
+     "collocations": [
+      "ringa fastighetsskötaren",
+      "fastighetsskötaren kommer"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.ärende",
@@ -179,6 +211,31 @@
        "ja": "あなたの{件|けん}には{番号|ばんごう}がつきました。"
       }
      ],
+     "labelSv": "fråga, fall",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Ett ärende är en sak som man vill ha hjälp med, till exempel en felanmälan eller en fråga till en myndighet. Ärendet får ofta ett nummer, så att man kan fråga hur det går.",
+      "ja": "「ärende」は、{修理|しゅうり}の{依頼|いらい}や{役所|やくしょ}への{問|と}い{合|あ}わせなど、{助|たす}けてほしい{用件|ようけん}のことです。よく{番号|ばんごう}がつけられるので、どうなっているか{問|と}い{合|あ}わせることができます。"
+     }
+    },
+    {
+     "id": "s.ärende.2",
+     "ja": "{用事|ようじ}",
+     "defSv": "Något som man måste göra på stan, till exempel gå till banken eller posten.",
+     "defJa": "{町|まち}でしなければならない{用事|ようじ}。たとえば{銀行|ぎんこう}や{郵便局|ゆうびんきょく}に{行|い}くこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Jag ska bara göra några ärenden på stan.",
+       "ja": "ちょっと{町|まち}で{用事|ようじ}をいくつか{済|す}ませてきます。"
+      }
+     ],
+     "labelSv": "göra på stan",
      "tags": [
       "hemmet"
      ],
@@ -186,7 +243,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.åtgärda",
@@ -214,6 +275,10 @@
       {
        "sv": "Vi åtgärdar felet inom en vecka.",
        "ja": "1{週間以内|しゅうかんいない}に{故障|こしょう}に{対処|たいしょ}します。"
+      },
+      {
+       "sv": "Felet åtgärdades samma dag.",
+       "ja": "{故障|こしょう}は、その{日|ひ}のうちに{修理|しゅうり}されました。"
       }
      ],
      "frame": {
@@ -229,9 +294,17 @@
      "explanation": {
       "sv": "Att åtgärda betyder att man gör något för att lösa ett problem eller laga ett fel. Ordet är formellt och används ofta av företag och hyresvärdar: ”Vi åtgärdar felet så snart som möjligt.”",
       "ja": "「åtgärda」は、{問題|もんだい}を{解決|かいけつ}したり{不具合|ふぐあい}を{直|なお}したりするために{何|なに}かをすることです。{改|あらた}まった{言葉|ことば}で、{会社|かいしゃ}や{家主|やぬし}がよく「できるだけ{早|はや}く{対処|たいしょ}します」と{使|つか}います。"
-     }
+     },
+     "collocations": [
+      "åtgärda ett fel",
+      "åtgärda problemet"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.akut",
@@ -263,9 +336,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Något som är akut måste man ta hand om på en gång. Det kan inte vänta till i morgon, till exempel en stor vattenläcka.",
+      "ja": "「akut」なことは、すぐに{対処|たいしょ}しなければなりません。たとえば{大|おお}きな{水漏|みずも}れのように、{明日|あした}まで{待|ま}つことはできません。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.jour",
@@ -291,6 +372,10 @@
       {
        "sv": "På natten ringer man jouren.",
        "ja": "{夜|よる}は{緊急窓口|きんきゅうまどぐち}に{電話|でんわ}します。"
+      },
+      {
+       "sv": "Min pappa har jour i helgen, så han kan inte följa med.",
+       "ja": "{父|ちち}は{今週末|こんしゅうまつ}{当番|とうばん}なので、{一緒|いっしょ}に{来|こ}られません。"
       }
      ],
      "tags": [
@@ -302,9 +387,17 @@
      "explanation": {
       "sv": "Jour betyder att det finns någon som man kan ringa utanför vanliga tider, till exempel på natten eller helgen, om något akut händer. Många hyresvärdar har en jour för vattenläckor och andra problem.",
       "ja": "「jour」は、{夜|よる}や{週末|しゅうまつ}など、ふだんの{時間外|じかんがい}に{緊急|きんきゅう}のことが{起|お}きたとき{電話|でんわ}できる{人|ひと}がいることです。{多|おお}くの{家主|やぬし}は{水漏|みずも}れなどのための{緊急|きんきゅう}{窓口|まどぐち}を{持|も}っています。"
-     }
+     },
+     "collocations": [
+      "ringa jouren",
+      "ha jour"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.dygn",
@@ -339,7 +432,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.element",
@@ -522,7 +619,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.elcentral",
@@ -548,6 +649,10 @@
       {
        "sv": "Elcentralen sitter i hallen.",
        "ja": "{分電盤|ぶんでんばん}は{玄関|げんかん}にあります。"
+      },
+      {
+       "sv": "När strömmen gick, öppnade hon elcentralen och tittade på säkringarna.",
+       "ja": "{停電|ていでん}したとき、{彼女|かのじょ}は{分電盤|ぶんでんばん}を{開|あ}けて、ヒューズを{見|み}ました。"
       }
      ],
      "tags": [
@@ -559,9 +664,17 @@
      "explanation": {
       "sv": "Elcentralen är ett litet skåp, ofta i hallen, där elen kommer in i bostaden. Där sitter säkringarna. Om elen slutar fungera i ett rum, är det där man tittar först.",
       "ja": "「elcentral」は、たいてい{玄関|げんかん}にある{小|ちい}さな{箱|はこ}で、{電気|でんき}が{家|いえ}に{入|はい}ってくるところです。ブレーカーがあります。ある{部屋|へや}で{電気|でんき}が{消|き}えたら、まずここを{見|み}ます。"
-     }
+     },
+     "collocations": [
+      "öppna elcentralen",
+      "säkringarna i elcentralen"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.lås",
@@ -596,7 +709,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.låssmed",
@@ -631,7 +748,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.huvudnyckel",
@@ -657,6 +778,10 @@
       {
        "sv": "Vicevärden har en huvudnyckel.",
        "ja": "{管理人|かんりにん}はマスターキーをもっています。"
+      },
+      {
+       "sv": "Med huvudnyckeln kan fastighetsskötaren öppna alla förråd.",
+       "ja": "マスターキーがあれば、{保守係|ほしゅがかり}はすべての{物置|ものおき}を{開|あ}けられます。"
       }
      ],
      "tags": [
@@ -668,9 +793,17 @@
      "explanation": {
       "sv": "En huvudnyckel passar till alla dörrar i ett hus, till exempel till alla lägenheter och förråd. Den har bara vicevärden eller hyresvärden, så att de kan komma in vid problem.",
       "ja": "「huvudnyckel」は、すべての{部屋|へや}や{倉庫|そうこ}など、{建物|たてもの}の{全部|ぜんぶ}のドアに{合|あ}うカギです。{問題|もんだい}があったときに{入|はい}れるよう、{管理人|かんりにん}や{家主|やぬし}だけが{持|も}っています。"
-     }
+     },
+     "collocations": [
+      "öppna med huvudnyckeln",
+      "låna huvudnyckeln"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.släppa-in",
@@ -714,7 +847,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

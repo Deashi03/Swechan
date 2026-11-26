@@ -26,15 +26,48 @@
        "ja": "{食|た}べ{物|もの}は{清潔|せいけつ}な{容器|ようき}で{保存|ほぞん}してください。"
       }
      ],
+     "labelSv": "behållare",
      "tags": [
       "hemmet",
       "mat"
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "order": 1,
+     "explanation": {
+      "sv": "Kärl är ett ord för allt som man kan ha mat eller vatten i, till exempel en skål eller en kanna.",
+      "ja": "「kärl」は、ボウルやピッチャーなど、{食|た}べ{物|もの}や{水|みず}を{入|い}れられるものすべてを{指|さ}す{言葉|ことば}です。"
      }
+    },
+    {
+     "id": "s.kärl.2",
+     "ja": "{血管|けっかん}、（{体|からだ}の）{管|くだ}",
+     "defSv": "Ett smalt rör i kroppen som blodet går i.",
+     "defJa": "{体|からだ}の{中|なか}にある、{血|ち}が{流|なが}れる{細|ほそ}い{管|くだ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Blodet går i kärlen i hela kroppen.",
+       "ja": "{血|ち}は{体中|からだじゅう}の{血管|けっかん}を{流|なが}れます。"
+      }
+     ],
+     "labelSv": "i kroppen",
+     "tags": [
+      "hemmet",
+      "mat"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.glasburk",
@@ -70,7 +103,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.plastburk",
@@ -106,7 +143,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.plastlåda",
@@ -142,7 +183,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.förvaringsburk",
@@ -178,7 +223,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.skruvlock",
@@ -214,7 +263,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.tät",
@@ -250,6 +303,10 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Ett tätt lock släpper inte ut vatten eller luft. Maten håller längre i en tät burk.",
+      "ja": "{密閉|みっぺい}できるふたは、{水|みず}も{空気|くうき}も{通|とお}しません。{密閉|みっぺい}{容器|ようき}に{入|い}れると、{食|た}べ{物|もの}が{長|なが}もちします。"
      }
     },
     {
@@ -274,7 +331,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.läcka",
@@ -303,6 +364,7 @@
        "ja": "{容器|ようき}がもれています。"
       }
      ],
+     "labelSv": "vatten",
      "frame": {
       "subject": "Påsen"
      },
@@ -312,9 +374,37 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.läcka.2",
+     "ja": "（{情報|じょうほう}を）もらす、リークする",
+     "defSv": "Berätta något hemligt, till exempel för en tidning.",
+     "defJa": "{秘密|ひみつ}のことを、{新聞|しんぶん}などに{話|はな}す。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Någon har läckt planen till tidningen.",
+       "ja": "{誰|だれ}かが{計画|けいかく}を{新聞|しんぶん}にもらしました。"
+      }
+     ],
+     "labelSv": "hemligheter",
+     "tags": [
+      "hemmet",
+      "mat"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.plastpåse",
@@ -350,7 +440,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.fryspåse",
@@ -386,7 +480,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.gummisnodd",
@@ -422,7 +520,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.påsklämma",
@@ -458,7 +560,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.stapelbar",
@@ -491,9 +597,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Stapelbara burkar kan man ställa ovanpå varandra. Då tar de mindre plats i skåpet.",
+      "ja": "「stapelbar」な{容器|ようき}は{積|つ}み{重|かさ}ねられます。そうすると{戸棚|とだな}の{場所|ばしょ}をあまりとりません。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.sylta",
@@ -534,7 +648,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.konservera",
@@ -563,6 +681,7 @@
        "ja": "{昔|むかし}は{冬|ふゆ}のために{食|た}べ{物|もの}を{保存|ほぞん}しました。"
       }
      ],
+     "labelSv": "mat",
      "frame": {
       "subject": "De",
       "complement": "grönsakerna"
@@ -573,9 +692,37 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.konservera.2",
+     "ja": "（{美術品|びじゅつひん}などを）{保存|ほぞん}{処理|しょり}する",
+     "defSv": "Laga och skydda gamla saker, till exempel tavlor, så att de håller länge.",
+     "defJa": "{絵|え}など{古|ふる}いものを{直|なお}して{守|まも}り、{長|なが}もちするようにする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Museet konserverar gamla tavlor.",
+       "ja": "{美術館|びじゅつかん}は{古|ふる}い{絵|え}を{保存|ほぞん}{処理|しょり}しています。"
+      }
+     ],
+     "labelSv": "gamla saker",
+     "tags": [
+      "hemmet",
+      "mat"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

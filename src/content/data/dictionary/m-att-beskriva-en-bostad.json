@@ -38,9 +38,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Rymlig säger man om ett rum, en bil eller en väska där det finns mycket plats.",
+      "ja": "「rymlig」は、{部屋|へや}や{車|くるま}、かばんなどに{場所|ばしょ}がたくさんあるときに{使|つか}います。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.trång",
@@ -69,6 +77,7 @@
        "ja": "{台所|だいどころ}は{狭|せま}いです。"
       }
      ],
+     "labelSv": "lite plats",
      "synonyms": [
       {
        "senseId": "s.rymlig.1",
@@ -80,9 +89,34 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Trång betyder att det finns för lite plats, så att man inte kan röra sig fritt. En liten hall med många skor kan vara trång.",
+      "ja": "「trång」は{場所|ばしょ}が{少|すく}なすぎて、{自由|じゆう}に{動|うご}けないという{意味|いみ}です。{靴|くつ}がたくさんある{小|ちい}さな{玄関|げんかん}は{狭|せま}いことがあります。"
+     }
+    },
+    {
+     "id": "s.trång.2",
+     "ja": "（{服|ふく}が）きつい",
+     "defSv": "Om kläder och skor: för små, så att de sitter hårt.",
+     "defJa": "{服|ふく}や{靴|くつ}が{小|ちい}さくて、きつい。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Byxorna är för trånga nu.",
+       "ja": "このズボンは{今|いま}はきつすぎます。"
+      }
+     ],
+     "labelSv": "om kläder",
+     "quality": {
+      "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.mysig",
@@ -122,7 +156,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.modern",
@@ -210,7 +248,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.nybyggd",
@@ -242,9 +284,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Nybyggd säger man om ett hus som man har byggt för kort tid sedan. Allt är nytt och ingen har bott där förut.",
+      "ja": "「nybyggd」は、{建|た}てたばかりの{家|いえ}に{使|つか}います。{全部|ぜんぶ}が{新|あたら}しく、{前|まえ}に{誰|だれ}も{住|す}んだことがありません。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.sliten",
@@ -277,6 +327,10 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Sliten säger man om en sak som har använts länge, till exempel ett golv eller en soffa. Den fungerar, men den är inte fin längre.",
+      "ja": "「sliten」は、{床|ゆか}やソファなど、{長|なが}く{使|つか}われたものに{使|つか}います。{使|つか}えますが、もうきれいではありません。"
      }
     },
     {
@@ -353,9 +407,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Charmig säger man om något som man tycker om för att det är personligt och har en egen känsla, ofta lite gammalt. En gammal stuga kan vara charmig fast den inte är modern.",
+      "ja": "「charmig」は、{個性|こせい}があって{好|この}ましく{感|かん}じるもの、よく{少|すこ}し{古|ふる}いものに{使|つか}います。{古|ふる}い{小屋|こや}は、モダンでなくても{魅力的|みりょくてき}なことがあります。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.praktisk",
@@ -414,7 +476,12 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26",
+    "coreSense": "s.praktisk.1"
+   }
   },
   {
    "id": "e.central",
@@ -443,14 +510,41 @@
        "ja": "そのアパートは{中心部|ちゅうしんぶ}にあります。"
       }
      ],
+     "labelSv": "nära centrum",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Central säger man om en bostad som ligger nära centrum, så att det är nära till affärer och bussar.",
+      "ja": "「central」は、{町|まち}の{中心|ちゅうしん}に{近|ちか}く、{店|みせ}やバスが{近|ちか}い{住|す}まいに{使|つか}います。"
      }
+    },
+    {
+     "id": "s.central.2",
+     "ja": "{中心的|ちゅうしんてき}な、{重要|じゅうよう}な",
+     "defSv": "Viktigast, som allt annat hänger på.",
+     "defJa": "いちばん{大切|たいせつ}で、ほかのことのもとになる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det är en central fråga för oss.",
+       "ja": "それは{私|わたし}たちにとって{中心的|ちゅうしんてき}な{問題|もんだい}です。"
+      }
+     ],
+     "labelSv": "viktig",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.läge",
@@ -485,8 +579,46 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.läge.2",
+     "ja": "{状況|じょうきょう}",
+     "defSv": "Hur det är just nu, situationen.",
+     "defJa": "{今|いま}どうなっているか、ということ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I det här läget kan vi inte göra något.",
+       "ja": "この{状況|じょうきょう}では、{私|わたし}たちは{何|なに}もできません。"
+      }
+     ],
+     "labelSv": "situation",
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.läge.3",
+     "ja": "モード、（{機械|きかい}の）{設定|せってい}",
+     "defSv": "Hur en maskin arbetar just nu, till exempel tyst.",
+     "defJa": "{機械|きかい}やスイッチがどの{状態|じょうたい}になっているか。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Telefonen är i tyst läge.",
+       "ja": "{電話|でんわ}はマナーモードになっています。"
+      }
+     ],
+     "labelSv": "inställning",
+     "quality": {
+      "status": "ai-draft"
+     }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.bullrig",
@@ -520,9 +652,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Bullrig betyder att det hörs mycket ljud som stör, till exempel från bilar på en stor gata.",
+      "ja": "「bullrig」は、{大|おお}きな{通|とお}りの{車|くるま}など、{邪魔|じゃま}な{音|おと}がたくさん{聞|き}こえるという{意味|いみ}です。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.solig",
@@ -558,7 +698,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.dragig",
@@ -592,9 +736,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Dragig säger man om ett rum där kall luft kommer in, ofta vid gamla fönster eller dörrar. Då kan man frysa fast det är varmt inne.",
+      "ja": "「dragig」は、{古|ふる}い{窓|まど}やドアなどから{冷|つめ}たい{空気|くうき}が{入|はい}ってくる{部屋|へや}に{使|つか}います。{部屋|へや}が{暖|あたた}かくても{寒|さむ}く{感|かん}じることがあります。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.högt-i-tak",
@@ -617,14 +769,41 @@
        "ja": "{古|ふる}いアパートは{天井|てんじょう}が{高|たか}いことが{多|おお}いです。"
       }
      ],
+     "labelSv": "i ett rum",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Högt i tak säger man om ett rum där det är långt upp till taket, ofta i gamla hus. Rummet känns då stort och ljust.",
+      "ja": "「högt i tak」は、{古|ふる}い{家|いえ}などで{天井|てんじょう}までが{高|たか}い{部屋|へや}に{使|つか}います。{部屋|へや}が{広|ひろ}く{明|あか}るく{感|かん}じられます。"
      }
+    },
+    {
+     "id": "s.högt-i-tak.2",
+     "ja": "{自由|じゆう}に{意見|いけん}が{言|い}える",
+     "defSv": "När alla får säga vad de tycker, till exempel på en arbetsplats.",
+     "defJa": "{職場|しょくば}などで、{誰|だれ}でも{思|おも}ったことを{自由|じゆう}に{言|い}える。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "På vårt kontor är det högt i tak.",
+       "ja": "{私|わたし}たちの{職場|しょくば}は{自由|じゆう}に{意見|いけん}が{言|い}えます。"
+      }
+     ],
+     "labelSv": "öppet klimat",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

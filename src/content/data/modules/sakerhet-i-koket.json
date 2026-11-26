@@ -1,11 +1,11 @@
 {
  "id": "m.sakerhet-i-koket",
- "contentVersion": 5,
- "updatedAt": "2026-11-22",
+ "contentVersion": 8,
+ "updatedAt": "2026-11-26",
  "titleSv": "Säkerhet i köket",
  "titleJa": "{台所|だいどころ}の{安全|あんぜん}",
- "descriptionSv": "Säkerhet i köket: brandvarnare, brandsläckare, brandfilt, brännskador och barnsäkert.",
- "descriptionJa": "{台所|だいどころ}の{安全|あんぜん}：{火災報知器|かさいほうちき}、{消火器|しょうかき}、{消火|しょうか}ブランケット、やけど、チャイルドロック。",
+ "descriptionSv": "Hur man förebygger olyckor och bränder i köket, vad man gör om det börjar brinna och hur man tar hand om en brännskada.",
+ "descriptionJa": "{台所|だいどころ}での{事故|じこ}や{火事|かじ}の{防|ふせ}ぎ{方|かた}、{火|ひ}が{出|で}たときにすること、そしてやけどの{手当|てあ}ての{仕方|しかた}を{学|まな}びます。",
  "categoryId": "R01-A01-T03",
  "tags": [
   "hemmet"
@@ -82,7 +82,7 @@
   "titleSv": "Eld i pannan",
   "paragraphs": [
    "Den första december testar Aiko och Erik sin brandvarnare. Den piper inte. ”Batteriet är slut”, säger Erik och byter det.",
-   "De flesta olyckor hemma händer i köket. Därför köper de en brandsläckare och en brandfilt. Mormor har en spisvakt, som stänger av spisen om den har varit på för länge.",
+   "Många olyckor hemma händer i köket, och de flesta bränder börjar där. Därför köper de en brandsläckare och en brandfilt. Mormor har en spisvakt, som stänger av spisen om den har varit på för länge.",
    "En kväll steker Erik bacon. Plötsligt brinner det i pannan! Larmet går. Aiko tar brandfilten och lägger den över pannan. Elden slocknar.",
    "”Häll aldrig vatten på brinnande olja”, säger Aiko. ”Då kan det bli en stor brand.”",
    "Erik har fått en liten brännskada på handen. Aiko säger att han ska kyla ner den med svalt vatten i tjugo minuter.",
@@ -154,7 +154,24 @@
    }
   ],
   "factSources": [
-   "MSB (från 2026 Myndigheten för civilt försvar): testa brandvarnaren regelbundet, Brandvarnarens dag den 1 december; häll aldrig vatten på brinnande olja; kyl brännskador med svalt eller ljummet vatten i ca 20 minuter (1177)."
+   {
+    "text": "Testa brandvarnaren regelbundet. Den 1 december är Brandvarnarens dag, en påminnelse om att testa den.",
+    "source": "Myndigheten för civilt försvar (före 2026 MSB), ”Brandvarnare”",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Häll aldrig vatten på brinnande olja; kväv elden med ett lock eller en brandfilt.",
+    "source": "Myndigheten för civilt försvar (före 2026 MSB), ”Brand i hemmet”",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Kyl en brännskada med svalt eller ljummet vatten i ungefär 20 minuter.",
+    "source": "1177 Vårdguiden, ”Brännskador”",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -165,5 +182,6 @@
    "Vad gör man i Japan för att vara säker vid jordbävningar och bränder?",
    "Har du varit med om en olycka i köket?"
   ]
- }
+ },
+ "standard": 2
 }

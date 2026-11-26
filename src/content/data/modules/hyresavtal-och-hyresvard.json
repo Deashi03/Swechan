@@ -1,11 +1,11 @@
 {
  "id": "m.hyresavtal-och-hyresvard",
- "contentVersion": 3,
- "updatedAt": "2026-11-19",
+ "contentVersion": 5,
+ "updatedAt": "2026-11-26",
  "titleSv": "Hyresavtal och hyresvärd",
  "titleJa": "{賃貸借契約|ちんたいしゃくけいやく}と{大家|おおや}",
- "descriptionSv": "Att hyra bostad: hyra, hyresvärd, hyresavtal, deposition, villkor och uppsägningstid.",
- "descriptionJa": "{住|す}まいを{借|か}りること：{家賃|やちん}、{大家|おおや}、{賃貸契約|ちんたいけいやく}、{敷金|しききん}、{条件|じょうけん}、{解約予告期間|かいやくよこくきかん}。",
+ "descriptionSv": "Du lär dig vad som står i ett hyresavtal och vad hyresgästen och hyresvärden måste tänka på när man hyr en bostad.",
+ "descriptionJa": "{賃貸借契約|ちんたいしゃくけいやく}に{何|なに}が{書|か}かれているか、そして{住宅|じゅうたく}を{借|か}りるときに{借|か}り{主|ぬし}と{大家|おおや}が{気|き}をつけるべきことを{学|まな}びます。",
  "categoryId": "R01-A01-T06",
  "tags": [
   "hemmet",
@@ -155,7 +155,18 @@
    }
   ],
   "factSources": [
-   "Hyreslagen: normalt tre månaders uppsägningstid för hyresgäst; deposition förekommer främst vid andrahandsuthyrning."
+   {
+    "text": "En hyresgäst har normalt tre månaders uppsägningstid för en bostadslägenhet som hyrs tills vidare.",
+    "source": "Jordabalken 12 kap. 4 § (hyreslagen)",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Deposition förekommer främst vid andrahandsuthyrning; vid förstahandskontrakt är det ovanligt.",
+    "source": "Hyresgästföreningen, hyresgastforeningen.se",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -166,5 +177,6 @@
    "Hur fungerar deposition och nyckelpengar i Japan?",
    "Har du haft problem med en hyresvärd?"
   ]
- }
+ },
+ "standard": 2
 }

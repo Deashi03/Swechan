@@ -1,11 +1,11 @@
 {
  "id": "m.flyttdag-och-adressandring",
- "contentVersion": 2,
- "updatedAt": "2026-11-17",
+ "contentVersion": 4,
+ "updatedAt": "2026-11-26",
  "titleSv": "Flyttdag och adressändring",
  "titleJa": "{引|ひ}っ{越|こ}しの{日|ひ}と{住所変更|じゅうしょへんこう}",
- "descriptionSv": "Flyttdagen: hyrbil, flytthjälp, flyttlass, besiktning, nycklar och adressändring.",
- "descriptionJa": "{引|ひ}っ{越|こ}しの{日|ひ}：レンタカー、{手伝|てつだ}い、{荷物|にもつ}の{運搬|うんぱん}、{点検|てんけん}、カギの{引|ひ}き{渡|わた}し、{住所変更|じゅうしょへんこう}。",
+ "descriptionSv": "Du lär dig att planera och prata om en flyttdag, från att lasta bilen till att lämna över nycklarna och ändra adress.",
+ "descriptionJa": "{車|くるま}に{荷物|にもつ}を{積|つ}むことから、{鍵|かぎ}を{渡|わた}して{住所|じゅうしょ}を{変更|へんこう}することまで、{引|ひ}っ{越|こ}しの{日|ひ}の{計画|けいかく}を{立|た}てて{話|はな}せるようになります。",
  "categoryId": "R01-A01-T06",
  "tags": [
   "hemmet"
@@ -160,7 +160,12 @@
    }
   ],
   "factSources": [
-   "Adressändring och eftersändning beställs i Sverige hos PostNord/Svensk Adressändring; flyttanmälan till Skatteverket behandlas i en senare modul."
+   {
+    "text": "Adressändring och eftersändning av post beställs hos Svensk Adressändring, som ägs av PostNord.",
+    "source": "Svensk Adressändring, adressandring.se",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -171,5 +176,6 @@
    "Vad måste man göra i Japan när man byter adress?",
    "Vad är det jobbigaste med en flyttdag?"
   ]
- }
+ },
+ "standard": 2
 }

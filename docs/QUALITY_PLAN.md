@@ -132,7 +132,7 @@ Varje kö genereras av `npm run audit:content -- --backlog` till `quality/backlo
 | B3 ✅ | Grundord med bara fackbetydelse: lägg till grundbetydelsen | 265 poster | 1–2 |
 | B4 ✅ | Planerade men ej levererade animationer (46), sedan Fysik och Kemi | cirka 350 ord | 2–3 |
 | B5 ✅ | Manuellt spår för bildlösa ord (klar 2026-11-26: de sista 100 orden i R01–R07, 15 avgjorda av produktägaren). Klart: Avancerad matematik, Filosofi & etik (2026-11-20), Juridik & rättsväsende, Ekologi & miljö, Fysik, Matematikens grunder, Väder & klimat, Kemi, Medier & samhällsdebatt, Ekonomi & arbetsliv, Utbildning & lärande, Landskap & geologi, Historiska epoker, Civilisationer, Politik & demokrati, Religion & idéhistoria (2026-11-21) | 604 ord (0 kvar) | klar |
-| B6 | Per överämne, i ordning R01 → R06: betydelseinventering, förklaringar (K5–K7), andra exempel, animationer för verb och processord, strukturerade fakta | 36 ämnesgrupper | en ämnesgrupp per session, högst tre parallellt |
+| B6 | Per överämne, i ordning R01 → R06: betydelseinventering, förklaringar (K5–K7), andra exempel, animationer för verb och processord, strukturerade fakta. Klart: *Vardag & hem* (R01-A01, 42 moduler, 2026-11-26) | 36 överämnen (1 klart) | en ämnesgrupp per session, högst tre parallellt |
 | B7 | Språkgranskning av R04–R06 med metoden från R01–R03. Kan göras i samma pass som B6 för de grupperna | cirka 720 moduler | ingår i B6 |
 
 **Ordning inom B6 för en ämnesgrupp:**
