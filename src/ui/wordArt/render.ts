@@ -259,6 +259,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'lstruc.': () => import('./langStructure').then((m) => m.LSTRUC_MOTIFS),
   'pron.': () => import('./pronunciation').then((m) => m.PRON_MOTIFS),
   'ttype.': () => import('./textTypes').then((m) => m.TTYPE_MOTIFS),
+  'litg.': () => import('./literaryGenres').then((m) => m.LITG_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
