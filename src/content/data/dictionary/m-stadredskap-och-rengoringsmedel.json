@@ -26,6 +26,7 @@
        "ja": "ぬれたぞうきんでテーブルをふいてください。"
       }
      ],
+     "labelSv": "att torka med",
      "tags": [
       "hemmet",
       "städning"
@@ -33,8 +34,34 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.trasa.2",
+     "ja": "ぼろ（{服|ふく}）",
+     "defSv": "Gamla och trasiga kläder, oftast i plural.",
+     "defJa": "{古|ふる}くて{破|やぶ}れた{服|ふく}。ふつう{複数形|ふくすうけい}で{使|つか}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Mannen på bilden gick klädd i trasor.",
+       "ja": "{写真|しゃしん}の{男|おとこ}の{人|ひと}はぼろを{着|き}ていました。"
+      }
+     ],
+     "labelSv": "gamla kläder",
+     "tags": [
+      "hemmet",
+      "städning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.disktrasa",
@@ -70,7 +97,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.diskborste",
@@ -106,7 +137,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.skurborste",
@@ -142,7 +177,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.hink",
@@ -178,7 +217,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.damm",
@@ -318,7 +361,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.rengöringsmedel",
@@ -354,7 +401,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.allrengöring",
@@ -393,7 +444,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.diskmedel",
@@ -470,7 +525,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.gummihandske",
@@ -506,7 +565,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.frätande",
@@ -532,8 +595,13 @@
       {
        "sv": "Medlet är frätande, var försiktig!",
        "ja": "この{洗剤|せんざい}は{腐食性|ふしょくせい}があるので{注意|ちゅうい}して！"
+      },
+      {
+       "sv": "Syran i flaskan är starkt frätande, så den ska stå högt upp där barn inte når.",
+       "ja": "{瓶|びん}の{中|なか}の{酸|さん}は{腐食性|ふしょくせい}が{強|つよ}いので、{子|こ}どもの{手|て}が{届|とど}かない{高|たか}い{所|ところ}に{置|お}きます。"
       }
      ],
+     "labelSv": "om ämnen",
      "tags": [
       "hemmet",
       "städning"
@@ -544,9 +612,40 @@
      "explanation": {
       "sv": "Frätande betyder att ett ämne är så starkt att det kan skada huden, ögonen eller ytor om man kommer åt det. På förpackningen finns en bild som varnar, och man ska använda handskar.",
       "ja": "「frätande」は、{触|ふ}れると{肌|はだ}や{目|め}、{物|もの}の{表面|ひょうめん}を{傷|いた}めるほど{強|つよ}い{物質|ぶっしつ}だという{意味|いみ}です。そういう{洗剤|せんざい}の{包装|ほうそう}には{警告|けいこく}マークがあり、{手袋|てぶくろ}を{使|つか}うべきです。"
-     }
+     },
+     "collocations": [
+      "frätande ämne",
+      "frätande vätska",
+      "starkt frätande"
+     ]
+    },
+    {
+     "id": "s.frätande.2",
+     "ja": "{辛辣|しんらつ}な",
+     "defSv": "Om det som någon säger eller skriver: mycket hårt och elakt.",
+     "defJa": "{人|ひと}が{言|い}ったり{書|か}いたりすることについて：とても{厳|きび}しくて{意地悪|いじわる}な。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han skrev en frätande text om filmen.",
+       "ja": "その{映画|えいが}について、{彼|かれ}は{辛辣|しんらつ}な{文章|ぶんしょう}を{書|か}きました。"
+      }
+     ],
+     "labelSv": "om ord",
+     "tags": [
+      "hemmet",
+      "städning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "C1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.städskåp",
@@ -582,7 +681,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

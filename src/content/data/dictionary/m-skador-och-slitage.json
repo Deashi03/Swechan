@@ -36,7 +36,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.skada",
@@ -111,7 +115,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.gå-sönder",
@@ -154,7 +162,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.byta-ut",
@@ -198,7 +210,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.rost",
@@ -236,7 +252,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.blekna",
@@ -265,6 +285,7 @@
        "ja": "カーテンが{日光|にっこう}で{色|いろ}あせました。"
       }
      ],
+     "labelSv": "om färg",
      "frame": {
       "subject": "Färgen"
      },
@@ -274,8 +295,33 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.blekna.2",
+     "ja": "（{記憶|きおく}などが）{薄|うす}れる",
+     "defSv": "Om minnen eller känslor: bli svagare med tiden.",
+     "defJa": "{記憶|きおく}や{気持|きも}ちが、{時間|じかん}とともに{弱|よわ}くなる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Minnena från barndomen har bleknat.",
+       "ja": "{子|こ}どものころの{記憶|きおく}は{薄|うす}れてしまいました。"
+      }
+     ],
+     "labelSv": "om minnen",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.flagna",
@@ -314,7 +360,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.buckla",
@@ -342,14 +392,40 @@
        "ja": "{冷蔵庫|れいぞうこ}にへこみがあります。"
       }
      ],
+     "labelSv": "skada",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.buckla.2",
+     "ja": "{優勝|ゆうしょう}カップ",
+     "defSv": "Ett pris i form av en stor kopp av metall, till exempel i sport.",
+     "defJa": "スポーツなどでもらう、{金属|きんぞく}でできた{大|おお}きなカップの{形|かたち}の{賞|しょう}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Laget vann bucklan för tredje året i rad.",
+       "ja": "そのチームは3{年連続|ねんれんぞく}で{優勝|ゆうしょう}カップを{手|て}にしました。"
+      }
+     ],
+     "labelSv": "pris",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.nött",
@@ -383,7 +459,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.livslängd",
@@ -443,7 +523,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.garanti",
@@ -471,6 +555,27 @@
        "ja": "{洗濯機|せんたくき}には2{年|ねん}の{保証|ほしょう}がついています。"
       }
      ],
+     "labelSv": "för en vara",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.garanti.2",
+     "ja": "{保証|ほしょう}、{確|たし}かな{約束|やくそく}",
+     "defSv": "Något som gör att man kan vara säker på att något blir så.",
+     "defJa": "{何|なに}かが{確|たし}かにそうなると{安心|あんしん}できるもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det finns ingen garanti för att det blir sol i morgon.",
+       "ja": "{明日|あした}{晴|は}れるという{保証|ほしょう}はありません。"
+      }
+     ],
+     "labelSv": "säkerhet",
      "tags": [
       "hemmet"
      ],
@@ -478,7 +583,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.reklamera",
@@ -518,7 +627,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

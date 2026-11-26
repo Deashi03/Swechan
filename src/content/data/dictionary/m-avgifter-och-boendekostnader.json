@@ -32,9 +32,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Kostnad är de pengar som något kostar, till exempel mat, hyra eller resor. Man säger ofta kostnader i plural när man menar många olika saker som man betalar för.",
+      "ja": "「kostnad」は、{食費|しょくひ}、{家賃|やちん}、{旅行|りょこう}など、{何|なに}かにかかるお{金|かね}のことです。いろいろな{支払|しはら}いをまとめて{言|い}うときは、よく{複数形|ふくすうけい}の「kostnader」を{使|つか}います。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.boendekostnad",
@@ -60,6 +68,10 @@
       {
        "sv": "Boendekostnaden är hög i Stockholm.",
        "ja": "ストックホルムでは{住居費|じゅうきょひ}が{高|たか}いです。"
+      },
+      {
+       "sv": "Boendekostnaderna har ökat, så många familjer har mindre pengar kvar.",
+       "ja": "{住居費|じゅうきょひ}が{上|あ}がったので、{手元|てもと}に{残|のこ}るお{金|かね}が{減|へ}った{家族|かぞく}が{多|おお}いです。"
       }
      ],
      "tags": [
@@ -72,9 +84,17 @@
      "explanation": {
       "sv": "Boendekostnad är allt som man betalar varje månad för att bo, till exempel hyra, el, vatten, internet och försäkring. Man brukar räkna ut boendekostnaden innan man köper en bostad.",
       "ja": "「boendekostnad」は、{家賃|やちん}や{管理費|かんりひ}、{電気|でんき}・{水道|すいどう}・インターネット・{保険|ほけん}など、{住|す}むために{毎月|まいつき}{払|はら}うお{金|かね}{全部|ぜんぶ}です。{住宅|じゅうたく}を{買|か}う{前|まえ}によく{計算|けいさん}します。"
-     }
+     },
+     "collocations": [
+      "höga boendekostnader",
+      "sänka boendekostnaden"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.avgift",
@@ -100,6 +120,10 @@
       {
        "sv": "Avgiften för kursen är tre hundra kronor i månaden.",
        "ja": "コースの{料金|りょうきん}は{月|つき}300クローナです。"
+      },
+      {
+       "sv": "Banken tar en avgift på tjugo kronor i månaden för kortet.",
+       "ja": "{銀行|ぎんこう}は、カードの{手数料|てすうりょう}として{月|つき}20クローナを{取|と}ります。"
       }
      ],
      "tags": [
@@ -112,9 +136,22 @@
      "explanation": {
       "sv": "En avgift är pengar som man måste betala när någon gör något åt en eller för att få göra något, till exempel en månadsavgift för en bostadsrätt eller en avgift för att betala för sent. Det är ett vanligt ord i Sverige.",
       "ja": "「avgift」は、サービスを{受|う}けたり{何|なに}かをするために{払|はら}わなければならないお{金|かね}です。{分譲|ぶんじょう}マンションの{毎月|まいつき}の{管理費|かんりひ}や、{支払|しはら}いが{遅|おく}れたときの{手数料|てすうりょう}などです。スウェーデンでよく{使|つか}う{言葉|ことば}です。"
+     },
+     "collocations": [
+      "betala en avgift",
+      "avgiften höjs",
+      "utan avgift"
+     ],
+     "usageNote": {
+      "sv": "Kostnad är allt som något kostar. En avgift är pengar som man betalar för att någon gör något åt en eller för att få vara med, till exempel månadsavgiften.",
+      "ja": "「kostnad」は、{何|なに}かにかかるお{金|かね}{全体|ぜんたい}です。「avgift」は、{何|なに}かをしてもらうためや{会員|かいいん}になるために{払|はら}うお{金|かね}で、たとえば{月々|つきづき}の{管理費|かんりひ}がそうです。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.räkning",
@@ -142,6 +179,28 @@
        "ja": "{月末|げつまつ}にすべての{請求書|せいきゅうしょ}を{払|はら}います。"
       }
      ],
+     "labelSv": "att betala",
+     "tags": [
+      "hemmet",
+      "ekonomi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
+    },
+    {
+     "id": "s.räkning.2",
+     "ja": "{計算|けいさん}、{算数|さんすう}",
+     "defSv": "Att räkna med tal.",
+     "defJa": "{数|かず}を{使|つか}って{計算|けいさん}すること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han är bra på räkning men tycker inte om att läsa.",
+       "ja": "{彼|かれ}は{計算|けいさん}が{得意|とくい}ですが、{読書|どくしょ}は{好|す}きではありません。"
+      }
+     ],
+     "labelSv": "räkna",
      "tags": [
       "hemmet",
       "ekonomi"
@@ -150,7 +209,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.elräkning",
@@ -186,7 +249,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.elbolag",
@@ -222,7 +289,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.elpris",
@@ -258,7 +329,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.elavtal",
@@ -284,6 +359,10 @@
       {
        "sv": "Hon har ett elavtal med fast pris.",
        "ja": "{彼女|かのじょ}は{固定料金|こていりょうきん}の{電気契約|でんきけいやく}をしています。"
+      },
+      {
+       "sv": "Vi skrev ett nytt elavtal när vi flyttade.",
+       "ja": "{引|ひ}っ{越|こ}したときに、{新|あたら}しい{電気|でんき}の{契約|けいやく}を{結|むす}びました。"
       }
      ],
      "tags": [
@@ -296,9 +375,18 @@
      "explanation": {
       "sv": "Ett elavtal är ett avtal med ett elbolag om hur man ska betala för elen. I Sverige kan man själv välja elbolag och olika sorters avtal, till exempel med ett pris som är fast eller som ändras.",
       "ja": "「elavtal」は、{電気代|でんきだい}をどう{払|はら}うかについての{電力会社|でんりょくがいしゃ}との{契約|けいやく}です。スウェーデンでは{電力会社|でんりょくがいしゃ}を{自分|じぶん}で{選|えら}べ、{固定|こてい}{料金|りょうきん}や{変動|へんどう}{料金|りょうきん}などの{契約|けいやく}があります。"
-     }
+     },
+     "collocations": [
+      "teckna elavtal",
+      "byta elavtal",
+      "elavtal med fast pris"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.rörlig",
@@ -323,8 +411,13 @@
       {
        "sv": "Med rörligt pris kan elräkningen bli dyr.",
        "ja": "{変動料金|へんどうりょうきん}だと{電気代|でんきだい}が{高|たか}くなることがあります。"
+      },
+      {
+       "sv": "Jag har rörligt elpris, så räkningen är olika varje månad.",
+       "ja": "{電気料金|でんきりょうきん}が{変動制|へんどうせい}なので、{請求額|せいきゅうがく}は{毎月違|まいつきちが}います。"
       }
      ],
+     "labelSv": "om pris",
      "tags": [
       "hemmet",
       "ekonomi"
@@ -335,9 +428,52 @@
      "explanation": {
       "sv": "Rörlig betyder att något kan ändras, till exempel ett rörligt elpris som går upp och ner varje månad. Motsatsen är fast. Med rörligt pris kan man betala mindre, men det kan också bli dyrt på vintern.",
       "ja": "「rörlig」は、{毎月|まいつき}{上|あ}がったり{下|さ}がったりする{電気代|でんきだい}のように、{変|か}わることがあるという{意味|いみ}です。{反対|はんたい}は「fast」（{固定|こてい}の）です。{変動|へんどう}{料金|りょうきん}は{安|やす}くなることもありますが、{冬|ふゆ}は{高|たか}くなることもあります。"
-     }
+     },
+     "order": 2,
+     "collocations": [
+      "rörligt pris",
+      "rörlig ränta",
+      "rörliga kostnader"
+     ],
+     "usageNote": {
+      "sv": "Rörligt pris betyder att priset inte är bestämt i förväg och kan bli högre eller lägre. Motsatsen är fast pris.",
+      "ja": "「rörligt pris（{変動料金|へんどうりょうきん}）」は、{価格|かかく}が{前|まえ}もって{決|き}まっておらず、{高|たか}くも{安|やす}くもなりうるという{意味|いみ}です。{反対|はんたい}は「fast pris（{固定料金|こていりょうきん}）」です。"
+     },
+     "synonyms": [
+      {
+       "senseId": "s.variera.1",
+       "relation": "related"
+      }
+     ]
+    },
+    {
+     "id": "s.rörlig.2",
+     "ja": "{動|うご}きやすい、{身軽|みがる}な",
+     "defSv": "Som kan röra sig lätt och snabbt.",
+     "defJa": "{簡単|かんたん}に、すばやく{動|うご}ける。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Efter operationen var han inte lika rörlig som förut.",
+       "ja": "{手術|しゅじゅつ}のあと、{彼|かれ}は{前|まえ}ほど{自由|じゆう}に{動|うご}けなくなりました。"
+      }
+     ],
+     "labelSv": "kunna röra sig",
+     "tags": [
+      "hemmet",
+      "ekonomi"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.förbrukning",
@@ -363,6 +499,10 @@
       {
        "sv": "Vår förbrukning av varmvatten är stor.",
        "ja": "{私|わたし}たちはお{湯|ゆ}をたくさん{使|つか}います。"
+      },
+      {
+       "sv": "Med nya lampor minskade förbrukningen av el.",
+       "ja": "{新|あたら}しい{電球|でんきゅう}にしたら、{電気|でんき}の{使用量|しようりょう}が{減|へ}りました。"
       }
      ],
      "tags": [
@@ -375,9 +515,18 @@
      "explanation": {
       "sv": "Förbrukning är hur mycket man använder av något, till exempel el, vatten eller bensin under en viss tid. På elräkningen kan man se sin förbrukning.",
       "ja": "「förbrukning」は、{一定|いってい}の{期間|きかん}に{電気|でんき}・{水|みず}・ガソリンなどをどれだけ{使|つか}ったかという{量|りょう}です。{電気代|でんきだい}の{請求書|せいきゅうしょ}で{使用量|しようりょう}がわかります。"
-     }
+     },
+     "collocations": [
+      "hög förbrukning",
+      "minska förbrukningen",
+      "förbrukning av el"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.mätare",
@@ -413,7 +562,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.uppvärmning",
@@ -546,7 +699,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.parkeringsplats",
@@ -582,7 +739,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.sophämtning",
@@ -618,7 +779,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.kvartal",
@@ -644,6 +809,10 @@
       {
        "sv": "Vi betalar för vattnet en gång per kvartal.",
        "ja": "{水道代|すいどうだい}は{四半期|しはんき}に1{回払|かいはら}います。"
+      },
+      {
+       "sv": "Under första kvartalet var elpriset högt.",
+       "ja": "{第|だい}1{四半期|しはんき}は、{電気料金|でんきりょうきん}が{高|たか}かったです。"
       }
      ],
      "tags": [
@@ -656,9 +825,18 @@
      "explanation": {
       "sv": "Ett kvartal är tre månader, alltså en fjärdedel av ett år. Vissa räkningar, som vatten, betalar man en gång per kvartal. Företag pratar ofta om hur det har gått under ett kvartal.",
       "ja": "「kvartal」は3か{月|げつ}、つまり{一年|いちねん}の4{分|ぶん}の1です。{水道代|すいどうだい}などは{四半期|しはんき}ごとに{払|はら}うことがあります。{会社|かいしゃ}はよく{四半期|しはんき}ごとの{業績|ぎょうせき}について{話|はな}します。"
-     }
+     },
+     "collocations": [
+      "per kvartal",
+      "första kvartalet",
+      "varje kvartal"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

@@ -1,11 +1,11 @@
 {
  "id": "m.sortera-och-slanga-sopor",
- "contentVersion": 4,
- "updatedAt": "2026-11-21",
+ "contentVersion": 6,
+ "updatedAt": "2026-11-26",
  "titleSv": "Sortera och slänga sopor",
  "titleJa": "ごみの{分別|ぶんべつ}と{処分|しょぶん}",
- "descriptionSv": "Sopor och återvinning: källsortera, återvinningsstation, pant, grovsopor och farligt avfall.",
- "descriptionJa": "ごみとリサイクル：{分別|ぶんべつ}、リサイクルステーション、デポジット、{粗大|そだい}ごみ、{有害|ゆうがい}ごみ。",
+ "descriptionSv": "Du lär dig hur man sorterar sopor i Sverige, vart olika sorters avfall ska och hur det fungerar med pant på burkar och flaskor.",
+ "descriptionJa": "スウェーデンでのごみの{分別|ぶんべつ}のしかた、いろいろなごみをどこに{出|だ}すか、そして{缶|かん}やボトルのデポジットの{仕組|しく}みを{学|まな}びます。",
  "categoryId": "R01-A01-T05",
  "tags": [
   "hemmet",
@@ -155,7 +155,18 @@
    }
   ],
   "factSources": [
-   "Svenskt pantsystem för burkar och PET-flaskor (Returpack); återvinningsstationer och återvinningscentraler drivs av kommunerna (återvinningsstationerna togs över från FTI 2024)."
+   {
+    "text": "Burkar och PET-flaskor har pant i Sverige, och pantsystemet sköts av Returpack (Pantamera).",
+    "source": "Pantamera (Returpack), pantamera.nu",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Återvinningsstationer och återvinningscentraler drivs av kommunerna; kommunerna tog 2024 över insamlingen av förpackningar från FTI.",
+    "source": "Naturvårdsverket, insamling av förpackningsavfall; förordningen (2022:1274) om producentansvar för förpackningar",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -166,5 +177,6 @@
    "Vad tycker du om pantsystemet?",
    "Vad är svårast att veta hur man ska slänga?"
   ]
- }
+ },
+ "standard": 2
 }
