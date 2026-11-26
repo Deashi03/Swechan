@@ -6,18 +6,17 @@
  * för arkeologi och källor. Terrorism ritas återhållsamt: rädda civila och en grå smäll, aldrig vapen
  * eller skadade. Bara siffror, tecken och enheter; inga ord.
  */
-import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, star, waBob, waGrow, waIn, waPulse, waShake, waSpin, waSway, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, star, waBob, waGrow, waIn, waPulse, waShake, type Svg } from './kit';
 import { HL, T, brokenHeart, heart, mini, thought } from './people';
 import { P, greyed } from './blindFix';
 import { figure } from './figures';
-import { SOFT, bust, check, cross } from './manualPhilosophy';
+import { SOFT, bust, check, cross, face } from './manualPhilosophy';
 
 const range = (n: number) => Array.from({ length: n }, (_, i) => i);
 const f1 = (n: number) => +n.toFixed(1);
 const ground = (y = 104, col = '#cfe8b9') => rect(0, y, 120, 120 - y, col, 0, null);
 const crown = (x: number, y: number, s = 1, col: string = C.gold) => g(`translate(${x} ${y}) scale(${s})`, path('M-12 6 L-12 -6 L-6 0 L0 -10 L6 0 L12 -6 L12 6 Z', col, C.ink, 1.2));
 const house = (x: number, y: number, s = 1, col: string = C.red, wall: string = C.white) => g(`translate(${x} ${y}) scale(${s})`, path('M-16 0 L0 -14 L16 0 Z', col, C.ink, 1.4), rect(-13, 0, 26, 18, wall, 1, C.ink, 1.4), rect(-4, 7, 8, 11, C.brown, 1, null));
-const crackle = (x: number, y: number, col: string = HL) => all(line(`M${x - 8} ${y} l-6 -8 M${x} ${y - 4} l0 -10 M${x + 8} ${y} l6 -8`, col, 2.4));
 const pot = (x: number, y: number, s = 1, col = '#c97b4a') => g(`translate(${x} ${y}) scale(${s})`, path('M-8 -16 L8 -16 L7 -12 C16 -8 16 10 8 14 L-8 14 C-16 10 -16 -8 -7 -12 Z', col, C.ink, 1.6), line('M-11 -2 L11 -2 M-10 4 L10 4', '#8a4a2a', 1.2));
 const scroll = (x: number, y: number, w: number, h: number, col = '#f4e7c8') => all(rect(x, y, w, h, col, 2, C.ink, 1.6), ellipse(x, y + h / 2, 4, h / 2 + 2, '#e6d3a8', C.ink, 1.4), ellipse(x + w, y + h / 2, 4, h / 2 + 2, '#e6d3a8', C.ink, 1.4));
 const scribble = (x: number, y: number, w: number, n: number, col: string = C.ink, gap = 7) => all(...range(n).map((i) => line(`M${x} ${y + i * gap} c${f1(w * 0.15)} -3 ${f1(w * 0.25)} 3 ${f1(w * 0.4)} 0 s${f1(w * 0.25)} 3 ${f1(w * 0.4)} 0 l${f1(w * 0.2)} 0`, col, 1.2)));
@@ -38,12 +37,14 @@ const sword = (x: number, y: number, s = 1, blade = '#b9c0c6') => g(`translate($
 const laurel = (x: number, y: number, r: number) => all(...[-1, 1].map((d) => all(path(`M${x} ${y + r} C${x + d * r * 1.3} ${y + r * 0.6} ${x + d * r * 1.3} ${y - r * 0.8} ${x + d * r * 0.4} ${y - r}`, 'none', C.green, 2.4), ...range(5).map((i) => { const a = Math.PI / 2 + d * (0.3 + i * 0.5); return ellipse(f1(x + Math.cos(a) * r * 1.0 * d * d), f1(y + Math.sin(a) * r), 5, 2.4, C.green, C.ink, 0.8); }))));
 
 export const MANUAL_MILARCH_MOTIFS: Record<string, Svg> = {
-  // Krispigt och knaprigt – närbild: en stel stekt baconskiva som knäcks (inte sallad, smördeg eller äpple).
+  // Krispigt och knaprigt – knaprig: ljudet när man tuggar. Närbild av en mun som biter i knäckebröd med stora ljudtaggar; en mjuk grå bulle är tyst.
   'mana.knaprig': all(
-    greyed(path('M14 22 C22 10 28 36 38 26 C46 18 50 40 58 32', 'none', '#e0a487', 8)), cross(36, 26, HL, 1),
-    g('rotate(-20 60 86)', path('M10 80 L56 80 L52 84 L57 87 L54 91 L10 91 Z', '#b8602e', C.ink, 1.6), line('M14 85 C24 83 34 88 50 85', '#f3d2b0', 2), path('M66 80 L62 83 L67 86 L63 91 L110 91 L110 80 Z', '#b8602e', C.ink, 1.6), line('M70 85 C80 83 92 88 106 85', '#f3d2b0', 2)),
-    waShake('b5a-knaprig-1', crackle(62, 66), crackle(92, 56)),
-    ...[[54, 100], [62, 106], [70, 98], [76, 108]].map(([x, y]) => path(`M${x} ${y} l4 -2 l1 4 Z`, '#b8602e', C.ink, 0.8))),
+    path('M6 56 C24 26 72 26 90 56 C72 88 24 88 6 56 Z', '#d65a5a', C.ink, 2), ellipse(48, 57, 34, 17, '#5a2a2a', null),
+    ...range(6).map((i) => rect(22 + i * 9, 41, 8, 9, C.white, 2, C.ink, 1)), ...range(6).map((i) => rect(22 + i * 9, 65, 8, 9, C.white, 2, C.ink, 1)),
+    g('rotate(-6 80 57)', rect(56, 50, 58, 15, '#d9b071', 2, C.ink, 1.6), ...range(8).map((i) => circle(66 + (i % 4) * 12, 54 + Math.floor(i / 4) * 7, 1.4, '#a8783a', null)), path('M56 50 L60 54 L55 57 L60 61 L56 65', 'none', C.ink, 1.4)),
+    ...[[40, 92], [52, 98], [62, 90]].map(([x, y]) => path(`M${x} ${y} l5 -2 l1 5 Z`, '#d9b071', C.ink, 0.8)),
+    waShake('b5a-knaprig-1', ...[[48, 10, 0], [20, 18, -40], [78, 16, 40]].map(([x, y, r]) => g(`rotate(${r} ${x} ${y! + 8})`, path(`M${x! - 10} ${y! + 10} L${x! - 6} ${y} L${x! - 1} ${y! + 8} L${x! + 3} ${y! - 2} L${x! + 7} ${y! + 8} L${x! + 11} ${y! + 2}`, 'none', HL, 3)))),
+    greyed(ellipse(100, 104, 14, 9, '#e6c89a', C.ink, 1.4), path('M88 102 C94 92 106 92 112 102', 'none', '#c9a06a', 1.4)), cross(100, 88, HL, 0.7)),
   // Frasighet – egenskapen: genomskärning av tunna, luftiga smördegslager under förstoringsglas, flagor som faller.
   'mana.frasighet': all(
     rect(14, 52, 70, 46, '#f2d49a', 4, C.ink, 1.8), ...range(9).map((i) => line(`M16 ${56 + i * 4.6} C30 ${54 + i * 4.6} 50 ${58 + i * 4.6} 82 ${56 + i * 4.6}`, '#c98a3a', 1.4)),
@@ -63,20 +64,21 @@ export const MANUAL_MILARCH_MOTIFS: Record<string, Svg> = {
     rect(10, 18, 18, 50, C.dark, 3, C.ink, 1.6), line('M19 68 L19 104', C.ink, 3), circle(19, 28, 6, '#7a4a4a', null), circle(19, 43, 6, '#7a6a3a', null),
     waPulse('b5a-sa-fort-1', circle(19, 58, 6.5, '#4fd67a', C.ink, 1.2)), arrow(32, 50, 56, 50, HL, 2.6), T(44, 42, '0 s', 12, HL),
     waIn('b5a-sa-fort-2', -22, 0, g('rotate(14 84 104)', P({ x: 84, h: 0.8, top: C.orange, mood: 'laugh' })), line('M60 70 L68 70 M58 80 L68 80 M62 90 L70 90', C.grey, 2))),
-  // Leveransalternativ – leverans: hela vägen från lager till dörr, paketet åker längs rutten och spårningen är klar.
+  // Leveransalternativ – leverans: själva leveransen som har kommit – paketet vid dörren, kvittens med bock och spårningen klar.
   'mana.leverans': all(
-    ground(100, '#e7e2d8'),
-    path('M6 100 L6 66 L22 56 L38 66 L38 100 Z', '#c9c1b4', C.ink, 1.6), rect(14, 80, 16, 20, C.dark, 1, null), ...range(3).map((i) => rect(10 + i * 9, 72, 6, 4, '#d4a373', 0, C.ink, 0.8)),
-    house(98, 82, 1.1),
-    line('M38 92 C54 70 70 110 84 94', HL, 2.4, '4 4'),
-    waIn('b5a-leverans-1', -46, 8, all(rect(74, 78, 14, 11, C.tan, 1, C.ink, 1.4), line('M74 82 L88 82', C.brown, 1.2))),
-    check(108, 60, C.green, 0.9),
-    ...range(4).map((i) => circle(24 + i * 24, 26, 6, HL, C.ink, 1.2)), line('M30 26 L42 26 M54 26 L66 26 M78 26 L90 26', HL, 2.4), check(96, 26, C.white, 0.5)),
-  // Kundtjänst – vänligen: artig handläggare som bugar och visar med öppen hand, mot en grå otrevlig figur.
+    rect(10, 20, 44, 88, '#8a5a3a', 2, C.ink, 1.8), circle(46, 66, 2.6, C.gold, C.ink, 1), rect(4, 106, 58, 6, '#c9b48a', 2, C.ink, 1),
+    waIn('b5a-leverans-1', 0, -14, rect(26, 84, 26, 22, C.tan, 1, C.ink, 1.6), line('M26 91 L52 91 M39 84 L39 106', C.brown, 1.4)),
+    rect(68, 40, 44, 56, C.white, 2, C.ink, 1.6), ...range(3).map((i) => rect(74, 48 + i * 8, 32, 3, C.grey2, 1, null)), line('M74 80 c4 -6 8 6 12 0 s8 -6 12 0', C.navy, 1.6),
+    waPulse('b5a-leverans-2', circle(102, 86, 9, C.green, C.ink, 1.2), check(102, 86, C.white, 0.6)),
+    ...range(4).map((i) => circle(72 + i * 12, 20, 4, HL, C.ink, 1)), line('M76 20 L80 20 M88 20 L92 20 M100 20 L104 20', HL, 2)),
+  // Kundtjänst – vänligen: en artig uppmaning – kyparen bugar och ber med öppen hand gästen att sätta sig.
   'mana.vänligen': all(
-    greyed(P({ x: 28, h: 0.85, grey: true, mood: 'angry' })), greyed(path('M8 20 L40 20 L40 38 L22 38 L16 44 L18 38 L8 38 Z', C.white, C.ink, 1.4), T(24, 35, '!', 14, C.grey)), cross(24, 29, HL, 1),
-    g('rotate(9 84 112)', P({ x: 84, h: 0.9, top: C.orange, mood: 'smile' })),
-    path('M50 8 L90 8 L90 28 L76 28 L82 36 L68 28 L50 28 Z', SOFT, HL, 2), circle(62, 18, 4, C.pink, C.ink, 1), circle(78, 18, 4, C.yellow, C.ink, 1)),
+    ground(108, '#ece6da'),
+    P({ x: 24, h: 0.82, top: C.purple, hairStyle: 'long', mood: 'smile' }),
+    rect(50, 76, 26, 4, C.brown, 1, C.ink, 1.2), line('M53 80 L53 108 M73 80 L73 108 M73 76 L73 54', C.brown, 3),
+    g('rotate(12 96 112)', P({ x: 96, h: 0.9, top: C.white, bottom: C.black, mood: 'smile' }), path('M86 52 L96 76 L106 52', 'none', C.black, 3)),
+    path('M66 66 L80 64 C84 64 84 70 80 70 L66 72 Z', C.skin, C.ink, 1.2), line('M80 66 L88 62 M80 68 L88 66 M80 70 L87 70', C.ink, 0.8),
+    path('M40 20 C44 10 56 10 60 20', 'none', HL, 2), path('M44 22 L56 22 C60 22 60 30 50 32 C40 30 40 22 44 22 Z', SOFT, HL, 1.6), path('M46 26 Q50 30 54 26', 'none', HL, 1.6)),
   // Fråga efter rätt linje – varifrån: pilen kommer FRÅN ett frågetecken (ursprunget) TILL personen.
   'mana.varifrån': all(
     ground(104, '#e7e2d8'), figure({ x: 94, h: 0.82, top: C.green }),
@@ -89,22 +91,21 @@ export const MANUAL_MILARCH_MOTIFS: Record<string, Svg> = {
     figure({ x: 16, h: 0.6, top: C.orange }), house(56, 82, 0.9),
     greyed(mountains(88, 100, 2, 1.2), line('M14 22 L108 22 M14 18 L14 26 M108 18 L108 26', C.grey, 2), T(80, 16, '10 km', 9, C.grey)), cross(96, 20, HL, 0.7),
     line('M14 46 L56 46 M14 41 L14 51 M56 41 L56 51', HL, 3), T(35, 40, '300 m', 10, HL)),
-  // Motion – rörelse i stort: cyklande person med pulsande hjärta, inte soffan (grå).
+  // Motion – vardagsrörelse: en person promenerar till jobbet med stegräknare och pulserande hjärta; en grå person sitter i bilen.
   'mana.motion': all(
-    ground(106, '#d8ecc8'),
-    ...[34, 86].map((x) => all(circle(x, 88, 16, 'none', C.ink, 2.6), waSpin(`b5a-motion-${x}`, 1.2, line(`M${x - 16} 88 L${x + 16} 88 M${x} 72 L${x} 104`, C.grey, 1.2)))),
-    line('M34 88 L54 88 L74 62 L48 62 L34 88 M54 88 L46 56 M74 62 L86 88 M70 52 L80 50', C.red, 3),
-    rect(42, 53, 10, 4, C.dark, 2, null),
-    line('M48 56 L62 32', C.orange, 9), line('M62 34 L76 52', C.skin, 4), line('M50 58 L58 74 L54 88', C.navy, 5), circle(64, 24, 8, C.skin, C.ink, 1.6), path('M56 22 C56 13 72 13 72 22 Z', C.hair, null),
-    waPulse('b5a-motion-h', heart(96, 30, 1.1, C.red)), line('M74 18 l-2 4', '#5aa7e8', 2),
-    greyed(rect(4, 10, 26, 12, C.grey, 3, C.ink, 1)), cross(17, 16, HL, 0.8)),
-  // Känslors styrkegrader – extremt: rund mätare där nålen slår förbi slutet av skalan (de andra orden är staplar).
+    rect(0, 0, 120, 120, '#eef6fb', 0, null), ground(104, '#d8ecc8'), rect(0, 104, 120, 6, '#c9c1b4', 0, null),
+    path('M86 104 L86 30 L116 30 L116 104 Z', '#c9ced4', C.ink, 1.4), ...range(4).map((i) => rect(92 + (i % 2) * 12, 38 + Math.floor(i / 2) * 18, 8, 10, '#bfe3f5', 0, C.ink, 0.8)), rect(96, 86, 10, 18, C.brown, 1, null),
+    waIn('b5a-motion-1', -16, 0, P({ x: 50, h: 0.8, top: C.orange, mood: 'smile' }), rect(60, 70, 8, 6, C.dark, 2, C.ink, 0.8)),
+    rect(4, 10, 34, 22, C.dark, 4, C.ink, 1.4), T(21, 25, '8 000', 9, '#7fe0a0'), waPulse('b5a-motion-h', heart(48, 20, 0.8, C.red)),
+    greyed(rect(4, 84, 30, 14, C.grey, 4, C.ink, 1.2), path('M8 84 L12 76 L28 76 L32 84 Z', C.grey2, C.ink, 1), circle(12, 98, 4, C.dark, null), circle(28, 98, 4, C.dark, null), bust(19, 76, 0.2, C.grey, false, true)), cross(19, 68, HL, 0.8)),
+  // Känslors styrkegrader – extremt: termometern spricker – kvicksilvret skjuter ut ovanför toppen, långt bortom skalan.
   'mana.extremt': all(
-    rect(12, 30, 96, 66, C.white, 6, C.ink, 1.6),
-    line('M22 84 A38 38 0 0 1 41 51', C.green, 9), line('M41 51 A38 38 0 0 1 79 51', C.yellow, 9), line('M79 51 A38 38 0 0 1 98 84', C.red, 9),
-    greyed(line('M60 84 L60 52', C.grey, 2)),
-    waShake('b5a-extremt-1', line('M60 84 L110 98', HL, 4), path('M104 88 L110 98 L100 100', 'none', HL, 2)), circle(60, 84, 5, C.ink, null),
-    line('M100 80 l6 -6 l-2 6 l6 -4', C.ink, 1.4), T(60, 22, '!!!', 18, HL)),
+    rect(48, 30, 24, 70, C.white, 12, C.ink, 2), circle(60, 100, 14, C.red, C.ink, 2), rect(56, 34, 8, 66, C.red, 4, null),
+    ...range(5).map((i) => line(`M72 ${44 + i * 11} L80 ${44 + i * 11}`, C.ink, 1.6)),
+    greyed(rect(24, 58, 8, 42, C.grey, 3, null), circle(28, 100, 7, C.grey, C.ink, 1), rect(22, 40, 12, 60, 'none', 6, C.ink, 1.4)),
+    path('M52 34 L56 28 L60 34 L64 26 L68 34', 'none', C.ink, 1.6),
+    waShake('b5a-extremt-1', ...[[60, 14, 6], [44, 18, 4], [76, 16, 4], [52, 6, 3], [70, 4, 3]].map(([x, y, r]) => circle(x!, y!, r!, C.red, C.ink, 1)), line('M40 30 L32 24 M80 30 L88 24 M60 22 L60 20', HL, 2.4)),
+    line('M86 40 l6 -4 M88 50 l8 0 M34 52 l-6 0', HL, 2)),
   // Avund och svartsjuka – otrogen: mannen håller en annan i handen bakom partnerns rygg, brustet hjärta.
   'mana.otrogen': all(
     P({ x: 24, h: 0.9, top: C.purple, hairStyle: 'long', mood: 'frown' }), circle(8, 72, 2.4, 'none', C.gold, 1.6),
@@ -133,16 +134,15 @@ export const MANUAL_MILARCH_MOTIFS: Record<string, Svg> = {
     figure({ x: 34, h: 0.82, top: C.lilac, hair: '#e6e6e6', face: 'neutral' }), line('M50 76 L54 108', C.brown, 3), path('M50 76 C50 70 56 70 56 74', 'none', C.brown, 3),
     thought(84, 36, 56, all(...range(3).flatMap((r) => range(3).map((c) => (r * 3 + c) % 4 === 1 ? rect(68 + c * 11, 25 + r * 8, 10, 7, 'none', 1, C.grey, 0.8, ) : rect(68 + c * 11, 25 + r * 8, 10, 7, C.sky, 1, C.ink, 0.8))))),
     waIn('b5a-demens-1', -10, 6, rect(106, 54, 9, 7, C.sky, 1, C.ink, 0.8), rect(98, 66, 9, 7, C.sky, 1, C.ink, 0.8)), T(104, 92, '?', 16, HL)),
-  // Beskriva en stadsdel – trivsam: grannar som hälsar på en bänk under trädet, katt och blomlådor.
+  // Beskriva en stadsdel – trivsam: en bostadsgård där många hushåll trivs, och en kalender full av glada dagar. Ingen text.
   'mana.trivsam': all(
-    rect(0, 0, 120, 120, '#eaf5fb', 0, null), ground(100, '#d8ecc8'),
-    house(30, 52, 0.9, C.red, '#f6e3b4'), house(90, 52, 0.9, C.yellow, '#f6e3b4'),
-    line('M14 100 L14 64', C.brown, 4), circle(14, 54, 14, '#5fae6e', C.ink, 1.4),
-    rect(36, 86, 48, 5, C.brown, 2, C.ink, 1.2), line('M40 91 L40 100 M80 91 L80 100', C.brown, 3),
-    P({ x: 40, h: 0.6, top: C.orange, mood: 'smile' }), P({ x: 80, h: 0.6, top: C.green, hairStyle: 'long', mood: 'smile' }),
-    circle(60, 82, 4, C.orange, C.ink, 1), path('M57 79 L58 75 L60 78 M60 78 L62 75 L63 79', C.orange, C.ink, 0.8),
-    ...[20, 100].map((x) => all(rect(x - 8, 72, 16, 5, C.brown, 1, C.ink, 1), circle(x - 4, 70, 2.4, C.pink, null), circle(x + 4, 70, 2.4, C.yellow, null))),
-    circle(104, 14, 7, C.yellow, C.ink, 1.2)),
+    rect(0, 0, 120, 120, '#eaf5fb', 0, null),
+    rect(4, 18, 76, 62, '#f6e3b4', 1, C.ink, 1.6), ...range(2).flatMap((r) => range(4).map((c) => all(rect(9 + c * 18, 26 + r * 26, 12, 12, '#bfe3f5', 1, C.ink, 1), rect(7 + c * 18, 38 + r * 26, 16, 3, C.brown, 0, null)))),
+    ...[[15, 34], [51, 34], [33, 60], [69, 60]].map(([x, y]) => face(x!, y!, 'glad', C.yellow)),
+    rect(0, 80, 120, 40, '#d8ecc8', 0, null), line('M94 104 L94 74', C.brown, 4), circle(94, 64, 14, '#5fae6e', C.ink, 1.4),
+    rect(14, 96, 30, 4, C.brown, 1, C.ink, 1), mini(22, 92, C.green), mini(36, 92, C.purple, true),
+    P({ x: 64, h: 0.4, top: C.orange, mood: 'laugh' }), circle(76, 106, 4, C.red, C.ink, 1), P({ x: 108, h: 0.36, top: C.sky, mood: 'laugh' }),
+    rect(84, 4, 32, 30, C.white, 2, C.ink, 1.4), rect(84, 4, 32, 7, C.red, 2, C.ink, 1.2), ...range(6).map((i) => all(circle(90 + (i % 3) * 10, 17 + Math.floor(i / 3) * 10, 3.6, C.yellow, C.ink, 0.8), path(`M${88.4 + (i % 3) * 10} ${17.8 + Math.floor(i / 3) * 10} q1.6 1.6 3.2 0`, 'none', C.ink, 0.8)))),
   // Medborgarservice – navet: kommunhuset i mitten med telefon, skärm, disk och post runt om till invånarna.
   'mana.medborgarservice': all(
     ...[[22, 22], [98, 22], [22, 92], [98, 92]].map(([x, y]) => line(`M60 58 L${x} ${y}`, HL, 2.4)),
@@ -175,13 +175,12 @@ export const MANUAL_MILARCH_MOTIFS: Record<string, Svg> = {
     line('M44 52 C56 70 66 70 76 72', HL, 2.4, '4 3'),
     figure({ x: 88, h: 0.5, top: C.green }),
     rect(98, 70, 12, 16, C.navy, 1, C.ink, 1.2), rect(100, 73, 8, 5, C.orange, 0, null), rect(100, 78, 8, 3, C.white, 0, null)),
-  // Kavalleri – beriden: soldaten till häst (orange), inte till fots (grå).
+  // Kavalleri – beriden: en hel patrull där alla sitter till häst (orange märke på gruppen), mot en grå grupp till fots.
   'mana.beriden': all(
     ground(110, '#e8dcc0'),
-    greyed(soldier(20, 0.62, C.grey, C.grey)), cross(20, 60, HL, 0.9),
-    circle(76, 66, 34, SOFT, null), horse(70, 108, 1.1),
-    line('M66 76 L60 92', C.navy, 5), path('M58 72 L74 72 L72 52 L62 52 Z', C.orange, C.ink, 1.6), circle(67, 44, 7, C.skin, C.ink, 1.4), path('M59 42 C59 32 75 32 75 42 Z', '#8a8f96', C.ink, 1.2),
-    line('M74 58 L104 34', C.brown, 2.4), path('M102 32 L110 28 L106 36 Z', C.silver, C.ink, 1)),
+    greyed(g('translate(0 -66)', ...[70, 84, 98].map((x) => figure({ x, h: 0.4, grey: true })))), cross(84, 28, HL, 1),
+    rect(2, 54, 114, 58, SOFT, 8, HL, 2.4), star(12, 64, 6, HL),
+    ...[[30, 110], [62, 104], [94, 110]].map(([x, y]) => all(horse(x!, y!, 0.62), line(`M${x! - 2} ${y! - 18} L${x! - 6} ${y! - 8}`, C.navy, 3.4), path(`M${x! - 8} ${y! - 20} L${x! + 4} ${y! - 20} L${x! + 2} ${y! - 34} L${x! - 6} ${y! - 34} Z`, C.navy, C.ink, 1.2), circle(x! - 2, y! - 39, 5, C.skin, C.ink, 1.2), path(`M${x! - 8} ${y! - 41} C${x! - 8} ${y! - 48} ${x! + 4} ${y! - 48} ${x! + 4} ${y! - 41} Z`, C.dark, C.ink, 1)))),
   // Befäl och formationer – befäl: ledningskedjan, en högst upp med stjärna, order nedåt genom leden.
   'mana.befäl': all(
     line('M60 34 L32 58 M60 34 L88 58 M32 58 L18 90 M32 58 L46 90 M88 58 L74 90 M88 58 L102 90', HL, 2.4),
@@ -208,40 +207,41 @@ export const MANUAL_MILARCH_MOTIFS: Record<string, Svg> = {
     rect(72, 64, 22, 36, '#c9c1b4', 0, C.ink, 1.6), ...range(3).map((i) => rect(73 + i * 7.3, 59, 5, 5, '#c9c1b4', 0, C.ink, 1)), tower(94, 40, 18, 60),
     path('M14 34 L14 28 L112 28 L112 34', 'none', HL, 3),
     ...[[30, 50], [44, 66]].map(([x, y]) => all(arrow(x! - 24, y! - 6, x! + 10, y!, C.grey, 1.6))), line('M72 62 l-6 -8 M72 76 l-6 4', C.grey, 1.4)),
-  // Fästningens försvar – hålla stånd: murbräckan dunkar mot porten, porten håller dag efter dag.
+  // Fästningens försvar – hålla stånd: en liten styrka står kvar medan anfall efter anfall kommer, dag och natt om och om igen.
   'mana.hålla-stånd': all(
-    ground(104, '#d8c9a8'),
-    rect(56, 30, 60, 74, '#c9c1b4', 0, C.ink, 1.8), path('M70 104 L70 66 C70 54 96 54 96 66 L96 104 Z', '#8a5a3a', C.ink, 1.6), line('M66 80 L100 80', C.dark, 5), line('M83 58 L83 104', C.ink, 1),
-    rect(56, 30, 60, 74, 'none', 0, HL, 2.6),
-    moving('b5a-halla-1', '0%,100%{transform:translate(0,0)}40%{transform:translate(-14px,0)}55%{transform:translate(0,0)}', { dur: 1.4 }, rect(10, 74, 58, 9, C.brown, 4, C.ink, 1.4), circle(22, 92, 7, C.dark, C.ink, 1.2), circle(54, 92, 7, C.dark, C.ink, 1.2), line('M22 92 L22 82 M54 92 L54 82', C.ink, 2)),
-    ...range(3).map((i) => all(circle(66 + i * 18, 16, 5, i === 1 ? '#eef0f2' : C.yellow, C.ink, 1), check(66 + i * 18, 6, C.green, 0.4)))),
-  // Kastell och borgtyper – befästa: muren och tornen växer upp runt byn på kullen, en arbetare bär sten.
+    ground(100, '#d8c9a8'), path('M60 100 C70 84 110 84 120 100 Z', '#c9b48a', null),
+    ...[74, 90, 106].map((x) => all(figure({ x, h: 0.5, top: '#5a7a4a', bottom: '#4a5a3a' }), helmet(x, 0.5), g(`translate(${x - 9} 86) scale(0.6)`, path('M0 -16 L14 -11 C14 4 8 12 0 17 C-8 12 -14 4 -14 -11 Z', HL, C.ink, 2)))),
+    ...range(3).map((i) => moving(`b5a-halla-${i}`, '0%{transform:translate(-40px,0);opacity:0}20%{opacity:1}55%{transform:translate(0,0);opacity:1}70%,100%{transform:translate(-6px,6px);opacity:0}', { dur: 2.4, delay: i * 0.8 }, arrow(18, 66 + i * 12, 58, 70 + i * 6, C.grey, 2.2))),
+    line('M6 22 L114 22', C.grey, 1.6), ...range(5).map((i) => i % 2 === 0 ? circle(14 + i * 23, 22, 6, C.yellow, C.ink, 1) : path(`M${14 + i * 23 + 2} 15 A7 7 0 1 0 ${14 + i * 23 + 2} 29 A5 5 0 1 1 ${14 + i * 23 + 2} 15 Z`, '#8a9ac8', C.ink, 1)), arrow(6, 36, 110, 36, HL, 2), check(108, 50, C.green, 0.8)),
+  // Kastell och borgtyper – befästa: samma by förstärks – först oskyddad (vänster), sedan med vall och palissad som växer runt den (höger).
   'mana.befästa': all(
-    path('M0 112 C20 70 100 70 120 112 Z', '#b9d39a', C.ink, 1.4),
-    house(48, 62, 0.6), house(70, 60, 0.6, C.yellow),
-    waGrow('b5a-befasta-1', rect(22, 70, 76, 16, 'rgba(201,193,180,0.92)', 0, HL, 2.4), tower(18, 58, 12, 28), tower(92, 58, 12, 28)),
-    figure({ x: 106, h: 0.4, top: C.orange }), rect(100, 76, 10, 6, C.grey2, 1, C.ink, 1),
-    ...range(3).map((i) => rect(4 + i * 7, 104, 6, 5, C.grey2, 1, C.ink, 0.8))),
+    rect(2, 22, 52, 76, C.white, 4, C.grey2, 1.4), path('M4 96 C14 74 42 74 52 96 Z', '#b9d39a', C.ink, 1.2), house(20, 70, 0.45), house(36, 68, 0.45, C.yellow), line('M10 82 C14 66 42 66 46 82', C.grey, 1.4, '3 3'),
+    arrow(56, 60, 64, 60, HL, 2.4), T(60, 52, '+', 14, HL),
+    rect(66, 22, 52, 76, SOFT, 4, HL, 2.4), path('M68 96 C78 74 106 74 116 96 Z', '#b9d39a', C.ink, 1.2), house(84, 70, 0.45), house(100, 68, 0.45, C.yellow),
+    waGrow('b5a-befasta-1', path('M70 96 C72 86 112 86 114 96', 'none', '#a88a5a', 6), ...range(9).map((i) => { const x = 72 + i * 5; const y = 94 - Math.sin((i / 8) * Math.PI) * 8; return path(`M${x} ${f1(y)} l0 -9 l2 -3 l2 3 l0 9 Z`, C.brown, C.ink, 0.8); })),
+    ...[[74, 30], [92, 26], [110, 30]].map(([x, y]) => T(x!, y! + 6, '+', 12, HL))),
   // Belägringens mål – strategisk: kartan där borgen i det enda passet styr alla vägar, 1–2–3 mot kronan.
   'mana.strategisk': all(
     map(6, 10, 108, 100), mountains(10, 62, 3, 1.1), mountains(64, 62, 3, 1.1),
     line('M14 100 C30 86 50 80 60 66 M106 100 C92 88 72 80 60 66 M60 66 C60 50 60 40 60 22', C.brown, 2, '4 3'),
     circle(60, 58, 9, SOFT, HL, 2.4), tower(54, 52, 12, 12, '#c9c1b4'),
     arrow(20, 98, 52, 68, HL, 2), T(24, 86, '1', 10, HL), T(66, 44, '2', 10, HL), crown(60, 22, 0.8), T(76, 24, '3', 10, HL)),
-  // Belägringens mål – övertag: dragkamp där den orange sidan drar markeringen över mittlinjen.
+  // Belägringens mål – övertag: striden pågår (dammoln), frontmätaren står bara en bit över på den orange sidan, timglaset rinner fortfarande.
   'mana.övertag': all(
-    ground(104, '#d8ecc8'), line('M60 60 L60 110', C.grey, 2, '4 3'),
-    moving('b5a-overtag-1', '0%{transform:translate(12px,0)}60%,100%{transform:translate(0,0)}', { dur: 2.6 }, line('M10 74 L112 74', C.brown, 3), rect(44, 70, 6, 12, HL, 1, C.ink, 1)),
-    g('rotate(-12 24 112)', figure({ x: 24, h: 0.66, top: C.orange })), g('rotate(-12 42 112)', figure({ x: 42, h: 0.66, top: C.orange })),
-    g('rotate(6 88 112)', greyed(figure({ x: 88, h: 0.66, grey: true }))), g('rotate(6 106 112)', greyed(figure({ x: 106, h: 0.66, grey: true }))),
-    arrow(52, 30, 26, 30, HL, 3)),
-  // Kontravallation – kringvärn: sköldar runt hela lägret, spjuten pekar utåt åt alla håll och pilarna studsar.
+    rect(8, 18, 104, 20, C.white, 4, C.ink, 1.6), rect(8, 18, 62, 20, HL, 4, null), rect(70, 18, 42, 20, C.grey2, 0, null), rect(8, 18, 104, 20, 'none', 4, C.ink, 1.6), line('M60 12 L60 44', C.ink, 2, '3 3'),
+    path('M70 10 L74 4 L66 4 Z', C.ink, null), path('M70 46 L74 52 L66 52 Z', C.ink, null),
+    ground(108, '#e2d6b8'),
+    waShake('b5a-overtag-1', ellipse(56, 88, 30, 14, '#d9cdb4', C.ink, 1), ellipse(76, 82, 18, 10, '#e2d8c2', C.ink, 1), line('M48 72 L72 96 M72 72 L48 96', C.grey, 3), line('M60 66 L60 70 M42 84 L38 84 M78 84 L82 84', C.ink, 1.4)),
+    figure({ x: 18, h: 0.4, top: C.orange }), greyed(figure({ x: 102, h: 0.4, grey: true })),
+    path('M100 58 L112 58 L106 66 Z M100 74 L112 74 L106 66 Z', '#f6e3b4', C.ink, 1.2), path('M104 72 L108 72 L106 69 Z', C.tan, null)),
+  // Kontravallation – kringvärn: närbild uppifrån av själva formen – soldater i tät ring, ryggarna inåt och sköldarna utåt.
   'mana.kringvärn': all(
     rect(0, 0, 120, 120, '#e3ecd2', 0, null),
-    ...range(12).map((i) => { const a = (i / 12) * Math.PI * 2; return line(`M${f1(60 + Math.cos(a) * 30)} ${f1(60 + Math.sin(a) * 30)} L${f1(60 + Math.cos(a) * 44)} ${f1(60 + Math.sin(a) * 44)}`, C.brown, 2); }),
-    ...range(12).map((i) => { const a = (i / 12) * Math.PI * 2; return circle(f1(60 + Math.cos(a) * 28), f1(60 + Math.sin(a) * 28), 6, HL, C.ink, 1.2); }),
-    ...[[50, 56], [66, 52], [58, 68]].map(([x, y]) => path(`M${x! - 7} ${y! + 5} L${x} ${y! - 7} L${x! + 7} ${y! + 5} Z`, C.white, C.ink, 1.2)),
-    ...range(8).map((i) => { const a = (i / 8) * Math.PI * 2 + 0.4; return greyed(arrow(f1(60 + Math.cos(a) * 60), f1(60 + Math.sin(a) * 60), f1(60 + Math.cos(a) * 50), f1(60 + Math.sin(a) * 50), C.grey, 1.4)); })),
+    ...range(10).map((i) => { const a = (i / 10) * Math.PI * 2; const c = Math.cos(a), s = Math.sin(a); return all(
+      line(`M${f1(60 + c * 34)} ${f1(60 + s * 34)} L${f1(60 + c * 54)} ${f1(60 + s * 54)}`, C.brown, 2.2),
+      ellipse(f1(60 + c * 24), f1(60 + s * 24), 7, 7, '#5a7a4a', C.ink, 1.2), circle(f1(60 + c * 24), f1(60 + s * 24), 4.6, '#8a8f96', C.ink, 1),
+      g(`rotate(${f1((a * 180) / Math.PI)} ${f1(60 + c * 33)} ${f1(60 + s * 33)})`, rect(f1(60 + c * 33 - 2.5), f1(60 + s * 33 - 7), 5, 14, HL, 2, C.ink, 1.2))); }),
+    circle(60, 60, 12, '#d9e4c4', C.grey2, 1, )),
   // Uniformer – menig: rangpyramiden, de många längst ner utan gradbeteckning (orange); befälen ovanför grå.
   'mana.menig': all(
     greyed(bust(60, 14, 0.4, C.navy), star(56, 26, 2.6, C.gold), star(64, 26, 2.6, C.gold), bust(42, 44, 0.38, C.navy), bust(78, 44, 0.38, C.navy)),
@@ -275,31 +275,35 @@ export const MANUAL_MILARCH_MOTIFS: Record<string, Svg> = {
     circle(72, 28, 14, C.white, HL, 2.6), T(72, 35, '§', 20, HL),
     house(54, 92, 0.8, C.red), bust(78, 92, 0.42, C.yellow, true), rect(90, 88, 18, 14, C.white, 1, C.ink, 1.2), path('M97 91 L101 91 L101 93 L103 93 L103 97 L101 97 L101 99 L97 99 L97 97 L95 97 L95 93 L97 93 Z', C.green, null),
     soldier(14, 0.6), arrow(22, 74, 34, 74, C.grey, 2), cross(36, 74, HL, 0.7)),
-  // Utgrävningar – arkeologi: vetenskapen om jordlagren, föremål från olika tider i varje lager och årtal bredvid.
+  // Utgrävningar – arkeologi: vetenskapen – bokhylla med kruka, jordlagerprofil på väggen och en tidslinje. Ingen som gräver.
   'mana.arkeologi': all(
-    rect(0, 0, 120, 30, '#e3f2fa', 0, null), rect(0, 30, 120, 6, '#7fb36a', 0, null),
-    rect(0, 36, 92, 24, '#c9a878', 0, C.ink, 1), rect(0, 60, 92, 26, '#a88a5a', 0, C.ink, 1), rect(0, 86, 92, 34, '#7f6a4a', 0, C.ink, 1),
-    circle(30, 48, 5, C.gold, C.ink, 1.2), pot(56, 74, 0.7), path('M24 102 L48 98 M26 96 L22 104 M46 94 L50 102', C.white, '3'), line('M24 102 L48 98', C.white, 4),
-    rect(92, 36, 28, 84, C.white, 0, C.ink, 1), T(106, 52, '1600', 8, C.ink), T(106, 76, '500', 8, C.ink), T(106, 104, '−2000', 7, C.ink), line('M96 44 L96 110', HL, 2), path('M93 106 L96 112 L99 106', 'none', HL, 2),
-    magnifier(62, 72, 15)),
-  // Utgrävningar – arkeologisk: krukan i jorden med rutnät, mursleven och fyndlappen (orange), inte en ny mugg i hyllan (grå).
+    rect(4, 10, 50, 98, '#c99a6a', 2, C.ink, 1.8), ...range(3).map((r) => rect(8, 38 + r * 30, 42, 3, '#8a5a3a', 0, null)),
+    ...range(3).flatMap((r) => range(5).map((c) => rect(10 + c * 7, 16 + r * 30, 6, 22, [C.navy, C.red, C.green, C.yellow, C.purple][(c + r) % 5]!, 1, C.ink, 0.8))),
+    pot(44, 62, 0.5),
+    rect(62, 10, 52, 54, C.white, 2, C.ink, 1.6), rect(66, 14, 44, 12, '#c9a878', 0, null), rect(66, 26, 44, 14, '#a88a5a', 0, null), rect(66, 40, 44, 20, '#7f6a4a', 0, null), circle(76, 20, 2.4, C.gold, null), pot(94, 34, 0.3), line('M80 50 L92 48', C.white, 2.4),
+    line('M62 84 L114 84', C.ink, 2), ...[0, 1, 2, 3].map((i) => line(`M${64 + i * 16} 80 L${64 + i * 16} 88`, C.ink, 1.6)), pot(80, 76, 0.32), path('M110 80 L116 84 L110 88', 'none', C.ink, 2),
+    rect(60, 96, 56, 12, '#efe6d6', 2, HL, 2)),
+  // Utgrävningar – arkeologisk: ett vanligt vägbygge stoppas – den orange skylten med krukan visar att platsen är arkeologisk.
   'mana.arkeologisk': all(
-    rect(4, 34, 68, 78, SOFT, 4, HL, 2.4),
-    rect(8, 72, 60, 36, '#a88a5a', 0, null), ...range(3).map((i) => line(`M${8 + i * 20} 72 L${8 + i * 20} 108`, C.white, 1)), line('M8 90 L68 90', C.white, 1),
-    pot(36, 72, 0.9), path('M48 46 L62 38 L66 44 L52 52 Z', C.silver, C.ink, 1.2), line('M62 41 L70 36', C.brown, 3), rect(12, 40, 18, 12, C.white, 1, C.ink, 1), T(21, 49, '47', 7, C.ink),
-    greyed(rect(80, 50, 36, 4, C.brown, 1, C.ink, 1), path('M88 36 L104 36 L102 50 L90 50 Z', C.white, C.ink, 1.4), path('M104 40 C110 40 110 46 103 46', 'none', C.ink, 1.4)), cross(98, 42, HL, 1)),
-  // Fynd och fyndplatser – lösfynd: en ensam yxa på den plöjda åkern (orange ring), inte i en utgrävning med rutnät (grå).
+    rect(0, 0, 120, 70, '#e3f2fa', 0, null), rect(0, 70, 120, 50, '#a88a5a', 0, null), rect(0, 92, 120, 28, '#6a6a6a', 0, null), line('M0 106 L120 106', C.white, 2, '8 6'),
+    greyed(rect(70, 52, 40, 22, C.yellow, 3, C.ink, 1.4), circle(78, 80, 9, C.dark, C.ink, 1.2), rect(96, 72, 16, 16, C.dark, 2, C.ink, 1)),
+    ...[60, 116].map((x) => path(`M${x - 5} 92 L${x} 76 L${x + 5} 92 Z`, C.orange, C.ink, 1)),
+    line('M30 92 L30 50', C.ink, 2.4), rect(8, 14, 44, 40, HL, 4, C.ink, 1.8), circle(30, 34, 15, C.white, C.ink, 1.2), pot(30, 34, 0.6),
+    circle(98, 26, 13, C.red, C.ink, 1.6), rect(90, 23, 16, 6, C.white, 1, null)),
+  // Fynd och fyndplatser – lösfynd: en vandrare hittar av en slump ett mynt på stigen (orange ring) – ingen utgrävningsruta (grå, överkryssad).
   'mana.lösfynd': all(
-    rect(0, 0, 120, 44, '#e3f2fa', 0, null), rect(0, 44, 120, 76, '#b8956a', 0, null), ...range(6).map((i) => line(`M0 ${52 + i * 12} C40 ${48 + i * 12} 80 ${56 + i * 12} 120 ${52 + i * 12}`, '#8a6a4a', 2)),
-    axeHead(54, 84, 1.3), circle(56, 84, 22, 'none', HL, 3),
-    greyed(rect(82, 10, 32, 26, '#a88a5a', 1, C.ink, 1), line('M90 10 L90 36 M98 10 L98 36 M106 10 L106 36 M82 23 L114 23', C.white, 1)), cross(98, 23, HL, 1)),
-  // Datering av föremål – datering: krukan får en årtalslapp, markören glider fram till rätt plats på tidslinjen.
+    rect(0, 0, 120, 120, '#e3f2fa', 0, null), path('M0 80 C40 70 80 76 120 70 L120 120 L0 120 Z', '#cfe8b9', null), path('M20 120 C40 100 60 92 120 86 L120 96 C70 100 50 108 40 120 Z', '#d9c39a', null),
+    P({ x: 40, h: 0.82, top: C.green, mood: 'shock' }), rect(22, 46, 8, 22, C.brown, 3, C.ink, 1.2), line('M58 70 L64 112', C.brown, 2.4),
+    circle(80, 100, 5, C.gold, C.ink, 1.4), circle(80, 100, 13, 'none', HL, 3), line('M80 82 L80 78 M94 92 L98 90 M66 92 L62 90', C.gold, 2),
+    greyed(rect(86, 12, 28, 24, '#a88a5a', 1, C.ink, 1), line('M93 12 L93 36 M100 12 L100 36 M107 12 L107 36 M86 24 L114 24', C.white, 1)), cross(100, 24, HL, 1)),
+  // Datering av föremål – datering: krukan med frågetecken, tre metoder pekar på den (årsringar, jordlager, 14C), svaret ett ungefärligt spann.
   'mana.datering': all(
-    rect(10, 66, 40, 6, C.tan, 1, C.ink, 1.2), pot(30, 50, 1),
-    line('M42 38 L58 26', C.ink, 1.2),
-    waSway('b5a-datering-1', 6, path('M56 16 L100 16 L106 26 L100 36 L56 36 Z', SOFT, HL, 2.2), circle(61, 26, 2, C.white, C.ink, 1), T(82, 31, '≈ 800', 12, HL)),
-    line('M8 96 L112 96', C.ink, 2), ...[0, 1, 2].map((i) => all(line(`M${10 + i * 50} 92 L${10 + i * 50} 100`, C.ink, 1.6), T(10 + i * 50, 112, String(i * 1000), 8, C.ink))),
-    waIn('b5a-datering-2', 40, 0, path('M50 88 L54 80 L46 80 Z', HL, C.ink, 1), line('M50 88 L50 100', HL, 3))),
+    pot(60, 56, 1.2), T(60, 62, '?', 20, HL),
+    circle(18, 22, 13, '#e6c89a', C.ink, 1.4), ...[9, 6, 3].map((r) => circle(18, 22, r, 'none', '#a8783a', 1)),
+    rect(88, 10, 26, 8, '#c9a878', 0, C.ink, 1), rect(88, 18, 26, 8, '#a88a5a', 0, C.ink, 1), rect(88, 26, 26, 8, '#7f6a4a', 0, C.ink, 1),
+    circle(18, 82, 13, C.white, C.ink, 1.4), T(18, 87, '14C', 10, C.ink),
+    ...[[30, 30, 42, 42], [88, 34, 76, 42], [30, 76, 42, 66]].map(([a, b, c, d], i) => moving(`b5a-datering-${i}`, '0%{opacity:0}30%,100%{opacity:1}', { dur: 2.4, delay: i * 0.4 }, arrow(a!, b!, c!, d!, HL, 2))),
+    line('M56 100 L106 100 M56 95 L56 105 M106 95 L106 105', HL, 3), T(81, 116, '800–900', 10, HL)),
   // Tolka materiella spår – tyda på: skärvor, ben och en härd pekar mot en blek, streckad bild av en boplats, med frågetecken.
   'mana.tyda-på': all(
     rect(0, 84, 120, 36, '#c9a878', 0, null),
