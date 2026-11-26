@@ -233,13 +233,16 @@ export const MUSB_MOTIFS: Record<string, Svg> = {
   'musb.rytm': all(drum(60, 34, 1.5, C.red), path('M42 6 L50 20 M78 6 L70 20', 'none', '#a0673d', 2.6),
     ...[[12, 18], [32, 8], [44, 8], [56, 18], [76, 18], [96, 8], [108, 8]].map(([x, w]) => rect(x! - 6, 76 - w!, 12, w! * 2, w === 18 ? HL : '#f7c6a6', 2, C.ink, 1.2)),
     line('M4 76 L116 76', C.grey, 1.2), ...[[12, 'q'], [32, 'e'], [44, 'e'], [56, 'q'], [76, 'q'], [96, 'e'], [108, 'e']].map(([x, k]) => note(x as number - 3, 108, k as 'q' | 'e', NOTE, 0.85))),
-  // rytmisk (round 2): the person claps and stamps on an even pulse; orange dots at equal distances pulse in time, grey dots below are uneven
-  'musb.rytmisk': all(ground(),
-    fig(26, 0.86, { top: C.purple, mouth: 'smile', eyes: 'closed', armL: [[-14, -54], [-2, -60]], armR: [[14, -54], [2, -60]] }),
-    moving('musb-rytmisk-klapp', '0%,100%{opacity:1}50%{opacity:0}', { dur: 0.8 }, line('M14 64 l-6 -2 M38 64 l6 -2 M26 70 l0 5', HL, 2), line('M36 110 l6 -3 M36 106 l5 -6', HL, 2)),
-    ...range(6).map((i) => moving(`musb-rytmisk-p${i}`, '0%,100%{transform:scale(1)}15%{transform:scale(1.5)}30%{transform:scale(1)}', { dur: 4.8, delay: i * 0.8, spin: true }, circle(58 + i * 11, 36, 3.4, HL, C.ink, 1.2))),
-    line('M52 48 L118 48', C.ink, 1.2), ...range(6).map((i) => line(`M${58 + i * 11} 45 L${58 + i * 11} 51`, C.ink, 1.2)),
-    greyed(...[0, 5, 9, 26, 31, 52].map((d) => circle(58 + d, 82, 3.4, C.grey, null)), line('M52 94 L118 94', C.grey, 1.2)), cross(110, 70, 3.5, C.grey)),
+  // rytmisk (manual track): the same song twice. Grey above: a slow piece without a beat, the audience stands still.
+  // Below: music with a clear beat, the audience bobs and claps on the same pulse and a wave of movement runs through it.
+  'musb.rytmisk': all(
+    greyed(speaker(12, 30, 0.6), path('M24 22 C34 18 44 26 54 22', 'none', C.grey, 1.6),
+      ...[44, 64, 84, 104].map((x, i) => fig(x, 0.36, { hair: i % 2 ? 'long' : 'short', mouth: 'flat' }, 54))),
+    line('M4 60 L116 60', C.grey2, 1.2, '3 3'), ground(),
+    speaker(12, 90, 0.7), waves(22, 84, 3, 1, WAVE, 2.4, 4),
+    ...[44, 64, 84, 104].map((x, i) => moving(`musb-rytmisk-${i}`, '0%,100%{transform:translate(0,0)}25%{transform:translate(0,-6px)}50%{transform:translate(0,0)}', { dur: 1, delay: i * 0.18 },
+      fig(x, 0.42, { top: [C.red, C.yellow, C.green, C.purple][i]!, hair: i % 2 ? 'long' : 'short', mouth: 'wide', eyes: 'closed', armL: [[-14, -74], [-6, -92]], armR: [[14, -74], [6, -92]] }), line(`M${x - 7} 70 l-3 -3 M${x} 67 l0 -4 M${x + 7} 70 l3 -3`, HL, 1.6))),
+    path('M36 64 C52 58 72 70 88 62 C98 58 106 62 114 60', 'none', HL, 2.6), arrow(106, 61, 114, 60, HL, 2.6)),
   'musb.vers.2': songBlocks('vers'),
   'musb.refräng': songBlocks('refräng'),
   'musb.låttext': all(rect(16, 8, 88, 54, C.dark, 3, C.ink, 1.8), rect(20, 12, 80, 46, '#1f3550', 1, null),
