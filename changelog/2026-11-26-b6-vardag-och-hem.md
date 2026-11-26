@@ -1,6 +1,6 @@
 ## Osläppt – 2026-11-26: etapp B6, Vardag & hem (R01-A01) enligt standard 2
 
-Första etappen i B6. Alla 42 befintliga moduler i *Vardag & hem* har nu `"standard": 2` och uppfyller kvalitetskontraktet. Det var 980 kontraktsfel, och alla är rättade.
+Första etappen i B6. Alla 42 befintliga moduler i *Vardag & hem* har nu `"standard": 2` och uppfyller kvalitetskontraktet. Det var 869 kontraktsfel, och alla är rättade.
 
 - **Ämnesgrupper:**
   - *Bostadstyper & rum*
