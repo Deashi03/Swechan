@@ -6,7 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadContent, analyse, compare, typography, isRendaku, svSentences, jaSentences, parityProblem } from './audit-content.mjs';
+import { loadContent, analyse, compare, GATED_METRICS, typography, isRendaku, svSentences, jaSentences, parityProblem } from './audit-content.mjs';
 import { moduleHashes } from './content-version.mjs';
 
 const root = process.env.SWECHAN_REPO ?? path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -34,6 +34,11 @@ describe('kvalitetsspärren', () => {
     const res = analyse(c);
     const { worse } = compare(res.metrics, baseRes.metrics);
     expect(worse.map((w) => w.metric)).toContain('ord utan bild');
+  });
+
+  it('ett mått som nått 0 rapporteras och spärras fortfarande (0.62)', () => {
+    for (const k of GATED_METRICS) expect(baseRes.metrics).toHaveProperty([k]);
+    expect(compare({ 'ord utan bild': 1 }, { 'ord utan bild': 0 }).worse).toHaveLength(1);
   });
 
   it('färre animationer fäller spärren (högre är bättre)', () => {

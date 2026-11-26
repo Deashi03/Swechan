@@ -197,7 +197,8 @@ export function analyse(c, opts = {}) {
     return miss.length ? miss : null;
   };
 
-  const metrics = {};
+  // Every gated metric is reported even at 0, so a metric that reaches zero stays gated (0.62: "ord utan bild").
+  const metrics = Object.fromEntries(GATED_METRICS.map((k) => [k, 0]));
   const backlog = {};
   const bump = (k, item) => { metrics[k] = (metrics[k] ?? 0) + 1; if (item !== undefined) (backlog[k] ??= []).push(item); };
   const area = areaResolver(c);
@@ -389,6 +390,7 @@ export function checkContract(m, c, ctx) {
 }
 
 // ---------------------------------------------------------------- baseline handling
+export const GATED_METRICS = ['"kan också betyda" utan egen betydelse', 'B2+ förväxlingsord som inte nämns', 'B2+ med ett exempel', 'B2+ utan användningsuppgift', 'abstrakt B1 utan förklaring', 'avvikande läsning', 'beskrivning som bara räknar upp orden', 'frågeförklaring citerar text som saknas', 'glosa med två betydelser', 'grundord med en betydelse, ej inventerat', 'namn med fel katakana', 'ord med animation', 'ord utan bild', 'planerad animation saknas', 'poster med flera betydelser', 'sv/ja ur fas', 'verb och processord utan animation'];
 const HIGHER_IS_BETTER = new Set(['ord med animation', 'poster med flera betydelser']);
 export function compare(current, baseline) {
   const worse = [], better = [];
