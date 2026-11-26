@@ -2,22 +2,22 @@
  "_comment": "Lägstanivåer för kvalitetsmåtten. Skrivs av `npm run audit:content -- --update`. Redigera inte för hand.",
  "metrics": {
   "\"kan också betyda\" utan egen betydelse": 0,
-  "B2+ förväxlingsord som inte nämns": 2233,
-  "B2+ med ett exempel": 8459,
-  "B2+ utan användningsuppgift": 8059,
-  "abstrakt B1 utan förklaring": 1798,
+  "B2+ förväxlingsord som inte nämns": 2214,
+  "B2+ med ett exempel": 8396,
+  "B2+ utan användningsuppgift": 7999,
+  "abstrakt B1 utan förklaring": 1741,
   "avvikande läsning": 1,
-  "beskrivning som bara räknar upp orden": 1495,
+  "beskrivning som bara räknar upp orden": 1455,
   "frågeförklaring citerar text som saknas": 0,
   "glosa med två betydelser": 3,
   "grundord med en betydelse, ej inventerat": 0,
   "namn med fel katakana": 0,
-  "ord med animation": 544,
+  "ord med animation": 528,
   "ord utan bild": 0,
   "planerad animation saknas": 77,
-  "poster med flera betydelser": 940,
+  "poster med flera betydelser": 908,
   "sv/ja ur fas": 0,
-  "verb och processord utan animation": 3760
+  "verb och processord utan animation": 3649
  },
  "exceptions": [
   {
@@ -124,6 +124,20 @@
    "reason": "produktägaren godkände 2026-11-26 tio synonympar från matchningstesten i B5 och 0.62 (t.ex. knaprig/frasig, leverans/leverera, repetition/repetera)",
    "from": 2226,
    "to": 2233
+  },
+  {
+   "date": "2026-11-26",
+   "metric": "ord med animation",
+   "reason": "B6 lyfter R01-A01 (42 moduler) till standard 2; modulerna lämnar omfånget för befintliga moduler som måttet räknar, innehållet har inte blivit sämre",
+   "from": 544,
+   "to": 528
+  },
+  {
+   "date": "2026-11-26",
+   "metric": "poster med flera betydelser",
+   "reason": "B6 lyfter R01-A01 (42 moduler) till standard 2; modulerna lämnar omfånget för befintliga moduler som måttet räknar, innehållet har inte blivit sämre",
+   "from": 940,
+   "to": 908
   }
  ]
 }
