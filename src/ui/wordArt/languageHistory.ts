@@ -223,17 +223,26 @@ const M4: Record<string, Svg> = {
     circle(60, 15, 4, C.gold, C.ink, 1),
     rect(14, 86, 92, 6, C.brown, 2, C.ink, 1.6), openBook(60, 80, 0.9, PARCH),
     ...[24, 44, 76, 96].map((x, i) => all(circle(x, 58, 6, C.skin, C.ink, 1.4), path(`M${x - 6} 54 C${x - 6} 48 ${x + 6} 48 ${x + 6} 54 Z`, i % 2 ? C.grey : C.hair, null), path(`M${x - 10} 86 L${x - 8} 66 C${x - 4} 62 ${x + 4} 62 ${x + 8} 66 L${x + 10} 86 Z`, C.navy, C.ink, 1.4), path(`M${x - 3} 64 L${x} 72 L${x + 3} 64`, 'none', C.gold, 1.4)))),
-  // the rule book: one form gets a tick, the other a cross
-  'lhist.språknorm': all(at(30, 64, 1.4, rect(-14, -18, 28, 36, C.navy, 2, C.ink, 1.6), rect(-10, -12, 20, 4, C.white, 1, null), line('M-8 -2 L8 -2 M-8 3 L8 3 M-8 8 L6 8', C.white, 1)),
-    tile(76, 34, 50, 'Jag ser dem', C.white, C.ink, 7), check(108, 34), dim(76, 78, 50, 'Jag ser de', 7), cross(108, 78, 5), frame(48, 22, 70, 24)),
-  // a speaker high on a stage, listeners look up; a grey speaker on the ground is ignored
-  'lhist.prestige': all(ground(), rect(52, 52, 40, 60, C.white, 2, C.ink, 1.6), rect(56, 56, 32, 4, C.gold, 1, null), P({ x: 72, h: 0.42, top: C.purple, mood: 'smile' }),
-    at(0, 0, 1, ...[14, 104].map((x) => all(circle(x, 96, 5, C.skin, C.ink, 1.2), path(`M${x - 6} 112 C${x - 6} 102 ${x + 6} 102 ${x + 6} 112 Z`, C.green, C.ink, 1.2)))),
-    line('M18 88 L58 30 M100 88 L82 40', C.gold, 1.4, '2 3'), star(36, 20, 5), star(100, 18, 5), sparkle(60, 8, 5),
-    greyed(figure({ x: 30, h: 0.42 })), say(72, 18, 22, squiggle(64, 18, 14)), frame(48, 4, 50, 108)),
-  // the language desk: a question comes in, a clear answer goes out
-  'lhist.språkvård': all(desk(84, 10, 110), P({ x: 46, h: 0.66, top: C.green, mood: 'smile' }), path('M38 38 C38 26 54 26 54 38', 'none', C.ink, 2), rect(34, 36, 5, 8, C.dark, 2, null), line('M37 44 L44 50', C.ink, 1.4),
-    openBook(80, 78, 0.7), waIn('lh-vard-in', -20, 0, all(envelope(18, 24, 0.9), T(18, 27, '?', 9, C.red, 900))), waIn('lh-vard-out', 20, 0, all(envelope(96, 24, 0.9), check(96, 26, C.green)))),
+  // a template (dashed outline under a ruler) that texts are measured against: three fit it, one sticks out; a dictionary beside
+  'lhist.språknorm': all(rect(18, 8, 84, 12, C.yellow, 2, C.ink, 1.6), line('M26 8 L26 14 M34 8 L34 12 M42 8 L42 14 M50 8 L50 12 M58 8 L58 14 M66 8 L66 12 M74 8 L74 14 M82 8 L82 12 M90 8 L90 14', C.ink, 1.2),
+    line('M30 20 L30 104 M80 20 L80 104', HL, 2, '4 3'),
+    ...[34, 54, 74].map((y) => all(rect(30, y - 7, 50, 14, C.white, 2, C.ink, 1.4), lines(35, y - 2, 40, 2, 4, C.grey), check(90, y))),
+    g('rotate(-8 64 96)', rect(40, 89, 50, 14, '#fde0d6', 2, C.red, 1.6), lines(45, 94, 40, 2, 4, C.grey)), cross(102, 96, 5),
+    at(12, 74, 1, rect(-8, -20, 16, 40, C.navy, 2, C.ink, 1.4), rect(-5, -14, 10, 4, C.white, 1, null), line('M-5 -2 L5 -2 M-5 3 L5 3 M-5 8 L4 8', C.white, 1))),
+  // one language high on a pedestal under a crown and stars, many look up at it; another language stands low and grey
+  'lhist.prestige': all(ground(), path('M44 112 L48 46 L80 46 L84 112 Z', C.white, C.ink, 1.8), rect(42, 40, 44, 8, C.white, 2, C.ink, 1.6), line('M52 56 L52 104 M64 56 L64 104 M76 56 L76 104', C.grey2, 1.4),
+    say(64, 28, 34, squiggle(53, 28, 22, C.purple), true, '#f2e6ff', C.purple),
+    at(64, 10, 1, path('M-10 4 L-10 -4 L-5 0 L0 -6 L5 0 L10 -4 L10 4 Z', C.gold, C.ink, 1.2)), star(36, 12, 4.5), star(92, 12, 4.5), sparkle(30, 30, 4), sparkle(98, 32, 4),
+    ...[[14, 104], [26, 108], [102, 104], [114, 108]].map(([x, y]) => all(circle(x!, y! - 12, 4.5, C.skin, C.ink, 1.2), path(`M${x! - 5} ${y! + 4} C${x! - 5} ${y! - 6} ${x! + 5} ${y! - 6} ${x! + 5} ${y! + 4} Z`, C.green, C.ink, 1.2), line(`M${x!} ${y! - 18} L${x! < 60 ? x! + 6 : x! - 6} ${y! - 26}`, C.gold, 1.2, '2 2'))),
+    greyed(say(22, 72, 24, squiggle(14, 72, 14, C.grey)))),
+  // the word is cared for like a plant: it grows in a pot, is watered and trimmed by a person who keeps a dictionary at hand
+  'lhist.språkvård': all(ground(), P({ x: 28, h: 0.78, top: C.green, mood: 'smile' }),
+    at(46, 58, 1, path('M-10 -6 L8 -6 L12 4 L-8 6 Z', C.grey, C.ink, 1.4), line('M10 -2 L20 -8', C.grey, 3), line('M-8 -4 C-14 -10 -12 -18 -4 -14', C.ink, 1.6)),
+    waIn('lh-vard-w', -6, -6, line('M64 64 l2 6 M70 66 l2 6 M66 74 l2 6', '#3c8fd0', 2.4)),
+    path('M64 112 L96 112 L100 88 L60 88 Z', '#c4794a', C.ink, 1.6), line('M80 88 L80 66', C.green, 3),
+    path('M80 78 C70 76 66 70 66 64 C74 66 78 70 80 76 Z M80 74 C90 72 94 66 94 60 C86 62 82 66 80 72 Z', C.green, C.ink, 1.2),
+    hot(80, 52, 30, 'mejl', 9), at(104, 64, 1, line('M-6 -6 L6 6 M6 -6 L-6 6', C.silver, 2), circle(-7, 7, 2.6, 'none', C.ink, 1.2), circle(7, 7, 2.6, 'none', C.ink, 1.2)),
+    openBook(102, 100, 0.45, PARCH)),
 };
 
 // ── 4365 Stavningsreformer ───────────────────────────────────────────
