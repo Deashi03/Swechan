@@ -178,17 +178,24 @@ const studioWall = () => all(rect(0, 0, 120, 112, '#d9d2c4', 0, null), ...range(
 export const CONC_MOTIFS: Record<string, Svg> = {
   // ── 4441 Repetition och soundcheck ───────────────────────────────
   'conc.repetition.2': all(
-    // week planner: seven day columns, Tuesday evening (19–21) marked with a band sign and an orange frame
-    rect(6, 6, 108, 58, C.white, 4, C.ink, 1.8), rect(6, 6, 108, 10, '#5a7fb8', 4, C.ink, 1.8),
-    ...range(7).map((i) => all(line(`M${f1(6 + i * 15.43)} 16 L${f1(6 + i * 15.43)} 64`, C.grey2, 0.8), circle(f1(13.7 + i * 15.43), 11, 1.6, C.white, null))),
-    ...[0, 2, 3, 5, 6].map((i) => all(rect(f1(8.5 + i * 15.43), 22, 10.5, 4, '#eef1f4', 1, null), rect(f1(8.5 + i * 15.43), 30, 8, 4, '#eef1f4', 1, null))),
-    rect(22.5, 19, 14.5, 42, '#fde3c8', 2, null), at(29.7, 32, 0.42, guitar(0, 4, 0.5, -30), mnote1(10, -8, 1, C.ink)),
-    T(29.7, 52, '19', 6.5, C.ink, 900), T(29.7, 59, '21', 6.5, C.ink, 900), line('M27 53.5 L32.4 53.5', C.ink, 0.9), frame(20.5, 17, 18.5, 46),
-    // below: the band during a break between songs, notes on a stand and a water bottle
-    ground(), line('M38 30 L38 66', HL, 1.4, '2 2'),
-    rect(30, 70, 22, 15, C.white, 1.5, C.ink, 1.2), staff(32, 73, 18, 2, C.grey, 0.5), staff(32, 79, 18, 2, C.grey, 0.5), line('M41 85 L41 112 M33 112 L41 105 L49 112', C.dark, 1.8),
-    fig(66, 0.42, { top: C.denim, mouth: 'smile', armL: [[-14, -48], [-18, -36]], armR: [[14, -56], [6, -66]], front: all(rect(3, -78, 5, 12, '#bfe3f5', 1.5, C.ink, 1), rect(4, -80, 3, 2, C.sky, 0.5, C.ink, 0.6)) }),
-    guitar(82, 104, 0.32, -15), fig(100, 0.42, { hair: 'long', top: C.orange, mouth: 'smile' }), chair(14), drum(16, 106, 0.45, C.red)),
+    // manual track (0.62): a strip of three panels – two rehearsals (numbered, orange frames) lead to the concert night
+    ...[0, 1].map((k) => {
+      const x = 4 + k * 58, good = k === 1;
+      const ys = good ? [20, 17, 14, 17] : [12, 21, 10, 19];
+      return all(rect(x, 4, 54, 54, '#efe6d8', 3, null), line(`M${x + 4} 54 L${x + 50} 54`, C.grey2, 1.4),
+        fig(x + 14, 0.3, { top: C.denim, mouth: good ? 'smile' : 'frown', armL: [[-18, -50], [-24, -60]], front: guitar(2, -44, 1, -62) }, 54),
+        fig(x + 30, 0.3, { hair: 'long', top: C.orange, mouth: good ? 'open' : 'frown', armL: SING_L, armR: SING_R }, 54), drum(x + 44, 50, 0.38, C.red),
+        ...ys.map((y, i) => mnote1(x + 17 + i * 6.5, y, 0.45, good ? C.navy : RED)), good ? tick(x + 47, 12, 1) : cross(x + 47, 12, 4),
+        frame(x, 4, 54, 54), circle(x + 6, 10, 6, HL, C.ink, 1.2), T(x + 6, 13.5, String(k + 1), 9, C.white, 900));
+    }),
+    arrow(58, 31, 62, 31, HL, 2), path('M90 58 L90 62', 'none', HL, 2), arrow(90, 58, 90, 66, HL, 2.4),
+    // the concert night: stage, spotlight, audience – everything works
+    rect(4, 66, 112, 50, STAGE, 3, null), path('M4 66 L14 66 C12 80 14 92 10 104 L4 104 Z', '#8c2b3a', null), path('M116 66 L106 66 C108 80 106 92 110 104 L116 104 Z', '#8c2b3a', null),
+    rect(4, 100, 112, 4, '#6b4a33', 0, null), path('M54 66 L66 66 L80 100 L40 100 Z', 'rgba(255,240,180,0.4)', null),
+    fig(48, 0.3, { top: C.denim, mouth: 'smile', armL: [[-18, -50], [-24, -60]], front: guitar(2, -44, 1, -62) }, 100),
+    fig(66, 0.3, { hair: 'long', top: C.orange, mouth: 'open', armL: SING_L, armR: [[16, -68], [26, -80]] }, 100), drum(82, 96, 0.38, C.red),
+    mnote1(30, 80, 0.55, C.white), mnote1(92, 76, 0.55, C.white), starShape(104, 74, 4.5, C.gold), starShape(16, 74, 4.5, C.gold),
+    ...range(8).map((i) => circle(12 + i * 13.7, 112, 5, '#1c1a28', null)), rect(4, 66, 112, 50, 'none', 3, C.ink, 1.6)),
   'conc.repetera.2': all(ground(), amp(18, 112, 0.9), fig(46, 0.7, { top: C.denim, mouth: 'smile', armL: [[-18, -50], [-24, -60]], front: guitar(2, -44, 1, -62) }),
     W(82, 0.7, { top: C.orange, mouth: 'open', armL: SING_L, armR: SING_R }), micStand(96, 0.62),
     waSpin('conc-repetera', 3, g('translate(64 22)', path('M-14 0 A14 14 0 1 1 0 14', 'none', HL, 3.4), path('M-6 12 L2 15 L-3 21 Z', HL, null))),
