@@ -26,6 +26,7 @@
        "ja": "{台所|だいどころ}の{安全|あんぜん}は{大切|たいせつ}です。"
       }
      ],
+     "labelSv": "skydd",
      "grammarNotes": [
       "gn.mass-noun"
      ],
@@ -34,9 +35,62 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "order": 1,
+     "explanation": {
+      "sv": "Säkerhet betyder att man är skyddad mot olyckor. I köket är det viktigt att tänka på säkerheten.",
+      "ja": "「säkerhet」は、{事故|じこ}から{守|まも}られていることです。{台所|だいどころ}では{安全|あんぜん}に{気|き}をつけることが{大切|たいせつ}です。"
      }
+    },
+    {
+     "id": "s.säkerhet.2",
+     "ja": "{確|たし}かさ",
+     "defSv": "Att man är helt säker på något.",
+     "defJa": "あることについて、{完全|かんぜん}に{確|たし}かであること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det kan ingen säga med säkerhet.",
+       "ja": "それは{誰|だれ}にもはっきりとは{言|い}えません。"
+      }
+     ],
+     "labelSv": "att vara säker",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.säkerhet.3",
+     "ja": "{担保|たんぽ}",
+     "defSv": "Något som banken kan ta, om man inte betalar tillbaka pengar som man har lånat.",
+     "defJa": "{借|か}りたお{金|かね}を{返|かえ}さないときに、{銀行|ぎんこう}が{取|と}ることができるもの。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Huset är säkerhet för lånet.",
+       "ja": "{家|いえ}がローンの{担保|たんぽ}になっています。"
+      }
+     ],
+     "labelSv": "för lån",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "C1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.olycka",
@@ -64,14 +118,42 @@
        "ja": "{家庭|かてい}での{事故|じこ}の{多|おお}くは{台所|だいどころ}で{起|お}こります。"
       }
      ],
+     "labelSv": "händelse",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.olycka.2",
+     "ja": "{不幸|ふこう}",
+     "defSv": "Något mycket dåligt i livet, som gör en människa ledsen.",
+     "defJa": "{人|ひと}を{悲|かな}しませる、{人生|じんせい}のとても{悪|わる}いこと。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det var en stor olycka för familjen när pappa blev sjuk.",
+       "ja": "{父|ちち}が{病気|びょうき}になったことは、{家族|かぞく}にとって{大|おお}きな{不幸|ふこう}でした。"
+      }
+     ],
+     "labelSv": "att vara olycklig",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.brand",
@@ -106,7 +188,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.brinna",
@@ -189,7 +275,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.batteri",
@@ -256,14 +346,42 @@
        "ja": "エリックがベーコンを{焼|や}くと{警報|けいほう}が{鳴|な}ります。"
       }
      ],
+     "labelSv": "ljud",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.larm.2",
+     "ja": "{警報|けいほう}{装置|そうち}",
+     "defSv": "En sak i ett hus eller en bil som ger ett högt ljud när det är fara.",
+     "defJa": "{危険|きけん}があるときに{大|おお}きな{音|おと}を{出|だ}す、{家|いえ}や{車|くるま}の{装置|そうち}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi har larm i huset.",
+       "ja": "{家|いえ}には{警報|けいほう}{装置|そうち}がついています。"
+      }
+     ],
+     "labelSv": "apparat",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.brandsläckare",
@@ -341,7 +459,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.spisvakt",
@@ -376,7 +498,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.brännskada",
@@ -412,7 +538,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.kyla-ner",
@@ -456,7 +586,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.giftig",
@@ -485,14 +619,46 @@
        "ja": "{食器用洗剤|しょっきようせんざい}は{子|こ}どもには{有毒|ゆうどく}です。"
       }
      ],
+     "labelSv": "farlig att äta",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "order": 1,
+     "explanation": {
+      "sv": "Giftiga saker kan göra en människa eller ett djur mycket sjuk. Man ska aldrig äta eller dricka dem.",
+      "ja": "{有毒|ゆうどく}なものは、{人|ひと}や{動物|どうぶつ}をひどい{病気|びょうき}にすることがあります。{決|けっ}して{食|た}べたり{飲|の}んだりしてはいけません。"
      }
+    },
+    {
+     "id": "s.giftig.2",
+     "ja": "{毒|どく}のある、{意地悪|いじわる}な",
+     "defSv": "Om ord: elaka, för att man vill göra någon ledsen.",
+     "defJa": "{言葉|ことば}について：{人|ひと}を{悲|かな}しませたくて{言|い}う、{意地悪|いじわる}な。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon sa något giftigt om hans kläder.",
+       "ja": "{彼女|かのじょ}は{彼|かれ}の{服|ふく}について{意地悪|いじわる}なことを{言|い}いました。"
+      }
+     ],
+     "labelSv": "om ord",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.barnsäker",
@@ -524,9 +690,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "En barnsäker sak kan små barn inte öppna eller skada sig på. Många skåp och flaskor är barnsäkra.",
+      "ja": "「barnsäker」なものは、{小|ちい}さな{子|こ}どもが{開|あ}けたり、それでけがをしたりできません。{戸棚|とだな}やびんの{多|おお}くはチャイルドロックつきです。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.eld",

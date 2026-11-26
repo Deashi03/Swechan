@@ -26,14 +26,42 @@
        "ja": "{台所|だいどころ}は{電気器具|でんききぐ}でいっぱいです。"
       }
      ],
+     "labelSv": "maskin",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.apparat.2",
+     "ja": "{機構|きこう}、{組織|そしき}",
+     "defSv": "En stor grupp av människor och kontor som arbetar tillsammans, till exempel i staten.",
+     "defJa": "{国|くに}などで、たくさんの{人|ひと}や{事務所|じむしょ}がいっしょに{働|はたら}く{大|おお}きな{組織|そしき}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Staten är en stor apparat.",
+       "ja": "{国|くに}は{大|おお}きな{機構|きこう}です。"
+      }
+     ],
+     "labelSv": "organisation",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.vitvara",
@@ -72,7 +100,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.kylfrys",
@@ -107,7 +139,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.frysbox",
@@ -142,7 +178,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.häll",
@@ -204,7 +244,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.spisfläkt",
@@ -239,7 +283,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.vattenkokare",
@@ -274,7 +322,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.timer",
@@ -309,7 +361,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.inbyggd",
@@ -342,6 +398,10 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "En inbyggd apparat sitter fast i köket, till exempel i ett skåp. Man kan inte flytta den lätt.",
+      "ja": "「inbyggd」の{家電|かでん}は、{戸棚|とだな}の{中|なか}など、キッチンに{作|つく}りつけられています。{簡単|かんたん}には{動|うご}かせません。"
      }
     },
     {
@@ -402,6 +462,10 @@
       {
        "sv": "Den nya diskmaskinen är energisnål.",
        "ja": "{新|あたら}しい{食器洗|しょっきあら}い{機|き}は{省|しょう}エネです。"
+      },
+      {
+       "sv": "Vi köpte ett energisnålt kylskåp.",
+       "ja": "{私|わたし}たちは{省|しょう}エネの{冷蔵庫|れいぞうこ}を{買|か}いました。"
       }
      ],
      "tags": [
@@ -413,9 +477,17 @@
      "explanation": {
       "sv": "Energisnål betyder att en maskin eller ett hus använder lite el eller värme. Energisnåla saker är bra för miljön och sparar pengar. På vitvaror finns en etikett som visar hur energisnåla de är.",
       "ja": "「energisnål」は、{機械|きかい}や{家|いえ}が{電気|でんき}や{熱|ねつ}をあまり{使|つか}わないという{意味|いみ}です。{環境|かんきょう}によく、お{金|かね}の{節約|せつやく}にもなります。{家電|かでん}には{省|しょう}エネ{性能|せいのう}を{示|しめ}すラベルがついています。"
+     },
+     "usageNote": {
+      "sv": "Man säger en energisnål lampa, ett energisnålt hus eller energisnåla vitvaror. Motsatsen är att något drar mycket el.",
+      "ja": "「energisnål lampa（{省|しょう}エネの{電球|でんきゅう}）」「energisnålt hus（{省|しょう}エネ{住宅|じゅうたく}）」「energisnåla vitvaror（{省|しょう}エネ{家電|かでん}）」のように{使|つか}います。{反対|はんたい}は「drar mycket el（{電気|でんき}をたくさん{使|つか}う）」です。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.stickkontakt",
@@ -450,7 +522,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.uttag",
@@ -507,7 +583,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.brumma",
@@ -536,6 +616,7 @@
        "ja": "{夜|よる}になると{冷蔵庫|れいぞうこ}がブーンと{鳴|な}ります。"
       }
      ],
+     "labelSv": "om ljud",
      "frame": {
       "subject": "Kylen"
      },
@@ -544,9 +625,36 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.brumma.2",
+     "ja": "ぶつぶつ{言|い}う",
+     "defSv": "Säga något lågt och surt, för att man inte är nöjd.",
+     "defJa": "{不満|ふまん}があって、{低|ひく}い{声|こえ}で{文句|もんく}を{言|い}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Pappa brummade lite när han fick diska.",
+       "ja": "{父|ちち}は{皿洗|さらあら}いをすることになって、{少|すこ}しぶつぶつ{言|い}いました。"
+      }
+     ],
+     "labelSv": "om en person",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.koppla-in",
@@ -576,6 +684,7 @@
        "ja": "{誰|だれ}か{食器洗|しょっきあら}い{機|き}をつないでくれる？"
       }
      ],
+     "labelSv": "el och vatten",
      "grammarNotes": [
       "gn.particle-verb"
      ],
@@ -588,9 +697,36 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.koppla-in.2",
+     "ja": "（{警察|けいさつ}などに）{関|かか}わってもらう",
+     "defSv": "Be till exempel polisen eller någon som kan mycket om en sak att hjälpa till.",
+     "defJa": "{警察|けいさつ}や、そのことにくわしい{人|ひと}などに{手伝|てつだ}ってもらう。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi måste koppla in polisen.",
+       "ja": "{警察|けいさつ}に{入|はい}ってもらわなければなりません。"
+      }
+     ],
+     "labelSv": "be om hjälp",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

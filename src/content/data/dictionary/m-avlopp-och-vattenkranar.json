@@ -55,7 +55,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.vattenledning",
@@ -90,7 +94,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.dricksvatten",
@@ -128,7 +136,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.kallvatten",
@@ -166,7 +178,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.vattenkran",
@@ -205,7 +221,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.blandare",
@@ -240,7 +260,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.huvudkran",
@@ -275,7 +299,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.droppa",
@@ -304,6 +332,7 @@
        "ja": "{蛇口|じゃぐち}が{一晩中|ひとばんじゅう}ぽたぽたしています。"
       }
      ],
+     "labelSv": "falla",
      "frame": {
       "subject": "Kranen"
      },
@@ -312,9 +341,36 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.droppa.2",
+     "ja": "（{薬|くすり}などを）たらす",
+     "defSv": "Låta något falla i små droppar, till exempel medicin i ögonen.",
+     "defJa": "{目薬|めぐすり}など、{何|なに}かを{小|ちい}さなしずくにして{落|お}とす。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon droppar medicin i ögat.",
+       "ja": "{彼女|かのじょ}は{目|め}に{薬|くすり}をさします。"
+      }
+     ],
+     "labelSv": "med droppar",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.avlopp",
@@ -349,7 +405,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.smutsvatten",
@@ -387,7 +447,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.golvbrunn",
@@ -422,7 +486,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.vattenlås",
@@ -448,6 +516,10 @@
       {
        "sv": "Ringen satt i vattenlåset.",
        "ja": "{指輪|ゆびわ}は{排水|はいすい}トラップに{引|ひ}っかかっていました。"
+      },
+      {
+       "sv": "Vi tog bort vattenlåset och rensade det.",
+       "ja": "{私|わたし}たちはトラップを{外|はず}して{掃除|そうじ}しました。"
       }
      ],
      "tags": [
@@ -459,9 +531,17 @@
      "explanation": {
       "sv": "Under handfatet och diskbänken är röret böjt som ett U. I böjen står alltid lite vatten, och det stoppar dålig lukt från avloppet. Den delen kallas vattenlås. Där fastnar också hår och ringar.",
       "ja": "{洗面台|せんめんだい}や{流|なが}しの{下|した}の{管|くだ}はU{字|じ}に{曲|ま}がっています。そこにいつも{少|すこ}し{水|みず}がたまっていて、{下水|げすい}の{嫌|いや}なにおいを{止|と}めます。その{部分|ぶぶん}が「vattenlås」です。{髪|かみ}の{毛|け}や{指輪|ゆびわ}もそこにひっかかります。"
+     },
+     "usageNote": {
+      "sv": "Man säger rensa vattenlåset eller att det luktar från vattenlåset. Det sitter under handfatet eller diskhon.",
+      "ja": "「rensa vattenlåset（トラップを{掃除|そうじ}する）」「det luktar från vattenlåset（トラップからにおいがする）」のように{使|つか}います。{洗面台|せんめんだい}や{流|なが}しの{下|した}についています。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.propp",
@@ -588,9 +668,36 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.stopp.2",
+     "ja": "{停止|ていし}、ストップ",
+     "defSv": "Att något stannar eller slutar, till exempel trafiken.",
+     "defJa": "{交通|こうつう}などが{止|と}まること、{終|お}わること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det blev stopp i trafiken.",
+       "ja": "{交通|こうつう}が{止|と}まりました。"
+      }
+     ],
+     "labelSv": "att stanna",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.rensa",

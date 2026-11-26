@@ -36,7 +36,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.ventilation",
@@ -62,6 +66,10 @@
       {
        "sv": "Badrummet har dålig ventilation.",
        "ja": "バスルームは{換気|かんき}が{悪|わる}いです。"
+      },
+      {
+       "sv": "Utan bra ventilation kommer det fukt i väggarna.",
+       "ja": "{換気|かんき}がよくないと、{壁|かべ}に{湿気|しっけ}がたまります。"
       }
      ],
      "grammarNotes": [
@@ -76,9 +84,17 @@
      "explanation": {
       "sv": "Ventilation betyder att ny luft kommer in och gammal, fuktig luft går ut, ofta genom ett litet hål i väggen eller taket. Dålig ventilation i badrummet kan ge mögel.",
       "ja": "「ventilation」は、よく{壁|かべ}や{天井|てんじょう}の{小|ちい}さな{穴|あな}を{通|とお}して、{新|あたら}しい{空気|くうき}が{入|はい}り、{古|ふる}い{湿|しめ}った{空気|くうき}が{出|で}ていくことです。{浴室|よくしつ}の{換気|かんき}が{悪|わる}いとカビが{生|は}えることがあります。"
+     },
+     "usageNote": {
+      "sv": "Man säger bra eller dålig ventilation. En fläkt är en apparat som hjälper ventilationen, men ventilation är att luften byts.",
+      "ja": "「bra ventilation（{換気|かんき}がよい）」「dålig ventilation（{換気|かんき}が{悪|わる}い）」のように{使|つか}います。「fläkt（{換気扇|かんきせん}）」は{換気|かんき}を{助|たす}ける{機械|きかい}で、「ventilation」は{空気|くうき}が{入|い}れ{替|か}わることです。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.fläkt",
@@ -106,14 +122,42 @@
        "ja": "シャワーのときは{換気扇|かんきせん}をつけてください。"
       }
      ],
+     "labelSv": "apparat",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.fläkt.2",
+     "ja": "そよ{風|かぜ}",
+     "defSv": "En svag vind som man känner en kort stund.",
+     "defJa": "{少|すこ}しの{間|あいだ}{感|かん}じる、{弱|よわ}い{風|かぜ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det kom en kall fläkt från havet.",
+       "ja": "{海|うみ}から{冷|つめ}たい{風|かぜ}がふっと{吹|ふ}いてきました。"
+      }
+     ],
+     "labelSv": "vind",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.mögla",
@@ -152,7 +196,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.fog",
@@ -180,14 +228,42 @@
        "ja": "シャワーの{目地|めじ}がカビで{黒|くろ}くなっています。"
       }
      ],
+     "labelSv": "mellan plattor",
      "tags": [
       "hemmet"
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.fog.2",
+     "ja": "（{正当|せいとう}な）{理由|りゆう}",
+     "defSv": "En bra anledning. Används mest i uttrycket med fog.",
+     "defJa": "よい{理由|りゆう}。おもに「med fog（{当然|とうぜん}のことながら）」という{表現|ひょうげん}で{使|つか}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon är med fog arg på honom.",
+       "ja": "{彼女|かのじょ}が{彼|かれ}に{怒|おこ}っているのも{当然|とうぜん}です。"
+      }
+     ],
+     "labelSv": "skäl",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "C1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.spricka",
@@ -222,7 +298,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.läckage",
@@ -257,7 +337,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.vattenskada",
@@ -283,6 +367,10 @@
       {
        "sv": "Grannen under fick en vattenskada.",
        "ja": "{下|した}の{階|かい}の{人|ひと}が{水漏|みずも}れの{被害|ひがい}を{受|う}けました。"
+      },
+      {
+       "sv": "Vattenskadan i köket kostade mycket pengar.",
+       "ja": "{台所|だいどころ}の{水漏|みずも}れ{被害|ひがい}には、たくさんお{金|かね}がかかりました。"
       }
      ],
      "tags": [
@@ -294,9 +382,17 @@
      "explanation": {
       "sv": "En vattenskada är när vatten har kommit in där det inte ska vara, till exempel från ett trasigt rör, och förstört golv, väggar eller tak. Det kan bli mycket dyrt att laga och ge mögel.",
       "ja": "「vattenskada」は、{壊|こわ}れた{管|くだ}などから{水|みず}が{入|はい}ってはいけない{所|ところ}に{入|はい}り、{床|ゆか}・{壁|かべ}・{天井|てんじょう}をだめにすることです。{修理|しゅうり}にとてもお{金|かね}がかかり、カビの{原因|げんいん}にもなります。"
+     },
+     "usageNote": {
+      "sv": "Man säger få en vattenskada. Ett läckage är när vatten kommer ut, fukt är vatten i luften eller i väggen, och en vattenskada är det som vattnet har förstört.",
+      "ja": "「få en vattenskada（{水漏|みずも}れ{被害|ひがい}にあう）」のように{使|つか}います。「läckage」は{水|みず}がもれること、「fukt」は{空気|くうき}や{壁|かべ}の{中|なか}の{水分|すいぶん}で、「vattenskada」はその{水|みず}で{壊|こわ}れた{部分|ぶぶん}です。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.reparera",
@@ -336,7 +432,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.hantverkare",
@@ -372,7 +472,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.rörmokare",
@@ -408,7 +512,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.offert",
@@ -434,6 +542,10 @@
       {
        "sv": "Vi har fått tre offerter.",
        "ja": "{見積|みつ}もりを3つもらいました。"
+      },
+      {
+       "sv": "Vi fick tre offerter och valde den billigaste.",
+       "ja": "{私|わたし}たちは{見積|みつ}もりを{三|みっ}つもらって、いちばん{安|やす}いのを{選|えら}びました。"
       }
      ],
      "tags": [
@@ -445,9 +557,17 @@
      "explanation": {
       "sv": "En offert är ett papper där en hantverkare eller ett företag skriver vad ett arbete kommer att kosta och vad som ingår, innan man bestämmer sig. Man kan be om offerter från flera och jämföra.",
       "ja": "「offert」は、{決|き}める{前|まえ}に、{職人|しょくにん}や{会社|かいしゃ}が{仕事|しごと}の{値段|ねだん}と{内容|ないよう}を{書|か}いた{紙|かみ}です。いくつかの{会社|かいしゃ}に{頼|たの}んで{比|くら}べることができます。"
+     },
+     "usageNote": {
+      "sv": "Man ber om en offert eller får en offert från en hantverkare. En offert visar vad ett arbete kostar innan det börjar, men en försäkring betalar när något har hänt.",
+      "ja": "「be om en offert（{見積|みつ}もりを{頼|たの}む）」「få en offert（{見積|みつ}もりをもらう）」のように{使|つか}います。「offert」は{仕事|しごと}が{始|はじ}まる{前|まえ}に{費用|ひよう}を{示|しめ}すもので、「försäkring（{保険|ほけん}）」は{何|なに}かが{起|お}きたときにお{金|かね}を{払|はら}ってくれるものです。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.försäkring",
@@ -473,6 +593,10 @@
       {
        "sv": "Försäkringen betalar vattenskadan.",
        "ja": "{保険|ほけん}で{水漏|みずも}れの{損害|そんがい}が{支払|しはら}われます。"
+      },
+      {
+       "sv": "Har ni en försäkring för huset?",
+       "ja": "{家|いえ}の{保険|ほけん}には{入|はい}っていますか。"
       }
      ],
      "tags": [
@@ -484,9 +608,17 @@
      "explanation": {
       "sv": "En försäkring är något som man betalar för varje månad eller år. Om något händer, till exempel en vattenskada eller en olycka, får man pengar tillbaka för en del av det som det kostar. I Sverige har nästan alla en hemförsäkring.",
       "ja": "「försäkring」は{毎月|まいつき}か{毎年|まいとし}お{金|かね}を{払|はら}うものです。{水漏|みずも}れや{事故|じこ}などが{起|お}きたら、かかったお{金|かね}の{一部|いちぶ}が{戻|もど}ってきます。スウェーデンではほとんどの{人|ひと}が{家財保険|かざいほけん}に{入|はい}っています。"
+     },
+     "usageNote": {
+      "sv": "Man har en försäkring eller säger att försäkringen betalar. En offert är bara ett pris för ett arbete, men en försäkring betalar när något har gått sönder.",
+      "ja": "「ha en försäkring（{保険|ほけん}に{入|はい}っている）」「försäkringen betalar（{保険|ほけん}が{払|はら}う）」のように{使|つか}います。「offert（{見積|みつ}もり）」は{仕事|しごと}の{値段|ねだん}にすぎませんが、「försäkring」は{何|なに}かが{壊|こわ}れたときにお{金|かね}を{払|はら}ってくれます。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.renovering",
@@ -521,7 +653,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.torka-ut",
@@ -551,6 +687,7 @@
        "ja": "{壁|かべ}は1{週間|しゅうかん}{乾|かわ}かさなければなりません。"
       }
      ],
+     "labelSv": "göra torr",
      "grammarNotes": [
       "gn.particle-verb"
      ],
@@ -562,9 +699,36 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.torka-ut.2",
+     "ja": "{干上|ひあ}がる、{脱水|だっすい}{状態|じょうたい}になる",
+     "defSv": "Bli helt torr, till exempel en sjö när det inte regnar, eller kroppen när man dricker för lite.",
+     "defJa": "{雨|あめ}が{降|ふ}らないときの{湖|みずうみ}や、{水|みず}を{飲|の}まなさすぎたときの{体|からだ}のように、すっかり{乾|かわ}く。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Drick mycket vatten, så att du inte torkar ut.",
+       "ja": "{脱水|だっすい}にならないように、{水|みず}をたくさん{飲|の}んでください。"
+      }
+     ],
+     "labelSv": "bli torr",
+     "tags": [
+      "hemmet"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

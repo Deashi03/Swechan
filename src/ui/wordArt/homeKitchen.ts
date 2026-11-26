@@ -2,7 +2,7 @@
  * The kitchen at home (0.18, backfill of Vardag & hem → Köket 215–221): appliances, cooking tools,
  * china and cutlery, containers, materials and surfaces, laying the table, kitchen safety.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, waBob, waIn, type Svg } from './kit';
 import { figure } from './figures';
 import { HL, T } from './people';
 import { plate, bowl, pot, pan, check, cross, bottle, glass, potato, leaf, steam } from './kitchenKit';
@@ -92,7 +92,7 @@ export const HOME_KITCHEN_MOTIFS: Record<string, Svg> = {
   'khem.gummisnodd': all(g('translate(60 60)', ellipse(0, 0, 32, 20, 'none', '#d9a050', 5), ellipse(0, 0, 32, 20, 'none', C.ink, 0.8), ellipse(4, 34, 20, 8, 'none', '#d9a050', 4))),
   'khem.påsklämma': all(g('translate(54 76)', path('M-24 -30 L24 -30 L28 30 L-28 30 Z', '#f2c14e', C.ink, 2), path('M-24 -30 L-20 -40 L20 -40 L24 -30', '#f2c14e', C.ink, 1.6), T(0, 6, 'CHIPS', 9, C.red)), g('translate(54 34)', rect(-30, -6, 60, 12, C.green, 4, C.ink, 1.8), rect(-30, -1, 60, 2, '#2f6b45', 0, null))),
   'khem.stapelbar': all(...[0, 1, 2].map((i) => tub(60, 100 - i * 26, 64 - i * 4, 20, [C.red, C.green, C.sky][i]!)), check(102, 26, 1.2)),
-  'khem.sylta': all(pot(46, 82, 1, '#c7253a'), ...[[34, 66], [46, 64], [56, 67]].map(([x, y]) => circle(x!, y!, 3, '#e8435a', C.ink, 0.6)), g('translate(76 46) rotate(30)', rect(-2, -26, 4, 30, C.brown, 2, C.ink, 1), ellipse(0, 6, 6, 4, C.brown, C.ink, 1)), jarG(98, 92, 0.6, '#c7253a'), arrow(76, 92, 86, 92, HL, 2)),
+  'khem.sylta': all(pot(46, 82, 1, '#c7253a'), waIn('b6-sylta', 0, -18, ...[[34, 66], [46, 64], [56, 67]].map(([x, y]) => circle(x!, y!, 3, '#e8435a', C.ink, 0.6))), g('translate(76 46) rotate(30)', rect(-2, -26, 4, 30, C.brown, 2, C.ink, 1), ellipse(0, 6, 6, 4, C.brown, C.ink, 1)), jarG(98, 92, 0.6, '#c7253a'), arrow(76, 92, 86, 92, HL, 2)),
   'khem.konservera': all(jarG(36, 74, 1.1, '#f2a02a'), jarG(76, 74, 1.1, '#7ab040', C.green), g('translate(98 30)', rect(-14, -12, 28, 24, C.white, 2, C.ink, 1.4), rect(-14, -12, 28, 7, C.sky, 2, null), T(0, 8, '2027', 6, C.ink))),
   // ── Kökets material och ytor (219) ──────────────────────────────
   'khem.bänkskiva': all(counter(60), rect(4, 60, 112, 8, 'rgba(228,87,46,0.25)', 2, HL, 2.4), g('translate(40 54)', rect(-14, -6, 28, 6, '#d9a86a', 2, C.ink, 1.2))),
@@ -130,7 +130,7 @@ export const HOME_KITCHEN_MOTIFS: Record<string, Svg> = {
   'khem.olycka': all(rect(4, 70, 112, 8, C.tan, 2, C.ink, 1.6), g('translate(40 88) rotate(30)', ellipse(0, 0, 18, 5, C.white, C.ink, 1.4)), ...[[60, 104], [70, 100], [52, 108], [80, 106]].map(([x, y]) => path(`M${x} ${y} l6 -3 l-2 6 Z`, C.white, C.ink, 1)), figure({ x: 92, h: 0.8, top: C.sky, face: 'neutral' }), T(86, 24, '!', 18, HL), path('M76 34 l-4 -6 M96 34 l4 -6', 'none', HL, 2)),
   'khem.säkerhet': all(shieldBadge(60, 58, 2.6), ''),
   'khem.eld': all(flame(60, 76, 3.2)),
-  'khem.brand': all(g('translate(60 112)', path('M-40 -50 L0 -80 L40 -50 Z', C.dark, C.ink, 2), rect(-36, -50, 72, 50, '#e6d3b3', 1, C.ink, 2), rect(-24, -38, 16, 14, '#ff8a3a', 1, C.ink, 1.2), rect(8, -38, 16, 14, '#ff8a3a', 1, C.ink, 1.2)), flame(44, 70, 1.2), flame(76, 70, 1.3), flame(60, 34, 1.4), smoke(66, 14)),
+  'khem.brand': all(g('translate(60 112)', path('M-40 -50 L0 -80 L40 -50 Z', C.dark, C.ink, 2), rect(-36, -50, 72, 50, '#e6d3b3', 1, C.ink, 2), rect(-24, -38, 16, 14, '#ff8a3a', 1, C.ink, 1.2), rect(8, -38, 16, 14, '#ff8a3a', 1, C.ink, 1.2)), moving('b6-brand', '0%,100%{transform:scale(1)}50%{transform:scale(1.08,0.9)}', { dur: 0.9, spin: true }, flame(44, 70, 1.2), flame(76, 70, 1.3), flame(60, 34, 1.4)), waBob('b6-brand-smoke', 6, smoke(66, 14))),
   'khem.brandvarnare': all(rect(4, 6, 112, 14, '#eef2f5', 0, C.ink, 1.4), g('translate(60 34)', path('M-30 -14 L30 -14 L26 8 C20 14 -20 14 -26 8 Z', C.white, C.ink, 2), circle(18, -2, 2.4, C.red, null), ...[-12, -6, 0, 6].map((d) => line(`M${d - 2} 2 L${d + 2} 2`, C.grey, 1.4))), path('M30 60 C26 66 26 74 30 80 M90 60 C94 66 94 74 90 80 M40 66 C38 70 38 74 40 78 M80 66 C82 70 82 74 80 78', 'none', HL, 2), T(60, 76, 'PIIP', 10, HL), smoke(60, 104)),
   'khem.batteri': all(g('translate(60 60) rotate(-20)', rect(-14, -36, 28, 72, '#2e2e36', 4, C.ink, 2), rect(-14, -36, 28, 22, C.gold, 4, C.ink, 2), rect(-6, -42, 12, 6, C.silver, 1, C.ink, 1.4), T(0, 10, '+', 14, C.white))),
   'khem.larm': all(g('translate(60 56)', path('M-24 18 L-20 -10 C-18 -30 18 -30 20 -10 L24 18 Z', C.red, C.ink, 2), rect(-28, 18, 56, 8, C.dark, 2, C.ink, 1.6), circle(0, 30, 5, C.dark, C.ink, 1.2)), path('M24 34 C14 44 14 66 24 76 M14 26 C0 42 0 70 14 84 M96 34 C106 44 106 66 96 76 M106 26 C120 42 120 70 106 84', 'none', HL, 2.4)),
