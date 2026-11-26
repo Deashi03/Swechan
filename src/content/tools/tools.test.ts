@@ -59,7 +59,7 @@ describe('content:report', () => {
     expect(r.unintroducedWords).toEqual([]);
     expect(r.catalogIssues).toEqual([]);
     expect(r.markdown).toContain('## Publicerade moduler');
-  });
+  }, 240_000); // the report walks all content (~68 s at 1 811 modules under load)
 });
 
 describe('review status is a human statement', () => {
