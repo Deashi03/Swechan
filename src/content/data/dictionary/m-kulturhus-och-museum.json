@@ -437,6 +437,7 @@
        "ja": "ミュージシャンたちがステージに{上|あ}がりました。"
       }
      ],
+     "labelSv": "plats för scenkonst",
      "tags": [
       "samhälle",
       "kultur",
@@ -444,9 +445,75 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.scen.2",
+     "ja": "（{劇|げき}の）{場|ば}、シーン",
+     "defSv": "En kort del av det man spelar på teatern, där samma personer är på samma plats.",
+     "defJa": "{劇|げき}の{幕|まく}の{中|なか}の{短|みじか}い{区切|くぎ}り。{同|おな}じ{場所|ばしょ}で{同|おな}じ{人物|じんぶつ}が{出|で}ている{部分|ぶぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I andra scenen möts de igen.",
+       "ja": "{第二場|だいにば}で、{二人|ふたり}は{再|ふたた}び{出会|であ}います。"
+      },
+      {
+       "sv": "Den sista scenen fick många att gråta.",
+       "ja": "{最後|さいご}の{場面|ばめん}で、{多|おお}くの{人|ひと}が{泣|な}きました。"
+      }
+     ],
+     "labelSv": "del av pjäs",
+     "collocations": [
+      "första akten, andra scenen",
+      "en stark scen",
+      "scenen där …"
+     ],
+     "explanation": {
+      "sv": "En pjäs delas ofta in i akter, och varje akt i flera scener. En ny scen börjar när platsen eller personerna på scenen byts. I film säger man också scen om en kort del av handlingen. Akt är den större delen: mellan två akter går ridån ner eller så blir det paus.",
+      "ja": "ひとつの{劇|げき}はいくつかの{幕|まく}（akt）に{分|わ}かれ、それぞれの{幕|まく}はさらにいくつかの{場|ば}（scen）に{分|わ}かれます。{場所|ばしょ}や{舞台|ぶたい}の{人物|じんぶつ}が{変|か}わると、{新|あたら}しい{場|ば}が{始|はじ}まります。{映画|えいが}の{短|みじか}い{場面|ばめん}も scen と{言|い}います。akt はもっと{大|おお}きな{区切|くぎ}りで、{幕|まく}と{幕|まく}の{間|あいだ}には{幕|まく}が{下|お}りたり{休憩|きゅうけい}が{入|はい}ったりします。"
+     },
+     "tags": [
+      "teater",
+      "kultur"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B2"
+    },
+    {
+     "id": "s.scen.3",
+     "ja": "{騒|さわ}ぎ、（{人前|ひとまえ}での）{口論|こうろん}",
+     "defSv": "Ett stort bråk som andra människor ser.",
+     "defJa": "{他|ほか}の{人|ひと}の{見|み}ている{前|まえ}での、はげしい{言|い}い{争|あらそ}いや{感情|かんじょう}の{爆発|ばくはつ}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han ställde till en scen i butiken.",
+       "ja": "{彼|かれ}は{店|みせ}の{中|なか}で{騒|さわ}ぎを{起|お}こしました。"
+      }
+     ],
+     "labelSv": "bråk",
+     "collocations": [
+      "ställa till en scen"
+     ],
+     "tags": [
+      "känslor"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.konsert",
@@ -483,7 +550,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }

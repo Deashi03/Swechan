@@ -304,6 +304,7 @@
        "ja": "タオルは{清潔|せいけつ}です。"
       }
      ],
+     "labelSv": "utan smuts",
      "usageNote": {
       "sv": "Ren betyder bara 'utan smuts'. Om något är vackert säger man vacker eller fin.",
       "ja": "{日本語|にほんご}の「きれい」には「{美|うつく}しい」の{意味|いみ}もありますが、ren は「{清潔|せいけつ}な」という{意味|いみ}だけです。「{美|うつく}しい」は vacker と{言|い}います。"
@@ -320,9 +321,98 @@
      "id": "s.ren.1",
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 1
+    },
+    {
+     "id": "s.ren.2",
+     "ja": "{純粋|じゅんすい}な、{混|ま}じりけのない",
+     "defSv": "Som inte är blandad med något annat.",
+     "defJa": "ほかのものが{混|ま}ざっていない。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Tröjan är gjord av ren ull.",
+       "ja": "そのセーターは{純毛|じゅんもう}でできています。"
+      }
+     ],
+     "labelSv": "oblandad",
+     "collocations": [
+      "ren ull",
+      "rent guld"
+     ],
+     "tags": [
+      "material"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "A2"
+    },
+    {
+     "id": "s.ren.3",
+     "ja": "まったくの、ただの",
+     "defSv": "Bara det och ingenting annat.",
+     "defJa": "ほかでもなく、ただそれだけ。{言|い}うことを{強|つよ}めるときに{使|つか}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Det var ren tur att vi hittade nyckeln.",
+       "ja": "{鍵|かぎ}が{見|み}つかったのは、まったくの{幸運|こううん}でした。"
+      }
+     ],
+     "labelSv": "bara",
+     "collocations": [
+      "ren tur",
+      "rena lögnen"
+     ],
+     "tags": [
+      "känslor"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3,
+     "level": "B1"
+    },
+    {
+     "id": "s.ren.4",
+     "ja": "（{音|おと}が）{正確|せいかく}な、{音程|おんてい}の{合|あ}った",
+     "defSv": "Om sång eller musik: precis på rätt ton.",
+     "defJa": "{歌|うた}や{音楽|おんがく}について：ちょうど{正|ただ}しい{音|おと}の{高|たか}さである。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kören sjunger rent och vackert.",
+       "ja": "{合唱団|がっしょうだん}は{正確|せいかく}な{音程|おんてい}で{美|うつく}しく{歌|うた}います。"
+      }
+     ],
+     "labelSv": "om musik",
+     "collocations": [
+      "sjunga rent",
+      "spela rent"
+     ],
+     "explanation": {
+      "sv": "Den som sjunger rent träffar varje ton precis. Ordet används mest som adverb: sjunga rent, spela rent. Motsatsen är falskt.",
+      "ja": "「rent」に{歌|うた}う{人|ひと}は、{一|ひと}つ{一|ひと}つの{音|おと}に{正確|せいかく}に{当|あ}たります。「sjunga rent」「spela rent」のように、{主|おも}に{副詞|ふくし}として{使|つか}います。{反対|はんたい}は「falskt」です。"
+     },
+     "tags": [
+      "musik",
+      "kultur",
+      "fritid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 4,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.smutsig",

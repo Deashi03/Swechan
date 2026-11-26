@@ -5014,13 +5014,14 @@
    "confusableWith": [
     "s.rymlig.1",
     "s.trång.1",
-    "s.modern.1"
+    "s.modern.1",
+    "s.trivsam.1"
    ],
    "reviewStatus": "ai-draft",
    "blindTest": {
     "result": "pass",
-    "round": "0.19.0",
-    "hash": "5e3f13ec"
+    "round": "0.62.0",
+    "hash": "22ca86d6"
    }
   },
   {
@@ -14489,7 +14490,8 @@
    "group": "krisp",
    "quiz": false,
    "confusableWith": [
-    "s.krispig.1"
+    "s.krispig.1",
+    "s.knaprig.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -37646,7 +37648,8 @@
    "group": "leverans",
    "quiz": true,
    "confusableWith": [
-    "s.hemleverans.1"
+    "s.hemleverans.1",
+    "s.leverans.1"
    ]
   },
   {
@@ -56515,7 +56518,8 @@
     "s.otroligt.1",
     "s.fruktansvärt.1",
     "s.himla.1",
-    "s.hemskt.1"
+    "s.hemskt.1",
+    "s.extremt.1"
    ],
    "blindTest": {
     "result": "synonym",
@@ -114946,7 +114950,10 @@
     "result": "pass",
     "round": "0.36.0",
     "hash": "1c7de38a"
-   }
+   },
+   "confusableWith": [
+    "s.instinkt.1"
+   ]
   },
   {
    "senseId": "s.moderland.1",
@@ -128328,7 +128335,10 @@
     "result": "pass",
     "round": "0.40.0",
     "hash": "607086da"
-   }
+   },
+   "confusableWith": [
+    "s.datering.1"
+   ]
   },
   {
    "senseId": "s.isotop.1",
@@ -129747,7 +129757,10 @@
    "kind": "illustration",
    "motif": "byhi.röta",
    "group": "byggnadsvård",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.murken.1"
+   ]
   },
   {
    "senseId": "s.fuktskada.1",
@@ -142004,7 +142017,10 @@
    "kind": "illustration",
    "motif": "beteende.revir",
    "group": "revir",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.revirhävdande.1"
+   ]
   },
   {
    "senseId": "s.hemområde.1",
@@ -192878,6 +192894,5592 @@
     "hash": "74382be8",
     "method": "match"
    }
+  },
+  {
+   "senseId": "s.parningstid.1",
+   "kind": "illustration",
+   "motif": "mann.parningstid",
+   "group": "b5-parningstid",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "deac664a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.varmblodig.1",
+   "kind": "illustration",
+   "motif": "mann.varmblodig",
+   "group": "b5-varmblodig",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "33fcf5a0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.övervintra.1",
+   "kind": "illustration",
+   "motif": "mann.övervintra",
+   "group": "b5-övervintra",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "966250f2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.flyttande.1",
+   "kind": "illustration",
+   "motif": "mann.flyttande",
+   "group": "b5-flyttande",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "46b34e86",
+    "method": "match",
+    "waiver": "Förväxlas med sträcka (fågelsträck) bland modulens flyttfågelbilder; godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
+  },
+  {
+   "senseId": "s.flygfärdig.1",
+   "kind": "illustration",
+   "motif": "mann.flygfärdig",
+   "group": "b5-flygfärdig",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "b52d1a38",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.frostfri.1",
+   "kind": "illustration",
+   "motif": "mann.frostfri",
+   "group": "b5-frostfri",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "25a377e3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.yttre-befruktning.1",
+   "kind": "illustration",
+   "motif": "mann.yttre-befruktning",
+   "group": "b5-yttre-befruktning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "d98eb156",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.revirhävdande.1",
+   "kind": "illustration",
+   "motif": "mann.revirhävdande",
+   "group": "b5-revirhävdande",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "confusableWith": [
+    "s.revir.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "99295cba",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.monogam.1",
+   "kind": "illustration",
+   "motif": "mann.monogam",
+   "group": "b5-monogam",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "5fe98037",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dominant.1",
+   "kind": "illustration",
+   "motif": "mann.dominant",
+   "group": "b5-dominant",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "d98010b3",
+    "method": "match",
+    "waiver": "Förväxlas med underordnad och rangordning i vargflocken; godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
+  },
+  {
+   "senseId": "s.migration.2",
+   "kind": "illustration",
+   "motif": "mann.migration.2",
+   "group": "b5-migration",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "a62c9780",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.instinkt.1",
+   "kind": "illustration",
+   "motif": "mann.instinkt",
+   "group": "b5-instinkt",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "confusableWith": [
+    "s.medfödd.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "d2999aef",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.frodas.1",
+   "kind": "illustration",
+   "motif": "mann.frodas",
+   "group": "b5-frodas",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "15513686",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.släkte.1",
+   "kind": "illustration",
+   "motif": "mann.släkte",
+   "group": "b5-släkte",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "e1aa7632",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.växtfamilj.1",
+   "kind": "illustration",
+   "motif": "mann.växtfamilj",
+   "group": "b5-växtfamilj",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "77f78c52",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.indikatorart.1",
+   "kind": "illustration",
+   "motif": "mann.indikatorart",
+   "group": "b5-indikatorart",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "1abee952",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.livsfarlig.1",
+   "kind": "illustration",
+   "motif": "mann.livsfarlig",
+   "group": "b5-livsfarlig",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "65448be7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förväxlingsrisk.1",
+   "kind": "illustration",
+   "motif": "mann.förväxlingsrisk",
+   "group": "b5-förväxlingsrisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "f1a3e33c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.murken.1",
+   "kind": "illustration",
+   "motif": "mann.murken",
+   "group": "b5-murken",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "confusableWith": [
+    "s.röta.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "3226e974",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tumregel.1",
+   "kind": "illustration",
+   "motif": "mann.tumregel",
+   "group": "b5-tumregel",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "7551d827",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vid-minsta-tvekan.1",
+   "kind": "illustration",
+   "motif": "mann.vid-minsta-tvekan",
+   "group": "b5-vid-minsta-tvekan",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "0407cc4c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.avge.1",
+   "kind": "illustration",
+   "motif": "mann.avge",
+   "group": "b5-avge",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "f8e3c238",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förökning.1",
+   "kind": "illustration",
+   "motif": "mann.förökning",
+   "group": "b5-förökning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "2bf22acd",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hålla-sig.1",
+   "kind": "illustration",
+   "motif": "mann.hålla-sig",
+   "group": "b5-hålla-sig",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "16a3c78a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sydlig.1",
+   "kind": "illustration",
+   "motif": "mann.sydlig",
+   "group": "b5-sydlig",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "c923d267",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.i-verkligheten.1",
+   "kind": "illustration",
+   "motif": "mann.i-verkligheten",
+   "group": "b5-i-verkligheten",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "97feb029",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.position.1",
+   "kind": "illustration",
+   "motif": "mann.position",
+   "group": "b5-position",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "70312c94",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.gränsa-till.1",
+   "kind": "illustration",
+   "motif": "mann.gränsa-till",
+   "group": "b5-gränsa-till",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "4ab479b8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dvärgstat.1",
+   "kind": "illustration",
+   "motif": "mann.dvärgstat",
+   "group": "b5-dvärgstat",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "09d51852",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.areal.1",
+   "kind": "illustration",
+   "motif": "mann.areal",
+   "group": "b5-areal",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "2d5ccadb",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.regeringssäte.1",
+   "kind": "illustration",
+   "motif": "mann.regeringssäte",
+   "group": "b5-regeringssäte",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "ed21482e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.nordbo.1",
+   "kind": "illustration",
+   "motif": "mann.nordbo",
+   "group": "b5-nordbo",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "2e410383",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.trög.1",
+   "kind": "illustration",
+   "motif": "mans.trög",
+   "group": "b5-trög",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "2c38bea1",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.fosfor.1",
+   "kind": "illustration",
+   "motif": "mans.fosfor",
+   "group": "b5-fosfor",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "06c7c05c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.passiv-transport.1",
+   "kind": "illustration",
+   "motif": "mans.passiv-transport",
+   "group": "b5-passiv-transport",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "b7e01ca2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kopieringsfel.1",
+   "kind": "illustration",
+   "motif": "mans.kopieringsfel",
+   "group": "b5-kopieringsfel",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "3a1988de",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skadlig.1",
+   "kind": "illustration",
+   "motif": "mans.skadlig",
+   "group": "b5-skadlig",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "426d6d6c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.genuttryck.1",
+   "kind": "illustration",
+   "motif": "mans.genuttryck",
+   "group": "b5-genuttryck",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "99efadbe",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.genmodifierad.1",
+   "kind": "illustration",
+   "motif": "mans.genmodifierad",
+   "group": "b5-genmodifierad",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "2e780918",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förstenad.1",
+   "kind": "illustration",
+   "motif": "mans.förstenad",
+   "group": "b5-förstenad",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "c4ae14c7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.gren.2",
+   "kind": "illustration",
+   "motif": "mans.gren.2",
+   "group": "b5-gren",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "6a497be9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sexuell-selektion.1",
+   "kind": "illustration",
+   "motif": "mans.sexuell-selektion",
+   "group": "b5-sexuell-selektion",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "b88b8bc4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ståtlig.1",
+   "kind": "illustration",
+   "motif": "mans.ståtlig",
+   "group": "b5-ståtlig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "f44312f0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tertiärkonsument.1",
+   "kind": "illustration",
+   "motif": "mans.tertiärkonsument",
+   "group": "b5-tertiärkonsument",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "48ae1858",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.massförökning.1",
+   "kind": "illustration",
+   "motif": "mans.massförökning",
+   "group": "b5-massförökning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "59fecb78",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.livlös.1",
+   "kind": "illustration",
+   "motif": "mans.livlös",
+   "group": "b5-livlös",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "1ed7e141",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kollisionskurs.1",
+   "kind": "illustration",
+   "motif": "mans.kollisionskurs",
+   "group": "b5-kollisionskurs",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "befdeaf2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.månförmörkelse.1",
+   "kind": "illustration",
+   "motif": "mans.månförmörkelse",
+   "group": "b5-månförmörkelse",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "e9f6b45e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vårpunkt.1",
+   "kind": "illustration",
+   "motif": "mans.vårpunkt",
+   "group": "b5-vårpunkt",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "5eba8990",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.soltid.1",
+   "kind": "illustration",
+   "motif": "mans.soltid",
+   "group": "b5-soltid",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "342deff3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.mörk-energi.1",
+   "kind": "illustration",
+   "motif": "mans.mörk-energi",
+   "group": "b5-mörk-energi",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "8f61d8fb",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.blåförskjutning.1",
+   "kind": "illustration",
+   "motif": "mans.blåförskjutning",
+   "group": "b5-blåförskjutning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "5904f148",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.spektroskopi.1",
+   "kind": "illustration",
+   "motif": "mans.spektroskopi",
+   "group": "b5-spektroskopi",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "31172201",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.knaprig.1",
+   "kind": "illustration",
+   "motif": "mana.knaprig",
+   "group": "b5-knaprig",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "confusableWith": [
+    "s.frasig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "e90d811e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.frasighet.1",
+   "kind": "illustration",
+   "motif": "mana.frasighet",
+   "group": "b5-frasighet",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "6641ed85",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.veckovis.1",
+   "kind": "illustration",
+   "motif": "mana.veckovis",
+   "group": "b5-veckovis",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "8d8b7e46",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.så-fort.1",
+   "kind": "illustration",
+   "motif": "mana.så-fort",
+   "group": "b5-så-fort",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "1a07c9da",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.leverans.1",
+   "kind": "illustration",
+   "motif": "mana.leverans",
+   "group": "b5-leverans",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "confusableWith": [
+    "s.leverera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "a8da35e8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vänligen.1",
+   "kind": "illustration",
+   "motif": "mana.vänligen",
+   "group": "b5-vänligen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "d0314e7e",
+    "method": "match",
+    "waiver": "Rätt bild men låg säkerhet (artig uppmaning); godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
+  },
+  {
+   "senseId": "s.varifrån.1",
+   "kind": "illustration",
+   "motif": "mana.varifrån",
+   "group": "b5-varifrån",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "aec7ab19",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.en-bit.1",
+   "kind": "illustration",
+   "motif": "mana.en-bit",
+   "group": "b5-en-bit",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "47066d97",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.motion.1",
+   "kind": "illustration",
+   "motif": "mana.motion",
+   "group": "b5-motion",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "791d7df3",
+    "method": "match",
+    "waiver": "Förväxlas med träningsform och vardagsmotion; godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
+  },
+  {
+   "senseId": "s.extremt.1",
+   "kind": "illustration",
+   "motif": "mana.extremt",
+   "group": "b5-extremt",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "confusableWith": [
+    "s.oerhört.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "b6b80013",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.otrogen.1",
+   "kind": "illustration",
+   "motif": "mana.otrogen",
+   "group": "b5-otrogen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "d02bd2a1",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ha-det-trevligt.1",
+   "kind": "illustration",
+   "motif": "mana.ha-det-trevligt",
+   "group": "b5-ha-det-trevligt",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "053b45b5",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ömsint.1",
+   "kind": "illustration",
+   "motif": "mana.ömsint",
+   "group": "b5-ömsint",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "48d98379",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.demenssjuk.1",
+   "kind": "illustration",
+   "motif": "mana.demenssjuk",
+   "group": "b5-demenssjuk",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "f451986e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.trivsam.1",
+   "kind": "illustration",
+   "motif": "mana.trivsam",
+   "group": "b5-trivsam",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.mysig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "005922b4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.medborgarservice.1",
+   "kind": "illustration",
+   "motif": "mana.medborgarservice",
+   "group": "b5-medborgarservice",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "81d09c52",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vara-skriven.1",
+   "kind": "illustration",
+   "motif": "mana.vara-skriven",
+   "group": "b5-vara-skriven",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "819f4033",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.utflyttning.2",
+   "kind": "illustration",
+   "motif": "mana.utflyttning.2",
+   "group": "b5-utflyttning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "4267cffa",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ursprungsland.2",
+   "kind": "illustration",
+   "motif": "mana.ursprungsland.2",
+   "group": "b5-ursprungsland",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "889e3589",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.beriden.1",
+   "kind": "illustration",
+   "motif": "mana.beriden",
+   "group": "b5-beriden",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "4cf2501e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.befäl.1",
+   "kind": "illustration",
+   "motif": "mana.befäl",
+   "group": "b5-befäl",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "2ce04195",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.taktik.1",
+   "kind": "illustration",
+   "motif": "mana.taktik",
+   "group": "b5-taktik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "547c8814",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.försvarsverk.1",
+   "kind": "illustration",
+   "motif": "mana.försvarsverk",
+   "group": "b5-försvarsverk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "d1e94587",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hålla-stånd.1",
+   "kind": "illustration",
+   "motif": "mana.hålla-stånd",
+   "group": "b5-hålla-stånd",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "06dbe79b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.befästa.1",
+   "kind": "illustration",
+   "motif": "mana.befästa",
+   "group": "b5-befästa",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "09b3ca1e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.strategisk.1",
+   "kind": "illustration",
+   "motif": "mana.strategisk",
+   "group": "b5-strategisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "9c0c1e28",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.övertag.1",
+   "kind": "illustration",
+   "motif": "mana.övertag",
+   "group": "b5-övertag",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "9f95d86b",
+    "method": "match",
+    "waiver": "Rätt bild men låg säkerhet (fördel mitt i en strid är svår att visa); godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
+  },
+  {
+   "senseId": "s.kringvärn.1",
+   "kind": "illustration",
+   "motif": "mana.kringvärn",
+   "group": "b5-kringvärn",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "3bcf3b0a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.menig.1",
+   "kind": "illustration",
+   "motif": "mana.menig",
+   "group": "b5-menig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "30f34c5d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.segerrik.1",
+   "kind": "illustration",
+   "motif": "mana.segerrik",
+   "group": "b5-segerrik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "d2e0d780",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.offensiv.1",
+   "kind": "illustration",
+   "motif": "mana.offensiv",
+   "group": "b5-offensiv",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "22d83c57",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.terrorism.1",
+   "kind": "illustration",
+   "motif": "mana.terrorism",
+   "group": "b5-terrorism",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "186410cf",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.krigets-lagar.1",
+   "kind": "illustration",
+   "motif": "mana.krigets-lagar",
+   "group": "b5-krigets-lagar",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "6014dd8e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.arkeologi.1",
+   "kind": "illustration",
+   "motif": "mana.arkeologi",
+   "group": "b5-arkeologi",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.arkeologisk.1"
+   ],
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "2ab6c305",
+    "method": "match",
+    "waiver": "Rätt bild men låg säkerhet; synonympar med arkeologisk (conf.py) enligt produktägarens beslut 2026-11-26, godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
+  },
+  {
+   "senseId": "s.arkeologisk.1",
+   "kind": "illustration",
+   "motif": "mana.arkeologisk",
+   "group": "b5-arkeologisk",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.arkeologi.1"
+   ],
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "186ae84e",
+    "method": "match",
+    "waiver": "Rätt bild men låg säkerhet; synonympar med arkeologi (conf.py) enligt produktägarens beslut 2026-11-26, godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
+  },
+  {
+   "senseId": "s.lösfynd.1",
+   "kind": "illustration",
+   "motif": "mana.lösfynd",
+   "group": "b5-lösfynd",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "c57de2c1",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.datering.1",
+   "kind": "illustration",
+   "motif": "mana.datering",
+   "group": "b5-datering",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "confusableWith": [
+    "s.absolut-datering.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "8e599ed8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tyda-på.1",
+   "kind": "illustration",
+   "motif": "mana.tyda-på",
+   "group": "b5-tyda-på",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "9edfc8a1",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skriftlig-källa.1",
+   "kind": "illustration",
+   "motif": "mana.skriftlig-källa",
+   "group": "b5-skriftlig-källa",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "e3a362d8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.funktion.1",
+   "kind": "illustration",
+   "motif": "mana.funktion",
+   "group": "b5-funktion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "11de4fbb",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.avsedd.1",
+   "kind": "illustration",
+   "motif": "mana.avsedd",
+   "group": "b5-avsedd",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "64bb8b38",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.konservering.1",
+   "kind": "illustration",
+   "motif": "mana.konservering",
+   "group": "b5-konservering",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "20a06b73",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kulturhistorisk.1",
+   "kind": "illustration",
+   "motif": "mana.kulturhistorisk",
+   "group": "b5-kulturhistorisk",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "a5fe66ca",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förstahandsuppgift.1",
+   "kind": "illustration",
+   "motif": "mana.förstahandsuppgift",
+   "group": "b5-förstahandsuppgift",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "185232b0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tendentiös.1",
+   "kind": "illustration",
+   "motif": "mana.tendentiös",
+   "group": "b5-tendentiös",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "e6fbd57b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.historiesyn.1",
+   "kind": "illustration",
+   "motif": "mana.historiesyn",
+   "group": "b5-historiesyn",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "4fa79f7f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.historieskrivning.1",
+   "kind": "illustration",
+   "motif": "mana.historieskrivning",
+   "group": "b5-historieskrivning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.61.0",
+    "hash": "c874493a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.musik.1",
+   "kind": "illustration",
+   "motif": "musb.musik",
+   "group": "musik",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.instrument.1",
+   "kind": "illustration",
+   "motif": "musb.instrument",
+   "group": "musik",
+   "quiz": true
+  },
+  {
+   "senseId": "s.låt.1",
+   "kind": "illustration",
+   "motif": "musb.låt",
+   "group": "musik",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.sjunga.1",
+   "kind": "illustration",
+   "motif": "musb.sjunga",
+   "group": "musik",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.lyssna.1",
+   "kind": "illustration",
+   "motif": "musb.lyssna",
+   "group": "musik",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.spela.1",
+   "kind": "illustration",
+   "motif": "musb.spela",
+   "group": "musik",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.melodi.1",
+   "kind": "illustration",
+   "motif": "musb.melodi",
+   "group": "musik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "65d5c156",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rytm.1",
+   "kind": "illustration",
+   "motif": "musb.rytm",
+   "group": "musik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "e6929752",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rytmisk.1",
+   "kind": "illustration",
+   "motif": "musb.rytmisk",
+   "group": "musik",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "24c32132",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vers.2",
+   "kind": "illustration",
+   "motif": "musb.vers.2",
+   "group": "musik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "d55043d6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.refräng.1",
+   "kind": "illustration",
+   "motif": "musb.refräng",
+   "group": "musik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "db716cd9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.låttext.1",
+   "kind": "illustration",
+   "motif": "musb.låttext",
+   "group": "musik",
+   "quiz": false
+  },
+  {
+   "senseId": "s.nynna.1",
+   "kind": "illustration",
+   "motif": "musb.nynna",
+   "group": "musik",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.vissla.1",
+   "kind": "illustration",
+   "motif": "musb.vissla",
+   "group": "musik",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.örhänge.2",
+   "kind": "illustration",
+   "motif": "musb.örhänge.2",
+   "group": "musik",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "54c2e7b0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.takt.1",
+   "kind": "illustration",
+   "motif": "musb.takt",
+   "group": "takt",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "ebbcbb4f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hålla-takten.1",
+   "kind": "illustration",
+   "motif": "musb.hålla-takten",
+   "group": "takt",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.i-otakt.1",
+   "kind": "illustration",
+   "motif": "musb.i-otakt",
+   "group": "takt",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "0b0bcff0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.taktart.1",
+   "kind": "illustration",
+   "motif": "musb.taktart",
+   "group": "takt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "585065e0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.betoning.3",
+   "kind": "illustration",
+   "motif": "musb.betoning.3",
+   "group": "takt",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "bf11a360",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.räkna-in.1",
+   "kind": "illustration",
+   "motif": "musb.räkna-in",
+   "group": "takt",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.stampa.1",
+   "kind": "illustration",
+   "motif": "musb.stampa",
+   "group": "takt",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.klappa.2",
+   "kind": "illustration",
+   "motif": "musb.klappa.2",
+   "group": "takt",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.svänga.4",
+   "kind": "illustration",
+   "motif": "musb.svänga.4",
+   "group": "takt",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.marsch.2",
+   "kind": "illustration",
+   "motif": "musb.marsch.2",
+   "group": "takt",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.tonart.1",
+   "kind": "illustration",
+   "motif": "musb.tonart",
+   "group": "tonart",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "3bee1545",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dur.1",
+   "kind": "illustration",
+   "motif": "musb.dur",
+   "group": "tonart",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "cd10f48d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.moll.1",
+   "kind": "illustration",
+   "motif": "musb.moll",
+   "group": "tonart",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "9b61765f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skala-noun.3",
+   "kind": "illustration",
+   "motif": "musb.skala-noun.3",
+   "group": "tonart",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "2a0fbfcc",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.oktav.1",
+   "kind": "illustration",
+   "motif": "musb.oktav",
+   "group": "tonart",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "7b00cc27",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.halvton.1",
+   "kind": "illustration",
+   "motif": "musb.halvton",
+   "group": "tonart",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "b9c68e92",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.falsk.4",
+   "kind": "illustration",
+   "motif": "musb.falsk.4",
+   "group": "tonart",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "e03198d2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ren.4",
+   "kind": "illustration",
+   "motif": "musb.ren.4",
+   "group": "tonart",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "aed475d4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.gehör.1",
+   "kind": "illustration",
+   "motif": "musb.gehör",
+   "group": "tonart",
+   "quiz": false
+  },
+  {
+   "senseId": "s.röst.1",
+   "kind": "illustration",
+   "motif": "musb.röst",
+   "group": "tonart",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.transponera.2",
+   "kind": "illustration",
+   "motif": "musb.transponera.2",
+   "group": "tonart",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "92b3bb57",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.harmoni.2",
+   "kind": "illustration",
+   "motif": "musb.harmoni.2",
+   "group": "harmoni.2",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "c614a8f5",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ackord.1",
+   "kind": "illustration",
+   "motif": "musb.ackord",
+   "group": "harmoni.2",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "881b13f6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.grepp.3",
+   "kind": "illustration",
+   "motif": "musb.grepp.3",
+   "group": "harmoni.2",
+   "quiz": false
+  },
+  {
+   "senseId": "s.kompa.1",
+   "kind": "illustration",
+   "motif": "musb.kompa",
+   "group": "harmoni.2",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.körledare.1",
+   "kind": "illustration",
+   "motif": "musb.körledare",
+   "group": "harmoni.2",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.stämma-noun.1",
+   "kind": "illustration",
+   "motif": "musb.stämma-noun.1",
+   "group": "harmoni.2",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "ca4ac4bc",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.flerstämmig.1",
+   "kind": "illustration",
+   "motif": "musb.flerstämmig",
+   "group": "harmoni.2",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "b32c640c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.unisont.1",
+   "kind": "illustration",
+   "motif": "musb.unisont",
+   "group": "harmoni.2",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "04974358",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skära-sig.2",
+   "kind": "illustration",
+   "motif": "musb.skära-sig.2",
+   "group": "harmoni.2",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "25cbd99e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.grundton.1",
+   "kind": "illustration",
+   "motif": "musb.grundton",
+   "group": "harmoni.2",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "0ccb6bf8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.provsjunga.1",
+   "kind": "illustration",
+   "motif": "musb.provsjunga",
+   "group": "harmoni.2",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.sopran.1",
+   "kind": "illustration",
+   "motif": "musb.sopran",
+   "group": "harmoni.2",
+   "quiz": false
+  },
+  {
+   "senseId": "s.alt.1",
+   "kind": "illustration",
+   "motif": "musb.alt",
+   "group": "harmoni.2",
+   "quiz": false
+  },
+  {
+   "senseId": "s.tenor.1",
+   "kind": "illustration",
+   "motif": "musb.tenor",
+   "group": "harmoni.2",
+   "quiz": false
+  },
+  {
+   "senseId": "s.dynamik.1",
+   "kind": "illustration",
+   "motif": "musb.dynamik",
+   "group": "dynamik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "46836d05",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.crescendo.1",
+   "kind": "illustration",
+   "motif": "musb.crescendo",
+   "group": "dynamik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "8c2828d1",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.diminuendo.1",
+   "kind": "illustration",
+   "motif": "musb.diminuendo",
+   "group": "dynamik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "cfb633d0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.klang.1",
+   "kind": "illustration",
+   "motif": "musb.klang",
+   "group": "dynamik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "9773ca47",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.klar.5",
+   "kind": "illustration",
+   "motif": "musb.klar.5",
+   "group": "dynamik",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "867e6111",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dov.1",
+   "kind": "illustration",
+   "motif": "musb.dov",
+   "group": "dynamik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "f21ecf50",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.klinga-verb.1",
+   "kind": "illustration",
+   "motif": "musb.klinga-verb",
+   "group": "dynamik",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.tona-bort.1",
+   "kind": "illustration",
+   "motif": "musb.tona-bort",
+   "group": "dynamik",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "2fdc1c2c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.tystna.1",
+   "kind": "illustration",
+   "motif": "musb.tystna",
+   "group": "dynamik",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.skrälla.1",
+   "kind": "illustration",
+   "motif": "musb.skrälla",
+   "group": "dynamik",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.not.1",
+   "kind": "illustration",
+   "motif": "musb.not.1",
+   "group": "not.1",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "01433735",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.läsa-noter.1",
+   "kind": "illustration",
+   "motif": "musb.läsa-noter",
+   "group": "not.1",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.notblad.1",
+   "kind": "illustration",
+   "motif": "musb.notblad",
+   "group": "not.1",
+   "quiz": false
+  },
+  {
+   "senseId": "s.notställ.1",
+   "kind": "illustration",
+   "motif": "musb.notställ",
+   "group": "not.1",
+   "quiz": false
+  },
+  {
+   "senseId": "s.notlinje.1",
+   "kind": "illustration",
+   "motif": "musb.notlinje",
+   "group": "not.1",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "ac8c1bdf",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.klav.1",
+   "kind": "illustration",
+   "motif": "musb.klav",
+   "group": "not.1",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "eada4dc8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.taktstreck.1",
+   "kind": "illustration",
+   "motif": "musb.taktstreck",
+   "group": "not.1",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "41de2fb9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.paus.3",
+   "kind": "illustration",
+   "motif": "musb.paus.3",
+   "group": "not.1",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "fa78461f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.repris.2",
+   "kind": "illustration",
+   "motif": "musb.repris.2",
+   "group": "not.1",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "d4583df0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.kryss.2",
+   "kind": "illustration",
+   "motif": "musb.kryss.2",
+   "group": "not.1",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "04742af9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sångbok.1",
+   "kind": "illustration",
+   "motif": "musb.sångbok",
+   "group": "not.1",
+   "quiz": true
+  },
+  {
+   "senseId": "s.andas.1",
+   "kind": "illustration",
+   "motif": "musb.andas",
+   "group": "not.1",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.uttryck.2",
+   "kind": "illustration",
+   "motif": "musb.uttryck.2",
+   "group": "uttryck.2",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "6043a124",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.framföra.2",
+   "kind": "illustration",
+   "motif": "musb.framföra.2",
+   "group": "uttryck.2",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.inlevelse.1",
+   "kind": "illustration",
+   "motif": "musb.inlevelse",
+   "group": "uttryck.2",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "a93f9cac",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.solo.1",
+   "kind": "illustration",
+   "motif": "musb.solo",
+   "group": "uttryck.2",
+   "quiz": true
+  },
+  {
+   "senseId": "s.vibrato.1",
+   "kind": "illustration",
+   "motif": "musb.vibrato",
+   "group": "uttryck.2",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "96a34bb8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.legato.1",
+   "kind": "illustration",
+   "motif": "musb.legato",
+   "group": "uttryck.2",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "a539dec4",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.staccato.1",
+   "kind": "illustration",
+   "motif": "musb.staccato",
+   "group": "uttryck.2",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "c34b5155",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.medryckande.1",
+   "kind": "illustration",
+   "motif": "musb.medryckande",
+   "group": "uttryck.2",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "9dcf05a9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.pampig.1",
+   "kind": "illustration",
+   "motif": "musb.pampig",
+   "group": "uttryck.2",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "c79c4917",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.melankolisk.1",
+   "kind": "illustration",
+   "motif": "musb.melankolisk",
+   "group": "uttryck.2",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "9a97179b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.stråkinstrument.1",
+   "kind": "illustration",
+   "motif": "instr.stråkinstrument",
+   "group": "fiol",
+   "quiz": false
+  },
+  {
+   "senseId": "s.fiol.1",
+   "kind": "illustration",
+   "motif": "instr.fiol",
+   "group": "fiol",
+   "quiz": true
+  },
+  {
+   "senseId": "s.altfiol.1",
+   "kind": "illustration",
+   "motif": "instr.altfiol",
+   "group": "fiol",
+   "quiz": false
+  },
+  {
+   "senseId": "s.cello.1",
+   "kind": "illustration",
+   "motif": "instr.cello",
+   "group": "cello",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kontrabas.1",
+   "kind": "illustration",
+   "motif": "instr.kontrabas",
+   "group": "cello",
+   "quiz": true
+  },
+  {
+   "senseId": "s.harpa.1",
+   "kind": "illustration",
+   "motif": "instr.harpa",
+   "group": "harpa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.nyckelharpa.1",
+   "kind": "illustration",
+   "motif": "instr.nyckelharpa",
+   "group": "nyckelharpa",
+   "quiz": false
+  },
+  {
+   "senseId": "s.stråke.1",
+   "kind": "illustration",
+   "motif": "instr.stråke",
+   "group": "stråke",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kolofonium.1",
+   "kind": "illustration",
+   "motif": "instr.kolofonium",
+   "group": "stråke",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.spela-på.2",
+   "kind": "illustration",
+   "motif": "instr.spela-på.2",
+   "group": "spela-på.2",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.knäppa.2",
+   "kind": "illustration",
+   "motif": "instr.knäppa.2",
+   "group": "harpa",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.stråkkvartett.1",
+   "kind": "illustration",
+   "motif": "instr.stråkkvartett",
+   "group": "stråkkvartett",
+   "quiz": false
+  },
+  {
+   "senseId": "s.blåsinstrument.1",
+   "kind": "illustration",
+   "motif": "instr.blåsinstrument",
+   "group": "blåsinstrument",
+   "quiz": false
+  },
+  {
+   "senseId": "s.träblåsinstrument.1",
+   "kind": "illustration",
+   "motif": "instr.träblåsinstrument",
+   "group": "blåsinstrument",
+   "quiz": false
+  },
+  {
+   "senseId": "s.flöjt.1",
+   "kind": "illustration",
+   "motif": "instr.flöjt",
+   "group": "flöjt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.blockflöjt.1",
+   "kind": "illustration",
+   "motif": "instr.blockflöjt",
+   "group": "flöjt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.klaff.4",
+   "kind": "illustration",
+   "motif": "instr.klaff.4",
+   "group": "flöjt",
+   "quiz": false
+  },
+  {
+   "senseId": "s.munstycke.2",
+   "kind": "illustration",
+   "motif": "instr.munstycke.2",
+   "group": "klarinett",
+   "quiz": false
+  },
+  {
+   "senseId": "s.rörblad.1",
+   "kind": "illustration",
+   "motif": "instr.rörblad",
+   "group": "klarinett",
+   "quiz": false
+  },
+  {
+   "senseId": "s.klarinett.1",
+   "kind": "illustration",
+   "motif": "instr.klarinett",
+   "group": "klarinett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.oboe.1",
+   "kind": "illustration",
+   "motif": "instr.oboe",
+   "group": "klarinett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fagott.1",
+   "kind": "illustration",
+   "motif": "instr.fagott",
+   "group": "fagott",
+   "quiz": true
+  },
+  {
+   "senseId": "s.saxofon.1",
+   "kind": "illustration",
+   "motif": "instr.saxofon",
+   "group": "saxofon",
+   "quiz": true
+  },
+  {
+   "senseId": "s.blåsa.2",
+   "kind": "illustration",
+   "motif": "instr.blåsa.2",
+   "group": "blåsa",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.säckpipa.1",
+   "kind": "illustration",
+   "motif": "instr.säckpipa",
+   "group": "säckpipa",
+   "quiz": true
+  },
+  {
+   "senseId": "s.panflöjt.1",
+   "kind": "illustration",
+   "motif": "instr.panflöjt",
+   "group": "panflöjt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.bleckblåsinstrument.1",
+   "kind": "illustration",
+   "motif": "instr.bleckblåsinstrument",
+   "group": "blåsinstrument",
+   "quiz": false
+  },
+  {
+   "senseId": "s.trumpet.1",
+   "kind": "illustration",
+   "motif": "instr.trumpet",
+   "group": "trumpet",
+   "quiz": true
+  },
+  {
+   "senseId": "s.trombon.1",
+   "kind": "illustration",
+   "motif": "instr.trombon",
+   "group": "trombon",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ventil.5",
+   "kind": "illustration",
+   "motif": "instr.ventil.5",
+   "group": "trumpet",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.valthorn.1",
+   "kind": "illustration",
+   "motif": "instr.valthorn",
+   "group": "valthorn",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tuba.1",
+   "kind": "illustration",
+   "motif": "instr.tuba",
+   "group": "tuba",
+   "quiz": true
+  },
+  {
+   "senseId": "s.trumpetare.1",
+   "kind": "illustration",
+   "motif": "instr.trumpetare",
+   "group": "trumpet",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sordin.1",
+   "kind": "illustration",
+   "motif": "instr.sordin",
+   "group": "trumpet",
+   "quiz": false
+  },
+  {
+   "senseId": "s.fanfar.1",
+   "kind": "illustration",
+   "motif": "instr.fanfar",
+   "group": "trumpet",
+   "quiz": false
+  },
+  {
+   "senseId": "s.blåsorkester.1",
+   "kind": "illustration",
+   "motif": "instr.blåsorkester",
+   "group": "blåsorkester",
+   "quiz": false
+  },
+  {
+   "senseId": "s.musikkår.1",
+   "kind": "illustration",
+   "motif": "instr.musikkår",
+   "group": "blåsorkester",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.näverlur.1",
+   "kind": "illustration",
+   "motif": "instr.näverlur",
+   "group": "näverlur",
+   "quiz": false
+  },
+  {
+   "senseId": "s.slagverk.1",
+   "kind": "illustration",
+   "motif": "instr.slagverk",
+   "group": "slagverk",
+   "quiz": false
+  },
+  {
+   "senseId": "s.trumma.1",
+   "kind": "illustration",
+   "motif": "instr.trumma",
+   "group": "trumma",
+   "quiz": true
+  },
+  {
+   "senseId": "s.trumma-verb.1",
+   "kind": "illustration",
+   "motif": "instr.trumma-verb",
+   "group": "trumma",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.trumstock.1",
+   "kind": "illustration",
+   "motif": "instr.trumstock",
+   "group": "trumma",
+   "quiz": true
+  },
+  {
+   "senseId": "s.cymbal.1",
+   "kind": "illustration",
+   "motif": "instr.cymbal",
+   "group": "cymbal",
+   "quiz": true
+  },
+  {
+   "senseId": "s.trumset.1",
+   "kind": "illustration",
+   "motif": "instr.trumset",
+   "group": "trumma",
+   "quiz": true
+  },
+  {
+   "senseId": "s.virveltrumma.1",
+   "kind": "illustration",
+   "motif": "instr.virveltrumma",
+   "group": "trumma",
+   "quiz": true
+  },
+  {
+   "senseId": "s.virvel.2",
+   "kind": "illustration",
+   "motif": "instr.virvel.2",
+   "group": "trumma",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.visp.2",
+   "kind": "illustration",
+   "motif": "instr.visp.2",
+   "group": "trumma",
+   "quiz": false
+  },
+  {
+   "senseId": "s.puka.1",
+   "kind": "illustration",
+   "motif": "instr.puka",
+   "group": "puka",
+   "quiz": true
+  },
+  {
+   "senseId": "s.xylofon.1",
+   "kind": "illustration",
+   "motif": "instr.xylofon",
+   "group": "xylofon",
+   "quiz": true
+  },
+  {
+   "senseId": "s.triangel.2",
+   "kind": "illustration",
+   "motif": "instr.triangel.2",
+   "group": "triangel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tamburin.1",
+   "kind": "illustration",
+   "motif": "instr.tamburin",
+   "group": "tamburin",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kastanjett.1",
+   "kind": "illustration",
+   "motif": "instr.kastanjett",
+   "group": "kastanjett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gonggong.1",
+   "kind": "illustration",
+   "motif": "instr.gonggong",
+   "group": "gonggong",
+   "quiz": true
+  },
+  {
+   "senseId": "s.slagverkare.1",
+   "kind": "illustration",
+   "motif": "instr.slagverkare",
+   "group": "slagverk",
+   "quiz": false
+  },
+  {
+   "senseId": "s.piano.1",
+   "kind": "illustration",
+   "motif": "instr.piano",
+   "group": "piano",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tangent.3",
+   "kind": "illustration",
+   "motif": "instr.tangent.3",
+   "group": "piano",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.klaviatur.1",
+   "kind": "illustration",
+   "motif": "instr.klaviatur",
+   "group": "piano",
+   "quiz": false
+  },
+  {
+   "senseId": "s.klaverinstrument.1",
+   "kind": "illustration",
+   "motif": "instr.klaverinstrument",
+   "group": "piano",
+   "quiz": false
+  },
+  {
+   "senseId": "s.flygel.2",
+   "kind": "illustration",
+   "motif": "instr.flygel.2",
+   "group": "piano",
+   "quiz": true
+  },
+  {
+   "senseId": "s.pianist.1",
+   "kind": "illustration",
+   "motif": "instr.pianist",
+   "group": "piano",
+   "quiz": true
+  },
+  {
+   "senseId": "s.pedal.3",
+   "kind": "illustration",
+   "motif": "instr.pedal.3",
+   "group": "piano",
+   "quiz": false
+  },
+  {
+   "senseId": "s.pianopall.1",
+   "kind": "illustration",
+   "motif": "instr.pianopall",
+   "group": "piano",
+   "quiz": true
+  },
+  {
+   "senseId": "s.orgel.1",
+   "kind": "illustration",
+   "motif": "instr.orgel",
+   "group": "orgel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.organist.1",
+   "kind": "illustration",
+   "motif": "instr.organist",
+   "group": "orgel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.cembalo.1",
+   "kind": "illustration",
+   "motif": "instr.cembalo",
+   "group": "piano",
+   "quiz": false
+  },
+  {
+   "senseId": "s.dragspel.1",
+   "kind": "illustration",
+   "motif": "instr.dragspel",
+   "group": "dragspel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fyrhändigt.1",
+   "kind": "illustration",
+   "motif": "instr.fyrhändigt",
+   "group": "piano",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "a841522d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.pianostämmare.1",
+   "kind": "illustration",
+   "motif": "instr.pianostämmare",
+   "group": "piano",
+   "quiz": false
+  },
+  {
+   "senseId": "s.ackompanjera.1",
+   "kind": "illustration",
+   "motif": "instr.ackompanjera",
+   "group": "spela-på.2",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.gitarr.1",
+   "kind": "illustration",
+   "motif": "instr.gitarr",
+   "group": "gitarr",
+   "quiz": true
+  },
+  {
+   "senseId": "s.gitarrist.1",
+   "kind": "illustration",
+   "motif": "instr.gitarrist",
+   "group": "gitarr",
+   "quiz": true
+  },
+  {
+   "senseId": "s.akustisk.1",
+   "kind": "illustration",
+   "motif": "instr.akustisk",
+   "group": "gitarr",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "36051164",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.elgitarr.1",
+   "kind": "illustration",
+   "motif": "instr.elgitarr",
+   "group": "elgitarr",
+   "quiz": true
+  },
+  {
+   "senseId": "s.elbas.1",
+   "kind": "illustration",
+   "motif": "instr.elbas",
+   "group": "elgitarr",
+   "quiz": true
+  },
+  {
+   "senseId": "s.basist.1",
+   "kind": "illustration",
+   "motif": "instr.basist",
+   "group": "elgitarr",
+   "quiz": false
+  },
+  {
+   "senseId": "s.greppbräda.1",
+   "kind": "illustration",
+   "motif": "instr.greppbräda",
+   "group": "greppbräda",
+   "quiz": false
+  },
+  {
+   "senseId": "s.stämskruv.1",
+   "kind": "illustration",
+   "motif": "instr.stämskruv",
+   "group": "greppbräda",
+   "quiz": false
+  },
+  {
+   "senseId": "s.stämapparat.1",
+   "kind": "illustration",
+   "motif": "instr.stämapparat",
+   "group": "greppbräda",
+   "quiz": false
+  },
+  {
+   "senseId": "s.plektrum.1",
+   "kind": "illustration",
+   "motif": "instr.plektrum",
+   "group": "plektrum",
+   "quiz": true
+  },
+  {
+   "senseId": "s.slå-an.1",
+   "kind": "illustration",
+   "motif": "instr.slå-an",
+   "group": "gitarr",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.kapodaster.1",
+   "kind": "illustration",
+   "motif": "instr.kapodaster",
+   "group": "greppbräda",
+   "quiz": false
+  },
+  {
+   "senseId": "s.ukulele.1",
+   "kind": "illustration",
+   "motif": "instr.ukulele",
+   "group": "ukulele",
+   "quiz": true
+  },
+  {
+   "senseId": "s.banjo.1",
+   "kind": "illustration",
+   "motif": "instr.banjo",
+   "group": "banjo",
+   "quiz": true
+  },
+  {
+   "senseId": "s.elektronisk.1",
+   "kind": "illustration",
+   "motif": "instr.elektronisk",
+   "group": "synt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "9228659b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.synt.1",
+   "kind": "illustration",
+   "motif": "instr.synt",
+   "group": "synt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.keyboard.1",
+   "kind": "illustration",
+   "motif": "instr.keyboard",
+   "group": "synt",
+   "quiz": false
+  },
+  {
+   "senseId": "s.trummaskin.1",
+   "kind": "illustration",
+   "motif": "instr.trummaskin",
+   "group": "trummaskin",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.ratt.2",
+   "kind": "illustration",
+   "motif": "instr.ratt.2",
+   "group": "ratt",
+   "quiz": false
+  },
+  {
+   "senseId": "s.loop.3",
+   "kind": "illustration",
+   "motif": "instr.loop.3",
+   "group": "loop",
+   "quiz": false
+  },
+  {
+   "senseId": "s.sampla.1",
+   "kind": "illustration",
+   "motif": "instr.sampla",
+   "group": "sampla",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.effektpedal.1",
+   "kind": "illustration",
+   "motif": "instr.effektpedal",
+   "group": "effektpedal",
+   "quiz": true
+  },
+  {
+   "senseId": "s.distorsion.1",
+   "kind": "illustration",
+   "motif": "instr.distorsion",
+   "group": "effektpedal",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "820b5f32",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.theremin.1",
+   "kind": "illustration",
+   "motif": "instr.theremin",
+   "group": "theremin",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.klassisk-musik.1",
+   "kind": "illustration",
+   "motif": "musg.klassisk-musik",
+   "group": "klassisk",
+   "quiz": false
+  },
+  {
+   "senseId": "s.musiker.1",
+   "kind": "illustration",
+   "motif": "musg.musiker",
+   "group": "musiker",
+   "quiz": false
+  },
+  {
+   "senseId": "s.kompositör.1",
+   "kind": "illustration",
+   "motif": "musg.kompositör",
+   "group": "kompositör",
+   "quiz": true
+  },
+  {
+   "senseId": "s.symfoni.1",
+   "kind": "illustration",
+   "motif": "musg.symfoni",
+   "group": "symfoni",
+   "quiz": false
+  },
+  {
+   "senseId": "s.opera.1",
+   "kind": "illustration",
+   "motif": "musg.opera",
+   "group": "opera",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kammarmusik.1",
+   "kind": "illustration",
+   "motif": "musg.kammarmusik",
+   "group": "kammarmusik",
+   "quiz": false
+  },
+  {
+   "senseId": "s.kyrkomusik.1",
+   "kind": "illustration",
+   "motif": "musg.kyrkomusik",
+   "group": "kyrkomusik",
+   "quiz": true
+  },
+  {
+   "senseId": "s.solist.1",
+   "kind": "illustration",
+   "motif": "musg.solist",
+   "group": "solist",
+   "quiz": true
+  },
+  {
+   "senseId": "s.konserthus.1",
+   "kind": "illustration",
+   "motif": "musg.konserthus",
+   "group": "konserthus",
+   "quiz": true
+  },
+  {
+   "senseId": "s.frack.1",
+   "kind": "illustration",
+   "motif": "musg.frack",
+   "group": "frack",
+   "quiz": true
+  },
+  {
+   "senseId": "s.blues.1",
+   "kind": "illustration",
+   "motif": "musg.blues",
+   "group": "blues",
+   "quiz": false
+  },
+  {
+   "senseId": "s.storband.1",
+   "kind": "illustration",
+   "motif": "musg.storband",
+   "group": "storband",
+   "quiz": true
+  },
+  {
+   "senseId": "s.trio.1",
+   "kind": "illustration",
+   "motif": "musg.trio",
+   "group": "trio",
+   "quiz": false
+  },
+  {
+   "senseId": "s.jazzklubb.1",
+   "kind": "illustration",
+   "motif": "musg.jazzklubb",
+   "group": "jazzklubb",
+   "quiz": true
+  },
+  {
+   "senseId": "s.jamma.1",
+   "kind": "illustration",
+   "motif": "musg.jamma",
+   "group": "jamma",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.gospel.1",
+   "kind": "illustration",
+   "motif": "musg.gospel",
+   "group": "gospel",
+   "quiz": true
+  },
+  {
+   "senseId": "s.band.1",
+   "kind": "illustration",
+   "motif": "musg.band",
+   "group": "band",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sångare.1",
+   "kind": "illustration",
+   "motif": "musg.sångare",
+   "group": "sångare",
+   "quiz": true
+  },
+  {
+   "senseId": "s.artist.1",
+   "kind": "illustration",
+   "motif": "musg.artist",
+   "group": "artist",
+   "quiz": false
+  },
+  {
+   "senseId": "s.rock.1",
+   "kind": "illustration",
+   "motif": "musg.rock",
+   "group": "rock",
+   "quiz": true
+  },
+  {
+   "senseId": "s.pop.1",
+   "kind": "illustration",
+   "motif": "musg.pop",
+   "group": "pop",
+   "quiz": false
+  },
+  {
+   "senseId": "s.album.1",
+   "kind": "illustration",
+   "motif": "musg.album",
+   "group": "album",
+   "quiz": true
+  },
+  {
+   "senseId": "s.coverlåt.1",
+   "kind": "illustration",
+   "motif": "musg.coverlåt",
+   "group": "coverlåt",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "7590cc30",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.spelning.1",
+   "kind": "illustration",
+   "motif": "musg.spelning",
+   "group": "spelning",
+   "quiz": false
+  },
+  {
+   "senseId": "s.turné.1",
+   "kind": "illustration",
+   "motif": "musg.turné",
+   "group": "turné",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fan.1",
+   "kind": "illustration",
+   "motif": "musg.fan",
+   "group": "fan",
+   "quiz": true
+  },
+  {
+   "senseId": "s.punk.1",
+   "kind": "illustration",
+   "motif": "musg.punk",
+   "group": "punk",
+   "quiz": true
+  },
+  {
+   "senseId": "s.schlager.1",
+   "kind": "illustration",
+   "motif": "musg.schlager",
+   "group": "schlager",
+   "quiz": false
+  },
+  {
+   "senseId": "s.dansband.1",
+   "kind": "illustration",
+   "motif": "musg.dansband",
+   "group": "dansband",
+   "quiz": true
+  },
+  {
+   "senseId": "s.slå-igenom.1",
+   "kind": "illustration",
+   "motif": "musg.slå-igenom",
+   "group": "slå",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.dansmusik.1",
+   "kind": "illustration",
+   "motif": "musg.dansmusik",
+   "group": "dansmusik",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.dj.1",
+   "kind": "illustration",
+   "motif": "musg.dj",
+   "group": "dj",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mixa.2",
+   "kind": "illustration",
+   "motif": "musg.mixa.2",
+   "group": "mixa",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.remix.1",
+   "kind": "illustration",
+   "motif": "musg.remix",
+   "group": "remix",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "98e09b22",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.techno.1",
+   "kind": "illustration",
+   "motif": "musg.techno",
+   "group": "techno",
+   "quiz": false
+  },
+  {
+   "senseId": "s.nattklubb.1",
+   "kind": "illustration",
+   "motif": "musg.nattklubb",
+   "group": "nattklubb",
+   "quiz": true
+  },
+  {
+   "senseId": "s.dörrvakt.1",
+   "kind": "illustration",
+   "motif": "musg.dörrvakt",
+   "group": "dörrvakt",
+   "quiz": true
+  },
+  {
+   "senseId": "s.dansgolv.1",
+   "kind": "illustration",
+   "motif": "musg.dansgolv",
+   "group": "dansgolv",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ljusshow.1",
+   "kind": "illustration",
+   "motif": "musg.ljusshow",
+   "group": "ljusshow",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.festival.1",
+   "kind": "illustration",
+   "motif": "musg.festival",
+   "group": "festival",
+   "quiz": true
+  },
+  {
+   "senseId": "s.hiphop.1",
+   "kind": "illustration",
+   "motif": "musg.hiphop",
+   "group": "hiphop",
+   "quiz": false
+  },
+  {
+   "senseId": "s.rappa.1",
+   "kind": "illustration",
+   "motif": "musg.rappa",
+   "group": "rappa",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.beat.1",
+   "kind": "illustration",
+   "motif": "musg.beat",
+   "group": "beat",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.scratcha.1",
+   "kind": "illustration",
+   "motif": "musg.scratcha",
+   "group": "scratcha",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.graffiti.1",
+   "kind": "illustration",
+   "motif": "musg.graffiti",
+   "group": "graffiti",
+   "quiz": true
+  },
+  {
+   "senseId": "s.folkmusik.1",
+   "kind": "illustration",
+   "motif": "musg.folkmusik",
+   "group": "folkmusik",
+   "quiz": false
+  },
+  {
+   "senseId": "s.spelmanslag.1",
+   "kind": "illustration",
+   "motif": "musg.spelmanslag",
+   "group": "spelmanslag",
+   "quiz": true
+  },
+  {
+   "senseId": "s.polska.1",
+   "kind": "illustration",
+   "motif": "musg.polska",
+   "group": "polska",
+   "quiz": false
+  },
+  {
+   "senseId": "s.folkvisa.1",
+   "kind": "illustration",
+   "motif": "musg.folkvisa",
+   "group": "folkvisa",
+   "quiz": false
+  },
+  {
+   "senseId": "s.tralla.1",
+   "kind": "illustration",
+   "motif": "musg.tralla",
+   "group": "tralla",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.spela-på-gehör.1",
+   "kind": "illustration",
+   "motif": "musg.spela-på-gehör",
+   "group": "spela",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.folkdans.1",
+   "kind": "illustration",
+   "motif": "musg.folkdans",
+   "group": "folkdans",
+   "quiz": true
+  },
+  {
+   "senseId": "s.midsommarstång.1",
+   "kind": "illustration",
+   "motif": "musg.midsommarstång",
+   "group": "midsommarstång",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fäbod.1",
+   "kind": "illustration",
+   "motif": "musg.fäbod",
+   "group": "fäbod",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kulning.1",
+   "kind": "illustration",
+   "motif": "musg.kulning",
+   "group": "kulning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.filmmusik.1",
+   "kind": "illustration",
+   "motif": "musg.filmmusik",
+   "group": "filmmusik",
+   "quiz": false
+  },
+  {
+   "senseId": "s.bakgrundsmusik.1",
+   "kind": "illustration",
+   "motif": "musg.bakgrundsmusik",
+   "group": "bakgrundsmusik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "c58d854b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ledmotiv.1",
+   "kind": "illustration",
+   "motif": "musg.ledmotiv",
+   "group": "ledmotiv",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "5a2eb37d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.läskig.1",
+   "kind": "illustration",
+   "motif": "musg.läskig",
+   "group": "läskig",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "be585612",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ljudeffekt.1",
+   "kind": "illustration",
+   "motif": "musg.ljudeffekt",
+   "group": "ljudeffekt",
+   "quiz": false
+  },
+  {
+   "senseId": "s.eftertext.1",
+   "kind": "illustration",
+   "motif": "musg.eftertext",
+   "group": "eftertext",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.spelmusik.1",
+   "kind": "illustration",
+   "motif": "musg.spelmusik",
+   "group": "spelmusik",
+   "quiz": true
+  },
+  {
+   "senseId": "s.repetition.2",
+   "kind": "illustration",
+   "motif": "conc.repetition.2",
+   "group": "konsert-rep",
+   "quiz": false,
+   "symbol": true,
+   "confusableWith": [
+    "s.repetera.2"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "c25dab69",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.repetera.2",
+   "kind": "illustration",
+   "motif": "conc.repetera.2",
+   "group": "konsert-rep",
+   "quiz": false,
+   "animated": true,
+   "confusableWith": [
+    "s.repetition.2"
+   ]
+  },
+  {
+   "senseId": "s.replokal.1",
+   "kind": "illustration",
+   "motif": "conc.replokal",
+   "group": "konsert-rep",
+   "quiz": true
+  },
+  {
+   "senseId": "s.spela-igenom.1",
+   "kind": "illustration",
+   "motif": "conc.spela-igenom",
+   "group": "konsert-rep",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "48852efb",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.rigga.1",
+   "kind": "illustration",
+   "motif": "conc.rigga",
+   "group": "konsert-rep",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.soundcheck.1",
+   "kind": "illustration",
+   "motif": "conc.soundcheck",
+   "group": "konsert-rep",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.medhörning.1",
+   "kind": "illustration",
+   "motif": "conc.medhörning",
+   "group": "konsert-rep",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "713f982f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.låtlista.1",
+   "kind": "illustration",
+   "motif": "conc.låtlista",
+   "group": "konsert-rep",
+   "quiz": true
+  },
+  {
+   "senseId": "s.insläpp.1",
+   "kind": "illustration",
+   "motif": "conc.insläpp",
+   "group": "konsert-scen",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.utsåld.1",
+   "kind": "illustration",
+   "motif": "conc.utsåld",
+   "group": "konsert-scen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "eae953d6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.förband.3",
+   "kind": "illustration",
+   "motif": "conc.förband.3",
+   "group": "konsert-scen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "2d8cb575",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.paus.1",
+   "kind": "illustration",
+   "motif": "conc.paus",
+   "group": "konsert-scen",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.strålkastare.2",
+   "kind": "illustration",
+   "motif": "conc.strålkastare.2",
+   "group": "konsert-scen",
+   "quiz": true
+  },
+  {
+   "senseId": "s.uppträda.1",
+   "kind": "illustration",
+   "motif": "conc.uppträda.1",
+   "group": "konsert-scen",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.rampfeber.1",
+   "kind": "illustration",
+   "motif": "conc.rampfeber",
+   "group": "konsert-scen",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.bocka.1",
+   "kind": "illustration",
+   "motif": "conc.bocka.1",
+   "group": "konsert-scen",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.stående-ovationer.1",
+   "kind": "illustration",
+   "motif": "conc.stående-ovationer",
+   "group": "konsert-scen",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.extranummer.1",
+   "kind": "illustration",
+   "motif": "conc.extranummer",
+   "group": "konsert-scen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "6fd76f01",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.orkester.1",
+   "kind": "illustration",
+   "motif": "conc.orkester",
+   "group": "orkester",
+   "quiz": true
+  },
+  {
+   "senseId": "s.dirigent.1",
+   "kind": "illustration",
+   "motif": "conc.dirigent",
+   "group": "orkester",
+   "quiz": true
+  },
+  {
+   "senseId": "s.taktpinne.1",
+   "kind": "illustration",
+   "motif": "conc.taktpinne",
+   "group": "orkester",
+   "quiz": true
+  },
+  {
+   "senseId": "s.dirigera.1",
+   "kind": "illustration",
+   "motif": "conc.dirigera.1",
+   "group": "orkester",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.podium.1",
+   "kind": "illustration",
+   "motif": "conc.podium",
+   "group": "orkester",
+   "quiz": true
+  },
+  {
+   "senseId": "s.partitur.1",
+   "kind": "illustration",
+   "motif": "conc.partitur",
+   "group": "orkester",
+   "quiz": true
+  },
+  {
+   "senseId": "s.insats.3",
+   "kind": "illustration",
+   "motif": "conc.insats.3",
+   "group": "orkester",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "ccf8eb2f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.konsertmästare.1",
+   "kind": "illustration",
+   "motif": "conc.konsertmästare",
+   "group": "orkester",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "8ac394e6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ensemble.1",
+   "kind": "illustration",
+   "motif": "conc.ensemble",
+   "group": "orkester",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "34a781f7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.provspela.1",
+   "kind": "illustration",
+   "motif": "conc.provspela",
+   "group": "orkester",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.gästspela.1",
+   "kind": "illustration",
+   "motif": "conc.gästspela",
+   "group": "orkester",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.orkesterdike.1",
+   "kind": "illustration",
+   "motif": "conc.orkesterdike",
+   "group": "orkester",
+   "quiz": false
+  },
+  {
+   "senseId": "s.uruppförande.1",
+   "kind": "illustration",
+   "motif": "conc.uruppförande",
+   "group": "orkester",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "621dbb1f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.producent.3",
+   "kind": "illustration",
+   "motif": "conc.producent.3",
+   "group": "produktion",
+   "quiz": false
+  },
+  {
+   "senseId": "s.producera.2",
+   "kind": "illustration",
+   "motif": "conc.producera.2",
+   "group": "produktion",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.skiva.2",
+   "kind": "illustration",
+   "motif": "conc.skiva.2",
+   "group": "produktion",
+   "quiz": true
+  },
+  {
+   "senseId": "s.demo.1",
+   "kind": "illustration",
+   "motif": "conc.demo",
+   "group": "produktion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "27351944",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skivbolag.1",
+   "kind": "illustration",
+   "motif": "conc.skivbolag",
+   "group": "produktion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "a7d0d7ea",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skivkontrakt.1",
+   "kind": "illustration",
+   "motif": "conc.skivkontrakt",
+   "group": "produktion",
+   "quiz": true
+  },
+  {
+   "senseId": "s.arrangemang.2",
+   "kind": "illustration",
+   "motif": "conc.arrangemang.2",
+   "group": "produktion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "74df8679",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.släppa.3",
+   "kind": "illustration",
+   "motif": "conc.släppa.3",
+   "group": "produktion",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.singel.2",
+   "kind": "illustration",
+   "motif": "conc.singel.2",
+   "group": "produktion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "0cecc217",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.lyssnare.1",
+   "kind": "illustration",
+   "motif": "conc.lyssnare",
+   "group": "produktion",
+   "quiz": true
+  },
+  {
+   "senseId": "s.spellista.1",
+   "kind": "illustration",
+   "motif": "conc.spellista",
+   "group": "produktion",
+   "quiz": true
+  },
+  {
+   "senseId": "s.topplista.1",
+   "kind": "illustration",
+   "motif": "conc.topplista",
+   "group": "produktion",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "a0f8495b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.hitlåt.1",
+   "kind": "illustration",
+   "motif": "conc.hitlåt",
+   "group": "produktion",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "2f25629d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.studio.1",
+   "kind": "illustration",
+   "motif": "conc.studio",
+   "group": "inspelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sångbås.1",
+   "kind": "illustration",
+   "motif": "conc.sångbås",
+   "group": "inspelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tagning.1",
+   "kind": "illustration",
+   "motif": "conc.tagning",
+   "group": "inspelning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "c349c541",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ta-om.2",
+   "kind": "illustration",
+   "motif": "conc.ta-om.2",
+   "group": "inspelning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "1c14eba7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.spår.4",
+   "kind": "illustration",
+   "motif": "conc.spår.4",
+   "group": "inspelning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "61350361",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.pålägg.3",
+   "kind": "illustration",
+   "motif": "conc.pålägg.3",
+   "group": "inspelning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "0ae1cd9d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.mixerbord.1",
+   "kind": "illustration",
+   "motif": "conc.mixerbord",
+   "group": "inspelning",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mixning.1",
+   "kind": "illustration",
+   "motif": "conc.mixning",
+   "group": "inspelning",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "b37abee2",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ljudbild.1",
+   "kind": "illustration",
+   "motif": "conc.ljudbild",
+   "group": "inspelning",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "6cd2f0f7",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.klippa-verb.2",
+   "kind": "illustration",
+   "motif": "conc.klippa-verb.2",
+   "group": "inspelning",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.låtskrivare.1",
+   "kind": "illustration",
+   "motif": "conc.låtskrivare",
+   "group": "latskriv",
+   "quiz": true
+  },
+  {
+   "senseId": "s.komponera.1",
+   "kind": "illustration",
+   "motif": "conc.komponera.1",
+   "group": "latskriv",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.textförfattare.1",
+   "kind": "illustration",
+   "motif": "conc.textförfattare",
+   "group": "latskriv",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "cb1dd32c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.intro.1",
+   "kind": "illustration",
+   "motif": "conc.intro",
+   "group": "latskriv",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "b7f3e79f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.ackordföljd.1",
+   "kind": "illustration",
+   "motif": "conc.ackordföljd",
+   "group": "latskriv",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "73c302f1",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skrivkramp.1",
+   "kind": "illustration",
+   "motif": "conc.skrivkramp",
+   "group": "latskriv",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "0a9917ce",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.slinga.2",
+   "kind": "illustration",
+   "motif": "conc.slinga.2",
+   "group": "latskriv",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "1bd80bf9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.bidrag.3",
+   "kind": "illustration",
+   "motif": "conc.bidrag.3",
+   "group": "latskriv",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "cc0dfcf9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.debut.1",
+   "kind": "illustration",
+   "motif": "conc.debut",
+   "group": "kritik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "a0e8abfc",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.comeback.1",
+   "kind": "illustration",
+   "motif": "conc.comeback",
+   "group": "kritik",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "ce3b0ead",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.höjdpunkt.1",
+   "kind": "illustration",
+   "motif": "conc.höjdpunkt",
+   "group": "kritik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "c7c19ae0",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.leverera.2",
+   "kind": "illustration",
+   "motif": "conc.leverera.2",
+   "group": "kritik",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.lysande.2",
+   "kind": "illustration",
+   "motif": "conc.lysande.2",
+   "group": "kritik",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "352a633c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.nyskapande.1",
+   "kind": "illustration",
+   "motif": "conc.nyskapande",
+   "group": "kritik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "f15c18f3",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.slätstruken.1",
+   "kind": "illustration",
+   "motif": "conc.slätstruken",
+   "group": "kritik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "398f89cf",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.pretentiös.1",
+   "kind": "illustration",
+   "motif": "conc.pretentiös",
+   "group": "kritik",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "35068b4c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.teater.1",
+   "kind": "illustration",
+   "motif": "thea.teater",
+   "group": "scen",
+   "quiz": true
+  },
+  {
+   "senseId": "s.scenkonst.1",
+   "kind": "illustration",
+   "motif": "thea.scenkonst",
+   "group": "scen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "f4929732",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.salong.2",
+   "kind": "illustration",
+   "motif": "thea.salong.2",
+   "group": "scen",
+   "quiz": false
+  },
+  {
+   "senseId": "s.ridå.1",
+   "kind": "illustration",
+   "motif": "thea.ridå",
+   "group": "scen",
+   "quiz": true
+  },
+  {
+   "senseId": "s.scenografi.1",
+   "kind": "illustration",
+   "motif": "thea.scenografi",
+   "group": "scen",
+   "quiz": true
+  },
+  {
+   "senseId": "s.kuliss.1",
+   "kind": "illustration",
+   "motif": "thea.kuliss",
+   "group": "scen",
+   "quiz": true
+  },
+  {
+   "senseId": "s.rampljus.2",
+   "kind": "illustration",
+   "motif": "thea.rampljus.2",
+   "group": "scen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "4acfe553",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.vridscen.1",
+   "kind": "illustration",
+   "motif": "thea.vridscen",
+   "group": "scen",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.scenarbetare.1",
+   "kind": "illustration",
+   "motif": "thea.scenarbetare",
+   "group": "scen",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.dockteater.1",
+   "kind": "illustration",
+   "motif": "thea.dockteater",
+   "group": "scen",
+   "quiz": true
+  },
+  {
+   "senseId": "s.friluftsteater.1",
+   "kind": "illustration",
+   "motif": "thea.friluftsteater",
+   "group": "scen",
+   "quiz": true
+  },
+  {
+   "senseId": "s.fjärde-väggen.1",
+   "kind": "illustration",
+   "motif": "thea.fjärde-väggen",
+   "group": "scen",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "b4bed0d1",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.skådespelare.1",
+   "kind": "illustration",
+   "motif": "thea.skådespelare",
+   "group": "scen",
+   "quiz": false
+  },
+  {
+   "senseId": "s.roll.2",
+   "kind": "illustration",
+   "motif": "thea.roll.2",
+   "group": "roller",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "9dd2393f",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.spela.3",
+   "kind": "illustration",
+   "motif": "thea.spela.3",
+   "group": "roller",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.huvudroll.1",
+   "kind": "illustration",
+   "motif": "thea.huvudroll",
+   "group": "roller",
+   "quiz": false
+  },
+  {
+   "senseId": "s.biroll.1",
+   "kind": "illustration",
+   "motif": "thea.biroll",
+   "group": "roller",
+   "quiz": false
+  },
+  {
+   "senseId": "s.rollbesättning.1",
+   "kind": "illustration",
+   "motif": "thea.rollbesättning",
+   "group": "roller",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.provspela.2",
+   "kind": "illustration",
+   "motif": "thea.provspela.2",
+   "group": "roller",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.inhoppare.1",
+   "kind": "illustration",
+   "motif": "thea.inhoppare",
+   "group": "roller",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.leva-sig-in-i.1",
+   "kind": "illustration",
+   "motif": "thea.leva-sig-in-i",
+   "group": "roller",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.rolltolkning.1",
+   "kind": "illustration",
+   "motif": "thea.rolltolkning",
+   "group": "roller",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "0fd72fad",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.överspela.1",
+   "kind": "illustration",
+   "motif": "thea.överspela",
+   "group": "roller",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.pjäs.1",
+   "kind": "illustration",
+   "motif": "thea.pjäs",
+   "group": "scen",
+   "quiz": false
+  },
+  {
+   "senseId": "s.dramatiker.1",
+   "kind": "illustration",
+   "motif": "thea.dramatiker",
+   "group": "manus",
+   "quiz": false
+  },
+  {
+   "senseId": "s.akt.2",
+   "kind": "illustration",
+   "motif": "thea.akt.2",
+   "group": "manus",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "4ddcc90d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.scen.2",
+   "kind": "illustration",
+   "motif": "thea.scen.2",
+   "group": "manus",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "8c285c24",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.scenanvisning.1",
+   "kind": "illustration",
+   "motif": "thea.scenanvisning",
+   "group": "manus",
+   "quiz": false
+  },
+  {
+   "senseId": "s.sufflör.1",
+   "kind": "illustration",
+   "motif": "thea.sufflör",
+   "group": "manus",
+   "quiz": true
+  },
+  {
+   "senseId": "s.stickreplik.1",
+   "kind": "illustration",
+   "motif": "thea.stickreplik",
+   "group": "manus",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "eb8ae0a6",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.komma-av-sig.1",
+   "kind": "illustration",
+   "motif": "thea.komma-av-sig",
+   "group": "manus",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.entré.3",
+   "kind": "illustration",
+   "motif": "thea.entré.3",
+   "group": "manus",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.sorti.1",
+   "kind": "illustration",
+   "motif": "thea.sorti",
+   "group": "manus",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.dramatisera.1",
+   "kind": "illustration",
+   "motif": "thea.dramatisera",
+   "group": "manus",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.regissör.1",
+   "kind": "illustration",
+   "motif": "thea.regissör",
+   "group": "roller",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sätta-upp.2",
+   "kind": "illustration",
+   "motif": "thea.sätta-upp.2",
+   "group": "regi",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.teatergrupp.1",
+   "kind": "illustration",
+   "motif": "thea.teatergrupp",
+   "group": "regi",
+   "quiz": false
+  },
+  {
+   "senseId": "s.genomläsning.2",
+   "kind": "illustration",
+   "motif": "thea.genomläsning.2",
+   "group": "regi",
+   "quiz": false
+  },
+  {
+   "senseId": "s.studera-in.1",
+   "kind": "illustration",
+   "motif": "thea.studera-in",
+   "group": "regi",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.repetitionssal.1",
+   "kind": "illustration",
+   "motif": "thea.repetitionssal",
+   "group": "regi",
+   "quiz": true
+  },
+  {
+   "senseId": "s.stryka.3",
+   "kind": "illustration",
+   "motif": "thea.stryka.3",
+   "group": "regi",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.uppvärmning.3",
+   "kind": "illustration",
+   "motif": "thea.uppvärmning.3",
+   "group": "regi",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.improvisation.1",
+   "kind": "illustration",
+   "motif": "thea.improvisation",
+   "group": "regi",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "24c4bc0e",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.timing.1",
+   "kind": "illustration",
+   "motif": "thea.timing",
+   "group": "regi",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "72c16f06",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dra-igenom.1",
+   "kind": "illustration",
+   "motif": "thea.dra-igenom",
+   "group": "regi",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.genrep.1",
+   "kind": "illustration",
+   "motif": "thea.genrep",
+   "group": "regi",
+   "quiz": false
+  },
+  {
+   "senseId": "s.inspicient.1",
+   "kind": "illustration",
+   "motif": "thea.inspicient",
+   "group": "regi",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.kostym.2",
+   "kind": "illustration",
+   "motif": "thea.kostym.2",
+   "group": "kostym",
+   "quiz": false
+  },
+  {
+   "senseId": "s.kostymör.1",
+   "kind": "illustration",
+   "motif": "thea.kostymör",
+   "group": "kostym",
+   "quiz": false
+  },
+  {
+   "senseId": "s.kostymskiss.1",
+   "kind": "illustration",
+   "motif": "thea.kostymskiss",
+   "group": "kostym",
+   "quiz": true
+  },
+  {
+   "senseId": "s.sy.1",
+   "kind": "illustration",
+   "motif": "thea.sy",
+   "group": "kostym",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.prova.2",
+   "kind": "illustration",
+   "motif": "thea.prova.2",
+   "group": "kostym",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.korsett.1",
+   "kind": "illustration",
+   "motif": "thea.korsett",
+   "group": "kostym",
+   "quiz": true
+  },
+  {
+   "senseId": "s.mask.3",
+   "kind": "illustration",
+   "motif": "thea.mask.3",
+   "group": "kostym",
+   "quiz": false
+  },
+  {
+   "senseId": "s.maskör.1",
+   "kind": "illustration",
+   "motif": "thea.maskör",
+   "group": "kostym",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.lösskägg.1",
+   "kind": "illustration",
+   "motif": "thea.lösskägg",
+   "group": "kostym",
+   "quiz": true
+  },
+  {
+   "senseId": "s.loge.1",
+   "kind": "illustration",
+   "motif": "thea.loge",
+   "group": "kostym",
+   "quiz": true
+  },
+  {
+   "senseId": "s.premiär.1",
+   "kind": "illustration",
+   "motif": "thea.premiär",
+   "group": "premiar",
+   "quiz": false
+  },
+  {
+   "senseId": "s.derniär.1",
+   "kind": "illustration",
+   "motif": "thea.derniär",
+   "group": "premiar",
+   "quiz": false
+  },
+  {
+   "senseId": "s.matiné.1",
+   "kind": "illustration",
+   "motif": "thea.matiné",
+   "group": "premiar",
+   "quiz": false
+  },
+  {
+   "senseId": "s.speltid.1",
+   "kind": "illustration",
+   "motif": "thea.speltid",
+   "group": "premiar",
+   "quiz": false
+  },
+  {
+   "senseId": "s.gästspel.1",
+   "kind": "illustration",
+   "motif": "thea.gästspel",
+   "group": "premiar",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.foajé.1",
+   "kind": "illustration",
+   "motif": "thea.foajé",
+   "group": "premiar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.garderob.2",
+   "kind": "illustration",
+   "motif": "thea.garderob.2",
+   "group": "premiar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.programblad.1",
+   "kind": "illustration",
+   "motif": "thea.programblad",
+   "group": "premiar",
+   "quiz": true
+  },
+  {
+   "senseId": "s.parkett.2",
+   "kind": "illustration",
+   "motif": "thea.parkett.2",
+   "group": "premiar",
+   "quiz": false
+  },
+  {
+   "senseId": "s.balkong.2",
+   "kind": "illustration",
+   "motif": "thea.balkong.2",
+   "group": "premiar",
+   "quiz": false
+  },
+  {
+   "senseId": "s.fullsatt.1",
+   "kind": "illustration",
+   "motif": "thea.fullsatt",
+   "group": "premiar",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "6875978c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.nervös.1",
+   "kind": "illustration",
+   "motif": "thea.nervös",
+   "group": "premiar",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "a855ecc9",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.regi.1",
+   "kind": "illustration",
+   "motif": "thea.regi",
+   "group": "regi",
+   "quiz": false
+  },
+  {
+   "senseId": "s.uppsättning.2",
+   "kind": "illustration",
+   "motif": "thea.uppsättning.2",
+   "group": "kritik",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.succé.1",
+   "kind": "illustration",
+   "motif": "thea.succé",
+   "group": "kritik",
+   "quiz": false
+  },
+  {
+   "senseId": "s.flopp.1",
+   "kind": "illustration",
+   "motif": "thea.flopp",
+   "group": "kritik",
+   "quiz": false
+  },
+  {
+   "senseId": "s.fars.1",
+   "kind": "illustration",
+   "motif": "thea.fars",
+   "group": "kritik",
+   "quiz": true
+  },
+  {
+   "senseId": "s.spelglädje.1",
+   "kind": "illustration",
+   "motif": "thea.spelglädje",
+   "group": "kritik",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "c2d8f33b",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dans.1",
+   "kind": "illustration",
+   "motif": "dance.dans",
+   "group": "dance-balett",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "df348b02",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.balett.1",
+   "kind": "illustration",
+   "motif": "dance.balett",
+   "group": "dance-balett",
+   "quiz": false
+  },
+  {
+   "senseId": "s.ballerina.1",
+   "kind": "illustration",
+   "motif": "dance.ballerina",
+   "group": "dance-balett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tåspetssko.1",
+   "kind": "illustration",
+   "motif": "dance.tåspetssko",
+   "group": "dance-balett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tutu.1",
+   "kind": "illustration",
+   "motif": "dance.tutu",
+   "group": "dance-balett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.balettstång.1",
+   "kind": "illustration",
+   "motif": "dance.balettstång",
+   "group": "dance-balett",
+   "quiz": true
+  },
+  {
+   "senseId": "s.balettskola.1",
+   "kind": "illustration",
+   "motif": "dance.balettskola",
+   "group": "dance-balett",
+   "quiz": false
+  },
+  {
+   "senseId": "s.position.3",
+   "kind": "illustration",
+   "motif": "dance.position.3",
+   "group": "dance-balett",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "b0f971f8",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.plié.1",
+   "kind": "illustration",
+   "motif": "dance.plié",
+   "group": "dance-balett",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.piruett.1",
+   "kind": "illustration",
+   "motif": "dance.piruett",
+   "group": "dance-balett",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.språng.2",
+   "kind": "illustration",
+   "motif": "dance.språng.2",
+   "group": "dance-balett",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.graciös.1",
+   "kind": "illustration",
+   "motif": "dance.graciös",
+   "group": "dance-balett",
+   "quiz": false,
+   "animated": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "7702993a",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.modern-dans.1",
+   "kind": "illustration",
+   "motif": "dance.modern-dans",
+   "group": "dance-moderndans",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "aae65cbf",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dansare.1",
+   "kind": "illustration",
+   "motif": "dance.dansare",
+   "group": "dance-moderndans",
+   "quiz": false
+  },
+  {
+   "senseId": "s.danskompani.1",
+   "kind": "illustration",
+   "motif": "dance.danskompani",
+   "group": "dance-moderndans",
+   "quiz": false
+  },
+  {
+   "senseId": "s.dansföreställning.1",
+   "kind": "illustration",
+   "motif": "dance.dansföreställning",
+   "group": "dance-moderndans",
+   "quiz": false
+  },
+  {
+   "senseId": "s.experimentell.1",
+   "kind": "illustration",
+   "motif": "dance.experimentell",
+   "group": "dance-moderndans",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "3a89bc29",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.frigörande.1",
+   "kind": "illustration",
+   "motif": "dance.frigörande",
+   "group": "dance-moderndans",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "494fe372",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.sällskapsdans.1",
+   "kind": "illustration",
+   "motif": "dance.sällskapsdans",
+   "group": "dance-pardans",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "b07b499d",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.dansa.1",
+   "kind": "illustration",
+   "motif": "dance.dansa",
+   "group": "dance-pardans",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.danskurs.1",
+   "kind": "illustration",
+   "motif": "dance.danskurs",
+   "group": "dance-pardans",
+   "quiz": false
+  },
+  {
+   "senseId": "s.danspartner.1",
+   "kind": "illustration",
+   "motif": "dance.danspartner",
+   "group": "dance-pardans",
+   "quiz": false
+  },
+  {
+   "senseId": "s.bjuda-upp.1",
+   "kind": "illustration",
+   "motif": "dance.bjuda-upp",
+   "group": "dance-pardans",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.föra.4",
+   "kind": "illustration",
+   "motif": "dance.föra.4",
+   "group": "dance-pardans",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.vals.1",
+   "kind": "illustration",
+   "motif": "dance.vals",
+   "group": "dance-pardans",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.tango.1",
+   "kind": "illustration",
+   "motif": "dance.tango",
+   "group": "dance-pardans",
+   "quiz": false
+  },
+  {
+   "senseId": "s.bugg.2",
+   "kind": "illustration",
+   "motif": "dance.bugg.2",
+   "group": "dance-pardans",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.salsa.2",
+   "kind": "illustration",
+   "motif": "dance.salsa.2",
+   "group": "dance-pardans",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.trampa-på-tårna.1",
+   "kind": "illustration",
+   "motif": "dance.trampa-på-tårna",
+   "group": "dance-pardans",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.dansbana.1",
+   "kind": "illustration",
+   "motif": "dance.dansbana",
+   "group": "dance-pardans",
+   "quiz": false
+  },
+  {
+   "senseId": "s.danssko.1",
+   "kind": "illustration",
+   "motif": "dance.danssko",
+   "group": "dance-pardans",
+   "quiz": true
+  },
+  {
+   "senseId": "s.streetdance.1",
+   "kind": "illustration",
+   "motif": "dance.streetdance",
+   "group": "dance-street",
+   "quiz": false
+  },
+  {
+   "senseId": "s.breakdance.1",
+   "kind": "illustration",
+   "motif": "dance.breakdance",
+   "group": "dance-street",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.dansstil.1",
+   "kind": "illustration",
+   "motif": "dance.dansstil",
+   "group": "dance-street",
+   "quiz": false
+  },
+  {
+   "senseId": "s.gatukultur.1",
+   "kind": "illustration",
+   "motif": "dance.gatukultur",
+   "group": "dance-street",
+   "quiz": false
+  },
+  {
+   "senseId": "s.battle.1",
+   "kind": "illustration",
+   "motif": "dance.battle",
+   "group": "dance-street",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.ring.4",
+   "kind": "illustration",
+   "motif": "dance.ring.4",
+   "group": "dance-street",
+   "quiz": false
+  },
+  {
+   "senseId": "s.domare.2",
+   "kind": "illustration",
+   "motif": "dance.domare.2",
+   "group": "dance-street",
+   "quiz": true
+  },
+  {
+   "senseId": "s.tävling.1",
+   "kind": "illustration",
+   "motif": "dance.tävling",
+   "group": "dance-street",
+   "quiz": true
+  },
+  {
+   "senseId": "s.respekt.1",
+   "kind": "illustration",
+   "motif": "dance.respekt",
+   "group": "dance-street",
+   "quiz": false
+  },
+  {
+   "senseId": "s.uppvisning.1",
+   "kind": "illustration",
+   "motif": "dance.uppvisning",
+   "group": "dance-street",
+   "quiz": false
+  },
+  {
+   "senseId": "s.hoppa.1",
+   "kind": "illustration",
+   "motif": "dance.hoppa",
+   "group": "dance-rörelse",
+   "quiz": true,
+   "animated": true
+  },
+  {
+   "senseId": "s.landa.2",
+   "kind": "illustration",
+   "motif": "dance.landa.2",
+   "group": "dance-rörelse",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.böja.1",
+   "kind": "illustration",
+   "motif": "dance.böja",
+   "group": "dance-rörelse",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.svänga.3",
+   "kind": "illustration",
+   "motif": "dance.svänga.3",
+   "group": "dance-rörelse",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.svepa.2",
+   "kind": "illustration",
+   "motif": "dance.svepa.2",
+   "group": "dance-rörelse",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.falla.1",
+   "kind": "illustration",
+   "motif": "dance.falla",
+   "group": "dance-rörelse",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.musikal.1",
+   "kind": "illustration",
+   "motif": "dance.musikal",
+   "group": "dance-musikal",
+   "quiz": false
+  },
+  {
+   "senseId": "s.musikalartist.1",
+   "kind": "illustration",
+   "motif": "dance.musikalartist",
+   "group": "dance-musikal",
+   "quiz": false
+  },
+  {
+   "senseId": "s.nummer.4",
+   "kind": "illustration",
+   "motif": "dance.nummer.4",
+   "group": "dance-musikal",
+   "quiz": false
+  },
+  {
+   "senseId": "s.duett.1",
+   "kind": "illustration",
+   "motif": "dance.duett",
+   "group": "dance-musikal",
+   "quiz": true
+  },
+  {
+   "senseId": "s.ouvertyr.1",
+   "kind": "illustration",
+   "motif": "dance.ouvertyr",
+   "group": "dance-musikal",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.libretto.1",
+   "kind": "illustration",
+   "motif": "dance.libretto",
+   "group": "dance-musikal",
+   "quiz": false
+  },
+  {
+   "senseId": "s.stepp.1",
+   "kind": "illustration",
+   "motif": "dance.stepp",
+   "group": "dance-musikal",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.mikroport.1",
+   "kind": "illustration",
+   "motif": "dance.mikroport",
+   "group": "dance-musikal",
+   "quiz": true
+  },
+  {
+   "senseId": "s.spektakulär.1",
+   "kind": "illustration",
+   "motif": "dance.spektakulär",
+   "group": "dance-musikal",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "450a0c8c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.medley.1",
+   "kind": "illustration",
+   "motif": "dance.medley",
+   "group": "dance-musikal",
+   "quiz": false
+  },
+  {
+   "senseId": "s.koreografi.1",
+   "kind": "illustration",
+   "motif": "dance.koreografi",
+   "group": "dance-koreografi",
+   "quiz": false
+  },
+  {
+   "senseId": "s.koreograf.1",
+   "kind": "illustration",
+   "motif": "dance.koreograf",
+   "group": "dance-koreografi",
+   "quiz": false
+  },
+  {
+   "senseId": "s.steg.2",
+   "kind": "illustration",
+   "motif": "dance.steg.2",
+   "group": "dance-koreografi",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.i-synk.1",
+   "kind": "illustration",
+   "motif": "dance.i-synk",
+   "group": "dance-koreografi",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "640432a5",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.formation.2",
+   "kind": "illustration",
+   "motif": "dance.formation.2",
+   "group": "dance-koreografi",
+   "quiz": false,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "adc0315c",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.lyft.3",
+   "kind": "illustration",
+   "motif": "dance.lyft.3",
+   "group": "dance-koreografi",
+   "quiz": false,
+   "animated": true
+  },
+  {
+   "senseId": "s.musikalitet.1",
+   "kind": "illustration",
+   "motif": "dance.musikalitet",
+   "group": "dance-koreografi",
+   "quiz": false,
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.62.0",
+    "hash": "b8406221",
+    "method": "match"
+   }
+  },
+  {
+   "senseId": "s.scennärvaro.1",
+   "kind": "illustration",
+   "motif": "dance.scennärvaro",
+   "group": "dance-koreografi",
+   "quiz": false,
+   "animated": true
   }
  ]
 }

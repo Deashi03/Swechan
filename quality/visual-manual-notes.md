@@ -282,3 +282,15 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
   - *konfrontation* (`s.konfrontation.1`) förväxlades med *konflikt* i alla omgångar, även som närbild med fotografi som bevis. Godkänd som symbolbild (`waived`).
 - **Omritade i omgång 2:** *beskrivning* (förväxlades med *beskriva*), *sakprosa* (med *faktaruta*), *jagform* (med *krönika*), *metafor* (med *liknelse*), *vändning* (med *vändpunkt*), *litteratur*/*författarskap* (med varandra), *biografisk* (med *verk*), *prestige* (med *förebild*). Låg säkerhet: *målande*, *tema*, *sliten*, *språknorm* och *språkvård*.
 - **Godkända men nära andra bilder (bevakas):** *handling* ↔ tidslinje/kurva; *upplösning* ↔ klimax; *karaktär* ↔ huvudperson; *replik* ↔ pratbubbla; *nervkittlande* ↔ thrillerbokomslag; *tidstrogen* ↔ *anakronism*; *målande* ↔ illustration; *språknorm* ↔ *språkriktighet*.
+
+## B5 avslutad (2026-11-26)
+
+- **Synonympar efter sista omgången** (produktägarens beslut 2026-11-26): *knaprig*/*frasig*, *trivsam*/*mysig*, *extremt*/*oerhört*, *leverans*/*leverera*, *revirhävdande*/*revir*, *murken*/*röta*, *instinkt*/*medfödd*, *datering*/*absolut datering*, *arkeologi*/*arkeologisk*.
+- **Undantag (`waived`):** *dominant* (förväxlas med *underordnad* och *rangordning*), *flyttande* (med *sträcka*, fågelsträck), *motion* (med *träningsform*), *övertag* och *vänligen* (rätt bild men låg säkerhet), *arkeologi* och *arkeologisk* (rätt bild men låg säkerhet, dessutom synonympar).
+- **Rättade äldre bilder:** *gräns* (Sverige–Japan → Sverige–Norge), *mysig* (japansk text borttagen ur scenen). Japansk text finns kvar i scenerna för *baklänges*, *vass*, *slö*, *modern*, *grov*, *sportig* och *gyllenbrun*.
+
+## 0.62 – Musik & scenkonst
+
+- **Synonympar efter manuella spåret:** *repetition*/*repetera* (förväxlades i omgång 1, 2 och som bildserie repetitioner → konsert; produktägarens beslut 2026-11-26).
+- **Godkända i omgång 2 eller manuella spåret:** *takt* (taktstreck i stället för metronom), *klar* (skarp mot grumlig ljudvåg), *uttryck* (samma melodi platt och med inlevelse), *roll* (samma skådespelare i tre roller), *rytmisk* (publik som rör sig i takt mot en som står still).
+- **Godkända men nära andra bilder (bevakas):** *rytmisk* ↔ "dansa"; *roll* ↔ *rollbesättning*; *remix*, *ledmotiv*, *läskig* (medelhög säkerhet).
