@@ -11917,8 +11917,8 @@
   },
   {
    "id": "m.kvallsmat-och-nedvarvning",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-16",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-26",
    "titleSv": "Kvällsmat och nedvarvning",
    "titleJa": "{夕食|ゆうしょく}とくつろぎ",
    "descriptionSv": "Kvällen: varva ner, koppla av, slå sig ner, mysa, mysig, tända ljus, titta på tv, serie, avsnitt, skärmtid och läsa högt.",
@@ -65367,8 +65367,8 @@
   },
   {
    "id": "m.produktplacering",
-   "contentVersion": 1,
-   "updatedAt": "2026-11-12",
+   "contentVersion": 2,
+   "updatedAt": "2026-11-26",
    "titleSv": "Produktplacering",
    "titleJa": "プロダクトプレイスメント",
    "descriptionSv": "Produktplacering: serie, långfilm, programledare, rekvisita, i bild, synlig, produktplacering, kändis, influencer, kommersiell, provexemplar, i samarbete med, smygreklam, reklammärkning, gråzon, marknadsföringslagen och Konsumentverket.",
@@ -74614,8 +74614,8 @@
   },
   {
    "id": "m.heliga-texter",
-   "contentVersion": 3,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 4,
+   "updatedAt": "2026-11-26",
    "titleSv": "Heliga texter",
    "titleJa": "{聖典|せいてん}",
    "descriptionSv": "Heliga texter: helig skrift, helig, profet, budskap, uppenbarelse, muntlig tradition, skriva ner, kapitel, vers, översättning, urtext, legend, liknelse, tolka, tolkning och bokstavligt.",
@@ -82310,8 +82310,8 @@
   },
   {
    "id": "m.stratigrafi-och-jordlager",
-   "contentVersion": 1,
-   "updatedAt": "2026-11-14",
+   "contentVersion": 2,
+   "updatedAt": "2026-11-26",
    "titleSv": "Stratigrafi och jordlager",
    "titleJa": "{層位|そうい}と{地層|ちそう}",
    "descriptionSv": "Stratigrafi och jordlager: stratigrafi, jordlager, profil, lagerföljd, superpositionsprincipen, matjord, kulturlager, alv, underst, orörd, stolphål, nedgrävning, avfallsgrop, avlagring och torv.",
@@ -160233,6 +160233,633 @@
    ],
    "standard": 2,
    "bodyFile": "recensioner.json"
+  },
+  {
+   "id": "m.romaner-och-noveller",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-26",
+   "titleSv": "Romaner och noveller",
+   "titleJa": "{長編小説|ちょうへんしょうせつ}と{短編小説|たんぺんしょうせつ}",
+   "descriptionSv": "Du lär dig tala om skönlitteratur: skillnaden mellan en roman och en novell, hur en bok blir till hos ett förlag och hur du berättar vad en bok gav dig, till exempel i en bokcirkel på biblioteket.",
+   "descriptionJa": "{文学作品|ぶんがくさくひん}について{話|はな}せるようになります。{長編小説|ちょうへんしょうせつ}と{短編小説|たんぺんしょうせつ}の{違|ちが}い、{本|ほん}が{出版社|しゅっぱんしゃ}でどのように{生|う}まれるか、そして{図書館|としょかん}の{読書会|どくしょかい}などで、{本|ほん}から{何|なに}を{得|え}たかを{伝|つた}える{方法|ほうほう}を{学|まな}びます。",
+   "categoryId": "R08-A01-T04",
+   "tags": [
+    "litteratur",
+    "böcker",
+    "läsning"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.recensioner"
+   ],
+   "related": [],
+   "recommendedOrder": 4341,
+   "words": [
+    {
+     "senseId": "s.skönlitteratur.1",
+     "active": true
+    },
+    {
+     "senseId": "s.genre.1",
+     "active": true
+    },
+    {
+     "senseId": "s.prosa.1",
+     "active": false
+    },
+    {
+     "senseId": "s.roman.1",
+     "active": true
+    },
+    {
+     "senseId": "s.novell.1",
+     "active": true
+    },
+    {
+     "senseId": "s.författare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.debutroman.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förlag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ge-ut.1",
+     "active": true
+    },
+    {
+     "senseId": "s.komma-ut.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kapitel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tegelsten.2",
+     "active": true
+    },
+    {
+     "senseId": "s.sträckläsa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.läsupplevelse.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bokcirkel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.översättning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bästsäljare.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "romaner-och-noveller.json"
+  },
+  {
+   "id": "m.deckare-och-thrillers",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-26",
+   "titleSv": "Deckare och thrillers",
+   "titleJa": "{推理小説|すいりしょうせつ}とスリラー",
+   "descriptionSv": "Du lär dig tala om spänningslitteratur: vad som skiljer en deckare från en thriller och en rysare, vem som utreder brottet och hur en mordgåta byggs upp tills sanningen kommer fram i sista kapitlet.",
+   "descriptionJa": "サスペンス{文学|ぶんがく}について{話|はな}せるようになります。{推理小説|すいりしょうせつ}とスリラーやホラーの{違|ちが}い、{誰|だれ}が{事件|じけん}を{捜査|そうさ}するのか、そして{最後|さいご}の{章|しょう}で{真実|しんじつ}が{明|あ}らかになるまで、{殺人|さつじん}の{謎|なぞ}がどのように{組|く}み{立|た}てられるかを{学|まな}びます。",
+   "categoryId": "R08-A01-T04",
+   "tags": [
+    "litteratur",
+    "böcker",
+    "brott"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.romaner-och-noveller"
+   ],
+   "related": [],
+   "recommendedOrder": 4342,
+   "words": [
+    {
+     "senseId": "s.deckare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.thriller.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rysare.1",
+     "active": false
+    },
+    {
+     "senseId": "s.nervkittlande.1",
+     "active": true
+    },
+    {
+     "senseId": "s.detektiv.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kommissarie.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mord.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mördare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mordvapen.1",
+     "active": true
+    },
+    {
+     "senseId": "s.brottsplats.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ledtråd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.motiv.1",
+     "active": true
+    },
+    {
+     "senseId": "s.misstänkt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.alibi.1",
+     "active": false
+    },
+    {
+     "senseId": "s.vittne.1",
+     "active": true
+    },
+    {
+     "senseId": "s.avslöja.1",
+     "active": true
+    },
+    {
+     "senseId": "s.cliffhanger.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "deckare-och-thrillers.json"
+  },
+  {
+   "id": "m.science-fiction",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-26",
+   "titleSv": "Science fiction",
+   "titleJa": "SF（サイエンス・フィクション）",
+   "descriptionSv": "Du lär dig tala om science fiction: resor i rymden och i tiden, möten med det främmande och berättelser som visar ett drömsamhälle eller varnar för en mörk framtid – med exempel från svensk litteratur.",
+   "descriptionJa": "SFについて{話|はな}せるようになります。{宇宙|うちゅう}や{時間|じかん}を{旅|たび}すること、{未知|みち}のものとの{出会|であ}い、{理想|りそう}の{社会|しゃかい}を{描|えが}く{物語|ものがたり}や{暗|くら}い{未来|みらい}を{警告|けいこく}する{物語|ものがたり}について、スウェーデン{文学|ぶんがく}の{例|れい}とともに{学|まな}びます。",
+   "categoryId": "R08-A01-T04",
+   "tags": [
+    "litteratur",
+    "böcker",
+    "framtid"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.deckare-och-thrillers"
+   ],
+   "related": [],
+   "recommendedOrder": 4343,
+   "words": [
+    {
+     "senseId": "s.science-fiction.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utomjording.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rymdskepp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.planet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.galax.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ljusår.1",
+     "active": false
+    },
+    {
+     "senseId": "s.robot.2",
+     "active": true
+    },
+    {
+     "senseId": "s.artificiell-intelligens.1",
+     "active": true
+    },
+    {
+     "senseId": "s.klon.1",
+     "active": false
+    },
+    {
+     "senseId": "s.tidsmaskin.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tidsresa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.parallellvärld.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utopi.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dystopi.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förutsäga.1",
+     "active": true
+    },
+    {
+     "senseId": "s.invadera.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "science-fiction.json"
+  },
+  {
+   "id": "m.fantasy",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-26",
+   "titleSv": "Fantasy",
+   "titleJa": "ファンタジー",
+   "descriptionSv": "Du lär dig tala om fantasy: magiska väsen och krafter, hjältar och skurkar, och hur en fantasyberättelse ofta bygger på en kamp mellan gott och ont – med svenska och internationella exempel.",
+   "descriptionJa": "ファンタジーについて{話|はな}せるようになります。{魔法|まほう}の{生|い}き{物|もの}や{力|ちから}、ヒーローと{悪役|あくやく}、そしてファンタジーの{物語|ものがたり}がよく{善悪|ぜんあく}の{戦|たたか}いの{上|うえ}に{成|な}り{立|た}っていることを、スウェーデンと{世界|せかい}の{例|れい}とともに{学|まな}びます。",
+   "categoryId": "R08-A01-T04",
+   "tags": [
+    "litteratur",
+    "böcker",
+    "fantasy"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.science-fiction"
+   ],
+   "related": [],
+   "recommendedOrder": 4344,
+   "words": [
+    {
+     "senseId": "s.magi.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fantasy.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trollkarl.1",
+     "active": true
+    },
+    {
+     "senseId": "s.häxa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.förtrolla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.drake.2",
+     "active": true
+    },
+    {
+     "senseId": "s.troll.1",
+     "active": true
+    },
+    {
+     "senseId": "s.alv.2",
+     "active": true
+    },
+    {
+     "senseId": "s.skurk.2",
+     "active": true
+    },
+    {
+     "senseId": "s.hjälte.1",
+     "active": true
+    },
+    {
+     "senseId": "s.svärd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rike.1",
+     "active": true
+    },
+    {
+     "senseId": "s.profetia.1",
+     "active": false
+    },
+    {
+     "senseId": "s.öde.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kampen-mellan-gott-och-ont.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trilogi.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "fantasy.json"
+  },
+  {
+   "id": "m.historiska-romaner",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-26",
+   "titleSv": "Historiska romaner",
+   "titleJa": "{歴史小説|れきししょうせつ}",
+   "descriptionSv": "Du lär dig tala om historiska romaner: hur en författare blandar verkliga händelser och påhittade personer, varför research och källor behövs och hur en bok kan ge en levande bild av en svunnen tid.",
+   "descriptionJa": "{歴史小説|れきししょうせつ}について{話|はな}せるようになります。{作家|さっか}が{実際|じっさい}の{出来事|できごと}と{架空|かくう}の{人物|じんぶつ}をどのように{組|く}み{合|あ}わせるのか、なぜ{下調|したしら}べや{資料|しりょう}が{必要|ひつよう}なのか、そして{本|ほん}が{過|す}ぎ{去|さ}った{時代|じだい}をどのように{生|い}き{生|い}きと{伝|つた}えるのかを{学|まな}びます。",
+   "categoryId": "R08-A01-T04",
+   "tags": [
+    "litteratur",
+    "böcker",
+    "historia"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.fantasy"
+   ],
+   "related": [],
+   "recommendedOrder": 4345,
+   "words": [
+    {
+     "senseId": "s.historisk-roman.1",
+     "active": true
+    },
+    {
+     "senseId": "s.epok.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vikingatid.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utvandrare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.skildra.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tidstrogen.1",
+     "active": true
+    },
+    {
+     "senseId": "s.anakronism.1",
+     "active": false
+    },
+    {
+     "senseId": "s.research.1",
+     "active": true
+    },
+    {
+     "senseId": "s.källa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bygga-på.1",
+     "active": true
+    },
+    {
+     "senseId": "s.historisk-person.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fiktiv.1",
+     "active": true
+    },
+    {
+     "senseId": "s.släktkrönika.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tidsanda.1",
+     "active": false
+    },
+    {
+     "senseId": "s.levandegöra.1",
+     "active": false
+    },
+    {
+     "senseId": "s.trovärdig.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "historiska-romaner.json"
+  },
+  {
+   "id": "m.barn-och-ungdomslitteratur",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-26",
+   "titleSv": "Barn- och ungdomslitteratur",
+   "titleJa": "{児童|じどう}・ヤングアダルト{文学|ぶんがく}",
+   "descriptionSv": "Du lär dig tala om böcker för barn och unga: vilka sorters böcker som passar i olika åldrar, hur bilder och text samarbetar och hur du hittar rätt bok på bibliotekets barnavdelning.",
+   "descriptionJa": "{子|こ}どもや{若者|わかもの}{向|む}けの{本|ほん}について{話|はな}せるようになります。{年齢|ねんれい}に{合|あ}った{本|ほん}の{種類|しゅるい}、{絵|え}と{文章|ぶんしょう}がどのように{協力|きょうりょく}しているか、そして{図書館|としょかん}の{児童|じどう}コーナーで{合|あ}った{本|ほん}を{見|み}つける{方法|ほうほう}を{学|まな}びます。",
+   "categoryId": "R08-A01-T04",
+   "tags": [
+    "litteratur",
+    "böcker",
+    "barn"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.historiska-romaner"
+   ],
+   "related": [],
+   "recommendedOrder": 4346,
+   "words": [
+    {
+     "senseId": "s.pekbok.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bilderbok.1",
+     "active": true
+    },
+    {
+     "senseId": "s.saga.1",
+     "active": true
+    },
+    {
+     "senseId": "s.godnattsaga.1",
+     "active": true
+    },
+    {
+     "senseId": "s.läsa-högt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.illustration.1",
+     "active": false
+    },
+    {
+     "senseId": "s.illustratör.1",
+     "active": true
+    },
+    {
+     "senseId": "s.kapitelbok.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lättläst.1",
+     "active": true
+    },
+    {
+     "senseId": "s.serie.3",
+     "active": true
+    },
+    {
+     "senseId": "s.äventyr.1",
+     "active": true
+    },
+    {
+     "senseId": "s.bokslukare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.läsålder.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ungdomsbok.1",
+     "active": true
+    },
+    {
+     "senseId": "s.uppväxtskildring.1",
+     "active": false
+    },
+    {
+     "senseId": "s.klassiker.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "barn-och-ungdomslitteratur.json"
+  },
+  {
+   "id": "m.lyrik-och-poesi",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-26",
+   "titleSv": "Lyrik och poesi",
+   "titleJa": "{叙情詩|じょじょうし}と{詩|し}",
+   "descriptionSv": "Du lär dig tala om lyrik: hur en dikt är uppbyggd i rader och strofer, vad rim och upprepning gör med texten och hur japansk haiku fungerar på svenska – och du övar på att berätta vad du upplevde på en uppläsning.",
+   "descriptionJa": "{詩|し}について{話|はな}せるようになります。{詩|し}が{行|ぎょう}と{詩節|しせつ}でどのように{組|く}み{立|た}てられているか、{韻|いん}やくり{返|かえ}しが{文章|ぶんしょう}にどんな{効果|こうか}をもたらすか、{日本|にほん}の{俳句|はいく}がスウェーデン{語|ご}でどのように{作|つく}られるかを{学|まな}び、{朗読会|ろうどくかい}で{感|かん}じたことを{伝|つた}える{練習|れんしゅう}をします。",
+   "categoryId": "R08-A01-T04",
+   "tags": [
+    "litteratur",
+    "böcker",
+    "poesi"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.barn-och-ungdomslitteratur"
+   ],
+   "related": [],
+   "recommendedOrder": 4347,
+   "words": [
+    {
+     "senseId": "s.dikt.1",
+     "active": true
+    },
+    {
+     "senseId": "s.poet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.poesi.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lyrik.1",
+     "active": true
+    },
+    {
+     "senseId": "s.diktsamling.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vers.3",
+     "active": true
+    },
+    {
+     "senseId": "s.strof.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rim.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rimma.1",
+     "active": true
+    },
+    {
+     "senseId": "s.haiku.1",
+     "active": true
+    },
+    {
+     "senseId": "s.upprepning.1",
+     "active": false
+    },
+    {
+     "senseId": "s.ordlek.1",
+     "active": false
+    },
+    {
+     "senseId": "s.uppläsning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.läsa-upp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tonsätta.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "lyrik-och-poesi.json"
   }
  ]
 }
