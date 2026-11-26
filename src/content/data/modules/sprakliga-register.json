@@ -1,0 +1,175 @@
+{
+ "id": "m.sprakliga-register",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-25",
+ "titleSv": "Språkliga register",
+ "titleJa": "{言葉|ことば}のレジスター",
+ "descriptionSv": "Hur man väljer rätt språk för situationen: när man skriver formellt eller vardagligt, hur artighet fungerar på svenska jämfört med japanska och hur man förstår fackspråk och myndighetsspråk.",
+ "descriptionJa": "{場面|ばめん}に{合|あ}った{言葉|ことば}づかいの{選|えら}び{方|かた}を{学|まな}びます。いつ{改|あらた}まった{書|か}き{方|かた}やくだけた{書|か}き{方|かた}をするか、スウェーデン{語|ご}の{丁寧|ていねい}さが{日本語|にほんご}とどう{違|ちが}うか、そして{専門用語|せんもんようご}やお{役所|やくしょ}{言葉|ことば}をどう{理解|りかい}するかがわかります。",
+ "categoryId": "R08-A01-T01",
+ "tags": [
+  "språk",
+  "kommunikation"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.idiom-och-fasta-uttryck"
+ ],
+ "related": [],
+ "recommendedOrder": 4316,
+ "words": [
+  {
+   "senseId": "s.register.2",
+   "active": true
+  },
+  {
+   "senseId": "s.formell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.informell.1",
+   "active": true
+  },
+  {
+   "senseId": "s.artig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.högtidlig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tilltal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.nia.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dua.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ton.3",
+   "active": true
+  },
+  {
+   "senseId": "s.anpassa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.saklig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.fackspråk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.myndighetsspråk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.klarspråk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.svordom.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Rätt ord på rätt plats",
+  "paragraphs": [
+   "Kenji ska söka jobb som receptionist på ett hotell. Hans kompis Lisa hjälper honom med ansökan. – Du skriver som i ett sms, säger hon. I en ansökan behöver du ett annat register.",
+   "– Ska jag skriva formellt då? frågar Kenji. – Lite formellt, men inte för mycket, svarar Lisa. I Sverige är man artig på ett enkelt sätt. Man duar nästan alla, även chefen, och man niar sällan. Ett högtidligt tilltal kan låta konstigt.",
+   "Lisa visar honom hur man anpassar tonen. Ett informellt ”Hej, jag vill jobba hos er!” blir ”Hej! Jag söker tjänsten som receptionist, eftersom jag tycker om att möta människor.” – Var saklig och berätta vad du kan, säger hon.",
+   "Sedan pratar de om andra sorters språk. Lisa jobbar på ett sjukhus, där läkarna använder mycket fackspråk. Kenji berättar om ett brev från Migrationsverket med svårt myndighetsspråk. – Myndigheterna ska faktiskt skriva klarspråk, säger Lisa. Det står i lagen.",
+   "Till sist skrattar de åt Kenjis första svenska ord. – Jag lärde mig en svordom av en kollega och trodde att det betydde ”tack”, säger Kenji. Det var inte så artigt!"
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vilket jobb söker Kenji?",
+    "options": [
+     "Läkare på ett sjukhus",
+     "Lärare på komvux",
+     "Kock på en restaurang",
+     "Receptionist på ett hotell"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Kenji ska söka jobb som receptionist på ett hotell.",
+    "explanationJa": "ホテルの{受付係|うけつけがかり}の{仕事|しごと}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad menar Lisa med att Kenji behöver ett annat register?",
+    "options": [
+     "Han ska använda ett annat papper",
+     "Han ska skicka ansökan till ett annat hotell",
+     "Han ska skriva på ett annat sätt",
+     "Han ska skriva på japanska"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "– Du skriver som i ett sms, säger hon.",
+    "explanationJa": "メッセージのような{書|か}き{方|かた}ではなく、{別|べつ}の{書|か}き{方|かた}が{必要|ひつよう}だという{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Hur pratar man oftast med chefen i Sverige enligt Lisa?",
+    "options": [
+     "Man duar",
+     "Man niar",
+     "Man använder fackspråk",
+     "Man skriver brev"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Man duar nästan alla, även chefen, och man niar sällan.",
+    "explanationJa": "{上司|じょうし}にも「du」を{使|つか}います。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Enligt Lisa ska myndigheter skriva klarspråk.",
+    "correct": true,
+    "explanationSv": "– Myndigheterna ska faktiskt skriva klarspråk, säger Lisa.",
+    "explanationJa": "{法律|ほうりつ}でそう{決|き}められています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji visste från början vad svordomen betydde.",
+    "correct": false,
+    "explanationSv": "– Jag lärde mig en svordom av en kollega och trodde att det betydde ”tack”, säger Kenji.",
+    "explanationJa": "「ありがとう」という{意味|いみ}だと{思|おも}っていました。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Enligt språklagen ska språket i offentlig verksamhet vara vårdat, enkelt och begripligt.",
+    "source": "Språklag (2009:600), 11 §",
+    "checked": "2026-11-25",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om hur man anpassar språket efter situationen, på svenska och på japanska.",
+  "discussionPoints": [
+   "När använder du ett formellt språk, och när pratar du informellt?",
+   "Är det svårt att dua sin chef om man är van vid japanska?",
+   "Har du fått ett brev med krångligt myndighetsspråk? Vad gjorde du?",
+   "Vilket fackspråk använder du i ditt jobb eller i dina studier?"
+  ]
+ },
+ "standard": 2
+}

@@ -1,0 +1,180 @@
+{
+ "id": "m.dialog-i-text",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-25",
+ "titleSv": "Dialog i text",
+ "titleJa": "{文章|ぶんしょう}の{中|なか}の{会話|かいわ}",
+ "descriptionSv": "Hur samtal skrivs i böcker och manus: hur repliker markeras på svenska jämfört med japanska, hur man återger det någon säger direkt eller indirekt, och hur verb visar hur något sägs.",
+ "descriptionJa": "{本|ほん}や{台本|だいほん}で{会話|かいわ}がどう{書|か}かれるか：スウェーデン{語|ご}と{日本語|にほんご}での{台詞|せりふ}の{示|しめ}し{方|かた}の{違|ちが}い、{人|ひと}が{言|い}ったことを{直接|ちょくせつ}または{間接|かんせつ}に{伝|つた}える{方法|ほうほう}、そして{動詞|どうし}がどのように{話|はな}し{方|かた}を{表|あらわ}すかを{学|まな}びます。",
+ "categoryId": "R08-A01-T03",
+ "tags": [
+  "litteratur",
+  "dialog",
+  "texttyper"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.miljo-och-personbeskrivning"
+ ],
+ "related": [],
+ "recommendedOrder": 4333,
+ "words": [
+  {
+   "senseId": "s.dialog.2",
+   "active": true
+  },
+  {
+   "senseId": "s.replik.3",
+   "active": true
+  },
+  {
+   "senseId": "s.manus.1",
+   "active": true
+  },
+  {
+   "senseId": "s.citattecken.1",
+   "active": true
+  },
+  {
+   "senseId": "s.talstreck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.direkt-tal.1",
+   "active": true
+  },
+  {
+   "senseId": "s.indirekt-tal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.viska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.muttra.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utbrista.1",
+   "active": false
+  },
+  {
+   "senseId": "s.anföringsverb.1",
+   "active": false
+  },
+  {
+   "senseId": "s.stamma.1",
+   "active": true
+  },
+  {
+   "senseId": "s.avbryta.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tystnad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.monolog.1",
+   "active": true
+  },
+  {
+   "senseId": "s.pratbubbla.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kenji skriver dialog",
+  "paragraphs": [
+   "På onsdagskvällarna går Kenji en kurs i skrivande på biblioteket. I kväll handlar det om dialog. Kursledaren Lena delar ut en sida ur en svensk bok och ett manus till en kort film.",
+   "Kenji ser genast en skillnad mot japanska böcker. Där står repliker inom 「」, men i den svenska boken börjar varje replik med ett talstreck. – Citattecken finns också, säger Lena, men i svenska böcker är talstreck vanligast.",
+   "Sedan tittar de på anföringsverb. I texten står det inte bara sa. En person viskar, en annan muttrar och en tredje utbrister: – Nej, nu räcker det! Lena förklarar att verben visar hur något sägs.",
+   "I filmmanuset finns inga anföringsverb alls. Där står bara namnet och repliken, och ibland en paus: (tystnad). I slutet har huvudpersonen en lång monolog, och ingen avbryter henne.",
+   "Till sist får Kenji skriva om ett stycke från indirekt tal till direkt tal. ”Han sa att han var hungrig” blir: – Jag är hungrig, sa han. Kenji låter en person stamma lite, och Lena säger att det gör dialogen levande. Hon ritar en pratbubbla på tavlan: – Läs dialogen högt, då hör ni om den låter naturlig."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur börjar en replik ofta i en svensk bok?",
+    "options": [
+     "Med 「」",
+     "Med ett talstreck",
+     "Med en pratbubbla",
+     "Med personens namn"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Där står repliker inom 「」, men i den svenska boken börjar varje replik med ett talstreck.",
+    "explanationJa": "スウェーデンの{本|ほん}では、{台詞|せりふ}はダッシュで{始|はじ}まります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad visar anföringsverben enligt Lena?",
+    "options": [
+     "Hur något sägs",
+     "Vem som har skrivit boken",
+     "Var handlingen utspelar sig",
+     "Hur lång repliken är"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Lena förklarar att verben visar hur något sägs.",
+    "explanationJa": "{伝達動詞|でんたつどうし}は、どのように{言|い}ったかを{示|しめ}します。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad finns inte i filmmanuset?",
+    "options": [
+     "Repliker",
+     "Namn",
+     "Anföringsverb",
+     "En monolog"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "I filmmanuset finns inga anföringsverb alls.",
+    "explanationJa": "{映画|えいが}の{台本|だいほん}には{伝達動詞|でんたつどうし}がまったくありません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Någon avbryter huvudpersonen när hon håller sin monolog.",
+    "correct": false,
+    "explanationSv": "I slutet har huvudpersonen en lång monolog, och ingen avbryter henne.",
+    "explanationJa": "{誰|だれ}も{主人公|しゅじんこう}の{話|はなし}をさえぎりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Lena tycker att man ska läsa sin dialog högt.",
+    "correct": true,
+    "explanationSv": "– Läs dialogen högt, då hör ni om den låter naturlig.",
+    "explanationJa": "{声|こえ}に{出|だ}して{読|よ}めば、{自然|しぜん}に{聞|き}こえるかどうかがわかる、とレーナは{言|い}っています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I svensk skönlitteratur skrivs repliker ofta med talstreck i stället för citattecken.",
+    "source": "Språkrådet, Svenska skrivregler",
+    "checked": "2026-11-25",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om dialog i böcker, filmer och serier.",
+  "discussionPoints": [
+   "Tycker du om böcker med mycket dialog?",
+   "Hur skriver man dialog på japanska? Vad är skillnaden mot svenska?",
+   "Vilken replik från en film eller en bok minns du?",
+   "Säg en mening i direkt tal och skriv sedan om den till indirekt tal."
+  ]
+ },
+ "standard": 2
+}

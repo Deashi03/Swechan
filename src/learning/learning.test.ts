@@ -63,7 +63,7 @@ describe('exercise generation', () => {
         }
       }
     }
-  });
+  }, 240_000); // walks all module words (~60 s at 1 811 modules on CI)
   it('never offers an ambiguous distractor (shared Japanese gloss or synonym)', () => {
     for (let seed = 0; seed < 20; seed++) {
       const ex = generateExercise('reverse_choice', 's.borg.1', { ...ctx(repo.modules[2]!.words.map((w) => w.senseId)), seed });
@@ -101,7 +101,7 @@ describe('exercise generation', () => {
         }
       }
     }
-  });
+  }, 240_000); // walks all module words (~60 s at 1 811 modules on CI)
   it('form exercises use natural one-answer frames without grammar terms', () => {
     const GRAMMAR = /o?bestämd form|plural|singular|preteritum|supinum|presens|komparativ|infinitiv|imperativ/i; // "bestämde" (verb) is fine
     for (const m of repo.modules) {

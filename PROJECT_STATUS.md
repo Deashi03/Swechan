@@ -1,6 +1,6 @@
 # Projektstatus – nuläge
 
-**Version:** 0.60.0 (2026-11-25) · **Senast uppdaterad:** 2026-11-25 · **Gren:** `main` (publiceras via GitHub Pages)
+**Version:** 0.61.0 (2026-11-26) · **Senast uppdaterad:** 2026-11-26 · **Gren:** `main` (publiceras via GitHub Pages)
 
 Läs den här filen först. Historik: `changelog/` (en fil per release eller etapp; läs bara den du behöver) och arkivet `CHANGELOG.md` (till och med 2026-11-18; läs aldrig hela).
 
@@ -11,8 +11,8 @@ Läs den här filen först. Historik: `changelog/` (en fil per release eller eta
   - Modulerna har tre steg: ord, lästext och samtalsprompt.
   - Övrigt: streak med freezes, ordbok med sökning på svenska, japanska och kana, sparade och egna ord, nivåtest, export och import med återställningspunkt, och offlineläge.
   - Arkitekturen beskrivs i `ARCHITECTURE.md`.
-- **Innehåll:** 1 769 publicerade moduler: R01–R07 hela. *Teknik & digital värld* (R07) är producerad enligt standard 2 (0.55–0.60). Katalogen har 2 016 planerade moduler i 344 kategorier. Nästa överämne är *Språk & litteratur* (R08-A01, *Kultur & fritid*).
-- **Bilder:** cirka 18 160 ordbilder (0.60: 377 nya, 241 rörliga; 0.59: 321 nya). 100 modulord väntar i det manuella bildspåret (se nedan). Symbol- och adjektivbilder har klarat ett oberoende blindtest.
+- **Innehåll:** 1 811 publicerade moduler: R01–R07 hela och *Språk & litteratur* (R08-A01, 0.61). *Teknik & digital värld* (R07) och *Språk & litteratur* är producerade enligt standard 2 (0.55–0.61). Katalogen har 2 016 planerade moduler i 344 kategorier. Nästa överämne är *Musik & scenkonst* (R08-A02, *Kultur & fritid*).
+- **Bilder:** cirka 18 760 ordbilder (0.61: 347 nya, 88 rörliga; 0.60: 377 nya). 100 modulord väntar i det manuella bildspåret (se nedan). Symbol- och adjektivbilder har klarat ett oberoende blindtest.
 - **Kvalitetssystemet (kvalitetsplanen A2–A7, 2026-11-19):**
   - `npm run audit:content -- --check` i CI: 23 kvalitetsmått för de befintliga modulerna får inte bli sämre (`quality/metrics.json`), och nya moduler måste uppfylla kontraktet (`quality/contract.json`, `"standard": 2`).
   - `contentVersion` sätts automatiskt (`npm run content:version`, kontrolleras i CI).
@@ -24,7 +24,7 @@ Läs den här filen först. Historik: `changelog/` (en fil per release eller eta
 
 ## Nästa steg
 
-1. **Kvalitetsplanen** (`docs/QUALITY_PLAN.md`, produktägarens beslut 2026-11-18): del A och B1–B4 är klara. *Datorer & internet* (0.55), *Programmering & artificiell intelligens* (0.56), *Elektronik & energi* (0.57), *Maskiner & tillverkning* (0.58), *Byggnad & infrastruktur* (0.59) och *Transportteknik* (0.60) är producerade som `standard: 2`; hela R07 är klar. Nästa är **en etapp ur B5–B7** (B5 pågår i en annan session, se *Saknade bilder*), därefter ny produktion av *Språk & litteratur* (R08-A01). Köerna: `npm run audit:content -- --backlog`.
+1. **Kvalitetsplanen** (`docs/QUALITY_PLAN.md`, produktägarens beslut 2026-11-18): del A och B1–B4 är klara. *Datorer & internet* (0.55), *Programmering & artificiell intelligens* (0.56), *Elektronik & energi* (0.57), *Maskiner & tillverkning* (0.58), *Byggnad & infrastruktur* (0.59), *Transportteknik* (0.60) och *Språk & litteratur* (0.61) är producerade som `standard: 2`; hela R07 och R08-A01 är klara. Nästa är **en etapp ur B5–B7** (B5 pågår i en annan session, se *Saknade bilder*), därefter ny produktion av *Musik & scenkonst* (R08-A02). Köerna: `npm run audit:content -- --backlog`.
    - Resten av eftersläpningen (B5–B7) varvas med ny produktion: en etapp mellan varje nytt överämne.
    - Beslut: matchningstest för symbolbilder, manuellt spår för bilder som underkänts två gånger (aldrig "ingen bild"), kort förklaring för abstrakta B1-ord.
    - Arbetet görs av Opus (produktägarens val).
@@ -53,7 +53,7 @@ Flyttade till `quality/uncertainties.md`. Kvalitetsmåtten per ämnesgrupp: `npm
   - en ny fil i `changelog/` (se `changelog/README.md`), den här filen och `ROADMAP.md`
   - Kör `npm run typecheck && npm test && npm run validate:content && npm run audit:content -- --check && npm run build && npm run e2e`.
 - **Git:** om `git status` visar opushade commits trots att pushen lyckades, jämför med `git ls-remote origin <gren>` och uppdatera spårningsreferensen.
-- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Ordklasser och satsdelar* (SWC-KUL-01-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Språkets uppbyggnad* (R08-A01-T01; kontrollera att gruppen inte har en ursprunglig modul) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
+- **e2e:** `scripts/e2e-smoke.mjs` använder den planerade modulen *Melodi och rytm* (SWC-KUL-02-01-01) som exempel. Byt exemplet när den publiceras. Samma modul och gruppen *Musikens byggstenar* (R08-A02-T01; kontrollera att gruppen inte har en ursprunglig modul) är planerade exempel i `Explore.test.tsx` och `catalog.test.ts`.
 - **Delade betydelser och dubbletter:** kontrollera `add_sense` med `tools/production/senses.py` efter varje synk. I 0.38 skrev två grupper samma `s.riktning.2`. I 0.39 skrev parallella grupper 13 samma poster (t.ex. *kriterium*, *relativism*, *oförenlig*); posten flyttades till den första modulen i katalogordningen och den redan blindtestade bilden behölls. Ge grupperna besked när en annan grupp är inlagd, så att de mergar och kör exists.py igen före commit. I 0.40 hittade exists.py inte samma begrepp med olika lemma (*kulturmiljölagen*/*kulturmiljölag*); jämför också närliggande former och bestämd form.
 - **Gruppskript:** lägg skripten i `agent/out/<grupp>/` i agentens worktree med `sys.path.insert(0, os.path.join(os.environ['SWECHAN_REPO'], 'tools', 'production'))` som första rad, så kan integratören köra dem i sitt träd. En `add_names()` ska infoga nya namn utan att sortera om och skriva `coreVocabulary.json` med `indent=0`; kontrollera `git diff --numstat` på filen efter varje grupp. Integreras en grupp före gruppen som kommer före den i katalogen (0.48: T05 före T04), sätt `PREV_FALLBACK` till den senast inlagda modulen och kör om gruppens första skript när den tidigare gruppen är inlagd, så att förkunskapen pekar rätt.
 - **Blindtest:** ta fram listan över underkända bilder direkt ur `key.json` och `wordVisuals.json` (resultat ≠ `pass`), inte ur avkortad utdata från `art:blind:record`. `accept.py` matchar `lika` även i "inget annat ord passar lika bra" och i "jämlika", och missar "ligger nära", "kan också läsas" och "otydlig". Läs därför granskarens kommentar för varje medelsvar och bestäm själv; i 0.41 godtogs svar där andra ord bara passade "delvis" eller "svagt", medan "nästan lika bra", "kan också avses" och "otydlig" underkändes.
@@ -71,6 +71,9 @@ Flyttade till `quality/uncertainties.md`. Kvalitetsmåtten per ämnesgrupp: `npm
 - **Användningsgräns (0.58):** när gränsen nås stoppar gruppagenterna mitt i arbetet; deras worktrees finns kvar. Återuppta dem med SendMessage när gränsen återställts, inte med nya agenter.
 - **Agenternas egna hjälpskript:** en grupp kan ha ett eget steg (0.58: T04:s `mkspec.py` mellan `visuals:plan` och `vis.py`) med hårdkodade sökvägar till sin worktree. Läs rapportens körordning och kör steget mot huvudträdet.
 - **Kedjad integration (0.57):** grupper som blir klara före den föregående gruppen kan inte köra VOC mot rätt förkunskap. Lägg in grupperna i katalogordning, och be nästa grupp städa datan, merga, köra om med rätt `PREV_FALLBACK` och stryka poster som tidigare grupper äger, innan den läggs in. Committa en grupps data först när `check.sh` är klar, och ge nästa grupp klartecken först efter den commiten.
+- **`art:blind:record` tar kommaseparerade senseId (0.61):** godkända medelsvar anges som `s.a.1,s.b.1`. Med mellanslag godkänns inget medelsvar, och utdatan visar dem som underkända.
+- **Undantag (`waived`) efter produktägarens beslut (0.61):** skriv aldrig egna granskarsvar för att få ett fingeravtryck. Räkna ut `hash` med `visualHash(visualFingerprintSource(img, io))` från `src/content/blindTest` i ett tillfälligt vite-node-skript, och sätt `result: "waived"`, `round`, `method` och `waiver`.
+- **`vis.py` och blindtest (0.61):** `vis.py` raderar gruppens blindtestresultat. Kör det bara när gruppens spec har ändrats, och registrera sedan om alla omgångar för gruppen i ordning med `blindrec`.
 - **Ord som tas bort ur en modul:** kör vokabulärkontrollen (`vocabularyCheck.test.ts`). Förklaringar och texter i andra moduler i gruppen kan använda ordet och måste skrivas om (0.56: *programmering*).
 - **Matchningsprov för flera grupper:** `art:blind … pending --match` tar med alla väntande bilder, också underkända från en annan grupp. Ta bort de andra gruppernas ark och nycklar innan granskaren får katalogen.
 - **Abstrakta fackord:** i 0.46 saknade 43 av 135 symbolbilder bild efter två omgångar, mest för ordpar i samma modul (*utsläppsrätt/utsläppshandel*, *vite/föreläggande*). Be gruppagenterna att redan i första omgången rita ordpar i samma modul som tydliga kontraster och att undvika två nära fackord i samma modul när det går.

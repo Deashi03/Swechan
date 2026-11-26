@@ -1,0 +1,167 @@
+{
+ "id": "m.ords-betydelser",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-25",
+ "titleSv": "Ords betydelser",
+ "titleJa": "{言葉|ことば}の{意味|いみ}",
+ "descriptionSv": "Hur ord kan betyda olika saker: hur sammanhanget visar vilken betydelse som gäller, vad som skiljer bokstavlig och bildlig betydelse och varför vissa ord är svåra att översätta.",
+ "descriptionJa": "{言葉|ことば}がどのようにいろいろな{意味|いみ}を{持|も}つかを{学|まな}びます。どの{意味|いみ}なのかを{文脈|ぶんみゃく}からどう{判断|はんだん}するか、{文字|もじ}どおりの{意味|いみ}と{比喩的|ひゆてき}な{意味|いみ}の{違|ちが}い、そしてなぜ{翻訳|ほんやく}しにくい{言葉|ことば}があるのかがわかります。",
+ "categoryId": "R08-A01-T01",
+ "tags": [
+  "språk",
+  "betydelse"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.prefix-och-suffix"
+ ],
+ "related": [],
+ "recommendedOrder": 4314,
+ "words": [
+  {
+   "senseId": "s.betydelse.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sammanhang.2",
+   "active": true
+  },
+  {
+   "senseId": "s.definition.1",
+   "active": true
+  },
+  {
+   "senseId": "s.innebörd.1",
+   "active": true
+  },
+  {
+   "senseId": "s.synonym.1",
+   "active": true
+  },
+  {
+   "senseId": "s.motsatsord.1",
+   "active": true
+  },
+  {
+   "senseId": "s.homonym.1",
+   "active": false
+  },
+  {
+   "senseId": "s.tvetydig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.mångtydig.1",
+   "active": false
+  },
+  {
+   "senseId": "s.nyans.2",
+   "active": true
+  },
+  {
+   "senseId": "s.bokstavlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bildlig.1",
+   "active": true
+  },
+  {
+   "senseId": "s.värdeladdad.1",
+   "active": false
+  },
+  {
+   "senseId": "s.översättning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.missförstå.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "En bokcirkel på biblioteket",
+  "paragraphs": [
+   "Varje torsdag träffas en bokcirkel på biblioteket i Lund. Där läser man lätta svenska böcker och pratar om dem. Kenji är med för första gången. I dag pratar de om ett kapitel där en flicka ”står med båda fötterna på jorden”.",
+   "– Betyder det att hon står på marken? frågar Kenji. – Det är den bokstavliga betydelsen, svarar bibliotekarien Ingrid. Men här är det bildligt: det betyder att hon är lugn och praktisk. Sammanhanget visar vilken betydelse det är.",
+   "Gruppen läser vidare. En man i boken säger att grannen är ”snål”. – Är det en synonym till sparsam? frågar Kenji. – Nästan, säger Ingrid, men det finns en skillnad i nyans. Snål är ett värdeladdat ord. Det är negativt, medan sparsam är positivt.",
+   "Sedan diskuterar de ordet ”fil”. Det är en homonym: det kan vara något man äter till frukost eller en del av en väg. En kvinna i gruppen berättar att hon en gång missförstod ett sms, eftersom ett ord var tvetydigt.",
+   "Till sist läser de bokens sista sida. Den är mångtydig, och alla har olika tankar om dess innebörd. Boken slutar med ordet ”lagom”. – Finns det ett motsatsord till lagom? frågar Ingrid. Ingen vet. Kenji säger att det är svårt att ge en definition av ordet, och att en översättning till japanska aldrig blir riktigt rätt."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var träffas bokcirkeln?",
+    "options": [
+     "På ett kafé",
+     "I skolan",
+     "På biblioteket",
+     "Hemma hos Ingrid"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Varje torsdag träffas en bokcirkel på biblioteket i Lund.",
+    "explanationJa": "ルンドの{図書館|としょかん}で{集|あつ}まります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "usage",
+    "promptSv": "Vad betyder ”stå med båda fötterna på jorden” i boken?",
+    "options": [
+     "Att vara lugn och praktisk",
+     "Att stå på marken",
+     "Att vara trött",
+     "Att inte ha skor"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Men här är det bildligt: det betyder att hon är lugn och praktisk.",
+    "explanationJa": "ここでは{比喩的|ひゆてき}に「{落|お}ち{着|つ}いていて{現実的|げんじつてき}だ」という{意味|いみ}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad är skillnaden mellan snål och sparsam enligt Ingrid?",
+    "options": [
+     "De betyder helt olika saker",
+     "Snål är negativt och sparsam positivt",
+     "Sparsam är ett gammalt ord",
+     "Snål används bara i skrift"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det är negativt, medan sparsam är positivt.",
+    "explanationJa": "「snål」は{否定的|ひていてき}で、「sparsam」は{肯定的|こうていてき}です。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "”Fil” kan vara en del av en väg.",
+    "correct": true,
+    "explanationSv": "Det är en homonym: det kan vara något man äter till frukost eller en del av en väg.",
+    "explanationJa": "「fil」は{道路|どうろ}の{車線|しゃせん}という{意味|いみ}にもなります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Alla i gruppen förstår slutet på samma sätt.",
+    "correct": false,
+    "explanationSv": "Den är mångtydig, och alla har olika tankar om dess innebörd.",
+    "explanationJa": "{最後|さいご}のページはいろいろな{意味|いみ}に{取|と}れるので、{全員|ぜんいん}の{考|かんが}えが{違|ちが}います。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ord som har flera betydelser och om ord som är svåra att översätta.",
+  "discussionPoints": [
+   "Vilket svenskt ord har du missförstått någon gång?",
+   "Kan du ett japanskt ord som saknar en bra översättning till svenska?",
+   "Vilka bildliga uttryck använder du ofta på japanska?",
+   "Hur gör du när du inte förstår ett ord i en text?"
+  ]
+ },
+ "standard": 2
+}
