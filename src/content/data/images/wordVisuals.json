@@ -17045,7 +17045,10 @@
     "result": "pass",
     "round": "0.19.0",
     "hash": "cf55336b"
-   }
+   },
+   "confusableWith": [
+    "s.formell.1"
+   ]
   },
   {
    "senseId": "s.julbord.1",
@@ -189609,7 +189612,16 @@
    "motif": "lstruc.formell",
    "group": "register",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.högtidlig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.61.0",
+    "hash": "62e0d10c",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.artig.1",
@@ -191564,7 +191576,14 @@
    "motif": "lita.symbol.2",
    "group": "lita-M3",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "247a2039",
+    "method": "match",
+    "waiver": "Förväxlas med symbolisk även efter manuella spåret (duva på piedestal med idén fred); godkänd av produktägaren 2026-11-26 som symbolbild."
+   }
   },
   {
    "senseId": "s.symbolisera.1",
@@ -192048,7 +192067,14 @@
    "group": "lita-M6",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "5913dc67",
+    "method": "match",
+    "waiver": "Förväxlas med konflikt även efter manuella spåret (fotografi som bevis ansikte mot ansikte); godkänd av produktägaren 2026-11-26 som symbolbild."
+   }
   },
   {
    "senseId": "s.ställas-på-sin-spets.1",
