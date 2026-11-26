@@ -263,6 +263,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'lita.': () => import('./literaryAnalysis').then((m) => m.LITA_MOTIFS),
   'lhist.': () => import('./languageHistory').then((m) => m.LHIST_MOTIFS),
   'mann.': () => import('./manualNature').then((m) => m.MANUAL_NATURE_MOTIFS),
+  'mans.': () => import('./manualScience').then((m) => m.MANUAL_SCIENCE_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
