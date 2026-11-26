@@ -130,10 +130,12 @@ export const MANUAL_SCIENCE_MOTIFS: Record<string, Svg> = {
   'mans.vårpunkt': all(bg(NIGHT), stars(18), line('M4 66 L116 66', '#8cc7e8', 2.4), line('M4 90 L116 42', C.gold, 2.4, '6 4'), path('M90 66 A30 30 0 0 0 87.6 54.3', 'none', C.white, 1.4), T(102, 60, '23,4°', 9, C.white),
     circle(60, 66, 15, 'none', HL, 3), circle(60, 66, 4, HL, C.white, 1.4), waIn('b5-varpunkt-1', -16, 7, sunDisc(34, 77, 6)), arrow(42, 73.6, 52, 69.4, HL, 2), T(60, 96, '0°', 12, HL)),
 
-  // Tidmätning: tiden räknad efter solen – solen står högst över meridianen (orange linje), skuggan är kortast, klockan 12.
-  'mans.soltid': all(bg('#d6ecf7'), rect(0, 96, 120, 24, '#cfe8b9', 0, null), line('M8 96 Q60 -48 112 96', C.gold, 1.6, '3 4'), line('M60 30 L60 96', HL, 2.4, '4 3'),
-    waIn('b5-soltid-1', -26, 26, sunDisc(60, 24, 8)), figure({ x: 60, h: 0.24, top: C.red }), ellipse(60, 100, 6, 1.6, 'rgba(0,0,0,0.3)', null),
-    circle(22, 44, 13, C.white, C.ink, 1.8), line('M22 44 L22 34', HL, 2.4), line('M22 44 L22 37', C.ink, 3), circle(22, 44, 1.6, C.ink, null), ...[0, 3, 6, 9].map((h) => { const a = (h / 12) * Math.PI * 2; return circle(f1(22 + 10 * Math.sin(a)), f1(44 - 10 * Math.cos(a)), 0.9, C.ink, null); })),
+  // Tidmätning: soltid mot klocktid – två orter i samma tidszon (grå klocka 12:00 för båda), men solen står högst i öst redan 11:40 och i väst först 12:20 (orange).
+  'mans.soltid': all(bg('#d6ecf7'), rect(4, 70, 112, 26, '#e6efd8', 0, null), line('M4 66 L4 100 M116 66 L116 100', C.grey, 1.6, '4 3'),
+    rect(40, 4, 40, 16, C.grey2, 3, C.grey, 1.2), T(60, 16, '12:00', 11, C.grey), line('M48 20 L30 30 M72 20 L90 30', C.grey, 1, '2 3'), arrow(104, 46, 76, 46, C.grey, 1.6),
+    ...[30, 90].map((x) => line(`M${x - 24} 70 Q${x} -10 ${x + 24} 70`, C.gold, 1.4, '3 3')), ...[30, 90].map((x) => line(`M${x} 38 L${x} 76`, HL, 2.4, '4 3')),
+    sunDisc(30, 30, 6), waIn('b5-soltid-1', 14, 14, sunDisc(90, 30, 6)), ...[30, 90].map((x) => all(circle(x, 30, 12, 'none', HL, 2.4), path(`M${x - 10} 80 L${x - 3} 74 L${x + 4} 80 Z`, C.red, C.ink, 1), rect(x - 8, 80, 10, 9, C.white, 1, C.ink, 1), path(`M${x + 3} 89 L${x + 3} 78 L${x + 10} 78 L${x + 10} 89 Z`, C.beige, C.ink, 1))),
+    T(30, 112, '12:20', 13, HL), T(90, 112, '11:40', 13, HL)),
 
   // Universums expansion: en osynlig kraft (ljust lila dis, frågetecken) som trycker isär galaxerna allt snabbare; 68 % av universum.
   'mans.mörk-energi': all(bg(NIGHT), stars(18), circle(76, 46, 40, 'rgba(199,179,230,0.18)', null), circle(76, 46, 26, 'rgba(199,179,230,0.18)', null), galaxy(76, 46, 1),
