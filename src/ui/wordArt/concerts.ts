@@ -177,11 +177,18 @@ const studioWall = () => all(rect(0, 0, 120, 112, '#d9d2c4', 0, null), ...range(
 
 export const CONC_MOTIFS: Record<string, Svg> = {
   // ── 4441 Repetition och soundcheck ───────────────────────────────
-  'conc.repetition.2': all(rect(8, 14, 104, 70, C.white, 4, C.ink, 1.8), rect(8, 14, 104, 14, C.red, 4, C.ink, 1.8),
-    ...range(5).flatMap((i) => range(3).map((j) => rect(14 + i * 19, 34 + j * 15, 15, 11, '#eef1f4', 2, C.grey2, 0.8))),
-    ...[[0, 0], [2, 0], [0, 1], [2, 1], [0, 2]].map(([i, j]) => all(rect(14 + i! * 19, 34 + j! * 15, 15, 11, '#fde3c8', 2, HL, 1.4), mnote1(21 + i! * 19, 39 + j! * 15, 0.42, C.ink))),
-    waPulse('conc-repetition', rect(90, 64, 15, 11, C.gold, 2, C.ink, 1.4), starShape(97.5, 69.5, 5, C.white)),
-    ground(), greyed(chair(20), chair(34), chair(48)), fig(84, 0.32, { top: C.denim, mouth: 'open', armL: [[-18, -50], [-24, -60]], front: guitar(2, -44, 1, -62) }), fig(104, 0.32, { hair: 'long', top: C.orange, mouth: 'open', armL: SING_L, armR: SING_R })),
+  'conc.repetition.2': all(
+    // week planner: seven day columns, Tuesday evening (19–21) marked with a band sign and an orange frame
+    rect(6, 6, 108, 58, C.white, 4, C.ink, 1.8), rect(6, 6, 108, 10, '#5a7fb8', 4, C.ink, 1.8),
+    ...range(7).map((i) => all(line(`M${f1(6 + i * 15.43)} 16 L${f1(6 + i * 15.43)} 64`, C.grey2, 0.8), circle(f1(13.7 + i * 15.43), 11, 1.6, C.white, null))),
+    ...[0, 2, 3, 5, 6].map((i) => all(rect(f1(8.5 + i * 15.43), 22, 10.5, 4, '#eef1f4', 1, null), rect(f1(8.5 + i * 15.43), 30, 8, 4, '#eef1f4', 1, null))),
+    rect(22.5, 19, 14.5, 42, '#fde3c8', 2, null), at(29.7, 32, 0.42, guitar(0, 4, 0.5, -30), mnote1(10, -8, 1, C.ink)),
+    T(29.7, 52, '19', 6.5, C.ink, 900), T(29.7, 59, '21', 6.5, C.ink, 900), line('M27 53.5 L32.4 53.5', C.ink, 0.9), frame(20.5, 17, 18.5, 46),
+    // below: the band during a break between songs, notes on a stand and a water bottle
+    ground(), line('M38 30 L38 66', HL, 1.4, '2 2'),
+    rect(30, 70, 22, 15, C.white, 1.5, C.ink, 1.2), staff(32, 73, 18, 2, C.grey, 0.5), staff(32, 79, 18, 2, C.grey, 0.5), line('M41 85 L41 112 M33 112 L41 105 L49 112', C.dark, 1.8),
+    fig(66, 0.42, { top: C.denim, mouth: 'smile', armL: [[-14, -48], [-18, -36]], armR: [[14, -56], [6, -66]], front: all(rect(3, -78, 5, 12, '#bfe3f5', 1.5, C.ink, 1), rect(4, -80, 3, 2, C.sky, 0.5, C.ink, 0.6)) }),
+    guitar(82, 104, 0.32, -15), fig(100, 0.42, { hair: 'long', top: C.orange, mouth: 'smile' }), chair(14), drum(16, 106, 0.45, C.red)),
   'conc.repetera.2': all(ground(), amp(18, 112, 0.9), fig(46, 0.7, { top: C.denim, mouth: 'smile', armL: [[-18, -50], [-24, -60]], front: guitar(2, -44, 1, -62) }),
     W(82, 0.7, { top: C.orange, mouth: 'open', armL: SING_L, armR: SING_R }), micStand(96, 0.62),
     waSpin('conc-repetera', 3, g('translate(64 22)', path('M-14 0 A14 14 0 1 1 0 14', 'none', HL, 3.4), path('M-6 12 L2 15 L-3 21 Z', HL, null))),
