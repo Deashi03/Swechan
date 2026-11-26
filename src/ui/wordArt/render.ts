@@ -261,6 +261,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'ttype.': () => import('./textTypes').then((m) => m.TTYPE_MOTIFS),
   'litg.': () => import('./literaryGenres').then((m) => m.LITG_MOTIFS),
   'lita.': () => import('./literaryAnalysis').then((m) => m.LITA_MOTIFS),
+  'lhist.': () => import('./languageHistory').then((m) => m.LHIST_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
