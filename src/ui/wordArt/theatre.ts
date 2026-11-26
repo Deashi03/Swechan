@@ -279,12 +279,17 @@ export const THEA_MOTIFS: Record<string, Svg> = {
   'thea.skådespelare': all(stageBox(88), curtains(14, 88), beam(60, 0, 48, 106),
     M(60, 0.9, { top: C.purple, bottom: C.dark, mouth: 'open', extra: crown(0, -96, 1.1), front: cape(RED), armL: [[-14, -56], [-4, -58]], armR: [[18, -68], [28, -80]] }, 106),
     ring(60, 60, 30), heads(5, 122, '#1c1a28', 10, 110)),
-  'thea.roll.2': all(ground(),
-    M(24, 0.7, { top: C.sky, bottom: C.denim, mouth: 'smile', ...scriptIn() }),
-    arrow(44, 60, 66, 60, C.grey, 2.4),
-    M(92, 0.82, { top: C.purple, bottom: C.dark, mouth: 'flat', extra: all(crown(0, -96, 1.2), path('M-10 -72 C-6 -66 6 -66 10 -72 L8 -60 L-8 -60 Z', C.white, C.ink, 1)), front: cape(RED), armR: [[16, -56], [22, -40]], armL: [[-16, -56], [-22, -40]] }),
-    line('M114 72 L114 112', C.gold, 2.4), circle(114, 70, 3, C.gold, C.ink, 1),
-    frame(70, 18, 48, 96)),
+  // roll (theatre sense), redrawn after match test round 1: the same actor (same face, red hair, a mole) three times in
+  // three roles – king, farmer, detective – each with a script sheet of their own. Same size, same light, no spotlight,
+  // nobody marked, so no main role and no cast list; the dashed lines tie the three faces to one person.
+  'thea.roll.2': all(rect(0, 0, 120, 120, C.paper, 0, null), ground(),
+    ...[
+      { x: 20, top: C.purple, bot: C.dark, hat: crown(0, -96, 1.2), front: cape(RED), prop: '' },
+      { x: 60, top: '#5f8f4a', bot: '#7a5a3a', hat: all(ellipse(0, -90, 15, 3.4, '#e3c16f', C.ink, 1.2), path('M-8 -90 C-8 -100 8 -100 8 -90 Z', '#e3c16f', C.ink, 1.2), line('M-8 -92 L8 -92', RED, 1.6)), front: '', prop: all(line('M17 -30 L17 -2', '#a0673d', 2), line('M13 -34 L13 -28 M17 -36 L17 -28 M21 -34 L21 -28 M13 -28 L21 -28', C.grey, 1.4)) },
+      { x: 100, top: '#a0673d', bot: '#5a4636', hat: all(ellipse(0, -89, 13, 3, '#6b5136', C.ink, 1.2), path('M-9 -89 C-9 -100 9 -100 9 -89 Z', '#6b5136', C.ink, 1.2)), front: line('M-10 -64 L0 -48 L10 -64', '#7a5a3a', 1.6), prop: all(line('M17 -38 L22 -46', C.dark, 2), circle(25, -50, 5, 'rgba(191,227,245,0.7)', C.ink, 1.4)) },
+    ].map((r) => all(
+      fig(r.x, 0.72, { top: r.top, bottom: r.bot, hairCol: '#b8562e', mouth: 'smile', armL: [[-14, -50], [-18, -40]], armR: [[14, -50], [17, -36]], extra: all(circle(5, -76, 0.9, C.ink, null), r.hat), front: all(r.front, g('translate(-20 -48)', rect(-6, -4, 12, 15, C.white, 1, C.ink, 1), line('M-4 0 L4 0 M-4 3 L3 3 M-4 6 L4 6', C.grey, 0.8)), r.prop) }))),
+    line('M28 30 Q40 22 52 30 M68 30 Q80 22 92 30', C.grey, 1.4, '3 3')),
   'thea.spela.3': all(stageBox(86), curtains(10, 86),
     rect(70, 70, 26, 30, C.purple, 3, C.ink, 1.4), rect(66, 62, 34, 10, C.gold, 2, C.ink, 1.2),
     M(82, 0.5, { top: C.purple, extra: crown(0, -96, 1), front: cape(RED), mouth: 'frown' }, 92),
