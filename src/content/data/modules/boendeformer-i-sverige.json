@@ -1,11 +1,11 @@
 {
  "id": "m.boendeformer-i-sverige",
- "contentVersion": 3,
- "updatedAt": "2026-11-19",
+ "contentVersion": 5,
+ "updatedAt": "2026-11-26",
  "titleSv": "Boendeformer i Sverige",
  "titleJa": "スウェーデンの{住居形態|じゅうきょけいたい}",
- "descriptionSv": "Hur man bor i Sverige: hyresrätt, bostadsrätt, bostadskö, kollektiv och sommarstuga.",
- "descriptionJa": "スウェーデンの{住|す}まい{方|かた}：{賃貸|ちんたい}、{分譲|ぶんじょう}マンション{利用権|りようけん}、{順番待|じゅんばんま}ち、シェアハウス、サマーハウス。",
+ "descriptionSv": "Lär dig hur boende fungerar i Sverige, vem som äger bostaden och varför det kan vara svårt att hitta en lägenhet.",
+ "descriptionJa": "スウェーデンの{住|す}まいのしくみ、{誰|だれ}が{住|す}まいを{所有|しょゆう}しているか、なぜ{部屋|へや}を{見|み}つけるのが{難|むずか}しいことがあるのかがわかります。",
  "categoryId": "R01-A01-T01",
  "tags": [
   "hemmet"
@@ -154,7 +154,24 @@
    }
   ],
   "factSources": [
-   "Svenska upplåtelseformer (hyresrätt, bostadsrätt, äganderätt); långa bostadsköer i Stockholm; cirka 600 000 fritidshus i Sverige (SCB)."
+   {
+    "text": "I Sverige finns tre vanliga upplåtelseformer för bostäder: hyresrätt, bostadsrätt och äganderätt.",
+    "source": "SCB, Boende i Sverige (hushåll efter upplåtelseform); Boverket",
+    "checked": "2026-11-26",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "I en bostadsrätt äger bostadsrättsföreningen huset, och medlemmarna har rätt att bo i sina lägenheter och bestämmer tillsammans på föreningsstämman.",
+    "source": "Bostadsrättslagen (1991:614)",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Den som får en hyresrätt genom Stockholms bostadsförmedling har ofta stått i kö i tio år eller mer.",
+    "source": "Bostadsförmedlingen i Stockholm, statistik över kötider",
+    "checked": "2026-11-26",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -165,5 +182,6 @@
    "Skulle du vilja bo i kollektiv? Varför eller varför inte?",
    "Vad tycker du om den svenska traditionen med sommarstugor?"
   ]
- }
+ },
+ "standard": 2
 }

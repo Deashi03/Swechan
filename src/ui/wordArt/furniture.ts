@@ -2,7 +2,7 @@
  * Furniture (0.17, backfill of Vardag & hem → Möbler & inredning 208–214): sofas and armchairs,
  * tables and chairs, beds and bedding, storage, lamps and lighting, colours and styles, furnishing.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, waIn, type Svg } from './kit';
 import {  } from './figures';
 import { HL, T, heart } from './people';
 import { check } from './kitchenKit';
@@ -95,8 +95,8 @@ export const FURNITURE_MOTIFS: Record<string, Svg> = {
   'möb.överfull': all(rect(26, 14, 68, 98, '#c9a06a', 2, C.ink, 2), rect(30, 18, 60, 90, '#f6efe2', 1, null), ...Array.from({ length: 9 }, (_, i) => path(`M${34 + i * 6} 22 L${30 + i * 6} 70 L${40 + i * 6} 70 Z`, [C.red, C.navy, C.green, C.pink, C.yellow][i % 5]!, C.ink, 0.8)), box(48, 96, 26, 18), box(74, 90, 22, 16), path('M94 40 L108 34 L106 70 L94 72 Z', C.purple, C.ink, 1.2), path('M16 30 l6 6 M14 46 l8 0', 'none', HL, 2)),
   // ── Lampor och belysning (212) ──────────────────────────────────
   'möb.belysning': room(all(lamp(60, 28, 'ceiling', true), lamp(98, 104, 'floor', true), lamp(24, 82, 'table', true), rect(14, 82, 22, 4, C.tan, 1, C.ink, 1)), '#e8d3b0', '#3d3f4a'),
-  'möb.tända': all(rect(4, 10, 112, 100, '#3d3f4a', 4, null), switchW(36, 64, true), g('translate(48 74) rotate(-30)', path('M-6 16 L-6 0 C-6 -4 -2 -4 -2 0 L-2 -14 C-2 -18 2 -18 2 -14 L2 16 Z', C.skin, C.ink, 1.4)), bulb(84, 50, 1.6, true)),
-  'möb.släcka-lampa': all(rect(4, 10, 112, 100, '#3d3f4a', 4, null), switchW(36, 64, false), g('translate(48 82) rotate(-30)', path('M-6 16 L-6 0 C-6 -4 -2 -4 -2 0 L-2 -14 C-2 -18 2 -18 2 -14 L2 16 Z', C.skin, C.ink, 1.4)), bulb(84, 50, 1.6, false)),
+  'möb.tända': all(rect(4, 10, 112, 100, '#3d3f4a', 4, null), switchW(36, 64, true), g('translate(48 74) rotate(-30)', path('M-6 16 L-6 0 C-6 -4 -2 -4 -2 0 L-2 -14 C-2 -18 2 -18 2 -14 L2 16 Z', C.skin, C.ink, 1.4)), bulb(84, 50, 1.6, false), moving('mob-tanda', '0%,30%{opacity:0}60%,100%{opacity:1}', { dur: 2.6 }, bulb(84, 50, 1.6, true))),
+  'möb.släcka-lampa': all(rect(4, 10, 112, 100, '#3d3f4a', 4, null), switchW(36, 64, false), g('translate(48 82) rotate(-30)', path('M-6 16 L-6 0 C-6 -4 -2 -4 -2 0 L-2 -14 C-2 -18 2 -18 2 -14 L2 16 Z', C.skin, C.ink, 1.4)), bulb(84, 50, 1.6, true), moving('mob-slacka', '0%,30%{opacity:0}60%,100%{opacity:1}', { dur: 2.6 }, circle(84, 40.4, 29, '#3d3f4a', null), bulb(84, 50, 1.6, false))),
   'möb.strömbrytare': all(rect(4, 10, 112, 100, '#e8eef4', 4, null), g('translate(60 60) scale(2)', rect(-14, -20, 28, 40, C.white, 4, C.ink, 1.4), rect(-7, -12, 14, 14, C.silver, 2, C.ink, 1))),
   'möb.taklampa': all(rect(4, 10, 112, 100, '#f6efe2', 4, null), lamp(60, 50, 'ceiling', true)),
   'möb.golvlampa': all(ground, lamp(60, 112, 'floor', true), armchair(96, 106, 0.8)),
@@ -126,9 +126,9 @@ export const FURNITURE_MOTIFS: Record<string, Svg> = {
   'möb.lila': all(swatch(40, 60, C.purple), g('translate(84 64) scale(1.3)', path('M-12 -14 L12 -14 L12 14 L-12 14 Z', C.purple, C.ink, 1.6), path('M-6 -14 L-6 -22 L6 -22 L6 -14', 'none', C.ink, 1.6))),
   'möb.pastell': all(...['#f6c9d4', '#c8e6f5', '#d8f0c8', '#fbe8b0', '#e0d0f0'].map((c, i) => rect(14 + i * 19, 36, 17, 48, c, 3, C.ink, 1.2))),
   // ── Att möblera ett rum (214) ───────────────────────────────────
-  'möb.möblera': room(all(sofa(36, 96, 0.7), box(86, 98, 22, 16), armchair(96, 76, 0.5), arrow(70, 60, 44, 76, HL, 2.2)), '#e8d3b0', '#fbfaf2'),
-  'möb.ommöblera': room(all(sofa(36, 96, 0.7, '#c8b8d8'), sofa(86, 96, 0.7), path('M44 70 C56 56 76 56 84 70', 'none', HL, 2.2), arrow(82, 66, 86, 72, HL, 2))),
-  'möb.placera': room(all(sofa(60, 98, 0.9), line('M20 56 L100 56', HL, 1.6, '3 3'), arrow(60, 40, 60, 66, HL, 2.4), g('translate(76 40)', path('M-6 16 L-6 0 C-6 -4 -2 -4 -2 0 L-2 -14 C-2 -18 2 -18 2 -14 L2 16 Z', C.skin, C.ink, 1.4)))),
+  'möb.möblera': room(all(waIn('mob-moblera', 26, -18, sofa(36, 96, 0.7)), box(86, 98, 22, 16), armchair(96, 76, 0.5), arrow(70, 60, 44, 76, HL, 2.2)), '#e8d3b0', '#fbfaf2'),
+  'möb.ommöblera': room(all(sofa(36, 96, 0.7, '#c8b8d8'), waIn('mob-ommoblera', -50, 0, sofa(86, 96, 0.7)), path('M44 70 C56 56 76 56 84 70', 'none', HL, 2.2), arrow(82, 66, 86, 72, HL, 2))),
+  'möb.placera': room(all(waIn('mob-placera', 0, -24, sofa(60, 98, 0.9)), line('M20 56 L100 56', HL, 1.6, '3 3'), arrow(60, 40, 60, 66, HL, 2.4), g('translate(76 40)', path('M-6 16 L-6 0 C-6 -4 -2 -4 -2 0 L-2 -14 C-2 -18 2 -18 2 -14 L2 16 Z', C.skin, C.ink, 1.4)))),
   'möb.golvyta': room(all(sofa(24, 96, 0.5), plant(104, 88, 0.7), rect(40, 84, 52, 22, 'rgba(228,87,46,0.15)', 2, HL, 2))),
   'möb.matta': all(g('translate(60 72)', path('M-46 -18 L46 -18 L52 18 L-52 18 Z', '#c9302c', C.ink, 2), path('M-38 -12 L38 -12 L42 12 L-42 12 Z', 'none', '#f6d36a', 2), path('M-20 0 L0 -8 L20 0 L0 8 Z', '#f6d36a', null), ...[-50, -40, -30, -20, -10, 0, 10, 20, 30, 40, 50].map((d) => line(`M${d} 18 L${d} 24`, C.ink, 1)))),
   'möb.gardin': all(rect(4, 10, 112, 100, '#e8eef4', 4, null), win(60, 56, 50, 60), line('M20 20 L100 20', C.brown, 3), path('M22 20 C18 50 26 80 22 100 L38 100 C34 70 40 40 36 20 Z', C.red, C.ink, 1.4), path('M98 20 C102 50 94 80 98 100 L82 100 C86 70 80 40 84 20 Z', C.red, C.ink, 1.4)),

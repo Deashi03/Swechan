@@ -31,9 +31,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Boendeform betyder hur man bor, till exempel om man hyr eller äger sin bostad. Ordet säger något om vem som äger bostaden.",
+      "ja": "「boendeform」は、{借|か}りているか{持|も}っているかなど、どのように{住|す}んでいるかという{意味|いみ}です。{住|す}まいを{誰|だれ}が{所有|しょゆう}しているかを{表|あらわ}します。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.äga",
@@ -144,6 +152,10 @@
       {
        "sv": "De bor i en hyresrätt.",
        "ja": "{彼|かれ}らは{賃貸|ちんたい}アパートに{住|す}んでいます。"
+      },
+      {
+       "sv": "Det är svårt att få en hyresrätt i Stockholm.",
+       "ja": "ストックホルムで{賃貸住宅|ちんたいじゅうたく}を{借|か}りるのは{難|むずか}しいです。"
       }
      ],
      "tags": [
@@ -155,9 +167,22 @@
      "explanation": {
       "sv": "En hyresrätt är en lägenhet som man hyr och betalar hyra för varje månad. Man äger den inte, och man kan flytta ganska snabbt. I Sverige får många vänta länge i kö för att få en hyresrätt.",
       "ja": "「hyresrätt」は、{借|か}りて{毎月|まいつき}{家賃|やちん}を{払|はら}う{部屋|へや}です。{自分|じぶん}のものではなく、わりと{早|はや}く{引|ひ}っ{越|こ}せます。スウェーデンでは{賃貸住宅|ちんたいじゅうたく}に{入|はい}るために{長|なが}く{順番|じゅんばん}を{待|ま}つ{人|ひと}が{多|おお}いです。"
+     },
+     "collocations": [
+      "bo i en hyresrätt",
+      "få en hyresrätt",
+      "ställa sig i kö till en hyresrätt"
+     ],
+     "usageNote": {
+      "sv": "En bostadsrätt köper man i stället, och med äganderätt äger man hela huset själv.",
+      "ja": "bostadsrättは{買|か}うもので、äganderättなら{家|いえ}{全体|ぜんたい}を{自分|じぶん}で{所有|しょゆう}します。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.bostadsrätt",
@@ -183,11 +208,15 @@
       {
        "sv": "De har köpt en bostadsrätt.",
        "ja": "{彼|かれ}らは{分譲|ぶんじょう}アパートを{買|か}いました。"
+      },
+      {
+       "sv": "Hon sålde sin bostadsrätt och flyttade till en villa.",
+       "ja": "{彼女|かのじょ}は{分譲|ぶんじょう}アパートを{売|う}って、{一戸建|いっこだ}てに{引|ひ}っ{越|こ}しました。"
       }
      ],
      "usageNote": {
-      "sv": "Bostadsrätt är typiskt svenskt och liknar inte exakt något i Japan.",
-      "ja": "bostadsrätt はスウェーデン{特有|とくゆう}の{制度|せいど}で、{日本|にほん}にぴったり{同|おな}じものはありません。"
+      "sv": "Bostadsrätt är typiskt svenskt och liknar inte exakt något i Japan. I en hyresrätt hyr man bara, och med äganderätt äger man huset och marken helt själv.",
+      "ja": "bostadsrätt はスウェーデン{特有|とくゆう}の{制度|せいど}で、{日本|にほん}にぴったり{同|おな}じものはありません。hyresrättは{借|か}りるだけで、äganderättなら{家|いえ}と{土地|とち}を{全部|ぜんぶ}{自分|じぶん}で{所有|しょゆう}します。"
      },
      "tags": [
       "hemmet"
@@ -198,9 +227,18 @@
      "explanation": {
       "sv": "En bostadsrätt är en vanlig svensk form av boende. Man köper rätten att bo i en lägenhet, och alla som bor i huset äger huset tillsammans. Varje månad betalar man också pengar för huset.",
       "ja": "「bostadsrätt」はスウェーデンでよくある{住|す}まいの{形|かたち}です。{部屋|へや}に{住|す}む{権利|けんり}を{買|か}い、{住|す}んでいる{人|ひと}みんなで{建物|たてもの}を{所有|しょゆう}します。{毎月|まいつき}{建物|たてもの}のためのお{金|かね}も{払|はら}います。"
-     }
+     },
+     "collocations": [
+      "köpa en bostadsrätt",
+      "sälja sin bostadsrätt",
+      "bo i bostadsrätt"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.äganderätt",
@@ -226,8 +264,13 @@
       {
        "sv": "Villan är en äganderätt.",
        "ja": "その{一戸建|いっこだ}ては{持|も}ち{家|いえ}です。"
+      },
+      {
+       "sv": "Radhuset säljs med äganderätt.",
+       "ja": "そのテラスハウスは{所有権|しょゆうけん}つきで{売|う}られています。"
       }
      ],
+     "labelSv": "boendeform",
      "grammarNotes": [
       "gn.mass-noun"
      ],
@@ -238,11 +281,37 @@
       "status": "ai-draft"
      },
      "explanation": {
-      "sv": "I Sverige finns olika sätt att bo. Äganderätt betyder att du själv äger hela bostaden, till exempel en villa, och marken den står på. Du kan sälja den när du vill.",
-      "ja": "スウェーデンにはいろいろな{住|す}み{方|かた}があります。「äganderätt」は、{一戸建|いっこだ}てなどの{家|いえ}と{土地|とち}を{全部|ぜんぶ}{自分|じぶん}で{持|も}っていることです。いつでも{売|う}ることができます。"
-     }
+      "sv": "I Sverige finns olika sätt att bo. Äganderätt betyder att du själv äger hela bostaden, till exempel en villa, och marken den står på. Du kan sälja den när du vill. Det skiljer sig från en hyresrätt, där man hyr, och en bostadsrätt, där man bara köper rätten att bo i lägenheten.",
+      "ja": "スウェーデンにはいろいろな{住|す}み{方|かた}があります。「äganderätt」は、{一戸建|いっこだ}てなどの{家|いえ}と{土地|とち}を{全部|ぜんぶ}{自分|じぶん}で{持|も}っていることです。いつでも{売|う}ることができます。{借|か}りるhyresrättや、{部屋|へや}に{住|す}む{権利|けんり}だけを{買|か}うbostadsrättとは{違|ちが}います。"
+     },
+     "collocations": [
+      "med äganderätt",
+      "ett radhus med äganderätt"
+     ]
+    },
+    {
+     "id": "s.äganderätt.2",
+     "ja": "{所有権|しょゆうけん}",
+     "defSv": "Rätten att äga något och bestämma över det.",
+     "defJa": "{何|なに}かを{持|も}って、それについて{決|き}める{権利|けんり}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vem har äganderätten till bilden?",
+       "ja": "その{写真|しゃしん}の{所有権|しょゆうけん}は{誰|だれ}にありますか。"
+      }
+     ],
+     "labelSv": "rätt att äga",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.bostadskö",
@@ -281,7 +350,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.köa",
@@ -320,7 +393,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.bostadsbrist",
@@ -358,7 +435,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.i-andra-hand",
@@ -379,6 +460,10 @@
       {
        "sv": "Jag hyr en lägenhet i andra hand.",
        "ja": "また{貸|が}しでアパートを{借|か}りています。"
+      },
+      {
+       "sv": "Hon hyr ut sin lägenhet i andra hand under ett år.",
+       "ja": "{彼女|かのじょ}は1{年間|ねんかん}、{自分|じぶん}のアパートをまた{貸|が}ししています。"
       }
      ],
      "labelSv": "hyra",
@@ -391,7 +476,12 @@
      "explanation": {
       "sv": "Att bo i andra hand betyder att man hyr av någon som själv hyr eller äger bostaden, ofta för en kortare tid. Den som äger huset har bara skrivit avtal med den första personen. Det är vanligt i städer där det är svårt att få en lägenhet.",
       "ja": "「i andra hand」で{住|す}むとは、{自分|じぶん}も{借|か}りているか{所有|しょゆう}している{人|ひと}から、よく{短|みじか}い{期間|きかん}{借|か}りることです。{建物|たてもの}の{持|も}ち{主|ぬし}が{契約|けいやく}しているのは、その{最初|さいしょ}の{人|ひと}だけです。{部屋|へや}を{見|み}つけにくい{都市|とし}でよくあります。"
-     }
+     },
+     "collocations": [
+      "hyra i andra hand",
+      "hyra ut i andra hand",
+      "bo i andra hand"
+     ]
     },
     {
      "id": "s.i-andra-hand.2",
@@ -417,8 +507,30 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.i-andra-hand.3",
+     "ja": "{第二|だいに}に、{次|つぎ}の{候補|こうほ}として",
+     "defSv": "Om man inte kan få det man vill ha först.",
+     "defJa": "いちばん{望|のぞ}むものがだめなときの、{次|つぎ}の{選択肢|せんたくし}として。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "I första hand vill vi ha en trea, i andra hand en tvåa.",
+       "ja": "{第一|だいいち}に3{部屋|へや}のアパート、{第二|だいに}に2{部屋|へや}のアパートがほしいです。"
+      }
+     ],
+     "labelSv": "som andra val",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.inneboende",
@@ -444,6 +556,10 @@
       {
        "sv": "Hon bor som inneboende hos en äldre dam.",
        "ja": "{彼女|かのじょ}はお{年寄|としよ}りの{女性|じょせい}の{家|いえ}に{下宿|げしゅく}しています。"
+      },
+      {
+       "sv": "Vi har en inneboende som studerar.",
+       "ja": "{家|うち}には{学生|がくせい}の{下宿人|げしゅくにん}がいます。"
       }
      ],
      "tags": [
@@ -455,9 +571,18 @@
      "explanation": {
       "sv": "En inneboende är en person som hyr ett rum i någon annans bostad och delar kök och badrum med den. Det är vanligt bland studenter. Man kan också säga att man bor inneboende hos någon.",
       "ja": "「inneboende」は、ほかの{人|ひと}の{家|いえ}の{一部屋|ひとへや}を{借|か}りて、{台所|だいどころ}や{浴室|よくしつ}を{共有|きょうゆう}する{人|ひと}です。{学生|がくせい}によくあります。「{誰|だれ}かの{家|いえ}に{下宿|げしゅく}している」とも{言|い}えます。"
-     }
+     },
+     "collocations": [
+      "bo inneboende hos någon",
+      "ha en inneboende"
+     ]
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26",
+    "note": "Adjektivet inneboende (som finns i något från början) räknas som ett eget ord."
+   }
   },
   {
    "id": "e.kollektiv",
@@ -483,6 +608,10 @@
       {
        "sv": "Jag bodde i kollektiv när jag studerade.",
        "ja": "{学生|がくせい}のときはシェアハウスに{住|す}んでいました。"
+      },
+      {
+       "sv": "Fem vänner bor tillsammans i ett stort kollektiv.",
+       "ja": "5{人|にん}の{友|とも}だちが{大|おお}きなシェアハウスで{一緒|いっしょ}に{住|す}んでいます。"
       }
      ],
      "labelSv": "boende",
@@ -495,6 +624,14 @@
      "explanation": {
       "sv": "Ett kollektiv är en bostad där flera vuxna som inte är familj bor tillsammans och delar kök, vardagsrum och ofta mat och städning. Det är vanligt bland unga i Sverige.",
       "ja": "「kollektiv」は、{家族|かぞく}ではない{大人|おとな}が{何人|なんにん}か{一緒|いっしょ}に{住|す}み、{台所|だいどころ}やリビング、よく{食事|しょくじ}や{掃除|そうじ}も{分|わ}け{合|あ}う{住|す}まいです。スウェーデンの{若者|わかもの}によくあります。"
+     },
+     "collocations": [
+      "bo i kollektiv",
+      "flytta till ett kollektiv"
+     ],
+     "usageNote": {
+      "sv": "En studentkorridor är annorlunda: där bor bara studenter, och var och en har ett eget rum.",
+      "ja": "studentkorridorは{違|ちが}います。そこには{学生|がくせい}だけが{住|す}み、それぞれ{自分|じぶん}の{部屋|へや}があります。"
      }
     },
     {
@@ -523,7 +660,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.studentkorridor",
@@ -558,7 +699,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.äldreboende",
@@ -593,7 +738,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "e.sommarstuga",
@@ -632,7 +781,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-26"
+   }
   }
  ]
 }
