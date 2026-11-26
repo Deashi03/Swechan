@@ -66,6 +66,28 @@ const tree = (x: number, y: number, s = 1) => at(x, y, s, rect(-3, -18, 6, 18, C
 /** Small figure sitting on a book (the narrator). */
 const sitter = (x: number, y: number, col: string, long = false) => mini(x, y, col, long);
 
+/** Comic panel. */
+const panel = (x: number, y: number, w: number, h: number, fill: string = C.white) => rect(x, y, w, h, fill, 3, C.ink, 1.6);
+/** White bird (dove) facing right. */
+const dove = (x: number, y: number, s = 1) => at(x, y, s, path('M-16 0 L-24 -5 L-23 3 L-16 4 Z', C.white, C.ink, 1.2), ellipse(-3, 2, 13, 7, C.white, C.ink, 1.4), circle(10, -4, 5, C.white, C.ink, 1.4), path('M14.5 -5 L20 -3.5 L14.5 -2 Z', C.orange, C.ink, 0.8), circle(11.5, -5, 0.9, C.ink, null), path('M-8 0 C-6 -12 4 -14 6 -10 C4 -4 0 0 -8 0 Z', '#eef2f6', C.ink, 1.2));
+/** Two small people hand in hand: peace. */
+const peace = (x: number, y: number, s = 1) => at(x, y, s, mini(-8, 0, C.green), mini(8, 0, C.pink, true), line('M-3 8 L3 8', C.skin, 3));
+/** Head in profile facing right (flip = facing left). */
+const profile = (x: number, y: number, s: number, hair: string, flip = false, down = false) => g(`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`,
+  path('M-14 -4 C-16 -22 2 -30 12 -20 C16 -16 16 -10 15 -6 L20 2 L15 4 C16 8 14 12 10 12 L8 22 L-10 22 C-8 14 -14 8 -14 -4 Z', C.skin, C.ink, 1.8),
+  path('M-14 -4 C-18 -20 -2 -32 12 -20 C4 -22 -4 -18 -6 -8 C-8 -6 -12 -4 -14 -4 Z', hair, C.ink, 1.4),
+  down ? path('M7 -4 Q10 -2 13 -4', 'none', C.ink, 1.4) : circle(9, -6, 1.6, C.ink, null),
+  down ? '' : line('M5 -11 L12 -12', C.ink, 1.4), path(down ? 'M10 8 Q12 7 14 8' : 'M10 7 L15 6', 'none', C.ink, 1.3));
+/** Small person with a plant in the chest (stage 0 seed, 1 leaves, 2 flower). */
+const grower = (x: number, stage: number, straight: boolean) => {
+  const cy = 64;
+  return all(
+    g(straight ? '' : `rotate(7 ${x} 112)`, P({ x, h: 0.72, top: C.denim, mood: straight ? 'smile' : 'frown' })),
+    circle(x, cy, 7, C.white, C.ink, 1),
+    line(`M${x} ${cy + 5} L${x} ${cy + 1 - stage * 3}`, C.green, 2),
+    stage >= 1 ? all(path(`M${x} ${cy + 2 - stage} C${x - 6} ${cy - 1 - stage} ${x - 6} ${cy - 5 - stage} ${x - 1} ${cy - 3 - stage} Z`, C.green, C.ink, 0.8), path(`M${x} ${cy + 1 - stage} C${x + 6} ${cy - 2 - stage} ${x + 6} ${cy - 6 - stage} ${x + 1} ${cy - 4 - stage} Z`, C.green, C.ink, 0.8)) : circle(x, cy + 3, 1.8, C.brown, null));
+};
+
 // ── 4351 Berättarperspektiv ──────────────────────────────────────────
 const M1: Record<string, Svg> = {
   // an eye beside the story: its orange view cone covers one person only, the other stays grey
@@ -168,18 +190,18 @@ const M3: Record<string, Svg> = {
   'lita.symbolik': all(ground(), openBook(60, 94, 1.6),
     sakura(24, 40, 0.8), heart(60, 26, 0.9), at(96, 40, 0.7, circle(0, 0, 9, C.yellow, C.ink, 1.4)), hourglass(30, 70, 0.6), at(92, 70, 0.8, path('M-6 6 L6 -6 M-3 6 L-6 9 M0 6 L6 0', 'none', C.ink, 2), circle(6, -6, 4, 'none', C.gold, 2)),
     line('M30 44 L52 30 M68 30 L88 40 M96 50 L92 62 M30 62 L26 48 M38 72 L82 72', HL, 1.2, '3 3'), ring(60, 52, 40, '#f2b38c')),
-  // a single bird on the page of a book points to an idea in a thought cloud: peace (two people hand in hand)
-  'lita.symbol.2': all(ground(), openBook(36, 92, 1.4),
-    at(36, 78, 1.1, path('M-12 2 C-6 -8 6 -8 10 -2 L16 -6 L14 0 C10 6 -4 8 -12 2 Z', C.white, C.ink, 1.4), path('M-2 -2 C2 -12 8 -14 10 -12 C8 -6 4 -2 -2 -2 Z', C.white, C.ink, 1.2), circle(8, -3, 0.9, C.ink, null), path('M15 -4 L19 -3 L15 -1 Z', C.orange, null)),
-    ring(36, 76, 18),
-    circle(62, 58, 3, C.white, C.ink, 1.2), circle(70, 50, 4, C.white, C.ink, 1.2),
-    ellipse(92, 32, 24, 20, C.white, C.ink, 1.6), mini(84, 32, C.green), mini(100, 32, C.pink, true), line('M88 40 L96 40', C.skin, 3)),
-  // a process: a rose on the left, a growing arrow, and a heart (love) appears on the right
-  'lita.symbolisera': all(ground(),
-    line('M26 108 C26 90 28 76 26 64', C.green, 3), path('M26 84 C18 80 16 74 18 72 C22 74 26 78 26 84 Z', C.green, C.ink, 1),
-    at(26, 56, 1, circle(0, 0, 11, C.red, C.ink, 1.6), path('M-6 -2 C-2 -8 4 -6 4 0 C4 6 -4 6 -4 1', 'none', '#8f2424', 1.6), path('M-9 -4 C-4 -12 6 -12 9 -4', 'none', '#8f2424', 1.2)),
-    waIn('lita-sym', -26, 0, all(line('M44 56 L74 56', HL, 3.4), path('M70 48 L80 56 L70 64 Z', HL, null))),
-    waGrow('lita-sym2', all(circle(98, 56, 16, OR, HL, 2.4), heart(98, 57, 1.1)))),
+  // a noun: one thing on a pedestal with a label, and below it the icon of the idea it stands for (still, no arrow)
+  'lita.symbol.2': all(ground(), rect(36, 60, 48, 10, C.beige, 2, C.ink, 1.6), rect(42, 70, 36, 30, C.beige, 1, C.ink, 1.6), rect(32, 100, 56, 12, C.beige, 2, C.ink, 1.6),
+    dove(60, 44, 1.5), ring(60, 42, 22),
+    rect(48, 76, 24, 10, C.white, 2, C.ink, 1), line('M52 81 L68 81', C.grey, 1.4), line('M60 70 L60 76', C.ink, 1),
+    rect(8, 18, 26, 24, C.white, 3, C.ink, 1.2), peace(21, 28, 0.65), line('M34 30 L40 38', C.grey, 1.2, '2 2'), rect(86, 18, 26, 24, C.white, 3, C.ink, 1.2), peace(99, 28, 0.65), line('M86 30 L80 38', C.grey, 1.2, '2 2')),
+  // three panels: the writer writes about a white dove, the reader reads it, and the reader's thought fills with peace
+  'lita.symbolisera': all(
+    panel(4, 6, 54, 52), mini(18, 40, C.navy), rect(26, 44, 28, 10, C.tan, 1, C.ink, 1.2), pen(40, 44, 30, 0.7), bubble(40, 20, 26, dove(40, 21, 0.7), true),
+    panel(62, 6, 54, 52), openBook(89, 46, 0.8), dove(89, 42, 0.5), mini(78, 24, C.orange, true), line('M82 28 L88 38', C.grey, 1, '2 2'),
+    panel(4, 62, 112, 46, '#fff7ee'), mini(24, 92, C.orange, true), circle(36, 82, 2.4, C.white, C.ink, 1), circle(42, 76, 3, C.white, C.ink, 1),
+    dove(60, 86, 0.8), waIn('lita-sym', -14, 0, arrow(70, 86, 80, 86, HL, 2.4)),
+    waGrow('lita-sym2', all(ellipse(98, 84, 16, 14, C.white, HL, 2.2), peace(98, 84, 0.7)))),
   // a short tile turns into a long one: the abbreviation and what it is short for
   'lita.stå-för.3': all(ground(), hot(26, 44, 26, 'km', 10), arrow(42, 44, 56, 44, HL, 2.6),
     waIn('lita-sf', -24, 0, tile(88, 44, 52, 'kilometer', C.white, C.ink, 8.5)),
@@ -295,12 +317,13 @@ const M5: Record<string, Svg> = {
   'lita.platt.2': all(ground(), rect(22, 34, 34, 74, OR, 2, HL, 2.2), at(39, 0, 1, circle(0, 46, 8, C.skin, C.ink, 1.4), path('M-10 72 L10 72 L8 100 L-8 100 Z', C.denim, C.ink, 1.3)),
     path('M30 108 L48 108 L39 98 Z', C.brown, C.ink, 1.2), rect(80, 34, 3, 74, HL, 1, C.ink, 1.2), arrow(60, 70, 74, 70, C.grey, 1.8),
     greyed(ellipse(104, 70, 9, 30, C.grey, C.ink, 1.3))),
-  // the same person, same height, before and after: the light and the heart inside have grown
+  // three panels, same person, same size: a plant in the chest grows from seed to flower while she helps others and stands taller
   'lita.växa.3': all(ground(),
-    greyed(P({ x: 28, h: 0.72, top: C.grey })), circle(28, 72, 7, 'rgba(242,193,78,0.35)', C.grey, 1), heart(28, 72, 0.4, C.grey),
-    arrow(46, 70, 66, 70, HL, 2.6),
-    waGrow('lita-vx3', circle(90, 70, 26, 'rgba(242,193,78,0.45)', C.gold, 1.6)),
-    P({ x: 90, h: 0.72, top: C.orange, mood: 'smile' }), heart(90, 73, 1.1), sparkle(70, 40, 4), sparkle(112, 46, 4)),
+    panel(2, 10, 38, 102), panel(41, 10, 38, 102), panel(80, 10, 38, 102),
+    grower(21, 0, false),
+    grower(58, 1, true), mini(70, 100, C.yellow), line('M66 86 L69 92', C.skin, 2.4),
+    grower(99, 2, true), waGrow('lita-vx3', all(...[0, 72, 144, 216, 288].map((a) => circle(99 + Math.cos((a * Math.PI) / 180) * 3.6, 56 + Math.sin((a * Math.PI) / 180) * 3.6, 2.8, C.pink, C.ink, 0.6)), circle(99, 56, 1.8, C.yellow, null))),
+    ring(99, 60, 11)),
   // a caterpillar fades away and a butterfly appears
   'lita.förvandlas': all(ground(), line('M10 100 C30 96 40 104 60 100', C.green, 3),
     moving('lita-fv1', '0%,30%{opacity:1}60%,100%{opacity:.15}', { dur: 3 }, greyed(caterpillar(20, 94, 1))),
@@ -339,11 +362,13 @@ const M6: Record<string, Svg> = {
   'lita.stå-på-spel': all(ground(), rect(10, 78, 100, 8, C.green, 2, C.ink, 1.6), line('M20 86 L20 112 M100 86 L100 112', C.brown, 3),
     house(44, 78, 1.1, C.red), heart(70, 68, 1), ring(56, 64, 24),
     waSway('lita-sp', 25, dice(92, 50, 1.2)), sparkle(102, 38, 3)),
-  // face to face: one holds out a paper (the proof), the other is caught; arrows point at each other
-  'lita.konfrontation': all(ground(), P({ x: 26, h: 0.7, top: C.denim, mood: 'angry' }), P({ x: 94, h: 0.7, top: C.red, hairStyle: 'long', mood: 'shock' }),
-    line('M36 70 L48 62', C.skin, 4),
-    waIn('lita-kf', -14, 0, all(rect(46, 44, 22, 28, C.white, 1.5, C.ink, 1.6), lines(50, 52, 14, 3, 5, C.navy), circle(62, 66, 3.4, 'none', C.red, 1.6))),
-    arrow(46, 24, 58, 24, HL, 2.6), arrow(78, 24, 66, 24, HL, 2.6), T(94, 26, '!', 14, HL, 900)),
+  // close-up: two faces in profile, close; one holds up a photo as proof, the other lowers his eyes
+  'lita.konfrontation': all(
+    profile(26, 52, 1.05, C.hair), profile(96, 54, 1.05, '#8a5a3a', true, true),
+    path('M16 76 L36 76 L40 112 L12 112 Z', C.denim, C.ink, 1.6), path('M84 78 L104 78 L108 112 L80 112 Z', C.red, C.ink, 1.6),
+    line('M34 90 L50 76', C.skin, 5),
+    waIn('lita-kf', -12, 6, all(g('rotate(-8 60 64)', rect(48, 52, 24, 22, C.white, 1, C.ink, 1.6), rect(51, 55, 18, 15, '#bfe3f5', 0, null), mini(60, 63, C.red, true)), circle(60, 63, 15, 'none', HL, 2.2))),
+    path('M106 38 C108 34 110 34 110 38 C110 40 106 40 106 38 Z', '#8cc7e8', C.ink, 0.8)),
   // two people balance on the very tip of a sharp peak: it cannot go on like this
   'lita.ställas-på-sin-spets': all(ground(), path('M20 112 L60 40 L100 112 Z', '#b9bec6', C.ink, 2),
     waSway('lita-spets', 5, all(mini(52, 30, C.denim), mini(68, 30, C.red, true), line('M44 42 L76 42', C.ink, 1.6))),
@@ -373,13 +398,15 @@ const M7: Record<string, Svg> = {
     at(62, 102, 1, path('M-10 -8 C-10 4 -2 8 0 8 C2 8 6 4 6 -8 Z', C.white, C.ink, 1.3), circle(-5, -3, 1, C.ink, null), circle(1, -3, 1, C.ink, null), path('M-5 2 Q-2 5 1 2', 'none', C.ink, 1)),
     at(78, 102, 1, path('M-6 -8 C-6 4 2 8 4 8 C6 8 10 4 10 -8 Z', C.yellow, C.ink, 1.3), circle(-1, -3, 1, C.ink, null), circle(5, -3, 1, C.ink, null), path('M-1 4 Q2 1 5 4', 'none', C.ink, 1)),
     book(100, 100, 0.5, C.navy)),
-  // a page in fine book style with a feather pen (orange) next to an everyday text message on a phone (grey)
+  // contrast pair: the bound classics with a feather pen belong to literature (orange, tick); a manual and a phone book do not (grey, cross)
   'lita.litterär': all(ground(),
-    rect(10, 18, 54, 80, '#fbf5e6', 2, HL, 2.4), rect(16, 26, 14, 14, OR, 1, C.ink, 1), path('M19 37 L23 28 L27 37 M20.5 34 L25.5 34', 'none', C.ink, 1.4),
-    line('M34 30 L58 30 M34 36 L56 36 M16 46 L58 46 M16 52 L56 52 M16 58 L58 58 M16 64 L54 64 M16 70 L58 70', C.grey, 1.4),
-    path('M24 82 C32 78 42 86 50 82', 'none', C.brown, 1.2), path('M52 104 C60 84 72 74 86 70 C78 80 70 92 56 104 Z', C.white, C.ink, 1.3), line('M54 104 L60 96', C.ink, 1.2),
-    greyed(all(rect(80, 48, 30, 52, C.dark, 4, C.ink, 1.6), rect(83, 54, 24, 40, '#e8eef2', 1, null),
-      rect(86, 58, 16, 8, C.white, 3, C.grey, 0.8), T(94, 64, 'hej', 5.5, C.ink, 700), rect(88, 70, 16, 8, '#bfe3f5', 3, C.grey, 0.8), T(96, 76, 'ok', 5.5, C.ink, 700)))),
+    rect(4, 10, 54, 98, '#fff3e6', 4, HL, 2.6),
+    ...[[14, C.red], [24, C.navy], [34, C.green], [44, C.purple]].map(([x, col]) => all(rect((x as number) - 4.5, 34, 9, 44, col as string, 1.5, C.ink, 1.3), line(`M${(x as number) - 3} 40 L${(x as number) + 3} 40 M${(x as number) - 3} 70 L${(x as number) + 3} 70`, C.gold, 1.6))),
+    line('M8 78 L54 78', C.brown, 3), path('M14 104 C22 88 34 82 48 80 C40 90 30 98 18 104 Z', C.white, C.ink, 1.3), line('M16 104 L22 96', C.ink, 1.2),
+    path('M22 22 l4 5 l9 -11', 'none', C.green, 3),
+    greyed(all(rect(64, 30, 22, 30, C.white, 1.5, C.ink, 1.4), at(75, 45, 0.6, circle(0, 0, 6, 'none', C.ink, 2), line('M4 4 L12 12', C.ink, 3)),
+      rect(90, 30, 24, 30, C.yellow, 1.5, C.ink, 1.4), line('M93 36 L111 36 M93 41 L111 41 M93 46 L111 46 M93 51 L111 51 M102 34 L102 56', C.ink, 0.8),
+      rect(64, 64, 50, 44, '#eef0f2', 4, C.grey, 1.6))), cross(89, 84, 12)),
   // everything starts from the book: arrows grow outwards from it to new ideas
   'lita.utgå-från': all(ground(), openBook(32, 82, 1.3), ring(32, 82, 22),
     waIn('lita-ut1', -40, 20, arrow(56, 74, 84, 52, HL, 2.4)), waIn('lita-ut2', -40, 0, arrow(58, 84, 90, 84, HL, 2.4)),
