@@ -272,3 +272,13 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
 
 - **Underkänd också i det manuella spåret:** *laddstation* (`s.laddstation.1`). Omgång 1 (laddplats under tak) och omgång 2 (anläggning ovanifrån med kafé och skylt) och den handritade bildserien (karta med laddnålar → anläggningen) matchades alla till *laddstolpe*. Produktägarens beslut 2026-11-25: synonympar *laddstation*/*laddstolpe* (`conf.py`).
 - **Godkända men nära andra bilder (bevakas):** *transmission* ↔ växellåda/drivlina; *enväxlad* ↔ "kugghjul"; *energitäthet* ↔ "mer energi"; *aerodynamisk* ↔ tågnos; *navigation* ↔ kompass/flygrutt; *haverikommission* ↔ *inspektion*; *ombord* ↔ passagerare; *rederi* ↔ hamnkontor; *man överbord* ↔ räddning; *eldriven* ↔ diesel→elbuss; *vätgasstation* ↔ tankning; *felparkerad* ↔ "förbjudet"; *åkeri* ↔ samlastning.
+
+## 0.61 – Språk & litteratur
+
+- **Godkända i det manuella spåret:** *kodväxla*, *essä* (kontrastpar: lång resonerande text med frågetecken och vågskål bredvid en grå krönika), *symbolisera* (bildserie författare → läsare → tankebubbla med fred), *växa* som människa (bildserie med en växt i bröstet som slår ut) och *litterär* (klassiker mot överkryssad manual och telefonkatalog).
+- **Underkända också i det manuella spåret, produktägarens beslut 2026-11-26:**
+  - *formell* (`s.formell.1`) förväxlades med *högtidlig* och räknas som synonympar (`conf.py`).
+  - *symbol* (`s.symbol.2`) förväxlades med *symbolisk* i alla omgångar, även som duva på piedestal. Godkänd som symbolbild (`waived`).
+  - *konfrontation* (`s.konfrontation.1`) förväxlades med *konflikt* i alla omgångar, även som närbild med fotografi som bevis. Godkänd som symbolbild (`waived`).
+- **Omritade i omgång 2:** *beskrivning* (förväxlades med *beskriva*), *sakprosa* (med *faktaruta*), *jagform* (med *krönika*), *metafor* (med *liknelse*), *vändning* (med *vändpunkt*), *litteratur*/*författarskap* (med varandra), *biografisk* (med *verk*), *prestige* (med *förebild*). Låg säkerhet: *målande*, *tema*, *sliten*, *språknorm* och *språkvård*.
+- **Godkända men nära andra bilder (bevakas):** *handling* ↔ tidslinje/kurva; *upplösning* ↔ klimax; *karaktär* ↔ huvudperson; *replik* ↔ pratbubbla; *nervkittlande* ↔ thrillerbokomslag; *tidstrogen* ↔ *anakronism*; *målande* ↔ illustration; *språknorm* ↔ *språkriktighet*.

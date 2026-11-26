@@ -201,6 +201,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.60 – Transportteknik (klar)
 - 42 nya moduler i Teknik & digital värld → Transportteknik enligt standard 2, med 377 nya ordbilder varav 241 rörliga. Hela Teknik & digital värld (R07) är publicerad.
 
+## v0.61 – Språk & litteratur (klar)
+- 42 nya moduler i Kultur & fritid → Språk & litteratur enligt standard 2, med 347 nya ordbilder varav 88 rörliga. 209 symbolbilder matchningstestade (fem godkända i manuella spåret, ett synonympar och två undantag efter produktägarens beslut).
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
