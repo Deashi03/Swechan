@@ -5014,13 +5014,14 @@
    "confusableWith": [
     "s.rymlig.1",
     "s.trång.1",
-    "s.modern.1"
+    "s.modern.1",
+    "s.trivsam.1"
    ],
    "reviewStatus": "ai-draft",
    "blindTest": {
     "result": "pass",
-    "round": "0.19.0",
-    "hash": "5e3f13ec"
+    "round": "0.62.0",
+    "hash": "22ca86d6"
    }
   },
   {
@@ -14489,7 +14490,8 @@
    "group": "krisp",
    "quiz": false,
    "confusableWith": [
-    "s.krispig.1"
+    "s.krispig.1",
+    "s.knaprig.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -37646,7 +37648,8 @@
    "group": "leverans",
    "quiz": true,
    "confusableWith": [
-    "s.hemleverans.1"
+    "s.hemleverans.1",
+    "s.leverans.1"
    ]
   },
   {
@@ -56515,7 +56518,8 @@
     "s.otroligt.1",
     "s.fruktansvärt.1",
     "s.himla.1",
-    "s.hemskt.1"
+    "s.hemskt.1",
+    "s.extremt.1"
    ],
    "blindTest": {
     "result": "synonym",
@@ -114946,7 +114950,10 @@
     "result": "pass",
     "round": "0.36.0",
     "hash": "1c7de38a"
-   }
+   },
+   "confusableWith": [
+    "s.instinkt.1"
+   ]
   },
   {
    "senseId": "s.moderland.1",
@@ -128328,7 +128335,10 @@
     "result": "pass",
     "round": "0.40.0",
     "hash": "607086da"
-   }
+   },
+   "confusableWith": [
+    "s.datering.1"
+   ]
   },
   {
    "senseId": "s.isotop.1",
@@ -129747,7 +129757,10 @@
    "kind": "illustration",
    "motif": "byhi.röta",
    "group": "byggnadsvård",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.murken.1"
+   ]
   },
   {
    "senseId": "s.fuktskada.1",
@@ -142004,7 +142017,10 @@
    "kind": "illustration",
    "motif": "beteende.revir",
    "group": "revir",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.revirhävdande.1"
+   ]
   },
   {
    "senseId": "s.hemområde.1",
@@ -192931,7 +192947,14 @@
    "group": "b5-flyttande",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "46b34e86",
+    "method": "match",
+    "waiver": "Förväxlas med sträcka (fågelsträck) bland modulens flyttfågelbilder; godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
   },
   {
    "senseId": "s.flygfärdig.1",
@@ -192984,7 +193007,16 @@
    "group": "b5-revirhävdande",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.revir.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "99295cba",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.monogam.1",
@@ -193007,7 +193039,14 @@
    "group": "b5-dominant",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "d98010b3",
+    "method": "match",
+    "waiver": "Förväxlas med underordnad och rangordning i vargflocken; godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
   },
   {
    "senseId": "s.migration.2",
@@ -193031,7 +193070,16 @@
    "group": "b5-instinkt",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.medfödd.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "d2999aef",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.frodas.1",
@@ -193126,7 +193174,16 @@
    "group": "b5-murken",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.röta.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "3226e974",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.tumregel.1",
@@ -193256,7 +193313,7 @@
    "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.61.0",
+    "round": "0.62.0",
     "hash": "4ab479b8",
     "method": "match"
    }
@@ -193577,7 +193634,7 @@
    "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.61.0",
+    "round": "0.62.0",
     "hash": "342deff3",
     "method": "match"
    }
@@ -193633,7 +193690,16 @@
    "group": "b5-knaprig",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.frasig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "e90d811e",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.frasighet.1",
@@ -193686,7 +193752,16 @@
    "group": "b5-leverans",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.leverera.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "a8da35e8",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.vänligen.1",
@@ -193694,7 +193769,14 @@
    "motif": "mana.vänligen",
    "group": "b5-vänligen",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "d0314e7e",
+    "method": "match",
+    "waiver": "Rätt bild men låg säkerhet (artig uppmaning); godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
   },
   {
    "senseId": "s.varifrån.1",
@@ -193732,7 +193814,14 @@
    "group": "b5-motion",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "791d7df3",
+    "method": "match",
+    "waiver": "Förväxlas med träningsform och vardagsmotion; godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
   },
   {
    "senseId": "s.extremt.1",
@@ -193741,7 +193830,16 @@
    "group": "b5-extremt",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.oerhört.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "b6b80013",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.otrogen.1",
@@ -193808,7 +193906,16 @@
    "motif": "mana.trivsam",
    "group": "b5-trivsam",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.mysig.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "005922b4",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.medborgarservice.1",
@@ -193877,7 +193984,7 @@
    "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.61.0",
+    "round": "0.62.0",
     "hash": "4cf2501e",
     "method": "match"
    }
@@ -193935,7 +194042,7 @@
    "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.61.0",
+    "round": "0.62.0",
     "hash": "06dbe79b",
     "method": "match"
    }
@@ -193950,7 +194057,7 @@
    "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.61.0",
+    "round": "0.62.0",
     "hash": "09b3ca1e",
     "method": "match"
    }
@@ -193976,7 +194083,14 @@
    "group": "b5-övertag",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "9f95d86b",
+    "method": "match",
+    "waiver": "Rätt bild men låg säkerhet (fördel mitt i en strid är svår att visa); godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
   },
   {
    "senseId": "s.kringvärn.1",
@@ -193987,7 +194101,7 @@
    "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.61.0",
+    "round": "0.62.0",
     "hash": "3bcf3b0a",
     "method": "match"
    }
@@ -194070,7 +194184,17 @@
    "motif": "mana.arkeologi",
    "group": "b5-arkeologi",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.arkeologisk.1"
+   ],
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "2ab6c305",
+    "method": "match",
+    "waiver": "Rätt bild men låg säkerhet; synonympar med arkeologisk (conf.py) enligt produktägarens beslut 2026-11-26, godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
   },
   {
    "senseId": "s.arkeologisk.1",
@@ -194078,7 +194202,17 @@
    "motif": "mana.arkeologisk",
    "group": "b5-arkeologisk",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.arkeologi.1"
+   ],
+   "blindTest": {
+    "result": "waived",
+    "round": "b5-produktagare-2026-11-26",
+    "hash": "186ae84e",
+    "method": "match",
+    "waiver": "Rätt bild men låg säkerhet; synonympar med arkeologi (conf.py) enligt produktägarens beslut 2026-11-26, godkänd av produktägaren 2026-11-26 som symbolbild (B5, underkänd också i sista omgången)."
+   }
   },
   {
    "senseId": "s.lösfynd.1",
@@ -194089,7 +194223,7 @@
    "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.61.0",
+    "round": "0.62.0",
     "hash": "c57de2c1",
     "method": "match"
    }
@@ -194101,7 +194235,16 @@
    "group": "b5-datering",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.absolut-datering.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "8e599ed8",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.tyda-på.1",
@@ -196374,7 +196517,16 @@
    "motif": "conc.repetition.2",
    "group": "konsert-rep",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.repetera.2"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.62.0",
+    "hash": "c25dab69",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.repetera.2",
@@ -196382,7 +196534,10 @@
    "motif": "conc.repetera.2",
    "group": "konsert-rep",
    "quiz": false,
-   "animated": true
+   "animated": true,
+   "confusableWith": [
+    "s.repetition.2"
+   ]
   },
   {
    "senseId": "s.replokal.1",
