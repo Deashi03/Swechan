@@ -267,6 +267,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'mana.': () => import('./manualMilArch').then((m) => m.MANUAL_MILARCH_MOTIFS),
   'musb.': () => import('./musicBasics').then((m) => m.MUSB_MOTIFS),
   'instr.': () => import('./instruments').then((m) => m.INSTR_MOTIFS),
+  'musg.': () => import('./musicGenres').then((m) => m.MUSG_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
