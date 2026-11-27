@@ -78,6 +78,9 @@ const WALK_A = pose({ n: [1, -68], aL: [[-6, -56], [-11, -45]], aR: [[7, -56], [
 const WALK_B = pose({ n: [1, -68], aL: [[6, -56], [11, -46]], aR: [[-5, -56], [-10, -45]], lL: [[6, -21], [10, -1]], lR: [[-5, -21], [-10, -1]] });
 // Deadlift: start hinged with a straight back, end standing tall; hands straight below the shoulders.
 const DL_START = pose({ h: [-7, -27], n: [15, -41], aL: [[15, -29], [14, -16]], aR: [[16, -29], [15, -16]], lL: [[11, -17], [2, -1]], lR: [[12, -17], [4, -1]] });
+// Deadlift start for the poster: shins nearly upright, hips above the knees, straight back ≈40°, arms hanging straight
+// down to the bar at mid-shin height (bar centre = plate centre, plate radius 10.7 standing on the floor).
+const DL_LOW = pose({ h: [-5.9, -26], n: [14, -42.7], aL: [[12.6, -27.7], [12.6, -10.7]], aR: [[14, -27.7], [14, -10.7]], lL: [[11.9, -19.6], [3, -1]], lR: [[13.9, -19.1], [5.4, -1]] });
 const DL_END = pose({ h: [2, -42], n: [3, -68], aL: [[4, -56], [5, -43]], aR: [[5, -56], [6, -43]], lL: [[3, -21], [2, -1]], lR: [[4, -21], [4, -1]] });
 // Bench press: lying on the bench, feet on the floor; bar on the chest → arms straight up.
 const BP_DOWN = pose({ h: [-12, -22], n: [12, -22], aL: [[1, -24], [8, -31]], aR: [[2, -24], [9, -31]], lL: [[-30, -20], [-33, -1]], lR: [[-29, -20], [-31, -1]] });
@@ -234,12 +237,12 @@ export const TRNG_MOTIFS: Record<string, Svg> = {
   // kettlebell: the round iron weight with a handle swings forward and up between the legs (moves)
   'trng.kettlebell': all(gym(), swap('trng-kb', fz(54, 106, 0.95, KB_LOW, { top: C.purple, leg: C.navy, sleeves: false, front: kettlebell(1.5, -24, 0.5, HL) }),
     fz(54, 106, 0.95, KB_HIGH, { top: C.purple, leg: C.navy, sleeves: false, front: kettlebell(25, -55, 0.5, HL) }), 1.4), swish('M58 82 C70 76 76 66 78 56')),
-  // marklyft: hinge with a straight back → standing tall with the bar at the thighs (moves); a straight-back line
-  'trng.marklyft': all(gym(), swap('trng-mark', all(fz(48, 108, 1, DL_START, { top: C.red, leg: C.navy, sleeves: false }), plate(63, 92, 12, HL), line('M41 81 L63 67', C.green, 2, '3 3')),
-    all(fz(48, 108, 1, DL_END, { top: C.red, leg: C.navy, sleeves: false }), plate(54, 65, 12, HL)), 2.2)),
-  // bänkpress: lying on the bench and pushing the bar from the chest up to straight arms (moves)
-  'trng.bänkpress': all(gym(), bench(54, 110, 46, 26), swap('trng-bank', all(fz(56, 110, 1, BP_DOWN, { top: C.navy, leg: C.dark, sleeves: false }), plate(64.5, 79, 10, HL)),
-    all(fz(56, 110, 1, BP_UP, { top: C.navy, leg: C.dark, sleeves: false }), plate(66.5, 63, 10, HL)), 2), line('M92 52 L92 30 M86 36 L92 28 L98 36', HL, 2.4)),
+  // marklyft (profile): poster = the low position – bar at the shins, straight arms, hips back, straight back (dashed line); moves up to standing
+  'trng.marklyft': all(gym(110), swap('trng-mark', all(plate(56.9, 60.6, 12.3, HL), fz(50, 110, 1.15, DL_END, { top: C.red, leg: C.denim, sleeves: false })),
+    all(plate(68.4, 92.9, 17.1, HL), fz(46, 110, 1.6, DL_LOW, { top: C.red, leg: C.denim, sleeves: false }), line('M33 64 L65 38', C.green, 2, '3 3')), 2.2)),
+  // bänkpress (profile): lying on the bench, feet on the floor, bar above the chest on straight arms (poster); moves from the chest
+  'trng.bänkpress': all(gym(110), bench(50, 112, 56, 22), swap('trng-bank', all(plate(62.8, 74.8, 10, HL), fz(52, 112, 1.2, BP_DOWN, { top: C.navy, leg: C.dark, sleeves: false })),
+    all(plate(65.2, 55.6, 11, HL), fz(52, 112, 1.2, BP_UP, { top: C.navy, leg: C.dark, sleeves: false })), 2), line('M104 60 L104 38 M98 44 L104 36 L110 44', HL, 2.4)),
   // armhävning: straight body, down to the floor and up again (moves); hands and toes stay put
   'trng.armhävning': all(rect(0, 0, 120, 120, '#eef1f5', 0, null), mat(62, 112, 100), swap('trng-arm', fz(64, 111, 0.95, PU_DOWN, { top: C.orange, leg: C.navy, sleeves: false }), fz(64, 111, 0.95, PU_UP, { top: C.orange, leg: C.navy, sleeves: false }), 1.6),
     line('M22 108 L81 87', C.green, 1.6, '3 3')),
