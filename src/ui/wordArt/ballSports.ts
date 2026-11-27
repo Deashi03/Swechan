@@ -228,10 +228,14 @@ export const BALLSP_MOTIFS: Record<string, Svg> = {
   // straff (sport): only the shooter, the ball on the spot and the keeper in the goal
   'ballsp.straff.2': all(outdoor(66), fgoal(20, 36, 80, 92), pl(60, 92, 0.52, KEEPER, KEEP), ellipse(60, 104, 3, 1.2, C.white, null), fball(60, 100, 5), ring(60, 100, 9), pl(84, 116, 0.62, pose({ ...KICK_BACK, n: [-3, -69], aL: [[-12, -60], [-18, -54]], aR: [[10, -60], [18, -64]] }), KIT_A)),
   // offside: symbol – seen from above, the attacker (orange ring) is past the last defender's line when the pass is played; the flag goes up
-  'ballsp.offside': all(rect(0, 0, 120, 120, '#e6efe2', 0, null), rect(8, 14, 104, 92, GRASS, 2, C.ink, 1.6), line('M8 60 L112 60', C.white, 1.4), rect(44, 14, 32, 10, 'none', 0, C.white, 1.4), rect(52, 8, 16, 6, C.white, 0, C.ink, 1),
-    line('M8 42 L112 42', C.white, 1.6, '4 3'), ...[[40, 42], [80, 46], [60, 20]].map(([x, y]) => circle(x!, y!, 5, C.denim, C.ink, 1.2)), circle(60, 18, 5, C.yellow, C.ink, 1.2),
-    circle(48, 84, 5, C.red, C.ink, 1.2), fball(54, 78, 3), line('M54 78 L70 36', C.ink, 1.4, '3 3'), circle(70, 32, 5, C.red, C.ink, 1.2), ring(70, 32, 9),
-    line('M112 108 L112 86', C.ink, 1.6), path('M112 86 L100 82 L102 90 Z', C.yellow, C.ink, 1), path('M106 84 L100 82 L101 86 Z', C.red, null)),
+  'ballsp.offside': all(rect(0, 0, 120, 120, '#e6efe2', 0, null), rect(6, 10, 92, 106, GRASS, 2, C.ink, 1.6), ...[0, 2, 4].map((k) => rect(6, 10 + k * 21, 92, 10.5, GRASS2, 0, null)), rect(6, 10, 92, 106, 'none', 2, C.white, 1.4),
+    rect(26, 10, 48, 18, 'none', 0, C.white, 1.4), rect(38, 4, 24, 7, C.white, 0, C.ink, 1.2), line('M6 110 L98 110', C.white, 1.4),
+    line('M2 54 L104 54', C.ink, 5.4), line('M2 54 L104 54', HL, 3.4, '8 4'),
+    circle(50, 18, 5, C.yellow, C.ink, 1.2), circle(30, 54, 5.5, C.denim, C.ink, 1.4), circle(74, 54, 5.5, C.denim, C.ink, 1.4),
+    circle(40, 94, 5.5, C.red, C.ink, 1.4), fball(47, 88, 3.2), line('M47 88 L59 46', C.ink, 1.6, '3 3'), arrow(55, 60, 59, 46, C.ink, 2),
+    circle(60, 36, 5.5, C.red, C.ink, 1.4), ring(60, 36, 10),
+    pl(110, 64, 0.42, pose({ aL: [[-7, -56], [-9, -43]], aR: [[6, -80], [8, -94]] }), { top: C.black, leg: C.black, sock: C.black }),
+    line('M113.4 25 L113.4 8', C.ink, 1.6), path('M113.4 8 L101 11 L113.4 15 Z', C.yellow, C.ink, 1), path('M107 9.5 L101 11 L107 12.6 Z', C.red, null)),
 
   // ── 4632 Basketboll ──────────────────────────────────────────────
   // basket: a player jumps and puts the ball in the hoop in a hall
