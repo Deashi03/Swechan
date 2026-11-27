@@ -82,7 +82,6 @@ const KICK = pose({ h: [0, -43], n: [-3, -68], aL: [[-12, -60], [-20, -54]], aR:
 const WHISTLE = pose({ aR: [[9, -58], [4, -73]], aL: [[-10, -60], [-24, -66]] });
 const CARD_UP = pose({ aR: [[9, -80], [11, -93]] });
 const SHAKE_R = pose({ aR: [[10, -58], [21, -55]] });
-const BOW = pose({ h: [0, -42], n: [17, -61], aL: [[19, -49], [20, -36]], aR: [[20, -49], [21, -36]] });
 const SAD = pose({ n: [3, -67], aL: [[-5, -55], [-6, -42]], aR: [[8, -55], [9, -42]] });
 const CARRY = pose({ aL: [[-6, -56], [-8, -44]], aR: [[6, -56], [8, -44]] });
 const HANDS_HIPS = pose({ aL: [[-9, -56], [-4, -44]], aR: [[9, -56], [4, -44]] });
@@ -127,6 +126,17 @@ const sampleCup = (x: number, y: number, s = 1) => at(x, y, s, rect(-6, -14, 12,
 const crowd = (y: number, n = 10, cols: string[] = [CLUB, CLUB2, C.white]) => all(...Array.from({ length: n }, (_, i) => { const x = 6 + i * (108 / (n - 1)); return all(rect(x - 4, y, 8, 10, cols[i % cols.length]!, 3, C.ink, 0.8), circle(x, y - 3, 3.6, C.skin, C.ink, 0.8)); }));
 const bracketLines = (col: string = C.ink) => line('M22 24 L36 24 L36 34 L22 34 M22 54 L36 54 L36 64 L22 64 M22 84 L36 84 L36 94 L22 94 M36 29 L54 29 L54 59 L36 59 M36 89 L54 89 M54 44 L74 44 L74 89 L54 89 M74 66 L88 66', col, 1.6);
 
+// ── Round 2 helpers (used only by the redrawn junior/senior/respekt pictures) ──
+const HANDS_BACK = pose({ n: [2, -67], aL: [[-6, -56], [-9, -45]], aR: [[-5, -56], [-8, -46]] });
+/** Age scale 10 – 15 – 20 – 30 under the three people. */
+const ageScale = () => all(line('M8 102 L114 102', C.ink, 2), ...[[18, '10'], [44, '15'], [70, '20'], [100, '30']].map(([x, t]) => all(line(`M${x} 98 L${x} 106`, C.ink, 1.6), num(x as number, 116, t as string, 9))));
+/** A child with a ball. */
+const kidFig = () => all(fz(18, 92, 0.42, pose({ aR: [[7, -56], [10, -46]] }), { top: C.yellow, leg: C.navy, shorts: true, sleeves: false }), ball(25, 88, 3));
+/** A teenager with headphones and a sports bag. */
+const teenFig = (hl: boolean) => all(fz(50, 92, 0.66, pose({}), { top: hl ? HL : C.sky, leg: C.navy, hs: 'pony' }), at(50, 92, 0.66, path('M-9 -80 C-9 -94 9 -94 9 -80', 'none', C.dark, 2.4), rect(-11, -82, 4, 7, C.dark, 1.5, null), rect(7, -82, 4, 7, C.dark, 1.5, null)));
+/** A grown-up player with a beard. */
+const adultFig = (hl = false) => all(fz(90, 92, 0.86, pose({}), { top: hl ? HL : C.green, leg: C.navy }), at(90, 92, 0.86, path('M-7 -76 C-6 -68 6 -68 7 -76 C4 -72 -4 -72 -7 -76 Z', C.hair, C.ink, 0.8)));
+
 export const SPORG_MOTIFS: Record<string, Svg> = {
   // ── 4661 Föreningar och klubbar ─────────────────────────────────────
   // klubb: children and adults in the same shirts with the same badge, under a banner with that badge
@@ -149,12 +159,13 @@ export const SPORG_MOTIFS: Record<string, Svg> = {
   'sporg.förbund.2': all(rect(0, 0, 120, 120, '#eef3f7', 0, null), line('M60 36 L18 78 M60 36 L46 78 M60 36 L74 78 M60 36 L102 78', HL, 2.2),
     shield(60, 26, 1.5, HL, C.white), ball(60, 24, 3.4), shield(18, 88, 0.9, CLUB), shield(46, 88, 0.9, RIVAL, C.white), shield(74, 88, 0.9, C.red, C.white), shield(102, 88, 0.9, C.purple, CLUB2),
     ...[18, 46, 74, 102].map((x) => ball(x, 87, 2.4))),
-  // licens (idrott): a player shows a licence card with photo, badge and a stamp at the registration desk
-  'sporg.licens.2': all(room(), rect(66, 72, 52, 8, C.tan, 1, C.ink, 1.4), line('M72 80 L72 112 M112 80 L112 112', C.brown, 3),
-    fz(34, 110, 0.9, pose({ aR: [[11, -62], [24, -66]] }), { top: C.red, leg: C.white, shorts: true, sleeves: false }),
-    at(70, 36, 1, rect(-16, -11, 32, 22, C.white, 2, HL, 2.2), rect(-13, -7, 10, 13, C.sky, 1, C.ink, 1), circle(-8, -3, 2.6, C.skin, null), ball(6, -3, 3.4), line('M1 4 L12 4', C.grey, 1.3)),
-    at(98, 48, 1, circle(0, 0, 8, 'none', C.green, 2), line('M-4 0 L-1 3 L4 -3', C.green, 2))),
-
+  // licens (idrott): at the start area the official checks the athlete's licence card (federation shield, ball) and ticks the list
+  'sporg.licens.2': all(rect(0, 0, 120, 120, '#e3f1fa', 0, null), rect(0, 92, 120, 28, '#a9d18e', 0, null), line('M0 92 L120 92', C.ink, 1.2),
+    path('M6 92 L6 30 C6 14 114 14 114 30 L114 92', 'none', C.ink, 6), path('M6 92 L6 30 C6 14 114 14 114 30 L114 92', 'none', '#f2c14e', 3.6),
+    rect(70, 74, 40, 6, C.tan, 1, C.ink, 1.3), line('M74 80 L74 110 M106 80 L106 110', C.brown, 2.6),
+    fz(98, 110, 0.72, pose({ aL: [[-8, -60], [-14, -50]], aR: [[6, -58], [2, -50]] }), { top: C.yellow, leg: C.dark, hs: 'cap' }), at(84, 64, 0.8, clipboard(0, 0), check(2, 0, 0.5)),
+    fz(30, 110, 0.86, pose({ aR: [[11, -62], [24, -66]] }), { top: C.red, leg: C.white, shorts: true, sleeves: false, front: rect(-6, -60, 12, 9, C.white, 1, C.ink, 0.8) }),
+    at(54, 40, 1, rect(-15, -11, 30, 22, C.white, 2, HL, 2.4), shield(-6, 1, 0.55, HL, C.white), ball(-6, 0, 2.2), ball(7, -3, 3), line('M2 5 L12 5', C.grey, 1.3))),
   // ── 4662 Tränare och ledare ─────────────────────────────────────────
   // ledare: an adult with a cap walks first; a line of children follows
   'sporg.ledare': all(pitch(), fz(90, 106, 0.92, pose({ ...WALK_A, aL: [[-10, -62], [-22, -66]] }), { top: HL, leg: C.navy, hs: 'cap' }),
@@ -187,10 +198,11 @@ export const SPORG_MOTIFS: Record<string, Svg> = {
   'sporg.träningsgrupp': all(hall(), ellipse(60, 100, 54, 14, 'none', HL, 2.4),
     ...[18, 38, 82, 102].map((x, i) => fz(x, 102, 0.56, pose({ aL: [[-8, -66], [-12, -78]], aR: [[8, -66], [12, -78]] }), { top: [CLUB, C.red, C.purple, C.denim][i]!, leg: C.navy, shorts: true, sleeves: false, hs: i % 2 ? 'pony' : 'short' })),
     fz(60, 108, 0.84, pose({ aL: [[-8, -66], [-12, -78]], aR: [[8, -66], [12, -78]] }), { top: C.dark, leg: C.dark, hs: 'cap' })),
-  // nivå (hur bra): three steps, a figure on each; the middle step (the level) is marked
-  'sporg.nivå.2': all(rect(0, 0, 120, 120, '#f0f2f6', 0, null), ground(), rect(8, 92, 32, 20, C.grey2, 1, C.ink, 1.4), rect(44, 72, 32, 40, HL, 1, C.ink, 1.6), rect(80, 52, 32, 60, C.grey2, 1, C.ink, 1.4),
-    greyed(fz(24, 92, 0.5, pose({}), {}), fz(96, 52, 0.5, pose({}), {})), fz(60, 72, 0.5, pose({}), { top: C.sky, leg: C.navy }),
-    star(24, 102, 4.4, C.white), star(54, 88, 4.4, C.white), star(66, 88, 4.4, C.white), star(84, 70, 4.4, C.white), star(96, 70, 4.4, C.white), star(108, 70, 4.4, C.white)),
+  // nivå (hur bra): three training groups on three steps with one, two and three stars; one player moves up a step
+  'sporg.nivå.2': all(rect(0, 0, 120, 120, '#f0f2f6', 0, null), ground(), rect(4, 92, 36, 20, C.grey2, 1, C.ink, 1.4), rect(42, 76, 36, 36, C.grey2, 1, C.ink, 1.4), rect(80, 60, 36, 52, C.grey2, 1, C.ink, 1.4),
+    star(22, 104, 4.4, C.gold), star(54, 92, 4.4, C.gold), star(66, 92, 4.4, C.gold), star(86, 78, 4.4, C.gold), star(98, 78, 4.4, C.gold), star(110, 78, 4.4, C.gold),
+    ...[10, 22].map((x) => fz(x, 92, 0.3, pose({}), { top: C.sky, leg: C.navy })), ...[62, 72].map((x) => fz(x, 76, 0.3, pose({}), { top: C.green, leg: C.navy })), ...[88, 100, 110].map((x) => fz(x, 60, 0.3, pose({}), { top: C.purple, leg: C.navy })),
+    fz(34, 92, 0.3, pose({}), { top: C.sky, leg: C.navy, grey: true }), line('M34 62 C36 46 44 44 48 52', HL, 2.4, '4 3'), arrow(46, 50, 49, 57, HL, 2.6), fz(50, 76, 0.34, ARMS_UP, { top: HL, leg: C.navy, mouth: 'open' })),
   // träningstid: the week schedule on the hall wall; one evening block is the group's time, a clock beside
   'sporg.träningstid': all(hall(), calendar(10, 14, 76, 60, 7, 4), ...[[1, 1], [4, 2], [2, 3]].map(([c, r]) => { const [x, y, w, h] = cell(10, 14, 76, 60, 7, 4, c!, r!); return rect(x + 1, y + 1, w - 2, h - 2, C.grey2, 1, null); }),
     (() => { const [x, y, w, h] = cell(10, 14, 76, 60, 7, 4, 3, 1); return rect(x + 0.5, y + 0.5, w - 1, h - 1, HL, 1, C.ink, 1.2); })(),
@@ -203,12 +215,12 @@ export const SPORG_MOTIFS: Record<string, Svg> = {
   'sporg.lagsport': all(pitch(), line('M30 40 C44 30 62 30 72 44', HL, 2, '4 3'), line('M78 54 C92 64 94 80 86 92', HL, 2, '4 3'), line('M78 98 C60 108 40 104 30 92', HL, 2, '4 3'),
     fz(24, 98, 0.62, KICK, { top: CLUB, leg: C.white, shorts: true, sleeves: false, badge: CLUB2 }), fz(72, 72, 0.5, pose({}), { top: CLUB, leg: C.white, shorts: true, sleeves: false, badge: CLUB2 }),
     fz(96, 108, 0.6, RUN_A, { top: CLUB, leg: C.white, shorts: true, sleeves: false, badge: CLUB2, hs: 'pony' }), fz(48, 66, 0.44, RUN_B, { top: CLUB, leg: C.white, shorts: true, sleeves: false, badge: CLUB2 }), ball(30, 40, 4)),
-  // junior: three heights – child, teenager, adult; the teenager (in the middle) is the one marked
-  'sporg.junior': all(rect(0, 0, 120, 120, '#eef4ee', 0, null), ground(), greyed(fz(18, 110, 0.5, pose({}), {}), fz(100, 110, 1.0, pose({}), {})),
-    fz(58, 110, 0.78, pose({ aR: [[8, -60], [14, -48]] }), { top: HL, leg: C.navy, hs: 'pony' }), medal(66, 72, 0.6, C.silver), ellipse(58, 112, 18, 3, 'none', HL, 2)),
-  // senior (i idrott): the same three heights – the grown-up player (tallest) is the one marked
-  'sporg.senior.2': all(rect(0, 0, 120, 120, '#eef4ee', 0, null), ground(), greyed(fz(18, 110, 0.5, pose({}), {}), fz(56, 110, 0.76, pose({}), { hs: 'pony' })),
-    fz(96, 110, 1.0, pose({ aR: [[8, -60], [14, -48]] }), { top: HL, leg: C.navy }), ellipse(96, 112, 20, 3, 'none', HL, 2)),
+  // junior: one age scale under a child, a teenager (headphones) and an adult (beard); the teenager and the teen years are marked
+  'sporg.junior': all(rect(0, 0, 120, 120, '#eef4ee', 0, null), ageScale(), rect(32, 99, 34, 6, HL, 2, C.ink, 1),
+    greyed(kidFig(), adultFig()), teenFig(true), ellipse(50, 92, 14, 2.6, 'none', HL, 2)),
+  // senior (i idrott): the same age scale and people; the adult and the years from 20 upwards are marked
+  'sporg.senior.2': all(rect(0, 0, 120, 120, '#eef4ee', 0, null), ageScale(), rect(68, 99, 46, 6, HL, 2, C.ink, 1), arrow(108, 102, 116, 102, HL, 2.2),
+    greyed(kidFig(), teenFig(false)), adultFig(true), ellipse(90, 92, 16, 2.6, 'none', HL, 2)),
   // elitidrott: the narrow top of the pyramid – one athlete with a trophy on the peak (marked)
   'sporg.elitidrott': all(rect(0, 0, 120, 120, '#eef1f8', 0, null), path('M60 30 L110 110 L10 110 Z', C.grey2, C.ink, 1.6), path('M60 30 L72 50 L48 50 Z', HL, C.ink, 1.6),
     ...[24, 38, 52, 66, 80, 96].map((x) => circle(x, 102, 3, C.grey, null)), ...[38, 52, 66, 82].map((x) => circle(x, 84, 3, C.grey, null)),
@@ -257,9 +269,11 @@ export const SPORG_MOTIFS: Record<string, Svg> = {
   'sporg.liga': all(rect(0, 0, 120, 120, '#f2f4f7', 0, null), rect(10, 10, 72, 100, C.white, 4, HL, 2.4),
     ...[CLUB, RIVAL, C.red, C.purple, C.orange, C.sky, C.yellow].map((c, i) => all(shield(22, 22 + i * 13.5, 0.42, c, C.white), rect(32, 18 + i * 13.5, 44 - i * 5, 6, i === 0 ? HL : C.grey2, 2, null), line(`M14 ${f1(28.5 + i * 13.5)} L78 ${f1(28.5 + i * 13.5)}`, C.grey2, 0.8))),
     calendar(88, 30, 26, 30, 3, 3), ...[0, 1, 2].flatMap((c) => [0, 1, 2].map((r) => { const [x, y, w, h] = cell(88, 30, 26, 30, 3, 3, c, r); return ball(x + w / 2, y + h / 2, 2.2); }))),
-  // mästerskap: the big cup on a globe, flags of many countries around it
-  'sporg.mästerskap': all(rect(0, 0, 120, 120, '#eef1f8', 0, null), circle(60, 84, 26, '#bfe3f5', C.ink, 1.6), path('M42 72 C50 66 56 76 62 70 C68 64 76 70 80 76 M40 92 C48 88 56 98 66 92 C72 88 78 94 82 90', 'none', '#6fb36a', 3),
-    trophy(60, 58, 1.6), ...[[10, C.red, C.white], [26, '#2a63b0', C.yellow], [86, C.yellow, C.green], [102, C.white, C.red]].map(([x, a, b]) => all(pole(x as number, 18, 62), rect(x as number, 18, 14, 10, a as string, 0, C.ink, 1), rect(x as number, 23, 14, 5, b as string, 0, null), rect(x as number, 18, 14, 10, 'none', 0, C.ink, 1))), star(60, 12, 5, C.gold)),
+  // mästerskap: a big event – an arena with flags of many countries, groups leading to one final, the cup with a star on top
+  'sporg.mästerskap': all(rect(0, 0, 120, 120, '#eef1f8', 0, null), ellipse(60, 92, 56, 24, '#c9ced6', C.ink, 1.6), ellipse(60, 94, 44, 16, '#7fbf6a', C.ink, 1.2),
+    ...[[8, C.red, C.white], [22, '#2a63b0', C.yellow], [36, C.green, C.white], [84, C.yellow, C.red], [98, C.white, C.red], [112, '#2a63b0', C.white]].map(([x, a, b]) => all(pole(x as number, 46, 76), rect(x as number, 46, 10, 7, a as string, 0, C.ink, 0.8), rect(x as number, 49.5, 10, 3.5, b as string, 0, null), rect(x as number, 46, 10, 7, 'none', 0, C.ink, 0.8))),
+    ...[[28, 86], [28, 100], [92, 86], [92, 100]].map(([x, y]) => rect(x! - 6, y! - 4, 12, 8, C.white, 1.5, C.ink, 1)), line('M34 86 L42 86 L42 100 L34 100 M42 93 L52 93 M86 86 L78 86 L78 100 L86 100 M78 93 L68 93', C.ink, 1.4),
+    rect(52, 88, 16, 10, HL, 2, C.ink, 1.2), line('M60 88 L60 50', HL, 2, '3 2'), trophy(60, 46, 1.2), star(60, 10, 6, C.gold)),
   // landslag: the national team in a row with the national flag behind them
   'sporg.landslag': all(pitch(), flagSE(36, 10, 48, 30), pole(36, 10, 64),
     ...[20, 42, 64, 86, 108].map((x, i) => fz(x, 108, 0.62, pose({ aR: [[6, -60], [2, -56]] }), { top: C.yellow, leg: '#2a63b0', shorts: true, sleeves: false, hs: i % 2 ? 'pony' : 'short' }))),
@@ -289,9 +303,11 @@ export const SPORG_MOTIFS: Record<string, Svg> = {
   'sporg.linjedomare': all(pitch(), line('M10 80 L110 80', C.white, 2.6), fz(56, 104, 0.8, pose({ aR: [[10, -70], [16, -84]] }), { top: C.yellow, leg: REF, shorts: true }),
     at(56, 104, 0.8, line('M16 -84 L21 -106', C.ink, 2.4), g('translate(21 -106) rotate(14)', rect(0, 0, 18, 13, C.red, 0, C.ink, 1), rect(0, 0, 9, 6.5, C.yellow, 0, null), rect(9, 6.5, 9, 6.5, C.yellow, 0, null), rect(0, 0, 18, 13, 'none', 0, C.ink, 1))),
     greyed(fz(20, 112, 0.5, RUN_A, {})), ball(102, 108, 3.4)),
-  // tillåten: the kick with the foot gets a big green tick; a grey hand on the ball is the small reference
-  'sporg.tillåten': all(rect(0, 0, 120, 120, '#eef6ee', 0, null), ground(), fz(40, 110, 0.9, KICK, { top: CLUB, leg: C.white, shorts: true, sleeves: false }), ball(70, 92, 5),
-    check(84, 30, 2.1), greyed(fz(102, 110, 0.5, pose({ h: [0, -40], n: [6, -64], aL: [[12, -54], [20, -46]], aR: [[13, -55], [21, -47]] }), {}), ball(113, 86, 3.6)), cross(104, 44, 0.7)),
+  // tillåten: a clean slide tackle on the ball under a big green tick; behind, the referee waves play on with both arms forward
+  'sporg.tillåten': all(pitch(), fz(104, 96, 0.56, pose({ aL: [[9, -62], [21, -64]], aR: [[10, -60], [22, -60]] }), { top: REF, leg: REF, shorts: true }),
+    fz(82, 110, 0.7, RUN_B, { top: RIVAL, leg: C.white, shorts: true, sleeves: false }),
+    fz(34, 110, 0.8, pose({ h: [0, -10], n: [-14, -32], aL: [[-22, -22], [-26, -6]], aR: [[-6, -30], [4, -36]], lL: [[18, -7], [36, -4]], lR: [[10, -14], [4, -2]] }), { top: CLUB, leg: C.white, shorts: true, sleeves: false }),
+    ball(66, 106, 4.4), line('M52 108 L60 108 M54 104 L60 104', HL, 1.6), check(50, 38, 2.2)),
   // tidtagare: at the table beside the court, the timekeeper stops the match clock with one hand on the button
   'sporg.tidtagare': all(hall(), rect(30, 10, 60, 24, C.black, 3, C.ink, 1.6), num(60, 29, '12:34', 15, C.yellow),
     fz(60, 96, 0.7, pose({ h: [0, -26], n: [0, -52], aL: [[-6, -42], [-2, -32]], aR: [[10, -44], [20, -34]], lL: [[14, -26], [14, -1]], lR: [[15, -26], [16, -1]] }), { top: C.white, leg: C.dark, hs: 'long' }),
@@ -346,21 +362,23 @@ export const SPORG_MOTIFS: Record<string, Svg> = {
     fz(12, 110, 0.82, CARRY, { top: C.red, leg: C.dark }), fz(108, 110, 0.82, CARRY, { top: C.red, leg: C.dark })),
 
   // ── 4667 Idrottens etik och fair play ───────────────────────────────
-  // fair play: a player helps a fallen opponent up – hand in hand, smiles
-  'sporg.fair-play': all(pitch(), fz(80, 108, 0.62, SIT_KNEE, { top: RIVAL, leg: C.white, shorts: true, sleeves: false }),
-    fz(40, 110, 0.95, pose({ h: [0, -42], n: [6, -66], aR: [[16, -54], [27, -48]] }), { top: CLUB, leg: C.white, shorts: true, sleeves: false }), circle(66, 64, 6, 'none', HL, 2.2), heart(64, 24, 7)),
-  // respekt (hänsyn): before the bout two players bow to each other on the mat
-  'sporg.respekt.2': all(room('#f1ead9', '#e9e1c6', 98), rect(4, 98, 112, 8, '#cfe0b4', 1, C.ink, 1.2),
-    fz(24, 104, 0.8, BOW, { top: C.white, leg: C.white, shorts: false }), g('translate(120 0) scale(-1 1)', fz(24, 104, 0.8, BOW, { top: '#3d5aa8', leg: '#3d5aa8' })),
-    path('M50 30 C54 22 66 22 70 30', 'none', HL, 2.4), arrow(66, 27, 70, 31, HL, 2.2), path('M70 40 C66 48 54 48 50 40', 'none', HL, 2.4), arrow(54, 43, 50, 39, HL, 2.2)),
+  // fair play: an opponent lies injured, so the player with the ball kicks it out over the side line on purpose (arrow, tick, heart)
+  'sporg.fair-play': all(pitch(), line('M106 80 L106 120', C.white, 3), fz(40, 112, 0.6, LIE, { top: RIVAL, leg: C.white, shorts: true, sleeves: false, mouth: 'grit' }), line('M46 100 l2 -8 M52 102 l6 -6', C.red, 2),
+    fz(66, 110, 0.86, KICK, { top: CLUB, leg: C.white, shorts: true, sleeves: false }), line('M94 92 C102 80 108 80 114 88', HL, 2.4, '4 3'), arrow(110, 84, 115, 90, HL, 2.6), ball(115, 100, 4),
+    check(92, 30, 1.2), heart(64, 24, 7)),
+  // respekt (hänsyn): the referee shows a decision; the player stands still with hands behind the back and nods, the teammates do the same
+  'sporg.respekt.2': all(pitch(), fz(22, 110, 0.92, pose({ aR: [[11, -64], [24, -70]] }), { top: REF, leg: REF, shorts: true }),
+    g('translate(120 0) scale(-1 1)', fz(54, 110, 0.88, HANDS_BACK, { top: CLUB, leg: C.white, shorts: true, sleeves: false, mouth: 'flat' }), fz(30, 106, 0.7, HANDS_BACK, { top: CLUB, leg: C.white, shorts: true, sleeves: false, mouth: 'flat' }), fz(12, 104, 0.62, HANDS_BACK, { top: CLUB, leg: C.white, shorts: true, sleeves: false, mouth: 'flat' })),
+    path('M58 20 C62 14 70 14 72 20', 'none', HL, 2.2), arrow(70, 18, 72, 23, HL, 2.2), path('M84 32 C87 27 93 27 95 32', 'none', HL, 1.8), path('M102 38 C104 34 110 34 111 38', 'none', HL, 1.6)),
   // fusk: a runner cuts straight across the inside of the track while the others run around the bend
   'sporg.fusk': all(rect(0, 0, 120, 120, '#e3f1fa', 0, null), path('M10 110 L10 60 C10 20 110 20 110 60 L110 110', 'none', '#d0694f', 16), line('M10 110 L10 60 C10 20 110 20 110 60 L110 110', C.white, 0.8, '3 3'),
     rect(26, 40, 68, 72, '#7fbf6a', 0, null), greyed(fz(20, 50, 0.4, RUN_A, {}), fz(100, 44, 0.4, RUN_B, {})),
     line('M24 96 L84 66', HL, 2.4, '4 3'), fz(62, 92, 0.6, RUN_A, { top: HL, leg: C.navy, shorts: true, sleeves: false }), cross(98, 92, 0.9)),
-  // osportslig: a player mocks the losing opponent (thumbs down, tongue out); the opponent hangs his head
-  'sporg.osportslig': all(pitch(), greyed(fz(84, 108, 0.82, SAD, { mouth: 'sad' })),
-    fz(36, 108, 0.95, pose({ aR: [[11, -60], [22, -56]], aL: [[-8, -56], [-4, -44]] }), { top: C.red, leg: C.white, shorts: true, sleeves: false, mouth: 'open' }),
-    at(58, 56, 1, rect(-3, -4, 7, 8, C.skin, 2, C.ink, 1), rect(-1, 3, 3, 7, C.skin, 1.5, C.ink, 1)), cross(36, 18, 1)),
+  // osportslig: on the court a player slams the stick into the floor and shouts at the referee; a red cross over the player
+  'sporg.osportslig': all(hall(), fz(94, 110, 0.84, pose({ aL: [[-8, -56], [-10, -44]] }), { top: REF, leg: REF, shorts: true, mouth: 'flat' }),
+    fz(40, 110, 0.95, pose({ aR: [[12, -58], [20, -46]], aL: [[-10, -66], [-18, -76]] }), { top: C.red, leg: C.white, shorts: true, sleeves: false, mouth: 'open' }),
+    line('M59 66 L72 108', C.ink, 3.6), line('M59 66 L72 108', C.white, 2), path('M70 106 L80 110 L78 112 L68 110 Z', C.dark, C.ink, 1), line('M64 104 l-6 -4 M82 104 l6 -4 M74 100 l0 -6', HL, 2),
+    path('M58 26 L66 22 L64 30 L74 28 L68 36 L76 40', 'none', C.red, 2.4), cross(40, 12, 1.1)),
   // förlorare: the player who lost sits head down on the bench; the winners cheer in grey behind
   'sporg.förlorare': all(pitch(), greyed(fz(86, 92, 0.5, ARMS_UP, { mouth: 'open' }), fz(104, 92, 0.5, ARMS_UP, { mouth: 'open' }), trophy(95, 40, 0.5)),
     rect(14, 86, 52, 5, C.brown, 1, C.ink, 1.2), line('M18 91 L18 108 M62 91 L62 108', C.ink, 2.4),
