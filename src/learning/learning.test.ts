@@ -195,6 +195,11 @@ describe('the answer is never shown in a recall prompt (feedback 0.4)', () => {
     const { entryOccursIn } = await import('../content/morphology');
     const { stripFurigana } = await import('../content/furigana');
     expect(maskAnswer('bestå av: vara gjord av något.', repo.getSense('s.bestå.1')!.entry)).toBe('＿＿＿ av: vara gjord av något.');
+    // case-insensitive, whole words only, multi-word forms across any whitespace (no per-entry regex since 0.63)
+    const fake = { lemma: 'ta hand om', inflection: { kind: 'other' } } as unknown as Parameters<typeof maskAnswer>[1];
+    expect(maskAnswer('Ta  hand om barnen. Tahand om. ta handom', fake)).toBe('＿＿＿ barnen. Tahand om. ta handom');
+    const bok = { lemma: 'bok', inflection: { kind: 'other' } } as unknown as Parameters<typeof maskAnswer>[1];
+    expect(maskAnswer('Bok, bok-bok – men inte bokhylla eller kokbok.', bok)).toBe('＿＿＿, ＿＿＿-＿＿＿ – men inte bokhylla eller kokbok.');
     for (const m of repo.modules) for (const w of m.words) {
       if (w === m.words[0]) await yieldToEventLoop();
       const ref = repo.getSense(w.senseId)!;
