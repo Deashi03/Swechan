@@ -10,7 +10,7 @@
  * Opposites are mirror pictures: funktionell/opraktisk, stilren/dekorativ. No words, letters or brands.
  */
 import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, sparkle, type Svg } from './kit';
-import { HL } from './people';
+import { HL, T } from './people';
 import { greyed } from './blindFix';
 
 // ── Palette and basics ───────────────────────────────────────────────
@@ -320,22 +320,18 @@ export const ARCHD_MOTIFS: Record<string, Svg> = {
     at(88, 50, 1, path('M-12 0 L-14 -26 L-6 -30 L10 -30 L12 0 Z', '#4f9d69', C.ink, 1.5), path('M-14 -26 L-22 -32 L-8 -30 Z', '#4f9d69', C.ink, 1.2), path('M12 -22 C22 -22 22 -6 12 -6', 'none', C.ink, 2.2)),
     at(22, 86, 1, line('M-10 8 L10 -8', C.ink, 2, '3 2'), path('M-12 -2 L-6 -8 M6 8 L12 2', 'none', C.ink, 1.4)), arrow(38, 86, 64, 86, HL, 3),
     at(88, 88, 1, path('M-20 4 L6 4 L22 -2 L6 -6 L-20 -6 Z', '#c9ced4', C.ink, 1.4), rect(-24, -7, 12, 12, WOOD2, 2, C.ink, 1.2))),
-  // stilren (omgång 2): the same living room twice. Left (orange frame): sofa, lamp, table, picture and rug in one calm colour scale with
-  // straight clean lines – several things, so it is not minimalism. Right (grey, crossed out): the same things in clashing patterns and styles.
-  'archd.stilren': all(room('#f4f1ea'),
-    rect(4, 22, 54, 82, '#efe9dd', 2, C.ink, 1.2), rect(4, 92, 54, 12, '#d9cfbd', 0, C.ink, 1),
-    rect(12, 30, 18, 14, '#c9bfa8', 0, C.ink, 1.1), line('M14 40 L20 34 L24 38 L28 33', '#8a9a7a', 1.2),
-    rect(10, 70, 30, 12, '#8a9a7a', 1, C.ink, 1.2), rect(10, 62, 30, 9, '#7a8a6a', 1, C.ink, 1.2), line('M12 82 L12 88 M38 82 L38 88', C.ink, 1.6),
-    rect(16, 89, 36, 4, '#c9bfa8', 0, C.ink, 0.9), rect(42, 76, 12, 3, '#c9bfa8', 0, C.ink, 1), line('M44 79 L44 88 M52 79 L52 88', C.ink, 1.2),
-    line('M50 76 L50 50', C.ink, 1.4), path('M44 50 L56 50 L54 42 L46 42 Z', '#e9e2d0', C.ink, 1.1), rect(36, 32, 16, 8, '#e9e2d0', 0, C.ink, 1),
-    frame(2, 20, 58, 86),
-    greyed(rect(62, 22, 54, 82, '#eee', 2, C.ink, 1.2), rect(62, 92, 54, 12, '#ddd', 0, C.ink, 1),
-      ...range(6).map((i) => line(`M${64 + i * 9} 92 L${68 + i * 9} 104`, '#999', 1.4)),
-      path('M70 30 L82 28 L84 42 L68 44 Z', '#ccc', C.ink, 1.1), circle(76, 36, 3, '#999', null),
-      path('M66 82 C66 62 74 62 80 66 C86 62 96 62 96 82 Z', '#bbb', C.ink, 1.2), ...range(4).map((i) => circle(72 + i * 6, 74, 1.6, '#777', null)), path('M66 82 L64 88 M96 82 L98 88', 'none', C.ink, 1.6),
-      ellipse(106, 78, 7, 3, '#aaa', C.ink, 1), path('M104 81 C100 84 112 85 108 88', 'none', C.ink, 1.2),
-      line('M106 76 C102 66 112 60 104 50', C.ink, 1.3), path('M98 50 C98 40 112 40 112 50 C108 47 102 47 98 50 Z', '#999', C.ink, 1.1), ...range(5).map((i) => line(`M${92 + i * 4} 26 L${92 + i * 4} 38`, '#888', 1.6))),
-    cross(104, 14, 0.9)),
+  // stilren (manuellt spår): two people. Left (orange frame): blazer, shirt, trousers and shoes in one tone with straight clean lines –
+  // everything matches. Right (grey, crossed out): an everyday outfit where stripes, dots, checks and a flowery hat all clash.
+  'archd.stilren': all(room('#f4f1ea'), floor(108),
+    fig(32, 0.98, { top: '#2f4a6a', bottom: '#2f4a6a', mouth: 'smile', armL: [[-13, -48], [-13, -34]], armR: [[13, -48], [13, -34]],
+      front: all(path('M-4 -66 L0 -52 L4 -66 Z', '#c9d6e6', C.ink, 0.9), line('M-4 -66 L-6 -56 L0 -52 M4 -66 L6 -56 L0 -52', '#24394f', 1),
+        line('M0 -52 L0 -34', C.ink, 0.8), circle(0, -46, 0.9, C.ink, null), circle(0, -40, 0.9, C.ink, null), line('M-11 -48 L-5 -48 M11 -48 L5 -48', '#24394f', 0.9)) }, 108),
+    frame(8, 10, 48, 100),
+    greyed(fig(88, 0.98, { top: '#ddd', bottom: '#bbb', mouth: 'smile',
+      front: all(...range(6).map((i) => line(`M-10.5 ${-62 + i * 5} L10.5 ${-62 + i * 5}`, '#666', 1.8)),
+        ...range(5).flatMap((r) => [-6, 5].map((c) => circle(c, -32 + r * 6, 1.4, '#555', null))),
+        ellipse(0, -90, 15, 3, '#999', C.ink, 1.2), path('M-8 -90 L-7 -100 L7 -100 L8 -90 Z', '#999', C.ink, 1.2), ...range(3).map((i) => circle(-4 + i * 4, -95, 1.4, '#555', null)), rect(-12, -38, 24, 3, '#777', 0, null)) }, 108)),
+    cross(108, 16, 0.9)),
   // dekorativ: a plate on the wall full of patterns and flowers, with sparkles; a small grey plain plate on a table
   'archd.dekorativ': all(room('#f4f1ea'), line('M52 10 L60 18 L68 10', C.ink, 1),
     circle(60, 50, 32, C.white, C.ink, 1.6), circle(60, 50, 26, 'none', '#3f6fb5', 2), circle(60, 50, 14, '#f6e3c8', C.ink, 1),
@@ -355,16 +351,21 @@ export const ARCHD_MOTIFS: Record<string, Svg> = {
     greyed(at(98, 96, 1, path('M-14 -8 C-14 2 14 2 14 -8 Z', '#ddd', C.ink, 1.4), path('M-15 -8 C-14 -30 14 -30 15 -8 Z', C.white, C.ink, 1.1), circle(-17, -2, 2, C.white, C.ink, 0.6), circle(18, -1, 2, C.white, C.ink, 0.6)))),
 
   // ── 4566 Hållbar design ────────────────────────────────────────────
-  // hållbarhet (för miljön), omgång 2: a principle, not one sustainable thing – three linked parts (environment with a leaf, people,
-  // economy with coins) joined by green arrows in a circle round a product in the middle.
+  // hållbarhet (för miljön), manuellt spår: a quality measured over time. Top row: the same chair in year 1, 10 (mended with a
+  // screwdriver) and 30 (handed on, a leaf), on a timeline with a long orange bar. Bottom row (grey, crossed out): a cheap chair that
+  // lands on the tip after one year.
   'archd.hållbarhet.2': all(room('#eef6ea'),
-    path('M74 18 A42 42 0 0 1 100 74', 'none', GREEN, 3), path('M95 70 L100 80 L105 69 Z', GREEN, null),
-    path('M84 102 A42 42 0 0 1 36 102', 'none', GREEN, 3), path('M41 97 L32 103 L42 108 Z', GREEN, null),
-    path('M18 76 A42 42 0 0 1 44 18', 'none', GREEN, 3), path('M38 14 L48 18 L40 25 Z', GREEN, null),
-    circle(60, 20, 15, '#d9efcf', C.ink, 1.5), path('M52 26 C50 14 62 8 70 12 C70 22 62 28 52 26 Z', '#6fa45a', C.ink, 1.2), line('M53 25 L66 14', C.ink, 0.9),
-    circle(22, 92, 15, '#f6e3c8', C.ink, 1.5), circle(17, 88, 4, C.skin, C.ink, 1), path('M11 99 C11 92 23 92 23 99 Z', C.orange, C.ink, 1), circle(28, 88, 4, C.skin, C.ink, 1), path('M22 99 C22 92 34 92 34 99 Z', C.denim, C.ink, 1),
-    circle(98, 92, 15, '#f3e9c0', C.ink, 1.5), ...[[92, 98], [100, 98], [96, 92], [104, 92], [100, 86]].map(([x, y]) => all(ellipse(x!, y!, 5, 2.4, C.gold, C.ink, 1), ellipse(x!, y! - 0.6, 3, 1.2, '#f2d27a', null))),
-    at(68, 60, 0.6, chairSide(0, 0, 1, { col: WOOD }))),
+    ...[0, 1, 2].map((i) => rect(4 + i * 38, 6, 36, 50, C.white, 3, C.ink, 1.2)),
+    ...[0, 1, 2].map((i) => at(34 + i * 38, 36, 0.5, chairSide(0, 0, 1, { col: WOOD }))),
+    T(12, 17, '1', 8), T(52, 17, '10', 8), T(90, 17, '30', 8),
+    g('translate(68 44) rotate(40)', rect(-2, -9, 4, 9, C.red, 1.5, C.ink, 0.9), line('M0 0 L0 9', C.silver, 1.8)),
+    path('M104 10 C110 6 116 10 115 17 C109 19 104 15 104 10 Z', '#6fa45a', C.ink, 1), line('M105 11 L114 16', C.ink, 0.7),
+    line('M8 64 L112 64', C.ink, 1.4), ...[22, 60, 98].map((x) => line(`M${x} 61 L${x} 67`, C.ink, 1.4)), rect(8, 60, 104, 8, 'none', 3, HL, 2.4),
+    greyed(rect(4, 76, 36, 38, C.white, 3, C.ink, 1.2), at(32, 98, 0.45, chairSide(0, 0, 1, { col: '#ccc' })), T(12, 86, '1', 8),
+      arrow(44, 95, 64, 95, '#777', 2.4),
+      path('M70 112 L74 84 L106 84 L110 112 Z', '#bbb', C.ink, 1.3), rect(68, 80, 44, 5, '#999', 1, C.ink, 1.1),
+      g('translate(90 80) rotate(30)', line('M-8 0 L-6 -12 M2 0 L4 -12', C.ink, 1.6), rect(-9, -14, 14, 3, '#ccc', 0, C.ink, 1))),
+    cross(54, 108, 0.8)),
   // materialval: a hand chooses a wood sample with a leaf (tick) instead of a grey plastic sample
   'archd.materialval': all(room(), rect(14, 70, 30, 22, '#c99a62', 2, C.ink, 1.4), line('M17 76 C26 74 34 78 41 75 M17 84 C26 82 34 86 41 83', WOOD2, 0.8), path('M24 62 C30 54 40 56 40 62 C34 66 28 66 24 62 Z', '#6fa45a', C.ink, 1),
     greyed(rect(76, 70, 30, 22, '#cfd6dc', 5, C.ink, 1.4)), tick(29, 104, 0.9), qmark(60, 40, 1.2),
