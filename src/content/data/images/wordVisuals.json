@@ -89849,7 +89849,10 @@
     "result": "pass",
     "round": "0.30.0",
     "hash": "3a745e45"
-   }
+   },
+   "confusableWith": [
+    "s.hållbarhet.2"
+   ]
   },
   {
    "senseId": "s.tillväxt.1",
@@ -201257,7 +201260,16 @@
    "motif": "archd.hållbarhet.2",
    "group": "hållbarhet.2",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.hållbar.2"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.63.0",
+    "hash": "95313f85",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.materialval.1",
