@@ -207,6 +207,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.62 – Musik & scenkonst (klar)
 - 42 nya moduler i Kultur & fritid → Musik & scenkonst enligt standard 2, med 447 nya ordbilder varav 146 rörliga. 115 symbolbilder matchningstestade (ett synonympar efter produktägarens beslut). Kvalitetsplanen B5 avslutad i samma release: de sista 100 bildlösa orden har handritade bilder.
 
+## v0.63 – Bildkonst & design (klar)
+- 42 nya moduler i Kultur & fritid → Bildkonst & design enligt standard 2, med 304 nya ordbilder varav 60 rörliga. 89 symbolbilder matchningstestade (två godkända i manuella spåret).
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
