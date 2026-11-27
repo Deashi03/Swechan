@@ -6030,7 +6030,10 @@
    "file": "anim.skaka-hand.1",
    "group": "gest",
    "quiz": false,
-   "reviewStatus": "ai-draft"
+   "reviewStatus": "ai-draft",
+   "confusableWith": [
+    "s.respekt.2"
+   ]
   },
   {
    "senseId": "s.skaka-på-huvudet.1",
@@ -110430,7 +110433,10 @@
    "kind": "illustration",
    "motif": "rekl.åldersgrupp",
    "group": "tilltala.2",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.senior.2"
+   ]
   },
   {
    "senseId": "s.köpvana.1",
@@ -198318,7 +198324,10 @@
    "kind": "illustration",
    "motif": "dance.tävling",
    "group": "dance-street",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.mästerskap.1"
+   ]
   },
   {
    "senseId": "s.respekt.1",
@@ -204236,7 +204245,14 @@
    "motif": "sporg.licens.2",
    "group": "klubb",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.64.0",
+    "hash": "862a63b9",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-27: symbolbild för tävlingslicens godkänd efter manuellt spår; granskaren tog den för medlemskort (s.medlem.1)."
+   }
   },
   {
    "senseId": "s.ledare.1",
@@ -204343,7 +204359,16 @@
    "motif": "sporg.senior.2",
    "group": "träningsgrupp",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.åldersgrupp.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.64.0",
+    "hash": "18bbbe64",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.elitidrott.1",
@@ -204444,7 +204469,16 @@
    "motif": "sporg.mästerskap",
    "group": "turnering",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.tävling.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.64.0",
+    "hash": "10273e49",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.landslag.1",
@@ -204632,7 +204666,16 @@
    "motif": "sporg.respekt.2",
    "group": "fair-play",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.skaka-hand.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.64.0",
+    "hash": "291f76a8",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.fusk.1",
@@ -204646,7 +204689,10 @@
     "round": "0.64.0",
     "hash": "94df90ca",
     "method": "match"
-   }
+   },
+   "confusableWith": [
+    "s.osportslig.1"
+   ]
   },
   {
    "senseId": "s.osportslig.1",
@@ -204654,7 +204700,16 @@
    "motif": "sporg.osportslig",
    "group": "fair-play",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.fusk.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.64.0",
+    "hash": "c7918b8f",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.förlorare.1",
