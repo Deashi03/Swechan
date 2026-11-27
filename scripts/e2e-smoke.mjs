@@ -213,13 +213,13 @@ try {
   // Vardag & hem, Människan & hälsa (0.29), all of Samhälle & institutioner (0.30–0.35), all of Historia & humaniora
   // (0.36–0.41), all of Natur & geografi (0.42–0.47), Matematikens grunder (0.48), Avancerad matematik (0.49), Fysik
   // (0.50), Kemi (0.51), Biologi (0.52), Astronomi & rymd (0.53) Datorer & internet (0.55), Programmering & AI (0.56), Elektronik & energi (0.57), Maskiner &
-  // tillverkning (0.58), Byggnad & infrastruktur (0.59), Transportteknik (0.60), Språk & litteratur (0.61), Musik & scenkonst (0.62) and Bildkonst & design (0.63) are
-  // published, so the planned entry is Kultur & fritid → Sport & träning → Träningens grunder → Uppvärmning och nedvarvning.
+  // tillverkning (0.58), Byggnad & infrastruktur (0.59), Transportteknik (0.60), Språk & litteratur (0.61), Musik & scenkonst (0.62), Bildkonst & design (0.63) and Sport & träning (0.64) are
+  // published, so the planned entry is Kultur & fritid → Spel & hobbyer → Sällskapsspel → Brädspelens delar.
   await page.goto(`${BASE}#/explore`);
   await page.getByRole('link', { name: /Kultur & fritid/ }).first().click();
-  await page.getByRole('link', { name: /Sport & träning/ }).first().click();
-  await page.getByRole('link', { name: /Träningens grunder/ }).first().click();
-  await page.getByRole('link', { name: /^Uppvärmning och nedvarvning/ }).first().click();
+  await page.getByRole('link', { name: /Spel & hobbyer/ }).first().click();
+  await page.getByRole('link', { name: /Sällskapsspel/ }).first().click();
+  await page.getByRole('link', { name: /^Brädspelens delar/ }).first().click();
   assert(await visible(page.getByText('Planerad').first()), 'planned catalog entry shows its status');
   assert(!(await page.getByRole('button', { name: /Starta/ }).isVisible().catch(() => false)), 'planned catalog entry has no start button');
   await page.goto(`${BASE}#/explore`);
