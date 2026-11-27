@@ -320,10 +320,22 @@ export const ARCHD_MOTIFS: Record<string, Svg> = {
     at(88, 50, 1, path('M-12 0 L-14 -26 L-6 -30 L10 -30 L12 0 Z', '#4f9d69', C.ink, 1.5), path('M-14 -26 L-22 -32 L-8 -30 Z', '#4f9d69', C.ink, 1.2), path('M12 -22 C22 -22 22 -6 12 -6', 'none', C.ink, 2.2)),
     at(22, 86, 1, line('M-10 8 L10 -8', C.ink, 2, '3 2'), path('M-12 -2 L-6 -8 M6 8 L12 2', 'none', C.ink, 1.4)), arrow(38, 86, 64, 86, HL, 3),
     at(88, 88, 1, path('M-20 4 L6 4 L22 -2 L6 -6 L-20 -6 Z', '#c9ced4', C.ink, 1.4), rect(-24, -7, 12, 12, WOOD2, 2, C.ink, 1.2))),
-  // stilren: a clean shelf with one vase and one bowl and lots of space; a small grey shelf full of clutter
-  'archd.stilren': all(room('#f4f1ea'), rect(14, 70, 70, 4, WALLW, 0, C.ink, 1.4), vase(34, 70, 1.1, WALLW), bowl(64, 70, 0.8, '#d9d4c8'), rect(14, 100, 70, 4, WALLW, 0, C.ink, 1.4), rect(26, 88, 20, 12, '#c9ced4', 1, C.ink, 1.1),
-    sparkle(90, 40, 4),
-    greyed(rect(88, 74, 28, 2, '#ddd', 0, C.ink, 0.8), ...range(7).map((i) => rect(89 + i * 3.8, 62 - (i % 3) * 3, 3.2, 12 + (i % 3) * 3, ['#bbb', '#999', '#ccc'][i % 3]!, 0.5, C.ink, 0.6)), circle(100, 56, 3, '#aaa', C.ink, 0.6), rect(88, 98, 28, 2, '#ddd', 0, C.ink, 0.8), ...range(5).map((i) => circle(91 + i * 5.5, 94 - (i % 2) * 3, 3, '#bbb', C.ink, 0.6)))),
+  // stilren (omgång 2): the same living room twice. Left (orange frame): sofa, lamp, table, picture and rug in one calm colour scale with
+  // straight clean lines – several things, so it is not minimalism. Right (grey, crossed out): the same things in clashing patterns and styles.
+  'archd.stilren': all(room('#f4f1ea'),
+    rect(4, 22, 54, 82, '#efe9dd', 2, C.ink, 1.2), rect(4, 92, 54, 12, '#d9cfbd', 0, C.ink, 1),
+    rect(12, 30, 18, 14, '#c9bfa8', 0, C.ink, 1.1), line('M14 40 L20 34 L24 38 L28 33', '#8a9a7a', 1.2),
+    rect(10, 70, 30, 12, '#8a9a7a', 1, C.ink, 1.2), rect(10, 62, 30, 9, '#7a8a6a', 1, C.ink, 1.2), line('M12 82 L12 88 M38 82 L38 88', C.ink, 1.6),
+    rect(16, 89, 36, 4, '#c9bfa8', 0, C.ink, 0.9), rect(42, 76, 12, 3, '#c9bfa8', 0, C.ink, 1), line('M44 79 L44 88 M52 79 L52 88', C.ink, 1.2),
+    line('M50 76 L50 50', C.ink, 1.4), path('M44 50 L56 50 L54 42 L46 42 Z', '#e9e2d0', C.ink, 1.1), rect(36, 32, 16, 8, '#e9e2d0', 0, C.ink, 1),
+    frame(2, 20, 58, 86),
+    greyed(rect(62, 22, 54, 82, '#eee', 2, C.ink, 1.2), rect(62, 92, 54, 12, '#ddd', 0, C.ink, 1),
+      ...range(6).map((i) => line(`M${64 + i * 9} 92 L${68 + i * 9} 104`, '#999', 1.4)),
+      path('M70 30 L82 28 L84 42 L68 44 Z', '#ccc', C.ink, 1.1), circle(76, 36, 3, '#999', null),
+      path('M66 82 C66 62 74 62 80 66 C86 62 96 62 96 82 Z', '#bbb', C.ink, 1.2), ...range(4).map((i) => circle(72 + i * 6, 74, 1.6, '#777', null)), path('M66 82 L64 88 M96 82 L98 88', 'none', C.ink, 1.6),
+      ellipse(106, 78, 7, 3, '#aaa', C.ink, 1), path('M104 81 C100 84 112 85 108 88', 'none', C.ink, 1.2),
+      line('M106 76 C102 66 112 60 104 50', C.ink, 1.3), path('M98 50 C98 40 112 40 112 50 C108 47 102 47 98 50 Z', '#999', C.ink, 1.1), ...range(5).map((i) => line(`M${92 + i * 4} 26 L${92 + i * 4} 38`, '#888', 1.6))),
+    cross(104, 14, 0.9)),
   // dekorativ: a plate on the wall full of patterns and flowers, with sparkles; a small grey plain plate on a table
   'archd.dekorativ': all(room('#f4f1ea'), line('M52 10 L60 18 L68 10', C.ink, 1),
     circle(60, 50, 32, C.white, C.ink, 1.6), circle(60, 50, 26, 'none', '#3f6fb5', 2), circle(60, 50, 14, '#f6e3c8', C.ink, 1),
@@ -343,10 +355,16 @@ export const ARCHD_MOTIFS: Record<string, Svg> = {
     greyed(at(98, 96, 1, path('M-14 -8 C-14 2 14 2 14 -8 Z', '#ddd', C.ink, 1.4), path('M-15 -8 C-14 -30 14 -30 15 -8 Z', C.white, C.ink, 1.1), circle(-17, -2, 2, C.white, C.ink, 0.6), circle(18, -1, 2, C.white, C.ink, 0.6)))),
 
   // ── 4566 Hållbar design ────────────────────────────────────────────
-  // hållbarhet (för miljön): the earth with a leaf, and a chair that goes round in a loop of green arrows
-  'archd.hållbarhet.2': all(room('#eef6ea'), circle(60, 60, 22, '#7fb8dc', C.ink, 1.6), path('M46 50 C52 44 58 52 64 48 C70 46 72 56 66 62 C60 66 54 60 48 64 Z', '#6fa45a', null),
-    path('M60 18 C40 18 22 34 22 56', 'none', GREEN, 3.4), path('M18 50 L22 60 L28 50 Z', GREEN, null), path('M98 64 C98 86 80 102 60 102', 'none', GREEN, 3.4), path('M102 70 L98 60 L92 70 Z', GREEN, null),
-    path('M80 16 C92 12 100 20 98 30 C88 32 80 26 80 16 Z', '#6fa45a', C.ink, 1.2), line('M82 18 L96 28', C.ink, 0.8), at(102, 100, 0.34, chairSide(0, 0, 1)), at(16, 36, 0.3, chairSide(0, 0, 1))),
+  // hållbarhet (för miljön), omgång 2: a principle, not one sustainable thing – three linked parts (environment with a leaf, people,
+  // economy with coins) joined by green arrows in a circle round a product in the middle.
+  'archd.hållbarhet.2': all(room('#eef6ea'),
+    path('M74 18 A42 42 0 0 1 100 74', 'none', GREEN, 3), path('M95 70 L100 80 L105 69 Z', GREEN, null),
+    path('M84 102 A42 42 0 0 1 36 102', 'none', GREEN, 3), path('M41 97 L32 103 L42 108 Z', GREEN, null),
+    path('M18 76 A42 42 0 0 1 44 18', 'none', GREEN, 3), path('M38 14 L48 18 L40 25 Z', GREEN, null),
+    circle(60, 20, 15, '#d9efcf', C.ink, 1.5), path('M52 26 C50 14 62 8 70 12 C70 22 62 28 52 26 Z', '#6fa45a', C.ink, 1.2), line('M53 25 L66 14', C.ink, 0.9),
+    circle(22, 92, 15, '#f6e3c8', C.ink, 1.5), circle(17, 88, 4, C.skin, C.ink, 1), path('M11 99 C11 92 23 92 23 99 Z', C.orange, C.ink, 1), circle(28, 88, 4, C.skin, C.ink, 1), path('M22 99 C22 92 34 92 34 99 Z', C.denim, C.ink, 1),
+    circle(98, 92, 15, '#f3e9c0', C.ink, 1.5), ...[[92, 98], [100, 98], [96, 92], [104, 92], [100, 86]].map(([x, y]) => all(ellipse(x!, y!, 5, 2.4, C.gold, C.ink, 1), ellipse(x!, y! - 0.6, 3, 1.2, '#f2d27a', null))),
+    at(68, 60, 0.6, chairSide(0, 0, 1, { col: WOOD }))),
   // materialval: a hand chooses a wood sample with a leaf (tick) instead of a grey plastic sample
   'archd.materialval': all(room(), rect(14, 70, 30, 22, '#c99a62', 2, C.ink, 1.4), line('M17 76 C26 74 34 78 41 75 M17 84 C26 82 34 86 41 83', WOOD2, 0.8), path('M24 62 C30 54 40 56 40 62 C34 66 28 66 24 62 Z', '#6fa45a', C.ink, 1),
     greyed(rect(76, 70, 30, 22, '#cfd6dc', 5, C.ink, 1.4)), tick(29, 104, 0.9), qmark(60, 40, 1.2),
