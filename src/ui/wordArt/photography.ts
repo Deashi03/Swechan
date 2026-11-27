@@ -169,10 +169,12 @@ export const PHOTO_MOTIFS: Record<string, Svg> = {
   'photo.underexponerad': all(photo(14, 24, 80, 66, all(rect(0, 0, 200, 200, '#15171f', 0, null), path('M17 74 Q40 64 60 72 T91 70 L91 87 L17 87 Z', '#1f2a22', '#2a2e36', 0.8), op(0.35, at(36, 80, 1, tree(0, 0, 1.2, '#2c3a30', '#2a2420'))), op(0.35, at(68, 82, 1, house(0, 0, 1.1, '#2e2a26', '#30201c'))))),
     box(12, 22, 84, 70), circle(104, 16, 6, '#c9ced4', C.ink, 1.2), path('M100 12 A6 6 0 0 0 104 22 A7 7 0 0 1 100 12 Z', '#9aa3ad', null),
     op(0.65, photo(80, 82, 32, 26, scenery(83, 85, 26, 20)))),
-  /** exponering (foto, symbol): sunlight streams into a camera lens; next to it a tall gauge fills with yellow light up to the middle mark, which has a green tick (not too much, not too little). */
-  'photo.exponering.2': all(sunC(18, 22, 9), path('M24 30 L40 52 M30 26 L48 46 M18 34 L32 58', 'none', C.gold, 2.2), cam(48, 70, 1.6),
-    rect(86, 14, 18, 92, C.white, 4, C.ink, 1.8), rect(88, 60, 14, 44, '#ffe27a', 2, null), line('M80 36 L86 36 M80 60 L86 60 M80 84 L86 84', C.ink, 1.6), line('M86 60 L104 60', HL, 2.6), tick(112, 58, 1),
-    path('M72 74 C78 80 82 80 86 76', 'none', C.gold, 2), box(84, 12, 22, 96)),
+  /** exponering (foto, symbol): three photos of the same house side by side – too dark, right (green tick, orange frame) and too light – with an exposure scale under them: minus, zero (orange) and plus. No camera. */
+  'photo.exponering.2': all(rect(0, 0, 120, 120, '#f1ede6', 0, null),
+    ...([['#2a2f3d', '#26382a', '#3a3530', '#3b2a26', '#283a2c'], [SKY, GRASS, '#f2d7a6', '#c0563f', '#4f9d69'], ['#fbfbf6', '#eef5e6', '#fbf4e8', '#f4ddd6', '#e2f0e0']] as string[][]).map((c, i) => photo(4 + i * 39, 30, 34, 40, all(rect(0, 0, 200, 200, c[0]!, 0, null), rect(0, 54, 200, 30, c[1]!, 0, null), at(28 + i * 39, 66, 0.6, rect(-14, -20, 28, 20, c[2]!, 1, null), path('M-17 -20 L0 -34 L17 -20 Z', c[3]!, null)), circle(12 + i * 39, 58, 5, c[4]!, null)))),
+    box(41, 28, 38, 44), tick(60, 20, 1.4),
+    line('M8 92 L112 92', C.ink, 2), line('M21 87 L21 97 M60 87 L60 97 M99 87 L99 97', C.ink, 2),
+    line('M16 106 L26 106', C.ink, 2.4), circle(60, 106, 4, 'none', HL, 2.4), line('M94 106 L104 106 M99 101 L99 111', C.ink, 2.4)),
   /** exponera (foto): a camera cut open; beams of light travel in through the lens and land on the film inside, which lights up. */
   'photo.exponera.2': all(rect(30, 30, 76, 60, '#e9e4dc', 6, C.ink, 2), path('M30 50 L16 44 L16 76 L30 70 Z', '#555a66', C.ink, 1.4), ellipse(16, 60, 3, 16, LENS, C.ink, 1.2),
     rect(86, 40, 12, 40, '#c87a3a', 1, C.ink, 1.3), line('M86 44 L98 44 M86 76 L98 76', '#7a4520', 1.2), sunC(10, 14, 6),
@@ -223,10 +225,10 @@ export const PHOTO_MOTIFS: Record<string, Svg> = {
     circle(60, 104, 7, HL, C.ink, 1.4), circle(60, 101, 2.4, C.white, null), path('M55 108 C55 104 65 104 65 108 Z', C.white, null)),
 
   // ── Bildutsnitt ──
-  /** bildutsnitt (symbol): a wide coast with a lighthouse, a boat, a house and trees is grey; only the part inside the orange viewfinder frame (the boat and the lighthouse) is in colour. */
-  'photo.bildutsnitt': all(op(0.45, rect(0, 0, 120, 120, '#dfe3e6', 0, null), rect(0, 66, 120, 54, '#b8c2cc', 0, null), tree(10, 70, 0.8, C.grey, C.grey), house(102, 70, 0.8, C.grey2, C.grey), boat(60, 76, 1.2, C.grey), lighthouse(78, 70, 1, ), tree(26, 70, 0.6, C.grey, C.grey)),
-    clip(38, 30, 54, 58, rect(0, 0, 120, 66, SKY, 0, null), rect(0, 66, 120, 54, '#6aa8d8', 0, null), path('M70 66 L96 66 L100 72 L66 72 Z', '#c8b088', null), boat(56, 78, 1.2), lighthouse(82, 68, 1), bird(52, 42, 0.6)),
-    box(38, 30, 54, 58), line('M34 26 L44 26 M34 26 L34 36 M96 26 L86 26 M96 26 L96 36 M34 92 L44 92 M34 92 L34 82 M96 92 L86 92 M96 92 L96 82', HL, 2.4)),
+  /** bildutsnitt (symbol): a wide landscape photo (mountain, sea, boat, lighthouse, house) where an orange rectangular frame picks out the boat and the lighthouse; an arrow leads down to that part as the finished picture. */
+  'photo.bildutsnitt': all(photo(4, 8, 112, 58, all(rect(0, 0, 200, 200, SKY, 0, null), rect(0, 44, 200, 30, '#6aa8d8', 0, null), path('M7 44 L30 30 L48 44 Z', '#8a9aaa', C.ink, 1), tree(16, 52, 0.6), boat(64, 48, 0.8), lighthouse(82, 44, 0.7), house(104, 52, 0.6), sunC(96, 18, 4))),
+    box(54, 22, 40, 30), arrow(74, 54, 74, 70, HL, 2.6),
+    photo(46, 72, 56, 42, all(rect(0, 0, 200, 200, SKY, 0, null), rect(0, 100, 200, 20, '#6aa8d8', 0, null), at(66, 106, 1.4, boat(0, 0, 0.8)), at(90, 100, 1.4, lighthouse(0, 0, 0.7)))), box(44, 70, 60, 46)),
   /** närbild: a photo frame filled by one big face, eyes and smile seen up close. */
   'photo.närbild': all(photo(12, 12, 96, 96, all(rect(0, 0, 200, 200, '#e6eef3', 0, null), path('M20 108 C20 88 100 88 100 108 Z', C.orange, C.ink, 1.6), path('M28 54 C26 20 94 20 92 54 C84 34 36 34 28 54 Z', C.hair, C.ink, 1.6), circle(60, 60, 30, C.skin, C.ink, 2), path('M30 52 C30 22 90 22 90 52 C80 38 40 38 30 52 Z', C.hair, C.ink, 1.6), circle(48, 60, 3.4, C.ink, null), circle(72, 60, 3.4, C.ink, null), path('M50 74 Q60 82 70 74', 'none', C.ink, 2), path('M58 62 Q56 68 60 68', 'none', C.skin2, 1.6))), box(10, 10, 100, 100)),
   /** helbild: a photo frame with one whole person in it, from the head down to the feet. */
@@ -241,10 +243,11 @@ export const PHOTO_MOTIFS: Record<string, Svg> = {
   'photo.inramning.2': all(rect(0, 0, 120, 120, SKY, 0, null), rect(0, 74, 120, 46, '#6aa8d8', 0, null), line('M0 74 L120 74', C.ink, 1), at(60, 74, 1, rect(-10, -22, 20, 22, '#efe6d6', 1, C.ink, 1.2), path('M-12 -22 L0 -34 L12 -22 Z', '#c0563f', C.ink, 1.2), rect(-3, -48, 6, 16, '#efe6d6', 1, C.ink, 1), path('M-4 -48 L0 -56 L4 -48 Z', '#c0563f', C.ink, 1)), tree(30, 74, 0.6), tree(92, 74, 0.6),
     `<path d="M0 0 L120 0 L120 120 L0 120 Z M24 112 L24 48 C24 12 96 12 96 48 L96 112 Z" fill="#6b5d52" fill-rule="evenodd" stroke="${C.ink}" stroke-width="1.8"/>`,
     line('M10 20 L18 22 M8 60 L18 60 M104 30 L112 32 M102 80 L112 80 M6 96 L16 98', '#55493f', 1.4), path('M24 112 L24 48 C24 12 96 12 96 48 L96 112', 'none', HL, 2.8)),
-  /** kvadratisk (form, symbol): a square photo with an orange border and equal marks on all four sides; behind it a wide and a tall photo in grey. */
-  'photo.kvadratisk.3': all(op(0.55, rect(6, 14, 64, 40, C.white, 2, C.grey, 1.6), rect(10, 18, 56, 32, '#c9ced4', 0, null), rect(80, 6, 34, 56, C.white, 2, C.grey, 1.6), rect(84, 10, 26, 48, '#c9ced4', 0, null)),
-    photo(30, 40, 64, 64, all(rect(0, 0, 200, 200, SKY, 0, null), rect(0, 80, 200, 40, GRASS, 0, null), flower(62, 76, 1.8))), box(28, 38, 68, 68),
-    line('M62 33 L62 43 M62 101 L62 111 M23 72 L33 72 M91 72 L101 72', HL, 3)),
+  /** kvadratisk (form, symbol): three empty picture formats side by side – a wide and a tall rectangle in grey and a square in orange, whose four equal sides each carry the same length mark. No motif. */
+  'photo.kvadratisk.3': all(rect(0, 0, 120, 120, '#f1ede6', 0, null),
+    rect(4, 46, 36, 24, '#c9ced4', 2, C.grey, 2), rect(46, 36, 22, 44, '#c9ced4', 2, C.grey, 2),
+    rect(76, 41, 36, 36, '#ffd2bf', 2, HL, 3),
+    line('M94 37 L94 45 M94 73 L94 81 M72 59 L80 59 M108 59 L116 59', C.ink, 2.4)),
   /** på höjden (symbol): two hands hold a phone upright to photograph a tall tower; the screen shows the whole tower, and an orange double arrow runs up and down beside it. */
   'photo.på-höjden': all(rect(0, 0, 120, 120, SKY, 0, null), op(0.5, at(100, 112, 1, rect(-6, -90, 12, 90, '#d9cbb4', 1, C.ink, 1), path('M-8 -90 L0 -104 L8 -90 Z', '#c0563f', C.ink, 1))),
     phone(38, 10, 40, 82, all(rect(41, 15, 34, 72, SKY, 0, null), at(58, 87, 1, rect(-5, -52, 10, 52, '#d9cbb4', 1, C.ink, 1), path('M-7 -52 L0 -64 L7 -52 Z', '#c0563f', C.ink, 1), rect(-2, -40, 4, 6, '#9ad0f0', 1, null), rect(-2, -24, 4, 6, '#9ad0f0', 1, null)))),
