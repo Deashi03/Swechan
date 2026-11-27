@@ -298,6 +298,6 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
 ## 0.63 – Bildkonst & design
 
 - **Godkända i manuella spåret:** *blek* (om färg; tröja före/efter och pastellpalett förväxlades med *pastell*, nu en färgskala från stark till nästan vit med överkryssad pastellpalett), *stilren* (två möblerade rum förväxlades med *minimalistisk*, nu en stilren person mot krockande mönster).
-- **Väntar på produktägaren:** *hållbarhet* (för miljön) förväxlades med *hållbar* i omgång 1, 2 (kretslopp miljö–människor–ekonomi) och som bildserie (samma stol år 1, 10, 30 mot slit-och-släng).
+- **Synonympar (produktägarens beslut 2026-11-27):** *hållbarhet* (för miljön) förväxlades med *hållbar* i omgång 1, 2 (kretslopp miljö–människor–ekonomi) och som bildserie (samma stol år 1, 10, 30 mot slit-och-släng).
 - **Omritade i omgång 2:** *exponering* (tre foton mörkt–rätt–ljust i stället för kamera), *bildutsnitt* (rektangulär ram ur ett landskap), *kvadratisk* (tomma format i stället för motiv; förväxlades med *närbild*).
 - **Godkända men nära andra bilder (bevakas):** *remix* och *ledmotiv* (medelhög säkerhet), *stilren* ↔ minimalistiskt rum.
