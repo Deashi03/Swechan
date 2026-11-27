@@ -1819,8 +1819,8 @@
   },
   {
    "id": "m.hallbarhet-och-forvaring",
-   "contentVersion": 2,
-   "updatedAt": "2026-11-19",
+   "contentVersion": 3,
+   "updatedAt": "2026-11-27",
    "titleSv": "Hållbarhet och förvaring",
    "titleJa": "{食品|しょくひん}の{保存|ほぞん}と{日|ひ}もち",
    "descriptionSv": "Hur man förvarar mat i kylskåp, frys och skafferi, vad bäst före betyder och hur man undviker att slänga mat.",
@@ -125828,8 +125828,8 @@
   },
   {
    "id": "m.reaktionshastighet",
-   "contentVersion": 4,
-   "updatedAt": "2026-11-26",
+   "contentVersion": 5,
+   "updatedAt": "2026-11-27",
    "titleSv": "Reaktionshastighet",
    "titleJa": "{反応速度|はんのうそくど}",
    "descriptionSv": "Reaktionshastighet: hastighet, reaktionshastighet, temperatur, kollidera, ruttna, kylskåp, process, hållbarhet, mögla, jäst, enzym, jäsa, katalysator, förbruka, kontaktyta, aktiveringsenergi och explosion.",
@@ -168987,6 +168987,649 @@
    ],
    "standard": 2,
    "bodyFile": "varumarkesidentitet.json"
+  },
+  {
+   "id": "m.arkitekturens-stilar",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-27",
+   "titleSv": "Arkitekturens stilar",
+   "titleJa": "{建築|けんちく}の{様式|ようしき}",
+   "descriptionSv": "Att känna igen och beskriva stilar i svensk arkitektur, från sekelskiftets stenhus och funkis till betongens brutalism och postmodernismens lekfulla former, och att tala om byggnader som väcker debatt.",
+   "descriptionJa": "スウェーデン{建築|けんちく}のさまざまな{様式|ようしき}を{見分|みわ}けて{説明|せつめい}できるようになります。1900{年|ねん}ごろの{石造|いしづく}りの{建物|たてもの}やファンキスから、コンクリートのブルータリズム、{遊|あそ}び{心|ごころ}のあるポストモダニズムまでを{学|まな}び、{議論|ぎろん}を{呼|よ}ぶ{建物|たてもの}について{話|はな}します。",
+   "categoryId": "R08-A03-T06",
+   "tags": [
+    "arkitektur",
+    "design",
+    "kultur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.varumarkesidentitet"
+   ],
+   "related": [],
+   "recommendedOrder": 4561,
+   "words": [
+    {
+     "senseId": "s.arkitektur.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stil.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nationalromantik.1",
+     "active": false
+    },
+    {
+     "senseId": "s.jugend.1",
+     "active": false
+    },
+    {
+     "senseId": "s.stildrag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sekelskifteshus.1",
+     "active": true
+    },
+    {
+     "senseId": "s.funkis.1",
+     "active": true
+    },
+    {
+     "senseId": "s.modern.1",
+     "active": true
+    },
+    {
+     "senseId": "s.betong.1",
+     "active": true
+    },
+    {
+     "senseId": "s.brutalism.1",
+     "active": true
+    },
+    {
+     "senseId": "s.miljonprogrammet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.postmodernism.1",
+     "active": false
+    },
+    {
+     "senseId": "s.monumental.1",
+     "active": true
+    },
+    {
+     "senseId": "s.landmärke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.inspirerad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.omdebatterad.1",
+     "active": false
+    },
+    {
+     "senseId": "s.bebyggelse.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "arkitekturens-stilar.json"
+  },
+  {
+   "id": "m.fasader-och-detaljer",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-27",
+   "titleSv": "Fasader och detaljer",
+   "titleJa": "{外壁|がいへき}とディテール",
+   "descriptionSv": "Att beskriva hur ett hus ser ut utifrån: tak, fönster, räcken och dekor på fasaden, så att man kan tala om bostäder på en visning eller läsa en bostadsannons.",
+   "descriptionJa": "{家|いえ}の{外観|がいかん}を{説明|せつめい}できるようになります。{屋根|やね}、{窓|まど}、{手|て}すり、{外壁|がいへき}の{装飾|そうしょく}について{学|まな}び、{内覧会|ないらんかい}で{住|す}まいについて{話|はな}したり、{住宅|じゅうたく}{広告|こうこく}を{読|よ}んだりできるようにします。",
+   "categoryId": "R08-A03-T06",
+   "tags": [
+    "arkitektur",
+    "design",
+    "bostad"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.arkitekturens-stilar"
+   ],
+   "related": [],
+   "recommendedOrder": 4562,
+   "words": [
+    {
+     "senseId": "s.fasad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.gavel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.takfot.1",
+     "active": true
+    },
+    {
+     "senseId": "s.platt-tak.1",
+     "active": true
+    },
+    {
+     "senseId": "s.takkupa.1",
+     "active": true
+    },
+    {
+     "senseId": "s.frontespis.1",
+     "active": false
+    },
+    {
+     "senseId": "s.balkong.1",
+     "active": true
+    },
+    {
+     "senseId": "s.burspråk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.loftgång.1",
+     "active": true
+    },
+    {
+     "senseId": "s.smidesräcke.1",
+     "active": true
+    },
+    {
+     "senseId": "s.portal.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kolonn.2",
+     "active": true
+    },
+    {
+     "senseId": "s.ornament.1",
+     "active": true
+    },
+    {
+     "senseId": "s.puts.1",
+     "active": true
+    },
+    {
+     "senseId": "s.listverk.1",
+     "active": false
+    },
+    {
+     "senseId": "s.panel.1",
+     "active": false
+    },
+    {
+     "senseId": "s.glasfasad.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "fasader-och-detaljer.json"
+  },
+  {
+   "id": "m.mobeldesign",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-27",
+   "titleSv": "Möbeldesign",
+   "titleJa": "{家具|かぐ}デザイン",
+   "descriptionSv": "Att tala om möbler och deras formgivning: olika slags stolar, material och tekniker, vad som gör en stol skön och vilka svenska formgivare som har blivit kända.",
+   "descriptionJa": "{家具|かぐ}とそのデザインについて{話|はな}せるようになります。さまざまな{椅子|いす}の{種類|しゅるい}、{素材|そざい}と{技術|ぎじゅつ}、{座|すわ}り{心地|ごこち}のよい{椅子|いす}の{条件|じょうけん}、そして{有名|ゆうめい}なスウェーデンのデザイナーについて{学|まな}びます。",
+   "categoryId": "R08-A03-T06",
+   "tags": [
+    "design",
+    "möbler",
+    "kultur"
+   ],
+   "level": "B1",
+   "prerequisites": [
+    "m.fasader-och-detaljer"
+   ],
+   "related": [],
+   "recommendedOrder": 4563,
+   "words": [
+    {
+     "senseId": "s.möbel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.formgivare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.möbelsnickare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.pinnstol.1",
+     "active": true
+    },
+    {
+     "senseId": "s.karmstol.1",
+     "active": true
+    },
+    {
+     "senseId": "s.fåtölj.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vilstol.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ryggstöd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.sittkomfort.1",
+     "active": true
+    },
+    {
+     "senseId": "s.massiv.1",
+     "active": true
+    },
+    {
+     "senseId": "s.böjträ.1",
+     "active": true
+    },
+    {
+     "senseId": "s.faner.1",
+     "active": false
+    },
+    {
+     "senseId": "s.klädsel.1",
+     "active": false
+    },
+    {
+     "senseId": "s.stapelbar.1",
+     "active": false
+    },
+    {
+     "senseId": "s.klassiker.1",
+     "active": true
+    },
+    {
+     "senseId": "s.platt-paket.1",
+     "active": true
+    },
+    {
+     "senseId": "s.montera.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "mobeldesign.json"
+  },
+  {
+   "id": "m.industridesign",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-27",
+   "titleSv": "Industridesign",
+   "titleJa": "{工業|こうぎょう}デザイン",
+   "descriptionSv": "Hur en produkt blir till, från de första idéerna och prototyperna till test och tillverkning, och hur man talar om form, material och hur lätt en sak är att använda.",
+   "descriptionJa": "{製品|せいひん}が{生|う}まれるまでの{流|なが}れ、つまり{最初|さいしょ}のアイデアやプロトタイプからテスト、{製造|せいぞう}までを{学|まな}びます。また、{形|かたち}、{素材|そざい}、{使|つか}いやすさについて{話|はな}せるようになります。",
+   "categoryId": "R08-A03-T06",
+   "tags": [
+    "design",
+    "industri",
+    "kultur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.mobeldesign"
+   ],
+   "related": [],
+   "recommendedOrder": 4564,
+   "words": [
+    {
+     "senseId": "s.industridesign.1",
+     "active": true
+    },
+    {
+     "senseId": "s.formgivare.1",
+     "active": true
+    },
+    {
+     "senseId": "s.formge.1",
+     "active": true
+    },
+    {
+     "senseId": "s.produktutveckling.1",
+     "active": true
+    },
+    {
+     "senseId": "s.modell.2",
+     "active": true
+    },
+    {
+     "senseId": "s.prototyp.1",
+     "active": true
+    },
+    {
+     "senseId": "s.konstruera.1",
+     "active": false
+    },
+    {
+     "senseId": "s.användartest.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ergonomisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.användarvänlig.1",
+     "active": true
+    },
+    {
+     "senseId": "s.handtag.1",
+     "active": true
+    },
+    {
+     "senseId": "s.reglage.1",
+     "active": true
+    },
+    {
+     "senseId": "s.formspråk.1",
+     "active": false
+    },
+    {
+     "senseId": "s.plast.1",
+     "active": true
+    },
+    {
+     "senseId": "s.rostfri.1",
+     "active": false
+    },
+    {
+     "senseId": "s.slitstark.1",
+     "active": true
+    },
+    {
+     "senseId": "s.massproducera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.patent.1",
+     "active": false
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "industridesign.json"
+  },
+  {
+   "id": "m.funktion-och-estetik",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-27",
+   "titleSv": "Funktion och estetik",
+   "titleJa": "{機能|きのう}と{美|び}",
+   "descriptionSv": "Att diskutera vad som gör ett föremål bra: hur väl det fungerar, hur det ser ut och hur man väger det ena mot det andra, med exempel från svensk och japansk formgivning.",
+   "descriptionJa": "{物|もの}のよさを{決|き}めるものについて{話|はな}し{合|あ}えるようになります。どれだけうまく{働|はたら}くか、どう{見|み}えるか、その{二|ふた}つをどう{両立|りょうりつ}させるかを、スウェーデンと{日本|にほん}のデザインの{例|れい}をもとに{学|まな}びます。",
+   "categoryId": "R08-A03-T06",
+   "tags": [
+    "design",
+    "estetik",
+    "kultur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.industridesign"
+   ],
+   "related": [],
+   "recommendedOrder": 4565,
+   "words": [
+    {
+     "senseId": "s.funktion.1",
+     "active": true
+    },
+    {
+     "senseId": "s.vardagsföremål.1",
+     "active": true
+    },
+    {
+     "senseId": "s.estetik.1",
+     "active": true
+    },
+    {
+     "senseId": "s.funktionell.1",
+     "active": true
+    },
+    {
+     "senseId": "s.opraktisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.form-följer-funktion.1",
+     "active": false
+    },
+    {
+     "senseId": "s.enkelhet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.minimalistisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.stilren.1",
+     "active": true
+    },
+    {
+     "senseId": "s.dekorativ.1",
+     "active": true
+    },
+    {
+     "senseId": "s.detalj.1",
+     "active": true
+    },
+    {
+     "senseId": "s.materialkänsla.1",
+     "active": false
+    },
+    {
+     "senseId": "s.kvalitet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tidlös.1",
+     "active": true
+    },
+    {
+     "senseId": "s.lagom.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "funktion-och-estetik.json"
+  },
+  {
+   "id": "m.hallbar-design",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-27",
+   "titleSv": "Hållbar design",
+   "titleJa": "{持続可能|じぞくかのう}なデザイン",
+   "descriptionSv": "Att tala om hur formgivning kan ta hänsyn till miljön: att välja material, göra saker som håller länge och går att laga, och att använda gamla saker och rester på nytt.",
+   "descriptionJa": "デザインがどのように{環境|かんきょう}に{配慮|はいりょ}できるかについて{話|はな}せるようになります。{素材|そざい}の{選|えら}び{方|かた}、{長|なが}もちして{修理|しゅうり}できる{物|もの}づくり、{古|ふる}い{物|もの}や{余|あま}った{材料|ざいりょう}の{再利用|さいりよう}について{学|まな}びます。",
+   "categoryId": "R08-A03-T06",
+   "tags": [
+    "design",
+    "miljö",
+    "kultur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.funktion-och-estetik"
+   ],
+   "related": [],
+   "recommendedOrder": 4566,
+   "words": [
+    {
+     "senseId": "s.hållbar.2",
+     "active": true
+    },
+    {
+     "senseId": "s.hållbarhet.2",
+     "active": true
+    },
+    {
+     "senseId": "s.livslängd.1",
+     "active": true
+    },
+    {
+     "senseId": "s.livscykel.2",
+     "active": false
+    },
+    {
+     "senseId": "s.klimatavtryck.1",
+     "active": true
+    },
+    {
+     "senseId": "s.materialval.1",
+     "active": true
+    },
+    {
+     "senseId": "s.miljömärkt.1",
+     "active": false
+    },
+    {
+     "senseId": "s.reparera.1",
+     "active": true
+    },
+    {
+     "senseId": "s.reparerbar.1",
+     "active": true
+    },
+    {
+     "senseId": "s.reservdel.1",
+     "active": true
+    },
+    {
+     "senseId": "s.modulär.1",
+     "active": true
+    },
+    {
+     "senseId": "s.begagnad.1",
+     "active": true
+    },
+    {
+     "senseId": "s.återbruk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.restmaterial.1",
+     "active": true
+    },
+    {
+     "senseId": "s.uppcykla.1",
+     "active": true
+    },
+    {
+     "senseId": "s.återvinningsbar.1",
+     "active": false
+    },
+    {
+     "senseId": "s.slit-och-släng.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "hallbar-design.json"
+  },
+  {
+   "id": "m.designhistoria",
+   "contentVersion": 1,
+   "updatedAt": "2026-11-27",
+   "titleSv": "Designhistoria",
+   "titleJa": "デザインの{歴史|れきし}",
+   "descriptionSv": "Hur svensk formgivning har utvecklats under 1900-talet, från idén om vackra saker för alla till modernism och skandinavisk formgivning i världen, och hur man talar om stilar som kommer tillbaka.",
+   "descriptionJa": "20{世紀|せいき}のスウェーデンのデザインがどのように{発展|はってん}してきたかを{学|まな}びます。{誰|だれ}もが{美|うつく}しい{物|もの}をもつべきだという{考|かんが}えから、モダニズム、{世界|せかい}に{広|ひろ}まった{北欧|ほくおう}デザインまでをたどり、{再|ふたた}び{流行|りゅうこう}するスタイルについて{話|はな}せるようになります。",
+   "categoryId": "R08-A03-T06",
+   "tags": [
+    "design",
+    "historia",
+    "kultur"
+   ],
+   "level": "B2",
+   "prerequisites": [
+    "m.hallbar-design"
+   ],
+   "related": [],
+   "recommendedOrder": 4567,
+   "words": [
+    {
+     "senseId": "s.epok.1",
+     "active": true
+    },
+    {
+     "senseId": "s.tidsanda.1",
+     "active": false
+    },
+    {
+     "senseId": "s.formgivning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.brukskonst.1",
+     "active": false
+    },
+    {
+     "senseId": "s.skandinavisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.modernism.1",
+     "active": true
+    },
+    {
+     "senseId": "s.folkhemmet.1",
+     "active": true
+    },
+    {
+     "senseId": "s.utställning.1",
+     "active": true
+    },
+    {
+     "senseId": "s.mässa.1",
+     "active": false
+    },
+    {
+     "senseId": "s.pionjär.1",
+     "active": true
+    },
+    {
+     "senseId": "s.inflytande.1",
+     "active": false
+    },
+    {
+     "senseId": "s.klassiker.1",
+     "active": true
+    },
+    {
+     "senseId": "s.ikonisk.1",
+     "active": true
+    },
+    {
+     "senseId": "s.trend.1",
+     "active": true
+    },
+    {
+     "senseId": "s.retro.1",
+     "active": true
+    },
+    {
+     "senseId": "s.nostalgi.1",
+     "active": true
+    }
+   ],
+   "standard": 2,
+   "bodyFile": "designhistoria.json"
   }
  ]
 }
