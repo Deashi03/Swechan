@@ -278,6 +278,7 @@ const GROUPS: Record<string, () => Promise<Motifs>> = {
   'gdes.': () => import('./graphicDesign').then((m) => m.GDES_MOTIFS),
   'archd.': () => import('./architectureDesign').then((m) => m.ARCHD_MOTIFS),
   'trng.': () => import('./trainingBasics').then((m) => m.TRNG_MOTIFS),
+  'endur.': () => import('./endurance').then((m) => m.ENDUR_MOTIFS),
   'fix.': () => import('./blindFix').then((m) => m.BLIND_FIX_MOTIFS),
   'manm.': () => import('./manualMath').then((m) => m.MANUAL_MATH_MOTIFS),
   'manf.': () => import('./manualPhilosophy').then((m) => m.MANUAL_PHILOSOPHY_MOTIFS),
