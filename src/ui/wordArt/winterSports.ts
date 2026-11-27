@@ -201,11 +201,15 @@ const M1: Record<string, Svg> = {
     ...[[48, 70], [86, 76], [56, 40], [80, 46]].map(([x, y], i) => all(circle(x!, y! - 3, 2, [C.red, C.orange, C.yellow, C.purple][i]!, C.ink, 0.6), line(`M${x! - 3} ${y! + 1} L${x! + 3} ${y! + 3}`, C.ink, 1.4))),
     frame(4, 4, 112, 112, HL)),
   // alpin (i skidsport): a racer with a bib passing a gate, in front of high alpine peaks
-  'winter.alpin.2': all(sky(), mountains(50, '#a9bdd6'), line('M60 4 L124 40', C.ink, 1.4), rect(100, 26, 4, 40, C.grey, 1, C.ink, 1), chair(80, 34, 0.36), chair(112, 52, 0.36),
-    path('M0 30 L120 92 L120 120 L0 120 Z', SNOW, null), line('M0 30 L120 92', SHADE, 1.4), ...range(6).map((i) => line(`M0 ${38 + i * 9} L120 ${100 + i * 9}`, SNOW2, 1)),
-    rot(27, 50, 70, wz(50, 70, 0.5, ALPINE, { hs: 'helmet', goggles: true, top: C.red, leg: C.dark, back: ALPINE_GEAR })),
-    rect(6, 84, 40, 30, SKY2, 3, C.grey, 1.2), greyed(rect(6, 104, 40, 10, SNOW, 0, null), line('M8 108 L44 108 M8 111 L44 111', C.grey, 1), classicSkier(26, 108, 0.24)), cross(40, 90, 0.7),
-    frame(4, 4, 112, 76, HL)),
+  'winter.alpin.2': all(rect(0, 0, 120, 120, C.white, 0, null),
+    // left panel: a high mountain in cross-section, a lift going up (arrow up) and a skier coming down the steep side (arrow down)
+    rect(3, 10, 56, 100, SKY, 4, C.ink, 1.4), path('M3 110 L3 34 L14 22 Q30 36 40 66 Q48 88 59 94 L59 110 Z', SNOW, C.ink, 1.2), path('M8 28 L14 22 L20 28 L17 27 L14 30 L11 27 Z', C.white, null),
+    line('M10 104 L16 26', C.ink, 1.6), ...[[11.5, 84, C.navy], [13.6, 56, C.green]].map(([x, y, c]) => all(line(`M${x} ${y} L${x} ${(y as number) + 7}`, C.ink, 1.2), rect((x as number) - 4, (y as number) + 7, 8, 5, c as string, 1.5, C.ink, 0.8))),
+    arrow(22, 90, 26, 42, HL, 2.8), rot(36, 36, 64, wz(36, 64, 0.38, ALPINE, { hs: 'helmet', goggles: true, top: C.red, leg: C.dark, back: ALPINE_GEAR })), arrow(48, 52, 56, 74, HL, 2.8),
+    frame(1, 8, 60, 104, HL),
+    // right panel: flat land with a track and a cross-country skier, grey and crossed out
+    greyed(rect(63, 10, 54, 100, SKY, 4, C.ink, 1.4), rect(63, 84, 54, 26, SNOW, 0, null), line('M64 96 L116 96 M64 100 L116 100', C.grey, 1.2), classicSkier(90, 96, 0.36)),
+    cross(104, 24, 1)),
   // liftkort: the card in a hand, held up to the gate reader that turns green
   'winter.liftkort': all(sky(SKY2), flat(98), rect(76, 34, 18, 64, C.grey, 3, C.ink, 1.4), rect(79, 40, 12, 10, C.dark, 2, C.ink, 1), waPulse('ws-kort', circle(85, 45, 3.4, C.green, null)),
     line('M94 64 L116 64', C.ink, 3), line('M94 64 L116 64', C.yellow, 1.6),
