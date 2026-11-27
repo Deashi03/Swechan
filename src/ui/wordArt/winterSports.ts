@@ -201,8 +201,11 @@ const M1: Record<string, Svg> = {
     ...[[48, 70], [86, 76], [56, 40], [80, 46]].map(([x, y], i) => all(circle(x!, y! - 3, 2, [C.red, C.orange, C.yellow, C.purple][i]!, C.ink, 0.6), line(`M${x! - 3} ${y! + 1} L${x! + 3} ${y! + 3}`, C.ink, 1.4))),
     frame(4, 4, 112, 112, HL)),
   // alpin (i skidsport): a racer with a bib passing a gate, in front of high alpine peaks
-  'winter.alpin.2': all(sky(), mountains(56, '#a9bdd6'), slope(46), gate(46, slopeY(46, 46) + 6, C.red), gate(92, slopeY(92, 46) + 6, C.navy),
-    alpineSkier(70, slopeY(70, 46) + 6, 0.6, { top: C.red, bib: C.white }), frame(4, 4, 112, 112, HL)),
+  'winter.alpin.2': all(sky(), mountains(50, '#a9bdd6'), line('M60 4 L124 40', C.ink, 1.4), rect(100, 26, 4, 40, C.grey, 1, C.ink, 1), chair(80, 34, 0.36), chair(112, 52, 0.36),
+    path('M0 30 L120 92 L120 120 L0 120 Z', SNOW, null), line('M0 30 L120 92', SHADE, 1.4), ...range(6).map((i) => line(`M0 ${38 + i * 9} L120 ${100 + i * 9}`, SNOW2, 1)),
+    rot(27, 50, 70, wz(50, 70, 0.5, ALPINE, { hs: 'helmet', goggles: true, top: C.red, leg: C.dark, back: ALPINE_GEAR })),
+    rect(6, 84, 40, 30, SKY2, 3, C.grey, 1.2), greyed(rect(6, 104, 40, 10, SNOW, 0, null), line('M8 108 L44 108 M8 111 L44 111', C.grey, 1), classicSkier(26, 108, 0.24)), cross(40, 90, 0.7),
+    frame(4, 4, 112, 76, HL)),
   // liftkort: the card in a hand, held up to the gate reader that turns green
   'winter.liftkort': all(sky(SKY2), flat(98), rect(76, 34, 18, 64, C.grey, 3, C.ink, 1.4), rect(79, 40, 12, 10, C.dark, 2, C.ink, 1), waPulse('ws-kort', circle(85, 45, 3.4, C.green, null)),
     line('M94 64 L116 64', C.ink, 3), line('M94 64 L116 64', C.yellow, 1.6),
@@ -308,9 +311,11 @@ const M3: Record<string, Svg> = {
   'winter.carva': all(sky(), slope(30), path(`M8 ${slopeY(8, 30) + 30} C40 ${slopeY(40, 30) + 50} 60 ${slopeY(60, 30) + 10} 96 ${slopeY(96, 30) + 18}`, 'none', HL, 2.4), path(`M8 ${slopeY(8, 30) + 34} C40 ${slopeY(40, 30) + 54} 60 ${slopeY(60, 30) + 14} 96 ${slopeY(96, 30) + 22}`, 'none', HL, 1.2),
     travel('ws-carva', 30, 10, 2.8, rot(-6, 72, 74, wz(72, 74, 0.56, pose({ h: [-6, -34], n: [-10, -58], aL: [[-18, -46], [-26, -38]], aR: [[2, -52], [10, -44]], lL: [[-14, -18], [-9, -1]], lR: [[2, -19], [9, -1]] }), { hs: 'helmet', hat: C.navy, goggles: true, top: C.yellow, back: rot(-30, 0, -2, board(-9, 9, -2, C.purple)) })))),
   // offpist: a rider in deep untouched powder among trees, snow spraying; the groomed piste is small and grey far behind
-  'winter.offpist': all(sky(), mountains(50), path('M0 54 L120 54 L120 120 L0 120 Z', SNOW, null), greyed(path('M86 54 L98 54 L106 76 L80 76 Z', SNOW2, C.grey, 1), groomed(84, 58, 102, 58, 4)),
-    tree(14, 80, 0.9), tree(30, 70, 0.7), tree(104, 96, 0.9), path('M20 112 C40 96 58 96 76 104 C90 110 100 116 110 112 L120 120 L0 120 Z', C.white, SHADE, 1.2),
-    rider(58, 98, 0.5, { top: C.red }), ...[[34, 92], [40, 86], [30, 84], [44, 94]].map(([x, y]) => circle(x!, y!, 4, C.white, SHADE, 1)), frame(4, 4, 112, 112, HL)),
+  'winter.offpist': all(sky(), mountains(50), path('M0 54 L120 54 L120 120 L0 120 Z', '#fdfeff', null),
+    path('M0 54 L30 54 L46 120 L0 120 Z', SNOW2, null), ...range(8).map((i) => line(`M0 ${60 + i * 8} L${f1(31 + i * 2)} ${60 + i * 8}`, SHADE, 1)),
+    ...[[32, 64], [36, 80], [40, 96], [44, 112]].map(([x, y]) => all(line(`M${x} ${y} L${x} ${y! - 14}`, C.ink, 3), line(`M${x} ${y} L${x} ${y! - 7}`, C.orange, 1.8), line(`M${x} ${y! - 7} L${x} ${y! - 14}`, C.black, 1.8))),
+    tree(62, 74, 0.8), tree(108, 70, 0.9), tree(112, 104, 0.8), tree(76, 116, 0.6),
+    rider(86, 104, 0.5, { top: C.red }), path('M56 106 C66 96 80 94 98 98 C108 100 114 104 120 102 L120 120 L56 120 Z', C.white, SHADE, 1.2), ...[[64, 96], [70, 90], [60, 90], [74, 98]].map(([x, y]) => circle(x!, y!, 4, C.white, SHADE, 1)), frame(52, 56, 64, 60, HL)),
   // lavinsändare: a small device with signal waves (pulse) on the chest strap, snow below
   'winter.lavinsändare': all(sky(), flat(96), path('M40 30 L52 96 M80 30 L68 96', 'none', C.dark, 4), rect(44, 46, 32, 40, C.yellow, 6, C.ink, 1.8), rect(50, 52, 20, 12, C.dark, 2, C.ink, 1), circle(60, 74, 4, C.red, C.ink, 1),
     waPulse('ws-sand', path('M84 54 C90 60 90 70 84 76 M90 48 C100 58 100 72 90 82 M36 54 C30 60 30 70 36 76 M30 48 C20 58 20 72 30 82', 'none', HL, 2.4))),
