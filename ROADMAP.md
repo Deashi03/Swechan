@@ -210,6 +210,9 @@ Kontrollerat ordförråd med automatisk kontroll, inlärningskedjor med två gru
 ## v0.63 – Bildkonst & design (klar)
 - 42 nya moduler i Kultur & fritid → Bildkonst & design enligt standard 2, med 304 nya ordbilder varav 60 rörliga. 89 symbolbilder matchningstestade (två godkända i manuella spåret).
 
+## v0.64 – Sport & träning (klar)
+- 42 nya moduler i Kultur & fritid → Sport & träning enligt standard 2, med 420 nya ordbilder varav 166 rörliga. Gjord särskilt noggrant: oberoende språkgranskning av varje grupp, faktakontroll mot källorna och integratörens bildgranskning före matchningstest. 32 symbolbilder matchningstestade (två godkända i manuella spåret, fyra synonympar och ett undantag efter produktägarens beslut).
+
 ## Senare – två spår per release
 - Nytt överämne (nästa enligt katalogen efter *Människan & hälsa*) som räknas som klart först när varje modulord har visualisering.
 - Ett befintligt överämne fylls på med visualiseringar (Vardag & hem först).
