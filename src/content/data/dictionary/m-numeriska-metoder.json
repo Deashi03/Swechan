@@ -306,6 +306,7 @@
        "ja": "{刻|きざ}み{幅|はば}を{短|みじか}くすると、{結果|けっか}がより{正確|せいかく}になります。"
       }
      ],
+     "labelSv": "matematik",
      "explanation": {
       "sv": "När en dator räknar ut hur en boll flyger, räknar den först ut var bollen är efter ett litet steg i tiden, sedan efter ett steg till, och så vidare. Med en kort steglängd blir resultatet bättre, men det tar längre tid. Med en lång steglängd går det fort, men felen blir större.",
       "ja": "コンピューターがボールの{飛|と}び{方|かた}を{計算|けいさん}するときは、まず{少|すこ}しだけ{時間|じかん}を{進|すす}めたときのボールの{位置|いち}を{求|もと}め、さらにもう{少|すこ}し{進|すす}め…とくり{返|かえ}します。{刻|きざ}み{幅|はば}が{短|みじか}いと{結果|けっか}はよくなりますが、{時間|じかん}がかかります。{長|なが}いと{速|はや}く{終|お}わりますが、{誤差|ごさ}が{大|おお}きくなります。"
@@ -316,9 +317,50 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 2
+    },
+    {
+     "id": "s.steglängd.2",
+     "ja": "ストライド、{歩幅|ほはば}",
+     "defSv": "Hur långt ett steg är när man går eller springer.",
+     "defJa": "{歩|ある}いたり{走|はし}ったりするときの、{一歩|いっぽ}の{長|なが}さ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "När man springer fortare blir steglängden längre.",
+       "ja": "{速|はや}く{走|はし}ると、{歩幅|ほはば}が{大|おお}きくなります。"
+      },
+      {
+       "sv": "Försök att korta steglängden i uppförsbacken.",
+       "ja": "{上|のぼ}り{坂|ざか}では、{歩幅|ほはば}を{小|ちい}さくしてみてください。"
+      }
+     ],
+     "labelSv": "steg",
+     "collocations": [
+      "kortare steglängd",
+      "öka steglängden"
+     ],
+     "explanation": {
+      "sv": "Steglängden och stegfrekvensen bestämmer tillsammans hur fort man springer. Många nybörjare tar för långa steg och landar långt framför kroppen, och då bromsar man i varje steg. Steglängd är hur långt varje steg är, medan stegfrekvens är hur många steg man tar.",
+      "ja": "{歩幅|ほはば}とピッチの{組|く}み{合|あ}わせで、{走|はし}る{速|はや}さが{決|き}まります。{初心者|しょしんしゃ}の{多|おお}くは{歩幅|ほはば}が{大|おお}きすぎて、{体|からだ}のずっと{前|まえ}に{着地|ちゃくち}するため、{一歩|いっぽ}ごとにブレーキをかけてしまいます。「steglängd」は{一歩|いっぽ}の{長|なが}さ、「stegfrekvens」は{歩数|ほすう}の{多|おお}さです。"
+     },
+     "tags": [
+      "sport",
+      "löpning",
+      "träning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 1,
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-27"
+   }
   }
  ]
 }
