@@ -1,0 +1,192 @@
+{
+ "id": "m.basketboll",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-27",
+ "titleSv": "Basketboll",
+ "titleJa": "バスケットボール",
+ "descriptionSv": "Att följa och tala om en basketmatch: hur man dribblar, skjuter och gör poäng, vad ett straffkast och en timeout är, och hur man säger vem som vann och förlorade.",
+ "descriptionJa": "バスケットボールの{試合|しあい}を{見|み}て{話|はな}す：ドリブル、シュート、{得点|とくてん}のしかた、フリースローやタイムアウトとは{何|なに}か、そして{勝|か}ち{負|ま}けの{言|い}い{方|かた}を{学|まな}びます。",
+ "categoryId": "R08-A04-T03",
+ "tags": [
+  "sport",
+  "bollsport",
+  "fritid"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.fotboll"
+ ],
+ "related": [],
+ "recommendedOrder": 4632,
+ "words": [
+  {
+   "senseId": "s.basket.1",
+   "active": true
+  },
+  {
+   "senseId": "s.korg.2",
+   "active": true
+  },
+  {
+   "senseId": "s.studsa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.dribbla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.skjuta.3",
+   "active": true
+  },
+  {
+   "senseId": "s.trepoängare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.straffkast.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vinna.1",
+   "active": true
+  },
+  {
+   "senseId": "s.förlora.2",
+   "active": true
+  },
+  {
+   "senseId": "s.övertid.2",
+   "active": false
+  },
+  {
+   "senseId": "s.timeout.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tränare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.försvar.2",
+   "active": true
+  },
+  {
+   "senseId": "s.anfall.2",
+   "active": true
+  },
+  {
+   "senseId": "s.retur.2",
+   "active": false
+  },
+  {
+   "senseId": "s.lagkamrat.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Kenji går på basket",
+  "paragraphs": [
+   "Kenji jobbar på ett kontor i Stockholm. En kollega, Johan, spelar basket i en klubb på fritiden. En fredag frågar han om Kenji vill se en match med hans lag. – Gärna, säger Kenji. Jag spelade basket i skolan i Japan.",
+   "Hallen är full av folk. Johans lag spelar i röda tröjor. Kenji ser hur spelarna dribblar snabbt över planen och hur bollen studsar mot golvet. I anfall passar de mycket, och i försvar står de nära sina motspelare.",
+   "Johan skjuter en trepoängare och träffar. Lite senare blir han fälld och får två straffkast. Han sätter båda. Men det andra laget är starkt och tar många returer under korgen. När det är en minut kvar står det lika, och tränaren tar timeout.",
+   "Ingen gör fler poäng, så matchen går till övertid. – I basket kan det inte bli oavgjort, förklarar en man bredvid Kenji. Man spelar fem minuter till, och fler om det behövs.",
+   "I övertiden gör Johans lag tre korgar i rad och vinner med fyra poäng. Spelarna i det andra laget ser ledsna ut. Ingen tycker om att förlora. Johan kramar sina lagkamrater. Efteråt frågar han: – Vill du träna med oss på tisdag? Kenji ler. – Jag har nog glömt det mesta, men jag kommer gärna."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Var har Kenji spelat basket förut?",
+    "options": [
+     "I Johans klubb",
+     "I skolan i Japan",
+     "På kontoret",
+     "Aldrig"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Jag spelade basket i skolan i Japan.",
+    "explanationJa": "{日本|にほん}の{学校|がっこう}でバスケットボールをしていました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör Johan med sina två straffkast?",
+    "options": [
+     "Han sätter båda",
+     "Han missar båda",
+     "Han sätter ett",
+     "Han passar bollen"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Han sätter båda.",
+    "explanationJa": "{二本|にほん}とも{決|き}めました。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför går matchen till övertid?",
+    "options": [
+     "Domaren vill det",
+     "Det står lika när tiden är slut",
+     "Johan blev skadad",
+     "Det andra laget tog timeout"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Ingen gör fler poäng, så matchen går till övertid.",
+    "explanationJa": "{時間|じかん}が{終|お}わったとき{同点|どうてん}だったからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "En basketmatch kan sluta oavgjort.",
+    "correct": false,
+    "explanationSv": "– I basket kan det inte bli oavgjort …",
+    "explanationJa": "バスケットボールでは{引|ひ}き{分|わ}けにはなりません。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Kenji vill gärna träna med Johans lag.",
+    "correct": true,
+    "explanationSv": "– … men jag kommer gärna.",
+    "explanationJa": "ケンジは「{喜|よろこ}んで{行|い}く」と{答|こた}えています。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "I basket har varje lag fem spelare på planen, och en match består av fyra perioder på tio minuter.",
+    "source": "FIBA:s spelregler (Official Basketball Rules), som Svenska Basketbollförbundet följer",
+    "checked": "2026-11-27",
+    "recheck": "årligen"
+   },
+   {
+    "text": "En basketmatch kan inte sluta oavgjort: står det lika spelar man övertid på fem minuter, och fler om det behövs.",
+    "source": "FIBA:s spelregler (Official Basketball Rules)",
+    "checked": "2026-11-27",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Ett skott utanför trepoängslinjen ger tre poäng, och ett straffkast ger en poäng.",
+    "source": "FIBA:s spelregler (Official Basketball Rules)",
+    "checked": "2026-11-27",
+    "recheck": "årligen"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om basket och om att vinna och förlora.",
+  "discussionPoints": [
+   "Har du spelat basket? Vad är svårast: att dribbla eller att skjuta?",
+   "Vad gör en bra tränare under en timeout?",
+   "Är det bra att en match inte kan sluta oavgjort? Varför?",
+   "Hur känns det att förlora en match? Vad brukar du göra efteråt?"
+  ]
+ },
+ "standard": 2
+}
