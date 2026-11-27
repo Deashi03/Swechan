@@ -139,11 +139,12 @@ export const ARTB_MOTIFS: Record<string, Svg> = {
   // mättad: paint pressed out of a tube as a pure, strong red, ringed; the same paint mixed with grey, greyed out
   'artb.mättad.3': all(wall(), path('M12 30 L44 22 L48 38 L16 46 Z', '#e9e9e9', C.ink, 1.6), rect(44, 24, 8, 12, C.dark, 1, C.ink, 1.2), blob(76, 46, 22, '#e3122b', 2), ring(76, 46, 30),
     greyed(blob(30, 92, 12, '#b9868b'), blob(62, 98, 10, '#c0a0a4'))),
-  // blek: the same T-shirt twice – before: strong and dark blue (grey frame); after sun and washing: faded and patchy (orange frame); a sun and a time arrow between
-  'artb.blek.2': all(wall(), sun(60, 18, 8), arrow(46, 62, 74, 62, C.ink, 2.6),
-    tee(24, 64, '#1f3f8f'), frame(4, 36, 40, 54, C.grey),
-    tee(96, 64, '#a9b4c6'), path('M86 58 C90 54 96 60 100 56 L102 70 C96 74 90 68 86 72 Z', '#c7cfdb', null), path('M92 80 C96 78 102 82 106 80 L106 86 L92 86 Z', '#c3cbd8', null), frame(76, 36, 40, 54),
-    drop(54, 98, 1.1), drop(66, 102, 1.1)),
+  // blek (manual track): one colour-sample strip – the same blue goes from strong (grey frame) to almost white (orange frame, arrow); a pastel palette is crossed out beside it
+  'artb.blek.2': all(wall(), rect(6, 20, 108, 34, C.white, 3, C.ink, 1.6),
+    ...['#1f3f8f', '#4d68a6', '#8394bd', '#b9c2d7', '#e4e8ef'].map((col, i) => rect(10 + i * 20.4, 24, 18, 26, col, 2, C.ink, 1.2)), frame(8, 22, 22, 30, C.grey), frame(90, 18, 24, 38),
+    arrow(36, 64, 98, 64, HL, 3), path('M36 64 L36 60', 'none', HL, 3),
+    g('translate(36 96)', path('M-26 6 C-30 -8 -12 -18 4 -16 C20 -14 28 -2 22 8 C18 14 10 10 6 16 C2 22 -14 22 -20 16 C-24 13 -25 10 -26 6 Z', '#d7a86e', C.ink, 1.4), circle(-12, -4, 4, '#f6c9d4', C.ink, 1), circle(0, -9, 4, '#c7e6d4', C.ink, 1), circle(12, -6, 4, '#cfe0f6', C.ink, 1), circle(-4, 4, 4, '#f6ecc0', C.ink, 1)),
+    line('M10 76 L62 114 M62 76 L10 114', '#d8322f', 3.2)),
   // palett: a wooden palette with a thumb hole and blobs of paint, a brush across it
   'artb.palett': all(wall(), path('M16 70 C8 40 40 18 72 22 C102 26 116 50 104 72 C96 86 80 80 74 90 C68 102 44 104 30 94 C22 88 20 80 16 70 Z', '#d7a86e', C.ink, 2),
     ellipse(80, 64, 6, 5, WALL, C.ink, 1.6), blob(36, 50, 7, RED, 1.2), blob(54, 38, 7, YEL, 1.2), blob(76, 38, 7, BLU, 1.2), blob(92, 52, 6, C.white, 1.2), blob(40, 76, 7, GRN, 1.2), blob(58, 62, 6, ORA, 1.2),
@@ -280,11 +281,6 @@ export const ARTB_MOTIFS: Record<string, Svg> = {
     path('M48 80 C50 66 62 60 74 64 C70 74 62 80 48 80 Z', '#e2574c', C.ink, 1.4), path('M48 80 C56 74 64 68 74 64', 'none', C.ink, 1),
     ellipse(96, 72, 12, 7, '#9aa3ad', C.ink, 1.6), path('M10 106 C10 98 22 96 26 104 Z', '#f6e7c6', C.ink, 1.4), line('M14 104 L18 98 M18 104 L20 98 M22 104 L22 99', '#c9a07a', 1)),
 };
-
-/** T-shirt centred at (x, y) (blek). */
-function tee(x: number, y: number, col: string) {
-  return g(`translate(${x} ${y})`, path('M-8 -20 C-4 -16 4 -16 8 -20 L18 -15 L15 -5 L10 -7 L10 20 L-10 20 L-10 -7 L-15 -5 L-18 -15 Z', col, C.ink, 1.6), path('M-8 -20 C-4 -14 4 -14 8 -20', 'none', C.ink, 1.2));
-}
 
 /** Small cup (lysa upp). */
 function cup(x: number, y: number) {
