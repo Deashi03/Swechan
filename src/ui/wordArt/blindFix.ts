@@ -2,7 +2,7 @@
  * Pictures redrawn after the 0.19.1 blind test (food, home, family, love and friends). Every picture
  * carries its word with a situation or with a contrast against a grey reference; marks only support.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, star, waIn, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, moving, sparkle, star, waIn, type Svg } from './kit';
 import { figure, type Build } from './figures';
 import { HL, arm, bolt, bubble, cloud, heart, sun, thought } from './people';
 import { block, house, sofa } from './homeKit';
@@ -40,6 +40,28 @@ const egg = (x: number, y: number, s = 1, fill: string = '#fbf4e6') => ellipse(x
 export const coin = (x: number, y: number, r = 5) => all(circle(x, y, r, C.gold, C.ink, 1.2), circle(x, y, r * 0.55, 'none', '#b88a20', 1));
 const mitt = (x: number, y: number) => path(`M${x - 5} ${y + 6} L${x - 5} ${y - 4} C${x - 5} ${y - 9} ${x + 5} ${y - 9} ${x + 5} ${y - 4} L${x + 5} ${y + 6} Z`, C.red, C.ink, 1.2);
 const bun = (x: number, y: number) => all(ellipse(x, y, 7, 4.6, '#c98a3e', C.ink, 1.2), path(`M${x - 4} ${y - 1} C${x - 2} ${y - 4} ${x + 2} ${y + 2} ${x + 4} ${y - 1}`, 'none', '#8a5a24', 1.2), circle(x - 1, y - 2, 0.8, C.white, null), circle(x + 2, y - 1, 0.8, C.white, null));
+
+// ── B6: scenes redrawn by hand (the animated scenes only worked with a gloss text) ──
+const okMark = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, circle(0, 0, 7, C.green, C.ink, 1.4), line('M-3.4 0 L-1 2.8 L3.6 -2.6', C.white, 2));
+const noMark = (x: number, y: number, s = 1) => g(`translate(${x} ${y}) scale(${s})`, line('M-5 -5 L5 5 M5 -5 L-5 5', C.grey, 2.8));
+const cutBoard = all(rect(6, 94, 108, 10, '#d9b07a', 3, C.ink, 1.8), line('M14 99 L56 99 M70 99 L104 99', '#b98a52', 1));
+/** Kitchen knife: tip at the origin pointing left, edge down. blunt = rounded tip and a thick, dull edge. */
+const chefKnife = (blunt = false) => all(
+  path(blunt ? 'M3 -4 C-1 -2 -1 4 4 5 L50 6 L50 -10 Z' : 'M0 1 L50 -10 L50 5 Q22 6 0 1 Z', '#dfe5ea', C.ink, 1.6),
+  blunt ? line('M5 4.6 L49 5.4', '#7f868e', 3.6) : line('M5 2.4 Q24 4.6 49 3.6', C.white, 1.4),
+  rect(50, -10, 24, 14, '#3a3a40', 4, C.ink, 1.6), circle(57, -3, 1.3, C.silver, null), circle(67, -3, 1.3, C.silver, null));
+const tomatoSlice = (x: number, y: number, rot = 0) => g(`translate(${x} ${y}) rotate(${rot})`, ellipse(0, 0, 5.5, 14, '#e23a2e', C.ink, 1.4), ellipse(0, 0, 3.4, 10.6, '#f6a08e', null), ...[-6, 0, 6].map((b) => ellipse(0, b, 1.1, 2, '#f7e3a0', null)));
+const toast = (x: number, y: number, s: number, fill: string, crust: string, extra: Svg = '') => {
+  const d = 'M-12 -6 C-18 -8 -16 -18 -8 -17 C-4 -22 4 -22 8 -17 C16 -18 18 -8 12 -6 L12 14 C12 17 -12 17 -12 14 Z';
+  return g(`translate(${x} ${y}) scale(${s})`, path(d, crust, C.ink, 1.8), g('translate(0 -0.6) scale(0.76)', path(d, fill, null)), extra);
+};
+/** Extras drawn in the coordinate system of figure({ x, h }). */
+const onFigure = (x: number, h: number, ...k: Svg[]) => g(`translate(${x} ${(112 - 49 * 0.84 * h).toFixed(1)}) scale(${(0.84 * h).toFixed(3)})`, ...k);
+const chunk = (x: number, y: number, r: number, rot: number, fill: string) => g(`translate(${x} ${y}) rotate(${rot})`, path(`M${-r} ${-r * 0.5} L${-r * 0.2} ${-r} L${r} ${-r * 0.4} L${r * 0.8} ${r * 0.7} L${-r * 0.5} ${r} Z`, fill, C.ink, 1.4), line(`M${-r * 0.2} ${-r} L${r * 0.1} ${-r * 0.1} L${r * 0.8} ${r * 0.7} M${r * 0.1} ${-r * 0.1} L${-r} ${-r * 0.5}`, C.ink, 0.7));
+const dim = (...k: Svg[]): Svg => `<g opacity="0.72" style="filter:grayscale(1)">${k.join('')}</g>`;
+const footprint = (x: number, y: number) => all(ellipse(x, y, 4.6, 2.3, C.grey, null), circle(x + 6.2, y, 1.9, C.grey, null));
+const sideShoe = (x: number) => path(`M${x + 4} 104 L${x - 6} 106 C${x - 10} 107 ${x - 10} 111 ${x - 6} 111 L${x + 5} 111 Z`, C.black, C.ink, 1.4);
+const limb = (d: string, col: string, w = 6) => line(d, C.ink, w + 2.6) + line(d, col, w);
 
 export const BLIND_FIX_MOTIFS: Record<string, Svg> = {
   // ── Grundbegrepp ─────────────────────────────────────────────────
@@ -127,4 +149,58 @@ export const BLIND_FIX_MOTIFS: Record<string, Svg> = {
   'fix.kraftig': all(ground, figure({ x: 30, h: 0.9, grey: true }), figure({ x: 82, h: 0.9, top: '#5a7a4a', w: 1.7, belly: 0.7, muscle: true }), line('M6 28 L114 28', C.grey2, 1, '3 3')),
   'fix.stel': all(rect(76, 8, 36, 30, '#ffe8b0', 2, C.ink, 1.6), circle(94, 36, 9, '#f2a040', null), line('M94 8 L94 38 M76 23 L112 23', C.ink, 1.2), rect(4, 80, 52, 14, C.white, 3, C.ink, 1.6), rect(4, 72, 16, 10, '#c8d8f0', 3, C.ink, 1.2), line('M4 94 L4 112 M56 94 L56 112', C.brown, 3), ground, g('translate(62 0)', path('M-6 72 L-8 110 L0 110 L2 76 Z M4 72 L6 110 L14 110 L10 74 Z', C.navy, C.ink, 1.6), path('M-8 74 L10 74 L10 38 L-8 38 Z', '#9ab0e8', C.ink, 1.8), circle(1, 28, 8, C.skin, C.ink, 1.6), path('M-7 26 C-7 18 9 18 9 26 Z', C.hair, C.ink, 1.2), line('M-3 28 L-1 28.6 M5 28 L3 28.6', C.ink, 1.2), path('M-2 33 Q1 31 4 33', 'none', C.ink, 1.2), line('M10 44 L16 62 L12 70', C.skin, 4), line('M-8 44 L-14 60', C.skin, 4)), ...[[52, 66], [76, 58]].map(([x, y]) => bolt(x!, y!, 0.7)), line('M50 40 L50 76', '#e8a040', 1.6, '3 3'), line('M74 40 L74 76', '#e8a040', 1.6, '3 3'), g('translate(30 64)', circle(0, 0, 7, C.white, C.ink, 1.2), line('M0 0 L0 -4 M0 0 L3 1', C.ink, 1.2))),
   'fix.smärtsam': all(ground, g('translate(20 96) rotate(-10)', circle(-8, 10, 8, 'none', C.ink, 2), circle(18, 10, 8, 'none', C.ink, 2), path('M-8 10 L4 -4 L18 10 M4 -4 L0 -12', 'none', C.red, 2.4)), P({ x: 72, top: '#3a6ab0', mood: 'frown' }), path('M66.6 23.8 l-1 3 M77.4 23.8 l1 3', 'none', '#8cc7e8', 1.6), drop(64, 30, 0.6), path('M80 44 L94 52 L86 62', 'none', C.skin, 5), path('M80 44 L94 52 L86 62', 'none', C.ink, 0.6), ...[[100, 48], [96, 66], [104, 32]].map(([x, y]) => bolt(x!, y!, 1)), path('M90 52 l4 -2 M92 56 l4 0', 'none', '#e8302c', 1.4)),
+  // ── B6: omritade scener ───────────────────────────────────────────
+  'fix.vass': all(cutBoard, tomatoSlice(17, 79, -10), tomatoSlice(30, 79, -10), tomatoSlice(43, 79, -10),
+    g('translate(86 76)', path('M-9 -16 C6 -24 20 -10 20 1 C20 13 6 23 -9 17 Z', '#e23a2e', C.ink, 2), path('M8 -12 C13 -8 15 -3 15 2', 'none', '#f6a08e', 2), ellipse(-9, 0.5, 5, 16.6, '#f6a08e', C.ink, 1.6), ...[-8, 0, 8].map((b) => ellipse(-9, b, 1.2, 2.4, '#f7e3a0', null)), path('M2 -19 L6 -25 L8 -19 L14 -21 L10 -16 Z', C.green, C.ink, 1.2)),
+    g('translate(57 93) rotate(-60)', chefKnife(), sparkle(26, 6, 8, C.gold), sparkle(26, 6, 3.6, C.white)),
+    line('M62 40 L56 50 M70 34 L66 41', C.grey, 1.6)),
+  'fix.slö': all(cutBoard, ellipse(56, 93, 40, 3.6, '#f08a7a', null),
+    path('M24 86 C22 74 34 70 44 74 C52 77 60 77 68 74 C78 70 90 74 88 86 C86 95 26 95 24 86 Z', '#e23a2e', C.ink, 2), line('M36 82 L42 88 L39 91 M72 80 L68 87 L72 91 M54 84 L56 90', '#8f1f18', 1.4),
+    path('M92 92 C90 86 96 84 99 87 C102 83 108 86 106 90 C110 92 108 96 104 95 C100 98 94 97 92 92 Z', '#f08a7a', C.ink, 1.4), ellipse(98, 91, 1, 1.6, '#f7e3a0', null), ellipse(103, 92, 1, 1.6, '#f7e3a0', null),
+    ...[[12, 78, 1], [18, 66, 0.8], [8, 90, 0.7], [96, 70, 1], [104, 78, 0.8], [90, 60, 0.7]].map(([x, y, s]) => drop(x!, y!, s!, '#e8473a')),
+    line('M20 82 L15 80 M92 78 L97 75', '#e8473a', 1.6),
+    g('translate(22 70) rotate(-2)', chefKnife(true)),
+    line('M40 44 L40 52 M54 42 L54 50 M68 44 L68 52', C.grey, 2)),
+  'fix.gyllenbrun': all(
+    toast(21, 54, 1, '#fbf5e2', '#efdfb8'), noMark(21, 92),
+    toast(98, 54, 1, '#3a302c', '#1d1918', line('M-6 -24 C-9 -28 -3 -30 -6 -35 M4 -25 C1 -29 7 -31 4 -36', C.grey, 1.4)), noMark(98, 92),
+    toast(60, 50, 1.5, '#e3a23c', '#b8732a', all(...[[-5, -8], [4, -2], [-3, 5], [5, 8], [1, -11]].map(([x, y]) => ellipse(x!, y!, 2, 1.2, '#c98630', null)))),
+    okMark(60, 96, 1.3), sparkle(34, 28, 5), sparkle(86, 26, 6), sparkle(88, 76, 4)),
+  'fix.modern': all(
+    dim(rect(5, 10, 50, 82, '#e9dcc0', 3, C.ink, 1.8), path('M5 74 L55 74 L55 89 C55 91 53 92 52 92 L8 92 C6 92 5 91 5 89 Z', '#b98a52', C.ink, 1.4),
+      ...[[32, 20], [44, 28], [32, 36], [44, 44], [48, 16]].map(([x, y]) => path(`M${x} ${y! - 3} C${x! + 3} ${y! - 2} ${x! + 3} ${y! + 2} ${x} ${y! + 3} C${x! - 3} ${y! + 2} ${x! - 3} ${y! - 2} ${x} ${y! - 3} Z`, '#d8c49a', null)),
+      path('M10 86 L10 30 C10 24 14 20 17 20 C20 20 24 24 24 30 L24 86 Z', '#8a5a34', C.ink, 1.6), path('M12 20 C12 15 15 16 17 13 C19 16 22 15 22 20', '#8a5a34', C.ink, 1.4), circle(17, 32, 5.4, C.white, C.ink, 1.2), line('M17 32 L17 28.6 M17 32 L19.6 33.4', C.ink, 1), rect(13, 42, 8, 36, '#5e3c22', 1, C.ink, 1), line('M17 44 L19 66', C.gold, 1.2), circle(19.2, 68, 3, C.gold, C.ink, 1),
+      path('M31 66 C29 54 31 46 34 44 C37 40 47 40 50 44 C53 46 55 54 53 66 Z', '#a8443e', C.ink, 1.6), path('M34 44 C30 42 31 37 35 39 M50 44 C54 42 53 37 49 39', 'none', '#8a5a34', 2), ...[[38, 50], [46, 50], [42, 57]].map(([x, y]) => circle(x!, y!, 1, C.ink, null)),
+      path('M29 64 C29 61 55 61 55 64 L55 72 C55 74 29 74 29 72 Z', '#a8443e', C.ink, 1.6), path('M32 74 C34 80 32 84 29 86 M52 74 C50 80 52 84 55 86', 'none', '#8a5a34', 2.4)),
+    noMark(30, 103),
+    rect(63, 10, 52, 82, C.white, 3, HL, 2.8), path('M64.4 74 L113.6 74 L113.6 89 C113.6 90 113 90.6 112 90.6 L66 90.6 C65 90.6 64.4 90 64.4 89 Z', '#d5dbe1', null), line('M64.4 74 L113.6 74', C.ink, 1.2),
+    rect(72, 20, 34, 20, '#22242c', 1.5, C.ink, 1.6), rect(74, 22, 30, 16, '#6fb6e6', 0.5, null), path('M74 38 L84 22 L92 22 L82 38 Z', '#a5d4f2', null),
+    rect(70, 46, 38, 3, '#22242c', 1, null),
+    rect(71, 58, 36, 12, '#2f9c95', 1.5, C.ink, 1.6), rect(69, 66, 40, 11, '#37b3aa', 1.5, C.ink, 1.6), line('M89 66 L89 77', C.ink, 1), line('M72 77 L72 84 M106 77 L106 84', C.ink, 1.8),
+    okMark(89, 103)),
+  'fix.grov': all(rect(4, 100, 112, 8, '#d9b07a', 3, C.ink, 1.8),
+    path('M8 100 C14 84 22 62 30 62 C38 62 46 84 52 100 Z', C.grey2, C.grey, 1.6),
+    ...[[30, 68], [26, 74], [33, 75], [23, 81], [29, 81], [36, 82], [20, 88], [26, 88], [32, 88], [38, 88], [16, 94], [22, 94], [28, 94], [34, 94], [40, 94], [45, 95], [12, 97], [48, 98]].map(([x, y]) => circle(x!, y!, 0.8, C.grey, null)),
+    ...[[62, 92, 8, 10, '#e9b24a'], [78, 93, 7.5, -20, '#d98f38'], [94, 92, 8, 35, '#f0c468'], [108, 94, 6.5, 80, '#d98f38'], [70, 79, 8, 50, '#f0c468'], [86, 78, 8.5, -8, '#e9b24a'], [101, 80, 7.5, 24, '#d98f38'], [78, 64, 8, 20, '#d98f38'], [93, 65, 8, -30, '#f0c468'], [86, 50, 8, 8, '#e9b24a']].map(([x, y, r, rot, f]) => chunk(x as number, y as number, r as number, rot as number, f as string)),
+    noMark(30, 46, 0.9), okMark(86, 28, 1.1)),
+  'fix.sportig': all(rect(4, 44, 22, 68, '#ece6d8', 1, null), rect(48, 30, 24, 82, '#e6e0d0', 1, null), rect(98, 52, 18, 60, '#ece6d8', 1, null), ...[[52, 38], [62, 38], [52, 52], [62, 52], [52, 66], [62, 66]].map(([x, y]) => rect(x!, y!, 6, 8, '#f6f2ea', 0.5, null)), ground,
+    figure({ x: 28, h: 0.92, grey: true, face: 'neutral' }),
+    onFigure(28, 0.92, path('M-5 -42 L0 -30 L5 -42 Z', C.white, C.ink, 1.2), path('M-1.6 -39 L1.6 -39 L2.4 -24 L0 -20 L-2.4 -24 Z', '#6a707a', C.ink, 1), line('M-5 -42 L-1 -14 L-1 2 M5 -42 L1 -14', C.ink, 1.2), circle(-0.2, -9, 0.9, C.ink, null), circle(-0.2, -3, 0.9, C.ink, null), line('M6 -30 L10 -30', C.white, 1.4), rect(13, 2, 13, 10, '#8d949c', 1.5, C.ink, 1.4), path('M17 2 L17 -1 L22 -1 L22 2', 'none', C.ink, 1.4)),
+    onFigure(84, 0.96, rect(-12, -50, 24, 22, '#2a6f97', 6, C.ink, 1.8)),
+    figure({ x: 84, h: 0.96, top: '#e4572e', bottom: C.navy }),
+    onFigure(84, 0.96, line('M-8.5 -42 L-8 -6 M8.5 -42 L8 -6', '#2a6f97', 3.4), line('M0 -42 L0 2', C.white, 1.8), rect(-1.6, -38, 3.2, 4.4, C.silver, 1, C.ink, 0.8), path('M-7 -43 L0 -37 L7 -43 L7 -46 L-7 -46 Z', '#e4572e', C.ink, 1.4),
+      line('M-17 -37 C-20.4 -30 -20.8 -18 -19.6 -7 M17 -37 C20.4 -30 20.8 -18 19.6 -7', C.white, 1.6), line('M-12 0.4 L12 0.4', C.white, 1.6), line('M-10.6 6 L-9.8 42 M10.6 6 L9.8 42', C.white, 1.8),
+      path('M-11 43 L-3 43 L-2 49 L-14 49 Z M3 43 L11 43 L14 49 L2 49 Z', C.white, C.ink, 1.4), line('M-13.6 49.4 L-2.2 49.4 M2.2 49.4 L13.6 49.4', C.reflex, 2), line('M-9 45.4 L-5 46.4 M5 46.4 L9 45.4', '#e4572e', 1.4)),
+    sparkle(106, 30, 5), sparkle(64, 22, 4)),
+  'fix.baklänges': all(path('M0 100 L120 100 L120 102 C120 112 112 120 102 120 L18 120 C8 120 0 112 0 102 Z', '#e9e2d2', null), line('M0 100 L120 100', C.grey2, 1.6), footprint(12, 109), footprint(27, 105), footprint(42, 109),
+    arrow(52, 14, 108, 14),
+    moving('fixbak', '0%{transform:translate(-20px,0)}70%,100%{transform:translate(0,0)}', { dur: 2.6 },
+      line('M36 52 L50 52 M32 64 L48 64 M36 76 L50 76', C.grey, 2),
+      limb('M76 54 L88 64 L86 74', '#3a6ab0', 5), circle(86, 76, 3.2, C.skin, C.ink, 1.2),
+      limb('M74 76 L86 92 L90 104', C.navy), sideShoe(90),
+      limb('M72 76 L64 92 L62 104', C.navy), sideShoe(62),
+      path('M66 48 L80 48 C82 58 82 68 79 78 L66 78 C63 68 63 58 66 48 Z', '#3a6ab0', C.ink, 2),
+      limb('M72 54 L62 64 L58 72', '#3a6ab0', 5), circle(57, 74, 3.2, C.skin, C.ink, 1.2),
+      rect(69.5, 42, 7, 8, C.skin, 2, C.ink, 1.6), circle(72, 34, 10.5, C.skin, C.ink, 2), path('M61.8 34 L57.4 37 L62 39', C.skin, C.ink, 1.6),
+      path('M66 24.6 C76 20 86 28 82 42 C80 36 78 31 72 31 C69 31 67 28 66 24.6 Z', C.hair, C.ink, 1.6), circle(66, 32.6, 1.4, C.ink, null), line('M63.4 40.4 L67 40', C.ink, 1.3))),
 };
