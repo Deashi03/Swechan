@@ -205599,7 +205599,14 @@
    "motif": "vgame.actionspel",
    "group": "genre",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "2291e572",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65; granskaren valde rätt bild alla tre gångerna men med medelhög säkerhet."
+   }
   },
   {
    "senseId": "s.äventyrsspel.1",
@@ -205813,7 +205820,10 @@
    "kind": "illustration",
    "motif": "vgame.spelvärld",
    "group": "värld",
-   "quiz": false
+   "quiz": false,
+   "confusableWith": [
+    "s.öppen-värld.1"
+   ]
   },
   {
    "senseId": "s.öppen-värld.1",
@@ -205821,7 +205831,16 @@
    "motif": "vgame.öppen-värld",
    "group": "värld",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.spelvärld.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.65.0",
+    "hash": "de0f600d",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.spelfigur.1",
@@ -205843,7 +205862,14 @@
    "motif": "vgame.huvuduppdrag",
    "group": "uppdrag",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "ea3a4961",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65; granskaren valde rätt bild alla tre gångerna men med medelhög säkerhet."
+   }
   },
   {
    "senseId": "s.sidouppdrag.1",
@@ -206050,7 +206076,14 @@
    "motif": "vgame.rankad",
    "group": "rank",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "760a0f00",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65; granskaren valde rätt bild alla tre gångerna men med medelhög säkerhet."
+   }
   },
   {
    "senseId": "s.poängtavla.1",

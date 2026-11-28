@@ -142,11 +142,15 @@ export const CRAFT_MOTIFS: Record<string, Svg> = {
     circle(92, 76, 21, C.white, C.ink, 1.6), circle(92, 76, 21, 'none', C.brown, 4), rect(88, 51, 8, 6, C.gold, 1.5, C.ink, 1.1), circle(90, 76, 4, C.red, C.ink, 0.9), line('M90 80 L90 90 M90 85 q-5 -1 -6 -5 M90 86 q5 -1 6 -5', C.green, 1.8), sewNeedle(104, 62, 30, 22), line('M94 74 C100 70 100 66 104 62', C.red, 1.2)),
 
   // ── 4732 Sömnad ─────────────────────────────────────────────────────
-  // sömnad (symbol): a garment taking shape on a dress form, with needle, thread, tape measure and scissors
-  'craft.sömnad': all(ground, line('M52 90 L52 108 M38 110 L66 110', C.ink, 3), path('M40 30 C36 34 32 38 30 46 C32 56 38 62 38 70 L36 90 L68 90 L66 70 C66 62 72 56 74 46 C72 38 68 34 64 30 Q52 36 40 30 Z', C.beige, C.ink, 1.8), ellipse(52, 29, 8, 3, C.tan, C.ink, 1.3),
-    path('M40 30 C36 34 32 38 30 46 C32 56 38 62 38 70 L36 90 L52 90 L52 35 Q45 34 40 30 Z', C.denim, C.ink, 1.6), line('M49 38 L49 88', C.white, 1.2, '3 3'), pin(46, 50, -60, C.red, 10), pin(46, 66, -60, C.yellow, 10),
-    cord('M58 33 C70 44 62 60 70 76', C.yellow, 2.6), line('M61 38 l3 -2 M64 46 l3 -1 M64 54 l3 0 M65 62 l3 1 M67 70 l3 1', C.ink, 0.9),
-    sewNeedle(100, 18, 24, 40), line('M98 22 C84 26 92 44 78 44 C70 44 68 50 60 52', HL, 1.6), scissors(94, 92, 0.7, -160, C.red)),
+  // sömnad (symbol): the whole hobby in three frames – cloth with pattern and scissors, needle and thread that join
+  // two pieces, the finished garment on a hanger
+  'craft.sömnad': all(rect(4, 6, 52, 48, C.white, 5, C.ink, 1.6), rect(64, 6, 52, 48, C.white, 5, C.ink, 1.6), rect(26, 62, 68, 54, C.white, 5, C.ink, 1.6),
+    rect(8, 12, 44, 36, C.denim, 2, C.ink, 1.3), path('M13 17 L24 15 C27 19 31 19 34 15 L38 18 L35 26 L35 43 L13 43 Z', '#f3e6c8', C.ink, 1.2), line('M16 20 L24 18 C27 22 31 22 34 19 M32 27 L32 40 L16 40 L16 20', C.grey, 0.9, '2 2'), scissors(40, 38, 0.5, -120, C.red),
+    arrow(57, 30, 63, 30, C.grey, 2),
+    path('M68 20 L90 20 L90 46 L68 46 Z', C.denim, C.ink, 1.3), path('M90 24 L112 24 L112 50 L90 50 Z', C.denim2, C.ink, 1.3), line('M90 26 L90 42', HL, 2.4, '3 2.5'), line('M109 13 C104 6 94 10 91 24', HL, 1.3), sewNeedle(109, 12, 42, 26),
+    arrow(88, 55, 76, 61, C.grey, 2),
+    path('M60 72 C60 67 66 67 66 71 C66 74 60 74 60 78', 'none', C.ink, 1.8), path('M60 78 L38 88 L82 88 Z', 'none', C.brown, 2.6),
+    path('M48 84 Q60 92 72 84 L86 92 L82 102 L74 98 L74 112 L46 112 L46 98 L38 102 L34 92 Z', C.denim, C.ink, 1.6), line('M60 90 L60 112', C.denim2, 1.2), circle(60, 96, 1.4, C.white, C.ink, 0.7), circle(60, 103, 1.4, C.white, C.ink, 0.7), sparkle(88, 70, 4)),
   // tyg: bolts of cloth with different patterns, one length hanging down
   'craft.tyg': all(rect(18, 12, 84, 20, C.red, 9, C.ink, 1.8), ...[30, 44, 58, 72, 86].map((x) => circle(x, 22, 2.4, C.white, null)), ellipse(98, 22, 4, 8, C.rose, C.ink, 1.2),
     rect(14, 36, 84, 20, C.denim, 9, C.ink, 1.8), line('M26 37 L26 55 M38 37 L38 55 M50 37 L50 55 M62 37 L62 55 M74 37 L74 55', C.white, 1.8), ellipse(94, 46, 4, 8, C.sky, C.ink, 1.2),
