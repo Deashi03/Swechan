@@ -1,11 +1,11 @@
 {
  "id": "m.naringsamnen-i-maten",
- "contentVersion": 3,
- "updatedAt": "2026-11-19",
+ "contentVersion": 4,
+ "updatedAt": "2026-11-28",
  "titleSv": "Näringsämnen i maten",
  "titleJa": "{食|た}べ{物|もの}の{栄養素|えいようそ}",
- "descriptionSv": "Näringsämnen och hälsosam mat: kolhydrater, protein, vitaminer, fiber och tallriksmodellen.",
- "descriptionJa": "{栄養素|えいようそ}と{健康的|けんこうてき}な{食事|しょくじ}：{炭水化物|たんすいかぶつ}、たんぱく{質|しつ}、ビタミン、{食物繊維|しょくもつせんい}、{皿|さら}モデル。",
+ "descriptionSv": "Du lär dig beskriva vad maten innehåller och varför kroppen behöver det, och hur tallriksmodellen visar en balanserad måltid.",
+ "descriptionJa": "{食|た}べ{物|もの}に{何|なに}が{含|ふく}まれ、なぜ{体|からだ}に{必要|ひつよう}なのかを{説明|せつめい}できるようになります。{皿|さら}モデルがバランスのとれた{食事|しょくじ}をどう{示|しめ}すかも{学|まな}びます。",
  "categoryId": "R01-A02-T06",
  "tags": [
   "mat"
@@ -154,7 +154,24 @@
    }
   ],
   "factSources": [
-   "Livsmedelsverkets tallriksmodell; allmän näringslära (kolhydrater energi, kalcium för skelettet, fiber för tarmen)."
+   {
+    "text": "Tallriksmodellen delar måltiden i tre delar: grönsaker och rotfrukter; potatis, pasta, ris eller bröd; och en mindre del kött, fisk, ägg eller baljväxter. Den som rör sig lite tar mer grönsaker och mindre potatis, pasta eller ris.",
+    "source": "Livsmedelsverket, ”Tallriksmodellen”",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Kalcium behövs för skelett och tänder och finns bland annat i mjölkprodukter. Fullkorn innehåller mycket fibrer.",
+    "source": "Livsmedelsverket, ”Kalcium” och ”Fullkorn”",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Livsmedelsverkets kostråd utgår från matvanorna som helhet, inte från enstaka livsmedel.",
+    "source": "Livsmedelsverket, kostråden för vuxna",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -165,5 +182,6 @@
    "Räknar du kalorier? Varför eller varför inte?",
    "Vilken onyttig mat har du svårt att låta bli?"
   ]
- }
+ },
+ "standard": 2
 }

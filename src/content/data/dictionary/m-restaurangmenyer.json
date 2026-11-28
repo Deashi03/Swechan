@@ -147,7 +147,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.förrätt",
@@ -182,7 +186,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.varmrätt",
@@ -221,7 +229,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.efterrätt",
@@ -262,7 +274,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.dessert",
@@ -303,7 +319,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.smårätt",
@@ -338,7 +358,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.barnmeny",
@@ -373,7 +397,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.specialitet",
@@ -401,14 +429,40 @@
        "ja": "{店|みせ}の{名物|めいぶつ}はグリルした{肉|にく}です。"
       }
      ],
+     "labelSv": "maträtt",
+     "explanation": {
+      "sv": "En specialitet är något som en restaurang, en kock eller en plats gör särskilt bra och är känd för. På en restaurang frågar man ofta efter husets specialitet.",
+      "ja": "「specialitet」は、レストランやシェフ、ある{土地|とち}が{特|とく}に{得意|とくい}で、{有名|ゆうめい}なもののことです。レストランでは「husets specialitet（{店|みせ}の{名物|めいぶつ}）」をよくたずねます。"
+     },
      "tags": [
       "mat"
      ],
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.specialitet.2",
+     "ja": "{得意|とくい}なこと、{専門|せんもん}",
+     "defSv": "Något som en person kan eller gör särskilt bra.",
+     "defJa": "ある{人|ひと}が{特|とく}に{上手|じょうず}にできること。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Att baka bröd är min specialitet.",
+       "ja": "パンを{焼|や}くのは{私|わたし}の{得意|とくい}なことです。"
+      }
+     ],
+     "labelSv": "något man kan bra",
+     "quality": {
+      "status": "ai-draft"
+     }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.rekommendera",
@@ -448,7 +502,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.vin",
@@ -483,7 +541,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.vinlista",
@@ -518,7 +580,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.alkoholfri",
@@ -545,6 +611,10 @@
        "ja": "ノンアルコールビールはありますか。"
       }
      ],
+     "explanation": {
+      "sv": "Alkoholfri säger man om drycker som är utan alkohol, till exempel alkoholfri öl eller alkoholfritt vin. Den som ska köra bil väljer ofta något alkoholfritt.",
+      "ja": "「alkoholfri」は、アルコールの{入|はい}っていない{飲|の}み{物|もの}について{使|つか}います。{例|たと}えば、ノンアルコールのビールやワインです。{車|くるま}を{運転|うんてん}する{人|ひと}は、よくノンアルコールのものを{選|えら}びます。"
+     },
      "tags": [
       "mat"
      ],
@@ -552,7 +622,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.avsmakningsmeny",
@@ -578,7 +652,16 @@
       {
        "sv": "Avsmakningsmenyn har sju rätter.",
        "ja": "テイスティングコースは7{品|しな}です。"
+      },
+      {
+       "sv": "Vi valde en avsmakningsmeny med fem små rätter.",
+       "ja": "{私|わたし}たちは、{小|ちい}さな{料理|りょうり}が5{品|しな}{出|で}るテイスティングコースを{選|えら}びました。"
       }
+     ],
+     "collocations": [
+      "välja avsmakningsmenyn",
+      "en avsmakningsmeny med sju rätter",
+      "beställa en avsmakningsmeny"
      ],
      "tags": [
       "mat"
@@ -591,7 +674,11 @@
       "ja": "{高級|こうきゅう}レストランでは、ときどき「avsmakningsmeny」を{選|えら}べます。シェフが{全部|ぜんぶ}{決|き}めて、{小|ちい}さな{料理|りょうり}が{次々|つぎつぎ}に、よく5〜10{皿|さら}{出|で}てきます。{時間|じかん}がかかり、{値段|ねだん}も{高|たか}めです。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.inklusive",
@@ -612,6 +699,23 @@
       {
        "sv": "Priset är 300 kronor inklusive dryck.",
        "ja": "{値段|ねだん}は{飲|の}み{物|もの}{込|こ}みで300クローナです。"
+      },
+      {
+       "sv": "Vi var åtta personer, inklusive barnen.",
+       "ja": "{子|こ}どもたちを{含|ふく}めて、{私|わたし}たちは8{人|にん}でした。"
+      }
+     ],
+     "collocations": [
+      "inklusive moms",
+      "inklusive frakt",
+      "inklusive dryck"
+     ],
+     "synonyms": [
+      {
+       "senseId": "s.exklusive.1",
+       "relation": "antonym",
+       "noteSv": "Exklusive är motsatsen: det som nämns är inte med i priset.",
+       "noteJa": "「exklusive」は{反対|はんたい}の{意味|いみ}で、あげたものが{値段|ねだん}に{含|ふく}まれていないことを{表|あらわ}します。"
       }
      ],
      "tags": [
@@ -625,7 +729,11 @@
       "ja": "「inklusive」は、{値段|ねだん}に{含|ふく}まれているという{意味|いみ}です。「{飲|の}み{物|もの}{込|こ}みで300クローナ」は、{飲|の}み{物|もの}の{代金|だいきん}がすでに300クローナに{入|はい}っているということです。{含|ふく}まれていないときは「{別料金|べつりょうきん}」と{言|い}います。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   }
  ]
 }
