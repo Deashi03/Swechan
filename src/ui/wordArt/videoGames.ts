@@ -5,8 +5,9 @@
  * recognisable titles or characters, no letters that give away the word (digits, "+", "!" and "?" are fine).
  * The named part is orange (HL); grey is the reference.
  * Easily confused pairs get different kinds of picture: every genre has its own typical screen (a number puzzle for
- * pusselspel, ledges for plattformsspel, a crosshair for skjutspel …); the same map with the wide road to the
- * castle marked (huvuduppdrag) or the thin path to a hut marked (sidouppdrag, round 2); a disk that takes the game in (spara.3)
+ * pusselspel, ledges for plattformsspel, a crosshair for skjutspel …); a numbered chain that ends at the castle
+ * with the boss and a cup (huvuduppdrag) against a villager who asks for help with a cat in a tree (sidouppdrag);
+ * the manual track draws actionspel, öppen värld, rankad and spelstil as picture series or contrast pairs; a disk that takes the game in (spara.3)
  * against a glowing place in the world (sparpunkt) and a potion that goes into the bag (spara.2); one sofa and
  * one TV cut in two (delad skärm) against players in four corners (flerspelarläge) and two heroes who pull each
  * other up (samarbetsläge); signal waves to many devices (streama.2) against a face with a headset (streamare)
@@ -91,11 +92,6 @@ const back = (x: number, y: number, hair: string, top: string) => all(path(`M${x
 const playT = (x: number, y: number, s = 1, col: string = HL) => at(x, y, s, path('M-5 -7 L7 0 L-5 7 Z', col, C.ink, 1.2));
 const tinyGame = (x: number, y: number, s = 1) => at(x, y, s, rect(-7, 2, 14, 3, GRASS2, 0, null), hero(0, 2, 0.28), star(4, -6, 2.4));
 
-/** One map for the main quest (wide road to the castle) and the side quest (thin path to a hut): the named one is orange. */
-const questMap = (main: boolean) => all(rect(6, 6, 108, 108, GRASS, 12, C.ink, 2), line('M56 112 C40 88 76 70 58 42', C.white, 14), line('M56 112 C40 88 76 70 58 42', main ? HL : C.grey2, 9),
-  line('M62 76 C76 80 84 86 92 92', C.white, main ? 6 : 10), line('M62 76 C76 80 84 86 92 92', main ? C.grey2 : HL, main ? 3.4 : 6), line('M50 92 C38 90 28 86 20 80', C.grey2, 3.4), hut(16, 80, 0.7, C.grey2, C.grey), tree(100, 40, 0.8), tree(20, 40, 0.8),
-  main ? all(castle(58, 42, 1.15), star(58, 14, 7), hut(96, 96, 0.9, C.grey2, C.grey), hero(52, 106, 0.75)) : all(castle(58, 42, 1.15, C.grey2), hut(96, 98, 1.1), star(96, 70, 6), hero(54, 86, 0.75)));
-
 export const VGAME_MOTIFS: Record<string, string> = {
   // ── 4721 Spelgenrer ──
   'vgame.spelgenre': all(
@@ -103,8 +99,9 @@ export const VGAME_MOTIFS: Record<string, string> = {
     sword(21, 56, 0, 0.62), path('M40 42 L46 42 C45 39 51 39 50 42 L56 42 L56 54 L40 54 Z', C.green, C.ink, 1), car(91, 52, 0.55, C.denim),
     sword(24, 91, 0, 0.5), path('M54 80 L57 80 C56.5 78 60.5 78 60 80 L64 80 L64 89 L54 89 Z', C.white, C.ink, 0.9), car(94, 87, 0.42, C.white),
     line('M24 93 L24 104 M59 93 L59 104 M94 93 L94 104 M24 104 L94 104', C.grey, 1.6)),
-  'vgame.actionspel': tv(SKYB, gnd(), rect(15, 19, 40, 9, NIGHT, 4, C.ink, 1.2), heart(21, 23.5, 2.6), rect(26, 21.5, 26, 4, '#0d1326', 2, null), rect(26, 21.5, 17, 4, C.green, 2, null), line('M40 46 L50 46 M38 54 L48 54 M72 44 L82 44', C.white, 2.4),
-    star(80, 58, 11, C.yellow), star(80, 58, 5, HL), star(34, 60, 8, C.yellow), rot(80, 26, 70, monster(26, 76, 0.6, C.purple, { dead: true })), monster(94, 76, 0.8), monster(106, 74, 0.5, '#7fa6d6'), rot(10, 60, 70, hero(60, 78, 1.05, { arms: 'fwd' })), sword(76, 60, 70, 0.8), sparkle(98, 34, 4, C.white), sparkle(66, 30, 3, C.white)),
+  'vgame.actionspel': all(screen(14, 4, 92, 54, SKYB, rect(17, 46, 86, 9, GRASS, 0, null), star(62, 30, 15, C.yellow), star(62, 30, 8, HL), star(62, 30, 3.4, C.white), hero(34, 48, 0.7, { arms: 'fwd' }), sword(44, 36, 70, 0.6), monster(84, 48, 0.6), monster(96, 46, 0.42, '#7fa6d6'), rot(70, 70, 44, monster(72, 48, 0.42, C.red, { dead: true })), line('M20 16 L32 16 M22 24 L30 24', C.white, 2)),
+    bust(60, 82, 2.1, HL), line('M40 70 l-4 6 M80 70 l4 6 M44 62 l-3 4', C.sky, 2.2), pad(60, 106, 0.8), ellipse(42, 105, 7, 7.6, C.skin, C.ink, 1.4), ellipse(78, 105, 7, 7.6, C.skin, C.ink, 1.4),
+    line('M28 96 C24 100 24 108 28 112 M20 94 C14 100 14 110 20 116 M92 96 C96 100 96 108 92 112 M100 94 C106 100 106 110 100 116', HL, 2.4), line('M36 92 L32 86 M84 92 L88 86 M48 94 L46 88 M72 94 L74 88', HL, 2)),
   'vgame.äventyrsspel': tv(SKYB, cloudS(92, 26, 0.6), gnd(70), path('M70 70 C76 56 96 56 104 70 Z', GRASS2, null), castle(88, 60, 0.5), line('M88 60 C84 66 92 70 80 74 C70 78 76 80 64 82', '#e2d5b0', 3.4), hero(28, 80, 1), hero(52, 80, 1, { col: C.green, beard: true, flip: true }),
     path('M26 18 L62 18 L62 40 L50 40 L48 46 L44 40 L26 40 Z', C.white, C.ink, 1.5), rect(32, 21, 24, 16, C.beige, 1, C.ink, 1), line('M35 33 C39 27 43 34 47 28 L50 26', C.red, 1.1, '2 1.5'), castle(52, 27, 0.16), circle(35, 33, 1.3, C.red, null)),
   'vgame.rollspel.2': tv(NIGHT, rect(15, 20, 36, 60, '#18203a', 3, C.white, 1.2), circle(25, 31, 6, C.skin, C.white, 1), path('M19 30 C19 23 31 23 31 30 C28 27 22 27 19 30 Z', C.hair, null), rect(34, 26, 13, 3, C.white, 1.5, null), rect(34, 32, 9, 3, C.grey, 1.5, null),
@@ -150,12 +147,18 @@ export const VGAME_MOTIFS: Record<string, string> = {
 
   // ── 4723 Spelvärldar och uppdrag ──
   'vgame.spelvärld': tv(SKYB, cloudS(26, 26, 0.8), cloudS(96, 30, 0.7), path('M18 58 C30 86 90 86 102 58 Z', EARTH, C.ink, 1.6), ellipse(60, 58, 42, 13, GRASS, C.ink, 1.6), ellipse(82, 62, 12, 4, '#6fb1d8', C.ink, 1), hill(38, 54, 0.9), castle(66, 54, 0.6), tree(52, 60, 0.6), tree(24, 60, 0.55), hut(92, 56, 0.6), hut(80, 54, 0.5), sparkle(60, 22, 3.4, C.white)),
-  'vgame.öppen-värld': all(rect(4, 4, 112, 112, GRASS, 14, null), line('M60 60 L60 0 M60 60 L60 120 M60 60 L0 60 M60 60 L120 60', '#e2d5b0', 9), hill(8, 34, 1.3), hill(30, 12, 0.9), castle(116, 30, 0.9), ellipse(112, 104, 22, 14, '#6fb1d8', C.ink, 1.2), tree(4, 100, 1.1), tree(16, 112, 1), tree(26, 98, 0.8), hut(96, 6, 0.9), tree(6, 60, 0.7),
-    arrow(60, 38, 60, 22, HL, 3.4), arrow(60, 84, 60, 100, HL, 3.4), arrow(40, 60, 24, 60, HL, 3.4), arrow(80, 60, 96, 60, HL, 3.4), arrow(46, 46, 36, 36, HL, 2.6), arrow(74, 46, 84, 36, HL, 2.6), arrow(46, 76, 36, 86, HL, 2.6), arrow(74, 76, 84, 86, HL, 2.6), circle(60, 60, 15, GRASS, C.white, 1.8), hero(60, 73, 0.9)),
+  'vgame.öppen-värld': all(...[0, 1, 2].map((i) => rect(5 + i * 37.5, 32, 35, 82, [GRASS, '#bfe3f5', GRASS][i]!, 6, C.ink, 1.8)), circle(60, 16, 12, C.white, C.ink, 1.8), path('M60 6 L64 16 L60 26 L56 16 Z', C.grey2, C.ink, 1), path('M60 6 L64 16 L56 16 Z', C.red, C.ink, 1), line('M50 16 L53 16 M67 16 L70 16', C.ink, 1.4),
+    hill(22, 62, 0.95), hill(14, 68, 0.6), rect(44, 62, 32, 50, '#6fb1d8', 0, null), line('M46 70 q4 -3 8 0 t8 0 t8 0 M48 80 q4 -3 8 0 t8 0', C.white, 1.4), path('M52 56 L68 56 L65 62 L55 62 Z', C.brown, C.ink, 1.1), path('M60 56 L60 42 L68 54 Z', C.white, C.ink, 1), rect(44, 88, 32, 24, '#e6d3b3', 0, null), line('M44 62 L44 112 M76 62 L76 112', C.ink, 0.01),
+    hut(90, 62, 0.75), hut(104, 66, 0.6, C.beige, C.denim), hut(97, 74, 0.6, C.white, C.green),
+    ...[0, 1, 2].map((i) => all(rect(18 + i * 37.5, 106, 9, 5, STONE, 1.5, C.ink, 1), hero(22.5 + i * 37.5, 106, 0.62), arrow(22.5 + i * 37.5, 82, 22.5 + i * 37.5, 72, HL, 3)))),
   'vgame.spelfigur': all(tv(SKYB, gnd(), hero(28, 76, 0.9, { grey: true }), hero(94, 76, 0.9, { grey: true }), ellipse(60, 77, 14, 4, 'none', HL, 2.4), hero(60, 76, 1.25), path('M54 20 L66 20 L60 29 Z', HL, C.ink, 1.4)), line('M60 80 C60 92 76 96 86 100', HL, 2, '3 3'), pad(96, 104, 0.5)),
   'vgame.uppdrag.2': all(ground, hero(28, 108, 1.6, { col: C.green, beard: true, arms: 'fwd' }), circle(28, 36, 10, C.yellow, C.ink, 1.8), num(28, 42, '!', 16), rot(-6, 62, 62, rect(48, 44, 28, 34, C.beige, 2, C.ink, 1.8), path('M48 44 C52 40 72 40 76 44 Z', '#d1bc94', C.ink, 1.2), keyI(63, 56, 0.9), rect(53, 66, 6, 6, C.white, 1, C.ink, 1.1), line('M62 69 L71 69', C.ink, 1.4)), hero(94, 108, 1.6, { arms: 'fwd', flip: true })),
-  'vgame.huvuduppdrag': questMap(true),
-  'vgame.sidouppdrag': questMap(false),
+  'vgame.huvuduppdrag': all(ground, line('M16 98 L40 82 L64 66 L86 52', C.white, 9), line('M16 98 L40 82 L64 66 L86 52', HL, 5), ...[[16, 98], [40, 82], [64, 66]].map(([x, y], i) => all(circle(x!, y!, 9.5, HL, C.ink, 1.8), num(x!, y! + 4.6, String(i + 1), 13, C.white))),
+    castle(94, 58, 1.25), monster(94, 22, 0.55, C.purple, { crown: true }), path('M20 20 L40 20 L39 32 C38 40 22 40 21 32 Z', C.gold, C.ink, 1.6), path('M20 23 C13 23 13 33 21 33 M40 23 C47 23 47 33 39 33', 'none', C.ink, 1.6), rect(27, 39, 6, 6, C.gold, 0.5, C.ink, 1.3), rect(22, 45, 16, 5, C.gold, 1.5, C.ink, 1.4), star(30, 28, 4.4, C.white),
+    line('M46 34 C56 28 66 26 76 24', C.grey, 1.8, '3 3'), sparkle(52, 14, 4), sparkle(110, 34, 3.4)),
+  'vgame.sidouppdrag': all(ground, hero(26, 110, 1.5, { col: C.green, arms: 'up', face: 'o' }), hero(98, 110, 1.3, { flip: true }), path('M30 6 L96 6 L96 58 L54 58 L42 68 L46 58 L30 58 Z', C.white, C.ink, 1.8),
+    rect(60, 34, 5, 20, C.brown, 1, C.ink, 1.1), path('M44 34 C40 22 52 12 62 16 C72 10 86 20 80 32 C84 40 70 44 62 40 C54 44 42 42 44 34 Z', GRASS2, C.ink, 1.4), at(63, 26, 0.5, circle(0, 0, 9, C.orange, C.ink, 1.8), path('M-8 -4 L-7 -13 L-2 -8 Z M8 -4 L7 -13 L2 -8 Z', C.orange, C.ink, 1.6), circle(-3, -1, 1.6, C.ink, null), circle(3, -1, 1.6, C.ink, null), line('M-3 4 Q0 2 3 4', C.ink, 1.4)),
+    line('M36 50 l0 -8 M36 42 l-3 3 M36 42 l3 3', C.grey, 1.6), line('M50 94 L64 94 M58 88 L64 94 L58 100', C.grey, 2.2), coin(74, 94, 7), sparkle(82, 84, 3.4)),
   'vgame.bana.3': tv(NIGHT, line('M24 62 L48 44 L72 62 L96 44', C.white, 2, '3 3'), circle(24, 62, 9, C.green, C.ink, 1.4), line('M20 62 L23 65.5 L28.5 58.5', C.white, 2.2), circle(48, 44, 10, HL, C.white, 2), num(48, 48.5, '2', 12, C.white), circle(72, 62, 9, C.grey, C.ink, 1.4), num(72, 66, '3', 10, C.dark), circle(96, 44, 9, C.grey, C.ink, 1.4), num(96, 48, '4', 10, C.dark),
     hero(48, 34, 0.5), line('M104 20 L104 34', C.white, 1.6), path('M104 20 L96 23 L104 26 Z', C.grey2, null), star(24, 78, 3), star(31, 78, 3), star(17, 78, 3)),
   'vgame.boss.2': all(ground, rect(14, 8, 92, 11, C.dark, 4, C.ink, 1.8), rect(17, 11, 62, 5, C.red, 2.5, null), monster(72, 112, 2.35, C.purple, { crown: true }), hero(18, 112, 0.95, { face: 'o', arms: 'fwd' }), sword(31, 96, 30, 0.6), line('M10 76 l-2 4 M26 74 l2 4', C.sky, 1.6)),
@@ -209,9 +212,8 @@ export const VGAME_MOTIFS: Record<string, string> = {
     moving('vg-lagg', '0%,32%{transform:translate(-40px,0)}33%,62%{transform:translate(-24px,0)}63%,100%{transform:translate(0,0)}', { dur: 2.4 }, hero(70, 76, 1, { face: 'flat' })),
     rect(16, 30, 4, 6, C.red, 1, C.ink, 0.9), rect(22, 26, 4, 10, C.grey, 1, C.ink, 0.9), rect(28, 22, 4, 14, C.grey, 1, C.ink, 0.9), line('M14 20 L34 38', C.red, 2.2),
     waSpin('vg-lagg2', 1.4, circle(94, 32, 8, 'none', C.white, 3, ), path('M94 24 A8 8 0 0 1 102 32', 'none', HL, 3))),
-  'vgame.rankad': all(ground, hero(18, 110, 1.15, { arms: 'up' }), path('M12 62 L12 70 L15 67 L18 72 L21 67 L24 70 L24 62 Z', C.gold, C.ink, 1), hero(52, 110, 1.15, { col: C.denim, face: 'sad', flip: true }), sword(31, 86, 35, 0.8), sword(39, 86, -35, 0.8), star(35, 62, 5),
-    line('M84 14 L84 110 M108 14 L108 110', C.brown, 3.4), line('M84 40 L108 40 M84 70 L108 70 M84 100 L108 100', C.brown, 3), at(96, 26, 1.5, path('M0 -9 L8 -6 C8 2 5 7 0 10 C-5 7 -8 2 -8 -6 Z', C.grey2, C.grey, 1.2)), faded(0.6, at(96, 86, 1.5, path('M0 -9 L8 -6 C8 2 5 7 0 10 C-5 7 -8 2 -8 -6 Z', BRONZE, C.grey, 1.2))),
-    at(96, 56, 1.6, path('M0 -9 L8 -6 C8 2 5 7 0 10 C-5 7 -8 2 -8 -6 Z', HL, C.ink, 1.3)), star(96, 56, 6, C.white), arrow(72, 92, 72, 54, C.green, 4), line('M24 96 C40 104 60 100 68 78', HL, 1.8, '3 3')),
+  'vgame.rankad': all(rect(6, 6, 108, 44, '#eef4fb', 8, C.ink, 1.6), hero(30, 46, 0.95, { arms: 'up' }), hero(70, 46, 0.95, { col: C.denim, face: 'sad', flip: true }), sword(46, 30, 35, 0.75), sword(54, 30, -35, 0.75), star(50, 14, 5), check(96, 28, 1.2), ground,
+    at(26, 86, 2, path('M0 -9 L8 -6 C8 2 5 7 0 10 C-5 7 -8 2 -8 -6 Z', BRONZE, C.ink, 1.1)), arrow(46, 86, 60, 86, HL, 4), at(88, 84, 2.9, path('M0 -9 L8 -6 C8 2 5 7 0 10 C-5 7 -8 2 -8 -6 Z', C.silver, C.ink, 0.9)), star(88, 82, 9, C.white), sparkle(110, 62, 5), sparkle(66, 62, 4), sparkle(112, 100, 3.4), arrow(110, 96, 110, 76, C.green, 3)),
   'vgame.poängtavla': all(rect(10, 8, 100, 104, NIGHT, 7, C.ink, 2), rect(14, 12, 92, 22, HL, 4, null), path('M17 28 L17 18 L21 23 L24 16 L27 23 L31 18 L31 28 Z', C.gold, C.ink, 1.1),
     ...[0, 1, 2, 3].map((i) => all(circle(42, 23 + i * 24, 6, [C.white, C.green, C.sky, C.pink][i]!, C.ink, 1.1), rect(52, 20 + i * 24, [30, 24, 18, 12][i]!, 6, C.white, 3, null), num(96, 28 + i * 24, ['250', '180', '120', '60'][i]!, 10, C.white), i ? num(24, 28 + i * 24, String(i + 1), 11, C.grey2) : '', i ? line(`M16 ${36 + (i - 1) * 24} L104 ${36 + (i - 1) * 24}`, '#3a4566', 1) : ''))),
 
@@ -222,9 +224,11 @@ export const VGAME_MOTIFS: Record<string, string> = {
   'vgame.svårighetsgrad': all(rect(12, 8, 96, 104, NIGHT, 8, C.ink, 2), ...[0, 1, 2].map((i) => rect(22, 16 + i * 31, 78, 26, i === 1 ? '#3a4a78' : '#1b2438', 5, i === 1 ? HL : '#3a4566', i === 1 ? 3 : 1.2)),
     star(40, 29, 6, C.grey2), star(34, 60, 6), star(48, 60, 6), star(28, 91, 6, C.grey2), star(41, 91, 6, C.grey2), star(54, 91, 6, C.grey2), path('M10 52 L20 60 L10 68 Z', HL, C.ink, 1.4),
     circle(84, 29, 8, C.grey2, C.ink, 1.2), line('M80 30 Q84 34 88 30', C.ink, 1.3), circle(84, 60, 8, C.yellow, C.ink, 1.2), line('M80 62 L88 62', C.ink, 1.3), circle(81, 58, 1, C.ink, null), circle(87, 58, 1, C.ink, null), circle(84, 91, 8, C.grey2, C.ink, 1.2), line('M80 94 Q84 90 88 94', C.ink, 1.3), line('M92 84 l2 4', C.sky, 1.6)),
-  'vgame.spelstil': all(rect(4, 10, 86, 46, NIGHT, 9, C.ink, 1.6), rect(4, 64, 86, 46, '#ffe9c4', 9, C.ink, 1.6), line('M90 33 C100 33 104 44 104 52 M90 87 C100 87 104 76 104 68', '#cdbb8e', 6), circle(104, 60, 11, C.white, C.ink, 1.8), star(104, 60, 7),
-    path('M14 52 C12 40 22 36 28 42 C32 34 44 38 42 52 Z', '#2f6b45', C.ink, 1.4), rot(28, 30, 40, hero(30, 50, 0.85, { col: C.denim })), circle(44, 51, 1.2, C.grey, null), circle(50, 49, 1.2, C.grey, null), circle(56, 51, 1.2, C.grey, null), monster(72, 52, 0.7, C.grey), line('M66 40 L69 40 M75 40 L78 40', C.ink, 1.4), path('M10 16 A7 7 0 1 0 18 26 A6 6 0 1 1 10 16 Z', C.yellow, null),
-    line('M8 84 L18 84 M10 92 L20 92', C.grey, 2.2), rot(12, 32, 96, hero(32, 106, 0.95, { arms: 'fwd' })), sword(46, 88, 65, 0.8), star(58, 86, 8, C.yellow), rot(70, 74, 100, monster(74, 106, 0.6, C.purple, { dead: true }))),
+  'vgame.spelstil': all(...[0, 1].map((i) => screen(4 + i * 58, 4, 54, 42, SKYB, rect(7 + i * 58, 34, 48, 9, GRASS, 0, null), monster(42 + i * 58, 36, 0.4), line(`M${52 + i * 58} 14 L${52 + i * 58} 34`, C.ink, 1.2), path(`M${52 + i * 58} 14 L${46 + i * 58} 17 L${52 + i * 58} 20 Z`, C.red, null))),
+    hero(18, 36, 0.6, { col: C.denim }), shieldS(26, 28, 0.7), circle(11, 20, 1, C.grey, null), circle(8, 26, 1, C.grey, null),
+    rot(14, 80, 30, hero(80, 36, 0.6, { arms: 'fwd' })), sword(90, 24, 65, 0.55), line('M64 22 L72 22 M62 28 L70 28', C.white, 2), star(94, 22, 5, C.yellow),
+    bust(22, 84, 2, C.denim, true), bust(98, 84, 2, HL), pad(22, 110, 0.5), pad(98, 110, 0.5), path('M36 54 L58 54 L58 72 L44 72 L38 78 L40 72 L36 72 Z', C.white, C.ink, 1.5), heart(47, 62, 5), path('M62 54 L84 54 L84 72 L80 72 L82 78 L76 72 L62 72 Z', C.white, C.ink, 1.5), heart(73, 62, 5),
+    shieldS(48, 98, 1.1), sword(72, 108, 0, 0.8), line('M60 50 L60 116', C.grey2, 1.6, '4 4')),
   'vgame.dela-upp-sig': all(rect(6, 6, 108, 108, GRASS, 12, C.ink, 2), line('M60 110 L60 70 L24 30 M60 70 L96 30', C.white, 13), line('M60 110 L60 70 L24 30 M60 70 L96 30', '#e2d5b0', 9), tree(60, 44, 1.1), tree(50, 36, 0.8), tree(70, 36, 0.8),
     waIn('vg-dela', 22, 24, hero(34, 52, 0.75), hero(22, 38, 0.75, { col: C.green }), arrow(40, 62, 30, 50, HL, 3)), waIn('vg-dela2', -22, 24, hero(86, 52, 0.75, { col: C.denim, flip: true }), hero(98, 38, 0.75, { col: C.purple, flip: true }), arrow(80, 62, 90, 50, HL, 3))),
   'vgame.spara.2': all(ground, hero(26, 110, 1.5, { arms: 'fwd' }), path('M68 112 L66 82 C66 70 104 70 104 82 L102 112 Z', C.brown, C.ink, 2), path('M66 82 C72 92 98 92 104 82', 'none', C.ink, 1.8), rect(78, 96, 14, 10, '#8a5a34', 2, C.ink, 1.2), path('M74 72 C74 58 96 58 96 72', 'none', C.ink, 2.4),
