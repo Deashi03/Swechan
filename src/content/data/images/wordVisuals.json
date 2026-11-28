@@ -70303,7 +70303,8 @@
    "group": "mentor",
    "quiz": false,
    "confusableWith": [
-    "s.handleda.1"
+    "s.handleda.1",
+    "s.lättlärd.1"
    ],
    "symbol": true,
    "blindTest": {
@@ -192177,7 +192178,10 @@
     "round": "0.61.0",
     "hash": "b137738e",
     "method": "match"
-   }
+   },
+   "confusableWith": [
+    "s.mot-varandra.1"
+   ]
   },
   {
    "senseId": "s.trappa-upp.2",
@@ -205044,7 +205048,10 @@
    "motif": "boardg.dela-ut",
    "group": "kort",
    "quiz": false,
-   "animated": true
+   "animated": true,
+   "confusableWith": [
+    "s.giv.1"
+   ]
   },
   {
    "senseId": "s.giv.1",
@@ -205052,7 +205059,16 @@
    "motif": "boardg.giv",
    "group": "kort",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.dela-ut.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.65.0",
+    "hash": "973895f5",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.färg.4",
@@ -205210,7 +205226,14 @@
    "group": "regler",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "8268c197",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65 (abstrakt spelord; förväxlades med närliggande ord i samma modul)."
+   }
   },
   {
    "senseId": "s.husregel.1",
@@ -205268,7 +205291,16 @@
    "motif": "boardg.mot-varandra",
    "group": "tävla",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.motståndare.2"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.65.0",
+    "hash": "293e842b",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.slå.3",
@@ -205341,7 +205373,14 @@
    "motif": "boardg.motdrag",
    "group": "strategi",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "b4a4218c",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65 (abstrakt spelord; förväxlades med närliggande ord i samma modul)."
+   }
   },
   {
    "senseId": "s.ligga-steget-före.1",
@@ -205379,7 +205418,14 @@
    "group": "strategi",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "e3df8b68",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65 (abstrakt spelord; förväxlades med närliggande ord i samma modul)."
+   }
   },
   {
    "senseId": "s.bluffa.1",
@@ -205396,7 +205442,14 @@
    "group": "strategi",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "e351ce81",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65 (abstrakt spelord; förväxlades med närliggande ord i samma modul)."
+   }
   },
   {
    "senseId": "s.schackmatt.1",
@@ -205434,7 +205487,14 @@
    "group": "förklara",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "ba18b710",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65 (abstrakt spelord; förväxlades med närliggande ord i samma modul)."
+   }
   },
   {
    "senseId": "s.gå-till.1",
@@ -205478,7 +205538,16 @@
    "motif": "boardg.lättlärd",
    "group": "förklara",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.lära-ut.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.65.0",
+    "hash": "1243352c",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.vara-med.1",
