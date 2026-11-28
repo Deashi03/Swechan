@@ -316,3 +316,11 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
 - **Godkända som handritade motiv (`fix.*`):** *vass* och *slö* (kontrastpar med tomat), *gyllenbrun* (tre brödskivor), *modern* (gammaldags mot modernt rum), *baklänges* (blick åt ett håll, rörelse åt det andra), *sportig* (kostym mot träningsjacka; medelhög säkerhet, nära *träningskläder* som redan är förväxlingsord).
 - **Synonympar och undantag (produktägarens beslut 2026-11-28):** *grov*/*sandpapper*. Bilden (fint pulver mot stora korn under förstoringsglas) valdes rätt med medelhög säkerhet i två omritningar; sandpapper 80/240 konkurrerar i *Slipning och polering*.
 
+## 0.65 – Spel & hobbyer
+
+- **Rättad före test:** *schackmatt* visade ingen matt (kungen kunde fly); nu dam och kung-matt i hörnet.
+- **Godkända i manuella spåret:** *stick* (fyra kort och tagna stick), *spelstil* (två spelare, samma bana, olika sätt), *sidouppdrag* (bybo ber om hjälp), *systematisk* (slumpvis letande mot plan i tre steg), *mjölksyrad* i omgång 2.
+- **Synonympar (produktägarens beslut 2026-11-28):** *giv*/*dela ut*, *mot varandra*/*motståndare*, *lättlärd*/*lära ut*, *öppen värld*/*spelvärld*, *luftig*/*inkråm*, *fermentering*/*surkål*.
+- **Undantag (`waived`):** *motdrag*, *gälla* (för alla; det gäller att), *avvakta*, *överlista*, *actionspel*, *huvuduppdrag*, *rankad*, *mjukt ljus*, *bakelse*, *beska* (rätt bild men medelhög eller låg säkerhet, eller ingen enhetlig konkurrent).
+- **Godkända men nära andra bilder (bevakas):** *sömnad* ↔ *sy*/*symaskin*, *valör* ↔ mynt, *samlarvärde* ↔ *stiga i värde*, *indiespel*, *spelgenre*, *ingå*, *gå till*.
+
