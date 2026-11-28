@@ -29,6 +29,10 @@
      "grammarNotes": [
       "gn.mass-noun"
      ],
+     "explanation": {
+      "sv": "Näring är det i maten som kroppen behöver för att växa, orka och hålla sig frisk. Mat med mycket näring är till exempel grönsaker, fisk och ägg.",
+      "ja": "「näring」は、{体|からだ}が{成長|せいちょう}し、{元気|げんき}に{動|うご}き、{健康|けんこう}でいるために{必要|ひつよう}な、{食|た}べ{物|もの}の{中|なか}のものです。{栄養|えいよう}の{多|おお}い{食|た}べ{物|もの}は、{例|たと}えば{野菜|やさい}、{魚|さかな}、{卵|たまご}です。"
+     },
      "tags": [
       "mat"
      ],
@@ -36,7 +40,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.näringsämne",
@@ -62,9 +70,18 @@
       {
        "sv": "Grönsaker har många näringsämnen.",
        "ja": "{野菜|やさい}には{多|おお}くの{栄養素|えいようそ}があります。"
+      },
+      {
+       "sv": "Kroppen behöver olika näringsämnen varje dag.",
+       "ja": "{体|からだ}は{毎日|まいにち}いろいろな{栄養素|えいようそ}を{必要|ひつよう}とします。"
       }
      ],
      "labelSv": "i maten",
+     "collocations": [
+      "viktiga näringsämnen",
+      "innehålla näringsämnen",
+      "ta upp näringsämnen"
+     ],
      "tags": [
       "mat"
      ],
@@ -101,7 +118,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.livsmedel",
@@ -136,7 +157,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.kost",
@@ -167,6 +192,10 @@
      "grammarNotes": [
       "gn.mass-noun"
      ],
+     "explanation": {
+      "sv": "Kost betyder den mat som man äter varje dag. Ordet används mest av läkare och i skolan, och i vardagen säger man oftare mat.",
+      "ja": "「kost」は、{毎日|まいにち}{食|た}べる{食事|しょくじ}という{意味|いみ}です。{医者|いしゃ}や{学校|がっこう}でよく{使|つか}われる{言葉|ことば}で、ふだんの{会話|かいわ}では「mat」と{言|い}うことが{多|おお}いです。"
+     },
      "tags": [
       "mat"
      ],
@@ -174,7 +203,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.kolhydrat",
@@ -200,7 +233,16 @@
       {
        "sv": "Ris har mycket kolhydrater.",
        "ja": "ご{飯|はん}には{炭水化物|たんすいかぶつ}がたくさんあります。"
+      },
+      {
+       "sv": "Socker är också en kolhydrat.",
+       "ja": "{砂糖|さとう}も{炭水化物|たんすいかぶつ}の{一|ひと}つです。"
       }
+     ],
+     "collocations": [
+      "snabba kolhydrater",
+      "långsamma kolhydrater",
+      "mycket kolhydrater"
      ],
      "tags": [
       "mat"
@@ -213,7 +255,11 @@
       "ja": "「kolhydrat」は{体|からだ}にエネルギーを{与|あた}える{栄養素|えいようそ}です。パン・ご{飯|はん}・パスタ・じゃがいもにたくさん{含|ふく}まれ、{砂糖|さとう}も{炭水化物|たんすいかぶつ}です。{種類|しゅるい}がいくつかあるので、たいてい「kolhydrater」と{言|い}います。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.vitamin",
@@ -248,7 +294,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.mineral",
@@ -274,9 +324,26 @@
       {
        "sv": "Mineraler finns i grönsaker och fisk.",
        "ja": "ミネラルは{野菜|やさい}や{魚|さかな}に{含|ふく}まれています。"
+      },
+      {
+       "sv": "Järn är ett mineral som finns i kött.",
+       "ja": "{鉄|てつ}は{肉|にく}に{含|ふく}まれるミネラルです。"
       }
      ],
      "labelSv": "i maten",
+     "collocations": [
+      "vitaminer och mineraler",
+      "viktiga mineraler",
+      "brist på mineraler"
+     ],
+     "synonyms": [
+      {
+       "senseId": "s.kalcium.1",
+       "relation": "related",
+       "noteSv": "Kalcium är ett av mineralerna i maten, det som bygger upp ben och tänder.",
+       "noteJa": "「kalcium」は{食|た}べ{物|もの}に{含|ふく}まれるミネラルの{一|ひと}つで、{骨|ほね}や{歯|は}を{作|つく}ります。"
+      }
+     ],
      "tags": [
       "mat"
      ],
@@ -314,7 +381,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.kalcium",
@@ -340,10 +411,19 @@
       {
        "sv": "Mjölk har mycket kalcium.",
        "ja": "{牛乳|ぎゅうにゅう}にはカルシウムがたくさんあります。"
+      },
+      {
+       "sv": "Kroppen behöver kalcium för att bygga ben.",
+       "ja": "{体|からだ}は{骨|ほね}を{作|つく}るためにカルシウムを{必要|ひつよう}とします。"
       }
      ],
      "grammarNotes": [
       "gn.mass-noun"
+     ],
+     "collocations": [
+      "rik på kalcium",
+      "brist på kalcium",
+      "kalcium och D-vitamin"
      ],
      "tags": [
       "mat"
@@ -352,11 +432,15 @@
       "status": "ai-draft"
      },
      "explanation": {
-      "sv": "Kalcium är ett mineral som gör ben och tänder starka. Det finns mycket i mjölk, ost och gröna grönsaker. Barn och äldre behöver extra mycket.",
-      "ja": "「kalcium」は{骨|ほね}や{歯|は}を{丈夫|じょうぶ}にするミネラルです。{牛乳|ぎゅうにゅう}・チーズ・{緑|みどり}の{野菜|やさい}にたくさん{含|ふく}まれます。{子|こ}どもやお{年寄|としよ}りは{特|とく}にたくさん{必要|ひつよう}です。"
+      "sv": "Kalcium är ett mineral som gör ben och tänder starka. Det finns mycket i mjölk, ost och gröna grönsaker. Barn och unga som växer behöver mycket kalcium.",
+      "ja": "「kalcium」は{骨|ほね}や{歯|は}を{丈夫|じょうぶ}にするミネラルです。{牛乳|ぎゅうにゅう}・チーズ・{緑|みどり}の{野菜|やさい}にたくさん{含|ふく}まれます。{成長|せいちょう}している{子|こ}どもや{若|わか}い{人|ひと}は、カルシウムがたくさん{必要|ひつよう}です。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.fiber",
@@ -382,9 +466,18 @@
       {
        "sv": "Bönor har mycket fiber.",
        "ja": "{豆|まめ}には{食物繊維|しょくもつせんい}がたくさんあります。"
+      },
+      {
+       "sv": "Fibrerna i brödet gör att man blir mätt.",
+       "ja": "パンの{食物繊維|しょくもつせんい}のおかげで、おなかがいっぱいになります。"
       }
      ],
      "labelSv": "i maten",
+     "collocations": [
+      "rik på fiber",
+      "mycket fiber",
+      "äta mer fiber"
+     ],
      "tags": [
       "mat"
      ],
@@ -498,7 +591,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.kalori",
@@ -524,8 +621,21 @@
       {
        "sv": "Läsk har många kalorier.",
        "ja": "{炭酸飲料|たんさんいんりょう}はカロリーが{高|たか}いです。"
+      },
+      {
+       "sv": "En banan har ungefär hundra kalorier.",
+       "ja": "バナナ1{本|ぽん}はだいたい100カロリーです。"
       }
      ],
+     "collocations": [
+      "räkna kalorier",
+      "många kalorier",
+      "få kalorier"
+     ],
+     "usageNote": {
+      "sv": "På förpackningar står energin i kilokalorier, men i vardagen säger man bara kalorier.",
+      "ja": "パッケージにはエネルギーが「kilokalorier（キロカロリー）」で{書|か}いてありますが、ふだんは「kalorier」とだけ{言|い}います。"
+     },
      "tags": [
       "mat"
      ],
@@ -537,7 +647,11 @@
       "ja": "「kalori」は、{食|た}べ{物|もの}にどれだけエネルギーがあるかを{表|あらわ}す{単位|たんい}です。{脂肪|しぼう}や{砂糖|さとう}が{多|おお}い{食|た}べ{物|もの}はカロリーが{高|たか}いです。{包装|ほうそう}には100グラムあたりのカロリーが{書|か}いてあります。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.hälsosam",
@@ -566,6 +680,10 @@
        "ja": "{彼女|かのじょ}は{健康的|けんこうてき}な{食事|しょくじ}をしようとしています。"
       }
      ],
+     "explanation": {
+      "sv": "Hälsosam är mat eller vanor som gör att kroppen mår bra. Att äta grönsaker, sova bra och röra på sig är hälsosamt.",
+      "ja": "「hälsosam」は、{体|からだ}の{調子|ちょうし}をよくする{食|た}べ{物|もの}や{習慣|しゅうかん}について{使|つか}います。{野菜|やさい}を{食|た}べること、よく{眠|ねむ}ること、{体|からだ}を{動|うご}かすことは{健康的|けんこうてき}です。"
+     },
      "synonyms": [
       {
        "senseId": "s.nyttig.1",
@@ -579,7 +697,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.onyttig",
@@ -608,6 +730,10 @@
        "ja": "お{菓子|かし}は{体|からだ}に{悪|わる}いけど、おいしいです。"
       }
      ],
+     "explanation": {
+      "sv": "Onyttig mat ger kroppen mycket socker, fett eller salt men lite näring. Godis och läsk är onyttiga om man äter och dricker dem ofta.",
+      "ja": "「onyttig」な{食|た}べ{物|もの}は、{砂糖|さとう}や{脂肪|しぼう}、{塩|しお}が{多|おお}く、{栄養|えいよう}は{少|すく}ないです。お{菓子|かし}や{炭酸飲料|たんさんいんりょう}は、よく{食|た}べたり{飲|の}んだりすると{体|からだ}に{悪|わる}いです。"
+     },
      "synonyms": [
       {
        "senseId": "s.nyttig.1",
@@ -621,7 +747,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.balanserad",
@@ -648,6 +778,10 @@
        "ja": "バランスのとれた{食事|しょくじ}には、{野菜|やさい}、たんぱく{質|しつ}、{炭水化物|たんすいかぶつ}が{含|ふく}まれます。"
       }
      ],
+     "explanation": {
+      "sv": "Balanserad betyder att det finns lagom mycket av varje del och inte för mycket av något. En balanserad måltid har både grönsaker, kolhydrater och protein.",
+      "ja": "「balanserad」は、それぞれがちょうどよい{量|りょう}で、{何|なに}かが{多|おお}すぎないという{意味|いみ}です。バランスのとれた{食事|しょくじ}には、{野菜|やさい}も{炭水化物|たんすいかぶつ}もたんぱく{質|しつ}もあります。"
+     },
      "tags": [
       "mat"
      ],
@@ -655,7 +789,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.tallriksmodell",
@@ -681,10 +819,30 @@
       {
        "sv": "I skolan lär barnen sig tallriksmodellen.",
        "ja": "{学校|がっこう}で{子|こ}どもたちは{皿|さら}モデルを{習|なら}います。"
+      },
+      {
+       "sv": "Enligt tallriksmodellen ska grönsakerna ta mycket plats.",
+       "ja": "{皿|さら}モデルでは、{野菜|やさい}が{大|おお}きな{場所|ばしょ}をとります。"
       }
      ],
      "grammarNotes": [
       "gn.mass-noun"
+     ],
+     "collocations": [
+      "följa tallriksmodellen",
+      "äta enligt tallriksmodellen"
+     ],
+     "usageNote": {
+      "sv": "Livsmedelsverket visar två tallrikar: den som rör sig mycket tar mer potatis, pasta eller ris, och den som rör sig lite tar mer grönsaker.",
+      "ja": "スウェーデン{食品庁|しょくひんちょう}は{二|ふた}つの{皿|さら}を{示|しめ}しています。よく{体|からだ}を{動|うご}かす{人|ひと}はじゃがいも・パスタ・ご{飯|はん}を{多|おお}めに、あまり{動|うご}かない{人|ひと}は{野菜|やさい}を{多|おお}めにします。"
+     },
+     "synonyms": [
+      {
+       "senseId": "s.kost.1",
+       "relation": "related",
+       "noteSv": "Kost är all mat som man äter. Tallriksmodellen visar bara hur en enda måltid kan se ut.",
+       "noteJa": "「kost」は{食|た}べるもの{全体|ぜんたい}のことです。「tallriksmodell」は、{一回|いっかい}の{食事|しょくじ}の{例|れい}を{示|しめ}すだけです。"
+      }
      ],
      "tags": [
       "mat"
@@ -697,7 +855,11 @@
       "ja": "「tallriksmodell」は、よい{食事|しょくじ}のバランスを{示|しめ}すスウェーデンの{方法|ほうほう}です。{皿|さら}のだいたい{半分|はんぶん}が{野菜|やさい}、4{分|ぶん}の1がじゃがいも・ご{飯|はん}・パスタ、4{分|ぶん}の1が{肉|にく}・{魚|さかな}・{豆|まめ}です。{学校|がっこう}で{習|なら}います。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
  "id": "m.specialkost-och-allergener",
- "contentVersion": 4,
- "updatedAt": "2026-11-26",
+ "contentVersion": 5,
+ "updatedAt": "2026-11-28",
  "titleSv": "Specialkost och allergener",
  "titleJa": "{特別食|とくべつしょく}とアレルゲン",
  "descriptionSv": "Specialkost och allergier: gluten, nötter, laktos, halal och att läsa etiketter noga.",
@@ -154,7 +154,24 @@
    }
   ],
   "factSources": [
-   "EU:s regler: allergener ska framhävas (t.ex. fet stil) i ingrediensförteckningen."
+   {
+    "text": "De 14 allergener som anges i EU:s regler ska framhävas i ingrediensförteckningen, till exempel med fet stil.",
+    "source": "Förordning (EU) nr 1169/2011 om livsmedelsinformation, artikel 21 och bilaga II; Livsmedelsverket",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Märkningen ”kan innehålla spår av” är frivillig och används när ett livsmedel av misstag kan ha fått i sig ett allergen.",
+    "source": "Livsmedelsverket, Kontrollwiki om märkning av allergener",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Celiaki behandlas med glutenfri kost hela livet.",
+    "source": "1177, ”Celiaki – glutenintolerans”",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -165,5 +182,6 @@
    "Vad tänker du på när du lagar mat till gäster?",
    "Hur vanligt är vegetarisk, halal eller glutenfri mat i Japan?"
   ]
- }
+ },
+ "standard": 2
 }

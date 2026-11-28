@@ -2,7 +2,7 @@
  * Meals (0.16, backfill of Vardag & hem → Mat & dryck 126–131): breakfast, lunch and dinner,
  * fika, portions and side dishes, restaurant menus, ordering and paying.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, moving, path, rect, waGrow, type Svg } from './kit';
 import { figure } from './figures';
 import { HL, T, bubble, phone, heart } from './people';
 import { ground, steam, plate, bowl, glass, cream, bottle, check, cross, leaf, pot, cup, micro, bun, spoon, fingers, potato, stars, lettuce } from './kitchenKit';
@@ -111,7 +111,7 @@ export const MEAL_MOTIFS: Record<string, Svg> = {
   'mål.avsmakningsmeny': all(...Array.from({ length: 7 }, (_, i) => all(plate(18 + (i % 4) * 28, 44 + Math.floor(i / 4) * 34, 10), circle(18 + (i % 4) * 28, 41 + Math.floor(i / 4) * 34, 3.4, [C.green, '#f4927a', '#c97b3c', '#f6d36a', C.pink, '#9aa8b8', '#7a4a24'][i]!, C.ink, 0.8))), T(102, 30, '7', 16, HL)),
   'mål.inklusive': all(plate(34, 76, 22), g('translate(34 72)', path('M-12 0 C-12 -6 0 -8 6 -6 C14 -4 14 2 10 4 C4 6 -10 6 -12 0 Z', '#c97b3c', C.ink, 1.2)), T(60, 80, '+', 16, HL), glass(84, 74, 0.8, '#c9302c'), rect(20, 22, 80, 22, C.white, 4, C.ink, 1.6), T(60, 37, '300 kr', 11, C.navy), check(104, 98, 1.1)),
   // ── Beställa och betala på restaurang (131) ─────────────────────
-  'mål.boka': all(phone(30, 66), bubble(76, 30, 54, T(76, 34, 'Bord för 2?', 8, C.navy), true), g('translate(80 80)', rect(-20, -16, 40, 32, C.white, 2, C.ink, 1.6), rect(-20, -16, 40, 8, C.red, 2, C.ink, 1.6), check(0, 6, 0.9))),
+  'mål.boka': all(phone(30, 66), bubble(76, 30, 54, T(76, 34, 'Bord för 2?', 8, C.navy), true), g('translate(80 80)', rect(-20, -16, 40, 32, C.white, 2, C.ink, 1.6), rect(-20, -16, 40, 8, C.red, 2, C.ink, 1.6), waGrow('mal-boka', check(0, 6, 0.9)))),
   'mål.bokning': all(table(86), g('translate(60 72)', path('M-14 12 L-10 -10 L10 -10 L14 12 Z', C.white, C.ink, 1.6), T(0, 4, 'BOKAT', 6, HL)), ...[30, 90].map((x) => all(rect(x - 8, 62, 16, 20, C.brown, 2, C.ink, 1.4))), g('translate(60 30)', rect(-30, -12, 60, 24, C.white, 3, C.ink, 1.6), T(0, 4, 'Sato 19:00', 8, C.navy))),
   'mål.ledig': all(table(86), ...[30, 90].map((x) => rect(x - 8, 62, 16, 22, C.brown, 2, C.ink, 1.4)), plate(46, 82, 10), plate(74, 82, 10), sticker(60, 40, 'FRI', C.green)),
   'mål.beställning': all(waiter(36), g('translate(64 58)', rect(-12, -16, 24, 32, C.white, 2, C.ink, 1.4), ...[-8, 0, 8].map((y) => line(`M-7 ${y} L7 ${y}`, C.grey, 1.6))), line('M44 62 L54 60', C.skin, 5), figure({ x: 96, h: 0.8, top: C.pink, hairStyle: 'long' }), bubble(96, 14, 28, T(96, 18, 'Lax!', 8, C.navy), false)),
@@ -119,7 +119,7 @@ export const MEAL_MOTIFS: Record<string, Svg> = {
   'mål.nota': all(receipt(52, 60, 1.3, '642 kr'), g('translate(96 84)', rect(-12, -18, 24, 36, C.dark, 3, C.ink, 1.6), rect(-6, -12, 12, 10, '#9fd0f0', 1, null))),
   'mål.betalning': all(card(36, 70, 1.3, -10), g('translate(88 70)', rect(-16, -26, 32, 52, C.dark, 4, C.ink, 2), rect(-11, -20, 22, 16, '#9fd0f0', 2, null), ...[0, 1, 2].map((r) => all(...[0, 1, 2].map((c) => rect(-10 + c * 8, 2 + r * 7, 5, 4, C.grey, 1, null))))), arrow(56, 70, 70, 70, HL, 2)),
   'mål.kontant': all(note(40, 60, 1.6, -8), note(48, 76, 1.6, 6), coin(88, 70, 1.4), coin(98, 88, 1.2), coin(80, 92, 1.1), g('translate(96 30)', card(0, 0, 0.6), cross(0, 0, 0.8))),
-  'mål.swisha': all(phone(30, 64), phone(92, 64), arrow(42, 50, 80, 50, HL, 2.6), g('translate(60 78)', coin(0, 0, 1.2)), rect(22, 54, 16, 6, C.green, 2, null), T(60, 104, '120 kr', 9, C.navy)),
+  'mål.swisha': all(phone(30, 64), phone(92, 64), arrow(42, 50, 80, 50, HL, 2.6), moving('mal-swisha', '0%{transform:translate(-30px,-16px);opacity:.2}20%{opacity:1}80%{opacity:1}100%{transform:translate(30px,-16px);opacity:.2}', { dur: 2.6 }, g('translate(60 78)', coin(0, 0, 1.2))), rect(22, 54, 16, 6, C.green, 2, null), T(60, 104, '120 kr', 9, C.navy)),
   'mål.kvitto': all(receipt(60, 62, 1.4, 'TACK!')),
   'mål.dricks': all(receipt(36, 64, 1, '500 kr'), coin(84, 70, 1.4), coin(94, 84, 1.2), heart(88, 40, 0.8), T(84, 104, '+50', 11, C.green)),
   'mål.var-för-sig': all(...[24, 60, 96].map((x, i) => all(receipt(x, 52, 0.55, ['120', '95', '140'][i]!), g(`translate(${x} 100)`, circle(0, -4, 6, C.skin, C.ink, 1.2), path('M-8 10 C-8 2 8 2 8 10 Z', [C.orange, C.green, C.sky][i]!, C.ink, 1))))),

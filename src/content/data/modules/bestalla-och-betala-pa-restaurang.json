@@ -1,11 +1,11 @@
 {
  "id": "m.bestalla-och-betala-pa-restaurang",
- "contentVersion": 2,
- "updatedAt": "2026-11-19",
+ "contentVersion": 4,
+ "updatedAt": "2026-11-28",
  "titleSv": "Beställa och betala på restaurang",
  "titleJa": "レストランでの{注文|ちゅうもん}と{支払|しはら}い",
- "descriptionSv": "Att boka bord, beställa, klaga och betala på restaurang – med kort, Swish eller kontant.",
- "descriptionJa": "レストランで{予約|よやく}・{注文|ちゅうもん}・{苦情|くじょう}・{支払|しはら}いをすること：カード、スウィッシュ、{現金|げんきん}。",
+ "descriptionSv": "Du lär dig klara ett restaurangbesök från början till slut: boka bord, beställa, säga till när något är fel och välja hur ni betalar.",
+ "descriptionJa": "レストランでの{食事|しょくじ}を{最初|さいしょ}から{最後|さいご}までこなせるようになります。{席|せき}の{予約|よやく}、{注文|ちゅうもん}、{問題|もんだい}があるときの{伝|つた}え{方|かた}、{支払|しはら}い{方法|ほうほう}の{選|えら}び{方|かた}を{学|まな}びます。",
  "categoryId": "R01-A02-T05",
  "tags": [
   "mat"
@@ -154,7 +154,18 @@
    }
   ],
   "factSources": [
-   "Swish och kortbetalning dominerar i Sverige; dricks är frivillig (allmän kunskap)."
+   {
+    "text": "I Sverige betalar de flesta med kort i butiker och på restauranger: ungefär en av tio betalade sitt senaste köp i butik med kontanter. Swish används mest mellan privatpersoner.",
+    "source": "Sveriges riksbank, Betalningsrapport 2025 och 2026",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Dricks är frivillig i Sverige. Den som får dricks i sitt arbete ska betala skatt på den.",
+    "source": "Skatteverket, rättslig vägledning om dricks",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -165,5 +176,6 @@
    "Vad tycker du om dricks?",
    "Har du klagat på en restaurang någon gång?"
   ]
- }
+ },
+ "standard": 2
 }
