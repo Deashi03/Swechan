@@ -12,7 +12,7 @@
  * lap round the table (omgång); two players shoulder to shoulder (medspelare) against two players across a board
  * (motspelare) and two pawns with colliding arrows (mot varandra).
  */
-import { C, all, arrow, circle, ellipse, g, hand, line, moving, path, rect, sparkle, star, waGrow, waIn, waPulse, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, hand, line, moving, path, rect, sparkle, star, waGrow, waPulse, type Svg } from './kit';
 import { HL } from './people';
 
 type Pt = [number, number];
@@ -120,6 +120,13 @@ const suitMotif = (k: Suit, labels: [string, string, string]): Svg => all(
   pc(84, 84, 16, k, labels[2], 24, 34), pc(64, 90, 2, k, labels[1], 24, 34), pc(44, 86, -14, k, labels[0], 24, 34),
   circle(46, 40, 31, C.white, HL, 2.8), suit(k, 46, k === 's' || k === 'c' ? 38 : 41, 21));
 
+// ── Round 2 (0.65): helpers used only by redrawn motifs ──
+const clover4 = (x: number, y: number, s: number): Svg => at(x, y, s, line('M0 4 C2 16 8 22 12 26', '#2f7d4a', 3.4),
+  ...[0, 90, 180, 270].map((d) => g(`rotate(${d + 45})`, path('M0 -2 C-13 -8 -11 -24 0 -17 C11 -24 13 -8 0 -2 Z', C.green, C.ink, 1.5), line('M0 -4 L0 -14', '#2f7d4a', 1.2))));
+const clockPie = (x: number, y: number, r: number, f: number, col: string): Svg => all(circle(x, y, r, C.white, C.ink, 1.8),
+  path(`M${x} ${y} L${x} ${y - r + 2} A${r - 2} ${r - 2} 0 ${f > 0.5 ? 1 : 0} 1 ${+(x + (r - 2) * Math.sin(2 * Math.PI * f)).toFixed(1)} ${+(y - (r - 2) * Math.cos(2 * Math.PI * f)).toFixed(1)} Z`, col, null), circle(x, y, r, 'none', C.ink, 1.8), circle(x, y, 1.6, C.ink, null));
+const flag = (x: number, y: number, s = 1, col: string = HL): Svg => at(x, y, s, line('M0 0 L0 -24', C.ink, 2.2), path('M0 -24 L15 -19 L0 -13 Z', col, C.ink, 1.4));
+
 const M1: Record<string, Svg> = {
   // spel: the things one plays with – a board with a pawn, a die, cards and a game pad
   'boardg.spel': all(gamepad(34, 30, 1), pc(82, 32, -12, 'h', '7', 22, 32), pc(98, 36, 10, 's', '3', 22, 32), trackBoard(10, 60, 54, 42, 10.6), at(37, 92, 0.85, pawn(C.red)), die(88, 82, 26, 5, 12)),
@@ -145,11 +152,10 @@ const M1: Record<string, Svg> = {
   // schack: the chequered board with kings, a rook and pawns
   'boardg.schack': all(checker(16, 18, 8, 11), at(27, 37, 0.55, cRook(BK)), at(60, 39, 0.6, cKing(BK)), at(38, 49, 0.5, cPawn(BK)), at(71, 49, 0.5, cPawn(BK)), at(93, 38, 0.55, cKnight(BK)),
     at(49, 83, 0.5, cPawn(WH)), at(82, 83, 0.5, cPawn(WH)), at(60, 104, 0.6, cKing(WH)), at(93, 104, 0.55, cRook(WH)), at(38, 94, 0.55, cQueen(WH))),
-  // ingå: the things drop into the box they belong to
-  'boardg.ingå': all(turn(88, 30, 14, rect(-24, -14, 48, 28, C.red, 3, C.ink, 1.8), star(0, 0, 8)), rect(12, 56, 96, 48, '#b9483f', 5, C.ink, 2), rect(18, 62, 84, 36, C.beige, 3, C.ink, 1.4), line('M46 62 L46 98 M74 62 L74 98', C.brown, 1.2),
-    waIn('bg-inga1', 0, -40, die(32, 80, 18, 3, 0)), moving('bg-inga2', '0%,20%{transform:translate(0,-40px);opacity:.15}70%,100%{transform:translate(0,0);opacity:1}', { dur: 2.6 }, at(60, 94, 0.9, pawn(C.denim))),
-    moving('bg-inga3', '0%,40%{transform:translate(0,-40px);opacity:.15}85%,100%{transform:translate(0,0);opacity:1}', { dur: 2.6 }, hourglass(88, 80, 0.55)),
-    rect(15, 59, 90, 42, 'none', 4, HL, 2.6), line('M30 18 L30 44 M24 38 L30 46 L36 38', HL, 3), check(52, 30, 1.1)),
+  // ingå: the opened box and what comes with it – a tick at each thing
+  'boardg.ingå': all(turn(60, 18, -5, rect(-42, -12, 84, 24, C.red, 3, C.ink, 1.8), rect(-42, 6, 84, 6, '#a33', 0, C.ink, 1.2), star(0, -3, 7)), rect(6, 40, 108, 68, '#b9483f', 5, C.ink, 2), rect(12, 46, 96, 56, C.beige, 3, C.ink, 1.4),
+    trackBoard(18, 52, 40, 30, 10), die(76, 60, 15, 5, -8), die(94, 64, 15, 2, 10), at(72, 98, 0.7, pawn(C.red)), at(86, 98, 0.7, pawn(C.denim)), at(100, 98, 0.7, pawn(C.green)),
+    appear('bg-inga1', 10, check(38, 90, 0.8)), appear('bg-inga2', 35, check(62, 68, 0.8)), appear('bg-inga3', 60, check(58, 96, 0.8))),
   // sakna (inte ha): four places in the box, the fourth is empty
   'boardg.sakna.2': all(rect(8, 44, 104, 58, '#b9483f', 6, C.ink, 2), rect(14, 50, 92, 46, C.beige, 4, C.ink, 1.4), ...[0, 1, 2, 3].map((i) => ellipse(27 + i * 22, 88, 9, 3.4, '#d9c7a4', null)),
     at(27, 88, 1.15, pawn(C.red)), at(49, 88, 1.15, pawn(C.denim)), at(71, 88, 1.15, pawn(C.green)),
@@ -175,8 +181,8 @@ const M2: Record<string, Svg> = {
   'boardg.slå-om.2': all(die(26, 30, 22, 6, 0), die(52, 30, 22, 6, 0), die(78, 30, 22, 6, 0), line('M12 46 L92 46', C.grey, 2), at(102, 34, 1, rect(-6, -2, 12, 10, C.grey, 2, C.ink, 1.3), line('M-3.4 -2 L-3.4 -6 C-3.4 -11 3.4 -11 3.4 -6 L3.4 -2', C.ink, 1.6)),
     moving('bg-om1', '0%{transform:rotate(-180deg)}55%,100%{transform:rotate(0)}', { dur: 2.2, spin: true }, die(42, 84, 24, 2, 12)), moving('bg-om2', '0%{transform:rotate(200deg)}60%,100%{transform:rotate(0)}', { dur: 2.2, spin: true }, die(78, 86, 24, 4, -14)),
     line('M20 98 A42 26 0 1 1 98 104', HL, 3), path('M98 104 L100 94 L107 101 Z', HL, HL, 1.4)),
-  // tur (lycka): a cheering player and a lucky throw
-  'boardg.tur': all(arm([24, 62], [10, 32], C.green), arm([52, 62], [66, 32], C.green), bust(38, 48, 1.5, { top: C.green, face: 'grin', hs: 'long' }), die(84, 86, 22, 6, -8), die(104, 70, 18, 6, 12), star(92, 34, 11), sparkle(108, 46, 5), sparkle(74, 22, 4), sparkle(72, 62, 4)),
+  // tur (lycka): a four-leaf clover, and the die lands on the six that was needed
+  'boardg.tur': all(clover4(36, 42, 1.5), line('M70 30 Q84 34 86 50', C.grey, 1.8, '3 4'), die(84, 78, 36, 6, -8, C.white, HL), sparkle(108, 54, 6), sparkle(62, 96, 5), sparkle(110, 100, 4), sparkle(64, 62, 4)),
   // flytta (sak): the hand moves the pawn to a new square
   'boardg.flytta.3': all(trackRow(8, 84, 5, 21), faded(at(18, 100, 1, pawn(C.red))), line('M22 62 Q52 30 84 58', HL, 3), path('M84 58 L74 56 L80 49 Z', HL, HL, 1.4),
     slide('bg-flytta', -62, 0, 2.6, at(92, 100, 1, pawn(C.red)), arm([118, 30], [96, 68], C.sky))),
@@ -215,13 +221,9 @@ const M3: Record<string, Svg> = {
     cb(20, 92, -14, 18, 25), cb(60, 96, 0, 18, 25), cb(100, 92, 14, 18, 25),
     slide('bg-dela1', 30, -52, 2.6, cb(26, 88, -4, 18, 25)), moving('bg-dela2', '0%,25%{transform:translate(0,-56px)}70%,100%{transform:translate(0,0)}', { dur: 2.6 }, cb(66, 92, 8, 18, 25)), moving('bg-dela3', '0%,40%{transform:translate(-30px,-52px)}85%,100%{transform:translate(0,0)}', { dur: 2.6 }, cb(106, 88, 22, 18, 25)),
     path('M30 70 L24 80 L36 78 Z M60 74 L55 84 L65 84 Z M90 70 L84 78 L96 80 Z', HL, HL, 1.2)),
-  // giv: one whole deal – the cards are dealt, played and counted; then comes deal number two
-  'boardg.giv': all(circle(22, 16, 10, HL, C.ink, 1.6), num(22, 21, '1', 13, C.white), circle(60, 16, 8, C.white, C.grey, 1.6), num(60, 20.5, '2', 11, C.grey), circle(92, 16, 8, C.white, C.grey, 1.6), num(92, 20.5, '3', 11, C.grey), line('M34 16 L48 16 M72 16 L80 16', C.grey, 1.6, '2 3'),
-    rect(6, 34, 108, 54, C.white, 6, HL, 2.6), line('M42 38 L42 84 M78 38 L78 84', C.grey2, 1.4),
-    cb(24, 54, 0, 14, 20), line('M14 70 L10 78 M24 72 L24 80 M34 70 L38 78', C.ink, 1.6), path('M10 78 L9 73 L14 76 Z M24 80 L21.5 75.5 L26.5 75.5 Z M38 78 L34 76 L39 73 Z', C.ink, C.ink, 1),
-    pc(60, 50, 0, 'h', '', 12, 17), pc(52, 62, -80, 's', '', 12, 17), pc(68, 62, 80, 'd', '', 12, 17), pc(60, 74, 0, 'c', '', 12, 17),
-    pad(86, 44, 22, 34, 3), line('M90 60 L95 60 M90 68 L98 68', C.navy, 1.6), check(104, 80, 0.7),
-    line('M40 61 L44 61 M76 61 L80 61', C.ink, 1.6), line('M6 100 L114 100 M6 94 L6 100 M114 94 L114 100', HL, 2.6)),
+  // giv: the cards one player has been given for this round – a fan of cards in one hand
+  'boardg.giv': all(...[0, 1, 2, 3, 4].map((i) => { const a = -36 + i * 18, r = (a * Math.PI) / 180; return pc(+(60 + 50 * Math.sin(r)).toFixed(1), +(100 - 50 * Math.cos(r)).toFixed(1), a, (['c', 'h', 's', 'd', 'c'] as Suit[])[i]!, ['3', '8', '5', '2', '9'][i]!, 28, 42); }),
+    path('M40 14 A62 62 0 0 1 80 14', 'none', HL, 3), line('M14 34 L10 26 M106 34 L110 26', HL, 3), rect(48, 106, 24, 14, C.sky, 2, C.ink, 2), path('M44 92 C44 84 52 82 60 84 C70 82 78 86 78 94 L76 104 C74 110 48 110 46 104 Z', C.skin, C.ink, 2), line('M54 88 L54 98 M62 87 L62 98 M70 89 L70 98', C.skin2, 1.5)),
   // färg (i kortspel): the four groups of cards
   'boardg.färg.4': all(...(['h', 's', 'd', 'c'] as Suit[]).map((k, i) => all(pc(21 + i * 26, 32, 0, k, '2', 20, 28), pc(21 + i * 26, 46, 0, k, '5', 20, 28), pc(21 + i * 26, 60, 0, k, '9', 20, 28),
     line(`M${11 + i * 26} 82 L${31 + i * 26} 82 M${11 + i * 26} 78 L${11 + i * 26} 82 M${31 + i * 26} 78 L${31 + i * 26} 82`, HL, 2.6), suit(k, 21 + i * 26, 98, 8)))),
@@ -239,9 +241,10 @@ const M3: Record<string, Svg> = {
     path('M40 82 L46 76 L53 84 L60 76 L67 84 L74 76 L80 82 L76 96 L44 96 Z', C.yellow, C.ink, 1.8), circle(46, 96, 2.4, C.gold, C.ink, 1), circle(60, 97, 2.4, C.gold, C.ink, 1), circle(74, 96, 2.4, C.gold, C.ink, 1)),
   // baksida: the same card from the front (grey) and from the back
   'boardg.baksida': all(faded(pc(30, 62, -6, 'h', '7', 36, 52)), cb(86, 62, 6, 38, 54), turn(86, 62, 6, rect(-22, -30, 44, 60, 'none', 6, HL, 2.8)), line('M36 22 Q58 4 80 22', HL, 3), path('M80 22 L70 21 L76 13 Z', HL, HL, 1.4)),
-  // stick: the four cards of one round; the highest card takes them
-  'boardg.stick.2': all(felt(8, 104), pc(60, 34, 0, 'c', '4', 22, 31), pc(36, 54, -84, 'c', '7', 22, 31), pc(84, 54, 84, 'c', '2', 22, 31), pc(60, 72, 6, 'c', '9', 24, 34, HL), star(78, 84, 6),
-    rect(24, 14, 72, 80, 'none', 8, HL, 2.2), arm([118, 112], [100, 96], C.sky), line('M92 96 Q98 104 104 104', HL, 3), cb(22, 102, 80, 12, 17), cb(20, 99, 84, 12, 17)),
+  // stick: one card from each player lies in the middle, and a hand pulls the four together to its own pile
+  'boardg.stick.2': all(felt(8, 104), seat(60, 10, C.red), seat(8, 52, C.green, '#8a5a2b'), seat(112, 52, C.denim, '#c9a227'), line('M60 20 L60 26 M20 52 L28 52 M100 52 L92 52', C.grey, 1.8, '2 3'),
+    pc(60, 40, 0, 'c', '4', 20, 28), pc(42, 54, -78, 'd', '7', 20, 28), pc(78, 54, 78, 'c', '2', 20, 28), pc(60, 66, 8, 'h', '9', 20, 28), ellipse(60, 54, 36, 30, 'none', HL, 2.6),
+    arm([92, 118], [70, 76], C.purple, [88, 96]), line('M48 84 L40 96', HL, 3.4), path('M38 100 L37 90 L46 95 Z', HL, HL, 1.4), cb(34, 106, 84, 13, 19), cb(31, 103, 88, 13, 19)),
   // patiens: one person alone with the cards laid out in rows
   'boardg.patiens': all(felt(30, 82), bust(60, 14, 0.85, { top: C.purple, hs: 'bun', hair: C.grey, face: 'smile' }), cb(18, 46, 0, 13, 18), pc(100, 46, 0, 's', '', 13, 18),
     ...[0, 1, 2, 3, 4].flatMap((c) => Array.from({ length: c + 1 }, (_, r) => (r === c ? pc(24 + c * 18, 66 + r * 6, 0, (['h', 'c', 'd', 's', 'h'] as Suit[])[c]!, '', 14, 19) : cb(24 + c * 18, 66 + r * 6, 0, 14, 19))))),
@@ -268,9 +271,10 @@ const M4: Record<string, Svg> = {
   'boardg.stå-över': all(bust(18, 62, 0.95, { top: C.red, hs: 'long' }), bust(102, 62, 0.95, { top: C.denim, hair: '#8a5a2b' }), bust(60, 62, 1.15, { grey: true, face: 'flat' }), line('M46 88 L74 96 M74 88 L46 96', C.ink, 6.6), line('M46 88 L74 96 M74 88 L46 96', C.grey, 4.4),
     waPulse('bg-over', circle(60, 28, 11, HL, C.ink, 1.6), line('M56 22 L56 34 M64 22 L64 34', C.white, 3.4)),
     line('M20 40 Q60 -14 98 38', C.ink, 2, '4 4'), path('M100 40 L90 38 L96 30 Z', C.ink, C.ink, 1.2), die(24, 38, 12, 3, -10)),
-  // gälla (regler): the rule is stamped as valid and holds for everybody
-  'boardg.gälla': all(paper(34, 6, 52, 58, 3), waGrow('bg-galla', check(84, 54, 1.6)), line('M10 74 L110 74 M10 74 L10 82 M110 74 L110 82 M60 64 L60 74', HL, 2.8),
-    bust(24, 92, 0.6, { top: C.red, hs: 'long' }), bust(48, 92, 0.6, { top: C.green }), bust(72, 92, 0.6, { top: C.denim, hs: 'bun' }), bust(96, 92, 0.6, { top: C.purple, hair: '#8a5a2b' })),
+  // gälla (regler): the same rule holds for every player
+  'boardg.gälla': all(appear('bg-galla', 15, line('M60 34 L18 70 M60 34 L46 70 M60 34 L74 70 M60 34 L102 70', HL, 2.8)), circle(60, 22, 17, '#fde9d8', HL, 3), num(60, 31, '§', 24, C.navy),
+    bust(18, 82, 0.75, { top: C.red, hs: 'long' }), bust(46, 82, 0.75, { top: C.green }), bust(74, 82, 0.75, { top: C.denim, hs: 'bun', hair: '#c9a227' }), bust(102, 82, 0.75, { top: C.purple, hair: '#8a5a2b' }),
+    ...[18, 46, 74, 102].map((x) => num(x, 68, '§', 9, HL))),
   // husregel: the family's own rule, under their own roof
   'boardg.husregel': all(path('M12 54 L60 10 L108 54 Z', HL, C.ink, 2.2), rect(20, 54, 80, 54, '#f7efdc', 2, C.ink, 2.2), rect(84, 16, 9, 18, HL, 1, C.ink, 1.8), paper(40, 60, 40, 44, 2), die(28, 96, 12, 4, -10), at(92, 104, 0.6, pawn(C.denim))),
   // dra lott: one stick is drawn from the hand; chance decides
@@ -292,9 +296,10 @@ const M5: Record<string, Svg> = {
   // motspelare: the one on the other side of the board
   'boardg.motspelare': all(bust(22, 30, 1.1, { top: C.denim, face: 'think', look: 1.6 }), bust(98, 30, 1.1, { top: C.red, hs: 'bun', hair: '#8a5a2b', face: 'think', look: -1.6 }), circle(98, 30, 16, 'none', HL, 2.8),
     checker(30, 72, 6, 10, 3), at(40, 90, 0.6, cKing(WH)), at(50, 100, 0.55, cPawn(WH)), at(80, 82, 0.6, cKing(BK)), at(70, 92, 0.55, cPawn(BK)), path('M62 26 L54 44 L60 44 L56 60 L68 40 L61 40 L66 26 Z', C.yellow, C.ink, 1.5)),
-  // mot varandra: two sides push against each other
-  'boardg.mot-varandra': all(line('M60 14 L60 106', C.grey, 1.8, '4 4'), at(22, 96, 1.5, pawn(C.red)), at(98, 96, 1.5, pawn(C.denim)), arrow(34, 44, 54, 44, C.red, 5), arrow(86, 44, 66, 44, C.denim, 5),
-    path('M60 30 L63 39 L72 36 L66 44 L72 52 L63 49 L60 58 L57 49 L48 52 L54 44 L48 36 L57 39 Z', C.yellow, C.ink, 1.5)),
+  // mot varandra: two teams on each side of the table, playing against each other
+  'boardg.mot-varandra': all(bust(34, 14, 0.8, { top: C.red, hs: 'long', face: 'think' }), bust(86, 14, 0.8, { top: C.red, hair: '#8a5a2b', face: 'think' }), rect(8, 44, 104, 30, C.tan, 5, C.ink, 2),
+    bust(34, 86, 0.8, { top: C.denim, hs: 'bun', hair: '#c9a227', face: 'think' }), bust(86, 86, 0.8, { top: C.denim, face: 'think' }),
+    arrow(26, 47, 26, 70, C.red, 4.4), arrow(78, 47, 78, 70, C.red, 4.4), arrow(42, 71, 42, 48, C.denim, 4.4), arrow(94, 71, 94, 48, C.denim, 4.4), die(60, 59, 13, 3, 10)),
   // slå (vinna över): the game is over – the loser's king falls
   'boardg.slå.3': all(arm([40, 62], [52, 30], C.red), bust(26, 48, 1.3, { top: C.red, hs: 'long', face: 'grin' }), bust(96, 52, 1.2, { grey: true, face: 'sad' }), checker(28, 88, 8, 8, 3), at(44, 102, 0.75, cKing(WH)),
     moving('bg-sla3', '0%,25%{transform:rotate(-78deg)}70%,100%{transform:rotate(0)}', { dur: 2.6, spin: true }, turn(80, 102, 80, at(0, 8, 0.75, cKing(BK)))), star(58, 22, 8), sparkle(70, 34, 4)),
@@ -325,9 +330,10 @@ const M6: Record<string, Svg> = {
   // strategispel: a game where one plans – the player thinks out the way ahead
   'boardg.strategispel': all(bubble(44, 4, 70, 46, [36, 56], circle(56, 28, 4, C.grey, null), line('M60 28 L74 28 M74 28 L88 16 M74 28 L88 40', C.ink, 2), path('M88 16 L82 16 L86 21 Z M88 40 L86 35 L82 40 Z', C.ink, C.ink, 1), circle(96, 14, 5, C.white, C.grey, 1.4), cross(96, 14, 0.55), circle(98, 40, 6.4, HL, C.ink, 1.3), star(98, 40, 4, C.white)),
     bust(22, 64, 1.1, { top: C.purple, face: 'think' }), arm([34, 90], [28, 78], C.purple, [40, 86]), checker(46, 72, 6, 11, 3), at(57, 92, 0.6, cRook(WH)), at(79, 81, 0.6, cKnight(BK)), at(101, 103, 0.6, cKing(WH))),
-  // motdrag: first the opponent's move (grey, 1), then the answer to it (orange, 2)
-  'boardg.motdrag': all(checker(14, 14, 4, 23), at(25.5, 32, 0.9, cRook(BK)), arrow(40, 26, 84, 26, C.grey, 4.4), circle(62, 14, 8, C.white, C.grey, 1.8), num(62, 18.5, '1', 11, C.grey), faded(at(94.5, 32, 0.9, cRook(BK))),
-    at(48.5, 101, 0.9, cKnight(WH)), arrow(56, 84, 88, 48, HL, 4.8), circle(82, 78, 9, HL, C.ink, 1.6), num(82, 83, '2', 13, C.white)),
+  // motdrag: the opponent's move (grey, 1) threatens the king; the answer (orange, 2) blocks it
+  'boardg.motdrag': all(checker(14, 14, 4, 23), faded(at(25.5, 35, 0.8, cRook(BK))), arrow(25.5, 34, 25.5, 46, C.grey, 4.4), at(25.5, 81, 0.8, cRook(BK)), line('M36 71 L60 71', C.grey, 2.4, '4 4'),
+    circle(42, 28, 8, C.white, C.grey, 1.8), num(42, 32.5, '1', 11, C.grey), at(94.5, 81, 0.8, cKing(WH)),
+    faded(at(71.5, 104, 0.8, cRook(WH))), at(71.5, 81, 0.8, cRook(WH)), arrow(84, 104, 76, 86, HL, 4.4), line('M62 60 L62 82', HL, 4.4), circle(98, 100, 9, HL, C.ink, 1.6), num(98, 105, '2', 13, C.white)),
   // ligga steget före: always one step ahead – she already knows where he will go
   'boardg.ligga-steget-före': all(...[0, 1, 2, 3, 4].map((i) => ellipse(14 + i * 23, 100, 10, 4, C.grey2, C.ink, 1.2)), bubble(58, 6, 56, 34, [80, 52], faded(at(74, 34, 0.55, pawn(C.grey))), line('M82 26 L96 26', C.ink, 2, '3 2'), path('M100 26 L94 22 L94 30 Z', C.ink, C.ink, 1), ellipse(104, 34, 6, 2.4, C.grey2, C.ink, 1)),
     moving('bg-fore', '0%,15%{transform:translate(-23px,0)}55%,100%{transform:translate(0,0)}', { dur: 2.8 }, at(37, 98, 1, pawn(C.grey)), at(83, 98, 1.25, pawn(HL))),
@@ -335,16 +341,17 @@ const M6: Record<string, Svg> = {
   // fälla (för att lura): the tempting piece sits in a trap
   'boardg.fälla-noun.2': all(rect(14, 82, 92, 20, C.tan, 3, C.ink, 2), line('M24 92 L96 92', C.brown, 1), path('M30 82 C30 40 90 40 90 82', 'none', C.grey, 4), path('M30 82 C30 40 90 40 90 82', 'none', C.ink, 1.2), rect(54, 76, 12, 8, C.grey, 2, C.ink, 1.4), line('M22 82 L22 70 L60 78', C.ink, 2),
     at(60, 76, 1.05, cQueen(WH)), sparkle(44, 52, 5, HL), sparkle(78, 48, 4, HL), arm([118, 20], [92, 44], C.grey, [108, 24]), num(18, 34, '!', 26, HL)),
-  // överlista: the small one has an idea – while the big one looks away, the king is taken
-  'boardg.överlista': all(sparkle(8, 30, 5, C.gold), sparkle(14, 18, 3.4, C.gold), bust(40, 46, 1.55, { grey: true, face: 'o', look: -2.6 }), waPulse('bg-list', bulb(94, 30, 0.9)), bust(94, 66, 1, { top: HL, hs: 'long', face: 'grin', look: -1.4 }),
-    wood(98), at(40, 104, 0.6, cRook(BK)), faded(at(58, 104, 0.7, cKing(BK))), slide('bg-list2', -22, 0, 2.6, at(80, 104, 0.7, cKing(BK))), line('M62 86 Q70 78 78 86', HL, 2.6), path('M80 88 L72 86 L78 79 Z', HL, HL, 1.2)),
+  // överlista: he follows the arrow the wrong way, towards a hole he does not see; she smiles
+  'boardg.överlista': all(bust(26, 34, 1.1, { top: HL, hs: 'long', face: 'grin', look: 1.6 }), bulb(52, 16, 0.6), bust(84, 34, 1.1, { grey: true, face: 'smile', look: 1.8 }),
+    trackRow(6, 88, 6, 18), flag(15, 100, 0.9, C.green), ellipse(105, 99, 8, 5, C.black, C.ink, 1.4), rect(40, 68, 44, 13, C.white, 3, C.ink, 1.6), path('M84 66 L98 74.5 L84 83 Z', C.white, C.ink, 1.6), line('M48 74.5 L86 74.5', HL, 3.4),
+    line('M62 81 L62 88', C.ink, 2), slide('bg-list2', -36, 0, 2.8, at(87, 102, 0.75, pawn(C.grey)))),
   // bluffa: he says he has the best cards, but his hand is poor
   'boardg.bluffa': all(waPulse('bg-bluff', bubble(56, 4, 58, 44, [48, 54], pc(72, 26, -8, 's', '', 20, 28), pc(96, 26, 8, 'h', '', 20, 28), star(84, 10, 5))), bust(34, 50, 1.4, { top: C.dark, face: 'grin' }),
     rect(22, 44, 24, 7, C.black, 3, C.ink, 1.2), pc(46, 92, -18, 'c', '2', 22, 31), pc(62, 88, 0, 'd', '3', 22, 31), pc(78, 92, 18, 'c', '4', 22, 31), circle(40, 106, 5, C.skin, C.ink, 1.3)),
-  // avvakta: she waits with folded arms and watches what the other one does
-  'boardg.avvakta': all(circle(26, 20, 14, C.white, C.ink, 2), line('M26 20 L26 10', C.ink, 2.2), moving('bg-avv', '0%{transform:rotate(0)}100%{transform:rotate(360deg)}', { dur: 4 }, `<g style="transform-origin:26px 20px">${line('M26 20 L34 24', HL, 2.6)}</g>`), circle(26, 20, 1.8, C.ink, null),
-    bust(46, 58, 1.35, { top: C.purple, hs: 'long', face: 'flat', look: 2.2 }), line('M30 88 L60 96 M62 88 L32 96', C.ink, 7.4), line('M30 88 L60 96 M62 88 L32 96', C.purple, 5), circle(60, 96, 3.6, C.skin, C.ink, 1.2), circle(32, 96, 3.6, C.skin, C.ink, 1.2),
-    wood(102), faded(arm([118, 56], [98, 82], C.grey, [112, 66]), at(98, 108, 0.8, cPawn(BK)))),
+  // avvakta: she could move (dashed arrow) but keeps her arms folded and watches the other one make a move
+  'boardg.avvakta': all(bust(30, 30, 1.25, { top: C.purple, hs: 'long', face: 'flat', look: 2.2 }), line('M14 60 L44 68 M46 60 L16 68', C.ink, 7.4), line('M14 60 L44 68 M46 60 L16 68', C.purple, 5), circle(44, 68, 3.6, C.skin, C.ink, 1.2), circle(16, 68, 3.6, C.skin, C.ink, 1.2),
+    bust(96, 30, 1, { top: C.red, hair: '#8a5a2b', face: 'think', look: -1.6 }), checker(10, 84, 10, 10, 2), at(25, 100, 0.7, cPawn(WH)), `<path d="M30 80 L44 80" fill="none" stroke="${C.grey}" stroke-width="2.4" stroke-dasharray="3 3" stroke-linecap="round"/>`, path('M48 80 L42 76.5 L42 83.5 Z', C.grey, C.grey, 1),
+    line('M100 76 L86 76', HL, 3.4), path('M82 76 L89 72 L89 80 Z', HL, HL, 1.2), slide('bg-avv', 20, 0, 2.6, arm([110, 58], [86, 84], C.red, [104, 72]), at(85, 100, 0.7, cPawn(BK)))),
   // schackmatt: the white king in the corner is in check from the queen, which the black king protects; both flight squares are covered
   'boardg.schackmatt': all(checker(12, 12, 4, 24), at(96, 34, 0.9, cKing(WH)), at(72, 58, 0.9, cQueen(BK)), at(48, 82, 0.9, cKing(BK)),
     line('M80 40 L89 31', C.red, 3), path('M92 28 L83 30 L90 37 Z', C.red, C.red, 1.2), line('M56 66 L64 58', C.ink, 2, '3 3'),
@@ -352,24 +359,28 @@ const M6: Record<string, Svg> = {
 };
 
 const M7: Record<string, Svg> = {
-  // gå ut på: what the game is about – getting to the goal
-  'boardg.gå-ut-på': all(trackRow(6, 86, 4, 17), at(14.5, 100, 0.9, pawn(C.denim)), circle(94, 60, 22, C.white, C.ink, 2), circle(94, 60, 15, C.red, C.ink, 1.4), circle(94, 60, 8, C.white, C.ink, 1.4), star(94, 60, 6),
-    waIn('bg-utpa', -34, 12, arrow(24, 62, 68, 60, HL, 5)), trophy(94, 22, 1), line('M94 82 L94 104', C.ink, 2.2), path('M94 86 L110 91 L94 97 Z', HL, C.ink, 1.4)),
-  // gälla (handla om): the one thing that matters now
-  'boardg.gälla.2': all(faded(die(20, 92, 22, 4, -8), at(100, 104, 1, pawn(C.grey)), hourglass(20, 34, 0.6), pc(100, 34, 8, 'c', '5', 22, 31)),
-    waPulse('bg-galla2', circle(60, 62, 31, 'none', HL, 3.4)), circle(60, 62, 25, '#fff3d6', C.ink, 1.8), num(60, 78, '!', 46, HL), line('M60 22 L60 12 M88 34 L96 26 M32 34 L24 26', HL, 2.6)),
-  // gå till: how it is done – first this, then this, then this
-  'boardg.gå-till': all(num(14, 24, '?', 24, C.grey), ...[0, 1, 2].map((i) => all(rect(6 + i * 38, 40, 32, 40, C.white, 5, C.ink, 1.8), circle(22 + i * 38, 94, 8, HL, C.ink, 1.4), num(22 + i * 38, 98.5, String(i + 1), 11, C.white))),
-    cb(22, 60, -8, 14, 20), die(60, 60, 18, 5, 8), trophy(98, 64, 1), appear('bg-till1', 20, arrow(40, 30, 54, 30, HL, 3.6)), appear('bg-till2', 50, arrow(78, 30, 92, 30, HL, 3.6)), line('M28 24 L34 28', C.grey, 1.8)),
+  // gå ut på: what the game is about – every pawn is on its way to the flag in the middle
+  'boardg.gå-ut-på': all(rect(8, 10, 104, 100, C.beige, 6, C.ink, 2), circle(60, 60, 40, 'none', '#d9c7a4', 5), circle(60, 60, 17, '#fde9d8', HL, 3), flag(57, 72, 1),
+    line('M30 34 L42 44 M90 34 L78 44 M30 90 L42 80 M90 90 L78 80', HL, 3.4), path('M46 47 L37 45 L42 38 Z M74 47 L83 45 L78 38 Z M46 77 L42 86 L37 79 Z M74 77 L78 86 L83 79 Z', HL, HL, 1.2),
+    slide('bg-utpa1', -8, -8, 2.6, at(22, 34, 0.7, pawn(C.red))), slide('bg-utpa2', 8, -8, 2.6, at(98, 34, 0.7, pawn(C.denim))), slide('bg-utpa3', -8, 8, 2.6, at(22, 104, 0.7, pawn(C.green))), slide('bg-utpa4', 8, 8, 2.6, at(98, 104, 0.7, pawn(C.yellow)))),
+  // gälla (det gäller att): the last throw – she needs a six, and everybody is watching
+  'boardg.gälla.2': all(waPulse('bg-galla2', bubble(8, 2, 50, 32, [50, 42], die(24, 18, 18, 6, 0, C.white, HL), line('M37 18 L41 18', C.ink, 1.8), flag(48, 28, 0.75))),
+    bust(16, 82, 0.85, { top: C.green, hair: '#8a5a2b', face: 'o', look: 2.4 }), bust(104, 82, 0.85, { top: C.purple, hs: 'bun', face: 'o', look: -2.4 }),
+    arm([74, 82], [86, 46], C.denim, [88, 70]), die(88, 36, 16, 3, 14), line('M78 26 L74 20 M98 26 L102 20 M88 22 L88 15', HL, 2.4), bust(60, 62, 1.25, { top: C.denim, hs: 'long', face: 'think' })),
+  // gå till: how the game is played – the open rule book with picture steps 1, 2, 3
+  'boardg.gå-till': all(path('M6 22 C24 14 44 14 60 22 L60 106 C44 98 24 98 6 106 Z', C.white, C.ink, 2), path('M114 22 C96 14 76 14 60 22 L60 106 C76 98 96 98 114 106 Z', C.white, C.ink, 2), line('M60 22 L60 106', C.ink, 2.4),
+    cb(38, 38, -8, 12, 17), cb(44, 39, 8, 12, 17), die(40, 76, 17, 5, 8), trackRow(72, 62, 2, 14), at(79, 74, 0.6, pawn(C.red)), flag(95, 74, 0.7), line('M72 40 L104 40 M72 90 L100 90', C.grey2, 2),
+    appear('bg-till1', 8, circle(18, 38, 7.4, HL, C.ink, 1.4), num(18, 42, '1', 10, C.white)), appear('bg-till2', 35, circle(18, 76, 7.4, HL, C.ink, 1.4), num(18, 80, '2', 10, C.white)), appear('bg-till3', 62, circle(100, 52, 7.4, HL, C.ink, 1.4), num(100, 56, '3', 10, C.white))),
   // grundregel: the rule at the bottom that the others rest on
   'boardg.grundregel': all(rect(46, 14, 28, 22, C.white, 3, C.grey, 1.8), num(60, 30, '§', 14, C.grey), rect(28, 40, 30, 22, C.white, 3, C.grey, 1.8), num(43, 56, '§', 14, C.grey), rect(62, 40, 30, 22, C.white, 3, C.grey, 1.8), num(77, 56, '§', 14, C.grey),
     rect(8, 66, 104, 34, HL, 4, C.ink, 2.2), num(34, 91, '§', 26, C.white), line('M52 78 L100 78 M52 88 L88 88', C.white, 2.6), line('M4 104 L116 104', C.grey2, 2)),
   // provomgång: a round only to learn – nobody writes down the points
   'boardg.provomgång': all(roundTable(50, 66, 20), seat(50, 34, C.red), seat(82, 66, C.green, '#8a5a2b'), seat(50, 98, C.denim, '#c9a227'), seat(18, 66, C.purple), `<path d="M44 20 A46 46 0 1 0 52 18" fill="none" stroke="${HL}" stroke-width="3" stroke-dasharray="6 5" stroke-linecap="round"/>`, path('M54 18 L44 13 L45 24 Z', HL, HL, 1.4),
     die(50, 66, 13, 3, 10), pad(92, 6, 24, 34, 3), line('M90 4 L118 42 M118 4 L90 42', C.red, 3.4), turn(104, 60, 90, pencil(0, 0, 0, 0.8))),
-  // lättlärd: one short rule and you can play – against a thick book of rules (grey)
-  'boardg.lättlärd': all(faded(rect(78, 62, 34, 9, C.white, 2, C.ink, 1.4), rect(76, 71, 38, 9, C.white, 2, C.ink, 1.4), rect(78, 80, 34, 9, C.white, 2, C.ink, 1.4), rect(76, 89, 38, 11, C.white, 2, C.ink, 1.4), bust(95, 34, 0.75, { face: 'sad' }), num(112, 22, '?', 15)),
-    rect(6, 60, 44, 42, C.white, 4, C.ink, 2), circle(16, 74, 5.4, HL, C.ink, 1.2), num(16, 77.5, '1', 8, C.white), line('M26 74 L44 74', C.ink, 2.2), check(38, 92, 0.9), bust(34, 28, 1.05, { top: C.green, hs: 'long', face: 'grin' }), bulb(62, 20, 0.7), line('M56 50 L70 50 M70 50 L64 45 M70 50 L64 55', HL, 2.4)),
+  // lättlärd: one short rule, one minute, and she can play – against a thick rule book and many hours (grey)
+  'boardg.lättlärd': all(line('M62 8 L62 108', C.grey2, 1.8, '4 4'), faded(bust(92, 22, 0.8, { face: 'sad' }), rect(70, 52, 34, 9, C.white, 2, C.ink, 1.4), rect(68, 61, 38, 9, C.white, 2, C.ink, 1.4), rect(70, 70, 34, 9, C.white, 2, C.ink, 1.4), rect(68, 79, 38, 9, C.white, 2, C.ink, 1.4), clockPie(98, 98, 12, 0.9, C.grey), num(76, 104, '3', 15)),
+    bust(28, 22, 0.95, { top: C.green, hs: 'long', face: 'grin' }), rect(6, 54, 32, 22, C.white, 3, C.ink, 2), circle(13, 65, 4.4, HL, C.ink, 1.1), line('M21 65 L33 65', C.ink, 2.2), check(46, 62, 0.95),
+    clockPie(22, 96, 13, 0.08, HL), num(46, 102, '1', 15, HL)),
   // vara med: the others wave her in and she joins the game
   'boardg.vara-med': all(wood(92), bust(66, 46, 0.95, { top: C.red, hs: 'bun', face: 'grin' }), bust(98, 50, 0.95, { top: C.denim, hair: '#8a5a2b', face: 'smile' }), arm([56, 66], [46, 44], C.red, [46, 62]), line('M42 36 L38 32 M48 34 L48 28', HL, 2.2),
     die(74, 100, 12, 4, 8), at(92, 108, 0.5, pawn(C.yellow)), `<ellipse cx="24" cy="100" rx="13" ry="4.4" fill="none" stroke="${HL}" stroke-width="2" stroke-dasharray="4 3"/>`,
