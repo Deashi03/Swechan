@@ -1,11 +1,11 @@
 {
  "id": "m.matsvinn-och-rester",
- "contentVersion": 1,
- "updatedAt": "2026-11-05",
+ "contentVersion": 2,
+ "updatedAt": "2026-11-28",
  "titleSv": "Matsvinn och rester",
  "titleJa": "{食品|しょくひん}ロスと{残|のこ}り{物|もの}",
- "descriptionSv": "Matsvinn och rester: planera, ta vara på mat, matavfall, kompost och biogas.",
- "descriptionJa": "{食品|しょくひん}ロスと{残|のこ}り{物|もの}：{計画|けいかく}を{立|た}てる、{無駄|むだ}にしない、{生|なま}ごみ、コンポスト、バイオガス。",
+ "descriptionSv": "Du lär dig prata om hur man slänger mindre mat: planera inköpen, använda det som blir över och sortera det som ändå måste slängas.",
+ "descriptionJa": "{食|た}べ{物|もの}を{捨|す}てる{量|りょう}を{減|へ}らす{方法|ほうほう}について{話|はな}せるようになります。{買|か}い{物|もの}の{計画|けいかく}、{残|のこ}り{物|もの}の{活用|かつよう}、どうしても{捨|す}てるものの{分別|ぶんべつ}です。",
  "categoryId": "R01-A02-T06",
  "tags": [
   "mat"
@@ -154,7 +154,30 @@
    }
   ],
   "factSources": [
-   "I flera svenska kommuner rötas matavfall till biogas som används i bussar (allmän kunskap)."
+   {
+    "text": "Hushållen i Sverige slänger ungefär 16 kilo ätbar mat per person och år i soporna, och ungefär 18 kilo mat och dryck per person hälls ut i avloppet.",
+    "source": "Naturvårdsverket, statistik över livsmedelsavfall och matsvinn 2024; Livsmedelsverket",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Matsvinn ger utsläpp av växthusgaser i onödan, eftersom maten har producerats utan att ätas.",
+    "source": "Naturvårdsverket, ”Matsvinn och livsmedelsavfall”",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Bäst före-datum gäller kvaliteten: maten går ofta att äta efter datumet om den ser bra ut, luktar bra och smakar bra. Mat med sista förbrukningsdag ska inte ätas efter datumet.",
+    "source": "Livsmedelsverket, ”Bäst före och sista förbrukningsdag”",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Sedan den 1 januari 2024 ska matavfall från hushåll sorteras ut och samlas in separat. Insamlat matavfall rötas ofta till biogas, som bland annat används som bränsle i bussar.",
+    "source": "Naturvårdsverket, ”Krav på separat insamling av bioavfall”; Avfall Sverige",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -165,5 +188,6 @@
    "Hur sorterar man matavfall där du bor?",
    "Vilken rätt brukar du laga av rester?"
   ]
- }
+ },
+ "standard": 2
 }

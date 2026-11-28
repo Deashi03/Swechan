@@ -2,7 +2,7 @@
  * Early modules (0.19, backfill of order 1–8): home and chores, materials, atoms and molecules,
  * war and defence, medieval castles, common vegetables, cutting, boiling.
  */
-import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, waIn, waSway, type Svg } from './kit';
+import { C, all, arrow, circle, ellipse, g, line, path, rect, sparkle, waBob, waIn, waPulse, waSway, type Svg } from './kit';
 import { figure } from './figures';
 import { HL, T } from './people';
 import { ground, room, win, bed, tree, house } from './homeKit';
@@ -164,7 +164,7 @@ export const BASICS_MOTIFS: Record<string, Svg> = {
   'bas.klyfta': all(garlic(36, 64, 1.1), arrow(56, 64, 66, 64, HL, 2), g('translate(86 64) rotate(20)', path('M0 -20 C10 -14 12 6 6 18 C2 22 -2 22 -6 18 C-12 6 -10 -14 0 -20 Z', '#f6f0e0', C.ink, 1.8), path('M0 -20 L0 -26', 'none', '#c8b890', 2)), circle(86, 66, 22, 'none', HL, 1.6)),
   // ── Koka och sjuda (8) ──────────────────────────────────────────
   'bas.bubbla': all(rect(14, 20, 92, 90, '#bfe3f5', 6, C.ink, 1.8), ...[[40, 90, 8], [66, 70, 10], [50, 48, 6], [84, 50, 7], [30, 60, 5], [80, 94, 6]].map(([x, y, r]) => all(circle(x!, y!, r!, 'rgba(255,255,255,0.6)', C.ink, 1.4), circle(x! - r! * 0.3, y! - r! * 0.3, r! * 0.25, C.white, null)))),
-  'bas.koka.2': all(rect(10, 92, 100, 18, C.white, 2, C.ink, 1.6), ellipse(60, 92, 26, 4, C.dark, null), g('translate(60 70)', path('M-30 -14 L30 -14 L28 20 L-28 20 Z', C.silver, C.ink, 2), ellipse(0, -14, 30, 6, '#bfe3f5', C.ink, 1.4), ...[-12, 4].map((d) => ellipse(d, -16, 7, 9, C.white, C.ink, 1.4)), ...[[-20, -18], [16, -20], [-4, -22]].map(([a, b]) => circle(a!, b!, 2, C.white, '#9fd0f0', 0.8))), steam(60, 34, 3, 12)),
+  'bas.koka.2': all(rect(10, 92, 100, 18, C.white, 2, C.ink, 1.6), ellipse(60, 92, 26, 4, C.dark, null), g('translate(60 70)', path('M-30 -14 L30 -14 L28 20 L-28 20 Z', C.silver, C.ink, 2), ellipse(0, -14, 30, 6, '#bfe3f5', C.ink, 1.4), waBob('b6-koka2-agg', 2, ...[-12, 4].map((d) => ellipse(d, -16, 7, 9, C.white, C.ink, 1.4))), waPulse('b6-koka2-bubblor', ...[[-20, -18], [16, -20], [-4, -22]].map(([a, b]) => circle(a!, b!, 2, C.white, '#9fd0f0', 0.8)))), steam(60, 34, 3, 12)),
   'bas.spis': all(ground, rect(20, 50, 80, 62, C.white, 4, C.ink, 2), rect(20, 44, 80, 8, '#e8eaee', 2, C.ink, 1.6), ...[[40, 58], [80, 58]].map(([x, y]) => ellipse(x!, y!, 14, 3.4, C.dark, C.ink, 1)), rect(30, 70, 60, 34, '#3d3f4a', 3, C.ink, 1.6), rect(36, 76, 48, 22, '#5a5d68', 2, null), ...[30, 46, 62, 78].map((x) => circle(x + 6, 48, 2.4, C.dark, null))),
   'bas.lock': all(pot(60, 90, 1.2), g('translate(60 50)', path('M-34 6 C-34 -10 34 -10 34 6 Z', C.silver, C.ink, 2), rect(-6, -14, 12, 6, C.dark, 3, C.ink, 1.4)), rect(22, 34, 76, 26, 'none', 6, HL, 2)),
   'bas.kokpunkt': all(pot(44, 92, 1), ...[[34, 66], [46, 62], [54, 68]].map(([x, y]) => circle(x!, y!, 3, C.white, '#9fd0f0', 1)), g('translate(94 60)', rect(-6, -40, 12, 64, C.white, 6, C.ink, 1.8), rect(-3, -36, 6, 56, '#e85a5a', 2, null), circle(0, 30, 9, '#e85a5a', C.ink, 1.8), line('M6 -30 L14 -30', HL, 2)), T(72, 30, '100°', 9, HL)),
@@ -174,5 +174,5 @@ export const BASICS_MOTIFS: Record<string, Svg> = {
   'bas.soppa': all(bowl(60, 82, 38, C.white, '#e88a3a'), spoon(90, 60, 30, 1.2), steam(60, 44, 3, 10)),
   'bas.buljong': all(g('translate(40 74)', rect(-14, -14, 28, 28, '#e8c040', 3, C.ink, 1.8), path('M-14 -14 L-8 -20 L20 -20 L14 -14 Z M14 -14 L20 -20 L20 8 L14 14 Z', '#c8a020', C.ink, 1.4)), arrow(60, 74, 72, 74, HL, 2), g('translate(94 76)', path('M-18 -10 L18 -10 L16 16 L-16 16 Z', C.white, C.ink, 1.6), ellipse(0, -10, 18, 4, '#d8a840', C.ink, 1.2)), steam(94, 50, 2, 10)),
   'bas.gryta': all(pot(60, 88, 1.5, '#a8533a'), ...[[48, 66], [62, 64], [74, 68]].map(([x, y]) => circle(x!, y!, 3, '#ef8a3c', C.ink, 0.8)), steam(60, 34, 3, 12)),
-  'bas.puttra': all(rect(10, 96, 100, 14, C.white, 2, C.ink, 1.6), path('M50 96 L70 96', 'none', '#3a8ae8', 3), pot(60, 92, 1.2, '#c86a3a'), ...[[48, 64], [60, 62], [72, 66], [54, 58]].map(([x, y]) => circle(x!, y!, 2, C.white, '#c86a3a', 0.8)), path('M84 54 l4 -2 M86 62 l5 0', 'none', HL, 1.4)),
+  'bas.puttra': all(rect(10, 96, 100, 14, C.white, 2, C.ink, 1.6), path('M50 96 L70 96', 'none', '#3a8ae8', 3), pot(60, 92, 1.2, '#c86a3a'), waBob('b6-puttra-bubblor', 3, ...[[48, 64], [60, 62], [72, 66], [54, 58]].map(([x, y]) => circle(x!, y!, 2, C.white, '#c86a3a', 0.8))), waPulse('b6-puttra-ljud', path('M84 54 l4 -2 M86 62 l5 0', 'none', HL, 1.4))),
 };

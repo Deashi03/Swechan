@@ -1,7 +1,7 @@
 {
  "id": "m.hallbarhet-och-forvaring",
- "contentVersion": 4,
- "updatedAt": "2026-11-27",
+ "contentVersion": 5,
+ "updatedAt": "2026-11-28",
  "titleSv": "Hållbarhet och förvaring",
  "titleJa": "{食品|しょくひん}の{保存|ほぞん}と{日|ひ}もち",
  "descriptionSv": "Hur man förvarar mat i kylskåp, frys och skafferi, vad bäst före betyder och hur man undviker att slänga mat.",
@@ -158,7 +158,24 @@
    }
   ],
   "factSources": [
-   "Livsmedelsverkets råd: bäst före-datum anger kvalitet, inte säkerhet; lukta och smaka (allmän information)."
+   {
+    "text": "Kylskåpet bör hålla ungefär 4 grader.",
+    "source": "Livsmedelsverket: Förvara maten rätt",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Bäst före-datum handlar om kvalitet, inte om säkerhet: titta, lukta och smaka på maten. Sista förbrukningsdag ska däremot följas.",
+    "source": "Livsmedelsverket: Bäst före och sista förbrukningsdag",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Fryst mat tinas helst i kylskåpet.",
+    "source": "Livsmedelsverket: Förvara maten rätt",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   }
   ]
  },
  "conversation": {
@@ -169,5 +186,6 @@
    "Tar du med dig matlåda eller bento till jobbet eller skolan?",
    "Vad gör du för att inte slänga mat?"
   ]
- }
+ },
+ "standard": 2
 }

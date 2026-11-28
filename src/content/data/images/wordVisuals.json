@@ -261,12 +261,18 @@
   },
   {
    "senseId": "s.baklänges.1",
-   "kind": "animation",
-   "animationId": "anim.baklänges.1",
-   "file": "anim.baklanges.1",
+   "kind": "illustration",
+   "motif": "fix.baklänges",
    "group": "gå och springa",
    "quiz": false,
-   "reviewStatus": "ai-draft"
+   "animated": true,
+   "symbol": true,
+   "blindTest": {
+    "result": "pass",
+    "round": "0.64.0",
+    "hash": "e76374c4",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.balans.1",
@@ -2178,21 +2184,23 @@
   },
   {
    "senseId": "s.grov.1",
-   "kind": "animation",
-   "animationId": "anim.grov.1",
-   "file": "anim.grov.1",
+   "kind": "illustration",
+   "motif": "fix.grov",
    "group": "skära och hacka",
    "quiz": false,
    "confusableWith": [
     "s.vass.1",
     "s.slö.1",
-    "s.försiktig.1"
+    "s.försiktig.1",
+    "s.sandpapper.1"
    ],
-   "reviewStatus": "ai-draft",
+   "symbol": true,
    "blindTest": {
-    "result": "pass",
-    "round": "0.19.0",
-    "hash": "9d6af361"
+    "result": "waived",
+    "round": "0.64.0",
+    "hash": "92a70b8a",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: grov/sandpapper räknas som synonympar. Granskaren valde rätt bild med medelhög säkerhet i två omritningar, och det fallet kan synonymregistreringen inte räkna (som arkeologi i B5)."
    }
   },
   {
@@ -2230,16 +2238,16 @@
   },
   {
    "senseId": "s.gyllenbrun.1",
-   "kind": "animation",
-   "animationId": "anim.gyllenbrun.1",
-   "file": "anim.gyllenbrun.1",
+   "kind": "illustration",
+   "motif": "fix.gyllenbrun",
    "group": "matlagning",
    "quiz": false,
-   "reviewStatus": "ai-draft",
+   "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.19.0",
-    "hash": "63e3b379"
+    "round": "0.64.0",
+    "hash": "fbdd7e21",
+    "method": "match"
    }
   },
   {
@@ -4837,9 +4845,8 @@
   },
   {
    "senseId": "s.modern.1",
-   "kind": "animation",
-   "animationId": "anim.modern.1",
-   "file": "anim.modern.1",
+   "kind": "illustration",
+   "motif": "fix.modern",
    "group": "att beskriva en bostad",
    "quiz": false,
    "confusableWith": [
@@ -4847,11 +4854,12 @@
     "s.trång.1",
     "s.mysig.1"
    ],
-   "reviewStatus": "ai-draft",
+   "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.19.0",
-    "hash": "0ab8c08f"
+    "round": "0.64.0",
+    "hash": "6bd3f708",
+    "method": "match"
    }
   },
   {
@@ -6341,9 +6349,8 @@
   },
   {
    "senseId": "s.slö.1",
-   "kind": "animation",
-   "animationId": "anim.slö.1",
-   "file": "anim.slo.1",
+   "kind": "illustration",
+   "motif": "fix.slö",
    "group": "skära och hacka",
    "quiz": false,
    "confusableWith": [
@@ -6351,11 +6358,12 @@
     "s.försiktig.1",
     "s.grov.1"
    ],
-   "reviewStatus": "ai-draft",
+   "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.19.0",
-    "hash": "7905c5ea"
+    "round": "0.64.0",
+    "hash": "ac9e2272",
+    "method": "match"
    }
   },
   {
@@ -6597,20 +6605,19 @@
   },
   {
    "senseId": "s.sportig.1",
-   "kind": "animation",
-   "animationId": "anim.sportig.1",
-   "file": "anim.sportig.1",
+   "kind": "illustration",
+   "motif": "fix.sportig",
    "group": "stil",
    "quiz": false,
    "confusableWith": [
     "s.träningskläder.1"
    ],
-   "reviewStatus": "ai-draft",
-   "fallbackMotif": "sportig",
+   "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.19.0",
-    "hash": "baff5ee5"
+    "round": "0.64.0",
+    "hash": "a46c3761",
+    "method": "match"
    }
   },
   {
@@ -8199,9 +8206,8 @@
   },
   {
    "senseId": "s.vass.1",
-   "kind": "animation",
-   "animationId": "anim.vass.1",
-   "file": "anim.vass.1",
+   "kind": "illustration",
+   "motif": "fix.vass",
    "group": "skära och hacka",
    "quiz": false,
    "confusableWith": [
@@ -8209,11 +8215,12 @@
     "s.försiktig.1",
     "s.grov.1"
    ],
-   "reviewStatus": "ai-draft",
+   "symbol": true,
    "blindTest": {
     "result": "pass",
-    "round": "0.19.0",
-    "hash": "728f860f"
+    "round": "0.64.0",
+    "hash": "9b3620fc",
+    "method": "match"
    }
   },
   {
@@ -9828,7 +9835,8 @@
    "kind": "illustration",
    "motif": "mat.knäcka",
    "group": "mat-knäcka",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.hasselnöt.1",
@@ -9922,7 +9930,8 @@
    "kind": "illustration",
    "motif": "mat.strö",
    "group": "mat-strö",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.müsli.1",
@@ -10129,14 +10138,16 @@
    "kind": "illustration",
    "motif": "mat.blötlägga",
    "group": "mat-blötlägga",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.svälla.1",
    "kind": "illustration",
    "motif": "mat.svälla",
    "group": "mat-svälla",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.puré.1",
@@ -12498,7 +12509,8 @@
    "kind": "illustration",
    "motif": "livs.grilla",
    "group": "grill",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.vinge.1",
@@ -12526,6 +12538,7 @@
    "motif": "livs.värpa",
    "group": "ägg",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.kläcka.1"
    ]
@@ -12536,6 +12549,7 @@
    "motif": "livs.kläcka",
    "group": "ägg",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.värpa.1"
    ]
@@ -12887,6 +12901,7 @@
    "motif": "livs.marinera",
    "group": "marin",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.marinad.1"
    ]
@@ -12907,6 +12922,7 @@
    "motif": "livs.avstå",
    "group": "avstå",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.offra.1",
     "s.välja-bort.1",
@@ -13102,7 +13118,8 @@
    "kind": "illustration",
    "motif": "livs.jämföra",
    "group": "jämföra",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.kilopris.1",
@@ -13144,6 +13161,7 @@
    "motif": "livs.importera",
    "group": "import",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.utländsk.1",
     "s.transport.1"
@@ -13225,6 +13243,7 @@
    "motif": "livs.transport",
    "group": "transport",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.importera.1"
    ]
@@ -13262,6 +13281,7 @@
    "motif": "livs.förvara",
    "group": "förvara",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.kylskåp.1"
    ]
@@ -13292,6 +13312,7 @@
    "motif": "livs.frysa-in",
    "group": "frys",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.fryst.1",
     "s.tina.1"
@@ -13318,6 +13339,7 @@
    "motif": "livs.tina",
    "group": "frys",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.frysa-in.1"
    ]
@@ -13688,6 +13710,7 @@
    "motif": "kök.krydda-verb",
    "group": "krydda",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.peppra.1",
     "s.smakrik.1"
@@ -13699,6 +13722,7 @@
    "motif": "kök.peppra",
    "group": "krydda",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.krydda-verb.1"
    ]
@@ -13708,7 +13732,8 @@
    "kind": "illustration",
    "motif": "kök.söta",
    "group": "söta",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.smaka-av.1",
@@ -13716,6 +13741,7 @@
    "motif": "kök.smaka-av",
    "group": "smaka",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.provsmaka.1"
    ]
@@ -13855,6 +13881,7 @@
    "motif": "kök.tillaga",
    "group": "tillaga",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.förbereda.1"
    ]
@@ -13882,6 +13909,7 @@
    "motif": "kök.lägga-upp",
    "group": "upplägg",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.garnera.1"
    ]
@@ -13892,6 +13920,7 @@
    "motif": "kök.garnera",
    "group": "upplägg",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.lägga-upp.1"
    ]
@@ -13928,7 +13957,8 @@
    "kind": "illustration",
    "motif": "kök.värma-upp",
    "group": "värma",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.ljummen.1",
@@ -14107,6 +14137,7 @@
    "motif": "kök.dofta",
    "group": "dofta",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.stinka.1"
    ]
@@ -14117,6 +14148,7 @@
    "motif": "kök.stinka",
    "group": "dofta",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.dofta.1"
    ]
@@ -14359,6 +14391,7 @@
    "motif": "kök.svida",
    "group": "svida",
    "quiz": false,
+   "animated": true,
    "confusableWith": [
     "s.tår.1"
    ]
@@ -14368,7 +14401,8 @@
    "kind": "illustration",
    "motif": "kök.svettas",
    "group": "svett",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.mild.1",
@@ -14529,6 +14563,7 @@
    "motif": "kök.knapra",
    "group": "knapra",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.krasa.1"
    ]
@@ -14539,6 +14574,7 @@
    "motif": "kök.krasa",
    "group": "knapra",
    "quiz": false,
+   "animated": true,
    "confusableWith": [
     "s.knapra.1"
    ]
@@ -14580,6 +14616,7 @@
    "motif": "kök.fritera",
    "group": "panera",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.panera.1"
    ]
@@ -15068,7 +15105,8 @@
    "kind": "illustration",
    "motif": "kök.passa",
    "group": "passa",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.kombination.1",
@@ -15092,6 +15130,7 @@
    "motif": "kök.kombinera",
    "group": "kombi",
    "quiz": false,
+   "animated": true,
    "confusableWith": [
     "s.kombination.1"
    ]
@@ -15101,7 +15140,8 @@
    "kind": "illustration",
    "motif": "kök.påminna",
    "group": "påminna",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.favorit.1",
@@ -15833,6 +15873,7 @@
    "motif": "mål.boka",
    "group": "boka",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.bokning.1"
    ]
@@ -15917,7 +15958,8 @@
    "kind": "illustration",
    "motif": "mål.swisha",
    "group": "swish",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.kvitto.1",
@@ -15981,7 +16023,8 @@
    "kind": "illustration",
    "motif": "bord.skicka",
    "group": "skicka",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.servett.1",
@@ -16033,6 +16076,7 @@
    "motif": "bord.sörpla",
    "group": "ljud",
    "quiz": true,
+   "animated": true,
    "confusableWith": [
     "s.smaska.1"
    ]
@@ -16043,6 +16087,7 @@
    "motif": "bord.smaska",
    "group": "ljud",
    "quiz": false,
+   "animated": true,
    "confusableWith": [
     "s.sörpla.1",
     "s.oartig.1"
@@ -16053,7 +16098,8 @@
    "kind": "illustration",
    "motif": "bord.vänta-in",
    "group": "vänta",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.värd.1",
@@ -16074,7 +16120,8 @@
    "kind": "illustration",
    "motif": "bord.skåla",
    "group": "skåla",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.tack-för-maten.1",
@@ -16105,7 +16152,8 @@
    "kind": "illustration",
    "motif": "bord.avbryta",
    "group": "avbryta",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.tystnad.1",
@@ -16899,7 +16947,8 @@
    "kind": "illustration",
    "motif": "bord.ta-vara-på",
    "group": "tavara",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.slösa.1",
@@ -16907,6 +16956,7 @@
    "motif": "bord.slösa",
    "group": "svinn",
    "quiz": false,
+   "animated": true,
    "confusableWith": [
     "s.matsvinn.1"
    ]
@@ -16916,7 +16966,8 @@
    "kind": "illustration",
    "motif": "bord.planera",
    "group": "planera",
-   "quiz": false
+   "quiz": false,
+   "animated": true
   },
   {
    "senseId": "s.inköpslista.1",
@@ -16953,7 +17004,8 @@
    "kind": "illustration",
    "motif": "bord.skrapa",
    "group": "skrapa",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.matavfall.1",
@@ -16981,6 +17033,7 @@
    "motif": "bord.kompostera",
    "group": "kompost",
    "quiz": false,
+   "animated": true,
    "confusableWith": [
     "s.kompost.1"
    ]
@@ -28355,7 +28408,8 @@
    "kind": "illustration",
    "motif": "bas.koka.2",
    "group": "koka.2",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.spis.1",
@@ -28431,7 +28485,8 @@
    "kind": "illustration",
    "motif": "bas.puttra",
    "group": "koka.2",
-   "quiz": true
+   "quiz": true,
+   "animated": true
   },
   {
    "senseId": "s.klockan-är.1",
@@ -181511,7 +181566,10 @@
    "kind": "illustration",
    "motif": "wshop.sandpapper",
    "group": "sandpapper",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.grov.1"
+   ]
   },
   {
    "senseId": "s.slipkloss.1",

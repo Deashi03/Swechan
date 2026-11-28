@@ -1,7 +1,7 @@
 {
  "id": "m.koka-och-sjuda",
- "contentVersion": 3,
- "updatedAt": "2026-11-19",
+ "contentVersion": 4,
+ "updatedAt": "2026-11-28",
  "titleSv": "Koka och sjuda",
  "titleJa": "ゆでる・{煮|に}る",
  "descriptionSv": "Att koka vatten, potatis och soppa, och skillnaden mellan att koka och att sjuda. Bygger på Skära och hacka.",
@@ -156,8 +156,18 @@
    }
   ],
   "factSources": [
-   "Kokpunktens beroende av lufttryck (lägre kokpunkt på hög höjd): allmän skolfysik.",
-   "Dashi görs traditionellt på bl.a. torkad fisk (katsuobushi) och kombu: allmän kunskap om japansk matlagning."
+   {
+    "text": "Vatten kokar vid lägre temperatur på hög höjd, eftersom lufttrycket är lägre där. Därför tar det längre tid att koka mat på ett högt berg.",
+    "source": "Stockholms universitet, Kemilärarnas resurscentrum (KRC), ”Koka vatten i en spruta”",
+    "checked": "2026-11-28",
+    "recheck": "aldrig"
+   },
+   {
+    "text": "Japansk buljong (dashi) görs vanligen på torkad fisk (katsuobushi) och kombu.",
+    "source": "Japans jordbruksministerium (MAFF), ”Traditional Foods in Japan: Dried Bonito”",
+    "checked": "2026-11-28",
+    "recheck": "aldrig"
+   }
   ]
  },
  "conversation": {
@@ -168,5 +178,6 @@
    "Vilken soppa eller gryta tycker du mest om? Hur lagar man den?",
    "Har du något knep för att koka ris, potatis eller ägg perfekt?"
   ]
- }
+ },
+ "standard": 2
 }

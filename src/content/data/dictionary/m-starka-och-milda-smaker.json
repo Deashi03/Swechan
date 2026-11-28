@@ -38,7 +38,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.kryddig",
@@ -67,6 +71,10 @@
        "ja": "そのケーキは{甘|あま}くてスパイスがきいています。"
       }
      ],
+     "explanation": {
+      "sv": "Kryddig mat har mycket smak av kryddor, till exempel peppar. Den behöver inte bränna i munnen.",
+      "ja": "「kryddig」な{料理|りょうり}は、こしょうなどのスパイスの{味|あじ}がよくします。{口|くち}がひりひりするほど{辛|から}いとは{限|かぎ}りません。"
+     },
      "tags": [
       "mat"
      ],
@@ -74,7 +82,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.pikant",
@@ -101,6 +113,10 @@
        "ja": "そのソースはピリッとしています。"
       }
      ],
+     "explanation": {
+      "sv": "Pikant mat är lite stark, så att det blir spännande att äta den. Den är inte så stark att det gör ont.",
+      "ja": "「pikant」な{料理|りょうり}は{少|すこ}しだけ{辛|から}く、{食|た}べていて{楽|たの}しい{味|あじ}です。{痛|いた}いほど{辛|から}くはありません。"
+     },
      "tags": [
       "mat"
      ],
@@ -108,7 +124,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.svida",
@@ -147,7 +167,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.svettas",
@@ -186,7 +210,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.släcka",
@@ -319,8 +347,34 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.mild.3",
+     "ja": "（{人|ひと}・{声|こえ}が）やさしい、おだやかな",
+     "defSv": "Om en person eller en röst: lugn och snäll, inte hård.",
+     "defJa": "{人|ひと}や{声|こえ}が{落|お}ち{着|つ}いていてやさしく、きびしくない。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Läraren har en mild röst.",
+       "ja": "その{先生|せんせい}はおだやかな{声|こえ}をしています。"
+      }
+     ],
+     "labelSv": "om person",
+     "tags": [
+      "mat"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28",
+    "coreSense": "s.mild.1"
+   }
   },
   {
    "id": "e.mustig",
@@ -349,6 +403,10 @@
        "ja": "こくのある{煮込|にこ}み{料理|りょうり}は{冬|ふゆ}にぴったりです。"
       }
      ],
+     "explanation": {
+      "sv": "En mustig soppa har kokat länge och har mycket smak. Man blir varm och mätt av den.",
+      "ja": "「mustig」なスープは、{長|なが}く{煮|に}こんであって{味|あじ}が{深|ふか}いです。{体|からだ}が{温|あたた}まり、おなかもいっぱいになります。"
+     },
      "tags": [
       "mat"
      ],
@@ -356,7 +414,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.kraftig",
@@ -386,6 +448,10 @@
       }
      ],
      "labelSv": "om smak",
+     "explanation": {
+      "sv": "En kraftig smak känner man direkt och länge. Stark ost och mörkt kaffe har kraftig smak.",
+      "ja": "「kraftig」な{味|あじ}は、すぐに、そして{長|なが}く{感|かん}じます。くせの{強|つよ}いチーズや{濃|こ}いコーヒーがそうです。"
+     },
      "tags": [
       "mat"
      ],
@@ -434,8 +500,32 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.kraftig.4",
+     "ja": "{大幅|おおはば}な、{強|つよ}い",
+     "defSv": "Mycket stor eller mycket stark.",
+     "defJa": "とても{大|おお}きい、またはとても{強|つよ}い。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Priserna har ökat kraftigt.",
+       "ja": "{物価|ぶっか}が{大幅|おおはば}に{上|あ}がりました。"
+      }
+     ],
+     "labelSv": "stor, stark",
+     "tags": [
+      "mat"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.eftersmak",
@@ -473,7 +563,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.wasabi",
@@ -511,7 +605,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.pepparrot",
@@ -549,7 +647,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.curry",
@@ -587,7 +689,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.vänja-sig",
@@ -630,7 +736,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.tår",
@@ -666,7 +776,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   }
  ]
 }

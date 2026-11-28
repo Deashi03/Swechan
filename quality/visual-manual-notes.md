@@ -309,3 +309,10 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
 - **Undantag (`waived`):** *licens* (togs för *medlem* i alla tre omgångarna, också som tvådelad bild vid startbommen).
 - **Omritade i omgång 2:** *offside* (kraftig offsidelinje och assisterande domare), *offpist* (pistkäppar), *junior* (åldersskala med tydliga åldersdrag), *fair play* (bollen sparkas ut för en skadad motspelare), *tillåten* (rött kryss borttaget).
 - **Godkända men nära andra bilder (bevakas):** *tillåten* (medelhög säkerhet), *alpin* ↔ *skidåkning*, *hjärtfrekvens*/*lågintensiv* (medelhög säkerhet).
+
+## B6 Mat & dryck – sju omritade scener (2026-11-28)
+
+- **Bakgrund:** scenerna för *baklänges*, *vass*, *slö*, *modern*, *grov*, *sportig* och *gyllenbrun* visade den japanska glosan som text. Utan texten: *gyllenbrun* → *bryna*, *modern* → *mysig*, *grov* → *slipkloss*, *vass* → *täljkniv*; *slö* och *sportig* rätt men osäkert.
+- **Godkända som handritade motiv (`fix.*`):** *vass* och *slö* (kontrastpar med tomat), *gyllenbrun* (tre brödskivor), *modern* (gammaldags mot modernt rum), *baklänges* (blick åt ett håll, rörelse åt det andra), *sportig* (kostym mot träningsjacka; medelhög säkerhet, nära *träningskläder* som redan är förväxlingsord).
+- **Synonympar och undantag (produktägarens beslut 2026-11-28):** *grov*/*sandpapper*. Bilden (fint pulver mot stora korn under förstoringsglas) valdes rätt med medelhög säkerhet i två omritningar; sandpapper 80/240 konkurrerar i *Slipning och polering*.
+

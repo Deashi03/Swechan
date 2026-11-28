@@ -33,7 +33,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.böna",
@@ -68,7 +72,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.lins",
@@ -124,7 +132,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.kikärta",
@@ -159,7 +171,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.soja",
@@ -219,7 +235,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.torkad",
@@ -255,9 +275,17 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Torkad mat har man tagit bort vattnet ur, så att den håller länge. Torkade bönor är hårda och måste ligga i vatten innan man kokar dem.",
+      "ja": "「torkad」な{食|た}べ{物|もの}は、{長|なが}くもつように{水分|すいぶん}を{抜|ぬ}いたものです。{乾燥|かんそう}した{豆|まめ}は{固|かた}いので、{煮|に}る{前|まえ}に{水|みず}につけておきます。"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.blötlägga",
@@ -301,7 +329,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.svälla",
@@ -340,7 +372,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.mosa",
@@ -379,7 +415,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.puré",
@@ -414,7 +454,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.mätt",
@@ -451,7 +495,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.nyttig",
@@ -480,14 +528,37 @@
        "ja": "{豆|まめ}は{体|からだ}にいいです。"
       }
      ],
+     "labelSv": "om mat",
      "tags": [
       "mat"
      ],
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.nyttig.2",
+     "ja": "{役|やく}に{立|た}つ、ためになる",
+     "defSv": "Som man har hjälp av, eller som man lär sig något av.",
+     "defJa": "{助|たす}けになる、または{何|なに}かを{学|まな}べる。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Kursen var mycket nyttig för mig.",
+       "ja": "そのコースは{私|わたし}にとてもためになりました。"
+      }
+     ],
+     "labelSv": "till hjälp",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.protein",
@@ -522,7 +593,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.ersätta",
@@ -551,6 +626,7 @@
        "ja": "{肉|にく}の{代|か}わりに{豆|まめ}を{使|つか}うことができます。"
       }
      ],
+     "labelSv": "använda i stället",
      "collocations": [
       "ersätta A med B"
      ],
@@ -564,8 +640,30 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.ersätta.2",
+     "ja": "{補償|ほしょう}する、{弁償|べんしょう}する",
+     "defSv": "Betala pengar till någon för något som har gått sönder eller försvunnit.",
+     "defJa": "{壊|こわ}れたり、なくなったりした{物|もの}の{代|か}わりに、お{金|かね}を{払|はら}う。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Företaget ersätter skadan med tiotusen kronor.",
+       "ja": "{会社|かいしゃ}はその{損害|そんがい}を1{万|まん}クローナで{補償|ほしょう}します。"
+      }
+     ],
+     "labelSv": "betala",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.ärtsoppa",
@@ -604,7 +702,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   }
  ]
 }
