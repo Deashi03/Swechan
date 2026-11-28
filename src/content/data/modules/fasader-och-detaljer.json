@@ -1,0 +1,176 @@
+{
+ "id": "m.fasader-och-detaljer",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-27",
+ "titleSv": "Fasader och detaljer",
+ "titleJa": "{外壁|がいへき}とディテール",
+ "descriptionSv": "Att beskriva hur ett hus ser ut utifrån: tak, fönster, räcken och dekor på fasaden, så att man kan tala om bostäder på en visning eller läsa en bostadsannons.",
+ "descriptionJa": "{家|いえ}の{外観|がいかん}を{説明|せつめい}できるようになります。{屋根|やね}、{窓|まど}、{手|て}すり、{外壁|がいへき}の{装飾|そうしょく}について{学|まな}び、{内覧会|ないらんかい}で{住|す}まいについて{話|はな}したり、{住宅|じゅうたく}{広告|こうこく}を{読|よ}んだりできるようにします。",
+ "categoryId": "R08-A03-T06",
+ "tags": [
+  "arkitektur",
+  "design",
+  "bostad"
+ ],
+ "level": "B2",
+ "prerequisites": [
+  "m.arkitekturens-stilar"
+ ],
+ "related": [],
+ "recommendedOrder": 4562,
+ "words": [
+  {
+   "senseId": "s.fasad.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gavel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.takfot.1",
+   "active": true
+  },
+  {
+   "senseId": "s.platt-tak.1",
+   "active": true
+  },
+  {
+   "senseId": "s.takkupa.1",
+   "active": true
+  },
+  {
+   "senseId": "s.frontespis.1",
+   "active": false
+  },
+  {
+   "senseId": "s.balkong.1",
+   "active": true
+  },
+  {
+   "senseId": "s.burspråk.1",
+   "active": true
+  },
+  {
+   "senseId": "s.loftgång.1",
+   "active": true
+  },
+  {
+   "senseId": "s.smidesräcke.1",
+   "active": true
+  },
+  {
+   "senseId": "s.portal.1",
+   "active": false
+  },
+  {
+   "senseId": "s.kolonn.2",
+   "active": true
+  },
+  {
+   "senseId": "s.ornament.1",
+   "active": true
+  },
+  {
+   "senseId": "s.puts.1",
+   "active": true
+  },
+  {
+   "senseId": "s.listverk.1",
+   "active": false
+  },
+  {
+   "senseId": "s.panel.1",
+   "active": false
+  },
+  {
+   "senseId": "s.glasfasad.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Vilket hus ska vi välja?",
+  "paragraphs": [
+   "Aiko och Erik vill flytta och tittar på tre bostäder samma helg. Aiko har alltid tyckt om att titta på fasader. – Varje hus har sina egna detaljer, säger hon.",
+   "Först ser de en lägenhet i ett sekelskifteshus. Fasaden har gul puts och vita listverk runt fönstren. I vardagsrummet finns ett burspråk, och balkongen har ett svart smidesräcke med blommor. Över porten finns en liten portal med två kolonner och ornament i stenen.",
+   "Sedan åker de till en villa från 1910. Den har röd panel, en frontespis mitt på fasaden och två takkupor på taket. – Titta, gaveln har ett runt fönster, säger Erik. Under takfoten bor fåglar.",
+   "Den tredje bostaden är helt ny. Huset har en stor glasfasad mot parken och ett platt tak med en trädgård. Dörrarna till lägenheterna ligger på en loftgång. – Det känns som hemma i Japan, skrattar Aiko.",
+   "På kvällen pratar de länge. Erik tycker om villan, men Aiko älskar burspråket i den gamla lägenheten. – Vi får titta en gång till, säger de."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad finns runt fönstren i sekelskifteshuset?",
+    "options": [
+     "Röd panel",
+     "En glasfasad",
+     "Takkupor",
+     "Vita listverk"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Fasaden har gul puts och vita listverk runt fönstren.",
+    "explanationJa": "{窓|まど}のまわりには{白|しろ}い{繰形|くりがた}があります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad har villan på taket?",
+    "options": [
+     "Ett platt tak med en trädgård",
+     "En glasfasad",
+     "Två takkupor",
+     "En loftgång"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "Den har röd panel, en frontespis mitt på fasaden och två takkupor på taket.",
+    "explanationJa": "{屋根|やね}には{屋根窓|やねまど}が{二|ふた}つあります。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "inference",
+    "promptSv": "Varför känns det nya huset som hemma i Japan för Aiko?",
+    "options": [
+     "Det har ett burspråk",
+     "Det är byggt av sten",
+     "Det har ett smidesräcke",
+     "Dörrarna ligger på en loftgång"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Dörrarna till lägenheterna ligger på en loftgång.",
+    "explanationJa": "{日本|にほん}のアパートと{同|おな}じように、ドアが{外廊下|そとろうか}に{面|めん}しています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Den nya bostaden har ett platt tak.",
+    "correct": true,
+    "explanationSv": "Huset har en stor glasfasad mot parken och ett platt tak med en trädgård.",
+    "explanationJa": "{平屋根|ひらやね}の{上|うえ}に{庭|にわ}があります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "Aiko och Erik bestämmer sig samma kväll.",
+    "correct": false,
+    "explanationSv": "– Vi får titta en gång till, säger de.",
+    "explanationJa": "もう{一度|いちど}{見|み}ることにしました。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni går på en visning och pratar om husets fasad och detaljer.",
+  "discussionPoints": [
+   "Vilka detaljer på en fasad tycker du är vackra?",
+   "Skulle du vilja bo i ett hus med loftgång? Varför?",
+   "Hur ser fasaderna ut där du bor?",
+   "Vad är skillnaden mellan svenska och japanska hus?"
+  ]
+ },
+ "standard": 2
+}

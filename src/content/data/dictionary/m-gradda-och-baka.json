@@ -297,7 +297,8 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "order": 4
     },
     {
      "id": "s.form.2",
@@ -309,6 +310,10 @@
       {
        "sv": "Brödet har formen av en ring.",
        "ja": "そのパンは{輪|わ}の{形|かたち}をしています。"
+      },
+      {
+       "sv": "Kakorna har olika former: hjärtan och stjärnor.",
+       "ja": "クッキーはハートや{星|ほし}など、いろいろな{形|かたち}をしています。"
       }
      ],
      "labelSv": "hur något ser ut",
@@ -317,9 +322,72 @@
      ],
      "quality": {
       "status": "ai-draft"
-     }
+     },
+     "collocations": [
+      "en rund form",
+      "formen på något",
+      "ha formen av"
+     ],
+     "order": 1
+    },
+    {
+     "id": "s.form.3",
+     "ja": "{形態|けいたい}、{種類|しゅるい}",
+     "defSv": "Ett slag eller en sort av något.",
+     "defJa": "{何|なに}かの{種類|しゅるい}や{型|かた}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Att gå är en bra form av träning.",
+       "ja": "{歩|ある}くことは、よいトレーニングの{一|ひと}つの{形|かたち}です。"
+      }
+     ],
+     "labelSv": "sort",
+     "collocations": [
+      "en form av",
+      "i form av"
+     ],
+     "tags": [
+      "vardag"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    },
+    {
+     "id": "s.form.4",
+     "ja": "（{体|からだ}の）{調子|ちょうし}、コンディション",
+     "defSv": "Hur stark och frisk man är, till exempel när man tränar.",
+     "defJa": "トレーニングなどで、{体|からだ}がどのくらい{強|つよ}く{元気|げんき}かということ。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Efter sommaren är jag i bra form.",
+       "ja": "{夏|なつ}の{後|あと}、わたしは{調子|ちょうし}がいいです。"
+      }
+     ],
+     "labelSv": "kondition",
+     "collocations": [
+      "vara i form",
+      "komma i form",
+      "i dålig form"
+     ],
+     "tags": [
+      "hälsa",
+      "sport"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-27",
+    "coreSense": "s.form.2"
+   }
   },
   {
    "id": "e.grädda",

@@ -104,18 +104,55 @@ const lemmaLabel = (e: Pick<VocabularyEntry, 'inflection' | 'lemma'>) => (e.infl
  * Hide every form of the answer word in a text shown with a recall exercise
  * (feedback 0.4: "the answer is in the question"). Multi-word forms first.
  */
-const maskCache = new WeakMap<object, RegExp>();
-export function maskAnswer(text: string, entry: VocabularyEntry): string {
-  // One alternation per entry (longest form first), compiled once: building a Unicode regex for
-  // every form on every call dominated exercise generation.
-  let re = maskCache.get(entry);
-  if (!re) {
-    const forms = [...new Set([entry.lemma, ...allForms(entry)].map((f) => f.toLowerCase()))].sort((a, b) => b.length - a.length);
-    const alt = forms.map((f) => f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+')).join('|');
-    re = new RegExp(`(^|[^\\p{L}])(?:${alt})(?=$|[^\\p{L}])`, 'giu');
-    maskCache.set(entry, re);
+// Forms per entry as word lists (longest form first), computed once. No regex is built per entry:
+// a compiled Unicode regex per headword filled V8's code space when a test generated exercises
+// for every module word (0.63, ~20 000 entries).
+const maskCache = new WeakMap<object, string[][]>();
+const LETTER = /\p{L}/u;
+const SPACE = /\s/;
+const isLetter = (ch: string | undefined) => ch !== undefined && LETTER.test(ch);
+
+/** End index of `parts` (words separated by whitespace) matched at `at` in `lower`, or -1. */
+function matchForm(lower: string, at: number, parts: string[]): number {
+  let pos = at;
+  for (let k = 0; k < parts.length; k++) {
+    if (!lower.startsWith(parts[k]!, pos)) return -1;
+    pos += parts[k]!.length;
+    if (k < parts.length - 1) {
+      const start = pos;
+      while (pos < lower.length && SPACE.test(lower[pos]!)) pos++;
+      if (pos === start) return -1;
+    }
   }
-  return text.replace(re, '$1＿＿＿');
+  return pos;
+}
+
+export function maskAnswer(text: string, entry: VocabularyEntry): string {
+  let forms = maskCache.get(entry);
+  if (!forms) {
+    forms = [...new Set([entry.lemma, ...allForms(entry)].map((f) => f.toLowerCase()))]
+      .sort((a, b) => b.length - a.length)
+      .map((f) => f.split(' ').filter(Boolean));
+    maskCache.set(entry, forms);
+  }
+  let lower = text.toLowerCase();
+  // toLowerCase can change the length for a few non-Swedish letters (İ); lower per code unit so positions line up
+  if (lower.length !== text.length) lower = Array.from({ length: text.length }, (_, k) => { const l = text[k]!.toLowerCase(); return l.length === 1 ? l : text[k]!; }).join('');
+  let out = '';
+  let last = 0;
+  for (let i = 0; i < lower.length; i++) {
+    if (isLetter(lower[i - 1])) continue;
+    for (const parts of forms) {
+      const end = matchForm(lower, i, parts);
+      if (end > i && !isLetter(lower[end])) {
+        out += text.slice(last, i) + '＿＿＿';
+        last = end;
+        i = end - 1;
+        break;
+      }
+    }
+  }
+  return out + text.slice(last);
 }
 
 function contextLine(ref: SenseRef): string | undefined {

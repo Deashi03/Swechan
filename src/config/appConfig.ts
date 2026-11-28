@@ -2,7 +2,7 @@
  * Central, non-UI configuration. Pedagogical and gamification rules live
  * here (or in user settings) — never hard-coded inside components.
  */
-export const APP_VERSION = '0.62.0';
+export const APP_VERSION = '0.63.0';
 
 /**
  * Development-phase switches (decided with the product owner in 0.3.1).
