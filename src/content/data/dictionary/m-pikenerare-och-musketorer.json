@@ -492,6 +492,7 @@
        "ja": "マスケット{銃兵|じゅうへい}は{敵|てき}の{騎兵|きへい}を{狙|ねら}いました。"
       }
      ],
+     "labelSv": "med vapen",
      "frame": {
       "subject": "Skytten"
      },
@@ -502,8 +503,71 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.sikta.2",
+     "ja": "（{粉|こな}を）ふるう",
+     "defSv": "Låta mjöl gå genom en sil, så att det blir fint.",
+     "defJa": "{粉|こな}をふるいに{通|とお}して、{細|こま}かくする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Sikta mjölet ner i skålen.",
+       "ja": "{粉|こな}をボウルにふるい{入|い}れてください。"
+      }
+     ],
+     "labelSv": "mjöl",
+     "collocations": [
+      "sikta mjöl",
+      "sikta florsocker över kakan"
+     ],
+     "frame": {
+      "subject": "Hon",
+      "complement": "mjölet"
+     },
+     "tags": [
+      "mat",
+      "bakning"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2
+    },
+    {
+     "id": "s.sikta.3",
+     "ja": "（～を）{目指|めざ}す",
+     "defSv": "Ha något som mål.",
+     "defJa": "{何|なに}かを{目標|もくひょう}にする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Vi siktar på att bli klara i maj.",
+       "ja": "{私|わたし}たちは5{月|がつ}に{終|お}わらせることを{目指|めざ}しています。"
+      }
+     ],
+     "labelSv": "ha som mål",
+     "collocations": [
+      "sikta på",
+      "sikta högt"
+     ],
+     "frame": {
+      "subject": "Vi",
+      "complement": "på maj"
+     },
+     "tags": [
+      "vardag"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.mynning",
