@@ -1,0 +1,218 @@
+{
+ "id": "m.ishockey",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-27",
+ "titleSv": "Ishockey",
+ "titleJa": "アイスホッケー",
+ "descriptionSv": "Att tala om ishockey, Sveriges stora publiksport på vintern: utrustningen och rinken, spelarnas roller på isen, hur en match är upplagd i perioder och vad som händer när en spelare får utvisning och laget spelar powerplay.",
+ "descriptionJa": "スウェーデンの{冬|ふゆ}の{人気|にんき}{観戦|かんせん}スポーツ、アイスホッケーについて{話|はな}せるようになります。{用具|ようぐ}とリンク、{氷|こおり}の{上|うえ}の{選手|せんしゅ}の{役割|やくわり}、ピリオドに{分|わ}かれた{試合|しあい}の{流|なが}れ、そして{選手|せんしゅ}が{退場|たいじょう}になってチームがパワープレーになるときのことを{学|まな}びます。",
+ "categoryId": "R08-A04-T05",
+ "tags": [
+  "sport",
+  "vintersport",
+  "fritid"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.snowboard"
+ ],
+ "related": [],
+ "recommendedOrder": 4654,
+ "words": [
+  {
+   "senseId": "s.skridsko.1",
+   "active": true
+  },
+  {
+   "senseId": "s.klubba.2",
+   "active": true
+  },
+  {
+   "senseId": "s.puck.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ishockey.1",
+   "active": true
+  },
+  {
+   "senseId": "s.rink.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sarg.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ishall.1",
+   "active": true
+  },
+  {
+   "senseId": "s.målvakt.1",
+   "active": true
+  },
+  {
+   "senseId": "s.forward.1",
+   "active": true
+  },
+  {
+   "senseId": "s.back.1",
+   "active": true
+  },
+  {
+   "senseId": "s.tekning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.period.4",
+   "active": true
+  },
+  {
+   "senseId": "s.tackla.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utvisning.2",
+   "active": true
+  },
+  {
+   "senseId": "s.utvisningsbås.1",
+   "active": false
+  },
+  {
+   "senseId": "s.powerplay.1",
+   "active": false
+  },
+  {
+   "senseId": "s.slagskott.1",
+   "active": false
+  },
+  {
+   "senseId": "s.bandy.1",
+   "active": false
+  }
+ ],
+ "reading": {
+  "titleSv": "Kenji går på ishockey",
+  "paragraphs": [
+   "Kenji kommer från Kushiro på Hokkaido, där han spelade ishockey som barn. Hans kollega Johan har biljetter till en match i SHL, den högsta ligan i Sverige. De möts utanför ishallen en kall lördag i januari.",
+   "Inne i hallen är det fullt med folk. När spelarna åker ut på rinken jublar publiken. Alla har skridskor, hjälm och en klubba, och pucken studsar mot sargen när de värmer upp. Varje lag har fem spelare på isen och en målvakt. Johan förklarar att backarna mest spelar i försvaret och att forwardsen ska göra mål.",
+   "Matchen börjar med en tekning på mitten. En match har tre perioder på tjugo minuter, och klockan stannar varje gång domaren blåser. Lagen gör byten hela tiden, och spelarna tacklar varandra hårt längs sargen. – De orkar bara spela en minut i taget, säger Johan.",
+   "I den andra perioden fäller en back i bortalaget en forward med klubban. Han får utvisning i två minuter och sätter sig i utvisningsbåset. Hemmalaget spelar powerplay, och efter en minut skjuter en back ett hårt slagskott. Pucken går in, och spelaren i utvisningsbåset får komma tillbaka på isen.",
+   "Hemmalaget vinner med 3–2. På vägen hem berättar Johan att han spelade bandy när han var liten. – Bandy spelas utomhus, med boll i stället för puck, säger han. Kenji vill gärna se en bandymatch också."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Hur många spelare har varje lag på isen?",
+    "options": [
+     "Elva spelare",
+     "Fyra spelare och en målvakt",
+     "Sex spelare och två målvakter",
+     "Fem spelare och en målvakt"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Varje lag har fem spelare på isen och en målvakt.",
+    "explanationJa": "{各|かく}チーム5{人|にん}の{選手|せんしゅ}とゴールキーパー1{人|ひとり}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Hur lång är en period?",
+    "options": [
+     "Tjugo minuter",
+     "Tio minuter",
+     "Femton minuter",
+     "En halvtimme"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "En match har tre perioder på tjugo minuter …",
+    "explanationJa": "1ピリオドは20{分|ぷん}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför får backen i bortalaget utvisning?",
+    "options": [
+     "Han skjuter för hårt",
+     "Han kommer för sent",
+     "Han fäller en forward med klubban",
+     "Han tappar sin klubba"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "… fäller en back i bortalaget en forward med klubban. Han får utvisning i två minuter …",
+    "explanationJa": "スティックで{相手|あいて}のフォワードを{倒|たお}したからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Spelaren i utvisningsbåset får komma tillbaka när hemmalaget gör mål.",
+    "correct": true,
+    "explanationSv": "Pucken går in, och spelaren i utvisningsbåset får komma tillbaka på isen.",
+    "explanationJa": "ゴールが{決|き}まったので、{選手|せんしゅ}は{氷|こおり}の{上|うえ}に{戻|もど}れます。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Bandy spelas med puck.",
+    "correct": false,
+    "explanationSv": "– Bandy spelas utomhus, med boll i stället för puck …",
+    "explanationJa": "バンディはパックではなくボールを{使|つか}います。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "En ishockeymatch har tre perioder på 20 minuter effektiv speltid, och klockan stannar när spelet blåses av.",
+    "source": "Svenska Ishockeyförbundet, Ishockey för beginners / Spelregler för ishockey (IIHF)",
+    "checked": "2026-11-27",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Varje lag har fem utespelare och en målvakt på isen.",
+    "source": "Svenska Ishockeyförbundet, Ishockey för beginners / Spelregler för ishockey (IIHF)",
+    "checked": "2026-11-27",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Vid ett mindre straff utvisas spelaren i två minuter och får inte ersättas; gör det andra laget mål får spelaren komma tillbaka.",
+    "source": "Svenska Ishockeyförbundet, Spelregler för ishockey (IIHF), mindre straff",
+    "checked": "2026-11-27",
+    "recheck": "årligen"
+   },
+   {
+    "text": "En tackling där huvudet är den huvudsakliga kontaktytan är inte tillåten och ger utvisning.",
+    "source": "IIHF, Official Rule Book (Illegal Check to the Head or Neck), som Svenska Ishockeyförbundet följer",
+    "checked": "2026-11-27",
+    "recheck": "årligen"
+   },
+   {
+    "text": "SHL är den högsta ishockeyligan för herrar i Sverige.",
+    "source": "Svenska Hockeyligan (shl.se)",
+    "checked": "2026-11-27",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Bandy spelas utomhus med boll och klubbor och är stort i Sverige, Finland och Ryssland.",
+    "source": "Wikipedia, Bandy och Bandy World Championship; Svenska Bandyförbundet",
+    "checked": "2026-11-27",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni pratar om ishockey och om att gå på en match.",
+  "discussionPoints": [
+   "Har du sett en ishockeymatch, på tv eller i en ishall?",
+   "Är ishockey populärt i Japan? Var spelar man mest?",
+   "Tycker du att tacklingar ska vara tillåtna? Varför eller varför inte?",
+   "Vilken sport skulle du helst se live: ishockey, bandy eller baseboll?"
+  ]
+ },
+ "standard": 2
+}

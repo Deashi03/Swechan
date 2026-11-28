@@ -302,6 +302,7 @@
        "ja": "{絵文字|えもじ}は{短|みじか}い{返事|へんじ}を{和|やわ}らげることができます。"
       }
      ],
+     "labelSv": "ton, stämning",
      "frame": {
       "subject": "Hon"
      },
@@ -312,8 +313,36 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.mjuka-upp.2",
+     "ja": "（{体|からだ}や{筋肉|きんにく}を）ほぐす",
+     "defSv": "Röra kroppen lugnt, så att musklerna och lederna blir mjukare och lättare att röra.",
+     "defJa": "{体|からだ}をゆっくり{動|うご}かして、{筋肉|きんにく}や{関節|かんせつ}をやわらかく、{動|うご}かしやすくする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Mjuka upp axlarna genom att rulla dem bakåt några gånger.",
+       "ja": "{肩|かた}を{何回|なんかい}か{後|うし}ろに{回|まわ}して、ほぐしてください。"
+      }
+     ],
+     "labelSv": "kroppen",
+     "tags": [
+      "sport",
+      "träning",
+      "hälsa"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 2,
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-27"
+   }
   },
   {
    "id": "e.tänka-sig-för",
@@ -644,8 +673,65 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.blockera.3",
+     "ja": "ブロックする",
+     "defSv": "I sport: hoppa upp vid nätet med armarna i luften för att stoppa bollen.",
+     "defJa": "スポーツで、ボールを{止|と}めるために、ネットの{前|まえ}で{腕|うで}を{上|あ}げてジャンプする。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon blockerade bollen vid nätet.",
+       "ja": "{彼女|かのじょ}はネット{際|ぎわ}でボールをブロックしました。"
+      }
+     ],
+     "labelSv": "i volleyboll",
+     "frame": {
+      "subject": "Hon",
+      "complement": "bollen"
+     },
+     "tags": [
+      "sport",
+      "bollsport",
+      "fritid"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     },
+     "order": 3
+    },
+    {
+     "id": "s.blockera.4",
+     "ja": "（{格闘技|かくとうぎ}で）{受|う}ける、ブロックする",
+     "defSv": "Stoppa ett slag eller en spark med armen eller benet.",
+     "defJa": "{相手|あいて}のパンチやキックを{腕|うで}や{足|あし}で{止|と}める。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Han blockerade sparken med underarmen.",
+       "ja": "{彼|かれ}は{前腕|ぜんわん}でキックを{受|う}け{止|と}めました。"
+      }
+     ],
+     "labelSv": "i kampsport",
+     "frame": {
+      "subject": "Hon",
+      "complement": "slaget"
+     },
+     "tags": [
+      "sport",
+      "kampsport",
+      "karate"
+     ],
+     "quality": {
+      "status": "ai-draft"
+     }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-27"
+   }
   }
  ]
 }

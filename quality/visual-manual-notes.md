@@ -301,3 +301,11 @@ Alla 39 symbolbilder godkändes i första omgången. Granskaren nämnde närligg
 - **Synonympar (produktägarens beslut 2026-11-27):** *hållbarhet* (för miljön) förväxlades med *hållbar* i omgång 1, 2 (kretslopp miljö–människor–ekonomi) och som bildserie (samma stol år 1, 10, 30 mot slit-och-släng).
 - **Omritade i omgång 2:** *exponering* (tre foton mörkt–rätt–ljust i stället för kamera), *bildutsnitt* (rektangulär ram ur ett landskap), *kvadratisk* (tomma format i stället för motiv; förväxlades med *närbild*).
 - **Godkända men nära andra bilder (bevakas):** *remix* och *ledmotiv* (medelhög säkerhet), *stilren* ↔ minimalistiskt rum.
+
+## 0.64 – Sport & träning
+
+- **Godkända i manuella spåret:** *alpin* (utförsåkare med portar förväxlades med *slalom*, sedan liten kontrast; nu två rutor, berg med lift mot överkryssad längdåkare), *nivå* (trappsteg och lista förväxlades med *väntelista*; nu samma hopp i tre svårighetsgrader).
+- **Synonympar (produktägarens beslut 2026-11-27):** *senior*/*åldersgrupp* (åldersskala och sedan junior → A-lag), *mästerskap*/*tävling* (pokal, sedan prisceremoni med flagga), *osportslig*/*fusk* (hån, kastad klubba, filmning), *respekt*/*skaka hand* (bugning, händerna bakom ryggen, applåd mellan lagen).
+- **Undantag (`waived`):** *licens* (togs för *medlem* i alla tre omgångarna, också som tvådelad bild vid startbommen).
+- **Omritade i omgång 2:** *offside* (kraftig offsidelinje och assisterande domare), *offpist* (pistkäppar), *junior* (åldersskala med tydliga åldersdrag), *fair play* (bollen sparkas ut för en skadad motspelare), *tillåten* (rött kryss borttaget).
+- **Godkända men nära andra bilder (bevakas):** *tillåten* (medelhög säkerhet), *alpin* ↔ *skidåkning*, *hjärtfrekvens*/*lågintensiv* (medelhög säkerhet).
