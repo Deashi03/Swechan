@@ -222,14 +222,21 @@ export const COLLECT_MOTIFS: Record<string, Svg> = {
       at(102, 37 + r * 15, 1, coin(0, 0, 5, [C.gold, C.silver, C.tan, C.gold][r]!)), turn(72, 44 + r * 15, -7, num(0, 0, String(r + 5), 7, HL), line('M5 -2 L17 -2', C.grey, 1.4))])),
   'collect.i-bokstavsordning': all(rect(4, 92, 112, 6, C.brown, 2, C.ink, 1.6), ...['A', 'B', 'C', 'D'].map((ch, i) => book(8 + i * 17, 92, 15, [56, 62, 52, 58][i]!, [C.red, C.green, C.denim, C.yellow][i]!, num(15.5 + i * 17, 62, ch, 12, C.white))),
     num(84, 80, '…', 14, C.grey), book(96, 92, 15, 58, C.purple, num(103.5, 62, 'Ö', 12, C.white)), arrow(8, 108, 110, 108, HL, 3.4), circle(15.5, 22, 7, HL, C.ink, 1.2), num(15.5, 26, '1', 10, C.white)),
+  // Manual track (0.65): a way of working, not a result. Grey: picking at random, cards everywhere. Colour: one pile worked through in three steps (sort, count, write down).
   'collect.systematisk': (() => {
-    const mc = (x: number, y: number, deg: number, col: string, n: string): Svg => turn(x, y, deg, rect(-5.5, -7.5, 11, 15, col, 2, C.ink, 1.1), num(0, 3.6, n, 9, C.white));
-    const cols = [C.red, C.green, C.denim];
-    return all(ground, pers(18, 111, 0.92, { top: C.orange, long: true, aR: [22, -26] }),
-      rect(6, 6, 26, 36, C.white, 2, C.ink, 1.4), ...[0, 1, 2].map((i) => all(rect(10, 11 + i * 10, 6, 6, C.white, 1, C.ink, 1), i < 2 ? line(`M11 ${14 + i * 10} l2 2.4 l4 -5`, C.green, 1.8) : '', line(`M19 ${14 + i * 10} L28 ${14 + i * 10}`, C.grey, 1.6))),
-      mc(48, 100, -24, C.denim, '2'), mc(58, 102, 16, C.red, '3'), mc(52, 94, 8, C.green, '1'), mc(62, 94, -12, C.denim, '3'), mc(44, 92, 30, C.red, '2'),
-      ...[0, 1, 2].map((i) => all(rect(76, 8 + i * 34, 40, 28, '#fbfbf8', 3, cols[i]!, 2.6), mc(84, 22 + i * 34, 0, cols[i]!, '1'), mc(96, 22 + i * 34, 0, cols[i]!, '2'), i === 2 ? `<rect x="102.5" y="${14.5 + i * 34}" width="11" height="15" rx="2" fill="none" stroke="${C.grey}" stroke-width="1" stroke-dasharray="2 2"/>` : mc(108, 22 + i * 34, 0, cols[i]!, '3'))),
-      arrow(56, 82, 72, 30, HL, 2.6), arrow(62, 84, 73, 60, HL, 2.6), arrow(68, 94, 74, 92, HL, 2.6));
+    const mc = (x: number, y: number, deg: number, col: string): Svg => turn(x, y, deg, rect(-4.5, -6.5, 9, 13, col, 1.8, C.ink, 1.1), circle(0, -1, 1.8, C.white, null));
+    const pile = (x: number, y: number, col: string, n: number): Svg => all(...Array.from({ length: n }, (_, i) => rect(x - 5.5, y - 3 - i * 3, 11, 3, col, 1, C.ink, 0.9)));
+    const step = (x: number, n: string, done: boolean): Svg => all(circle(x, 15, 7.5, done ? C.green : HL, C.ink, 1.4), num(x, 19, n, 10.5, C.white));
+    return all(ground,
+      greyed(pers(25, 111, 0.9, { top: C.grey, aL: [-17, -54], aR: [16, -22], mouth: 'flat' }), mc(8, 46, -30, C.red), mc(42, 60, 24, C.denim), mc(10, 84, 14, C.green), mc(43, 92, -40, C.red), mc(38, 34, 60, C.green), mc(12, 104, 80, C.denim), mc(44, 106, 8, C.green),
+        num(11, 26, '?', 20), num(40, 20, '?', 14), line('M30 30 C36 26 34 20 28 22', C.ink, 1.6)),
+      line('M53 6 L53 110', C.grey2, 1.8, '4 4'),
+      rect(57, 4, 59, 46, C.white, 4, C.ink, 1.6), step(67, '1', true), step(86.5, '2', true), step(106, '3', false), line('M75.5 15 L78 15 M95 15 L97.5 15', C.ink, 1.8), path('M78 12 L81.5 15 L78 18 Z M97.5 12 L101 15 L97.5 18 Z', C.ink, null),
+      pile(62.5, 44, C.red, 3), pile(71.5, 44, C.denim, 2), pile(82, 44, C.red, 3), line('M89 32 L89 43 M91.6 32 L91.6 43 M94.2 32 L94.2 43', C.ink, 1.5), rect(100, 30, 12, 15, C.white, 1.5, C.ink, 1.1), line('M102.5 35 L109.5 35 M102.5 39 L109.5 39', C.grey, 1.2), line('M112 28 L106 37', C.ink, 3), line('M111.6 28.6 L106.8 35.8', C.yellow, 1.6),
+      line('M62 25.5 l2 2.4 l4.4 -5.4 M81.5 25.5 l2 2.4 l4.4 -5.4', C.green, 2.2), rect(98, 24, 17, 24, 'none', 4, HL, 2.2),
+      pers(68, 111, 0.92, { top: HL, long: true, aL: [-10, -30], aR: [22, -34] }),
+      rect(80, 84, 36, 5, C.brown, 1, C.ink, 1.4), line('M84 89 L84 111 M112 89 L112 111', C.ink, 2.6), pile(86, 84, C.red, 3), pile(87, 75, C.red, 0), rect(96, 70, 18, 14, C.white, 1.5, C.ink, 1.2), line('M99 74 L111 74 M99 78 L111 78', C.grey, 1.2), line('M99 81.4 L104 81.4', HL, 1.6),
+      line('M95 68 L90 78', C.ink, 3.2), line('M94.6 68.8 L90.6 76.8', C.yellow, 1.8), pile(72, 111, C.denim, 2), sparkle(110, 60, 5));
   })(),
   'collect.inköpspris': all(path('M12 14 L54 14 L54 96 L48 91 L42 96 L36 91 L30 96 L24 91 L18 96 L12 91 Z', C.white, C.ink, 1.8), line('M18 26 L48 26 M18 36 L40 36 M18 46 L44 46', C.grey, 2), line('M18 60 L48 60', C.ink, 1.4), rect(17, 65, 32, 17, 'none', 8, HL, 2.6), num(33, 78, '150', 11),
     path('M70 52 L106 52 L110 104 L66 104 Z', C.tan, C.ink, 1.8), path('M78 52 C78 36 98 36 98 52', 'none', C.ink, 2.2), coin(88, 80, 13, C.silver, crown(88, 80, 1.2)), arrow(56, 73, 70, 73, HL, 3), coin(82, 22, 7, C.gold), coin(94, 26, 7, C.gold), arrow(88, 34, 88, 44, C.grey, 2.4)),
