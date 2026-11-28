@@ -28,18 +28,18 @@ describe('Kurser (catalog navigation)', () => {
   });
 
   it('a topic group lists its seven planned modules, clearly marked and not startable', async () => {
-    wrap(<Explore categoryId="R08-A05-T01" />);
+    wrap(<Explore categoryId="R08-A06-T01" />);
     const items = await choices();
     expect(items.length).toBe(7);
     expect(screen.getAllByText('Planerad').length).toBeGreaterThanOrEqual(7);
-    expect(screen.getByText('Brädspelens delar')).toBeInTheDocument();
+    expect(screen.getByText('Vandringsutrustning')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
   });
 
   it('a planned module has an information view without a start button', async () => {
-    // Sport & träning is published from 0.64; Spel & hobbyer is still planned.
-    wrap(<CatalogModuleView id="SWC-KUL-05-01-01" />);
-    expect(await screen.findByText('Brädspelens delar')).toBeInTheDocument();
+    // Spel & hobbyer is published from 0.65; Naturupplevelser & reseliv is still planned.
+    wrap(<CatalogModuleView id="SWC-KUL-06-01-01" />);
+    expect(await screen.findByText('Vandringsutrustning')).toBeInTheDocument();
     expect(screen.getByText(/inte färdig än/)).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /Starta/ })).toBeNull();
     expect(screen.queryByRole('link', { name: /Starta/ })).toBeNull();
