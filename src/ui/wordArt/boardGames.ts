@@ -345,9 +345,10 @@ const M6: Record<string, Svg> = {
   'boardg.avvakta': all(circle(26, 20, 14, C.white, C.ink, 2), line('M26 20 L26 10', C.ink, 2.2), moving('bg-avv', '0%{transform:rotate(0)}100%{transform:rotate(360deg)}', { dur: 4 }, `<g style="transform-origin:26px 20px">${line('M26 20 L34 24', HL, 2.6)}</g>`), circle(26, 20, 1.8, C.ink, null),
     bust(46, 58, 1.35, { top: C.purple, hs: 'long', face: 'flat', look: 2.2 }), line('M30 88 L60 96 M62 88 L32 96', C.ink, 7.4), line('M30 88 L60 96 M62 88 L32 96', C.purple, 5), circle(60, 96, 3.6, C.skin, C.ink, 1.2), circle(32, 96, 3.6, C.skin, C.ink, 1.2),
     wood(102), faded(arm([118, 56], [98, 82], C.grey, [112, 66]), at(98, 108, 0.8, cPawn(BK)))),
-  // schackmatt: the king is attacked and every way out is closed
-  'boardg.schackmatt': all(checker(12, 12, 4, 24), at(96, 34, 0.9, cKing(WH)), at(24, 34, 0.9, cRook(BK)), at(96, 104, 0.9, cQueen(BK)), line('M36 24 L80 24 M96 76 L96 44', C.red, 3, '5 4'), path('M84 24 L76 20 L76 28 Z M96 40 L92 48 L100 48 Z', C.red, C.red, 1.2),
-    cross(72, 48, 1.1), cross(72, 60, 1.1), circle(96, 24, 17, 'none', HL, 2.8)),
+  // schackmatt: the white king in the corner is in check from the queen, which the black king protects; both flight squares are covered
+  'boardg.schackmatt': all(checker(12, 12, 4, 24), at(96, 34, 0.9, cKing(WH)), at(72, 58, 0.9, cQueen(BK)), at(48, 82, 0.9, cKing(BK)),
+    line('M80 40 L89 31', C.red, 3), path('M92 28 L83 30 L90 37 Z', C.red, C.red, 1.2), line('M56 66 L64 58', C.ink, 2, '3 3'),
+    cross(72, 24, 1.1), cross(96, 48, 1.1), circle(96, 24, 17, 'none', HL, 2.8)),
 };
 
 const M7: Record<string, Svg> = {
