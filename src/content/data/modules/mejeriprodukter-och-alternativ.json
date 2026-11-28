@@ -1,11 +1,11 @@
 {
  "id": "m.mejeriprodukter-och-alternativ",
- "contentVersion": 3,
- "updatedAt": "2026-11-22",
+ "contentVersion": 4,
+ "updatedAt": "2026-11-28",
  "titleSv": "Mejeriprodukter och alternativ",
  "titleJa": "{乳製品|にゅうせいひん}とその{代替品|だいたいひん}",
- "descriptionSv": "Mjölk, grädde, yoghurt och ost – och alternativ för den som inte tål laktos.",
- "descriptionJa": "{牛乳|ぎゅうにゅう}、{生|なま}クリーム、ヨーグルト、チーズ、そして{乳糖|にゅうとう}が{合|あ}わない{人|ひと}のための{代替品|だいたいひん}。",
+ "descriptionSv": "Du lär dig hitta rätt i mjölkhyllan: vad de olika sorterna av mjölk heter, vad man gör av mjölk och vad den som inte tål laktos kan välja i stället.",
+ "descriptionJa": "{乳製品|にゅうせいひん}の{売|う}り{場|ば}で{迷|まよ}わなくなります。{牛乳|ぎゅうにゅう}の{種類|しゅるい}の{名前|なまえ}、{牛乳|ぎゅうにゅう}から{作|つく}るもの、そして{乳糖|にゅうとう}が{合|あ}わない{人|ひと}が{代|か}わりに{選|えら}べるものを{学|まな}びます。",
  "categoryId": "R01-A02-T02",
  "tags": [
   "mat"
@@ -158,7 +158,24 @@
    }
   ],
   "factSources": [
-   "Svensk mjölkmärkning (lättmjölk under 0,5 %, mellanmjölk 1,5 %); havredryck utvecklades i Sverige; laktosintolerans är vanlig i Östasien (allmän kunskap)."
+   {
+    "text": "Lättmjölk har högst 0,5 % fett och mellanmjölk 1,5 %.",
+    "source": "Livsmedelsverkets föreskrifter (LIVSFS 2003:39) om mjölk och ost",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Laktosintolerans är ovanlig i Norden men vanlig i bland annat Östasien.",
+    "source": "1177: Laktosintolerans",
+    "checked": "2026-11-28",
+    "recheck": "årligen"
+   },
+   {
+    "text": "Havredrycken utvecklades av forskare vid Lunds universitet på 1990-talet.",
+    "source": "Lunds universitet",
+    "checked": "2026-11-28",
+    "recheck": "aldrig"
+   }
   ]
  },
  "conversation": {
@@ -169,5 +186,6 @@
    "Varför tål många i Asien inte laktos, tror du?",
    "Vad använder du i stället för mjölk eller grädde?"
   ]
- }
+ },
+ "standard": 2
 }

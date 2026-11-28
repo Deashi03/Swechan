@@ -60,7 +60,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.kvalitet",
@@ -88,6 +92,7 @@
        "ja": "その{魚|さかな}は{品質|ひんしつ}が{高|たか}いです。"
       }
      ],
+     "labelSv": "hur bra något är",
      "collocations": [
       "hög kvalitet",
       "dålig kvalitet"
@@ -98,8 +103,30 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.kvalitet.2",
+     "ja": "{長所|ちょうしょ}、{資質|ししつ}",
+     "defSv": "Något som är bra hos en person eller en sak.",
+     "defJa": "{人|ひと}や{物|もの}が{持|も}っているよい{点|てん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Hon har många goda kvaliteter som ledare.",
+       "ja": "{彼女|かのじょ}はリーダーとして{多|おお}くの{長所|ちょうしょ}を{持|も}っています。"
+      }
+     ],
+     "labelSv": "god egenskap",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.jämföra",
@@ -182,7 +209,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.säsong",
@@ -210,6 +241,7 @@
        "ja": "いちごは6{月|がつ}と7{月|がつ}が{旬|しゅん}です。"
       }
      ],
+     "labelSv": "tid på året",
      "collocations": [
       "ha säsong"
      ],
@@ -223,8 +255,30 @@
      "quality": {
       "status": "ai-draft"
      }
+    },
+    {
+     "id": "s.säsong.2",
+     "ja": "（スポーツ・ドラマの）シーズン",
+     "defSv": "Den tid på året då man spelar en sport, eller allt som visas på tv under ett år av något som har många delar.",
+     "defJa": "あるスポーツをする{時期|じき}、または{何回|なんかい}も{続|つづ}くテレビ{番組|ばんぐみ}の、{一年|いちねん}の{間|あいだ}に{放送|ほうそう}される{分|ぶん}。",
+     "concept": false,
+     "examples": [
+      {
+       "sv": "Den nya säsongen börjar i höst.",
+       "ja": "{新|あたら}しいシーズンは{秋|あき}に{始|はじ}まります。"
+      }
+     ],
+     "labelSv": "sport och tv",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B1"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.ursprung",
@@ -281,7 +335,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.märkning",
@@ -316,7 +374,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.importera",
@@ -456,7 +518,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.ekologisk",
@@ -483,6 +549,7 @@
        "ja": "オーガニックのバナナは{少|すこ}し{高|たか}いです。"
       }
      ],
+     "labelSv": "om mat",
      "collocations": [
       "ekologisk mat"
      ],
@@ -491,9 +558,35 @@
      ],
      "quality": {
       "status": "ai-draft"
+     },
+     "explanation": {
+      "sv": "Ekologisk mat odlar man utan kemiska medel mot insekter och sjukdomar, och djuren får vara ute mer. Ekologiska varor har en egen märkning och är ofta lite dyrare.",
+      "ja": "「ekologisk」な{食|た}べ{物|もの}は、{虫|むし}や{病気|びょうき}を{防|ふせ}ぐ{化学|かがく}{薬品|やくひん}を{使|つか}わずに{育|そだ}て、{動物|どうぶつ}はより{多|おお}く{外|そと}で{過|す}ごします。{専用|せんよう}の{表示|ひょうじ}があり、{少|すこ}し{高|たか}いことが{多|おお}いです。"
      }
+    },
+    {
+     "id": "s.ekologisk.2",
+     "ja": "{生態|せいたい}の、{生態系|せいたいけい}の",
+     "defSv": "Som har att göra med hur växter, djur och natur lever tillsammans.",
+     "defJa": "{植物|しょくぶつ}・{動物|どうぶつ}・{自然|しぜん}がどのようにともに{生|い}きているかに{関|かん}する。",
+     "concept": true,
+     "examples": [
+      {
+       "sv": "Skogen är ett ekologiskt system.",
+       "ja": "{森|もり}は{一|ひと}つの{生態系|せいたいけい}です。"
+      }
+     ],
+     "labelSv": "om naturen",
+     "quality": {
+      "status": "ai-draft"
+     },
+     "level": "B2"
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.vild",
@@ -587,7 +680,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.utländsk",
@@ -621,7 +718,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.transport",
@@ -657,7 +758,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   },
   {
    "id": "e.smakprov",
@@ -692,7 +797,11 @@
       "status": "ai-draft"
      }
     }
-   ]
+   ],
+   "senseInventory": {
+    "checkedAgainst": "SO",
+    "date": "2026-11-28"
+   }
   }
  ]
 }
