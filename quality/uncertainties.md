@@ -410,3 +410,11 @@ Flyttat från `PROJECT_STATUS.md` 2026-11-19 (kvalitetsplanen A7). Lägg nya pun
   - lästexten i *Färskhet och mognad* säger "släng den mögliga osten"; Livsmedelsverket säger att mögel på hårdost kan skäras bort med marginal
   - bilden `livs.avstå` har texten "Nej tack" i en pratbubbla
 
+- **0.65 (Spel & hobbyer), svenska:**
+  - betydelseinventeringen är gjord ur grupperna egen kännedom om SO och SAOL (svenska.se gick inte att läsa); osäkra som uppslagsord: *scrapbooking*, *washitejp*, *mormorsruta*, *luftmaska*, *raksöm*, *streckordning*, *skärmatta*, *papperstrana*, *trådrulle*, *poängblock*, *boosterpaket*, *samlarobjekt*, *äkthetsintyg*, *prisförslag*, *bakluckeloppis*, *förstadagsbrev*, *samlarmässa*, *snitta*, *kalljäsa*
+  - former att kontrollera: *gamer* (*gamern*, *gamrar*), *espresso* (plural), *en matcha*, *en kimchi*, *en kombucha*, *prispengar* (bara plural), *schackmatt* (oböjligt)
+  - ord och termer: *spak* för styrspak, *poängtavla* för topplista, *spelkontroll* som nära synonym till *handkontroll*, *löste* (tehandelns term), *rundsticka* med "vajer" (också "kabel"), *häst* för springare i schacktexten, *stick*/*giv* på japanska (トリック, ディール), *sakna.3* ("vara försvunnen") saknas
+  - engelska lån (co-op, levla, XP, lagg, booster) står bara i japanska noter, eftersom svenska noter ordförrådskontrolleras
+- **0.65, japanska:** 組み技 och 画仙紙 (*rispapper*), マスキングテープ (*washitejp*), コレクターズフェア (*samlarmässa*), 思い出の価値 (*affektionsvärde*), noten om *kombucha* och 昆布茶, läsningarna 茶葉, 4分, 寒天, 糖衣
+- **0.65, fakta (kontrollerade bara mot sökträffar eller andrahandskällor):** Sveroks cirka 2 000 föreningar, DreamHack "ett av världens största lan", att många plattformsspel kommer från Japan, kortleken (52 kort), karuta på nyår, kontrollstämpeln för silver (förordning 1999:780), "kattfoten", antikviteter minst hundra år, att sojasås är fermenterad, Livsmedelsverkets råd om hemfermentering, studiecirklar och statsbidrag
+

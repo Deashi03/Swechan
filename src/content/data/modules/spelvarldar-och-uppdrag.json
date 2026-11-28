@@ -1,0 +1,176 @@
+{
+ "id": "m.spelvarldar-och-uppdrag",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-28",
+ "titleSv": "Spelvärldar och uppdrag",
+ "titleJa": "ゲームの{世界|せかい}とクエスト",
+ "descriptionSv": "Du lär dig att berätta vad som händer i ett spel: hur spelvärlden ser ut, vilka uppdrag man får, vad som väntar i slutet av en bana och hur man sparar det man har gjort.",
+ "descriptionJa": "ゲームの{中|なか}で{起|お}こることを{話|はな}せるようになります。ゲームの{世界|せかい}のようす、{与|あた}えられるクエスト、ステージの{最後|さいご}に{待|ま}っているもの、{進|すす}めた{内容|ないよう}のセーブのしかたを{学|まな}びます。",
+ "categoryId": "R08-A05-T02",
+ "tags": [
+  "spel",
+  "datorspel",
+  "fritid"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.spelkontroller"
+ ],
+ "related": [],
+ "recommendedOrder": 4723,
+ "words": [
+  {
+   "senseId": "s.spelvärld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.öppen-värld.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utforska.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spelfigur.1",
+   "active": true
+  },
+  {
+   "senseId": "s.uppdrag.2",
+   "active": true
+  },
+  {
+   "senseId": "s.huvuduppdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.sidouppdrag.1",
+   "active": true
+  },
+  {
+   "senseId": "s.bana.3",
+   "active": true
+  },
+  {
+   "senseId": "s.fiende.1",
+   "active": true
+  },
+  {
+   "senseId": "s.boss.2",
+   "active": true
+  },
+  {
+   "senseId": "s.klara.1",
+   "active": true
+  },
+  {
+   "senseId": "s.grotta.1",
+   "active": false
+  },
+  {
+   "senseId": "s.skatt.2",
+   "active": true
+  },
+  {
+   "senseId": "s.belöning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.ledtråd.1",
+   "active": false
+  },
+  {
+   "senseId": "s.spara.3",
+   "active": true
+  },
+  {
+   "senseId": "s.sparpunkt.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Bara ett uppdrag till",
+  "paragraphs": [
+   "Yuki har köpt ett nytt äventyrsspel. Det har en öppen värld, så hon kan gå vart hon vill. Den första kvällen gör hon inga uppdrag alls. Hon bara utforskar spelvärlden med sin spelfigur: skogar, berg och små byar.",
+   "I en by får hon sitt första uppdrag. Ett barn har försvunnit i skogen. Det är ett huvuduppdrag och hör till spelets berättelse. Men på vägen dit träffar hon en gammal man som har tappat sin hund. Det är ett sidouppdrag, och belöningen är en karta.",
+   "Kartan är en ledtråd. Den visar var en skatt ligger gömd i en grotta. Yuki går dit, men grottan är full av fiender, och längst in väntar en boss. Hon förlorar tre gånger.",
+   "Som tur är finns det en sparpunkt precis utanför grottan. Varje gång hon förlorar börjar hon om därifrån och kan försöka igen. Fjärde gången klarar hon bossen och tar skatten.",
+   "Klockan är två på natten. Yuki sparar och stänger av. I gamla spel gick man från bana till bana, tänker hon. Här finns det alltid något mer att göra. Barnet i skogen får vänta till i morgon."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad gör Yuki den första kvällen?",
+    "options": [
+     "Hon gör alla huvuduppdrag",
+     "Hon letar efter en skatt",
+     "Hon spelar mot en boss",
+     "Hon utforskar spelvärlden"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Hon bara utforskar spelvärlden med sin spelfigur: skogar, berg och små byar.",
+    "explanationJa": "{最初|さいしょ}の{夜|よる}は、キャラクターでゲームの{世界|せかい}を{探検|たんけん}するだけでした。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vilket uppdrag är ett sidouppdrag?",
+    "options": [
+     "Att hitta mannens hund",
+     "Att hitta barnet i skogen",
+     "Att klara bossen",
+     "Att spara spelet"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Men på vägen dit träffar hon en gammal man som har tappat sin hund. Det är ett sidouppdrag, och belöningen är en karta.",
+    "explanationJa": "{犬|いぬ}を{探|さが}すのがサブクエストで、{報酬|ほうしゅう}は{地図|ちず}です。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "cause",
+    "promptSv": "Varför kan Yuki försöka igen så snabbt?",
+    "options": [
+     "Det finns en sparpunkt utanför grottan",
+     "Bossen blir svagare varje gång",
+     "Hon har en karta",
+     "Hon börjar om från byn"
+    ],
+    "correctIndex": 0,
+    "explanationSv": "Som tur är finns det en sparpunkt precis utanför grottan.",
+    "explanationJa": "{洞窟|どうくつ}のすぐ{外|そと}にセーブポイントがあるからです。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Yuki klarar bossen första gången.",
+    "correct": false,
+    "explanationSv": "Hon förlorar tre gånger.",
+    "explanationJa": "{三回|さんかい}{負|ま}けて、{四回目|よんかいめ}に{勝|か}ちました。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "inference",
+    "statementSv": "Yuki har gjort klart huvuduppdraget när hon stänger av.",
+    "correct": false,
+    "explanationSv": "Barnet i skogen får vänta till i morgon.",
+    "explanationJa": "{森|もり}の{子|こ}どもを{探|さが}すメインクエストは、まだ{終|お}わっていません。"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni berättar för varandra om ett spel, en film eller en bok med en spännande värld.",
+  "discussionPoints": [
+   "Tycker du om spel där man får utforska fritt, eller vill du ha tydliga uppdrag?",
+   "Gör du alla sidouppdrag eller bara huvuduppdragen?",
+   "Har du någon gång fastnat på en svår boss eller en svår bana?",
+   "Hur länge kan du spela innan du måste sluta?"
+  ]
+ },
+ "standard": 2
+}

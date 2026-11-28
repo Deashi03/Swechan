@@ -1,0 +1,180 @@
+{
+ "id": "m.rollspelssystem",
+ "contentVersion": 1,
+ "updatedAt": "2026-11-28",
+ "titleSv": "Rollspelssystem",
+ "titleJa": "RPGのしくみ",
+ "descriptionSv": "Du lär dig att förklara hur ett rollspel fungerar: hur en spelfigur blir starkare med erfarenhetspoäng och ny utrustning, vad man gör när livet tar slut och hur datorns rollspel hänger ihop med rollspel runt ett bord.",
+ "descriptionJa": "RPGのしくみを{説明|せつめい}できるようになります。キャラクターが{経験値|けいけんち}や{新|あたら}しい{装備|そうび}で{強|つよ}くなるしくみ、{体力|たいりょく}がなくなりそうなときにすること、コンピューターのRPGとテーブルを{囲|かこ}んで{遊|あそ}ぶRPGとの{関係|かんけい}を{学|まな}びます。",
+ "categoryId": "R08-A05-T02",
+ "tags": [
+  "spel",
+  "datorspel",
+  "fritid"
+ ],
+ "level": "B1",
+ "prerequisites": [
+  "m.spelvarldar-och-uppdrag"
+ ],
+ "related": [],
+ "recommendedOrder": 4724,
+ "words": [
+  {
+   "senseId": "s.rollspel.2",
+   "active": true
+  },
+  {
+   "senseId": "s.bordsrollspel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.spelledare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magi.1",
+   "active": true
+  },
+  {
+   "senseId": "s.magiker.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trollformel.1",
+   "active": true
+  },
+  {
+   "senseId": "s.vapen.1",
+   "active": true
+  },
+  {
+   "senseId": "s.utrustning.1",
+   "active": true
+  },
+  {
+   "senseId": "s.poäng.1",
+   "active": false
+  },
+  {
+   "senseId": "s.erfarenhet.1",
+   "active": true
+  },
+  {
+   "senseId": "s.erfarenhetspoäng.1",
+   "active": true
+  },
+  {
+   "senseId": "s.gå-upp-i-nivå.1",
+   "active": true
+  },
+  {
+   "senseId": "s.egenskap.1",
+   "active": false
+  },
+  {
+   "senseId": "s.färdighet.1",
+   "active": false
+  },
+  {
+   "senseId": "s.livmätare.1",
+   "active": true
+  },
+  {
+   "senseId": "s.trolldryck.1",
+   "active": true
+  }
+ ],
+ "reading": {
+  "titleSv": "Från bordet till datorn",
+  "paragraphs": [
+   "I ett rollspel spelar man en figur i en berättelse. Först väljer man vilken sorts figur man vill vara. En kan vara stark och slåss med vapen. En annan är en magiker, som är svagare men kan använda magi och lär sig nya trollformler.",
+   "När spelfiguren klarar uppdrag får den erfarenhetspoäng. En figur som har fått ett visst antal poäng går upp i nivå. Då blir den starkare. Ofta får man också välja vilka egenskaper och färdigheter som ska bli bättre.",
+   "Utrustningen är också viktig. Man hittar eller köper vapen och andra saker, och med bättre utrustning klarar man svårare fiender. Livmätaren visar hur mycket liv man har kvar. Är den nästan tom dricker man en trolldryck.",
+   "Det här systemet är äldre än datorspelen. Det kommer från bordsrollspelen, där man sitter runt ett bord och en spelledare berättar vad som händer. Det första stora svenska bordsrollspelet hette Drakar och Demoner och kom 1982.",
+   "Kenji spelar både och. – På datorn räknar spelet åt mig, säger han. Men vid bordet kan man göra vad som helst, bara spelledaren säger ja. Och den erfarenhet jag har från bordet hjälper mig framför datorn."
+  ],
+  "questions": [
+   {
+    "kind": "choice",
+    "id": "q1",
+    "focus": "detail",
+    "promptSv": "Vad får spelfiguren när den klarar uppdrag?",
+    "options": [
+     "En trolldryck",
+     "En ny spelledare",
+     "Erfarenhetspoäng",
+     "En livmätare"
+    ],
+    "correctIndex": 2,
+    "explanationSv": "När spelfiguren klarar uppdrag får den erfarenhetspoäng.",
+    "explanationJa": "キャラクターはクエストをクリアすると{経験値|けいけんち}をもらいます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q2",
+    "focus": "detail",
+    "promptSv": "Vad gör man när livmätaren är nästan tom?",
+    "options": [
+     "Man går upp i nivå",
+     "Man byter vapen",
+     "Man läser en trollformel",
+     "Man dricker en trolldryck"
+    ],
+    "correctIndex": 3,
+    "explanationSv": "Är den nästan tom dricker man en trolldryck.",
+    "explanationJa": "ライフゲージがほとんど{空|から}になったら、ポーションを{飲|の}みます。"
+   },
+   {
+    "kind": "choice",
+    "id": "q3",
+    "focus": "detail",
+    "promptSv": "Vad gör spelledaren i ett bordsrollspel?",
+    "options": [
+     "Räknar alla poäng på datorn",
+     "Berättar vad som händer",
+     "Spelar den starkaste figuren",
+     "Säljer utrustning"
+    ],
+    "correctIndex": 1,
+    "explanationSv": "Det kommer från bordsrollspelen, där man sitter runt ett bord och en spelledare berättar vad som händer.",
+    "explanationJa": "ゲームマスターは、{何|なに}が{起|お}こるかを{語|かた}ります。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q4",
+    "focus": "detail",
+    "statementSv": "Systemet med nivåer och poäng kom först i datorspelen.",
+    "correct": false,
+    "explanationSv": "Det här systemet är äldre än datorspelen.",
+    "explanationJa": "このしくみはコンピューターゲームより{古|ふる}く、TRPGから{来|き}ています。"
+   },
+   {
+    "kind": "truefalse",
+    "id": "q5",
+    "focus": "detail",
+    "statementSv": "En magiker är oftast starkare än andra figurer men kan inte använda magi.",
+    "correct": false,
+    "explanationSv": "En annan är en magiker, som är svagare men kan använda magi och lär sig nya trollformler.",
+    "explanationJa": "{魔法使|まほうつか}いは{力|ちから}は{弱|よわ}いですが、{魔法|まほう}が{使|つか}えます。"
+   }
+  ],
+  "factSources": [
+   {
+    "text": "Bordsrollspelet Drakar och Demoner gavs ut första gången 1982 av förlaget Äventyrsspel.",
+    "source": "Wikipedia: Drakar och Demoner; SVT Kultur (”Rollspelsvågen”)",
+    "checked": "2026-11-28",
+    "recheck": "aldrig"
+   }
+  ]
+ },
+ "conversation": {
+  "scenarioSv": "Ni ska börja spela ett rollspel tillsammans och väljer era figurer.",
+  "discussionPoints": [
+   "Vill du hellre vara stark eller kunna använda magi? Varför?",
+   "Vad är roligast: att gå upp i nivå eller att hitta ny utrustning?",
+   "Har du spelat bordsrollspel? Hur var det?",
+   "Vilka japanska rollspel skulle du vilja visa för en svensk vän?"
+  ]
+ },
+ "standard": 2
+}
