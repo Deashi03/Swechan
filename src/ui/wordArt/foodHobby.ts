@@ -81,9 +81,9 @@ const M1: Record<string, Svg> = {
     moving('fh-bryg2', '0%{transform:translate(0,-10px);opacity:0}30%{opacity:1}100%{transform:translate(0,8px);opacity:1}', { dur: 1.3 }, ellipse(60, 78, 2.4, 3.4, COFFEE, null)), steam('fh-bryg3', 94, 40)),
   // kaffeböna: roasted coffee beans, big
   'foodh.kaffeböna': all(bean(46, 50, -24, 4.6), bean(90, 84, 30, 2.6), bean(26, 96, 70, 2), bean(100, 34, -60, 1.8, '#8a5a34')),
-  // mörkrostad: roasted long over the fire – the bean is almost black; the light bean (grey) is the reference
-  'foodh.mörkrostad': all(faded(bean(22, 34, -20, 2.2, '#c99a5e'), flame(22, 62, 0.7)), arrow(40, 40, 54, 40, C.grey, 2.6), bean(84, 38, -20, 4, DARK), sparkle(104, 18, 5, C.white),
-    flame(66, 84, 1), flame(84, 86, 1.25), flame(102, 84, 1), rect(8, 98, 104, 9, '#e9c79a', 4, C.ink, 1.6), rect(74, 98, 38, 9, DARK, 4, C.ink, 1.6), path('M93 96 L88 88 L98 88 Z', HL, C.ink, 1.3)),
+  // mörkrostad: the darkest end of the roast scale – three heaps of beans from light to dark, the dark one marked
+  'foodh.mörkrostad': all(...['#dcb682', '#8a5a34', DARK].map((c, i) => all(rect(8 + i * 35, 92, 34, 14, c, 2, C.ink, 1.6), bean(18 + i * 35, 78, -20, 1.5, c), bean(33 + i * 35, 80, 30, 1.5, c), bean(25 + i * 35, 66, 10, 1.5, c))),
+    bean(95, 38, -24, 2.6, DARK), sparkle(112, 22, 4, C.white), waPulse('fh-mork', rect(76, 16, 40, 92, 'none', 8, HL, 3.4)), path('M95 4 L88 13 L102 13 Z', HL, C.ink, 1.3), line('M12 112 L60 112', C.grey, 2.4), path('M70 112 L60 107 L60 117 Z', C.grey, C.grey, 1)),
   // kaffekvarn: hand grinder with a crank, beans on top and a drawer for the ground coffee
   'foodh.kaffekvarn': all(table(104), rect(30, 58, 60, 46, C.brown, 4, C.ink, 2.2), rect(42, 78, 36, 18, C.tan, 2, C.ink, 1.8), circle(60, 87, 2.6, C.gold, C.ink, 1.2), path('M34 58 C34 40 86 40 86 58 Z', C.silver, C.ink, 2),
     bean(50, 50, 20, 0.9), bean(62, 47, -30, 0.9), bean(72, 52, 60, 0.9), line('M60 40 L60 26 L96 20', C.ink, 4.4), line('M60 40 L60 26 L96 20', C.silver, 2), circle(98, 19, 6, HL, C.ink, 1.8), rect(55, 36, 10, 6, C.dark, 2, C.ink, 1.4)),
@@ -203,9 +203,11 @@ const M3: Record<string, Svg> = {
   // inkråm: the soft inside of the bread – fingers pinch a piece from the middle of the slice
   'foodh.inkråm': all(slice(52, 66, 2.1, '#b9b3aa', CRUMB, HOLES), circle(52, 62, 15, 'none', HL, 3), line('M52 62 C60 50 72 40 82 34', '#f5e3bd', 9), path('M76 24 C82 18 94 22 92 32 C90 40 80 42 76 36 Z', CRUMB, C.ink, 1.6),
     path('M84 14 C96 8 112 14 114 26 L100 30 C98 24 92 22 86 24 Z', C.skin, C.ink, 1.8), path('M94 36 C102 34 112 36 116 44 L104 50 C100 44 96 42 90 42 Z', C.skin, C.ink, 1.8)),
-  // luftig (om bröd): light and full of air – against a dense, heavy slice (grey)
-  'foodh.luftig.3': all(line('M4 112 L116 112', C.grey2, 2), faded(at(92, 86, 1, slice(0, 0, 1, CRUST, CRUMB)), path('M82 56 L102 56 L106 66 L78 66 Z', C.dark, C.ink, 1.6), arrow(92, 36, 92, 52, C.grey, 3)),
-    waBob('fh-luft', 5, at(38, 58, 1.5, slice(0, 0, 1, CRUST, CRUMB, [[-8, -8, 5.4], [6, -9, 4.4], [8, 4, 5.6], [-5, 5, 4], [-10, 12, 2.6], [2, 13, 3]]))), line('M16 100 C26 104 50 104 60 100', C.grey2, 2), arrow(38, 22, 38, 6, HL, 3.4), line('M24 18 C20 14 20 10 24 6 M52 18 C56 14 56 10 52 6', HL, 2.2)),
+  // luftig (om bröd): big holes full of air, so the slice is light – the dense grey slice with tiny holes is heavy and sinks on the scales
+  'foodh.luftig.3': all(rect(56, 40, 8, 66, C.grey, 2, C.ink, 1.8), rect(40, 104, 40, 8, C.grey, 3, C.ink, 1.8), line('M18 62 L102 30', C.ink, 5), line('M18 62 L102 30', C.grey2, 2.4), circle(60, 46, 4, C.dark, C.ink, 1.4),
+    line('M18 62 L8 96 M18 62 L38 96 M102 30 L86 64 M102 30 L116 64', C.ink, 1.4), path('M4 96 L42 96 C40 104 6 104 4 96 Z', C.grey2, C.ink, 1.6), path('M82 64 L120 64 C118 72 84 72 82 64 Z', C.grey2, C.ink, 1.6),
+    at(23, 80, 0.62, slice(0, 0, 1, '#8d8a86', '#c9c5be', [[-8, -6, 1.4], [5, -8, 1.2], [8, 4, 1.4], [-3, 6, 1.2], [0, -1, 1]])),
+    waBob('fh-luft', 3, at(92, 40, 0.95, slice(0, 0, 1, CRUST, CRUMB, [[-8, -8, 5.6], [7, -9, 4.6], [8, 5, 5.8], [-6, 6, 4.4], [1, -1, 2.4]])), circle(92, 38, 25, 'none', HL, 3)), line('M52 22 L48 12 M44 28 L36 22', HL, 2.4)),
   // bageri: the shop that bakes and sells bread – with the golden pretzel sign
   'foodh.bageri': all(rect(6, 26, 108, 86, '#f1e2c4', 3, C.ink, 2.2), path('M2 26 L118 26 L112 44 L8 44 Z', C.red, C.ink, 2), line('M30 26 L28 44 M56 26 L56 44 M84 26 L88 44', C.white, 3), rect(14, 52, 58, 40, '#d6ecf5', 3, C.ink, 2), rect(82, 52, 24, 60, C.brown, 2, C.ink, 2), circle(87, 84, 1.8, C.gold, null),
     at(28, 84, 0.42, boule(0, 0, 1)), at(52, 84, 0.42, boule(0, 0, 1, '#8a5a2b')), rect(18, 60, 22, 7, CRUST, 3.5, C.ink, 1.4), rect(44, 60, 22, 7, '#d9a05a', 3.5, C.ink, 1.4), rect(14, 84, 58, 8, C.tan, 0, C.ink, 1.6),
@@ -219,10 +221,10 @@ const fork = (x: number, y: number, deg: number, s = 1): Svg => turn(x, y, deg, 
 const M4: Record<string, Svg> = {
   // matbild: a photo of food – the dish on the phone screen
   'foodh.matbild': all(table(0), faded(pasta(26, 92, 22)), turn(66, 56, 8, phone(0, 0, 62, 100, rect(-28, -45, 56, 76, C.tan, 0, null), pasta(0, -8, 22), fork(-24, -8, 0, 0.7), circle(0, 40, 6, C.white, C.ink, 1.6))), sparkle(104, 14, 5, HL)),
-  // mjukt ljus: light through a thin curtain – the shadow is pale and soft; the bare lamp (grey) gives a hard, dark shadow
-  'foodh.mjukt-ljus': all(rect(6, 8, 36, 62, '#fdf6d8', 3, C.ink, 2), line('M24 8 L24 70 M6 38 L42 38', C.ink, 1.4), path('M6 8 L42 8 L42 70 L6 70 Z', C.white, null).replace('/>', ' opacity="0.55"/>'), line('M12 10 C14 30 10 50 13 68 M22 10 C24 30 20 50 23 68 M32 10 C34 30 30 50 33 68', C.grey2, 1.4),
-    waPulse('fh-mjukt', path('M44 16 L100 60 L100 100 L44 66 Z', '#fff3b8', null).replace('/>', ' opacity="0.7"/>')), line('M0 100 L120 100', C.ink, 2), ellipse(86, 101, 22, 4.4, '#d9d2c2', null), circle(72, 84, 15, C.red, C.ink, 2), line('M72 70 C72 64 76 62 78 60', C.brown, 2.2), ellipse(66, 78, 4, 6, '#f08a8a', null),
-    faded(at(100, 14, 0.6, circle(0, 0, 9, C.yellow, C.ink, 1.6), line('M-14 0 L-20 0 M14 0 L20 0 M0 14 L0 20 M-10 10 L-14 14 M10 10 L14 14', C.ink, 1.6)), circle(104, 40, 6, C.grey, C.ink, 1.4), path('M100 46 L88 52 L96 52 L108 46 Z', C.black, null))),
+  // mjukt ljus: the same cake twice – hard light with sharp black shadows (grey, crossed out) and soft light through a white screen with pale, soft shadows (marked)
+  'foodh.mjukt-ljus': all(faded(circle(14, 14, 7, C.yellow, C.ink, 1.6), line('M22 20 L34 40 M24 14 L44 34 M16 24 L22 44', C.ink, 1.8), rect(4, 46, 52, 62, C.white, 3, C.ink, 2), path('M30 98 L54 106 L54 96 L40 84 Z', C.black, null), path('M24 80 L34 66 L46 80 Z', C.black, null), at(26, 82, 0.95, cupcake(0, 0, 1))), cross(30, 34, 1.2),
+    circle(74, 12, 7, C.yellow, C.ink, 1.6), turn(92, 22, 28, rect(-3, -18, 6, 36, C.white, 2, C.ink, 1.8)), waPulse('fh-mjukt', path('M98 14 L116 44 L72 44 L92 30 Z', '#fff3b8', null).replace('/>', ' opacity="0.8"/>')),
+    rect(64, 46, 52, 62, '#fffdf4', 3, HL, 3.4), blurred(2.2, ellipse(96, 100, 16, 4.6, '#d6cfbf', null)), at(88, 82, 0.95, cupcake(0, 0, 1))),
   // kameravinkel: the direction the camera sees the dish from – from above, at an angle, from the side
   'foodh.kameravinkel': all(table(100), saucer(60, 100, 22), at(60, 84, 1, cupcake(0, 0, 1)), `<path d="M12 84 A48 48 0 0 1 60 22" fill="none" stroke="${C.grey}" stroke-width="2" stroke-dasharray="4 4" stroke-linecap="round"/>`,
     faded(camera(60, 14, 90, 1.1), line('M60 28 L60 52', C.ink, 1.6, '3 3')), faded(camera(12, 84, 0, 1.1), line('M26 84 L42 84', C.ink, 1.6, '3 3')), camera(24, 40, 45, 1.3, HL), waPulse('fh-vinkel', line('M36 52 L50 66', HL, 2.6, '4 3'))),
@@ -256,14 +258,14 @@ const M5: Record<string, Svg> = {
   'foodh.fermentera': all(table(104), jarBody(46, 104, 56, 62), shreds(46, 102, 50, 34), moving('fh-ferm1', '0%,15%{transform:translate(0,-18px)}60%,100%{transform:translate(0,0)}', { dur: 2.4 }, rect(38, 22, 16, 44, '#c9a36a', 4, C.ink, 2), rect(30, 62, 32, 8, '#c9a36a', 3, C.ink, 2), path('M30 14 C34 4 58 4 62 14 C64 24 56 30 46 30 C36 30 28 24 30 14 Z', C.skin, C.ink, 1.8)),
     turn(96, 34, -30, rect(-9, -14, 18, 28, C.white, 4, C.ink, 1.8), rect(-9, -18, 18, 7, C.silver, 2, C.ink, 1.6), circle(-3, -15, 0.9, C.ink, null), circle(3, -15, 0.9, C.ink, null)),
     moving('fh-ferm2', '0%{transform:translate(4px,-10px);opacity:0}50%,100%{transform:translate(0,0);opacity:1}', { dur: 1.4 }, circle(84, 54, 1.4, C.white, C.ink, 0.6), circle(80, 62, 1.4, C.white, C.ink, 0.6), circle(86, 68, 1.4, C.white, C.ink, 0.6), circle(78, 74, 1.4, C.white, C.ink, 0.6)), cabbage(100, 92, 12)),
-  // fermentering: the slow change in the jar – from fresh on day 1 to sour and bubbling two weeks later
-  'foodh.fermentering': all(table(104), faded(jarBody(26, 104, 40, 54), shreds(26, 102, 34, 44, '#b9d77a'), jarLid(26, 50, 40)), calendar(26, 24, '1'), arrow(50, 72, 64, 72, HL, 3.4),
-    jarBody(92, 104, 44, 58), jarFill(92, 104, 44, 50, '#f1ecc0'), shreds(92, 100, 36, 36, '#e3dc9a'), jarLid(92, 46, 44, HL), calendar(92, 20, '14'),
-    moving('fh-fering', '0%{transform:translate(0,14px);opacity:0}30%{opacity:1}100%{transform:translate(0,-10px);opacity:1}', { dur: 2 }, bubbles([[82, 72, 3], [96, 64, 2.4], [102, 78, 3.2], [88, 86, 2], [98, 92, 2.4]]))),
-  // mjölksyrad: made sour by lactic acid bacteria (in the magnifier), not by vinegar (crossed out)
-  'foodh.mjölksyrad': all(table(104), jarBody(30, 104, 44, 56), jarFill(30, 104, 44, 48, '#f1ecc0'), rect(16, 62, 7, 38, C.orange, 3, C.ink, 1.2), rect(26, 58, 7, 42, C.orange, 3, C.ink, 1.2), rect(36, 64, 7, 36, C.orange, 3, C.ink, 1.2), jarLid(30, 48, 44),
-    line('M72 62 L52 76', C.ink, 4), circle(82, 46, 26, C.white, C.ink, 2.6), waShake('fh-syrad', rod(72, 38, 30), rod(90, 34, -20), rod(80, 52, 70), rod(94, 54, 10), rod(68, 54, -40, 10)), circle(82, 46, 26, 'none', HL, 2),
-    faded(bottle(104, 104, C.yellow)), cross(104, 84, 1.3)),
+  // fermentering: the slow change over time – the same jar on day 1, day 7 and day 14, the whole row is the thing
+  'foodh.fermentering': all(...([['1', '#8fc45a', '#5f9a3a'], ['7', '#c4cf78', '#93a04a'], ['14', '#e8dfa0', '#b9ab62']] as const).map(([d, c, l], i) => all(calendar(24 + i * 36, 28, d), jarBody(24 + i * 36, 100, 28, 44), rect(12 + i * 36, 62, 24, 36, c, 4, null),
+    line(`M15 ${70} l6 -3 l6 3 l6 -3 M15 ${80} l6 -3 l6 3 l6 -3 M15 ${90} l6 -3 l6 3 l6 -3`.replace(/M15/g, `M${15 + i * 36}`), l, 1.3), jarLid(24 + i * 36, 56, 28))), arrow(41, 78, 45, 78, C.grey, 2.2), arrow(77, 78, 81, 78, C.grey, 2.2),
+    waPulse('fh-fering', rect(4, 6, 112, 104, 'none', 18, HL, 3.4))),
+  // mjölksyrad: sour thanks to lactic acid bacteria (magnifier, tick) – not thanks to vinegar from a bottle (grey, crossed out)
+  'foodh.mjölksyrad': all(line('M4 106 L116 106', C.grey2, 2), faded(jarBody(22, 104, 32, 48), jarFill(22, 104, 32, 40, '#e9f0c0'), cucumber(16, 82, 88, 34), cucumber(28, 82, 92, 34), jarLid(22, 56, 32), bottle(50, 104, C.yellow)), cross(34, 36, 1.4),
+    jarBody(84, 104, 36, 50), jarFill(84, 104, 36, 42, '#f1ecc0'), cucumber(77, 81, 88, 36), cucumber(90, 81, 92, 36), jarLid(84, 54, 36, HL), line('M96 52 L102 62', C.ink, 4), circle(90, 28, 22, C.white, C.ink, 2.6),
+    waShake('fh-syrad', rod(82, 22, 30, 11), rod(98, 20, -20, 11), rod(88, 34, 70, 11), rod(100, 36, 10, 10), rod(78, 36, -40, 9)), circle(90, 28, 22, 'none', HL, 2), circle(66, 70, 8, C.green, C.ink, 1.4), line('M62 70 L65 73.6 L70.4 66.4', C.white, 2.4)),
   // vitkål: the round, hard, pale green cabbage – whole and cut in half
   'foodh.vitkål': all(table(100), cabbage(42, 62, 36), path('M72 100 C72 68 116 68 116 100 Z', '#f4f8e2', C.ink, 2.2), line('M78 98 C80 80 108 80 110 98 M84 98 C86 86 102 86 104 98 M90 98 C91 92 97 92 98 98', '#8fae5a', 1.6), line('M94 100 L94 92', '#c9d79a', 4)),
   // strimla: cut into long thin strips
@@ -288,12 +290,15 @@ const M5: Record<string, Svg> = {
 };
 
 // ── 4756 Dessertbakning ──
+/** A small cake in a paper cup; (x, y) = centre of the base. */
+const pastry = (x: number, y: number, top: string, paper: string): Svg => all(path(`M${x - 9} ${y} L${x - 11} ${y - 9} L${x + 11} ${y - 9} L${x + 9} ${y} Z`, paper, C.ink, 1.5), line(`M${x - 5} ${y - 1} L${x - 6} ${y - 8} M${x} ${y - 1} L${x} ${y - 8} M${x + 5} ${y - 1} L${x + 6} ${y - 8}`, C.ink, 0.8), path(`M${x - 11} ${y - 9} C${x - 11} ${y - 22} ${x + 11} ${y - 22} ${x + 11} ${y - 9} Z`, top, C.ink, 1.6), circle(x, y - 20, 2.6, C.red, C.ink, 1));
 const cream = (x: number, y: number, s: number, col: string = C.white): Svg => at(x, y, s, path('M-8 0 C-11 -5 -6 -8 -5 -9 C-6 -13 -1 -14 0 -18 C1 -14 6 -13 5 -9 C6 -8 11 -5 8 0 Z', col, C.ink, 1.4), line('M-4 -3 C-1 -5 2 -5 4 -3', C.grey2, 1));
 const spatula = (x: number, y: number, deg: number): Svg => turn(x, y, deg, line('M0 -40 L0 -8', C.ink, 5.4), line('M0 -40 L0 -8', '#c9a36a', 2.8), path('M-7 -10 L7 -10 L8 12 C4 18 -4 18 -8 12 Z', HL, C.ink, 1.8));
 const M6: Record<string, Svg> = {
-  // bakelse: a small cake for one person
-  'foodh.bakelse': all(table(98), saucer(52, 96, 38), path('M28 92 L34 70 L70 70 L76 92 Z', '#f6ecd6', C.ink, 2), line('M36 72 L33 90 M44 72 L42 90 M52 72 L52 90 M60 72 L62 90 M68 72 L71 90', C.ink, 0.9), path('M30 72 C30 50 74 50 74 72 Z', '#9fcf8a', C.ink, 2.2), cream(52, 54, 1.1, C.pink),
-    fork(100, 88, 60, 0.8), num(102, 34, '1', 22, HL), bust(102, 54, 0.42, { top: C.grey })),
+  // bakelse: one of the small cakes for one person in the glass counter at the café – tongs lift it out
+  'foodh.bakelse': all(rect(4, 46, 112, 54, '#e6f3f6', 5, C.ink, 2.2), rect(4, 96, 112, 16, C.brown, 2, C.ink, 2.2), rect(8, 88, 104, 6, C.white, 1, C.ink, 1.4), line('M14 52 L30 52 M14 58 L22 58', C.white, 2.4),
+    pastry(20, 88, C.pink, '#f6e2a8'), pastry(46, 88, '#9fcf8a', '#f6e2a8'), `<ellipse cx="72" cy="88" rx="11" ry="2.6" fill="none" stroke="${C.grey}" stroke-width="1.4" stroke-dasharray="3 3"/>`, pastry(98, 88, '#8a5636', '#f6e2a8'),
+    moving('fh-bakelse', '0%,12%{transform:translate(0,44px)}65%,100%{transform:translate(0,0)}', { dur: 2.8 }, line('M60 6 L62 30 M84 6 L82 30', C.ink, 5), line('M60 6 L62 30 M84 6 L82 30', C.silver, 2.6), pastry(72, 42, C.white, '#f6e2a8'), circle(72, 30, 22, 'none', HL, 3))),
   // tårtbotten: the plain baked sponge, cut into layers – no cream yet
   'foodh.tårtbotten': all(table(100), ...[0, 1, 2].map((i) => all(path(`M18 ${88 - i * 20} L18 ${98 - i * 20} C18 ${108 - i * 20} 92 ${108 - i * 20} 92 ${98 - i * 20} L92 ${88 - i * 20} Z`, '#e9c37a', C.ink, 2), ellipse(55, 88 - i * 20, 37, 9, i === 2 ? '#c9954a' : '#f6e2a8', C.ink, 2))),
     turn(106, 60, 0, line('M0 20 L0 40', C.ink, 6), line('M0 20 L0 40', C.dark, 3.4), path('M-3 20 L3 20 L3 -24 C0 -30 -3 -20 -3 20 Z', C.silver, C.ink, 1.5))),
@@ -341,8 +346,10 @@ const M7: Record<string, Svg> = {
   // blindprovning: taste without knowing what it is – the eyes are covered and the bottles are hidden
   'foodh.blindprovning': all(bust(40, 34, 1.5, { top: C.purple, hair: '#8a5a2b', blind: true, face: 'o' }), table(88), arm([66, 70], [70, 50], C.purple, [76, 62]), turn(66, 44, -70, line('M0 0 L0 16', C.ink, 3.4), line('M0 0 L0 16', C.silver, 1.6), ellipse(0, -4, 3.4, 5, C.silver, C.ink, 1.2)),
     ...[0, 1].map((i) => all(path(`M${82 + i * 20} 60 L${96 + i * 20} 60 L${98 + i * 20} 100 L${80 + i * 20} 100 Z`, '#c9a36a', C.ink, 1.8), rect(86 + i * 20, 50, 6, 11, C.dark, 1, C.ink, 1.4), num(89 + i * 20, 88, '?', 15, C.white))), smallCup(60, 92, '1'), smallCup(22, 92, '2')),
-  // beska: the bitter taste of strong coffee and dark chocolate – the face shows it
-  'foodh.beska': all(bust(44, 40, 1.9, { top: C.sky, hair: '#3b2f2f', face: 'yuck' }), waShake('fh-beska', line('M74 16 L80 10 M82 26 L90 24 M78 38 L86 40', HL, 3)), table(96), cup(96, 72, 0.95, '#1e1512'), choc(66, 104, 0.9, -10, '#2e1a10')),
+  // beska: the bitter one of the four tastes – grapefruit and dark chocolate; sweet, salt and sour are grey
+  'foodh.beska': all(faded(rect(6, 6, 50, 50, C.white, 6, C.ink, 2), rect(22, 22, 9, 9, C.white, 1, C.ink, 1.4), rect(33, 26, 9, 9, C.white, 1, C.ink, 1.4), rect(27, 34, 9, 9, C.white, 1, C.ink, 1.4), strawberry(18, 40, 1), rect(64, 6, 50, 50, C.white, 6, C.ink, 2), rect(80, 20, 18, 26, C.white, 4, C.ink, 1.6), rect(80, 14, 18, 8, C.silver, 2, C.ink, 1.6), circle(86, 18, 1, C.ink, null), circle(92, 18, 1, C.ink, null),
+    rect(6, 64, 50, 50, C.white, 6, C.ink, 2), lemon(31, 89, 15)), rect(64, 64, 50, 50, '#fff3e0', 6, HL, 3.6),
+    waPulse('fh-beska', line('M60 60 L64 64', HL, 3)), circle(82, 84, 14, '#f2b450', C.ink, 1.8), circle(82, 84, 11, '#f08a7a', null), line('M82 73 L82 95 M71 84 L93 84 M74 76 L90 92 M90 76 L74 92', '#fbd3c6', 1.3), choc(100, 102, 0.62, -12, '#2e1a10')),
   // fruktig: it smells and tastes of fruit, though there is no fruit in the cup
   'foodh.fruktig': all(table(98), cup(46, 72, 1.15, '#a85a2a'), line('M46 62 C40 54 52 50 48 42', C.grey, 2.2, '3 3'), waBob('fh-frukt', 3, cloud(62, 26, 1.6, '#fff3e0'), raspberry(40, 22, 1.5), lemon(64, 18, 9), strawberry(86, 22, 1.4), circle(54, 34, 5, '#8a4fb0', C.ink, 1.2), circle(74, 34, 5, C.green, C.ink, 1.2)), sparkle(104, 60, 5, HL)),
   // fyllig (om smak): rich, with a lot of taste that fills the mouth – against thin and watery (grey)
