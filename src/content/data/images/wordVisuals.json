@@ -161219,7 +161219,10 @@
    "kind": "illustration",
    "motif": "org.surkål",
    "group": "org-karboxylsyra",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.fermentering.1"
+   ]
   },
   {
    "senseId": "s.ester.1",
@@ -207487,7 +207490,10 @@
    "kind": "illustration",
    "motif": "foodh.inkråm",
    "group": "skorpa.2",
-   "quiz": true
+   "quiz": true,
+   "confusableWith": [
+    "s.luftig.3"
+   ]
   },
   {
    "senseId": "s.luftig.3",
@@ -207496,7 +207502,16 @@
    "group": "skorpa.2",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.inkråm.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.65.0",
+    "hash": "e995e37e",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.bageri.1",
@@ -207526,7 +207541,14 @@
    "group": "mjukt",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "0191e406",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65; granskaren valde rätt bild men med medelhög eller låg säkerhet."
+   }
   },
   {
    "senseId": "s.kameravinkel.1",
@@ -207595,7 +207617,16 @@
    "group": "fermentera",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "confusableWith": [
+    "s.surkål.1"
+   ],
+   "blindTest": {
+    "result": "synonym",
+    "round": "0.65.0",
+    "hash": "b1b7618c",
+    "method": "match"
+   }
   },
   {
    "senseId": "s.mjölksyrad.1",
@@ -207664,7 +207695,14 @@
    "motif": "foodh.bakelse",
    "group": "bakelse",
    "quiz": false,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "ffbce469",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65; granskaren valde rätt bild men med medelhög eller låg säkerhet."
+   }
   },
   {
    "senseId": "s.tårtbotten.1",
@@ -207765,7 +207803,14 @@
    "group": "fruktig",
    "quiz": false,
    "animated": true,
-   "symbol": true
+   "symbol": true,
+   "blindTest": {
+    "result": "waived",
+    "round": "0.65.0",
+    "hash": "769f3747",
+    "method": "match",
+    "waiver": "Produktägarens beslut 2026-11-28: symbolbild godkänd efter manuellt spår i 0.65; granskaren valde rätt bild men med medelhög eller låg säkerhet."
+   }
   },
   {
    "senseId": "s.fruktig.1",
